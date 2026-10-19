@@ -19,7 +19,7 @@
    leerdoelen van het domein af, vink dan ook het domein af.
 4. Bij een rode poort: niets pushen, wél melden.
 
-> Voortgang: **65 leerdoelen op v2** (havo bi.M3, nl.A1 t/m nl.A7, nl.B1 t/m nl.B5, nl.C1 t/m nl.C6, nl.D1 t/m nl.D6, nl.F1 t/m nl.F6, en.A1, en.A2, en.A3, en.A4, en.A5, en.A6, en.A7, en.A8, en.B1, en.B2, en.B3, en.B4, en.B5, en.B6, en.B7, en.B8, vwo nl.A1, vwo nl.A2, vwo nl.A3, vwo nl.A4, vwo nl.A5, vwo nl.A6, vwo nl.A7, vwo nl.B1, vwo nl.B2, vwo nl.B3, vwo nl.B4, vwo nl.B5, vwo nl.C1, vwo nl.C2, vwo nl.C3, vwo nl.C4, vwo nl.C5, vwo nl.C6). Werk dit getal bij bij elke afronding.
+> Voortgang: **66 leerdoelen op v2** (havo bi.M3, nl.A1 t/m nl.A7, nl.B1 t/m nl.B5, nl.C1 t/m nl.C6, nl.D1 t/m nl.D6, nl.F1 t/m nl.F6, en.A1, en.A2, en.A3, en.A4, en.A5, en.A6, en.A7, en.A8, en.B1, en.B2, en.B3, en.B4, en.B5, en.B6, en.B7, en.B8, vwo nl.A1, vwo nl.A2, vwo nl.A3, vwo nl.A4, vwo nl.A5, vwo nl.A6, vwo nl.A7, vwo nl.B1, vwo nl.B2, vwo nl.B3, vwo nl.B4, vwo nl.B5, vwo nl.C1, vwo nl.C2, vwo nl.C3, vwo nl.C4, vwo nl.C5, vwo nl.C6, vwo nl.D1). Werk dit getal bij bij elke afronding.
 > Oude stand (v1, domeinniveau): 7/220 domeinen; die tellen niet meer als af.
 >
 > **Omvang (okt 2026):** 220 domeinen (havo 59, vwo 84, vmbo 77) × gemiddeld ~6 leerdoelen
@@ -80,7 +80,7 @@
   - [x] B3 · nl.B.3 Een voordracht opbouwen en presenteren · 27 vragen (R1 7, R2 10, R3 10, 6 eigen spreekfragmenten van 190-380 tekens), 12 begrippen, 4 figuren (opbouw als balk, inleiding in drie stappen, kern met overgangen en rode draad, presenteren), geen clip
   - [x] B4 · nl.B.4 Deelnemen aan een discussie of debat · 27 vragen (R1 7, R2 10, R3 10, 7 eigen debatfragmenten van 190-300 tekens), 12 begrippen, 4 figuren (opbouw argument, weerleggen in stappen, fout en goed, verloop van een debat), geen clip
   - [x] B5 · nl.B.5 Adequaat reageren op luisteraars en deelnemers · 27 vragen (R1 7, R2 10, R3 10, 7 eigen gespreksfragmenten van 190-260 tekens), 12 begrippen, 4 figuren (actief luisteren, vraag beantwoorden, omgaan met kritiek, feedback in drie delen), geen clip
-- [ ] **VWO · Nederlands** (`nl`) · domein C — Schrijfvaardigheid
+- [x] **VWO · Nederlands** (`nl`) · domein C — Schrijfvaardigheid (6 van 6 leerdoelen op v2)
   - [x] C1 · nl.C.1 Informatie verzamelen, verwerken en verantwoorden · 27 vragen (R1 7, R2 10, R3 10, 6 eigen schrijfsituaties van 200-310 tekens), 12 begrippen, 4 figuren (zoeken van breed naar specifiek, aantekening, citaat parafrase plagiaat, verwijzing naar bronnenlijst), geen clip
   - [x] C2 · nl.C.2 Tekstsoort, doel en lezersgroep afstemmen · 27 vragen (R1 7, R2 10, R3 10, 7 eigen schrijfopdrachten van 190-250 tekens), 12 begrippen, 4 figuren (tekstsoort kiezen, lezersgroep analyseren, inhoud per soort, register op een schaal), geen clip
   - [x] C3 · nl.C.3 Een betoog schrijven · 27 vragen (R1 7, R2 10, R3 10, 7 eigen schrijffragmenten), 12 begrippen, 4 figuren (feit vraag stelling, argument met onderbouwing, weerleggen, opbouw betoog), geen clip
@@ -88,6 +88,12 @@
   - [x] C5 · nl.C.5 Schrijftaal, stijl en correctheid · 27 vragen (R1 7, R2 10, R3 10, 21 met eigen tekstfragment), 12 begrippen, 4 figuren (spreektaal naar schrijftaal, register op een schaal, vaag naar precies, voltooid deelwoord met t kofschip), geen clip
   - [x] C6 · nl.C.6 Een tekst reviseren op commentaar · 27 vragen (R1 7, R2 10, R3 10, alle R2 en R3 met eigen commentaar of tekstfragment), 12 begrippen, 4 figuren (vijf stappen van reviseren, vier soorten commentaar, van groot naar klein, afwegen), geen clip
 - [ ] **VWO · Nederlands** (`nl`) · domein D — Argumentatieve vaardigheden
+  - [x] D1 · nl.D.1 Standpunten en argumenten herkennen · 27 vragen (R1 7, R2 10, R3 10, 4 eigen teksten en 3 fragmenten), 12 begrippen, 4 figuren (drie doelen van een tekst, standpunt met argumenten, betoog als balken, signaalwoorden per functie), geen clip
+  - [ ] D2 · nl.D.2 Argumentatiestructuren onderscheiden
+  - [ ] D3 · nl.D.3 Feitelijke en waarderende argumenten onderscheiden
+  - [ ] D4 · nl.D.4 Argumentatieschema's herkennen
+  - [ ] D5 · nl.D.5 Een betoog op aanvaardbaarheid beoordelen
+  - [ ] D6 · nl.D.6 Drogredenen herkennen en vermijden
 - [ ] **VWO · Nederlands** (`nl`) · domein E — Literatuur
 - [ ] **VMBO · Nederlands** (`nl`) · domein A — Luister- en kijkvaardigheid
 - [ ] **VMBO · Nederlands** (`nl`) · domein B — Spreek- en gespreksvaardigheid

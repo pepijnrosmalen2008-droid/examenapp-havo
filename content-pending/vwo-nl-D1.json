@@ -1,0 +1,685 @@
+{
+ "id": "D1",
+ "lo": "nl.D.1",
+ "gs": 2,
+ "naam": "Standpunten en argumenten herkennen",
+ "beschrijving": "Je onderscheidt betogende, beschouwende en uiteenzettende teksten, vindt het standpunt (ook als het impliciet is) en herkent argumenten, tegenargumenten en signaalwoorden.",
+ "ceStatus": "CE+SE",
+ "binas": "",
+ "val": "",
+ "onderwerpen": [
+  "Betoog, beschouwing en uiteenzetting onderscheiden",
+  "Het standpunt vinden, ook als het impliciet is",
+  "Argumenten en argumentatie herkennen",
+  "Tegenargumenten en weerlegging",
+  "Signaalwoorden bij standpunt en argument",
+  "Wat wel en geen standpunt of argument is"
+ ],
+ "sam": "Een betoog verdedigt een standpunt om de lezer te overtuigen, een beschouwing biedt opinies ter overweging aan zonder een kant te kiezen en een uiteenzetting informeert. Het standpunt is een uitspraak die op twijfel of tegenspraak stuit en kan impliciet zijn. Een argument onderbouwt het standpunt, een tegenargument probeert het te weerleggen. Het geheel heet de argumentatie. Signaalwoorden als want, echter en daarom wijzen de functie van een uitspraak aan.",
+ "begrippen": [
+  {
+   "t": "Betoog",
+   "d": "Een tekst waarin de schrijver een beargumenteerd standpunt inneemt om de lezer te overtuigen."
+  },
+  {
+   "t": "Beschouwing",
+   "d": "Een tekst die interpretaties en opinies ter overweging aanbiedt en niet op winnen gericht is."
+  },
+  {
+   "t": "Uiteenzetting",
+   "d": "Een tekst die iets uitlegt, beschrijft of meedeelt om de lezer te informeren."
+  },
+  {
+   "t": "Standpunt",
+   "d": "Een uitspraak die op twijfel of tegenspraak stuit of zou kunnen stuiten."
+  },
+  {
+   "t": "Impliciet standpunt",
+   "d": "Een standpunt dat niet is geformuleerd maar uit de tekst is af te leiden."
+  },
+  {
+   "t": "Argument",
+   "d": "Een uitspraak waarmee een standpunt wordt onderbouwd."
+  },
+  {
+   "t": "Tegenargument",
+   "d": "Een uitspraak waarmee een standpunt of argument wordt weerlegd."
+  },
+  {
+   "t": "Weerlegging",
+   "d": "Een antwoord waarmee een tegenargument krachteloos wordt gemaakt."
+  },
+  {
+   "t": "Argumentatie",
+   "d": "Het standpunt en het geheel van argumenten of tegenargumenten."
+  },
+  {
+   "t": "Signaalwoord",
+   "d": "Een woord dat de functie van een uitspraak aanwijst, zoals want, echter of daarom."
+  },
+  {
+   "t": "Ironie",
+   "d": "Het zeggen van het tegenovergestelde van wat je bedoelt."
+  },
+  {
+   "t": "Vaststelling",
+   "d": "Een uitspraak die iets meedeelt dat niemand betwist."
+  }
+ ],
+ "sv": [
+  {
+   "v": "Welk doel heeft een betoog?",
+   "o": [
+    "de lezer vooral informeren over een stand van zaken",
+    "de lezer overtuigen",
+    "de lezer laten nadenken zonder een kant te kiezen",
+    "de lezer amuseren met een verhaal"
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 0,
+   "u": "Betoog: overtuigen van een standpunt.",
+   "uo": [
+    "Koos je \"de lezer vooral informeren over een stand van zaken\"? Dan denk je dat een betoog vooral informeert. Dat doet een uiteenzetting, een betoog verdedigt een standpunt.",
+    "Klopt: een betoog verdedigt een standpunt en wil de lezer winnen.",
+    "Koos je \"de lezer laten nadenken zonder een kant te kiezen\"? Dan denk je dat een betoog neutraal blijft. Dat doet een beschouwing, een betoog kiest een kant.",
+    "Koos je \"de lezer amuseren met een verhaal\"? Dan denk je dat een betoog vermaakt. Een betoog wil overtuigen, het is geen verhaal."
+   ],
+   "uh": "Wil de schrijver winnen?"
+  },
+  {
+   "v": "Welke tekstsoort wil de lezer vooral laten nadenken, zonder hem voor één standpunt te winnen?",
+   "o": [
+    "een betoog, want daarin staan argumenten",
+    "een uiteenzetting, want die legt iets uit",
+    "een recensie, want daar staat een oordeel in",
+    "een beschouwing"
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 0,
+   "u": "Beschouwing: laten nadenken.",
+   "uo": [
+    "Koos je \"een betoog, want daarin staan argumenten\"? Dan denk je dat elke tekst met argumenten een betoog is. Een betoog wil winnen, een beschouwing wil laten nadenken.",
+    "Koos je \"een uiteenzetting, want die legt iets uit\"? Dan denk je dat uitleg hetzelfde is als nadenken. Een uiteenzetting informeert, ze nodigt niet uit tot overweging.",
+    "Koos je \"een recensie, want daar staat een oordeel in\"? Dan denk je dat een oordeel hierbij hoort. Een beschouwing kiest geen kant, ze legt de lezer vragen voor.",
+    "Klopt: een beschouwing biedt interpretaties en opinies ter overweging aan."
+   ],
+   "uh": "Wil de schrijver winnen?"
+  },
+  {
+   "v": "Welke uitspraak is een standpunt?",
+   "o": [
+    "uitspraak 1",
+    "uitspraak 2, want die noemt een feit",
+    "uitspraak 3, want die noemt een reden",
+    "alle drie, want het zijn allemaal uitspraken"
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 1,
+   "u": "Standpunt: een uitspraak die op twijfel stuit.",
+   "uo": [
+    "Klopt: het is een uitspraak waar je het mee oneens kunt zijn.",
+    "Koos je \"uitspraak 2, want die noemt een feit\"? Dan denk je dat uitspraak 2 een standpunt is. Het is een vaststelling die niemand betwist, dus geen standpunt.",
+    "Koos je \"uitspraak 3, want die noemt een reden\"? Dan denk je dat een uitspraak met \"want\" een standpunt is. Zo'n uitspraak noemt een reden, dus het is een argument.",
+    "Koos je \"alle drie, want het zijn allemaal uitspraken\"? Dan denk je dat elke uitspraak een standpunt is. Alleen een uitspraak die op twijfel of tegenspraak stuit, is een standpunt."
+   ],
+   "uh": "Kun je het oneens zijn?",
+   "ctx": "Drie uitspraken uit een discussie over schoolfruit. Uitspraak 1: \"Scholen moeten gratis fruit uitdelen.\" Uitspraak 2: \"Op veel scholen wordt al fruit uitgedeeld.\" Uitspraak 3: \"Fruit is gezond, want het bevat vitaminen en vezels.\""
+  },
+  {
+   "v": "Welke uitspraak is een argument voor uitspraak 1?",
+   "o": [
+    "uitspraak 2, want die noemt een feit over scholen",
+    "geen van beide, want een argument staat altijd na \"daarom\"",
+    "uitspraak 3",
+    "uitspraak 1 zelf, want die zegt iets over scholen"
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 2,
+   "u": "Een argument onderbouwt het standpunt.",
+   "uo": [
+    "Koos je \"uitspraak 2, want die noemt een feit over scholen\"? Dan denk je dat een feit altijd een argument is. Uitspraak 2 zegt alleen dat het al gebeurt, ze geeft geen reden waarom het moet.",
+    "Koos je \"geen van beide, want een argument staat altijd na...\"? Dan denk je dat een argument alleen na \"daarom\" komt. Een argument kan overal staan, en wordt vaak met \"want\" ingeleid.",
+    "Klopt: ze noemt een reden waarom scholen fruit zouden moeten uitdelen.",
+    "Koos je \"uitspraak 1 zelf, want die zegt iets over scholen\"? Dan denk je dat het standpunt zichzelf onderbouwt. Een standpunt heeft een argument nodig, het onderbouwt zichzelf niet."
+   ],
+   "uh": "Waarom moet dat?",
+   "ctx": "Drie uitspraken uit een discussie over schoolfruit. Uitspraak 1: \"Scholen moeten gratis fruit uitdelen.\" Uitspraak 2: \"Op veel scholen wordt al fruit uitgedeeld.\" Uitspraak 3: \"Fruit is gezond, want het bevat vitaminen en vezels.\""
+  },
+  {
+   "v": "Waarmee probeert een schrijver een standpunt te weerleggen?",
+   "o": [
+    "met een extra argument voor hetzelfde standpunt",
+    "met een herhaling van het eigen standpunt",
+    "met een tegenargument",
+    "met een vraag aan de lezer over iets anders"
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 3,
+   "u": "Een tegenargument weerlegt of ontkracht.",
+   "uo": [
+    "Koos je \"met een extra argument voor hetzelfde standpunt\"? Dan denk je dat je weerlegt door te ondersteunen. Zo versterk je het standpunt, in plaats van het te weerleggen.",
+    "Koos je \"met een herhaling van het eigen standpunt\"? Dan denk je dat herhalen overtuigt. Herhaling is geen weerlegging, je geeft geen reden tegen het standpunt.",
+    "Klopt: een tegenargument maakt een standpunt minder aanvaardbaar.",
+    "Koos je \"met een vraag aan de lezer over iets anders\"? Dan denk je dat een vraag weerlegt. Een vraag geeft geen reden, dus ze maakt het standpunt niet minder aanvaardbaar."
+   ],
+   "uh": "Is het voor of tegen?"
+  },
+  {
+   "v": "Welk signaalwoord leidt meestal een argument in?",
+   "o": [
+    "want",
+    "echter, het woord voor een tegenstelling",
+    "dus, het woord voor een conclusie",
+    "kortom, het woord voor een samenvatting"
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 4,
+   "u": "\"Want\" en \"omdat\" leiden een argument in.",
+   "uo": [
+    "Klopt: \"want\" geeft de reden voor een standpunt.",
+    "Koos je \"echter, het woord voor een tegenstelling\"? Dan denk je dat \"echter\" een reden geeft. \"Echter\" geeft een tegenstelling aan, geen reden.",
+    "Koos je \"dus, het woord voor een conclusie\"? Dan denk je dat \"dus\" een reden inleidt. \"Dus\" leidt een conclusie in, dat is het omgekeerde van een argument.",
+    "Koos je \"kortom, het woord voor een samenvatting\"? Dan denk je dat \"kortom\" een reden inleidt. \"Kortom\" vat samen, het geeft geen nieuwe reden."
+   ],
+   "uh": "Welk woord geeft een reden?"
+  },
+  {
+   "v": "Hoe noem je het standpunt samen met alle argumenten en tegenargumenten?",
+   "o": [
+    "de uiteenzetting, een tekstsoort",
+    "de weerlegging van een bezwaar",
+    "het slot van de tekst",
+    "de argumentatie"
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 2,
+   "u": "Argumentatie: standpunt plus argumenten.",
+   "uo": [
+    "Koos je \"de uiteenzetting, een tekstsoort\"? Dan denk je dat dit de uiteenzetting is. Een uiteenzetting is een tekstsoort om te informeren, het geheel van standpunt en argumenten heet argumentatie.",
+    "Koos je \"de weerlegging van een bezwaar\"? Dan denk je dat dit de weerlegging is. Een weerlegging beantwoordt één tegenargument, de argumentatie is het hele geheel.",
+    "Koos je \"het slot van de tekst\"? Dan denk je dat het slot de argumentatie is. Het slot is een deel van de tekst, de argumentatie is het geheel van standpunt en argumenten.",
+    "Klopt: standpunt en argumenten samen heten de argumentatie."
+   ],
+   "uh": "Het geheel."
+  },
+  {
+   "v": "Welke tekstsoort is tekst A?",
+   "o": [
+    "een beschouwing, want er komen meerdere kanten aan bod",
+    "een betoog",
+    "een uiteenzetting, want er staat uitleg in",
+    "een verslag, want de schrijver vertelt wat er gebeurt"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 0,
+   "u": "Betoog: standpunt plus argumenten, om te overtuigen.",
+   "uo": [
+    "Koos je \"een beschouwing, want er komen meerdere kanten aan...\"? Dan denk je dat meerdere kanten een beschouwing maken. De schrijver kiest echter een kant, en wil overtuigen.",
+    "Klopt: de schrijver verdedigt een standpunt en wil de lezer overtuigen.",
+    "Koos je \"een uiteenzetting, want er staat uitleg in\"? Dan denk je dat uitleg hetzelfde is als informeren. De uitleg dient hier een standpunt, de schrijver wil overtuigen.",
+    "Koos je \"een verslag, want de schrijver vertelt wat er...\"? Dan denk je dat er verslag wordt gedaan. De tekst meldt geen gebeurtenissen, maar verdedigt een stelling."
+   ],
+   "uh": "Wil de schrijver winnen?",
+   "ctx": "Een telefoonvrije school is een goed idee. Ten eerste leiden telefoons af: wie tijdens de les een bericht krijgt, luistert even niet meer naar de docent. Ten tweede zijn pauzes bedoeld om elkaar te ontmoeten, maar leerlingen die naar hun scherm staren praten nauwelijks met elkaar. Sommige leerlingen vinden dat een verbod hen kinderachtig behandelt. Dat is begrijpelijk, maar het gaat niet om wantrouwen: het gaat om een afspraak die voor iedereen gelijk is, net als de afspraak om op tijd te komen. Scholen die zo'n afspraak maken, geven leerlingen de kans zich beter te concentreren. Daarom moet onze school telefoons uit de les en uit de pauze verbannen."
+  },
+  {
+   "v": "Waarom is tekst B een beschouwing en geen betoog?",
+   "o": [
+    "er staan geen argumenten in de tekst",
+    "de tekst is te kort voor een betoog",
+    "de tekst gaat over een gemeente",
+    "er wordt geen kant gekozen"
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 0,
+   "u": "Beschouwing: laten nadenken zonder een kant te kiezen.",
+   "uo": [
+    "Koos je \"er staan geen argumenten in de tekst\"? Dan denk je dat een beschouwing geen argumenten kent. Er staan wel argumenten in, maar de schrijver wil niet winnen.",
+    "Koos je \"de tekst is te kort voor een betoog\"? Dan denk je dat de lengte de soort bepaalt. De lengte maakt niet uit, het doel van de schrijver bepaalt de soort.",
+    "Koos je \"de tekst gaat over een gemeente\"? Dan denk je dat het onderwerp de tekstsoort bepaalt. Ook een betoog kan over een gemeente gaan, het doel is anders.",
+    "Klopt: er worden kanten en vragen genoemd, zonder dat de schrijver een standpunt verdedigt."
+   ],
+   "uh": "Kiest de schrijver een kant?",
+   "ctx": "Steeds meer gemeenten denken na over een proef met een vierdaagse werkweek. Voorstanders wijzen op meer rust en minder ziekteverzuim. Tegenstanders vrezen dat klanten last krijgen als een winkel een dag dichtgaat, en dat werknemers dezelfde taken in minder dagen moeten doen, wat de werkdruk kan verhogen. Tussen die twee standpunten ligt een groot gebied van vragen. Welke taken laten zich in minder uren doen? Voor welke beroepen werkt het niet? En wie bepaalt dat? Het antwoord verschilt waarschijnlijk per sector. Een proef kan helpen om te zien wat er werkelijk gebeurt, maar zelfs dan blijft een afweging nodig."
+  },
+  {
+   "v": "Welk doel heeft tekst C?",
+   "o": [
+    "overtuigen dat een ringweg nodig is",
+    "informeren over de ringweg",
+    "de lezer laten nadenken over verkeer",
+    "de lezer amuseren met een anekdote over verkeer"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 0,
+   "u": "Uiteenzetting: informeren zonder standpunt.",
+   "uo": [
+    "Koos je \"overtuigen dat een ringweg nodig is\"? Dan denk je dat de tekst een standpunt verdedigt. Er staat geen oordeel in, alleen beschrijving.",
+    "Klopt: de tekst legt uit hoe een ringweg werkt, zonder oordeel.",
+    "Koos je \"de lezer laten nadenken over verkeer\"? Dan denk je dat de tekst vragen oproept. Ze legt alleen uit, zonder lezers te laten overwegen.",
+    "Koos je \"de lezer amuseren met een anekdote over verkeer\"? Dan denk je dat de tekst een verhaal vertelt. Ze beschrijft een zaak, zonder grap of anekdote."
+   ],
+   "uh": "Wordt er iets verdedigd?",
+   "ctx": "Een ringweg rond een stad bestaat uit meerdere wegen die samen een lus vormen. Het doel is verkeer dat de stad niet in hoeft, eromheen te leiden. De ringweg heeft meestal meerdere op- en afritten, zodat automobilisten de stad op verschillende plekken kunnen bereiken. Sommige ringwegen hebben een vaste maximumsnelheid, andere een variabele snelheid die afhangt van de drukte. Een ringweg kan ook bestaan uit bestaande wegen die met nieuwe stukken zijn verbonden. Onderhoud gebeurt vaak 's nachts, omdat er dan minder verkeer is."
+  },
+  {
+   "v": "Welk standpunt verdedigt de schrijver van tekst A?",
+   "o": [
+    "leerlingen zijn kinderachtig, vindt de schrijver",
+    "telefoons zijn altijd afleidend voor iedereen",
+    "de school moet telefoons verbannen",
+    "pauzes zijn belangrijk voor de ontmoeting"
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 1,
+   "u": "Standpunt: wat de schrijver wil dat de lezer meent.",
+   "uo": [
+    "Koos je \"leerlingen zijn kinderachtig, vindt de schrijver\"? Dan denk je dat het standpunt een kwalificatie van leerlingen is. Dat woord staat in de tegenwerping, niet in het standpunt.",
+    "Koos je \"telefoons zijn altijd afleidend voor iedereen\"? Dan denk je dat het standpunt een algemene regel is. De schrijver zegt iets over een school, niet over alle situaties.",
+    "Klopt: dit staat in de laatste zin en in de openingszin.",
+    "Koos je \"pauzes zijn belangrijk voor de ontmoeting\"? Dan denk je dat het standpunt over pauzes gaat. Pauzes zijn een argument, het standpunt gaat over telefoons op school."
+   ],
+   "uh": "Waar eindigt het betoog mee?",
+   "ctx": "Een telefoonvrije school is een goed idee. Ten eerste leiden telefoons af: wie tijdens de les een bericht krijgt, luistert even niet meer naar de docent. Ten tweede zijn pauzes bedoeld om elkaar te ontmoeten, maar leerlingen die naar hun scherm staren praten nauwelijks met elkaar. Sommige leerlingen vinden dat een verbod hen kinderachtig behandelt. Dat is begrijpelijk, maar het gaat niet om wantrouwen: het gaat om een afspraak die voor iedereen gelijk is, net als de afspraak om op tijd te komen. Scholen die zo'n afspraak maken, geven leerlingen de kans zich beter te concentreren. Daarom moet onze school telefoons uit de les en uit de pauze verbannen."
+  },
+  {
+   "v": "Welk standpunt blijkt impliciet uit tekst D?",
+   "o": [
+    "de werkzaamheden zijn slecht gepland",
+    "het weekend is de beste tijd voor werk",
+    "forenzen moeten meer reizen",
+    "het ministerie plant uitstekend"
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 1,
+   "u": "Impliciet standpunt: afleiden uit toon en ironie.",
+   "uo": [
+    "Klopt: de ironie laat zien dat de schrijver de planning afkeurt.",
+    "Koos je \"het weekend is de beste tijd voor werk\"? Dan denk je dat de schrijver dit vindt. Hij noemt dit alleen als reden van het ministerie, en doet dat ironisch.",
+    "Koos je \"forenzen moeten meer reizen\"? Dan denk je dat de schrijver dit wil. Hij zegt het ironisch, en hij vindt het juist onwenselijk.",
+    "Koos je \"het ministerie plant uitstekend\"? Dan denk je dat de schrijver het ministerie prijst. Zijn toon is ironisch, en hij bedoelt het omgekeerde."
+   ],
+   "uh": "Wat bedoelt de schrijver echt?",
+   "ctx": "Wie 's ochtends om half negen de snelweg op rijdt, weet dat de file er al staat. Dit jaar zijn er weer wegwerkzaamheden gepland, uitgerekend in de spits. Natuurlijk kan het ministerie niet alles in het weekend laten doen. Maar wie in het weekend werkt, kost geld, en dat is nu eenmaal op. Zo blijven forenzen dagelijks tien minuten extra in de auto zitten en daalt de kans dat iemand op tijd op zijn werk is. Wellicht is dat de bedoeling: een land waarin iedereen al in de auto meer tijd heeft om na te denken over zijn leven."
+  },
+  {
+   "v": "Hoeveel argumenten voor het standpunt noemt de schrijver van tekst A?",
+   "o": [
+    "twee: afleiding en ontmoeting",
+    "één: alleen afleiding in de les en in de pauze",
+    "drie: afleiding, ontmoeting en het gelijke voor iedereen",
+    "vier: alle zinnen van de tekst zijn een argument"
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 2,
+   "u": "Tel de redenen die het standpunt onderbouwen.",
+   "uo": [
+    "Klopt: telefoons leiden af en pauzes zijn bedoeld om elkaar te ontmoeten.",
+    "Koos je \"één: alleen afleiding in de les en in de pauze\"? Dan denk je dat er één argument is. Er zijn twee redenen genoemd, namelijk afleiding en ontmoeting.",
+    "Koos je \"drie: afleiding, ontmoeting en het gelijke voor...\"? Dan denk je dat de weerlegging ook een argument is. Die hoort bij het tegenargument, niet bij de argumenten voor het standpunt.",
+    "Koos je \"vier: alle zinnen van de tekst zijn een argument\"? Dan denk je dat elke zin een argument is. Een zin kan ook een standpunt of een tegenwerping zijn, dus dat klopt niet."
+   ],
+   "uh": "Tel de \"ten eerste\" en \"ten tweede\".",
+   "ctx": "Een telefoonvrije school is een goed idee. Ten eerste leiden telefoons af: wie tijdens de les een bericht krijgt, luistert even niet meer naar de docent. Ten tweede zijn pauzes bedoeld om elkaar te ontmoeten, maar leerlingen die naar hun scherm staren praten nauwelijks met elkaar. Sommige leerlingen vinden dat een verbod hen kinderachtig behandelt. Dat is begrijpelijk, maar het gaat niet om wantrouwen: het gaat om een afspraak die voor iedereen gelijk is, net als de afspraak om op tijd te komen. Scholen die zo'n afspraak maken, geven leerlingen de kans zich beter te concentreren. Daarom moet onze school telefoons uit de les en uit de pauze verbannen."
+  },
+  {
+   "v": "Welk tegenargument noemt de schrijver van tekst A?",
+   "o": [
+    "telefoons leiden af in de les",
+    "leerlingen praten nauwelijks met elkaar",
+    "een verbod is kinderachtig",
+    "op tijd komen is een afspraak"
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 3,
+   "u": "Tegenargument: het bezwaar tegen het standpunt.",
+   "uo": [
+    "Koos je \"telefoons leiden af in de les\"? Dan denk je dat dit het tegenargument is. Het is een argument voor het standpunt, niet ertegen.",
+    "Koos je \"leerlingen praten nauwelijks met elkaar\"? Dan denk je dat dit het tegenargument is. Het is een argument voor het standpunt, namelijk over de pauzes.",
+    "Klopt: de schrijver noemt dit bezwaar zelf, om het daarna te weerleggen.",
+    "Koos je \"op tijd komen is een afspraak\"? Dan denk je dat dit het tegenargument is. De schrijver gebruikt dit als vergelijking, in zijn weerlegging."
+   ],
+   "uh": "Wat zeggen de tegenstanders?",
+   "ctx": "Een telefoonvrije school is een goed idee. Ten eerste leiden telefoons af: wie tijdens de les een bericht krijgt, luistert even niet meer naar de docent. Ten tweede zijn pauzes bedoeld om elkaar te ontmoeten, maar leerlingen die naar hun scherm staren praten nauwelijks met elkaar. Sommige leerlingen vinden dat een verbod hen kinderachtig behandelt. Dat is begrijpelijk, maar het gaat niet om wantrouwen: het gaat om een afspraak die voor iedereen gelijk is, net als de afspraak om op tijd te komen. Scholen die zo'n afspraak maken, geven leerlingen de kans zich beter te concentreren. Daarom moet onze school telefoons uit de les en uit de pauze verbannen."
+  },
+  {
+   "v": "Hoe gaat de schrijver met het tegenargument om?",
+   "o": [
+    "hij negeert het tegenargument volledig",
+    "hij erkent het en weerlegt het",
+    "hij geeft de tegenstanders gelijk en trekt zijn standpunt in",
+    "hij valt de leerlingen persoonlijk aan"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 3,
+   "u": "Erkennen en weerleggen.",
+   "uo": [
+    "Koos je \"hij negeert het tegenargument volledig\"? Dan denk je dat de schrijver niets doet met het bezwaar. Hij reageert er expliciet op, en weerlegt het.",
+    "Klopt: hij erkent en weerlegt met een tegenargument.",
+    "Koos je \"hij geeft de tegenstanders gelijk en trekt zijn...\"? Dan denk je dat de schrijver het standpunt opgeeft. Hij zegt \"dat is begrijpelijk, maar\", en houdt het vol.",
+    "Koos je \"hij valt de leerlingen persoonlijk aan\"? Dan denk je dat de schrijver aanvalt. Hij blijft bij de zaak, en noemt de afspraak als reden."
+   ],
+   "uh": "Wat doet de schrijver na \"maar\"?",
+   "ctx": "Een telefoonvrije school is een goed idee. Ten eerste leiden telefoons af: wie tijdens de les een bericht krijgt, luistert even niet meer naar de docent. Ten tweede zijn pauzes bedoeld om elkaar te ontmoeten, maar leerlingen die naar hun scherm staren praten nauwelijks met elkaar. Sommige leerlingen vinden dat een verbod hen kinderachtig behandelt. Dat is begrijpelijk, maar het gaat niet om wantrouwen: het gaat om een afspraak die voor iedereen gelijk is, net als de afspraak om op tijd te komen. Scholen die zo'n afspraak maken, geven leerlingen de kans zich beter te concentreren. Daarom moet onze school telefoons uit de les en uit de pauze verbannen."
+  },
+  {
+   "v": "Welke woorden in tekst A wijzen op twee opeenvolgende argumenten?",
+   "o": [
+    "\"daarom\" en \"begrijpelijk\"",
+    "\"sommige\" en \"maar\"",
+    "\"net als\" en \"voor iedereen gelijk\"",
+    "\"ten eerste\" en \"ten tweede\""
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 4,
+   "u": "Ten eerste, ten tweede: opsomming van argumenten.",
+   "uo": [
+    "Koos je \"daarom en begrijpelijk\"? Dan denk je dat deze woorden argumenten rangschikken. \"Daarom\" leidt de conclusie in, \"begrijpelijk\" hoort bij de erkenning.",
+    "Koos je \"sommige en maar\"? Dan denk je dat dit de rangschikking is. \"Sommige\" noemt een groep, \"maar\" leidt een weerlegging in.",
+    "Koos je \"net als en voor iedereen gelijk\"? Dan denk je dat dit de volgorde aangeeft. Het zijn vergelijkende woorden, geen ordenende signaalwoorden.",
+    "Klopt: ze ordenen de argumenten achter elkaar."
+   ],
+   "uh": "Welke woorden tellen?",
+   "ctx": "Een telefoonvrije school is een goed idee. Ten eerste leiden telefoons af: wie tijdens de les een bericht krijgt, luistert even niet meer naar de docent. Ten tweede zijn pauzes bedoeld om elkaar te ontmoeten, maar leerlingen die naar hun scherm staren praten nauwelijks met elkaar. Sommige leerlingen vinden dat een verbod hen kinderachtig behandelt. Dat is begrijpelijk, maar het gaat niet om wantrouwen: het gaat om een afspraak die voor iedereen gelijk is, net als de afspraak om op tijd te komen. Scholen die zo'n afspraak maken, geven leerlingen de kans zich beter te concentreren. Daarom moet onze school telefoons uit de les en uit de pauze verbannen."
+  },
+  {
+   "v": "Waarom is uitspraak 2 geen standpunt?",
+   "o": [
+    "omdat de uitspraak te kort is",
+    "niemand betwist het",
+    "omdat er een cijfer in staat",
+    "omdat het een vraag is"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 5,
+   "u": "Een vaststelling is geen standpunt.",
+   "uo": [
+    "Koos je \"omdat de uitspraak te kort is\"? Dan denk je dat de lengte telt. Ook een korte uitspraak kan een standpunt zijn, het gaat om twijfel of tegenspraak.",
+    "Klopt: een standpunt stuit op twijfel of tegenspraak, een vaststelling niet.",
+    "Koos je \"omdat er een cijfer in staat\"? Dan denk je dat een cijfer een standpunt uitsluit. Er staat geen cijfer in, de uitspraak is gewoon een vaststelling.",
+    "Koos je \"omdat het een vraag is\"? Dan denk je dat het een vraag is. Het is een bewering, maar geen standpunt dat op twijfel stuit."
+   ],
+   "uh": "Kun je het betwisten?",
+   "ctx": "Drie uitspraken uit een discussie over schoolfruit. Uitspraak 1: \"Scholen moeten gratis fruit uitdelen.\" Uitspraak 2: \"Op veel scholen wordt al fruit uitgedeeld.\" Uitspraak 3: \"Fruit is gezond, want het bevat vitaminen en vezels.\""
+  },
+  {
+   "v": "Welke tekstsoort is tekst D, ook al is er geen uitgesproken standpunt?",
+   "o": [
+    "een betoog met een impliciet standpunt",
+    "een uiteenzetting, want er staan feiten in",
+    "een beschouwing, want er is geen standpunt genoemd",
+    "een verslag, want er staan tijden in"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 0,
+   "u": "Betoog: een standpunt kan impliciet zijn.",
+   "uo": [
+    "Klopt: de ironie wil de lezer van een mening overtuigen.",
+    "Koos je \"een uiteenzetting, want er staan feiten in\"? Dan denk je dat feiten een uiteenzetting maken. De feiten dienen een mening, de schrijver wil overtuigen.",
+    "Koos je \"een beschouwing, want er is geen standpunt genoemd\"? Dan denk je dat een ontbrekend standpunt een beschouwing maakt. Het standpunt is impliciet, de schrijver wil winnen.",
+    "Koos je \"een verslag, want er staan tijden in\"? Dan denk je dat tijdsaanduidingen een verslag maken. De tijden zijn argumenten, geen gebeurtenissen."
+   ],
+   "uh": "Wil de schrijver winnen?",
+   "ctx": "Wie 's ochtends om half negen de snelweg op rijdt, weet dat de file er al staat. Dit jaar zijn er weer wegwerkzaamheden gepland, uitgerekend in de spits. Natuurlijk kan het ministerie niet alles in het weekend laten doen. Maar wie in het weekend werkt, kost geld, en dat is nu eenmaal op. Zo blijven forenzen dagelijks tien minuten extra in de auto zitten en daalt de kans dat iemand op tijd op zijn werk is. Wellicht is dat de bedoeling: een land waarin iedereen al in de auto meer tijd heeft om na te denken over zijn leven."
+  },
+  {
+   "v": "Welke zin laat het impliciete standpunt van tekst D het best zien?",
+   "o": [
+    "\"Wie 's ochtends om half negen de snelweg op rijdt, weet dat de file er al staat.\"",
+    "\"Dit jaar zijn er weer wegwerkzaamheden gepland, uitgerekend in de spits.\"",
+    "\"Natuurlijk kan het ministerie niet alles in het weekend laten doen.\"",
+    "de ironische slotzin over de tijd om na te denken"
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 1,
+   "u": "De ironische slotzin onthult de mening.",
+   "uo": [
+    "Koos je \"Wie 's ochtends om half negen de snelweg op rijdt,...\"? Dan denk je dat de eerste zin het standpunt is. Hij beschrijft de situatie, het standpunt volgt uit de rest.",
+    "Koos je \"Dit jaar zijn er weer wegwerkzaamheden gepland,...\"? Dan denk je dat deze zin het standpunt geeft. Hij noemt een feit, het oordeel zit in de ironie.",
+    "Koos je \"Natuurlijk kan het ministerie niet alles in het...\"? Dan denk je dat deze zin de mening geeft. Hij is onderdeel van de ironie, de slotzin laat het sterkst zien wat de schrijver vindt.",
+    "Klopt: de ironie laat zien dat de schrijver de werkzaamheden afkeurt."
+   ],
+   "uh": "Waar gaat de ironie op uit?",
+   "ctx": "Wie 's ochtends om half negen de snelweg op rijdt, weet dat de file er al staat. Dit jaar zijn er weer wegwerkzaamheden gepland, uitgerekend in de spits. Natuurlijk kan het ministerie niet alles in het weekend laten doen. Maar wie in het weekend werkt, kost geld, en dat is nu eenmaal op. Zo blijven forenzen dagelijks tien minuten extra in de auto zitten en daalt de kans dat iemand op tijd op zijn werk is. Wellicht is dat de bedoeling: een land waarin iedereen al in de auto meer tijd heeft om na te denken over zijn leven."
+  },
+  {
+   "v": "Wat vindt de columnist van het parkeerbeleid?",
+   "o": [
+    "dat het een prachtvoorbeeld van wijs bestuur is",
+    "dat het beleid onderwerp is van een enquête",
+    "dat het onredelijk is, wat hij ironisch zegt",
+    "dat automobilisten blij zullen zijn"
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 1,
+   "u": "Ironie: de schrijver bedoelt het omgekeerde.",
+   "uo": [
+    "Koos je \"dat het een prachtvoorbeeld van wijs bestuur is\"? Dan denk je dat de columnist het beleid prijst. De woorden zijn ironisch, hij bedoelt het omgekeerde.",
+    "Koos je \"dat het beleid onderwerp is van een enquête\"? Dan denk je dat de columnist een onderzoek noemt. Hij noemt geen enquête, alleen een voorbeeld van het beleid.",
+    "Klopt: het \"prachtvoorbeeld\" is ironisch bedoeld en laat zien dat hij het afkeurt.",
+    "Koos je \"dat automobilisten blij zullen zijn\"? Dan denk je dat de columnist dit werkelijk verwacht. De zin is ironisch bedoeld, hij bedoelt dat ze het niet waarderen."
+   ],
+   "uh": "Prijst hij echt?",
+   "ctx": "Een columnist schrijft: \"Het nieuwe parkeerbeleid van de gemeente is een prachtvoorbeeld van wijs bestuur. Wie een uur wil parkeren, betaalt voortaan evenveel als wie er een heel weekend wil staan. Zo spaart de automobilist dagen aan vrijetijdsbesteding uit, en dat zal zeker worden gewaardeerd.\""
+  },
+  {
+   "v": "Hoe zie je dat de argumenten in tekst B niet dienen om een standpunt te verdedigen?",
+   "o": [
+    "er staan geen argumenten in tekst B",
+    "de argumenten zijn te kort om te overtuigen",
+    "ze staan naast elkaar zonder keuze",
+    "er is één argument dat alles beslist"
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 2,
+   "u": "Argumenten kunnen ook ter overweging worden aangeboden.",
+   "uo": [
+    "Koos je \"er staan geen argumenten in tekst B\"? Dan denk je dat tekst B geen argumenten heeft. Er staan wel argumenten voor en tegen, maar niet om te winnen.",
+    "Koos je \"de argumenten zijn te kort om te overtuigen\"? Dan denk je dat de lengte van de argumenten telt. Het gaat om het doel, niet om de lengte.",
+    "Klopt: de schrijver wil laten overwegen en niet winnen.",
+    "Koos je \"er is één argument dat alles beslist\"? Dan denk je dat er één doorslaggevend argument is. De schrijver beslist niet, hij laat de lezer afwegen."
+   ],
+   "uh": "Wil de schrijver winnen?",
+   "ctx": "Steeds meer gemeenten denken na over een proef met een vierdaagse werkweek. Voorstanders wijzen op meer rust en minder ziekteverzuim. Tegenstanders vrezen dat klanten last krijgen als een winkel een dag dichtgaat, en dat werknemers dezelfde taken in minder dagen moeten doen, wat de werkdruk kan verhogen. Tussen die twee standpunten ligt een groot gebied van vragen. Welke taken laten zich in minder uren doen? Voor welke beroepen werkt het niet? En wie bepaalt dat? Het antwoord verschilt waarschijnlijk per sector. Een proef kan helpen om te zien wat er werkelijk gebeurt, maar zelfs dan blijft een afweging nodig."
+  },
+  {
+   "v": "Welke zin uit tekst A is een argument voor het standpunt, en geen tegenargument?",
+   "o": [
+    "\"Sommige leerlingen vinden dat een verbod hen kinderachtig behandelt.\"",
+    "\"Dat is begrijpelijk, maar het gaat niet om wantrouwen.\"",
+    "\"Daarom moet onze school telefoons uit de les en uit de pauze verbannen.\"",
+    "\"Wie een bericht krijgt, luistert even niet meer naar de docent.\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 2,
+   "u": "Een argument onderbouwt het standpunt.",
+   "uo": [
+    "Koos je \"Sommige leerlingen vinden dat een verbod hen...\"? Dan denk je dat dit een argument voor het standpunt is. Het is een tegenargument, de schrijver weerlegt het daarna.",
+    "Koos je \"Dat is begrijpelijk, maar het gaat niet om...\"? Dan denk je dat dit een argument voor het standpunt is. Het is de erkenning van het tegenargument, met een weerlegging.",
+    "Koos je \"Daarom moet onze school telefoons uit de les en uit...\"? Dan denk je dat dit een argument is. Het is de conclusie met het standpunt, geen argument.",
+    "Klopt: de zin onderbouwt het standpunt en spreekt het niet tegen."
+   ],
+   "uh": "Ondersteunt de zin het standpunt?",
+   "ctx": "Een telefoonvrije school is een goed idee. Ten eerste leiden telefoons af: wie tijdens de les een bericht krijgt, luistert even niet meer naar de docent. Ten tweede zijn pauzes bedoeld om elkaar te ontmoeten, maar leerlingen die naar hun scherm staren praten nauwelijks met elkaar. Sommige leerlingen vinden dat een verbod hen kinderachtig behandelt. Dat is begrijpelijk, maar het gaat niet om wantrouwen: het gaat om een afspraak die voor iedereen gelijk is, net als de afspraak om op tijd te komen. Scholen die zo'n afspraak maken, geven leerlingen de kans zich beter te concentreren. Daarom moet onze school telefoons uit de les en uit de pauze verbannen."
+  },
+  {
+   "v": "Welke functie heeft \"Dat is begrijpelijk, maar ...\" in tekst A?",
+   "o": [
+    "erkennen en dan weerleggen",
+    "het standpunt van de schrijver intrekken",
+    "een volledig nieuw argument inleiden",
+    "de conclusie van het betoog aankondigen"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 3,
+   "u": "Erkennen en weerleggen met maar.",
+   "uo": [
+    "Klopt: eerst erkenning, dan weerlegging met \"maar\".",
+    "Koos je \"het standpunt van de schrijver intrekken\"? Dan denk je dat de schrijver zijn standpunt opgeeft. Hij erkent het bezwaar, en houdt zijn standpunt overeind.",
+    "Koos je \"een volledig nieuw argument inleiden\"? Dan denk je dat de zin een nieuw argument inleidt. Hij gaat in op een bezwaar, dat al genoemd was.",
+    "Koos je \"de conclusie van het betoog aankondigen\"? Dan denk je dat de zin de conclusie inleidt. De conclusie begint met \"Daarom\", na de weerlegging."
+   ],
+   "uh": "Wat komt na \"maar\"?",
+   "ctx": "Een telefoonvrije school is een goed idee. Ten eerste leiden telefoons af: wie tijdens de les een bericht krijgt, luistert even niet meer naar de docent. Ten tweede zijn pauzes bedoeld om elkaar te ontmoeten, maar leerlingen die naar hun scherm staren praten nauwelijks met elkaar. Sommige leerlingen vinden dat een verbod hen kinderachtig behandelt. Dat is begrijpelijk, maar het gaat niet om wantrouwen: het gaat om een afspraak die voor iedereen gelijk is, net als de afspraak om op tijd te komen. Scholen die zo'n afspraak maken, geven leerlingen de kans zich beter te concentreren. Daarom moet onze school telefoons uit de les en uit de pauze verbannen."
+  },
+  {
+   "v": "Welke uitspraak is het tegenargument tegen het standpunt?",
+   "o": [
+    "\"Fruit is gezond.\"",
+    "\"Het kost de school veel geld.\"",
+    "\"Veel leerlingen eten thuis weinig fruit.\"",
+    "\"Het kost minder dan een enkel schoolfeest.\""
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 3,
+   "u": "Tegenargument: een reden tegen het standpunt.",
+   "uo": [
+    "Koos je \"Fruit is gezond.\"? Dan denk je dat dit een tegenargument is. Het is een argument voor het standpunt, omdat het fruit aanbeveelt.",
+    "Klopt: het is een reden tegen het uitdelen van fruit.",
+    "Koos je \"Veel leerlingen eten thuis weinig fruit.\"? Dan denk je dat dit een tegenargument is. Het is een argument voor het standpunt, omdat het de noodzaak laat zien.",
+    "Koos je \"Het kost minder dan een enkel schoolfeest.\"? Dan denk je dat dit het tegenargument is. Dit is de weerlegging, die op het tegenargument volgt."
+   ],
+   "uh": "Is het voor of tegen?",
+   "ctx": "Standpunt: \"Scholen moeten gratis fruit uitdelen.\" Argument 1: \"Fruit is gezond.\" Argument 2: \"Veel leerlingen eten thuis weinig fruit.\" Een tegenstander zegt: \"Het kost de school veel geld.\" De schrijver antwoordt: \"Het kost minder dan een enkel schoolfeest.\""
+  },
+  {
+   "v": "Welk signaalwoord kondigt in tekst A de conclusie aan?",
+   "o": [
+    "\"Ten eerste\"",
+    "\"maar\"",
+    "\"Sommige\"",
+    "\"Daarom\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 4,
+   "u": "Daarom, dus en kortom leiden een conclusie in.",
+   "uo": [
+    "Koos je \"Ten eerste\"? Dan denk je dat dit de conclusie aankondigt. Het begint de opsomming van argumenten, de conclusie komt aan het eind.",
+    "Koos je \"maar\"? Dan denk je dat \"maar\" de conclusie aankondigt. Het leidt een weerlegging in, geen conclusie.",
+    "Koos je \"Sommige\"? Dan denk je dat \"sommige\" de conclusie aankondigt. Het introduceert een groep tegenstanders, geen conclusie.",
+    "Klopt: \"Daarom\" leidt de slotzin in met het standpunt."
+   ],
+   "uh": "Welk woord geeft een gevolgtrekking aan?",
+   "ctx": "Een telefoonvrije school is een goed idee. Ten eerste leiden telefoons af: wie tijdens de les een bericht krijgt, luistert even niet meer naar de docent. Ten tweede zijn pauzes bedoeld om elkaar te ontmoeten, maar leerlingen die naar hun scherm staren praten nauwelijks met elkaar. Sommige leerlingen vinden dat een verbod hen kinderachtig behandelt. Dat is begrijpelijk, maar het gaat niet om wantrouwen: het gaat om een afspraak die voor iedereen gelijk is, net als de afspraak om op tijd te komen. Scholen die zo'n afspraak maken, geven leerlingen de kans zich beter te concentreren. Daarom moet onze school telefoons uit de les en uit de pauze verbannen."
+  },
+  {
+   "v": "Waarom bevat tekst C geen standpunt, hoewel de uitspraken stellig zijn?",
+   "o": [
+    "het zijn vaststellingen zonder twijfel",
+    "de uitspraken staan in de verleden tijd",
+    "er staat geen werkwoord in de tekst",
+    "de tekst is te kort voor een standpunt"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 5,
+   "u": "Een standpunt stuit op twijfel; een vaststelling niet.",
+   "uo": [
+    "Klopt: een standpunt moet op twijfel of tegenspraak stuiten.",
+    "Koos je \"de uitspraken staan in de verleden tijd\"? Dan denk je dat de tijd een standpunt uitsluit. De tijd maakt niet uit, het gaat om twijfel of tegenspraak.",
+    "Koos je \"er staat geen werkwoord in de tekst\"? Dan denk je dat de tekst geen werkwoorden heeft. Er staan er veel in, het ontbreken van een standpunt komt door de aard van de uitspraken.",
+    "Koos je \"de tekst is te kort voor een standpunt\"? Dan denk je dat de lengte telt. Ook een kort stuk kan een standpunt hebben, het gaat om de aard van de uitspraken."
+   ],
+   "uh": "Kun je het betwisten?",
+   "ctx": "Een ringweg rond een stad bestaat uit meerdere wegen die samen een lus vormen. Het doel is verkeer dat de stad niet in hoeft, eromheen te leiden. De ringweg heeft meestal meerdere op- en afritten, zodat automobilisten de stad op verschillende plekken kunnen bereiken. Sommige ringwegen hebben een vaste maximumsnelheid, andere een variabele snelheid die afhangt van de drukte. Een ringweg kan ook bestaan uit bestaande wegen die met nieuwe stukken zijn verbonden. Onderhoud gebeurt vaak 's nachts, omdat er dan minder verkeer is."
+  },
+  {
+   "v": "Wat moet de schrijver van tekst B toevoegen om er een betoog van te maken?",
+   "o": [
+    "nog meer vragen aan de lezer",
+    "een duidelijk standpunt met argumenten daarvoor",
+    "een uitleg over wat een vierdaagse werkweek is",
+    "een lange lijst met voorstanders en tegenstanders"
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 0,
+   "u": "Betoog: standpunt plus argumenten.",
+   "uo": [
+    "Koos je \"nog meer vragen aan de lezer\"? Dan denk je dat meer vragen een betoog maken. Vragen zetten juist aan tot nadenken, een betoog verdedigt een standpunt.",
+    "Klopt: een betoog verdedigt een standpunt met argumenten.",
+    "Koos je \"een uitleg over wat een vierdaagse werkweek is\"? Dan denk je dat uitleg een betoog maakt. Uitleg informeert, het standpunt ontbreekt.",
+    "Koos je \"een lange lijst met voorstanders en tegenstanders\"? Dan denk je dat een opsomming een betoog is. Dit maakt de tekst nog meer een beschouwing, omdat de schrijver geen kant kiest."
+   ],
+   "uh": "Wat ontbreekt er?",
+   "ctx": "Steeds meer gemeenten denken na over een proef met een vierdaagse werkweek. Voorstanders wijzen op meer rust en minder ziekteverzuim. Tegenstanders vrezen dat klanten last krijgen als een winkel een dag dichtgaat, en dat werknemers dezelfde taken in minder dagen moeten doen, wat de werkdruk kan verhogen. Tussen die twee standpunten ligt een groot gebied van vragen. Welke taken laten zich in minder uren doen? Voor welke beroepen werkt het niet? En wie bepaalt dat? Het antwoord verschilt waarschijnlijk per sector. Een proef kan helpen om te zien wat er werkelijk gebeurt, maar zelfs dan blijft een afweging nodig."
+  }
+ ],
+ "oe": [
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een telefoonvrije school is een goed idee. Ten eerste leiden telefoons af: wie tijdens de les een bericht krijgt, luistert even niet meer naar de docent. Ten tweede zijn pauzes bedoeld om elkaar te ontmoeten, maar leerlingen die naar hun scherm staren praten nauwelijks met elkaar. Sommige leerlingen vinden dat een verbod hen kinderachtig behandelt. Dat is begrijpelijk, maar het gaat niet om wantrouwen: het gaat om een afspraak die voor iedereen gelijk is, net als de afspraak om op tijd te komen. Scholen die zo'n afspraak maken, geven leerlingen de kans zich beter te concentreren. Daarom moet onze school telefoons uit de les en uit de pauze verbannen.",
+   "v": "Noem het standpunt, twee argumenten en het tegenargument van tekst A.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Standpunt: de school moet telefoons uit de les en de pauze verbannen (1p). Argumenten: telefoons leiden af (1p) en pauzes zijn om elkaar te ontmoeten (1p). Tegenargument: een verbod behandelt leerlingen kinderachtig (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Steeds meer gemeenten denken na over een proef met een vierdaagse werkweek. Voorstanders wijzen op meer rust en minder ziekteverzuim. Tegenstanders vrezen dat klanten last krijgen als een winkel een dag dichtgaat, en dat werknemers dezelfde taken in minder dagen moeten doen, wat de werkdruk kan verhogen. Tussen die twee standpunten ligt een groot gebied van vragen. Welke taken laten zich in minder uren doen? Voor welke beroepen werkt het niet? En wie bepaalt dat? Het antwoord verschilt waarschijnlijk per sector. Een proef kan helpen om te zien wat er werkelijk gebeurt, maar zelfs dan blijft een afweging nodig.",
+   "v": "Leg uit waarom tekst B een beschouwing is en geen betoog.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "De schrijver noemt voor- en tegenargumenten (1p). De schrijver kiest geen kant (1p). Het doel is de lezer laten nadenken in plaats van overtuigen (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Drie uitspraken uit een discussie over schoolfruit. Uitspraak 1: \"Scholen moeten gratis fruit uitdelen.\" Uitspraak 2: \"Op veel scholen wordt al fruit uitgedeeld.\" Uitspraak 3: \"Fruit is gezond, want het bevat vitaminen en vezels.\"",
+   "v": "Geef bij elke uitspraak aan of het een standpunt, een argument of een vaststelling is.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Uitspraak 1 is een standpunt (1p), uitspraak 2 is een vaststelling (1p), uitspraak 3 is een argument (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Wie 's ochtends om half negen de snelweg op rijdt, weet dat de file er al staat. Dit jaar zijn er weer wegwerkzaamheden gepland, uitgerekend in de spits. Natuurlijk kan het ministerie niet alles in het weekend laten doen. Maar wie in het weekend werkt, kost geld, en dat is nu eenmaal op. Zo blijven forenzen dagelijks tien minuten extra in de auto zitten en daalt de kans dat iemand op tijd op zijn werk is. Wellicht is dat de bedoeling: een land waarin iedereen al in de auto meer tijd heeft om na te denken over zijn leven.",
+   "v": "Formuleer het impliciete standpunt van tekst D en noem een zin waaruit het blijkt.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "De werkzaamheden zijn slecht gepland, omdat ze in de spits plaatsvinden (1p). Bewijs: de ironische slotzin of de zin dat kosten het ministerie op blokkeren (1p). Uitleg van de ironie (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Standpunt: \"Scholen moeten gratis fruit uitdelen.\" Argument 1: \"Fruit is gezond.\" Argument 2: \"Veel leerlingen eten thuis weinig fruit.\" Een tegenstander zegt: \"Het kost de school veel geld.\" De schrijver antwoordt: \"Het kost minder dan een enkel schoolfeest.\"",
+   "v": "Noem het tegenargument en geef daarvan de weerlegging.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Tegenargument: het kost de school veel geld (1p). Weerlegging: het kost minder dan een enkel schoolfeest (1p). De schrijver gebruikt een vergelijking in de weerlegging (1p)."
+  }
+ ]
+}
