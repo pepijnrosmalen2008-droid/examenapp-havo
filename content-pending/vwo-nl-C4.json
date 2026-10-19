@@ -1,0 +1,681 @@
+{
+ "id": "C4",
+ "lo": "nl.C.4",
+ "gs": 2,
+ "naam": "Tekst en alinea opbouwen",
+ "beschrijving": "Je bouwt een tekst op met inleiding, kern en slot, schrijft alinea's met één hoofdgedachte en een kernzin, kiest een passende volgorde en zorgt met verwijswoorden, signaalwoorden en overgangen voor samenhang.",
+ "ceStatus": "SE",
+ "binas": "",
+ "val": "",
+ "onderwerpen": [
+  "De opbouw van een tekst: inleiding, kern en slot",
+  "De alinea: één hoofdgedachte met een kernzin",
+  "Ordening: de volgorde van alinea's",
+  "Samenhang: verwijs- en signaalwoorden",
+  "Overgangen en de rode draad",
+  "Titel, tussenkopjes en veelvoorkomende fouten"
+ ],
+ "sam": "Een tekst heeft een inleiding, een kern en een slot. Elke alinea behandelt één hoofdgedachte, vaak vastgelegd in een kernzin. De volgorde van de alinea's volgt het doel: tijd bij een verslag, probleem, oorzaak, gevolg en oplossing bij een probleemtekst, stelling en argumenten bij een betoog. Verwijswoorden, signaalwoorden en overgangen zorgen voor samenhang, en alle alinea's horen bij de rode draad. Een titel en tussenkopjes noemen het onderwerp.",
+ "begrippen": [
+  {
+   "t": "Inleiding",
+   "d": "Het begin van de tekst: aandacht, onderwerp en bij een betoog de stelling."
+  },
+  {
+   "t": "Kern",
+   "d": "Het middendeel waarin je het onderwerp uitwerkt in alinea's."
+  },
+  {
+   "t": "Slot",
+   "d": "Het einde van de tekst met conclusie en soms een oproep, zonder nieuw argument."
+  },
+  {
+   "t": "Alinea",
+   "d": "Een tekstdeel over één hoofdgedachte, afgesloten met een witregel of inspringing."
+  },
+  {
+   "t": "Kernzin",
+   "d": "De zin die de hoofdgedachte van een alinea geeft."
+  },
+  {
+   "t": "Hoofdgedachte",
+   "d": "Waar een alinea of tekst in de kern over gaat."
+  },
+  {
+   "t": "Rode draad",
+   "d": "Het thema dat door de hele tekst loopt en alle alinea's verbindt."
+  },
+  {
+   "t": "Signaalwoord",
+   "d": "Een woord dat het verband tussen zinnen aangeeft, zoals bovendien, maar of want."
+  },
+  {
+   "t": "Verwijswoord",
+   "d": "Een woord dat naar iets eerder genoemds verwijst, zoals deze maatregel of hij."
+  },
+  {
+   "t": "Overgang",
+   "d": "Een zin die aansluit op de vorige alinea en de volgende aankondigt."
+  },
+  {
+   "t": "Tussenkopje",
+   "d": "Een korte kop boven een alinea die haar onderwerp noemt."
+  },
+  {
+   "t": "Ordening",
+   "d": "De volgorde waarin je de delen van een tekst zet, zoals chronologisch of probleem en oplossing."
+  }
+ ],
+ "sv": [
+  {
+   "v": "Uit welke drie delen bestaat een goed opgebouwde tekst?",
+   "o": [
+    "titel, kop en voet",
+    "inleiding, kern en slot",
+    "vraag, stelling en antwoord",
+    "alinea, zin en woord"
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 0,
+   "u": "Een tekst heeft een begin, een midden en een eind.",
+   "uo": [
+    "Koos je \"titel, kop en voet\"? Dan denk je dat een tekst is opgebouwd als een brief. Titel en kop horen bij de opmaak, de opbouw bestaat uit inleiding, kern en slot.",
+    "Klopt: begin, midden en eind vormen de basisopbouw van een tekst.",
+    "Koos je \"vraag, stelling en antwoord\"? Dan denk je dat een tekst uit vragen en antwoorden bestaat. Dat is één mogelijke structuur, geen basisopbouw van elke tekst.",
+    "Koos je \"alinea, zin en woord\"? Dan denk je dat dit de opbouw van een tekst is. Dit zijn de bouwstenen van de tekst, niet de delen van het geheel."
+   ],
+   "uh": "Begin, midden, eind."
+  },
+  {
+   "v": "Een tekstdeel over één hoofdgedachte begint na een witregel. Hoe heet zo'n tekstdeel?",
+   "o": [
+    "kernzin",
+    "tussenkopje",
+    "inleiding",
+    "alinea"
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 1,
+   "u": "Een alinea behandelt één hoofdgedachte.",
+   "uo": [
+    "Koos je \"kernzin\"? Dan denk je dat de kernzin het hele tekstdeel is. De kernzin is één zin in zo'n deel, het tekstdeel zelf is de alinea.",
+    "Koos je \"tussenkopje\"? Dan denk je dat het deel een kopje is. Een tussenkopje is een korte kop boven een deel, het deel zelf heet alinea.",
+    "Koos je \"inleiding\"? Dan denk je dat zo'n deel de inleiding is. Een inleiding is alleen het begin van de tekst, een tekstdeel over één gedachte is een alinea.",
+    "Klopt: een alinea behandelt één hoofdgedachte en begint na een witregel."
+   ],
+   "uh": "Eén gedachte per alinea."
+  },
+  {
+   "v": "Welke zin is de kernzin van deze alinea?",
+   "o": [
+    "\"Fietsen naar school is gezond.\"",
+    "\"De gemeente legt volgend jaar nieuwe fietspaden aan.\"",
+    "\"Wie elke dag een kwartier fietst, beweegt meer dan wie met de bus gaat.\"",
+    "\"Bovendien zorgt frisse lucht voor een beter humeur.\""
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 1,
+   "u": "De kernzin geeft de hoofdgedachte van de alinea.",
+   "uo": [
+    "Klopt: de eerste zin geeft de hoofdgedachte, de rest werkt die uit.",
+    "Koos je \"De gemeente legt volgend jaar nieuwe fietspaden aan.\"? Dan denk je dat de feitelijkste zin de kernzin is. Deze zin staat los van de rest, en geeft niet de hoofdgedachte.",
+    "Koos je \"Wie elke dag een kwartier fietst, beweegt meer dan...\"? Dan denk je dat de uitleg de hoofdgedachte is. Deze zin is bewijs bij de kernzin, hij is zelf niet de hoofdgedachte.",
+    "Koos je \"Bovendien zorgt frisse lucht voor een beter humeur.\"? Dan denk je dat een aanvulling de kernzin is. Zo'n zin voegt iets toe aan de hoofdgedachte, maar de hoofdgedachte staat vooraan."
+   ],
+   "uh": "Waar gaat de alinea over?",
+   "ctx": "Alinea uit een schoolkrant: \"Fietsen naar school is gezond. Wie elke dag een kwartier fietst, beweegt meer dan wie met de bus gaat. De gemeente legt volgend jaar nieuwe fietspaden aan. Bovendien zorgt frisse lucht voor een beter humeur. Fietsen naar school is dus een goede gewoonte.\""
+  },
+  {
+   "v": "Wat doet het signaalwoord \"bovendien\" in een tekst?",
+   "o": [
+    "het geeft juist een tegenstelling aan",
+    "het sluit de hele tekst af en vat samen",
+    "het voegt iets toe",
+    "het noemt de oorzaak van iets"
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 3,
+   "u": "Bovendien voegt een argument of voorbeeld toe.",
+   "uo": [
+    "Koos je \"het geeft juist een tegenstelling aan\"? Dan denk je dat bovendien een tegenstelling is. Een tegenstelling geef je aan met \"maar\" of \"echter\", bovendien voegt iets toe.",
+    "Koos je \"het sluit de hele tekst af en vat samen\"? Dan denk je dat bovendien een slotwoord is. Dat is bijvoorbeeld \"kortom\", bovendien komt midden in de tekst voor.",
+    "Klopt: \"bovendien\" kondigt iets aan dat erbij komt.",
+    "Koos je \"het noemt de oorzaak van iets\"? Dan denk je dat bovendien een oorzaak aangeeft. Dat doet \"want\" of \"omdat\", bovendien voegt iets toe."
+   ],
+   "uh": "Erbij of juist niet?"
+  },
+  {
+   "v": "Welke ordening past bij een tekst over de gebeurtenissen van een dag?",
+   "o": [
+    "van de grootste naar de kleinste zaak",
+    "in alfabetische volgorde van onderwerp",
+    "in de volgorde van de tijd",
+    "van moeilijk naar makkelijk voor de lezer"
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 2,
+   "u": "Gebeurtenissen ordenen we chronologisch.",
+   "uo": [
+    "Koos je \"van de grootste naar de kleinste zaak\"? Dan denk je dat je altijd van groot naar klein werkt. Dat past bij een uitleg over onderdelen, niet bij een verloop van een dag.",
+    "Koos je \"in alfabetische volgorde van onderwerp\"? Dan denk je dat alfabet een goede ordening is. Dat past bij een lijst, niet bij een tekst met een verloop.",
+    "Klopt: bij gebeurtenissen volgt de tekst de tijd van eerst naar laatst.",
+    "Koos je \"van moeilijk naar makkelijk voor de lezer\"? Dan denk je dat de moeilijkheid de volgorde bepaalt. Dat kan bij uitleg, maar gebeurtenissen volgen de tijd."
+   ],
+   "uh": "Eerst, dan, daarna."
+  },
+  {
+   "v": "Waar dient de titel van een tekst vooral voor?",
+   "o": [
+    "de lezer vertellen waar de tekst over gaat",
+    "de lezer de naam van de schrijver laten onthouden",
+    "de eerste alinea van de tekst vervangen",
+    "de tekst opsplitsen in verschillende alinea's"
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 5,
+   "u": "Een titel noemt kort het onderwerp.",
+   "uo": [
+    "Klopt: een titel geeft het onderwerp of de boodschap kort weer.",
+    "Koos je \"de lezer de naam van de schrijver laten onthouden\"? Dan denk je dat de titel de schrijver noemt. De naam van de schrijver staat apart, de titel zegt waar de tekst over gaat.",
+    "Koos je \"de eerste alinea van de tekst vervangen\"? Dan denk je dat de titel de inleiding is. De inleiding staat in de tekst zelf, de titel is een korte aanduiding.",
+    "Koos je \"de tekst opsplitsen in verschillende alinea's\"? Dan denk je dat de titel de tekst indeelt. Dat doen de tussenkopjes en de alinea's, de titel noemt het onderwerp."
+   ],
+   "uh": "Waar gaat het over?"
+  },
+  {
+   "v": "Hoe heet het thema dat door alle alinea's van een tekst heen loopt?",
+   "o": [
+    "de kernzin van de eerste alinea",
+    "het tussenkopje boven de kern",
+    "de ordening van de alinea's",
+    "de rode draad"
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 4,
+   "u": "De rode draad is het thema dat de alinea's verbindt.",
+   "uo": [
+    "Koos je \"de kernzin van de eerste alinea\"? Dan denk je dat het thema één zin is. Een kernzin hoort bij één alinea, de rode draad loopt door alle alinea's.",
+    "Koos je \"het tussenkopje boven de kern\"? Dan denk je dat het thema een kopje is. Een kopje noemt het onderwerp van één deel, de rode draad loopt door het geheel.",
+    "Koos je \"de ordening van de alinea's\"? Dan denk je dat dit de volgorde is. De ordening bepaalt de volgorde, de rode draad is het thema.",
+    "Klopt: de rode draad is de hoofdgedachte waar elke alinea bij hoort."
+   ],
+   "uh": "Waar draait het om?"
+  },
+  {
+   "v": "Welke inleiding past het best bij een betoog?",
+   "o": [
+    "inleiding B",
+    "inleiding A",
+    "geen van beide, want een inleiding is niet nodig",
+    "allebei, want beide zijn even bruikbaar"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 0,
+   "u": "Een inleiding bevat aandacht, onderwerp en stelling.",
+   "uo": [
+    "Koos je \"inleiding B\"? Dan denk je dat een persoonlijke begroeting een goede inleiding is. Inleiding B noemt geen stelling, en ze komt te informeel over.",
+    "Klopt: ze trekt aandacht, noemt het onderwerp en geeft de stelling.",
+    "Koos je \"geen van beide, want een inleiding is niet nodig\"? Dan denk je dat een betoog zonder inleiding kan. Een inleiding hoort erbij, omdat ze de lezer naar de stelling leidt.",
+    "Koos je \"allebei, want beide zijn even bruikbaar\"? Dan denk je dat beide inleidingen werken. Alleen A noemt het onderwerp en de stelling, B laat de lezer in het ongewisse."
+   ],
+   "uh": "Staat de stelling erin?",
+   "ctx": "Inleiding A: \"Hoe laat begin jij op school? Voor veel tieners is acht uur te vroeg. In dit betoog laat ik zien dat scholen later moeten beginnen.\" Inleiding B: \"Hallo allemaal, ik ga jullie vandaag iets vertellen over school. Eerst moet ik even zeggen dat ik de les gisteren leuk vond.\""
+  },
+  {
+   "v": "Wat is er mis met deze alinea?",
+   "o": [
+    "de eerste zin is veel te lang",
+    "er staan geen cijfers in de alinea",
+    "de alinea is te kort om te beoordelen",
+    "ze bevat twee hoofdgedachten"
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 1,
+   "u": "Een alinea heeft één hoofdgedachte, deze heeft er twee.",
+   "uo": [
+    "Koos je \"de eerste zin is veel te lang\"? Dan denk je dat de zinslengte het probleem is. Daar gaat het niet om, het probleem is dat er twee onderwerpen in staan.",
+    "Koos je \"er staan geen cijfers in de alinea\"? Dan denk je dat er cijfers ontbreken. Er staan wel cijfers in, maar die horen bij twee verschillende gedachten.",
+    "Koos je \"de alinea is te kort om te beoordelen\"? Dan denk je dat de alinea te kort is. De lengte is hier niet het probleem, de inhoud springt van onderwerp naar onderwerp.",
+    "Klopt: de stalling en de kantineprijzen zijn twee verschillende onderwerpen."
+   ],
+   "uh": "Hoeveel onderwerpen?",
+   "ctx": "Alinea uit een leerlingenverslag: \"Mijn school ligt midden in de stad en de fietsenstalling is te klein, want er zijn maar tweehonderd plaatsen voor duizend leerlingen. Ook de kantine is duur. Een broodje kost bijna vier euro en een fles water twee euro, terwijl veel leerlingen weinig zakgeld hebben.\""
+  },
+  {
+   "v": "Hoe verbeter je deze alinea het best?",
+   "o": [
+    "haal alle cijfers uit de alinea weg",
+    "verdeel haar in twee alinea's",
+    "voeg nog een derde onderwerp aan de alinea toe",
+    "maak van de alinea één lange zin zonder punt"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 1,
+   "u": "Splits een alinea met twee gedachten in twee alinea's.",
+   "uo": [
+    "Koos je \"haal alle cijfers uit de alinea weg\"? Dan denk je dat cijfers de alinea te druk maken. De cijfers zijn juist bewijs, het probleem is de dubbele hoofdgedachte.",
+    "Klopt: elke alinea krijgt dan één hoofdgedachte.",
+    "Koos je \"voeg nog een derde onderwerp aan de alinea toe\"? Dan denk je dat meer onderwerpen helpen. Dat maakt de alinea alleen onoverzichtelijker, één gedachte per alinea is beter.",
+    "Koos je \"maak van de alinea één lange zin zonder punt\"? Dan denk je dat een langere zin samenhang geeft. Dat verbergt het probleem alleen, zonder het op te lossen."
+   ],
+   "uh": "Eén gedachte per alinea.",
+   "ctx": "Alinea uit een leerlingenverslag: \"Mijn school ligt midden in de stad en de fietsenstalling is te klein, want er zijn maar tweehonderd plaatsen voor duizend leerlingen. Ook de kantine is duur. Een broodje kost bijna vier euro en een fles water twee euro, terwijl veel leerlingen weinig zakgeld hebben.\""
+  },
+  {
+   "v": "Welke ordening gebruikt de schrijver van dit artikel?",
+   "o": [
+    "chronologisch, van vroeger naar nu en straks",
+    "van een klein detail naar het grote geheel",
+    "probleem, oorzaak, gevolg en oplossing",
+    "voor- en nadelen van twee kanten naast elkaar"
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 2,
+   "u": "Probleem, oorzaak, gevolg, oplossing.",
+   "uo": [
+    "Koos je \"chronologisch, van vroeger naar nu en straks\"? Dan denk je dat de alinea's een tijdlijn volgen. Er worden geen tijdstippen genoemd, de volgorde is inhoudelijk.",
+    "Koos je \"van een klein detail naar het grote geheel\"? Dan denk je dat de schrijver van klein naar groot werkt. De alinea's gaan over een probleem, niet over een onderdeel en een geheel.",
+    "Klopt: de vier alinea's volgen precies die volgorde van probleem tot oplossing.",
+    "Koos je \"voor- en nadelen van twee kanten naast elkaar\"? Dan denk je dat er voor- en nadelen worden vergeleken. Er is maar één kant van het verhaal, namelijk het probleem en de oplossing."
+   ],
+   "uh": "Wat gebeurt er in elke alinea?",
+   "ctx": "Vier alinea's van een artikel beginnen zo. Alinea 1: \"Veel tieners slapen te weinig.\" Alinea 2: \"Een belangrijke oorzaak is het gebruik van telefoons in bed.\" Alinea 3: \"Een gevolg is dat zij overdag minder opletten.\" Alinea 4: \"Scholen kunnen daarom beter later beginnen.\""
+  },
+  {
+   "v": "Waarnaar verwijst \"Deze maatregel\" in de tweede zin?",
+   "o": [
+    "naar de nieuwe prullenbakken",
+    "naar het zwerfafval dat in het park ligt",
+    "naar de vrijwilligers die het park opruimen",
+    "naar de kosten die voor de gemeente stijgen"
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 3,
+   "u": "Een verwijswoord verwijst naar iets wat eerder staat.",
+   "uo": [
+    "Klopt: het verwijswoord vat het plaatsen van de prullenbakken samen.",
+    "Koos je \"naar het zwerfafval dat in het park ligt\"? Dan denk je dat de maatregel het afval zelf is. Het afval is het probleem, de maatregel is wat de gemeente doet.",
+    "Koos je \"naar de vrijwilligers die het park opruimen\"? Dan denk je dat de vrijwilligers de maatregel zijn. Zij komen pas in de derde zin voor, de maatregel gaat over de prullenbakken.",
+    "Koos je \"naar de kosten die voor de gemeente stijgen\"? Dan denk je dat de kosten bedoeld zijn. Die staan pas in de derde zin, na het verwijswoord."
+   ],
+   "uh": "Wat noemt de eerste zin?",
+   "ctx": "Uit een krantenbericht: \"De gemeente plaatst nieuwe prullenbakken in het park. Deze maatregel moet het zwerfafval verminderen. Hierdoor hoeven vrijwilligers minder vaak op te ruimen, maar de kosten voor de gemeente stijgen.\""
+  },
+  {
+   "v": "Welk probleem heeft de eerste versie?",
+   "o": [
+    "de zinnen hebben geen verband",
+    "er staan veel te weinig feiten over het museum",
+    "de zinnen zijn allemaal veel te lang geworden",
+    "de woorden zijn veel te moeilijk voor de lezer"
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 3,
+   "u": "Zonder signaalwoorden staan zinnen los van elkaar.",
+   "uo": [
+    "Klopt: er zijn geen signaalwoorden die de zinnen verbinden.",
+    "Koos je \"er staan veel te weinig feiten over het museum\"? Dan denk je dat er feiten ontbreken. De feiten staan er in beide versies in, het gaat om de verbanden tussen de zinnen.",
+    "Koos je \"de zinnen zijn allemaal veel te lang geworden\"? Dan denk je dat de zinnen te lang zijn. Ze zijn juist kort, maar ze staan los van elkaar.",
+    "Koos je \"de woorden zijn veel te moeilijk voor de lezer\"? Dan denk je dat de woordkeus het probleem is. De woorden zijn eenvoudig, het ontbreekt aan verbindingen."
+   ],
+   "uh": "Wat verbindt de zinnen?",
+   "ctx": "Eerste versie: \"Het museum is gratis voor kinderen. Het museum is duur voor volwassenen. Veel gezinnen gaan er heen. Er zijn tekenworkshops.\" Tweede versie: \"Het museum is gratis voor kinderen, maar duur voor volwassenen. Toch gaan veel gezinnen erheen, want er zijn ook tekenworkshops.\""
+  },
+  {
+   "v": "Welk woord in de tweede versie geeft een oorzaak aan?",
+   "o": [
+    "maar, in de eerste zin van de tweede versie",
+    "toch, aan het begin van de tweede zin",
+    "want, in de laatste zin",
+    "ook, vlak voor het woord tekenworkshops"
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 3,
+   "u": "\"Want\" geeft de reden.",
+   "uo": [
+    "Koos je \"maar, in de eerste zin van de tweede versie\"? Dan denk je dat maar een oorzaak aangeeft. Maar geeft een tegenstelling aan, \"want\" geeft de reden.",
+    "Koos je \"toch, aan het begin van de tweede zin\"? Dan denk je dat toch de reden noemt. Toch geeft aan dat iets ondanks het bezwaar gebeurt, \"want\" geeft de reden.",
+    "Klopt: \"want\" leidt de reden in waarom gezinnen komen.",
+    "Koos je \"ook, vlak voor het woord tekenworkshops\"? Dan denk je dat ook een reden aangeeft. Ook voegt iets toe, maar het noemt geen oorzaak."
+   ],
+   "uh": "Welk woord geeft de reden?",
+   "ctx": "Eerste versie: \"Het museum is gratis voor kinderen. Het museum is duur voor volwassenen. Veel gezinnen gaan er heen. Er zijn tekenworkshops.\" Tweede versie: \"Het museum is gratis voor kinderen, maar duur voor volwassenen. Toch gaan veel gezinnen erheen, want er zijn ook tekenworkshops.\""
+  },
+  {
+   "v": "Welk begin van alinea 3 sluit het best aan op het einde van alinea 2?",
+   "o": [
+    "versie B",
+    "versie A",
+    "versie C",
+    "alle drie, want elk begin kan"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 4,
+   "u": "Een overgang sluit aan op het vorige en kondigt het nieuwe aan.",
+   "uo": [
+    "Koos je \"versie B\"? Dan denk je dat een algemene overgang volstaat. Versie B zegt niets over de inhoud, en legt geen verband met de vorige alinea.",
+    "Klopt: \"echter\" en \"nadelen\" verbinden de alinea met het voorgaande.",
+    "Koos je \"versie C\"? Dan denk je dat een herhaling van het standpunt een overgang is. Versie C herhaalt een standpunt, en past niet bij de vorige alinea.",
+    "Koos je \"alle drie, want elk begin kan\"? Dan denk je dat de overgang er niet toe doet. Een goede overgang verbindt twee alinea's, en versie A doet dat het best."
+   ],
+   "uh": "Welke zin verbindt?",
+   "ctx": "Het einde van alinea 2 luidt: \"Zo hebben leerlingen in de ochtend meer rust.\" Het begin van alinea 3 kan zijn. Versie A: \"Docenten zien echter ook nadelen van een latere start.\" Versie B: \"Er is nog een ander onderwerp.\" Versie C: \"Een latere start is een goed idee.\""
+  },
+  {
+   "v": "Welke tussenkopjes passen het best bij dit artikel?",
+   "o": [
+    "Inleiding op het artikel, Midden van het artikel, Slot",
+    "Lees dit eerst, lees dit daarna, lees dit ook nog",
+    "Mijn eerste mening, mijn tweede mening, nog een mening",
+    "Slaaptekort, De proef, Wat kunnen we doen?"
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 5,
+   "u": "Een tussenkopje noemt de inhoud van de alinea.",
+   "uo": [
+    "Koos je \"Inleiding op het artikel, Midden van het artikel,...\"? Dan denk je dat de kopjes de tekstdelen moeten benoemen. Zulke kopjes zeggen niets over de inhoud, de lezer leert er niets van.",
+    "Koos je \"Lees dit eerst, lees dit daarna, lees dit ook nog\"? Dan denk je dat een oproep een kopje is. Zulke kopjes zeggen niet waar het over gaat, ze helpen de lezer niet.",
+    "Koos je \"Mijn eerste mening, mijn tweede mening, nog een...\"? Dan denk je dat meningen kopjes zijn. De alinea's gaan over slaaptekort, een proef en maatregelen, de kopjes moeten die onderwerpen noemen.",
+    "Klopt: elk kopje geeft de inhoud van een alinea weer."
+   ],
+   "uh": "Waar gaat de alinea over?",
+   "ctx": "Een artikel over de starttijd van scholen heeft drie alinea's. Alinea 1 gaat over het slaaptekort van tieners, alinea 2 over een proef op een school met een latere starttijd en alinea 3 over wat scholen en ouders kunnen doen."
+  },
+  {
+   "v": "Wat hoort niet in het slot van een betoog?",
+   "o": [
+    "een korte samenvatting van de argumenten",
+    "een nieuw argument",
+    "een oproep aan de lezer om iets te doen",
+    "een conclusie die uit de argumenten volgt"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 0,
+   "u": "In het slot staat geen nieuw argument.",
+   "uo": [
+    "Koos je \"een korte samenvatting van de argumenten\"? Dan denk je dat samenvatten niet mag. Een korte samenvatting hoort juist in het slot, ze maakt de conclusie sterker.",
+    "Klopt: het slot sluit af en brengt geen nieuwe stof.",
+    "Koos je \"een oproep aan de lezer om iets te doen\"? Dan denk je dat een oproep niet in het slot past. Een oproep staat juist vaak op het eind, omdat de lezer iets moet doen.",
+    "Koos je \"een conclusie die uit de argumenten volgt\"? Dan denk je dat een conclusie ontbreekt in een slot. Een conclusie hoort er juist in, als afsluiting van de redenering."
+   ],
+   "uh": "Wat rondt af?"
+  },
+  {
+   "v": "Welke zin hoort niet bij de hoofdgedachte van de alinea?",
+   "o": [
+    "\"De gemeente legt volgend jaar nieuwe fietspaden aan.\"",
+    "\"Wie elke dag een kwartier fietst, beweegt meer dan wie met de bus gaat.\"",
+    "\"Bovendien zorgt frisse lucht voor een beter humeur.\"",
+    "\"Fietsen naar school is dus een goede gewoonte.\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 1,
+   "u": "Een zin die niet bij de kernzin past, haal je weg.",
+   "uo": [
+    "Klopt: de zin gaat niet over de gezondheid van fietsen en leidt af.",
+    "Koos je \"Wie elke dag een kwartier fietst, beweegt meer dan...\"? Dan denk je dat deze zin afwijkt. Hij is de uitwerking van \"gezond\", dus hij hoort er wel bij.",
+    "Koos je \"Bovendien zorgt frisse lucht voor een beter humeur.\"? Dan denk je dat deze aanvulling afwijkt. Hij voegt een tweede gezond effect toe, en hoort dus bij de hoofdgedachte.",
+    "Koos je \"Fietsen naar school is dus een goede gewoonte.\"? Dan denk je dat de slotzin afwijkt. Zij vat de hoofdgedachte samen, en hoort dus bij de alinea."
+   ],
+   "uh": "Past de zin bij de kernzin?",
+   "ctx": "Alinea uit een schoolkrant: \"Fietsen naar school is gezond. Wie elke dag een kwartier fietst, beweegt meer dan wie met de bus gaat. De gemeente legt volgend jaar nieuwe fietspaden aan. Bovendien zorgt frisse lucht voor een beter humeur. Fietsen naar school is dus een goede gewoonte.\""
+  },
+  {
+   "v": "Waar staat de kernzin in deze alinea en wat doet ze?",
+   "o": [
+    "aan het begin, ze kondigt het onderwerp van de alinea aan",
+    "in het midden, ze geeft een voorbeeld van het onderwerp",
+    "er is in deze alinea helemaal geen kernzin aanwezig",
+    "aan het eind, als samenvatting"
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 1,
+   "u": "Een kernzin kan ook aan het eind staan als samenvatting.",
+   "uo": [
+    "Koos je \"aan het begin, ze kondigt het onderwerp van de...\"? Dan denk je dat de eerste zin de kernzin is. De eerste zin is slechts een voorbeeld, de kernzin staat aan het eind.",
+    "Koos je \"in het midden, ze geeft een voorbeeld van het...\"? Dan denk je dat de middelste zin de kernzin is. Dat is een voorbeeld, geen samenvatting van de alinea.",
+    "Koos je \"er is in deze alinea helemaal geen kernzin aanwezig\"? Dan denk je dat een kernzin ontbreekt. De laatste zin is wel degelijk een kernzin, want hij vat de rest samen.",
+    "Klopt: \"kortom\" kondigt de samenvattende kernzin aan."
+   ],
+   "uh": "Waar staat de samenvatting?",
+   "ctx": "Alinea uit een artikel: \"Leerlingen zeggen dat ze door hun telefoon minder slapen. Docenten merken dat zij in de les minder opletten. Ouders zien dat hun kinderen later naar bed gaan. Kortom: het gebruik van telefoons in de avond verstoort de slaap van tieners.\""
+  },
+  {
+   "v": "Een schrijver wil lezers overtuigen die nog twijfelen. Welke ordening past het best?",
+   "o": [
+    "conclusie, argumenten, weerlegging, daarna de stelling",
+    "weerlegging, conclusie, stelling, daarna de argumenten",
+    "stelling, argumenten, weerlegging, conclusie",
+    "argumenten, oproep, stelling, daarna de weerlegging"
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 2,
+   "u": "Betoog: stelling, argumenten, weerlegging, conclusie.",
+   "uo": [
+    "Koos je \"conclusie, argumenten, weerlegging, daarna de...\"? Dan denk je dat je met de conclusie kunt beginnen. Dan is er nog geen redenering, en volgt de stelling te laat.",
+    "Koos je \"weerlegging, conclusie, stelling, daarna de...\"? Dan denk je dat de volgorde niet uitmaakt. Het verband gaat dan verloren, want de lezer weet niet waar het over gaat.",
+    "Klopt: je neemt de twijfel weg en sluit af met een conclusie.",
+    "Koos je \"argumenten, oproep, stelling, daarna de weerlegging\"? Dan denk je dat je met de argumenten kunt beginnen zonder stelling. De lezer weet dan niet wat je wilt bewijzen, en de oproep komt te vroeg."
+   ],
+   "uh": "Wat komt eerst?"
+  },
+  {
+   "v": "Wat is het probleem met \"Hij\" in de tweede zin en hoe los je dat op?",
+   "o": [
+    "\"hij\" staat te vroeg; zet het woord aan het eind van de zin",
+    "er is geen probleem, want \"hij\" is vanzelfsprekend Jasper",
+    "\"hij\" is onduidelijk; noem de naam",
+    "het woord \"hij\" moet worden vervangen door \"zij\""
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 3,
+   "u": "Een verwijswoord moet naar één ding wijzen.",
+   "uo": [
+    "Koos je \"hij staat te vroeg; zet het woord aan het eind van...\"? Dan denk je dat de plaats van \"hij\" het probleem is. De plaats maakt niet uit, het probleem is dat niet duidelijk is wie bedoeld wordt.",
+    "Koos je \"er is geen probleem, want hij is vanzelfsprekend...\"? Dan denk je dat \"hij\" altijd de eerste genoemde man is. Dat is een aanname, de lezer kan ook de broer of de trainer bedoelen.",
+    "Klopt: een verwijswoord moet duidelijk naar één persoon verwijzen.",
+    "Koos je \"het woord hij moet worden vervangen door zij\"? Dan denk je dat het geslacht het probleem is. Het gaat niet om het geslacht, maar om de onduidelijke verwijzing."
+   ],
+   "uh": "Wie is \"hij\"?",
+   "ctx": "Uit een verslag: \"Jasper sprak met zijn broer en met de trainer over de wedstrijd. Hij was erg boos over de uitslag en wilde niet meer meedoen.\""
+  },
+  {
+   "v": "Welke zin gebruikt \"daardoor\" juist?",
+   "o": [
+    "\"De wedstrijd werd afgelast; daardoor regende het hard.\"",
+    "\"Ik hou van voetbal; daardoor is het vandaag dinsdag.\"",
+    "\"Het was koud; daardoor droeg ze juist een korte broek.\"",
+    "\"Het regende; daardoor werd de wedstrijd afgelast.\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 3,
+   "u": "\"Daardoor\" kondigt een gevolg van het vorige aan.",
+   "uo": [
+    "Koos je \"De wedstrijd werd afgelast; daardoor regende het...\"? Dan denk je dat oorzaak en gevolg van plaats mogen wisselen. \"Daardoor\" wijst op een gevolg, maar hier staat het gevolg voor de oorzaak.",
+    "Koos je \"Ik hou van voetbal; daardoor is het vandaag dinsdag.\"? Dan denk je dat elk verband met \"daardoor\" kan. Het tweede deel moet een gevolg van het eerste zijn, en dat is hier niet zo.",
+    "Koos je \"Het was koud; daardoor droeg ze juist een korte...\"? Dan denk je dat een gevolg tegen de oorzaak in mag gaan. Het gevolg van kou is geen korte broek, daarvoor past \"toch\" beter.",
+    "Klopt: het tweede deel is het gevolg van het eerste."
+   ],
+   "uh": "Is het tweede deel een gevolg?"
+  },
+  {
+   "v": "De schrijver wil na alinea 2 een nieuw onderwerp (de kosten) invoeren. Welke overgangszin is het best?",
+   "o": [
+    "\"Naast rust speelt ook geld een rol: wat kost het?\"",
+    "\"Dan nu iets heel anders, waar ik graag even over wil praten.\"",
+    "\"Wat de kosten betreft: dat staat verderop in de tekst uitgelegd.\"",
+    "\"Dat was alinea twee, en nu komt hier gewoon alinea drie.\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 4,
+   "u": "Een goede overgang bouwt een brug tussen twee alinea's.",
+   "uo": [
+    "Klopt: de zin sluit aan op het vorige en kondigt het nieuwe aan.",
+    "Koos je \"Dan nu iets heel anders, waar ik graag even over...\"? Dan denk je dat een losse overgang volstaat. De zin legt geen verband met het vorige, dus de lezer mist de samenhang.",
+    "Koos je \"Wat de kosten betreft: dat staat verderop in de...\"? Dan denk je dat een verwijzing volstaat. Zo ontbreekt het verband met alinea 2, en moet de lezer zelf zoeken.",
+    "Koos je \"Dat was alinea twee, en nu komt hier gewoon alinea...\"? Dan denk je dat het opsommen van alinea's een overgang is. De zin zegt niets over de inhoud, en verbindt niets met elkaar."
+   ],
+   "uh": "Verbindt de zin oud en nieuw?",
+   "ctx": "Het einde van alinea 2 luidt: \"Zo hebben leerlingen in de ochtend meer rust.\" Het begin van alinea 3 kan zijn. Versie A: \"Docenten zien echter ook nadelen van een latere start.\" Versie B: \"Er is nog een ander onderwerp.\" Versie C: \"Een latere start is een goed idee.\""
+  },
+  {
+   "v": "Welke alinea valt buiten de rode draad?",
+   "o": [
+    "alinea A, over het slaapritme van tieners",
+    "alinea C, over de bakker",
+    "alinea B, over de proef met hogere cijfers",
+    "alinea D, over de conclusie van het betoog"
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 4,
+   "u": "Een alinea die niet bij de hoofdgedachte van de tekst past, schrap je.",
+   "uo": [
+    "Koos je \"alinea A, over het slaapritme van tieners\"? Dan denk je dat het slaapritme er niet bij hoort. Het is juist het eerste argument, en het past bij de stelling.",
+    "Klopt: de bakker heeft niets te maken met de starttijd van scholen.",
+    "Koos je \"alinea B, over de proef met hogere cijfers\"? Dan denk je dat een proef er niet bij hoort. Het is een bewijs voor de stelling, en hoort dus bij de rode draad.",
+    "Koos je \"alinea D, over de conclusie van het betoog\"? Dan denk je dat de conclusie buiten de lijn valt. De conclusie sluit juist aan op de stelling, en rondt de rode draad af."
+   ],
+   "uh": "Past de alinea bij de stelling?",
+   "ctx": "Een betoog heeft als stelling dat scholen later moeten beginnen. De alinea's beginnen zo. A: \"Tieners hebben een ander slaapritme dan volwassenen.\" B: \"Uit een proef bleken de cijfers hoger bij een latere start.\" C: \"De bakker in mijn straat begint al om vier uur met werken.\" D: \"Scholen moeten daarom later beginnen.\""
+  },
+  {
+   "v": "Welk kopje is het beste voor alinea 3?",
+   "o": [
+    "\"Nog iets belangrijks over dit onderwerp\"",
+    "\"Kosten, baten, aantallen, feiten, cijfers en meer\"",
+    "\"Hier komt alinea nummer vier van de tekst\"",
+    "\"Wat kost een latere start?\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 5,
+   "u": "Een kopje is kort en noemt het onderwerp.",
+   "uo": [
+    "Koos je \"Nog iets belangrijks over dit onderwerp\"? Dan denk je dat een vaag kopje volstaat. Zo'n kopje zegt niets over de inhoud, terwijl een kopje het onderwerp moet noemen.",
+    "Koos je \"Kosten, baten, aantallen, feiten, cijfers en meer\"? Dan denk je dat een lange opsomming een goed kopje is. Een kopje moet kort zijn, en één onderwerp noemen.",
+    "Koos je \"Hier komt alinea nummer vier van de tekst\"? Dan denk je dat een nummer mag. Een nummer zegt niets over de inhoud, terwijl de lezer het onderwerp wil zien.",
+    "Klopt: het kopje noemt het onderwerp van de alinea."
+   ],
+   "uh": "Wat staat er in de alinea?",
+   "ctx": "Een artikel over de starttijd van scholen heeft drie alinea's. Alinea 1 gaat over slaaptekort, alinea 2 over de proef op een school en alinea 3 over de kosten van een latere start. Boven alinea 3 staat nu het kopje \"Nog iets\"."
+  },
+  {
+   "v": "Wat ontbreekt er in inleiding B, naast een formele toon?",
+   "o": [
+    "onderwerp en stelling",
+    "een conclusie met een oproep aan de lezer",
+    "een weerlegging van alle tegenwerpingen",
+    "een lijst van bronnen onder de tekst"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 0,
+   "u": "De inleiding noemt onderwerp en stelling.",
+   "uo": [
+    "Klopt: B zegt niet waar het betoog over gaat en welk standpunt volgt.",
+    "Koos je \"een conclusie met een oproep aan de lezer\"? Dan denk je dat een inleiding een conclusie moet bevatten. Die hoort in het slot, niet in de inleiding.",
+    "Koos je \"een weerlegging van alle tegenwerpingen\"? Dan denk je dat de weerlegging al in de inleiding moet staan. Die hoort in de kern, niet in het begin.",
+    "Koos je \"een lijst van bronnen onder de tekst\"? Dan denk je dat de bronnen vooraan staan. Ze staan aan het eind, en niet in de inleiding."
+   ],
+   "uh": "Wat weet de lezer na B?",
+   "ctx": "Inleiding A: \"Hoe laat begin jij op school? Voor veel tieners is acht uur te vroeg. In dit betoog laat ik zien dat scholen later moeten beginnen.\" Inleiding B: \"Hallo allemaal, ik ga jullie vandaag iets vertellen over school. Eerst moet ik even zeggen dat ik de les gisteren leuk vond.\""
+  },
+  {
+   "v": "In welke volgorde horen de notities in de tekst, als je op de signaalwoorden let?",
+   "o": [
+    "onderwerp kiezen, eerste versie schrijven, bronnen zoeken, inleveren",
+    "onderwerp, bronnen, versie, inleveren",
+    "bronnen zoeken, onderwerp kiezen, eerste versie schrijven, inleveren",
+    "onderwerp kiezen, bronnen zoeken, inleveren, eerste versie schrijven"
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 2,
+   "u": "Signaalwoorden geven de volgorde aan: eerst, vervolgens, daarna, tot slot.",
+   "uo": [
+    "Koos je \"onderwerp kiezen, eerste versie schrijven, bronnen...\"? Dan denk je dat \"daarna\" direct na \"eerst\" komt. Dan staat \"vervolgens\" op de verkeerde plek, en de volgorde klopt niet.",
+    "Klopt: eerst, vervolgens, daarna en tot slot geven de volgorde aan.",
+    "Koos je \"bronnen zoeken, onderwerp kiezen, eerste versie...\"? Dan denk je dat \"vervolgens\" het begin is. Het woord \"eerst\" hoort vooraan, dus de volgorde klopt niet.",
+    "Koos je \"onderwerp kiezen, bronnen zoeken, inleveren, eerste...\"? Dan denk je dat \"tot slot\" niet de laatste stap hoeft te zijn. Het werkstuk inleveren is de laatste stap, dus de volgorde klopt niet."
+   ],
+   "uh": "Welk woord noemt het begin?",
+   "ctx": "Een leerling schrijft over hoe een werkstuk ontstaat. Zijn notities beginnen zo. A: \"Daarna schrijven ze de eerste versie.\" B: \"Eerst kiezen ze een onderwerp.\" C: \"Tot slot leveren ze het werkstuk in.\" D: \"Vervolgens zoeken ze bronnen.\""
+  }
+ ],
+ "oe": [
+  {
+   "bron": "Examenstijl",
+   "ctx": "Alinea uit een leerlingenverslag: \"Mijn school ligt midden in de stad en de fietsenstalling is te klein, want er zijn maar tweehonderd plaatsen voor duizend leerlingen. Ook de kantine is duur. Een broodje kost bijna vier euro en een fles water twee euro, terwijl veel leerlingen weinig zakgeld hebben.\"",
+   "v": "Splits de alinea in twee alinea's en schrijf bij elke alinea een kernzin.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Alinea 1 gaat over de fietsenstalling, met een kernzin zoals: De fietsenstalling is te klein (1p). Alinea 2 gaat over de prijzen in de kantine, met een kernzin zoals: De kantine is te duur (1p). Elke alinea heeft één hoofdgedachte (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Vier alinea's van een artikel beginnen zo. Alinea 1: \"Veel tieners slapen te weinig.\" Alinea 2: \"Een belangrijke oorzaak is het gebruik van telefoons in bed.\" Alinea 3: \"Een gevolg is dat zij overdag minder opletten.\" Alinea 4: \"Scholen kunnen daarom beter later beginnen.\"",
+   "v": "Welke ordening gebruikt de schrijver en welke alinea beschrijft de oplossing?",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Probleem, oorzaak, gevolg en oplossing (2p). Alinea 4 beschrijft de oplossing: scholen kunnen later beginnen (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Eerste versie: \"Het museum is gratis voor kinderen. Het museum is duur voor volwassenen. Veel gezinnen gaan er heen. Er zijn tekenworkshops.\" Tweede versie: \"Het museum is gratis voor kinderen, maar duur voor volwassenen. Toch gaan veel gezinnen erheen, want er zijn ook tekenworkshops.\"",
+   "v": "Verbeter de eerste versie met twee signaalwoorden en zeg wat elk woord aangeeft.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Bijvoorbeeld: gratis voor kinderen, maar duur voor volwassenen, want er zijn tekenworkshops (2p). Maar geeft een tegenstelling aan en want een oorzaak (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Inleiding A: \"Hoe laat begin jij op school? Voor veel tieners is acht uur te vroeg. In dit betoog laat ik zien dat scholen later moeten beginnen.\" Inleiding B: \"Hallo allemaal, ik ga jullie vandaag iets vertellen over school. Eerst moet ik even zeggen dat ik de les gisteren leuk vond.\"",
+   "v": "Herschrijf inleiding B zodat ze past bij een betoog over later beginnen op school.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "De inleiding trekt de aandacht, bijvoorbeeld met een vraag (1p), noemt het onderwerp (1p) en geeft de stelling dat scholen later moeten beginnen (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een betoog heeft als stelling dat scholen later moeten beginnen. De alinea's beginnen zo. A: \"Tieners hebben een ander slaapritme dan volwassenen.\" B: \"Uit een proef bleken de cijfers hoger bij een latere start.\" C: \"De bakker in mijn straat begint al om vier uur met werken.\" D: \"Scholen moeten daarom later beginnen.\"",
+   "v": "Welke alinea valt buiten de rode draad en waarom? Schrijf een kernzin die wel past.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Alinea C (1p), omdat die niets zegt over de starttijd van scholen (1p). Een passende kernzin: Een latere start geeft tieners meer slaap (1p)."
+  }
+ ]
+}
