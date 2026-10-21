@@ -13,6 +13,9 @@ Niet onderdeel van de app (staat niet in de service worker).
 | `posts/tutorial.html` | Reel 1080×1920 | 18 s | Zo werkt Slagio in vier stappen, op een echte opname van de app (`opnames/tutorial.mjs`). |
 | `posts/arcade.html` | Reel 1080×1920 | 22 s | Slagio Arcade: hub, Examenboss, Kingdom en Clash, vier echte opnames na elkaar (`opnames/arcade-*.mjs`). |
 | `posts/examentrainer.html` | Reel 1080×1920 | 13 s | De Examentrainer (Slagio Plus) op een opname met voorbeelddata (`opnames/trainer.mjs`). Staat in beeld gelabeld als voorbeeld; geen "gratis" in tekst of onderschrift. |
+| `posts/fout.html` | Reel 1080×1920 | 16 s | Leren van een fout: echte enzymvraag (bi M3), fout antwoord, Vonk typt de uitleg uit de app, het mechanisme als animatie (enzym zet drie keer substraat om en blijft heel), vervolgvraag over hetzelfde onderwerp goed. |
+| `posts/vraag.html` | Reel 1080×1920 | 15,5 s | Vraag het Slagio: "wat is osmose?" typen, antwoordkaart met het begrip uit de app, osmose als bewegende figuur (water door het membraan naar de kant met meer opgeloste stof), daarna Oefen dit met een echte vraag. |
+| `posts/mijnstof.html` | Reel 1080×1920 | 15,5 s | Mijn stof: eigen notities kopiëren en plakken, Slagio vindt 4 kaartjes, kaartjes omdraaien, quiz uit je eigen stof. Laat bewust geen foto zien: die functie vraagt een account. |
 | `posts/quiz.html` | Feed 1080×1350 | 11 s | Echte oefenvraag met 5 s bedenktijd, onthulling, uitleg, reactievraag en CTA. Kies de vraag met `?vraag=econ-maxprijs` (zie `VRAGEN` in het bestand). |
 
 ## Bekijken
@@ -46,7 +49,7 @@ Onderschriften per post staan in `captions/`.
 ## Geluid
 
 `geluid.js` bevat dezelfde synthese als `playSound()` in de app (pop, correct, combo, xp, coin, levelup, fanfare, …)
-plus montagegeluiden (whoosh, impact, boem, riser, teller, wekker, schud, kist, ontbrand, nacht, snurk).
+plus het fout-geluid (`fout`), montagegeluiden (whoosh, impact, boem, riser, teller, wekker, schud, kist, ontbrand, nacht, snurk, `typ` voor toetsaanslagen, `scan`).
 Een post geeft zijn cues mee: `Motion.maak({ ..., geluid: [[tijd, 'naam', volume, extra], ...] })`.
 `render.mjs` rendert het geluid exact in de browser (OfflineAudioContext) en mixt het in de MP4.
 In de preview speelt het geluid mee na één klik in de pagina. Muziek kun je in Instagram nog over het geluid heen leggen.

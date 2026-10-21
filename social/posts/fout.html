@@ -1,0 +1,292 @@
+<!doctype html>
+<html lang="nl"><head><meta charset="utf-8"><title>Slagio · Reel · Fout? Mooi.</title>
+<link rel="stylesheet" href="../basis.css">
+<style>
+.mo-canvas{width:1080px;height:1920px;background:var(--inkt)}
+.bg{inset:0;background:radial-gradient(110% 70% at 50% 30%,#23234a,var(--inkt) 70%)}
+.gloed{width:1200px;height:1200px;border-radius:50%;filter:blur(50px)}
+.g1{background:radial-gradient(circle,rgba(255,106,19,.42),rgba(255,106,19,0) 62%)}
+.g2{background:radial-gradient(circle,rgba(47,107,255,.38),rgba(47,107,255,0) 62%)}
+.rood{inset:0;background:radial-gradient(80% 60% at 50% 45%,rgba(255,77,77,.0),rgba(255,77,77,.35));pointer-events:none}
+.korrel{inset:0;opacity:.07;mix-blend-mode:overlay}
+.midden{left:0;right:0;text-align:center}
+.w{display:inline-block}
+.scene{position:absolute;inset:0}
+.h1{font:800 112px/1.02 var(--kop);color:#fff;letter-spacing:-.03em;word-spacing:.08em}
+.mooi{font:800 300px/1 var(--kop);letter-spacing:-.05em;background:linear-gradient(180deg,#ffd08a,var(--oranje) 50%,var(--oranje2));-webkit-background-clip:text;background-clip:text;color:transparent;padding:0 20px}
+.sub{font:600 46px/1.25 var(--tekst);color:rgba(255,255,255,.78)}
+.label{font:800 32px/1 var(--tekst);letter-spacing:.14em;text-transform:uppercase;color:var(--oranje-l)}
+.kopje{font:800 84px/1.02 var(--kop);color:#fff;letter-spacing:-.03em;word-spacing:.06em}
+/* quizkaart, zoals in de app */
+.qkaart{left:90px;right:90px;border-radius:48px;background:#fff;padding:40px 40px 44px;box-shadow:0 50px 120px -40px rgba(0,0,0,.7);transform-origin:50% 0}
+.qkaart .kop{display:flex;align-items:center;gap:16px;font:800 26px/1 var(--tekst);letter-spacing:.1em;text-transform:uppercase;color:#8a8aa0}
+.qkaart .kop i{width:18px;height:18px;border-radius:50%;background:#1fbf62;display:block}
+.qkaart .klok{margin-top:22px;height:12px;border-radius:999px;background:#f1ece6;overflow:hidden}
+.qkaart .klok b{display:block;height:100%;width:100%;border-radius:999px;background:linear-gradient(90deg,var(--oranje),#ffb23f)}
+.qkaart p{margin-top:28px;font:800 54px/1.12 var(--kop);color:var(--inkt);letter-spacing:-.02em}
+.qkaart .ant{position:relative;margin-top:22px;min-height:112px;border-radius:30px;border:4px solid #ece6df;border-bottom-width:9px;display:flex;align-items:center;gap:22px;padding:14px 26px;font:700 37px/1.2 var(--tekst);color:var(--inkt);background:#fff}
+.qkaart .ant i{width:58px;height:58px;border-radius:17px;background:var(--room2);color:var(--oranje2);display:grid;place-items:center;font:800 28px/1 var(--kop);font-style:normal;flex:0 0 58px}
+.qkaart .ant em{margin-left:auto;width:58px;height:58px;border-radius:50%;display:grid;place-items:center;opacity:0;flex:0 0 58px}
+.qkaart .ant em svg{width:30px;height:30px;fill:none;stroke:#fff;stroke-width:4.5;stroke-linecap:round;stroke-linejoin:round}
+.ant.goed em{background:var(--goed)}.ant.fout em{background:var(--fout)}
+.tik{width:130px;height:130px;border-radius:50%;border:7px solid var(--oranje);margin:-65px 0 0 -65px}
+.vinger{width:120px;height:120px;border-radius:50%;background:rgba(255,255,255,.9);margin:-60px 0 0 -60px;box-shadow:0 10px 30px rgba(0,0,0,.35)}
+/* Vonk legt uit */
+.ballon{left:90px;right:90px;border-radius:44px;background:var(--room);padding:38px 42px 44px;box-shadow:0 40px 100px -30px rgba(0,0,0,.7);transform-origin:80% 100%}
+.ballon:after{content:"";position:absolute;right:150px;bottom:-34px;border:22px solid transparent;border-top:24px solid var(--room);border-bottom:0}
+.ballon .wie{font:800 28px/1 var(--tekst);letter-spacing:.12em;text-transform:uppercase;color:var(--oranje2)}
+.ballon .tekst{margin-top:18px;font:600 44px/1.3 var(--tekst);color:var(--inkt);letter-spacing:-.01em;min-height:290px}
+.ballon .tekst b{color:var(--oranje2);font-weight:800}
+.ballon .cursor{display:inline-block;width:4px;height:44px;background:var(--oranje2);vertical-align:-7px;margin-left:3px}
+.vonk{width:330px;height:330px}
+.vonk svg{width:100%;height:100%;overflow:visible}
+/* enzym */
+.podium{left:60px;top:560px;width:960px;height:760px}
+.podium svg{width:100%;height:100%;overflow:visible}
+.teller{font:800 64px/1 var(--kop);color:#fff;letter-spacing:-.02em}
+.teller span{color:var(--goud)}
+/* tweede vraag */
+.pil{display:inline-flex;align-items:center;gap:16px;padding:20px 34px;border-radius:999px;background:rgba(255,255,255,.1);border:3px solid rgba(255,255,255,.18);font:800 36px/1 var(--tekst);color:#fff}
+.pil i{width:40px;height:40px;border-radius:50%;background:var(--oranje);display:grid;place-items:center;font-style:normal}
+.pil i svg{width:24px;height:24px;fill:none;stroke:#fff;stroke-width:3.5;stroke-linecap:round;stroke-linejoin:round}
+.xppop{padding:18px 32px;border-radius:999px;background:linear-gradient(135deg,#ffc247,#ff8a1f);font:800 46px/1 var(--kop);color:#3b1500;box-shadow:0 14px 40px -10px rgba(255,160,40,.7);white-space:nowrap}
+.stempel{display:inline-flex;align-items:center;gap:22px;padding:22px 44px;border-radius:30px;border:7px solid #4ade80;font:800 82px/1 var(--kop);color:#4ade80;letter-spacing:-.02em;background:rgba(31,191,98,.12)}
+.stempel s{color:#ff8080;text-decoration-thickness:8px}
+/* slot */
+.mascotte{left:50%;width:560px;height:560px;margin-left:-280px;top:300px}
+.mascotte svg{width:100%;height:100%;overflow:visible}
+.slotkop{font:800 118px/1.04 var(--kop);color:#fff;letter-spacing:-.035em;word-spacing:.08em}
+.merk{display:inline-flex;align-items:center;gap:26px;font:800 76px/1 var(--kop);color:#fff;letter-spacing:-.02em}
+.merk img{width:118px;height:118px;border-radius:30px}
+.tags{font:600 40px/1.3 var(--tekst);color:rgba(255,255,255,.72)}
+.flits{inset:0;background:#fff;pointer-events:none}
+</style></head>
+<body>
+<div class="mo-canvas" id="c">
+  <div class="abs bg"></div><div class="abs gloed g1" id="g1"></div><div class="abs gloed g2" id="g2"></div>
+  <canvas class="abs korrel" id="korrel" width="540" height="960"></canvas>
+  <div class="abs rood" id="rood"></div>
+  <div id="wereld" class="scene">
+
+  <!-- S1: hook -->
+  <div class="scene" id="S1">
+    <div class="abs midden h1" style="top:640px"><span class="w">Fout</span> <span class="w">antwoord?</span></div>
+    <div class="abs midden" style="top:800px"><span class="w mooi" id="mooi">Mooi.</span></div>
+    <div class="abs midden sub" style="top:1170px" id="sub1">Zo leer je het het snelst.</div>
+  </div>
+
+  <!-- S2: echte vraag, fout, Vonk legt uit -->
+  <div class="scene" id="S2">
+    <div class="abs qkaart" id="q1" style="top:300px">
+      <div class="kop"><i></i>Biologie · Enzymen</div>
+      <div class="klok"><b id="klok1"></b></div>
+      <p>Hoe kan een klein beetje enzym veel substraat omzetten?</p>
+      <div class="ant"><i>A</i>Het enzym groeit tijdens de reactie<em></em></div>
+      <div class="ant goed"><i>B</i>Het enzym is herbruikbaar en raakt niet op<em><svg viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></em></div>
+      <div class="ant fout"><i>C</i>Het enzym verandert zelf in product<em><svg viewBox="0 0 24 24"><path d="M7 7l10 10M17 7L7 17"/></svg></em></div>
+      <div class="ant"><i>D</i>Het enzym levert de energie voor elke reactie<em></em></div>
+    </div>
+    <div class="abs ballon" id="ballon" style="top:1010px"><div class="wie">Vonk</div><div class="tekst" id="typ"></div></div>
+    <div class="abs vonk" id="vonk1" style="left:640px;top:1440px"></div>
+  </div>
+
+  <!-- S3: zo zit het -->
+  <div class="scene" id="S3">
+    <div class="abs midden label" style="top:280px">Zo zit het</div>
+    <div class="abs midden kopje" style="top:340px">Het enzym blijft<br>hetzelfde</div>
+    <div class="abs podium"><svg viewBox="0 0 960 760" id="pod">
+      <defs><mask id="gat"><rect x="-200" y="-200" width="1400" height="1200" fill="#fff"/><circle cx="476" cy="380" r="76" fill="#000"/><rect x="476" y="304" width="200" height="152" fill="#000"/></mask>
+        <clipPath id="enzclip"><circle cx="300" cy="380" r="230"/></clipPath></defs>
+      <g id="enz">
+        <g mask="url(#gat)">
+          <circle cx="300" cy="380" r="230" fill="#ff8a3d"/>
+          <g clip-path="url(#enzclip)"><ellipse cx="300" cy="560" rx="300" ry="170" fill="#e8601a"/></g>
+          <ellipse cx="220" cy="270" rx="70" ry="40" fill="#ffb27a" transform="rotate(-25 220 270)"/>
+        </g>
+        <circle cx="200" cy="350" r="16" fill="#3b1500"/><circle cx="290" cy="350" r="16" fill="#3b1500"/>
+        <circle cx="206" cy="344" r="5" fill="#fff"/><circle cx="296" cy="344" r="5" fill="#fff"/>
+        <path d="M222 410q24 22 48 0" stroke="#3b1500" stroke-width="9" fill="none" stroke-linecap="round"/>
+      </g>
+      <g id="subs"></g>
+      <g font-family="Inter" font-weight="800" font-size="34" fill="#fff" letter-spacing="1">
+        <g id="lbEnz"><line x1="300" y1="640" x2="300" y2="610" stroke="rgba(255,255,255,.6)" stroke-width="4"/><text x="300" y="690" text-anchor="middle">ENZYM</text></g>
+        <g id="lbSub"><text x="800" y="230" text-anchor="middle">SUBSTRAAT</text><line x1="800" y1="250" x2="800" y2="300" stroke="rgba(255,255,255,.6)" stroke-width="4"/></g>
+        <g id="lbPro"><text x="720" y="790" text-anchor="middle" fill="#9fc0ff">PRODUCTEN</text></g>
+      </g>
+    </svg></div>
+    <div class="abs midden teller" id="teller" style="top:1430px">1 enzym · <span id="tn">0</span> <span id="tw">reacties</span></div>
+  </div>
+
+  <!-- S4: nog een over dit onderwerp -->
+  <div class="scene" id="S4">
+    <div class="abs midden" id="pil" style="top:280px"><span class="pil"><i><svg viewBox="0 0 24 24"><path d="M4 12h14M13 6l6 6-6 6"/></svg></i>Nog een over dit onderwerp</span></div>
+    <div class="abs qkaart" id="q2" style="top:410px">
+      <div class="kop"><i></i>Biologie · Enzymen</div>
+      <div class="klok"><b id="klok2"></b></div>
+      <p>Wat gebeurt er met een enzymmolecuul na de reactie?</p>
+      <div class="ant"><i>A</i>Het is opgebruikt en verdwijnt uit de cel<em></em></div>
+      <div class="ant"><i>B</i>Het verandert zelf in het reactieproduct<em></em></div>
+      <div class="ant goed"><i>C</i>Het komt onveranderd vrij en werkt opnieuw<em><svg viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></em></div>
+      <div class="ant"><i>D</i>Het valt uiteen in kleinere moleculen<em></em></div>
+    </div>
+    <div class="abs xppop" id="xp2">+18 XP</div>
+    <div class="abs midden" id="stempel" style="top:1360px"><span class="stempel"><s>fout</s>→ goed</span></div>
+  </div>
+
+  <!-- S5: slot -->
+  <div class="scene" id="S5">
+    <div class="abs mascotte" id="vonk2"></div>
+    <div class="abs midden slotkop" style="top:930px"><span class="w">Bij</span> <span class="w">elke</span> <span class="w">fout</span><br><span class="w">zie</span> <span class="w">je</span> <span class="w" style="color:var(--oranje)">waarom.</span></div>
+    <div class="abs midden" id="merk" style="top:1210px"><span class="merk"><img src="../../icon-512.png" alt="">slagio.nl</span></div>
+    <div class="abs midden tags" id="tags" style="top:1370px">Gratis. Geen account nodig.</div>
+  </div>
+  </div>
+  <div class="abs vinger" id="vinger"></div><div class="abs tik" id="tik"></div>
+  <div class="abs flits" id="flits"></div>
+</div>
+<script src="../../mascotte.js"></script>
+<script src="../engine.js"></script>
+<script src="../geluid.js"></script>
+<script>
+const {p,E,lerp,zet,rnd,clamp,$}=Motion;
+(()=>{const c=$('#korrel'),g=c.getContext('2d'),d=g.createImageData(c.width,c.height),r=rnd(5);for(let i=0;i<d.data.length;i+=4){const v=r()*255;d.data[i]=d.data[i+1]=d.data[i+2]=v;d.data[i+3]=255;}g.putImageData(d,0,0);c.style.width='1080px';c.style.height='1920px';})();
+const DUUR=16;
+const GRENS=[0,2.3,7.3,10.2,13.0,DUUR];
+const scene=['#S1','#S2','#S3','#S4','#S5'].map(s=>$(s));
+window.__COVER=4.9;
+
+// Vonk: denkt mee in de uitleg, viert feest aan het eind
+let vonkStem='';const vonkZet=s=>{if(s!==vonkStem){$('#vonk1').innerHTML=mascotSVG(s,330);vonkStem=s;}};
+$('#vonk2').innerHTML=mascotSVG('feest',560);
+
+// Uitleg bij antwoord C uit de app (bi M3, vraag over herbruikbaarheid), één zin iets korter
+const KOP="Koos je 'wordt product'? ";
+const UITLEG="Het substraat wordt product, niet het enzym. Als het enzym zelf veranderde, had je voor elke reactie een nieuw enzym nodig.";
+const VOL=KOP+UITLEG;const T_TYP=[4.75,6.55];
+const typN=t=>Math.round(VOL.length*p(t,T_TYP[0],T_TYP[1]));
+
+// Antwoordknoppen
+const A1=[...$('#q1').querySelectorAll('.ant')],A2=[...$('#q2').querySelectorAll('.ant')];
+const T_FOUT=3.55,T_JUIST=3.95,T_GOED2=11.35;
+
+// Substraten voor het enzym: elk komt binnen, wordt gesplitst, producten vliegen weg
+const SUB=[];const NS=3,T0=7.85,STAP=.72;
+for(let i=0;i<NS;i++){const g=document.createElementNS('http://www.w3.org/2000/svg','g');
+  g.innerHTML='<g class="l"><circle r="70" fill="#7c4dff"/><circle r="70" fill="#9b78ff" transform="translate(-14,-16) scale(.55)"/></g>'
+    +'<g class="r"><rect x="40" y="-52" width="130" height="104" rx="30" fill="#2f6bff"/><rect x="58" y="-38" width="58" height="34" rx="14" fill="#6b96ff"/></g>';
+  $('#subs').appendChild(g);SUB.push({g,l:g.querySelector('.l'),r:g.querySelector('.r'),t:T0+i*STAP});}
+
+const woorden=sel=>[...$(sel).querySelectorAll('.w')];
+const w5=woorden('#S5');
+const pop=(els,t,t0,stap,dy=60)=>els.forEach((el,i)=>{const x=p(t,t0+i*stap,t0+i*stap+.4,E.terug);zet(el,{opacity:String(Math.min(1,x*1.6)),transform:`translateY(${lerp(dy,0,x)}px) scale(${lerp(.85,1,x)})`});});
+const kaartIn=(el,t,a)=>{const x=p(t,a,a+.45,E.uit5);return {o:x,tr:`translateX(${lerp(1000,0,x)}px) rotate(${lerp(9,0,x)}deg)`};};
+const ant=(el,staat,x)=>{ // staat: 'goed'|'fout'|'zacht'
+  const em=el.querySelector('em');
+  if(staat==='fout'){zet(el,{borderColor:`rgba(255,77,77,${x})`,background:`color-mix(in srgb,#ff4d4d ${Math.round(x*12)}%,#fff)`});}
+  else if(staat==='goed'){zet(el,{borderColor:`rgba(31,191,98,${x})`,background:`color-mix(in srgb,#1fbf62 ${Math.round(x*14)}%,#fff)`});}
+  else zet(el,{opacity:String(1-x*.55)});
+  if(em&&staat!=='zacht'){const v=p(x,0,1,E.terug);zet(em,{opacity:String(Math.min(1,x*2)),transform:`scale(${v})`});}
+};
+
+function render(t){
+  zet($('#g1'),{transform:`translate(${-260+Math.sin(t*.6)*140}px,${120+Math.cos(t*.5)*90}px)`});
+  zet($('#g2'),{transform:`translate(${240+Math.cos(t*.55)*150}px,${1000+Math.sin(t*.7)*100}px)`});
+  let schud=0,vx=-1,vy=0,vt=0;
+  scene.forEach((s,i)=>{const a=GRENS[i],b=GRENS[i+1];const aan=t>=a&&t<b;zet(s,{display:aan?'block':'none'});if(!aan)return;
+    const inn=i===0?1:p(t,a,a+.28,E.uit5),uit=i===4?0:p(t,b-.18,b,E.in);
+    zet(s,{opacity:String(Math.min(inn,1-uit)),transform:`translateX(${lerp(220,0,inn)-uit*220}px) scale(${lerp(1.06,1,inn)*(1-uit*.05)})`});});
+  const fl=Math.max(...GRENS.slice(1,5).map(g=>t>=g?1-clamp((t-g)/.14):0));zet($('#flits'),{opacity:String(fl*.18)});
+  zet($('#rood'),{opacity:String(Math.max(0,1-Math.abs(t-T_FOUT-.1)*3.5)*.9)});
+
+  // ── S1 ──
+  if(t<GRENS[1]){
+    const w=[...$('#S1').querySelectorAll('.h1 .w')];pop(w,t,.12,.14);
+    const m=p(t,.75,1.15,E.veer);zet($('#mooi'),{opacity:String(Math.min(1,m*3)),transform:`scale(${lerp(2.4,1,Math.min(1,m))}) rotate(${lerp(-8,-3,Math.min(1,m))}deg)`});
+    if(t>.75&&t<1.15)schud=(1.15-t)*55;
+    const s=p(t,1.35,1.75,E.uit);zet($('#sub1'),{opacity:String(s),transform:`translateY(${lerp(40,0,s)}px)`});}
+
+  // ── S2 ──
+  if(t>=GRENS[1]&&t<GRENS[2]){
+    const k=kaartIn($('#q1'),t,2.35);const krimp=p(t,4.25,4.7,E.inUit);
+    const sh=t>T_FOUT&&t<T_FOUT+.4?Math.sin((t-T_FOUT)*70)*22*(1-(t-T_FOUT)/.4):0;
+    zet($('#q1'),{opacity:String(k.o),transform:`${k.tr} translate(${sh}px,${-krimp*20}px) scale(${lerp(1,.74,krimp)})`});
+    zet($('#klok1'),{width:(100-p(t,2.6,T_FOUT)*38)+'%'});
+    A1.forEach((el,i)=>{zet(el,{opacity:'1'});const inA=p(t,2.6+i*.07,2.9+i*.07,E.uit);zet(el,{transform:`translateY(${lerp(30,0,inA)}px)`,opacity:String(inA)});});
+    ant(A1[2],'fout',p(t,T_FOUT,T_FOUT+.15));ant(A1[1],'goed',p(t,T_JUIST,T_JUIST+.2));
+    if(t>T_JUIST+.1){ant(A1[0],'zacht',p(t,T_JUIST+.1,T_JUIST+.4));ant(A1[3],'zacht',p(t,T_JUIST+.1,T_JUIST+.4));}
+    if(t>T_FOUT&&t<T_FOUT+.25)schud=(T_FOUT+.25-t)*40;
+    // vinger tikt op C (positie volgt de kaart)
+    const r=A1[2].getBoundingClientRect(),c=$('#c').getBoundingClientRect(),f=c.width/1080;
+    vx=(r.left-c.left)/f+620;vy=(r.top-c.top)/f+(r.height/f)/2;vt=t;
+    // ballon + typen
+    const b=p(t,4.45,4.85,E.veer);zet($('#ballon'),{opacity:String(Math.min(1,b*2)),transform:`scale(${lerp(.5,1,Math.min(1,b))}) translateY(${lerp(40,0,Math.min(1,b))}px)`});
+    const n=typN(t);const kopN=Math.min(n,KOP.length);
+    $('#typ').innerHTML='<b>'+VOL.slice(0,kopN)+'</b>'+VOL.slice(KOP.length,Math.max(KOP.length,n))+(t>4.7&&(t<T_TYP[1]||Math.floor(t*3)%2)?'<span class="cursor"></span>':'');
+    vonkZet(t<6.6?'denk':'knipoog');
+    const vk=p(t,4.3,4.8,E.veer);const praat=t>T_TYP[0]&&t<T_TYP[1]?Math.abs(Math.sin(t*14))*8:0;
+    zet($('#vonk1'),{opacity:String(p(t,4.3,4.4)),transform:`translateY(${lerp(420,0,Math.min(1,vk))-praat}px) rotate(${Math.sin(t*2.4)*4-6}deg)`});}
+
+  // ── S3: enzym zet substraat om en blijft zelf heel ──
+  if(t>=GRENS[2]&&t<GRENS[3]){
+    let knijp=0,klaar=0;
+    SUB.forEach((s,i)=>{const a=s.t;const binnen=p(t,a-.42,a,E.uit5);const knip=p(t,a+.1,a+.55,E.uit);
+      const x=lerp(1080,476,binnen),y=380+(1-binnen)*-80;
+      const zicht=t>a-.42?1:0;
+      if(t>=a&&t<a+.14)knijp=1-(t-a)/.14;
+      if(t>=a+.1)klaar++;
+      zet(s.l,{transform:`translate(${knip*(90+i*20)}px,${knip*(270+i*16)}px) rotate(${knip*-120}deg)`,opacity:String(1-p(t,a+.4,a+.62))});
+      zet(s.r,{transform:`translate(${knip*(230+i*30)}px,${knip*210}px) rotate(${knip*70}deg)`,opacity:String(1-p(t,a+.4,a+.62))});
+      s.g.setAttribute('transform',`translate(${x},${y})`);zet(s.g,{opacity:String(zicht)});});
+    const e=$('#enz');e.setAttribute('transform',`translate(300,380) scale(${1+knijp*.06},${1-knijp*.05}) translate(-300,-380) translate(0,${Math.sin(t*3)*6})`);
+    $('#tn').textContent=String(klaar);$('#tw').textContent=klaar===1?'reactie':'reacties';
+    zet($('#tn'),{display:'inline-block',transform:`scale(${1+Math.max(0,...SUB.map(s=>1-Math.abs(t-s.t-.1)*6))*.35})`});
+    ['#lbEnz','#lbSub','#lbPro'].forEach((l,i)=>zet($(l),{opacity:String(p(t,7.55+i*.35,7.85+i*.35))}));
+    const tl=p(t,7.6,7.9,E.uit);zet($('#teller'),{opacity:String(tl)});}
+
+  // ── S4 ──
+  if(t>=GRENS[3]&&t<GRENS[4]){
+    const pl=p(t,10.3,10.65,E.terug);zet($('#pil'),{opacity:String(Math.min(1,pl*2)),transform:`scale(${lerp(.6,1,pl)})`});
+    const k=kaartIn($('#q2'),t,10.45);zet($('#q2'),{opacity:String(k.o),transform:k.tr});
+    zet($('#klok2'),{width:(100-p(t,10.8,T_GOED2)*22)+'%'});
+    ant(A2[2],'goed',p(t,T_GOED2,T_GOED2+.18));
+    if(t>T_GOED2+.1)[0,1,3].forEach(i=>ant(A2[i],'zacht',p(t,T_GOED2+.1,T_GOED2+.4)));
+    const r=A2[2].getBoundingClientRect(),c=$('#c').getBoundingClientRect(),f=c.width/1080;
+    vx=(r.left-c.left)/f+620;vy=(r.top-c.top)/f+(r.height/f)/2;vt=t;
+    const xp=p(t,T_GOED2+.05,T_GOED2+.9);zet($('#xp2'),{left:'800px',top:(vy-150-xp*110)+'px',opacity:String(xp>0?Math.min(1,xp*5)*(1-p(t,T_GOED2+.65,T_GOED2+.9)):0),transform:`translate(-50%,0) scale(${lerp(.6,1,p(t,T_GOED2,T_GOED2+.2,E.terug))})`});
+    const st=p(t,11.85,12.15,E.veer);zet($('#stempel'),{opacity:String(Math.min(1,st*3)),transform:`scale(${lerp(2.2,1,Math.min(1,st))}) rotate(-5deg)`});
+    if(t>11.85&&t<12.1)schud=(12.1-t)*45;}
+
+  // ── vinger + tikcirkel ──
+  const tikMom=t<GRENS[3]?T_FOUT:T_GOED2;
+  const vin=(t>GRENS[1]&&t<GRENS[2])||(t>GRENS[3]&&t<GRENS[4])?p(t,tikMom-.55,tikMom-.15,E.uit)*(1-p(t,tikMom+.2,tikMom+.45)):0;
+  zet($('#vinger'),{left:vx+'px',top:(vy+lerp(260,0,p(t,tikMom-.55,tikMom-.1,E.uit)))+'px',opacity:String(vin*.85),transform:`scale(${t>tikMom-.08&&t<tikMom+.08?.82:1})`});
+  const ti=p(t,tikMom-.05,tikMom+.35);zet($('#tik'),{left:vx+'px',top:vy+'px',opacity:String(ti>0&&ti<1&&vin>0?1-ti:0),transform:`scale(${lerp(.4,1.5,ti)})`});
+
+  // ── S5 ──
+  if(t>=GRENS[4]){const m=p(t,13.1,13.8,E.veer);const bob=t>13.8?Math.sin((t-13.8)*3)*10:0;
+    zet($('#vonk2'),{opacity:String(Math.min(1,m*2)),transform:`translateY(${lerp(240,0,Math.min(1,m))+bob}px) scale(${lerp(.4,1,m)}) rotate(${Math.sin(t*2)*2}deg)`});
+    pop(w5,t,13.4,.09,70);
+    const mk=p(t,14.2,14.6,E.uit);zet($('#merk'),{opacity:String(mk),transform:`translateY(${lerp(50,0,mk)}px)`});
+    const tg=p(t,14.45,14.85,E.uit);zet($('#tags'),{opacity:String(tg),transform:`translateY(${lerp(40,0,tg)}px)`});}
+
+  const r=rnd(Math.floor(t*30)+1);zet($('#wereld'),{transform:schud>0?`translate(${(r()-.5)*schud}px,${(r()-.5)*schud}px)`:'none'});
+}
+
+// ── Geluid ──
+const G=[],g=(t,n,v,x)=>G.push([t,n,v,x]);
+g(0,'beat',.5,{d:DUUR,bpm:112});
+g(.12,'pop',.6);g(.26,'pop',.6);g(.7,'whoosh',.5,.25);g(.75,'boem',1);g(1.35,'tap',.4);
+g(2.25,'whoosh',.8);[0,1,2,3].forEach(i=>g(2.6+i*.07,'tick',.25,700+i*60));
+g(T_FOUT-.03,'tap',.7);g(T_FOUT,'fout',1.1);g(T_JUIST,'pop',.5);
+g(4.3,'whoosh',.5,.3);g(4.5,'pop',.7);
+for(let k=1;k<=VOL.length;k++){const tt=T_TYP[0]+(T_TYP[1]-T_TYP[0])*k/VOL.length;if(k%3===0&&VOL[k-1]!==' ')g(tt,'typ',1);}
+g(6.65,'tap',.5);
+g(7.22,'whoosh',.8);[0,1,2].forEach(i=>g(7.55+i*.35,'tick',.35,800+i*120));
+SUB.forEach((s,i)=>{g(s.t-.4,'whoosh',.35,.3);g(s.t,'pop',.8);g(s.t+.12,'flip',.7);g(s.t+.14,'tick',.5,1100+i*160);});
+g(10.12,'whoosh',.8);g(10.3,'nav',.7);g(10.45,'whoosh',.5,.3);
+g(T_GOED2-.03,'tap',.7);g(T_GOED2,'correct',.9);g(T_GOED2+.14,'xp',.6);
+g(11.85,'impact',.7);g(11.88,'combo',.8);
+g(12.92,'whoosh',.8);g(13.1,'evolve',.9);g(13.4,'pop',.4);g(14.2,'start',.7);g(14.5,'coin',.45);
+Motion.maak({duur:DUUR,render,geluid:G});
+</script>
+</body></html>

@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="nl"><head><meta charset="utf-8"><title>Slagio · Reel · Mijn stof</title>
+<link rel="stylesheet" href="../basis.css">
+<style>
+.mo-canvas{width:1080px;height:1920px;background:var(--inkt)}
+.bg{inset:0;background:radial-gradient(110% 70% at 50% 30%,#2a2147,var(--inkt) 70%)}
+.gloed{width:1200px;height:1200px;border-radius:50%;filter:blur(50px)}
+.g1{background:radial-gradient(circle,rgba(124,77,255,.45),rgba(124,77,255,0) 62%)}
+.g2{background:radial-gradient(circle,rgba(255,106,19,.4),rgba(255,106,19,0) 62%)}
+.korrel{inset:0;opacity:.07;mix-blend-mode:overlay}
+.midden{left:0;right:0;text-align:center}
+.w{display:inline-block}
+.scene{position:absolute;inset:0}
+.h1{font:800 112px/1.02 var(--kop);color:#fff;letter-spacing:-.03em;word-spacing:.08em}
+.or{background:linear-gradient(180deg,#ffd08a,var(--oranje) 50%,var(--oranje2));-webkit-background-clip:text;background-clip:text;color:transparent;padding:0 10px}
+.groot{font-size:190px;letter-spacing:-.045em}
+.label{font:800 32px/1 var(--tekst);letter-spacing:.14em;text-transform:uppercase;color:var(--oranje-l)}
+.kopje{font:800 92px/1 var(--kop);color:#fff;letter-spacing:-.03em}
+.uitleg{font:600 42px/1.3 var(--tekst);color:rgba(255,255,255,.8)}
+/* notities-app */
+.doc{left:80px;right:80px;border-radius:44px;background:#fbfaf7;overflow:hidden;box-shadow:0 50px 110px -40px rgba(0,0,0,.7);transform-origin:50% 0}
+.doc .balk{height:96px;background:#f0ede6;display:flex;align-items:center;gap:14px;padding:0 36px;font:700 32px/1 var(--tekst);color:#6b6878}
+.doc .balk i{width:20px;height:20px;border-radius:50%;background:#d8d3c9;display:block}
+.doc .balk span{margin-left:12px}
+.doc .body{padding:34px 44px 46px}
+.doc h3{font:800 50px/1.1 var(--kop);color:var(--inkt);letter-spacing:-.02em;margin-bottom:22px}
+.regel{position:relative;font:500 38px/1.45 var(--tekst);color:#2e2c3a;padding:4px 0}
+.regel .sel{position:absolute;left:-8px;top:2px;bottom:2px;width:0;background:rgba(47,107,255,.22);border-radius:6px}
+.regel b{font-weight:700;position:relative}
+.regel b u{position:absolute;left:-6px;right:-6px;bottom:6px;height:16px;background:rgba(255,106,19,.32);border-radius:6px;transform-origin:0 50%;text-decoration:none}
+.kopieer{padding:22px 38px;border-radius:24px;background:#26242f;color:#fff;font:700 38px/1 var(--tekst);box-shadow:0 20px 50px -10px rgba(0,0,0,.6);white-space:nowrap}
+.kopieer:after{content:"";position:absolute;left:50%;bottom:-18px;margin-left:-18px;border:18px solid transparent;border-top-color:#26242f;border-bottom:0}
+/* Mijn stof */
+.ms{left:80px;right:80px;border-radius:48px;background:#fff;overflow:hidden;box-shadow:0 50px 110px -40px rgba(124,77,255,.7)}
+.ms .kop{background:linear-gradient(135deg,#1c1a3a,#2b2459);padding:34px 44px;display:flex;align-items:center;gap:22px;color:#fff}
+.ms .kop .vk{width:96px;height:96px;flex:0 0 96px}
+.ms .kop .vk svg{width:100%;height:100%;overflow:visible}
+.ms .kop b{display:block;font:800 52px/1 var(--kop);letter-spacing:-.02em}
+.ms .kop small{display:block;margin-top:10px;font:600 30px/1 var(--tekst);color:rgba(255,255,255,.7)}
+.ms .veld{margin:34px 40px 0;border:4px solid #ece6df;border-radius:30px;padding:26px 30px;min-height:420px}
+.ms .plak{font:600 34px/1 var(--tekst);color:#b2adbd}
+.ms .voet{display:flex;align-items:center;justify-content:space-between;padding:30px 40px 40px}
+.chip{display:inline-flex;align-items:center;gap:14px;padding:18px 28px;border-radius:999px;background:#e8fbef;color:#0f8a43;font:800 34px/1 var(--tekst)}
+.chip i{width:40px;height:40px;border-radius:50%;background:var(--goed);display:grid;place-items:center;font-style:normal}
+.chip i svg{width:24px;height:24px;fill:none;stroke:#fff;stroke-width:4;stroke-linecap:round;stroke-linejoin:round}
+.opslaan{padding:24px 40px;border-radius:26px;background:linear-gradient(135deg,var(--oranje),var(--oranje2));color:#fff;font:800 36px/1 var(--tekst);box-shadow:0 8px 0 #c23800}
+/* kaartjes */
+.kaartjes{left:80px;right:80px;top:500px;height:880px;perspective:2400px}
+.kaart{position:absolute;width:440px;height:400px;transform-style:preserve-3d}
+.kaart .z{position:absolute;inset:0;border-radius:40px;display:flex;flex-direction:column;justify-content:center;padding:36px 38px;box-shadow:0 30px 70px -30px rgba(0,0,0,.7)}
+.kaart .voor{background:#fff;border-bottom:12px solid #ffd2b0}
+.kaart .voor small{font:800 24px/1 var(--tekst);letter-spacing:.12em;text-transform:uppercase;color:#a6a1b4}
+.kaart .voor b{margin-top:18px;font:800 62px/1.02 var(--kop);color:var(--inkt);letter-spacing:-.025em}
+.kaart .achter{background:linear-gradient(160deg,#fff3e6,#ffe1c4);transform:rotateY(180deg);border-bottom:12px solid #ffb27a}
+.kaart .achter small{font:800 24px/1 var(--tekst);letter-spacing:.12em;text-transform:uppercase;color:var(--oranje2)}
+.kaart .achter p{margin-top:16px;font:700 38px/1.25 var(--tekst);color:#3b1d06}
+.rate{left:80px;right:80px;top:1420px;display:flex;gap:16px}
+.rate span{flex:1;height:96px;border-radius:26px;display:grid;place-items:center;font:800 30px/1 var(--tekst);background:rgba(255,255,255,.08);color:rgba(255,255,255,.85);border:3px solid rgba(255,255,255,.14)}
+.rate span.goed{background:var(--goed);border-color:#14974b;color:#fff}
+/* quiz */
+.pil{display:inline-flex;align-items:center;gap:16px;padding:20px 34px;border-radius:999px;background:rgba(255,255,255,.1);border:3px solid rgba(255,255,255,.18);font:800 36px/1 var(--tekst);color:#fff}
+.qkaart{left:80px;right:80px;border-radius:48px;background:#fff;padding:40px 40px 44px;box-shadow:0 50px 120px -40px rgba(0,0,0,.7)}
+.qkaart .kop{display:flex;align-items:center;justify-content:space-between;font:800 26px/1 var(--tekst);letter-spacing:.1em;text-transform:uppercase;color:#8a8aa0}
+.qkaart .stap{margin-top:20px;height:14px;border-radius:999px;background:#f1ece6;overflow:hidden}
+.qkaart .stap b{display:block;height:100%;border-radius:999px;background:linear-gradient(90deg,#8b5cf6,#6d28d9)}
+.qkaart p{margin-top:28px;font:800 50px/1.12 var(--kop);color:var(--inkt);letter-spacing:-.02em}
+.qkaart q{display:block;margin-top:18px;padding:22px 28px;border-radius:24px;background:#f6f2ff;font:600 40px/1.3 var(--tekst);color:#3b2a74;quotes:none}
+.qkaart .ant{margin-top:18px;height:104px;border-radius:30px;border:4px solid #ece6df;border-bottom-width:9px;display:flex;align-items:center;gap:22px;padding:0 26px;font:700 40px/1 var(--tekst);color:var(--inkt);background:#fff}
+.qkaart .ant i{width:58px;height:58px;border-radius:17px;background:var(--room2);color:var(--oranje2);display:grid;place-items:center;font:800 28px/1 var(--kop);font-style:normal;flex:0 0 58px}
+.qkaart .ant em{margin-left:auto;width:58px;height:58px;border-radius:50%;background:var(--goed);display:grid;place-items:center;opacity:0;flex:0 0 58px}
+.qkaart .ant em svg{width:30px;height:30px;fill:none;stroke:#fff;stroke-width:4.5;stroke-linecap:round;stroke-linejoin:round}
+.goedpop{padding:20px 40px;border-radius:999px;background:var(--goed);font:800 52px/1 var(--kop);color:#fff;box-shadow:0 18px 50px -12px rgba(31,191,98,.8);white-space:nowrap}
+.tik{width:130px;height:130px;border-radius:50%;border:7px solid var(--oranje);margin:-65px 0 0 -65px}
+.vinger{width:120px;height:120px;border-radius:50%;background:rgba(255,255,255,.9);margin:-60px 0 0 -60px;box-shadow:0 10px 30px rgba(0,0,0,.35)}
+/* slot */
+.mascotte{left:50%;width:560px;height:560px;margin-left:-280px;top:300px}
+.mascotte svg{width:100%;height:100%;overflow:visible}
+.slotkop{font:800 128px/1.04 var(--kop);color:#fff;letter-spacing:-.035em;word-spacing:.08em}
+.merk{display:inline-flex;align-items:center;gap:26px;font:800 76px/1 var(--kop);color:#fff;letter-spacing:-.02em}
+.merk img{width:118px;height:118px;border-radius:30px}
+.tags{font:600 40px/1.3 var(--tekst);color:rgba(255,255,255,.72)}
+.flits{inset:0;background:#fff;pointer-events:none}
+</style></head>
+<body>
+<div class="mo-canvas" id="c">
+  <div class="abs bg"></div><div class="abs gloed g1" id="g1"></div><div class="abs gloed g2" id="g2"></div>
+  <canvas class="abs korrel" id="korrel" width="540" height="960"></canvas>
+  <div id="wereld" class="scene">
+
+  <!-- S1 -->
+  <div class="scene" id="S1">
+    <div class="abs midden h1" style="top:560px"><span class="w">Eigen</span> <span class="w">samenvatting?</span></div>
+    <div class="abs midden h1" style="top:760px"><span class="w">Maak</span> <span class="w">er</span> <span class="w">een</span></div>
+    <div class="abs midden h1 groot" style="top:860px"><span class="w or" id="quiz1">quiz</span></div>
+    <div class="abs midden h1" style="top:1060px"><span class="w">van.</span></div>
+  </div>
+
+  <!-- S2: kopiëren uit je notities, plakken in Mijn stof -->
+  <div class="scene" id="S2">
+    <div class="abs doc" id="doc" style="top:330px">
+      <div class="balk"><i></i><i></i><i></i><span>Notities</span></div>
+      <div class="body"><h3>Economie · H4 Geld</h3><div id="regels1"></div></div>
+    </div>
+    <div class="abs kopieer" id="kopieer">Kopiëren</div>
+    <div class="abs ms" id="ms" style="top:330px">
+      <div class="kop"><span class="vk" id="msvk"></span><span><b>Mijn stof</b><small>Economie · H4 Geld</small></span></div>
+      <div class="veld"><div class="plak" id="plak">Plak hier je samenvatting</div><div id="regels2"></div></div>
+      <div class="voet"><span class="chip" id="chip"><i><svg viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></i><span id="chipn">4 kaartjes gevonden</span></span><span class="opslaan">Opslaan</span></div>
+    </div>
+  </div>
+
+  <!-- S3: kaartjes -->
+  <div class="scene" id="S3">
+    <div class="abs midden label" style="top:280px">Jouw kaartjes</div>
+    <div class="abs midden kopje" style="top:340px">Draai om. Weet je het?</div>
+    <div class="abs kaartjes" id="kaartjes"></div>
+    <div class="abs rate" id="rate"><span>Opnieuw</span><span>Moeilijk</span><span class="goed" id="rgoed">Goed</span><span>Makkelijk</span></div>
+  </div>
+
+  <!-- S4: quiz -->
+  <div class="scene" id="S4">
+    <div class="abs midden" id="pil" style="top:280px"><span class="pil">Quiz uit jouw stof</span></div>
+    <div class="abs qkaart" id="q" style="top:410px">
+      <div class="kop"><span>Mijn stof · Economie</span><span id="qn">Vraag 3 van 8</span></div>
+      <div class="stap"><b id="stap"></b></div>
+      <p>Welk begrip hoort bij deze uitleg?</p>
+      <q>«daling van het algemene prijsniveau»</q>
+      <div class="ant"><i>A</i>inflatie<em></em></div>
+      <div class="ant"><i>B</i>koopkracht<em></em></div>
+      <div class="ant"><i>C</i>deflatie<em><svg viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></em></div>
+      <div class="ant"><i>D</i>reëel inkomen<em></em></div>
+    </div>
+    <div class="abs goedpop" id="goedpop">Goed!</div>
+  </div>
+
+  <!-- S5 -->
+  <div class="scene" id="S5">
+    <div class="abs mascotte" id="vonk"></div>
+    <div class="abs midden slotkop" style="top:930px"><span class="w">Jouw</span> <span class="w">stof.</span><br><span class="w">Jouw</span> <span class="w" style="color:var(--oranje)">quiz.</span></div>
+    <div class="abs midden" id="merk" style="top:1230px"><span class="merk"><img src="../../icon-512.png" alt="">slagio.nl</span></div>
+    <div class="abs midden tags" id="tags" style="top:1390px">Gratis. Geen account nodig.</div>
+  </div>
+  </div>
+  <div class="abs vinger" id="vinger"></div><div class="abs tik" id="tik"></div>
+  <div class="abs flits" id="flits"></div>
+</div>
+<script src="../../mascotte.js"></script>
+<script src="../engine.js"></script>
+<script src="../geluid.js"></script>
+<script>
+const {p,E,lerp,zet,rnd,clamp,$}=Motion;
+(()=>{const c=$('#korrel'),g=c.getContext('2d'),d=g.createImageData(c.width,c.height),r=rnd(5);for(let i=0;i<d.data.length;i+=4){const v=r()*255;d.data[i]=d.data[i+1]=d.data[i+2]=v;d.data[i+3]=255;}g.putImageData(d,0,0);c.style.width='1080px';c.style.height='1920px';})();
+const DUUR=15.5;
+const GRENS=[0,2.1,6.5,10.0,13.0,DUUR];
+const scene=['#S1','#S2','#S3','#S4','#S5'].map(s=>$(s));
+window.__COVER=8.4;
+$('#msvk').innerHTML=mascotSVG('lees',96);
+$('#vonk').innerHTML=mascotSVG('knipoog',560);
+
+// Notities in de vorm "begrip: uitleg" (zo herkent Mijn stof de kaartjes)
+const KAART=[['inflatie','stijging van het algemene prijsniveau'],['deflatie','daling van het algemene prijsniveau'],
+  ['koopkracht','wat je met je inkomen kunt kopen'],['reëel inkomen','je inkomen na correctie voor inflatie']];
+const regel=([b,u])=>`<div class="regel"><span class="sel"></span><b>${b}<u></u></b>: ${u}</div>`;
+$('#regels1').innerHTML=KAART.map(regel).join('');$('#regels2').innerHTML=KAART.map(regel).join('');
+const R1=[...$('#regels1').querySelectorAll('.regel')],R2=[...$('#regels2').querySelectorAll('.regel')];
+R1.forEach(r=>r.querySelector('u').style.display='none');
+const T_SEL=[2.75,3.3],T_KOP=3.6,T_PLAK=4.55,T_ONDER=[4.9,5.6],T_CHIP=5.8;
+
+// Kaartjes 2×2, één voor één omgedraaid
+const KX=[0,480],KY=[0,450],T_FLIP=[7.1,7.6,8.1,8.6],T_GOED_R=9.25;
+const KK=KAART.map(([b,u],i)=>{const el=document.createElement('div');el.className='kaart';el.style.left=KX[i%2]+'px';el.style.top=KY[i>>1]+'px';
+  el.innerHTML=`<div class="z voor"><small>Begrip</small><b>${b}</b></div><div class="z achter"><small>${b}</small><p>${u}</p></div>`;$('#kaartjes').appendChild(el);return el;});
+
+const A=[...$('#q').querySelectorAll('.ant')];const T_GOED=11.55;
+
+const woorden=sel=>[...$(sel).querySelectorAll('.w')];
+const w1=woorden('#S1'),w5=woorden('#S5');
+const pop=(els,t,t0,stap,dy=60)=>els.forEach((el,i)=>{const x=p(t,t0+i*stap,t0+i*stap+.4,E.terug);zet(el,{opacity:String(Math.min(1,x*1.6)),transform:`translateY(${lerp(dy,0,x)}px) scale(${lerp(.85,1,x)})`});});
+const pos=el=>{const r=el.getBoundingClientRect(),c=$('#c').getBoundingClientRect(),f=c.width/1080;return {x:(r.left-c.left)/f,y:(r.top-c.top)/f,w:r.width/f,h:r.height/f};};
+
+function render(t){
+  zet($('#g1'),{transform:`translate(${-260+Math.sin(t*.6)*140}px,${120+Math.cos(t*.5)*90}px)`});
+  zet($('#g2'),{transform:`translate(${240+Math.cos(t*.55)*150}px,${1000+Math.sin(t*.7)*100}px)`});
+  let schud=0,vx=0,vy=0,tikMom=-9;
+  scene.forEach((s,i)=>{const a=GRENS[i],b=GRENS[i+1];const aan=t>=a&&t<b;zet(s,{display:aan?'block':'none'});if(!aan)return;
+    const inn=i===0?1:p(t,a,a+.28,E.uit5),uit=i===4?0:p(t,b-.18,b,E.in);
+    zet(s,{opacity:String(Math.min(inn,1-uit)),transform:`translateX(${lerp(220,0,inn)-uit*220}px) scale(${lerp(1.06,1,inn)*(1-uit*.05)})`});});
+  const fl=Math.max(...GRENS.slice(1,5).map(g=>t>=g?1-clamp((t-g)/.14):0));zet($('#flits'),{opacity:String(fl*.18)});
+
+  // ── S1 ──
+  if(t<GRENS[1]){pop(w1.slice(0,2),t,.1,.14);pop(w1.slice(2,5),t,.55,.1);
+    const q=p(t,.95,1.3,E.veer);zet($('#quiz1'),{opacity:String(Math.min(1,q*3)),transform:`scale(${lerp(2.3,1,Math.min(1,q))}) rotate(${lerp(-10,-3,Math.min(1,q))}deg)`});
+    if(t>.95&&t<1.3)schud=(1.3-t)*50;pop([w1[6]],t,1.35,.1);}
+
+  // ── S2 ──
+  if(t>=GRENS[1]&&t<GRENS[2]){
+    const din=p(t,2.15,2.55,E.uit5),dweg=p(t,3.75,4.15,E.inUit);
+    zet($('#doc'),{opacity:String(din*(1-dweg)),transform:`translateY(${lerp(120,0,din)-dweg*120}px) scale(${lerp(.94,1,din)*(1-dweg*.25)}) rotate(${-dweg*6}deg)`});
+    R1.forEach((r,i)=>{const n=R1.length,a=T_SEL[0]+(T_SEL[1]-T_SEL[0])*i/n,b=a+(T_SEL[1]-T_SEL[0])/n;zet(r.querySelector('.sel'),{width:`calc(${p(t,a,b)*100}% + 16px)`,opacity:String(p(t,a,a+.01))});});
+    const kp=p(t,3.3,3.5,E.terug);const d=pos($('#doc'));
+    zet($('#kopieer'),{left:'540px',top:(d.y-14)+"px",opacity:String(Math.min(1,kp*2)*(1-p(t,3.65,3.8))),transform:`translate(-50%,-100%) scale(${lerp(.5,1,kp)})`});
+    if(t<4){vx=540;vy=d.y-70;tikMom=T_KOP;}
+    const min=p(t,3.95,4.4,E.uit5);zet($('#ms'),{opacity:String(min),transform:`translateY(${lerp(500,0,min)}px)`});
+    zet($('#plak'),{display:t<T_PLAK?'block':'none'});
+    R2.forEach((r,i)=>{const x=p(t,T_PLAK+i*.05,T_PLAK+.2+i*.05,E.uit);zet(r,{opacity:String(x),transform:`translateY(${lerp(14,0,x)}px)`});
+      const a=T_ONDER[0]+(T_ONDER[1]-T_ONDER[0])*i/R2.length;zet(r.querySelector('u'),{transform:`scaleX(${p(t,a,a+.2,E.uit)})`});});
+    const v=$('.ms .veld');if(t>=4.1&&t<T_PLAK+.4){vx=pos(v).x+pos(v).w/2;vy=pos(v).y+120;tikMom=T_PLAK-.05;}
+    const ch=p(t,T_CHIP,T_CHIP+.35,E.veer);zet($('#chip'),{opacity:String(Math.min(1,ch*2)),transform:`scale(${lerp(.4,1,Math.min(1.2,ch))})`});
+    const n=Math.min(4,Math.floor(p(t,T_ONDER[0],T_ONDER[1]+.2)*4+.0001));$('#chipn').textContent=(t<T_CHIP?n:4)+' kaartjes gevonden';}
+
+  // ── S3 ──
+  if(t>=GRENS[2]&&t<GRENS[3]){
+    KK.forEach((k,i)=>{const x=p(t,6.6+i*.08,7.0+i*.08,E.terug);const f=p(t,T_FLIP[i],T_FLIP[i]+.45,E.inUit);
+      const sp=Math.sin(f*Math.PI);
+      zet(k.children[0],{opacity:f<.5?'1':'0'});zet(k.children[1],{opacity:f<.5?'0':'1'});
+      zet(k,{opacity:String(Math.min(1,x*2)),transform:`translateY(${lerp(120,0,x)-sp*40}px) scale(${lerp(.8,1,x)*(1+sp*.06)}) rotateY(${f*180}deg) rotate(${(i%2?1:-1)*lerp(6,1.5,x)}deg)`});});
+    const ra=p(t,8.9,9.15,E.uit);zet($('#rate'),{opacity:String(ra),transform:`translateY(${lerp(60,0,ra)}px)`});
+    const rg=Math.max(0,1-Math.abs(t-T_GOED_R)*7);zet($('#rgoed'),{transform:`translateY(${rg*6}px) scale(${1-rg*.05})`,opacity:String(t>T_GOED_R-.1?1:.55)});
+    const r=pos($('#rgoed'));vx=r.x+r.w/2;vy=r.y+r.h/2;tikMom=T_GOED_R;}
+
+  // ── S4 ──
+  if(t>=GRENS[3]&&t<GRENS[4]){
+    const pl=p(t,10.1,10.4,E.terug);zet($('#pil'),{opacity:String(Math.min(1,pl*2)),transform:`scale(${lerp(.6,1,pl)})`});
+    const k=p(t,10.25,10.7,E.uit5);zet($('#q'),{opacity:String(k),transform:`translateX(${lerp(1000,0,k)}px) rotate(${lerp(9,0,k)}deg)`});
+    zet($('#stap'),{width:(lerp(25,37.5,p(t,T_GOED,T_GOED+.4,E.uit)))+'%'});
+    const g=p(t,T_GOED,T_GOED+.18);zet(A[2],{borderColor:g>0?`rgba(31,191,98,${g})`:'#ece6df',background:`color-mix(in srgb,#1fbf62 ${Math.round(g*14)}%,#fff)`});
+    const v=p(t,T_GOED+.05,T_GOED+.35,E.terug);zet(A[2].querySelector('em'),{opacity:String(Math.min(1,v*2)),transform:`scale(${v})`});
+    [0,1,3].forEach(i=>zet(A[i],{opacity:String(1-p(t,T_GOED+.1,T_GOED+.4)*.55)}));
+    const c=pos(A[2]);vx=c.x+560;vy=c.y+c.h/2;tikMom=T_GOED;
+    const gp=p(t,T_GOED+.1,T_GOED+.45,E.veer);const qq=pos($('#q'));
+    zet($('#goedpop'),{left:'540px',top:(qq.y+qq.h+40)+'px',opacity:String(Math.min(1,gp*2)),transform:`translate(-50%,0) scale(${lerp(.3,1,Math.min(1.1,gp))})`});}
+
+  // ── vinger ──
+  const vin=tikMom>0?p(t,tikMom-.55,tikMom-.15,E.uit)*(1-p(t,tikMom+.2,tikMom+.45)):0;
+  zet($('#vinger'),{left:vx+'px',top:(vy+lerp(260,0,p(t,tikMom-.55,tikMom-.1,E.uit)))+'px',opacity:String(vin*.85),transform:`scale(${t>tikMom-.08&&t<tikMom+.08?.82:1})`});
+  const ti=p(t,tikMom-.05,tikMom+.35);zet($('#tik'),{left:vx+'px',top:vy+'px',opacity:String(ti>0&&ti<1&&vin>0?1-ti:0),transform:`scale(${lerp(.4,1.5,ti)})`});
+
+  // ── S5 ──
+  if(t>=GRENS[4]){const m=p(t,13.1,13.8,E.veer);const bob=t>13.8?Math.sin((t-13.8)*3)*10:0;
+    zet($('#vonk'),{opacity:String(Math.min(1,m*2)),transform:`translateY(${lerp(240,0,Math.min(1,m))+bob}px) scale(${lerp(.4,1,m)}) rotate(${Math.sin(t*2)*2}deg)`});
+    pop(w5,t,13.4,.1,70);
+    const mk=p(t,14.2,14.6,E.uit);zet($('#merk'),{opacity:String(mk),transform:`translateY(${lerp(50,0,mk)}px)`});
+    const tg=p(t,14.45,14.85,E.uit);zet($('#tags'),{opacity:String(tg),transform:`translateY(${lerp(40,0,tg)}px)`});}
+
+  const rr=rnd(Math.floor(t*30)+1);zet($('#wereld'),{transform:schud>0?`translate(${(rr()-.5)*schud}px,${(rr()-.5)*schud}px)`:'none'});
+}
+
+// ── Geluid ──
+const G=[],g=(t,n,v,x)=>G.push([t,n,v,x]);
+g(0,'beat',.5,{d:DUUR,bpm:108});
+g(.1,'pop',.5);g(.24,'pop',.5);[0,1,2].forEach(i=>g(.55+i*.1,'pop',.4));g(.9,'whoosh',.5,.25);g(.95,'boem',1);g(1.35,'pop',.5);
+g(2.08,'whoosh',.8);g(2.2,'open',.6);
+g(T_SEL[0],'scan',.5,T_SEL[1]-T_SEL[0]);
+g(3.3,'pop',.6);g(T_KOP-.03,'tap',.7);g(T_KOP+.02,'flip',.5);
+g(3.75,'whoosh',.7,.35);g(4.0,'whoosh',.6,.3);
+g(T_PLAK-.08,'tap',.7);g(T_PLAK,'pop',.8);[0,1,2,3].forEach(i=>g(T_PLAK+i*.05,'tick',.25,800+i*90));
+[0,1,2,3].forEach(i=>g(T_ONDER[0]+(T_ONDER[1]-T_ONDER[0])*i/4,'tick',.45,1000+i*140));
+g(T_CHIP,'badge',.8);
+g(6.45,'whoosh',.8);[0,1,2,3].forEach(i=>g(6.6+i*.08,'pop',.35));
+T_FLIP.forEach((f,i)=>{g(f,'flip',.9);g(f+.22,'tick',.3,1200+i*100);});
+g(8.9,'whoosh',.4,.25);g(T_GOED_R-.03,'tap',.7);g(T_GOED_R,'correct',.7);
+g(9.95,'whoosh',.8);g(10.1,'nav',.7);g(10.25,'whoosh',.5,.3);
+g(T_GOED-.03,'tap',.7);g(T_GOED,'correct',.9);g(T_GOED+.15,'combo',.7);
+g(12.92,'whoosh',.8);g(13.1,'evolve',.9);g(13.4,'pop',.4);g(14.2,'start',.7);g(14.5,'coin',.45);
+Motion.maak({duur:DUUR,render,geluid:G});
+</script>
+</body></html>

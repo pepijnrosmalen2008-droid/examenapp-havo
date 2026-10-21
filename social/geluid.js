@@ -84,6 +84,7 @@
     nav: (a, M, u, t) => T(a, M, u, 440, 860, t, .10, { vol: .10, glide: .7, cut: 3200, harm: .12, detune: 6 }),
     open: (a, M, u, t) => { T(a, M, u, 392, 784, t, .16, { vol: .12, glide: .7, cut: 3400, detune: 8 }); T(a, M, u, 587, 1175, t + .03, .18, { type: 'triangle', vol: .07, glide: .7 }); T(a, M, u, 1568, null, t + .12, .14, { vol: .05, rev: true }); },
     correct: (a, M, u, t) => { [784, 988, 1319].forEach((f, i) => T(a, M, u, f, null, t + i * .066, .20, { vol: .16, cut: 3800, harm: .30, detune: 6, rev: true })); T(a, M, u, 1976, null, t + .16, .30, { type: 'triangle', vol: .07, cut: 6000, rev: true }); },
+    fout: (a, M, u, t) => { T(a, M, u, 330, 247, t, .16, { vol: .11, glide: .5, cut: 1500, detune: 5 }); T(a, M, u, 247, 196, t + .12, .20, { vol: .10, glide: .5, cut: 1200 }); },
     combo: (a, M, u, t) => { [659, 831, 988, 1319].forEach((f, i) => T(a, M, u, f, null, t + i * .06, .18, { vol: .15, cut: 4200, harm: .26, detune: 6, rev: true })); T(a, M, u, 1976, null, t + .20, .30, { type: 'triangle', vol: .07, rev: true }); },
     streak: (a, M, u, t) => [659, 659, 988, 1319].forEach((f, i) => T(a, M, u, f, f * 1.04, t + i * .08, .16, { type: 'triangle', vol: .13, cut: 4200, harm: .20, detune: 7 })),
     start: (a, M, u, t) => { T(a, M, u, 392, 784, t, .14, { type: 'triangle', vol: .14, glide: .6, detune: 9 }); T(a, M, u, 587, 1175, t + .07, .18, { vol: .10, glide: .6, harm: .22, rev: true }); },
@@ -126,12 +127,14 @@
         T(a, M, u, ar2 * 2, null, tt + sp / 2, sp * .4, { type: 'triangle', vol: .03, cut: 1800, rev: true });
       }
     },
+    typ: (a, M, u, t, x) => { const r = rnd(Math.floor(t * 1000) + 3); N(a, M, u, t, .018, { freq: 1800 + r() * 500, vol: .03 * (x || 1), q: 1.6 }); },
+    scan: (a, M, u, t, x) => { const d = x || .8; N(a, M, u, t, d, { freq: 600, freq2: 2200, q: 3, vol: .05, swell: .5, sweep: 1 }); T(a, M, u, 520, 1040, t, d, { vol: .03, glide: 1, cut: 1800 }); },
     snurk: (a, M, u, t) => N(a, M, u, t, .6, { filter: 'lowpass', freq: 180, freq2: 520, vol: .07, swell: .6 }),
   };
 
   // Transpositie per geluid: beloningsmelodieën een octaaf lager, korte tikjes
   // iets minder, de lage montagegeluiden blijven waar ze zijn.
-  const TOON = { tap: .62, pop: .62, nav: .62, flip: .62, tick: .62, teller: .55, open: .55, start: .55, schud: 1,
+  const TOON = { tap: .62, pop: .62, nav: .62, flip: .62, tick: .62, teller: .55, open: .55, start: .55, schud: 1, fout: .75,
     correct: .5, combo: .5, streak: .5, xp: .5, badge: .5, evolve: .5, levelup: .5, fanfare: .5, coin: .5, kist: .5, wekker: .5 };
   function plan(ac, M, cues) {
     for (const [t, naam, vol, x] of cues) {
