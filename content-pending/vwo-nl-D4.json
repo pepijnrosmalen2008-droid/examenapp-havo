@@ -1,0 +1,689 @@
+{
+ "id": "D4",
+ "lo": "nl.D.4",
+ "gs": 2,
+ "naam": "Argumentatieschema's herkennen",
+ "beschrijving": "Je herkent de zes argumentatieschema's: oorzaak en gevolg, kenmerk of eigenschap, voor- en nadelen, voorbeelden, vergelijking en autoriteit, en ziet hoe een argument het standpunt onderbouwt.",
+ "ceStatus": "CE+SE",
+ "binas": "",
+ "val": "",
+ "onderwerpen": [
+  "Oorzaak en gevolg",
+  "Kenmerk of eigenschap",
+  "Voor- en nadelen",
+  "Voorbeelden",
+  "Vergelijking",
+  "Autoriteit"
+ ],
+ "sam": "Een argumentatieschema geeft de aard aan van het verband tussen standpunt en argument. Er zijn zes schema's: oorzaak en gevolg (een oorzaak of gevolg onderbouwt een gevolg of oorzaak), kenmerk of eigenschap (kenmerken onderbouwen een eigenschap), voor- en nadelen (gevolgen van een voorgestelde actie), voorbeelden (enkele gevallen onderbouwen iets algemeners), vergelijking (een gelijkende situatie) en autoriteit (een deskundige bron).",
+ "begrippen": [
+  {
+   "t": "Argumentatieschema",
+   "d": "De aard van het verband tussen een standpunt en een argument."
+  },
+  {
+   "t": "Oorzaak en gevolg",
+   "d": "Een schema waarin gevolgen een oorzaak of oorzaken een gevolg onderbouwen."
+  },
+  {
+   "t": "Kenmerk of eigenschap",
+   "d": "Een schema waarin kenmerken van iets een standpunt over een andere eigenschap onderbouwen."
+  },
+  {
+   "t": "Voor- en nadelen",
+   "d": "Een schema waarin voor- of nadelen van een actie de wenselijkheid onderbouwen."
+  },
+  {
+   "t": "Voorbeelden",
+   "d": "Een schema waarin voorbeelden van een verschijnsel een standpunt over het algemene voorkomen onderbouwen."
+  },
+  {
+   "t": "Vergelijking",
+   "d": "Een schema waarin wat in de ene situatie geldt een standpunt over een andere situatie onderbouwt."
+  },
+  {
+   "t": "Autoriteit",
+   "d": "Een schema waarin de uitspraak van een deskundige en betrouwbare bron een standpunt onderbouwt."
+  },
+  {
+   "t": "Oorzaak",
+   "d": "Datgene wat iets anders veroorzaakt."
+  },
+  {
+   "t": "Gevolg",
+   "d": "Wat er gebeurt door een oorzaak."
+  },
+  {
+   "t": "Kenmerk",
+   "d": "Een eigenschap waaraan je iets herkent."
+  },
+  {
+   "t": "Deskundige bron",
+   "d": "Een bron met kennis van het onderwerp."
+  },
+  {
+   "t": "Voorgestelde actie",
+   "d": "Een handeling waarvan wordt betoogd dat ze wenselijk is."
+  }
+ ],
+ "sv": [
+  {
+   "v": "Welk argumentatieschema gebruikt de schrijver?",
+   "o": [
+    "kenmerk of eigenschap, want er wordt iets beschreven",
+    "oorzaak en gevolg",
+    "voor- en nadelen, want er is een nadeel van de prijs",
+    "vergelijking, want er wordt iets met vroeger vergeleken"
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 0,
+   "u": "Oorzaak en gevolg: een oorzaak onderbouwt een gevolg.",
+   "uo": [
+    "Koos je \"kenmerk of eigenschap, want er wordt iets beschreven\"? Dan denk je dat de schrijver een eigenschap beschrijft. Hij noemt een oorzaak, en geen kenmerk.",
+    "Klopt: de prijsverdubbeling wordt als oorzaak van de klachten genoemd.",
+    "Koos je \"voor- en nadelen, want er is een nadeel van de prijs\"? Dan denk je dat het om voor- en nadelen gaat. Er wordt geen actie voorgesteld, maar een oorzaak genoemd.",
+    "Koos je \"vergelijking, want er wordt iets met vroeger...\"? Dan denk je dat er twee situaties worden vergeleken. Er wordt geen andere situatie genoemd, alleen een oorzaak."
+   ],
+   "uh": "Wat leidt tot wat?",
+   "ctx": "Standpunt: \"De kantine krijgt veel klachten.\" Argument: \"De prijzen in de kantine zijn deze maand verdubbeld.\""
+  },
+  {
+   "v": "Welk argumentatieschema gebruikt de schrijver?",
+   "o": [
+    "oorzaak en gevolg, want er is een reden voor",
+    "voorbeeld, want er worden drie dingen genoemd",
+    "autoriteit, want de schrijver noemt een bron",
+    "kenmerk of eigenschap"
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 1,
+   "u": "Kenmerk of eigenschap: kenmerken onderbouwen een eigenschap.",
+   "uo": [
+    "Koos je \"oorzaak en gevolg, want er is een reden voor\"? Dan denk je dat het argument een oorzaak noemt. Het noemt kenmerken van de fiets, en geen gevolg.",
+    "Koos je \"voorbeeld, want er worden drie dingen genoemd\"? Dan denk je dat drie dingen drie voorbeelden zijn. Het gaat om kenmerken van één fiets, en geen voorbeelden van een verschijnsel.",
+    "Koos je \"autoriteit, want de schrijver noemt een bron\"? Dan denk je dat er een deskundige wordt aangehaald. Er wordt niemand geciteerd, het zijn kenmerken van de fiets.",
+    "Klopt: kenmerken van de fiets onderbouwen de eigenschap \"geschikt\"."
+   ],
+   "uh": "Welke eigenschappen worden genoemd?",
+   "ctx": "Standpunt: \"Deze fiets is geschikt voor lange afstanden.\" Argument: \"Hij heeft een licht aluminium frame, brede banden en zeven versnellingen.\""
+  },
+  {
+   "v": "Welk argumentatieschema gebruikt de schrijver?",
+   "o": [
+    "voor- en nadelen",
+    "oorzaak en gevolg, want rijen worden korter",
+    "vergelijking, want de rijen worden vergeleken met nu",
+    "autoriteit, want de school beslist"
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 2,
+   "u": "Voor- en nadelen: gevolgen van een voorgestelde actie.",
+   "uo": [
+    "Klopt: het argument noemt voordelen en een nadeel van de voorgestelde actie.",
+    "Koos je \"oorzaak en gevolg, want rijen worden korter\"? Dan denk je dat het argument een oorzaak is. Het noemt voor- en nadelen van een actie, dat is een ander schema.",
+    "Koos je \"vergelijking, want de rijen worden vergeleken met nu\"? Dan denk je dat het om een vergelijking gaat. Er wordt geen andere situatie naast gelegd, het is een afweging van voor- en nadelen.",
+    "Koos je \"autoriteit, want de school beslist\"? Dan denk je dat het om een bron gaat. Er wordt geen deskundige aangehaald, er staan voor- en nadelen in."
+   ],
+   "uh": "Wat wint en wat kost het?",
+   "ctx": "Standpunt: \"De school moet een tweede kantine openen.\" Argument: \"Dan zijn de rijen korter en eten leerlingen sneller, al kost het wat extra personeel.\""
+  },
+  {
+   "v": "Welk argumentatieschema gebruikt de schrijver?",
+   "o": [
+    "oorzaak en gevolg, want proefwerken zijn de oorzaak",
+    "kenmerk of eigenschap, want er worden dingen genoemd",
+    "voorbeelden",
+    "vergelijking, want leerlingen worden vergeleken"
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 3,
+   "u": "Voorbeelden: enkele gevallen ondersteunen een algemene bewering.",
+   "uo": [
+    "Koos je \"oorzaak en gevolg, want proefwerken zijn de oorzaak\"? Dan denk je dat de schrijver een oorzaak noemt. Hij noemt enkele leerlingen als voorbeeld, geen oorzaak van de stress.",
+    "Koos je \"kenmerk of eigenschap, want er worden dingen genoemd\"? Dan denk je dat het kenmerken zijn. Het zijn leerlingen die dezelfde klacht hebben, dus voorbeelden.",
+    "Klopt: enkele leerlingen worden genoemd om een algemene bewering te onderbouwen.",
+    "Koos je \"vergelijking, want leerlingen worden vergeleken\"? Dan denk je dat de leerlingen worden vergeleken. Ze zijn voorbeelden van hetzelfde, ze worden niet met elkaar vergeleken."
+   ],
+   "uh": "Hoeveel gevallen worden genoemd?",
+   "ctx": "Standpunt: \"Veel scholieren hebben last van stress.\" Argument: \"Anna, Bram en Chloë uit mijn klas slapen slecht door de proefwerken, en een jongen uit 4 vwo kan er niet meer van eten.\""
+  },
+  {
+   "v": "Welk argumentatieschema gebruikt de schrijver?",
+   "o": [
+    "voorbeeld, want de buurschool is een voorbeeld",
+    "oorzaak en gevolg, want het verbod maakt het werkend",
+    "vergelijking",
+    "kenmerk, want beide scholen hebben evenveel leerlingen"
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 4,
+   "u": "Vergelijking: een gelijkende situatie onderbouwt een standpunt.",
+   "uo": [
+    "Koos je \"voorbeeld, want de buurschool is een voorbeeld\"? Dan denk je dat de buurschool een voorbeeld is. Ze is een vergelijkbare situatie, en geen voorbeeld van een verschijnsel.",
+    "Koos je \"oorzaak en gevolg, want het verbod maakt het werkend\"? Dan denk je dat het verbod een oorzaak is. De schrijver vergelijkt twee scholen, en geeft geen oorzaak.",
+    "Klopt: de eigen school wordt vergeleken met de school in de buurgemeente.",
+    "Koos je \"kenmerk, want beide scholen hebben evenveel...\"? Dan denk je dat de overeenkomsten kenmerken zijn. Ze worden gebruikt om twee situaties te vergelijken, en dat is het vergelijkingsschema."
+   ],
+   "uh": "Welke twee situaties?",
+   "ctx": "Standpunt: \"Onze school moet een telefoonverbod invoeren.\" Argument: \"Op de school in de buurgemeente werkt het verbod goed, en die school heeft evenveel leerlingen en dezelfde problemen als wij.\""
+  },
+  {
+   "v": "Welk argumentatieschema gebruikt de schrijver?",
+   "o": [
+    "autoriteit",
+    "oorzaak en gevolg, want suiker is slecht",
+    "voorbeeld, want de diëtist is een voorbeeld",
+    "kenmerk, want er wordt een eigenschap genoemd"
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 5,
+   "u": "Autoriteit: een beroep op een deskundige bron.",
+   "uo": [
+    "Klopt: een erkend deskundige wordt aangehaald om het standpunt te onderbouwen.",
+    "Koos je \"oorzaak en gevolg, want suiker is slecht\"? Dan denk je dat het argument een gevolg noemt. De diëtist wordt aangehaald, en dat is autoriteit.",
+    "Koos je \"voorbeeld, want de diëtist is een voorbeeld\"? Dan denk je dat de diëtist een voorbeeld is. Hij is een bron, geen voorbeeld van een verschijnsel.",
+    "Koos je \"kenmerk, want er wordt een eigenschap genoemd\"? Dan denk je dat er een eigenschap wordt gegeven. Er wordt een uitspraak van een deskundige aangehaald, dus het is autoriteit."
+   ],
+   "uh": "Wie wordt aangehaald?",
+   "ctx": "Standpunt: \"Je moet minder suiker eten.\" Argument: \"Volgens de diëtist van het ziekenhuis, een erkend deskundige op het gebied van voeding, is te veel suiker slecht voor je gezondheid.\""
+  },
+  {
+   "v": "Waarvoor dient een argumentatieschema?",
+   "o": [
+    "het telt hoeveel argumenten er zijn",
+    "het zegt of een argument waar of onwaar is",
+    "het ordent de alinea's van de tekst",
+    "het geeft het verband aan"
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 1,
+   "u": "Een schema geeft de aard van het verband aan.",
+   "uo": [
+    "Koos je \"het telt hoeveel argumenten er zijn\"? Dan denk je dat het schema het aantal argumenten aangeeft. Dat doet de argumentatiestructuur, het schema gaat over de aard van het verband.",
+    "Koos je \"het zegt of een argument waar of onwaar is\"? Dan denk je dat het schema de waarheid beoordeelt. Het beschrijft hoe het argument werkt, de waarheid beoordeel je apart.",
+    "Koos je \"het ordent de alinea's van de tekst\"? Dan denk je dat het schema de tekstopbouw is. Het gaat om de relatie tussen standpunt en argument, niet om de volgorde van alinea's.",
+    "Klopt: het schema laat zien hoe het argument het standpunt onderbouwt."
+   ],
+   "uh": "Hoe ondersteunt het argument het standpunt?"
+  },
+  {
+   "v": "Welk argument in tekst A hoort bij het voor- en nadelenschema?",
+   "o": [
+    "de uitspraak van de schoolarts over rustige pauzes",
+    "kortere rijen, maar extra personeel",
+    "de buurgemeente heeft een tweede kantine geopend",
+    "twee leerlingen zijn vorige week flauwgevallen"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 2,
+   "u": "Voor- en nadelen: gevolgen van de voorgestelde actie.",
+   "uo": [
+    "Koos je \"de uitspraak van de schoolarts over rustige pauzes\"? Dan denk je dat de arts voor- en nadelen noemt. De arts is een bron, dus dit is autoriteit.",
+    "Klopt: er staan voordelen en een nadeel van de voorgestelde tweede kantine.",
+    "Koos je \"de buurgemeente heeft een tweede kantine geopend\"? Dan denk je dat dit voor- en nadelen noemt. Het is een vergelijking met een andere situatie, geen afweging van een actie.",
+    "Koos je \"twee leerlingen zijn vorige week flauwgevallen\"? Dan denk je dat dit een voordeel of nadeel is. Het is een voorbeeld, dat de drukte aantoont."
+   ],
+   "uh": "Wat levert de tweede kantine op, wat kost ze?",
+   "ctx": "Onze school moet een tweede kantine openen. Dan zijn de rijen korter en eten leerlingen sneller, al kost het wat extra personeel. Volgens de schoolarts, die al twintig jaar op onze school werkt, is een rustige pauze goed voor de concentratie. De school in de buurgemeente heeft een tweede kantine geopend en daar zijn de pauzes sindsdien veel rustiger geworden. Bovendien is onze kantine nu zo druk dat leerlingen vaak niet aan eten toekomen: vorige week zijn er twee leerlingen flauwgevallen. Een tweede kantine zorgt voor meer ruimte en dus voor rust in de pauze."
+  },
+  {
+   "v": "Welk argument in tekst A berust op autoriteit?",
+   "o": [
+    "de ervaring van de buurgemeente",
+    "het flauwvallen van twee leerlingen",
+    "de uitspraak over meer ruimte en rust",
+    "de uitspraak van de schoolarts"
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 5,
+   "u": "Autoriteit: \"volgens de arts, een deskundige\".",
+   "uo": [
+    "Koos je \"de ervaring van de buurgemeente\"? Dan denk je dat de buurgemeente een autoriteit is. Ze is een vergelijkbare situatie, en dus een vergelijking.",
+    "Koos je \"het flauwvallen van twee leerlingen\"? Dan denk je dat dit een autoriteit is. Het zijn voorbeelden, er wordt geen bron aangehaald.",
+    "Koos je \"de uitspraak over meer ruimte en rust\"? Dan denk je dat dit een autoriteit is. Het is een gevolgargument, er wordt geen deskundige genoemd.",
+    "Klopt: een deskundige bron wordt aangehaald om het standpunt te onderbouwen."
+   ],
+   "uh": "Wie wordt aangehaald?",
+   "ctx": "Onze school moet een tweede kantine openen. Dan zijn de rijen korter en eten leerlingen sneller, al kost het wat extra personeel. Volgens de schoolarts, die al twintig jaar op onze school werkt, is een rustige pauze goed voor de concentratie. De school in de buurgemeente heeft een tweede kantine geopend en daar zijn de pauzes sindsdien veel rustiger geworden. Bovendien is onze kantine nu zo druk dat leerlingen vaak niet aan eten toekomen: vorige week zijn er twee leerlingen flauwgevallen. Een tweede kantine zorgt voor meer ruimte en dus voor rust in de pauze."
+  },
+  {
+   "v": "Waarom is de buurgemeente in tekst A een vergelijking en geen voorbeeld?",
+   "o": [
+    "omdat de gemeente een deskundige bron over kantines is",
+    "ze is een gelijkende situatie voor de eigen school",
+    "omdat de gemeente een van de vele gevallen van drukte is",
+    "omdat de gemeente groter is dan de eigen school is"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 4,
+   "u": "Vergelijking: een gelijkende situatie als steun.",
+   "uo": [
+    "Koos je \"omdat de gemeente een deskundige bron over kantines...\"? Dan denk je dat de gemeente als deskundige wordt aangehaald. Ze wordt vergeleken, en niet als bron geciteerd.",
+    "Klopt: de eigen situatie wordt met een gelijkende situatie vergeleken.",
+    "Koos je \"omdat de gemeente een van de vele gevallen van...\"? Dan denk je dat de gemeente een voorbeeld van drukte is. Ze is een gelijkende school, met een oplossing die de eigen school kan overnemen.",
+    "Koos je \"omdat de gemeente groter is dan de eigen school is\"? Dan denk je dat de grootte de vergelijking bepaalt. Het gaat om gelijkenis in relevante punten, niet om verschillen in grootte."
+   ],
+   "uh": "Met welke situatie wordt vergeleken?",
+   "ctx": "Onze school moet een tweede kantine openen. Dan zijn de rijen korter en eten leerlingen sneller, al kost het wat extra personeel. Volgens de schoolarts, die al twintig jaar op onze school werkt, is een rustige pauze goed voor de concentratie. De school in de buurgemeente heeft een tweede kantine geopend en daar zijn de pauzes sindsdien veel rustiger geworden. Bovendien is onze kantine nu zo druk dat leerlingen vaak niet aan eten toekomen: vorige week zijn er twee leerlingen flauwgevallen. Een tweede kantine zorgt voor meer ruimte en dus voor rust in de pauze."
+  },
+  {
+   "v": "Welk voorbeeld geeft de schrijver voor de drukte in de kantine?",
+   "o": [
+    "de schoolarts werkt al twintig jaar op school",
+    "de buurgemeente heeft een tweede kantine",
+    "twee leerlingen zijn flauwgevallen",
+    "de rijen zijn korter bij twee kantines"
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 3,
+   "u": "Voorbeelden: concrete gevallen.",
+   "uo": [
+    "Koos je \"de schoolarts werkt al twintig jaar op school\"? Dan denk je dat dit een voorbeeld van drukte is. Het is een gegeven over de arts, geen voorbeeld van drukte.",
+    "Koos je \"de buurgemeente heeft een tweede kantine\"? Dan denk je dat dit een voorbeeld van drukte is. Het is een vergelijking met een andere school, geen voorbeeld in de eigen school.",
+    "Klopt: het zijn concrete gevallen die de drukte illustreren.",
+    "Koos je \"de rijen zijn korter bij twee kantines\"? Dan denk je dat dit een voorbeeld is van de huidige drukte. Het beschrijft een gevolg van een tweede kantine, niet een voorbeeld van de nu bestaande drukte."
+   ],
+   "uh": "Welk geval toont de drukte?",
+   "ctx": "Onze school moet een tweede kantine openen. Dan zijn de rijen korter en eten leerlingen sneller, al kost het wat extra personeel. Volgens de schoolarts, die al twintig jaar op onze school werkt, is een rustige pauze goed voor de concentratie. De school in de buurgemeente heeft een tweede kantine geopend en daar zijn de pauzes sindsdien veel rustiger geworden. Bovendien is onze kantine nu zo druk dat leerlingen vaak niet aan eten toekomen: vorige week zijn er twee leerlingen flauwgevallen. Een tweede kantine zorgt voor meer ruimte en dus voor rust in de pauze."
+  },
+  {
+   "v": "Welk argument in tekst A berust op oorzaak en gevolg?",
+   "o": [
+    "meer ruimte zorgt voor rust",
+    "kortere rijen, maar extra personeel",
+    "het oordeel van de schoolarts",
+    "de buurgemeente heeft het geprobeerd"
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 0,
+   "u": "Oorzaak en gevolg: een oorzaak onderbouwt een gevolg.",
+   "uo": [
+    "Klopt: de ruimte wordt als oorzaak van de rust genoemd.",
+    "Koos je \"kortere rijen, maar extra personeel\"? Dan denk je dat dit oorzaak en gevolg is. Het noemt voor- en nadelen, en is dus een ander schema.",
+    "Koos je \"het oordeel van de schoolarts\"? Dan denk je dat dit oorzaak en gevolg is. Het is een beroep op een deskundige, dus autoriteit.",
+    "Koos je \"de buurgemeente heeft het geprobeerd\"? Dan denk je dat dit oorzaak en gevolg is. Het is een vergelijking met een andere gemeente, dus een ander schema."
+   ],
+   "uh": "Wat leidt tot wat?",
+   "ctx": "Onze school moet een tweede kantine openen. Dan zijn de rijen korter en eten leerlingen sneller, al kost het wat extra personeel. Volgens de schoolarts, die al twintig jaar op onze school werkt, is een rustige pauze goed voor de concentratie. De school in de buurgemeente heeft een tweede kantine geopend en daar zijn de pauzes sindsdien veel rustiger geworden. Bovendien is onze kantine nu zo druk dat leerlingen vaak niet aan eten toekomen: vorige week zijn er twee leerlingen flauwgevallen. Een tweede kantine zorgt voor meer ruimte en dus voor rust in de pauze."
+  },
+  {
+   "v": "Waarom hoort dit argument bij het kenmerkschema?",
+   "o": [
+    "het noemt kenmerken van de fiets",
+    "het noemt een oorzaak voor de fiets",
+    "het noemt een deskundige over fietsen",
+    "het vergelijkt twee fietsen met elkaar"
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 1,
+   "u": "Kenmerk: kenmerken onderbouwen een eigenschap.",
+   "uo": [
+    "Klopt: frame, banden en versnellingen onderbouwen de eigenschap \"geschikt\".",
+    "Koos je \"het noemt een oorzaak voor de fiets\"? Dan denk je dat het argument een oorzaak noemt. Het noemt kenmerken, geen oorzaak.",
+    "Koos je \"het noemt een deskundige over fietsen\"? Dan denk je dat er een deskundige wordt aangehaald. Er wordt niemand genoemd, het zijn kenmerken.",
+    "Koos je \"het vergelijkt twee fietsen met elkaar\"? Dan denk je dat er een vergelijking is. Er wordt één fiets beschreven, en geen tweede fiets."
+   ],
+   "uh": "Welke kenmerken?",
+   "ctx": "Standpunt: \"Deze fiets is geschikt voor lange afstanden.\" Argument: \"Hij heeft een licht aluminium frame, brede banden en zeven versnellingen.\""
+  },
+  {
+   "v": "Wat is in dit fragment de oorzaak en wat het gevolg?",
+   "o": [
+    "oorzaak: de klachten; gevolg: de prijsverdubbeling",
+    "oorzaak: de kantine; gevolg: de prijzen",
+    "oorzaak: de prijzen; gevolg: de klachten",
+    "oorzaak en gevolg zijn niet te onderscheiden"
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 0,
+   "u": "Oorzaak komt voor het gevolg.",
+   "uo": [
+    "Koos je \"oorzaak: de klachten; gevolg: de prijsverdubbeling\"? Dan denk je dat de klachten de prijzen veroorzaken. Het is andersom, de prijzen veroorzaken de klachten.",
+    "Koos je \"oorzaak: de kantine; gevolg: de prijzen\"? Dan denk je dat de kantine de oorzaak is. De kantine is het onderwerp, de verdubbeling is de oorzaak.",
+    "Klopt: de schrijver onderbouwt het gevolg met de oorzaak.",
+    "Koos je \"oorzaak en gevolg zijn niet te onderscheiden\"? Dan denk je dat beide gelijk zijn. De prijzen komen eerst, de klachten volgen daarop."
+   ],
+   "uh": "Wat gebeurt eerst?",
+   "ctx": "Standpunt: \"De kantine krijgt veel klachten.\" Argument: \"De prijzen in de kantine zijn deze maand verdubbeld.\""
+  },
+  {
+   "v": "Waarom is dit een voorbeeldschema?",
+   "o": [
+    "de schrijver noemt een deskundige",
+    "enkele gevallen als steun",
+    "de schrijver vergelijkt twee scholen",
+    "de schrijver noemt een oorzaak voor stress"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 3,
+   "u": "Voorbeelden: gevallen die een algemene bewering steunen.",
+   "uo": [
+    "Koos je \"de schrijver noemt een deskundige\"? Dan denk je dat er een deskundige wordt aangehaald. Er is geen deskundige, alleen enkele leerlingen.",
+    "Klopt: Anna, Bram, Chloë en een jongen zijn voorbeelden van stress.",
+    "Koos je \"de schrijver vergelijkt twee scholen\"? Dan denk je dat twee scholen worden vergeleken. De schrijver noemt leerlingen, geen andere school.",
+    "Koos je \"de schrijver noemt een oorzaak voor stress\"? Dan denk je dat een oorzaak wordt onderbouwd. De proefwerken zijn een bijkomstigheid, de nadruk ligt op de voorbeelden."
+   ],
+   "uh": "Hoeveel gevallen?",
+   "ctx": "Standpunt: \"Veel scholieren hebben last van stress.\" Argument: \"Anna, Bram en Chloë uit mijn klas slapen slecht door de proefwerken, en een jongen uit 4 vwo kan er niet meer van eten.\""
+  },
+  {
+   "v": "Welke twee situaties worden vergeleken?",
+   "o": [
+    "het verbod en de school",
+    "evenveel leerlingen en dezelfde problemen",
+    "de leerlingen en de docenten",
+    "onze school en de buurgemeente"
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 4,
+   "u": "Vergelijking: twee situaties naast elkaar.",
+   "uo": [
+    "Koos je \"het verbod en de school\"? Dan denk je dat het verbod en de school worden vergeleken. Het verbod is het middel, er worden twee scholen vergeleken.",
+    "Koos je \"evenveel leerlingen en dezelfde problemen\"? Dan denk je dat dit de twee situaties zijn. Dit zijn de overeenkomsten, niet de situaties zelf.",
+    "Koos je \"de leerlingen en de docenten\"? Dan denk je dat twee groepen worden vergeleken. De schrijver vergelijkt scholen, geen groepen binnen de school.",
+    "Klopt: de eigen situatie wordt met een gelijkende situatie vergeleken."
+   ],
+   "uh": "Welke twee situaties?",
+   "ctx": "Standpunt: \"Onze school moet een telefoonverbod invoeren.\" Argument: \"Op de school in de buurgemeente werkt het verbod goed, en die school heeft evenveel leerlingen en dezelfde problemen als wij.\""
+  },
+  {
+   "v": "Waarom is de diëtist hier een autoriteit?",
+   "o": [
+    "hij werkt in een ziekenhuis",
+    "hij is een erkend deskundige",
+    "hij heeft de schrijver geholpen",
+    "hij is de enige die iets zegt"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 5,
+   "u": "Autoriteit: deskundig en betrouwbaar.",
+   "uo": [
+    "Koos je \"hij werkt in een ziekenhuis\"? Dan denk je dat de werkplek autoriteit geeft. Het gaat om deskundigheid, niet om de plaats.",
+    "Klopt: een deskundige bron onderbouwt het standpunt.",
+    "Koos je \"hij heeft de schrijver geholpen\"? Dan denk je dat hulp aan de schrijver autoriteit geeft. Het gaat om deskundigheid, niet om een band met de schrijver.",
+    "Koos je \"hij is de enige die iets zegt\"? Dan denk je dat het aantal sprekers autoriteit geeft. Het gaat om deskundigheid, niet om hoeveel mensen het zeggen."
+   ],
+   "uh": "Waarom luister je naar hem?",
+   "ctx": "Standpunt: \"Je moet minder suiker eten.\" Argument: \"Volgens de diëtist van het ziekenhuis, een erkend deskundige op het gebied van voeding, is te veel suiker slecht voor je gezondheid.\""
+  },
+  {
+   "v": "Welk schema gebruikt de schrijver bij de drie winkeliers?",
+   "o": [
+    "voorbeelden",
+    "autoriteit, want winkeliers weten het beste",
+    "vergelijking, want ze zeggen allemaal hetzelfde",
+    "oorzaak en gevolg, want hun omzet daalt"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 3,
+   "u": "Voorbeelden: enkele gevallen ondersteunen een algemene bewering.",
+   "uo": [
+    "Klopt: drie gevallen onderbouwen de bewering dat de winkels klanten verliezen.",
+    "Koos je \"autoriteit, want winkeliers weten het beste\"? Dan denk je dat winkeliers autoriteiten zijn. Ze worden genoemd als gevallen, niet als deskundige bron.",
+    "Koos je \"vergelijking, want ze zeggen allemaal hetzelfde\"? Dan denk je dat de winkeliers worden vergeleken. Ze zijn voorbeelden van hetzelfde verschijnsel, geen vergelijkbare situatie.",
+    "Koos je \"oorzaak en gevolg, want hun omzet daalt\"? Dan denk je dat de omzet een gevolg is. De winkeliers zijn voorbeelden, de nadruk ligt op het aantal gevallen."
+   ],
+   "uh": "Hoeveel gevallen en waarvoor?",
+   "ctx": "Het nieuwe parkeerbeleid werkt niet. Het beleid werd twee jaar geleden ingevoerd, na een lange discussie in de gemeenteraad. Voorstanders zeiden toen dat het centrum er aantrekkelijker door zou worden. Sinds de invoering komen er minder klanten naar de winkels in het centrum. Een winkelier vertelt dat zijn omzet is gedaald, een tweede zegt hetzelfde en een derde ook. Het beleid lijkt sterk op het beleid van de buurstad, waar de winkelstraat inmiddels leegstaat. De wethouder zegt dat het beleid een succes is, maar zijn eigen partij heeft het beleid bedacht. Een parkeerbeleid dat winkelstraten leegmaakt, is geen goed beleid."
+  },
+  {
+   "v": "Waarom is de buurstad in tekst B geen autoriteit?",
+   "o": [
+    "de buurstad is een deskundige bron over parkeren",
+    "de buurstad is een van de voorbeelden van het beleid",
+    "de buurstad is de oorzaak van het leegstaan",
+    "de buurstad is een gelijkende situatie"
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 4,
+   "u": "Vergelijking: een gelijkende situatie onderbouwt het standpunt.",
+   "uo": [
+    "Koos je \"de buurstad is een deskundige bron over parkeren\"? Dan denk je dat de buurstad als deskundige wordt aangehaald. Ze wordt niet geciteerd, maar naast het eigen beleid gelegd.",
+    "Koos je \"de buurstad is een van de voorbeelden van het beleid\"? Dan denk je dat de buurstad één van de voorbeelden is. Ze is een vergelijkbare situatie, en dat is een vergelijking.",
+    "Koos je \"de buurstad is de oorzaak van het leegstaan\"? Dan denk je dat de buurstad de leegstand veroorzaakt. De schrijver vergelijkt twee steden, en geeft geen oorzaak.",
+    "Klopt: het beleid wordt vergeleken met dat van de buurstad, niet geciteerd."
+   ],
+   "uh": "Met welke situatie vergelijkt hij?",
+   "ctx": "Het nieuwe parkeerbeleid werkt niet. Het beleid werd twee jaar geleden ingevoerd, na een lange discussie in de gemeenteraad. Voorstanders zeiden toen dat het centrum er aantrekkelijker door zou worden. Sinds de invoering komen er minder klanten naar de winkels in het centrum. Een winkelier vertelt dat zijn omzet is gedaald, een tweede zegt hetzelfde en een derde ook. Het beleid lijkt sterk op het beleid van de buurstad, waar de winkelstraat inmiddels leegstaat. De wethouder zegt dat het beleid een succes is, maar zijn eigen partij heeft het beleid bedacht. Een parkeerbeleid dat winkelstraten leegmaakt, is geen goed beleid."
+  },
+  {
+   "v": "Welk schema gebruikt de schrijver bij de uitspraak van de wethouder?",
+   "o": [
+    "voorbeeld, want de wethouder is een persoon",
+    "oorzaak en gevolg, want het beleid is een succes",
+    "autoriteit",
+    "vergelijking, want zijn partij bedacht het"
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 5,
+   "u": "Autoriteit: een beroep op de uitspraak van een bron.",
+   "uo": [
+    "Koos je \"voorbeeld, want de wethouder is een persoon\"? Dan denk je dat de wethouder een voorbeeld is. Hij wordt als bron aangehaald, en dat is autoriteit.",
+    "Koos je \"oorzaak en gevolg, want het beleid is een succes\"? Dan denk je dat er een gevolg wordt genoemd. De wethouder wordt aangehaald, en dat is een beroep op een bron.",
+    "Klopt: de wethouder wordt aangehaald, maar zijn bron is niet onafhankelijk.",
+    "Koos je \"vergelijking, want zijn partij bedacht het\"? Dan denk je dat zijn partij wordt vergeleken. De partij wordt genoemd als belang, niet als vergelijking."
+   ],
+   "uh": "Wie wordt aangehaald?",
+   "ctx": "Het nieuwe parkeerbeleid werkt niet. Het beleid werd twee jaar geleden ingevoerd, na een lange discussie in de gemeenteraad. Voorstanders zeiden toen dat het centrum er aantrekkelijker door zou worden. Sinds de invoering komen er minder klanten naar de winkels in het centrum. Een winkelier vertelt dat zijn omzet is gedaald, een tweede zegt hetzelfde en een derde ook. Het beleid lijkt sterk op het beleid van de buurstad, waar de winkelstraat inmiddels leegstaat. De wethouder zegt dat het beleid een succes is, maar zijn eigen partij heeft het beleid bedacht. Een parkeerbeleid dat winkelstraten leegmaakt, is geen goed beleid."
+  },
+  {
+   "v": "Welke uitspraak in tekst B berust op oorzaak en gevolg?",
+   "o": [
+    "een winkelier vertelt dat zijn omzet is gedaald",
+    "het beleid lijkt op dat van de buurstad",
+    "sinds de invoering komen minder klanten",
+    "de wethouder zegt dat het succes is"
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 0,
+   "u": "Oorzaak en gevolg: de invoering leidt tot minder klanten.",
+   "uo": [
+    "Koos je \"een winkelier vertelt dat zijn omzet is gedaald\"? Dan denk je dat dit oorzaak en gevolg is. Het is een voorbeeld, geen oorzaak-gevolgargument.",
+    "Koos je \"het beleid lijkt op dat van de buurstad\"? Dan denk je dat dit oorzaak en gevolg is. Het is een vergelijking, geen oorzaak-gevolgargument.",
+    "Klopt: het beleid wordt als oorzaak van de afname genoemd.",
+    "Koos je \"de wethouder zegt dat het succes is\"? Dan denk je dat dit oorzaak en gevolg is. Het is een beroep op een bron, geen oorzaak-gevolgargument."
+   ],
+   "uh": "Wat leidt tot wat?",
+   "ctx": "Het nieuwe parkeerbeleid werkt niet. Het beleid werd twee jaar geleden ingevoerd, na een lange discussie in de gemeenteraad. Voorstanders zeiden toen dat het centrum er aantrekkelijker door zou worden. Sinds de invoering komen er minder klanten naar de winkels in het centrum. Een winkelier vertelt dat zijn omzet is gedaald, een tweede zegt hetzelfde en een derde ook. Het beleid lijkt sterk op het beleid van de buurstad, waar de winkelstraat inmiddels leegstaat. De wethouder zegt dat het beleid een succes is, maar zijn eigen partij heeft het beleid bedacht. Een parkeerbeleid dat winkelstraten leegmaakt, is geen goed beleid."
+  },
+  {
+   "v": "Welk argumentatieschema gebruikt de leerling?",
+   "o": [
+    "voorbeeld, want de leerling noemt een hond",
+    "autoriteit, want de leerling noemt een ras",
+    "oorzaak en gevolg, want sterk zijn maakt gevaarlijk",
+    "kenmerk of eigenschap"
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 1,
+   "u": "Kenmerk: kenmerken onderbouwen een eigenschap.",
+   "uo": [
+    "Koos je \"voorbeeld, want de leerling noemt een hond\"? Dan denk je dat de hond een voorbeeld is. Er worden kenmerken van het ras genoemd, geen voorbeelden.",
+    "Koos je \"autoriteit, want de leerling noemt een ras\"? Dan denk je dat het ras een autoriteit is. Het ras is geen bron, het levert kenmerken.",
+    "Koos je \"oorzaak en gevolg, want sterk zijn maakt gevaarlijk\"? Dan denk je dat er een oorzaak wordt genoemd. De kenmerken worden gegeven als eigenschap, dus het is het kenmerkschema.",
+    "Klopt: kenmerken van het ras onderbouwen de eigenschap \"gevaarlijk\"."
+   ],
+   "uh": "Welke kenmerken?",
+   "ctx": "Een leerling zegt: \"Mijn hond is gevaarlijk. Het is een rottweiler, en dat ras is groot, sterk en heeft een krachtige beet.\""
+  },
+  {
+   "v": "In welke richting redeneert de schrijver van dit fragment?",
+   "o": [
+    "van gevolg naar oorzaak",
+    "van oorzaak naar gevolg",
+    "er is geen oorzaak-gevolgrelatie",
+    "van kenmerk naar eigenschap"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 0,
+   "u": "Gevolg wijst op een oorzaak.",
+   "uo": [
+    "Klopt: uit de natte straten leidt hij af dat het heeft geregend.",
+    "Koos je \"van oorzaak naar gevolg\"? Dan denk je dat de regen de natte straten voorspelt. De schrijver gaat van natte straten naar regen, dus van gevolg naar oorzaak.",
+    "Koos je \"er is geen oorzaak-gevolgrelatie\"? Dan denk je dat het argument niet over oorzaak gaat. De natte straten worden als gevolg van regen gebruikt, dus het is wel oorzaak en gevolg.",
+    "Koos je \"van kenmerk naar eigenschap\"? Dan denk je dat het kenmerken zijn. Het zijn gevolgen van regen, en geen kenmerken van een object."
+   ],
+   "uh": "Wat zie je, en wat leid je af?",
+   "ctx": "Standpunt: \"Het heeft gisteren geregend.\" Argument: \"De straten zijn nat, er staan plassen en de bladeren glimmen in het park.\""
+  },
+  {
+   "v": "Welke delen noemen het voordeel en het nadeel van het voorstel?",
+   "o": [
+    "voordeel: de gymzaal gaat eerder open; nadeel: de leerlingen zijn wakker",
+    "voordeel: wakkerder leerlingen; nadeel: eerder open en vroeger beginnen",
+    "de schrijver noemt alleen voordelen",
+    "de schrijver noemt alleen nadelen"
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 2,
+   "u": "Voor- en nadelen: wat levert het op, wat kost het?",
+   "uo": [
+    "Koos je \"voordeel: de gymzaal gaat eerder open; nadeel: de...\"? Dan denk je dat voor- en nadelen omgedraaid zijn. De wakkere leerlingen zijn het voordeel, de eerdere opening is het nadeel.",
+    "Klopt: het argument weegt een voordeel tegen nadelen van de actie af.",
+    "Koos je \"de schrijver noemt alleen voordelen\"? Dan denk je dat het argument alleen winst noemt. Er staat echter ook een prijs in, namelijk eerder open en vroeger beginnen.",
+    "Koos je \"de schrijver noemt alleen nadelen\"? Dan denk je dat het argument alleen kosten noemt. Er staat echter ook een winst in, namelijk dat de leerlingen wakkerder worden."
+   ],
+   "uh": "Wat is winst, wat is last?",
+   "ctx": "Standpunt: \"We moeten de gymles naar de ochtend verplaatsen.\" Argument: \"Leerlingen zijn dan wakkerder in de rest van de dag, maar de gymzaal moet dan eerder open en de docent moet vroeger beginnen.\""
+  },
+  {
+   "v": "Welke vraag helpt het best om een voorbeeldschema te herkennen?",
+   "o": [
+    "wordt er een deskundige aangehaald?",
+    "worden twee situaties naast elkaar gelegd?",
+    "wordt er een gevolg van een oorzaak genoemd?",
+    "worden enkele gevallen genoemd?"
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 3,
+   "u": "Voorbeelden: enkele gevallen ondersteunen een algemeen standpunt.",
+   "uo": [
+    "Koos je \"wordt er een deskundige aangehaald?\"? Dan denk je dat een aangehaalde deskundige op voorbeelden wijst. Dat is het kenmerk van autoriteit, voorbeelden herken je aan afzonderlijke gevallen.",
+    "Koos je \"worden twee situaties naast elkaar gelegd?\"? Dan denk je dat twee naast elkaar gelegde situaties voorbeelden zijn. Dat doet de vergelijking, bij voorbeelden gaat het om losse gevallen.",
+    "Koos je \"wordt er een gevolg van een oorzaak genoemd?\"? Dan denk je dat een gevolg uit een oorzaak op voorbeelden wijst. Dat hoort bij oorzaak en gevolg, bij voorbeelden zijn het gevallen.",
+    "Klopt: dat is het kenmerk van het voorbeeldschema."
+   ],
+   "uh": "Gaat het om gevallen?",
+   "ctx": "Standpunt: \"Veel scholieren hebben last van stress.\" Argument: \"Anna, Bram en Chloë uit mijn klas slapen slecht door de proefwerken, en een jongen uit 4 vwo kan er niet meer van eten.\""
+  },
+  {
+   "v": "Waarom is het beroep op de schoolarts in tekst A een beroep op autoriteit?",
+   "o": [
+    "de arts is een deskundige",
+    "omdat de arts al twintig jaar op school werkt",
+    "omdat de arts de enige is die iets zegt",
+    "omdat de arts gelijk heeft in zijn oordeel"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 5,
+   "u": "Autoriteit: een deskundige bron als reden.",
+   "uo": [
+    "Klopt: een deskundige bron onderbouwt het standpunt.",
+    "Koos je \"omdat de arts al twintig jaar op school werkt\"? Dan denk je dat de werkduur autoriteit maakt. Het gaat om deskundigheid, niet om de duur van het werk.",
+    "Koos je \"omdat de arts de enige is die iets zegt\"? Dan denk je dat uniek zijn autoriteit geeft. Het gaat om deskundigheid, niet om het aantal sprekers.",
+    "Koos je \"omdat de arts gelijk heeft in zijn oordeel\"? Dan denk je dat gelijk hebben autoriteit maakt. Het gaat om de bron, en gelijk hebben is een kwestie van controle."
+   ],
+   "uh": "Waarom is de arts relevant?",
+   "ctx": "Onze school moet een tweede kantine openen. Dan zijn de rijen korter en eten leerlingen sneller, al kost het wat extra personeel. Volgens de schoolarts, die al twintig jaar op onze school werkt, is een rustige pauze goed voor de concentratie. De school in de buurgemeente heeft een tweede kantine geopend en daar zijn de pauzes sindsdien veel rustiger geworden. Bovendien is onze kantine nu zo druk dat leerlingen vaak niet aan eten toekomen: vorige week zijn er twee leerlingen flauwgevallen. Een tweede kantine zorgt voor meer ruimte en dus voor rust in de pauze."
+  },
+  {
+   "v": "Waaraan moet de buurgemeente voldoen om de vergelijking te laten werken?",
+   "o": [
+    "de andere gemeente moet dichtbij liggen",
+    "de situaties lijken relevant op elkaar",
+    "de andere school moet dezelfde naam hebben",
+    "de andere gemeente moet groter zijn dan wij"
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 4,
+   "u": "Vergelijking: relevante overeenkomsten.",
+   "uo": [
+    "Koos je \"de andere gemeente moet dichtbij liggen\"? Dan denk je dat afstand telt. Het gaat om relevante overeenkomsten, niet om de afstand.",
+    "Klopt: de vergelijking werkt als de situaties relevant overeenkomen.",
+    "Koos je \"de andere school moet dezelfde naam hebben\"? Dan denk je dat de naam telt. Het gaat om de situatie, niet om de naam.",
+    "Koos je \"de andere gemeente moet groter zijn dan wij\"? Dan denk je dat groter beter is. De situaties moeten op relevante punten lijken, groter zijn is niet nodig."
+   ],
+   "uh": "Lijken de situaties op elkaar?",
+   "ctx": "Onze school moet een tweede kantine openen. Dan zijn de rijen korter en eten leerlingen sneller, al kost het wat extra personeel. Volgens de schoolarts, die al twintig jaar op onze school werkt, is een rustige pauze goed voor de concentratie. De school in de buurgemeente heeft een tweede kantine geopend en daar zijn de pauzes sindsdien veel rustiger geworden. Bovendien is onze kantine nu zo druk dat leerlingen vaak niet aan eten toekomen: vorige week zijn er twee leerlingen flauwgevallen. Een tweede kantine zorgt voor meer ruimte en dus voor rust in de pauze."
+  }
+ ],
+ "oe": [
+  {
+   "bron": "Examenstijl",
+   "ctx": "Standpunt: \"Onze school moet een telefoonverbod invoeren.\" Argument: \"Op de school in de buurgemeente werkt het verbod goed, en die school heeft evenveel leerlingen en dezelfde problemen als wij.\"",
+   "v": "Benoem het schema en leg uit welke twee situaties worden vergeleken.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Vergelijking (1p). De eigen school en de school in de buurgemeente (1p). Ze hebben evenveel leerlingen en dezelfde problemen (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Standpunt: \"We moeten de gymles naar de ochtend verplaatsen.\" Argument: \"Leerlingen zijn dan wakkerder in de rest van de dag, maar de gymzaal moet dan eerder open en de docent moet vroeger beginnen.\"",
+   "v": "Benoem het schema en noem het voordeel en het nadeel van het voorstel.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Voor- en nadelen (1p). Voordeel: leerlingen zijn wakkerder (1p). Nadeel: de gymzaal moet eerder open en de docent moet vroeger beginnen (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Onze school moet een tweede kantine openen. Dan zijn de rijen korter en eten leerlingen sneller, al kost het wat extra personeel. Volgens de schoolarts, die al twintig jaar op onze school werkt, is een rustige pauze goed voor de concentratie. De school in de buurgemeente heeft een tweede kantine geopend en daar zijn de pauzes sindsdien veel rustiger geworden. Bovendien is onze kantine nu zo druk dat leerlingen vaak niet aan eten toekomen: vorige week zijn er twee leerlingen flauwgevallen. Een tweede kantine zorgt voor meer ruimte en dus voor rust in de pauze.",
+   "v": "Noem het schema van elk van deze vier argumenten in tekst A: de kortere rijen, de schoolarts, de buurgemeente en de flauwgevallen leerlingen.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Kortere rijen met extra personeel is voor- en nadelen (1p), de schoolarts is autoriteit (1p), de buurgemeente is vergelijking (1p), de flauwgevallen leerlingen zijn voorbeelden (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Standpunt: \"Veel scholieren hebben last van stress.\" Argument: \"Anna, Bram en Chloë uit mijn klas slapen slecht door de proefwerken, en een jongen uit 4 vwo kan er niet meer van eten.\"",
+   "v": "Welk schema gebruikt de schrijver en welke voorbeelden noemt hij?",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Voorbeelden (1p). Anna, Bram en Chloë slapen slecht door proefwerken (1p), en een jongen uit 4 vwo kan er niet van eten (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Het nieuwe parkeerbeleid werkt niet. Het beleid werd twee jaar geleden ingevoerd, na een lange discussie in de gemeenteraad. Voorstanders zeiden toen dat het centrum er aantrekkelijker door zou worden. Sinds de invoering komen er minder klanten naar de winkels in het centrum. Een winkelier vertelt dat zijn omzet is gedaald, een tweede zegt hetzelfde en een derde ook. Het beleid lijkt sterk op het beleid van de buurstad, waar de winkelstraat inmiddels leegstaat. De wethouder zegt dat het beleid een succes is, maar zijn eigen partij heeft het beleid bedacht. Een parkeerbeleid dat winkelstraten leegmaakt, is geen goed beleid.",
+   "v": "Noem twee schema's die de schrijver in tekst B gebruikt en geef bij elk het bijbehorende argument.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Voorbeelden: drie winkeliers met dalende omzet (1p). Vergelijking: het beleid van de buurstad met een leeg winkelcentrum (1p). Eventueel autoriteit: de wethouder (1p)."
+  }
+ ]
+}
