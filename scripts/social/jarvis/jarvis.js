@@ -261,6 +261,42 @@
     <li><span class="n num" style="color:var(--teal)">${nf((APP.herkomst?.zestigDagen?.ChatGPT || 0) + (APP.herkomst?.zestigDagen?.['Andere AI'] || 0))}</span><span>bezoeken via AI-assistenten in 60 dagen</span></li>`;
   $('#todo').innerHTML = (A.acties || []).map((a, i) => `<label><input type="checkbox" id="actie-${i}" data-k="${esc(a.tekst.slice(0, 40))}"><span>${md(a.tekst)}${a.link ? ` <a href="${esc(a.link)}" target="_blank" rel="noopener">${esc(a.linktekst || 'open')} →</a>` : ''}</span></label>`).join('');
   document.querySelectorAll('#todo input').forEach(cb => { const k = 'todo:' + S.periode.tot + ':' + cb.dataset.k; cb.checked = store.get(k) === 1; cb.addEventListener('change', () => store.set(k, cb.checked ? 1 : 0)); });
+  // ── Feedback ──────────────────────────────────────────────────────────
+  (function () {
+    const F = APP.feedback30 || APP.feedback; if (!F) { $('#feedback').hidden = true; return; }
+    const z = F.zoekvragen || {};
+    $('#fb-zoek-sum').textContent = `${nf(z.totaal || 0)} zoekopdrachten in Vraag het Slagio (30 dagen). Zonder antwoord, op aantal leerlingen:`;
+    $('#fb-zoek').innerHTML = (z.zonderAntwoord || []).slice(0, 8).map(q => `<li><span class="n num">${q.app}</span><span>${esc(q.q)}</span></li>`).join('') || '<li>Alles leverde iets op.</li>';
+    const vm = F.vraagMeting || {};
+    $('#fb-vraag-sum').textContent = `${(F.gemeld || []).length} gemeld door leerlingen. ${vm.vragenMetGenoegData ? `${vm.vragenMetGenoegData} vragen hebben genoeg antwoorden om te beoordelen;` : 'Per-vraag-metingen lopen sinds deze week;'} verdacht = 75% of meer fout bij minstens 4 leerlingen.`;
+    $('#fb-vraag').innerHTML = [...(F.gemeld || []).map(g => `<li><span class="n num">${g.n}×</span><span><b>Gemeld</b> · ${esc(g.vak || '')} ${esc(g.domein || '')}<br>${esc(g.vraag)}${g.gevonden ? `<br><span class="sub">In de data juist: ${esc(g.gevonden.juist)}</span>` : ''}</span></li>`),
+      ...(F.verdacht || []).map(v => `<li><span class="n num">${v.foutPct}%</span><span><b>Fout bij ${v.leerlingen} leerlingen</b>${v.vraag ? ` · ${esc(v.vraag.niveau)} ${esc(v.vraag.vak)} ${esc(v.vraag.domein)}<br>${esc(v.vraag.v)}<br><span class="sub">In de data juist: ${esc(v.vraag.juist)}</span>` : ''}</span></li>`)].join('') || '<li>Niets gemeld of verdacht.</li>';
+    $('#fb-dom').innerHTML = (F.domeinen?.moeilijkst || []).slice(0, 6).map(d => `<li><span class="n num">${d.gem}%</span><span>${esc((d.niveau || '').toUpperCase())} ${esc(d.vak)} · domein ${esc(d.domein)} <span class="sub">(${d.n} quizzen, ${d.app} leerlingen)</span></span></li>`).join('') || '<li>Nog te weinig quizzen.</li>';
+    const be = F.beoordeling || {}, af = F.afhakers || {};
+    $('#fb-rest').innerHTML = `<li><span class="n num">${be.gem ?? '–'}</span><span>gemiddelde beoordeling (${be.aantal || 0} keer)${(be.laag || []).length ? `; laag: ${esc(be.laag.map(l => l.waar + ' ' + l.gem).join(', '))}` : ''}</span></li>
+      <li><span class="n num">${af.aantal || 0}</span><span>quizzen afgebroken tegen ${af.voltooid || 0} afgemaakt${(af.perVak || []).length ? `; vooral ${esc(af.perVak.slice(0, 3).map(x => x[0] + ' ' + x[1]).join(', '))}` : ''}</span></li>
+      ${(be.teksten || []).map(t => `<li><span class="n">“</span><span>${esc(t)}</span></li>`).join('')}`;
+  })();
+
+  // ── Schermcontrole ────────────────────────────────────────────────────
+  (function () {
+    const R = D.schermen; if (!R) { $('#sch-sum').textContent = 'Deze week niet gedraaid (scripts/social/schermen.mjs).'; return; }
+    const prob = R.schermen.filter(s => s.fouten.length || s.horizontaalScrollen || s.uitsteken.length || s.kapottePlaatjes.length || s.raar.length);
+    $('#sch-sum').textContent = `${R.schermen.length} schermen bekeken, ${prob.length} met een probleem. Volledige quiz: ${R.quiz ? (R.quiz.gelukt ? `gelukt (${R.quiz.beantwoord} vragen)` : 'MISLUKT') : 'niet gedraaid'}.`;
+    $('#sch').innerHTML = prob.map(s => `<li><span class="n">✗</span><span><b>${esc(s.weergave)} · ${esc(s.naam)}</b><br><span class="sub">${esc([...s.fouten, s.horizontaalScrollen ? 'scrollt horizontaal' : '', ...s.uitsteken.map(x => 'steekt uit: ' + x), ...s.kapottePlaatjes.map(x => 'plaatje kapot: ' + x), ...s.raar].filter(Boolean).join(' · '))}</span></span></li>`).join('') || '<li><span class="n" style="color:var(--green)">✓</span><span>Geen fouten, uitstekende elementen of kapotte plaatjes gevonden.</span></li>';
+  })();
+
+  // ── Backlog: opdrachten voor de bouwer ─────────────────────────────────
+  (function () {
+    const B = (G.backlog || []);
+    const open = B.filter(b => b.status === 'open' || b.status === 'bezig').sort((a, b) => a.prioriteit - b.prioriteit);
+    const klaar = B.filter(b => b.status === 'gedaan').sort((a, b) => String(b.gedaan).localeCompare(String(a.gedaan))).slice(0, 5);
+    $('#bl-sum').textContent = B.length ? `${open.length} open, ${B.filter(b => b.status === 'gedaan').length} afgerond. Zeg tegen Claude "pak de backlog" om ze uit te laten voeren.` : 'Nog geen opdrachten.';
+    const kaart = b => `<div class="bl-item" data-s="${esc(b.status)}"><div class="bl-kop"><b>${esc(b.id)}</b><span class="bl-tag">P${b.prioriteit}</span><span class="bl-tag">${esc(b.soort || '')}</span><span class="bl-tag">${esc(b.grootte || '')}</span>${b.status === 'gedaan' ? `<span class="bl-tag ok">gedaan ${esc(b.gedaan || '')}${b.commit ? ' · ' + esc(b.commit) : ''}</span>` : ''}</div>
+      <div class="bl-titel">${esc(b.titel)}</div>${b.status !== 'gedaan' ? `<p class="sub">${md(b.waarom || '')}${b.bewijs ? `<br><i>Bewijs:</i> ${md(b.bewijs)}` : ''}${b.voorstel ? `<br><i>Voorstel:</i> ${md(b.voorstel)}` : ''}</p>` : ''}</div>`;
+    $('#bl').innerHTML = open.map(kaart).join('') + (klaar.length ? `<h3 class="chart-title" style="margin-top:16px">Onlangs afgerond</h3>${klaar.map(kaart).join('')}` : '');
+  })();
+
   $('#seizoen').textContent = APP.seizoen ? `${APP.seizoen.dagenTotCE} dagen tot de eerste centrale examens. ${APP.seizoen.fase}` : '';
   $('#gemeten').textContent = 'Gemeten ' + new Date(S.gemeten).toLocaleString('nl-NL', { timeZone: 'Europe/Amsterdam', dateStyle: 'medium', timeStyle: 'short' });
 
@@ -337,7 +373,7 @@
   // ── Commandopalet (⌘K) ────────────────────────────────────────────────
   const VRAGEN = ['Wat is het belangrijkste dat ik deze week moet doen?', 'Waarom komen leerlingen niet terug, en wat helpt?', 'Welke bron levert de meest betrokken leerlingen?',
     'Hoe realistisch is mijn doel van 250 per week?', 'Wat zie je in de trechter?', 'Welke post van deze week is het zwakst en waarom?'];
-  const SECT = [['overzicht', 'Overzicht'], ['denkwerk', 'Denkwerk'], ['groei', 'Groei & prognose'], ['trechter', 'Trechter'], ['terugkeer', 'Terugkeer'], ['herkomst', 'Herkomst'], ['content', 'Content'], ['geheugen', 'Geheugen'], ['gezondheid', 'Gezondheid'], ['kansen', 'Kansen'], ['acties', 'Acties']];
+  const SECT = [['overzicht', 'Overzicht'], ['denkwerk', 'Denkwerk'], ['groei', 'Groei & prognose'], ['trechter', 'Trechter'], ['terugkeer', 'Terugkeer'], ['herkomst', 'Herkomst'], ['content', 'Content'], ['geheugen', 'Geheugen'], ['gezondheid', 'Gezondheid'], ['feedback', 'Feedback'], ['schermen', 'Schermcontrole'], ['backlog', 'Opdrachten'], ['kansen', 'Kansen'], ['acties', 'Acties']];
   const pal = $('#palette'), palIn = $('#pal-in'), palList = $('#pal-list');
   let palSel = 0, palItems = [];
   function palRender() {
@@ -370,7 +406,7 @@
     periode: S.periode, deze: { ...deze, functies: deze.functies, vakken: deze.vakken }, vorige: { betrokken: vorige.betrokken, actief: vorige.actief, nieuw: vorige.nieuw, oefensessies: vorige.oefensessies, fouten: vorige.fouten },
     terugkeerBetrokken: APP.terugkeerBetrokken, dagelijks: dag.slice(-60).map(r => [r.datum, r.actief, r.betrokken, r.nieuw, r.oefensessies]),
     afwijkingen: APP.afwijkingen, trechter: APP.trechter, herkomst: APP.herkomst, cohorten: APP.cohorten, prognose: APP.prognose, seizoen: APP.seizoen, doelen: APP.doelen,
-    signalen: APP.signalen, topFouten: APP.topFouten, nieuwsteVersie: APP.nieuwsteVersie, terugkeerProfiel: APP.terugkeerProfiel, functiesPerDag: APP.functiesPerDag, seo: S.seo, instagram: S.instagram, content: D.content ? D.content.posts.map(p => ({ id: p.id, format: p.format, info: p.info })) : null,
+    signalen: APP.signalen, topFouten: APP.topFouten, nieuwsteVersie: APP.nieuwsteVersie, terugkeerProfiel: APP.terugkeerProfiel, functiesPerDag: APP.functiesPerDag, feedback: APP.feedback30, schermen: D.schermen ? { samenvatting: D.schermen.samenvatting, quiz: D.schermen.quiz, problemen: D.schermen.schermen.filter(s => s.fouten.length || s.horizontaalScrollen || s.uitsteken.length || s.kapottePlaatjes.length || s.raar.length) } : null, backlog: (G.backlog || []).filter(b => b.status !== 'gedaan').slice(0, 20), seo: S.seo, instagram: S.instagram, content: D.content ? D.content.posts.map(p => ({ id: p.id, format: p.format, info: p.info })) : null,
     jarvisAnalyse: { kop: A.kop, briefing: A.briefing, status: A.status, aandacht: A.aandacht, denkwerk: A.denkwerk, acties: A.acties, review: A.content?.review }, geheugen: G,
   });
 

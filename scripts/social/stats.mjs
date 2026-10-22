@@ -15,6 +15,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import * as I from './lib/inzichten.mjs';
+import { feedback } from './lib/feedback.mjs';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../..');
 const DAG = 864e5, NU = Date.now();
@@ -133,7 +134,8 @@ async function supabaseStats() {
   return { deze, vorige, terugkeer: terug, terugkeerBetrokken: terugBetrokken, uitgesloten: UITSLUITEN.length, dagelijks, topFouten,
     afwijkingen: afw, trechter: { deze: trecht, vorige: trechtVorige }, herkomst: { deze: bron, vorige: bronVorige, zestigDagen: bron60 },
     cohorten: cohort, prognose: prog, seizoen: seiz, doelen, signalen: sig,
-    terugkeerProfiel: profiel, functiesPerDag: perDag, nieuwsteVersie };
+    terugkeerProfiel: profiel, functiesPerDag: perDag, nieuwsteVersie,
+    feedback: feedback(ev, { van: NU - 7 * DAG, tot: NU }), feedback30: feedback(ev, { van: NU - 30 * DAG, tot: NU }) };
 }
 
 // ── Instagram ─────────────────────────────────────────────────────────────

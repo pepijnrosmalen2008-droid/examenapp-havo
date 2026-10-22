@@ -4,6 +4,7 @@
 //
 //   --stats    stats.json (stats.mjs)       --analyse  analyse.json (Jarvis/Claude)
 //   --geheugen jarvis-geheugen.json (opt.)  --week     social/weken/<week> (opt.)
+//   --schermen rapport.json van schermen.mjs (opt.)
 //   --out      jarvis.html
 // Ontwerp en gedrag: scripts/social/jarvis/jarvis.css + jarvis.js. Publiceer met
 // capabilities {sample:{}} zodat 'Vraag Jarvis' werkt (zie social/JARVIS.md).
@@ -21,6 +22,9 @@ const lees = f => (f && fs.existsSync(f) ? JSON.parse(fs.readFileSync(f, 'utf8')
 const stats = lees(opt('--stats')), analyse = lees(opt('--analyse')) || {}, geheugen = lees(opt('--geheugen')) || { voorspellingen: [], experimenten: [] };
 if (!stats) { console.error('--stats ontbreekt'); process.exit(1); }
 const WEEK = opt('--week'), OUT = opt('--out') || 'jarvis.html';
+const schermen = lees(opt('--schermen'));
+// Alleen de bevindingen, geen screenshots (die houden de pagina klein; Jarvis bekijkt ze zelf).
+if (schermen) schermen.schermen = schermen.schermen.map(({ bestand, ...x }) => x);
 
 function ffmpeg() { try { execFileSync('ffmpeg', ['-version'], { stdio: 'ignore' }); return 'ffmpeg'; } catch (e) {}
   return execFileSync('python3', ['-c', 'import imageio_ffmpeg;print(imageio_ffmpeg.get_ffmpeg_exe())'], { encoding: 'utf8' }).trim(); }
@@ -41,7 +45,7 @@ if (WEEK && fs.existsSync(path.join(WEEK, 'plan.json'))) {
   }) };
 }
 
-const data = JSON.stringify({ stats, analyse, geheugen, content }).replace(/</g, '\\u003c');
+const data = JSON.stringify({ stats, analyse, geheugen, content, schermen }).replace(/</g, '\\u003c');
 const cfg = lees(path.join(HIER, '../../social/jarvis-config.json')) || {};
 const kennis = JSON.stringify(bouwKennis({ examenDatum: cfg.examenDatum })).replace(/</g, '\\u003c');
 const FONT = fs.readFileSync(path.join(HIER, 'fonts/bricolage.woff2')).toString('base64');
@@ -111,6 +115,18 @@ ${CSS}</style>
   <section id="gezondheid"><div class="sh"><h2>Gezondheid</h2><span class="sub">App-fouten en vindbaarheid</span></div>
     <div class="grid2"><div class="card"><h3 class="chart-title">App-fouten deze week</h3><ul class="list" id="errs" style="margin-top:8px"></ul></div>
       <div class="card"><h3 class="chart-title">Vindbaarheid</h3><ul class="list" id="seo" style="margin-top:8px"></ul></div></div></section>
+
+  <section id="feedback"><div class="sh"><h2>Feedback</h2><span class="sub">Wat leerlingen Slagio vertellen, direct en via hun gedrag</span></div>
+    <div class="grid2"><div class="card"><h3 class="chart-title">Gezocht zonder antwoord</h3><p class="chart-sum" id="fb-zoek-sum"></p><ul class="list" id="fb-zoek"></ul></div>
+      <div class="card"><h3 class="chart-title">Gemelde en verdachte vragen</h3><p class="chart-sum" id="fb-vraag-sum"></p><ul class="list" id="fb-vraag"></ul></div></div>
+    <div class="grid2" style="margin-top:14px"><div class="card"><h3 class="chart-title">Moeilijkste domeinen</h3><p class="chart-sum">Gemiddelde score in de snelle quiz, laatste 30 dagen.</p><ul class="list" id="fb-dom"></ul></div>
+      <div class="card"><h3 class="chart-title">Beoordelingen en afhakers</h3><ul class="list" id="fb-rest"></ul></div></div></section>
+
+  <section id="schermen"><div class="sh"><h2>Schermcontrole</h2><span class="sub">De app automatisch doorgelopen op telefoon, donker, desktop en vmbo</span></div>
+    <div class="card"><p class="chart-sum" id="sch-sum"></p><ul class="list" id="sch"></ul></div></section>
+
+  <section id="backlog"><div class="sh"><h2>Opdrachten voor de bouwer</h2><span class="sub">Wat Jarvis aan Claude doorgeeft. Een commit met [B-nummer] sluit een opdracht vanzelf.</span></div>
+    <div class="card"><p class="chart-sum" id="bl-sum"></p><div id="bl"></div></div></section>
 
   <section id="acties"><div class="sh"><h2>Jouw acties</h2><span class="sub">Afvinken wordt in je browser onthouden</span></div><div class="todo" id="todo"></div></section>
   </main>

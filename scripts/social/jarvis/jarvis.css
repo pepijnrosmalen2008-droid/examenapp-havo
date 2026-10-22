@@ -396,3 +396,12 @@ footer{margin-top:48px;font-size:13px;color:var(--label3);display:flex;justify-c
 .stem-typ button{width:46px;height:46px;border-radius:50%;border:0;background:#ff7a2e;color:#fff;font-size:18px;cursor:pointer}
 body.stem-open{overflow:hidden}
 @media (max-width:560px){.sheet{width:auto}.sheet header span{display:none}.stem-hij{font-size:18px}.kans-tot b{font-size:17px}}
+/* Backlog: opdrachten voor de bouwer */
+.bl-item{padding:12px 0;border-top:1px solid var(--sep)}
+.bl-item:first-child{border-top:0}
+.bl-item[data-s="gedaan"]{opacity:.7}
+.bl-kop{display:flex;flex-wrap:wrap;gap:6px;align-items:center;font-size:13px}
+.bl-tag{padding:2px 8px;border-radius:999px;background:var(--mat3);color:var(--label2);font-size:12px;font-weight:600}
+.bl-tag.ok{color:var(--green)}
+.bl-titel{margin-top:6px;font-weight:600;font-size:15px}
+.bl-item .sub{margin:6px 0 0;font-size:13.5px;line-height:1.5;color:var(--label2)}

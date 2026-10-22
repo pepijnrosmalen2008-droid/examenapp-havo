@@ -1,5 +1,9 @@
 # Jarvis · draaiboek voor de wekelijkse briefing
 
+**Organisatie:** `docs/ORGANISATIE.md`. Pepijn is eigenaar (richting en ontwerp in
+`docs/ONTWERP.md`), jij bent analist en redacteur, Claude is de bouwer. Jij meet,
+oordeelt en schrijft opdrachten; je verandert de app niet zelf.
+
 Jarvis is de wekelijkse Claude-routine (donderdag 10:00). Hij is hoofdredacteur
 én analist: hij leest de content-PR van de fabriek kritisch na, meet hoe Slagio
 het doet en zet alles in één briefing op
@@ -74,13 +78,24 @@ afrekenen.
    PR-commentaar, en open de PR zelf als alleen de branch bestaat. Zonder die
    tools staat je oordeel in de briefing (per post in `content.review`).
 
-4b. **Kleine bugs zelf oplossen (met goedkeuring).** Een fout die je hebt nagegaan,
-   met een duidelijke oorzaak en een fix van hooguit ~20 regels: maak branch
-   `jarvis/fix-<datum>` vanaf main, los hem op, bump de SW-cache, draai
-   `node scripts/smoke.mjs`, push en open een PR (titel "Jarvis: <fout>"). Merge nooit
-   zelf. In de briefing: "fix klaar in PR #N". Twijfel of groter: alleen melden.
+4b. **Feedback van leerlingen verwerken.** In de stats staat `feedback` (7 dagen) en
+   `feedback30` (30 dagen):
+   - `gemeld`: vragen die leerlingen als fout meldden, met het antwoord dat in de data
+     staat. Controleer elke melding inhoudelijk. Klopt de melding: opdracht (P1, content).
+   - `verdacht`: vragen die 75% of meer fout hebben bij minstens 4 leerlingen. Lees de
+     vraag en de opties: fout antwoord in de data, dubbelzinnig, of gewoon moeilijk?
+   - `zoekvragen.zonderAntwoord`: wat leerlingen zochten en niet vonden. Dat is echte
+     vraag naar stof of functies die ontbreken. Groepeer ze en maak er een opdracht van.
+   - `domeinen.moeilijkst`, `beoordeling`, `afhakers`: waar het schuurt.
 
-4c. **Content steekproef.** Nieuwe leerdoel-modules op main sinds vorige week
+4c. **Schermcontrole.** Draai `node scripts/social/schermen.mjs --uit /tmp/jarvis-schermen`.
+   Het script meldt automatisch JS-fouten, horizontaal scrollen, kapotte plaatjes en
+   "undefined" in beeld, en speelt een quiz af. Bekijk daarna zelf (Read) minstens de
+   screenshots van home, vak, quiz-feedback en uitslag, telefoon licht en donker, en
+   toets ze aan `docs/ONTWERP.md` (één Vonk tegelijk, rust, leesbaarheid, contrast,
+   niveaukleur). Afwijking: opdracht met het bestand als bewijs.
+
+4d. **Content steekproef.** Nieuwe leerdoel-modules op main sinds vorige week
    (`git log origin/main --since="8 days ago" --oneline | grep "Content v2"`): draai
    `node scripts/validate-goldstandard.mjs` en lees per module drie willekeurige vragen
    met uitleg (uit `content-pending/<niveau>-<vak>-<id>.json`). Klopt het antwoord,
@@ -104,6 +119,15 @@ afrekenen.
    gedachtestreepjes, geen hype. Eerst het belangrijkste. Maximaal drie
    alinea's briefing, maximaal vijf aandachtspunten, maximaal vijf acties.
 
+5b. **Opdrachten voor de bouwer.** Jij past de app niet aan; Claude (de bouwer) doet dat.
+   Zet alles wat gebouwd, gerepareerd of geschreven moet worden in `opdrachten` in
+   analyse.json (schema hieronder): concreet, met bewijs en een voorstel, zodat Claude
+   het zonder navraag kan uitvoeren. Hooguit vijf nieuwe per week; P1 alleen voor wat
+   leerlingen nu schaadt (fout antwoord, kapotte flow). Opdrachten die vervallen zijn:
+   `backlogUpdates: [{ "id": "B-3", "status": "vervallen", "notitie": "…" }]`.
+   Afgeronde opdrachten (commit met `[B-n]` op main) sluiten vanzelf bij `--evalueer`;
+   noem ze kort in de briefing. Zie `docs/ORGANISATIE.md` voor hoe jullie samenwerken.
+
 6. **Onthouden.** Leg de voorspelling en het experiment vast en push het geheugen:
    ```bash
    node scripts/social/geheugen.mjs --onthoud --stats /tmp/stats.json --analyse /tmp/analyse.json --bestand /tmp/geheugen.json
@@ -116,7 +140,8 @@ afrekenen.
 7. **Rapport bouwen en publiceren.**
    ```bash
    node scripts/social/rapport.mjs --stats /tmp/stats.json --analyse /tmp/analyse.json \
-     --geheugen /tmp/geheugen.json --week social/weken/<week> --out /tmp/jarvis.html
+     --geheugen /tmp/geheugen.json --schermen /tmp/jarvis-schermen/rapport.json \
+     --week social/weken/<week> --out /tmp/jarvis.html
    ```
    (`--week` weglaten als er geen content-week is.) Lees daarna het artifact met
    de Artifact-tool (`action: read`, url hierboven) en publiceer
@@ -152,6 +177,10 @@ afrekenen.
     "knoptekst": "alleen als er geen PR is"
   },
   "acties": [{ "tekst": "…", "link": "https://…", "linktekst": "…" }],
+  "opdrachten": [{ "titel": "Wat Claude moet doen, in één zin", "soort": "bug|content|ux|groei|seo|data", "prioriteit": 1,
+                   "grootte": "klein|middel|groot", "waarom": "wat het oplevert", "bewijs": "cijfer, melding, screenshot, regel code",
+                   "voorstel": "hoe, zo concreet mogelijk" }],
+  "backlogUpdates": [{ "id": "B-3", "status": "vervallen", "notitie": "…" }],
   "volgende": "do 9 okt, 10:00"
 }
 ```

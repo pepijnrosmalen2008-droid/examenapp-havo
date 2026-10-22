@@ -246,6 +246,10 @@ ${J.compact ? J.compact() : '{}'}`;
         inputSchema: { type: 'object', properties: { niveau: niv, vak: { type: 'string' } } },
         execute: i => { stap('Inhoudskwaliteit bekeken'); const Q = K.kwaliteit || {}; const pv = (Q.perVak || []).filter(t => (!i.niveau || t.niveau === i.niveau) && (!i.vak || t.vak.toLowerCase().includes(String(i.vak).toLowerCase())));
           return { totaal: Q.totaal, uitleg: Q.uitleg, perVak: pv.sort((a, b) => a.metUitlegPct - b.metUitlegPct).slice(0, 25), voorbeelden: (Q.voorbeelden || []).slice(0, 8) }; } },
+      { name: 'feedback', description: 'Wat leerlingen de laatste 30 dagen lieten zien: gemelde en verdachte vragen (met het antwoord in de data), zoekopdrachten zonder antwoord, moeilijkste domeinen, beoordelingen en afhakers.',
+        inputSchema: { type: 'object', properties: {} }, execute: () => { stap('Feedback van leerlingen bekeken'); return J.APP?.feedback30 || J.APP?.feedback || { leeg: true }; } },
+      { name: 'backlog', description: 'De opdrachten die Jarvis aan de bouwer (Claude) heeft gegeven, met status. Gebruik dit bij vragen over wat er gebouwd wordt of moet worden.',
+        inputSchema: { type: 'object', properties: { alles: { type: 'boolean' } } }, execute: i => { stap('Backlog bekeken'); return (J.G?.backlog || []).filter(b => i.alles || b.status !== 'gedaan'); } },
       { name: 'seoAudit', description: 'Zonder pad: de SEO-score, problemen per soort en de slechtste pagina’s. Met pad: title, description, h1, woorden en problemen van één pagina.',
         inputSchema: { type: 'object', properties: { pad: { type: 'string' }, probleem: { type: 'string', description: 'filter, bv. "verouderd" of "dunne"' } } },
         execute: i => { stap(i.pad ? `Pagina bekeken · ${i.pad}` : 'SEO-audit bekeken'); return seoTool(i); } },

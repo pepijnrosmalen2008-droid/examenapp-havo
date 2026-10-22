@@ -1498,7 +1498,10 @@ function toonRes(){
     window._coinFlyN=_cw>0?_cw:0;
   }}catch(e){}
   // Track quiz voltooid
-  try{_flushQBatch();trackEvent('quiz_completed',{vak:ST.vak?.naam,vak_id:ST.vak?.id,domein_id:ST.domein?.id,mode:ST.mode,score:sc,totaal:tot,pct:Math.round(pct*100)});}catch(e){}
+  try{_flushQBatch();const _qh=(typeof _qHash==='function')?_qHash:null;const _gest=[],_fout=[];
+    // Welke vragen gesteld en fout (als korte hash van de vraagtekst): Jarvis vindt zo vragen die bijna iedereen fout heeft.
+    if(_qh)(ST.antwrd||[]).slice(0,20).forEach(a=>{const q=ST.vragen&&ST.vragen[a.vi];if(!q||!q.v)return;const h=_qh(q.v);_gest.push(h);if(!(a.pts>0))_fout.push(h);});
+    trackEvent('quiz_completed',{vak:ST.vak?.naam,vak_id:ST.vak?.id,domein_id:ST.domein?.id,mode:ST.mode,score:sc,totaal:tot,pct:Math.round(pct*100),vq:_gest.join(','),fq:_fout.join(',')});}catch(e){}
   // Slagio Plus leert van ÁLLE oefening (snelle quiz + oud examen), niet alleen proefexamens.
   try{
     if(typeof plusRecordQuiz==='function' && (ST.mode==='snel'||ST.mode==='oud') && !ST.isFoutenboek && tot>0){

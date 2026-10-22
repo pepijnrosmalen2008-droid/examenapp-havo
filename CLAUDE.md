@@ -12,6 +12,10 @@ Slagio (slagio.nl) is a free Dutch HAVO/VWO/VMBO exam preparation PWA. It is a *
 - **Deployment**: `git push origin main` → auto-deploys via GitHub Pages
 - **Default workflow**: push directly to `main` - no build, no feature branches, no PRs. (Automated/agent sessions may be pinned to a feature branch; follow whatever branch the task specifies.)
 
+## Organisatie (lees bij elke sessie)
+
+Slagio draait met drie rollen, zie `docs/ORGANISATIE.md`: **Pepijn** (eigenaar: richting, ontwerp, akkoord), **Jarvis** (wekelijkse analist: briefing + opdrachten) en **Claude** (bouwer: jij). Ontwerp en stijl staan in **`docs/ONTWERP.md`** (van Pepijn, leidend; nieuwe richtlijn van Pepijn → eerst daar vastleggen, dan bouwen). Jarvis zet opdrachten in een backlog: `node scripts/social/backlog.mjs` toont de open opdrachten. "pak de backlog" = voer ze uit op prioriteit; zet `[B-n]` in het commitbericht, dan sluit Jarvis de opdracht vanzelf. Jarvis zelf: `social/JARVIS.md` (draaiboek), `social/jarvis-brein.md` (vakkennis), `scripts/social/` (stats, feedback, schermcontrole, rapport); de opdrachttekst van zijn geplande taak verwijst naar het draaiboek, dus wijzigingen aan Jarvis gaan via de repo.
+
 ## Architecture (IMPORTANT - read this)
 
 The app is **no longer a single inline file**. `index.html` is now a thin shell (~2400 lines) that contains only the HTML screens plus SEO metadata (`<script type="application/ld+json">` blocks and a `<noscript>` SEO body). **All CSS lives in `styles.css`** and **all JS lives in separate module files**, loaded in order at the bottom of `index.html` (~line 1961+):

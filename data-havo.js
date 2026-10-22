@@ -823,7 +823,7 @@ var VAKKEN = [
        "argumentatie waarin een argument zelf weer wordt onderbouwd",
        "waar een tekst over gaat, zonder wat de schrijver ervan beweert",
        "de mate waarin een argument echt iets zegt over het standpunt",
-       "een argument dat het standpunt steunt met concrete voorbeelden"
+       "een bewering die de hoofduitspraak toelicht of onderbouwt"
       ],
       "c": 1,
       "u": "«Onderwerp» betekent: waar een tekst over gaat, zonder wat de schrijver ervan beweert.",
@@ -859,7 +859,7 @@ var VAKKEN = [
        "waar een tekst over gaat, zonder wat de schrijver ervan beweert",
        "een tekst die interpretaties en opinies ter overweging aanbiedt",
        "de mate waarin een argument echt iets zegt over het standpunt",
-       "een woord dat een verband tussen zinnen of tekstdelen aangeeft"
+       "een argument dat het standpunt steunt met concrete voorbeelden"
       ],
       "c": 0,
       "u": "«Onderwerp» betekent: waar een tekst over gaat, zonder wat de schrijver ervan beweert.",
@@ -1012,10 +1012,10 @@ var VAKKEN = [
      {
       "v": "Wat betekent «Schrijfdoel»?",
       "o": [
-       "het standpunt zelf als argument gebruiken",
-       "de mening van de lezer proberen te veranderen",
+       "de lezer iets laten doen of tot actie aanzetten",
+       "de zin met de hoofdgedachte van een alinea",
        "wat de schrijver met een tekst wil bereiken",
-       "de zin met de hoofdgedachte van een alinea"
+       "de mening van de lezer proberen te veranderen"
       ],
       "c": 2,
       "u": "«Schrijfdoel» betekent: wat de schrijver met een tekst wil bereiken.",
@@ -1049,8 +1049,8 @@ var VAKKEN = [
       "v": "Wat houdt «Schrijfdoel» in?",
       "o": [
        "wat de schrijver met een tekst wil bereiken",
-       "een argument dat een ander argument ondersteunt",
        "weigeren het eigen standpunt te onderbouwen",
+       "het standpunt zelf als argument gebruiken",
        "de centrale boodschap die de hele tekst draagt"
       ],
       "c": 0,
@@ -1060,7 +1060,7 @@ var VAKKEN = [
      {
       "v": "Wat betekent «Informeren»?",
       "o": [
-       "de zin met de hoofdgedachte van een alinea",
+       "wat de schrijver met een tekst wil bereiken",
        "een objectief controleerbare uitspraak",
        "de lezer iets laten weten of uitleggen",
        "een reden die een standpunt onderbouwt"
@@ -1097,9 +1097,9 @@ var VAKKEN = [
       "v": "Wat houdt «Informeren» in?",
       "o": [
        "de lezer iets laten weten of uitleggen",
-       "weigeren het eigen standpunt te onderbouwen",
-       "een objectief controleerbare uitspraak",
-       "een reden die een standpunt onderbouwt"
+       "het standpunt zelf als argument gebruiken",
+       "een reden die een standpunt onderbouwt",
+       "een objectief controleerbare uitspraak"
       ],
       "c": 0,
       "u": "«Informeren» betekent: de lezer iets laten weten of uitleggen.",
@@ -1158,8 +1158,8 @@ var VAKKEN = [
       "o": [
        "de lezer iets laten doen of tot actie aanzetten",
        "een persoonlijk oordeel dat niet te bewijzen is",
-       "de centrale boodschap die de hele tekst draagt",
-       "een argument dat een ander argument ondersteunt"
+       "weigeren het eigen standpunt te onderbouwen",
+       "de centrale boodschap die de hele tekst draagt"
       ],
       "c": 0,
       "u": "«Activeren» betekent: de lezer iets laten doen of tot actie aanzetten.",
@@ -1192,10 +1192,10 @@ var VAKKEN = [
      {
       "v": "Wat houdt «Activeren» in?",
       "o": [
-       "wat de schrijver met een tekst wil bereiken",
-       "de centrale boodschap die de hele tekst draagt",
+       "de persoon aanvallen in plaats van zijn argumenten",
+       "een argument dat een ander argument ondersteunt",
        "de lezer iets laten doen of tot actie aanzetten",
-       "de mening van de lezer proberen te veranderen"
+       "de centrale boodschap die de hele tekst draagt"
       ],
       "c": 2,
       "u": "«Activeren» betekent: de lezer iets laten doen of tot actie aanzetten.",
@@ -1301,8 +1301,8 @@ var VAKKEN = [
       "v": "Wat betekent «Toon»?",
       "o": [
        "de houding van de schrijver die uit de tekst blijkt",
-       "de stellingname die in een betoog verdedigd wordt",
-       "uit te weinig voorbeelden een algemene regel afleiden",
+       "de mate waarin een argument of standpunt acceptabel is",
+       "de persoon aanvallen in plaats van zijn argumenten",
        "een verband waarbij het ene het andere teweegbrengt"
       ],
       "c": 0,
@@ -1312,9 +1312,9 @@ var VAKKEN = [
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"de houding van de schrijver die uit de tekst blijkt\"?",
       "o": [
-       "Kern",
-       "Toon",
        "Slot",
+       "Toon",
+       "Kern",
        "Feit"
       ],
       "c": 1,
@@ -1336,10 +1336,10 @@ var VAKKEN = [
      {
       "v": "Wat houdt «Toon» in?",
       "o": [
-       "de persoon aanvallen in plaats van zijn argumenten",
+       "een argument dat berust op iets wat je kunt controleren",
        "de houding van de schrijver die uit de tekst blijkt",
-       "de mate waarin een argument of standpunt acceptabel is",
-       "de stellingname die in een betoog verdedigd wordt"
+       "de manier waarop een argument het standpunt ondersteunt",
+       "een persoonlijk oordeel dat niet te bewijzen is"
       ],
       "c": 1,
       "u": "«Toon» betekent: de houding van de schrijver die uit de tekst blijkt.",
@@ -1639,7 +1639,7 @@ var VAKKEN = [
        "de lezer iets laten doen of tot actie aanzetten",
        "de stellingname die in een betoog verdedigd wordt",
        "een argument dat een ander argument ondersteunt",
-       "de centrale boodschap die de hele tekst draagt"
+       "een persoonlijk oordeel dat niet te bewijzen is"
       ],
       "c": 2,
       "u": "«Subargument» betekent: een argument dat een ander argument ondersteunt.",
@@ -1673,8 +1673,8 @@ var VAKKEN = [
       "v": "Wat houdt «Subargument» in?",
       "o": [
        "een argument dat een ander argument ondersteunt",
-       "een argument dat berust op een oordeel of waardering",
        "de centrale boodschap die de hele tekst draagt",
+       "de persoon aanvallen in plaats van zijn argumenten",
        "een persoonlijk oordeel dat niet te bewijzen is"
       ],
       "c": 0,
@@ -2140,9 +2140,9 @@ var VAKKEN = [
      {
       "v": "Wat betekent «Aanvaardbaarheid»?",
       "o": [
-       "het ontbreken van tegenstrijdigheden in een argumentatie",
-       "een bewering die de hoofduitspraak toelicht of onderbouwt",
+       "een argument dat berust op iets wat je kunt controleren",
        "een argument dat berust op een oordeel of waardering",
+       "uit te weinig voorbeelden een algemene regel afleiden",
        "de mate waarin een argument of standpunt acceptabel is"
       ],
       "c": 3,
@@ -2179,7 +2179,7 @@ var VAKKEN = [
        "de manier waarop een argument het standpunt ondersteunt",
        "argumentatie met slechts één argument voor het standpunt",
        "de mate waarin een argument of standpunt acceptabel is",
-       "doen alsof er maar twee opties zijn terwijl er meer zijn"
+       "een bewering die de hoofduitspraak toelicht of onderbouwt"
       ],
       "c": 2,
       "u": "«Aanvaardbaarheid» betekent: de mate waarin een argument of standpunt acceptabel is.",
@@ -2189,7 +2189,7 @@ var VAKKEN = [
       "v": "Wat betekent «Relevantie»?",
       "o": [
        "een woord dat een verband tussen zinnen of tekstdelen aangeeft",
-       "argumentatie met slechts één argument voor het standpunt",
+       "de mate waarin de argumenten samen het standpunt voldoende dragen",
        "de mate waarin een argument echt iets zegt over het standpunt",
        "een verband waarbij iets wordt ingezet om iets te bereiken"
       ],
@@ -2742,8 +2742,8 @@ var VAKKEN = [
       "o": [
        "iets in eigen woorden weergeven",
        "het centrale idee van een werk",
-       "niet overschrijven, wel correct",
-       "de lezer iets laten weten of uitleggen"
+       "de lezer iets laten weten of uitleggen",
+       "de snelheid waarmee je spreekt"
       ],
       "c": 0,
       "u": "«Parafrase» betekent: iets in eigen woorden weergeven.",
@@ -8763,10 +8763,10 @@ var VAKKEN = [
      {
       "v": "Welke term past bij: \"een plek of persoon waar je informatie vandaan haalt\"?",
       "o": [
-       "Kern",
+       "Slot",
        "Bron",
        "Debat",
-       "Slot"
+       "Kern"
       ],
       "c": 1,
       "u": "Het juiste begrip is «Bron»: een plek of persoon waar je informatie vandaan haalt.",
@@ -8801,7 +8801,7 @@ var VAKKEN = [
       "o": [
        "Betrouwbare bron",
        "Formeel register",
-       "Informeel register",
+       "Retorische vraag",
        "Actief luisteren"
       ],
       "c": 0,
@@ -8812,7 +8812,7 @@ var VAKKEN = [
       "v": "Welke term past bij: \"een bron met controleerbare informatie van een deskundige afzender\"?",
       "o": [
        "Actief luisteren",
-       "Informeel register",
+       "Gespreksleider",
        "Betrouwbare bron",
        "Formeel register"
       ],
@@ -8895,9 +8895,9 @@ var VAKKEN = [
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"de opbouw met een inleiding, kern en slot\"?",
       "o": [
-       "Doel-middelrelatie",
+       "Argumentatietypen",
        "Presentatiestructuur",
-       "Autoriteitsargument",
+       "Doel-middelrelatie",
        "Autoriteitsdrogreden"
       ],
       "c": 1,
@@ -8993,7 +8993,7 @@ var VAKKEN = [
       "o": [
        "Bron",
        "Slot",
-       "Toon",
+       "Feit",
        "Kern"
       ],
       "c": 3,
@@ -9171,9 +9171,9 @@ var VAKKEN = [
      {
       "v": "Wat betekent «Informeel register»?",
       "o": [
-       "de mate van formeel taalgebruik die bij de situatie past",
-       "een vervolgvraag stellen om meer uitleg te krijgen",
        "aandachtig luisteren, meedenken en kernpunten noteren",
+       "een vervolgvraag stellen om meer uitleg te krijgen",
+       "de mate van formeel taalgebruik die bij de situatie past",
        "losser taalgebruik, passend bij bijvoorbeeld vrienden"
       ],
       "c": 3,
@@ -9183,9 +9183,9 @@ var VAKKEN = [
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"losser taalgebruik, passend bij bijvoorbeeld vrienden\"?",
       "o": [
-       "Actief luisteren",
-       "Feitelijk argument",
        "Betrouwbare bron",
+       "Actief luisteren",
+       "Persoonlijke aanval",
        "Informeel register"
       ],
       "c": 3,
@@ -9195,10 +9195,10 @@ var VAKKEN = [
      {
       "v": "Welke term past bij: \"losser taalgebruik, passend bij bijvoorbeeld vrienden\"?",
       "o": [
-       "Presentatiestructuur",
+       "Non-verbale communicatie",
        "Informeel register",
-       "Betrouwbare bron",
-       "Actief luisteren"
+       "Actief luisteren",
+       "Betrouwbare bron"
       ],
       "c": 1,
       "u": "Het juiste begrip is «Informeel register»: losser taalgebruik, passend bij bijvoorbeeld vrienden.",
@@ -9210,7 +9210,7 @@ var VAKKEN = [
        "een plek of persoon waar je informatie vandaan haalt",
        "losser taalgebruik, passend bij bijvoorbeeld vrienden",
        "aandachtig luisteren, meedenken en kernpunten noteren",
-       "een vervolgvraag stellen om meer uitleg te krijgen"
+       "een presentatie die aanzet tot een mening of actie"
       ],
       "c": 1,
       "u": "«Informeel register» betekent: losser taalgebruik, passend bij bijvoorbeeld vrienden.",
@@ -9423,10 +9423,10 @@ var VAKKEN = [
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"een argument met een standpunt, een redenering en bewijs\"?",
       "o": [
-       "Gespreksvorm",
+       "Kernwoorden",
        "Gespreksleider",
        "Debatargument",
-       "Kernwoorden"
+       "Bildungsroman"
       ],
       "c": 2,
       "u": "Het juiste begrip is «Debatargument»: een argument met een standpunt, een redenering en bewijs.",
@@ -9435,10 +9435,10 @@ var VAKKEN = [
      {
       "v": "Welke term past bij: \"een argument met een standpunt, een redenering en bewijs\"?",
       "o": [
-       "Gespreksvorm",
+       "Slotpleidooi",
        "Gespreksleider",
        "Debatargument",
-       "Slotpleidooi"
+       "Spreektempo"
       ],
       "c": 2,
       "u": "Het juiste begrip is «Debatargument»: een argument met een standpunt, een redenering en bewijs.",
@@ -9533,7 +9533,7 @@ var VAKKEN = [
       "o": [
        "Gespreksvorm",
        "Spreektempo",
-       "Gespreksleider",
+       "Debatargument",
        "Slotpleidooi"
       ],
       "c": 3,
@@ -9568,8 +9568,8 @@ var VAKKEN = [
       "v": "Welk begrip hoort bij deze omschrijving: \"degene die een discussie of debat leidt en de beurten verdeelt\"?",
       "o": [
        "Gespreksleider",
-       "Gespreksvorm",
-       "Slotpleidooi",
+       "Understatement",
+       "Hoofduitspraak",
        "Debatargument"
       ],
       "c": 0,
@@ -9581,8 +9581,8 @@ var VAKKEN = [
       "o": [
        "Gespreksleider",
        "Debatargument",
-       "Gespreksvorm",
-       "Slotpleidooi"
+       "Slotpleidooi",
+       "Weerlegging"
       ],
       "c": 0,
       "u": "Het juiste begrip is «Gespreksleider»: degene die een discussie of debat leidt en de beurten verdeelt.",
@@ -13919,10 +13919,10 @@ var VAKKEN = [
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"andermans werk gebruiken zonder bronvermelding\"?",
       "o": [
-       "Conclusie",
+       "Metafoor",
        "Spelling",
        "Plagiaat",
-       "Stelling"
+       "Conclusie"
       ],
       "c": 2,
       "u": "Het juiste begrip is «Plagiaat»: andermans werk gebruiken zonder bronvermelding.",
@@ -13931,8 +13931,8 @@ var VAKKEN = [
      {
       "v": "Welke term past bij: \"andermans werk gebruiken zonder bronvermelding\"?",
       "o": [
-       "Stelling",
        "Conclusie",
+       "Stijlfout",
        "Spelling",
        "Plagiaat"
       ],
@@ -14063,8 +14063,8 @@ var VAKKEN = [
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"het standpunt dat je in een betoog verdedigt\"?",
       "o": [
+       "Revisie",
        "Conclusie",
-       "Spelling",
        "Stelling",
        "Plagiaat"
       ],
@@ -14076,9 +14076,9 @@ var VAKKEN = [
       "v": "Welke term past bij: \"het standpunt dat je in een betoog verdedigt\"?",
       "o": [
        "Stelling",
-       "Spelling",
+       "Plagiaat",
        "Conclusie",
-       "Plagiaat"
+       "Revisie"
       ],
       "c": 0,
       "u": "Het juiste begrip is «Stelling»: het standpunt dat je in een betoog verdedigt.",
@@ -14160,9 +14160,9 @@ var VAKKEN = [
       "v": "Welk begrip hoort bij deze omschrijving: \"de afsluiting die het standpunt herhaalt en de argumenten benadrukt\"?",
       "o": [
        "Conclusie",
-       "Tekstsoort",
-       "Slotalinea",
-       "Stijlfout"
+       "Plagiaat",
+       "Stijlfout",
+       "Commentaar"
       ],
       "c": 0,
       "u": "Het juiste begrip is «Conclusie»: de afsluiting die het standpunt herhaalt en de argumenten benadrukt.",
@@ -14171,10 +14171,10 @@ var VAKKEN = [
      {
       "v": "Welke term past bij: \"de afsluiting die het standpunt herhaalt en de argumenten benadrukt\"?",
       "o": [
+       "Slotalinea",
        "Stijlfout",
-       "Spreektaal",
        "Conclusie",
-       "Slotalinea"
+       "Tekstsoort"
       ],
       "c": 2,
       "u": "Het juiste begrip is «Conclusie»: de afsluiting die het standpunt herhaalt en de argumenten benadrukt.",
@@ -14447,9 +14447,9 @@ var VAKKEN = [
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"taal met volledige zinnen en verzorgde woordkeus, passend bij geschreven teksten\"?",
       "o": [
+       "Interpunctie",
        "Lezersgroep",
-       "Commentaar",
-       "Tekstsoort",
+       "Tussenkopje",
        "Schrijftaal"
       ],
       "c": 3,
@@ -14462,7 +14462,7 @@ var VAKKEN = [
        "Schrijftaal",
        "Lezersgroep",
        "Tussenkopje",
-       "Tekstsoort"
+       "Tegenwerping"
       ],
       "c": 0,
       "u": "Het juiste begrip is «Schrijftaal»: taal met volledige zinnen en verzorgde woordkeus, passend bij geschreven teksten.",
@@ -14495,10 +14495,10 @@ var VAKKEN = [
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"losse, informele taal zoals je die in een gesprek gebruikt\"?",
       "o": [
-       "Tekstsoort",
+       "Coherentie",
        "Spreektaal",
-       "Tussenkopje",
-       "Slotalinea"
+       "Slotalinea",
+       "Tekstsoort"
       ],
       "c": 1,
       "u": "Het juiste begrip is «Spreektaal»: losse, informele taal zoals je die in een gesprek gebruikt.",
@@ -14507,9 +14507,9 @@ var VAKKEN = [
      {
       "v": "Welke term past bij: \"losse, informele taal zoals je die in een gesprek gebruikt\"?",
       "o": [
+       "Coherentie",
        "Commentaar",
        "Slotalinea",
-       "Coherentie",
        "Spreektaal"
       ],
       "c": 3,
@@ -14533,7 +14533,7 @@ var VAKKEN = [
       "o": [
        "een formulering die niet bij de situatie past, zoals te informeel taalgebruik",
        "een zakelijke brief met nette aanhef, volledige zinnen en formele afsluiting",
-       "verzorgd taalgebruik met volledige zinnen, passend bij bijvoorbeeld een jury",
+       "de afsluiting die het standpunt herhaalt en de argumenten benadrukt",
        "taal met volledige zinnen en verzorgde woordkeus, passend bij geschreven teksten"
       ],
       "c": 0,
@@ -14568,9 +14568,9 @@ var VAKKEN = [
       "v": "Wat houdt «Stijlfout» in?",
       "o": [
        "een formulering die niet bij de situatie past, zoals te informeel taalgebruik",
-       "de eerste alinea die het onderwerp en vaak de stelling introduceert",
        "een tekst waarin informatie uit bronnen is verwerkt en verantwoord",
-       "een zakelijke brief met nette aanhef, volledige zinnen en formele afsluiting"
+       "een zakelijke brief met nette aanhef, volledige zinnen en formele afsluiting",
+       "taal met volledige zinnen en verzorgde woordkeus, passend bij geschreven teksten"
       ],
       "c": 0,
       "u": "«Stijlfout» betekent: een formulering die niet bij de situatie past, zoals te informeel taalgebruik.",
@@ -14615,10 +14615,10 @@ var VAKKEN = [
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"de regels voor het correct schrijven van woorden\"?",
       "o": [
-       "Stelling",
+       "Plagiaat",
        "Conclusie",
        "Spelling",
-       "Plagiaat"
+       "Argument"
       ],
       "c": 2,
       "u": "Het juiste begrip is «Spelling»: de regels voor het correct schrijven van woorden.",
@@ -14627,10 +14627,10 @@ var VAKKEN = [
      {
       "v": "Welke term past bij: \"de regels voor het correct schrijven van woorden\"?",
       "o": [
-       "Conclusie",
+       "Plagiaat",
        "Spelling",
-       "Stelling",
-       "Plagiaat"
+       "Stijlfout",
+       "Revisie"
       ],
       "c": 1,
       "u": "Het juiste begrip is «Spelling»: de regels voor het correct schrijven van woorden.",
@@ -19421,8 +19421,8 @@ var VAKKEN = [
       "v": "Welk begrip hoort bij deze omschrijving: \"een korte weergave van de kern van een tekst\"?",
       "o": [
        "Samenvatting",
-       "Woordenlimiet",
        "Volledigheid",
+       "Redundantie",
        "Signaalwoord"
       ],
       "c": 0,
@@ -19434,7 +19434,7 @@ var VAKKEN = [
       "o": [
        "Samenvatting",
        "Signaalwoord",
-       "Woordenlimiet",
+       "Redundantie",
        "Volledigheid"
       ],
       "c": 0,
@@ -19519,7 +19519,7 @@ var VAKKEN = [
        "Samenvatten",
        "Volledigheid",
        "Redundantie",
-       "Samenvatting"
+       "Signaalwoord"
       ],
       "c": 2,
       "u": "Het juiste begrip is «Redundantie»: overbodige, herhalende informatie.",
@@ -19528,8 +19528,8 @@ var VAKKEN = [
      {
       "v": "Welke term past bij: \"overbodige, herhalende informatie\"?",
       "o": [
-       "Samenvatting",
        "Volledigheid",
+       "Coherentie",
        "Samenvatten",
        "Redundantie"
       ],
@@ -19552,9 +19552,9 @@ var VAKKEN = [
      {
       "v": "Wat betekent «Signaalwoord»?",
       "o": [
-       "hoofdzaken houden, bijzaken schrappen",
-       "een tekstdeel over één deelonderwerp",
        "overbodige, herhalende informatie",
+       "niet overschrijven, wel correct",
+       "een tekstdeel over één deelonderwerp",
        "een woord dat een verband aangeeft"
       ],
       "c": 3,
@@ -19588,10 +19588,10 @@ var VAKKEN = [
      {
       "v": "Wat houdt «Signaalwoord» in?",
       "o": [
-       "hoofdzaken houden, bijzaken schrappen",
+       "een tekstdeel over één deelonderwerp",
        "een woord dat een verband aangeeft",
-       "niet overschrijven, wel correct",
-       "overbodige, herhalende informatie"
+       "overbodige, herhalende informatie",
+       "hoofdzaken houden, bijzaken schrappen"
       ],
       "c": 1,
       "u": "«Signaalwoord» betekent: een woord dat een verband aangeeft.",
@@ -19648,10 +19648,10 @@ var VAKKEN = [
      {
       "v": "Wat betekent «Samenvatten»?",
       "o": [
-       "een korte weergave van de kern van een tekst",
+       "een bijzaak die een hoofdpunt verduidelijkt of illustreert",
        "de kern van een tekst in eigen woorden kort weergeven",
        "snel lezen om onderwerp, doel en tekstsoort te bepalen",
-       "de duidelijkheid van de onderlinge verbanden"
+       "aandachtig luisteren, meedenken en kernpunten noteren"
       ],
       "c": 1,
       "u": "«Samenvatten» betekent: de kern van een tekst in eigen woorden kort weergeven.",
@@ -19660,10 +19660,10 @@ var VAKKEN = [
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"de kern van een tekst in eigen woorden kort weergeven\"?",
       "o": [
-       "Samenvatting",
+       "Volledigheid",
        "Samenvatten",
        "Redundantie",
-       "Signaalwoord"
+       "Coherentie"
       ],
       "c": 1,
       "u": "Het juiste begrip is «Samenvatten»: de kern van een tekst in eigen woorden kort weergeven.",
@@ -19673,9 +19673,9 @@ var VAKKEN = [
       "v": "Welke term past bij: \"de kern van een tekst in eigen woorden kort weergeven\"?",
       "o": [
        "Redundantie",
-       "Coherentie",
+       "Selecteren",
        "Samenvatten",
-       "Volledigheid"
+       "Signaalwoord"
       ],
       "c": 2,
       "u": "Het juiste begrip is «Samenvatten»: de kern van een tekst in eigen woorden kort weergeven.",
@@ -19686,8 +19686,8 @@ var VAKKEN = [
       "o": [
        "de kern van een tekst in eigen woorden kort weergeven",
        "snel lezen om onderwerp, doel en tekstsoort te bepalen",
-       "het centrale standpunt dat de hele tekst draagt",
-       "een bijzaak die een hoofdpunt verduidelijkt of illustreert"
+       "een bijzaak die een hoofdpunt verduidelijkt of illustreert",
+       "het centrale standpunt dat de hele tekst draagt"
       ],
       "c": 0,
       "u": "«Samenvatten» betekent: de kern van een tekst in eigen woorden kort weergeven.",
@@ -19818,7 +19818,7 @@ var VAKKEN = [
       "o": [
        "Samenvatten",
        "Signaalwoord",
-       "Samenvatting",
+       "Woordenlimiet",
        "Volledigheid"
       ],
       "c": 3,
@@ -19890,7 +19890,7 @@ var VAKKEN = [
       "o": [
        "een korte weergave van de kern van een tekst",
        "het centrale standpunt dat de hele tekst draagt",
-       "dat alle hoofd- en kernpunten aanwezig zijn",
+       "een belangrijk punt dat in de samenvatting moet staan",
        "de duidelijkheid van de onderlinge verbanden"
       ],
       "c": 1,
@@ -19901,9 +19901,9 @@ var VAKKEN = [
       "v": "Welk begrip hoort bij deze omschrijving: \"het centrale standpunt dat de hele tekst draagt\"?",
       "o": [
        "Stelling",
-       "Argument",
-       "Analepse",
-       "Verbanden"
+       "Verbanden",
+       "Hoofdpunt",
+       "Structuur"
       ],
       "c": 0,
       "u": "Het juiste begrip is «Stelling»: het centrale standpunt dat de hele tekst draagt.",
@@ -19915,7 +19915,7 @@ var VAKKEN = [
        "Hoofdpunt",
        "Stelling",
        "Structuur",
-       "Coherentie"
+       "Verbanden"
       ],
       "c": 1,
       "u": "Het juiste begrip is «Stelling»: het centrale standpunt dat de hele tekst draagt.",
@@ -19926,8 +19926,8 @@ var VAKKEN = [
       "o": [
        "het centrale standpunt dat de hele tekst draagt",
        "de duidelijkheid van de onderlinge verbanden",
-       "de zin met de hoofdgedachte van een alinea",
-       "snel lezen om onderwerp, doel en tekstsoort te bepalen"
+       "een korte weergave van de kern van een tekst",
+       "de kern van een tekst in eigen woorden kort weergeven"
       ],
       "c": 0,
       "u": "«Stelling» betekent: het centrale standpunt dat de hele tekst draagt.",
@@ -24686,8 +24686,8 @@ var VAKKEN = [
       "o": [
        "de mening die verdedigd wordt",
        "een argument dat niet deugt",
-       "nevenschikkend of onderschikkend",
-       "de mate waarin een bewering klopt"
+       "de mate waarin een bewering klopt",
+       "een controleerbaar argument"
       ],
       "c": 0,
       "u": "«Standpunt» betekent: de mening die verdedigd wordt.",
@@ -24720,10 +24720,10 @@ var VAKKEN = [
      {
       "v": "Wat houdt «Standpunt» in?",
       "o": [
-       "een argument dat niet deugt",
+       "een controleerbaar argument",
        "de mening die verdedigd wordt",
-       "argumenten die niet deugen",
-       "een controleerbaar argument"
+       "een argument dat niet deugt",
+       "nevenschikkend of onderschikkend"
       ],
       "c": 1,
       "u": "«Standpunt» betekent: de mening die verdedigd wordt.",
@@ -24732,10 +24732,10 @@ var VAKKEN = [
      {
       "v": "Wat betekent «Argument»?",
       "o": [
+       "uit één geval een algemene regel trekken",
        "nevenschikkend of onderschikkend",
-       "de mate waarin een bewering klopt",
        "een reden die een standpunt steunt",
-       "uit één geval een algemene regel trekken"
+       "de mate waarin een bewering klopt"
       ],
       "c": 2,
       "u": "«Argument» betekent: een reden die een standpunt steunt.",
@@ -24769,8 +24769,8 @@ var VAKKEN = [
       "v": "Wat houdt «Argument» in?",
       "o": [
        "de mate waarin een bewering klopt",
+       "de mening die verdedigd wordt",
        "nevenschikkend of onderschikkend",
-       "uit één geval een algemene regel trekken",
        "een reden die een standpunt steunt"
       ],
       "c": 3,
@@ -24780,9 +24780,9 @@ var VAKKEN = [
      {
       "v": "Wat betekent «Drogreden»?",
       "o": [
-       "argumenten die niet deugen",
-       "een argument dat niet deugt",
        "mening van een deskundige",
+       "een argument dat niet deugt",
+       "argumenten die niet deugen",
        "een controleerbaar argument"
       ],
       "c": 1,
@@ -24816,10 +24816,10 @@ var VAKKEN = [
      {
       "v": "Wat houdt «Drogreden» in?",
       "o": [
-       "mening van een deskundige",
-       "een controleerbaar argument",
+       "argumenten die niet deugen",
+       "de mening die verdedigd wordt",
        "een argument dat niet deugt",
-       "argumenten die niet deugen"
+       "een controleerbaar argument"
       ],
       "c": 2,
       "u": "«Drogreden» betekent: een argument dat niet deugt.",
@@ -24828,10 +24828,10 @@ var VAKKEN = [
      {
       "v": "Wat betekent «Weerlegging»?",
       "o": [
-       "een reden die een standpunt steunt",
        "de mate waarin een bewering klopt",
+       "een reden die een standpunt steunt",
        "aantonen dat een argument niet klopt",
-       "nevenschikkend of onderschikkend"
+       "een tekstdeel over één deelonderwerp"
       ],
       "c": 2,
       "u": "«Weerlegging» betekent: aantonen dat een argument niet klopt.",
@@ -24866,7 +24866,7 @@ var VAKKEN = [
       "o": [
        "een reden die een standpunt steunt",
        "uit één geval een algemene regel trekken",
-       "de mate waarin een bewering klopt",
+       "nevenschikkend of onderschikkend",
        "aantonen dat een argument niet klopt"
       ],
       "c": 3,
@@ -24924,9 +24924,9 @@ var VAKKEN = [
      {
       "v": "Wat betekent «Vals dilemma»?",
       "o": [
-       "een deskundige gebruiken als onderbouwing van een standpunt",
-       "een verband waarbij iets wordt ingezet om iets te bereiken",
        "meerdere losse argumenten steunen elk apart het standpunt",
+       "een verband waarbij iets wordt ingezet om iets te bereiken",
+       "een deskundige gebruiken als onderbouwing van een standpunt",
        "de drogreden die maar twee opties toont terwijl er meer zijn"
       ],
       "c": 3,
@@ -24960,10 +24960,10 @@ var VAKKEN = [
      {
       "v": "Wat houdt «Vals dilemma» in?",
       "o": [
-       "de drogreden waarbij het standpunt zichzelf bewijst",
+       "een deskundige gebruiken als onderbouwing van een standpunt",
        "de drogreden die maar twee opties toont terwijl er meer zijn",
-       "meerdere losse argumenten steunen elk apart het standpunt",
-       "een deskundige gebruiken als onderbouwing van een standpunt"
+       "de drogreden waarbij het standpunt zichzelf bewijst",
+       "meerdere losse argumenten steunen elk apart het standpunt"
       ],
       "c": 1,
       "u": "«Vals dilemma» betekent: de drogreden die maar twee opties toont terwijl er meer zijn.",
@@ -25152,10 +25152,10 @@ var VAKKEN = [
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"een deskundige gebruiken als onderbouwing van een standpunt\"?",
       "o": [
+       "Aanvaardbaarheid",
        "Cirkelredenering",
-       "Argumentatietypen",
        "Autoriteitsschema",
-       "Aanvaardbaarheid"
+       "Argumentatietypen"
       ],
       "c": 2,
       "u": "Het juiste begrip is «Autoriteitsschema»: een deskundige gebruiken als onderbouwing van een standpunt.",
@@ -25297,9 +25297,9 @@ var VAKKEN = [
       "v": "Welk begrip hoort bij deze omschrijving: \"voorbeeld, autoriteit, gevolg, vergelijking\"?",
       "o": [
        "Argumentatietypen",
-       "Aanvaardbaarheid",
+       "Cirkelredenering",
        "Oorzaak-gevolg",
-       "Cirkelredenering"
+       "Aanvaardbaarheid"
       ],
       "c": 0,
       "u": "Het juiste begrip is «Argumentatietypen»: voorbeeld, autoriteit, gevolg, vergelijking.",
@@ -25380,10 +25380,10 @@ var VAKKEN = [
      {
       "v": "Wat betekent «Autoriteit»?",
       "o": [
+       "een overeenkomstig geval",
        "een argument dat niet deugt",
-       "de mening die verdedigd wordt",
        "mening van een deskundige",
-       "argumenten die niet deugen"
+       "een controleerbaar argument"
       ],
       "c": 2,
       "u": "«Autoriteit» betekent: mening van een deskundige.",
@@ -25404,7 +25404,7 @@ var VAKKEN = [
      {
       "v": "Welke term past bij: \"mening van een deskundige\"?",
       "o": [
-       "Drogreden",
+       "Standpunt",
        "Drogredenen",
        "Autoriteit",
        "Structuur"
@@ -25418,7 +25418,7 @@ var VAKKEN = [
       "o": [
        "mening van een deskundige",
        "een overeenkomstig geval",
-       "de mening die verdedigd wordt",
+       "een argument dat niet deugt",
        "argumenten die niet deugen"
       ],
       "c": 0,
@@ -25560,9 +25560,9 @@ var VAKKEN = [
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"\"een BN'er zegt het\" - geen echte deskundige\"?",
       "o": [
+       "Cirkelredenering",
        "Argumentatietypen",
-       "Autoriteitsschema",
-       "Autoriteitsargument",
+       "Persoonlijke aanval",
        "Autoriteitsdrogreden"
       ],
       "c": 3,
@@ -25572,9 +25572,9 @@ var VAKKEN = [
      {
       "v": "Welke term past bij: \"\"een BN'er zegt het\" - geen echte deskundige\"?",
       "o": [
-       "Argumentatietypen",
-       "Autoriteitsdrogreden",
        "Cirkelredenering",
+       "Autoriteitsdrogreden",
+       "Argumentatietypen",
        "Persoonlijke aanval"
       ],
       "c": 1,
@@ -26715,9 +26715,9 @@ var VAKKEN = [
      {
       "v": "Wat betekent «Alliteratie»?",
       "o": [
-       "een vraag die geen antwoord verwacht",
        "door wiens ogen zie je het verhaal?",
-       "experiment; stream of consciousness",
+       "een figuur die in een verhaal optreedt",
+       "een vraag die geen antwoord verwacht",
        "de herhaling van dezelfde beginklank"
       ],
       "c": 3,
@@ -26751,9 +26751,9 @@ var VAKKEN = [
      {
       "v": "Wat houdt «Alliteratie» in?",
       "o": [
-       "door wiens ogen zie je het verhaal?",
+       "een verhaal met een verhaal erin",
        "een terugkerend element in een verhaal",
-       "een vraag die geen antwoord verwacht",
+       "door wiens ogen zie je het verhaal?",
        "de herhaling van dezelfde beginklank"
       ],
       "c": 3,
@@ -26764,9 +26764,9 @@ var VAKKEN = [
       "v": "Wat betekent «Assonantie»?",
       "o": [
        "de herhaling van dezelfde klinker",
-       "door wiens ogen zie je het verhaal?",
-       "de herhaling van dezelfde beginklank",
-       "terugkerend element vs. onderwerp"
+       "een vraag die geen antwoord verwacht",
+       "experiment; stream of consciousness",
+       "een verhaal met een verhaal erin"
       ],
       "c": 0,
       "u": "«Assonantie» betekent: de herhaling van dezelfde klinker.",
@@ -26799,10 +26799,10 @@ var VAKKEN = [
      {
       "v": "Wat houdt «Assonantie» in?",
       "o": [
-       "terugkerend element vs. onderwerp",
+       "door wiens ogen zie je het verhaal?",
        "de herhaling van dezelfde klinker",
-       "de herhaling van dezelfde beginklank",
-       "door wiens ogen zie je het verhaal?"
+       "een verhaal met een verhaal erin",
+       "terugkerend element vs. onderwerp"
       ],
       "c": 1,
       "u": "«Assonantie» betekent: de herhaling van dezelfde klinker.",
@@ -27149,7 +27149,7 @@ var VAKKEN = [
       "o": [
        "een verteller die alles weet en overziet",
        "een beeld zonder de woorden als of zoals",
-       "de werkelijkheid zo waarheidsgetrouw mogelijk",
+       "de herhaling van dezelfde beginklank",
        "een terugkerend element in een verhaal"
       ],
       "c": 0,
@@ -27279,10 +27279,10 @@ var VAKKEN = [
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"een figuur die in een verhaal optreedt\"?",
       "o": [
-       "Metonymie",
-       "Personage",
        "Antithese",
-       "Hyperbool"
+       "Personage",
+       "Hyperbool",
+       "Metonymie"
       ],
       "c": 1,
       "u": "Het juiste begrip is «Personage»: een figuur die in een verhaal optreedt.",
@@ -27291,10 +27291,10 @@ var VAKKEN = [
      {
       "v": "Welke term past bij: \"een figuur die in een verhaal optreedt\"?",
       "o": [
-       "Hyperbool",
-       "Personage",
        "Eufemisme",
-       "Symboliek"
+       "Personage",
+       "Symboliek",
+       "Metonymie"
       ],
       "c": 1,
       "u": "Het juiste begrip is «Personage»: een figuur die in een verhaal optreedt.",
@@ -27677,8 +27677,8 @@ var VAKKEN = [
       "o": [
        "door wiens ogen zie je het verhaal?",
        "experiment; stream of consciousness",
-       "terugkerend element vs. onderwerp",
-       "een terugkerend element in een verhaal"
+       "een terugkerend element in een verhaal",
+       "de herhaling van dezelfde beginklank"
       ],
       "c": 0,
       "u": "«Vertelperspectief» betekent: door wiens ogen zie je het verhaal?.",
@@ -27771,8 +27771,8 @@ var VAKKEN = [
      {
       "v": "Wat betekent «Motief & thema»?",
       "o": [
-       "het centrale idee van een werk",
        "de herhaling van dezelfde klinker",
+       "een opbouw naar een hoogtepunt",
        "terugkerend element vs. onderwerp",
        "een verhaal met een verhaal erin"
       ],
@@ -27856,7 +27856,7 @@ var VAKKEN = [
       "v": "Wat houdt «Stromingen» in?",
       "o": [
        "de herhaling van dezelfde beginklank",
-       "de herhaling van dezelfde klinker",
+       "het centrale idee van een werk",
        "vergelijking, metafoor, personificatie",
        "realisme, naturalisme, modernisme"
       ],
@@ -28023,9 +28023,9 @@ var VAKKEN = [
      {
       "v": "Wat houdt «Alwetend» in?",
       "o": [
-       "het gebruik van een teken voor een dieper idee",
+       "een verzachtende omschrijving van iets onaangenaams",
        "verteller weet alles, ook gedachten van iedereen",
-       "de opbouw en ontlading van spanning in een verhaal",
+       "het gebruik van een teken voor een dieper idee",
        "het tegenover elkaar plaatsen van tegenstellingen"
       ],
       "c": 1,
@@ -28131,10 +28131,10 @@ var VAKKEN = [
      {
       "v": "Wat betekent «Modernisme (20e e.)»?",
       "o": [
-       "een vraag die geen antwoord verwacht",
-       "experiment; stream of consciousness",
        "door wiens ogen zie je het verhaal?",
-       "terugkerend element vs. onderwerp"
+       "experiment; stream of consciousness",
+       "een vraag die geen antwoord verwacht",
+       "de herhaling van dezelfde beginklank"
       ],
       "c": 1,
       "u": "«Modernisme (20e e.)» betekent: experiment; stream of consciousness.",
@@ -28167,9 +28167,9 @@ var VAKKEN = [
      {
       "v": "Wat houdt «Modernisme (20e e.)» in?",
       "o": [
-       "een vraag die geen antwoord verwacht",
-       "experiment; stream of consciousness",
        "terugkerend element vs. onderwerp",
+       "experiment; stream of consciousness",
+       "door wiens ogen zie je het verhaal?",
        "de herhaling van dezelfde beginklank"
       ],
       "c": 1,
@@ -33109,9 +33109,9 @@ var VAKKEN = [
       "v": "Welk begrip hoort bij deze omschrijving: \"hulpmiddel voor grafieken en berekeningen\"?",
       "o": [
        "Exponentieel verband",
-       "Verband herkennen",
+       "Formule herleiden",
        "Grafische rekenmachine",
-       "Exponentiële groei"
+       "Verband herkennen"
       ],
       "c": 2,
       "u": "Het juiste begrip is «Grafische rekenmachine»: hulpmiddel voor grafieken en berekeningen.",
@@ -33147,7 +33147,7 @@ var VAKKEN = [
        "binnen/buiten het meetbereik schatten",
        "hulpmiddel voor grafieken en berekeningen",
        "een tussenwaarde schatten uit gegevens",
-       "een waarde schatten buiten het meetbereik"
+       "een variabele vrijmaken uit een formule"
       ],
       "c": 2,
       "u": "«Interpoleren» betekent: een tussenwaarde schatten uit gegevens.",
@@ -33324,10 +33324,10 @@ var VAKKEN = [
      {
       "v": "Wat houdt «Extrapoleren» in?",
       "o": [
-       "een variabele vrijmaken uit een formule",
+       "met wortels, breuken of π zonder afronden",
        "een waarde schatten buiten het meetbereik",
-       "gelijke stappen erbij/eraf (+ vast getal)",
-       "met wortels, breuken of π zonder afronden"
+       "een variabele vrijmaken uit een formule",
+       "een tussenwaarde schatten uit gegevens"
       ],
       "c": 1,
       "u": "«Extrapoleren» betekent: een waarde schatten buiten het meetbereik.",
@@ -33543,7 +33543,7 @@ var VAKKEN = [
        "Verband herkennen",
        "Formule herleiden",
        "Exponentiële groei",
-       "Afnemende stijging"
+       "Toenemende daling"
       ],
       "c": 2,
       "u": "Het juiste begrip is «Exponentiële groei»: groei waarbij je per stap met dezelfde factor vermenigvuldigt.",
@@ -33720,7 +33720,7 @@ var VAKKEN = [
      {
       "v": "Wat betekent «Interpoleren/extrapoleren»?",
       "o": [
-       "een variabele vrijmaken uit een formule",
+       "gelijke stappen erbij/eraf (+ vast getal)",
        "met wortels, breuken of π zonder afronden",
        "een tussenwaarde schatten uit gegevens",
        "binnen/buiten het meetbereik schatten"
@@ -33758,7 +33758,7 @@ var VAKKEN = [
       "o": [
        "een tussenwaarde schatten uit gegevens",
        "binnen/buiten het meetbereik schatten",
-       "de tweede verschillen zijn gelijk",
+       "afronden op een aantal decimalen",
        "met wortels, breuken of π zonder afronden"
       ],
       "c": 1,
@@ -34623,7 +34623,7 @@ var VAKKEN = [
       "v": "Wat betekent «Variabele»?",
       "o": [
        "een symbool voor een getal dat kan variëren",
-       "een keuze waarbij de volgorde niet meetelt",
+       "1 plus het groeipercentage als kommagetal",
        "een rangschikking waarbij de volgorde meetelt",
        "een gelijkheid met een onbekende die je oplost"
       ],
@@ -34658,8 +34658,8 @@ var VAKKEN = [
      {
       "v": "Wat houdt «Variabele» in?",
       "o": [
+       "een gelijkheid met een onbekende die je oplost",
        "1 plus het groeipercentage als kommagetal",
-       "een rangschikking waarbij de volgorde meetelt",
        "een symbool voor een getal dat kan variëren",
        "een keuze waarbij de volgorde niet meetelt"
       ],
@@ -34670,7 +34670,7 @@ var VAKKEN = [
      {
       "v": "Wat betekent «Vergelijking»?",
       "o": [
-       "een keuze waarbij de volgorde niet meetelt",
+       "deel teller en noemer door hun grootste gemene deler.",
        "een symbool voor een getal dat kan variëren",
        "een gelijkheid met een onbekende die je oplost",
        "een rangschikking waarbij de volgorde meetelt"
@@ -34815,9 +34815,9 @@ var VAKKEN = [
       "v": "Wat betekent «Permutatie»?",
       "o": [
        "een rangschikking waarbij de volgorde meetelt",
+       "een gelijkheid met een onbekende die je oplost",
        "een symbool voor een getal dat kan variëren",
-       "1 plus het groeipercentage als kommagetal",
-       "een gelijkheid met een onbekende die je oplost"
+       "het getal dat je tot een macht verheft"
       ],
       "c": 0,
       "u": "«Permutatie» betekent: een rangschikking waarbij de volgorde meetelt.",
@@ -34851,7 +34851,7 @@ var VAKKEN = [
       "v": "Wat houdt «Permutatie» in?",
       "o": [
        "een gelijkheid met een onbekende die je oplost",
-       "een keuze waarbij de volgorde niet meetelt",
+       "1 plus het groeipercentage als kommagetal",
        "een rangschikking waarbij de volgorde meetelt",
        "een symbool voor een getal dat kan variëren"
       ],
@@ -34865,7 +34865,7 @@ var VAKKEN = [
        "een symbool voor een getal dat kan variëren",
        "een keuze waarbij de volgorde niet meetelt",
        "1 plus het groeipercentage als kommagetal",
-       "een rangschikking waarbij de volgorde meetelt"
+       "het getal dat je tot een macht verheft"
       ],
       "c": 1,
       "u": "«Combinatie» betekent: een keuze waarbij de volgorde niet meetelt.",
@@ -34901,7 +34901,7 @@ var VAKKEN = [
        "een symbool voor een getal dat kan variëren",
        "1 plus het groeipercentage als kommagetal",
        "een keuze waarbij de volgorde niet meetelt",
-       "een rangschikking waarbij de volgorde meetelt"
+       "een gelijkheid met een onbekende die je oplost"
       ],
       "c": 2,
       "u": "«Combinatie» betekent: een keuze waarbij de volgorde niet meetelt.",
@@ -35006,8 +35006,8 @@ var VAKKEN = [
      {
       "v": "Wat betekent «Procent»?",
       "o": [
+       "een verband dat zich herhaalt",
        "hoe vaak een waarde voorkomt",
-       "stijgt steeds sneller",
        "daalt steeds sneller",
        "een deel per honderd"
       ],
@@ -35139,7 +35139,7 @@ var VAKKEN = [
       "v": "Wat houdt «Groeifactor» in?",
       "o": [
        "1 plus het groeipercentage als kommagetal",
-       "een rangschikking waarbij de volgorde meetelt",
+       "een gelijkheid met een onbekende die je oplost",
        "een symbool voor een getal dat kan variëren",
        "een keuze waarbij de volgorde niet meetelt"
       ],
@@ -36055,7 +36055,7 @@ var VAKKEN = [
       "v": "Welk begrip hoort bij deze omschrijving: \"een verband met een vaste groeifactor per stap\"?",
       "o": [
        "Omgekeerd evenredig",
-       "Periodiek verband",
+       "Richtingscoëfficiënt",
        "Kwadratisch verband",
        "Exponentieel verband"
       ],
@@ -36067,9 +36067,9 @@ var VAKKEN = [
       "v": "Welke term past bij: \"een verband met een vaste groeifactor per stap\"?",
       "o": [
        "Exponentieel verband",
-       "Periodiek verband",
+       "Omgekeerd evenredig",
        "Kwadratisch verband",
-       "Omgekeerd evenredig"
+       "Periodiek verband"
       ],
       "c": 0,
       "u": "Het juiste begrip is «Exponentieel verband»: een verband met een vaste groeifactor per stap.",
@@ -36799,9 +36799,9 @@ var VAKKEN = [
       "v": "Wat houdt «Halveringstijd» in?",
       "o": [
        "de tijd waarin een hoeveelheid halveert, uit gᵗ = 0,5",
+       "het getal waarmee je per tijdstap vermenigvuldigt",
        "een verband dat bij elke invoer precies één uitvoer geeft",
-       "een invoerwaarde waar de grafiek de horizontale as snijdt",
-       "de tijd waarin een hoeveelheid verdubbelt, uit gᵗ = 2"
+       "een invoerwaarde waar de grafiek de horizontale as snijdt"
       ],
       "c": 0,
       "u": "«Halveringstijd» betekent: de tijd waarin een hoeveelheid halveert, uit gᵗ = 0,5.",
@@ -37683,7 +37683,7 @@ var VAKKEN = [
        "Extremum",
        "Afgeleide",
        "Raaklijn",
-       "Extreem"
+       "Optimaliseren"
       ],
       "c": 1,
       "u": "Het juiste begrip is «Afgeleide»: de functie die de helling van de grafiek in elk punt geeft.",
@@ -37717,7 +37717,7 @@ var VAKKEN = [
       "v": "Welk begrip hoort bij deze omschrijving: \"de mate van stijging of daling van een grafiek\"?",
       "o": [
        "Raaklijn",
-       "Extremum",
+       "Z-score",
        "Extreem",
        "Helling"
       ],
@@ -37729,8 +37729,8 @@ var VAKKEN = [
       "v": "Welke term past bij: \"de mate van stijging of daling van een grafiek\"?",
       "o": [
        "Extreem",
+       "Afgeleide",
        "Raaklijn",
-       "Extremum",
        "Helling"
       ],
       "c": 3,
@@ -37754,8 +37754,8 @@ var VAKKEN = [
       "o": [
        "een maximum of minimum van een functie",
        "de gemiddelde helling over een interval",
-       "de verzameling mogelijke uitvoerwaarden",
-       "de gemiddelde uitkomst op lange termijn"
+       "een uitkomst die van het toeval afhangt",
+       "de verzameling mogelijke uitvoerwaarden"
       ],
       "c": 1,
       "u": "«Differentiequotiënt» betekent: de gemiddelde helling over een interval.",
@@ -37790,7 +37790,7 @@ var VAKKEN = [
       "o": [
        "de gemiddelde helling over een interval",
        "een maximum of minimum van een functie",
-       "het grootste of kleinste bepalen met de afgeleide nul",
+       "de lijn die de grafiek in precies één punt raakt",
        "de mate van stijging of daling van een grafiek"
       ],
       "c": 0,
@@ -37814,7 +37814,7 @@ var VAKKEN = [
       "o": [
        "Procent",
        "Extreem",
-       "Extremum",
+       "Z-score",
        "Helling"
       ],
       "c": 1,
@@ -37827,7 +37827,7 @@ var VAKKEN = [
        "Extreem",
        "Raaklijn",
        "Helling",
-       "Extremum"
+       "Afgeleide"
       ],
       "c": 0,
       "u": "Het juiste begrip is «Extreem»: een maximum of minimum van een functie.",
@@ -37872,7 +37872,7 @@ var VAKKEN = [
      {
       "v": "Welke term past bij: \"de lijn die de grafiek in precies één punt raakt\"?",
       "o": [
-       "Extreem",
+       "Afgeleide",
        "Extremum",
        "Raaklijn",
        "Helling"
@@ -37884,9 +37884,9 @@ var VAKKEN = [
      {
       "v": "Wat houdt «Raaklijn» in?",
       "o": [
+       "de functie die de helling van de grafiek in elk punt geeft",
        "een top of dal waar f'(x) = 0 en het teken omslaat",
-       "het grootste of kleinste bepalen met de afgeleide nul",
-       "de mate van stijging of daling van een grafiek",
+       "een staafdiagram van de differenties per interval",
        "de lijn die de grafiek in precies één punt raakt"
       ],
       "c": 3,
@@ -37897,9 +37897,9 @@ var VAKKEN = [
       "v": "Wat betekent «Verschilquotiënt»?",
       "o": [
        "(f(b) − f(a))/(b − a): de gemiddelde verandering over [a, b]",
-       "de afgeleide van de afgeleide; f''(a) > 0 hoort bij een minimum",
        "het antwoord op de vraag: tot welke macht verhef ik het grondtal?",
-       "de grafiek van de afgeleide; snijdt de x-as bij een top of dal"
+       "de grafiek van de afgeleide; snijdt de x-as bij een top of dal",
+       "r tussen −1 en 1: de sterkte en richting van een lineair verband"
       ],
       "c": 0,
       "u": "«Verschilquotiënt» betekent: (f(b) − f(a))/(b − a): de gemiddelde verandering over [a, b].",
@@ -37934,8 +37934,8 @@ var VAKKEN = [
       "o": [
        "de afgeleide van de afgeleide; f''(a) > 0 hoort bij een minimum",
        "(f(b) − f(a))/(b − a): de gemiddelde verandering over [a, b]",
-       "de functie die de helling van de grafiek in elk punt geeft",
-       "de grafiek van de afgeleide; snijdt de x-as bij een top of dal"
+       "het grootste of kleinste bepalen met de afgeleide nul",
+       "de functie die de helling van de grafiek in elk punt geeft"
       ],
       "c": 1,
       "u": "«Verschilquotiënt» betekent: (f(b) − f(a))/(b − a): de gemiddelde verandering over [a, b].",
@@ -37968,8 +37968,8 @@ var VAKKEN = [
      {
       "v": "Welke term past bij: \"een top of dal waar f'(x) = 0 en het teken omslaat\"?",
       "o": [
+       "Helling",
        "Afgeleide",
-       "Extreem",
        "Extremum",
        "Raaklijn"
       ],
@@ -38028,7 +38028,7 @@ var VAKKEN = [
      {
       "v": "Wat houdt «Hellinggrafiek» in?",
       "o": [
-       "de lijn die de grafiek in precies één punt raakt",
+       "(f(b) − f(a))/(b − a): de gemiddelde verandering over [a, b]",
        "de afgeleide van de afgeleide; f''(a) > 0 hoort bij een minimum",
        "het grootste of kleinste bepalen met de afgeleide nul",
        "de grafiek van de afgeleide; snijdt de x-as bij een top of dal"
@@ -38160,9 +38160,9 @@ var VAKKEN = [
      {
       "v": "Wat betekent «Toenemende stijging»?",
       "o": [
-       "daalt steeds sneller",
-       "daalt, maar steeds langzamer",
        "een deel per honderd",
+       "hoe vaak een waarde voorkomt",
+       "daalt, maar steeds langzamer",
        "stijgt steeds sneller"
       ],
       "c": 3,
@@ -38172,9 +38172,9 @@ var VAKKEN = [
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"stijgt steeds sneller\"?",
       "o": [
-       "Afnemende stijging",
        "Tweede afgeleide",
-       "Toenemende daling",
+       "Binomiale verdeling",
+       "Afnemende stijging",
        "Toenemende stijging"
       ],
       "c": 3,
@@ -38186,8 +38186,8 @@ var VAKKEN = [
       "o": [
        "Afnemende stijging",
        "Toenemende stijging",
-       "Afnemende daling",
-       "Toenemende daling"
+       "Differentiequotiënt",
+       "Tweede afgeleide"
       ],
       "c": 1,
       "u": "Het juiste begrip is «Toenemende stijging»: stijgt steeds sneller.",
@@ -38196,9 +38196,9 @@ var VAKKEN = [
      {
       "v": "Wat houdt «Toenemende stijging» in?",
       "o": [
-       "stijgt, maar steeds langzamer",
-       "daalt steeds sneller",
+       "een maximum of minimum van een functie",
        "daalt, maar steeds langzamer",
+       "de gemiddelde helling over een interval",
        "stijgt steeds sneller"
       ],
       "c": 3,
@@ -38208,10 +38208,10 @@ var VAKKEN = [
      {
       "v": "Wat betekent «Afnemende stijging»?",
       "o": [
-       "een verband dat zich herhaalt",
+       "hoe vaak een waarde voorkomt",
        "de waarde op het begintijdstip",
        "stijgt, maar steeds langzamer",
-       "daalt, maar steeds langzamer"
+       "een verband dat zich herhaalt"
       ],
       "c": 2,
       "u": "«Afnemende stijging» betekent: stijgt, maar steeds langzamer.",
@@ -38220,8 +38220,8 @@ var VAKKEN = [
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"stijgt, maar steeds langzamer\"?",
       "o": [
-       "Toenemende stijging",
-       "Afnemende daling",
+       "Tweede afgeleide",
+       "Binomiale verdeling",
        "Afnemende stijging",
        "Toenemende daling"
       ],
@@ -38232,10 +38232,10 @@ var VAKKEN = [
      {
       "v": "Welke term past bij: \"stijgt, maar steeds langzamer\"?",
       "o": [
-       "Afnemende daling",
+       "Tweede afgeleide",
        "Afnemende stijging",
        "Toenemende daling",
-       "Toenemende stijging"
+       "Differentiequotiënt"
       ],
       "c": 1,
       "u": "Het juiste begrip is «Afnemende stijging»: stijgt, maar steeds langzamer.",
@@ -38245,9 +38245,9 @@ var VAKKEN = [
       "v": "Wat houdt «Afnemende stijging» in?",
       "o": [
        "stijgt, maar steeds langzamer",
+       "een maximum of minimum van een functie",
        "de gemiddelde helling over een interval",
-       "daalt, maar steeds langzamer",
-       "een maximum of minimum van een functie"
+       "daalt steeds sneller"
       ],
       "c": 0,
       "u": "«Afnemende stijging» betekent: stijgt, maar steeds langzamer.",
@@ -38256,10 +38256,10 @@ var VAKKEN = [
      {
       "v": "Wat betekent «Toenemende daling»?",
       "o": [
-       "daalt, maar steeds langzamer",
-       "een deel per honderd",
+       "een verband dat zich herhaalt",
+       "stijgt, maar steeds langzamer",
        "daalt steeds sneller",
-       "stijgt steeds sneller"
+       "een deel per honderd"
       ],
       "c": 2,
       "u": "«Toenemende daling» betekent: daalt steeds sneller.",
@@ -38270,8 +38270,8 @@ var VAKKEN = [
       "o": [
        "Afnemende daling",
        "Toenemende daling",
-       "Tweede afgeleide",
-       "Afnemende stijging"
+       "Normale verdeling",
+       "Tweede afgeleide"
       ],
       "c": 1,
       "u": "Het juiste begrip is «Toenemende daling»: daalt steeds sneller.",
@@ -38280,10 +38280,10 @@ var VAKKEN = [
      {
       "v": "Welke term past bij: \"daalt steeds sneller\"?",
       "o": [
-       "Tweede afgeleide",
        "Afnemende stijging",
+       "Differentiequotiënt",
        "Toenemende daling",
-       "Toenemende stijging"
+       "Tweede afgeleide"
       ],
       "c": 2,
       "u": "Het juiste begrip is «Toenemende daling»: daalt steeds sneller.",
@@ -38292,10 +38292,10 @@ var VAKKEN = [
      {
       "v": "Wat houdt «Toenemende daling» in?",
       "o": [
-       "daalt, maar steeds langzamer",
-       "stijgt, maar steeds langzamer",
+       "de gemiddelde helling over een interval",
+       "een maximum of minimum van een functie",
        "daalt steeds sneller",
-       "stijgt steeds sneller"
+       "stijgt, maar steeds langzamer"
       ],
       "c": 2,
       "u": "«Toenemende daling» betekent: daalt steeds sneller.",
@@ -38304,10 +38304,10 @@ var VAKKEN = [
      {
       "v": "Wat betekent «Afnemende daling»?",
       "o": [
-       "stijgt, maar steeds langzamer",
+       "hoe vaak een waarde voorkomt",
        "daalt, maar steeds langzamer",
-       "stijgt steeds sneller",
-       "hoe vaak een waarde voorkomt"
+       "afronden op een aantal decimalen",
+       "stijgt steeds sneller"
       ],
       "c": 1,
       "u": "«Afnemende daling» betekent: daalt, maar steeds langzamer.",
@@ -38316,10 +38316,10 @@ var VAKKEN = [
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"daalt, maar steeds langzamer\"?",
       "o": [
-       "Afnemende stijging",
+       "Toenemende daling",
        "Tweede afgeleide",
        "Afnemende daling",
-       "Toenemende stijging"
+       "Verschilquotiënt"
       ],
       "c": 2,
       "u": "Het juiste begrip is «Afnemende daling»: daalt, maar steeds langzamer.",
@@ -38330,7 +38330,7 @@ var VAKKEN = [
       "o": [
        "Afnemende daling",
        "Toenemende daling",
-       "Toenemende stijging",
+       "Verschilquotiënt",
        "Tweede afgeleide"
       ],
       "c": 0,
@@ -38341,9 +38341,9 @@ var VAKKEN = [
       "v": "Wat houdt «Afnemende daling» in?",
       "o": [
        "daalt, maar steeds langzamer",
+       "de gemiddelde helling over een interval",
        "een maximum of minimum van een functie",
-       "stijgt steeds sneller",
-       "stijgt, maar steeds langzamer"
+       "stijgt steeds sneller"
       ],
       "c": 0,
       "u": "«Afnemende daling» betekent: daalt, maar steeds langzamer.",
@@ -39796,7 +39796,7 @@ var VAKKEN = [
        "daalt steeds sneller",
        "een deel per honderd",
        "OR > 3 (of < ⅓)",
-       "stijgt steeds sneller"
+       "hoe vaak een waarde voorkomt"
       ],
       "c": 2,
       "u": "«Odds-ratio (OR = ad/bc)» betekent: OR > 3 (of < ⅓).",
@@ -44125,8 +44125,8 @@ var VAKKEN = [
       "v": "Welk begrip hoort bij deze omschrijving: \"samenhang ≠ oorzaak\"?",
       "o": [
        "Correlatie vs. causaliteit",
+       "Piramide van biomassa",
        "Negatieve terugkoppeling",
-       "Afhankelijke variabele",
        "Onafhankelijke variabele"
       ],
       "c": 0,
@@ -44137,9 +44137,9 @@ var VAKKEN = [
       "v": "Welke term past bij: \"samenhang ≠ oorzaak\"?",
       "o": [
        "Correlatie vs. causaliteit",
-       "Storende variabele",
+       "Fotosynthesesnelheid",
        "Onafhankelijke variabele",
-       "Afhankelijke variabele"
+       "Storende variabele"
       ],
       "c": 0,
       "u": "Het juiste begrip is «Correlatie vs. causaliteit»: samenhang ≠ oorzaak.",
@@ -44162,8 +44162,8 @@ var VAKKEN = [
       "o": [
        "een namaakbehandeling zonder werkzame stof",
        "wat de onderzoeker zelf instelt (de \"oorzaak\")",
-       "een deel van een populatie dat je onderzoekt",
-       "een toetsbare verwachting die je vooraf opstelt"
+       "een toetsbare verwachting die je vooraf opstelt",
+       "een deel van een populatie dat je onderzoekt"
       ],
       "c": 1,
       "u": "«Onafhankelijk» betekent: wat de onderzoeker zelf instelt (de \"oorzaak\").",
@@ -44196,10 +44196,10 @@ var VAKKEN = [
      {
       "v": "Wat houdt «Onafhankelijk» in?",
       "o": [
-       "een deel van een populatie dat je onderzoekt",
+       "een toetsbare verwachting die je vooraf opstelt",
        "een maat voor de spreiding van meetwaarden",
        "wat de onderzoeker zelf instelt (de \"oorzaak\")",
-       "een toetsbare verwachting die je vooraf opstelt"
+       "een deel van een populatie dat je onderzoekt"
       ],
       "c": 2,
       "u": "«Onafhankelijk» betekent: wat de onderzoeker zelf instelt (de \"oorzaak\").",
@@ -45066,8 +45066,8 @@ var VAKKEN = [
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"organel dat eiwitten maakt\"?",
       "o": [
-       "Genotype",
        "Genetica",
+       "Celdeling",
        "Fenotype",
        "Ribosoom"
       ],
@@ -45079,7 +45079,7 @@ var VAKKEN = [
       "v": "Welke term past bij: \"organel dat eiwitten maakt\"?",
       "o": [
        "Genetica",
-       "Fenotype",
+       "Celkern",
        "Ribosoom",
        "Genotype"
       ],
@@ -45273,7 +45273,7 @@ var VAKKEN = [
        "Mitochondriën",
        "Genexpressie",
        "Celmembraan",
-       "Mitochondrion"
+       "Celorganellen"
       ],
       "c": 1,
       "u": "Het juiste begrip is «Genexpressie»: het tot uiting komen van een gen in een eiwit.",
@@ -45308,8 +45308,8 @@ var VAKKEN = [
       "o": [
        "DNA-basenparen",
        "Mitochondriën",
-       "Spijsvertering",
-       "Mitochondrion"
+       "Celorganellen",
+       "Spijsvertering"
       ],
       "c": 0,
       "u": "Het juiste begrip is «DNA-basenparen»: adenine paart met thymine, guanine met cytosine.",
@@ -45321,7 +45321,7 @@ var VAKKEN = [
        "DNA-basenparen",
        "Mitochondrion",
        "Celorganellen",
-       "Mitochondriën"
+       "Chloroplast"
       ],
       "c": 0,
       "u": "Het juiste begrip is «DNA-basenparen»: adenine paart met thymine, guanine met cytosine.",
@@ -45450,10 +45450,10 @@ var VAKKEN = [
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"de waarneembare eigenschap van een organisme\"?",
       "o": [
-       "Genetica",
+       "Energie",
        "Fenotype",
        "Ribosoom",
-       "Genotype"
+       "Genetica"
       ],
       "c": 1,
       "u": "Het juiste begrip is «Fenotype»: de waarneembare eigenschap van een organisme.",
@@ -45462,10 +45462,10 @@ var VAKKEN = [
      {
       "v": "Welke term past bij: \"de waarneembare eigenschap van een organisme\"?",
       "o": [
-       "Genetica",
+       "Celkern",
        "Fenotype",
-       "Ribosoom",
-       "Genotype"
+       "Genetica",
+       "Ribosoom"
       ],
       "c": 1,
       "u": "Het juiste begrip is «Fenotype»: de waarneembare eigenschap van een organisme.",
@@ -45498,9 +45498,9 @@ var VAKKEN = [
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"de genetische samenstelling van een organisme\"?",
       "o": [
-       "Fenotype",
-       "Ribosoom",
        "Genetica",
+       "Ribosoom",
+       "Energie",
        "Genotype"
       ],
       "c": 3,
@@ -45510,8 +45510,8 @@ var VAKKEN = [
      {
       "v": "Welke term past bij: \"de genetische samenstelling van een organisme\"?",
       "o": [
+       "Celdeling",
        "Genetica",
-       "Fenotype",
        "Ribosoom",
        "Genotype"
       ],
@@ -45642,10 +45642,10 @@ var VAKKEN = [
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"organellen met eigen DNA waar de celademhaling plaatsvindt\"?",
       "o": [
-       "DNA-basenparen",
-       "Mitochondriën",
        "Celorganellen",
-       "Mitochondrion"
+       "Mitochondriën",
+       "Chloroplast",
+       "DNA-basenparen"
       ],
       "c": 1,
       "u": "Het juiste begrip is «Mitochondriën»: organellen met eigen DNA waar de celademhaling plaatsvindt.",
@@ -45654,8 +45654,8 @@ var VAKKEN = [
      {
       "v": "Welke term past bij: \"organellen met eigen DNA waar de celademhaling plaatsvindt\"?",
       "o": [
+       "DNA-basenparen",
        "Genexpressie",
-       "Mitochondrion",
        "Mitochondriën",
        "Celorganellen"
       ],
@@ -45787,8 +45787,8 @@ var VAKKEN = [
       "v": "Welk begrip hoort bij deze omschrijving: \"bouw en functie van de celonderdelen\"?",
       "o": [
        "Celorganellen",
+       "Genexpressie",
        "DNA-basenparen",
-       "Mitochondrion",
        "Mitochondriën"
       ],
       "c": 0,
@@ -45800,8 +45800,8 @@ var VAKKEN = [
       "o": [
        "Celorganellen",
        "Mitochondriën",
-       "Mitochondrion",
-       "DNA-basenparen"
+       "DNA-basenparen",
+       "Chloroplast"
       ],
       "c": 0,
       "u": "Het juiste begrip is «Celorganellen»: bouw en functie van de celonderdelen.",
@@ -45980,7 +45980,7 @@ var VAKKEN = [
       "o": [
        "Ribosoom",
        "Genetica",
-       "Fenotype",
+       "Energie",
        "Genotype"
       ],
       "c": 1,
@@ -45991,7 +45991,7 @@ var VAKKEN = [
       "v": "Welke term past bij: \"Mendelse overerving en stambomen\"?",
       "o": [
        "Genetica",
-       "Genotype",
+       "Celkern",
        "Ribosoom",
        "Fenotype"
       ],
@@ -46074,9 +46074,9 @@ var VAKKEN = [
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"celademhaling: levert energie (ATP)\"?",
       "o": [
-       "DNA-basenparen",
-       "Mitochondriën",
+       "Genexpressie",
        "Celorganellen",
+       "DNA-basenparen",
        "Mitochondrion"
       ],
       "c": 3,
@@ -46087,8 +46087,8 @@ var VAKKEN = [
       "v": "Welke term past bij: \"celademhaling: levert energie (ATP)\"?",
       "o": [
        "Mitochondrion",
+       "Celmembraan",
        "Celorganellen",
-       "Mitochondriën",
        "DNA-basenparen"
       ],
       "c": 0,
@@ -46122,7 +46122,7 @@ var VAKKEN = [
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"fotosynthese: legt lichtenergie vast\"?",
       "o": [
-       "Afhankelijke variabele",
+       "Allopatrische speciatie",
        "Onafhankelijke variabele",
        "Negatieve terugkoppeling",
        "Bladgroenkorrel (plant)"
@@ -55620,10 +55620,10 @@ var VAKKEN = [
      {
       "v": "Wat betekent «Insuline»?",
       "o": [
-       "de gerichte afweer die immunologisch geheugen vormt",
+       "voedsel → kleine stoffen; opname in het bloed",
        "hormonen & negatieve terugkoppeling (homeostase)",
        "het hormoon dat de bloedsuikerspiegel verlaagt",
-       "het hormoon dat de bloedsuikerspiegel verhoogt"
+       "het orgaan dat glycogeen als reservesuiker bewaart"
       ],
       "c": 2,
       "u": "«Insuline» betekent: het hormoon dat de bloedsuikerspiegel verlaagt.",
@@ -55656,8 +55656,8 @@ var VAKKEN = [
      {
       "v": "Wat houdt «Insuline» in?",
       "o": [
-       "het hormoon dat de bloedsuikerspiegel verhoogt",
-       "de gerichte afweer die immunologisch geheugen vormt",
+       "hormonen & negatieve terugkoppeling (homeostase)",
+       "een snelle, onwillekeurige reactie op een prikkel",
        "het hormoon dat de bloedsuikerspiegel verlaagt",
        "voedsel → kleine stoffen; opname in het bloed"
       ],
@@ -55668,9 +55668,9 @@ var VAKKEN = [
      {
       "v": "Wat betekent «Glucagon»?",
       "o": [
-       "voedsel → kleine stoffen; opname in het bloed",
+       "de beweegbare verbinding tussen twee botten",
        "een snelle, onwillekeurige reactie op een prikkel",
-       "het hormoon dat de bloedsuikerspiegel verlaagt",
+       "voedsel → kleine stoffen; opname in het bloed",
        "het hormoon dat de bloedsuikerspiegel verhoogt"
       ],
       "c": 3,
@@ -55704,10 +55704,10 @@ var VAKKEN = [
      {
       "v": "Wat houdt «Glucagon» in?",
       "o": [
+       "voedsel → kleine stoffen; opname in het bloed",
        "de beweegbare verbinding tussen twee botten",
-       "hormonen & negatieve terugkoppeling (homeostase)",
        "het hormoon dat de bloedsuikerspiegel verhoogt",
-       "voedsel → kleine stoffen; opname in het bloed"
+       "hormonen & negatieve terugkoppeling (homeostase)"
       ],
       "c": 2,
       "u": "«Glucagon» betekent: het hormoon dat de bloedsuikerspiegel verhoogt.",
@@ -55717,9 +55717,9 @@ var VAKKEN = [
       "v": "Wat betekent «Alvleesklier»?",
       "o": [
        "het hormoon dat de bloedsuikerspiegel verhoogt",
-       "hormonen & negatieve terugkoppeling (homeostase)",
+       "de beweegbare verbinding tussen twee botten",
        "het orgaan dat insuline en glucagon produceert",
-       "het hormoon dat de bloedsuikerspiegel verlaagt"
+       "hormonen & negatieve terugkoppeling (homeostase)"
       ],
       "c": 2,
       "u": "«Alvleesklier» betekent: het orgaan dat insuline en glucagon produceert.",
@@ -55752,8 +55752,8 @@ var VAKKEN = [
      {
       "v": "Wat houdt «Alvleesklier» in?",
       "o": [
-       "het hormoon dat de bloedsuikerspiegel verhoogt",
        "voedsel → kleine stoffen; opname in het bloed",
+       "netto verplaatsing van hoge naar lage concentratie",
        "het hormoon dat de bloedsuikerspiegel verlaagt",
        "het orgaan dat insuline en glucagon produceert"
       ],
@@ -56007,7 +56007,7 @@ var VAKKEN = [
        "het orgaan dat insuline en glucagon produceert",
        "het hormoon dat de bloedsuikerspiegel verlaagt",
        "voedsel → kleine stoffen; opname in het bloed",
-       "het hormoon dat de bloedsuikerspiegel verhoogt"
+       "de beweegbare verbinding tussen twee botten"
       ],
       "c": 2,
       "u": "«Spijsvertering» betekent: voedsel → kleine stoffen; opname in het bloed.",
@@ -56042,7 +56042,7 @@ var VAKKEN = [
       "o": [
        "voedsel → kleine stoffen; opname in het bloed",
        "het orgaan dat insuline en glucagon produceert",
-       "het hormoon dat de bloedsuikerspiegel verhoogt",
+       "de beweegbare verbinding tussen twee botten",
        "het hormoon dat de bloedsuikerspiegel verlaagt"
       ],
       "c": 0,
@@ -56293,9 +56293,9 @@ var VAKKEN = [
       "v": "Wat betekent «Verteringsstelsel»?",
       "o": [
        "het bloed brengt O₂ en voedingsstoffen naar de cellen en voert CO₂ en afval af",
-       "het bloedvat dat zuurstofarm bloed van het hart naar de longen voert",
+       "filteren afvalstoffen (ureum) uit het bloed en regelen de waterbalans",
        "voedsel wordt met enzymen afgebroken tot kleine moleculen (glucose, aminozuren), die in de dunne darm het bloed in gaan",
-       "filteren afvalstoffen (ureum) uit het bloed en regelen de waterbalans"
+       "het bloedvat dat zuurstofarm bloed van het hart naar de longen voert"
       ],
       "c": 2,
       "u": "«Verteringsstelsel» betekent: voedsel wordt met enzymen afgebroken tot kleine moleculen (glucose, aminozuren), die in de dunne darm het bloed in gaan.",
@@ -62577,9 +62577,9 @@ var VAKKEN = [
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"een referentie zonder de testvariabele om effecten te vergelijken\"?",
       "o": [
-       "Haber-Bosch-proces",
-       "Controle-experiment",
        "Herhaalmetingen",
+       "Controle-experiment",
+       "Elektronegativiteit",
        "Valentie-elektronen"
       ],
       "c": 1,
@@ -62675,8 +62675,8 @@ var VAKKEN = [
       "o": [
        "Polair molecuul",
        "Lineair verband",
-       "Apolair molecuul",
-       "Duurzame energie"
+       "Duurzame energie",
+       "Betrouwbaarheid"
       ],
       "c": 1,
       "u": "Het juiste begrip is «Lineair verband»: een rechte lijn door de oorsprong: y is evenredig met x.",
@@ -62769,8 +62769,8 @@ var VAKKEN = [
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"de cijfers die de nauwkeurigheid van een meetwaarde aangeven\"?",
       "o": [
-       "Afhankelijke variabele",
        "Volledige verbranding",
+       "Circulaire economie",
        "Significante cijfers",
        "Onafhankelijke variabele"
       ],
@@ -62781,9 +62781,9 @@ var VAKKEN = [
      {
       "v": "Welke term past bij: \"de cijfers die de nauwkeurigheid van een meetwaarde aangeven\"?",
       "o": [
-       "Lineair verband",
+       "Controle-experiment",
        "Afhankelijke variabele",
-       "Onafhankelijke variabele",
+       "Lineair verband",
        "Significante cijfers"
       ],
       "c": 3,
@@ -63661,7 +63661,7 @@ var VAKKEN = [
       "v": "Wat betekent «Atoom»?",
       "o": [
        "de kleinste bouwsteen van een element",
-       "een molecuul met een netto-dipoolmoment",
+       "een binding waarbij atomen elektronen delen",
        "waterstofbruggen en vanderwaalskrachten",
        "een molecuul zonder netto-dipoolmoment"
       ],
@@ -63768,9 +63768,9 @@ var VAKKEN = [
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"met een ongelijke ladingsverdeling\"?",
       "o": [
-       "Alkaan",
+       "Osmose",
        "Atoom",
-       "Milieu",
+       "Alkeen",
        "Polair"
       ],
       "c": 3,
@@ -63793,8 +63793,8 @@ var VAKKEN = [
       "v": "Wat houdt «Polair» in?",
       "o": [
        "met een ongelijke ladingsverdeling",
-       "een molecuul met een netto-dipoolmoment",
        "de mate waarin een stof oplost",
+       "de kleinste bouwsteen van een element",
        "een molecuul zonder netto-dipoolmoment"
       ],
       "c": 0,
@@ -63900,8 +63900,8 @@ var VAKKEN = [
      {
       "v": "Wat betekent «Ionbinding»?",
       "o": [
-       "de elektronen in de buitenste schil die het chemisch gedrag bepalen",
        "de energie die vrijkomt bij het vormen van een ionrooster uit gasionen",
+       "de elektronen in de buitenste schil die het chemisch gedrag bepalen",
        "de binding waarbij een metaal elektronen overdraagt aan een niet-metaal",
        "de verplaatsing van water door een membraan naar de hoogste concentratie"
       ],
@@ -63948,10 +63948,10 @@ var VAKKEN = [
      {
       "v": "Wat betekent «Covalente binding»?",
       "o": [
-       "het steeds opnieuw gebruiken van materialen",
+       "een molecuul met een netto-dipoolmoment",
        "een binding waarbij atomen elektronen delen",
        "de kleinste bouwsteen van een element",
-       "waterstofbruggen en vanderwaalskrachten"
+       "het steeds opnieuw gebruiken van materialen"
       ],
       "c": 1,
       "u": "«Covalente binding» betekent: een binding waarbij atomen elektronen delen.",
@@ -63961,7 +63961,7 @@ var VAKKEN = [
       "v": "Welk begrip hoort bij deze omschrijving: \"een binding waarbij atomen elektronen delen\"?",
       "o": [
        "Polair molecuul",
-       "Apolair molecuul",
+       "Functionele groep",
        "Periodiek systeem",
        "Covalente binding"
       ],
@@ -63975,7 +63975,7 @@ var VAKKEN = [
        "Periodiek systeem",
        "Apolair molecuul",
        "Covalente binding",
-       "Polair molecuul"
+       "Intermoleculaire krachten"
       ],
       "c": 2,
       "u": "Het juiste begrip is «Covalente binding»: een binding waarbij atomen elektronen delen.",
@@ -63984,10 +63984,10 @@ var VAKKEN = [
      {
       "v": "Wat houdt «Covalente binding» in?",
       "o": [
-       "een molecuul zonder netto-dipoolmoment",
+       "een molecuul met een netto-dipoolmoment",
        "waterstofbruggen en vanderwaalskrachten",
        "een binding waarbij atomen elektronen delen",
-       "een molecuul met een netto-dipoolmoment"
+       "de kleinste bouwsteen van een element"
       ],
       "c": 2,
       "u": "«Covalente binding» betekent: een binding waarbij atomen elektronen delen.",
@@ -64176,7 +64176,7 @@ var VAKKEN = [
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"de ordening van elementen op atoomnummer en valentie-elektronen\"?",
       "o": [
-       "Polair molecuul",
+       "Exotherme reactie",
        "Covalente binding",
        "Periodiek systeem",
        "Apolair molecuul"
@@ -64191,7 +64191,7 @@ var VAKKEN = [
        "Apolair molecuul",
        "Covalente binding",
        "Periodiek systeem",
-       "Polair molecuul"
+       "Intermoleculaire krachten"
       ],
       "c": 2,
       "u": "Het juiste begrip is «Periodiek systeem»: de ordening van elementen op atoomnummer en valentie-elektronen.",
@@ -64308,7 +64308,7 @@ var VAKKEN = [
      {
       "v": "Wat betekent «Intermoleculaire krachten»?",
       "o": [
-       "een molecuul met een netto-dipoolmoment",
+       "thermoplast vs. thermoharder; recyclen",
        "een molecuul zonder netto-dipoolmoment",
        "de kleinste bouwsteen van een element",
        "waterstofbruggen en vanderwaalskrachten"
@@ -64321,9 +64321,9 @@ var VAKKEN = [
       "v": "Welk begrip hoort bij deze omschrijving: \"waterstofbruggen en vanderwaalskrachten\"?",
       "o": [
        "Onafhankelijke variabele",
-       "Covalente binding",
+       "Le Chatelier-principe",
        "Intermoleculaire krachten",
-       "Afhankelijke variabele"
+       "Covalente binding"
       ],
       "c": 2,
       "u": "Het juiste begrip is «Intermoleculaire krachten»: waterstofbruggen en vanderwaalskrachten.",
@@ -64332,7 +64332,7 @@ var VAKKEN = [
      {
       "v": "Welke term past bij: \"waterstofbruggen en vanderwaalskrachten\"?",
       "o": [
-       "Apolair molecuul",
+       "Covalente binding",
        "Periodiek systeem",
        "Intermoleculaire krachten",
        "Polair molecuul"
@@ -64346,7 +64346,7 @@ var VAKKEN = [
       "o": [
        "de kleinste bouwsteen van een element",
        "waterstofbruggen en vanderwaalskrachten",
-       "een molecuul met een netto-dipoolmoment",
+       "een binding waarbij atomen elektronen delen",
        "een molecuul zonder netto-dipoolmoment"
       ],
       "c": 1,
@@ -65065,9 +65065,9 @@ var VAKKEN = [
       "v": "Wat betekent «Evenwicht»?",
       "o": [
        "toestand waarin heen- en terugreactie even snel gaan",
-       "een stof opgebouwd uit positieve en negatieve ionen",
-       "de reactie van een zuur met een base tot zout en water",
-       "een stof die zowel als zuur als als base kan reageren"
+       "een stof die zowel als zuur als als base kan reageren",
+       "de molverhoudingen tussen stoffen in een reactie",
+       "een stof opgebouwd uit positieve en negatieve ionen"
       ],
       "c": 0,
       "u": "«Evenwicht» betekent: toestand waarin heen- en terugreactie even snel gaan.",
@@ -65101,9 +65101,9 @@ var VAKKEN = [
       "v": "Wat houdt «Evenwicht» in?",
       "o": [
        "toestand waarin heen- en terugreactie even snel gaan",
-       "de reactie van een zuur met een base tot zout en water",
        "een stof die zowel als zuur als als base kan reageren",
-       "de molverhoudingen tussen stoffen in een reactie"
+       "concentratiebepaling via reactie met een bekende oplossing",
+       "de reactie van een zuur met een base tot zout en water"
       ],
       "c": 0,
       "u": "«Evenwicht» betekent: toestand waarin heen- en terugreactie even snel gaan.",
@@ -65124,9 +65124,9 @@ var VAKKEN = [
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"een maat voor de zuurgraad\"?",
       "o": [
-       "Zout",
+       "Base",
        "pH",
-       "−NH₂",
+       "Zuur",
        "Mol"
       ],
       "c": 1,
@@ -65137,8 +65137,8 @@ var VAKKEN = [
       "v": "Welke term past bij: \"een maat voor de zuurgraad\"?",
       "o": [
        "Mol",
+       "Zout",
        "Base",
-       "Zuur",
        "pH"
       ],
       "c": 3,
@@ -65148,7 +65148,7 @@ var VAKKEN = [
      {
       "v": "Wat houdt «pH» in?",
       "o": [
-       "een reactie die energie afgeeft",
+       "een zuur dat volledig dissocieert",
        "een maat voor de zuurgraad",
        "meer deeltjes → meer botsingen",
        "een reactie die energie opneemt"
@@ -65244,10 +65244,10 @@ var VAKKEN = [
      {
       "v": "Wat houdt «Molverhouding» in?",
       "o": [
-       "de rekeneenheid voor hoeveelheid stof",
+       "een zuur dat volledig dissocieert",
        "de verhouding waarin stoffen reageren",
        "een stof die waterstofionen kan afstaan",
-       "een stof die waterstofionen kan opnemen"
+       "de rekeneenheid voor hoeveelheid stof"
       ],
       "c": 1,
       "u": "«Molverhouding» betekent: de verhouding waarin stoffen reageren.",
@@ -65257,9 +65257,9 @@ var VAKKEN = [
       "v": "Wat betekent «Zuur»?",
       "o": [
        "een stof die waterstofionen kan afstaan",
-       "de verhouding waarin stoffen reageren",
        "de hoeveelheid opgeloste stof per liter",
-       "een stof die waterstofionen kan opnemen"
+       "een reactie die vrijwel volledig verloopt",
+       "deeltjes sneller → vaker én harder botsen"
       ],
       "c": 0,
       "u": "«Zuur» betekent: een stof die waterstofionen kan afstaan.",
@@ -65269,8 +65269,8 @@ var VAKKEN = [
       "v": "Welk begrip hoort bij deze omschrijving: \"een stof die waterstofionen kan afstaan\"?",
       "o": [
        "Zuur",
+       "PLA",
        "Mol",
-       "Zout",
        "Base"
       ],
       "c": 0,
@@ -65280,10 +65280,10 @@ var VAKKEN = [
      {
       "v": "Welke term past bij: \"een stof die waterstofionen kan afstaan\"?",
       "o": [
-       "Mol",
-       "Zout",
+       "Base",
+       "pH",
        "Zuur",
-       "Base"
+       "Mol"
       ],
       "c": 2,
       "u": "Het juiste begrip is «Zuur»: een stof die waterstofionen kan afstaan.",
@@ -65292,9 +65292,9 @@ var VAKKEN = [
      {
       "v": "Wat houdt «Zuur» in?",
       "o": [
-       "een stof die waterstofionen kan opnemen",
        "de hoeveelheid opgeloste stof per liter",
        "de verhouding waarin stoffen reageren",
+       "deeltjes sneller → vaker én harder botsen",
        "een stof die waterstofionen kan afstaan"
       ],
       "c": 3,
@@ -65304,10 +65304,10 @@ var VAKKEN = [
      {
       "v": "Wat betekent «Base»?",
       "o": [
-       "deeltjes sneller → vaker én harder botsen",
+       "de rekeneenheid voor hoeveelheid stof",
        "een stof die waterstofionen kan opnemen",
-       "een stof die waterstofionen kan afstaan",
-       "de rekeneenheid voor hoeveelheid stof"
+       "de hoeveelheid opgeloste stof per liter",
+       "een zuur dat maar gedeeltelijk dissocieert"
       ],
       "c": 1,
       "u": "«Base» betekent: een stof die waterstofionen kan opnemen.",
@@ -65317,9 +65317,9 @@ var VAKKEN = [
       "v": "Welk begrip hoort bij deze omschrijving: \"een stof die waterstofionen kan opnemen\"?",
       "o": [
        "Zuur",
-       "Mol",
+       "PLA",
        "Base",
-       "Zout"
+       "Mol"
       ],
       "c": 2,
       "u": "Het juiste begrip is «Base»: een stof die waterstofionen kan opnemen.",
@@ -65328,9 +65328,9 @@ var VAKKEN = [
      {
       "v": "Welke term past bij: \"een stof die waterstofionen kan opnemen\"?",
       "o": [
-       "Mol",
+       "pH",
        "Zuur",
-       "Zout",
+       "Mol",
        "Base"
       ],
       "c": 3,
@@ -65341,9 +65341,9 @@ var VAKKEN = [
       "v": "Wat houdt «Base» in?",
       "o": [
        "een stof die waterstofionen kan opnemen",
-       "een stof die waterstofionen kan afstaan",
+       "de rekeneenheid voor hoeveelheid stof",
        "de verhouding waarin stoffen reageren",
-       "meer contactoppervlak (poeder i.p.v. brok)"
+       "deeltjes sneller → vaker én harder botsen"
       ],
       "c": 0,
       "u": "«Base» betekent: een stof die waterstofionen kan opnemen.",
@@ -65364,10 +65364,10 @@ var VAKKEN = [
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"een stof opgebouwd uit positieve en negatieve ionen\"?",
       "o": [
-       "Mol",
+       "PLA",
        "Zout",
-       "Base",
-       "Zuur"
+       "Mol",
+       "Base"
       ],
       "c": 1,
       "u": "Het juiste begrip is «Zout»: een stof opgebouwd uit positieve en negatieve ionen.",
@@ -65376,10 +65376,10 @@ var VAKKEN = [
      {
       "v": "Welke term past bij: \"een stof opgebouwd uit positieve en negatieve ionen\"?",
       "o": [
-       "Zuur",
+       "Mol",
        "Base",
        "Zout",
-       "Mol"
+       "pH"
       ],
       "c": 2,
       "u": "Het juiste begrip is «Zout»: een stof opgebouwd uit positieve en negatieve ionen.",
@@ -65460,7 +65460,7 @@ var VAKKEN = [
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"de rekeneenheid voor hoeveelheid stof\"?",
       "o": [
-       "Zuur",
+       "PLA",
        "Zout",
        "Mol",
        "Base"
@@ -65472,7 +65472,7 @@ var VAKKEN = [
      {
       "v": "Welke term past bij: \"de rekeneenheid voor hoeveelheid stof\"?",
       "o": [
-       "Zuur",
+       "pH",
        "Base",
        "Mol",
        "Zout"
@@ -65496,7 +65496,7 @@ var VAKKEN = [
      {
       "v": "Wat betekent «Concentratie»?",
       "o": [
-       "een stof die waterstofionen kan opnemen",
+       "meer contactoppervlak (poeder i.p.v. brok)",
        "de hoeveelheid opgeloste stof per liter",
        "een reactie die vrijwel volledig verloopt",
        "een stof die waterstofionen kan afstaan"
@@ -65511,7 +65511,7 @@ var VAKKEN = [
        "Molverhouding",
        "Neutralisatie",
        "Concentratie",
-       "Thermoharder"
+       "Reactietypen"
       ],
       "c": 2,
       "u": "Het juiste begrip is «Concentratie»: de hoeveelheid opgeloste stof per liter.",
@@ -65532,8 +65532,8 @@ var VAKKEN = [
      {
       "v": "Wat houdt «Concentratie» in?",
       "o": [
-       "een stof die waterstofionen kan afstaan",
        "de verhouding waarin stoffen reageren",
+       "deeltjes sneller → vaker én harder botsen",
        "de hoeveelheid opgeloste stof per liter",
        "een stof die waterstofionen kan opnemen"
       ],
@@ -65546,7 +65546,7 @@ var VAKKEN = [
       "o": [
        "concentratiebepaling via reactie met een bekende oplossing",
        "stof die een reactie versnelt zonder verbruikt te worden",
-       "het afstaan van elektronen, waardoor het oxidatiegetal stijgt",
+       "de toestand waarin voorwaartse en terugreactie even snel zijn",
        "het opnemen van elektronen, waardoor het oxidatiegetal daalt"
       ],
       "c": 0,
@@ -65556,8 +65556,8 @@ var VAKKEN = [
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"concentratiebepaling via reactie met een bekende oplossing\"?",
       "o": [
-       "Oxidatie",
        "Reductie",
+       "Oxidatie",
        "Amfoteer",
        "Titratie"
       ],
@@ -65570,8 +65570,8 @@ var VAKKEN = [
       "o": [
        "Titratie",
        "Amfoteer",
-       "Oxidatie",
-       "Reductie"
+       "Reductie",
+       "Oxidatie"
       ],
       "c": 0,
       "u": "Het juiste begrip is «Titratie»: concentratiebepaling via reactie met een bekende oplossing.",
@@ -65665,7 +65665,7 @@ var VAKKEN = [
       "v": "Welke term past bij: \"een reactie die vrijwel volledig verloopt\"?",
       "o": [
        "Hogere concentratie",
-       "Endotherme reactie",
+       "Hogere temperatuur",
        "Exotherme reactie",
        "Aflopende reactie"
       ],
@@ -65737,7 +65737,7 @@ var VAKKEN = [
       "v": "Wat betekent «Endotherme reactie»?",
       "o": [
        "een reactie die energie opneemt",
-       "een reactie die energie afgeeft",
+       "het hergebruiken van materialen",
        "een zuur dat volledig dissocieert",
        "meer deeltjes → meer botsingen"
       ],
@@ -65751,7 +65751,7 @@ var VAKKEN = [
        "Chemisch evenwicht",
        "Endotherme reactie",
        "Hogere concentratie",
-       "Exotherme reactie"
+       "Hogere temperatuur"
       ],
       "c": 1,
       "u": "Het juiste begrip is «Endotherme reactie»: een reactie die energie opneemt.",
@@ -65762,8 +65762,8 @@ var VAKKEN = [
       "o": [
        "Endotherme reactie",
        "Hogere concentratie",
-       "Chemisch evenwicht",
-       "Hogere temperatuur"
+       "Hogere temperatuur",
+       "Chemisch evenwicht"
       ],
       "c": 0,
       "u": "Het juiste begrip is «Endotherme reactie»: een reactie die energie opneemt.",
@@ -65772,10 +65772,10 @@ var VAKKEN = [
      {
       "v": "Wat houdt «Endotherme reactie» in?",
       "o": [
-       "een zuur dat volledig dissocieert",
+       "de rekeneenheid voor hoeveelheid stof",
        "een reactie die energie opneemt",
-       "meer deeltjes → meer botsingen",
-       "een reactie die energie afgeeft"
+       "een zuur dat volledig dissocieert",
+       "meer deeltjes → meer botsingen"
       ],
       "c": 1,
       "u": "«Endotherme reactie» betekent: een reactie die energie opneemt.",
@@ -65784,8 +65784,8 @@ var VAKKEN = [
      {
       "v": "Wat betekent «Exotherme reactie»?",
       "o": [
+       "het hergebruiken van materialen",
        "een zuur dat volledig dissocieert",
-       "een reactie die energie opneemt",
        "meer deeltjes → meer botsingen",
        "een reactie die energie afgeeft"
       ],
@@ -65796,10 +65796,10 @@ var VAKKEN = [
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"een reactie die energie afgeeft\"?",
       "o": [
-       "Hogere temperatuur",
+       "Hogere concentratie",
        "Exotherme reactie",
-       "Aflopende reactie",
-       "Endotherme reactie"
+       "Chemisch evenwicht",
+       "Aflopende reactie"
       ],
       "c": 1,
       "u": "Het juiste begrip is «Exotherme reactie»: een reactie die energie afgeeft.",
@@ -65808,10 +65808,10 @@ var VAKKEN = [
      {
       "v": "Welke term past bij: \"een reactie die energie afgeeft\"?",
       "o": [
-       "Hogere temperatuur",
+       "Hogere concentratie",
        "Aflopende reactie",
        "Exotherme reactie",
-       "Chemisch evenwicht"
+       "Hogere temperatuur"
       ],
       "c": 2,
       "u": "Het juiste begrip is «Exotherme reactie»: een reactie die energie afgeeft.",
@@ -65820,10 +65820,10 @@ var VAKKEN = [
      {
       "v": "Wat houdt «Exotherme reactie» in?",
       "o": [
-       "een reactie die energie opneemt",
-       "meer deeltjes → meer botsingen",
+       "de rekeneenheid voor hoeveelheid stof",
+       "een zuur dat volledig dissocieert",
        "een reactie die energie afgeeft",
-       "een zuur dat volledig dissocieert"
+       "meer deeltjes → meer botsingen"
       ],
       "c": 2,
       "u": "«Exotherme reactie» betekent: een reactie die energie afgeeft.",
@@ -65881,9 +65881,9 @@ var VAKKEN = [
       "v": "Wat betekent «Chemisch evenwicht»?",
       "o": [
        "het afstaan van elektronen, waardoor het oxidatiegetal stijgt",
-       "concentratiebepaling via reactie met een bekende oplossing",
+       "een stof die zowel als zuur als als base kan reageren",
        "de toestand waarin voorwaartse en terugreactie even snel zijn",
-       "het opnemen van elektronen, waardoor het oxidatiegetal daalt"
+       "de reactie van een zuur met een base tot zout en water"
       ],
       "c": 2,
       "u": "«Chemisch evenwicht» betekent: de toestand waarin voorwaartse en terugreactie even snel zijn.",
@@ -65919,7 +65919,7 @@ var VAKKEN = [
        "concentratiebepaling via reactie met een bekende oplossing",
        "de toestand waarin voorwaartse en terugreactie even snel zijn",
        "het afstaan van elektronen, waardoor het oxidatiegetal stijgt",
-       "het opnemen van elektronen, waardoor het oxidatiegetal daalt"
+       "de reactie van een zuur met een base tot zout en water"
       ],
       "c": 1,
       "u": "«Chemisch evenwicht» betekent: de toestand waarin voorwaartse en terugreactie even snel zijn.",
@@ -65928,10 +65928,10 @@ var VAKKEN = [
      {
       "v": "Wat betekent «Zwak zuur»?",
       "o": [
+       "een reactie die vrijwel volledig verloopt",
        "meer contactoppervlak (poeder i.p.v. brok)",
-       "deeltjes sneller → vaker én harder botsen",
        "een zuur dat maar gedeeltelijk dissocieert",
-       "een reactie die vrijwel volledig verloopt"
+       "een stof die met kleur de zuurgraad aangeeft"
       ],
       "c": 2,
       "u": "«Zwak zuur» betekent: een zuur dat maar gedeeltelijk dissocieert.",
@@ -65964,10 +65964,10 @@ var VAKKEN = [
      {
       "v": "Wat houdt «Zwak zuur» in?",
       "o": [
-       "een reactie die vrijwel volledig verloopt",
        "een stof die waterstofionen kan afstaan",
+       "deeltjes sneller → vaker én harder botsen",
        "een zuur dat maar gedeeltelijk dissocieert",
-       "meer contactoppervlak (poeder i.p.v. brok)"
+       "een reactie die vrijwel volledig verloopt"
       ],
       "c": 2,
       "u": "«Zwak zuur» betekent: een zuur dat maar gedeeltelijk dissocieert.",
@@ -65977,7 +65977,7 @@ var VAKKEN = [
       "v": "Wat betekent «Sterk zuur»?",
       "o": [
        "een reactie die energie opneemt",
-       "een reactie die energie afgeeft",
+       "meer deeltjes → meer botsingen",
        "een zuur dat volledig dissocieert",
        "de verhouding waarin stoffen reageren"
       ],
@@ -66012,8 +66012,8 @@ var VAKKEN = [
      {
       "v": "Wat houdt «Sterk zuur» in?",
       "o": [
-       "meer deeltjes → meer botsingen",
        "een stof die waterstofionen kan afstaan",
+       "de rekeneenheid voor hoeveelheid stof",
        "een reactie die energie afgeeft",
        "een zuur dat volledig dissocieert"
       ],
@@ -66049,7 +66049,7 @@ var VAKKEN = [
       "v": "Wat betekent «Reductie»?",
       "o": [
        "het opnemen van elektronen, waardoor het oxidatiegetal daalt",
-       "het afstaan van elektronen, waardoor het oxidatiegetal stijgt",
+       "een stof die zowel als zuur als als base kan reageren",
        "de toestand waarin voorwaartse en terugreactie even snel zijn",
        "stof die een reactie versnelt zonder verbruikt te worden"
       ],
@@ -66087,7 +66087,7 @@ var VAKKEN = [
        "het opnemen van elektronen, waardoor het oxidatiegetal daalt",
        "de toestand waarin voorwaartse en terugreactie even snel zijn",
        "concentratiebepaling via reactie met een bekende oplossing",
-       "het afstaan van elektronen, waardoor het oxidatiegetal stijgt"
+       "een stof die zowel als zuur als als base kan reageren"
       ],
       "c": 0,
       "u": "«Reductie» betekent: het opnemen van elektronen, waardoor het oxidatiegetal daalt. Ezelsbruggetje OIL RIG: Reduction Is Gain van elektronen.",
@@ -66216,10 +66216,10 @@ var VAKKEN = [
      {
       "v": "Welke term past bij: \"kloppende vergelijkingen; mol, massa, concentratie\"?",
       "o": [
-       "Exotherme reactie",
-       "Reacties & rekenen",
        "Zuren en basen",
-       "Endotherme reactie"
+       "Reacties & rekenen",
+       "Hogere temperatuur",
+       "Exotherme reactie"
       ],
       "c": 1,
       "u": "Het juiste begrip is «Reacties & rekenen»: kloppende vergelijkingen; mol, massa, concentratie.",
@@ -66264,7 +66264,7 @@ var VAKKEN = [
      {
       "v": "Welke term past bij: \"Brønsted-Lowry; pH; sterk vs. zwak\"?",
       "o": [
-       "Endotherme reactie",
+       "Stoichiometrie",
        "Reacties & rekenen",
        "Zuren en basen",
        "Exotherme reactie"
@@ -66337,9 +66337,9 @@ var VAKKEN = [
       "v": "Wat betekent «Hogere concentratie»?",
       "o": [
        "meer deeltjes → meer botsingen",
-       "een reactie die energie afgeeft",
+       "een zuur dat volledig dissocieert",
        "een reactie die energie opneemt",
-       "een zuur dat volledig dissocieert"
+       "een maat voor de zuurgraad"
       ],
       "c": 0,
       "u": "«Hogere concentratie» betekent: meer deeltjes → meer botsingen.",
@@ -66372,10 +66372,10 @@ var VAKKEN = [
      {
       "v": "Wat houdt «Hogere concentratie» in?",
       "o": [
-       "een zuur dat volledig dissocieert",
+       "de rekeneenheid voor hoeveelheid stof",
        "meer deeltjes → meer botsingen",
        "een reactie die energie afgeeft",
-       "een reactie die energie opneemt"
+       "een zuur dat volledig dissocieert"
       ],
       "c": 1,
       "u": "«Hogere concentratie» betekent: meer deeltjes → meer botsingen.",
@@ -67259,8 +67259,8 @@ var VAKKEN = [
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"een verzadigde koolwaterstof\"?",
       "o": [
-       "Alcohol",
-       "Alkeen",
+       "Ester",
+       "Isomeer",
        "Polair",
        "Alkaan"
       ],
@@ -67271,10 +67271,10 @@ var VAKKEN = [
      {
       "v": "Welke term past bij: \"een verzadigde koolwaterstof\"?",
       "o": [
-       "Alkeen",
        "Isomeer",
+       "Amine",
        "Alkaan",
-       "Ester"
+       "Alcohol"
       ],
       "c": 2,
       "u": "Het juiste begrip is «Alkaan»: een verzadigde koolwaterstof.",
@@ -67307,10 +67307,10 @@ var VAKKEN = [
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"een koolwaterstof met een dubbele binding\"?",
       "o": [
-       "Polair",
-       "Isomeer",
+       "Alcohol",
+       "Amine",
        "Alkeen",
-       "Alkaan"
+       "Polair"
       ],
       "c": 2,
       "u": "Het juiste begrip is «Alkeen»: een koolwaterstof met een dubbele binding.",
@@ -67319,10 +67319,10 @@ var VAKKEN = [
      {
       "v": "Welke term past bij: \"een koolwaterstof met een dubbele binding\"?",
       "o": [
-       "Ester",
+       "Keton",
        "Alkeen",
        "Alcohol",
-       "Alkaan"
+       "Ester"
       ],
       "c": 1,
       "u": "Het juiste begrip is «Alkeen»: een koolwaterstof met een dubbele binding.",
@@ -67453,7 +67453,7 @@ var VAKKEN = [
       "o": [
        "Aldehyde",
        "Monomeer",
-       "Alcohol",
+       "Verzadigd",
        "Polymeer"
       ],
       "c": 3,
@@ -67463,8 +67463,8 @@ var VAKKEN = [
      {
       "v": "Welke term past bij: \"een groot molecuul uit vele monomeren\"?",
       "o": [
-       "Monomeer",
        "Aldehyde",
+       "Monomeer",
        "Polymeer",
        "Alcohol"
       ],
@@ -67536,9 +67536,9 @@ var VAKKEN = [
       "v": "Wat betekent «−COOH»?",
       "o": [
        "de carboxylgroep, kenmerkend voor carbonzuren",
-       "polymerisatie waarbij geen bijproduct vrijkomt",
-       "een verbinding van alleen koolstof en waterstof",
-       "een bouwsteen waaruit een polymeer ontstaat"
+       "een bouwsteen waaruit een polymeer ontstaat",
+       "met een of meer dubbele koolstofbindingen",
+       "een verbinding van alleen koolstof en waterstof"
       ],
       "c": 0,
       "u": "«−COOH» betekent: de carboxylgroep, kenmerkend voor carbonzuren.",
@@ -67572,9 +67572,9 @@ var VAKKEN = [
       "v": "Wat houdt «−COOH» in?",
       "o": [
        "de carboxylgroep, kenmerkend voor carbonzuren",
+       "een koolstofverbinding met een carboxylgroep",
        "zelfde molecuulformule maar een andere structuur",
-       "met alleen enkelvoudige koolstofbindingen",
-       "met een of meer dubbele koolstofbindingen"
+       "een bouwsteen waaruit een polymeer ontstaat"
       ],
       "c": 0,
       "u": "«−COOH» betekent: de carboxylgroep, kenmerkend voor carbonzuren.",
@@ -67646,7 +67646,7 @@ var VAKKEN = [
        "Polymeren",
        "Verzadigd",
        "Monomeer",
-       "Polymeer"
+       "Hypothese"
       ],
       "c": 1,
       "u": "Het juiste begrip is «Verzadigd»: met alleen enkelvoudige koolstofbindingen.",
@@ -67728,7 +67728,7 @@ var VAKKEN = [
       "v": "Wat betekent «Isomeer»?",
       "o": [
        "een verbinding van alleen koolstof en waterstof",
-       "de carboxylgroep, kenmerkend voor carbonzuren",
+       "een reactie waarbij een dubbele binding wordt opgevuld",
        "zelfde molecuulformule maar een andere structuur",
        "de −COOH-groep die kenmerkend is voor carbonzuren"
       ],
@@ -67788,9 +67788,9 @@ var VAKKEN = [
       "v": "Welk begrip hoort bij deze omschrijving: \"de weergave van de atomen en bindingen in een molecuul\"?",
       "o": [
        "Additiereactie",
-       "Esterificatie",
+       "Herhaalmetingen",
        "Structuurformule",
-       "Additiepolymerisatie"
+       "Esterificatie"
       ],
       "c": 2,
       "u": "Het juiste begrip is «Structuurformule»: de weergave van de atomen en bindingen in een molecuul.",
@@ -67835,10 +67835,10 @@ var VAKKEN = [
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"een bouwsteen waaruit een polymeer ontstaat\"?",
       "o": [
-       "Polymeren",
+       "Reductie",
        "Monomeer",
        "Aldehyde",
-       "Verzadigd"
+       "Isomeer"
       ],
       "c": 1,
       "u": "Het juiste begrip is «Monomeer»: een bouwsteen waaruit een polymeer ontstaat.",
@@ -67847,9 +67847,9 @@ var VAKKEN = [
      {
       "v": "Welke term past bij: \"een bouwsteen waaruit een polymeer ontstaat\"?",
       "o": [
-       "Verzadigd",
        "Aldehyde",
-       "Isomeer",
+       "Verzadigd",
+       "Polymeren",
        "Monomeer"
       ],
       "c": 3,
@@ -67871,9 +67871,9 @@ var VAKKEN = [
      {
       "v": "Wat betekent «Additiereactie»?",
       "o": [
-       "een reactie waarbij een atoom door een ander wordt vervangen",
+       "een koolstofverbinding met een stikstofhoudende aminogroep",
        "de weergave van de atomen en bindingen in een molecuul",
-       "zelfde molecuulformule maar een andere structuur",
+       "een reactie waarbij een atoom door een ander wordt vervangen",
        "een reactie waarbij een dubbele binding wordt opgevuld"
       ],
       "c": 3,
@@ -67885,7 +67885,7 @@ var VAKKEN = [
       "o": [
        "Additiereactie",
        "Carboxylgroep",
-       "Esterificatie",
+       "Hydroxylgroep",
        "Koolwaterstof"
       ],
       "c": 0,
@@ -67896,7 +67896,7 @@ var VAKKEN = [
       "v": "Welke term past bij: \"een reactie waarbij een dubbele binding wordt opgevuld\"?",
       "o": [
        "Koolwaterstof",
-       "Structuurformule",
+       "Hydroxylgroep",
        "Additiereactie",
        "Esterificatie"
       ],
@@ -67909,7 +67909,7 @@ var VAKKEN = [
       "o": [
        "een reactie waarbij een dubbele binding wordt opgevuld",
        "zelfde molecuulformule maar een andere structuur",
-       "een koolstofverbinding met een stikstofhoudende aminogroep",
+       "de −COOH-groep die kenmerkend is voor carbonzuren",
        "de weergave van de atomen en bindingen in een molecuul"
       ],
       "c": 0,
@@ -67991,9 +67991,9 @@ var VAKKEN = [
      {
       "v": "Wat betekent «Keton»?",
       "o": [
-       "een verbinding met een dubbelgebonden zuurstof aan het uiteinde",
        "de reactie van een stof met zuurstof, met CO₂ en water als producten",
-       "de atoomgroep die de eigenschappen van een organische stof bepaalt",
+       "polymerisatie waarbij per koppeling een bijproduct (water) vrijkomt",
+       "een reeks verbindingen die per stap met een CH₂-groep verschilt",
        "een verbinding met een dubbelgebonden zuurstof midden in de keten"
       ],
       "c": 3,
@@ -68027,10 +68027,10 @@ var VAKKEN = [
      {
       "v": "Wat houdt «Keton» in?",
       "o": [
-       "polymerisatie waarbij per koppeling een bijproduct (water) vrijkomt",
-       "een verbinding met een dubbelgebonden zuurstof aan het uiteinde",
+       "een reeks verbindingen die per stap met een CH₂-groep verschilt",
+       "de reactie van een stof met zuurstof, met CO₂ en water als producten",
        "een verbinding met een dubbelgebonden zuurstof midden in de keten",
-       "de reactie van een stof met zuurstof, met CO₂ en water als producten"
+       "polymerisatie waarbij per koppeling een bijproduct (water) vrijkomt"
       ],
       "c": 2,
       "u": "«Keton» betekent: een verbinding met een dubbelgebonden zuurstof midden in de keten.",
@@ -68039,9 +68039,9 @@ var VAKKEN = [
      {
       "v": "Wat betekent «Aldehyde»?",
       "o": [
-       "polymerisatie waarbij per koppeling een bijproduct (water) vrijkomt",
-       "een reactie waarbij een atoom door een ander wordt vervangen",
        "een reeks verbindingen die per stap met een CH₂-groep verschilt",
+       "een reactie waarbij een atoom door een ander wordt vervangen",
+       "de atoomgroep die de eigenschappen van een organische stof bepaalt",
        "een verbinding met een dubbelgebonden zuurstof aan het uiteinde"
       ],
       "c": 3,
@@ -68052,9 +68052,9 @@ var VAKKEN = [
       "v": "Welk begrip hoort bij deze omschrijving: \"een verbinding met een dubbelgebonden zuurstof aan het uiteinde\"?",
       "o": [
        "Aldehyde",
-       "Monomeer",
+       "Verzadigd",
        "Polymeer",
-       "Polymeren"
+       "Monomeer"
       ],
       "c": 0,
       "u": "Het juiste begrip is «Aldehyde»: een verbinding met een dubbelgebonden zuurstof aan het uiteinde.",
@@ -68076,7 +68076,7 @@ var VAKKEN = [
       "v": "Wat houdt «Aldehyde» in?",
       "o": [
        "polymerisatie waarbij per koppeling een bijproduct (water) vrijkomt",
-       "een reactie waarbij een atoom door een ander wordt vervangen",
+       "de reactie van een stof met zuurstof, met CO₂ en water als producten",
        "een verbinding met een dubbelgebonden zuurstof aan het uiteinde",
        "een reeks verbindingen die per stap met een CH₂-groep verschilt"
       ],
@@ -68101,7 +68101,7 @@ var VAKKEN = [
       "o": [
        "Carbonzuur",
        "Substitutie",
-       "Verzadigd",
+       "Ionbinding",
        "Onverzadigd"
       ],
       "c": 0,
@@ -68183,9 +68183,9 @@ var VAKKEN = [
      {
       "v": "Wat betekent «Condensatiepolymerisatie»?",
       "o": [
-       "de atoomgroep die de eigenschappen van een organische stof bepaalt",
-       "een verbinding met een dubbelgebonden zuurstof midden in de keten",
        "een verbinding met een dubbelgebonden zuurstof aan het uiteinde",
+       "de atoomgroep die de eigenschappen van een organische stof bepaalt",
+       "de reactie van een stof met zuurstof, met CO₂ en water als producten",
        "polymerisatie waarbij per koppeling een bijproduct (water) vrijkomt"
       ],
       "c": 3,
@@ -68219,9 +68219,9 @@ var VAKKEN = [
      {
       "v": "Wat houdt «Condensatiepolymerisatie» in?",
       "o": [
+       "een reeks verbindingen die per stap met een CH₂-groep verschilt",
        "de atoomgroep die de eigenschappen van een organische stof bepaalt",
        "de reactie van een stof met zuurstof, met CO₂ en water als producten",
-       "een reeks verbindingen die per stap met een CH₂-groep verschilt",
        "polymerisatie waarbij per koppeling een bijproduct (water) vrijkomt"
       ],
       "c": 3,
@@ -68243,10 +68243,10 @@ var VAKKEN = [
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"polymerisatie waarbij geen bijproduct vrijkomt\"?",
       "o": [
-       "Elektronegativiteit",
-       "Additiepolymerisatie",
        "Condensatiepolymerisatie",
-       "Haber-Bosch-proces"
+       "Additiepolymerisatie",
+       "Elektronegativiteit",
+       "Controle-experiment"
       ],
       "c": 1,
       "u": "Het juiste begrip is «Additiepolymerisatie»: polymerisatie waarbij geen bijproduct vrijkomt.",
@@ -68255,10 +68255,10 @@ var VAKKEN = [
      {
       "v": "Welke term past bij: \"polymerisatie waarbij geen bijproduct vrijkomt\"?",
       "o": [
-       "Volledige verbranding",
-       "Additiepolymerisatie",
        "Condensatiepolymerisatie",
-       "Structuurformule"
+       "Additiepolymerisatie",
+       "Structuurformule",
+       "Functionele groepen"
       ],
       "c": 1,
       "u": "Het juiste begrip is «Additiepolymerisatie»: polymerisatie waarbij geen bijproduct vrijkomt.",
@@ -68436,7 +68436,7 @@ var VAKKEN = [
       "v": "Welk begrip hoort bij deze omschrijving: \"een reeks verbindingen die per stap met een CH₂-groep verschilt\"?",
       "o": [
        "Functionele groep",
-       "Functionele groepen",
+       "Additiereactie",
        "Homologe reeks",
        "Koolwaterstof"
       ],
@@ -68459,7 +68459,7 @@ var VAKKEN = [
      {
       "v": "Wat houdt «Homologe reeks» in?",
       "o": [
-       "een verbinding met een dubbelgebonden zuurstof midden in de keten",
+       "de atoomgroep die de eigenschappen van een organische stof bepaalt",
        "een reeks verbindingen die per stap met een CH₂-groep verschilt",
        "een verbinding met een dubbelgebonden zuurstof aan het uiteinde",
        "de reactie van een stof met zuurstof, met CO₂ en water als producten"
@@ -68483,8 +68483,8 @@ var VAKKEN = [
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"de atoomgroep die de eigenschappen van een organische stof bepaalt\"?",
       "o": [
+       "Aflopende reactie",
        "Exotherme reactie",
-       "Homologe reeks",
        "Homologe reeksen",
        "Functionele groep"
       ],
@@ -68495,10 +68495,10 @@ var VAKKEN = [
      {
       "v": "Welke term past bij: \"de atoomgroep die de eigenschappen van een organische stof bepaalt\"?",
       "o": [
-       "Volledige verbranding",
+       "Structuurformule",
        "Functionele groep",
        "Homologe reeksen",
-       "Homologe reeks"
+       "Volledige verbranding"
       ],
       "c": 1,
       "u": "Het juiste begrip is «Functionele groep»: de atoomgroep die de eigenschappen van een organische stof bepaalt.",
@@ -68544,9 +68544,9 @@ var VAKKEN = [
       "v": "Welke term past bij: \"alkanen, alkenen, alkynen\"?",
       "o": [
        "Homologe reeksen",
-       "Structuurformule",
+       "Volledige verbranding",
        "Functionele groep",
-       "Functionele groepen"
+       "Structuurformule"
       ],
       "c": 0,
       "u": "Het juiste begrip is «Homologe reeksen»: alkanen, alkenen, alkynen.",
@@ -68568,9 +68568,9 @@ var VAKKEN = [
       "v": "Wat betekent «Functionele groepen»?",
       "o": [
        "alcohol, carbonzuur, amine, ester",
-       "alkanen, alkenen, alkynen",
-       "atoomeconomie, minder afval, duurzaam",
-       "onafhankelijk, afhankelijk, constant"
+       "broeikaseffect, zure regen, ozonafbraak",
+       "onafhankelijk, afhankelijk, constant",
+       "atoomeconomie, minder afval, duurzaam"
       ],
       "c": 0,
       "u": "«Functionele groepen» betekent: alcohol, carbonzuur, amine, ester.",
@@ -68603,9 +68603,9 @@ var VAKKEN = [
      {
       "v": "Wat houdt «Functionele groepen» in?",
       "o": [
-       "alkanen, alkenen, alkynen",
        "additie, substitutie, ester­vorming, hydrolyse",
-       "atoomeconomie, minder afval, duurzaam",
+       "alkanen, alkenen, alkynen",
+       "zelfde formule, andere structuur",
        "alcohol, carbonzuur, amine, ester"
       ],
       "c": 3,
@@ -68640,7 +68640,7 @@ var VAKKEN = [
       "v": "Welke term past bij: \"zelfde formule, andere structuur\"?",
       "o": [
        "Volledige verbranding",
-       "Functionele groep",
+       "Homologe reeksen",
        "Functionele groepen",
        "Isomerie & naamgeving"
       ],
@@ -68677,8 +68677,8 @@ var VAKKEN = [
       "o": [
        "Carboxylgroep",
        "Reactietypen",
-       "Hydroxylgroep",
-       "Verbranding"
+       "Esterificatie",
+       "Koolwaterstof"
       ],
       "c": 1,
       "u": "Het juiste begrip is «Reactietypen»: additie, substitutie, ester­vorming, hydrolyse.",
@@ -68688,9 +68688,9 @@ var VAKKEN = [
       "v": "Welke term past bij: \"additie, substitutie, ester­vorming, hydrolyse\"?",
       "o": [
        "Reactietypen",
-       "Verbranding",
-       "Onverzadigd",
-       "Carboxylgroep"
+       "Carboxylgroep",
+       "Koolwaterstof",
+       "Hydroxylgroep"
       ],
       "c": 0,
       "u": "Het juiste begrip is «Reactietypen»: additie, substitutie, ester­vorming, hydrolyse.",
@@ -68747,10 +68747,10 @@ var VAKKEN = [
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"hydroxylgroep alcohol\"?",
       "o": [
-       "−COO−",
-       "−NH₂",
+       "Amine",
+       "Zout",
        "−OH",
-       "pH"
+       "Keton"
       ],
       "c": 2,
       "u": "Het juiste begrip is «−OH»: hydroxylgroep alcohol.",
@@ -68760,8 +68760,8 @@ var VAKKEN = [
       "v": "Welke term past bij: \"hydroxylgroep alcohol\"?",
       "o": [
        "Ester",
-       "−NH₂",
-       "−COO−",
+       "Keton",
+       "Amine",
        "−OH"
       ],
       "c": 3,
@@ -68795,9 +68795,9 @@ var VAKKEN = [
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"aminogroep amine\"?",
       "o": [
-       "−OH",
-       "pH",
-       "−COO−",
+       "−COOH",
+       "PLA",
+       "Base",
        "−NH₂"
       ],
       "c": 3,
@@ -68808,9 +68808,9 @@ var VAKKEN = [
       "v": "Welke term past bij: \"aminogroep amine\"?",
       "o": [
        "−NH₂",
+       "Ester",
        "−COOH",
-       "−OH",
-       "−COO−"
+       "Keton"
       ],
       "c": 0,
       "u": "Het juiste begrip is «−NH₂»: aminogroep amine.",
@@ -68845,7 +68845,7 @@ var VAKKEN = [
       "o": [
        "Amine",
        "−COO−",
-       "−OH",
+       "Keton",
        "−NH₂"
       ],
       "c": 1,
@@ -68855,10 +68855,10 @@ var VAKKEN = [
      {
       "v": "Welke term past bij: \"estergroep ester\"?",
       "o": [
+       "−NH₂",
        "Amine",
-       "Keton",
        "−COO−",
-       "−NH₂"
+       "Keton"
       ],
       "c": 2,
       "u": "Het juiste begrip is «−COO−»: estergroep ester.",
@@ -69558,7 +69558,7 @@ var VAKKEN = [
       "o": [
        "het hergebruiken van materialen",
        "brandstof gemaakt uit biomassa",
-       "kunststof gemaakt uit biomassa",
+       "brandstof uit resten van organismen",
        "de uitstoot van koolstofdioxide"
       ],
       "c": 0,
@@ -69595,7 +69595,7 @@ var VAKKEN = [
        "het hergebruiken van materialen",
        "de uitstoot van koolstofdioxide",
        "kunststof gemaakt uit biomassa",
-       "brandstof gemaakt uit biomassa"
+       "een uitgangsmateriaal voor productie"
       ],
       "c": 0,
       "u": "«Recycling» betekent: het hergebruiken van materialen.",
@@ -69604,10 +69604,10 @@ var VAKKEN = [
      {
       "v": "Wat betekent «Biobrandstof»?",
       "o": [
-       "brandstof uit resten van organismen",
+       "de uitstoot van koolstofdioxide",
        "brandstof gemaakt uit biomassa",
-       "giftig voor mens of milieu",
-       "kunststof gemaakt uit biomassa"
+       "brandstof uit resten van organismen",
+       "giftig voor mens of milieu"
       ],
       "c": 1,
       "u": "«Biobrandstof» betekent: brandstof gemaakt uit biomassa.",
@@ -69642,7 +69642,7 @@ var VAKKEN = [
       "o": [
        "het hergebruiken van materialen",
        "brandstof gemaakt uit biomassa",
-       "kunststof gemaakt uit biomassa",
+       "een uitgangsmateriaal voor productie",
        "de uitstoot van koolstofdioxide"
       ],
       "c": 1,
@@ -69821,9 +69821,9 @@ var VAKKEN = [
       "v": "Wat betekent «CO₂-uitstoot»?",
       "o": [
        "de uitstoot van koolstofdioxide",
-       "kunststof gemaakt uit biomassa",
+       "het hergebruiken van materialen",
        "brandstof gemaakt uit biomassa",
-       "het hergebruiken van materialen"
+       "brandstof uit resten van organismen"
       ],
       "c": 0,
       "u": "«CO₂-uitstoot» betekent: de uitstoot van koolstofdioxide.",
@@ -69835,7 +69835,7 @@ var VAKKEN = [
        "de uitstoot van koolstofdioxide",
        "het hergebruiken van materialen",
        "kunststof gemaakt uit biomassa",
-       "brandstof gemaakt uit biomassa"
+       "brandstof uit resten van organismen"
       ],
       "c": 0,
       "u": "«CO₂-uitstoot» betekent: de uitstoot van koolstofdioxide.",
@@ -69953,7 +69953,7 @@ var VAKKEN = [
       "v": "Welk begrip hoort bij deze omschrijving: \"een materiaal uit twee of meer verschillende stoffen\"?",
       "o": [
        "Grondstof",
-       "Recycling",
+       "Ozonlaag",
        "Emulgator",
        "Composiet"
       ],
@@ -69964,10 +69964,10 @@ var VAKKEN = [
      {
       "v": "Welke term past bij: \"een materiaal uit twee of meer verschillende stoffen\"?",
       "o": [
-       "Emulgator",
+       "Recycling",
        "Grondstof",
        "Composiet",
-       "Recycling"
+       "Emulgator"
       ],
       "c": 2,
       "u": "Het juiste begrip is «Composiet»: een materiaal uit twee of meer verschillende stoffen.",
@@ -70048,8 +70048,8 @@ var VAKKEN = [
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"een toegevoegde stof die een eigenschap verbetert\"?",
       "o": [
-       "Emulgator",
-       "Toxisch",
+       "Grondstof",
+       "Voedsel",
        "Additief",
        "Ozonlaag"
       ],
@@ -70060,8 +70060,8 @@ var VAKKEN = [
      {
       "v": "Welke term past bij: \"een toegevoegde stof die een eigenschap verbetert\"?",
       "o": [
-       "Emulgator",
        "Composiet",
+       "Recycling",
        "Additief",
        "Ozonlaag"
       ],
@@ -70180,10 +70180,10 @@ var VAKKEN = [
      {
       "v": "Wat betekent «Bioplastic»?",
       "o": [
-       "het hergebruiken van materialen",
+       "giftig voor mens of milieu",
        "kunststof gemaakt uit biomassa",
        "de uitstoot van koolstofdioxide",
-       "brandstof gemaakt uit biomassa"
+       "het hergebruiken van materialen"
       ],
       "c": 1,
       "u": "«Bioplastic» betekent: kunststof gemaakt uit biomassa.",
@@ -70216,9 +70216,9 @@ var VAKKEN = [
      {
       "v": "Wat houdt «Bioplastic» in?",
       "o": [
-       "energie uit onuitputtelijke bronnen",
-       "brandstof gemaakt uit biomassa",
+       "het hergebruiken van materialen",
        "de uitstoot van koolstofdioxide",
+       "giftig voor mens of milieu",
        "kunststof gemaakt uit biomassa"
       ],
       "c": 3,
@@ -70504,9 +70504,9 @@ var VAKKEN = [
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"de laag in de stratosfeer die schadelijke UV-straling absorbeert\"?",
       "o": [
-       "Voedsel",
+       "Grondstof",
        "Additief",
-       "Emulgator",
+       "Voedsel",
        "Ozonlaag"
       ],
       "c": 3,
@@ -70552,8 +70552,8 @@ var VAKKEN = [
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"het vasthouden van warmte doordat gassen infraroodstraling terugkaatsen\"?",
       "o": [
-       "Atoomeconomie",
-       "Stoichiometrie",
+       "Thermoharder",
+       "CO₂-uitstoot",
        "Broeikaseffect",
        "Afvalscheiding"
       ],
@@ -70566,8 +70566,8 @@ var VAKKEN = [
       "o": [
        "Broeikaseffect",
        "Afvalscheiding",
-       "Biobrandstof",
-       "Atoomeconomie"
+       "Atoomeconomie",
+       "Biobrandstof"
       ],
       "c": 0,
       "u": "Het juiste begrip is «Broeikaseffect»: het vasthouden van warmte doordat gassen infraroodstraling terugkaatsen.",
@@ -70649,8 +70649,8 @@ var VAKKEN = [
       "v": "Welk begrip hoort bij deze omschrijving: \"een composteerbaar bioplastic uit hernieuwbare grondstoffen\"?",
       "o": [
        "Base",
-       "Zout",
        "Zuur",
+       "Mol",
        "PLA"
       ],
       "c": 3,
@@ -70686,8 +70686,8 @@ var VAKKEN = [
       "o": [
        "de verplaatsing van water door een membraan naar de hoogste concentratie",
        "het vasthouden van warmte doordat gassen infraroodstraling terugkaatsen",
-       "het industriële proces dat ammoniak maakt uit stikstof en waterstof",
-       "de verhouding nuttig product ten opzichte van alle gevormde producten"
+       "de verhouding nuttig product ten opzichte van alle gevormde producten",
+       "een stof met een hydrofiel én hydrofoob deel die water en vet mengt"
       ],
       "c": 0,
       "u": "«Osmose» betekent: de verplaatsing van water door een membraan naar de hoogste concentratie.",
@@ -70697,8 +70697,8 @@ var VAKKEN = [
       "v": "Welk begrip hoort bij deze omschrijving: \"de verplaatsing van water door een membraan naar de hoogste concentratie\"?",
       "o": [
        "Milieu",
+       "Voedsel",
        "Alkeen",
-       "Emissie",
        "Osmose"
       ],
       "c": 3,
@@ -70708,9 +70708,9 @@ var VAKKEN = [
      {
       "v": "Welke term past bij: \"de verplaatsing van water door een membraan naar de hoogste concentratie\"?",
       "o": [
-       "Voedsel",
-       "Milieu",
        "Emissie",
+       "Milieu",
+       "Vezel",
        "Osmose"
       ],
       "c": 3,
@@ -70720,9 +70720,9 @@ var VAKKEN = [
      {
       "v": "Wat houdt «Osmose» in?",
       "o": [
-       "het vasthouden van warmte doordat gassen infraroodstraling terugkaatsen",
        "de verhouding nuttig product ten opzichte van alle gevormde producten",
        "een stof met een hydrofiel én hydrofoob deel die water en vet mengt",
+       "het vasthouden van warmte doordat gassen infraroodstraling terugkaatsen",
        "de verplaatsing van water door een membraan naar de hoogste concentratie"
       ],
       "c": 3,
@@ -71844,9 +71844,9 @@ var VAKKEN = [
       "v": "Wat betekent «Meetonzekerheid»?",
       "o": [
        "een waarde schatten buiten het meetbereik",
-       "een fout die steeds dezelfde kant op wijst",
+       "hoe klein de spreiding tussen metingen is",
        "de marge waarbinnen de echte waarde ligt",
-       "een waarde schatten binnen het meetbereik"
+       "een fout die steeds dezelfde kant op wijst"
       ],
       "c": 2,
       "u": "«Meetonzekerheid» betekent: de marge waarbinnen de echte waarde ligt.",
@@ -71882,7 +71882,7 @@ var VAKKEN = [
        "hoe dicht een meting bij de ware waarde ligt",
        "de marge waarbinnen de echte waarde ligt",
        "een waarde schatten binnen het meetbereik",
-       "een waarde schatten buiten het meetbereik"
+       "hoe klein de spreiding tussen metingen is"
       ],
       "c": 1,
       "u": "«Meetonzekerheid» betekent: de marge waarbinnen de echte waarde ligt.",
@@ -71975,10 +71975,10 @@ var VAKKEN = [
      {
       "v": "Wat houdt «Onafhankelijke variabele» in?",
       "o": [
-       "een waarde schatten binnen het meetbereik",
+       "een meetbare eigenschap zoals massa of tijd",
        "de variabele die je zelf instelt, op de x-as",
        "een waarde schatten buiten het meetbereik",
-       "een meetbare eigenschap zoals massa of tijd"
+       "een fout die steeds dezelfde kant op wijst"
       ],
       "c": 1,
       "u": "«Onafhankelijke variabele» betekent: de variabele die je zelf instelt, op de x-as.",
@@ -72167,9 +72167,9 @@ var VAKKEN = [
      {
       "v": "Wat houdt «Precisie» in?",
       "o": [
-       "een waarde schatten binnen het meetbereik",
-       "hoe klein de spreiding tussen metingen is",
        "de marge waarbinnen de echte waarde ligt",
+       "hoe klein de spreiding tussen metingen is",
+       "een fout die steeds dezelfde kant op wijst",
        "een waarde schatten buiten het meetbereik"
       ],
       "c": 1,
@@ -72325,7 +72325,7 @@ var VAKKEN = [
       "o": [
        "de marge waarbinnen de echte waarde ligt",
        "een meetbare eigenschap zoals massa of tijd",
-       "een waarde schatten binnen het meetbereik",
+       "de variabele die je zelf instelt, op de x-as",
        "een waarde schatten buiten het meetbereik"
       ],
       "c": 3,
@@ -72362,7 +72362,7 @@ var VAKKEN = [
        "hoe klein de spreiding tussen metingen is",
        "een waarde schatten buiten het meetbereik",
        "een meetbare eigenschap zoals massa of tijd",
-       "een waarde schatten binnen het meetbereik"
+       "een fout die steeds dezelfde kant op wijst"
       ],
       "c": 1,
       "u": "«Extrapoleren» betekent: een waarde schatten buiten het meetbereik.",
@@ -72395,7 +72395,7 @@ var VAKKEN = [
      {
       "v": "Welke term past bij: \"de cijfers die de nauwkeurigheid van een meetwaarde aangeven\"?",
       "o": [
-       "Onafhankelijke variabele",
+       "Toevallige fout",
        "Afhankelijke variabele",
        "Systematische fout",
        "Significante cijfers"
@@ -72432,7 +72432,7 @@ var VAKKEN = [
       "v": "Welk begrip hoort bij deze omschrijving: \"evenveel significante cijfers als de minst nauwkeurige waarde\"?",
       "o": [
        "Optellen / aftrekken",
-       "Onafhankelijke variabele",
+       "Eerste wet (traagheid)",
        "Afhankelijke variabele",
        "Vermenigvuldigen / delen"
       ],
@@ -72445,7 +72445,7 @@ var VAKKEN = [
       "o": [
        "Optellen / aftrekken",
        "Onafhankelijke variabele",
-       "Afhankelijke variabele",
+       "Systematische fout",
        "Vermenigvuldigen / delen"
       ],
       "c": 3,
@@ -73268,9 +73268,9 @@ var VAKKEN = [
      {
       "v": "Wat betekent «Geluidssnelheid»?",
       "o": [
+       "een buis met eigentrillingen van lucht",
+       "de lijn van punten met dezelfde trillingsfase",
        "de gewaarwording die bij de frequentie hoort",
-       "de gewaarwording die bij de amplitude hoort",
-       "het weerkaatsen van een golf tegen een grens",
        "de snelheid waarmee geluid zich voortplant"
       ],
       "c": 3,
@@ -73280,10 +73280,10 @@ var VAKKEN = [
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"de snelheid waarmee geluid zich voortplant\"?",
       "o": [
-       "Golfvergelijking",
-       "Geluidssnelheid",
        "Evenwichtsstand",
-       "Eigenfrequentie"
+       "Geluidssnelheid",
+       "Eigenfrequentie",
+       "Snaarinstrument"
       ],
       "c": 1,
       "u": "Het juiste begrip is «Geluidssnelheid»: de snelheid waarmee geluid zich voortplant.",
@@ -73292,10 +73292,10 @@ var VAKKEN = [
      {
       "v": "Welke term past bij: \"de snelheid waarmee geluid zich voortplant\"?",
       "o": [
-       "Eigenfrequentie",
+       "Snaarinstrument",
        "Evenwichtsstand",
        "Geluidssnelheid",
-       "Snaarinstrument"
+       "Eigenfrequentie"
       ],
       "c": 2,
       "u": "Het juiste begrip is «Geluidssnelheid»: de snelheid waarmee geluid zich voortplant.",
@@ -73306,8 +73306,8 @@ var VAKKEN = [
       "o": [
        "de snelheid waarmee geluid zich voortplant",
        "een buis met eigentrillingen van lucht",
-       "de gewaarwording die bij de frequentie hoort",
-       "de gewaarwording die bij de amplitude hoort"
+       "de gewaarwording die bij de amplitude hoort",
+       "de lijn van punten met dezelfde trillingsfase"
       ],
       "c": 0,
       "u": "«Geluidssnelheid» betekent: de snelheid waarmee geluid zich voortplant.",
@@ -73376,7 +73376,7 @@ var VAKKEN = [
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"een zich voortplantende trilling\"?",
       "o": [
-       "NTC",
+       "LDR",
        "PTC",
        "Golf",
        "Gray"
@@ -73391,7 +73391,7 @@ var VAKKEN = [
        "Breking",
        "Decibel",
        "Golf",
-       "Volt"
+       "Gray"
       ],
       "c": 2,
       "u": "Het juiste begrip is «Golf»: een zich voortplantende trilling.",
@@ -73449,8 +73449,8 @@ var VAKKEN = [
       "v": "Wat houdt «Golfsnelheid» in?",
       "o": [
        "de snelheid waarmee een golf zich voortplant",
+       "de gewaarwording die bij de frequentie hoort",
        "het weerkaatsen van een golf tegen een grens",
-       "de snelheid waarmee geluid zich voortplant",
        "de lijn van punten met dezelfde trillingsfase"
       ],
       "c": 0,
@@ -73688,7 +73688,7 @@ var VAKKEN = [
      {
       "v": "Wat houdt «Toonhoogte» in?",
       "o": [
-       "de gewaarwording die bij de amplitude hoort",
+       "de lijn van punten met dezelfde trillingsfase",
        "de snelheid waarmee een golf zich voortplant",
        "de gewaarwording die bij de frequentie hoort",
        "het weerkaatsen van een golf tegen een grens"
@@ -73712,10 +73712,10 @@ var VAKKEN = [
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"de gewaarwording die bij de amplitude hoort\"?",
       "o": [
-       "Eigenfrequentie",
-       "Terugkaatsing",
+       "Evenwichtsstand",
+       "Snaarinstrument",
        "Geluidssterkte",
-       "Interferentie"
+       "Eigenfrequentie"
       ],
       "c": 2,
       "u": "Het juiste begrip is «Geluidssterkte»: de gewaarwording die bij de amplitude hoort.",
@@ -73726,8 +73726,8 @@ var VAKKEN = [
       "o": [
        "Geluidssterkte",
        "Interferentie",
-       "Eigenfrequentie",
-       "Brekingsindex"
+       "Terugkaatsing",
+       "Snaarinstrument"
       ],
       "c": 0,
       "u": "Het juiste begrip is «Geluidssterkte»: de gewaarwording die bij de amplitude hoort.",
@@ -73736,9 +73736,9 @@ var VAKKEN = [
      {
       "v": "Wat houdt «Geluidssterkte» in?",
       "o": [
-       "het weerkaatsen van een golf tegen een grens",
        "de snelheid waarmee een golf zich voortplant",
        "de lijn van punten met dezelfde trillingsfase",
+       "het weerkaatsen van een golf tegen een grens",
        "de gewaarwording die bij de amplitude hoort"
       ],
       "c": 3,
@@ -73820,7 +73820,7 @@ var VAKKEN = [
      {
       "v": "Welke term past bij: \"een instrument met trillende snaren\"?",
       "o": [
-       "Geluidssterkte",
+       "Eigenfrequentie",
        "Evenwichtsstand",
        "Snaarinstrument",
        "Geluidssnelheid"
@@ -73880,7 +73880,7 @@ var VAKKEN = [
      {
       "v": "Wat houdt «Luchtkolom» in?",
       "o": [
-       "de snelheid waarmee een golf zich voortplant",
+       "de tijd van één volledige trilling",
        "de snelheid waarmee geluid zich voortplant",
        "een buis met eigentrillingen van lucht",
        "het weerkaatsen van een golf tegen een grens"
@@ -73906,7 +73906,7 @@ var VAKKEN = [
       "o": [
        "Boventoon",
        "Golffront",
-       "Boventonen",
+       "Amplitude",
        "Luchtkolom"
       ],
       "c": 1,
@@ -74339,7 +74339,7 @@ var VAKKEN = [
        "Eigenfrequentie",
        "Evenwichtsstand",
        "Geluidssterkte",
-       "Geluidssnelheid"
+       "Snaarinstrument"
       ],
       "c": 0,
       "u": "Het juiste begrip is «Eigenfrequentie»: de frequentie waarmee een systeem uit zichzelf trilt.",
@@ -74434,7 +74434,7 @@ var VAKKEN = [
       "o": [
        "Evenwichtsstand",
        "Golfvergelijking",
-       "Geluidssterkte",
+       "Snaarinstrument",
        "Geluidssnelheid"
       ],
       "c": 0,
@@ -74576,9 +74576,9 @@ var VAKKEN = [
      {
       "v": "Wat houdt «Frequentie (f)» in?",
       "o": [
-       "de tijd van één volledige trilling",
-       "een instrument met trillende snaren",
        "de afstand tot de evenwichtsstand",
+       "een instrument met trillende snaren",
+       "de tijd van één volledige trilling",
        "aantal trillingen per seconde (Hz)"
       ],
       "c": 3,
@@ -74648,9 +74648,9 @@ var VAKKEN = [
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"meer knopen en buiken en een kleinere golflengte (hogere frequentie).\"?",
       "o": [
-       "Diffractie",
-       "Toonhoogte",
+       "Resonantie",
        "Luchtkolom",
+       "Toonhoogte",
        "Boventonen"
       ],
       "c": 3,
@@ -74660,10 +74660,10 @@ var VAKKEN = [
      {
       "v": "Welke term past bij: \"meer knopen en buiken en een kleinere golflengte (hogere frequentie).\"?",
       "o": [
-       "Diffractie",
+       "Luchtkolom",
        "Boventonen",
-       "Resonantie",
-       "Toonhoogte"
+       "Spiegeling",
+       "Resonantie"
       ],
       "c": 1,
       "u": "Het juiste begrip is «Boventonen»: meer knopen en buiken en een kleinere golflengte (hogere frequentie)..",
@@ -78799,10 +78799,10 @@ var VAKKEN = [
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"de aantrekkingskracht van de aarde op massa\"?",
       "o": [
-       "Zwaarte-energie",
-       "Normaalkracht",
+       "Terugkaatsing",
+       "Luchtweerstand",
        "Zwaartekracht",
-       "Luchtweerstand"
+       "Normaalkracht"
       ],
       "c": 2,
       "u": "Het juiste begrip is «Zwaartekracht»: de aantrekkingskracht van de aarde op massa.",
@@ -78814,7 +78814,7 @@ var VAKKEN = [
        "Normaalkracht",
        "Zwaartekracht",
        "Luchtweerstand",
-       "Zwaarte-energie"
+       "Versnelling"
       ],
       "c": 1,
       "u": "Het juiste begrip is «Zwaartekracht»: de aantrekkingskracht van de aarde op massa.",
@@ -79207,7 +79207,7 @@ var VAKKEN = [
      {
       "v": "Wat houdt «Rendement» in?",
       "o": [
-       "de energie die een voorwerp door zijn hoogte bezit",
+       "parallellogrammethode; de diagonaal is de resultante F res .",
        "de nuttige energie als deel van de toegevoerde energie",
        "gebruik de stelling van Pythagoras voor de resultante.",
        "de energie die een voorwerp heeft door zijn beweging"
@@ -79375,10 +79375,10 @@ var VAKKEN = [
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"de wrijving van lucht op een bewegend voorwerp\"?",
       "o": [
-       "Zwaarte-energie",
+       "Energieomzetting",
        "Luchtweerstand",
        "Zwaartekracht",
-       "Energieomzetting"
+       "Normaalkracht"
       ],
       "c": 1,
       "u": "Het juiste begrip is «Luchtweerstand»: de wrijving van lucht op een bewegend voorwerp.",
@@ -79390,7 +79390,7 @@ var VAKKEN = [
        "Luchtweerstand",
        "Zwaarte-energie",
        "Energieomzetting",
-       "Zwaartekracht"
+       "Normaalkracht"
       ],
       "c": 0,
       "u": "Het juiste begrip is «Luchtweerstand»: de wrijving van lucht op een bewegend voorwerp.",
@@ -79483,10 +79483,10 @@ var VAKKEN = [
      {
       "v": "Welke term past bij: \"de energie die een voorwerp door zijn hoogte bezit\"?",
       "o": [
-       "Luchtweerstand",
+       "Wrijvingskracht",
        "Zwaarte-energie",
-       "Zwaartekracht",
-       "Wrijvingskracht"
+       "Normaalkracht",
+       "Luchtweerstand"
       ],
       "c": 1,
       "u": "Het juiste begrip is «Zwaarte-energie»: de energie die een voorwerp door zijn hoogte bezit.",
@@ -79603,10 +79603,10 @@ var VAKKEN = [
      {
       "v": "Wat betekent «Kinetische energie»?",
       "o": [
-       "de nuttige energie als deel van de toegevoerde energie",
-       "de energie die een voorwerp door zijn hoogte bezit",
+       "de neiging om de bewegingstoestand te behouden",
+       "gebruik de stelling van Pythagoras voor de resultante.",
        "de energie die een voorwerp heeft door zijn beweging",
-       "gebruik de stelling van Pythagoras voor de resultante."
+       "de nuttige energie als deel van de toegevoerde energie"
       ],
       "c": 2,
       "u": "«Kinetische energie» betekent: de energie die een voorwerp heeft door zijn beweging.",
@@ -79641,8 +79641,8 @@ var VAKKEN = [
       "o": [
        "een korte, sterke wisselwerking tussen voorwerpen",
        "de energie die een voorwerp heeft door zijn beweging",
-       "de nuttige energie als deel van de toegevoerde energie",
-       "de kracht die een voorwerp in een cirkelbaan houdt"
+       "de kracht die een voorwerp in een cirkelbaan houdt",
+       "de nuttige energie als deel van de toegevoerde energie"
       ],
       "c": 1,
       "u": "«Kinetische energie» betekent: de energie die een voorwerp heeft door zijn beweging.",
@@ -79653,8 +79653,8 @@ var VAKKEN = [
       "o": [
        "de energie door de hoogte: Ep = m·g·h",
        "de arbeid per tijdseenheid: P = W/t (watt)",
-       "de hoeveelheid materie in een voorwerp",
-       "steunkracht loodrecht op een oppervlak."
+       "beweging met een constante snelheid",
+       "de hoeveelheid materie in een voorwerp"
       ],
       "c": 0,
       "u": "«Potentiële energie» betekent: de energie door de hoogte: Ep = m·g·h.",
@@ -79711,8 +79711,8 @@ var VAKKEN = [
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"de verandering van snelheid per tijd: a = Δv/Δt (m/s²)\"?",
       "o": [
-       "Zwaartekracht",
        "Normaalkracht",
+       "Röntgenfoto",
        "Zwaartepunt",
        "Versnelling"
       ],
@@ -79725,7 +79725,7 @@ var VAKKEN = [
       "o": [
        "Zwaartepunt",
        "Versnelling",
-       "Zwaartekracht",
+       "Loodrecht",
        "Spankracht"
       ],
       "c": 1,
@@ -79820,7 +79820,7 @@ var VAKKEN = [
       "v": "Welke term past bij: \"de arbeid per tijdseenheid: P = W/t (watt)\"?",
       "o": [
        "Vermogen",
-       "Stroming",
+       "Energie",
        "Snelheid",
        "Straling"
       ],
@@ -79927,8 +79927,8 @@ var VAKKEN = [
      {
       "v": "Wat houdt «Middelpuntzoekende kracht» in?",
       "o": [
-       "de energie die een voorwerp heeft door zijn beweging",
        "de neiging om de bewegingstoestand te behouden",
+       "de wrijving van lucht op een bewegend voorwerp",
        "de energie die een voorwerp door zijn hoogte bezit",
        "de kracht die een voorwerp in een cirkelbaan houdt"
       ],
@@ -80167,10 +80167,10 @@ var VAKKEN = [
      {
       "v": "Wat houdt «Loodrecht» in?",
       "o": [
-       "de energie die een voorwerp door zijn hoogte bezit",
+       "een korte, sterke wisselwerking tussen voorwerpen",
        "gebruik de stelling van Pythagoras voor de resultante.",
        "de energie die een voorwerp heeft door zijn beweging",
-       "een korte, sterke wisselwerking tussen voorwerpen"
+       "de nuttige energie als deel van de toegevoerde energie"
       ],
       "c": 1,
       "u": "«Loodrecht» betekent: gebruik de stelling van Pythagoras voor de resultante..",
@@ -80275,9 +80275,9 @@ var VAKKEN = [
      {
       "v": "Wat betekent «Eerste wet (traagheid)»?",
       "o": [
-       "oefent A een kracht uit op B, dan oefent B een even grote, tegengestelde kracht uit op A.",
        "warmte door een vaste stof; metalen geleiden goed, isolatoren slecht.",
        "het product van massa en snelheid, behouden in een gesloten systeem",
+       "warmte verplaatst met een bewegend gas of vloeistof; een vacuüm (dubbel glas) voorkomt dit.",
        "zonder resulterende kracht blijft een voorwerp in rust of in eenparige beweging."
       ],
       "c": 3,
@@ -80311,10 +80311,10 @@ var VAKKEN = [
      {
       "v": "Wat houdt «Eerste wet (traagheid)» in?",
       "o": [
-       "warmte verplaatst met een bewegend gas of vloeistof; een vacuüm (dubbel glas) voorkomt dit.",
+       "warmte zonder tussenstof, zoals zonnestraling; reflecterende oppervlakken kaatsen die terug.",
        "zonder resulterende kracht blijft een voorwerp in rust of in eenparige beweging.",
        "oefent A een kracht uit op B, dan oefent B een even grote, tegengestelde kracht uit op A.",
-       "het product van massa en snelheid, behouden in een gesloten systeem"
+       "warmte door een vaste stof; metalen geleiden goed, isolatoren slecht."
       ],
       "c": 1,
       "u": "«Eerste wet (traagheid)» betekent: zonder resulterende kracht blijft een voorwerp in rust of in eenparige beweging..",
@@ -80479,10 +80479,10 @@ var VAKKEN = [
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"warmte verplaatst met een bewegend gas of vloeistof; een vacuüm (dubbel glas) voorkomt dit.\"?",
       "o": [
-       "Traagheid",
+       "Gewicht",
        "Stroming",
-       "Snelheid",
-       "Straling"
+       "Traagheid",
+       "Snelheid"
       ],
       "c": 1,
       "u": "Het juiste begrip is «Stroming»: warmte verplaatst met een bewegend gas of vloeistof; een vacuüm (dubbel glas) voorkomt dit..",
@@ -80492,9 +80492,9 @@ var VAKKEN = [
       "v": "Welke term past bij: \"warmte verplaatst met een bewegend gas of vloeistof; een vacuüm (dubbel glas) voorkomt dit.\"?",
       "o": [
        "Stroming",
-       "Vermogen",
+       "Ontbinden",
        "Snelheid",
-       "Straling"
+       "Vermogen"
       ],
       "c": 0,
       "u": "Het juiste begrip is «Stroming»: warmte verplaatst met een bewegend gas of vloeistof; een vacuüm (dubbel glas) voorkomt dit..",
@@ -84743,9 +84743,9 @@ var VAKKEN = [
      {
       "v": "Wat betekent «Geleider»?",
       "o": [
-       "het vermogen P = U·I in watt",
+       "spanning met een vaste richting",
        "de omgezette energie per tijd",
-       "een stof die stroom nauwelijks doorlaat",
+       "de eenheid van stroomsterkte",
        "een stof die stroom goed doorlaat"
       ],
       "c": 3,
@@ -84779,9 +84779,9 @@ var VAKKEN = [
      {
       "v": "Wat houdt «Geleider» in?",
       "o": [
-       "de omgezette energie per tijd",
        "weerstand daalt bij meer licht",
        "spanning met een vaste richting",
+       "de omgezette energie per tijd",
        "een stof die stroom goed doorlaat"
       ],
       "c": 3,
@@ -84791,10 +84791,10 @@ var VAKKEN = [
      {
       "v": "Wat betekent «Isolator»?",
       "o": [
-       "spanning die telkens van richting wisselt",
+       "de hoeveelheid lading per tijd, in ampère",
        "een stof die stroom nauwelijks doorlaat",
-       "een verbinding met vrijwel geen weerstand",
-       "weerstand stijgt bij hogere temperatuur"
+       "een elektrische eigenschap van deeltjes",
+       "een verbinding met vrijwel geen weerstand"
       ],
       "c": 1,
       "u": "«Isolator» betekent: een stof die stroom nauwelijks doorlaat.",
@@ -84827,10 +84827,10 @@ var VAKKEN = [
      {
       "v": "Wat houdt «Isolator» in?",
       "o": [
-       "een elektrische eigenschap van deeltjes",
+       "spanning die telkens van richting wisselt",
        "een stof die stroom nauwelijks doorlaat",
        "de hoeveelheid lading per tijd, in ampère",
-       "weerstand stijgt bij hogere temperatuur"
+       "een elektrische eigenschap van deeltjes"
       ],
       "c": 1,
       "u": "«Isolator» betekent: een stof die stroom nauwelijks doorlaat.",
@@ -84935,9 +84935,9 @@ var VAKKEN = [
      {
       "v": "Wat betekent «Elektrisch veld»?",
       "o": [
-       "een schakeling waarin de spanning overal gelijk is",
-       "het gebied waarin een magneet een kracht uitoefent",
        "weerstand daalt bij hogere temperatuur (thermometer)",
+       "een spoel die magnetisch wordt door een stroom",
+       "een schakeling waarin de spanning overal gelijk is",
        "het gebied waarin een lading een kracht ondervindt"
       ],
       "c": 3,
@@ -84961,7 +84961,7 @@ var VAKKEN = [
       "o": [
        "Magnetisch veld",
        "Ohmse weerstand",
-       "Elektrisch vermogen",
+       "Wisselspanning",
        "Elektrisch veld"
       ],
       "c": 3,
@@ -84971,10 +84971,10 @@ var VAKKEN = [
      {
       "v": "Wat houdt «Elektrisch veld» in?",
       "o": [
-       "het gebied waarin een magneet een kracht uitoefent",
+       "weerstand daalt bij hogere temperatuur (thermometer)",
        "het gebied waarin een lading een kracht ondervindt",
-       "een schakeling waarin de stroom overal gelijk is",
-       "weerstand daalt bij hogere temperatuur (thermometer)"
+       "het opwekken van spanning door een wisselend magneetveld",
+       "een schakeling waarin de spanning overal gelijk is"
       ],
       "c": 1,
       "u": "«Elektrisch veld» betekent: het gebied waarin een lading een kracht ondervindt.",
@@ -85009,7 +85009,7 @@ var VAKKEN = [
       "o": [
        "een schakeling waarin de spanning overal gelijk is",
        "de energie die een elektrische stroom kan leveren",
-       "een schakeling waarin de stroom overal gelijk is",
+       "weerstand daalt bij hogere temperatuur (thermometer)",
        "het gebied waarin een magneet een kracht uitoefent"
       ],
       "c": 1,
@@ -85091,8 +85091,8 @@ var VAKKEN = [
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"de eenheid van spanning\"?",
       "o": [
-       "NTC",
        "PTC",
+       "LDR",
        "Volt",
        "Ohm"
       ],
@@ -85105,7 +85105,7 @@ var VAKKEN = [
       "o": [
        "LDR",
        "Volt",
-       "NTC",
+       "PTC",
        "Ohm"
       ],
       "c": 1,
@@ -85154,7 +85154,7 @@ var VAKKEN = [
        "Volt",
        "Ohm",
        "PTC",
-       "NTC"
+       "LDR"
       ],
       "c": 1,
       "u": "Het juiste begrip is «Ohm»: de eenheid van weerstand.",
@@ -85175,10 +85175,10 @@ var VAKKEN = [
      {
       "v": "Wat betekent «Magnetisch veld»?",
       "o": [
-       "het gebied waarin een lading een kracht ondervindt",
+       "het verschil in elektrische potentiaal, in volt",
        "het gebied waarin een magneet een kracht uitoefent",
-       "de energie die een elektrische stroom kan leveren",
-       "een schakeling waarin de spanning overal gelijk is"
+       "de relatie U = I·R tussen spanning, stroom en weerstand",
+       "weerstand daalt bij hogere temperatuur (thermometer)"
       ],
       "c": 1,
       "u": "«Magnetisch veld» betekent: het gebied waarin een magneet een kracht uitoefent.",
@@ -85202,7 +85202,7 @@ var VAKKEN = [
        "Ohmse weerstand",
        "Elektrisch veld",
        "Magnetisch veld",
-       "Elektrische energie"
+       "Serieschakeling"
       ],
       "c": 2,
       "u": "Het juiste begrip is «Magnetisch veld»: het gebied waarin een magneet een kracht uitoefent.",
@@ -85212,9 +85212,9 @@ var VAKKEN = [
       "v": "Wat houdt «Magnetisch veld» in?",
       "o": [
        "het gebied waarin een magneet een kracht uitoefent",
-       "het gebied waarin een lading een kracht ondervindt",
-       "de eenheid waarin elektriciteitsverbruik wordt gemeten",
-       "de energie die een elektrische stroom kan leveren"
+       "het verschil in elektrische potentiaal, in volt",
+       "een schakeling waarin de stroom overal gelijk is",
+       "de relatie U = I·R tussen spanning, stroom en weerstand"
       ],
       "c": 0,
       "u": "«Magnetisch veld» betekent: het gebied waarin een magneet een kracht uitoefent.",
@@ -85247,10 +85247,10 @@ var VAKKEN = [
      {
       "v": "Welke term past bij: \"een spoel die magnetisch wordt door een stroom\"?",
       "o": [
-       "Wisselspanning",
        "Serieschakeling",
+       "Stroomsterkte",
        "Elektromagneet",
-       "Gelijkspanning"
+       "Wisselspanning"
       ],
       "c": 2,
       "u": "Het juiste begrip is «Elektromagneet»: een spoel die magnetisch wordt door een stroom.",
@@ -85272,9 +85272,9 @@ var VAKKEN = [
       "v": "Wat betekent «Wisselspanning»?",
       "o": [
        "spanning die telkens van richting wisselt",
+       "weerstand stijgt bij hogere temperatuur",
        "de hoeveelheid lading per tijd, in ampère",
-       "een verbinding met vrijwel geen weerstand",
-       "een elektrische eigenschap van deeltjes"
+       "een verbinding met vrijwel geen weerstand"
       ],
       "c": 0,
       "u": "«Wisselspanning» betekent: spanning die telkens van richting wisselt.",
@@ -85308,9 +85308,9 @@ var VAKKEN = [
       "v": "Wat houdt «Wisselspanning» in?",
       "o": [
        "spanning die telkens van richting wisselt",
-       "een stof die stroom nauwelijks doorlaat",
        "een verbinding met vrijwel geen weerstand",
-       "weerstand stijgt bij hogere temperatuur"
+       "de hoeveelheid lading per tijd, in ampère",
+       "een stof die stroom nauwelijks doorlaat"
       ],
       "c": 0,
       "u": "«Wisselspanning» betekent: spanning die telkens van richting wisselt.",
@@ -85322,7 +85322,7 @@ var VAKKEN = [
        "weerstand daalt bij meer licht",
        "een stof die stroom goed doorlaat",
        "spanning met een vaste richting",
-       "het vermogen P = U·I in watt"
+       "de eenheid van stroomsterkte"
       ],
       "c": 2,
       "u": "«Gelijkspanning» betekent: spanning met een vaste richting.",
@@ -85355,10 +85355,10 @@ var VAKKEN = [
      {
       "v": "Wat houdt «Gelijkspanning» in?",
       "o": [
-       "de eenheid van stroomsterkte",
+       "weerstand daalt bij meer licht",
        "spanning met een vaste richting",
-       "het vermogen P = U·I in watt",
-       "weerstand daalt bij meer licht"
+       "de eenheid van stroomsterkte",
+       "een stof die stroom goed doorlaat"
       ],
       "c": 1,
       "u": "«Gelijkspanning» betekent: spanning met een vaste richting.",
@@ -85466,7 +85466,7 @@ var VAKKEN = [
        "de energie die een elektrische stroom kan leveren",
        "een schakeling waarin de stroom overal gelijk is",
        "het gebied waarin een lading een kracht ondervindt",
-       "weerstand daalt bij hogere temperatuur (thermometer)"
+       "het verschil in elektrische potentiaal, in volt"
       ],
       "c": 1,
       "u": "«Serieschakeling» betekent: een schakeling waarin de stroom overal gelijk is.",
@@ -85511,9 +85511,9 @@ var VAKKEN = [
      {
       "v": "Wat betekent «Parallelschakeling»?",
       "o": [
-       "de eenheid waarin elektriciteitsverbruik wordt gemeten",
+       "weerstand daalt bij hogere temperatuur (thermometer)",
        "het gebied waarin een lading een kracht ondervindt",
-       "het gebied waarin een magneet een kracht uitoefent",
+       "de eenheid waarin elektriciteitsverbruik wordt gemeten",
        "een schakeling waarin de spanning overal gelijk is"
       ],
       "c": 3,
@@ -85549,8 +85549,8 @@ var VAKKEN = [
       "o": [
        "het gebied waarin een magneet een kracht uitoefent",
        "een schakeling waarin de spanning overal gelijk is",
-       "de eenheid waarin elektriciteitsverbruik wordt gemeten",
-       "het gebied waarin een lading een kracht ondervindt"
+       "weerstand daalt bij hogere temperatuur (thermometer)",
+       "de eenheid waarin elektriciteitsverbruik wordt gemeten"
       ],
       "c": 1,
       "u": "«Parallelschakeling» betekent: een schakeling waarin de spanning overal gelijk is.",
@@ -85572,8 +85572,8 @@ var VAKKEN = [
       "v": "Welk begrip hoort bij deze omschrijving: \"het vermogen P = U·I in watt\"?",
       "o": [
        "Elektrisch vermogen",
-       "Elektrische energie",
        "Resulterende kracht",
+       "Eenparige beweging",
        "Niet-ohmse weerstand"
       ],
       "c": 0,
@@ -85584,9 +85584,9 @@ var VAKKEN = [
       "v": "Welke term past bij: \"het vermogen P = U·I in watt\"?",
       "o": [
        "Elektrisch vermogen",
-       "Elektrische energie",
+       "Niet-ohmse weerstand",
        "Ohmse weerstand",
-       "Niet-ohmse weerstand"
+       "Aardlekschakelaar"
       ],
       "c": 0,
       "u": "Het juiste begrip is «Elektrisch vermogen»: het vermogen P = U·I in watt.",
@@ -85619,10 +85619,10 @@ var VAKKEN = [
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"het opwekken van spanning door een wisselend magneetveld\"?",
       "o": [
-       "Elektrische energie",
+       "Middelpuntzoekende kracht",
        "Elektromagnetische inductie",
-       "Niet-ohmse weerstand",
-       "Middelpuntzoekende kracht"
+       "Elektrische energie",
+       "Niet-ohmse weerstand"
       ],
       "c": 1,
       "u": "Het juiste begrip is «Elektromagnetische inductie»: het opwekken van spanning door een wisselend magneetveld.",
@@ -85631,10 +85631,10 @@ var VAKKEN = [
      {
       "v": "Welke term past bij: \"het opwekken van spanning door een wisselend magneetveld\"?",
       "o": [
-       "Niet-ohmse weerstand",
-       "Elektromagnetische inductie",
        "Elektrisch vermogen",
-       "Elektrische energie"
+       "Elektromagnetische inductie",
+       "Niet-ohmse weerstand",
+       "Ohmse weerstand"
       ],
       "c": 1,
       "u": "Het juiste begrip is «Elektromagnetische inductie»: het opwekken van spanning door een wisselend magneetveld.",
@@ -85801,7 +85801,7 @@ var VAKKEN = [
       "o": [
        "de kracht op een bewegende lading in een magneetveld, F = q·v·B·sin θ",
        "een apparaat dat via inductie de spanning omhoog of omlaag transformeert",
-       "het product van massa en snelheid, behouden in een gesloten systeem",
+       "een elektron dat uit de kern komt; middelmatig doordringend vermogen",
        "laat stroom maar in één richting door; een led geeft daarbij licht"
       ],
       "c": 0,
@@ -85883,9 +85883,9 @@ var VAKKEN = [
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"weerstand stijgt bij hogere temperatuur\"?",
       "o": [
-       "Volt",
-       "NTC",
+       "Ohm",
        "LDR",
+       "Volt",
        "PTC"
       ],
       "c": 3,
@@ -85898,7 +85898,7 @@ var VAKKEN = [
        "Ohm",
        "Volt",
        "PTC",
-       "NTC"
+       "LDR"
       ],
       "c": 2,
       "u": "Het juiste begrip is «PTC»: weerstand stijgt bij hogere temperatuur.",
@@ -85920,8 +85920,8 @@ var VAKKEN = [
       "v": "Wat betekent «NTC»?",
       "o": [
        "weerstand daalt bij hogere temperatuur (thermometer)",
-       "het gebied waarin een lading een kracht ondervindt",
        "de relatie U = I·R tussen spanning, stroom en weerstand",
+       "de energie die een elektrische stroom kan leveren",
        "het gebied waarin een magneet een kracht uitoefent"
       ],
       "c": 0,
@@ -85931,9 +85931,9 @@ var VAKKEN = [
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"weerstand daalt bij hogere temperatuur (thermometer)\"?",
       "o": [
-       "LDR",
-       "Ohm",
        "Volt",
+       "Ohm",
+       "LDR",
        "NTC"
       ],
       "c": 3,
@@ -85944,9 +85944,9 @@ var VAKKEN = [
       "v": "Welke term past bij: \"weerstand daalt bij hogere temperatuur (thermometer)\"?",
       "o": [
        "NTC",
+       "Ohm",
        "Volt",
-       "LDR",
-       "Ohm"
+       "LDR"
       ],
       "c": 0,
       "u": "Het juiste begrip is «NTC»: weerstand daalt bij hogere temperatuur (thermometer).",
@@ -85958,7 +85958,7 @@ var VAKKEN = [
        "weerstand daalt bij hogere temperatuur (thermometer)",
        "het gebied waarin een magneet een kracht uitoefent",
        "een schakeling waarin de spanning overal gelijk is",
-       "het gebied waarin een lading een kracht ondervindt"
+       "het verschil in elektrische potentiaal, in volt"
       ],
       "c": 0,
       "u": "«NTC» betekent: weerstand daalt bij hogere temperatuur (thermometer).",
@@ -85979,8 +85979,8 @@ var VAKKEN = [
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"weerstand daalt bij meer licht\"?",
       "o": [
-       "PTC",
        "Ohm",
+       "Volt",
        "LDR",
        "NTC"
       ],
@@ -86075,7 +86075,7 @@ var VAKKEN = [
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"R is constant; U en I zijn recht evenredig.\"?",
       "o": [
-       "Elektrische energie",
+       "Frequentie (f)",
        "Magnetisch veld",
        "Elektrisch veld",
        "Ohmse weerstand"
@@ -86090,7 +86090,7 @@ var VAKKEN = [
        "Elektrisch veld",
        "Ohmse weerstand",
        "Magnetisch veld",
-       "Elektrisch vermogen"
+       "Wisselspanning"
       ],
       "c": 1,
       "u": "Het juiste begrip is «Ohmse weerstand»: R is constant; U en I zijn recht evenredig..",
@@ -86124,8 +86124,8 @@ var VAKKEN = [
       "v": "Welk begrip hoort bij deze omschrijving: \"R verandert met spanning of temperatuur.\"?",
       "o": [
        "Niet-ohmse weerstand",
-       "Elektrisch vermogen",
        "Resulterende kracht",
+       "Potentiële energie",
        "Elektrische energie"
       ],
       "c": 0,
@@ -86135,9 +86135,9 @@ var VAKKEN = [
      {
       "v": "Welke term past bij: \"R verandert met spanning of temperatuur.\"?",
       "o": [
-       "Magnetisch veld",
+       "Elektromagnetische inductie",
        "Niet-ohmse weerstand",
-       "Elektrisch vermogen",
+       "Magnetisch veld",
        "Elektrische energie"
       ],
       "c": 1,
@@ -87137,7 +87137,7 @@ var VAKKEN = [
        "Kernsplijting",
        "Stralingsdosis",
        "Halveringsdikte",
-       "Halveringstijd"
+       "Kernstraling"
       ],
       "c": 1,
       "u": "Het juiste begrip is «Stralingsdosis»: de geabsorbeerde energie per kilogram.",
@@ -87231,7 +87231,7 @@ var VAKKEN = [
       "v": "Welk begrip hoort bij deze omschrijving: \"het uitzenden van straling door instabiele kernen\"?",
       "o": [
        "Halveringsdikte",
-       "Halveringstijd",
+       "Kernsplijting",
        "Röntgenstraling",
        "Radioactiviteit"
       ],
@@ -87326,9 +87326,9 @@ var VAKKEN = [
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"het blootstellen aan straling zonder besmetting\"?",
       "o": [
-       "Activiteit",
-       "Bètaverval",
+       "Echografie",
        "Alfaverval",
+       "Bètaverval",
        "Bestraling"
       ],
       "c": 3,
@@ -87338,10 +87338,10 @@ var VAKKEN = [
      {
       "v": "Welke term past bij: \"het blootstellen aan straling zonder besmetting\"?",
       "o": [
-       "Echografie",
+       "Activiteit",
        "Bestraling",
-       "Bètaverval",
-       "Alfaverval"
+       "Echografie",
+       "Bètaverval"
       ],
       "c": 1,
       "u": "Het juiste begrip is «Bestraling»: het blootstellen aan straling zonder besmetting.",
@@ -87423,8 +87423,8 @@ var VAKKEN = [
       "v": "Welk begrip hoort bij deze omschrijving: \"de laagdikte die de straling halveert\"?",
       "o": [
        "Halveringsdikte",
-       "Röntgenstraling",
        "Radioactiviteit",
+       "Röntgenstraling",
        "Kernsplijting"
       ],
       "c": 0,
@@ -87434,9 +87434,9 @@ var VAKKEN = [
      {
       "v": "Welke term past bij: \"de laagdikte die de straling halveert\"?",
       "o": [
-       "Radioactiviteit",
-       "Halveringstijd",
        "Röntgenstraling",
+       "Kernsplijting",
+       "Radioactiviteit",
        "Halveringsdikte"
       ],
       "c": 3,
@@ -87890,10 +87890,10 @@ var VAKKEN = [
      {
       "v": "Wat betekent «Bètastraling»?",
       "o": [
-       "radioactieve tracer; tijdelijke besmetting van het lichaam",
+       "het aantal vervallen kernen per seconde, in becquerel",
        "een snel elektron met een middelmatig doordringend vermogen",
        "de opgenomen hoeveelheid straling, in gray of sievert",
-       "het aantal vervallen kernen per seconde, in becquerel"
+       "radioactieve tracer; tijdelijke besmetting van het lichaam"
       ],
       "c": 1,
       "u": "«Bètastraling» betekent: een snel elektron met een middelmatig doordringend vermogen.",
@@ -87904,7 +87904,7 @@ var VAKKEN = [
       "o": [
        "Alfastraling",
        "Bètastraling",
-       "Radiogolven",
+       "Gammastraling",
        "Kernstraling"
       ],
       "c": 1,
@@ -87914,8 +87914,8 @@ var VAKKEN = [
      {
       "v": "Welke term past bij: \"een snel elektron met een middelmatig doordringend vermogen\"?",
       "o": [
-       "Gammastraling",
-       "Radiogolven",
+       "Ultraviolet",
+       "Afscherming",
        "Kernstraling",
        "Bètastraling"
       ],
@@ -87974,8 +87974,8 @@ var VAKKEN = [
      {
       "v": "Wat houdt «Gammastraling» in?",
       "o": [
+       "een elektron dat uit de kern komt; middelmatig doordringend vermogen",
        "de kern stoot een heliumkern uit; Z daalt met 2, A met 4 → ander element.",
-       "radioactieve tracer; tijdelijke besmetting van het lichaam",
        "straling met genoeg energie om elektronen uit atomen te slaan",
        "elektromagnetische straling met het grootste doordringend vermogen"
       ],
@@ -87999,7 +87999,7 @@ var VAKKEN = [
       "v": "Welk begrip hoort bij deze omschrijving: \"de tijd waarin de helft van de kernen vervalt\"?",
       "o": [
        "Radioactiviteit",
-       "Halveringsdikte",
+       "Kernsplijting",
        "Halveringstijd",
        "Stralingsdosis"
       ],
@@ -88011,7 +88011,7 @@ var VAKKEN = [
       "v": "Welke term past bij: \"de tijd waarin de helft van de kernen vervalt\"?",
       "o": [
        "Stralingsdosis",
-       "Röntgenstraling",
+       "Gammastraling",
        "Halveringstijd",
        "Radioactiviteit"
       ],
@@ -88036,8 +88036,8 @@ var VAKKEN = [
       "o": [
        "het aantal vervallen kernen per seconde, in becquerel",
        "de opgenomen hoeveelheid straling, in gray of sievert",
-       "het uitzenden van straling door instabiele kernen",
-       "radioactieve tracer; tijdelijke besmetting van het lichaam"
+       "radioactieve tracer; tijdelijke besmetting van het lichaam",
+       "een snel elektron met een middelmatig doordringend vermogen"
       ],
       "c": 0,
       "u": "«Activiteit» betekent: het aantal vervallen kernen per seconde, in becquerel.",
@@ -88070,9 +88070,9 @@ var VAKKEN = [
      {
       "v": "Wat houdt «Activiteit» in?",
       "o": [
-       "de eenheid van de biologisch schadelijke dosis",
+       "radioactieve tracer; tijdelijke besmetting van het lichaam",
+       "een snel elektron met een middelmatig doordringend vermogen",
        "de opgenomen hoeveelheid straling, in gray of sievert",
-       "het uitzenden van straling door instabiele kernen",
        "het aantal vervallen kernen per seconde, in becquerel"
       ],
       "c": 3,
@@ -88167,7 +88167,7 @@ var VAKKEN = [
       "v": "Wat houdt «Isotoop» in?",
       "o": [
        "een atoomsoort met hetzelfde aantal protonen maar een ander aantal neutronen",
-       "elektromagnetische straling met het grootste doordringend vermogen",
+       "een elektron dat uit de kern komt; middelmatig doordringend vermogen",
        "de kern stoot een heliumkern uit; Z daalt met 2, A met 4 → ander element.",
        "geluidsgolven; veilig (geen ioniserende straling), lagere beeldkwaliteit"
       ],
@@ -88178,10 +88178,10 @@ var VAKKEN = [
      {
       "v": "Wat betekent «Röntgenstraling»?",
       "o": [
-       "de eenheid van weerstand",
+       "de eenheid van spanning",
        "zonnestraling",
        "medische scans",
-       "een elektron dat uit de kern komt; middelmatig doordringend vermogen"
+       "de eenheid van weerstand"
       ],
       "c": 2,
       "u": "«Röntgenstraling» betekent: medische scans.",
@@ -88190,10 +88190,10 @@ var VAKKEN = [
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"medische scans\"?",
       "o": [
-       "Halveringstijd",
+       "Radioactiviteit",
        "Halveringsdikte",
        "Röntgenstraling",
-       "Radioactiviteit"
+       "Meetonzekerheid"
       ],
       "c": 2,
       "u": "Het juiste begrip is «Röntgenstraling»: medische scans.",
@@ -88214,10 +88214,10 @@ var VAKKEN = [
      {
       "v": "Wat houdt «Röntgenstraling» in?",
       "o": [
-       "een elektron dat uit de kern komt; middelmatig doordringend vermogen",
+       "warmtestraling / warmtecamera",
        "zonnestraling",
        "medische scans",
-       "warmtestraling / warmtecamera"
+       "materiaal dat straling tegenhoudt"
       ],
       "c": 2,
       "u": "«Röntgenstraling» betekent: medische scans.",
@@ -88226,8 +88226,8 @@ var VAKKEN = [
      {
       "v": "Wat betekent «Ultraviolet»?",
       "o": [
-       "een elektron dat uit de kern komt; middelmatig doordringend vermogen",
        "de eenheid van spanning",
+       "warmtestraling / warmtecamera",
        "medische scans",
        "zonnestraling"
       ],
@@ -88263,9 +88263,9 @@ var VAKKEN = [
       "v": "Wat houdt «Ultraviolet» in?",
       "o": [
        "zonnestraling",
-       "een elektron dat uit de kern komt; middelmatig doordringend vermogen",
+       "warmtestraling / warmtecamera",
        "medische scans",
-       "warmtestraling / warmtecamera"
+       "het splitsen van een zware kern"
       ],
       "c": 0,
       "u": "«Ultraviolet» betekent: zonnestraling.",
@@ -88418,10 +88418,10 @@ var VAKKEN = [
      {
       "v": "Wat betekent «Bèta (β)»?",
       "o": [
-       "warmtestraling / warmtecamera",
-       "de eenheid van spanning",
+       "straling met genoeg energie om elektronen uit atomen te slaan",
+       "geluidsgolven; veilig (geen ioniserende straling), lagere beeldkwaliteit",
        "een elektron dat uit de kern komt; middelmatig doordringend vermogen",
-       "medische scans"
+       "elektromagnetische straling met het grootste doordringend vermogen"
       ],
       "c": 2,
       "u": "«Bèta (β)» betekent: een elektron dat uit de kern komt; middelmatig doordringend vermogen.",
@@ -88430,34 +88430,34 @@ var VAKKEN = [
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"een elektron dat uit de kern komt; middelmatig doordringend vermogen\"?",
       "o": [
-       "Alfa (α)",
+       "Bèta (β)",
        "Gamma (γ)",
-       "Kernfusie",
-       "Bèta (β)"
+       "Alfa (α)",
+       "Infrarood"
       ],
-      "c": 3,
+      "c": 0,
       "u": "Het juiste begrip is «Bèta (β)»: een elektron dat uit de kern komt; middelmatig doordringend vermogen.",
       "d": 2
      },
      {
       "v": "Welke term past bij: \"een elektron dat uit de kern komt; middelmatig doordringend vermogen\"?",
       "o": [
-       "Becquerel",
-       "Bèta (β)",
        "Gamma (γ)",
-       "Alfa (α)"
+       "Alfa (α)",
+       "Becquerel",
+       "Bèta (β)"
       ],
-      "c": 1,
+      "c": 3,
       "u": "Het juiste begrip is «Bèta (β)»: een elektron dat uit de kern komt; middelmatig doordringend vermogen.",
       "d": 3
      },
      {
       "v": "Wat houdt «Bèta (β)» in?",
       "o": [
-       "zonnestraling",
-       "medische scans",
+       "een atoomsoort met hetzelfde aantal protonen maar een ander aantal neutronen",
+       "elektromagnetische straling met het grootste doordringend vermogen",
        "een elektron dat uit de kern komt; middelmatig doordringend vermogen",
-       "warmtestraling / warmtecamera"
+       "geluidsgolven; veilig (geen ioniserende straling), lagere beeldkwaliteit"
       ],
       "c": 2,
       "u": "«Bèta (β)» betekent: een elektron dat uit de kern komt; middelmatig doordringend vermogen.",
@@ -88527,7 +88527,7 @@ var VAKKEN = [
       "v": "Welk begrip hoort bij deze omschrijving: \"snel, vooral botten en longen; stralingsrisico\"?",
       "o": [
        "Kernreactie",
-       "Ultraviolet",
+       "Afscherming",
        "Röntgenfoto",
        "Vervalreeks"
       ],
@@ -88538,10 +88538,10 @@ var VAKKEN = [
      {
       "v": "Welke term past bij: \"snel, vooral botten en longen; stralingsrisico\"?",
       "o": [
-       "Ultraviolet",
-       "Röntgenfoto",
        "Kernreactie",
-       "Radiogolven"
+       "Röntgenfoto",
+       "Ultraviolet",
+       "Vervalreeks"
       ],
       "c": 1,
       "u": "Het juiste begrip is «Röntgenfoto»: snel, vooral botten en longen; stralingsrisico.",
@@ -88646,7 +88646,7 @@ var VAKKEN = [
      {
       "v": "Wat houdt «Echografie» in?",
       "o": [
-       "elektromagnetische straling met het grootste doordringend vermogen",
+       "een elektron dat uit de kern komt; middelmatig doordringend vermogen",
        "geluidsgolven; veilig (geen ioniserende straling), lagere beeldkwaliteit",
        "een atoomsoort met hetzelfde aantal protonen maar een ander aantal neutronen",
        "de kern stoot een heliumkern uit; Z daalt met 2, A met 4 → ander element."
@@ -88707,7 +88707,7 @@ var VAKKEN = [
       "v": "Wat betekent «Alfaverval»?",
       "o": [
        "de kern stoot een heliumkern uit; Z daalt met 2, A met 4 → ander element.",
-       "straling met genoeg energie om elektronen uit atomen te slaan",
+       "een elektron dat uit de kern komt; middelmatig doordringend vermogen",
        "een atoomsoort met hetzelfde aantal protonen maar een ander aantal neutronen",
        "geluidsgolven; veilig (geen ioniserende straling), lagere beeldkwaliteit"
       ],
@@ -89808,9 +89808,9 @@ var VAKKEN = [
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"een mens als drager van rechten en plichten\"?",
       "o": [
-       "Normale productie",
        "Platte organisatie",
        "Steile organisatie",
+       "Toegestane kosten",
        "Natuurlijk persoon"
       ],
       "c": 3,
@@ -89823,7 +89823,7 @@ var VAKKEN = [
        "Natuurlijk persoon",
        "Inkomstenbelasting",
        "Samengestelde interest",
-       "Aandelenkapitaal"
+       "Budget & liquiditeit"
       ],
       "c": 0,
       "u": "Het juiste begrip is «Natuurlijk persoon»: een mens als drager van rechten en plichten.",
@@ -89988,8 +89988,8 @@ var VAKKEN = [
      {
       "v": "Wat betekent «Stichting»?",
       "o": [
+       "de vastgelegde regels van een rechtspersoon",
        "een bewijs van deelname in het eigen vermogen",
-       "de belasting die een BV of NV over de winst betaalt",
        "het toezichthoudende orgaan van een bv of nv",
        "een rechtspersoon met een doel en zonder leden"
       ],
@@ -90024,8 +90024,8 @@ var VAKKEN = [
      {
       "v": "Wat houdt «Stichting» in?",
       "o": [
-       "een eigenaar van een deel van het aandelenkapitaal",
        "een vereniging die voor haar leden onderneemt",
+       "het toezichthoudende orgaan van een bv of nv",
        "een bewijs van deelname in het eigen vermogen",
        "een rechtspersoon met een doel en zonder leden"
       ],
@@ -90037,9 +90037,9 @@ var VAKKEN = [
       "v": "Wat betekent «Vereniging»?",
       "o": [
        "een rechtspersoon met leden en een gezamenlijk doel",
+       "een eigenaar van een deel van het aandelenkapitaal",
        "een samenwerking van beoefenaren van een vrij beroep",
-       "de verhandelbaarheid van aandelen op de effectenbeurs",
-       "een eigenaar van een deel van het aandelenkapitaal"
+       "de verhandelbaarheid van aandelen op de effectenbeurs"
       ],
       "c": 0,
       "u": "«Vereniging» betekent: een rechtspersoon met leden en een gezamenlijk doel.",
@@ -90074,8 +90074,8 @@ var VAKKEN = [
       "o": [
        "een rechtspersoon met leden en een gezamenlijk doel",
        "een samenwerking van beoefenaren van een vrij beroep",
-       "de verhandelbaarheid van aandelen op de effectenbeurs",
-       "de belasting die een BV of NV over de winst betaalt"
+       "een eigenaar van een deel van het aandelenkapitaal",
+       "belasting over het inkomen van een natuurlijk persoon"
       ],
       "c": 0,
       "u": "«Vereniging» betekent: een rechtspersoon met leden en een gezamenlijk doel.",
@@ -90492,10 +90492,10 @@ var VAKKEN = [
      {
       "v": "Welke term past bij: \"de verhandelbaarheid van aandelen op de effectenbeurs\"?",
       "o": [
+       "Rechtspersoon",
        "Faillissement",
-       "Aandeelhouder",
        "Beursnotering",
-       "Rechtspersoon"
+       "Aandeelhouder"
       ],
       "c": 2,
       "u": "Het juiste begrip is «Beursnotering»: de verhandelbaarheid van aandelen op de effectenbeurs.",
@@ -90565,8 +90565,8 @@ var VAKKEN = [
       "v": "Wat betekent «BV»?",
       "o": [
        "een organisatie die zelf contracten sluit, bezit heeft en aangeklaagd kan worden",
-       "een samenwerkingsverband waarin elke vennoot hoofdelijk aansprakelijk is",
        "een investeringscriterium dat de tijdswaarde van geld en alle kasstromen meeneemt",
+       "een samenwerkingsverband waarin elke vennoot hoofdelijk aansprakelijk is",
        "een rechtspersoon met beperkte aansprakelijkheid en niet vrij verhandelbare aandelen"
       ],
       "c": 3,
@@ -90576,10 +90576,10 @@ var VAKKEN = [
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"een rechtspersoon met beperkte aansprakelijkheid en niet vrij verhandelbare aandelen\"?",
       "o": [
-       "CAO",
+       "Merk",
        "VOF",
        "BV",
-       "NV"
+       "CAO"
       ],
       "c": 2,
       "u": "Het juiste begrip is «BV»: een rechtspersoon met beperkte aansprakelijkheid en niet vrij verhandelbare aandelen.",
@@ -90588,10 +90588,10 @@ var VAKKEN = [
      {
       "v": "Welke term past bij: \"een rechtspersoon met beperkte aansprakelijkheid en niet vrij verhandelbare aandelen\"?",
       "o": [
-       "VOF",
        "Aandeel",
+       "Emissie",
        "BV",
-       "NV"
+       "VOF"
       ],
       "c": 2,
       "u": "Het juiste begrip is «BV»: een rechtspersoon met beperkte aansprakelijkheid en niet vrij verhandelbare aandelen.",
@@ -90708,10 +90708,10 @@ var VAKKEN = [
      {
       "v": "Wat betekent «NV»?",
       "o": [
-       "de toestand waarin schulden niet meer betaald kunnen worden",
-       "een rechtspersoon met vrij verhandelbare aandelen op de beurs",
        "het deel van de winst dat aan aandeelhouders wordt uitgekeerd",
-       "de mate waarin je met privévermogen instaat voor schulden"
+       "een rechtspersoon met vrij verhandelbare aandelen op de beurs",
+       "het kapitaal dat aandeelhouders in de onderneming inbrengen",
+       "het verkopen van vorderingen om sneller geld te ontvangen"
       ],
       "c": 1,
       "u": "«NV» betekent: een rechtspersoon met vrij verhandelbare aandelen op de beurs.",
@@ -90722,7 +90722,7 @@ var VAKKEN = [
       "o": [
        "CAO",
        "VOF",
-       "BV",
+       "Merk",
        "NV"
       ],
       "c": 3,
@@ -90735,7 +90735,7 @@ var VAKKEN = [
        "VOF",
        "Emissie",
        "NV",
-       "BV"
+       "Aandeel"
       ],
       "c": 2,
       "u": "Het juiste begrip is «NV»: een rechtspersoon met vrij verhandelbare aandelen op de beurs.",
@@ -90745,9 +90745,9 @@ var VAKKEN = [
       "v": "Wat houdt «NV» in?",
       "o": [
        "een rechtspersoon met vrij verhandelbare aandelen op de beurs",
-       "het verkopen van vorderingen om sneller geld te ontvangen",
+       "het kapitaal dat aandeelhouders in de onderneming inbrengen",
        "een onderneming met één eigenaar die onbeperkt aansprakelijk is",
-       "het kapitaal dat aandeelhouders in de onderneming inbrengen"
+       "de toestand waarin schulden niet meer betaald kunnen worden"
       ],
       "c": 0,
       "u": "«NV» betekent: een rechtspersoon met vrij verhandelbare aandelen op de beurs.",
@@ -90768,8 +90768,8 @@ var VAKKEN = [
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"een samenwerkingsverband waarin elke vennoot hoofdelijk aansprakelijk is\"?",
       "o": [
+       "CAO",
        "Merk",
-       "NV",
        "VOF",
        "BV"
       ],
@@ -90781,9 +90781,9 @@ var VAKKEN = [
       "v": "Welke term past bij: \"een samenwerkingsverband waarin elke vennoot hoofdelijk aansprakelijk is\"?",
       "o": [
        "NV",
-       "BV",
+       "Emissie",
        "VOF",
-       "Emissie"
+       "Aandeel"
       ],
       "c": 2,
       "u": "Het juiste begrip is «VOF»: een samenwerkingsverband waarin elke vennoot hoofdelijk aansprakelijk is.",
@@ -91875,9 +91875,9 @@ var VAKKEN = [
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"de afzet waarbij de winst nul is\"?",
       "o": [
+       "Ontslaggronden",
        "Dekkingsbijdrage",
        "Decentralisatie",
-       "Ontslaggronden",
        "Break-evenafzet"
       ],
       "c": 3,
@@ -91887,9 +91887,9 @@ var VAKKEN = [
      {
       "v": "Welke term past bij: \"de afzet waarbij de winst nul is\"?",
       "o": [
-       "Personeelsverloop",
-       "Decentralisatie",
        "Dekkingsbijdrage",
+       "Decentralisatie",
+       "Personeelsverloop",
        "Break-evenafzet"
       ],
       "c": 3,
@@ -91899,7 +91899,7 @@ var VAKKEN = [
      {
       "v": "Wat houdt «Break-evenafzet» in?",
       "o": [
-       "verkoopprijs min variabele kosten per stuk",
+       "kosten die niet veranderen met de productieomvang",
        "de verhouding tussen opbrengst en inzet",
        "constante vs. variabele kosten",
        "de afzet waarbij de winst nul is"
@@ -91995,7 +91995,7 @@ var VAKKEN = [
      {
       "v": "Wat houdt «Efficiency» in?",
       "o": [
-       "constante vs. variabele kosten",
+       "het toewijzen van bevoegdheden aan lagere niveaus",
        "de afzet waarbij de winst nul is",
        "de verhouding tussen opbrengst en inzet",
        "verkoopprijs min variabele kosten per stuk"
@@ -92021,8 +92021,8 @@ var VAKKEN = [
       "o": [
        "Nacalculatie",
        "Ziekteverzuim",
-       "Ontslaggronden",
-       "Kostensoorten"
+       "Organogram",
+       "Centralisatie"
       ],
       "c": 0,
       "u": "Het juiste begrip is «Nacalculatie»: het achteraf vergelijken van begrote en werkelijke kosten.",
@@ -92032,8 +92032,8 @@ var VAKKEN = [
       "v": "Welke term past bij: \"het achteraf vergelijken van begrote en werkelijke kosten\"?",
       "o": [
        "Ziekteverzuim",
-       "Organogram",
-       "Ontslaggronden",
+       "Kostensoorten",
+       "Centralisatie",
        "Nacalculatie"
       ],
       "c": 3,
@@ -92044,7 +92044,7 @@ var VAKKEN = [
       "v": "Wat houdt «Nacalculatie» in?",
       "o": [
        "het achteraf vergelijken van begrote en werkelijke kosten",
-       "een structuur met weinig lagen en een grote span of control",
+       "sectorafspraken over minimumloon en arbeidsomstandigheden",
        "de kosten die bij de werkelijke productie toegestaan waren",
        "een structuur met veel lagen en een kleine span of control"
       ],
@@ -92439,10 +92439,10 @@ var VAKKEN = [
      {
       "v": "Wat betekent «Overhead»?",
       "o": [
-       "het aantal medewerkers dat direct onder één leidinggevende valt",
-       "een contract dat automatisch eindigt op de afgesproken datum",
+       "de behoeftenhiërarchie van fysiologisch tot zelfontplooiing",
+       "een structuur waarin medewerkers twee leidinggevenden hebben",
        "indirecte kosten die niet aan één product zijn toe te rekenen",
-       "het overdragen van taken en bevoegdheden naar een lager niveau"
+       "de spontane onderlinge contacten naast de officiële structuur"
       ],
       "c": 2,
       "u": "«Overhead» betekent: indirecte kosten die niet aan één product zijn toe te rekenen.",
@@ -92475,10 +92475,10 @@ var VAKKEN = [
      {
       "v": "Wat houdt «Overhead» in?",
       "o": [
-       "het aantal medewerkers dat direct onder één leidinggevende valt",
-       "het deel van de werktijd dat werknemers door ziekte afwezig zijn",
+       "het samenbrengen van beslissingsbevoegdheid bij de leiding",
+       "een structuur met weinig lagen en een grote span of control",
        "indirecte kosten die niet aan één product zijn toe te rekenen",
-       "een structuur waarin medewerkers twee leidinggevenden hebben"
+       "het deel van de werktijd dat werknemers door ziekte afwezig zijn"
       ],
       "c": 2,
       "u": "«Overhead» betekent: indirecte kosten die niet aan één product zijn toe te rekenen.",
@@ -92512,9 +92512,9 @@ var VAKKEN = [
       "v": "Welke term past bij: \"het resultaat doordat de werkelijke productie afwijkt van de normale\"?",
       "o": [
        "Bezettingsresultaat",
-       "Lijn-staforganisatie",
        "Matrixorganisatie",
-       "Personeelsverloop"
+       "Personeelsverloop",
+       "Lijn-staforganisatie"
       ],
       "c": 0,
       "u": "Het juiste begrip is «Bezettingsresultaat»: het resultaat doordat de werkelijke productie afwijkt van de normale.",
@@ -92835,7 +92835,7 @@ var VAKKEN = [
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"sectorafspraken over minimumloon en arbeidsomstandigheden\"?",
       "o": [
-       "REV",
+       "VOF",
        "Merk",
        "CAO",
        "BV"
@@ -92848,9 +92848,9 @@ var VAKKEN = [
       "v": "Welke term past bij: \"sectorafspraken over minimumloon en arbeidsomstandigheden\"?",
       "o": [
        "CAO",
-       "RTV",
        "NV",
-       "REV"
+       "Overhead",
+       "Delegeren"
       ],
       "c": 0,
       "u": "Het juiste begrip is «CAO»: sectorafspraken over minimumloon en arbeidsomstandigheden.",
@@ -92860,8 +92860,8 @@ var VAKKEN = [
       "v": "Wat houdt «CAO» in?",
       "o": [
        "een structuur met weinig lagen en een grote span of control",
+       "de verwachte gemiddelde productie waarop de kostprijs berust",
        "de behoeftenhiërarchie van fysiologisch tot zelfontplooiing",
-       "een structuur met veel lagen en een kleine span of control",
        "sectorafspraken over minimumloon en arbeidsomstandigheden"
       ],
       "c": 3,
@@ -92943,7 +92943,7 @@ var VAKKEN = [
      {
       "v": "Wat betekent «Steile organisatie»?",
       "o": [
-       "de behoeftenhiërarchie van fysiologisch tot zelfontplooiing",
+       "indirecte kosten die niet aan één product zijn toe te rekenen",
        "het achteraf vergelijken van begrote en werkelijke kosten",
        "een structuur met veel lagen en een kleine span of control",
        "sectorafspraken over minimumloon en arbeidsomstandigheden"
@@ -93184,8 +93184,8 @@ var VAKKEN = [
       "v": "Wat betekent «Kostensoorten»?",
       "o": [
        "de afzet waarbij de winst nul is",
-       "klanten die nog moeten betalen",
        "de uitgifte van nieuwe aandelen",
+       "klanten die nog moeten betalen",
        "constante vs. variabele kosten"
       ],
       "c": 3,
@@ -93219,8 +93219,8 @@ var VAKKEN = [
      {
       "v": "Wat houdt «Kostensoorten» in?",
       "o": [
-       "verkoopprijs min variabele kosten per stuk",
        "de verhouding tussen opbrengst en inzet",
+       "de kosten per product",
        "constante vs. variabele kosten",
        "de afzet waarbij de winst nul is"
       ],
@@ -94265,8 +94265,8 @@ var VAKKEN = [
       "v": "Wat betekent «Secundair onderzoek»?",
       "o": [
        "een naam of teken dat een product herkenbaar maakt",
+       "een markt met één aanbieder die zelf de prijs kan bepalen",
        "onbetaalde, redactionele aandacht in de media",
-       "de eigen omzet als deel van de totale markt",
        "onderzoek met bestaande bronnen zoals CBS-rapporten"
       ],
       "c": 3,
@@ -94324,10 +94324,10 @@ var VAKKEN = [
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"de opeenvolgende schakels van producent via groothandel naar consument\"?",
       "o": [
-       "Prijsbepaling",
+       "Marktoriëntatie",
        "Marktaandeel",
        "Bedrijfskolom",
-       "Marketingmix"
+       "Prijsbepaling"
       ],
       "c": 2,
       "u": "Het juiste begrip is «Bedrijfskolom»: de opeenvolgende schakels van producent via groothandel naar consument.",
@@ -94336,9 +94336,9 @@ var VAKKEN = [
      {
       "v": "Welke term past bij: \"de opeenvolgende schakels van producent via groothandel naar consument\"?",
       "o": [
-       "Marktoriëntatie",
+       "Marktonderzoek",
+       "Marketingmix",
        "Prijsbepaling",
-       "Marktaandeel",
        "Bedrijfskolom"
       ],
       "c": 3,
@@ -94362,7 +94362,7 @@ var VAKKEN = [
       "o": [
        "het product op zo veel mogelijk verkooppunten beschikbaar maken",
        "diepgaand onderzoek naar meningen en motivaties via interviews",
-       "de levensfasen van introductie via groei en rijpheid naar neergang",
+       "een markt met één aanbieder die zelf de prijs kan bepalen",
        "starten met een lage introductieprijs om snel marktaandeel te winnen"
       ],
       "c": 1,
@@ -94456,7 +94456,7 @@ var VAKKEN = [
      {
       "v": "Wat betekent «Productlevenscyclus»?",
       "o": [
-       "starten met een lage introductieprijs om snel marktaandeel te winnen",
+       "een markt met één aanbieder die zelf de prijs kan bepalen",
        "de opeenvolgende schakels van producent via groothandel naar consument",
        "de levensfasen van introductie via groei en rijpheid naar neergang",
        "diepgaand onderzoek naar meningen en motivaties via interviews"
@@ -94506,7 +94506,7 @@ var VAKKEN = [
       "o": [
        "het product op zo veel mogelijk verkooppunten beschikbaar maken",
        "de levensfasen van introductie via groei en rijpheid naar neergang",
-       "het aantal medewerkers dat direct onder één leidinggevende valt",
+       "een markt met één aanbieder die zelf de prijs kan bepalen",
        "diepgaand onderzoek naar meningen en motivaties via interviews"
       ],
       "c": 0,
@@ -94804,9 +94804,9 @@ var VAKKEN = [
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"heel veel geen (prijsnemer)\"?",
       "o": [
+       "Kwalitatief onderzoek",
        "Intensieve distributie",
        "Secundair onderzoek",
-       "Kwalitatief onderzoek",
        "Volledige mededinging"
       ],
       "c": 3,
@@ -94888,10 +94888,10 @@ var VAKKEN = [
      {
       "v": "Wat betekent «Monopolie»?",
       "o": [
-       "heel veel geen (prijsnemer)",
+       "het product op zo veel mogelijk verkooppunten beschikbaar maken",
        "een markt met één aanbieder die zelf de prijs kan bepalen",
-       "enkele grote redelijk veel",
-       "de kosten per product"
+       "diepgaand onderzoek naar meningen en motivaties via interviews",
+       "een naam of teken dat een product herkenbaar maakt"
       ],
       "c": 1,
       "u": "«Monopolie» betekent: een markt met één aanbieder die zelf de prijs kan bepalen.",
@@ -94901,9 +94901,9 @@ var VAKKEN = [
       "v": "Welk begrip hoort bij deze omschrijving: \"een markt met één aanbieder die zelf de prijs kan bepalen\"?",
       "o": [
        "Monopolie",
+       "Stichting",
        "Doelgroep",
-       "Obligatie",
-       "Marktvormen"
+       "Oligopolie"
       ],
       "c": 0,
       "u": "Het juiste begrip is «Monopolie»: een markt met één aanbieder die zelf de prijs kan bepalen.",
@@ -94915,7 +94915,7 @@ var VAKKEN = [
        "Monopolie",
        "Oligopolie",
        "Doelgroep",
-       "Marktvormen"
+       "Enquête"
       ],
       "c": 0,
       "u": "Het juiste begrip is «Monopolie»: een markt met één aanbieder die zelf de prijs kan bepalen.",
@@ -94924,10 +94924,10 @@ var VAKKEN = [
      {
       "v": "Wat houdt «Monopolie» in?",
       "o": [
-       "enkele grote redelijk veel",
-       "heel veel geen (prijsnemer)",
+       "een naam of teken dat een product herkenbaar maakt",
+       "onderzoek met bestaande bronnen zoals CBS-rapporten",
        "een markt met één aanbieder die zelf de prijs kan bepalen",
-       "kwalitatief vs. kwantitatief"
+       "diepgaand onderzoek naar meningen en motivaties via interviews"
       ],
       "c": 2,
       "u": "«Monopolie» betekent: een markt met één aanbieder die zelf de prijs kan bepalen.",
@@ -95560,9 +95560,9 @@ var VAKKEN = [
      {
       "v": "Wat betekent «Liquiditeit»?",
       "o": [
-       "de geldstroom in en uit een onderneming",
        "geleend geld dat je later terugbetaalt",
-       "de periodieke terugbetaling van een lening",
+       "de rentabiliteit van het eigen vermogen",
+       "de geldstroom in en uit een onderneming",
        "de mate waarin je op tijd kunt betalen"
       ],
       "c": 3,
@@ -95597,7 +95597,7 @@ var VAKKEN = [
       "v": "Wat houdt «Liquiditeit» in?",
       "o": [
        "geleend geld dat je later terugbetaalt",
-       "de rentabiliteit van het eigen vermogen",
+       "de rentabiliteit van het totale vermogen",
        "de mate waarin je op tijd kunt betalen",
        "de geldstroom in en uit een onderneming"
       ],
@@ -95608,10 +95608,10 @@ var VAKKEN = [
      {
       "v": "Wat betekent «Solvabiliteit»?",
       "o": [
-       "vooruitbetaling die een afnemer aan de onderneming doet",
-       "een langlopende lening met onroerend goed als onderpand",
+       "de tijd waarin een investering zichzelf terugverdient",
+       "uitstel van betaling dat een leverancier toestaat",
        "de mate waarin je aan alle verplichtingen kunt voldoen",
-       "het kiezen tussen investeringen op basis van rendement"
+       "de mate waarin een onderneming leningen kan terugbetalen"
       ],
       "c": 2,
       "u": "«Solvabiliteit» betekent: de mate waarin je aan alle verplichtingen kunt voldoen.",
@@ -95645,9 +95645,9 @@ var VAKKEN = [
       "v": "Wat houdt «Solvabiliteit» in?",
       "o": [
        "de mate waarin je aan alle verplichtingen kunt voldoen",
-       "kosten die doorlopen bij nulproductie, los van de omvang",
-       "het rendementspercentage waarbij de NCW gelijk aan nul is",
-       "het kiezen tussen investeringen op basis van rendement"
+       "de mate waarin een onderneming leningen kan terugbetalen",
+       "een langlopende lening met onroerend goed als onderpand",
+       "het rendementspercentage waarbij de NCW gelijk aan nul is"
       ],
       "c": 0,
       "u": "«Solvabiliteit» betekent: de mate waarin je aan alle verplichtingen kunt voldoen.",
@@ -95718,7 +95718,7 @@ var VAKKEN = [
       "o": [
        "Cashflow",
        "Dividend",
-       "Obligatie",
+       "Krediet",
        "Aflossing"
       ],
       "c": 0,
@@ -95728,9 +95728,9 @@ var VAKKEN = [
      {
       "v": "Welke term past bij: \"de geldstroom in en uit een onderneming\"?",
       "o": [
-       "Krediet",
+       "Aandeel",
        "Dividend",
-       "Obligatie",
+       "Krediet",
        "Cashflow"
       ],
       "c": 3,
@@ -95742,8 +95742,8 @@ var VAKKEN = [
       "o": [
        "de rentabiliteit van het totale vermogen",
        "de geldstroom in en uit een onderneming",
-       "de rentabiliteit van het eigen vermogen",
-       "de mate waarin je op tijd kunt betalen"
+       "de mate waarin je op tijd kunt betalen",
+       "kosten die meebewegen met de productieomvang"
       ],
       "c": 1,
       "u": "«Cashflow» betekent: de geldstroom in en uit een onderneming.",
@@ -95790,7 +95790,7 @@ var VAKKEN = [
       "o": [
        "de rentabiliteit van het eigen vermogen",
        "de mate waarin je op tijd kunt betalen",
-       "de rentabiliteit van het totale vermogen",
+       "de periodieke terugbetaling van een lening",
        "geleend geld dat je later terugbetaalt"
       ],
       "c": 3,
@@ -95824,9 +95824,9 @@ var VAKKEN = [
      {
       "v": "Wat betekent «Aandeel»?",
       "o": [
-       "een lening rechtstreeks afgesloten bij één geldverstrekker",
+       "het vermogen dat door derden is geleend en terugbetaald moet worden",
        "de verhouding tussen vlottende activa en kort vreemd vermogen",
-       "de afzet waarbij de opbrengsten precies alle kosten dekken (winst 0)",
+       "een verhandelbaar schuldbewijs waarop de onderneming rente betaalt",
        "een bewijs van deelname in het eigen vermogen van een nv of bv"
       ],
       "c": 3,
@@ -95860,9 +95860,9 @@ var VAKKEN = [
      {
       "v": "Wat houdt «Aandeel» in?",
       "o": [
+       "een verhandelbaar schuldbewijs waarop de onderneming rente betaalt",
+       "een lening rechtstreeks afgesloten bij één geldverstrekker",
        "het vermogen dat door derden is geleend en terugbetaald moet worden",
-       "de verhouding tussen vlottende activa en kort vreemd vermogen",
-       "het rendementspercentage waarbij de NCW gelijk aan nul is",
        "een bewijs van deelname in het eigen vermogen van een nv of bv"
       ],
       "c": 3,
@@ -96076,9 +96076,9 @@ var VAKKEN = [
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"krediet waarbij je tot een limiet rood mag staan\"?",
       "o": [
+       "Investeringsselectie",
        "Liquiditeitsbegroting",
        "Interestdekkingsfactor",
-       "Investeringsselectie",
        "Rekening-courantkrediet"
       ],
       "c": 3,
@@ -96400,9 +96400,9 @@ var VAKKEN = [
      {
       "v": "Wat betekent «Dekkingsbijdrage»?",
       "o": [
-       "uitstel van betaling dat een leverancier toestaat",
-       "de verhouding van winst tot geïnvesteerd vermogen",
        "krediet waarbij je tot een limiet rood mag staan",
+       "de verhouding van winst tot geïnvesteerd vermogen",
+       "uitstel van betaling dat een leverancier toestaat",
        "de verkoopprijs min de variabele kosten per stuk"
       ],
       "c": 3,
@@ -96436,10 +96436,10 @@ var VAKKEN = [
      {
       "v": "Wat houdt «Dekkingsbijdrage» in?",
       "o": [
-       "krediet waarbij je tot een limiet rood mag staan",
+       "kosten die meebewegen met de productieomvang",
        "de verkoopprijs min de variabele kosten per stuk",
        "de verhouding van winst tot geïnvesteerd vermogen",
-       "uitstel van betaling dat een leverancier toestaat"
+       "krediet waarbij je tot een limiet rood mag staan"
       ],
       "c": 1,
       "u": "«Dekkingsbijdrage» betekent: de verkoopprijs min de variabele kosten per stuk.",
@@ -96472,9 +96472,9 @@ var VAKKEN = [
      {
       "v": "Wat betekent «Variabele kosten»?",
       "o": [
-       "de rentabiliteit van het totale vermogen",
        "de periodieke terugbetaling van een lening",
        "hoe vaak de winst de rentelasten kan betalen",
+       "de rentabiliteit van het totale vermogen",
        "kosten die meebewegen met de productieomvang"
       ],
       "c": 3,
@@ -96508,10 +96508,10 @@ var VAKKEN = [
      {
       "v": "Wat houdt «Variabele kosten» in?",
       "o": [
-       "de mate waarin je op tijd kunt betalen",
-       "de geldstroom in en uit een onderneming",
+       "de periodieke terugbetaling van een lening",
+       "hoe vaak de winst de rentelasten kan betalen",
        "kosten die meebewegen met de productieomvang",
-       "hoe vaak de winst de rentelasten kan betalen"
+       "uitstel van betaling dat een leverancier toestaat"
       ],
       "c": 2,
       "u": "«Variabele kosten» betekent: kosten die meebewegen met de productieomvang. Tegenover constante kosten: variabele kosten bewegen mee met de productie.",
@@ -96520,9 +96520,9 @@ var VAKKEN = [
      {
       "v": "Wat betekent «Break-evenafzet»?",
       "o": [
+       "het vermogen dat door derden is geleend en terugbetaald moet worden",
        "een verhandelbaar schuldbewijs waarop de onderneming rente betaalt",
        "het effect van vreemd vermogen op de rentabiliteit van het eigen vermogen",
-       "het vermogen dat door derden is geleend en terugbetaald moet worden",
        "de afzet waarbij de opbrengsten precies alle kosten dekken (winst 0)"
       ],
       "c": 3,
@@ -96533,9 +96533,9 @@ var VAKKEN = [
       "v": "Welk begrip hoort bij deze omschrijving: \"de afzet waarbij de opbrengsten precies alle kosten dekken (winst 0)\"?",
       "o": [
        "Break-evenafzet",
+       "Rentabiliteit",
        "Hefboomwerking",
-       "Afnemerskrediet",
-       "Solvabiliteit"
+       "Afnemerskrediet"
       ],
       "c": 0,
       "u": "Het juiste begrip is «Break-evenafzet»: de afzet waarbij de opbrengsten precies alle kosten dekken (winst 0).",
@@ -96546,8 +96546,8 @@ var VAKKEN = [
       "o": [
        "Afnemerskrediet",
        "Break-evenafzet",
-       "Rentabiliteit",
-       "Dekkingsbijdrage"
+       "Dekkingsbijdrage",
+       "Terugverdientijd"
       ],
       "c": 1,
       "u": "Het juiste begrip is «Break-evenafzet»: de afzet waarbij de opbrengsten precies alle kosten dekken (winst 0).",
@@ -96556,8 +96556,8 @@ var VAKKEN = [
      {
       "v": "Wat houdt «Break-evenafzet» in?",
       "o": [
-       "een bewijs van deelname in het eigen vermogen van een nv of bv",
-       "de verhouding tussen vlottende activa en kort vreemd vermogen",
+       "het deel van de winst dat aan aandeelhouders wordt uitgekeerd",
+       "een verhandelbaar schuldbewijs waarop de onderneming rente betaalt",
        "het vermogen dat door derden is geleend en terugbetaald moet worden",
        "de afzet waarbij de opbrengsten precies alle kosten dekken (winst 0)"
       ],
@@ -96628,9 +96628,9 @@ var VAKKEN = [
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"een investeringscriterium dat de tijdswaarde van geld en alle kasstromen meeneemt\"?",
       "o": [
-       "Budget & liquiditeit",
        "Interne rentabiliteit",
-       "Hypothecaire lening",
+       "Piramide van Maslow",
+       "Budget & liquiditeit",
        "Netto contante waarde"
       ],
       "c": 3,
@@ -96642,8 +96642,8 @@ var VAKKEN = [
       "o": [
        "Interne rentabiliteit",
        "Netto contante waarde",
-       "Onderhandse lening",
-       "Hypothecaire lening"
+       "Hypothecaire lening",
+       "Onderhandse lening"
       ],
       "c": 1,
       "u": "Het juiste begrip is «Netto contante waarde»: een investeringscriterium dat de tijdswaarde van geld en alle kasstromen meeneemt.",
@@ -96666,7 +96666,7 @@ var VAKKEN = [
       "o": [
        "geleend geld dat je later terugbetaalt",
        "de rentabiliteit van het eigen vermogen",
-       "de rentabiliteit van het totale vermogen",
+       "de mate waarin je op tijd kunt betalen",
        "de geldstroom in en uit een onderneming"
       ],
       "c": 1,
@@ -96676,10 +96676,10 @@ var VAKKEN = [
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"de rentabiliteit van het eigen vermogen\"?",
       "o": [
-       "RTV",
+       "VOF",
        "REV",
-       "Merk",
-       "BV"
+       "CAO",
+       "Merk"
       ],
       "c": 1,
       "u": "Het juiste begrip is «REV»: de rentabiliteit van het eigen vermogen.",
@@ -96689,9 +96689,9 @@ var VAKKEN = [
       "v": "Welke term past bij: \"de rentabiliteit van het eigen vermogen\"?",
       "o": [
        "Krediet",
-       "Aandeel",
+       "Cashflow",
        "REV",
-       "RTV"
+       "Aandeel"
       ],
       "c": 2,
       "u": "Het juiste begrip is «REV»: de rentabiliteit van het eigen vermogen.",
@@ -96702,8 +96702,8 @@ var VAKKEN = [
       "o": [
        "de rentabiliteit van het eigen vermogen",
        "de mate waarin je op tijd kunt betalen",
-       "geleend geld dat je later terugbetaalt",
-       "de geldstroom in en uit een onderneming"
+       "de geldstroom in en uit een onderneming",
+       "geleend geld dat je later terugbetaalt"
       ],
       "c": 0,
       "u": "«REV» betekent: de rentabiliteit van het eigen vermogen.",
@@ -96712,10 +96712,10 @@ var VAKKEN = [
      {
       "v": "Wat betekent «RTV»?",
       "o": [
-       "de rentabiliteit van het eigen vermogen",
-       "kosten die meebewegen met de productieomvang",
+       "de geldstroom in en uit een onderneming",
+       "geleend geld dat je later terugbetaalt",
        "de rentabiliteit van het totale vermogen",
-       "de geldstroom in en uit een onderneming"
+       "kosten die meebewegen met de productieomvang"
       ],
       "c": 2,
       "u": "«RTV» betekent: de rentabiliteit van het totale vermogen.",
@@ -96725,9 +96725,9 @@ var VAKKEN = [
       "v": "Welk begrip hoort bij deze omschrijving: \"de rentabiliteit van het totale vermogen\"?",
       "o": [
        "RTV",
-       "REV",
-       "Merk",
-       "NV"
+       "VOF",
+       "CAO",
+       "Merk"
       ],
       "c": 0,
       "u": "Het juiste begrip is «RTV»: de rentabiliteit van het totale vermogen.",
@@ -96736,10 +96736,10 @@ var VAKKEN = [
      {
       "v": "Welke term past bij: \"de rentabiliteit van het totale vermogen\"?",
       "o": [
-       "Krediet",
+       "Dividend",
        "RTV",
-       "Aandeel",
-       "REV"
+       "Krediet",
+       "Aandeel"
       ],
       "c": 1,
       "u": "Het juiste begrip is «RTV»: de rentabiliteit van het totale vermogen.",
@@ -96751,7 +96751,7 @@ var VAKKEN = [
        "de rentabiliteit van het totale vermogen",
        "de geldstroom in en uit een onderneming",
        "de periodieke terugbetaling van een lening",
-       "de rentabiliteit van het eigen vermogen"
+       "kosten die meebewegen met de productieomvang"
       ],
       "c": 0,
       "u": "«RTV» betekent: de rentabiliteit van het totale vermogen.",
@@ -97540,9 +97540,9 @@ var VAKKEN = [
      {
       "v": "Wat betekent «Balans»?",
       "o": [
-       "het overzicht van opbrengsten en kosten over een periode",
        "het geheel van rekeningen waarop mutaties worden geboekt",
-       "de omzet min de inkoopwaarde van de verkochte producten",
+       "het aandeel eigen vermogen in het totale vermogen (EV/TV)",
+       "bezittingen die binnen een jaar in geld worden omgezet",
        "een overzicht van bezittingen, schulden en eigen vermogen"
       ],
       "c": 3,
@@ -97553,7 +97553,7 @@ var VAKKEN = [
       "v": "Welk begrip hoort bij deze omschrijving: \"een overzicht van bezittingen, schulden en eigen vermogen\"?",
       "o": [
        "Winst",
-       "Omzet",
+       "Passiva",
        "Activa",
        "Balans"
       ],
@@ -97564,8 +97564,8 @@ var VAKKEN = [
      {
       "v": "Welke term past bij: \"een overzicht van bezittingen, schulden en eigen vermogen\"?",
       "o": [
+       "Omzet",
        "Winst",
-       "Passiva",
        "Activa",
        "Balans"
       ],
@@ -97576,10 +97576,10 @@ var VAKKEN = [
      {
       "v": "Wat houdt «Balans» in?",
       "o": [
-       "het geheel van rekeningen waarop mutaties worden geboekt",
+       "een reservering voor een toekomstige verplichting of risico",
        "een overzicht van bezittingen, schulden en eigen vermogen",
-       "het aandeel eigen vermogen in het totale vermogen (EV/TV)",
-       "het overzicht van opbrengsten en kosten over een periode"
+       "het overzicht van opbrengsten en kosten over een periode",
+       "de omzet min de inkoopwaarde van de verkochte producten"
       ],
       "c": 1,
       "u": "«Balans» betekent: een overzicht van bezittingen, schulden en eigen vermogen.",
@@ -97734,7 +97734,7 @@ var VAKKEN = [
       "o": [
        "de waardedaling van een vast actief over de tijd",
        "afschrijven in gelijke jaarlijkse bedragen",
-       "de inkoopprijs van de verkochte goederen",
+       "de opbrengst uit verkopen in een periode",
        "leveranciers die nog betaald moeten worden"
       ],
       "c": 3,
@@ -97768,8 +97768,8 @@ var VAKKEN = [
      {
       "v": "Wat houdt «Crediteuren» in?",
       "o": [
-       "schulden met een looptijd langer dan een jaar",
-       "de inkoopprijs van de verkochte goederen",
+       "een boeking met een debet- en een creditkant",
+       "de opbrengst uit verkopen in een periode",
        "leveranciers die nog betaald moeten worden",
        "afschrijven in gelijke jaarlijkse bedragen"
       ],
@@ -97867,7 +97867,7 @@ var VAKKEN = [
        "bezittingen die binnen een jaar in geld worden omgezet",
        "het overzicht van opbrengsten en kosten over een periode",
        "de omzet min de inkoopwaarde van de verkochte producten",
-       "een overzicht van baten en lasten over een periode"
+       "de waardedaling van een vast actief over de tijd"
       ],
       "c": 0,
       "u": "«Vlottende activa» betekent: bezittingen die binnen een jaar in geld worden omgezet.",
@@ -97937,9 +97937,9 @@ var VAKKEN = [
       "v": "Welk begrip hoort bij deze omschrijving: \"de aanwezige handelsgoederen of grondstoffen\"?",
       "o": [
        "Voorraad",
-       "Brutowinst",
-       "Statuten",
-       "Passiva"
+       "Cashflow",
+       "Dividend",
+       "Statuten"
       ],
       "c": 0,
       "u": "Het juiste begrip is «Voorraad»: de aanwezige handelsgoederen of grondstoffen.",
@@ -97948,10 +97948,10 @@ var VAKKEN = [
      {
       "v": "Welke term past bij: \"de aanwezige handelsgoederen of grondstoffen\"?",
       "o": [
-       "Passiva",
+       "Restwaarde",
        "Voorraad",
-       "Grootboek",
-       "Boekwaarde"
+       "Passiva",
+       "Grootboek"
       ],
       "c": 1,
       "u": "Het juiste begrip is «Voorraad»: de aanwezige handelsgoederen of grondstoffen.",
@@ -97973,7 +97973,7 @@ var VAKKEN = [
       "v": "Wat betekent «Kortlopende schulden»?",
       "o": [
        "het direct beschikbare geld in kas en op de bank",
-       "de winst na aftrek van alle kosten en belastingen",
+       "alle bezittingen van een onderneming op de balans",
        "schulden die binnen een jaar betaald moeten worden",
        "de aanschafwaarde min de opgetelde afschrijvingen"
       ],
@@ -98009,9 +98009,9 @@ var VAKKEN = [
       "v": "Wat houdt «Kortlopende schulden» in?",
       "o": [
        "schulden die binnen een jaar betaald moeten worden",
-       "de winst na aftrek van alle kosten en belastingen",
        "de aanschafwaarde min de opgetelde afschrijvingen",
-       "de waardedaling van een vast actief over de tijd"
+       "de winst na aftrek van alle kosten en belastingen",
+       "alle bezittingen van een onderneming op de balans"
       ],
       "c": 0,
       "u": "«Kortlopende schulden» betekent: schulden die binnen een jaar betaald moeten worden.",
@@ -98068,8 +98068,8 @@ var VAKKEN = [
      {
       "v": "Wat betekent «Nettowinst»?",
       "o": [
-       "de waardedaling van een vast actief over de tijd",
        "alle bezittingen van een onderneming op de balans",
+       "een overzicht van baten en lasten over een periode",
        "het direct beschikbare geld in kas en op de bank",
        "de winst na aftrek van alle kosten en belastingen"
       ],
@@ -98080,9 +98080,9 @@ var VAKKEN = [
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"de winst na aftrek van alle kosten en belastingen\"?",
       "o": [
-       "Brutowinst",
+       "Restwaarde",
        "Debiteuren",
-       "Boekwaarde",
+       "Brutowinst",
        "Nettowinst"
       ],
       "c": 3,
@@ -98092,9 +98092,9 @@ var VAKKEN = [
      {
       "v": "Welke term past bij: \"de winst na aftrek van alle kosten en belastingen\"?",
       "o": [
-       "Debiteuren",
-       "Restwaarde",
        "Boekwaarde",
+       "Debiteuren",
+       "Crediteuren",
        "Nettowinst"
       ],
       "c": 3,
@@ -98105,9 +98105,9 @@ var VAKKEN = [
       "v": "Wat houdt «Nettowinst» in?",
       "o": [
        "de winst na aftrek van alle kosten en belastingen",
-       "de vlottende activa min de kortlopende schulden",
        "de aanschafwaarde min de opgetelde afschrijvingen",
-       "de waardedaling van een vast actief over de tijd"
+       "alle bezittingen van een onderneming op de balans",
+       "het direct beschikbare geld in kas en op de bank"
       ],
       "c": 0,
       "u": "«Nettowinst» betekent: de winst na aftrek van alle kosten en belastingen.",
@@ -98212,10 +98212,10 @@ var VAKKEN = [
      {
       "v": "Wat betekent «Resultatenrekening»?",
       "o": [
-       "het geheel van rekeningen waarop mutaties worden geboekt",
-       "het aandeel eigen vermogen in het totale vermogen (EV/TV)",
+       "de omzet min de inkoopwaarde van de verkochte producten",
+       "een reservering voor een toekomstige verplichting of risico",
        "het overzicht van opbrengsten en kosten over een periode",
-       "de omzet min de inkoopwaarde van de verkochte producten"
+       "het geheel van rekeningen waarop mutaties worden geboekt"
       ],
       "c": 2,
       "u": "«Resultatenrekening» betekent: het overzicht van opbrengsten en kosten over een periode.",
@@ -98236,9 +98236,9 @@ var VAKKEN = [
      {
       "v": "Welke term past bij: \"het overzicht van opbrengsten en kosten over een periode\"?",
       "o": [
+       "Solvabiliteit",
+       "Langlopende schulden",
        "Winst-en-verliesrekening",
-       "Kortlopende schulden",
-       "Liquide middelen",
        "Resultatenrekening"
       ],
       "c": 3,
@@ -98272,10 +98272,10 @@ var VAKKEN = [
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"de aanschafwaarde min de opgetelde afschrijvingen\"?",
       "o": [
-       "Grootboek",
+       "Nettowinst",
        "Boekwaarde",
-       "Restwaarde",
-       "Nettowinst"
+       "Debiteuren",
+       "Brutowinst"
       ],
       "c": 1,
       "u": "Het juiste begrip is «Boekwaarde»: de aanschafwaarde min de opgetelde afschrijvingen.",
@@ -98284,9 +98284,9 @@ var VAKKEN = [
      {
       "v": "Welke term past bij: \"de aanschafwaarde min de opgetelde afschrijvingen\"?",
       "o": [
-       "Nettowinst",
-       "Debiteuren",
        "Brutowinst",
+       "Debiteuren",
+       "Restwaarde",
        "Boekwaarde"
       ],
       "c": 3,
@@ -98321,9 +98321,9 @@ var VAKKEN = [
       "v": "Welk begrip hoort bij deze omschrijving: \"de verwachte waarde van een actief aan het eind van de gebruiksduur\"?",
       "o": [
        "Restwaarde",
+       "Boekwaarde",
        "Debiteuren",
-       "Brutowinst",
-       "Nettowinst"
+       "Brutowinst"
       ],
       "c": 0,
       "u": "Het juiste begrip is «Restwaarde»: de verwachte waarde van een actief aan het eind van de gebruiksduur.",
@@ -98332,8 +98332,8 @@ var VAKKEN = [
      {
       "v": "Welke term past bij: \"de verwachte waarde van een actief aan het eind van de gebruiksduur\"?",
       "o": [
-       "Nettowinst",
        "Debiteuren",
+       "Nettowinst",
        "Boekwaarde",
        "Restwaarde"
       ],
@@ -98370,8 +98370,8 @@ var VAKKEN = [
       "o": [
        "Crediteuren",
        "Voorziening",
-       "Journaalpost",
-       "Afschrijving"
+       "Werkkapitaal",
+       "Debiteuren"
       ],
       "c": 1,
       "u": "Het juiste begrip is «Voorziening»: een reservering voor een toekomstige verplichting of risico.",
@@ -98380,9 +98380,9 @@ var VAKKEN = [
      {
       "v": "Welke term past bij: \"een reservering voor een toekomstige verplichting of risico\"?",
       "o": [
-       "Brutowinst",
+       "Restwaarde",
        "Crediteuren",
-       "Boekwaarde",
+       "Debiteuren",
        "Voorziening"
       ],
       "c": 3,
@@ -98549,7 +98549,7 @@ var VAKKEN = [
       "v": "Wat betekent «Solvabiliteit»?",
       "o": [
        "een overzicht van bezittingen, schulden en eigen vermogen",
-       "het overzicht van opbrengsten en kosten over een periode",
+       "een reservering voor een toekomstige verplichting of risico",
        "het aandeel eigen vermogen in het totale vermogen (EV/TV)",
        "het geheel van rekeningen waarop mutaties worden geboekt"
       ],
@@ -98585,9 +98585,9 @@ var VAKKEN = [
       "v": "Wat houdt «Solvabiliteit» in?",
       "o": [
        "het aandeel eigen vermogen in het totale vermogen (EV/TV)",
+       "het geheel van rekeningen waarop mutaties worden geboekt",
        "een overzicht van bezittingen, schulden en eigen vermogen",
-       "het ingebrachte kapitaal plus de reserves op de passiefzijde",
-       "bezittingen die binnen een jaar in geld worden omgezet"
+       "de omzet min de inkoopwaarde van de verkochte producten"
       ],
       "c": 0,
       "u": "«Solvabiliteit» betekent: het aandeel eigen vermogen in het totale vermogen (EV/TV).",
@@ -98620,10 +98620,10 @@ var VAKKEN = [
      {
       "v": "Wat betekent «Passiva»?",
       "o": [
-       "een overzicht van bezittingen, schulden en eigen vermogen",
+       "het geheel van rekeningen waarop mutaties worden geboekt",
        "de financieringskant: eigen vermogen en langlopende schulden",
-       "het ingebrachte kapitaal plus de reserves op de passiefzijde",
-       "een liquiditeitskengetal dat de voorraden buiten beschouwing laat"
+       "een reservering voor een toekomstige verplichting of risico",
+       "de omzet min de inkoopwaarde van de verkochte producten"
       ],
       "c": 1,
       "u": "«Passiva» betekent: de financieringskant: eigen vermogen en langlopende schulden.",
@@ -98657,8 +98657,8 @@ var VAKKEN = [
       "v": "Wat houdt «Passiva» in?",
       "o": [
        "een reservering voor een toekomstige verplichting of risico",
+       "het aandeel eigen vermogen in het totale vermogen (EV/TV)",
        "het ingebrachte kapitaal plus de reserves op de passiefzijde",
-       "een overzicht van bezittingen, schulden en eigen vermogen",
        "de financieringskant: eigen vermogen en langlopende schulden"
       ],
       "c": 3,
@@ -98668,9 +98668,9 @@ var VAKKEN = [
      {
       "v": "Wat betekent «Winst-en-verliesrekening»?",
       "o": [
+       "de aanschafwaarde min de opgetelde afschrijvingen",
        "schulden die binnen een jaar betaald moeten worden",
        "alle bezittingen van een onderneming op de balans",
-       "het direct beschikbare geld in kas en op de bank",
        "een overzicht van baten en lasten over een periode"
       ],
       "c": 3,
@@ -98704,10 +98704,10 @@ var VAKKEN = [
      {
       "v": "Wat houdt «Winst-en-verliesrekening» in?",
       "o": [
-       "de vlottende activa min de kortlopende schulden",
+       "schulden met een looptijd langer dan een jaar",
        "een overzicht van baten en lasten over een periode",
        "de waardedaling van een vast actief over de tijd",
-       "de aanschafwaarde min de opgetelde afschrijvingen"
+       "schulden die binnen een jaar betaald moeten worden"
       ],
       "c": 1,
       "u": "«Winst-en-verliesrekening» betekent: een overzicht van baten en lasten over een periode.",
@@ -98729,9 +98729,9 @@ var VAKKEN = [
       "v": "Welk begrip hoort bij deze omschrijving: \"de omzet min de inkoopwaarde van de verkochte producten\"?",
       "o": [
        "Brutowinst",
-       "Nettowinst",
+       "Debiteuren",
        "Restwaarde",
-       "Boekwaarde"
+       "Nettowinst"
       ],
       "c": 0,
       "u": "Het juiste begrip is «Brutowinst»: de omzet min de inkoopwaarde van de verkochte producten.",
@@ -98741,9 +98741,9 @@ var VAKKEN = [
       "v": "Welke term past bij: \"de omzet min de inkoopwaarde van de verkochte producten\"?",
       "o": [
        "Brutowinst",
-       "Nettowinst",
-       "Restwaarde",
-       "Debiteuren"
+       "Boekwaarde",
+       "Debiteuren",
+       "Voorziening"
       ],
       "c": 0,
       "u": "Het juiste begrip is «Brutowinst»: de omzet min de inkoopwaarde van de verkochte producten.",
@@ -99657,10 +99657,10 @@ var VAKKEN = [
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"de tijd van een werkwoord\"?",
       "o": [
+       "Suffix",
        "Prefix",
-       "Theme",
        "Tense",
-       "Suffix"
+       "Theme"
       ],
       "c": 2,
       "u": "Het juiste begrip is «Tense»: de tijd van een werkwoord.",
@@ -99707,7 +99707,7 @@ var VAKKEN = [
       "o": [
        "Irregular verb",
        "Word formation",
-       "Present simple",
+       "Passive voice",
        "Present perfect"
       ],
       "c": 0,
@@ -99719,8 +99719,8 @@ var VAKKEN = [
       "o": [
        "Irregular verb",
        "Present simple",
-       "Present perfect",
-       "Word formation"
+       "Word formation",
+       "Passive voice"
       ],
       "c": 0,
       "u": "Het juiste begrip is «Irregular verb»: een werkwoord met een onregelmatige vervoeging.",
@@ -99840,7 +99840,7 @@ var VAKKEN = [
        "een woord dat op een Nederlands woord lijkt maar anders betekent",
        "letters added after a word that change its meaning or word class",
        "a linking word like in, on or at that often follows a fixed verb",
-       "letters added before a word that change its meaning, such as \"un-\""
+       "an \"if\"-sentence that pairs a past tense with \"would\""
       ],
       "c": 0,
       "u": "«False friend» betekent: een woord dat op een Nederlands woord lijkt maar anders betekent.",
@@ -99873,8 +99873,8 @@ var VAKKEN = [
      {
       "v": "Wat houdt «False friend» in?",
       "o": [
-       "letters added after a word that change its meaning or word class",
        "a linking word like in, on or at that often follows a fixed verb",
+       "a word like a, an or the that comes before a noun",
        "letters added before a word that change its meaning, such as \"un-\"",
        "een woord dat op een Nederlands woord lijkt maar anders betekent"
       ],
@@ -99897,8 +99897,8 @@ var VAKKEN = [
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"tijd voor gewoontes en feiten\"?",
       "o": [
+       "Passive voice",
        "Irregular verb",
-       "Present perfect",
        "Present simple",
        "Word formation"
       ],
@@ -99945,10 +99945,10 @@ var VAKKEN = [
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"tijd voor iets dat nu bezig is\"?",
       "o": [
-       "Uncertainty markers",
-       "Present perfect",
+       "Explicit information",
+       "Irregular verb",
        "Present continuous",
-       "Irregular verb"
+       "Implicit meaning"
       ],
       "c": 2,
       "u": "Het juiste begrip is «Present continuous»: tijd voor iets dat nu bezig is.",
@@ -99957,8 +99957,8 @@ var VAKKEN = [
      {
       "v": "Welke term past bij: \"tijd voor iets dat nu bezig is\"?",
       "o": [
-       "Present perfect",
-       "Present simple",
+       "Passive voice",
+       "Irregular verb",
        "Word formation",
        "Present continuous"
       ],
@@ -99994,9 +99994,9 @@ var VAKKEN = [
       "v": "Welk begrip hoort bij deze omschrijving: \"tijd voor het verleden met een gevolg voor nu\"?",
       "o": [
        "Present perfect",
+       "Passive voice",
        "Irregular verb",
-       "Word formation",
-       "Present simple"
+       "Word formation"
       ],
       "c": 0,
       "u": "Het juiste begrip is «Present perfect»: tijd voor het verleden met een gevolg voor nu.",
@@ -100006,8 +100006,8 @@ var VAKKEN = [
       "v": "Welke term past bij: \"tijd voor het verleden met een gevolg voor nu\"?",
       "o": [
        "Present perfect",
-       "Present simple",
        "Word formation",
+       "Passive voice",
        "Irregular verb"
       ],
       "c": 0,
@@ -100029,10 +100029,10 @@ var VAKKEN = [
      {
       "v": "Wat betekent «Prefix»?",
       "o": [
-       "letters added after a word that change its meaning or word class",
+       "a linking word like in, on or at that often follows a fixed verb",
        "letters added before a word that change its meaning, such as \"un-\"",
-       "een woord dat op een Nederlands woord lijkt maar anders betekent",
-       "a linking word like in, on or at that often follows a fixed verb"
+       "a rhetorical question, statistic or anecdote that grabs attention",
+       "een woord dat op een Nederlands woord lijkt maar anders betekent"
       ],
       "c": 1,
       "u": "«Prefix» betekent: letters added before a word that change its meaning, such as \"un-\".",
@@ -100066,9 +100066,9 @@ var VAKKEN = [
       "v": "Wat houdt «Prefix» in?",
       "o": [
        "a linking word like in, on or at that often follows a fixed verb",
-       "letters added after a word that change its meaning or word class",
+       "een woord dat op een Nederlands woord lijkt maar anders betekent",
        "letters added before a word that change its meaning, such as \"un-\"",
-       "een woord dat op een Nederlands woord lijkt maar anders betekent"
+       "an \"if\"-sentence that pairs a past tense with \"would\""
       ],
       "c": 2,
       "u": "«Prefix» betekent: letters added before a word that change its meaning, such as \"un-\".",
@@ -100221,7 +100221,7 @@ var VAKKEN = [
      {
       "v": "Wat betekent «Preposition»?",
       "o": [
-       "letters added after a word that change its meaning or word class",
+       "a helping verb like should or can that adds meaning",
        "letters added before a word that change its meaning, such as \"un-\"",
        "a linking word like in, on or at that often follows a fixed verb",
        "een woord dat op een Nederlands woord lijkt maar anders betekent"
@@ -100234,7 +100234,7 @@ var VAKKEN = [
       "v": "Welk begrip hoort bij deze omschrijving: \"a linking word like in, on or at that often follows a fixed verb\"?",
       "o": [
        "Comparative",
-       "Collocations",
+       "Conditional",
        "Collocation",
        "Preposition"
       ],
@@ -100257,7 +100257,7 @@ var VAKKEN = [
      {
       "v": "Wat houdt «Preposition» in?",
       "o": [
-       "letters added after a word that change its meaning or word class",
+       "an \"if\"-sentence that pairs a past tense with \"would\"",
        "een woord dat op een Nederlands woord lijkt maar anders betekent",
        "a linking word like in, on or at that often follows a fixed verb",
        "letters added before a word that change its meaning, such as \"un-\""
@@ -100269,10 +100269,10 @@ var VAKKEN = [
      {
       "v": "Wat betekent «Suffix»?",
       "o": [
-       "letters added before a word that change its meaning, such as \"un-\"",
-       "een woord dat op een Nederlands woord lijkt maar anders betekent",
+       "words like \"may\" or \"might\" that show something is not certain",
+       "a linking word like in, on or at that often follows a fixed verb",
        "letters added after a word that change its meaning or word class",
-       "a linking word like in, on or at that often follows a fixed verb"
+       "een woord dat op een Nederlands woord lijkt maar anders betekent"
       ],
       "c": 2,
       "u": "«Suffix» betekent: letters added after a word that change its meaning or word class.",
@@ -100305,9 +100305,9 @@ var VAKKEN = [
      {
       "v": "Wat houdt «Suffix» in?",
       "o": [
-       "letters added before a word that change its meaning, such as \"un-\"",
-       "een woord dat op een Nederlands woord lijkt maar anders betekent",
        "a linking word like in, on or at that often follows a fixed verb",
+       "een woord dat op een Nederlands woord lijkt maar anders betekent",
+       "a word like a, an or the that comes before a noun",
        "letters added after a word that change its meaning or word class"
       ],
       "c": 3,
@@ -100379,7 +100379,7 @@ var VAKKEN = [
       "o": [
        "Comparative",
        "Collocation",
-       "Collocations",
+       "Preposition",
        "Conditional"
       ],
       "c": 0,
@@ -100521,7 +100521,7 @@ var VAKKEN = [
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"if-zinnen: type 0, 1, 2\"?",
       "o": [
-       "Collocation",
+       "Comparative",
        "Conditionals",
        "Collocations",
        "Preposition"
@@ -100533,9 +100533,9 @@ var VAKKEN = [
      {
       "v": "Welke term past bij: \"if-zinnen: type 0, 1, 2\"?",
       "o": [
-       "Preposition",
+       "Comparative",
        "Collocations",
-       "Collocation",
+       "Preposition",
        "Conditionals"
       ],
       "c": 3,
@@ -100668,7 +100668,7 @@ var VAKKEN = [
        "Conditionals",
        "Comparative",
        "Collocations",
-       "Conditional"
+       "Preposition"
       ],
       "c": 2,
       "u": "Het juiste begrip is «Collocations»: vaste woordcombinaties (make/do).",
@@ -100725,10 +100725,10 @@ var VAKKEN = [
      {
       "v": "Welke term past bij: \"opnieuw rewrite, rebuild\"?",
       "o": [
-       "Tenses",
+       "Suffix",
        "re-",
        "Tense",
-       "Suffix"
+       "flat"
       ],
       "c": 1,
       "u": "Het juiste begrip is «re-»: opnieuw rewrite, rebuild.",
@@ -107477,8 +107477,8 @@ var VAKKEN = [
       "v": "Welke term past bij: \"globaal lezen vs. gericht zoeken\"?",
       "o": [
        "Explicit information",
-       "Implicit information",
        "Tone & purpose",
+       "Contrast signal",
        "Skimming & scanning"
       ],
       "c": 3,
@@ -107563,7 +107563,7 @@ var VAKKEN = [
        "Context clue",
        "Unknown words",
        "Signal words",
-       "Context clues"
+       "Topic sentence"
       ],
       "c": 2,
       "u": "Het juiste begrip is «Signal words»: linking words wijzen het verband.",
@@ -107573,7 +107573,7 @@ var VAKKEN = [
       "v": "Welke term past bij: \"linking words wijzen het verband\"?",
       "o": [
        "Context clue",
-       "Context clues",
+       "Cause/effect",
        "Signal words",
        "Unknown words"
       ],
@@ -107814,7 +107814,7 @@ var VAKKEN = [
       "o": [
        "in short, to sum up, all in all",
        "moreover, in addition, furthermore",
-       "moreover, furthermore, in addition, also",
+       "present simple, continuous, perfect",
        "for example, such as, for instance"
       ],
       "c": 3,
@@ -107848,9 +107848,9 @@ var VAKKEN = [
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"in short, to sum up, all in all\"?",
       "o": [
-       "Contrast",
+       "Salutation",
        "Inference",
-       "Ophelderen",
+       "Contrast",
        "Conclusion"
       ],
       "c": 3,
@@ -114167,8 +114167,8 @@ var VAKKEN = [
      {
       "v": "Welke term past bij: \"de houding van de spreker\"?",
       "o": [
-       "Accent",
        "Detail",
+       "Accent",
        "Tone",
        "Gist"
       ],
@@ -114251,9 +114251,9 @@ var VAKKEN = [
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"wat bedoeld wordt zonder het te zeggen\"?",
       "o": [
-       "Signal phrases",
        "Literary devices",
-       "Static character",
+       "Reference words",
+       "Signal phrases",
        "Implicit meaning"
       ],
       "c": 3,
@@ -114264,8 +114264,8 @@ var VAKKEN = [
       "v": "Welke term past bij: \"wat bedoeld wordt zonder het te zeggen\"?",
       "o": [
        "Signal phrases",
-       "Signal phrase",
        "Uncertainty markers",
+       "News report",
        "Implicit meaning"
       ],
       "c": 3,
@@ -114445,8 +114445,8 @@ var VAKKEN = [
       "o": [
        "Uncertainty markers",
        "Implicit meaning",
-       "Implicit information",
-       "Rhetorical question"
+       "Rhetorical question",
+       "Listening for gist"
       ],
       "c": 0,
       "u": "Het juiste begrip is «Uncertainty markers»: words like \"may\" or \"might\" that show something is not certain.",
@@ -114794,7 +114794,7 @@ var VAKKEN = [
        "\"to sum up\", \"in short\", \"so basically\"",
        "because, therefore, so, as a result, since",
        "moreover, in addition, furthermore",
-       "moreover, furthermore, in addition, also"
+       "\"I see your point, but…\", \"I'm not so sure\""
       ],
       "c": 0,
       "u": "«Samenvatting» betekent: \"to sum up\", \"in short\", \"so basically\".",
@@ -114839,9 +114839,9 @@ var VAKKEN = [
      {
       "v": "Wat betekent «Contrast»?",
       "o": [
-       "betekenis raden uit de context",
-       "de grote lijn van wat gezegd wordt",
+       "tijd voor iets dat nu bezig is",
        "\"that's why\", \"as a result\"",
+       "betekenis raden uit de context",
        "\"on the other hand\", \"however\""
       ],
       "c": 3,
@@ -114876,9 +114876,9 @@ var VAKKEN = [
       "v": "Wat houdt «Contrast» in?",
       "o": [
        "\"on the other hand\", \"however\"",
-       "\"that's why\", \"as a result\"",
-       "wat bedoeld wordt zonder het te zeggen",
-       "de houding van de spreker"
+       "de grote lijn van wat gezegd wordt",
+       "de houding van de spreker",
+       "\"that's why\", \"as a result\""
       ],
       "c": 0,
       "u": "«Contrast» betekent: \"on the other hand\", \"however\".",
@@ -114899,10 +114899,10 @@ var VAKKEN = [
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"\"that's why\", \"as a result\"\"?",
       "o": [
-       "Instemmen",
-       "Character",
+       "Coherence",
+       "Documentary",
        "Conclusie",
-       "Prediction"
+       "Contrast"
       ],
       "c": 2,
       "u": "Het juiste begrip is «Conclusie»: \"that's why\", \"as a result\".",
@@ -114914,7 +114914,7 @@ var VAKKEN = [
        "Prediction",
        "Conclusie",
        "Contrast",
-       "Signposting"
+       "Documentary"
       ],
       "c": 1,
       "u": "Het juiste begrip is «Conclusie»: \"that's why\", \"as a result\".",
@@ -115499,10 +115499,10 @@ var VAKKEN = [
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"woordjes om bedenktijd te winnen\"?",
       "o": [
-       "Clarify",
        "Opinion",
+       "Fluency",
        "Fillers",
-       "Fluency"
+       "Clarify"
       ],
       "c": 2,
       "u": "Het juiste begrip is «Fillers»: woordjes om bedenktijd te winnen.",
@@ -115512,9 +115512,9 @@ var VAKKEN = [
       "v": "Welke term past bij: \"woordjes om bedenktijd te winnen\"?",
       "o": [
        "Fillers",
-       "Fluency",
        "Opinion",
-       "Clarify"
+       "Clarify",
+       "Fluency"
       ],
       "c": 0,
       "u": "Het juiste begrip is «Fillers»: woordjes om bedenktijd te winnen.",
@@ -115727,10 +115727,10 @@ var VAKKEN = [
      {
       "v": "Wat betekent «Presentation structure»?",
       "o": [
-       "\"I see your point, but…\", \"I'm not so sure\"",
+       "a paragraph built as Point, Illustration, Explanation",
        "the opening greeting of a letter, such as \"Dear Sir/Madam,\"",
        "introduction, 2-3 main points with examples, and a conclusion",
-       "the sign-off of a letter, such as \"Yours sincerely,\""
+       "\"I see your point, but…\", \"I'm not so sure\""
       ],
       "c": 2,
       "u": "«Presentation structure» betekent: introduction, 2-3 main points with examples, and a conclusion.",
@@ -115739,10 +115739,10 @@ var VAKKEN = [
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"introduction, 2-3 main points with examples, and a conclusion\"?",
       "o": [
-       "Persuasive technique",
+       "Rhetorical question",
        "Presentation structure",
-       "Implicit information",
-       "Rhetorical question"
+       "Explicit information",
+       "Persuasive technique"
       ],
       "c": 1,
       "u": "Het juiste begrip is «Presentation structure»: introduction, 2-3 main points with examples, and a conclusion.",
@@ -115751,10 +115751,10 @@ var VAKKEN = [
      {
       "v": "Welke term past bij: \"introduction, 2-3 main points with examples, and a conclusion\"?",
       "o": [
-       "Rhetorical question",
-       "Presentation structure",
        "Persuasive technique",
-       "Presentatiestructuur"
+       "Presentation structure",
+       "Rhetorical question",
+       "Contrast phrase"
       ],
       "c": 1,
       "u": "Het juiste begrip is «Presentation structure»: introduction, 2-3 main points with examples, and a conclusion.",
@@ -115765,8 +115765,8 @@ var VAKKEN = [
       "o": [
        "\"I see your point, but…\", \"I'm not so sure\"",
        "introduction, 2-3 main points with examples, and a conclusion",
-       "introduction, body, conclusion",
-       "the opening greeting of a letter, such as \"Dear Sir/Madam,\""
+       "the opening greeting of a letter, such as \"Dear Sir/Madam,\"",
+       "a paragraph built as Point, Illustration, Explanation"
       ],
       "c": 1,
       "u": "«Presentation structure» betekent: introduction, 2-3 main points with examples, and a conclusion.",
@@ -115799,10 +115799,10 @@ var VAKKEN = [
      {
       "v": "Wat betekent «Contrast phrase»?",
       "o": [
-       "a rhetorical question, statistic or anecdote that grabs attention",
+       "a response that opposes a point, \"While I understand your point, I would argue…\"",
        "a polite opening such as \"Good morning. Today I would like to present…\"",
        "a phrase like \"However / On the other hand\" that introduces another view",
-       "a response that opposes a point, \"While I understand your point, I would argue…\""
+       "a rhetorical question, statistic or anecdote that grabs attention"
       ],
       "c": 2,
       "u": "«Contrast phrase» betekent: a phrase like \"However / On the other hand\" that introduces another view.",
@@ -115813,7 +115813,7 @@ var VAKKEN = [
       "o": [
        "Formal register",
        "Formal opening",
-       "Useful phrases",
+       "Beleefd oneens",
        "Contrast phrase"
       ],
       "c": 3,
@@ -115824,8 +115824,8 @@ var VAKKEN = [
       "v": "Welke term past bij: \"a phrase like \"However / On the other hand\" that introduces another view\"?",
       "o": [
        "Contrast phrase",
-       "Useful phrases",
        "Formal opening",
+       "Useful phrases",
        "Beleefd oneens"
       ],
       "c": 0,
@@ -115835,8 +115835,8 @@ var VAKKEN = [
      {
       "v": "Wat houdt «Contrast phrase» in?",
       "o": [
-       "a rhetorical question, statistic or anecdote that grabs attention",
        "a response that opposes a point, \"While I understand your point, I would argue…\"",
+       "a rhetorical question, statistic or anecdote that grabs attention",
        "a phrase like \"However / On the other hand\" that introduces another view",
        "a polite opening such as \"Good morning. Today I would like to present…\""
       ],
@@ -115874,7 +115874,7 @@ var VAKKEN = [
        "Om herhaling vragen",
        "Presentation structure",
        "Persuasive technique",
-       "Presentatiestructuur"
+       "Contrast phrase"
       ],
       "c": 2,
       "u": "Het juiste begrip is «Persuasive technique»: a rhetorical question, statistic or anecdote that grabs attention.",
@@ -116005,8 +116005,8 @@ var VAKKEN = [
       "o": [
        "Rhetorical question",
        "Persuasive technique",
-       "Explicit information",
-       "Present continuous"
+       "Uncertainty markers",
+       "Presentation structure"
       ],
       "c": 0,
       "u": "Het juiste begrip is «Rhetorical question»: a question asked for effect, not for a real answer.",
@@ -116015,10 +116015,10 @@ var VAKKEN = [
      {
       "v": "Welke term past bij: \"a question asked for effect, not for a real answer\"?",
       "o": [
-       "Presentation structure",
+       "Persuasive technique",
        "Rhetorical question",
        "Om herhaling vragen",
-       "Persuasive technique"
+       "Presentation structure"
       ],
       "c": 1,
       "u": "Het juiste begrip is «Rhetorical question»: a question asked for effect, not for a real answer.",
@@ -116099,10 +116099,10 @@ var VAKKEN = [
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"asking someone to explain what they mean\"?",
       "o": [
-       "Ophelderen",
-       "Clarification",
        "Turn-taking",
-       "Foreshadowing"
+       "Clarification",
+       "Mening geven",
+       "Beleefd oneens"
       ],
       "c": 1,
       "u": "Het juiste begrip is «Clarification»: asking someone to explain what they mean.",
@@ -116113,8 +116113,8 @@ var VAKKEN = [
       "o": [
        "Clarification",
        "Turn-taking",
-       "Counter-argument",
-       "Ophelderen"
+       "Mening geven",
+       "Counter-argument"
       ],
       "c": 0,
       "u": "Het juiste begrip is «Clarification»: asking someone to explain what they mean.",
@@ -116135,10 +116135,10 @@ var VAKKEN = [
      {
       "v": "Wat betekent «Presentatiestructuur»?",
       "o": [
-       "therefore, as a result, because",
+       "in short, to sum up, all in all",
        "introduction, body, conclusion",
        "metaphor, simile, foreshadowing",
-       "in short, to sum up, all in all"
+       "therefore, as a result, because"
       ],
       "c": 1,
       "u": "«Presentatiestructuur» betekent: introduction, body, conclusion.",
@@ -116147,8 +116147,8 @@ var VAKKEN = [
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"introduction, body, conclusion\"?",
       "o": [
-       "Persuasive technique",
        "Rhetorical question",
+       "Persuasive technique",
        "Presentatiestructuur",
        "Counter-argument"
       ],
@@ -116159,9 +116159,9 @@ var VAKKEN = [
      {
       "v": "Welke term past bij: \"introduction, body, conclusion\"?",
       "o": [
+       "Rhetorical question",
        "Counter-argument",
        "Persuasive technique",
-       "Rhetorical question",
        "Presentatiestructuur"
       ],
       "c": 3,
@@ -116173,8 +116173,8 @@ var VAKKEN = [
       "o": [
        "\"I see your point, but…\", \"I'm not so sure\"",
        "introduction, body, conclusion",
-       "in short, to sum up, all in all",
-       "introduction, 2-3 main points with examples, and a conclusion"
+       "therefore, as a result, because",
+       "in short, to sum up, all in all"
       ],
       "c": 1,
       "u": "«Presentatiestructuur» betekent: introduction, body, conclusion.",
@@ -116411,10 +116411,10 @@ var VAKKEN = [
      {
       "v": "Wat houdt «Beleefd oneens» in?",
       "o": [
-       "introduction, body, conclusion",
+       "because, therefore, so, as a result, since",
        "\"I see your point, but…\", \"I'm not so sure\"",
-       "introduction, 2-3 main points with examples, and a conclusion",
-       "because, therefore, so, as a result, since"
+       "introduction, body, conclusion",
+       "moreover, furthermore, in addition, also"
       ],
       "c": 1,
       "u": "«Beleefd oneens» betekent: \"I see your point, but…\", \"I'm not so sure\".",
@@ -117764,7 +117764,7 @@ var VAKKEN = [
       "o": [
        "Point, Illustration, Explanation",
        "moreover, in addition, furthermore",
-       "a paragraph built as Point, Illustration, Explanation",
+       "the sign-off of a letter, such as \"Yours sincerely,\"",
        "therefore, as a result, because"
       ],
       "c": 1,
@@ -117777,7 +117777,7 @@ var VAKKEN = [
        "introduction, body, conclusion",
        "moreover, in addition, furthermore",
        "therefore, as a result, because",
-       "metaphor, simile, foreshadowing"
+       "in short, to sum up, all in all"
       ],
       "c": 2,
       "u": "«Cause/effect» betekent: therefore, as a result, because.",
@@ -117810,7 +117810,7 @@ var VAKKEN = [
      {
       "v": "Wat houdt «Cause/effect» in?",
       "o": [
-       "a paragraph built as Point, Illustration, Explanation",
+       "the sign-off of a letter, such as \"Yours sincerely,\"",
        "Point, Illustration, Explanation",
        "therefore, as a result, because",
        "moreover, in addition, furthermore"
@@ -118968,7 +118968,7 @@ var VAKKEN = [
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"the writer's attitude to the subject\"?",
       "o": [
-       "Gist",
+       "Genre",
        "Tone",
        "Mood",
        "Plot"
@@ -118980,9 +118980,9 @@ var VAKKEN = [
      {
       "v": "Welke term past bij: \"the writer's attitude to the subject\"?",
       "o": [
-       "Theme",
-       "Mood",
+       "Genre",
        "Plot",
+       "Mood",
        "Tone"
       ],
       "c": 3,
@@ -119258,8 +119258,8 @@ var VAKKEN = [
       "o": [
        "Genre",
        "Theme",
-       "Simile",
-       "Stanza"
+       "Stanza",
+       "Climax"
       ],
       "c": 0,
       "u": "Het juiste begrip is «Genre»: a category of literary work.",
@@ -119269,9 +119269,9 @@ var VAKKEN = [
       "v": "Welke term past bij: \"a category of literary work\"?",
       "o": [
        "Genre",
-       "Climax",
+       "Stanza",
        "Theme",
-       "Tone"
+       "Mood"
       ],
       "c": 0,
       "u": "Het juiste begrip is «Genre»: a category of literary work.",
@@ -119352,10 +119352,10 @@ var VAKKEN = [
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"the pattern of rhymes in a poem\"?",
       "o": [
-       "Alliteration",
-       "Linking word",
+       "Signal words",
+       "Passive voice",
        "Rhyme scheme",
-       "Mening geven"
+       "Context clue"
       ],
       "c": 2,
       "u": "Het juiste begrip is «Rhyme scheme»: the pattern of rhymes in a poem.",
@@ -119364,10 +119364,10 @@ var VAKKEN = [
      {
       "v": "Welke term past bij: \"the pattern of rhymes in a poem\"?",
       "o": [
-       "Literary devices",
+       "Static character",
        "Alliteration",
        "Rhyme scheme",
-       "Foreshadowing"
+       "Literary devices"
       ],
       "c": 2,
       "u": "Het juiste begrip is «Rhyme scheme»: the pattern of rhymes in a poem.",
@@ -119391,7 +119391,7 @@ var VAKKEN = [
        "the central idea or message explored in a work",
        "een personage vertelt; beperkt tot eigen kennis",
        "the turning point of highest tension in a story",
-       "an indirect reference to something well known"
+       "the repetition of vowel sounds in nearby words"
       ],
       "c": 0,
       "u": "«Theme» betekent: the central idea or message explored in a work.",
@@ -119424,8 +119424,8 @@ var VAKKEN = [
      {
       "v": "Wat houdt «Theme» in?",
       "o": [
-       "een personage vertelt; beperkt tot eigen kennis",
-       "the repetition of initial consonant sounds",
+       "the turning point of highest tension in a story",
+       "an indirect reference to something well known",
        "the central idea or message explored in a work",
        "the repetition of vowel sounds in nearby words"
       ],
@@ -120048,10 +120048,10 @@ var VAKKEN = [
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"complex, meerdere kanten\"?",
       "o": [
-       "flat",
+       "Genre",
        "round",
        "static",
-       "Theme"
+       "flat"
       ],
       "c": 1,
       "u": "Het juiste begrip is «round»: complex, meerdere kanten.",
@@ -120060,10 +120060,10 @@ var VAKKEN = [
      {
       "v": "Welke term past bij: \"complex, meerdere kanten\"?",
       "o": [
-       "Theme",
+       "flat",
        "round",
-       "static",
-       "Genre"
+       "Genre",
+       "Theme"
       ],
       "c": 1,
       "u": "Het juiste begrip is «round»: complex, meerdere kanten.",
@@ -120099,7 +120099,7 @@ var VAKKEN = [
        "re-",
        "Mood",
        "flat",
-       "round"
+       "Tone"
       ],
       "c": 2,
       "u": "Het juiste begrip is «flat»: eenvoudig, één trek.",
@@ -120108,10 +120108,10 @@ var VAKKEN = [
      {
       "v": "Welke term past bij: \"eenvoudig, één trek\"?",
       "o": [
-       "Plot",
-       "flat",
        "Tone",
-       "Mood"
+       "flat",
+       "Mood",
+       "round"
       ],
       "c": 1,
       "u": "Het juiste begrip is «flat»: eenvoudig, één trek.",
@@ -120962,7 +120962,7 @@ var VAKKEN = [
       "v": "Welk begrip hoort bij deze omschrijving: \"het verband tussen een gebeurtenis en wat eruit voortkomt\"?",
       "o": [
        "Subjectiviteit",
-       "Objectiviteit",
+       "Generalisatie",
        "Oorzaak-gevolg",
        "Interpretatie"
       ],
@@ -120976,7 +120976,7 @@ var VAKKEN = [
        "Oorzaak-gevolg",
        "Subjectiviteit",
        "Periodisering",
-       "Objectiviteit"
+       "Generalisatie"
       ],
       "c": 0,
       "u": "Het juiste begrip is «Oorzaak-gevolg»: het verband tussen een gebeurtenis en wat eruit voortkomt.",
@@ -121201,10 +121201,10 @@ var VAKKEN = [
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"het weergeven van feiten zonder eigen kleuring\"?",
       "o": [
-       "Continuïteit",
+       "Generalisatie",
        "Objectiviteit",
        "Periodisering",
-       "Generalisatie"
+       "Continuïteit"
       ],
       "c": 1,
       "u": "Het juiste begrip is «Objectiviteit»: het weergeven van feiten zonder eigen kleuring.",
@@ -121214,9 +121214,9 @@ var VAKKEN = [
       "v": "Welke term past bij: \"het weergeven van feiten zonder eigen kleuring\"?",
       "o": [
        "Objectiviteit",
-       "Generalisatie",
+       "Continuïteit",
        "Periodisering",
-       "Continuïteit"
+       "Generalisatie"
       ],
       "c": 0,
       "u": "Het juiste begrip is «Objectiviteit»: het weergeven van feiten zonder eigen kleuring.",
@@ -121264,7 +121264,7 @@ var VAKKEN = [
        "Subjectiviteit",
        "Generalisatie",
        "Oorzaak-gevolg",
-       "Continuïteit"
+       "Interpretatie"
       ],
       "c": 0,
       "u": "Het juiste begrip is «Subjectiviteit»: het weergeven vanuit een eigen mening of belang.",
@@ -121394,8 +121394,8 @@ var VAKKEN = [
       "v": "Welk begrip hoort bij deze omschrijving: \"een lijn waarop gebeurtenissen op volgorde staan\"?",
       "o": [
        "Tijdbalk",
-       "Tijdvak",
        "Diachroon",
+       "Oorzaak",
        "Synchroon"
       ],
       "c": 0,
@@ -121405,10 +121405,10 @@ var VAKKEN = [
      {
       "v": "Welke term past bij: \"een lijn waarop gebeurtenissen op volgorde staan\"?",
       "o": [
+       "Aanleiding",
        "Diachroon",
-       "Oordeel",
        "Tijdbalk",
-       "Oorzaak"
+       "Oordeel"
       ],
       "c": 2,
       "u": "Het juiste begrip is «Tijdbalk»: een lijn waarop gebeurtenissen op volgorde staan.",
@@ -121477,8 +121477,8 @@ var VAKKEN = [
      {
       "v": "Wat betekent «Diachroon»?",
       "o": [
-       "wat door de tijd heen anders werd",
-       "een bron uit de onderzochte periode zelf",
+       "de bestuurlijke elite van de steden",
+       "in 380 n.C. onder keizer Theodosius.",
        "een vergelijking door de tijd heen",
        "de directe vonk van een gebeurtenis"
       ],
@@ -121513,10 +121513,10 @@ var VAKKEN = [
      {
       "v": "Wat houdt «Diachroon» in?",
       "o": [
-       "wat door de tijd heen anders werd",
+       "een typerend verschijnsel van een tijdvak",
        "een vergelijking door de tijd heen",
        "de directe vonk van een gebeurtenis",
-       "een bron uit de onderzochte periode zelf"
+       "een controleerbare, verifieerbare uitspraak"
       ],
       "c": 1,
       "u": "«Diachroon» betekent: een vergelijking door de tijd heen.",
@@ -121645,7 +121645,7 @@ var VAKKEN = [
      {
       "v": "Welke term past bij: \"een uitspraak met een waardering over het verleden\"?",
       "o": [
-       "Tijdbalk",
+       "Diachroon",
        "Oordeel",
        "Oorzaak",
        "Tijdvak"
@@ -121958,9 +121958,9 @@ var VAKKEN = [
       "v": "Wat betekent «Verandering»?",
       "o": [
        "wat door de tijd heen anders werd",
-       "een vergelijking door de tijd heen",
-       "de bloeiperiode van de Republiek",
-       "de directe vonk van een gebeurtenis"
+       "de directe vonk van een gebeurtenis",
+       "een typerend verschijnsel van een tijdvak",
+       "een bron uit de onderzochte periode zelf"
       ],
       "c": 0,
       "u": "«Verandering» betekent: wat door de tijd heen anders werd.",
@@ -121994,9 +121994,9 @@ var VAKKEN = [
       "v": "Wat houdt «Verandering» in?",
       "o": [
        "wat door de tijd heen anders werd",
+       "een typerend verschijnsel van een tijdvak",
        "de directe vonk van een gebeurtenis",
-       "een vergelijking door de tijd heen",
-       "een typerend verschijnsel van een tijdvak"
+       "een bron uit de onderzochte periode zelf"
       ],
       "c": 0,
       "u": "«Verandering» betekent: wat door de tijd heen anders werd.",
@@ -122152,7 +122152,7 @@ var VAKKEN = [
        "de directe vonk van een gebeurtenis",
        "een vergelijking door de tijd heen",
        "een bron uit de onderzochte periode zelf",
-       "wat door de tijd heen anders werd"
+       "een typerend verschijnsel van een tijdvak"
       ],
       "c": 0,
       "u": "«Aanleiding» betekent: de directe vonk van een gebeurtenis.",
@@ -122186,9 +122186,9 @@ var VAKKEN = [
       "v": "Wat houdt «Aanleiding» in?",
       "o": [
        "een vergelijking door de tijd heen",
-       "een bron uit de onderzochte periode zelf",
+       "een controleerbare, verifieerbare uitspraak",
        "de directe vonk van een gebeurtenis",
-       "wat door de tijd heen anders werd"
+       "een bron uit de onderzochte periode zelf"
       ],
       "c": 2,
       "u": "«Aanleiding» betekent: de directe vonk van een gebeurtenis.",
@@ -122224,7 +122224,7 @@ var VAKKEN = [
        "Tijdvak",
        "Oorzaak",
        "Oordeel",
-       "Tijdbalk"
+       "Gevolg"
       ],
       "c": 1,
       "u": "Het juiste begrip is «Oorzaak»: een dieperliggende factor achter een gebeurtenis.",
@@ -122293,10 +122293,10 @@ var VAKKEN = [
      {
       "v": "Wat betekent «Chronologisch ordenen»?",
       "o": [
-       "wat veranderde? Wat bleef gelijk? Niet alles verandert tegelijk of even snel.",
+       "gesticht door Mohammed (vanaf 610); kernbegrippen zijn de Koran, de vijf zuilen en de jihad.",
        "plaatsen van gebeurtenissen in de juiste tijdsvolgorde. Gebruik tijdvakken als kapstok voor oriëntatie.",
-       "leenstelsel waarbij een leenheer land of een ambt in leen geeft aan leenmannen in ruil voor trouw.",
-       "gesticht door Mohammed (vanaf 610); kernbegrippen zijn de Koran, de vijf zuilen en de jihad."
+       "wat veranderde? Wat bleef gelijk? Niet alles verandert tegelijk of even snel.",
+       "leenstelsel waarbij een leenheer land of een ambt in leen geeft aan leenmannen in ruil voor trouw."
       ],
       "c": 1,
       "u": "«Chronologisch ordenen» betekent: plaatsen van gebeurtenissen in de juiste tijdsvolgorde. Gebruik tijdvakken als kapstok voor oriëntatie..",
@@ -122308,7 +122308,7 @@ var VAKKEN = [
        "Chronologisch ordenen",
        "Kenmerkend aspect",
        "Historische context",
-       "Klassieke vormentaal"
+       "Multiperspectiviteit"
       ],
       "c": 0,
       "u": "Het juiste begrip is «Chronologisch ordenen»: plaatsen van gebeurtenissen in de juiste tijdsvolgorde. Gebruik tijdvakken als kapstok voor oriëntatie..",
@@ -122319,8 +122319,8 @@ var VAKKEN = [
       "o": [
        "Historische context",
        "Chronologisch ordenen",
-       "Multiperspectiviteit",
-       "Kenmerkend aspect"
+       "Kenmerkend aspect",
+       "Multiperspectiviteit"
       ],
       "c": 1,
       "u": "Het juiste begrip is «Chronologisch ordenen»: plaatsen van gebeurtenissen in de juiste tijdsvolgorde. Gebruik tijdvakken als kapstok voor oriëntatie..",
@@ -123505,9 +123505,9 @@ var VAKKEN = [
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"een van de tien historische perioden met een eigen naam\"?",
       "o": [
-       "Kalifaat",
+       "Grondwet",
        "Tijdvak",
-       "Tirannie",
+       "Autarkie",
        "Horigen"
       ],
       "c": 1,
@@ -123517,9 +123517,9 @@ var VAKKEN = [
      {
       "v": "Welke term past bij: \"een van de tien historische perioden met een eigen naam\"?",
       "o": [
+       "Diaspora",
        "Horigen",
        "Autarkie",
-       "Diaspora",
        "Tijdvak"
       ],
       "c": 3,
@@ -124298,8 +124298,8 @@ var VAKKEN = [
       "v": "Welk begrip hoort bij deze omschrijving: \"fascisme plus antisemitisme en Lebensraum; Hitler in Duitsland\"?",
       "o": [
        "Jager-verzamelaars",
-       "Tweezwaardenleer",
-       "Investituurstrijd",
+       "Natuurgodsdienst",
+       "Landbouwrevolutie",
        "Nationaalsocialisme"
       ],
       "c": 3,
@@ -124311,8 +124311,8 @@ var VAKKEN = [
       "o": [
        "Jager-verzamelaars",
        "Nationaalsocialisme",
-       "Landbouwrevolutie",
-       "Tweezwaardenleer"
+       "Investituurstrijd",
+       "Natuurgodsdienst"
       ],
       "c": 1,
       "u": "Het juiste begrip is «Nationaalsocialisme»: fascisme plus antisemitisme en Lebensraum; Hitler in Duitsland.",
@@ -124417,9 +124417,9 @@ var VAKKEN = [
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"de overgang rond 9000 v.C. naar zelf voedsel verbouwen; begon in het Midden-Oosten.\"?",
       "o": [
-       "Investituurstrijd",
-       "Landbouwrevolutie",
        "Jager-verzamelaars",
+       "Landbouwrevolutie",
+       "Investituurstrijd",
        "Tweezwaardenleer"
       ],
       "c": 1,
@@ -124429,9 +124429,9 @@ var VAKKEN = [
      {
       "v": "Welke term past bij: \"de overgang rond 9000 v.C. naar zelf voedsel verbouwen; begon in het Midden-Oosten.\"?",
       "o": [
-       "Investituurstrijd",
-       "Natuurgodsdienst",
        "Confessionalisme",
+       "Tweezwaardenleer",
+       "Investituurstrijd",
        "Landbouwrevolutie"
       ],
       "c": 3,
@@ -124705,10 +124705,10 @@ var VAKKEN = [
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"de eerste steden (Soemeriërs in Mesopotamië, ~3000 v.C.).\"?",
       "o": [
-       "Rationeel-wetenschappelijk wereldbeeld",
        "Chronologisch/causaal denken",
+       "Rationeel-wetenschappelijk wereldbeeld",
        "Landbouwstedelijke samenleving",
-       "Transferabele vaardigheden"
+       "Ministeriële verantwoordelijkheid"
       ],
       "c": 2,
       "u": "Het juiste begrip is «Landbouwstedelijke samenleving»: de eerste steden (Soemeriërs in Mesopotamië, ~3000 v.C.)..",
@@ -127263,9 +127263,9 @@ var VAKKEN = [
       "v": "Wat betekent «Republiek»?",
       "o": [
        "een staatsvorm zonder monarch",
-       "wat blijft, wat verandert",
+       "de bestuurlijke elite van de steden",
        "rijkdom vergaren door handel",
-       "wat door de tijd heen anders werd"
+       "het dulden van andere opvattingen"
       ],
       "c": 0,
       "u": "«Republiek» betekent: een staatsvorm zonder monarch.",
@@ -127299,9 +127299,9 @@ var VAKKEN = [
       "v": "Wat houdt «Republiek» in?",
       "o": [
        "een staatsvorm zonder monarch",
-       "rijkdom vergaren door handel",
        "wat door de tijd heen anders werd",
-       "wat blijft, wat verandert"
+       "wat blijft, wat verandert",
+       "rijkdom vergaren door handel"
       ],
       "c": 0,
       "u": "«Republiek» betekent: een staatsvorm zonder monarch.",
@@ -127515,9 +127515,9 @@ var VAKKEN = [
       "v": "Welk begrip hoort bij deze omschrijving: \"verbanden leggen tussen perioden via een centraal onderwerp\"?",
       "o": [
        "Thematische geschiedenis",
-       "Sociale ongelijkheid",
-       "Transferabele vaardigheden",
-       "Parlementaire democratie"
+       "Parlementaire democratie",
+       "Volksvertegenwoordiging",
+       "Sociale ongelijkheid"
       ],
       "c": 0,
       "u": "Het juiste begrip is «Thematische geschiedenis»: verbanden leggen tussen perioden via een centraal onderwerp.",
@@ -127526,10 +127526,10 @@ var VAKKEN = [
      {
       "v": "Welke term past bij: \"verbanden leggen tussen perioden via een centraal onderwerp\"?",
       "o": [
-       "Volksvertegenwoordiging",
+       "Continuïteit & verandering",
        "Thematische geschiedenis",
        "Sociale ongelijkheid",
-       "Continuïteit & verandering"
+       "Volksvertegenwoordiging"
       ],
       "c": 1,
       "u": "Het juiste begrip is «Thematische geschiedenis»: verbanden leggen tussen perioden via een centraal onderwerp.",
@@ -127647,9 +127647,9 @@ var VAKKEN = [
       "v": "Wat betekent «Verandering»?",
       "o": [
        "wat door de tijd heen anders werd",
-       "de bloeiperiode van de Republiek",
        "de bestuurlijke elite van de steden",
-       "het dulden van andere opvattingen"
+       "het dulden van andere opvattingen",
+       "de bloeiperiode van de Republiek"
       ],
       "c": 0,
       "u": "«Verandering» betekent: wat door de tijd heen anders werd.",
@@ -127683,9 +127683,9 @@ var VAKKEN = [
       "v": "Wat houdt «Verandering» in?",
       "o": [
        "wat door de tijd heen anders werd",
-       "de bestuurlijke elite van de steden",
+       "het dulden van andere opvattingen",
        "de bloeiperiode van de Republiek",
-       "het dulden van andere opvattingen"
+       "een staatsvorm zonder monarch"
       ],
       "c": 0,
       "u": "«Verandering» betekent: wat door de tijd heen anders werd.",
@@ -127695,7 +127695,7 @@ var VAKKEN = [
       "v": "Wat betekent «Kenmerkend aspect»?",
       "o": [
        "gekleurde informatie om mensen te beïnvloeden",
-       "de hoogste wet met de basisregels van de staat",
+       "een verband dat dwars door meerdere tijdvakken loopt",
        "een typerend kenmerk dat bij een tijdvak hoort",
        "de ongelijke verdeling van welvaart en kansen"
       ],
@@ -127709,7 +127709,7 @@ var VAKKEN = [
        "gekleurde informatie om mensen te beïnvloeden",
        "een typerend kenmerk dat bij een tijdvak hoort",
        "de ongelijke verdeling van welvaart en kansen",
-       "overeenkomst en verschil tussen periodes"
+       "een bron uit de onderzochte periode zelf"
       ],
       "c": 1,
       "u": "«Kenmerkend aspect» betekent: een typerend kenmerk dat bij een tijdvak hoort.",
@@ -127767,9 +127767,9 @@ var VAKKEN = [
       "v": "Wat betekent «Propaganda»?",
       "o": [
        "gekleurde informatie om mensen te beïnvloeden",
-       "overeenkomst en verschil tussen periodes",
-       "een typerend kenmerk dat bij een tijdvak hoort",
-       "een bron uit de onderzochte periode zelf"
+       "een bron uit de onderzochte periode zelf",
+       "de ongelijke verdeling van welvaart en kansen",
+       "een typerend kenmerk dat bij een tijdvak hoort"
       ],
       "c": 0,
       "u": "«Propaganda» betekent: gekleurde informatie om mensen te beïnvloeden.",
@@ -127802,10 +127802,10 @@ var VAKKEN = [
      {
       "v": "Wat houdt «Propaganda» in?",
       "o": [
-       "de ongelijke verdeling van welvaart en kansen",
-       "gekleurde informatie om mensen te beïnvloeden",
        "een typerend kenmerk dat bij een tijdvak hoort",
-       "één onderwerp door meerdere tijdvakken"
+       "gekleurde informatie om mensen te beïnvloeden",
+       "de ongelijke verdeling van welvaart en kansen",
+       "een bron uit de onderzochte periode zelf"
       ],
       "c": 1,
       "u": "«Propaganda» betekent: gekleurde informatie om mensen te beïnvloeden.",
@@ -127934,9 +127934,9 @@ var VAKKEN = [
      {
       "v": "Wat betekent «Thematisch werken»?",
       "o": [
-       "primair vs. secundair; betrouwbaarheid",
        "een bron uit de onderzochte periode zelf",
        "waarom iets gebeurde en wat het bracht",
+       "primair vs. secundair; betrouwbaarheid",
        "één onderwerp door meerdere tijdvakken"
       ],
       "c": 3,
@@ -127948,7 +127948,7 @@ var VAKKEN = [
       "o": [
        "Thematisch werken",
        "Kenmerkend aspect",
-       "Perspectief nemen",
+       "Sociale ongelijkheid",
        "Uitvoerende macht"
       ],
       "c": 0,
@@ -127970,8 +127970,8 @@ var VAKKEN = [
      {
       "v": "Wat houdt «Thematisch werken» in?",
       "o": [
-       "primair vs. secundair; betrouwbaarheid",
        "waarom iets gebeurde en wat het bracht",
+       "primair vs. secundair; betrouwbaarheid",
        "één onderwerp door meerdere tijdvakken",
        "een bron uit de onderzochte periode zelf"
       ],
@@ -129022,9 +129022,9 @@ var VAKKEN = [
      {
       "v": "Wat betekent «Algemeen kiesrecht»?",
       "o": [
-       "een staat waarin de macht aan wetten is gebonden",
        "dat iedereen, rijk of arm, gelijk is voor de rechter",
-       "de kamer die wetsvoorstellen als laatste beoordeelt",
+       "het streven naar gelijke rechten van een groep",
+       "een staat waarin de macht aan wetten is gebonden",
        "het recht van alle volwassen burgers om te stemmen"
       ],
       "c": 3,
@@ -129058,10 +129058,10 @@ var VAKKEN = [
      {
       "v": "Wat houdt «Algemeen kiesrecht» in?",
       "o": [
-       "het streven naar gelijke rechten van een groep",
+       "de kamer die wetsvoorstellen als laatste beoordeelt",
        "het recht van alle volwassen burgers om te stemmen",
-       "het recht om zelf een wetsvoorstel in te dienen",
-       "de kamer die wetsvoorstellen als laatste beoordeelt"
+       "een uitspraak van de Kamer over een bepaalde kwestie",
+       "dat iedereen, rijk of arm, gelijk is voor de rechter"
       ],
       "c": 1,
       "u": "«Algemeen kiesrecht» betekent: het recht van alle volwassen burgers om te stemmen.",
@@ -129214,10 +129214,10 @@ var VAKKEN = [
      {
       "v": "Wat betekent «Parlement»?",
       "o": [
-       "de macht die wetten maakt, in Nederland de Staten-Generaal",
+       "de samenwerkende partijen die samen een meerderheid vormen",
        "de volksvertegenwoordiging die wetten maakt en controleert",
-       "de opdeling van de samenleving in levensbeschouwelijke groepen",
-       "de overheid mag alleen handelen met een wettelijke grondslag"
+       "een minister moet aftreden bij verlies van vertrouwen",
+       "de macht die wetten maakt, in Nederland de Staten-Generaal"
       ],
       "c": 1,
       "u": "«Parlement» betekent: de volksvertegenwoordiging die wetten maakt en controleert.",
@@ -129250,10 +129250,10 @@ var VAKKEN = [
      {
       "v": "Wat houdt «Parlement» in?",
       "o": [
-       "kiesrecht dat afhangt van de hoogte van de betaalde belasting",
-       "de macht die wetten maakt, in Nederland de Staten-Generaal",
+       "de overheid mag alleen handelen met een wettelijke grondslag",
+       "de samenwerkende partijen die samen een meerderheid vormen",
        "de volksvertegenwoordiging die wetten maakt en controleert",
-       "de samenwerkende partijen die samen een meerderheid vormen"
+       "kiesrecht dat afhangt van de hoogte van de betaalde belasting"
       ],
       "c": 2,
       "u": "«Parlement» betekent: de volksvertegenwoordiging die wetten maakt en controleert.",
@@ -129346,10 +129346,10 @@ var VAKKEN = [
      {
       "v": "Wat houdt «Tweede Kamer» in?",
       "o": [
-       "de samenwerkende partijen die samen een meerderheid vormen",
        "kiesrecht dat afhangt van de hoogte van de betaalde belasting",
+       "de opdeling van de samenleving in levensbeschouwelijke groepen",
        "de rechtstreeks gekozen kamer die wetten maakt en controleert",
-       "de volksvertegenwoordiging die wetten maakt en controleert"
+       "de overheid mag alleen handelen met een wettelijke grondslag"
       ],
       "c": 2,
       "u": "«Tweede Kamer» betekent: de rechtstreeks gekozen kamer die wetten maakt en controleert.",
@@ -129370,10 +129370,10 @@ var VAKKEN = [
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"het recht om een wetsvoorstel te wijzigen\"?",
       "o": [
-       "Rechterlijke macht",
-       "Motie van wantrouwen",
+       "Rechten / bestuurskunde",
+       "Beroepen & opleidingen",
        "Recht van amendement",
-       "Recht van initiatief"
+       "Motie van wantrouwen"
       ],
       "c": 2,
       "u": "Het juiste begrip is «Recht van amendement»: het recht om een wetsvoorstel te wijzigen.",
@@ -129383,9 +129383,9 @@ var VAKKEN = [
       "v": "Welke term past bij: \"het recht om een wetsvoorstel te wijzigen\"?",
       "o": [
        "Recht van amendement",
-       "Recht van initiatief",
-       "Rechterlijke macht",
-       "Motie van wantrouwen"
+       "Motie van wantrouwen",
+       "Parlementaire democratie",
+       "Rechterlijke macht"
       ],
       "c": 0,
       "u": "Het juiste begrip is «Recht van amendement»: het recht om een wetsvoorstel te wijzigen.",
@@ -129396,8 +129396,8 @@ var VAKKEN = [
       "o": [
        "de koning is politiek niet aansprakelijk",
        "het recht om een wetsvoorstel te wijzigen",
-       "de onafhankelijke macht die recht spreekt",
-       "de scheiding van de drie staatsmachten"
+       "de scheiding van de drie staatsmachten",
+       "de onafhankelijke macht die recht spreekt"
       ],
       "c": 1,
       "u": "«Recht van amendement» betekent: het recht om een wetsvoorstel te wijzigen.",
@@ -129407,8 +129407,8 @@ var VAKKEN = [
       "v": "Wat betekent «Recht van initiatief»?",
       "o": [
        "het recht om zelf een wetsvoorstel in te dienen",
+       "overheid en religie zijn van elkaar gescheiden",
        "de partijen die niet aan de regering deelnemen",
-       "het streven naar gelijke rechten van een groep",
        "een staat waarin de macht aan wetten is gebonden"
       ],
       "c": 0,
@@ -129419,9 +129419,9 @@ var VAKKEN = [
       "v": "Welk begrip hoort bij deze omschrijving: \"het recht om zelf een wetsvoorstel in te dienen\"?",
       "o": [
        "Recht van initiatief",
-       "Rechten / bestuurskunde",
+       "Erfgoed / cultuur",
        "Motie van wantrouwen",
-       "Recht van amendement"
+       "Beroepen & opleidingen"
       ],
       "c": 0,
       "u": "Het juiste begrip is «Recht van initiatief»: het recht om zelf een wetsvoorstel in te dienen.",
@@ -129430,9 +129430,9 @@ var VAKKEN = [
      {
       "v": "Welke term past bij: \"het recht om zelf een wetsvoorstel in te dienen\"?",
       "o": [
+       "Parlementaire democratie",
        "Motie van wantrouwen",
-       "Recht van amendement",
-       "Rechterlijke macht",
+       "Algemeen kiesrecht",
        "Recht van initiatief"
       ],
       "c": 3,
@@ -129443,9 +129443,9 @@ var VAKKEN = [
       "v": "Wat houdt «Recht van initiatief» in?",
       "o": [
        "het recht om zelf een wetsvoorstel in te dienen",
+       "de partijen die niet aan de regering deelnemen",
        "overheid en religie zijn van elkaar gescheiden",
-       "het streven naar gelijke rechten van een groep",
-       "de macht die de wetten uitvoert, de regering"
+       "het streven naar gelijke rechten van een groep"
       ],
       "c": 0,
       "u": "«Recht van initiatief» betekent: het recht om zelf een wetsvoorstel in te dienen.",
@@ -129538,7 +129538,7 @@ var VAKKEN = [
      {
       "v": "Wat houdt «Coalitie» in?",
       "o": [
-       "de rechtstreeks gekozen kamer die wetten maakt en controleert",
+       "de overheid mag alleen handelen met een wettelijke grondslag",
        "de samenwerkende partijen die samen een meerderheid vormen",
        "de volksvertegenwoordiging die wetten maakt en controleert",
        "kiesrecht dat afhangt van de hoogte van de betaalde belasting"
@@ -129695,7 +129695,7 @@ var VAKKEN = [
       "v": "Welke term past bij: \"overheid en religie zijn van elkaar gescheiden\"?",
       "o": [
        "Scheiding van kerk en staat",
-       "Recht van initiatief",
+       "Motie van wantrouwen",
        "Onschendbaarheid van de koning",
        "Recht van amendement"
       ],
@@ -129934,7 +129934,7 @@ var VAKKEN = [
      {
       "v": "Wat betekent «Uitvoerende macht»?",
       "o": [
-       "het recht om een wetsvoorstel te wijzigen",
+       "overheid en religie zijn van elkaar gescheiden",
        "de macht die de wetten uitvoert, de regering",
        "het recht om zelf een wetsvoorstel in te dienen",
        "het streven naar gelijke rechten van een groep"
@@ -130868,7 +130868,7 @@ var VAKKEN = [
       "o": [
        "Archivaris",
        "Historicus",
-       "Hofstelsel",
+       "Conservator",
        "Bronkritiek"
       ],
       "c": 1,
@@ -130878,9 +130878,9 @@ var VAKKEN = [
      {
       "v": "Welke term past bij: \"iemand die het verleden onderzoekt en beschrijft\"?",
       "o": [
-       "Argumenteren",
-       "Conservator",
+       "Bronkritiek",
        "Archivaris",
+       "Conservator",
        "Historicus"
       ],
       "c": 3,
@@ -130999,7 +130999,7 @@ var VAKKEN = [
       "v": "Wat betekent «Politicologie»?",
       "o": [
        "een situatie vanuit meerdere kanten zien",
-       "staatsinrichting en politiek analyseren",
+       "in hoeverre de informatie in een bron klopt",
        "het perspectief van een ander leren begrijpen",
        "de studie van politiek en staatsinrichting"
       ],
@@ -131012,8 +131012,8 @@ var VAKKEN = [
       "o": [
        "Journalistiek",
        "Politicologie",
-       "Conservator",
-       "Interpretatie"
+       "Interpretatie",
+       "Argumenteren"
       ],
       "c": 1,
       "u": "Het juiste begrip is «Politicologie»: de studie van politiek en staatsinrichting.",
@@ -131025,7 +131025,7 @@ var VAKKEN = [
        "Journalistiek",
        "Politicologie",
        "Argumenteren",
-       "Bronkritiek"
+       "Betrouwbaarheid"
       ],
       "c": 1,
       "u": "Het juiste begrip is «Politicologie»: de studie van politiek en staatsinrichting.",
@@ -131250,8 +131250,8 @@ var VAKKEN = [
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"oorzaken en gevolgen ordenen\"?",
       "o": [
+       "Landbouwstedelijke samenleving",
        "Ministeriële verantwoordelijkheid",
-       "Parlementaire democratie",
        "Transferabele vaardigheden",
        "Chronologisch/causaal denken"
       ],
@@ -131264,8 +131264,8 @@ var VAKKEN = [
       "o": [
        "Chronologisch/causaal denken",
        "Transferabele vaardigheden",
-       "Standplaatsgebondenheid",
-       "Rechten / bestuurskunde"
+       "Beroepen & opleidingen",
+       "Standplaatsgebondenheid"
       ],
       "c": 0,
       "u": "Het juiste begrip is «Chronologisch/causaal denken»: oorzaken en gevolgen ordenen.",
@@ -131286,10 +131286,10 @@ var VAKKEN = [
      {
       "v": "Wat betekent «Perspectief nemen»?",
       "o": [
-       "staatsinrichting en politiek analyseren",
+       "een bron uit de onderzochte periode zelf",
        "een situatie vanuit meerdere kanten zien",
        "de studie van politiek en staatsinrichting",
-       "een bron uit de onderzochte periode zelf"
+       "iemand die het verleden onderzoekt en beschrijft"
       ],
       "c": 1,
       "u": "«Perspectief nemen» betekent: een situatie vanuit meerdere kanten zien.",
@@ -131323,7 +131323,7 @@ var VAKKEN = [
       "v": "Wat houdt «Perspectief nemen» in?",
       "o": [
        "een situatie vanuit meerdere kanten zien",
-       "de studie van politiek en staatsinrichting",
+       "historische gebouwen en landschappen",
        "staatsinrichting en politiek analyseren",
        "in hoeverre de informatie in een bron klopt"
       ],
@@ -131383,9 +131383,9 @@ var VAKKEN = [
       "v": "Wat betekent «Rechten / bestuurskunde»?",
       "o": [
        "staatsinrichting en politiek analyseren",
-       "een situatie vanuit meerdere kanten zien",
        "historische gebouwen en landschappen",
-       "de studie van politiek en staatsinrichting"
+       "een situatie vanuit meerdere kanten zien",
+       "in hoeverre de informatie in een bron klopt"
       ],
       "c": 0,
       "u": "«Rechten / bestuurskunde» betekent: staatsinrichting en politiek analyseren.",
@@ -131418,7 +131418,7 @@ var VAKKEN = [
      {
       "v": "Wat houdt «Rechten / bestuurskunde» in?",
       "o": [
-       "de studie van politiek en staatsinrichting",
+       "historische gebouwen en landschappen",
        "staatsinrichting en politiek analyseren",
        "het perspectief van een ander leren begrijpen",
        "een situatie vanuit meerdere kanten zien"
@@ -131430,7 +131430,7 @@ var VAKKEN = [
      {
       "v": "Wat betekent «Erfgoed / cultuur»?",
       "o": [
-       "de studie van politiek en staatsinrichting",
+       "in 380 n.C. onder keizer Theodosius.",
        "historische gebouwen en landschappen",
        "in hoeverre de informatie in een bron klopt",
        "staatsinrichting en politiek analyseren"
@@ -132101,7 +132101,7 @@ var VAKKEN = [
       "o": [
        "materiaal waaruit je informatie haalt",
        "een kaart die één onderwerp toont",
-       "de mate waarin een bron up-to-date is",
+       "absoluut (km) vs. relatief (tijd/kosten)",
        "opkomend land, grote ongelijkheid"
       ],
       "c": 1,
@@ -132135,8 +132135,8 @@ var VAKKEN = [
      {
       "v": "Wat houdt «Thematische kaart» in?",
       "o": [
-       "de schaal waarop je een verschijnsel bekijkt",
        "materiaal waaruit je informatie haalt",
+       "absoluut (km) vs. relatief (tijd/kosten)",
        "de mate waarin een bron up-to-date is",
        "een kaart die één onderwerp toont"
       ],
@@ -132255,8 +132255,8 @@ var VAKKEN = [
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"een niet-willekeurige verdeling over de ruimte\"?",
       "o": [
-       "Relatieve afstand",
        "Geografische vraag",
+       "Topografische kaart",
        "Thematische kaart",
        "Ruimtelijk patroon"
       ],
@@ -132267,10 +132267,10 @@ var VAKKEN = [
      {
       "v": "Welke term past bij: \"een niet-willekeurige verdeling over de ruimte\"?",
       "o": [
+       "Topografische kaart",
        "Geografische vraag",
-       "Thematische kaart",
        "Ruimtelijk patroon",
-       "Topografische kaart"
+       "Thematische kaart"
       ],
       "c": 2,
       "u": "Het juiste begrip is «Ruimtelijk patroon»: een niet-willekeurige verdeling over de ruimte.",
@@ -132351,10 +132351,10 @@ var VAKKEN = [
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"de manier waarop een verschijnsel over een gebied verdeeld is\"?",
       "o": [
-       "Topografische kaart",
-       "Ruimtelijk patroon",
+       "Duurzame ontwikkeling",
+       "Economische dualiteit",
        "Ruimtelijke spreiding",
-       "Ruimtelijke relatie"
+       "Topografische kaart"
       ],
       "c": 2,
       "u": "Het juiste begrip is «Ruimtelijke spreiding»: de manier waarop een verschijnsel over een gebied verdeeld is.",
@@ -132363,10 +132363,10 @@ var VAKKEN = [
      {
       "v": "Welke term past bij: \"de manier waarop een verschijnsel over een gebied verdeeld is\"?",
       "o": [
-       "Thematische kaart",
+       "Geografische vraag",
        "Ruimtelijke spreiding",
-       "Ruimtelijke relatie",
-       "Topografische kaart"
+       "Topografische kaart",
+       "Thematische kaart"
       ],
       "c": 1,
       "u": "Het juiste begrip is «Ruimtelijke spreiding»: de manier waarop een verschijnsel over een gebied verdeeld is.",
@@ -132988,9 +132988,9 @@ var VAKKEN = [
       "v": "Welke term past bij: \"de mate waarin een bron up-to-date is\"?",
       "o": [
        "Actualiteit van een bron",
-       "Relatieve afstand",
+       "Topografische kaart",
        "Ruimtelijke spreiding",
-       "Ruimtelijke relatie"
+       "Relatieve afstand"
       ],
       "c": 0,
       "u": "Het juiste begrip is «Actualiteit van een bron»: de mate waarin een bron up-to-date is.",
@@ -133071,8 +133071,8 @@ var VAKKEN = [
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"een verband tussen verschijnselen op verschillende plaatsen\"?",
       "o": [
-       "Relatieve afstand",
-       "Ruimtelijke spreiding",
+       "Geografische vraag",
+       "Thematische kaart",
        "Ruimtelijke relatie",
        "Topografische kaart"
       ],
@@ -133084,8 +133084,8 @@ var VAKKEN = [
       "v": "Welke term past bij: \"een verband tussen verschijnselen op verschillende plaatsen\"?",
       "o": [
        "Topografische kaart",
-       "Ruimtelijke spreiding",
        "Geografische vraag",
+       "Relatieve afstand",
        "Ruimtelijke relatie"
       ],
       "c": 3,
@@ -133395,9 +133395,9 @@ var VAKKEN = [
      {
       "v": "Wat betekent «Topografische kaart»?",
       "o": [
-       "de manier waarop een verschijnsel over een gebied verdeeld is",
-       "een verband tussen verschijnselen op verschillende plaatsen",
        "een systeem om ruimtelijke gegevens in lagen te analyseren",
+       "een verband tussen verschijnselen op verschillende plaatsen",
+       "de manier waarop een verschijnsel over een gebied verdeeld is",
        "een kaart die het landschap toont: hoogte, wegen en plaatsen"
       ],
       "c": 3,
@@ -133407,9 +133407,9 @@ var VAKKEN = [
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"een kaart die het landschap toont: hoogte, wegen en plaatsen\"?",
       "o": [
-       "Ruimtelijk patroon",
-       "Ruimtelijke relatie",
        "Geografische vraag",
+       "Ruimtelijke relatie",
+       "Thematische kaart",
        "Topografische kaart"
       ],
       "c": 3,
@@ -133431,10 +133431,10 @@ var VAKKEN = [
      {
       "v": "Wat houdt «Topografische kaart» in?",
       "o": [
-       "een kaart die gebieden inkleurt naar de waarde van een kenmerk",
+       "een systeem om ruimtelijke gegevens in lagen te analyseren",
        "een kaart die het landschap toont: hoogte, wegen en plaatsen",
-       "een verband tussen verschijnselen op verschillende plaatsen",
-       "de werkelijke afstand tussen twee plaatsen in kilometers"
+       "de werkelijke afstand tussen twee plaatsen in kilometers",
+       "een kaart die gebieden inkleurt naar de waarde van een kenmerk"
       ],
       "c": 1,
       "u": "«Topografische kaart» betekent: een kaart die het landschap toont: hoogte, wegen en plaatsen.",
@@ -134334,7 +134334,7 @@ var VAKKEN = [
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"het aantal inwoners per vierkante kilometer\"?",
       "o": [
-       "Centrum-periferiemodel",
+       "Overstromingsrisico",
        "Welvaartsverdeling",
        "Centrum–periferie",
        "Bevolkingsdichtheid"
@@ -134348,7 +134348,7 @@ var VAKKEN = [
       "o": [
        "Welvaartsverdeling",
        "Bevolkingsdichtheid",
-       "Centrum-periferiemodel",
+       "Demografische druk",
        "Centrum–periferie"
       ],
       "c": 1,
@@ -134504,7 +134504,7 @@ var VAKKEN = [
       "o": [
        "het verschil tussen de waarde van export en import",
        "de mondiale verwevenheid van economie en cultuur",
-       "een factor die mensen wegjaagt uit een gebied",
+       "model met een rijke kern tegenover een arme periferie",
        "een factor die mensen naar een gebied toe trekt"
       ],
       "c": 1,
@@ -134610,9 +134610,9 @@ var VAKKEN = [
      {
       "v": "Wat betekent «Pushfactor»?",
       "o": [
-       "een bedrijf dat in meerdere landen actief is",
-       "een factor die mensen wegjaagt uit een gebied",
        "het aantal inwoners per vierkante kilometer",
+       "een factor die mensen wegjaagt uit een gebied",
+       "een bedrijf dat in meerdere landen actief is",
        "de levenskwaliteit, breder dan geld alleen"
       ],
       "c": 1,
@@ -134622,10 +134622,10 @@ var VAKKEN = [
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"een factor die mensen wegjaagt uit een gebied\"?",
       "o": [
-       "Dimensies",
-       "Pushfactor",
        "Economisch",
-       "Pullfactor"
+       "Pushfactor",
+       "Cultureel",
+       "Urbanisatie"
       ],
       "c": 1,
       "u": "Het juiste begrip is «Pushfactor»: een factor die mensen wegjaagt uit een gebied. Tegenover pull: push duwt weg uit het herkomstgebied.",
@@ -134636,8 +134636,8 @@ var VAKKEN = [
       "o": [
        "Pushfactor",
        "Economisch",
-       "Urbanisatie",
-       "Pullfactor"
+       "Vergrijzing",
+       "Urbanisatie"
       ],
       "c": 0,
       "u": "Het juiste begrip is «Pushfactor»: een factor die mensen wegjaagt uit een gebied. Tegenover pull: push duwt weg uit het herkomstgebied.",
@@ -134647,9 +134647,9 @@ var VAKKEN = [
       "v": "Wat houdt «Pushfactor» in?",
       "o": [
        "een factor die mensen wegjaagt uit een gebied",
+       "een bedrijf dat in meerdere landen actief is",
        "de mondiale verwevenheid van economie en cultuur",
-       "het aantal inwoners per vierkante kilometer",
-       "een factor die mensen naar een gebied toe trekt"
+       "het aantal inwoners per vierkante kilometer"
       ],
       "c": 0,
       "u": "«Pushfactor» betekent: een factor die mensen wegjaagt uit een gebied. Tegenover pull: push duwt weg uit het herkomstgebied.",
@@ -134659,7 +134659,7 @@ var VAKKEN = [
       "v": "Wat betekent «Pullfactor»?",
       "o": [
        "de mondiale verwevenheid van economie en cultuur",
-       "een grote bevolkingsgroei door geboorte en migratie",
+       "het verschil tussen de waarde van export en import",
        "een factor die mensen naar een gebied toe trekt",
        "de levenskwaliteit, breder dan geld alleen"
       ],
@@ -134671,9 +134671,9 @@ var VAKKEN = [
       "v": "Welk begrip hoort bij deze omschrijving: \"een factor die mensen naar een gebied toe trekt\"?",
       "o": [
        "Economisch",
-       "Pushfactor",
+       "Vergrijzing",
        "Pullfactor",
-       "Vergrijzing"
+       "Urbanisatie"
       ],
       "c": 2,
       "u": "Het juiste begrip is «Pullfactor»: een factor die mensen naar een gebied toe trekt. Tegenover push: pull trekt aan naar een gebied.",
@@ -134685,7 +134685,7 @@ var VAKKEN = [
        "Pullfactor",
        "Economisch",
        "Urbanisatie",
-       "Pushfactor"
+       "Cultureel"
       ],
       "c": 0,
       "u": "Het juiste begrip is «Pullfactor»: een factor die mensen naar een gebied toe trekt. Tegenover push: pull trekt aan naar een gebied.",
@@ -134694,9 +134694,9 @@ var VAKKEN = [
      {
       "v": "Wat houdt «Pullfactor» in?",
       "o": [
-       "het verschil tussen de waarde van export en import",
        "de levenskwaliteit, breder dan geld alleen",
-       "een bedrijf dat in meerdere landen actief is",
+       "de mondiale verwevenheid van economie en cultuur",
+       "een grote bevolkingsgroei door geboorte en migratie",
        "een factor die mensen naar een gebied toe trekt"
       ],
       "c": 3,
@@ -134886,7 +134886,7 @@ var VAKKEN = [
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"economisch, cultureel, politiek, demografisch\"?",
       "o": [
-       "Pushfactor",
+       "Graticule",
        "Migratie",
        "Pullfactor",
        "Dimensies"
@@ -134924,7 +134924,7 @@ var VAKKEN = [
       "o": [
        "de toename van het aandeel ouderen",
        "rijke kernlanden vs. arme periferie",
-       "ongelijke machts- en geldstromen",
+       "het verhuizen van mensen tussen gebieden",
        "de trek van het platteland naar de stad"
       ],
       "c": 1,
@@ -135081,7 +135081,7 @@ var VAKKEN = [
        "Pushfactor",
        "Economisch",
        "Cultureel",
-       "Pullfactor"
+       "Dimensies"
       ],
       "c": 1,
       "u": "Het juiste begrip is «Economisch»: wereldwijde handel en productie een spijkerbroek gemaakt in Bangladesh.",
@@ -135090,7 +135090,7 @@ var VAKKEN = [
      {
       "v": "Welke term past bij: \"wereldwijde handel en productie een spijkerbroek gemaakt in Bangladesh\"?",
       "o": [
-       "Pushfactor",
+       "Dimensies",
        "Urbanisatie",
        "Economisch",
        "Pullfactor"
@@ -136172,7 +136172,7 @@ var VAKKEN = [
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"de afzetting van meegevoerd materiaal op de bodem\"?",
       "o": [
-       "Interpoleren",
+       "Microkrediet",
        "Rivierregime",
        "Sedimentatie",
        "Subductiezone"
@@ -136556,7 +136556,7 @@ var VAKKEN = [
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"hoe water, wind en ijs het land slijten\"?",
       "o": [
-       "Exogene processen",
+       "Metamorf gesteente",
        "Endogene processen",
        "Endogeen vs. exogeen",
        "Klimaat & verwering"
@@ -136700,7 +136700,7 @@ var VAKKEN = [
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"samengeperste lagen puin zandsteen, kalksteen\"?",
       "o": [
-       "Stollingsgesteente",
+       "Gesteentekringloop",
        "Platentektoniek",
        "Klimaatverandering",
        "Sedimentgesteente"
@@ -136712,8 +136712,8 @@ var VAKKEN = [
      {
       "v": "Welke term past bij: \"samengeperste lagen puin zandsteen, kalksteen\"?",
       "o": [
-       "Platentektoniek",
        "Stollingsgesteente",
+       "Gesteentekringloop",
        "Sedimentgesteente",
        "Klimaatverandering"
       ],
@@ -136751,7 +136751,7 @@ var VAKKEN = [
        "Natuurlijke risico's",
        "Endogene processen",
        "Metamorf gesteente",
-       "Exogene processen"
+       "Mondiale spreiding"
       ],
       "c": 2,
       "u": "Het juiste begrip is «Metamorf gesteente»: omgevormd door druk en hitte marmer, leisteen.",
@@ -136761,9 +136761,9 @@ var VAKKEN = [
       "v": "Welke term past bij: \"omgevormd door druk en hitte marmer, leisteen\"?",
       "o": [
        "Exogene processen",
-       "Natuurlijke risico's",
+       "Stollingsgesteente",
        "Metamorf gesteente",
-       "Endogene processen"
+       "Natuurlijke risico's"
       ],
       "c": 2,
       "u": "Het juiste begrip is «Metamorf gesteente»: omgevormd door druk en hitte marmer, leisteen.",
@@ -137620,9 +137620,9 @@ var VAKKEN = [
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"een land met lage welvaart en beperkte industrie\"?",
       "o": [
-       "Periferiegebied",
+       "Verstedelijking",
        "Ontwikkelingsland",
-       "Ontwikkelingshulp",
+       "Bevolkingsgroei",
        "Levensverwachting"
       ],
       "c": 1,
@@ -137632,9 +137632,9 @@ var VAKKEN = [
      {
       "v": "Welke term past bij: \"een land met lage welvaart en beperkte industrie\"?",
       "o": [
-       "Verstedelijking",
+       "Periferiegebied",
        "Ontwikkelingsland",
-       "Ontwikkelingshulp",
+       "Verstedelijking",
        "Levensverwachting"
       ],
       "c": 1,
@@ -137909,7 +137909,7 @@ var VAKKEN = [
       "v": "Welk begrip hoort bij deze omschrijving: \"het gemiddeld aantal te verwachten levensjaren\"?",
       "o": [
        "Ontwikkelingsland",
-       "Ontwikkelingshulp",
+       "Periferiegebied",
        "Levensverwachting",
        "Verstedelijking"
       ],
@@ -137920,8 +137920,8 @@ var VAKKEN = [
      {
       "v": "Welke term past bij: \"het gemiddeld aantal te verwachten levensjaren\"?",
       "o": [
+       "Periferiegebied",
        "Bevolkingsgroei",
-       "Ontwikkelingsland",
        "Ontwikkelingshulp",
        "Levensverwachting"
       ],
@@ -138148,9 +138148,9 @@ var VAKKEN = [
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"steun aan armere landen\"?",
       "o": [
+       "Centrum–periferie",
+       "Verstedelijking",
        "Levensverwachting",
-       "Periferiegebied",
-       "Ontwikkelingsland",
        "Ontwikkelingshulp"
       ],
       "c": 3,
@@ -138161,8 +138161,8 @@ var VAKKEN = [
       "v": "Welke term past bij: \"steun aan armere landen\"?",
       "o": [
        "Levensverwachting",
-       "Verstedelijking",
-       "Ontwikkelingsland",
+       "Bevolkingsgroei",
+       "Periferiegebied",
        "Ontwikkelingshulp"
       ],
       "c": 3,
@@ -138353,9 +138353,9 @@ var VAKKEN = [
       "v": "Welke term past bij: \"vooruitgang zonder de toekomst uit te putten\"?",
       "o": [
        "Duurzame ontwikkeling",
-       "Regionale ongelijkheid",
+       "Economische dualiteit",
        "Regionale verschillen",
-       "Economische dualiteit"
+       "Demografische transitie"
       ],
       "c": 0,
       "u": "Het juiste begrip is «Duurzame ontwikkeling»: vooruitgang zonder de toekomst uit te putten.",
@@ -138485,9 +138485,9 @@ var VAKKEN = [
       "v": "Welk begrip hoort bij deze omschrijving: \"het model van dalende geboorte- en sterftecijfers\"?",
       "o": [
        "Regionale ongelijkheid",
-       "Duurzame ontwikkeling",
+       "Economische dualiteit",
        "Demografische transitie",
-       "Regionale verschillen"
+       "Duurzame ontwikkeling"
       ],
       "c": 2,
       "u": "Het juiste begrip is «Demografische transitie»: het model van dalende geboorte- en sterftecijfers.",
@@ -138496,10 +138496,10 @@ var VAKKEN = [
      {
       "v": "Welke term past bij: \"het model van dalende geboorte- en sterftecijfers\"?",
       "o": [
-       "Economische dualiteit",
-       "Regionale verschillen",
+       "Duurzame ontwikkeling",
+       "Regionale ongelijkheid",
        "Demografische transitie",
-       "Regionale ongelijkheid"
+       "Economische dualiteit"
       ],
       "c": 2,
       "u": "Het juiste begrip is «Demografische transitie»: het model van dalende geboorte- en sterftecijfers.",
@@ -138725,7 +138725,7 @@ var VAKKEN = [
       "v": "Welk begrip hoort bij deze omschrijving: \"de toename van het inwoneraantal\"?",
       "o": [
        "Verstedelijking",
-       "Ontwikkelingsland",
+       "Analfabetisme",
        "Periferiegebied",
        "Bevolkingsgroei"
       ],
@@ -138736,7 +138736,7 @@ var VAKKEN = [
      {
       "v": "Welke term past bij: \"de toename van het inwoneraantal\"?",
       "o": [
-       "Analfabetisme",
+       "Ontwikkelingshulp",
        "Verstedelijking",
        "Periferiegebied",
        "Bevolkingsgroei"
@@ -138869,9 +138869,9 @@ var VAKKEN = [
       "v": "Welk begrip hoort bij deze omschrijving: \"opkomend land, grote ongelijkheid\"?",
       "o": [
        "Economie",
+       "Grondstof",
        "Dimensie",
-       "Fairtrade",
-       "Grondstof"
+       "Randstad"
       ],
       "c": 0,
       "u": "Het juiste begrip is «Economie»: opkomend land, grote ongelijkheid.",
@@ -138880,9 +138880,9 @@ var VAKKEN = [
      {
       "v": "Welke term past bij: \"opkomend land, grote ongelijkheid\"?",
       "o": [
-       "Fairtrade",
        "Bevolking",
        "Grondstof",
+       "Fairtrade",
        "Economie"
       ],
       "c": 3,
@@ -138916,7 +138916,7 @@ var VAKKEN = [
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"rijk zuidoosten vs. arm noordoosten\"?",
       "o": [
-       "Regionale ongelijkheid",
+       "Economische dualiteit",
        "Demografische transitie",
        "Regionale verschillen",
        "Duurzame ontwikkeling"
@@ -138929,8 +138929,8 @@ var VAKKEN = [
       "v": "Welke term past bij: \"rijk zuidoosten vs. arm noordoosten\"?",
       "o": [
        "Demografische transitie",
-       "Regionale ongelijkheid",
        "Economische dualiteit",
+       "Duurzame ontwikkeling",
        "Regionale verschillen"
       ],
       "c": 3,
@@ -139691,10 +139691,10 @@ var VAKKEN = [
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"de bewuste inrichting van de ruimte\"?",
       "o": [
+       "Meerlaagse veiligheid",
        "Stedelijke gebieden",
-       "Caribisch Nederland",
        "Ruimtelijke ordening",
-       "Meerlaagse veiligheid"
+       "Caribisch Nederland"
       ],
       "c": 2,
       "u": "Het juiste begrip is «Ruimtelijke ordening»: de bewuste inrichting van de ruimte.",
@@ -139703,10 +139703,10 @@ var VAKKEN = [
      {
       "v": "Welke term past bij: \"de bewuste inrichting van de ruimte\"?",
       "o": [
-       "Caribisch Nederland",
+       "Stedelijke gebieden",
        "Ruimtelijke ordening",
        "Meerlaagse veiligheid",
-       "Stedelijke gebieden"
+       "Caribisch Nederland"
       ],
       "c": 1,
       "u": "Het juiste begrip is «Ruimtelijke ordening»: de bewuste inrichting van de ruimte.",
@@ -139727,9 +139727,9 @@ var VAKKEN = [
      {
       "v": "Wat betekent «Suburbanisatie»?",
       "o": [
-       "een gesloten systeem van aaneengesloten dijken",
-       "de concurrentie om schaarse ruimte tussen functies",
+       "rivieren meer ruimte geven voor de waterafvoer",
        "de bescherming van de bevolking tegen wateroverlast",
+       "een gebied dat tijdelijk overtollig water bergt",
        "de trek van de stad naar de rand of het ommeland"
       ],
       "c": 3,
@@ -139764,7 +139764,7 @@ var VAKKEN = [
       "v": "Wat houdt «Suburbanisatie» in?",
       "o": [
        "rivieren meer ruimte geven voor de waterafvoer",
-       "de bescherming van de bevolking tegen wateroverlast",
+       "een gesloten systeem van aaneengesloten dijken",
        "een grootschalige nieuwbouwwijk aan de stadsrand",
        "de trek van de stad naar de rand of het ommeland"
       ],
@@ -139871,10 +139871,10 @@ var VAKKEN = [
      {
       "v": "Wat betekent «Urbanisatie»?",
       "o": [
-       "het bundelen van bebouwing om open ruimte te sparen",
+       "de concurrentie om schaarse ruimte tussen functies",
        "het aanpassen aan de gevolgen van klimaatverandering",
        "de trek van mensen van het platteland naar de stad",
-       "een gebied dat tijdelijk overtollig water bergt"
+       "de groei van het stedelijke aandeel van de bevolking"
       ],
       "c": 2,
       "u": "«Urbanisatie» betekent: de trek van mensen van het platteland naar de stad.",
@@ -139907,10 +139907,10 @@ var VAKKEN = [
      {
       "v": "Wat houdt «Urbanisatie» in?",
       "o": [
-       "een grootschalige nieuwbouwwijk aan de stadsrand",
-       "de trek van mensen van het platteland naar de stad",
        "de concurrentie om schaarse ruimte tussen functies",
-       "de bescherming van de bevolking tegen wateroverlast"
+       "de trek van mensen van het platteland naar de stad",
+       "het vertakte mondingsgebied van een rivier in zee",
+       "de opwaardering van een buurt met welvarender bewoners"
       ],
       "c": 1,
       "u": "«Urbanisatie» betekent: de trek van mensen van het platteland naar de stad.",
@@ -140976,9 +140976,9 @@ var VAKKEN = [
       "v": "Welke term past bij: \"overstromingsrisico, dijken, ruimte voor water\"?",
       "o": [
        "Water & veiligheid",
+       "Caribisch Nederland",
        "Stedelijke gebieden",
-       "Ruimtelijke ordening",
-       "Caribisch Nederland"
+       "Ruimtelijke ordening"
       ],
       "c": 0,
       "u": "Het juiste begrip is «Water & veiligheid»: overstromingsrisico, dijken, ruimte voor water.",
@@ -142102,8 +142102,8 @@ var VAKKEN = [
      {
       "v": "Wat houdt «Productiefactoren» in?",
       "o": [
-       "het totaal aan middelen dat iemand heeft",
        "vóór belasting, premies, subsidies en uitkeringen",
+       "het totaal aan middelen dat iemand heeft",
        "ook immateriële zaken: gezondheid, onderwijs, milieu, geluk",
        "arbeid, natuur, kapitaal en ondernemerschap"
       ],
@@ -143017,7 +143017,7 @@ var VAKKEN = [
        "Opportuniteitskosten",
        "Overdrachtsinkomen",
        "Arbeidsproductiviteit",
-       "Frictiewerkloosheid"
+       "Herverdelingsfunctie"
       ],
       "c": 2,
       "u": "Het juiste begrip is «Arbeidsproductiviteit»: de gemiddelde productie per werknemer per tijdseenheid; te verhogen via scholing, specialisatie en kapitaalgoederen.",
@@ -143230,10 +143230,10 @@ var VAKKEN = [
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"alleen het materiële, gemeten met het bbp\"?",
       "o": [
-       "Human Development Index (HDI)",
-       "Welvaart in enge zin",
        "Bruto toegevoegde waarde",
-       "Welvaart in brede zin"
+       "Welvaart in enge zin",
+       "Recessie / depressie",
+       "Human Development Index (HDI)"
       ],
       "c": 1,
       "u": "Het juiste begrip is «Welvaart in enge zin»: alleen het materiële, gemeten met het bbp.",
@@ -143242,9 +143242,9 @@ var VAKKEN = [
      {
       "v": "Welke term past bij: \"alleen het materiële, gemeten met het bbp\"?",
       "o": [
-       "Welvaart in brede zin",
-       "Welvaart in enge zin",
        "Human Development Index (HDI)",
+       "Welvaart in enge zin",
+       "Netto toegevoegde waarde",
        "Bruto toegevoegde waarde"
       ],
       "c": 1,
@@ -143278,10 +143278,10 @@ var VAKKEN = [
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"ook immateriële zaken: gezondheid, onderwijs, milieu, geluk\"?",
       "o": [
+       "Bruto toegevoegde waarde",
        "Netto toegevoegde waarde",
-       "Human Development Index (HDI)",
        "Welvaart in brede zin",
-       "Welvaart in enge zin"
+       "Human Development Index (HDI)"
       ],
       "c": 2,
       "u": "Het juiste begrip is «Welvaart in brede zin»: ook immateriële zaken: gezondheid, onderwijs, milieu, geluk.",
@@ -143290,10 +143290,10 @@ var VAKKEN = [
      {
       "v": "Welke term past bij: \"ook immateriële zaken: gezondheid, onderwijs, milieu, geluk\"?",
       "o": [
-       "Welvaart in enge zin",
+       "Bruto toegevoegde waarde",
        "Welvaart in brede zin",
        "Human Development Index (HDI)",
-       "Bruto toegevoegde waarde"
+       "Netto toegevoegde waarde"
       ],
       "c": 1,
       "u": "Het juiste begrip is «Welvaart in brede zin»: ook immateriële zaken: gezondheid, onderwijs, milieu, geluk.",
@@ -143326,7 +143326,7 @@ var VAKKEN = [
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"meet ontwikkeling via inkomen per hoofd, levensverwachting en onderwijsniveau\"?",
       "o": [
-       "Verschuiving lángs de vraaglijn",
+       "Factoren voor de rentehoogte",
        "Human Development Index (HDI)",
        "Verschuiving ván de vraaglijn",
        "Welvaart in brede zin"
@@ -143338,10 +143338,10 @@ var VAKKEN = [
      {
       "v": "Welke term past bij: \"meet ontwikkeling via inkomen per hoofd, levensverwachting en onderwijsniveau\"?",
       "o": [
-       "Welvaart in enge zin",
+       "Netto toegevoegde waarde",
        "Welvaart in brede zin",
        "Human Development Index (HDI)",
-       "Netto toegevoegde waarde"
+       "Bruto toegevoegde waarde"
       ],
       "c": 2,
       "u": "Het juiste begrip is «Human Development Index (HDI)»: meet ontwikkeling via inkomen per hoofd, levensverwachting en onderwijsniveau.",
@@ -144157,7 +144157,7 @@ var VAKKEN = [
       "o": [
        "het verschil tussen betalingsbereidheid en betaalde prijs",
        "markt met weinig aanbieders en verschillende producten",
-       "markt met veel aanbieders en licht verschillende producten",
+       "vraag die sterk reageert op een prijsverandering (|Ev| > 1)",
        "de gevoeligheid van de vraag voor een prijsverandering"
       ],
       "c": 3,
@@ -144204,8 +144204,8 @@ var VAKKEN = [
       "v": "Wat betekent «Substituut»?",
       "o": [
        "noodzakelijk goed",
-       "een markt met één aanbieder, een homogeen product en moeilijke toetreding",
        "inferieur goed",
+       "rente alleen over de hoofdsom",
        "een vervangend goed"
       ],
       "c": 3,
@@ -144239,9 +144239,9 @@ var VAKKEN = [
      {
       "v": "Wat houdt «Substituut» in?",
       "o": [
-       "inferieur goed",
+       "meer aanbod dan vraag bij een prijs",
        "noodzakelijk goed",
-       "een markt met één aanbieder, een homogeen product en moeilijke toetreding",
+       "inferieur goed",
        "een vervangend goed"
       ],
       "c": 3,
@@ -144266,7 +144266,7 @@ var VAKKEN = [
        "Inelastische vraag",
        "Accijns (heffing)",
        "Complementair goed",
-       "Elastische vraag"
+       "Homogeen oligopolie"
       ],
       "c": 2,
       "u": "Het juiste begrip is «Complementair goed»: een goed dat je samen met een ander gebruikt.",
@@ -144311,10 +144311,10 @@ var VAKKEN = [
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"meer aanbod dan vraag bij een prijs\"?",
       "o": [
-       "Contractvormen",
+       "Prijselasticiteit",
        "Evenwichtsprijs",
        "Aanbodoverschot",
-       "Evenwichtsloon"
+       "Contractvormen"
       ],
       "c": 2,
       "u": "Het juiste begrip is «Aanbodoverschot»: meer aanbod dan vraag bij een prijs.",
@@ -144323,10 +144323,10 @@ var VAKKEN = [
      {
       "v": "Welke term past bij: \"meer aanbod dan vraag bij een prijs\"?",
       "o": [
-       "Evenwichtsloon",
+       "Contractvormen",
        "Evenwichtsprijs",
        "Aanbodoverschot",
-       "Contractvormen"
+       "Minimumprijs"
       ],
       "c": 2,
       "u": "Het juiste begrip is «Aanbodoverschot»: meer aanbod dan vraag bij een prijs.",
@@ -144359,10 +144359,10 @@ var VAKKEN = [
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"de strijd tussen aanbieders om de klant\"?",
       "o": [
-       "Maximumprijs",
+       "Contractvormen",
        "Minimumprijs",
        "Concurrentie",
-       "Contractvormen"
+       "Oligopolie"
       ],
       "c": 2,
       "u": "Het juiste begrip is «Concurrentie»: de strijd tussen aanbieders om de klant.",
@@ -144372,8 +144372,8 @@ var VAKKEN = [
       "v": "Welke term past bij: \"de strijd tussen aanbieders om de klant\"?",
       "o": [
        "Minimumprijs",
-       "Maximumprijs",
        "Contractvormen",
+       "Evenwichtsprijs",
        "Concurrentie"
       ],
       "c": 3,
@@ -144395,10 +144395,10 @@ var VAKKEN = [
      {
       "v": "Wat betekent «Monopolistische concurrentie»?",
       "o": [
+       "de gevraagde hoeveelheid verandert door een prijsverandering",
        "het verschil tussen betalingsbereidheid en betaalde prijs",
-       "de gevoeligheid van de vraag voor een prijsverandering",
        "markt met veel aanbieders en licht verschillende producten",
-       "vraag die sterk reageert op een prijsverandering (|Ev| > 1)"
+       "de gevoeligheid van de vraag voor een prijsverandering"
       ],
       "c": 2,
       "u": "«Monopolistische concurrentie» betekent: markt met veel aanbieders en licht verschillende producten.",
@@ -144407,8 +144407,8 @@ var VAKKEN = [
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"markt met veel aanbieders en licht verschillende producten\"?",
       "o": [
-       "Secundaire inkomensverdeling",
-       "Progressief belastingstelsel",
+       "Automatische stabilisatoren",
+       "Anticyclisch begrotingsbeleid",
        "Free-rider (meelifter)",
        "Monopolistische concurrentie"
       ],
@@ -144432,9 +144432,9 @@ var VAKKEN = [
       "v": "Wat houdt «Monopolistische concurrentie» in?",
       "o": [
        "markt met veel aanbieders en licht verschillende producten",
+       "de gevraagde hoeveelheid verandert door een prijsverandering",
        "de gevoeligheid van de vraag voor een prijsverandering",
-       "het verschil tussen betalingsbereidheid en betaalde prijs",
-       "de gevraagde hoeveelheid verandert door een prijsverandering"
+       "vraag die sterk reageert op een prijsverandering (|Ev| > 1)"
       ],
       "c": 0,
       "u": "«Monopolistische concurrentie» betekent: markt met veel aanbieders en licht verschillende producten.",
@@ -144443,9 +144443,9 @@ var VAKKEN = [
      {
       "v": "Wat betekent «Heterogeen oligopolie»?",
       "o": [
-       "vraag die sterk reageert op een prijsverandering (|Ev| > 1)",
-       "markt met weinig aanbieders en verschillende producten",
        "het verschil tussen betalingsbereidheid en betaalde prijs",
+       "markt met weinig aanbieders en verschillende producten",
+       "de gevoeligheid van de vraag voor een prijsverandering",
        "een markt met veel kleine aanbieders zonder prijsmacht"
       ],
       "c": 1,
@@ -144479,7 +144479,7 @@ var VAKKEN = [
      {
       "v": "Wat houdt «Heterogeen oligopolie» in?",
       "o": [
-       "vraag die sterk reageert op een prijsverandering (|Ev| > 1)",
+       "de gevoeligheid van de vraag voor een prijsverandering",
        "een markt met veel kleine aanbieders zonder prijsmacht",
        "het verschil tussen betalingsbereidheid en betaalde prijs",
        "markt met weinig aanbieders en verschillende producten"
@@ -144494,7 +144494,7 @@ var VAKKEN = [
        "een markt met veel kleine aanbieders zonder prijsmacht",
        "markt met veel aanbieders en licht verschillende producten",
        "markt met weinig aanbieders en vrijwel identieke producten",
-       "de gevraagde hoeveelheid verandert door een prijsverandering"
+       "het verschil tussen betalingsbereidheid en betaalde prijs"
       ],
       "c": 2,
       "u": "«Homogeen oligopolie» betekent: markt met weinig aanbieders en vrijwel identieke producten.",
@@ -144527,10 +144527,10 @@ var VAKKEN = [
      {
       "v": "Wat houdt «Homogeen oligopolie» in?",
       "o": [
-       "de gevraagde hoeveelheid verandert door een prijsverandering",
+       "vraag die sterk reageert op een prijsverandering (|Ev| > 1)",
        "markt met weinig aanbieders en vrijwel identieke producten",
-       "het verschil tussen betalingsbereidheid en betaalde prijs",
-       "vraag die sterk reageert op een prijsverandering (|Ev| > 1)"
+       "het maximale bedrag dat een consument voor een goed wil betalen",
+       "een prijsplafond onder het evenwicht, dat een tekort veroorzaakt"
       ],
       "c": 1,
       "u": "«Homogeen oligopolie» betekent: markt met weinig aanbieders en vrijwel identieke producten.",
@@ -144565,7 +144565,7 @@ var VAKKEN = [
       "o": [
        "Evenwichtsprijs",
        "Aanbodoverschot",
-       "Evenwichtsloon",
+       "Contractvormen",
        "Prijselasticiteit"
       ],
       "c": 0,
@@ -144588,7 +144588,7 @@ var VAKKEN = [
       "v": "Wat betekent «Elastische vraag»?",
       "o": [
        "de gevoeligheid van de vraag voor een prijsverandering",
-       "vraag die nauwelijks reageert op een prijsverandering (|Ev| < 1)",
+       "het verschil tussen betalingsbereidheid en betaalde prijs",
        "vraag die sterk reageert op een prijsverandering (|Ev| > 1)",
        "markt met weinig aanbieders en vrijwel identieke producten"
       ],
@@ -144624,8 +144624,8 @@ var VAKKEN = [
       "v": "Wat houdt «Elastische vraag» in?",
       "o": [
        "vraag die sterk reageert op een prijsverandering (|Ev| > 1)",
-       "iemand die van een goed profiteert zonder eraan mee te betalen",
        "de gevraagde hoeveelheid verandert door een prijsverandering",
+       "het verschil tussen betalingsbereidheid en betaalde prijs",
        "markt met veel aanbieders en licht verschillende producten"
       ],
       "c": 0,
@@ -144635,9 +144635,9 @@ var VAKKEN = [
      {
       "v": "Wat betekent «Inelastische vraag»?",
       "o": [
-       "iemand die van een goed profiteert zonder eraan mee te betalen",
+       "het verschil tussen betalingsbereidheid en betaalde prijs",
+       "een markt met weinig grote aanbieders die elkaar in de gaten houden",
        "een prijsbodem boven het evenwicht, die een overschot veroorzaakt",
-       "een prijsplafond onder het evenwicht, dat een tekort veroorzaakt",
        "vraag die nauwelijks reageert op een prijsverandering (|Ev| < 1)"
       ],
       "c": 3,
@@ -144672,8 +144672,8 @@ var VAKKEN = [
       "v": "Wat houdt «Inelastische vraag» in?",
       "o": [
        "een prijsbodem boven het evenwicht, die een overschot veroorzaakt",
+       "iemand die van een goed profiteert zonder eraan mee te betalen",
        "het maximale bedrag dat een consument voor een goed wil betalen",
-       "een prijsplafond onder het evenwicht, dat een tekort veroorzaakt",
        "vraag die nauwelijks reageert op een prijsverandering (|Ev| < 1)"
       ],
       "c": 3,
@@ -144684,7 +144684,7 @@ var VAKKEN = [
       "v": "Wat betekent «Extern effect»?",
       "o": [
        "de prijs waarbij de gevraagde en aangeboden hoeveelheid gelijk zijn",
-       "een goed dat de overheid stimuleert omdat er te weinig van wordt geproduceerd",
+       "een markt met één aanbieder, een homogeen product en moeilijke toetreding",
        "vraag die nauwelijks reageert op een prijsverandering (|Ev| < 1)",
        "kosten of baten van een transactie die derden treffen buiten de prijs"
       ],
@@ -144719,10 +144719,10 @@ var VAKKEN = [
      {
       "v": "Wat houdt «Extern effect» in?",
       "o": [
-       "vraag die nauwelijks reageert op een prijsverandering (|Ev| < 1)",
+       "een markt met één aanbieder, een homogeen product en moeilijke toetreding",
        "kosten of baten van een transactie die derden treffen buiten de prijs",
-       "een prijsbodem boven het evenwicht, die een overschot veroorzaakt",
-       "iemand die van een goed profiteert zonder eraan mee te betalen"
+       "iemand die van een goed profiteert zonder eraan mee te betalen",
+       "vraag die nauwelijks reageert op een prijsverandering (|Ev| < 1)"
       ],
       "c": 1,
       "u": "«Extern effect» betekent: kosten of baten van een transactie die derden treffen buiten de prijs.",
@@ -144731,9 +144731,9 @@ var VAKKEN = [
      {
       "v": "Wat betekent «Oligopolie»?",
       "o": [
-       "het maximale bedrag dat een consument voor een goed wil betalen",
-       "kosten of baten van een transactie die derden treffen buiten de prijs",
+       "de prijs waarbij de gevraagde en aangeboden hoeveelheid gelijk zijn",
        "een prijsbodem boven het evenwicht, die een overschot veroorzaakt",
+       "vraag die nauwelijks reageert op een prijsverandering (|Ev| < 1)",
        "een markt met weinig grote aanbieders die elkaar in de gaten houden"
       ],
       "c": 3,
@@ -144767,10 +144767,10 @@ var VAKKEN = [
      {
       "v": "Wat houdt «Oligopolie» in?",
       "o": [
-       "een prijsbodem boven het evenwicht, die een overschot veroorzaakt",
        "de prijs waarbij de gevraagde en aangeboden hoeveelheid gelijk zijn",
+       "een markt met één aanbieder, een homogeen product en moeilijke toetreding",
        "een markt met weinig grote aanbieders die elkaar in de gaten houden",
-       "het maximale bedrag dat een consument voor een goed wil betalen"
+       "vraag die nauwelijks reageert op een prijsverandering (|Ev| < 1)"
       ],
       "c": 2,
       "u": "«Oligopolie» betekent: een markt met weinig grote aanbieders die elkaar in de gaten houden.",
@@ -144792,8 +144792,8 @@ var VAKKEN = [
       "v": "Welk begrip hoort bij deze omschrijving: \"een prijsplafond onder het evenwicht, dat een tekort veroorzaakt\"?",
       "o": [
        "Oligopolie",
+       "Contractvormen",
        "Concurrentie",
-       "Minimumprijs",
        "Maximumprijs"
       ],
       "c": 3,
@@ -144806,7 +144806,7 @@ var VAKKEN = [
        "Concurrentie",
        "Oligopolie",
        "Maximumprijs",
-       "Minimumprijs"
+       "Contractvormen"
       ],
       "c": 2,
       "u": "Het juiste begrip is «Maximumprijs»: een prijsplafond onder het evenwicht, dat een tekort veroorzaakt.",
@@ -144840,9 +144840,9 @@ var VAKKEN = [
       "v": "Welk begrip hoort bij deze omschrijving: \"een prijsbodem boven het evenwicht, die een overschot veroorzaakt\"?",
       "o": [
        "Minimumprijs",
-       "Concurrentie",
-       "Werkloosheid",
-       "Maximumprijs"
+       "Herverdeling",
+       "Risico-avers",
+       "Concurrentie"
       ],
       "c": 0,
       "u": "Het juiste begrip is «Minimumprijs»: een prijsbodem boven het evenwicht, die een overschot veroorzaakt.",
@@ -144851,7 +144851,7 @@ var VAKKEN = [
      {
       "v": "Welke term past bij: \"een prijsbodem boven het evenwicht, die een overschot veroorzaakt\"?",
       "o": [
-       "Maximumprijs",
+       "Contractvormen",
        "Concurrentie",
        "Oligopolie",
        "Minimumprijs"
@@ -144959,10 +144959,10 @@ var VAKKEN = [
      {
       "v": "Wat houdt «Meritgoed» in?",
       "o": [
-       "het welvaartsverlies dat ontstaat door een prijsmaatregel van de overheid",
-       "een goed dat de overheid stimuleert omdat er te weinig van wordt geproduceerd",
        "niet-uitsluitbaar én niet-rivaliserend (bijv. dijken); de markt levert dit niet",
-       "de Autoriteit Consument en Markt; verbiedt kartels en grijpt in bij misbruik van marktmacht"
+       "een goed dat de overheid stimuleert omdat er te weinig van wordt geproduceerd",
+       "een markt met één aanbieder, een homogeen product en moeilijke toetreding",
+       "het welvaartsverlies dat ontstaat door een prijsmaatregel van de overheid"
       ],
       "c": 1,
       "u": "«Meritgoed» betekent: een goed dat de overheid stimuleert omdat er te weinig van wordt geproduceerd.",
@@ -145019,8 +145019,8 @@ var VAKKEN = [
      {
       "v": "Wat betekent «Inkomenselasticiteit 0 tot 1»?",
       "o": [
-       "een markt met één aanbieder, een homogeen product en moeilijke toetreding",
        "inferieur goed",
+       "rente en huur",
        "een vervangend goed",
        "noodzakelijk goed"
       ],
@@ -145031,9 +145031,9 @@ var VAKKEN = [
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"noodzakelijk goed\"?",
       "o": [
-       "Verschuiving lángs de vraaglijn",
-       "Inkomenselasticiteit 0 tot 1",
        "Human Development Index (HDI)",
+       "Inkomenselasticiteit 0 tot 1",
+       "Factoren voor de rentehoogte",
        "Verschuiving ván de vraaglijn"
       ],
       "c": 1,
@@ -145043,9 +145043,9 @@ var VAKKEN = [
      {
       "v": "Welke term past bij: \"noodzakelijk goed\"?",
       "o": [
-       "Monopolistische concurrentie",
+       "Positief extern effect",
        "Verschuiving ván de vraaglijn",
-       "Verschuiving lángs de vraaglijn",
+       "Monopolistische concurrentie",
        "Inkomenselasticiteit 0 tot 1"
       ],
       "c": 3,
@@ -145055,10 +145055,10 @@ var VAKKEN = [
      {
       "v": "Wat houdt «Inkomenselasticiteit 0 tot 1» in?",
       "o": [
-       "een vervangend goed",
+       "inferieur goed",
        "noodzakelijk goed",
-       "een markt met één aanbieder, een homogeen product en moeilijke toetreding",
-       "inferieur goed"
+       "een vervangend goed",
+       "meer aanbod dan vraag bij een prijs"
       ],
       "c": 1,
       "u": "«Inkomenselasticiteit 0 tot 1» betekent: noodzakelijk goed.",
@@ -145106,7 +145106,7 @@ var VAKKEN = [
        "noodzakelijk goed",
        "inferieur goed",
        "een vervangend goed",
-       "een markt met één aanbieder, een homogeen product en moeilijke toetreding"
+       "substituten (bijv. cola en Pepsi)"
       ],
       "c": 1,
       "u": "«Inkomenselasticiteit < 0» betekent: inferieur goed.",
@@ -145127,10 +145127,10 @@ var VAKKEN = [
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"substituten (bijv. cola en Pepsi)\"?",
       "o": [
-       "Kruislingse elasticiteit negatief",
-       "Inkomenselasticiteit < 0",
+       "Onderbesteding (negatieve spiraal)",
+       "Structurele economische groei",
        "Kruislingse elasticiteit positief",
-       "Onderbesteding (negatieve spiraal)"
+       "Inkomenselasticiteit < 0"
       ],
       "c": 2,
       "u": "Het juiste begrip is «Kruislingse elasticiteit positief»: substituten (bijv. cola en Pepsi).",
@@ -145140,9 +145140,9 @@ var VAKKEN = [
       "v": "Welke term past bij: \"substituten (bijv. cola en Pepsi)\"?",
       "o": [
        "Kruislingse elasticiteit positief",
+       "Monopolistische concurrentie",
        "Inkomenselasticiteit < 0",
-       "Verschuiving lángs de vraaglijn",
-       "Kruislingse elasticiteit negatief"
+       "Verschuiving lángs de vraaglijn"
       ],
       "c": 0,
       "u": "Het juiste begrip is «Kruislingse elasticiteit positief»: substituten (bijv. cola en Pepsi).",
@@ -145175,9 +145175,9 @@ var VAKKEN = [
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"complementen (bijv. koffie en suiker)\"?",
       "o": [
-       "Onderbesteding (negatieve spiraal)",
-       "Kruislingse elasticiteit positief",
        "Verschuiving lángs de vraaglijn",
+       "Onderbesteding (negatieve spiraal)",
+       "Structurele economische groei",
        "Kruislingse elasticiteit negatief"
       ],
       "c": 3,
@@ -145187,10 +145187,10 @@ var VAKKEN = [
      {
       "v": "Welke term past bij: \"complementen (bijv. koffie en suiker)\"?",
       "o": [
-       "Kruislingse elasticiteit positief",
-       "Kruislingse elasticiteit negatief",
        "Verschuiving lángs de vraaglijn",
-       "Inkomenselasticiteit < 0"
+       "Kruislingse elasticiteit negatief",
+       "Inkomenselasticiteit < 0",
+       "Monopolistische concurrentie"
       ],
       "c": 1,
       "u": "Het juiste begrip is «Kruislingse elasticiteit negatief»: complementen (bijv. koffie en suiker).",
@@ -145211,10 +145211,10 @@ var VAKKEN = [
      {
       "v": "Wat betekent «Monopolie»?",
       "o": [
-       "inferieur goed",
+       "niet-uitsluitbaar én niet-rivaliserend (bijv. dijken); de markt levert dit niet",
        "een markt met één aanbieder, een homogeen product en moeilijke toetreding",
-       "een vervangend goed",
-       "noodzakelijk goed"
+       "het welvaartsverlies dat ontstaat door een prijsmaatregel van de overheid",
+       "een prijsplafond onder het evenwicht, dat een tekort veroorzaakt"
       ],
       "c": 1,
       "u": "«Monopolie» betekent: een markt met één aanbieder, een homogeen product en moeilijke toetreding.",
@@ -145223,12 +145223,12 @@ var VAKKEN = [
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"een markt met één aanbieder, een homogeen product en moeilijke toetreding\"?",
       "o": [
-       "Meritgoed",
-       "Subsidie",
+       "Substituut",
        "Monopolie",
-       "Oligopolie"
+       "Oligopolie",
+       "Meritgoed"
       ],
-      "c": 2,
+      "c": 1,
       "u": "Het juiste begrip is «Monopolie»: een markt met één aanbieder, een homogeen product en moeilijke toetreding.",
       "d": 2
      },
@@ -145236,21 +145236,21 @@ var VAKKEN = [
       "v": "Welke term past bij: \"een markt met één aanbieder, een homogeen product en moeilijke toetreding\"?",
       "o": [
        "Oligopolie",
-       "Monopolie",
        "Meritgoed",
-       "Subsidie"
+       "Substituut",
+       "Monopolie"
       ],
-      "c": 1,
+      "c": 3,
       "u": "Het juiste begrip is «Monopolie»: een markt met één aanbieder, een homogeen product en moeilijke toetreding.",
       "d": 3
      },
      {
       "v": "Wat houdt «Monopolie» in?",
       "o": [
-       "een vervangend goed",
-       "noodzakelijk goed",
+       "het welvaartsverlies dat ontstaat door een prijsmaatregel van de overheid",
+       "kosten of baten van een transactie die derden treffen buiten de prijs",
        "een markt met één aanbieder, een homogeen product en moeilijke toetreding",
-       "inferieur goed"
+       "een goed dat de overheid stimuleert omdat er te weinig van wordt geproduceerd"
       ],
       "c": 2,
       "u": "«Monopolie» betekent: een markt met één aanbieder, een homogeen product en moeilijke toetreding.",
@@ -145319,10 +145319,10 @@ var VAKKEN = [
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"de gevraagde hoeveelheid verandert door een prijsverandering\"?",
       "o": [
-       "Verschuiving ván de vraaglijn",
+       "Inkomenselasticiteit 0 tot 1",
        "Verschuiving lángs de vraaglijn",
-       "Factoren voor de rentehoogte",
-       "Inkomenselasticiteit 0 tot 1"
+       "Human Development Index (HDI)",
+       "Factoren voor de rentehoogte"
       ],
       "c": 1,
       "u": "Het juiste begrip is «Verschuiving lángs de vraaglijn»: de gevraagde hoeveelheid verandert door een prijsverandering.",
@@ -145331,10 +145331,10 @@ var VAKKEN = [
      {
       "v": "Welke term past bij: \"de gevraagde hoeveelheid verandert door een prijsverandering\"?",
       "o": [
-       "Verschuiving ván de vraaglijn",
-       "Verschuiving lángs de vraaglijn",
        "Inkomenselasticiteit 0 tot 1",
-       "Kruislingse elasticiteit negatief"
+       "Verschuiving lángs de vraaglijn",
+       "Kruislingse elasticiteit negatief",
+       "Negatief extern effect"
       ],
       "c": 1,
       "u": "Het juiste begrip is «Verschuiving lángs de vraaglijn»: de gevraagde hoeveelheid verandert door een prijsverandering.",
@@ -145346,7 +145346,7 @@ var VAKKEN = [
        "de gevraagde hoeveelheid verandert door een prijsverandering",
        "markt met veel aanbieders en licht verschillende producten",
        "vraag die sterk reageert op een prijsverandering (|Ev| > 1)",
-       "vraag die nauwelijks reageert op een prijsverandering (|Ev| < 1)"
+       "markt met weinig aanbieders en vrijwel identieke producten"
       ],
       "c": 0,
       "u": "«Verschuiving lángs de vraaglijn» betekent: de gevraagde hoeveelheid verandert door een prijsverandering.",
@@ -145357,7 +145357,7 @@ var VAKKEN = [
       "o": [
        "de hele lijn schuift door iets anders dan de prijs: budget, behoeften, aantal consumenten, prijs van een substituut of complement",
        "onbedoeld nadeel voor derden (vervuiling); leidt tot overproductie. Overheid corrigeert met belasting of regels (internaliseren)",
-       "een indirecte belasting; verhoogt de productiekosten, de aanbodlijn schuift naar links → hogere prijs, lagere hoeveelheid",
+       "overzicht van alle transacties met het buitenland: lopende rekening (goederen, diensten, inkomens) en financiële rekening",
        "een bijdrage aan producenten; verlaagt de productiekosten, de aanbodlijn schuift naar rechts → lagere prijs, hogere hoeveelheid"
       ],
       "c": 0,
@@ -145367,9 +145367,9 @@ var VAKKEN = [
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"de hele lijn schuift door iets anders dan de prijs: budget, behoeften, aantal consumenten, prijs van een substituut of complement\"?",
       "o": [
-       "Verschuiving lángs de vraaglijn",
-       "Verschuiving ván de vraaglijn",
        "Factoren voor de rentehoogte",
+       "Verschuiving ván de vraaglijn",
+       "Human Development Index (HDI)",
        "Inkomenselasticiteit 0 tot 1"
       ],
       "c": 1,
@@ -145380,8 +145380,8 @@ var VAKKEN = [
       "v": "Welke term past bij: \"de hele lijn schuift door iets anders dan de prijs: budget, behoeften, aantal consumenten, prijs van een substituut of complement\"?",
       "o": [
        "Verschuiving ván de vraaglijn",
+       "Monopolistische concurrentie",
        "Kruislingse elasticiteit negatief",
-       "Verschuiving lángs de vraaglijn",
        "Inkomenselasticiteit 0 tot 1"
       ],
       "c": 0,
@@ -145463,10 +145463,10 @@ var VAKKEN = [
      {
       "v": "Wat houdt «Harberger-driehoek» in?",
       "o": [
-       "een goed dat de overheid stimuleert omdat er te weinig van wordt geproduceerd",
-       "het welvaartsverlies dat ontstaat door een prijsmaatregel van de overheid",
        "niet-uitsluitbaar én niet-rivaliserend (bijv. dijken); de markt levert dit niet",
-       "kosten of baten van een transactie die derden treffen buiten de prijs"
+       "het welvaartsverlies dat ontstaat door een prijsmaatregel van de overheid",
+       "kosten of baten van een transactie die derden treffen buiten de prijs",
+       "een markt met één aanbieder, een homogeen product en moeilijke toetreding"
       ],
       "c": 1,
       "u": "«Harberger-driehoek» betekent: het welvaartsverlies dat ontstaat door een prijsmaatregel van de overheid.",
@@ -145476,9 +145476,9 @@ var VAKKEN = [
       "v": "Wat betekent «Accijns (heffing)»?",
       "o": [
        "onbedoeld nadeel voor derden (vervuiling); leidt tot overproductie. Overheid corrigeert met belasting of regels (internaliseren)",
-       "schaalvoordelen, hoge investeringen of wettelijke beperkingen die nieuwkomers tegenhouden en zo de marktmacht beschermen",
+       "onbedoeld voordeel voor derden (onderwijs); leidt tot te weinig productie. Overheid stimuleert met subsidie",
        "een indirecte belasting; verhoogt de productiekosten, de aanbodlijn schuift naar links → hogere prijs, lagere hoeveelheid",
-       "een bijdrage aan producenten; verlaagt de productiekosten, de aanbodlijn schuift naar rechts → lagere prijs, hogere hoeveelheid"
+       "schaalvoordelen, hoge investeringen of wettelijke beperkingen die nieuwkomers tegenhouden en zo de marktmacht beschermen"
       ],
       "c": 2,
       "u": "«Accijns (heffing)» betekent: een indirecte belasting; verhoogt de productiekosten, de aanbodlijn schuift naar links → hogere prijs, lagere hoeveelheid.",
@@ -145487,8 +145487,8 @@ var VAKKEN = [
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"een indirecte belasting; verhoogt de productiekosten, de aanbodlijn schuift naar links → hogere prijs, lagere hoeveelheid\"?",
       "o": [
-       "Inelastische vraag",
        "Homogeen oligopolie",
+       "Complementair goed",
        "Elastische vraag",
        "Accijns (heffing)"
       ],
@@ -145500,7 +145500,7 @@ var VAKKEN = [
       "v": "Welke term past bij: \"een indirecte belasting; verhoogt de productiekosten, de aanbodlijn schuift naar links → hogere prijs, lagere hoeveelheid\"?",
       "o": [
        "Elastische vraag",
-       "Inelastische vraag",
+       "Totaal surplus",
        "Accijns (heffing)",
        "Complementair goed"
       ],
@@ -145511,9 +145511,9 @@ var VAKKEN = [
      {
       "v": "Wat houdt «Accijns (heffing)» in?",
       "o": [
-       "vakbonden, cao’s, ondernemingsraden en het minimumloon; beschermen werknemers maar kunnen de markt ook beperken",
+       "de Autoriteit Financiële Markten; houdt toezicht op banken, verzekeraars, pensioenfondsen en beleggen",
        "schaalvoordelen, hoge investeringen of wettelijke beperkingen die nieuwkomers tegenhouden en zo de marktmacht beschermen",
-       "onbedoeld nadeel voor derden (vervuiling); leidt tot overproductie. Overheid corrigeert met belasting of regels (internaliseren)",
+       "onbedoeld voordeel voor derden (onderwijs); leidt tot te weinig productie. Overheid stimuleert met subsidie",
        "een indirecte belasting; verhoogt de productiekosten, de aanbodlijn schuift naar links → hogere prijs, lagere hoeveelheid"
       ],
       "c": 3,
@@ -145523,9 +145523,9 @@ var VAKKEN = [
      {
       "v": "Wat betekent «Subsidie»?",
       "o": [
-       "vakbonden, cao’s, ondernemingsraden en het minimumloon; beschermen werknemers maar kunnen de markt ook beperken",
+       "schaalvoordelen, hoge investeringen of wettelijke beperkingen die nieuwkomers tegenhouden en zo de marktmacht beschermen",
        "een bijdrage aan producenten; verlaagt de productiekosten, de aanbodlijn schuift naar rechts → lagere prijs, hogere hoeveelheid",
-       "een indirecte belasting; verhoogt de productiekosten, de aanbodlijn schuift naar links → hogere prijs, lagere hoeveelheid",
+       "blijvende groei van het reële bbp per capita door meer of betere productiefactoren (onderwijs, innovatie/R&D, infrastructuur)",
        "onbedoeld nadeel voor derden (vervuiling); leidt tot overproductie. Overheid corrigeert met belasting of regels (internaliseren)"
       ],
       "c": 1,
@@ -145559,10 +145559,10 @@ var VAKKEN = [
      {
       "v": "Wat houdt «Subsidie» in?",
       "o": [
-       "een indirecte belasting; verhoogt de productiekosten, de aanbodlijn schuift naar links → hogere prijs, lagere hoeveelheid",
        "schaalvoordelen, hoge investeringen of wettelijke beperkingen die nieuwkomers tegenhouden en zo de marktmacht beschermen",
+       "onbedoeld nadeel voor derden (vervuiling); leidt tot overproductie. Overheid corrigeert met belasting of regels (internaliseren)",
        "een bijdrage aan producenten; verlaagt de productiekosten, de aanbodlijn schuift naar rechts → lagere prijs, hogere hoeveelheid",
-       "onbedoeld nadeel voor derden (vervuiling); leidt tot overproductie. Overheid corrigeert met belasting of regels (internaliseren)"
+       "vakbonden, cao’s, ondernemingsraden en het minimumloon; beschermen werknemers maar kunnen de markt ook beperken"
       ],
       "c": 2,
       "u": "«Subsidie» betekent: een bijdrage aan producenten; verlaagt de productiekosten, de aanbodlijn schuift naar rechts → lagere prijs, hogere hoeveelheid.",
@@ -145571,9 +145571,9 @@ var VAKKEN = [
      {
       "v": "Wat betekent «Toetredingsbarrières»?",
       "o": [
-       "een bijdrage aan producenten; verlaagt de productiekosten, de aanbodlijn schuift naar rechts → lagere prijs, hogere hoeveelheid",
-       "een indirecte belasting; verhoogt de productiekosten, de aanbodlijn schuift naar links → hogere prijs, lagere hoeveelheid",
        "onbedoeld nadeel voor derden (vervuiling); leidt tot overproductie. Overheid corrigeert met belasting of regels (internaliseren)",
+       "een indirecte belasting; verhoogt de productiekosten, de aanbodlijn schuift naar links → hogere prijs, lagere hoeveelheid",
+       "onbedoeld voordeel voor derden (onderwijs); leidt tot te weinig productie. Overheid stimuleert met subsidie",
        "schaalvoordelen, hoge investeringen of wettelijke beperkingen die nieuwkomers tegenhouden en zo de marktmacht beschermen"
       ],
       "c": 3,
@@ -145609,7 +145609,7 @@ var VAKKEN = [
       "o": [
        "schaalvoordelen, hoge investeringen of wettelijke beperkingen die nieuwkomers tegenhouden en zo de marktmacht beschermen",
        "onbedoeld nadeel voor derden (vervuiling); leidt tot overproductie. Overheid corrigeert met belasting of regels (internaliseren)",
-       "een indirecte belasting; verhoogt de productiekosten, de aanbodlijn schuift naar links → hogere prijs, lagere hoeveelheid",
+       "een bijdrage aan producenten; verlaagt de productiekosten, de aanbodlijn schuift naar rechts → lagere prijs, hogere hoeveelheid",
        "vakbonden, cao’s, ondernemingsraden en het minimumloon; beschermen werknemers maar kunnen de markt ook beperken"
       ],
       "c": 0,
@@ -145619,8 +145619,8 @@ var VAKKEN = [
      {
       "v": "Wat betekent «Collectief goed»?",
       "o": [
-       "het welvaartsverlies dat ontstaat door een prijsmaatregel van de overheid",
-       "kosten of baten van een transactie die derden treffen buiten de prijs",
+       "in theorie individueel leverbaar, maar toch door de overheid geleverd (bijv. onderwijs)",
+       "een markt met één aanbieder, een homogeen product en moeilijke toetreding",
        "niet-uitsluitbaar én niet-rivaliserend (bijv. dijken); de markt levert dit niet",
        "een goed dat de overheid stimuleert omdat er te weinig van wordt geproduceerd"
       ],
@@ -145656,8 +145656,8 @@ var VAKKEN = [
       "v": "Wat houdt «Collectief goed» in?",
       "o": [
        "een goed dat de overheid stimuleert omdat er te weinig van wordt geproduceerd",
-       "vast (zekerheid), flexibel (wendbaarheid voor de werkgever) en zzp (vrijheid maar meer risico)",
-       "de prijs waarbij de gevraagde en aangeboden hoeveelheid gelijk zijn",
+       "het welvaartsverlies dat ontstaat door een prijsmaatregel van de overheid",
+       "een markt met één aanbieder, een homogeen product en moeilijke toetreding",
        "niet-uitsluitbaar én niet-rivaliserend (bijv. dijken); de markt levert dit niet"
       ],
       "c": 3,
@@ -145764,8 +145764,8 @@ var VAKKEN = [
       "v": "Wat betekent «Negatief extern effect»?",
       "o": [
        "onbedoeld nadeel voor derden (vervuiling); leidt tot overproductie. Overheid corrigeert met belasting of regels (internaliseren)",
+       "schaalvoordelen, hoge investeringen of wettelijke beperkingen die nieuwkomers tegenhouden en zo de marktmacht beschermen",
        "vakbonden, cao’s, ondernemingsraden en het minimumloon; beschermen werknemers maar kunnen de markt ook beperken",
-       "een indirecte belasting; verhoogt de productiekosten, de aanbodlijn schuift naar links → hogere prijs, lagere hoeveelheid",
        "een bijdrage aan producenten; verlaagt de productiekosten, de aanbodlijn schuift naar rechts → lagere prijs, hogere hoeveelheid"
       ],
       "c": 0,
@@ -145799,7 +145799,7 @@ var VAKKEN = [
      {
       "v": "Wat houdt «Negatief extern effect» in?",
       "o": [
-       "een indirecte belasting; verhoogt de productiekosten, de aanbodlijn schuift naar links → hogere prijs, lagere hoeveelheid",
+       "vakbonden, cao’s, ondernemingsraden en het minimumloon; beschermen werknemers maar kunnen de markt ook beperken",
        "onbedoeld nadeel voor derden (vervuiling); leidt tot overproductie. Overheid corrigeert met belasting of regels (internaliseren)",
        "schaalvoordelen, hoge investeringen of wettelijke beperkingen die nieuwkomers tegenhouden en zo de marktmacht beschermen",
        "een bijdrage aan producenten; verlaagt de productiekosten, de aanbodlijn schuift naar rechts → lagere prijs, hogere hoeveelheid"
@@ -145871,9 +145871,9 @@ var VAKKEN = [
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"de Autoriteit Consument en Markt; verbiedt kartels en grijpt in bij misbruik van marktmacht\"?",
       "o": [
-       "Lek",
        "CPI",
-       "AFM",
+       "BBP",
+       "Lek",
        "ACM"
       ],
       "c": 3,
@@ -145883,8 +145883,8 @@ var VAKKEN = [
      {
       "v": "Welke term past bij: \"de Autoriteit Consument en Markt; verbiedt kartels en grijpt in bij misbruik van marktmacht\"?",
       "o": [
-       "AFM",
-       "Lek",
+       "Subsidie",
+       "CPI",
        "ACM",
        "BBP"
       ],
@@ -145920,7 +145920,7 @@ var VAKKEN = [
       "v": "Welk begrip hoort bij deze omschrijving: \"de Autoriteit Financiële Markten; houdt toezicht op banken, verzekeraars, pensioenfondsen en beleggen\"?",
       "o": [
        "BBP",
-       "ACM",
+       "CPI",
        "AFM",
        "Lek"
       ],
@@ -145932,9 +145932,9 @@ var VAKKEN = [
       "v": "Welke term past bij: \"de Autoriteit Financiële Markten; houdt toezicht op banken, verzekeraars, pensioenfondsen en beleggen\"?",
       "o": [
        "AFM",
+       "BBP",
        "Lek",
-       "Subsidie",
-       "ACM"
+       "Subsidie"
       ],
       "c": 0,
       "u": "Het juiste begrip is «AFM»: de Autoriteit Financiële Markten; houdt toezicht op banken, verzekeraars, pensioenfondsen en beleggen.",
@@ -145968,7 +145968,7 @@ var VAKKEN = [
       "v": "Welk begrip hoort bij deze omschrijving: \"het loon waar de vraag naar arbeid (vacatures) en het aanbod (wie kan en wil werken) elkaar snijden\"?",
       "o": [
        "Evenwichtsloon",
-       "Evenwichtsprijs",
+       "Nash-evenwicht",
        "Contractvormen",
        "Aanbodoverschot"
       ],
@@ -145981,7 +145981,7 @@ var VAKKEN = [
       "o": [
        "Aanbodoverschot",
        "Evenwichtsloon",
-       "Minimumprijs",
+       "Totaal surplus",
        "Contractvormen"
       ],
       "c": 1,
@@ -146018,7 +146018,7 @@ var VAKKEN = [
        "Evenwichtsloon",
        "Contractvormen",
        "Maximumprijs",
-       "Evenwichtsprijs"
+       "Concurrentie"
       ],
       "c": 1,
       "u": "Het juiste begrip is «Contractvormen»: vast (zekerheid), flexibel (wendbaarheid voor de werkgever) en zzp (vrijheid maar meer risico).",
@@ -146029,8 +146029,8 @@ var VAKKEN = [
       "o": [
        "Evenwichtsprijs",
        "Contractvormen",
-       "Evenwichtsloon",
-       "Aanbodoverschot"
+       "Aanbodoverschot",
+       "Concurrentie"
       ],
       "c": 1,
       "u": "Het juiste begrip is «Contractvormen»: vast (zekerheid), flexibel (wendbaarheid voor de werkgever) en zzp (vrijheid maar meer risico).",
@@ -146063,10 +146063,10 @@ var VAKKEN = [
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"vakbonden, cao’s, ondernemingsraden en het minimumloon; beschermen werknemers maar kunnen de markt ook beperken\"?",
       "o": [
-       "Free-rider (meelifter)",
-       "Toetredingsbarrières",
+       "Betalingsbereidheid",
+       "Consumentensurplus",
        "Arbeidsmarktinstituties",
-       "Consumentensurplus"
+       "Toetredingsbarrières"
       ],
       "c": 2,
       "u": "Het juiste begrip is «Arbeidsmarktinstituties»: vakbonden, cao’s, ondernemingsraden en het minimumloon; beschermen werknemers maar kunnen de markt ook beperken.",
@@ -146075,10 +146075,10 @@ var VAKKEN = [
      {
       "v": "Welke term past bij: \"vakbonden, cao’s, ondernemingsraden en het minimumloon; beschermen werknemers maar kunnen de markt ook beperken\"?",
       "o": [
+       "Heterogeen oligopolie",
        "Toetredingsbarrières",
-       "Free-rider (meelifter)",
        "Arbeidsmarktinstituties",
-       "Betalingsbereidheid"
+       "Harberger-driehoek"
       ],
       "c": 2,
       "u": "Het juiste begrip is «Arbeidsmarktinstituties»: vakbonden, cao’s, ondernemingsraden en het minimumloon; beschermen werknemers maar kunnen de markt ook beperken.",
@@ -147003,7 +147003,7 @@ var VAKKEN = [
       "v": "Welk begrip hoort bij deze omschrijving: \"een belasting op bepaalde producten\"?",
       "o": [
        "Subsidie",
-       "Injectie",
+       "Recessie",
        "Accijns",
        "Toeslagen"
       ],
@@ -147050,10 +147050,10 @@ var VAKKEN = [
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"belastingen en premies samen\"?",
       "o": [
-       "Enkelvoudige rente",
-       "Averechtse selectie",
+       "Samengestelde rente",
+       "Indirecte belasting",
        "Collectieve lasten",
-       "Sociale verzekering"
+       "Enkelvoudige rente"
       ],
       "c": 2,
       "u": "Het juiste begrip is «Collectieve lasten»: belastingen en premies samen.",
@@ -147062,8 +147062,8 @@ var VAKKEN = [
      {
       "v": "Welke term past bij: \"belastingen en premies samen\"?",
       "o": [
-       "Sociale verzekering",
-       "Averechtse selectie",
+       "Samengestelde rente",
+       "Indirecte belasting",
        "Enkelvoudige rente",
        "Collectieve lasten"
       ],
@@ -147579,7 +147579,7 @@ var VAKKEN = [
       "v": "Welk begrip hoort bij deze omschrijving: \"sociale zekerheid uit premies, met recht op uitkering bij werkloosheid of ziekte\"?",
       "o": [
        "Sociale verzekering",
-       "Indirecte belasting",
+       "Dominante strategie",
        "Samengestelde rente",
        "Averechtse selectie"
       ],
@@ -147711,9 +147711,9 @@ var VAKKEN = [
       "v": "Wat betekent «Samengestelde rente»?",
       "o": [
        "voor iedereen hetzelfde % verandert verhoudingen niet",
-       "de som van alle historische tekorten minus de overschotten",
+       "een keuze die het beste is, ongeacht wat de ander doet",
        "rente over de hoofdsom én over eerder ontvangen rente",
-       "een keuze die het beste is, ongeacht wat de ander doet"
+       "de som van alle historische tekorten minus de overschotten"
       ],
       "c": 2,
       "u": "«Samengestelde rente» betekent: rente over de hoofdsom én over eerder ontvangen rente.",
@@ -147746,9 +147746,9 @@ var VAKKEN = [
      {
       "v": "Wat houdt «Samengestelde rente» in?",
       "o": [
-       "inkomensongelijkheid verkleinen via belasting en uitkeringen",
-       "voor iedereen hetzelfde % verandert verhoudingen niet",
        "een keuze die het beste is, ongeacht wat de ander doet",
+       "inkomensverschillen kleiner maken / groter maken",
+       "inkomensongelijkheid verkleinen via belasting en uitkeringen",
        "rente over de hoofdsom én over eerder ontvangen rente"
       ],
       "c": 3,
@@ -148046,10 +148046,10 @@ var VAKKEN = [
      {
       "v": "Welke term past bij: \"vóór belasting, premies, subsidies en uitkeringen\"?",
       "o": [
-       "Automatische stabilisatoren",
+       "Asymmetrische informatie",
        "Primaire inkomensverdeling",
-       "Secundaire inkomensverdeling",
-       "Proportioneel (vlaktaks)"
+       "Automatische stabilisatoren",
+       "Secundaire inkomensverdeling"
       ],
       "c": 1,
       "u": "Het juiste begrip is «Primaire inkomensverdeling»: vóór belasting, premies, subsidies en uitkeringen.",
@@ -148084,7 +148084,7 @@ var VAKKEN = [
       "o": [
        "Automatische stabilisatoren",
        "Anticyclisch begrotingsbeleid",
-       "Asymmetrische informatie",
+       "Primaire inkomensverdeling",
        "Secundaire inkomensverdeling"
       ],
       "c": 3,
@@ -148096,8 +148096,8 @@ var VAKKEN = [
       "o": [
        "Secundaire inkomensverdeling",
        "Automatische stabilisatoren",
-       "Anticyclisch begrotingsbeleid",
-       "Primaire inkomensverdeling"
+       "Proportioneel (vlaktaks)",
+       "Anticyclisch begrotingsbeleid"
       ],
       "c": 0,
       "u": "Het juiste begrip is «Secundaire inkomensverdeling»: ná belasting en uitkeringen; meer genivelleerd dan de primaire.",
@@ -149419,8 +149419,8 @@ var VAKKEN = [
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"iedereen die kan en wil werken\"?",
       "o": [
-       "Inverdieneffect",
        "Betalingsbalans",
+       "Begrotingstekort",
        "Beroepsbevolking",
        "Uitverdieneffect"
       ],
@@ -149575,8 +149575,8 @@ var VAKKEN = [
      {
       "v": "Welke term past bij: \"uitgaven groter dan inkomsten van de overheid\"?",
       "o": [
+       "Beroepsbevolking",
        "Bestedingsinflatie",
-       "Inverdieneffect",
        "Begrotingstekort",
        "Uitverdieneffect"
       ],
@@ -149612,9 +149612,9 @@ var VAKKEN = [
       "v": "Welk begrip hoort bij deze omschrijving: \"tijdelijke werkloosheid door een te lage vraag\"?",
       "o": [
        "Conjuncturele werkloosheid",
-       "Kwantitatief structureel",
+       "Comparatief kostenvoordeel",
        "Automatische stabilisatoren",
-       "Motieven protectionisme"
+       "Kwantitatief structureel"
       ],
       "c": 0,
       "u": "Het juiste begrip is «Conjuncturele werkloosheid»: tijdelijke werkloosheid door een te lage vraag.",
@@ -149625,8 +149625,8 @@ var VAKKEN = [
       "o": [
        "Conjuncturele werkloosheid",
        "Automatische stabilisatoren",
-       "Protectionistische maatregelen",
-       "Motieven protectionisme"
+       "Motieven protectionisme",
+       "Kwantitatief structureel"
       ],
       "c": 0,
       "u": "Het juiste begrip is «Conjuncturele werkloosheid»: tijdelijke werkloosheid door een te lage vraag.",
@@ -149888,8 +149888,8 @@ var VAKKEN = [
       "v": "Welke term past bij: \"de op- en neergang van de economie rond de trend\"?",
       "o": [
        "Conjunctuur",
-       "Refi-rente",
        "Werkloosheid",
+       "Refi-rente",
        "Wisselkoers"
       ],
       "c": 0,
@@ -149911,10 +149911,10 @@ var VAKKEN = [
      {
       "v": "Wat betekent «Reëel BBP»?",
       "o": [
-       "iedereen die kan en wil werken",
+       "het verschil tussen export en import",
        "het BBP gecorrigeerd voor inflatie",
-       "de prijs van een munt in een andere munt",
-       "het verschil tussen export en import"
+       "een belasting op bepaalde producten",
+       "slecht geld verdringt goed geld"
       ],
       "c": 1,
       "u": "«Reëel BBP» betekent: het BBP gecorrigeerd voor inflatie.",
@@ -149947,8 +149947,8 @@ var VAKKEN = [
      {
       "v": "Wat houdt «Reëel BBP» in?",
       "o": [
-       "het verschil tussen export en import",
        "slecht geld verdringt goed geld",
+       "het verschil tussen export en import",
        "het BBP gecorrigeerd voor inflatie",
        "iedereen die kan en wil werken"
       ],
@@ -150068,7 +150068,7 @@ var VAKKEN = [
       "v": "Welk begrip hoort bij deze omschrijving: \"mismatch in vaardigheden, opleiding of regio\"?",
       "o": [
        "Motieven protectionisme",
-       "Kwantitatief structureel",
+       "Alternatief aanwendbaar",
        "Structurele werkloosheid",
        "Kwalitatief structureel"
       ],
@@ -150080,8 +150080,8 @@ var VAKKEN = [
       "v": "Welke term past bij: \"mismatch in vaardigheden, opleiding of regio\"?",
       "o": [
        "Motieven protectionisme",
-       "Kwantitatief structureel",
        "Structurele werkloosheid",
+       "Conjuncturele werkloosheid",
        "Kwalitatief structureel"
       ],
       "c": 3,
@@ -150118,7 +150118,7 @@ var VAKKEN = [
        "Structurele werkloosheid",
        "Kwantitatief structureel",
        "Motieven protectionisme",
-       "Kwalitatief structureel"
+       "Conjuncturele werkloosheid"
       ],
       "c": 1,
       "u": "Het juiste begrip is «Kwantitatief structureel»: te weinig banen door automatisering of verplaatsing.",
@@ -150127,10 +150127,10 @@ var VAKKEN = [
      {
       "v": "Welke term past bij: \"te weinig banen door automatisering of verplaatsing\"?",
       "o": [
-       "Structurele werkloosheid",
-       "Kwalitatief structureel",
+       "Motieven protectionisme",
+       "Conjuncturele werkloosheid",
        "Kwantitatief structureel",
-       "Conjuncturele werkloosheid"
+       "Structurele werkloosheid"
       ],
       "c": 2,
       "u": "Het juiste begrip is «Kwantitatief structureel»: te weinig banen door automatisering of verplaatsing.",
@@ -150319,7 +150319,7 @@ var VAKKEN = [
      {
       "v": "Wat betekent «Productiecapaciteit»?",
       "o": [
-       "werkloosheid door een mismatch tussen vaardigheden en banen",
+       "twee kwartalen krimp / een ernstige, langdurige recessie met massale werkloosheid",
        "importtarieven (invoerrechten), importquota en strenge importvoorschriften",
        "algemene prijsstijging (koopkracht daalt) / prijsdaling (koopkracht stijgt)",
        "de maximale productie als alle productiefactoren volledig worden benut"
@@ -150331,10 +150331,10 @@ var VAKKEN = [
      {
       "v": "Wat houdt «Productiecapaciteit» in?",
       "o": [
-       "importtarieven (invoerrechten), importquota en strenge importvoorschriften",
        "algemene prijsstijging (koopkracht daalt) / prijsdaling (koopkracht stijgt)",
+       "importtarieven (invoerrechten), importquota en strenge importvoorschriften",
        "de maximale productie als alle productiefactoren volledig worden benut",
-       "twee kwartalen krimp / een ernstige, langdurige recessie met massale werkloosheid"
+       "de ECB stuurt de inflatie richting ongeveer 2% via de rente en de geldhoeveelheid"
       ],
       "c": 2,
       "u": "«Productiecapaciteit» betekent: de maximale productie als alle productiefactoren volledig worden benut.",
@@ -150487,10 +150487,10 @@ var VAKKEN = [
      {
       "v": "Wat betekent «Inflatie / deflatie»?",
       "o": [
+       "de maximale productie als alle productiefactoren volledig worden benut",
        "importtarieven (invoerrechten), importquota en strenge importvoorschriften",
-       "hogere uitgaven leiden tot meer productie en extra belastinginkomsten",
        "algemene prijsstijging (koopkracht daalt) / prijsdaling (koopkracht stijgt)",
-       "de maximale productie als alle productiefactoren volledig worden benut"
+       "belastingverhoging drukt consumptie en productie, waardoor de opbrengst tegenvalt"
       ],
       "c": 2,
       "u": "«Inflatie / deflatie» betekent: algemene prijsstijging (koopkracht daalt) / prijsdaling (koopkracht stijgt).",
@@ -150523,9 +150523,9 @@ var VAKKEN = [
      {
       "v": "Wat houdt «Inflatie / deflatie» in?",
       "o": [
-       "de maximale productie als alle productiefactoren volledig worden benut",
-       "importtarieven (invoerrechten), importquota en strenge importvoorschriften",
        "belastingverhoging drukt consumptie en productie, waardoor de opbrengst tegenvalt",
+       "twee kwartalen krimp / een ernstige, langdurige recessie met massale werkloosheid",
+       "de maximale productie als alle productiefactoren volledig worden benut",
        "algemene prijsstijging (koopkracht daalt) / prijsdaling (koopkracht stijgt)"
       ],
       "c": 3,
@@ -150535,8 +150535,8 @@ var VAKKEN = [
      {
       "v": "Wat betekent «Automatische stabilisatoren»?",
       "o": [
-       "overzicht van alle transacties met het buitenland: lopende rekening (goederen, diensten, inkomens) en financiële rekening",
        "de overheid grijpt bewust in: in laagconjunctuur meer uitgeven of belasting verlagen, in hoogconjunctuur het omgekeerde",
+       "overzicht van alle transacties met het buitenland: lopende rekening (goederen, diensten, inkomens) en financiële rekening",
        "dempen de conjunctuur vanzelf: het progressieve belastingstelsel en de sociale zekerheid (zonder nieuw besluit)",
        "bij hoogconjunctuur verhoogt de ECB de rente (minder lenen/besteden); bij laagconjunctuur verlaagt ze die"
       ],
@@ -150550,7 +150550,7 @@ var VAKKEN = [
        "Kwantitatief structureel",
        "Automatische stabilisatoren",
        "Motieven protectionisme",
-       "Kwalitatief structureel"
+       "Protectionistische maatregelen"
       ],
       "c": 1,
       "u": "Het juiste begrip is «Automatische stabilisatoren»: dempen de conjunctuur vanzelf: het progressieve belastingstelsel en de sociale zekerheid (zonder nieuw besluit).",
@@ -150572,7 +150572,7 @@ var VAKKEN = [
       "v": "Wat houdt «Automatische stabilisatoren» in?",
       "o": [
        "dempen de conjunctuur vanzelf: het progressieve belastingstelsel en de sociale zekerheid (zonder nieuw besluit)",
-       "het infant-industry-argument, het tegengaan van dumping en het beschermen van strategische sectoren",
+       "banken brengen geld in omloop door uit te lenen; gebonden aan een liquiditeitseis (DNB houdt toezicht)",
        "de overheid grijpt bewust in: in laagconjunctuur meer uitgeven of belasting verlagen, in hoogconjunctuur het omgekeerde",
        "overzicht van alle transacties met het buitenland: lopende rekening (goederen, diensten, inkomens) en financiële rekening"
       ],
@@ -150596,9 +150596,9 @@ var VAKKEN = [
       "v": "Welk begrip hoort bij deze omschrijving: \"de overheid grijpt bewust in: in laagconjunctuur meer uitgeven of belasting verlagen, in hoogconjunctuur het omgekeerde\"?",
       "o": [
        "Vrijhandel vs protectionisme",
-       "Structurele economische groei",
+       "Stabiliteits- en groeipact",
        "Actief anticyclisch beleid",
-       "Stabiliteits- en groeipact"
+       "Structurele economische groei"
       ],
       "c": 2,
       "u": "Het juiste begrip is «Actief anticyclisch beleid»: de overheid grijpt bewust in: in laagconjunctuur meer uitgeven of belasting verlagen, in hoogconjunctuur het omgekeerde.",
@@ -150644,9 +150644,9 @@ var VAKKEN = [
       "v": "Welk begrip hoort bij deze omschrijving: \"hogere uitgaven leiden tot meer productie en extra belastinginkomsten\"?",
       "o": [
        "Inverdieneffect",
-       "Betalingsbalans",
        "Beroepsbevolking",
-       "Uitverdieneffect"
+       "Betalingsbalans",
+       "Handelsbalans"
       ],
       "c": 0,
       "u": "Het juiste begrip is «Inverdieneffect»: hogere uitgaven leiden tot meer productie en extra belastinginkomsten.",
@@ -150655,9 +150655,9 @@ var VAKKEN = [
      {
       "v": "Welke term past bij: \"hogere uitgaven leiden tot meer productie en extra belastinginkomsten\"?",
       "o": [
-       "Kosteninflatie",
        "Beroepsbevolking",
        "Betalingsbalans",
+       "Kosteninflatie",
        "Inverdieneffect"
       ],
       "c": 3,
@@ -150691,10 +150691,10 @@ var VAKKEN = [
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"belastingverhoging drukt consumptie en productie, waardoor de opbrengst tegenvalt\"?",
       "o": [
-       "Beroepsbevolking",
-       "Uitverdieneffect",
        "Begrotingstekort",
-       "Inverdieneffect"
+       "Uitverdieneffect",
+       "Bestedingsinflatie",
+       "Beroepsbevolking"
       ],
       "c": 1,
       "u": "Het juiste begrip is «Uitverdieneffect»: belastingverhoging drukt consumptie en productie, waardoor de opbrengst tegenvalt.",
@@ -150703,9 +150703,9 @@ var VAKKEN = [
      {
       "v": "Welke term past bij: \"belastingverhoging drukt consumptie en productie, waardoor de opbrengst tegenvalt\"?",
       "o": [
-       "Begrotingstekort",
-       "Beroepsbevolking",
        "Betalingsbalans",
+       "Beroepsbevolking",
+       "Begrotingstekort",
        "Uitverdieneffect"
       ],
       "c": 3,
@@ -150850,7 +150850,7 @@ var VAKKEN = [
        "Hoog- vs laagconjunctuur",
        "Stabiliteits- en groeipact",
        "Actief anticyclisch beleid",
-       "Structurele economische groei"
+       "Vrijhandel vs protectionisme"
       ],
       "c": 1,
       "u": "Het juiste begrip is «Stabiliteits- en groeipact»: onder andere: begrotingstekort ≤ 3% van het bbp en staatsschuld ≤ 60% van het bbp.",
@@ -150955,7 +150955,7 @@ var VAKKEN = [
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"het infant-industry-argument, het tegengaan van dumping en het beschermen van strategische sectoren\"?",
       "o": [
-       "Kwantitatief structureel",
+       "Automatische stabilisatoren",
        "Structurele werkloosheid",
        "Motieven protectionisme",
        "Kwalitatief structureel"
@@ -150969,8 +150969,8 @@ var VAKKEN = [
       "o": [
        "Kwalitatief structureel",
        "Motieven protectionisme",
-       "Conjuncturele werkloosheid",
-       "Kwantitatief structureel"
+       "Structurele werkloosheid",
+       "Conjuncturele werkloosheid"
       ],
       "c": 1,
       "u": "Het juiste begrip is «Motieven protectionisme»: het infant-industry-argument, het tegengaan van dumping en het beschermen van strategische sectoren.",
@@ -151003,9 +151003,9 @@ var VAKKEN = [
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"overzicht van alle transacties met het buitenland: lopende rekening (goederen, diensten, inkomens) en financiële rekening\"?",
       "o": [
-       "Inverdieneffect",
+       "Uitverdieneffect",
        "Betalingsbalans",
-       "Beroepsbevolking",
+       "Handelsbalans",
        "Kosteninflatie"
       ],
       "c": 1,
@@ -151015,10 +151015,10 @@ var VAKKEN = [
      {
       "v": "Welke term past bij: \"overzicht van alle transacties met het buitenland: lopende rekening (goederen, diensten, inkomens) en financiële rekening\"?",
       "o": [
-       "Kosteninflatie",
+       "Inverdieneffect",
        "Betalingsbalans",
-       "Begrotingstekort",
-       "Inverdieneffect"
+       "Beroepsbevolking",
+       "Begrotingstekort"
       ],
       "c": 1,
       "u": "Het juiste begrip is «Betalingsbalans»: overzicht van alle transacties met het buitenland: lopende rekening (goederen, diensten, inkomens) en financiële rekening.",
@@ -152063,8 +152063,8 @@ var VAKKEN = [
       "v": "Wat betekent «Correlatie»?",
       "o": [
        "een samenhang tussen twee variabelen",
-       "onderzoek door mee te doen in de groep",
        "een meetbaar kenmerk van een begrip",
+       "onderzoek door mee te doen in de groep",
        "een toetsbare verwachting over een verband"
       ],
       "c": 0,
@@ -152099,7 +152099,7 @@ var VAKKEN = [
       "v": "Wat houdt «Correlatie» in?",
       "o": [
        "een meetbaar kenmerk van een begrip",
-       "onderzoek gericht op betekenis en beleving",
+       "de variabele die de oorzaak vormt",
        "onderzoek door mee te doen in de groep",
        "een samenhang tussen twee variabelen"
       ],
@@ -152461,7 +152461,7 @@ var VAKKEN = [
        "Afhankelijke variabele",
        "Kwalitatief onderzoek",
        "Sociale wenselijkheid",
-       "Kwantitatief onderzoek"
+       "Aselecte steekproef"
       ],
       "c": 2,
       "u": "Het juiste begrip is «Sociale wenselijkheid»: antwoorden geven die geaccepteerd lijken in plaats van eerlijk.",
@@ -152473,7 +152473,7 @@ var VAKKEN = [
        "Sociale wenselijkheid",
        "Kwalitatief onderzoek",
        "Afhankelijke variabele",
-       "Kwantitatief onderzoek"
+       "Deductief onderzoek"
       ],
       "c": 0,
       "u": "Het juiste begrip is «Sociale wenselijkheid»: antwoorden geven die geaccepteerd lijken in plaats van eerlijk.",
@@ -152494,10 +152494,10 @@ var VAKKEN = [
      {
       "v": "Wat betekent «Causaliteit»?",
       "o": [
-       "onderzoek dat een theorie opbouwt vanuit observaties",
+       "een deel van de populatie dat wordt onderzocht",
        "een oorzaak-gevolgrelatie tussen twee variabelen",
        "de centrale vraag die een onderzoek beantwoordt",
-       "een steekproef waarbij ieder lid evenveel kans heeft"
+       "iemand die de vragen van een onderzoek beantwoordt"
       ],
       "c": 1,
       "u": "«Causaliteit» betekent: een oorzaak-gevolgrelatie tussen twee variabelen.",
@@ -152530,8 +152530,8 @@ var VAKKEN = [
      {
       "v": "Wat houdt «Causaliteit» in?",
       "o": [
-       "een vraag waarop je in eigen woorden antwoordt",
-       "een vraag met vaste antwoordopties om uit te kiezen",
+       "onderzoek met al bestaande gegevens van anderen",
+       "onderzoek met cijfermatige, meetbare gegevens",
        "een oorzaak-gevolgrelatie tussen twee variabelen",
        "de centrale vraag die een onderzoek beantwoordt"
       ],
@@ -152603,9 +152603,9 @@ var VAKKEN = [
       "v": "Welk begrip hoort bij deze omschrijving: \"onderzoek met cijfermatige, meetbare gegevens\"?",
       "o": [
        "Kwantitatief onderzoek",
-       "Kwalitatief onderzoek",
-       "Afhankelijke variabele",
-       "Sociale wenselijkheid"
+       "Aselecte steekproef",
+       "Sociale wenselijkheid",
+       "Afhankelijke variabele"
       ],
       "c": 0,
       "u": "Het juiste begrip is «Kwantitatief onderzoek»: onderzoek met cijfermatige, meetbare gegevens.",
@@ -152614,10 +152614,10 @@ var VAKKEN = [
      {
       "v": "Welke term past bij: \"onderzoek met cijfermatige, meetbare gegevens\"?",
       "o": [
-       "Afhankelijke variabele",
+       "Sociale wenselijkheid",
        "Kwantitatief onderzoek",
-       "Kwalitatief onderzoek",
-       "Sociale wenselijkheid"
+       "Afhankelijke variabele",
+       "Participerende observatie"
       ],
       "c": 1,
       "u": "Het juiste begrip is «Kwantitatief onderzoek»: onderzoek met cijfermatige, meetbare gegevens.",
@@ -152651,9 +152651,9 @@ var VAKKEN = [
       "v": "Welk begrip hoort bij deze omschrijving: \"onderzoek gericht op betekenis en beleving\"?",
       "o": [
        "Sociale wenselijkheid",
-       "Kwantitatief onderzoek",
+       "Afhankelijke variabele",
        "Kwalitatief onderzoek",
-       "Deductief onderzoek"
+       "Inductief onderzoek"
       ],
       "c": 2,
       "u": "Het juiste begrip is «Kwalitatief onderzoek»: onderzoek gericht op betekenis en beleving.",
@@ -152662,10 +152662,10 @@ var VAKKEN = [
      {
       "v": "Welke term past bij: \"onderzoek gericht op betekenis en beleving\"?",
       "o": [
-       "Kwantitatief onderzoek",
+       "Inductief onderzoek",
        "Sociale wenselijkheid",
        "Kwalitatief onderzoek",
-       "Deductief onderzoek"
+       "Afhankelijke variabele"
       ],
       "c": 2,
       "u": "Het juiste begrip is «Kwalitatief onderzoek»: onderzoek gericht op betekenis en beleving.",
@@ -152700,7 +152700,7 @@ var VAKKEN = [
       "o": [
        "Participerende observatie",
        "Afhankelijke variabele",
-       "Onafhankelijke variabele",
+       "Psychologische benadering",
        "Kwantitatief onderzoek"
       ],
       "c": 0,
@@ -152710,7 +152710,7 @@ var VAKKEN = [
      {
       "v": "Welke term past bij: \"onderzoek door mee te doen in de groep\"?",
       "o": [
-       "Afhankelijke variabele",
+       "Sociale wenselijkheid",
        "Onafhankelijke variabele",
        "Participerende observatie",
        "Kwantitatief onderzoek"
@@ -152746,7 +152746,7 @@ var VAKKEN = [
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"onderzoek met al bestaande gegevens van anderen\"?",
       "o": [
-       "Deductief onderzoek",
+       "Sociaal grondrecht",
        "Aselecte steekproef",
        "Inductief onderzoek",
        "Secundaire analyse"
@@ -152820,8 +152820,8 @@ var VAKKEN = [
       "o": [
        "een deel van de populatie dat wordt onderzocht",
        "een abstract begrip dat je meetbaar moet maken",
-       "de centrale vraag die een onderzoek beantwoordt",
-       "onderzoek met cijfermatige, meetbare gegevens"
+       "een vraag waarop je in eigen woorden antwoordt",
+       "de centrale vraag die een onderzoek beantwoordt"
       ],
       "c": 1,
       "u": "«Concept» betekent: een abstract begrip dat je meetbaar moet maken.",
@@ -152867,9 +152867,9 @@ var VAKKEN = [
       "v": "Wat houdt «Indicator» in?",
       "o": [
        "een meetbaar kenmerk van een begrip",
+       "onderzoek door mee te doen in de groep",
        "een samenhang tussen twee variabelen",
-       "een vragenlijst voor onderzoek",
-       "onderzoek door mee te doen in de groep"
+       "de variabele die de oorzaak vormt"
       ],
       "c": 0,
       "u": "«Indicator» betekent: een meetbaar kenmerk van een begrip.",
@@ -152939,9 +152939,9 @@ var VAKKEN = [
       "v": "Welk begrip hoort bij deze omschrijving: \"onderzoek dat een bestaande theorie toetst\"?",
       "o": [
        "Deductief onderzoek",
-       "Inductief onderzoek",
        "Aselecte steekproef",
-       "Secundaire analyse"
+       "Secundaire analyse",
+       "Kwalitatief onderzoek"
       ],
       "c": 0,
       "u": "Het juiste begrip is «Deductief onderzoek»: onderzoek dat een bestaande theorie toetst.",
@@ -152950,10 +152950,10 @@ var VAKKEN = [
      {
       "v": "Welke term past bij: \"onderzoek dat een bestaande theorie toetst\"?",
       "o": [
-       "Inductief onderzoek",
+       "Secundaire analyse",
        "Deductief onderzoek",
-       "Aselecte steekproef",
-       "Secundaire analyse"
+       "Kwalitatief onderzoek",
+       "Aselecte steekproef"
       ],
       "c": 1,
       "u": "Het juiste begrip is «Deductief onderzoek»: onderzoek dat een bestaande theorie toetst.",
@@ -152986,10 +152986,10 @@ var VAKKEN = [
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"onderzoek dat een theorie opbouwt vanuit observaties\"?",
       "o": [
-       "Secundaire analyse",
+       "Kwalitatief onderzoek",
        "Inductief onderzoek",
        "Aselecte steekproef",
-       "Deductief onderzoek"
+       "Secundaire analyse"
       ],
       "c": 1,
       "u": "Het juiste begrip is «Inductief onderzoek»: onderzoek dat een theorie opbouwt vanuit observaties.",
@@ -152998,9 +152998,9 @@ var VAKKEN = [
      {
       "v": "Welke term past bij: \"onderzoek dat een theorie opbouwt vanuit observaties\"?",
       "o": [
-       "Kwalitatief onderzoek",
-       "Deductief onderzoek",
+       "Sociale wenselijkheid",
        "Aselecte steekproef",
+       "Kwalitatief onderzoek",
        "Inductief onderzoek"
       ],
       "c": 3,
@@ -153096,7 +153096,7 @@ var VAKKEN = [
       "o": [
        "Participerende observatie",
        "Kwalitatief onderzoek",
-       "Kwantitatief onderzoek",
+       "Deductief onderzoek",
        "Onafhankelijke variabele"
       ],
       "c": 3,
@@ -153130,9 +153130,9 @@ var VAKKEN = [
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"de variabele die het effect is\"?",
       "o": [
-       "Kwalitatief onderzoek",
-       "Afhankelijke variabele",
        "Sociale wenselijkheid",
+       "Afhankelijke variabele",
+       "Participerende observatie",
        "Kwantitatief onderzoek"
       ],
       "c": 1,
@@ -153144,8 +153144,8 @@ var VAKKEN = [
       "o": [
        "Afhankelijke variabele",
        "Kwantitatief onderzoek",
-       "Participerende observatie",
-       "Kwalitatief onderzoek"
+       "Sociale wenselijkheid",
+       "Participerende observatie"
       ],
       "c": 0,
       "u": "Het juiste begrip is «Afhankelijke variabele»: de variabele die het effect is.",
@@ -153335,8 +153335,8 @@ var VAKKEN = [
       "v": "Wat betekent «Operationaliseren»?",
       "o": [
        "of je meet wat je wilt meten",
-       "een vragenlijst voor onderzoek",
        "de consistentie van een meting",
+       "cijfers vs. verdieping",
        "een begrip meetbaar maken"
       ],
       "c": 3,
@@ -153370,9 +153370,9 @@ var VAKKEN = [
      {
       "v": "Wat houdt «Operationaliseren» in?",
       "o": [
-       "een vragenlijst voor onderzoek",
        "of je meet wat je wilt meten",
        "cijfers vs. verdieping",
+       "een vragenlijst voor onderzoek",
        "een begrip meetbaar maken"
       ],
       "c": 3,
@@ -154259,9 +154259,9 @@ var VAKKEN = [
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"de druk om je aan normen te houden\"?",
       "o": [
-       "Actief kiesrecht",
+       "Formele institutie",
        "Sociale controle",
-       "Vier hoofdconcepten",
+       "Sociaal kapitaal",
        "Twee benaderingen"
       ],
       "c": 1,
@@ -154272,7 +154272,7 @@ var VAKKEN = [
       "v": "Welke term past bij: \"de druk om je aan normen te houden\"?",
       "o": [
        "Formele institutie",
-       "Vier hoofdconcepten",
+       "Rationeel-legaal",
        "Sociale controle",
        "Twee benaderingen"
       ],
@@ -154319,10 +154319,10 @@ var VAKKEN = [
      {
       "v": "Wat betekent «Sociologische benadering»?",
       "o": [
-       "het hoogste adviesorgaan voor wetgeving en de hoogste bestuursrechter",
+       "een institutie die op gewoonte en traditie berust",
        "het vermogen om andermans gedrag te bepalen, ook tegen diens wil (Weber)",
        "gedrag verklaren vanuit sociale structuren, groepen en instituties",
-       "de theorie dat zwakke sociale bindingen de drempel voor crimineel gedrag verlagen"
+       "het recht van Tweede Kamerleden om wetsvoorstellen te wijzigen"
       ],
       "c": 2,
       "u": "«Sociologische benadering» betekent: gedrag verklaren vanuit sociale structuren, groepen en instituties.",
@@ -154367,7 +154367,7 @@ var VAKKEN = [
      {
       "v": "Wat betekent «Psychologische benadering»?",
       "o": [
-       "een concrete gedragsregel voor wat hoort",
+       "uitstraling van de persoon een volksleider",
        "regels en functie een minister, ambtenaar",
        "het aanleren van normen, waarden en rollen",
        "gedrag verklaren vanuit het individu zelf"
@@ -154403,10 +154403,10 @@ var VAKKEN = [
      {
       "v": "Wat houdt «Psychologische benadering» in?",
       "o": [
-       "uitstraling van de persoon een volksleider",
+       "regels en functie een minister, ambtenaar",
        "gedrag verklaren vanuit het individu zelf",
        "het aanleren van normen, waarden en rollen",
-       "het geheel van gedeelde waarden en gewoonten"
+       "uitstraling van de persoon een volksleider"
       ],
       "c": 1,
       "u": "«Psychologische benadering» betekent: gedrag verklaren vanuit het individu zelf.",
@@ -154416,7 +154416,7 @@ var VAKKEN = [
       "v": "Wat betekent «Macht»?",
       "o": [
        "gedrag verklaren vanuit sociale structuren, groepen en instituties",
-       "een samenleving met grote culturele, religieuze en etnische diversiteit",
+       "deelnemen aan de samenleving met behoud van de eigen culturele identiteit",
        "de theorie dat zwakke sociale bindingen de drempel voor crimineel gedrag verlagen",
        "het vermogen om andermans gedrag te bepalen, ook tegen diens wil (Weber)"
       ],
@@ -154643,10 +154643,10 @@ var VAKKEN = [
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"vorming, verhouding, binding, verandering\"?",
       "o": [
-       "Formele institutie",
+       "Primaire socialisatie",
        "Informele institutie",
        "Vier hoofdconcepten",
-       "Primaire socialisatie"
+       "Aselecte steekproef"
       ],
       "c": 2,
       "u": "Het juiste begrip is «Vier hoofdconcepten»: vorming, verhouding, binding, verandering.",
@@ -154656,8 +154656,8 @@ var VAKKEN = [
       "v": "Welke term past bij: \"vorming, verhouding, binding, verandering\"?",
       "o": [
        "Vier hoofdconcepten",
-       "Formele institutie",
        "Primaire socialisatie",
+       "Twee benaderingen",
        "Informele institutie"
       ],
       "c": 0,
@@ -155697,8 +155697,8 @@ var VAKKEN = [
      {
       "v": "Wat betekent «Macht»?",
       "o": [
-       "een groep die besluitvormers wil beïnvloeden",
-       "een samenhangende visie op de samenleving",
+       "het vormen van een nieuw kabinet na verkiezingen",
+       "overleg tussen overheid, werkgevers en werknemers",
        "het dagelijks bestuur van kabinet en koning",
        "het vermogen het gedrag van anderen te bepalen"
       ],
@@ -155734,8 +155734,8 @@ var VAKKEN = [
       "v": "Wat houdt «Macht» in?",
       "o": [
        "het vermogen het gedrag van anderen te bepalen",
-       "overleg tussen overheid, werkgevers en werknemers",
        "het proces waarin de politiek tot besluiten komt",
+       "het vormen van een nieuw kabinet na verkiezingen",
        "het geheel dat leidt tot bindende besluiten"
       ],
       "c": 0,
@@ -155757,7 +155757,7 @@ var VAKKEN = [
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"een groep die een gedeeld belang behartigt\"?",
       "o": [
-       "Belangenafweging",
+       "Rechtsstaat",
        "Regeerakkoord",
        "Belangengroep",
        "Criminaliteit"
@@ -155841,10 +155841,10 @@ var VAKKEN = [
      {
       "v": "Wat betekent «Lobby»?",
       "o": [
-       "de mate van steun voor een besluit",
        "een volksstemming over een besluit",
+       "de mate van steun voor een besluit",
        "het beïnvloeden van besluitvormers",
-       "de deelname van burgers aan de politiek"
+       "formatie, meerderheid in de Kamer"
       ],
       "c": 2,
       "u": "«Lobby» betekent: het beïnvloeden van besluitvormers.",
@@ -155877,10 +155877,10 @@ var VAKKEN = [
      {
       "v": "Wat houdt «Lobby» in?",
       "o": [
-       "de mate van steun voor een besluit",
        "een volksstemming over een besluit",
+       "media die een groot publiek bereiken",
        "het beïnvloeden van besluitvormers",
-       "media die een groot publiek bereiken"
+       "formatie, meerderheid in de Kamer"
       ],
       "c": 2,
       "u": "«Lobby» betekent: het beïnvloeden van besluitvormers.",
@@ -155901,10 +155901,10 @@ var VAKKEN = [
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"het geheel dat leidt tot bindende besluiten\"?",
       "o": [
-       "Sociaal grondrecht",
+       "Trias politica",
        "Politiek systeem",
-       "Actief kiesrecht",
-       "Passief kiesrecht"
+       "Passief kiesrecht",
+       "Actief kiesrecht"
       ],
       "c": 1,
       "u": "Het juiste begrip is «Politiek systeem»: het geheel dat leidt tot bindende besluiten.",
@@ -155913,10 +155913,10 @@ var VAKKEN = [
      {
       "v": "Welke term past bij: \"het geheel dat leidt tot bindende besluiten\"?",
       "o": [
+       "Passief kiesrecht",
        "Actief kiesrecht",
-       "Trias politica",
        "Politiek systeem",
-       "Passief kiesrecht"
+       "Sociaal grondrecht"
       ],
       "c": 2,
       "u": "Het juiste begrip is «Politiek systeem»: het geheel dat leidt tot bindende besluiten.",
@@ -155949,10 +155949,10 @@ var VAKKEN = [
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"een samenhangende visie op de samenleving\"?",
       "o": [
-       "Sociaal grondrecht",
-       "Politiek systeem",
+       "Klassiek grondrecht",
+       "Passief kiesrecht",
        "Politieke stroming",
-       "Actief kiesrecht"
+       "Sociaal grondrecht"
       ],
       "c": 2,
       "u": "Het juiste begrip is «Politieke stroming»: een samenhangende visie op de samenleving.",
@@ -155962,9 +155962,9 @@ var VAKKEN = [
       "v": "Welke term past bij: \"een samenhangende visie op de samenleving\"?",
       "o": [
        "Politieke stroming",
-       "Sociaal grondrecht",
-       "Passief kiesrecht",
-       "Klassiek grondrecht"
+       "Klassiek grondrecht",
+       "Actief kiesrecht",
+       "Passief kiesrecht"
       ],
       "c": 0,
       "u": "Het juiste begrip is «Politieke stroming»: een samenhangende visie op de samenleving.",
@@ -156179,8 +156179,8 @@ var VAKKEN = [
       "o": [
        "het vermogen het gedrag van anderen te bepalen",
        "een groep die besluitvormers wil beïnvloeden",
-       "de ministers en staatssecretarissen samen",
-       "het proces waarin de politiek tot besluiten komt"
+       "het dagelijks bestuur van kabinet en koning",
+       "het vormen van een nieuw kabinet na verkiezingen"
       ],
       "c": 1,
       "u": "«Pressiegroep» betekent: een groep die besluitvormers wil beïnvloeden.",
@@ -156215,7 +156215,7 @@ var VAKKEN = [
       "o": [
        "het dagelijks bestuur van kabinet en koning",
        "een groep die besluitvormers wil beïnvloeden",
-       "de ministers en staatssecretarissen samen",
+       "het vermogen het gedrag van anderen te bepalen",
        "het geheel dat leidt tot bindende besluiten"
       ],
       "c": 1,
@@ -156396,7 +156396,7 @@ var VAKKEN = [
        "Coalitievorming",
        "Decentralisatie",
        "Belangenafweging",
-       "Belangengroep"
+       "Regeerakkoord"
       ],
       "c": 1,
       "u": "Het juiste begrip is «Decentralisatie»: het overdragen van taken naar gemeenten of provincies.",
@@ -156527,8 +156527,8 @@ var VAKKEN = [
       "o": [
        "Politieke participatie",
        "Sociaal grondrecht",
-       "Afhankelijke variabele",
-       "Politieke besluitvorming"
+       "Pluriforme samenleving",
+       "Afhankelijke variabele"
       ],
       "c": 0,
       "u": "Het juiste begrip is «Politieke participatie»: de deelname van burgers aan de politiek.",
@@ -156537,10 +156537,10 @@ var VAKKEN = [
      {
       "v": "Welke term past bij: \"de deelname van burgers aan de politiek\"?",
       "o": [
-       "Politieke besluitvorming",
-       "Politieke participatie",
        "Klassiek grondrecht",
-       "Sociaal grondrecht"
+       "Politieke participatie",
+       "Sociaal grondrecht",
+       "Recht van amendement"
       ],
       "c": 1,
       "u": "Het juiste begrip is «Politieke participatie»: de deelname van burgers aan de politiek.",
@@ -156684,7 +156684,7 @@ var VAKKEN = [
        "Politieke stroming",
        "Sociaal grondrecht",
        "Klassiek grondrecht",
-       "Politieke participatie"
+       "Actief kiesrecht"
       ],
       "c": 2,
       "u": "Het juiste begrip is «Klassiek grondrecht»: een vrijheidsrecht dat de overheid moet respecteren.",
@@ -156863,7 +156863,7 @@ var VAKKEN = [
       "o": [
        "Passief kiesrecht",
        "Actief kiesrecht",
-       "Politiek systeem",
+       "Sociaal grondrecht",
        "Politieke stroming"
       ],
       "c": 0,
@@ -157176,7 +157176,7 @@ var VAKKEN = [
        "Coalitievorming",
        "Decentralisatie",
        "Belangengroep",
-       "Belangenafweging"
+       "Onderzoeksvraag"
       ],
       "c": 0,
       "u": "Het juiste begrip is «Coalitievorming»: formatie, meerderheid in de Kamer.",
@@ -157185,7 +157185,7 @@ var VAKKEN = [
      {
       "v": "Welke term past bij: \"formatie, meerderheid in de Kamer\"?",
       "o": [
-       "Belangengroep",
+       "Regeerakkoord",
        "Decentralisatie",
        "Belangenafweging",
        "Coalitievorming"
@@ -158530,7 +158530,7 @@ var VAKKEN = [
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"de samenhang tussen mensen in een samenleving\"?",
       "o": [
-       "Sociale controle",
+       "Trias politica",
        "Sociaal kapitaal",
        "Sociale cohesie",
        "Cultureel kapitaal"
@@ -158543,8 +158543,8 @@ var VAKKEN = [
       "v": "Welke term past bij: \"de samenhang tussen mensen in een samenleving\"?",
       "o": [
        "Sociaal kapitaal",
-       "Economisch kapitaal",
        "Cultureel kapitaal",
+       "Verzorgingsstaat",
        "Sociale cohesie"
       ],
       "c": 3,
@@ -158674,10 +158674,10 @@ var VAKKEN = [
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"geld en bezit\"?",
       "o": [
-       "Sociale ongelijkheid",
+       "Cultureel kapitaal",
        "Sociale reproductie",
        "Economisch kapitaal",
-       "Cultureel kapitaal"
+       "Aselecte steekproef"
       ],
       "c": 2,
       "u": "Het juiste begrip is «Economisch kapitaal»: geld en bezit.",
@@ -158686,7 +158686,7 @@ var VAKKEN = [
      {
       "v": "Welke term past bij: \"geld en bezit\"?",
       "o": [
-       "Sociale ongelijkheid",
+       "Pluriforme samenleving",
        "Cultureel kapitaal",
        "Economisch kapitaal",
        "Sociale reproductie"
@@ -158736,7 +158736,7 @@ var VAKKEN = [
       "o": [
        "Economisch kapitaal",
        "Sociale reproductie",
-       "Sociale ongelijkheid",
+       "Sociaal kapitaal",
        "Cultureel kapitaal"
       ],
       "c": 3,
@@ -158770,10 +158770,10 @@ var VAKKEN = [
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"je netwerk en contacten\"?",
       "o": [
-       "Sociale reproductie",
+       "Economisch kapitaal",
        "Sociaal kapitaal",
        "Actief kiesrecht",
-       "Cultureel kapitaal"
+       "Sociale cohesie"
       ],
       "c": 1,
       "u": "Het juiste begrip is «Sociaal kapitaal»: je netwerk en contacten.",
@@ -159438,8 +159438,8 @@ var VAKKEN = [
       "v": "Wat betekent «Lineair verband»?",
       "o": [
        "twee vergelijkingen met een gemeenschappelijke oplossing",
-       "met breuken en wortels doorrekenen zonder af te ronden",
        "één variabele uitdrukken en invullen in de andere vergelijking",
+       "met breuken en wortels doorrekenen zonder af te ronden",
        "een verband met een rechte lijn en een constante stijging"
       ],
       "c": 3,
@@ -159473,10 +159473,10 @@ var VAKKEN = [
      {
       "v": "Wat houdt «Lineair verband» in?",
       "o": [
+       "twee vergelijkingen met een gemeenschappelijke oplossing",
        "één variabele uitdrukken en invullen in de andere vergelijking",
-       "met breuken en wortels doorrekenen zonder af te ronden",
        "een verband met een rechte lijn en een constante stijging",
-       "twee vergelijkingen met een gemeenschappelijke oplossing"
+       "met breuken en wortels doorrekenen zonder af te ronden"
       ],
       "c": 2,
       "u": "«Lineair verband» betekent: een verband met een rechte lijn en een constante stijging.",
@@ -159557,10 +159557,10 @@ var VAKKEN = [
      {
       "v": "Wat betekent «Richtingscoëfficiënt»?",
       "o": [
-       "binnen/buiten het meetbereik schatten",
        "één geval dat een bewering weerlegt",
+       "binnen/buiten het meetbereik schatten",
        "de helling Δy/Δx van een rechte lijn",
-       "probleem → model → rekenen → terugvertalen"
+       "een vergelijking met x² als hoogste macht"
       ],
       "c": 2,
       "u": "«Richtingscoëfficiënt» betekent: de helling Δy/Δx van een rechte lijn.",
@@ -159593,9 +159593,9 @@ var VAKKEN = [
      {
       "v": "Wat houdt «Richtingscoëfficiënt» in?",
       "o": [
-       "de tweede verschillen zijn gelijk",
-       "binnen/buiten het meetbereik schatten",
        "één geval dat een bewering weerlegt",
+       "binnen/buiten het meetbereik schatten",
+       "de tweede verschillen zijn gelijk",
        "de helling Δy/Δx van een rechte lijn"
       ],
       "c": 3,
@@ -159666,7 +159666,7 @@ var VAKKEN = [
       "v": "Welk begrip hoort bij deze omschrijving: \"een vergelijking met x² als hoogste macht\"?",
       "o": [
        "Interpoleren/extrapoleren",
-       "Exponentieel verband",
+       "Richtingscoëfficiënt loodlijn",
        "Kwadratische vergelijking",
        "Exponentiële vergelijking"
       ],
@@ -159870,8 +159870,8 @@ var VAKKEN = [
       "v": "Wat betekent «Representaties»?",
       "o": [
        "tabel, grafiek, formule, woorden",
-       "lineair, kwadratisch, exponentieel, gebroken, wortel",
        "één geval dat een bewering weerlegt",
+       "de tweede verschillen zijn gelijk",
        "lineair, kwadratisch, exponentieel"
       ],
       "c": 0,
@@ -159919,8 +159919,8 @@ var VAKKEN = [
       "o": [
        "lineair, kwadratisch, exponentieel",
        "tabel, grafiek, formule, woorden",
-       "de tweede verschillen zijn gelijk",
-       "lineair, kwadratisch, exponentieel, gebroken, wortel"
+       "de helling Δy/Δx van een rechte lijn",
+       "de tweede verschillen zijn gelijk"
       ],
       "c": 0,
       "u": "«Verband herkennen» betekent: lineair, kwadratisch, exponentieel.",
@@ -160934,7 +160934,7 @@ var VAKKEN = [
        "Functietypen",
        "Transformatie",
        "Discriminant",
-       "Transformaties"
+       "Vergelijkingen"
       ],
       "c": 2,
       "u": "Het juiste begrip is «Discriminant»: de uitdrukking die het aantal nulpunten van een parabool bepaalt.",
@@ -161063,7 +161063,7 @@ var VAKKEN = [
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"een lijn die de grafiek steeds dichter nadert maar niet raakt\"?",
       "o": [
-       "Inproduct",
+       "Snijpunt",
        "Amplitude",
        "Asymptoot",
        "Spiegeling"
@@ -161197,7 +161197,7 @@ var VAKKEN = [
       "o": [
        "een vergelijking met de onbekende in de exponent",
        "lijn die de grafiek nadert maar niet raakt",
-       "de lijn die de grafiek in precies één punt raakt",
+       "de lengte 2π/b waarna een sinusfunctie zich herhaalt",
        "de uitwijking |a| van een sinusfunctie a·sin(bx)"
       ],
       "c": 0,
@@ -161234,7 +161234,7 @@ var VAKKEN = [
        "Spiegeling",
        "Amplitude",
        "Asymptoot",
-       "Asymptoten"
+       "Congruent"
       ],
       "c": 1,
       "u": "Het juiste begrip is «Amplitude»: de uitwijking |a| van een sinusfunctie a·sin(bx).",
@@ -161243,7 +161243,7 @@ var VAKKEN = [
      {
       "v": "Welke term past bij: \"de uitwijking |a| van een sinusfunctie a·sin(bx)\"?",
       "o": [
-       "Asymptoten",
+       "Parabool",
        "Amplitude",
        "Asymptoot",
        "Spiegeling"
@@ -161388,9 +161388,9 @@ var VAKKEN = [
       "v": "Wat betekent «Functietypen»?",
       "o": [
        "tabel, grafiek, formule, woorden",
-       "een vergelijking met de onbekende in de exponent",
+       "een verband dat bij elke invoer precies één uitvoer geeft",
        "lineair, kwadratisch, exponentieel, gebroken, wortel",
-       "lineair, kwadratisch, exponentieel"
+       "een vergelijking met de onbekende in de exponent"
       ],
       "c": 2,
       "u": "«Functietypen» betekent: lineair, kwadratisch, exponentieel, gebroken, wortel.",
@@ -161402,7 +161402,7 @@ var VAKKEN = [
        "Discriminant",
        "Transformatie",
        "Functietypen",
-       "Transformaties"
+       "Gelijkvormig"
       ],
       "c": 2,
       "u": "Het juiste begrip is «Functietypen»: lineair, kwadratisch, exponentieel, gebroken, wortel.",
@@ -161411,7 +161411,7 @@ var VAKKEN = [
      {
       "v": "Welke term past bij: \"lineair, kwadratisch, exponentieel, gebroken, wortel\"?",
       "o": [
-       "Transformaties",
+       "Asymptoten",
        "Functietypen",
        "Discriminant",
        "Transformatie"
@@ -161423,10 +161423,10 @@ var VAKKEN = [
      {
       "v": "Wat houdt «Functietypen» in?",
       "o": [
-       "een verband dat bij elke invoer precies één uitvoer geeft",
+       "een invoerwaarde waar de grafiek de horizontale as snijdt",
        "lineair, kwadratisch, exponentieel, gebroken, wortel",
        "een vergelijking met de onbekende in de exponent",
-       "een punt waar twee grafieken elkaar kruisen, uit f(x) = g(x)"
+       "een lijn die de grafiek steeds dichter nadert maar niet raakt"
       ],
       "c": 1,
       "u": "«Functietypen» betekent: lineair, kwadratisch, exponentieel, gebroken, wortel.",
@@ -161436,7 +161436,7 @@ var VAKKEN = [
       "v": "Wat betekent «Asymptoten»?",
       "o": [
        "de verzameling toegestane invoerwaarden",
-       "de uitwijking |a| van een sinusfunctie a·sin(bx)",
+       "een vergelijking met de onbekende in de exponent",
        "de verzameling mogelijke uitvoerwaarden",
        "lijn die de grafiek nadert maar niet raakt"
       ],
@@ -161448,9 +161448,9 @@ var VAKKEN = [
       "v": "Welk begrip hoort bij deze omschrijving: \"lijn die de grafiek nadert maar niet raakt\"?",
       "o": [
        "Spiegeling",
-       "Asymptoot",
+       "Amplitude",
        "Asymptoten",
-       "Functietypen"
+       "Sinusregel"
       ],
       "c": 2,
       "u": "Het juiste begrip is «Asymptoten»: lijn die de grafiek nadert maar niet raakt.",
@@ -161460,8 +161460,8 @@ var VAKKEN = [
       "v": "Welke term past bij: \"lijn die de grafiek nadert maar niet raakt\"?",
       "o": [
        "Spiegeling",
-       "Asymptoot",
        "Amplitude",
+       "Snijpunt",
        "Asymptoten"
       ],
       "c": 3,
@@ -161473,8 +161473,8 @@ var VAKKEN = [
       "o": [
        "lijn die de grafiek nadert maar niet raakt",
        "de verzameling mogelijke uitvoerwaarden",
-       "de verzameling toegestane invoerwaarden",
-       "de uitwijking |a| van een sinusfunctie a·sin(bx)"
+       "een vergelijking met de onbekende in de exponent",
+       "de verzameling toegestane invoerwaarden"
       ],
       "c": 0,
       "u": "«Asymptoten» betekent: lijn die de grafiek nadert maar niet raakt.",
@@ -161544,9 +161544,9 @@ var VAKKEN = [
       "v": "Welk begrip hoort bij deze omschrijving: \"algebraïsch of met de GR oplossen\"?",
       "o": [
        "Transformaties",
-       "Discriminant",
+       "Representaties",
        "Vergelijkingen",
-       "Transformatie"
+       "Discriminant"
       ],
       "c": 2,
       "u": "Het juiste begrip is «Vergelijkingen»: algebraïsch of met de GR oplossen.",
@@ -161557,8 +161557,8 @@ var VAKKEN = [
       "o": [
        "Transformatie",
        "Vergelijkingen",
-       "Functietypen",
-       "Transformaties"
+       "Discriminant",
+       "Functietypen"
       ],
       "c": 1,
       "u": "Het juiste begrip is «Vergelijkingen»: algebraïsch of met de GR oplossen.",
@@ -162216,7 +162216,7 @@ var VAKKEN = [
       "o": [
        "de regel bij drie zijden of twee zijden met de ingesloten hoek",
        "de rc waarvan het product met de gegeven rc gelijk aan −1 is",
-       "de maximale uitwijking ten opzichte van de evenwichtsstand",
+       "twee vectoren met inproduct 0, of lijnen met rc₁·rc₂ = −1",
        "een verband met een constante toename; de grafiek is een rechte lijn"
       ],
       "c": 3,
@@ -162251,7 +162251,7 @@ var VAKKEN = [
       "v": "Wat houdt «Lineair verband» in?",
       "o": [
        "de rc waarvan het product met de gegeven rc gelijk aan −1 is",
-       "in een rechthoekige driehoek: overstaande gedeeld door aanliggende",
+       "de maximale uitwijking ten opzichte van de evenwichtsstand",
        "een verband met een constante toename; de grafiek is een rechte lijn",
        "de regel bij drie zijden of twee zijden met de ingesloten hoek"
       ],
@@ -162275,7 +162275,7 @@ var VAKKEN = [
       "v": "Welk begrip hoort bij deze omschrijving: \"een verband met een vaste groeifactor per stap\"?",
       "o": [
        "Toenemende stijging",
-       "Stelsel vergelijkingen",
+       "Lineair verband",
        "Kwadratisch verband",
        "Exponentieel verband"
       ],
@@ -162287,9 +162287,9 @@ var VAKKEN = [
       "v": "Welke term past bij: \"een verband met een vaste groeifactor per stap\"?",
       "o": [
        "Exponentieel verband",
-       "Cirkelvergelijking",
+       "Lineair verband",
        "Kwadratisch verband",
-       "Lineair verband"
+       "Richtingscoëfficiënt loodlijn"
       ],
       "c": 0,
       "u": "Het juiste begrip is «Exponentieel verband»: een verband met een vaste groeifactor per stap.",
@@ -162323,8 +162323,8 @@ var VAKKEN = [
       "v": "Welk begrip hoort bij deze omschrijving: \"een verband waarvan de grafiek een parabool is\"?",
       "o": [
        "Kwadratisch verband",
-       "Afnemende stijging",
        "Toenemende stijging",
+       "Cirkelvergelijking",
        "Exponentieel verband"
       ],
       "c": 0,
@@ -162562,7 +162562,7 @@ var VAKKEN = [
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"de rc waarvan het product met de gegeven rc gelijk aan −1 is\"?",
       "o": [
-       "Exponentiële vergelijking",
+       "Stelsel vergelijkingen",
        "Richtingscoëfficiënt loodlijn",
        "Kwadratische vergelijking",
        "Exponentieel verband"
@@ -162599,9 +162599,9 @@ var VAKKEN = [
       "v": "Wat betekent «Sinus»?",
       "o": [
        "in een rechthoekige driehoek: overstaande gedeeld door schuinzijde",
-       "in een rechthoekige driehoek: aanliggende gedeeld door schuinzijde",
-       "een verband met een constante toename; de grafiek is een rechte lijn",
-       "in een rechthoekige driehoek: overstaande gedeeld door aanliggende"
+       "de regel bij drie zijden of twee zijden met de ingesloten hoek",
+       "twee vectoren met inproduct 0, of lijnen met rc₁·rc₂ = −1",
+       "een verband met een constante toename; de grafiek is een rechte lijn"
       ],
       "c": 0,
       "u": "«Sinus» betekent: in een rechthoekige driehoek: overstaande gedeeld door schuinzijde.",
@@ -162634,10 +162634,10 @@ var VAKKEN = [
      {
       "v": "Wat houdt «Sinus» in?",
       "o": [
-       "in een rechthoekige driehoek: aanliggende gedeeld door schuinzijde",
+       "een verband met een constante toename; de grafiek is een rechte lijn",
        "in een rechthoekige driehoek: overstaande gedeeld door schuinzijde",
-       "in een rechthoekige driehoek: overstaande gedeeld door aanliggende",
-       "een verband met een constante toename; de grafiek is een rechte lijn"
+       "de maximale uitwijking ten opzichte van de evenwichtsstand",
+       "de rc waarvan het product met de gegeven rc gelijk aan −1 is"
       ],
       "c": 1,
       "u": "«Sinus» betekent: in een rechthoekige driehoek: overstaande gedeeld door schuinzijde.",
@@ -162646,10 +162646,10 @@ var VAKKEN = [
      {
       "v": "Wat betekent «Cosinus»?",
       "o": [
-       "een verband met een constante toename; de grafiek is een rechte lijn",
-       "in een rechthoekige driehoek: overstaande gedeeld door aanliggende",
+       "de rc waarvan het product met de gegeven rc gelijk aan −1 is",
+       "de regel bij drie zijden of twee zijden met de ingesloten hoek",
        "in een rechthoekige driehoek: aanliggende gedeeld door schuinzijde",
-       "in een rechthoekige driehoek: overstaande gedeeld door schuinzijde"
+       "een verband met een constante toename; de grafiek is een rechte lijn"
       ],
       "c": 2,
       "u": "«Cosinus» betekent: in een rechthoekige driehoek: aanliggende gedeeld door schuinzijde.",
@@ -162683,9 +162683,9 @@ var VAKKEN = [
       "v": "Wat houdt «Cosinus» in?",
       "o": [
        "in een rechthoekige driehoek: aanliggende gedeeld door schuinzijde",
-       "in een rechthoekige driehoek: overstaande gedeeld door aanliggende",
-       "in een rechthoekige driehoek: overstaande gedeeld door schuinzijde",
-       "een verband met een constante toename; de grafiek is een rechte lijn"
+       "een verband met een constante toename; de grafiek is een rechte lijn",
+       "de rc waarvan het product met de gegeven rc gelijk aan −1 is",
+       "twee vectoren met inproduct 0, of lijnen met rc₁·rc₂ = −1"
       ],
       "c": 0,
       "u": "«Cosinus» betekent: in een rechthoekige driehoek: aanliggende gedeeld door schuinzijde.",
@@ -162695,9 +162695,9 @@ var VAKKEN = [
       "v": "Wat betekent «Tangens»?",
       "o": [
        "in een rechthoekige driehoek: overstaande gedeeld door aanliggende",
-       "in een rechthoekige driehoek: aanliggende gedeeld door schuinzijde",
-       "in een rechthoekige driehoek: overstaande gedeeld door schuinzijde",
-       "de regel bij drie zijden of twee zijden met de ingesloten hoek"
+       "de regel bij drie zijden of twee zijden met de ingesloten hoek",
+       "een verband met een constante toename; de grafiek is een rechte lijn",
+       "de rc waarvan het product met de gegeven rc gelijk aan −1 is"
       ],
       "c": 0,
       "u": "«Tangens» betekent: in een rechthoekige driehoek: overstaande gedeeld door aanliggende.",
@@ -162731,9 +162731,9 @@ var VAKKEN = [
       "v": "Wat houdt «Tangens» in?",
       "o": [
        "in een rechthoekige driehoek: overstaande gedeeld door aanliggende",
-       "in een rechthoekige driehoek: overstaande gedeeld door schuinzijde",
-       "de regel bij drie zijden of twee zijden met de ingesloten hoek",
-       "in een rechthoekige driehoek: aanliggende gedeeld door schuinzijde"
+       "een verband met een constante toename; de grafiek is een rechte lijn",
+       "de maximale uitwijking ten opzichte van de evenwichtsstand",
+       "twee vectoren met inproduct 0, of lijnen met rc₁·rc₂ = −1"
       ],
       "c": 0,
       "u": "«Tangens» betekent: in een rechthoekige driehoek: overstaande gedeeld door aanliggende.",
@@ -162934,10 +162934,10 @@ var VAKKEN = [
      {
       "v": "Wat betekent «Pythagoras»?",
       "o": [
+       "de tweede verschillen zijn gelijk",
        "één geval dat een bewering weerlegt",
-       "hoek ↔ verhouding van zijden (SOS-CAS-TOA)",
        "zijden in een rechthoekige driehoek",
-       "de standaardvorm (x − a)² + (y − b)² = r²"
+       "a₁b₁ + a₂b₂; is 0 bij loodrechte vectoren"
       ],
       "c": 2,
       "u": "«Pythagoras» betekent: zijden in een rechthoekige driehoek.",
@@ -162970,9 +162970,9 @@ var VAKKEN = [
      {
       "v": "Wat houdt «Pythagoras» in?",
       "o": [
-       "a₁b₁ + a₂b₂; is 0 bij loodrechte vectoren",
+       "de standaardvorm (x − a)² + (y − b)² = r²",
        "zijden in een rechthoekige driehoek",
-       "een grootheid met een grootte en een richting",
+       "a₁b₁ + a₂b₂; is 0 bij loodrechte vectoren",
        "hoek ↔ verhouding van zijden (SOS-CAS-TOA)"
       ],
       "c": 1,
@@ -162982,9 +162982,9 @@ var VAKKEN = [
      {
       "v": "Wat betekent «Sin, cos, tan»?",
       "o": [
+       "een verband met een vaste groeifactor per stap",
        "de standaardvorm (x − a)² + (y − b)² = r²",
        "a₁b₁ + a₂b₂; is 0 bij loodrechte vectoren",
-       "een verband met een vaste groeifactor per stap",
        "hoek ↔ verhouding van zijden (SOS-CAS-TOA)"
       ],
       "c": 3,
@@ -163755,9 +163755,9 @@ var VAKKEN = [
      {
       "v": "Wat betekent «Afgeleide»?",
       "o": [
-       "de regel [f(g(x))]' = f'(g(x))·g'(x) voor samengestelde functies",
-       "de oppervlakte tussen een grafiek en de horizontale as",
        "de regel voor het differentiëren van een product van functies",
+       "de oppervlakte tussen een grafiek en de horizontale as",
+       "een invoerwaarde waar de grafiek de horizontale as snijdt",
        "de functie die de helling van de grafiek in elk punt geeft"
       ],
       "c": 3,
@@ -163791,10 +163791,10 @@ var VAKKEN = [
      {
       "v": "Wat houdt «Afgeleide» in?",
       "o": [
+       "het punt waar de grafiek van hol naar bol overgaat",
        "de regel voor het differentiëren van een product van functies",
-       "de oppervlakte tussen een grafiek en de horizontale as",
        "de functie die de helling van de grafiek in elk punt geeft",
-       "de regel [f(g(x))]' = f'(g(x))·g'(x) voor samengestelde functies"
+       "de oppervlakte tussen een grafiek en de horizontale as"
       ],
       "c": 2,
       "u": "«Afgeleide» betekent: de functie die de helling van de grafiek in elk punt geeft.",
@@ -163827,7 +163827,7 @@ var VAKKEN = [
      {
       "v": "Welke term past bij: \"de lijn die de grafiek in precies één punt raakt\"?",
       "o": [
-       "Extreem",
+       "Integraal",
        "Buigpunt",
        "Raaklijn",
        "Extremum"
@@ -163839,8 +163839,8 @@ var VAKKEN = [
      {
       "v": "Wat houdt «Raaklijn» in?",
       "o": [
+       "de oppervlakte tussen een grafiek en de horizontale as",
        "de mate van stijging of daling van een grafiek",
-       "een functie waarvan de afgeleide de gegeven functie is",
        "het punt waar de grafiek van hol naar bol overgaat",
        "de lijn die de grafiek in precies één punt raakt"
       ],
@@ -163899,8 +163899,8 @@ var VAKKEN = [
      {
       "v": "Wat betekent «Buigpunt»?",
       "o": [
-       "een functie waarvan de afgeleide de gegeven functie is",
-       "de regel voor het differentiëren van een product van functies",
+       "het bepalen van de afgeleide van een functie",
+       "de grafiek van de helling van een functie",
        "het punt waar de grafiek van hol naar bol overgaat",
        "de lijn die de grafiek in precies één punt raakt"
       ],
@@ -163914,7 +163914,7 @@ var VAKKEN = [
        "Raaklijn",
        "Buigpunt",
        "Extremum",
-       "Extreem"
+       "Integraal"
       ],
       "c": 1,
       "u": "Het juiste begrip is «Buigpunt»: het punt waar de grafiek van hol naar bol overgaat.",
@@ -164068,8 +164068,8 @@ var VAKKEN = [
       "v": "Welke term past bij: \"de mate van stijging of daling van een grafiek\"?",
       "o": [
        "Extreem",
+       "Afgeleide",
        "Buigpunt",
-       "Extremum",
        "Helling"
       ],
       "c": 3,
@@ -164092,8 +164092,8 @@ var VAKKEN = [
       "v": "Wat betekent «Toenemende stijging»?",
       "o": [
        "een punt waar de helling nul is",
-       "stijgen dat steeds langzamer gaat",
        "een top of dal waar f'(x) = 0",
+       "verschuiven en vermenigvuldigen",
        "stijgen dat steeds sneller gaat"
       ],
       "c": 3,
@@ -164127,8 +164127,8 @@ var VAKKEN = [
      {
       "v": "Wat houdt «Toenemende stijging» in?",
       "o": [
+       "een maximum of minimum van een functie",
        "een punt waar de helling nul is",
-       "stijgen dat steeds langzamer gaat",
        "een top of dal waar f'(x) = 0",
        "stijgen dat steeds sneller gaat"
       ],
@@ -164139,10 +164139,10 @@ var VAKKEN = [
      {
       "v": "Wat betekent «Afnemende stijging»?",
       "o": [
-       "een punt waar de helling nul is",
        "een top of dal waar f'(x) = 0",
+       "algebraïsch of met de GR oplossen",
        "stijgen dat steeds langzamer gaat",
-       "stijgen dat steeds sneller gaat"
+       "een punt waar de helling nul is"
       ],
       "c": 2,
       "u": "«Afnemende stijging» betekent: stijgen dat steeds langzamer gaat.",
@@ -164176,7 +164176,7 @@ var VAKKEN = [
       "v": "Wat houdt «Afnemende stijging» in?",
       "o": [
        "stijgen dat steeds langzamer gaat",
-       "stijgen dat steeds sneller gaat",
+       "een maximum of minimum van een functie",
        "een punt waar de helling nul is",
        "een top of dal waar f'(x) = 0"
       ],
@@ -164212,9 +164212,9 @@ var VAKKEN = [
       "v": "Wat betekent «Stationair punt»?",
       "o": [
        "een punt waar de helling nul is",
+       "een top of dal waar f'(x) = 0",
        "stijgen dat steeds sneller gaat",
-       "stijgen dat steeds langzamer gaat",
-       "met Pythagoras uit de kentallen"
+       "de tweede verschillen zijn gelijk"
       ],
       "c": 0,
       "u": "«Stationair punt» betekent: een punt waar de helling nul is.",
@@ -164247,10 +164247,10 @@ var VAKKEN = [
      {
       "v": "Wat houdt «Stationair punt» in?",
       "o": [
-       "een top of dal waar f'(x) = 0",
+       "stijgen dat steeds langzamer gaat",
        "een punt waar de helling nul is",
-       "stijgen dat steeds sneller gaat",
-       "stijgen dat steeds langzamer gaat"
+       "een maximum of minimum van een functie",
+       "een top of dal waar f'(x) = 0"
       ],
       "c": 1,
       "u": "«Stationair punt» betekent: een punt waar de helling nul is.",
@@ -164260,8 +164260,8 @@ var VAKKEN = [
       "v": "Wat betekent «Kettingregel»?",
       "o": [
        "de regel [f(g(x))]' = f'(g(x))·g'(x) voor samengestelde functies",
+       "de uitdrukking die het aantal nulpunten van een parabool bepaalt",
        "de oppervlakte tussen een grafiek en de horizontale as",
-       "de regel voor het differentiëren van een product van functies",
        "de functie die de helling van de grafiek in elk punt geeft"
       ],
       "c": 0,
@@ -164295,10 +164295,10 @@ var VAKKEN = [
      {
       "v": "Wat houdt «Kettingregel» in?",
       "o": [
-       "de regel voor het differentiëren van een product van functies",
        "de functie die de helling van de grafiek in elk punt geeft",
+       "de oppervlakte tussen een grafiek en de horizontale as",
        "de regel [f(g(x))]' = f'(g(x))·g'(x) voor samengestelde functies",
-       "de oppervlakte tussen een grafiek en de horizontale as"
+       "een functie waarvan de afgeleide de gegeven functie is"
       ],
       "c": 2,
       "u": "«Kettingregel» betekent: de regel [f(g(x))]' = f'(g(x))·g'(x) voor samengestelde functies.",
@@ -164307,10 +164307,10 @@ var VAKKEN = [
      {
       "v": "Wat betekent «Productregel»?",
       "o": [
-       "de oppervlakte tussen een grafiek en de horizontale as",
-       "de regel [f(g(x))]' = f'(g(x))·g'(x) voor samengestelde functies",
+       "een functie waarvan de afgeleide de gegeven functie is",
+       "de functie die de helling van de grafiek in elk punt geeft",
        "de regel voor het differentiëren van een product van functies",
-       "de functie die de helling van de grafiek in elk punt geeft"
+       "de oppervlakte tussen een grafiek en de horizontale as"
       ],
       "c": 2,
       "u": "«Productregel» betekent: de regel voor het differentiëren van een product van functies.",
@@ -164320,7 +164320,7 @@ var VAKKEN = [
       "v": "Wat houdt «Productregel» in?",
       "o": [
        "de oppervlakte tussen een grafiek en de horizontale as",
-       "de regel [f(g(x))]' = f'(g(x))·g'(x) voor samengestelde functies",
+       "een functie waarvan de afgeleide de gegeven functie is",
        "de regel voor het differentiëren van een product van functies",
        "de functie die de helling van de grafiek in elk punt geeft"
       ],
@@ -164331,7 +164331,7 @@ var VAKKEN = [
      {
       "v": "Wat betekent «Extremum»?",
       "o": [
-       "stijgen dat steeds langzamer gaat",
+       "pijl met richting en grootte",
        "een top of dal waar f'(x) = 0",
        "een punt waar de helling nul is",
        "stijgen dat steeds sneller gaat"
@@ -164357,7 +164357,7 @@ var VAKKEN = [
       "o": [
        "Raaklijn",
        "Buigpunt",
-       "Helling",
+       "Integraal",
        "Extremum"
       ],
       "c": 3,
@@ -164368,7 +164368,7 @@ var VAKKEN = [
       "v": "Wat houdt «Extremum» in?",
       "o": [
        "stijgen dat steeds sneller gaat",
-       "stijgen dat steeds langzamer gaat",
+       "een maximum of minimum van een functie",
        "een punt waar de helling nul is",
        "een top of dal waar f'(x) = 0"
       ],
@@ -164379,8 +164379,8 @@ var VAKKEN = [
      {
       "v": "Wat betekent «Differentiëren»?",
       "o": [
-       "een maximum of minimum van een functie",
        "de lijn die de grafiek in precies één punt raakt",
+       "de grafiek van de helling van een functie",
        "het bepalen van de afgeleide van een functie",
        "de mate van stijging of daling van een grafiek"
       ],
@@ -164415,8 +164415,8 @@ var VAKKEN = [
      {
       "v": "Wat houdt «Differentiëren» in?",
       "o": [
-       "de grafiek van de helling van een functie",
        "de mate van stijging of daling van een grafiek",
+       "de grafiek van de helling van een functie",
        "het bepalen van de afgeleide van een functie",
        "de lijn die de grafiek in precies één punt raakt"
       ],
@@ -165076,10 +165076,10 @@ var VAKKEN = [
      {
       "v": "Wat betekent «Vector»?",
       "o": [
-       "de lengte 2π/b waarna y = sin(bx) zich herhaalt",
-       "een grootheid met een lengte en een richting",
        "a/sin A = b/sin B, bij twee hoeken en een zijde",
-       "de standaardvorm (x − a)² + (y − b)² = r²"
+       "een grootheid met een lengte en een richting",
+       "dezelfde vorm maar mogelijk een andere grootte",
+       "precies even groot en van dezelfde vorm"
       ],
       "c": 1,
       "u": "«Vector» betekent: een grootheid met een lengte en een richting.",
@@ -165112,10 +165112,10 @@ var VAKKEN = [
      {
       "v": "Wat houdt «Vector» in?",
       "o": [
-       "de lengte 2π/b waarna y = sin(bx) zich herhaalt",
+       "dezelfde vorm maar mogelijk een andere grootte",
        "precies even groot en van dezelfde vorm",
        "een grootheid met een lengte en een richting",
-       "dezelfde vorm maar mogelijk een andere grootte"
+       "de lengte 2π/b waarna y = sin(bx) zich herhaalt"
       ],
       "c": 2,
       "u": "«Vector» betekent: een grootheid met een lengte en een richting.",
@@ -165232,7 +165232,7 @@ var VAKKEN = [
      {
       "v": "Welk begrip hoort bij deze omschrijving: \"dezelfde vorm maar mogelijk een andere grootte\"?",
       "o": [
-       "Sinusregel",
+       "Functietypen",
        "Cosinusregel",
        "Gelijkvormig",
        "Kettingregel"
@@ -165244,7 +165244,7 @@ var VAKKEN = [
      {
       "v": "Welke term past bij: \"dezelfde vorm maar mogelijk een andere grootte\"?",
       "o": [
-       "Sinusregel",
+       "Inproduct",
        "Cosinusregel",
        "Middelpunt",
        "Gelijkvormig"
@@ -165556,9 +165556,9 @@ var VAKKEN = [
      {
       "v": "Wat betekent «Cosinusregel»?",
       "o": [
-       "a₁b₁ + a₂b₂; 0 bij loodrecht, negatief bij een stompe hoek",
        "het grafisch optellen van vectoren door ze achter elkaar te leggen",
        "twee lijnen met rc₁·rc₂ = −1 of vectoren met inproduct 0",
+       "a₁b₁ + a₂b₂; 0 bij loodrecht, negatief bij een stompe hoek",
        "de regel bij drie zijden of twee zijden met de ingesloten hoek"
       ],
       "c": 3,
@@ -165594,8 +165594,8 @@ var VAKKEN = [
       "o": [
        "de regel bij drie zijden of twee zijden met de ingesloten hoek",
        "a₁b₁ + a₂b₂; 0 bij loodrecht, negatief bij een stompe hoek",
-       "een hoekmaat waarbij de booglengte gelijk is aan de straal",
-       "de afstand van het middelpunt tot de rand van een cirkel"
+       "het grafisch optellen van vectoren door ze achter elkaar te leggen",
+       "een hoekmaat waarbij de booglengte gelijk is aan de straal"
       ],
       "c": 0,
       "u": "«Cosinusregel» betekent: de regel bij drie zijden of twee zijden met de ingesloten hoek.",
@@ -165607,7 +165607,7 @@ var VAKKEN = [
        "een hoekmaat waarbij de booglengte gelijk is aan de straal",
        "twee lijnen met rc₁·rc₂ = −1 of vectoren met inproduct 0",
        "de afstand van het middelpunt tot de rand van een cirkel",
-       "a/sin A = b/sin B, bij twee hoeken en een zijde"
+       "de regel bij drie zijden of twee zijden met de ingesloten hoek"
       ],
       "c": 1,
       "u": "«Loodrecht» betekent: twee lijnen met rc₁·rc₂ = −1 of vectoren met inproduct 0.",
@@ -165640,9 +165640,9 @@ var VAKKEN = [
      {
       "v": "Wat houdt «Loodrecht» in?",
       "o": [
-       "de afstand van het middelpunt tot de rand van een cirkel",
-       "twee lijnen met rc₁·rc₂ = −1 of vectoren met inproduct 0",
        "een hoekmaat waarbij de booglengte gelijk is aan de straal",
+       "twee lijnen met rc₁·rc₂ = −1 of vectoren met inproduct 0",
+       "de afstand van het middelpunt tot de rand van een cirkel",
        "de regel bij drie zijden of twee zijden met de ingesloten hoek"
       ],
       "c": 1,
@@ -165652,9 +165652,9 @@ var VAKKEN = [
      {
       "v": "Wat betekent «Periode»?",
       "o": [
-       "dezelfde vorm maar mogelijk een andere grootte",
        "a/sin A = b/sin B, bij twee hoeken en een zijde",
-       "een grootheid met een lengte en een richting",
+       "de standaardvorm (x − a)² + (y − b)² = r²",
+       "dezelfde vorm maar mogelijk een andere grootte",
        "de lengte 2π/b waarna y = sin(bx) zich herhaalt"
       ],
       "c": 3,
@@ -165688,8 +165688,8 @@ var VAKKEN = [
      {
       "v": "Wat houdt «Periode» in?",
       "o": [
-       "a/sin A = b/sin B, bij twee hoeken en een zijde",
        "dezelfde vorm maar mogelijk een andere grootte",
+       "a/sin A = b/sin B, bij twee hoeken en een zijde",
        "de lengte 2π/b waarna y = sin(bx) zich herhaalt",
        "een grootheid met een lengte en een richting"
       ],
@@ -165749,9 +165749,9 @@ var VAKKEN = [
       "v": "Wat betekent «Vectoren»?",
       "o": [
        "pijl met richting en grootte",
-       "verschuiven en vermenigvuldigen",
+       "een top of dal waar f'(x) = 0",
        "met Pythagoras uit de kentallen",
-       "een top of dal waar f'(x) = 0"
+       "verschuiven en vermenigvuldigen"
       ],
       "c": 0,
       "u": "«Vectoren» betekent: pijl met richting en grootte.",
@@ -165785,8 +165785,8 @@ var VAKKEN = [
       "v": "Wat houdt «Vectoren» in?",
       "o": [
        "met Pythagoras uit de kentallen",
+       "de standaardvorm (x − a)² + (y − b)² = r²",
        "precies even groot en van dezelfde vorm",
-       "tussen twee punten",
        "pijl met richting en grootte"
       ],
       "c": 3,

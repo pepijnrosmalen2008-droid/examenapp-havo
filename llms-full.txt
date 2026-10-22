@@ -12,7 +12,7 @@ Voor examenkandidaten die zich voorbereiden op het centraal examen (CE) en de sc
 |---|---|---|---|
 | vakken | 12 | 16 | 12 |
 | domeinen (onderdelen van het examenprogramma) | 59 | 84 | 77 |
-| oefenvragen | 9.762 | 10.589 | 2.523 |
+| oefenvragen | 9.762 | 10.587 | 2.523 |
 | vragen in examenstijl met modelantwoord | 775 | 406 | 0 |
 | begrippen met definitie | 1.582 | 1.965 | 799 |
 | leerdoelen met een eigen module (samenvatting, vragen, begrippen) | 83 | 24 | 0 |
