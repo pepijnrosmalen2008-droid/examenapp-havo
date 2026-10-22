@@ -1,0 +1,689 @@
+{
+ "id": "D6",
+ "lo": "nl.D.6",
+ "gs": 2,
+ "naam": "Drogredenen herkennen en vermijden",
+ "beschrijving": "Je herkent drogredenen in een betoog, zowel onjuist gebruikte argumentatieschema's als overtreden discussieregels, en je vermijdt ze in je eigen argumentatie.",
+ "ceStatus": "CE+SE",
+ "binas": "",
+ "val": "",
+ "onderwerpen": [
+  "Wat een drogreden is",
+  "Onjuist oorzaak-gevolg en onjuist kenmerk",
+  "Overdrijven en vals dilemma",
+  "Overhaaste generalisatie, verkeerde vergelijking en onjuist beroep op autoriteit",
+  "Persoonlijke aanval en ontduiken van de bewijslast",
+  "Cirkelredenering, vertekenen en bespelen van publiek"
+ ],
+ "sam": "Een drogreden is een onjuist gebruik van een argumentatieschema of een overtreding van een discussieregel. Bij schema's: onjuist oorzaak-gevolg (na elkaar is niet daardoor), onjuist kenmerk (andere kenmerken genegeerd), overdrijven van voor- of nadelen, vals dilemma, overhaaste generalisatie, verkeerde vergelijking en onjuist beroep op autoriteit (ondeskundig of belanghebbend). Bij discussieregels: persoonlijke aanval, ontduiken van de bewijslast, cirkelredenering, vertekenen van een standpunt en bespelen van publiek.",
+ "begrippen": [
+  {
+   "t": "Drogreden",
+   "d": "Een onjuist gebruik van een argumentatieschema of een overtreding van een discussieregel."
+  },
+  {
+   "t": "Overhaaste generalisatie",
+   "d": "Een standpunt beargumenteren met te weinig of niet-representatieve voorbeelden."
+  },
+  {
+   "t": "Vals dilemma",
+   "d": "Doen alsof er maar twee mogelijkheden zijn terwijl er meer zijn."
+  },
+  {
+   "t": "Overdrijven van voor- of nadelen",
+   "d": "De gevolgen van een handeling schromelijk overdrijven."
+  },
+  {
+   "t": "Verkeerde vergelijking",
+   "d": "Twee situaties vergelijken die op relevante punten verschillen."
+  },
+  {
+   "t": "Onjuist beroep op autoriteit",
+   "d": "Een beroep op een ondeskundige, belanghebbende of zichzelf tegensprekende bron."
+  },
+  {
+   "t": "Persoonlijke aanval",
+   "d": "De tegenstander beschuldigen van onkunde of slechte eigenschappen in plaats van zijn argumenten te weerleggen."
+  },
+  {
+   "t": "Ontduiken van de bewijslast",
+   "d": "Weigeren om argumenten voor een standpunt te geven."
+  },
+  {
+   "t": "Cirkelredenering",
+   "d": "Een standpunt onderbouwen door het in andere woorden te herhalen."
+  },
+  {
+   "t": "Vertekenen van een standpunt",
+   "d": "Het standpunt van de tegenstander onjuist weergeven."
+  },
+  {
+   "t": "Bespelen van publiek",
+   "d": "Een beroep doen op emoties om het publiek te winnen."
+  },
+  {
+   "t": "Discussieregel",
+   "d": "Een regel voor een eerlijke discussie, zoals dat je argumenten geeft en de ander serieus neemt."
+  }
+ ],
+ "sv": [
+  {
+   "v": "Welke drogreden zit in dit fragment?",
+   "o": [
+    "overhaaste generalisatie, want er is één schoolleider",
+    "onjuist beroep op oorzaak en gevolg",
+    "vals dilemma, want er zijn twee dingen",
+    "persoonlijke aanval, want de schoolleider wordt genoemd"
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 1,
+   "u": "Na elkaar is niet daardoor.",
+   "uo": [
+    "Koos je \"overhaaste generalisatie, want er is één...\"? Dan denk je dat er te weinig gevallen zijn. Het gaat om het afleiden van een oorzaak, uit twee dingen die na elkaar gebeuren.",
+    "Klopt: uit het na elkaar optreden wordt een oorzaak afgeleid.",
+    "Koos je \"vals dilemma, want er zijn twee dingen\"? Dan denk je dat er een keuze tussen twee dingen wordt opgelegd. Er is geen keuze, maar een afgeleide oorzaak.",
+    "Koos je \"persoonlijke aanval, want de schoolleider wordt...\"? Dan denk je dat de schrijver de schoolleider aanvalt. Hij valt hem niet aan, maar maakt hem verantwoordelijk zonder bewijs."
+   ],
+   "uh": "Is er een bewezen oorzaak?",
+   "ctx": "Sinds de nieuwe schoolleider er is, zijn de cijfers gedaald. De schoolleider is dus de oorzaak van de slechte cijfers. Andere dingen zijn volgens de schrijver niet veranderd, al zijn er twee toetsweken minder."
+  },
+  {
+   "v": "Welke drogreden zit in dit fragment?",
+   "o": [
+    "overdrijven van nadelen, want de jeugd gaat de verkeerde kant op",
+    "cirkelredenering, want het standpunt wordt herhaald",
+    "persoonlijke aanval, want de jeugd wordt genoemd",
+    "vals dilemma"
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 2,
+   "u": "Vals dilemma: er zijn meer mogelijkheden.",
+   "uo": [
+    "Koos je \"overdrijven van nadelen, want de jeugd gaat de...\"? Dan denk je dat de nadruk op de nadelen de drogreden is. Het gaat om de beperkte keuze, er is geen derde mogelijkheid genoemd.",
+    "Koos je \"cirkelredenering, want het standpunt wordt herhaald\"? Dan denk je dat het standpunt wordt herhaald. Er wordt een keuze opgelegd, geen standpunt herhaald.",
+    "Koos je \"persoonlijke aanval, want de jeugd wordt genoemd\"? Dan denk je dat de jeugd wordt aangevallen. De drogreden is de beperkte keuze, niet een aanval op personen.",
+    "Klopt: er worden maar twee mogelijkheden genoemd terwijl er meer zijn."
+   ],
+   "uh": "Zijn er echt maar twee opties?",
+   "ctx": "Of we bouwen een nieuw zwembad, of de jeugd gaat de verkeerde kant op. Er is geen derde mogelijkheid."
+  },
+  {
+   "v": "Welke drogreden zit in dit fragment?",
+   "o": [
+    "overhaaste generalisatie",
+    "verkeerde vergelijking, want honden worden vergeleken",
+    "onjuist beroep op autoriteit, want buren spreken",
+    "vals dilemma, want honden zijn blaffers of niet"
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 3,
+   "u": "Te weinig gevallen voor een algemene uitspraak.",
+   "uo": [
+    "Klopt: twee honden zijn te weinig om over alle honden te oordelen.",
+    "Koos je \"verkeerde vergelijking, want honden worden...\"? Dan denk je dat honden worden vergeleken. Er worden twee voorbeelden gebruikt, om over alle honden te oordelen.",
+    "Koos je \"onjuist beroep op autoriteit, want buren spreken\"? Dan denk je dat de buren als autoriteit optreden. Ze zijn voorbeelden, geen deskundige bron.",
+    "Koos je \"vals dilemma, want honden zijn blaffers of niet\"? Dan denk je dat een keuze wordt opgelegd. Er worden twee gevallen veralgemeniseerd, dat is een andere drogreden."
+   ],
+   "uh": "Hoeveel gevallen zijn er?",
+   "ctx": "Mijn twee buren hebben allebei een hond die de hele nacht blaft. Alle honden zijn dus luidruchtig en moeten uit de wijk worden verwijderd."
+  },
+  {
+   "v": "Welke drogreden zit in dit fragment?",
+   "o": [
+    "persoonlijke aanval, want het gaat om een verbod",
+    "vals dilemma, want rennen mag niet of wel",
+    "cirkelredenering",
+    "overhaaste generalisatie, want er is één regel"
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 5,
+   "u": "Cirkelredenering: het standpunt wordt herhaald als argument.",
+   "uo": [
+    "Koos je \"persoonlijke aanval, want het gaat om een verbod\"? Dan denk je dat een verbod een aanval is. Het gaat om het standpunt dat zichzelf bewijst, dat is een cirkelredenering.",
+    "Koos je \"vals dilemma, want rennen mag niet of wel\"? Dan denk je dat een keuze wordt opgelegd. Het argument herhaalt het standpunt, en dat is een cirkel.",
+    "Klopt: het standpunt wordt in andere woorden als argument herhaald.",
+    "Koos je \"overhaaste generalisatie, want er is één regel\"? Dan denk je dat een regel een generalisatie is. Het gaat om herhaling van het standpunt, en niet om te weinig voorbeelden."
+   ],
+   "uh": "Is het argument nieuw?",
+   "ctx": "Het is verboden om in de gang te rennen, want rennen is in de gang niet toegestaan."
+  },
+  {
+   "v": "Welke drogreden zit in het antwoord van de docent?",
+   "o": [
+    "persoonlijke aanval, want de docent wijst de leerling af",
+    "vals dilemma, want de docent noemt twee dingen",
+    "vertekenen van een standpunt",
+    "overdrijven van nadelen, want niemand leert nog iets"
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 5,
+   "u": "Vertekenen: het standpunt anders weergeven dan het is.",
+   "uo": [
+    "Koos je \"persoonlijke aanval, want de docent wijst de...\"? Dan denk je dat de docent de leerling aanvalt. Hij maakt het standpunt anders dan het is, en valt dat aan.",
+    "Koos je \"vals dilemma, want de docent noemt twee dingen\"? Dan denk je dat de docent twee opties noemt. Hij overdrijft het standpunt, en maakt het zo makkelijk te weerleggen.",
+    "Klopt: \"minder huiswerk\" wordt voorgesteld als \"helemaal geen huiswerk\".",
+    "Koos je \"overdrijven van nadelen, want niemand leert nog iets\"? Dan denk je dat de nadelen het probleem zijn. Het probleem is dat het standpunt wordt vertekend, voordat de nadelen worden genoemd."
+   ],
+   "uh": "Zegt de leerling dat echt?",
+   "ctx": "Een leerling zegt: \"Ik wil minder huiswerk.\" De docent antwoordt: \"Je wilt dus helemaal geen huiswerk, en dan leert niemand meer iets.\""
+  },
+  {
+   "v": "Welke drogreden zit in dit fragment?",
+   "o": [
+    "bespelen van publiek",
+    "persoonlijke aanval, want hij richt zich tot de stemmers",
+    "cirkelredenering, want het standpunt wordt herhaald",
+    "vals dilemma, want de stemmers moeten kiezen"
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 5,
+   "u": "Bespelen van publiek: een beroep op emoties.",
+   "uo": [
+    "Klopt: de schrijver roept emoties op in plaats van argumenten te geven.",
+    "Koos je \"persoonlijke aanval, want hij richt zich tot de...\"? Dan denk je dat de stemmers worden aangevallen. De schrijver spreekt hun emoties aan, dat is het bespelen van publiek.",
+    "Koos je \"cirkelredenering, want het standpunt wordt herhaald\"? Dan denk je dat het standpunt wordt herhaald. Er staan geen argumenten, alleen een beroep op emoties.",
+    "Koos je \"vals dilemma, want de stemmers moeten kiezen\"? Dan denk je dat er een keuze wordt opgelegd. De schrijver roept medelijden op, en dat is het bespelen van publiek."
+   ],
+   "uh": "Zijn er argumenten?",
+   "ctx": "Denk aan al die verdrietige kinderen die dit hun leven lang met zich meedragen als u tegen deze maatregel stemt, en kijk hen straks maar in de ogen!"
+  },
+  {
+   "v": "Waaruit bestaat een drogreden?",
+   "o": [
+    "uit een argument dat niet waar is",
+    "uit een standpunt waar niemand het mee eens is",
+    "uit een zin met een spelfout",
+    "onjuist gebruik van een schema of overtreding van een discussieregel"
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 0,
+   "u": "Drogreden: onjuist schema of overtreden discussieregel.",
+   "uo": [
+    "Koos je \"uit een argument dat niet waar is\"? Dan denk je dat een onwaar argument een drogreden is. Een drogreden gaat om de redenering, niet om de waarheid van een uitspraak.",
+    "Koos je \"uit een standpunt waar niemand het mee eens is\"? Dan denk je dat een onaanvaardbaar standpunt een drogreden is. Een drogreden is een fout in het argumenteren, niet in het standpunt zelf.",
+    "Koos je \"uit een zin met een spelfout\"? Dan denk je dat spelfouten drogredenen zijn. Een drogreden is een fout in de redenering, niet in de spelling.",
+    "Klopt: een drogreden is een foutieve manier om te argumenteren."
+   ],
+   "uh": "Wat gaat er fout?"
+  },
+  {
+   "v": "Welke drogreden zit in dit fragment?",
+   "o": [
+    "overdrijven van voordelen, want de auto is groot",
+    "onjuist beroep op een kenmerk",
+    "onjuist beroep op autoriteit, want de verkoper noemt iets",
+    "vals dilemma, want veilig of onveilig"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 1,
+   "u": "Alleen het gunstige kenmerk wordt genoemd.",
+   "uo": [
+    "Koos je \"overdrijven van voordelen, want de auto is groot\"? Dan denk je dat het voordeel wordt overdreven. Het gaat om het negeren van andere kenmerken, niet om overdrijving.",
+    "Klopt: één kenmerk telt, terwijl andere relevante kenmerken worden genegeerd.",
+    "Koos je \"onjuist beroep op autoriteit, want de verkoper...\"? Dan denk je dat de verkoper als bron wordt aangehaald. Hij noemt een kenmerk, en negeert de rest.",
+    "Koos je \"vals dilemma, want veilig of onveilig\"? Dan denk je dat er twee keuzes zijn. Er wordt één kenmerk benadrukt, zonder andere relevante kenmerken."
+   ],
+   "uh": "Welke kenmerken ontbreken?",
+   "ctx": "Deze auto is veilig, want hij is groot. Dat hij geen airbags heeft en slechte remmen, noemt de verkoper niet."
+  },
+  {
+   "v": "Welke drogreden zit in dit fragment?",
+   "o": [
+    "vals dilemma, want er zijn twee uitkomsten",
+    "overhaaste generalisatie, want alle leerlingen worden genoemd",
+    "persoonlijke aanval, want leerlingen worden genoemd",
+    "overdrijven van nadelen"
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 2,
+   "u": "Overdrijven: extreme gevolgen die niet logisch volgen.",
+   "uo": [
+    "Koos je \"vals dilemma, want er zijn twee uitkomsten\"? Dan denk je dat er twee keuzes zijn. De gevolgen worden overdreven, dat is een andere drogreden.",
+    "Koos je \"overhaaste generalisatie, want alle leerlingen...\"? Dan denk je dat te weinig gevallen worden gebruikt. De gevolgen worden overdreven voorgesteld, dat is een overdrijving.",
+    "Koos je \"persoonlijke aanval, want leerlingen worden genoemd\"? Dan denk je dat leerlingen worden aangevallen. Het gaat om overdreven gevolgen, niet om een aanval.",
+    "Klopt: de gevolgen van een frisdrankautomaat worden schromelijk overdreven."
+   ],
+   "uh": "Volgt dit echt uit een automaat?",
+   "ctx": "Als we de kantine een frisdrankautomaat geven, zijn alle leerlingen binnen een maand verslaafd aan suiker en slaagt niemand meer voor het examen."
+  },
+  {
+   "v": "Welke drogreden zit in dit fragment?",
+   "o": [
+    "overhaaste generalisatie, want er is één school",
+    "verkeerde vergelijking",
+    "vals dilemma, want het verbod werkt of niet",
+    "persoonlijke aanval, want er wordt een school afgekeurd"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 3,
+   "u": "Verkeerde vergelijking: de situaties verschillen relevant.",
+   "uo": [
+    "Koos je \"overhaaste generalisatie, want er is één school\"? Dan denk je dat een school te weinig is. De fout is dat de scholen niet vergelijkbaar zijn, dat is een verkeerde vergelijking.",
+    "Klopt: de twee scholen verschillen op relevante punten.",
+    "Koos je \"vals dilemma, want het verbod werkt of niet\"? Dan denk je dat een keuze wordt opgelegd. De situaties worden vergeleken, terwijl ze verschillen.",
+    "Koos je \"persoonlijke aanval, want er wordt een school...\"? Dan denk je dat de vrijeschool wordt aangevallen. De situaties worden onjuist vergeleken, er is geen aanval."
+   ],
+   "uh": "Lijken de scholen op elkaar?",
+   "ctx": "Een telefoonverbod werkt goed op een strenge militaire school, dus het werkt ook op onze vrijeschool."
+  },
+  {
+   "v": "Waarom is het beroep op Rob een onjuist beroep op autoriteit?",
+   "o": [
+    "omdat hij beroemd is",
+    "omdat een acteur nooit gelijk heeft",
+    "hij is geen deskundige en heeft belang",
+    "omdat hij over een kuur spreekt"
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 3,
+   "u": "Autoriteit: deskundig en zonder belang.",
+   "uo": [
+    "Koos je \"omdat hij beroemd is\"? Dan denk je dat roem het probleem is. Het gaat om deskundigheid en belang, niet om bekendheid.",
+    "Koos je \"omdat een acteur nooit gelijk heeft\"? Dan denk je dat acteurs altijd ongelijk hebben. Het gaat om deze bron, die niet deskundig is en belang heeft.",
+    "Klopt: een beroep op een ondeskundige of belanghebbende bron is onjuist.",
+    "Koos je \"omdat hij over een kuur spreekt\"? Dan denk je dat het onderwerp het probleem is. Het gaat om deskundigheid en belang, niet om het onderwerp."
+   ],
+   "uh": "Weet hij het en wie verdient eraan?",
+   "ctx": "De bekende acteur Rob zegt dat deze kuur het beste is voor je rug. Rob verdient geld aan het merk van de kuur en hij is geen arts."
+  },
+  {
+   "v": "Welke discussieregel wordt hier overtreden?",
+   "o": [
+    "de persoonlijke aanval",
+    "het ontduiken van de bewijslast",
+    "de cirkelredenering",
+    "het bespelen van publiek"
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 4,
+   "u": "Persoonlijke aanval: de persoon in plaats van het argument.",
+   "uo": [
+    "Klopt: de directeur wordt aangevallen in plaats van zijn argument te weerleggen.",
+    "Koos je \"het ontduiken van de bewijslast\"? Dan denk je dat het bewijs wordt ontlopen. Er wordt een persoon aangevallen, geen bewijs ontdoken.",
+    "Koos je \"de cirkelredenering\"? Dan denk je dat het standpunt wordt herhaald. Er wordt een persoon aangevallen, geen cirkel gemaakt.",
+    "Koos je \"het bespelen van publiek\"? Dan denk je dat emoties worden opgeroepen. De spreker valt een persoon aan, dat is een andere regel."
+   ],
+   "uh": "Gaat het over het argument?",
+   "ctx": "De directeur wil een telefoonverbod. Maar zijn eigen kinderen hebben altijd hun telefoon bij zich, dus je hoeft niet naar hem te luisteren."
+  },
+  {
+   "v": "Welke drogreden zit in dit fragment?",
+   "o": [
+    "ontduiken van de bewijslast",
+    "cirkelredenering, want het standpunt wordt herhaald",
+    "persoonlijke aanval, want hij weigert te antwoorden",
+    "vals dilemma, want hij noemt twee dingen"
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 4,
+   "u": "Ontduiken: weigeren om argumenten te geven.",
+   "uo": [
+    "Klopt: de spreker weigert argumenten te geven.",
+    "Koos je \"cirkelredenering, want het standpunt wordt herhaald\"? Dan denk je dat het standpunt in andere woorden wordt herhaald. De spreker geeft helemaal geen argument, dat is het ontduiken van de bewijslast.",
+    "Koos je \"persoonlijke aanval, want hij weigert te antwoorden\"? Dan denk je dat weigeren een aanval is. Hij valt niemand aan, hij ontloopt het bewijs.",
+    "Koos je \"vals dilemma, want hij noemt twee dingen\"? Dan denk je dat er een keuze wordt opgelegd. Er wordt geen argument genoemd, dat is het ontduiken van de bewijslast."
+   ],
+   "uh": "Is er een argument?",
+   "ctx": "Ik vind dat de school later moet beginnen. Waarom? Dat hoef ik niet uit te leggen, dat weet iedereen."
+  },
+  {
+   "v": "Welke drogreden zit in \"het verbod is dus de oorzaak van de ruzies\"?",
+   "o": [
+    "overhaaste generalisatie, want er zijn ruzies",
+    "vals dilemma, want er is een verbod of geen verbod",
+    "onjuist beroep op oorzaak en gevolg",
+    "persoonlijke aanval, want de directeur wordt genoemd"
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 1,
+   "u": "Na elkaar is niet daardoor.",
+   "uo": [
+    "Koos je \"overhaaste generalisatie, want er zijn ruzies\"? Dan denk je dat ruzies te weinig voorbeelden zijn. Het gaat om een afgeleide oorzaak, zonder bewijs.",
+    "Koos je \"vals dilemma, want er is een verbod of geen verbod\"? Dan denk je dat er twee keuzes zijn. De fout is dat een oorzaak wordt afgeleid, alleen uit de volgorde in de tijd.",
+    "Klopt: uit het na elkaar optreden wordt een oorzaak afgeleid.",
+    "Koos je \"persoonlijke aanval, want de directeur wordt genoemd\"? Dan denk je dat de directeur wordt aangevallen. Het gaat om een afgeleide oorzaak, zonder bewijs."
+   ],
+   "uh": "Is er bewijs voor het verband?",
+   "ctx": "Een telefoonverbod op school is onzin. Sinds de directeur het idee lanceerde, is de sfeer in de gangen gespannen; het verbod is dus de oorzaak van de ruzies. Wie voor het verbod is, houdt niet van vrijheid. Op een strenge militaire school waar het verbod werkt, zijn geen ruzies, en dus hoeft onze vrijeschool zich nergens zorgen over te maken. Bovendien blijkt uit een rondvraag onder mijn twee beste vrienden dat álle leerlingen tegen zijn. Dat het verbod onzin is, spreekt voor zich, want zoiets is nu eenmaal onzin."
+  },
+  {
+   "v": "Welke drogreden zit in \"Wie voor het verbod is, houdt niet van vrijheid\"?",
+   "o": [
+    "vertekenen van een standpunt, want het standpunt klopt niet",
+    "persoonlijke aanval",
+    "cirkelredenering, want het verbod wordt herhaald",
+    "bespelen van publiek, want vrijheid is een emotioneel woord"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 4,
+   "u": "Persoonlijke aanval: beschuldigen van slechte eigenschappen.",
+   "uo": [
+    "Koos je \"vertekenen van een standpunt, want het standpunt...\"? Dan denk je dat het standpunt wordt vertekend. Er worden slechte eigenschappen toegekend aan voorstanders, dus het is een aanval op personen.",
+    "Klopt: tegenstanders worden afgeschilderd als vijanden van vrijheid.",
+    "Koos je \"cirkelredenering, want het verbod wordt herhaald\"? Dan denk je dat het standpunt wordt herhaald. Er worden mensen beschuldigd, dat is een persoonlijke aanval.",
+    "Koos je \"bespelen van publiek, want vrijheid is een...\"? Dan denk je dat emoties worden bespeeld. De voorstanders worden beschuldigd, dat is een persoonlijke aanval."
+   ],
+   "uh": "Wordt de persoon aangevallen?",
+   "ctx": "Een telefoonverbod op school is onzin. Sinds de directeur het idee lanceerde, is de sfeer in de gangen gespannen; het verbod is dus de oorzaak van de ruzies. Wie voor het verbod is, houdt niet van vrijheid. Op een strenge militaire school waar het verbod werkt, zijn geen ruzies, en dus hoeft onze vrijeschool zich nergens zorgen over te maken. Bovendien blijkt uit een rondvraag onder mijn twee beste vrienden dat álle leerlingen tegen zijn. Dat het verbod onzin is, spreekt voor zich, want zoiets is nu eenmaal onzin."
+  },
+  {
+   "v": "Welke drogreden zit in de verwijzing naar de strenge militaire school?",
+   "o": [
+    "overhaaste generalisatie, want er is één school",
+    "onjuist beroep op autoriteit, want de school weet het",
+    "vals dilemma, want het verbod werkt of niet",
+    "verkeerde vergelijking"
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 3,
+   "u": "Verkeerde vergelijking: situaties lijken niet op elkaar.",
+   "uo": [
+    "Koos je \"overhaaste generalisatie, want er is één school\"? Dan denk je dat één school te weinig is. De fout zit in de vergelijking zelf, omdat de scholen niet op elkaar lijken.",
+    "Koos je \"onjuist beroep op autoriteit, want de school weet...\"? Dan denk je dat de school als deskundige wordt aangehaald. Ze wordt vergeleken, terwijl ze afwijkt.",
+    "Koos je \"vals dilemma, want het verbod werkt of niet\"? Dan denk je dat een keuze wordt opgelegd. Er wordt een situatie vergeleken, die relevant verschilt.",
+    "Klopt: een militaire school verschilt relevant van een vrijeschool."
+   ],
+   "uh": "Lijken de scholen op elkaar?",
+   "ctx": "Een telefoonverbod op school is onzin. Sinds de directeur het idee lanceerde, is de sfeer in de gangen gespannen; het verbod is dus de oorzaak van de ruzies. Wie voor het verbod is, houdt niet van vrijheid. Op een strenge militaire school waar het verbod werkt, zijn geen ruzies, en dus hoeft onze vrijeschool zich nergens zorgen over te maken. Bovendien blijkt uit een rondvraag onder mijn twee beste vrienden dat álle leerlingen tegen zijn. Dat het verbod onzin is, spreekt voor zich, want zoiets is nu eenmaal onzin."
+  },
+  {
+   "v": "Welke drogreden zit in de rondvraag onder twee vrienden die \"álle leerlingen\" noemt?",
+   "o": [
+    "verkeerde vergelijking, want vrienden worden vergeleken",
+    "overhaaste generalisatie",
+    "onjuist beroep op autoriteit, want vrienden zijn bronnen",
+    "persoonlijke aanval, want leerlingen worden aangevallen"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 3,
+   "u": "Overhaaste generalisatie: te weinig voorbeelden.",
+   "uo": [
+    "Koos je \"verkeerde vergelijking, want vrienden worden...\"? Dan denk je dat vrienden worden vergeleken. Het gaat om te weinig voorbeelden, niet om een vergelijking.",
+    "Klopt: twee vrienden zijn te weinig voor een uitspraak over alle leerlingen.",
+    "Koos je \"onjuist beroep op autoriteit, want vrienden zijn...\"? Dan denk je dat vrienden een autoriteit zijn. Ze zijn voorbeelden, en te weinig voor het algemene standpunt.",
+    "Koos je \"persoonlijke aanval, want leerlingen worden...\"? Dan denk je dat leerlingen worden aangevallen. Het gaat om een veralgemenisering, van twee naar alle leerlingen."
+   ],
+   "uh": "Hoeveel leerlingen zijn gevraagd?",
+   "ctx": "Een telefoonverbod op school is onzin. Sinds de directeur het idee lanceerde, is de sfeer in de gangen gespannen; het verbod is dus de oorzaak van de ruzies. Wie voor het verbod is, houdt niet van vrijheid. Op een strenge militaire school waar het verbod werkt, zijn geen ruzies, en dus hoeft onze vrijeschool zich nergens zorgen over te maken. Bovendien blijkt uit een rondvraag onder mijn twee beste vrienden dat álle leerlingen tegen zijn. Dat het verbod onzin is, spreekt voor zich, want zoiets is nu eenmaal onzin."
+  },
+  {
+   "v": "Welke drogreden zit in \"Dat het verbod onzin is, spreekt voor zich, want zoiets is nu eenmaal onzin\"?",
+   "o": [
+    "cirkelredenering",
+    "ontduiken van de bewijslast, want er is geen argument",
+    "persoonlijke aanval, want de schrijver is stellig",
+    "vals dilemma, want het is onzin of niet"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 5,
+   "u": "Cirkelredenering: argument is het standpunt zelf.",
+   "uo": [
+    "Klopt: het standpunt wordt als argument herhaald.",
+    "Koos je \"ontduiken van de bewijslast, want er is geen...\"? Dan denk je dat alleen het bewijs wordt ontlopen. Het standpunt wordt herhaald als argument, dat is een cirkelredenering.",
+    "Koos je \"persoonlijke aanval, want de schrijver is stellig\"? Dan denk je dat een stellige toon een aanval is. Het gaat om herhaling van het standpunt, niet om een aanval.",
+    "Koos je \"vals dilemma, want het is onzin of niet\"? Dan denk je dat een keuze wordt opgelegd. Het argument herhaalt het standpunt, en dat is een cirkelredenering."
+   ],
+   "uh": "Is het argument nieuw?",
+   "ctx": "Een telefoonverbod op school is onzin. Sinds de directeur het idee lanceerde, is de sfeer in de gangen gespannen; het verbod is dus de oorzaak van de ruzies. Wie voor het verbod is, houdt niet van vrijheid. Op een strenge militaire school waar het verbod werkt, zijn geen ruzies, en dus hoeft onze vrijeschool zich nergens zorgen over te maken. Bovendien blijkt uit een rondvraag onder mijn twee beste vrienden dat álle leerlingen tegen zijn. Dat het verbod onzin is, spreekt voor zich, want zoiets is nu eenmaal onzin."
+  },
+  {
+   "v": "Welke drogreden zit in \"of we schaffen het huiswerk af, of de leerlingen gaan kapot aan stress\"?",
+   "o": [
+    "ontduiken van de bewijslast, want er wordt niets onderbouwd",
+    "persoonlijke aanval, want leerlingen worden genoemd",
+    "cirkelredenering, want er wordt gekozen",
+    "vals dilemma"
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 2,
+   "u": "Vals dilemma: meer opties dan twee.",
+   "uo": [
+    "Koos je \"ontduiken van de bewijslast, want er wordt niets...\"? Dan denk je dat er geen bewijs wordt gegeven. De fout is dat er maar twee opties worden genoemd, terwijl er meer mogelijkheden zijn.",
+    "Koos je \"persoonlijke aanval, want leerlingen worden genoemd\"? Dan denk je dat leerlingen worden aangevallen. Er worden twee opties opgelegd, dat is een vals dilemma.",
+    "Koos je \"cirkelredenering, want er wordt gekozen\"? Dan denk je dat het standpunt wordt herhaald. Er worden twee opties opgelegd, terwijl er meer zijn.",
+    "Klopt: er zijn meer mogelijkheden, zoals minder huiswerk."
+   ],
+   "uh": "Zijn er echt maar twee opties?",
+   "ctx": "De school moet kiezen: of we schaffen het huiswerk helemaal af, of de leerlingen gaan kapot aan stress. Een beroemde zanger, die nooit naar school is geweest en een app verkoopt die huiswerk overneemt, zegt dat huiswerk nutteloos is. De directeur zegt dat enig huiswerk nuttig is, en wil dus dat kinderen elke avond urenlang moeten werken. Wie huiswerk wil houden, wil dat kinderen ongelukkig zijn. Denk toch aan al die arme kinderen die elke avond huilend aan hun tafel zitten en nooit meer naar school durven!"
+  },
+  {
+   "v": "Waarom is het beroep op de beroemde zanger een onjuist beroep op autoriteit?",
+   "o": [
+    "omdat hij beroemd is",
+    "omdat zangers geen app kunnen verkopen",
+    "hij is niet deskundig en heeft belang bij zijn uitspraak",
+    "omdat hij het eens is met de schrijver"
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 3,
+   "u": "Autoriteit: deskundig en zonder belang.",
+   "uo": [
+    "Koos je \"omdat hij beroemd is\"? Dan denk je dat roem het probleem is. Het gaat om deskundigheid en belang, niet om bekendheid.",
+    "Koos je \"omdat zangers geen app kunnen verkopen\"? Dan denk je dat het verkopen het probleem is. Het gaat om belang bij de uitspraak, en om zijn gebrek aan deskundigheid.",
+    "Klopt: hij verkoopt een app die huiswerk overneemt en is nooit naar school geweest.",
+    "Koos je \"omdat hij het eens is met de schrijver\"? Dan denk je dat instemming het probleem is. Het gaat om deskundigheid en belang, en dat mist hier."
+   ],
+   "uh": "Weet hij het en wie verdient eraan?",
+   "ctx": "De school moet kiezen: of we schaffen het huiswerk helemaal af, of de leerlingen gaan kapot aan stress. Een beroemde zanger, die nooit naar school is geweest en een app verkoopt die huiswerk overneemt, zegt dat huiswerk nutteloos is. De directeur zegt dat enig huiswerk nuttig is, en wil dus dat kinderen elke avond urenlang moeten werken. Wie huiswerk wil houden, wil dat kinderen ongelukkig zijn. Denk toch aan al die arme kinderen die elke avond huilend aan hun tafel zitten en nooit meer naar school durven!"
+  },
+  {
+   "v": "Welke drogreden zit in \"Wie huiswerk wil houden, wil dat kinderen ongelukkig zijn\"?",
+   "o": [
+    "vertekenen van een standpunt, want hun standpunt klopt niet",
+    "vals dilemma, want er zijn twee groepen",
+    "persoonlijke aanval",
+    "bespelen van publiek, want het gaat over ongelukkig zijn"
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 4,
+   "u": "Persoonlijke aanval: slechte bedoelingen toeschrijven.",
+   "uo": [
+    "Koos je \"vertekenen van een standpunt, want hun standpunt...\"? Dan denk je dat het standpunt vertekend wordt. Er worden slechte eigenschappen aan personen toegekend, dus het is een persoonlijke aanval.",
+    "Koos je \"vals dilemma, want er zijn twee groepen\"? Dan denk je dat er twee groepen worden genoemd. De voorstanders worden beschuldigd, dat is een persoonlijke aanval.",
+    "Klopt: tegenstanders worden beschuldigd van slechte bedoelingen in plaats van weerlegd.",
+    "Koos je \"bespelen van publiek, want het gaat over ongelukkig...\"? Dan denk je dat emoties worden opgeroepen. De voorstanders worden beschuldigd, dat is een persoonlijke aanval."
+   ],
+   "uh": "Wordt de persoon of het argument aangepakt?",
+   "ctx": "De school moet kiezen: of we schaffen het huiswerk helemaal af, of de leerlingen gaan kapot aan stress. Een beroemde zanger, die nooit naar school is geweest en een app verkoopt die huiswerk overneemt, zegt dat huiswerk nutteloos is. De directeur zegt dat enig huiswerk nuttig is, en wil dus dat kinderen elke avond urenlang moeten werken. Wie huiswerk wil houden, wil dat kinderen ongelukkig zijn. Denk toch aan al die arme kinderen die elke avond huilend aan hun tafel zitten en nooit meer naar school durven!"
+  },
+  {
+   "v": "Welke drogreden zit in wat de directeur volgens de schrijver zegt?",
+   "o": [
+    "persoonlijke aanval, want de directeur wordt genoemd",
+    "overdrijven van nadelen, want urenlang werken",
+    "onjuist beroep op autoriteit, want de directeur zegt iets",
+    "vertekenen van een standpunt"
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 5,
+   "u": "Vertekenen: een standpunt anders weergeven.",
+   "uo": [
+    "Koos je \"persoonlijke aanval, want de directeur wordt genoemd\"? Dan denk je dat de directeur wordt aangevallen. Zijn standpunt wordt onjuist weergegeven, dat is vertekenen.",
+    "Koos je \"overdrijven van nadelen, want urenlang werken\"? Dan denk je dat het om overdreven nadelen gaat. Het probleem is het onjuist weergeven van een standpunt, niet de overdrijving zelf.",
+    "Koos je \"onjuist beroep op autoriteit, want de directeur...\"? Dan denk je dat de directeur als bron wordt aangehaald. Zijn standpunt wordt vertekend, dat is een andere drogreden.",
+    "Klopt: \"enig huiswerk\" wordt voorgesteld als \"elke avond urenlang werken\"."
+   ],
+   "uh": "Zegt de directeur dat echt?",
+   "ctx": "De school moet kiezen: of we schaffen het huiswerk helemaal af, of de leerlingen gaan kapot aan stress. Een beroemde zanger, die nooit naar school is geweest en een app verkoopt die huiswerk overneemt, zegt dat huiswerk nutteloos is. De directeur zegt dat enig huiswerk nuttig is, en wil dus dat kinderen elke avond urenlang moeten werken. Wie huiswerk wil houden, wil dat kinderen ongelukkig zijn. Denk toch aan al die arme kinderen die elke avond huilend aan hun tafel zitten en nooit meer naar school durven!"
+  },
+  {
+   "v": "Welke drogreden zit in \"Denk toch aan al die arme kinderen die huilend aan hun tafel zitten\"?",
+   "o": [
+    "bespelen van publiek",
+    "persoonlijke aanval, want kinderen worden genoemd",
+    "overdrijven van nadelen, want ze huilen en durven niet meer",
+    "vals dilemma, want er wordt gekozen"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 5,
+   "u": "Bespelen van publiek: een beroep op emoties.",
+   "uo": [
+    "Klopt: er wordt een beroep op emoties gedaan in plaats van op argumenten.",
+    "Koos je \"persoonlijke aanval, want kinderen worden genoemd\"? Dan denk je dat kinderen worden aangevallen. Er wordt medelijden opgeroepen, dat is het bespelen van publiek.",
+    "Koos je \"overdrijven van nadelen, want ze huilen en durven...\"? Dan denk je dat de overdrijving het enige is. Er wordt vooral een beroep gedaan op emoties, en dat is het bespelen van publiek.",
+    "Koos je \"vals dilemma, want er wordt gekozen\"? Dan denk je dat een keuze wordt opgelegd. Er wordt medelijden opgeroepen, dat is het bespelen van publiek."
+   ],
+   "uh": "Wordt er een argument gegeven?",
+   "ctx": "De school moet kiezen: of we schaffen het huiswerk helemaal af, of de leerlingen gaan kapot aan stress. Een beroemde zanger, die nooit naar school is geweest en een app verkoopt die huiswerk overneemt, zegt dat huiswerk nutteloos is. De directeur zegt dat enig huiswerk nuttig is, en wil dus dat kinderen elke avond urenlang moeten werken. Wie huiswerk wil houden, wil dat kinderen ongelukkig zijn. Denk toch aan al die arme kinderen die elke avond huilend aan hun tafel zitten en nooit meer naar school durven!"
+  },
+  {
+   "v": "Welke twee uitspraken overtreden een discussieregel in plaats van een argumentatieschema onjuist te gebruiken?",
+   "o": [
+    "B en D, de twee uitspraken over aantallen en keuzes",
+    "A en C",
+    "A en B, de twee uitspraken over personen",
+    "C en D, de twee uitspraken zonder bewijs"
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 0,
+   "u": "Discussieregels: persoonlijke aanval, bewijslast, cirkelredenering, vertekenen, publiek bespelen.",
+   "uo": [
+    "Koos je \"B en D, de twee uitspraken over aantallen en keuzes\"? Dan denk je dat generalisatie en dilemma regels overtreden. Ze gebruiken een schema onjuist, dus het zijn andere drogredenen.",
+    "Klopt: A is een persoonlijke aanval en C een cirkelredenering.",
+    "Koos je \"A en B, de twee uitspraken over personen\"? Dan denk je dat B ook een regel overtreedt. B generaliseert uit twee vrienden, en dat is een schemafout.",
+    "Koos je \"C en D, de twee uitspraken zonder bewijs\"? Dan denk je dat D een discussieregel overtreedt. D noemt twee opties terwijl er meer zijn, dat is een vals dilemma in een schema."
+   ],
+   "uh": "Gaat het om een schema of een regel?",
+   "ctx": "Vier uitspraken. A: \"Wie voor het verbod is, houdt niet van vrijheid.\" B: \"Alle leerlingen vinden het onzin, want mijn twee vrienden zeggen dat.\" C: \"Het is waar omdat het nu eenmaal zo is.\" D: \"Of we sluiten de school, of er komt geen onderwijs meer.\""
+  },
+  {
+   "v": "Wat is nodig om het oorzaak-gevolgargument over de schoolleider te laten kloppen?",
+   "o": [
+    "meer gevallen van dalende cijfers noemen",
+    "de schoolleider vragen of hij het eens is",
+    "de cijfers van het volgende jaar afwachten",
+    "een onderzoek dat het verband aantoont en andere oorzaken uitsluit"
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 1,
+   "u": "Oorzaak en gevolg: verband aantonen en andere oorzaken uitsluiten.",
+   "uo": [
+    "Koos je \"meer gevallen van dalende cijfers noemen\"? Dan denk je dat meer gevallen het verband bewijzen. Het gaat om het uitsluiten van andere oorzaken, niet om het aantal gevallen.",
+    "Koos je \"de schoolleider vragen of hij het eens is\"? Dan denk je dat zijn instemming het verband bewijst. Het gaat om bewijs voor het verband, niet om wat hij vindt.",
+    "Koos je \"de cijfers van het volgende jaar afwachten\"? Dan denk je dat afwachten het oplost. Het gaat om bewijs voor het verband, en dat levert alleen een nieuw cijfer.",
+    "Klopt: pas dan is er meer dan alleen een gelijktijdig optreden."
+   ],
+   "uh": "Welke andere oorzaken zijn er?",
+   "ctx": "Sinds de nieuwe schoolleider er is, zijn de cijfers gedaald. De schoolleider is dus de oorzaak van de slechte cijfers. Andere dingen zijn volgens de schrijver niet veranderd, al zijn er twee toetsweken minder."
+  },
+  {
+   "v": "Wat is nodig om de generalisatie over honden te onderbouwen?",
+   "o": [
+    "veel en representatieve voorbeelden",
+    "een derde hond die ook blaft",
+    "de mening van de buren",
+    "een sterke formulering van de bewering"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 3,
+   "u": "Generalisatie vraagt veel en representatieve voorbeelden.",
+   "uo": [
+    "Klopt: een generalisatie vraagt een voldoende groot en representatief aantal gevallen.",
+    "Koos je \"een derde hond die ook blaft\"? Dan denk je dat één hond meer volstaat. Het gaat om veel en representatieve gevallen, niet om één extra voorbeeld.",
+    "Koos je \"de mening van de buren\"? Dan denk je dat de buren de generalisatie onderbouwen. Het gaat om gevallen, niet om meningen.",
+    "Koos je \"een sterke formulering van de bewering\"? Dan denk je dat een sterkere formulering helpt. Het gaat om bewijs, niet om woordkeuze."
+   ],
+   "uh": "Hoeveel en welke gevallen?",
+   "ctx": "Mijn twee buren hebben allebei een hond die de hele nacht blaft. Alle honden zijn dus luidruchtig en moeten uit de wijk worden verwijderd."
+  },
+  {
+   "v": "Waarom is het bespelen van publiek een drogreden?",
+   "o": [
+    "omdat emoties nooit een rol spelen in een betoog",
+    "het doet een beroep op emoties in plaats van op argumenten",
+    "omdat de schrijver het publiek niet kent",
+    "omdat het publiek te veel emoties heeft"
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 5,
+   "u": "Publiek bespelen: emotie in plaats van argument.",
+   "uo": [
+    "Koos je \"omdat emoties nooit een rol spelen in een betoog\"? Dan denk je dat emoties verboden zijn. Het probleem is dat er geen argument wordt gegeven, en alleen medelijden wordt opgeroepen.",
+    "Klopt: de lezer wordt overtuigd zonder dat er een reden wordt gegeven.",
+    "Koos je \"omdat de schrijver het publiek niet kent\"? Dan denk je dat onbekendheid met het publiek het probleem is. Het probleem is het ontbreken van argumenten, bij een beroep op emotie.",
+    "Koos je \"omdat het publiek te veel emoties heeft\"? Dan denk je dat het publiek het probleem is. Het gaat om wat de schrijver doet, namelijk emoties gebruiken in plaats van argumenten."
+   ],
+   "uh": "Is er een reden gegeven?",
+   "ctx": "Een schrijver zegt: \"Denk aan al die verdrietige kinderen als u tegen stemt!\" De schrijver geeft geen argument voor het standpunt, maar roept alleen medelijden op."
+  }
+ ],
+ "oe": [
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een telefoonverbod op school is onzin. Sinds de directeur het idee lanceerde, is de sfeer in de gangen gespannen; het verbod is dus de oorzaak van de ruzies. Wie voor het verbod is, houdt niet van vrijheid. Op een strenge militaire school waar het verbod werkt, zijn geen ruzies, en dus hoeft onze vrijeschool zich nergens zorgen over te maken. Bovendien blijkt uit een rondvraag onder mijn twee beste vrienden dat álle leerlingen tegen zijn. Dat het verbod onzin is, spreekt voor zich, want zoiets is nu eenmaal onzin.",
+   "v": "Noem twee drogredenen uit tekst A en leg bij elk uit waarom het een drogreden is.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Bijvoorbeeld: onjuist oorzaak en gevolg, want na elkaar is niet daardoor (2p). Persoonlijke aanval, want de voorstanders worden beschuldigd in plaats van weerlegd (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "De school moet kiezen: of we schaffen het huiswerk helemaal af, of de leerlingen gaan kapot aan stress. Een beroemde zanger, die nooit naar school is geweest en een app verkoopt die huiswerk overneemt, zegt dat huiswerk nutteloos is. De directeur zegt dat enig huiswerk nuttig is, en wil dus dat kinderen elke avond urenlang moeten werken. Wie huiswerk wil houden, wil dat kinderen ongelukkig zijn. Denk toch aan al die arme kinderen die elke avond huilend aan hun tafel zitten en nooit meer naar school durven!",
+   "v": "Welke drogredenen zitten in het eerste en laatste deel van tekst B?",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Vals dilemma in de eerste zin, want er zijn meer opties dan twee (2p). Bespelen van publiek in de laatste zin, want er wordt een beroep op emoties gedaan (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Vier uitspraken. A: \"Wie voor het verbod is, houdt niet van vrijheid.\" B: \"Alle leerlingen vinden het onzin, want mijn twee vrienden zeggen dat.\" C: \"Het is waar omdat het nu eenmaal zo is.\" D: \"Of we sluiten de school, of er komt geen onderwijs meer.\"",
+   "v": "Deel de vier uitspraken in naar schema-fout of overtreden discussieregel en leg uit.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "A is een persoonlijke aanval en C een cirkelredenering, beide overtreden een discussieregel (2p). B is een overhaaste generalisatie en D een vals dilemma, beide onjuist gebruikte schema's (2p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een schrijver zegt: \"Denk aan al die verdrietige kinderen als u tegen stemt!\" De schrijver geeft geen argument voor het standpunt, maar roept alleen medelijden op.",
+   "v": "Leg uit welke drogreden de schrijver gebruikt en waarom dat geen argument is.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Bespelen van publiek (1p). Er wordt een beroep op emoties gedaan (1p). Er wordt geen reden voor het standpunt gegeven (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een leerling zegt: \"Ik wil minder huiswerk.\" De docent antwoordt: \"Je wilt dus helemaal geen huiswerk, en dan leert niemand meer iets.\"",
+   "v": "Beschrijf wat de docent verkeerd doet en herschrijf zijn antwoord zonder drogreden.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "De docent vertekent het standpunt: minder huiswerk wordt helemaal geen huiswerk (1p). Zo is het makkelijk te weerleggen (1p). Herschrijving, bijvoorbeeld: Minder huiswerk zou ik kunnen overwegen, maar wat moet er dan vervallen (1p)."
+  }
+ ]
+}
