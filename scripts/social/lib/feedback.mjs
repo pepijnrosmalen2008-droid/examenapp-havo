@@ -68,15 +68,22 @@ export function feedback(ev, { van, tot } = {}) {
   const vraagMeting = { vragenMetGenoegData: metData.length, gesteldTotaal: Object.values(per).reduce((a, s) => a + s.n, 0) };
 
   // ── Zoekvragen ──
+  // Typen gaat letter voor letter en met verbeteringen; per apparaat houden we alleen de
+  // langste versie van vragen die hetzelfde beginnen (eerste 10 tekens gelijk).
+  const perApp = {};
+  E.filter(e => e.event_type === 'vraag_slagio' && e.meta?.q).forEach(e => { (perApp[did(e) || '?'] ||= []).push(e); });
   const zv = {};
-  E.filter(e => e.event_type === 'vraag_slagio' && e.meta?.q).forEach(e => {
-    const k = nrm(e.meta.q); if (k.length < 3) return;
-    (zv[k] ||= { q: String(e.meta.q).slice(0, 120), n: 0, gevonden: 0, app: new Set() }); zv[k].n++; if (e.meta.gevonden) zv[k].gevonden++; if (did(e)) zv[k].app.add(did(e));
-  });
-  // Typen gaat letter voor letter: houd alleen de langste variant van een prefix-reeks per apparaat.
-  const sleutels = Object.keys(zv).sort((a, b) => b.length - a.length), houd = [];
-  for (const k of sleutels) if (!houd.some(h => h.startsWith(k))) houd.push(k);
-  const zoek = houd.map(k => ({ ...zv[k], app: zv[k].app.size }));
+  for (const [d, lijst] of Object.entries(perApp)) {
+    const gehouden = [];
+    for (const e of lijst.sort((x, y) => nrm(y.meta.q).length - nrm(x.meta.q).length)) {
+      const k = nrm(e.meta.q); if (k.length < 4 || (!k.includes(' ') && k.length < 5)) continue;
+      const gedeeld = g => { let i = 0; while (i < g.length && i < k.length && g[i] === k[i]) i++; return i; };
+      if (gehouden.some(g => gedeeld(g) >= Math.min(10, k.length - 1))) continue;   // tussenstand of verbetering van een langere vraag
+      gehouden.push(k);
+      (zv[k] ||= { q: String(e.meta.q).slice(0, 120), n: 0, gevonden: 0, app: new Set() }); zv[k].n++; if (e.meta.gevonden) zv[k].gevonden++; zv[k].app.add(d);
+    }
+  }
+  const zoek = Object.values(zv).map(z => ({ ...z, app: z.app.size }));
   const zoekvragen = { totaal: zoek.reduce((a, z) => a + z.n, 0), zonderAntwoord: zoek.filter(z => !z.gevonden).sort((a, b) => b.app - a.app || b.n - a.n).slice(0, 15), populair: zoek.filter(z => z.gevonden).sort((a, b) => b.app - a.app).slice(0, 10),
     aiVragen: E.filter(e => e.event_type === 'vraag_slagio_ai').map(e => String(e.meta?.q || '').slice(0, 120)).filter(Boolean).slice(-15) };
 
