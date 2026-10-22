@@ -1,0 +1,686 @@
+{
+ "id": "D3",
+ "lo": "nl.D.3",
+ "gs": 2,
+ "naam": "Feitelijke en waarderende argumenten onderscheiden",
+ "beschrijving": "Je onderscheidt feitelijke en waarderende uitspraken, beoordeelt of een feit controleerbaar is en of een bron betrouwbaar is, en ziet hoe schrijvers feiten en oordelen in een betoog gebruiken.",
+ "ceStatus": "CE+SE",
+ "binas": "",
+ "val": "",
+ "onderwerpen": [
+  "Feitelijke uitspraken herkennen",
+  "Waarderende uitspraken herkennen",
+  "Signaalwoorden en gemengde uitspraken",
+  "Controleerbaarheid van feiten",
+  "Betrouwbaarheid van bronnen en aanvaardbaarheid",
+  "Feit en waardering in een betoog"
+ ],
+ "sam": "Een feitelijke uitspraak claimt waar, waarschijnlijk of aannemelijk te zijn en is in principe controleerbaar. Een waarderende uitspraak zegt wat goed of slecht, mooi of lelijk, wenselijk of onwenselijk is en is niet waar of onwaar. Woorden als moet, hoort, mooi en schandalig wijzen op een waardering. Een feit aanvaard je als het bij je kennis past, direct controleerbaar is of van een betrouwbare bron komt: deskundig, zonder belang en zonder tegenspraak. Een waardering aanvaard je als ze past bij je kennis en opvattingen.",
+ "begrippen": [
+  {
+   "t": "Feitelijke uitspraak",
+   "d": "Een uitspraak waarvan degene die haar doet claimt dat ze waar, waarschijnlijk of aannemelijk is."
+  },
+  {
+   "t": "Feit",
+   "d": "Een feitelijke uitspraak die waar is."
+  },
+  {
+   "t": "Waarderende uitspraak",
+   "d": "Een uitspraak over wat goed of slecht, mooi of lelijk, wenselijk of onwenselijk is."
+  },
+  {
+   "t": "Waardeoordeel",
+   "d": "Een persoonlijk oordeel dat niet waar of onwaar is."
+  },
+  {
+   "t": "Controleerbaar",
+   "d": "In principe te toetsen door waarneming."
+  },
+  {
+   "t": "Aanvaardbaar",
+   "d": "Acceptabel voor de lezer: past bij kennis, is controleerbaar of komt van een betrouwbare bron."
+  },
+  {
+   "t": "Betrouwbare bron",
+   "d": "Een bron die deskundig is, geen belang heeft bij acceptatie en zichzelf niet tegenspreekt."
+  },
+  {
+   "t": "Belang",
+   "d": "Voordeel dat een bron heeft bij acceptatie van een uitspraak."
+  },
+  {
+   "t": "Deskundigheid",
+   "d": "Kennis van het terrein waarover de uitspraak gaat."
+  },
+  {
+   "t": "Voorspelling",
+   "d": "Een feitelijke uitspraak over de toekomst die later te toetsen is."
+  },
+  {
+   "t": "Objectief argument",
+   "d": "Een argument dat op een toetsbaar gegeven rust."
+  },
+  {
+   "t": "Subjectief argument",
+   "d": "Een argument dat rust op een persoonlijk oordeel of smaak."
+  }
+ ],
+ "sv": [
+  {
+   "v": "Welke uitspraak is feitelijk?",
+   "o": [
+    "uitspraak 2, want die zegt iets over het gebouw",
+    "uitspraak 1",
+    "uitspraak 3, want die noemt wat er gaat gebeuren",
+    "alle drie, want ze noemen het gebouw"
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 0,
+   "u": "Feitelijk: je kunt nagaan of het waar is.",
+   "uo": [
+    "Koos je \"uitspraak 2, want die zegt iets over het gebouw\"? Dan denk je dat elke uitspraak over het gebouw feitelijk is. Uitspraak 2 is een oordeel over uiterlijk, geen vaststaand gegeven.",
+    "Klopt: je kunt nagaan of het gebouw in 1998 is gebouwd.",
+    "Koos je \"uitspraak 3, want die noemt wat er gaat gebeuren\"? Dan denk je dat een uitspraak over wat er gebeurt feitelijk is. \"Moet\" geeft aan wat wenselijk is, dat is een waardering.",
+    "Koos je \"alle drie, want ze noemen het gebouw\"? Dan denk je dat het onderwerp bepaalt of iets een feit is. Het gaat om de aard van de uitspraak, en die verschilt per uitspraak."
+   ],
+   "uh": "Kun je het nagaan?",
+   "ctx": "Drie uitspraken over een schoolgebouw. Uitspraak 1: \"Het schoolgebouw is in 1998 gebouwd.\" Uitspraak 2: \"Het schoolgebouw is lelijk.\" Uitspraak 3: \"Het schoolgebouw moet worden gesloopt.\""
+  },
+  {
+   "v": "Welke uitspraak spreekt een oordeel uit over mooi of lelijk?",
+   "o": [
+    "uitspraak 1, want die noemt een jaartal",
+    "uitspraak 3, want die noemt het gebouw",
+    "geen van de drie, want alles is controleerbaar",
+    "uitspraak 2"
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 1,
+   "u": "Mooi of lelijk is een waardering.",
+   "uo": [
+    "Koos je \"uitspraak 1, want die noemt een jaartal\"? Dan denk je dat een jaartal een oordeel is. Een jaartal is een gegeven, geen mening over mooi of lelijk.",
+    "Koos je \"uitspraak 3, want die noemt het gebouw\"? Dan denk je dat uitspraak 3 over uiterlijk gaat. Ze gaat over wat er moet gebeuren, niet over mooi of lelijk.",
+    "Koos je \"geen van de drie, want alles is controleerbaar\"? Dan denk je dat alle uitspraken controleerbaar zijn. \"Lelijk\" is geen meetbare eigenschap, dus dit is een waardering.",
+    "Klopt: \"lelijk\" is een waardering van het uiterlijk."
+   ],
+   "uh": "Is het smaak?",
+   "ctx": "Drie uitspraken over een schoolgebouw. Uitspraak 1: \"Het schoolgebouw is in 1998 gebouwd.\" Uitspraak 2: \"Het schoolgebouw is lelijk.\" Uitspraak 3: \"Het schoolgebouw moet worden gesloopt.\""
+  },
+  {
+   "v": "Welk woord in uitspraak 3 laat zien dat het geen feit is?",
+   "o": [
+    "moet",
+    "gebouw, want het is een zelfstandig naamwoord",
+    "gesloopt, want dat is een werkwoord",
+    "worden, want het is een hulpwerkwoord"
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 1,
+   "u": "\"Moet\" geeft een wens of aanbeveling aan.",
+   "uo": [
+    "Klopt: \"moet\" zegt wat wenselijk is, niet wat is.",
+    "Koos je \"gebouw, want het is een zelfstandig naamwoord\"? Dan denk je dat de woordsoort het verschil maakt. Het onderwerp \"gebouw\" is neutraal, het gaat om het woord dat een wens uitdrukt.",
+    "Koos je \"gesloopt, want dat is een werkwoord\"? Dan denk je dat de handeling het verschil maakt. \"Gesloopt\" beschrijft wat er kan gebeuren, de waardering zit in \"moet\".",
+    "Koos je \"worden, want het is een hulpwerkwoord\"? Dan denk je dat een hulpwerkwoord waardeert. \"Worden\" is neutraal, het is het woord \"moet\" dat een wens uitdrukt."
+   ],
+   "uh": "Wat is wenselijk?",
+   "ctx": "Drie uitspraken over een schoolgebouw. Uitspraak 1: \"Het schoolgebouw is in 1998 gebouwd.\" Uitspraak 2: \"Het schoolgebouw is lelijk.\" Uitspraak 3: \"Het schoolgebouw moet worden gesloopt.\""
+  },
+  {
+   "v": "Wanneer is een feitelijke uitspraak controleerbaar?",
+   "o": [
+    "als iedereen er hetzelfde over denkt",
+    "als de schrijver zeker van zijn zaak is",
+    "als je haar in principe kunt toetsen",
+    "als de uitspraak kort en duidelijk is"
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 3,
+   "u": "Controleerbaar: in principe te toetsen door waarneming.",
+   "uo": [
+    "Koos je \"als iedereen er hetzelfde over denkt\"? Dan denk je dat overeenstemming controleerbaar maakt. Meningen kunnen overeenkomen zonder dat ze controleerbaar zijn, het gaat om toetsing.",
+    "Koos je \"als de schrijver zeker van zijn zaak is\"? Dan denk je dat zekerheid controleerbaar maakt. De zekerheid van de schrijver zegt niets, het gaat om de toetsbaarheid.",
+    "Klopt: controleerbaar betekent dat toetsing in principe mogelijk is.",
+    "Koos je \"als de uitspraak kort en duidelijk is\"? Dan denk je dat korte uitspraken controleerbaar zijn. De lengte maakt niet uit, het gaat om toetsing met waarneming."
+   ],
+   "uh": "Kun je het toetsen?"
+  },
+  {
+   "v": "Welke bron is het betrouwbaarst voor een uitspraak over een ziekte?",
+   "o": [
+    "een fabrikant die het geneesmiddel verkoopt",
+    "een anonieme reactie op een forum",
+    "een arts zonder belang bij de uitkomst",
+    "een vriend die het ergens heeft gehoord"
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 4,
+   "u": "Betrouwbaar: deskundig, zonder belang.",
+   "uo": [
+    "Koos je \"een fabrikant die het geneesmiddel verkoopt\"? Dan denk je dat een producent de beste bron is. De fabrikant heeft belang bij acceptatie, en is dus minder betrouwbaar.",
+    "Koos je \"een anonieme reactie op een forum\"? Dan denk je dat veel reacties genoeg zijn. Een anonieme bron is niet te toetsen, en deskundigheid is onbekend.",
+    "Klopt: de bron is deskundig en heeft geen belang bij acceptatie.",
+    "Koos je \"een vriend die het ergens heeft gehoord\"? Dan denk je dat een bekende betrouwbaar is. Een vriend is niet deskundig, en zijn bron is onbekend."
+   ],
+   "uh": "Is de bron deskundig en onbevangen?"
+  },
+  {
+   "v": "Welk woord wijst meestal op een waardeoordeel?",
+   "o": [
+    "mooi",
+    "houten, want het beschrijft een materiaal",
+    "tweeduizend, want het noemt een aantal",
+    "vorig jaar, want het noemt een moment"
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 2,
+   "u": "Mooi, lelijk, goed, slecht: waardering.",
+   "uo": [
+    "Klopt: \"mooi\" drukt een oordeel uit en beschrijft niet iets meetbaars.",
+    "Koos je \"houten, want het beschrijft een materiaal\"? Dan denk je dat een materiaal iets zegt over kwaliteit. \"Houten\" beschrijft alleen waarvan iets is gemaakt, en daar valt niets aan te waarderen.",
+    "Koos je \"tweeduizend, want het noemt een aantal\"? Dan denk je dat een getal een mening uitdrukt. Een aantal kun je tellen, dat is een gegeven en geen oordeel.",
+    "Koos je \"vorig jaar, want het noemt een moment\"? Dan denk je dat een tijdstip een oordeel is. Een tijdstip is vast te stellen, het zegt niets over goed of slecht."
+   ],
+   "uh": "Zegt het woord iets over smaak?"
+  },
+  {
+   "v": "Hoe noem je een argument dat een uitspraak doet over goed en slecht of wenselijk en onwenselijk?",
+   "o": [
+    "een feitelijk argument, want het onderbouwt iets",
+    "een tegenargument, want het is een bezwaar",
+    "een controleerbaar argument",
+    "een waarderend argument"
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 5,
+   "u": "Waarderend: goed, slecht, mooi, wenselijk.",
+   "uo": [
+    "Koos je \"een feitelijk argument, want het onderbouwt iets\"? Dan denk je dat elk argument feitelijk is. Een feitelijk argument gaat over wat waar is, een argument over goed en slecht waardeert.",
+    "Koos je \"een tegenargument, want het is een bezwaar\"? Dan denk je dat een oordeel altijd een bezwaar is. Een waardering kan ook voor het standpunt pleiten, dus het is geen tegenargument.",
+    "Koos je \"een controleerbaar argument\"? Dan denk je dat een oordeel te controleren is. Een waardering is niet te toetsen aan waarneming, dus ze is niet controleerbaar.",
+    "Klopt: een waarderende uitspraak gaat over wat goed, slecht, mooi of wenselijk is."
+   ],
+   "uh": "Gaat het om een oordeel?"
+  },
+  {
+   "v": "Welke uitspraak is feitelijk en direct te controleren?",
+   "o": [
+    "energiedrank is vies",
+    "een blikje energiedrank bevat suiker en cafeïne",
+    "een school hoort geen drankjes te verkopen die nergens goed voor zijn",
+    "een school die zich serieus neemt, kiest voor haar leerlingen"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 0,
+   "u": "Feitelijk: controleerbaar, zoals via het etiket.",
+   "uo": [
+    "Koos je \"energiedrank is vies\"? Dan denk je dat \"vies\" een feit is. Het is een oordeel over smaak, en dus waarderend.",
+    "Klopt: je controleert dit op het etiket van het blikje.",
+    "Koos je \"een school hoort geen drankjes te verkopen die...\"? Dan denk je dat dit een feit is. De uitspraak zegt wat een school hoort te doen, dat is een waardering.",
+    "Koos je \"een school die zich serieus neemt, kiest voor haar...\"? Dan denk je dat dit een vaststelling is. Het is een uitspraak over wat goed is, dus waarderend."
+   ],
+   "uh": "Waar kijk je dit na?",
+   "ctx": "De kantine moet stoppen met het verkopen van energiedrank. Een blikje energiedrank bevat suiker en cafeïne. In onze kantine staan drie koelkasten vol energiedrank, en dat is schandalig. Energiedrank is bovendien vies: de smaak is zoet en bitter tegelijk. Een school hoort geen drankjes te verkopen die nergens goed voor zijn. De directie zegt dat de verkoop jaarlijks zesduizend euro oplevert, maar dat bedrag moet worden afgezet tegen de gezondheid van de leerlingen. Een school die zich serieus neemt, kiest voor haar leerlingen."
+  },
+  {
+   "v": "Waarom is \"Energiedrank is vies\" een waarderende uitspraak?",
+   "o": [
+    "omdat de zin heel kort is om te beoordelen",
+    "omdat er het woord \"energiedrank\" in staat",
+    "omdat de directie het er niet mee eens is",
+    "het is een oordeel over smaak"
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 1,
+   "u": "Waarderend: smaak en oordeel, niet te meten.",
+   "uo": [
+    "Koos je \"omdat de zin heel kort is om te beoordelen\"? Dan denk je dat een korte zin een waardering is. De lengte zegt niets, het gaat om de aard van de uitspraak.",
+    "Koos je \"omdat er het woord energiedrank in staat\"? Dan denk je dat het onderwerp de waardering bepaalt. Het onderwerp is neutraal, \"vies\" is het oordeel.",
+    "Koos je \"omdat de directie het er niet mee eens is\"? Dan denk je dat het oneens zijn een waardering maakt. Een waardering is een oordeel, ook als iedereen het eens is.",
+    "Klopt: smaak verschilt per persoon en is niet met waarneming te toetsen."
+   ],
+   "uh": "Is het te meten?",
+   "ctx": "De kantine moet stoppen met het verkopen van energiedrank. Een blikje energiedrank bevat suiker en cafeïne. In onze kantine staan drie koelkasten vol energiedrank, en dat is schandalig. Energiedrank is bovendien vies: de smaak is zoet en bitter tegelijk. Een school hoort geen drankjes te verkopen die nergens goed voor zijn. De directie zegt dat de verkoop jaarlijks zesduizend euro oplevert, maar dat bedrag moet worden afgezet tegen de gezondheid van de leerlingen. Een school die zich serieus neemt, kiest voor haar leerlingen."
+  },
+  {
+   "v": "Waaraan herken je \"Een school hoort geen drankjes te verkopen die nergens goed voor zijn\" als waarderend?",
+   "o": [
+    "de zin bevat een cijfer van een telling",
+    "de zin zegt wat wenselijk is",
+    "de zin bevat de naam van een school",
+    "de zin eindigt met een punt zoals alle zinnen"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 1,
+   "u": "\"Hoort\", \"moet\" en \"zou moeten\" wijzen op een waardering.",
+   "uo": [
+    "Koos je \"de zin bevat een cijfer van een telling\"? Dan denk je dat een cijfer een oordeel maakt. Er staat geen cijfer in, en cijfers zijn juist gegevens.",
+    "Klopt: \"hoort\" en \"nergens goed voor\" drukken een oordeel over wenselijkheid uit.",
+    "Koos je \"de zin bevat de naam van een school\"? Dan denk je dat een naam een oordeel maakt. Er staat geen naam in, de waardering zit in het woord \"hoort\".",
+    "Koos je \"de zin eindigt met een punt zoals alle zinnen\"? Dan denk je dat de interpunctie het type bepaalt. Een punt zegt niets over feit of oordeel, de woordkeus doet dat wel."
+   ],
+   "uh": "Wat is wenselijk?",
+   "ctx": "De kantine moet stoppen met het verkopen van energiedrank. Een blikje energiedrank bevat suiker en cafeïne. In onze kantine staan drie koelkasten vol energiedrank, en dat is schandalig. Energiedrank is bovendien vies: de smaak is zoet en bitter tegelijk. Een school hoort geen drankjes te verkopen die nergens goed voor zijn. De directie zegt dat de verkoop jaarlijks zesduizend euro oplevert, maar dat bedrag moet worden afgezet tegen de gezondheid van de leerlingen. Een school die zich serieus neemt, kiest voor haar leerlingen."
+  },
+  {
+   "v": "Waarom is \"het sportcentrum trok afgelopen zomer vierduizend bezoekers\" controleerbaar?",
+   "o": [
+    "omdat de wethouder het zelf zegt",
+    "omdat iedereen het sportcentrum mooi vindt",
+    "het aantal is te tellen",
+    "omdat de zin over de zomer gaat en tijd noemt"
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 3,
+   "u": "Telbaar is controleerbaar.",
+   "uo": [
+    "Koos je \"omdat de wethouder het zelf zegt\"? Dan denk je dat een gezaghebbende spreker controleerbaarheid geeft. Het gaat om de toetsing zelf, niet om wie het zegt.",
+    "Koos je \"omdat iedereen het sportcentrum mooi vindt\"? Dan denk je dat een algemeen gevoel controleerbaar maakt. Dat is een oordeel, geen telbaar gegeven.",
+    "Klopt: je kunt de bezoekersaantallen nagaan in de cijfers.",
+    "Koos je \"omdat de zin over de zomer gaat en tijd noemt\"? Dan denk je dat een tijdsaanduiding controleerbaar maakt. De zin is controleerbaar omdat het aantal telbaar is, niet door de tijd."
+   ],
+   "uh": "Kun je het tellen?",
+   "ctx": "Het nieuwe sportcentrum is een succes. Het trok afgelopen zomer vierduizend bezoekers. Het gebouw is bovendien prachtig en de sfeer is uitstekend. Over vijf jaar zal de wijk er gezonder door zijn. Wethouder Jansen zei vorige week dat het sportcentrum de mooiste voorziening van de regio is. Sportverenigingen melden dat hun ledental is gegroeid sinds de opening. Tegenstanders zeggen dat het te duur was, maar zulke bezwaren vergeten dat sport een investering in de toekomst is."
+  },
+  {
+   "v": "Waarom is \"over vijf jaar zal de wijk er gezonder door zijn\" nu niet te controleren, maar wel feitelijk?",
+   "o": [
+    "het is later wel te meten",
+    "omdat de uitspraak een oordeel bevat",
+    "omdat de wethouder het vorige week zei",
+    "omdat voorspellingen nooit waar zijn"
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 3,
+   "u": "Voorspelling: feitelijk, later te toetsen.",
+   "uo": [
+    "Klopt: een voorspelling is feitelijk, omdat ze later te toetsen is.",
+    "Koos je \"omdat de uitspraak een oordeel bevat\"? Dan denk je dat \"gezonder\" een waardering is. Gezondheid is meetbaar, dus de uitspraak is feitelijk.",
+    "Koos je \"omdat de wethouder het vorige week zei\"? Dan denk je dat de spreker de aard bepaalt. De uitspraak is feitelijk door haar inhoud, en niet door wie ze zegt.",
+    "Koos je \"omdat voorspellingen nooit waar zijn\"? Dan denk je dat een voorspelling altijd onwaar is. Een voorspelling kan uitkomen, en kan later worden getoetst."
+   ],
+   "uh": "Is het later meetbaar?",
+   "ctx": "Het nieuwe sportcentrum is een succes. Het trok afgelopen zomer vierduizend bezoekers. Het gebouw is bovendien prachtig en de sfeer is uitstekend. Over vijf jaar zal de wijk er gezonder door zijn. Wethouder Jansen zei vorige week dat het sportcentrum de mooiste voorziening van de regio is. Sportverenigingen melden dat hun ledental is gegroeid sinds de opening. Tegenstanders zeggen dat het te duur was, maar zulke bezwaren vergeten dat sport een investering in de toekomst is."
+  },
+  {
+   "v": "Welke twee delen heeft de uitspraak van de eerste leerling?",
+   "o": [
+    "een waardering en een feit",
+    "twee waarderingen",
+    "twee feiten",
+    "een tegenargument en een standpunt"
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 2,
+   "u": "Gemengd: een oordeel plus een feit.",
+   "uo": [
+    "Klopt: \"leukste les\" is een oordeel en \"twee uur per week\" is controleerbaar.",
+    "Koos je \"twee waarderingen\"? Dan denk je dat beide delen een oordeel zijn. \"Twee uur per week\" is een telbaar gegeven, dus een feit.",
+    "Koos je \"twee feiten\"? Dan denk je dat beide delen feitelijk zijn. \"De leukste les\" is een oordeel, geen meetbaar gegeven.",
+    "Koos je \"een tegenargument en een standpunt\"? Dan denk je dat de zin een weerlegging bevat. Er staat geen bezwaar in, alleen een oordeel en een feit."
+   ],
+   "uh": "Welk deel kun je meten?",
+   "ctx": "Een leerling zegt: \"Gym is de leukste les, want we sporten er twee uur per week bij, en dat is meer dan bij elk ander vak.\" Een andere leerling vindt wiskunde de leukste les."
+  },
+  {
+   "v": "Waarom is de woordvoerder van de frisdrankfabrikant minder betrouwbaar?",
+   "o": [
+    "omdat een woordvoerder nooit de waarheid spreekt",
+    "omdat hij het alleen over energiedrank heeft",
+    "de fabrikant heeft belang bij acceptatie",
+    "omdat hij veel te veel van de producten weet"
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 4,
+   "u": "Belang bij acceptatie maakt een bron minder betrouwbaar.",
+   "uo": [
+    "Koos je \"omdat een woordvoerder nooit de waarheid spreekt\"? Dan denk je dat woordvoerders altijd liegen. Dat is niet zo, het gaat om belang bij de uitkomst.",
+    "Koos je \"omdat hij het alleen over energiedrank heeft\"? Dan denk je dat het onderwerp de betrouwbaarheid bepaalt. Het onderwerp is neutraal, het belang is het probleem.",
+    "Klopt: een bron is betrouwbaar als ze geen belang heeft bij acceptatie.",
+    "Koos je \"omdat hij veel te veel van de producten weet\"? Dan denk je dat deskundigheid onbetrouwbaar maakt. Deskundigheid is juist een voorwaarde, het probleem is het belang."
+   ],
+   "uh": "Wie profiteert?",
+   "ctx": "Een woordvoerder van een frisdrankfabrikant zegt dat energiedrank volstrekt veilig is voor jongeren. De fabrikant betaalt een deel van het onderzoek waarop hij zich beroept. Een universitair onderzoeker die niet door fabrikanten wordt betaald, noemt de cijfers van de fabrikant selectief en vraagt om nieuw onderzoek. Een winkelier die de drankjes verkoopt, vindt de zorgen overdreven, en een anonieme blogger beweert dat al het onderzoek nep is. De schrijver van dit stuk vindt dat de overheid jongeren beter moet beschermen."
+  },
+  {
+   "v": "Waarom is de universitair onderzoeker een betrouwbare bron?",
+   "o": [
+    "omdat hij aan een universiteit werkt",
+    "hij is deskundig en onafhankelijk",
+    "omdat hij het eens is met de schrijver",
+    "omdat hij de cijfers zelf heeft verzonnen"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 4,
+   "u": "Betrouwbaar: deskundig, zonder belang, zonder tegenspraak.",
+   "uo": [
+    "Koos je \"omdat hij aan een universiteit werkt\"? Dan denk je dat de werkplek betrouwbaarheid geeft. Het gaat om deskundigheid en belang, niet om de plaats.",
+    "Klopt: deskundig en zonder belang bij de uitkomst.",
+    "Koos je \"omdat hij het eens is met de schrijver\"? Dan denk je dat instemming betrouwbaar maakt. Dat is geen criterium, het gaat om deskundigheid en belang.",
+    "Koos je \"omdat hij de cijfers zelf heeft verzonnen\"? Dan denk je dat eigen cijfers betrouwbaar zijn. Een bron die zichzelf of anderen verzint, is onbetrouwbaar, en dat staat hier niet."
+   ],
+   "uh": "Wie is deskundig en onbevangen?",
+   "ctx": "Een woordvoerder van een frisdrankfabrikant zegt dat energiedrank volstrekt veilig is voor jongeren. De fabrikant betaalt een deel van het onderzoek waarop hij zich beroept. Een universitair onderzoeker die niet door fabrikanten wordt betaald, noemt de cijfers van de fabrikant selectief en vraagt om nieuw onderzoek. Een winkelier die de drankjes verkoopt, vindt de zorgen overdreven, en een anonieme blogger beweert dat al het onderzoek nep is. De schrijver van dit stuk vindt dat de overheid jongeren beter moet beschermen."
+  },
+  {
+   "v": "Waarom is uitspraak A aanvaardbaar?",
+   "o": [
+    "omdat de uitspraak heel kort is",
+    "omdat de uitspraak zelf een bron noemt",
+    "omdat de lezer haar nog moet controleren",
+    "ze past bij wat de lezer weet"
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 4,
+   "u": "Aanvaardbaar: in overeenstemming met kennis, controleerbaar of van een betrouwbare bron.",
+   "uo": [
+    "Koos je \"omdat de uitspraak heel kort is\"? Dan denk je dat kortheid aanvaardbaar maakt. Het gaat om kennis, controle of bron, niet om de lengte.",
+    "Koos je \"omdat de uitspraak zelf een bron noemt\"? Dan denk je dat uitspraak A een bron noemt. Ze noemt er geen, ze past gewoon bij wat bekend is.",
+    "Koos je \"omdat de lezer haar nog moet controleren\"? Dan denk je dat aanvaardbaarheid controle vraagt. Hier is geen controle nodig, omdat de uitspraak bij bekende kennis past.",
+    "Klopt: een feit dat bij je kennis past, aanvaard je meteen."
+   ],
+   "uh": "Weet je het al?",
+   "ctx": "Vier uitspraken. A: \"Amsterdam is de hoofdstad van Nederland.\" B: \"In dit lokaal zitten precies eenendertig leerlingen.\" C: \"Volgens een onafhankelijk statistiekbureau is het aantal fietsers gestegen.\" D: \"Mijn buurman zegt dat het aantal fietsers is gestegen, maar hij weet het niet zeker.\""
+  },
+  {
+   "v": "Welke functie heeft de uitspraak over suiker en cafeïne in het betoog?",
+   "o": [
+    "ze is een tegenargument tegen het standpunt",
+    "ze is een feitelijk argument",
+    "ze is de conclusie van het betoog",
+    "ze is een waardering van de smaak"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 5,
+   "u": "Feitelijke argumenten onderbouwen met gegevens.",
+   "uo": [
+    "Koos je \"ze is een tegenargument tegen het standpunt\"? Dan denk je dat de uitspraak het standpunt bestrijdt. Ze ondersteunt het juist, want ze beschrijft iets wat tegen energiedrank pleit.",
+    "Klopt: ze noemt een feit dat het stoppen met verkoop ondersteunt.",
+    "Koos je \"ze is de conclusie van het betoog\"? Dan denk je dat de uitspraak de slotzin is. De conclusie staat aan het eind, dit is een argument.",
+    "Koos je \"ze is een waardering van de smaak\"? Dan denk je dat de uitspraak een oordeel over smaak is. Ze noemt een inhoudelijk gegeven, en geen smaak."
+   ],
+   "uh": "Ondersteunt de uitspraak het standpunt?",
+   "ctx": "De kantine moet stoppen met het verkopen van energiedrank. Een blikje energiedrank bevat suiker en cafeïne. In onze kantine staan drie koelkasten vol energiedrank, en dat is schandalig. Energiedrank is bovendien vies: de smaak is zoet en bitter tegelijk. Een school hoort geen drankjes te verkopen die nergens goed voor zijn. De directie zegt dat de verkoop jaarlijks zesduizend euro oplevert, maar dat bedrag moet worden afgezet tegen de gezondheid van de leerlingen. Een school die zich serieus neemt, kiest voor haar leerlingen."
+  },
+  {
+   "v": "Welke uitspraak komt van een belanghebbende en is waarderend?",
+   "o": [
+    "\"de mooiste voorziening\", gezegd door de wethouder",
+    "\"vierduizend bezoekers\"",
+    "\"het ledental is gegroeid\", gemeld door de sportverenigingen",
+    "\"zulke bezwaren vergeten dat sport een investering is\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 0,
+   "u": "Waardering van een belanghebbende weegt minder zwaar.",
+   "uo": [
+    "Klopt: de wethouder is betrokken bij het centrum en geeft een oordeel.",
+    "Koos je \"vierduizend bezoekers\"? Dan denk je dat dit een oordeel van een belanghebbende is. Het is een telbaar gegeven, geen waardering.",
+    "Koos je \"het ledental is gegroeid, gemeld door de...\"? Dan denk je dat dit een waardering is. Het is een controleerbaar gegeven, geen oordeel.",
+    "Koos je \"zulke bezwaren vergeten dat sport een investering is\"? Dan denk je dat dit door de wethouder is gezegd. Het komt van de schrijver, het is wel een waardering, maar niet van de wethouder."
+   ],
+   "uh": "Wie zegt het en wat is zijn belang?",
+   "ctx": "Het nieuwe sportcentrum is een succes. Het trok afgelopen zomer vierduizend bezoekers. Het gebouw is bovendien prachtig en de sfeer is uitstekend. Over vijf jaar zal de wijk er gezonder door zijn. Wethouder Jansen zei vorige week dat het sportcentrum de mooiste voorziening van de regio is. Sportverenigingen melden dat hun ledental is gegroeid sinds de opening. Tegenstanders zeggen dat het te duur was, maar zulke bezwaren vergeten dat sport een investering in de toekomst is."
+  },
+  {
+   "v": "Waarom is \"de sfeer is uitstekend\" niet te controleren met een telling?",
+   "o": [
+    "omdat sfeer in werkelijkheid niet bestaat",
+    "omdat het te lang geleden is om na te gaan",
+    "omdat de wethouder het over zijn centrum zegt",
+    "het is een oordeel van de lezer"
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 1,
+   "u": "Waardering is niet te meten.",
+   "uo": [
+    "Koos je \"omdat sfeer in werkelijkheid niet bestaat\"? Dan denk je dat sfeer geen werkelijkheid is. Sfeer bestaat wel, maar je kunt haar niet tellen.",
+    "Koos je \"omdat het te lang geleden is om na te gaan\"? Dan denk je dat de tijd het probleem is. Het probleem is dat het een oordeel is, niet dat het lang geleden is.",
+    "Koos je \"omdat de wethouder het over zijn centrum zegt\"? Dan denk je dat de spreker bepaalt of het te controleren is. Het gaat om de aard van de uitspraak, niet om wie ze zegt.",
+    "Klopt: een waardering is geen meetbaar gegeven."
+   ],
+   "uh": "Is het te tellen?",
+   "ctx": "Het nieuwe sportcentrum is een succes. Het trok afgelopen zomer vierduizend bezoekers. Het gebouw is bovendien prachtig en de sfeer is uitstekend. Over vijf jaar zal de wijk er gezonder door zijn. Wethouder Jansen zei vorige week dat het sportcentrum de mooiste voorziening van de regio is. Sportverenigingen melden dat hun ledental is gegroeid sinds de opening. Tegenstanders zeggen dat het te duur was, maar zulke bezwaren vergeten dat sport een investering in de toekomst is."
+  },
+  {
+   "v": "Welke uitspraak in tekst A combineert een feit met een waardering?",
+   "o": [
+    "\"een blikje energiedrank bevat suiker en cafeïne\"",
+    "\"energiedrank is vies, vindt de schrijver van tekst A\"",
+    "\"drie koelkasten vol energiedrank, en dat is schandalig\"",
+    "\"de directie zegt dat de verkoop zesduizend euro oplevert\""
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 2,
+   "u": "Gemengd: een gegeven plus een oordeel.",
+   "uo": [
+    "Koos je \"een blikje energiedrank bevat suiker en cafeïne\"? Dan denk je dat dit een gemengde uitspraak is. Er staat alleen een feit in, zonder oordeel.",
+    "Koos je \"energiedrank is vies, vindt de schrijver van tekst A\"? Dan denk je dat dit een feit bevat. Er staat alleen een oordeel in, geen telbaar gegeven.",
+    "Klopt: het aantal koelkasten is een feit en \"schandalig\" is een oordeel.",
+    "Koos je \"de directie zegt dat de verkoop zesduizend euro...\"? Dan denk je dat deze uitspraak waardeert. Ze meldt een bedrag, dus ze is feitelijk."
+   ],
+   "uh": "Wat is meetbaar en wat is oordeel?",
+   "ctx": "De kantine moet stoppen met het verkopen van energiedrank. Een blikje energiedrank bevat suiker en cafeïne. In onze kantine staan drie koelkasten vol energiedrank, en dat is schandalig. Energiedrank is bovendien vies: de smaak is zoet en bitter tegelijk. Een school hoort geen drankjes te verkopen die nergens goed voor zijn. De directie zegt dat de verkoop jaarlijks zesduizend euro oplevert, maar dat bedrag moet worden afgezet tegen de gezondheid van de leerlingen. Een school die zich serieus neemt, kiest voor haar leerlingen."
+  },
+  {
+   "v": "De directie zegt dat de verkoop zesduizend euro oplevert. Hoe controleer je dat het sterkst?",
+   "o": [
+    "de directie het nog een keer vragen",
+    "een leerling vragen wat hij ervan vindt",
+    "de administratie van de kantine",
+    "de uitspraak nog eens goed lezen"
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 3,
+   "u": "Controleer met een onafhankelijke bron, zoals de boekhouding.",
+   "uo": [
+    "Koos je \"de directie het nog een keer vragen\"? Dan denk je dat herhalen controleert. Dezelfde bron levert dezelfde uitspraak, niet een onafhankelijke controle.",
+    "Koos je \"een leerling vragen wat hij ervan vindt\"? Dan denk je dat een mening controleert. Een mening zegt niets over het bedrag, je moet de cijfers zien.",
+    "Klopt: de boekhouding laat zien wat de verkoop opbrengt.",
+    "Koos je \"de uitspraak nog eens goed lezen\"? Dan denk je dat lezen controleert. Lezen vertelt je alleen wat er staat, het controleert het niet."
+   ],
+   "uh": "Waar staat het bedrag echt?",
+   "ctx": "De kantine moet stoppen met het verkopen van energiedrank. Een blikje energiedrank bevat suiker en cafeïne. In onze kantine staan drie koelkasten vol energiedrank, en dat is schandalig. Energiedrank is bovendien vies: de smaak is zoet en bitter tegelijk. Een school hoort geen drankjes te verkopen die nergens goed voor zijn. De directie zegt dat de verkoop jaarlijks zesduizend euro oplevert, maar dat bedrag moet worden afgezet tegen de gezondheid van de leerlingen. Een school die zich serieus neemt, kiest voor haar leerlingen."
+  },
+  {
+   "v": "Welke bron is het meest betrouwbaar voor een uitspraak over de veiligheid van energiedrank?",
+   "o": [
+    "de woordvoerder van de fabrikant",
+    "de winkelier die de drankjes verkoopt",
+    "de anonieme blogger die zegt dat alles nep is",
+    "de universitair onderzoeker zonder belang"
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 4,
+   "u": "Deskundig, zonder belang, zonder tegenspraak.",
+   "uo": [
+    "Koos je \"de woordvoerder van de fabrikant\"? Dan denk je dat de fabrikant het beste weet. De fabrikant heeft belang, dus de bron is minder betrouwbaar.",
+    "Koos je \"de winkelier die de drankjes verkoopt\"? Dan denk je dat de winkelier betrouwbaar is. Hij heeft belang bij verkoop, en is niet per se deskundig.",
+    "Koos je \"de anonieme blogger die zegt dat alles nep is\"? Dan denk je dat de blogger de waarheid zegt. Zijn deskundigheid is onbekend, en zijn bewering is niet te controleren.",
+    "Klopt: hij is deskundig en heeft geen belang bij de uitkomst."
+   ],
+   "uh": "Wie weet het en heeft geen belang?",
+   "ctx": "Een woordvoerder van een frisdrankfabrikant zegt dat energiedrank volstrekt veilig is voor jongeren. De fabrikant betaalt een deel van het onderzoek waarop hij zich beroept. Een universitair onderzoeker die niet door fabrikanten wordt betaald, noemt de cijfers van de fabrikant selectief en vraagt om nieuw onderzoek. Een winkelier die de drankjes verkoopt, vindt de zorgen overdreven, en een anonieme blogger beweert dat al het onderzoek nep is. De schrijver van dit stuk vindt dat de overheid jongeren beter moet beschermen."
+  },
+  {
+   "v": "Welke uitspraak is aanvaardbaar omdat ze van een betrouwbare bron komt?",
+   "o": [
+    "uitspraak C",
+    "uitspraak B, want de zin klinkt precies",
+    "uitspraak D, want de buurman noemt het",
+    "uitspraak A, want ze noemt een bron"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 4,
+   "u": "Betrouwbare bron: deskundig en onafhankelijk.",
+   "uo": [
+    "Klopt: een onafhankelijk statistiekbureau is deskundig en heeft geen belang.",
+    "Koos je \"uitspraak B, want de zin klinkt precies\"? Dan denk je dat precisie aanvaardbaar maakt. Uitspraak B is direct te controleren in het lokaal, de bron is niet het criterium.",
+    "Koos je \"uitspraak D, want de buurman noemt het\"? Dan denk je dat een bekende een betrouwbare bron is. De buurman weet het zelf niet zeker, dus de bron is onbetrouwbaar.",
+    "Koos je \"uitspraak A, want ze noemt een bron\"? Dan denk je dat A een bron noemt. Ze past bij bekende kennis, en noemt geen bron."
+   ],
+   "uh": "Wie noemt de bron?",
+   "ctx": "Vier uitspraken. A: \"Amsterdam is de hoofdstad van Nederland.\" B: \"In dit lokaal zitten precies eenendertig leerlingen.\" C: \"Volgens een onafhankelijk statistiekbureau is het aantal fietsers gestegen.\" D: \"Mijn buurman zegt dat het aantal fietsers is gestegen, maar hij weet het niet zeker.\""
+  },
+  {
+   "v": "Hoe gebruikt de schrijver feiten en waarderingen in tekst C?",
+   "o": [
+    "hij gebruikt alleen feiten en geen waarderingen",
+    "hij onderbouwt een oordeel met feiten",
+    "hij gebruikt alleen waarderingen en geen feiten",
+    "hij laat de feiten weg bij het standpunt"
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 5,
+   "u": "Feiten en oordelen kunnen samen een standpunt ondersteunen.",
+   "uo": [
+    "Koos je \"hij gebruikt alleen feiten en geen waarderingen\"? Dan denk je dat de tekst alleen feitelijk is. Er staan ook oordelen in als \"prachtig\", dus het is gemengd.",
+    "Klopt: bezoekers en ledental zijn feiten, prachtig en uitstekend zijn oordelen.",
+    "Koos je \"hij gebruikt alleen waarderingen en geen feiten\"? Dan denk je dat de tekst alleen oordelen bevat. Er staan ook telbare feiten in, zoals vierduizend bezoekers.",
+    "Koos je \"hij laat de feiten weg bij het standpunt\"? Dan denk je dat feiten ontbreken. Feiten ondersteunen het standpunt juist, ze zijn dus aanwezig."
+   ],
+   "uh": "Wat is meetbaar, wat is oordeel?",
+   "ctx": "Het nieuwe sportcentrum is een succes. Het trok afgelopen zomer vierduizend bezoekers. Het gebouw is bovendien prachtig en de sfeer is uitstekend. Over vijf jaar zal de wijk er gezonder door zijn. Wethouder Jansen zei vorige week dat het sportcentrum de mooiste voorziening van de regio is. Sportverenigingen melden dat hun ledental is gegroeid sinds de opening. Tegenstanders zeggen dat het te duur was, maar zulke bezwaren vergeten dat sport een investering in de toekomst is."
+  },
+  {
+   "v": "Welk deel van de uitspraak over de bibliotheek is feitelijk?",
+   "o": [
+    "\"te duur gebouwd, zegt de column\"",
+    "\"beter aan lesmateriaal besteed\"",
+    "\"de nieuwe bibliotheek van de stad\"",
+    "\"ze kostte twee keer zoveel\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 2,
+   "u": "Controleerbaar: kosten, aantallen, jaartallen.",
+   "uo": [
+    "Koos je \"te duur gebouwd, zegt de column\"? Dan denk je dat \"te duur\" een feit is. Het is een oordeel over de kosten, geen telbaar gegeven.",
+    "Koos je \"beter aan lesmateriaal besteed\"? Dan denk je dat dit een feit is. Het zegt wat beter zou zijn, dat is een oordeel.",
+    "Koos je \"de nieuwe bibliotheek van de stad\"? Dan denk je dat de naam het feitelijke deel is. De naam is geen uitspraak, het feit zit in de vergelijking van de kosten.",
+    "Klopt: de kosten zijn na te gaan met de cijfers."
+   ],
+   "uh": "Wat kun je meten?",
+   "ctx": "Een column over de nieuwe bibliotheek: \"De nieuwe bibliotheek is te duur gebouwd: ze kostte twee keer zoveel als de oude, en dat geld had beter aan lesmateriaal besteed kunnen worden.\""
+  },
+  {
+   "v": "Waarom kun je niet bewijzen wie van de twee leerlingen gelijk heeft?",
+   "o": [
+    "een waardering is niet waar of onwaar",
+    "omdat een van beiden het niet meent",
+    "omdat ze te weinig argumenten gebruiken",
+    "omdat voetbal niet bestaat voor beiden"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 1,
+   "u": "Waardering: aanvaardbaar of niet, niet waar of onwaar.",
+   "uo": [
+    "Klopt: waarderingen zijn aanvaardbaar of niet, maar niet waar of onwaar.",
+    "Koos je \"omdat een van beiden het niet meent\"? Dan denk je dat een van hen niet eerlijk is. Beide uitspraken zijn eerlijke meningen, en geen leugens.",
+    "Koos je \"omdat ze te weinig argumenten gebruiken\"? Dan denk je dat meer argumenten het oplossen. Een waardering is niet te toetsen, hoeveel argumenten er ook komen.",
+    "Koos je \"omdat voetbal niet bestaat voor beiden\"? Dan denk je dat de uitspraken onderwerpen missen. Voetbal bestaat, maar de oordelen zijn subjectief."
+   ],
+   "uh": "Is het te meten?",
+   "ctx": "Een leerling zegt: \"Voetbal is saai.\" Een andere leerling zegt: \"Voetbal is spannend.\" Ze discussiëren er een kwartier over en blijven allebei bij hun mening, ook nadat ze elkaars argumenten hebben gehoord."
+  },
+  {
+   "v": "Hoe beoordeel je de uitspraak \"Het is een feit dat jongeren steeds minder lezen\"?",
+   "o": [
+    "als waar, want de schrijver noemt het een feit",
+    "als een uitspraak om te controleren",
+    "als waardering, want het gaat over jongeren",
+    "als onzin, want er staat geen bron"
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 3,
+   "u": "Controleer feiten met een betrouwbare bron.",
+   "uo": [
+    "Koos je \"als waar, want de schrijver noemt het een feit\"? Dan denk je dat het woord \"feit\" de waarheid bewijst. Dat bewijst niets, je moet het controleren.",
+    "Klopt: het woord \"feit\" maakt iets niet waar, je controleert het.",
+    "Koos je \"als waardering, want het gaat over jongeren\"? Dan denk je dat de uitspraak een oordeel is. Ze noemt een telbare ontwikkeling, dus ze is feitelijk.",
+    "Koos je \"als onzin, want er staat geen bron\"? Dan denk je dat zonder bron alles onwaar is. De uitspraak kan waar zijn, maar zonder bron is ze niet aanvaardbaar."
+   ],
+   "uh": "Waar vind je cijfers?",
+   "ctx": "Een schrijver zegt: \"Het is een feit dat jongeren steeds minder lezen. Daarom moeten scholen meer leestijd inroosteren.\" De schrijver noemt geen bron voor de eerste uitspraak."
+  }
+ ],
+ "oe": [
+  {
+   "bron": "Examenstijl",
+   "ctx": "Drie uitspraken over een schoolgebouw. Uitspraak 1: \"Het schoolgebouw is in 1998 gebouwd.\" Uitspraak 2: \"Het schoolgebouw is lelijk.\" Uitspraak 3: \"Het schoolgebouw moet worden gesloopt.\"",
+   "v": "Zet bij elke uitspraak of ze feitelijk of waarderend is en leg je keuze uit.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Uitspraak 1 is feitelijk, want het jaartal is te controleren (1p). Uitspraak 2 is waarderend, want mooi of lelijk is een oordeel (1p). Uitspraak 3 is waarderend, want \"moet\" zegt wat wenselijk is (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een woordvoerder van een frisdrankfabrikant zegt dat energiedrank volstrekt veilig is voor jongeren. De fabrikant betaalt een deel van het onderzoek waarop hij zich beroept. Een universitair onderzoeker die niet door fabrikanten wordt betaald, noemt de cijfers van de fabrikant selectief en vraagt om nieuw onderzoek. Een winkelier die de drankjes verkoopt, vindt de zorgen overdreven, en een anonieme blogger beweert dat al het onderzoek nep is. De schrijver van dit stuk vindt dat de overheid jongeren beter moet beschermen.",
+   "v": "Beoordeel de betrouwbaarheid van de woordvoerder van de fabrikant en van de universitair onderzoeker.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "De woordvoerder is minder betrouwbaar, omdat de fabrikant belang heeft en een deel van het onderzoek betaalt (1p). De onderzoeker is deskundig (1p) en heeft geen belang bij de uitkomst (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Het nieuwe sportcentrum is een succes. Het trok afgelopen zomer vierduizend bezoekers. Het gebouw is bovendien prachtig en de sfeer is uitstekend. Over vijf jaar zal de wijk er gezonder door zijn. Wethouder Jansen zei vorige week dat het sportcentrum de mooiste voorziening van de regio is. Sportverenigingen melden dat hun ledental is gegroeid sinds de opening. Tegenstanders zeggen dat het te duur was, maar zulke bezwaren vergeten dat sport een investering in de toekomst is.",
+   "v": "Noem een feitelijke en een waarderende uitspraak uit tekst C en zeg of de feitelijke controleerbaar is.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Feitelijk: vierduizend bezoekers (1p), controleerbaar door telling (1p). Waarderend: het gebouw is prachtig (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een column over de nieuwe bibliotheek: \"De nieuwe bibliotheek is te duur gebouwd: ze kostte twee keer zoveel als de oude, en dat geld had beter aan lesmateriaal besteed kunnen worden.\"",
+   "v": "Splits de uitspraak over de bibliotheek in een feitelijk en een waarderend deel.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Feitelijk: ze kostte twee keer zoveel als de oude (1p). Waarderend: te duur gebouwd (1p) en beter aan lesmateriaal besteed (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een schrijver zegt: \"Het is een feit dat jongeren steeds minder lezen. Daarom moeten scholen meer leestijd inroosteren.\" De schrijver noemt geen bron voor de eerste uitspraak.",
+   "v": "Leg uit waarom de uitspraak over jongeren die minder lezen nog niet aanvaardbaar is.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Er is geen bron genoemd (1p). Het woord feit bewijst niets (1p). Controleer met een betrouwbare bron (1p)."
+  }
+ ]
+}
