@@ -320,8 +320,8 @@ ${examenPaginas.map(e => `- [Examenvragen ${e.vakNaam}](${e.url}): ${e.nV} vrage
 ${[...perVak.entries()].map(([k, os]) => `- [Begrippen ${os[0].vakNaam}](${ORIGIN}/leren/${k}/begrippen.html)`).join('\n')}
 
 ## Overig
-- [Examenrooster 2027](${ORIGIN}/examenrooster-2027.html)
-- [Eindcijfer berekenen](${ORIGIN}/eindcijfer-calculator.html)
+- [Examenrooster 2027](${ORIGIN}/vakken/examenrooster-2027.html)
+- [Eindcijfer berekenen](${ORIGIN}/vakken/eindcijfer-calculator.html)
 - [Alle vakken](${ORIGIN}/vakken/)
 `);
 zet('leren/leren.css', '/* gegenereerd door scripts/build-leren.mjs - niet met de hand bewerken */\n' + samCss(lees('styles.css')) + '\n' + PAGINA_CSS + '\n');

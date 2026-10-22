@@ -231,7 +231,7 @@ function show(id,_noHash){
   try{_navOnthoud(prev&&prev.id,id);}catch(e){}
   if(id==='sc-privacy'&&prev)window._privacyFrom=prev.id;
   // Stop quiz timer wanneer de gebruiker de quiz verlaat
-  if(prev&&prev.id==='sc-q'&&id!=='sc-q')clearInterval(ST.timer);
+  if(prev&&prev.id==='sc-quiz'&&id!=='sc-quiz')clearInterval(ST.timer);
   // Quiz verlaten zonder resultaatscherm (bv. via de onderbalk): verdiende XP
   // blijft staan en telt mee voor de weekwedstrijd.
   if(prev&&prev.id==='sc-quiz'&&id!=='sc-quiz'&&id!=='sc-res'&&(ST.xpThisRound||0)>0){try{if(typeof _bankQuizXP==='function')_bankQuizXP();}catch(e){}}

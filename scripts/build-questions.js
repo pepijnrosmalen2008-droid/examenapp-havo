@@ -120,23 +120,23 @@ try{
 // ── generator ──
 function shuffle(a){a=a.slice();for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]];}return a;}
 function sample(pool,n,excl){const out=[];for(const x of shuffle(pool)){if(out.length>=n)break;if(excl.includes(x)||out.includes(x))continue;out.push(x);}return out;}
+// Afleiders lijken op het juiste antwoord (lengte, vorm, liefst hetzelfde domein): scripts/lib/afleiders.js
+const AFL=require('./lib/afleiders.js');
 function genQ(pairs, vakPool){
-  const vakDefs=vakPool.map(p=>p.d), vakTerms=vakPool.map(p=>p.t), domTerms=pairs.map(p=>p.t), domDefs=pairs.map(p=>p.d), qs=[];
+  const domSet=new Set(pairs.map(p=>p.t)), qs=[];
+  const defs=vakPool.map(p=>({x:p.d,dom:domSet.has(p.t)})), terms=vakPool.map(p=>({x:p.t,dom:domSet.has(p.t)}));
+  const mk=(v,juist,af,u,d)=>{if(!af)return;const o=AFL.schud([juist,...af],AFL.rng('o'+v));qs.push({v,o,c:o.indexOf(juist),u,d});};
   pairs.forEach(({t,d})=>{
     const ext=UITLEG[t]?' '+UITLEG[t]:'';
     const uT=`«${t}» betekent: ${d}.${ext}`, uD=`Het juiste begrip is «${t}»: ${d}.${ext}`;
-    // 1) recall makkelijk (d1): definitie herkennen bij de term, afleiders uit het hele vak
-    const d1=sample(vakDefs,3,[d]);
-    if(d1.length===3){const o=shuffle([d,...d1]);qs.push({v:`Wat betekent «${t}»?`,o,c:o.indexOf(d),u:uT,d:1});}
-    // 2) herkenning makkelijk (d2): term bij definitie, afleiders uit het hele vak
-    const d2=sample(vakTerms,3,[t]);
-    if(d2.length===3){const o=shuffle([t,...d2]);qs.push({v:`Welk begrip hoort bij deze omschrijving: "${d}"?`,o,c:o.indexOf(t),u:uD,d:2});}
-    // 3) herkenning moeilijk (d3): term bij definitie, afleiders uit HETZELFDE domein (dichtbij)
-    const d3=sample(domTerms,3,[t]);
-    if(d3.length===3){const o=shuffle([t,...d3]);qs.push({v:`Welke term past bij: "${d}"?`,o,c:o.indexOf(t),u:uD,d:3});}
-    // 4) recall moeilijk (d4): definitie herkennen bij de term, afleiders uit HETZELFDE domein (dichtbij)
-    const d4=sample(domDefs,3,[d]);
-    if(d4.length===3){const o=shuffle([d,...d4]);qs.push({v:`Wat houdt «${t}» in?`,o,c:o.indexOf(d),u:uT,d:3});}
+    // 1) definitie bij de term (d1) en 4) idem, afleiders uit hetzelfde domein (d3)
+    let v=`Wat betekent «${t}»?`; mk(v,d,AFL.kies(d,defs,{soort:'def',term:t,seed:v}),uT,1);
+    v=`Wat houdt «${t}» in?`; mk(v,d,AFL.kies(d,defs,{soort:'def',term:t,dichtbij:true,seed:v}),uT,3);
+    // 2) en 3) term bij definitie; niet als het begrip al in de omschrijving staat (weggever)
+    if(!AFL.weggever(t,d)){
+      v=`Welk begrip hoort bij deze omschrijving: "${d}"?`; mk(v,t,AFL.kies(t,terms,{soort:'term',def:d,seed:v}),uD,2);
+      v=`Welke term past bij: "${d}"?`; mk(v,t,AFL.kies(t,terms,{soort:'term',def:d,dichtbij:true,seed:v}),uD,3);
+    }
   });
   return qs;
 }

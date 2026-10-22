@@ -691,7 +691,7 @@ function renderPlusDashboard(){
     el.innerHTML=`<div class="plus-empty"><div class="plus-empty-ic">📊</div>
       <h3>Nog geen gegevens</h3>
       <p>Maak eerst een proefexamen af. Daarna laat Slagio hier zien waar je punten laat liggen, wat je vandaag moet oefenen en hoe je ervoor staat.</p>
-      <button class="plus-cta" onclick="show('sc-home')">Naar de vakken</button></div>`;
+      <button class="plus-cta" onclick="if(typeof openExamenBieb==='function')openExamenBieb();else show('sc-home')">Maak een proefexamen</button></div>`;
     return;
   }
   if(!_plusVak || !vakken.some(v=>v.vakId===_plusVak)) _plusVak=vakken[vakken.length-1].vakId;

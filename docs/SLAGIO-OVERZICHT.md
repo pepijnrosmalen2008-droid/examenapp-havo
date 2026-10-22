@@ -64,6 +64,6 @@ Elke nieuwe module wordt automatisch gekeurd voordat hij live gaat: aantal vrage
 - App: https://slagio.nl (havo: /havo, vwo: /vwo, vmbo: /vmbo)
 - Leerpagina's: https://slagio.nl/leren/
 - Korte index voor AI-assistenten: https://slagio.nl/llms.txt
-- Examenrooster 2027: https://slagio.nl/examenrooster-2027.html
-- Eindcijfer berekenen: https://slagio.nl/eindcijfer-calculator.html
+- Examenrooster 2027: https://slagio.nl/vakken/examenrooster-2027.html
+- Eindcijfer berekenen: https://slagio.nl/vakken/eindcijfer-calculator.html
 - Over Slagio: https://slagio.nl/over-ons.html

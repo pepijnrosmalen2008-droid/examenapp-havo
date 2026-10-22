@@ -440,6 +440,15 @@ function vonkCelebrate(caption, opts) {
 var _vonkReactT = null;
 function vonkReact(mood, text, opts) {
   opts = opts || {};
+  // Eén Vonk tegelijk: staat de quiz-Vonk in beeld, dan praat die. Op de uitslag
+  // heeft Vonk al een eigen kaart, dus daar geen tweede Vonk.
+  const qv = document.getElementById('quiz-vonk');
+  if (qv && qv.classList.contains('on')) {
+    if (text && typeof _quizVonkBubble === 'function') _quizVonkBubble(text, opts.duration || 1500);
+    return;
+  }
+  const res = document.getElementById('sc-res');
+  if (res && res.classList.contains('on')) return;
   let el = document.getElementById('vonk-react');
   if (!el) { el = document.createElement('div'); el.id = 'vonk-react'; el.className = 'vonk-react'; document.body.appendChild(el); }
   el.innerHTML = `<div class="vr-fig">${mascotSVG(mood || 'blij', 64)}</div>${text ? `<div class="vr-chip">${text}</div>` : ''}`;

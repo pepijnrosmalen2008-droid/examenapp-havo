@@ -12,7 +12,7 @@ Voor examenkandidaten die zich voorbereiden op het centraal examen (CE) en de sc
 |---|---|---|---|
 | vakken | 12 | 16 | 12 |
 | domeinen (onderdelen van het examenprogramma) | 59 | 84 | 77 |
-| oefenvragen | 10.014 | 10.666 | 2.523 |
+| oefenvragen | 9.762 | 10.454 | 2.523 |
 | vragen in examenstijl met modelantwoord | 775 | 381 | 0 |
 | begrippen met definitie | 1.582 | 1.965 | 799 |
 | leerdoelen met een eigen module (samenvatting, vragen, begrippen) | 83 | 19 | 0 |
@@ -58,6 +58,6 @@ Elke nieuwe module wordt automatisch gekeurd voordat hij live gaat: aantal vrage
 - App: https://slagio.nl (havo: /havo, vwo: /vwo, vmbo: /vmbo)
 - Leerpagina's: https://slagio.nl/leren/
 - Korte index voor AI-assistenten: https://slagio.nl/llms.txt
-- Examenrooster 2027: https://slagio.nl/examenrooster-2027.html
-- Eindcijfer berekenen: https://slagio.nl/eindcijfer-calculator.html
+- Examenrooster 2027: https://slagio.nl/vakken/examenrooster-2027.html
+- Eindcijfer berekenen: https://slagio.nl/vakken/eindcijfer-calculator.html
 - Over Slagio: https://slagio.nl/over-ons.html

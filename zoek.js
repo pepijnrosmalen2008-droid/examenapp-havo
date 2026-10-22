@@ -374,7 +374,7 @@ function _zkEmpty(){
       +'<svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>'
       +_zkEsc(q)+'</button>').join('')+'</div></div>';
   }
-  el.innerHTML='<div class="zk-state"><h3>Zoek in de hele kennisbank</h3><p>'+(_zoekIndex?_zoekIndex.length.toLocaleString('nl'):'Duizenden')+' vragen, begrippen en uitleg-fragmenten - HAVO &amp; VWO.</p></div>'+recHtml;
+  el.innerHTML='<div class="zk-state"><h3>Zoek in de hele kennisbank</h3><p>'+(_zoekIndex?_zoekIndex.length.toLocaleString('nl'):'Duizenden')+' vragen, begrippen en uitleg-fragmenten voor '+(typeof APP_LEVEL!=='undefined'?APP_LEVEL.toUpperCase():'jouw niveau')+'.</p></div>'+recHtml;
   [].forEach.call(el.querySelectorAll('.zk-recent-chip'),c=>c.onclick=()=>{
     const q=document.getElementById('zoek-q');q.value=c.getAttribute('data-q');_zkSearch(q.value);q.focus();});
 }
@@ -432,7 +432,7 @@ document.addEventListener('keydown',function(e){
   if(tag==='input'||tag==='textarea'||tag==='select'||(t&&t.isContentEditable))return;
   if(typeof APP_LEVEL==='undefined')return;               // pas na niveaukeuze
   const cur=document.querySelector('.sc.on');
-  if(cur&&(cur.id==='sc-q'||cur.id==='sc-simtoets'))return;// niet tijdens een toets
+  if(cur&&['sc-quiz','sc-simtoets','sc-examen','sc-examsim','sc-race','sc-flash'].includes(cur.id))return;// niet tijdens een quiz of toets
   e.preventDefault();
   if(window.openZoek)openZoek();
 });

@@ -274,6 +274,15 @@ try {
   bad('leerpagina\'s verouderd: draai node scripts/build-leren.mjs (en daarna node scripts/build-sitemap.mjs)');
 }
 
+// ── vakpagina's (vakken/*.html) noemen het komende examenjaar ──
+group('Vakpagina\'s');
+try {
+  const { execFileSync } = await import('node:child_process');
+  ok(execFileSync(process.execPath, [path.join(ROOT, 'scripts', 'vakpagina-jaar.mjs'), '--check'], { stdio: 'pipe', cwd: ROOT }).toString().trim());
+} catch (e) {
+  bad('vakpagina\'s noemen nog een oud examenjaar: draai node scripts/vakpagina-jaar.mjs');
+}
+
 // ── uitslag ──
 console.log('\n' + (fails ? '✗ ' + fails + ' van ' + checks + ' checks GEFAALD' : '✓ alle ' + checks + ' checks geslaagd'));
 process.exit(fails ? 1 : 0);
