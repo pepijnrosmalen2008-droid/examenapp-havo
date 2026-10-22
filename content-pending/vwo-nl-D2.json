@@ -1,0 +1,688 @@
+{
+ "id": "D2",
+ "lo": "nl.D.2",
+ "gs": 2,
+ "naam": "Argumentatiestructuren onderscheiden",
+ "beschrijving": "Je ziet hoe argumenten met elkaar en met het standpunt samenhangen en onderscheidt enkelvoudige, onderschikkende en nevenschikkende argumentatie, ook als ze gecombineerd voorkomen.",
+ "ceStatus": "CE+SE",
+ "binas": "",
+ "val": "",
+ "onderwerpen": [
+  "Standpunt, argument en structuur",
+  "Enkelvoudige argumentatie",
+  "Onderschikkende argumentatie: argument en subargument",
+  "Nevenschikkende argumentatie: afhankelijk en onafhankelijk",
+  "Een schema van de argumentatie lezen en maken",
+  "Structuur herkennen met signaalwoorden"
+ ],
+ "sam": "De argumentatiestructuur laat zien hoe argumenten met elkaar en met het standpunt samenhangen. Enkelvoudige argumentatie heeft één argument bij één standpunt. Bij onderschikkende argumentatie wordt een argument zelf ondersteund door subargumenten, zoals in een keten. Bij nevenschikkende argumentatie ondersteunen twee of meer argumenten samen het standpunt, afhankelijk of onafhankelijk van elkaar. Een schema met nummers als 1, 1.1 en 1.1.1 maakt de structuur zichtbaar en signaalwoorden als ten eerste, want en omdat helpen bij het herkennen.",
+ "begrippen": [
+  {
+   "t": "Argumentatie",
+   "d": "Het standpunt en het geheel van argumenten dat het ondersteunt of bestrijdt."
+  },
+  {
+   "t": "Argumentatiestructuur",
+   "d": "De wijze waarop argumenten met elkaar en met het standpunt samenhangen."
+  },
+  {
+   "t": "Standpunt",
+   "d": "Een uitspraak die op twijfel of tegenspraak stuit of zou kunnen stuiten."
+  },
+  {
+   "t": "Argument",
+   "d": "Een uitspraak waarmee een standpunt wordt onderbouwd."
+  },
+  {
+   "t": "Subargument",
+   "d": "Een argument dat een ander argument ondersteunt, onder dat argument geplaatst."
+  },
+  {
+   "t": "Enkelvoudige argumentatie",
+   "d": "Een argumentatie met één argument en één standpunt."
+  },
+  {
+   "t": "Onderschikkende argumentatie",
+   "d": "Een argumentatie waarin een argument door subargumenten wordt ondersteund."
+  },
+  {
+   "t": "Ketenargumentatie",
+   "d": "Een andere naam voor onderschikkende argumentatie."
+  },
+  {
+   "t": "Nevenschikkende argumentatie",
+   "d": "Een argumentatie waarin twee of meer argumenten gezamenlijk het standpunt ondersteunen."
+  },
+  {
+   "t": "Onafhankelijke argumenten",
+   "d": "Argumenten die ieder op zich het standpunt ondersteunen."
+  },
+  {
+   "t": "Afhankelijke argumenten",
+   "d": "Argumenten die samen nodig zijn om het standpunt te ondersteunen."
+  },
+  {
+   "t": "Tegenargument",
+   "d": "Een uitspraak waarmee een standpunt of argument wordt weerlegd."
+  }
+ ],
+ "sv": [
+  {
+   "v": "Uit welke delen bestaat deze argumentatie?",
+   "o": [
+    "een standpunt, een argument en een subargument",
+    "een standpunt en één argument",
+    "twee argumenten zonder standpunt",
+    "alleen een standpunt zonder onderbouwing"
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 0,
+   "u": "Standpunt plus één argument.",
+   "uo": [
+    "Koos je \"een standpunt, een argument en een subargument\"? Dan denk je dat er een subargument staat. Er is geen onderliggende reden, alleen één argument.",
+    "Klopt: de argumentatie heeft één standpunt en één argument.",
+    "Koos je \"twee argumenten zonder standpunt\"? Dan denk je dat het standpunt ontbreekt. Het staat vooraan, en er is maar één argument.",
+    "Koos je \"alleen een standpunt zonder onderbouwing\"? Dan denk je dat het standpunt niet is onderbouwd. Er staat wel een argument, dus het standpunt is onderbouwd."
+   ],
+   "uh": "Tel de uitspraken.",
+   "ctx": "Standpunt: \"Het schoolplein moet groener.\" Argument: \"Planten geven schaduw op warme dagen.\""
+  },
+  {
+   "v": "Welk soort argumentatie is dit?",
+   "o": [
+    "onderschikkende argumentatie, want er is een argument",
+    "nevenschikkende argumentatie, want er is een argument",
+    "geen argumentatie, want er is maar één argument",
+    "enkelvoudige argumentatie"
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 1,
+   "u": "Enkelvoudig: één argument, één standpunt.",
+   "uo": [
+    "Koos je \"onderschikkende argumentatie, want er is een...\"? Dan denk je dat het argument door een subargument wordt ondersteund. Er staat geen subargument, dus het is geen keten.",
+    "Koos je \"nevenschikkende argumentatie, want er is een...\"? Dan denk je dat er meerdere argumenten naast elkaar staan. Er is er maar één, dus het is niet nevenschikkend.",
+    "Koos je \"geen argumentatie, want er is maar één argument\"? Dan denk je dat je minstens twee argumenten nodig hebt. Eén argument volstaat voor argumentatie, het heet dan enkelvoudig.",
+    "Klopt: één argument ondersteunt één standpunt."
+   ],
+   "uh": "Hoeveel argumenten?",
+   "ctx": "Standpunt: \"Het schoolplein moet groener.\" Argument: \"Planten geven schaduw op warme dagen.\""
+  },
+  {
+   "v": "Welke uitspraak is het subargument?",
+   "o": [
+    "\"Planten geven schaduw op warme dagen.\"",
+    "\"Een groen plein is prettiger om op te zitten.\"",
+    "\"Het schoolplein moet groener.\"",
+    "geen van de drie, want er is geen subargument"
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 2,
+   "u": "Een subargument ondersteunt een argument.",
+   "uo": [
+    "Klopt: het ondersteunt het argument en niet rechtstreeks het standpunt.",
+    "Koos je \"Een groen plein is prettiger om op te zitten.\"? Dan denk je dat dit het subargument is. Dit is het argument dat het standpunt ondersteunt, het subargument ondersteunt dit argument.",
+    "Koos je \"Het schoolplein moet groener.\"? Dan denk je dat het standpunt het subargument is. Het standpunt staat bovenaan, het subargument onderaan.",
+    "Koos je \"geen van de drie, want er is geen subargument\"? Dan denk je dat er geen subargument is. Het fragment noemt er een, namelijk de planten die schaduw geven."
+   ],
+   "uh": "Wat staat onder het argument?",
+   "ctx": "Standpunt: \"Het schoolplein moet groener.\" Argument: \"Een groen plein is prettiger om op te zitten.\" Subargument bij dat argument: \"Planten geven schaduw op warme dagen.\""
+  },
+  {
+   "v": "Hoe noem je dit soort argumentatie?",
+   "o": [
+    "enkelvoudige argumentatie, want er is één standpunt",
+    "nevenschikkende argumentatie, want er zijn meer uitspraken",
+    "onderschikkende argumentatie",
+    "onafhankelijke argumentatie, want alles staat los"
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 2,
+   "u": "Onderschikkend: argument met subargument, een keten.",
+   "uo": [
+    "Koos je \"enkelvoudige argumentatie, want er is één standpunt\"? Dan denk je dat één standpunt enkelvoudig maakt. Er is ook een subargument, dus het is een keten.",
+    "Koos je \"nevenschikkende argumentatie, want er zijn meer...\"? Dan denk je dat meer uitspraken nevenschikkend zijn. De uitspraken staan onder elkaar, niet naast elkaar.",
+    "Klopt: een argument wordt zelf ondersteund door een subargument.",
+    "Koos je \"onafhankelijke argumentatie, want alles staat los\"? Dan denk je dat de uitspraken los staan. Ze hangen samen als keten, dus het is onderschikkend."
+   ],
+   "uh": "Staat er iets onder het argument?",
+   "ctx": "Standpunt: \"Het schoolplein moet groener.\" Argument: \"Een groen plein is prettiger om op te zitten.\" Subargument bij dat argument: \"Planten geven schaduw op warme dagen.\""
+  },
+  {
+   "v": "Welk soort argumentatie is dit?",
+   "o": [
+    "onderschikkend, want er zijn twee argumenten",
+    "enkelvoudig, want er is één standpunt",
+    "nevenschikkend en onafhankelijk",
+    "nevenschikkend en afhankelijk, want ze horen bij elkaar"
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 3,
+   "u": "Nevenschikkend en onafhankelijk: elk argument werkt zelfstandig.",
+   "uo": [
+    "Koos je \"onderschikkend, want er zijn twee argumenten\"? Dan denk je dat twee argumenten een keten vormen. Ze staan naast elkaar, niet onder elkaar.",
+    "Koos je \"enkelvoudig, want er is één standpunt\"? Dan denk je dat één standpunt één argument betekent. Er zijn twee argumenten, dus het is niet enkelvoudig.",
+    "Klopt: twee argumenten ondersteunen elk afzonderlijk het standpunt.",
+    "Koos je \"nevenschikkend en afhankelijk, want ze horen bij...\"? Dan denk je dat de argumenten samen nodig zijn. Elk argument werkt ook los, dus ze zijn onafhankelijk."
+   ],
+   "uh": "Werkt elk argument ook alleen?",
+   "ctx": "Standpunt: \"Het schoolplein moet groener.\" Argument 1: \"Planten geven schaduw.\" Argument 2: \"Een groen plein is goed voor insecten en vogels.\" Elk argument kan het standpunt ook zonder het andere ondersteunen."
+  },
+  {
+   "v": "Welk nummer hoort in een schema bij een subargument van argument 1.1?",
+   "o": [
+    "1.1.1",
+    "1.2, een tweede argument voor hetzelfde standpunt",
+    "2.1, het eerste argument bij een ander standpunt",
+    "1, het nummer van het standpunt zelf"
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 4,
+   "u": "Subargument: een cijfer extra, dus 1.1.1.",
+   "uo": [
+    "Klopt: een subargument krijgt een extra cijfer achter het nummer van het argument.",
+    "Koos je \"1.2, een tweede argument voor hetzelfde standpunt\"? Dan denk je dat 1.2 een subargument van 1.1 is. Het is een tweede argument bij het standpunt, geen subargument.",
+    "Koos je \"2.1, het eerste argument bij een ander standpunt\"? Dan denk je dat 2.1 bij 1.1 hoort. Dat nummer hoort bij een ander standpunt, dus het klopt niet.",
+    "Koos je \"1, het nummer van het standpunt zelf\"? Dan denk je dat 1 het subargument is. Het nummer 1 is het standpunt, en geen onderschikking."
+   ],
+   "uh": "Welk nummer past?"
+  },
+  {
+   "v": "Wat doe je als eerste bij het analyseren van een argumentatie?",
+   "o": [
+    "de bijzinnen tellen en markeren in de tekst",
+    "de langste alinea van de tekst markeren",
+    "de laatste zin als conclusie weglaten uit de analyse",
+    "het standpunt vinden"
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 0,
+   "u": "Eerst het standpunt, dan de argumenten.",
+   "uo": [
+    "Koos je \"de bijzinnen tellen en markeren in de tekst\"? Dan denk je dat bijzinnen de argumenten zijn. Ze zeggen nog niets over de structuur, je begint met het standpunt.",
+    "Koos je \"de langste alinea van de tekst markeren\"? Dan denk je dat de lengte telt. Het gaat om de functie van de uitspraken, dus eerst het standpunt zoeken.",
+    "Koos je \"de laatste zin als conclusie weglaten uit de analyse\"? Dan denk je dat de conclusie niet telt. De conclusie bevat vaak het standpunt, dus laat je hem niet weg.",
+    "Klopt: argumenten herken je pas als je weet wat ze ondersteunen."
+   ],
+   "uh": "Wat wordt verdedigd?"
+  },
+  {
+   "v": "Wat maakt deze argumentatie onderschikkend?",
+   "o": [
+    "er zijn twee argumenten naast elkaar geplaatst",
+    "een argument heeft zelf een subargument",
+    "het standpunt komt aan het eind van de tekst",
+    "er is geen standpunt in het fragment"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 2,
+   "u": "Onderschikkend: een keten van redenen.",
+   "uo": [
+    "Koos je \"er zijn twee argumenten naast elkaar geplaatst\"? Dan denk je dat naast elkaar staan onderschikkend maakt. Dat is nevenschikkend, hier staan de argumenten onder elkaar.",
+    "Klopt: een reden staat onder een reden, als een keten.",
+    "Koos je \"het standpunt komt aan het eind van de tekst\"? Dan denk je dat de plaats van het standpunt bepaalt of het onderschikkend is. De plaats maakt niet uit, het gaat om de relatie tussen de uitspraken.",
+    "Koos je \"er is geen standpunt in het fragment\"? Dan denk je dat het standpunt ontbreekt. Het standpunt staat vooraan, de keten loopt vanaf daar."
+   ],
+   "uh": "Onderbouwt het argument iets?",
+   "ctx": "Standpunt: \"Het schoolplein moet groener.\" Argument: \"Een groen plein is prettiger om op te zitten.\" Subargument bij dat argument: \"Planten geven schaduw op warme dagen.\""
+  },
+  {
+   "v": "Welke ordening van onder- en bovenschikking heeft tekst B?",
+   "o": [
+    "standpunt, schaduw, bomen maken koeler, koeler is prettiger",
+    "standpunt met drie afzonderlijke argumenten op één niveau",
+    "standpunt met één argument, zonder subargumenten",
+    "standpunt, koeler is prettiger, bomen maken koeler, schaduw"
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 2,
+   "u": "Keten: standpunt, argument, subargument, subsubargument.",
+   "uo": [
+    "Koos je \"standpunt, schaduw, bomen maken koeler, koeler is...\"? Dan denk je dat de keten andersom loopt. Het standpunt wordt eerst ondersteund door het prettiger wonen, en dat door de rest van de keten.",
+    "Koos je \"standpunt met drie afzonderlijke argumenten op één...\"? Dan denk je dat de argumenten naast elkaar staan. Elk argument ondersteunt het vorige, dus het is een keten.",
+    "Koos je \"standpunt met één argument, zonder subargumenten\"? Dan denk je dat het enkelvoudig is. Er zijn meer redenen onder elkaar, dus het is onderschikkend.",
+    "Klopt: elk argument wordt ondersteund door het volgende."
+   ],
+   "uh": "Welke uitspraak ondersteunt welke?",
+   "ctx": "Gemeenten moeten meer bomen planten, want een koelere stad is prettiger om in te wonen. Een stad met veel bomen is koeler dan een stad met weinig bomen, omdat bomen schaduw geven. Wie in een warme zomer door een straat met bomen loopt en daarna door een kale straat, voelt het verschil direct."
+  },
+  {
+   "v": "Welk argument ondersteunt het standpunt rechtstreeks?",
+   "o": [
+    "\"bomen geven schaduw\"",
+    "\"een koelere stad is prettiger om in te wonen\"",
+    "\"een stad met veel bomen is koeler\"",
+    "\"het verschil voel je direct in een straat met bomen\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 2,
+   "u": "Direct onder het standpunt staat het hoofdargument.",
+   "uo": [
+    "Koos je \"bomen geven schaduw\"? Dan denk je dat het diepste subargument het hoofdargument is. Dit onderbouwt een tussenargument, niet het standpunt zelf.",
+    "Klopt: dit argument staat direct onder het standpunt.",
+    "Koos je \"een stad met veel bomen is koeler\"? Dan denk je dat dit direct onder het standpunt staat. Het ondersteunt het argument over wonen, niet het standpunt zelf.",
+    "Koos je \"het verschil voel je direct in een straat met bomen\"? Dan denk je dat een voorbeeld het hoofdargument is. Het voorbeeld ondersteunt een argument eronder, niet het standpunt zelf."
+   ],
+   "uh": "Wat staat vlak onder het standpunt?",
+   "ctx": "Gemeenten moeten meer bomen planten, want een koelere stad is prettiger om in te wonen. Een stad met veel bomen is koeler dan een stad met weinig bomen, omdat bomen schaduw geven. Wie in een warme zomer door een straat met bomen loopt en daarna door een kale straat, voelt het verschil direct."
+  },
+  {
+   "v": "Hoeveel argumenten ondersteunen in tekst C het standpunt rechtstreeks?",
+   "o": [
+    "twee, namelijk keuken en prijzen",
+    "één, namelijk de keuken, en de rest is uitleg",
+    "drie",
+    "vier, want het \"omdat\" noemt ook een argument"
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 3,
+   "u": "Tel de redenen direct onder het standpunt.",
+   "uo": [
+    "Koos je \"twee, namelijk keuken en prijzen\"? Dan denk je dat het derde argument een subargument is. De pauze buiten is een eigen reden, dus er zijn drie argumenten.",
+    "Koos je \"één, namelijk de keuken, en de rest is uitleg\"? Dan denk je dat alleen de eerste reden telt. Daarnaast en een derde reden zijn ook argumenten, dus er zijn er drie.",
+    "Klopt: keuken, prijzen en pauze buiten zijn drie zelfstandige redenen.",
+    "Koos je \"vier, want het omdat noemt ook een argument\"? Dan denk je dat het \"omdat\"-deel een vierde argument is. Het is een subargument bij argument 2, dus niet rechtstreeks onder het standpunt."
+   ],
+   "uh": "Welke redenen staan naast elkaar?",
+   "ctx": "De school moet een nieuwe kantine bouwen. De huidige keuken is verouderd: de apparaten zijn meer dan twintig jaar oud en voldoen niet meer aan de eisen. Daarnaast zijn de prijzen in de kantine hoog, omdat de inkoop slecht is geregeld en elke bestelling apart wordt gedaan. Een derde reden is dat leerlingen de pauze nu buiten doorbrengen, ook als het regent, omdat er binnen te weinig plaats is voor alle leerlingen tegelijk. Tegenstanders wijzen op de kosten. Dat is waar, maar een gebouw dat niet meer aan de eisen voldoet, kost uiteindelijk ook geld."
+  },
+  {
+   "v": "Waarom zijn de twee argumenten in dit fragment afhankelijk van elkaar?",
+   "o": [
+    "alleen samen ondersteunen ze het standpunt",
+    "elk argument ondersteunt het standpunt ook alleen",
+    "het ene argument ondersteunt het andere",
+    "het standpunt ondersteunt de argumenten"
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 3,
+   "u": "Afhankelijk: de argumenten zijn samen nodig.",
+   "uo": [
+    "Klopt: afhankelijke argumenten zijn samen nodig.",
+    "Koos je \"elk argument ondersteunt het standpunt ook alleen\"? Dan denk je dat elk argument los werkt. Dan zijn ze onafhankelijk, hier zijn ze samen nodig.",
+    "Koos je \"het ene argument ondersteunt het andere\"? Dan denk je dat er een keten is. Dan is de argumentatie onderschikkend, maar hier staan ze naast elkaar.",
+    "Koos je \"het standpunt ondersteunt de argumenten\"? Dan denk je dat het standpunt de argumenten onderbouwt. Het is andersom, de argumenten ondersteunen het standpunt."
+   ],
+   "uh": "Werkt elk argument alleen?",
+   "ctx": "Standpunt: \"De school moet een extra gebouw neerzetten.\" Argument 1: \"Het gebouw is nu al vol.\" Argument 2: \"Volgend jaar komen er honderd leerlingen bij.\" Alleen samen laten ze zien waarom een extra gebouw nodig is."
+  },
+  {
+   "v": "Hoeveel argumenten ondersteunen in dit schema het standpunt rechtstreeks?",
+   "o": [
+    "twee: 1.1 en 1.2",
+    "één: alleen 1.1 en niet 1.2",
+    "drie: 1.1, 1.1.1 en 1.2",
+    "vijf: alle uitspraken behalve het standpunt"
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 4,
+   "u": "Direct onder het standpunt: 1.1 en 1.2.",
+   "uo": [
+    "Klopt: alleen 1.1 en 1.2 staan direct onder het standpunt.",
+    "Koos je \"één: alleen 1.1 en niet 1.2\"? Dan denk je dat 1.2 geen argument is. Het is een tweede argument bij het standpunt, dus beide zijn argumenten.",
+    "Koos je \"drie: 1.1, 1.1.1 en 1.2\"? Dan denk je dat 1.1.1 het standpunt ook rechtstreeks ondersteunt. Het is een subargument van 1.1, dus niet rechtstreeks.",
+    "Koos je \"vijf: alle uitspraken behalve het standpunt\"? Dan denk je dat alle nummers direct onder het standpunt staan. Alleen 1.1 en 1.2 doen dat, de rest zijn subargumenten."
+   ],
+   "uh": "Welke nummers hebben twee cijfers?",
+   "ctx": "Een schema van een argumentatie. 1: standpunt. 1.1: argument. 1.1.1: subargument. 1.2: argument. 1.2.1: subargument. 1.2.2: subargument. Alle uitspraken horen bij hetzelfde standpunt."
+  },
+  {
+   "v": "Welk schema-nummer is een subargument van argument 1.2?",
+   "o": [
+    "1.1.1, een subargument van het andere argument",
+    "1.3, een derde argument bij het standpunt",
+    "1.2.2",
+    "2.2, een nummer van een ander standpunt"
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 4,
+   "u": "Subargument van 1.2: 1.2.1 of 1.2.2.",
+   "uo": [
+    "Koos je \"1.1.1, een subargument van het andere argument\"? Dan denk je dat 1.1.1 bij 1.2 hoort. Dat is een subargument van 1.1, dus het hoort bij argument 1.1.",
+    "Koos je \"1.3, een derde argument bij het standpunt\"? Dan denk je dat 1.3 een subargument van 1.2 is. Dat zou een derde argument zijn, en dat bestaat niet in het schema.",
+    "Klopt: het nummer begint met 1.2 en heeft een extra cijfer.",
+    "Koos je \"2.2, een nummer van een ander standpunt\"? Dan denk je dat 2.2 bij 1.2 hoort. Het begin 2 hoort bij een ander standpunt, dus het klopt niet."
+   ],
+   "uh": "Welk nummer begint met 1.2?",
+   "ctx": "Een schema van een argumentatie. 1: standpunt. 1.1: argument. 1.1.1: subargument. 1.2: argument. 1.2.1: subargument. 1.2.2: subargument. Alle uitspraken horen bij hetzelfde standpunt."
+  },
+  {
+   "v": "Welke woorden in tekst A wijzen op twee argumenten naast elkaar?",
+   "o": [
+    "\"want\" en \"omdat\"",
+    "\"ten eerste\" en \"ten tweede\"",
+    "\"sommigen\" en \"kortom\"",
+    "\"dat klopt\" en \"maar\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 5,
+   "u": "Ten eerste, ten tweede: argumenten naast elkaar.",
+   "uo": [
+    "Koos je \"want en omdat\"? Dan denk je dat deze woorden de argumenten naast elkaar zetten. Ze leiden subargumenten in, de ordening zit in \"ten eerste\" en \"ten tweede\".",
+    "Klopt: ze ordenen twee afzonderlijke argumenten.",
+    "Koos je \"sommigen en kortom\"? Dan denk je dat deze woorden argumenten rangschikken. \"Sommigen\" opent een tegenwerping, \"kortom\" een conclusie.",
+    "Koos je \"dat klopt en maar\"? Dan denk je dat deze woorden argumenten rangschikken. Ze hoorden bij de weerlegging, niet bij de ordening van de argumenten."
+   ],
+   "uh": "Welke woorden tellen?",
+   "ctx": "Scholen moeten een vierdaagse lesweek invoeren. Ten eerste halen leerlingen dan betere resultaten, want zij zijn minder moe. Een proef op een andere school laat dat zien: daar stegen de cijfers nadat de vijfde lesdag was geschrapt. Ten tweede is een vierdaagse week goedkoper voor de school, omdat het gebouw een dag minder verwarmd en verlicht hoeft te worden. Sommigen zeggen dat de lesdagen dan te lang worden. Dat klopt, maar de dagen worden maar één uur langer, en een uur extra weegt minder zwaar dan een hele vrije dag. Kortom: een vierdaagse lesweek is een verstandige keuze."
+  },
+  {
+   "v": "Welk signaalwoord leidt in tekst A een subargument in bij \"betere resultaten\"?",
+   "o": [
+    "\"ten eerste\"",
+    "\"sommigen\"",
+    "\"kortom\"",
+    "\"want\""
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 5,
+   "u": "\"Want\" en \"omdat\" leiden subargumenten in.",
+   "uo": [
+    "Koos je \"ten eerste\"? Dan denk je dat \"ten eerste\" een subargument inleidt. Het opent een hoofdargument, het subargument volgt daarna met \"want\".",
+    "Koos je \"sommigen\"? Dan denk je dat \"sommigen\" een subargument inleidt. Het opent een tegenwerping, geen ondersteuning.",
+    "Koos je \"kortom\"? Dan denk je dat \"kortom\" een subargument inleidt. Het opent de conclusie, en komt aan het eind.",
+    "Klopt: \"want zij zijn minder moe\" geeft de reden voor het argument."
+   ],
+   "uh": "Welk woord geeft een reden?",
+   "ctx": "Scholen moeten een vierdaagse lesweek invoeren. Ten eerste halen leerlingen dan betere resultaten, want zij zijn minder moe. Een proef op een andere school laat dat zien: daar stegen de cijfers nadat de vijfde lesdag was geschrapt. Ten tweede is een vierdaagse week goedkoper voor de school, omdat het gebouw een dag minder verwarmd en verlicht hoeft te worden. Sommigen zeggen dat de lesdagen dan te lang worden. Dat klopt, maar de dagen worden maar één uur langer, en een uur extra weegt minder zwaar dan een hele vrije dag. Kortom: een vierdaagse lesweek is een verstandige keuze."
+  },
+  {
+   "v": "Waarom is dit fragment geen onderschikkende argumentatie?",
+   "o": [
+    "het standpunt staat vooraan",
+    "er is één argument en geen subargument",
+    "er is geen argument genoemd",
+    "er staat een vraagteken in de tekst"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 1,
+   "u": "Onderschikkend vraagt een subargument.",
+   "uo": [
+    "Koos je \"het standpunt staat vooraan\"? Dan denk je dat de plaats van het standpunt bepaalt of het onderschikkend is. De plaats maakt niet uit, het gaat om de relaties.",
+    "Klopt: onderschikkend vraagt een argument dat zelf wordt ondersteund.",
+    "Koos je \"er is geen argument genoemd\"? Dan denk je dat het argument ontbreekt. Er is wel een argument, alleen geen subargument.",
+    "Koos je \"er staat een vraagteken in de tekst\"? Dan denk je dat vraagtekens de structuur bepalen. Er staat geen vraagteken, en het zegt niets over de structuur."
+   ],
+   "uh": "Staat er iets onder het argument?",
+   "ctx": "Standpunt: \"Het schoolplein moet groener.\" Argument: \"Planten geven schaduw op warme dagen.\""
+  },
+  {
+   "v": "Hoe ondersteunen \"minder moe\" en \"de proef op een andere school\" samen het argument \"betere resultaten\"?",
+   "o": [
+    "nevenschikkend en onafhankelijk",
+    "onderschikkend: \"minder moe\" ondersteunt de proef en andersom",
+    "nevenschikkend en afhankelijk: ze zijn alleen samen een reden voor het argument",
+    "enkelvoudig: er is maar één reden voor het argument genoemd"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 3,
+   "u": "Twee zelfstandige redenen onder één argument.",
+   "uo": [
+    "Klopt: elk ondersteunt het argument op zichzelf, dus ze staan naast elkaar.",
+    "Koos je \"onderschikkend: minder moe ondersteunt de proef en...\"? Dan denk je dat de ene uitspraak de andere ondersteunt. Ze ondersteunen beide het argument, dus ze staan naast elkaar.",
+    "Koos je \"nevenschikkend en afhankelijk: ze zijn alleen samen...\"? Dan denk je dat beide uitspraken samen nodig zijn. Elk geeft op zichzelf een reden, dus ze zijn onafhankelijk.",
+    "Koos je \"enkelvoudig: er is maar één reden voor het argument...\"? Dan denk je dat er één reden is. Er zijn twee redenen genoemd, dus het is niet enkelvoudig."
+   ],
+   "uh": "Werkt elke reden ook alleen?",
+   "ctx": "Scholen moeten een vierdaagse lesweek invoeren. Ten eerste halen leerlingen dan betere resultaten, want zij zijn minder moe. Een proef op een andere school laat dat zien: daar stegen de cijfers nadat de vijfde lesdag was geschrapt. Ten tweede is een vierdaagse week goedkoper voor de school, omdat het gebouw een dag minder verwarmd en verlicht hoeft te worden. Sommigen zeggen dat de lesdagen dan te lang worden. Dat klopt, maar de dagen worden maar één uur langer, en een uur extra weegt minder zwaar dan een hele vrije dag. Kortom: een vierdaagse lesweek is een verstandige keuze."
+  },
+  {
+   "v": "Welke uitspraak ondersteunt het argument \"een vierdaagse week is goedkoper\" rechtstreeks?",
+   "o": [
+    "de lesdagen worden maar één uur langer",
+    "een proef op een andere school liet hogere cijfers zien",
+    "scholen moeten een vierdaagse lesweek invoeren",
+    "het gebouw hoeft minder verwarmd te worden"
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 2,
+   "u": "Zoek de reden die direct bij dit argument staat.",
+   "uo": [
+    "Koos je \"de lesdagen worden maar één uur langer\"? Dan denk je dat dit het subargument bij het tweede argument is. Het hoort bij de weerlegging van de tegenwerping, niet bij de kosten.",
+    "Koos je \"een proef op een andere school liet hogere cijfers...\"? Dan denk je dat dit bij de kosten hoort. Het is een onderbouwing van het eerste argument, over de resultaten.",
+    "Koos je \"scholen moeten een vierdaagse lesweek invoeren\"? Dan denk je dat dit een subargument is. Het is het standpunt zelf, dus het staat bovenaan.",
+    "Klopt: dit is het subargument bij het tweede argument."
+   ],
+   "uh": "Waaróm is het goedkoper?",
+   "ctx": "Scholen moeten een vierdaagse lesweek invoeren. Ten eerste halen leerlingen dan betere resultaten, want zij zijn minder moe. Een proef op een andere school laat dat zien: daar stegen de cijfers nadat de vijfde lesdag was geschrapt. Ten tweede is een vierdaagse week goedkoper voor de school, omdat het gebouw een dag minder verwarmd en verlicht hoeft te worden. Sommigen zeggen dat de lesdagen dan te lang worden. Dat klopt, maar de dagen worden maar één uur langer, en een uur extra weegt minder zwaar dan een hele vrije dag. Kortom: een vierdaagse lesweek is een verstandige keuze."
+  },
+  {
+   "v": "Welke uitspraak is een subargument bij \"de prijzen in de kantine zijn hoog\"?",
+   "o": [
+    "de keuken is verouderd",
+    "leerlingen zitten bij regen buiten",
+    "de inkoop is slecht geregeld",
+    "een gebouw dat niet voldoet kost ook geld"
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 2,
+   "u": "Subargument: de reden achter een argument.",
+   "uo": [
+    "Koos je \"de keuken is verouderd\"? Dan denk je dat dit een subargument is. Het is een afzonderlijk argument voor het standpunt, niet voor de hoge prijzen.",
+    "Koos je \"leerlingen zitten bij regen buiten\"? Dan denk je dat dit bij de prijzen hoort. Het is een derde argument, dat naast de andere staat.",
+    "Klopt: het \"omdat\"-deel geeft de reden voor de hoge prijzen.",
+    "Koos je \"een gebouw dat niet voldoet kost ook geld\"? Dan denk je dat dit een subargument is. Het is de weerlegging van de tegenwerping, geen reden voor de prijzen."
+   ],
+   "uh": "Welke uitspraak geeft de reden voor het argument?",
+   "ctx": "De school moet een nieuwe kantine bouwen. De huidige keuken is verouderd: de apparaten zijn meer dan twintig jaar oud en voldoen niet meer aan de eisen. Daarnaast zijn de prijzen in de kantine hoog, omdat de inkoop slecht is geregeld en elke bestelling apart wordt gedaan. Een derde reden is dat leerlingen de pauze nu buiten doorbrengen, ook als het regent, omdat er binnen te weinig plaats is voor alle leerlingen tegelijk. Tegenstanders wijzen op de kosten. Dat is waar, maar een gebouw dat niet meer aan de eisen voldoet, kost uiteindelijk ook geld."
+  },
+  {
+   "v": "Hoe gaat de schrijver van tekst C om met de tegenwerping over de kosten?",
+   "o": [
+    "hij negeert de kosten helemaal en gaat verder",
+    "hij trekt het standpunt in omdat het te duur is",
+    "hij erkent de kosten en weerlegt ze",
+    "hij valt de tegenstanders persoonlijk aan"
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 5,
+   "u": "Erkennen en weerleggen.",
+   "uo": [
+    "Koos je \"hij negeert de kosten helemaal en gaat verder\"? Dan denk je dat de schrijver de tegenwerping overslaat. Hij reageert er expliciet op, met een weerlegging.",
+    "Koos je \"hij trekt het standpunt in omdat het te duur is\"? Dan denk je dat de schrijver zijn standpunt opgeeft. Hij erkent alleen het bezwaar, en houdt vol.",
+    "Klopt: hij erkent (\"dat is waar\") en weerlegt daarna met een nieuw argument.",
+    "Koos je \"hij valt de tegenstanders persoonlijk aan\"? Dan denk je dat de schrijver aanvalt. Hij blijft bij de zaak, en geeft een inhoudelijke reactie."
+   ],
+   "uh": "Wat zegt hij na \"maar\"?",
+   "ctx": "De school moet een nieuwe kantine bouwen. De huidige keuken is verouderd: de apparaten zijn meer dan twintig jaar oud en voldoen niet meer aan de eisen. Daarnaast zijn de prijzen in de kantine hoog, omdat de inkoop slecht is geregeld en elke bestelling apart wordt gedaan. Een derde reden is dat leerlingen de pauze nu buiten doorbrengen, ook als het regent, omdat er binnen te weinig plaats is voor alle leerlingen tegelijk. Tegenstanders wijzen op de kosten. Dat is waar, maar een gebouw dat niet meer aan de eisen voldoet, kost uiteindelijk ook geld."
+  },
+  {
+   "v": "Waarom zijn deze twee argumenten nevenschikkend en afhankelijk?",
+   "o": [
+    "elk argument ondersteunt het standpunt ook alleen",
+    "het tweede argument is een subargument van het eerste",
+    "er is geen argument, alleen twee meningen",
+    "het eerste is alleen een reden met het tweede"
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 3,
+   "u": "Afhankelijk: argumenten die samen nodig zijn.",
+   "uo": [
+    "Koos je \"elk argument ondersteunt het standpunt ook alleen\"? Dan denk je dat elk argument los werkt. \"Jan is de beste\" is zonder de regel geen reden, dus ze zijn afhankelijk.",
+    "Koos je \"het tweede argument is een subargument van het...\"? Dan denk je dat er een keten is. Beide argumenten ondersteunen rechtstreeks het standpunt, alleen samen.",
+    "Koos je \"er is geen argument, alleen twee meningen\"? Dan denk je dat het meningen zijn zonder onderbouwing. Beide uitspraken zijn argumenten, die samen het standpunt onderbouwen.",
+    "Klopt: ze zijn samen nodig om het standpunt te ondersteunen."
+   ],
+   "uh": "Is één argument genoeg?",
+   "ctx": "Standpunt: \"Jan moet de prijs krijgen.\" Argument 1: \"Jan is de beste leerling van de klas.\" Argument 2: \"De prijs gaat altijd naar de beste leerling.\" Het eerste argument is pas een reden als ook het tweede klopt."
+  },
+  {
+   "v": "Welke uitspraak over het schema klopt?",
+   "o": [
+    "argument 1.2 heeft twee subargumenten en 1.1 heeft er één",
+    "argument 1.1 heeft twee subargumenten en 1.2 heeft er één",
+    "beide argumenten hebben twee subargumenten",
+    "alleen argument 1.2 heeft subargumenten, 1.1 niet"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 4,
+   "u": "Tel de nummers onder elk argument.",
+   "uo": [
+    "Klopt: 1.1.1 hoort bij 1.1, en 1.2.1 en 1.2.2 horen bij 1.2.",
+    "Koos je \"argument 1.1 heeft twee subargumenten en 1.2 heeft...\"? Dan denk je dat de aantallen andersom zijn. 1.1 heeft één subargument en 1.2 heeft er twee, dus de bewering klopt niet.",
+    "Koos je \"beide argumenten hebben twee subargumenten\"? Dan denk je dat alle argumenten twee subargumenten hebben. Argument 1.1 heeft er maar één, dus dit klopt niet.",
+    "Koos je \"alleen argument 1.2 heeft subargumenten, 1.1 niet\"? Dan denk je dat 1.1 geen subargument heeft. 1.1.1 is een subargument van 1.1, dus dit klopt niet."
+   ],
+   "uh": "Welk nummer begint met 1.1 of 1.2?",
+   "ctx": "Een schema van een argumentatie. 1: standpunt. 1.1: argument. 1.1.1: subargument. 1.2: argument. 1.2.1: subargument. 1.2.2: subargument. Alle uitspraken horen bij hetzelfde standpunt."
+  },
+  {
+   "v": "Welk schema-nummer hoort bij \"bomen geven schaduw\" in tekst B?",
+   "o": [
+    "1.1.1, het eerste subargument",
+    "1.1.1.1",
+    "1.1.2, een tweede subargument onder hetzelfde argument",
+    "1.2, een tweede argument bij het standpunt"
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 4,
+   "u": "De keten: 1, 1.1, 1.1.1, 1.1.1.1.",
+   "uo": [
+    "Koos je \"1.1.1, het eerste subargument\"? Dan denk je dat \"bomen geven schaduw\" een niveau hoger staat. Het ondersteunt \"een stad met bomen is koeler\", dat zelf 1.1.1 is.",
+    "Klopt: het is het diepste subargument in een keten van vier niveaus.",
+    "Koos je \"1.1.2, een tweede subargument onder hetzelfde...\"? Dan denk je dat het een tweede argument op dezelfde plaats is. Het staat dieper in de keten, niet naast 1.1.1.",
+    "Koos je \"1.2, een tweede argument bij het standpunt\"? Dan denk je dat het een tweede hoofdargument is. Het staat diep in de keten, niet direct onder het standpunt."
+   ],
+   "uh": "Hoeveel niveaus onder het standpunt?",
+   "ctx": "Gemeenten moeten meer bomen planten, want een koelere stad is prettiger om in te wonen. Een stad met veel bomen is koeler dan een stad met weinig bomen, omdat bomen schaduw geven. Wie in een warme zomer door een straat met bomen loopt en daarna door een kale straat, voelt het verschil direct."
+  },
+  {
+   "v": "Welke woorden in tekst B laten de keten van argumenten zien?",
+   "o": [
+    "\"gemeenten\" en \"straat\"",
+    "\"daarna\" en \"direct\"",
+    "\"warme\" en \"kale\"",
+    "\"want\" en \"omdat\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 5,
+   "u": "Want en omdat geven de redenen in de keten.",
+   "uo": [
+    "Koos je \"gemeenten en straat\"? Dan denk je dat zelfstandige naamwoorden de keten tonen. Ze noemen het onderwerp, de keten zit in de redengevende voegwoorden.",
+    "Koos je \"daarna en direct\"? Dan denk je dat tijdswoorden de keten laten zien. Ze beschrijven het verschil dat de lezer voelt, niet de redenen.",
+    "Koos je \"warme en kale\"? Dan denk je dat bijvoeglijke naamwoorden de keten tonen. Ze beschrijven de straten, de redenen staan in \"want\" en \"omdat\".",
+    "Klopt: elk van die woorden geeft de reden voor de uitspraak ervoor."
+   ],
+   "uh": "Welke woorden geven een reden?",
+   "ctx": "Gemeenten moeten meer bomen planten, want een koelere stad is prettiger om in te wonen. Een stad met veel bomen is koeler dan een stad met weinig bomen, omdat bomen schaduw geven. Wie in een warme zomer door een straat met bomen loopt en daarna door een kale straat, voelt het verschil direct."
+  },
+  {
+   "v": "Welk deel van tekst A is geen argument voor het standpunt, maar een bezwaar ertegen?",
+   "o": [
+    "de opmerking over te lange lesdagen",
+    "de proef op een andere school met hogere cijfers",
+    "het gebouw dat minder verwarmd hoeft te worden",
+    "de conclusie na het woord \"kortom\" aan het eind"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 0,
+   "u": "Een tegenwerping bestrijdt het standpunt.",
+   "uo": [
+    "Klopt: het is een tegenwerping die de schrijver zelf noemt en weerlegt.",
+    "Koos je \"de proef op een andere school met hogere cijfers\"? Dan denk je dat de proef een bezwaar is. De proef ondersteunt het argument over betere resultaten, dus het is geen bezwaar.",
+    "Koos je \"het gebouw dat minder verwarmd hoeft te worden\"? Dan denk je dat dit een bezwaar is. Het ondersteunt het argument over kosten, dus het hoort bij de argumentatie.",
+    "Koos je \"de conclusie na het woord kortom aan het eind\"? Dan denk je dat de conclusie een bezwaar is. De conclusie herhaalt het standpunt, en is geen tegenwerping."
+   ],
+   "uh": "Wie is het er niet mee eens?",
+   "ctx": "Scholen moeten een vierdaagse lesweek invoeren. Ten eerste halen leerlingen dan betere resultaten, want zij zijn minder moe. Een proef op een andere school laat dat zien: daar stegen de cijfers nadat de vijfde lesdag was geschrapt. Ten tweede is een vierdaagse week goedkoper voor de school, omdat het gebouw een dag minder verwarmd en verlicht hoeft te worden. Sommigen zeggen dat de lesdagen dan te lang worden. Dat klopt, maar de dagen worden maar één uur langer, en een uur extra weegt minder zwaar dan een hele vrije dag. Kortom: een vierdaagse lesweek is een verstandige keuze."
+  },
+  {
+   "v": "Hoe is de argumentatie van tekst C als geheel opgebouwd?",
+   "o": [
+    "enkelvoudig, met alleen de keuken als argument",
+    "nevenschikkend, met bij één argument een subargument",
+    "volledig onderschikkend, als een ketting van redenen",
+    "nevenschikkend en afhankelijk, want alles hoort bij de kantine"
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 4,
+   "u": "Combinatie: nevenschikkend met één subargument.",
+   "uo": [
+    "Koos je \"enkelvoudig, met alleen de keuken als argument\"? Dan denk je dat er één argument is. Er zijn drie argumenten, dus het is niet enkelvoudig.",
+    "Klopt: drie argumenten naast elkaar, waarvan er één wordt ondersteund door een subargument.",
+    "Koos je \"volledig onderschikkend, als een ketting van redenen\"? Dan denk je dat alle uitspraken een keten vormen. De argumenten staan naast elkaar, alleen bij één staat een subargument.",
+    "Koos je \"nevenschikkend en afhankelijk, want alles hoort bij...\"? Dan denk je dat de argumenten samen nodig zijn. Elk argument werkt ook los, dus ze zijn onafhankelijk."
+   ],
+   "uh": "Hoe staan de argumenten naast elkaar?",
+   "ctx": "De school moet een nieuwe kantine bouwen. De huidige keuken is verouderd: de apparaten zijn meer dan twintig jaar oud en voldoen niet meer aan de eisen. Daarnaast zijn de prijzen in de kantine hoog, omdat de inkoop slecht is geregeld en elke bestelling apart wordt gedaan. Een derde reden is dat leerlingen de pauze nu buiten doorbrengen, ook als het regent, omdat er binnen te weinig plaats is voor alle leerlingen tegelijk. Tegenstanders wijzen op de kosten. Dat is waar, maar een gebouw dat niet meer aan de eisen voldoet, kost uiteindelijk ook geld."
+  }
+ ],
+ "oe": [
+  {
+   "bron": "Examenstijl",
+   "ctx": "Scholen moeten een vierdaagse lesweek invoeren. Ten eerste halen leerlingen dan betere resultaten, want zij zijn minder moe. Een proef op een andere school laat dat zien: daar stegen de cijfers nadat de vijfde lesdag was geschrapt. Ten tweede is een vierdaagse week goedkoper voor de school, omdat het gebouw een dag minder verwarmd en verlicht hoeft te worden. Sommigen zeggen dat de lesdagen dan te lang worden. Dat klopt, maar de dagen worden maar één uur langer, en een uur extra weegt minder zwaar dan een hele vrije dag. Kortom: een vierdaagse lesweek is een verstandige keuze.",
+   "v": "Maak een schema van de argumentatie van tekst A met nummers (1, 1.1, 1.1.1 en zo verder).",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "1 vierdaagse lesweek (1p). 1.1 betere resultaten met 1.1.1 minder moe en 1.1.2 de proef (1p). 1.2 goedkoper met 1.2.1 minder verwarmen en verlichten (1p). De tegenwerping staat buiten het schema van argumenten (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Gemeenten moeten meer bomen planten, want een koelere stad is prettiger om in te wonen. Een stad met veel bomen is koeler dan een stad met weinig bomen, omdat bomen schaduw geven. Wie in een warme zomer door een straat met bomen loopt en daarna door een kale straat, voelt het verschil direct.",
+   "v": "Leg uit waarom tekst B een onderschikkende argumentatie is en geef de keten.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Elk argument wordt ondersteund door een subargument (1p). Keten: standpunt, koeler is prettiger wonen, bomen maken koeler, bomen geven schaduw (2p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "De school moet een nieuwe kantine bouwen. De huidige keuken is verouderd: de apparaten zijn meer dan twintig jaar oud en voldoen niet meer aan de eisen. Daarnaast zijn de prijzen in de kantine hoog, omdat de inkoop slecht is geregeld en elke bestelling apart wordt gedaan. Een derde reden is dat leerlingen de pauze nu buiten doorbrengen, ook als het regent, omdat er binnen te weinig plaats is voor alle leerlingen tegelijk. Tegenstanders wijzen op de kosten. Dat is waar, maar een gebouw dat niet meer aan de eisen voldoet, kost uiteindelijk ook geld.",
+   "v": "Beschrijf de structuur van de argumentatie van tekst C en geef een subargument.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Nevenschikkend en onafhankelijk: drie argumenten naast elkaar (2p). Subargument: de inkoop is slecht geregeld, bij het argument over de hoge prijzen (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Standpunt: \"Jan moet de prijs krijgen.\" Argument 1: \"Jan is de beste leerling van de klas.\" Argument 2: \"De prijs gaat altijd naar de beste leerling.\" Het eerste argument is pas een reden als ook het tweede klopt.",
+   "v": "Leg uit waarom de argumenten van Jan nevenschikkend en afhankelijk zijn.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Beide argumenten ondersteunen rechtstreeks het standpunt (1p). Het eerste argument is alleen een reden als het tweede klopt (1p), dus ze zijn samen nodig (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een schema van een argumentatie. 1: standpunt. 1.1: argument. 1.1.1: subargument. 1.2: argument. 1.2.1: subargument. 1.2.2: subargument. Alle uitspraken horen bij hetzelfde standpunt.",
+   "v": "Beschrijf wat het schema laat zien over argument 1.1 en argument 1.2.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "1.1 heeft één subargument, namelijk 1.1.1 (1p). 1.2 heeft twee subargumenten, namelijk 1.2.1 en 1.2.2 (1p). Beide argumenten ondersteunen het standpunt rechtstreeks (1p)."
+  }
+ ]
+}
