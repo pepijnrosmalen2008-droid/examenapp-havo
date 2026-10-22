@@ -151,8 +151,8 @@
   function renderProg() {
     const p = APP.prognose, host = $('#prog-plot');
     if (!p) { host.innerHTML = '<p class="chart-sum">Nog te weinig weken voor een prognose.</p>'; return; }
-    const hist = p.historie, fut = [1, 2, 3, 4].map(k => Math.max(0, Math.round(hist[hist.length - 1] + p.helling * k)));
-    fut[0] = p.volgendeWeek.verwacht;
+    const hist = p.historie, v1 = p.volgendeWeek.verwacht, v4 = p.over4Weken ?? v1;
+    const fut = [1, 2, 3, 4].map(k => Math.max(0, Math.round(v1 + (v4 - v1) * (k - 1) / 3)));
     const all = [...hist, ...fut], W = Math.max(300, Math.round(host.clientWidth || 600)), H = 230, L = 36, R = 10, T = 16, B = 28;
     const { top, step } = niceScale(Math.max(p.volgendeWeek.hoog, ...all));
     const bw = (W - L - R) / all.length, y = v => T + (H - T - B) * (1 - v / top);
@@ -164,7 +164,8 @@
       g += `<text class="ax" x="${x + w / 2}" y="${H - 8}" text-anchor="middle">${isF ? `+${i - hist.length + 1}${W > 560 ? ' wk' : ''}` : i === hist.length - 1 ? (W > 560 ? 'deze wk' : 'nu') : `-${hist.length - 1 - i}`}</text>`;
       if (i === hist.length) g += `<line x1="${x + w / 2}" x2="${x + w / 2}" y1="${y(p.volgendeWeek.hoog)}" y2="${y(p.volgendeWeek.laag)}" stroke="var(--accent)" stroke-width="2"/><line x1="${x + w / 2 - 8}" x2="${x + w / 2 + 8}" y1="${y(p.volgendeWeek.hoog)}" y2="${y(p.volgendeWeek.hoog)}" stroke="var(--accent)" stroke-width="2"/><line x1="${x + w / 2 - 8}" x2="${x + w / 2 + 8}" y1="${y(p.volgendeWeek.laag)}" y2="${y(p.volgendeWeek.laag)}" stroke="var(--accent)" stroke-width="2"/>`;
     });
-    const sum = `Verwachting volgende week: ${p.volgendeWeek.verwacht} betrokken dagbezoeken (tussen ${p.volgendeWeek.laag} en ${p.volgendeWeek.hoog}). De trend is ${p.helling >= 0 ? '+' : ''}${String(p.helling).replace('.', ',')} per week.`;
+    const tt = p.terugtest;
+    const sum = `Verwachting volgende week: ${p.volgendeWeek.verwacht} betrokken dagbezoeken (80% kans tussen ${p.volgendeWeek.laag} en ${p.volgendeWeek.hoog}).${p.modelUitleg ? ` Model: ${p.modelUitleg}, gekozen omdat het in de terugtest het minst misging${tt ? ` (${tt.raak} weken binnen de band, gemiddeld ${tt.gemFout} ernaast)` : ''}.` : ` De trend is ${p.helling >= 0 ? '+' : ''}${String(p.helling).replace('.', ',')} per week.`}`;
     $('#prog-sum').textContent = sum;
     host.innerHTML = `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="${esc(sum)}">${g}</svg>`;
   }
@@ -203,6 +204,12 @@
     const eerste = rows.filter(c => c.omvang >= 5 && c.retentie.length).map(c => c.retentie[0]);
     const gem = eerste.length ? Math.round(eerste.reduce((a, b) => a + b, 0) / eerste.length) : null;
     $('#cohort-sum').textContent = gem != null ? `Gemiddeld komt ${gem}% van de nieuwe leerlingen een week later terug. Hoe donkerder het vak, hoe meer er terugkwamen.` : 'Nog te weinig instroom om terugkeer te meten.';
+    // Wat terugkomers op hun eerste dag anders deden (samenhang, geen oorzaak)
+    const P = APP.terugkeerProfiel;
+    if (P && P.leerlingen && (P.kenmerken || []).length) {
+      const rij = k => `<div class="crow"><span>${esc(k.kenmerk)}</span><span class="num">${k.met}</span><span class="cell num" style="grid-column:span 3;background:color-mix(in srgb,var(--accent) ${Math.round(8 + Math.min(1, (k.terugMet || 0) / 40) * 70)}%,var(--mat3))">${k.terugMet}% terug</span><span class="cell num" style="grid-column:span 4">zonder: ${k.terugZonder}%</span></div>`;
+      $('#cohort').insertAdjacentHTML('afterend', `<h3 class="chart-title" style="margin-top:18px">Wat terugkomers op dag 1 deden</h3><p class="chart-sum">Van ${P.leerlingen} nieuwe leerlingen (laatste 6 weken) kwam ${P.basisPct}% binnen een week terug. Per kenmerk van hun eerste dag: hoeveel deden het, en hoeveel van hen kwam terug. Samenhang, geen bewezen oorzaak.</p><div class="cohort">${P.kenmerken.slice(0, 8).map(rij).join('')}</div>`);
+    }
   })();
 
   // ── Herkomst ──────────────────────────────────────────────────────────
@@ -363,7 +370,7 @@
     periode: S.periode, deze: { ...deze, functies: deze.functies, vakken: deze.vakken }, vorige: { betrokken: vorige.betrokken, actief: vorige.actief, nieuw: vorige.nieuw, oefensessies: vorige.oefensessies, fouten: vorige.fouten },
     terugkeerBetrokken: APP.terugkeerBetrokken, dagelijks: dag.slice(-60).map(r => [r.datum, r.actief, r.betrokken, r.nieuw, r.oefensessies]),
     afwijkingen: APP.afwijkingen, trechter: APP.trechter, herkomst: APP.herkomst, cohorten: APP.cohorten, prognose: APP.prognose, seizoen: APP.seizoen, doelen: APP.doelen,
-    signalen: APP.signalen, topFouten: APP.topFouten, seo: S.seo, instagram: S.instagram, content: D.content ? D.content.posts.map(p => ({ id: p.id, format: p.format, info: p.info })) : null,
+    signalen: APP.signalen, topFouten: APP.topFouten, nieuwsteVersie: APP.nieuwsteVersie, terugkeerProfiel: APP.terugkeerProfiel, functiesPerDag: APP.functiesPerDag, seo: S.seo, instagram: S.instagram, content: D.content ? D.content.posts.map(p => ({ id: p.id, format: p.format, info: p.info })) : null,
     jarvisAnalyse: { kop: A.kop, briefing: A.briefing, status: A.status, aandacht: A.aandacht, denkwerk: A.denkwerk, acties: A.acties, review: A.content?.review }, geheugen: G,
   });
 

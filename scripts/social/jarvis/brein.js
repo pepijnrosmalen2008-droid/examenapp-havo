@@ -187,6 +187,7 @@ Antwoord met alleen JSON: {"oordeel": "één zin", "post": { dezelfde vorm als P
     const s = K.seo || {}, telling = {};
     (s.paginas || []).forEach(p => p.issues.forEach(([, t]) => { const k = t.replace(/\d+/g, '#'); telling[k] = (telling[k] || 0) + 1; }));
     return JSON.stringify({ totalen: K.totalen, contentgaten: (K.gaten || []).slice(0, 8).map(g => `${g.niveau} ${g.vak} · ${g.domein} · ${g.redenen.join(', ')}`),
+      kwaliteit: K.kwaliteit ? { ...K.kwaliteit.totaal, zwaksteVakken: (K.kwaliteit.perVak || []).slice().sort((a, b) => a.metUitlegPct - b.metUitlegPct).slice(0, 5).map(t => `${t.niveau} ${t.vak}: ${t.metUitlegPct}% met uitleg, ${t.sjabloonPct}% sjabloon, ${t.modules} modules`) } : null,
       seo: { score: s.score, paginas: (s.paginas || []).length, problemen: telling }, socialFormats: K.social?.formats,
       gepost: (K.social?.geschiedenis || []).map(w => `${w.week}: ${w.posts.map(p => p[1]).join(' | ')}`) });
   }
@@ -241,6 +242,10 @@ ${J.compact ? J.compact() : '{}'}`;
       { name: 'vragen', description: 'Geeft echte, los bruikbare oefenvragen en begrippen uit de app voor één vak (steekproef). Gebruik dit voor examenvraag-posts en om vraagkwaliteit te beoordelen. Verzin nooit zelf een vraag voor een post.',
         inputSchema: { type: 'object', required: ['niveau', 'vak'], properties: { niveau: niv, vak: { type: 'string', description: 'id (bv. bi) of naam' }, domein: { type: 'string' }, zoek: { type: 'string' }, aantal: { type: 'integer' } } },
         execute: i => { stap(`Vragen bekeken · ${i.vak} ${i.niveau || ''}`); return vragenTool(i); } },
+      { name: 'kwaliteit', description: 'Automatische keuring van de vraagbank per vak: aandeel sjabloonvragen, aandeel met uitleg per fout antwoord, weggevers, leerdoel-modules en zwakke begrippen, plus voorbeelden van weggevers. Gebruik dit voordat je iets over de kwaliteit van de content zegt.',
+        inputSchema: { type: 'object', properties: { niveau: niv, vak: { type: 'string' } } },
+        execute: i => { stap('Inhoudskwaliteit bekeken'); const Q = K.kwaliteit || {}; const pv = (Q.perVak || []).filter(t => (!i.niveau || t.niveau === i.niveau) && (!i.vak || t.vak.toLowerCase().includes(String(i.vak).toLowerCase())));
+          return { totaal: Q.totaal, uitleg: Q.uitleg, perVak: pv.sort((a, b) => a.metUitlegPct - b.metUitlegPct).slice(0, 25), voorbeelden: (Q.voorbeelden || []).slice(0, 8) }; } },
       { name: 'seoAudit', description: 'Zonder pad: de SEO-score, problemen per soort en de slechtste pagina’s. Met pad: title, description, h1, woorden en problemen van één pagina.',
         inputSchema: { type: 'object', properties: { pad: { type: 'string' }, probleem: { type: 'string', description: 'filter, bv. "verouderd" of "dunne"' } } },
         execute: i => { stap(i.pad ? `Pagina bekeken · ${i.pad}` : 'SEO-audit bekeken'); return seoTool(i); } },
@@ -494,6 +499,7 @@ ${J.compact ? J.compact() : '{}'}`;
         ${knop('vindbaar', `Herschrijf title en description van de vakpagina's met een oud examenjaar. Begin met havo en lever ze als voorstel.`, 'Laat Jarvis nieuwe titles schrijven')}</div>
       <div class="card kans"><div class="kans-kop"><h3 class="chart-title">Content in de app</h3></div>
         <div class="kans-tot">${Object.entries(T).map(([n, t]) => `<div><small>${n.toUpperCase()}</small><b class="num">${nf(t.vragen)}</b><span>vragen · ${nf(t.begrippen)} begrippen</span></div>`).join('')}</div>
+        ${K.kwaliteit ? `<p class="chart-sum"><b>${K.kwaliteit.totaal.metUitlegPct}%</b> van de vragen heeft uitleg per fout antwoord; ${K.kwaliteit.totaal.sjabloonPct}% is een automatische begripsvraag. Zwakst: ${esc((K.kwaliteit.perVak || []).slice().sort((a, b) => a.metUitlegPct - b.metUitlegPct).slice(0, 3).map(t => `${t.niveau} ${t.vak} (${t.metUitlegPct}%)`).join(', '))}.</p>` : ''}
         <p class="chart-sum">${gaten.length ? `${gaten.length} domein${gaten.length === 1 ? '' : 'en'} met een gat. Eerst:` : 'Geen lege of dunne domeinen gevonden.'}</p>
         <ul class="list">${gaten.slice(0, 4).map(g => `<li><b>${esc(g.niveau.toUpperCase())} ${esc(g.vak)}</b> · ${esc(g.domein)}<br><span class="sub">${esc(g.redenen.join(', '))}</span></li>`).join('')}</ul>
         ${gaten.length ? knop('content', `Vul het belangrijkste contentgat: schrijf 5 oefenvragen in het app-formaat voor ${gaten[0].niveau} ${gaten[0].vak}, ${gaten[0].domein}.`, 'Laat Jarvis het eerste gat vullen') : ''}</div>

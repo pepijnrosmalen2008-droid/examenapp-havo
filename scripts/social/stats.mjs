@@ -98,10 +98,17 @@ async function supabaseStats() {
   const foutMsg = {};
   w0.filter(e => e.event_type === 'js_error').forEach(e => {
     const m = String(e.meta?.message || 'onbekend').replace(/https?:\/\/slagio\.nl/g, '').slice(0, 110);
-    (foutMsg[m] ||= { bericht: m, n: 0, laatst: null, schermen: new Set() });
-    foutMsg[m].n++; foutMsg[m].laatst = e.created_at; if (e.meta?.screen) foutMsg[m].schermen.add(e.meta.screen);
+    (foutMsg[m] ||= { bericht: m, n: 0, apparaten: new Set(), laatst: null, schermen: new Set(), versies: new Set(), bron: null, stack: null });
+    const f = foutMsg[m]; f.n++; f.laatst = e.created_at; if (e.meta?.screen) f.schermen.add(e.meta.screen); if (did(e)) f.apparaten.add(did(e));
+    if (e.meta?.versie) f.versies.add(e.meta.versie);
+    if (e.meta?.source) f.bron = `${e.meta.source}${e.meta.line ? ':' + e.meta.line : ''}`;
+    if (e.meta?.stack) f.stack = String(e.meta.stack).split('\n').slice(0, 3).join(' | ').slice(0, 300);
   });
-  const topFouten = Object.values(foutMsg).sort((a, b) => b.n - a.n).slice(0, 6).map(f => ({ ...f, schermen: [...f.schermen] }));
+  // Nieuwste appversie die deze week gezien is: een fout die daar niet meer voorkomt is waarschijnlijk opgelost.
+  const vnum = v => Number(String(v || '').match(/v(\d+)/)?.[1] || 0);
+  const nieuwsteVersie = w0.reduce((m, e) => vnum(e.meta?.versie) > vnum(m) ? e.meta.versie : m, null);
+  const topFouten = Object.values(foutMsg).sort((a, b) => b.n - a.n).slice(0, 8).map(f => ({ ...f, apparaten: f.apparaten.size, schermen: [...f.schermen], versies: [...f.versies].sort((x, y) => vnum(x) - vnum(y)),
+    opNieuwsteVersie: f.versies.size ? f.versies.has(nieuwsteVersie) : null }));
   // Terugkeer onder échte gebruikers: betrokken vorige week én actief deze week.
   const b1 = new Set(w1.filter(I.isBetrokken).map(did).filter(Boolean));
   const terugBetrokken = b1.size ? Math.round([...b1].filter(d => d0.has(d)).length / b1.size * 100) : null;
@@ -119,11 +126,14 @@ async function supabaseStats() {
     const nodigPerWeek = nu != null ? +(Math.pow(Math.max(1, d.waarde) / Math.max(1, nu), 1 / wekenTot) * 100 - 100).toFixed(1) : null;
     return { ...d, huidig: nu, wekenTot, nodigeGroeiPerWeekPct: nodigPerWeek, voortgangPct: nu != null ? Math.min(100, Math.round(nu / d.waarde * 100)) : null };
   });
-  const sig = I.signalen({ deze, vorige, terugkeerBetrokken: terugBetrokken, afw, trecht, trechtVorige, bron, bronVorige, cohort, prog,
+  const profiel = I.terugkeerProfiel(ev, NU);
+  const perDag = I.functiesPerDag(ev, NU, 14, functieVan);
+  const sig = I.signalen({ profiel, deze, vorige, terugkeerBetrokken: terugBetrokken, afw, trecht, trechtVorige, bron, bronVorige, cohort, prog,
     concentratie: { deze: deze.concentratie?.top2Aandeel, vorige: vorige.concentratie?.top2Aandeel } });
   return { deze, vorige, terugkeer: terug, terugkeerBetrokken: terugBetrokken, uitgesloten: UITSLUITEN.length, dagelijks, topFouten,
     afwijkingen: afw, trechter: { deze: trecht, vorige: trechtVorige }, herkomst: { deze: bron, vorige: bronVorige, zestigDagen: bron60 },
-    cohorten: cohort, prognose: prog, seizoen: seiz, doelen, signalen: sig };
+    cohorten: cohort, prognose: prog, seizoen: seiz, doelen, signalen: sig,
+    terugkeerProfiel: profiel, functiesPerDag: perDag, nieuwsteVersie };
 }
 
 // ── Instagram ─────────────────────────────────────────────────────────────

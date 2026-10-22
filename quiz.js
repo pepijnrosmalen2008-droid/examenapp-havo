@@ -1,6 +1,10 @@
 // ═══════ QUIZ MODE ═══════
 function openQmode(did){
+  if(!ST.vak){show('sc-home');return;}
   ST.domein=(typeof duFind==='function')?duFind(ST.vak,did):ST.vak.domeinen.find(d=>d.id===did);
+  // Domein niet (meer) gevonden, bv. een domein van een ander vak of data nog niet geladen: neem het eerste.
+  if(!ST.domein)ST.domein=(ST.vak.domeinen||[])[0];
+  if(!ST.domein){openVak(ST.vak.id);return;}
   const _isLd=(typeof duIsLeerdoel==='function')&&duIsLeerdoel(ST.vak,did);
   document.getElementById('qmsub').textContent=_isLd?`${ST.vak.naam} · ${ST.domein.naam}`:`${ST.vak.naam} · Domein ${ST.domein.id}: ${ST.domein.naam}`;
   // Toon resume-chip als er een opgeslagen quiz is voor dit domein
@@ -249,7 +253,7 @@ function toonV(){
   else{ctx.style.display='none';}
   // figuur bij de vraag (echte CE-figuur, footer-vrij)
   const figEl=document.getElementById('qfig'),figWrap=document.getElementById('qfig-wrap');
-  if(figEl){if(hasFig){figEl.src='figuren/'+q.img;if(figWrap)figWrap.style.display='';}else{if(figWrap)figWrap.style.display='none';figEl.removeAttribute('src');}}
+  if(figEl){if(hasFig){figEl.src='/figuren/'+q.img;if(figWrap)figWrap.style.display='';}else{if(figWrap)figWrap.style.display='none';figEl.removeAttribute('src');}}
   // figuren van een Slagio-proefexamen (eigen SVG, op wit examenpapier)
   const afbEl=document.getElementById('qafb'),hasAfb=!!(q.afb&&q.afb.length);
   if(afbEl){afbEl.style.display=hasAfb?'':'none';afbEl.innerHTML=hasAfb?`<div class="ex-afb-inner">${q.afb.map(f=>`<div class="ex-afb-one"><div class="ex-afb-svg">${f.s}</div>${f.c?`<div class="ex-afb-cap">${f.c}</div>`:''}</div>`).join('')}</div>`:'';}
@@ -352,7 +356,7 @@ document.addEventListener('keydown',function(e){
   if(ST.mode==='snel'&&!nxtVisible){
     // Antwoord selecteren met 1-4 of a-d
     const keyMap={'1':0,'2':1,'3':2,'4':3,'a':0,'b':1,'c':2,'d':3};
-    const pos=keyMap[e.key.toLowerCase()];
+    const pos=keyMap[(e.key||"").toLowerCase()];
     if(pos!==undefined){
       const btns=document.querySelectorAll('#snel-area .opt');
       if(btns[pos]&&!btns[pos].disabled){btns[pos].click();e.preventDefault();}

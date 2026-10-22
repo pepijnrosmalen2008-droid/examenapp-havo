@@ -40,6 +40,12 @@ afrekenen.
    briefing, zonder omhaal. Werk de status van het lopende experiment bij
    (`loopt|gelukt|mislukt|gestopt`, met `resultaat` in één zin).
 
+2b. **Open acties van vorige week afrekenen.** Lees `acties` en `aandacht` uit de
+   vorige briefing (`git show origin/jarvis-geheugen:social/jarvis-geheugen.json` en het
+   artifact). Zoek per actie in `git log origin/main --since="8 days ago"` en in de
+   live code of hij al is gedaan. Gedaan: zeg dat in één zin en noem hem niet opnieuw.
+   Niet gedaan: noem hem nog één keer, kort.
+
 3. **Verifieer voordat je iets beweert.** Een scherpe daling of stijging is eerst
    een vraag, geen conclusie. Controleer:
    - Komt het van een paar apparaten? (`concentratie` in de stats.) Dan is het
@@ -47,7 +53,13 @@ afrekenen.
    - Is een functie kapot? Speel de flow zelf af in de live code (zie de
      end-to-end-aanpak: Playwright, `openVak` → `openQmode` → `startQ('snel')`,
      antwoorden klikken, controleren dat `sc-res` verschijnt en `quiz_completed` vuurt).
-   - Zijn fouten nieuw of oud? Kijk naar `laatst` bij `topFouten` en naar git log.
+   - Zijn fouten nieuw of oud? Kijk bij `topFouten` naar `laatst`, `versies` en
+     `opNieuwsteVersie` (appversie = SW-cachenaam). Komt een fout niet meer voor op de
+     nieuwste versie, of landde er na `laatst` een fix in git log, dan is hij
+     waarschijnlijk opgelost: zeg dat, niet "nog open". `bron` en `stack` wijzen de regel aan;
+     lees die regel in de code van die versie (`git log -1 --before=<laatst> -- <bestand>`).
+   - Een piek op één dag? Kijk in `functiesPerDag` welke functie die dag opvalt
+     (bv. Klassenquiz). Zo koppel je een piek aan een gebeurtenis in plaats van te gokken.
    Schrijf alleen op wat je hebt nagegaan. Noem het expliciet als iets een vermoeden is.
 
 4. **Content nalezen.** Zoek de nieuwste content-branch met
@@ -62,7 +74,28 @@ afrekenen.
    PR-commentaar, en open de PR zelf als alleen de branch bestaat. Zonder die
    tools staat je oordeel in de briefing (per post in `content.review`).
 
+4b. **Kleine bugs zelf oplossen (met goedkeuring).** Een fout die je hebt nagegaan,
+   met een duidelijke oorzaak en een fix van hooguit ~20 regels: maak branch
+   `jarvis/fix-<datum>` vanaf main, los hem op, bump de SW-cache, draai
+   `node scripts/smoke.mjs`, push en open een PR (titel "Jarvis: <fout>"). Merge nooit
+   zelf. In de briefing: "fix klaar in PR #N". Twijfel of groter: alleen melden.
+
+4c. **Content steekproef.** Nieuwe leerdoel-modules op main sinds vorige week
+   (`git log origin/main --since="8 days ago" --oneline | grep "Content v2"`): draai
+   `node scripts/validate-goldstandard.mjs` en lees per module drie willekeurige vragen
+   met uitleg (uit `content-pending/<niveau>-<vak>-<id>.json`). Klopt het antwoord,
+   benoemt de uitleg de denkfout, verraadt de vraag zichzelf niet? Meld fouten concreet
+   (vak, leerdoel, vraag). De kennisbank (`kwaliteit` in Kansen en de tool) geeft per vak
+   het aandeel sjabloonvragen en vragen met uitleg: gebruik dat voor de prioriteit.
+
 5. **Analyse schrijven.** Maak `/tmp/analyse.json` volgens het schema hieronder.
+   **Voorspelling:** begin bij `prognose` (het model dat in de terugtest het minst
+   misging, met een 80%-band uit zijn echte fouten). Wijk alleen af met een reden die je
+   opschrijft, en noem de terugtest ("x van y weken binnen de band").
+   **Terugkeer:** kijk in `terugkeerProfiel` wat terugkomers op dag 1 deden. Het sterkste
+   verschil met genoeg leerlingen is een kandidaat voor het experiment (bijvoorbeeld:
+   leerlingen eerder naar studieplan of foutenboek leiden). Samenhang is geen oorzaak:
+   een experiment moet het bewijzen.
    Vul `denkwerk` met twee of drie hypotheses die de cijfers verklaren, elk met
    een eerlijke kans (`zeker|waarschijnlijk|mogelijk|onwaarschijnlijk`). Kies één
    `experiment` voor de komende week: klein, door de eigenaar zelf uit te voeren,

@@ -13,7 +13,7 @@
 // ═══════════════════════════════════════════════════════════════════════════
 import fs from 'node:fs';
 import path from 'node:path';
-import { ROOT, NIVEAUS, vakken, geschikteVragen, geschikteBegrippenSets, eersteExamen } from './data.mjs';
+import { ROOT, NIVEAUS, vakken, vakInhoud, geschikteVragen, geschikteBegrippenSets, eersteExamen } from './data.mjs';
 
 const ORIGIN = 'https://slagio.nl';
 const lees = f => fs.readFileSync(path.join(ROOT, f), 'utf8');
@@ -134,6 +134,41 @@ function seo(examenJaar) {
   return { score, paginas, dekking, telling: { paginas: paginas.length, inSitemap: inSitemap.size } };
 }
 
+// ── Inhoudskwaliteit: automatische keuring van de vraagbank ─────────────────
+// Jarvis leest niet elke vraag na; dit zegt waar de zwakke plekken zitten.
+//   sjabloon     automatisch gemaakte begripsvragen ("Wat betekent «X»?")
+//   metUitleg    vragen met uitleg per fout antwoord (uo), de lat van de gouden standaard
+//   weggever     het juiste antwoord is veel langer dan de rest, of staat al in de vraag
+//   zwakBegrip   begrip met een omschrijving van hooguit drie woorden
+const SJABLOON = /^(Wat betekent «|Wat houdt «|Welk begrip hoort bij|Welke term past bij)/;
+const nrm = x => String(x || '').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/[^a-z0-9]+/g, ' ').trim();
+function kwaliteit() {
+  const perVak = [], voorbeelden = [];
+  for (const n of Object.keys(NIVEAUS)) for (const v of vakken(n)) {
+    const inh = vakInhoud(n, v.id), domIds = new Set((v.domeinen || []).map(d => d.id));
+    const t = { niveau: n, vak: v.naam, vragen: 0, sjabloon: 0, metUitleg: 0, weggever: 0, modules: 0, oe: 0, begrippen: 0, zwakBegrip: 0 };
+    for (const [id, d] of Object.entries(inh)) {
+      if (!domIds.has(id)) t.modules++;
+      t.oe += (d.oe || []).length;
+      for (const b of d.begrippen || []) { t.begrippen++; const w = String(b.d || '').split(/\s+/).length; if (w <= 3 && !/[=→:]/.test(b.d) && !/^(de|het|een) /i.test(b.d)) t.zwakBegrip++; }
+      for (const q of d.sv || []) {
+        const o = q.o || q.a; if (!Array.isArray(o)) continue; t.vragen++;
+        if (SJABLOON.test(q.v)) t.sjabloon++;
+        if (Array.isArray(q.uo) && q.uo.length === o.length) t.metUitleg++;
+        const ok = String(o[q.c] || ''), rest = o.filter((_, i) => i !== q.c).map(x => String(x).length), gem = rest.reduce((a, b) => a + b, 0) / (rest.length || 1);
+        const lang = ok.length > gem * 1.9 && ok.length - gem > 30, inVraag = nrm(ok).length > 6 && nrm(q.v).includes(nrm(ok));
+        if (lang || inVraag) { t.weggever++; if (voorbeelden.length < 15 && !SJABLOON.test(q.v)) voorbeelden.push([n, v.id, id, String(q.v).slice(0, 120), ok.slice(0, 80), lang ? 'juist antwoord opvallend lang' : 'antwoord staat in de vraag']); }
+      }
+    }
+    if (t.vragen) perVak.push(t);
+  }
+  const som = k => perVak.reduce((a, t) => a + t[k], 0);
+  return { totaal: { vragen: som('vragen'), sjabloonPct: Math.round(som('sjabloon') / Math.max(1, som('vragen')) * 100), metUitlegPct: Math.round(som('metUitleg') / Math.max(1, som('vragen')) * 100),
+    weggevers: som('weggever'), modules: som('modules'), zwakkeBegrippen: som('zwakBegrip') },
+    perVak: perVak.map(t => ({ ...t, sjabloonPct: Math.round(t.sjabloon / t.vragen * 100), metUitlegPct: Math.round(t.metUitleg / t.vragen * 100) })),
+    voorbeelden, uitleg: 'sjabloon = automatische begripsvraag; metUitleg = uitleg per fout antwoord; weggever = juiste antwoord valt op door lengte of staat in de vraag.' };
+}
+
 // ── Social: formats + geschiedenis ─────────────────────────────────────────
 function social() {
   const dir = path.join(ROOT, 'social/weken');
@@ -154,5 +189,5 @@ export function bouwKennis({ examenDatum } = {}) {
   const { inhoud: inh, gaten, totalen } = inhoud();
   const docs = {};
   for (const [k, f] of [['stijlgids', 'social/STIJLGIDS.md'], ['brein', 'social/jarvis-brein.md']]) if (bestaat(f)) docs[k] = lees(f);
-  return { gebouwd: new Date().toISOString(), examenJaar: jaar, totalen, inhoud: inh, gaten, vraagbank: vraagbank(), seo: seo(jaar), social: social(), docs };
+  return { gebouwd: new Date().toISOString(), examenJaar: jaar, totalen, inhoud: inh, gaten, vraagbank: vraagbank(), kwaliteit: kwaliteit(), seo: seo(jaar), social: social(), docs };
 }

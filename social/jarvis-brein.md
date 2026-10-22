@@ -41,6 +41,14 @@ verandert; `rapport.mjs` neemt de nieuwste versie mee.
 - Herkomst: AI-assistenten (ChatGPT, Perplexity, Copilot) sturen nu meer
   bezoekers dan Google. Die citeren pagina's met duidelijke, feitelijke
   antwoorden. Dat maakt vindbaarheid en content één onderwerp.
+- **Voorspellen:** gebruik het teruggeteste model uit de stats als basis. Een rechte lijn
+  door een groeifase blijft na een plafond doorstijgen; drie missers op rij betekent dat
+  het model moet wisselen, niet dat je harder moet gokken.
+- **Terugkeer verklaren:** vergelijk wat terugkomers en wegblijvers op hun eerste dag
+  deden (`terugkeerProfiel`). Noem altijd de aantallen; onder 30 per groep is het een
+  aanwijzing.
+- **Fouten:** een fout is pas "open" als hij nog voorkomt op de nieuwste appversie.
+  Netwerkfouten (een bestand dat live HTTP 200 geeft) zijn ruis, geen bug.
 - Een goed experiment is klein, door de eigenaar zelf in een week te doen, met
   één cijfer vooraf gekozen en een drempel voor geslaagd.
 

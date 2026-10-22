@@ -145,7 +145,7 @@
     var tag = (e.target && e.target.tagName) || '';
     if (tag === 'INPUT' || tag === 'TEXTAREA' || (e.target && e.target.isContentEditable)) return;
     if (!/^[a-z]$/i.test(e.key)) return;
-    _typed = (_typed + e.key.toLowerCase()).slice(-4);
+    _typed = (_typed + (e.key||"").toLowerCase()).slice(-4);
     if (_typed === 'vonk') {
       _typed = '';
       var svg = document.querySelector('.m-svg'); if (!svg) return;

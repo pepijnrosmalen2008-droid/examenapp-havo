@@ -281,6 +281,9 @@ const SB=(_sbLib&&_sbLib.createClient)?_sbLib.createClient(SUPABASE_URL,SUPABASE
 if(!(_sbLib&&_sbLib.createClient)){try{console.warn('[Slagio] Supabase niet beschikbaar - offline modus; lokale data blijft werken.');}catch(e){}}
 // Persistent device ID - generated once, stored in localStorage
 const _DID=(()=>{try{let id=localStorage.getItem('slagio_did');if(!id){id=(crypto.randomUUID?crypto.randomUUID():'x'+Math.random().toString(36).slice(2)+Date.now().toString(36));localStorage.setItem('slagio_did',id);}return id;}catch(e){return null;}})();
+// Appversie (de SW-cachenaam, bv. slagio-v923) gaat mee met elke meting, zodat
+// Jarvis ziet of een fout nog op de nieuwste versie voorkomt.
+try{if(window.caches&&caches.keys)caches.keys().then(k=>{window._appVersie=(k.filter(x=>/^slagio-v\d+$/.test(x)).sort((a,b)=>+b.slice(8)-+a.slice(8))[0])||null;}).catch(()=>{});}catch(e){}
 async function trackEvent(type,meta){
   try{
     const vak=typeof ST!=='undefined'?ST?.vak:null;
@@ -295,7 +298,7 @@ async function trackEvent(type,meta){
       event_type:type,
       vak_naam:vak?.naam||null,
       niveau:niveau,
-      meta:{...(meta||{}),device,did:_DID}
+      meta:{...(meta||{}),device,did:_DID,versie:window._appVersie||null}
     }).then(()=>{}).catch(()=>{});
   }catch(e){}
 }
@@ -327,7 +330,18 @@ async function trackEvent(type,meta){
   }
   window.addEventListener('error',function(e){
     if(e&&e.message)report('error',e.message,e.filename,e.lineno,e.colno,e.error&&e.error.stack);
-    else if(e&&e.target&&(e.target.src||e.target.href))report('resource','bron kon niet laden: '+(e.target.src||e.target.href),e.target.src||e.target.href);
+    else if(e&&e.target&&(e.target.src||e.target.href)){
+      var bron=e.target.src||e.target.href;
+      report('resource','bron kon niet laden: '+bron,bron);
+      // Een app-script dat bij het opstarten niet laadt (haperende verbinding) laat de
+      // app half werken ("chooseLevel is not defined"). Eén keer per sessie opnieuw laden.
+      try{
+        if(e.target.tagName==='SCRIPT'&&!e.target.async&&bron.indexOf(location.origin+'/')===0&&performance.now()<20000&&!sessionStorage.getItem('slagio_herlaad')){
+          sessionStorage.setItem('slagio_herlaad','1');
+          setTimeout(function(){location.reload();},1500);
+        }
+      }catch(_){}
+    }
   },true);
   window.addEventListener('unhandledrejection',function(e){
     var r=e&&e.reason; report('promise',(r&&r.message)||String(r),'',null,null,r&&r.stack);
