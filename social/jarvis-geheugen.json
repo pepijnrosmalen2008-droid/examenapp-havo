@@ -67,5 +67,67 @@
       "doel": "Minstens 15 nieuwe betrokken leerlingen op één dag, en minstens 25% komt de week erna terug.",
       "bijgewerkt": "2026-10-22"
     }
+  ],
+  "backlog": [
+    {
+      "id": "B-1",
+      "gemaakt": "2026-10-22",
+      "status": "open",
+      "prioriteit": 1,
+      "grootte": "middel",
+      "soort": "groei",
+      "titel": "Na de eerste quiz een studieplan voorstellen",
+      "waarom": "Een studieplan op dag 1 gaat samen met 27% terugkeer, tegen 15% bij alleen een quiz.",
+      "bewijs": "terugkeerProfiel: studieplan 15 leerlingen 27% terug; quiz afgemaakt 34 leerlingen 15%; basis 7% (laatste 6 weken).",
+      "voorstel": "In de uitslag van de eerste quiz één grote stap \"Maak je plan tot het examen (30 sec)\" met vak en examendatum al ingevuld, binnen RC_MAX. Meten: studieplan_generated op dag 1 en terugkeer van die leerlingen. Eerst screenshots naar Pepijn."
+    },
+    {
+      "id": "B-2",
+      "gemaakt": "2026-10-22",
+      "status": "open",
+      "prioriteit": 2,
+      "grootte": "middel",
+      "soort": "ux",
+      "titel": "Vraag het Slagio: lesmethode en hoofdstuk herkennen",
+      "waarom": "Leerlingen zoeken op hun boek en hoofdstuk en krijgen nu niets.",
+      "bewijs": "Zoekvragen zonder antwoord: \"ik heb biologie voor jou editie 7 en mijn hoofdstuk 1 heet inleiding in de biologie\", \"Ik heb 1KM1 als niveau dus wat moet ik leren\".",
+      "voorstel": "Herken methodenamen uit LESMETHODES (data.js) in de zoekvraag en toon de bijbehorende domeinen; bij onderbouw of een niveau dat Slagio niet dekt een vriendelijke uitleg wat Slagio wel doet."
+    },
+    {
+      "id": "B-3",
+      "gemaakt": "2026-10-22",
+      "status": "open",
+      "prioriteit": 2,
+      "grootte": "klein",
+      "soort": "ux",
+      "titel": "Welkomstcadeau schuift onder de Vonk-kaart op de uitslag",
+      "waarom": "Twee lagen over elkaar: de knoppen van Vonk staan over de tekst van het cadeau.",
+      "bewijs": "Schermcontrole telefoon-quiz-uitslag.png: \"verdiend. Bewaar het.\" staat achter de knoppen Bekijk uitleg en Test me.",
+      "voorstel": "De cadeau-sheet boven de Vonk-kaart leggen, of de kaart pas tonen als de sheet dicht is."
+    },
+    {
+      "id": "B-4",
+      "gemaakt": "2026-10-22",
+      "status": "open",
+      "prioriteit": 3,
+      "grootte": "klein",
+      "soort": "ux",
+      "titel": "Vonk rechtsonder zit op telefoon over knoppen heen",
+      "waarom": "Op de vakpagina valt Vonk over de knoppen van de onderste domeinkaart.",
+      "bewijs": "Schermcontrole telefoon-vak.png en vmbo-vak.png.",
+      "voorstel": "Vonk boven de onderbalk laten zweven met ruimte eronder, of laten verdwijnen tijdens scrollen. Eerst screenshots naar Pepijn."
+    },
+    {
+      "id": "B-5",
+      "gemaakt": "2026-10-22",
+      "status": "open",
+      "prioriteit": 3,
+      "grootte": "klein",
+      "soort": "seo",
+      "titel": "Vakpagina's voor vakken die niet in de app staan",
+      "waarom": "Wie via Google op havo Frans, havo Duits of vwo Bedrijfseconomie binnenkomt, vindt het vak niet in de app.",
+      "bewijs": "vakken/havo-frans.html, havo-duits.html en vwo-bedrijfseconomie.html bestaan; die vakken staan niet in data-havo.js of data-vwo.js.",
+      "voorstel": "Pepijn laten kiezen: het vak toevoegen via de content-routine, of de pagina doorverwijzen naar het niveau waar het vak wel is."
+    }
   ]
 }
