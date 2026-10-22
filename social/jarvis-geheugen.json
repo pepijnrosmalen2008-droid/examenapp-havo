@@ -29,6 +29,17 @@
       "verwacht": 76,
       "laag": 66,
       "hoog": 86,
+      "uitkomst": 61,
+      "raak": false,
+      "afwijking": -15
+    },
+    {
+      "gedaan": "2026-10-22",
+      "voor": "2026-10-29",
+      "metriek": "betrokken dagbezoeken per week",
+      "verwacht": 68,
+      "laag": 56,
+      "hoog": 80,
       "uitkomst": null,
       "raak": null
     }
@@ -48,12 +59,13 @@
     {
       "gestart": "2026-10-15",
       "status": "loopt",
-      "resultaat": "Vorige week niet uitgevoerd: 0 keer Klassenquiz in de cijfers van 8 tot en met 14 oktober. Hoogste dag: 15 betrokken (11 okt). Opnieuw gestart met een vaste deadline.",
+      "resultaat": "Eén keer Klassenquiz deze week. De piek van 21 okt (18 nieuwe leerlingen) haalt de drempel van 15, maar ik kan hem niet aan die quiz koppelen. Terugkeer van die instroomweek is pas volgende week meetbaar.",
       "titel": "Eén klas activeren vóór zondagavond",
-      "hypothese": "Leerlingen die Slagio met hun klas gebruiken, komen vaker terug dan leerlingen die het alleen vinden. Zondag en maandag zijn de dagen waarop de pieken vielen (28 sep, 4 okt, 11 okt).",
-      "actie": "Deel vóór zondag 18 oktober de klascode in één klas-groepsapp, of vraag één docent de klassenquiz te starten. Noteer de datum en de klas.",
+      "hypothese": "Leerlingen die Slagio met hun klas gebruiken, komen vaker terug dan leerlingen die het alleen vinden.",
+      "actie": "Start de klassenquiz in één klas, of deel de klascode in één klas-groepsapp. Noteer datum en klas en stuur ze mij door.",
       "meting": "Gebruik van Klassenquiz in de weekcijfers, nieuwe betrokken leerlingen op die dag, en daarna de terugkeer van die instroomweek.",
-      "doel": "Minstens 15 nieuwe betrokken leerlingen op één dag, en minstens 25% komt de week erna terug."
+      "doel": "Minstens 15 nieuwe betrokken leerlingen op één dag, en minstens 25% komt de week erna terug.",
+      "bijgewerkt": "2026-10-22"
     }
   ]
 }
