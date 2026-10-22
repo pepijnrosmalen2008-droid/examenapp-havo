@@ -128,6 +128,66 @@
       "waarom": "Wie via Google op havo Frans, havo Duits of vwo Bedrijfseconomie binnenkomt, vindt het vak niet in de app.",
       "bewijs": "vakken/havo-frans.html, havo-duits.html en vwo-bedrijfseconomie.html bestaan; die vakken staan niet in data-havo.js of data-vwo.js.",
       "voorstel": "Pepijn laten kiezen: het vak toevoegen via de content-routine, of de pagina doorverwijzen naar het niveau waar het vak wel is."
+    },
+    {
+      "id": "B-6",
+      "gemaakt": "2026-10-22",
+      "status": "open",
+      "prioriteit": 2,
+      "grootte": "middel",
+      "soort": "data",
+      "titel": "Eén script voor Jarvis' hele weekronde",
+      "waarom": "Jarvis besteedt nu veel AI-gebruik aan losse stappen uitvoeren (cijfers ophalen, geheugen afrekenen, schermcontrole, rapport bouwen). Dat kan één script doen, zodat Jarvis alleen nog denkt en schrijft.",
+      "bewijs": "social/JARVIS.md stap 1, 2, 4c, 6 en 7 zijn allemaal vaste commando's.",
+      "voorstel": "scripts/social/week.mjs: stats, geheugen --evalueer, schermen, contentsteekproef (poorten), en een ingevulde concept-analyse.json met alle cijfers. Jarvis vult alleen briefing, denkwerk, experiment en opdrachten aan, daarna --onthoud en rapport in één commando."
+    },
+    {
+      "id": "B-7",
+      "gemaakt": "2026-10-22",
+      "status": "open",
+      "prioriteit": 2,
+      "grootte": "klein",
+      "soort": "data",
+      "titel": "Cijferdeel van de briefing automatisch uit een sjabloon",
+      "waarom": "Statusregels, KPI-zinnen, prognose, terugkeer en foutnotities zijn elke week hetzelfde soort zin met andere getallen. Een sjabloon schrijft die gratis en zonder rekenfouten.",
+      "bewijs": "In de analyse van 22 okt bestaan status, fouten_notities en de helft van de aandachtspunten uit getallen uit stats.json.",
+      "voorstel": "In week.mjs een functie die status, cijferzinnen en voorlopige aandachtspunten uit stats.json invult; Jarvis mag ze aanpassen, maar hoeft ze niet te schrijven."
+    },
+    {
+      "id": "B-8",
+      "gemaakt": "2026-10-22",
+      "status": "open",
+      "prioriteit": 2,
+      "grootte": "middel",
+      "soort": "content",
+      "titel": "Automatische voorkeuring van nieuwe content",
+      "waarom": "De steekproef van nieuwe leerdoel-modules kost nu menselijk of AI-leeswerk per vraag. Een script kan de meeste fouten vooraf vinden, zodat alleen twijfelgevallen gelezen hoeven te worden.",
+      "bewijs": "De inhoudscheck van 22 okt vond weggevers, dubbel goede antwoorden (Mitochondrion/Mitochondriën) en kapotte begrippen volledig automatisch.",
+      "voorstel": "scripts/content-keuring.mjs op de modules van de afgelopen week: dubbel goede antwoorden, juist antwoord in de vraag, opvallend lang juist antwoord, uitleg die het juiste antwoord tegenspreekt, ontbrekende uo. Uitvoer: lijst twijfelgevallen voor Jarvis' steekproef (stap 4d)."
+    },
+    {
+      "id": "B-9",
+      "gemaakt": "2026-10-22",
+      "status": "open",
+      "prioriteit": 2,
+      "grootte": "middel",
+      "soort": "groei",
+      "titel": "Gedeelde antwoordbank voor Vonk en Vraag het Slagio",
+      "waarom": "Elke AI-vraag van een leerling kost geld; veel vragen komen terug ('wat is inflatie', 'wat is osmose'). Een antwoord één keer betalen en voor iedereen bewaren maakt de kosten per leerling lager naarmate Slagio groeit.",
+      "bewijs": "vraag_slagio en ai_chat events: dezelfde vragen bij meerdere apparaten. Antwoorden worden nu alleen per apparaat bewaard (slagio_zoek_ai_v1).",
+      "voorstel": "Supabase-tabel ai_antwoorden (genormaliseerde vraag, niveau, vak, antwoord, aantal keer gebruikt). De edge function kijkt eerst daar; alleen bij een nieuwe vraag gaat hij naar het model. Alleen voor algemene stofvragen, niet voor persoonlijke chat of nakijken."
+    },
+    {
+      "id": "B-10",
+      "gemaakt": "2026-10-22",
+      "status": "open",
+      "prioriteit": 3,
+      "grootte": "klein",
+      "soort": "data",
+      "titel": "Goedkope online open-model dienst uitzoeken voor simpel tekstwerk",
+      "waarom": "Simpele klussen (zoekvragen groeperen, korte samenvattingen) kunnen bij een open model voor bijna niets, zonder Pepijns laptop.",
+      "bewijs": "Gesprek 23 okt: lokaal draaien op de HP 15-fc (geen losse videokaart) is te traag en de routines draaien in de cloud.",
+      "voorstel": "Vergelijk een paar aanbieders op prijs, gratis laag en Nederlandse kwaliteit; koppel de beste achter één functie in scripts/social met Claude als vangnet. Eerst voorstel met kosten naar Pepijn."
     }
   ]
 }
