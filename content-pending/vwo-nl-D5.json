@@ -1,0 +1,688 @@
+{
+ "id": "D5",
+ "lo": "nl.D.5",
+ "gs": 2,
+ "naam": "Een betoog op aanvaardbaarheid beoordelen",
+ "beschrijving": "Je beoordeelt of een betoog aanvaardbaar is: of de argumenten kloppen en van een betrouwbare bron komen, relevant zijn, elkaar niet tegenspreken en samen genoeg zijn voor het standpunt.",
+ "ceStatus": "CE+SE",
+ "binas": "",
+ "val": "",
+ "onderwerpen": [
+  "Aanvaardbaarheid van feitelijke argumenten",
+  "Betrouwbaarheid van bronnen",
+  "Aanvaardbaarheid van waarderende argumenten",
+  "Relevantie van argumenten",
+  "Consistentie van de argumentatie",
+  "Toereikendheid van de argumentatie"
+ ],
+ "sam": "Een betoog beoordeel je op zes punten. Een feitelijk argument is aanvaardbaar als het past bij je kennis, direct controleerbaar en waar is of van een betrouwbare bron komt, die deskundig is, geen belang heeft en zichzelf niet tegenspreekt. Een waarderend argument is aanvaardbaar als het past bij de kennis en opvattingen van de beoordelaar. Een argument is relevant als het het standpunt aannemelijker maakt, de argumentatie is consistent als de argumenten elkaar niet tegenspreken en toereikend als ze samen het standpunt aanvaardbaar maken.",
+ "begrippen": [
+  {
+   "t": "Aanvaardbaarheid",
+   "d": "Of een argument of betoog voor de lezer acceptabel is."
+  },
+  {
+   "t": "Controleerbaarheid",
+   "d": "Of een feitelijke uitspraak in principe door waarneming te toetsen is."
+  },
+  {
+   "t": "Betrouwbare bron",
+   "d": "Een bron die deskundig is, geen belang heeft en zichzelf niet tegenspreekt."
+  },
+  {
+   "t": "Deskundigheid",
+   "d": "Kennis van het terrein waarover de uitspraak gaat."
+  },
+  {
+   "t": "Belang",
+   "d": "Voordeel dat een bron heeft bij acceptatie van een uitspraak."
+  },
+  {
+   "t": "Relevantie",
+   "d": "Een argument is relevant als aanvaarding ervan het standpunt aannemelijker maakt."
+  },
+  {
+   "t": "Consistentie",
+   "d": "Argumenten spreken elkaar niet tegen."
+  },
+  {
+   "t": "Toereikendheid",
+   "d": "De argumenten maken samen het standpunt aanvaardbaar."
+  },
+  {
+   "t": "Tegenspraak",
+   "d": "Twee uitspraken die niet allebei waar kunnen zijn."
+  },
+  {
+   "t": "Waarderend argument",
+   "d": "Een argument over wat goed, slecht of wenselijk is."
+  },
+  {
+   "t": "Feitelijk argument",
+   "d": "Een argument over wat waar of waarschijnlijk is."
+  },
+  {
+   "t": "Beoordelen",
+   "d": "Bepalen of een betoog sterk of zwak is, op grond van vaste criteria."
+  }
+ ],
+ "sv": [
+  {
+   "v": "Waarom is deze uitspraak aanvaardbaar voor de lezer?",
+   "o": [
+    "omdat de uitspraak kort en duidelijk is",
+    "ze past bij wat de lezer al weet",
+    "omdat de lezer haar nog moet controleren",
+    "omdat de schrijver er zeker van is"
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 0,
+   "u": "Aanvaardbaar: past bij kennis, controleerbaar of betrouwbare bron.",
+   "uo": [
+    "Koos je \"omdat de uitspraak kort en duidelijk is\"? Dan denk je dat kortheid aanvaardbaar maakt. Het gaat om kennis, controle of bron, niet om de lengte van de zin.",
+    "Klopt: een feit dat bij je kennis van de wereld past, aanvaard je.",
+    "Koos je \"omdat de lezer haar nog moet controleren\"? Dan denk je dat controle altijd nodig is. Hier is dat niet nodig, omdat de uitspraak bij je kennis past.",
+    "Koos je \"omdat de schrijver er zeker van is\"? Dan denk je dat zekerheid aanvaardbaar maakt. De zekerheid van de schrijver zegt niets, het gaat om kennis, controle of bron."
+   ],
+   "uh": "Weet je het al?",
+   "ctx": "Een schrijver zegt: \"In Nederland rijden auto's rechts.\" Een lezer die in Nederland woont, kent deze regel."
+  },
+  {
+   "v": "Waarom is de fabrikant geen betrouwbare bron?",
+   "o": [
+    "omdat hij het over sigaretten heeft",
+    "omdat een fabrikant nooit de waarheid zegt",
+    "omdat de interviewer hem vragen stelt",
+    "hij heeft belang bij acceptatie"
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 1,
+   "u": "Belang bij acceptatie maakt een bron minder betrouwbaar.",
+   "uo": [
+    "Koos je \"omdat hij het over sigaretten heeft\"? Dan denk je dat het onderwerp de betrouwbaarheid bepaalt. Het onderwerp is neutraal, het belang is het probleem.",
+    "Koos je \"omdat een fabrikant nooit de waarheid zegt\"? Dan denk je dat fabrikanten altijd liegen. Dat is niet zo, het gaat om het belang bij de uitkomst.",
+    "Koos je \"omdat de interviewer hem vragen stelt\"? Dan denk je dat een interview onbetrouwbaar maakt. Dat is niet het criterium, het belang is het probleem.",
+    "Klopt: een bron met belang bij de uitkomst is minder betrouwbaar."
+   ],
+   "uh": "Wie profiteert?",
+   "ctx": "Een fabrikant van sigaretten zegt in een interview dat roken ongevaarlijk is voor omstanders. De fabrikant verdient aan de verkoop van sigaretten."
+  },
+  {
+   "v": "Wanneer is een waarderende uitspraak aanvaardbaar?",
+   "o": [
+    "als ze bij je opvattingen past",
+    "als ze door veel mensen wordt herhaald",
+    "als ze met een cijfer wordt onderbouwd",
+    "als de schrijver er deskundig over is"
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 2,
+   "u": "Waardering: aanvaardbaar als ze past bij je opvattingen.",
+   "uo": [
+    "Klopt: een waardering is aanvaardbaar als ze bij je eigen opvattingen past.",
+    "Koos je \"als ze door veel mensen wordt herhaald\"? Dan denk je dat herhaling aanvaardbaar maakt. Het gaat om jouw kennis en opvattingen, niet om het aantal mensen dat het zegt.",
+    "Koos je \"als ze met een cijfer wordt onderbouwd\"? Dan denk je dat een cijfer een waardering aanvaardbaar maakt. Een waardering is niet te meten, het gaat om je eigen opvattingen.",
+    "Koos je \"als de schrijver er deskundig over is\"? Dan denk je dat deskundigheid een waardering aanvaardbaar maakt. Dat geldt voor feiten, een waardering past bij je eigen opvattingen."
+   ],
+   "uh": "Past het bij wat jij vindt?"
+  },
+  {
+   "v": "Waarom is dit argument niet relevant?",
+   "o": [
+    "omdat het argument te kort is geschreven",
+    "omdat de buurman geen deskundige is",
+    "het steunt het standpunt niet",
+    "omdat de schrijver er geen bron bij noemt"
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 3,
+   "u": "Relevant: aanvaarding maakt het standpunt aannemelijker.",
+   "uo": [
+    "Koos je \"omdat het argument te kort is geschreven\"? Dan denk je dat de lengte telt. Het argument is niet relevant door zijn inhoud, niet door zijn lengte.",
+    "Koos je \"omdat de buurman geen deskundige is\"? Dan denk je dat deskundigheid het probleem is. Het argument heeft helemaal niets met het standpunt te maken, dus het is niet relevant.",
+    "Klopt: de fiets van de buurman heeft niets te maken met schoolfruit.",
+    "Koos je \"omdat de schrijver er geen bron bij noemt\"? Dan denk je dat het argument geen feit is. Het is wel een feit, maar het ondersteunt het standpunt niet."
+   ],
+   "uh": "Heeft het iets met het standpunt te maken?",
+   "ctx": "Standpunt: \"Scholen moeten gratis fruit uitdelen.\" Argument: \"Mijn buurman heeft een rode fiets.\""
+  },
+  {
+   "v": "Welk probleem hebben deze twee argumenten?",
+   "o": [
+    "ze zijn te kort",
+    "ze zijn niet relevant",
+    "ze spreken elkaar tegen",
+    "ze staan in dezelfde tekst"
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 4,
+   "u": "Consistent: argumenten spreken elkaar niet tegen.",
+   "uo": [
+    "Koos je \"ze zijn te kort\"? Dan denk je dat de lengte het probleem is. Het gaat om de inhoud, ze spreken elkaar tegen.",
+    "Koos je \"ze zijn niet relevant\"? Dan denk je dat ze niets met het standpunt te maken hebben. Het probleem is dat ze elkaar tegenspreken, en niet dat ze irrelevant zijn.",
+    "Klopt: ze kunnen niet allebei waar zijn, dus de argumentatie is niet consistent.",
+    "Koos je \"ze staan in dezelfde tekst\"? Dan denk je dat twee argumenten in één tekst fout zijn. Dat mag, maar ze mogen elkaar niet tegenspreken."
+   ],
+   "uh": "Kunnen ze allebei waar zijn?",
+   "ctx": "Argument 1: \"Alle leerlingen fietsen naar school.\" Argument 2: \"Geen enkele leerling fietst naar school.\" Beide argumenten staan in dezelfde tekst."
+  },
+  {
+   "v": "Waarom is dit argument niet toereikend voor het standpunt?",
+   "o": [
+    "één scheur is te weinig",
+    "omdat een scheur geen feit is",
+    "omdat het trappenhuis niet belangrijk is",
+    "omdat de schrijver de scheur verzonnen heeft"
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 5,
+   "u": "Toereikend: samen genoeg voor het standpunt.",
+   "uo": [
+    "Klopt: het argument is te zwak voor zo'n groot standpunt.",
+    "Koos je \"omdat een scheur geen feit is\"? Dan denk je dat de scheur geen feit is. Het is een feit, maar het is te weinig voor het standpunt.",
+    "Koos je \"omdat het trappenhuis niet belangrijk is\"? Dan denk je dat de plaats van de scheur het probleem is. Het gaat om de omvang van het standpunt, en één scheur is niet genoeg.",
+    "Koos je \"omdat de schrijver de scheur verzonnen heeft\"? Dan denk je dat de scheur niet bestaat. Het argument kan waar zijn, maar het is niet genoeg voor een sloop."
+   ],
+   "uh": "Is het genoeg?",
+   "ctx": "Standpunt: \"De hele school moet worden gesloopt.\" Argument: \"Er zit één scheur in een muur in het trappenhuis.\""
+  },
+  {
+   "v": "Welke eis hoort bij de beoordeling van een argumentatie?",
+   "o": [
+    "de lengte van de tekst",
+    "het aantal bijvoeglijke naamwoorden",
+    "de volgorde van de alinea's",
+    "consistentie"
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 0,
+   "u": "Criteria: aanvaardbaar, relevant, consistent, toereikend.",
+   "uo": [
+    "Koos je \"de lengte van de tekst\"? Dan denk je dat de lengte een criterium is. Een lange tekst kan zwak zijn, en een korte sterk.",
+    "Koos je \"het aantal bijvoeglijke naamwoorden\"? Dan denk je dat taalgebruik een criterium is. Het gaat om de inhoud van de argumentatie, niet om woordsoorten.",
+    "Koos je \"de volgorde van de alinea's\"? Dan denk je dat de volgorde de aanvaardbaarheid bepaalt. De volgorde is een kwestie van opbouw, niet van aanvaardbaarheid.",
+    "Klopt: argumenten mogen elkaar niet tegenspreken."
+   ],
+   "uh": "Gaat het om de inhoud?"
+  },
+  {
+   "v": "Welk argument in tekst A is niet relevant?",
+   "o": [
+    "telefoons leiden af in de les",
+    "de directeur heeft zelf geen smartphone",
+    "op scholen met een verbod stegen de cijfers",
+    "sommige leerlingen klagen in het begin"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 3,
+   "u": "Irrelevante argumenten maken het standpunt niet aannemelijker.",
+   "uo": [
+    "Koos je \"telefoons leiden af in de les\"? Dan denk je dat dit argument niet relevant is. Het ondersteunt het standpunt juist, omdat afleiding de les verstoort.",
+    "Klopt: wat de directeur zelf bezit, zegt niets over de gevolgen van een verbod.",
+    "Koos je \"op scholen met een verbod stegen de cijfers\"? Dan denk je dat dit argument niet relevant is. Het maakt het standpunt aannemelijker, omdat het een gevolg noemt.",
+    "Koos je \"sommige leerlingen klagen in het begin\"? Dan denk je dat dit een argument voor het standpunt is. Het is een bijzaak, maar het gaat niet over de directeur."
+   ],
+   "uh": "Maakt het het standpunt aannemelijker?",
+   "ctx": "Scholen moeten een smartphoneverbod invoeren. Telefoons leiden af, want leerlingen kijken tijdens de les naar hun scherm in plaats van naar het bord. Een telefoon in de broekzak is voor veel leerlingen een trekpleister: elke melding leidt de aandacht van het bord weg. De directeur van de school heeft zelf geen smartphone. Bovendien zijn er scholen waar een verbod is ingevoerd en waar de cijfers daarna zijn gestegen. Een school zonder smartphones is een betere school. Daarom is een verbod de enige verstandige keuze, ook al klagen sommige leerlingen in het begin."
+  },
+  {
+   "v": "Welke uitspraak in tekst A is feitelijk en controleerbaar?",
+   "o": [
+    "een school zonder smartphones is een betere school",
+    "een verbod is de enige verstandige keuze",
+    "sommige leerlingen klagen in het begin",
+    "de cijfers op scholen zijn gestegen"
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 0,
+   "u": "Controleerbaar: cijfers van scholen.",
+   "uo": [
+    "Koos je \"een school zonder smartphones is een betere school\"? Dan denk je dat dit een feit is. Het is een oordeel, en dus waarderend.",
+    "Koos je \"een verbod is de enige verstandige keuze\"? Dan denk je dat dit een feit is. Het is een waardering van de schrijver, geen controleerbaar gegeven.",
+    "Koos je \"sommige leerlingen klagen in het begin\"? Dan denk je dat dit het voorbeeld van een controleerbaar feit is. Het is een vage uitspraak, zonder aantallen.",
+    "Klopt: cijfers van scholen zijn na te gaan in de administratie."
+   ],
+   "uh": "Waar kun je dit nagaan?",
+   "ctx": "Scholen moeten een smartphoneverbod invoeren. Telefoons leiden af, want leerlingen kijken tijdens de les naar hun scherm in plaats van naar het bord. Een telefoon in de broekzak is voor veel leerlingen een trekpleister: elke melding leidt de aandacht van het bord weg. De directeur van de school heeft zelf geen smartphone. Bovendien zijn er scholen waar een verbod is ingevoerd en waar de cijfers daarna zijn gestegen. Een school zonder smartphones is een betere school. Daarom is een verbod de enige verstandige keuze, ook al klagen sommige leerlingen in het begin."
+  },
+  {
+   "v": "Welke twee uitspraken in tekst B spreken elkaar tegen?",
+   "o": [
+    "\"de afstand is kort\" en \"de wijk is klein\"",
+    "\"veel fietsen\" en \"nauwelijks fietsen\"",
+    "\"de route is gevaarlijk\" en \"de route is verbeterd\"",
+    "\"een veilige route is goedkoop\" en \"de winst is groot\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 4,
+   "u": "Tegenspraak: twee uitspraken die niet allebei waar kunnen zijn.",
+   "uo": [
+    "Koos je \"de afstand is kort en de wijk is klein\"? Dan denk je dat deze twee elkaar tegenspreken. Ze kunnen allebei waar zijn, dus ze zijn consistent.",
+    "Klopt: ze kunnen niet allebei waar zijn, dus ze spreken elkaar tegen.",
+    "Koos je \"de route is gevaarlijk en de route is verbeterd\"? Dan denk je dat deze twee elkaar tegenspreken. De tekst noemt geen verbeterde route, het zijn andere uitspraken.",
+    "Koos je \"een veilige route is goedkoop en de winst is groot\"? Dan denk je dat deze twee elkaar tegenspreken. Ze versterken elkaar juist, en zijn consistent."
+   ],
+   "uh": "Kunnen ze allebei waar zijn?",
+   "ctx": "De gemeente moet de fietsroute naar school verbeteren. Veel leerlingen fietsen naar school, want de afstand is kort en de meeste leerlingen wonen in de wijk. De gemeente liet de route vorig jaar onderzoeken en daaruit bleek dat een deel van de weg smal is. De route is bovendien gevaarlijk, omdat er nauwelijks leerlingen fietsen en de weg dus niet druk is met fietsers waar automobilisten rekening mee houden. Een veilige route zou de gemeente weinig kosten, terwijl de winst voor de leerlingen groot is. Daarom is verbetering van de route een goed plan."
+  },
+  {
+   "v": "Welk gevolg heeft de tegenspraak voor de argumentatie van tekst B?",
+   "o": [
+    "niets, want tegenspraak is geen probleem",
+    "de argumentatie is dan juist sterker",
+    "de argumentatie is minder aanvaardbaar",
+    "de argumentatie is niet relevant meer"
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 4,
+   "u": "Inconsistent: de argumentatie is minder aanvaardbaar.",
+   "uo": [
+    "Koos je \"niets, want tegenspraak is geen probleem\"? Dan denk je dat tegenspraak niet uitmaakt. Een argumentatie moet consistent zijn, dus het is wel een probleem.",
+    "Koos je \"de argumentatie is dan juist sterker\"? Dan denk je dat twee tegengestelde uitspraken sterker zijn. Ze verzwakken elkaar, en de lezer weet niet wat te geloven.",
+    "Klopt: een tegenspraak maakt de argumentatie minder aanvaardbaar.",
+    "Koos je \"de argumentatie is niet relevant meer\"? Dan denk je dat de tegenspraak de relevantie aantast. Het gaat om consistentie, niet om relevantie."
+   ],
+   "uh": "Kunnen beide waar zijn?",
+   "ctx": "De gemeente moet de fietsroute naar school verbeteren. Veel leerlingen fietsen naar school, want de afstand is kort en de meeste leerlingen wonen in de wijk. De gemeente liet de route vorig jaar onderzoeken en daaruit bleek dat een deel van de weg smal is. De route is bovendien gevaarlijk, omdat er nauwelijks leerlingen fietsen en de weg dus niet druk is met fietsers waar automobilisten rekening mee houden. Een veilige route zou de gemeente weinig kosten, terwijl de winst voor de leerlingen groot is. Daarom is verbetering van de route een goed plan."
+  },
+  {
+   "v": "Waarom is het eerste adviesbureau minder betrouwbaar?",
+   "o": [
+    "het bureau heeft belang",
+    "omdat een adviesbureau niets weet van zwembaden",
+    "omdat het rapport te lang is",
+    "omdat het een rapport van twee bureaus is"
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 1,
+   "u": "Belang bij het advies maakt een bron minder betrouwbaar.",
+   "uo": [
+    "Klopt: het heeft belang bij het advies om te sluiten.",
+    "Koos je \"omdat een adviesbureau niets weet van zwembaden\"? Dan denk je dat adviesbureaus geen kennis hebben. Het gaat om belang, niet om kennis.",
+    "Koos je \"omdat het rapport te lang is\"? Dan denk je dat de lengte van het rapport telt. Het gaat om het belang van het bureau, niet om de omvang.",
+    "Koos je \"omdat het een rapport van twee bureaus is\"? Dan denk je dat twee bureaus samen schrijven. Er zijn twee verschillende bureaus, het gaat om het belang van het eerste."
+   ],
+   "uh": "Wie verdient eraan?",
+   "ctx": "De gemeente moet het zwembad sluiten. Volgens een rapport van een adviesbureau dat de gemeente zelf heeft ingehuurd en dat per sluiting van een voorziening wordt betaald, kost het zwembad te veel. Een ander, onafhankelijk bureau komt tot een veel lager bedrag. Een bezoeker zegt dat het bad altijd vol zit, maar hij komt er zelf al twintig jaar niet meer. De directeur van het zwembad noemt het bad onmisbaar voor de buurt. De gemeenteraad bespreekt het voorstel volgende maand en wil eerst alle cijfers zien."
+  },
+  {
+   "v": "Waarom is de uitspraak van de bezoeker minder betrouwbaar?",
+   "o": [
+    "zijn kennis is niet actueel",
+    "omdat een bezoeker nooit gelijk heeft",
+    "omdat hij het zwembad wil sluiten",
+    "omdat hij het bad te druk vindt in het weekend"
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 1,
+   "u": "Deskundigheid: kennis die actueel is.",
+   "uo": [
+    "Klopt: zijn kennis is niet actueel, dus zijn deskundigheid ontbreekt.",
+    "Koos je \"omdat een bezoeker nooit gelijk heeft\"? Dan denk je dat bezoekers geen betrouwbare bron zijn. Een bezoeker kan wel betrouwbaar zijn, maar deze weet het niet.",
+    "Koos je \"omdat hij het zwembad wil sluiten\"? Dan denk je dat hij het zwembad wil sluiten. Hij zegt dat het altijd vol zit, dus hij is er niet voor.",
+    "Koos je \"omdat hij het bad te druk vindt in het weekend\"? Dan denk je dat hij klaagt over drukte. Hij zegt dat het vol zit, maar komt er zelf niet meer."
+   ],
+   "uh": "Weet hij het uit eigen ervaring?",
+   "ctx": "De gemeente moet het zwembad sluiten. Volgens een rapport van een adviesbureau dat de gemeente zelf heeft ingehuurd en dat per sluiting van een voorziening wordt betaald, kost het zwembad te veel. Een ander, onafhankelijk bureau komt tot een veel lager bedrag. Een bezoeker zegt dat het bad altijd vol zit, maar hij komt er zelf al twintig jaar niet meer. De directeur van het zwembad noemt het bad onmisbaar voor de buurt. De gemeenteraad bespreekt het voorstel volgende maand en wil eerst alle cijfers zien."
+  },
+  {
+   "v": "Waarom is de argumentatie in tekst C niet toereikend?",
+   "o": [
+    "omdat de gymzaal in goede staat is",
+    "omdat een leerling het vertelt",
+    "één incident is te weinig",
+    "omdat de zaal te duur is"
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 5,
+   "u": "Toereikend: samen genoeg voor het standpunt.",
+   "uo": [
+    "Koos je \"omdat de gymzaal in goede staat is\"? Dan denk je dat de staat het enige probleem is. De tekst zegt wel dat de zaal verder goed is, maar het gaat om het ene incident.",
+    "Koos je \"omdat een leerling het vertelt\"? Dan denk je dat een leerling geen goede bron is. Het gaat om de omvang van het standpunt, dat het argument niet draagt.",
+    "Klopt: het argument is te zwak voor het standpunt.",
+    "Koos je \"omdat de zaal te duur is\"? Dan denk je dat de kosten het probleem zijn. Het gaat om het ene incident, dat te weinig is voor een nieuwe zaal."
+   ],
+   "uh": "Is het genoeg?",
+   "ctx": "De school moet een nieuwe gymzaal bouwen. De huidige gymzaal heeft een lekkend dak. Een leerling vertelt dat er één keer water op de vloer lag toen het hard had geregend. Daarom moet de hele zaal worden vervangen, ook al kost dat veel geld en is de zaal verder in goede staat."
+  },
+  {
+   "v": "Wat zou de argumentatie in tekst C toereikender maken?",
+   "o": [
+    "een langere tekst met meer woorden",
+    "meer en ernstiger gebreken",
+    "een andere schrijver die hetzelfde zegt",
+    "een stelling zonder argumenten"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 5,
+   "u": "Toereikend maken: meer en sterkere argumenten.",
+   "uo": [
+    "Koos je \"een langere tekst met meer woorden\"? Dan denk je dat lengte toereikend maakt. Het gaat om sterke argumenten, niet om meer woorden.",
+    "Klopt: meer sterke argumenten maken het standpunt aanvaardbaarder.",
+    "Koos je \"een andere schrijver die hetzelfde zegt\"? Dan denk je dat een andere schrijver het oplost. Hij moet iets nieuws noemen, en geen herhaling geven.",
+    "Koos je \"een stelling zonder argumenten\"? Dan denk je dat het standpunt zonder argumenten sterker is. Dat verzwakt de argumentatie, in plaats van haar te versterken."
+   ],
+   "uh": "Wat ontbreekt er?",
+   "ctx": "De school moet een nieuwe gymzaal bouwen. De huidige gymzaal heeft een lekkend dak. Een leerling vertelt dat er één keer water op de vloer lag toen het hard had geregend. Daarom moet de hele zaal worden vervangen, ook al kost dat veel geld en is de zaal verder in goede staat."
+  },
+  {
+   "v": "Is de uitspraak van de schrijver aanvaardbaar voor deze lezer?",
+   "o": [
+    "nee, want een waardering is nooit aanvaardbaar",
+    "nee, want de kantine is geen bron",
+    "ja, want iedereen vindt dit",
+    "ja, het past bij zijn opvatting"
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 2,
+   "u": "Waardering aanvaardbaar: past bij opvattingen.",
+   "uo": [
+    "Koos je \"nee, want een waardering is nooit aanvaardbaar\"? Dan denk je dat waarderingen altijd onaanvaardbaar zijn. Dat is niet zo, ze kunnen bij opvattingen passen.",
+    "Koos je \"nee, want de kantine is geen bron\"? Dan denk je dat de kantine als bron telt. Het gaat om de opvattingen van de lezer, niet om een bron.",
+    "Koos je \"ja, want iedereen vindt dit\"? Dan denk je dat algemene instemming aanvaardbaar maakt. Het gaat om de opvattingen van deze lezer, niet om wat iedereen vindt.",
+    "Klopt: een waardering past bij de opvattingen van de beoordelaar."
+   ],
+   "uh": "Past het bij wat de lezer vindt?",
+   "ctx": "Een lezer vindt dat gezondheid belangrijker is dan gemak. Een schrijver zegt: \"Het is goed dat de kantine geen frisdrank meer verkoopt.\""
+  },
+  {
+   "v": "Waarom is de uitspraak van de schrijver nu aanvaardbaar?",
+   "o": [
+    "omdat de schrijver het zegt",
+    "ze is gecontroleerd en waar",
+    "omdat het een mooi getal is",
+    "omdat de lezer het niet eens is"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 0,
+   "u": "Aanvaardbaar door direct controle.",
+   "uo": [
+    "Koos je \"omdat de schrijver het zegt\"? Dan denk je dat de spreker de uitspraak aanvaardbaar maakt. Het gaat om de controle, niet om wie het zegt.",
+    "Klopt: een direct controleerbare uitspraak die klopt, is aanvaardbaar.",
+    "Koos je \"omdat het een mooi getal is\"? Dan denk je dat het getal aanvaardbaar maakt. De controle doet dat, niet de aantrekkelijkheid van het getal.",
+    "Koos je \"omdat de lezer het niet eens is\"? Dan denk je dat meningsverschil aanvaardbaar maakt. De lezer is het hier juist mee eens, na controle."
+   ],
+   "uh": "Is het gecontroleerd?",
+   "ctx": "Een lezer kijkt in de administratie van de school en ziet dat er inderdaad zestig van de honderd leerlingen op de fiets komen, zoals de schrijver beweert."
+  },
+  {
+   "v": "Waarom maakt het irrelevante argument de argumentatie niet automatisch onaanvaardbaar?",
+   "o": [
+    "de andere argumenten blijven staan",
+    "omdat een irrelevant argument nooit schadelijk is",
+    "omdat de directeur de baas is",
+    "omdat een argument zonder bron geldig is"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 3,
+   "u": "Een irrelevant argument is overbodig, maar de rest kan nog steeds werken.",
+   "uo": [
+    "Klopt: een overbodig argument verzwakt de rest niet.",
+    "Koos je \"omdat een irrelevant argument nooit schadelijk is\"? Dan denk je dat het niet schaadt. Het kan de argumentatie wel verzwakken, maar het maakt haar niet onaanvaardbaar.",
+    "Koos je \"omdat de directeur de baas is\"? Dan denk je dat zijn positie het relevant maakt. Het blijft irrelevant, ook al is hij de directeur.",
+    "Koos je \"omdat een argument zonder bron geldig is\"? Dan denk je dat een bron nodig is. Het gaat om de relevantie, en een irrelevant argument blijft irrelevant."
+   ],
+   "uh": "Wat blijft er over?",
+   "ctx": "Scholen moeten een smartphoneverbod invoeren. Telefoons leiden af, want leerlingen kijken tijdens de les naar hun scherm in plaats van naar het bord. Een telefoon in de broekzak is voor veel leerlingen een trekpleister: elke melding leidt de aandacht van het bord weg. De directeur van de school heeft zelf geen smartphone. Bovendien zijn er scholen waar een verbod is ingevoerd en waar de cijfers daarna zijn gestegen. Een school zonder smartphones is een betere school. Daarom is een verbod de enige verstandige keuze, ook al klagen sommige leerlingen in het begin."
+  },
+  {
+   "v": "Welke uitspraak in tekst A is waarderend, en wanneer is ze aanvaardbaar?",
+   "o": [
+    "\"telefoons leiden af\"; als er cijfers bij staan",
+    "\"op scholen met een verbod stegen de cijfers\"; als de lezer het eens is",
+    "\"een verbod is de enige keuze\"; als iedereen het herhaalt",
+    "\"een betere school\"; als ze bij je opvattingen past"
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 2,
+   "u": "Waardering: aanvaardbaar als ze bij je opvattingen past.",
+   "uo": [
+    "Koos je \"telefoons leiden af; als er cijfers bij staan\"? Dan denk je dat dit een waardering is. Het is een feitelijke uitspraak, die je met waarneming controleert.",
+    "Koos je \"op scholen met een verbod stegen de cijfers; als de...\"? Dan denk je dat dit een waardering is. Het is een feitelijke uitspraak, geen oordeel.",
+    "Koos je \"een verbod is de enige keuze; als iedereen het...\"? Dan denk je dat herhaling aanvaardbaar maakt. De waardering is aanvaardbaar als ze past, bij de opvattingen van de lezer.",
+    "Klopt: een waardering is aanvaardbaar als ze bij je opvattingen past."
+   ],
+   "uh": "Wat is oordeel?",
+   "ctx": "Scholen moeten een smartphoneverbod invoeren. Telefoons leiden af, want leerlingen kijken tijdens de les naar hun scherm in plaats van naar het bord. Een telefoon in de broekzak is voor veel leerlingen een trekpleister: elke melding leidt de aandacht van het bord weg. De directeur van de school heeft zelf geen smartphone. Bovendien zijn er scholen waar een verbod is ingevoerd en waar de cijfers daarna zijn gestegen. Een school zonder smartphones is een betere school. Daarom is een verbod de enige verstandige keuze, ook al klagen sommige leerlingen in het begin."
+  },
+  {
+   "v": "Hoe herstel je de consistentie van tekst B?",
+   "o": [
+    "voeg een derde uitspraak toe die hetzelfde zegt",
+    "laat de tekst onveranderd en leg de lezer uit dat het klopt",
+    "één van de twee uitspraken aanpassen",
+    "maak beide uitspraken langer"
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 4,
+   "u": "Consistentie herstel je door een van de tegenstrijdige uitspraken aan te passen.",
+   "uo": [
+    "Koos je \"voeg een derde uitspraak toe die hetzelfde zegt\"? Dan denk je dat een extra uitspraak de tegenspraak oplost. Dat verandert niets, de twee blijven elkaar tegenspreken.",
+    "Koos je \"laat de tekst onveranderd en leg de lezer uit dat...\"? Dan denk je dat uitleg de tegenspraak oplost. De uitspraken kunnen niet allebei waar zijn, dus een van de twee moet worden aangepast.",
+    "Klopt: pas dan zijn de uitspraken niet langer tegenstrijdig.",
+    "Koos je \"maak beide uitspraken langer\"? Dan denk je dat lengte de tegenspraak oplost. De inhoud blijft tegenstrijdig, dus lengte helpt niet."
+   ],
+   "uh": "Welke uitspraak klopt niet?",
+   "ctx": "De gemeente moet de fietsroute naar school verbeteren. Veel leerlingen fietsen naar school, want de afstand is kort en de meeste leerlingen wonen in de wijk. De gemeente liet de route vorig jaar onderzoeken en daaruit bleek dat een deel van de weg smal is. De route is bovendien gevaarlijk, omdat er nauwelijks leerlingen fietsen en de weg dus niet druk is met fietsers waar automobilisten rekening mee houden. Een veilige route zou de gemeente weinig kosten, terwijl de winst voor de leerlingen groot is. Daarom is verbetering van de route een goed plan."
+  },
+  {
+   "v": "Welke bron in tekst D is het meest betrouwbaar voor de kosten van het zwembad?",
+   "o": [
+    "het eerste adviesbureau van de gemeente",
+    "de bezoeker die er al twintig jaar niet komt",
+    "het onafhankelijke bureau",
+    "de directeur van het zwembad"
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 1,
+   "u": "Onafhankelijk en deskundig: de beste bron.",
+   "uo": [
+    "Koos je \"het eerste adviesbureau van de gemeente\"? Dan denk je dat het eerste bureau de beste kennis heeft. Het heeft belang bij sluiting, dus is het minder betrouwbaar.",
+    "Koos je \"de bezoeker die er al twintig jaar niet komt\"? Dan denk je dat de bezoeker de kosten kent. Hij komt er niet meer, en weet het dus niet.",
+    "Klopt: het heeft geen belang bij de uitkomst.",
+    "Koos je \"de directeur van het zwembad\"? Dan denk je dat de directeur de beste bron is. Hij heeft belang bij het behoud van het bad, dus hij is niet onafhankelijk."
+   ],
+   "uh": "Wie heeft geen belang?",
+   "ctx": "De gemeente moet het zwembad sluiten. Volgens een rapport van een adviesbureau dat de gemeente zelf heeft ingehuurd en dat per sluiting van een voorziening wordt betaald, kost het zwembad te veel. Een ander, onafhankelijk bureau komt tot een veel lager bedrag. Een bezoeker zegt dat het bad altijd vol zit, maar hij komt er zelf al twintig jaar niet meer. De directeur van het zwembad noemt het bad onmisbaar voor de buurt. De gemeenteraad bespreekt het voorstel volgende maand en wil eerst alle cijfers zien."
+  },
+  {
+   "v": "Is het rapport van het eerste bureau alleen genoeg om het zwembad te sluiten?",
+   "o": [
+    "ja, want een rapport is altijd genoeg",
+    "ja, want de gemeente betaalt het bureau",
+    "nee, want het rapport is te lang",
+    "nee, de bron heeft belang"
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 5,
+   "u": "Toereikend: samen genoeg; hier wordt het argument tegengesproken.",
+   "uo": [
+    "Koos je \"ja, want een rapport is altijd genoeg\"? Dan denk je dat een rapport altijd toereikend is. Een rapport kan belanghebbend zijn, en tegengesproken worden.",
+    "Koos je \"ja, want de gemeente betaalt het bureau\"? Dan denk je dat de betaler het rapport sterker maakt. Het maakt de bron juist belanghebbend, en dus minder betrouwbaar.",
+    "Koos je \"nee, want het rapport is te lang\"? Dan denk je dat de lengte telt. Het gaat om belang en tegenspraak, niet om de omvang.",
+    "Klopt: het argument is niet toereikend, omdat het wordt tegengesproken en de bron belang heeft."
+   ],
+   "uh": "Is het rapport betrouwbaar en genoeg?",
+   "ctx": "De gemeente moet het zwembad sluiten. Volgens een rapport van een adviesbureau dat de gemeente zelf heeft ingehuurd en dat per sluiting van een voorziening wordt betaald, kost het zwembad te veel. Een ander, onafhankelijk bureau komt tot een veel lager bedrag. Een bezoeker zegt dat het bad altijd vol zit, maar hij komt er zelf al twintig jaar niet meer. De directeur van het zwembad noemt het bad onmisbaar voor de buurt. De gemeenteraad bespreekt het voorstel volgende maand en wil eerst alle cijfers zien."
+  },
+  {
+   "v": "Welk argument is niet relevant en waarom?",
+   "o": [
+    "argument 2: de buurman",
+    "argument 1: tieners hebben meer slaap nodig",
+    "beide argumenten zijn niet relevant",
+    "geen van beide, want beide zijn feitelijk"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 3,
+   "u": "Relevant: heeft iets met het standpunt te maken.",
+   "uo": [
+    "Klopt: het gaat over een volwassene en niet over tieners op school.",
+    "Koos je \"argument 1: tieners hebben meer slaap nodig\"? Dan denk je dat dit niet relevant is. Het gaat over tieners en het schoolbegin, en is dus relevant.",
+    "Koos je \"beide argumenten zijn niet relevant\"? Dan denk je dat beide argumenten niets met het standpunt te maken hebben. Argument 1 gaat wel over tieners, dus alleen argument 2 is irrelevant.",
+    "Koos je \"geen van beide, want beide zijn feitelijk\"? Dan denk je dat een feit altijd relevant is. Relevantie gaat over de relatie met het standpunt, en argument 2 mist die."
+   ],
+   "uh": "Gaat het over hetzelfde onderwerp?",
+   "ctx": "Standpunt: \"Scholen moeten later beginnen.\" Argument 1: \"Tieners hebben 's ochtends meer slaap nodig.\" Argument 2: \"Mijn buurman begint al om zes uur met werken, en dat gaat prima.\""
+  },
+  {
+   "v": "Welk probleem heeft de argumentatie van deze schrijver?",
+   "o": [
+    "ze is niet relevant, want roken is geen onderwerp",
+    "ze is niet consistent",
+    "ze is niet toereikend, want er is maar één argument",
+    "ze is niet controleerbaar, want er staan geen cijfers in"
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 4,
+   "u": "Inconsistent: twee uitspraken die niet allebei kunnen kloppen.",
+   "uo": [
+    "Koos je \"ze is niet relevant, want roken is geen onderwerp\"? Dan denk je dat het onderwerp niet past. Het onderwerp past bij het standpunt, het probleem is de tegenspraak.",
+    "Klopt: de twee uitspraken spreken elkaar tegen en kunnen niet allebei waar zijn.",
+    "Koos je \"ze is niet toereikend, want er is maar één argument\"? Dan denk je dat er te weinig argumenten zijn. Het probleem is dat ze elkaar tegenspreken, en niet het aantal.",
+    "Koos je \"ze is niet controleerbaar, want er staan geen...\"? Dan denk je dat het probleem de controle is. Het probleem is de tegenspraak, tussen de twee uitspraken."
+   ],
+   "uh": "Kunnen beide waar zijn?",
+   "ctx": "Een schrijver zegt in alinea 1: \"Roken is nauwelijks schadelijk, dus niemand hoeft zich zorgen te maken.\" In alinea 3 schrijft hij: \"Roken moet worden verboden, omdat het zo schadelijk is.\""
+  },
+  {
+   "v": "Waarom is dit argument niet toereikend?",
+   "o": [
+    "omdat gamen geen hobby is",
+    "omdat neefjes geen jongeren zijn",
+    "omdat de schrijver gelijk heeft",
+    "twee gevallen zijn te weinig"
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 5,
+   "u": "Toereikend: genoeg voor het standpunt.",
+   "uo": [
+    "Koos je \"omdat gamen geen hobby is\"? Dan denk je dat gamen niet telt. Het gaat om de omvang, twee gevallen zeggen niets over alle jongeren.",
+    "Koos je \"omdat neefjes geen jongeren zijn\"? Dan denk je dat neefjes geen jongeren zijn. Ze zijn wel jongeren, maar twee zijn te weinig.",
+    "Koos je \"omdat de schrijver gelijk heeft\"? Dan denk je dat gelijk hebben toereikend maakt. Het gaat om de bewijskracht, en twee gevallen zijn te weinig.",
+    "Klopt: het argument is te zwak voor zo'n algemeen standpunt."
+   ],
+   "uh": "Zijn twee gevallen genoeg voor een groot standpunt?",
+   "ctx": "Standpunt: \"Alle jongeren zijn gamers.\" Argument: \"Mijn twee neefjes gamen elke dag.\" Er zijn in Nederland veel jongeren, die allemaal verschillende hobby's hebben."
+  },
+  {
+   "v": "Hoe zit het met de aanvaardbaarheid van \"Dit museum is mooi\" voor deze lezer?",
+   "o": [
+    "voor hem is ze niet aanvaardbaar",
+    "de uitspraak is onwaar",
+    "de lezer moet de schrijver gelijk geven",
+    "de uitspraak is aanvaardbaar voor iedereen"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 2,
+   "u": "Waardering: aanvaardbaar als ze past bij de opvattingen.",
+   "uo": [
+    "Klopt: de uitspraak past niet bij zijn opvattingen.",
+    "Koos je \"de uitspraak is onwaar\"? Dan denk je dat een waardering onwaar kan zijn. Een waardering is niet waar of onwaar, ze is aanvaardbaar of niet.",
+    "Koos je \"de lezer moet de schrijver gelijk geven\"? Dan denk je dat de lezer gedwongen is. Een waardering is aanvaardbaar als ze past, en dit past niet.",
+    "Koos je \"de uitspraak is aanvaardbaar voor iedereen\"? Dan denk je dat een waardering voor iedereen geldt. Ze geldt voor wie ze deelt, en deze lezer deelt haar niet."
+   ],
+   "uh": "Past het bij de lezer?",
+   "ctx": "Een schrijver zegt: \"Dit museum is mooi.\" De lezer houdt niet van moderne kunst en vindt het museum lelijk. De schrijver noemt verder geen argumenten."
+  },
+  {
+   "v": "Waarom is \"Iedereen weet dat dit waar is\" geen aanvaardbaar feitelijk argument?",
+   "o": [
+    "omdat iedereen het weet",
+    "er is geen bron of controle",
+    "omdat een feit niet waar kan zijn zonder bron",
+    "omdat de schrijver een waardering geeft"
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 0,
+   "u": "Een feitelijk argument heeft controle of bron nodig.",
+   "uo": [
+    "Koos je \"omdat iedereen het weet\"? Dan denk je dat algemene kennis het argument versterkt. Algemene kennis telt alleen als de lezer het zelf weet, en dat is hier niet aangetoond.",
+    "Klopt: een bewering zonder bron of controle is niet aanvaardbaar.",
+    "Koos je \"omdat een feit niet waar kan zijn zonder bron\"? Dan denk je dat een feit een bron nodig heeft om waar te zijn. Dat is niet zo, maar de lezer kan het zo niet controleren.",
+    "Koos je \"omdat de schrijver een waardering geeft\"? Dan denk je dat de zin een waardering is. Het is een feitelijke claim, alleen niet onderbouwd."
+   ],
+   "uh": "Waar kun je het nagaan?",
+   "ctx": "Een schrijver noemt als argument: \"Iedereen weet dat dit waar is.\" Hij noemt geen bron en geeft geen cijfers of voorbeelden bij zijn bewering."
+  }
+ ],
+ "oe": [
+  {
+   "bron": "Examenstijl",
+   "ctx": "Scholen moeten een smartphoneverbod invoeren. Telefoons leiden af, want leerlingen kijken tijdens de les naar hun scherm in plaats van naar het bord. Een telefoon in de broekzak is voor veel leerlingen een trekpleister: elke melding leidt de aandacht van het bord weg. De directeur van de school heeft zelf geen smartphone. Bovendien zijn er scholen waar een verbod is ingevoerd en waar de cijfers daarna zijn gestegen. Een school zonder smartphones is een betere school. Daarom is een verbod de enige verstandige keuze, ook al klagen sommige leerlingen in het begin.",
+   "v": "Noem het irrelevante argument in tekst A en leg uit waarom het irrelevant is.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Dat de directeur zelf geen smartphone heeft (1p). Het zegt niets over de gevolgen van een verbod voor leerlingen (1p). Het maakt het standpunt niet aannemelijker (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "De gemeente moet de fietsroute naar school verbeteren. Veel leerlingen fietsen naar school, want de afstand is kort en de meeste leerlingen wonen in de wijk. De gemeente liet de route vorig jaar onderzoeken en daaruit bleek dat een deel van de weg smal is. De route is bovendien gevaarlijk, omdat er nauwelijks leerlingen fietsen en de weg dus niet druk is met fietsers waar automobilisten rekening mee houden. Een veilige route zou de gemeente weinig kosten, terwijl de winst voor de leerlingen groot is. Daarom is verbetering van de route een goed plan.",
+   "v": "Welke twee uitspraken in tekst B spreken elkaar tegen en welk criterium is geschonden?",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Veel leerlingen fietsen en er fietsen nauwelijks leerlingen (2p). Consistentie (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "De gemeente moet het zwembad sluiten. Volgens een rapport van een adviesbureau dat de gemeente zelf heeft ingehuurd en dat per sluiting van een voorziening wordt betaald, kost het zwembad te veel. Een ander, onafhankelijk bureau komt tot een veel lager bedrag. Een bezoeker zegt dat het bad altijd vol zit, maar hij komt er zelf al twintig jaar niet meer. De directeur van het zwembad noemt het bad onmisbaar voor de buurt. De gemeenteraad bespreekt het voorstel volgende maand en wil eerst alle cijfers zien.",
+   "v": "Beoordeel de betrouwbaarheid van het eerste bureau en van het onafhankelijke bureau.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Het eerste bureau is minder betrouwbaar, omdat het door de gemeente is ingehuurd en per sluiting wordt betaald, dus belang heeft (2p). Het onafhankelijke bureau heeft geen belang (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "De school moet een nieuwe gymzaal bouwen. De huidige gymzaal heeft een lekkend dak. Een leerling vertelt dat er één keer water op de vloer lag toen het hard had geregend. Daarom moet de hele zaal worden vervangen, ook al kost dat veel geld en is de zaal verder in goede staat.",
+   "v": "Leg uit waarom de argumentatie in tekst C niet toereikend is en geef een verbetering.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Het argument is één incident (1p) en dat is te weinig voor het vervangen van de hele zaal (1p). Verbetering: meer of ernstiger gebreken, bijvoorbeeld door een deskundige vastgesteld (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Standpunt: \"Alle jongeren zijn gamers.\" Argument: \"Mijn twee neefjes gamen elke dag.\" Er zijn in Nederland veel jongeren, die allemaal verschillende hobby's hebben.",
+   "v": "Leg uit waarom het argument over de neefjes niet toereikend is.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Twee gevallen zijn te weinig (1p) voor een bewering over alle jongeren (1p). Er zijn veel jongeren met verschillende hobby's (1p)."
+  }
+ ]
+}

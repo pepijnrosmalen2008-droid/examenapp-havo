@@ -19,7 +19,7 @@
    leerdoelen van het domein af, vink dan ook het domein af.
 4. Bij een rode poort: niets pushen, wél melden.
 
-> Voortgang: **69 leerdoelen op v2** (havo bi.M3, nl.A1 t/m nl.A7, nl.B1 t/m nl.B5, nl.C1 t/m nl.C6, nl.D1 t/m nl.D6, nl.F1 t/m nl.F6, en.A1, en.A2, en.A3, en.A4, en.A5, en.A6, en.A7, en.A8, en.B1, en.B2, en.B3, en.B4, en.B5, en.B6, en.B7, en.B8, vwo nl.A1, vwo nl.A2, vwo nl.A3, vwo nl.A4, vwo nl.A5, vwo nl.A6, vwo nl.A7, vwo nl.B1, vwo nl.B2, vwo nl.B3, vwo nl.B4, vwo nl.B5, vwo nl.C1, vwo nl.C2, vwo nl.C3, vwo nl.C4, vwo nl.C5, vwo nl.C6, vwo nl.D1, vwo nl.D2, vwo nl.D3, vwo nl.D4). Werk dit getal bij bij elke afronding.
+> Voortgang: **70 leerdoelen op v2** (havo bi.M3, nl.A1 t/m nl.A7, nl.B1 t/m nl.B5, nl.C1 t/m nl.C6, nl.D1 t/m nl.D6, nl.F1 t/m nl.F6, en.A1, en.A2, en.A3, en.A4, en.A5, en.A6, en.A7, en.A8, en.B1, en.B2, en.B3, en.B4, en.B5, en.B6, en.B7, en.B8, vwo nl.A1, vwo nl.A2, vwo nl.A3, vwo nl.A4, vwo nl.A5, vwo nl.A6, vwo nl.A7, vwo nl.B1, vwo nl.B2, vwo nl.B3, vwo nl.B4, vwo nl.B5, vwo nl.C1, vwo nl.C2, vwo nl.C3, vwo nl.C4, vwo nl.C5, vwo nl.C6, vwo nl.D1, vwo nl.D2, vwo nl.D3, vwo nl.D4, vwo nl.D5). Werk dit getal bij bij elke afronding.
 > Oude stand (v1, domeinniveau): 7/220 domeinen; die tellen niet meer als af.
 >
 > **Omvang (okt 2026):** 220 domeinen (havo 59, vwo 84, vmbo 77) × gemiddeld ~6 leerdoelen
@@ -92,7 +92,7 @@
   - [x] D2 · nl.D.2 Argumentatiestructuren onderscheiden · 27 vragen (R1 7, R2 10, R3 10, 3 eigen teksten en 6 fragmenten), 12 begrippen, 4 figuren (drie vormen, keten, afhankelijk en onafhankelijk, schema met nummers), geen clip
   - [x] D3 · nl.D.3 Feitelijke en waarderende argumenten onderscheiden · 27 vragen (R1 7, R2 10, R3 10, 3 eigen teksten en 6 fragmenten), 12 begrippen, 4 figuren (feit tegenover waardering, beslisschema, betrouwbare bron, aanvaardbaarheid), geen clip
   - [x] D4 · nl.D.4 Argumentatieschema's herkennen · 27 vragen (R1 7, R2 10, R3 10, 2 eigen teksten en 9 fragmenten), 12 begrippen, 4 figuren (zes schema's, oorzaak en gevolg, weegschaal voor- en nadelen, voorbeelden vergelijking autoriteit), geen clip
-  - [ ] D5 · nl.D.5 Een betoog op aanvaardbaarheid beoordelen
+  - [x] D5 · nl.D.5 Een betoog op aanvaardbaarheid beoordelen · 27 vragen (R1 7, R2 10, R3 10, 4 eigen teksten en 11 fragmenten), 12 begrippen, 4 figuren (zes criteria, drie wegen naar een aanvaardbaar feit, relevantie en consistentie, toereikendheid), geen clip
   - [ ] D6 · nl.D.6 Drogredenen herkennen en vermijden
 - [ ] **VWO · Nederlands** (`nl`) · domein E — Literatuur
 - [ ] **VMBO · Nederlands** (`nl`) · domein A — Luister- en kijkvaardigheid
