@@ -5,7 +5,7 @@
 Volledige beschrijving (functies, inhoud per niveau, prijs, wat Slagio niet is): https://slagio.nl/llms-full.txt
 
 ## In het kort
-- 12 vakken havo, 16 vakken vwo, 12 vakken vmbo; 22.925 oefenvragen en 4.346 begrippen.
+- 12 vakken havo, 16 vakken vwo, 12 vakken vmbo; 22.952 oefenvragen en 4.346 begrippen.
 - Adaptief oefenen: na een fout een vraag over hetzelfde onderwerp, een niveau makkelijker; uitleg bij elk fout antwoord.
 - Foutenboek en herhalen met gespreide herhaling, beheersing per leerdoel, studieplan tot het examen.
 - Examens met klok, proefexamens in examenstijl met modelantwoord en puntenverdeling, archief met officiële oude examens.
@@ -111,6 +111,7 @@ Volledige beschrijving (functies, inhoud per niveau, prijs, wat Slagio niet is):
 - [Drogredenen herkennen en vermijden (Nederlands VWO)](https://slagio.nl/leren/vwo/nederlands/drogredenen-herkennen-en-vermijden.html): Je herkent drogredenen in een betoog, zowel onjuist gebruikte argumentatieschema's als overtreden discussieregels, en je vermijdt ze in je eigen argumentatie.
 - [Literaire tekstsoorten herkennen en onderscheiden (Nederlands VWO)](https://slagio.nl/leren/vwo/nederlands/literaire-tekstsoorten-herkennen-en-onderscheiden.html): Je herkent proza, poëzie en drama aan hun vorm, onderscheidt een literaire tekst van een gebruikstekst en onderbouwt wat een tekst bij je oproept.
 - [Verteller, vertelperspectief en focalisatie (Nederlands VWO)](https://slagio.nl/leren/vwo/nederlands/verteller-vertelperspectief-en-focalisatie.html): Je bepaalt wie er vertelt en wat die verteller kan weten (ik, personaal, alwetend, neutraal), door wiens ogen je het verhaal ziet en hoe betrouwbaar de…
+- [Tijd, ruimte en opbouw van een verhaal (Nederlands VWO)](https://slagio.nl/leren/vwo/nederlands/tijd-ruimte-en-opbouw-van-een-verhaal.html): Je herkent terug- en vooruitblikken, tempo, de rol van de ruimte en de opbouw met spanningsboog, begin en slot, en je benoemt wat dat met de lezer doet.
 - [Informatie verzamelen en verwerken (Nederlands VWO)](https://slagio.nl/leren/vwo/nederlands/informatie-verzamelen-en-verwerken.html): Je zoekt voor een voordracht, discussie of debat bronnen, beoordeelt hun betrouwbaarheid, vergelijkt tegenstrijdige informatie, verwerkt die tot kernpunten in…
 - [Doel, publiek en gespreksvorm afstemmen (Nederlands VWO)](https://slagio.nl/leren/vwo/nederlands/doel-publiek-en-gespreksvorm-afstemmen.html): Je bepaalt het spreekdoel, analyseert je publiek en kiest de gespreksvorm (voordracht, discussie of debat), en stemt inhoud, voorbeelden en taalgebruik daarop…
 - [Een voordracht opbouwen en presenteren (Nederlands VWO)](https://slagio.nl/leren/vwo/nederlands/een-voordracht-opbouwen-en-presenteren.html): Je bouwt een voordracht op met inleiding, kern en slot, verbindt de punten met overgangen en een rode draad, en presenteert met stem, houding, oogcontact en…

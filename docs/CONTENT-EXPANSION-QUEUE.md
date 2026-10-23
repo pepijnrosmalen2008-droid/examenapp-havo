@@ -19,7 +19,7 @@
    leerdoelen van het domein af, vink dan ook het domein af.
 4. Bij een rode poort: niets pushen, wél melden.
 
-> Voortgang: **73 leerdoelen op v2** (havo bi.M3, nl.A1 t/m nl.A7, nl.B1 t/m nl.B5, nl.C1 t/m nl.C6, nl.D1 t/m nl.D6, nl.F1 t/m nl.F6, en.A1, en.A2, en.A3, en.A4, en.A5, en.A6, en.A7, en.A8, en.B1, en.B2, en.B3, en.B4, en.B5, en.B6, en.B7, en.B8, vwo nl.A1, vwo nl.A2, vwo nl.A3, vwo nl.A4, vwo nl.A5, vwo nl.A6, vwo nl.A7, vwo nl.B1, vwo nl.B2, vwo nl.B3, vwo nl.B4, vwo nl.B5, vwo nl.C1, vwo nl.C2, vwo nl.C3, vwo nl.C4, vwo nl.C5, vwo nl.C6, vwo nl.D1, vwo nl.D2, vwo nl.D3, vwo nl.D4, vwo nl.D5, vwo nl.D6, vwo nl.E1, vwo nl.E2). Werk dit getal bij bij elke afronding.
+> Voortgang: **74 leerdoelen op v2** (havo bi.M3, nl.A1 t/m nl.A7, nl.B1 t/m nl.B5, nl.C1 t/m nl.C6, nl.D1 t/m nl.D6, nl.F1 t/m nl.F6, en.A1, en.A2, en.A3, en.A4, en.A5, en.A6, en.A7, en.A8, en.B1, en.B2, en.B3, en.B4, en.B5, en.B6, en.B7, en.B8, vwo nl.A1, vwo nl.A2, vwo nl.A3, vwo nl.A4, vwo nl.A5, vwo nl.A6, vwo nl.A7, vwo nl.B1, vwo nl.B2, vwo nl.B3, vwo nl.B4, vwo nl.B5, vwo nl.C1, vwo nl.C2, vwo nl.C3, vwo nl.C4, vwo nl.C5, vwo nl.C6, vwo nl.D1, vwo nl.D2, vwo nl.D3, vwo nl.D4, vwo nl.D5, vwo nl.D6, vwo nl.E1, vwo nl.E2, vwo nl.E3). Werk dit getal bij bij elke afronding.
 > Oude stand (v1, domeinniveau): 7/220 domeinen; die tellen niet meer als af.
 >
 > **Omvang (okt 2026):** 220 domeinen (havo 59, vwo 84, vmbo 77) × gemiddeld ~6 leerdoelen
@@ -97,7 +97,7 @@
 - [ ] **VWO · Nederlands** (`nl`) · domein E — Literatuur
   - [x] E1 · nl.E.1 Literaire tekstsoorten herkennen en onderscheiden · 28 vragen (R1 6, R2 11, R3 11, 24 met fragment, ook de eis voor het leesdossier), 12 begrippen, 5 figuren, geen clip
   - [x] E2 · nl.E.2 Verteller, vertelperspectief en focalisatie · 25 vragen (R1 7, R2 9, R3 9, 20 met fragment), 12 begrippen, 5 figuren, geen clip
-  - [ ] E3 · nl.E.3 Tijd, ruimte en opbouw van een verhaal
+  - [x] E3 · nl.E.3 Tijd, ruimte en opbouw van een verhaal · 27 vragen (R1 6, R2 11, R3 10, 27 met fragment), 12 begrippen, 5 figuren, geen clip
   - [ ] E4 · nl.E.4 Personages, thema en motief
   - [ ] E5 · nl.E.5 Stijlfiguren en poëzie
   - [ ] E6 · nl.E.6 Literatuurgeschiedenis in hoofdlijnen
