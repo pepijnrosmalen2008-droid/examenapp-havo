@@ -88,6 +88,27 @@ var VAKKEN_VMBO = [
       "nOe": 5,
       "nBeg": 12,
       "hasSam": true
+     },
+     {
+      "id": "A4",
+      "lo": "nl.A.4",
+      "gs": 2,
+      "naam": "Standpunt en argumenten herkennen",
+      "beschrijving": "Je luistert naar een discussie of een praatje en vindt het standpunt, de argumenten, de bezwaren en de oproep, ook in een gesprek tussen twee mensen.",
+      "ceStatus": "SE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Het standpunt vinden",
+       "Argumenten herkennen",
+       "Bezwaren en antwoorden erop",
+       "Signaalwoorden luisteren",
+       "Standpunten in een discussie"
+      ],
+      "nSv": 26,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
      }
     ]
    },
