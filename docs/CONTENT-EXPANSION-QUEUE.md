@@ -19,7 +19,7 @@
    leerdoelen van het domein af, vink dan ook het domein af.
 4. Bij een rode poort: niets pushen, wél melden.
 
-> Voortgang: **78 leerdoelen op v2** (havo bi.M3, nl.A1 t/m nl.A7, nl.B1 t/m nl.B5, nl.C1 t/m nl.C6, nl.D1 t/m nl.D6, nl.F1 t/m nl.F6, en.A1, en.A2, en.A3, en.A4, en.A5, en.A6, en.A7, en.A8, en.B1, en.B2, en.B3, en.B4, en.B5, en.B6, en.B7, en.B8, vwo nl.A1, vwo nl.A2, vwo nl.A3, vwo nl.A4, vwo nl.A5, vwo nl.A6, vwo nl.A7, vwo nl.B1, vwo nl.B2, vwo nl.B3, vwo nl.B4, vwo nl.B5, vwo nl.C1, vwo nl.C2, vwo nl.C3, vwo nl.C4, vwo nl.C5, vwo nl.C6, vwo nl.D1, vwo nl.D2, vwo nl.D3, vwo nl.D4, vwo nl.D5, vwo nl.D6, vwo nl.E1, vwo nl.E2, vwo nl.E3, vwo nl.E4, vwo nl.E5, vwo nl.E6, vmbo nl.A1). Werk dit getal bij bij elke afronding.
+> Voortgang: **79 leerdoelen op v2** (havo bi.M3, nl.A1 t/m nl.A7, nl.B1 t/m nl.B5, nl.C1 t/m nl.C6, nl.D1 t/m nl.D6, nl.F1 t/m nl.F6, en.A1, en.A2, en.A3, en.A4, en.A5, en.A6, en.A7, en.A8, en.B1, en.B2, en.B3, en.B4, en.B5, en.B6, en.B7, en.B8, vwo nl.A1, vwo nl.A2, vwo nl.A3, vwo nl.A4, vwo nl.A5, vwo nl.A6, vwo nl.A7, vwo nl.B1, vwo nl.B2, vwo nl.B3, vwo nl.B4, vwo nl.B5, vwo nl.C1, vwo nl.C2, vwo nl.C3, vwo nl.C4, vwo nl.C5, vwo nl.C6, vwo nl.D1, vwo nl.D2, vwo nl.D3, vwo nl.D4, vwo nl.D5, vwo nl.D6, vwo nl.E1, vwo nl.E2, vwo nl.E3, vwo nl.E4, vwo nl.E5, vwo nl.E6, vmbo nl.A1, vmbo nl.A2). Werk dit getal bij bij elke afronding.
 > Oude stand (v1, domeinniveau): 7/220 domeinen; die tellen niet meer als af.
 >
 > **Omvang (okt 2026):** 220 domeinen (havo 59, vwo 84, vmbo 77) × gemiddeld ~6 leerdoelen
@@ -103,7 +103,7 @@
   - [x] E6 · nl.E.6 Literatuurgeschiedenis in hoofdlijnen · 27 vragen (R1 5, R2 12, R3 10, 24 met fragment), 12 begrippen, 4 figuren, geen clip
 - [ ] **VMBO · Nederlands** (`nl`) · domein A — Luister- en kijkvaardigheid
   - [x] A1 · nl.A.1 Feit en mening onderscheiden · 26 vragen (R1 7, R2 10, R3 9, 24 met eigen gesproken fragment), 12 begrippen, 4 figuren (feit tegenover mening, woorden die een mening verraden, beslisschema, wie zegt het), geen clip. Eerste vmbo-leerdoel: sam-vmbo.js en laden van vmbo-samenvattingen toegevoegd
-  - [ ] A2 · nl.A.2 De hoofdzaak en de kernboodschap vinden
+  - [x] A2 · nl.A.2 De hoofdzaak en de kernboodschap vinden · 25 vragen (R1 7, R2 9, R3 9, 22 met eigen gesproken fragment), 12 begrippen, 4 figuren (hoofdzaak tegenover bijzaak, kernboodschap, signalen, samenvatten), geen clip
   - [ ] A3 · nl.A.3 Het doel van de spreker herkennen
   - [ ] A4 · nl.A.4 Standpunt en argumenten herkennen
   - [ ] A5 · nl.A.5 Beeld en geluid interpreteren

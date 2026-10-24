@@ -46,6 +46,27 @@ var VAKKEN_VMBO = [
       "nOe": 5,
       "nBeg": 12,
       "hasSam": true
+     },
+     {
+      "id": "A2",
+      "lo": "nl.A.2",
+      "gs": 2,
+      "naam": "De hoofdzaak en de kernboodschap vinden",
+      "beschrijving": "Je luistert naar een gesproken tekst en vindt de hoofdzaak, de bijzaken en de kernboodschap, zodat je die kort en volledig kunt samenvatten.",
+      "ceStatus": "SE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Hoofdzaak en bijzaak",
+       "De kernboodschap in één zin",
+       "Signalen in een gesproken tekst",
+       "Samenvatten: weglaten wat niet hoeft",
+       "Begin, midden en eind van een tekst"
+      ],
+      "nSv": 25,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
      }
     ]
    },

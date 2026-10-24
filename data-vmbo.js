@@ -1321,6 +1321,648 @@ var VAKKEN_VMBO = [
         "u": "Hij kan belang hebben bij een positief oordeel (1p). Zijn mening is minder betrouwbaar (1p). Controleer de feiten zelf, bijvoorbeeld de prijs en de accuduur (1p)."
        }
       ]
+     },
+     {
+      "id": "A2",
+      "lo": "nl.A.2",
+      "gs": 2,
+      "naam": "De hoofdzaak en de kernboodschap vinden",
+      "beschrijving": "Je luistert naar een gesproken tekst en vindt de hoofdzaak, de bijzaken en de kernboodschap, zodat je die kort en volledig kunt samenvatten.",
+      "ceStatus": "SE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Hoofdzaak en bijzaak",
+       "De kernboodschap in één zin",
+       "Signalen in een gesproken tekst",
+       "Samenvatten: weglaten wat niet hoeft",
+       "Begin, midden en eind van een tekst"
+      ],
+      "sam": "De hoofdzaak is de belangrijkste informatie van een gesproken tekst, een bijzaak is een detail dat je kunt weglaten. De kernboodschap is de hoofdzaak in één zin. Je herkent hem aan signalen: sprekers zeggen het belangrijkste of herhalen het, en woorden als belangrijkste, let op en tot slot wijzen op de kern, terwijl trouwens een bijzaak aankondigt. Bij een samenvatting neem je de hoofdzaak mee en laat je bijzaken weg. In nieuws staat de kern vooraan, in reclame staat vaak aan het eind wat je moet doen.",
+      "begrippen": [
+       {
+        "t": "Hoofdzaak",
+        "d": "De belangrijkste informatie van een tekst."
+       },
+       {
+        "t": "Bijzaak",
+        "d": "Een detail dat je kunt weglaten zonder dat de boodschap verandert."
+       },
+       {
+        "t": "Kernboodschap",
+        "d": "De hoofdzaak van een tekst in één zin."
+       },
+       {
+        "t": "Samenvatting",
+        "d": "Een korte versie met alleen de hoofdzaken."
+       },
+       {
+        "t": "Signaal",
+        "d": "Een woord of aanwijzing die laat horen wat belangrijk is."
+       },
+       {
+        "t": "Herhaling",
+        "d": "Iets wat een spreker meerdere keren zegt om te laten onthouden."
+       },
+       {
+        "t": "Nadruk",
+        "d": "Een woord of zin die de spreker extra benadrukt."
+       },
+       {
+        "t": "Volgorde",
+        "d": "Welke stap eerst komt en welke daarna, zoals eerst, daarna en tot slot."
+       },
+       {
+        "t": "Detail",
+        "d": "Een klein onderdeel dat niet nodig is voor de kern."
+       },
+       {
+        "t": "Aanleiding",
+        "d": "Wat een verhaal of bericht begint, zoals een bezoek of een besluit."
+       },
+       {
+        "t": "Reactie",
+        "d": "Wat iemand zegt of vindt over iets wat is gebeurd."
+       },
+       {
+        "t": "Oproep",
+        "d": "Een zin die zegt wat je moet doen, zoals meld je aan."
+       }
+      ],
+      "sv": [
+       {
+        "v": "Welke informatie is de hoofdzaak van een gesproken tekst?",
+        "o": [
+         "een grapje van de spreker",
+         "het belangrijkste",
+         "de eerste zin die je hoort",
+         "de langste zin van de tekst"
+        ],
+        "c": 1,
+        "d": 1,
+        "s": 0,
+        "u": "De hoofdzaak is het belangrijkste.",
+        "uo": [
+         "Koos je \"een grapje van de spreker\"? Dan denk je dat een grap de hoofdzaak is. Een grap is een bijzaak, de hoofdzaak is de belangrijkste informatie.",
+         "Klopt: de hoofdzaak is wat je moet onthouden.",
+         "Koos je \"de eerste zin die je hoort\"? Dan denk je dat de eerste zin altijd de hoofdzaak is. De hoofdzaak kan overal staan, soms zit ze in het midden of aan het eind.",
+         "Koos je \"de langste zin van de tekst\"? Dan denk je dat de lengte telt. Een lange zin kan een detail zijn, de hoofdzaak gaat om belang."
+        ],
+        "uh": "Wat moet je onthouden?"
+       },
+       {
+        "v": "Welk onderdeel van een tekst is een bijzaak?",
+        "o": [
+         "de belangrijkste boodschap",
+         "een zin die de spreker herhaalt",
+         "een vraag aan het publiek",
+         "een detail, kan weg"
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 0,
+        "u": "Een bijzaak is een detail.",
+        "uo": [
+         "Koos je \"de belangrijkste boodschap\"? Dan denk je dat een bijzaak de kern is. Een bijzaak is juist niet de kern, de kern is de hoofdzaak.",
+         "Koos je \"een zin die de spreker herhaalt\"? Dan denk je dat herhaling altijd een bijzaak is. Herhaling kan juist de hoofdzaak aanwijzen, de bijzaak is een detail.",
+         "Koos je \"een vraag aan het publiek\"? Dan denk je dat een vraag een bijzaak is. Een vraag kan een belangrijk punt zijn, een bijzaak is een detail dat kan wegvallen.",
+         "Klopt: een bijzaak is minder belangrijk voor de boodschap."
+        ],
+        "uh": "Kun je het weglaten?"
+       },
+       {
+        "v": "Welke informatie is de hoofdzaak van de omroep?",
+        "o": [
+         "de begintijd van de lessen",
+         "het weer is morgen zonnig",
+         "de docenten hebben een vergadering",
+         "het schoolplein is open"
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 0,
+        "u": "Hoofdzaak: wat moet iedereen weten?",
+        "uo": [
+         "Klopt: dit moeten alle leerlingen weten om op tijd in de les te zijn.",
+         "Koos je \"het weer is morgen zonnig\"? Dan denk je dat het weer het belangrijkste is. Het weer is een bijzaak, de hoofdzaak is wanneer de lessen beginnen.",
+         "Koos je \"de docenten hebben een vergadering\"? Dan denk je dat de vergadering het belangrijkste is. Dit is de reden, maar de leerlingen moeten vooral weten wanneer de les begint.",
+         "Koos je \"het schoolplein is open\"? Dan denk je dat het schoolplein de hoofdzaak is. Dat is een bijzaak, de hoofdzaak is de begintijd."
+        ],
+        "uh": "Wat moet je morgen doen?",
+        "ctx": "Omroep op school: \"Let op, allemaal. Morgen is er geen les in de eerste twee uur, omdat de docenten een vergadering hebben. De lessen beginnen om kwart voor tien. Neem je boeken mee. Het weer is morgen trouwens zonnig, dus het schoolplein is open.\""
+       },
+       {
+        "v": "Welke zin is een bijzaak?",
+        "o": [
+         "de lessen beginnen om kwart voor tien",
+         "er is geen les in de eerste twee uur",
+         "het weer is morgen zonnig",
+         "neem je boeken mee"
+        ],
+        "c": 2,
+        "d": 1,
+        "s": 0,
+        "u": "Bijzaak: past niet bij de kern.",
+        "uo": [
+         "Koos je \"de lessen beginnen om kwart voor tien\"? Dan denk je dat dit een bijzaak is. Dit is de hoofdzaak, want je moet weten wanneer je er moet zijn.",
+         "Koos je \"er is geen les in de eerste twee uur\"? Dan denk je dat dit een bijzaak is. Dit hoort bij de kern, want het vertelt wat er verandert.",
+         "Klopt: het weer heeft niets te maken met de begintijd.",
+         "Koos je \"neem je boeken mee\"? Dan denk je dat dit een bijzaak is. Het is een opdracht voor jou, en dus belangrijk."
+        ],
+        "uh": "Heb je het nodig?",
+        "ctx": "Omroep op school: \"Let op, allemaal. Morgen is er geen les in de eerste twee uur, omdat de docenten een vergadering hebben. De lessen beginnen om kwart voor tien. Neem je boeken mee. Het weer is morgen trouwens zonnig, dus het schoolplein is open.\""
+       },
+       {
+        "v": "Waar gaat de kernboodschap van een tekst over?",
+        "o": [
+         "alle zinnen achter elkaar in volgorde",
+         "de laatste zin van de tekst",
+         "het belangrijkste in één zin",
+         "wat jij van de tekst vindt"
+        ],
+        "c": 2,
+        "d": 1,
+        "s": 1,
+        "u": "Kernboodschap: het belangrijkste punt in één zin.",
+        "uo": [
+         "Koos je \"alle zinnen achter elkaar in volgorde\"? Dan denk je dat de kernboodschap de hele tekst is. De kern is een korte samenvatting, niet alle zinnen.",
+         "Koos je \"de laatste zin van de tekst\"? Dan denk je dat de laatste zin altijd de kern is. De kern kan elders staan, je zoekt het belangrijkste punt.",
+         "Klopt: in één zin zeg je waar het echt over gaat.",
+         "Koos je \"wat jij van de tekst vindt\"? Dan denk je dat de kernboodschap jouw mening is. De kern is wat de spreker wil zeggen, niet wat jij vindt."
+        ],
+        "uh": "Wat wil de spreker zeggen?"
+       },
+       {
+        "v": "Welk woord laat vaak horen dat iets belangrijk is?",
+        "o": [
+         "belangrijkste",
+         "trouwens, tussendoor",
+         "misschien, onzeker",
+         "gisteren, verleden"
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 2,
+        "u": "Belangrijkste, kortom, let op: dit is de kern.",
+        "uo": [
+         "Klopt: sprekers noemen zo wat je moet onthouden.",
+         "Koos je \"trouwens, tussendoor\"? Dan denk je dat \"trouwens\" iets belangrijks inleidt. Dit woord kondigt vaak een bijzaak aan, dus je kunt het meestal weglaten.",
+         "Koos je \"misschien, onzeker\"? Dan denk je dat \"misschien\" een kernpunt aankondigt. Het woord maakt iets onzeker, en wijst niet op het belangrijkste.",
+         "Koos je \"gisteren, verleden\"? Dan denk je dat \"gisteren\" een kernpunt aankondigt. Het woord noemt een tijd, het zegt niets over belang."
+        ],
+        "uh": "Wat zegt de spreker nadrukkelijk?"
+       },
+       {
+        "v": "Wat doe je bij een samenvatting met een bijzaak?",
+        "o": [
+         "je neemt alle bijzaken mee",
+         "je maakt de bijzaak de kern",
+         "je schrijft de bijzaak als eerste",
+         "je laat de bijzaak weg"
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 3,
+        "u": "Een samenvatting heeft alleen hoofdzaken.",
+        "uo": [
+         "Koos je \"je neemt alle bijzaken mee\"? Dan denk je dat alles erin moet. Een samenvatting is kort, dus je laat details weg.",
+         "Koos je \"je maakt de bijzaak de kern\"? Dan denk je dat een bijzaak de kern moet worden. Dat klopt niet, de kern is de hoofdzaak.",
+         "Koos je \"je schrijft de bijzaak als eerste\"? Dan denk je dat een bijzaak vooraan moet staan. Dan verdwijnt de hoofdzaak, en je boodschap klopt niet meer.",
+         "Klopt: een samenvatting bevat alleen de hoofdzaken."
+        ],
+        "uh": "Wat is echt nodig?"
+       },
+       {
+        "v": "Welke informatie in de podcast is een bijzaak?",
+        "o": [
+         "dat het verblijf van de olifanten nieuw is",
+         "dat de presentator zijn regenjas aanhad",
+         "dat de olifanten meer ruimte hebben",
+         "dat de presentator het nieuws belangrijk vindt"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 0,
+        "u": "Bijzaak: past niet bij het nieuws.",
+        "uo": [
+         "Koos je \"dat het verblijf van de olifanten nieuw is\"? Dan denk je dat dit een bijzaak is. Het is het nieuws waar het over gaat, dus de hoofdzaak.",
+         "Klopt: de jas heeft niets met het nieuws over de dierentuin te maken.",
+         "Koos je \"dat de olifanten meer ruimte hebben\"? Dan denk je dat dit een detail is. Het is de belangrijkste verandering, dus de hoofdzaak.",
+         "Koos je \"dat de presentator het nieuws belangrijk vindt\"? Dan denk je dat dit een bijzaak is. Hij zegt zelf dat dit het belangrijkste is, dus het wijst de hoofdzaak aan."
+        ],
+        "uh": "Heeft het met het nieuws te maken?",
+        "ctx": "Een presentator vertelt in een podcast: \"Vorige week ben ik naar de dierentuin geweest. Het was druk, ik had mijn regenjas aan en de kaartjes waren duur. Het mooiste was het nieuwe verblijf van de olifanten: zij hebben nu veel meer ruimte. Dat vind ik het belangrijkste nieuws van het park.\""
+       },
+       {
+        "v": "Welke zin geeft de kernboodschap van de podcast?",
+        "o": [
+         "de presentator is naar de dierentuin geweest",
+         "de kaartjes voor de dierentuin zijn duur",
+         "het was druk in de dierentuin",
+         "olifanten krijgen een ruimer verblijf"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 1,
+        "u": "Kern: het belangrijkste nieuws in één zin.",
+        "uo": [
+         "Koos je \"de presentator is naar de dierentuin geweest\"? Dan denk je dat dit de kern is. Het is de aanleiding, het nieuws gaat over de olifanten.",
+         "Koos je \"de kaartjes voor de dierentuin zijn duur\"? Dan denk je dat dit de kern is. Het is een detail, en niet het belangrijkste nieuws.",
+         "Koos je \"het was druk in de dierentuin\"? Dan denk je dat dit de kern is. Het is een bijzaak, de olifanten zijn het nieuws.",
+         "Klopt: dit is het belangrijkste nieuws, de rest zijn details van het bezoek."
+        ],
+        "uh": "Waar gaat het echt over?",
+        "ctx": "Een presentator vertelt in een podcast: \"Vorige week ben ik naar de dierentuin geweest. Het was druk, ik had mijn regenjas aan en de kaartjes waren duur. Het mooiste was het nieuwe verblijf van de olifanten: zij hebben nu veel meer ruimte. Dat vind ik het belangrijkste nieuws van het park.\""
+       },
+       {
+        "v": "Welke zin laat horen wat de presentator het belangrijkste vindt?",
+        "o": [
+         "\"Vorige week ben ik naar de dierentuin geweest.\"",
+         "\"Dat vind ik het belangrijkste.\"",
+         "\"Het was druk en ik had mijn regenjas aan.\"",
+         "\"De kaartjes waren duur.\""
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 2,
+        "u": "Let op zinnen als \"het belangrijkste is\".",
+        "uo": [
+         "Koos je \"Vorige week ben ik naar de dierentuin geweest.\"? Dan denk je dat de eerste zin de kern is. Hij opent het verhaal, maar noemt niet wat belangrijk is.",
+         "Klopt: hij noemt zelf wat hij het belangrijkste vindt.",
+         "Koos je \"Het was druk en ik had mijn regenjas aan.\"? Dan denk je dat dit de kern is. Dit zijn details, die niet het belangrijkste zijn.",
+         "Koos je \"De kaartjes waren duur.\"? Dan denk je dat de prijs de kern is. De presentator noemt de prijs terloops, en zegt zelf wat belangrijker is."
+        ],
+        "uh": "Wat noemt hij zelf belangrijk?",
+        "ctx": "Een presentator vertelt in een podcast: \"Vorige week ben ik naar de dierentuin geweest. Het was druk, ik had mijn regenjas aan en de kaartjes waren duur. Het mooiste was het nieuwe verblijf van de olifanten: zij hebben nu veel meer ruimte. Dat vind ik het belangrijkste nieuws van het park.\""
+       },
+       {
+        "v": "Welke drie stappen noemt de docent voor het werkstuk?",
+        "o": [
+         "bronnen zoeken, onderwerp kiezen, tekst schrijven",
+         "onderwerp kiezen, tekst schrijven, bronnen zoeken",
+         "onderwerp, bronnen, schrijven",
+         "tekst schrijven, onderwerp kiezen, bronnen zoeken"
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 3,
+        "u": "Let op woorden als eerst, daarna en tot slot.",
+        "uo": [
+         "Koos je \"bronnen zoeken, onderwerp kiezen, tekst schrijven\"? Dan denk je dat de volgorde mag wisselen. De docent zegt eerst een onderwerp, daarna bronnen en tot slot de tekst.",
+         "Koos je \"onderwerp kiezen, tekst schrijven, bronnen zoeken\"? Dan denk je dat je eerst moet schrijven. De docent noemt de bronnen vóór het schrijven, dus deze volgorde klopt niet.",
+         "Klopt: de docent noemt ze met eerst, daarna en tot slot in deze volgorde.",
+         "Koos je \"tekst schrijven, onderwerp kiezen, bronnen zoeken\"? Dan denk je dat je met schrijven begint. De docent begint met het onderwerp, en eindigt met schrijven."
+        ],
+        "uh": "Welke volgorde noemt hij?",
+        "ctx": "Een docent legt uit: \"Voor je werkstuk heb je drie dingen nodig. Eerst kies je een onderwerp. Daarna zoek je bronnen. Tot slot schrijf je de tekst. Het belangrijkste is dat je op tijd begint, want de deadline is vrijdag, en dat is al over vijf dagen.\""
+       },
+       {
+        "v": "Wat noemt de docent het belangrijkste?",
+        "o": [
+         "op tijd beginnen",
+         "een onderwerp kiezen",
+         "bronnen zoeken",
+         "de tekst schrijven"
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 0,
+        "u": "De spreker zegt zelf wat het belangrijkste is.",
+        "uo": [
+         "Klopt: de docent zegt \"het belangrijkste is dat je op tijd begint\".",
+         "Koos je \"een onderwerp kiezen\"? Dan denk je dat het kiezen van een onderwerp telt. Dat noemt hij als eerste stap, maar hij zegt niet dat het het belangrijkste is.",
+         "Koos je \"bronnen zoeken\"? Dan denk je dat de bronnen de kern zijn. Ze komen in het midden van het rijtje, en de docent noemt iets anders het belangrijkste.",
+         "Koos je \"de tekst schrijven\"? Dan denk je dat het schrijven de hoofdzaak is. Dat is de laatste stap, maar de docent benadrukt iets anders."
+        ],
+        "uh": "Wat zegt de docent nadrukkelijk?",
+        "ctx": "Een docent legt uit: \"Voor je werkstuk heb je drie dingen nodig. Eerst kies je een onderwerp. Daarna zoek je bronnen. Tot slot schrijf je de tekst. Het belangrijkste is dat je op tijd begint, want de deadline is vrijdag, en dat is al over vijf dagen.\""
+       },
+       {
+        "v": "Welke zin geeft de kernboodschap van het nieuwsbericht?",
+        "o": [
+         "Dorpsstraat drie weken dicht",
+         "automobilisten kunnen omrijden via de ringweg",
+         "winkeliers vrezen minder klanten",
+         "de gemeente doet iets in het dorp"
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 1,
+        "u": "Kern: wat, waar en hoe lang.",
+        "uo": [
+         "Klopt: dit zegt wat er gebeurt, waar en hoe lang, en dat moeten luisteraars weten.",
+         "Koos je \"automobilisten kunnen omrijden via de ringweg\"? Dan denk je dat de omleiding de kern is. Dit is een gevolg, de kern is de afsluiting.",
+         "Koos je \"winkeliers vrezen minder klanten\"? Dan denk je dat de vrees de kern is. Dit is een reactie, de kern is de afsluiting.",
+         "Koos je \"de gemeente doet iets in het dorp\"? Dan denk je dat dit de kern is. Het is te vaag, de kern noemt wat, waar en hoe lang."
+        ],
+        "uh": "Wat gebeurt er, waar en wanneer?",
+        "ctx": "Een nieuwslezer meldt: \"De gemeente sluit volgende week de Dorpsstraat voor verkeer, omdat er een nieuwe riolering komt. Automobilisten kunnen omrijden via de ringweg. De werkzaamheden duren drie weken. Winkeliers vrezen dat er minder klanten komen.\""
+       },
+       {
+        "v": "Welke informatie kun je weglaten in een korte samenvatting?",
+        "o": [
+         "dat de Dorpsstraat wordt afgesloten",
+         "dat de werkzaamheden drie weken duren",
+         "dat winkeliers vrezen dat er minder klanten komen",
+         "dat er een nieuwe riolering komt"
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 3,
+        "u": "Reacties zijn vaak bijzaken.",
+        "uo": [
+         "Koos je \"dat de Dorpsstraat wordt afgesloten\"? Dan denk je dat je dit kunt weglaten. Dit is de hoofdzaak, zonder dit klopt de samenvatting niet.",
+         "Koos je \"dat de werkzaamheden drie weken duren\"? Dan denk je dat je de duur kunt weglaten. De duur hoort bij de hoofdzaak, want mensen moeten weten hoe lang het duurt.",
+         "Klopt: dit is een reactie, de hoofdzaak is de afsluiting.",
+         "Koos je \"dat er een nieuwe riolering komt\"? Dan denk je dat je de reden kunt weglaten. Dit is de reden van de afsluiting, en hoort bij de kern."
+        ],
+        "uh": "Is het de hoofdzaak?",
+        "ctx": "Een nieuwslezer meldt: \"De gemeente sluit volgende week de Dorpsstraat voor verkeer, omdat er een nieuwe riolering komt. Automobilisten kunnen omrijden via de ringweg. De werkzaamheden duren drie weken. Winkeliers vrezen dat er minder klanten komen.\""
+       },
+       {
+        "v": "Wat wil de reclame dat je doet?",
+        "o": [
+         "een waterfles kopen",
+         "je aanmelden",
+         "alleen de eerste maand gebruiken",
+         "een vraag beantwoorden"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 4,
+        "u": "Reclame: eindigt vaak met wat je moet doen.",
+        "uo": [
+         "Koos je \"een waterfles kopen\"? Dan denk je dat je een waterfles moet kopen. De fles is een gratis extra, de hoofdzaak is aanmelden.",
+         "Klopt: de reclame eindigt met \"Meld je nu aan\".",
+         "Koos je \"alleen de eerste maand gebruiken\"? Dan denk je dat je maar één maand mag blijven. De eerste maand is gratis, maar de reclame wil dat je lid wordt.",
+         "Koos je \"een vraag beantwoorden\"? Dan denk je dat de vraag het doel is. De vraag trekt aandacht, maar je moet je aanmelden."
+        ],
+        "uh": "Wat staat aan het eind?",
+        "ctx": "Een reclame op de radio zegt: \"Wil je fit blijven? Kom dan naar Sportcentrum Oost! Ruime zalen, leuke lessen en de eerste maand helemaal gratis. Meld je nu aan en krijg een gratis waterfles. Alleen deze week!\""
+       },
+       {
+        "v": "Waarom staat \"Alleen deze week!\" aan het eind van de reclame?",
+        "o": [
+         "omdat het sportcentrum maar een week open is",
+         "omdat het weer deze week mooi is",
+         "omdat de reclame deze week wordt gemaakt",
+         "je moet snel kiezen"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 4,
+        "u": "Een korte deadline zet druk.",
+        "uo": [
+         "Koos je \"omdat het sportcentrum maar een week open is\"? Dan denk je dat het sportcentrum sluit. Het gaat om de aanbieding, die snel afloopt.",
+         "Koos je \"omdat het weer deze week mooi is\"? Dan denk je dat het weer een rol speelt. Het weer wordt niet genoemd, het gaat om haast maken.",
+         "Koos je \"omdat de reclame deze week wordt gemaakt\"? Dan denk je dat het om de maker gaat. Het gaat om de boodschap, je moet snel kiezen.",
+         "Klopt: een korte deadline zet druk, zodat je sneller beslist zonder na te denken."
+        ],
+        "uh": "Wat wil de reclame bereiken?",
+        "ctx": "Een reclame op de radio zegt: \"Wil je fit blijven? Kom dan naar Sportcentrum Oost! Ruime zalen, leuke lessen en de eerste maand helemaal gratis. Meld je nu aan en krijg een gratis waterfles. Alleen deze week!\""
+       },
+       {
+        "v": "Samenvatting: \"Morgen is het zonnig en de docenten vergaderen.\" Welk probleem heeft die?",
+        "o": [
+         "er staat te veel informatie in",
+         "de begintijd ontbreekt",
+         "er staat een fout in de reden",
+         "er staat een bijzaak als eerste"
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 0,
+        "u": "Een goede samenvatting bevat de hoofdzaak.",
+        "uo": [
+         "Koos je \"er staat te veel informatie in\"? Dan denk je dat de samenvatting te lang is. De samenvatting is juist te dun, want de hoofdzaak ontbreekt.",
+         "Klopt: de samenvatting mist het belangrijkste.",
+         "Koos je \"er staat een fout in de reden\"? Dan denk je dat de reden niet klopt. De reden klopt wel, maar de hoofdzaak ontbreekt.",
+         "Koos je \"er staat een bijzaak als eerste\"? Dan denk je dat de volgorde het probleem is. Het probleem is wat ontbreekt, namelijk de begintijd."
+        ],
+        "uh": "Staat het belangrijkste erin?",
+        "ctx": "Omroep op school: \"Let op, allemaal. Morgen is er geen les in de eerste twee uur, omdat de docenten een vergadering hebben. De lessen beginnen om kwart voor tien. Neem je boeken mee. Het weer is morgen trouwens zonnig, dus het schoolplein is open.\""
+       },
+       {
+        "v": "Welke samenvatting is het beste?",
+        "o": [
+         "\"Kies een onderwerp, zoek bronnen, schrijf je tekst en begin op tijd, want vrijdag is de deadline.\"",
+         "\"De docent legt iets uit over een werkstuk.\"",
+         "\"Het is al over vijf dagen vrijdag.\"",
+         "\"Eerst kies je een onderwerp, dan zoek je bronnen, dan schrijf je en dat is lastig en kost veel tijd.\""
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 1,
+        "u": "Een samenvatting heeft stappen en kernpunt.",
+        "uo": [
+         "Klopt: de samenvatting bevat de stappen en de belangrijkste waarschuwing.",
+         "Koos je \"De docent legt iets uit over een werkstuk.\"? Dan denk je dat dit genoeg is. Het zegt alleen waar het over gaat, en geeft geen enkele stap.",
+         "Koos je \"Het is al over vijf dagen vrijdag.\"? Dan denk je dat de tijd de kern is. Het is een detail bij de deadline, en je mist de stappen en de oproep.",
+         "Koos je \"Eerst kies je een onderwerp, dan zoek je bronnen,...\"? Dan denk je dat dit klopt. Er staat een mening in die de docent niet geeft, en de deadline ontbreekt."
+        ],
+        "uh": "Staan de stappen en het belangrijkste erin?",
+        "ctx": "Een docent legt uit: \"Voor je werkstuk heb je drie dingen nodig. Eerst kies je een onderwerp. Daarna zoek je bronnen. Tot slot schrijf je de tekst. Het belangrijkste is dat je op tijd begint, want de deadline is vrijdag, en dat is al over vijf dagen.\""
+       },
+       {
+        "v": "Welk signaal in het nieuwsbericht wijst op de belangrijkste informatie?",
+        "o": [
+         "het bericht eindigt met de zorgen van de winkeliers",
+         "er wordt een tijd genoemd",
+         "er wordt omleiding genoemd",
+         "het bericht begint met wat de gemeente gaat doen"
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 2,
+        "u": "Nieuws: de kern staat meestal vooraan.",
+        "uo": [
+         "Koos je \"het bericht eindigt met de zorgen van de winkeliers\"? Dan denk je dat het slot het belangrijkste vertelt. Daar staat een reactie van winkeliers, terwijl nieuws de kern in het begin zet.",
+         "Koos je \"er wordt een tijd genoemd\"? Dan denk je dat een tijdsaanduiding de kern verraadt. Drie weken is een gegeven bij het nieuws, en niet het nieuws zelf.",
+         "Koos je \"er wordt omleiding genoemd\"? Dan denk je dat de omleiding het nieuws is. Een omleiding is een gevolg van de afsluiting, en komt pas daarna in het bericht.",
+         "Klopt: een nieuwsbericht zet de kern vooraan."
+        ],
+        "uh": "Waar begint het bericht mee?",
+        "ctx": "Een nieuwslezer meldt: \"De gemeente sluit volgende week de Dorpsstraat voor verkeer, omdat er een nieuwe riolering komt. Automobilisten kunnen omrijden via de ringweg. De werkzaamheden duren drie weken. Winkeliers vrezen dat er minder klanten komen.\""
+       },
+       {
+        "v": "Welke zin geeft het gesprek het kortst en toch volledig weer?",
+        "o": [
+         "\"De presentator had een regenjas aan in de dierentuin die druk was.\"",
+         "\"De dierentuin was druk en de kaartjes waren duur voor veel mensen.\"",
+         "\"Hij vond het nieuwe olifantenverblijf het belangrijkste.\"",
+         "\"De presentator vertelt over een bezoek aan een dierentuin.\""
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 3,
+        "u": "Een korte samenvatting bevat de hoofdzaak.",
+        "uo": [
+         "Koos je \"De presentator had een regenjas aan in de...\"? Dan denk je dat dit de samenvatting is. Dit is een bijzaak, en noemt de olifanten niet.",
+         "Koos je \"De dierentuin was druk en de kaartjes waren duur...\"? Dan denk je dat dit de samenvatting is. Dit zijn details, de olifanten ontbreken.",
+         "Klopt: dit bevat de hoofdzaak in één zin en laat de bijzaken weg.",
+         "Koos je \"De presentator vertelt over een bezoek aan een...\"? Dan denk je dat dit voldoende is. De zin is te vaag, want hij noemt het nieuws niet."
+        ],
+        "uh": "Staat het nieuws erin?",
+        "ctx": "Een presentator vertelt in een podcast: \"Vorige week ben ik naar de dierentuin geweest. Het was druk, ik had mijn regenjas aan en de kaartjes waren duur. Het mooiste was het nieuwe verblijf van de olifanten: zij hebben nu veel meer ruimte. Dat vind ik het belangrijkste nieuws van het park.\""
+       },
+       {
+        "v": "Wat is de hoofdzaak van de reclame en wat is een bijzaak?",
+        "o": [
+         "hoofdzaak: de waterfles; bijzaak: aanmelden",
+         "hoofdzaak: de ruime zalen; bijzaak: aanmelden",
+         "hoofdzaak: aanmelden, bijzaak: fles",
+         "er is geen bijzaak in een reclame"
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 0,
+        "u": "Reclame: aanmelden is de kern.",
+        "uo": [
+         "Koos je \"hoofdzaak: de waterfles; bijzaak: aanmelden\"? Dan denk je dat de fles de hoofdzaak is. De fles is een lokkertje, de hoofdzaak is aanmelden.",
+         "Koos je \"hoofdzaak: de ruime zalen; bijzaak: aanmelden\"? Dan denk je dat de zalen de hoofdzaak zijn. De reclame wil dat je je aanmeldt, dus aanmelden is de kern.",
+         "Klopt: de fles is een extra om je over te halen.",
+         "Koos je \"er is geen bijzaak in een reclame\"? Dan denk je dat alles in een reclame de hoofdzaak is. Er zijn ook extraatjes, zoals de waterfles."
+        ],
+        "uh": "Wat wil de reclame dat je doet?",
+        "ctx": "Een reclame op de radio zegt: \"Wil je fit blijven? Kom dan naar Sportcentrum Oost! Ruime zalen, leuke lessen en de eerste maand helemaal gratis. Meld je nu aan en krijg een gratis waterfles. Alleen deze week!\""
+       },
+       {
+        "v": "Waarom begint de reclame met de vraag \"Wil je fit blijven?\"",
+        "o": [
+         "omdat de spreker het antwoord niet weet",
+         "omdat de reclame een quiz is",
+         "omdat fit zijn het enige belangrijke is",
+         "om je aandacht te trekken"
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 4,
+        "u": "Een vraag trekt aandacht.",
+        "uo": [
+         "Koos je \"omdat de spreker het antwoord niet weet\"? Dan denk je dat hij het niet weet. Hij weet het wel, hij wil je aandacht trekken.",
+         "Koos je \"omdat de reclame een quiz is\"? Dan denk je dat de reclame een quiz is. Het is een reclame, met een vraag als haak.",
+         "Koos je \"omdat fit zijn het enige belangrijke is\"? Dan denk je dat dit de kern is. Het is een aanloop, de kern komt later.",
+         "Klopt: een vraag trekt de aandacht en maakt je nieuwsgierig naar het antwoord."
+        ],
+        "uh": "Waar begint hij mee?",
+        "ctx": "Een reclame op de radio zegt: \"Wil je fit blijven? Kom dan naar Sportcentrum Oost! Ruime zalen, leuke lessen en de eerste maand helemaal gratis. Meld je nu aan en krijg een gratis waterfles. Alleen deze week!\""
+       },
+       {
+        "v": "De omroep noemt eerst de reden en dan de nieuwe begintijd. Waarom is de begintijd toch de hoofdzaak?",
+        "o": [
+         "je moet er zijn op die tijd",
+         "omdat het in het midden staat",
+         "omdat de omroeper het twee keer zegt",
+         "omdat het een getal is"
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 1,
+        "u": "De hoofdzaak is wat jij moet weten of doen.",
+        "uo": [
+         "Klopt: je moet weten wanneer je er moet zijn.",
+         "Koos je \"omdat het in het midden staat\"? Dan denk je dat het midden de hoofdzaak aanwijst. De plaats zegt niets, je kijkt wat je moet doen.",
+         "Koos je \"omdat de omroeper het twee keer zegt\"? Dan denk je dat herhaling de hoofdzaak maakt. De begintijd wordt maar één keer genoemd, en toch is het de hoofdzaak.",
+         "Koos je \"omdat het een getal is\"? Dan denk je dat een getal de hoofdzaak is. Het gaat om wat je ermee moet doen, namelijk op tijd komen."
+        ],
+        "uh": "Wat verandert voor jou?",
+        "ctx": "Omroep op school: \"Let op, allemaal. Morgen is er geen les in de eerste twee uur, omdat de docenten een vergadering hebben. De lessen beginnen om kwart voor tien. Neem je boeken mee. Het weer is morgen trouwens zonnig, dus het schoolplein is open.\""
+       },
+       {
+        "v": "De presentator zegt: \"Dat is hinderlijk voor winkeliers.\" Wat doe je met die zin in een samenvatting?",
+        "o": [
+         "je neemt hem als eerste op in de samenvatting",
+         "je laat hem weg, het is een reactie",
+         "je maakt er de kernboodschap van",
+         "je herhaalt hem drie keer in je tekst"
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 3,
+        "u": "Een samenvatting bevat feiten en laat reacties weg.",
+        "uo": [
+         "Koos je \"je neemt hem als eerste op in de samenvatting\"? Dan denk je dat dit de kern is. Het is een reactie, en niet het belangrijkste nieuws.",
+         "Klopt: een samenvatting bevat de feiten van het bericht.",
+         "Koos je \"je maakt er de kernboodschap van\"? Dan denk je dat dit de kern is. Het is een reactie, de kern is de afsluiting.",
+         "Koos je \"je herhaalt hem drie keer in je tekst\"? Dan denk je dat herhalen goed is. Een samenvatting is kort, en laat dit weg."
+        ],
+        "uh": "Is het nieuws of reactie?",
+        "ctx": "Een nieuwslezer meldt: \"De gemeente sluit volgende week de Dorpsstraat voor verkeer, omdat er een nieuwe riolering komt. Automobilisten kunnen omrijden via de ringweg. De werkzaamheden duren drie weken. Winkeliers vrezen dat er minder klanten komen.\""
+       },
+       {
+        "v": "Welke woorden in het fragment helpen je de volgorde van de stappen te onthouden?",
+        "o": [
+         "drie dingen en deadline",
+         "werkstuk en tekst",
+         "vrijdag en vijf dagen",
+         "eerst, daarna, tot slot"
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 2,
+        "u": "Eerst, daarna, tot slot: volgorde.",
+        "uo": [
+         "Koos je \"drie dingen en deadline\"? Dan denk je dat deze woorden de volgorde geven. Ze noemen hoeveel en wanneer, niet de volgorde.",
+         "Koos je \"werkstuk en tekst\"? Dan denk je dat deze woorden de volgorde geven. Ze noemen het onderwerp, niet de volgorde.",
+         "Koos je \"vrijdag en vijf dagen\"? Dan denk je dat deze woorden de volgorde geven. Ze noemen een tijdstip, niet de volgorde van de stappen.",
+         "Klopt: eerst, daarna en tot slot geven de volgorde van de stappen aan."
+        ],
+        "uh": "Welke woorden tellen?",
+        "ctx": "Een docent legt uit: \"Voor je werkstuk heb je drie dingen nodig. Eerst kies je een onderwerp. Daarna zoek je bronnen. Tot slot schrijf je de tekst. Het belangrijkste is dat je op tijd begint, want de deadline is vrijdag, en dat is al over vijf dagen.\""
+       }
+      ],
+      "oe": [
+       {
+        "bron": "Examenstijl",
+        "ctx": "Omroep op school: \"Let op, allemaal. Morgen is er geen les in de eerste twee uur, omdat de docenten een vergadering hebben. De lessen beginnen om kwart voor tien. Neem je boeken mee. Het weer is morgen trouwens zonnig, dus het schoolplein is open.\"",
+        "v": "Noem de hoofdzaak en één bijzaak van de omroep en leg uit waarom.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Hoofdzaak: de lessen beginnen om kwart voor tien (1p), want dat moeten alle leerlingen weten (1p). Bijzaak: het weer is zonnig (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een presentator vertelt in een podcast: \"Vorige week ben ik naar de dierentuin geweest. Het was druk, ik had mijn regenjas aan en de kaartjes waren duur. Het mooiste was het nieuwe verblijf van de olifanten: zij hebben nu veel meer ruimte. Dat vind ik het belangrijkste nieuws van het park.\"",
+        "v": "Schrijf de kernboodschap van de podcast in één zin.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "De olifanten in de dierentuin hebben een nieuw, ruimer verblijf (2p). Dat is het belangrijkste nieuws volgens de presentator (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een docent legt uit: \"Voor je werkstuk heb je drie dingen nodig. Eerst kies je een onderwerp. Daarna zoek je bronnen. Tot slot schrijf je de tekst. Het belangrijkste is dat je op tijd begint, want de deadline is vrijdag, en dat is al over vijf dagen.\"",
+        "v": "Welke drie stappen noemt de docent en wat vindt hij het belangrijkste?",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Onderwerp kiezen, bronnen zoeken en tekst schrijven (2p). Het belangrijkste is op tijd beginnen (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een nieuwslezer meldt: \"De gemeente sluit volgende week de Dorpsstraat voor verkeer, omdat er een nieuwe riolering komt. Automobilisten kunnen omrijden via de ringweg. De werkzaamheden duren drie weken. Winkeliers vrezen dat er minder klanten komen.\"",
+        "v": "Schrijf een samenvatting van het nieuwsbericht in één zin. Welke informatie laat je weg?",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Volgende week is de Dorpsstraat drie weken dicht voor een nieuwe riolering (2p). Weggelaten: de zorgen van de winkeliers (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een reclame op de radio zegt: \"Wil je fit blijven? Kom dan naar Sportcentrum Oost! Ruime zalen, leuke lessen en de eerste maand helemaal gratis. Meld je nu aan en krijg een gratis waterfles. Alleen deze week!\"",
+        "v": "Wat is de hoofdzaak van de reclame en wat is een extraatje om je over te halen?",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Hoofdzaak: meld je aan bij het sportcentrum (1p). Extraatje: de eerste maand gratis of de gratis waterfles (1p). Alleen deze week zet je onder druk (1p)."
+       }
+      ]
      }
     ]
    },
