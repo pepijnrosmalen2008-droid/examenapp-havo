@@ -1,0 +1,665 @@
+{
+ "id": "A4",
+ "lo": "nl.A.4",
+ "gs": 2,
+ "naam": "Standpunt en argumenten herkennen",
+ "beschrijving": "Je luistert naar een discussie of een praatje en vindt het standpunt, de argumenten, de bezwaren en de oproep, ook in een gesprek tussen twee mensen.",
+ "ceStatus": "SE",
+ "binas": "",
+ "val": "",
+ "onderwerpen": [
+  "Het standpunt vinden",
+  "Argumenten herkennen",
+  "Bezwaren en antwoorden erop",
+  "Signaalwoorden luisteren",
+  "Standpunten in een discussie"
+ ],
+ "sam": "Een standpunt is een mening die iemand verdedigt, vaak met ik vind dat of moet. Een argument is een reden waarom het standpunt klopt en wordt vaak ingeleid met want of omdat, soms met een voorbeeld. Een tegenargument is een bezwaar, en een goede spreker erkent het en geeft een antwoord. In een oproep zegt de spreker wat jij moet doen. In een discussie hebben twee mensen vaak tegengestelde standpunten met eigen argumenten.",
+ "begrippen": [
+  {
+   "t": "Standpunt",
+   "d": "De mening die iemand verdedigt."
+  },
+  {
+   "t": "Argument",
+   "d": "Een reden waarom het standpunt klopt."
+  },
+  {
+   "t": "Tegenargument",
+   "d": "Een bezwaar tegen een standpunt."
+  },
+  {
+   "t": "Weerlegging",
+   "d": "Een antwoord waarmee je een bezwaar kleiner maakt."
+  },
+  {
+   "t": "Oproep",
+   "d": "Een zin die zegt wat jij moet doen."
+  },
+  {
+   "t": "Voorbeeld",
+   "d": "Een geval dat laat zien dat een argument klopt."
+  },
+  {
+   "t": "Signaalwoord",
+   "d": "Een woord dat laat horen wat voor zin er komt, zoals want of maar."
+  },
+  {
+   "t": "Discussie",
+   "d": "Een gesprek waarin mensen verschillende meningen hebben."
+  },
+  {
+   "t": "Conclusie",
+   "d": "De slotzin die zegt waar je op uitkomt."
+  },
+  {
+   "t": "Erkennen",
+   "d": "Zeggen dat een bezwaar klopt, voor je antwoordt."
+  },
+  {
+   "t": "Mening",
+   "d": "Een persoonlijk oordeel dat je niet kunt bewijzen."
+  },
+  {
+   "t": "Feit",
+   "d": "Iets wat je kunt controleren."
+  }
+ ],
+ "sv": [
+  {
+   "v": "Welke zin is een standpunt?",
+   "o": [
+    "\"De school begint om half negen.\"",
+    "\"Scholen moeten later beginnen.\"",
+    "\"Er zijn achthonderd leerlingen.\"",
+    "\"Het is dinsdag.\""
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 0,
+   "u": "Een standpunt is een mening die je verdedigt.",
+   "uo": [
+    "Koos je \"De school begint om half negen.\"? Dan denk je dat dit een standpunt is. Het is een feit, en daar kun je niet over discussiëren.",
+    "Klopt: dit is een mening waar je het mee eens of oneens kunt zijn.",
+    "Koos je \"Er zijn achthonderd leerlingen.\"? Dan denk je dat dit een standpunt is. Dit is een aantal, dus een feit.",
+    "Koos je \"Het is dinsdag.\"? Dan denk je dat dit een standpunt is. Het meldt gewoon een dag, en is dus een feit."
+   ],
+   "uh": "Kun je het oneens zijn?"
+  },
+  {
+   "v": "Welke zin is een argument voor het standpunt \"Je moet meer water drinken\"?",
+   "o": [
+    "\"Ik drink graag thee.\"",
+    "\"Water is doorzichtig.\"",
+    "\"Het regent vandaag.\"",
+    "\"Water is gezond.\""
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 1,
+   "u": "Een argument zegt waarom je standpunt klopt.",
+   "uo": [
+    "Koos je \"Ik drink graag thee.\"? Dan denk je dat dit een argument is. Het gaat over iets anders, en ondersteunt het standpunt niet.",
+    "Koos je \"Water is doorzichtig.\"? Dan denk je dat dit een argument is. Het is een feit, maar geen reden voor het standpunt.",
+    "Koos je \"Het regent vandaag.\"? Dan denk je dat dit een argument is. Het heeft niets met drinken te maken, dus het ondersteunt niets.",
+    "Klopt: dit is een reden die het standpunt ondersteunt."
+   ],
+   "uh": "Geeft het een reden?"
+  },
+  {
+   "v": "Welke zin is het standpunt van Lisa?",
+   "o": [
+    "\"Ik vind dat we gezond eten moeten krijgen.\"",
+    "\"Een gezonde lunch geeft energie voor de middag.\"",
+    "\"Gezond eten is duurder.\"",
+    "\"De school kan de prijs van de lunch laag houden.\""
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 0,
+   "u": "Zoek zinnen met \"ik vind\" of \"moet\".",
+   "uo": [
+    "Klopt: dit is wat Lisa wil bereiken, en ze zegt het met \"ik vind dat\".",
+    "Koos je \"Een gezonde lunch geeft energie voor de middag.\"? Dan denk je dat dit het standpunt is. Het is een reden, dus een argument.",
+    "Koos je \"Gezond eten is duurder.\"? Dan denk je dat dit het standpunt is. Het is een bezwaar, dus een tegenargument.",
+    "Koos je \"De school kan de prijs van de lunch laag houden.\"? Dan denk je dat dit het standpunt is. Het is een antwoord op een bezwaar, dus een weerlegging."
+   ],
+   "uh": "Wat wil Lisa?",
+   "ctx": "In een klassendebat zegt Lisa: \"Ik vind dat we een kantine met gezond eten moeten krijgen. Een gezonde lunch geeft energie voor de middag. Ook leren leerlingen zo wat goed voor ze is. Natuurlijk is gezond eten duurder, maar de school kan de prijs laag houden.\""
+  },
+  {
+   "v": "Welk argument noemt Lisa voor haar standpunt?",
+   "o": [
+    "gezond eten is duurder voor de school",
+    "de school kan de prijs laag houden",
+    "een gezonde lunch geeft energie",
+    "Lisa zit in de klas bij het debat"
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 1,
+   "u": "Een argument zegt waarom.",
+   "uo": [
+    "Koos je \"gezond eten is duurder voor de school\"? Dan denk je dat dit een argument voor haar standpunt is. Het is juist een bezwaar, dus een tegenargument.",
+    "Koos je \"de school kan de prijs laag houden\"? Dan denk je dat dit een argument is. Het is een antwoord op een bezwaar, dus een weerlegging.",
+    "Klopt: dit is een reden voor gezond eten, en een reden is een argument.",
+    "Koos je \"Lisa zit in de klas bij het debat\"? Dan denk je dat dit een argument is. Het zegt niets over gezond eten, dus het is geen argument."
+   ],
+   "uh": "Waarom wil Lisa dit?",
+   "ctx": "In een klassendebat zegt Lisa: \"Ik vind dat we een kantine met gezond eten moeten krijgen. Een gezonde lunch geeft energie voor de middag. Ook leren leerlingen zo wat goed voor ze is. Natuurlijk is gezond eten duurder, maar de school kan de prijs laag houden.\""
+  },
+  {
+   "v": "Welk tegenargument noemt Lisa zelf?",
+   "o": [
+    "een gezonde lunch geeft energie",
+    "leerlingen leren wat goed voor ze is",
+    "gezond eten is duurder",
+    "ze vindt dat er een kantine moet komen"
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 2,
+   "u": "Een tegenargument is een bezwaar.",
+   "uo": [
+    "Koos je \"een gezonde lunch geeft energie\"? Dan denk je dat dit een tegenargument is. Het ondersteunt haar standpunt, dus het is een argument.",
+    "Koos je \"leerlingen leren wat goed voor ze is\"? Dan denk je dat dit een tegenargument is. Het ondersteunt haar standpunt, dus het is een argument.",
+    "Klopt: dit is een bezwaar tegen haar standpunt.",
+    "Koos je \"ze vindt dat er een kantine moet komen\"? Dan denk je dat dit een tegenargument is. Het is haar standpunt, dus geen bezwaar."
+   ],
+   "uh": "Wat zegt de tegenstander?",
+   "ctx": "In een klassendebat zegt Lisa: \"Ik vind dat we een kantine met gezond eten moeten krijgen. Een gezonde lunch geeft energie voor de middag. Ook leren leerlingen zo wat goed voor ze is. Natuurlijk is gezond eten duurder, maar de school kan de prijs laag houden.\""
+  },
+  {
+   "v": "Welk signaalwoord leidt vaak een argument in?",
+   "o": [
+    "want",
+    "maar, het woord voor een bezwaar",
+    "dus, het woord voor een gevolg",
+    "toch, het woord voor een tegenstelling"
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 3,
+   "u": "\"Want\" en \"omdat\" leiden een argument in.",
+   "uo": [
+    "Klopt: \"want\" geeft de reden voor een standpunt.",
+    "Koos je \"maar, het woord voor een bezwaar\"? Dan denk je dat \"maar\" een argument inleidt. \"Maar\" geeft een tegenstelling, dus een bezwaar of antwoord.",
+    "Koos je \"dus, het woord voor een gevolg\"? Dan denk je dat \"dus\" een argument inleidt. \"Dus\" leidt een gevolg of conclusie in, dat is het omgekeerde.",
+    "Koos je \"toch, het woord voor een tegenstelling\"? Dan denk je dat \"toch\" een argument inleidt. \"Toch\" laat een tegenstelling horen, en geeft geen reden."
+   ],
+   "uh": "Welk woord geeft een reden?"
+  },
+  {
+   "v": "Welk standpunt heeft de vlogger?",
+   "o": [
+    "zijn zusje kreeg een onvoldoende",
+    "je let dan minder op",
+    "hij heeft een vlog",
+    "geen telefoon in de les"
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 0,
+   "u": "Standpunt: wat hij vindt dat moet.",
+   "uo": [
+    "Koos je \"zijn zusje kreeg een onvoldoende\"? Dan denk je dat dit het standpunt is. Het is een voorbeeld, geen standpunt.",
+    "Koos je \"je let dan minder op\"? Dan denk je dat dit het standpunt is. Het is een argument, geen standpunt.",
+    "Koos je \"hij heeft een vlog\"? Dan denk je dat dit het standpunt is. Het is een feit over hem, en geen standpunt.",
+    "Klopt: hij zegt het zelf met \"ik vind dat\", dus het is zijn standpunt."
+   ],
+   "uh": "Wat vindt hij dat moet?",
+   "ctx": "Een vlogger zegt: \"Ik vind dat je geen telefoon in de les moet hebben. Je let dan minder op. Mijn zusje zat laatst de hele les te appen en kreeg een onvoldoende. Daarom zeg ik: leg je telefoon weg!\""
+  },
+  {
+   "v": "Welk argument geeft de vlogger voor zijn standpunt?",
+   "o": [
+    "hij heeft een zusje",
+    "je let dan minder op",
+    "leg je telefoon weg",
+    "hij vindt dat je geen telefoon moet hebben"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 1,
+   "u": "Een argument zegt waarom.",
+   "uo": [
+    "Koos je \"hij heeft een zusje\"? Dan denk je dat dit een argument is. Het is een gegeven, en geen reden.",
+    "Klopt: dit is een reden waarom telefoons weg moeten.",
+    "Koos je \"leg je telefoon weg\"? Dan denk je dat dit een argument is. Het is een oproep, geen reden.",
+    "Koos je \"hij vindt dat je geen telefoon moet hebben\"? Dan denk je dat dit een argument is. Het is zijn standpunt, geen reden."
+   ],
+   "uh": "Waarom vindt hij dat?",
+   "ctx": "Een vlogger zegt: \"Ik vind dat je geen telefoon in de les moet hebben. Je let dan minder op. Mijn zusje zat laatst de hele les te appen en kreeg een onvoldoende. Daarom zeg ik: leg je telefoon weg!\""
+  },
+  {
+   "v": "Welk voorbeeld gebruikt de vlogger om zijn argument te ondersteunen?",
+   "o": [
+    "je let dan minder op tijdens de les",
+    "ik vind dat je geen telefoon moet hebben",
+    "leg je telefoon weg en doe hem uit",
+    "zijn zusje kreeg een onvoldoende"
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 1,
+   "u": "Een voorbeeld maakt een argument sterker.",
+   "uo": [
+    "Koos je \"je let dan minder op tijdens de les\"? Dan denk je dat dit het voorbeeld is. Dit is het argument zelf, het voorbeeld komt daarna.",
+    "Koos je \"ik vind dat je geen telefoon moet hebben\"? Dan denk je dat dit het voorbeeld is. Dit is zijn standpunt, geen voorbeeld.",
+    "Koos je \"leg je telefoon weg en doe hem uit\"? Dan denk je dat dit het voorbeeld is. Dit is zijn oproep, geen voorbeeld.",
+    "Klopt: een voorbeeld laat zien dat het argument klopt."
+   ],
+   "uh": "Welk geval noemt hij?",
+   "ctx": "Een vlogger zegt: \"Ik vind dat je geen telefoon in de les moet hebben. Je let dan minder op. Mijn zusje zat laatst de hele les te appen en kreeg een onvoldoende. Daarom zeg ik: leg je telefoon weg!\""
+  },
+  {
+   "v": "Welke zin is de oproep van de vlogger?",
+   "o": [
+    "\"Je let dan minder op.\"",
+    "\"Leg je telefoon weg!\"",
+    "\"Mijn zusje zat laatst de hele les te appen.\"",
+    "\"Ik vind dat je geen telefoon moet hebben.\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 4,
+   "u": "Een oproep zegt wat jij moet doen.",
+   "uo": [
+    "Koos je \"Je let dan minder op.\"? Dan denk je dat dit de oproep is. Dit is een argument, en geen opdracht.",
+    "Klopt: hij zegt wat de kijkers moeten doen, en dat is een oproep.",
+    "Koos je \"Mijn zusje zat laatst de hele les te appen.\"? Dan denk je dat dit de oproep is. Dit is een voorbeeld, geen opdracht.",
+    "Koos je \"Ik vind dat je geen telefoon moet hebben.\"? Dan denk je dat dit de oproep is. Dit is zijn standpunt, de oproep is \"leg je telefoon weg\"."
+   ],
+   "uh": "Wat moet je doen?",
+   "ctx": "Een vlogger zegt: \"Ik vind dat je geen telefoon in de les moet hebben. Je let dan minder op. Mijn zusje zat laatst de hele les te appen en kreeg een onvoldoende. Daarom zeg ik: leg je telefoon weg!\""
+  },
+  {
+   "v": "Welk standpunt verdedigt de wethouder?",
+   "o": [
+    "fietsers en scooters rijden door elkaar",
+    "steeds meer kinderen fietsen naar school",
+    "het fietspad moet breder",
+    "veiligheid gaat voor"
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 0,
+   "u": "Standpunt: wat de wethouder wil.",
+   "uo": [
+    "Koos je \"fietsers en scooters rijden door elkaar\"? Dan denk je dat dit het standpunt is. Het is een situatie, en een argument voor het standpunt.",
+    "Koos je \"steeds meer kinderen fietsen naar school\"? Dan denk je dat dit het standpunt is. Het is een reden, dus een argument.",
+    "Klopt: hij zegt dat het pad breder moet, en dat is zijn standpunt.",
+    "Koos je \"veiligheid gaat voor\"? Dan denk je dat dit het standpunt is. Het is een afsluitende gedachte, maar het standpunt is het bredere pad."
+   ],
+   "uh": "Wat moet er veranderen?",
+   "ctx": "Een wethouder zegt in een interview: \"Het fietspad in de Molenstraat moet breder. Nu rijden fietsers en scooters door elkaar en dat is gevaarlijk. Bovendien fietsen steeds meer kinderen naar school. Een breder pad kost geld, maar veiligheid gaat voor.\""
+  },
+  {
+   "v": "Welke twee argumenten noemt de wethouder?",
+   "o": [
+    "gevaarlijk en meer kinderen fietsen",
+    "het kost geld en het pad is breed",
+    "het is gevaarlijk en het kost geld",
+    "er fietsen veel kinderen en het pad is mooi"
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 1,
+   "u": "Twee redenen: gevaar en meer fietsers.",
+   "uo": [
+    "Klopt: dit zijn twee redenen voor een breder pad.",
+    "Koos je \"het kost geld en het pad is breed\"? Dan denk je dat deze argumenten zijn. Het kost geld is een bezwaar, en het pad is juist te smal.",
+    "Koos je \"het is gevaarlijk en het kost geld\"? Dan denk je dat \"kost geld\" een argument voor een breder pad is. Het is een bezwaar, dus een tegenargument.",
+    "Koos je \"er fietsen veel kinderen en het pad is mooi\"? Dan denk je dat het pad mooi wordt genoemd. Dat staat er niet, er staat dat het gevaarlijk is."
+   ],
+   "uh": "Welke redenen noemt hij?",
+   "ctx": "Een wethouder zegt in een interview: \"Het fietspad in de Molenstraat moet breder. Nu rijden fietsers en scooters door elkaar en dat is gevaarlijk. Bovendien fietsen steeds meer kinderen naar school. Een breder pad kost geld, maar veiligheid gaat voor.\""
+  },
+  {
+   "v": "Welk tegenargument noemt de wethouder zelf?",
+   "o": [
+    "een breder pad kost geld",
+    "het is gevaarlijk",
+    "veiligheid gaat voor",
+    "steeds meer kinderen fietsen"
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 2,
+   "u": "Tegenargument: een bezwaar tegen het standpunt.",
+   "uo": [
+    "Klopt: dit is een bezwaar tegen zijn standpunt.",
+    "Koos je \"het is gevaarlijk\"? Dan denk je dat het gevaar een bezwaar is. Het gevaar is juist de reden voor een breder pad, dus het steunt de wethouder.",
+    "Koos je \"veiligheid gaat voor\"? Dan denk je dat dit het bezwaar is. Hij zegt dit als antwoord op het bezwaar, daarom is het een weerlegging.",
+    "Koos je \"steeds meer kinderen fietsen\"? Dan denk je dat dit tegen het standpunt pleit. Meer fietsende kinderen maken een breder pad juist nodig, dus het is een argument."
+   ],
+   "uh": "Wat is het nadeel?",
+   "ctx": "Een wethouder zegt in een interview: \"Het fietspad in de Molenstraat moet breder. Nu rijden fietsers en scooters door elkaar en dat is gevaarlijk. Bovendien fietsen steeds meer kinderen naar school. Een breder pad kost geld, maar veiligheid gaat voor.\""
+  },
+  {
+   "v": "Wat antwoordt de wethouder op het bezwaar dat het geld kost?",
+   "o": [
+    "het pad blijft zoals het is",
+    "het kost niets",
+    "veiligheid gaat voor",
+    "dat weet hij niet"
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 2,
+   "u": "Een weerlegging beantwoordt het bezwaar.",
+   "uo": [
+    "Koos je \"het pad blijft zoals het is\"? Dan denk je dat hij het bezwaar overneemt. Hij houdt zijn standpunt vol, dus hij wil nog steeds een breder pad.",
+    "Koos je \"het kost niets\"? Dan denk je dat hij het bezwaar ontkent. Hij erkent dat het geld kost, en zegt dat veiligheid zwaarder weegt.",
+    "Klopt: hij vindt veiligheid belangrijker dan de kosten.",
+    "Koos je \"dat weet hij niet\"? Dan denk je dat hij het niet weet. Hij geeft een duidelijk antwoord, en noemt veiligheid."
+   ],
+   "uh": "Wat zegt hij na \"maar\"?",
+   "ctx": "Een wethouder zegt in een interview: \"Het fietspad in de Molenstraat moet breder. Nu rijden fietsers en scooters door elkaar en dat is gevaarlijk. Bovendien fietsen steeds meer kinderen naar school. Een breder pad kost geld, maar veiligheid gaat voor.\""
+  },
+  {
+   "v": "Welk standpunt heeft Bas?",
+   "o": [
+    "hij heeft veel tijd voor sport",
+    "huiswerk afschaffen",
+    "huiswerk is leuk",
+    "Emma heeft gelijk"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 4,
+   "u": "Standpunt: wat hij wil.",
+   "uo": [
+    "Koos je \"hij heeft veel tijd voor sport\"? Dan denk je dat dit het standpunt is. Het is zijn argument, geen standpunt.",
+    "Klopt: dit zegt Bas in de eerste zin, en dat is zijn standpunt.",
+    "Koos je \"huiswerk is leuk\"? Dan denk je dat Bas dit vindt. Hij vindt huiswerk juist lastig, en wil het afschaffen.",
+    "Koos je \"Emma heeft gelijk\"? Dan denk je dat dit het standpunt van Bas is. Hij zegt het niet, en dit is Emma's kant."
+   ],
+   "uh": "Wat wil Bas?",
+   "ctx": "Bas zegt in een discussie: \"Huiswerk moet worden afgeschaft, want ik heb er te weinig tijd voor sport.\" Emma antwoordt: \"Dat vind ik niet. Door huiswerk oefen je de stof en haal je betere cijfers.\""
+  },
+  {
+   "v": "Welk argument gebruikt Emma tegen het afschaffen van huiswerk?",
+   "o": [
+    "ze heeft te weinig tijd voor sport en hobby",
+    "huiswerk is leuk",
+    "huiswerk is verboden",
+    "je oefent en haalt betere cijfers"
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 4,
+   "u": "Emma geeft een argument tegen Bas.",
+   "uo": [
+    "Koos je \"ze heeft te weinig tijd voor sport en hobby\"? Dan denk je dat dit Emma's argument is. Het is het argument van Bas, niet van Emma.",
+    "Koos je \"huiswerk is leuk\"? Dan denk je dat Emma huiswerk leuk vindt. Dat zegt ze niet, ze noemt alleen het nut ervan.",
+    "Koos je \"huiswerk is verboden\"? Dan denk je dat Emma zich op een regel beroept. Een regel noemt ze niet, ze noemt oefenen en cijfers.",
+    "Klopt: dit is haar reden tegen Bas en het is dus haar argument."
+   ],
+   "uh": "Waarom vindt zij dat?",
+   "ctx": "Bas zegt in een discussie: \"Huiswerk moet worden afgeschaft, want ik heb er te weinig tijd voor sport.\" Emma antwoordt: \"Dat vind ik niet. Door huiswerk oefen je de stof en haal je betere cijfers.\""
+  },
+  {
+   "v": "Waarom zijn Bas en Emma het oneens?",
+   "o": [
+    "ze hebben hetzelfde standpunt",
+    "tegengestelde standpunten",
+    "ze praten over een ander onderwerp",
+    "ze geven geen argumenten"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 0,
+   "u": "Oneens: tegengestelde standpunten.",
+   "uo": [
+    "Koos je \"ze hebben hetzelfde standpunt\"? Dan denk je dat ze het eens zijn. Emma zegt \"dat vind ik niet\", dus ze zijn het oneens.",
+    "Klopt: de één wil huiswerk weg, de ander wil het houden.",
+    "Koos je \"ze praten over een ander onderwerp\"? Dan denk je dat ze elkaar niet begrijpen. Ze praten over huiswerk, maar vinden er iets anders van.",
+    "Koos je \"ze geven geen argumenten\"? Dan denk je dat er geen argumenten zijn. Beiden geven een reden, dus er zijn argumenten."
+   ],
+   "uh": "Willen ze hetzelfde?",
+   "ctx": "Bas zegt in een discussie: \"Huiswerk moet worden afgeschaft, want ik heb er te weinig tijd voor sport.\" Emma antwoordt: \"Dat vind ik niet. Door huiswerk oefen je de stof en haal je betere cijfers.\""
+  },
+  {
+   "v": "Welk standpunt heeft de presentator aan het eind?",
+   "o": [
+    "kijk eerst in de winkel",
+    "veel jongeren kopen kleren online",
+    "online passen is handig",
+    "terugsturen kost tijd"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 2,
+   "u": "Zijn conclusie is zijn standpunt.",
+   "uo": [
+    "Klopt: dit noemt hij zijn conclusie en dat is wat hij vindt.",
+    "Koos je \"veel jongeren kopen kleren online\"? Dan denk je dat dit zijn standpunt is. Dit is een feit, en geen standpunt.",
+    "Koos je \"online passen is handig\"? Dan denk je dat dit zijn standpunt is. Dit is een argument voor online kopen, maar hij kiest uiteindelijk iets anders.",
+    "Koos je \"terugsturen kost tijd\"? Dan denk je dat dit zijn standpunt is. Dit is een nadeel, dus een argument voor zijn conclusie."
+   ],
+   "uh": "Wat zegt hij aan het eind?",
+   "ctx": "Een presentator zegt op de radio: \"Veel jongeren kopen kleren online. Dat is handig, want je kunt thuis passen. Toch zijn er ook nadelen: je ziet de kleding niet echt en terugsturen kost tijd. Mijn conclusie: kijk eerst in de winkel.\""
+  },
+  {
+   "v": "Welke twee argumenten ondersteunen de conclusie \"kijk eerst in de winkel\"?",
+   "o": [
+    "handig en thuis kunnen passen en kopen",
+    "veel jongeren kopen kleren online nu",
+    "hij vindt het een goed idee om online te kopen",
+    "nadelen: niet zien en terugsturen"
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 1,
+   "u": "Nadelen van online kopen steunen de conclusie.",
+   "uo": [
+    "Koos je \"handig en thuis kunnen passen en kopen\"? Dan denk je dat deze argumenten de conclusie steunen. Ze steunen online kopen, en gaan dus tegen zijn conclusie in.",
+    "Koos je \"veel jongeren kopen kleren online nu\"? Dan denk je dat dit een argument is. Het is een feit, en geen reden voor de conclusie.",
+    "Koos je \"hij vindt het een goed idee om online te kopen\"? Dan denk je dat dit een argument is. Het is zijn mening, en geen reden.",
+    "Klopt: dit zijn twee nadelen van online kopen."
+   ],
+   "uh": "Welke nadelen noemt hij?",
+   "ctx": "Een presentator zegt op de radio: \"Veel jongeren kopen kleren online. Dat is handig, want je kunt thuis passen. Toch zijn er ook nadelen: je ziet de kleding niet echt en terugsturen kost tijd. Mijn conclusie: kijk eerst in de winkel.\""
+  },
+  {
+   "v": "Welke zin in het fragment is een tegenargument tegen zijn conclusie?",
+   "o": [
+    "\"Je ziet de kleding niet echt, zegt hij.\"",
+    "\"Terugsturen kost tijd en moeite voor je.\"",
+    "\"Handig, want je kunt thuis passen.\"",
+    "\"Kijk eerst in de winkel, vindt hij.\""
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 2,
+   "u": "Een tegenargument pleit voor het tegendeel.",
+   "uo": [
+    "Koos je \"Je ziet de kleding niet echt, zegt hij.\"? Dan denk je dat dit een bezwaar is dat hij weerlegt. Het is juist een nadeel van online kopen, dat zijn conclusie steunt.",
+    "Koos je \"Terugsturen kost tijd en moeite voor je.\"? Dan denk je dat dit tegen de conclusie pleit. Terugsturen kost tijd, en dat is ook een nadeel van online.",
+    "Klopt: dit pleit voor online kopen, tegen zijn conclusie in.",
+    "Koos je \"Kijk eerst in de winkel, vindt hij.\"? Dan denk je dat de conclusie zelf een bezwaar is. Het is zijn standpunt, en dus geen tegenargument."
+   ],
+   "uh": "Pleit het voor of tegen de conclusie?",
+   "ctx": "Een presentator zegt op de radio: \"Veel jongeren kopen kleren online. Dat is handig, want je kunt thuis passen. Toch zijn er ook nadelen: je ziet de kleding niet echt en terugsturen kost tijd. Mijn conclusie: kijk eerst in de winkel.\""
+  },
+  {
+   "v": "Welke signaalwoorden laten horen dat er een tegenstelling komt?",
+   "o": [
+    "\"Veel\" en \"jongeren\" aan het begin",
+    "\"want\" en \"dat is handig\"",
+    "\"Toch\" en \"ook nadelen\"",
+    "\"online\" en \"kleren\" in de zin"
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 3,
+   "u": "\"Toch\" en \"maar\" kondigen een tegenstelling aan.",
+   "uo": [
+    "Koos je \"Veel en jongeren aan het begin\"? Dan denk je dat deze woorden een tegenstelling aankondigen. Het zijn gewone woorden, zonder signaalfunctie.",
+    "Koos je \"want en dat is handig\"? Dan denk je dat deze woorden een tegenstelling aankondigen. \"Want\" kondigt een reden aan, geen tegenstelling.",
+    "Klopt: \"toch\" kondigt aan dat er een andere kant of bezwaar komt.",
+    "Koos je \"online en kleren in de zin\"? Dan denk je dat deze woorden een tegenstelling aankondigen. Het zijn zelfstandige naamwoorden, geen signaalwoorden."
+   ],
+   "uh": "Welk woord draait de zin om?",
+   "ctx": "Een presentator zegt op de radio: \"Veel jongeren kopen kleren online. Dat is handig, want je kunt thuis passen. Toch zijn er ook nadelen: je ziet de kleding niet echt en terugsturen kost tijd. Mijn conclusie: kijk eerst in de winkel.\""
+  },
+  {
+   "v": "Welke woorden laten horen dat Lisa een standpunt geeft?",
+   "o": [
+    "\"kantine\" en \"gezond eten\"",
+    "\"een\" en \"met\" aan het begin van de zin",
+    "\"krijgen\" aan het eind van de zin",
+    "\"ik vind dat\" en \"moeten\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 0,
+   "u": "Standpunt: ik vind dat, moet, zou moeten.",
+   "uo": [
+    "Koos je \"kantine en gezond eten\"? Dan denk je dat deze woorden het standpunt verraden. Ze noemen het onderwerp, de signalen zijn \"ik vind dat\" en \"moeten\".",
+    "Koos je \"een en met aan het begin van de zin\"? Dan denk je dat deze woorden het standpunt verraden. Het zijn kleine woordjes, zonder signaalfunctie.",
+    "Koos je \"krijgen aan het eind van de zin\"? Dan denk je dat dit werkwoord het standpunt verraadt. Het werkwoord alleen zegt niets, de signalen zijn \"ik vind dat\" en \"moeten\".",
+    "Klopt: samen laten ze zien dat zij een mening geeft."
+   ],
+   "uh": "Welke woorden laten een mening horen?",
+   "ctx": "In een klassendebat zegt Lisa: \"Ik vind dat we een kantine met gezond eten moeten krijgen. Een gezonde lunch geeft energie voor de middag. Ook leren leerlingen zo wat goed voor ze is. Natuurlijk is gezond eten duurder, maar de school kan de prijs laag houden.\""
+  },
+  {
+   "v": "Lisa noemt twee argumenten. Welke zin kondigt het tweede argument aan?",
+   "o": [
+    "\"Ook leren leerlingen wat goed is.\"",
+    "\"Een gezonde lunch geeft energie.\"",
+    "\"Natuurlijk is gezond eten duurder.\"",
+    "\"De school kan de prijs laag houden.\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 1,
+   "u": "\"Ook\" voegt een extra argument toe.",
+   "uo": [
+    "Klopt: \"ook\" voegt een tweede reden toe aan de eerste reden.",
+    "Koos je \"Een gezonde lunch geeft energie.\"? Dan denk je dat dit het tweede argument is. Dit is het eerste argument, het tweede komt daarna.",
+    "Koos je \"Natuurlijk is gezond eten duurder.\"? Dan denk je dat dit het tweede argument is. Dit is een tegenargument, geen argument voor haar standpunt.",
+    "Koos je \"De school kan de prijs laag houden.\"? Dan denk je dat dit het tweede argument is. Dit is een antwoord op een bezwaar, dus een weerlegging."
+   ],
+   "uh": "Welk woord voegt iets toe?",
+   "ctx": "In een klassendebat zegt Lisa: \"Ik vind dat we een kantine met gezond eten moeten krijgen. Een gezonde lunch geeft energie voor de middag. Ook leren leerlingen zo wat goed voor ze is. Natuurlijk is gezond eten duurder, maar de school kan de prijs laag houden.\""
+  },
+  {
+   "v": "Hoe gaat Lisa om met het bezwaar dat gezond eten duurder is?",
+   "o": [
+    "ze negeert het bezwaar",
+    "erkennen en antwoord geven",
+    "ze trekt haar standpunt in",
+    "ze zegt dat gezond eten niet duurder is"
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 2,
+   "u": "Erkennen en weerleggen.",
+   "uo": [
+    "Koos je \"ze negeert het bezwaar\"? Dan denk je dat Lisa het bezwaar overslaat. Ze noemt het zelf en reageert erop, dus ze negeert het niet.",
+    "Klopt: ze erkent het bezwaar en weerlegt het.",
+    "Koos je \"ze trekt haar standpunt in\"? Dan denk je dat Lisa haar standpunt opgeeft. Ze houdt vol, en laat zien hoe het kan.",
+    "Koos je \"ze zegt dat gezond eten niet duurder is\"? Dan denk je dat ze het bezwaar ontkent. Ze erkent dat het duurder is, en zegt dat de prijs laag kan blijven."
+   ],
+   "uh": "Wat zegt ze na \"maar\"?",
+   "ctx": "In een klassendebat zegt Lisa: \"Ik vind dat we een kantine met gezond eten moeten krijgen. Een gezonde lunch geeft energie voor de middag. Ook leren leerlingen zo wat goed voor ze is. Natuurlijk is gezond eten duurder, maar de school kan de prijs laag houden.\""
+  },
+  {
+   "v": "Wie van de twee, Bas of Emma, geeft een argument dat je kunt controleren?",
+   "o": [
+    "Bas: hij heeft te weinig tijd voor sport",
+    "geen van beiden",
+    "beiden even goed",
+    "Emma: oefenen helpt voor betere cijfers"
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 4,
+   "u": "Een argument met feiten is te controleren.",
+   "uo": [
+    "Koos je \"Bas: hij heeft te weinig tijd voor sport\"? Dan denk je dat dit controleerbaar is. Het is zijn eigen gevoel, en niemand anders kan het nagaan.",
+    "Koos je \"geen van beiden\"? Dan denk je dat geen argument te controleren is. Het argument van Emma kun je controleren, met cijfers.",
+    "Koos je \"beiden even goed\"? Dan denk je dat beide argumenten even controleerbaar zijn. Emma's argument kun je met cijfers nagaan, dat van Bas niet.",
+    "Klopt: je kunt vergelijken of oefenen betere cijfers geeft."
+   ],
+   "uh": "Kun je het nagaan?",
+   "ctx": "Bas zegt in een discussie: \"Huiswerk moet worden afgeschaft, want ik heb er te weinig tijd voor sport.\" Emma antwoordt: \"Dat vind ik niet. Door huiswerk oefen je de stof en haal je betere cijfers.\""
+  },
+  {
+   "v": "Welk stuk van wat de wethouder zegt is een feit en welk stuk een standpunt?",
+   "o": [
+    "feit: scooters en fietsers; standpunt: breder pad",
+    "feit: het pad moet breder; standpunt: veiligheid gaat voor",
+    "feit: veiligheid gaat voor; standpunt: het pad is gevaarlijk",
+    "alles is een feit"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 0,
+   "u": "Feit: te zien. Standpunt: wat hij wil.",
+   "uo": [
+    "Klopt: het eerste kun je zien, het tweede is wat hij wil.",
+    "Koos je \"feit: het pad moet breder; standpunt: veiligheid...\"? Dan denk je dat het omgekeerd is. \"Moet breder\" is zijn standpunt, en geen feit.",
+    "Koos je \"feit: veiligheid gaat voor; standpunt: het pad is...\"? Dan denk je dat deze verdeling klopt. \"Gaat voor\" is een oordeel, geen feit.",
+    "Koos je \"alles is een feit\"? Dan denk je dat alle zinnen feiten zijn. \"Het pad moet breder\" is een standpunt, en \"gaat voor\" een oordeel."
+   ],
+   "uh": "Wat kun je zien, wat wil hij?",
+   "ctx": "Een wethouder zegt in een interview: \"Het fietspad in de Molenstraat moet breder. Nu rijden fietsers en scooters door elkaar en dat is gevaarlijk. Bovendien fietsen steeds meer kinderen naar school. Een breder pad kost geld, maar veiligheid gaat voor.\""
+  }
+ ],
+ "oe": [
+  {
+   "bron": "Examenstijl",
+   "ctx": "In een klassendebat zegt Lisa: \"Ik vind dat we een kantine met gezond eten moeten krijgen. Een gezonde lunch geeft energie voor de middag. Ook leren leerlingen zo wat goed voor ze is. Natuurlijk is gezond eten duurder, maar de school kan de prijs laag houden.\"",
+   "v": "Noem het standpunt van Lisa, één argument en het bezwaar dat zij zelf noemt.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Standpunt: we moeten een kantine met gezond eten krijgen (1p). Argument: een gezonde lunch geeft energie of leerlingen leren wat goed voor ze is (1p). Bezwaar: gezond eten is duurder (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een wethouder zegt in een interview: \"Het fietspad in de Molenstraat moet breder. Nu rijden fietsers en scooters door elkaar en dat is gevaarlijk. Bovendien fietsen steeds meer kinderen naar school. Een breder pad kost geld, maar veiligheid gaat voor.\"",
+   "v": "Welke twee argumenten noemt de wethouder en hoe gaat hij om met het bezwaar?",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Het is gevaarlijk en er fietsen meer kinderen naar school (2p). Hij erkent dat het geld kost en zegt dat veiligheid voorgaat (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een vlogger zegt: \"Ik vind dat je geen telefoon in de les moet hebben. Je let dan minder op. Mijn zusje zat laatst de hele les te appen en kreeg een onvoldoende. Daarom zeg ik: leg je telefoon weg!\"",
+   "v": "Noem het standpunt, het argument, het voorbeeld en de oproep van de vlogger.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Standpunt: geen telefoon in de les (1p). Argument: je let dan minder op (1p). Voorbeeld: zijn zusje kreeg een onvoldoende (1p). Oproep: leg je telefoon weg (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Bas zegt in een discussie: \"Huiswerk moet worden afgeschaft, want ik heb er te weinig tijd voor sport.\" Emma antwoordt: \"Dat vind ik niet. Door huiswerk oefen je de stof en haal je betere cijfers.\"",
+   "v": "Welke standpunten hebben Bas en Emma en welke argumenten gebruiken ze?",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Bas wil huiswerk afschaffen, want hij heeft te weinig tijd voor sport (2p). Emma wil het houden, want je oefent de stof en haalt betere cijfers (2p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een presentator zegt op de radio: \"Veel jongeren kopen kleren online. Dat is handig, want je kunt thuis passen. Toch zijn er ook nadelen: je ziet de kleding niet echt en terugsturen kost tijd. Mijn conclusie: kijk eerst in de winkel.\"",
+   "v": "Wat is de conclusie van de presentator en welke twee argumenten ondersteunen die?",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Kijk eerst in de winkel (1p). Je ziet de kleding niet echt (1p). Terugsturen kost tijd (1p)."
+  }
+ ]
+}
