@@ -1,0 +1,643 @@
+{
+ "id": "A3",
+ "lo": "nl.A.3",
+ "gs": 2,
+ "naam": "Het doel van de spreker herkennen",
+ "beschrijving": "Je hoort of ziet een tekst en herkent wat de spreker wil: informeren, overtuigen of amuseren. Je let op signalen zoals oproepen, meningen en grapjes.",
+ "ceStatus": "SE",
+ "binas": "",
+ "val": "",
+ "onderwerpen": [
+  "Informeren: feiten en uitleg",
+  "Overtuigen: mening, redenen en oproep",
+  "Amuseren: grapjes en overdrijving",
+  "Signalen waaraan je het doel hoort",
+  "Meer dan één doel in een tekst"
+ ],
+ "sam": "Een spreker heeft een doel. Bij informeren geeft hij feiten en uitleg zonder mening, zoals in nieuws en uitleg. Bij overtuigen geeft hij een mening met redenen en vaak een oproep, zoals in een praatje of reclame. Bij amuseren wil hij je laten lachen, met grapjes, overdrijving en verrassende draaien. Je herkent het doel aan signalen, zoals een oproep, oordeelswoorden of een grap. In één tekst kunnen meerdere doelen voorkomen, dan bepaal je welk doel het belangrijkste is.",
+ "begrippen": [
+  {
+   "t": "Spreekdoel",
+   "d": "Wat de spreker met zijn tekst wil bereiken."
+  },
+  {
+   "t": "Informeren",
+   "d": "Iets uitleggen of vertellen met feiten."
+  },
+  {
+   "t": "Overtuigen",
+   "d": "Iemand proberen te laten denken of doen wat jij wilt."
+  },
+  {
+   "t": "Amuseren",
+   "d": "Het publiek laten lachen of vermaken."
+  },
+  {
+   "t": "Oproep",
+   "d": "Een zin die zegt wat je moet doen, zoals stem op mij."
+  },
+  {
+   "t": "Argument",
+   "d": "Een reden waarmee je een mening onderbouwt."
+  },
+  {
+   "t": "Mening",
+   "d": "Een persoonlijk oordeel dat je niet kunt bewijzen."
+  },
+  {
+   "t": "Overdrijving",
+   "d": "Iets groter of erger maken dan het is."
+  },
+  {
+   "t": "Pointe",
+   "d": "Het verrassende slot van een grap."
+  },
+  {
+   "t": "Reclame",
+   "d": "Een tekst die wil dat je iets koopt."
+  },
+  {
+   "t": "Nieuwsbericht",
+   "d": "Een kort bericht dat meldt wat er gebeurd is."
+  },
+  {
+   "t": "Haast maken",
+   "d": "Laten voelen dat je snel moet beslissen, zoals met op = op."
+  }
+ ],
+ "sv": [
+  {
+   "v": "Welk doel heeft een spreker die iets uitlegt?",
+   "o": [
+    "overtuigen, zodat je het met hem eens bent",
+    "informeren",
+    "amuseren, zodat je lacht",
+    "activeren, zodat je iets koopt"
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 0,
+   "u": "Uitleg wil informeren.",
+   "uo": [
+    "Koos je \"overtuigen, zodat je het met hem eens bent\"? Dan denk je dat uitleg altijd overtuigt. Wie uitlegt, geeft informatie, en wil niet per se je mening veranderen.",
+    "Klopt: wie iets uitlegt, wil je iets laten weten.",
+    "Koos je \"amuseren, zodat je lacht\"? Dan denk je dat uitleg een grap is. Uitleg wil iets laten begrijpen, geen lach opwekken.",
+    "Koos je \"activeren, zodat je iets koopt\"? Dan denk je dat uitleg verkoopt. Uitleg geeft kennis, en vraagt niets van je."
+   ],
+   "uh": "Wil hij iets laten weten?"
+  },
+  {
+   "v": "Welk doel heeft een spreker die jouw mening wil veranderen?",
+   "o": [
+    "informeren, zodat je meer weet",
+    "amuseren, zodat je lacht",
+    "uitleggen hoe iets werkt",
+    "overtuigen"
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 1,
+   "u": "Overtuigen: je mening veranderen.",
+   "uo": [
+    "Koos je \"informeren, zodat je meer weet\"? Dan denk je dat hij je alleen iets wil laten weten. Hij wil dat je anders gaat denken, en dat is overtuigen.",
+    "Koos je \"amuseren, zodat je lacht\"? Dan denk je dat hij je wil laten lachen. Hij wil je mening veranderen, en dat is overtuigen.",
+    "Koos je \"uitleggen hoe iets werkt\"? Dan denk je dat hij iets uitlegt. Hij wil je mening veranderen, en dat is overtuigen.",
+    "Klopt: wie een mening wil veranderen, wil overtuigen."
+   ],
+   "uh": "Wil hij dat jij anders denkt?"
+  },
+  {
+   "v": "Welk doel heeft een cabaretier meestal?",
+   "o": [
+    "amuseren",
+    "informeren, zodat je alles weet",
+    "overtuigen, zodat je stemt",
+    "instrueren, zodat je iets doet"
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 2,
+   "u": "Cabaret wil amuseren.",
+   "uo": [
+    "Klopt: een cabaretier vertelt grappen om je te laten lachen en dat is amuseren.",
+    "Koos je \"informeren, zodat je alles weet\"? Dan denk je dat hij je les geeft. Een cabaretier vertelt grappen, geen les.",
+    "Koos je \"overtuigen, zodat je stemt\"? Dan denk je dat hij je een mening opdringt. Hij wil je laten lachen, dat is amuseren.",
+    "Koos je \"instrueren, zodat je iets doet\"? Dan denk je dat hij opdrachten geeft. Hij wil je vermaken, dat is amuseren."
+   ],
+   "uh": "Wil hij je laten lachen?"
+  },
+  {
+   "v": "Welk doel heeft de docent met deze uitleg?",
+   "o": [
+    "overtuigen om een batterij te kopen",
+    "amuseren met een grapje",
+    "informeren",
+    "activeren om meteen iets te doen"
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 0,
+   "u": "Uitleg: informeren.",
+   "uo": [
+    "Koos je \"overtuigen om een batterij te kopen\"? Dan denk je dat de docent iets verkoopt. Hij legt uit hoe een batterij werkt, en probeert niets te verkopen.",
+    "Koos je \"amuseren met een grapje\"? Dan denk je dat er een grap in zit. Hij legt iets uit, en maakt geen grapje.",
+    "Klopt: hij legt uit hoe een batterij werkt, zonder mening of oproep.",
+    "Koos je \"activeren om meteen iets te doen\"? Dan denk je dat hij je opdrachten geeft. Hij legt iets uit, en dat is informeren."
+   ],
+   "uh": "Legt hij iets uit?",
+   "ctx": "Een docent legt uit: \"Een batterij heeft twee polen: een plus en een min. Als je de polen met een draad verbindt, gaat er stroom lopen. Daardoor kan een lampje branden. Let op: een batterij raakt langzaam leeg.\""
+  },
+  {
+   "v": "Welk doel heeft de cabaretier met dit fragment?",
+   "o": [
+    "informeren over wifi",
+    "overtuigen om offline te leven",
+    "amuseren",
+    "waarschuwen voor wifi"
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 2,
+   "u": "Grapjes: amuseren.",
+   "uo": [
+    "Koos je \"informeren over wifi\"? Dan denk je dat hij wifi uitlegt. Hij maakt grapjes over wifi, en dat is amuseren.",
+    "Koos je \"overtuigen om offline te leven\"? Dan denk je dat hij je mening wil veranderen. Hij maakt grapjes, en dat is amuseren.",
+    "Klopt: hij maakt grapjes over opa en wifi en wil de zaal laten lachen.",
+    "Koos je \"waarschuwen voor wifi\"? Dan denk je dat hij waarschuwt. Hij vertelt een grappig verhaal, en wil amuseren."
+   ],
+   "uh": "Moet je lachen?",
+   "ctx": "Een cabaretier zegt op het podium: \"Mijn opa zegt altijd: vroeger was alles beter. Ik zeg: opa, vroeger had jij geen wifi en toch vond je dat fijn. Vroeger belde je iemand en dan was hij niet thuis. Dat noemen wij nu: offline.\""
+  },
+  {
+   "v": "Welk doel heeft het nieuwsbericht?",
+   "o": [
+    "informeren",
+    "overtuigen om naar de kermis te gaan",
+    "amuseren met een verhaal",
+    "activeren om kaartjes te kopen"
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 0,
+   "u": "Nieuws: informeren.",
+   "uo": [
+    "Klopt: het meldt wat er gebeurt, zonder mening.",
+    "Koos je \"overtuigen om naar de kermis te gaan\"? Dan denk je dat het een reclame is. Het bericht meldt wat er gebeurt, en dringt niets op.",
+    "Koos je \"amuseren met een verhaal\"? Dan denk je dat het een verhaal is. Het is een bericht met feiten, dus informeren.",
+    "Koos je \"activeren om kaartjes te kopen\"? Dan denk je dat het bericht kaartjes verkoopt. De ingang is gratis, en het bericht informeert."
+   ],
+   "uh": "Meldt het feiten?",
+   "ctx": "Een nieuwslezer zegt: \"Vanavond start op het plein een kermis. De kermis duurt tot zondag en de ingang is gratis. Er staan twintig attracties, waaronder een reuzenrad. De gemeente raadt bezoekers aan om met de fiets te komen.\""
+  },
+  {
+   "v": "Waaraan hoor je vaak dat een spreker wil overtuigen?",
+   "o": [
+    "hij noemt alleen cijfers en maten",
+    "hij maakt veel grapjes achter elkaar",
+    "hij praat heel zacht en langzaam",
+    "hij zegt wat jij moet doen"
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 3,
+   "u": "Overtuigen hoor je aan oproepen en meningen.",
+   "uo": [
+    "Koos je \"hij noemt alleen cijfers en maten\"? Dan denk je dat cijfers overtuigen. Wie alleen cijfers noemt, informeert, en geeft geen oproep.",
+    "Koos je \"hij maakt veel grapjes achter elkaar\"? Dan denk je dat grapjes overtuigen. Grapjes amuseren, en dat is een ander doel.",
+    "Koos je \"hij praat heel zacht en langzaam\"? Dan denk je dat zacht praten overtuigt. Het zegt niets over het doel, dat hoor je aan wat hij zegt.",
+    "Klopt: een oproep of mening laat zien dat hij je wil overtuigen."
+   ],
+   "uh": "Zegt hij wat jij moet vinden?"
+  },
+  {
+   "v": "Welke zin geeft alleen informatie?",
+   "o": [
+    "\"De gemeente raadt bezoekers aan om met de fiets te komen.\"",
+    "\"De kermis duurt tot zondag en de ingang is gratis.\"",
+    "\"Vanavond start op het plein een kermis.\"",
+    "\"Er staan twintig attracties.\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 0,
+   "u": "Informatie: feiten zonder mening.",
+   "uo": [
+    "Koos je \"De gemeente raadt bezoekers aan om met de fiets te...\"? Dan denk je dat dit alleen informatie is. Het is een advies, en dus meer dan een feit.",
+    "Klopt: het zijn feiten over de kermis, zonder mening.",
+    "Koos je \"Vanavond start op het plein een kermis.\"? Dan denk je dat dit een mening is. Het is ook informatie, maar het is niet de zin met de gegevens over de duur.",
+    "Koos je \"Er staan twintig attracties.\"? Dan denk je dat dit een mening is. Het is een aantal, dus het is ook informatie."
+   ],
+   "uh": "Staat er alleen een feit?",
+   "ctx": "Een nieuwslezer zegt: \"Vanavond start op het plein een kermis. De kermis duurt tot zondag en de ingang is gratis. Er staan twintig attracties, waaronder een reuzenrad. De gemeente raadt bezoekers aan om met de fiets te komen.\""
+  },
+  {
+   "v": "Welk doel heeft de leerling met zijn praatje?",
+   "o": [
+    "informeren over school",
+    "amuseren met een grap",
+    "uitleggen hoe een stemming werkt",
+    "overtuigen"
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 1,
+   "u": "Overtuigen: redenen en een oproep.",
+   "uo": [
+    "Koos je \"informeren over school\"? Dan denk je dat hij alleen informeert. Hij vraagt om een stem, en dat is overtuigen.",
+    "Koos je \"amuseren met een grap\"? Dan denk je dat hij grappig wil zijn. Hij geeft redenen en vraagt om een stem, dus overtuigen.",
+    "Koos je \"uitleggen hoe een stemming werkt\"? Dan denk je dat hij uitlegt. Hij wil dat anderen zijn voorstel steunen, dus overtuigen.",
+    "Klopt: hij wil de klas laten stemmen op zijn voorstel."
+   ],
+   "uh": "Vraagt hij om een stem?",
+   "ctx": "Een leerling houdt een praatje voor de klas: \"Scholen moeten later beginnen. Tieners slapen 's ochtends nog, dus ze leren dan niets. Als de school om negen uur begint, zijn we uitgerust en halen we betere cijfers. Stem daarom op mijn voorstel!\""
+  },
+  {
+   "v": "Welke zin is een oproep?",
+   "o": [
+    "\"Scholen moeten later beginnen.\"",
+    "\"Stem daarom op mijn voorstel!\"",
+    "\"Tieners slapen 's ochtends nog.\"",
+    "\"Dan halen we betere cijfers.\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 1,
+   "u": "Oproep: zegt wat jij moet doen.",
+   "uo": [
+    "Koos je \"Scholen moeten later beginnen.\"? Dan denk je dat dit de oproep is. Dit is zijn mening, de oproep komt aan het eind.",
+    "Klopt: hij zegt wat de klas moet doen, en dat is een oproep.",
+    "Koos je \"Tieners slapen 's ochtends nog.\"? Dan denk je dat dit een oproep is. Dit is een reden, geen opdracht.",
+    "Koos je \"Dan halen we betere cijfers.\"? Dan denk je dat dit een oproep is. Dit is een gevolg, geen opdracht."
+   ],
+   "uh": "Wat moet de klas doen?",
+   "ctx": "Een leerling houdt een praatje voor de klas: \"Scholen moeten later beginnen. Tieners slapen 's ochtends nog, dus ze leren dan niets. Als de school om negen uur begint, zijn we uitgerust en halen we betere cijfers. Stem daarom op mijn voorstel!\""
+  },
+  {
+   "v": "Welke reden geeft de leerling voor zijn voorstel?",
+   "o": [
+    "stem daarom op mijn voorstel in de klas",
+    "scholen moeten later beginnen volgens hem",
+    "uitgerust zijn en betere cijfers halen",
+    "hij vertelt iets over zichzelf aan de klas"
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 1,
+   "u": "Een reden zegt waarom iets goed is.",
+   "uo": [
+    "Koos je \"stem daarom op mijn voorstel in de klas\"? Dan denk je dat dit een reden is. Het is een oproep, geen argument.",
+    "Koos je \"scholen moeten later beginnen volgens hem\"? Dan denk je dat dit een reden is. Het is zijn mening, en dat is het voorstel zelf.",
+    "Klopt: dit is zijn argument voor een latere start.",
+    "Koos je \"hij vertelt iets over zichzelf aan de klas\"? Dan denk je dat dit een reden is. Het is geen reden, er staan alleen redenen voor een latere start."
+   ],
+   "uh": "Waarom wil hij dit?",
+   "ctx": "Een leerling houdt een praatje voor de klas: \"Scholen moeten later beginnen. Tieners slapen 's ochtends nog, dus ze leren dan niets. Als de school om negen uur begint, zijn we uitgerust en halen we betere cijfers. Stem daarom op mijn voorstel!\""
+  },
+  {
+   "v": "Waarom is \"Dat noemen wij nu: offline\" grappig bedoeld?",
+   "o": [
+    "een verrassende draai met een woord",
+    "omdat het een feit is over wifi en opa",
+    "omdat de cabaretier boos is",
+    "omdat opa dat zegt"
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 2,
+   "u": "Een grap zit vaak in een verrassende draai.",
+   "uo": [
+    "Klopt: de cabaretier maakt van een gemis een grap.",
+    "Koos je \"omdat het een feit is over wifi en opa\"? Dan denk je dat het feit grappig is. Het gaat om de verrassende draai, niet om het feit.",
+    "Koos je \"omdat de cabaretier boos is\"? Dan denk je dat hij boos is. Hij speelt met woorden, om te laten lachen.",
+    "Koos je \"omdat opa dat zegt\"? Dan denk je dat opa het zegt. De cabaretier zegt dit zelf, als grap."
+   ],
+   "uh": "Wat is er verrassend?",
+   "ctx": "Een cabaretier zegt op het podium: \"Mijn opa zegt altijd: vroeger was alles beter. Ik zeg: opa, vroeger had jij geen wifi en toch vond je dat fijn. Vroeger belde je iemand en dan was hij niet thuis. Dat noemen wij nu: offline.\""
+  },
+  {
+   "v": "Welke zin uit het fragment is vooral bedoeld om te lachen?",
+   "o": [
+    "\"dan was hij niet thuis\"",
+    "\"Mijn opa zegt altijd: vroeger was alles beter.\"",
+    "\"Ik zeg: opa, vroeger had jij geen wifi.\"",
+    "\"Dat noemen wij nu: offline.\""
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 2,
+   "u": "Grapjes overdrijven en verrassen.",
+   "uo": [
+    "Klopt: hij overdrijft hoe vroeger was en wil daarmee de zaal laten lachen.",
+    "Koos je \"Mijn opa zegt altijd: vroeger was alles beter.\"? Dan denk je dat dit de grap is. Dit zet het thema neer, de grap komt daarna.",
+    "Koos je \"Ik zeg: opa, vroeger had jij geen wifi.\"? Dan denk je dat dit de afsluitende grap is. Dit is de opmaat, de pointe komt later.",
+    "Koos je \"Dat noemen wij nu: offline.\"? Dan denk je dat dit de reden is waarom opa lacht. Dit is een pointe, maar de vraag gaat over de zin ervoor."
+   ],
+   "uh": "Waar moet je om lachen?",
+   "ctx": "Een cabaretier zegt op het podium: \"Mijn opa zegt altijd: vroeger was alles beter. Ik zeg: opa, vroeger had jij geen wifi en toch vond je dat fijn. Vroeger belde je iemand en dan was hij niet thuis. Dat noemen wij nu: offline.\""
+  },
+  {
+   "v": "Welk doel heeft de docent met \"Let op: een batterij raakt langzaam leeg\"?",
+   "o": [
+    "een grap maken over lege batterijen",
+    "je overtuigen om een batterij te kopen",
+    "waarschuwen voor iets belangrijks",
+    "een mening geven over lege batterijen"
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 0,
+   "u": "\"Let op\" wijst op iets belangrijks.",
+   "uo": [
+    "Koos je \"een grap maken over lege batterijen\"? Dan denk je dat de docent een grap maakt. Hij waarschuwt voor een belangrijk punt, en bedoelt het serieus.",
+    "Koos je \"je overtuigen om een batterij te kopen\"? Dan denk je dat hij verkoopt. Hij vertelt iets nuttigs, en wil niets verkopen.",
+    "Klopt: \"let op\" laat zien dat dit belangrijk is.",
+    "Koos je \"een mening geven over lege batterijen\"? Dan denk je dat het een mening is. Het is een feit over batterijen, met een waarschuwing erbij."
+   ],
+   "uh": "Waarom zegt hij \"let op\"?",
+   "ctx": "Een docent legt uit: \"Een batterij heeft twee polen: een plus en een min. Als je de polen met een draad verbindt, gaat er stroom lopen. Daardoor kan een lampje branden. Let op: een batterij raakt langzaam leeg.\""
+  },
+  {
+   "v": "Welk doel heeft de reclame?",
+   "o": [
+    "informeren over wol",
+    "overtuigen: je koopt de sokken",
+    "amuseren, zodat je lacht",
+    "instrueren hoe je sokken moet wassen"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 1,
+   "u": "Reclame wil dat je iets koopt.",
+   "uo": [
+    "Koos je \"informeren over wol\"? Dan denk je dat de reclame wol uitlegt. Ze wil dat je bestelt, en dat is overtuigen.",
+    "Klopt: de reclame wil dat je de sokken bestelt en dus koopt.",
+    "Koos je \"amuseren, zodat je lacht\"? Dan denk je dat de reclame een grap is. Ze wil dat je koopt, en dat is overtuigen.",
+    "Koos je \"instrueren hoe je sokken moet wassen\"? Dan denk je dat er een instructie is. Er staat geen instructie, de reclame wil dat je bestelt."
+   ],
+   "uh": "Wat wil de reclame dat je doet?",
+   "ctx": "Een reclame op de radio: \"Nooit meer koude voeten! Onze wollen sokken zijn zacht, warm en de beste van het land. Bestel nu en krijg een tweede paar helemaal gratis. Wacht niet te lang, want op = op!\""
+  },
+  {
+   "v": "Welke woorden laten horen dat de reclame haast wil maken?",
+   "o": [
+    "\"Nooit meer koude voeten, zeggen ze!\"",
+    "\"zacht, warm en de beste van het land\"",
+    "\"een tweede paar helemaal gratis\"",
+    "\"Wacht niet te lang, want op = op!\""
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 3,
+   "u": "Haast: \"wacht niet\", \"op = op\".",
+   "uo": [
+    "Koos je \"Nooit meer koude voeten, zeggen ze!\"? Dan denk je dat dit haast maakt. Dit trekt aandacht, en maakt je nieuwsgierig.",
+    "Koos je \"zacht, warm en de beste van het land\"? Dan denk je dat dit haast maakt. Dit zijn lovende woorden, geen haast.",
+    "Koos je \"een tweede paar helemaal gratis\"? Dan denk je dat dit haast maakt. Dit is een aanbieding, geen deadline.",
+    "Klopt: zo voel je dat je snel moet bestellen."
+   ],
+   "uh": "Waar hoor je tijdsdruk?",
+   "ctx": "Een reclame op de radio: \"Nooit meer koude voeten! Onze wollen sokken zijn zacht, warm en de beste van het land. Bestel nu en krijg een tweede paar helemaal gratis. Wacht niet te lang, want op = op!\""
+  },
+  {
+   "v": "Welke bewering in de reclame is een mening die overtuigt?",
+   "o": [
+    "\"Onze wollen sokken zijn zacht\"",
+    "\"de beste van het land\"",
+    "\"een tweede paar helemaal gratis\"",
+    "\"Bestel nu\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 1,
+   "u": "\"De beste\" is een oordeel dat overtuigt.",
+   "uo": [
+    "Koos je \"Onze wollen sokken zijn zacht\"? Dan denk je dat dit een feit is. \"Zacht\" is smaak, maar niet de duidelijkste mening.",
+    "Klopt: \"de beste\" is een oordeel dat je overtuigt om te kopen.",
+    "Koos je \"een tweede paar helemaal gratis\"? Dan denk je dat dit een mening is. Het is een aanbod, en geen oordeel.",
+    "Koos je \"Bestel nu\"? Dan denk je dat dit een mening is. Het is een oproep, en geen oordeel."
+   ],
+   "uh": "Is het een oordeel?",
+   "ctx": "Een reclame op de radio: \"Nooit meer koude voeten! Onze wollen sokken zijn zacht, warm en de beste van het land. Bestel nu en krijg een tweede paar helemaal gratis. Wacht niet te lang, want op = op!\""
+  },
+  {
+   "v": "Waarom is \"Tieners slapen 's ochtends nog, dus ze leren dan niets\" overdreven?",
+   "o": [
+    "\"niets\" is te sterk",
+    "omdat tieners nooit slapen",
+    "omdat de school al om negen uur begint",
+    "omdat hij het zegt"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 1,
+   "u": "Overdrijven maakt een argument zwak.",
+   "uo": [
+    "Klopt: de leerling overdrijft om zijn punt te maken.",
+    "Koos je \"omdat tieners nooit slapen\"? Dan denk je dat tieners nooit slapen. Dat zegt de leerling niet, hij overdrijft over het leren.",
+    "Koos je \"omdat de school al om negen uur begint\"? Dan denk je dat de begintijd het probleem is. Het probleem is het woord \"niets\", dat te sterk is.",
+    "Koos je \"omdat hij het zegt\"? Dan denk je dat de spreker het overdreven maakt. Het gaat om het woord \"niets\", dat niet klopt."
+   ],
+   "uh": "Klopt \"niets\" wel?",
+   "ctx": "Een leerling houdt een praatje voor de klas: \"Scholen moeten later beginnen. Tieners slapen 's ochtends nog, dus ze leren dan niets. Als de school om negen uur begint, zijn we uitgerust en halen we betere cijfers. Stem daarom op mijn voorstel!\""
+  },
+  {
+   "v": "Welke informatie in dit fragment kun je controleren?",
+   "o": [
+    "dit is de lekkerste pizza van het land",
+    "kaas is zijn grote liefde",
+    "je ziet het aan zijn buik",
+    "pizza twee heeft veertig gram kaas"
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 0,
+   "u": "Hoeveelheden zijn te controleren.",
+   "uo": [
+    "Koos je \"dit is de lekkerste pizza van het land\"? Dan denk je dat dit te controleren is. \"Lekkerste\" is een oordeel, en niet te meten.",
+    "Koos je \"kaas is zijn grote liefde\"? Dan denk je dat dit een feit is. Het is een persoonlijk gevoel, en niet te controleren.",
+    "Koos je \"je ziet het aan zijn buik\"? Dan denk je dat dit een feit is. Het is een grap, en geen meting.",
+    "Klopt: een hoeveelheid kaas is te wegen, dus je kunt het controleren."
+   ],
+   "uh": "Kun je het meten?",
+   "ctx": "Een presentator zegt in een grappig programma: \"Vandaag testen we vijf pizza's. Pizza twee heeft de meeste kaas, namelijk veertig gram. Dit is de lekkerste pizza van het land, geloof me! En tja, kaas is mijn grote liefde, dat zie je aan mijn buik.\""
+  },
+  {
+   "v": "Welke zin uit het fragment wil je overtuigen?",
+   "o": [
+    "\"Vandaag testen we vijf pizza's in de show.\"",
+    "\"Pizza twee heeft de meeste kaas.\"",
+    "\"Dit is de lekkerste pizza, geloof me!\"",
+    "\"Kaas is mijn grote liefde.\""
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 1,
+   "u": "Overtuigen: \"geloof me\" en een oordeel.",
+   "uo": [
+    "Koos je \"Vandaag testen we vijf pizza's in de show.\"? Dan denk je dat dit overtuigt. Het is een aankondiging, en dus informatie.",
+    "Koos je \"Pizza twee heeft de meeste kaas.\"? Dan denk je dat dit overtuigt. Het is informatie, en geen oproep.",
+    "Klopt: de presentator wil dat je dit gelooft.",
+    "Koos je \"Kaas is mijn grote liefde.\"? Dan denk je dat dit overtuigt. Het is een grap, geen oproep om iets te geloven."
+   ],
+   "uh": "Wat wil hij dat jij gelooft?",
+   "ctx": "Een presentator zegt in een grappig programma: \"Vandaag testen we vijf pizza's. Pizza twee heeft de meeste kaas, namelijk veertig gram. Dit is de lekkerste pizza van het land, geloof me! En tja, kaas is mijn grote liefde, dat zie je aan mijn buik.\""
+  },
+  {
+   "v": "Welk doel heeft \"kaas is mijn grote liefde, dat zie je aan mijn buik\"?",
+   "o": [
+    "informeren over kaas",
+    "overtuigen dat kaas lekker is",
+    "amuseren",
+    "waarschuwen voor te veel kaas"
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 2,
+   "u": "Een grapje over zichzelf: amuseren.",
+   "uo": [
+    "Koos je \"informeren over kaas\"? Dan denk je dat dit informatie is. Het is een grap over zichzelf, en dus amuseren.",
+    "Koos je \"overtuigen dat kaas lekker is\"? Dan denk je dat dit overtuigt. Het is een grapje, en wil vermaken.",
+    "Klopt: hij maakt een grapje over zichzelf om de kijkers te laten lachen.",
+    "Koos je \"waarschuwen voor te veel kaas\"? Dan denk je dat dit een waarschuwing is. Het is een grap, geen waarschuwing."
+   ],
+   "uh": "Moet je erom lachen?",
+   "ctx": "Een presentator zegt in een grappig programma: \"Vandaag testen we vijf pizza's. Pizza twee heeft de meeste kaas, namelijk veertig gram. Dit is de lekkerste pizza van het land, geloof me! En tja, kaas is mijn grote liefde, dat zie je aan mijn buik.\""
+  },
+  {
+   "v": "Welke drie doelen heeft de presentator in dit fragment?",
+   "o": [
+    "alleen informeren en niets anders doen",
+    "alleen amuseren en overtuigen, niet informeren",
+    "alleen informeren en amuseren, niet overtuigen",
+    "informeren, overtuigen, amuseren"
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 4,
+   "u": "Een tekst kan meerdere doelen hebben.",
+   "uo": [
+    "Koos je \"alleen informeren en niets anders doen\"? Dan denk je dat er maar één doel is. Er staan ook oordelen en grapjes in, dus er zijn drie doelen.",
+    "Koos je \"alleen amuseren en overtuigen, niet informeren\"? Dan denk je dat informatie ontbreekt. Er staat een hoeveelheid kaas, dus hij informeert ook.",
+    "Koos je \"alleen informeren en amuseren, niet overtuigen\"? Dan denk je dat hij niet overtuigt. Hij zegt \"geloof me\" en \"de lekkerste\", dus hij overtuigt ook.",
+    "Klopt: hij meldt een hoeveelheid, noemt de lekkerste pizza en maakt een grap."
+   ],
+   "uh": "Welke doelen herken je?",
+   "ctx": "Een presentator zegt in een grappig programma: \"Vandaag testen we vijf pizza's. Pizza twee heeft de meeste kaas, namelijk veertig gram. Dit is de lekkerste pizza van het land, geloof me! En tja, kaas is mijn grote liefde, dat zie je aan mijn buik.\""
+  },
+  {
+   "v": "Welke twee doelen heeft de reclame?",
+   "o": [
+    "overtuigen en laten kopen",
+    "informeren en uitleggen",
+    "amuseren en laten lachen",
+    "waarschuwen en uitleggen"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 4,
+   "u": "Reclame: overtuigen en kopen.",
+   "uo": [
+    "Klopt: de reclame wil overtuigen en aanzetten tot bestellen.",
+    "Koos je \"informeren en uitleggen\"? Dan denk je dat de reclame alleen uitlegt. Ze noemt eigenschappen om te verkopen, dus overtuigen en kopen.",
+    "Koos je \"amuseren en laten lachen\"? Dan denk je dat de reclame grappig is. Er staat geen grap in, ze wil overtuigen.",
+    "Koos je \"waarschuwen en uitleggen\"? Dan denk je dat ze waarschuwt. Ze wil dat je bestelt, dus overtuigen en kopen."
+   ],
+   "uh": "Wat moet je doen?",
+   "ctx": "Een reclame op de radio: \"Nooit meer koude voeten! Onze wollen sokken zijn zacht, warm en de beste van het land. Bestel nu en krijg een tweede paar helemaal gratis. Wacht niet te lang, want op = op!\""
+  },
+  {
+   "v": "Waarom wil de docent niet overtuigen?",
+   "o": [
+    "omdat hij geen stem heeft",
+    "hij geeft alleen feiten",
+    "omdat hij een grapje maakt",
+    "omdat hij een oproep doet"
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 3,
+   "u": "Informeren: feiten en geen oproep.",
+   "uo": [
+    "Koos je \"omdat hij geen stem heeft\"? Dan denk je dat hij niets te zeggen heeft. Hij heeft wel een boodschap, maar die is informatie.",
+    "Klopt: hij legt uit hoe een batterij werkt en vraagt niets van je.",
+    "Koos je \"omdat hij een grapje maakt\"? Dan denk je dat hij een grap maakt. Hij legt iets uit, dus informeren.",
+    "Koos je \"omdat hij een oproep doet\"? Dan denk je dat hij je oproept. Hij vraagt niets, hij legt uit."
+   ],
+   "uh": "Vraagt hij iets van je?",
+   "ctx": "Een docent legt uit: \"Een batterij heeft twee polen: een plus en een min. Als je de polen met een draad verbindt, gaat er stroom lopen. Daardoor kan een lampje branden. Let op: een batterij raakt langzaam leeg.\""
+  },
+  {
+   "v": "De gemeente raadt aan om met de fiets te komen. Wat voor soort zin is dit in het bericht?",
+   "o": [
+    "een grap om te lachen",
+    "een reclame voor fietsen",
+    "een mening van de schrijver",
+    "een advies bij informeren"
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 3,
+   "u": "Een advies kan bij informeren horen.",
+   "uo": [
+    "Koos je \"een grap om te lachen\"? Dan denk je dat het een grap is. Het is een praktisch advies, geen grap.",
+    "Koos je \"een reclame voor fietsen\"? Dan denk je dat het reclame is. De gemeente verkoopt geen fietsen, het is een advies.",
+    "Koos je \"een mening van de schrijver\"? Dan denk je dat het een mening is. De gemeente geeft het advies, niet de nieuwslezer.",
+    "Klopt: het advies helpt de bezoekers, zonder te overtuigen."
+   ],
+   "uh": "Wil de gemeente iets verkopen?",
+   "ctx": "Een nieuwslezer zegt: \"Vanavond start op het plein een kermis. De kermis duurt tot zondag en de ingang is gratis. Er staan twintig attracties, waaronder een reuzenrad. De gemeente raadt bezoekers aan om met de fiets te komen.\""
+  }
+ ],
+ "oe": [
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een nieuwslezer zegt: \"Vanavond start op het plein een kermis. De kermis duurt tot zondag en de ingang is gratis. Er staan twintig attracties, waaronder een reuzenrad. De gemeente raadt bezoekers aan om met de fiets te komen.\"",
+   "v": "Welk doel heeft het nieuwsbericht? Noem twee dingen waaraan je dat hoort.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Informeren (1p). Het meldt feiten zoals de duur en de gratis ingang (1p). Er is geen mening of oproep (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een leerling houdt een praatje voor de klas: \"Scholen moeten later beginnen. Tieners slapen 's ochtends nog, dus ze leren dan niets. Als de school om negen uur begint, zijn we uitgerust en halen we betere cijfers. Stem daarom op mijn voorstel!\"",
+   "v": "Welk doel heeft de leerling? Noem zijn mening, een reden en de oproep.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Overtuigen (1p). Mening: scholen moeten later beginnen (1p). Reden: dan zijn we uitgerust en halen we betere cijfers (1p). Oproep: stem op mijn voorstel (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een cabaretier zegt op het podium: \"Mijn opa zegt altijd: vroeger was alles beter. Ik zeg: opa, vroeger had jij geen wifi en toch vond je dat fijn. Vroeger belde je iemand en dan was hij niet thuis. Dat noemen wij nu: offline.\"",
+   "v": "Welk doel heeft de cabaretier en waaraan hoor je dat?",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Amuseren (1p). Hij maakt grapjes over opa en wifi (1p). Hij overdrijft en eindigt met een pointe (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een reclame op de radio: \"Nooit meer koude voeten! Onze wollen sokken zijn zacht, warm en de beste van het land. Bestel nu en krijg een tweede paar helemaal gratis. Wacht niet te lang, want op = op!\"",
+   "v": "Welke twee doelen heeft de reclame en welk signaal wijst op haast?",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Overtuigen en laten kopen (2p). Het signaal op = op of wacht niet te lang (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een presentator zegt in een grappig programma: \"Vandaag testen we vijf pizza's. Pizza twee heeft de meeste kaas, namelijk veertig gram. Dit is de lekkerste pizza van het land, geloof me! En tja, kaas is mijn grote liefde, dat zie je aan mijn buik.\"",
+   "v": "Noem drie doelen die in het fragment voorkomen en bij elk de zin of het deel.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Informeren: veertig gram kaas (1p). Overtuigen: de lekkerste pizza van het land, geloof me (1p). Amuseren: de grap over zijn buik (1p)."
+  }
+ ]
+}

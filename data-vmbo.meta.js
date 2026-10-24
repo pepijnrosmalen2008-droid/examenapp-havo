@@ -67,6 +67,27 @@ var VAKKEN_VMBO = [
       "nOe": 5,
       "nBeg": 12,
       "hasSam": true
+     },
+     {
+      "id": "A3",
+      "lo": "nl.A.3",
+      "gs": 2,
+      "naam": "Het doel van de spreker herkennen",
+      "beschrijving": "Je hoort of ziet een tekst en herkent wat de spreker wil: informeren, overtuigen of amuseren. Je let op signalen zoals oproepen, meningen en grapjes.",
+      "ceStatus": "SE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Informeren: feiten en uitleg",
+       "Overtuigen: mening, redenen en oproep",
+       "Amuseren: grapjes en overdrijving",
+       "Signalen waaraan je het doel hoort",
+       "Meer dan één doel in een tekst"
+      ],
+      "nSv": 25,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
      }
     ]
    },
