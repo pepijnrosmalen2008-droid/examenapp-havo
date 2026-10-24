@@ -1,0 +1,661 @@
+{
+ "id": "A5",
+ "lo": "nl.A.5",
+ "gs": 2,
+ "naam": "Beeld en geluid interpreteren",
+ "beschrijving": "Je kijkt en luistert naar een fragment en legt uit wat beeld, camera, muziek en stem je vertellen, wat de maker wil en of je het kunt vertrouwen.",
+ "ceStatus": "SE",
+ "binas": "",
+ "val": "",
+ "onderwerpen": [
+  "Beeld en geluid samen",
+  "Camerastandpunten",
+  "Muziek, stem en stilte",
+  "De bedoeling van de maker",
+  "Betrouwbaarheid en bron"
+ ],
+ "sam": "Bij een fragment met beeld en geluid let je op wat je ziet en wat je hoort. De camera kiest wat je ziet, bijvoorbeeld een close-up of een opname van bovenaf. Muziek, stem en stilte roepen een gevoel op. De maker heeft een bedoeling: informeren, overtuigen of vermaken. Bij reclame en filmpjes op sociale media let je op de bron en op de vermelding dat iets betaald is, en je controleert beloftes.",
+ "begrippen": [
+  {
+   "t": "Beeldtaal",
+   "d": "Wat de maker met camera en beeld vertelt zonder woorden."
+  },
+  {
+   "t": "Close-up",
+   "d": "Een opname van heel dichtbij."
+  },
+  {
+   "t": "Totaalshot",
+   "d": "Een opname van ver weg waarop je alles ziet."
+  },
+  {
+   "t": "Camerastandpunt",
+   "d": "De plek van waaruit de camera filmt."
+  },
+  {
+   "t": "Geluidseffect",
+   "d": "Een geluid dat de maker toevoegt, zoals een krakende deur."
+  },
+  {
+   "t": "Achtergrondmuziek",
+   "d": "Muziek die een gevoel oproept bij het beeld."
+  },
+  {
+   "t": "Bedoeling",
+   "d": "Wat de maker met het fragment wil bereiken."
+  },
+  {
+   "t": "Informeren",
+   "d": "De kijker vertellen wat er aan de hand is."
+  },
+  {
+   "t": "Overtuigen",
+   "d": "De kijker iets laten vinden, doen of kopen."
+  },
+  {
+   "t": "Vermaken",
+   "d": "De kijker laten genieten of lachen."
+  },
+  {
+   "t": "Bron",
+   "d": "Degene die een fragment heeft gemaakt of verspreid."
+  },
+  {
+   "t": "Sponsoring",
+   "d": "Een betaalde samenwerking waarbij een bedrijf voor de video betaalt."
+  }
+ ],
+ "sv": [
+  {
+   "v": "Waar let je op bij een fragment met beeld en geluid?",
+   "o": [
+    "alleen op de muziek in het fragment",
+    "op wat je ziet en wat je hoort",
+    "alleen op de tekst onderaan het beeld",
+    "alleen op wie de acteurs of sprekers zijn"
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 0,
+   "u": "Kijk en luister tegelijk.",
+   "uo": [
+    "Koos je \"alleen op de muziek in het fragment\"? Dan denk je dat alleen de muziek telt. Het beeld vertelt ook veel, dus je mist dan de helft van de boodschap.",
+    "Klopt: beeld en geluid samen vormen de boodschap van het fragment.",
+    "Koos je \"alleen op de tekst onderaan het beeld\"? Dan denk je dat alleen die tekst telt. Beeld en geluid vertellen veel meer, soms zelfs meer dan de tekst zelf.",
+    "Koos je \"alleen op wie de acteurs of sprekers zijn\"? Dan denk je dat de namen genoeg zijn. Ze zeggen weinig over de boodschap, die zit in wat je ziet en hoort."
+   ],
+   "uh": "Wat neem je waar?"
+  },
+  {
+   "v": "Hoe noem je een opname van heel dichtbij?",
+   "o": [
+    "een totaalshot over de hele plek",
+    "een geluidseffect bij het beeld",
+    "een bijschrift onder het beeld",
+    "een close-up"
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 1,
+   "u": "Close-up = van dichtbij.",
+   "uo": [
+    "Koos je \"een totaalshot over de hele plek\"? Dan denk je dat dit een totaalshot is. Dat is juist een opname van ver weg, waarbij je de hele omgeving ziet.",
+    "Koos je \"een geluidseffect bij het beeld\"? Dan denk je dat dit een geluidseffect is. Zo een effect hoor je, maar een close-up zie je.",
+    "Koos je \"een bijschrift onder het beeld\"? Dan denk je dat dit een bijschrift is. Dat is tekst bij een beeld, geen manier van filmen.",
+    "Klopt: bij een close-up zie je bijvoorbeeld alleen een gezicht of een voorwerp."
+   ],
+   "uh": "Hoe dichtbij is de camera?"
+  },
+  {
+   "v": "Welk geluid hoort vaak bij een spannende scène?",
+   "o": [
+    "trage, lage tonen",
+    "vrolijke popmuziek met een snel ritme",
+    "een lachende menigte op de achtergrond",
+    "een fluitend vogeltje in de verte"
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 2,
+   "u": "Laag en langzaam = spannend.",
+   "uo": [
+    "Klopt: lage, trage muziek zorgt vaak voor spanning bij de kijker.",
+    "Koos je \"vrolijke popmuziek met een snel ritme\"? Dan denk je dat vrolijke muziek past. Zo een ritme maakt het juist luchtig, en haalt de spanning weg.",
+    "Koos je \"een lachende menigte op de achtergrond\"? Dan denk je dat gelach past. Lachen hoort bij een grappige of blije scène, niet bij spanning.",
+    "Koos je \"een fluitend vogeltje in de verte\"? Dan denk je dat dit past. Vogelgeluid geeft rust, en rust is het tegenovergestelde van spanning."
+   ],
+   "uh": "Welk gevoel hoort erbij?"
+  },
+  {
+   "v": "Waarom maakt een bedrijf een reclame?",
+   "o": [
+    "om je iets nieuws te leren voor school",
+    "om het laatste nieuws te vertellen",
+    "om je iets te laten kopen",
+    "om de kijker even te laten lachen"
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 3,
+   "u": "Reclame wil overtuigen.",
+   "uo": [
+    "Koos je \"om je iets nieuws te leren voor school\"? Dan denk je dat reclame bedoeld is om te leren. Ze wil vooral verkopen, en leren is hooguit een bijzaak.",
+    "Koos je \"om het laatste nieuws te vertellen\"? Dan denk je dat reclame nieuws brengt. Dat doet een nieuwsprogramma, reclame wil iets verkopen.",
+    "Klopt: reclame wil de kijker overtuigen om een product of dienst te kopen.",
+    "Koos je \"om de kijker even te laten lachen\"? Dan denk je dat humor het doel is. Humor is vaak een middel, het doel blijft het verkopen van het product."
+   ],
+   "uh": "Wie betaalt de reclame?"
+  },
+  {
+   "v": "Welke bedoeling heeft een nieuwsitem meestal?",
+   "o": [
+    "de kijker laten kopen wat in beeld is",
+    "de kijker vermaken met een verzonnen verhaal",
+    "de kijker informeren",
+    "de kijker bang maken voor de toekomst"
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 3,
+   "u": "Nieuws informeert.",
+   "uo": [
+    "Koos je \"de kijker laten kopen wat in beeld is\"? Dan denk je dat nieuws wil verkopen. Dat is het doel van een reclame, en geen nieuwsitem.",
+    "Koos je \"de kijker vermaken met een verzonnen verhaal\"? Dan denk je dat nieuws een verzonnen verhaal is. Nieuws gaat over echte gebeurtenissen, geen verhaal dat bedacht is.",
+    "Klopt: nieuws wil vertellen wat er gebeurd is, zonder dat je iets hoeft te kopen.",
+    "Koos je \"de kijker bang maken voor de toekomst\"? Dan denk je dat nieuws bang wil maken. Nieuws wil vooral vertellen wat er is gebeurd, niet schrik aanjagen."
+   ],
+   "uh": "Wat wil de maker?"
+  },
+  {
+   "v": "Waaraan zie je dat een video betaald is door een bedrijf?",
+   "o": [
+    "aan een vermelding in beeld of tekst",
+    "aan de lengte van de video zelf",
+    "aan het aantal mensen dat gekeken heeft",
+    "aan de kwaliteit van het geluid"
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 4,
+   "u": "Let op \"Betaald door\".",
+   "uo": [
+    "Klopt: bij betaalde video's hoort een melding zoals \"Betaald door\" of \"Reclame\".",
+    "Koos je \"aan de lengte van de video zelf\"? Dan denk je dat de lengte iets zegt. Een betaalde video kan kort of lang zijn, dus de lengte bewijst niets.",
+    "Koos je \"aan het aantal mensen dat gekeken heeft\"? Dan denk je dat kijkcijfers dit tonen. Een populaire video hoeft niet betaald te zijn, en een betaalde video kan weinig kijkers hebben.",
+    "Koos je \"aan de kwaliteit van het geluid\"? Dan denk je dat goed geluid dit laat zien. Ook een gewone video kan mooi klinken, dus dat zegt niets over betaald zijn."
+   ],
+   "uh": "Waar staat de melding?"
+  },
+  {
+   "v": "Waarom is de bron van een filmpje belangrijk?",
+   "o": [
+    "de bron maakt het filmpje mooier dan het is",
+    "een filmpje zonder bron is altijd onwaar",
+    "de bron bepaalt hoe lang het filmpje duurt",
+    "je ziet wie het gemaakt heeft en waarom"
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 4,
+   "u": "Bron = wie het gemaakt heeft.",
+   "uo": [
+    "Koos je \"de bron maakt het filmpje mooier dan het is\"? Dan denk je dat een bron het filmpje mooier maakt. Een bron zegt niets over het uiterlijk, alleen over wie het gemaakt heeft.",
+    "Koos je \"een filmpje zonder bron is altijd onwaar\"? Dan denk je dat zo een filmpje altijd fout is. Dat klopt niet, maar je kunt het wel minder goed controleren.",
+    "Koos je \"de bron bepaalt hoe lang het filmpje duurt\"? Dan denk je dat de bron de lengte bepaalt. Dat doet de maker zelf, de bron vertelt wie dat is.",
+    "Klopt: de maker bepaalt wat je ziet, dus de bron helpt je de boodschap te wegen."
+   ],
+   "uh": "Wie zit erachter?"
+  },
+  {
+   "v": "Welk effect heeft de muziek in dit filmfragment?",
+   "o": [
+    "het maakt de scène grappig voor de kijker",
+    "het maakt de scène spannend",
+    "het maakt de scène vrolijk en zorgeloos",
+    "het vertelt het publiek wie het meisje is"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 2,
+   "u": "Muziek stuurt je gevoel.",
+   "uo": [
+    "Koos je \"het maakt de scène grappig voor de kijker\"? Dan denk je dat de muziek de scène grappig maakt. Lage, trage tonen horen bij spanning, niet bij een grap.",
+    "Klopt: lage, steeds luidere tonen laten de kijker spanning voelen.",
+    "Koos je \"het maakt de scène vrolijk en zorgeloos\"? Dan denk je dat de muziek de scène vrolijk maakt. Dat doen snelle, lichte tonen, maar hier zijn de tonen laag en traag.",
+    "Koos je \"het vertelt het publiek wie het meisje is\"? Dan denk je dat de muziek de naam vertelt. Muziek geeft een gevoel, geen gegevens over een personage."
+   ],
+   "uh": "Wat voel je erbij?",
+   "ctx": "Een filmfragment. Beeld: een meisje loopt alleen door een donkere gang, de camera filmt haar van achteren en komt langzaam dichterbij. Geluid: lage, trage tonen die steeds harder worden, daarna een krakende deur die langzaam openzwaait."
+  },
+  {
+   "v": "Waarom filmt de camera het meisje van achteren?",
+   "o": [
+    "de maker vindt haar gezicht niet mooi genoeg",
+    "de gang past anders niet goed in beeld",
+    "de acteurs vinden dit het makkelijkst",
+    "je ziet niet wat zij ziet, dat maakt het spannend"
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 1,
+   "u": "Camerastandpunt = effect.",
+   "uo": [
+    "Koos je \"de maker vindt haar gezicht niet mooi genoeg\"? Dan denk je dat de maker haar gezicht verbergt. Dat is een gezochte uitleg, de keuze past bij de spanning van de scène.",
+    "Koos je \"de gang past anders niet goed in beeld\"? Dan denk je dat dit een technisch probleem is. Een camera kan de gang ook van voren tonen, dus de reden is de spanning.",
+    "Koos je \"de acteurs vinden dit het makkelijkst\"? Dan denk je dat het om gemak gaat. Een maker kiest een camerastandpunt voor het effect, niet voor het gemak.",
+    "Klopt: je weet niet wat voor haar ligt, dus je blijft in spanning."
+   ],
+   "uh": "Wat weet je niet?",
+   "ctx": "Een filmfragment. Beeld: een meisje loopt alleen door een donkere gang, de camera filmt haar van achteren en komt langzaam dichterbij. Geluid: lage, trage tonen die steeds harder worden, daarna een krakende deur die langzaam openzwaait."
+  },
+  {
+   "v": "Welk beeld en geluid horen in de reclame bij elkaar?",
+   "o": [
+    "de rots in zee bij een dreigende stem",
+    "lachende jongeren bij vrolijke muziek",
+    "het blikje bij een muziekstuk zonder ritme",
+    "de jongeren bij het geluid van een alarm"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 0,
+   "u": "Beeld en geluid versterken elkaar.",
+   "uo": [
+    "Koos je \"de rots in zee bij een dreigende stem\"? Dan denk je dat de rots bij een dreigende stem past. Zo een stem hoor je niet in dit fragment, de stem klinkt juist vrolijk.",
+    "Klopt: beeld en geluid vertellen hier samen dat de drank vrolijk en vrij maakt.",
+    "Koos je \"het blikje bij een muziekstuk zonder ritme\"? Dan denk je dat het blikje bij zo een stilte past. In de reclame klinkt vrolijke popmuziek, die het plezier benadrukt.",
+    "Koos je \"de jongeren bij het geluid van een alarm\"? Dan denk je dat een alarm hoort bij de springende jongeren. Dat geluid is er niet, de muziek is juist vrolijk."
+   ],
+   "uh": "Wat hoor je erbij?",
+   "ctx": "Een tv-reclame voor een energiedrank. Beeld: jongeren springen lachend van een rots in zee, de camera zoomt in op het blikje in de hand van een jongen. Geluid: vrolijke popmuziek en een stem die zegt: \"Geef jezelf vleugels.\" Onderaan staat in kleine letters: \"Bevat veel suiker en cafeïne.\""
+  },
+  {
+   "v": "Welke bedoeling heeft deze reclame?",
+   "o": [
+    "de kijker leren veilig van een rots te springen",
+    "de kijker informeren over het zeewater",
+    "de kijker de drank laten kopen",
+    "de kijker waarschuwen voor te veel suiker"
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 3,
+   "u": "Reclame overtuigt.",
+   "uo": [
+    "Koos je \"de kijker leren veilig van een rots te springen\"? Dan denk je dat de reclame veiligheid leert. De reclame laat gewoon zien hoe leuk het is, en leert niets over veilig springen.",
+    "Koos je \"de kijker informeren over het zeewater\"? Dan denk je dat de reclame iets over zee vertelt. Zee is alleen de achtergrond, het product is het hoofdonderwerp.",
+    "Klopt: de reclame wil dat je de drank leuk vindt en daarna koopt.",
+    "Koos je \"de kijker waarschuwen voor te veel suiker\"? Dan denk je dat de reclame waarschuwt. De waarschuwing staat klein onderaan, de hoofdboodschap is kopen."
+   ],
+   "uh": "Waar draait het om?",
+   "ctx": "Een tv-reclame voor een energiedrank. Beeld: jongeren springen lachend van een rots in zee, de camera zoomt in op het blikje in de hand van een jongen. Geluid: vrolijke popmuziek en een stem die zegt: \"Geef jezelf vleugels.\" Onderaan staat in kleine letters: \"Bevat veel suiker en cafeïne.\""
+  },
+  {
+   "v": "Waar staat in de reclame de waarschuwing voor suiker?",
+   "o": [
+    "in kleine letters onderaan",
+    "luid uitgesproken door de stem",
+    "verwerkt in de vrolijke muziek",
+    "groot in beeld bij het blikje"
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 4,
+   "u": "Lees ook de kleine letters.",
+   "uo": [
+    "Klopt: de waarschuwing is er wel, maar valt weinig op naast de vrolijke beelden.",
+    "Koos je \"luid uitgesproken door de stem\"? Dan denk je dat de stem de waarschuwing zegt. De stem zegt iets heel anders, de waarschuwing staat alleen in tekst.",
+    "Koos je \"verwerkt in de vrolijke muziek\"? Dan denk je dat muziek de waarschuwing geeft. Muziek heeft geen woorden over suiker, de waarschuwing staat in tekst.",
+    "Koos je \"groot in beeld bij het blikje\"? Dan denk je dat de waarschuwing groot in beeld staat. Dat is niet zo, ze staat klein en onopvallend."
+   ],
+   "uh": "Waar moet je goed kijken?",
+   "ctx": "Een tv-reclame voor een energiedrank. Beeld: jongeren springen lachend van een rots in zee, de camera zoomt in op het blikje in de hand van een jongen. Geluid: vrolijke popmuziek en een stem die zegt: \"Geef jezelf vleugels.\" Onderaan staat in kleine letters: \"Bevat veel suiker en cafeïne.\""
+  },
+  {
+   "v": "Waarom is er in het nieuwsitem geen muziek?",
+   "o": [
+    "muziek past niet bij ernstig, zakelijk nieuws",
+    "muziek is bij nieuws verboden volgens de wet",
+    "de verslaggever mocht geen muziek kiezen",
+    "het nieuwsitem is te kort voor muziek"
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 2,
+   "u": "Geen muziek = zakelijk.",
+   "uo": [
+    "Klopt: bij ernstig nieuws wil de maker dat jij je op de feiten richt.",
+    "Koos je \"muziek is bij nieuws verboden volgens de wet\"? Dan denk je dat de wet muziek bij nieuws verbiedt. Dat is niet zo, het is een keuze van de maker.",
+    "Koos je \"de verslaggever mocht geen muziek kiezen\"? Dan denk je dat dit komt door een regel voor de verslaggever. De muziek is een bewuste keuze, geen verbod voor hem.",
+    "Koos je \"het nieuwsitem is te kort voor muziek\"? Dan denk je dat het item te kort is. Korte items hebben soms wel muziek, de reden is de zakelijke toon."
+   ],
+   "uh": "Welke toon past?",
+   "ctx": "Een nieuwsitem over een brand. Beeld: een brandweerman, op de achtergrond rook en een afzetlint. Geluid: alleen de zakelijke stem van de verslaggever: \"Bij de brand in de Kerkstraat raakte niemand gewond. De oorzaak wordt onderzocht.\" Er is geen muziek onder het item te horen."
+  },
+  {
+   "v": "Welke toon heeft de stem van de verslaggever?",
+   "o": [
+    "grappig en luchtig, om te vermaken",
+    "dreigend en spannend voor de sfeer",
+    "zakelijk en informerend",
+    "smekend en emotioneel, om te overtuigen"
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 3,
+   "u": "Zakelijk = alleen feiten.",
+   "uo": [
+    "Koos je \"grappig en luchtig, om te vermaken\"? Dan denk je dat de stem grappig is. Bij een brand past dat niet, en de woorden zijn zakelijk.",
+    "Koos je \"dreigend en spannend voor de sfeer\"? Dan denk je dat de stem dreigend is. De verslaggever blijft kalm, hij vertelt alleen wat er gebeurd is.",
+    "Klopt: hij noemt alleen feiten, zonder grapjes of overdrijving.",
+    "Koos je \"smekend en emotioneel, om te overtuigen\"? Dan denk je dat de stem smekend klinkt. Hij vraagt niets van je, hij informeert alleen."
+   ],
+   "uh": "Hoe klinkt hij?",
+   "ctx": "Een nieuwsitem over een brand. Beeld: een brandweerman, op de achtergrond rook en een afzetlint. Geluid: alleen de zakelijke stem van de verslaggever: \"Bij de brand in de Kerkstraat raakte niemand gewond. De oorzaak wordt onderzocht.\" Er is geen muziek onder het item te horen."
+  },
+  {
+   "v": "Welk beeld toont het filmpje over pesten?",
+   "o": [
+    "een groep leerlingen die samen eet",
+    "een jongen die alleen aan tafel zit",
+    "een mentor die met de jongen praat",
+    "een klas die lacht om een grap"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 0,
+   "u": "Kijk wie er in beeld is.",
+   "uo": [
+    "Koos je \"een groep leerlingen die samen eet\"? Dan denk je dat een groep leerlingen in beeld is. Het filmpje laat juist iemand zien die alleen zit, dus dat klopt niet.",
+    "Klopt: dit beeld laat zien hoe eenzaam het kan zijn om gepest te worden.",
+    "Koos je \"een mentor die met de jongen praat\"? Dan denk je dat de mentor in beeld is. De mentor wordt alleen aan het eind genoemd, in tekst en niet in beeld.",
+    "Koos je \"een klas die lacht om een grap\"? Dan denk je dat de klas lacht om een grap. Het gelach is ver weg te horen, maar de klas is niet in beeld."
+   ],
+   "uh": "Wat zie je?",
+   "ctx": "Een filmpje van de school over pesten. Beeld: een jongen zit alleen aan een tafel in de kantine, de camera filmt hem van bovenaf. Geluid: stilte, alleen gelach in de verte. Aan het eind staat in beeld: \"Zeg er iets van. Praat met je mentor.\""
+  },
+  {
+   "v": "Waarom hoor je in het filmpje alleen gelach in de verte?",
+   "o": [
+    "de maker is de muziek vergeten",
+    "de jongen lacht zelf in de verte",
+    "in een kantine moet het altijd stil zijn",
+    "zo voelt de jongen zich buitengesloten"
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 2,
+   "u": "Geluid vertelt het gevoel.",
+   "uo": [
+    "Koos je \"de maker is de muziek vergeten\"? Dan denk je dat de muziek per ongeluk ontbreekt. Het ontbreken van muziek is een keuze, die de eenzaamheid versterkt.",
+    "Koos je \"de jongen lacht zelf in de verte\"? Dan denk je dat de jongen lacht. Hij zit alleen en lacht niet, het gelach komt van anderen.",
+    "Koos je \"in een kantine moet het altijd stil zijn\"? Dan denk je dat het om een regel in de kantine gaat. Dat is niet de reden, het geluid is gekozen voor het gevoel.",
+    "Klopt: het gelach klinkt ver weg, dus de jongen hoort er niet bij."
+   ],
+   "uh": "Wie lacht er?",
+   "ctx": "Een filmpje van de school over pesten. Beeld: een jongen zit alleen aan een tafel in de kantine, de camera filmt hem van bovenaf. Geluid: stilte, alleen gelach in de verte. Aan het eind staat in beeld: \"Zeg er iets van. Praat met je mentor.\""
+  },
+  {
+   "v": "Welke aanwijzing laat zien dat de video reclame is?",
+   "o": [
+    "de snelle beelden van de slanke persoon",
+    "de tekst \"Betaald door de fabrikant\"",
+    "de stem van de zanger zelf",
+    "dat de video heel kort duurt"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 4,
+   "u": "Zoek de vermelding.",
+   "uo": [
+    "Koos je \"de snelle beelden van de slanke persoon\"? Dan denk je dat snelle beelden reclame bewijzen. Ook gewone video's hebben soms snelle beelden, dus dit bewijst niets.",
+    "Klopt: zo een vermelding laat zien dat een bedrijf voor de video betaalde.",
+    "Koos je \"de stem van de zanger zelf\"? Dan denk je dat zijn stem de aanwijzing is. Een bekende stem kan ook in een gewone video zitten, dus dit bewijst niets.",
+    "Koos je \"dat de video heel kort duurt\"? Dan denk je dat korte video's reclame zijn. Veel gewone video's zijn ook kort, dus dit bewijst niets."
+   ],
+   "uh": "Wat staat onder de video?",
+   "ctx": "Een korte video op sociale media. Beeld: een beroemde zanger houdt een flesje afslankdrank omhoog, daarna snelle beelden van een slanke persoon. Geluid: een stem zegt: \"Binnen een week tien kilo kwijt!\" Onder de video staat: \"Betaald door de fabrikant.\""
+  },
+  {
+   "v": "Waarom zegt de stem \"binnen een week tien kilo kwijt\"?",
+   "o": [
+    "om je met een grote belofte te overtuigen",
+    "omdat het een bewezen feit is",
+    "omdat de zanger het zelf getest heeft",
+    "omdat de wet een belofte eist"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 3,
+   "u": "Een belofte is geen bewijs.",
+   "uo": [
+    "Klopt: zo een belofte maakt de drank aantrekkelijk, maar bewijst niets.",
+    "Koos je \"omdat het een bewezen feit is\"? Dan denk je dat de zin een feit is. Er wordt geen bewijs getoond, het is dus een belofte en geen feit.",
+    "Koos je \"omdat de zanger het zelf getest heeft\"? Dan denk je dat de zanger de drank testte. Dat staat nergens in het fragment, je weet het niet.",
+    "Koos je \"omdat de wet een belofte eist\"? Dan denk je dat de wet dit voorschrijft. Dat is niet zo, het is een keuze van de maker om te overtuigen."
+   ],
+   "uh": "Wie wil iets verkopen?",
+   "ctx": "Een korte video op sociale media. Beeld: een beroemde zanger houdt een flesje afslankdrank omhoog, daarna snelle beelden van een slanke persoon. Geluid: een stem zegt: \"Binnen een week tien kilo kwijt!\" Onder de video staat: \"Betaald door de fabrikant.\""
+  },
+  {
+   "v": "Waarom moet je de belofte van tien kilo niet zomaar geloven?",
+   "o": [
+    "beroemde mensen liegen altijd in video's",
+    "een stem in een video is nooit waar",
+    "tien kilo kwijtraken is voor niemand mogelijk",
+    "de maker wil de drank verkopen en kan overdrijven"
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 4,
+   "u": "Check de bron en het bewijs.",
+   "uo": [
+    "Koos je \"beroemde mensen liegen altijd in video's\"? Dan denk je dat beroemdheden altijd liegen. Dat is te algemeen gezegd, de reden is dat zij betaald worden om te overtuigen.",
+    "Koos je \"een stem in een video is nooit waar\"? Dan denk je dat een stem nooit de waarheid zegt. Dat klopt niet, je moet alleen controleren of een claim bewezen is.",
+    "Koos je \"tien kilo kwijtraken is voor niemand mogelijk\"? Dan denk je dat dit nooit kan. Dat weet je niet, de reden is dat de belofte niet bewezen wordt.",
+    "Klopt: wie iets verkoopt, laat het product vaak mooier lijken dan het is."
+   ],
+   "uh": "Wie verdient eraan?",
+   "ctx": "Een korte video op sociale media. Beeld: een beroemde zanger houdt een flesje afslankdrank omhoog, daarna snelle beelden van een slanke persoon. Geluid: een stem zegt: \"Binnen een week tien kilo kwijt!\" Onder de video staat: \"Betaald door de fabrikant.\""
+  },
+  {
+   "v": "Waarom zoomt de camera in op het blikje in de hand?",
+   "o": [
+    "omdat het blikje het enige is dat beweegt",
+    "omdat de jongeren niet in beeld willen",
+    "zodat het product bij de kijker blijft hangen",
+    "omdat de zee anders te groot lijkt"
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 1,
+   "u": "Close-up = nadruk.",
+   "uo": [
+    "Koos je \"omdat het blikje het enige is dat beweegt\"? Dan denk je dat het blikje beweegt. Juist de jongeren springen en bewegen, dus dit is niet de reden.",
+    "Koos je \"omdat de jongeren niet in beeld willen\"? Dan denk je dat de jongeren weg willen. Zij blijven in beeld, de camera kiest alleen een nieuw standpunt voor het blikje.",
+    "Klopt: een close-up van het blikje laat jou onthouden welk product het is.",
+    "Koos je \"omdat de zee anders te groot lijkt\"? Dan denk je dat de zee te groot is. Dat is geen reden voor een close-up, de zoom benadrukt het product."
+   ],
+   "uh": "Wat moet je onthouden?",
+   "ctx": "Een tv-reclame voor een energiedrank. Beeld: jongeren springen lachend van een rots in zee, de camera zoomt in op het blikje in de hand van een jongen. Geluid: vrolijke popmuziek en een stem die zegt: \"Geef jezelf vleugels.\" Onderaan staat in kleine letters: \"Bevat veel suiker en cafeïne.\""
+  },
+  {
+   "v": "Welk gevoel wil de reclame met beeld en geluid oproepen?",
+   "o": [
+    "angst en spanning bij het springen",
+    "verdriet en medelijden met de jongeren",
+    "vrijheid en plezier met de drank",
+    "verbazing over de lage prijs van het blikje"
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 0,
+   "u": "Beeld en geluid roepen een gevoel op.",
+   "uo": [
+    "Koos je \"angst en spanning bij het springen\"? Dan denk je dat het fragment angst oproept. De jongeren lachen en de muziek is vrolijk, dus er is geen spanning.",
+    "Koos je \"verdriet en medelijden met de jongeren\"? Dan denk je dat het fragment medelijden oproept. De jongeren lachen, en de muziek klinkt blij.",
+    "Klopt: lachende jongeren, zee en vrolijke muziek horen bij een gevoel van vrijheid.",
+    "Koos je \"verbazing over de lage prijs van het blikje\"? Dan denk je dat het om de prijs gaat. De prijs wordt niet genoemd, het gaat om het gevoel."
+   ],
+   "uh": "Wat voel je erbij?",
+   "ctx": "Een tv-reclame voor een energiedrank. Beeld: jongeren springen lachend van een rots in zee, de camera zoomt in op het blikje in de hand van een jongen. Geluid: vrolijke popmuziek en een stem die zegt: \"Geef jezelf vleugels.\" Onderaan staat in kleine letters: \"Bevat veel suiker en cafeïne.\""
+  },
+  {
+   "v": "Welke oproep doet het filmpje over pesten aan het eind?",
+   "o": [
+    "stuur het filmpje door naar de pester",
+    "kijk het filmpje nog een keer helemaal",
+    "blijf alleen zitten tot het over is",
+    "praat erover met je mentor"
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 3,
+   "u": "Een oproep zegt wat je moet doen.",
+   "uo": [
+    "Koos je \"stuur het filmpje door naar de pester\"? Dan denk je dat de oproep dit zegt. De tekst vraagt iets anders, namelijk om met je mentor te praten.",
+    "Koos je \"kijk het filmpje nog een keer helemaal\"? Dan denk je dat de oproep is om nog eens te kijken. Dat staat er niet, er staat dat je met je mentor moet praten.",
+    "Koos je \"blijf alleen zitten tot het over is\"? Dan denk je dat de oproep dit zegt. De tekst zegt juist het tegenovergestelde, namelijk dat je er iets van moet zeggen.",
+    "Klopt: de tekst zegt wat de kijker kan doen, en dat is een oproep."
+   ],
+   "uh": "Wat staat er in beeld?",
+   "ctx": "Een filmpje van de school over pesten. Beeld: een jongen zit alleen aan een tafel in de kantine, de camera filmt hem van bovenaf. Geluid: stilte, alleen gelach in de verte. Aan het eind staat in beeld: \"Zeg er iets van. Praat met je mentor.\""
+  },
+  {
+   "v": "Welk effect heeft het filmen van de jongen van bovenaf?",
+   "o": [
+    "hij lijkt klein en alleen",
+    "hij lijkt groot en sterk",
+    "hij lijkt in het middelpunt van de groep",
+    "hij lijkt blij en geliefd bij iedereen"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 1,
+   "u": "Van bovenaf = klein.",
+   "uo": [
+    "Klopt: van bovenaf lijkt iemand kleiner en weerlozer dan in een gewone opname.",
+    "Koos je \"hij lijkt groot en sterk\"? Dan denk je dat van bovenaf iemand sterk lijkt. Het werkt juist andersom, van bovenaf lijkt iemand klein.",
+    "Koos je \"hij lijkt in het middelpunt van de groep\"? Dan denk je dat hij middelpunt is. Hij zit alleen, dus dat effect past niet.",
+    "Koos je \"hij lijkt blij en geliefd bij iedereen\"? Dan denk je dat het beeld blijdschap toont. Dat effect past niet bij een jongen alleen, die zich buitengesloten voelt."
+   ],
+   "uh": "Hoe zie je hem?",
+   "ctx": "Een filmpje van de school over pesten. Beeld: een jongen zit alleen aan een tafel in de kantine, de camera filmt hem van bovenaf. Geluid: stilte, alleen gelach in de verte. Aan het eind staat in beeld: \"Zeg er iets van. Praat met je mentor.\""
+  },
+  {
+   "v": "Hoe zou het filmfragment zonder de muziek en het kraken voelen?",
+   "o": [
+    "precies even spannend, want geluid telt niet mee",
+    "veel minder spannend",
+    "vrolijker en luchtiger dan met de muziek",
+    "alleen maar saaier voor de acteurs zelf"
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 2,
+   "u": "Geluid bouwt spanning op.",
+   "uo": [
+    "Koos je \"precies even spannend, want geluid telt niet mee\"? Dan denk je dat geluid niets toevoegt. Geluid doet veel mee, vooral bij spanning.",
+    "Klopt: zonder geluid mist de kijker de spanning die het fragment opbouwt.",
+    "Koos je \"vrolijker en luchtiger dan met de muziek\"? Dan denk je dat stilte het vrolijk maakt. Het wordt eerder saai, dan vrolijk.",
+    "Koos je \"alleen maar saaier voor de acteurs zelf\"? Dan denk je dat het alleen om de acteurs gaat. Het gaat om wat de kijker voelt, en die voelt minder spanning."
+   ],
+   "uh": "Wat mis je zonder geluid?",
+   "ctx": "Een filmfragment. Beeld: een meisje loopt alleen door een donkere gang, de camera filmt haar van achteren en komt langzaam dichterbij. Geluid: lage, trage tonen die steeds harder worden, daarna een krakende deur die langzaam openzwaait."
+  },
+  {
+   "v": "Waaraan merk je dat het nieuwsitem objectief wil zijn?",
+   "o": [
+    "er klinkt spannende muziek onder het item",
+    "de verslaggever zegt wat hij ervan vindt",
+    "de beelden zijn sterk bewerkt vooraf",
+    "er worden alleen feiten genoemd"
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 4,
+   "u": "Objectief = alleen feiten.",
+   "uo": [
+    "Koos je \"er klinkt spannende muziek onder het item\"? Dan denk je dat muziek objectief maakt. Er is geen muziek, en muziek maakt een item eerder subjectief.",
+    "Koos je \"de verslaggever zegt wat hij ervan vindt\"? Dan denk je dat de verslaggever zijn mening geeft. Dat doet hij niet, hij noemt alleen de feiten.",
+    "Koos je \"de beelden zijn sterk bewerkt vooraf\"? Dan denk je dat bewerkte beelden objectief zijn. Dat is niet zo, en er is niets over bewerking te zien.",
+    "Klopt: de verslaggever geeft geen mening en noemt alleen wat er gebeurd is."
+   ],
+   "uh": "Wat zegt de verslaggever?",
+   "ctx": "Een nieuwsitem over een brand. Beeld: een brandweerman, op de achtergrond rook en een afzetlint. Geluid: alleen de zakelijke stem van de verslaggever: \"Bij de brand in de Kerkstraat raakte niemand gewond. De oorzaak wordt onderzocht.\" Er is geen muziek onder het item te horen."
+  },
+  {
+   "v": "Welke informatie geeft de verslaggever nog niet?",
+   "o": [
+    "de oorzaak van de brand",
+    "of er gewonden zijn gevallen",
+    "waar de brand heeft plaatsgevonden",
+    "dat de brand heeft plaatsgevonden"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 0,
+   "u": "Luister naar wat er ontbreekt.",
+   "uo": [
+    "Klopt: hij zegt dat de oorzaak nog wordt onderzocht, dus die weet hij nog niet.",
+    "Koos je \"of er gewonden zijn gevallen\"? Dan denk je dat de verslaggever over gewonden zwijgt. Hij zegt duidelijk dat niemand gewond raakte, dus over de slachtoffers weet je alles.",
+    "Koos je \"waar de brand heeft plaatsgevonden\"? Dan denk je dat de plek ontbreekt. Je hoort echter de straatnaam Kerkstraat, dus de plek van de brand is bekend.",
+    "Koos je \"dat de brand heeft plaatsgevonden\"? Dan denk je dat de brand zelf onzeker is. De verslaggever vertelt er gewoon over, dus dat de brand is geweest staat vast."
+   ],
+   "uh": "Wat wordt nog onderzocht?",
+   "ctx": "Een nieuwsitem over een brand. Beeld: een brandweerman, op de achtergrond rook en een afzetlint. Geluid: alleen de zakelijke stem van de verslaggever: \"Bij de brand in de Kerkstraat raakte niemand gewond. De oorzaak wordt onderzocht.\" Er is geen muziek onder het item te horen."
+  }
+ ],
+ "oe": [
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een tv-reclame voor een energiedrank. Beeld: jongeren springen lachend van een rots in zee, de camera zoomt in op het blikje in de hand van een jongen. Geluid: vrolijke popmuziek en een stem die zegt: \"Geef jezelf vleugels.\" Onderaan staat in kleine letters: \"Bevat veel suiker en cafeïne.\"",
+   "v": "Noem twee dingen uit beeld en geluid die plezier uitstralen en leg uit wat de bedoeling van de reclame is.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Bijvoorbeeld: lachende jongeren en vrolijke popmuziek (2p). Bedoeling: de kijker de drank laten kopen, dus overtuigen (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een nieuwsitem over een brand. Beeld: een brandweerman, op de achtergrond rook en een afzetlint. Geluid: alleen de zakelijke stem van de verslaggever: \"Bij de brand in de Kerkstraat raakte niemand gewond. De oorzaak wordt onderzocht.\" Er is geen muziek onder het item te horen.",
+   "v": "Welke twee kenmerken laten zien dat dit nieuwsitem wil informeren?",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Er wordt alleen met een zakelijke stem verteld wat er gebeurd is (1p) en er is geen muziek of spanning toegevoegd (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een filmfragment. Beeld: een meisje loopt alleen door een donkere gang, de camera filmt haar van achteren en komt langzaam dichterbij. Geluid: lage, trage tonen die steeds harder worden, daarna een krakende deur die langzaam openzwaait.",
+   "v": "Noem twee middelen waarmee de maker spanning opbouwt en leg uit hoe elk werkt.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Camera van achteren: je ziet niet wat het meisje ziet (2p). Lage, steeds luidere muziek en een krakende deur: ze geven een onheilspellend gevoel (2p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een filmpje van de school over pesten. Beeld: een jongen zit alleen aan een tafel in de kantine, de camera filmt hem van bovenaf. Geluid: stilte, alleen gelach in de verte. Aan het eind staat in beeld: \"Zeg er iets van. Praat met je mentor.\"",
+   "v": "Hoe laat de maker zien dat de jongen buitengesloten is? Noem één beeldkeuze en één geluidskeuze.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Beeld: de jongen zit alleen en wordt van bovenaf gefilmd, dus klein (2p). Geluid: alleen gelach in de verte, waar hij niet bij hoort (2p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een korte video op sociale media. Beeld: een beroemde zanger houdt een flesje afslankdrank omhoog, daarna snelle beelden van een slanke persoon. Geluid: een stem zegt: \"Binnen een week tien kilo kwijt!\" Onder de video staat: \"Betaald door de fabrikant.\"",
+   "v": "Waarom moet je kritisch zijn over deze video? Noem twee redenen.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "De video is betaald door de fabrikant (1p). De belofte van tien kilo wordt niet bewezen en kan overdreven zijn (2p)."
+  }
+ ]
+}

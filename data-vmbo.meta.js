@@ -109,6 +109,27 @@ var VAKKEN_VMBO = [
       "nOe": 5,
       "nBeg": 12,
       "hasSam": true
+     },
+     {
+      "id": "A5",
+      "lo": "nl.A.5",
+      "gs": 2,
+      "naam": "Beeld en geluid interpreteren",
+      "beschrijving": "Je kijkt en luistert naar een fragment en legt uit wat beeld, camera, muziek en stem je vertellen, wat de maker wil en of je het kunt vertrouwen.",
+      "ceStatus": "SE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Beeld en geluid samen",
+       "Camerastandpunten",
+       "Muziek, stem en stilte",
+       "De bedoeling van de maker",
+       "Betrouwbaarheid en bron"
+      ],
+      "nSv": 26,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
      }
     ]
    },
