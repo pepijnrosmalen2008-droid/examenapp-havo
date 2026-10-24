@@ -24,7 +24,30 @@ var VAKKEN_VMBO = [
     "nSv": 31,
     "nOe": 0,
     "nBeg": 10,
-    "hasSam": true
+    "hasSam": true,
+    "leerdoelen": [
+     {
+      "id": "A1",
+      "lo": "nl.A.1",
+      "gs": 2,
+      "naam": "Feit en mening onderscheiden",
+      "beschrijving": "Je hoort of ziet een tekst en weet of een uitspraak een feit of een mening is. Je let op woorden die een oordeel geven en je controleert wat te controleren is.",
+      "ceStatus": "SE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Feit of mening: het verschil",
+       "Woorden die een mening verraden",
+       "Een feit controleren",
+       "Feit en mening door elkaar",
+       "Wie zegt het en waarom"
+      ],
+      "nSv": 26,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
+     }
+    ]
    },
    {
     "id": "B",

@@ -867,7 +867,7 @@ function openDomein(domId,_noHash){
   }
 
   const lvlBadge=document.getElementById('dom-level-badge');
-  if(lvlBadge)lvlBadge.textContent=APP_LEVEL==='vwo'?'VWO':'HAVO';
+  if(lvlBadge)lvlBadge.textContent=APP_LEVEL==='vwo'?'VWO':APP_LEVEL==='vmbo'?'VMBO':'HAVO';
 
   const r=getDomeinBestPct(v.id,d.id);
   const _pbData=getPB(v.id,d.id);

@@ -1,0 +1,663 @@
+{
+ "id": "A1",
+ "lo": "nl.A.1",
+ "gs": 2,
+ "naam": "Feit en mening onderscheiden",
+ "beschrijving": "Je hoort of ziet een tekst en weet of een uitspraak een feit of een mening is. Je let op woorden die een oordeel geven en je controleert wat te controleren is.",
+ "ceStatus": "SE",
+ "binas": "",
+ "val": "",
+ "onderwerpen": [
+  "Feit of mening: het verschil",
+  "Woorden die een mening verraden",
+  "Een feit controleren",
+  "Feit en mening door elkaar",
+  "Wie zegt het en waarom"
+ ],
+ "sam": "Een feit is te controleren en waar voor iedereen: je kunt het tellen, meten of opzoeken. Een mening is een persoonlijk oordeel, zoals de mooiste, te warm of vind ik. Een mening blijft een mening, ook als iemand die stellig zegt of als een bekend iemand die zegt. In een gesproken tekst staan feiten en meningen vaak door elkaar, daarom let je op oordeelswoorden en op wie iets zegt en wat die persoon ermee wil bereiken.",
+ "begrippen": [
+  {
+   "t": "Feit",
+   "d": "Iets wat je kunt controleren en wat voor iedereen waar is."
+  },
+  {
+   "t": "Mening",
+   "d": "Een persoonlijk oordeel dat je niet kunt bewijzen."
+  },
+  {
+   "t": "Oordeel",
+   "d": "Wat iemand vindt van iets, zoals mooi, lekker of te duur."
+  },
+  {
+   "t": "Controleren",
+   "d": "Nagaan of iets klopt, door te tellen, te meten of op te zoeken."
+  },
+  {
+   "t": "Bron",
+   "d": "Een plek waar je informatie vindt, zoals een boek of een website."
+  },
+  {
+   "t": "Betrouwbaar",
+   "d": "Wat je kunt geloven, omdat de bron het goed weet en niets te winnen heeft."
+  },
+  {
+   "t": "Belang",
+   "d": "Wat iemand wil bereiken of verdienen met wat hij zegt."
+  },
+  {
+   "t": "Signaalwoord",
+   "d": "Een woord dat laat zien wat voor soort uitspraak het is, zoals vind ik."
+  },
+  {
+   "t": "Aantal",
+   "d": "Een getal dat je kunt tellen, zoals dertig stoelen."
+  },
+  {
+   "t": "Meting",
+   "d": "Het vaststellen van een maat, zoals een lengte of een temperatuur."
+  },
+  {
+   "t": "Overtuigen",
+   "d": "Iemand proberen te laten geloven wat jij vindt."
+  },
+  {
+   "t": "Uitspraak",
+   "d": "Een zin die iemand zegt."
+  }
+ ],
+ "sv": [
+  {
+   "v": "Welke zin is een feit?",
+   "o": [
+    "\"Utrecht is de gezelligste stad.\"",
+    "\"Utrecht ligt in Nederland.\"",
+    "\"Utrecht is mooier dan Rotterdam.\"",
+    "\"Ik vind Utrecht heerlijk om te wonen.\""
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 0,
+   "u": "Een feit kun je controleren.",
+   "uo": [
+    "Koos je \"Utrecht is de gezelligste stad.\"? Dan denk je dat gezellig een feit is. Dat is een oordeel, en iedereen vindt iets anders gezellig.",
+    "Klopt: je kunt opzoeken dat Utrecht in Nederland ligt, dus het is een feit.",
+    "Koos je \"Utrecht is mooier dan Rotterdam.\"? Dan denk je dat deze vergelijking een feit is. \"Mooier\" is een oordeel, en geen meting.",
+    "Koos je \"Ik vind Utrecht heerlijk om te wonen.\"? Dan denk je dat dit een feit is. Het gaat over wat jij vindt, dus het is een mening."
+   ],
+   "uh": "Kun je het nagaan?"
+  },
+  {
+   "v": "Welke zin is een mening?",
+   "o": [
+    "\"Pizza komt uit Italië.\"",
+    "\"Een pizza heeft een ronde bodem.\"",
+    "\"Er staat een pizza in de oven.\"",
+    "\"Pizza is de lekkerste maaltijd.\""
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 0,
+   "u": "Een mening is een persoonlijk oordeel.",
+   "uo": [
+    "Koos je \"Pizza komt uit Italië.\"? Dan denk je dat dit een oordeel is. Waar iets vandaan komt, kun je opzoeken, dus het is een feit.",
+    "Koos je \"Een pizza heeft een ronde bodem.\"? Dan denk je dat dit een mening is. Het beschrijft de vorm van een pizza, en die kun je zien en meten.",
+    "Koos je \"Er staat een pizza in de oven.\"? Dan denk je dat deze zin iets vindt. Hij meldt alleen wat er in de oven staat, dus het is te controleren.",
+    "Klopt: \"de lekkerste\" is een persoonlijk oordeel."
+   ],
+   "uh": "Is het smaak?"
+  },
+  {
+   "v": "Welk woord laat vaak een mening zien?",
+   "o": [
+    "mooiste",
+    "dinsdag",
+    "vijftig meter",
+    "gisteren"
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 1,
+   "u": "Mooiste, lekkerste, beste: oordeel.",
+   "uo": [
+    "Klopt: \"mooiste\" is een oordeel dat zegt wat iemand vindt en geen gegeven.",
+    "Koos je \"dinsdag\"? Dan denk je dat een dag een oordeel geeft. \"Dinsdag\" noemt alleen een dag, dat is een gegeven.",
+    "Koos je \"vijftig meter\"? Dan denk je dat een maat een mening is. \"Vijftig meter\" is een meetbaar gegeven, geen oordeel.",
+    "Koos je \"gisteren\"? Dan denk je dat een tijdsaanduiding een mening is. \"Gisteren\" noemt een moment, dat is een gegeven."
+   ],
+   "uh": "Zegt het woord wat iemand vindt?"
+  },
+  {
+   "v": "Hoe controleer je een feit?",
+   "o": [
+    "door het harder te zeggen",
+    "door te vragen wie het leuk vindt",
+    "door het na te gaan",
+    "door het twee keer te herhalen"
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 2,
+   "u": "Controleer een feit in een betrouwbare bron.",
+   "uo": [
+    "Koos je \"door het harder te zeggen\"? Dan denk je dat luider praten een feit bewijst. Hard zeggen maakt iets niet waar, je moet het nagaan.",
+    "Koos je \"door te vragen wie het leuk vindt\"? Dan denk je dat leuk vinden een feit controleert. Dat gaat over meningen, niet over wat waar is.",
+    "Klopt: je zoekt het op in een betrouwbare bron of je meet het zelf na.",
+    "Koos je \"door het twee keer te herhalen\"? Dan denk je dat herhalen iets bewijst. Herhalen maakt iets niet waar, je moet het nagaan."
+   ],
+   "uh": "Waar kun je het opzoeken?"
+  },
+  {
+   "v": "Welke zin uit het fragment is een feit?",
+   "o": [
+    "\"Het is hier veel te warm.\"",
+    "\"Dat is eigenlijk te vroeg, vind ik.\"",
+    "\"Ons lokaal heeft dertig stoelen.\"",
+    "\"Mijn broer vindt school nuttig.\""
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 0,
+   "u": "Tellen kan: een feit.",
+   "uo": [
+    "Koos je \"Het is hier veel te warm.\"? Dan denk je dat \"te warm\" een feit is. Wat te warm is, verschilt per persoon, dus het is een oordeel.",
+    "Koos je \"Dat is eigenlijk te vroeg, vind ik.\"? Dan denk je dat dit een feit is. \"Vind ik\" laat zien dat het een mening is, geen feit.",
+    "Klopt: je kunt de stoelen in het lokaal tellen, dus het is een feit.",
+    "Koos je \"Mijn broer vindt school nuttig.\"? Dan denk je dat dit in het fragment staat. De zin staat er niet, en gaat bovendien over wat iemand vindt."
+   ],
+   "uh": "Kun je het tellen?",
+   "ctx": "Een leerling zegt in de klas: \"Ons lokaal heeft dertig stoelen. Het is hier veel te warm. De les begint om half negen. Dat is eigenlijk te vroeg, vind ik. Mijn broer begint pas om negen uur.\""
+  },
+  {
+   "v": "Welke zin is een mening?",
+   "o": [
+    "\"te vroeg, vind ik\"",
+    "\"Ons lokaal heeft dertig stoelen.\"",
+    "\"De les begint om half negen.\"",
+    "\"Mijn broer begint pas om negen uur.\""
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 0,
+   "u": "\"Vind ik\" laat een mening zien.",
+   "uo": [
+    "Klopt: \"te vroeg, vind ik\" is een oordeel van de leerling zelf.",
+    "Koos je \"Ons lokaal heeft dertig stoelen.\"? Dan denk je dat dit een oordeel is. Je kunt de stoelen tellen, dus het is een feit.",
+    "Koos je \"De les begint om half negen.\"? Dan denk je dat dit een mening is. Het is te controleren op het rooster, dus het is een feit.",
+    "Koos je \"Mijn broer begint pas om negen uur.\"? Dan denk je dat dit een mening is. Je kunt het nagaan, dus het is een feit."
+   ],
+   "uh": "Staat er \"vind ik\" of een oordeel?",
+   "ctx": "Een leerling zegt in de klas: \"Ons lokaal heeft dertig stoelen. Het is hier veel te warm. De les begint om half negen. Dat is eigenlijk te vroeg, vind ik. Mijn broer begint pas om negen uur.\""
+  },
+  {
+   "v": "Waarom is \"de beste telefoon van dit jaar\" een mening?",
+   "o": [
+    "omdat er een telefoon in staat",
+    "omdat het over dit jaar gaat",
+    "omdat het te controleren is",
+    "\"de beste\" is een oordeel"
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 1,
+   "u": "\"De beste\" is een oordeel.",
+   "uo": [
+    "Koos je \"omdat er een telefoon in staat\"? Dan denk je dat een telefoon een mening maakt. Een telefoon is een ding, de mening zit in \"de beste\".",
+    "Koos je \"omdat het over dit jaar gaat\"? Dan denk je dat het jaartal de mening maakt. De tijd is een gegeven, de mening zit in \"de beste\".",
+    "Koos je \"omdat het te controleren is\"? Dan denk je dat een mening te controleren is. \"De beste\" is niet te meten, dus het is een oordeel.",
+    "Klopt: wat het beste is, verschilt per persoon."
+   ],
+   "uh": "Is het meetbaar?"
+  },
+  {
+   "v": "Welke uitspraak in het fragment is een feit?",
+   "o": [
+    "fietsen is de gezondste manier om naar school te gaan",
+    "driehonderd fietsen in de stalling",
+    "de bus is veel te duur voor leerlingen",
+    "de presentator haat wachten bij de halte"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 0,
+   "u": "Tellen kan: een feit.",
+   "uo": [
+    "Koos je \"fietsen is de gezondste manier om naar school te...\"? Dan denk je dat dit een feit is. \"De gezondste\" is een oordeel, en de presentator zegt zelf \"vind ik\".",
+    "Klopt: je kunt de fietsen in de stalling tellen.",
+    "Koos je \"de bus is veel te duur voor leerlingen\"? Dan denk je dat dit een feit is. \"Te duur\" is een oordeel, want wat te duur is, verschilt per persoon.",
+    "Koos je \"de presentator haat wachten bij de halte\"? Dan denk je dat dit een feit over de school is. Het is een gevoel van de presentator, dus een mening."
+   ],
+   "uh": "Kun je de fietsen tellen?",
+   "ctx": "Presentator op Radio Zuid, ochtendprogramma: \"Op onze school staan driehonderd fietsen in de stalling. Fietsen is de gezondste manier om naar school te gaan, vind ik. Het kost ook bijna niets. De bus is veel te duur en ik haat wachten bij de halte.\""
+  },
+  {
+   "v": "Welke woorden in \"Fietsen is de gezondste manier om naar school te gaan, vind ik\" laten een mening zien?",
+   "o": [
+    "\"Fietsen\" en \"naar school\"",
+    "\"manier\" en \"gaan\"",
+    "alleen \"school\"",
+    "\"gezondste\" en \"vind ik\""
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 1,
+   "u": "Oordeelswoorden en \"vind ik\" verraden een mening.",
+   "uo": [
+    "Koos je \"Fietsen en naar school\"? Dan denk je dat deze woorden een mening zijn. Ze noemen het onderwerp, de mening zit in het oordeel.",
+    "Koos je \"manier en gaan\"? Dan denk je dat dit de mening is. Het zijn gewone woorden, de mening zit in \"gezondste\" en \"vind ik\".",
+    "Koos je \"alleen school\"? Dan denk je dat het woord \"school\" de mening laat zien. Het noemt een plek, en geeft geen oordeel.",
+    "Klopt: een oordeel en een signaal dat het zijn mening is."
+   ],
+   "uh": "Welke woorden oordelen?",
+   "ctx": "Presentator op Radio Zuid, ochtendprogramma: \"Op onze school staan driehonderd fietsen in de stalling. Fietsen is de gezondste manier om naar school te gaan, vind ik. Het kost ook bijna niets. De bus is veel te duur en ik haat wachten bij de halte.\""
+  },
+  {
+   "v": "Welke zin is een mening, ook al staat er geen \"vind ik\" in?",
+   "o": [
+    "\"Op onze school staan driehonderd fietsen in de stalling.\"",
+    "\"De bus is veel te duur.\"",
+    "\"Het programma is op de radio.\"",
+    "\"Dit gaat over fietsen naar school.\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 1,
+   "u": "Te duur is een oordeel.",
+   "uo": [
+    "Koos je \"Op onze school staan driehonderd fietsen in de...\"? Dan denk je dat dit een mening is. Het is te tellen, dus het is een feit.",
+    "Klopt: \"veel te duur\" is een oordeel, want wat te duur is verschilt per persoon.",
+    "Koos je \"Het programma is op de radio.\"? Dan denk je dat dit een mening is. Het is een feit over de uitzending, en staat ook niet in dit fragment als zin.",
+    "Koos je \"Dit gaat over fietsen naar school.\"? Dan denk je dat dit een mening is. Het beschrijft het onderwerp, dus het is een feit."
+   ],
+   "uh": "Is het een oordeel?",
+   "ctx": "Presentator op Radio Zuid, ochtendprogramma: \"Op onze school staan driehonderd fietsen in de stalling. Fietsen is de gezondste manier om naar school te gaan, vind ik. Het kost ook bijna niets. De bus is veel te duur en ik haat wachten bij de halte.\""
+  },
+  {
+   "v": "Hoe kun je controleren dat het zwembad vijftig meter lang is?",
+   "o": [
+    "de burgemeester vragen wat hij vindt",
+    "kijken of het zwembad mooi is",
+    "het bad nameten",
+    "het nieuws nog een keer luisteren"
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 2,
+   "u": "Controleer een lengte door te meten.",
+   "uo": [
+    "Koos je \"de burgemeester vragen wat hij vindt\"? Dan denk je dat de mening van de burgemeester de lengte controleert. Een lengte meet je, je vraagt niet wat iemand vindt.",
+    "Koos je \"kijken of het zwembad mooi is\"? Dan denk je dat mooi iets zegt over de lengte. Mooi is een oordeel, het zegt niets over de lengte.",
+    "Klopt: een lengte is te meten, dus je kunt het bad zelf nameten.",
+    "Koos je \"het nieuws nog een keer luisteren\"? Dan denk je dat herhalen de lengte controleert. Je hoort dan alleen hetzelfde, je moet nameten of opzoeken."
+   ],
+   "uh": "Kun je het meten?",
+   "ctx": "Een nieuwslezer zegt: \"Gisteren is in Utrecht een nieuw zwembad geopend. Het bad is vijftig meter lang. De burgemeester noemde het zwembad het mooiste van het land. Volgens de directeur komen er elke dag ongeveer driehonderd bezoekers.\""
+  },
+  {
+   "v": "Van wie is de mening dat het zwembad het mooiste van het land is?",
+   "o": [
+    "van de burgemeester",
+    "van de nieuwslezer",
+    "van de directeur",
+    "van alle inwoners van Utrecht"
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 3,
+   "u": "Let op wie de mening heeft.",
+   "uo": [
+    "Klopt: de nieuwslezer meldt wat de burgemeester vindt.",
+    "Koos je \"van de nieuwslezer\"? Dan denk je dat de nieuwslezer dit vindt. Hij meldt wat de burgemeester zei, en geeft zelf geen oordeel.",
+    "Koos je \"van de directeur\"? Dan denk je dat de directeur dit zegt. Volgens de directeur komen er bezoekers, dat is iets anders.",
+    "Koos je \"van alle inwoners van Utrecht\"? Dan denk je dat iedereen het vindt. Er staat alleen wat de burgemeester vindt, en niet wat alle inwoners vinden."
+   ],
+   "uh": "Wie zegt het?",
+   "ctx": "Een nieuwslezer zegt: \"Gisteren is in Utrecht een nieuw zwembad geopend. Het bad is vijftig meter lang. De burgemeester noemde het zwembad het mooiste van het land. Volgens de directeur komen er elke dag ongeveer driehonderd bezoekers.\""
+  },
+  {
+   "v": "Is \"Volgens de directeur komen er elke dag ongeveer driehonderd bezoekers\" een feit of een mening?",
+   "o": [
+    "een feit, je kunt het controleren",
+    "een mening, want de directeur zegt het",
+    "een mening, want \"ongeveer\" is vaag",
+    "geen van beide, want het is een vraag"
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 3,
+   "u": "Aantallen zijn te controleren.",
+   "uo": [
+    "Klopt: een aantal bezoekers is te tellen, dus je kunt de uitspraak controleren.",
+    "Koos je \"een mening, want de directeur zegt het\"? Dan denk je dat alles wat een persoon zegt een mening is. Een aantal bezoekers is te tellen, dus je kunt het controleren.",
+    "Koos je \"een mening, want ongeveer is vaag\"? Dan denk je dat \"ongeveer\" een mening maakt. Het gaat om een aantal, dat je kunt tellen.",
+    "Koos je \"geen van beide, want het is een vraag\"? Dan denk je dat het een vraag is. De zin vertelt iets, en is dus een uitspraak."
+   ],
+   "uh": "Kun je het tellen?",
+   "ctx": "Een nieuwslezer zegt: \"Gisteren is in Utrecht een nieuw zwembad geopend. Het bad is vijftig meter lang. De burgemeester noemde het zwembad het mooiste van het land. Volgens de directeur komen er elke dag ongeveer driehonderd bezoekers.\""
+  },
+  {
+   "v": "Waarom zegt de verkoper \"de beste aardbeien van de hele stad\"?",
+   "o": [
+    "omdat hij alle aardbeien heeft geproefd",
+    "omdat dit een feit is",
+    "hij wil aardbeien verkopen",
+    "omdat de klant dit vraagt"
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 4,
+   "u": "Een verkoper wil verkopen.",
+   "uo": [
+    "Koos je \"omdat hij alle aardbeien heeft geproefd\"? Dan denk je dat de verkoper het van alle stalletjes weet. Dat zegt hij niet, hij wil zijn eigen fruit verkopen.",
+    "Koos je \"omdat dit een feit is\"? Dan denk je dat \"de beste\" een feit is. Het is een oordeel, en een verkoper wil verkopen.",
+    "Klopt: een verkoper heeft er belang bij dat je gelooft dat zijn fruit het beste is.",
+    "Koos je \"omdat de klant dit vraagt\"? Dan denk je dat de klant dit vraagt. De verkoper roept het zelf, om aardbeien te verkopen."
+   ],
+   "uh": "Wie profiteert?",
+   "ctx": "Een verkoper op de markt roept: \"De beste aardbeien van de hele stad! Vandaag vers uit Limburg binnengekomen, twee euro per bakje. Niemand verkoopt lekkerder fruit dan ik. Kom maar proeven!\""
+  },
+  {
+   "v": "Welke uitspraak van de verkoper is een feit?",
+   "o": [
+    "niemand verkoopt lekkerder fruit",
+    "twee euro per bakje",
+    "dit zijn de beste aardbeien",
+    "kom maar proeven"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 0,
+   "u": "Prijzen zijn te controleren.",
+   "uo": [
+    "Koos je \"niemand verkoopt lekkerder fruit\"? Dan denk je dat dit een feit is. \"Lekkerder\" is een oordeel, en niet te controleren.",
+    "Klopt: een prijs is te controleren, bijvoorbeeld op het bordje bij de aardbeien.",
+    "Koos je \"dit zijn de beste aardbeien\"? Dan denk je dat dit een feit is. \"De beste\" is een oordeel, geen meting.",
+    "Koos je \"kom maar proeven\"? Dan denk je dat dit een feit is. Het is een uitnodiging, geen uitspraak die waar of onwaar is."
+   ],
+   "uh": "Kun je het nagaan?",
+   "ctx": "Een verkoper op de markt roept: \"De beste aardbeien van de hele stad! Vandaag vers uit Limburg binnengekomen, twee euro per bakje. Niemand verkoopt lekkerder fruit dan ik. Kom maar proeven!\""
+  },
+  {
+   "v": "Welke twee uitspraken in het fragment zijn feiten?",
+   "o": [
+    "het is de beste telefoon en de prijs is prima",
+    "de accu gaat twee dagen mee en het is de beste telefoon",
+    "de prijs is prima en de telefoon is gewoon goed",
+    "zes inch en driehonderd euro"
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 3,
+   "u": "Maten en prijzen zijn feiten.",
+   "uo": [
+    "Koos je \"het is de beste telefoon en de prijs is prima\"? Dan denk je dat deze twee feiten zijn. \"De beste\" en \"prima\" zijn oordelen, dus meningen.",
+    "Koos je \"de accu gaat twee dagen mee en het is de beste...\"? Dan denk je dat \"de beste\" een feit is. Het is een oordeel, alleen de accuduur is een feit.",
+    "Koos je \"de prijs is prima en de telefoon is gewoon goed\"? Dan denk je dat dit feiten zijn. Het zijn allebei oordelen, en niet te controleren.",
+    "Klopt: maten en prijzen zijn te controleren, de rest zijn oordelen."
+   ],
+   "uh": "Wat kun je meten?",
+   "ctx": "Een vlogger zegt in zijn filmpje: \"Deze telefoon heeft een scherm van zes inch en een accu die twee dagen meegaat. Het is gewoon de beste telefoon van dit jaar. Hij kost driehonderd euro. Dat is een prima prijs, als je het mij vraagt.\""
+  },
+  {
+   "v": "Welke zin is een mening?",
+   "o": [
+    "\"Het scherm is zes inch.\"",
+    "\"De beste telefoon van dit jaar.\"",
+    "\"De accu gaat twee dagen mee.\"",
+    "\"De telefoon kost driehonderd euro.\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 1,
+   "u": "\"De beste\" is een oordeel.",
+   "uo": [
+    "Koos je \"Het scherm is zes inch.\"? Dan denk je dat dit een mening is. Je kunt het scherm meten, dus het is een feit.",
+    "Klopt: \"de beste\" is een persoonlijk oordeel.",
+    "Koos je \"De accu gaat twee dagen mee.\"? Dan denk je dat dit een mening is. Je kunt de accu testen, dus het is een feit.",
+    "Koos je \"De telefoon kost driehonderd euro.\"? Dan denk je dat dit een mening is. Een prijs staat op het prijskaartje, dus het is een feit."
+   ],
+   "uh": "Is het smaak?",
+   "ctx": "Een vlogger zegt in zijn filmpje: \"Deze telefoon heeft een scherm van zes inch en een accu die twee dagen meegaat. Het is gewoon de beste telefoon van dit jaar. Hij kost driehonderd euro. Dat is een prima prijs, als je het mij vraagt.\""
+  },
+  {
+   "v": "De vlogger zegt: \"Dat is een prima prijs, als je het mij vraagt.\" Wat betekent \"als je het mij vraagt\"?",
+   "o": [
+    "dat het zijn eigen mening is",
+    "dat het een feit is dat iedereen kent",
+    "dat hij een vraag van een kijker beantwoordt",
+    "dat de prijs voor iedereen gelijk is"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 1,
+   "u": "\"Als je het mij vraagt\" kondigt een mening aan.",
+   "uo": [
+    "Klopt: de vlogger laat zien dat hij zijn eigen oordeel geeft.",
+    "Koos je \"dat het een feit is dat iedereen kent\"? Dan denk je dat het woord een feit aankondigt. Het wijst juist op een persoonlijke mening, van de vlogger.",
+    "Koos je \"dat hij een vraag van een kijker beantwoordt\"? Dan denk je dat er een vraag is gesteld. Het is een uitdrukking, waarmee hij zegt wat hij zelf vindt.",
+    "Koos je \"dat de prijs voor iedereen gelijk is\"? Dan denk je dat de prijs voor iedereen geldt. Hij zegt alleen wat hij zelf vindt, dus het is geen feit."
+   ],
+   "uh": "Zegt hij wat hij vindt?",
+   "ctx": "Een vlogger zegt in zijn filmpje: \"Deze telefoon heeft een scherm van zes inch en een accu die twee dagen meegaat. Het is gewoon de beste telefoon van dit jaar. Hij kost driehonderd euro. Dat is een prima prijs, als je het mij vraagt.\""
+  },
+  {
+   "v": "Wat is het verschil tussen \"Het bad is vijftig meter lang\" en \"het mooiste zwembad van het land\"?",
+   "o": [
+    "het eerste is een mening, het tweede een feit",
+    "beide zijn feiten, want ze gaan over het zwembad",
+    "beide zijn meningen, want de nieuwslezer zegt ze",
+    "meetbaar tegenover een oordeel"
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 3,
+   "u": "Meetbaar is een feit, mooiste is een oordeel.",
+   "uo": [
+    "Koos je \"het eerste is een mening, het tweede een feit\"? Dan denk je dat ze omgedraaid zijn. De lengte is meetbaar, en \"mooiste\" is een oordeel.",
+    "Koos je \"beide zijn feiten, want ze gaan over het zwembad\"? Dan denk je dat het onderwerp bepaalt of iets een feit is. Het gaat om wat je kunt controleren, en alleen de lengte is controleerbaar.",
+    "Koos je \"beide zijn meningen, want de nieuwslezer zegt ze\"? Dan denk je dat alles wat de nieuwslezer meldt een mening is. De lengte is een feit, alleen \"het mooiste\" is een mening.",
+    "Klopt: een lengte kun je meten, \"mooiste\" niet."
+   ],
+   "uh": "Wat kun je meten?",
+   "ctx": "Een nieuwslezer zegt: \"Gisteren is in Utrecht een nieuw zwembad geopend. Het bad is vijftig meter lang. De burgemeester noemde het zwembad het mooiste van het land. Volgens de directeur komen er elke dag ongeveer driehonderd bezoekers.\""
+  },
+  {
+   "v": "Waarom is \"Niemand verkoopt lekkerder fruit dan ik\" geen feit, ook al klinkt het stellig?",
+   "o": [
+    "omdat de verkoper het hard roept",
+    "omdat hij er een grapje van maakt",
+    "smaak is niet te controleren",
+    "omdat alle fruit lekker is"
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 1,
+   "u": "Stellig klinken maakt een mening geen feit.",
+   "uo": [
+    "Koos je \"omdat de verkoper het hard roept\"? Dan denk je dat hard roepen het een mening maakt. Het gaat om wat je kunt controleren, en smaak is niet te controleren.",
+    "Koos je \"omdat hij er een grapje van maakt\"? Dan denk je dat de verkoper een grapje maakt. Hij bedoelt het serieus, maar smaak is niet te meten.",
+    "Klopt: de verkoper zegt stellig wat hij vindt.",
+    "Koos je \"omdat alle fruit lekker is\"? Dan denk je dat dit een feit over fruit is. Het gaat om smaak, en dat is een oordeel."
+   ],
+   "uh": "Kun je smaak meten?",
+   "ctx": "Een verkoper op de markt roept: \"De beste aardbeien van de hele stad! Vandaag vers uit Limburg binnengekomen, twee euro per bakje. Niemand verkoopt lekkerder fruit dan ik. Kom maar proeven!\""
+  },
+  {
+   "v": "De presentator zegt: \"De bus is veel te duur.\" Welke feiten heb je nodig om dat te controleren?",
+   "o": [
+    "hoeveel mensen de presentator kent",
+    "de naam van de radiozender",
+    "de prijs van de bus en de fiets",
+    "wat de presentator verder nog vindt"
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 2,
+   "u": "Feiten voor een mening: prijzen, aantallen, metingen.",
+   "uo": [
+    "Koos je \"hoeveel mensen de presentator kent\"? Dan denk je dat het aantal kennissen helpt. Het zegt niets over de prijs, dus je kunt er niets mee controleren.",
+    "Koos je \"de naam van de radiozender\"? Dan denk je dat de zender de bewering controleert. Het zegt niets over prijzen, dus het helpt niet.",
+    "Klopt: pas dan kun je vergelijken en zelf oordelen.",
+    "Koos je \"wat de presentator verder nog vindt\"? Dan denk je dat meer meningen de bewering controleren. Je hebt feiten nodig, zoals de prijs van de bus."
+   ],
+   "uh": "Welke gegevens kloppen?",
+   "ctx": "Presentator op Radio Zuid, ochtendprogramma: \"Op onze school staan driehonderd fietsen in de stalling. Fietsen is de gezondste manier om naar school te gaan, vind ik. Het kost ook bijna niets. De bus is veel te duur en ik haat wachten bij de halte.\""
+  },
+  {
+   "v": "De vlogger heeft de telefoon gratis gekregen. Waarom is dat belangrijk voor je oordeel over zijn mening?",
+   "o": [
+    "omdat gratis spullen altijd slecht zijn",
+    "omdat de telefoon dan niet werkt",
+    "omdat de vlogger dan niet mag praten",
+    "hij heeft er belang bij"
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 4,
+   "u": "Let op wie iets zegt en wat hij ervan krijgt.",
+   "uo": [
+    "Koos je \"omdat gratis spullen altijd slecht zijn\"? Dan denk je dat gratis dingen slecht zijn. Dat is niet zo, het gaat om zijn belang bij een goed oordeel.",
+    "Koos je \"omdat de telefoon dan niet werkt\"? Dan denk je dat gratis betekent dat het niet werkt. De telefoon kan best werken, het gaat om zijn belang.",
+    "Koos je \"omdat de vlogger dan niet mag praten\"? Dan denk je dat hij dan niets mag zeggen. Hij mag praten, maar jij let op zijn belang.",
+    "Klopt: wie iets gratis krijgt, is mogelijk minder objectief."
+   ],
+   "uh": "Wie profiteert?",
+   "ctx": "Een vlogger zegt in zijn filmpje: \"Deze telefoon heeft een scherm van zes inch en een accu die twee dagen meegaat. Het is gewoon de beste telefoon van dit jaar.\" Onder het filmpje staat: \"De vlogger heeft de telefoon gratis van het merk gekregen.\""
+  },
+  {
+   "v": "Een leerling zegt: \"Het is waar, want de burgemeester zei het.\" Wat klopt er niet?",
+   "o": [
+    "een mening blijft een mening",
+    "dat de burgemeester niets mag zeggen",
+    "dat het zwembad niet bestaat",
+    "dat de leerling te veel praat"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 4,
+   "u": "Een mening blijft een mening, wie het ook zegt.",
+   "uo": [
+    "Klopt: wie iets zegt, maakt een mening nog geen feit.",
+    "Koos je \"dat de burgemeester niets mag zeggen\"? Dan denk je dat de burgemeester niets mag vinden. Hij mag een mening hebben, maar het blijft een mening.",
+    "Koos je \"dat het zwembad niet bestaat\"? Dan denk je dat het zwembad verzonnen is. Het bad bestaat, alleen \"het mooiste\" blijft een mening.",
+    "Koos je \"dat de leerling te veel praat\"? Dan denk je dat het gaat om het praten. Het probleem is dat een mening als feit wordt gezien, omdat een bekend iemand het zei."
+   ],
+   "uh": "Is het te controleren?",
+   "ctx": "Een nieuwslezer zegt: \"Gisteren is in Utrecht een nieuw zwembad geopend. Het bad is vijftig meter lang. De burgemeester noemde het zwembad het mooiste van het land. Volgens de directeur komen er elke dag ongeveer driehonderd bezoekers.\""
+  },
+  {
+   "v": "Hoe maak je van \"Het is hier veel te warm\" een feit?",
+   "o": [
+    "zeg het harder",
+    "noem de temperatuur",
+    "zeg dat iedereen het vindt",
+    "zet er \"vind ik\" achter"
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 2,
+   "u": "Maak van een mening een feit met een meting.",
+   "uo": [
+    "Koos je \"zeg het harder\"? Dan denk je dat harder zeggen een feit maakt. Een feit is te controleren, en dat lukt met een temperatuur.",
+    "Klopt: een temperatuur is te meten met een thermometer, dus je kunt het controleren.",
+    "Koos je \"zeg dat iedereen het vindt\"? Dan denk je dat meerdere mensen een feit maken. Dan is het nog een mening, alleen van meer mensen.",
+    "Koos je \"zet er vind ik achter\"? Dan denk je dat dit er een feit van maakt. Dan blijft het een mening, alleen gemeld als je eigen mening."
+   ],
+   "uh": "Wat kun je meten?",
+   "ctx": "Een leerling zegt in de klas: \"Ons lokaal heeft dertig stoelen. Het is hier veel te warm. De les begint om half negen. Dat is eigenlijk te vroeg, vind ik. Mijn broer begint pas om negen uur.\""
+  },
+  {
+   "v": "Een klant vraagt: \"Zijn de aardbeien echt uit Limburg?\" Hoe kan hij dat controleren?",
+   "o": [
+    "de verkoper nog een keer laten roepen",
+    "kijken of de aardbeien mooi zijn",
+    "de aardbeien proeven en denken dat ze lekker zijn",
+    "vragen naar het bewijs"
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 2,
+   "u": "Controleer een herkomst met het bewijs.",
+   "uo": [
+    "Koos je \"de verkoper nog een keer laten roepen\"? Dan denk je dat roepen iets bewijst. Het zegt niets over herkomst, je moet het bewijs zien.",
+    "Koos je \"kijken of de aardbeien mooi zijn\"? Dan denk je dat mooi iets zegt over herkomst. Mooi is een oordeel, herkomst is een feit.",
+    "Koos je \"de aardbeien proeven en denken dat ze lekker zijn\"? Dan denk je dat proeven de herkomst controleert. Proeven zegt iets over smaak, niet over herkomst.",
+    "Klopt: een herkomst is na te gaan, bijvoorbeeld met het bewijs van de kweker."
+   ],
+   "uh": "Waar staat de herkomst?",
+   "ctx": "Een verkoper op de markt roept: \"De beste aardbeien van de hele stad! Vandaag vers uit Limburg binnengekomen, twee euro per bakje. Niemand verkoopt lekkerder fruit dan ik. Kom maar proeven!\""
+  },
+  {
+   "v": "Welke zin geeft het nieuws weer zonder mening?",
+   "o": [
+    "\"Gisteren is in Utrecht een nieuw zwembad geopend.\"",
+    "\"De burgemeester noemde het zwembad het mooiste van het land.\"",
+    "\"Het bad is vijftig meter lang en erg mooi.\"",
+    "\"Het zwembad is het beste van het land.\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 0,
+   "u": "Alleen feiten, zonder oordeel.",
+   "uo": [
+    "Klopt: de zin meldt alleen wat er gebeurde, zonder oordeel van iemand.",
+    "Koos je \"De burgemeester noemde het zwembad het mooiste van...\"? Dan denk je dat dit alleen een feit is. De zin bevat het oordeel \"het mooiste\", dus er zit een mening in.",
+    "Koos je \"Het bad is vijftig meter lang en erg mooi.\"? Dan denk je dat de zin alleen een feit meldt. \"Erg mooi\" is een oordeel, dus er zit een mening in.",
+    "Koos je \"Het zwembad is het beste van het land.\"? Dan denk je dat dit een feit is. \"Het beste\" is een oordeel, dus het is een mening."
+   ],
+   "uh": "Staat er een oordeel in?",
+   "ctx": "Een nieuwslezer zegt: \"Gisteren is in Utrecht een nieuw zwembad geopend. Het bad is vijftig meter lang. De burgemeester noemde het zwembad het mooiste van het land. Volgens de directeur komen er elke dag ongeveer driehonderd bezoekers.\""
+  }
+ ],
+ "oe": [
+  {
+   "bron": "Examenstijl",
+   "ctx": "Presentator op Radio Zuid, ochtendprogramma: \"Op onze school staan driehonderd fietsen in de stalling. Fietsen is de gezondste manier om naar school te gaan, vind ik. Het kost ook bijna niets. De bus is veel te duur en ik haat wachten bij de halte.\"",
+   "v": "Noem één feit en één mening uit het fragment en leg uit hoe je dat ziet.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Feit: op de school staan driehonderd fietsen (1p), want dat kun je tellen (1p). Mening: bijvoorbeeld fietsen is de gezondste manier, want dat is een oordeel met \"vind ik\" (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een leerling zegt in de klas: \"Ons lokaal heeft dertig stoelen. Het is hier veel te warm. De les begint om half negen. Dat is eigenlijk te vroeg, vind ik. Mijn broer begint pas om negen uur.\"",
+   "v": "Welke zin is een feit en welke een mening? Leg bij beide uit waarom.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Feit: ons lokaal heeft dertig stoelen, want dat kun je tellen (1p). Mening: het is veel te warm of dat is te vroeg, want dat is een oordeel (1p). Uitleg: een feit controleer je, een mening niet (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een nieuwslezer zegt: \"Gisteren is in Utrecht een nieuw zwembad geopend. Het bad is vijftig meter lang. De burgemeester noemde het zwembad het mooiste van het land. Volgens de directeur komen er elke dag ongeveer driehonderd bezoekers.\"",
+   "v": "Van wie is de mening in dit fragment en welke zin is een feit?",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "De burgemeester vindt het zwembad het mooiste (1p). Feit: het bad is vijftig meter lang, want je kunt het meten (1p). Een bekend iemand die iets vindt, maakt het niet een feit (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een verkoper op de markt roept: \"De beste aardbeien van de hele stad! Vandaag vers uit Limburg binnengekomen, twee euro per bakje. Niemand verkoopt lekkerder fruit dan ik. Kom maar proeven!\"",
+   "v": "Waarom zegt de verkoper de beste aardbeien? Noem ook één feit dat hij noemt.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Hij wil aardbeien verkopen (1p). Het is een mening, want de beste is een oordeel (1p). Feit: twee euro per bakje, want een prijs is te controleren (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een vlogger zegt in zijn filmpje: \"Deze telefoon heeft een scherm van zes inch en een accu die twee dagen meegaat. Het is gewoon de beste telefoon van dit jaar.\" Onder het filmpje staat: \"De vlogger heeft de telefoon gratis van het merk gekregen.\"",
+   "v": "De vlogger kreeg de telefoon gratis van het merk. Wat betekent dat voor zijn mening?",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Hij kan belang hebben bij een positief oordeel (1p). Zijn mening is minder betrouwbaar (1p). Controleer de feiten zelf, bijvoorbeeld de prijs en de accuduur (1p)."
+  }
+ ]
+}

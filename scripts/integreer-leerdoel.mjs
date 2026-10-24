@@ -53,7 +53,7 @@ if (at >= 0) {
   const eind = sam.lastIndexOf('\n});');
   if (eind < 0) { console.error(`kan het einde van sam-${niveau}.js niet vinden`); process.exit(1); }
   const voor = sam.slice(0, eind).replace(/\s*$/, '');
-  sam = voor + (voor.endsWith(',') ? '' : ',') + '\n' + kop + lit + '`' + sam.slice(eind);
+  sam = voor + (voor.endsWith(',') || voor.endsWith('{') ? '' : ',') + '\n' + kop + lit + '`' + sam.slice(eind);
 }
 fs.writeFileSync(samF, sam);
 // controle: laadt het nog en staat de tekst er precies in?

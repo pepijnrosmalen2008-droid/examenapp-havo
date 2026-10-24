@@ -43,14 +43,14 @@ function ensureLevelData(level,cb){
   document.head.appendChild(s);
 }
 
-// ═══════ SAM-DATA: lazy per-niveau laden (sam-havo.js / sam-vwo.js) ═══════
+// ═══════ SAM-DATA: lazy per-niveau laden (sam-havo.js / sam-vwo.js / sam-vmbo.js) ═══════
 // SAM_RICH (samenvattingen, ~900KB) is uit dit bestand gehaald zodat de boot dat
 // niet hoeft te parsen. Per niveau apart geladen; de consumenten (vak.js openVak,
 // schedule.js startFlash) draaien pas ná deze gate, dus SAM_RICH is dan gevuld.
-var _samSettled={havo:false,vwo:false},_samCbs={havo:[],vwo:[]},_samLoading={havo:false,vwo:false};
-function samReady(level){return (level==='havo'||level==='vwo')?_samSettled[level]:true;}
+var _samSettled={havo:false,vwo:false,vmbo:false},_samCbs={havo:[],vwo:[],vmbo:[]},_samLoading={havo:false,vwo:false,vmbo:false};
+function samReady(level){return (level==='havo'||level==='vwo'||level==='vmbo')?_samSettled[level]:true;}
 function ensureSamData(level,cb){
-  if(level!=='havo'&&level!=='vwo'){if(cb)cb();return;}
+  if(level!=='havo'&&level!=='vwo'&&level!=='vmbo'){if(cb)cb();return;}
   if(_samSettled[level]){if(cb)cb();return;}
   if(cb)_samCbs[level].push(cb);
   if(_samLoading[level])return;
