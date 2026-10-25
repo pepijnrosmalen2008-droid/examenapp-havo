@@ -4592,7 +4592,670 @@ var VAKKEN_VMBO = [
       "d": "echt luisteren en op de ander ingaan"
      }
     ],
-    "sam": "<div class=\"sam-intro\">In een gesprek kies je het juiste <strong>register</strong>: <strong>formeel</strong> (net, zakelijk) of <strong>informeel</strong> (gewoon, tegen vrienden). Je onderbouwt je <strong>standpunt</strong> met <strong>argumenten</strong> en luistert naar de ander.</div><div class=\"sam-head\">1. Register: formeel of informeel</div><p><strong>Formeel taalgebruik</strong> is net en zakelijk; dat gebruik je in een sollicitatiegesprek of tegen onbekenden (\"Zou u mij kunnen helpen?\"). <strong>Informeel taalgebruik</strong> is gewoon en losser, tegen vrienden (\"Hoi, alles goed?\"). Kies je register bij je publiek.</p><div class=\"sam-head\">2. Argumenteren in een gesprek</div><p>Een <strong>standpunt</strong> is de mening die je verdedigt. Je onderbouwt die met <strong>argumenten</strong> (redenen). Een <strong>tegenargument</strong> is een reden tegen een mening. In een goed gesprek laat je de ander uitspreken en luister je actief.</p><div class=\"sam-head\">Begrippen op een rij</div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Formeel</div><div class=\"sam-definitie-body\">net, zakelijk taalgebruik voor onbekenden.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Informeel</div><div class=\"sam-definitie-body\">gewoon, los taalgebruik tegen vrienden.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Register</div><div class=\"sam-definitie-body\">de stijl van taal die bij de situatie past.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Standpunt</div><div class=\"sam-definitie-body\">de mening die je verdedigt.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Argument</div><div class=\"sam-definitie-body\">een reden die je standpunt ondersteunt.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Tegenargument</div><div class=\"sam-definitie-body\">een reden tegen een standpunt.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Overtuigen</div><div class=\"sam-definitie-body\">de ander van je mening zien te winnen.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Actief luisteren</div><div class=\"sam-definitie-body\">echt luisteren en op de ander ingaan.</div></div><div class=\"sam-onthoud\"><b>Let op de verschillen.</b> <b>«Formeel»</b> is net en zakelijk, terwijl <b>«Informeel»</b> los, tegen vrienden is. <b>«Register»</b> is passende taalstijl, terwijl <b>«Formeel»</b> net en zakelijk is. <b>«Standpunt»</b> is verdedigde mening, terwijl <b>«Argument»</b> reden voor je mening is. <b>«Argument»</b> is reden voor je mening, terwijl <b>«Tegenargument»</b> reden tegen is.</div>"
+    "sam": "<div class=\"sam-intro\">In een gesprek kies je het juiste <strong>register</strong>: <strong>formeel</strong> (net, zakelijk) of <strong>informeel</strong> (gewoon, tegen vrienden). Je onderbouwt je <strong>standpunt</strong> met <strong>argumenten</strong> en luistert naar de ander.</div><div class=\"sam-head\">1. Register: formeel of informeel</div><p><strong>Formeel taalgebruik</strong> is net en zakelijk; dat gebruik je in een sollicitatiegesprek of tegen onbekenden (\"Zou u mij kunnen helpen?\"). <strong>Informeel taalgebruik</strong> is gewoon en losser, tegen vrienden (\"Hoi, alles goed?\"). Kies je register bij je publiek.</p><div class=\"sam-head\">2. Argumenteren in een gesprek</div><p>Een <strong>standpunt</strong> is de mening die je verdedigt. Je onderbouwt die met <strong>argumenten</strong> (redenen). Een <strong>tegenargument</strong> is een reden tegen een mening. In een goed gesprek laat je de ander uitspreken en luister je actief.</p><div class=\"sam-head\">Begrippen op een rij</div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Formeel</div><div class=\"sam-definitie-body\">net, zakelijk taalgebruik voor onbekenden.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Informeel</div><div class=\"sam-definitie-body\">gewoon, los taalgebruik tegen vrienden.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Register</div><div class=\"sam-definitie-body\">de stijl van taal die bij de situatie past.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Standpunt</div><div class=\"sam-definitie-body\">de mening die je verdedigt.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Argument</div><div class=\"sam-definitie-body\">een reden die je standpunt ondersteunt.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Tegenargument</div><div class=\"sam-definitie-body\">een reden tegen een standpunt.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Overtuigen</div><div class=\"sam-definitie-body\">de ander van je mening zien te winnen.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Actief luisteren</div><div class=\"sam-definitie-body\">echt luisteren en op de ander ingaan.</div></div><div class=\"sam-onthoud\"><b>Let op de verschillen.</b> <b>«Formeel»</b> is net en zakelijk, terwijl <b>«Informeel»</b> los, tegen vrienden is. <b>«Register»</b> is passende taalstijl, terwijl <b>«Formeel»</b> net en zakelijk is. <b>«Standpunt»</b> is verdedigde mening, terwijl <b>«Argument»</b> reden voor je mening is. <b>«Argument»</b> is reden voor je mening, terwijl <b>«Tegenargument»</b> reden tegen is.</div>",
+    "leerdoelen": [
+     {
+      "id": "B1",
+      "lo": "nl.B.1",
+      "gs": 2,
+      "naam": "Doel, publiek en gespreksvorm afstemmen",
+      "beschrijving": "Je bedenkt wat je met je verhaal wilt bereiken, wie er luistert en welke vorm van gesprek past, en je kiest daar de juiste woorden bij.",
+      "ceStatus": "SE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Het doel van je gesprek",
+       "Je publiek kennen",
+       "Gespreksvormen",
+       "Formeel en informeel taalgebruik",
+       "Afstemmen op de situatie"
+      ],
+      "sam": "Voor je gaat spreken, bedenk je drie dingen: wat wil ik bereiken (doel), wie luistert er (publiek) en welke gespreksvorm past (presentatie, overleg, interview of discussie). Daarna kies je je taal. Bij een directeur of een onbekende gebruik je formeel taalgebruik, bij vrienden informeel. Gebruik woorden die je publiek kent en leg moeilijke woorden uit. In een interview stel je open vragen, in een overleg laat je iedereen meepraten.",
+      "begrippen": [
+       {
+        "t": "Doel",
+        "d": "Wat je met je gesprek of presentatie wilt bereiken."
+       },
+       {
+        "t": "Publiek",
+        "d": "De mensen die naar je luisteren."
+       },
+       {
+        "t": "Presentatie",
+        "d": "Een verhaal dat je voor een groep vertelt."
+       },
+       {
+        "t": "Overleg",
+        "d": "Een gesprek waarin je samen een besluit neemt."
+       },
+       {
+        "t": "Interview",
+        "d": "Een gesprek waarin je vragen stelt om informatie te krijgen."
+       },
+       {
+        "t": "Discussie",
+        "d": "Een gesprek waarin mensen hun mening geven."
+       },
+       {
+        "t": "Formeel",
+        "d": "Netjes en beleefd, bijvoorbeeld tegen een directeur."
+       },
+       {
+        "t": "Informeel",
+        "d": "Los en gemoedelijk, zoals met vrienden."
+       },
+       {
+        "t": "Vaktaal",
+        "d": "Woorden die alleen mensen uit een vak kennen."
+       },
+       {
+        "t": "Open vraag",
+        "d": "Een vraag waarop iemand uitgebreid kan antwoorden."
+       },
+       {
+        "t": "Gesloten vraag",
+        "d": "Een vraag waarop je met ja, nee of één woord antwoordt."
+       },
+       {
+        "t": "Voorkennis",
+        "d": "Wat het publiek al weet over het onderwerp."
+       }
+      ],
+      "sv": [
+       {
+        "v": "Waarom spreek je in een presentatie?",
+        "o": [
+         "om de tijd van de les netjes op te vullen met praten",
+         "je wilt iets vertellen, laten zien of bereiken",
+         "om te laten zien hoe snel je kunt praten",
+         "om je klasgenoten te laten schrikken"
+        ],
+        "c": 1,
+        "d": 1,
+        "s": 0,
+        "u": "Een presentatie heeft een doel.",
+        "uo": [
+         "Koos je \"om de tijd van de les netjes op te vullen met praten\"? Dan denk je dat een presentatie alleen tijd vult. Een spreker wil echt iets bereiken, en dat is het doel.",
+         "Klopt: een presentatie heeft altijd een doel, zoals informeren of overtuigen.",
+         "Koos je \"om te laten zien hoe snel je kunt praten\"? Dan denk je dat het om tempo gaat. Snel praten helpt niemand, het gaat om wat het publiek begrijpt.",
+         "Koos je \"om je klasgenoten te laten schrikken\"? Dan denk je dat schrik het doel is. Een presentatie wil informeren of overtuigen, geen schrik aanjagen."
+        ],
+        "uh": "Wat wil je bereiken?"
+       },
+       {
+        "v": "Hoe heet de groep mensen die naar je luistert?",
+        "o": [
+         "de spreker zelf",
+         "de voorzitter van de les",
+         "de bron van het verhaal",
+         "het publiek"
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 1,
+        "u": "Het publiek luistert.",
+        "uo": [
+         "Koos je \"de spreker zelf\"? Dan denk je dat de luisteraars de spreker zijn. De spreker is degene die praat, het publiek luistert.",
+         "Koos je \"de voorzitter van de les\"? Dan denk je dat het publiek de voorzitter is. Een voorzitter leidt een gesprek, het publiek is de groep luisteraars.",
+         "Koos je \"de bron van het verhaal\"? Dan denk je dat het publiek de bron is. De bron is waar informatie vandaan komt, het publiek luistert.",
+         "Klopt: het publiek zijn de luisteraars voor wie je spreekt."
+        ],
+        "uh": "Wie luistert er?"
+       },
+       {
+        "v": "Welke gespreksvorm is een gesprek waarbij je een besluit neemt?",
+        "o": [
+         "een overleg",
+         "een voordracht",
+         "een interview",
+         "een spreekbeurt"
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 2,
+        "u": "Overleg = samen beslissen.",
+        "uo": [
+         "Klopt: in een overleg praten mensen samen tot er een besluit is.",
+         "Koos je \"een voordracht\"? Dan denk je dat dit een voordracht is. Bij een voordracht praat één persoon, en neemt niemand samen een besluit.",
+         "Koos je \"een interview\"? Dan denk je dat dit een interview is. Bij een interview stel je vragen aan iemand, zonder samen te beslissen.",
+         "Koos je \"een spreekbeurt\"? Dan denk je dat dit een spreekbeurt is. Dan praat één persoon voor de klas, en niemand beslist samen."
+        ],
+        "uh": "Wat wil je samen bereiken?"
+       },
+       {
+        "v": "Welk taalgebruik past bij een gesprek met een directeur?",
+        "o": [
+         "met veel straattaal en afkortingen",
+         "zo kort en bot mogelijk",
+         "beleefd en duidelijk",
+         "in een stijl als met vrienden"
+        ],
+        "c": 2,
+        "d": 1,
+        "s": 3,
+        "u": "Pas je taal aan de luisteraar aan.",
+        "uo": [
+         "Koos je \"met veel straattaal en afkortingen\"? Dan denk je dat straattaal past. Bij een directeur is dat te losjes, dus kies je beleefde taal.",
+         "Koos je \"zo kort en bot mogelijk\"? Dan denk je dat kort en bot past. Dat komt onbeleefd over, dus kies je beleefde woorden.",
+         "Klopt: tegen iemand met een functie spreek je beleefd en netjes.",
+         "Koos je \"in een stijl als met vrienden\"? Dan denk je dat de stijl met vrienden past. Dat is te informeel, dus pas je je taal aan."
+        ],
+        "uh": "Hoe praat je met een directeur?"
+       },
+       {
+        "v": "Waarom pas je je taalgebruik aan het publiek aan?",
+        "o": [
+         "zodat je er slimmer uitziet",
+         "zodat je minder hoeft te voorbereiden",
+         "zodat zij je goed begrijpen",
+         "zodat je langer kunt praten"
+        ],
+        "c": 2,
+        "d": 1,
+        "s": 4,
+        "u": "Pas je taal aan je publiek aan.",
+        "uo": [
+         "Koos je \"zodat je er slimmer uitziet\"? Dan denk je dat het om indruk gaat. Lastige woorden lijken slim, maar het publiek begrijpt je dan niet.",
+         "Koos je \"zodat je minder hoeft te voorbereiden\"? Dan denk je dat aanpassen minder werk is. Het kost juist nadenken, maar het werkt beter.",
+         "Klopt: wie je publiek kent, kiest woorden die het snapt.",
+         "Koos je \"zodat je langer kunt praten\"? Dan denk je dat het om de spreektijd gaat. Je lengte hangt van het doel af, niet van het publiek."
+        ],
+        "uh": "Wie moet je begrijpen?"
+       },
+       {
+        "v": "Welk doel heeft een spreekbeurt over je hobby?",
+        "o": [
+         "de klas informeren over je hobby",
+         "de klas dwingen jouw hobby te kiezen",
+         "de klas een toets laten maken",
+         "alleen de leraar een plezier doen"
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 0,
+        "u": "Informeren is een doel.",
+        "uo": [
+         "Klopt: je wilt de luisteraars iets vertellen over je onderwerp.",
+         "Koos je \"de klas dwingen jouw hobby te kiezen\"? Dan denk je dat je dwingt. Een spreekbeurt overtuigt hooguit, en dwingen kan niet.",
+         "Koos je \"de klas een toets laten maken\"? Dan denk je dat de spreekbeurt een toets is. Een spreker vertelt iets, en geeft geen toets.",
+         "Koos je \"alleen de leraar een plezier doen\"? Dan denk je dat het alleen om de leraar gaat. Het publiek is de hele klas, en het doel is informeren."
+        ],
+        "uh": "Wat wil je vertellen?"
+       },
+       {
+        "v": "Welk woord past bij een formele situatie?",
+        "o": [
+         "hé man",
+         "joh",
+         "hoi hoi",
+         "geachte heer"
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 1,
+        "u": "Formeel = netjes en beleefd.",
+        "uo": [
+         "Koos je \"hé man\"? Dan denk je dat dit een nette aanspreking is. Het is een losse groet, die je tegen een vriend zegt en niet tegen een heer.",
+         "Koos je \"joh\"? Dan denk je dat dit beleefd klinkt. Het is een kort uitroepje, dat bij een gesprek onder vrienden hoort.",
+         "Koos je \"hoi hoi\"? Dan denk je dat dit serieus genoeg is. Het klinkt vrolijk en speels, en niet geschikt voor een formele situatie.",
+         "Klopt: zo'n aanspreking is beleefd en hoort bij formeel taalgebruik."
+        ],
+        "uh": "Tegen wie praat je?"
+       },
+       {
+        "v": "Welk probleem heeft Mila met haar publiek?",
+        "o": [
+         "ze praat te hard voor de zaal",
+         "ze gebruikt woorden die de klas niet kent",
+         "ze heeft een onderwerp dat niemand interessant vindt",
+         "ze praat te kort over haar onderwerp"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 0,
+        "u": "Gebruik woorden die je publiek kent.",
+        "uo": [
+         "Koos je \"ze praat te hard voor de zaal\"? Dan denk je dat ze te hard praat. In het fragment praat ze juist zacht, dus dat is het probleem niet.",
+         "Klopt: vakwoorden zonder uitleg begrijpt de klas niet, daardoor haken ze af.",
+         "Koos je \"ze heeft een onderwerp dat niemand interessant vindt\"? Dan denk je dat het onderwerp slecht is. Het ligt aan haar aanpak, niet aan het onderwerp zelf.",
+         "Koos je \"ze praat te kort over haar onderwerp\"? Dan denk je dat ze te kort praat. Het fragment zegt dat het drie minuten duurt, de klas haakt door de woorden af."
+        ],
+        "uh": "Wat snapt de klas niet?",
+        "ctx": "Mila houdt een spreekbeurt over paardrijden voor haar klas. Ze gebruikt vakwoorden als \"dressuur\" en \"bit\" zonder uitleg, praat heel zacht en leest de hele tijd van haar papier. Na drie minuten kijken de meeste klasgenoten uit het raam."
+       },
+       {
+        "v": "Welke aanpassing helpt Mila het meest?",
+        "o": [
+         "meer vakwoorden gebruiken en sneller praten",
+         "nog zachter gaan praten",
+         "sneller van het papier voorlezen",
+         "vakwoorden uitleggen en vaker opkijken"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 3,
+        "u": "Leg uit en kijk op.",
+        "uo": [
+         "Koos je \"meer vakwoorden gebruiken en sneller praten\"? Dan denk je dat meer woorden helpen. Dan snapt de klas het nog minder, en haakt nog meer af.",
+         "Koos je \"nog zachter gaan praten\"? Dan denk je dat zacht praten helpt. Het is dan nog moeilijker om te volgen, dus dat werkt averechts.",
+         "Koos je \"sneller van het papier voorlezen\"? Dan denk je dat sneller lezen helpt. De klas heeft dan nog minder tijd, om het te begrijpen.",
+         "Klopt: uitleg en oogcontact houden de klas erbij."
+        ],
+        "uh": "Wat mist de klas?",
+        "ctx": "Mila houdt een spreekbeurt over paardrijden voor haar klas. Ze gebruikt vakwoorden als \"dressuur\" en \"bit\" zonder uitleg, praat heel zacht en leest de hele tijd van haar papier. Na drie minuten kijken de meeste klasgenoten uit het raam."
+       },
+       {
+        "v": "Wat gaat er mis in Jaydens manier van praten?",
+        "o": [
+         "hij praat veel te beleefd en te netjes tegen de directeur",
+         "hij praat te informeel tegen de directeur",
+         "hij heeft geen doel met zijn vraag",
+         "hij praat te zacht om te verstaan"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 4,
+        "u": "Formeel bij een directeur.",
+        "uo": [
+         "Koos je \"hij praat veel te beleefd en te netjes tegen de...\"? Dan denk je dat hij te beleefd is. Hij zegt \"hé man\", en dat is juist te informeel.",
+         "Klopt: \"hé man\" en \"snap je\" passen bij vrienden, niet bij een directeur.",
+         "Koos je \"hij heeft geen doel met zijn vraag\"? Dan denk je dat hij geen doel heeft. Hij wil een extra pauze, dus dat is wel duidelijk.",
+         "Koos je \"hij praat te zacht om te verstaan\"? Dan denk je dat zijn stem het probleem is. Daarover staat niets in het fragment, het gaat om zijn woorden."
+        ],
+        "uh": "Hoe klinkt \"hé man\"?",
+        "ctx": "Jayden wil de directeur vragen of er een extra pauze mag komen. Hij loopt het kantoor binnen en zegt: \"Hé man, ik wil even iets vragen, kan dat? Ik vind die pauzes echt te kort, snap je.\""
+       },
+       {
+        "v": "Welke zin past beter bij de directeur?",
+        "o": [
+         "\"Joh, ik wil een extra pauze, ja of nee?\"",
+         "\"Hé, mag ik even langs?\"",
+         "\"Goedemiddag, mag ik u iets vragen?\"",
+         "\"Even iets belangrijks, oké?\""
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 3,
+        "u": "Beleefd en duidelijk.",
+        "uo": [
+         "Koos je \"Joh, ik wil een extra pauze, ja of nee?\"? Dan denk je dat dit past. Het is kortaf en informeel, en daar past een directeur niet bij.",
+         "Koos je \"Hé, mag ik even langs?\"? Dan denk je dat dit past. Het is nog te losjes, en daarom niet formeel.",
+         "Klopt: dit is beleefd en duidelijk, dus formeel genoeg.",
+         "Koos je \"Even iets belangrijks, oké?\"? Dan denk je dat dit past. Het is nog steeds te informeel, en het is geen beleefde vraag."
+        ],
+        "uh": "Hoe vraag je het netjes?",
+        "ctx": "Jayden wil de directeur vragen of er een extra pauze mag komen. Hij loopt het kantoor binnen en zegt: \"Hé man, ik wil even iets vragen, kan dat? Ik vind die pauzes echt te kort, snap je.\""
+       },
+       {
+        "v": "Welke gespreksvorm is het groepje aan het voeren?",
+        "o": [
+         "een overleg",
+         "een voordracht",
+         "een interview",
+         "een presentatie"
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 2,
+        "u": "Overleg = samen beslissen.",
+        "uo": [
+         "Klopt: ze moeten samen een besluit nemen over de klassenreis.",
+         "Koos je \"een voordracht\"? Dan denk je dat dit een voordracht is. Dan praat één persoon, en dat is hier niet zo.",
+         "Koos je \"een interview\"? Dan denk je dat dit een interview is. Bij een interview stelt een leerling vragen, en niemand beslist mee.",
+         "Koos je \"een presentatie\"? Dan denk je dat dit een presentatie is. Bij een presentatie vertelt één spreker, en dat is hier niet zo."
+        ],
+        "uh": "Wat moeten ze doen?",
+        "ctx": "Een groepje van vier leerlingen moet in een overleg beslissen waar de klassenreis heen gaat. Eén leerling praat bijna de hele tijd, twee anderen zeggen niets en de vierde onderbreekt steeds. Na tien minuten is er nog geen keuze."
+       },
+       {
+        "v": "Welk doel heeft dit overleg?",
+        "o": [
+         "samen een keuze maken voor de klassenreis",
+         "de klas laten lachen om grappen over de reis",
+         "een goed cijfer krijgen voor spreken",
+         "één leerling laten winnen"
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 0,
+        "u": "Overleg = samen beslissen.",
+        "uo": [
+         "Klopt: een overleg wil tot een besluit komen waar de groep achter staat.",
+         "Koos je \"de klas laten lachen om grappen over de reis\"? Dan denk je dat het doel plezier is. In een overleg beslis je iets, en plezier is bijzaak.",
+         "Koos je \"een goed cijfer krijgen voor spreken\"? Dan denk je dat een cijfer het doel is. Het doel is het besluit, geen cijfer.",
+         "Koos je \"één leerling laten winnen\"? Dan denk je dat iemand moet winnen. Een overleg is samen een keuze maken, dus niemand wint of verliest."
+        ],
+        "uh": "Wat moet er komen?",
+        "ctx": "Een groepje van vier leerlingen moet in een overleg beslissen waar de klassenreis heen gaat. Eén leerling praat bijna de hele tijd, twee anderen zeggen niets en de vierde onderbreekt steeds. Na tien minuten is er nog geen keuze."
+       },
+       {
+        "v": "Waarom werkt dit overleg niet goed?",
+        "o": [
+         "de groep is met vier leerlingen te klein voor overleg",
+         "de leraar zit er niet bij",
+         "niet iedereen krijgt de ruimte om mee te praten",
+         "er is geen onderwerp om over te praten"
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 4,
+        "u": "Laat iedereen meepraten.",
+        "uo": [
+         "Koos je \"de groep is met vier leerlingen te klein voor...\"? Dan denk je dat vier mensen te weinig zijn. Vier is prima voor een overleg, het probleem ligt bij het praten.",
+         "Koos je \"de leraar zit er niet bij\"? Dan denk je dat de leraar nodig is. Een groep kan zelf een besluit nemen, als iedereen meepraat.",
+         "Klopt: één praat veel, twee zwijgen en één onderbreekt, dus iedereen telt niet mee.",
+         "Koos je \"er is geen onderwerp om over te praten\"? Dan denk je dat het onderwerp ontbreekt. Het onderwerp is de klassenreis, dus dat is duidelijk."
+        ],
+        "uh": "Wie praat er niet?",
+        "ctx": "Een groepje van vier leerlingen moet in een overleg beslissen waar de klassenreis heen gaat. Eén leerling praat bijna de hele tijd, twee anderen zeggen niets en de vierde onderbreekt steeds. Na tien minuten is er nog geen keuze."
+       },
+       {
+        "v": "Welk soort vraag stelt de leerling hier steeds?",
+        "o": [
+         "open vragen met een lang antwoord",
+         "gesloten vragen met een kort antwoord",
+         "vragen over het weer",
+         "vragen die niemand begrijpt"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 3,
+        "u": "Open vragen geven meer.",
+        "uo": [
+         "Koos je \"open vragen met een lang antwoord\"? Dan denk je dat de vragen open zijn. De antwoorden zijn juist heel kort, dus de vragen zijn gesloten.",
+         "Klopt: bij \"Woont u hier graag?\" kun je met ja of nee antwoorden.",
+         "Koos je \"vragen over het weer\"? Dan denk je dat het om het weer gaat. De vragen gaan over wonen, dus dat klopt niet.",
+         "Koos je \"vragen die niemand begrijpt\"? Dan denk je dat de vragen onbegrijpelijk zijn. De buurtbewoner antwoordt gewoon, dus de vragen zijn duidelijk."
+        ],
+        "uh": "Kun je met ja of nee antwoorden?",
+        "ctx": "Een leerling interviewt een buurtbewoner voor de schoolkrant. De vragen zijn: \"Woont u hier graag?\", \"Ja.\" \"Waarom?\", \"Gezellig.\" De leerling stelt alleen vragen waarop de buurtbewoner met één woord antwoordt."
+       },
+       {
+        "v": "Welke vraag levert een uitgebreider antwoord op?",
+        "o": [
+         "\"Woont u hier graag?\"",
+         "\"Is het hier gezellig?\"",
+         "\"Woont u hier al lang?\"",
+         "\"Wat vindt u fijn aan deze buurt?\""
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 0,
+        "u": "Open vraag = uitgebreid antwoord.",
+        "uo": [
+         "Koos je \"Woont u hier graag?\"? Dan denk je dat deze vraag uitleg geeft. Daar kun je met één woord op antwoorden, dus is de vraag gesloten.",
+         "Koos je \"Is het hier gezellig?\"? Dan denk je dat deze vraag een verhaal oplevert. Een kort ja of nee volstaat al, dus de buurtbewoner hoeft niets toe te lichten.",
+         "Koos je \"Woont u hier al lang?\"? Dan denk je dat deze vraag veel losmaakt. Je antwoordt met één getal of jaar, zodat er geen uitleg nodig is.",
+         "Klopt: een open vraag met \"wat\" laat de buurtbewoner vertellen."
+        ],
+        "uh": "Welke vraag begint met \"wat\"?",
+        "ctx": "Een leerling interviewt een buurtbewoner voor de schoolkrant. De vragen zijn: \"Woont u hier graag?\", \"Ja.\" \"Waarom?\", \"Gezellig.\" De leerling stelt alleen vragen waarop de buurtbewoner met één woord antwoordt."
+       },
+       {
+        "v": "Welk probleem geven de woorden in de presentatie?",
+        "o": [
+         "de woorden zijn te kort en veel te simpel voor klanten",
+         "de klanten kennen woorden als \"touchpoints\" niet",
+         "de woorden zijn te beleefd voor klanten",
+         "de spreker praat te zacht"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 4,
+        "u": "Gebruik woorden die je publiek kent.",
+        "uo": [
+         "Koos je \"de woorden zijn te kort en veel te simpel voor...\"? Dan denk je dat de woorden te simpel zijn. Ze zijn juist lastig, vooral voor oudere klanten.",
+         "Klopt: moeilijke woorden voor oudere klanten maken de presentatie onbegrijpelijk.",
+         "Koos je \"de woorden zijn te beleefd voor klanten\"? Dan denk je dat de woorden te beleefd zijn. Ze zijn eerder vaktaal, dus onbegrijpelijk.",
+         "Koos je \"de spreker praat te zacht\"? Dan denk je dat het aan volume ligt. Daarover staat niets in het fragment, het ligt aan de woorden."
+        ],
+        "uh": "Wie luistert er?",
+        "ctx": "Een bedrijf geeft een presentatie aan oudere klanten over een nieuwe app. De spreker zegt: \"We gaan jullie touchpoints optimaliseren via een betere userflow.\" De klanten kijken elkaar aan en vragen niets."
+       },
+       {
+        "v": "Hoe kan de spreker de zin beter maken voor deze klanten?",
+        "o": [
+         "\"Met de app kunt u straks makkelijker uw bestellingen volgen.\"",
+         "\"We gaan de userflow tweaken en de UX shiften naar de volgende fase.\"",
+         "\"De app heeft een aantal nieuwe features.\"",
+         "\"Dit is de nieuwste app van de markt.\""
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 3,
+        "u": "Gewone woorden en een voordeel.",
+        "uo": [
+         "Klopt: gewone woorden en een duidelijk voordeel voor de klant.",
+         "Koos je \"We gaan de userflow tweaken en de UX shiften naar...\"? Dan denk je dat dit beter is. Dit zijn nog meer vaktaal, dus nog onbegrijpelijker.",
+         "Koos je \"De app heeft een aantal nieuwe features.\"? Dan denk je dat dit beter is. \"Features\" is een moeilijk woord, en de zin zegt niet wat het oplevert.",
+         "Koos je \"Dit is de nieuwste app van de markt.\"? Dan denk je dat dit beter is. Het zegt niet wat de klant eraan heeft, dus het helpt niet."
+        ],
+        "uh": "Wat heeft de klant eraan?",
+        "ctx": "Een bedrijf geeft een presentatie aan oudere klanten over een nieuwe app. De spreker zegt: \"We gaan jullie touchpoints optimaliseren via een betere userflow.\" De klanten kijken elkaar aan en vragen niets."
+       },
+       {
+        "v": "Wat had de spreker eerst moeten doen om zijn publiek te kennen?",
+        "o": [
+         "de presentatie sneller afraffelen",
+         "meer vakwoorden bedenken om er slim en deskundig uit te zien",
+         "de klanten zelf de app laten uitleggen",
+         "nagaan wat de oudere klanten al weten en nodig hebben"
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 0,
+        "u": "Ken je publiek.",
+        "uo": [
+         "Koos je \"de presentatie sneller afraffelen\"? Dan denk je dat tempo helpt. Sneller praten maakt het juist lastiger, en lost het publiek niet op.",
+         "Koos je \"meer vakwoorden bedenken om er slim en deskundig...\"? Dan denk je dat vakwoorden indruk maken. De klanten snappen het dan niet, dus ze haken af.",
+         "Koos je \"de klanten zelf de app laten uitleggen\"? Dan denk je dat de klanten moeten uitleggen. Dat is niet hun taak, de spreker moet het uitleggen.",
+         "Klopt: wie zijn publiek kent, kiest taal en voorbeelden die passen."
+        ],
+        "uh": "Wie zijn de klanten?",
+        "ctx": "Een bedrijf geeft een presentatie aan oudere klanten over een nieuwe app. De spreker zegt: \"We gaan jullie touchpoints optimaliseren via een betere userflow.\" De klanten kijken elkaar aan en vragen niets."
+       },
+       {
+        "v": "Welke afspraak helpt het groepje het meest bij een overleg?",
+        "o": [
+         "de snelste spreker beslist voor de groep",
+         "iedereen praat tegelijk om tijd te winnen",
+         "iedereen krijgt om de beurt het woord",
+         "wie het meeste weet mag alleen praten"
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 2,
+        "u": "Om de beurt praten.",
+        "uo": [
+         "Koos je \"de snelste spreker beslist voor de groep\"? Dan denk je dat de snelste moet beslissen. Dan praat niet iedereen mee, en dat is geen overleg.",
+         "Koos je \"iedereen praat tegelijk om tijd te winnen\"? Dan denk je dat tegelijk praten tijd wint. Niemand kan dan luisteren, dus het gaat langzamer.",
+         "Klopt: dan praat niemand te lang en kan niemand onderbreken.",
+         "Koos je \"wie het meeste weet mag alleen praten\"? Dan denk je dat alleen de expert mag praten. Het overleg wil iedereen horen, niet alleen de expert."
+        ],
+        "uh": "Wie praat er nu?",
+        "ctx": "Een groepje van vier leerlingen moet in een overleg beslissen waar de klassenreis heen gaat. Eén leerling praat bijna de hele tijd, twee anderen zeggen niets en de vierde onderbreekt steeds. Na tien minuten is er nog geen keuze."
+       },
+       {
+        "v": "Wat betekent formeel taalgebruik?",
+        "o": [
+         "grappig en vol uitroepen",
+         "zo kort mogelijk met afkortingen",
+         "netjes, beleefd en zonder straattaal",
+         "zoals je met je vrienden praat"
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 1,
+        "u": "Formeel = netjes.",
+        "uo": [
+         "Koos je \"grappig en vol uitroepen\"? Dan denk je dat formeel grappig is. Formeel is netjes en serieus, dus humor is geen kenmerk.",
+         "Koos je \"zo kort mogelijk met afkortingen\"? Dan denk je dat formeel kort is. Formeel gebruikt hele zinnen, en geen afkortingen of straattaal.",
+         "Klopt: formeel gebruik je bij mensen die je niet goed kent of met een functie.",
+         "Koos je \"zoals je met je vrienden praat\"? Dan denk je dat formeel zo is. Dat is informeel, het tegenovergestelde."
+        ],
+        "uh": "Tegen wie praat je?",
+        "ctx": "Jayden wil de directeur vragen of er een extra pauze mag komen. Hij loopt het kantoor binnen en zegt: \"Hé man, ik wil even iets vragen, kan dat? Ik vind die pauzes echt te kort, snap je.\""
+       },
+       {
+        "v": "Hoe kan Mila de aandacht van de klas vasthouden?",
+        "o": [
+         "met nog meer tekst op papier",
+         "door steeds zachter en langzamer te gaan praten tegen het papier",
+         "door de spreekbeurt sneller te beëindigen",
+         "met een voorbeeld, een plaatje en oogcontact"
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 3,
+        "u": "Laat iets zien en kijk de klas aan.",
+        "uo": [
+         "Koos je \"met nog meer tekst op papier\"? Dan denk je dat meer tekst helpt. Dan leest ze nog meer voor, en de klas haakt af.",
+         "Koos je \"door steeds zachter en langzamer te gaan praten...\"? Dan denk je dat zachter praten werkt. De klas kan haar dan niet meer volgen, dus dat helpt niet.",
+         "Koos je \"door de spreekbeurt sneller te beëindigen\"? Dan denk je dat sneller klaar zijn werkt. Het lost het probleem niet op, want de klas begreep het niet.",
+         "Klopt: iets laten zien en de klas aankijken houdt de aandacht vast."
+        ],
+        "uh": "Wat houdt de klas bij de les?",
+        "ctx": "Mila houdt een spreekbeurt over paardrijden voor haar klas. Ze gebruikt vakwoorden als \"dressuur\" en \"bit\" zonder uitleg, praat heel zacht en leest de hele tijd van haar papier. Na drie minuten kijken de meeste klasgenoten uit het raam."
+       },
+       {
+        "v": "Hoe verbeter je het interview voor de schoolkrant?",
+        "o": [
+         "open vragen stellen en doorvragen",
+         "meer vragen met ja of nee stellen",
+         "de buurtbewoner onderbreken en zelf antwoorden",
+         "de vragen alvast voor hem invullen"
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 4,
+        "u": "Open vragen en doorvragen.",
+        "uo": [
+         "Klopt: dan vertelt de buurtbewoner meer en heb je genoeg voor een artikel.",
+         "Koos je \"meer vragen met ja of nee stellen\"? Dan denk je dat dit helpt. Je krijgt dan nog kortere antwoorden, en dus weinig informatie.",
+         "Koos je \"de buurtbewoner onderbreken en zelf antwoorden\"? Dan denk je dat je moet antwoorden. De buurtbewoner moet vertellen, niet jij.",
+         "Koos je \"de vragen alvast voor hem invullen\"? Dan denk je dat dit helpt. Het interview wordt dan van jou, en niet van de buurtbewoner."
+        ],
+        "uh": "Wat wil je weten?",
+        "ctx": "Een leerling interviewt een buurtbewoner voor de schoolkrant. De vragen zijn: \"Woont u hier graag?\", \"Ja.\" \"Waarom?\", \"Gezellig.\" De leerling stelt alleen vragen waarop de buurtbewoner met één woord antwoordt."
+       },
+       {
+        "v": "Welke eigenschap van het publiek is hier het belangrijkst?",
+        "o": [
+         "hoeveel klanten er precies in de zaal zitten",
+         "de leeftijd en de voorkennis van de klanten",
+         "welke kleding de klanten dragen",
+         "hoe laat de klanten zijn aangekomen"
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 1,
+        "u": "Ken de voorkennis van je publiek.",
+        "uo": [
+         "Koos je \"hoeveel klanten er precies in de zaal zitten\"? Dan denk je dat het aantal belangrijk is. Het aantal zegt niets over hun voorkennis, en daar gaat het hier om.",
+         "Klopt: oudere klanten kennen vaktaal over apps meestal niet, dus de spreker moet dat weten.",
+         "Koos je \"welke kleding de klanten dragen\"? Dan denk je dat kleding belangrijk is. Dat zegt niets over wat ze weten, dus het helpt niet bij de taalkeuze.",
+         "Koos je \"hoe laat de klanten zijn aangekomen\"? Dan denk je dat de aankomsttijd telt. Dat verandert de uitleg niet, en zegt niets over wat de klanten snappen."
+        ],
+        "uh": "Wat weten ze al?",
+        "ctx": "Een bedrijf geeft een presentatie aan oudere klanten over een nieuwe app. De spreker zegt: \"We gaan jullie touchpoints optimaliseren via een betere userflow.\" De klanten kijken elkaar aan en vragen niets."
+       },
+       {
+        "v": "Welke gespreksvorm en welk doel horen bij dit gesprek?",
+        "o": [
+         "een overleg om samen te beslissen",
+         "een voordracht om te overtuigen",
+         "een debat om te winnen",
+         "een interview om informatie te verzamelen"
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 2,
+        "u": "Interview = vragen stellen.",
+        "uo": [
+         "Koos je \"een overleg om samen te beslissen\"? Dan denk je dat dit een overleg is. Er wordt niets besloten, en één persoon stelt de vragen.",
+         "Koos je \"een voordracht om te overtuigen\"? Dan denk je dat dit een voordracht is. Dan praat één persoon lang, en hier worden vragen gesteld.",
+         "Koos je \"een debat om te winnen\"? Dan denk je dat dit een debat is. In een debat verdedig je een standpunt, en hier wordt alleen gevraagd.",
+         "Klopt: de leerling stelt vragen om voor de schoolkrant iets te weten te komen."
+        ],
+        "uh": "Wie stelt de vragen?",
+        "ctx": "Een leerling interviewt een buurtbewoner voor de schoolkrant. De vragen zijn: \"Woont u hier graag?\", \"Ja.\" \"Waarom?\", \"Gezellig.\" De leerling stelt alleen vragen waarop de buurtbewoner met één woord antwoordt."
+       },
+       {
+        "v": "Waarom moet Jayden letten op wie de directeur is?",
+        "o": [
+         "hij praat met iemand met een functie en moet beleefd zijn",
+         "hij moet de directeur eerst een tijd lang beter leren kennen",
+         "hij praat het liefst met mensen van zijn leeftijd",
+         "de directeur kan zijn cijfers veranderen"
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 1,
+        "u": "Pas je taal aan je luisteraar aan.",
+        "uo": [
+         "Klopt: bij een directeur past een beleefde en nette manier van praten.",
+         "Koos je \"hij moet de directeur eerst een tijd lang beter...\"? Dan denk je dat hij hem eerst moet leren kennen. Dat is niet nodig, beleefd zijn volstaat bij een functie.",
+         "Koos je \"hij praat het liefst met mensen van zijn leeftijd\"? Dan denk je dat het om leeftijd gaat. Het gaat om de functie, niet om iemands leeftijd.",
+         "Koos je \"de directeur kan zijn cijfers veranderen\"? Dan denk je dat dit de reden is. Dat is geen reden voor beleefdheid, het gaat om respect voor de functie."
+        ],
+        "uh": "Met wie praat Jayden?",
+        "ctx": "Jayden wil de directeur vragen of er een extra pauze mag komen. Hij loopt het kantoor binnen en zegt: \"Hé man, ik wil even iets vragen, kan dat? Ik vind die pauzes echt te kort, snap je.\""
+       }
+      ],
+      "oe": [
+       {
+        "bron": "Examenstijl",
+        "ctx": "Mila houdt een spreekbeurt over paardrijden voor haar klas. Ze gebruikt vakwoorden als \"dressuur\" en \"bit\" zonder uitleg, praat heel zacht en leest de hele tijd van haar papier. Na drie minuten kijken de meeste klasgenoten uit het raam.",
+        "v": "Noem twee verbeterpunten voor Mila en leg uit waarom ze helpen.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Vakwoorden uitleggen, want de klas kent ze niet (2p). Vaker opkijken of iets laten zien, zodat de klas erbij blijft (2p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Jayden wil de directeur vragen of er een extra pauze mag komen. Hij loopt het kantoor binnen en zegt: \"Hé man, ik wil even iets vragen, kan dat? Ik vind die pauzes echt te kort, snap je.\"",
+        "v": "Wat is er niet passend aan de manier waarop Jayden praat en hoe zegt hij het beter?",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Hij is te informeel (\"hé man\", \"snap je\") tegen een directeur (2p). Beter: \"Goedemiddag, mag ik u iets vragen?\" (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een groepje van vier leerlingen moet in een overleg beslissen waar de klassenreis heen gaat. Eén leerling praat bijna de hele tijd, twee anderen zeggen niets en de vierde onderbreekt steeds. Na tien minuten is er nog geen keuze.",
+        "v": "Welke gespreksvorm voert dit groepje, en welke afspraak helpt hen?",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Een overleg (1p). Iedereen krijgt om de beurt het woord, zodat niemand te lang praat of onderbreekt (2p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een leerling interviewt een buurtbewoner voor de schoolkrant. De vragen zijn: \"Woont u hier graag?\", \"Ja.\" \"Waarom?\", \"Gezellig.\" De leerling stelt alleen vragen waarop de buurtbewoner met één woord antwoordt.",
+        "v": "Waarom zijn de vragen van de leerling niet handig en hoe kan het beter?",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Het zijn gesloten vragen met een kort antwoord (2p). Stel open vragen als \"Wat vindt u fijn aan deze buurt?\" en vraag door (2p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een bedrijf geeft een presentatie aan oudere klanten over een nieuwe app. De spreker zegt: \"We gaan jullie touchpoints optimaliseren via een betere userflow.\" De klanten kijken elkaar aan en vragen niets.",
+        "v": "Waarom begrijpen de klanten de spreker niet en wat had hij moeten doen?",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Hij gebruikt vaktaal die de oudere klanten niet kennen (2p). Hij had zijn publiek moeten kennen en gewone woorden moeten kiezen (2p)."
+       }
+      ]
+     }
+    ]
    },
    {
     "id": "C",

@@ -146,7 +146,30 @@ var VAKKEN_VMBO = [
     "nSv": 32,
     "nOe": 0,
     "nBeg": 8,
-    "hasSam": true
+    "hasSam": true,
+    "leerdoelen": [
+     {
+      "id": "B1",
+      "lo": "nl.B.1",
+      "gs": 2,
+      "naam": "Doel, publiek en gespreksvorm afstemmen",
+      "beschrijving": "Je bedenkt wat je met je verhaal wilt bereiken, wie er luistert en welke vorm van gesprek past, en je kiest daar de juiste woorden bij.",
+      "ceStatus": "SE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Het doel van je gesprek",
+       "Je publiek kennen",
+       "Gespreksvormen",
+       "Formeel en informeel taalgebruik",
+       "Afstemmen op de situatie"
+      ],
+      "nSv": 26,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
+     }
+    ]
    },
    {
     "id": "C",

@@ -12,10 +12,10 @@ Voor examenkandidaten die zich voorbereiden op het centraal examen (CE) en de sc
 |---|---|---|---|
 | vakken | 12 | 16 | 12 |
 | domeinen (onderdelen van het examenprogramma) | 59 | 84 | 77 |
-| oefenvragen | 9.762 | 10.744 | 2.651 |
-| vragen in examenstijl met modelantwoord | 775 | 436 | 25 |
+| oefenvragen | 9.762 | 10.744 | 2.677 |
+| vragen in examenstijl met modelantwoord | 775 | 436 | 30 |
 | begrippen met definitie | 1.582 | 1.965 | 799 |
-| leerdoelen met een eigen module (samenvatting, vragen, begrippen) | 83 | 30 | 5 |
+| leerdoelen met een eigen module (samenvatting, vragen, begrippen) | 83 | 30 | 6 |
 
 Vakken havo: Nederlands, Wiskunde A, Biologie, Scheikunde, Natuurkunde, Bedrijfseconomie, Engels, Geschiedenis, Aardrijkskunde, Economie, Maatschappijwetenschappen, Wiskunde B.
 Vakken vwo: Nederlands, Engels, Duits, Frans, Wiskunde A, Wiskunde B, Biologie, Scheikunde, Natuurkunde, Economie, Aardrijkskunde, Geschiedenis, Maatschappijwetenschappen, Latijn, Grieks, Informatica.
