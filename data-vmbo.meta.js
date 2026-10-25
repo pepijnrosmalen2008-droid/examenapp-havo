@@ -168,6 +168,27 @@ var VAKKEN_VMBO = [
       "nOe": 5,
       "nBeg": 12,
       "hasSam": true
+     },
+     {
+      "id": "B2",
+      "lo": "nl.B.2",
+      "gs": 2,
+      "naam": "Een presentatie voorbereiden en opbouwen",
+      "beschrijving": "Je kiest en bakent een onderwerp af, zoekt betrouwbare informatie, bouwt je verhaal op met een inleiding, kern en slot en maakt eenvoudige dia's en een spiekbriefje.",
+      "ceStatus": "SE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Onderwerp afbakenen",
+       "Betrouwbare bronnen",
+       "Inleiding, kern en slot",
+       "Spiekbriefje met steekwoorden",
+       "Dia's en beelden"
+      ],
+      "nSv": 26,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
      }
     ]
    },

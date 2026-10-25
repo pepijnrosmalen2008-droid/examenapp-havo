@@ -5254,6 +5254,667 @@ var VAKKEN_VMBO = [
         "u": "Hij gebruikt vaktaal die de oudere klanten niet kennen (2p). Hij had zijn publiek moeten kennen en gewone woorden moeten kiezen (2p)."
        }
       ]
+     },
+     {
+      "id": "B2",
+      "lo": "nl.B.2",
+      "gs": 2,
+      "naam": "Een presentatie voorbereiden en opbouwen",
+      "beschrijving": "Je kiest en bakent een onderwerp af, zoekt betrouwbare informatie, bouwt je verhaal op met een inleiding, kern en slot en maakt eenvoudige dia's en een spiekbriefje.",
+      "ceStatus": "SE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Onderwerp afbakenen",
+       "Betrouwbare bronnen",
+       "Inleiding, kern en slot",
+       "Spiekbriefje met steekwoorden",
+       "Dia's en beelden"
+      ],
+      "sam": "Een goede presentatie begint met een afgebakend onderwerp dat in je spreektijd past. Je zoekt informatie bij betrouwbare bronnen: een bekende maker, controleerbare feiten en liefst een tweede bron. Je bouwt je verhaal op met een inleiding (onderwerp en aankondiging), een kern (de hoofdpunten) en een slot (afsluiting en bedankje). Je schrijft steekwoorden op een spiekbriefje en maakt dia's met weinig tekst en een passend beeld. Je vertelt zelf en leest niet voor.",
+      "begrippen": [
+       {
+        "t": "Onderwerp afbakenen",
+        "d": "Je onderwerp kleiner maken zodat het in je spreektijd past."
+       },
+       {
+        "t": "Bron",
+        "d": "De plek waar je informatie vandaan komt."
+       },
+       {
+        "t": "Betrouwbare bron",
+        "d": "Een bron met een bekende maker en feiten die je kunt controleren."
+       },
+       {
+        "t": "Inleiding",
+        "d": "Het begin waarin je je onderwerp en aankondiging noemt."
+       },
+       {
+        "t": "Kern",
+        "d": "Het middelste deel met de hoofdpunten."
+       },
+       {
+        "t": "Slot",
+        "d": "Het einde waarin je afsluit en bedankt."
+       },
+       {
+        "t": "Aankondiging",
+        "d": "De zin waarin je zegt wat je gaat vertellen."
+       },
+       {
+        "t": "Hoofdpunt",
+        "d": "Een belangrijk deel van de kern."
+       },
+       {
+        "t": "Steekwoord",
+        "d": "Een kort woord dat je helpt te onthouden wat je moet zeggen."
+       },
+       {
+        "t": "Spiekbriefje",
+        "d": "Een briefje met steekwoorden dat je tijdens de presentatie gebruikt."
+       },
+       {
+        "t": "Dia",
+        "d": "Een beeld of pagina op het scherm bij je presentatie."
+       },
+       {
+        "t": "Afsluiting",
+        "d": "De laatste zinnen waarmee je laat merken dat je klaar bent."
+       }
+      ],
+      "sv": [
+       {
+        "v": "Waarom bakent een spreker zijn onderwerp af?",
+        "o": [
+         "omdat een groot onderwerp altijd verboden is",
+         "een klein onderwerp past in de tijd",
+         "omdat een groot onderwerp altijd te makkelijk is",
+         "omdat je dan minder hoeft te weten"
+        ],
+        "c": 1,
+        "d": 1,
+        "s": 0,
+        "u": "Klein onderwerp past in de tijd.",
+        "uo": [
+         "Koos je \"omdat een groot onderwerp altijd verboden is\"? Dan denk je dat grote onderwerpen niet mogen. Het mag wel, maar je krijgt het niet in de tijd verteld.",
+         "Klopt: met een smaller onderwerp kun je het verhaal goed vertellen in de beschikbare tijd.",
+         "Koos je \"omdat een groot onderwerp altijd te makkelijk is\"? Dan denk je dat een groot onderwerp makkelijk is. Het is juist lastig, omdat je niet weet wat je moet kiezen.",
+         "Koos je \"omdat je dan minder hoeft te weten\"? Dan denk je dat het om weinig weten gaat. Je moet nog steeds goed voorbereid zijn, alleen op een kleiner stuk."
+        ],
+        "uh": "Hoeveel tijd heb je?"
+       },
+       {
+        "v": "Welke bron is meestal het betrouwbaarst?",
+        "o": [
+         "een anoniem forum op internet",
+         "een reclamefolder van een bedrijf",
+         "een gerucht dat je van iemand op straat hoorde",
+         "een bekend instituut of een schoolboek"
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 1,
+        "u": "Kies een bron van deskundigen.",
+        "uo": [
+         "Koos je \"een anoniem forum op internet\"? Dan denk je dat een forum betrouwbaar is. Iedereen kan er alles zetten, dus je kunt het niet goed controleren.",
+         "Koos je \"een reclamefolder van een bedrijf\"? Dan denk je dat een folder betrouwbaar is. Een bedrijf wil verkopen, dus de informatie kan gekleurd zijn.",
+         "Koos je \"een gerucht dat je van iemand op straat hoorde\"? Dan denk je dat een gerucht betrouwbaar is. Je weet niet waar het vandaan komt, dus het kan makkelijk fout zijn.",
+         "Klopt: zulke bronnen zijn gemaakt door deskundigen en worden gecontroleerd."
+        ],
+        "uh": "Wie heeft het gemaakt?"
+       },
+       {
+        "v": "Uit welke drie delen bestaat een presentatie?",
+        "o": [
+         "inleiding, kern en slot",
+         "titel, tekening en klap",
+         "begin, pauze en einde van de les",
+         "vraag, antwoord en cijfer"
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 2,
+        "u": "Inleiding, kern, slot.",
+        "uo": [
+         "Klopt: je begint met een inleiding, vertelt de kern en sluit af met een slot.",
+         "Koos je \"titel, tekening en klap\"? Dan denk je dat dit de onderdelen zijn. Een titel en tekening horen erbij, maar de vaste opbouw is inleiding, kern en slot.",
+         "Koos je \"begin, pauze en einde van de les\"? Dan denk je dat het om de les gaat. De opbouw gaat over je verhaal, niet over de lestijd.",
+         "Koos je \"vraag, antwoord en cijfer\"? Dan denk je dat dit de opbouw is. Dat is een toets, geen presentatie."
+        ],
+        "uh": "Hoe begin je en eindig je?"
+       },
+       {
+        "v": "Wat zet je op een spiekbriefje voor een presentatie?",
+        "o": [
+         "de hele tekst die je wilt voorlezen",
+         "alleen de titel van je presentatie",
+         "steekwoorden die je helpen onthouden",
+         "een lange lijst met moeilijke woorden"
+        ],
+        "c": 2,
+        "d": 1,
+        "s": 3,
+        "u": "Steekwoorden, geen volledige zinnen.",
+        "uo": [
+         "Koos je \"de hele tekst die je wilt voorlezen\"? Dan denk je dat de hele tekst helpt. Dan lees je alleen voor, en kijk je je publiek niet aan.",
+         "Koos je \"alleen de titel van je presentatie\"? Dan denk je dat de titel genoeg is. Dan weet je niet meer wat je moet vertellen, dus het helpt je weinig.",
+         "Klopt: steekwoorden zijn korte aanwijzingen, waarmee je zelf kunt vertellen.",
+         "Koos je \"een lange lijst met moeilijke woorden\"? Dan denk je dat moeilijke woorden helpen. Zo wordt je verhaal onduidelijk, en het publiek snapt het niet."
+        ],
+        "uh": "Wat helpt je onthouden?"
+       },
+       {
+        "v": "Waarvoor gebruik je een dia in een presentatie?",
+        "o": [
+         "om je hele verhaal er letterlijk op te zetten",
+         "om de aandacht van jou af te leiden",
+         "om je verhaal te ondersteunen met beeld",
+         "om je spreektijd te verlengen"
+        ],
+        "c": 2,
+        "d": 1,
+        "s": 4,
+        "u": "Dia = ondersteuning.",
+        "uo": [
+         "Koos je \"om je hele verhaal er letterlijk op te zetten\"? Dan denk je dat alles op de dia moet. Dan leest het publiek mee, en luistert het niet naar jou.",
+         "Koos je \"om de aandacht van jou af te leiden\"? Dan denk je dat dia's afleiden. Een goede dia helpt juist, want hij versterkt wat jij zegt.",
+         "Klopt: een dia laat iets zien dat jouw woorden versterkt.",
+         "Koos je \"om je spreektijd te verlengen\"? Dan denk je dat een dia tijd erbij geeft. De spreektijd blijft hetzelfde, of je nu dia's hebt of niet."
+        ],
+        "uh": "Wat laat je zien?"
+       },
+       {
+        "v": "Wat hoort in de inleiding van een presentatie?",
+        "o": [
+         "je onderwerp en wat je gaat vertellen",
+         "alle details en voorbeelden van je onderwerp",
+         "je bedankt iedereen en gaat zitten",
+         "een lange lijst met bronnen"
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 2,
+        "u": "Inleiding = onderwerp en aankondiging.",
+        "uo": [
+         "Klopt: de inleiding zegt waar het over gaat en wekt belangstelling.",
+         "Koos je \"alle details en voorbeelden van je onderwerp\"? Dan denk je dat alle details erin horen. Die horen in de kern, niet in de inleiding.",
+         "Koos je \"je bedankt iedereen en gaat zitten\"? Dan denk je dat dit hoort. Dit hoort bij het slot, niet bij het begin.",
+         "Koos je \"een lange lijst met bronnen\"? Dan denk je dat dit in de inleiding past. Bronnen komen vaak aan het eind, niet aan het begin."
+        ],
+        "uh": "Hoe begin je?"
+       },
+       {
+        "v": "Waarom verzamel je informatie voor een presentatie?",
+        "o": [
+         "zodat je alles letterlijk kunt voorlezen",
+         "zodat je meer papieren hebt",
+         "zodat je je klas kunt laten schrikken",
+         "zodat je genoeg weet om te vertellen"
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 0,
+        "u": "Weten voor vertellen.",
+        "uo": [
+         "Koos je \"zodat je alles letterlijk kunt voorlezen\"? Dan denk je dat voorlezen het doel is. Je moet vertellen in je eigen woorden, dus voorlezen helpt niet.",
+         "Koos je \"zodat je meer papieren hebt\"? Dan denk je dat veel papier telt. Het gaat om wat je begrijpt, niet om hoeveel papier je meeneemt.",
+         "Koos je \"zodat je je klas kunt laten schrikken\"? Dan denk je dat schrik het doel is. Je wilt je publiek informeren of overtuigen, geen schrik aanjagen.",
+         "Klopt: wie genoeg weet, vertelt zeker en kan vragen beantwoorden."
+        ],
+        "uh": "Wat moet je weten?"
+       },
+       {
+        "v": "Wat moet Sam als eerste doen met zijn onderwerp \"dieren\"?",
+        "o": [
+         "alle twintig pagina's tekst uit zijn hoofd leren",
+         "een deelonderwerp kiezen, zoals één diersoort",
+         "een tweede onderwerp erbij kiezen",
+         "wachten tot de leraar iets bedenkt"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 0,
+        "u": "Bak je onderwerp af.",
+        "uo": [
+         "Koos je \"alle twintig pagina's tekst uit zijn hoofd leren\"? Dan denk je dat alles uit je hoofd leren helpt. Dat lukt niet, en het onderwerp blijft veel te groot.",
+         "Klopt: een smaller onderwerp kun je in de tijd goed behandelen.",
+         "Koos je \"een tweede onderwerp erbij kiezen\"? Dan denk je dat een tweede onderwerp helpt. Dan wordt het nog groter, en je hebt nog minder tijd per onderwerp.",
+         "Koos je \"wachten tot de leraar iets bedenkt\"? Dan denk je dat de leraar het kiest. Je moet het zelf afbakenen, want dat hoort bij voorbereiden."
+        ],
+        "uh": "Wat is te groot?",
+        "ctx": "Sam moet een spreekbeurt houden over \"dieren\". Hij heeft twee uur gegoogeld en twintig pagina's tekst geprint. Nu zit hij met alle papieren op tafel en weet niet waar hij moet beginnen, want over dieren valt eindeloos veel te vertellen."
+       },
+       {
+        "v": "Waarom is twintig pagina's tekst printen niet handig voor Sam?",
+        "o": [
+         "de pagina's zijn te klein om te lezen",
+         "printen is verboden bij een presentatie voor de klas",
+         "er staan vast alleen maar fouten in",
+         "hij heeft veel te veel stof voor de tijd"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 4,
+        "u": "Kies wat belangrijk is.",
+        "uo": [
+         "Koos je \"de pagina's zijn te klein om te lezen\"? Dan denk je dat de grootte van de pagina's telt. Het gaat om de hoeveelheid, niet om de afdruk.",
+         "Koos je \"printen is verboden bij een presentatie voor de klas\"? Dan denk je dat printen niet mag. Dat mag wel, maar het is niet nuttig bij zo veel tekst.",
+         "Koos je \"er staan vast alleen maar fouten in\"? Dan denk je dat de tekst vol fouten staat. Dat weten we niet, het probleem is de hoeveelheid.",
+         "Klopt: te veel informatie maakt het moeilijk om te kiezen wat belangrijk is."
+        ],
+        "uh": "Wat moet je weglaten?",
+        "ctx": "Sam moet een spreekbeurt houden over \"dieren\". Hij heeft twee uur gegoogeld en twintig pagina's tekst geprint. Nu zit hij met alle papieren op tafel en weet niet waar hij moet beginnen, want over dieren valt eindeloos veel te vertellen."
+       },
+       {
+        "v": "Welk deel van de presentatie hoor je in deze zinnen?",
+        "o": [
+         "de kern met alle uitleg en details",
+         "de inleiding met een aankondiging",
+         "het slot met een samenvatting",
+         "een pauze tussen twee delen"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 2,
+        "u": "Aankondiging hoort in de inleiding.",
+        "uo": [
+         "Koos je \"de kern met alle uitleg en details\"? Dan denk je dat dit de kern is. In de kern vertel je de uitleg, hier kondigt ze alleen aan.",
+         "Klopt: de spreker zegt waar het over gaat en wat er komt.",
+         "Koos je \"het slot met een samenvatting\"? Dan denk je dat dit het slot is. Aan het slot zeg je tot besluit iets, en hier begint ze pas.",
+         "Koos je \"een pauze tussen twee delen\"? Dan denk je dat dit een pauze is. Ze praat gewoon door, en kondigt de delen aan."
+        ],
+        "uh": "Hoe begint ze?",
+        "ctx": "Een leerling begint haar presentatie met: \"Goedemorgen, ik ga het hebben over de oude molen in ons dorp. Eerst vertel ik hoe een molen werkt, dan hoe oud deze molen is en tot slot waarom hij zo belangrijk is voor het dorp.\""
+       },
+       {
+        "v": "In hoeveel delen deelt de spreker haar kern op?",
+        "o": [
+         "in twee delen",
+         "in meer dan vier delen",
+         "in drie delen",
+         "in één deel"
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 2,
+        "u": "Tel de aangekondigde delen.",
+        "uo": [
+         "Koos je \"in twee delen\"? Dan denk je dat de spreker alleen het werken en de leeftijd noemt. Het derde punt over het belang voor het dorp mis je dan, en dat zit er ook in.",
+         "Koos je \"in meer dan vier delen\"? Dan denk je dat er een vierde en vijfde punt volgen. Dat hoor je niet in haar aankondiging, je telt dan zelf delen erbij.",
+         "Klopt: ze noemt eerst hoe een molen werkt, dan de leeftijd en dan het belang.",
+         "Koos je \"in één deel\"? Dan denk je dat ze alles in één stuk vertelt. Ze zegt juist \"eerst, dan, tot slot\", en dat zijn aparte delen."
+        ],
+        "uh": "Hoeveel noemt ze?",
+        "ctx": "Een leerling begint haar presentatie met: \"Goedemorgen, ik ga het hebben over de oude molen in ons dorp. Eerst vertel ik hoe een molen werkt, dan hoe oud deze molen is en tot slot waarom hij zo belangrijk is voor het dorp.\""
+       },
+       {
+        "v": "Wat doet Daan fout met zijn dia's?",
+        "o": [
+         "hij zet te veel tekst op elke dia",
+         "hij maakt te weinig dia's voor vijf minuten",
+         "hij gebruikt geen enkele afbeelding",
+         "hij praat te hard bij de dia's"
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 4,
+        "u": "Weinig tekst per dia.",
+        "uo": [
+         "Klopt: lange zinnen op een dia leest het publiek mee en luistert dan niet naar de spreker.",
+         "Koos je \"hij maakt te weinig dia's voor vijf minuten\"? Dan denk je dat het te weinig dia's zijn. Veertien in vijf minuten is juist veel, dus dat klopt niet.",
+         "Koos je \"hij gebruikt geen enkele afbeelding\"? Dan denk je dat de afbeeldingen het probleem zijn. Dat staat niet in het fragment, het probleem is de tekst.",
+         "Koos je \"hij praat te hard bij de dia's\"? Dan denk je dat zijn volume het probleem is. Dat wordt niet gezegd, het gaat om de dia's."
+        ],
+        "uh": "Wat staat er op de dia?",
+        "ctx": "Daan heeft veertien dia's gemaakt voor een presentatie van vijf minuten. Op elke dia staan lange zinnen in kleine letters. Tijdens de presentatie leest hij alles letterlijk voor en kijkt hij naar het scherm, niet naar de klas."
+       },
+       {
+        "v": "Wat doet Daan fout bij het vertellen?",
+        "o": [
+         "hij leest voor en kijkt niet naar de klas",
+         "hij praat te zacht en te snel voor de klas",
+         "hij praat in eigen woorden over de dia's",
+         "hij laat de klas vragen stellen"
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 3,
+        "u": "Vertel, lees niet voor.",
+        "uo": [
+         "Klopt: wie voorleest en naar het scherm kijkt, verliest het contact met zijn publiek.",
+         "Koos je \"hij praat te zacht en te snel voor de klas\"? Dan denk je dat het volume zacht is. Dat staat nergens, het gaat om voorlezen.",
+         "Koos je \"hij praat in eigen woorden over de dia's\"? Dan denk je dat hij vrij vertelt. Hij leest letterlijk voor, dus dat klopt niet.",
+         "Koos je \"hij laat de klas vragen stellen\"? Dan denk je dat dit gebeurt. Dat gebeurt niet in het fragment, hij leest alles voor."
+        ],
+        "uh": "Waar kijkt hij naar?",
+        "ctx": "Daan heeft veertien dia's gemaakt voor een presentatie van vijf minuten. Op elke dia staan lange zinnen in kleine letters. Tijdens de presentatie leest hij alles letterlijk voor en kijkt hij naar het scherm, niet naar de klas."
+       },
+       {
+        "v": "Hoeveel dia's past beter bij een presentatie van vijf minuten?",
+        "o": [
+         "veertig, zodat er veel te zien is",
+         "geen enkele, want dia's zijn altijd slecht",
+         "ongeveer vijf, met weinig tekst per dia",
+         "één dia met al je tekst erop"
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 4,
+        "u": "Ongeveer één dia per minuut.",
+        "uo": [
+         "Koos je \"veertig, zodat er veel te zien is\"? Dan denk je dat meer dia's beter zijn. Veel dia's jagen je publiek op, en je hebt geen tijd om ze goed te bespreken.",
+         "Koos je \"geen enkele, want dia's zijn altijd slecht\"? Dan denk je dat dia's verkeerd zijn. Ze kunnen helpen, als ze weinig tekst hebben.",
+         "Klopt: één dia per minuut is een handige vuistregel bij korte presentaties.",
+         "Koos je \"één dia met al je tekst erop\"? Dan denk je dat één dia genoeg is. Dan staat er te veel op, en lees je alles voor."
+        ],
+        "uh": "Hoeveel tijd heb je?",
+        "ctx": "Daan heeft veertien dia's gemaakt voor een presentatie van vijf minuten. Op elke dia staan lange zinnen in kleine letters. Tijdens de presentatie leest hij alles letterlijk voor en kijkt hij naar het scherm, niet naar de klas."
+       },
+       {
+        "v": "Welk deel van zijn presentatie ontbreekt bij de voetballer?",
+        "o": [
+         "de inleiding met de aankondiging van voetbal",
+         "een goed slot met een afsluiting",
+         "de kern met de uitleg",
+         "de pauze tussen twee delen"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 2,
+        "u": "Een slot sluit af.",
+        "uo": [
+         "Koos je \"de inleiding met de aankondiging van voetbal\"? Dan denk je dat de inleiding ontbreekt. Het fragment zegt dat hij netjes verteld heeft, en het slot ontbreekt.",
+         "Klopt: hij eindigt zonder afsluiting, daardoor weet de klas niet dat hij klaar is.",
+         "Koos je \"de kern met de uitleg\"? Dan denk je dat de kern ontbreekt. De uitleg heeft hij gegeven, alleen het slot ontbreekt.",
+         "Koos je \"de pauze tussen twee delen\"? Dan denk je dat een pauze ontbreekt. Een pauze is geen vast onderdeel, het slot is het onderdeel dat mist."
+        ],
+        "uh": "Wat zegt hij aan het eind?",
+        "ctx": "Een leerling heeft zijn presentatie over voetbal netjes verteld. Aan het eind zegt hij alleen: \"Dat was het.\" Hij gaat meteen zitten. De klas weet niet of hij klaar is en niemand klapt."
+       },
+       {
+        "v": "Welke bron is hier het betrouwbaarst voor Noor?",
+        "o": [
+         "het blog van iemand zonder naam of adres erbij",
+         "het reclamefilmpje van de webwinkel",
+         "alle drie even goed",
+         "de site van het gezondheidsinstituut"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 0,
+        "u": "Check wie het gemaakt heeft.",
+        "uo": [
+         "Koos je \"het blog van iemand zonder naam of adres erbij\"? Dan denk je dat het blog het betrouwbaarst is. Je weet niet wie het schrijft, dus je kunt het niet controleren.",
+         "Koos je \"het reclamefilmpje van de webwinkel\"? Dan denk je dat het filmpje betrouwbaar is. De winkel wil gamestoelen verkopen, dus het is niet neutraal.",
+         "Koos je \"alle drie even goed\"? Dan denk je dat alle bronnen gelijk zijn. Ze verschillen sterk, in deskundigheid en doel.",
+         "Klopt: een instituut met onderzoek is deskundig en heeft een naam."
+        ],
+        "uh": "Wie is de maker?",
+        "ctx": "Noor zoekt informatie over gamen voor haar spreekbeurt. Ze vindt een blog van iemand zonder naam, een site van een gezondheidsinstituut met onderzoek en een reclamefilmpje van een webwinkel met gamestoelen."
+       },
+       {
+        "v": "Waarom is het reclamefilmpje geen goede bron voor een spreekbeurt?",
+        "o": [
+         "omdat een filmpje bijna nooit de waarheid vertelt",
+         "de maker wil verkopen en kleurt de informatie",
+         "omdat reclame te lang duurt",
+         "omdat gamestoelen helemaal niet bij gamen horen"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 1,
+        "u": "Reclame wil verkopen.",
+        "uo": [
+         "Koos je \"omdat een filmpje bijna nooit de waarheid vertelt\"? Dan denk je dat een filmpje altijd fout is. Dat klopt niet, het gaat om het doel van de maker.",
+         "Klopt: een verkoper laat het product beter lijken dan het is.",
+         "Koos je \"omdat reclame te lang duurt\"? Dan denk je dat de lengte telt. Reclame is vaak kort, het probleem is de bedoeling.",
+         "Koos je \"omdat gamestoelen helemaal niet bij gamen horen\"? Dan denk je dat het onderwerp verkeerd is. Een gamestoel past wel bij gamen, het gaat om de verkoopbedoeling."
+        ],
+        "uh": "Wie betaalt de reclame?",
+        "ctx": "Noor zoekt informatie over gamen voor haar spreekbeurt. Ze vindt een blog van iemand zonder naam, een site van een gezondheidsinstituut met onderzoek en een reclamefilmpje van een webwinkel met gamestoelen."
+       },
+       {
+        "v": "Welke steekwoorden passen op het spiekbriefje bij deze presentatie?",
+        "o": [
+         "molen, werking, leeftijd, belang",
+         "de volledige zinnen van de inleiding",
+         "alle details over elke molen in het land",
+         "alleen de naam van de spreker"
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 3,
+        "u": "Steekwoorden zijn kort.",
+        "uo": [
+         "Klopt: kort en genoeg om de volgorde te onthouden.",
+         "Koos je \"de volledige zinnen van de inleiding\"? Dan denk je dat de zinnen op het briefje horen. Dan lees je voor, en dat is geen vrij vertellen.",
+         "Koos je \"alle details over elke molen in het land\"? Dan denk je dat alle details erop horen. Dat is te veel voor een briefje, en past niet bij het onderwerp.",
+         "Koos je \"alleen de naam van de spreker\"? Dan denk je dat je alleen een naam nodig hebt. Dan weet je de volgorde niet meer, en vergeet je delen."
+        ],
+        "uh": "Welke woorden onthouden je?",
+        "ctx": "Een leerling begint haar presentatie met: \"Goedemorgen, ik ga het hebben over de oude molen in ons dorp. Eerst vertel ik hoe een molen werkt, dan hoe oud deze molen is en tot slot waarom hij zo belangrijk is voor het dorp.\""
+       },
+       {
+        "v": "Hoe kan Daan zijn dia's verbeteren?",
+        "o": [
+         "de letters nog kleiner maken",
+         "er nog meer zinnen bij zetten",
+         "alle dia's laten staan en sneller praten",
+         "één beeld en een paar woorden per dia"
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 4,
+        "u": "Beeld en steekwoorden.",
+        "uo": [
+         "Koos je \"de letters nog kleiner maken\"? Dan denk je dat kleiner helpt. Dan kan niemand het lezen, en het probleem blijft de tekstmassa.",
+         "Koos je \"er nog meer zinnen bij zetten\"? Dan denk je dat meer tekst helpt. Het wordt juist onleesbaar, en je publiek leest mee.",
+         "Koos je \"alle dia's laten staan en sneller praten\"? Dan denk je dat sneller praten helpt. De klas kan het dan nog minder volgen, en de dia's blijven te vol.",
+         "Klopt: een beeld met steekwoorden houdt de klas bij je verhaal."
+        ],
+        "uh": "Wat zie je op een goede dia?",
+        "ctx": "Daan heeft veertien dia's gemaakt voor een presentatie van vijf minuten. Op elke dia staan lange zinnen in kleine letters. Tijdens de presentatie leest hij alles letterlijk voor en kijkt hij naar het scherm, niet naar de klas."
+       },
+       {
+        "v": "Wat had de leerling aan het eind kunnen zeggen?",
+        "o": [
+         "\"Eh, dat was het.\"",
+         "\"Dus ja, tot ziens.\"",
+         "\"Dat was mijn verhaal, bedankt.\"",
+         "\"Zijn er nog dingen die ik vergeten ben?\""
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 2,
+        "u": "Rond af en bedank.",
+        "uo": [
+         "Koos je \"Eh, dat was het.\"? Dan denk je dat dit een goed slot is. Het klinkt onzeker en kort, het publiek weet niet of je klaar bent.",
+         "Koos je \"Dus ja, tot ziens.\"? Dan denk je dat dit een goed slot is. Het zegt niets over je onderwerp, en heeft geen afsluiting.",
+         "Klopt: een slot met afsluiting en bedankje maakt duidelijk dat je klaar bent.",
+         "Koos je \"Zijn er nog dingen die ik vergeten ben?\"? Dan denk je dat dit een goed slot is. Dit is een vraag aan het publiek, en het sluit je verhaal niet af."
+        ],
+        "uh": "Hoe eindig je?",
+        "ctx": "Een leerling heeft zijn presentatie over voetbal netjes verteld. Aan het eind zegt hij alleen: \"Dat was het.\" Hij gaat meteen zitten. De klas weet niet of hij klaar is en niemand klapt."
+       },
+       {
+        "v": "Hoe verdeelt Sam zijn stof over inleiding, kern en slot?",
+        "o": [
+         "alles in de inleiding stoppen en het slot leeg laten",
+         "alleen de kern met heel veel details en voorbeelden bewaren",
+         "in drie delen: begin, hoofdpunten en afsluiting",
+         "de papieren door de klas laten lezen"
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 0,
+        "u": "Inleiding, kern, slot.",
+        "uo": [
+         "Koos je \"alles in de inleiding stoppen en het slot leeg laten\"? Dan denk je dat het goed is. Een slot is nodig, en de kern zorgt voor de uitleg.",
+         "Koos je \"alleen de kern met heel veel details en voorbeelden...\"? Dan denk je dat een kern genoeg is. Zonder inleiding en slot is het verhaal onduidelijk, en de klas mist de structuur.",
+         "Klopt: zo heeft zijn verhaal een duidelijke opbouw die de klas kan volgen.",
+         "Koos je \"de papieren door de klas laten lezen\"? Dan denk je dat de klas moet lezen. Dat is geen presentatie, dus dat klopt niet."
+        ],
+        "uh": "Wat komt waar?",
+        "ctx": "Sam moet een spreekbeurt houden over \"dieren\". Hij heeft twee uur gegoogeld en twintig pagina's tekst geprint. Nu zit hij met alle papieren op tafel en weet niet waar hij moet beginnen, want over dieren valt eindeloos veel te vertellen."
+       },
+       {
+        "v": "Welk bewijs maakt een bron betrouwbaar?",
+        "o": [
+         "dat het filmpje veel kijkers heeft",
+         "dat de pagina mooi is vormgegeven",
+         "dat de tekst veel moeilijke vaktaal bevat zonder uitleg",
+         "een bekende maker en controleerbare feiten"
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 1,
+        "u": "Bekende maker en controleerbare feiten.",
+        "uo": [
+         "Koos je \"dat het filmpje veel kijkers heeft\"? Dan denk je dat veel kijkers genoeg is. Een populaire video kan nog steeds fout zijn, dus dat bewijst niets.",
+         "Koos je \"dat de pagina mooi is vormgegeven\"? Dan denk je dat mooie vormgeving telt. Een mooie pagina kan nog steeds foute feiten bevatten, dus het zegt niets.",
+         "Koos je \"dat de tekst veel moeilijke vaktaal bevat zonder...\"? Dan denk je dat moeilijke woorden bewijzen. Moeilijk is niet hetzelfde als goed, en zegt niets over de betrouwbaarheid.",
+         "Klopt: zo kun je de feiten controleren en weet je wie ervoor staat."
+        ],
+        "uh": "Wie staat er voor?",
+        "ctx": "Noor zoekt informatie over gamen voor haar spreekbeurt. Ze vindt een blog van iemand zonder naam, een site van een gezondheidsinstituut met onderzoek en een reclamefilmpje van een webwinkel met gamestoelen."
+       },
+       {
+        "v": "Welk onderwerp is geschikter dan \"dieren\" voor een spreekbeurt van vijf minuten?",
+        "o": [
+         "de leefwijze van de pinguïn",
+         "alle diersoorten die op aarde leven",
+         "dieren in het algemeen en hun hele geschiedenis",
+         "alles wat met dieren te maken heeft"
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 0,
+        "u": "Kies een klein onderwerp.",
+        "uo": [
+         "Klopt: dit onderwerp is klein genoeg om in de tijd goed te vertellen.",
+         "Koos je \"alle diersoorten die op aarde leven\"? Dan denk je dat dit geschikter is. Het is nog groter dan \"dieren\", en past niet in vijf minuten.",
+         "Koos je \"dieren in het algemeen en hun hele geschiedenis\"? Dan denk je dat dit goed past. Het onderwerp blijft veel te breed, en je weet niet waar je moet beginnen.",
+         "Koos je \"alles wat met dieren te maken heeft\"? Dan denk je dat dit past. Dat is het hele onderwerp \"dieren\", dus het is niet afgebakend."
+        ],
+        "uh": "Hoeveel tijd heb je?",
+        "ctx": "Sam moet een spreekbeurt houden over \"dieren\". Hij heeft twee uur gegoogeld en twintig pagina's tekst geprint. Nu zit hij met alle papieren op tafel en weet niet waar hij moet beginnen, want over dieren valt eindeloos veel te vertellen."
+       },
+       {
+        "v": "Hoe controleer je of een bron betrouwbaar is?",
+        "o": [
+         "kijk of de pagina veel kleuren heeft",
+         "zoek de maker en vergelijk met een tweede bron",
+         "geloof de bron die als eerste verschijnt",
+         "vraag je vriend wat hij ervan vindt"
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 1,
+        "u": "Maker en tweede bron checken.",
+        "uo": [
+         "Koos je \"kijk of de pagina veel kleuren heeft\"? Dan denk je dat kleuren iets zeggen. Een mooie pagina kan toch fout zijn, dus kleuren bewijzen niets over de feiten.",
+         "Klopt: een bekende maker en een tweede bron die hetzelfde zegt, geven meer zekerheid.",
+         "Koos je \"geloof de bron die als eerste verschijnt\"? Dan denk je dat de eerste altijd klopt. De volgorde zegt niets over de kwaliteit, dus controleer altijd de maker.",
+         "Koos je \"vraag je vriend wat hij ervan vindt\"? Dan denk je dat een vriend genoeg is. Een mening van een vriend is geen controle, en hij hoeft het ook niet te weten."
+        ],
+        "uh": "Wie zegt het nog meer?",
+        "ctx": "Noor zoekt informatie over gamen voor haar spreekbeurt. Ze vindt een blog van iemand zonder naam, een site van een gezondheidsinstituut met onderzoek en een reclamefilmpje van een webwinkel met gamestoelen."
+       },
+       {
+        "v": "Hoe gebruik je steekwoorden bij een dia met weinig tekst?",
+        "o": [
+         "je leest elke zin van de dia voor",
+         "je zet er je hele tekst onder",
+         "je laat de dia zonder uitleg staan",
+         "je vertelt zelf het verhaal bij het beeld"
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 3,
+        "u": "Dia ondersteunt, jij vertelt.",
+        "uo": [
+         "Koos je \"je leest elke zin van de dia voor\"? Dan denk je dat voorlezen werkt. Dan luistert het publiek niet meer, en je kijkt naar het scherm.",
+         "Koos je \"je zet er je hele tekst onder\"? Dan denk je dat alle tekst onder de dia moet. Dan lees je alles weer voor, en het publiek haakt af.",
+         "Koos je \"je laat de dia zonder uitleg staan\"? Dan denk je dat de dia alles zegt. Zonder uitleg begrijpt het publiek het niet, want jij moet het vertellen.",
+         "Klopt: de dia ondersteunt en jij vertelt de uitleg met eigen woorden."
+        ],
+        "uh": "Wat zeg jij erbij?",
+        "ctx": "Daan heeft veertien dia's gemaakt voor een presentatie van vijf minuten. Op elke dia staan lange zinnen in kleine letters. Tijdens de presentatie leest hij alles letterlijk voor en kijkt hij naar het scherm, niet naar de klas."
+       },
+       {
+        "v": "Welk beeld helpt de spreker het best bij de kern over de molen?",
+        "o": [
+         "een tekening van de binnenkant van de molen",
+         "een foto van een speeltuin",
+         "een leeg wit blad",
+         "een plaatje van een molen in een ander land"
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 4,
+        "u": "Beeld versterkt je uitleg.",
+        "uo": [
+         "Klopt: zo'n beeld laat zien hoe de molen werkt en versterkt haar uitleg.",
+         "Koos je \"een foto van een speeltuin\"? Dan denk je dat dit past. Een speeltuin heeft niets met de molen te maken, dus het helpt de uitleg niet.",
+         "Koos je \"een leeg wit blad\"? Dan denk je dat een blanco blad helpt. Er is niets te zien, dus je publiek leert niets bij je woorden.",
+         "Koos je \"een plaatje van een molen in een ander land\"? Dan denk je dat dit goed past. Het gaat om de molen in hun dorp, dus een andere molen leidt af."
+        ],
+        "uh": "Wat past bij je verhaal?",
+        "ctx": "Een leerling begint haar presentatie met: \"Goedemorgen, ik ga het hebben over de oude molen in ons dorp. Eerst vertel ik hoe een molen werkt, dan hoe oud deze molen is en tot slot waarom hij zo belangrijk is voor het dorp.\""
+       }
+      ],
+      "oe": [
+       {
+        "bron": "Examenstijl",
+        "ctx": "Sam moet een spreekbeurt houden over \"dieren\". Hij heeft twee uur gegoogeld en twintig pagina's tekst geprint. Nu zit hij met alle papieren op tafel en weet niet waar hij moet beginnen, want over dieren valt eindeloos veel te vertellen.",
+        "v": "Welk probleem heeft Sam en wat moet hij als eerste doen?",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Zijn onderwerp is te groot en hij heeft te veel stof (2p). Hij moet een deelonderwerp kiezen, zoals één diersoort (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een leerling begint haar presentatie met: \"Goedemorgen, ik ga het hebben over de oude molen in ons dorp. Eerst vertel ik hoe een molen werkt, dan hoe oud deze molen is en tot slot waarom hij zo belangrijk is voor het dorp.\"",
+        "v": "Hoe heet dit deel van de presentatie en welke drie delen noemt de spreker?",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "De inleiding met aankondiging (1p). Hoe een molen werkt, de leeftijd van de molen en het belang voor het dorp (2p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Daan heeft veertien dia's gemaakt voor een presentatie van vijf minuten. Op elke dia staan lange zinnen in kleine letters. Tijdens de presentatie leest hij alles letterlijk voor en kijkt hij naar het scherm, niet naar de klas.",
+        "v": "Noem twee dingen die Daan verkeerd doet en één verbeterpunt.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Te veel tekst op de dia's (1p) en alles voorlezen met het gezicht naar het scherm (1p). Verbetering: één beeld en een paar woorden per dia en vrij vertellen (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een leerling heeft zijn presentatie over voetbal netjes verteld. Aan het eind zegt hij alleen: \"Dat was het.\" Hij gaat meteen zitten. De klas weet niet of hij klaar is en niemand klapt.",
+        "v": "Welk deel van de presentatie ontbreekt en wat had hij kunnen zeggen?",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Het slot met afsluiting (2p). Bijvoorbeeld: \"Dat was mijn verhaal, bedankt voor het luisteren\" (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Noor zoekt informatie over gamen voor haar spreekbeurt. Ze vindt een blog van iemand zonder naam, een site van een gezondheidsinstituut met onderzoek en een reclamefilmpje van een webwinkel met gamestoelen.",
+        "v": "Welke bron is betrouwbaar en welke niet? Leg uit waarom.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Betrouwbaar: de site van het gezondheidsinstituut, want het is deskundig en heeft een naam (2p). Niet betrouwbaar: de reclame, want de maker wil verkopen, en het blog zonder naam, want je kunt het niet controleren (2p)."
+       }
+      ]
      }
     ]
    },
