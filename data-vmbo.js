@@ -6576,6 +6576,667 @@ var VAKKEN_VMBO = [
         "u": "Ze ademt rustig in en uit en begint met een lach (2p). Andere tip: hardop oefenen of een spiekbriefje gebruiken (1p)."
        }
       ]
+     },
+     {
+      "id": "B4",
+      "lo": "nl.B.4",
+      "gs": 2,
+      "naam": "Deelnemen aan een gesprek of discussie",
+      "beschrijving": "Je doet mee aan een gesprek of discussie: je luistert, noemt je standpunt met een argument, reageert netjes op een ander en komt samen tot een besluit.",
+      "ceStatus": "SE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Gespreksregels en beurten",
+       "Standpunt en argument inbrengen",
+       "Reageren op een ander",
+       "Samenvatten en doorvragen",
+       "Samen een besluit nemen"
+      ],
+      "sam": "Bij een gesprek of discussie luister je en wacht je op je beurt. Je noemt je standpunt en onderbouwt het met een argument. Op een ander reageer je met respect: eerst erkennen, daarna je bezwaar met een reden. Je vat samen wat je gehoord hebt en stelt vragen. Bij een overleg zoek je samen naar een besluit waar iedereen mee kan leven. Een gespreksleider verdeelt de beurten en houdt het gesprek rustig.",
+      "begrippen": [
+       {
+        "t": "Standpunt",
+        "d": "De mening die iemand in een gesprek verdedigt."
+       },
+       {
+        "t": "Argument",
+        "d": "Een reden waarom je standpunt klopt."
+       },
+       {
+        "t": "Tegenargument",
+        "d": "Een reden tegen het standpunt van een ander."
+       },
+       {
+        "t": "Beurt",
+        "d": "Het moment waarop jij mag praten."
+       },
+       {
+        "t": "Uitpraten",
+        "d": "Iemand zijn zin laten afmaken zonder te onderbreken."
+       },
+       {
+        "t": "Onderbreken",
+        "d": "Iemand in de rede vallen terwijl hij nog praat."
+       },
+       {
+        "t": "Samenvatten",
+        "d": "Kort zeggen wat je van een ander begrepen hebt."
+       },
+       {
+        "t": "Doorvragen",
+        "d": "Een vraag stellen om meer uitleg te krijgen."
+       },
+       {
+        "t": "Gespreksleider",
+        "d": "De persoon die de beurten verdeelt en het gesprek bewaakt."
+       },
+       {
+        "t": "Meningsverschil",
+        "d": "Een situatie waarin mensen het niet eens zijn."
+       },
+       {
+        "t": "Compromis",
+        "d": "Een oplossing waar beide kanten mee kunnen leven."
+       },
+       {
+        "t": "Besluit",
+        "d": "De keuze waar een groep op uitkomt."
+       }
+      ],
+      "sv": [
+       {
+        "v": "Wat doe je als een ander aan het woord is?",
+        "o": [
+         "meteen reageren op wat hij zegt",
+         "luisteren en wachten op je beurt",
+         "met je buurman gaan praten",
+         "naar buiten kijken en niets zeggen"
+        ],
+        "c": 1,
+        "d": 1,
+        "s": 0,
+        "u": "Luister en wacht.",
+        "uo": [
+         "Koos je \"meteen reageren op wat hij zegt\"? Dan denk je dat meteen reageren hoort. Dan onderbreek je de ander, en hij kan zijn verhaal niet afmaken.",
+         "Klopt: wie luistert en wacht, laat de ander zijn verhaal doen.",
+         "Koos je \"met je buurman gaan praten\"? Dan denk je dat een zijgesprek geen kwaad kan. Je hoort dan niet wat er gezegd wordt, en je laat zien dat je niet luistert.",
+         "Koos je \"naar buiten kijken en niets zeggen\"? Dan denk je dat wegkijken geen kwaad kan. Je toont dan geen belangstelling, en je mist de inhoud van het gesprek."
+        ],
+        "uh": "Wie praat er?"
+       },
+       {
+        "v": "Waarom luister je naar elkaar in een discussie?",
+        "o": [
+         "zodat je zelf minder hoeft te zeggen",
+         "zodat je de ander in de rede kunt vallen",
+         "zodat je alles letterlijk kunt herhalen",
+         "zodat je kunt reageren op wat is gezegd"
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 1,
+        "u": "Luisteren = begrijpen.",
+        "uo": [
+         "Koos je \"zodat je zelf minder hoeft te zeggen\"? Dan denk je dat luisteren je spreektijd vermindert. Luisteren helpt juist om beter te antwoorden, en je praat nog steeds mee.",
+         "Koos je \"zodat je de ander in de rede kunt vallen\"? Dan denk je dat luisteren dient om te onderbreken. Dat helpt niemand, en het verstoort het gesprek.",
+         "Koos je \"zodat je alles letterlijk kunt herhalen\"? Dan denk je dat herhalen het doel is. Het gaat om begrijpen, en daar kun je dan op reageren.",
+         "Klopt: wie luistert, kan beter antwoorden en begrijpt de ander."
+        ],
+        "uh": "Waarom luister je?"
+       },
+       {
+        "v": "Wat is een standpunt in een discussie?",
+        "o": [
+         "de mening die iemand verdedigt",
+         "de plaats waar iemand staat",
+         "een feit dat je kunt controleren",
+         "het onderwerp van het gesprek"
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 2,
+        "u": "Standpunt = mening.",
+        "uo": [
+         "Klopt: een standpunt is wat iemand vindt, zoals \"ik vind dat...\"",
+         "Koos je \"de plaats waar iemand staat\"? Dan denk je dat het om de plek gaat. Een standpunt is een mening, geen plaats in de ruimte.",
+         "Koos je \"een feit dat je kunt controleren\"? Dan denk je dat een standpunt een feit is. Een feit kun je controleren, en een standpunt is een mening.",
+         "Koos je \"het onderwerp van het gesprek\"? Dan denk je dat het onderwerp een standpunt is. Het onderwerp is waarover je praat, en je mening is het standpunt."
+        ],
+        "uh": "Wat vind jij?"
+       },
+       {
+        "v": "Waarmee maak je een standpunt sterker?",
+        "o": [
+         "met een hardere stem en meer gebaren erbij",
+         "met nog een keer hetzelfde zeggen",
+         "met een argument en een voorbeeld",
+         "met een grap over de ander"
+        ],
+        "c": 2,
+        "d": 1,
+        "s": 3,
+        "u": "Standpunt plus argument.",
+        "uo": [
+         "Koos je \"met een hardere stem en meer gebaren erbij\"? Dan denk je dat een harde stem overtuigt. Roepen is geen reden, en het maakt je niet geloofwaardiger.",
+         "Koos je \"met nog een keer hetzelfde zeggen\"? Dan denk je dat herhalen sterker maakt. Je geeft dan geen nieuwe reden, dus overtuigt het niet.",
+         "Klopt: een reden en een voorbeeld laten zien waarom je het vindt.",
+         "Koos je \"met een grap over de ander\"? Dan denk je dat spot sterker maakt. Het beledigt de ander, en het is geen argument."
+        ],
+        "uh": "Waarom vind je dit?"
+       },
+       {
+        "v": "Hoe ga je om met iemand die het niet met je eens is?",
+        "o": [
+         "je wordt boos en roept harder",
+         "je loopt weg en zegt niets meer",
+         "je blijft beleefd en luistert",
+         "je lacht hem uit zodat hij stopt"
+        ],
+        "c": 2,
+        "d": 1,
+        "s": 4,
+        "u": "Blijf beleefd.",
+        "uo": [
+         "Koos je \"je wordt boos en roept harder\"? Dan denk je dat boos worden helpt. Het gesprek loopt dan vast, en niemand luistert meer.",
+         "Koos je \"je loopt weg en zegt niets meer\"? Dan denk je dat weglopen een oplossing is. Dan lost het meningsverschil niet op, en het gesprek stopt.",
+         "Klopt: een meningsverschil lost op door rustig te blijven en te luisteren.",
+         "Koos je \"je lacht hem uit zodat hij stopt\"? Dan denk je dat uitlachen helpt. Het is beledigend, en het maakt het gesprek erger."
+        ],
+        "uh": "Hoe reageer je?"
+       },
+       {
+        "v": "Wat is het doel van een overleg?",
+        "o": [
+         "samen een besluit nemen",
+         "laten winnen wie het hardst praat",
+         "laten zien hoeveel je weet",
+         "een toets maken voor de klas"
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 2,
+        "u": "Overleg = besluit.",
+        "uo": [
+         "Klopt: in een overleg praat de groep tot er een keuze is.",
+         "Koos je \"laten winnen wie het hardst praat\"? Dan denk je dat de luidste wint. In een overleg beslist de groep samen, en niet degene die het hardst roept.",
+         "Koos je \"laten zien hoeveel je weet\"? Dan denk je dat het om kennis tonen gaat. Het doel is samen een keuze maken, en niet indruk maken.",
+         "Koos je \"een toets maken voor de klas\"? Dan denk je dat dit een toets is. Een overleg is een gesprek, en het doel is samen beslissen."
+        ],
+        "uh": "Wat wil de groep?"
+       },
+       {
+        "v": "Waar let een gespreksleider op?",
+        "o": [
+         "dat hij zelf het allermeest aan het woord is",
+         "dat niemand iets zegt",
+         "dat de leraar tevreden is",
+         "dat iedereen aan de beurt komt"
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 0,
+        "u": "Iedereen aan de beurt.",
+        "uo": [
+         "Koos je \"dat hij zelf het allermeest aan het woord is\"? Dan denk je dat de leider het meest praat. Hij stuurt het gesprek, en laat juist anderen aan het woord.",
+         "Koos je \"dat niemand iets zegt\"? Dan denk je dat stilte het doel is. Een gesprek heeft juist bijdragen nodig, dus de leider stimuleert het praten.",
+         "Koos je \"dat de leraar tevreden is\"? Dan denk je dat het om de leraar gaat. De leider zorgt voor een goed gesprek, voor alle deelnemers.",
+         "Klopt: een gespreksleider verdeelt de beurten zodat niemand wordt overgeslagen."
+        ],
+        "uh": "Wie mag praten?"
+       },
+       {
+        "v": "Wat gaat er mis in het gesprek tussen Mo en Anna?",
+        "o": [
+         "Mo spreekt te zacht en te snel voor de klas",
+         "Anna onderbreekt Mo en kraakt zijn idee af",
+         "Mo geeft geen enkel argument voor zijn eigen idee",
+         "Anna heeft een goed argument genoemd"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 0,
+        "u": "Laat elkaar uitpraten.",
+        "uo": [
+         "Koos je \"Mo spreekt te zacht en te snel voor de klas\"? Dan denk je dat Mo te zacht praat. Dat staat nergens in het fragment, het probleem is Anna's reactie.",
+         "Klopt: onderbreken en iemands idee afkraken zorgt dat hij niet meer durft te praten.",
+         "Koos je \"Mo geeft geen enkel argument voor zijn eigen idee\"? Dan denk je dat het aan Mo ligt. Hij heeft geen kans meer gekregen, want Anna onderbrak hem direct.",
+         "Koos je \"Anna heeft een goed argument genoemd\"? Dan denk je dat Anna een argument noemt. Ze zegt alleen \"dat is stom\", en dat is een oordeel, geen reden."
+        ],
+        "uh": "Wat doet Anna?",
+        "ctx": "In een klassengesprek zegt Mo: \"Ik vind dat we een schoolfeest moeten houden.\" Anna onderbreekt hem meteen: \"Nee, dat is stom!\" Mo zwijgt, kijkt weg en zegt de rest van het gesprek niets meer. De andere leerlingen kijken naar hun tafel."
+       },
+       {
+        "v": "Hoe had Anna beter kunnen reageren?",
+        "o": [
+         "\"Dat is echt een heel stom idee, Mo.\"",
+         "\"Ik zeg niks meer, doe maar wat je wilt.\"",
+         "\"Iedereen weet gewoon dat dit niet kan.\"",
+         "\"Ik zie het anders, want het is duur.\""
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 4,
+        "u": "Reageer met een reden.",
+        "uo": [
+         "Koos je \"Dat is echt een heel stom idee, Mo.\"? Dan denk je dat dit beter is. Het blijft een belediging zonder reden, en Mo voelt zich afgewezen.",
+         "Koos je \"Ik zeg niks meer, doe maar wat je wilt.\"? Dan denk je dat dit beter is. Zo stop je het gesprek, en er komt geen oplossing.",
+         "Koos je \"Iedereen weet gewoon dat dit niet kan.\"? Dan denk je dat dit beter is. Het is een bewering zonder reden, en het beledigt Mo.",
+         "Klopt: ze geeft een reden en blijft beleefd, zodat Mo kan antwoorden."
+        ],
+        "uh": "Wat zegt ze?",
+        "ctx": "In een klassengesprek zegt Mo: \"Ik vind dat we een schoolfeest moeten houden.\" Anna onderbreekt hem meteen: \"Nee, dat is stom!\" Mo zwijgt, kijkt weg en zegt de rest van het gesprek niets meer. De andere leerlingen kijken naar hun tafel."
+       },
+       {
+        "v": "Welk effect heeft Anna's reactie op de klas?",
+        "o": [
+         "de klas komt met nog veel meer ideeën",
+         "de anderen durven niets te zeggen",
+         "de klas geeft Anna een compliment",
+         "de klas begrijpt Mo's idee daardoor beter"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 1,
+        "u": "Respect houdt het gesprek open.",
+        "uo": [
+         "Koos je \"de klas komt met nog veel meer ideeën\"? Dan denk je dat de klas enthousiast wordt. Het fragment zegt dat ze naar hun tafel kijken, dus ze durven niet.",
+         "Klopt: wie ziet dat een idee wordt afgekraakt, houdt zijn mening liever voor zich.",
+         "Koos je \"de klas geeft Anna een compliment\"? Dan denk je dat de klas Anna prijst. Er staat niets over complimenten, ze zwijgen.",
+         "Koos je \"de klas begrijpt Mo's idee daardoor beter\"? Dan denk je dat het idee duidelijker wordt. Mo kreeg geen uitleg, dus er is niets verduidelijkt."
+        ],
+        "uh": "Wat doen de leerlingen?",
+        "ctx": "In een klassengesprek zegt Mo: \"Ik vind dat we een schoolfeest moeten houden.\" Anna onderbreekt hem meteen: \"Nee, dat is stom!\" Mo zwijgt, kijkt weg en zegt de rest van het gesprek niets meer. De andere leerlingen kijken naar hun tafel."
+       },
+       {
+        "v": "Wat doet Sara eerst voor ze haar bezwaar noemt?",
+        "o": [
+         "ze zegt dat het feest verboden is",
+         "ze noemt de ander een slechte organisator",
+         "ze erkent dat het feest leuk kan zijn",
+         "ze vraagt de leraar om te beslissen"
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 3,
+        "u": "Erken eerst, dan bezwaar.",
+        "uo": [
+         "Koos je \"ze zegt dat het feest verboden is\"? Dan denk je dat Sara het verbiedt. Ze maakt een tegenwerping, en dat is iets anders dan verbieden.",
+         "Koos je \"ze noemt de ander een slechte organisator\"? Dan denk je dat ze iemand aanvalt. Dat doet ze niet, ze begint juist beleefd.",
+         "Klopt: ze toont begrip voor de ander voor ze haar eigen punt maakt.",
+         "Koos je \"ze vraagt de leraar om te beslissen\"? Dan denk je dat ze de leraar vraagt. Dat doet ze niet, ze praat met haar klasgenoot."
+        ],
+        "uh": "Hoe begint ze?",
+        "ctx": "Sara zegt in een gesprek over het schoolfeest: \"Ik snap dat je een groot feest leuk vindt, maar ik denk dat het te duur is voor veel klasgenoten. Wat vind jij van een kleiner feest in onze eigen klas?\""
+       },
+       {
+        "v": "Welke vraag stelt Sara aan het eind?",
+        "o": [
+         "\"Wat vind jij van een kleiner feest?\"",
+         "\"Waarom heb jij zo'n slecht idee?\"",
+         "\"Kunnen we er maar over stoppen?\"",
+         "\"Wie heeft het feest bedacht?\""
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 3,
+        "u": "Vraag de ander om mee te denken.",
+        "uo": [
+         "Klopt: ze nodigt de ander uit om mee te denken.",
+         "Koos je \"Waarom heb jij zo'n slecht idee?\"? Dan denk je dat Sara dit vraagt. Dat is een beschuldiging, en zo praat ze niet.",
+         "Koos je \"Kunnen we er maar over stoppen?\"? Dan denk je dat Sara dit vraagt. Zo stopt het gesprek, terwijl ze juist doorvraagt.",
+         "Koos je \"Wie heeft het feest bedacht?\"? Dan denk je dat Sara dit vraagt. Dat staat nergens, ze vraagt naar een kleiner feest."
+        ],
+        "uh": "Wat wil ze weten?",
+        "ctx": "Sara zegt in een gesprek over het schoolfeest: \"Ik snap dat je een groot feest leuk vindt, maar ik denk dat het te duur is voor veel klasgenoten. Wat vind jij van een kleiner feest in onze eigen klas?\""
+       },
+       {
+        "v": "Welk standpunt verdedigt Tim?",
+        "o": [
+         "telefoons moeten verboden worden",
+         "telefoons moeten altijd aan blijven",
+         "telefoons zijn handig bij woordenboeken",
+         "de leraar moet beslissen over telefoons"
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 0,
+        "u": "Zoek \"moeten\".",
+        "uo": [
+         "Klopt: zijn standpunt is dat telefoons verboden moeten worden.",
+         "Koos je \"telefoons moeten altijd aan blijven\"? Dan denk je dat Tim dit vindt. Hij zegt het tegenovergestelde, namelijk dat ze verboden moeten worden.",
+         "Koos je \"telefoons zijn handig bij woordenboeken\"? Dan denk je dat Tim dit vindt. Dat zegt Lisa, en niet Tim.",
+         "Koos je \"de leraar moet beslissen over telefoons\"? Dan denk je dat Tim dit vindt. Dat staat nergens, hij zegt dat ze verboden moeten worden."
+        ],
+        "uh": "Wat vindt Tim?",
+        "ctx": "In een discussie over telefoons in de les zegt Tim: \"Ze moeten verboden worden, want ze leiden af.\" Lisa antwoordt: \"Maar je kunt ze ook gebruiken om woorden op te zoeken.\" De leraar vraagt: \"Wie heeft hier nog een argument bij?\""
+       },
+       {
+        "v": "Welk argument noemt Lisa tegen Tims standpunt?",
+        "o": [
+         "telefoons leiden de klas af in de les",
+         "telefoons zijn veel te duur om te kopen",
+         "telefoons helpen bij het opzoeken",
+         "telefoons mogen niet van de directeur"
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 1,
+        "u": "Tegenargument noemen.",
+        "uo": [
+         "Koos je \"telefoons leiden de klas af in de les\"? Dan denk je dat Lisa dit zegt. Dat zegt Tim, en niet Lisa.",
+         "Koos je \"telefoons zijn veel te duur om te kopen\"? Dan denk je dat Lisa dit zegt. Dat staat nergens, ze noemt het opzoeken van woorden.",
+         "Klopt: ze geeft een reden waarom telefoons ook nuttig kunnen zijn.",
+         "Koos je \"telefoons mogen niet van de directeur\"? Dan denk je dat Lisa dit zegt. Dat staat nergens, ze noemt een voordeel."
+        ],
+        "uh": "Wat zegt Lisa?",
+        "ctx": "In een discussie over telefoons in de les zegt Tim: \"Ze moeten verboden worden, want ze leiden af.\" Lisa antwoordt: \"Maar je kunt ze ook gebruiken om woorden op te zoeken.\" De leraar vraagt: \"Wie heeft hier nog een argument bij?\""
+       },
+       {
+        "v": "Waarom vraagt de leraar om een nieuw argument?",
+        "o": [
+         "zodat hij kan bepalen wie gelijk heeft",
+         "zodat de discussie verder komt",
+         "zodat de les eerder afgelopen is",
+         "zodat Tim en Lisa stoppen met praten"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 2,
+        "u": "Nieuwe argumenten brengen het gesprek verder.",
+        "uo": [
+         "Koos je \"zodat hij kan bepalen wie gelijk heeft\"? Dan denk je dat de leraar een winnaar wil. Hij wil de discussie op gang houden, en niet beslissen.",
+         "Klopt: een gesprek komt verder met nieuwe redenen in plaats van herhaling.",
+         "Koos je \"zodat de les eerder afgelopen is\"? Dan denk je dat het om tijd gaat. Hij wil juist dat ze doorpraten, dus dat klopt niet.",
+         "Koos je \"zodat Tim en Lisa stoppen met praten\"? Dan denk je dat de leraar ze stil wil. Hij vraagt juist om meer, dus het gesprek gaat door."
+        ],
+        "uh": "Wat vraagt de leraar?",
+        "ctx": "In een discussie over telefoons in de les zegt Tim: \"Ze moeten verboden worden, want ze leiden af.\" Lisa antwoordt: \"Maar je kunt ze ook gebruiken om woorden op te zoeken.\" De leraar vraagt: \"Wie heeft hier nog een argument bij?\""
+       },
+       {
+        "v": "Wat doet de leerling met zijn vraag in de kantine-overleg?",
+        "o": [
+         "hij valt de groep in de rede",
+         "hij verandert van onderwerp",
+         "hij zegt dat hij het er niet mee eens is",
+         "hij vat samen wat hij begrepen heeft"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 3,
+        "u": "Samenvatten voorkomt misverstanden.",
+        "uo": [
+         "Koos je \"hij valt de groep in de rede\"? Dan denk je dat de leerling onderbreekt. Hij stelt een vraag om te checken, en doet dat beleefd.",
+         "Koos je \"hij verandert van onderwerp\"? Dan denk je dat hij over iets anders begint. Hij blijft bij de kantine, en vat de wensen samen.",
+         "Koos je \"hij zegt dat hij het er niet mee eens is\"? Dan denk je dat hij het afkeurt. Hij controleert alleen of hij het goed begrijpt, dus er is geen oordeel.",
+         "Klopt: samenvatten laat zien dat je luistert en voorkomt misverstanden."
+        ],
+        "uh": "Wat controleert hij?",
+        "ctx": "In een overleg over de kantine vraagt een leerling: \"Dus als ik het goed begrijp, willen jullie dat het eten gezond is én dat het niet te duur wordt?\" De rest van de groep knikt en een van hen zegt: \"Ja, precies.\""
+       },
+       {
+        "v": "Hoe lost de voorzitter het probleem op?",
+        "o": [
+         "hij stuurt Bram en Fenna de klas uit",
+         "hij laat hen om de beurt praten",
+         "hij roept harder dan beiden",
+         "hij beslist zelf wie gelijk heeft"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 4,
+        "u": "Om de beurt praten.",
+        "uo": [
+         "Koos je \"hij stuurt Bram en Fenna de klas uit\"? Dan denk je dat hij ze wegstuurt. Hij zegt rustig dat ze om de beurt praten, dus ze blijven.",
+         "Klopt: een beurtvolgorde brengt rust en laat beide kanten horen.",
+         "Koos je \"hij roept harder dan beiden\"? Dan denk je dat de voorzitter hard roept. Hij blijft juist rustig, dus hij roept niet.",
+         "Koos je \"hij beslist zelf wie gelijk heeft\"? Dan denk je dat de voorzitter beslist. Hij regelt de beurten, en hij kiest geen kant."
+        ],
+        "uh": "Wie praat eerst?",
+        "ctx": "Twee leerlingen worden boos in een discussie en roepen door elkaar heen. Niemand verstaat nog iets. De voorzitter zegt rustig: \"Stop even. Eerst Bram, dan Fenna. Zo kan iedereen het horen.\""
+       },
+       {
+        "v": "Waarom knikt de groep na de vraag van de leerling?",
+        "o": [
+         "de samenvatting klopt met hun wens",
+         "ze zijn het er niet mee eens",
+         "ze willen dat de leerling stopt met praten",
+         "ze weten het antwoord nog niet"
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 0,
+        "u": "Knikken = bevestigen.",
+        "uo": [
+         "Klopt: ze bevestigen dat de leerling het goed begrepen heeft.",
+         "Koos je \"ze zijn het er niet mee eens\"? Dan denk je dat knikken afkeuren is. Knikken betekent hier ja, en dan zijn ze het met de samenvatting eens.",
+         "Koos je \"ze willen dat de leerling stopt met praten\"? Dan denk je dat ze hem willen stilzetten. De groep zegt \"Ja, precies\", dus ze stemmen in.",
+         "Koos je \"ze weten het antwoord nog niet\"? Dan denk je dat ze twijfelen. De groep zegt \"Ja, precies\", dus ze zijn zeker."
+        ],
+        "uh": "Wat zegt de groep?",
+        "ctx": "In een overleg over de kantine vraagt een leerling: \"Dus als ik het goed begrijp, willen jullie dat het eten gezond is én dat het niet te duur wordt?\" De rest van de groep knikt en een van hen zegt: \"Ja, precies.\""
+       },
+       {
+        "v": "Welk besluit kan de groep uit deze vraag halen?",
+        "o": [
+         "alleen goedkoop eten, zonder gezond",
+         "alleen gezond eten, de prijs maakt niet uit",
+         "geen kantine meer openen",
+         "gezond eten tegen een lage prijs"
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 2,
+        "u": "Besluit uit de overeenkomst.",
+        "uo": [
+         "Koos je \"alleen goedkoop eten, zonder gezond\"? Dan denk je dat goedkoop genoeg is. De groep wil ook gezond, dus dat is te weinig.",
+         "Koos je \"alleen gezond eten, de prijs maakt niet uit\"? Dan denk je dat gezond genoeg is. De groep noemt ook een lage prijs, dus de prijs telt wel mee.",
+         "Koos je \"geen kantine meer openen\"? Dan denk je dat de kantine dicht moet. Daar gaat het gesprek niet over, ze willen juist betere keuze.",
+         "Klopt: de samenvatting noemt beide wensen en de groep stemt in."
+        ],
+        "uh": "Wat willen ze samen?",
+        "ctx": "In een overleg over de kantine vraagt een leerling: \"Dus als ik het goed begrijp, willen jullie dat het eten gezond is én dat het niet te duur wordt?\" De rest van de groep knikt en een van hen zegt: \"Ja, precies.\""
+       },
+       {
+        "v": "Waarom zegt de voorzitter \"Zo kan iedereen het horen\"?",
+        "o": [
+         "omdat de voorzitter slecht hoort",
+         "omdat Bram en Fenna zacht praten",
+         "zo horen ze beide kanten",
+         "omdat hij zelf wil praten"
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 4,
+        "u": "Beurtregels maken horen mogelijk.",
+        "uo": [
+         "Koos je \"omdat de voorzitter slecht hoort\"? Dan denk je dat hij slechthorend is. Het gaat om de regels van het gesprek, en niet om zijn oren.",
+         "Koos je \"omdat Bram en Fenna zacht praten\"? Dan denk je dat ze zacht spreken. Ze roepen juist door elkaar, en daardoor hoort niemand wat.",
+         "Klopt: wie om de beurt praat, wordt verstaan en gehoord.",
+         "Koos je \"omdat hij zelf wil praten\"? Dan denk je dat hij het woord wil. Hij verdeelt de beurt aan hen, en praat zelf niet."
+        ],
+        "uh": "Wie hoort wie?",
+        "ctx": "Twee leerlingen worden boos in een discussie en roepen door elkaar heen. Niemand verstaat nog iets. De voorzitter zegt rustig: \"Stop even. Eerst Bram, dan Fenna. Zo kan iedereen het horen.\""
+       },
+       {
+        "v": "Welke zin past bij een goede reactie op Tims standpunt?",
+        "o": [
+         "\"Dat is onzin, Tim, echt waar.\"",
+         "\"Ik zeg nu verder niets meer.\"",
+         "\"Ik snap het, maar ik zie ook een voordeel.\"",
+         "\"Iedereen vindt jou echt gek.\""
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 1,
+        "u": "Erken en geef een tegenargument.",
+        "uo": [
+         "Koos je \"Dat is onzin, Tim, echt waar.\"? Dan denk je dat dit past. Het is een oordeel zonder reden, en het beledigt Tim.",
+         "Koos je \"Ik zeg nu verder niets meer.\"? Dan denk je dat dit past. Je geeft dan geen reactie, en het gesprek loopt vast.",
+         "Klopt: je erkent Tim en brengt een tegenargument in.",
+         "Koos je \"Iedereen vindt jou echt gek.\"? Dan denk je dat dit past. Het is een aanval op de persoon, geen reactie op zijn argument."
+        ],
+        "uh": "Wat zeg je?",
+        "ctx": "In een discussie over telefoons in de les zegt Tim: \"Ze moeten verboden worden, want ze leiden af.\" Lisa antwoordt: \"Maar je kunt ze ook gebruiken om woorden op te zoeken.\" De leraar vraagt: \"Wie heeft hier nog een argument bij?\""
+       },
+       {
+        "v": "Hoe kan de groep Mo weer laten meedoen?",
+        "o": [
+         "laat hem zwijgen, het is toch maar een idee",
+         "laat Anna alles beslissen voor de klas",
+         "stop het gesprek en ga naar huis",
+         "laat hem zijn idee uitleggen"
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 3,
+        "u": "Nodig uit en luister.",
+        "uo": [
+         "Koos je \"laat hem zwijgen, het is toch maar een idee\"? Dan denk je dat zwijgen goed is. Dan verdwijnt zijn bijdrage, en dat is het probleem.",
+         "Koos je \"laat Anna alles beslissen voor de klas\"? Dan denk je dat Anna moet beslissen. Dat is geen overleg, en Mo blijft buitengesloten.",
+         "Koos je \"stop het gesprek en ga naar huis\"? Dan denk je dat stoppen helpt. Het lost niets op, en het idee blijft liggen.",
+         "Klopt: een uitnodiging en rustig luisteren herstellen het gesprek."
+        ],
+        "uh": "Hoe praat hij weer mee?",
+        "ctx": "In een klassengesprek zegt Mo: \"Ik vind dat we een schoolfeest moeten houden.\" Anna onderbreekt hem meteen: \"Nee, dat is stom!\" Mo zwijgt, kijkt weg en zegt de rest van het gesprek niets meer. De andere leerlingen kijken naar hun tafel."
+       },
+       {
+        "v": "Welk resultaat verwacht je van de beurtregel?",
+        "o": [
+         "het gesprek wordt rustiger",
+         "de ruzie wordt daardoor nog veel groter",
+         "Bram en Fenna gaan elkaar negeren",
+         "niemand zegt daarna meer iets tegen elkaar"
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 2,
+        "u": "Beurtregels geven rust.",
+        "uo": [
+         "Klopt: wie om de beurt praat, kan elkaar verstaan en op elkaar reageren.",
+         "Koos je \"de ruzie wordt daardoor nog veel groter\"? Dan denk je dat de ruzie groeit. Een beurtregel haalt juist de spanning eruit, dus het wordt rustiger.",
+         "Koos je \"Bram en Fenna gaan elkaar negeren\"? Dan denk je dat ze elkaar negeren. De regel laat hen juist naar elkaar luisteren, en reageren.",
+         "Koos je \"niemand zegt daarna meer iets tegen elkaar\"? Dan denk je dat iedereen zwijgt. Beide leerlingen mogen praten, dus er komt een gesprek."
+        ],
+        "uh": "Wat verandert er?",
+        "ctx": "Twee leerlingen worden boos in een discussie en roepen door elkaar heen. Niemand verstaat nog iets. De voorzitter zegt rustig: \"Stop even. Eerst Bram, dan Fenna. Zo kan iedereen het horen.\""
+       },
+       {
+        "v": "Welk gesprekspunt benadrukt Sara met \"maar ik denk\"?",
+        "o": [
+         "dat de ander helemaal ongelijk heeft",
+         "haar eigen mening erbij",
+         "dat ze het gesprek meteen wil stoppen",
+         "dat ze een grap over hem maakt"
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 0,
+        "u": "\"Ik denk\" geeft jouw mening.",
+        "uo": [
+         "Koos je \"dat de ander helemaal ongelijk heeft\"? Dan denk je dat ze de ander afwijst. Ze begint met begrip, en zegt alleen wat zij denkt.",
+         "Klopt: ze geeft haar mening zonder de ander af te kraken.",
+         "Koos je \"dat ze het gesprek meteen wil stoppen\"? Dan denk je dat ze wil stoppen. Ze stelt een vraag, dus ze wil doorpraten.",
+         "Koos je \"dat ze een grap over hem maakt\"? Dan denk je dat het een grap is. Haar toon is serieus, en ze geeft een reden."
+        ],
+        "uh": "Wat zegt ze?",
+        "ctx": "Sara zegt in een gesprek over het schoolfeest: \"Ik snap dat je een groot feest leuk vindt, maar ik denk dat het te duur is voor veel klasgenoten. Wat vind jij van een kleiner feest in onze eigen klas?\""
+       },
+       {
+        "v": "Hoe kunnen Tim en Lisa hun meningsverschil verkleinen?",
+        "o": [
+         "de een geeft gelijk en de ander moet zwijgen",
+         "ze praten harder tot de ander stopt",
+         "ze vragen de leraar de les te stoppen",
+         "zoeken naar een regel waar beiden mee leven"
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 4,
+        "u": "Zoek een gezamenlijke oplossing.",
+        "uo": [
+         "Koos je \"de een geeft gelijk en de ander moet zwijgen\"? Dan denk je dat één winnaar de oplossing is. Dan voelt de ander zich genegeerd, en het meningsverschil blijft.",
+         "Koos je \"ze praten harder tot de ander stopt\"? Dan denk je dat luider praten helpt. Dat maakt het gesprek vijandig, en ze komen niet dichter bij elkaar.",
+         "Koos je \"ze vragen de leraar de les te stoppen\"? Dan denk je dat het gesprek stopt. Daarmee verdwijnt het meningsverschil niet, en ze lossen niets op.",
+         "Klopt: een gezamenlijke oplossing, zoals telefoons alleen voor opzoeken, past bij beide meningen."
+        ],
+        "uh": "Wat past bij beiden?",
+        "ctx": "In een discussie over telefoons in de les zegt Tim: \"Ze moeten verboden worden, want ze leiden af.\" Lisa antwoordt: \"Maar je kunt ze ook gebruiken om woorden op te zoeken.\" De leraar vraagt: \"Wie heeft hier nog een argument bij?\""
+       },
+       {
+        "v": "Welke afspraak maakt een gesprek tussen boze deelnemers beter?",
+        "o": [
+         "om de beurt praten en elkaar laten uitpraten",
+         "wie het hardst roept krijgt gelijk",
+         "wie het eerst praat bepaalt de uitkomst",
+         "wie boos is mag het lokaal verlaten"
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 0,
+        "u": "Beurtregel en uitpraten.",
+        "uo": [
+         "Klopt: dan hoort iedereen elkaar en kan er iets besloten worden.",
+         "Koos je \"wie het hardst roept krijgt gelijk\"? Dan denk je dat de luidste moet winnen. Dan luistert niemand meer, en het gesprek lukt niet.",
+         "Koos je \"wie het eerst praat bepaalt de uitkomst\"? Dan denk je dat de eerste altijd beslist. Dan weet je niet wat de ander vindt, en het wordt geen overleg.",
+         "Koos je \"wie boos is mag het lokaal verlaten\"? Dan denk je dat weggaan het probleem oplost. De spanning blijft dan bestaan, en er komt geen besluit."
+        ],
+        "uh": "Wie praat er?",
+        "ctx": "Twee leerlingen worden boos in een discussie en roepen door elkaar heen. Niemand verstaat nog iets. De voorzitter zegt rustig: \"Stop even. Eerst Bram, dan Fenna. Zo kan iedereen het horen.\""
+       }
+      ],
+      "oe": [
+       {
+        "bron": "Examenstijl",
+        "ctx": "In een klassengesprek zegt Mo: \"Ik vind dat we een schoolfeest moeten houden.\" Anna onderbreekt hem meteen: \"Nee, dat is stom!\" Mo zwijgt, kijkt weg en zegt de rest van het gesprek niets meer. De andere leerlingen kijken naar hun tafel.",
+        "v": "Wat gaat er mis in dit gesprek en hoe kan Anna het beter doen?",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Anna onderbreekt en noemt het idee stom zonder reden (2p). Beter: \"Ik zie het anders, want het is duur\" en Mo laten uitpraten (2p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Sara zegt in een gesprek over het schoolfeest: \"Ik snap dat je een groot feest leuk vindt, maar ik denk dat het te duur is voor veel klasgenoten. Wat vind jij van een kleiner feest in onze eigen klas?\"",
+        "v": "Welke twee dingen doet Sara goed in haar reactie?",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Ze erkent eerst dat een feest leuk kan zijn (1p) en geeft daarna een reden voor haar bezwaar (1p). Ze stelt een vraag om samen een oplossing te vinden (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "In een discussie over telefoons in de les zegt Tim: \"Ze moeten verboden worden, want ze leiden af.\" Lisa antwoordt: \"Maar je kunt ze ook gebruiken om woorden op te zoeken.\" De leraar vraagt: \"Wie heeft hier nog een argument bij?\"",
+        "v": "Noem het standpunt van Tim en het tegenargument van Lisa.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Standpunt: telefoons moeten verboden worden in de les (1p). Lisa: telefoons zijn handig om woorden op te zoeken (2p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "In een overleg over de kantine vraagt een leerling: \"Dus als ik het goed begrijp, willen jullie dat het eten gezond is én dat het niet te duur wordt?\" De rest van de groep knikt en een van hen zegt: \"Ja, precies.\"",
+        "v": "Wat doet de leerling met zijn vraag en waarom is dat nuttig?",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Hij vat samen wat hij begrepen heeft (1p). Zo controleert hij of hij het goed begrijpt en voorkomt hij misverstanden (2p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Twee leerlingen worden boos in een discussie en roepen door elkaar heen. Niemand verstaat nog iets. De voorzitter zegt rustig: \"Stop even. Eerst Bram, dan Fenna. Zo kan iedereen het horen.\"",
+        "v": "Hoe lost de voorzitter het probleem op en wat is het resultaat?",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Hij laat Bram en Fenna om de beurt praten (2p). Zo kan iedereen elkaar verstaan en wordt het rustiger (1p)."
+       }
+      ]
      }
     ]
    },

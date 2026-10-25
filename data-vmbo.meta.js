@@ -210,6 +210,27 @@ var VAKKEN_VMBO = [
       "nOe": 5,
       "nBeg": 12,
       "hasSam": true
+     },
+     {
+      "id": "B4",
+      "lo": "nl.B.4",
+      "gs": 2,
+      "naam": "Deelnemen aan een gesprek of discussie",
+      "beschrijving": "Je doet mee aan een gesprek of discussie: je luistert, noemt je standpunt met een argument, reageert netjes op een ander en komt samen tot een besluit.",
+      "ceStatus": "SE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Gespreksregels en beurten",
+       "Standpunt en argument inbrengen",
+       "Reageren op een ander",
+       "Samenvatten en doorvragen",
+       "Samen een besluit nemen"
+      ],
+      "nSv": 26,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
      }
     ]
    },
