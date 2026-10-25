@@ -5,7 +5,7 @@
 Volledige beschrijving (functies, inhoud per niveau, prijs, wat Slagio niet is): https://slagio.nl/llms-full.txt
 
 ## In het kort
-- 12 vakken havo, 16 vakken vwo, 12 vakken vmbo; 23.261 oefenvragen en 4.346 begrippen.
+- 12 vakken havo, 16 vakken vwo, 12 vakken vmbo; 23.288 oefenvragen en 4.346 begrippen.
 - Adaptief oefenen: na een fout een vraag over hetzelfde onderwerp, een niveau makkelijker; uitleg bij elk fout antwoord.
 - Foutenboek en herhalen met gespreide herhaling, beheersing per leerdoel, studieplan tot het examen.
 - Examens met klok, proefexamens in examenstijl met modelantwoord en puntenverdeling, archief met officiële oude examens.
@@ -135,6 +135,7 @@ Volledige beschrijving (functies, inhoud per niveau, prijs, wat Slagio niet is):
 - [Een presentatie voorbereiden en opbouwen (Nederlands VMBO)](https://slagio.nl/leren/vmbo/nederlands/een-presentatie-voorbereiden-en-opbouwen.html): Je kiest en bakent een onderwerp af, zoekt betrouwbare informatie, bouwt je verhaal op met een inleiding, kern en slot en maakt eenvoudige dia's en een…
 - [Duidelijk en overtuigend presenteren (Nederlands VMBO)](https://slagio.nl/leren/vmbo/nederlands/duidelijk-en-overtuigend-presenteren.html): Je leert hoe je met stem, houding, oogcontact en een sterk verhaal je publiek bereikt, en hoe je met je zenuwen omgaat.
 - [Deelnemen aan een gesprek of discussie (Nederlands VMBO)](https://slagio.nl/leren/vmbo/nederlands/deelnemen-aan-een-gesprek-of-discussie.html): Je doet mee aan een gesprek of discussie: je luistert, noemt je standpunt met een argument, reageert netjes op een ander en komt samen tot een besluit.
+- [Reageren op vragen en feedback (Nederlands VMBO)](https://slagio.nl/leren/vmbo/nederlands/reageren-op-vragen-en-feedback.html): Je beantwoordt vragen van je publiek, zegt eerlijk als je iets niet weet, geeft en ontvangt feedback met een top en een tip en kijkt terug op je eigen…
 
 ## Examenvragen in examenstijl (met modelantwoord en puntenverdeling)
 - [Examenvragen Nederlands HAVO](https://slagio.nl/leren/havo/nederlands/examenvragen.html): 11 vragen uit een Slagio-proefexamen

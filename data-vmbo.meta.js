@@ -231,6 +231,27 @@ var VAKKEN_VMBO = [
       "nOe": 5,
       "nBeg": 12,
       "hasSam": true
+     },
+     {
+      "id": "B5",
+      "lo": "nl.B.5",
+      "gs": 2,
+      "naam": "Reageren op vragen en feedback",
+      "beschrijving": "Je beantwoordt vragen van je publiek, zegt eerlijk als je iets niet weet, geeft en ontvangt feedback met een top en een tip en kijkt terug op je eigen presentatie.",
+      "ceStatus": "SE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Vragen van het publiek beantwoorden",
+       "Eerlijk zijn als je het niet weet",
+       "Feedback ontvangen",
+       "Feedback geven: top en tip",
+       "Terugkijken en verbeteren"
+      ],
+      "nSv": 27,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
      }
     ]
    },

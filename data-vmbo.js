@@ -7237,6 +7237,688 @@ var VAKKEN_VMBO = [
         "u": "Hij laat Bram en Fenna om de beurt praten (2p). Zo kan iedereen elkaar verstaan en wordt het rustiger (1p)."
        }
       ]
+     },
+     {
+      "id": "B5",
+      "lo": "nl.B.5",
+      "gs": 2,
+      "naam": "Reageren op vragen en feedback",
+      "beschrijving": "Je beantwoordt vragen van je publiek, zegt eerlijk als je iets niet weet, geeft en ontvangt feedback met een top en een tip en kijkt terug op je eigen presentatie.",
+      "ceStatus": "SE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Vragen van het publiek beantwoorden",
+       "Eerlijk zijn als je het niet weet",
+       "Feedback ontvangen",
+       "Feedback geven: top en tip",
+       "Terugkijken en verbeteren"
+      ],
+      "sam": "Na een presentatie stelt het publiek vragen. Je luistert goed, beantwoordt de vraag en zegt eerlijk als je het niet weet, bijvoorbeeld \"Goede vraag, ik zoek het op\". Feedback bestaat uit een top (wat goed ging) en een tip (wat beter kan). Je geeft feedback concreet en vriendelijk en je ontvangt feedback door te luisteren en te bedanken. Aan het eind kijk je terug op je presentatie en bedenk je wat je volgende keer anders doet.",
+      "begrippen": [
+       {
+        "t": "Publieksvraag",
+        "d": "Een vraag die iemand uit het publiek aan de spreker stelt."
+       },
+       {
+        "t": "Feedback",
+        "d": "Een reactie op wat je gedaan hebt, met wat goed ging en wat beter kan."
+       },
+       {
+        "t": "Top",
+        "d": "Een compliment voor iets wat goed ging."
+       },
+       {
+        "t": "Tip",
+        "d": "Een verbeterpunt voor de volgende keer."
+       },
+       {
+        "t": "Concreet",
+        "d": "Duidelijk en precies, zodat de ander weet wat je bedoelt."
+       },
+       {
+        "t": "Evalueren",
+        "d": "Terugkijken op wat goed ging en wat beter kan."
+       },
+       {
+        "t": "Zelfevaluatie",
+        "d": "Je eigen werk beoordelen."
+       },
+       {
+        "t": "Eerlijk",
+        "d": "Zeggen hoe het zit, ook als je iets niet weet."
+       },
+       {
+        "t": "Doorvragen",
+        "d": "Een vraag stellen om meer uitleg te krijgen."
+       },
+       {
+        "t": "Compliment",
+        "d": "Een positieve opmerking over wat goed ging."
+       },
+       {
+        "t": "Kritiek",
+        "d": "Een opmerking over wat niet goed ging."
+       },
+       {
+        "t": "Verbeterpunt",
+        "d": "Iets wat je de volgende keer anders kunt doen."
+       }
+      ],
+      "sv": [
+       {
+        "v": "Waarom beantwoord je vragen van je publiek?",
+        "o": [
+         "zodat je je spreektijd kunt rekken",
+         "zo laat je zien dat je je onderwerp snapt",
+         "zodat je de luisteraars kunt overhoren",
+         "zodat je er niet meer over hoeft te praten"
+        ],
+        "c": 1,
+        "d": 1,
+        "s": 0,
+        "u": "Antwoord laat kennis zien.",
+        "uo": [
+         "Koos je \"zodat je je spreektijd kunt rekken\"? Dan denk je dat het om tijd rekken gaat. Vragen zijn een kans om te laten zien dat je het begrijpt, en geen manier om tijd te winnen.",
+         "Klopt: een goed antwoord laat zien dat je er verstand van hebt en maakt je betrouwbaarder.",
+         "Koos je \"zodat je de luisteraars kunt overhoren\"? Dan denk je dat vragen bedoeld zijn als overhoring. De luisteraars willen iets weten, en jij legt het uit.",
+         "Koos je \"zodat je er niet meer over hoeft te praten\"? Dan denk je dat vragen het onderwerp afsluiten. Een antwoord maakt het verhaal juist completer, en laat betrokkenheid zien."
+        ],
+        "uh": "Wat laat je zien?"
+       },
+       {
+        "v": "Wat doe je als je het antwoord niet weet?",
+        "o": [
+         "iets verzinnen zodat het klinkt alsof je het weet",
+         "de vraag negeren en een andere vraag kiezen",
+         "de vragensteller een sneer geven",
+         "zeggen dat je het niet weet en het opzoekt"
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 1,
+        "u": "Eerlijk zijn is beter.",
+        "uo": [
+         "Koos je \"iets verzinnen zodat het klinkt alsof je het weet\"? Dan denk je dat verzinnen helpt. Als het fout blijkt, verlies je het vertrouwen, en dat is erger dan zeggen dat je het niet weet.",
+         "Koos je \"de vraag negeren en een andere vraag kiezen\"? Dan denk je dat negeren kan. De vragensteller voelt zich dan genegeerd, en jij laat een kans liggen.",
+         "Koos je \"de vragensteller een sneer geven\"? Dan denk je dat een sneer werkt. Het is onbeleefd, en het lost de vraag niet op.",
+         "Klopt: eerlijk zijn is beter dan iets verzinnen."
+        ],
+        "uh": "Wat weet je zeker?"
+       },
+       {
+        "v": "Wat is feedback?",
+        "o": [
+         "een reactie op hoe je iets deed",
+         "een cijfer dat je krijgt voor een toets",
+         "een straf voor een fout",
+         "een vraag aan de klas"
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 2,
+        "u": "Feedback = reactie.",
+        "uo": [
+         "Klopt: feedback vertelt wat goed ging en wat beter kan.",
+         "Koos je \"een cijfer dat je krijgt voor een toets\"? Dan denk je dat feedback een cijfer is. Feedback is een reactie in woorden, en niet een cijfer.",
+         "Koos je \"een straf voor een fout\"? Dan denk je dat feedback een straf is. Het is bedoeld om te helpen, en niet om te straffen.",
+         "Koos je \"een vraag aan de klas\"? Dan denk je dat feedback een vraag is. Feedback is een reactie op jouw werk, en geen vraag aan anderen."
+        ],
+        "uh": "Wat zegt de ander?"
+       },
+       {
+        "v": "Wat noem je een tip in feedback?",
+        "o": [
+         "iets wat je daarna nooit meer mag doen",
+         "een compliment voor wat goed ging",
+         "een verbeterpunt voor de volgende keer",
+         "een cijfer voor de hele presentatie"
+        ],
+        "c": 2,
+        "d": 1,
+        "s": 3,
+        "u": "Tip = verbeterpunt.",
+        "uo": [
+         "Koos je \"iets wat je daarna nooit meer mag doen\"? Dan denk je dat een tip een verbod is. Een tip geeft een verbetering, en verbiedt niets.",
+         "Koos je \"een compliment voor wat goed ging\"? Dan denk je dat dit een tip is. Zo'n compliment heet een top, en een tip zegt wat beter kan.",
+         "Klopt: een tip zegt concreet wat je de volgende keer beter kunt doen.",
+         "Koos je \"een cijfer voor de hele presentatie\"? Dan denk je dat dit een tip is. Een cijfer zegt niet wat je kunt verbeteren, dus het is geen tip."
+        ],
+        "uh": "Wat kan beter?"
+       },
+       {
+        "v": "Wat noem je een top in feedback?",
+        "o": [
+         "iets wat je moet verbeteren",
+         "een foute aanname",
+         "iets wat goed ging",
+         "de laatste zin van je verhaal"
+        ],
+        "c": 2,
+        "d": 1,
+        "s": 3,
+        "u": "Top = compliment.",
+        "uo": [
+         "Koos je \"iets wat je moet verbeteren\"? Dan denk je dat een top een verbeterpunt is. Dat is een tip, en een top is een compliment.",
+         "Koos je \"een foute aanname\"? Dan denk je dat een top een fout is. Een top is iets positiefs, en geen fout.",
+         "Klopt: een top is een compliment voor wat je goed deed in je verhaal.",
+         "Koos je \"de laatste zin van je verhaal\"? Dan denk je dat een top het slot is. Een top is een compliment, en gaat niet over de volgorde."
+        ],
+        "uh": "Wat ging goed?"
+       },
+       {
+        "v": "Hoe reageer je op feedback die je krijgt?",
+        "o": [
+         "luisteren, bedanken en nadenken",
+         "meteen boos worden en ertegenin gaan",
+         "de ander uitlachen om zijn mening",
+         "de feedback negeren en niets doen"
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 4,
+        "u": "Luister en bedank.",
+        "uo": [
+         "Klopt: wie luistert en bedankt, kan er echt iets van leren.",
+         "Koos je \"meteen boos worden en ertegenin gaan\"? Dan denk je dat boos worden helpt. Dan krijg je geen goede tips meer, en je leert er niets van.",
+         "Koos je \"de ander uitlachen om zijn mening\"? Dan denk je dat uitlachen werkt. Het maakt het gesprek kapot, en de ander durft niet meer te helpen.",
+         "Koos je \"de feedback negeren en niets doen\"? Dan denk je dat negeren werkt. Dan leer je er niets van, en verbeter je niet."
+        ],
+        "uh": "Wat doe je ermee?"
+       },
+       {
+        "v": "Waarom evalueer je je eigen presentatie?",
+        "o": [
+         "zodat je voor iedere keer meer cijfers krijgt",
+         "zodat de klas je niet meer vragen stelt",
+         "zodat je het in één keer perfect doet",
+         "zo zie je wat je beter kunt doen"
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 4,
+        "u": "Evalueren helpt groeien.",
+        "uo": [
+         "Koos je \"zodat je voor iedere keer meer cijfers krijgt\"? Dan denk je dat evalueren cijfers geeft. Evalueren helpt je groeien, maar levert geen punten op.",
+         "Koos je \"zodat de klas je niet meer vragen stelt\"? Dan denk je dat evalueren vragen voorkomt. Het is voor jou, en het verandert het publiek niet.",
+         "Koos je \"zodat je het in één keer perfect doet\"? Dan denk je dat evalueren perfectie garandeert. Het helpt je verbeteren, maar niemand is perfect.",
+         "Klopt: terugkijken laat zien wat goed ging en wat beter kan."
+        ],
+        "uh": "Wat leer je ervan?"
+       },
+       {
+        "v": "Wat doet de spreker verkeerd bij Kims vraag?",
+        "o": [
+         "hij beantwoordt de vraag veel te lang",
+         "hij doet niets met haar vraag",
+         "hij geeft een fout antwoord",
+         "hij vraagt aan Kim hoe oud ze is"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 0,
+        "u": "Gebruik de vraag.",
+        "uo": [
+         "Koos je \"hij beantwoordt de vraag veel te lang\"? Dan denk je dat het antwoord te lang is. Hij zegt maar twee zinnen, dus dat klopt niet.",
+         "Klopt: hij zegt alleen dat hij het niet weet en gaat meteen door.",
+         "Koos je \"hij geeft een fout antwoord\"? Dan denk je dat hij iets fouts zegt. Hij zegt niets over de inhoud, maar sluit de vraag af.",
+         "Koos je \"hij vraagt aan Kim hoe oud ze is\"? Dan denk je dat hij Kim iets anders vraagt. Dat staat nergens, hij negeert haar."
+        ],
+        "uh": "Wat zegt hij?",
+        "ctx": "Na een presentatie over pinguïns vraagt Kim: \"Waarom hebben pinguïns geen koude voeten?\" De spreker kijkt naar de grond, zegt: \"Weet ik niet. Volgende vraag\" en wijst snel naar iemand anders. Kim kijkt teleurgesteld."
+       },
+       {
+        "v": "Hoe had de spreker beter kunnen reageren?",
+        "o": [
+         "\"Dat is een stomme vraag, Kim.\"",
+         "\"Dat weet iedereen toch al.\"",
+         "\"Vraag het later maar aan de leraar.\"",
+         "\"Dat weet ik niet, ik zoek het op.\""
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 1,
+        "u": "Eerlijk en actief.",
+        "uo": [
+         "Koos je \"Dat is een stomme vraag, Kim.\"? Dan denk je dat dit beter is. Het is onbeleefd, en Kim voelt zich afgewezen.",
+         "Koos je \"Dat weet iedereen toch al.\"? Dan denk je dat dit beter is. Het is een veronderstelling, en Kim voelt zich dom.",
+         "Koos je \"Vraag het later maar aan de leraar.\"? Dan denk je dat dit beter is. Het is een manier om eronderuit te komen, en laat zien dat hij niet geïnteresseerd is.",
+         "Klopt: eerlijk zijn en laten zien dat je het gaat uitzoeken."
+        ],
+        "uh": "Wat zeg je?",
+        "ctx": "Na een presentatie over pinguïns vraagt Kim: \"Waarom hebben pinguïns geen koude voeten?\" De spreker kijkt naar de grond, zegt: \"Weet ik niet. Volgende vraag\" en wijst snel naar iemand anders. Kim kijkt teleurgesteld."
+       },
+       {
+        "v": "Wat doet de spreker goed bij een vraag die hij niet weet?",
+        "o": [
+         "hij verzint zelf maar een antwoord erbij",
+         "hij is eerlijk en belooft een antwoord",
+         "hij wuift de vraag meteen weg",
+         "hij vraagt een ander te antwoorden"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 2,
+        "u": "Eerlijk en afspraak.",
+        "uo": [
+         "Koos je \"hij verzint zelf maar een antwoord erbij\"? Dan denk je dat de spreker iets verzint. Hij zegt juist dat hij het niet weet, en zoekt het op.",
+         "Klopt: eerlijkheid en een afspraak maken zijn betrouwbaar.",
+         "Koos je \"hij wuift de vraag meteen weg\"? Dan denk je dat hij de vraag negeert. Hij noemt het een goede vraag, en belooft een antwoord.",
+         "Koos je \"hij vraagt een ander te antwoorden\"? Dan denk je dat hij het doorschuift. Hij belooft het zelf, en laat het niet aan een ander over."
+        ],
+        "uh": "Wat belooft hij?",
+        "ctx": "Na een presentatie over vulkanen krijgt de spreker een vraag die hij niet kan beantwoorden. Hij zegt: \"Goede vraag. Dat heb ik niet uitgezocht. Ik zoek het op en vertel het je morgen.\" De vragensteller knikt."
+       },
+       {
+        "v": "Welke woorden laten zien dat de spreker de vraag waardeert?",
+        "o": [
+         "\"Ik zoek het op\"",
+         "\"Dat heb ik niet uitgezocht\"",
+         "\"Goede vraag\"",
+         "\"Ik vertel het je morgen\""
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 0,
+        "u": "Compliment voor de vraag.",
+        "uo": [
+         "Koos je \"Ik zoek het op\"? Dan denk je dat deze woorden waardering tonen. Dit is een belofte, maar geen compliment.",
+         "Koos je \"Dat heb ik niet uitgezocht\"? Dan denk je dat dit waardering is. Het is een erkenning, maar geen compliment.",
+         "Klopt: hij geeft de vragensteller een compliment voor de vraag.",
+         "Koos je \"Ik vertel het je morgen\"? Dan denk je dat dit waardering is. Het is een afspraak, en geen compliment."
+        ],
+        "uh": "Wat zegt hij eerst?",
+        "ctx": "Na een presentatie over vulkanen krijgt de spreker een vraag die hij niet kan beantwoorden. Hij zegt: \"Goede vraag. Dat heb ik niet uitgezocht. Ik zoek het op en vertel het je morgen.\" De vragensteller knikt."
+       },
+       {
+        "v": "Wat gaat er mis bij de feedback van de klasgenoot?",
+        "o": [
+         "de feedback is kritisch zonder uitleg",
+         "de klasgenoot is veel te beleefd en te lief",
+         "de klasgenoot geeft een compliment",
+         "de klasgenoot zegt precies wat beter kan"
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 4,
+        "u": "Feedback moet concreet zijn.",
+        "uo": [
+         "Klopt: \"slecht\" zegt niet wat er beter kan, dus het helpt niet.",
+         "Koos je \"de klasgenoot is veel te beleefd en te lief\"? Dan denk je dat de klasgenoot te beleefd is. Hij zegt juist iets hards zonder uitleg, dus dat klopt niet.",
+         "Koos je \"de klasgenoot geeft een compliment\"? Dan denk je dat hij een compliment geeft. Hij zegt dat het slecht was, en dat is geen compliment.",
+         "Koos je \"de klasgenoot zegt precies wat beter kan\"? Dan denk je dat hij heel precies is. Hij noemt geen enkel punt, alleen een algemeen oordeel."
+        ],
+        "uh": "Wat zegt hij precies?",
+        "ctx": "Een klasgenoot zegt na de presentatie: \"Je presentatie was slecht.\" De spreker reageert boos: \"Nee, jij bent slecht!\" Even later zegt niemand meer iets en de leraar moet het gesprek stoppen."
+       },
+       {
+        "v": "Hoe kan de klasgenoot zijn feedback beter geven?",
+        "o": [
+         "\"Je praatte snel, probeer rustiger.\"",
+         "\"Je bent gewoon niet goed in presenteren.\"",
+         "\"Dat was echt een slechte presentatie.\"",
+         "\"Ik zeg niets meer, het helpt toch niet.\""
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 4,
+        "u": "Concreet en vriendelijk.",
+        "uo": [
+         "Klopt: concreet en vriendelijk, met een tip erbij.",
+         "Koos je \"Je bent gewoon niet goed in presenteren.\"? Dan denk je dat dit een goede tip is. Het is een oordeel over de persoon, en het noemt geen verbetering.",
+         "Koos je \"Dat was echt een slechte presentatie.\"? Dan denk je dat dit past. Het is nog steeds een algemeen oordeel, zonder uitleg of tip.",
+         "Koos je \"Ik zeg niets meer, het helpt toch niet.\"? Dan denk je dat dit past. Je geeft dan geen feedback, en de spreker leert niets."
+        ],
+        "uh": "Welke tip geef je?",
+        "ctx": "Een klasgenoot zegt na de presentatie: \"Je presentatie was slecht.\" De spreker reageert boos: \"Nee, jij bent slecht!\" Even later zegt niemand meer iets en de leraar moet het gesprek stoppen."
+       },
+       {
+        "v": "Welk effect heeft de boze reactie van de spreker?",
+        "o": [
+         "de klasgenoot geeft daarna nog veel meer tips",
+         "de spreker krijgt een hoger cijfer",
+         "het gesprek loopt vast",
+         "de klas begrijpt de spreker beter"
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 3,
+        "u": "Boos reageren sluit het gesprek.",
+        "uo": [
+         "Koos je \"de klasgenoot geeft daarna nog veel meer tips\"? Dan denk je dat de ander meer helpt. Na een boze reactie zwijgt hij juist, en geeft geen tips.",
+         "Koos je \"de spreker krijgt een hoger cijfer\"? Dan denk je dat boos worden helpt. Het levert niets op, en het schaadt zijn imago.",
+         "Klopt: boos reageren sluit het gesprek en voorkomt dat je iets leert.",
+         "Koos je \"de klas begrijpt de spreker beter\"? Dan denk je dat boos worden verheldert. Het zorgt voor spanning, en niemand wil nog praten."
+        ],
+        "uh": "Wat doet de klas?",
+        "ctx": "Een klasgenoot zegt na de presentatie: \"Je presentatie was slecht.\" De spreker reageert boos: \"Nee, jij bent slecht!\" Even later zegt niemand meer iets en de leraar moet het gesprek stoppen."
+       },
+       {
+        "v": "Welke zin in het formulier is een top?",
+        "o": [
+         "\"Praat wat langzamer, alsjeblieft.\"",
+         "\"Je maakte goed oogcontact.\"",
+         "\"Zeg minder vaak eh in je tekst.\"",
+         "\"Gebruik nog een plaatje erbij.\""
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 2,
+        "u": "Top = wat goed ging.",
+        "uo": [
+         "Koos je \"Praat wat langzamer, alsjeblieft.\"? Dan denk je dat dit een top is. Het is een verbeterpunt, dus een tip.",
+         "Klopt: dit is een compliment voor wat goed ging.",
+         "Koos je \"Zeg minder vaak eh in je tekst.\"? Dan denk je dat dit een top is. Het is een verbeterpunt, dus een tip.",
+         "Koos je \"Gebruik nog een plaatje erbij.\"? Dan denk je dat dit een top is. Het is een suggestie voor de volgende keer, dus een tip."
+        ],
+        "uh": "Wat is een compliment?",
+        "ctx": "Op een feedbackformulier staat: \"Top: je maakte goed oogcontact en je gaf duidelijke voorbeelden. Tip: praat wat langzamer en zeg minder vaak eh. Je kunt je verhaal nog sterker maken met een plaatje.\""
+       },
+       {
+        "v": "Wat zegt de tip \"praat wat langzamer\" over de spreker?",
+        "o": [
+         "hij praatte te zacht",
+         "hij praatte te weinig tijdens de presentatie",
+         "hij sprak een ander dialect",
+         "hij praatte te snel"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 3,
+        "u": "Tip vertelt wat te veranderen.",
+        "uo": [
+         "Koos je \"hij praatte te zacht\"? Dan denk je dat de tip over het volume gaat. Het gaat over snelheid, en niet over hoe hard hij praatte.",
+         "Koos je \"hij praatte te weinig tijdens de presentatie\"? Dan denk je dat de tip om meer praten vraagt. Een rustiger tempo heeft niets met de hoeveelheid te maken, het gaat om de snelheid.",
+         "Koos je \"hij sprak een ander dialect\"? Dan denk je dat de tip over zijn taal gaat. Er staat niets over taal, de tip gaat over het tempo.",
+         "Klopt: de tip vraagt om een rustiger tempo, dus de spreker praatte te snel."
+        ],
+        "uh": "Wat is er te snel?",
+        "ctx": "Op een feedbackformulier staat: \"Top: je maakte goed oogcontact en je gaf duidelijke voorbeelden. Tip: praat wat langzamer en zeg minder vaak eh. Je kunt je verhaal nog sterker maken met een plaatje.\""
+       },
+       {
+        "v": "Welk verbeterpunt noemt Eva voor zichzelf?",
+        "o": [
+         "alleen nog sneller gaan praten",
+         "meer oefenen en een briefje",
+         "zonder voorbereiding beginnen",
+         "de klas niet meer aankijken"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 4,
+        "u": "Zeg wat je anders doet.",
+        "uo": [
+         "Koos je \"alleen nog sneller gaan praten\"? Dan denk je dat sneller praten het verbeterpunt is. Ze praatte al te snel, dus dat is juist het probleem.",
+         "Klopt: ze noemt wat ze de volgende keer anders doet.",
+         "Koos je \"zonder voorbereiding beginnen\"? Dan denk je dat voorbereiding wegblijft. Ze wil juist meer oefenen, dus dit klopt niet.",
+         "Koos je \"de klas niet meer aankijken\"? Dan denk je dat oogcontact wegblijft. Dat staat nergens, ze wil oefenen."
+        ],
+        "uh": "Wat gaat Eva doen?",
+        "ctx": "In haar eigen evaluatie schrijft Eva: \"Ik was zenuwachtig en praatte te snel. De klas luisterde goed bij mijn voorbeeld. Volgende keer oefen ik vaker hardop en gebruik ik mijn spiekbriefje.\""
+       },
+       {
+        "v": "Welk sterk punt noemt Eva in haar evaluatie?",
+        "o": [
+         "de klas luisterde bij het voorbeeld",
+         "ze praatte rustig en heel duidelijk",
+         "ze was helemaal niet zenuwachtig",
+         "ze gaf een perfect slot aan het eind"
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 1,
+        "u": "Noem ook wat goed ging.",
+        "uo": [
+         "Klopt: ze noemt wat goed ging, en dat is een top voor zichzelf.",
+         "Koos je \"ze praatte rustig en heel duidelijk\"? Dan denk je dat dit haar sterke punt is. Ze schrijft dat ze te snel praatte, dus dat is het probleem.",
+         "Koos je \"ze was helemaal niet zenuwachtig\"? Dan denk je dat ze niet zenuwachtig was. Ze schrijft het tegenovergestelde, dus dat klopt niet.",
+         "Koos je \"ze gaf een perfect slot aan het eind\"? Dan denk je dat het slot perfect was. Daar schrijft ze niets over, dus dat is niet haar sterke punt."
+        ],
+        "uh": "Wat ging goed?",
+        "ctx": "In haar eigen evaluatie schrijft Eva: \"Ik was zenuwachtig en praatte te snel. De klas luisterde goed bij mijn voorbeeld. Volgende keer oefen ik vaker hardop en gebruik ik mijn spiekbriefje.\""
+       },
+       {
+        "v": "Welk gevoel krijgt Kim door de reactie van de spreker?",
+        "o": [
+         "ze voelt zich trots op de spreker",
+         "ze voelt zich blij dat de vraag klaar is",
+         "ze voelt zich geïnteresseerd in het onderwerp",
+         "ze voelt zich niet serieus genomen"
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 0,
+        "u": "Een vraag verdient aandacht.",
+        "uo": [
+         "Koos je \"ze voelt zich trots op de spreker\"? Dan denk je dat Kim trots is. Het fragment zegt dat ze teleurgesteld kijkt, dus dit klopt niet.",
+         "Koos je \"ze voelt zich blij dat de vraag klaar is\"? Dan denk je dat Kim blij is. Ze kijkt teleurgesteld, dus dat klopt niet.",
+         "Koos je \"ze voelt zich geïnteresseerd in het onderwerp\"? Dan denk je dat Kim nog meer wil weten. Ze krijgt geen antwoord, dus haar interesse blijft onbeantwoord.",
+         "Klopt: een afgesneden antwoord laat een vragensteller teleurgesteld achter."
+        ],
+        "uh": "Wat voelt ze?",
+        "ctx": "Na een presentatie over pinguïns vraagt Kim: \"Waarom hebben pinguïns geen koude voeten?\" De spreker kijkt naar de grond, zegt: \"Weet ik niet. Volgende vraag\" en wijst snel naar iemand anders. Kim kijkt teleurgesteld."
+       },
+       {
+        "v": "Waarom is de afspraak \"ik vertel het je morgen\" slim?",
+        "o": [
+         "de spreker hoeft het nooit meer op te zoeken",
+         "de vraag verdwijnt daarna voor altijd weg",
+         "de vragensteller weet dat er antwoord komt",
+         "de klas denkt dat hij alles weet"
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 1,
+        "u": "Houd je aan je afspraak.",
+        "uo": [
+         "Koos je \"de spreker hoeft het nooit meer op te zoeken\"? Dan denk je dat de belofte vrijblijvend is. Je moet je afspraak nakomen, anders verlies je vertrouwen.",
+         "Koos je \"de vraag verdwijnt daarna voor altijd weg\"? Dan denk je dat de vraag weggaat. De spreker komt erop terug, dus de vraag blijft bestaan.",
+         "Klopt: een afspraak laat zien dat je de vraag serieus neemt.",
+         "Koos je \"de klas denkt dat hij alles weet\"? Dan denk je dat hij zo indruk maakt. Hij geeft juist toe iets niet te weten, dus dat is niet het effect."
+        ],
+        "uh": "Wat heeft hij beloofd?",
+        "ctx": "Na een presentatie over vulkanen krijgt de spreker een vraag die hij niet kan beantwoorden. Hij zegt: \"Goede vraag. Dat heb ik niet uitgezocht. Ik zoek het op en vertel het je morgen.\" De vragensteller knikt."
+       },
+       {
+        "v": "Welke volgorde maakt feedback het prettigst?",
+        "o": [
+         "eerst een tip, daarna niets meer",
+         "alleen kritiek, zonder een top",
+         "eerst een top, daarna een tip",
+         "alleen een top, zonder een tip"
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 2,
+        "u": "Eerst top, dan tip.",
+        "uo": [
+         "Koos je \"eerst een tip, daarna niets meer\"? Dan denk je dat een tip genoeg is. Een positieve start helpt de ander luisteren, en een top ontbreekt dan.",
+         "Koos je \"alleen kritiek, zonder een top\"? Dan denk je dat kritiek genoeg is. Dan voelt de ander zich aangevallen, en leert hij minder.",
+         "Klopt: eerst iets positiefs en dan een verbeterpunt helpt de ander luisteren.",
+         "Koos je \"alleen een top, zonder een tip\"? Dan denk je dat een top genoeg is. Dan weet de ander niet wat beter kan, en groeit hij niet."
+        ],
+        "uh": "Wat komt eerst?",
+        "ctx": "Een klasgenoot zegt na de presentatie: \"Je presentatie was slecht.\" De spreker reageert boos: \"Nee, jij bent slecht!\" Even later zegt niemand meer iets en de leraar moet het gesprek stoppen."
+       },
+       {
+        "v": "Welke feedbackzin is bij dit formulier een goede tip?",
+        "o": [
+         "\"Doe het de volgende keer gewoon beter.\"",
+         "\"Je bent niet goed in presenteren.\"",
+         "\"Het was gewoon een presentatie.\"",
+         "\"Gebruik een plaatje bij je verhaal.\""
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 3,
+        "u": "Concreet en bruikbaar.",
+        "uo": [
+         "Koos je \"Doe het de volgende keer gewoon beter.\"? Dan denk je dat dit een goede tip is. Het is vaag, en je weet niet wat je moet doen.",
+         "Koos je \"Je bent niet goed in presenteren.\"? Dan denk je dat dit een goede tip is. Het is een oordeel, en het zegt niet hoe het beter kan.",
+         "Koos je \"Het was gewoon een presentatie.\"? Dan denk je dat dit een tip is. Het zegt niets over verbetering, en het is geen advies.",
+         "Klopt: het is concreet en zegt hoe de presentatie beter kan."
+        ],
+        "uh": "Hoe kan het beter?",
+        "ctx": "Op een feedbackformulier staat: \"Top: je maakte goed oogcontact en je gaf duidelijke voorbeelden. Tip: praat wat langzamer en zeg minder vaak eh. Je kunt je verhaal nog sterker maken met een plaatje.\""
+       },
+       {
+        "v": "Welke zin past het best in een goede evaluatie?",
+        "o": [
+         "\"Ik praatte te snel, dus ik ga rustiger praten.\"",
+         "\"Het ging fout en dat was de schuld van de klas.\"",
+         "\"Het was gewoon niks, ik doe het nooit meer.\"",
+         "\"Alles was perfect, ik hoef niets te veranderen.\""
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 4,
+        "u": "Fout, oorzaak, plan.",
+        "uo": [
+         "Klopt: een fout, de oorzaak en een plan voor de volgende keer.",
+         "Koos je \"Het ging fout en dat was de schuld van de klas.\"? Dan denk je dat dit past. Het zoekt een schuldige, en leert je niets.",
+         "Koos je \"Het was gewoon niks, ik doe het nooit meer.\"? Dan denk je dat dit past. Het geeft op, en het noemt geen verbetering.",
+         "Koos je \"Alles was perfect, ik hoef niets te veranderen.\"? Dan denk je dat dit past. Je kijkt niet kritisch, en je leert er niets van."
+        ],
+        "uh": "Wat ga je veranderen?",
+        "ctx": "In haar eigen evaluatie schrijft Eva: \"Ik was zenuwachtig en praatte te snel. De klas luisterde goed bij mijn voorbeeld. Volgende keer oefen ik vaker hardop en gebruik ik mijn spiekbriefje.\""
+       },
+       {
+        "v": "Hoe kan de spreker na zijn boze reactie het gesprek herstellen?",
+        "o": [
+         "de klasgenoot negeren en doorgaan",
+         "sorry zeggen en vragen wat er beter kan",
+         "nog eens hard terugschelden",
+         "zeggen dat de klasgenoot zich moet schamen"
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 4,
+        "u": "Sorry en doorvragen.",
+        "uo": [
+         "Koos je \"de klasgenoot negeren en doorgaan\"? Dan denk je dat negeren helpt. Het probleem blijft bestaan, en de sfeer wordt erger.",
+         "Klopt: excuses en een vraag om uitleg maken het gesprek weer open.",
+         "Koos je \"nog eens hard terugschelden\"? Dan denk je dat terugschelden helpt. Het maakt het gesprek nog vijandiger, dus het lost niets op.",
+         "Koos je \"zeggen dat de klasgenoot zich moet schamen\"? Dan denk je dat dit helpt. Het is een aanval, en het maakt de ander boos."
+        ],
+        "uh": "Wat zeg je?",
+        "ctx": "Een klasgenoot zegt na de presentatie: \"Je presentatie was slecht.\" De spreker reageert boos: \"Nee, jij bent slecht!\" Even later zegt niemand meer iets en de leraar moet het gesprek stoppen."
+       },
+       {
+        "v": "Waarom is de feedback op het formulier nuttig voor de spreker?",
+        "o": [
+         "ze noemt alleen wat er niet goed was",
+         "ze zegt alleen dat het een mooie presentatie was",
+         "ze geeft een cijfer en meer niet",
+         "ze noemt wat goed ging en wat beter kan"
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 0,
+        "u": "Top en tip samen.",
+        "uo": [
+         "Koos je \"ze noemt alleen wat er niet goed was\"? Dan denk je dat het formulier alleen negatief is. Het noemt ook een top, en dat is juist nuttig.",
+         "Koos je \"ze zegt alleen dat het een mooie presentatie was\"? Dan denk je dat het formulier alleen prijst. Het noemt ook een tip, en daar kun je iets mee.",
+         "Koos je \"ze geeft een cijfer en meer niet\"? Dan denk je dat een cijfer genoeg is. Het formulier geeft concrete punten, en een cijfer niet.",
+         "Klopt: een top en een tip samen laten zien wat je kunt behouden en verbeteren."
+        ],
+        "uh": "Wat staat er?",
+        "ctx": "Op een feedbackformulier staat: \"Top: je maakte goed oogcontact en je gaf duidelijke voorbeelden. Tip: praat wat langzamer en zeg minder vaak eh. Je kunt je verhaal nog sterker maken met een plaatje.\""
+       },
+       {
+        "v": "Wat leert een spreker van een vraag die hij niet kan beantwoorden?",
+        "o": [
+         "welk deel van zijn onderwerp hij nog moet uitzoeken",
+         "dat zijn hele onderwerp onbelangrijk is",
+         "dat de vragensteller niet netjes is",
+         "dat hij nooit meer mag presenteren"
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 2,
+        "u": "Een vraag toont een gat.",
+        "uo": [
+         "Klopt: de vraag laat zien waar zijn kennis nog een gat heeft.",
+         "Koos je \"dat zijn hele onderwerp onbelangrijk is\"? Dan denk je dat het onderwerp dan niets waard is. Eén vraag zegt dat niet, het toont alleen een lacune.",
+         "Koos je \"dat de vragensteller niet netjes is\"? Dan denk je dat de vragensteller zich misdraagt. Een vraag stellen is juist netjes, en helpt de spreker.",
+         "Koos je \"dat hij nooit meer mag presenteren\"? Dan denk je dat hij dan stopt. Eén onbekend antwoord is geen reden, hij leert er juist van."
+        ],
+        "uh": "Wat wist je niet?",
+        "ctx": "Na een presentatie over vulkanen krijgt de spreker een vraag die hij niet kan beantwoorden. Hij zegt: \"Goede vraag. Dat heb ik niet uitgezocht. Ik zoek het op en vertel het je morgen.\" De vragensteller knikt."
+       },
+       {
+        "v": "Wat kun je doen om te oefenen voor je volgende presentatie?",
+        "o": [
+         "alleen in je hoofd de tekst doorlezen",
+         "hardop oefenen voor iemand en feedback vragen",
+         "de presentatie een nacht van tevoren schrijven",
+         "pas oefenen als je al klaar bent"
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 3,
+        "u": "Oefen hardop en vraag feedback.",
+        "uo": [
+         "Koos je \"alleen in je hoofd de tekst doorlezen\"? Dan denk je dat dit voldoende is. Zo hoor je niet hoe je klinkt, en je krijgt geen tips.",
+         "Klopt: oefenen en feedback vragen helpen je het meeste.",
+         "Koos je \"de presentatie een nacht van tevoren schrijven\"? Dan denk je dat dit werkt. Je hebt dan geen tijd om te oefenen, en je gaat zenuwachtig beginnen.",
+         "Koos je \"pas oefenen als je al klaar bent\"? Dan denk je dat dit werkt. Oefenen hoort voor de presentatie, en niet erna."
+        ],
+        "uh": "Wie luistert mee?",
+        "ctx": "In haar eigen evaluatie schrijft Eva: \"Ik was zenuwachtig en praatte te snel. De klas luisterde goed bij mijn voorbeeld. Volgende keer oefen ik vaker hardop en gebruik ik mijn spiekbriefje.\""
+       }
+      ],
+      "oe": [
+       {
+        "bron": "Examenstijl",
+        "ctx": "Na een presentatie over pinguïns vraagt Kim: \"Waarom hebben pinguïns geen koude voeten?\" De spreker kijkt naar de grond, zegt: \"Weet ik niet. Volgende vraag\" en wijst snel naar iemand anders. Kim kijkt teleurgesteld.",
+        "v": "Wat doet de spreker verkeerd en hoe had hij beter kunnen reageren?",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Hij gaat niet in op de vraag en schuift Kim aan de kant (2p). Beter: \"Dat weet ik niet, ik zoek het op\" (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Na een presentatie over vulkanen krijgt de spreker een vraag die hij niet kan beantwoorden. Hij zegt: \"Goede vraag. Dat heb ik niet uitgezocht. Ik zoek het op en vertel het je morgen.\" De vragensteller knikt.",
+        "v": "Waarom is de reactie van deze spreker goed? Noem twee dingen.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Hij noemt het een goede vraag (1p) en is eerlijk dat hij het niet weet (1p). Hij maakt een afspraak om het op te zoeken (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een klasgenoot zegt na de presentatie: \"Je presentatie was slecht.\" De spreker reageert boos: \"Nee, jij bent slecht!\" Even later zegt niemand meer iets en de leraar moet het gesprek stoppen.",
+        "v": "Wat gaat er mis bij de feedback en bij de reactie erop? Hoe kan het beter?",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "De feedback is vaag en zonder uitleg (1p) en de reactie is boos (1p). Beter: concreet en vriendelijk, bijvoorbeeld \"Praat rustiger\", en luisteren (2p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Op een feedbackformulier staat: \"Top: je maakte goed oogcontact en je gaf duidelijke voorbeelden. Tip: praat wat langzamer en zeg minder vaak eh. Je kunt je verhaal nog sterker maken met een plaatje.\"",
+        "v": "Noem één top en één tip uit dit feedbackformulier.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Top: goed oogcontact of duidelijke voorbeelden (2p). Tip: langzamer praten, minder \"eh\" of een plaatje gebruiken (2p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "In haar eigen evaluatie schrijft Eva: \"Ik was zenuwachtig en praatte te snel. De klas luisterde goed bij mijn voorbeeld. Volgende keer oefen ik vaker hardop en gebruik ik mijn spiekbriefje.\"",
+        "v": "Noem één sterk punt en twee verbeterpunten uit de evaluatie van Eva.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Sterk: de klas luisterde goed bij het voorbeeld (1p). Verbeterpunten: te snel praten en zenuwen (1p), vaker hardop oefenen en spiekbriefje gebruiken (1p)."
+       }
+      ]
      }
     ]
    },

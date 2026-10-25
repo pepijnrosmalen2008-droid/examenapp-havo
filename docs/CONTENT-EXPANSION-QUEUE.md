@@ -19,7 +19,7 @@
    leerdoelen van het domein af, vink dan ook het domein af.
 4. Bij een rode poort: niets pushen, wél melden.
 
-> Voortgang: **86 leerdoelen op v2** (havo bi.M3, nl.A1 t/m nl.A7, nl.B1 t/m nl.B5, nl.C1 t/m nl.C6, nl.D1 t/m nl.D6, nl.F1 t/m nl.F6, en.A1, en.A2, en.A3, en.A4, en.A5, en.A6, en.A7, en.A8, en.B1, en.B2, en.B3, en.B4, en.B5, en.B6, en.B7, en.B8, vwo nl.A1, vwo nl.A2, vwo nl.A3, vwo nl.A4, vwo nl.A5, vwo nl.A6, vwo nl.A7, vwo nl.B1, vwo nl.B2, vwo nl.B3, vwo nl.B4, vwo nl.B5, vwo nl.C1, vwo nl.C2, vwo nl.C3, vwo nl.C4, vwo nl.C5, vwo nl.C6, vwo nl.D1, vwo nl.D2, vwo nl.D3, vwo nl.D4, vwo nl.D5, vwo nl.D6, vwo nl.E1, vwo nl.E2, vwo nl.E3, vwo nl.E4, vwo nl.E5, vwo nl.E6, vmbo nl.A1, vmbo nl.A2, vmbo nl.A3, vmbo nl.A4, vmbo nl.A5, vmbo nl.B1, vmbo nl.B2, vmbo nl.B3, vmbo nl.B4). Werk dit getal bij bij elke afronding.
+> Voortgang: **87 leerdoelen op v2** (havo bi.M3, nl.A1 t/m nl.A7, nl.B1 t/m nl.B5, nl.C1 t/m nl.C6, nl.D1 t/m nl.D6, nl.F1 t/m nl.F6, en.A1, en.A2, en.A3, en.A4, en.A5, en.A6, en.A7, en.A8, en.B1, en.B2, en.B3, en.B4, en.B5, en.B6, en.B7, en.B8, vwo nl.A1, vwo nl.A2, vwo nl.A3, vwo nl.A4, vwo nl.A5, vwo nl.A6, vwo nl.A7, vwo nl.B1, vwo nl.B2, vwo nl.B3, vwo nl.B4, vwo nl.B5, vwo nl.C1, vwo nl.C2, vwo nl.C3, vwo nl.C4, vwo nl.C5, vwo nl.C6, vwo nl.D1, vwo nl.D2, vwo nl.D3, vwo nl.D4, vwo nl.D5, vwo nl.D6, vwo nl.E1, vwo nl.E2, vwo nl.E3, vwo nl.E4, vwo nl.E5, vwo nl.E6, vmbo nl.A1, vmbo nl.A2, vmbo nl.A3, vmbo nl.A4, vmbo nl.A5, vmbo nl.B1, vmbo nl.B2, vmbo nl.B3, vmbo nl.B4, vmbo nl.B5). Werk dit getal bij bij elke afronding.
 > Oude stand (v1, domeinniveau): 7/220 domeinen; die tellen niet meer als af.
 >
 > **Omvang (okt 2026):** 220 domeinen (havo 59, vwo 84, vmbo 77) × gemiddeld ~6 leerdoelen
@@ -107,12 +107,12 @@
   - [x] A3 · nl.A.3 Het doel van de spreker herkennen · 25 vragen (R1 7, R2 10, R3 8, alle met eigen gesproken fragment), 12 begrippen, 4 figuren (drie spreekdoelen, overtuigen in drie stappen, informeren tegenover amuseren, meerdere doelen), geen clip
   - [x] A4 · nl.A.4 Standpunt en argumenten herkennen · Standpunt, argument, bezwaar en signaalwoorden; 26 vragen, 12 begrippen, 5 oe, 4 figuren
   - [x] A5 · nl.A.5 Beeld en geluid interpreteren · 26 vragen (R1 7, R2 10, R3 9, 19 met eigen fragment), 12 begrippen, 4 figuren (beeld en geluid samen, camerastandpunten, geluid, bedoeling), geen clip
-- [ ] **VMBO · Nederlands** (`nl`) · domein B — Spreek- en gespreksvaardigheid
+- [x] **VMBO · Nederlands** (`nl`) · domein B — Spreek- en gespreksvaardigheid (5 van 5 leerdoelen op v2)
   - [x] B1 · nl.B.1 Doel, publiek en gespreksvorm afstemmen · 26 vragen (R1 7, R2 10, R3 9, 19 met eigen situatie), 12 begrippen, 4 figuren (doel-publiek-vorm, gespreksvormen, formeel en informeel, drie stappen), geen clip
   - [x] B2 · nl.B.2 Een presentatie voorbereiden en opbouwen · 26 vragen (R1 7, R2 10, R3 9, 19 met eigen situatie), 12 begrippen, 4 figuren (afbakenen, bronnen, opbouw, dia's), geen clip
   - [x] B3 · nl.B.3 Duidelijk en overtuigend presenteren · 26 vragen (R1 7, R2 10, R3 9, 19 met eigen situatie), 12 begrippen, 4 figuren (volume en tempo, houding, overtuigen, ademhaling), geen clip
   - [x] B4 · nl.B.4 Deelnemen aan een gesprek of discussie · 26 vragen (R1 7, R2 10, R3 9, 19 met eigen gesprek), 12 begrippen, 4 figuren (beurten, standpunt en tegenargument, reageren, compromis), geen clip
-  - [ ] B5 · nl.B.5 Reageren op vragen en feedback
+  - [x] B5 · nl.B.5 Reageren op vragen en feedback · 27 vragen (R1 7, R2 11, R3 9, 20 met eigen situatie), 12 begrippen, 4 figuren (publieksvraag, top en tip, concrete feedback, cirkel van verbeteren), geen clip
 - [ ] **VMBO · Nederlands** (`nl`) · domein C — Leesvaardigheid
 - [ ] **VMBO · Nederlands** (`nl`) · domein D — Schrijfvaardigheid
 - [ ] **VMBO · Nederlands** (`nl`) · domein E — Fictie
