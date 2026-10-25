@@ -1,0 +1,661 @@
+{
+ "id": "B3",
+ "lo": "nl.B.3",
+ "gs": 2,
+ "naam": "Duidelijk en overtuigend presenteren",
+ "beschrijving": "Je leert hoe je met stem, houding, oogcontact en een sterk verhaal je publiek bereikt, en hoe je met je zenuwen omgaat.",
+ "ceStatus": "SE",
+ "binas": "",
+ "val": "",
+ "onderwerpen": [
+  "Stem en tempo",
+  "Houding en oogcontact",
+  "Taal en stopwoorden",
+  "Overtuigen met beeld en oproep",
+  "Omgaan met zenuwen"
+ ],
+ "sam": "Een presentatie slaagt als je publiek je verstaat en aan je blijft kijken. Praat rustig en verstaanbaar, pauzeer voor een belangrijk punt en vermijd stopwoorden als \"eh\". Sta rechtop, kijk je publiek aan en houd je handen rustig. Wil je overtuigen, gebruik dan een feit, een beeld waar de luisteraars zich iets bij voorstellen en een duidelijke oproep. Oefen hardop en haal rustig adem als je zenuwachtig bent.",
+ "begrippen": [
+  {
+   "t": "Volume",
+   "d": "Hoe hard of zacht je praat."
+  },
+  {
+   "t": "Tempo",
+   "d": "Hoe snel je praat."
+  },
+  {
+   "t": "Pauze",
+   "d": "Een korte stilte om iets te benadrukken."
+  },
+  {
+   "t": "Nadruk",
+   "d": "Een woord of punt sterker laten klinken zodat het opvalt."
+  },
+  {
+   "t": "Oogcontact",
+   "d": "Je publiek aankijken terwijl je praat."
+  },
+  {
+   "t": "Houding",
+   "d": "Hoe je staat en je handen en lichaam gebruikt."
+  },
+  {
+   "t": "Stopwoord",
+   "d": "Een woord als \"eh\" dat je vaak zegt zonder dat het iets toevoegt."
+  },
+  {
+   "t": "Overtuigen",
+   "d": "Je publiek iets laten vinden of doen."
+  },
+  {
+   "t": "Oproep",
+   "d": "Een zin die zegt wat het publiek moet doen."
+  },
+  {
+   "t": "Beeldspraak",
+   "d": "Een voorstelling die luisteraars voor zich zien."
+  },
+  {
+   "t": "Ademhaling",
+   "d": "Rustig in- en uitademen om kalm te worden."
+  },
+  {
+   "t": "Zenuwen",
+   "d": "Spanning vlak voor of tijdens een presentatie."
+  }
+ ],
+ "sv": [
+  {
+   "v": "Waarom is een duidelijke stem belangrijk?",
+   "o": [
+    "dan hoef je minder te weten van je onderwerp",
+    "de luisteraars kunnen je goed verstaan",
+    "dan kun je sneller klaar zijn met praten",
+    "dan hoef je niemand aan te kijken"
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 0,
+   "u": "Praat verstaanbaar.",
+   "uo": [
+    "Koos je \"dan hoef je minder te weten van je onderwerp\"? Dan denk je dat een duidelijke stem je kennis vervangt. Je moet toch genoeg weten, want praten alleen is niet genoeg.",
+    "Klopt: wie verstaanbaar praat, wordt begrepen door het hele publiek.",
+    "Koos je \"dan kun je sneller klaar zijn met praten\"? Dan denk je dat het om snelheid gaat. Snel praten helpt je publiek niet, want het kan je dan niet volgen.",
+    "Koos je \"dan hoef je niemand aan te kijken\"? Dan denk je dat een stem het kijken vervangt. Oogcontact blijft belangrijk, want het houdt het publiek erbij."
+   ],
+   "uh": "Wie moet je horen?"
+  },
+  {
+   "v": "Waar kijk je naar tijdens een presentatie?",
+   "o": [
+    "naar de vloer, dat is rustig voor je",
+    "alleen naar je papier of het scherm",
+    "naar het plafond, zodat je rustig blijft",
+    "naar je publiek en soms naar je briefje"
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 1,
+   "u": "Kijk je publiek aan.",
+   "uo": [
+    "Koos je \"naar de vloer, dat is rustig voor je\"? Dan denk je dat de vloer helpt. Het publiek voelt zich dan genegeerd, en je verstaat jezelf slecht.",
+    "Koos je \"alleen naar je papier of het scherm\"? Dan denk je dat het papier genoeg is. Dan lees je alleen voor, en het contact met je publiek verdwijnt.",
+    "Koos je \"naar het plafond, zodat je rustig blijft\"? Dan denk je dat het plafond helpt. Het publiek ziet dan geen oogcontact, en voelt zich niet aangesproken.",
+    "Klopt: oogcontact laat zien dat je tegen je publiek praat."
+   ],
+   "uh": "Naar wie praat je?"
+  },
+  {
+   "v": "Wat doe je met je stem om iets belangrijks te benadrukken?",
+   "o": [
+    "even pauzeren en iets luider praten",
+    "sneller en zachter gaan praten tegen je blad",
+    "hetzelfde tempo blijven aanhouden",
+    "hard gaan roepen tegen de klas"
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 2,
+   "u": "Pauze en nadruk.",
+   "uo": [
+    "Klopt: een korte pauze en meer nadruk laten het publiek opletten.",
+    "Koos je \"sneller en zachter gaan praten tegen je blad\"? Dan denk je dat snel en zacht helpt. Dan mist het publiek het punt, en je benadrukt niets.",
+    "Koos je \"hetzelfde tempo blijven aanhouden\"? Dan denk je dat een gelijk tempo benadrukt. Het klinkt dan eentonig, en niets valt op.",
+    "Koos je \"hard gaan roepen tegen de klas\"? Dan denk je dat roepen werkt. Dat klinkt boos, en het past niet bij een rustige uitleg."
+   ],
+   "uh": "Wat valt op?"
+  },
+  {
+   "v": "Waarom is \"eh\" zeggen niet handig?",
+   "o": [
+    "omdat \"eh\" een scheldwoord is",
+    "omdat je dan te snel praat",
+    "je klinkt onzeker en het leidt af",
+    "omdat \"eh\" niet mag van je leraar en de klas"
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 3,
+   "u": "Vermijd stopwoorden.",
+   "uo": [
+    "Koos je \"omdat eh een scheldwoord is\"? Dan denk je dat het een scheldwoord is. Het is een stopwoord, maar het zorgt wel voor afleiding.",
+    "Koos je \"omdat je dan te snel praat\"? Dan denk je dat het sneller praten is. \"Eh\" vertraagt je juist, en je verhaal stokt.",
+    "Klopt: veel stopwoorden maken je verhaal rommelig en leiden de luisteraars af.",
+    "Koos je \"omdat eh niet mag van je leraar en de klas\"? Dan denk je dat het verboden is. Het is geen regel, maar het helpt je verhaal niet."
+   ],
+   "uh": "Wat zeg je vaak?"
+  },
+  {
+   "v": "Wat doe je met je handen tijdens een presentatie?",
+   "o": [
+    "ze in je zakken stoppen en niet bewegen",
+    "ze voortdurend voor je gezicht houden",
+    "rustig laten hangen of gebaren maken",
+    "er de hele tijd mee spelen"
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 4,
+   "u": "Rustige houding en gebaren.",
+   "uo": [
+    "Koos je \"ze in je zakken stoppen en niet bewegen\"? Dan denk je dat zakken een goede plek zijn. Het ziet er onverschillig uit, en je mist gebaren die helpen.",
+    "Koos je \"ze voortdurend voor je gezicht houden\"? Dan denk je dat dit werkt. Dan verberg je je gezicht, en je publiek kan je niet goed zien.",
+    "Klopt: natuurlijke gebaren helpen, maar speel niet met voorwerpen.",
+    "Koos je \"er de hele tijd mee spelen\"? Dan denk je dat spelen werkt. Het leidt het publiek af, en je verhaal verdwijnt in de beweging."
+   ],
+   "uh": "Wat doe je met je handen?"
+  },
+  {
+   "v": "Hoe klinkt een rustig tempo bij een presentatie?",
+   "o": [
+    "niet te snel en met pauzes",
+    "zo snel mogelijk, zodat je eerder klaar bent",
+    "heel langzaam met lange stiltes",
+    "afwisselend heel snel en heel stil"
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 0,
+   "u": "Rustig tempo.",
+   "uo": [
+    "Klopt: een rustig tempo geeft je publiek tijd om je te volgen.",
+    "Koos je \"zo snel mogelijk, zodat je eerder klaar bent\"? Dan denk je dat snel praten helpt. Je publiek kan je dan niet volgen, en je haalt niets uit je tijd.",
+    "Koos je \"heel langzaam met lange stiltes\"? Dan denk je dat langzaam beter is. Te traag verveelt het publiek, en je verhaal komt niet vooruit.",
+    "Koos je \"afwisselend heel snel en heel stil\"? Dan denk je dat dit werkt. Het is onrustig en onduidelijk, en het publiek haakt af."
+   ],
+   "uh": "Hoe volgt het publiek je?"
+  },
+  {
+   "v": "Waarom oefen je een presentatie hardop?",
+   "o": [
+    "dan hoef je op de dag zelf niets meer te doen",
+    "dan kun je de tekst volledig uit je hoofd leren",
+    "omdat de leraar dat controleert",
+    "je merkt waar je nog moet bijschaven"
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 1,
+   "u": "Oefen hardop.",
+   "uo": [
+    "Koos je \"dan hoef je op de dag zelf niets meer te doen\"? Dan denk je dat oefenen alles oplost. Je moet nog steeds goed uitvoeren, maar het helpt je zekerder voelen.",
+    "Koos je \"dan kun je de tekst volledig uit je hoofd leren\"? Dan denk je dat uit je hoofd leren het doel is. Je moet vrij vertellen, en niet alleen opzeggen.",
+    "Koos je \"omdat de leraar dat controleert\"? Dan denk je dat oefenen voor de leraar is. Het helpt vooral jezelf, want je wordt er zekerder van.",
+    "Klopt: door te oefenen merk je wat nog niet goed gaat en word je zekerder."
+   ],
+   "uh": "Wat merk je als je oefent?"
+  },
+  {
+   "v": "Wat moet Lotte als eerste veranderen?",
+   "o": [
+    "nog zachter en sneller praten",
+    "harder en rustiger praten",
+    "nog meer vakantiefoto's laten zien",
+    "stoppen met kijken naar de klas"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 0,
+   "u": "Eerst verstaanbaar praten.",
+   "uo": [
+    "Koos je \"nog zachter en sneller praten\"? Dan denk je dat zacht en snel werkt. Dan verstaat niemand haar nog minder, en haar verhaal gaat verloren.",
+    "Klopt: een verstaanbare stem is de eerste voorwaarde voor een goede presentatie.",
+    "Koos je \"nog meer vakantiefoto's laten zien\"? Dan denk je dat foto's alles oplossen. Zelfs met foto's verstaat niemand haar, dus haar stem moet eerst beter.",
+    "Koos je \"stoppen met kijken naar de klas\"? Dan denk je dat wegkijken helpt. Zij kijkt al te weinig, en dat moet juist veranderen."
+   ],
+   "uh": "Wat hoort de klas?",
+   "ctx": "Lotte houdt een presentatie over haar vakantie. Ze praat zacht en heel snel, kijkt de hele tijd naar de grond en houdt haar blad voor haar gezicht. Achterin de klas verstaat niemand haar, dus een paar leerlingen beginnen met elkaar te fluisteren."
+  },
+  {
+   "v": "Welk probleem veroorzaakt Lottes houding?",
+   "o": [
+    "de klas heeft te veel energie",
+    "de klas weet te veel over haar vakantie",
+    "de klas ziet haar te goed",
+    "de klas voelt zich niet aangesproken"
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 1,
+   "u": "Kijk je publiek aan.",
+   "uo": [
+    "Koos je \"de klas heeft te veel energie\"? Dan denk je dat de klas te druk is. Het ligt aan Lotte's manier van presenteren, en niet aan de klas.",
+    "Koos je \"de klas weet te veel over haar vakantie\"? Dan denk je dat de klas alles al weet. Dat blijkt nergens, het probleem is dat ze haar niet verstaan.",
+    "Koos je \"de klas ziet haar te goed\"? Dan denk je dat de klas haar te goed ziet. Zij verbergt haar gezicht, dus ze ziet haar juist niet.",
+    "Klopt: wie naar de grond kijkt en zijn gezicht verbergt, maakt geen contact."
+   ],
+   "uh": "Waar kijkt ze naar?",
+   "ctx": "Lotte houdt een presentatie over haar vakantie. Ze praat zacht en heel snel, kijkt de hele tijd naar de grond en houdt haar blad voor haar gezicht. Achterin de klas verstaat niemand haar, dus een paar leerlingen beginnen met elkaar te fluisteren."
+  },
+  {
+   "v": "Waarom pauzeert de spreker na \"het belangrijkste punt\"?",
+   "o": [
+    "hij is zijn tekst even vergeten",
+    "zo let de zaal extra goed op",
+    "hij moet even zijn neus snuiten",
+    "hij wil zijn spreektijd rekken"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 2,
+   "u": "Pauze trekt aandacht.",
+   "uo": [
+    "Koos je \"hij is zijn tekst even vergeten\"? Dan denk je dat hij zijn tekst kwijt is. Hij kijkt bewust de zaal rond, dus het is een keuze.",
+    "Klopt: een pauze maakt de zaal nieuwsgierig en vestigt de aandacht op wat volgt.",
+    "Koos je \"hij moet even zijn neus snuiten\"? Dan denk je dat het een fysieke reden is. Dat staat nergens, het is een middel om te benadrukken.",
+    "Koos je \"hij wil zijn spreektijd rekken\"? Dan denk je dat hij tijd rekt. Een pauze is kort, en het doel is nadruk."
+   ],
+   "uh": "Wat gebeurt er met de zaal?",
+   "ctx": "Een spreker zegt: \"Dit is het belangrijkste punt van mijn verhaal.\" Dan pauzeert hij drie seconden, kijkt de zaal rond en gaat pas daarna verder met het punt zelf. Het wordt helemaal stil in de zaal."
+  },
+  {
+   "v": "Wat valt op aan Jesses taalgebruik?",
+   "o": [
+    "hij gebruikt veel te moeilijke woorden",
+    "hij praat veel te hard",
+    "hij zegt vaak \"eh\", een stopwoord",
+    "hij gebruikt geen enkele zin"
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 3,
+   "u": "Stopwoorden vermijden.",
+   "uo": [
+    "Koos je \"hij gebruikt veel te moeilijke woorden\"? Dan denk je dat Jesse met lastige woorden strooit. Zijn woorden zijn juist gewoon, alleen het steeds herhaalde \"eh\" valt op.",
+    "Koos je \"hij praat veel te hard\"? Dan denk je dat zijn stem te luid is. Daar blijkt niets van uit zijn gedrag, de klas lacht om het vele \"eh\".",
+    "Klopt: tien keer \"eh\" in twee minuten maakt zijn verhaal rommelig.",
+    "Koos je \"hij gebruikt geen enkele zin\"? Dan denk je dat Jesse helemaal zwijgt. Hij praat wel degelijk twee minuten, maar vult zijn zinnen met stopwoorden."
+   ],
+   "uh": "Wat zegt hij vaak?",
+   "ctx": "Jesse staat met zijn handen in zijn zakken, draait heen en weer op zijn voeten en zegt in twee minuten tien keer \"eh\". Zijn klas begint te lachen en Jesse wordt rood en kijkt steeds naar de klok."
+  },
+  {
+   "v": "Welk effect heeft Jesses houding op de klas?",
+   "o": [
+    "de klas lacht en let niet op",
+    "de klas let extra goed op de dia",
+    "de klas begrijpt alles nu veel beter",
+    "de klas schrijft alles op"
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 4,
+   "u": "Rustige houding helpt.",
+   "uo": [
+    "Klopt: onrustig staan leidt af en haalt de aandacht bij het verhaal weg.",
+    "Koos je \"de klas let extra goed op de dia\"? Dan denk je dat de klas goed oplet. Ze beginnen juist te lachen, dus de aandacht verdwijnt.",
+    "Koos je \"de klas begrijpt alles nu veel beter\"? Dan denk je dat zijn houding helpt. Zijn onrust leidt af, en het publiek begrijpt het minder.",
+    "Koos je \"de klas schrijft alles op\"? Dan denk je dat de klas meeschrijft. Het fragment zegt dat ze lachen, dus ze letten niet op."
+   ],
+   "uh": "Wat doet de klas?",
+   "ctx": "Jesse staat met zijn handen in zijn zakken, draait heen en weer op zijn voeten en zegt in twee minuten tien keer \"eh\". Zijn klas begint te lachen en Jesse wordt rood en kijkt steeds naar de klok."
+  },
+  {
+   "v": "Welk doel heeft deze spreker?",
+   "o": [
+    "de klas overtuigen om afval te scheiden",
+    "de klas laten lachen om zijn grappen over afval",
+    "de klas informeren over plastic",
+    "de klas laten stemmen over afval"
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 0,
+   "u": "Overtuigen heeft een oproep.",
+   "uo": [
+    "Klopt: hij eindigt met een oproep, dus hij wil overtuigen.",
+    "Koos je \"de klas laten lachen om zijn grappen over afval\"? Dan denk je dat hij wil vermaken. Er staan geen grappen in zijn tekst, het is een oproep.",
+    "Koos je \"de klas informeren over plastic\"? Dan denk je dat hij alleen informeert. Hij eindigt met een oproep, dus hij wil iets bereiken.",
+    "Koos je \"de klas laten stemmen over afval\"? Dan denk je dat er gestemd wordt. Hij zegt \"Scheid je afval\", dat is een oproep en geen stemming."
+   ],
+   "uh": "Wat wil hij?",
+   "ctx": "Een spreker wil de klas overtuigen om afval te scheiden. Hij zegt: \"Veel mensen gooien plastic bij het restafval. Stel je voor: een zak vol flessen die honderden jaren blijft liggen. Wij kunnen dit veranderen. Scheid je afval, vanaf vandaag!\""
+  },
+  {
+   "v": "Welk middel gebruikt hij met \"Stel je voor: een zak vol flessen\"?",
+   "o": [
+    "een feit met een bron als bewijs",
+    "een vraag aan de hele klas om te antwoorden",
+    "een beeld voor de luisteraars",
+    "een grap om te lachen"
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 1,
+   "u": "Beeld = voorstelling.",
+   "uo": [
+    "Koos je \"een feit met een bron als bewijs\"? Dan denk je dat dit een feit met bewijs is. Het is een voorstelling, geen bewijs.",
+    "Koos je \"een vraag aan de hele klas om te antwoorden\"? Dan denk je dat dit een vraag is. Het is een opdracht om iets te visualiseren, geen vraag.",
+    "Klopt: een levendig beeld maakt zijn punt makkelijker te onthouden.",
+    "Koos je \"een grap om te lachen\"? Dan denk je dat dit een grap is. Het is ernstig bedoeld, en wil juist doen nadenken."
+   ],
+   "uh": "Wat zie je voor je?",
+   "ctx": "Een spreker wil de klas overtuigen om afval te scheiden. Hij zegt: \"Veel mensen gooien plastic bij het restafval. Stel je voor: een zak vol flessen die honderden jaren blijft liggen. Wij kunnen dit veranderen. Scheid je afval, vanaf vandaag!\""
+  },
+  {
+   "v": "Welke zin is de oproep van de spreker?",
+   "o": [
+    "\"Veel mensen gooien plastic bij het restafval.\"",
+    "\"Scheid je afval, vanaf vandaag!\"",
+    "\"Wij kunnen dit veranderen.\"",
+    "\"Stel je voor: een zak vol flessen.\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 2,
+   "u": "Een oproep zegt wat je moet doen.",
+   "uo": [
+    "Koos je \"Veel mensen gooien plastic bij het restafval.\"? Dan denk je dat dit de oproep is. Het is een feit, geen opdracht.",
+    "Klopt: hij zegt wat het publiek moet doen, dus het is een oproep.",
+    "Koos je \"Wij kunnen dit veranderen.\"? Dan denk je dat dit de oproep is. Het is een gedachte, maar geen duidelijke opdracht.",
+    "Koos je \"Stel je voor: een zak vol flessen.\"? Dan denk je dat dit de oproep is. Het is een beeld, en geen opdracht."
+   ],
+   "uh": "Wat moet het publiek doen?",
+   "ctx": "Een spreker wil de klas overtuigen om afval te scheiden. Hij zegt: \"Veel mensen gooien plastic bij het restafval. Stel je voor: een zak vol flessen die honderden jaren blijft liggen. Wij kunnen dit veranderen. Scheid je afval, vanaf vandaag!\""
+  },
+  {
+   "v": "Hoe gaat Nora om met haar zenuwen?",
+   "o": [
+    "ze gaat hard praten om haar zenuwen te verbergen",
+    "ze rent snel naar voren om klaar te zijn",
+    "ze zegt dat ze liever niet wil beginnen",
+    "ze ademt rustig en begint met een lach"
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 4,
+   "u": "Rustig ademen helpt.",
+   "uo": [
+    "Koos je \"ze gaat hard praten om haar zenuwen te verbergen\"? Dan denk je dat hard praten helpt. Dat maakt je eerder onrustig, en het lost je zenuwen niet op.",
+    "Koos je \"ze rent snel naar voren om klaar te zijn\"? Dan denk je dat haast werkt. Je hartslag gaat dan nog harder, en je zenuwen worden erger.",
+    "Koos je \"ze zegt dat ze liever niet wil beginnen\"? Dan denk je dat dit helpt. Het maakt je publiek onzeker, en het lost niets op.",
+    "Klopt: rustig ademhalen en een vriendelijk begin helpen om je zenuwen te beheersen."
+   ],
+   "uh": "Wat doe je als je zenuwachtig bent?",
+   "ctx": "Nora is zenuwachtig voor haar presentatie. Ze heeft koude handen en een snelle hartslag. Ze ademt drie keer rustig in en uit, pakt haar spiekbriefje en begint met een lach: \"Goedemorgen allemaal, fijn dat jullie er zijn.\""
+  },
+  {
+   "v": "Waarom is Nora's begroeting een goede start?",
+   "o": [
+    "ze doet alsof ze niets hoeft te vertellen aan de klas",
+    "ze maakt vriendelijk contact met de klas",
+    "ze zegt meteen alles wat ze weet",
+    "ze praat heel zacht tegen haar papier"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 3,
+   "u": "Begin vriendelijk.",
+   "uo": [
+    "Koos je \"ze doet alsof ze niets hoeft te vertellen aan de...\"? Dan denk je dat dit helpt. Zo maak je geen contact, en de klas weet niet waar het over gaat.",
+    "Klopt: een vriendelijke begroeting maakt de sfeer prettig en je publiek luistert dan beter.",
+    "Koos je \"ze zegt meteen alles wat ze weet\"? Dan denk je dat alles direct vertellen helpt. Het publiek raakt het spoor bijster, en een begroeting hoort bij het begin.",
+    "Koos je \"ze praat heel zacht tegen haar papier\"? Dan denk je dat zacht praten werkt. De klas verstaat haar dan niet, en het contact is weg."
+   ],
+   "uh": "Hoe begin je?",
+   "ctx": "Nora is zenuwachtig voor haar presentatie. Ze heeft koude handen en een snelle hartslag. Ze ademt drie keer rustig in en uit, pakt haar spiekbriefje en begint met een lach: \"Goedemorgen allemaal, fijn dat jullie er zijn.\""
+  },
+  {
+   "v": "Welk effect krijgt de spreker met pauze en rondkijken?",
+   "o": [
+    "de zaal wordt stil en let op",
+    "de zaal gaat zelf praten tijdens de pauze",
+    "de zaal vergeet zijn punt",
+    "de zaal loopt weg"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 2,
+   "u": "Pauze trekt aandacht.",
+   "uo": [
+    "Klopt: pauze en oogcontact trekken de aandacht naar wat hij gaat zeggen.",
+    "Koos je \"de zaal gaat zelf praten tijdens de pauze\"? Dan denk je dat de zaal begint te praten. Het is juist stil, dus de aandacht is bij hem.",
+    "Koos je \"de zaal vergeet zijn punt\"? Dan denk je dat de zaal het punt vergeet. Een pauze maakt het sterker, en het publiek onthoudt het.",
+    "Koos je \"de zaal loopt weg\"? Dan denk je dat de zaal weggaat. Er staat dat het stil wordt, en dat is een positief teken."
+   ],
+   "uh": "Wat hoor je in de zaal?",
+   "ctx": "Een spreker zegt: \"Dit is het belangrijkste punt van mijn verhaal.\" Dan pauzeert hij drie seconden, kijkt de zaal rond en gaat pas daarna verder met het punt zelf. Het wordt helemaal stil in de zaal."
+  },
+  {
+   "v": "Welke twee tips helpen Lotte het meest?",
+   "o": [
+    "praat sneller en kijk naar de vloer",
+    "praat zachter en kijk naar je blad",
+    "praat sneller en lees alles voor",
+    "kijk de klas aan en praat rustiger"
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 1,
+   "u": "Oogcontact en rustig tempo.",
+   "uo": [
+    "Koos je \"praat sneller en kijk naar de vloer\"? Dan denk je dat dit helpt. Het maakt het nog onduidelijker, en de klas haakt af.",
+    "Koos je \"praat zachter en kijk naar je blad\"? Dan denk je dat dit werkt. Niemand verstaat haar dan, en ze maakt geen contact.",
+    "Koos je \"praat sneller en lees alles voor\"? Dan denk je dat dit helpt. Het wordt hierdoor onverstaanbaar, en haar publiek mist de kern.",
+    "Klopt: oogcontact en een rustig tempo helpen haar verhaal beter overkomen."
+   ],
+   "uh": "Wat veranderen?",
+   "ctx": "Lotte houdt een presentatie over haar vakantie. Ze praat zacht en heel snel, kijkt de hele tijd naar de grond en houdt haar blad voor haar gezicht. Achterin de klas verstaat niemand haar, dus een paar leerlingen beginnen met elkaar te fluisteren."
+  },
+  {
+   "v": "Hoe is het verhaal van de spreker opgebouwd?",
+   "o": [
+    "grap, verhaal, vraag en een bedankje voor het slot",
+    "vraag, gesprek, pauze en cijfer",
+    "feit, beeld, mogelijkheid en oproep",
+    "begroeting, uitleg en afscheid"
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 0,
+   "u": "Feit, beeld, oproep.",
+   "uo": [
+    "Koos je \"grap, verhaal, vraag en een bedankje voor het slot\"? Dan denk je dat dit de opbouw is. Er staat geen grap, en de volgorde klopt niet.",
+    "Koos je \"vraag, gesprek, pauze en cijfer\"? Dan denk je dat dit de opbouw is. Er is geen gesprek en geen cijfer, dus dit klopt niet.",
+    "Klopt: eerst een feit, dan een beeld en daarna de oproep om te doen wat je kunt.",
+    "Koos je \"begroeting, uitleg en afscheid\"? Dan denk je dat dit de opbouw is. Er is geen begroeting en geen afscheid, het is een oproep."
+   ],
+   "uh": "Wat komt eerst?",
+   "ctx": "Een spreker wil de klas overtuigen om afval te scheiden. Hij zegt: \"Veel mensen gooien plastic bij het restafval. Stel je voor: een zak vol flessen die honderden jaren blijft liggen. Wij kunnen dit veranderen. Scheid je afval, vanaf vandaag!\""
+  },
+  {
+   "v": "Welke aanpassing helpt Jesse het meest bij zijn zenuwen?",
+   "o": [
+    "hij leest zijn verhaal af zonder op te kijken",
+    "hij zegt nog vaker \"eh\" om tijd te winnen",
+    "hij oefent hardop en staat rustig",
+    "hij verlaat het lokaal tijdens het praten"
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 4,
+   "u": "Oefen en sta rustig.",
+   "uo": [
+    "Koos je \"hij leest zijn verhaal af zonder op te kijken\"? Dan denk je dat dit helpt. Het contact met de klas ontbreekt, en je publiek luistert niet.",
+    "Koos je \"hij zegt nog vaker eh om tijd te winnen\"? Dan denk je dat dit helpt. Het verergert het probleem, en je klinkt onzekerder.",
+    "Klopt: oefenen en een stevige houding maken je rustiger en je spreekt dan zekerder.",
+    "Koos je \"hij verlaat het lokaal tijdens het praten\"? Dan denk je dat weggaan helpt. Dat lost niets op, en je laat je publiek in de steek."
+   ],
+   "uh": "Wat helpt tegen zenuwen?",
+   "ctx": "Jesse staat met zijn handen in zijn zakken, draait heen en weer op zijn voeten en zegt in twee minuten tien keer \"eh\". Zijn klas begint te lachen en Jesse wordt rood en kijkt steeds naar de klok."
+  },
+  {
+   "v": "Waarom gebruikt de spreker het woord \"wij\"?",
+   "o": [
+    "hij wil niet zelf verantwoordelijk zijn",
+    "hij praat over zichzelf en zijn familie",
+    "hij is de voorzitter van de gemeente",
+    "hij laat zien dat iedereen meedoet"
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 3,
+   "u": "\"Wij\" betrekt het publiek.",
+   "uo": [
+    "Koos je \"hij wil niet zelf verantwoordelijk zijn\"? Dan denk je dat hij zijn eigen schuld verbergt. Hij roept op, en \"wij\" betrekt de luisteraars.",
+    "Koos je \"hij praat over zichzelf en zijn familie\"? Dan denk je dat het om zijn familie gaat. Dat staat nergens, het gaat om de hele klas.",
+    "Koos je \"hij is de voorzitter van de gemeente\"? Dan denk je dat hij namens de gemeente spreekt. Dat staat nergens, \"wij\" is een manier om te overtuigen.",
+    "Klopt: \"wij\" maakt het publiek deel van de oplossing en dat overtuigt meer."
+   ],
+   "uh": "Wie hoort erbij?",
+   "ctx": "Een spreker wil de klas overtuigen om afval te scheiden. Hij zegt: \"Veel mensen gooien plastic bij het restafval. Stel je voor: een zak vol flessen die honderden jaren blijft liggen. Wij kunnen dit veranderen. Scheid je afval, vanaf vandaag!\""
+  },
+  {
+   "v": "Welke oefening helpt Lotte om duidelijker te praten?",
+   "o": [
+    "hardop oefenen voor een vriend",
+    "zachtjes in haar hoofd lezen zonder te praten",
+    "de tekst zo snel mogelijk opzeggen voor de spiegel",
+    "alleen naar de vakantiefoto's kijken"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 0,
+   "u": "Oefen hardop voor iemand.",
+   "uo": [
+    "Klopt: oefenen met een luisteraar laat haar horen of ze verstaanbaar is.",
+    "Koos je \"zachtjes in haar hoofd lezen zonder te praten\"? Dan denk je dat stil oefenen helpt. Je hoort dan niet of je verstaanbaar bent, dus het helpt je stem niet.",
+    "Koos je \"de tekst zo snel mogelijk opzeggen voor de spiegel\"? Dan denk je dat snel opzeggen helpt. Dat versterkt juist haar probleem, want ze praat al te snel.",
+    "Koos je \"alleen naar de vakantiefoto's kijken\"? Dan denk je dat kijken naar foto's oefening is. Dat oefent haar stem niet, dus dit verandert niets."
+   ],
+   "uh": "Hoor je jezelf goed?",
+   "ctx": "Lotte houdt een presentatie over haar vakantie. Ze praat zacht en heel snel, kijkt de hele tijd naar de grond en houdt haar blad voor haar gezicht. Achterin de klas verstaat niemand haar, dus een paar leerlingen beginnen met elkaar te fluisteren."
+  },
+  {
+   "v": "Welke houding past bij Nora's begin?",
+   "o": [
+    "met haar rug naar de klas staan en praten",
+    "rechtop staan en de klas aankijken",
+    "half tegen de tafel leunen en wegkijken",
+    "met haar blik op het briefje blijven staan"
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 1,
+   "u": "Rechtop en oogcontact.",
+   "uo": [
+    "Koos je \"met haar rug naar de klas staan en praten\"? Dan denk je dat dit past. Het publiek ziet geen gezicht, en voelt zich buitengesloten.",
+    "Klopt: een rechte houding en oogcontact laten zien dat je er klaar voor bent.",
+    "Koos je \"half tegen de tafel leunen en wegkijken\"? Dan denk je dat dit past. Het ziet er onverschillig uit, en het mist oogcontact.",
+    "Koos je \"met haar blik op het briefje blijven staan\"? Dan denk je dat dit past. Ze kijkt dan nooit naar de klas, en dat is het probleem."
+   ],
+   "uh": "Hoe sta je?",
+   "ctx": "Nora is zenuwachtig voor haar presentatie. Ze heeft koude handen en een snelle hartslag. Ze ademt drie keer rustig in en uit, pakt haar spiekbriefje en begint met een lach: \"Goedemorgen allemaal, fijn dat jullie er zijn.\""
+  },
+  {
+   "v": "Wat gebeurt er als de spreker alles in hetzelfde tempo vertelt?",
+   "o": [
+    "de zaal wordt nog stiller en let beter op",
+    "het publiek begrijpt zijn punt beter",
+    "de spreker kan eerder klaar zijn met praten",
+    "het belangrijkste punt valt niet op"
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 2,
+   "u": "Nadruk laat iets opvallen.",
+   "uo": [
+    "Koos je \"de zaal wordt nog stiller en let beter op\"? Dan denk je dat de zaal nog meer oplet. Eentonig praten werkt juist verdovend, en het publiek dwaalt af.",
+    "Koos je \"het publiek begrijpt zijn punt beter\"? Dan denk je dat een gelijk tempo helpt. Zonder nadruk mist de zaal het hoofdpunt, dus begrijpt het minder.",
+    "Koos je \"de spreker kan eerder klaar zijn met praten\"? Dan denk je dat dit het gevolg is. Het tempo verandert de lengte niet veel, en het belangrijkste punt valt weg.",
+    "Klopt: zonder pauze of nadruk klinkt alles even belangrijk, dus niets valt op."
+   ],
+   "uh": "Wat valt op?",
+   "ctx": "Een spreker zegt: \"Dit is het belangrijkste punt van mijn verhaal.\" Dan pauzeert hij drie seconden, kijkt de zaal rond en gaat pas daarna verder met het punt zelf. Het wordt helemaal stil in de zaal."
+  },
+  {
+   "v": "Welk deel van de oproep maakt hem concreet?",
+   "o": [
+    "\"vanaf vandaag\"",
+    "\"veel mensen\"",
+    "\"honderden jaren\"",
+    "\"stel je voor\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 3,
+   "u": "Concreet = wat en wanneer.",
+   "uo": [
+    "Klopt: een tijdstip maakt duidelijk wanneer het publiek moet beginnen.",
+    "Koos je \"veel mensen\"? Dan denk je dat dit de oproep concreet maakt. Het is een algemeen feit, en het zegt niets over wat je moet doen.",
+    "Koos je \"honderden jaren\"? Dan denk je dat dit de oproep concreet maakt. Het is een beeld over de tijd van het plastic, geen opdracht aan het publiek.",
+    "Koos je \"stel je voor\"? Dan denk je dat dit de oproep concreet maakt. Het vraagt alleen om te fantaseren, zonder te zeggen wat je moet doen."
+   ],
+   "uh": "Wanneer begin je?",
+   "ctx": "Een spreker wil de klas overtuigen om afval te scheiden. Hij zegt: \"Veel mensen gooien plastic bij het restafval. Stel je voor: een zak vol flessen die honderden jaren blijft liggen. Wij kunnen dit veranderen. Scheid je afval, vanaf vandaag!\""
+  }
+ ],
+ "oe": [
+  {
+   "bron": "Examenstijl",
+   "ctx": "Lotte houdt een presentatie over haar vakantie. Ze praat zacht en heel snel, kijkt de hele tijd naar de grond en houdt haar blad voor haar gezicht. Achterin de klas verstaat niemand haar, dus een paar leerlingen beginnen met elkaar te fluisteren.",
+   "v": "Noem twee dingen die Lotte moet veranderen en leg uit waarom.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Harder en rustiger praten, want niemand verstaat haar (2p). Naar de klas kijken, zodat ze contact maakt (2p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een spreker zegt: \"Dit is het belangrijkste punt van mijn verhaal.\" Dan pauzeert hij drie seconden, kijkt de zaal rond en gaat pas daarna verder met het punt zelf. Het wordt helemaal stil in de zaal.",
+   "v": "Welk middel gebruikt de spreker om zijn punt te benadrukken en wat is het effect?",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Hij pauzeert en kijkt rond (1p). De zaal wordt stil en let extra goed op (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Jesse staat met zijn handen in zijn zakken, draait heen en weer op zijn voeten en zegt in twee minuten tien keer \"eh\". Zijn klas begint te lachen en Jesse wordt rood en kijkt steeds naar de klok.",
+   "v": "Noem twee dingen die Jesse verkeerd doet bij zijn taal en houding.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Hij zegt veel \"eh\", een stopwoord (1p). Hij staat onrustig met zijn handen in zijn zakken en kijkt niet naar de klas (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een spreker wil de klas overtuigen om afval te scheiden. Hij zegt: \"Veel mensen gooien plastic bij het restafval. Stel je voor: een zak vol flessen die honderden jaren blijft liggen. Wij kunnen dit veranderen. Scheid je afval, vanaf vandaag!\"",
+   "v": "Hoe overtuigt de spreker de klas? Noem een feit, een beeld en een oproep uit zijn tekst.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Feit: veel mensen gooien plastic bij het restafval (1p). Beeld: een zak vol flessen die honderden jaren blijft liggen (1p). Oproep: \"Scheid je afval, vanaf vandaag!\" (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Nora is zenuwachtig voor haar presentatie. Ze heeft koude handen en een snelle hartslag. Ze ademt drie keer rustig in en uit, pakt haar spiekbriefje en begint met een lach: \"Goedemorgen allemaal, fijn dat jullie er zijn.\"",
+   "v": "Hoe gaat Nora om met haar zenuwen en welke andere tip geef je?",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Ze ademt rustig in en uit en begint met een lach (2p). Andere tip: hardop oefenen of een spiekbriefje gebruiken (1p)."
+  }
+ ]
+}

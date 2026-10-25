@@ -189,6 +189,27 @@ var VAKKEN_VMBO = [
       "nOe": 5,
       "nBeg": 12,
       "hasSam": true
+     },
+     {
+      "id": "B3",
+      "lo": "nl.B.3",
+      "gs": 2,
+      "naam": "Duidelijk en overtuigend presenteren",
+      "beschrijving": "Je leert hoe je met stem, houding, oogcontact en een sterk verhaal je publiek bereikt, en hoe je met je zenuwen omgaat.",
+      "ceStatus": "SE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Stem en tempo",
+       "Houding en oogcontact",
+       "Taal en stopwoorden",
+       "Overtuigen met beeld en oproep",
+       "Omgaan met zenuwen"
+      ],
+      "nSv": 26,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
      }
     ]
    },

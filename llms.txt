@@ -5,7 +5,7 @@
 Volledige beschrijving (functies, inhoud per niveau, prijs, wat Slagio niet is): https://slagio.nl/llms-full.txt
 
 ## In het kort
-- 12 vakken havo, 16 vakken vwo, 12 vakken vmbo; 23.209 oefenvragen en 4.346 begrippen.
+- 12 vakken havo, 16 vakken vwo, 12 vakken vmbo; 23.235 oefenvragen en 4.346 begrippen.
 - Adaptief oefenen: na een fout een vraag over hetzelfde onderwerp, een niveau makkelijker; uitleg bij elk fout antwoord.
 - Foutenboek en herhalen met gespreide herhaling, beheersing per leerdoel, studieplan tot het examen.
 - Examens met klok, proefexamens in examenstijl met modelantwoord en puntenverdeling, archief met officiële oude examens.
@@ -133,6 +133,7 @@ Volledige beschrijving (functies, inhoud per niveau, prijs, wat Slagio niet is):
 - [Beeld en geluid interpreteren (Nederlands VMBO)](https://slagio.nl/leren/vmbo/nederlands/beeld-en-geluid-interpreteren.html): Je kijkt en luistert naar een fragment en legt uit wat beeld, camera, muziek en stem je vertellen, wat de maker wil en of je het kunt vertrouwen.
 - [Doel, publiek en gespreksvorm afstemmen (Nederlands VMBO)](https://slagio.nl/leren/vmbo/nederlands/doel-publiek-en-gespreksvorm-afstemmen.html): Je bedenkt wat je met je verhaal wilt bereiken, wie er luistert en welke vorm van gesprek past, en je kiest daar de juiste woorden bij.
 - [Een presentatie voorbereiden en opbouwen (Nederlands VMBO)](https://slagio.nl/leren/vmbo/nederlands/een-presentatie-voorbereiden-en-opbouwen.html): Je kiest en bakent een onderwerp af, zoekt betrouwbare informatie, bouwt je verhaal op met een inleiding, kern en slot en maakt eenvoudige dia's en een…
+- [Duidelijk en overtuigend presenteren (Nederlands VMBO)](https://slagio.nl/leren/vmbo/nederlands/duidelijk-en-overtuigend-presenteren.html): Je leert hoe je met stem, houding, oogcontact en een sterk verhaal je publiek bereikt, en hoe je met je zenuwen omgaat.
 
 ## Examenvragen in examenstijl (met modelantwoord en puntenverdeling)
 - [Examenvragen Nederlands HAVO](https://slagio.nl/leren/havo/nederlands/examenvragen.html): 11 vragen uit een Slagio-proefexamen
