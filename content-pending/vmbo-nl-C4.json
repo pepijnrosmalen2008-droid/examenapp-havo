@@ -1,0 +1,661 @@
+{
+ "id": "C4",
+ "lo": "nl.C.4",
+ "gs": 2,
+ "naam": "Feiten en meningen in een tekst",
+ "beschrijving": "Je onderscheidt in een tekst feiten van meningen, herkent overdrijving en controleert of informatie betrouwbaar is.",
+ "ceStatus": "CE+SE",
+ "binas": "",
+ "val": "",
+ "onderwerpen": [
+  "Feit of mening",
+  "Signaalwoorden voor een mening",
+  "Overdrijving herkennen",
+  "Feit en mening in één zin",
+  "Controleren en bronnen"
+ ],
+ "sam": "Een feit kun je controleren, bijvoorbeeld met een meting of een bron. Een mening is een oordeel dat je niet kunt bewijzen. Woorden als ik vind, volgens mij, mooi en jammer wijzen op een mening, woorden als altijd, nooit en het beste op een overdrijving. Een zin kan feit en mening bevatten. Reclame en recensies gebruiken beide. Controleer feiten met een bron en let op de bedoeling van de schrijver.",
+ "begrippen": [
+  {
+   "t": "Feit",
+   "d": "Iets wat je kunt controleren."
+  },
+  {
+   "t": "Mening",
+   "d": "Een oordeel dat iemand heeft en niet te bewijzen is."
+  },
+  {
+   "t": "Oordeel",
+   "d": "Een woord dat zegt wat iemand ervan vindt."
+  },
+  {
+   "t": "Overdrijving",
+   "d": "Iets groter of beter voorstellen dan het is."
+  },
+  {
+   "t": "Bron",
+   "d": "De plek waar informatie vandaan komt."
+  },
+  {
+   "t": "Controleren",
+   "d": "Nagaan of iets klopt."
+  },
+  {
+   "t": "Betrouwbaar",
+   "d": "Iets waarop je kunt vertrouwen."
+  },
+  {
+   "t": "Recensie",
+   "d": "Een tekst waarin iemand zijn mening geeft over een film of boek."
+  },
+  {
+   "t": "Advertentie",
+   "d": "Een tekst die iets wil verkopen."
+  },
+  {
+   "t": "Bewijs",
+   "d": "Iets waarmee je laat zien dat het klopt."
+  },
+  {
+   "t": "Signaalwoord",
+   "d": "Een woord dat laat zien wat voor soort zin er komt."
+  },
+  {
+   "t": "Standpunt",
+   "d": "De mening die je verdedigt."
+  }
+ ],
+ "sv": [
+  {
+   "v": "Wat is een feit?",
+   "o": [
+    "wat iemand mooi of fijn vindt",
+    "iets wat je kunt controleren",
+    "wat de meeste mensen denken",
+    "wat de schrijver graag wil"
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 0,
+   "u": "Feit = controleerbaar.",
+   "uo": [
+    "Koos je \"wat iemand mooi of fijn vindt\"? Dan denk je dat een feit een oordeel is. Een oordeel is een mening, en geen feit.",
+    "Klopt: een feit kun je nagaan, bijvoorbeeld met een meting of een bron.",
+    "Koos je \"wat de meeste mensen denken\"? Dan denk je dat een feit is wat de meeste mensen denken. Veel mensen kunnen het fout hebben, en dan is het geen feit.",
+    "Koos je \"wat de schrijver graag wil\"? Dan denk je dat een feit een wens is. Een wens is een mening, en geen feit."
+   ],
+   "uh": "Kun je het nagaan?"
+  },
+  {
+   "v": "Wat is een mening?",
+   "o": [
+    "wat je in een meting kunt aflezen",
+    "wat in het woordenboek staat",
+    "wat een bron zegt over cijfers",
+    "wat iemand vindt of denkt"
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 1,
+   "u": "Mening = wat iemand vindt.",
+   "uo": [
+    "Koos je \"wat je in een meting kunt aflezen\"? Dan denk je dat een mening een meting is. Een meting is een feit, en geen mening.",
+    "Koos je \"wat in het woordenboek staat\"? Dan denk je dat een mening in het woordenboek staat. Daar staan feiten over woorden, en geen meningen.",
+    "Koos je \"wat een bron zegt over cijfers\"? Dan denk je dat een mening een bron is. Een bron geeft feiten, en geen eigen mening.",
+    "Klopt: een mening is een oordeel dat je niet kunt bewijzen."
+   ],
+   "uh": "Wat vindt de schrijver?"
+  },
+  {
+   "v": "Welke zin is een feit?",
+   "o": [
+    "\"Het gebouw is veertig meter hoog.\"",
+    "\"Het gebouw is erg lelijk.\"",
+    "\"Het is het mooiste gebouw van de stad.\"",
+    "\"Ik vind het gebouw te groot.\""
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 2,
+   "u": "Meten = feit.",
+   "uo": [
+    "Klopt: je kunt de hoogte meten, dus het is controleerbaar.",
+    "Koos je \"Het gebouw is erg lelijk.\"? Dan denk je dat dit een feit is. Hoe lelijk iets is, hangt van de kijker af, en dus is het een mening.",
+    "Koos je \"Het is het mooiste gebouw van de stad.\"? Dan denk je dat dit een feit is. Een superlatief als mooiste vergelijkt smaak, en dus is het een mening.",
+    "Koos je \"Ik vind het gebouw te groot.\"? Dan denk je dat dit een feit is. \"Ik vind\" laat een mening zien, dus het is geen feit."
+   ],
+   "uh": "Kun je het meten?"
+  },
+  {
+   "v": "Welke woorden wijzen vaak op een mening?",
+   "o": [
+    "gisteren, vijf, meter, euro",
+    "om half negen, in het park, op school",
+    "volgens mij, ik vind, mooi, jammer",
+    "de heer Jansen, Amsterdam, Nederland"
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 3,
+   "u": "Oordeelwoorden.",
+   "uo": [
+    "Koos je \"gisteren, vijf, meter, euro\"? Dan denk je dat dit woorden voor een mening zijn. Het zijn tijd en aantallen, en dus feiten.",
+    "Koos je \"om half negen, in het park, op school\"? Dan denk je dat dit woorden voor een mening zijn. Het zijn plaats en tijd, en dus feiten.",
+    "Klopt: dit zijn woorden voor een oordeel of persoonlijk standpunt.",
+    "Koos je \"de heer Jansen, Amsterdam, Nederland\"? Dan denk je dat dit woorden voor een mening zijn. Het zijn namen, en dus feiten."
+   ],
+   "uh": "Welke woorden oordelen?"
+  },
+  {
+   "v": "Waarom is een bron belangrijk bij een feit?",
+   "o": [
+    "een bron maakt een mening mooier",
+    "een bron betekent dat iets zeker waar is",
+    "je kunt zo controleren of het klopt",
+    "een bron is een soort titel"
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 4,
+   "u": "Bron = herkomst.",
+   "uo": [
+    "Koos je \"een bron maakt een mening mooier\"? Dan denk je dat een bron meningen versiert. Een bron toont waar iets vandaan komt, en verandert niets aan een mening.",
+    "Koos je \"een bron betekent dat iets zeker waar is\"? Dan denk je dat een bron altijd waar is. Een bron kan ook fout zijn, daarom controleer je de bron.",
+    "Klopt: een bron laat zien waar de informatie vandaan komt.",
+    "Koos je \"een bron is een soort titel\"? Dan denk je dat een bron een titel is. Een bron is de herkomst van informatie, en geen titel."
+   ],
+   "uh": "Waar komt het vandaan?"
+  },
+  {
+   "v": "Welke zin is een mening?",
+   "o": [
+    "\"Dit boek is erg spannend.\"",
+    "\"Dit boek heeft tweehonderd bladzijden.\"",
+    "\"Dit boek is in 2020 uitgegeven.\"",
+    "\"Dit boek is geschreven door een Nederlander.\""
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 2,
+   "u": "Spannend = oordeel.",
+   "uo": [
+    "Klopt: spannend is een oordeel en dat kun je niet meten.",
+    "Koos je \"Dit boek heeft tweehonderd bladzijden.\"? Dan denk je dat dit een mening is. Je kunt de bladzijden tellen, dus het is een feit.",
+    "Koos je \"Dit boek is in 2020 uitgegeven.\"? Dan denk je dat dit een mening is. Je kunt het jaar controleren, dus het is een feit.",
+    "Koos je \"Dit boek is geschreven door een Nederlander.\"? Dan denk je dat dit een mening is. Je kunt de schrijver nagaan, dus het is een feit."
+   ],
+   "uh": "Kun je het bewijzen?"
+  },
+  {
+   "v": "Waaraan herken je een overdrijving?",
+   "o": [
+    "aan een exact getal en een datum erbij",
+    "aan de naam van een stad of dorp",
+    "aan een hele lange zin",
+    "aan altijd, nooit en het beste"
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 3,
+   "u": "Altijd, nooit, het beste.",
+   "uo": [
+    "Koos je \"aan een exact getal en een datum erbij\"? Dan denk je dat dit een overdrijving is. Een getal en een datum zijn juist precies, en dus feitelijk.",
+    "Koos je \"aan de naam van een stad of dorp\"? Dan denk je dat dit een overdrijving is. Een stad noemen is een feit, en geen overdrijving.",
+    "Koos je \"aan een hele lange zin\"? Dan denk je dat dit een overdrijving is. De lengte zegt niets over overdrijven, het gaat om de woorden.",
+    "Klopt: zulke woorden maken iets groter of erger dan het is."
+   ],
+   "uh": "Welke woorden gaan te ver?"
+  },
+  {
+   "v": "Welke zin uit de tekst over het zwembad is een feit?",
+   "o": [
+    "\"Het is het mooiste zwembad van de regio.\"",
+    "\"Het zwembad heeft vijf banen.\"",
+    "\"Veel inwoners vinden de entree te duur.\"",
+    "\"Het is jammer dat er geen glijbaan is.\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 2,
+   "u": "Meetbaar = feit.",
+   "uo": [
+    "Koos je \"Het is het mooiste zwembad van de regio.\"? Dan denk je dat dit een feit is. Mooiste is een oordeel, en geen meting.",
+    "Klopt: je kunt het aantal banen en de lengte nameten.",
+    "Koos je \"Veel inwoners vinden de entree te duur.\"? Dan denk je dat dit een feit is. Het is wat inwoners vinden, en dus een mening.",
+    "Koos je \"Het is jammer dat er geen glijbaan is.\"? Dan denk je dat dit een feit is. Jammer is een oordeel, en dus een mening."
+   ],
+   "uh": "Wat kun je nameten?",
+   "ctx": "Gisteren heeft de gemeente een nieuw zwembad geopend. Het zwembad heeft vijf banen van vijfentwintig meter en een peuterbad. Volgens de wethouder is het het mooiste zwembad van de regio. Veel inwoners vinden de entree te duur: een kaartje kost zes euro. Het zwembad is open van zeven uur 's ochtends tot negen uur 's avonds. Een medewerker van de krant vindt het jammer dat er geen glijbaan is. Het water wordt verwarmd tot achtentwintig graden. Eerder dit jaar werd het oude bad gesloten, omdat het te oud was geworden."
+  },
+  {
+   "v": "Welk woord in de tekst laat zien dat de wethouder een mening geeft?",
+   "o": [
+    "\"vijfentwintig\"",
+    "\"gisteren\"",
+    "\"banen\"",
+    "\"mooiste\""
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 3,
+   "u": "Oordeelwoorden.",
+   "uo": [
+    "Koos je \"vijfentwintig\"? Dan denk je dat dit woord een oordeel geeft. Het noemt de lengte van een baan in meters, en die kun je nameten.",
+    "Koos je \"gisteren\"? Dan denk je dat dit woord de mening van de wethouder toont. Het zegt wanneer iets gebeurde, en dat kun je nagaan.",
+    "Koos je \"banen\"? Dan denk je dat dit woord een mening geeft. Het noemt de banen van het bad, en die kun je tellen.",
+    "Klopt: dit woord geeft een oordeel en kun je niet meten."
+   ],
+   "uh": "Welk woord waardeert?",
+   "ctx": "Gisteren heeft de gemeente een nieuw zwembad geopend. Het zwembad heeft vijf banen van vijfentwintig meter en een peuterbad. Volgens de wethouder is het het mooiste zwembad van de regio. Veel inwoners vinden de entree te duur: een kaartje kost zes euro. Het zwembad is open van zeven uur 's ochtends tot negen uur 's avonds. Een medewerker van de krant vindt het jammer dat er geen glijbaan is. Het water wordt verwarmd tot achtentwintig graden. Eerder dit jaar werd het oude bad gesloten, omdat het te oud was geworden."
+  },
+  {
+   "v": "Waarom is \"Volgens de wethouder is het het mooiste zwembad\" geen feit?",
+   "o": [
+    "de wethouder weet er eigenlijk niets van",
+    "het is zijn mening",
+    "er staat een getal in de zin zelf",
+    "het zwembad is niet echt nieuw gebouwd"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 4,
+   "u": "\"Volgens\" + oordeel = mening.",
+   "uo": [
+    "Koos je \"de wethouder weet er eigenlijk niets van\"? Dan denk je dat de wethouder het niet weet. Dat staat nergens, het gaat erom dat het een oordeel is.",
+    "Klopt: \"volgens\" laat zien dat iemand zijn eigen oordeel geeft.",
+    "Koos je \"er staat een getal in de zin zelf\"? Dan denk je dat een getal een mening maakt. Er staat geen getal in, en het gaat om \"mooiste\".",
+    "Koos je \"het zwembad is niet echt nieuw gebouwd\"? Dan denk je dat het zwembad niet nieuw is. Dat staat niet in de zin, het gaat om het oordeel."
+   ],
+   "uh": "Wiens oordeel is het?",
+   "ctx": "Gisteren heeft de gemeente een nieuw zwembad geopend. Het zwembad heeft vijf banen van vijfentwintig meter en een peuterbad. Volgens de wethouder is het het mooiste zwembad van de regio. Veel inwoners vinden de entree te duur: een kaartje kost zes euro. Het zwembad is open van zeven uur 's ochtends tot negen uur 's avonds. Een medewerker van de krant vindt het jammer dat er geen glijbaan is. Het water wordt verwarmd tot achtentwintig graden. Eerder dit jaar werd het oude bad gesloten, omdat het te oud was geworden."
+  },
+  {
+   "v": "Welke zin laat zien dat inwoners een mening hebben?",
+   "o": [
+    "\"Een kaartje kost zes euro.\"",
+    "\"Het water wordt verwarmd tot achtentwintig graden.\"",
+    "\"Veel inwoners vinden de entree te duur.\"",
+    "\"Het oude bad is dit jaar gesloten.\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 0,
+   "u": "Vinden = mening.",
+   "uo": [
+    "Koos je \"Een kaartje kost zes euro.\"? Dan denk je dat dit een mening is. Het is een prijs die je kunt controleren, dus het is een feit.",
+    "Koos je \"Het water wordt verwarmd tot achtentwintig graden.\"? Dan denk je dat dit een mening is. Je kunt de temperatuur meten, dus het is een feit.",
+    "Klopt: \"vinden\" en \"te duur\" geven een oordeel.",
+    "Koos je \"Het oude bad is dit jaar gesloten.\"? Dan denk je dat dit een mening is. Je kunt de sluiting nagaan, dus het is een feit."
+   ],
+   "uh": "Wie vindt iets?",
+   "ctx": "Gisteren heeft de gemeente een nieuw zwembad geopend. Het zwembad heeft vijf banen van vijfentwintig meter en een peuterbad. Volgens de wethouder is het het mooiste zwembad van de regio. Veel inwoners vinden de entree te duur: een kaartje kost zes euro. Het zwembad is open van zeven uur 's ochtends tot negen uur 's avonds. Een medewerker van de krant vindt het jammer dat er geen glijbaan is. Het water wordt verwarmd tot achtentwintig graden. Eerder dit jaar werd het oude bad gesloten, omdat het te oud was geworden."
+  },
+  {
+   "v": "Welke zin uit de filmrecensie is een mening?",
+   "o": [
+    "\"Het is volgens mij de beste film van dit jaar.\"",
+    "\"De film duurt honderdtien minuten.\"",
+    "\"De film speelt zich af in Spanje.\"",
+    "\"De film is door een Nederlandse regisseur gemaakt.\""
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 2,
+   "u": "\"Volgens mij\" = mening.",
+   "uo": [
+    "Klopt: \"volgens mij\" en \"de beste\" zijn kenmerken van een oordeel.",
+    "Koos je \"De film duurt honderdtien minuten.\"? Dan denk je dat dit een mening is. De duur kun je meten, dus het is een feit.",
+    "Koos je \"De film speelt zich af in Spanje.\"? Dan denk je dat dit een mening is. Je kunt de plaats nagaan, dus het is een feit.",
+    "Koos je \"De film is door een Nederlandse regisseur gemaakt.\"? Dan denk je dat dit een mening is. Je kunt de regisseur opzoeken, dus het is een feit."
+   ],
+   "uh": "Wie zegt het?",
+   "ctx": "Ik ben gisteren naar de film De Grote Race geweest. De film duurt honderdtien minuten en speelt zich af in Spanje. Het is volgens mij de beste film van dit jaar, want de rennende hond is hilarisch. De hoofdrol wordt gespeeld door een jonge actrice. Het verhaal is wel een beetje saai in het midden. De bioscoop was bijna vol en veel mensen lachten hardop. De film is gemaakt door een Nederlandse regisseur. Na afloop heb ik met mijn vrienden pizza gegeten. Ik raad iedereen aan om te gaan, want zo'n goede komedie zie je niet vaak."
+  },
+  {
+   "v": "Welke zin in de recensie is een feit over het publiek?",
+   "o": [
+    "\"De bioscoop was bijna vol.\"",
+    "\"Het verhaal is saai in het midden.\"",
+    "\"De rennende hond is hilarisch.\"",
+    "\"Zo'n goede komedie zie je niet vaak.\""
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 1,
+   "u": "Tellen = feit.",
+   "uo": [
+    "Klopt: je kunt het aantal bezoekers tellen of navragen.",
+    "Koos je \"Het verhaal is saai in het midden.\"? Dan denk je dat dit een feit is. Saai is een oordeel, dus een mening.",
+    "Koos je \"De rennende hond is hilarisch.\"? Dan denk je dat dit een feit is. Hilarisch is een oordeel, dus een mening.",
+    "Koos je \"Zo'n goede komedie zie je niet vaak.\"? Dan denk je dat dit een feit is. Goede is een oordeel, dus een mening."
+   ],
+   "uh": "Wat kun je tellen?",
+   "ctx": "Ik ben gisteren naar de film De Grote Race geweest. De film duurt honderdtien minuten en speelt zich af in Spanje. Het is volgens mij de beste film van dit jaar, want de rennende hond is hilarisch. De hoofdrol wordt gespeeld door een jonge actrice. Het verhaal is wel een beetje saai in het midden. De bioscoop was bijna vol en veel mensen lachten hardop. De film is gemaakt door een Nederlandse regisseur. Na afloop heb ik met mijn vrienden pizza gegeten. Ik raad iedereen aan om te gaan, want zo'n goede komedie zie je niet vaak."
+  },
+  {
+   "v": "Welk woord in de recensie geeft een overdrijving aan?",
+   "o": [
+    "\"film\"",
+    "\"Spanje\"",
+    "\"hilarisch\"",
+    "\"honderdtien\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 3,
+   "u": "Sterk woord = overdrijving.",
+   "uo": [
+    "Koos je \"film\"? Dan denk je dat dit woord overdrijft. Het noemt gewoon waar de tekst over gaat, zonder iets groter te maken.",
+    "Koos je \"Spanje\"? Dan denk je dat dit woord een overdrijving is. Het is de naam van een land, en dat kun je op de kaart vinden.",
+    "Klopt: het woord maakt iets grappiger dan gewoon en is dus een sterke overdrijving.",
+    "Koos je \"honderdtien\"? Dan denk je dat dit woord te sterk is. Het geeft de speelduur in minuten aan, en die kun je nameten."
+   ],
+   "uh": "Welk woord gaat ver?",
+   "ctx": "Ik ben gisteren naar de film De Grote Race geweest. De film duurt honderdtien minuten en speelt zich af in Spanje. Het is volgens mij de beste film van dit jaar, want de rennende hond is hilarisch. De hoofdrol wordt gespeeld door een jonge actrice. Het verhaal is wel een beetje saai in het midden. De bioscoop was bijna vol en veel mensen lachten hardop. De film is gemaakt door een Nederlandse regisseur. Na afloop heb ik met mijn vrienden pizza gegeten. Ik raad iedereen aan om te gaan, want zo'n goede komedie zie je niet vaak."
+  },
+  {
+   "v": "Welke zin in de advertentie is een feit?",
+   "o": [
+    "\"Er bestaat geen betere schoen om in te hardlopen.\"",
+    "\"De schoen weegt tweehonderd gram.\"",
+    "\"Dit wil je niet missen!\"",
+    "\"Je voeten verdienen het beste.\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 0,
+   "u": "Weegbaar = feit.",
+   "uo": [
+    "Koos je \"Er bestaat geen betere schoen om in te hardlopen.\"? Dan denk je dat dit een feit is. Het is een mening van de adverteerder, en je kunt niet bewijzen dat er geen betere schoen is.",
+    "Klopt: je kunt het gewicht van de schoen nameten op een weegschaal.",
+    "Koos je \"Dit wil je niet missen!\"? Dan denk je dat dit een feit is. Het is een aansporing, en geen controleerbare mededeling.",
+    "Koos je \"Je voeten verdienen het beste.\"? Dan denk je dat dit een feit is. Het is een oordeel, dus een mening."
+   ],
+   "uh": "Wat kun je meten?",
+   "ctx": "De nieuwe sportschoen van Fleet is er! De schoen weegt maar tweehonderd gram en is verkrijgbaar in maat 36 tot en met 47. Er bestaat geen betere schoen om in te hardlopen. De schoen heeft schuim in de zool voor extra demping en kost negentig euro. Duizenden hardlopers zijn al blij met hun Fleet. Bestel nu en krijg gratis sokken, want je voeten verdienen het beste. De bovenkant van de schoen is van stof. Vanaf volgende week ligt de schoen in alle sportwinkels in het land. Dit wil je niet missen!"
+  },
+  {
+   "v": "Waarom is \"Er bestaat geen betere schoen\" geen feit?",
+   "o": [
+    "omdat het een getal bevat en een datum",
+    "omdat het een zin met een vraag erin is",
+    "omdat de schoen echt niet bestaat",
+    "je kunt het niet bewijzen"
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 4,
+   "u": "Het beste = overdrijving.",
+   "uo": [
+    "Koos je \"omdat het een getal bevat en een datum\"? Dan denk je dat dit een getal bevat. Er staat geen getal in, dus dat klopt niet.",
+    "Koos je \"omdat het een zin met een vraag erin is\"? Dan denk je dat dit een vraag is. Het is een mededeling, dus dat klopt niet.",
+    "Koos je \"omdat de schoen echt niet bestaat\"? Dan denk je dat de schoen niet bestaat. Dat staat niet in de zin, het gaat om \"geen betere\".",
+    "Klopt: het is een overdrijving, bedoeld om te verkopen."
+   ],
+   "uh": "Is het te bewijzen?",
+   "ctx": "De nieuwe sportschoen van Fleet is er! De schoen weegt maar tweehonderd gram en is verkrijgbaar in maat 36 tot en met 47. Er bestaat geen betere schoen om in te hardlopen. De schoen heeft schuim in de zool voor extra demping en kost negentig euro. Duizenden hardlopers zijn al blij met hun Fleet. Bestel nu en krijg gratis sokken, want je voeten verdienen het beste. De bovenkant van de schoen is van stof. Vanaf volgende week ligt de schoen in alle sportwinkels in het land. Dit wil je niet missen!"
+  },
+  {
+   "v": "Welke bedoeling heeft de schrijver met dit mengsel van feiten en meningen?",
+   "o": [
+    "de lezer alleen informeren over schoenen",
+    "de lezer laten kopen",
+    "de lezer laten lachen om schoenen",
+    "de lezer leren hardlopen met schoenen"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 1,
+   "u": "Reclame = overtuigen.",
+   "uo": [
+    "Koos je \"de lezer alleen informeren over schoenen\"? Dan denk je dat de schrijver alleen informeert. Er staan ook oordelen en een oproep, dus hij wil meer dan informeren.",
+    "Klopt: reclame gebruikt feiten én meningen om te verkopen.",
+    "Koos je \"de lezer laten lachen om schoenen\"? Dan denk je dat de tekst grappig is. Er staat geen humor in, het gaat om kopen.",
+    "Koos je \"de lezer leren hardlopen met schoenen\"? Dan denk je dat de tekst hardlopen uitlegt. Er staan geen stappen in, het gaat om kopen."
+   ],
+   "uh": "Wie wil iets verkopen?",
+   "ctx": "De nieuwe sportschoen van Fleet is er! De schoen weegt maar tweehonderd gram en is verkrijgbaar in maat 36 tot en met 47. Er bestaat geen betere schoen om in te hardlopen. De schoen heeft schuim in de zool voor extra demping en kost negentig euro. Duizenden hardlopers zijn al blij met hun Fleet. Bestel nu en krijg gratis sokken, want je voeten verdienen het beste. De bovenkant van de schoen is van stof. Vanaf volgende week ligt de schoen in alle sportwinkels in het land. Dit wil je niet missen!"
+  },
+  {
+   "v": "Hoe kun je controleren dat het zwembad vijf banen heeft?",
+   "o": [
+    "bij de gemeente nagaan",
+    "aan de wethouder vragen of hij het mooi vindt",
+    "het aan één inwoner vragen die het fijn vindt",
+    "kijken of de krant er mooi over schrijft"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 4,
+   "u": "Controleer met een bron of telling.",
+   "uo": [
+    "Klopt: een betrouwbare bron of een eigen telling bewijst het.",
+    "Koos je \"aan de wethouder vragen of hij het mooi vindt\"? Dan denk je dat de mening van de wethouder een feit bevestigt. Een mening bewijst niets, dus het helpt niet.",
+    "Koos je \"het aan één inwoner vragen die het fijn vindt\"? Dan denk je dat de mening van één inwoner genoeg is. Een mening zegt niets over het aantal, dus het helpt niet.",
+    "Koos je \"kijken of de krant er mooi over schrijft\"? Dan denk je dat de toon van de krant bewijst. Een toon zegt niets over het aantal, dus het helpt niet."
+   ],
+   "uh": "Waar vind je het feit?",
+   "ctx": "Gisteren heeft de gemeente een nieuw zwembad geopend. Het zwembad heeft vijf banen van vijfentwintig meter en een peuterbad. Volgens de wethouder is het het mooiste zwembad van de regio. Veel inwoners vinden de entree te duur: een kaartje kost zes euro. Het zwembad is open van zeven uur 's ochtends tot negen uur 's avonds. Een medewerker van de krant vindt het jammer dat er geen glijbaan is. Het water wordt verwarmd tot achtentwintig graden. Eerder dit jaar werd het oude bad gesloten, omdat het te oud was geworden."
+  },
+  {
+   "v": "Welke zin bevat een feit én een mening?",
+   "o": [
+    "\"Het zwembad heeft vijf banen en een peuterbad erbij.\"",
+    "\"Het is volgens de wethouder het mooiste zwembad van allemaal.\"",
+    "\"De medewerker vindt het jammer dat er geen glijbaan is.\"",
+    "\"Veel inwoners vinden de entree te duur: zes euro.\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 0,
+   "u": "Zoek een getal en een oordeel.",
+   "uo": [
+    "Koos je \"Het zwembad heeft vijf banen en een peuterbad erbij.\"? Dan denk je dat deze zin een mening bevat. Er staan alleen feiten in, zoals het aantal banen.",
+    "Koos je \"Het is volgens de wethouder het mooiste zwembad van...\"? Dan denk je dat deze zin een feit bevat. Er staat alleen een oordeel, en geen controleerbaar gegeven.",
+    "Koos je \"De medewerker vindt het jammer dat er geen glijbaan...\"? Dan denk je dat deze zin een feit bevat. Het is alleen een oordeel over de glijbaan, en niet controleerbaar.",
+    "Klopt: de prijs is een feit, \"te duur\" is een oordeel."
+   ],
+   "uh": "Wat is meetbaar en wat niet?",
+   "ctx": "Gisteren heeft de gemeente een nieuw zwembad geopend. Het zwembad heeft vijf banen van vijfentwintig meter en een peuterbad. Volgens de wethouder is het het mooiste zwembad van de regio. Veel inwoners vinden de entree te duur: een kaartje kost zes euro. Het zwembad is open van zeven uur 's ochtends tot negen uur 's avonds. Een medewerker van de krant vindt het jammer dat er geen glijbaan is. Het water wordt verwarmd tot achtentwintig graden. Eerder dit jaar werd het oude bad gesloten, omdat het te oud was geworden."
+  },
+  {
+   "v": "Welke combinatie zie je in \"Ik raad iedereen aan, want zo'n goede komedie zie je niet vaak\"?",
+   "o": [
+    "alleen een feit met een getal erin",
+    "een feit met een duidelijke bron",
+    "een advies met een oordeel",
+    "alleen een tijdsaanduiding zonder meer"
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 1,
+   "u": "Oproep met oordeel.",
+   "uo": [
+    "Koos je \"alleen een feit met een getal erin\"? Dan denk je dat er een meetbaar gegeven in de zin zit. Er staat geen getal of cijfer in, en de reden is een oordeel.",
+    "Koos je \"een feit met een duidelijke bron\"? Dan denk je dat de schrijver een bron noemt. Hij noemt niemand en geen onderzoek, dus er is geen controleerbare grond.",
+    "Klopt: de schrijver geeft een advies en motiveert het met een oordeel.",
+    "Koos je \"alleen een tijdsaanduiding zonder meer\"? Dan denk je dat de zin alleen een moment noemt. De zin gaat over het advies om te gaan, en het oordeel over de film."
+   ],
+   "uh": "Wat zegt de zin?",
+   "ctx": "Ik ben gisteren naar de film De Grote Race geweest. De film duurt honderdtien minuten en speelt zich af in Spanje. Het is volgens mij de beste film van dit jaar, want de rennende hond is hilarisch. De hoofdrol wordt gespeeld door een jonge actrice. Het verhaal is wel een beetje saai in het midden. De bioscoop was bijna vol en veel mensen lachten hardop. De film is gemaakt door een Nederlandse regisseur. Na afloop heb ik met mijn vrienden pizza gegeten. Ik raad iedereen aan om te gaan, want zo'n goede komedie zie je niet vaak."
+  },
+  {
+   "v": "Hoe herschrijf je \"Er bestaat geen betere schoen\" zodat het een feit wordt?",
+   "o": [
+    "\"Dit is echt de beste schoen ooit.\"",
+    "\"Iedereen vindt de schoen geweldig.\"",
+    "\"De schoen weegt tweehonderd gram.\"",
+    "\"Je zult nooit een betere schoen vinden.\""
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 2,
+   "u": "Meetbare uitspraak.",
+   "uo": [
+    "Koos je \"Dit is echt de beste schoen ooit.\"? Dan denk je dat dit een feit is. Het is nog steeds een beoordeling van de schoen, alleen met andere woorden gezegd.",
+    "Koos je \"Iedereen vindt de schoen geweldig.\"? Dan denk je dat dit een feit is. Het is een groot woord als iedereen, en dat kan niemand nagaan.",
+    "Klopt: een gewicht in grammen is te controleren met een weegschaal.",
+    "Koos je \"Je zult nooit een betere schoen vinden.\"? Dan denk je dat dit een feit is. Het zegt iets over de toekomst met het woord nooit, en dat kun je niet bewijzen."
+   ],
+   "uh": "Wat kun je wegen?",
+   "ctx": "De nieuwe sportschoen van Fleet is er! De schoen weegt maar tweehonderd gram en is verkrijgbaar in maat 36 tot en met 47. Er bestaat geen betere schoen om in te hardlopen. De schoen heeft schuim in de zool voor extra demping en kost negentig euro. Duizenden hardlopers zijn al blij met hun Fleet. Bestel nu en krijg gratis sokken, want je voeten verdienen het beste. De bovenkant van de schoen is van stof. Vanaf volgende week ligt de schoen in alle sportwinkels in het land. Dit wil je niet missen!"
+  },
+  {
+   "v": "Welk signaal in de zin \"Ik vind de film saai in het midden\" laat een mening zien?",
+   "o": [
+    "\"de film\" en \"het midden\"",
+    "\"in\" en \"het\"",
+    "\"midden\" alleen",
+    "\"Ik vind\" en \"saai\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 3,
+   "u": "Ik vind en saai.",
+   "uo": [
+    "Koos je \"de film en het midden\"? Dan denk je dat deze woorden de mening tonen. Ze noemen de film en een plaats, maar ze oordelen niet.",
+    "Koos je \"in en het\"? Dan denk je dat deze woorden de mening tonen. Ze zijn alleen grammatica in de zin, en hebben geen betekenis als oordeel.",
+    "Koos je \"midden alleen\"? Dan denk je dat alleen dit woord de mening toont. Het geeft de plek in het verhaal aan, maar zegt nog niets over de smaak.",
+    "Klopt: \"ik vind\" geeft een eigen mening en \"saai\" is een oordeel."
+   ],
+   "uh": "Welke woorden oordelen?",
+   "ctx": "Ik ben gisteren naar de film De Grote Race geweest. De film duurt honderdtien minuten en speelt zich af in Spanje. Het is volgens mij de beste film van dit jaar, want de rennende hond is hilarisch. De hoofdrol wordt gespeeld door een jonge actrice. Het verhaal is wel een beetje saai in het midden. De bioscoop was bijna vol en veel mensen lachten hardop. De film is gemaakt door een Nederlandse regisseur. Na afloop heb ik met mijn vrienden pizza gegeten. Ik raad iedereen aan om te gaan, want zo'n goede komedie zie je niet vaak."
+  },
+  {
+   "v": "Waarom is een advertentie niet altijd betrouwbaar?",
+   "o": [
+    "de maker wil verkopen",
+    "een advertentie is altijd helemaal gelogen",
+    "een advertentie heeft nooit feiten",
+    "een advertentie is te kort om waar te zijn"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 4,
+   "u": "Reclame wil verkopen.",
+   "uo": [
+    "Klopt: een verkoper laat zijn product mooier lijken dan het is.",
+    "Koos je \"een advertentie is altijd helemaal gelogen\"? Dan denk je dat een advertentie altijd liegt. Dat klopt niet, maar controleer de feiten wel.",
+    "Koos je \"een advertentie heeft nooit feiten\"? Dan denk je dat een advertentie alleen meningen heeft. Er staan ook feiten in, zoals het gewicht en de prijs.",
+    "Koos je \"een advertentie is te kort om waar te zijn\"? Dan denk je dat de lengte telt. Een korte tekst kan ook waar zijn, het gaat om het doel van de maker."
+   ],
+   "uh": "Wie maakt het?",
+   "ctx": "De nieuwe sportschoen van Fleet is er! De schoen weegt maar tweehonderd gram en is verkrijgbaar in maat 36 tot en met 47. Er bestaat geen betere schoen om in te hardlopen. De schoen heeft schuim in de zool voor extra demping en kost negentig euro. Duizenden hardlopers zijn al blij met hun Fleet. Bestel nu en krijg gratis sokken, want je voeten verdienen het beste. De bovenkant van de schoen is van stof. Vanaf volgende week ligt de schoen in alle sportwinkels in het land. Dit wil je niet missen!"
+  },
+  {
+   "v": "Hoe maak je een nieuwsbericht betrouwbaarder?",
+   "o": [
+    "met meer grappen en meer overdrijving",
+    "met feiten en bronnen",
+    "met alleen meningen van de schrijver erin",
+    "met een zo kort mogelijke tekst"
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 4,
+   "u": "Feiten en bronnen.",
+   "uo": [
+    "Koos je \"met meer grappen en meer overdrijving\"? Dan denk je dat meer overdrijving helpt. Het maakt het bericht juist minder betrouwbaar, omdat de feiten verdwijnen.",
+    "Klopt: met feiten en bronnen kan de lezer zelf nagaan of het klopt.",
+    "Koos je \"met alleen meningen van de schrijver erin\"? Dan denk je dat alleen meningen genoeg zijn. Meningen zijn niet te controleren, en maken het minder betrouwbaar.",
+    "Koos je \"met een zo kort mogelijke tekst\"? Dan denk je dat korter altijd beter is. Een kort bericht kan ook fout zijn, het gaat om controleerbare feiten."
+   ],
+   "uh": "Wat kan de lezer nagaan?",
+   "ctx": "Gisteren heeft de gemeente een nieuw zwembad geopend. Het zwembad heeft vijf banen van vijfentwintig meter en een peuterbad. Volgens de wethouder is het het mooiste zwembad van de regio. Veel inwoners vinden de entree te duur: een kaartje kost zes euro. Het zwembad is open van zeven uur 's ochtends tot negen uur 's avonds. Een medewerker van de krant vindt het jammer dat er geen glijbaan is. Het water wordt verwarmd tot achtentwintig graden. Eerder dit jaar werd het oude bad gesloten, omdat het te oud was geworden."
+  },
+  {
+   "v": "Welk woord in de advertentie laat de mening van de schrijver zien?",
+   "o": [
+    "\"tweehonderd\"",
+    "\"sportwinkels\"",
+    "\"maat\"",
+    "\"beste\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 0,
+   "u": "Beste = oordeel.",
+   "uo": [
+    "Koos je \"tweehonderd\"? Dan denk je dat dit woord een mening toont. Het geeft het gewicht aan en dat kun je wegen, dus het is een feit.",
+    "Koos je \"sportwinkels\"? Dan denk je dat dit woord een oordeel geeft. Het wijst op winkels waar de schoen komt, en dat kun je nagaan.",
+    "Koos je \"maat\"? Dan denk je dat dit woord een oordeel geeft. Het is een afmeting van de schoen, en die kun je meten.",
+    "Klopt: \"beste\" is een oordeel dat niet te bewijzen is."
+   ],
+   "uh": "Welk woord waardeert?",
+   "ctx": "De nieuwe sportschoen van Fleet is er! De schoen weegt maar tweehonderd gram en is verkrijgbaar in maat 36 tot en met 47. Er bestaat geen betere schoen om in te hardlopen. De schoen heeft schuim in de zool voor extra demping en kost negentig euro. Duizenden hardlopers zijn al blij met hun Fleet. Bestel nu en krijg gratis sokken, want je voeten verdienen het beste. De bovenkant van de schoen is van stof. Vanaf volgende week ligt de schoen in alle sportwinkels in het land. Dit wil je niet missen!"
+  },
+  {
+   "v": "Hoe controleer je dat de film honderdtien minuten duurt?",
+   "o": [
+    "kijk op de website van de bioscoop",
+    "vraag aan de schrijver of hij de film leuk vond",
+    "tel hoeveel mensen er lachten",
+    "lees nog een recensie vol meningen"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 4,
+   "u": "Controleer met een bron.",
+   "uo": [
+    "Klopt: een betrouwbare bron geeft de speelduur.",
+    "Koos je \"vraag aan de schrijver of hij de film leuk vond\"? Dan denk je dat de mening van de schrijver de duur bewijst. Een mening zegt niets over minuten, dus het helpt niet.",
+    "Koos je \"tel hoeveel mensen er lachten\"? Dan denk je dat het lachen de duur laat zien. Dat is iets heel anders, en het zegt niets over de speelduur.",
+    "Koos je \"lees nog een recensie vol meningen\"? Dan denk je dat een tweede mening helpt. Een mening is niet te controleren, dus het bewijst de duur niet."
+   ],
+   "uh": "Waar vind je de duur?",
+   "ctx": "Ik ben gisteren naar de film De Grote Race geweest. De film duurt honderdtien minuten en speelt zich af in Spanje. Het is volgens mij de beste film van dit jaar, want de rennende hond is hilarisch. De hoofdrol wordt gespeeld door een jonge actrice. Het verhaal is wel een beetje saai in het midden. De bioscoop was bijna vol en veel mensen lachten hardop. De film is gemaakt door een Nederlandse regisseur. Na afloop heb ik met mijn vrienden pizza gegeten. Ik raad iedereen aan om te gaan, want zo'n goede komedie zie je niet vaak."
+  }
+ ],
+ "oe": [
+  {
+   "bron": "Examenstijl",
+   "ctx": "Gisteren heeft de gemeente een nieuw zwembad geopend. Het zwembad heeft vijf banen van vijfentwintig meter en een peuterbad. Volgens de wethouder is het het mooiste zwembad van de regio. Veel inwoners vinden de entree te duur: een kaartje kost zes euro. Het zwembad is open van zeven uur 's ochtends tot negen uur 's avonds. Een medewerker van de krant vindt het jammer dat er geen glijbaan is. Het water wordt verwarmd tot achtentwintig graden. Eerder dit jaar werd het oude bad gesloten, omdat het te oud was geworden.",
+   "v": "Noem twee feiten en één mening uit deze tekst.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Feiten: vijf banen, entree zes euro of open van zeven tot negen uur (2p). Mening: het mooiste zwembad of te duur of jammer dat er geen glijbaan is (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Ik ben gisteren naar de film De Grote Race geweest. De film duurt honderdtien minuten en speelt zich af in Spanje. Het is volgens mij de beste film van dit jaar, want de rennende hond is hilarisch. De hoofdrol wordt gespeeld door een jonge actrice. Het verhaal is wel een beetje saai in het midden. De bioscoop was bijna vol en veel mensen lachten hardop. De film is gemaakt door een Nederlandse regisseur. Na afloop heb ik met mijn vrienden pizza gegeten. Ik raad iedereen aan om te gaan, want zo'n goede komedie zie je niet vaak.",
+   "v": "Welke zinnen in de recensie zijn feiten en welke zijn meningen? Noem er van elke soort één.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Feit: de film duurt honderdtien minuten of speelt zich af in Spanje (1p). Mening: de beste film van dit jaar of de hond is hilarisch (2p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "De nieuwe sportschoen van Fleet is er! De schoen weegt maar tweehonderd gram en is verkrijgbaar in maat 36 tot en met 47. Er bestaat geen betere schoen om in te hardlopen. De schoen heeft schuim in de zool voor extra demping en kost negentig euro. Duizenden hardlopers zijn al blij met hun Fleet. Bestel nu en krijg gratis sokken, want je voeten verdienen het beste. De bovenkant van de schoen is van stof. Vanaf volgende week ligt de schoen in alle sportwinkels in het land. Dit wil je niet missen!",
+   "v": "Welke twee overdrijvingen staan in de advertentie?",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "\"Er bestaat geen betere schoen\" (1p) en \"je voeten verdienen het beste\" of \"dit wil je niet missen\" (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Gisteren heeft de gemeente een nieuw zwembad geopend. Het zwembad heeft vijf banen van vijfentwintig meter en een peuterbad. Volgens de wethouder is het het mooiste zwembad van de regio. Veel inwoners vinden de entree te duur: een kaartje kost zes euro. Het zwembad is open van zeven uur 's ochtends tot negen uur 's avonds. Een medewerker van de krant vindt het jammer dat er geen glijbaan is. Het water wordt verwarmd tot achtentwintig graden. Eerder dit jaar werd het oude bad gesloten, omdat het te oud was geworden.",
+   "v": "Hoe kun je controleren dat de entree zes euro kost?",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Bij het zwembad of de gemeente nagaan, of op hun website kijken (2p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "De nieuwe sportschoen van Fleet is er! De schoen weegt maar tweehonderd gram en is verkrijgbaar in maat 36 tot en met 47. Er bestaat geen betere schoen om in te hardlopen. De schoen heeft schuim in de zool voor extra demping en kost negentig euro. Duizenden hardlopers zijn al blij met hun Fleet. Bestel nu en krijg gratis sokken, want je voeten verdienen het beste. De bovenkant van de schoen is van stof. Vanaf volgende week ligt de schoen in alle sportwinkels in het land. Dit wil je niet missen!",
+   "v": "Waarom is een advertentie minder betrouwbaar dan een nieuwsbericht?",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "De maker wil iets verkopen (1p) en gebruikt overdrijving om het product mooi te laten lijken (2p)."
+  }
+ ]
+}

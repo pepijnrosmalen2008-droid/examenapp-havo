@@ -334,6 +334,27 @@ var VAKKEN_VMBO = [
       "nOe": 5,
       "nBeg": 12,
       "hasSam": true
+     },
+     {
+      "id": "C4",
+      "lo": "nl.C.4",
+      "gs": 2,
+      "naam": "Feiten en meningen in een tekst",
+      "beschrijving": "Je onderscheidt in een tekst feiten van meningen, herkent overdrijving en controleert of informatie betrouwbaar is.",
+      "ceStatus": "CE+SE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Feit of mening",
+       "Signaalwoorden voor een mening",
+       "Overdrijving herkennen",
+       "Feit en mening in één zin",
+       "Controleren en bronnen"
+      ],
+      "nSv": 26,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
      }
     ]
    },
