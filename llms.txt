@@ -5,7 +5,7 @@
 Volledige beschrijving (functies, inhoud per niveau, prijs, wat Slagio niet is): https://slagio.nl/llms-full.txt
 
 ## In het kort
-- 12 vakken havo, 16 vakken vwo, 12 vakken vmbo; 23.341 oefenvragen en 4.346 begrippen.
+- 12 vakken havo, 16 vakken vwo, 12 vakken vmbo; 23.367 oefenvragen en 4.346 begrippen.
 - Adaptief oefenen: na een fout een vraag over hetzelfde onderwerp, een niveau makkelijker; uitleg bij elk fout antwoord.
 - Foutenboek en herhalen met gespreide herhaling, beheersing per leerdoel, studieplan tot het examen.
 - Examens met klok, proefexamens in examenstijl met modelantwoord en puntenverdeling, archief met officiële oude examens.
@@ -138,6 +138,7 @@ Volledige beschrijving (functies, inhoud per niveau, prijs, wat Slagio niet is):
 - [Reageren op vragen en feedback (Nederlands VMBO)](https://slagio.nl/leren/vmbo/nederlands/reageren-op-vragen-en-feedback.html): Je beantwoordt vragen van je publiek, zegt eerlijk als je iets niet weet, geeft en ontvangt feedback met een top en een tip en kijkt terug op je eigen…
 - [Tekstsoorten en schrijfdoel herkennen (Nederlands VMBO)](https://slagio.nl/leren/vmbo/nederlands/tekstsoorten-en-schrijfdoel-herkennen.html): Je leest een tekst en bepaalt of de schrijver wil informeren, overtuigen, amuseren of activeren, en waaraan je dat ziet.
 - [Tekststructuur en signaalwoorden (Nederlands VMBO)](https://slagio.nl/leren/vmbo/nederlands/tekststructuur-en-signaalwoorden.html): Je ziet hoe een tekst is opgebouwd uit alinea's, welke structuur de schrijver kiest en welke signaalwoorden het verband tussen zinnen laten zien.
+- [Hoofdgedachte en deelonderwerpen (Nederlands VMBO)](https://slagio.nl/leren/vmbo/nederlands/hoofdgedachte-en-deelonderwerpen.html): Je zoekt het onderwerp, de hoofdgedachte en de deelonderwerpen van een tekst, kiest tussenkopjes en vat een tekst samen in één zin.
 
 ## Examenvragen in examenstijl (met modelantwoord en puntenverdeling)
 - [Examenvragen Nederlands HAVO](https://slagio.nl/leren/havo/nederlands/examenvragen.html): 11 vragen uit een Slagio-proefexamen

@@ -9914,6 +9914,667 @@ var VAKKEN_VMBO = [
         "u": "Het slot begint met \"Nu weet ik hoe het moet\" (1p). De schrijver durft de volgende keer zelf te beginnen (2p)."
        }
       ]
+     },
+     {
+      "id": "C3",
+      "lo": "nl.C.3",
+      "gs": 2,
+      "naam": "Hoofdgedachte en deelonderwerpen",
+      "beschrijving": "Je zoekt het onderwerp, de hoofdgedachte en de deelonderwerpen van een tekst, kiest tussenkopjes en vat een tekst samen in één zin.",
+      "ceStatus": "CE+SE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Onderwerp van een tekst",
+       "Hoofdgedachte",
+       "Deelonderwerpen per alinea",
+       "Tussenkopjes",
+       "Samenvatten in één zin"
+      ],
+      "sam": "Het onderwerp is waar een tekst over gaat. De hoofdgedachte is wat de schrijver daarover wil zeggen, vaak in de inleiding of het slot. Elke alinea heeft een deelonderwerp, dat je kunt aanduiden met een tussenkopje. Een samenvatting in één zin noemt de kern en laat details weg. Je vindt de hoofdgedachte door te kijken wat steeds terugkomt en wat het slot zegt.",
+      "begrippen": [
+       {
+        "t": "Onderwerp",
+        "d": "Waar de tekst over gaat."
+       },
+       {
+        "t": "Hoofdgedachte",
+        "d": "De belangrijkste boodschap van de schrijver."
+       },
+       {
+        "t": "Deelonderwerp",
+        "d": "Het onderwerp van één alinea."
+       },
+       {
+        "t": "Alinea",
+        "d": "Een stuk tekst over één idee."
+       },
+       {
+        "t": "Kernzin",
+        "d": "De zin met het hoofdidee van een alinea."
+       },
+       {
+        "t": "Tussenkopje",
+        "d": "Een korte kop boven een alinea."
+       },
+       {
+        "t": "Samenvatting",
+        "d": "Een korte weergave van de kern."
+       },
+       {
+        "t": "Inleiding",
+        "d": "Het begin van een tekst."
+       },
+       {
+        "t": "Slot",
+        "d": "Het einde van een tekst."
+       },
+       {
+        "t": "Detail",
+        "d": "Een klein onderdeel dat niet bij de kern hoort."
+       },
+       {
+        "t": "Conclusie",
+        "d": "De afsluitende zin die samenvat."
+       },
+       {
+        "t": "Titel",
+        "d": "De naam bovenaan een tekst."
+       }
+      ],
+      "sv": [
+       {
+        "v": "Waar gaat een tekst over?",
+        "o": [
+         "over de schrijver van de hele tekst",
+         "over het onderwerp",
+         "over het aantal alinea's in de tekst",
+         "over de titel boven de tekst"
+        ],
+        "c": 1,
+        "d": 1,
+        "s": 0,
+        "u": "Onderwerp = waar het over gaat.",
+        "uo": [
+         "Koos je \"over de schrijver van de hele tekst\"? Dan denk je dat de tekst over de schrijver gaat. De schrijver schrijft de tekst, maar het onderwerp is waar hij over schrijft.",
+         "Klopt: het onderwerp is waar de tekst over gaat, bijvoorbeeld zwerfafval.",
+         "Koos je \"over het aantal alinea's in de tekst\"? Dan denk je dat het aantal alinea's het onderwerp is. Dat zegt alleen iets over de lengte, niet over de inhoud.",
+         "Koos je \"over de titel boven de tekst\"? Dan denk je dat de titel hetzelfde is als het onderwerp. Een titel kan kort zijn, maar het onderwerp is wat de tekst behandelt."
+        ],
+        "uh": "Waar gaat het over?"
+       },
+       {
+        "v": "Wat is de hoofdgedachte van een tekst?",
+        "o": [
+         "een leuk detail uit de tekst",
+         "de eerste zin van elke alinea",
+         "het aantal woorden in de tekst",
+         "de kernboodschap"
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 1,
+        "u": "Hoofdgedachte = kernboodschap.",
+        "uo": [
+         "Koos je \"een leuk detail uit de tekst\"? Dan denk je dat de hoofdgedachte een detail is. Een detail is maar een klein deel, en de hoofdgedachte is de kern van het geheel.",
+         "Koos je \"de eerste zin van elke alinea\"? Dan denk je dat de hoofdgedachte uit alle eerste zinnen bestaat. Die zinnen zijn meestal kernzinnen van alinea's, maar de hoofdgedachte geldt voor de hele tekst.",
+         "Koos je \"het aantal woorden in de tekst\"? Dan denk je dat de hoofdgedachte iets met woorden tellen te maken heeft. Dat zegt niets over de inhoud, alleen over de lengte.",
+         "Klopt: de hoofdgedachte is wat de schrijver de lezer wil meegeven."
+        ],
+        "uh": "Wat wil de schrijver zeggen?"
+       },
+       {
+        "v": "Wat is een deelonderwerp?",
+        "o": [
+         "het onderwerp van een alinea",
+         "de titel bovenaan de hele tekst",
+         "de conclusie van de tekst",
+         "een woord dat je niet kent"
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 2,
+        "u": "Deelonderwerp = per alinea.",
+        "uo": [
+         "Klopt: elke alinea behandelt een deel van het grote onderwerp.",
+         "Koos je \"de titel bovenaan de hele tekst\"? Dan denk je dat een deelonderwerp de titel is. De titel hoort bij de hele tekst, en een deelonderwerp hoort bij één alinea.",
+         "Koos je \"de conclusie van de tekst\"? Dan denk je dat een deelonderwerp de conclusie is. De conclusie sluit de hele tekst af, terwijl een deelonderwerp maar één deel behandelt.",
+         "Koos je \"een woord dat je niet kent\"? Dan denk je dat een deelonderwerp een moeilijk woord is. Een deelonderwerp gaat over inhoud, en niet over woordkennis."
+        ],
+        "uh": "Waar gaat deze alinea over?"
+       },
+       {
+        "v": "Wat doet een tussenkopje?",
+        "o": [
+         "het vervangt de hele tekst daarna",
+         "het laat zien wie de tekst schreef",
+         "het noemt het onderwerp",
+         "het geeft een grap bij de tekst"
+        ],
+        "c": 2,
+        "d": 1,
+        "s": 3,
+        "u": "Tussenkopje = onderwerp van de alinea.",
+        "uo": [
+         "Koos je \"het vervangt de hele tekst daarna\"? Dan denk je dat het kopje de tekst vervangt. Het is maar een korte aanduiding, de uitleg staat in de alinea zelf.",
+         "Koos je \"het laat zien wie de tekst schreef\"? Dan denk je dat het kopje de schrijver noemt. Een kopje noemt het onderwerp, en niet de maker.",
+         "Klopt: een tussenkopje vertelt in een paar woorden waar het volgende stuk over gaat.",
+         "Koos je \"het geeft een grap bij de tekst\"? Dan denk je dat het kopje een grap is. Een kopje geeft informatie, en vermaakt niet."
+        ],
+        "uh": "Wat staat boven de alinea?"
+       },
+       {
+        "v": "Waarom vat je een tekst samen in één zin?",
+        "o": [
+         "om zoveel mogelijk details te noemen",
+         "om een eigen mening toe te voegen",
+         "om de kern kort te geven",
+         "om de tekst langer te maken"
+        ],
+        "c": 2,
+        "d": 1,
+        "s": 4,
+        "u": "Samenvatting = kern.",
+        "uo": [
+         "Koos je \"om zoveel mogelijk details te noemen\"? Dan denk je dat een samenvatting veel details bevat. Een samenvatting laat juist details weg, en geeft alleen de kern.",
+         "Koos je \"om een eigen mening toe te voegen\"? Dan denk je dat je in een samenvatting je mening geeft. Een samenvatting geeft weer wat er staat, zonder eigen mening.",
+         "Klopt: een korte samenvatting laat zien dat je de kern begrepen hebt.",
+         "Koos je \"om de tekst langer te maken\"? Dan denk je dat een samenvatting uitbreidt. Het doel is juist inkorten, zodat je de kern ziet."
+        ],
+        "uh": "Wat blijft er over?"
+       },
+       {
+        "v": "Waar staat de hoofdgedachte vaak in een tekst?",
+        "o": [
+         "in de inleiding of in het slot",
+         "alleen in het tweede woord van de tekst",
+         "nergens, de lezer moet raden",
+         "in elke zin van de tekst"
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 0,
+        "u": "Begin of slot.",
+        "uo": [
+         "Klopt: schrijvers zeggen de kern vaak aan het begin of het eind.",
+         "Koos je \"alleen in het tweede woord van de tekst\"? Dan denk je dat de hoofdgedachte in één woord zit. Het is een boodschap in een zin, en geen los woord.",
+         "Koos je \"nergens, de lezer moet raden\"? Dan denk je dat de hoofdgedachte nooit genoemd wordt. Meestal staat hij er duidelijk in, vaak in de inleiding of het slot.",
+         "Koos je \"in elke zin van de tekst\"? Dan denk je dat elke zin de hoofdgedachte bevat. Elke zin geeft maar een deel, de hoofdgedachte vat het geheel samen."
+        ],
+        "uh": "Waar zoek je?"
+       },
+       {
+        "v": "Hoe vind je het onderwerp van een tekst?",
+        "o": [
+         "door alleen de laatste zin van de tekst te lezen",
+         "door de langste alinea te kiezen",
+         "door het moeilijkste woord te zoeken",
+         "door te zien wat steeds terugkomt"
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 2,
+        "u": "Wat komt steeds terug?",
+        "uo": [
+         "Koos je \"door alleen de laatste zin van de tekst te lezen\"? Dan denk je dat de laatste zin het onderwerp geeft. Dat kan een conclusie zijn, maar het onderwerp komt in de hele tekst terug.",
+         "Koos je \"door de langste alinea te kiezen\"? Dan denk je dat de langste alinea het onderwerp geeft. Lengte zegt niets over belang, dus dat werkt niet.",
+         "Koos je \"door het moeilijkste woord te zoeken\"? Dan denk je dat het moeilijkste woord het onderwerp is. Een moeilijk woord is een detail, en niet de kern.",
+         "Klopt: het onderwerp komt in alle alinea's terug."
+        ],
+        "uh": "Wat staat er in elke alinea?"
+       },
+       {
+        "v": "Welk onderwerp heeft de tekst over het park?",
+        "o": [
+         "speeltuinen en parken",
+         "zwerfafval",
+         "egels en vogels in het park",
+         "de gemeente"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 0,
+        "u": "Wat komt in elke alinea terug?",
+        "uo": [
+         "Koos je \"speeltuinen en parken\"? Dan denk je dat het onderwerp speeltuinen is. Speeltuinen worden maar één keer genoemd, als voorbeeld van waar geld naartoe kan.",
+         "Klopt: de hele tekst gaat over afval dat op straat ligt.",
+         "Koos je \"egels en vogels in het park\"? Dan denk je dat het om dieren gaat. Dieren zijn een gevolg van afval, en niet het onderwerp van de tekst.",
+         "Koos je \"de gemeente\"? Dan denk je dat het onderwerp de gemeente is. De gemeente komt alleen voor als iemand die moet opruimen, en is dus niet het hoofdonderwerp."
+        ],
+        "uh": "Waar gaat het over?",
+        "ctx": "[1] Op straat ligt steeds meer zwerfafval. In het park liggen blikjes en verpakkingen van snoep. [2] Dat is niet alleen lelijk, maar ook slecht voor dieren: vogels en egels kunnen het afval opeten of erin vast komen te zitten. Daarnaast kost het opruimen de gemeente veel geld. Dat geld kan dan niet meer worden gebruikt voor bijvoorbeeld speeltuinen. [3] Gelukkig kun je zelf iets doen. Gooi je afval in de prullenbak en pak ook eens een zak mee om op te ruimen. Als iedereen zijn steentje bijdraagt, blijft onze buurt schoon en veilig."
+       },
+       {
+        "v": "Welk deelonderwerp heeft alinea 2?",
+        "o": [
+         "wat je zelf kunt doen",
+         "waar het afval ligt",
+         "een geschiedenis van afval",
+         "de gevolgen voor dieren en geld"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 2,
+        "u": "Deelonderwerp = kern van de alinea.",
+        "uo": [
+         "Koos je \"wat je zelf kunt doen\"? Dan denk je dat alinea 2 over oplossingen gaat. Dat staat in alinea 3, en alinea 2 noemt de gevolgen.",
+         "Koos je \"waar het afval ligt\"? Dan denk je dat alinea 2 over de plek gaat. Dat staat in alinea 1, en alinea 2 noemt de gevolgen.",
+         "Koos je \"een geschiedenis van afval\"? Dan denk je dat alinea 2 over vroeger gaat. De tekst noemt geen geschiedenis, maar de gevolgen van afval.",
+         "Klopt: de alinea noemt twee gevolgen: schade voor dieren en kosten voor de gemeente."
+        ],
+        "uh": "Wat staat er in alinea 2?",
+        "ctx": "[1] Op straat ligt steeds meer zwerfafval. In het park liggen blikjes en verpakkingen van snoep. [2] Dat is niet alleen lelijk, maar ook slecht voor dieren: vogels en egels kunnen het afval opeten of erin vast komen te zitten. Daarnaast kost het opruimen de gemeente veel geld. Dat geld kan dan niet meer worden gebruikt voor bijvoorbeeld speeltuinen. [3] Gelukkig kun je zelf iets doen. Gooi je afval in de prullenbak en pak ook eens een zak mee om op te ruimen. Als iedereen zijn steentje bijdraagt, blijft onze buurt schoon en veilig."
+       },
+       {
+        "v": "Welke hoofdgedachte heeft de tekst over zwerfafval?",
+        "o": [
+         "alleen de gemeente moet al het afval opruimen",
+         "zwerfafval is een probleem, help mee",
+         "zwerfafval is een leuk onderwerp",
+         "dieren zijn belangrijker dan mensen"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 1,
+        "u": "Probleem en oplossing.",
+        "uo": [
+         "Koos je \"alleen de gemeente moet al het afval opruimen\"? Dan denk je dat de gemeente alles doet. De tekst zegt dat iedereen kan bijdragen, en niet alleen de gemeente.",
+         "Klopt: de tekst noemt het probleem, de gevolgen en een oproep om mee te doen.",
+         "Koos je \"zwerfafval is een leuk onderwerp\"? Dan denk je dat het een grappig onderwerp is. De tekst is serieus, en noemt gevolgen.",
+         "Koos je \"dieren zijn belangrijker dan mensen\"? Dan denk je dat dieren belangrijker zijn. De tekst noemt dieren als gevolg, maar zegt niet dat ze belangrijker zijn."
+        ],
+        "uh": "Wat vindt de schrijver?",
+        "ctx": "[1] Op straat ligt steeds meer zwerfafval. In het park liggen blikjes en verpakkingen van snoep. [2] Dat is niet alleen lelijk, maar ook slecht voor dieren: vogels en egels kunnen het afval opeten of erin vast komen te zitten. Daarnaast kost het opruimen de gemeente veel geld. Dat geld kan dan niet meer worden gebruikt voor bijvoorbeeld speeltuinen. [3] Gelukkig kun je zelf iets doen. Gooi je afval in de prullenbak en pak ook eens een zak mee om op te ruimen. Als iedereen zijn steentje bijdraagt, blijft onze buurt schoon en veilig."
+       },
+       {
+        "v": "Welk tussenkopje past bij alinea 3?",
+        "o": [
+         "hoe het afval ontstaat",
+         "wat het kost voor de gemeente",
+         "wat jij kunt doen",
+         "waar het afval ligt"
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 3,
+        "u": "Tussenkopje = deelonderwerp.",
+        "uo": [
+         "Koos je \"hoe het afval ontstaat\"? Dan denk je dat alinea 3 de oorzaak uitlegt. De tekst noemt geen oorzaak, maar een oplossing.",
+         "Koos je \"wat het kost voor de gemeente\"? Dan denk je dat alinea 3 over geld gaat. Dat staat in alinea 2, alinea 3 gaat over actie.",
+         "Klopt: alinea 3 geeft adviezen die de lezer zelf kan opvolgen.",
+         "Koos je \"waar het afval ligt\"? Dan denk je dat alinea 3 de plek noemt. Dat staat in alinea 1, alinea 3 geeft een advies."
+        ],
+        "uh": "Wat staat er in alinea 3?",
+        "ctx": "[1] Op straat ligt steeds meer zwerfafval. In het park liggen blikjes en verpakkingen van snoep. [2] Dat is niet alleen lelijk, maar ook slecht voor dieren: vogels en egels kunnen het afval opeten of erin vast komen te zitten. Daarnaast kost het opruimen de gemeente veel geld. Dat geld kan dan niet meer worden gebruikt voor bijvoorbeeld speeltuinen. [3] Gelukkig kun je zelf iets doen. Gooi je afval in de prullenbak en pak ook eens een zak mee om op te ruimen. Als iedereen zijn steentje bijdraagt, blijft onze buurt schoon en veilig."
+       },
+       {
+        "v": "Welk onderwerp heeft de tekst over de scooter?",
+        "o": [
+         "sparen voor een scooter",
+         "hoe je veilig scooter rijdt",
+         "welke scooter het beste is",
+         "hoe je een bijbaan vindt"
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 0,
+        "u": "Waar gaat de tekst steeds over?",
+        "uo": [
+         "Klopt: de tekst legt uit hoe je spaart om een scooter te kopen.",
+         "Koos je \"hoe je veilig scooter rijdt\"? Dan denk je dat de tekst over veiligheid gaat. Veiligheid wordt niet genoemd, de tekst gaat over sparen.",
+         "Koos je \"welke scooter het beste is\"? Dan denk je dat het om een vergelijking gaat. De tekst vergelijkt geen scooters, hij gaat over sparen.",
+         "Koos je \"hoe je een bijbaan vindt\"? Dan denk je dat het om werk gaat. Een bijbaan komt maar even langs, en is geen onderwerp."
+        ],
+        "uh": "Wat wil de lezer?",
+        "ctx": "[1] Wil je een scooter kopen, dan moet je eerst sparen, want een scooter is duur. [2] Begin daarom met het opschrijven van je inkomsten, zoals zakgeld en geld van een bijbaan. Schrijf ook op waar je geld aan uitgeeft. Zo zie je hoeveel je overhoudt. [3] Zet elke maand een vast bedrag opzij op een spaarrekening. Heb je een doel, bijvoorbeeld honderd euro per maand, dan houd je het langer vol. Na een paar maanden zie je het bedrag groeien en dat motiveert om door te gaan. [4] Vergeet ook niet dat een scooter verzekering en benzine kost."
+       },
+       {
+        "v": "Welk deelonderwerp heeft alinea 3 hier?",
+        "o": [
+         "vast sparen en een doel stellen",
+         "inkomsten en uitgaven opschrijven en vergelijken",
+         "de kosten van verzekering en benzine erbij",
+         "waarom een scooter zo duur is voor jongeren"
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 2,
+        "u": "Welke stap noemt de alinea?",
+        "uo": [
+         "Klopt: de alinea legt uit hoe je regelmatig spaart en gemotiveerd blijft.",
+         "Koos je \"inkomsten en uitgaven opschrijven en vergelijken\"? Dan denk je dat alinea 3 over opschrijven gaat. Dat staat in alinea 2, alinea 3 gaat over sparen.",
+         "Koos je \"de kosten van verzekering en benzine erbij\"? Dan denk je dat alinea 3 over bijkomende kosten gaat. Dat staat in alinea 4, alinea 3 gaat over sparen.",
+         "Koos je \"waarom een scooter zo duur is voor jongeren\"? Dan denk je dat alinea 3 de prijs verklaart. Dat staat in alinea 1, alinea 3 gaat over sparen."
+        ],
+        "uh": "Wat staat er in alinea 3?",
+        "ctx": "[1] Wil je een scooter kopen, dan moet je eerst sparen, want een scooter is duur. [2] Begin daarom met het opschrijven van je inkomsten, zoals zakgeld en geld van een bijbaan. Schrijf ook op waar je geld aan uitgeeft. Zo zie je hoeveel je overhoudt. [3] Zet elke maand een vast bedrag opzij op een spaarrekening. Heb je een doel, bijvoorbeeld honderd euro per maand, dan houd je het langer vol. Na een paar maanden zie je het bedrag groeien en dat motiveert om door te gaan. [4] Vergeet ook niet dat een scooter verzekering en benzine kost."
+       },
+       {
+        "v": "Welke hoofdgedachte heeft de tekst over sparen?",
+        "o": [
+         "een scooter is zijn geld helemaal niet waard",
+         "sparen is altijd saai",
+         "wie een scooter wil, moet sparen",
+         "alleen rijke mensen kunnen een scooter kopen en houden"
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 1,
+        "u": "Wat moet je doen om te sparen?",
+        "uo": [
+         "Koos je \"een scooter is zijn geld helemaal niet waard\"? Dan denk je dat de tekst afraadt. Hij geeft juist advies om te sparen, dus dat is niet de boodschap.",
+         "Koos je \"sparen is altijd saai\"? Dan denk je dat de tekst sparen saai noemt. De tekst noemt motivatie, en niet saaiheid.",
+         "Klopt: de tekst geeft stappen om geld opzij te zetten voor een groot doel.",
+         "Koos je \"alleen rijke mensen kunnen een scooter kopen en...\"? Dan denk je dat de tekst alleen voor rijken is. De tekst geeft tips voor iedereen, dus dat klopt niet."
+        ],
+        "uh": "Wat is de boodschap?",
+        "ctx": "[1] Wil je een scooter kopen, dan moet je eerst sparen, want een scooter is duur. [2] Begin daarom met het opschrijven van je inkomsten, zoals zakgeld en geld van een bijbaan. Schrijf ook op waar je geld aan uitgeeft. Zo zie je hoeveel je overhoudt. [3] Zet elke maand een vast bedrag opzij op een spaarrekening. Heb je een doel, bijvoorbeeld honderd euro per maand, dan houd je het langer vol. Na een paar maanden zie je het bedrag groeien en dat motiveert om door te gaan. [4] Vergeet ook niet dat een scooter verzekering en benzine kost."
+       },
+       {
+        "v": "Hoe vat je de tekst over de scooter in één zin samen?",
+        "o": [
+         "een scooter kost veel geld, dus koop hem maar niet",
+         "spaar vast geld voor een scooter",
+         "je spaart alleen als je een bijbaan hebt",
+         "spaarrekeningen zijn handig"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 4,
+        "u": "Doel en aanpak in één zin.",
+        "uo": [
+         "Koos je \"een scooter kost veel geld, dus koop hem maar niet\"? Dan denk je dat de tekst afraadt. De tekst geeft juist een plan, dus de samenvatting klopt niet.",
+         "Klopt: dit noemt het doel en de aanpak in één zin.",
+         "Koos je \"je spaart alleen als je een bijbaan hebt\"? Dan denk je dat een bijbaan nodig is. Een bijbaan is maar een voorbeeld, en geen voorwaarde.",
+         "Koos je \"spaarrekeningen zijn handig\"? Dan denk je dat het over spaarrekeningen gaat. De spaarrekening is een middel, en de tekst gaat over het hele plan."
+        ],
+        "uh": "Wat staat er in één zin?",
+        "ctx": "[1] Wil je een scooter kopen, dan moet je eerst sparen, want een scooter is duur. [2] Begin daarom met het opschrijven van je inkomsten, zoals zakgeld en geld van een bijbaan. Schrijf ook op waar je geld aan uitgeeft. Zo zie je hoeveel je overhoudt. [3] Zet elke maand een vast bedrag opzij op een spaarrekening. Heb je een doel, bijvoorbeeld honderd euro per maand, dan houd je het langer vol. Na een paar maanden zie je het bedrag groeien en dat motiveert om door te gaan. [4] Vergeet ook niet dat een scooter verzekering en benzine kost."
+       },
+       {
+        "v": "Welk onderwerp heeft de tekst over huisdieren?",
+        "o": [
+         "allergieën bij ouders",
+         "hoe je een konijn verzorgt",
+         "het schoolgebouw",
+         "een schooldier"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 0,
+        "u": "Waar gaat de tekst steeds over?",
+        "uo": [
+         "Koos je \"allergieën bij ouders\"? Dan denk je dat het om allergie gaat. Allergie is een bezwaar, en geen onderwerp.",
+         "Koos je \"hoe je een konijn verzorgt\"? Dan denk je dat de tekst uitleg geeft over verzorging. Dat is een detail in alinea 2, en geen onderwerp.",
+         "Koos je \"het schoolgebouw\"? Dan denk je dat het over het gebouw gaat. Het gebouw komt niet voor, en het gaat om een schooldier.",
+         "Klopt: de tekst gaat over of een school een dier moet hebben."
+        ],
+        "uh": "Wat is het thema?",
+        "ctx": "[1] Veel scholen hebben geen schooldier, maar ik vind dat dit wel zou moeten. [2] Een konijn in de klas maakt leerlingen rustiger, want ze kunnen het aaien in de pauze. Bovendien leren ze verantwoordelijkheid, omdat ze het dier om de beurt moeten verzorgen. Een konijn is bovendien makkelijk te verzorgen en neemt weinig ruimte in. [3] Sommige ouders zijn bang voor allergieën. Dat is een goed punt, maar je kunt het konijn in een aparte ruimte houden. [4] Een schooldier is dus niet alleen leuk, maar ook leerzaam. Daarom pleit ik ervoor dat elke school een dier krijgt."
+       },
+       {
+        "v": "Welke hoofdgedachte heeft deze tekst?",
+        "o": [
+         "konijnen zijn de beste dieren",
+         "elke school moet een schooldier hebben",
+         "ouders moeten niet bang zijn",
+         "scholen hebben te weinig geld"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 1,
+        "u": "Begin en slot herhalen de gedachte.",
+        "uo": [
+         "Koos je \"konijnen zijn de beste dieren\"? Dan denk je dat de schrijver konijnen verheerlijkt. Het konijn is een voorbeeld, en niet de hoofdgedachte.",
+         "Klopt: de schrijver zegt het in het begin en herhaalt het aan het slot.",
+         "Koos je \"ouders moeten niet bang zijn\"? Dan denk je dat het over angst gaat. Dat is een bezwaar, en niet de hoofdgedachte.",
+         "Koos je \"scholen hebben te weinig geld\"? Dan denk je dat het over geld gaat. De tekst noemt geen geld, dus dit klopt niet."
+        ],
+        "uh": "Wat wil de schrijver?",
+        "ctx": "[1] Veel scholen hebben geen schooldier, maar ik vind dat dit wel zou moeten. [2] Een konijn in de klas maakt leerlingen rustiger, want ze kunnen het aaien in de pauze. Bovendien leren ze verantwoordelijkheid, omdat ze het dier om de beurt moeten verzorgen. Een konijn is bovendien makkelijk te verzorgen en neemt weinig ruimte in. [3] Sommige ouders zijn bang voor allergieën. Dat is een goed punt, maar je kunt het konijn in een aparte ruimte houden. [4] Een schooldier is dus niet alleen leuk, maar ook leerzaam. Daarom pleit ik ervoor dat elke school een dier krijgt."
+       },
+       {
+        "v": "Welk deelonderwerp heeft alinea 3 in deze tekst?",
+        "o": [
+         "een bezwaar en een antwoord",
+         "de voordelen van een schooldier",
+         "de conclusie van de schrijver",
+         "de vraag of ouders mogen kiezen"
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 2,
+        "u": "Bezwaar en antwoord.",
+        "uo": [
+         "Klopt: de alinea noemt een bezwaar en zegt hoe je dat kunt oplossen.",
+         "Koos je \"de voordelen van een schooldier\"? Dan denk je dat alinea 3 voordelen noemt. De voordelen staan in alinea 2, en alinea 3 noemt een bezwaar.",
+         "Koos je \"de conclusie van de schrijver\"? Dan denk je dat alinea 3 afsluit. De conclusie staat in alinea 4, en alinea 3 noemt het bezwaar.",
+         "Koos je \"de vraag of ouders mogen kiezen\"? Dan denk je dat het over keuzes van ouders gaat. De tekst noemt alleen hun zorg, en geen keuze."
+        ],
+        "uh": "Wat staat er in alinea 3?",
+        "ctx": "[1] Veel scholen hebben geen schooldier, maar ik vind dat dit wel zou moeten. [2] Een konijn in de klas maakt leerlingen rustiger, want ze kunnen het aaien in de pauze. Bovendien leren ze verantwoordelijkheid, omdat ze het dier om de beurt moeten verzorgen. Een konijn is bovendien makkelijk te verzorgen en neemt weinig ruimte in. [3] Sommige ouders zijn bang voor allergieën. Dat is een goed punt, maar je kunt het konijn in een aparte ruimte houden. [4] Een schooldier is dus niet alleen leuk, maar ook leerzaam. Daarom pleit ik ervoor dat elke school een dier krijgt."
+       },
+       {
+        "v": "Welk tussenkopje past het best bij alinea 2?",
+        "o": [
+         "bezwaren van ouders",
+         "wat elke school moet doen",
+         "een geschiedenis van schooldieren",
+         "voordelen van een schooldier"
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 3,
+        "u": "Tussenkopje = deelonderwerp.",
+        "uo": [
+         "Koos je \"bezwaren van ouders\"? Dan denk je dat alinea 2 een bezwaar geeft. Dat staat in alinea 3, en alinea 2 geeft de voordelen.",
+         "Koos je \"wat elke school moet doen\"? Dan denk je dat alinea 2 een opdracht geeft. Dat staat in alinea 4, en alinea 2 noemt de voordelen.",
+         "Koos je \"een geschiedenis van schooldieren\"? Dan denk je dat alinea 2 over vroeger gaat. De tekst noemt geen geschiedenis, maar voordelen.",
+         "Klopt: de alinea noemt rust en verantwoordelijkheid als voordelen."
+        ],
+        "uh": "Wat staat er in alinea 2?",
+        "ctx": "[1] Veel scholen hebben geen schooldier, maar ik vind dat dit wel zou moeten. [2] Een konijn in de klas maakt leerlingen rustiger, want ze kunnen het aaien in de pauze. Bovendien leren ze verantwoordelijkheid, omdat ze het dier om de beurt moeten verzorgen. Een konijn is bovendien makkelijk te verzorgen en neemt weinig ruimte in. [3] Sommige ouders zijn bang voor allergieën. Dat is een goed punt, maar je kunt het konijn in een aparte ruimte houden. [4] Een schooldier is dus niet alleen leuk, maar ook leerzaam. Daarom pleit ik ervoor dat elke school een dier krijgt."
+       },
+       {
+        "v": "Hoe vat je de tekst over het schooldier in één zin samen?",
+        "o": [
+         "konijnen worden elke dag gevoerd door leerlingen",
+         "ouders zijn bang voor allergieën bij kinderen",
+         "elke school hoort een dier te krijgen",
+         "sommige scholen hebben al een dier in de klas"
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 4,
+        "u": "Kern in één zin.",
+        "uo": [
+         "Koos je \"konijnen worden elke dag gevoerd door leerlingen\"? Dan denk je dat de tekst alleen over voeren gaat. Dat is een detail, en de samenvatting moet de kern geven.",
+         "Koos je \"ouders zijn bang voor allergieën bij kinderen\"? Dan denk je dat dit de samenvatting is. Dit is een bezwaar, en niet de kern van de tekst.",
+         "Klopt: dit noemt de hoofdgedachte met de reden.",
+         "Koos je \"sommige scholen hebben al een dier in de klas\"? Dan denk je dat de tekst zegt dat scholen al een dier hebben. Hij zegt het tegenovergestelde, namelijk dat veel scholen er geen hebben."
+        ],
+        "uh": "Wat vindt de schrijver?",
+        "ctx": "[1] Veel scholen hebben geen schooldier, maar ik vind dat dit wel zou moeten. [2] Een konijn in de klas maakt leerlingen rustiger, want ze kunnen het aaien in de pauze. Bovendien leren ze verantwoordelijkheid, omdat ze het dier om de beurt moeten verzorgen. Een konijn is bovendien makkelijk te verzorgen en neemt weinig ruimte in. [3] Sommige ouders zijn bang voor allergieën. Dat is een goed punt, maar je kunt het konijn in een aparte ruimte houden. [4] Een schooldier is dus niet alleen leuk, maar ook leerzaam. Daarom pleit ik ervoor dat elke school een dier krijgt."
+       },
+       {
+        "v": "Welk deelonderwerp ontbreekt in de tekst over zwerfafval?",
+        "o": [
+         "de gevolgen voor dieren",
+         "de kosten voor de gemeente",
+         "de oorzaak van afval",
+         "wat jij zelf kunt doen"
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 0,
+        "u": "Wat staat er wel en niet?",
+        "uo": [
+         "Koos je \"de gevolgen voor dieren\"? Dan denk je dat de gevolgen voor dieren niet genoemd worden. Vogels en egels komen in alinea 2 voor, dus dit deelonderwerp is er wel.",
+         "Koos je \"de kosten voor de gemeente\"? Dan denk je dat de kosten ontbreken. De tekst noemt dat opruimen de gemeente veel geld kost, dus dit deelonderwerp is er wel.",
+         "Klopt: de tekst noemt het probleem, de gevolgen en de oplossing, maar niet waardoor het afval ontstaat.",
+         "Koos je \"wat jij zelf kunt doen\"? Dan denk je dat er geen advies staat. Alinea 3 vraagt de lezer om afval in de prullenbak te gooien, dus dit deelonderwerp is er wel."
+        ],
+        "uh": "Welke alinea ontbreekt?",
+        "ctx": "[1] Op straat ligt steeds meer zwerfafval. In het park liggen blikjes en verpakkingen van snoep. [2] Dat is niet alleen lelijk, maar ook slecht voor dieren: vogels en egels kunnen het afval opeten of erin vast komen te zitten. Daarnaast kost het opruimen de gemeente veel geld. Dat geld kan dan niet meer worden gebruikt voor bijvoorbeeld speeltuinen. [3] Gelukkig kun je zelf iets doen. Gooi je afval in de prullenbak en pak ook eens een zak mee om op te ruimen. Als iedereen zijn steentje bijdraagt, blijft onze buurt schoon en veilig."
+       },
+       {
+        "v": "Welke zin past het minst bij de hoofdgedachte over sparen?",
+        "o": [
+         "\"Zet elke maand een vast bedrag opzij.\"",
+         "\"Begin daarom met het opschrijven van je inkomsten.\"",
+         "\"Na een paar maanden zie je het bedrag groeien.\"",
+         "\"Vergeet ook niet de verzekering.\""
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 1,
+        "u": "Wat past niet?",
+        "uo": [
+         "Koos je \"Zet elke maand een vast bedrag opzij.\"? Dan denk je dat deze zin niet past. Een vast bedrag opzij zetten is juist de kern van sparen, dus hij past wel.",
+         "Koos je \"Begin daarom met het opschrijven van je inkomsten.\"? Dan denk je dat deze zin niet past. Opschrijven wat je krijgt is de eerste stap van het plan, dus hij past wel.",
+         "Koos je \"Na een paar maanden zie je het bedrag groeien.\"? Dan denk je dat deze zin niet past. Het groeiende bedrag motiveert om te blijven sparen, dus hij past wel.",
+         "Klopt: die zin noemt extra kosten en past dus niet bij het sparen zelf."
+        ],
+        "uh": "Wat is een extra gegeven?",
+        "ctx": "[1] Wil je een scooter kopen, dan moet je eerst sparen, want een scooter is duur. [2] Begin daarom met het opschrijven van je inkomsten, zoals zakgeld en geld van een bijbaan. Schrijf ook op waar je geld aan uitgeeft. Zo zie je hoeveel je overhoudt. [3] Zet elke maand een vast bedrag opzij op een spaarrekening. Heb je een doel, bijvoorbeeld honderd euro per maand, dan houd je het langer vol. Na een paar maanden zie je het bedrag groeien en dat motiveert om door te gaan. [4] Vergeet ook niet dat een scooter verzekering en benzine kost."
+       },
+       {
+        "v": "Welke samenvatting past het best bij de hele tekst over zwerfafval?",
+        "o": [
+         "afval schaadt dieren, dus ruim op",
+         "er liggen blikjes in het park en snoep",
+         "de gemeente heeft veel te weinig geld",
+         "dieren eten graag afval"
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 4,
+        "u": "Gevolg plus oproep.",
+        "uo": [
+         "Klopt: dit noemt de gevolgen én de oproep uit de hele tekst.",
+         "Koos je \"er liggen blikjes in het park en snoep\"? Dan denk je dat dit de samenvatting is. Dit is alleen een detail uit alinea 1, en geeft de kern niet.",
+         "Koos je \"de gemeente heeft veel te weinig geld\"? Dan denk je dat dit de samenvatting is. Dit is een deel van alinea 2, en is niet de hoofdgedachte.",
+         "Koos je \"dieren eten graag afval\"? Dan denk je dat dit de samenvatting is. Dat staat niet in de tekst, en geeft de kern niet."
+        ],
+        "uh": "Wat is de kern?",
+        "ctx": "[1] Op straat ligt steeds meer zwerfafval. In het park liggen blikjes en verpakkingen van snoep. [2] Dat is niet alleen lelijk, maar ook slecht voor dieren: vogels en egels kunnen het afval opeten of erin vast komen te zitten. Daarnaast kost het opruimen de gemeente veel geld. Dat geld kan dan niet meer worden gebruikt voor bijvoorbeeld speeltuinen. [3] Gelukkig kun je zelf iets doen. Gooi je afval in de prullenbak en pak ook eens een zak mee om op te ruimen. Als iedereen zijn steentje bijdraagt, blijft onze buurt schoon en veilig."
+       },
+       {
+        "v": "Welk tussenkopje past bij alinea 2 van de tekst over de scooter?",
+        "o": [
+         "een vast bedrag sparen",
+         "inkomsten en uitgaven bijhouden",
+         "de extra kosten van een scooter",
+         "waarom een scooter duur is"
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 3,
+        "u": "Tussenkopje = deelonderwerp.",
+        "uo": [
+         "Koos je \"een vast bedrag sparen\"? Dan denk je dat dit bij alinea 2 past. Dat is het deelonderwerp van alinea 3, en alinea 2 gaat over opschrijven.",
+         "Klopt: de alinea legt uit hoe je opschrijft wat er binnenkomt en uitgegeven wordt.",
+         "Koos je \"de extra kosten van een scooter\"? Dan denk je dat dit bij alinea 2 past. Dat staat in alinea 4, en alinea 2 gaat over inkomsten.",
+         "Koos je \"waarom een scooter duur is\"? Dan denk je dat dit bij alinea 2 past. Dat noemt alinea 1, en alinea 2 gaat over opschrijven."
+        ],
+        "uh": "Wat staat er in alinea 2?",
+        "ctx": "[1] Wil je een scooter kopen, dan moet je eerst sparen, want een scooter is duur. [2] Begin daarom met het opschrijven van je inkomsten, zoals zakgeld en geld van een bijbaan. Schrijf ook op waar je geld aan uitgeeft. Zo zie je hoeveel je overhoudt. [3] Zet elke maand een vast bedrag opzij op een spaarrekening. Heb je een doel, bijvoorbeeld honderd euro per maand, dan houd je het langer vol. Na een paar maanden zie je het bedrag groeien en dat motiveert om door te gaan. [4] Vergeet ook niet dat een scooter verzekering en benzine kost."
+       },
+       {
+        "v": "Welk woord kondigt in alinea 4 de hoofdgedachte aan?",
+        "o": [
+         "bovendien",
+         "maar",
+         "want",
+         "daarom"
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 1,
+        "u": "\"Daarom\" leidt de conclusie in.",
+        "uo": [
+         "Koos je \"bovendien\"? Dan denk je dat \"bovendien\" de hoofdgedachte aankondigt. Het voegt een argument toe, en dat staat in alinea 2.",
+         "Koos je \"maar\"? Dan denk je dat \"maar\" de hoofdgedachte aankondigt. Het kondigt een bezwaar of antwoord aan, en dat staat in alinea 3.",
+         "Koos je \"want\"? Dan denk je dat \"want\" de hoofdgedachte aankondigt. Het leidt een reden in, en geen conclusie.",
+         "Klopt: \"daarom\" leidt de conclusie in, en die is gelijk aan de hoofdgedachte."
+        ],
+        "uh": "Wat volgt na dit woord?",
+        "ctx": "[1] Veel scholen hebben geen schooldier, maar ik vind dat dit wel zou moeten. [2] Een konijn in de klas maakt leerlingen rustiger, want ze kunnen het aaien in de pauze. Bovendien leren ze verantwoordelijkheid, omdat ze het dier om de beurt moeten verzorgen. Een konijn is bovendien makkelijk te verzorgen en neemt weinig ruimte in. [3] Sommige ouders zijn bang voor allergieën. Dat is een goed punt, maar je kunt het konijn in een aparte ruimte houden. [4] Een schooldier is dus niet alleen leuk, maar ook leerzaam. Daarom pleit ik ervoor dat elke school een dier krijgt."
+       },
+       {
+        "v": "Waarom is de eerste zin een goed begin van de tekst?",
+        "o": [
+         "hij noemt meteen het onderwerp",
+         "hij geeft meteen de oplossing",
+         "hij noemt de kosten voor de gemeente",
+         "hij stelt een vraag aan de lezer"
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 0,
+        "u": "Eerste zin = onderwerp.",
+        "uo": [
+         "Klopt: de lezer weet direct waar de tekst over gaat.",
+         "Koos je \"hij geeft meteen de oplossing\"? Dan denk je dat de eerste zin de oplossing geeft. De oplossing staat in alinea 3, en de eerste zin noemt het probleem.",
+         "Koos je \"hij noemt de kosten voor de gemeente\"? Dan denk je dat de eerste zin over kosten gaat. De kosten staan in alinea 2, en de eerste zin noemt zwerfafval.",
+         "Koos je \"hij stelt een vraag aan de lezer\"? Dan denk je dat de eerste zin een vraag is. Het is een mededeling, en geen vraag."
+        ],
+        "uh": "Wat zegt de eerste zin?",
+        "ctx": "[1] Op straat ligt steeds meer zwerfafval. In het park liggen blikjes en verpakkingen van snoep. [2] Dat is niet alleen lelijk, maar ook slecht voor dieren: vogels en egels kunnen het afval opeten of erin vast komen te zitten. Daarnaast kost het opruimen de gemeente veel geld. Dat geld kan dan niet meer worden gebruikt voor bijvoorbeeld speeltuinen. [3] Gelukkig kun je zelf iets doen. Gooi je afval in de prullenbak en pak ook eens een zak mee om op te ruimen. Als iedereen zijn steentje bijdraagt, blijft onze buurt schoon en veilig."
+       }
+      ],
+      "oe": [
+       {
+        "bron": "Examenstijl",
+        "ctx": "[1] Op straat ligt steeds meer zwerfafval. In het park liggen blikjes en verpakkingen van snoep. [2] Dat is niet alleen lelijk, maar ook slecht voor dieren: vogels en egels kunnen het afval opeten of erin vast komen te zitten. Daarnaast kost het opruimen de gemeente veel geld. Dat geld kan dan niet meer worden gebruikt voor bijvoorbeeld speeltuinen. [3] Gelukkig kun je zelf iets doen. Gooi je afval in de prullenbak en pak ook eens een zak mee om op te ruimen. Als iedereen zijn steentje bijdraagt, blijft onze buurt schoon en veilig.",
+        "v": "Noem het onderwerp en de hoofdgedachte van deze tekst.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Onderwerp: zwerfafval (1p). Hoofdgedachte: zwerfafval is een probleem, dus help mee met opruimen (2p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "[1] Op straat ligt steeds meer zwerfafval. In het park liggen blikjes en verpakkingen van snoep. [2] Dat is niet alleen lelijk, maar ook slecht voor dieren: vogels en egels kunnen het afval opeten of erin vast komen te zitten. Daarnaast kost het opruimen de gemeente veel geld. Dat geld kan dan niet meer worden gebruikt voor bijvoorbeeld speeltuinen. [3] Gelukkig kun je zelf iets doen. Gooi je afval in de prullenbak en pak ook eens een zak mee om op te ruimen. Als iedereen zijn steentje bijdraagt, blijft onze buurt schoon en veilig.",
+        "v": "Geef bij alinea 2 en alinea 3 een tussenkopje dat past.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Alinea 2: de gevolgen van zwerfafval (1p). Alinea 3: wat je zelf kunt doen (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "[1] Wil je een scooter kopen, dan moet je eerst sparen, want een scooter is duur. [2] Begin daarom met het opschrijven van je inkomsten, zoals zakgeld en geld van een bijbaan. Schrijf ook op waar je geld aan uitgeeft. Zo zie je hoeveel je overhoudt. [3] Zet elke maand een vast bedrag opzij op een spaarrekening. Heb je een doel, bijvoorbeeld honderd euro per maand, dan houd je het langer vol. Na een paar maanden zie je het bedrag groeien en dat motiveert om door te gaan. [4] Vergeet ook niet dat een scooter verzekering en benzine kost.",
+        "v": "Wat is de hoofdgedachte van de tekst en welk deelonderwerp heeft alinea 3?",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Hoofdgedachte: wie een scooter wil, moet sparen (1p). Alinea 3: vast een bedrag sparen en een doel stellen (2p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "[1] Veel scholen hebben geen schooldier, maar ik vind dat dit wel zou moeten. [2] Een konijn in de klas maakt leerlingen rustiger, want ze kunnen het aaien in de pauze. Bovendien leren ze verantwoordelijkheid, omdat ze het dier om de beurt moeten verzorgen. Een konijn is bovendien makkelijk te verzorgen en neemt weinig ruimte in. [3] Sommige ouders zijn bang voor allergieën. Dat is een goed punt, maar je kunt het konijn in een aparte ruimte houden. [4] Een schooldier is dus niet alleen leuk, maar ook leerzaam. Daarom pleit ik ervoor dat elke school een dier krijgt.",
+        "v": "Noem het deelonderwerp van alinea 2 en alinea 3.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Alinea 2: voordelen van een schooldier (1p). Alinea 3: een bezwaar over allergieën en het antwoord daarop (2p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "[1] Veel scholen hebben geen schooldier, maar ik vind dat dit wel zou moeten. [2] Een konijn in de klas maakt leerlingen rustiger, want ze kunnen het aaien in de pauze. Bovendien leren ze verantwoordelijkheid, omdat ze het dier om de beurt moeten verzorgen. Een konijn is bovendien makkelijk te verzorgen en neemt weinig ruimte in. [3] Sommige ouders zijn bang voor allergieën. Dat is een goed punt, maar je kunt het konijn in een aparte ruimte houden. [4] Een schooldier is dus niet alleen leuk, maar ook leerzaam. Daarom pleit ik ervoor dat elke school een dier krijgt.",
+        "v": "Vat de tekst samen in één zin.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Elke school hoort een schooldier te krijgen omdat het leerzaam is (3p)."
+       }
+      ]
      }
     ]
    },

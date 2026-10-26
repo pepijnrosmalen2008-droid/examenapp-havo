@@ -313,6 +313,27 @@ var VAKKEN_VMBO = [
       "nOe": 5,
       "nBeg": 12,
       "hasSam": true
+     },
+     {
+      "id": "C3",
+      "lo": "nl.C.3",
+      "gs": 2,
+      "naam": "Hoofdgedachte en deelonderwerpen",
+      "beschrijving": "Je zoekt het onderwerp, de hoofdgedachte en de deelonderwerpen van een tekst, kiest tussenkopjes en vat een tekst samen in één zin.",
+      "ceStatus": "CE+SE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Onderwerp van een tekst",
+       "Hoofdgedachte",
+       "Deelonderwerpen per alinea",
+       "Tussenkopjes",
+       "Samenvatten in één zin"
+      ],
+      "nSv": 26,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
      }
     ]
    },
