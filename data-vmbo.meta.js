@@ -270,7 +270,30 @@ var VAKKEN_VMBO = [
     "nSv": 31,
     "nOe": 0,
     "nBeg": 10,
-    "hasSam": true
+    "hasSam": true,
+    "leerdoelen": [
+     {
+      "id": "C1",
+      "lo": "nl.C.1",
+      "gs": 2,
+      "naam": "Tekstsoorten en schrijfdoel herkennen",
+      "beschrijving": "Je leest een tekst en bepaalt of de schrijver wil informeren, overtuigen, amuseren of activeren, en waaraan je dat ziet.",
+      "ceStatus": "CE+SE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Informeren",
+       "Overtuigen",
+       "Amuseren",
+       "Activeren",
+       "Signalen in de tekst"
+      ],
+      "nSv": 26,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
+     }
+    ]
    },
    {
     "id": "D",

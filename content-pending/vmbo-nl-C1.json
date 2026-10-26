@@ -1,0 +1,661 @@
+{
+ "id": "C1",
+ "lo": "nl.C.1",
+ "gs": 2,
+ "naam": "Tekstsoorten en schrijfdoel herkennen",
+ "beschrijving": "Je leest een tekst en bepaalt of de schrijver wil informeren, overtuigen, amuseren of activeren, en waaraan je dat ziet.",
+ "ceStatus": "CE+SE",
+ "binas": "",
+ "val": "",
+ "onderwerpen": [
+  "Informeren",
+  "Overtuigen",
+  "Amuseren",
+  "Activeren",
+  "Signalen in de tekst"
+ ],
+ "sam": "Een schrijver heeft een doel: informeren, overtuigen, amuseren of activeren. Een informerende tekst geeft feiten, een overtuigende tekst geeft een mening met argumenten en een oproep, een amuserende tekst wil vermaken met een verhaal of grap en een activerende tekst zegt wat de lezer moet doen, vaak in stappen. Je herkent het doel aan wat er in de tekst staat: feiten, een standpunt, overdrijving of opdrachten. Soms heeft een tekst meer dan één doel.",
+ "begrippen": [
+  {
+   "t": "Schrijfdoel",
+   "d": "Wat de schrijver met zijn tekst wil bereiken."
+  },
+  {
+   "t": "Informeren",
+   "d": "De lezer feiten en uitleg geven."
+  },
+  {
+   "t": "Overtuigen",
+   "d": "De lezer van een mening proberen te overtuigen."
+  },
+  {
+   "t": "Amuseren",
+   "d": "De lezer laten lachen of genieten."
+  },
+  {
+   "t": "Activeren",
+   "d": "De lezer laten doen wat in de tekst staat."
+  },
+  {
+   "t": "Standpunt",
+   "d": "De mening die de schrijver verdedigt."
+  },
+  {
+   "t": "Argument",
+   "d": "Een reden die het standpunt ondersteunt."
+  },
+  {
+   "t": "Oproep",
+   "d": "Een zin die zegt wat de lezer moet doen."
+  },
+  {
+   "t": "Overdrijving",
+   "d": "Iets groter of erger voorstellen dan het is."
+  },
+  {
+   "t": "Instructie",
+   "d": "Een uitleg in stappen over hoe je iets doet."
+  },
+  {
+   "t": "Feit",
+   "d": "Iets wat je kunt controleren."
+  },
+  {
+   "t": "Mening",
+   "d": "Wat iemand vindt en niet kunt bewijzen."
+  }
+ ],
+ "sv": [
+  {
+   "v": "Welk doel heeft een informerende tekst?",
+   "o": [
+    "de lezer iets laten kopen",
+    "de lezer iets laten weten",
+    "de lezer laten lachen om grappen",
+    "de lezer een opdracht laten doen"
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 0,
+   "u": "Informeren = laten weten.",
+   "uo": [
+    "Koos je \"de lezer iets laten kopen\"? Dan denk je dat informeren verkopen is. Dat doet een reclametekst, en een informerende tekst geeft alleen uitleg.",
+    "Klopt: zo'n tekst geeft feiten en uitleg over een onderwerp.",
+    "Koos je \"de lezer laten lachen om grappen\"? Dan denk je dat informeren grappen maken is. Dat is amuseren, en een informerende tekst legt iets uit.",
+    "Koos je \"de lezer een opdracht laten doen\"? Dan denk je dat informeren is opdrachten geven. Dat is activeren, en een informerende tekst vertelt alleen."
+   ],
+   "uh": "Wat wil de schrijver?"
+  },
+  {
+   "v": "Welk doel heeft een overtuigende tekst?",
+   "o": [
+    "de lezer een spannend verhaal laten volgen",
+    "de lezer een recept leren",
+    "de lezer alleen feiten geven",
+    "de lezer overtuigen"
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 1,
+   "u": "Overtuigen = mening veranderen.",
+   "uo": [
+    "Koos je \"de lezer een spannend verhaal laten volgen\"? Dan denk je dat overtuigen een verhaal vertellen is. Een verhaal wil vaak vermaken, en overtuigen wil een mening veranderen.",
+    "Koos je \"de lezer een recept leren\"? Dan denk je dat overtuigen is uitleggen hoe je iets doet. Dat is activeren, en overtuigen gaat over een mening.",
+    "Koos je \"de lezer alleen feiten geven\"? Dan denk je dat overtuigen feiten geven is. Dat is informeren, en overtuigen wil een mening veranderen.",
+    "Klopt: de schrijver wil dat de lezer het met hem eens wordt."
+   ],
+   "uh": "Wat wil de schrijver bereiken?"
+  },
+  {
+   "v": "Welk doel heeft een amuserende tekst?",
+   "o": [
+    "de lezer laten lachen",
+    "de lezer een product laten kopen en gebruiken",
+    "de lezer feiten laten leren",
+    "de lezer een opdracht geven"
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 2,
+   "u": "Amuseren = vermaken.",
+   "uo": [
+    "Klopt: zo'n tekst wil vermaken met een grappig of spannend verhaal.",
+    "Koos je \"de lezer een product laten kopen en gebruiken\"? Dan denk je dat amuseren verkopen is. Dat doet reclame, en amuseren wil vermaken.",
+    "Koos je \"de lezer feiten laten leren\"? Dan denk je dat amuseren leren is. Dat is informeren, en amuseren wil vermaken.",
+    "Koos je \"de lezer een opdracht geven\"? Dan denk je dat amuseren opdrachten geven is. Dat is activeren, en amuseren wil vermaken."
+   ],
+   "uh": "Wat voel je bij het lezen?"
+  },
+  {
+   "v": "Welk doel heeft een activerende tekst?",
+   "o": [
+    "de lezer alleen informeren",
+    "de lezer laten lachen",
+    "de lezer iets laten doen",
+    "de lezer een mening laten kiezen"
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 3,
+   "u": "Activeren = handelen.",
+   "uo": [
+    "Koos je \"de lezer alleen informeren\"? Dan denk je dat activeren informeren is. Een informerende tekst vertelt alleen, en een activerende tekst vraagt om actie.",
+    "Koos je \"de lezer laten lachen\"? Dan denk je dat activeren lachen is. Dat is amuseren, en activeren vraagt om te handelen.",
+    "Klopt: zo'n tekst geeft instructies of een oproep om te handelen.",
+    "Koos je \"de lezer een mening laten kiezen\"? Dan denk je dat activeren een mening kiezen is. Dat is overtuigen, en activeren vraagt om te handelen."
+   ],
+   "uh": "Wat moet de lezer doen?"
+  },
+  {
+   "v": "Waaraan herken je een tekst die iets uitlegt?",
+   "o": [
+    "aan veel grappen en overdrijving",
+    "aan de woorden \"ik vind dat\" en \"moet\"",
+    "aan feiten en gegevens, zonder mening",
+    "aan opdrachten als \"doe dit\" en \"pak dat\""
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 4,
+   "u": "Feiten zonder mening.",
+   "uo": [
+    "Koos je \"aan veel grappen en overdrijving\"? Dan denk je dat een uitleg grappig is. Grappen horen bij amuseren, en een uitleg noemt gewoon feiten.",
+    "Koos je \"aan de woorden ik vind dat en moet\"? Dan denk je dat deze woorden bij uitleg horen. Ze horen bij een mening, en dus bij overtuigen.",
+    "Klopt: een uitleg zegt wat er is, zonder dat de schrijver iets vindt.",
+    "Koos je \"aan opdrachten als doe dit en pak dat\"? Dan denk je dat uitleg opdrachten geeft. Dat is activeren, en uitleg noemt alleen feiten."
+   ],
+   "uh": "Staat er een mening in?"
+  },
+  {
+   "v": "Waaraan herken je een overtuigende tekst?",
+   "o": [
+    "aan een mening met argumenten",
+    "aan alleen maar cijfers en data bij elkaar",
+    "aan een grappig verhaal zonder doel",
+    "aan stappen in een volgorde"
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 4,
+   "u": "Mening, argument, oproep.",
+   "uo": [
+    "Klopt: de schrijver zegt wat hij vindt, geeft redenen en vraagt de lezer mee te doen.",
+    "Koos je \"aan alleen maar cijfers en data bij elkaar\"? Dan denk je dat dit overtuigt. Cijfers zonder mening informeren alleen, en overtuigen voegt een standpunt toe.",
+    "Koos je \"aan een grappig verhaal zonder doel\"? Dan denk je dat dit overtuigt. Een grappig verhaal amuseert, en overtuigt niet.",
+    "Koos je \"aan stappen in een volgorde\"? Dan denk je dat dit overtuigt. Stappen horen bij activeren, en overtuigen heeft een standpunt."
+   ],
+   "uh": "Wat vindt de schrijver?"
+  },
+  {
+   "v": "Waaraan herken je een activerende tekst?",
+   "o": [
+    "aan een grappig verhaal vol overdrijving",
+    "aan een lijst met feiten over een onderwerp",
+    "aan een mening zonder uitleg",
+    "aan opdrachten en stappen in een volgorde"
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 3,
+   "u": "Opdrachten en stappen.",
+   "uo": [
+    "Koos je \"aan een grappig verhaal vol overdrijving\"? Dan denk je dat dit activeert. Dat is een amuserende tekst, en die vraagt niet om iets te doen.",
+    "Koos je \"aan een lijst met feiten over een onderwerp\"? Dan denk je dat dit activeert. Het is informatie, en vraagt niets aan de lezer.",
+    "Koos je \"aan een mening zonder uitleg\"? Dan denk je dat dit activeert. Een mening zonder oproep overtuigt hooguit, en geeft geen stappen.",
+    "Klopt: de lezer wordt gevraagd iets te doen en krijgt stap voor stap uitleg."
+   ],
+   "uh": "Wat moet je doen?"
+  },
+  {
+   "v": "Welk doel heeft de schrijver van de tekst over de mediatheek?",
+   "o": [
+    "overtuigen dat je meer moet gaan lezen",
+    "informeren over de mediatheek",
+    "de lezer laten lachen met een verhaal",
+    "de lezer opdrachten laten uitvoeren"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 0,
+   "u": "Gegevens zonder mening.",
+   "uo": [
+    "Koos je \"overtuigen dat je meer moet gaan lezen\"? Dan denk je dat de schrijver wil overtuigen. Er staat geen mening of oproep, alleen feiten.",
+    "Klopt: de schrijver geeft gegevens over openingstijden, regels en wat je er kunt doen.",
+    "Koos je \"de lezer laten lachen met een verhaal\"? Dan denk je dat de schrijver wil amuseren. Er is niets grappigs, alleen een uitleg.",
+    "Koos je \"de lezer opdrachten laten uitvoeren\"? Dan denk je dat de schrijver activeert. Er staan geen stappen of opdrachten, alleen mededelingen."
+   ],
+   "uh": "Staat er een mening in?",
+   "ctx": "Op onze school is een nieuwe mediatheek geopend. De mediatheek ligt op de eerste verdieping, naast de kantine. Leerlingen kunnen er boeken lenen, op een computer werken en samen aan een opdracht werken. De mediatheek is geopend van half negen tot vier uur. In de pauzes is er een medewerker aanwezig die helpt bij het zoeken naar boeken. Een boek mag je drie weken lenen. Wil je het langer houden, dan kun je het via de computer verlengen. Voor het lenen heb je alleen je schoolpas nodig. Op de website van de school staat een lijst met alle boeken die je kunt lenen."
+  },
+  {
+   "v": "Welk kenmerk laat zien dat deze tekst informeert?",
+   "o": [
+    "de schrijver zegt wat hij van de mediatheek vindt",
+    "de schrijver sluit af met een oproep om mee te doen",
+    "de schrijver maakt grappen over boeken",
+    "er staan openingstijden en regels in"
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 4,
+   "u": "Feiten en gegevens.",
+   "uo": [
+    "Koos je \"de schrijver zegt wat hij van de mediatheek vindt\"? Dan denk je dat de schrijver een mening geeft. In de tekst staat geen oordeel, alleen feiten.",
+    "Koos je \"de schrijver sluit af met een oproep om mee te doen\"? Dan denk je dat er een oproep staat. De laatste zin noemt alleen een lijst, dus het is geen oproep.",
+    "Koos je \"de schrijver maakt grappen over boeken\"? Dan denk je dat er grappen staan. Dat is niet zo, de tekst is zakelijk.",
+    "Klopt: gegevens als tijden en lenen zijn feiten, en dus informatie."
+   ],
+   "uh": "Wat staat er?",
+   "ctx": "Op onze school is een nieuwe mediatheek geopend. De mediatheek ligt op de eerste verdieping, naast de kantine. Leerlingen kunnen er boeken lenen, op een computer werken en samen aan een opdracht werken. De mediatheek is geopend van half negen tot vier uur. In de pauzes is er een medewerker aanwezig die helpt bij het zoeken naar boeken. Een boek mag je drie weken lenen. Wil je het langer houden, dan kun je het via de computer verlengen. Voor het lenen heb je alleen je schoolpas nodig. Op de website van de school staat een lijst met alle boeken die je kunt lenen."
+  },
+  {
+   "v": "Welk doel heeft de schrijver van de tekst over het schoolplein?",
+   "o": [
+    "de lezer alleen informeren over het plein nu",
+    "de lezer overtuigen van een groen plein",
+    "de lezer laten lachen om het saaie plein",
+    "de lezer leren hoe je planten verzorgt"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 0,
+   "u": "Mening, redenen en oproep.",
+   "uo": [
+    "Koos je \"de lezer alleen informeren over het plein nu\"? Dan denk je dat de schrijver informeert. Hij geeft ook een mening en een oproep, dus hij wil meer dan informeren.",
+    "Klopt: de schrijver zegt wat hij vindt, geeft redenen en eindigt met een oproep.",
+    "Koos je \"de lezer laten lachen om het saaie plein\"? Dan denk je dat de schrijver amuseert. De toon is ernstig, en er staat een oproep in.",
+    "Koos je \"de lezer leren hoe je planten verzorgt\"? Dan denk je dat de schrijver uitlegt hoe het moet. Er staan geen stappen, alleen een mening en een oproep."
+   ],
+   "uh": "Wat wil de schrijver?",
+   "ctx": "Ons schoolplein is grijs en saai. Er staan alleen een paar banken en een prullenbak. Ik vind dat we het schoolplein groener moeten maken. Met planten en bomen wordt het plein veel gezelliger. Bovendien is het in de zomer koeler onder een boom dan op de kale tegels. Leerlingen kunnen er rustig zitten en praten in plaats van naar hun telefoon te kijken. Sommigen zeggen dat dit te veel geld kost, maar dat valt mee: de ouderraad wil graag helpen met de planten. Teken daarom de petitie bij de balie en laat de directeur zien dat jij een groen plein wilt!"
+  },
+  {
+   "v": "Welke zin uit de tekst is het standpunt?",
+   "o": [
+    "\"Er staan alleen een paar banken en een prullenbak.\"",
+    "\"Teken daarom de petitie bij de balie.\"",
+    "\"Ik vind dat het plein groener moet.\"",
+    "\"De ouderraad wil graag helpen met de planten.\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 1,
+   "u": "Zoek \"ik vind dat\".",
+   "uo": [
+    "Koos je \"Er staan alleen een paar banken en een prullenbak.\"? Dan denk je dat dit het standpunt is. Het is een beschrijving, dus een feit.",
+    "Koos je \"Teken daarom de petitie bij de balie.\"? Dan denk je dat dit het standpunt is. Het is een oproep, geen standpunt.",
+    "Klopt: hier zegt de schrijver wat hij vindt, en dat is een standpunt.",
+    "Koos je \"De ouderraad wil graag helpen met de planten.\"? Dan denk je dat dit het standpunt is. Het is een argument, dus een reden."
+   ],
+   "uh": "Wat vindt de schrijver?",
+   "ctx": "Ons schoolplein is grijs en saai. Er staan alleen een paar banken en een prullenbak. Ik vind dat we het schoolplein groener moeten maken. Met planten en bomen wordt het plein veel gezelliger. Bovendien is het in de zomer koeler onder een boom dan op de kale tegels. Leerlingen kunnen er rustig zitten en praten in plaats van naar hun telefoon te kijken. Sommigen zeggen dat dit te veel geld kost, maar dat valt mee: de ouderraad wil graag helpen met de planten. Teken daarom de petitie bij de balie en laat de directeur zien dat jij een groen plein wilt!"
+  },
+  {
+   "v": "Welke zin in de tekst is de oproep?",
+   "o": [
+    "\"Teken daarom de petitie bij de balie.\"",
+    "\"Met planten en bomen wordt het plein veel gezelliger.\"",
+    "\"Ons schoolplein is grijs en saai.\"",
+    "\"Sommigen zeggen dat dit te veel geld kost.\""
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 4,
+   "u": "Een oproep vraagt actie.",
+   "uo": [
+    "Klopt: de schrijver zegt wat de lezer moet doen.",
+    "Koos je \"Met planten en bomen wordt het plein veel...\"? Dan denk je dat dit de oproep is. Het is een argument, een reden voor zijn standpunt.",
+    "Koos je \"Ons schoolplein is grijs en saai.\"? Dan denk je dat dit de oproep is. Het is een mening over het plein, geen opdracht.",
+    "Koos je \"Sommigen zeggen dat dit te veel geld kost.\"? Dan denk je dat dit de oproep is. Het is een bezwaar, geen opdracht."
+   ],
+   "uh": "Wat moet de lezer doen?",
+   "ctx": "Ons schoolplein is grijs en saai. Er staan alleen een paar banken en een prullenbak. Ik vind dat we het schoolplein groener moeten maken. Met planten en bomen wordt het plein veel gezelliger. Bovendien is het in de zomer koeler onder een boom dan op de kale tegels. Leerlingen kunnen er rustig zitten en praten in plaats van naar hun telefoon te kijken. Sommigen zeggen dat dit te veel geld kost, maar dat valt mee: de ouderraad wil graag helpen met de planten. Teken daarom de petitie bij de balie en laat de directeur zien dat jij een groen plein wilt!"
+  },
+  {
+   "v": "Welk doel heeft de tekst over de kat Sloeber?",
+   "o": [
+    "de lezer laten lachen",
+    "de lezer leren hoe je een kat goed verzorgt",
+    "de lezer overtuigen een kat te nemen",
+    "de lezer informeren over katten"
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 2,
+   "u": "Grappig verhaal = amuseren.",
+   "uo": [
+    "Klopt: de schrijver vertelt een grappige gebeurtenis met overdrijving.",
+    "Koos je \"de lezer leren hoe je een kat goed verzorgt\"? Dan denk je dat de tekst uitleg geeft. Er staan geen tips of stappen, alleen een verhaal.",
+    "Koos je \"de lezer overtuigen een kat te nemen\"? Dan denk je dat de schrijver overtuigt. Er staat geen mening of oproep, alleen een anekdote.",
+    "Koos je \"de lezer informeren over katten\"? Dan denk je dat de tekst informeert. Er staan geen feiten over katten, alleen een grappig voorval."
+   ],
+   "uh": "Wat moet je voelen?",
+   "ctx": "Mijn kat Sloeber denkt dat hij de baas is van het huis. Gisteren zat hij op mijn toetsenbord toen ik mijn huiswerk moest maken. Elke keer als ik hem eraf tilde, sprong hij er weer op, alsof het zijn eigen kussen was. Toen ik eindelijk een zin had getypt, stond er op het scherm: \"ooooooooooooooo\". Mijn leraar zou denken dat ik een nieuw woord had uitgevonden. Ik maakte een foto en liet die aan mijn moeder zien. Zij lachte zo hard dat ze bijna van haar stoel viel. Sloeber keek ons aan en liep trots weg, alsof hij zojuist een meesterwerk had geschreven."
+  },
+  {
+   "v": "Welke zin in de tekst is een voorbeeld van overdrijving?",
+   "o": [
+    "\"Gisteren zat hij op mijn toetsenbord te slapen.\"",
+    "\"Ik maakte een foto en liet die aan mijn moeder zien.\"",
+    "\"Ze lachte zo hard dat ze bijna viel.\"",
+    "\"Mijn kat Sloeber is de baas van het huis.\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 2,
+   "u": "Overdrijven maakt grappig.",
+   "uo": [
+    "Koos je \"Gisteren zat hij op mijn toetsenbord te slapen.\"? Dan denk je dat dit overdrijving is. Het is een gewone mededeling, en geen overdrijving.",
+    "Koos je \"Ik maakte een foto en liet die aan mijn moeder zien.\"? Dan denk je dat dit overdrijving is. Het is een gewone handeling, en geen overdrijving.",
+    "Klopt: het is een grappige overdrijving, bedoeld om te amuseren.",
+    "Koos je \"Mijn kat Sloeber is de baas van het huis.\"? Dan denk je dat dit overdrijving is. Deze zin staat niet in de tekst, en het zou geen overdrijving zijn."
+   ],
+   "uh": "Welke zin gaat te ver?",
+   "ctx": "Mijn kat Sloeber denkt dat hij de baas is van het huis. Gisteren zat hij op mijn toetsenbord toen ik mijn huiswerk moest maken. Elke keer als ik hem eraf tilde, sprong hij er weer op, alsof het zijn eigen kussen was. Toen ik eindelijk een zin had getypt, stond er op het scherm: \"ooooooooooooooo\". Mijn leraar zou denken dat ik een nieuw woord had uitgevonden. Ik maakte een foto en liet die aan mijn moeder zien. Zij lachte zo hard dat ze bijna van haar stoel viel. Sloeber keek ons aan en liep trots weg, alsof hij zojuist een meesterwerk had geschreven."
+  },
+  {
+   "v": "Welk doel heeft de tekst over de zonnebloem?",
+   "o": [
+    "de lezer overtuigen dat zonnebloemen mooi zijn",
+    "de lezer leren hoe je een zonnebloem plant",
+    "de lezer laten lachen om zonnebloemen",
+    "de lezer informeren over de plant in het wild"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 3,
+   "u": "Stappen = activeren.",
+   "uo": [
+    "Koos je \"de lezer overtuigen dat zonnebloemen mooi zijn\"? Dan denk je dat de tekst overtuigt. Er staat geen mening, alleen een instructie.",
+    "Klopt: de tekst geeft stappen en wil dat de lezer het zelf gaat doen.",
+    "Koos je \"de lezer laten lachen om zonnebloemen\"? Dan denk je dat de tekst amuseert. Er staan geen grappen, alleen stappen.",
+    "Koos je \"de lezer informeren over de plant in het wild\"? Dan denk je dat de tekst informeert over de plant. Er staan opdrachten in, dus de lezer moet iets doen."
+   ],
+   "uh": "Wat moet je doen?",
+   "ctx": "Zo plant je een zonnebloem in je tuin. Kies eerst een zonnige plek, want zonnebloemen hebben veel licht nodig. Maak de grond los met een schep en haal het onkruid weg. Stop daarna het zaadje twee tot drie centimeter diep in de grond. Geef het zaadje water, maar niet te veel. Zet er een stokje naast, zodat je de plek terugvindt. Na een paar weken komt het plantje boven de grond. Maak dan elke week de grond nat. Zodra de plant groot wordt, bind je hem aan het stokje vast. Veel plezier met je zonnebloem!"
+  },
+  {
+   "v": "Welke woorden in de tekst laten zien dat het om opdrachten gaat?",
+   "o": [
+    "\"zonnig\", \"veel\" en \"groot\"",
+    "\"licht\", \"grond\" en \"water\" en \"stokje\"",
+    "\"veel plezier\" en \"zo plant je\"",
+    "\"kies\", \"maak\", \"stop\" en \"geef\""
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 3,
+   "u": "Gebiedende wijs = opdracht.",
+   "uo": [
+    "Koos je \"zonnig, veel en groot\"? Dan denk je dat dit de opdrachten zijn. Het zijn bijvoeglijke naamwoorden, en ze geven geen opdracht.",
+    "Koos je \"licht, grond en water en stokje\"? Dan denk je dat dit de opdrachten zijn. Het zijn zelfstandige naamwoorden, en ze geven geen opdracht.",
+    "Koos je \"veel plezier en zo plant je\"? Dan denk je dat dit de opdrachten zijn. Het zijn een wens en een inleiding, geen opdracht.",
+    "Klopt: dit zijn gebiedende werkwoorden, die de lezer aansporen iets te doen."
+   ],
+   "uh": "Welke woorden geven een opdracht?",
+   "ctx": "Zo plant je een zonnebloem in je tuin. Kies eerst een zonnige plek, want zonnebloemen hebben veel licht nodig. Maak de grond los met een schep en haal het onkruid weg. Stop daarna het zaadje twee tot drie centimeter diep in de grond. Geef het zaadje water, maar niet te veel. Zet er een stokje naast, zodat je de plek terugvindt. Na een paar weken komt het plantje boven de grond. Maak dan elke week de grond nat. Zodra de plant groot wordt, bind je hem aan het stokje vast. Veel plezier met je zonnebloem!"
+  },
+  {
+   "v": "Waarom is de laatste zin \"Op de website staat een lijst\" geen oproep?",
+   "o": [
+    "omdat de zin als vraag is gesteld",
+    "het is een mededeling",
+    "omdat de zin een mening van de schrijver is",
+    "omdat de zin grappig bedoeld is voor de lezer"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 4,
+   "u": "Informatie, geen opdracht.",
+   "uo": [
+    "Koos je \"omdat de zin als vraag is gesteld\"? Dan denk je dat de zin een vraag is. Het is een mededeling, en dus geen oproep.",
+    "Klopt: de zin meldt iets en vraagt de lezer niets te doen.",
+    "Koos je \"omdat de zin een mening van de schrijver is\"? Dan denk je dat de zin een mening is. De zin meldt een feit, en dat is geen oproep.",
+    "Koos je \"omdat de zin grappig bedoeld is voor de lezer\"? Dan denk je dat de zin een grap is. Het is een zakelijke mededeling, en dus geen oproep."
+   ],
+   "uh": "Wat vraagt de zin aan de lezer?",
+   "ctx": "Op onze school is een nieuwe mediatheek geopend. De mediatheek ligt op de eerste verdieping, naast de kantine. Leerlingen kunnen er boeken lenen, op een computer werken en samen aan een opdracht werken. De mediatheek is geopend van half negen tot vier uur. In de pauzes is er een medewerker aanwezig die helpt bij het zoeken naar boeken. Een boek mag je drie weken lenen. Wil je het langer houden, dan kun je het via de computer verlengen. Voor het lenen heb je alleen je schoolpas nodig. Op de website van de school staat een lijst met alle boeken die je kunt lenen."
+  },
+  {
+   "v": "Welke combinatie van doelen heeft de schrijver van de tekst over het plein?",
+   "o": [
+    "overtuigen en activeren",
+    "informeren en daarna amuseren",
+    "alleen maar amuseren",
+    "alleen maar informeren"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 0,
+   "u": "Mening plus oproep.",
+   "uo": [
+    "Klopt: hij zegt wat hij vindt en roept de lezer op de petitie te tekenen.",
+    "Koos je \"informeren en daarna amuseren\"? Dan denk je dat de schrijver informeert en amuseert. Er zijn nauwelijks feiten en geen grappen, maar wel een mening en een oproep.",
+    "Koos je \"alleen maar amuseren\"? Dan denk je dat de schrijver alleen wil amuseren. De toon is ernstig, en er staat een duidelijke oproep.",
+    "Koos je \"alleen maar informeren\"? Dan denk je dat de schrijver alleen informeert. Hij geeft ook zijn mening en een oproep, dus het is meer dan informeren."
+   ],
+   "uh": "Welke twee doelen zie je?",
+   "ctx": "Ons schoolplein is grijs en saai. Er staan alleen een paar banken en een prullenbak. Ik vind dat we het schoolplein groener moeten maken. Met planten en bomen wordt het plein veel gezelliger. Bovendien is het in de zomer koeler onder een boom dan op de kale tegels. Leerlingen kunnen er rustig zitten en praten in plaats van naar hun telefoon te kijken. Sommigen zeggen dat dit te veel geld kost, maar dat valt mee: de ouderraad wil graag helpen met de planten. Teken daarom de petitie bij de balie en laat de directeur zien dat jij een groen plein wilt!"
+  },
+  {
+   "v": "Waarom noemt de schrijver het bezwaar over de kosten zelf?",
+   "o": [
+    "omdat hij zelf geen duidelijke mening heeft",
+    "omdat hij het plein eigenlijk niet wil",
+    "omdat hij de directeur wil kwetsen",
+    "omdat hij er een antwoord op heeft"
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 1,
+   "u": "Bezwaar en antwoord.",
+   "uo": [
+    "Koos je \"omdat hij zelf geen duidelijke mening heeft\"? Dan denk je dat hij het bezwaar noemt omdat hij twijfelt. Hij heeft juist een duidelijk standpunt, en geeft een antwoord.",
+    "Koos je \"omdat hij het plein eigenlijk niet wil\"? Dan denk je dat hij tegen het plan is. Hij is juist voor, dus dat klopt niet.",
+    "Koos je \"omdat hij de directeur wil kwetsen\"? Dan denk je dat hij de directeur aanvalt. Hij noemt een bezwaar en geeft een antwoord, en doet niemand kwaad.",
+    "Klopt: een bezwaar met antwoord maakt een overtuigende tekst sterker."
+   ],
+   "uh": "Wat doet hij met het bezwaar?",
+   "ctx": "Ons schoolplein is grijs en saai. Er staan alleen een paar banken en een prullenbak. Ik vind dat we het schoolplein groener moeten maken. Met planten en bomen wordt het plein veel gezelliger. Bovendien is het in de zomer koeler onder een boom dan op de kale tegels. Leerlingen kunnen er rustig zitten en praten in plaats van naar hun telefoon te kijken. Sommigen zeggen dat dit te veel geld kost, maar dat valt mee: de ouderraad wil graag helpen met de planten. Teken daarom de petitie bij de balie en laat de directeur zien dat jij een groen plein wilt!"
+  },
+  {
+   "v": "Welk kenmerk van de tekst laat zien dat het om amuseren gaat?",
+   "o": [
+    "de schrijver geeft feiten over katten",
+    "de schrijver geeft opdrachten aan de lezer",
+    "overdrijving en een grappig slot",
+    "de schrijver zegt wat hij van katten vindt"
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 2,
+   "u": "Humor en overdrijving.",
+   "uo": [
+    "Koos je \"de schrijver geeft feiten over katten\"? Dan denk je dat de tekst vol kennis over katten zit. De schrijver noemt geen gegevens over het dier, hij vertelt wat zijn kat deed.",
+    "Koos je \"de schrijver geeft opdrachten aan de lezer\"? Dan denk je dat de lezer iets moet doen. Er komt geen \"doe\" of \"kies\" voor, de lezer hoeft alleen mee te lachen.",
+    "Klopt: grappige overdrijving en een lachwekkend slot maken de tekst vermakelijk.",
+    "Koos je \"de schrijver zegt wat hij van katten vindt\"? Dan denk je dat de schrijver een mening verdedigt. Hij vertelt over één middag, zonder zijn mening over katten te geven."
+   ],
+   "uh": "Wat maakt het grappig?",
+   "ctx": "Mijn kat Sloeber denkt dat hij de baas is van het huis. Gisteren zat hij op mijn toetsenbord toen ik mijn huiswerk moest maken. Elke keer als ik hem eraf tilde, sprong hij er weer op, alsof het zijn eigen kussen was. Toen ik eindelijk een zin had getypt, stond er op het scherm: \"ooooooooooooooo\". Mijn leraar zou denken dat ik een nieuw woord had uitgevonden. Ik maakte een foto en liet die aan mijn moeder zien. Zij lachte zo hard dat ze bijna van haar stoel viel. Sloeber keek ons aan en liep trots weg, alsof hij zojuist een meesterwerk had geschreven."
+  },
+  {
+   "v": "Welke zin in de tekst is een tip en geen stap?",
+   "o": [
+    "\"Kies eerst een zonnige plek uit.\"",
+    "\"Geef het zaadje water, maar niet te veel.\"",
+    "\"Zet er een stokje naast.\"",
+    "\"Stop daarna het zaadje in de grond.\""
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 3,
+   "u": "Stap of tip.",
+   "uo": [
+    "Koos je \"Kies eerst een zonnige plek uit.\"? Dan denk je dat dit een losse tip is. Het is de allereerste handeling, en die staat vast in de volgorde.",
+    "Koos je \"Geef het zaadje water, maar niet te veel.\"? Dan denk je dat dit een losse tip is. Het hoort bij het geven van water, en dat is een vaste stap.",
+    "Klopt: het is een nuttige tip die de volgorde van de stappen niet verandert.",
+    "Koos je \"Stop daarna het zaadje in de grond.\"? Dan denk je dat dit een losse tip is. Zonder deze handeling groeit er niets, dus dit is een stap."
+   ],
+   "uh": "Wat voegt de zin toe?",
+   "ctx": "Zo plant je een zonnebloem in je tuin. Kies eerst een zonnige plek, want zonnebloemen hebben veel licht nodig. Maak de grond los met een schep en haal het onkruid weg. Stop daarna het zaadje twee tot drie centimeter diep in de grond. Geef het zaadje water, maar niet te veel. Zet er een stokje naast, zodat je de plek terugvindt. Na een paar weken komt het plantje boven de grond. Maak dan elke week de grond nat. Zodra de plant groot wordt, bind je hem aan het stokje vast. Veel plezier met je zonnebloem!"
+  },
+  {
+   "v": "Hoe ziet de tekst over de mediatheek er anders uit als het een overtuigende tekst was?",
+   "o": [
+    "de schrijver zou alle openingstijden en regels weglaten",
+    "de schrijver zou grappen over boeken en lezen maken",
+    "de schrijver zou stap voor stap uitleggen hoe je leent",
+    "een oproep om de mediatheek te bezoeken"
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 4,
+   "u": "Overtuigen = mening en oproep.",
+   "uo": [
+    "Koos je \"de schrijver zou alle openingstijden en regels...\"? Dan denk je dat overtuigen betekent dat regels verdwijnen. Regels kunnen er ook in staan, maar er komt een mening bij.",
+    "Koos je \"de schrijver zou grappen over boeken en lezen maken\"? Dan denk je dat overtuigen is grappen maken. Dat is amuseren, en overtuigen heeft een mening en oproep.",
+    "Koos je \"de schrijver zou stap voor stap uitleggen hoe je...\"? Dan denk je dat overtuigen is uitleggen hoe je iets doet. Dat is activeren, en overtuigen geeft een mening.",
+    "Klopt: een overtuigende tekst bevat een mening en een oproep."
+   ],
+   "uh": "Wat zou erbij komen?",
+   "ctx": "Op onze school is een nieuwe mediatheek geopend. De mediatheek ligt op de eerste verdieping, naast de kantine. Leerlingen kunnen er boeken lenen, op een computer werken en samen aan een opdracht werken. De mediatheek is geopend van half negen tot vier uur. In de pauzes is er een medewerker aanwezig die helpt bij het zoeken naar boeken. Een boek mag je drie weken lenen. Wil je het langer houden, dan kun je het via de computer verlengen. Voor het lenen heb je alleen je schoolpas nodig. Op de website van de school staat een lijst met alle boeken die je kunt lenen."
+  },
+  {
+   "v": "Waarom is deze tekst geen overtuigende tekst?",
+   "o": [
+    "er staat geen mening in",
+    "de tekst is te kort om te kunnen overtuigen",
+    "de schrijver heeft geen vakkennis over planten",
+    "de tekst gaat over planten en niet over mensen"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 1,
+   "u": "Zonder standpunt geen overtuiging.",
+   "uo": [
+    "Klopt: een overtuigende tekst heeft een standpunt, en dat ontbreekt hier.",
+    "Koos je \"de tekst is te kort om te kunnen overtuigen\"? Dan denk je dat de lengte telt. Een korte tekst kan overtuigen, maar dan moet er een standpunt in staan.",
+    "Koos je \"de schrijver heeft geen vakkennis over planten\"? Dan denk je dat het aan kennis ligt. De schrijver geeft goede instructies, maar hij wil niets overtuigen.",
+    "Koos je \"de tekst gaat over planten en niet over mensen\"? Dan denk je dat het onderwerp bepaalt. Een tekst over planten kan overtuigen, maar dan staat er een standpunt in."
+   ],
+   "uh": "Wat vindt de schrijver?",
+   "ctx": "Zo plant je een zonnebloem in je tuin. Kies eerst een zonnige plek, want zonnebloemen hebben veel licht nodig. Maak de grond los met een schep en haal het onkruid weg. Stop daarna het zaadje twee tot drie centimeter diep in de grond. Geef het zaadje water, maar niet te veel. Zet er een stokje naast, zodat je de plek terugvindt. Na een paar weken komt het plantje boven de grond. Maak dan elke week de grond nat. Zodra de plant groot wordt, bind je hem aan het stokje vast. Veel plezier met je zonnebloem!"
+  },
+  {
+   "v": "Waarom is de tekst over Sloeber geen informerende tekst?",
+   "o": [
+    "de tekst is te kort om te informeren",
+    "er staan geen feiten, alleen een verhaal",
+    "de tekst heeft een mening over katten",
+    "de tekst geeft opdrachten aan de lezer"
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 0,
+   "u": "Verhaal is geen informatie.",
+   "uo": [
+    "Koos je \"de tekst is te kort om te informeren\"? Dan denk je dat de lengte telt. Een korte tekst kan informeren, maar dan moeten er feiten in staan.",
+    "Klopt: de schrijver vertelt een voorval en geeft geen gegevens over katten.",
+    "Koos je \"de tekst heeft een mening over katten\"? Dan denk je dat het een mening is. De schrijver vertelt een gebeurtenis, zonder standpunt over katten.",
+    "Koos je \"de tekst geeft opdrachten aan de lezer\"? Dan denk je dat het opdrachten geeft. Er staan geen opdrachten, alleen een verhaal."
+   ],
+   "uh": "Staan er feiten in?",
+   "ctx": "Mijn kat Sloeber denkt dat hij de baas is van het huis. Gisteren zat hij op mijn toetsenbord toen ik mijn huiswerk moest maken. Elke keer als ik hem eraf tilde, sprong hij er weer op, alsof het zijn eigen kussen was. Toen ik eindelijk een zin had getypt, stond er op het scherm: \"ooooooooooooooo\". Mijn leraar zou denken dat ik een nieuw woord had uitgevonden. Ik maakte een foto en liet die aan mijn moeder zien. Zij lachte zo hard dat ze bijna van haar stoel viel. Sloeber keek ons aan en liep trots weg, alsof hij zojuist een meesterwerk had geschreven."
+  },
+  {
+   "v": "Welk woord in de tekst laat zien dat er een mening in staat?",
+   "o": [
+    "\"banken\"",
+    "\"prullenbak\"",
+    "\"balie\"",
+    "\"saai\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 2,
+   "u": "Oordeel = mening.",
+   "uo": [
+    "Koos je \"banken\"? Dan denk je dat dit woord een oordeel geeft. Het noemt een meubelstuk dat je kunt tellen, dus het is een feit.",
+    "Koos je \"prullenbak\"? Dan denk je dat dit woord een mening toont. Het is gewoon iets wat op het plein staat, zonder dat de schrijver er iets van vindt.",
+    "Koos je \"balie\"? Dan denk je dat dit woord een mening toont. Het noemt de plek om te tekenen, en zegt niets over wat de schrijver vindt.",
+    "Klopt: \"saai\" is een oordeel, en dat is een mening."
+   ],
+   "uh": "Welk woord is een oordeel?",
+   "ctx": "Ons schoolplein is grijs en saai. Er staan alleen een paar banken en een prullenbak. Ik vind dat we het schoolplein groener moeten maken. Met planten en bomen wordt het plein veel gezelliger. Bovendien is het in de zomer koeler onder een boom dan op de kale tegels. Leerlingen kunnen er rustig zitten en praten in plaats van naar hun telefoon te kijken. Sommigen zeggen dat dit te veel geld kost, maar dat valt mee: de ouderraad wil graag helpen met de planten. Teken daarom de petitie bij de balie en laat de directeur zien dat jij een groen plein wilt!"
+  },
+  {
+   "v": "Welke zin in de mediatheektekst zou een activerende zin worden?",
+   "o": [
+    "\"Kom naar de mediatheek en leen een boek.\"",
+    "\"De mediatheek ligt op de eerste verdieping.\"",
+    "\"Een boek mag je drie weken lenen.\"",
+    "\"Voor het lenen heb je alleen je schoolpas nodig.\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 3,
+   "u": "Opdracht = activerend.",
+   "uo": [
+    "Klopt: de lezer krijgt een opdracht, dus het is activerend.",
+    "Koos je \"De mediatheek ligt op de eerste verdieping.\"? Dan denk je dat dit activerend is. Het is een mededeling, geen opdracht.",
+    "Koos je \"Een boek mag je drie weken lenen.\"? Dan denk je dat dit activerend is. Het is een regel, geen opdracht aan de lezer.",
+    "Koos je \"Voor het lenen heb je alleen je schoolpas nodig.\"? Dan denk je dat dit activerend is. Het is een feit, geen opdracht."
+   ],
+   "uh": "Wat moet de lezer doen?",
+   "ctx": "Op onze school is een nieuwe mediatheek geopend. De mediatheek ligt op de eerste verdieping, naast de kantine. Leerlingen kunnen er boeken lenen, op een computer werken en samen aan een opdracht werken. De mediatheek is geopend van half negen tot vier uur. In de pauzes is er een medewerker aanwezig die helpt bij het zoeken naar boeken. Een boek mag je drie weken lenen. Wil je het langer houden, dan kun je het via de computer verlengen. Voor het lenen heb je alleen je schoolpas nodig. Op de website van de school staat een lijst met alle boeken die je kunt lenen."
+  }
+ ],
+ "oe": [
+  {
+   "bron": "Examenstijl",
+   "ctx": "Op onze school is een nieuwe mediatheek geopend. De mediatheek ligt op de eerste verdieping, naast de kantine. Leerlingen kunnen er boeken lenen, op een computer werken en samen aan een opdracht werken. De mediatheek is geopend van half negen tot vier uur. In de pauzes is er een medewerker aanwezig die helpt bij het zoeken naar boeken. Een boek mag je drie weken lenen. Wil je het langer houden, dan kun je het via de computer verlengen. Voor het lenen heb je alleen je schoolpas nodig. Op de website van de school staat een lijst met alle boeken die je kunt lenen.",
+   "v": "Welk doel heeft deze tekst? Geef twee kenmerken uit de tekst.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Informeren (1p). Er staan feiten zoals openingstijden en regels (1p) en geen mening of oproep (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Ons schoolplein is grijs en saai. Er staan alleen een paar banken en een prullenbak. Ik vind dat we het schoolplein groener moeten maken. Met planten en bomen wordt het plein veel gezelliger. Bovendien is het in de zomer koeler onder een boom dan op de kale tegels. Leerlingen kunnen er rustig zitten en praten in plaats van naar hun telefoon te kijken. Sommigen zeggen dat dit te veel geld kost, maar dat valt mee: de ouderraad wil graag helpen met de planten. Teken daarom de petitie bij de balie en laat de directeur zien dat jij een groen plein wilt!",
+   "v": "Noem het standpunt, één argument en de oproep uit deze tekst.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Standpunt: het schoolplein moet groener (1p). Argument: het wordt gezelliger of koeler in de zomer (1p). Oproep: teken de petitie bij de balie (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Mijn kat Sloeber denkt dat hij de baas is van het huis. Gisteren zat hij op mijn toetsenbord toen ik mijn huiswerk moest maken. Elke keer als ik hem eraf tilde, sprong hij er weer op, alsof het zijn eigen kussen was. Toen ik eindelijk een zin had getypt, stond er op het scherm: \"ooooooooooooooo\". Mijn leraar zou denken dat ik een nieuw woord had uitgevonden. Ik maakte een foto en liet die aan mijn moeder zien. Zij lachte zo hard dat ze bijna van haar stoel viel. Sloeber keek ons aan en liep trots weg, alsof hij zojuist een meesterwerk had geschreven.",
+   "v": "Welk doel heeft de schrijver en hoe zie je dat? Noem twee kenmerken.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Amuseren (1p). Een grappige overdrijving, zoals de moeder die bijna van haar stoel viel (1p), en een grappig einde met de kat (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Zo plant je een zonnebloem in je tuin. Kies eerst een zonnige plek, want zonnebloemen hebben veel licht nodig. Maak de grond los met een schep en haal het onkruid weg. Stop daarna het zaadje twee tot drie centimeter diep in de grond. Geef het zaadje water, maar niet te veel. Zet er een stokje naast, zodat je de plek terugvindt. Na een paar weken komt het plantje boven de grond. Maak dan elke week de grond nat. Zodra de plant groot wordt, bind je hem aan het stokje vast. Veel plezier met je zonnebloem!",
+   "v": "Welke twee kenmerken laten zien dat dit een activerende tekst is?",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Er staan opdrachten, zoals \"kies\" en \"stop\" (2p), in een volgorde van stappen (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Ons schoolplein is grijs en saai. Er staan alleen een paar banken en een prullenbak. Ik vind dat we het schoolplein groener moeten maken. Met planten en bomen wordt het plein veel gezelliger. Bovendien is het in de zomer koeler onder een boom dan op de kale tegels. Leerlingen kunnen er rustig zitten en praten in plaats van naar hun telefoon te kijken. Sommigen zeggen dat dit te veel geld kost, maar dat valt mee: de ouderraad wil graag helpen met de planten. Teken daarom de petitie bij de balie en laat de directeur zien dat jij een groen plein wilt!",
+   "v": "Hoe gaat de schrijver om met het bezwaar over de kosten, en waarom doet hij dat?",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Hij noemt het bezwaar zelf en geeft een antwoord: de ouderraad wil helpen (2p). Zo maakt hij zijn tekst overtuigender (1p)."
+  }
+ ]
+}
