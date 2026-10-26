@@ -355,6 +355,27 @@ var VAKKEN_VMBO = [
       "nOe": 5,
       "nBeg": 12,
       "hasSam": true
+     },
+     {
+      "id": "C5",
+      "lo": "nl.C.5",
+      "gs": 2,
+      "naam": "Standpunt en argumenten in een leestekst",
+      "beschrijving": "Je vindt in een betoog het standpunt, de argumenten, het voorbeeld, het bezwaar en de conclusie en beoordeelt hoe sterk de argumenten zijn.",
+      "ceStatus": "CE+SE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Het standpunt vinden",
+       "Argumenten herkennen",
+       "Voorbeeld en bezwaar",
+       "Signaalwoorden in een betoog",
+       "Conclusie en sterkte van argumenten"
+      ],
+      "nSv": 26,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
      }
     ]
    },

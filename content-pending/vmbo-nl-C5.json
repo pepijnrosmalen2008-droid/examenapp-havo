@@ -1,0 +1,661 @@
+{
+ "id": "C5",
+ "lo": "nl.C.5",
+ "gs": 2,
+ "naam": "Standpunt en argumenten in een leestekst",
+ "beschrijving": "Je vindt in een betoog het standpunt, de argumenten, het voorbeeld, het bezwaar en de conclusie en beoordeelt hoe sterk de argumenten zijn.",
+ "ceStatus": "CE+SE",
+ "binas": "",
+ "val": "",
+ "onderwerpen": [
+  "Het standpunt vinden",
+  "Argumenten herkennen",
+  "Voorbeeld en bezwaar",
+  "Signaalwoorden in een betoog",
+  "Conclusie en sterkte van argumenten"
+ ],
+ "sam": "In een betoog zegt de schrijver wat hij vindt (standpunt) en waarom (argumenten). Een voorbeeld maakt een argument concreet. Een goede schrijver noemt ook een bezwaar en geeft er een antwoord op. Het slot herhaalt het standpunt in een conclusie. Signaalwoorden als want, bovendien, maar en daarom helpen je de onderdelen te vinden. Een argument is sterk als het echt bij het standpunt past, een voorbeeld van één persoon is zwak.",
+ "begrippen": [
+  {
+   "t": "Betoog",
+   "d": "Een tekst waarin de schrijver zijn mening verdedigt."
+  },
+  {
+   "t": "Standpunt",
+   "d": "De mening die de schrijver verdedigt."
+  },
+  {
+   "t": "Argument",
+   "d": "Een reden waarom het standpunt klopt."
+  },
+  {
+   "t": "Voorbeeld",
+   "d": "Een concreet geval dat een argument ondersteunt."
+  },
+  {
+   "t": "Tegenargument",
+   "d": "Een bezwaar tegen het standpunt."
+  },
+  {
+   "t": "Weerlegging",
+   "d": "Een antwoord waarmee je een bezwaar kleiner maakt."
+  },
+  {
+   "t": "Conclusie",
+   "d": "De slotzin die het standpunt herhaalt."
+  },
+  {
+   "t": "Signaalwoord",
+   "d": "Een woord dat het verband laat zien, zoals want of maar."
+  },
+  {
+   "t": "Oproep",
+   "d": "Een zin die zegt wat de lezer moet doen."
+  },
+  {
+   "t": "Onderbouwing",
+   "d": "Redenen en voorbeelden bij een standpunt."
+  },
+  {
+   "t": "Sterk argument",
+   "d": "Een reden die echt bij het standpunt past."
+  },
+  {
+   "t": "Zwak argument",
+   "d": "Een reden die weinig bewijst."
+  }
+ ],
+ "sv": [
+  {
+   "v": "Wat is een standpunt?",
+   "o": [
+    "een reden voor een mening erbij",
+    "de mening van de schrijver",
+    "een voorbeeld uit de tekst",
+    "de laatste zin van de tekst"
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 0,
+   "u": "Standpunt = mening.",
+   "uo": [
+    "Koos je \"een reden voor een mening erbij\"? Dan denk je dat een standpunt een reden is. Een reden is een argument, en het standpunt is de mening zelf.",
+    "Klopt: het standpunt zegt wat de schrijver vindt of wil.",
+    "Koos je \"een voorbeeld uit de tekst\"? Dan denk je dat een standpunt een voorbeeld is. Een voorbeeld maakt een argument sterker, maar het is zelf geen standpunt.",
+    "Koos je \"de laatste zin van de tekst\"? Dan denk je dat een standpunt altijd de laatste zin is. Dat kan, maar niet altijd, het gaat om de inhoud: een mening."
+   ],
+   "uh": "Wat vindt de schrijver?"
+  },
+  {
+   "v": "Wat is een argument?",
+   "o": [
+    "de mening zelf van de schrijver",
+    "een vraag aan de lezer",
+    "een kopje boven de alinea",
+    "een reden voor het standpunt"
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 1,
+   "u": "Argument = reden.",
+   "uo": [
+    "Koos je \"de mening zelf van de schrijver\"? Dan denk je dat een argument de mening is. Dat is het standpunt, en een argument is de reden daarvoor.",
+    "Koos je \"een vraag aan de lezer\"? Dan denk je dat een argument een vraag is. Een vraag is geen reden, en ondersteunt niets.",
+    "Koos je \"een kopje boven de alinea\"? Dan denk je dat een argument een kop is. Een kop noemt het onderwerp, maar geeft geen reden.",
+    "Klopt: een argument ondersteunt het standpunt."
+   ],
+   "uh": "Waarom vindt hij dat?"
+  },
+  {
+   "v": "Hoe noem je een bezwaar tegen het standpunt?",
+   "o": [
+    "een tegenargument",
+    "een argument voor het standpunt",
+    "een conclusie",
+    "een voorbeeld"
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 2,
+   "u": "Tegenargument = bezwaar.",
+   "uo": [
+    "Klopt: een bezwaar is een reden waarom iemand het niet eens is.",
+    "Koos je \"een argument voor het standpunt\"? Dan denk je dat een bezwaar een argument is. Dat ondersteunt het standpunt, en een bezwaar gaat ertegenin.",
+    "Koos je \"een conclusie\"? Dan denk je dat een bezwaar de conclusie is. Een conclusie sluit af, en gaat niet tegen iets in.",
+    "Koos je \"een voorbeeld\"? Dan denk je dat een bezwaar een voorbeeld is. Een voorbeeld ondersteunt, en gaat niet tegenin."
+   ],
+   "uh": "Wat is het bezwaar?"
+  },
+  {
+   "v": "Wat doet een voorbeeld in een betoog?",
+   "o": [
+    "het vervangt het standpunt in de tekst",
+    "het zegt wat de lezer moet doen",
+    "het maakt een argument concreet",
+    "het maakt de tekst korter"
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 3,
+   "u": "Voorbeeld = concreet geval.",
+   "uo": [
+    "Koos je \"het vervangt het standpunt in de tekst\"? Dan denk je dat een voorbeeld het standpunt vervangt. Een voorbeeld ondersteunt een argument, en niet het standpunt zelf.",
+    "Koos je \"het zegt wat de lezer moet doen\"? Dan denk je dat een voorbeeld een oproep is. Een oproep zegt wat je moet doen, en een voorbeeld laat iets zien.",
+    "Klopt: een voorbeeld laat zien dat een argument klopt.",
+    "Koos je \"het maakt de tekst korter\"? Dan denk je dat een voorbeeld inkort. Een voorbeeld maakt de tekst juist langer, maar het verduidelijkt."
+   ],
+   "uh": "Welk geval noemt hij?"
+  },
+  {
+   "v": "Welk signaalwoord leidt vaak een argument in?",
+   "o": [
+    "kortom",
+    "maar",
+    "want",
+    "daarom"
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 4,
+   "u": "\"Want\" geeft een reden.",
+   "uo": [
+    "Koos je \"kortom\"? Dan denk je dat \"kortom\" de reden inleidt. Het sluit juist af met een samenvatting, en komt dus aan het einde.",
+    "Koos je \"maar\"? Dan denk je dat \"maar\" een gewone reden geeft. Het zet iets tegenover het eerdere, en kondigt een bezwaar of antwoord aan.",
+    "Klopt: \"want\" leidt de reden in waarom een standpunt klopt.",
+    "Koos je \"daarom\"? Dan denk je dat \"daarom\" de reden vooraf geeft. Het noemt juist wat eruit volgt, dus een gevolg of conclusie."
+   ],
+   "uh": "Welk woord geeft een reden?"
+  },
+  {
+   "v": "Welk woord leidt vaak de conclusie in?",
+   "o": [
+    "kortom",
+    "want",
+    "bovendien",
+    "bijvoorbeeld"
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 4,
+   "u": "\"Kortom\" en \"daarom\" sluiten af.",
+   "uo": [
+    "Klopt: \"kortom\" vat de hele tekst samen en leidt de conclusie in.",
+    "Koos je \"want\"? Dan denk je dat \"want\" een conclusie inleidt. Het geeft een reden vooraf, en geen samenvatting.",
+    "Koos je \"bovendien\"? Dan denk je dat \"bovendien\" een conclusie inleidt. Het voegt een argument toe, en sluit niet af.",
+    "Koos je \"bijvoorbeeld\"? Dan denk je dat \"bijvoorbeeld\" een conclusie inleidt. Het kondigt een voorbeeld aan, en sluit niet af."
+   ],
+   "uh": "Wat volgt aan het eind?"
+  },
+  {
+   "v": "Waar staat het standpunt vaak in een betoog?",
+   "o": [
+    "altijd in het midden van de tekst",
+    "nergens, het standpunt wordt verzwegen",
+    "alleen in de titel boven de tekst",
+    "in de inleiding of het slot"
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 0,
+   "u": "Begin of slot.",
+   "uo": [
+    "Koos je \"altijd in het midden van de tekst\"? Dan denk je dat het standpunt altijd in het midden staat. Meestal staat het vooraan of achteraan, zodat de lezer het snel vindt.",
+    "Koos je \"nergens, het standpunt wordt verzwegen\"? Dan denk je dat een betoog zijn standpunt verbergt. Een betoog zegt juist wat hij vindt, anders is het geen betoog.",
+    "Koos je \"alleen in de titel boven de tekst\"? Dan denk je dat het standpunt alleen in de titel staat. De titel noemt vaak het onderwerp, het standpunt staat in de tekst.",
+    "Klopt: de schrijver zegt dan meteen of op het eind wat hij vindt."
+   ],
+   "uh": "Waar zoek je?"
+  },
+  {
+   "v": "Welke zin is het standpunt in de tekst over de schooltijden?",
+   "o": [
+    "\"Veel leerlingen zijn 's ochtends nog moe.\"",
+    "\"Ik vind dat school later moet beginnen.\"",
+    "\"Mijn zus begint pas om negen uur.\"",
+    "\"Dat klopt, maar dan heb je 's middags nog tijd.\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 0,
+   "u": "Zoek \"ik vind dat\".",
+   "uo": [
+    "Koos je \"Veel leerlingen zijn 's ochtends nog moe.\"? Dan denk je dat dit het standpunt is. Het is een argument, dus een reden.",
+    "Klopt: hier zegt de schrijver met \"ik vind dat\" wat hij vindt.",
+    "Koos je \"Mijn zus begint pas om negen uur.\"? Dan denk je dat dit het standpunt is. Het is een voorbeeld, geen mening.",
+    "Koos je \"Dat klopt, maar dan heb je 's middags nog tijd.\"? Dan denk je dat dit het standpunt is. Het is een antwoord op een bezwaar, geen standpunt."
+   ],
+   "uh": "Wat vindt de schrijver?",
+   "ctx": "[1] Ik vind dat school later moet beginnen. [2] Veel leerlingen zijn 's ochtends nog moe, want ze gaan laat naar bed. Een uur later beginnen geeft ze meer rust, en slaaptekort is niet goed voor je concentratie. [3] Bovendien kun je dan beter opletten, zodat je betere cijfers haalt. Mijn zus begint pas om negen uur en zij haalt hoge cijfers. [4] Sommigen zeggen dat school dan ook later uit is. Dat klopt, maar dan heb je 's middags nog genoeg tijd voor sport en huiswerk. [5] Daarom moet de school later beginnen."
+  },
+  {
+   "v": "Welk argument noemt de schrijver in alinea 2?",
+   "o": [
+    "school is later uit",
+    "zijn zus haalt hoge cijfers op school",
+    "er is genoeg tijd voor sport en huiswerk",
+    "leerlingen zijn moe en hebben rust nodig"
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 1,
+   "u": "Argument = reden.",
+   "uo": [
+    "Koos je \"school is later uit\"? Dan denk je dat dit het argument is. Dat is het bezwaar uit alinea 4, en alinea 2 noemt moeheid.",
+    "Koos je \"zijn zus haalt hoge cijfers op school\"? Dan denk je dat dit het argument van alinea 2 is. Dat is het voorbeeld in alinea 3, en alinea 2 noemt moeheid.",
+    "Koos je \"er is genoeg tijd voor sport en huiswerk\"? Dan denk je dat dit het argument van alinea 2 is. Dat is het antwoord op het bezwaar in alinea 4, en alinea 2 noemt moeheid.",
+    "Klopt: dit is de reden die in alinea 2 voor het standpunt wordt gegeven."
+   ],
+   "uh": "Waarom moet het later?",
+   "ctx": "[1] Ik vind dat school later moet beginnen. [2] Veel leerlingen zijn 's ochtends nog moe, want ze gaan laat naar bed. Een uur later beginnen geeft ze meer rust, en slaaptekort is niet goed voor je concentratie. [3] Bovendien kun je dan beter opletten, zodat je betere cijfers haalt. Mijn zus begint pas om negen uur en zij haalt hoge cijfers. [4] Sommigen zeggen dat school dan ook later uit is. Dat klopt, maar dan heb je 's middags nog genoeg tijd voor sport en huiswerk. [5] Daarom moet de school later beginnen."
+  },
+  {
+   "v": "Welk voorbeeld gebruikt de schrijver in alinea 3?",
+   "o": [
+    "leerlingen gaan laat naar bed",
+    "zijn zus begint later en haalt hoge cijfers",
+    "school is later uit",
+    "de school moet later beginnen"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 3,
+   "u": "Voorbeeld = concreet geval.",
+   "uo": [
+    "Koos je \"leerlingen gaan laat naar bed\"? Dan denk je dat dit het voorbeeld is. Dat is een deel van het argument in alinea 2, en geen voorbeeld.",
+    "Klopt: dit is een concreet geval dat het argument ondersteunt.",
+    "Koos je \"school is later uit\"? Dan denk je dat dit het voorbeeld is. Dat is het bezwaar van alinea 4, en geen voorbeeld.",
+    "Koos je \"de school moet later beginnen\"? Dan denk je dat dit het voorbeeld is. Dat is het standpunt, en geen voorbeeld."
+   ],
+   "uh": "Wie wordt genoemd?",
+   "ctx": "[1] Ik vind dat school later moet beginnen. [2] Veel leerlingen zijn 's ochtends nog moe, want ze gaan laat naar bed. Een uur later beginnen geeft ze meer rust, en slaaptekort is niet goed voor je concentratie. [3] Bovendien kun je dan beter opletten, zodat je betere cijfers haalt. Mijn zus begint pas om negen uur en zij haalt hoge cijfers. [4] Sommigen zeggen dat school dan ook later uit is. Dat klopt, maar dan heb je 's middags nog genoeg tijd voor sport en huiswerk. [5] Daarom moet de school later beginnen."
+  },
+  {
+   "v": "Welk signaalwoord kondigt in alinea 4 het antwoord aan?",
+   "o": [
+    "daarom",
+    "bovendien",
+    "maar",
+    "want"
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 2,
+   "u": "\"Maar\" kondigt het antwoord aan.",
+   "uo": [
+    "Koos je \"daarom\"? Dan denk je dat \"daarom\" het antwoord aankondigt. Het leidt de conclusie in, en komt pas in alinea 5.",
+    "Koos je \"bovendien\"? Dan denk je dat \"bovendien\" het antwoord aankondigt. Het voegt een argument toe, en tegenwerpt niets.",
+    "Klopt: \"maar\" laat zien dat er een antwoord op het bezwaar volgt.",
+    "Koos je \"want\"? Dan denk je dat \"want\" het antwoord aankondigt. Het geeft de reden vooraf, en geeft niet aan dat er iets tegenin gaat."
+   ],
+   "uh": "Welk woord gaat tegenin?",
+   "ctx": "[1] Ik vind dat school later moet beginnen. [2] Veel leerlingen zijn 's ochtends nog moe, want ze gaan laat naar bed. Een uur later beginnen geeft ze meer rust, en slaaptekort is niet goed voor je concentratie. [3] Bovendien kun je dan beter opletten, zodat je betere cijfers haalt. Mijn zus begint pas om negen uur en zij haalt hoge cijfers. [4] Sommigen zeggen dat school dan ook later uit is. Dat klopt, maar dan heb je 's middags nog genoeg tijd voor sport en huiswerk. [5] Daarom moet de school later beginnen."
+  },
+  {
+   "v": "Hoe gaat de schrijver met het bezwaar om?",
+   "o": [
+    "hij erkent het en antwoordt",
+    "hij negeert het bezwaar volledig",
+    "hij geeft toe en verandert zijn mening",
+    "hij lacht om het bezwaar"
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 4,
+   "u": "Erkennen en antwoorden.",
+   "uo": [
+    "Klopt: hij zegt \"dat klopt, maar\" en geeft een antwoord.",
+    "Koos je \"hij negeert het bezwaar volledig\"? Dan denk je dat de schrijver het bezwaar negeert. Hij noemt het juist zelf, en geeft een antwoord.",
+    "Koos je \"hij geeft toe en verandert zijn mening\"? Dan denk je dat de schrijver zijn mening verandert. Hij blijft bij zijn standpunt, en eindigt met \"daarom\".",
+    "Koos je \"hij lacht om het bezwaar\"? Dan denk je dat de schrijver het bezwaar belachelijk maakt. Hij blijft serieus, en geeft een antwoord."
+   ],
+   "uh": "Wat zegt hij na \"dat klopt\"?",
+   "ctx": "[1] Ik vind dat school later moet beginnen. [2] Veel leerlingen zijn 's ochtends nog moe, want ze gaan laat naar bed. Een uur later beginnen geeft ze meer rust, en slaaptekort is niet goed voor je concentratie. [3] Bovendien kun je dan beter opletten, zodat je betere cijfers haalt. Mijn zus begint pas om negen uur en zij haalt hoge cijfers. [4] Sommigen zeggen dat school dan ook later uit is. Dat klopt, maar dan heb je 's middags nog genoeg tijd voor sport en huiswerk. [5] Daarom moet de school later beginnen."
+  },
+  {
+   "v": "Welk standpunt verdedigt de schrijver van de tekst over de bus?",
+   "o": [
+    "scholieren moeten gratis met de bus reizen",
+    "de gemeente moet geld krijgen",
+    "er moeten meer auto's komen",
+    "ouders moeten meer betalen"
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 0,
+   "u": "Zoek \"moeten\".",
+   "uo": [
+    "Klopt: dit staat in alinea 1 en wordt in alinea 5 herhaald.",
+    "Koos je \"de gemeente moet geld krijgen\"? Dan denk je dat de gemeente centraal staat. Zij komt alleen voor als betaler in het bezwaar, en haar geld is niet het standpunt.",
+    "Koos je \"er moeten meer auto's komen\"? Dan denk je dat de schrijver meer auto's wil. Hij noemt juist dat er minder auto's komen, en dat is een gevolg van gratis reizen.",
+    "Koos je \"ouders moeten meer betalen\"? Dan denk je dat ouders meer moeten bijdragen. De schrijver wil dat gezinnen geld overhouden, dus de kosten dalen."
+   ],
+   "uh": "Wat wil de schrijver?",
+   "ctx": "[1] Scholieren moeten gratis met de bus kunnen reizen. [2] Ouders betalen nu veel geld voor de buskaart van hun kind. Als het gratis wordt, houden gezinnen meer geld over. [3] Bovendien gaan er dan meer leerlingen met de bus in plaats van met de auto, zodat het verkeer rustiger wordt. Een klas uit mijn buurt reisde vorig jaar samen met de bus en kwam nooit te laat. [4] Een bezwaar is dat de gemeente het moet betalen. Toch is dat goed te doen, want er zijn minder auto's en dus minder wegwerkzaamheden. [5] Kortom: laat scholieren gratis reizen."
+  },
+  {
+   "v": "Welk argument voor gratis busreizen staat in alinea 2?",
+   "o": [
+    "er zijn minder auto's op de weg in de stad",
+    "een klas kwam nooit te laat op school",
+    "gezinnen houden meer geld over",
+    "de gemeente betaalt veel geld voor de bus"
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 1,
+   "u": "Welke reden hoort bij welke alinea?",
+   "uo": [
+    "Koos je \"er zijn minder auto's op de weg in de stad\"? Dan denk je dat dit het argument van alinea 2 is. Dat is een argument uit alinea 3, en alinea 2 gaat over geld.",
+    "Koos je \"een klas kwam nooit te laat op school\"? Dan denk je dat dit het argument van alinea 2 is. Dat is het voorbeeld uit alinea 3, en alinea 2 gaat over geld.",
+    "Klopt: de schrijver zegt dat ouders nu veel betalen.",
+    "Koos je \"de gemeente betaalt veel geld voor de bus\"? Dan denk je dat dit het argument van alinea 2 is. Dat is juist het bezwaar uit alinea 4, en alinea 2 gaat over geld."
+   ],
+   "uh": "Wat noemt alinea 2?",
+   "ctx": "[1] Scholieren moeten gratis met de bus kunnen reizen. [2] Ouders betalen nu veel geld voor de buskaart van hun kind. Als het gratis wordt, houden gezinnen meer geld over. [3] Bovendien gaan er dan meer leerlingen met de bus in plaats van met de auto, zodat het verkeer rustiger wordt. Een klas uit mijn buurt reisde vorig jaar samen met de bus en kwam nooit te laat. [4] Een bezwaar is dat de gemeente het moet betalen. Toch is dat goed te doen, want er zijn minder auto's en dus minder wegwerkzaamheden. [5] Kortom: laat scholieren gratis reizen."
+  },
+  {
+   "v": "Welk voorbeeld staat in de tekst over de bus?",
+   "o": [
+    "ouders betalen veel voor de buskaart",
+    "een klas kwam nooit te laat",
+    "er zijn minder wegwerkzaamheden",
+    "scholieren moeten gratis reizen"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 3,
+   "u": "Voorbeeld = concreet geval.",
+   "uo": [
+    "Koos je \"ouders betalen veel voor de buskaart\"? Dan denk je dat dit het voorbeeld is. Het is een argument, en geen concreet geval.",
+    "Klopt: het is een concreet geval bij het argument over de bus.",
+    "Koos je \"er zijn minder wegwerkzaamheden\"? Dan denk je dat dit het voorbeeld is. Het is een deel van het antwoord op het bezwaar, en geen voorbeeld.",
+    "Koos je \"scholieren moeten gratis reizen\"? Dan denk je dat dit het voorbeeld is. Het is het standpunt, en geen voorbeeld."
+   ],
+   "uh": "Wie wordt genoemd?",
+   "ctx": "[1] Scholieren moeten gratis met de bus kunnen reizen. [2] Ouders betalen nu veel geld voor de buskaart van hun kind. Als het gratis wordt, houden gezinnen meer geld over. [3] Bovendien gaan er dan meer leerlingen met de bus in plaats van met de auto, zodat het verkeer rustiger wordt. Een klas uit mijn buurt reisde vorig jaar samen met de bus en kwam nooit te laat. [4] Een bezwaar is dat de gemeente het moet betalen. Toch is dat goed te doen, want er zijn minder auto's en dus minder wegwerkzaamheden. [5] Kortom: laat scholieren gratis reizen."
+  },
+  {
+   "v": "Waarom beantwoordt de schrijver het bezwaar over de kosten?",
+   "o": [
+    "omdat hij zelf twijfelt aan zijn standpunt",
+    "omdat de gemeente hem dwingt",
+    "omdat hij het bezwaar niet begrijpt",
+    "zo wordt zijn standpunt sterker"
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 2,
+   "u": "Bezwaar en antwoord.",
+   "uo": [
+    "Koos je \"omdat hij zelf twijfelt aan zijn standpunt\"? Dan denk je dat de schrijver twijfelt. Hij eindigt met \"kortom, laat scholieren gratis reizen\", dus hij is zeker.",
+    "Koos je \"omdat de gemeente hem dwingt\"? Dan denk je dat de gemeente hem dwingt. Dat staat nergens, en hij kiest zelf wat hij schrijft.",
+    "Koos je \"omdat hij het bezwaar niet begrijpt\"? Dan denk je dat hij het niet snapt. Hij geeft een antwoord, dus hij begrijpt het wel.",
+    "Klopt: een bezwaar met een goed antwoord maakt de tekst overtuigender."
+   ],
+   "uh": "Wat bereikt hij?",
+   "ctx": "[1] Scholieren moeten gratis met de bus kunnen reizen. [2] Ouders betalen nu veel geld voor de buskaart van hun kind. Als het gratis wordt, houden gezinnen meer geld over. [3] Bovendien gaan er dan meer leerlingen met de bus in plaats van met de auto, zodat het verkeer rustiger wordt. Een klas uit mijn buurt reisde vorig jaar samen met de bus en kwam nooit te laat. [4] Een bezwaar is dat de gemeente het moet betalen. Toch is dat goed te doen, want er zijn minder auto's en dus minder wegwerkzaamheden. [5] Kortom: laat scholieren gratis reizen."
+  },
+  {
+   "v": "Welke zin is de conclusie van de tekst over de bus?",
+   "o": [
+    "\"Ouders betalen nu veel geld.\"",
+    "\"Kortom: laat scholieren gratis reizen.\"",
+    "\"Een bezwaar is dat de gemeente het moet betalen.\"",
+    "\"Een klas kwam nooit te laat.\""
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 4,
+   "u": "\"Kortom\" kondigt de conclusie aan.",
+   "uo": [
+    "Koos je \"Ouders betalen nu veel geld.\"? Dan denk je dat dit de conclusie is. Het noemt een kostenpunt voor ouders, en dat is een argument in het begin.",
+    "Klopt: deze zin herhaalt het standpunt aan het eind.",
+    "Koos je \"Een bezwaar is dat de gemeente het moet betalen.\"? Dan denk je dat dit de conclusie is. Het noemt een tegenwerping van anderen, en die komt voor het slot.",
+    "Koos je \"Een klas kwam nooit te laat.\"? Dan denk je dat dit de conclusie is. Het beschrijft een gebeurtenis in de klas, en dat is een voorbeeld in het midden."
+   ],
+   "uh": "Hoe eindigt de tekst?",
+   "ctx": "[1] Scholieren moeten gratis met de bus kunnen reizen. [2] Ouders betalen nu veel geld voor de buskaart van hun kind. Als het gratis wordt, houden gezinnen meer geld over. [3] Bovendien gaan er dan meer leerlingen met de bus in plaats van met de auto, zodat het verkeer rustiger wordt. Een klas uit mijn buurt reisde vorig jaar samen met de bus en kwam nooit te laat. [4] Een bezwaar is dat de gemeente het moet betalen. Toch is dat goed te doen, want er zijn minder auto's en dus minder wegwerkzaamheden. [5] Kortom: laat scholieren gratis reizen."
+  },
+  {
+   "v": "Welk standpunt verdedigt de schrijver van de tekst over het uniform?",
+   "o": [
+    "een uniform is niet nodig",
+    "alle leerlingen moeten hetzelfde dragen op school",
+    "kleding moet duurder worden",
+    "pesten moet verboden worden"
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 0,
+   "u": "Zoek \"ik vind dat\".",
+   "uo": [
+    "Klopt: dit zegt de schrijver in alinea 1 en 5.",
+    "Koos je \"alle leerlingen moeten hetzelfde dragen op school\"? Dan denk je dat de schrijver het uniform wil. Hij is er juist tegen, dus dit klopt niet.",
+    "Koos je \"kleding moet duurder worden\"? Dan denk je dat de schrijver duurdere kleding wil. Hij noemt het uniform duur, dus dit klopt niet.",
+    "Koos je \"pesten moet verboden worden\"? Dan denk je dat het standpunt over pesten gaat. Pesten komt alleen in het bezwaar voor, dus dit klopt niet."
+   ],
+   "uh": "Wat wil hij?",
+   "ctx": "[1] Ik vind dat het dragen van een schooluniform niet nodig is. [2] Leerlingen willen zichzelf laten zien met hun kleding, want zo kun je jezelf zijn. Een uniform maakt iedereen gelijk en dat past niet bij iedereen. [3] Bovendien kost een uniform veel geld, terwijl gewone kleding al in de kast hangt. In mijn klas droeg een leerling vorig jaar een jas van zijn broer omdat het uniform te duur was. [4] Voorstanders zeggen dat een uniform pesten tegengaat. Dat is zo, maar pesters vinden altijd iets anders. [5] Daarom hoeft er geen uniform te komen."
+  },
+  {
+   "v": "Welk argument noemt de schrijver in alinea 2?",
+   "o": [
+    "een uniform is veel te duur voor ouders",
+    "pesters vinden toch iets anders",
+    "de jas van de broer was te duur",
+    "leerlingen willen zichzelf zijn"
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 1,
+   "u": "Welke reden hoort bij alinea 2?",
+   "uo": [
+    "Koos je \"een uniform is veel te duur voor ouders\"? Dan denk je dat dit het argument van alinea 2 is. Dat is het argument van alinea 3, en alinea 2 gaat over jezelf zijn.",
+    "Koos je \"pesters vinden toch iets anders\"? Dan denk je dat dit het argument van alinea 2 is. Dat is het antwoord op het bezwaar, en geen argument.",
+    "Koos je \"de jas van de broer was te duur\"? Dan denk je dat dit het argument van alinea 2 is. Dat is het voorbeeld in alinea 3, en geen argument.",
+    "Klopt: dit is de reden die alinea 2 tegen het uniform noemt."
+   ],
+   "uh": "Wat noemt alinea 2?",
+   "ctx": "[1] Ik vind dat het dragen van een schooluniform niet nodig is. [2] Leerlingen willen zichzelf laten zien met hun kleding, want zo kun je jezelf zijn. Een uniform maakt iedereen gelijk en dat past niet bij iedereen. [3] Bovendien kost een uniform veel geld, terwijl gewone kleding al in de kast hangt. In mijn klas droeg een leerling vorig jaar een jas van zijn broer omdat het uniform te duur was. [4] Voorstanders zeggen dat een uniform pesten tegengaat. Dat is zo, maar pesters vinden altijd iets anders. [5] Daarom hoeft er geen uniform te komen."
+  },
+  {
+   "v": "Hoe reageert de schrijver op de voorstanders van het uniform?",
+   "o": [
+    "hij geeft hen groot gelijk en verandert zijn mening",
+    "hij negeert hen en noemt een ander onderwerp",
+    "hij erkent het en zegt dat pesters iets anders vinden",
+    "hij zegt dat een uniform veel geld kost"
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 2,
+   "u": "Erkennen en antwoorden.",
+   "uo": [
+    "Koos je \"hij geeft hen groot gelijk en verandert zijn mening\"? Dan denk je dat de schrijver van mening verandert. Hij sluit af met \"daarom hoeft er geen uniform te komen\", dus hij blijft bij zijn standpunt.",
+    "Koos je \"hij negeert hen en noemt een ander onderwerp\"? Dan denk je dat hij hen overslaat. Hij noemt hun bezwaar juist zelf, en geeft er een antwoord op.",
+    "Klopt: hij zegt \"dat is zo, maar\" en geeft een antwoord.",
+    "Koos je \"hij zegt dat een uniform veel geld kost\"? Dan denk je dat dit zijn antwoord is. Dat is zijn argument uit alinea 3, en geen reactie op de voorstanders."
+   ],
+   "uh": "Wat zegt hij na \"dat is zo\"?",
+   "ctx": "[1] Ik vind dat het dragen van een schooluniform niet nodig is. [2] Leerlingen willen zichzelf laten zien met hun kleding, want zo kun je jezelf zijn. Een uniform maakt iedereen gelijk en dat past niet bij iedereen. [3] Bovendien kost een uniform veel geld, terwijl gewone kleding al in de kast hangt. In mijn klas droeg een leerling vorig jaar een jas van zijn broer omdat het uniform te duur was. [4] Voorstanders zeggen dat een uniform pesten tegengaat. Dat is zo, maar pesters vinden altijd iets anders. [5] Daarom hoeft er geen uniform te komen."
+  },
+  {
+   "v": "Welk zwak punt zit in het voorbeeld over de jas van de broer?",
+   "o": [
+    "het voorbeeld heeft een getal",
+    "het voorbeeld staat in de inleiding",
+    "het gaat om één leerling",
+    "het voorbeeld is te lang"
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 3,
+   "u": "Eén geval bewijst weinig.",
+   "uo": [
+    "Koos je \"het voorbeeld heeft een getal\"? Dan denk je dat een getal het probleem is. Er staat geen getal in, en dat is niet het zwakke punt.",
+    "Koos je \"het voorbeeld staat in de inleiding\"? Dan denk je dat de plaats het probleem is. Het voorbeeld staat in alinea 3, en de plaats is geen zwak punt.",
+    "Klopt: één geval is niet genoeg om iets van iedereen te bewijzen.",
+    "Koos je \"het voorbeeld is te lang\"? Dan denk je dat de lengte het probleem is. Het is kort, en lengte is geen zwak punt."
+   ],
+   "uh": "Over wie gaat het?",
+   "ctx": "[1] Ik vind dat het dragen van een schooluniform niet nodig is. [2] Leerlingen willen zichzelf laten zien met hun kleding, want zo kun je jezelf zijn. Een uniform maakt iedereen gelijk en dat past niet bij iedereen. [3] Bovendien kost een uniform veel geld, terwijl gewone kleding al in de kast hangt. In mijn klas droeg een leerling vorig jaar een jas van zijn broer omdat het uniform te duur was. [4] Voorstanders zeggen dat een uniform pesten tegengaat. Dat is zo, maar pesters vinden altijd iets anders. [5] Daarom hoeft er geen uniform te komen."
+  },
+  {
+   "v": "Welk signaalwoord kondigt een extra argument aan?",
+   "o": [
+    "maar",
+    "daarom",
+    "want",
+    "bovendien"
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 4,
+   "u": "\"Bovendien\" voegt toe.",
+   "uo": [
+    "Koos je \"maar\"? Dan denk je dat \"maar\" een extra argument aankondigt. Het kondigt een bezwaar of antwoord aan, en voegt niets toe.",
+    "Koos je \"daarom\"? Dan denk je dat \"daarom\" een extra argument aankondigt. Het leidt de conclusie in, en voegt niets toe.",
+    "Koos je \"want\"? Dan denk je dat \"want\" een extra argument aankondigt. Het geeft de reden bij een standpunt, en voegt geen tweede argument toe.",
+    "Klopt: \"bovendien\" voegt iets toe aan wat al gezegd is."
+   ],
+   "uh": "Wat komt erbij?",
+   "ctx": "[1] Ik vind dat het dragen van een schooluniform niet nodig is. [2] Leerlingen willen zichzelf laten zien met hun kleding, want zo kun je jezelf zijn. Een uniform maakt iedereen gelijk en dat past niet bij iedereen. [3] Bovendien kost een uniform veel geld, terwijl gewone kleding al in de kast hangt. In mijn klas droeg een leerling vorig jaar een jas van zijn broer omdat het uniform te duur was. [4] Voorstanders zeggen dat een uniform pesten tegengaat. Dat is zo, maar pesters vinden altijd iets anders. [5] Daarom hoeft er geen uniform te komen."
+  },
+  {
+   "v": "Welke zin hoort bij de conclusie van de tekst over de schooltijden?",
+   "o": [
+    "\"Daarom moet school later beginnen.\"",
+    "\"Veel leerlingen zijn 's ochtends moe.\"",
+    "\"Mijn zus begint om negen uur.\"",
+    "\"Sommigen zeggen dat school dan later uit is.\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 0,
+   "u": "\"Daarom\" leidt de conclusie in.",
+   "uo": [
+    "Klopt: dit herhaalt het standpunt en sluit af.",
+    "Koos je \"Veel leerlingen zijn 's ochtends moe.\"? Dan denk je dat dit de conclusie is. Het is een argument, en geen afsluiting.",
+    "Koos je \"Mijn zus begint om negen uur.\"? Dan denk je dat dit de conclusie is. Het is een voorbeeld, en geen afsluiting.",
+    "Koos je \"Sommigen zeggen dat school dan later uit is.\"? Dan denk je dat dit de conclusie is. Het is een bezwaar, en geen afsluiting."
+   ],
+   "uh": "Hoe eindigt de tekst?",
+   "ctx": "[1] Ik vind dat school later moet beginnen. [2] Veel leerlingen zijn 's ochtends nog moe, want ze gaan laat naar bed. Een uur later beginnen geeft ze meer rust, en slaaptekort is niet goed voor je concentratie. [3] Bovendien kun je dan beter opletten, zodat je betere cijfers haalt. Mijn zus begint pas om negen uur en zij haalt hoge cijfers. [4] Sommigen zeggen dat school dan ook later uit is. Dat klopt, maar dan heb je 's middags nog genoeg tijd voor sport en huiswerk. [5] Daarom moet de school later beginnen."
+  },
+  {
+   "v": "Welk argument is het sterkst voor het standpunt over de schooltijden?",
+   "o": [
+    "de schrijver heeft een zus die later begint",
+    "later beginnen helpt bij opletten",
+    "school kan later uit",
+    "sport is leuk"
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 1,
+   "u": "Redenen die echt bij het standpunt horen.",
+   "uo": [
+    "Koos je \"de schrijver heeft een zus die later begint\"? Dan denk je dat de zus een sterk argument is. Een zus is één persoon, en bewijst niets voor alle leerlingen.",
+    "Klopt: dit verbindt het standpunt met een duidelijk gevolg.",
+    "Koos je \"school kan later uit\"? Dan denk je dat dit sterk is. Dit is juist een bezwaar, en geen argument voor het standpunt.",
+    "Koos je \"sport is leuk\"? Dan denk je dat dit sterk is. Het gaat niet over schooltijden, en het ondersteunt het standpunt niet."
+   ],
+   "uh": "Wat ondersteunt het standpunt?",
+   "ctx": "[1] Ik vind dat school later moet beginnen. [2] Veel leerlingen zijn 's ochtends nog moe, want ze gaan laat naar bed. Een uur later beginnen geeft ze meer rust, en slaaptekort is niet goed voor je concentratie. [3] Bovendien kun je dan beter opletten, zodat je betere cijfers haalt. Mijn zus begint pas om negen uur en zij haalt hoge cijfers. [4] Sommigen zeggen dat school dan ook later uit is. Dat klopt, maar dan heb je 's middags nog genoeg tijd voor sport en huiswerk. [5] Daarom moet de school later beginnen."
+  },
+  {
+   "v": "Wat gebeurt er met het standpunt als het bezwaar over later uit zou gaan zonder antwoord?",
+   "o": [
+    "het standpunt wordt daardoor een feit",
+    "het standpunt verdwijnt uit de tekst",
+    "het bezwaar wordt een argument voor de schrijver",
+    "de tekst overtuigt minder"
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 2,
+   "u": "Antwoord op een bezwaar maakt sterker.",
+   "uo": [
+    "Koos je \"het standpunt wordt daardoor een feit\"? Dan denk je dat een bezwaar het standpunt een feit maakt. Het blijft een mening, maar nu zonder verdediging.",
+    "Koos je \"het standpunt verdwijnt uit de tekst\"? Dan denk je dat het standpunt verdwijnt. Het staat nog in de tekst, maar het is minder sterk.",
+    "Koos je \"het bezwaar wordt een argument voor de schrijver\"? Dan denk je dat het bezwaar voor hem werkt. Het blijft een bezwaar, en schaadt hem.",
+    "Klopt: een bezwaar zonder antwoord laat een gat in het betoog."
+   ],
+   "uh": "Wat ontbreekt?",
+   "ctx": "[1] Ik vind dat school later moet beginnen. [2] Veel leerlingen zijn 's ochtends nog moe, want ze gaan laat naar bed. Een uur later beginnen geeft ze meer rust, en slaaptekort is niet goed voor je concentratie. [3] Bovendien kun je dan beter opletten, zodat je betere cijfers haalt. Mijn zus begint pas om negen uur en zij haalt hoge cijfers. [4] Sommigen zeggen dat school dan ook later uit is. Dat klopt, maar dan heb je 's middags nog genoeg tijd voor sport en huiswerk. [5] Daarom moet de school later beginnen."
+  },
+  {
+   "v": "Welk zwak punt heeft het voorbeeld over de klas uit de buurt?",
+   "o": [
+    "het gaat om één klas",
+    "het voorbeeld is te kort",
+    "het voorbeeld staat in alinea 3",
+    "het voorbeeld noemt een bus"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 3,
+   "u": "Eén geval bewijst weinig.",
+   "uo": [
+    "Klopt: één klas bewijst niet dat alle scholieren nooit te laat komen.",
+    "Koos je \"het voorbeeld is te kort\"? Dan denk je dat de lengte het probleem is. Een kort voorbeeld kan sterk zijn, maar het gaat om het aantal gevallen.",
+    "Koos je \"het voorbeeld staat in alinea 3\"? Dan denk je dat de plaats het probleem is. Een voorbeeld hoort bij een argument, en de plaats maakt het niet zwak.",
+    "Koos je \"het voorbeeld noemt een bus\"? Dan denk je dat de bus het probleem is. De bus past bij het onderwerp, dus dat is niet het zwakke punt."
+   ],
+   "uh": "Over wie gaat het?",
+   "ctx": "[1] Scholieren moeten gratis met de bus kunnen reizen. [2] Ouders betalen nu veel geld voor de buskaart van hun kind. Als het gratis wordt, houden gezinnen meer geld over. [3] Bovendien gaan er dan meer leerlingen met de bus in plaats van met de auto, zodat het verkeer rustiger wordt. Een klas uit mijn buurt reisde vorig jaar samen met de bus en kwam nooit te laat. [4] Een bezwaar is dat de gemeente het moet betalen. Toch is dat goed te doen, want er zijn minder auto's en dus minder wegwerkzaamheden. [5] Kortom: laat scholieren gratis reizen."
+  }
+ ],
+ "oe": [
+  {
+   "bron": "Examenstijl",
+   "ctx": "[1] Ik vind dat school later moet beginnen. [2] Veel leerlingen zijn 's ochtends nog moe, want ze gaan laat naar bed. Een uur later beginnen geeft ze meer rust, en slaaptekort is niet goed voor je concentratie. [3] Bovendien kun je dan beter opletten, zodat je betere cijfers haalt. Mijn zus begint pas om negen uur en zij haalt hoge cijfers. [4] Sommigen zeggen dat school dan ook later uit is. Dat klopt, maar dan heb je 's middags nog genoeg tijd voor sport en huiswerk. [5] Daarom moet de school later beginnen.",
+   "v": "Noem het standpunt, één argument en het bezwaar uit deze tekst.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Standpunt: school moet later beginnen (1p). Argument: leerlingen zijn 's ochtends moe of kunnen beter opletten (1p). Bezwaar: school is dan later uit (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "[1] Ik vind dat school later moet beginnen. [2] Veel leerlingen zijn 's ochtends nog moe, want ze gaan laat naar bed. Een uur later beginnen geeft ze meer rust, en slaaptekort is niet goed voor je concentratie. [3] Bovendien kun je dan beter opletten, zodat je betere cijfers haalt. Mijn zus begint pas om negen uur en zij haalt hoge cijfers. [4] Sommigen zeggen dat school dan ook later uit is. Dat klopt, maar dan heb je 's middags nog genoeg tijd voor sport en huiswerk. [5] Daarom moet de school later beginnen.",
+   "v": "Hoe gaat de schrijver met het bezwaar om? Citeer de zin.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Hij erkent het en geeft een antwoord (1p): \"Dat klopt, maar dan heb je 's middags nog genoeg tijd voor sport en huiswerk\" (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "[1] Scholieren moeten gratis met de bus kunnen reizen. [2] Ouders betalen nu veel geld voor de buskaart van hun kind. Als het gratis wordt, houden gezinnen meer geld over. [3] Bovendien gaan er dan meer leerlingen met de bus in plaats van met de auto, zodat het verkeer rustiger wordt. Een klas uit mijn buurt reisde vorig jaar samen met de bus en kwam nooit te laat. [4] Een bezwaar is dat de gemeente het moet betalen. Toch is dat goed te doen, want er zijn minder auto's en dus minder wegwerkzaamheden. [5] Kortom: laat scholieren gratis reizen.",
+   "v": "Noem het standpunt en twee argumenten uit de tekst over de bus.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Standpunt: scholieren moeten gratis met de bus reizen (1p). Argumenten: gezinnen houden meer geld over (1p) en het verkeer wordt rustiger (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "[1] Ik vind dat het dragen van een schooluniform niet nodig is. [2] Leerlingen willen zichzelf laten zien met hun kleding, want zo kun je jezelf zijn. Een uniform maakt iedereen gelijk en dat past niet bij iedereen. [3] Bovendien kost een uniform veel geld, terwijl gewone kleding al in de kast hangt. In mijn klas droeg een leerling vorig jaar een jas van zijn broer omdat het uniform te duur was. [4] Voorstanders zeggen dat een uniform pesten tegengaat. Dat is zo, maar pesters vinden altijd iets anders. [5] Daarom hoeft er geen uniform te komen.",
+   "v": "Wat is het bezwaar in de tekst over het uniform en wat is het antwoord van de schrijver?",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Bezwaar: een uniform gaat pesten tegen (1p). Antwoord: pesters vinden altijd iets anders (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "[1] Ik vind dat het dragen van een schooluniform niet nodig is. [2] Leerlingen willen zichzelf laten zien met hun kleding, want zo kun je jezelf zijn. Een uniform maakt iedereen gelijk en dat past niet bij iedereen. [3] Bovendien kost een uniform veel geld, terwijl gewone kleding al in de kast hangt. In mijn klas droeg een leerling vorig jaar een jas van zijn broer omdat het uniform te duur was. [4] Voorstanders zeggen dat een uniform pesten tegengaat. Dat is zo, maar pesters vinden altijd iets anders. [5] Daarom hoeft er geen uniform te komen.",
+   "v": "Welk zwak punt zit er in het voorbeeld over de jas? Leg uit.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Het gaat om één leerling (1p), dus het bewijst niet dat het voor iedereen geldt (1p)."
+  }
+ ]
+}

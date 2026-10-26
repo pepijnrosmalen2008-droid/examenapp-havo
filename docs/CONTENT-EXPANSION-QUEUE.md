@@ -19,7 +19,7 @@
    leerdoelen van het domein af, vink dan ook het domein af.
 4. Bij een rode poort: niets pushen, wél melden.
 
-> Voortgang: **91 leerdoelen op v2** (havo bi.M3, nl.A1 t/m nl.A7, nl.B1 t/m nl.B5, nl.C1 t/m nl.C6, nl.D1 t/m nl.D6, nl.F1 t/m nl.F6, en.A1, en.A2, en.A3, en.A4, en.A5, en.A6, en.A7, en.A8, en.B1, en.B2, en.B3, en.B4, en.B5, en.B6, en.B7, en.B8, vwo nl.A1, vwo nl.A2, vwo nl.A3, vwo nl.A4, vwo nl.A5, vwo nl.A6, vwo nl.A7, vwo nl.B1, vwo nl.B2, vwo nl.B3, vwo nl.B4, vwo nl.B5, vwo nl.C1, vwo nl.C2, vwo nl.C3, vwo nl.C4, vwo nl.C5, vwo nl.C6, vwo nl.D1, vwo nl.D2, vwo nl.D3, vwo nl.D4, vwo nl.D5, vwo nl.D6, vwo nl.E1, vwo nl.E2, vwo nl.E3, vwo nl.E4, vwo nl.E5, vwo nl.E6, vmbo nl.A1, vmbo nl.A2, vmbo nl.A3, vmbo nl.A4, vmbo nl.A5, vmbo nl.B1, vmbo nl.B2, vmbo nl.B3, vmbo nl.B4, vmbo nl.B5, vmbo nl.C1, vmbo nl.C2, vmbo nl.C3, vmbo nl.C4). Werk dit getal bij bij elke afronding.
+> Voortgang: **92 leerdoelen op v2** (havo bi.M3, nl.A1 t/m nl.A7, nl.B1 t/m nl.B5, nl.C1 t/m nl.C6, nl.D1 t/m nl.D6, nl.F1 t/m nl.F6, en.A1, en.A2, en.A3, en.A4, en.A5, en.A6, en.A7, en.A8, en.B1, en.B2, en.B3, en.B4, en.B5, en.B6, en.B7, en.B8, vwo nl.A1, vwo nl.A2, vwo nl.A3, vwo nl.A4, vwo nl.A5, vwo nl.A6, vwo nl.A7, vwo nl.B1, vwo nl.B2, vwo nl.B3, vwo nl.B4, vwo nl.B5, vwo nl.C1, vwo nl.C2, vwo nl.C3, vwo nl.C4, vwo nl.C5, vwo nl.C6, vwo nl.D1, vwo nl.D2, vwo nl.D3, vwo nl.D4, vwo nl.D5, vwo nl.D6, vwo nl.E1, vwo nl.E2, vwo nl.E3, vwo nl.E4, vwo nl.E5, vwo nl.E6, vmbo nl.A1, vmbo nl.A2, vmbo nl.A3, vmbo nl.A4, vmbo nl.A5, vmbo nl.B1, vmbo nl.B2, vmbo nl.B3, vmbo nl.B4, vmbo nl.B5, vmbo nl.C1, vmbo nl.C2, vmbo nl.C3, vmbo nl.C4, vmbo nl.C5). Werk dit getal bij bij elke afronding.
 > Oude stand (v1, domeinniveau): 7/220 domeinen; die tellen niet meer als af.
 >
 > **Omvang (okt 2026):** 220 domeinen (havo 59, vwo 84, vmbo 77) × gemiddeld ~6 leerdoelen
@@ -113,12 +113,12 @@
   - [x] B3 · nl.B.3 Duidelijk en overtuigend presenteren · 26 vragen (R1 7, R2 10, R3 9, 19 met eigen situatie), 12 begrippen, 4 figuren (volume en tempo, houding, overtuigen, ademhaling), geen clip
   - [x] B4 · nl.B.4 Deelnemen aan een gesprek of discussie · 26 vragen (R1 7, R2 10, R3 9, 19 met eigen gesprek), 12 begrippen, 4 figuren (beurten, standpunt en tegenargument, reageren, compromis), geen clip
   - [x] B5 · nl.B.5 Reageren op vragen en feedback · 27 vragen (R1 7, R2 11, R3 9, 20 met eigen situatie), 12 begrippen, 4 figuren (publieksvraag, top en tip, concrete feedback, cirkel van verbeteren), geen clip
-- [ ] **VMBO · Nederlands** (`nl`) · domein C — Leesvaardigheid
+- [x] **VMBO · Nederlands** (`nl`) · domein C — Leesvaardigheid (5 van 5 leerdoelen op v2)
   - [x] C1 · nl.C.1 Tekstsoorten en schrijfdoel herkennen · 26 vragen (R1 7, R2 10, R3 9, 19 met eigen leestekst, 4 teksten van 500-570 tekens), 12 begrippen, 4 figuren (schrijfdoelen, instructie en verhaal, signalen, overtuigende tekst), geen clip
   - [x] C2 · nl.C.2 Tekststructuur en signaalwoorden · 27 vragen (R1 7, R2 11, R3 9, 20 met eigen leestekst, 3 teksten van 547-582 tekens), 12 begrippen, 4 figuren (alinea met kernzin, signaalwoorden, vier structuren, opbouw), geen clip
   - [x] C3 · nl.C.3 Hoofdgedachte en deelonderwerpen · 26 vragen (R1 7, R2 10, R3 9, 19 met eigen leestekst, 3 teksten van 537-571 tekens met genummerde alinea's), 12 begrippen, 4 figuren (boom hoofdgedachte, tussenkopjes, inleiding-kern-slot, samenvatten), geen clip
   - [x] C4 · nl.C.4 Feiten en meningen in een tekst · 26 vragen (R1 7, R2 10, R3 9, 19 met eigen leestekst, 3 teksten van 507-531 tekens), 12 begrippen, 4 figuren (beslisschema, signalen, zin splitsen, betrouwbaarheid), geen clip
-  - [ ] C5 · nl.C.5 Standpunt en argumenten in een leestekst
+  - [x] C5 · nl.C.5 Standpunt en argumenten in een leestekst · 26 vragen (R1 7, R2 10, R3 9, 19 met eigen leestekst, 3 teksten van 515-550 tekens met genummerde alinea's), 12 begrippen, 4 figuren (standpunt en argumenten, bezwaar, signaalwoorden, opbouw betoog), geen clip
 - [ ] **VMBO · Nederlands** (`nl`) · domein D — Schrijfvaardigheid
 - [ ] **VMBO · Nederlands** (`nl`) · domein E — Fictie
 - [x] **HAVO · Engels** (`en`) · domein A — Woordenschat & grammatica (8 van 8 leerdoelen op v2)

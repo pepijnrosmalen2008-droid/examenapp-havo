@@ -5,7 +5,7 @@
 Volledige beschrijving (functies, inhoud per niveau, prijs, wat Slagio niet is): https://slagio.nl/llms-full.txt
 
 ## In het kort
-- 12 vakken havo, 16 vakken vwo, 12 vakken vmbo; 23.393 oefenvragen en 4.346 begrippen.
+- 12 vakken havo, 16 vakken vwo, 12 vakken vmbo; 23.419 oefenvragen en 4.346 begrippen.
 - Adaptief oefenen: na een fout een vraag over hetzelfde onderwerp, een niveau makkelijker; uitleg bij elk fout antwoord.
 - Foutenboek en herhalen met gespreide herhaling, beheersing per leerdoel, studieplan tot het examen.
 - Examens met klok, proefexamens in examenstijl met modelantwoord en puntenverdeling, archief met officiële oude examens.
@@ -140,6 +140,7 @@ Volledige beschrijving (functies, inhoud per niveau, prijs, wat Slagio niet is):
 - [Tekststructuur en signaalwoorden (Nederlands VMBO)](https://slagio.nl/leren/vmbo/nederlands/tekststructuur-en-signaalwoorden.html): Je ziet hoe een tekst is opgebouwd uit alinea's, welke structuur de schrijver kiest en welke signaalwoorden het verband tussen zinnen laten zien.
 - [Hoofdgedachte en deelonderwerpen (Nederlands VMBO)](https://slagio.nl/leren/vmbo/nederlands/hoofdgedachte-en-deelonderwerpen.html): Je zoekt het onderwerp, de hoofdgedachte en de deelonderwerpen van een tekst, kiest tussenkopjes en vat een tekst samen in één zin.
 - [Feiten en meningen in een tekst (Nederlands VMBO)](https://slagio.nl/leren/vmbo/nederlands/feiten-en-meningen-in-een-tekst.html): Je onderscheidt in een tekst feiten van meningen, herkent overdrijving en controleert of informatie betrouwbaar is.
+- [Standpunt en argumenten in een leestekst (Nederlands VMBO)](https://slagio.nl/leren/vmbo/nederlands/standpunt-en-argumenten-in-een-leestekst.html): Je vindt in een betoog het standpunt, de argumenten, het voorbeeld, het bezwaar en de conclusie en beoordeelt hoe sterk de argumenten zijn.
 
 ## Examenvragen in examenstijl (met modelantwoord en puntenverdeling)
 - [Examenvragen Nederlands HAVO](https://slagio.nl/leren/havo/nederlands/examenvragen.html): 11 vragen uit een Slagio-proefexamen
