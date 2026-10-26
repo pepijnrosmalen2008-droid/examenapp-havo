@@ -9232,6 +9232,688 @@ var VAKKEN_VMBO = [
         "u": "Hij noemt het bezwaar zelf en geeft een antwoord: de ouderraad wil helpen (2p). Zo maakt hij zijn tekst overtuigender (1p)."
        }
       ]
+     },
+     {
+      "id": "C2",
+      "lo": "nl.C.2",
+      "gs": 2,
+      "naam": "Tekststructuur en signaalwoorden",
+      "beschrijving": "Je ziet hoe een tekst is opgebouwd uit alinea's, welke structuur de schrijver kiest en welke signaalwoorden het verband tussen zinnen laten zien.",
+      "ceStatus": "CE+SE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Alinea en kernzin",
+       "Inleiding, kern en slot",
+       "Signaalwoorden voor volgorde",
+       "Oorzaak, gevolg en tegenstelling",
+       "Tekststructuren"
+      ],
+      "sam": "Een tekst bestaat uit alinea's, en elke alinea heeft een kernzin met het hoofdidee. Samen vormen ze een inleiding, een kern en een slot. Signaalwoorden laten zien hoe zinnen bij elkaar horen: eerst, daarna en tot slot voor volgorde, omdat en want voor een reden, daardoor en dus voor een gevolg, maar en toch voor een tegenstelling, bovendien voor iets extra's en kortom voor de conclusie. De schrijver kiest een structuur: chronologisch, oorzaak en gevolg, vergelijking of probleem en oplossing.",
+      "begrippen": [
+       {
+        "t": "Alinea",
+        "d": "Een stuk tekst over één idee."
+       },
+       {
+        "t": "Kernzin",
+        "d": "De zin met het hoofdidee van de alinea."
+       },
+       {
+        "t": "Inleiding",
+        "d": "Het begin van de tekst met het onderwerp."
+       },
+       {
+        "t": "Kern",
+        "d": "Het middelste deel met de uitleg en argumenten."
+       },
+       {
+        "t": "Slot",
+        "d": "Het einde van de tekst met een afsluiting."
+       },
+       {
+        "t": "Signaalwoord",
+        "d": "Een woord dat het verband tussen zinnen laat zien."
+       },
+       {
+        "t": "Chronologisch",
+        "d": "Op volgorde van de tijd."
+       },
+       {
+        "t": "Oorzaak",
+        "d": "De reden waardoor iets gebeurt."
+       },
+       {
+        "t": "Gevolg",
+        "d": "Wat er gebeurt door een oorzaak."
+       },
+       {
+        "t": "Tegenstelling",
+        "d": "Twee dingen die niet bij elkaar passen of verschillen."
+       },
+       {
+        "t": "Vergelijking",
+        "d": "Twee opties naast elkaar zetten."
+       },
+       {
+        "t": "Conclusie",
+        "d": "De slotzin die samenvat waar de tekst op uitkomt."
+       }
+      ],
+      "sv": [
+       {
+        "v": "Wat is een alinea?",
+        "o": [
+         "één losse zin ergens in een tekst",
+         "een stuk tekst over één idee",
+         "de titel bovenaan een hele tekst",
+         "een rijtje woorden in de kantlijn"
+        ],
+        "c": 1,
+        "d": 1,
+        "s": 0,
+        "u": "Alinea = één idee.",
+        "uo": [
+         "Koos je \"één losse zin ergens in een tekst\"? Dan denk je dat een alinea één zin is. Een alinea bestaat uit meerdere zinnen, die over hetzelfde idee gaan.",
+         "Klopt: een alinea hoort bij één idee en begint op een nieuwe regel.",
+         "Koos je \"de titel bovenaan een hele tekst\"? Dan denk je dat een alinea de titel is. De titel staat boven de tekst, en is geen stuk tekst.",
+         "Koos je \"een rijtje woorden in de kantlijn\"? Dan denk je dat het een rij woorden in de kant is. Een alinea hoort bij de tekst zelf, en bevat zinnen."
+        ],
+        "uh": "Waar begint hij?"
+       },
+       {
+        "v": "Uit welke drie delen bestaat een tekst meestal?",
+        "o": [
+         "titel, tekening en bladzijde",
+         "vraag, antwoord en cijfer",
+         "kop, voet en rand",
+         "inleiding, kern en slot"
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 1,
+        "u": "Inleiding, kern, slot.",
+        "uo": [
+         "Koos je \"titel, tekening en bladzijde\"? Dan denk je dat dit de delen zijn. Dit zijn onderdelen van een bladzijde, maar geen opbouw van een tekst.",
+         "Koos je \"vraag, antwoord en cijfer\"? Dan denk je dat dit de delen zijn. Dat is een toets, en geen tekst.",
+         "Koos je \"kop, voet en rand\"? Dan denk je dat dit de delen zijn. Dit zijn opmaakdelen, geen delen van de inhoud.",
+         "Klopt: een tekst begint met een inleiding, heeft een kern en eindigt met een slot."
+        ],
+        "uh": "Waar begint en eindigt een tekst?"
+       },
+       {
+        "v": "Welk signaalwoord hoort bij de volgorde van gebeurtenissen?",
+        "o": [
+         "daarna",
+         "omdat, voor een reden",
+         "maar, voor een tegenstelling",
+         "bijvoorbeeld, voor een voorbeeld"
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 2,
+        "u": "Tijd en volgorde: eerst, daarna, toen.",
+        "uo": [
+         "Klopt: \"daarna\" zegt dat er iets later volgt in de tijd.",
+         "Koos je \"omdat, voor een reden\"? Dan denk je dat \"omdat\" laat zien wat er eerder of later gebeurt. Het zegt alleen waarom iets zo is, en zegt niets over de tijd.",
+         "Koos je \"maar, voor een tegenstelling\"? Dan denk je dat \"maar\" de stappen op een rij zet. Het kondigt iets aan dat tegen het eerdere ingaat, en dat is geen tijdsvolgorde.",
+         "Koos je \"bijvoorbeeld, voor een voorbeeld\"? Dan denk je dat \"bijvoorbeeld\" aangeeft wat eerst of later komt. Het leidt een voorbeeld in, en dat staat los van de tijd."
+        ],
+        "uh": "Wat komt later?"
+       },
+       {
+        "v": "Welk signaalwoord geeft een oorzaak aan?",
+        "o": [
+         "maar, voor een tegenstelling",
+         "daarna, voor een volgorde",
+         "omdat",
+         "bijvoorbeeld, voor een voorbeeld"
+        ],
+        "c": 2,
+        "d": 1,
+        "s": 3,
+        "u": "\"Omdat\" en \"want\" geven een reden.",
+        "uo": [
+         "Koos je \"maar, voor een tegenstelling\"? Dan denk je dat \"maar\" uitlegt waarom iets gebeurt. Het zet twee dingen tegenover elkaar, zonder dat het een reden is.",
+         "Koos je \"daarna, voor een volgorde\"? Dan denk je dat \"daarna\" een reden geeft. Het zegt alleen wat later komt, en niet waarom iets zo is.",
+         "Klopt: \"omdat\" leidt de reden in waarom iets gebeurt.",
+         "Koos je \"bijvoorbeeld, voor een voorbeeld\"? Dan denk je dat \"bijvoorbeeld\" de reden inleidt. Het kondigt een voorbeeld aan, en dat maakt iets duidelijk maar verklaart het niet."
+        ],
+        "uh": "Waarom gebeurt het?"
+       },
+       {
+        "v": "Welk signaalwoord geeft een tegenstelling aan?",
+        "o": [
+         "daarom, voor een gevolg",
+         "eerst, voor een volgorde",
+         "maar",
+         "omdat, voor een reden"
+        ],
+        "c": 2,
+        "d": 1,
+        "s": 3,
+        "u": "\"Maar\" en \"toch\" geven een tegenstelling.",
+        "uo": [
+         "Koos je \"daarom, voor een gevolg\"? Dan denk je dat \"daarom\" iets tegenover iets zet. Het zegt juist wat eruit volgt, en dat past bij elkaar in plaats van tegen elkaar.",
+         "Koos je \"eerst, voor een volgorde\"? Dan denk je dat \"eerst\" laat zien dat twee zaken verschillen. Het geeft het begin van een rij aan, zonder iets tegenover te zetten.",
+         "Klopt: \"maar\" kondigt aan dat er iets anders volgt dan je verwacht.",
+         "Koos je \"omdat, voor een reden\"? Dan denk je dat \"omdat\" laat zien dat iets anders is. Het noemt de oorzaak, en een oorzaak past bij het gevolg."
+        ],
+        "uh": "Wat is anders?"
+       },
+       {
+        "v": "Waar staat de kernzin vaak in een alinea?",
+        "o": [
+         "aan het begin of aan het eind",
+         "altijd in het midden van de alinea",
+         "nergens, een alinea heeft geen kernzin",
+         "alleen in de titel boven de tekst"
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 0,
+        "u": "Kernzin: begin of eind.",
+        "uo": [
+         "Klopt: daar zet de schrijver het belangrijkste in één zin.",
+         "Koos je \"altijd in het midden van de alinea\"? Dan denk je dat de kernzin altijd in het midden staat. Meestal staat hij aan het begin of eind, zodat je hem snel vindt.",
+         "Koos je \"nergens, een alinea heeft geen kernzin\"? Dan denk je dat een alinea zonder kernzin kan. De meeste alinea's hebben er een, die het hoofdidee geeft.",
+         "Koos je \"alleen in de titel boven de tekst\"? Dan denk je dat de kernzin in de titel staat. De kernzin hoort bij de alinea, en is een zin uit de tekst."
+        ],
+        "uh": "Waar staat het hoofdpunt?"
+       },
+       {
+        "v": "Welke volgorde heeft een tekst die een gebeurtenis in stappen beschrijft?",
+        "o": [
+         "van belangrijk naar onbelangrijk",
+         "op alfabet van A tot en met Z",
+         "willekeurig, zoals het toevallig uitkomt",
+         "chronologisch, op tijdsvolgorde"
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 4,
+        "u": "Chronologisch = op volgorde van tijd.",
+        "uo": [
+         "Koos je \"van belangrijk naar onbelangrijk\"? Dan denk je dat dit de volgorde van een gebeurtenis is. Dit is een rangorde, en geen tijdsvolgorde.",
+         "Koos je \"op alfabet van A tot en met Z\"? Dan denk je dat dit de volgorde is. Dit is een woordenlijst, en geen verhaal.",
+         "Koos je \"willekeurig, zoals het toevallig uitkomt\"? Dan denk je dat de volgorde willekeurig is. Een duidelijk verhaal volgt de tijd, anders raakt de lezer de draad kwijt.",
+         "Klopt: de gebeurtenissen staan in de volgorde waarin ze plaatsvonden."
+        ],
+        "uh": "Wat gebeurt eerst?"
+       },
+       {
+        "v": "Welke woorden geven in de tekst over de lekke band de volgorde aan?",
+        "o": [
+         "want, dus, omdat, doordat, daarom",
+         "eerst, daarna, vervolgens, tot slot",
+         "maar, toch, echter, daarentegen",
+         "nu, vorige week, volgende keer"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 2,
+        "u": "Tijdsvolgorde: eerst, daarna, tot slot.",
+        "uo": [
+         "Koos je \"want, dus, omdat, doordat, daarom\"? Dan denk je dat deze woorden de volgorde aangeven. Het zijn woorden voor reden of gevolg, en ze zeggen niets over de tijd.",
+         "Klopt: deze woorden zetten de stappen op een rij.",
+         "Koos je \"maar, toch, echter, daarentegen\"? Dan denk je dat deze woorden de volgorde aangeven. Het zijn tegenstellingen, en ze zeggen niets over de tijd.",
+         "Koos je \"nu, vorige week, volgende keer\"? Dan denk je dat dit de stappen zijn. Deze woorden noemen een moment, maar de stappen volgen elkaar met andere woorden."
+        ],
+        "uh": "Welke woorden zetten de stappen op volgorde?",
+        "ctx": "Vorige week had ik een lekke band. Eerst wist ik niet wat ik moest doen, dus ik vroeg het aan mijn opa. Daarna haalde hij zijn gereedschap uit de schuur. Eerst haalden we de band van de velg. Vervolgens zochten we in een bak met water naar het gaatje, want waar luchtbellen opstijgen zit het lek. Toen plakten we het gaatje dicht met een plakker. Tot slot pompten we de band weer op en zette ik hem terug op de fiets. Nu weet ik hoe het moet, en dus durf ik de volgende keer zelf te beginnen. Opa was trots op me, want ik had alles goed onthouden."
+       },
+       {
+        "v": "Welke tekststructuur heeft de tekst over de lekke band?",
+        "o": [
+         "vergelijking: voordelen en nadelen",
+         "probleem en oplossing in de tekst",
+         "opsomming zonder een vaste volgorde",
+         "chronologisch, van eerst naar laatst"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 4,
+        "u": "Chronologisch = op volgorde.",
+        "uo": [
+         "Koos je \"vergelijking: voordelen en nadelen\"? Dan denk je dat de tekst een vergelijking is. Er worden geen opties naast elkaar gezet, de stappen volgen elkaar op.",
+         "Koos je \"probleem en oplossing in de tekst\"? Dan denk je dat het een probleem en oplossing is. De lekke band is wel een probleem, maar het gaat vooral om de volgorde van de stappen.",
+         "Koos je \"opsomming zonder een vaste volgorde\"? Dan denk je dat het een rij zonder volgorde is. De stappen moeten in deze volgorde, anders lukt het niet.",
+         "Klopt: de schrijver vertelt de stappen in de volgorde van de tijd."
+        ],
+        "uh": "Hoe staan de stappen?",
+        "ctx": "Vorige week had ik een lekke band. Eerst wist ik niet wat ik moest doen, dus ik vroeg het aan mijn opa. Daarna haalde hij zijn gereedschap uit de schuur. Eerst haalden we de band van de velg. Vervolgens zochten we in een bak met water naar het gaatje, want waar luchtbellen opstijgen zit het lek. Toen plakten we het gaatje dicht met een plakker. Tot slot pompten we de band weer op en zette ik hem terug op de fiets. Nu weet ik hoe het moet, en dus durf ik de volgende keer zelf te beginnen. Opa was trots op me, want ik had alles goed onthouden."
+       },
+       {
+        "v": "Welk woord in de tekst geeft een reden aan?",
+        "o": [
+         "daarna",
+         "want",
+         "vervolgens",
+         "tot slot"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 3,
+        "u": "\"Want\" geeft een reden.",
+        "uo": [
+         "Koos je \"daarna\"? Dan denk je dat \"daarna\" de reden aankondigt. Het zegt alleen dat iets later komt, en niet waarom.",
+         "Klopt: na \"want\" volgt de reden waarom iets zo is.",
+         "Koos je \"vervolgens\"? Dan denk je dat \"vervolgens\" uitlegt waarom. Het zet de volgende stap neer, en een stap is geen verklaring.",
+         "Koos je \"tot slot\"? Dan denk je dat \"tot slot\" een oorzaak aanwijst. Het sluit de rij stappen af, zonder iets te verklaren."
+        ],
+        "uh": "Waarom is dat zo?",
+        "ctx": "Vorige week had ik een lekke band. Eerst wist ik niet wat ik moest doen, dus ik vroeg het aan mijn opa. Daarna haalde hij zijn gereedschap uit de schuur. Eerst haalden we de band van de velg. Vervolgens zochten we in een bak met water naar het gaatje, want waar luchtbellen opstijgen zit het lek. Toen plakten we het gaatje dicht met een plakker. Tot slot pompten we de band weer op en zette ik hem terug op de fiets. Nu weet ik hoe het moet, en dus durf ik de volgende keer zelf te beginnen. Opa was trots op me, want ik had alles goed onthouden."
+       },
+       {
+        "v": "Wat is de kernzin van de eerste alinea in deze tekst?",
+        "o": [
+         "\"Dat komt doordat ze 's avonds lang op hun telefoon zitten.\"",
+         "\"Daardoor val je later in slaap.\"",
+         "\"Steeds meer jongeren slapen te weinig.\"",
+         "\"Toch zeggen veel jongeren dat ze het wel aankunnen.\""
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 0,
+        "u": "Kernzin = hoofdidee.",
+        "uo": [
+         "Koos je \"Dat komt doordat ze 's avonds lang op hun telefoon...\"? Dan denk je dat dit de kernzin is. Het is een uitleg bij de eerste zin, dus geen hoofdzin.",
+         "Koos je \"Daardoor val je later in slaap.\"? Dan denk je dat dit de kernzin is. Het is een gevolg, dus geen hoofdzin.",
+         "Klopt: deze zin noemt het hoofdidee van de tekst.",
+         "Koos je \"Toch zeggen veel jongeren dat ze het wel aankunnen.\"? Dan denk je dat dit de kernzin is. Het is een bezwaar, dus geen hoofdzin."
+        ],
+        "uh": "Wat is het hoofdpunt?",
+        "ctx": "Steeds meer jongeren slapen te weinig. Dat komt doordat ze 's avonds lang op hun telefoon zitten. Het licht van het scherm zorgt ervoor dat je hersenen denken dat het nog dag is. Daardoor val je later in slaap. Bovendien moet je de volgende ochtend vroeg op, met als gevolg dat je moe op school komt. Moe zijn leidt tot slechtere cijfers, want je kunt minder goed opletten. Toch zeggen veel jongeren dat ze het wel aankunnen. Een oplossing is om een uur voor het slapen je telefoon weg te leggen. Zo val je sneller in slaap en ben je 's ochtends fitter."
+       },
+       {
+        "v": "Welk woord geeft in de tekst een gevolg aan?",
+        "o": [
+         "daardoor",
+         "toch",
+         "bovendien",
+         "want"
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 3,
+        "u": "\"Daardoor\" geeft een gevolg.",
+        "uo": [
+         "Klopt: \"daardoor\" volgt op een oorzaak en geeft het gevolg.",
+         "Koos je \"toch\"? Dan denk je dat \"toch\" laat zien wat er uit iets volgt. Het geeft aan dat iets tegen de verwachting ingaat, en dat is geen gevolg.",
+         "Koos je \"bovendien\"? Dan denk je dat \"bovendien\" een uitkomst noemt. Het zet er iets bij, maar dat volgt niet uit het eerdere.",
+         "Koos je \"want\"? Dan denk je dat \"want\" het resultaat inleidt. Het geeft de reden vooraf, en niet wat daarna gebeurt."
+        ],
+        "uh": "Wat is het gevolg?",
+        "ctx": "Steeds meer jongeren slapen te weinig. Dat komt doordat ze 's avonds lang op hun telefoon zitten. Het licht van het scherm zorgt ervoor dat je hersenen denken dat het nog dag is. Daardoor val je later in slaap. Bovendien moet je de volgende ochtend vroeg op, met als gevolg dat je moe op school komt. Moe zijn leidt tot slechtere cijfers, want je kunt minder goed opletten. Toch zeggen veel jongeren dat ze het wel aankunnen. Een oplossing is om een uur voor het slapen je telefoon weg te leggen. Zo val je sneller in slaap en ben je 's ochtends fitter."
+       },
+       {
+        "v": "Wat is de oorzaak van het slaaptekort volgens de tekst?",
+        "o": [
+         "'s avonds lang op de telefoon",
+         "vroeg opstaan voor school in de ochtend",
+         "slechtere cijfers op school halen",
+         "een uur eerder naar bed gaan"
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 3,
+        "u": "Oorzaak = doordat.",
+        "uo": [
+         "Klopt: de tekst zegt dat dit komt doordat jongeren 's avonds lang op hun telefoon zitten.",
+         "Koos je \"vroeg opstaan voor school in de ochtend\"? Dan denk je dat vroeg opstaan de oorzaak is. Het is een gevolg van te laat slapen, en geen oorzaak van het slaaptekort.",
+         "Koos je \"slechtere cijfers op school halen\"? Dan denk je dat slechte cijfers de oorzaak zijn. Het zijn een gevolg van moe zijn, en geen oorzaak.",
+         "Koos je \"een uur eerder naar bed gaan\"? Dan denk je dat dit de oorzaak is. Het is een oplossing, en geen oorzaak."
+        ],
+        "uh": "Waardoor slapen ze te weinig?",
+        "ctx": "Steeds meer jongeren slapen te weinig. Dat komt doordat ze 's avonds lang op hun telefoon zitten. Het licht van het scherm zorgt ervoor dat je hersenen denken dat het nog dag is. Daardoor val je later in slaap. Bovendien moet je de volgende ochtend vroeg op, met als gevolg dat je moe op school komt. Moe zijn leidt tot slechtere cijfers, want je kunt minder goed opletten. Toch zeggen veel jongeren dat ze het wel aankunnen. Een oplossing is om een uur voor het slapen je telefoon weg te leggen. Zo val je sneller in slaap en ben je 's ochtends fitter."
+       },
+       {
+        "v": "Welke structuur heeft de tekst over te weinig slaap?",
+        "o": [
+         "alleen een opsomming van feiten",
+         "een verhaal in tijdvolgorde",
+         "oorzaak, gevolg en oplossing",
+         "een vergelijking van twee dingen"
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 4,
+        "u": "Oorzaak, gevolg, oplossing.",
+        "uo": [
+         "Koos je \"alleen een opsomming van feiten\"? Dan denk je dat de tekst alleen een lijst feiten is. Er is een duidelijk verband tussen oorzaak en gevolg, en een oplossing.",
+         "Koos je \"een verhaal in tijdvolgorde\"? Dan denk je dat de tekst chronologisch is. Er is geen verhaal in stappen, maar een keten van oorzaak en gevolg.",
+         "Klopt: eerst komt de oorzaak, daarna de gevolgen en tot slot een oplossing.",
+         "Koos je \"een vergelijking van twee dingen\"? Dan denk je dat de tekst twee dingen vergelijkt. Er zijn geen twee opties naast elkaar, maar een oorzaak-gevolgketen."
+        ],
+        "uh": "Wat leidt waartoe?",
+        "ctx": "Steeds meer jongeren slapen te weinig. Dat komt doordat ze 's avonds lang op hun telefoon zitten. Het licht van het scherm zorgt ervoor dat je hersenen denken dat het nog dag is. Daardoor val je later in slaap. Bovendien moet je de volgende ochtend vroeg op, met als gevolg dat je moe op school komt. Moe zijn leidt tot slechtere cijfers, want je kunt minder goed opletten. Toch zeggen veel jongeren dat ze het wel aankunnen. Een oplossing is om een uur voor het slapen je telefoon weg te leggen. Zo val je sneller in slaap en ben je 's ochtends fitter."
+       },
+       {
+        "v": "Welke woorden geven een tegenstelling aan in de tekst over fiets en bus?",
+        "o": [
+         "want, dus, kortom en daarom",
+         "daarentegen, toch en maar",
+         "eerst, daarna, vervolgens en tot slot",
+         "bovendien, ook en daarnaast"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 3,
+        "u": "Tegenstelling: daarentegen, toch.",
+        "uo": [
+         "Koos je \"want, dus, kortom en daarom\"? Dan denk je dat deze woorden een tegenstelling geven. Het zijn woorden voor reden of conclusie, en geen tegenstelling.",
+         "Klopt: deze woorden zetten twee zaken tegenover elkaar.",
+         "Koos je \"eerst, daarna, vervolgens en tot slot\"? Dan denk je dat deze woorden een tegenstelling geven. Het zijn woorden voor volgorde, en geen tegenstelling.",
+         "Koos je \"bovendien, ook en daarnaast\"? Dan denk je dat deze woorden een tegenstelling geven. Het zijn woorden die iets toevoegen, en geen tegenstelling."
+        ],
+        "uh": "Welk woord zet iets tegenover iets?",
+        "ctx": "Veel leerlingen vragen zich af of ze met de fiets of met de bus naar school moeten gaan. Aan de ene kant is de bus comfortabel, want je zit droog als het regent. Aan de andere kant kost een buskaart geld, terwijl fietsen gratis is. Bovendien kun je met de fiets zelf bepalen wanneer je vertrekt, maar je moet wel een uur eerder opstaan als je ver weg woont. Daarentegen heeft de bus een vaste tijd, en dus kun je later vertrekken. Toch is fietsen gezonder, want je beweegt elke dag. Kortom: voor wie dichtbij woont is de fiets het beste en voor wie ver weg woont is de bus handiger."
+       },
+       {
+        "v": "Welke structuur heeft de tekst over fiets en bus?",
+        "o": [
+         "een verhaal in tijdvolgorde van gisteren",
+         "oorzaak en gevolg van een probleem",
+         "een instructie in stappen voor de lezer",
+         "vergelijking van twee opties"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 4,
+        "u": "Vergelijking: ene kant en andere kant.",
+        "uo": [
+         "Koos je \"een verhaal in tijdvolgorde van gisteren\"? Dan denk je dat de tekst chronologisch is. Er zijn geen stappen in de tijd, het is een vergelijking.",
+         "Koos je \"oorzaak en gevolg van een probleem\"? Dan denk je dat de tekst een oorzaak-gevolgketen is. Het is geen keten, maar een weging van twee opties.",
+         "Koos je \"een instructie in stappen voor de lezer\"? Dan denk je dat de tekst een instructie is. De lezer krijgt geen opdrachten, alleen een vergelijking.",
+         "Klopt: de schrijver zet de fiets en de bus naast elkaar."
+        ],
+        "uh": "Wat zet de schrijver naast elkaar?",
+        "ctx": "Veel leerlingen vragen zich af of ze met de fiets of met de bus naar school moeten gaan. Aan de ene kant is de bus comfortabel, want je zit droog als het regent. Aan de andere kant kost een buskaart geld, terwijl fietsen gratis is. Bovendien kun je met de fiets zelf bepalen wanneer je vertrekt, maar je moet wel een uur eerder opstaan als je ver weg woont. Daarentegen heeft de bus een vaste tijd, en dus kun je later vertrekken. Toch is fietsen gezonder, want je beweegt elke dag. Kortom: voor wie dichtbij woont is de fiets het beste en voor wie ver weg woont is de bus handiger."
+       },
+       {
+        "v": "Welke twee opties zet de schrijver naast elkaar?",
+        "o": [
+         "lopen of met de auto gaan",
+         "met de fiets gaan of de bus nemen",
+         "naar school gaan of thuisblijven",
+         "regen of zon in de zomer"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 1,
+        "u": "Twee opties naast elkaar.",
+        "uo": [
+         "Koos je \"lopen of met de auto gaan\"? Dan denk je dat de tekst lopen en autorijden vergelijkt. Daarover staat niets, de tekst gaat over fiets en bus.",
+         "Klopt: de hele tekst vergelijkt deze twee manieren om naar school te gaan.",
+         "Koos je \"naar school gaan of thuisblijven\"? Dan denk je dat het om school of thuis gaat. De schrijver vraagt hoe je gaat, en niet of je gaat.",
+         "Koos je \"regen of zon in de zomer\"? Dan denk je dat het om het weer gaat. Regen is alleen een voorbeeld, en geen van de twee opties."
+        ],
+        "uh": "Wat vergelijkt hij?",
+        "ctx": "Veel leerlingen vragen zich af of ze met de fiets of met de bus naar school moeten gaan. Aan de ene kant is de bus comfortabel, want je zit droog als het regent. Aan de andere kant kost een buskaart geld, terwijl fietsen gratis is. Bovendien kun je met de fiets zelf bepalen wanneer je vertrekt, maar je moet wel een uur eerder opstaan als je ver weg woont. Daarentegen heeft de bus een vaste tijd, en dus kun je later vertrekken. Toch is fietsen gezonder, want je beweegt elke dag. Kortom: voor wie dichtbij woont is de fiets het beste en voor wie ver weg woont is de bus handiger."
+       },
+       {
+        "v": "Waar vind je de oplossing in de tekst over te weinig slaap?",
+        "o": [
+         "in het slot van de tekst",
+         "in de eerste zin",
+         "in het midden, tussen de gevolgen",
+         "nergens, de tekst heeft geen oplossing"
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 1,
+        "u": "Oplossing staat in het slot.",
+        "uo": [
+         "Klopt: de oplossing staat aan het eind en sluit de tekst af.",
+         "Koos je \"in de eerste zin\"? Dan denk je dat de oplossing in de eerste zin staat. De eerste zin noemt het probleem, en geen oplossing.",
+         "Koos je \"in het midden, tussen de gevolgen\"? Dan denk je dat de oplossing in het midden staat. In het midden staan de oorzaak en gevolgen, de oplossing komt daarna.",
+         "Koos je \"nergens, de tekst heeft geen oplossing\"? Dan denk je dat er geen oplossing is. Er staat wel een voorstel, namelijk de telefoon een uur eerder weglegen."
+        ],
+        "uh": "Wat adviseert de schrijver?",
+        "ctx": "Steeds meer jongeren slapen te weinig. Dat komt doordat ze 's avonds lang op hun telefoon zitten. Het licht van het scherm zorgt ervoor dat je hersenen denken dat het nog dag is. Daardoor val je later in slaap. Bovendien moet je de volgende ochtend vroeg op, met als gevolg dat je moe op school komt. Moe zijn leidt tot slechtere cijfers, want je kunt minder goed opletten. Toch zeggen veel jongeren dat ze het wel aankunnen. Een oplossing is om een uur voor het slapen je telefoon weg te leggen. Zo val je sneller in slaap en ben je 's ochtends fitter."
+       },
+       {
+        "v": "Welke zin is de kernzin van de tekst over fiets en bus?",
+        "o": [
+         "\"Aan de andere kant kost een buskaart geld.\"",
+         "\"Toch is fietsen gezonder, want je beweegt.\"",
+         "\"Je zit droog in de bus als het regent.\"",
+         "\"Kortom: voor wie dichtbij woont is de fiets het beste.\""
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 0,
+        "u": "Kernzin = conclusie.",
+        "uo": [
+         "Koos je \"Aan de andere kant kost een buskaart geld.\"? Dan denk je dat dit de kernzin is. Dit is één bezwaar tegen de bus, en dus een onderdeel van het betoog.",
+         "Koos je \"Toch is fietsen gezonder, want je beweegt.\"? Dan denk je dat dit de kernzin is. Dit is een argument voor de fiets, en niet het hoofdidee van de hele tekst.",
+         "Koos je \"Je zit droog in de bus als het regent.\"? Dan denk je dat dit de kernzin is. Dit is een voordeel van de bus, en past niet bij de conclusie die de hele tekst samenvat.",
+         "Klopt: de conclusie vat de hoofdgedachte van de tekst samen."
+        ],
+        "uh": "Wat is het hoofdpunt?",
+        "ctx": "Veel leerlingen vragen zich af of ze met de fiets of met de bus naar school moeten gaan. Aan de ene kant is de bus comfortabel, want je zit droog als het regent. Aan de andere kant kost een buskaart geld, terwijl fietsen gratis is. Bovendien kun je met de fiets zelf bepalen wanneer je vertrekt, maar je moet wel een uur eerder opstaan als je ver weg woont. Daarentegen heeft de bus een vaste tijd, en dus kun je later vertrekken. Toch is fietsen gezonder, want je beweegt elke dag. Kortom: voor wie dichtbij woont is de fiets het beste en voor wie ver weg woont is de bus handiger."
+       },
+       {
+        "v": "Welk signaalwoord zou je toevoegen om te laten zien dat het einde nadert?",
+        "o": [
+         "bijvoorbeeld",
+         "maar",
+         "tot slot",
+         "eerst"
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 2,
+        "u": "\"Tot slot\" is de laatste stap.",
+        "uo": [
+         "Koos je \"bijvoorbeeld\"? Dan denk je dat \"bijvoorbeeld\" de laatste stap inleidt. Het kondigt een voorbeeld aan, en dat kan overal in de tekst staan.",
+         "Koos je \"maar\"? Dan denk je dat \"maar\" laat zien dat het einde komt. Het zet iets tegenover iets anders, en dat kan ook midden in de tekst.",
+         "Klopt: \"tot slot\" laat zien dat dit de laatste stap is.",
+         "Koos je \"eerst\"? Dan denk je dat \"eerst\" het slot aankondigt. Het hoort juist bij de eerste stap, en niet bij het einde."
+        ],
+        "uh": "Wat komt als laatste?",
+        "ctx": "Vorige week had ik een lekke band. Eerst wist ik niet wat ik moest doen, dus ik vroeg het aan mijn opa. Daarna haalde hij zijn gereedschap uit de schuur. Eerst haalden we de band van de velg. Vervolgens zochten we in een bak met water naar het gaatje, want waar luchtbellen opstijgen zit het lek. Toen plakten we het gaatje dicht met een plakker. Tot slot pompten we de band weer op en zette ik hem terug op de fiets. Nu weet ik hoe het moet, en dus durf ik de volgende keer zelf te beginnen. Opa was trots op me, want ik had alles goed onthouden."
+       },
+       {
+        "v": "Welk gevolg heeft moe zijn volgens de tekst?",
+        "o": [
+         "betere cijfers door extra rust",
+         "meer energie voor sport",
+         "slechtere cijfers",
+         "een langere schooldag"
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 3,
+        "u": "Gevolg: slechtere cijfers.",
+        "uo": [
+         "Koos je \"betere cijfers door extra rust\"? Dan denk je dat moe zijn tot betere cijfers leidt. De tekst zegt het tegenovergestelde, namelijk slechtere cijfers.",
+         "Koos je \"meer energie voor sport\"? Dan denk je dat moe zijn tot energie leidt. Dat past niet bij moe zijn, en staat niet in de tekst.",
+         "Klopt: de tekst legt zo het verband tussen moe zijn en cijfers uit.",
+         "Koos je \"een langere schooldag\"? Dan denk je dat moe zijn de schooldag verlengt. Daar staat niets over, het gaat over cijfers."
+        ],
+        "uh": "Wat doet moe zijn?",
+        "ctx": "Steeds meer jongeren slapen te weinig. Dat komt doordat ze 's avonds lang op hun telefoon zitten. Het licht van het scherm zorgt ervoor dat je hersenen denken dat het nog dag is. Daardoor val je later in slaap. Bovendien moet je de volgende ochtend vroeg op, met als gevolg dat je moe op school komt. Moe zijn leidt tot slechtere cijfers, want je kunt minder goed opletten. Toch zeggen veel jongeren dat ze het wel aankunnen. Een oplossing is om een uur voor het slapen je telefoon weg te leggen. Zo val je sneller in slaap en ben je 's ochtends fitter."
+       },
+       {
+        "v": "Hoe herken je dat een tekst een vergelijking is?",
+        "o": [
+         "de schrijver geeft stappen in een volgorde",
+         "de schrijver vertelt een verhaal over gisteren",
+         "de schrijver noemt alleen één oorzaak en gevolg",
+         "twee opties staan naast elkaar"
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 4,
+        "u": "Vergelijking = twee opties.",
+        "uo": [
+         "Koos je \"de schrijver geeft stappen in een volgorde\"? Dan denk je dat dit een vergelijking is. Dat is een instructie, en geen vergelijking.",
+         "Koos je \"de schrijver vertelt een verhaal over gisteren\"? Dan denk je dat dit een vergelijking is. Dat is een verhaal in tijdsvolgorde, geen vergelijking.",
+         "Koos je \"de schrijver noemt alleen één oorzaak en gevolg\"? Dan denk je dat dit een vergelijking is. Dat is een oorzaak-gevolgstructuur, geen vergelijking.",
+         "Klopt: dit is het kenmerk van een vergelijkende tekst."
+        ],
+        "uh": "Hoeveel opties staan er?",
+        "ctx": "Veel leerlingen vragen zich af of ze met de fiets of met de bus naar school moeten gaan. Aan de ene kant is de bus comfortabel, want je zit droog als het regent. Aan de andere kant kost een buskaart geld, terwijl fietsen gratis is. Bovendien kun je met de fiets zelf bepalen wanneer je vertrekt, maar je moet wel een uur eerder opstaan als je ver weg woont. Daarentegen heeft de bus een vaste tijd, en dus kun je later vertrekken. Toch is fietsen gezonder, want je beweegt elke dag. Kortom: voor wie dichtbij woont is de fiets het beste en voor wie ver weg woont is de bus handiger."
+       },
+       {
+        "v": "Waarom is de laatste zin van de tekst over de lekke band een goed slot?",
+        "o": [
+         "hij sluit af met een les",
+         "hij begint een heel nieuw onderwerp",
+         "hij herhaalt de eerste zin van de tekst",
+         "hij stelt een vraag aan de lezer"
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 1,
+        "u": "Slot rondt af.",
+        "uo": [
+         "Klopt: een slot rondt de tekst af en geeft vaak een les of een gevoel.",
+         "Koos je \"hij begint een heel nieuw onderwerp\"? Dan denk je dat een slot een nieuw onderwerp begint. Een slot sluit juist af, en begint niets nieuws.",
+         "Koos je \"hij herhaalt de eerste zin van de tekst\"? Dan denk je dat de laatste zin de eerste herhaalt. Hij vat iets anders samen, namelijk wat de schrijver geleerd heeft.",
+         "Koos je \"hij stelt een vraag aan de lezer\"? Dan denk je dat het slot een vraag is. Hij sluit met een mededeling af, en geen vraag."
+        ],
+        "uh": "Waar eindigt het verhaal?",
+        "ctx": "Vorige week had ik een lekke band. Eerst wist ik niet wat ik moest doen, dus ik vroeg het aan mijn opa. Daarna haalde hij zijn gereedschap uit de schuur. Eerst haalden we de band van de velg. Vervolgens zochten we in een bak met water naar het gaatje, want waar luchtbellen opstijgen zit het lek. Toen plakten we het gaatje dicht met een plakker. Tot slot pompten we de band weer op en zette ik hem terug op de fiets. Nu weet ik hoe het moet, en dus durf ik de volgende keer zelf te beginnen. Opa was trots op me, want ik had alles goed onthouden."
+       },
+       {
+        "v": "Welk woord voegt in de tekst een extra argument toe?",
+        "o": [
+         "daarentegen",
+         "bovendien",
+         "kortom",
+         "toch"
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 2,
+        "u": "\"Bovendien\" voegt toe.",
+        "uo": [
+         "Koos je \"daarentegen\"? Dan denk je dat \"daarentegen\" er een argument bij zet. Het zet juist twee zaken tegenover elkaar, en voegt dus niets toe.",
+         "Klopt: \"bovendien\" voegt iets toe aan wat al gezegd is.",
+         "Koos je \"kortom\"? Dan denk je dat \"kortom\" iets toevoegt. Het sluit af met een samenvatting, en brengt geen nieuw argument.",
+         "Koos je \"toch\"? Dan denk je dat \"toch\" nog een argument noemt. Het kondigt een bezwaar tegen het eerdere aan, en bevestigt niet wat al gezegd is."
+        ],
+        "uh": "Wat komt erbij?",
+        "ctx": "Veel leerlingen vragen zich af of ze met de fiets of met de bus naar school moeten gaan. Aan de ene kant is de bus comfortabel, want je zit droog als het regent. Aan de andere kant kost een buskaart geld, terwijl fietsen gratis is. Bovendien kun je met de fiets zelf bepalen wanneer je vertrekt, maar je moet wel een uur eerder opstaan als je ver weg woont. Daarentegen heeft de bus een vaste tijd, en dus kun je later vertrekken. Toch is fietsen gezonder, want je beweegt elke dag. Kortom: voor wie dichtbij woont is de fiets het beste en voor wie ver weg woont is de bus handiger."
+       },
+       {
+        "v": "Hoe verdeel je de tekst over slaap in alinea's?",
+        "o": [
+         "één lange alinea zonder enige witregel",
+         "een alinea voor elk woord van de tekst",
+         "alleen losse zinnen onder elkaar",
+         "probleem, gevolg en oplossing"
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 1,
+        "u": "Alinea per deelonderwerp.",
+        "uo": [
+         "Koos je \"één lange alinea zonder enige witregel\"? Dan denk je dat een tekst als één blok past. Dan zie je de delen niet meer, en het wordt moeilijk te lezen.",
+         "Koos je \"een alinea voor elk woord van de tekst\"? Dan denk je dat elk woord een alinea nodig heeft. Een alinea bevat meerdere zinnen, over één idee.",
+         "Koos je \"alleen losse zinnen onder elkaar\"? Dan denk je dat losse zinnen genoeg zijn. Een alinea bundelt zinnen, die bij elkaar horen.",
+         "Klopt: zo heeft elke alinea een eigen deelonderwerp."
+        ],
+        "uh": "Wat hoort bij elkaar?",
+        "ctx": "Steeds meer jongeren slapen te weinig. Dat komt doordat ze 's avonds lang op hun telefoon zitten. Het licht van het scherm zorgt ervoor dat je hersenen denken dat het nog dag is. Daardoor val je later in slaap. Bovendien moet je de volgende ochtend vroeg op, met als gevolg dat je moe op school komt. Moe zijn leidt tot slechtere cijfers, want je kunt minder goed opletten. Toch zeggen veel jongeren dat ze het wel aankunnen. Een oplossing is om een uur voor het slapen je telefoon weg te leggen. Zo val je sneller in slaap en ben je 's ochtends fitter."
+       },
+       {
+        "v": "Welk signaalwoord leidt in de tekst over fiets en bus de conclusie in?",
+        "o": [
+         "kortom",
+         "toch",
+         "bovendien",
+         "daarentegen"
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 2,
+        "u": "\"Kortom\" leidt het slot in.",
+        "uo": [
+         "Klopt: \"kortom\" vat samen wat voorafgaat en sluit de tekst af.",
+         "Koos je \"toch\"? Dan denk je dat \"toch\" de conclusie inleidt. Het geeft een tegenstelling in de kern, en sluit de tekst niet af.",
+         "Koos je \"bovendien\"? Dan denk je dat \"bovendien\" de conclusie inleidt. Het voegt een argument toe, en sluit de tekst niet af.",
+         "Koos je \"daarentegen\"? Dan denk je dat \"daarentegen\" de conclusie inleidt. Het zet twee zaken tegenover elkaar, en sluit de tekst niet af."
+        ],
+        "uh": "Welk woord rondt af?",
+        "ctx": "Veel leerlingen vragen zich af of ze met de fiets of met de bus naar school moeten gaan. Aan de ene kant is de bus comfortabel, want je zit droog als het regent. Aan de andere kant kost een buskaart geld, terwijl fietsen gratis is. Bovendien kun je met de fiets zelf bepalen wanneer je vertrekt, maar je moet wel een uur eerder opstaan als je ver weg woont. Daarentegen heeft de bus een vaste tijd, en dus kun je later vertrekken. Toch is fietsen gezonder, want je beweegt elke dag. Kortom: voor wie dichtbij woont is de fiets het beste en voor wie ver weg woont is de bus handiger."
+       },
+       {
+        "v": "Welk woord kondigt in de tekst over slaap een bezwaar aan?",
+        "o": [
+         "daardoor",
+         "toch",
+         "bovendien",
+         "want"
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 3,
+        "u": "\"Toch\" kondigt een bezwaar aan.",
+        "uo": [
+         "Koos je \"daardoor\"? Dan denk je dat \"daardoor\" een bezwaar aankondigt. Het kondigt een gevolg aan, en geen bezwaar.",
+         "Klopt: \"toch\" laat zien dat er iets tegenin gaat wat je zou verwachten.",
+         "Koos je \"bovendien\"? Dan denk je dat \"bovendien\" een bezwaar aankondigt. Het voegt een argument toe, en geen bezwaar.",
+         "Koos je \"want\"? Dan denk je dat \"want\" een bezwaar aankondigt. Het geeft een reden, en geen bezwaar."
+        ],
+        "uh": "Wat gaat tegenin?",
+        "ctx": "Steeds meer jongeren slapen te weinig. Dat komt doordat ze 's avonds lang op hun telefoon zitten. Het licht van het scherm zorgt ervoor dat je hersenen denken dat het nog dag is. Daardoor val je later in slaap. Bovendien moet je de volgende ochtend vroeg op, met als gevolg dat je moe op school komt. Moe zijn leidt tot slechtere cijfers, want je kunt minder goed opletten. Toch zeggen veel jongeren dat ze het wel aankunnen. Een oplossing is om een uur voor het slapen je telefoon weg te leggen. Zo val je sneller in slaap en ben je 's ochtends fitter."
+       }
+      ],
+      "oe": [
+       {
+        "bron": "Examenstijl",
+        "ctx": "Vorige week had ik een lekke band. Eerst wist ik niet wat ik moest doen, dus ik vroeg het aan mijn opa. Daarna haalde hij zijn gereedschap uit de schuur. Eerst haalden we de band van de velg. Vervolgens zochten we in een bak met water naar het gaatje, want waar luchtbellen opstijgen zit het lek. Toen plakten we het gaatje dicht met een plakker. Tot slot pompten we de band weer op en zette ik hem terug op de fiets. Nu weet ik hoe het moet, en dus durf ik de volgende keer zelf te beginnen. Opa was trots op me, want ik had alles goed onthouden.",
+        "v": "Noem drie signaalwoorden voor de volgorde in deze tekst en zeg welke structuur de tekst heeft.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Bijvoorbeeld eerst, daarna, vervolgens, tot slot (2p). Structuur: chronologisch (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Steeds meer jongeren slapen te weinig. Dat komt doordat ze 's avonds lang op hun telefoon zitten. Het licht van het scherm zorgt ervoor dat je hersenen denken dat het nog dag is. Daardoor val je later in slaap. Bovendien moet je de volgende ochtend vroeg op, met als gevolg dat je moe op school komt. Moe zijn leidt tot slechtere cijfers, want je kunt minder goed opletten. Toch zeggen veel jongeren dat ze het wel aankunnen. Een oplossing is om een uur voor het slapen je telefoon weg te leggen. Zo val je sneller in slaap en ben je 's ochtends fitter.",
+        "v": "Wat is de oorzaak en wat is een gevolg van te weinig slaap volgens de tekst?",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Oorzaak: jongeren zitten 's avonds lang op hun telefoon (1p). Gevolg: ze komen moe op school of halen slechtere cijfers (2p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Veel leerlingen vragen zich af of ze met de fiets of met de bus naar school moeten gaan. Aan de ene kant is de bus comfortabel, want je zit droog als het regent. Aan de andere kant kost een buskaart geld, terwijl fietsen gratis is. Bovendien kun je met de fiets zelf bepalen wanneer je vertrekt, maar je moet wel een uur eerder opstaan als je ver weg woont. Daarentegen heeft de bus een vaste tijd, en dus kun je later vertrekken. Toch is fietsen gezonder, want je beweegt elke dag. Kortom: voor wie dichtbij woont is de fiets het beste en voor wie ver weg woont is de bus handiger.",
+        "v": "Welke structuur heeft de tekst en welk signaalwoord leidt de conclusie in?",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Een vergelijking van de fiets en de bus (2p). \"Kortom\" leidt de conclusie in (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Steeds meer jongeren slapen te weinig. Dat komt doordat ze 's avonds lang op hun telefoon zitten. Het licht van het scherm zorgt ervoor dat je hersenen denken dat het nog dag is. Daardoor val je later in slaap. Bovendien moet je de volgende ochtend vroeg op, met als gevolg dat je moe op school komt. Moe zijn leidt tot slechtere cijfers, want je kunt minder goed opletten. Toch zeggen veel jongeren dat ze het wel aankunnen. Een oplossing is om een uur voor het slapen je telefoon weg te leggen. Zo val je sneller in slaap en ben je 's ochtends fitter.",
+        "v": "Welk signaalwoord kondigt een bezwaar aan en wat is de oplossing die de schrijver noemt?",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "\"Toch\" kondigt het bezwaar aan (1p). De oplossing: een uur voor het slapen je telefoon weglegen (2p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Vorige week had ik een lekke band. Eerst wist ik niet wat ik moest doen, dus ik vroeg het aan mijn opa. Daarna haalde hij zijn gereedschap uit de schuur. Eerst haalden we de band van de velg. Vervolgens zochten we in een bak met water naar het gaatje, want waar luchtbellen opstijgen zit het lek. Toen plakten we het gaatje dicht met een plakker. Tot slot pompten we de band weer op en zette ik hem terug op de fiets. Nu weet ik hoe het moet, en dus durf ik de volgende keer zelf te beginnen. Opa was trots op me, want ik had alles goed onthouden.",
+        "v": "Hoe is het slot van de tekst over de lekke band en welke les noemt de schrijver?",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Het slot begint met \"Nu weet ik hoe het moet\" (1p). De schrijver durft de volgende keer zelf te beginnen (2p)."
+       }
+      ]
      }
     ]
    },

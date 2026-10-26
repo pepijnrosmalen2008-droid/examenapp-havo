@@ -292,6 +292,27 @@ var VAKKEN_VMBO = [
       "nOe": 5,
       "nBeg": 12,
       "hasSam": true
+     },
+     {
+      "id": "C2",
+      "lo": "nl.C.2",
+      "gs": 2,
+      "naam": "Tekststructuur en signaalwoorden",
+      "beschrijving": "Je ziet hoe een tekst is opgebouwd uit alinea's, welke structuur de schrijver kiest en welke signaalwoorden het verband tussen zinnen laten zien.",
+      "ceStatus": "CE+SE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Alinea en kernzin",
+       "Inleiding, kern en slot",
+       "Signaalwoorden voor volgorde",
+       "Oorzaak, gevolg en tegenstelling",
+       "Tekststructuren"
+      ],
+      "nSv": 27,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
      }
     ]
    },
