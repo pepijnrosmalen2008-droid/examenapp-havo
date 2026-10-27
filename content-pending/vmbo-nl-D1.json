@@ -1,0 +1,661 @@
+{
+ "id": "D1",
+ "lo": "nl.D.1",
+ "gs": 2,
+ "naam": "Schrijfdoel, lezer en tekstvorm bepalen",
+ "beschrijving": "Voor je schrijft bedenk je wat je wilt bereiken, voor wie je schrijft en welke vorm past, en je kiest daar de juiste toon bij.",
+ "ceStatus": "SE",
+ "binas": "",
+ "val": "",
+ "onderwerpen": [
+  "Schrijfdoel",
+  "De lezer",
+  "Tekstvormen",
+  "Formeel en informeel",
+  "Plannen, schrijven en nakijken"
+ ],
+ "sam": "Voor je schrijft, bedenk je je doel (wat wil ik bereiken?), je lezer (wie leest het?) en de tekstvorm (brief, e-mail, uitnodiging, verslag). Daarna kies je je toon: formeel voor een docent of een bedrijf, informeel voor een vriend of familie. Een goede tekst heeft een aanhef, een duidelijke inhoud met de gegevens die de lezer nodig heeft en een afsluiting. Je schrijft in drie stappen: plannen, schrijven en nakijken.",
+ "begrippen": [
+  {
+   "t": "Schrijfdoel",
+   "d": "Wat je met je tekst wilt bereiken."
+  },
+  {
+   "t": "Lezer",
+   "d": "De persoon voor wie je schrijft."
+  },
+  {
+   "t": "Tekstvorm",
+   "d": "Het soort tekst, zoals een brief of een uitnodiging."
+  },
+  {
+   "t": "Aanhef",
+   "d": "De groet aan het begin van een brief."
+  },
+  {
+   "t": "Afsluiting",
+   "d": "De groet aan het eind van een brief."
+  },
+  {
+   "t": "Formeel",
+   "d": "Netjes en beleefd, bijvoorbeeld voor een docent."
+  },
+  {
+   "t": "Informeel",
+   "d": "Los en persoonlijk, bijvoorbeeld voor een vriend."
+  },
+  {
+   "t": "Toon",
+   "d": "De manier waarop je schrijft, formeel of informeel."
+  },
+  {
+   "t": "Uitnodiging",
+   "d": "Een tekst waarin je iemand vraagt te komen."
+  },
+  {
+   "t": "Klacht",
+   "d": "Een tekst waarin je zegt dat iets niet goed is."
+  },
+  {
+   "t": "Sollicitatie",
+   "d": "Een tekst waarin je om een baan vraagt."
+  },
+  {
+   "t": "Nakijken",
+   "d": "Je tekst nalezen en fouten verbeteren."
+  }
+ ],
+ "sv": [
+  {
+   "v": "Waarom schrijf je een tekst?",
+   "o": [
+    "alleen om de tijd van de les te vullen",
+    "je wilt iets bereiken bij de lezer",
+    "om zoveel mogelijk woorden op te schrijven",
+    "om je handschrift te laten zien"
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 0,
+   "u": "Elke tekst heeft een doel.",
+   "uo": [
+    "Koos je \"alleen om de tijd van de les te vullen\"? Dan denk je dat een tekst alleen dient om tijd te vullen. Een schrijver wil echt iets bereiken, en dat is het doel.",
+    "Klopt: elke tekst heeft een doel, zoals informeren of iets gedaan krijgen.",
+    "Koos je \"om zoveel mogelijk woorden op te schrijven\"? Dan denk je dat het aantal woorden telt. Een goede tekst is duidelijk en past bij het doel, en niet de langste.",
+    "Koos je \"om je handschrift te laten zien\"? Dan denk je dat een tekst vooral om het schrift gaat. Het gaat om wat de lezer begrijpt, en niet om hoe het eruitziet."
+   ],
+   "uh": "Wat wil je bereiken?"
+  },
+  {
+   "v": "Hoe heet de persoon voor wie je schrijft?",
+   "o": [
+    "de uitgever",
+    "de afzender",
+    "de onderwerpregel",
+    "de lezer"
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 1,
+   "u": "Je schrijft voor een lezer.",
+   "uo": [
+    "Koos je \"de uitgever\"? Dan denk je dat dit de uitgever is. Een uitgever maakt boeken, maar de lezer leest jouw tekst.",
+    "Koos je \"de afzender\"? Dan denk je dat dit de afzender is. De afzender ben jij, en de lezer ontvangt de tekst.",
+    "Koos je \"de onderwerpregel\"? Dan denk je dat dit de onderwerpregel is. Dat is de korte regel boven een e-mail, geen persoon.",
+    "Klopt: je schrijft voor een lezer en past je tekst daarop aan."
+   ],
+   "uh": "Voor wie schrijf je?"
+  },
+  {
+   "v": "Welke tekstvorm gebruik je om iemand uit te nodigen?",
+   "o": [
+    "een uitnodiging",
+    "een verslag",
+    "een samenvatting",
+    "een klachtenbrief"
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 2,
+   "u": "Uitnodiging = waar, wanneer, wat.",
+   "uo": [
+    "Klopt: een uitnodiging zegt waar en wanneer iets is en vraagt om te komen.",
+    "Koos je \"een verslag\"? Dan denk je dat een verslag past. Een verslag vertelt achteraf wat er gebeurd is, en nodigt niemand uit.",
+    "Koos je \"een samenvatting\"? Dan denk je dat een samenvatting past. Dat is een korte weergave van een tekst, en geen uitnodiging.",
+    "Koos je \"een klachtenbrief\"? Dan denk je dat een klachtenbrief past. Dat is een brief met een klacht, en geen uitnodiging."
+   ],
+   "uh": "Welke vorm past?"
+  },
+  {
+   "v": "Welke aanhef past bij een brief aan een onbekende manager?",
+   "o": [
+    "Hoi Karin, hoe gaat het met je?",
+    "Hallo daar, dag mevrouw!",
+    "Geachte mevrouw Jansen,",
+    "Yo mevrouw, alles goed?"
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 3,
+   "u": "Formeel = Geachte.",
+   "uo": [
+    "Koos je \"Hoi Karin, hoe gaat het met je?\"? Dan denk je dat dit past. Het is een losse aanhef voor vrienden, en niet voor een manager.",
+    "Koos je \"Hallo daar, dag mevrouw!\"? Dan denk je dat dit past. Het is erg informeel en noemt geen naam, en dat past niet bij een manager.",
+    "Klopt: dit is beleefd en netjes voor iemand die je niet kent.",
+    "Koos je \"Yo mevrouw, alles goed?\"? Dan denk je dat dit past. Het is straattaal, en niet beleefd genoeg voor een manager."
+   ],
+   "uh": "Wie is de lezer?"
+  },
+  {
+   "v": "Wat doe je eerst bij het schrijven van een tekst?",
+   "o": [
+    "je begint meteen met de laatste zin",
+    "je kijkt eerst of er spelfouten in staan",
+    "je bedenkt doel, lezer en inhoud",
+    "je schrijft zo lang mogelijk"
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 4,
+   "u": "Eerst plannen, dan schrijven, dan nakijken.",
+   "uo": [
+    "Koos je \"je begint meteen met de laatste zin\"? Dan denk je dat je met de laatste zin begint. Je weet dan nog niet wat erin moet, dus eerst bedenk je het plan.",
+    "Koos je \"je kijkt eerst of er spelfouten in staan\"? Dan denk je dat je met nakijken begint. Nakijken doe je aan het eind, als de tekst klaar is.",
+    "Klopt: wie eerst plant, schrijft een duidelijke tekst die past.",
+    "Koos je \"je schrijft zo lang mogelijk\"? Dan denk je dat lang schrijven helpt. Een goede tekst past bij het doel, en is niet per se lang."
+   ],
+   "uh": "Wat bedenk je eerst?"
+  },
+  {
+   "v": "Welke tekst is informeel?",
+   "o": [
+    "een appje naar een vriend",
+    "een brief aan de burgemeester zelf",
+    "een sollicitatiebrief voor een baan",
+    "een klacht aan een webwinkel"
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 3,
+   "u": "Informeel = voor vrienden.",
+   "uo": [
+    "Klopt: een appje naar een vriend schrijf je los en persoonlijk.",
+    "Koos je \"een brief aan de burgemeester zelf\"? Dan denk je dat dit informeel is. Een brief aan een burgemeester schrijf je netjes, en dus formeel.",
+    "Koos je \"een sollicitatiebrief voor een baan\"? Dan denk je dat dit informeel is. Een sollicitatiebrief moet netjes zijn, dus hij is formeel.",
+    "Koos je \"een klacht aan een webwinkel\"? Dan denk je dat dit informeel is. Een klacht schrijf je beleefd, dus hij is formeel."
+   ],
+   "uh": "Voor wie is het?"
+  },
+  {
+   "v": "Wanneer lees je je tekst na?",
+   "o": [
+    "voordat je begint met denken",
+    "alleen als de leraar erom vraagt",
+    "nooit, fouten maken is niet erg",
+    "als je klaar bent met schrijven"
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 4,
+   "u": "Na het schrijven nakijken.",
+   "uo": [
+    "Koos je \"voordat je begint met denken\"? Dan denk je dat nakijken vooraf kan. Er is dan nog niets om na te kijken, dus het hoort aan het eind.",
+    "Koos je \"alleen als de leraar erom vraagt\"? Dan denk je dat nakijken alleen voor de leraar is. Het helpt je zelf, dus je doet het altijd.",
+    "Koos je \"nooit, fouten maken is niet erg\"? Dan denk je dat fouten niet uitmaken. De lezer kan je dan slecht begrijpen, dus je kijkt altijd na.",
+    "Klopt: na afloop zie je fouten en kun je verbeteren."
+   ],
+   "uh": "Wanneer controleer je?"
+  },
+  {
+   "v": "Welk doel heeft het bericht van de leerling?",
+   "o": [
+    "de docent laten lachen met een grap",
+    "de toets later mogen maken",
+    "uitleggen hoe je een toets maakt",
+    "een product aan de docent verkopen"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 0,
+   "u": "Wat wil hij van de docent?",
+   "uo": [
+    "Koos je \"de docent laten lachen met een grap\"? Dan denk je dat hij wil grappen maken. Hij vraagt iets, en dat is serieus.",
+    "Klopt: hij wil iets van de docent gedaan krijgen.",
+    "Koos je \"uitleggen hoe je een toets maakt\"? Dan denk je dat hij uitleg geeft. Hij vraagt zelf een gunst, en legt niets uit.",
+    "Koos je \"een product aan de docent verkopen\"? Dan denk je dat hij iets verkoopt. Hij vraagt toestemming, en dat is geen verkoop."
+   ],
+   "uh": "Wat vraagt hij?",
+   "ctx": "Een leerling schrijft aan zijn docent: \"hey mevrouw, ik was gisteren ziek dus ik kon niet naar de les komen. ff vragen of ik de toets later mag maken? thx!!\" Hij verstuurt het bericht zonder aanhef of afsluiting."
+  },
+  {
+   "v": "Welk probleem heeft de toon van het bericht aan de docent?",
+   "o": [
+    "het is te beleefd voor een docent",
+    "het is te lang voor een docent",
+    "het is te serieus voor een docent",
+    "het is te informeel"
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 3,
+   "u": "Toon past bij de lezer.",
+   "uo": [
+    "Koos je \"het is te beleefd voor een docent\"? Dan denk je dat de toon te beleefd is. Hij gebruikt juist losse woorden, dus het is te informeel.",
+    "Koos je \"het is te lang voor een docent\"? Dan denk je dat de lengte het probleem is. Het bericht is kort, en de toon is het probleem.",
+    "Koos je \"het is te serieus voor een docent\"? Dan denk je dat het te serieus is. Het is juist los en spreektalig, en dus niet serieus genoeg.",
+    "Klopt: \"hey mevrouw\", \"ff\" en \"thx\" passen bij vrienden, niet bij een docent."
+   ],
+   "uh": "Voor wie schrijft hij?",
+   "ctx": "Een leerling schrijft aan zijn docent: \"hey mevrouw, ik was gisteren ziek dus ik kon niet naar de les komen. ff vragen of ik de toets later mag maken? thx!!\" Hij verstuurt het bericht zonder aanhef of afsluiting."
+  },
+  {
+   "v": "Welk onderdeel van een bericht mist de leerling?",
+   "o": [
+    "een onderwerp over het weer",
+    "een aanhef en een afsluiting",
+    "een handtekening van zijn ouders",
+    "een tekening bij het bericht"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 4,
+   "u": "Aanhef en afsluiting.",
+   "uo": [
+    "Koos je \"een onderwerp over het weer\"? Dan denk je dat het weer erbij hoort. Dat is niet nodig, een groet en afsluiting wel.",
+    "Klopt: een bericht aan een docent begint met een groet en eindigt met een afsluiting.",
+    "Koos je \"een handtekening van zijn ouders\"? Dan denk je dat zijn ouders moeten tekenen. Dat is niet nodig voor een bericht, een groet en afsluiting wel.",
+    "Koos je \"een tekening bij het bericht\"? Dan denk je dat een tekening nodig is. Dat past niet bij dit bericht, een groet en afsluiting wel."
+   ],
+   "uh": "Hoe begint en eindigt het?",
+   "ctx": "Een leerling schrijft aan zijn docent: \"hey mevrouw, ik was gisteren ziek dus ik kon niet naar de les komen. ff vragen of ik de toets later mag maken? thx!!\" Hij verstuurt het bericht zonder aanhef of afsluiting."
+  },
+  {
+   "v": "Welke tekstvorm schrijft Lena?",
+   "o": [
+    "een uitnodiging voor een feest",
+    "een verslag van haar dag",
+    "een sollicitatiebrief",
+    "een klacht over het eten"
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 2,
+   "u": "Sollicitatie = vragen om een baan.",
+   "uo": [
+    "Koos je \"een uitnodiging voor een feest\"? Dan denk je dat Lena iemand uitnodigt. Ze vraagt om werk, en nodigt niet uit.",
+    "Koos je \"een verslag van haar dag\"? Dan denk je dat Lena een verslag schrijft. Ze vertelt niet achteraf, maar vraagt om een baan.",
+    "Klopt: ze reageert op een baan en vraagt om aangenomen te worden.",
+    "Koos je \"een klacht over het eten\"? Dan denk je dat Lena klaagt. Ze vraagt om een baan, en klaagt niet."
+   ],
+   "uh": "Wat vraagt ze?",
+   "ctx": "Lena wil een bijbaan bij een supermarkt. Ze schrijft: \"Geachte heer Bakker, ik ben Lena de Vries, 16 jaar, en ik wil graag bij u werken als vakkenvuller. Ik ben na school en op zaterdag beschikbaar. Met vriendelijke groet, Lena de Vries.\""
+  },
+  {
+   "v": "Welk taalgebruik past bij Lena's brief?",
+   "o": [
+    "netjes en beleefd",
+    "los en met afkortingen",
+    "grappig en vol uitroeptekens",
+    "kort en bot zonder groet"
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 3,
+   "u": "Formeel = netjes.",
+   "uo": [
+    "Klopt: een brief aan een supermarkt is formeel, met een nette aanhef en afsluiting.",
+    "Koos je \"los en met afkortingen\"? Dan denk je dat de brief los en spreektalig is. Lena schrijft juist netjes, met een nette aanhef.",
+    "Koos je \"grappig en vol uitroeptekens\"? Dan denk je dat de brief grappig is. Hij is serieus, en past bij een sollicitatie.",
+    "Koos je \"kort en bot zonder groet\"? Dan denk je dat de brief bot is. Er staat een beleefde groet, dus hij is netjes."
+   ],
+   "uh": "Voor wie schrijft ze?",
+   "ctx": "Lena wil een bijbaan bij een supermarkt. Ze schrijft: \"Geachte heer Bakker, ik ben Lena de Vries, 16 jaar, en ik wil graag bij u werken als vakkenvuller. Ik ben na school en op zaterdag beschikbaar. Met vriendelijke groet, Lena de Vries.\""
+  },
+  {
+   "v": "Voor wie schrijft Ruben zijn bericht?",
+   "o": [
+    "voor een goede vriend",
+    "voor zijn docent op school",
+    "voor een onbekende manager van een bedrijf",
+    "voor een burgemeester van de stad"
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 1,
+   "u": "Lezer = vriend.",
+   "uo": [
+    "Klopt: de lezer is een vriend en dat bepaalt de losse toon.",
+    "Koos je \"voor zijn docent op school\"? Dan denk je dat Ruben aan een docent schrijft. Het onderwerp is gamen en chips, en dat bespreek je met een vriend.",
+    "Koos je \"voor een onbekende manager van een bedrijf\"? Dan denk je dat Ruben een manager aanschrijft. Een manager krijgt geen \"Yo\" en geen vraag om te gamen, dus de lezer is een vriend.",
+    "Koos je \"voor een burgemeester van de stad\"? Dan denk je dat de lezer een burgemeester is. Een burgemeester krijgt geen losse zin met chips, en daarom is de lezer een vriend."
+   ],
+   "uh": "Wie is de lezer?",
+   "ctx": "Ruben stuurt zijn vriend een bericht: \"Yo, zin om vanmiddag te gamen? Ik haal chips. Zeg maar hoe laat je kan.\" Zijn vriend reageert meteen met: \"Ja man, om vier uur bij jou.\""
+  },
+  {
+   "v": "Waarom is het bericht van Ruben informeel?",
+   "o": [
+    "omdat een bericht altijd informeel hoort te zijn",
+    "omdat Ruben een fout maakt bij het schrijven",
+    "de lezer is een vriend",
+    "omdat de tekst nogal lang is voor een bericht"
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 3,
+   "u": "Toon past bij lezer en onderwerp.",
+   "uo": [
+    "Koos je \"omdat een bericht altijd informeel hoort te zijn\"? Dan denk je dat berichten altijd los zijn. Dat hangt van de lezer af, en bij een docent is het formeel.",
+    "Koos je \"omdat Ruben een fout maakt bij het schrijven\"? Dan denk je dat Ruben fouten maakt. Zijn bericht past juist bij de lezer, dus het is geen fout.",
+    "Klopt: bij een vriend en een leuk onderwerp mag je los schrijven.",
+    "Koos je \"omdat de tekst nogal lang is voor een bericht\"? Dan denk je dat de lengte het bepaalt. Het gaat om de lezer, niet om de lengte."
+   ],
+   "uh": "Waarom los?",
+   "ctx": "Ruben stuurt zijn vriend een bericht: \"Yo, zin om vanmiddag te gamen? Ik haal chips. Zeg maar hoe laat je kan.\" Zijn vriend reageert meteen met: \"Ja man, om vier uur bij jou.\""
+  },
+  {
+   "v": "Welk doel heeft de brief van Fenna?",
+   "o": [
+    "de winkel een compliment over de service geven",
+    "geld terug of een nieuwe koptelefoon",
+    "de winkel uitnodigen voor een groot feest",
+    "een nieuw product aan de winkel voorstellen"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 0,
+   "u": "Klacht + vraag om oplossing.",
+   "uo": [
+    "Koos je \"de winkel een compliment over de service geven\"? Dan denk je dat ze een compliment geeft. Ze klaagt over een kapot product, en wil een oplossing.",
+    "Klopt: ze wil iets van de winkel gedaan krijgen.",
+    "Koos je \"de winkel uitnodigen voor een groot feest\"? Dan denk je dat ze uitnodigt. Ze klaagt, en vraagt om een oplossing.",
+    "Koos je \"een nieuw product aan de winkel voorstellen\"? Dan denk je dat ze een product voorstelt. Ze wil dat het probleem wordt opgelost, en stelt niets voor."
+   ],
+   "uh": "Wat wil ze van de winkel?",
+   "ctx": "Fenna heeft een kapotte koptelefoon van een webwinkel gekregen. Ze schrijft de winkel: \"Geachte klantenservice, op 3 maart bestelde ik een koptelefoon. Hij is kapot aangekomen. Ik wil graag mijn geld terug of een nieuwe koptelefoon. Met vriendelijke groet, Fenna Smit.\""
+  },
+  {
+   "v": "Welke gegevens noemt Fenna zodat de winkel haar kan helpen?",
+   "o": [
+    "haar lievelingskleur en lievelingseten",
+    "wat ze gisteren at voor het avondeten",
+    "haar mening over het weer van vandaag",
+    "de datum en wat er kapot is"
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 4,
+   "u": "Noem relevante gegevens.",
+   "uo": [
+    "Koos je \"haar lievelingskleur en lievelingseten\"? Dan denk je dat haar favoriete kleur helpt. Dat zegt niets over de bestelling, en de winkel kan er niets mee.",
+    "Koos je \"wat ze gisteren at voor het avondeten\"? Dan denk je dat haar eten van belang is. Dat staat los van de klacht, dus het helpt niet.",
+    "Koos je \"haar mening over het weer van vandaag\"? Dan denk je dat het weer helpt. Het heeft niets met de bestelling te maken, dus het is overbodig.",
+    "Klopt: met die gegevens kan de winkel de bestelling opzoeken."
+   ],
+   "uh": "Wat moet de winkel weten?",
+   "ctx": "Fenna heeft een kapotte koptelefoon van een webwinkel gekregen. Ze schrijft de winkel: \"Geachte klantenservice, op 3 maart bestelde ik een koptelefoon. Hij is kapot aangekomen. Ik wil graag mijn geld terug of een nieuwe koptelefoon. Met vriendelijke groet, Fenna Smit.\""
+  },
+  {
+   "v": "Voor wie schrijft Noah en welke toon past?",
+   "o": [
+    "voor een manager, heel formeel en zakelijk",
+    "voor opa en oma, warm",
+    "voor een docent, kort en zakelijk",
+    "voor een burgemeester, plechtig"
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 1,
+   "u": "Toon past bij de lezer.",
+   "uo": [
+    "Koos je \"voor een manager, heel formeel en zakelijk\"? Dan denk je dat Noah een manager aanschrijft. Zijn lezers zijn zijn opa en oma, en de toon is warm.",
+    "Klopt: de lezers zijn familie, dus een vriendelijke persoonlijke toon past.",
+    "Koos je \"voor een docent, kort en zakelijk\"? Dan denk je dat de lezer een docent is. De aanhef is \"Lieve opa en oma\", en de toon is warm.",
+    "Koos je \"voor een burgemeester, plechtig\"? Dan denk je dat de lezer een burgemeester is. Noah schrijft liefs, en dus persoonlijk."
+   ],
+   "uh": "Wie leest het?",
+   "ctx": "Noah nodigt zijn opa en oma uit voor zijn verjaardagsfeest: \"Lieve opa en oma, ik word zaterdag 15 mei zestien! Ik geef een feestje bij ons thuis om half drie. Komen jullie ook? Liefs, Noah.\" Hij schrijft op een kaart met een tekening."
+  },
+  {
+   "v": "Welke gegevens horen in een uitnodiging?",
+   "o": [
+    "wat, waar en wanneer",
+    "alleen de naam van de afzender",
+    "alleen het cadeau dat je wilt",
+    "alleen een tekening"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 2,
+   "u": "Wat, waar, wanneer.",
+   "uo": [
+    "Klopt: een uitnodiging zegt wat er is, waar en wanneer, en vraagt om te komen.",
+    "Koos je \"alleen de naam van de afzender\"? Dan denk je dat de naam genoeg is. De lezer moet weten wat, waar en wanneer, anders kan hij niet komen.",
+    "Koos je \"alleen het cadeau dat je wilt\"? Dan denk je dat het cadeau erin hoort. Het cadeau noem je meestal niet, maar wel wat, waar en wanneer.",
+    "Koos je \"alleen een tekening\"? Dan denk je dat een tekening genoeg is. De lezer moet ook de gegevens hebben, dus wat, waar en wanneer."
+   ],
+   "uh": "Wat moet de lezer weten?",
+   "ctx": "Noah nodigt zijn opa en oma uit voor zijn verjaardagsfeest: \"Lieve opa en oma, ik word zaterdag 15 mei zestien! Ik geef een feestje bij ons thuis om half drie. Komen jullie ook? Liefs, Noah.\" Hij schrijft op een kaart met een tekening."
+  },
+  {
+   "v": "Welk woord in Noahs uitnodiging laat zien dat hij persoonlijk schrijft?",
+   "o": [
+    "\"Geachte\"",
+    "\"Hierbij\"",
+    "\"Betreft\"",
+    "\"Lieve\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 3,
+   "u": "Lieve = persoonlijk.",
+   "uo": [
+    "Koos je \"Geachte\"? Dan denk je dat Noah \"Geachte\" gebruikt. Dat is een aanhef voor een onbekende lezer, en hij schrijft aan zijn opa en oma.",
+    "Koos je \"Hierbij\"? Dan denk je dat \"Hierbij\" een warme groet is. Het is een zakelijk openingswoord uit een brief aan een bedrijf, en niet persoonlijk.",
+    "Koos je \"Betreft\"? Dan denk je dat \"Betreft\" persoonlijk klinkt. Het hoort bij de onderwerpregel van een formele brief, en heeft geen band met familie.",
+    "Klopt: \"Lieve\" is een warme aanhef voor familie."
+   ],
+   "uh": "Welk woord is warm?",
+   "ctx": "Noah nodigt zijn opa en oma uit voor zijn verjaardagsfeest: \"Lieve opa en oma, ik word zaterdag 15 mei zestien! Ik geef een feestje bij ons thuis om half drie. Komen jullie ook? Liefs, Noah.\" Hij schrijft op een kaart met een tekening."
+  },
+  {
+   "v": "Waarom is Fenna's brief beter dan \"Mijn koptelefoon is kapot, nu geld terug!\"",
+   "o": [
+    "ze schrijft veel langer en uitgebreider",
+    "ze gebruikt veel moeilijkere woorden",
+    "ze noemt gegevens en is beleefd",
+    "ze schrijft met een mooie pen"
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 0,
+   "u": "Gegevens en beleefd.",
+   "uo": [
+    "Koos je \"ze schrijft veel langer en uitgebreider\"? Dan denk je dat de lengte het verschil maakt. Het gaat om gegevens en toon, en niet om lengte.",
+    "Koos je \"ze gebruikt veel moeilijkere woorden\"? Dan denk je dat moeilijke woorden helpen. Een duidelijke tekst is beter, en haar brief is gewoon beleefd.",
+    "Klopt: gegevens en beleefdheid vergroten de kans op een goed antwoord.",
+    "Koos je \"ze schrijft met een mooie pen\"? Dan denk je dat het schrijfmiddel telt. Het gaat om de inhoud, en niet om pen of toetsenbord."
+   ],
+   "uh": "Wat verschilt er?",
+   "ctx": "Fenna heeft een kapotte koptelefoon van een webwinkel gekregen. Ze schrijft de winkel: \"Geachte klantenservice, op 3 maart bestelde ik een koptelefoon. Hij is kapot aangekomen. Ik wil graag mijn geld terug of een nieuwe koptelefoon. Met vriendelijke groet, Fenna Smit.\""
+  },
+  {
+   "v": "Hoe verbeter je het bericht aan de docent?",
+   "o": [
+    "voeg meer uitroeptekens en smileys toe",
+    "schrijf alles in hoofdletters en vet",
+    "groet netjes en schrijf hele woorden",
+    "laat de vraag over de toets weg"
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 4,
+   "u": "Netjes en hele woorden.",
+   "uo": [
+    "Koos je \"voeg meer uitroeptekens en smileys toe\"? Dan denk je dat uitroeptekens helpen. Ze maken het juist luider, en passen niet bij een docent.",
+    "Koos je \"schrijf alles in hoofdletters en vet\"? Dan denk je dat hoofdletters helpen. Het lijkt dan alsof je schreeuwt, en het is niet netjes.",
+    "Klopt: zo wordt het formeel en duidelijk voor de docent.",
+    "Koos je \"laat de vraag over de toets weg\"? Dan denk je dat je de vraag kunt weglaten. Hij schrijft juist om iets te vragen, dus hij moet blijven."
+   ],
+   "uh": "Hoe klinkt het formeel?",
+   "ctx": "Een leerling schrijft aan zijn docent: \"hey mevrouw, ik was gisteren ziek dus ik kon niet naar de les komen. ff vragen of ik de toets later mag maken? thx!!\" Hij verstuurt het bericht zonder aanhef of afsluiting."
+  },
+  {
+   "v": "Welke tekstvorm hoort bij de bijbaan: brief of verslag?",
+   "o": [
+    "verslag, want ze vertelt wat ze deed op school",
+    "verslag, want het is een hele lange tekst",
+    "een samenvatting, want de tekst is heel kort",
+    "brief, want ze vraagt iets"
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 2,
+   "u": "Brief = vraag aan een lezer.",
+   "uo": [
+    "Koos je \"verslag, want ze vertelt wat ze deed op school\"? Dan denk je dat het een verslag is. Ze vertelt niets over het verleden, en vraagt om een baan.",
+    "Koos je \"verslag, want het is een hele lange tekst\"? Dan denk je dat de lengte bepaalt. Het gaat om het doel, en dat is een baan vragen.",
+    "Koos je \"een samenvatting, want de tekst is heel kort\"? Dan denk je dat het een samenvatting is. Ze vat niets samen, en vraagt om een baan.",
+    "Klopt: een brief richt zich tot iemand met een vraag."
+   ],
+   "uh": "Wat vraagt ze?",
+   "ctx": "Lena wil een bijbaan bij een supermarkt. Ze schrijft: \"Geachte heer Bakker, ik ben Lena de Vries, 16 jaar, en ik wil graag bij u werken als vakkenvuller. Ik ben na school en op zaterdag beschikbaar. Met vriendelijke groet, Lena de Vries.\""
+  },
+  {
+   "v": "Hoe maak je Rubens bericht geschikt voor zijn docent?",
+   "o": [
+    "beleefd schrijven met aanhef en afsluiting",
+    "er meer grappen en smileys in zetten",
+    "de woorden zo kort mogelijk houden en afkorten",
+    "de hele tekst in hoofdletters zetten"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 3,
+   "u": "Formeel voor een docent.",
+   "uo": [
+    "Klopt: voor een docent schrijf je formeel, met aanhef en afsluiting.",
+    "Koos je \"er meer grappen en smileys in zetten\"? Dan denk je dat grappen helpen. Voor een docent is dat te los, en het hoort niet bij formeel.",
+    "Koos je \"de woorden zo kort mogelijk houden en afkorten\"? Dan denk je dat korter altijd beter is. Een docent verwacht hele zinnen, en een nette groet.",
+    "Koos je \"de hele tekst in hoofdletters zetten\"? Dan denk je dat hoofdletters beleefd zijn. Het lijkt dan alsof je schreeuwt, en het is niet netjes."
+   ],
+   "uh": "Wat verandert er?",
+   "ctx": "Ruben stuurt zijn vriend een bericht: \"Yo, zin om vanmiddag te gamen? Ik haal chips. Zeg maar hoe laat je kan.\" Zijn vriend reageert meteen met: \"Ja man, om vier uur bij jou.\""
+  },
+  {
+   "v": "Welke gegevens ontbreken nog in de uitnodiging van Noah?",
+   "o": [
+    "de datum van het feest",
+    "het adres van het feest",
+    "de tijd van het feest",
+    "de naam van de organisator"
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 4,
+   "u": "Wat, waar, wanneer.",
+   "uo": [
+    "Koos je \"de datum van het feest\"? Dan denk je dat Noah de datum vergat. Hij schrijft \"zaterdag 15 mei\", dus die staat er al in.",
+    "Klopt: de datum en de tijd staan erin, maar de plek is alleen \"bij ons thuis\".",
+    "Koos je \"de tijd van het feest\"? Dan denk je dat Noah de tijd vergat. Je leest \"half drie\" op de kaart, dus ook de tijd staat erin.",
+    "Koos je \"de naam van de organisator\"? Dan denk je dat de afzender anoniem blijft. Onderaan staat de naam Noah, dus de afzender is bekend."
+   ],
+   "uh": "Wat staat er niet in?",
+   "ctx": "Noah nodigt zijn opa en oma uit voor zijn verjaardagsfeest: \"Lieve opa en oma, ik word zaterdag 15 mei zestien! Ik geef een feestje bij ons thuis om half drie. Komen jullie ook? Liefs, Noah.\" Hij schrijft op een kaart met een tekening."
+  },
+  {
+   "v": "Welke aanhef gebruikt Lena en waarom past die?",
+   "o": [
+    "\"Hoi Bakker\", want hij is een vriend",
+    "\"Yo manager\", want het is leuk",
+    "geen aanhef, want de brief is kort",
+    "\"Geachte heer Bakker\", want het is een formele brief"
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 1,
+   "u": "Formele brief = Geachte.",
+   "uo": [
+    "Koos je \"Hoi Bakker, want hij is een vriend\"? Dan denk je dat Lena een vriend aanschrijft. Ze kent de heer Bakker niet, en zou dan een beleefde aanhef kiezen.",
+    "Koos je \"Yo manager, want het is leuk\"? Dan denk je dat een losse groet past. Bij een baan is dat te los, en zo maak je geen goede indruk.",
+    "Koos je \"geen aanhef, want de brief is kort\"? Dan denk je dat een korte brief geen aanhef nodig heeft. Ook een korte brief begint met een groet, en een formele brief heeft een aanhef.",
+    "Klopt: Lena kent de lezer niet en kiest een beleefde aanhef met naam."
+   ],
+   "uh": "Hoe groet ze?",
+   "ctx": "Lena wil een bijbaan bij een supermarkt. Ze schrijft: \"Geachte heer Bakker, ik ben Lena de Vries, 16 jaar, en ik wil graag bij u werken als vakkenvuller. Ik ben na school en op zaterdag beschikbaar. Met vriendelijke groet, Lena de Vries.\""
+  },
+  {
+   "v": "Wat doet Fenna na het noemen van het probleem?",
+   "o": [
+    "ze zegt wat ze wil: geld terug of een nieuwe",
+    "ze laat de winkel zelf raden wat ze wil",
+    "ze dreigt de winkel te slopen",
+    "ze eindigt zonder afsluiting"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 4,
+   "u": "Zeg wat je wilt.",
+   "uo": [
+    "Klopt: een klacht met een duidelijke vraag leidt sneller tot een oplossing.",
+    "Koos je \"ze laat de winkel zelf raden wat ze wil\"? Dan denk je dat de winkel dat raadt. Fenna zegt het juist duidelijk, en dat maakt haar brief sterk.",
+    "Koos je \"ze dreigt de winkel te slopen\"? Dan denk je dat Fenna dreigt. Ze blijft beleefd, en vraagt rustig om een oplossing.",
+    "Koos je \"ze eindigt zonder afsluiting\"? Dan denk je dat de brief zonder afsluiting eindigt. Ze eindigt met \"Met vriendelijke groet\", dus er is wel een afsluiting."
+   ],
+   "uh": "Wat vraagt ze?",
+   "ctx": "Fenna heeft een kapotte koptelefoon van een webwinkel gekregen. Ze schrijft de winkel: \"Geachte klantenservice, op 3 maart bestelde ik een koptelefoon. Hij is kapot aangekomen. Ik wil graag mijn geld terug of een nieuwe koptelefoon. Met vriendelijke groet, Fenna Smit.\""
+  }
+ ],
+ "oe": [
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een leerling schrijft aan zijn docent: \"hey mevrouw, ik was gisteren ziek dus ik kon niet naar de les komen. ff vragen of ik de toets later mag maken? thx!!\" Hij verstuurt het bericht zonder aanhef of afsluiting.",
+   "v": "Noem twee dingen die je aan dit bericht zou verbeteren en leg uit waarom.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Aanhef en afsluiting toevoegen, want het is een bericht aan een docent (2p). Hele woorden en een nette toon gebruiken in plaats van \"ff\" en \"thx\" (2p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Lena wil een bijbaan bij een supermarkt. Ze schrijft: \"Geachte heer Bakker, ik ben Lena de Vries, 16 jaar, en ik wil graag bij u werken als vakkenvuller. Ik ben na school en op zaterdag beschikbaar. Met vriendelijke groet, Lena de Vries.\"",
+   "v": "Welke tekstvorm is dit en welke twee kenmerken laten zien dat het een formele brief is?",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Een sollicitatiebrief (1p). Aanhef \"Geachte heer Bakker\" (1p) en afsluiting \"Met vriendelijke groet\" of beleefde toon (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Ruben stuurt zijn vriend een bericht: \"Yo, zin om vanmiddag te gamen? Ik haal chips. Zeg maar hoe laat je kan.\" Zijn vriend reageert meteen met: \"Ja man, om vier uur bij jou.\"",
+   "v": "Waarom is dit bericht informeel en voor wie is het bedoeld?",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "De lezer is een vriend (1p) en het gaat over gamen, dus een losse toon past (2p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Fenna heeft een kapotte koptelefoon van een webwinkel gekregen. Ze schrijft de winkel: \"Geachte klantenservice, op 3 maart bestelde ik een koptelefoon. Hij is kapot aangekomen. Ik wil graag mijn geld terug of een nieuwe koptelefoon. Met vriendelijke groet, Fenna Smit.\"",
+   "v": "Welke gegevens noemt Fenna en welke vraag stelt ze aan de winkel?",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Datum van bestelling en dat de koptelefoon kapot is (2p). Ze vraagt om geld terug of een nieuwe koptelefoon (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Noah nodigt zijn opa en oma uit voor zijn verjaardagsfeest: \"Lieve opa en oma, ik word zaterdag 15 mei zestien! Ik geef een feestje bij ons thuis om half drie. Komen jullie ook? Liefs, Noah.\" Hij schrijft op een kaart met een tekening.",
+   "v": "Welke gegevens staan in de uitnodiging en welke ontbreekt nog?",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Datum (zaterdag 15 mei) en tijd (half drie) (2p). Het precieze adres ontbreekt (1p)."
+  }
+ ]
+}

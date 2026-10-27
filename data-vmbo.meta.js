@@ -393,7 +393,30 @@ var VAKKEN_VMBO = [
     "nSv": 32,
     "nOe": 0,
     "nBeg": 8,
-    "hasSam": true
+    "hasSam": true,
+    "leerdoelen": [
+     {
+      "id": "D1",
+      "lo": "nl.D.1",
+      "gs": 2,
+      "naam": "Schrijfdoel, lezer en tekstvorm bepalen",
+      "beschrijving": "Voor je schrijft bedenk je wat je wilt bereiken, voor wie je schrijft en welke vorm past, en je kiest daar de juiste toon bij.",
+      "ceStatus": "SE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Schrijfdoel",
+       "De lezer",
+       "Tekstvormen",
+       "Formeel en informeel",
+       "Plannen, schrijven en nakijken"
+      ],
+      "nSv": 26,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
+     }
+    ]
    },
    {
     "id": "E",
