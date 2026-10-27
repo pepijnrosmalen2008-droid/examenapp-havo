@@ -1,0 +1,660 @@
+{
+ "id": "D5",
+ "lo": "nl.D.5",
+ "gs": 2,
+ "naam": "Woordspelling: d of t, ei of ij en samenstellingen",
+ "beschrijving": "Je schrijft werkwoorden goed met d of t, kiest tussen ei en ij, schrijft samenstellingen aan elkaar en gebruikt hoofdletters op de juiste plaats.",
+ "ceStatus": "SE",
+ "binas": "",
+ "val": "",
+ "onderwerpen": [
+  "Werkwoorden in de tegenwoordige tijd",
+  "Verleden tijd en voltooid deelwoord",
+  "Spelling met ei of ij",
+  "Samenstellingen",
+  "Hoofdletters"
+ ],
+ "sam": "In de tegenwoordige tijd schrijf je bij ik de stam (ik werk), bij hij, zij en het stam + t (hij werkt) en bij jij stam + t, behalve als jij erachter staat (werk jij?). Bij de verleden tijd en het voltooid deelwoord kijk je met 't kofschip naar de laatste letter van de stam: t, k, f, s, ch of p geeft -te en -t, andere letters geven -de en -d. Ei en ij leer je als woorden. Samenstellingen schrijf je aan elkaar en namen en het begin van een zin krijgen een hoofdletter.",
+ "begrippen": [
+  {
+   "t": "Stam",
+   "d": "Het werkwoord zonder -en, zoals loop bij lopen."
+  },
+  {
+   "t": "Persoonsvorm",
+   "d": "De vorm van het werkwoord die bij het onderwerp past."
+  },
+  {
+   "t": "Tegenwoordige tijd",
+   "d": "De tijd van wat nu gebeurt."
+  },
+  {
+   "t": "Verleden tijd",
+   "d": "De tijd van wat al gebeurd is, zoals werkte."
+  },
+  {
+   "t": "Voltooid deelwoord",
+   "d": "De vorm met ge-, zoals gewerkt."
+  },
+  {
+   "t": "'t kofschip",
+   "d": "De regel voor -te of -de met de letters t, k, f, s, ch, p."
+  },
+  {
+   "t": "Infinitief",
+   "d": "De hele vorm van het werkwoord, zoals werken."
+  },
+  {
+   "t": "Samenstelling",
+   "d": "Een woord dat uit twee woorden bestaat, zoals voetbalveld."
+  },
+  {
+   "t": "Hoofdletter",
+   "d": "Een grote letter aan het begin van een zin of naam."
+  },
+  {
+   "t": "Eigennaam",
+   "d": "De naam van een persoon of plaats, zoals Amsterdam."
+  },
+  {
+   "t": "Ei en ij",
+   "d": "Twee spellingen voor dezelfde klank."
+  },
+  {
+   "t": "Meervoud",
+   "d": "De vorm voor meer dan één."
+  }
+ ],
+ "sv": [
+  {
+   "v": "In welke zin staat het werkwoord goed bij \"hij\"?",
+   "o": [
+    "Hij loop elke dag naar school.",
+    "Hij loopt elke dag naar school.",
+    "Hij lopen elke dag naar school.",
+    "Hij loopd elke dag naar school."
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 0,
+   "u": "Hij = stam + t. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"Hij loop elke dag naar school.\"? Dan denk je dat bij hij de kale stam past. Dat is de vorm van ik, terwijl hij, zij en het altijd een t krijgen.",
+    "Klopt: bij hij schrijf je de stam loop met een t erachter.",
+    "Koos je \"Hij lopen elke dag naar school.\"? Dan denk je dat bij hij de hele infinitief past. Die vorm hoort bij wij en zij als meervoud, en dus niet bij één persoon.",
+    "Koos je \"Hij loopd elke dag naar school.\"? Dan denk je dat je de d van het voltooid deelwoord gebruikt. In de tegenwoordige tijd schrijf je gewoon een t, en dus loopt."
+   ],
+   "uh": "Welke letter staat achter hij?"
+  },
+  {
+   "v": "Welke zin is goed als \"jij\" achter het werkwoord staat?",
+   "o": [
+    "Wordt jij ook zo blij van ijs?",
+    "Worden jij ook zo blij van ijs?",
+    "Wort jij ook zo blij van ijs?",
+    "Word jij ook zo blij van ijs?"
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 1,
+   "u": "Jij erachter: geen t. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"Wordt jij ook zo blij van ijs?\"? Dan denk je dat de t van jij wordt hier blijft. Zodra jij achteraan staat, verdwijnt die t, en blijft de stam word over.",
+    "Koos je \"Worden jij ook zo blij van ijs?\"? Dan denk je dat het meervoud nodig is omdat de zin een vraag is. Een vraag verandert het getal niet, en jij blijft enkelvoud.",
+    "Koos je \"Wort jij ook zo blij van ijs?\"? Dan denk je dat de stam geschreven wordt zoals je hem hoort. Bij het werkwoord worden eindigt de stam op een d, en dus word.",
+    "Klopt: staat jij achter het werkwoord, dan valt de t weg."
+   ],
+   "uh": "Staat jij voor of achter het werkwoord?"
+  },
+  {
+   "v": "Welke zin klopt voor één meisje dat werkt?",
+   "o": [
+    "Zij werkt elke zaterdag in een winkel.",
+    "Zij werk elke zaterdag in een winkel.",
+    "Zij werkd elke zaterdag in een winkel.",
+    "Zij werken elke zaterdag in een winkel."
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 2,
+   "u": "Zij werkt: één persoon. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: bij zij (één persoon) komt er een t achter de stam werk.",
+    "Koos je \"Zij werk elke zaterdag in een winkel.\"? Dan denk je dat de stam bij zij genoeg is. Dat geldt alleen bij ik, dus hier ontbreekt de t.",
+    "Koos je \"Zij werkd elke zaterdag in een winkel.\"? Dan denk je dat de d hier past. Die letter komt na een stam die op een ander geluid eindigt, maar bij werk hoort altijd de t.",
+    "Koos je \"Zij werken elke zaterdag in een winkel.\"? Dan denk je dat dit klopt. Dat is de vorm voor meerdere meisjes, en hier gaat het om één."
+   ],
+   "uh": "Hoeveel personen zijn het?"
+  },
+  {
+   "v": "Welke zin klopt voor meer personen die buiten spelen?",
+   "o": [
+    "Wij speelt na school buiten.",
+    "Wij speel na school buiten.",
+    "Wij spelen na school buiten.",
+    "Wij speld na school buiten."
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 0,
+   "u": "Wij = infinitief. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"Wij speelt na school buiten.\"? Dan denk je dat de persoonsvorm van hij ook bij wij past. Daar hoort een t bij, maar wij vraagt om de infinitief.",
+    "Koos je \"Wij speel na school buiten.\"? Dan denk je dat de kale stam bij wij past. Dat is de vorm voor ik, en wij vraagt een andere vorm.",
+    "Klopt: bij wij gebruik je de hele infinitief spelen.",
+    "Koos je \"Wij speld na school buiten.\"? Dan denk je dat de woordstam met een d afgesloten wordt. In de tegenwoordige tijd staat zo'n d niet, en de stam heeft bovendien twee e's."
+   ],
+   "uh": "Welke vorm past bij wij?"
+  },
+  {
+   "v": "Welke twee woorden krijgen altijd een hoofdletter?",
+   "o": [
+    "de dag maandag en de maand mei",
+    "het woord school en het woord tas",
+    "de naam Sara en de stad Utrecht",
+    "het woord snel en het woord blij"
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 4,
+   "u": "Namen met hoofdletter. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"de dag maandag en de maand mei\"? Dan denk je dat dagen en maanden een hoofdletter krijgen. In het Nederlands schrijf je ze met een kleine letter, tenzij ze een zin beginnen.",
+    "Koos je \"het woord school en het woord tas\"? Dan denk je dat gewone zelfstandige naamwoorden een hoofdletter krijgen. Dat gebeurt alleen bij namen, en school en tas zijn gewone woorden.",
+    "Klopt: namen van mensen en plaatsen beginnen met een hoofdletter.",
+    "Koos je \"het woord snel en het woord blij\"? Dan denk je dat bijvoeglijke woorden een hoofdletter krijgen. Die schrijf je met een kleine letter, tenzij ze een zin beginnen."
+   ],
+   "uh": "Welke zijn namen?"
+  },
+  {
+   "v": "Welke zin heeft de samenstelling goed geschreven?",
+   "o": [
+    "De schoenenwinkel is vandaag dicht.",
+    "De schoenen winkel is vandaag dicht.",
+    "De schoenen-winkel is vandaag dicht.",
+    "De schoen winkel is vandaag dicht."
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 3,
+   "u": "Aan elkaar. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: schoenen en winkel schrijf je aan elkaar.",
+    "Koos je \"De schoenen winkel is vandaag dicht.\"? Dan denk je dat een samenstelling uit twee losse woorden bestaat. In het Nederlands plak je ze aan elkaar, zonder spatie.",
+    "Koos je \"De schoenen-winkel is vandaag dicht.\"? Dan denk je dat een streepje helpt bij een lang woord. Streepjes gebruik je alleen in bijzondere gevallen, en niet bij gewone samenstellingen.",
+    "Koos je \"De schoen winkel is vandaag dicht.\"? Dan denk je dat je het woord kunt splitsen en het meervoud weglaat. De samenstelling is schoenen + winkel, en schrijf je als één woord."
+   ],
+   "uh": "Hoe schrijf je het?"
+  },
+  {
+   "v": "In welke zin staat geen spelfout met ei of ij?",
+   "o": [
+    "Het meijsje heeft pijn in haar been.",
+    "Het meisje heeft peijn in haar been.",
+    "Het meijsje heeft peijn in haar been.",
+    "Het meisje heeft pijn in haar been."
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 3,
+   "u": "Meisje = ei, pijn = ij. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"Het meijsje heeft pijn in haar been.\"? Dan denk je dat meisje met ij moet omdat je een lange klank hoort. Meisje schrijf je met ei, omdat het woord daarbij hoort.",
+    "Koos je \"Het meisje heeft peijn in haar been.\"? Dan denk je dat pijn met ei moet. Het woord hoort bij de ij-woorden, zoals tijd en wijn.",
+    "Koos je \"Het meijsje heeft peijn in haar been.\"? Dan denk je dat de twee woorden beide fout zijn en omgedraaid kunnen worden. Je moet ze apart leren, want meisje is ei en pijn is ij.",
+    "Klopt: meisje schrijf je met ei en pijn met ij."
+   ],
+   "uh": "Welke klank bij welk woord?"
+  },
+  {
+   "v": "Welke verleden tijd past in \"gisteren ... ik voetbal\"?",
+   "o": [
+    "speelte",
+    "speelde",
+    "spelde",
+    "speelden"
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 0,
+   "u": "'t kofschip. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"speelte\"? Dan denk je dat de verleden tijd op -te eindigt. Dat doe je alleen na t, k, f, s, ch en p, en l hoort daar niet bij.",
+    "Klopt: de stam speel eindigt op l, dus komt er -de achter.",
+    "Koos je \"spelde\"? Dan denk je dat de stam met één e geschreven wordt. De stam van spelen is speel, met twee e's, dus speelde.",
+    "Koos je \"speelden\"? Dan denk je dat er -en achter hoort. Dat is de vorm voor wij, en ik krijgt een enkelvoudige vorm."
+   ],
+   "uh": "Op welke letter eindigt de stam?",
+   "ctx": "Een leerling schrijft: \"Ik fiets elke dag naar school. Mijn zus woont in Utrecht en zij fietst ook. Gisteren speelde ik voetbal en daarna reisde ik met de bus naar mijn oma. Zij heeft een kleine tuin en ik help haar graag.\""
+  },
+  {
+   "v": "Hoe leg je de t in \"zij fietst\" juist uit?",
+   "o": [
+    "de stam eindigt altijd al op een t",
+    "het is verleden tijd, dus -t",
+    "het is een samenstelling, dus -t",
+    "bij zij hoort een t achter de stam"
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 1,
+   "u": "Zij + stam + t. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"de stam eindigt altijd al op een t\"? Dan denk je dat de t bij de stam hoort. De stam is fiets met een s, en de t komt van de persoonsvorm.",
+    "Koos je \"het is verleden tijd, dus -t\"? Dan denk je dat het een verleden tijd is. Het is juist de tegenwoordige tijd, dus de t hoort bij zij.",
+    "Koos je \"het is een samenstelling, dus -t\"? Dan denk je dat het een samenstelling is. Een samenstelling is een naamwoord, en fietst is een werkwoord.",
+    "Klopt: het is tegenwoordige tijd en de t hoort bij de persoonsvorm."
+   ],
+   "uh": "Over hoeveel personen gaat het?",
+   "ctx": "Een leerling schrijft: \"Ik fiets elke dag naar school. Mijn zus woont in Utrecht en zij fietst ook. Gisteren speelde ik voetbal en daarna reisde ik met de bus naar mijn oma. Zij heeft een kleine tuin en ik help haar graag.\""
+  },
+  {
+   "v": "Welk woord uit de tekst schrijf je met ei?",
+   "o": [
+    "mijn zus",
+    "kleine",
+    "zij",
+    "reisde"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 3,
+   "u": "Klein = ei. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"mijn zus\"? Dan denk je dat mijn met ei is. Mijn behoort bij de ij-woorden, en je schrijft het met ij.",
+    "Klopt: klein schrijf je met ei, net als trein en mei.",
+    "Koos je \"zij\"? Dan denk je dat zij met ei is. Zij hoort bij de ij-woorden, zoals wij en mij.",
+    "Koos je \"reisde\"? Dan denk je dat reisde met ij wordt geschreven. Reis hoort bij de ei-woorden, dus de ei blijft in reisde staan."
+   ],
+   "uh": "Welk woord uit de tekst?",
+   "ctx": "Een leerling schrijft: \"Ik fiets elke dag naar school. Mijn zus woont in Utrecht en zij fietst ook. Gisteren speelde ik voetbal en daarna reisde ik met de bus naar mijn oma. Zij heeft een kleine tuin en ik help haar graag.\""
+  },
+  {
+   "v": "Welke zin geeft de verleden tijd van verhuizen goed weer?",
+   "o": [
+    "Ik verhuiste vorig jaar naar Utrecht.",
+    "Ik verhuisden vorig jaar naar Utrecht.",
+    "Ik verhuisde vorig jaar naar Utrecht.",
+    "Ik verhuisd vorig jaar naar Utrecht."
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 2,
+   "u": "Z in de infinitief = d. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"Ik verhuiste vorig jaar naar Utrecht.\"? Dan denk je dat de s aan het eind van de stam een -te vraagt. De infinitief verhuizen heeft een z, en die hoort niet bij 't kofschip.",
+    "Koos je \"Ik verhuisden vorig jaar naar Utrecht.\"? Dan denk je dat er -en achter hoort. Dat is de vorm voor wij, terwijl ik een enkelvoudige verleden tijd krijgt.",
+    "Klopt: verhuizen heeft een z in de infinitief, dus -de.",
+    "Koos je \"Ik verhuisd vorig jaar naar Utrecht.\"? Dan denk je dat de stam alleen met een d eindigt. Dat is het voltooid deelwoord, en zonder hulpwerkwoord klopt de zin niet."
+   ],
+   "uh": "Welke letter staat in verhuizen?",
+   "ctx": "Een leerling schrijft in zijn dagboek: \"Vorig jaar zijn wij verhuisd naar een andere stad. Daarvoor woonde ik in een klein dorp en ik miste mijn vrienden. Mijn vader kookte elke avond soep voor ons allemaal, want het was koud in het nieuwe huis.\""
+  },
+  {
+   "v": "Welke verbetering past bij \"Hij loop elke dag\"?",
+   "o": [
+    "Hij loopt elke dag naar school.",
+    "Hij lopen elke dag naar school.",
+    "Hij loopd elke dag naar school.",
+    "Hij loop elke dag naar school."
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 0,
+   "u": "Hij loopt. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: bij hij komt er een t achter de stam loop.",
+    "Koos je \"Hij lopen elke dag naar school.\"? Dan denk je dat de infinitief nodig is. Dat doe je bij wij en bij meerdere personen, en niet bij hij.",
+    "Koos je \"Hij loopd elke dag naar school.\"? Dan denk je dat er een d achter hoort. In de tegenwoordige tijd staat een t, omdat het geen voltooid deelwoord is.",
+    "Koos je \"Hij loop elke dag naar school.\"? Dan denk je dat de zin klopt. Hier ontbreekt de t van hij, dus de zin is nog niet goed."
+   ],
+   "uh": "Wat ontbreekt?",
+   "ctx": "Een leerling schrijft: \"Hij loop elke dag naar school. Gisteren werkten wij in de tuin. Ik heb de hele dag gewerkt en gespeeld. Jij word altijd blij van ijs, en ik word dat ook.\""
+  },
+  {
+   "v": "Welke verbetering past bij \"Jij word altijd blij van ijs\"?",
+   "o": [
+    "Jij wordt altijd blij van ijs.",
+    "Jij worden altijd blij van ijs.",
+    "Jij wort altijd blij van ijs.",
+    "Jij word altijd blij van ijs."
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 1,
+   "u": "Jij wordt. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: staat jij vóór het werkwoord, dan komt er een t.",
+    "Koos je \"Jij worden altijd blij van ijs.\"? Dan denk je dat het meervoud nodig is. Jij is een enkelvoud, dus de t is genoeg.",
+    "Koos je \"Jij wort altijd blij van ijs.\"? Dan denk je dat de stam wort is. De stam van worden eindigt op d, dus word, en met jij vooraan wordt.",
+    "Koos je \"Jij word altijd blij van ijs.\"? Dan denk je dat de zin klopt. Er ontbreekt de t van jij, omdat jij voor het werkwoord staat."
+   ],
+   "uh": "Wat ontbreekt?",
+   "ctx": "Een leerling schrijft: \"Hij loop elke dag naar school. Gisteren werkten wij in de tuin. Ik heb de hele dag gewerkt en gespeeld. Jij word altijd blij van ijs, en ik word dat ook.\""
+  },
+  {
+   "v": "Welke verleden tijd past in \"gisteren ... wij in de tuin\"?",
+   "o": [
+    "werkden",
+    "werkt",
+    "werkten",
+    "is gewerkt"
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 2,
+   "u": "K in 't kofschip. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"werkden\"? Dan denk je dat de stam een d vraagt. De k van werk hoort bij 't kofschip, dus -te.",
+    "Koos je \"werkt\"? Dan denk je dat dit de verleden tijd is. Het is de tegenwoordige tijd bij hij, en bij wij staat een verleden tijd.",
+    "Klopt: de stam werk eindigt op k, dus -te, en bij wij komt -en.",
+    "Koos je \"is gewerkt\"? Dan denk je dat dit de verleden tijd is. Dat is het voltooid deelwoord, en het past niet in deze zin."
+   ],
+   "uh": "Op welke letter eindigt de stam?",
+   "ctx": "Een leerling schrijft: \"Hij loop elke dag naar school. Gisteren werkten wij in de tuin. Ik heb de hele dag gewerkt en gespeeld. Jij word altijd blij van ijs, en ik word dat ook.\""
+  },
+  {
+   "v": "Welke zin heeft het voltooid deelwoord van spelen goed?",
+   "o": [
+    "Ze heeft gisteren buiten gespeelt.",
+    "Ze heeft gisteren buiten gespeeld.",
+    "Ze heeft gisteren buiten speeld.",
+    "Ze heeft gisteren buiten gespelen."
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 3,
+   "u": "Ge + stam + d. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"Ze heeft gisteren buiten gespeelt.\"? Dan denk je dat het voltooid deelwoord een t krijgt. Dat is alleen zo na t, k, f, s, ch en p, en l hoort er niet bij.",
+    "Klopt: ge + speel + d, want de stam eindigt op l.",
+    "Koos je \"Ze heeft gisteren buiten speeld.\"? Dan denk je dat het voltooid deelwoord zonder ge kan. Het begint altijd met ge-, dus gespeeld.",
+    "Koos je \"Ze heeft gisteren buiten gespelen.\"? Dan denk je dat de infinitief als deelwoord past. Gespelen bestaat niet, en het is dus fout."
+   ],
+   "uh": "Op welke letter eindigt de stam?",
+   "ctx": "Een leerling schrijft: \"Hij loop elke dag naar school. Gisteren werkten wij in de tuin. Ik heb de hele dag gewerkt en gespeeld. Jij word altijd blij van ijs, en ik word dat ook.\""
+  },
+  {
+   "v": "Welk woord uit de tekst hoort bij de ij-woorden?",
+   "o": [
+    "trein",
+    "meisje",
+    "reis",
+    "pijn"
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 0,
+   "u": "Pijn = ij. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"trein\"? Dan denk je dat trein met ij is omdat je de klank hoort. Trein schrijf je met ei, zoals klein en mei.",
+    "Koos je \"meisje\"? Dan denk je dat meisje met ij is. Meisje hoort bij de ei-woorden, en de ij staat in andere woorden.",
+    "Koos je \"reis\"? Dan denk je dat reis met ij is. Reis schrijf je met ei, zoals in reizen en reisde.",
+    "Klopt: pijn schrijf je met ij, net als fijn en wijn."
+   ],
+   "uh": "Welk woord met ij?",
+   "ctx": "Op vrijdag ging het meisje met de trein naar haar eigen kamer in de stad. Ze had pijn in haar been en de reis was lang. Het was een fijne dag, maar ze was blij toen ze weer thuis was."
+  },
+  {
+   "v": "Zoek in de tekst een woord dat met de klank ei begint.",
+   "o": [
+    "fijn",
+    "eigen",
+    "blij",
+    "vrijdag"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 1,
+   "u": "Eigen = ei. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"fijn\"? Dan denk je dat fijn met ei begint omdat je ei hoort. Toch schrijf je het met ij, net als pijn en wijn.",
+    "Klopt: eigen schrijf je met ei, net als eind en eigenlijk.",
+    "Koos je \"blij\"? Dan denk je dat blij bij de ei-woorden hoort. De klank is gelijk, maar je schrijft ij, zoals in vrij en wij.",
+    "Koos je \"vrijdag\"? Dan denk je dat vrijdag een ei in het midden heeft. Het woord komt van vrij, en daar staat ij."
+   ],
+   "uh": "Welk woord met ei?",
+   "ctx": "Op vrijdag ging het meisje met de trein naar haar eigen kamer in de stad. Ze had pijn in haar been en de reis was lang. Het was een fijne dag, maar ze was blij toen ze weer thuis was."
+  },
+  {
+   "v": "Welke zin is goed geschreven?",
+   "o": [
+    "In de fietsenstalling staan veel fietsen.",
+    "In de fietsen stalling staan veel fietsen.",
+    "In de fietsen-stalling staan veel fietsen.",
+    "In de fiets stalling staan veel fietsen."
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 4,
+   "u": "Aan elkaar. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: fietsenstalling schrijf je aan elkaar.",
+    "Koos je \"In de fietsen stalling staan veel fietsen.\"? Dan denk je dat de samenstelling uit losse woorden bestaat. Je schrijft samenstellingen aan elkaar, zonder spatie.",
+    "Koos je \"In de fietsen-stalling staan veel fietsen.\"? Dan denk je dat een streepje nodig is. Streepjes gebruik je alleen bij bijzondere samenstellingen, en niet bij deze.",
+    "Koos je \"In de fiets stalling staan veel fietsen.\"? Dan denk je dat het meervoud en de spatie weg mogen. De samenstelling is fietsen + stalling, en je schrijft hem als één woord."
+   ],
+   "uh": "Hoe schrijf je het?",
+   "ctx": "In de fietsenstalling staan veel fietsen. Op het voetbalveld speelt de school een wedstrijd. De schoenenwinkel naast de bakkerij is vandaag dicht. Mijn boekenkast staat in mijn kamer."
+  },
+  {
+   "v": "Welk woord uit de tekst is een samenstelling van twee zelfstandige naamwoorden?",
+   "o": [
+    "speelt",
+    "naast",
+    "vandaag",
+    "voetbalveld"
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 1,
+   "u": "Twee naamwoorden aan elkaar. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"speelt\"? Dan denk je dat speelt een samenstelling is omdat het lang is. Het is de persoonsvorm van spelen, dus een werkwoord.",
+    "Koos je \"naast\"? Dan denk je dat naast een naamwoord is. Het zegt waar iets staat, en is dus een voorzetsel.",
+    "Koos je \"vandaag\"? Dan denk je dat vandaag twee naamwoorden bevat. Het woord is een bijwoord van tijd, dat je niet als twee zelfstandige naamwoorden telt.",
+    "Klopt: voetbal en veld zijn samengesteld tot één woord."
+   ],
+   "uh": "Welk woord is samengesteld?",
+   "ctx": "In de fietsenstalling staan veel fietsen. Op het voetbalveld speelt de school een wedstrijd. De schoenenwinkel naast de bakkerij is vandaag dicht. Mijn boekenkast staat in mijn kamer."
+  },
+  {
+   "v": "Welke woorden schrijf je met een hoofdletter?",
+   "o": [
+    "maandag, dinsdag en mei",
+    "het museum en een broodje",
+    "Lars, Mo en Amsterdam",
+    "zijn en moeder"
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 0,
+   "u": "Namen met hoofdletter. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"maandag, dinsdag en mei\"? Dan denk je dat dagen en maanden een hoofdletter krijgen. In het Nederlands schrijf je ze met een kleine letter, dus maandag en mei.",
+    "Koos je \"het museum en een broodje\"? Dan denk je dat gewone woorden een hoofdletter krijgen als ze iets bijzonders zijn. Dat is niet zo, want het zijn gewone zelfstandige naamwoorden.",
+    "Klopt: namen van mensen en plaatsen beginnen met een hoofdletter.",
+    "Koos je \"zijn en moeder\"? Dan denk je dat bezittelijke woorden een hoofdletter krijgen. Dat is niet zo, want het zijn gewone woorden."
+   ],
+   "uh": "Welke zijn namen?",
+   "ctx": "Op maandag ging Lars met zijn vriend Mo naar Amsterdam. In mei is het daar mooi weer. Ze bezochten een museum en daarna aten ze een broodje. Zijn moeder belde hem om zes uur."
+  },
+  {
+   "v": "Waarom schrijf je \"mei\" met een kleine letter?",
+   "o": [
+    "omdat mei een werkwoord is",
+    "omdat mei aan het begin staat",
+    "een maand is geen eigennaam",
+    "omdat mei een verkleinwoord is"
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 1,
+   "u": "Maanden en dagen: kleine letter.",
+   "uo": [
+    "Koos je \"omdat mei een werkwoord is\"? Dan denk je dat mei een werkwoord is. Het is de naam van een maand, en die schrijf je met een kleine letter.",
+    "Koos je \"omdat mei aan het begin staat\"? Dan denk je dat mei aan het begin van de zin staat. In de tekst staat het midden in de zin, en daar schrijf je een kleine letter.",
+    "Klopt: maanden en dagen schrijf je in het Nederlands met een kleine letter.",
+    "Koos je \"omdat mei een verkleinwoord is\"? Dan denk je dat mei een verkleinwoord is. Het is gewoon een maand, en maanden hebben geen hoofdletter."
+   ],
+   "uh": "Is het een naam?",
+   "ctx": "Op maandag ging Lars met zijn vriend Mo naar Amsterdam. In mei is het daar mooi weer. Ze bezochten een museum en daarna aten ze een broodje. Zijn moeder belde hem om zes uur."
+  },
+  {
+   "v": "Welke zin klopt bij \"het\" als onderwerp?",
+   "o": [
+    "Het word vandaag laat.",
+    "Het worden vandaag laat.",
+    "Het wort vandaag laat.",
+    "Het wordt vandaag laat."
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 1,
+   "u": "Het wordt. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"Het word vandaag laat.\"? Dan denk je dat de kale stam hier past. Dat is de vorm voor ik, en bij het schrijf je een t erachter.",
+    "Koos je \"Het worden vandaag laat.\"? Dan denk je dat het meervoud nodig is. Het is een enkelvoud, en je schrijft dus wordt.",
+    "Koos je \"Het wort vandaag laat.\"? Dan denk je dat de stam wort is. De stam van worden eindigt op een d, en daar komt de t achter.",
+    "Klopt: bij het komt er een t achter de stam word."
+   ],
+   "uh": "Welke vorm hoort bij het?"
+  },
+  {
+   "v": "Welke zin heeft het voltooid deelwoord van reizen goed?",
+   "o": [
+    "Ze is naar haar oma gereisd.",
+    "Ze is naar haar oma gereist.",
+    "Ze is naar haar oma gereizd.",
+    "Ze is naar haar oma reisd."
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 3,
+   "u": "Z in de infinitief = d. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: reizen heeft een z in de infinitief, dus ge + reis + d.",
+    "Koos je \"Ze is naar haar oma gereist.\"? Dan denk je dat de s aan het eind een t vraagt. De infinitief reizen heeft een z, en die hoort niet bij 't kofschip.",
+    "Koos je \"Ze is naar haar oma gereizd.\"? Dan denk je dat de z blijft staan. De stam is reis met een s, dus je schrijft gereisd.",
+    "Koos je \"Ze is naar haar oma reisd.\"? Dan denk je dat de ge kan ontbreken. Een voltooid deelwoord begint met ge-, dus gereisd."
+   ],
+   "uh": "Welke letter staat in reizen?",
+   "ctx": "Een leerling schrijft: \"Ik fiets elke dag naar school. Mijn zus woont in Utrecht en zij fietst ook. Gisteren speelde ik voetbal en daarna reisde ik met de bus naar mijn oma. Zij heeft een kleine tuin en ik help haar graag.\""
+  },
+  {
+   "v": "Welke zin met een samenstelling is goed geschreven?",
+   "o": [
+    "Mijn boeken kast staat in mijn kamer.",
+    "Mijn boekenkast staat in mijn kamer.",
+    "Mijn boekenkas staat in mijn kamer.",
+    "Mijn boek-kast staat in mijn kamer."
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 4,
+   "u": "Aan elkaar. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"Mijn boeken kast staat in mijn kamer.\"? Dan denk je dat de samenstelling los kan. Je schrijft samenstellingen aan elkaar, dus boekenkast.",
+    "Klopt: boekenkast schrijf je aan elkaar met -en.",
+    "Koos je \"Mijn boekenkas staat in mijn kamer.\"? Dan denk je dat het zonder t moet. De samenstelling is boeken + kast, dus boekenkast.",
+    "Koos je \"Mijn boek-kast staat in mijn kamer.\"? Dan denk je dat er een streepje komt. Dat is niet zo, dus boekenkast."
+   ],
+   "uh": "Hoe schrijf je het?",
+   "ctx": "In de fietsenstalling staan veel fietsen. Op het voetbalveld speelt de school een wedstrijd. De schoenenwinkel naast de bakkerij is vandaag dicht. Mijn boekenkast staat in mijn kamer."
+  },
+  {
+   "v": "Welke zin heeft de verleden tijd van koken goed?",
+   "o": [
+    "Gisteren kookde mijn vader soep.",
+    "Gisteren kookten mijn vader soep.",
+    "Gisteren kookt mijn vader soep.",
+    "Gisteren kookte mijn vader soep."
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 0,
+   "u": "K in 't kofschip. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"Gisteren kookde mijn vader soep.\"? Dan denk je dat de stam een -de vraagt. De k van kook hoort bij 't kofschip, dus -te.",
+    "Koos je \"Gisteren kookten mijn vader soep.\"? Dan denk je dat er -en achter hoort. Dat is de vorm voor meer personen, en mijn vader is één persoon.",
+    "Koos je \"Gisteren kookt mijn vader soep.\"? Dan denk je dat dit de verleden tijd is. Het is de tegenwoordige tijd bij hij, en gisteren vraagt om de verleden tijd.",
+    "Klopt: de stam kook eindigt op k, en k staat in 't kofschip, dus -te."
+   ],
+   "uh": "Op welke letter eindigt de stam?",
+   "ctx": "Een leerling schrijft in zijn dagboek: \"Vorig jaar zijn wij verhuisd naar een andere stad. Daarvoor woonde ik in een klein dorp en ik miste mijn vrienden. Mijn vader kookte elke avond soep voor ons allemaal, want het was koud in het nieuwe huis.\""
+  },
+  {
+   "v": "Welk woord uit de tekst zou je ten onrechte met ei kunnen schrijven?",
+   "o": [
+    "fijn",
+    "trein",
+    "eigen",
+    "reis"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 1,
+   "u": "Fijn = ij. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: fijn klinkt als ei, maar je schrijft ij.",
+    "Koos je \"trein\"? Dan denk je dat trein met ij is omdat je dezelfde klank hoort. Trein hoort bij de ei-woorden, zoals klein en reis.",
+    "Koos je \"eigen\"? Dan denk je dat eigen met ij is. Eigen begint met ei, zoals in eigenlijk en eind.",
+    "Koos je \"reis\"? Dan denk je dat reis met ij is. Reis schrijf je met ei, zoals in reizen."
+   ],
+   "uh": "Welk woord is ij?",
+   "ctx": "Op vrijdag ging het meisje met de trein naar haar eigen kamer in de stad. Ze had pijn in haar been en de reis was lang. Het was een fijne dag, maar ze was blij toen ze weer thuis was."
+  }
+ ],
+ "oe": [
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een leerling schrijft: \"Hij loop elke dag naar school. Gisteren werkten wij in de tuin. Ik heb de hele dag gewerkt en gespeeld. Jij word altijd blij van ijs, en ik word dat ook.\"",
+   "v": "Noem twee fouten in de tekst en verbeter ze.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "\"Hij loop\" moet \"hij loopt\" zijn (2p). \"Jij word\" moet \"jij wordt\" zijn (2p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een leerling schrijft: \"Ik fiets elke dag naar school. Mijn zus woont in Utrecht en zij fietst ook. Gisteren speelde ik voetbal en daarna reisde ik met de bus naar mijn oma. Zij heeft een kleine tuin en ik help haar graag.\"",
+   "v": "Leg uit waarom je \"reisde\" met een d schrijft.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "De infinitief is reizen en de stam reis lijkt op s, maar in reizen staat een z (2p). De z hoort niet bij 't kofschip, dus -de (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Op vrijdag ging het meisje met de trein naar haar eigen kamer in de stad. Ze had pijn in haar been en de reis was lang. Het was een fijne dag, maar ze was blij toen ze weer thuis was.",
+   "v": "Noem twee woorden uit de tekst met ij en twee met ei.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Ij: pijn, fijn, blij, vrijdag (2p). Ei: trein, eigen, meisje, reis (2p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "In de fietsenstalling staan veel fietsen. Op het voetbalveld speelt de school een wedstrijd. De schoenenwinkel naast de bakkerij is vandaag dicht. Mijn boekenkast staat in mijn kamer.",
+   "v": "Welke drie samenstellingen staan in de tekst en hoe schrijf je ze?",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Fietsenstalling, voetbalveld, schoenenwinkel of boekenkast (3p), steeds aan elkaar."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Op maandag ging Lars met zijn vriend Mo naar Amsterdam. In mei is het daar mooi weer. Ze bezochten een museum en daarna aten ze een broodje. Zijn moeder belde hem om zes uur.",
+   "v": "Welke woorden schrijf je met een hoofdletter en waarom schrijf je maandag en mei met een kleine letter?",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Lars, Mo, Amsterdam (2p). Dagen en maanden zijn geen eigennamen (1p)."
+  }
+ ]
+}

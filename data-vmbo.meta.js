@@ -478,6 +478,27 @@ var VAKKEN_VMBO = [
       "nOe": 5,
       "nBeg": 12,
       "hasSam": true
+     },
+     {
+      "id": "D5",
+      "lo": "nl.D.5",
+      "gs": 2,
+      "naam": "Woordspelling: d of t, ei of ij en samenstellingen",
+      "beschrijving": "Je schrijft werkwoorden goed met d of t, kiest tussen ei en ij, schrijft samenstellingen aan elkaar en gebruikt hoofdletters op de juiste plaats.",
+      "ceStatus": "SE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Werkwoorden in de tegenwoordige tijd",
+       "Verleden tijd en voltooid deelwoord",
+       "Spelling met ei of ij",
+       "Samenstellingen",
+       "Hoofdletters"
+      ],
+      "nSv": 26,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
      }
     ]
    },
