@@ -457,6 +457,27 @@ var VAKKEN_VMBO = [
       "nOe": 5,
       "nBeg": 12,
       "hasSam": true
+     },
+     {
+      "id": "D4",
+      "lo": "nl.D.4",
+      "gs": 2,
+      "naam": "Een tekst samenvatten",
+      "beschrijving": "Je zoekt de hoofdzaken in een tekst, laat details en voorbeelden weg en schrijft een korte samenvatting in je eigen woorden.",
+      "ceStatus": "SE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Hoofdzaken vinden",
+       "Bijzaken weglaten",
+       "Eigen woorden gebruiken",
+       "Lengte en volgorde",
+       "Je samenvatting controleren"
+      ],
+      "nSv": 27,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
      }
     ]
    },

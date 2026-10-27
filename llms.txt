@@ -5,7 +5,7 @@
 Volledige beschrijving (functies, inhoud per niveau, prijs, wat Slagio niet is): https://slagio.nl/llms-full.txt
 
 ## In het kort
-- 12 vakken havo, 16 vakken vwo, 12 vakken vmbo; 23.497 oefenvragen en 4.346 begrippen.
+- 12 vakken havo, 16 vakken vwo, 12 vakken vmbo; 23.524 oefenvragen en 4.346 begrippen.
 - Adaptief oefenen: na een fout een vraag over hetzelfde onderwerp, een niveau makkelijker; uitleg bij elk fout antwoord.
 - Foutenboek en herhalen met gespreide herhaling, beheersing per leerdoel, studieplan tot het examen.
 - Examens met klok, proefexamens in examenstijl met modelantwoord en puntenverdeling, archief met officiële oude examens.
@@ -144,6 +144,7 @@ Volledige beschrijving (functies, inhoud per niveau, prijs, wat Slagio niet is):
 - [Schrijfdoel, lezer en tekstvorm bepalen (Nederlands VMBO)](https://slagio.nl/leren/vmbo/nederlands/schrijfdoel-lezer-en-tekstvorm-bepalen.html): Voor je schrijft bedenk je wat je wilt bereiken, voor wie je schrijft en welke vorm past, en je kiest daar de juiste toon bij.
 - [Een formele brief of e-mail schrijven (Nederlands VMBO)](https://slagio.nl/leren/vmbo/nederlands/een-formele-brief-of-e-mail-schrijven.html): Je schrijft een nette brief of e-mail met een goede onderwerpregel, aanhef, duidelijke inhoud en afsluiting, in beleefd taalgebruik.
 - [Een verslag schrijven (Nederlands VMBO)](https://slagio.nl/leren/vmbo/nederlands/een-verslag-schrijven.html): Je schrijft een verslag van een uitje, onderzoek of vergadering: feitelijk, in de verleden tijd en met inleiding, uitvoering en conclusie.
+- [Een tekst samenvatten (Nederlands VMBO)](https://slagio.nl/leren/vmbo/nederlands/een-tekst-samenvatten.html): Je zoekt de hoofdzaken in een tekst, laat details en voorbeelden weg en schrijft een korte samenvatting in je eigen woorden.
 
 ## Examenvragen in examenstijl (met modelantwoord en puntenverdeling)
 - [Examenvragen Nederlands HAVO](https://slagio.nl/leren/havo/nederlands/examenvragen.html): 11 vragen uit een Slagio-proefexamen

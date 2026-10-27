@@ -1,0 +1,682 @@
+{
+ "id": "D4",
+ "lo": "nl.D.4",
+ "gs": 2,
+ "naam": "Een tekst samenvatten",
+ "beschrijving": "Je zoekt de hoofdzaken in een tekst, laat details en voorbeelden weg en schrijft een korte samenvatting in je eigen woorden.",
+ "ceStatus": "SE",
+ "binas": "",
+ "val": "",
+ "onderwerpen": [
+  "Hoofdzaken vinden",
+  "Bijzaken weglaten",
+  "Eigen woorden gebruiken",
+  "Lengte en volgorde",
+  "Je samenvatting controleren"
+ ],
+ "sam": "Een samenvatting geeft de kern van een tekst kort weer. Je zoekt per alinea de hoofdzaak, meestal in de kernzin, en laat voorbeelden en details weg. Je schrijft in je eigen woorden, in dezelfde volgorde als de tekst en zonder eigen mening. Een goede samenvatting noemt het probleem, de oorzaak en de oplossing, of de hoofdgedachte en de belangrijkste argumenten. Controleer aan het eind of de kern erin staat en of de tekst korter is dan het origineel.",
+ "begrippen": [
+  {
+   "t": "Samenvatting",
+   "d": "Een korte weergave van de kern van een tekst."
+  },
+  {
+   "t": "Hoofdzaak",
+   "d": "Het belangrijkste deel van een alinea of tekst."
+  },
+  {
+   "t": "Bijzaak",
+   "d": "Een detail of voorbeeld dat niet nodig is."
+  },
+  {
+   "t": "Kernzin",
+   "d": "De zin die het hoofdidee van een alinea geeft."
+  },
+  {
+   "t": "Detail",
+   "d": "Een klein onderdeel dat je kunt weglaten."
+  },
+  {
+   "t": "Voorbeeld",
+   "d": "Een geval dat iets duidelijk maakt."
+  },
+  {
+   "t": "Eigen woorden",
+   "d": "Dezelfde inhoud in je eigen formulering."
+  },
+  {
+   "t": "Overschrijven",
+   "d": "Zinnen letterlijk uit de tekst overnemen."
+  },
+  {
+   "t": "Onderwerp",
+   "d": "Waar de tekst over gaat."
+  },
+  {
+   "t": "Probleem",
+   "d": "Wat er mis is of wat opgelost moet worden."
+  },
+  {
+   "t": "Oplossing",
+   "d": "Wat gedaan wordt of kan worden aan het probleem."
+  },
+  {
+   "t": "Mening",
+   "d": "Wat iemand vindt, dat hoort niet in een samenvatting."
+  }
+ ],
+ "sv": [
+  {
+   "v": "Wat doe je bij een samenvatting?",
+   "o": [
+    "je schrijft de hele tekst over zonder te kijken",
+    "je geeft de kern kort weer",
+    "je voegt je eigen mening toe",
+    "je schrijft de details uitgebreid op"
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 0,
+   "u": "Samenvatten = kern.",
+   "uo": [
+    "Koos je \"je schrijft de hele tekst over zonder te kijken\"? Dan denk je dat een samenvatting een kopie is. Een samenvatting is juist veel korter, en bevat alleen de kern.",
+    "Klopt: een samenvatting bevat de kern van een tekst, zonder de details.",
+    "Koos je \"je voegt je eigen mening toe\"? Dan denk je dat je je mening geeft. Een samenvatting geeft weer wat er staat, zonder eigen oordeel.",
+    "Koos je \"je schrijft de details uitgebreid op\"? Dan denk je dat details horen. Details laat je juist weg, omdat de kern telt."
+   ],
+   "uh": "Wat laat je weg?"
+  },
+  {
+   "v": "Hoe vind je de hoofdzaken in een alinea?",
+   "o": [
+    "kies altijd de langste zin uit",
+    "kies de zin met een voorbeeld",
+    "kies de laatste zin altijd",
+    "zoek de kernzin"
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 1,
+   "u": "Kernzin = hoofdzaak.",
+   "uo": [
+    "Koos je \"kies altijd de langste zin uit\"? Dan denk je dat de langste zin de hoofdzaak is. Lengte zegt niets over belang, en de kernzin is vaak kort.",
+    "Koos je \"kies de zin met een voorbeeld\"? Dan denk je dat het voorbeeld de hoofdzaak is. Een voorbeeld ondersteunt een argument, en is meestal bijzaak.",
+    "Koos je \"kies de laatste zin altijd\"? Dan denk je dat de laatste zin altijd de kern is. Dat kan, maar niet altijd, en je moet de inhoud lezen.",
+    "Klopt: de kernzin vat de alinea meestal samen."
+   ],
+   "uh": "Welke zin vat samen?"
+  },
+  {
+   "v": "Welk soort informatie laat je weg in een samenvatting?",
+   "o": [
+    "voorbeelden en details",
+    "de kernzin van de alinea",
+    "het onderwerp van de tekst",
+    "de conclusie van de tekst"
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 2,
+   "u": "Weg met voorbeelden.",
+   "uo": [
+    "Klopt: details en voorbeelden zijn bijzaken en laat je weg.",
+    "Koos je \"de kernzin van de alinea\"? Dan denk je dat je de kernzin weglaat. De kernzin is juist de hoofdzaak, en blijft in je samenvatting.",
+    "Koos je \"het onderwerp van de tekst\"? Dan denk je dat je het onderwerp weglaat. Het onderwerp blijft in je samenvatting, omdat de lezer moet weten waarover het gaat.",
+    "Koos je \"de conclusie van de tekst\"? Dan denk je dat je de conclusie weglaat. De conclusie is vaak de kern, en blijft in de samenvatting."
+   ],
+   "uh": "Wat is bijzaak?"
+  },
+  {
+   "v": "In welke woorden schrijf je een samenvatting?",
+   "o": [
+    "letterlijk met de woorden uit de tekst",
+    "in een andere taal",
+    "in je eigen woorden",
+    "in spreektaal met afkortingen"
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 3,
+   "u": "Eigen woorden.",
+   "uo": [
+    "Koos je \"letterlijk met de woorden uit de tekst\"? Dan denk je dat je hele zinnen kunt overnemen. Overschrijven laat niet zien of je het begrijpt, en het is geen eigen werk.",
+    "Koos je \"in een andere taal\"? Dan denk je dat een andere taal nodig is. Dat is niet nodig, je gebruikt gewoon je eigen woorden.",
+    "Klopt: zo laat je zien dat je de tekst begrijpt.",
+    "Koos je \"in spreektaal met afkortingen\"? Dan denk je dat spreektaal past. Een samenvatting is netjes, en geschreven in goed Nederlands."
+   ],
+   "uh": "Wat schrijf je?"
+  },
+  {
+   "v": "Wat controleer je na het schrijven van een samenvatting?",
+   "o": [
+    "of je alle details hebt opgenomen",
+    "of de tekst langer is dan het origineel",
+    "of de kern van de tekst erin staat",
+    "of je tekst dezelfde zinnen bevat"
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 4,
+   "u": "Kern erin, korter.",
+   "uo": [
+    "Koos je \"of je alle details hebt opgenomen\"? Dan denk je dat je de details moet controleren. Details laat je juist weg, en de kern moet erin zitten.",
+    "Koos je \"of de tekst langer is dan het origineel\"? Dan denk je dat langer beter is. Een samenvatting is korter, dus dat is niet de bedoeling.",
+    "Klopt: je kijkt of de hoofdzaken er zijn en of het korter is.",
+    "Koos je \"of je tekst dezelfde zinnen bevat\"? Dan denk je dat dezelfde zinnen goed zijn. Dan heb je overgeschreven, en het moet in eigen woorden."
+   ],
+   "uh": "Wat controleer je?"
+  },
+  {
+   "v": "Hoeveel van een tekst blijft er meestal over in een samenvatting?",
+   "o": [
+    "een klein deel, de kern",
+    "bijna de hele tekst",
+    "de helft van alle zinnen",
+    "alleen de titel"
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 0,
+   "u": "Kort en kern.",
+   "uo": [
+    "Klopt: een samenvatting is veel korter dan het origineel.",
+    "Koos je \"bijna de hele tekst\"? Dan denk je dat bijna alles blijft. Dat is geen samenvatting, en het wordt een kopie.",
+    "Koos je \"de helft van alle zinnen\"? Dan denk je dat de helft blijft. Dat is vaak nog te veel, en een samenvatting is korter.",
+    "Koos je \"alleen de titel\"? Dan denk je dat alleen de titel blijft. Een titel is te weinig, de kern zit in de tekst."
+   ],
+   "uh": "Hoe lang is het?"
+  },
+  {
+   "v": "Welk deel van een alinea is meestal een bijzaak?",
+   "o": [
+    "de kernzin van de alinea",
+    "het onderwerp van de tekst",
+    "de conclusie van de tekst",
+    "een voorbeeld"
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 1,
+   "u": "Voorbeeld = bijzaak.",
+   "uo": [
+    "Koos je \"de kernzin van de alinea\"? Dan denk je dat de kernzin bijzaak is. De kernzin is juist de hoofdzaak, en dus niet weglaten.",
+    "Koos je \"het onderwerp van de tekst\"? Dan denk je dat het onderwerp bijzaak is. Het onderwerp is nodig, en dus laat je het niet weg.",
+    "Koos je \"de conclusie van de tekst\"? Dan denk je dat de conclusie bijzaak is. De conclusie is vaak de kern, en dus niet weglaten.",
+    "Klopt: een voorbeeld maakt iets duidelijk maar is niet de hoofdzaak van de alinea."
+   ],
+   "uh": "Wat is bijzaak?"
+  },
+  {
+   "v": "Welk onderwerp heeft de tekst over de fietsenstalling?",
+   "o": [
+    "het onderhoud van de fietsen",
+    "te weinig stallingplek",
+    "het verkeer rond de school",
+    "het weer en de fietsen"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 0,
+   "u": "Zoek het onderwerp.",
+   "uo": [
+    "Koos je \"het onderhoud van de fietsen\"? Dan denk je dat het over fietsen onderhouden gaat. Dat staat er niet in, en het gaat om de ruimte.",
+    "Klopt: de hele tekst gaat over een stalling die te klein is.",
+    "Koos je \"het verkeer rond de school\"? Dan denk je dat het over verkeer gaat. Dat is te breed, en het gaat om de stalling.",
+    "Koos je \"het weer en de fietsen\"? Dan denk je dat het over het weer gaat. Het weer komt niet voor, en het onderwerp is de stalling."
+   ],
+   "uh": "Waar gaat het over?",
+   "ctx": "[1] Op school staan elke dag honderden fietsen in de stalling. De stalling is te klein, dus veel leerlingen zetten hun fiets buiten het hek. [2] Daardoor staan de paden vol en kunnen mensen er niet meer langs. [3] De conciërge heeft daarom gevraagd of de gemeente een tweede stalling wil bouwen. Zolang die er niet is, mogen leerlingen hun fiets alleen in de stalling parkeren. Wie dat niet doet, krijgt een waarschuwing.\n\nSamenvatting van Mila: De stalling is te klein, dus staan fietsen buiten het hek en versperren ze de paden. De conciërge vraagt de gemeente om een tweede stalling.\n\nSamenvatting van Joris: Op school staan elke dag honderden fietsen in de stalling. De stalling is te klein, dus veel leerlingen zetten hun fiets buiten het hek."
+  },
+  {
+   "v": "Welke zin is de kern van alinea 1?",
+   "o": [
+    "er staan elke dag honderden fietsen in de stalling",
+    "de conciërge vraagt de gemeente om hulp bij de fietsen",
+    "leerlingen krijgen een waarschuwing van de conciërge",
+    "de stalling is te klein"
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 1,
+   "u": "De kernzin geeft de hoofdzaak van de alinea.",
+   "uo": [
+    "Koos je \"er staan elke dag honderden fietsen in de stalling\"? Dan denk je dat dit de kern is. Het is een detail dat het probleem aangeeft, maar niet de kern zelf.",
+    "Koos je \"de conciërge vraagt de gemeente om hulp bij de...\"? Dan denk je dat dit de kern van alinea 1 is. Dat staat in alinea 3, en alinea 1 gaat over de stalling.",
+    "Koos je \"leerlingen krijgen een waarschuwing van de conciërge\"? Dan denk je dat dit de kern van alinea 1 is. Dat staat in alinea 3, en alinea 1 gaat over de plek.",
+    "Klopt: dit vat de hele alinea over de stalling in één zin samen."
+   ],
+   "uh": "Wat staat er in alinea 1?",
+   "ctx": "[1] Op school staan elke dag honderden fietsen in de stalling. De stalling is te klein, dus veel leerlingen zetten hun fiets buiten het hek. [2] Daardoor staan de paden vol en kunnen mensen er niet meer langs. [3] De conciërge heeft daarom gevraagd of de gemeente een tweede stalling wil bouwen. Zolang die er niet is, mogen leerlingen hun fiets alleen in de stalling parkeren. Wie dat niet doet, krijgt een waarschuwing.\n\nSamenvatting van Mila: De stalling is te klein, dus staan fietsen buiten het hek en versperren ze de paden. De conciërge vraagt de gemeente om een tweede stalling.\n\nSamenvatting van Joris: Op school staan elke dag honderden fietsen in de stalling. De stalling is te klein, dus veel leerlingen zetten hun fiets buiten het hek."
+  },
+  {
+   "v": "Welk detail uit alinea 1 laat je weg in een samenvatting?",
+   "o": [
+    "de stalling is veel te klein",
+    "de honderden fietsen",
+    "fietsen staan buiten het hek",
+    "de paden zijn helemaal vol"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 2,
+   "u": "Details weglaten.",
+   "uo": [
+    "Koos je \"de stalling is veel te klein\"? Dan denk je dat dit een detail is. Het is de kern van het probleem, en dus niet weglaten.",
+    "Klopt: het aantal is een detail dat de kern niet verandert.",
+    "Koos je \"fietsen staan buiten het hek\"? Dan denk je dat dit een detail is. Het is het gevolg van de te kleine stalling, en dus een hoofdzaak.",
+    "Koos je \"de paden zijn helemaal vol\"? Dan denk je dat dit een detail is. Het is een belangrijk gevolg, en dus niet weglaten."
+   ],
+   "uh": "Wat is bijzaak?",
+   "ctx": "[1] Op school staan elke dag honderden fietsen in de stalling. De stalling is te klein, dus veel leerlingen zetten hun fiets buiten het hek. [2] Daardoor staan de paden vol en kunnen mensen er niet meer langs. [3] De conciërge heeft daarom gevraagd of de gemeente een tweede stalling wil bouwen. Zolang die er niet is, mogen leerlingen hun fiets alleen in de stalling parkeren. Wie dat niet doet, krijgt een waarschuwing.\n\nSamenvatting van Mila: De stalling is te klein, dus staan fietsen buiten het hek en versperren ze de paden. De conciërge vraagt de gemeente om een tweede stalling.\n\nSamenvatting van Joris: Op school staan elke dag honderden fietsen in de stalling. De stalling is te klein, dus veel leerlingen zetten hun fiets buiten het hek."
+  },
+  {
+   "v": "Hoe schrijf je alinea 2 in eigen woorden?",
+   "o": [
+    "de paden staan vol en mensen kunnen er niet langs",
+    "er staan honderden fietsen in de stalling",
+    "de paden raken geblokkeerd door de fietsen",
+    "de conciërge vraagt de gemeente om een stalling"
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 3,
+   "u": "Schrijf dezelfde betekenis in andere woorden.",
+   "uo": [
+    "Koos je \"de paden staan vol en mensen kunnen er niet langs\"? Dan denk je dat dit eigen woorden zijn. De zin is bijna woord voor woord uit de tekst gehaald, en dat is overschrijven.",
+    "Koos je \"er staan honderden fietsen in de stalling\"? Dan denk je dat dit alinea 2 weergeeft. Deze zin gaat over de aantallen in de stalling, en dat is de inhoud van alinea 1.",
+    "Klopt: de betekenis blijft, maar de woorden zijn anders.",
+    "Koos je \"de conciërge vraagt de gemeente om een stalling\"? Dan denk je dat dit alinea 2 weergeeft. Deze zin gaat over een verzoek aan de gemeente, en dat is de inhoud van alinea 3."
+   ],
+   "uh": "Wat staat er?",
+   "ctx": "[1] Op school staan elke dag honderden fietsen in de stalling. De stalling is te klein, dus veel leerlingen zetten hun fiets buiten het hek. [2] Daardoor staan de paden vol en kunnen mensen er niet meer langs. [3] De conciërge heeft daarom gevraagd of de gemeente een tweede stalling wil bouwen. Zolang die er niet is, mogen leerlingen hun fiets alleen in de stalling parkeren. Wie dat niet doet, krijgt een waarschuwing.\n\nSamenvatting van Mila: De stalling is te klein, dus staan fietsen buiten het hek en versperren ze de paden. De conciërge vraagt de gemeente om een tweede stalling.\n\nSamenvatting van Joris: Op school staan elke dag honderden fietsen in de stalling. De stalling is te klein, dus veel leerlingen zetten hun fiets buiten het hek."
+  },
+  {
+   "v": "Hoe kort mag een samenvatting van deze tekst zijn?",
+   "o": [
+    "twee of drie zinnen",
+    "alleen de titel van de tekst",
+    "tien zinnen met alle details",
+    "maar één woord uit de tekst"
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 4,
+   "u": "Kort, maar compleet.",
+   "uo": [
+    "Klopt: de kern is het probleem en de gevraagde oplossing.",
+    "Koos je \"alleen de titel van de tekst\"? Dan denk je dat een titel genoeg is. Een titel noemt het onderwerp, en de kern is het probleem en de oplossing.",
+    "Koos je \"tien zinnen met alle details\"? Dan denk je dat tien zinnen goed zijn. Dat is bijna even lang, en het is geen samenvatting.",
+    "Koos je \"maar één woord uit de tekst\"? Dan denk je dat één woord genoeg is. Dat zegt niets over de inhoud, en de lezer weet dan niets."
+   ],
+   "uh": "Hoeveel zinnen?",
+   "ctx": "[1] Op school staan elke dag honderden fietsen in de stalling. De stalling is te klein, dus veel leerlingen zetten hun fiets buiten het hek. [2] Daardoor staan de paden vol en kunnen mensen er niet meer langs. [3] De conciërge heeft daarom gevraagd of de gemeente een tweede stalling wil bouwen. Zolang die er niet is, mogen leerlingen hun fiets alleen in de stalling parkeren. Wie dat niet doet, krijgt een waarschuwing.\n\nSamenvatting van Mila: De stalling is te klein, dus staan fietsen buiten het hek en versperren ze de paden. De conciërge vraagt de gemeente om een tweede stalling.\n\nSamenvatting van Joris: Op school staan elke dag honderden fietsen in de stalling. De stalling is te klein, dus veel leerlingen zetten hun fiets buiten het hek."
+  },
+  {
+   "v": "Welk onderwerp heeft de tekst over eten?",
+   "o": [
+    "verspilling van eten",
+    "gezond eten bij het ontbijt thuis",
+    "de prijs van de boodschappen",
+    "hoe je kookt voor een grote groep"
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 0,
+   "u": "Waar gaat het over?",
+   "uo": [
+    "Klopt: de tekst gaat over eten dat onnodig wordt weggegooid.",
+    "Koos je \"gezond eten bij het ontbijt thuis\"? Dan denk je dat het over gezond eten gaat. Gezondheid komt niet voor, en het gaat om weggooien.",
+    "Koos je \"de prijs van de boodschappen\"? Dan denk je dat het over prijs gaat. Prijs is een bijzaak, en het onderwerp is verspilling.",
+    "Koos je \"hoe je kookt voor een grote groep\"? Dan denk je dat het over koken gaat. Dat komt niet voor, en het onderwerp is verspilling."
+   ],
+   "uh": "Wat gooien gezinnen weg?",
+   "ctx": "[1] Veel gezinnen gooien eten weg dat nog goed is. Vaak komt dat doordat ze te veel inkopen. [2] Soms lezen mensen ook de datum op de verpakking verkeerd: bij \"ten minste houdbaar tot\" is het product daarna vaak nog goed. [3] Je kunt verspilling voorkomen door een boodschappenlijstje te maken en restjes te bewaren. Zo bespaar je geld en help je het milieu.\n\nSamenvatting van Sam: Veel gezinnen gooien eten weg, vaak door te veel inkopen of verkeerd gelezen data. Een boodschappenlijstje en restjes bewaren helpen.\n\nSamenvatting van Noor: Ik vind dat gezinnen te veel eten weggooien en dat is slecht. Ik gooi zelf nooit eten weg en dat vind ik goed."
+  },
+  {
+   "v": "Welke zin is de kern van alinea 1?",
+   "o": [
+    "gezinnen besparen veel geld",
+    "je leest de datum op de verpakking verkeerd",
+    "gezinnen gooien eten weg",
+    "je helpt het milieu van de aarde"
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 1,
+   "u": "Kernzin alinea 1.",
+   "uo": [
+    "Koos je \"gezinnen besparen veel geld\"? Dan denk je dat dit alinea 1 is. Dat staat in alinea 3, en alinea 1 gaat over weggooien.",
+    "Koos je \"je leest de datum op de verpakking verkeerd\"? Dan denk je dat dit alinea 1 is. Dat staat in alinea 2, en alinea 1 gaat over weggooien.",
+    "Klopt: dit vat de hele alinea over weggooien in één zin samen.",
+    "Koos je \"je helpt het milieu van de aarde\"? Dan denk je dat dit alinea 1 is. Dat staat in alinea 3, en alinea 1 gaat over weggooien."
+   ],
+   "uh": "Wat staat in alinea 1?",
+   "ctx": "[1] Veel gezinnen gooien eten weg dat nog goed is. Vaak komt dat doordat ze te veel inkopen. [2] Soms lezen mensen ook de datum op de verpakking verkeerd: bij \"ten minste houdbaar tot\" is het product daarna vaak nog goed. [3] Je kunt verspilling voorkomen door een boodschappenlijstje te maken en restjes te bewaren. Zo bespaar je geld en help je het milieu.\n\nSamenvatting van Sam: Veel gezinnen gooien eten weg, vaak door te veel inkopen of verkeerd gelezen data. Een boodschappenlijstje en restjes bewaren helpen.\n\nSamenvatting van Noor: Ik vind dat gezinnen te veel eten weggooien en dat is slecht. Ik gooi zelf nooit eten weg en dat vind ik goed."
+  },
+  {
+   "v": "Welke zin uit alinea 2 is een nuttig detail dat de lezer moet onthouden?",
+   "o": [
+    "mensen lezen de verpakking niet goed",
+    "\"ten minste houdbaar\" is vaak nog goed",
+    "sommige mensen kopen veel te veel in",
+    "een boodschappenlijstje maken helpt"
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 2,
+   "u": "Nuttige verklaring.",
+   "uo": [
+    "Koos je \"mensen lezen de verpakking niet goed\"? Dan denk je dat dit het nuttige detail is. Het is te vaag, en het verklaart niets.",
+    "Klopt: dit verklaart waarom mensen eten onnodig weggooien.",
+    "Koos je \"sommige mensen kopen veel te veel in\"? Dan denk je dat dit uit alinea 2 komt. Dit staat in alinea 1, en het is een andere reden.",
+    "Koos je \"een boodschappenlijstje maken helpt\"? Dan denk je dat dit uit alinea 2 komt. Dit staat in alinea 3, en het is een oplossing."
+   ],
+   "uh": "Wat leert de lezer?",
+   "ctx": "[1] Veel gezinnen gooien eten weg dat nog goed is. Vaak komt dat doordat ze te veel inkopen. [2] Soms lezen mensen ook de datum op de verpakking verkeerd: bij \"ten minste houdbaar tot\" is het product daarna vaak nog goed. [3] Je kunt verspilling voorkomen door een boodschappenlijstje te maken en restjes te bewaren. Zo bespaar je geld en help je het milieu.\n\nSamenvatting van Sam: Veel gezinnen gooien eten weg, vaak door te veel inkopen of verkeerd gelezen data. Een boodschappenlijstje en restjes bewaren helpen.\n\nSamenvatting van Noor: Ik vind dat gezinnen te veel eten weggooien en dat is slecht. Ik gooi zelf nooit eten weg en dat vind ik goed."
+  },
+  {
+   "v": "Welke zin zet alinea 3 in eigen woorden?",
+   "o": [
+    "je kunt verspilling voorkomen door een boodschappenlijstje te maken en restjes te bewaren",
+    "gezinnen gooien eten weg dat nog goed is",
+    "sommigen lezen de datum op de verpakking verkeerd",
+    "met een lijstje en het bewaren van restjes weeg je minder weg"
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 3,
+   "u": "Eigen woorden voor alinea 3.",
+   "uo": [
+    "Koos je \"je kunt verspilling voorkomen door een...\"? Dan denk je dat dit eigen woorden zijn. Het is bijna letterlijk overgenomen, en niet in eigen woorden.",
+    "Koos je \"gezinnen gooien eten weg dat nog goed is\"? Dan denk je dat dit alinea 3 is. Het is alinea 1, en geeft de oplossing niet weer.",
+    "Koos je \"sommigen lezen de datum op de verpakking verkeerd\"? Dan denk je dat dit alinea 3 is. Het is alinea 2, en geeft de oplossing niet weer.",
+    "Klopt: de betekenis blijft, de woorden zijn eigen."
+   ],
+   "uh": "Wat staat er?",
+   "ctx": "[1] Veel gezinnen gooien eten weg dat nog goed is. Vaak komt dat doordat ze te veel inkopen. [2] Soms lezen mensen ook de datum op de verpakking verkeerd: bij \"ten minste houdbaar tot\" is het product daarna vaak nog goed. [3] Je kunt verspilling voorkomen door een boodschappenlijstje te maken en restjes te bewaren. Zo bespaar je geld en help je het milieu.\n\nSamenvatting van Sam: Veel gezinnen gooien eten weg, vaak door te veel inkopen of verkeerd gelezen data. Een boodschappenlijstje en restjes bewaren helpen.\n\nSamenvatting van Noor: Ik vind dat gezinnen te veel eten weggooien en dat is slecht. Ik gooi zelf nooit eten weg en dat vind ik goed."
+  },
+  {
+   "v": "Welke samenvatting is beter, die van Mila of die van Joris?",
+   "o": [
+    "Joris, want zijn tekst is wat langer",
+    "Mila, want ze noemt de oplossing",
+    "Joris, want zijn tekst lijkt op het origineel",
+    "geen van beide, want ze zijn te kort"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 4,
+   "u": "Kern in eigen woorden.",
+   "uo": [
+    "Koos je \"Joris, want zijn tekst is wat langer\"? Dan denk je dat de langste beter is. Lengte telt niet, en Joris noemt alleen het begin.",
+    "Klopt: Mila geeft de kern: probleem en oplossing, in eigen woorden.",
+    "Koos je \"Joris, want zijn tekst lijkt op het origineel\"? Dan denk je dat lijken op de tekst goed is. Joris schrijft de eerste zinnen over, en geeft de oplossing niet.",
+    "Koos je \"geen van beide, want ze zijn te kort\"? Dan denk je dat ze te kort zijn. Een samenvatting is juist kort, en Mila noemt de kern."
+   ],
+   "uh": "Welke noemt de oplossing?",
+   "ctx": "[1] Op school staan elke dag honderden fietsen in de stalling. De stalling is te klein, dus veel leerlingen zetten hun fiets buiten het hek. [2] Daardoor staan de paden vol en kunnen mensen er niet meer langs. [3] De conciërge heeft daarom gevraagd of de gemeente een tweede stalling wil bouwen. Zolang die er niet is, mogen leerlingen hun fiets alleen in de stalling parkeren. Wie dat niet doet, krijgt een waarschuwing.\n\nSamenvatting van Mila: De stalling is te klein, dus staan fietsen buiten het hek en versperren ze de paden. De conciërge vraagt de gemeente om een tweede stalling.\n\nSamenvatting van Joris: Op school staan elke dag honderden fietsen in de stalling. De stalling is te klein, dus veel leerlingen zetten hun fiets buiten het hek."
+  },
+  {
+   "v": "Welke fout zit in de samenvatting van Joris?",
+   "o": [
+    "hij neemt zinnen letterlijk over",
+    "hij schrijft veel te kort over de tekst",
+    "hij voegt zijn eigen mening toe aan de tekst",
+    "hij laat het onderwerp helemaal weg"
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 3,
+   "u": "Overschrijven is geen samenvatten.",
+   "uo": [
+    "Klopt: zo laat hij niet zien dat hij de tekst begrijpt.",
+    "Koos je \"hij schrijft veel te kort over de tekst\"? Dan denk je dat de samenvatting te kort is. Twee zinnen is juist een goede lengte, maar ze zijn gekopieerd.",
+    "Koos je \"hij voegt zijn eigen mening toe aan de tekst\"? Dan denk je dat Joris zijn eigen oordeel opschrijft. Er staat geen \"ik vind\" in, alleen zinnen uit de tekst.",
+    "Koos je \"hij laat het onderwerp helemaal weg\"? Dan denk je dat het onderwerp ontbreekt. Joris noemt de stalling en de fietsen, en zijn fout is het overnemen van zinnen."
+   ],
+   "uh": "Wat doet hij fout?",
+   "ctx": "[1] Op school staan elke dag honderden fietsen in de stalling. De stalling is te klein, dus veel leerlingen zetten hun fiets buiten het hek. [2] Daardoor staan de paden vol en kunnen mensen er niet meer langs. [3] De conciërge heeft daarom gevraagd of de gemeente een tweede stalling wil bouwen. Zolang die er niet is, mogen leerlingen hun fiets alleen in de stalling parkeren. Wie dat niet doet, krijgt een waarschuwing.\n\nSamenvatting van Mila: De stalling is te klein, dus staan fietsen buiten het hek en versperren ze de paden. De conciërge vraagt de gemeente om een tweede stalling.\n\nSamenvatting van Joris: Op school staan elke dag honderden fietsen in de stalling. De stalling is te klein, dus veel leerlingen zetten hun fiets buiten het hek."
+  },
+  {
+   "v": "Wat mist in de samenvatting van Joris?",
+   "o": [
+    "het aantal fietsen in de stalling",
+    "de naam van de school zelf",
+    "de datum van de brief aan de gemeente",
+    "de vraag om een tweede stalling"
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 4,
+   "u": "Wat is de kern?",
+   "uo": [
+    "Koos je \"het aantal fietsen in de stalling\"? Dan denk je dat het aantal mist. Dat is juist een detail, en hoeft niet.",
+    "Koos je \"de naam van de school zelf\"? Dan denk je dat de naam mist. De naam staat niet in de tekst, en is geen kern.",
+    "Koos je \"de datum van de brief aan de gemeente\"? Dan denk je dat de datum mist. Die staat niet in de tekst, en is geen kern.",
+    "Klopt: de oplossing ontbreekt, terwijl dat de kern is."
+   ],
+   "uh": "Wat ontbreekt?",
+   "ctx": "[1] Op school staan elke dag honderden fietsen in de stalling. De stalling is te klein, dus veel leerlingen zetten hun fiets buiten het hek. [2] Daardoor staan de paden vol en kunnen mensen er niet meer langs. [3] De conciërge heeft daarom gevraagd of de gemeente een tweede stalling wil bouwen. Zolang die er niet is, mogen leerlingen hun fiets alleen in de stalling parkeren. Wie dat niet doet, krijgt een waarschuwing.\n\nSamenvatting van Mila: De stalling is te klein, dus staan fietsen buiten het hek en versperren ze de paden. De conciërge vraagt de gemeente om een tweede stalling.\n\nSamenvatting van Joris: Op school staan elke dag honderden fietsen in de stalling. De stalling is te klein, dus veel leerlingen zetten hun fiets buiten het hek."
+  },
+  {
+   "v": "Welke samenvatting is beter, die van Sam of die van Noor?",
+   "o": [
+    "Noor, want ze geeft haar mening erbij",
+    "Noor, want haar tekst is korter",
+    "Sam, want ze geeft de kern",
+    "geen van beide, want beide missen iets"
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 2,
+   "u": "Geen mening.",
+   "uo": [
+    "Koos je \"Noor, want ze geeft haar mening erbij\"? Dan denk je dat de mening hoort. Een samenvatting geeft weer wat er staat, en geen persoonlijke mening.",
+    "Koos je \"Noor, want haar tekst is korter\"? Dan denk je dat korter beter is. Noor mist de kern, en geeft vooral haar mening.",
+    "Klopt: Sam geeft het probleem, de oorzaken en de oplossing.",
+    "Koos je \"geen van beide, want beide missen iets\"? Dan denk je dat beide slecht zijn. Sam noemt de kern, en dat is genoeg."
+   ],
+   "uh": "Wie geeft de kern?",
+   "ctx": "[1] Veel gezinnen gooien eten weg dat nog goed is. Vaak komt dat doordat ze te veel inkopen. [2] Soms lezen mensen ook de datum op de verpakking verkeerd: bij \"ten minste houdbaar tot\" is het product daarna vaak nog goed. [3] Je kunt verspilling voorkomen door een boodschappenlijstje te maken en restjes te bewaren. Zo bespaar je geld en help je het milieu.\n\nSamenvatting van Sam: Veel gezinnen gooien eten weg, vaak door te veel inkopen of verkeerd gelezen data. Een boodschappenlijstje en restjes bewaren helpen.\n\nSamenvatting van Noor: Ik vind dat gezinnen te veel eten weggooien en dat is slecht. Ik gooi zelf nooit eten weg en dat vind ik goed."
+  },
+  {
+   "v": "Welke fout maakt Noor in haar samenvatting?",
+   "o": [
+    "ze schrijft de hele tekst helemaal over",
+    "ze laat het onderwerp van de tekst weg",
+    "ze geeft haar mening",
+    "ze schrijft veel te lang over de tekst"
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 3,
+   "u": "Een samenvatting bevat geen eigen mening.",
+   "uo": [
+    "Koos je \"ze schrijft de hele tekst helemaal over\"? Dan denk je dat Noor de hele tekst kopieert. Haar tekst is kort, en bevat vooral haar eigen oordeel.",
+    "Koos je \"ze laat het onderwerp van de tekst weg\"? Dan denk je dat Noor het onderwerp vergeet. Ze noemt het weggooien van eten, en toch staat er iets in wat niet in de tekst staat.",
+    "Klopt: een samenvatting geeft alleen weer wat er in de tekst staat.",
+    "Koos je \"ze schrijft veel te lang over de tekst\"? Dan denk je dat ze veel te lang schrijft. Haar samenvatting is juist kort, en de fout zit in wat ze erin zet."
+   ],
+   "uh": "Wat voegt ze toe?",
+   "ctx": "[1] Veel gezinnen gooien eten weg dat nog goed is. Vaak komt dat doordat ze te veel inkopen. [2] Soms lezen mensen ook de datum op de verpakking verkeerd: bij \"ten minste houdbaar tot\" is het product daarna vaak nog goed. [3] Je kunt verspilling voorkomen door een boodschappenlijstje te maken en restjes te bewaren. Zo bespaar je geld en help je het milieu.\n\nSamenvatting van Sam: Veel gezinnen gooien eten weg, vaak door te veel inkopen of verkeerd gelezen data. Een boodschappenlijstje en restjes bewaren helpen.\n\nSamenvatting van Noor: Ik vind dat gezinnen te veel eten weggooien en dat is slecht. Ik gooi zelf nooit eten weg en dat vind ik goed."
+  },
+  {
+   "v": "Welk deel van de tekst ontbreekt in de samenvatting van Noor?",
+   "o": [
+    "het onderwerp van de tekst",
+    "de titel boven de tekst",
+    "de datum van de tekst",
+    "de oorzaak en oplossing"
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 1,
+   "u": "Kern = oorzaak en oplossing.",
+   "uo": [
+    "Koos je \"het onderwerp van de tekst\"? Dan denk je dat het onderwerp ontbreekt. Ze noemt dat gezinnen eten weggooien, dus het onderwerp staat erin.",
+    "Koos je \"de titel boven de tekst\"? Dan denk je dat de titel ontbreekt. De titel hoort niet in een samenvatting, en is geen kern.",
+    "Koos je \"de datum van de tekst\"? Dan denk je dat de datum ontbreekt. Die staat niet in de tekst, en is geen kern.",
+    "Klopt: Noor noemt het probleem maar niet de oorzaken of de oplossing."
+   ],
+   "uh": "Wat ontbreekt?",
+   "ctx": "[1] Veel gezinnen gooien eten weg dat nog goed is. Vaak komt dat doordat ze te veel inkopen. [2] Soms lezen mensen ook de datum op de verpakking verkeerd: bij \"ten minste houdbaar tot\" is het product daarna vaak nog goed. [3] Je kunt verspilling voorkomen door een boodschappenlijstje te maken en restjes te bewaren. Zo bespaar je geld en help je het milieu.\n\nSamenvatting van Sam: Veel gezinnen gooien eten weg, vaak door te veel inkopen of verkeerd gelezen data. Een boodschappenlijstje en restjes bewaren helpen.\n\nSamenvatting van Noor: Ik vind dat gezinnen te veel eten weggooien en dat is slecht. Ik gooi zelf nooit eten weg en dat vind ik goed."
+  },
+  {
+   "v": "Hoe vat je de hele tekst over de fietsen samen?",
+   "o": [
+    "te kleine stalling, dus een tweede",
+    "er staan elke dag honderden fietsen in de stalling",
+    "fietsen mogen alleen in de stalling staan",
+    "wie buiten zet krijgt een waarschuwing"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 0,
+   "u": "Probleem plus oplossing.",
+   "uo": [
+    "Klopt: dit noemt het probleem en de oplossing.",
+    "Koos je \"er staan elke dag honderden fietsen in de stalling\"? Dan denk je dat dit de samenvatting is. Het is een detail uit alinea 1, en het geeft niet de oplossing.",
+    "Koos je \"fietsen mogen alleen in de stalling staan\"? Dan denk je dat dit de samenvatting is. Het is een regel in alinea 3, en het geeft niet het hele verhaal.",
+    "Koos je \"wie buiten zet krijgt een waarschuwing\"? Dan denk je dat dit de samenvatting is. Het is een regel in alinea 3, en het geeft niet het hele verhaal."
+   ],
+   "uh": "Wat is de kern?",
+   "ctx": "[1] Op school staan elke dag honderden fietsen in de stalling. De stalling is te klein, dus veel leerlingen zetten hun fiets buiten het hek. [2] Daardoor staan de paden vol en kunnen mensen er niet meer langs. [3] De conciërge heeft daarom gevraagd of de gemeente een tweede stalling wil bouwen. Zolang die er niet is, mogen leerlingen hun fiets alleen in de stalling parkeren. Wie dat niet doet, krijgt een waarschuwing.\n\nSamenvatting van Mila: De stalling is te klein, dus staan fietsen buiten het hek en versperren ze de paden. De conciërge vraagt de gemeente om een tweede stalling.\n\nSamenvatting van Joris: Op school staan elke dag honderden fietsen in de stalling. De stalling is te klein, dus veel leerlingen zetten hun fiets buiten het hek."
+  },
+  {
+   "v": "Hoe vat je de hele tekst over eten samen?",
+   "o": [
+    "sommigen lezen de datum op de verpakking verkeerd",
+    "eten wordt weggegooid, te voorkomen",
+    "je bespaart veel geld thuis",
+    "eten is altijd erg lekker voor iedereen"
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 0,
+   "u": "Probleem plus oplossing.",
+   "uo": [
+    "Koos je \"sommigen lezen de datum op de verpakking verkeerd\"? Dan denk je dat dit de samenvatting is. Het is een oorzaak uit alinea 2, en niet de hele tekst.",
+    "Klopt: dit noemt het probleem en de oplossing.",
+    "Koos je \"je bespaart veel geld thuis\"? Dan denk je dat dit de samenvatting is. Het is een gevolg uit alinea 3, en niet de hele tekst.",
+    "Koos je \"eten is altijd erg lekker voor iedereen\"? Dan denk je dat dit de samenvatting is. Het is een mening, en komt niet in de tekst voor."
+   ],
+   "uh": "Wat is de kern?",
+   "ctx": "[1] Veel gezinnen gooien eten weg dat nog goed is. Vaak komt dat doordat ze te veel inkopen. [2] Soms lezen mensen ook de datum op de verpakking verkeerd: bij \"ten minste houdbaar tot\" is het product daarna vaak nog goed. [3] Je kunt verspilling voorkomen door een boodschappenlijstje te maken en restjes te bewaren. Zo bespaar je geld en help je het milieu.\n\nSamenvatting van Sam: Veel gezinnen gooien eten weg, vaak door te veel inkopen of verkeerd gelezen data. Een boodschappenlijstje en restjes bewaren helpen.\n\nSamenvatting van Noor: Ik vind dat gezinnen te veel eten weggooien en dat is slecht. Ik gooi zelf nooit eten weg en dat vind ik goed."
+  },
+  {
+   "v": "Welk deel van Sams samenvatting is een detail dat je ook weg zou kunnen laten?",
+   "o": [
+    "\"veel gezinnen gooien eten weg\"",
+    "\"een boodschappenlijstje helpt\"",
+    "\"restjes bewaren helpt\"",
+    "\"of verkeerd gelezen data\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 2,
+   "u": "Een detail kun je weglaten, een hoofdzaak niet.",
+   "uo": [
+    "Koos je \"veel gezinnen gooien eten weg\"? Dan denk je dat dit een detail is. Het noemt het hoofdonderwerp van de tekst, en zonder deze zin klopt de samenvatting niet.",
+    "Koos je \"een boodschappenlijstje helpt\"? Dan denk je dat dit een detail is. Het noemt een van de oplossingen, en de lezer heeft die nodig.",
+    "Koos je \"restjes bewaren helpt\"? Dan denk je dat dit een detail is. Het is de tweede oplossing uit de tekst, en hoort bij de kern.",
+    "Klopt: het is een van de oorzaken en niet de hoofdzaak."
+   ],
+   "uh": "Welk deel is een extra?",
+   "ctx": "[1] Veel gezinnen gooien eten weg dat nog goed is. Vaak komt dat doordat ze te veel inkopen. [2] Soms lezen mensen ook de datum op de verpakking verkeerd: bij \"ten minste houdbaar tot\" is het product daarna vaak nog goed. [3] Je kunt verspilling voorkomen door een boodschappenlijstje te maken en restjes te bewaren. Zo bespaar je geld en help je het milieu.\n\nSamenvatting van Sam: Veel gezinnen gooien eten weg, vaak door te veel inkopen of verkeerd gelezen data. Een boodschappenlijstje en restjes bewaren helpen.\n\nSamenvatting van Noor: Ik vind dat gezinnen te veel eten weggooien en dat is slecht. Ik gooi zelf nooit eten weg en dat vind ik goed."
+  },
+  {
+   "v": "Hoe herschrijf je \"de stalling is te klein\" in eigen woorden?",
+   "o": [
+    "niet genoeg ruimte voor fietsen",
+    "de stalling is te klein voor de fietsen",
+    "de stalling is helemaal vol met fietsen",
+    "er is geen stalling bij de school"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 3,
+   "u": "Gebruik andere woorden met dezelfde betekenis.",
+   "uo": [
+    "Klopt: dit zegt hetzelfde in andere woorden en blijft dicht bij de betekenis.",
+    "Koos je \"de stalling is te klein voor de fietsen\"? Dan denk je dat dit eigen woorden zijn. Het is bijna dezelfde zin, en geen herschrijving.",
+    "Koos je \"de stalling is helemaal vol met fietsen\"? Dan denk je dat dit past. Vol is niet hetzelfde als te klein, en het verandert de betekenis.",
+    "Koos je \"er is geen stalling bij de school\"? Dan denk je dat dit past. Er is wel een stalling, alleen is hij te klein."
+   ],
+   "uh": "Hoe zeg je dat anders?",
+   "ctx": "[1] Op school staan elke dag honderden fietsen in de stalling. De stalling is te klein, dus veel leerlingen zetten hun fiets buiten het hek. [2] Daardoor staan de paden vol en kunnen mensen er niet meer langs. [3] De conciërge heeft daarom gevraagd of de gemeente een tweede stalling wil bouwen. Zolang die er niet is, mogen leerlingen hun fiets alleen in de stalling parkeren. Wie dat niet doet, krijgt een waarschuwing.\n\nSamenvatting van Mila: De stalling is te klein, dus staan fietsen buiten het hek en versperren ze de paden. De conciërge vraagt de gemeente om een tweede stalling.\n\nSamenvatting van Joris: Op school staan elke dag honderden fietsen in de stalling. De stalling is te klein, dus veel leerlingen zetten hun fiets buiten het hek."
+  },
+  {
+   "v": "Wat controleer je na het schrijven van een samenvatting van deze tekst?",
+   "o": [
+    "of alle cijfers en jaartallen erin staan",
+    "of probleem, oorzaak en oplossing erin staan",
+    "of de samenvatting even lang is als de tekst",
+    "of er smileys en plaatjes in staan"
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 4,
+   "u": "Controleer of de kern erin staat.",
+   "uo": [
+    "Koos je \"of alle cijfers en jaartallen erin staan\"? Dan denk je dat cijfers moeten. De tekst bevat nauwelijks cijfers, en ze zijn geen kern.",
+    "Klopt: wie de kern controleert, ziet of de samenvatting de hoofdzaken bevat.",
+    "Koos je \"of de samenvatting even lang is als de tekst\"? Dan denk je dat dezelfde lengte goed is. Een samenvatting is korter, dus dat is niet nodig.",
+    "Koos je \"of er smileys en plaatjes in staan\"? Dan denk je dat smileys horen. Een samenvatting is serieus, en smileys horen er niet in."
+   ],
+   "uh": "Wat moet erin?",
+   "ctx": "[1] Veel gezinnen gooien eten weg dat nog goed is. Vaak komt dat doordat ze te veel inkopen. [2] Soms lezen mensen ook de datum op de verpakking verkeerd: bij \"ten minste houdbaar tot\" is het product daarna vaak nog goed. [3] Je kunt verspilling voorkomen door een boodschappenlijstje te maken en restjes te bewaren. Zo bespaar je geld en help je het milieu.\n\nSamenvatting van Sam: Veel gezinnen gooien eten weg, vaak door te veel inkopen of verkeerd gelezen data. Een boodschappenlijstje en restjes bewaren helpen.\n\nSamenvatting van Noor: Ik vind dat gezinnen te veel eten weggooien en dat is slecht. Ik gooi zelf nooit eten weg en dat vind ik goed."
+  }
+ ],
+ "oe": [
+  {
+   "bron": "Examenstijl",
+   "ctx": "[1] Op school staan elke dag honderden fietsen in de stalling. De stalling is te klein, dus veel leerlingen zetten hun fiets buiten het hek. [2] Daardoor staan de paden vol en kunnen mensen er niet meer langs. [3] De conciërge heeft daarom gevraagd of de gemeente een tweede stalling wil bouwen. Zolang die er niet is, mogen leerlingen hun fiets alleen in de stalling parkeren. Wie dat niet doet, krijgt een waarschuwing.",
+   "v": "Schrijf een samenvatting van deze tekst in twee of drie zinnen.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "De stalling is te klein, dus fietsen staan buiten het hek en versperren de paden (2p). De conciërge vraagt de gemeente om een tweede stalling en tot dan mogen fietsen alleen in de stalling staan (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "[1] Veel gezinnen gooien eten weg dat nog goed is. Vaak komt dat doordat ze te veel inkopen. [2] Soms lezen mensen ook de datum op de verpakking verkeerd: bij \"ten minste houdbaar tot\" is het product daarna vaak nog goed. [3] Je kunt verspilling voorkomen door een boodschappenlijstje te maken en restjes te bewaren. Zo bespaar je geld en help je het milieu.",
+   "v": "Noem de kern van alinea 1, 2 en 3 in korte zinnen.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Alinea 1: gezinnen gooien eten weg door te veel in te kopen (1p). Alinea 2: ze lezen de houdbaarheidsdatum verkeerd (1p). Alinea 3: een lijstje en restjes bewaren voorkomen verspilling (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "[1] Op school staan elke dag honderden fietsen in de stalling. De stalling is te klein, dus veel leerlingen zetten hun fiets buiten het hek. [2] Daardoor staan de paden vol en kunnen mensen er niet meer langs. [3] De conciërge heeft daarom gevraagd of de gemeente een tweede stalling wil bouwen. Zolang die er niet is, mogen leerlingen hun fiets alleen in de stalling parkeren. Wie dat niet doet, krijgt een waarschuwing.\n\nSamenvatting van Mila: De stalling is te klein, dus staan fietsen buiten het hek en versperren ze de paden. De conciërge vraagt de gemeente om een tweede stalling.\n\nSamenvatting van Joris: Op school staan elke dag honderden fietsen in de stalling. De stalling is te klein, dus veel leerlingen zetten hun fiets buiten het hek.",
+   "v": "Welke samenvatting is beter en waarom?",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Die van Mila (1p), want ze noemt probleem en oplossing in eigen woorden (1p). Joris schrijft de eerste zinnen letterlijk over en mist de oplossing (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "[1] Veel gezinnen gooien eten weg dat nog goed is. Vaak komt dat doordat ze te veel inkopen. [2] Soms lezen mensen ook de datum op de verpakking verkeerd: bij \"ten minste houdbaar tot\" is het product daarna vaak nog goed. [3] Je kunt verspilling voorkomen door een boodschappenlijstje te maken en restjes te bewaren. Zo bespaar je geld en help je het milieu.\n\nSamenvatting van Sam: Veel gezinnen gooien eten weg, vaak door te veel inkopen of verkeerd gelezen data. Een boodschappenlijstje en restjes bewaren helpen.\n\nSamenvatting van Noor: Ik vind dat gezinnen te veel eten weggooien en dat is slecht. Ik gooi zelf nooit eten weg en dat vind ik goed.",
+   "v": "Wat is er mis met de samenvatting van Noor?",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Ze voegt haar eigen mening toe en noemt iets over zichzelf (2p). De oorzaken en de oplossing ontbreken (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "[1] Op school staan elke dag honderden fietsen in de stalling. De stalling is te klein, dus veel leerlingen zetten hun fiets buiten het hek. [2] Daardoor staan de paden vol en kunnen mensen er niet meer langs. [3] De conciërge heeft daarom gevraagd of de gemeente een tweede stalling wil bouwen. Zolang die er niet is, mogen leerlingen hun fiets alleen in de stalling parkeren. Wie dat niet doet, krijgt een waarschuwing.",
+   "v": "Noem twee details uit de tekst die je weglaat in een samenvatting.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Het aantal fietsen of honderden fietsen (1p) en de waarschuwing die leerlingen krijgen (1p)."
+  }
+ ]
+}
