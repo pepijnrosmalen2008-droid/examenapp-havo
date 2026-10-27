@@ -15884,6 +15884,667 @@ var VAKKEN_VMBO = [
         "u": "Lars, Mo, Amsterdam (2p). Dagen en maanden zijn geen eigennamen (1p)."
        }
       ]
+     },
+     {
+      "id": "D6",
+      "lo": "nl.D.6",
+      "gs": 2,
+      "naam": "Zinsbouw en leestekens",
+      "beschrijving": "Je schrijft hele zinnen met een onderwerp en een persoonsvorm en gebruikt punt, vraagteken, komma, aanhalingstekens en hoofdletters op de goede plek.",
+      "ceStatus": "SE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "De volledige zin",
+       "Punt, vraagteken en uitroepteken",
+       "De komma",
+       "Directe rede met aanhalingstekens",
+       "Aanhef en afsluiting"
+      ],
+      "sam": "Een volledige zin heeft minstens een onderwerp en een persoonsvorm en begint met een hoofdletter. Een mededeling eindigt met een punt, een vraag met een vraagteken en een bevel of sterk gevoel met een uitroepteken. Een komma gebruik je in een opsomming en voor woorden als maar en dus. Letterlijke woorden zet je tussen aanhalingstekens na een dubbele punt, met een hoofdletter. Na een aanhef schrijf je een komma en na de groet aan het eind ook.",
+      "begrippen": [
+       {
+        "t": "Zin",
+        "d": "Een groep woorden met minstens een onderwerp en een persoonsvorm."
+       },
+       {
+        "t": "Onderwerp",
+        "d": "Wie of wat iets doet."
+       },
+       {
+        "t": "Persoonsvorm",
+        "d": "Het werkwoord dat bij het onderwerp past."
+       },
+       {
+        "t": "Brokstuk",
+        "d": "Een deel van een zin zonder persoonsvorm."
+       },
+       {
+        "t": "Punt",
+        "d": "Het leesteken aan het eind van een mededeling."
+       },
+       {
+        "t": "Vraagteken",
+        "d": "Het leesteken aan het eind van een vraag."
+       },
+       {
+        "t": "Uitroepteken",
+        "d": "Het leesteken voor nadruk of een bevel."
+       },
+       {
+        "t": "Komma",
+        "d": "Het leesteken in een opsomming of voor maar en dus."
+       },
+       {
+        "t": "Opsomming",
+        "d": "Een rij van dingen, zoals appels, peren en bananen."
+       },
+       {
+        "t": "Aanhalingsteken",
+        "d": "Het teken om letterlijke woorden."
+       },
+       {
+        "t": "Directe rede",
+        "d": "De letterlijke woorden die iemand zegt."
+       },
+       {
+        "t": "Dubbele punt",
+        "d": "Het leesteken dat iets aankondigt."
+       }
+      ],
+      "sv": [
+       {
+        "v": "Welk leesteken zet je aan het eind van een vraag?",
+        "o": [
+         "een punt",
+         "een vraagteken",
+         "een komma",
+         "een dubbele punt"
+        ],
+        "c": 1,
+        "d": 1,
+        "s": 0,
+        "u": "Vraag = vraagteken. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"een punt\"? Dan denk je dat een vraag met een punt eindigt. Een punt hoort bij een mededeling, en een vraag krijgt een vraagteken.",
+         "Klopt: een vraag eindigt altijd met een vraagteken, niet met een punt.",
+         "Koos je \"een komma\"? Dan denk je dat een komma een zin afsluit. Een komma scheidt delen binnen een zin, en sluit hem niet af.",
+         "Koos je \"een dubbele punt\"? Dan denk je dat een dubbele punt een zin afsluit. Die kondigt iets aan, zoals een opsomming of een citaat."
+        ],
+        "uh": "Wat eindigt een vraag?"
+       },
+       {
+        "v": "Waarmee begin je een nieuwe zin?",
+        "o": [
+         "met een kleine letter",
+         "met een komma",
+         "met een streepje",
+         "met een hoofdletter"
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 1,
+        "u": "Hoofdletter na een punt. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"met een kleine letter\"? Dan denk je dat een zin met een kleine letter begint. Een zin begint altijd met een hoofdletter, ook na een punt.",
+         "Koos je \"met een komma\"? Dan denk je dat een zin met een komma begint. Een komma staat midden in een zin, en een zin begint met een hoofdletter.",
+         "Koos je \"met een streepje\"? Dan denk je dat een streepje een zin opent. Een streepje scheidt iets binnen een zin, en is geen begin.",
+         "Klopt: elke nieuwe zin begint met een hoofdletter, ook na een punt."
+        ],
+        "uh": "Waar begint een zin mee?"
+       },
+       {
+        "v": "Wat staat er tussen de delen van een opsomming?",
+        "o": [
+         "een komma",
+         "een punt",
+         "een vraagteken",
+         "niets, alles aan elkaar"
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 2,
+        "u": "Opsomming = komma's. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: de delen van een opsomming scheid je met komma's.",
+         "Koos je \"een punt\"? Dan denk je dat je opsommingen met punten scheidt. Een punt sluit een zin af, en de opsomming gaat door.",
+         "Koos je \"een vraagteken\"? Dan denk je dat een vraagteken de delen scheidt. Een vraagteken hoort bij een vraag, en een opsomming is geen vraag.",
+         "Koos je \"niets, alles aan elkaar\"? Dan denk je dat de delen aan elkaar mogen. De lezer weet dan niet waar het ene deel eindigt, en de komma maakt het duidelijk."
+        ],
+        "uh": "Wat scheidt de delen?"
+       },
+       {
+        "v": "Welke twee onderdelen heeft elke volledige zin minstens?",
+        "o": [
+         "een vraagteken en een punt",
+         "een hoofdletter en een komma",
+         "een onderwerp en een persoonsvorm",
+         "een bijvoeglijk naamwoord en een bijwoord"
+        ],
+        "c": 2,
+        "d": 1,
+        "s": 3,
+        "u": "Onderwerp + persoonsvorm. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"een vraagteken en een punt\"? Dan denk je dat leestekens een zin maken. Ze sluiten een zin af, maar het zijn geen onderdelen van de zin zelf.",
+         "Koos je \"een hoofdletter en een komma\"? Dan denk je dat een hoofdletter en een komma genoeg zijn. Het zijn leestekens en letters, geen zinsdelen.",
+         "Klopt: zonder die twee onderdelen is het geen volledige zin.",
+         "Koos je \"een bijvoeglijk naamwoord en een bijwoord\"? Dan denk je dat een zin uit bijvoegingen bestaat. Die zijn extra, en niet de kern van de zin."
+        ],
+        "uh": "Waar bestaat een zin uit?"
+       },
+       {
+        "v": "Waar gebruik je aanhalingstekens voor?",
+        "o": [
+         "voor elk belangrijk woord in een tekst",
+         "voor een opsomming van dingen",
+         "voor letterlijke woorden",
+         "voor de titel van een hele brief"
+        ],
+        "c": 2,
+        "d": 1,
+        "s": 4,
+        "u": "Aanhalingstekens = letterlijk.",
+        "uo": [
+         "Koos je \"voor elk belangrijk woord in een tekst\"? Dan denk je dat aanhalingstekens benadrukken. Daar gebruik je ze meestal niet voor, en ze horen bij letterlijke woorden.",
+         "Koos je \"voor een opsomming van dingen\"? Dan denk je dat aanhalingstekens een opsomming omsluiten. Een opsomming heeft komma's, en geen aanhalingstekens.",
+         "Klopt: aanhalingstekens staan om de woorden die iemand letterlijk zegt.",
+         "Koos je \"voor de titel van een hele brief\"? Dan denk je dat een brief aanhalingstekens vraagt. Dat is niet nodig, en ze gebruik je bij letterlijke woorden."
+        ],
+        "uh": "Wat staat tussen aanhalingstekens?"
+       },
+       {
+        "v": "Welk leesteken zet je aan het eind van een gewone mededeling?",
+        "o": [
+         "een punt",
+         "een vraagteken",
+         "een komma",
+         "een apostrof"
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 4,
+        "u": "Mededeling = punt. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: een mededeling sluit je af met een punt.",
+         "Koos je \"een vraagteken\"? Dan denk je dat een mededeling een vraagteken krijgt. Een vraagteken hoort bij een vraag, en een mededeling krijgt een punt.",
+         "Koos je \"een komma\"? Dan denk je dat een komma een zin afsluit. Een komma staat midden in een zin, en een mededeling eindigt met een punt.",
+         "Koos je \"een apostrof\"? Dan denk je dat een apostrof een zin afsluit. Een apostrof hoort bij verkorte woorden, en niet aan het eind van een zin."
+        ],
+        "uh": "Wat eindigt de zin?"
+       },
+       {
+        "v": "Waarvoor gebruik je een uitroepteken?",
+        "o": [
+         "voor elke zin in een hele brief",
+         "voor een vraag aan de lezer",
+         "voor een opsomming van dingen",
+         "voor een bevel of sterk gevoel"
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 1,
+        "u": "Uitroepteken = nadruk. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"voor elke zin in een hele brief\"? Dan denk je dat elke zin een uitroepteken krijgt. Dat maakt de tekst te luid, en je gebruikt het spaarzaam.",
+         "Koos je \"voor een vraag aan de lezer\"? Dan denk je dat een uitroepteken bij een vraag hoort. Een vraag krijgt een vraagteken, en een uitroepteken hoort bij nadruk.",
+         "Koos je \"voor een opsomming van dingen\"? Dan denk je dat een uitroepteken een opsomming scheidt. Dat doet een komma, en een uitroepteken geeft nadruk.",
+         "Klopt: een uitroepteken geeft nadruk of een opdracht."
+        ],
+        "uh": "Wanneer gebruik je het?"
+       },
+       {
+        "v": "Waar ontbreken komma's in \"appels peren en bananen\"?",
+        "o": [
+         "voor \"kocht\", zodat de zin langer wordt",
+         "na appels, in de opsomming",
+         "na \"gisteren\", omdat het een tijd is",
+         "nergens, de zin klopt echt wel"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 2,
+        "u": "Komma's in een opsomming. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"voor kocht, zodat de zin langer wordt\"? Dan denk je dat een komma voor het werkwoord moet. Een komma staat tussen delen van een opsomming, en niet voor het werkwoord.",
+         "Klopt: in een opsomming staat een komma tussen de eerste delen en en voor het laatste.",
+         "Koos je \"na gisteren, omdat het een tijd is\"? Dan denk je dat een komma na een tijdsaanduiding komt. Hier staat de komma in de opsomming, tussen de gekochte dingen.",
+         "Koos je \"nergens, de zin klopt echt wel\"? Dan denk je dat de zin goed is. Tussen appels en peren ontbreekt een komma, dus de opsomming is niet duidelijk."
+        ],
+        "uh": "Waar staan de delen?",
+        "ctx": "Een leerling schrijft aan zijn oma: \"Hoi oma! Ik ben gisteren naar de markt geweest en ik kocht appels peren en bananen. Mijn zus ging mee maar zij kocht niets. Wil je volgende week ook meegaan\""
+       },
+       {
+        "v": "Wat ontbreekt er aan het eind van de laatste zin van de tekst?",
+        "o": [
+         "een punt",
+         "een uitroepteken",
+         "een komma",
+         "een vraagteken"
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 0,
+        "u": "Vraag = vraagteken. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"een punt\"? Dan denk je dat een punt de zin netjes afsluit. Zo'n punt hoort bij een mededeling, en deze zin vraagt iets aan oma.",
+         "Koos je \"een uitroepteken\"? Dan denk je dat de zin een uitroepteken krijgt omdat oma iets moet doen. Hij vraagt haar of ze meegaat, en dat is geen bevel.",
+         "Koos je \"een komma\"? Dan denk je dat een komma het eind van de zin markeert. Een komma staat midden in een zin, en laat de lezer niet weten dat het een vraag is.",
+         "Klopt: \"Wil je volgende week ook meegaan\" is een vraag."
+        ],
+        "uh": "Is het een vraag?",
+        "ctx": "Een leerling schrijft aan zijn oma: \"Hoi oma! Ik ben gisteren naar de markt geweest en ik kocht appels peren en bananen. Mijn zus ging mee maar zij kocht niets. Wil je volgende week ook meegaan\""
+       },
+       {
+        "v": "Waar hoort in \"Mijn zus ging mee maar zij kocht niets\" een komma?",
+        "o": [
+         "na \"zus\" in de zin",
+         "voor \"maar\"",
+         "na \"kocht\" in de zin",
+         "na \"niets\" voor het punt"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 1,
+        "u": "Komma voor maar. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"na zus in de zin\"? Dan denk je dat de komma direct na het onderwerp komt. Dat is bij deze zin niet het geval, want de zin splitst pas bij het woord maar.",
+         "Klopt: voor maar zet je een komma, omdat het twee delen van de zin scheidt.",
+         "Koos je \"na kocht in de zin\"? Dan denk je dat een komma na het werkwoord kocht hoort. Daar wordt de zin niet gesplitst, want het tweede deel begint al eerder.",
+         "Koos je \"na niets voor het punt\"? Dan denk je dat een komma aan het eind van de zin staat. Dat doe je niet voor een punt, want de komma hoort midden in de zin."
+        ],
+        "uh": "Waar begint het tweede deel?",
+        "ctx": "Een leerling schrijft aan zijn oma: \"Hoi oma! Ik ben gisteren naar de markt geweest en ik kocht appels peren en bananen. Mijn zus ging mee maar zij kocht niets. Wil je volgende week ook meegaan\""
+       },
+       {
+        "v": "Welke zin is een volledige zin?",
+        "o": [
+         "Gisteren naar de grote markt.",
+         "De markt gisteren geopend.",
+         "Ik ben naar de markt geweest.",
+         "Met mijn zus naar de markt toe."
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 3,
+        "u": "Onderwerp en persoonsvorm. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"Gisteren naar de grote markt.\"? Dan denk je dat dit een hele zin is omdat er een tijd en een plaats in staan. Er ontbreken een onderwerp en persoonsvorm, en dus is het een brokstuk.",
+         "Koos je \"De markt gisteren geopend.\"? Dan denk je dat geopend de persoonsvorm is. Het is een voltooid deelwoord, en de zin heeft geen persoonsvorm zoals is of wordt.",
+         "Klopt: er staat een onderwerp (ik) en een persoonsvorm (ben).",
+         "Koos je \"Met mijn zus naar de markt toe.\"? Dan denk je dat de woorden bij elkaar een zin vormen. Er staat geen werkwoord dat past bij een onderwerp, dus het is een los zinsdeel."
+        ],
+        "uh": "Wie doet wat?",
+        "ctx": "Een leerling schrijft aan zijn oma: \"Hoi oma! Ik ben gisteren naar de markt geweest en ik kocht appels peren en bananen. Mijn zus ging mee maar zij kocht niets. Wil je volgende week ook meegaan\""
+       },
+       {
+        "v": "Hoe schrijf je \"ik heb honger\" goed op in de tekst?",
+        "o": [
+         "Mijn broer zei: \"Ik heb honger.\"",
+         "Mijn broer zei: ik heb honger.",
+         "Mijn broer zei, \"ik heb honger\".",
+         "Mijn broer zei ik heb honger."
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 4,
+        "u": "Aanhalingstekens en hoofdletter.",
+        "uo": [
+         "Klopt: letterlijke woorden zet je tussen aanhalingstekens en na een dubbele punt met een hoofdletter.",
+         "Koos je \"Mijn broer zei: ik heb honger.\"? Dan denk je dat de letterlijke woorden geen aanhalingstekens nodig hebben. Ze staan toch in de directe rede, en dan zijn aanhalingstekens verplicht.",
+         "Koos je \"Mijn broer zei, ik heb honger.\"? Dan denk je dat een komma na zei past. Dan hoort een dubbele punt, met een hoofdletter bij het citaat.",
+         "Koos je \"Mijn broer zei ik heb honger.\"? Dan denk je dat een zin zonder leestekens kan. Zo is de directe rede niet te zien, en de lezer raakt de draad kwijt."
+        ],
+        "uh": "Wat zegt de broer letterlijk?",
+        "ctx": "Een leerling schrijft: \"Mijn broer zei: ik heb honger. Hij pakte brood kaas en een appel. We hebben thuis geen melk dus hij dronk water. Daarna ging hij naar zijn kamer\""
+       },
+       {
+        "v": "Waar ontbreken komma's in \"brood kaas en een appel\"?",
+        "o": [
+         "tussen brood en kaas",
+         "voor \"pakte\"",
+         "na \"kaas\"",
+         "nergens, de zin klopt echt wel"
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 2,
+        "u": "Komma in opsomming. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: bij een opsomming staat een komma tussen de delen.",
+         "Koos je \"voor pakte\"? Dan denk je dat een komma voor het werkwoord komt. Dat doe je niet, en de komma hoort in de opsomming.",
+         "Koos je \"na kaas\"? Dan denk je dat een komma na kaas komt. Voor en hoort in het algemeen geen komma, en de komma staat tussen brood en kaas.",
+         "Koos je \"nergens, de zin klopt echt wel\"? Dan denk je dat de zin goed is. Tussen brood en kaas ontbreekt een komma, dus de opsomming is niet duidelijk."
+        ],
+        "uh": "Waar staan de delen?",
+        "ctx": "Een leerling schrijft: \"Mijn broer zei: ik heb honger. Hij pakte brood kaas en een appel. We hebben thuis geen melk dus hij dronk water. Daarna ging hij naar zijn kamer\""
+       },
+       {
+        "v": "Waar hoort een komma in \"We hebben thuis geen melk dus hij dronk water\"?",
+        "o": [
+         "na \"thuis\" in de zin",
+         "na \"dronk\" in de zin",
+         "voor \"dus\"",
+         "na \"water\" voor het punt"
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 1,
+        "u": "Komma voor dus. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"na thuis in de zin\"? Dan denk je dat de komma na thuis hoort. Daar heeft de zin geen splitsing, want de splitsing is bij het woord dus.",
+         "Koos je \"na dronk in de zin\"? Dan denk je dat de komma na het werkwoord dronk hoort. Dan zou je water los zetten, terwijl dus de splitsing aangeeft.",
+         "Klopt: voor dus zet je een komma, omdat de zin daar in twee delen splitst.",
+         "Koos je \"na water voor het punt\"? Dan denk je dat de komma aan het eind van de zin hoort. Aan het eind staat een punt, en de komma hoort midden in de zin."
+        ],
+        "uh": "Waar splitst de zin?",
+        "ctx": "Een leerling schrijft: \"Mijn broer zei: ik heb honger. Hij pakte brood kaas en een appel. We hebben thuis geen melk dus hij dronk water. Daarna ging hij naar zijn kamer\""
+       },
+       {
+        "v": "Welk leesteken ontbreekt aan het eind van \"Wie wil er helpen met opbouwen\"?",
+        "o": [
+         "een punt",
+         "een vraagteken",
+         "een uitroepteken",
+         "een komma"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 0,
+        "u": "Vraag = vraagteken. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"een punt\"? Dan denk je dat een punt past. Een punt hoort bij een mededeling, en dit is een vraag.",
+         "Klopt: het is een vraag en een vraag eindigt met een vraagteken.",
+         "Koos je \"een uitroepteken\"? Dan denk je dat een uitroepteken past. Dat hoort bij nadruk, en de zin stelt een vraag.",
+         "Koos je \"een komma\"? Dan denk je dat een komma past. Een komma sluit geen zin af, en de vraag eindigt met een vraagteken."
+        ],
+        "uh": "Welke soort zin is het?",
+        "ctx": "Op school ligt een briefje: \"Beste leerlingen. Morgen is er een schoolfeest. Neem je eigen drinken mee. De les begint om half negen. Wie wil er helpen met opbouwen\""
+       },
+       {
+        "v": "Welke zin uit het briefje heeft een onderwerp en een persoonsvorm?",
+        "o": [
+         "Morgen om half negen precies.",
+         "Beste leerlingen van onze school.",
+         "Met je eigen drinken en eten.",
+         "De les begint om negen."
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 3,
+        "u": "Onderwerp + persoonsvorm. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"Morgen om half negen precies.\"? Dan denk je dat geopend de persoonsvorm is. Het is een voltooid deelwoord, en de zin heeft geen persoonsvorm zoals is of wordt.",
+         "Koos je \"Beste leerlingen van onze school.\"? Dan denk je dat dit een zin is. Het is een aanhef, en heeft geen persoonsvorm.",
+         "Koos je \"Met je eigen drinken en eten.\"? Dan denk je dat dit een zin is. Er ontbreekt een persoonsvorm, en het is een brokstuk.",
+         "Klopt: \"de les\" is het onderwerp en \"begint\" is de persoonsvorm."
+        ],
+        "uh": "Wie doet wat?",
+        "ctx": "Op school ligt een briefje: \"Beste leerlingen. Morgen is er een schoolfeest. Neem je eigen drinken mee. De les begint om half negen. Wie wil er helpen met opbouwen\""
+       },
+       {
+        "v": "Welk leesteken hoort na \"Beste leerlingen\" in het briefje?",
+        "o": [
+         "een punt",
+         "een komma",
+         "een vraagteken",
+         "een uitroepteken"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 4,
+        "u": "Aanhef + komma. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"een punt\"? Dan denk je dat een punt past. Een punt sluit een zin af, en na een aanhef volgt een komma.",
+         "Klopt: na een aanhef zet je een komma en begin je met een kleine letter.",
+         "Koos je \"een vraagteken\"? Dan denk je dat een vraagteken past. Een vraagteken hoort bij een vraag, en een aanhef stelt geen vraag.",
+         "Koos je \"een uitroepteken\"? Dan denk je dat een uitroepteken past. Dat kan in een informele groet, maar in een nette aanhef staat een komma."
+        ],
+        "uh": "Wat staat na de aanhef?",
+        "ctx": "Op school ligt een briefje: \"Beste leerlingen. Morgen is er een schoolfeest. Neem je eigen drinken mee. De les begint om half negen. Wie wil er helpen met opbouwen\""
+       },
+       {
+        "v": "Waar ontbreekt een komma in \"Eerst had ik wiskunde en daarna gym\"?",
+        "o": [
+         "nergens, de zin is goed",
+         "voor \"en\" in de zin",
+         "na \"eerst\" in de zin",
+         "na \"ik\" in de zin"
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 2,
+        "u": "Korte zin met en: geen komma. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: de twee delen worden door \"en\" verbonden, dus geen komma nodig.",
+         "Koos je \"voor en in de zin\"? Dan denk je dat voor het woord en altijd een komma hoort. Bij een korte zin die door en wordt verbonden hoeft dat niet, dus de zin is al goed.",
+         "Koos je \"na eerst in de zin\"? Dan denk je dat na eerst een komma moet omdat het een tijdsaanduiding is. Bij zo'n korte zin hoeft dat niet, dus de zin klopt.",
+         "Koos je \"na ik in de zin\"? Dan denk je dat na het onderwerp ik een komma moet. Dat zou de zin onnodig afbreken, en de zin klopt dus al."
+        ],
+        "uh": "Is een komma nodig?",
+        "ctx": "Mila schrijft in haar dagboek: \"Vandaag was een goede dag. Eerst had ik wiskunde en daarna gym. Na school ging ik met mijn vriendin naar het park. Zij zei: ik vind jouw nieuwe jas mooi. Ik werd er blij van.\""
+       },
+       {
+        "v": "Hoe schrijf je \"ik vind jouw nieuwe jas mooi\" goed op in de tekst?",
+        "o": [
+         "Zij zei: ik vind jouw nieuwe jas mooi.",
+         "Zij zei \"ik vind jouw nieuwe jas mooi\".",
+         "Zij zei, ik vind jouw nieuwe jas mooi.",
+         "Zij zei: \"Ik vind jouw nieuwe jas mooi.\""
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 0,
+        "u": "Directe rede. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"Zij zei: ik vind jouw nieuwe jas mooi.\"? Dan denk je dat letterlijke woorden zonder aanhalingstekens kunnen. Ze zijn dan niet als directe rede te herkennen, en dus plaats je aanhalingstekens.",
+         "Koos je \"Zij zei ik vind jouw nieuwe jas mooi.\"? Dan denk je dat een dubbele punt overbodig is. Voor een citaat is die gebruikelijk, en het citaat begint met een hoofdletter.",
+         "Koos je \"Zij zei, ik vind jouw nieuwe jas mooi.\"? Dan denk je dat een komma volstaat. Zonder aanhalingstekens blijft de directe rede onzichtbaar, en dus is het fout.",
+         "Klopt: letterlijke woorden staan tussen aanhalingstekens, met een hoofdletter."
+        ],
+        "uh": "Wat zegt zij letterlijk?",
+        "ctx": "Mila schrijft in haar dagboek: \"Vandaag was een goede dag. Eerst had ik wiskunde en daarna gym. Na school ging ik met mijn vriendin naar het park. Zij zei: ik vind jouw nieuwe jas mooi. Ik werd er blij van.\""
+       },
+       {
+        "v": "Welk leesteken staat na \"Dag meneer Bos\" in de mail?",
+        "o": [
+         "een punt",
+         "een dubbele punt",
+         "een komma",
+         "een uitroepteken"
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 1,
+        "u": "Aanhef + komma. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"een punt\"? Dan denk je dat een punt past. Een punt sluit een zin af, en na een aanhef komt een komma.",
+         "Koos je \"een dubbele punt\"? Dan denk je dat een dubbele punt past. Die kondigt iets aan, maar na een aanhef gebruik je een komma.",
+         "Klopt: na de aanhef van een brief of mail komt een komma.",
+         "Koos je \"een uitroepteken\"? Dan denk je dat een uitroepteken past. Dat is te luid voor een formele mail, en je gebruikt een komma."
+        ],
+        "uh": "Wat volgt op de aanhef?",
+        "ctx": "Een mail van een leerling: \"Dag meneer Bos, ik ben ziek en kan morgen niet naar school komen. Mijn moeder belt u vanochtend. Alvast bedankt voor uw begrip. Met vriendelijke groet, Sam\""
+       },
+       {
+        "v": "Welke zin uit de mail bevat een onderwerp en een persoonsvorm?",
+        "o": [
+         "Alvast bedankt voor uw begrip nu.",
+         "Dag meneer Bos, goedemorgen.",
+         "Mijn moeder belt u.",
+         "Met vriendelijke groet en tot ziens."
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 3,
+        "u": "Onderwerp + persoonsvorm. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"Alvast bedankt voor uw begrip nu.\"? Dan denk je dat dit een volledige zin met persoonsvorm is. Er staat geen persoonsvorm in, dus het is een brokstuk.",
+         "Koos je \"Dag meneer Bos, goedemorgen.\"? Dan denk je dat dit een zin met persoonsvorm is. Het is een aanhef, en heeft geen persoonsvorm.",
+         "Klopt: \"mijn moeder\" is het onderwerp en \"belt\" de persoonsvorm.",
+         "Koos je \"Met vriendelijke groet en tot ziens.\"? Dan denk je dat dit een zin met persoonsvorm is. Het is een afsluiting, en heeft geen persoonsvorm."
+        ],
+        "uh": "Wie doet wat?",
+        "ctx": "Een mail van een leerling: \"Dag meneer Bos, ik ben ziek en kan morgen niet naar school komen. Mijn moeder belt u vanochtend. Alvast bedankt voor uw begrip. Met vriendelijke groet, Sam\""
+       },
+       {
+        "v": "Welke leestekens hoort een goede mail aan het eind te hebben?",
+        "o": [
+         "een uitroepteken en je adres erbij",
+         "een vraagteken en een datum erbij",
+         "een punt en een tekening erbij",
+         "een komma en je naam"
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 4,
+        "u": "Groet, komma, naam. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"een uitroepteken en je adres erbij\"? Dan denk je dat een uitroepteken en adres hoort. Een uitroepteken is te luid, en je naam is genoeg.",
+         "Koos je \"een vraagteken en een datum erbij\"? Dan denk je dat een vraagteken past. Een afsluiting stelt geen vraag, dus een komma met je naam.",
+         "Koos je \"een punt en een tekening erbij\"? Dan denk je dat een punt en een tekening nodig zijn. Een tekening past niet, en na de groet volgt een komma.",
+         "Klopt: na \"Met vriendelijke groet\" staat een komma en je naam."
+        ],
+        "uh": "Wat volgt na de groet?",
+        "ctx": "Een mail van een leerling: \"Dag meneer Bos, ik ben ziek en kan morgen niet naar school komen. Mijn moeder belt u vanochtend. Alvast bedankt voor uw begrip. Met vriendelijke groet, Sam\""
+       },
+       {
+        "v": "Waar ontbreken de komma's in de tekst bij een opsomming en bij \"maar\"?",
+        "o": [
+         "na appels en voor maar",
+         "alleen na gisteren",
+         "alleen na hoi",
+         "nergens, de tekst klopt"
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 2,
+        "u": "Opsomming en maar. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: appels, peren en bananen heeft komma's en voor maar komt een komma.",
+         "Koos je \"alleen na gisteren\"? Dan denk je dat de komma na het woord gisteren hoort. Daar ontbreekt er geen, de komma's ontbreken in de opsomming en voor maar.",
+         "Koos je \"alleen na hoi\"? Dan denk je dat na hoi een komma moet omdat het een groet is. Dat klopt in een brief wel, maar hier ontbreken ze elders: in de opsomming en voor maar.",
+         "Koos je \"nergens, de tekst klopt\"? Dan denk je dat de tekst helemaal klopt. Tussen appels, peren en bananen staat nu geen komma, en voor maar ook niet."
+        ],
+        "uh": "Welke delen ontbreken?",
+        "ctx": "Een leerling schrijft aan zijn oma: \"Hoi oma! Ik ben gisteren naar de markt geweest en ik kocht appels peren en bananen. Mijn zus ging mee maar zij kocht niets. Wil je volgende week ook meegaan\""
+       },
+       {
+        "v": "Waar ontbreekt in de laatste zin van de tekst een leesteken?",
+        "o": [
+         "een vraagteken aan het eind",
+         "een punt aan het eind",
+         "een uitroepteken aan het eind",
+         "een dubbele punt aan het eind"
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 0,
+        "u": "Mededeling = punt. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"een vraagteken aan het eind\"? Dan denk je dat er een vraagteken moet staan omdat de zin iets vertelt over een broer. Hij stelt geen vraag, en eindigt dus met een punt.",
+         "Klopt: elke mededeling eindigt met een punt, ook de laatste zin.",
+         "Koos je \"een uitroepteken aan het eind\"? Dan denk je dat er een uitroepteken moet staan voor de nadruk. De zin meldt gewoon wat hij deed, en eindigt met een punt.",
+         "Koos je \"een dubbele punt aan het eind\"? Dan denk je dat een dubbele punt de zin afsluit. Dat teken kondigt iets aan, en hier komt niets meer achter."
+        ],
+        "uh": "Hoe eindigt de zin?",
+        "ctx": "Een leerling schrijft: \"Mijn broer zei: ik heb honger. Hij pakte brood kaas en een appel. We hebben thuis geen melk dus hij dronk water. Daarna ging hij naar zijn kamer\""
+       },
+       {
+        "v": "Welke verandering past bij \"Eerst had ik wiskunde en daarna gym\" als je er \"dus\" aan toevoegt?",
+        "o": [
+         "\"Eerst had ik wiskunde dus daarna gym.\"",
+         "\"Eerst had ik wiskunde. dus daarna gym.\"",
+         "\"Eerst had ik, wiskunde dus daarna gym.\"",
+         "\"Eerst had ik wiskunde, dus daarna gym.\""
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 1,
+        "u": "Komma voor dus. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"Eerst had ik wiskunde dus daarna gym.\"? Dan denk je dat voor dus geen komma nodig is. Voor dus komt altijd een komma, omdat de zin daar splitst.",
+         "Koos je \"Eerst had ik wiskunde. dus daarna gym.\"? Dan denk je dat een punt past. Dan begint dus een nieuwe zin met een kleine letter, en dat is fout.",
+         "Koos je \"Eerst had ik, wiskunde dus daarna gym.\"? Dan denk je dat een komma na ik past. Dat splitst de zin op de verkeerde plek, en de komma hoort voor dus.",
+         "Klopt: voor dus komt een komma, omdat de zin daar in twee delen splitst."
+        ],
+        "uh": "Waar splitst de zin?",
+        "ctx": "Mila schrijft in haar dagboek: \"Vandaag was een goede dag. Eerst had ik wiskunde en daarna gym. Na school ging ik met mijn vriendin naar het park. Zij zei: ik vind jouw nieuwe jas mooi. Ik werd er blij van.\""
+       },
+       {
+        "v": "Welke zin is een brokstuk?",
+        "o": [
+         "Na school naar het park.",
+         "Ik werd er blij van.",
+         "Vandaag was een goede dag.",
+         "Zij zei: \"Ik vind jouw jas mooi.\""
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 3,
+        "u": "Brokstuk = zonder persoonsvorm.",
+        "uo": [
+         "Klopt: er ontbreekt een persoonsvorm, dus het is geen volledige zin.",
+         "Koos je \"Ik werd er blij van.\"? Dan denk je dat deze korte zin een brokstuk is omdat hij kort is. Er staan een onderwerp (ik) en een persoonsvorm (werd) in, dus hij is volledig.",
+         "Koos je \"Vandaag was een goede dag.\"? Dan denk je dat deze zin onvolledig is omdat er geen werkwoord als doe staat. Het werkwoord was is de persoonsvorm, en de zin heeft een onderwerp.",
+         "Koos je \"Zij zei: Ik vind jouw jas mooi.\"? Dan denk je dat dit citaat een brokstuk is door de aanhalingstekens. Zij en ik zijn onderwerpen en zei en vind persoonsvormen, dus beide zinnen zijn volledig."
+        ],
+        "uh": "Ontbreekt iets?",
+        "ctx": "Mila schrijft in haar dagboek: \"Vandaag was een goede dag. Eerst had ik wiskunde en daarna gym. Na school ging ik met mijn vriendin naar het park. Zij zei: ik vind jouw nieuwe jas mooi. Ik werd er blij van.\""
+       }
+      ],
+      "oe": [
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een leerling schrijft aan zijn oma: \"Hoi oma! Ik ben gisteren naar de markt geweest en ik kocht appels peren en bananen. Mijn zus ging mee maar zij kocht niets. Wil je volgende week ook meegaan\"",
+        "v": "Zet de ontbrekende leestekens in de eerste twee zinnen en vermeld welke je toevoegt.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Komma's in \"appels, peren en bananen\" (1p), komma voor \"maar\" (1p) en een vraagteken aan het eind (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een leerling schrijft: \"Mijn broer zei: ik heb honger. Hij pakte brood kaas en een appel. We hebben thuis geen melk dus hij dronk water. Daarna ging hij naar zijn kamer\"",
+        "v": "Hoe schrijf je de woorden van de broer en de opsomming goed op?",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Mijn broer zei: \"Ik heb honger.\" (2p). Hij pakte brood, kaas en een appel (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Op school ligt een briefje: \"Beste leerlingen. Morgen is er een schoolfeest. Neem je eigen drinken mee. De les begint om half negen. Wie wil er helpen met opbouwen\"",
+        "v": "Welke leestekens ontbreken in het briefje en waar?",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Na \"Beste leerlingen\" hoort een komma (1p) en aan het eind een vraagteken (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Mila schrijft in haar dagboek: \"Vandaag was een goede dag. Eerst had ik wiskunde en daarna gym. Na school ging ik met mijn vriendin naar het park. Zij zei: ik vind jouw nieuwe jas mooi. Ik werd er blij van.\"",
+        "v": "Welke zin is een brokstuk en waarom? Herschrijf hem tot een volledige zin.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "\"Na school naar het park\" heeft geen persoonsvorm (1p). Bijvoorbeeld: \"Na school ging ik naar het park.\" (2p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een mail van een leerling: \"Dag meneer Bos, ik ben ziek en kan morgen niet naar school komen. Mijn moeder belt u vanochtend. Alvast bedankt voor uw begrip. Met vriendelijke groet, Sam\"",
+        "v": "Noem twee leestekens in de mail die goed gebruikt zijn en geef een voorbeeld.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "De komma na de aanhef \"Dag meneer Bos,\" (1p) en de komma na de groet \"Met vriendelijke groet,\" (1p)."
+       }
+      ]
      }
     ]
    },

@@ -499,6 +499,27 @@ var VAKKEN_VMBO = [
       "nOe": 5,
       "nBeg": 12,
       "hasSam": true
+     },
+     {
+      "id": "D6",
+      "lo": "nl.D.6",
+      "gs": 2,
+      "naam": "Zinsbouw en leestekens",
+      "beschrijving": "Je schrijft hele zinnen met een onderwerp en een persoonsvorm en gebruikt punt, vraagteken, komma, aanhalingstekens en hoofdletters op de goede plek.",
+      "ceStatus": "SE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "De volledige zin",
+       "Punt, vraagteken en uitroepteken",
+       "De komma",
+       "Directe rede met aanhalingstekens",
+       "Aanhef en afsluiting"
+      ],
+      "nSv": 26,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
      }
     ]
    },

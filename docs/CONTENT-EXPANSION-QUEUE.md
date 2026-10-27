@@ -19,7 +19,7 @@
    leerdoelen van het domein af, vink dan ook het domein af.
 4. Bij een rode poort: niets pushen, wél melden.
 
-> Voortgang: **97 leerdoelen op v2** (havo bi.M3, nl.A1 t/m nl.A7, nl.B1 t/m nl.B5, nl.C1 t/m nl.C6, nl.D1 t/m nl.D6, nl.F1 t/m nl.F6, en.A1, en.A2, en.A3, en.A4, en.A5, en.A6, en.A7, en.A8, en.B1, en.B2, en.B3, en.B4, en.B5, en.B6, en.B7, en.B8, vwo nl.A1, vwo nl.A2, vwo nl.A3, vwo nl.A4, vwo nl.A5, vwo nl.A6, vwo nl.A7, vwo nl.B1, vwo nl.B2, vwo nl.B3, vwo nl.B4, vwo nl.B5, vwo nl.C1, vwo nl.C2, vwo nl.C3, vwo nl.C4, vwo nl.C5, vwo nl.C6, vwo nl.D1, vwo nl.D2, vwo nl.D3, vwo nl.D4, vwo nl.D5, vwo nl.D6, vwo nl.E1, vwo nl.E2, vwo nl.E3, vwo nl.E4, vwo nl.E5, vwo nl.E6, vmbo nl.A1, vmbo nl.A2, vmbo nl.A3, vmbo nl.A4, vmbo nl.A5, vmbo nl.B1, vmbo nl.B2, vmbo nl.B3, vmbo nl.B4, vmbo nl.B5, vmbo nl.C1, vmbo nl.C2, vmbo nl.C3, vmbo nl.C4, vmbo nl.C5, vmbo nl.D1, vmbo nl.D2, vmbo nl.D3, vmbo nl.D4, vmbo nl.D5). Werk dit getal bij bij elke afronding.
+> Voortgang: **98 leerdoelen op v2** (havo bi.M3, nl.A1 t/m nl.A7, nl.B1 t/m nl.B5, nl.C1 t/m nl.C6, nl.D1 t/m nl.D6, nl.F1 t/m nl.F6, en.A1, en.A2, en.A3, en.A4, en.A5, en.A6, en.A7, en.A8, en.B1, en.B2, en.B3, en.B4, en.B5, en.B6, en.B7, en.B8, vwo nl.A1, vwo nl.A2, vwo nl.A3, vwo nl.A4, vwo nl.A5, vwo nl.A6, vwo nl.A7, vwo nl.B1, vwo nl.B2, vwo nl.B3, vwo nl.B4, vwo nl.B5, vwo nl.C1, vwo nl.C2, vwo nl.C3, vwo nl.C4, vwo nl.C5, vwo nl.C6, vwo nl.D1, vwo nl.D2, vwo nl.D3, vwo nl.D4, vwo nl.D5, vwo nl.D6, vwo nl.E1, vwo nl.E2, vwo nl.E3, vwo nl.E4, vwo nl.E5, vwo nl.E6, vmbo nl.A1, vmbo nl.A2, vmbo nl.A3, vmbo nl.A4, vmbo nl.A5, vmbo nl.B1, vmbo nl.B2, vmbo nl.B3, vmbo nl.B4, vmbo nl.B5, vmbo nl.C1, vmbo nl.C2, vmbo nl.C3, vmbo nl.C4, vmbo nl.C5, vmbo nl.D1, vmbo nl.D2, vmbo nl.D3, vmbo nl.D4, vmbo nl.D5, vmbo nl.D6). Werk dit getal bij bij elke afronding.
 > Oude stand (v1, domeinniveau): 7/220 domeinen; die tellen niet meer als af.
 >
 > **Omvang (okt 2026):** 220 domeinen (havo 59, vwo 84, vmbo 77) × gemiddeld ~6 leerdoelen
@@ -119,13 +119,13 @@
   - [x] C3 · nl.C.3 Hoofdgedachte en deelonderwerpen · 26 vragen (R1 7, R2 10, R3 9, 19 met eigen leestekst, 3 teksten van 537-571 tekens met genummerde alinea's), 12 begrippen, 4 figuren (boom hoofdgedachte, tussenkopjes, inleiding-kern-slot, samenvatten), geen clip
   - [x] C4 · nl.C.4 Feiten en meningen in een tekst · 26 vragen (R1 7, R2 10, R3 9, 19 met eigen leestekst, 3 teksten van 507-531 tekens), 12 begrippen, 4 figuren (beslisschema, signalen, zin splitsen, betrouwbaarheid), geen clip
   - [x] C5 · nl.C.5 Standpunt en argumenten in een leestekst · 26 vragen (R1 7, R2 10, R3 9, 19 met eigen leestekst, 3 teksten van 515-550 tekens met genummerde alinea's), 12 begrippen, 4 figuren (standpunt en argumenten, bezwaar, signaalwoorden, opbouw betoog), geen clip
-- [ ] **VMBO · Nederlands** (`nl`) · domein D — Schrijfvaardigheid
+- [x] **VMBO · Nederlands** (`nl`) · domein D — Schrijfvaardigheid (6 van 6 leerdoelen op v2)
   - [x] D1 · nl.D.1 Schrijfdoel, lezer en tekstvorm bepalen · 26 vragen (R1 7, R2 9, R3 10, 19 met eigen bericht of brief), 12 begrippen, 4 figuren (doel-lezer-vorm, tekstvormen, formeel en informeel, drie schrijfstappen), geen clip
   - [x] D2 · nl.D.2 Een formele brief of e-mail schrijven · 26 vragen (R1 7, R2 11, R3 8, 19 met eigen brief of mail), 12 begrippen, 4 figuren (opbouw brief, e-mail, beleefd taalgebruik, controlelijst), geen clip
   - [x] D3 · nl.D.3 Een verslag schrijven · 26 vragen (R1 7, R2 11, R3 8, 19 met eigen verslag), 12 begrippen, 4 figuren (opbouw, verleden tijd, volgorde, vergaderverslag), geen clip
   - [x] D4 · nl.D.4 Een tekst samenvatten · 27 vragen (R1 7, R2 11, R3 9, 20 met eigen tekst en voorbeeldsamenvattingen), 12 begrippen, 4 figuren (van tekst naar kern, kernzin en details, overschrijven tegenover eigen woorden, controle), geen clip
   - [x] D5 · nl.D.5 Woordspelling: d of t, ei of ij en samenstellingen · 26 vragen (R1 7, R2 9, R3 10, 21 met eigen zinnen of tekst), 12 begrippen, 4 figuren (persoonsvorm, 't kofschip, ei of ij, samenstellingen en hoofdletters), geen clip
-  - [ ] D6 · nl.D.6 Zinsbouw en leestekens
+  - [x] D6 · nl.D.6 Zinsbouw en leestekens · 26 vragen (R1 7, R2 11, R3 8, 19 met eigen tekst), 12 begrippen, 4 figuren (zin met persoonsvorm, leestekens, komma, directe rede), geen clip
 - [ ] **VMBO · Nederlands** (`nl`) · domein E — Fictie
 - [x] **HAVO · Engels** (`en`) · domein A — Woordenschat & grammatica (8 van 8 leerdoelen op v2)
   - [x] A1 · en.A.1 Woordbetekenis afleiden uit de context (ook synoniemen en tegenstellingen) · 27 vragen (R1 7, R2 9, R3 11, 11 met tekst), 12 begrippen, 4 figuren (aanwijzing in de zin, tegenstelling en gevolg, meer betekenissen, controleren), geen clip
