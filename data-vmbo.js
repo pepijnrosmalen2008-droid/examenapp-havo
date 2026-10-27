@@ -13220,6 +13220,667 @@ var VAKKEN_VMBO = [
         "u": "Datum (zaterdag 15 mei) en tijd (half drie) (2p). Het precieze adres ontbreekt (1p)."
        }
       ]
+     },
+     {
+      "id": "D2",
+      "lo": "nl.D.2",
+      "gs": 2,
+      "naam": "Een formele brief of e-mail schrijven",
+      "beschrijving": "Je schrijft een nette brief of e-mail met een goede onderwerpregel, aanhef, duidelijke inhoud en afsluiting, in beleefd taalgebruik.",
+      "ceStatus": "SE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Opbouw van een brief",
+       "De e-mail en het onderwerp",
+       "Beleefd taalgebruik",
+       "Gegevens en een duidelijke vraag",
+       "Nakijken"
+      ],
+      "sam": "Een formele brief of e-mail heeft een onderwerp (bij een mail), een aanhef zoals \"Geachte mevrouw De Boer,\", een kern met je gegevens en een duidelijke vraag, en een afsluiting zoals \"Met vriendelijke groet\". Je gebruikt \"u\" en hele woorden, geen spreektaal of afkortingen als ff en thx. Noem de gegevens die de lezer nodig heeft, zoals je naam, de datum en je contactgegevens. Lees je tekst na voor je hem verstuurt.",
+      "begrippen": [
+       {
+        "t": "Aanhef",
+        "d": "De groet aan het begin, zoals Geachte mevrouw."
+       },
+       {
+        "t": "Afsluiting",
+        "d": "De groet aan het eind, zoals Met vriendelijke groet."
+       },
+       {
+        "t": "Onderwerpregel",
+        "d": "De korte titel boven een e-mail."
+       },
+       {
+        "t": "Kern",
+        "d": "Het middelste deel met je gegevens en vraag."
+       },
+       {
+        "t": "Formeel",
+        "d": "Netjes en beleefd."
+       },
+       {
+        "t": "U-vorm",
+        "d": "De beleefde manier om iemand aan te spreken."
+       },
+       {
+        "t": "Spreektaal",
+        "d": "Los taalgebruik dat je alleen mondeling of met vrienden gebruikt."
+       },
+       {
+        "t": "Afkorting",
+        "d": "Een verkorte vorm van een woord."
+       },
+       {
+        "t": "Gegevens",
+        "d": "Informatie die de lezer nodig heeft, zoals datum en naam."
+       },
+       {
+        "t": "Contactgegevens",
+        "d": "Je e-mailadres of telefoonnummer."
+       },
+       {
+        "t": "Klacht",
+        "d": "Een tekst waarin je meldt dat iets niet goed is."
+       },
+       {
+        "t": "Nakijken",
+        "d": "Je tekst nalezen en fouten verbeteren."
+       }
+      ],
+      "sv": [
+       {
+        "v": "Uit welke delen bestaat een formele brief?",
+        "o": [
+         "titel, plaatje en een nummer erbij",
+         "aanhef, kern en afsluiting",
+         "vraag, antwoord en een cijfer erbij",
+         "kop, voet en de rand van de pagina"
+        ],
+        "c": 1,
+        "d": 1,
+        "s": 0,
+        "u": "Aanhef, kern, afsluiting.",
+        "uo": [
+         "Koos je \"titel, plaatje en een nummer erbij\"? Dan denk je dat dit de delen zijn. Dit zijn onderdelen van een folder, en geen opbouw van een brief.",
+         "Klopt: een brief begint met een aanhef, heeft een inhoud en eindigt met een afsluiting.",
+         "Koos je \"vraag, antwoord en een cijfer erbij\"? Dan denk je dat dit de delen zijn. Dat hoort bij een toets, en niet bij een brief.",
+         "Koos je \"kop, voet en de rand van de pagina\"? Dan denk je dat dit de delen zijn. Dit zijn onderdelen van een pagina, en niet van de inhoud van een brief."
+        ],
+        "uh": "Hoe begint en eindigt een brief?"
+       },
+       {
+        "v": "Welke aanhef past bij een brief aan een onbekende mevrouw?",
+        "o": [
+         "Hoi mevrouw, alles goed?",
+         "Yo mevrouw, alles goed daar?",
+         "Hallo schat van me, hoe gaat het?",
+         "Geachte mevrouw,"
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 1,
+        "u": "Onbekend = Geachte.",
+        "uo": [
+         "Koos je \"Hoi mevrouw, alles goed?\"? Dan denk je dat dit past. Het klinkt los en te vriendelijk, en past niet bij een formele brief.",
+         "Koos je \"Yo mevrouw, alles goed daar?\"? Dan denk je dat dit past. Het is straattaal, en dat gebruik je niet in een brief.",
+         "Koos je \"Hallo schat van me, hoe gaat het?\"? Dan denk je dat dit past. Het is veel te persoonlijk, en past niet bij een onbekende.",
+         "Klopt: dit is de beleefde aanhef als je de lezer niet kent."
+        ],
+        "uh": "Hoe spreek je haar aan?"
+       },
+       {
+        "v": "Welke afsluiting past bij een formele brief?",
+        "o": [
+         "Met vriendelijke groet,",
+         "Doeidoei, tot de volgende keer!",
+         "Groetjes en tot snel, hè!",
+         "Tot later, dag en bedankt voor alles!"
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 2,
+        "u": "Formeel = Met vriendelijke groet.",
+        "uo": [
+         "Klopt: dit is de nette afsluiting voor een formele brief.",
+         "Koos je \"Doeidoei, tot de volgende keer!\"? Dan denk je dat dit past. Het klinkt kinderlijk en los, en past niet bij een formele brief.",
+         "Koos je \"Groetjes en tot snel, hè!\"? Dan denk je dat dit past. Het is te informeel, en past meer bij een appje.",
+         "Koos je \"Tot later, dag en bedankt voor alles!\"? Dan denk je dat dit past. Het klinkt als een groet aan een vriend, en niet als een nette afsluiting."
+        ],
+        "uh": "Hoe sluit je netjes af?"
+       },
+       {
+        "v": "Wat schrijf je bij het onderwerp van een e-mail?",
+        "o": [
+         "alleen een groet zoals \"hoi\"",
+         "je hele verhaal in één regel",
+         "kort waar de mail over gaat",
+         "niets, de regel mag leeg blijven"
+        ],
+        "c": 2,
+        "d": 1,
+        "s": 3,
+        "u": "Onderwerp = korte titel.",
+        "uo": [
+         "Koos je \"alleen een groet zoals hoi\"? Dan denk je dat een groet genoeg is. Een groet zegt niets over de inhoud, dus de lezer weet niet waarover het gaat.",
+         "Koos je \"je hele verhaal in één regel\"? Dan denk je dat het hele verhaal in het onderwerp moet. Een onderwerp is kort, en het verhaal staat in de mail zelf.",
+         "Klopt: de onderwerpregel laat de lezer zien waarover de mail gaat.",
+         "Koos je \"niets, de regel mag leeg blijven\"? Dan denk je dat de regel leeg kan blijven. Dan weet de lezer niet waar het over gaat, en het kan in de spam belanden."
+        ],
+        "uh": "Waar gaat de mail over?"
+       },
+       {
+        "v": "Wat schrijf je in plaats van \"jij\" aan een formele lezer?",
+        "o": [
+         "jullie",
+         "jij",
+         "u",
+         "je"
+        ],
+        "c": 2,
+        "d": 1,
+        "s": 4,
+        "u": "\"U\" is beleefd.",
+        "uo": [
+         "Koos je \"jullie\"? Dan denk je dat \"jullie\" beleefd is. Het is een meervoud en wijst op meer personen, terwijl je één lezer beleefd met \"u\" aanspreekt.",
+         "Koos je \"jij\"? Dan denk je dat \"jij\" netjes genoeg is. Het is de aanspreekvorm voor vrienden en klasgenoten, en klinkt in een formele brief onbeleefd.",
+         "Klopt: \"u\" is de beleefde vorm voor een formele lezer.",
+         "Koos je \"je\"? Dan denk je dat \"je\" kan in een formele brief. Het is de losse vorm uit spreektaal en appjes, dus de lezer vindt het te los."
+        ],
+        "uh": "Hoe spreek je een onbekende aan?"
+       },
+       {
+        "v": "Wat doe je aan het eind met je brief of mail?",
+        "o": [
+         "nalezen en fouten verbeteren",
+         "meteen versturen zonder te kijken",
+         "er nog meer woorden aan toevoegen",
+         "de aanhef weghalen om ruimte te sparen"
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 4,
+        "u": "Kijk je brief of mail altijd na.",
+        "uo": [
+         "Klopt: nalezen voorkomt fouten en maakt een betere indruk.",
+         "Koos je \"meteen versturen zonder te kijken\"? Dan denk je dat je meteen kunt versturen. Dan blijven fouten staan, en de lezer kan je minder goed begrijpen.",
+         "Koos je \"er nog meer woorden aan toevoegen\"? Dan denk je dat meer woorden beter is. Een duidelijke korte tekst is beter, dan een lange vol herhaling.",
+         "Koos je \"de aanhef weghalen om ruimte te sparen\"? Dan denk je dat de aanhef weg mag. Een aanhef hoort bij een formele brief, dus je haalt hem niet weg."
+        ],
+        "uh": "Wat doe je voor je verstuurt?"
+       },
+       {
+        "v": "Welke afkorting past niet in een formele brief?",
+        "o": [
+         "Dhr.",
+         "bijv.",
+         "nr.",
+         "ff"
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 3,
+        "u": "Spreektaal schrijf je niet in een formele brief.",
+        "uo": [
+         "Koos je \"Dhr.\"? Dan denk je dat \"Dhr.\" niet past. Het is de gebruikelijke afkorting van \"de heer\", en komt vaak in nette brieven voor.",
+         "Koos je \"bijv.\"? Dan denk je dat \"bijv.\" fout is. Het is een erkende afkorting voor bijvoorbeeld, alleen schrijf je liever het hele woord, maar het is geen spreektaal.",
+         "Koos je \"nr.\"? Dan denk je dat \"nr.\" niet past. Het is een gebruikelijke afkorting van nummer, en je ziet haar in veel officiële brieven.",
+         "Klopt: \"ff\" is spreektaal en past niet in een formele brief."
+        ],
+        "uh": "Welke is spreektaal?"
+       },
+       {
+        "v": "Wat is er mis met de onderwerpregel \"hoi\"?",
+        "o": [
+         "hij is veel te lang voor een onderwerp",
+         "hij noemt het onderwerp niet",
+         "hij is veel te beleefd voor een onderwerp",
+         "hij bevat een tikfout"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 0,
+        "u": "Onderwerp noemt de inhoud.",
+        "uo": [
+         "Koos je \"hij is veel te lang voor een onderwerp\"? Dan denk je dat de regel te lang is. \"Hoi\" is juist heel kort, en het probleem is de inhoud.",
+         "Klopt: de lezer weet dan niet wat hij ontvangt en wat hij ermee moet.",
+         "Koos je \"hij is veel te beleefd voor een onderwerp\"? Dan denk je dat de regel te beleefd is. \"Hoi\" is juist los, en zegt niets over de inhoud.",
+         "Koos je \"hij bevat een tikfout\"? Dan denk je dat er een tikfout in staat. Het woord is goed gespeld, maar het zegt niets over de mail."
+        ],
+        "uh": "Waar gaat de mail over?",
+        "ctx": "Onderwerp: hoi\nHoi, ik wil graag stage lopen bij jullie bedrijf, kan dat? Ik zit in klas 3 en ik ben heel erg enthousiast over jullie werk. Groetjes, Daan"
+       },
+       {
+        "v": "Welke aanhef ontbreekt in de mail van Daan?",
+        "o": [
+         "een grap aan het begin van de mail",
+         "een plaatje van Daan zelf erbij",
+         "een tweede onderwerp voor de zekerheid",
+         "een nette aanhef met naam"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 1,
+        "u": "Aanhef met aanspreking.",
+        "uo": [
+         "Koos je \"een grap aan het begin van de mail\"? Dan denk je dat een grap hoort. Een formele mail is serieus, dus een grap past niet.",
+         "Koos je \"een plaatje van Daan zelf erbij\"? Dan denk je dat een plaatje hoort. Een formele mail bevat tekst, en een nette aanhef.",
+         "Koos je \"een tweede onderwerp voor de zekerheid\"? Dan denk je dat een tweede onderwerp hoort. Eén onderwerp is genoeg, en de aanhef ontbreekt.",
+         "Klopt: een formele mail begint met een aanhef met naam of aanspreking."
+        ],
+        "uh": "Hoe begint de mail?",
+        "ctx": "Onderwerp: hoi\nHoi, ik wil graag stage lopen bij jullie bedrijf, kan dat? Ik zit in klas 3 en ik ben heel erg enthousiast over jullie werk. Groetjes, Daan"
+       },
+       {
+        "v": "Welk woord in de mail van Daan is te informeel?",
+        "o": [
+         "\"stage\"",
+         "\"Groetjes\"",
+         "\"bedrijf\"",
+         "\"klas\""
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 3,
+        "u": "\"Groetjes\" past bij vrienden en niet in een formele mail.",
+        "uo": [
+         "Koos je \"stage\"? Dan denk je dat \"stage\" te los klinkt. Het is gewoon de naam van het meelopen op een bedrijf, en komt in elke formele aanvraag voor.",
+         "Klopt: \"groetjes\" past bij vrienden en niet bij een formele mail.",
+         "Koos je \"bedrijf\"? Dan denk je dat \"bedrijf\" te informeel is. Het noemt de organisatie die Daan schrijft, en is een neutraal woord.",
+         "Koos je \"klas\"? Dan denk je dat \"klas\" te informeel is. Het geeft aan waar Daan zit, en is een gewoon woord in een nette mail."
+        ],
+        "uh": "Welke groet past niet?",
+        "ctx": "Onderwerp: hoi\nHoi, ik wil graag stage lopen bij jullie bedrijf, kan dat? Ik zit in klas 3 en ik ben heel erg enthousiast over jullie werk. Groetjes, Daan"
+       },
+       {
+        "v": "Welke afsluiting gebruikt Daan in de tweede mail?",
+        "o": [
+         "\"Groetjes en veel plezier!\"",
+         "\"Doei, tot ziens en bedankt!\"",
+         "\"Met vriendelijke groet\"",
+         "\"Tot ziens maar, hè? Doei!\""
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 0,
+        "u": "Een formele mail sluit netjes af.",
+        "uo": [
+         "Koos je \"Groetjes en veel plezier!\"? Dan denk je dat Daan zo afsluit. Dat doet hij in zijn eerste mail, maar in de tweede mail schrijft hij netjes.",
+         "Koos je \"Doei, tot ziens en bedankt!\"? Dan denk je dat Daan \"Doei\" zegt. Zo'n afscheid past bij vrienden, en hij gebruikt in de tweede mail geen spreektaal.",
+         "Klopt: dit is de nette afsluiting voor een formele mail.",
+         "Koos je \"Tot ziens maar, hè? Doei!\"? Dan denk je dat Daan zo afsluit. Zo'n woord hoort bij een gesprek, en niet bij een formele aanvraag."
+        ],
+        "uh": "Hoe eindigt de mail?",
+        "ctx": "Onderwerp: Aanvraag stageplek\nGeachte mevrouw De Boer,\nIk ben Daan Smit, leerling in klas 3 van de vmbo. Graag wil ik van 1 tot en met 12 maart stage lopen bij uw bedrijf. Kunt u mij laten weten of dit mogelijk is? U kunt mij bereiken via daan@mail.nl.\nMet vriendelijke groet,\nDaan Smit"
+       },
+       {
+        "v": "Welke gegevens noemt Daan in zijn tweede mail?",
+        "o": [
+         "naam, klas, periode en e-mailadres",
+         "alleen zijn favoriete vak op school",
+         "alleen zijn schoenmaat en zijn hobby",
+         "alleen de naam van zijn docent en mentor"
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 2,
+        "u": "Noem relevante gegevens.",
+        "uo": [
+         "Klopt: zo kan het bedrijf hem antwoorden en weet het wat hij vraagt.",
+         "Koos je \"alleen zijn favoriete vak op school\"? Dan denk je dat zijn favoriete vak genoeg is. Het bedrijf moet weten wanneer en hoe, dus er moeten meer gegevens in.",
+         "Koos je \"alleen zijn schoenmaat en zijn hobby\"? Dan denk je dat de schoenmaat telt. Dat hoort niet bij een stageaanvraag, en helpt het bedrijf niet.",
+         "Koos je \"alleen de naam van zijn docent en mentor\"? Dan denk je dat de docent genoeg is. Het bedrijf moet Daan zelf kunnen bereiken, dus zijn gegevens horen erin."
+        ],
+        "uh": "Wat vermeldt hij?",
+        "ctx": "Onderwerp: Aanvraag stageplek\nGeachte mevrouw De Boer,\nIk ben Daan Smit, leerling in klas 3 van de vmbo. Graag wil ik van 1 tot en met 12 maart stage lopen bij uw bedrijf. Kunt u mij laten weten of dit mogelijk is? U kunt mij bereiken via daan@mail.nl.\nMet vriendelijke groet,\nDaan Smit"
+       },
+       {
+        "v": "Hoe vraagt Daan beleefd om een antwoord?",
+        "o": [
+         "\"Kunt u mij laten weten of het kan?\"",
+         "\"Zeg maar even ja of nee, dan weet ik het.\"",
+         "\"Jij moet echt snel antwoorden, hoor.\"",
+         "\"Ik wil nu meteen een antwoord!\""
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 4,
+        "u": "Beleefd vragen met u.",
+        "uo": [
+         "Klopt: hij vraagt beleefd met \"u\" en geeft aan wat hij wil weten.",
+         "Koos je \"Zeg maar even ja of nee, dan weet ik het.\"? Dan denk je dat dit beleefd is. Het is kortaf, en gebruikt geen beleefde vorm.",
+         "Koos je \"Jij moet echt snel antwoorden, hoor.\"? Dan denk je dat dit beleefd is. Het is een bevel en gebruikt \"jij\", dus het is niet beleefd.",
+         "Koos je \"Ik wil nu meteen een antwoord!\"? Dan denk je dat dit beleefd is. Het is dwingend, en past niet bij een formele mail."
+        ],
+        "uh": "Hoe vraagt hij?",
+        "ctx": "Onderwerp: Aanvraag stageplek\nGeachte mevrouw De Boer,\nIk ben Daan Smit, leerling in klas 3 van de vmbo. Graag wil ik van 1 tot en met 12 maart stage lopen bij uw bedrijf. Kunt u mij laten weten of dit mogelijk is? U kunt mij bereiken via daan@mail.nl.\nMet vriendelijke groet,\nDaan Smit"
+       },
+       {
+        "v": "Welke gegevens noemt Sara in haar klacht?",
+        "o": [
+         "haar adres in het buitenland en haar leeftijd",
+         "haar mening over andere webwinkels",
+         "datum, product en ordernummer",
+         "wat ze vorige week at voor het eten"
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 0,
+        "u": "Gegevens voor de lezer.",
+        "uo": [
+         "Koos je \"haar adres in het buitenland en haar leeftijd\"? Dan denk je dat ze haar buitenlandse adres noemt. Dat staat niet in de brief, en is niet de nodige informatie.",
+         "Koos je \"haar mening over andere webwinkels\"? Dan denk je dat ze andere winkels noemt. Dat staat niet in de brief, en is niet nodig.",
+         "Klopt: met die gegevens kan de winkel de bestelling opzoeken.",
+         "Koos je \"wat ze vorige week at voor het eten\"? Dan denk je dat ze over eten schrijft. Dat staat niet in de brief, en is niet nodig."
+        ],
+        "uh": "Wat noemt ze?",
+        "ctx": "Geachte heer Visser,\nOp 5 mei heb ik bij uw webwinkel een jas besteld. Het pakket zou binnen drie dagen komen, maar ik heb het nog steeds niet ontvangen. Wilt u mij laten weten wanneer ik het pakket kan verwachten? Mijn ordernummer is 12345.\nMet vriendelijke groet,\nSara Bakker"
+       },
+       {
+        "v": "Welk woord laat zien dat de brief van Sara formeel is?",
+        "o": [
+         "\"jas\"",
+         "\"Wilt u\"",
+         "\"binnen drie dagen\"",
+         "\"nog steeds\""
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 3,
+        "u": "\"U\" = beleefd.",
+        "uo": [
+         "Koos je \"jas\"? Dan denk je dat dit woord formeel is. Het noemt alleen het product, en zegt niets over de toon.",
+         "Klopt: \"u\" is de beleefde vorm voor een formele lezer.",
+         "Koos je \"binnen drie dagen\"? Dan denk je dat dit woord formeel is. Het geeft een termijn, en zegt niets over de toon.",
+         "Koos je \"nog steeds\"? Dan denk je dat dit woord formeel is. Het is een gewone uitdrukking, en zegt niets over de toon."
+        ],
+        "uh": "Welk woord is beleefd?",
+        "ctx": "Geachte heer Visser,\nOp 5 mei heb ik bij uw webwinkel een jas besteld. Het pakket zou binnen drie dagen komen, maar ik heb het nog steeds niet ontvangen. Wilt u mij laten weten wanneer ik het pakket kan verwachten? Mijn ordernummer is 12345.\nMet vriendelijke groet,\nSara Bakker"
+       },
+       {
+        "v": "Welke aanhef gebruikt Sara en waarom?",
+        "o": [
+         "\"Hoi Visser\", want het gaat snel",
+         "\"Beste vriend\", want het is leuk",
+         "geen aanhef, want de brief is kort",
+         "\"Geachte\", want ze kent hem niet"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 1,
+        "u": "Formeel = Geachte.",
+        "uo": [
+         "Koos je \"Hoi Visser, want het gaat snel\"? Dan denk je dat een losse aanhef past omdat het snel gaat. Snelheid maakt het niet minder formeel, en een klacht schrijf je netjes.",
+         "Koos je \"Beste vriend, want het is leuk\"? Dan denk je dat dit past. De heer Visser is geen vriend, dus het is te persoonlijk.",
+         "Koos je \"geen aanhef, want de brief is kort\"? Dan denk je dat een korte brief geen aanhef nodig heeft. Een formele brief heeft altijd een aanhef, ook als hij kort is.",
+         "Klopt: bij een onbekende formele lezer past \"Geachte\" met naam."
+        ],
+        "uh": "Hoe begint ze?",
+        "ctx": "Geachte heer Visser,\nOp 5 mei heb ik bij uw webwinkel een jas besteld. Het pakket zou binnen drie dagen komen, maar ik heb het nog steeds niet ontvangen. Wilt u mij laten weten wanneer ik het pakket kan verwachten? Mijn ordernummer is 12345.\nMet vriendelijke groet,\nSara Bakker"
+       },
+       {
+        "v": "Wat is er mis met de toon van de brief van Mo?",
+        "o": [
+         "hij is te beleefd en te lang",
+         "hij is onbeleefd en gebruikt \"jij\"",
+         "hij is te formeel voor de gemeente",
+         "hij heeft te veel gegevens"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 3,
+        "u": "Beleefd en u.",
+        "uo": [
+         "Koos je \"hij is te beleefd en te lang\"? Dan denk je dat Mo te netjes schrijft. Hij gebruikt juist \"jij\" en een bevel, en dat is onbeleefd.",
+         "Klopt: een formele brief gebruikt \"u\" en een beleefde toon.",
+         "Koos je \"hij is te formeel voor de gemeente\"? Dan denk je dat Mo te formeel is. Zijn toon is juist te los, en past niet bij een gemeente.",
+         "Koos je \"hij heeft te veel gegevens\"? Dan denk je dat Mo te veel gegevens geeft. Hij noemt bijna niets, alleen een klacht."
+        ],
+        "uh": "Hoe klinkt de brief?",
+        "ctx": "Beste meneer,\nJij moet het gat in de weg voor onze school maken! Het gat is er al weken en iedereen vindt dat jullie niks doen. Doe er wat aan.\nGroetjes, Mo"
+       },
+       {
+        "v": "Welke gegevens ontbreken in de brief van Mo?",
+        "o": [
+         "de plek van het gat en wie hij is",
+         "zijn hobby's en zijn schoenmaat erbij",
+         "de kleur en de diepte van het gat",
+         "zijn favoriete eten en muziek"
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 0,
+        "u": "Locatie en afzender.",
+        "uo": [
+         "Klopt: de gemeente kan zo niet weten waar ze moet zijn en wie hij is.",
+         "Koos je \"zijn hobby's en zijn schoenmaat erbij\"? Dan denk je dat dit nodig is. Dat helpt de gemeente niet, dus het ontbreekt niet echt.",
+         "Koos je \"de kleur en de diepte van het gat\"? Dan denk je dat de kleur belangrijk is. Dat helpt de gemeente niet, en een locatie is belangrijker.",
+         "Koos je \"zijn favoriete eten en muziek\"? Dan denk je dat zijn eten ontbreekt. Dat staat los van de klacht, en helpt niet."
+        ],
+        "uh": "Wat moet de gemeente weten?",
+        "ctx": "Beste meneer,\nJij moet het gat in de weg voor onze school maken! Het gat is er al weken en iedereen vindt dat jullie niks doen. Doe er wat aan.\nGroetjes, Mo"
+       },
+       {
+        "v": "Hoe herschrijf je \"Jij moet het gat maken!\" formeel?",
+        "o": [
+         "\"Maak het gat nu meteen dicht!\"",
+         "\"Jullie moeten er nu iets aan doen.\"",
+         "\"Doe maar gewoon iets aan het gat.\"",
+         "\"Wilt u het gat bij onze school maken?\""
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 4,
+        "u": "Beleefde vraag.",
+        "uo": [
+         "Koos je \"Maak het gat nu meteen dicht!\"? Dan denk je dat dit formeel is. Het is een bevel, en niet beleefd.",
+         "Koos je \"Jullie moeten er nu iets aan doen.\"? Dan denk je dat dit formeel is. Het is vaag en gebruikt \"jullie\", en is niet beleefd.",
+         "Koos je \"Doe maar gewoon iets aan het gat.\"? Dan denk je dat dit formeel is. Het is vaag en informeel, en geeft geen duidelijke vraag.",
+         "Klopt: een beleefde vraag met \"u\" en een duidelijke plaats."
+        ],
+        "uh": "Hoe vraag je het netjes?",
+        "ctx": "Beste meneer,\nJij moet het gat in de weg voor onze school maken! Het gat is er al weken en iedereen vindt dat jullie niks doen. Doe er wat aan.\nGroetjes, Mo"
+       },
+       {
+        "v": "Welk doel heeft de brief van mevrouw Hoek?",
+        "o": [
+         "de school een compliment geven",
+         "een nieuwe school zoeken",
+         "de school melden dat Tim ziek is",
+         "de school vragen om huiswerk te geven"
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 2,
+        "u": "Een melding geeft iets door aan de school.",
+        "uo": [
+         "Koos je \"de school een compliment geven\"? Dan denk je dat ze een compliment geeft. Ze meldt alleen een ziekte, en geeft geen compliment.",
+         "Koos je \"een nieuwe school zoeken\"? Dan denk je dat ze een nieuwe school zoekt. Ze meldt alleen dat haar zoon ziek is, en zoekt niets nieuws.",
+         "Klopt: ze geeft de ziekte van haar zoon door aan de school.",
+         "Koos je \"de school vragen om huiswerk te geven\"? Dan denk je dat ze om huiswerk vraagt. Ze meldt de ziekte, en vraagt om doorgave."
+        ],
+        "uh": "Wat meldt ze?",
+        "ctx": "Geachte meneer Janssen,\nMijn zoon Tim is vandaag ziek en kan niet naar school komen. Hij is morgen waarschijnlijk weer beter. Wilt u dit doorgeven aan zijn docenten?\nMet vriendelijke groet,\nMevrouw Hoek"
+       },
+       {
+        "v": "Welke gegevens noemt mevrouw Hoek niet, terwijl dat wel handig is?",
+        "o": [
+         "de naam van haar zoon",
+         "de reden van afwezigheid",
+         "de klas van Tim",
+         "de verwachte terugkomst"
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 1,
+        "u": "Controleer welke gegevens ontbreken.",
+        "uo": [
+         "Koos je \"de naam van haar zoon\"? Dan denk je dat de naam van het kind vergeten is. Ze noemt hem \"Mijn zoon Tim\", dus de school weet wie het is.",
+         "Koos je \"de reden van afwezigheid\"? Dan denk je dat de reden van de afwezigheid ontbreekt. Ze schrijft dat Tim ziek is, dus de school weet waarom hij mist.",
+         "Klopt: ze noemt Tims naam maar niet in welke klas hij zit.",
+         "Koos je \"de verwachte terugkomst\"? Dan denk je dat niet duidelijk is wanneer hij terugkomt. Ze schrijft dat hij morgen waarschijnlijk weer beter is, dus daar is wel iets over gezegd."
+        ],
+        "uh": "Wat staat er niet?",
+        "ctx": "Geachte meneer Janssen,\nMijn zoon Tim is vandaag ziek en kan niet naar school komen. Hij is morgen waarschijnlijk weer beter. Wilt u dit doorgeven aan zijn docenten?\nMet vriendelijke groet,\nMevrouw Hoek"
+       },
+       {
+        "v": "Welke zin in de brief van mevrouw Hoek is een beleefde vraag?",
+        "o": [
+         "\"Mijn zoon Tim is vandaag ziek.\"",
+         "\"Hij is morgen waarschijnlijk weer beter.\"",
+         "\"Met vriendelijke groet, mevrouw Hoek.\"",
+         "\"Wilt u dit doorgeven aan zijn docenten?\""
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 3,
+        "u": "Vraag met u.",
+        "uo": [
+         "Koos je \"Mijn zoon Tim is vandaag ziek.\"? Dan denk je dat dit een vraag is. Het is een mededeling, en geen vraag.",
+         "Koos je \"Hij is morgen waarschijnlijk weer beter.\"? Dan denk je dat dit een vraag is. Het is een verwachting, en geen vraag.",
+         "Koos je \"Met vriendelijke groet, mevrouw Hoek.\"? Dan denk je dat dit een vraag is. Het is de afsluiting, en geen vraag.",
+         "Klopt: ze gebruikt \"u\" en vraagt vriendelijk."
+        ],
+        "uh": "Welke zin vraagt iets?",
+        "ctx": "Geachte meneer Janssen,\nMijn zoon Tim is vandaag ziek en kan niet naar school komen. Hij is morgen waarschijnlijk weer beter. Wilt u dit doorgeven aan zijn docenten?\nMet vriendelijke groet,\nMevrouw Hoek"
+       },
+       {
+        "v": "Hoe verbeter je de mail van Daan als geheel?",
+        "o": [
+         "onderwerp, aanhef en nette afsluiting",
+         "alleen de smileys en plaatjes toevoegen",
+         "alleen het woord \"hoi\" door \"hallo\" vervangen",
+         "de mail langer maken met veel grappen"
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 4,
+        "u": "Onderwerp, aanhef, afsluiting.",
+        "uo": [
+         "Klopt: zo wordt de mail formeel en duidelijk.",
+         "Koos je \"alleen de smileys en plaatjes toevoegen\"? Dan denk je dat smileys helpen. Ze passen niet bij een formele mail, en lossen niets op.",
+         "Koos je \"alleen het woord hoi door hallo vervangen\"? Dan denk je dat één woord genoeg is. Er ontbreekt meer, zoals een aanhef en een nette afsluiting, dus meer verandert.",
+         "Koos je \"de mail langer maken met veel grappen\"? Dan denk je dat langer en grappig beter is. Het moet beleefd en duidelijk zijn, en grappen horen er niet in."
+        ],
+        "uh": "Wat verandert er?",
+        "ctx": "Onderwerp: hoi\nHoi, ik wil graag stage lopen bij jullie bedrijf, kan dat? Ik zit in klas 3 en ik ben heel erg enthousiast over jullie werk. Groetjes, Daan"
+       },
+       {
+        "v": "Welke zin zou je aan Saras brief toevoegen om duidelijk te maken wat ze wil?",
+        "o": [
+         "\"Doe maar wat, het maakt niet uit.\"",
+         "\"Ik wil graag mijn jas ontvangen.\"",
+         "\"Ik hou van jassen, dus snel!\"",
+         "\"Wat een gedoe, zeg, echt vervelend.\""
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 2,
+        "u": "Zeg duidelijk wat je wilt.",
+        "uo": [
+         "Koos je \"Doe maar wat, het maakt niet uit.\"? Dan denk je dat dit helpt. Het is vaag, en de winkel weet niet wat Sara wil.",
+         "Klopt: zo weet de winkel precies wat Sara van hem verwacht.",
+         "Koos je \"Ik hou van jassen, dus snel!\"? Dan denk je dat dit helpt. Het is een mening, en zegt niets over wat ze wil.",
+         "Koos je \"Wat een gedoe, zeg, echt vervelend.\"? Dan denk je dat dit helpt. Het is een klacht zonder wens, en niet beleefd."
+        ],
+        "uh": "Wat wil ze?",
+        "ctx": "Geachte heer Visser,\nOp 5 mei heb ik bij uw webwinkel een jas besteld. Het pakket zou binnen drie dagen komen, maar ik heb het nog steeds niet ontvangen. Wilt u mij laten weten wanneer ik het pakket kan verwachten? Mijn ordernummer is 12345.\nMet vriendelijke groet,\nSara Bakker"
+       },
+       {
+        "v": "Waarom vermeldt Daan zijn e-mailadres in de mail?",
+        "o": [
+         "omdat het mooi staat in een mail",
+         "omdat hij anders zijn naam kwijt is",
+         "omdat het bedrijf moet weten dat hij een computer heeft",
+         "zodat het bedrijf hem kan antwoorden"
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 1,
+        "u": "Contactgegevens nodig.",
+        "uo": [
+         "Koos je \"omdat het mooi staat in een mail\"? Dan denk je dat het een versiering is. Het is een gegeven dat de lezer nodig heeft, en geen decoratie.",
+         "Koos je \"omdat hij anders zijn naam kwijt is\"? Dan denk je dat het zijn naam vervangt. Zijn naam staat al in de mail, en het adres dient om te reageren.",
+         "Koos je \"omdat het bedrijf moet weten dat hij een computer...\"? Dan denk je dat het om de computer gaat. Het adres dient om te antwoorden, en niet om iets over zijn spullen te zeggen.",
+         "Klopt: zonder contactgegevens kan het bedrijf niet reageren."
+        ],
+        "uh": "Hoe antwoordt het bedrijf?",
+        "ctx": "Onderwerp: Aanvraag stageplek\nGeachte mevrouw De Boer,\nIk ben Daan Smit, leerling in klas 3 van de vmbo. Graag wil ik van 1 tot en met 12 maart stage lopen bij uw bedrijf. Kunt u mij laten weten of dit mogelijk is? U kunt mij bereiken via daan@mail.nl.\nMet vriendelijke groet,\nDaan Smit"
+       },
+       {
+        "v": "Waarom zou de gemeente de brief van Mo mogelijk niet serieus nemen?",
+        "o": [
+         "de toon is onbeleefd en er ontbreken gegevens",
+         "de brief is te beleefd",
+         "de brief heeft te veel gegevens",
+         "de brief is te formeel geschreven"
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 0,
+        "u": "Beleefd en compleet.",
+        "uo": [
+         "Klopt: een onbeleefde brief zonder plaats en naam geeft geen reden om te handelen.",
+         "Koos je \"de brief is te beleefd\"? Dan denk je dat de brief te beleefd is. Hij is juist onbeleefd, en gebruikt \"jij\".",
+         "Koos je \"de brief heeft te veel gegevens\"? Dan denk je dat de brief te veel noemt. Er staan bijna geen gegevens in, dus dat is het probleem niet.",
+         "Koos je \"de brief is te formeel geschreven\"? Dan denk je dat de brief te formeel is. De toon is juist te los, en onbeleefd."
+        ],
+        "uh": "Wat mist de gemeente?",
+        "ctx": "Beste meneer,\nJij moet het gat in de weg voor onze school maken! Het gat is er al weken en iedereen vindt dat jullie niks doen. Doe er wat aan.\nGroetjes, Mo"
+       }
+      ],
+      "oe": [
+       {
+        "bron": "Examenstijl",
+        "ctx": "Onderwerp: hoi\nHoi, ik wil graag stage lopen bij jullie bedrijf, kan dat? Ik zit in klas 3 en ik ben heel erg enthousiast over jullie werk. Groetjes, Daan",
+        "v": "Noem twee verbeterpunten voor deze mail.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Een duidelijk onderwerp invullen in plaats van \"hoi\" (1p). Een nette aanhef en afsluiting gebruiken in plaats van \"Hoi\" en \"Groetjes\" (2p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Onderwerp: Aanvraag stageplek\nGeachte mevrouw De Boer,\nIk ben Daan Smit, leerling in klas 3 van de vmbo. Graag wil ik van 1 tot en met 12 maart stage lopen bij uw bedrijf. Kunt u mij laten weten of dit mogelijk is? U kunt mij bereiken via daan@mail.nl.\nMet vriendelijke groet,\nDaan Smit",
+        "v": "Welke gegevens noemt Daan en hoe vraagt hij beleefd om een antwoord?",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Naam, klas, periode en e-mailadres (2p). Hij vraagt \"Kunt u mij laten weten of dit mogelijk is?\" (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Geachte heer Visser,\nOp 5 mei heb ik bij uw webwinkel een jas besteld. Het pakket zou binnen drie dagen komen, maar ik heb het nog steeds niet ontvangen. Wilt u mij laten weten wanneer ik het pakket kan verwachten? Mijn ordernummer is 12345.\nMet vriendelijke groet,\nSara Bakker",
+        "v": "Noem drie kenmerken waaruit blijkt dat dit een goede formele klacht is.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Aanhef \"Geachte heer Visser\" (1p), het gebruik van \"u\" (1p), gegevens zoals datum en ordernummer (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Beste meneer,\nJij moet het gat in de weg voor onze school maken! Het gat is er al weken en iedereen vindt dat jullie niks doen. Doe er wat aan.\nGroetjes, Mo",
+        "v": "Noem twee fouten in deze brief en herschrijf één zin formeel.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Het gebruik van \"jij\" en een onbeleefde toon (2p), en ontbrekende gegevens zoals de plek (1p). Bijvoorbeeld: \"Wilt u het gat bij onze school repareren?\" (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Geachte meneer Janssen,\nMijn zoon Tim is vandaag ziek en kan niet naar school komen. Hij is morgen waarschijnlijk weer beter. Wilt u dit doorgeven aan zijn docenten?\nMet vriendelijke groet,\nMevrouw Hoek",
+        "v": "Welk doel heeft de brief en welke gegevens ontbreken?",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Melden dat Tim ziek is (1p). De klas van Tim ontbreekt (1p)."
+       }
+      ]
      }
     ]
    },

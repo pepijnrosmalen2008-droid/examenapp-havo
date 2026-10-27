@@ -415,6 +415,27 @@ var VAKKEN_VMBO = [
       "nOe": 5,
       "nBeg": 12,
       "hasSam": true
+     },
+     {
+      "id": "D2",
+      "lo": "nl.D.2",
+      "gs": 2,
+      "naam": "Een formele brief of e-mail schrijven",
+      "beschrijving": "Je schrijft een nette brief of e-mail met een goede onderwerpregel, aanhef, duidelijke inhoud en afsluiting, in beleefd taalgebruik.",
+      "ceStatus": "SE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Opbouw van een brief",
+       "De e-mail en het onderwerp",
+       "Beleefd taalgebruik",
+       "Gegevens en een duidelijke vraag",
+       "Nakijken"
+      ],
+      "nSv": 26,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
      }
     ]
    },
