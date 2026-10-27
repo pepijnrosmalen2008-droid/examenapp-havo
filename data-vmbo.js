@@ -13881,6 +13881,667 @@ var VAKKEN_VMBO = [
         "u": "Melden dat Tim ziek is (1p). De klas van Tim ontbreekt (1p)."
        }
       ]
+     },
+     {
+      "id": "D3",
+      "lo": "nl.D.3",
+      "gs": 2,
+      "naam": "Een verslag schrijven",
+      "beschrijving": "Je schrijft een verslag van een uitje, onderzoek of vergadering: feitelijk, in de verleden tijd en met inleiding, uitvoering en conclusie.",
+      "ceStatus": "SE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Wat een verslag is",
+       "Opbouw van een verslag",
+       "Feitelijk en in de verleden tijd",
+       "Volgorde en signaalwoorden",
+       "Gegevens, doel en conclusie"
+      ],
+      "sam": "Een verslag vertelt achteraf wat er gebeurd is of wat je onderzocht hebt. Je schrijft feitelijk, in de verleden tijd en zonder veel meningen. De opbouw is: inleiding met doel en gegevens (wie, wat, waar, wanneer), uitvoering of verloop in de goede volgorde met woorden als eerst en daarna, en een conclusie met het resultaat. Een vergaderverslag noemt de aanwezigen, de besproken punten, de besluiten en de volgende vergadering.",
+      "begrippen": [
+       {
+        "t": "Verslag",
+        "d": "Een tekst die vertelt wat er gebeurd is."
+       },
+       {
+        "t": "Doel",
+        "d": "Wat je wilt weten of bereiken."
+       },
+       {
+        "t": "Uitvoering",
+        "d": "Het deel waarin staat wat je deed."
+       },
+       {
+        "t": "Conclusie",
+        "d": "Het deel met wat eruit volgt."
+       },
+       {
+        "t": "Verleden tijd",
+        "d": "De tijd waarin je over iets schrijft dat al gebeurd is."
+       },
+       {
+        "t": "Feit",
+        "d": "Iets wat je kunt controleren."
+       },
+       {
+        "t": "Mening",
+        "d": "Wat iemand vindt en niet te bewijzen is."
+       },
+       {
+        "t": "Signaalwoord",
+        "d": "Een woord als eerst of daarna dat de volgorde aangeeft."
+       },
+       {
+        "t": "Gegevens",
+        "d": "Wie, wat, waar en wanneer."
+       },
+       {
+        "t": "Besluit",
+        "d": "Wat afgesproken is in een vergadering."
+       },
+       {
+        "t": "Resultaat",
+        "d": "Wat er uit een onderzoek komt."
+       },
+       {
+        "t": "Notulen",
+        "d": "Het verslag van een vergadering."
+       }
+      ],
+      "sv": [
+       {
+        "v": "Wat is een verslag?",
+        "o": [
+         "een tekst die iemand uitnodigt om te komen",
+         "een tekst over wat gebeurd is",
+         "een tekst die iets verkoopt",
+         "een tekst die een mening verdedigt"
+        ],
+        "c": 1,
+        "d": 1,
+        "s": 0,
+        "u": "Verslag = terugkijken.",
+        "uo": [
+         "Koos je \"een tekst die iemand uitnodigt om te komen\"? Dan denk je dat een verslag een uitnodiging is. Een uitnodiging vraagt iemand te komen, en een verslag kijkt terug.",
+         "Klopt: een verslag beschrijft achteraf wat er is gebeurd of onderzocht.",
+         "Koos je \"een tekst die iets verkoopt\"? Dan denk je dat een verslag een advertentie is. Een advertentie wil verkopen, en een verslag vertelt wat er gebeurd is.",
+         "Koos je \"een tekst die een mening verdedigt\"? Dan denk je dat een verslag een betoog is. Een betoog verdedigt een standpunt, en een verslag geeft feiten weer."
+        ],
+        "uh": "Wat is er gebeurd?"
+       },
+       {
+        "v": "In welke tijd schrijf je een verslag meestal?",
+        "o": [
+         "de toekomende tijd",
+         "de tegenwoordige tijd",
+         "elke tijd door elkaar",
+         "de verleden tijd"
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 1,
+        "u": "Verslag = verleden tijd.",
+        "uo": [
+         "Koos je \"de toekomende tijd\"? Dan denk je dat een verslag over de toekomst gaat. Een verslag kijkt terug, en gaat dus over het verleden.",
+         "Koos je \"de tegenwoordige tijd\"? Dan denk je dat een verslag in de tegenwoordige tijd staat. Dat is zelden zo, omdat het over iets gaat dat al gebeurd is.",
+         "Koos je \"elke tijd door elkaar\"? Dan denk je dat de tijd er niet toe doet. Een verslag blijft in de verleden tijd, en wisselen maakt het verwarrend.",
+         "Klopt: het is verslag van iets dat al gebeurd is."
+        ],
+        "uh": "Is het al gebeurd?"
+       },
+       {
+        "v": "Uit welke delen bestaat een eenvoudig verslag?",
+        "o": [
+         "inleiding, uitvoering, conclusie",
+         "aanhef, vraag en een groet erbij",
+         "titel, plaatje en een kleurplaat erbij",
+         "vraag, antwoord en een cijfer erbij"
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 2,
+        "u": "Inleiding, uitvoering, conclusie.",
+        "uo": [
+         "Klopt: je begint met het doel, vertelt wat je deed en eindigt met een conclusie.",
+         "Koos je \"aanhef, vraag en een groet erbij\"? Dan denk je dat dit de delen zijn. Dat is de opbouw van een brief, en niet van een verslag.",
+         "Koos je \"titel, plaatje en een kleurplaat erbij\"? Dan denk je dat dit de delen zijn. Dit hoort niet bij de inhoud van een verslag, dus het klopt niet.",
+         "Koos je \"vraag, antwoord en een cijfer erbij\"? Dan denk je dat dit de delen zijn. Dat hoort bij een toets, en niet bij een verslag."
+        ],
+        "uh": "Hoe is het opgebouwd?"
+       },
+       {
+        "v": "Welk soort zinnen hoort in een verslag?",
+        "o": [
+         "zinnen met alleen meningen",
+         "zinnen met grappen en overdrijving",
+         "zinnen met feiten",
+         "zinnen met bevelen"
+        ],
+        "c": 2,
+        "d": 1,
+        "s": 3,
+        "u": "Feiten in een verslag.",
+        "uo": [
+         "Koos je \"zinnen met alleen meningen\"? Dan denk je dat je vooral je mening opschrijft. Een verslag geeft weer wat er gebeurde, en je mening is bijzaak.",
+         "Koos je \"zinnen met grappen en overdrijving\"? Dan denk je dat grappen erbij horen. Een verslag moet de lezer informeren, en overdrijving vertekent wat er gebeurde.",
+         "Klopt: een verslag geeft weer wat er gebeurd is, met feiten.",
+         "Koos je \"zinnen met bevelen\"? Dan denk je dat de schrijver de lezer opdrachten geeft. Een verslag vertelt achteraf wat er gebeurde, en geeft geen instructies."
+        ],
+        "uh": "Wat vertel je?"
+       },
+       {
+        "v": "Welk signaalwoord hoort bij de volgorde in een verslag?",
+        "o": [
+         "bijvoorbeeld",
+         "maar",
+         "daarna",
+         "want"
+        ],
+        "c": 2,
+        "d": 1,
+        "s": 4,
+        "u": "Tijdsvolgorde.",
+        "uo": [
+         "Koos je \"bijvoorbeeld\"? Dan denk je dat \"bijvoorbeeld\" laat zien wat later komt. Het kondigt een voorbeeld aan, zonder iets over de tijd te zeggen.",
+         "Koos je \"maar\"? Dan denk je dat \"maar\" de volgorde aangeeft. Het zet iets tegenover het eerdere, en dat heeft niets met tijd te maken.",
+         "Klopt: \"daarna\" geeft aan dat iets later in de tijd gebeurde.",
+         "Koos je \"want\"? Dan denk je dat \"want\" een volgende stap inleidt. Het noemt de reden waarom iets zo is, en geen moment in de tijd."
+        ],
+        "uh": "Wat gebeurde er later?"
+       },
+       {
+        "v": "Waarom zet je het doel in een verslag?",
+        "o": [
+         "de lezer weet waarom je iets deed",
+         "omdat het er mooi uitziet",
+         "omdat dit de conclusie vervangt",
+         "omdat je dan korter kunt schrijven"
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 0,
+        "u": "Doel = waarom.",
+        "uo": [
+         "Klopt: het doel zegt wat je wilde onderzoeken of bereiken.",
+         "Koos je \"omdat het er mooi uitziet\"? Dan denk je dat het doel een versiering is. Het doel zegt wat je onderzoekt, en geeft de lezer richting.",
+         "Koos je \"omdat dit de conclusie vervangt\"? Dan denk je dat het doel de conclusie is. De conclusie komt aan het eind, en het doel staat vooraan.",
+         "Koos je \"omdat je dan korter kunt schrijven\"? Dan denk je dat het doel de tekst inkort. Het doel geeft richting, en de tekst blijft even lang."
+        ],
+        "uh": "Waarom deed je dit?"
+       },
+       {
+        "v": "Waar schrijf je het resultaat van een onderzoek in een verslag?",
+        "o": [
+         "bij de titel bovenaan",
+         "bij de aanhef van het verslag",
+         "bij het doel aan het begin",
+         "bij de conclusie"
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 3,
+        "u": "Conclusie = resultaat.",
+        "uo": [
+         "Koos je \"bij de titel bovenaan\"? Dan denk je dat het resultaat bij de titel hoort. De titel noemt alleen het onderwerp, en het resultaat volgt aan het eind.",
+         "Koos je \"bij de aanhef van het verslag\"? Dan denk je dat het resultaat bij de aanhef hoort. Een verslag heeft geen aanhef, en de aanhef is van een brief.",
+         "Koos je \"bij het doel aan het begin\"? Dan denk je dat het resultaat bij het doel hoort. Het doel noemt wat je wilt weten, en het resultaat volgt later.",
+         "Klopt: de conclusie zegt wat er uit het onderzoek volgt."
+        ],
+        "uh": "Waar staat de uitkomst?"
+       },
+       {
+        "v": "Welke gegevens noemt het verslag over de brandweer in het begin?",
+        "o": [
+         "alleen de naam van de leraar",
+         "de datum, de klas en de plaats",
+         "alleen de naam van de brandweerman",
+         "alleen de kleur van de wagens"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 0,
+        "u": "Wie, wat, waar, wanneer.",
+        "uo": [
+         "Koos je \"alleen de naam van de leraar\"? Dan denk je dat alleen de leraar wordt genoemd. De leraar staat niet in het verslag, en de gegevens zijn de datum, de klas en de plaats.",
+         "Klopt: zo weet de lezer wanneer, wie en waar.",
+         "Koos je \"alleen de naam van de brandweerman\"? Dan denk je dat de brandweerman wordt genoemd. Hij komt later voor, en niet in de eerste zinnen.",
+         "Koos je \"alleen de kleur van de wagens\"? Dan denk je dat de kleur wordt genoemd. Die staat niet in het verslag, en is geen gegeven in het begin."
+        ],
+        "uh": "Welke gegevens staan erin?",
+        "ctx": "Verslag excursie brandweer. Op 12 oktober zijn wij met klas 3B naar de brandweerkazerne gegaan. We zagen drie brandweerwagens. Eerst kregen we uitleg van een brandweerman. Daarna mochten we een slang vasthouden. Het was het leukste uitje ooit!"
+       },
+       {
+        "v": "Welke woorden geven in het brandweerverslag de volgorde aan?",
+        "o": [
+         "want, omdat",
+         "maar, toch",
+         "bijvoorbeeld, zoals",
+         "eerst, daarna"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 4,
+        "u": "Tijdswoorden.",
+        "uo": [
+         "Koos je \"want, omdat\"? Dan denk je dat \"want\" en \"omdat\" de stappen ordenen. Het zijn woorden die een reden geven, en geen tijd.",
+         "Koos je \"maar, toch\"? Dan denk je dat \"maar\" en \"toch\" de stappen ordenen. Ze zetten iets tegenover iets anders, en zeggen niets over wat eerder kwam.",
+         "Koos je \"bijvoorbeeld, zoals\"? Dan denk je dat \"bijvoorbeeld\" en \"zoals\" de stappen ordenen. Ze leiden een voorbeeld in, en geven geen volgorde van gebeurtenissen.",
+         "Klopt: ze laten zien wat eerder en wat later gebeurde."
+        ],
+        "uh": "Wat komt eerst?",
+        "ctx": "Verslag excursie brandweer. Op 12 oktober zijn wij met klas 3B naar de brandweerkazerne gegaan. We zagen drie brandweerwagens. Eerst kregen we uitleg van een brandweerman. Daarna mochten we een slang vasthouden. Het was het leukste uitje ooit!"
+       },
+       {
+        "v": "Welke zin in het brandweerverslag is een mening?",
+        "o": [
+         "\"We zagen drie brandweerwagens.\"",
+         "\"Het was het leukste uitje ooit!\"",
+         "\"Eerst kregen we uitleg.\"",
+         "\"Daarna mochten we een slang vasthouden.\""
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 3,
+        "u": "Oordeel = mening.",
+        "uo": [
+         "Koos je \"We zagen drie brandweerwagens.\"? Dan denk je dat dit een mening is. Je kunt de wagens tellen, dus het is een feit.",
+         "Klopt: \"leukste\" is een oordeel dat niet te controleren is.",
+         "Koos je \"Eerst kregen we uitleg.\"? Dan denk je dat dit een mening is. Je kunt nagaan wat er gebeurde, dus het is een feit.",
+         "Koos je \"Daarna mochten we een slang vasthouden.\"? Dan denk je dat dit een mening is. Je kunt controleren of dat gebeurde, dus het is een feit."
+        ],
+        "uh": "Welke zin oordeelt?",
+        "ctx": "Verslag excursie brandweer. Op 12 oktober zijn wij met klas 3B naar de brandweerkazerne gegaan. We zagen drie brandweerwagens. Eerst kregen we uitleg van een brandweerman. Daarna mochten we een slang vasthouden. Het was het leukste uitje ooit!"
+       },
+       {
+        "v": "Welk doel heeft het onderzoek in het suikerverslag?",
+        "o": [
+         "nagaan welke suiker het zoetst is van allemaal",
+         "nagaan hoe duur suiker is in de winkel",
+         "zien of warm water sneller werkt",
+         "nagaan hoeveel suiker een mens mag eten"
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 0,
+        "u": "Doel = onderzoeksvraag.",
+        "uo": [
+         "Koos je \"nagaan welke suiker het zoetst is van allemaal\"? Dan denk je dat het onderzoek over zoetheid gaat. Het gaat om oplossnelheid, en niet om smaak.",
+         "Koos je \"nagaan hoe duur suiker is in de winkel\"? Dan denk je dat het onderzoek over prijs gaat. Dat staat niet in het doel, en het gaat om oplossen.",
+         "Klopt: dat staat bij \"Doel\" en is de vraag van het onderzoek.",
+         "Koos je \"nagaan hoeveel suiker een mens mag eten\"? Dan denk je dat het onderzoek over gezondheid gaat. Het gaat om oplossen, en niet om eten."
+        ],
+        "uh": "Wat wilden ze weten?",
+        "ctx": "Doel: onderzoeken of suiker sneller oplost in warm water dan in koud water. Uitvoering: we deden een schepje suiker in een glas koud water en een schepje in een glas warm water. In het warme water was de suiker na een minuut weg, in het koude water na vijf minuten. Conclusie: suiker lost sneller op in warm water."
+       },
+       {
+        "v": "Hoe heet het deel \"Uitvoering\" in het suikerverslag?",
+        "o": [
+         "het deel over wat ze deden",
+         "het deel waarin de uitkomst staat",
+         "het deel waarin het doel staat",
+         "het deel waarin de titel staat"
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 2,
+        "u": "Uitvoering = wat deden ze.",
+        "uo": [
+         "Klopt: de uitvoering beschrijft de stappen van het onderzoek.",
+         "Koos je \"het deel waarin de uitkomst staat\"? Dan denk je dat de uitvoering de uitkomst bevat. Die staat in de conclusie aan het eind, en de uitvoering vertelt wat er gedaan werd.",
+         "Koos je \"het deel waarin het doel staat\"? Dan denk je dat de uitvoering het doel noemt. Het doel staat in de inleiding vooraan, en dat is een ander onderdeel.",
+         "Koos je \"het deel waarin de titel staat\"? Dan denk je dat de uitvoering de titel is. De titel is de naam boven het verslag, en geen deel van de inhoud."
+        ],
+        "uh": "Wat gebeurde er?",
+        "ctx": "Doel: onderzoeken of suiker sneller oplost in warm water dan in koud water. Uitvoering: we deden een schepje suiker in een glas koud water en een schepje in een glas warm water. In het warme water was de suiker na een minuut weg, in het koude water na vijf minuten. Conclusie: suiker lost sneller op in warm water."
+       },
+       {
+        "v": "Welke conclusie hoort bij de resultaten van het suikerexperiment?",
+        "o": [
+         "suiker lost sneller op in warm water",
+         "suiker lost veel sneller op in koud water",
+         "suiker lost bijna niet op in water",
+         "water heeft helemaal geen invloed op suiker"
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 3,
+        "u": "Conclusie volgt uit resultaat.",
+        "uo": [
+         "Klopt: in het warme water was de suiker na een minuut weg.",
+         "Koos je \"suiker lost veel sneller op in koud water\"? Dan denk je dat koud water sneller werkt. De resultaten laten het tegenovergestelde zien, want warm water was sneller.",
+         "Koos je \"suiker lost bijna niet op in water\"? Dan denk je dat suiker niet oplost. Het lost in beide glazen op, alleen verschilt de tijd.",
+         "Koos je \"water heeft helemaal geen invloed op suiker\"? Dan denk je dat water niets doet. In het onderzoek lost suiker op in water, en de temperatuur doet ertoe."
+        ],
+        "uh": "Wat volgt uit de tijden?",
+        "ctx": "Doel: onderzoeken of suiker sneller oplost in warm water dan in koud water. Uitvoering: we deden een schepje suiker in een glas koud water en een schepje in een glas warm water. In het warme water was de suiker na een minuut weg, in het koude water na vijf minuten. Conclusie: suiker lost sneller op in warm water."
+       },
+       {
+        "v": "In welke tijd is het suikerverslag geschreven?",
+        "o": [
+         "alleen de toekomende tijd van het werkwoord",
+         "alleen de tegenwoordige tijd van het werkwoord",
+         "verleden tijd",
+         "geen enkele tijd, het is een tekening"
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 1,
+        "u": "Stappen in de verleden tijd.",
+        "uo": [
+         "Koos je \"alleen de toekomende tijd van het werkwoord\"? Dan denk je dat het verslag over later gaat. Het onderzoek is al uitgevoerd, dus de zinnen staan in de verleden tijd.",
+         "Koos je \"alleen de tegenwoordige tijd van het werkwoord\"? Dan denk je dat het verslag nu gebeurt. De stappen waren al klaar toen het verslag werd geschreven, dus ze staan in de verleden tijd.",
+         "Klopt: de stappen staan in de verleden tijd, de conclusie is een algemene regel.",
+         "Koos je \"geen enkele tijd, het is een tekening\"? Dan denk je dat een verslag tijdloos is. Elke zin heeft een werkwoordstijd, en bij een verslag is dat meestal het verleden."
+        ],
+        "uh": "Wat is er gedaan?",
+        "ctx": "Doel: onderzoeken of suiker sneller oplost in warm water dan in koud water. Uitvoering: we deden een schepje suiker in een glas koud water en een schepje in een glas warm water. In het warme water was de suiker na een minuut weg, in het koude water na vijf minuten. Conclusie: suiker lost sneller op in warm water."
+       },
+       {
+        "v": "Welke gegevens staan in het vergaderverslag in het begin?",
+        "o": [
+         "alleen de naam van de directeur van de school",
+         "datum, leden en vergadering",
+         "alleen het weer van die dag zelf",
+         "alleen het menu van de lunch op school"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 2,
+        "u": "Wanneer, wie, wat.",
+        "uo": [
+         "Koos je \"alleen de naam van de directeur van de school\"? Dan denk je dat de directeur de enige is die telt. Hij komt in het verslag niet voor, en de gegevens gaan over de leden en de datum.",
+         "Klopt: zo weet de lezer wanneer, met wie en waarover vergaderd is.",
+         "Koos je \"alleen het weer van die dag zelf\"? Dan denk je dat het weer de gegevens vormt. Het weer is geen vast onderdeel van notulen, en de datum en leden zijn dat wel.",
+         "Koos je \"alleen het menu van de lunch op school\"? Dan denk je dat het eten hoort bij de gegevens. Wat men at is geen onderdeel, en de aanwezigen en de datum zijn dat wel."
+        ],
+        "uh": "Welke gegevens staan erin?",
+        "ctx": "Verslag van de vergadering van de leerlingenraad op dinsdag 3 maart. Aanwezig waren zes leden. Eerst bespraken we het schoolfeest. Er werd besloten het feest op 20 mei te houden. Daarna ging het over de pauzes. De raad vindt dat de pauze te kort is, dus dit nemen we mee naar de directie. Volgende vergadering is op 17 maart."
+       },
+       {
+        "v": "Welk besluit staat in het vergaderverslag?",
+        "o": [
+         "de pauze wordt langer gemaakt",
+         "er komt geen schoolfeest",
+         "de vergadering wordt afgelast",
+         "het schoolfeest is op 20 mei"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 4,
+        "u": "Besluit staat in het verslag.",
+        "uo": [
+         "Koos je \"de pauze wordt langer gemaakt\"? Dan denk je dat de pauze langer wordt. De raad neemt het alleen mee naar de directie, en besluit nog niets.",
+         "Koos je \"er komt geen schoolfeest\"? Dan denk je dat er geen feest komt. Er wordt juist een datum bepaald, dus het feest gaat door.",
+         "Koos je \"de vergadering wordt afgelast\"? Dan denk je dat de vergadering stopt. Er is een volgende vergadering gepland, dus het gaat door.",
+         "Klopt: de raad besluit het feest op 20 mei te houden."
+        ],
+        "uh": "Wat is besloten?",
+        "ctx": "Verslag van de vergadering van de leerlingenraad op dinsdag 3 maart. Aanwezig waren zes leden. Eerst bespraken we het schoolfeest. Er werd besloten het feest op 20 mei te houden. Daarna ging het over de pauzes. De raad vindt dat de pauze te kort is, dus dit nemen we mee naar de directie. Volgende vergadering is op 17 maart."
+       },
+       {
+        "v": "Welke zin in het vergaderverslag bevat een mening?",
+        "o": [
+         "\"Aanwezig waren zes leden.\"",
+         "\"De raad vindt dat de pauze te kort is.\"",
+         "\"Er werd besloten het feest op 20 mei te houden.\"",
+         "\"Volgende vergadering is op 17 maart.\""
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 3,
+        "u": "Vindt = mening.",
+        "uo": [
+         "Koos je \"Aanwezig waren zes leden.\"? Dan denk je dat dit een mening is. Je kunt het aantal tellen, dus het is een feit.",
+         "Klopt: \"vindt\" en \"te kort\" geven een oordeel.",
+         "Koos je \"Er werd besloten het feest op 20 mei te houden.\"? Dan denk je dat dit een mening is. Het is een besluit met een datum, en dat is een feit.",
+         "Koos je \"Volgende vergadering is op 17 maart.\"? Dan denk je dat dit een mening is. Het is een datum, en dat is een feit."
+        ],
+        "uh": "Welke zin oordeelt?",
+        "ctx": "Verslag van de vergadering van de leerlingenraad op dinsdag 3 maart. Aanwezig waren zes leden. Eerst bespraken we het schoolfeest. Er werd besloten het feest op 20 mei te houden. Daarna ging het over de pauzes. De raad vindt dat de pauze te kort is, dus dit nemen we mee naar de directie. Volgende vergadering is op 17 maart."
+       },
+       {
+        "v": "Welke fout zit er in de tijd van het marktverslag?",
+        "o": [
+         "het staat in de tegenwoordige tijd",
+         "het staat helemaal in de verleden tijd",
+         "het staat in de toekomende tijd van het werkwoord",
+         "er zijn veel te veel lange zinnen in"
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 1,
+        "u": "Verleden tijd.",
+        "uo": [
+         "Klopt: een verslag gaat over iets wat gebeurd is en staat in de verleden tijd.",
+         "Koos je \"het staat helemaal in de verleden tijd\"? Dan denk je dat het in de verleden tijd staat. De zinnen staan in de tegenwoordige tijd, dus dat klopt niet.",
+         "Koos je \"het staat in de toekomende tijd van het werkwoord\"? Dan denk je dat het in de toekomende tijd staat. Het gaat over iets gedaan, en de tijd is tegenwoordig.",
+         "Koos je \"er zijn veel te veel lange zinnen in\"? Dan denk je dat er te veel lange zinnen zijn. De zinnen zijn kort, en het probleem is de tijd."
+        ],
+        "uh": "Is het al gebeurd?",
+        "ctx": "Verslag van mijn bezoek aan de markt. Ik ga naar de markt en koop appels. Dan zie ik een kraam met kaas en proef ik een stukje. Het is heel lekker. Daarna loop ik naar huis en eet ik een appel."
+       },
+       {
+        "v": "Hoe herschrijf je \"Ik ga naar de markt\" in een verslag?",
+        "o": [
+         "\"Ik zal naar de markt gaan\"",
+         "\"Ik ga nu naar de markt\"",
+         "\"Ga ik naar de markt?\"",
+         "\"Ik ging naar de markt\""
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 0,
+        "u": "Verleden tijd.",
+        "uo": [
+         "Koos je \"Ik zal naar de markt gaan\"? Dan denk je dat dit past. Het is de toekomende tijd, en niet de verleden tijd.",
+         "Koos je \"Ik ga nu naar de markt\"? Dan denk je dat dit past. Het blijft de tegenwoordige tijd, en dat is niet goed in een verslag.",
+         "Koos je \"Ga ik naar de markt?\"? Dan denk je dat dit past. Het is een vraag, en geen mededeling in de verleden tijd.",
+         "Klopt: de verleden tijd past bij een verslag over iets dat gebeurd is."
+        ],
+        "uh": "Hoe schrijf je het in het verleden?",
+        "ctx": "Verslag van mijn bezoek aan de markt. Ik ga naar de markt en koop appels. Dan zie ik een kraam met kaas en proef ik een stukje. Het is heel lekker. Daarna loop ik naar huis en eet ik een appel."
+       },
+       {
+        "v": "Welke gegevens ontbreken in het laatste verslag?",
+        "o": [
+         "de titel boven het verslag zelf",
+         "de naam van de school en de klas",
+         "wanneer, waar en wat",
+         "de kleur van het papier en de pen"
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 2,
+        "u": "Wie, wat, waar, wanneer.",
+        "uo": [
+         "Koos je \"de titel boven het verslag zelf\"? Dan denk je dat de titel ontbreekt. Er staat \"Verslag\", en dat is nog te weinig, maar de gegevens zijn het probleem.",
+         "Koos je \"de naam van de school en de klas\"? Dan denk je dat de school ontbreekt. Het probleem is breder, er ontbreken wanneer, waar en wat.",
+         "Klopt: er staat alleen \"we deden veel dingen\" zonder details.",
+         "Koos je \"de kleur van het papier en de pen\"? Dan denk je dat het papier ertoe doet. Het gaat om de inhoud, en de gegevens ontbreken."
+        ],
+        "uh": "Wat weet je niet?",
+        "ctx": "Verslag. Het was leuk. We deden veel dingen. Daarna gingen we weer naar huis. Het was echt heel leuk en iedereen vond het leuk. Daarna zijn we met de bus teruggereden naar school, want het was al laat."
+       },
+       {
+        "v": "Waarom is \"Het was echt heel leuk\" in een verslag weinig waard?",
+        "o": [
+         "omdat het veel te lang is voor een verslag",
+         "omdat het in de verleden tijd staat",
+         "het is een mening zonder feiten",
+         "omdat het als een vraag is geschreven"
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 3,
+        "u": "Feiten in plaats van \"leuk\".",
+        "uo": [
+         "Koos je \"omdat het veel te lang is voor een verslag\"? Dan denk je dat de zin te lang is. Hij is kort, en het probleem is de inhoud.",
+         "Koos je \"omdat het in de verleden tijd staat\"? Dan denk je dat de verleden tijd fout is. Die is juist goed, en het probleem is dat er geen feiten staan.",
+         "Klopt: een verslag moet feiten geven, niet alleen zeggen dat iets leuk was.",
+         "Koos je \"omdat het als een vraag is geschreven\"? Dan denk je dat het een vraag is. Het is een mededeling, en het probleem is de algemene mening."
+        ],
+        "uh": "Wat staat er echt in?",
+        "ctx": "Verslag. Het was leuk. We deden veel dingen. Daarna gingen we weer naar huis. Het was echt heel leuk en iedereen vond het leuk. Daarna zijn we met de bus teruggereden naar school, want het was al laat."
+       },
+       {
+        "v": "Hoe maak je het laatste verslag beter?",
+        "o": [
+         "nog meer keer het woord \"leuk\" schrijven",
+         "het hele verslag nog veel korter maken",
+         "er een tekening bij zetten zonder uitleg",
+         "datum, plaats en wat je deed"
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 4,
+        "u": "Feiten toevoegen.",
+        "uo": [
+         "Koos je \"nog meer keer het woord leuk schrijven\"? Dan denk je dat herhaling helpt. Het maakt het verslag leeg, en de feiten ontbreken nog.",
+         "Koos je \"het hele verslag nog veel korter maken\"? Dan denk je dat korter beter is. Er mist informatie, en kort maakt het nog leger.",
+         "Koos je \"er een tekening bij zetten zonder uitleg\"? Dan denk je dat een tekening alles oplost. Een verslag heeft tekst met feiten nodig, en de tekening vervangt die niet.",
+         "Klopt: met gegevens en feiten weet de lezer precies wat er gebeurde."
+        ],
+        "uh": "Wat voeg je toe?",
+        "ctx": "Verslag. Het was leuk. We deden veel dingen. Daarna gingen we weer naar huis. Het was echt heel leuk en iedereen vond het leuk. Daarna zijn we met de bus teruggereden naar school, want het was al laat."
+       },
+       {
+        "v": "Welk deel van het vergaderverslag noemt wat er in de toekomst gebeurt?",
+        "o": [
+         "\"Volgende vergadering is op 17 maart.\"",
+         "\"Aanwezig waren zes leden.\"",
+         "\"Eerst bespraken we het schoolfeest.\"",
+         "\"Er werd besloten het feest te houden.\""
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 1,
+        "u": "Toekomst in een verslag: afspraak.",
+        "uo": [
+         "Klopt: dit is een afspraak voor later, een uitzondering in een verslag.",
+         "Koos je \"Aanwezig waren zes leden.\"? Dan denk je dat dit over de toekomst gaat. Het gaat over wie er waren, en dat is verleden.",
+         "Koos je \"Eerst bespraken we het schoolfeest.\"? Dan denk je dat dit over de toekomst gaat. Het gaat over wat er gebeurde, en dat is verleden.",
+         "Koos je \"Er werd besloten het feest te houden.\"? Dan denk je dat dit over de toekomst gaat. Het gaat over een besluit in de vergadering, en dat is verleden."
+        ],
+        "uh": "Wat komt nog?",
+        "ctx": "Verslag van de vergadering van de leerlingenraad op dinsdag 3 maart. Aanwezig waren zes leden. Eerst bespraken we het schoolfeest. Er werd besloten het feest op 20 mei te houden. Daarna ging het over de pauzes. De raad vindt dat de pauze te kort is, dus dit nemen we mee naar de directie. Volgende vergadering is op 17 maart."
+       },
+       {
+        "v": "Waarom noemt het suikerverslag de tijden \"een minuut\" en \"vijf minuten\"?",
+        "o": [
+         "om het verslag langer en voller te maken",
+         "het bewijst de conclusie",
+         "omdat het gewoon mooi klinkt voor de lezer",
+         "omdat de leraar het zo graag wil zien"
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 0,
+        "u": "Getallen bewijzen.",
+        "uo": [
+         "Koos je \"om het verslag langer en voller te maken\"? Dan denk je dat de getallen de tekst langer maken. Ze zijn bewijs, en geen opvulling.",
+         "Klopt: de getallen laten zien dat de conclusie echt uit de resultaten volgt.",
+         "Koos je \"omdat het gewoon mooi klinkt voor de lezer\"? Dan denk je dat de getallen versiering zijn. Ze geven bewijs, en zijn geen mooie woorden.",
+         "Koos je \"omdat de leraar het zo graag wil zien\"? Dan denk je dat de leraar het eist. De reden is bewijs, en niet alleen de leraar."
+        ],
+        "uh": "Waarom getallen?",
+        "ctx": "Doel: onderzoeken of suiker sneller oplost in warm water dan in koud water. Uitvoering: we deden een schepje suiker in een glas koud water en een schepje in een glas warm water. In het warme water was de suiker na een minuut weg, in het koude water na vijf minuten. Conclusie: suiker lost sneller op in warm water."
+       },
+       {
+        "v": "Wat moet er in het brandweerverslag nog worden aangevuld om feitelijk te blijven?",
+        "o": [
+         "hoeveel pret ze allemaal hadden",
+         "wat ze graag hadden gegeten daar",
+         "welk weer ze graag hadden gehad",
+         "wat ze leerden van de brandweer"
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 4,
+        "u": "Feiten toevoegen.",
+        "uo": [
+         "Koos je \"hoeveel pret ze allemaal hadden\"? Dan denk je dat de pret een feit is. Pret is een gevoel, en geen controleerbaar gegeven.",
+         "Koos je \"wat ze graag hadden gegeten daar\"? Dan denk je dat het eten telt. Het hoort niet bij het uitje, en is niet aanvullend.",
+         "Koos je \"welk weer ze graag hadden gehad\"? Dan denk je dat het weer telt. Het weer is bijzaak, en vult het verslag niet aan.",
+         "Klopt: dat is een feit dat de lezer iets leert."
+        ],
+        "uh": "Wat leerden ze?",
+        "ctx": "Verslag excursie brandweer. Op 12 oktober zijn wij met klas 3B naar de brandweerkazerne gegaan. We zagen drie brandweerwagens. Eerst kregen we uitleg van een brandweerman. Daarna mochten we een slang vasthouden. Het was het leukste uitje ooit!"
+       },
+       {
+        "v": "Waarom staat in het vergaderverslag wie er aanwezig waren?",
+        "o": [
+         "zo weet de lezer wie bij de besluiten betrokken waren",
+         "om het verslag langer te maken",
+         "om de leden te belonen",
+         "omdat de directeur het zo wil"
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 1,
+        "u": "Aanwezigen horen in het verslag.",
+        "uo": [
+         "Klopt: de aanwezigen bepalen wie achter de besluiten staan.",
+         "Koos je \"om het verslag langer te maken\"? Dan denk je dat de namen opvulling zijn. Ze geven informatie over wie meebeslist, en zijn geen versiering.",
+         "Koos je \"om de leden te belonen\"? Dan denk je dat het een beloning is. Het is een gegeven in het verslag, en geen prijs.",
+         "Koos je \"omdat de directeur het zo wil\"? Dan denk je dat de directeur het eist. Het is een standaardonderdeel van een vergaderverslag, en niet iemands wens."
+        ],
+        "uh": "Wie waren er?",
+        "ctx": "Verslag van de vergadering van de leerlingenraad op dinsdag 3 maart. Aanwezig waren zes leden. Eerst bespraken we het schoolfeest. Er werd besloten het feest op 20 mei te houden. Daarna ging het over de pauzes. De raad vindt dat de pauze te kort is, dus dit nemen we mee naar de directie. Volgende vergadering is op 17 maart."
+       }
+      ],
+      "oe": [
+       {
+        "bron": "Examenstijl",
+        "ctx": "Verslag excursie brandweer. Op 12 oktober zijn wij met klas 3B naar de brandweerkazerne gegaan. We zagen drie brandweerwagens. Eerst kregen we uitleg van een brandweerman. Daarna mochten we een slang vasthouden. Het was het leukste uitje ooit!",
+        "v": "Noem de gegevens in het begin van dit verslag en één mening uit de tekst.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Datum 12 oktober, klas 3B en brandweerkazerne (2p). Mening: \"het leukste uitje ooit\" (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Doel: onderzoeken of suiker sneller oplost in warm water dan in koud water. Uitvoering: we deden een schepje suiker in een glas koud water en een schepje in een glas warm water. In het warme water was de suiker na een minuut weg, in het koude water na vijf minuten. Conclusie: suiker lost sneller op in warm water.",
+        "v": "Welk deel is het doel en wat is de conclusie van dit verslag?",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Doel: onderzoeken of suiker sneller oplost in warm water (1p). Conclusie: suiker lost sneller op in warm water (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Verslag van de vergadering van de leerlingenraad op dinsdag 3 maart. Aanwezig waren zes leden. Eerst bespraken we het schoolfeest. Er werd besloten het feest op 20 mei te houden. Daarna ging het over de pauzes. De raad vindt dat de pauze te kort is, dus dit nemen we mee naar de directie. Volgende vergadering is op 17 maart.",
+        "v": "Noem twee besluiten of afspraken uit dit vergaderverslag.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Het schoolfeest is op 20 mei (1p). De pauze wordt met de directie besproken en de volgende vergadering is op 17 maart (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Verslag van mijn bezoek aan de markt. Ik ga naar de markt en koop appels. Dan zie ik een kraam met kaas en proef ik een stukje. Het is heel lekker. Daarna loop ik naar huis en eet ik een appel.",
+        "v": "Welke fout zit in de tijd van dit verslag en herschrijf de eerste zin.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Het staat in de tegenwoordige tijd (1p). Bijvoorbeeld: \"Ik ging naar de markt en kocht appels\" (2p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Verslag. Het was leuk. We deden veel dingen. Daarna gingen we weer naar huis. Het was echt heel leuk en iedereen vond het leuk. Daarna zijn we met de bus teruggereden naar school, want het was al laat.",
+        "v": "Noem twee verbeterpunten voor dit verslag.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "De gegevens ontbreken: wanneer, waar en wat (2p). Te veel algemene meningen als \"leuk\" in plaats van feiten (1p)."
+       }
+      ]
      }
     ]
    },

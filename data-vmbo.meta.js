@@ -436,6 +436,27 @@ var VAKKEN_VMBO = [
       "nOe": 5,
       "nBeg": 12,
       "hasSam": true
+     },
+     {
+      "id": "D3",
+      "lo": "nl.D.3",
+      "gs": 2,
+      "naam": "Een verslag schrijven",
+      "beschrijving": "Je schrijft een verslag van een uitje, onderzoek of vergadering: feitelijk, in de verleden tijd en met inleiding, uitvoering en conclusie.",
+      "ceStatus": "SE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Wat een verslag is",
+       "Opbouw van een verslag",
+       "Feitelijk en in de verleden tijd",
+       "Volgorde en signaalwoorden",
+       "Gegevens, doel en conclusie"
+      ],
+      "nSv": 26,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
      }
     ]
    },
