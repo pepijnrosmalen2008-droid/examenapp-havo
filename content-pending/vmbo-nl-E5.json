@@ -1,0 +1,640 @@
+{
+ "id": "E5",
+ "lo": "nl.E.5",
+ "gs": 2,
+ "naam": "Gedichten lezen: strofe, rijm en beeldspraak",
+ "beschrijving": "Je leest een gedicht met oog voor strofe, regel, rijm en beeldspraak zoals vergelijking, metafoor en personificatie.",
+ "ceStatus": "SE",
+ "binas": "",
+ "val": "",
+ "onderwerpen": [
+  "Strofe en regel",
+  "Rijm",
+  "Vergelijking en metafoor",
+  "Personificatie",
+  "Effect van beeldspraak"
+ ],
+ "sam": "Een gedicht bestaat uit regels die in strofen staan. Een strofe is een groep regels, gescheiden door een witregel. Bij rijm klinkt het einde van woorden gelijk, zoals rand en strand. Met beeldspraak maakt de dichter een beeld: een vergelijking gebruikt als of zoals, een metafoor zegt dat iets iets anders is, en bij personificatie doet een ding iets menselijks. Beeldspraak roept een gevoel op.",
+ "begrippen": [
+  {
+   "t": "Gedicht",
+   "d": "Een tekst met regels en strofen."
+  },
+  {
+   "t": "Regel",
+   "d": "Eén lijn tekst in een gedicht."
+  },
+  {
+   "t": "Strofe",
+   "d": "Een groep regels in een gedicht."
+  },
+  {
+   "t": "Rijm",
+   "d": "Woorden met dezelfde klank aan het einde."
+  },
+  {
+   "t": "Rijmschema",
+   "d": "De volgorde waarin regels rijmen, zoals abab."
+  },
+  {
+   "t": "Beeldspraak",
+   "d": "Een beeld dat iets anders uitdrukt."
+  },
+  {
+   "t": "Vergelijking",
+   "d": "Beeldspraak met het woord als of zoals."
+  },
+  {
+   "t": "Metafoor",
+   "d": "Beeldspraak waarin iets iets anders is."
+  },
+  {
+   "t": "Personificatie",
+   "d": "Een ding doet iets wat een mens doet."
+  },
+  {
+   "t": "Witregel",
+   "d": "Een lege regel tussen twee strofen."
+  },
+  {
+   "t": "Dichter",
+   "d": "Degene die het gedicht schrijft."
+  },
+  {
+   "t": "Sfeer",
+   "d": "Het gevoel dat een gedicht oproept."
+  }
+ ],
+ "sv": [
+  {
+   "v": "Welk begrip past bij een groep regels in een gedicht die bij elkaar horen?",
+   "o": [
+    "een refrein, dat telkens herhaald wordt",
+    "een strofe",
+    "een titel, die boven het gedicht staat",
+    "een rijm, dat aan het eind van de regel klinkt"
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 0,
+   "u": "Strofe = blokje regels. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"een refrein, dat telkens herhaald wordt\"? Dan denk je dat een groep regels een refrein heet. Een refrein is alleen een herhaald stuk, en niet elke groep regels.",
+    "Klopt: een strofe is een blokje regels in een gedicht, gescheiden door een witregel.",
+    "Koos je \"een titel, die boven het gedicht staat\"? Dan denk je dat een groep regels de titel is. De titel is de naam van het gedicht, en hoort niet bij de regels.",
+    "Koos je \"een rijm, dat aan het eind van de regel klinkt\"? Dan denk je dat een groep regels een rijm heet. Rijm gaat over klanken aan het eind, en niet over een groep."
+   ],
+   "uh": "Welk blokje bedoel je?"
+  },
+  {
+   "v": "Welk begrip past bij één lijn tekst in een gedicht?",
+   "o": [
+    "een strofe, die uit meerdere lijnen bestaat",
+    "een witregel, die helemaal leeg is",
+    "een titel, die boven het gedicht staat",
+    "een regel"
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 0,
+   "u": "Regel = één lijn. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"een strofe, die uit meerdere lijnen bestaat\"? Dan denk je dat een lijn een strofe heet. Een strofe bestaat uit meerdere regels, en is dus groter dan een regel.",
+    "Koos je \"een witregel, die helemaal leeg is\"? Dan denk je dat een lijn een witregel heet. Een witregel bevat geen tekst, en een regel wel.",
+    "Koos je \"een titel, die boven het gedicht staat\"? Dan denk je dat een lijn een titel heet. Een titel is de naam van het gedicht, en geen regel in de tekst.",
+    "Klopt: elke afzonderlijke lijn van een gedicht heet een regel."
+   ],
+   "uh": "Welke lijn is dat?"
+  },
+  {
+   "v": "Welke twee woorden rijmen met elkaar?",
+   "o": [
+    "rand en strand",
+    "rand en regen, die allebei met r beginnen",
+    "strand en zon, die allebei met een klinker eindigen",
+    "hand en boom, die allebei vier letters hebben"
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 1,
+   "u": "Rijm = zelfde eind. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: rand en strand eindigen op dezelfde klank.",
+    "Koos je \"rand en regen, die allebei met r beginnen\"? Dan denk je dat woorden met dezelfde beginletter rijmen. Rijm gaat over het einde, en niet over het begin.",
+    "Koos je \"strand en zon, die allebei met een klinker eindigen\"? Dan denk je dat zon en strand op elkaar lijken. De eindklank is anders, dus ze rijmen niet.",
+    "Koos je \"hand en boom, die allebei vier letters hebben\"? Dan denk je dat het aantal letters telt. Rijm gaat over klank, en niet over het aantal letters."
+   ],
+   "uh": "Welke woorden klinken op het eind gelijk?"
+  },
+  {
+   "v": "Welk begrip past bij woorden die aan het einde dezelfde klank hebben?",
+   "o": [
+    "alliteratie, waarbij woorden met dezelfde letter beginnen",
+    "een metafoor, waarbij iets iets anders wordt genoemd",
+    "rijm",
+    "een strofe, waarbij regels bij elkaar staan in een blok"
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 1,
+   "u": "Rijm = klank. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"alliteratie, waarbij woorden met dezelfde letter...\"? Dan denk je dat dit alliteratie is. Dat gaat over het begin van woorden, en rijm gaat over het einde.",
+    "Koos je \"een metafoor, waarbij iets iets anders wordt genoemd\"? Dan denk je dat dit een metafoor is. Dat is een beeld, en geen klank aan het eind.",
+    "Klopt: bij rijm klinkt het einde van woorden gelijk, zoals rand en strand.",
+    "Koos je \"een strofe, waarbij regels bij elkaar staan in een...\"? Dan denk je dat dit een strofe is. Dat is een groep regels, en zegt niets over klank."
+   ],
+   "uh": "Waar klinkt het gelijk?"
+  },
+  {
+   "v": "Waaraan herken je een vergelijking in een gedicht?",
+   "o": [
+    "aan de hoofdletter aan het begin van de regel",
+    "aan het aantal regels in het gedicht",
+    "aan het woordje als of zoals",
+    "aan het rijm op het eind van de regel"
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 2,
+   "u": "Vergelijking = als/zoals. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"aan de hoofdletter aan het begin van de regel\"? Dan denk je dat een hoofdletter een vergelijking toont. Een hoofdletter staat in elke regel, en zegt niets over beeldspraak.",
+    "Koos je \"aan het aantal regels in het gedicht\"? Dan denk je dat het aantal regels de vergelijking toont. Het aantal zegt niets over beeldspraak, want het gaat om woorden.",
+    "Klopt: bij een vergelijking staat als of zoals tussen de twee dingen.",
+    "Koos je \"aan het rijm op het eind van de regel\"? Dan denk je dat rijm een vergelijking toont. Rijm is klank, en een vergelijking is een beeld."
+   ],
+   "uh": "Welk woordje staat erin?"
+  },
+  {
+   "v": "Welke beeldspraak zegt dat iets rechtstreeks iets anders is?",
+   "o": [
+    "een metafoor",
+    "een vergelijking, met als of zoals",
+    "een rijm, met gelijke klanken",
+    "een strofe, met meerdere regels"
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 2,
+   "u": "Metafoor = iets is iets. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: een metafoor zegt dat iets iets anders is, zonder als of zoals.",
+    "Koos je \"een vergelijking, met als of zoals\"? Dan denk je dat dit een vergelijking is. Een vergelijking gebruikt als of zoals, en een metafoor niet.",
+    "Koos je \"een rijm, met gelijke klanken\"? Dan denk je dat dit rijm is. Rijm is een kwestie van klank, en geen beeld.",
+    "Koos je \"een strofe, met meerdere regels\"? Dan denk je dat dit een strofe is. Een strofe is een groep regels, en geen soort beeldspraak."
+   ],
+   "uh": "Wordt er gezegd dat het is?"
+  },
+  {
+   "v": "Welke beeldspraak laat een ding iets menselijks doen?",
+   "o": [
+    "een vergelijking, met als of zoals erin",
+    "een rijmschema, zoals abab of aabb",
+    "een witregel tussen twee strofen",
+    "personificatie"
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 3,
+   "u": "Personificatie = menselijk. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"een vergelijking, met als of zoals erin\"? Dan denk je dat dit een vergelijking is. Een vergelijking heeft als of zoals, en geeft geen menselijkheid.",
+    "Koos je \"een rijmschema, zoals abab of aabb\"? Dan denk je dat dit een rijmschema is. Dat gaat over klank, en niet over beelden.",
+    "Koos je \"een witregel tussen twee strofen\"? Dan denk je dat dit een witregel is. Dat is de ruimte tussen strofen, en geen beeld.",
+    "Klopt: bij personificatie krijgt iets menselijke eigenschappen."
+   ],
+   "uh": "Wie doet iets menselijks?"
+  },
+  {
+   "v": "Welke woorden rijmen in het gedicht over de zon?",
+   "o": [
+    "zon, lucht en schoenen die allemaal op n eindigen",
+    "rand, brand, strand en hand",
+    "rand en strand, maar brand en hand niet",
+    "langs, alleen en mijn die allemaal op n eindigen"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 1,
+   "u": "Rijm: and. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"zon, lucht en schoenen die allemaal op n eindigen\"? Dan denk je dat deze woorden rijmen. Ze staan niet aan het einde van een regel, en de klank is anders.",
+    "Klopt: alle vier de regels eindigen op de klank and, dus ze rijmen allemaal.",
+    "Koos je \"rand en strand, maar brand en hand niet\"? Dan denk je dat maar twee woorden rijmen. Alle vier klinken gelijk op het eind, dus er is meer rijm.",
+    "Koos je \"langs, alleen en mijn die allemaal op n eindigen\"? Dan denk je dat deze woorden rijmen. Ze staan in het midden van de regel, en rijmen daar niet op."
+   ],
+   "uh": "Welke woorden eindigen gelijk?",
+   "ctx": "De zon gaat onder aan de rand / en kleurt de lucht met vuur en brand. / Ik loop alleen langs het strand / met mijn schoenen in mijn hand. (Een schuine streep geeft het einde van een regel aan.)"
+  },
+  {
+   "v": "Hoeveel strofen en regels heeft dit gedicht?",
+   "o": [
+    "twee strofen van twee regels",
+    "vier strofen van één regel",
+    "één strofe van twee regels",
+    "één strofe van vier regels"
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 0,
+   "u": "1 strofe, 4 regels. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"twee strofen van twee regels\"? Dan denk je dat er twee strofen zijn. Er staat geen witregel tussen de regels, dus het is één blok.",
+    "Koos je \"vier strofen van één regel\"? Dan denk je dat elke regel een strofe is. Een strofe is een groep regels, en hier staan ze bij elkaar.",
+    "Koos je \"één strofe van twee regels\"? Dan denk je dat er maar twee regels zijn. Tel je ze, dan zie je er vier.",
+    "Klopt: er is geen witregel, dus alle regels horen bij één strofe."
+   ],
+   "uh": "Tel de regels.",
+   "ctx": "De zon gaat onder aan de rand / en kleurt de lucht met vuur en brand. / Ik loop alleen langs het strand / met mijn schoenen in mijn hand. (Een schuine streep geeft het einde van een regel aan.)"
+  },
+  {
+   "v": "Welke vergelijking staat in het gedicht over haar lach?",
+   "o": [
+    "\"zo warm dat ik er stil van word\"",
+    "\"Haar lach is als de zon in mei\"",
+    "\"en neemt mijn zorgen met zich mee\"",
+    "\"Zij loopt zo licht\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 2,
+   "u": "Als = vergelijking. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"zo warm dat ik er stil van word\"? Dan denk je dat dit de vergelijking is. Hier staat geen als of zoals, dus het is geen vergelijking.",
+    "Klopt: lach en zon worden vergeleken met het woordje als.",
+    "Koos je \"en neemt mijn zorgen met zich mee\"? Dan denk je dat dit de vergelijking is. Er worden geen twee dingen vergeleken, het is gewoon een handeling.",
+    "Koos je \"Zij loopt zo licht\"? Dan denk je dat deze losse zin de vergelijking is. Er staat geen als bij, pas met \"als een veer\" is er een vergelijking."
+   ],
+   "uh": "Welke zin heeft als?",
+   "ctx": "Haar lach is als de zon in mei, / zo warm dat ik er stil van word. // Zij loopt zo licht als een veer / en neemt mijn zorgen met zich mee. (Een schuine streep geeft het einde van een regel aan, twee strepen het einde van een strofe.)"
+  },
+  {
+   "v": "Waarmee wordt haar manier van lopen vergeleken?",
+   "o": [
+    "met de zon in mei",
+    "met zorgen die ze meeneemt",
+    "met een veer",
+    "met een stille wereld"
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 2,
+   "u": "Licht als een veer. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"met de zon in mei\"? Dan denk je dat het lopen met de zon wordt vergeleken. De zon hoort bij haar lach, en niet bij het lopen.",
+    "Koos je \"met zorgen die ze meeneemt\"? Dan denk je dat het lopen met zorgen wordt vergeleken. Zorgen zijn iets anders, en geen beeld voor lopen.",
+    "Klopt: in het gedicht staat dat ze zo licht loopt als een veer.",
+    "Koos je \"met een stille wereld\"? Dan denk je dat het lopen met een stille wereld wordt vergeleken. Dat staat nergens, en het beeld is een veer."
+   ],
+   "uh": "Wat is licht?",
+   "ctx": "Haar lach is als de zon in mei, / zo warm dat ik er stil van word. // Zij loopt zo licht als een veer / en neemt mijn zorgen met zich mee. (Een schuine streep geeft het einde van een regel aan, twee strepen het einde van een strofe.)"
+  },
+  {
+   "v": "Welke metafoor staat er in het gedicht over de nacht?",
+   "o": [
+    "\"De wind is een dief in de nacht\"",
+    "\"hij sluipt door de tuin zonder geluid\"",
+    "\"De maan is een lamp aan het plafond\" is de enige",
+    "\"van de hele donkere wereld\""
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 2,
+   "u": "Wind = dief. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: de wind wordt rechtstreeks een dief genoemd.",
+    "Koos je \"hij sluipt door de tuin zonder geluid\"? Dan denk je dat dit de metafoor is. Het is een uitwerking van het beeld, maar de metafoor staat in de eerste zin.",
+    "Koos je \"De maan is een lamp aan het plafond is de enige\"? Dan denk je dat er maar één metafoor is. Er staan er twee in het gedicht, en deze is er maar een van.",
+    "Koos je \"van de hele donkere wereld\"? Dan denk je dat dit de metafoor is. Het is een aanvulling, en geen beeld op zichzelf."
+   ],
+   "uh": "Wat wordt iets anders genoemd?",
+   "ctx": "De wind is een dief in de nacht, / hij sluipt door de tuin zonder geluid. // De maan is een lamp aan het plafond / van de hele donkere wereld. (Een schuine streep geeft het einde van een regel aan, twee strepen het einde van een strofe.)"
+  },
+  {
+   "v": "Hoeveel strofen heeft het gedicht over de nacht?",
+   "o": [
+    "twee strofen van twee regels",
+    "één strofe van vier regels",
+    "vier strofen van één regel",
+    "drie strofen van elk één regel"
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 0,
+   "u": "2 strofen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: er staat een dubbele streep tussen de twee blokken.",
+    "Koos je \"één strofe van vier regels\"? Dan denk je dat er maar één strofe is. Er staan twee strepen tussen, dus het zijn er twee.",
+    "Koos je \"vier strofen van één regel\"? Dan denk je dat elke regel een strofe is. Een strofe is een groep regels, en hier zijn het twee groepen.",
+    "Koos je \"drie strofen van elk één regel\"? Dan denk je dat er drie blokken zijn. Er is maar één onderbreking, dus twee strofen."
+   ],
+   "uh": "Tel de blokken.",
+   "ctx": "De wind is een dief in de nacht, / hij sluipt door de tuin zonder geluid. // De maan is een lamp aan het plafond / van de hele donkere wereld. (Een schuine streep geeft het einde van een regel aan, twee strepen het einde van een strofe.)"
+  },
+  {
+   "v": "Welk rijmschema heeft het gedicht over de school?",
+   "o": [
+    "het schema aabb, twee paar na elkaar",
+    "het schema aaaa, alles rijmt op elkaar",
+    "het schema abab",
+    "het schema abba, de buitenste regels rijmen"
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 1,
+   "u": "abab. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"het schema aabb, twee paar na elkaar\"? Dan denk je dat de eerste twee regels rijmen. Regel 1 en 2 klinken verschillend, dus het schema is anders.",
+    "Koos je \"het schema aaaa, alles rijmt op elkaar\"? Dan denk je dat alle regels rijmen. Alleen regel 1 en 3, en 2 en 4, dus het is niet overal gelijk.",
+    "Klopt: stil en wil rijmen, groot en brood rijmen.",
+    "Koos je \"het schema abba, de buitenste regels rijmen\"? Dan denk je dat de buitenste regels rijmen. Dat klopt niet, want regel 1 rijmt met 3."
+   ],
+   "uh": "Welke regels rijmen?",
+   "ctx": "De school is uit, de bel is stil, / de gang is leeg en groot. / Ik loop naar buiten, doe wat ik wil, / en eet mijn laatste brood. (Een schuine streep geeft het einde van een regel aan.)"
+  },
+  {
+   "v": "Welk woord rijmt met \"stil\" in dit gedicht?",
+   "o": [
+    "groot, dat aan het eind van de tweede regel staat",
+    "wil, in de derde regel",
+    "brood, dat aan het eind van de vierde regel staat",
+    "school, dat aan het begin van de eerste regel staat"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 1,
+   "u": "stil - wil. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"groot, dat aan het eind van de tweede regel staat\"? Dan denk je dat de tweede regel met stil rijmt. De eindklank van groot is anders, want het rijmt juist met een woord uit de vierde regel.",
+    "Klopt: stil en wil eindigen allebei op de klank il, dus ze rijmen.",
+    "Koos je \"brood, dat aan het eind van de vierde regel staat\"? Dan denk je dat de vierde regel met stil rijmt. De eindklank van brood klinkt anders, want brood hoort bij het andere rijmpaar.",
+    "Koos je \"school, dat aan het begin van de eerste regel staat\"? Dan denk je dat het eerste woord rijmt. Rijm hoor je alleen aan het einde van een regel, en school staat aan het begin."
+   ],
+   "uh": "Wie klinkt gelijk?",
+   "ctx": "De school is uit, de bel is stil, / de gang is leeg en groot. / Ik loop naar buiten, doe wat ik wil, / en eet mijn laatste brood. (Een schuine streep geeft het einde van een regel aan.)"
+  },
+  {
+   "v": "Welke woorden uit het gedicht over de kamer zijn personificatie?",
+   "o": [
+    "\"De klok staat stil\" in het begin",
+    "\"zacht in het donker\" aan het einde",
+    "\"van het wachten\" in de tweede regel",
+    "\"de stoel zucht\""
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 3,
+   "u": "Stoel zucht. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"De klok staat stil in het begin\"? Dan denk je dat dit personificatie is. Een klok kan stilstaan, dus het is niet menselijk.",
+    "Koos je \"zacht in het donker aan het einde\"? Dan denk je dat dit personificatie is. Het is een plaatsbepaling, en geen menselijke handeling.",
+    "Koos je \"van het wachten in de tweede regel\"? Dan denk je dat dit personificatie is. Het is een bijzin zonder dier of ding dat iets doet, en dus geen beeld.",
+    "Klopt: een stoel kan niet zuchten, alleen een mens."
+   ],
+   "uh": "Wie zucht?",
+   "ctx": "De klok staat stil en kijkt me aan, / de stoel zucht diep van het wachten. // De kamer houdt zijn adem in, / en de deur lacht zacht in het donker. (Een schuine streep geeft het einde van een regel aan, twee strepen het einde van een strofe.)"
+  },
+  {
+   "v": "Waarom is \"de deur lacht zacht\" personificatie?",
+   "o": [
+    "omdat het woord deur zelf in de regel staat",
+    "een deur kan niet lachen",
+    "omdat de deur open en dicht kan gaan",
+    "omdat de regel rijmt met de vorige regel"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 3,
+   "u": "Lachen = menselijk. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"omdat het woord deur zelf in de regel staat\"? Dan denk je dat het woord deur de personificatie maakt. Het gaat om lachen, en niet om het woord deur.",
+    "Klopt: lachen is een menselijke handeling die aan een ding wordt gegeven.",
+    "Koos je \"omdat de deur open en dicht kan gaan\"? Dan denk je dat open en dicht gaan menselijk is. Dat doet een deur echt, en daar is niets bijzonders aan.",
+    "Koos je \"omdat de regel rijmt met de vorige regel\"? Dan denk je dat rijm personificatie maakt. Rijm is klank, en personificatie is een beeld."
+   ],
+   "uh": "Wie kan lachen?",
+   "ctx": "De klok staat stil en kijkt me aan, / de stoel zucht diep van het wachten. // De kamer houdt zijn adem in, / en de deur lacht zacht in het donker. (Een schuine streep geeft het einde van een regel aan, twee strepen het einde van een strofe.)"
+  },
+  {
+   "v": "Welk effect heeft het gelijke rijm aan het eind van elke regel in dit gedicht?",
+   "o": [
+    "het klinkt rustig en vast, als een lied",
+    "het gedicht wordt daardoor moeilijker te begrijpen",
+    "het gedicht lijkt daardoor een nieuwsbericht",
+    "de lezer krijgt daardoor veel nieuwe informatie"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 4,
+   "u": "Rijm = ritme. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: terugkerende klanken maken het gedicht ritmisch en prettig.",
+    "Koos je \"het gedicht wordt daardoor moeilijker te begrijpen\"? Dan denk je dat rijm het gedicht moeilijk maakt. Rijm maakt het juist soepeler, en dus makkelijker.",
+    "Koos je \"het gedicht lijkt daardoor een nieuwsbericht\"? Dan denk je dat rijm een nieuwsbericht maakt. Een nieuwsbericht heeft geen rijm, dus dit is een gedicht.",
+    "Koos je \"de lezer krijgt daardoor veel nieuwe informatie\"? Dan denk je dat rijm nieuwe informatie geeft. Rijm geeft klank, en geen nieuwe feiten."
+   ],
+   "uh": "Wat doet het rijm?",
+   "ctx": "De zon gaat onder aan de rand / en kleurt de lucht met vuur en brand. / Ik loop alleen langs het strand / met mijn schoenen in mijn hand. (Een schuine streep geeft het einde van een regel aan.)"
+  },
+  {
+   "v": "Waarom kiest de dichter voor een vergelijking met de zon bij haar lach?",
+   "o": [
+    "omdat de zon in mei nooit meer schijnt",
+    "omdat de zon voor de lezer gevaarlijk is",
+    "omdat het gedicht over het weer in mei gaat",
+    "omdat de zon warmte geeft"
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 4,
+   "u": "Zon = warmte. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"omdat de zon in mei nooit meer schijnt\"? Dan denk je dat de zon niet schijnt. In mei schijnt hij vaak, en dat past juist bij het beeld.",
+    "Koos je \"omdat de zon voor de lezer gevaarlijk is\"? Dan denk je dat de zon gevaarlijk is. In het gedicht staat de zon voor warmte, en niet voor gevaar.",
+    "Koos je \"omdat het gedicht over het weer in mei gaat\"? Dan denk je dat het gedicht over het weer gaat. Het gaat over haar lach, en de zon is alleen het beeld.",
+    "Klopt: de zon is warm en maakt blij, zoals haar lach."
+   ],
+   "uh": "Wat voelt de lezer?",
+   "ctx": "Haar lach is als de zon in mei, / zo warm dat ik er stil van word. // Zij loopt zo licht als een veer / en neemt mijn zorgen met zich mee. (Een schuine streep geeft het einde van een regel aan, twee strepen het einde van een strofe.)"
+  },
+  {
+   "v": "Wat is het verschil tussen \"De wind is een dief\" en \"De wind is als een dief\"?",
+   "o": [
+    "het eerste is een vergelijking, het tweede een metafoor",
+    "er is geen enkel verschil tussen deze zinnen",
+    "alleen de tweede heeft als",
+    "beide zinnen zijn een rijm op elkaar"
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 2,
+   "u": "Als = vergelijking. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"het eerste is een vergelijking, het tweede een...\"? Dan denk je dat het andersom is. Een vergelijking heeft juist als, en dat staat in de tweede.",
+    "Koos je \"er is geen enkel verschil tussen deze zinnen\"? Dan denk je dat beide zinnen gelijk zijn. Het woordje als maakt een verschil, en geeft het soort beeld.",
+    "Klopt: alleen de tweede heeft het woordje als.",
+    "Koos je \"beide zinnen zijn een rijm op elkaar\"? Dan denk je dat dit rijm is. Ze rijmen niet, en gaan over beeldspraak."
+   ],
+   "uh": "Staat er als?",
+   "ctx": "De wind is een dief in de nacht, / hij sluipt door de tuin zonder geluid. // De maan is een lamp aan het plafond / van de hele donkere wereld. (Een schuine streep geeft het einde van een regel aan, twee strepen het einde van een strofe.)"
+  },
+  {
+   "v": "Wat zegt de metafoor \"De maan is een lamp aan het plafond\" over de maan?",
+   "o": [
+    "de maan hangt echt aan een plafond in huis",
+    "de maan is gemaakt van glas en draad",
+    "de maan geeft licht aan de donkere wereld",
+    "de maan maakt de wereld donker"
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 2,
+   "u": "Maan = lamp. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"de maan hangt echt aan een plafond in huis\"? Dan denk je dat het letterlijk is. Een metafoor is een beeld, en geen woordelijke beschrijving.",
+    "Koos je \"de maan is gemaakt van glas en draad\"? Dan denk je dat de maan echt een lamp is. Dat is een beeld, en niet de werkelijkheid.",
+    "Klopt: een lamp geeft licht, zoals de maan in de nacht.",
+    "Koos je \"de maan maakt de wereld donker\"? Dan denk je dat de maan donker maakt. Een lamp geeft juist licht, dus dat klopt niet."
+   ],
+   "uh": "Wat doet een lamp?",
+   "ctx": "De wind is een dief in de nacht, / hij sluipt door de tuin zonder geluid. // De maan is een lamp aan het plafond / van de hele donkere wereld. (Een schuine streep geeft het einde van een regel aan, twee strepen het einde van een strofe.)"
+  },
+  {
+   "v": "Hoe weet je dat dit gedicht uit één strofe bestaat?",
+   "o": [
+    "omdat het gedicht precies vier regels heeft",
+    "omdat het gedicht op het eind rijmt",
+    "omdat het gedicht bovenaan een titel heeft",
+    "er is geen witregel"
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 0,
+   "u": "Geen witregel = één strofe. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"omdat het gedicht precies vier regels heeft\"? Dan denk je dat vier regels één strofe betekenen. Vier regels kunnen ook twee strofen zijn, dus dat telt niet.",
+    "Koos je \"omdat het gedicht op het eind rijmt\"? Dan denk je dat rijm één strofe betekent. Rijm zegt niets over strofen, en een strofe heeft een witregel.",
+    "Koos je \"omdat het gedicht bovenaan een titel heeft\"? Dan denk je dat een titel één strofe betekent. Een titel hoort er altijd bij, en zegt niets over de blokken.",
+    "Klopt: pas bij een witregel begint een nieuwe strofe."
+   ],
+   "uh": "Is er een witregel?",
+   "ctx": "De school is uit, de bel is stil, / de gang is leeg en groot. / Ik loop naar buiten, doe wat ik wil, / en eet mijn laatste brood. (Een schuine streep geeft het einde van een regel aan.)"
+  },
+  {
+   "v": "Welk gevoel roept het gedicht over de kamer op door de personificatie?",
+   "o": [
+    "een stille, spannende sfeer",
+    "een vrolijke en drukke sfeer",
+    "een sfeer van sport en beweging",
+    "een sfeer van ruzie in een gezin"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 4,
+   "u": "Stilte + spanning. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: levende dingen in een stille kamer geven een vreemde, spannende sfeer.",
+    "Koos je \"een vrolijke en drukke sfeer\"? Dan denk je dat het gedicht vrolijk is. De kamer houdt zijn adem in, en dat is juist stil.",
+    "Koos je \"een sfeer van sport en beweging\"? Dan denk je dat het over sport gaat. Er beweegt niets, en alles staat stil.",
+    "Koos je \"een sfeer van ruzie in een gezin\"? Dan denk je dat het over ruzie gaat. Er is niemand die praat, en er is alleen stilte."
+   ],
+   "uh": "Wat voel je?",
+   "ctx": "De klok staat stil en kijkt me aan, / de stoel zucht diep van het wachten. // De kamer houdt zijn adem in, / en de deur lacht zacht in het donker. (Een schuine streep geeft het einde van een regel aan, twee strepen het einde van een strofe.)"
+  },
+  {
+   "v": "Waarom is \"de deur lacht zacht in het donker\" meer dan een gewone beschrijving?",
+   "o": [
+    "omdat het woord lachen een moeilijk woord is",
+    "een deur kan niet lachen",
+    "omdat het allemaal in het donker gebeurt",
+    "omdat de deur in de kamer dicht is"
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 3,
+   "u": "Lachen = beeld. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"omdat het woord lachen een moeilijk woord is\"? Dan denk je dat het woord moeilijk is. Het gaat om de betekenis, en lachen is een bekend woord.",
+    "Klopt: de dichter geeft een deur een menselijke eigenschap.",
+    "Koos je \"omdat het allemaal in het donker gebeurt\"? Dan denk je dat het donker de beeldspraak maakt. Donker is alleen de plaats, en niet het beeld.",
+    "Koos je \"omdat de deur in de kamer dicht is\"? Dan denk je dat de deur dicht moet zijn. Dat staat nergens, en de beeldspraak zit in het lachen."
+   ],
+   "uh": "Wie lacht er?",
+   "ctx": "De klok staat stil en kijkt me aan, / de stoel zucht diep van het wachten. // De kamer houdt zijn adem in, / en de deur lacht zacht in het donker. (Een schuine streep geeft het einde van een regel aan, twee strepen het einde van een strofe.)"
+  },
+  {
+   "v": "Welk gevoel past bij de metafoor van de wind als dief in dit gedicht?",
+   "o": [
+    "een vrolijk en luid feest in de tuin",
+    "een warme en gezellige middag in de zon",
+    "een drukke en lawaaierige stad vol auto's",
+    "iets stiekems en een beetje dreigends"
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 4,
+   "u": "Dief = stil en dreigend. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"een vrolijk en luid feest in de tuin\"? Dan denk je dat de wind vrolijk is. Een dief sluipt in stilte, en dat past niet bij luid feest.",
+    "Koos je \"een warme en gezellige middag in de zon\"? Dan denk je dat de nacht warm en gezellig is. Het gaat over een dief, en dat is niet gezellig.",
+    "Koos je \"een drukke en lawaaierige stad vol auto's\"? Dan denk je dat het over een drukke stad gaat. De wind sluipt zonder geluid, en dat is juist stil.",
+    "Klopt: een dief sluipt zonder geluid, dus de nacht voelt spannend."
+   ],
+   "uh": "Wat doet een dief?",
+   "ctx": "De wind is een dief in de nacht, / hij sluipt door de tuin zonder geluid. // De maan is een lamp aan het plafond / van de hele donkere wereld. (Een schuine streep geeft het einde van een regel aan, twee strepen het einde van een strofe.)"
+  }
+ ],
+ "oe": [
+  {
+   "bron": "Examenstijl",
+   "ctx": "De zon gaat onder aan de rand / en kleurt de lucht met vuur en brand. / Ik loop alleen langs het strand / met mijn schoenen in mijn hand. (Een schuine streep geeft het einde van een regel aan.)",
+   "v": "Hoeveel strofen en regels heeft dit gedicht en welke woorden rijmen?",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Eén strofe (1p) met vier regels (1p). De woorden rand, brand, strand en hand rijmen (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Haar lach is als de zon in mei, / zo warm dat ik er stil van word. // Zij loopt zo licht als een veer / en neemt mijn zorgen met zich mee. (Een schuine streep geeft het einde van een regel aan, twee strepen het einde van een strofe.)",
+   "v": "Welke vergelijking staat in dit gedicht? Leg uit waaraan je dat ziet.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "\"Haar lach is als de zon in mei\" (1p). Er staat het woordje als (1p) en twee dingen worden vergeleken (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "De wind is een dief in de nacht, / hij sluipt door de tuin zonder geluid. // De maan is een lamp aan het plafond / van de hele donkere wereld. (Een schuine streep geeft het einde van een regel aan, twee strepen het einde van een strofe.)",
+   "v": "Noem twee metaforen uit het gedicht en leg een ervan uit.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "\"De wind is een dief\" (1p) en \"De maan is een lamp\" (1p). Een lamp geeft licht, zoals de maan in het donker (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "De school is uit, de bel is stil, / de gang is leeg en groot. / Ik loop naar buiten, doe wat ik wil, / en eet mijn laatste brood. (Een schuine streep geeft het einde van een regel aan.)",
+   "v": "Welk rijmschema heeft dit gedicht en welke woorden rijmen?",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "abab (1p). Stil rijmt op wil (1p) en groot rijmt op brood (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "De klok staat stil en kijkt me aan, / de stoel zucht diep van het wachten. // De kamer houdt zijn adem in, / en de deur lacht zacht in het donker. (Een schuine streep geeft het einde van een regel aan, twee strepen het einde van een strofe.)",
+   "v": "Noem een personificatie uit het gedicht en leg uit waarom het personificatie is.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "\"De stoel zucht\" (1p) of \"de deur lacht\" (1p). Een ding doet iets wat alleen een mens kan (1p)."
+  }
+ ]
+}

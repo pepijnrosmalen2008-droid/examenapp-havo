@@ -622,6 +622,27 @@ var VAKKEN_VMBO = [
       "nOe": 5,
       "nBeg": 12,
       "hasSam": true
+     },
+     {
+      "id": "E5",
+      "lo": "nl.E.5",
+      "gs": 2,
+      "naam": "Gedichten lezen: strofe, rijm en beeldspraak",
+      "beschrijving": "Je leest een gedicht met oog voor strofe, regel, rijm en beeldspraak zoals vergelijking, metafoor en personificatie.",
+      "ceStatus": "SE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Strofe en regel",
+       "Rijm",
+       "Vergelijking en metafoor",
+       "Personificatie",
+       "Effect van beeldspraak"
+      ],
+      "nSv": 25,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
      }
     ]
    }
