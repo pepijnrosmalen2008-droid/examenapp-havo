@@ -17950,6 +17950,688 @@ var VAKKEN_VMBO = [
         "u": "Lisa is de hoofdpersoon en staat centraal (2p). De conciërge is een bijpersonage met een kleine rol (1p)."
        }
       ]
+     },
+     {
+      "id": "E2",
+      "lo": "nl.E.2",
+      "gs": 2,
+      "naam": "Perspectief: de ik-verteller en de hij- of zij-verteller",
+      "beschrijving": "Je herkent wie het verhaal vertelt, wat de verteller wel en niet weet en welk effect dat op de lezer heeft.",
+      "ceStatus": "SE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "De ik-verteller",
+       "De hij- of zij-verteller",
+       "Wat de verteller weet",
+       "Perspectief herkennen",
+       "Effect op de lezer"
+      ],
+      "sam": "Het perspectief is de kijk waarmee het verhaal verteld wordt. Een ik-verteller zegt ik en weet alleen zijn eigen gedachten, hij laat de lezer dicht bij zich komen. Een hij- of zij-verteller staat buiten het verhaal en vertelt over anderen. Een alwetende verteller kent de gedachten van alle personages. Je herkent het perspectief aan voornaamwoorden en aan wat de verteller weet. Het perspectief bepaalt wat de lezer weet en voelt.",
+      "begrippen": [
+       {
+        "t": "Perspectief",
+        "d": "De kijk waarmee het verhaal verteld wordt."
+       },
+       {
+        "t": "Verteller",
+        "d": "Degene die het verhaal vertelt."
+       },
+       {
+        "t": "Ik-verteller",
+        "d": "Een verteller die ik zegt over zichzelf."
+       },
+       {
+        "t": "Hij-verteller",
+        "d": "Een verteller buiten het verhaal die over hij en zij vertelt."
+       },
+       {
+        "t": "Alwetende verteller",
+        "d": "Een verteller die alles van alle personages weet."
+       },
+       {
+        "t": "Gedachte",
+        "d": "Wat een personage denkt."
+       },
+       {
+        "t": "Voornaamwoord",
+        "d": "Een woord als ik, hij of zij."
+       },
+       {
+        "t": "Nabijheid",
+        "d": "Hoe dicht de lezer bij een personage zit."
+       },
+       {
+        "t": "Beperkte kennis",
+        "d": "De verteller weet maar een deel."
+       },
+       {
+        "t": "Waarneming",
+        "d": "Wat een personage ziet of hoort."
+       },
+       {
+        "t": "Effect",
+        "d": "Wat het perspectief met de lezer doet."
+       },
+       {
+        "t": "Overzicht",
+        "d": "De lezer weet meer dan de personages."
+       }
+      ],
+      "sv": [
+       {
+        "v": "Wat bedoel je met het perspectief van een verhaal?",
+        "o": [
+         "de totale lengte van het hele verhaal in bladzijden",
+         "de kijk waarmee het verhaal verteld wordt",
+         "de plaats waar het boek gedrukt en verkocht is",
+         "het thema waar het verhaal over gaat"
+        ],
+        "c": 1,
+        "d": 1,
+        "s": 0,
+        "u": "Perspectief = wie vertelt. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"de totale lengte van het hele verhaal in bladzijden\"? Dan denk je dat het perspectief de lengte is. Perspectief gaat over wie vertelt, en niet over het aantal bladzijden.",
+         "Klopt: het perspectief bepaalt wie vertelt en wat jij als lezer te zien en te weten krijgt.",
+         "Koos je \"de plaats waar het boek gedrukt en verkocht is\"? Dan denk je dat het perspectief over het boek zelf gaat. Het gaat over de verteller, en niet over de uitgave of de winkel.",
+         "Koos je \"het thema waar het verhaal over gaat\"? Dan denk je dat het perspectief het thema is. Het thema is de gedachte achter het verhaal, en het perspectief is de manier van vertellen."
+        ],
+        "uh": "Door wiens ogen kijk je?"
+       },
+       {
+        "v": "Welke woorden horen bij een ik-verteller?",
+        "o": [
+         "hij, zij en hun, zoals bij een buitenstaander",
+         "wij, ons en jullie, zoals bij een hele groep",
+         "u en uw, zoals bij een beleefde aanspreekvorm",
+         "ik, mij en mijn"
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 1,
+        "u": "Ik-verteller = ik. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"hij, zij en hun, zoals bij een buitenstaander\"? Dan denk je dat deze woorden bij de ik-verteller horen. Die horen bij een buitenstaande verteller, die over anderen praat.",
+         "Koos je \"wij, ons en jullie, zoals bij een hele groep\"? Dan denk je dat deze woorden bij de ik-verteller horen. Ze horen bij een groep, en een ik-verteller is maar één persoon.",
+         "Koos je \"u en uw, zoals bij een beleefde aanspreekvorm\"? Dan denk je dat deze woorden bij de ik-verteller horen. Ze horen bij een aanspreekvorm, en niet bij de verteller zelf.",
+         "Klopt: een ik-verteller spreekt over zichzelf met ik, mij en mijn."
+        ],
+        "uh": "Welk woord noemt de verteller zelf?"
+       },
+       {
+        "v": "Welke woorden horen bij een hij- of zij-verteller?",
+        "o": [
+         "hij, zij en hem",
+         "ik, mij en mijn, zoals bij een personage",
+         "wij, ons en onze, zoals bij een groep",
+         "jij, jou en jouw, gericht tot de lezer"
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 2,
+        "u": "Hij-verteller = hij. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: zo'n verteller vertelt over anderen met hij, zij en hem.",
+         "Koos je \"ik, mij en mijn, zoals bij een personage\"? Dan denk je dat deze woorden bij de hij-verteller horen. Die horen bij de ik-verteller, die over zichzelf vertelt.",
+         "Koos je \"wij, ons en onze, zoals bij een groep\"? Dan denk je dat deze woorden bij de hij-verteller horen. Ze duiden op een groep waar de verteller zelf bij hoort, en dat is bij ik zo.",
+         "Koos je \"jij, jou en jouw, gericht tot de lezer\"? Dan denk je dat deze woorden bij de hij-verteller horen. Ze richten zich tot de lezer, en dat doet een gewone verteller niet."
+        ],
+        "uh": "Welk woord noemt de personages?"
+       },
+       {
+        "v": "Wat weet een ik-verteller meestal wel?",
+        "o": [
+         "de gedachten van alle andere personages in het verhaal",
+         "alles wat er in de toekomst van het verhaal gaat gebeuren",
+         "zijn eigen gedachten",
+         "alles wat er op andere plaatsen tegelijk gebeurt"
+        ],
+        "c": 2,
+        "d": 1,
+        "s": 3,
+        "u": "Ik-verteller weet eigen gedachten.",
+        "uo": [
+         "Koos je \"de gedachten van alle andere personages in het...\"? Dan denk je dat een ik-verteller alles weet. Hij weet meestal alleen wat hijzelf denkt, en niet wat anderen denken.",
+         "Koos je \"alles wat er in de toekomst van het verhaal gaat...\"? Dan denk je dat een ik-verteller de toekomst kent. Hij weet niet altijd wat er komt, en vertelt vaak over wat hij meemaakt.",
+         "Klopt: een ik-verteller kent zijn eigen gedachten en gevoelens het best.",
+         "Koos je \"alles wat er op andere plaatsen tegelijk gebeurt\"? Dan denk je dat een ik-verteller overal tegelijk is. Hij is maar op één plek, en ziet alleen wat hij ziet."
+        ],
+        "uh": "Wat weet hij?"
+       },
+       {
+        "v": "Waarom kiest een schrijver vaak een ik-verteller?",
+        "o": [
+         "het verhaal wordt daardoor veel korter dan anders",
+         "het verhaal is daardoor altijd echt gebeurd",
+         "de lezer komt dichtbij het personage",
+         "alle personages denken daardoor precies hetzelfde"
+        ],
+        "c": 2,
+        "d": 1,
+        "s": 4,
+        "u": "Dichtbij door ik. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"het verhaal wordt daardoor veel korter dan anders\"? Dan denk je dat een ik-verteller het verhaal inkort. Het perspectief bepaalt niets over de lengte, het gaat over nabijheid.",
+         "Koos je \"het verhaal is daardoor altijd echt gebeurd\"? Dan denk je dat een ik-verhaal altijd waar is. Een ik-verteller kan ook verzonnen zijn, en dus gewoon fictie.",
+         "Klopt: de lezer ziet en voelt alles door de ogen van de ik.",
+         "Koos je \"alle personages denken daardoor precies hetzelfde\"? Dan denk je dat alle personages hetzelfde denken. Een ik-verteller toont alleen zijn eigen kijk, niet die van anderen."
+        ],
+        "uh": "Hoe dicht zit je erop?"
+       },
+       {
+        "v": "Wat kan een alwetende verteller wel?",
+        "o": [
+         "de gedachten van alle personages vertellen",
+         "alleen vertellen wat hij zelf met eigen ogen ziet",
+         "alleen vertellen wat de hoofdpersoon doet en zegt",
+         "nooit iets vertellen over de gevoelens van personages"
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 0,
+        "u": "Alwetend = alles weten. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: een alwetende verteller weet alles over alle personages.",
+         "Koos je \"alleen vertellen wat hij zelf met eigen ogen ziet\"? Dan denk je dat een alwetende verteller beperkt is. Hij weet juist alles, ook wat anderen denken.",
+         "Koos je \"alleen vertellen wat de hoofdpersoon doet en zegt\"? Dan denk je dat hij alleen de hoofdpersoon volgt. Hij ziet ook anderen en hun gedachten, en weet dus meer dan één persoon.",
+         "Koos je \"nooit iets vertellen over de gevoelens van...\"? Dan denk je dat hij gevoelens niet kent. Hij kent ze juist, van alle personages."
+        ],
+        "uh": "Wat weet hij?"
+       },
+       {
+        "v": "Waaraan herken je een ik-verhaal het snelst?",
+        "o": [
+         "aan de namen van alle personages in het verhaal",
+         "aan het aantal dialogen dat in de tekst staat",
+         "aan de korte lengte van de gelezen tekst",
+         "aan het woord ik in de tekst"
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 1,
+        "u": "Ik in de tekst. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"aan de namen van alle personages in het verhaal\"? Dan denk je dat namen een ik-verhaal tonen. Namen komen in elk verhaal voor, en zeggen niets over het perspectief.",
+         "Koos je \"aan het aantal dialogen dat in de tekst staat\"? Dan denk je dat dialogen een ik-verhaal tonen. Dialogen staan ook in andere verhalen, dus het is geen kenmerk.",
+         "Koos je \"aan de korte lengte van de gelezen tekst\"? Dan denk je dat de lengte het perspectief laat zien. Dat doet de lengte niet, want het gaat om wie vertelt.",
+         "Klopt: in een ik-verhaal noemt de verteller zichzelf ik."
+        ],
+        "uh": "Wie zegt ik?"
+       },
+       {
+        "v": "Welk perspectief heeft het eerste fragment bij de deur?",
+        "o": [
+         "een alwetende verteller die alles over iedereen weet",
+         "een ik-verteller",
+         "een hij-verteller die over een ander jongen vertelt",
+         "een zij-verteller die over een meisje vertelt"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 0,
+        "u": "Ik = ik-verteller. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"een alwetende verteller die alles over iedereen weet\"? Dan denk je dat de verteller alles weet. Hij weet niet wat er binnen gebeurt, dus is hij niet alwetend.",
+         "Klopt: de verteller zegt ik, mijn en mij over zichzelf.",
+         "Koos je \"een hij-verteller die over een ander jongen vertelt\"? Dan denk je dat de verteller hij gebruikt. In de tekst staat steeds ik, dus vertelt hij over zichzelf.",
+         "Koos je \"een zij-verteller die over een meisje vertelt\"? Dan denk je dat de verteller zij gebruikt. Er staat geen zij in de tekst, maar wel steeds ik."
+        ],
+        "uh": "Welk woord gebruikt hij?",
+        "ctx": "Ik stond bij de deur en durfde niet naar binnen. Mijn hart bonsde. Wat zouden ze van mij denken? Ik haalde diep adem, hief mijn hand op en klopte aan. Niemand deed open, maar ik hoorde zachte stemmen in de kamer."
+       },
+       {
+        "v": "Welke zin laat de gedachten van de verteller zien?",
+        "o": [
+         "\"Mijn hart bonsde.\" Dit is een gedachte.",
+         "\"Ik hoorde zachte stemmen.\" Dit is een gedachte.",
+         "\"Niemand deed open.\" Dit is een gedachte.",
+         "\"Wat zouden ze van mij denken?\""
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 1,
+        "u": "Gedachte = vraag aan zichzelf.",
+        "uo": [
+         "Koos je \"Mijn hart bonsde. Dit is een gedachte.\"? Dan denk je dat dit een gedachte is. Het is een lichamelijke reactie, en geen gedachte.",
+         "Koos je \"Ik hoorde zachte stemmen. Dit is een gedachte.\"? Dan denk je dat dit een gedachte is. Het is een waarneming met je oren, en geen gedachte.",
+         "Koos je \"Niemand deed open. Dit is een gedachte.\"? Dan denk je dat dit een gedachte is. Het is een gebeurtenis die je kunt zien, en geen gedachte.",
+         "Klopt: dit is een vraag die de ik-verteller zichzelf stelt."
+        ],
+        "uh": "Wat denkt hij?",
+        "ctx": "Ik stond bij de deur en durfde niet naar binnen. Mijn hart bonsde. Wat zouden ze van mij denken? Ik haalde diep adem, hief mijn hand op en klopte aan. Niemand deed open, maar ik hoorde zachte stemmen in de kamer."
+       },
+       {
+        "v": "Wat weet de verteller bij de deur niet?",
+        "o": [
+         "dat zijn eigen hart staat te bonzen van de spanning",
+         "wie er in de kamer zijn en wat ze denken",
+         "dat hijzelf bezig is met het aankloppen op de deur",
+         "dat hij zelf een paar keer diep ademhaalt voor de deur"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 2,
+        "u": "Ik-verteller weet niet wat anderen denken.",
+        "uo": [
+         "Koos je \"dat zijn eigen hart staat te bonzen van de spanning\"? Dan denk je dat hij zijn eigen hart niet voelt. Hij voelt het juist, en dat weet hij dus wel.",
+         "Klopt: hij hoort alleen zachte stemmen en weet niets van wat er binnen gebeurt.",
+         "Koos je \"dat hijzelf bezig is met het aankloppen op de deur\"? Dan denk je dat hij niet weet wat hij doet. Hij klopt zelf aan, dus daar zit zijn kennis.",
+         "Koos je \"dat hij zelf een paar keer diep ademhaalt voor de...\"? Dan denk je dat hij zijn eigen ademhaling niet kent. Hij haalt zelf adem, en dat merkt hij."
+        ],
+        "uh": "Wat blijft verborgen?",
+        "ctx": "Ik stond bij de deur en durfde niet naar binnen. Mijn hart bonsde. Wat zouden ze van mij denken? Ik haalde diep adem, hief mijn hand op en klopte aan. Niemand deed open, maar ik hoorde zachte stemmen in de kamer."
+       },
+       {
+        "v": "Welk perspectief heeft het tweede fragment over Daan?",
+        "o": [
+         "een ik-verteller die over zichzelf praat",
+         "een jij-verteller die de lezer aanspreekt",
+         "een hij-verteller",
+         "een wij-verteller die namens een groep spreekt"
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 0,
+        "u": "Hij = hij-verteller. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"een ik-verteller die over zichzelf praat\"? Dan denk je dat de verteller ik zegt. De tekst gaat over Daan, dus praat een buitenstaander.",
+         "Koos je \"een jij-verteller die de lezer aanspreekt\"? Dan denk je dat de verteller jij gebruikt. Er staat nergens jij in de tekst, dus past dit niet.",
+         "Klopt: de verteller noemt Daan steeds hij en zijn en staat dus buiten het verhaal.",
+         "Koos je \"een wij-verteller die namens een groep spreekt\"? Dan denk je dat de verteller wij zegt. Er staat geen wij in het fragment, want het gaat om één jongen."
+        ],
+        "uh": "Over wie gaat het?",
+        "ctx": "Daan stond bij de deur en durfde niet naar binnen. Zijn hart bonsde. Hij haalde diep adem, hief zijn hand op en klopte aan. In de kamer keken twee ogen verbaasd naar de deur, maar niemand deed open."
+       },
+       {
+        "v": "Welke zin laat zien dat de verteller meer ziet dan Daan?",
+        "o": [
+         "\"In de kamer keken twee ogen verbaasd naar de deur.\"",
+         "\"Zijn hart bonsde.\" Dit ziet alleen de verteller.",
+         "\"Hij haalde diep adem.\" Dit ziet alleen de verteller.",
+         "\"Hij klopte aan.\" Dit ziet alleen de verteller."
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 1,
+        "u": "Verteller weet meer. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: Daan kan dit niet zien, dus de verteller weet meer dan hij.",
+         "Koos je \"Zijn hart bonsde. Dit ziet alleen de verteller.\"? Dan denk je dat Daan dit niet kan weten. Zijn eigen hart voelt hij natuurlijk wel, dus dit is geen voorsprong van de verteller.",
+         "Koos je \"Hij haalde diep adem. Dit ziet alleen de verteller.\"? Dan denk je dat alleen de verteller dit ziet. Daan haalt zelf adem en merkt dat, dus hij weet het ook.",
+         "Koos je \"Hij klopte aan. Dit ziet alleen de verteller.\"? Dan denk je dat Daan dit niet doorheeft. Hij klopt met zijn eigen hand, dus die kennis heeft hij gewoon."
+        ],
+        "uh": "Wat ziet Daan niet?",
+        "ctx": "Daan stond bij de deur en durfde niet naar binnen. Zijn hart bonsde. Hij haalde diep adem, hief zijn hand op en klopte aan. In de kamer keken twee ogen verbaasd naar de deur, maar niemand deed open."
+       },
+       {
+        "v": "Welk perspectief heeft het fragment over Tim en zijn zus?",
+        "o": [
+         "een alwetende verteller",
+         "een ik-verteller die zijn eigen verhaal doet",
+         "een verteller die alleen Tim volgt en zijn gedachten kent",
+         "een verteller die bijna niets van de personages weet"
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 3,
+        "u": "Weet meer dan het personage. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: de verteller weet wat Tim niet weet en kent de gedachten van zijn zus.",
+         "Koos je \"een ik-verteller die zijn eigen verhaal doet\"? Dan denk je dat de verteller ik zegt. Er staat geen ik in dit fragment, dus is hij een buitenstaander.",
+         "Koos je \"een verteller die alleen Tim volgt en zijn...\"? Dan denk je dat de verteller alleen Tim kent. Hij weet ook wat zijn zus denkt, en dus meer dan Tim.",
+         "Koos je \"een verteller die bijna niets van de personages weet\"? Dan denk je dat de verteller weinig weet. Hij weet juist heel veel, zoals wat de zus besluit."
+        ],
+        "uh": "Wie weet wat?",
+        "ctx": "Tim wist niet dat zijn zus al een uur achter de deur stond. Zij hoorde hem zingen en glimlachte. Ze besloot hem niet te storen, want ze wist dat hij zich schaamde voor zijn stem."
+       },
+       {
+        "v": "Welke zin toont dat de verteller de gedachten van Tims zus kent?",
+        "o": [
+         "\"Tim wist niet dat zijn zus er stond.\" Dit is haar gedachte.",
+         "\"Zij hoorde hem zingen.\" Dit is haar gedachte.",
+         "\"Ze besloot hem niet te storen.\"",
+         "\"Zij glimlachte.\" Dit is haar gedachte."
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 2,
+        "u": "Besluit = gedachte. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"Tim wist niet dat zijn zus er stond. Dit is haar...\"? Dan denk je dat hier de gedachte van de zus staat. De zin vertelt iets over Tim, en zegt niets over haar hoofd.",
+         "Koos je \"Zij hoorde hem zingen. Dit is haar gedachte.\"? Dan denk je dat horen een denkstap is. Haar oren nemen het geluid waar, maar er staat geen besluit of mening bij.",
+         "Klopt: een besluit is een gedachte van de zus.",
+         "Koos je \"Zij glimlachte. Dit is haar gedachte.\"? Dan denk je dat een lach een gedachte laat zien. Een glimlach zie je aan haar gezicht, en een buitenstaander kan dat ook zien."
+        ],
+        "uh": "Welke zin kijkt in haar hoofd?",
+        "ctx": "Tim wist niet dat zijn zus al een uur achter de deur stond. Zij hoorde hem zingen en glimlachte. Ze besloot hem niet te storen, want ze wist dat hij zich schaamde voor zijn stem."
+       },
+       {
+        "v": "Wat merkt de lezer doordat de verteller meer weet dan Tim?",
+        "o": [
+         "de lezer weet minder dan Tim zelf weet",
+         "de lezer weet meer dan Tim",
+         "de lezer weet precies hetzelfde als Tim zelf weet",
+         "de lezer weet helemaal niets van de personages"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 4,
+        "u": "Lezer weet meer. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"de lezer weet minder dan Tim zelf weet\"? Dan denk je dat de lezer minder weet. Hij weet juist meer, omdat de verteller alles vertelt.",
+         "Klopt: je ziet de zus wel en Tim niet, wat zorgt voor spanning of ontroering.",
+         "Koos je \"de lezer weet precies hetzelfde als Tim zelf weet\"? Dan denk je dat de lezer gelijk met Tim weet. Hij kent ook de gedachten van de zus, en dat weet Tim niet.",
+         "Koos je \"de lezer weet helemaal niets van de personages\"? Dan denk je dat de lezer niets weet. Er wordt veel verteld, ook over de gedachten van de zus."
+        ],
+        "uh": "Wat weet de lezer?",
+        "ctx": "Tim wist niet dat zijn zus al een uur achter de deur stond. Zij hoorde hem zingen en glimlachte. Ze besloot hem niet te storen, want ze wist dat hij zich schaamde voor zijn stem."
+       },
+       {
+        "v": "Welk perspectief heeft het fragment over de vriendin?",
+        "o": [
+         "een hij-verteller die over een jongen vertelt",
+         "een alwetende verteller die alles over haar weet",
+         "een zij-verteller die over het meisje vertelt",
+         "een ik-verteller"
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 0,
+        "u": "Ik = ik-verteller. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"een hij-verteller die over een jongen vertelt\"? Dan denk je dat de verteller hij zegt. Er staat steeds ik in de zinnen, dus vertelt hij over zichzelf.",
+         "Koos je \"een alwetende verteller die alles over haar weet\"? Dan denk je dat de verteller alles weet. Hij weet niet eens wat ze zeggen, dus kan hij niet alwetend zijn.",
+         "Koos je \"een zij-verteller die over het meisje vertelt\"? Dan denk je dat de verteller zij gebruikt. De verteller kijkt naar haar, maar hij vertelt als ik.",
+         "Klopt: de verteller zegt ik en mijn en vertelt alleen wat hij ziet."
+        ],
+        "uh": "Wie vertelt?",
+        "ctx": "Ik zag mijn vriendin lachen met een andere jongen. Wat zeiden ze tegen elkaar? Waarom keek ze niet naar mij? Ik wist het niet en ik durfde het niet te vragen, dus ik liep zwijgend weg."
+       },
+       {
+        "v": "Waarom stelt de verteller zoveel vragen over zijn vriendin?",
+        "o": [
+         "hij kent haar gedachten precies al lang van tevoren",
+         "hij weet niet wat zij denkt of zegt",
+         "hij wil niet dat de lezer de waarheid te weten komt",
+         "hij is de schrijver die het hele verhaal bedacht heeft"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 2,
+        "u": "Beperkte kennis. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"hij kent haar gedachten precies al lang van tevoren\"? Dan denk je dat hij haar gedachten kent. Hij stelt juist vragen omdat hij het niet weet, want hij kent alleen de zijne.",
+         "Klopt: een ik-verteller kent alleen zijn eigen gedachten.",
+         "Koos je \"hij wil niet dat de lezer de waarheid te weten komt\"? Dan denk je dat hij iets verbergt. Hij vraagt zich oprecht af wat er gebeurt, zijn vragen zijn geen list.",
+         "Koos je \"hij is de schrijver die het hele verhaal bedacht...\"? Dan denk je dat hij de schrijver is. Hij is een personage met een eigen beperkte kijk, en geen schrijver."
+        ],
+        "uh": "Wat weet hij niet?",
+        "ctx": "Ik zag mijn vriendin lachen met een andere jongen. Wat zeiden ze tegen elkaar? Waarom keek ze niet naar mij? Ik wist het niet en ik durfde het niet te vragen, dus ik liep zwijgend weg."
+       },
+       {
+        "v": "Welk effect heeft het ik-perspectief in dit fragment?",
+        "o": [
+         "de lezer voelt de onzekerheid van de verteller",
+         "de lezer weet alles wat de vriendin tegen de jongen zegt",
+         "de lezer vindt de vriendin gemeen en oneerlijk",
+         "de lezer kent de afloop van het verhaal al"
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 4,
+        "u": "Onzekerheid door ik. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: je weet net zo weinig als hij en voelt zijn twijfel.",
+         "Koos je \"de lezer weet alles wat de vriendin tegen de jongen...\"? Dan denk je dat de lezer alles weet. De verteller weet het zelf niet, en dus weet de lezer het ook niet.",
+         "Koos je \"de lezer vindt de vriendin gemeen en oneerlijk\"? Dan denk je dat de lezer haar gemeen vindt. Dat staat nergens, het gaat om onzekerheid.",
+         "Koos je \"de lezer kent de afloop van het verhaal al\"? Dan denk je dat de lezer de toekomst kent. Er wordt niets over later gezegd, de verteller loopt gewoon weg."
+        ],
+        "uh": "Wat voel je als lezer?",
+        "ctx": "Ik zag mijn vriendin lachen met een andere jongen. Wat zeiden ze tegen elkaar? Waarom keek ze niet naar mij? Ik wist het niet en ik durfde het niet te vragen, dus ik liep zwijgend weg."
+       },
+       {
+        "v": "Welk perspectief heeft het fragment over Fenna en haar vader?",
+        "o": [
+         "een ik-verteller die over zichzelf spreekt",
+         "een verteller die alleen Fenna volgt en kent",
+         "een verteller die weinig van de personages weet",
+         "een alwetende verteller"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 3,
+        "u": "Weet meer dan het personage. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"een ik-verteller die over zichzelf spreekt\"? Dan denk je dat de verteller ik zegt. Er staat geen ik in de tekst, dus is het een buitenstaander.",
+         "Koos je \"een verteller die alleen Fenna volgt en kent\"? Dan denk je dat de verteller alleen Fenna kent. Hij weet ook wat haar vader denkt, dus meer dan Fenna.",
+         "Koos je \"een verteller die weinig van de personages weet\"? Dan denk je dat de verteller weinig weet. Hij weet juist veel, zoals wat de vader besluit.",
+         "Klopt: de verteller kent de gedachten van zowel Fenna als haar vader."
+        ],
+        "uh": "Wie weet wat?",
+        "ctx": "Fenna zag dat haar vader boos was. Ze zei niets en bleef stil zitten. Hij dacht dat ze het niet had gemerkt, maar zij had alles gehoord. Op dat moment besloot hij dat hij het later zou uitleggen."
+       },
+       {
+        "v": "Welke zin laat zien dat de verteller in het hoofd van de vader kijkt?",
+        "o": [
+         "\"Fenna zag dat haar vader boos was.\" Dit toont zijn gedachten.",
+         "\"Ze zei niets.\" Dit toont zijn gedachten.",
+         "\"Hij dacht dat ze het niet had gemerkt.\"",
+         "\"Ze bleef stil zitten.\" Dit toont zijn gedachten."
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 2,
+        "u": "Gedachte van een ander. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"Fenna zag dat haar vader boos was. Dit toont zijn...\"? Dan denk je dat dit uit het hoofd van de vader komt. De zin volgt de blik van Fenna, en vertelt niets over wat hij denkt.",
+         "Koos je \"Ze zei niets. Dit toont zijn gedachten.\"? Dan denk je dat de vader dit denkt. Het is wat Fenna doet door niet te praten, en dat is haar gedrag.",
+         "Klopt: wat hij denkt kan de verteller alleen weten als hij alwetend is.",
+         "Koos je \"Ze bleef stil zitten. Dit toont zijn gedachten.\"? Dan denk je dat stil zitten iets over de vader zegt. Het gaat om de houding van Fenna, en geen gedachte van haar vader."
+        ],
+        "uh": "Wie denkt hier?",
+        "ctx": "Fenna zag dat haar vader boos was. Ze zei niets en bleef stil zitten. Hij dacht dat ze het niet had gemerkt, maar zij had alles gehoord. Op dat moment besloot hij dat hij het later zou uitleggen."
+       },
+       {
+        "v": "Wat doet het alwetende vertellen met jou als lezer bij Fenna en haar vader?",
+        "o": [
+         "de lezer weet minder dan beide personages samen",
+         "de lezer ziet de wereld alleen door de ogen van Fenna",
+         "de lezer ziet dat beiden elkaar verkeerd inschatten",
+         "de lezer vindt de vader een aardige man"
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 4,
+        "u": "Overzicht. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"de lezer weet minder dan beide personages samen\"? Dan denk je dat de lezer minder weet. Hij weet juist meer dan beiden, en ziet het misverstand.",
+         "Koos je \"de lezer ziet de wereld alleen door de ogen van...\"? Dan denk je dat de lezer alleen Fenna volgt. Hij ziet ook de vader, en kent diens gedachten.",
+         "Klopt: de vader denkt dat ze niets merkte, maar Fenna weet alles.",
+         "Koos je \"de lezer vindt de vader een aardige man\"? Dan denk je dat de lezer de vader aardig vindt. Dat staat nergens, het effect is overzicht."
+        ],
+        "uh": "Wat ziet de lezer?",
+        "ctx": "Fenna zag dat haar vader boos was. Ze zei niets en bleef stil zitten. Hij dacht dat ze het niet had gemerkt, maar zij had alles gehoord. Op dat moment besloot hij dat hij het later zou uitleggen."
+       },
+       {
+        "v": "Hoe schrijf je de eerste zin bij de deur om voor een hij-verteller?",
+        "o": [
+         "\"Ik stond bij de deur en durfde niet naar binnen.\" Dit is de herschrijving.",
+         "\"Wij stonden bij de deur en durfden niet naar binnen.\" Dit is de herschrijving.",
+         "\"Jij stond bij de deur en durfde niet naar binnen.\" Dit is de herschrijving.",
+         "\"Hij stond bij de deur en durfde niet naar binnen.\""
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 0,
+        "u": "Ik wordt hij. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"Ik stond bij de deur en durfde niet naar binnen....\"? Dan denk je dat dit een hij-verteller is. Dit is het origineel met ik, niet de herschrijving.",
+         "Koos je \"Wij stonden bij de deur en durfden niet naar...\"? Dan denk je dat dit een hij-verteller is. Dit is een wij-verteller, en dat gaat over een groep.",
+         "Koos je \"Jij stond bij de deur en durfde niet naar binnen....\"? Dan denk je dat dit een hij-verteller is. Dit richt zich tot jij, en dat is geen gewone verteller.",
+         "Klopt: bij een hij-verteller wordt ik steeds hij en mijn wordt zijn."
+        ],
+        "uh": "Hoe verander je het?",
+        "ctx": "Ik stond bij de deur en durfde niet naar binnen. Mijn hart bonsde. Wat zouden ze van mij denken? Ik haalde diep adem, hief mijn hand op en klopte aan. Niemand deed open, maar ik hoorde zachte stemmen in de kamer."
+       },
+       {
+        "v": "Wat verandert als het fragment over Daan een ik-verhaal wordt?",
+        "o": [
+         "de lezer zit dichter bij Daans gevoel",
+         "de lezer weet meer over de mensen in de kamer",
+         "er gebeurt in het verhaal iets heel anders",
+         "de deur wordt in de tekst een raam"
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 3,
+        "u": "Verandert: nabijheid. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: een ik-verteller laat de gedachten direct zien.",
+         "Koos je \"de lezer weet meer over de mensen in de kamer\"? Dan denk je dat de lezer meer over de kamer weet. Een ik-verteller weet niet wat daar gebeurt, en dus weet de lezer ook minder.",
+         "Koos je \"er gebeurt in het verhaal iets heel anders\"? Dan denk je dat het verhaal verandert. De gebeurtenis blijft gelijk, alleen de verteller verandert.",
+         "Koos je \"de deur wordt in de tekst een raam\"? Dan denk je dat het decor verandert. Het decor blijft gelijk, alleen het perspectief verandert."
+        ],
+        "uh": "Wat wijzigt?",
+        "ctx": "Daan stond bij de deur en durfde niet naar binnen. Zijn hart bonsde. Hij haalde diep adem, hief zijn hand op en klopte aan. In de kamer keken twee ogen verbaasd naar de deur, maar niemand deed open."
+       },
+       {
+        "v": "Welke zin laat zien dat de ik-verteller zijn gevoelens verbergt?",
+        "o": [
+         "\"Ik zag mijn vriendin lachen met een andere jongen.\"",
+         "\"ik liep zwijgend weg\"",
+         "\"Wat zeiden ze tegen elkaar?\"",
+         "\"Waarom keek ze niet naar mij?\""
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 1,
+        "u": "Weglopen = verbergen. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"Ik zag mijn vriendin lachen met een andere jongen.\"? Dan denk je dat deze zin gevoelens verbergt. Het is een waarneming, en toont geen verbergen.",
+         "Klopt: hij zegt niets en loopt weg, terwijl hij onzeker is.",
+         "Koos je \"Wat zeiden ze tegen elkaar?\"? Dan denk je dat deze zin gevoelens verbergt. Het is een vraag aan zichzelf, en toont juist onzekerheid.",
+         "Koos je \"Waarom keek ze niet naar mij?\"? Dan denk je dat deze zin gevoelens verbergt. Het is een vraag aan zichzelf, en dat toont juist twijfel."
+        ],
+        "uh": "Wat doet hij?",
+        "ctx": "Ik zag mijn vriendin lachen met een andere jongen. Wat zeiden ze tegen elkaar? Waarom keek ze niet naar mij? Ik wist het niet en ik durfde het niet te vragen, dus ik liep zwijgend weg."
+       },
+       {
+        "v": "Waarom is de zin \"want ze wist dat hij zich schaamde\" typisch alwetend?",
+        "o": [
+         "de verteller is zelf Tim en vertelt zijn eigen gevoel",
+         "de verteller kent alleen zijn eigen gevoel in het verhaal",
+         "de verteller kent Tim helemaal niet en weet niets van hem",
+         "de verteller kent wat de zus weet over Tim"
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 2,
+        "u": "Weet wat anderen weten. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"de verteller is zelf Tim en vertelt zijn eigen...\"? Dan denk je dat de verteller Tim is. Er staat geen ik, en de verteller weet meer dan Tim.",
+         "Koos je \"de verteller kent alleen zijn eigen gevoel in het...\"? Dan denk je dat hij alleen zijn eigen gevoel kent. Hij kent ook dat van anderen, dus hij is alwetend.",
+         "Koos je \"de verteller kent Tim helemaal niet en weet niets...\"? Dan denk je dat hij Tim niet kent. Hij weet dat Tim zich schaamt, dus hij kent hem goed.",
+         "Klopt: alleen een alwetende verteller kent haar kennis en zijn gevoel."
+        ],
+        "uh": "Wie weet wat?",
+        "ctx": "Tim wist niet dat zijn zus al een uur achter de deur stond. Zij hoorde hem zingen en glimlachte. Ze besloot hem niet te storen, want ze wist dat hij zich schaamde voor zijn stem."
+       },
+       {
+        "v": "Welke reden kan een schrijver hebben om het fragment bij de deur als ik-verhaal te schrijven?",
+        "o": [
+         "de lezer deelt de onzekerheid van de verteller",
+         "de lezer weet precies wat er in de kamer gebeurt",
+         "de lezer kent de gedachten van alle personages",
+         "de lezer ziet het verhaal van buiten en op afstand"
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 4,
+        "u": "Nabijheid. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: je weet net zoveel als de verteller en voelt zijn spanning.",
+         "Koos je \"de lezer weet precies wat er in de kamer gebeurt\"? Dan denk je dat de lezer de kamer kent. De verteller weet het niet, en de lezer dus ook niet.",
+         "Koos je \"de lezer kent de gedachten van alle personages\"? Dan denk je dat de lezer alle gedachten kent. Alleen die van de verteller worden verteld, niemand anders.",
+         "Koos je \"de lezer ziet het verhaal van buiten en op afstand\"? Dan denk je dat de lezer buiten staat. Hij zit juist dicht bij de ik, en kijkt van binnenuit."
+        ],
+        "uh": "Hoe dichtbij is de lezer?",
+        "ctx": "Ik stond bij de deur en durfde niet naar binnen. Mijn hart bonsde. Wat zouden ze van mij denken? Ik haalde diep adem, hief mijn hand op en klopte aan. Niemand deed open, maar ik hoorde zachte stemmen in de kamer."
+       },
+       {
+        "v": "Welk perspectief past het best bij een fragment waarin Tim zelf vertelt dat zijn zus achter de deur stond?",
+        "o": [
+         "een alwetende verteller die alles vanaf het begin weet",
+         "een ik-verteller die het later heeft gehoord",
+         "een hij-verteller die over Tim praat",
+         "een zij-verteller die over de zus praat"
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 3,
+        "u": "Ik weet het pas later. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"een alwetende verteller die alles vanaf het begin...\"? Dan denk je dat Tim alwetend is. Hij zegt ik en weet het pas later, dus is hij een gewone ik-verteller.",
+         "Klopt: Tim kan het alleen vertellen als hij het later te weten is gekomen.",
+         "Koos je \"een hij-verteller die over Tim praat\"? Dan denk je dat Tim als hij vertelt. Hij vertelt zelf, dus als ik.",
+         "Koos je \"een zij-verteller die over de zus praat\"? Dan denk je dat Tim als zij vertelt. Hij kijkt niet vanuit haar ogen, maar vanuit zijn eigen kijk."
+        ],
+        "uh": "Wie weet wanneer?",
+        "ctx": "Tim wist niet dat zijn zus al een uur achter de deur stond. Zij hoorde hem zingen en glimlachte. Ze besloot hem niet te storen, want ze wist dat hij zich schaamde voor zijn stem."
+       }
+      ],
+      "oe": [
+       {
+        "bron": "Examenstijl",
+        "ctx": "Ik stond bij de deur en durfde niet naar binnen. Mijn hart bonsde. Wat zouden ze van mij denken? Ik haalde diep adem, hief mijn hand op en klopte aan. Niemand deed open, maar ik hoorde zachte stemmen in de kamer.",
+        "v": "Welk perspectief heeft dit fragment en hoe zie je dat? Noem één voorbeeld.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Een ik-verteller (1p). Het woord ik, mijn of mij staat in de tekst (1p), bijvoorbeeld \"Ik stond bij de deur\" (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Daan stond bij de deur en durfde niet naar binnen. Zijn hart bonsde. Hij haalde diep adem, hief zijn hand op en klopte aan. In de kamer keken twee ogen verbaasd naar de deur, maar niemand deed open.",
+        "v": "Welk perspectief heeft dit fragment en welk detail laat zien dat de verteller meer weet dan Daan?",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Een hij-verteller (1p). Er keken twee ogen in de kamer verbaasd naar de deur, wat Daan niet kan zien (2p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Tim wist niet dat zijn zus al een uur achter de deur stond. Zij hoorde hem zingen en glimlachte. Ze besloot hem niet te storen, want ze wist dat hij zich schaamde voor zijn stem.",
+        "v": "Waarom is dit een alwetende verteller? Noem twee dingen die hij weet.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Hij weet wat Tim niet weet: dat zijn zus er al een uur staat (1p). Hij kent haar besluit en dat Tim zich schaamt (2p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Ik zag mijn vriendin lachen met een andere jongen. Wat zeiden ze tegen elkaar? Waarom keek ze niet naar mij? Ik wist het niet en ik durfde het niet te vragen, dus ik liep zwijgend weg.",
+        "v": "Wat weet de ik-verteller niet en welk effect heeft dat op de lezer?",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Hij weet niet wat zijn vriendin en de jongen zeggen of waarom ze niet kijkt (2p). De lezer voelt zijn onzekerheid (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Fenna zag dat haar vader boos was. Ze zei niets en bleef stil zitten. Hij dacht dat ze het niet had gemerkt, maar zij had alles gehoord. Op dat moment besloot hij dat hij het later zou uitleggen.",
+        "v": "Welke zin laat zien dat de verteller in het hoofd van de vader kijkt en wat is het effect?",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "\"Hij dacht dat ze het niet had gemerkt\" (1p). De lezer weet meer dan de personages en ziet het misverstand (2p)."
+       }
+      ]
      }
     ]
    }

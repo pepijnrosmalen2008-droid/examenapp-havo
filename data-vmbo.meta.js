@@ -559,6 +559,27 @@ var VAKKEN_VMBO = [
       "nOe": 5,
       "nBeg": 12,
       "hasSam": true
+     },
+     {
+      "id": "E2",
+      "lo": "nl.E.2",
+      "gs": 2,
+      "naam": "Perspectief: de ik-verteller en de hij- of zij-verteller",
+      "beschrijving": "Je herkent wie het verhaal vertelt, wat de verteller wel en niet weet en welk effect dat op de lezer heeft.",
+      "ceStatus": "SE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "De ik-verteller",
+       "De hij- of zij-verteller",
+       "Wat de verteller weet",
+       "Perspectief herkennen",
+       "Effect op de lezer"
+      ],
+      "nSv": 27,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
      }
     ]
    }

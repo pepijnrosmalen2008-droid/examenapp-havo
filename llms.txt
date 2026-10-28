@@ -5,7 +5,7 @@
 Volledige beschrijving (functies, inhoud per niveau, prijs, wat Slagio niet is): https://slagio.nl/llms-full.txt
 
 ## In het kort
-- 12 vakken havo, 16 vakken vwo, 12 vakken vmbo; 23.603 oefenvragen en 4.346 begrippen.
+- 12 vakken havo, 16 vakken vwo, 12 vakken vmbo; 23.630 oefenvragen en 4.346 begrippen.
 - Adaptief oefenen: na een fout een vraag over hetzelfde onderwerp, een niveau makkelijker; uitleg bij elk fout antwoord.
 - Foutenboek en herhalen met gespreide herhaling, beheersing per leerdoel, studieplan tot het examen.
 - Examens met klok, proefexamens in examenstijl met modelantwoord en puntenverdeling, archief met officiële oude examens.
@@ -148,6 +148,7 @@ Volledige beschrijving (functies, inhoud per niveau, prijs, wat Slagio niet is):
 - [Woordspelling: d of t, ei of ij en samenstellingen (Nederlands VMBO)](https://slagio.nl/leren/vmbo/nederlands/woordspelling-d-of-t-ei-of-ij-en-samenstellingen.html): Je schrijft werkwoorden goed met d of t, kiest tussen ei en ij, schrijft samenstellingen aan elkaar en gebruikt hoofdletters op de juiste plaats.
 - [Zinsbouw en leestekens (Nederlands VMBO)](https://slagio.nl/leren/vmbo/nederlands/zinsbouw-en-leestekens.html): Je schrijft hele zinnen met een onderwerp en een persoonsvorm en gebruikt punt, vraagteken, komma, aanhalingstekens en hoofdletters op de goede plek.
 - [Verhaalelementen: personages, tijd, plaats en gebeurtenissen (Nederlands VMBO)](https://slagio.nl/leren/vmbo/nederlands/verhaalelementen-personages-tijd-plaats-en-gebeurtenissen.html): Je herkent in een verhaal de hoofdpersoon en bijpersonages, de plaats en de tijd, de gebeurtenissen en het thema, en je ziet aan gedrag wat voor karakter…
+- [Perspectief: de ik-verteller en de hij- of zij-verteller (Nederlands VMBO)](https://slagio.nl/leren/vmbo/nederlands/perspectief-de-ik-verteller-en-de-hij-of-zij-verteller.html): Je herkent wie het verhaal vertelt, wat de verteller wel en niet weet en welk effect dat op de lezer heeft.
 
 ## Examenvragen in examenstijl (met modelantwoord en puntenverdeling)
 - [Examenvragen Nederlands HAVO](https://slagio.nl/leren/havo/nederlands/examenvragen.html): 11 vragen uit een Slagio-proefexamen
