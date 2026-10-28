@@ -601,6 +601,27 @@ var VAKKEN_VMBO = [
       "nOe": 5,
       "nBeg": 12,
       "hasSam": true
+     },
+     {
+      "id": "E4",
+      "lo": "nl.E.4",
+      "gs": 2,
+      "naam": "Genres herkennen",
+      "beschrijving": "Je herkent een genre aan de kenmerken: detective, sprookje, fabel, sciencefiction, fantasy en realistisch verhaal.",
+      "ceStatus": "SE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Wat is een genre",
+       "Detective en spanning",
+       "Sprookje en fabel",
+       "Sciencefiction en fantasy",
+       "Realistisch verhaal"
+      ],
+      "nSv": 25,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
      }
     ]
    }

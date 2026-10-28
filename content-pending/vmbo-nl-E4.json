@@ -1,0 +1,640 @@
+{
+ "id": "E4",
+ "lo": "nl.E.4",
+ "gs": 2,
+ "naam": "Genres herkennen",
+ "beschrijving": "Je herkent een genre aan de kenmerken: detective, sprookje, fabel, sciencefiction, fantasy en realistisch verhaal.",
+ "ceStatus": "SE",
+ "binas": "",
+ "val": "",
+ "onderwerpen": [
+  "Wat is een genre",
+  "Detective en spanning",
+  "Sprookje en fabel",
+  "Sciencefiction en fantasy",
+  "Realistisch verhaal"
+ ],
+ "sam": "Een genre is een soort verhaal met eigen kenmerken. Een detective lost een misdaad op met aanwijzingen. Een sprookje begint met Er was eens en heeft magie en een goede afloop. Een fabel heeft pratende dieren en een les. Sciencefiction gaat over techniek en de toekomst. Fantasy heeft magie in een verzonnen wereld. Een realistisch verhaal kan echt gebeuren. Je herkent het genre aan tijd, plaats en personages.",
+ "begrippen": [
+  {
+   "t": "Genre",
+   "d": "Een soort verhaal met eigen kenmerken."
+  },
+  {
+   "t": "Kenmerk",
+   "d": "Iets dat bij een genre hoort."
+  },
+  {
+   "t": "Detective",
+   "d": "Een verhaal waarin een misdaad wordt opgelost."
+  },
+  {
+   "t": "Aanwijzing",
+   "d": "Een spoor dat iets zegt over de dader."
+  },
+  {
+   "t": "Sprookje",
+   "d": "Een verzonnen verhaal met magie en goede afloop."
+  },
+  {
+   "t": "Fabel",
+   "d": "Een verhaal met pratende dieren en een les."
+  },
+  {
+   "t": "Sciencefiction",
+   "d": "Een verhaal over techniek en de toekomst."
+  },
+  {
+   "t": "Fantasy",
+   "d": "Een verhaal met magie in een verzonnen wereld."
+  },
+  {
+   "t": "Realistisch verhaal",
+   "d": "Een verhaal dat echt kan gebeuren."
+  },
+  {
+   "t": "Griezelverhaal",
+   "d": "Een verhaal dat je laat schrikken."
+  },
+  {
+   "t": "Setting",
+   "d": "De tijd en de plaats van het verhaal."
+  },
+  {
+   "t": "Les",
+   "d": "Wat je leert van een verhaal."
+  }
+ ],
+ "sv": [
+  {
+   "v": "Wat bedoel je met een genre?",
+   "o": [
+    "de dikte van het boek waarin het verhaal staat",
+    "een soort verhaal met eigen kenmerken",
+    "de naam van de schrijver die het verhaal bedacht",
+    "de plek waar het verhaal in de kast staat"
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 0,
+   "u": "Genre = soort verhaal. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"de dikte van het boek waarin het verhaal staat\"? Dan denk je dat een genre iets met de dikte te maken heeft. Een genre gaat over de soort verhaal, en niet over het boek zelf.",
+    "Klopt: een genre is een groep verhalen die op elkaar lijken.",
+    "Koos je \"de naam van de schrijver die het verhaal bedacht\"? Dan denk je dat een genre de schrijver is. De schrijver is iemand anders, en het genre gaat over het soort verhaal.",
+    "Koos je \"de plek waar het verhaal in de kast staat\"? Dan denk je dat een genre een plek in de kast is. Een winkel sorteert op genre, maar de plek is niet het genre zelf."
+   ],
+   "uh": "Welke soort is het?"
+  },
+  {
+   "v": "Welk genre gaat over een misdaad die iemand moet oplossen?",
+   "o": [
+    "sprookje, met een heks en een prins in een betoverd bos",
+    "sciencefiction, met een ruimteschip en een verre planeet",
+    "fabel, met dieren die praten en een les leren",
+    "detective"
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 1,
+   "u": "Detective = misdaad oplossen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"sprookje, met een heks en een prins in een betoverd...\"? Dan denk je dat dit een sprookje is. Een sprookje heeft magie en een goede afloop, en gaat niet over een misdaad.",
+    "Koos je \"sciencefiction, met een ruimteschip en een verre...\"? Dan denk je dat dit sciencefiction is. Dat gaat over techniek en de toekomst, en niet over een misdaad.",
+    "Koos je \"fabel, met dieren die praten en een les leren\"? Dan denk je dat dit een fabel is. In een fabel praten dieren en leren ze iets, maar er wordt geen misdaad opgelost.",
+    "Klopt: in een detective zoekt iemand aanwijzingen om een misdaad op te lossen."
+   ],
+   "uh": "Wie zoekt aanwijzingen?"
+  },
+  {
+   "v": "Welk genre speelt zich af in de toekomst met techniek en ruimtevaart?",
+   "o": [
+    "sciencefiction",
+    "detective, met een inspecteur die aanwijzingen zoekt",
+    "sprookje, met een koning en een boze heks in het bos",
+    "realistisch verhaal, dat in het gewone leven speelt"
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 3,
+   "u": "Sciencefiction = techniek en toekomst.",
+   "uo": [
+    "Klopt: sciencefiction gaat over techniek, ruimte en de toekomst.",
+    "Koos je \"detective, met een inspecteur die aanwijzingen zoekt\"? Dan denk je dat dit een detective is. Een detective lost een misdaad op, en dat is iets anders dan ruimtevaart.",
+    "Koos je \"sprookje, met een koning en een boze heks in het bos\"? Dan denk je dat dit een sprookje is. Een sprookje begint met \"Er was eens\", en heeft geen ruimteschepen.",
+    "Koos je \"realistisch verhaal, dat in het gewone leven speelt\"? Dan denk je dat dit een realistisch verhaal is. Daarin kan alles echt gebeuren, en ruimtevaart in de toekomst is dat niet."
+   ],
+   "uh": "Welke tijd past erbij?"
+  },
+  {
+   "v": "Welk genre begint vaak met \"Er was eens\" en heeft een heks of een prins?",
+   "o": [
+    "detective, met een inspecteur en een gebroken bril",
+    "sciencefiction, met kapiteins en computers in de ruimte",
+    "sprookje",
+    "realistisch verhaal, over een meisje en haar rapport"
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 2,
+   "u": "Sprookje = Er was eens. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"detective, met een inspecteur en een gebroken bril\"? Dan denk je dat dit een detective is. Een detective speelt in het echte leven met een misdaad, en heeft geen heks of prins.",
+    "Koos je \"sciencefiction, met kapiteins en computers in de...\"? Dan denk je dat dit sciencefiction is. Dat gaat over techniek, en niet over heksen of prinsen.",
+    "Klopt: een sprookje heeft magie, een prins of heks en een goede afloop.",
+    "Koos je \"realistisch verhaal, over een meisje en haar rapport\"? Dan denk je dat dit een realistisch verhaal is. Dat gaat over het gewone leven, en heeft geen magie of heksen."
+   ],
+   "uh": "Welk verhaal begint zo?"
+  },
+  {
+   "v": "Welk genre heeft dieren die praten en een les aan het einde?",
+   "o": [
+    "detective, waarin een inspecteur de dader zoekt",
+    "sciencefiction, waarin technische apparaten een grote rol spelen",
+    "fabel",
+    "realistisch verhaal, waarin alles echt zou kunnen gebeuren"
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 2,
+   "u": "Fabel = dieren + les. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"detective, waarin een inspecteur de dader zoekt\"? Dan denk je dat dit een detective is. In een detective zoek je een dader, en dieren praten daar niet.",
+    "Koos je \"sciencefiction, waarin technische apparaten een...\"? Dan denk je dat dit sciencefiction is. Daar gaat het over techniek en de ruimte, en niet over dieren met een les.",
+    "Klopt: in een fabel praten dieren en leert de lezer iets.",
+    "Koos je \"realistisch verhaal, waarin alles echt zou kunnen...\"? Dan denk je dat dit een realistisch verhaal is. Praten dieren bestaan niet echt, dus het is verzonnen."
+   ],
+   "uh": "Wie praat er?"
+  },
+  {
+   "v": "Hoe herken je een realistisch verhaal?",
+   "o": [
+    "het kan echt gebeuren",
+    "er komen tovenaars en draken in voor",
+    "het speelt zich af op een verre planeet",
+    "er praten dieren met elkaar over een les"
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 4,
+   "u": "Realistisch = kan echt. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: een realistisch verhaal speelt in het gewone leven.",
+    "Koos je \"er komen tovenaars en draken in voor\"? Dan denk je dat tovenaars realistisch zijn. Die bestaan niet echt, dus dat is fantasy.",
+    "Koos je \"het speelt zich af op een verre planeet\"? Dan denk je dat een verre planeet realistisch is. Dat hoort bij sciencefiction, en niet bij het gewone leven.",
+    "Koos je \"er praten dieren met elkaar over een les\"? Dan denk je dat pratende dieren realistisch zijn. Dat hoort bij een fabel, en het kan niet echt."
+   ],
+   "uh": "Kan het echt?"
+  },
+  {
+   "v": "Wat is typisch voor fantasy?",
+   "o": [
+    "een inspecteur met een vergrootglas",
+    "een bus, een school en een rapport",
+    "een ruimtereis met een computer",
+    "magie en verzonnen wezens"
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 3,
+   "u": "Fantasy = magie. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"een inspecteur met een vergrootglas\"? Dan denk je dat dit bij fantasy hoort. Een inspecteur hoort bij een detective, en daar is geen magie.",
+    "Koos je \"een bus, een school en een rapport\"? Dan denk je dat dit bij fantasy hoort. Dat is het gewone leven, en dus een realistisch verhaal.",
+    "Koos je \"een ruimtereis met een computer\"? Dan denk je dat dit bij fantasy hoort. Dat is sciencefiction, want het gaat om techniek.",
+    "Klopt: fantasy speelt zich af in een verzonnen wereld met magie."
+   ],
+   "uh": "Wat is verzonnen?"
+  },
+  {
+   "v": "Welk genre is het fragment over inspecteur De Wit?",
+   "o": [
+    "een sprookje met een heks en een prins",
+    "een detective",
+    "sciencefiction met een ruimteschip",
+    "een fabel met dieren en een les"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 1,
+   "u": "Detective. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"een sprookje met een heks en een prins\"? Dan denk je dat dit een sprookje is. Er is geen heks of betovering, en het speelt zich af in het echt.",
+    "Klopt: een inspecteur zoekt aanwijzingen bij een gestolen kluis.",
+    "Koos je \"sciencefiction met een ruimteschip\"? Dan denk je dat dit sciencefiction is. Er is geen ruimte of computer, maar een kamer met een kluis.",
+    "Koos je \"een fabel met dieren en een les\"? Dan denk je dat dit een fabel is. Er komen geen dieren in voor, en er is geen les."
+   ],
+   "uh": "Welk genre past?",
+   "ctx": "Inspecteur De Wit bukte zich bij het open raam. Op de vensterbank lag een natte schoenafdruk en naast de kluis lag een gebroken bril. \"Niemand verlaat deze kamer,\" zei hij, \"voordat ik weet wie de sieraden heeft gepakt.\""
+  },
+  {
+   "v": "Welke aanwijzing hoort bij een detective in dit fragment?",
+   "o": [
+    "het open raam waardoor de wind in de kamer waait",
+    "de inspecteur zelf, die zich bij het raam bukt",
+    "het feit dat het in een kamer gebeurt",
+    "de natte schoenafdruk"
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 1,
+   "u": "Spoor = aanwijzing. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"het open raam waardoor de wind in de kamer waait\"? Dan denk je dat het raam de aanwijzing is. Het raam is een plaats, maar de afdruk zegt iets over de dader.",
+    "Koos je \"de inspecteur zelf, die zich bij het raam bukt\"? Dan denk je dat de inspecteur een aanwijzing is. Hij zoekt de sporen, maar hij is zelf geen spoor.",
+    "Koos je \"het feit dat het in een kamer gebeurt\"? Dan denk je dat de kamer een aanwijzing is. Het is alleen de plaats, en zegt niets over de dader.",
+    "Klopt: een afdruk is een spoor dat iets zegt over de dader."
+   ],
+   "uh": "Wat wijst naar de dader?",
+   "ctx": "Inspecteur De Wit bukte zich bij het open raam. Op de vensterbank lag een natte schoenafdruk en naast de kluis lag een gebroken bril. \"Niemand verlaat deze kamer,\" zei hij, \"voordat ik weet wie de sieraden heeft gepakt.\""
+  },
+  {
+   "v": "Welk genre is het fragment over de koning en zijn drie dochters?",
+   "o": [
+    "een detective met een misdaad",
+    "een sprookje",
+    "sciencefiction in de ruimte",
+    "een realistisch verhaal over het gewone leven"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 2,
+   "u": "Sprookje. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"een detective met een misdaad\"? Dan denk je dat dit een detective is. Er is geen misdaad die wordt opgelost, maar een betovering.",
+    "Klopt: \"Er was eens\", een heks en een betovering horen bij een sprookje.",
+    "Koos je \"sciencefiction in de ruimte\"? Dan denk je dat dit sciencefiction is. Er is geen techniek of ruimte, maar een bos en een koning.",
+    "Koos je \"een realistisch verhaal over het gewone leven\"? Dan denk je dat dit realistisch is. Een heks en een betovering bestaan niet, dus het is verzonnen."
+   ],
+   "uh": "Welk genre past?",
+   "ctx": "Er was eens een koning die drie dochters had. De jongste wilde de wereld in, maar een boze heks had haar vervloekt. Pas als een prins haar ring terugbracht, zou de betovering verdwijnen. Zo trok de prins het donkere bos in."
+  },
+  {
+   "v": "Welk kenmerk van dit fragment laat zien dat het niet realistisch is?",
+   "o": [
+    "een koning met drie dochters",
+    "een bos waar iemand doorheen loopt",
+    "een heks die een vloek uitspreekt",
+    "een ring die wordt teruggebracht"
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 3,
+   "u": "Magie = niet realistisch. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"een koning met drie dochters\"? Dan denk je dat een koning onmogelijk is. Koningen bestaan, dus dit is niet het bewijs.",
+    "Koos je \"een bos waar iemand doorheen loopt\"? Dan denk je dat een bos niet kan bestaan. Een bos is gewoon echt, dus dit toont niets.",
+    "Klopt: magie bestaat niet in het echte leven.",
+    "Koos je \"een ring die wordt teruggebracht\"? Dan denk je dat de ring bijzonder is. Het is een gewoon voorwerp, en niet magisch zelf."
+   ],
+   "uh": "Wat kan niet echt?",
+   "ctx": "Er was eens een koning die drie dochters had. De jongste wilde de wereld in, maar een boze heks had haar vervloekt. Pas als een prins haar ring terugbracht, zou de betovering verdwijnen. Zo trok de prins het donkere bos in."
+  },
+  {
+   "v": "Welk genre is het fragment over kapitein Ruiz?",
+   "o": [
+    "sciencefiction",
+    "een detective met een misdaad",
+    "een sprookje met een koning en een heks",
+    "een realistisch verhaal over een school"
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 3,
+   "u": "Sciencefiction. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: de ruimte, een computer en het jaar 2480 horen bij sciencefiction.",
+    "Koos je \"een detective met een misdaad\"? Dan denk je dat dit een detective is. Er is geen misdaad, maar een ruimtereis.",
+    "Koos je \"een sprookje met een koning en een heks\"? Dan denk je dat dit een sprookje is. Er is geen heks of koning, maar een ruimteschip.",
+    "Koos je \"een realistisch verhaal over een school\"? Dan denk je dat dit realistisch is. Het speelt in 2480 op een maan, en dat kan nu niet."
+   ],
+   "uh": "Welke tijd en plaats?",
+   "ctx": "In het jaar 2480 landde kapitein Ruiz op de maan Zeta. De computer van het ruimteschip waarschuwde: \"Zuurstof nog voor twee uur.\" Buiten wachtte een groen licht dat bewoog alsof het leefde."
+  },
+  {
+   "v": "Welk detail laat zien dat het fragment over de toekomst gaat?",
+   "o": [
+    "het jaar 2480 en een computer in het ruimteschip",
+    "de kapitein is een man met een naam",
+    "het is donker op de maan Zeta",
+    "er is een waarschuwing die wordt uitgesproken"
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 3,
+   "u": "Techniek + jaartal. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: het jaartal en de technische computer wijzen op de toekomst.",
+    "Koos je \"de kapitein is een man met een naam\"? Dan denk je dat een naam de toekomst laat zien. Een naam kan in elk verhaal staan, en zegt niets over de tijd.",
+    "Koos je \"het is donker op de maan Zeta\"? Dan denk je dat donker de toekomst betekent. Donker kan altijd, en zegt niets over techniek.",
+    "Koos je \"er is een waarschuwing die wordt uitgesproken\"? Dan denk je dat een waarschuwing de toekomst toont. Waarschuwingen horen bij elke tijd, alleen techniek wijst naar de toekomst."
+   ],
+   "uh": "Welke tijd?",
+   "ctx": "In het jaar 2480 landde kapitein Ruiz op de maan Zeta. De computer van het ruimteschip waarschuwde: \"Zuurstof nog voor twee uur.\" Buiten wachtte een groen licht dat bewoog alsof het leefde."
+  },
+  {
+   "v": "Welk genre is het fragment over Lisa en haar rapport?",
+   "o": [
+    "fantasy met magie en draken",
+    "sciencefiction in de ruimte",
+    "een realistisch verhaal",
+    "een sprookje met een heks"
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 4,
+   "u": "Realistisch. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"fantasy met magie en draken\"? Dan denk je dat dit fantasy is. Er is geen magie, en alles kan echt gebeuren.",
+    "Koos je \"sciencefiction in de ruimte\"? Dan denk je dat dit sciencefiction is. Er is geen techniek uit de toekomst, alleen een telefoon van nu.",
+    "Klopt: een bushalte, een telefoon en een rapport horen bij het gewone leven.",
+    "Koos je \"een sprookje met een heks\"? Dan denk je dat dit een sprookje is. Er is geen heks of betovering, en het speelt in het nu."
+   ],
+   "uh": "Kan het echt?",
+   "ctx": "Lisa wachtte bij de bushalte en keek op haar telefoon. Haar rapport zat in haar tas en ze durfde het thuis niet te laten zien. Haar vriendin Noor stootte haar aan: \"Je moet het gewoon vertellen.\""
+  },
+  {
+   "v": "Waaruit blijkt dat het fragment over Lisa een gewone situatie beschrijft?",
+   "o": [
+    "de vriendin houdt een toverstaf in haar hand",
+    "ze zit bij de bushalte",
+    "Lisa vliegt in een raket naar een andere planeet",
+    "er wordt een dier gevonden dat tegen haar kan praten"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 4,
+   "u": "Alledaags = realistisch. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"de vriendin houdt een toverstaf in haar hand\"? Dan denk je dat een toverstaf gewoon is. Die bestaat niet echt, en past dan bij fantasy.",
+    "Klopt: dit zijn alledaagse dingen die echt kunnen gebeuren.",
+    "Koos je \"Lisa vliegt in een raket naar een andere planeet\"? Dan denk je dat dit gewoon is. Vliegen naar een planeet kan niet, en past bij sciencefiction.",
+    "Koos je \"er wordt een dier gevonden dat tegen haar kan praten\"? Dan denk je dat dit gewoon is. Praten dieren bestaan niet echt, en passen bij een fabel."
+   ],
+   "uh": "Wat is gewoon?",
+   "ctx": "Lisa wachtte bij de bushalte en keek op haar telefoon. Haar rapport zat in haar tas en ze durfde het thuis niet te laten zien. Haar vriendin Noor stootte haar aan: \"Je moet het gewoon vertellen.\""
+  },
+  {
+   "v": "Welk genre is het fragment over de vos en de kraai?",
+   "o": [
+    "een detective met een misdaad",
+    "sciencefiction met een ruimteschip",
+    "een realistisch verhaal over een school",
+    "een fabel"
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 2,
+   "u": "Fabel. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"een detective met een misdaad\"? Dan denk je dat dit een detective is. Er wordt niets opgelost, en de dieren praten.",
+    "Koos je \"sciencefiction met een ruimteschip\"? Dan denk je dat dit sciencefiction is. Er is geen techniek, en er is geen toekomst.",
+    "Koos je \"een realistisch verhaal over een school\"? Dan denk je dat dit realistisch is. Praten dieren bestaan niet, dus het is verzonnen.",
+    "Klopt: de dieren praten en je leert een les over vleiers."
+   ],
+   "uh": "Wie praat?",
+   "ctx": "De vos zat bij de put en praatte tegen de kraai. \"Wat heb je een mooie stem,\" zei hij met een glimlach. De kraai, die zo trots was, opende haar snavel en liet het stukje kaas vallen. Vertrouw niet op vleiers, dacht ze later."
+  },
+  {
+   "v": "Welke les trekt de kraai in het fragment?",
+   "o": [
+    "praat altijd met dieren in het bos",
+    "vertrouw geen vleiers",
+    "kaas is gezond om elke dag te eten",
+    "een put is een gevaarlijke plek om bij te zitten"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 2,
+   "u": "Les = vleiers. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"praat altijd met dieren in het bos\"? Dan denk je dat de les is dat je met dieren moet praten. Dat staat nergens, en de les gaat over vleiers.",
+    "Klopt: de vos vleit en de kraai verliest haar kaas.",
+    "Koos je \"kaas is gezond om elke dag te eten\"? Dan denk je dat de les over kaas gaat. Kaas is alleen het voorwerp, en niet de les.",
+    "Koos je \"een put is een gevaarlijke plek om bij te zitten\"? Dan denk je dat de les over een put gaat. De put is alleen de plaats, en niet de les."
+   ],
+   "uh": "Wat leert ze?",
+   "ctx": "De vos zat bij de put en praatte tegen de kraai. \"Wat heb je een mooie stem,\" zei hij met een glimlach. De kraai, die zo trots was, opende haar snavel en liet het stukje kaas vallen. Vertrouw niet op vleiers, dacht ze later."
+  },
+  {
+   "v": "Welke twee kenmerken tonen dat dit een detective is?",
+   "o": [
+    "een misdaad en aanwijzingen op de plek",
+    "een prins en een heks die vechten",
+    "een ruimteschip en een computer",
+    "een dier dat praat en een les leert"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 1,
+   "u": "Misdaad + sporen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: er zijn gestolen sieraden en sporen zoals een schoenafdruk en een bril.",
+    "Koos je \"een prins en een heks die vechten\"? Dan denk je dat een prins en een heks erbij horen. Zulke figuren staan niet in de tekst, want ze passen bij een ander genre.",
+    "Koos je \"een ruimteschip en een computer\"? Dan denk je dat techniek uit de ruimte erbij hoort. Een kamer met een kluis is gewoon het echte leven, dus past dit niet.",
+    "Koos je \"een dier dat praat en een les leert\"? Dan denk je dat pratende dieren erbij horen. Er staat geen dier in de tekst, en het gaat om een misdaad."
+   ],
+   "uh": "Wat zoekt hij?",
+   "ctx": "Inspecteur De Wit bukte zich bij het open raam. Op de vensterbank lag een natte schoenafdruk en naast de kluis lag een gebroken bril. \"Niemand verlaat deze kamer,\" zei hij, \"voordat ik weet wie de sieraden heeft gepakt.\""
+  },
+  {
+   "v": "Hoe zou het sprookje volgens het genre waarschijnlijk aflopen?",
+   "o": [
+    "de prins verdwijnt voor altijd en komt nooit meer terug",
+    "de heks wint en de dochter blijft voor altijd vervloekt",
+    "het verhaal houdt zomaar midden in een zin op",
+    "de betovering verdwijnt en het komt goed"
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 2,
+   "u": "Goede afloop. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"de prins verdwijnt voor altijd en komt nooit meer...\"? Dan denk je dat de prins nooit terugkeert. Zo eindigt bijna geen sprookje, want de goede afloop hoort bij het genre.",
+    "Koos je \"de heks wint en de dochter blijft voor altijd...\"? Dan denk je dat de boze heks het verhaal wint. In een sprookje wint de held bijna altijd, dus dit klopt niet.",
+    "Koos je \"het verhaal houdt zomaar midden in een zin op\"? Dan denk je dat het verhaal ineens afbreekt. Dat past bij een cliffhanger, maar niet bij een sprookje met goede afloop.",
+    "Klopt: in sprookjes eindigt het meestal goed."
+   ],
+   "uh": "Hoe loopt het af?",
+   "ctx": "Er was eens een koning die drie dochters had. De jongste wilde de wereld in, maar een boze heks had haar vervloekt. Pas als een prins haar ring terugbracht, zou de betovering verdwijnen. Zo trok de prins het donkere bos in."
+  },
+  {
+   "v": "Waarom hoort het groene licht in dit fragment bij sciencefiction en niet bij fantasy?",
+   "o": [
+    "het licht is magisch en gemaakt door een tovenaar",
+    "het licht is veel te helder om echt te kunnen zijn",
+    "het past bij ruimtevaart",
+    "het licht komt uit een oud kasteel in het bos"
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 3,
+   "u": "Setting = ruimte. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"het licht is magisch en gemaakt door een tovenaar\"? Dan denk je dat het licht magie is. In het fragment is er geen toverkracht, en de setting is de ruimte.",
+    "Koos je \"het licht is veel te helder om echt te kunnen zijn\"? Dan denk je dat helderheid bepaalt. Dat zegt niets over het genre, alleen de setting telt.",
+    "Klopt: het licht staat in een verhaal over ruimte met een computer.",
+    "Koos je \"het licht komt uit een oud kasteel in het bos\"? Dan denk je dat het licht uit een kasteel komt. Dat staat nergens, en de setting is een maan."
+   ],
+   "uh": "Waar speelt het?",
+   "ctx": "In het jaar 2480 landde kapitein Ruiz op de maan Zeta. De computer van het ruimteschip waarschuwde: \"Zuurstof nog voor twee uur.\" Buiten wachtte een groen licht dat bewoog alsof het leefde."
+  },
+  {
+   "v": "Wat verandert aan het genre als Lisa door een sprekende draak wordt bewaakt?",
+   "o": [
+    "het blijft een realistisch verhaal",
+    "het wordt een detective",
+    "het wordt fantasy",
+    "het wordt sciencefiction"
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 3,
+   "u": "Draak = fantasy. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"het blijft een realistisch verhaal\"? Dan denk je dat het gewoon realistisch blijft. Een draak komt in het echte leven niet voor, dus het genre verandert wel degelijk.",
+    "Koos je \"het wordt een detective\"? Dan denk je dat er een misdaad komt. Een bewaakt rapport is nog geen diefstal, en aanwijzingen zoek je niet.",
+    "Klopt: een sprekende draak is verzonnen en magisch, dus past bij fantasy.",
+    "Koos je \"het wordt sciencefiction\"? Dan denk je dat een draak techniek is. Een draak is een wezen uit verhalen, en sciencefiction vraagt om apparaten of ruimte."
+   ],
+   "uh": "Is een draak echt?",
+   "ctx": "Lisa wachtte bij de bushalte en keek op haar telefoon. Haar rapport zat in haar tas en ze durfde het thuis niet te laten zien. Haar vriendin Noor stootte haar aan: \"Je moet het gewoon vertellen.\""
+  },
+  {
+   "v": "Waarom is het fragment over de vos geen sprookje maar een fabel?",
+   "o": [
+    "er komt een prins in voor",
+    "het begint met \"Er was eens\"",
+    "een heks spreekt een vloek uit",
+    "dieren praten en je leert een les"
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 2,
+   "u": "Fabel: dieren + les. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"er komt een prins in voor\"? Dan denk je dat een prins bij dit fragment hoort. Die komt niet voor, dus dit is geen sprookje.",
+    "Koos je \"het begint met Er was eens\"? Dan denk je dat dit het begin is. Dat staat er niet, en dat zou een sprookje zijn.",
+    "Koos je \"een heks spreekt een vloek uit\"? Dan denk je dat er een heks is. Die komt niet voor, dus het is geen sprookje.",
+    "Klopt: pratende dieren en een les zijn de kenmerken van een fabel, niet van een sprookje."
+   ],
+   "uh": "Wie praat en leert?",
+   "ctx": "De vos zat bij de put en praatte tegen de kraai. \"Wat heb je een mooie stem,\" zei hij met een glimlach. De kraai, die zo trots was, opende haar snavel en liet het stukje kaas vallen. Vertrouw niet op vleiers, dacht ze later."
+  },
+  {
+   "v": "Welk effect heeft de zin \"Niemand verlaat deze kamer\" op de lezer?",
+   "o": [
+    "de lezer wil weten wie het deed",
+    "de lezer vindt het verhaal heel rustig en vredig",
+    "de lezer weet al lang wie het gedaan heeft",
+    "de lezer ziet een ruimteschip landen op de maan"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 4,
+   "u": "Spanning: wie is de dader? Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: de zin bouwt spanning op en je zoekt de dader.",
+    "Koos je \"de lezer vindt het verhaal heel rustig en vredig\"? Dan denk je dat de zin rust geeft. Hij dreigt juist, en maakt nieuwsgierig.",
+    "Koos je \"de lezer weet al lang wie het gedaan heeft\"? Dan denk je dat de dader al bekend is. Dat staat nergens, en dat zou de spanning weghalen.",
+    "Koos je \"de lezer ziet een ruimteschip landen op de maan\"? Dan denk je dat de zin over ruimte gaat. Het is een kamer, en de zin gaat over de dader."
+   ],
+   "uh": "Wat wil je weten?",
+   "ctx": "Inspecteur De Wit bukte zich bij het open raam. Op de vensterbank lag een natte schoenafdruk en naast de kluis lag een gebroken bril. \"Niemand verlaat deze kamer,\" zei hij, \"voordat ik weet wie de sieraden heeft gepakt.\""
+  },
+  {
+   "v": "Welk genre ontstaat als je de maan Zeta vervangt door een kasteel en de computer door een tovenaar?",
+   "o": [
+    "een detective",
+    "fantasy",
+    "een realistisch verhaal",
+    "een fabel"
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 3,
+   "u": "Tovenaar = fantasy. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"een detective\"? Dan denk je dat het een detective wordt. Er is geen misdaad, en een kasteel zegt niets over een dader.",
+    "Klopt: een kasteel en een tovenaar horen bij een verzonnen wereld met magie.",
+    "Koos je \"een realistisch verhaal\"? Dan denk je dat het realistisch wordt. Een tovenaar bestaat niet, dus is het fantasy.",
+    "Koos je \"een fabel\"? Dan denk je dat het een fabel wordt. Er praten geen dieren, en er is geen les."
+   ],
+   "uh": "Welke wereld?",
+   "ctx": "In het jaar 2480 landde kapitein Ruiz op de maan Zeta. De computer van het ruimteschip waarschuwde: \"Zuurstof nog voor twee uur.\" Buiten wachtte een groen licht dat bewoog alsof het leefde."
+  },
+  {
+   "v": "Waarom is het goed voor een schrijver om een realistisch verhaal als dat over Lisa te kiezen?",
+   "o": [
+    "de lezer ziet een heks op een bezem",
+    "de lezer voelt zich in de ruimte rondzweven",
+    "de lezer leert iets van een dier",
+    "de lezer herkent de situatie"
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 0,
+   "u": "Herkenning. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"de lezer ziet een heks op een bezem\"? Dan denk je dat een heks past. Er is geen heks, en dat past niet bij het gewone leven.",
+    "Koos je \"de lezer voelt zich in de ruimte rondzweven\"? Dan denk je dat de ruimte past. Er is geen ruimte, het gaat over een bushalte.",
+    "Koos je \"de lezer leert iets van een dier\"? Dan denk je dat een dier past. Er is geen dier, het gaat over Lisa.",
+    "Klopt: bij het gewone leven voelt de lezer wat Lisa voelt."
+   ],
+   "uh": "Wie herkent zich?",
+   "ctx": "Lisa wachtte bij de bushalte en keek op haar telefoon. Haar rapport zat in haar tas en ze durfde het thuis niet te laten zien. Haar vriendin Noor stootte haar aan: \"Je moet het gewoon vertellen.\""
+  }
+ ],
+ "oe": [
+  {
+   "bron": "Examenstijl",
+   "ctx": "Inspecteur De Wit bukte zich bij het open raam. Op de vensterbank lag een natte schoenafdruk en naast de kluis lag een gebroken bril. \"Niemand verlaat deze kamer,\" zei hij, \"voordat ik weet wie de sieraden heeft gepakt.\"",
+   "v": "Welk genre is dit fragment? Noem twee kenmerken.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Een detective (1p). Een gestolen kluis en een inspecteur (1p), aanwijzingen zoals een schoenafdruk of een bril (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Er was eens een koning die drie dochters had. De jongste wilde de wereld in, maar een boze heks had haar vervloekt. Pas als een prins haar ring terugbracht, zou de betovering verdwijnen. Zo trok de prins het donkere bos in.",
+   "v": "Welk genre is dit fragment en welk kenmerk laat zien dat het niet realistisch is?",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Een sprookje (1p). Een heks met een betovering (1p), of Er was eens (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "In het jaar 2480 landde kapitein Ruiz op de maan Zeta. De computer van het ruimteschip waarschuwde: \"Zuurstof nog voor twee uur.\" Buiten wachtte een groen licht dat bewoog alsof het leefde.",
+   "v": "Waarom is dit sciencefiction en geen fantasy? Noem twee details.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Het jaar 2480 (1p) en een ruimteschip met een computer (1p). Het gaat om techniek, niet om magie (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Lisa wachtte bij de bushalte en keek op haar telefoon. Haar rapport zat in haar tas en ze durfde het thuis niet te laten zien. Haar vriendin Noor stootte haar aan: \"Je moet het gewoon vertellen.\"",
+   "v": "Waaruit blijkt dat dit een realistisch verhaal is?",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Alledaagse dingen zoals een bushalte, een telefoon en een rapport (2p). Alles kan echt gebeuren (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "De vos zat bij de put en praatte tegen de kraai. \"Wat heb je een mooie stem,\" zei hij met een glimlach. De kraai, die zo trots was, opende haar snavel en liet het stukje kaas vallen. Vertrouw niet op vleiers, dacht ze later.",
+   "v": "Waarom is dit een fabel? Noem de les.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Dieren praten (1p) en er is een les (1p): vertrouw niet op vleiers (1p)."
+  }
+ ]
+}
