@@ -1,0 +1,639 @@
+{
+ "id": "E3",
+ "lo": "nl.E.3",
+ "gs": 2,
+ "naam": "Spanning en opbouw van een verhaal",
+ "beschrijving": "Je herkent begin, midden en slot, ziet hoe spanning wordt opgebouwd en weet wat een hoogtepunt, wending en cliffhanger is.",
+ "ceStatus": "SE",
+ "binas": "",
+ "val": "",
+ "onderwerpen": [
+  "Begin, midden en slot",
+  "Spanning opbouwen",
+  "Hoogtepunt en wending",
+  "Het einde van het verhaal",
+  "Spanning herkennen"
+ ],
+ "sam": "Een verhaal heeft een begin, een midden en een slot. In het begin leer je de personages en het probleem kennen. In het midden loopt de spanning op tot het hoogtepunt. Een wending is een onverwachte draai. Aan het slot loopt het verhaal af: een gesloten einde lost alles op, een open einde of cliffhanger laat de lezer wachten. De opbouw bepaalt hoe spannend een verhaal is.",
+ "begrippen": [
+  {
+   "t": "Opbouw",
+   "d": "De volgorde waarin een verhaal is ingedeeld."
+  },
+  {
+   "t": "Begin",
+   "d": "Het eerste deel waarin het probleem wordt voorgesteld."
+  },
+  {
+   "t": "Middenstuk",
+   "d": "Het deel waarin de spanning oploopt."
+  },
+  {
+   "t": "Slot",
+   "d": "Het laatste deel waarin het verhaal afloopt."
+  },
+  {
+   "t": "Spanning",
+   "d": "Het gevoel dat je wilt weten hoe het afloopt."
+  },
+  {
+   "t": "Hoogtepunt",
+   "d": "Het moment waarop de spanning het grootst is."
+  },
+  {
+   "t": "Wending",
+   "d": "Een onverwachte draai in het verhaal."
+  },
+  {
+   "t": "Cliffhanger",
+   "d": "Een spannend einde dat laat wachten op het vervolg."
+  },
+  {
+   "t": "Open einde",
+   "d": "Een einde waarbij de afloop onduidelijk blijft."
+  },
+  {
+   "t": "Gesloten einde",
+   "d": "Een einde waarbij alles is opgelost."
+  },
+  {
+   "t": "Probleem",
+   "d": "Een moeilijkheid waar het verhaal om draait."
+  },
+  {
+   "t": "Dreiging",
+   "d": "Een gevaar dat de spanning laat groeien."
+  }
+ ],
+ "sv": [
+  {
+   "v": "Wat bedoel je met de opbouw van een verhaal?",
+   "o": [
+    "het aantal bladzijden dat het boek telt",
+    "de volgorde van begin, midden en slot",
+    "de bladzijde waarop het verhaal begint in het boek",
+    "de namen van alle personages die voorkomen"
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 0,
+   "u": "Opbouw = begin, midden, slot. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"het aantal bladzijden dat het boek telt\"? Dan denk je dat de opbouw het aantal bladzijden is. Opbouw gaat over de indeling, en niet over de dikte van het boek.",
+    "Klopt: de opbouw laat zien hoe de delen van het verhaal op elkaar volgen.",
+    "Koos je \"de bladzijde waarop het verhaal begint in het boek\"? Dan denk je dat opbouw het beginnen op een bladzijde is. Het gaat om de delen van het verhaal, en niet om het nummer van een pagina.",
+    "Koos je \"de namen van alle personages die voorkomen\"? Dan denk je dat de opbouw de namenlijst is. De personages horen erbij, maar de opbouw gaat over de volgorde."
+   ],
+   "uh": "Welke delen heeft een verhaal?"
+  },
+  {
+   "v": "Wat gebeurt er meestal in het begin van een verhaal?",
+   "o": [
+    "het probleem wordt voorgoed opgelost voor iedereen",
+    "de spanning bereikt meteen haar allerhoogste punt",
+    "de schrijver vertelt wat de lezer hierna moet doen",
+    "je leert de personages kennen"
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 0,
+   "u": "Begin = situatie. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"het probleem wordt voorgoed opgelost voor iedereen\"? Dan denk je dat het probleem hier al is opgelost. Dat gebeurt aan het slot, en niet in het begin van het verhaal.",
+    "Koos je \"de spanning bereikt meteen haar allerhoogste punt\"? Dan denk je dat het hoogtepunt al in het begin komt. Dat komt later in het midden, na de opbouw van de spanning.",
+    "Koos je \"de schrijver vertelt wat de lezer hierna moet doen\"? Dan denk je dat een verhaal opdrachten geeft. Het begin laat alleen de situatie zien, en geen opdrachten voor de lezer.",
+    "Klopt: in het begin leer je wie er zijn, waar het speelt en wat er speelt."
+   ],
+   "uh": "Wat maak je als eerste mee?"
+  },
+  {
+   "v": "Welk gevoel hoort bij spanning in een verhaal?",
+   "o": [
+    "je wilt weten hoe het afloopt",
+    "je vindt het verhaal heel erg saai en lang",
+    "je kent de afloop van het verhaal al helemaal",
+    "je zit in een boek met veel plaatjes en kleuren"
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 1,
+   "u": "Spanning = willen weten. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: bij spanning lees je door omdat je de afloop wilt weten.",
+    "Koos je \"je vindt het verhaal heel erg saai en lang\"? Dan denk je dat spanning saai is. Bij spanning wil je juist verder lezen, en dat is het tegenovergestelde van saai.",
+    "Koos je \"je kent de afloop van het verhaal al helemaal\"? Dan denk je dat spanning betekent dat je alles weet. Bij spanning weet je het niet, en dat zorgt voor de prikkel.",
+    "Koos je \"je zit in een boek met veel plaatjes en kleuren\"? Dan denk je dat spanning met plaatjes te maken heeft. Spanning komt uit het verhaal zelf, en niet uit de opmaak."
+   ],
+   "uh": "Waarom lees je door?"
+  },
+  {
+   "v": "Hoe noem je het moment waarop het verhaal het spannendst is?",
+   "o": [
+    "de eerste zin waarmee het verhaal begint",
+    "de laatste zin waarmee het verhaal eindigt",
+    "de top van de spanning",
+    "de titel die bovenaan het verhaal staat"
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 2,
+   "u": "Hoogtepunt = top van de spanning.",
+   "uo": [
+    "Koos je \"de eerste zin waarmee het verhaal begint\"? Dan denk je dat het hoogtepunt de eerste zin is. Die staat in het begin, en dan is de spanning nog laag.",
+    "Koos je \"de laatste zin waarmee het verhaal eindigt\"? Dan denk je dat het hoogtepunt aan het einde staat. Het hoogtepunt komt vaak daarvoor, en daarna volgt het slot.",
+    "Klopt: op het hoogtepunt bereikt de spanning haar top.",
+    "Koos je \"de titel die bovenaan het verhaal staat\"? Dan denk je dat de titel het hoogtepunt is. De titel hoort niet bij het verloop, maar is alleen de naam."
+   ],
+   "uh": "Waar is het het spannendst?"
+  },
+  {
+   "v": "Hoe noem je een onverwachte gebeurtenis die het verhaal van richting doet veranderen?",
+   "o": [
+    "een plek waar het verhaal speelt in een stad",
+    "een zin die door de verteller wordt herhaald",
+    "een onverwachte draai in het verhaal",
+    "een personage dat tegen de hoofdpersoon vecht"
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 2,
+   "u": "Wending = onverwachte draai. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"een plek waar het verhaal speelt in een stad\"? Dan denk je dat een wending een plek is. Dat is het decor, en een wending is juist een gebeurtenis.",
+    "Koos je \"een zin die door de verteller wordt herhaald\"? Dan denk je dat een wending een herhaling is. Herhalen is iets anders, want een wending verandert de richting.",
+    "Klopt: bij een wending loopt het anders dan je verwachtte.",
+    "Koos je \"een personage dat tegen de hoofdpersoon vecht\"? Dan denk je dat een wending een tegenstander is. Dat is een personage, en geen gebeurtenis in het verhaal."
+   ],
+   "uh": "Wat loopt anders?"
+  },
+  {
+   "v": "Welk soort einde laat je achter met een spannende vraag zonder antwoord?",
+   "o": [
+    "een einde dat je laat wachten op het vervolg",
+    "een verhaal dat altijd eindigt met een feest",
+    "een verhaal dat gaat over het beklimmen van rotsen",
+    "een verhaal dat begint met een heel lang verhaal"
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 3,
+   "u": "Cliffhanger = spannend afbreken.",
+   "uo": [
+    "Klopt: bij een cliffhanger breekt het verhaal af op een spannend moment.",
+    "Koos je \"een verhaal dat altijd eindigt met een feest\"? Dan denk je dat een cliffhanger vrolijk eindigt. Een cliffhanger laat de vraag open, en lost niets vrolijk op.",
+    "Koos je \"een verhaal dat gaat over het beklimmen van rotsen\"? Dan denk je dat een cliffhanger over een klif gaat. De naam komt daarvan, maar het gaat om het afbreken op een spannend moment.",
+    "Koos je \"een verhaal dat begint met een heel lang verhaal\"? Dan denk je dat een cliffhanger een begin is. Het is juist een slot, en het hangt aan het einde."
+   ],
+   "uh": "Wat blijft er open?"
+  },
+  {
+   "v": "Hoe heet een einde waarbij alle problemen zijn opgelost?",
+   "o": [
+    "de lezer moet zelf bedenken hoe het afloopt",
+    "het verhaal stopt midden in een zin",
+    "het verhaal begint opnieuw aan het eind",
+    "alles is opgelost"
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 3,
+   "u": "Gesloten = alles duidelijk. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"de lezer moet zelf bedenken hoe het afloopt\"? Dan denk je dat dit een gesloten einde is. Dat is juist een open einde, waarbij de afloop onduidelijk blijft.",
+    "Koos je \"het verhaal stopt midden in een zin\"? Dan denk je dat een gesloten einde midden in een zin stopt. Een einde is een afgerond slot, en geen afgebroken zin.",
+    "Koos je \"het verhaal begint opnieuw aan het eind\"? Dan denk je dat een gesloten einde weer van voren begint. Dat is een kringverhaal, en geen gesloten einde.",
+    "Klopt: bij een gesloten einde weet je hoe het afloopt."
+   ],
+   "uh": "Weet je hoe het afloopt?"
+  },
+  {
+   "v": "Hoe heet een einde waarbij de schrijver de afloop aan de lezer overlaat?",
+   "o": [
+    "het probleem is opgelost en alles is duidelijk",
+    "de lezer moet zelf bedenken hoe het afloopt",
+    "het verhaal heeft geen begin en geen midden",
+    "het verhaal is te lang om te lezen"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 3,
+   "u": "Open = afloop onduidelijk. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"het probleem is opgelost en alles is duidelijk\"? Dan denk je dat dit een open einde is. Dat is juist een gesloten einde, waarbij alle vragen zijn beantwoord.",
+    "Klopt: bij een open einde blijft de afloop onduidelijk.",
+    "Koos je \"het verhaal heeft geen begin en geen midden\"? Dan denk je dat een open einde alles weglaat. Een open einde gaat alleen over het slot, en het verhaal heeft wel een begin.",
+    "Koos je \"het verhaal is te lang om te lezen\"? Dan denk je dat een open einde een te lang verhaal is. De lengte maakt een einde niet open, het gaat om de afloop."
+   ],
+   "uh": "Wie bedenkt de afloop?"
+  },
+  {
+   "v": "Welk deel van het verhaal is dit fragment over Sanne?",
+   "o": [
+    "het hoogtepunt, waar de spanning het grootst is",
+    "het slot, waar alles is opgelost",
+    "een wending, waarin alles anders wordt",
+    "het begin, met een eerste probleem"
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 0,
+   "u": "Begin: probleem. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"het hoogtepunt, waar de spanning het grootst is\"? Dan denk je dat dit de top is. Er gebeurt nog weinig spannends, en het probleem is nog nieuw.",
+    "Koos je \"het slot, waar alles is opgelost\"? Dan denk je dat dit het einde is. Het probleem begint hier pas, en het is nog niet opgelost.",
+    "Koos je \"een wending, waarin alles anders wordt\"? Dan denk je dat dit een wending is. Er is geen ommekeer, alleen een eerste probleem.",
+    "Klopt: je leert Sanne en de school kennen en je krijgt een eerste probleem."
+   ],
+   "uh": "Welk deel is dit?",
+   "ctx": "Het was de eerste schooldag na de zomer. Sanne liep het plein op en zocht haar vriendinnen. Maar de bankjes waren leeg en de deuren zaten op slot. Op het bord bij de ingang hing een briefje: \"De school is verhuisd naar de Dorpsstraat.\""
+  },
+  {
+   "v": "Welk probleem krijgt Sanne in dit fragment?",
+   "o": [
+    "haar vriendinnen willen niet meer met haar praten",
+    "de school is verhuisd en niemand is er",
+    "ze is te laat voor de eerste les op school",
+    "ze heeft haar boeken thuis laten liggen"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 1,
+   "u": "Probleem: school verhuisd. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"haar vriendinnen willen niet meer met haar praten\"? Dan denk je dat Sanne ruzie heeft. Daar staat niets over in de tekst, het probleem is de lege school.",
+    "Klopt: de bankjes zijn leeg en het briefje meldt de verhuizing.",
+    "Koos je \"ze is te laat voor de eerste les op school\"? Dan denk je dat Sanne te laat is. Ze staat op tijd op het plein, maar de school is verhuisd.",
+    "Koos je \"ze heeft haar boeken thuis laten liggen\"? Dan denk je dat Sanne iets vergeten is. Er wordt niets over boeken gezegd, en het probleem zit in de verhuizing."
+   ],
+   "uh": "Wat is er mis?",
+   "ctx": "Het was de eerste schooldag na de zomer. Sanne liep het plein op en zocht haar vriendinnen. Maar de bankjes waren leeg en de deuren zaten op slot. Op het bord bij de ingang hing een briefje: \"De school is verhuisd naar de Dorpsstraat.\""
+  },
+  {
+   "v": "Hoe maakt de schrijver dit fragment over Jelle spannend?",
+   "o": [
+    "Jelle is een jongen met een helm op en hij is erg sterk",
+    "de verteller legt rustig uit hoe het klimmen precies werkt",
+    "Jelle hangt boven de diepte en het steen breekt",
+    "de lezer weet precies hoe het hele verhaal afloopt"
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 2,
+   "u": "Gevaar + geluid. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"Jelle is een jongen met een helm op en hij is erg...\"? Dan denk je dat een helm de spanning maakt. Dat staat nergens, en spanning komt van gevaar.",
+    "Koos je \"de verteller legt rustig uit hoe het klimmen...\"? Dan denk je dat uitleg spanning geeft. Uitleg maakt het verhaal juist rustiger, en niet spannender.",
+    "Klopt: gevaar en geluid maken je bang dat hij valt.",
+    "Koos je \"de lezer weet precies hoe het hele verhaal afloopt\"? Dan denk je dat de afloop bekend is. Dat is niet zo, en daarom is er spanning."
+   ],
+   "uh": "Wat maakt het spannend?",
+   "ctx": "Het touw begon te trillen. Jelle klemde zijn vingers om de rots, zijn voeten hingen boven de diepte. Onder hem klonk het geluid van brekend steen. Hij keek omhoog: de laatste meters leken verder weg dan ooit."
+  },
+  {
+   "v": "Welk woord of welke zin versterkt de spanning in dit fragment het meest?",
+   "o": [
+    "\"verder weg dan ooit\"",
+    "\"Het touw begon te trillen.\" Dit versterkt het meest.",
+    "\"Jelle klemde zijn vingers om de rots.\" Dit versterkt het meest.",
+    "\"Hij keek omhoog.\" Dit versterkt het meest."
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 1,
+   "u": "Gevaar groeit. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: de zin laat zien dat Jelle in moeilijkheden zit en nog ver is.",
+    "Koos je \"Het touw begon te trillen. Dit versterkt het meest.\"? Dan denk je dat deze zin de grootste spanning geeft. Het begin van de spanning, maar de laatste zin versterkt dat meer.",
+    "Koos je \"Jelle klemde zijn vingers om de rots. Dit versterkt...\"? Dan denk je dat deze zin de grootste spanning geeft. Het toont inspanning, maar geeft nog geen groot gevaar.",
+    "Koos je \"Hij keek omhoog. Dit versterkt het meest.\"? Dan denk je dat deze zin de grootste spanning geeft. Het is een gewone handeling, en geen toename van gevaar."
+   ],
+   "uh": "Welke zin groeit het meest?",
+   "ctx": "Het touw begon te trillen. Jelle klemde zijn vingers om de rots, zijn voeten hingen boven de diepte. Onder hem klonk het geluid van brekend steen. Hij keek omhoog: de laatste meters leken verder weg dan ooit."
+  },
+  {
+   "v": "Wat is de wending in dit fragment over Mila?",
+   "o": [
+    "achter de deur staat haar oma",
+    "Mila steekt de sleutel in het slot van de deur heen",
+    "Mila hoort voetstappen op de gang buiten de deur",
+    "de tas is eerder verdwenen uit het huis van haar oma"
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 2,
+   "u": "Wending = oma, geen dief. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: Mila verwachtte een dief, maar het is haar oma.",
+    "Koos je \"Mila steekt de sleutel in het slot van de deur heen\"? Dan denk je dat het sleutelgebruik de wending is. Dat is gewoon een handeling, en niet de verrassing.",
+    "Koos je \"Mila hoort voetstappen op de gang buiten de deur\"? Dan denk je dat het horen van voetstappen de wending is. Dat bouwt spanning op, en is nog geen draai.",
+    "Koos je \"de tas is eerder verdwenen uit het huis van haar oma\"? Dan denk je dat het verdwijnen van de tas de wending is. Dat is de aanleiding, en geen verrassing aan het einde."
+   ],
+   "uh": "Wat is de verrassing?",
+   "ctx": "Mila had de sleutel net in het slot gestoken toen ze voetstappen hoorde. De deur zwaaide open. Het was niet de dief die ze verwachtte, maar haar oma, met de verdwenen tas in haar handen en een brede lach op haar gezicht."
+  },
+  {
+   "v": "In welk deel van het verhaal past het fragment over Mila het best?",
+   "o": [
+    "in het begin, waar de personages worden voorgesteld",
+    "in het slot, waar alles is afgerond",
+    "op het hoogtepunt, met een verrassende draai",
+    "in de titel van het verhaal bovenaan"
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 0,
+   "u": "Hoogtepunt + wending. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"in het begin, waar de personages worden voorgesteld\"? Dan denk je dat dit het begin is. Hier komen geen nieuwe personages bij, en de spanning loopt al.",
+    "Koos je \"in het slot, waar alles is afgerond\"? Dan denk je dat dit het slot is. Het slot volgt nog, en dit is het moment van de verrassing.",
+    "Klopt: de spanning loopt op en dan komt een onverwachte ontknoping.",
+    "Koos je \"in de titel van het verhaal bovenaan\"? Dan denk je dat dit de titel is. Een titel staat los van het verloop, en is veel korter."
+   ],
+   "uh": "Waar past het?",
+   "ctx": "Mila had de sleutel net in het slot gestoken toen ze voetstappen hoorde. De deur zwaaide open. Het was niet de dief die ze verwachtte, maar haar oma, met de verdwenen tas in haar handen en een brede lach op haar gezicht."
+  },
+  {
+   "v": "Waarom is het fragment over Noor een cliffhanger?",
+   "o": [
+    "Noor vertelt dat alles goed is afgelopen met haar",
+    "het stopt voordat je weet wat er staat",
+    "er wordt precies uitgelegd wie de afzender van de brief is",
+    "de verteller weet het zelf ook niet"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 3,
+   "u": "Cliffhanger = open eindigen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"Noor vertelt dat alles goed is afgelopen met haar\"? Dan denk je dat het fragment gelukkig eindigt. Er is niets opgelost, en juist daarom is het spannend.",
+    "Klopt: de lezer weet niet wat Noor ziet en wil verder lezen.",
+    "Koos je \"er wordt precies uitgelegd wie de afzender van de...\"? Dan denk je dat de afzender wordt verklaard. Dat wordt niet gezegd, en de lezer blijft in het ongewisse.",
+    "Koos je \"de verteller weet het zelf ook niet\"? Dan denk je dat de verteller onwetend is. Hij laat bewust open, en dat is een keuze van de schrijver."
+   ],
+   "uh": "Wat weet je niet?",
+   "ctx": "Ze opende de brief met trillende handen. Er stond maar één zin in: \"Kijk achter je.\" Langzaam draaide Noor haar hoofd om, terwijl ze hoorde dat de vloer kraakte."
+  },
+  {
+   "v": "Welke zin geeft de meeste spanning in het fragment over Noor?",
+   "o": [
+    "\"Ze opende de brief met trillende handen.\"",
+    "\"Er stond maar één zin in.\"",
+    "\"Langzaam draaide Noor haar hoofd om.\"",
+    "\"Kijk achter je.\""
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 4,
+   "u": "Dreiging = Kijk achter je. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"Ze opende de brief met trillende handen.\"? Dan denk je dat deze zin de grootste spanning geeft. Hij bereidt voor, maar het dreigende komt daarna.",
+    "Koos je \"Er stond maar één zin in.\"? Dan denk je dat deze zin de grootste spanning geeft. Het is een mededeling, en nog geen dreiging.",
+    "Koos je \"Langzaam draaide Noor haar hoofd om.\"? Dan denk je dat deze zin de grootste spanning geeft. Dit is de reactie op de dreiging, en niet de dreiging zelf.",
+    "Klopt: dit is een dreigende boodschap en je weet niet wie hem schreef."
+   ],
+   "uh": "Welke zin dreigt?",
+   "ctx": "Ze opende de brief met trillende handen. Er stond maar één zin in: \"Kijk achter je.\" Langzaam draaide Noor haar hoofd om, terwijl ze hoorde dat de vloer kraakte."
+  },
+  {
+   "v": "Welk soort einde heeft het fragment over het team van Bas?",
+   "o": [
+    "een open einde met een onopgelost probleem",
+    "een gesloten einde",
+    "een cliffhanger met een spannende vraag",
+    "een wending met een nieuwe draai"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 3,
+   "u": "Gesloten = afgerond. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"een open einde met een onopgelost probleem\"? Dan denk je dat het probleem nog openstaat. De ruzie is voorbij, dus er is niets meer open.",
+    "Klopt: het probleem is opgelost en alles is duidelijk.",
+    "Koos je \"een cliffhanger met een spannende vraag\"? Dan denk je dat het fragment een spannende vraag stelt. Het is juist rustig, en er is geen vraag.",
+    "Koos je \"een wending met een nieuwe draai\"? Dan denk je dat het een nieuwe wending is. Er gebeurt niets onverwachts, en alles is afgerond."
+   ],
+   "uh": "Is alles opgelost?",
+   "ctx": "Na de wedstrijd stonden ze allemaal samen op het veld. De beker stond op de middenstip en Bas lachte naar zijn teamgenoten. Het ruzie was voorbij en de volgende training zouden ze gewoon weer samen beginnen."
+  },
+  {
+   "v": "Welk deel van het verhaal is het fragment over Bas?",
+   "o": [
+    "het slot",
+    "het begin van het verhaal over het team",
+    "het hoogtepunt van het verhaal over het team",
+    "een wending in het midden van het verhaal"
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 0,
+   "u": "Slot = afronding. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: de ruzie is voorbij, het verhaal rondt af.",
+    "Koos je \"het begin van het verhaal over het team\"? Dan denk je dat dit het begin is. Hier staat al een beker op het veld, en het probleem is al voorbij.",
+    "Koos je \"het hoogtepunt van het verhaal over het team\"? Dan denk je dat dit de top van de spanning is. De spanning is hier juist weg, en het is rustig geworden.",
+    "Koos je \"een wending in het midden van het verhaal\"? Dan denk je dat dit een wending is. Er is hier geen verrassing, alleen een afsluiting."
+   ],
+   "uh": "Waar zit je?",
+   "ctx": "Na de wedstrijd stonden ze allemaal samen op het veld. De beker stond op de middenstip en Bas lachte naar zijn teamgenoten. Het ruzie was voorbij en de volgende training zouden ze gewoon weer samen beginnen."
+  },
+  {
+   "v": "Hoe zou de schrijver de spanning in het fragment over Sanne kunnen vergroten?",
+   "o": [
+    "door alle bankjes op het plein uitgebreid en rustig te beschrijven",
+    "door te vertellen dat het schoolreisje van vorig jaar is afgelopen",
+    "door de naam van de school in het verhaal te veranderen",
+    "door haar een bericht te laten krijgen over vermiste vriendinnen"
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 1,
+   "u": "Nieuw probleem = meer spanning.",
+   "uo": [
+    "Koos je \"door alle bankjes op het plein uitgebreid en rustig...\"? Dan denk je dat een lange beschrijving spanning geeft. Beschrijven vertraagt het verhaal, en geeft juist minder spanning.",
+    "Koos je \"door te vertellen dat het schoolreisje van vorig...\"? Dan denk je dat een afgelopen reisje spanning geeft. Het geeft geen nieuw probleem, en voegt niets toe.",
+    "Koos je \"door de naam van de school in het verhaal te...\"? Dan denk je dat een nieuwe naam spanning geeft. Een naam verandert niets aan het gevaar, en de lezer blijft rustig.",
+    "Klopt: een dreigend nieuw probleem verhoogt de spanning."
+   ],
+   "uh": "Wat versterkt?",
+   "ctx": "Het was de eerste schooldag na de zomer. Sanne liep het plein op en zocht haar vriendinnen. Maar de bankjes waren leeg en de deuren zaten op slot. Op het bord bij de ingang hing een briefje: \"De school is verhuisd naar de Dorpsstraat.\""
+  },
+  {
+   "v": "Wat verandert er aan de spanning als de schrijver het touw laat breken?",
+   "o": [
+    "de spanning verdwijnt volledig uit het verhaal",
+    "het verhaal gaat over iets heel anders",
+    "de spanning bereikt een hoogtepunt",
+    "de lezer weet nu al hoe het afloopt"
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 4,
+   "u": "Breuk = hoogtepunt. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"de spanning verdwijnt volledig uit het verhaal\"? Dan denk je dat de spanning verdwijnt. Een breuk maakt het juist erger, en dat versterkt de spanning.",
+    "Koos je \"het verhaal gaat over iets heel anders\"? Dan denk je dat het verhaal een ander onderwerp krijgt. Het blijft over Jelle gaan, en de spanning wordt groter.",
+    "Klopt: een breuk is een gevaar dat de spanning opstuwt tot de top.",
+    "Koos je \"de lezer weet nu al hoe het afloopt\"? Dan denk je dat de afloop duidelijk is. Dat blijft onbekend, en daarom neemt de spanning toe."
+   ],
+   "uh": "Wat gebeurt met de spanning?",
+   "ctx": "Het touw begon te trillen. Jelle klemde zijn vingers om de rots, zijn voeten hingen boven de diepte. Onder hem klonk het geluid van brekend steen. Hij keek omhoog: de laatste meters leken verder weg dan ooit."
+  },
+  {
+   "v": "Waarom werkt de wending in het fragment over Mila goed?",
+   "o": [
+    "de lezer wist al helemaal dat het haar oma was",
+    "de lezer vindt het fragment erg lang en uitgebreid",
+    "verwachting en uitkomst verschillen",
+    "de lezer leest alleen maar beschrijvingen van de plaats"
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 2,
+   "u": "Verwachting klopt niet. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"de lezer wist al helemaal dat het haar oma was\"? Dan denk je dat de lezer het al wist. Dan was het geen verrassing, en dus geen wending.",
+    "Koos je \"de lezer vindt het fragment erg lang en uitgebreid\"? Dan denk je dat de lengte de wending maakt. De lengte doet niets met een verrassing, het gaat om de afloop.",
+    "Klopt: de kloof tussen verwachting en uitkomst maakt de wending sterk.",
+    "Koos je \"de lezer leest alleen maar beschrijvingen van de...\"? Dan denk je dat beschrijvingen een wending maken. Een wending is een gebeurtenis, en geen beschrijving."
+   ],
+   "uh": "Waarom verrast het?",
+   "ctx": "Mila had de sleutel net in het slot gestoken toen ze voetstappen hoorde. De deur zwaaide open. Het was niet de dief die ze verwachtte, maar haar oma, met de verdwenen tas in haar handen en een brede lach op haar gezicht."
+  },
+  {
+   "v": "Welk effect heeft de cliffhanger in het fragment over Noor op de lezer?",
+   "o": [
+    "de lezer legt het boek tevreden en klaar weg",
+    "de lezer vergeet het hele verhaal meteen weer",
+    "de lezer weet nu alles over de afzender",
+    "de lezer wil verder lezen"
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 3,
+   "u": "Wil verder lezen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"de lezer legt het boek tevreden en klaar weg\"? Dan denk je dat de lezer tevreden is. Er is geen afsluiting, en dat houdt de lezer bezig.",
+    "Koos je \"de lezer vergeet het hele verhaal meteen weer\"? Dan denk je dat de lezer het verhaal vergeet. De spanning blijft hangen, en dat zorgt voor onthouden.",
+    "Koos je \"de lezer weet nu alles over de afzender\"? Dan denk je dat de afzender bekend is. Dat blijft verborgen, en dat is juist het effect.",
+    "Klopt: een open vraag trekt de lezer naar het volgende deel."
+   ],
+   "uh": "Wat doet de lezer?",
+   "ctx": "Ze opende de brief met trillende handen. Er stond maar één zin in: \"Kijk achter je.\" Langzaam draaide Noor haar hoofd om, terwijl ze hoorde dat de vloer kraakte."
+  },
+  {
+   "v": "Waarom is er in dit fragment over Bas weinig spanning?",
+   "o": [
+    "het probleem is al opgelost",
+    "de lezer weet dat er iets ergs gaat gebeuren hierna",
+    "het fragment bevat een groot geheim voor iedereen",
+    "het fragment eindigt midden in een lange zin"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 4,
+   "u": "Geen probleem = geen spanning.",
+   "uo": [
+    "Klopt: zonder probleem of dreiging is er geen spanning.",
+    "Koos je \"de lezer weet dat er iets ergs gaat gebeuren hierna\"? Dan denk je dat er gevaar dreigt. Daar staat niets over, en de ruzie is voorbij.",
+    "Koos je \"het fragment bevat een groot geheim voor iedereen\"? Dan denk je dat er een geheim is. Er is niets verborgen, en alles is afgerond.",
+    "Koos je \"het fragment eindigt midden in een lange zin\"? Dan denk je dat het fragment onderbroken wordt. Het eindigt rustig, met een afgeronde zin."
+   ],
+   "uh": "Wat ontbreekt?",
+   "ctx": "Na de wedstrijd stonden ze allemaal samen op het veld. De beker stond op de middenstip en Bas lachte naar zijn teamgenoten. Het ruzie was voorbij en de volgende training zouden ze gewoon weer samen beginnen."
+  },
+  {
+   "v": "Wat zou de schrijver in het vervolg op dit begin verwachten te vertellen?",
+   "o": [
+    "dat Sanne naar huis gaat en nooit terugkomt",
+    "hoe Sanne de nieuwe school vindt en wat daar gebeurt",
+    "hoe het is afgelopen met haar vriendinnen",
+    "wat de schrijver van het verhaal vindt"
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 0,
+   "u": "Midden = zoeken. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"dat Sanne naar huis gaat en nooit terugkomt\"? Dan denk je dat het verhaal meteen eindigt. Het begin is nog maar een start, en het slot komt veel later.",
+    "Klopt: uit het begin volgt het midden met de zoektocht naar een oplossing.",
+    "Koos je \"hoe het is afgelopen met haar vriendinnen\"? Dan denk je dat het slot al komt. Het midden volgt eerst, met het zoeken en het oplossen.",
+    "Koos je \"wat de schrijver van het verhaal vindt\"? Dan denk je dat de schrijver zelf optreedt. Het verhaal gaat over Sanne, en niet over de schrijver."
+   ],
+   "uh": "Wat volgt na het begin?",
+   "ctx": "Het was de eerste schooldag na de zomer. Sanne liep het plein op en zocht haar vriendinnen. Maar de bankjes waren leeg en de deuren zaten op slot. Op het bord bij de ingang hing een briefje: \"De school is verhuisd naar de Dorpsstraat.\""
+  },
+  {
+   "v": "Welke volgorde van spanning past bij het fragment over Jelle?",
+   "o": [
+    "eerst de top, daarna rust, daarna weer gevaar",
+    "er is alleen maar rust zonder enige dreiging",
+    "er gebeurt niets bijzonders in het hele fragment",
+    "het gevaar groeit tot een top"
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 1,
+   "u": "Opbouw naar top. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"eerst de top, daarna rust, daarna weer gevaar\"? Dan denk je dat de spanning eerst piekt. De opbouw gaat andersom, en eindigt op het hoogtepunt.",
+    "Koos je \"er is alleen maar rust zonder enige dreiging\"? Dan denk je dat het fragment rustig is. Het gaat over een gevaarlijke klim, en dat is niet rustig.",
+    "Koos je \"er gebeurt niets bijzonders in het hele fragment\"? Dan denk je dat er niets gebeurt. Er klinkt een breuk, en het gevaar neemt toe.",
+    "Klopt: de spanning loopt op naar het hoogtepunt."
+   ],
+   "uh": "Hoe loopt het?",
+   "ctx": "Het touw begon te trillen. Jelle klemde zijn vingers om de rots, zijn voeten hingen boven de diepte. Onder hem klonk het geluid van brekend steen. Hij keek omhoog: de laatste meters leken verder weg dan ooit."
+  }
+ ],
+ "oe": [
+  {
+   "bron": "Examenstijl",
+   "ctx": "Het was de eerste schooldag na de zomer. Sanne liep het plein op en zocht haar vriendinnen. Maar de bankjes waren leeg en de deuren zaten op slot. Op het bord bij de ingang hing een briefje: \"De school is verhuisd naar de Dorpsstraat.\"",
+   "v": "Welk deel van het verhaal is dit fragment en welk probleem krijgt Sanne?",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Het begin (1p). De school is verhuisd en de bankjes zijn leeg (2p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Het touw begon te trillen. Jelle klemde zijn vingers om de rots, zijn voeten hingen boven de diepte. Onder hem klonk het geluid van brekend steen. Hij keek omhoog: de laatste meters leken verder weg dan ooit.",
+   "v": "Noem twee dingen waaruit de spanning in dit fragment bestaat.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Jelle hangt boven de diepte (1p). Het geluid van brekend steen (1p), of de laatste meters lijken verder weg (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Mila had de sleutel net in het slot gestoken toen ze voetstappen hoorde. De deur zwaaide open. Het was niet de dief die ze verwachtte, maar haar oma, met de verdwenen tas in haar handen en een brede lach op haar gezicht.",
+   "v": "Wat is de wending in dit fragment en waarom is dat een verrassing?",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Het is haar oma, niet de dief (1p). Mila verwachtte een dief (1p), de lezer ook (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Ze opende de brief met trillende handen. Er stond maar één zin in: \"Kijk achter je.\" Langzaam draaide Noor haar hoofd om, terwijl ze hoorde dat de vloer kraakte.",
+   "v": "Waarom is dit een cliffhanger? Noem een zin die de spanning vergroot.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "De afloop blijft onbekend (1p). Er staat dat je achter je moet kijken (1p), \"Kijk achter je.\" (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Na de wedstrijd stonden ze allemaal samen op het veld. De beker stond op de middenstip en Bas lachte naar zijn teamgenoten. Het ruzie was voorbij en de volgende training zouden ze gewoon weer samen beginnen.",
+   "v": "Welk soort einde is dit en hoe zie je dat?",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Een gesloten einde (1p). De ruzie is voorbij (1p) en alles is afgerond (1p)."
+  }
+ ]
+}

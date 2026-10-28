@@ -580,6 +580,27 @@ var VAKKEN_VMBO = [
       "nOe": 5,
       "nBeg": 12,
       "hasSam": true
+     },
+     {
+      "id": "E3",
+      "lo": "nl.E.3",
+      "gs": 2,
+      "naam": "Spanning en opbouw van een verhaal",
+      "beschrijving": "Je herkent begin, midden en slot, ziet hoe spanning wordt opgebouwd en weet wat een hoogtepunt, wending en cliffhanger is.",
+      "ceStatus": "SE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Begin, midden en slot",
+       "Spanning opbouwen",
+       "Hoogtepunt en wending",
+       "Het einde van het verhaal",
+       "Spanning herkennen"
+      ],
+      "nSv": 25,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
      }
     ]
    }
