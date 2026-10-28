@@ -20551,6 +20551,646 @@ var VAKKEN_VMBO = [
         "u": "\"De stoel zucht\" (1p) of \"de deur lacht\" (1p). Een ding doet iets wat alleen een mens kan (1p)."
        }
       ]
+     },
+     {
+      "id": "E6",
+      "lo": "nl.E.6",
+      "gs": 2,
+      "naam": "Je mening over een verhaal onderbouwen",
+      "beschrijving": "Je onderscheidt feit en mening, geeft een reden bij je oordeel en onderbouwt het met een voorbeeld uit de tekst.",
+      "ceStatus": "SE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Feit en mening",
+       "Argument",
+       "Voorbeeld uit de tekst",
+       "Een mening beoordelen",
+       "Reageren en afsluiten"
+      ],
+      "sam": "Een feit kun je controleren, een mening is een oordeel. Een goede mening heeft een argument: een reden die begint met omdat of want. Je onderbouwt je argument met een voorbeeld uit de tekst. Een mening zonder reden is zwak. Twee lezers mogen een andere mening hebben, maar beide moeten die onderbouwen. Een recensie sluit af met een conclusie die je oordeel samenvat.",
+      "begrippen": [
+       {
+        "t": "Feit",
+        "d": "Iets dat je kunt controleren."
+       },
+       {
+        "t": "Mening",
+        "d": "Een oordeel dat per persoon kan verschillen."
+       },
+       {
+        "t": "Argument",
+        "d": "Een reden bij je mening."
+       },
+       {
+        "t": "Onderbouwen",
+        "d": "Een reden en bewijs geven."
+       },
+       {
+        "t": "Voorbeeld",
+        "d": "Een stukje uit de tekst dat je bewijst."
+       },
+       {
+        "t": "Oordeel",
+        "d": "Wat je van een verhaal vindt."
+       },
+       {
+        "t": "Recensie",
+        "d": "Een tekst waarin je een boek beoordeelt."
+       },
+       {
+        "t": "Conclusie",
+        "d": "Het slot dat je oordeel samenvat."
+       },
+       {
+        "t": "Bewijs",
+        "d": "Iets uit de tekst dat laat zien dat je klopt."
+       },
+       {
+        "t": "Smaak",
+        "d": "Wat je persoonlijk leuk vindt."
+       },
+       {
+        "t": "Bovendien",
+        "d": "Een woord dat een extra argument inleidt."
+       },
+       {
+        "t": "Eigenzinnig",
+        "d": "Iemand die zijn eigen weg gaat."
+       }
+      ],
+      "sv": [
+       {
+        "v": "Welke zin is een mening over een boek?",
+        "o": [
+         "\"Het boek heeft tweehonderd bladzijden.\"",
+         "\"Dit boek is erg spannend.\"",
+         "\"De schrijver woont in Utrecht.\"",
+         "\"Het verhaal is in 2019 verschenen.\""
+        ],
+        "c": 1,
+        "d": 1,
+        "s": 0,
+        "u": "Mening = oordeel. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"Het boek heeft tweehonderd bladzijden.\"? Dan denk je dat dit een mening is. Je kunt de bladzijden tellen, en dat maakt het een feit.",
+         "Klopt: spannend vinden is een persoonlijk oordeel en geen feit.",
+         "Koos je \"De schrijver woont in Utrecht.\"? Dan denk je dat dit een mening is. Dit kun je controleren, en dat is dus een feit.",
+         "Koos je \"Het verhaal is in 2019 verschenen.\"? Dan denk je dat dit een mening is. Een jaartal kun je opzoeken, en dat noem je een feit."
+        ],
+        "uh": "Is het te controleren?"
+       },
+       {
+        "v": "Welke zin is een feit over een boek?",
+        "o": [
+         "\"Het boek is echt geweldig om te lezen voor iedereen.\"",
+         "\"De personages zijn heel saai en vlak en vervelend.\"",
+         "\"Het einde van het verhaal is mooi.\"",
+         "\"Het boek is door Jan Hoek geschreven.\""
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 0,
+        "u": "Feit = controleerbaar. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"Het boek is echt geweldig om te lezen voor iedereen.\"? Dan denk je dat dit een feit is. Wat geweldig is verschilt per lezer, en dus is het een mening.",
+         "Koos je \"De personages zijn heel saai en vlak en vervelend.\"? Dan denk je dat dit een feit is. Saai vinden is een oordeel, en dus een mening.",
+         "Koos je \"Het einde van het verhaal is mooi.\"? Dan denk je dat dit een feit is. Mooi is een smaak, en dus een mening.",
+         "Klopt: wie het schreef kun je controleren, dus het is een feit."
+        ],
+        "uh": "Kun je het nagaan?"
+       },
+       {
+        "v": "Welk woord leidt een argument vaak in?",
+        "o": [
+         "omdat",
+         "hoewel, dat een tegenstelling aangeeft",
+         "daarna, dat de volgorde aangeeft",
+         "misschien, dat onzekerheid aangeeft"
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 1,
+        "u": "Omdat = reden. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: met omdat of want geef je de reden voor je mening.",
+         "Koos je \"hoewel, dat een tegenstelling aangeeft\"? Dan denk je dat hoewel een reden inleidt. Hoewel zet iets tegenover elkaar, en geeft dus geen reden.",
+         "Koos je \"daarna, dat de volgorde aangeeft\"? Dan denk je dat daarna een reden inleidt. Daarna gaat over de tijd, en niet over een argument.",
+         "Koos je \"misschien, dat onzekerheid aangeeft\"? Dan denk je dat misschien een reden inleidt. Misschien toont twijfel, en geeft zelf geen reden."
+        ],
+        "uh": "Welk woord geeft een reden?"
+       },
+       {
+        "v": "Waarom is \"Ik vind het boek mooi\" nog geen goede onderbouwde mening?",
+        "o": [
+         "omdat een mening nooit onderbouwd kan worden door een lezer",
+         "omdat het woord mooi niet in een mening mag staan",
+         "er staat geen reden bij",
+         "omdat een mening altijd een feit moet zijn"
+        ],
+        "c": 2,
+        "d": 1,
+        "s": 1,
+        "u": "Geen reden = geen onderbouwing.",
+        "uo": [
+         "Koos je \"omdat een mening nooit onderbouwd kan worden door...\"? Dan denk je dat een mening niet te onderbouwen is. Dat kan juist wel, met argumenten en voorbeelden.",
+         "Koos je \"omdat het woord mooi niet in een mening mag staan\"? Dan denk je dat mooi verboden is. Het mag gewoon, maar je moet het onderbouwen.",
+         "Klopt: zonder reden is het alleen een uitspraak, geen onderbouwing.",
+         "Koos je \"omdat een mening altijd een feit moet zijn\"? Dan denk je dat een mening een feit moet zijn. Dat is een tegenstelling, want een mening is een oordeel."
+        ],
+        "uh": "Wat ontbreekt?"
+       },
+       {
+        "v": "Waar haal je het beste een voorbeeld vandaan om je mening te onderbouwen?",
+        "o": [
+         "uit een ander verhaal dat je liever vindt",
+         "uit wat je vriend ervan vindt",
+         "uit de tekst van het verhaal zelf",
+         "uit de omslag van het boek"
+        ],
+        "c": 2,
+        "d": 1,
+        "s": 2,
+        "u": "Voorbeeld = uit de tekst. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"uit een ander verhaal dat je liever vindt\"? Dan denk je dat een ander verhaal telt. Je beoordeelt dit verhaal, en dus haal je het voorbeeld hieruit.",
+         "Koos je \"uit wat je vriend ervan vindt\"? Dan denk je dat de mening van een vriend telt. Dat is zijn mening, en niet jouw bewijs uit de tekst.",
+         "Klopt: een voorbeeld uit de tekst laat zien dat je mening klopt.",
+         "Koos je \"uit de omslag van het boek\"? Dan denk je dat de omslag telt. De omslag is niet het verhaal, en zegt niets over de inhoud."
+        ],
+        "uh": "Waar staat het bewijs?"
+       },
+       {
+        "v": "Welke mening is het best onderbouwd?",
+        "o": [
+         "\"Spannend, want de ontknoping komt pas laat.\"",
+         "\"Het boek is gewoon heel goed en erg leuk om te lezen.\"",
+         "\"Ik hou van boeken over dieren en over de natuur.\"",
+         "\"Dit boek is veel beter dan het boek van mijn broer.\""
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 3,
+        "u": "Reden + tekst. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: er staat een reden bij en je kunt die in het boek nalezen.",
+         "Koos je \"Het boek is gewoon heel goed en erg leuk om te...\"? Dan denk je dat dit goed onderbouwd is. Er staat geen reden bij, dus je weet niet waarom.",
+         "Koos je \"Ik hou van boeken over dieren en over de natuur.\"? Dan denk je dat dit goed onderbouwd is. Het is een persoonlijke voorkeur, en geen oordeel over dit boek.",
+         "Koos je \"Dit boek is veel beter dan het boek van mijn broer.\"? Dan denk je dat dit goed onderbouwd is. Er staat geen reden, en je weet niet waarom het beter is."
+        ],
+        "uh": "Staat er een reden bij?"
+       },
+       {
+        "v": "Wat zet je aan het einde van een recensie?",
+        "o": [
+         "een nieuw feit dat in de tekst nog niet is genoemd",
+         "de naam van de uitgever van het boek zelf",
+         "een lang stuk uit het boek zelf",
+         "een conclusie die je mening samenvat"
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 4,
+        "u": "Conclusie. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"een nieuw feit dat in de tekst nog niet is genoemd\"? Dan denk je dat een nieuw feit hier past. Het slot herhaalt je oordeel, en geeft geen nieuwe informatie.",
+         "Koos je \"de naam van de uitgever van het boek zelf\"? Dan denk je dat de uitgever hier past. Die staat bij de gegevens, en niet in het slot.",
+         "Koos je \"een lang stuk uit het boek zelf\"? Dan denk je dat een lang stuk past. Een recensie samenvat kort, en laat geen volledig stuk zien.",
+         "Klopt: een conclusie rondt je recensie af en vat je oordeel samen."
+        ],
+        "uh": "Wat rond je af?"
+       },
+       {
+        "v": "Welke zin uit een recensie is een mening over dit verhaal?",
+        "o": [
+         "\"Eva verliest haar hond in het bos.\"",
+         "\"Het verhaal is ontroerend.\"",
+         "\"Ze zoekt de hele nacht.\"",
+         "\"Ze vindt hem terug bij de beek.\""
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 0,
+        "u": "Ontroerend = oordeel. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"Eva verliest haar hond in het bos.\"? Dan denk je dat dit een mening is. Dit staat in de tekst, dus het is een feit uit het verhaal.",
+         "Klopt: ontroerend vinden is een persoonlijk oordeel.",
+         "Koos je \"Ze zoekt de hele nacht.\"? Dan denk je dat dit een mening is. Het is een gebeurtenis, dus een feit uit het verhaal.",
+         "Koos je \"Ze vindt hem terug bij de beek.\"? Dan denk je dat dit een mening is. Het is een gebeurtenis, en je kunt het nalezen."
+        ],
+        "uh": "Is het een gevoel?",
+        "ctx": "In het verhaal verliest Eva haar hond tijdens een wandeling in het bos. Ze zoekt de hele nacht en is bang dat hij is verdwaald. Bij zonsopgang vindt ze hem terug bij de beek, moe maar heel."
+       },
+       {
+        "v": "Welk argument past bij de mening dat dit verhaal spannend is?",
+        "o": [
+         "Eva vindt haar hond bij zonsopgang terug",
+         "de beek in het verhaal is heel mooi",
+         "Eva houdt veel van haar hond",
+         "Eva weet niet of hij leeft"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 1,
+        "u": "Onzekerheid = spanning. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"Eva vindt haar hond bij zonsopgang terug\"? Dan denk je dat dit spanning geeft. Dit is het goede einde, en dat haalt spanning weg.",
+         "Koos je \"de beek in het verhaal is heel mooi\"? Dan denk je dat dit spanning geeft. Een mooie beek is rustig, en bouwt geen spanning op.",
+         "Koos je \"Eva houdt veel van haar hond\"? Dan denk je dat dit spanning geeft. Liefde is geen gevaar, en het gaat om onzekerheid.",
+         "Klopt: onzekerheid over de afloop zorgt voor spanning."
+        ],
+        "uh": "Wat is onzeker?",
+        "ctx": "In het verhaal verliest Eva haar hond tijdens een wandeling in het bos. Ze zoekt de hele nacht en is bang dat hij is verdwaald. Bij zonsopgang vindt ze hem terug bij de beek, moe maar heel."
+       },
+       {
+        "v": "Welke reden geeft de schrijver voor zijn zwakke oordeel over het boek?",
+        "o": [
+         "het boek is te duur",
+         "de personages blijven plat",
+         "het boek is te dik",
+         "de schrijver is niet bekend"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 1,
+        "u": "Plat = reden. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"het boek is te duur\"? Dan denk je dat het geld de reden is. Over de prijs van het boek wordt niets gezegd, dus dit is niet zijn argument.",
+         "Klopt: hij zegt dat de personages plat blijven en dat je Sam nauwelijks leert kennen.",
+         "Koos je \"het boek is te dik\"? Dan denk je dat de dikte het probleem is. Over het aantal bladzijden zegt hij niets, want hij kijkt naar de personages.",
+         "Koos je \"de schrijver is niet bekend\"? Dan denk je dat de naam van de schrijver telt. Zijn bekendheid komt niet ter sprake, en een argument gaat over het verhaal."
+        ],
+        "uh": "Wat noemt hij?",
+        "ctx": "Ik vond het boek zwak, want de personages bleven plat. Je leert Sam nauwelijks kennen. Bovendien eindigt het verhaal ineens, zodat veel vragen onbeantwoord blijven."
+       },
+       {
+        "v": "Welk tweede argument noemt de schrijver van deze recensie?",
+        "o": [
+         "de plot is veel te ingewikkeld voor de lezer",
+         "de titel past helemaal niet bij het boek",
+         "het verhaal eindigt ineens",
+         "de omslag is erg onaantrekkelijk om te zien"
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 4,
+        "u": "Bovendien = extra reden. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"de plot is veel te ingewikkeld voor de lezer\"? Dan denk je dat dit het tweede argument is. Dat staat er niet, en bovendien kondigt iets anders aan.",
+         "Koos je \"de titel past helemaal niet bij het boek\"? Dan denk je dat dit het tweede argument is. De titel wordt niet genoemd, dus het klopt niet.",
+         "Klopt: dit tweede argument staat in de tekst na het woord bovendien.",
+         "Koos je \"de omslag is erg onaantrekkelijk om te zien\"? Dan denk je dat dit het tweede argument is. De omslag wordt niet genoemd, dus het klopt niet."
+        ],
+        "uh": "Wat volgt na bovendien?",
+        "ctx": "Ik vond het boek zwak, want de personages bleven plat. Je leert Sam nauwelijks kennen. Bovendien eindigt het verhaal ineens, zodat veel vragen onbeantwoord blijven."
+       },
+       {
+        "v": "Welk voorbeeld uit de tekst laat zien dat Mila moedig is?",
+        "o": [
+         "ze verft haar haar rood",
+         "ze draagt hetzelfde uniform als alle andere leerlingen",
+         "ze zit gewoon op een school in de stad",
+         "ze wordt door anderen op school gezien"
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 2,
+        "u": "Rood haar = moed. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: ze doet iets wat de andere leerlingen niet durven, dat is moed.",
+         "Koos je \"ze draagt hetzelfde uniform als alle andere...\"? Dan denk je dat het uniform moed laat zien. Het uniform dragen iedereen, dus het is niet bijzonder.",
+         "Koos je \"ze zit gewoon op een school in de stad\"? Dan denk je dat dit moed laat zien. Alle leerlingen zitten op school, dus dat is niets bijzonders.",
+         "Koos je \"ze wordt door anderen op school gezien\"? Dan denk je dat dit moed laat zien. Gezien worden is niets doen, en moed is iets durven."
+        ],
+        "uh": "Wat durft ze?",
+        "ctx": "Het verhaal speelt op een school waar alle leerlingen hetzelfde uniform dragen. Mila durft als enige haar haar rood te verven. Daardoor wordt ze buitengesloten, maar ze laat zich niet kennen."
+       },
+       {
+        "v": "Welke mening is te onderbouwen met dit fragment over Mila?",
+        "o": [
+         "\"Mila is eigenzinnig.\"",
+         "\"Mila is een heel verlegen meisje.\"",
+         "\"Mila houdt heel veel van uniformen.\"",
+         "\"Mila is erg populair op school.\""
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 3,
+        "u": "Eigenzinnig. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: ze doet iets anders dan anderen en laat zich niet kennen.",
+         "Koos je \"Mila is een heel verlegen meisje.\"? Dan denk je dat deze mening past. Verlegen mensen durven niet op te vallen, en Mila verft haar haar rood.",
+         "Koos je \"Mila houdt heel veel van uniformen.\"? Dan denk je dat deze mening past. Ze doet het tegenovergestelde, dus dit klopt niet.",
+         "Koos je \"Mila is erg populair op school.\"? Dan denk je dat deze mening past. Ze wordt juist buitengesloten, dus dit klopt niet."
+        ],
+        "uh": "Wat past erbij?",
+        "ctx": "Het verhaal speelt op een school waar alle leerlingen hetzelfde uniform dragen. Mila durft als enige haar haar rood te verven. Daardoor wordt ze buitengesloten, maar ze laat zich niet kennen."
+       },
+       {
+        "v": "Waarom vindt Pim het boek saai volgens zijn eigen woorden?",
+        "o": [
+         "de ontknoping komt pas op de laatste pagina",
+         "het boek heeft te weinig plaatjes",
+         "er gebeurt bijna niets",
+         "het boek is te duur"
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 1,
+        "u": "Pim: niets gebeurt. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"de ontknoping komt pas op de laatste pagina\"? Dan denk je dat dit Pims reden is. Dit zegt Lena, en zij vindt het juist spannend.",
+         "Koos je \"het boek heeft te weinig plaatjes\"? Dan denk je dat plaatjes het probleem zijn. Hij noemt de gebeurtenissen in het boek, en zegt niets over afbeeldingen.",
+         "Klopt: dat is zijn reden die in zijn eigen woorden na het woord want staat.",
+         "Koos je \"het boek is te duur\"? Dan denk je dat de prijs de reden is. Over de kosten zegt Pim niets, want zijn reden gaat over wat er gebeurt."
+        ],
+        "uh": "Wat zegt Pim?",
+        "ctx": "Twee klasgenoten praten over hetzelfde boek. Pim zegt: \"Het boek is saai, want er gebeurt bijna niets.\" Lena zegt: \"Het boek is spannend, want de ontknoping komt pas op de laatste pagina.\""
+       },
+       {
+        "v": "Waaruit blijkt dat Lena haar mening onderbouwt?",
+        "o": [
+         "ze zegt alleen dat ze het boek spannend vindt zonder reden",
+         "ze geeft een reden",
+         "ze praat veel harder dan Pim doet",
+         "ze is het volledig eens met Pim"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 1,
+        "u": "Want = onderbouwing. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"ze zegt alleen dat ze het boek spannend vindt...\"? Dan denk je dat ze alleen een mening noemt. Ze geeft ook een reden, en daarom onderbouwt ze haar oordeel.",
+         "Klopt: dat is een argument voor haar oordeel.",
+         "Koos je \"ze praat veel harder dan Pim doet\"? Dan denk je dat volume telt. Een goed argument heeft niets met stemvolume te maken, dus dit klopt niet.",
+         "Koos je \"ze is het volledig eens met Pim\"? Dan denk je dat zij het met Pim eens is. Ze zegt het tegenovergestelde, dus dit klopt niet."
+        ],
+        "uh": "Staat er een reden bij?",
+        "ctx": "Twee klasgenoten praten over hetzelfde boek. Pim zegt: \"Het boek is saai, want er gebeurt bijna niets.\" Lena zegt: \"Het boek is spannend, want de ontknoping komt pas op de laatste pagina.\""
+       },
+       {
+        "v": "Welke mening geeft de schrijver over het einde van het boek?",
+        "o": [
+         "het einde is te zoet en onecht voor een verhaal",
+         "het einde is saai en voorspelbaar voor de lezer",
+         "het einde is te lang en ingewikkeld om te volgen",
+         "mooi en eerlijk"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 3,
+        "u": "Mooi en eerlijk. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"het einde is te zoet en onecht voor een verhaal\"? Dan denk je dat het einde te zoet is. De schrijver zegt het tegenovergestelde, namelijk niet te zoet.",
+         "Koos je \"het einde is saai en voorspelbaar voor de lezer\"? Dan denk je dat het einde saai is. Hij noemt het mooi, dus dit klopt niet.",
+         "Koos je \"het einde is te lang en ingewikkeld om te volgen\"? Dan denk je dat het einde te lang is. Daar staat niets over, en hij noemt het mooi.",
+         "Klopt: hij noemt het mooi, niet te zoet en eerlijk."
+        ],
+        "uh": "Wat vindt hij?",
+        "ctx": "Aan het einde van zijn recensie schrijft een lezer: Ik vond het einde mooi. Het is niet te zoet, want Eva houdt haar hond, maar de dagen in het bos blijven pijn doen. Dat maakt het eerlijk."
+       },
+       {
+        "v": "Welk voorbeeld uit het verhaal geeft de schrijver voor zijn oordeel?",
+        "o": [
+         "Eva zoekt de hele nacht in het donkere bos",
+         "Eva houdt haar hond",
+         "de hond is moe maar gelukkig",
+         "het is nacht in het bos"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 2,
+        "u": "Voorbeeld uit het einde. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"Eva zoekt de hele nacht in het donkere bos\"? Dan denk je dat dit het voorbeeld is. Dat is eerder in het verhaal, en niet bij het einde.",
+         "Klopt: dat voorbeeld laat zien waarom hij het einde eerlijk vindt.",
+         "Koos je \"de hond is moe maar gelukkig\"? Dan denk je dat dit het voorbeeld is. Dit staat in een andere fragment, en niet bij zijn oordeel over het einde.",
+         "Koos je \"het is nacht in het bos\"? Dan denk je dat dit het voorbeeld is. Het is tijd, en geen voorbeeld van het einde."
+        ],
+        "uh": "Wat noemt hij?",
+        "ctx": "Aan het einde van zijn recensie schrijft een lezer: Ik vond het einde mooi. Het is niet te zoet, want Eva houdt haar hond, maar de dagen in het bos blijven pijn doen. Dat maakt het eerlijk."
+       },
+       {
+        "v": "Welk voorbeeld uit dit verhaal onderbouwt de mening \"Het verhaal laat zien hoe veel Eva om haar hond geeft\"?",
+        "o": [
+         "ze zoekt lang",
+         "ze loopt een tijdje in het bos",
+         "ze vindt de beek in het bos",
+         "de zon komt in de ochtend op"
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 2,
+        "u": "Zoeken = zorg. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: je zoekt alleen zo lang als iemand je veel waard is.",
+         "Koos je \"ze loopt een tijdje in het bos\"? Dan denk je dat lopen in het bos haar liefde toont. Wandelen doet iedereen, en het zegt niets over haar hond.",
+         "Koos je \"ze vindt de beek in het bos\"? Dan denk je dat de beek haar liefde toont. De beek is een plaats, en geen gedrag.",
+         "Koos je \"de zon komt in de ochtend op\"? Dan denk je dat de zon haar liefde toont. De zon komt altijd op, en dat zegt niets over Eva."
+        ],
+        "uh": "Wat doet ze?",
+        "ctx": "In het verhaal verliest Eva haar hond tijdens een wandeling in het bos. Ze zoekt de hele nacht en is bang dat hij is verdwaald. Bij zonsopgang vindt ze hem terug bij de beek, moe maar heel."
+       },
+       {
+        "v": "Welke zin over dit verhaal is geen feit maar het oordeel van een lezer?",
+        "o": [
+         "\"Eva verliest haar hond in het bos.\"",
+         "\"Eva zoekt de hele nacht en ze is bang.\"",
+         "\"Bij zonsopgang vindt ze hem terug bij de beek.\"",
+         "\"De zoektocht van Eva is hartverscheurend.\""
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 0,
+        "u": "Hartverscheurend = oordeel. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"Eva verliest haar hond in het bos.\"? Dan denk je dat dit een oordeel is. Het staat in de tekst en je kunt het nalezen, dus het is een feit.",
+         "Koos je \"Eva zoekt de hele nacht en ze is bang.\"? Dan denk je dat dit een oordeel is. Het zijn gebeurtenissen en gevoelens uit het verhaal, en je kunt ze terugvinden.",
+         "Koos je \"Bij zonsopgang vindt ze hem terug bij de beek.\"? Dan denk je dat dit een oordeel is. Het is een gebeurtenis die in de tekst staat, en dus een feit.",
+         "Klopt: hartverscheurend vinden is een persoonlijk oordeel, geen feit."
+        ],
+        "uh": "Kun je het nalezen?",
+        "ctx": "In het verhaal verliest Eva haar hond tijdens een wandeling in het bos. Ze zoekt de hele nacht en is bang dat hij is verdwaald. Bij zonsopgang vindt ze hem terug bij de beek, moe maar heel."
+       },
+       {
+        "v": "Waarom is de mening in deze recensie goed onderbouwd?",
+        "o": [
+         "omdat de schrijver heel boos klinkt",
+         "omdat de schrijver het boek niet gelezen heeft",
+         "er staan twee redenen bij",
+         "omdat de recensie heel kort is"
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 1,
+        "u": "Twee redenen. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"omdat de schrijver heel boos klinkt\"? Dan denk je dat boos klinken onderbouwing is. Gevoel is nog geen reden, en een argument is iets anders.",
+         "Koos je \"omdat de schrijver het boek niet gelezen heeft\"? Dan denk je dat dit klopt. Hij noemt details uit het boek, dus hij heeft het gelezen.",
+         "Klopt: de personages zijn plat en het einde komt ineens.",
+         "Koos je \"omdat de recensie heel kort is\"? Dan denk je dat kort goed onderbouwd is. De lengte zegt niets, en het gaat om de redenen."
+        ],
+        "uh": "Wat staat erbij?",
+        "ctx": "Ik vond het boek zwak, want de personages bleven plat. Je leert Sam nauwelijks kennen. Bovendien eindigt het verhaal ineens, zodat veel vragen onbeantwoord blijven."
+       },
+       {
+        "v": "Hoe kunnen Pim en Lena allebei gelijk hebben over hetzelfde boek?",
+        "o": [
+         "één van beiden liegt altijd over het boek dat hij las",
+         "het boek verandert steeds tijdens het lezen",
+         "een mening is persoonlijk",
+         "meningen kloppen altijd gelijk voor iedereen die lezen"
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 3,
+        "u": "Mening verschilt. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"één van beiden liegt altijd over het boek dat hij...\"? Dan denk je dat een van hen liegt. Een mening is geen leugen, en beide mogen ander oordeel hebben.",
+         "Koos je \"het boek verandert steeds tijdens het lezen\"? Dan denk je dat het boek verandert. De tekst is hetzelfde, maar de lezers verschillen.",
+         "Klopt: bij een mening kan het per lezer verschillen.",
+         "Koos je \"meningen kloppen altijd gelijk voor iedereen die...\"? Dan denk je dat een mening voor iedereen gelijk is. Meningen verschillen juist, en daarom mag dat."
+        ],
+        "uh": "Mag het verschillen?",
+        "ctx": "Twee klasgenoten praten over hetzelfde boek. Pim zegt: \"Het boek is saai, want er gebeurt bijna niets.\" Lena zegt: \"Het boek is spannend, want de ontknoping komt pas op de laatste pagina.\""
+       },
+       {
+        "v": "Wat kan Pim doen om zijn mening over het boek sterker te maken?",
+        "o": [
+         "veel harder zeggen dat het boek saai is",
+         "het boek niet meer verder lezen vanaf nu",
+         "zeggen dat Lena altijd ongelijk heeft",
+         "een voorbeeld uit het boek geven"
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 4,
+        "u": "Voorbeeld uit tekst. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"veel harder zeggen dat het boek saai is\"? Dan denk je dat harder praten helpt. Volume is geen argument, en maakt de mening niet sterker.",
+         "Koos je \"het boek niet meer verder lezen vanaf nu\"? Dan denk je dat niet lezen helpt. Dan heeft hij geen voorbeelden, en kan hij niet onderbouwen.",
+         "Koos je \"zeggen dat Lena altijd ongelijk heeft\"? Dan denk je dat ruzie helpt. Een oordeel van Lena is ook een mening, dus dat is geen onderbouwing.",
+         "Klopt: een voorbeeld uit de tekst bewijst zijn argument."
+        ],
+        "uh": "Wat versterkt?",
+        "ctx": "Twee klasgenoten praten over hetzelfde boek. Pim zegt: \"Het boek is saai, want er gebeurt bijna niets.\" Lena zegt: \"Het boek is spannend, want de ontknoping komt pas op de laatste pagina.\""
+       },
+       {
+        "v": "Waarom is het slim dat de schrijver zijn oordeel afsluit met het voorbeeld over Eva?",
+        "o": [
+         "de lezer ziet dat zijn mening klopt",
+         "omdat het voorbeeld de recensie langer maakt",
+         "omdat een voorbeeld het boek verandert",
+         "omdat een voorbeeld een nieuwe mening is"
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 2,
+        "u": "Voorbeeld = bewijs. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: een voorbeeld laat zien waarom hij het einde eerlijk vindt.",
+         "Koos je \"omdat het voorbeeld de recensie langer maakt\"? Dan denk je dat lengte het doel is. Een voorbeeld hoort bij bewijs, en niet om te rekken.",
+         "Koos je \"omdat een voorbeeld het boek verandert\"? Dan denk je dat het boek verandert. Het boek blijft hetzelfde, en het voorbeeld laat alleen iets zien.",
+         "Koos je \"omdat een voorbeeld een nieuwe mening is\"? Dan denk je dat het voorbeeld een nieuwe mening is. Een voorbeeld is bewijs, en geen mening."
+        ],
+        "uh": "Wat doet het voorbeeld?",
+        "ctx": "Aan het einde van zijn recensie schrijft een lezer: Ik vond het einde mooi. Het is niet te zoet, want Eva houdt haar hond, maar de dagen in het bos blijven pijn doen. Dat maakt het eerlijk."
+       },
+       {
+        "v": "Welke zin kan als conclusie bij deze recensie staan?",
+        "o": [
+         "\"Het boek is precies driehonderd bladzijden dik.\"",
+         "\"Kortom, het boek valt tegen.\"",
+         "\"Sam is een leuke naam voor een personage in een boek.\"",
+         "\"Ik weet eigenlijk niet wat ik van het boek vind.\""
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 4,
+        "u": "Kortom = conclusie. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"Het boek is precies driehonderd bladzijden dik.\"? Dan denk je dat dit een conclusie is. Het is een feit, en het vat het oordeel niet samen.",
+         "Klopt: een conclusie vat de redenen van de hele recensie samen.",
+         "Koos je \"Sam is een leuke naam voor een personage in een...\"? Dan denk je dat dit een conclusie is. Het zegt iets over een naam, en niet over het boek.",
+         "Koos je \"Ik weet eigenlijk niet wat ik van het boek vind.\"? Dan denk je dat dit een conclusie is. Het geeft geen oordeel, en een conclusie vat een mening samen."
+        ],
+        "uh": "Wat vat samen?",
+        "ctx": "Ik vond het boek zwak, want de personages bleven plat. Je leert Sam nauwelijks kennen. Bovendien eindigt het verhaal ineens, zodat veel vragen onbeantwoord blijven."
+       },
+       {
+        "v": "Waarom is \"Mila is eigenzinnig\" een betere onderbouwde mening als er een voorbeeld bij staat?",
+        "o": [
+         "omdat de mening dan een feit wordt",
+         "omdat een voorbeeld de tekst korter maakt",
+         "omdat het voorbeeld de schrijver beroemd maakt",
+         "de lezer kan het in de tekst nalezen"
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 3,
+        "u": "Voorbeeld = bewijs. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"omdat de mening dan een feit wordt\"? Dan denk je dat de mening een feit wordt. Een mening blijft een mening, ook met een voorbeeld.",
+         "Koos je \"omdat een voorbeeld de tekst korter maakt\"? Dan denk je dat dit klopt. Een voorbeeld maakt de tekst juist langer, en dat is niet het doel.",
+         "Koos je \"omdat het voorbeeld de schrijver beroemd maakt\"? Dan denk je dat dit klopt. Een voorbeeld gaat niet over de schrijver, maar over het verhaal.",
+         "Klopt: het rode haar is bewijs in het fragment."
+        ],
+        "uh": "Waar lees je het na?",
+        "ctx": "Het verhaal speelt op een school waar alle leerlingen hetzelfde uniform dragen. Mila durft als enige haar haar rood te verven. Daardoor wordt ze buitengesloten, maar ze laat zich niet kennen."
+       }
+      ],
+      "oe": [
+       {
+        "bron": "Examenstijl",
+        "ctx": "In het verhaal verliest Eva haar hond tijdens een wandeling in het bos. Ze zoekt de hele nacht en is bang dat hij is verdwaald. Bij zonsopgang vindt ze hem terug bij de beek, moe maar heel.",
+        "v": "Noem een mening over dit verhaal en onderbouw die met een voorbeeld uit de tekst.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Een mening, bijvoorbeeld het verhaal is spannend (1p). Een reden, bijvoorbeeld Eva weet niet of haar hond nog leeft (1p). Een voorbeeld uit de tekst, zoals dat ze de hele nacht zoekt (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Ik vond het boek zwak, want de personages bleven plat. Je leert Sam nauwelijks kennen. Bovendien eindigt het verhaal ineens, zodat veel vragen onbeantwoord blijven.",
+        "v": "Welke twee redenen geeft de schrijver voor zijn oordeel? Schrijf een conclusie.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "De personages blijven plat (1p). Het verhaal eindigt ineens en laat vragen open (1p). Een conclusie, bijvoorbeeld Kortom, het boek valt tegen (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Het verhaal speelt op een school waar alle leerlingen hetzelfde uniform dragen. Mila durft als enige haar haar rood te verven. Daardoor wordt ze buitengesloten, maar ze laat zich niet kennen.",
+        "v": "Welke mening kun je met dit fragment onderbouwen en welk voorbeeld gebruik je?",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Bijvoorbeeld Mila is eigenzinnig of moedig (1p). Ze verft als enige haar haar rood (1p), ook al wordt ze buitengesloten (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Twee klasgenoten praten over hetzelfde boek. Pim zegt: \"Het boek is saai, want er gebeurt bijna niets.\" Lena zegt: \"Het boek is spannend, want de ontknoping komt pas op de laatste pagina.\"",
+        "v": "Wie geeft een argument en hoe kan Pim zijn mening sterker maken?",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Beide geven een argument na het woord want (1p). Pim kan een voorbeeld uit het boek noemen (1p) dat laat zien dat er bijna niets gebeurt (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Aan het einde van zijn recensie schrijft een lezer: Ik vond het einde mooi. Het is niet te zoet, want Eva houdt haar hond, maar de dagen in het bos blijven pijn doen. Dat maakt het eerlijk.",
+        "v": "Welke mening geeft de schrijver en welk voorbeeld gebruikt hij?",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Het einde is mooi en eerlijk (1p). Eva houdt haar hond (1p), maar de pijn van het bos blijft (1p)."
+       }
+      ]
      }
     ]
    }

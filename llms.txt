@@ -5,7 +5,7 @@
 Volledige beschrijving (functies, inhoud per niveau, prijs, wat Slagio niet is): https://slagio.nl/llms-full.txt
 
 ## In het kort
-- 12 vakken havo, 16 vakken vwo, 12 vakken vmbo; 23.705 oefenvragen en 4.346 begrippen.
+- 12 vakken havo, 16 vakken vwo, 12 vakken vmbo; 23.730 oefenvragen en 4.346 begrippen.
 - Adaptief oefenen: na een fout een vraag over hetzelfde onderwerp, een niveau makkelijker; uitleg bij elk fout antwoord.
 - Foutenboek en herhalen met gespreide herhaling, beheersing per leerdoel, studieplan tot het examen.
 - Examens met klok, proefexamens in examenstijl met modelantwoord en puntenverdeling, archief met officiële oude examens.
@@ -152,6 +152,7 @@ Volledige beschrijving (functies, inhoud per niveau, prijs, wat Slagio niet is):
 - [Spanning en opbouw van een verhaal (Nederlands VMBO)](https://slagio.nl/leren/vmbo/nederlands/spanning-en-opbouw-van-een-verhaal.html): Je herkent begin, midden en slot, ziet hoe spanning wordt opgebouwd en weet wat een hoogtepunt, wending en cliffhanger is.
 - [Genres herkennen (Nederlands VMBO)](https://slagio.nl/leren/vmbo/nederlands/genres-herkennen.html): Je herkent een genre aan de kenmerken: detective, sprookje, fabel, sciencefiction, fantasy en realistisch verhaal.
 - [Gedichten lezen: strofe, rijm en beeldspraak (Nederlands VMBO)](https://slagio.nl/leren/vmbo/nederlands/gedichten-lezen-strofe-rijm-en-beeldspraak.html): Je leest een gedicht met oog voor strofe, regel, rijm en beeldspraak zoals vergelijking, metafoor en personificatie.
+- [Je mening over een verhaal onderbouwen (Nederlands VMBO)](https://slagio.nl/leren/vmbo/nederlands/je-mening-over-een-verhaal-onderbouwen.html): Je onderscheidt feit en mening, geeft een reden bij je oordeel en onderbouwt het met een voorbeeld uit de tekst.
 
 ## Examenvragen in examenstijl (met modelantwoord en puntenverdeling)
 - [Examenvragen Nederlands HAVO](https://slagio.nl/leren/havo/nederlands/examenvragen.html): 11 vragen uit een Slagio-proefexamen

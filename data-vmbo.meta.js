@@ -643,6 +643,27 @@ var VAKKEN_VMBO = [
       "nOe": 5,
       "nBeg": 12,
       "hasSam": true
+     },
+     {
+      "id": "E6",
+      "lo": "nl.E.6",
+      "gs": 2,
+      "naam": "Je mening over een verhaal onderbouwen",
+      "beschrijving": "Je onderscheidt feit en mening, geeft een reden bij je oordeel en onderbouwt het met een voorbeeld uit de tekst.",
+      "ceStatus": "SE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Feit en mening",
+       "Argument",
+       "Voorbeeld uit de tekst",
+       "Een mening beoordelen",
+       "Reageren en afsluiten"
+      ],
+      "nSv": 25,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
      }
     ]
    }
