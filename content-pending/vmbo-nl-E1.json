@@ -1,0 +1,682 @@
+{
+ "id": "E1",
+ "lo": "nl.E.1",
+ "gs": 2,
+ "naam": "Verhaalelementen: personages, tijd, plaats en gebeurtenissen",
+ "beschrijving": "Je herkent in een verhaal de hoofdpersoon en bijpersonages, de plaats en de tijd, de gebeurtenissen en het thema, en je ziet aan gedrag wat voor karakter iemand heeft.",
+ "ceStatus": "SE",
+ "binas": "",
+ "val": "",
+ "onderwerpen": [
+  "Personages",
+  "Plaats en sfeer",
+  "Tijd",
+  "Gebeurtenissen",
+  "Thema"
+ ],
+ "sam": "Een verhaal heeft personages, een plaats, een tijd, gebeurtenissen en een thema. De hoofdpersoon staat centraal, bijpersonages hebben een kleinere rol. Het karakter van een personage zie je aan wat hij doet en zegt. De plaats en de tijd vormen het decor en geven een sfeer. De gebeurtenissen vormen samen het verhaal en laten het thema zien, de gedachte waar het verhaal in de kern over gaat.",
+ "begrippen": [
+  {
+   "t": "Verhaal",
+   "d": "Een verzonnen tekst met personages en gebeurtenissen."
+  },
+  {
+   "t": "Hoofdpersoon",
+   "d": "Het personage om wie het verhaal vooral draait."
+  },
+  {
+   "t": "Bijpersonage",
+   "d": "Een personage met een kleinere rol."
+  },
+  {
+   "t": "Karakter",
+   "d": "Hoe een personage is, te zien aan zijn gedrag."
+  },
+  {
+   "t": "Plaats",
+   "d": "Waar het verhaal zich afspeelt."
+  },
+  {
+   "t": "Tijd",
+   "d": "Wanneer het verhaal zich afspeelt."
+  },
+  {
+   "t": "Sfeer",
+   "d": "Het gevoel dat een tekst oproept."
+  },
+  {
+   "t": "Gebeurtenis",
+   "d": "Iets wat er in het verhaal gebeurt."
+  },
+  {
+   "t": "Thema",
+   "d": "De gedachte waar het verhaal in de kern over gaat."
+  },
+  {
+   "t": "Keerpunt",
+   "d": "Het moment waarop het verhaal een andere kant opgaat."
+  },
+  {
+   "t": "Detail",
+   "d": "Een klein onderdeel dat een gevoel versterkt."
+  },
+  {
+   "t": "Boodschap",
+   "d": "Wat de schrijver de lezer wil meegeven."
+  }
+ ],
+ "sv": [
+  {
+   "v": "Welke persoon is de hoofdpersoon van een verhaal?",
+   "o": [
+    "de schrijver van het verhaal zelf",
+    "degene die centraal staat",
+    "iedereen die in het verhaal voorkomt",
+    "degene die als laatste in beeld komt"
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 0,
+   "u": "Hoofdpersoon = centraal. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"de schrijver van het verhaal zelf\"? Dan denk je dat de schrijver de hoofdpersoon is. De schrijver bedenkt het verhaal, maar is zelf geen personage.",
+    "Klopt: de hoofdpersoon staat centraal en maakt het meeste mee.",
+    "Koos je \"iedereen die in het verhaal voorkomt\"? Dan denk je dat elk personage de hoofdpersoon is. Er is er maar één die centraal staat, en de rest zijn bijpersonages.",
+    "Koos je \"degene die als laatste in beeld komt\"? Dan denk je dat de laatste persoon belangrijk is. De volgorde bepaalt het niet, het gaat om wie centraal staat."
+   ],
+   "uh": "Om wie draait het?"
+  },
+  {
+   "v": "Wat bedoel je met de plaats van een verhaal?",
+   "o": [
+    "wanneer het verhaal zich afspeelt",
+    "wie het verhaal vertelt",
+    "wat de schrijver ervan vindt",
+    "waar het verhaal zich afspeelt"
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 1,
+   "u": "Plaats = waar. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"wanneer het verhaal zich afspeelt\"? Dan denk je dat de plaats de tijd is. Dat is een ander onderdeel, en de plaats gaat over waar.",
+    "Koos je \"wie het verhaal vertelt\"? Dan denk je dat de plaats de verteller is. Dat is het perspectief, en de plaats is de omgeving.",
+    "Koos je \"wat de schrijver ervan vindt\"? Dan denk je dat de plaats een mening is. De plaats is een gegeven, en geen oordeel.",
+    "Klopt: de plaats is de omgeving, zoals een dorp, school of bus."
+   ],
+   "uh": "Waar speelt het zich af?"
+  },
+  {
+   "v": "Wat bedoel je met de tijd van een verhaal?",
+   "o": [
+    "wanneer het verhaal zich afspeelt",
+    "waar het verhaal zich afspeelt",
+    "hoeveel pagina's het verhaal heeft",
+    "hoe lang het duurt om te lezen"
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 2,
+   "u": "Tijd = wanneer. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: de tijd is het moment of de periode van het verhaal.",
+    "Koos je \"waar het verhaal zich afspeelt\"? Dan denk je dat de tijd de plaats is. De plaats is waar, en de tijd is wanneer.",
+    "Koos je \"hoeveel pagina's het verhaal heeft\"? Dan denk je dat de tijd het aantal bladzijden is. Dat zegt niets over de tijd, alleen over de lengte.",
+    "Koos je \"hoe lang het duurt om te lezen\"? Dan denk je dat de tijd de leestijd is. Dat is iets anders, en de tijd gaat over wanneer het verhaal speelt."
+   ],
+   "uh": "Wanneer speelt het?"
+  },
+  {
+   "v": "Wat noem je een gebeurtenis in een verhaal?",
+   "o": [
+    "een beschrijving van de hele omgeving",
+    "de titel boven het hele verhaal",
+    "iets wat er gebeurt",
+    "de mening van de lezer zelf"
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 3,
+   "u": "Gebeurtenis = actie. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"een beschrijving van de hele omgeving\"? Dan denk je dat een gebeurtenis een beschrijving is. Een beschrijving laat de omgeving zien, en er gebeurt niets in.",
+    "Koos je \"de titel boven het hele verhaal\"? Dan denk je dat een gebeurtenis de titel is. De titel is de naam, en geen actie.",
+    "Klopt: een gebeurtenis is een stap in het verhaal, zoals een ruzie of een ontmoeting.",
+    "Koos je \"de mening van de lezer zelf\"? Dan denk je dat een gebeurtenis een mening is. Een mening geeft de lezer, en een gebeurtenis staat in het verhaal."
+   ],
+   "uh": "Wat gebeurt er?"
+  },
+  {
+   "v": "Wat bedoel je met het thema van een verhaal?",
+   "o": [
+    "de plaats waar het verhaal speelt",
+    "de naam van de hoofdpersoon",
+    "waar het in de kern over gaat",
+    "de laatste zin van het verhaal"
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 4,
+   "u": "Thema = kernidee. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"de plaats waar het verhaal speelt\"? Dan denk je dat het thema de plaats is. Dat is het decor, en het thema is de gedachte.",
+    "Koos je \"de naam van de hoofdpersoon\"? Dan denk je dat het thema een naam is. Een naam hoort bij een personage, en het thema is een onderwerp.",
+    "Klopt: het thema is de gedachte achter het verhaal, zoals vriendschap of eenzaamheid.",
+    "Koos je \"de laatste zin van het verhaal\"? Dan denk je dat het thema de laatste zin is. Dat kan, maar niet altijd, en het thema is de boodschap."
+   ],
+   "uh": "Waar gaat het eigenlijk over?"
+  },
+  {
+   "v": "Wat is een bijpersonage?",
+   "o": [
+    "een persoon met een kleine rol",
+    "een persoon die helemaal niets doet",
+    "een persoon die altijd boos is op iedereen",
+    "een dier in het verhaal"
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 0,
+   "u": "Bijpersonage = kleine rol. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: een bijpersonage helpt het verhaal maar staat niet centraal.",
+    "Koos je \"een persoon die helemaal niets doet\"? Dan denk je dat een bijpersonage niets doet. Hij speelt wel mee, maar minder dan de hoofdpersoon.",
+    "Koos je \"een persoon die altijd boos is op iedereen\"? Dan denk je dat een bijpersonage boos moet zijn. Het gaat om de rol, en niet om het karakter.",
+    "Koos je \"een dier in het verhaal\"? Dan denk je dat een bijpersonage een dier is. Een bijpersonage kan ook een mens zijn, het gaat om de grootte van de rol."
+   ],
+   "uh": "Hoe groot is de rol?"
+  },
+  {
+   "v": "Waaraan zie je het karakter van een personage?",
+   "o": [
+    "aan de lengte van zijn naam",
+    "aan de kleur van zijn kleren",
+    "aan de bladzijde waar hij begint",
+    "aan wat hij doet en zegt"
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 1,
+   "u": "Karakter = gedrag. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"aan de lengte van zijn naam\"? Dan denk je dat een naam het karakter bepaalt. Een naam zegt niets over hoe iemand is, en acties en woorden wel.",
+    "Koos je \"aan de kleur van zijn kleren\"? Dan denk je dat kleding het karakter laat zien. Dat kan een hint zijn, maar acties en woorden zeggen meer.",
+    "Koos je \"aan de bladzijde waar hij begint\"? Dan denk je dat de pagina het karakter bepaalt. Dat zegt niets, en het gaat om gedrag en woorden.",
+    "Klopt: acties en woorden laten zien hoe iemand is."
+   ],
+   "uh": "Wat doet hij?"
+  },
+  {
+   "v": "Wie is de hoofdpersoon in het stukje over de bushalte?",
+   "o": [
+    "haar broer",
+    "Mila",
+    "de buschauffeur",
+    "de regen"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 0,
+   "u": "Wie staat centraal? Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"haar broer\"? Dan denk je dat de broer de hoofdpersoon is. Hij komt niet voor, alleen zijn afwezigheid wordt genoemd.",
+    "Klopt: het verhaal volgt Mila en laat haar gedachten en daden zien.",
+    "Koos je \"de buschauffeur\"? Dan denk je dat de buschauffeur de hoofdpersoon is. Hij wordt niet genoemd, en het verhaal gaat over Mila.",
+    "Koos je \"de regen\"? Dan denk je dat de regen de hoofdpersoon is. De regen is het weer, en geen personage."
+   ],
+   "uh": "Wie maakt het mee?",
+   "ctx": "Mila wachtte bij de bushalte in de regen. Haar rugzak was zwaar en haar broer was alweer te laat. Ze keek op haar horloge: tien voor acht. \"Als hij nu niet komt,\" mompelde ze, \"ga ik alleen.\" Ze zuchtte en trok haar capuchon over haar hoofd."
+  },
+  {
+   "v": "Welk karakter heeft Mila in het fragment?",
+   "o": [
+    "rustig, want ze blijft kalm wachten",
+    "vrolijk, want ze lacht in de regen",
+    "boos op haar moeder en haar vader",
+    "ongeduldig, want ze gaat bijna weg"
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 3,
+   "u": "Gedrag laat karakter zien. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"rustig, want ze blijft kalm wachten\"? Dan denk je dat Mila kalm is. Ze mompelt en zucht, dus ze is juist ongeduldig.",
+    "Koos je \"vrolijk, want ze lacht in de regen\"? Dan denk je dat Mila vrolijk is. Er staat dat ze zucht, en dus is ze niet blij.",
+    "Koos je \"boos op haar moeder en haar vader\"? Dan denk je dat Mila boos is op haar moeder. Haar moeder komt niet voor, de irritatie gaat over haar broer.",
+    "Klopt: ze kijkt op haar horloge en dreigt alleen te gaan."
+   ],
+   "uh": "Wat zegt ze?",
+   "ctx": "Mila wachtte bij de bushalte in de regen. Haar rugzak was zwaar en haar broer was alweer te laat. Ze keek op haar horloge: tien voor acht. \"Als hij nu niet komt,\" mompelde ze, \"ga ik alleen.\" Ze zuchtte en trok haar capuchon over haar hoofd."
+  },
+  {
+   "v": "Welke plaats beschrijft de tekst over de winterochtend?",
+   "o": [
+    "een grote stad in de bergen",
+    "een klein dorp aan zee",
+    "een bos in de zomer",
+    "een school in de stad"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 1,
+   "u": "Dorp aan zee. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"een grote stad in de bergen\"? Dan denk je dat het een stad in de bergen is. Er staat een dorp aan zee, met een dijk.",
+    "Klopt: de tekst noemt een dorp met een dijk en een plein.",
+    "Koos je \"een bos in de zomer\"? Dan denk je dat het in een bos is. Er is een dijk en een plein, dus het is een dorp.",
+    "Koos je \"een school in de stad\"? Dan denk je dat het op een school is. Er is geen school genoemd, maar een dorp aan zee."
+   ],
+   "uh": "Welke plek wordt genoemd?",
+   "ctx": "Het was een koude winterochtend in een klein dorp aan zee. De mist hing laag boven de dijk en de straatlantaarns brandden nog. Op het plein was het stil, alleen een meeuw krijste ergens boven de daken."
+  },
+  {
+   "v": "Waaruit blijkt dat het verhaal in de winter speelt?",
+   "o": [
+    "er vliegt een meeuw boven de daken",
+    "het dorp ligt aan zee",
+    "de tekst noemt kou en een winterochtend",
+    "het is stil op het plein"
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 2,
+   "u": "Zoek woorden over tijd. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"er vliegt een meeuw boven de daken\"? Dan denk je dat een meeuw de winter aantoont. Meeuwen zie je het hele jaar, dus dat bewijst geen seizoen.",
+    "Koos je \"het dorp ligt aan zee\"? Dan denk je dat de zee een seizoen aangeeft. Een dorp aan zee kan in elk seizoen bestaan, en zegt dus niets over de tijd.",
+    "Klopt: dat staat er letterlijk, en kou past bij de winter.",
+    "Koos je \"het is stil op het plein\"? Dan denk je dat stilte een seizoen aangeeft. Het kan overal stil zijn, en dus bewijst dat niets."
+   ],
+   "uh": "Welk woord noemt het seizoen?",
+   "ctx": "Het was een koude winterochtend in een klein dorp aan zee. De mist hing laag boven de dijk en de straatlantaarns brandden nog. Op het plein was het stil, alleen een meeuw krijste ergens boven de daken."
+  },
+  {
+   "v": "Welke sfeer roept de beschrijving op?",
+   "o": [
+    "stil en koud",
+    "vrolijk en druk op het plein",
+    "warm en gezellig voor iedereen",
+    "spannend en vol gevaar"
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 1,
+   "u": "Sfeer = gevoel. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: mist, stilte en een krijsende meeuw maken het somber.",
+    "Koos je \"vrolijk en druk op het plein\"? Dan denk je dat de sfeer vrolijk is. Er is geen drukte, en de plaats is stil.",
+    "Koos je \"warm en gezellig voor iedereen\"? Dan denk je dat de sfeer gezellig is. Het is koud en mistig, en dus niet gezellig.",
+    "Koos je \"spannend en vol gevaar\"? Dan denk je dat er gevaar is. Er gebeurt niets bedreigends, de sfeer is vooral stil."
+   ],
+   "uh": "Hoe voelt het?",
+   "ctx": "Het was een koude winterochtend in een klein dorp aan zee. De mist hing laag boven de dijk en de straatlantaarns brandden nog. Op het plein was het stil, alleen een meeuw krijste ergens boven de daken."
+  },
+  {
+   "v": "Welke gebeurtenis staat in het centrum van dit fragment?",
+   "o": [
+    "Jesse vindt zijn hond terug",
+    "Jesse verhuist naar een nieuw huis",
+    "Jesse kookt thee voor zijn moeder",
+    "Jesse krijgt een nieuwe hond"
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 3,
+   "u": "Wat gebeurt er? Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: de hond staat na drie weken weer in de gang.",
+    "Koos je \"Jesse verhuist naar een nieuw huis\"? Dan denk je dat Jesse verhuist. Dat staat nergens, en het gaat om zijn hond.",
+    "Koos je \"Jesse kookt thee voor zijn moeder\"? Dan denk je dat Jesse thee zet. Zijn moeder zet thee, en dat is bijzaak.",
+    "Koos je \"Jesse krijgt een nieuwe hond\"? Dan denk je dat de hond nieuw is. Het is zijn oude hond, die terugkomt."
+   ],
+   "uh": "Wie komt er terug?",
+   "ctx": "Toen Jesse de deur opendeed, stond zijn oude hond in de gang. De hond was drie weken weg geweest. Jesse viel op zijn knieën en huilde van blijdschap. Zijn moeder lachte vanuit de keuken en zette thee."
+  },
+  {
+   "v": "Welk thema past het best bij het fragment over Jesse?",
+   "o": [
+    "angst voor het onbekende",
+    "ruzie in een gezin",
+    "blijdschap om een weerzien",
+    "een reis naar het buitenland"
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 4,
+   "u": "Thema = weerzien. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"angst voor het onbekende\"? Dan denk je dat Jesse bang is. Hij huilt van blijdschap, en niet van angst.",
+    "Koos je \"ruzie in een gezin\"? Dan denk je dat het over ruzie gaat. Zijn moeder lacht, en er is geen ruzie.",
+    "Klopt: Jesse is zo blij dat zijn hond terug is dat hij huilt.",
+    "Koos je \"een reis naar het buitenland\"? Dan denk je dat het over reizen gaat. Het gaat over een hond in de gang, en niet over reizen."
+   ],
+   "uh": "Wat voelt Jesse?",
+   "ctx": "Toen Jesse de deur opendeed, stond zijn oude hond in de gang. De hond was drie weken weg geweest. Jesse viel op zijn knieën en huilde van blijdschap. Zijn moeder lachte vanuit de keuken en zette thee."
+  },
+  {
+   "v": "Wie is de hoofdpersoon in het kantinefragment?",
+   "o": [
+    "Mo",
+    "Lisa",
+    "de conciërge",
+    "de nieuwe school"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 0,
+   "u": "Wie staat centraal? Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"Mo\"? Dan denk je dat Mo de hoofdpersoon is. Mo helpt Lisa, maar het verhaal draait om Lisa.",
+    "Klopt: het verhaal draait om Lisa die niet durft te praten.",
+    "Koos je \"de conciërge\"? Dan denk je dat de conciërge de hoofdpersoon is. Hij komt even langs, en is een bijpersonage.",
+    "Koos je \"de nieuwe school\"? Dan denk je dat de school de hoofdpersoon is. De school is de plaats, en geen personage."
+   ],
+   "uh": "Wie durft niet?",
+   "ctx": "In de kantine zaten Lisa en haar vriendin Mo. Lisa, de nieuwe leerling, durfde niet te praten. Mo vertelde over haar eigen eerste dag op school. De conciërge liep langs en zei goedemorgen, daarna werd het weer stil."
+  },
+  {
+   "v": "Welke rol heeft de conciërge in het fragment?",
+   "o": [
+    "hoofdpersoon, want hij is volwassen",
+    "schrijver van het hele verhaal",
+    "de verteller van het hele verhaal",
+    "bijpersonage, kleine rol"
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 0,
+   "u": "Kleine rol = bijpersonage. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"hoofdpersoon, want hij is volwassen\"? Dan denk je dat de conciërge de hoofdpersoon is omdat hij volwassen is. Leeftijd bepaalt de rol niet, het gaat om wie centraal staat.",
+    "Koos je \"schrijver van het hele verhaal\"? Dan denk je dat de conciërge zelf het verhaal bedacht. Hij loopt alleen door de kantine, en een personage is geen schrijver.",
+    "Koos je \"de verteller van het hele verhaal\"? Dan denk je dat de conciërge het verhaal vertelt. De verteller blijft buiten beeld, en spreekt over Lisa en Mo.",
+    "Klopt: hij komt kort langs en heeft weinig invloed op het verhaal."
+   ],
+   "uh": "Hoe belangrijk is hij?",
+   "ctx": "In de kantine zaten Lisa en haar vriendin Mo. Lisa, de nieuwe leerling, durfde niet te praten. Mo vertelde over haar eigen eerste dag op school. De conciërge liep langs en zei goedemorgen, daarna werd het weer stil."
+  },
+  {
+   "v": "Wat probeert Mo met haar verhaal te bereiken?",
+   "o": [
+    "de conciërge overtuigen",
+    "Lisa geruststellen",
+    "zelf aandacht krijgen",
+    "een ruzie oplossen"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 3,
+   "u": "Wat wil Mo? Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"de conciërge overtuigen\"? Dan denk je dat Mo de conciërge wil overtuigen. Hij komt alleen langs, en Mo praat tegen Lisa.",
+    "Klopt: door haar eigen eerste dag te vertellen, laat Mo zien dat Lisa niet alleen is.",
+    "Koos je \"zelf aandacht krijgen\"? Dan denk je dat Mo aandacht zoekt. Ze vertelt om Lisa te helpen, en niet om zelf op te vallen.",
+    "Koos je \"een ruzie oplossen\"? Dan denk je dat er een ruzie is. Er is geen ruzie in het fragment, alleen een onzekere Lisa."
+   ],
+   "uh": "Voor wie vertelt ze?",
+   "ctx": "In de kantine zaten Lisa en haar vriendin Mo. Lisa, de nieuwe leerling, durfde niet te praten. Mo vertelde over haar eigen eerste dag op school. De conciërge liep langs en zei goedemorgen, daarna werd het weer stil."
+  },
+  {
+   "v": "Welk thema past bij het verhaal over Sam?",
+   "o": [
+    "eenzaamheid en vriendschap",
+    "moed in een oorlog",
+    "jaloezie op een broer",
+    "een reis naar het buitenland"
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 4,
+   "u": "Thema = eenzaamheid. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: Sam is eenzaam en voelt zich gezien door een vriend.",
+    "Koos je \"moed in een oorlog\"? Dan denk je dat het over moed in oorlog gaat. Er is geen oorlog, en het gaat over vriendschap.",
+    "Koos je \"jaloezie op een broer\"? Dan denk je dat Sam jaloers is. Er is geen broer genoemd, en het gaat over eenzaamheid.",
+    "Koos je \"een reis naar het buitenland\"? Dan denk je dat het over reizen gaat. Er is geen reis, en het gaat over eenzaamheid."
+   ],
+   "uh": "Wat mist Sam?",
+   "ctx": "Sam durfde niet te zeggen dat hij een vriend zocht. Hij hielp iedereen op school, maar niemand vroeg hoe het met hem ging. Pas toen Noor hem een kaartje gaf met \"Wil je mijn vriend zijn?\" voelde hij zich gezien."
+  },
+  {
+   "v": "Welk karakter heeft Sam?",
+   "o": [
+    "brutaal en heel stoer",
+    "luid en overal aanwezig",
+    "jaloers en gemeen naar anderen",
+    "behulpzaam en onzeker"
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 3,
+   "u": "Gedrag laat karakter zien. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"brutaal en heel stoer\"? Dan denk je dat Sam stoer is. Hij durft niets te zeggen, dus hij is onzeker.",
+    "Koos je \"luid en overal aanwezig\"? Dan denk je dat Sam luid is. Er staat dat niemand vraagt hoe het met hem gaat, dus hij valt weinig op.",
+    "Koos je \"jaloers en gemeen naar anderen\"? Dan denk je dat Sam gemeen is. Hij hielp juist iedereen, dus hij is behulpzaam.",
+    "Klopt: hij helpt iedereen maar durft niet te zeggen dat hij een vriend zoekt."
+   ],
+   "uh": "Wat doet Sam?",
+   "ctx": "Sam durfde niet te zeggen dat hij een vriend zocht. Hij hielp iedereen op school, maar niemand vroeg hoe het met hem ging. Pas toen Noor hem een kaartje gaf met \"Wil je mijn vriend zijn?\" voelde hij zich gezien."
+  },
+  {
+   "v": "Welk detail in de beschrijving versterkt de stille sfeer het meest?",
+   "o": [
+    "de straatlantaarns branden nog steeds",
+    "het was een koude winterochtend",
+    "een meeuw krijste boven de daken",
+    "het plein is erg groot en leeg"
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 1,
+   "u": "Detail versterkt de sfeer. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"de straatlantaarns branden nog steeds\"? Dan denk je dat de lantaarns de stilte versterken. Ze laten alleen zien dat het vroeg is, en de meeuw maakt de stilte voelbaar.",
+    "Koos je \"het was een koude winterochtend\"? Dan denk je dat de winter de stilte versterkt. Hij verklaart de kou, maar de meeuw laat de stilte horen.",
+    "Klopt: één geluid in de stilte laat de stilte nog groter lijken.",
+    "Koos je \"het plein is erg groot en leeg\"? Dan denk je dat het plein de stilte versterkt. Dat staat niet in de tekst, en de meeuw zorgt voor de sfeer."
+   ],
+   "uh": "Welk geluid hoor je?",
+   "ctx": "Het was een koude winterochtend in een klein dorp aan zee. De mist hing laag boven de dijk en de straatlantaarns brandden nog. Op het plein was het stil, alleen een meeuw krijste ergens boven de daken."
+  },
+  {
+   "v": "Welke zin laat zien dat Mila zich zorgen maakt?",
+   "o": [
+    "Haar rugzak was zwaar.",
+    "Ze trok haar capuchon over haar hoofd.",
+    "\"Als hij nu niet komt,\" mompelde ze",
+    "Het regende bij de bushalte."
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 3,
+   "u": "Gedachten laten gevoel zien. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"Haar rugzak was zwaar.\"? Dan denk je dat dit zorg toont. De rugzak is een lichamelijk detail, en geen gevoel.",
+    "Koos je \"Ze trok haar capuchon over haar hoofd.\"? Dan denk je dat dit zorg toont. Het is een beschermend gebaar tegen de regen, en zegt weinig over haar gevoel.",
+    "Klopt: ze mompelt en overweegt alleen te gaan, wat onrust toont.",
+    "Koos je \"Het regende bij de bushalte.\"? Dan denk je dat dit zorg toont. Het is een omschrijving van het weer, en geen gedachte van Mila."
+   ],
+   "uh": "Welke zin toont onrust?",
+   "ctx": "Mila wachtte bij de bushalte in de regen. Haar rugzak was zwaar en haar broer was alweer te laat. Ze keek op haar horloge: tien voor acht. \"Als hij nu niet komt,\" mompelde ze, \"ga ik alleen.\" Ze zuchtte en trok haar capuchon over haar hoofd."
+  },
+  {
+   "v": "Waarom is de kaart van Noor een keerpunt in het verhaal?",
+   "o": [
+    "Sam krijgt er een groot cadeau van",
+    "Sam wil de hele school verlaten",
+    "Noor blijkt zijn zus te zijn thuis",
+    "Sam voelt zich niet meer alleen"
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 4,
+   "u": "Keerpunt = verandering. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"Sam krijgt er een groot cadeau van\"? Dan denk je dat de kaart een cadeau is. Het is een vraag om vriendschap, en daar draait het om.",
+    "Koos je \"Sam wil de hele school verlaten\"? Dan denk je dat Sam weg wil. Hij voelt zich juist gezien, en blijft.",
+    "Koos je \"Noor blijkt zijn zus te zijn thuis\"? Dan denk je dat Noor zijn zus is. Dat staat nergens, en zij vraagt hem als vriend.",
+    "Klopt: de kaart lost zijn probleem op en toont het thema."
+   ],
+   "uh": "Wat verandert er?",
+   "ctx": "Sam durfde niet te zeggen dat hij een vriend zocht. Hij hielp iedereen op school, maar niemand vroeg hoe het met hem ging. Pas toen Noor hem een kaartje gaf met \"Wil je mijn vriend zijn?\" voelde hij zich gezien."
+  },
+  {
+   "v": "Hoe laat de schrijver zien dat Lisa nieuw en onzeker is?",
+   "o": [
+    "ze durft niet te praten",
+    "ze zit in de kantine",
+    "ze heeft een vriendin",
+    "de conciërge zegt goedemorgen"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 0,
+   "u": "Gedrag toont karakter. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: dat is gedrag en toont haar onzekerheid.",
+    "Koos je \"ze zit in de kantine\"? Dan denk je dat de plaats haar onzekerheid toont. Veel leerlingen zitten daar, en het zegt niets over haar karakter.",
+    "Koos je \"ze heeft een vriendin\"? Dan denk je dat een vriendin onzekerheid toont. Het is juist een steun, en toont iets anders.",
+    "Koos je \"de conciërge zegt goedemorgen\"? Dan denk je dat de groet haar onzekerheid toont. Het is gewoon een groet, en zegt niets over Lisa."
+   ],
+   "uh": "Wat doet Lisa?",
+   "ctx": "In de kantine zaten Lisa en haar vriendin Mo. Lisa, de nieuwe leerling, durfde niet te praten. Mo vertelde over haar eigen eerste dag op school. De conciërge liep langs en zei goedemorgen, daarna werd het weer stil."
+  },
+  {
+   "v": "Waaruit blijkt dat de hond een tijd weg was?",
+   "o": [
+    "Jesse opent de deur van het huis",
+    "er staat dat hij drie weken weg was",
+    "zijn moeder lacht vanuit de keuken",
+    "de hond staat in de gang"
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 2,
+   "u": "Zoek de tijdsduur. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"Jesse opent de deur van het huis\"? Dan denk je dat het openen van de deur de tijd laat zien. Dat is een gebeurtenis, en geeft geen tijdsduur.",
+    "Klopt: de tekst noemt letterlijk de tijdsduur van drie weken.",
+    "Koos je \"zijn moeder lacht vanuit de keuken\"? Dan denk je dat de lach de tijd laat zien. Het is een reactie van een bijpersonage, en zegt niets over de duur.",
+    "Koos je \"de hond staat in de gang\"? Dan denk je dat de plek de tijd laat zien. De plaats zegt niets over hoe lang, alleen waar de hond staat."
+   ],
+   "uh": "Welk gegeven noemt de tijd?",
+   "ctx": "Toen Jesse de deur opendeed, stond zijn oude hond in de gang. De hond was drie weken weg geweest. Jesse viel op zijn knieën en huilde van blijdschap. Zijn moeder lachte vanuit de keuken en zette thee."
+  },
+  {
+   "v": "Hoe verandert de sfeer na het kort langskomen van de conciërge?",
+   "o": [
+    "het wordt vrolijk en heel luid in de kantine",
+    "het wordt opeens gevaarlijk daar",
+    "het wordt een groot feest voor iedereen",
+    "het blijft stil, Lisa praat nog niet"
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 1,
+   "u": "Stil blijft stil. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"het wordt vrolijk en heel luid in de kantine\"? Dan denk je dat de sfeer vrolijk wordt. Er staat dat het weer stil werd, dus niet luid.",
+    "Koos je \"het wordt opeens gevaarlijk daar\"? Dan denk je dat het gevaarlijk wordt. Er staat niets dat dreigend is, en het is stil.",
+    "Koos je \"het wordt een groot feest voor iedereen\"? Dan denk je dat er een feest begint. Het blijft stil, en niets wijst op een feest.",
+    "Klopt: de zin \"daarna werd het weer stil\" laat zien dat er niets verandert."
+   ],
+   "uh": "Wat gebeurt er daarna?",
+   "ctx": "In de kantine zaten Lisa en haar vriendin Mo. Lisa, de nieuwe leerling, durfde niet te praten. Mo vertelde over haar eigen eerste dag op school. De conciërge liep langs en zei goedemorgen, daarna werd het weer stil."
+  },
+  {
+   "v": "Welke gedachte uit het fragment kan de schrijver willen meegeven?",
+   "o": [
+    "blijdschap bij een weerzien",
+    "honden zijn altijd ongehoorzaam en lastig",
+    "je moet nooit een hond houden thuis",
+    "thee is lekker in de keuken"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 4,
+   "u": "Boodschap = weerzien. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: Jesses tranen laten zien hoe belangrijk de hond voor hem is.",
+    "Koos je \"honden zijn altijd ongehoorzaam en lastig\"? Dan denk je dat de schrijver dit wil zeggen. De hond komt juist terug, en het gaat over blijdschap.",
+    "Koos je \"je moet nooit een hond houden thuis\"? Dan denk je dat de schrijver afraadt. Jesse is blij met zijn hond, dus de boodschap is positief.",
+    "Koos je \"thee is lekker in de keuken\"? Dan denk je dat de thee de boodschap is. De thee is bijzaak, en de boodschap is blijdschap."
+   ],
+   "uh": "Wat voelt Jesse?",
+   "ctx": "Toen Jesse de deur opendeed, stond zijn oude hond in de gang. De hond was drie weken weg geweest. Jesse viel op zijn knieën en huilde van blijdschap. Zijn moeder lachte vanuit de keuken en zette thee."
+  },
+  {
+   "v": "Welke rol heeft Milas broer in het fragment?",
+   "o": [
+    "hoofdpersoon, want hij is te laat",
+    "bijpersonage, afwezig maar belangrijk",
+    "verteller van het hele verhaal",
+    "schrijver van het hele verhaal"
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 0,
+   "u": "Afwezig bijpersonage. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"hoofdpersoon, want hij is te laat\"? Dan denk je dat de broer de hoofdpersoon is omdat hij te laat is. Het verhaal volgt Mila, en hij is afwezig.",
+    "Klopt: hij is afwezig en bepaalt toch haar reactie.",
+    "Koos je \"verteller van het hele verhaal\"? Dan denk je dat de broer vertelt. Er is een buitenstaande verteller, en hij komt niet voor.",
+    "Koos je \"schrijver van het hele verhaal\"? Dan denk je dat de broer het schreef. Hij is een personage in het verhaal, en geen schrijver."
+   ],
+   "uh": "Wie ontbreekt?",
+   "ctx": "Mila wachtte bij de bushalte in de regen. Haar rugzak was zwaar en haar broer was alweer te laat. Ze keek op haar horloge: tien voor acht. \"Als hij nu niet komt,\" mompelde ze, \"ga ik alleen.\" Ze zuchtte en trok haar capuchon over haar hoofd."
+  }
+ ],
+ "oe": [
+  {
+   "bron": "Examenstijl",
+   "ctx": "Mila wachtte bij de bushalte in de regen. Haar rugzak was zwaar en haar broer was alweer te laat. Ze keek op haar horloge: tien voor acht. \"Als hij nu niet komt,\" mompelde ze, \"ga ik alleen.\" Ze zuchtte en trok haar capuchon over haar hoofd.",
+   "v": "Wie is de hoofdpersoon en welk karakter heeft ze? Leg uit met een gedrag uit de tekst.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Mila is de hoofdpersoon (1p). Ze is ongeduldig, want ze kijkt op haar horloge en zegt dat ze alleen gaat (2p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Het was een koude winterochtend in een klein dorp aan zee. De mist hing laag boven de dijk en de straatlantaarns brandden nog. Op het plein was het stil, alleen een meeuw krijste ergens boven de daken.",
+   "v": "Welke plaats en tijd worden genoemd en welke sfeer roept de tekst op?",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Een klein dorp aan zee in de winter (2p). De sfeer is stil, koud en somber (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Toen Jesse de deur opendeed, stond zijn oude hond in de gang. De hond was drie weken weg geweest. Jesse viel op zijn knieën en huilde van blijdschap. Zijn moeder lachte vanuit de keuken en zette thee.",
+   "v": "Beschrijf de gebeurtenis en het thema van dit fragment.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "De oude hond is terug na drie weken (1p). Thema: blijdschap om een weerzien (2p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Sam durfde niet te zeggen dat hij een vriend zocht. Hij hielp iedereen op school, maar niemand vroeg hoe het met hem ging. Pas toen Noor hem een kaartje gaf met \"Wil je mijn vriend zijn?\" voelde hij zich gezien.",
+   "v": "Welk thema heeft het verhaal over Sam en welk moment verandert zijn situatie?",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Eenzaamheid en vriendschap (1p). Het kaartje van Noor met de vraag of hij haar vriend wil zijn (2p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "In de kantine zaten Lisa en haar vriendin Mo. Lisa, de nieuwe leerling, durfde niet te praten. Mo vertelde over haar eigen eerste dag op school. De conciërge liep langs en zei goedemorgen, daarna werd het weer stil.",
+   "v": "Noem de hoofdpersoon en één bijpersonage en leg uit hoe je dat ziet.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Lisa is de hoofdpersoon en staat centraal (2p). De conciërge is een bijpersonage met een kleine rol (1p)."
+  }
+ ]
+}

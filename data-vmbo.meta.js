@@ -537,7 +537,30 @@ var VAKKEN_VMBO = [
     "nSv": 35,
     "nOe": 0,
     "nBeg": 9,
-    "hasSam": true
+    "hasSam": true,
+    "leerdoelen": [
+     {
+      "id": "E1",
+      "lo": "nl.E.1",
+      "gs": 2,
+      "naam": "Verhaalelementen: personages, tijd, plaats en gebeurtenissen",
+      "beschrijving": "Je herkent in een verhaal de hoofdpersoon en bijpersonages, de plaats en de tijd, de gebeurtenissen en het thema, en je ziet aan gedrag wat voor karakter iemand heeft.",
+      "ceStatus": "SE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Personages",
+       "Plaats en sfeer",
+       "Tijd",
+       "Gebeurtenissen",
+       "Thema"
+      ],
+      "nSv": 27,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
+     }
+    ]
    }
   ]
  },

@@ -19,7 +19,7 @@
    leerdoelen van het domein af, vink dan ook het domein af.
 4. Bij een rode poort: niets pushen, wél melden.
 
-> Voortgang: **98 leerdoelen op v2** (havo bi.M3, nl.A1 t/m nl.A7, nl.B1 t/m nl.B5, nl.C1 t/m nl.C6, nl.D1 t/m nl.D6, nl.F1 t/m nl.F6, en.A1, en.A2, en.A3, en.A4, en.A5, en.A6, en.A7, en.A8, en.B1, en.B2, en.B3, en.B4, en.B5, en.B6, en.B7, en.B8, vwo nl.A1, vwo nl.A2, vwo nl.A3, vwo nl.A4, vwo nl.A5, vwo nl.A6, vwo nl.A7, vwo nl.B1, vwo nl.B2, vwo nl.B3, vwo nl.B4, vwo nl.B5, vwo nl.C1, vwo nl.C2, vwo nl.C3, vwo nl.C4, vwo nl.C5, vwo nl.C6, vwo nl.D1, vwo nl.D2, vwo nl.D3, vwo nl.D4, vwo nl.D5, vwo nl.D6, vwo nl.E1, vwo nl.E2, vwo nl.E3, vwo nl.E4, vwo nl.E5, vwo nl.E6, vmbo nl.A1, vmbo nl.A2, vmbo nl.A3, vmbo nl.A4, vmbo nl.A5, vmbo nl.B1, vmbo nl.B2, vmbo nl.B3, vmbo nl.B4, vmbo nl.B5, vmbo nl.C1, vmbo nl.C2, vmbo nl.C3, vmbo nl.C4, vmbo nl.C5, vmbo nl.D1, vmbo nl.D2, vmbo nl.D3, vmbo nl.D4, vmbo nl.D5, vmbo nl.D6). Werk dit getal bij bij elke afronding.
+> Voortgang: **99 leerdoelen op v2** (havo bi.M3, nl.A1 t/m nl.A7, nl.B1 t/m nl.B5, nl.C1 t/m nl.C6, nl.D1 t/m nl.D6, nl.F1 t/m nl.F6, en.A1, en.A2, en.A3, en.A4, en.A5, en.A6, en.A7, en.A8, en.B1, en.B2, en.B3, en.B4, en.B5, en.B6, en.B7, en.B8, vwo nl.A1, vwo nl.A2, vwo nl.A3, vwo nl.A4, vwo nl.A5, vwo nl.A6, vwo nl.A7, vwo nl.B1, vwo nl.B2, vwo nl.B3, vwo nl.B4, vwo nl.B5, vwo nl.C1, vwo nl.C2, vwo nl.C3, vwo nl.C4, vwo nl.C5, vwo nl.C6, vwo nl.D1, vwo nl.D2, vwo nl.D3, vwo nl.D4, vwo nl.D5, vwo nl.D6, vwo nl.E1, vwo nl.E2, vwo nl.E3, vwo nl.E4, vwo nl.E5, vwo nl.E6, vmbo nl.A1, vmbo nl.A2, vmbo nl.A3, vmbo nl.A4, vmbo nl.A5, vmbo nl.B1, vmbo nl.B2, vmbo nl.B3, vmbo nl.B4, vmbo nl.B5, vmbo nl.C1, vmbo nl.C2, vmbo nl.C3, vmbo nl.C4, vmbo nl.C5, vmbo nl.D1, vmbo nl.D2, vmbo nl.D3, vmbo nl.D4, vmbo nl.D5, vmbo nl.D6, vmbo nl.E1). Werk dit getal bij bij elke afronding.
 > Oude stand (v1, domeinniveau): 7/220 domeinen; die tellen niet meer als af.
 >
 > **Omvang (okt 2026):** 220 domeinen (havo 59, vwo 84, vmbo 77) × gemiddeld ~6 leerdoelen
@@ -127,6 +127,12 @@
   - [x] D5 · nl.D.5 Woordspelling: d of t, ei of ij en samenstellingen · 26 vragen (R1 7, R2 9, R3 10, 21 met eigen zinnen of tekst), 12 begrippen, 4 figuren (persoonsvorm, 't kofschip, ei of ij, samenstellingen en hoofdletters), geen clip
   - [x] D6 · nl.D.6 Zinsbouw en leestekens · 26 vragen (R1 7, R2 11, R3 8, 19 met eigen tekst), 12 begrippen, 4 figuren (zin met persoonsvorm, leestekens, komma, directe rede), geen clip
 - [ ] **VMBO · Nederlands** (`nl`) · domein E — Fictie
+  - [x] E1 · nl.E.1 Verhaalelementen: personages, tijd, plaats en gebeurtenissen · 27 vragen (R1 7, R2 12, R3 8, 20 met eigen verhaalfragment), 12 begrippen, 4 figuren (onderdelen, hoofd- en bijpersonages, plaats-tijd-sfeer, naar het thema), geen clip
+  - [ ] E2 · nl.E.2 Perspectief: de ik-verteller en de hij- of zij-verteller
+  - [ ] E3 · nl.E.3 Spanning en opbouw van een verhaal
+  - [ ] E4 · nl.E.4 Genres herkennen
+  - [ ] E5 · nl.E.5 Gedichten lezen: strofe, rijm en beeldspraak
+  - [ ] E6 · nl.E.6 Je mening over een verhaal onderbouwen
 - [x] **HAVO · Engels** (`en`) · domein A — Woordenschat & grammatica (8 van 8 leerdoelen op v2)
   - [x] A1 · en.A.1 Woordbetekenis afleiden uit de context (ook synoniemen en tegenstellingen) · 27 vragen (R1 7, R2 9, R3 11, 11 met tekst), 12 begrippen, 4 figuren (aanwijzing in de zin, tegenstelling en gevolg, meer betekenissen, controleren), geen clip
   - [x] A2 · en.A.2 Woordvorming: voor- en achtervoegsels · 28 vragen (R1 7, R2 12, R3 9, 17 met tekst), 12 begrippen, 4 figuren (delen van een woord, voorvoegsels, woordfamilie, spelling), geen clip
