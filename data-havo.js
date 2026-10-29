@@ -115048,6 +115048,690 @@ var VAKKEN = [
       "t": "Conclusie",
       "d": "\"that's why\", \"as a result\""
      }
+    ],
+    "leerdoelen": [
+     {
+      "id": "C1",
+      "lo": "en.C.1",
+      "gs": 2,
+      "naam": "Relevante informatie vinden in een gesproken tekst",
+      "beschrijving": "Je leert bij een luistertekst gericht te luisteren naar tijden, prijzen, dagen en plaatsen, en je herkent verbeteringen en afleiders van de spreker.",
+      "ceStatus": "CE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Voorbereiden op de luisteropdracht",
+       "Tijden, getallen en prijzen",
+       "Verbeteringen van de spreker",
+       "Informatie kiezen bij een behoefte",
+       "Afleiders herkennen"
+      ],
+      "sam": "Bij een luistertekst lees je eerst de vragen en zoek je de sleutelwoorden, zodat je weet wat je zoekt. Je luistert dan gericht naar een tijd, prijs, dag of plaats. Spreekt iemand zichzelf tegen met sorry, I mean, dan telt de verbetering. Let op afleiders: oude prijzen, begintijden in plaats van eindtijden en voorwaarden. Een onbekend woord hoeft niet te storen als je de rest van de zin begrijpt.",
+      "begrippen": [
+       {
+        "t": "Luisteropdracht",
+        "d": "De vraag of taak die je bij een opname krijgt."
+       },
+       {
+        "t": "Sleutelwoord",
+        "d": "Een belangrijk woord in de vraag waarop je let."
+       },
+       {
+        "t": "Klokstijd",
+        "d": "Het uur en de minuten, zoals half past two of quarter to nine."
+       },
+       {
+        "t": "Verbetering",
+        "d": "Een spreker zegt iets anders om een eerdere fout te herstellen."
+       },
+       {
+        "t": "Afleider",
+        "d": "Informatie die lijkt te passen maar niet het antwoord is."
+       },
+       {
+        "t": "Aankondiging",
+        "d": "Een korte tekst met nieuws, zoals op een station of school."
+       },
+       {
+        "t": "Reservering",
+        "d": "Een tafel of plaats vastleggen met dag, tijd en naam."
+       },
+       {
+        "t": "Korting",
+        "d": "Een lagere prijs, bijvoorbeeld voor studenten."
+       },
+       {
+        "t": "Voorwaarde",
+        "d": "Iets dat moet kloppen voordat een regel geldt."
+       },
+       {
+        "t": "Begintijd",
+        "d": "Het moment waarop iets begint."
+       },
+       {
+        "t": "Eindtijd",
+        "d": "Het moment waarop iets stopt."
+       },
+       {
+        "t": "Gegeven",
+        "d": "Een stukje informatie zoals een tijd, naam of bedrag."
+       }
+      ],
+      "sv": [
+       {
+        "v": "What is useful to do before you listen to a recording?",
+        "o": [
+         "translate the whole recording into Dutch first",
+         "read the questions and find the key words",
+         "look at the answer options and pick the longest one",
+         "write down every word you hear in the recording"
+        ],
+        "c": 1,
+        "d": 1,
+        "s": 0,
+        "u": "Lees eerst de vragen en zoek sleutelwoorden.",
+        "uo": [
+         "Koos je \"translate the whole recording into Dutch first\"? Dan denk je dat je eerst moet vertalen. Dat kan niet, want je hebt de opname nog niet gehoord, en je verspilt je tijd.",
+         "Klopt: als je de vragen kent, weet je waar je tijdens het luisteren op moet letten.",
+         "Koos je \"look at the answer options and pick the longest one\"? Dan denk je dat de langste optie het antwoord is. De lengte zegt niets over de inhoud, en je moet luisteren naar het gegeven.",
+         "Koos je \"write down every word you hear in the recording\"? Dan denk je dat je alles op moet schrijven. Dat lukt niet in de tijd, en je hoeft alleen het gevraagde gegeven te noteren."
+        ],
+        "uh": "Wat doe je vóór het luisteren?"
+       },
+       {
+        "v": "Why is it useful to know the question before you listen?",
+        "o": [
+         "you do not have to listen to the recording any more",
+         "the speaker will repeat the question for you twice",
+         "the recording becomes slower when you read ahead",
+         "you know what information to listen for"
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 0,
+        "u": "Vraag lezen = gericht luisteren.",
+        "uo": [
+         "Koos je \"you do not have to listen to the recording any more\"? Dan denk je dat de vraag het antwoord al geeft. De vraag zegt alleen wát je zoekt, en het antwoord hoor je pas in de opname.",
+         "Koos je \"the speaker will repeat the question for you twice\"? Dan denk je dat de spreker de vraag herhaalt. Dat doet hij niet, want de vragen staan op papier.",
+         "Koos je \"the recording becomes slower when you read ahead\"? Dan denk je dat de opname langzamer wordt. De snelheid blijft gelijk, en lezen heeft daar geen invloed op.",
+         "Klopt: je weet dan of je op een tijd, een prijs of een plaats moet letten."
+        ],
+        "uh": "Waarom lees je de vraag eerst?"
+       },
+       {
+        "v": "You hear \"half past two\". Which time is that?",
+        "o": [
+         "2.30",
+         "1.30 in the afternoon, thirty minutes before two",
+         "2.15, a quarter after two o'clock in the afternoon",
+         "3.30, half an hour after three o'clock exactly"
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 1,
+        "u": "Half past two = 2.30. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: half past betekent dat het een half uur na het hele uur is.",
+         "Koos je \"1.30 in the afternoon, thirty minutes before two\"? Dan denk je dat half past betekent dat het eerder is dan twee uur. Past betekent juist na het hele uur, dus het is niet half twee in Nederlandse zin.",
+         "Koos je \"2.15, a quarter after two o'clock in the afternoon\"? Dan denk je dat half past hetzelfde is als quarter past. Quarter is een kwartier, en half is een half uur.",
+         "Koos je \"3.30, half an hour after three o'clock exactly\"? Dan denk je dat past betekent dat je het volgende uur neemt. Het is half uur na twee, dus niet na drie."
+        ],
+        "uh": "Welke tijd hoor je?"
+       },
+       {
+        "v": "You hear \"quarter to nine\". Which time is that?",
+        "o": [
+         "9.15, a quarter after nine o'clock in the evening",
+         "9.45, a quarter before ten o'clock in the evening",
+         "8.45",
+         "8.15, a quarter after eight in the morning hours"
+        ],
+        "c": 2,
+        "d": 1,
+        "s": 1,
+        "u": "Quarter to nine = 8.45. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"9.15, a quarter after nine o'clock in the evening\"? Dan denk je dat to hetzelfde is als past. To betekent vóór het hele uur, dus niet na negen.",
+         "Koos je \"9.45, a quarter before ten o'clock in the evening\"? Dan denk je dat het een uur te laat is. Je telt vanaf negen terug, en niet vanaf tien.",
+         "Klopt: quarter to betekent een kwartier vóór het hele uur.",
+         "Koos je \"8.15, a quarter after eight in the morning hours\"? Dan denk je dat quarter to hetzelfde is als quarter past. To gaat terug naar het hele uur, dus 8.15 klopt niet."
+        ],
+        "uh": "Welke tijd hoor je?"
+       },
+       {
+        "v": "You hear \"ten to one\". Which time is that?",
+        "o": [
+         "1.10, ten minutes after one o'clock at midday",
+         "10.01, which is the number ten followed by one",
+         "12.50",
+         "1.50, which is fifty minutes after one o'clock"
+        ],
+        "c": 2,
+        "d": 1,
+        "s": 1,
+        "u": "Ten to one = 12.50. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"1.10, ten minutes after one o'clock at midday\"? Dan denk je dat to hetzelfde is als past. To betekent vóór het hele uur, dus je telt terug vanaf één uur.",
+         "Koos je \"10.01, which is the number ten followed by one\"? Dan denk je dat je de getallen achter elkaar zet. Dan lees je het als een getal, en niet als klokstijd.",
+         "Klopt: ten to one is tien minuten vóór één uur, dus 12.50.",
+         "Koos je \"1.50, which is fifty minutes after one o'clock\"? Dan denk je dat je tien en één optelt. Je moet de uren terugrekenen, en bij ten to ga je terug."
+        ],
+        "uh": "Welke tijd hoor je?"
+       },
+       {
+        "v": "Which words show that a speaker is correcting himself?",
+        "o": [
+         "\"sorry, I mean ...\" or \"no, wait ...\"",
+         "\"by the way\" at the start of a sentence",
+         "\"thank you very much\" at the end of a call",
+         "\"for example\" before a longer story"
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 2,
+        "u": "Verbetering: sorry, I mean. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: na zulke woorden komt de juiste informatie en dat is vaak het antwoord.",
+         "Koos je \"by the way at the start of a sentence\"? Dan denk je dat by the way een verbetering is. Dat leidt een nieuw onderwerp in, en verbetert niets wat eerder gezegd werd.",
+         "Koos je \"thank you very much at the end of a call\"? Dan denk je dat dit een verbetering aangeeft. Dit is een beleefd slot, en bevat geen nieuw gegeven.",
+         "Koos je \"for example before a longer story\"? Dan denk je dat for example een correctie is. Het geeft een voorbeeld, en maakt iets ervoor niet ongeldig."
+        ],
+        "uh": "Welke woorden corrigeren?"
+       },
+       {
+        "v": "What should you do when you do not understand one word?",
+        "o": [
+         "stop listening and give up on the question",
+         "pick the first answer without listening further",
+         "write the word down five times in your notes",
+         "keep listening to the rest of the sentence"
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 4,
+        "u": "Blijf luisteren. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"stop listening and give up on the question\"? Dan denk je dat je moet stoppen. Een onbekend woord is meestal niet nodig, en de rest bevat het antwoord.",
+         "Koos je \"pick the first answer without listening further\"? Dan denk je dat je moet gokken. Je hebt de rest nog niet gehoord, en je kunt het antwoord alsnog vinden.",
+         "Koos je \"write the word down five times in your notes\"? Dan denk je dat het woord belangrijk is. Je hebt de tijd niet, en je moet verder luisteren.",
+         "Klopt: vaak maakt de rest van de zin duidelijk wat je moet weten."
+        ],
+        "uh": "Wat doe je bij een onbekend woord?"
+       },
+       {
+        "v": "Which train should passengers take now?",
+        "o": [
+         "the 9.15 from platform 2 to Utrecht",
+         "the 9.40 from platform 4",
+         "the 9.40 from platform 2 next to the desk",
+         "the 9.50 from platform 4 to Amsterdam"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 3,
+        "u": "Annulering + alternatief. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"the 9.15 from platform 2 to Utrecht\"? Dan denk je dat de 9.15 nog rijdt. Die is geannuleerd, dus je moet een andere trein nemen.",
+         "Klopt: de 9.15 is geannuleerd en de 9.40 vertrekt van spoor 4.",
+         "Koos je \"the 9.40 from platform 2 next to the desk\"? Dan denk je dat spoor 2 de goede plek is. Bij spoor 2 is alleen het loket, en de trein vertrekt van spoor 4.",
+         "Koos je \"the 9.50 from platform 4 to Amsterdam\"? Dan denk je dat dit de vervangende trein is. De tijd en de bestemming komen niet voor, dus je moet luisteren naar de genoemde trein."
+        ],
+        "uh": "Welke trein neem je?",
+        "ctx": "You hear the local radio news at eight o'clock. First, a station announcement: \"Good morning, passengers. The 9.15 train to Utrecht has been cancelled because of a signal failure. Passengers should take the 9.40 train from platform 4 instead. Tickets remain valid. Information is available at the desk next to platform 2.\" Then an advert: \"This weekend only at SportZone: running shoes at 30 percent off, from 59 pounds instead of 85. The sale starts on Saturday at 9 a.m. and ends on Sunday at six. Show your student card and you get an extra 5 pounds off.\""
+       },
+       {
+        "v": "Why has the 9.15 train been cancelled?",
+        "o": [
+         "because of heavy snow on the tracks",
+         "because the driver is ill this morning",
+         "because too few passengers want to travel",
+         "because of a signal failure"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 4,
+        "u": "Reden = signal failure. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"because of heavy snow on the tracks\"? Dan denk je dat het weer de oorzaak is. Over het weer wordt niets gezegd, dus dit is een verzonnen reden.",
+         "Koos je \"because the driver is ill this morning\"? Dan denk je dat de machinist ziek is. Dat noemt de omroeper niet, en je mag alleen noteren wat je hoort.",
+         "Koos je \"because too few passengers want to travel\"? Dan denk je dat het te druk of te rustig is. Dat staat er niet, want de oorzaak is een storing.",
+         "Klopt: de omroeper noemt een signaalstoring als reden."
+        ],
+        "uh": "Waarom rijdt hij niet?",
+        "ctx": "You hear the local radio news at eight o'clock. First, a station announcement: \"Good morning, passengers. The 9.15 train to Utrecht has been cancelled because of a signal failure. Passengers should take the 9.40 train from platform 4 instead. Tickets remain valid. Information is available at the desk next to platform 2.\" Then an advert: \"This weekend only at SportZone: running shoes at 30 percent off, from 59 pounds instead of 85. The sale starts on Saturday at 9 a.m. and ends on Sunday at six. Show your student card and you get an extra 5 pounds off.\""
+       },
+       {
+        "v": "On which day does the caller finally book the table?",
+        "o": [
+         "on Friday at seven o'clock in the evening",
+         "on Saturday",
+         "on Sunday, the day after the busy Saturday",
+         "on Thursday, one day before the first choice"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 2,
+        "u": "Laatste dag telt. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"on Friday at seven o'clock in the evening\"? Dan denk je dat de eerste dag blijft staan. De beller corrigeert zichzelf, dus de eerste dag vervalt.",
+         "Klopt: de beller zegt sorry, I mean Saturday, dus dat is de verbeterde dag.",
+         "Koos je \"on Sunday, the day after the busy Saturday\"? Dan denk je dat zondag wordt geboekt. Zondag komt niet voor, en je moet alleen de genoemde dagen vergelijken.",
+         "Koos je \"on Thursday, one day before the first choice\"? Dan denk je dat donderdag wordt geboekt. Die dag wordt niet genoemd, dus het is verzonnen."
+        ],
+        "uh": "Welke dag is het?",
+        "ctx": "You hear two phone calls. In the first, a woman calls a restaurant: \"Hello, I would like to book a table for Friday at seven. Oh, sorry, I mean Saturday, Friday is full. Four people, and one of us is allergic to nuts. Could you put it under the name Jansen, J-A-N-S-E-N?\" In the second, two friends talk. Sam: \"Shall we meet at the cinema at eight?\" Kim: \"Eight is too early for me, I finish work at half past seven. How about quarter to nine?\" Sam: \"Fine, but the film starts at nine, so we must be quick.\""
+       },
+       {
+        "v": "How many people does the caller book for?",
+        "o": [
+         "three, because one person is allergic",
+         "five, with the caller and four friends",
+         "four",
+         "seven, because the table is booked for seven"
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 1,
+        "u": "Aantal personen = four. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"three, because one person is allergic\"? Dan denk je dat de allergische persoon niet meegaat. Die komt gewoon mee, dus hij telt mee.",
+         "Koos je \"five, with the caller and four friends\"? Dan denk je dat de beller erbij komt. Het getal vier is al het totaal, dus je telt niet nog een op.",
+         "Klopt: de beller zegt four people en vermeldt één persoon met een notenallergie.",
+         "Koos je \"seven, because the table is booked for seven\"? Dan denk je dat het uur het aantal personen is. Seven is de tijd van de reservering, en niet het aantal."
+        ],
+        "uh": "Hoeveel mensen komen?",
+        "ctx": "You hear two phone calls. In the first, a woman calls a restaurant: \"Hello, I would like to book a table for Friday at seven. Oh, sorry, I mean Saturday, Friday is full. Four people, and one of us is allergic to nuts. Could you put it under the name Jansen, J-A-N-S-E-N?\" In the second, two friends talk. Sam: \"Shall we meet at the cinema at eight?\" Kim: \"Eight is too early for me, I finish work at half past seven. How about quarter to nine?\" Sam: \"Fine, but the film starts at nine, so we must be quick.\""
+       },
+       {
+        "v": "How much is the cheapest price for the running shoes, without any extra discount?",
+        "o": [
+         "59 pounds",
+         "85 pounds, the price before the sale",
+         "30 pounds, which is the percentage of discount",
+         "54 pounds, which includes the student discount"
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 1,
+        "u": "Aanbieding: vanaf 59. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: de aanbieding is vanaf 59 pounds in plaats van 85.",
+         "Koos je \"85 pounds, the price before the sale\"? Dan denk je dat dit de aanbieding is. Dat is de oude prijs, en de aanbieding is lager.",
+         "Koos je \"30 pounds, which is the percentage of discount\"? Dan denk je dat de korting een prijs is. De 30 is een percentage, en geen bedrag in ponden.",
+         "Koos je \"54 pounds, which includes the student discount\"? Dan denk je dat dit de prijs zonder extra korting is. Dat bedrag krijg je pas met een studentenkaart, en de vraag zegt zonder extra korting."
+        ],
+        "uh": "Wat kosten ze zonder extra korting?",
+        "ctx": "You hear the local radio news at eight o'clock. First, a station announcement: \"Good morning, passengers. The 9.15 train to Utrecht has been cancelled because of a signal failure. Passengers should take the 9.40 train from platform 4 instead. Tickets remain valid. Information is available at the desk next to platform 2.\" Then an advert: \"This weekend only at SportZone: running shoes at 30 percent off, from 59 pounds instead of 85. The sale starts on Saturday at 9 a.m. and ends on Sunday at six. Show your student card and you get an extra 5 pounds off.\""
+       },
+       {
+        "v": "When does the sale end?",
+        "o": [
+         "on Sunday at six",
+         "on Saturday at 9 a.m., when it starts",
+         "on Sunday at 9 a.m. in the morning",
+         "on Saturday at six in the evening"
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 4,
+        "u": "Einde = zondag 6. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: de uitverkoop eindigt zondag om zes uur.",
+         "Koos je \"on Saturday at 9 a.m., when it starts\"? Dan denk je dat het begin het einde is. Zaterdag om negen uur is de start, en het einde komt later.",
+         "Koos je \"on Sunday at 9 a.m. in the morning\"? Dan denk je dat de tijd van de start ook het einde is. De start en het einde hebben verschillende tijden, dus je moet goed onderscheiden.",
+         "Koos je \"on Saturday at six in the evening\"? Dan denk je dat het einde op zaterdag valt. De advertentie noemt zondag, en niet zaterdag."
+        ],
+        "uh": "Wanneer stopt het?",
+        "ctx": "You hear the local radio news at eight o'clock. First, a station announcement: \"Good morning, passengers. The 9.15 train to Utrecht has been cancelled because of a signal failure. Passengers should take the 9.40 train from platform 4 instead. Tickets remain valid. Information is available at the desk next to platform 2.\" Then an advert: \"This weekend only at SportZone: running shoes at 30 percent off, from 59 pounds instead of 85. The sale starts on Saturday at 9 a.m. and ends on Sunday at six. Show your student card and you get an extra 5 pounds off.\""
+       },
+       {
+        "v": "What is moved to Wednesday?",
+        "o": [
+         "the teachers' meeting for the whole school",
+         "the lessons that end at 13.00",
+         "the geography exam",
+         "the room where the exam used to be"
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 3,
+        "u": "Verplaatst = exam. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"the teachers' meeting for the whole school\"? Dan denk je dat de vergadering verplaatst wordt. De vergadering is de reden voor korter lesrooster, en niet wat naar woensdag gaat.",
+         "Koos je \"the lessons that end at 13.00\"? Dan denk je dat de lessen op woensdag zijn. Die eindigen donderdag eerder, en zijn dus niet verplaatst.",
+         "Klopt: het tentamen aardrijkskunde gaat van maandag naar woensdag.",
+         "Koos je \"the room where the exam used to be\"? Dan denk je dat de ruimte is verplaatst. De zaal is room 12, en het tentamen is verplaatst."
+        ],
+        "uh": "Wat wordt verschoven?",
+        "ctx": "You hear a school announcement and then a guide on a bus tour. First: \"Attention, everybody. Because of the teachers' meeting, lessons will end at 13.00 on Thursday. The exam for geography has moved from Monday to Wednesday, room 12. Bring a pencil and your calculator, but no phone.\" Then the guide: \"Welcome aboard. The tour lasts about ninety minutes. We stop twice: first at the castle for twenty minutes, then at the market, where you have free time until four o'clock. Please be back at the bus by 16.05. Lunch is not included, but there are cafés near the market.\""
+       },
+       {
+        "v": "What should students bring to the exam?",
+        "o": [
+         "a pencil and their phone for the time",
+         "a pencil and a calculator",
+         "a calculator and a dictionary for geography",
+         "only a pen, because pencils are not allowed"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 3,
+        "u": "Potlood en rekenmachine. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"a pencil and their phone for the time\"? Dan denk je dat de telefoon mag. Die is juist niet toegestaan, en dat staat in de aankondiging.",
+         "Klopt: potlood en rekenmachine, maar geen telefoon.",
+         "Koos je \"a calculator and a dictionary for geography\"? Dan denk je dat een woordenboek nodig is. Dat wordt niet genoemd, dus je kunt het niet verwachten.",
+         "Koos je \"only a pen, because pencils are not allowed\"? Dan denk je dat alleen een pen mag. Een potlood wordt juist gevraagd, dus dit klopt niet."
+        ],
+        "uh": "Wat neem je mee?",
+        "ctx": "You hear a school announcement and then a guide on a bus tour. First: \"Attention, everybody. Because of the teachers' meeting, lessons will end at 13.00 on Thursday. The exam for geography has moved from Monday to Wednesday, room 12. Bring a pencil and your calculator, but no phone.\" Then the guide: \"Welcome aboard. The tour lasts about ninety minutes. We stop twice: first at the castle for twenty minutes, then at the market, where you have free time until four o'clock. Please be back at the bus by 16.05. Lunch is not included, but there are cafés near the market.\""
+       },
+       {
+        "v": "At what time must the passengers be back at the bus?",
+        "o": [
+         "at four o'clock, when the free time ends",
+         "at 15.05, one hour before the end",
+         "at 16.50, in the evening after the tour",
+         "at 16.05"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 4,
+        "u": "Terug bij de bus: 16.05. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"at four o'clock, when the free time ends\"? Dan denk je dat de vrije tijd en terugkomst gelijk zijn. De vrije tijd eindigt om vier, maar terug bij de bus zijn is vijf minuten later.",
+         "Koos je \"at 15.05, one hour before the end\"? Dan denk je dat je een uur eerder moet zijn. Dat wordt niet gezegd, en de tijd is 16.05.",
+         "Koos je \"at 16.50, in the evening after the tour\"? Dan denk je dat de cijfers zijn omgedraaid. Je moet de tijd precies volgen, en die is 16.05.",
+         "Klopt: de gids vraagt om vijf over vier terug te zijn."
+        ],
+        "uh": "Hoe laat?",
+        "ctx": "You hear a school announcement and then a guide on a bus tour. First: \"Attention, everybody. Because of the teachers' meeting, lessons will end at 13.00 on Thursday. The exam for geography has moved from Monday to Wednesday, room 12. Bring a pencil and your calculator, but no phone.\" Then the guide: \"Welcome aboard. The tour lasts about ninety minutes. We stop twice: first at the castle for twenty minutes, then at the market, where you have free time until four o'clock. Please be back at the bus by 16.05. Lunch is not included, but there are cafés near the market.\""
+       },
+       {
+        "v": "What does the guide say about lunch?",
+        "o": [
+         "it is included in the price of the whole tour",
+         "not included, but cafés near the market",
+         "it is served on the bus after the castle stop",
+         "there is no place to buy any food at all"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 3,
+        "u": "Lunch zelf kopen. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"it is included in the price of the whole tour\"? Dan denk je dat de lunch erbij zit. De gids zegt het tegenovergestelde, namelijk not included.",
+         "Klopt: de lunch zit er niet bij, maar bij de markt zijn cafés.",
+         "Koos je \"it is served on the bus after the castle stop\"? Dan denk je dat de lunch in de bus wordt geserveerd. Dat wordt niet gezegd, en je moet zelf zoeken.",
+         "Koos je \"there is no place to buy any food at all\"? Dan denk je dat er geen eten te koop is. De gids noemt cafés bij de markt, dus je kunt wel lunchen."
+        ],
+        "uh": "Wat zegt de gids over lunch?",
+        "ctx": "You hear a school announcement and then a guide on a bus tour. First: \"Attention, everybody. Because of the teachers' meeting, lessons will end at 13.00 on Thursday. The exam for geography has moved from Monday to Wednesday, room 12. Bring a pencil and your calculator, but no phone.\" Then the guide: \"Welcome aboard. The tour lasts about ninety minutes. We stop twice: first at the castle for twenty minutes, then at the market, where you have free time until four o'clock. Please be back at the bus by 16.05. Lunch is not included, but there are cafés near the market.\""
+       },
+       {
+        "v": "A passenger has a ticket for the 9.15 to Utrecht. What should she do?",
+        "o": [
+         "take the 9.40 with the same ticket",
+         "buy a new ticket at the desk at platform 2 first",
+         "wait until the 9.15 train is repaired and leaves",
+         "take the 9.40 from platform 2 and pay extra money"
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 3,
+        "u": "Zelfde kaartje, andere trein. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: kaartjes blijven geldig en de 9.40 vertrekt van spoor 4.",
+         "Koos je \"buy a new ticket at the desk at platform 2 first\"? Dan denk je dat je een nieuw kaartje moet kopen. Het kaartje blijft geldig, en het loket is alleen voor informatie.",
+         "Koos je \"wait until the 9.15 train is repaired and leaves\"? Dan denk je dat je moet wachten. De trein is geannuleerd, dus hij komt niet meer.",
+         "Koos je \"take the 9.40 from platform 2 and pay extra money\"? Dan denk je dat je extra moet betalen. Het kaartje blijft geldig, en spoor 2 is alleen het loket."
+        ],
+        "uh": "Wat doet ze?",
+        "ctx": "You hear the local radio news at eight o'clock. First, a station announcement: \"Good morning, passengers. The 9.15 train to Utrecht has been cancelled because of a signal failure. Passengers should take the 9.40 train from platform 4 instead. Tickets remain valid. Information is available at the desk next to platform 2.\" Then an advert: \"This weekend only at SportZone: running shoes at 30 percent off, from 59 pounds instead of 85. The sale starts on Saturday at 9 a.m. and ends on Sunday at six. Show your student card and you get an extra 5 pounds off.\""
+       },
+       {
+        "v": "Where can a passenger get more information?",
+        "o": [
+         "at platform 4, where the replacement train leaves",
+         "in the train that is going to Utrecht later",
+         "at the ticket machine that stands on every platform",
+         "at the desk by platform 2"
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 4,
+        "u": "Loket bij spoor 2. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"at platform 4, where the replacement train leaves\"? Dan denk je dat alle informatie bij spoor 4 is. Daar vertrekt de trein, maar informatie krijg je bij het loket.",
+         "Koos je \"in the train that is going to Utrecht later\"? Dan denk je dat je het in de trein hoort. Dat wordt niet genoemd, en het loket is de plek.",
+         "Koos je \"at the ticket machine that stands on every platform\"? Dan denk je dat de automaat informatie geeft. De omroeper noemt een loket, en geen automaat.",
+         "Klopt: de omroeper zegt dat informatie te krijgen is bij het loket naast spoor 2."
+        ],
+        "uh": "Waar informatie?",
+        "ctx": "You hear the local radio news at eight o'clock. First, a station announcement: \"Good morning, passengers. The 9.15 train to Utrecht has been cancelled because of a signal failure. Passengers should take the 9.40 train from platform 4 instead. Tickets remain valid. Information is available at the desk next to platform 2.\" Then an advert: \"This weekend only at SportZone: running shoes at 30 percent off, from 59 pounds instead of 85. The sale starts on Saturday at 9 a.m. and ends on Sunday at six. Show your student card and you get an extra 5 pounds off.\""
+       },
+       {
+        "v": "Which details must the restaurant write down?",
+        "o": [
+         "Friday, four people, a nut allergy and the name Jansen too",
+         "Saturday, five people, no allergy and the name Jansen too",
+         "Saturday, four people, nut allergy, Jansen",
+         "Saturday, four people, a nut allergy and also no name"
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 2,
+        "u": "Alle gegevens, na verbetering.",
+        "uo": [
+         "Koos je \"Friday, four people, a nut allergy and the name...\"? Dan denk je dat vrijdag blijft staan. De beller corrigeert zichzelf, dus zaterdag is de juiste dag.",
+         "Koos je \"Saturday, five people, no allergy and the name...\"? Dan denk je dat je kunt aanpassen. Het aantal is vier en er is een allergie, dus dit klopt niet.",
+         "Klopt: dag, aantal, allergie en naam zijn de gegevens van de reservering.",
+         "Koos je \"Saturday, four people, a nut allergy and also no...\"? Dan denk je dat de naam niet nodig is. De beller vraagt juist om de naam, en spelt die."
+        ],
+        "uh": "Wat noteer je?",
+        "ctx": "You hear two phone calls. In the first, a woman calls a restaurant: \"Hello, I would like to book a table for Friday at seven. Oh, sorry, I mean Saturday, Friday is full. Four people, and one of us is allergic to nuts. Could you put it under the name Jansen, J-A-N-S-E-N?\" In the second, two friends talk. Sam: \"Shall we meet at the cinema at eight?\" Kim: \"Eight is too early for me, I finish work at half past seven. How about quarter to nine?\" Sam: \"Fine, but the film starts at nine, so we must be quick.\""
+       },
+       {
+        "v": "A student buys the shoes on Sunday afternoon with a student card. How much does he pay?",
+        "o": [
+         "59 pounds, the sale price",
+         "80 pounds, which is 85 minus 5",
+         "54 pounds",
+         "30 pounds, because it is 30 percent off"
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 1,
+        "u": "59 - 5 = 54. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"59 pounds, the sale price\"? Dan denk je dat de studentenkorting vergeten wordt. De student krijgt 5 pounds eraf, dus hij betaalt minder.",
+         "Koos je \"80 pounds, which is 85 minus 5\"? Dan denk je dat de korting van de oude prijs wordt afgetrokken. De korting geldt voor de uitverkoopprijs, en niet voor de oude prijs.",
+         "Klopt: 59 min 5 pounds extra korting voor studenten is 54.",
+         "Koos je \"30 pounds, because it is 30 percent off\"? Dan denk je dat het percentage de prijs is. Het percentage is de korting, en niet het bedrag."
+        ],
+        "uh": "Wat betaalt hij?",
+        "ctx": "You hear the local radio news at eight o'clock. First, a station announcement: \"Good morning, passengers. The 9.15 train to Utrecht has been cancelled because of a signal failure. Passengers should take the 9.40 train from platform 4 instead. Tickets remain valid. Information is available at the desk next to platform 2.\" Then an advert: \"This weekend only at SportZone: running shoes at 30 percent off, from 59 pounds instead of 85. The sale starts on Saturday at 9 a.m. and ends on Sunday at six. Show your student card and you get an extra 5 pounds off.\""
+       },
+       {
+        "v": "A customer arrives on Sunday at half past six. What is true?",
+        "o": [
+         "the sale is still on for another half hour",
+         "the sale has not started yet",
+         "she can still get the student discount",
+         "the sale has finished"
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 4,
+        "u": "Zondag 6.30 is te laat. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"the sale is still on for another half hour\"? Dan denk je dat het nog doorloopt. De uitverkoop eindigt om zes, en half zeven is later.",
+         "Koos je \"the sale has not started yet\"? Dan denk je dat de uitverkoop nog moet beginnen. Die begon zaterdag om negen, dus hij is al voorbij.",
+         "Koos je \"she can still get the student discount\"? Dan denk je dat de studentenkorting blijft. Die geldt alleen tijdens de uitverkoop, en die is voorbij.",
+         "Klopt: de uitverkoop eindigde zondag om zes uur, dus om half zeven is hij voorbij."
+        ],
+        "uh": "Is het nog actief?",
+        "ctx": "You hear the local radio news at eight o'clock. First, a station announcement: \"Good morning, passengers. The 9.15 train to Utrecht has been cancelled because of a signal failure. Passengers should take the 9.40 train from platform 4 instead. Tickets remain valid. Information is available at the desk next to platform 2.\" Then an advert: \"This weekend only at SportZone: running shoes at 30 percent off, from 59 pounds instead of 85. The sale starts on Saturday at 9 a.m. and ends on Sunday at six. Show your student card and you get an extra 5 pounds off.\""
+       },
+       {
+        "v": "A student has the geography exam. Which advice is correct?",
+        "o": [
+         "room 12, Wednesday, pencil and calculator",
+         "be in room 12 on Monday with a pencil and a phone",
+         "be in room 12 on Wednesday with a pen and a phone",
+         "be in room 21 on Wednesday with a pencil and a calculator"
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 3,
+        "u": "Nieuwe dag, zaal, spullen. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: dat zijn de nieuwe dag, zaal en materialen.",
+         "Koos je \"be in room 12 on Monday with a pencil and a phone\"? Dan denk je dat de oude dag blijft. Het tentamen is verplaatst naar woensdag, en de telefoon is niet toegestaan.",
+         "Koos je \"be in room 12 on Wednesday with a pen and a phone\"? Dan denk je dat de telefoon mag. De telefoon is verboden, en je moet een potlood meenemen.",
+         "Koos je \"be in room 21 on Wednesday with a pencil and a...\"? Dan denk je dat het zaalnummer omgedraaid is. De zaal is 12, en dat moet je precies noteren."
+        ],
+        "uh": "Wat klopt?",
+        "ctx": "You hear a school announcement and then a guide on a bus tour. First: \"Attention, everybody. Because of the teachers' meeting, lessons will end at 13.00 on Thursday. The exam for geography has moved from Monday to Wednesday, room 12. Bring a pencil and your calculator, but no phone.\" Then the guide: \"Welcome aboard. The tour lasts about ninety minutes. We stop twice: first at the castle for twenty minutes, then at the market, where you have free time until four o'clock. Please be back at the bus by 16.05. Lunch is not included, but there are cafés near the market.\""
+       },
+       {
+        "v": "A tourist wants a long lunch. What is the best choice?",
+        "o": [
+         "have lunch on the bus, because it is included",
+         "have lunch in a café near the market",
+         "have lunch at the castle in the twenty minutes there",
+         "skip lunch, since there are no places to eat nearby"
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 3,
+        "u": "Lunch tijdens vrije tijd. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"have lunch on the bus, because it is included\"? Dan denk je dat de lunch erbij zit. De lunch is niet inbegrepen, dus je moet zelf kopen.",
+         "Klopt: tijdens de vrije tijd bij de markt zijn er cafés.",
+         "Koos je \"have lunch at the castle in the twenty minutes there\"? Dan denk je dat de tijd bij het kasteel genoeg is. Het kasteel is maar twintig minuten, en cafés zijn bij de markt.",
+         "Koos je \"skip lunch, since there are no places to eat nearby\"? Dan denk je dat er geen eten is. Er zijn cafés bij de markt, dus je kunt wel lunchen."
+        ],
+        "uh": "Wat is slim?",
+        "ctx": "You hear a school announcement and then a guide on a bus tour. First: \"Attention, everybody. Because of the teachers' meeting, lessons will end at 13.00 on Thursday. The exam for geography has moved from Monday to Wednesday, room 12. Bring a pencil and your calculator, but no phone.\" Then the guide: \"Welcome aboard. The tour lasts about ninety minutes. We stop twice: first at the castle for twenty minutes, then at the market, where you have free time until four o'clock. Please be back at the bus by 16.05. Lunch is not included, but there are cafés near the market.\""
+       },
+       {
+        "v": "At what time will Sam and Kim meet?",
+        "o": [
+         "at eight, as Sam first suggests",
+         "at nine, when the film starts",
+         "at half past seven, when Kim finishes work",
+         "at quarter to nine"
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 1,
+        "u": "8.45 afgesproken. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"at eight, as Sam first suggests\"? Dan denk je dat het eerste voorstel blijft. Kim wil later, en Sam zegt Fine.",
+         "Koos je \"at nine, when the film starts\"? Dan denk je dat ze om negen afspreken. Negen is de filmtijd, en ze ontmoeten elkaar eerder.",
+         "Koos je \"at half past seven, when Kim finishes work\"? Dan denk je dat het werk het afspreekmoment is. Kim is dan klaar met werken, en ze ziet Sam niet dan.",
+         "Klopt: Kim stelt kwart voor negen voor en Sam stemt in met Fine, dus 8.45."
+        ],
+        "uh": "Hoe laat?",
+        "ctx": "You hear two phone calls. In the first, a woman calls a restaurant: \"Hello, I would like to book a table for Friday at seven. Oh, sorry, I mean Saturday, Friday is full. Four people, and one of us is allergic to nuts. Could you put it under the name Jansen, J-A-N-S-E-N?\" In the second, two friends talk. Sam: \"Shall we meet at the cinema at eight?\" Kim: \"Eight is too early for me, I finish work at half past seven. How about quarter to nine?\" Sam: \"Fine, but the film starts at nine, so we must be quick.\""
+       },
+       {
+        "v": "Why is eight too early for Kim?",
+        "o": [
+         "she finishes work at half past seven",
+         "she wants to see another film at eight",
+         "she does not like to go to the cinema",
+         "she has to meet Sam at half past eight"
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 2,
+        "u": "Werk tot 7.30. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: Kim werkt tot half acht en heeft daarna tijd nodig.",
+         "Koos je \"she wants to see another film at eight\"? Dan denk je dat Kim een andere film wil. Dat wordt niet gezegd, en ze noemt haar werk.",
+         "Koos je \"she does not like to go to the cinema\"? Dan denk je dat ze niet naar de film wil. Ze stelt een andere tijd voor, en ze wil dus wel gaan.",
+         "Koos je \"she has to meet Sam at half past eight\"? Dan denk je dat ze om half negen moet zijn. Ze stelt kwart voor negen voor, en dat is een andere tijd."
+        ],
+        "uh": "Waarom te vroeg?",
+        "ctx": "You hear two phone calls. In the first, a woman calls a restaurant: \"Hello, I would like to book a table for Friday at seven. Oh, sorry, I mean Saturday, Friday is full. Four people, and one of us is allergic to nuts. Could you put it under the name Jansen, J-A-N-S-E-N?\" In the second, two friends talk. Sam: \"Shall we meet at the cinema at eight?\" Kim: \"Eight is too early for me, I finish work at half past seven. How about quarter to nine?\" Sam: \"Fine, but the film starts at nine, so we must be quick.\""
+       },
+       {
+        "v": "What problem do they have after Kim's suggestion?",
+        "o": [
+         "the cinema is closed at quarter to nine at night",
+         "they have only fifteen minutes",
+         "they do not know where the cinema is in town",
+         "Kim is angry because Sam is late again"
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 4,
+        "u": "Weinig tijd: 8.45 tot 9.00. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"the cinema is closed at quarter to nine at night\"? Dan denk je dat de bioscoop dicht is. Dat wordt niet gezegd, dus dit is verzonnen.",
+         "Klopt: de film begint om negen en ze ontmoeten elkaar om kwart voor negen.",
+         "Koos je \"they do not know where the cinema is in town\"? Dan denk je dat ze de plaats niet weten. Dat staat nergens, en ze noemen de bioscoop.",
+         "Koos je \"Kim is angry because Sam is late again\"? Dan denk je dat Kim boos is. Er is geen boosheid, alleen haast."
+        ],
+        "uh": "Wat is het probleem?",
+        "ctx": "You hear two phone calls. In the first, a woman calls a restaurant: \"Hello, I would like to book a table for Friday at seven. Oh, sorry, I mean Saturday, Friday is full. Four people, and one of us is allergic to nuts. Could you put it under the name Jansen, J-A-N-S-E-N?\" In the second, two friends talk. Sam: \"Shall we meet at the cinema at eight?\" Kim: \"Eight is too early for me, I finish work at half past seven. How about quarter to nine?\" Sam: \"Fine, but the film starts at nine, so we must be quick.\""
+       }
+      ],
+      "oe": [
+       {
+        "bron": "Examenstijl",
+        "ctx": "You hear the local radio news at eight o'clock. First, a station announcement: \"Good morning, passengers. The 9.15 train to Utrecht has been cancelled because of a signal failure. Passengers should take the 9.40 train from platform 4 instead. Tickets remain valid. Information is available at the desk next to platform 2.\" Then an advert: \"This weekend only at SportZone: running shoes at 30 percent off, from 59 pounds instead of 85. The sale starts on Saturday at 9 a.m. and ends on Sunday at six. Show your student card and you get an extra 5 pounds off.\"",
+        "v": "What should a passenger with a ticket for the 9.15 do, and where can she get information?",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Neem de 9.40 vanaf spoor 4 (1p) met hetzelfde kaartje (1p). Informatie bij het loket naast spoor 2 (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "You hear two phone calls. In the first, a woman calls a restaurant: \"Hello, I would like to book a table for Friday at seven. Oh, sorry, I mean Saturday, Friday is full. Four people, and one of us is allergic to nuts. Could you put it under the name Jansen, J-A-N-S-E-N?\" In the second, two friends talk. Sam: \"Shall we meet at the cinema at eight?\" Kim: \"Eight is too early for me, I finish work at half past seven. How about quarter to nine?\" Sam: \"Fine, but the film starts at nine, so we must be quick.\"",
+        "v": "On which day is the table booked and for how many people? Why is it not Friday?",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Zaterdag (1p) voor vier personen (1p). De beller verbetert zichzelf want vrijdag is vol (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "You hear the local radio news at eight o'clock. First, a station announcement: \"Good morning, passengers. The 9.15 train to Utrecht has been cancelled because of a signal failure. Passengers should take the 9.40 train from platform 4 instead. Tickets remain valid. Information is available at the desk next to platform 2.\" Then an advert: \"This weekend only at SportZone: running shoes at 30 percent off, from 59 pounds instead of 85. The sale starts on Saturday at 9 a.m. and ends on Sunday at six. Show your student card and you get an extra 5 pounds off.\"",
+        "v": "How much does a student pay for the shoes and until when can he buy them?",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "59 pounds min 5 pounds studentenkorting is 54 pounds (2p). Hij kan kopen tot zondag om zes uur (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "You hear a school announcement and then a guide on a bus tour. First: \"Attention, everybody. Because of the teachers' meeting, lessons will end at 13.00 on Thursday. The exam for geography has moved from Monday to Wednesday, room 12. Bring a pencil and your calculator, but no phone.\" Then the guide: \"Welcome aboard. The tour lasts about ninety minutes. We stop twice: first at the castle for twenty minutes, then at the market, where you have free time until four o'clock. Please be back at the bus by 16.05. Lunch is not included, but there are cafés near the market.\"",
+        "v": "What changes for the geography exam? Name two things the student must bring.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Het tentamen is verplaatst naar woensdag in zaal 12 (1p). Een potlood (1p) en een rekenmachine (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "You hear two phone calls. In the first, a woman calls a restaurant: \"Hello, I would like to book a table for Friday at seven. Oh, sorry, I mean Saturday, Friday is full. Four people, and one of us is allergic to nuts. Could you put it under the name Jansen, J-A-N-S-E-N?\" In the second, two friends talk. Sam: \"Shall we meet at the cinema at eight?\" Kim: \"Eight is too early for me, I finish work at half past seven. How about quarter to nine?\" Sam: \"Fine, but the film starts at nine, so we must be quick.\"",
+        "v": "At what time will Sam and Kim meet and what is their problem?",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Om kwart voor negen, dus 8.45 (1p). Ze hebben maar een kwartier voor de film van negen uur (2p)."
+       }
+      ]
+     }
     ]
    },
    {

@@ -2586,7 +2586,30 @@ var VAKKEN = [
     "nSv": 100,
     "nOe": 3,
     "nBeg": 19,
-    "hasSam": true
+    "hasSam": true,
+    "leerdoelen": [
+     {
+      "id": "C1",
+      "lo": "en.C.1",
+      "gs": 2,
+      "naam": "Relevante informatie vinden in een gesproken tekst",
+      "beschrijving": "Je leert bij een luistertekst gericht te luisteren naar tijden, prijzen, dagen en plaatsen, en je herkent verbeteringen en afleiders van de spreker.",
+      "ceStatus": "CE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Voorbereiden op de luisteropdracht",
+       "Tijden, getallen en prijzen",
+       "Verbeteringen van de spreker",
+       "Informatie kiezen bij een behoefte",
+       "Afleiders herkennen"
+      ],
+      "nSv": 27,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
+     }
+    ]
    },
    {
     "id": "D",
