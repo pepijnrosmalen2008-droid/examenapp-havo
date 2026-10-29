@@ -2629,6 +2629,27 @@ var VAKKEN = [
       "nOe": 5,
       "nBeg": 12,
       "hasSam": true
+     },
+     {
+      "id": "C3",
+      "lo": "en.C.3",
+      "gs": 2,
+      "naam": "De betekenis van belangrijke woorden en zinnen in gesproken tekst",
+      "beschrijving": "Je leert de betekenis van onbekende woorden en vaste uitdrukkingen in een luistertekst af te leiden uit de context.",
+      "ceStatus": "CE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Betekenis uit de context",
+       "Uitdrukkingen",
+       "Synoniemen en tegenstellingen",
+       "Woorden in een zin",
+       "Onbekende woorden aanpakken"
+      ],
+      "nSv": 27,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
      }
     ]
    },

@@ -1,0 +1,682 @@
+{
+ "id": "C3",
+ "lo": "en.C.3",
+ "gs": 2,
+ "naam": "De betekenis van belangrijke woorden en zinnen in gesproken tekst",
+ "beschrijving": "Je leert de betekenis van onbekende woorden en vaste uitdrukkingen in een luistertekst af te leiden uit de context.",
+ "ceStatus": "CE",
+ "binas": "",
+ "val": "",
+ "onderwerpen": [
+  "Betekenis uit de context",
+  "Uitdrukkingen",
+  "Synoniemen en tegenstellingen",
+  "Woorden in een zin",
+  "Onbekende woorden aanpakken"
+ ],
+ "sam": "In een luistertekst hoef je niet elk woord te kennen. Je leidt de betekenis af uit de context: uitleg met which means, voorbeelden en de rest van de zin. Een vaste uitdrukking als a piece of cake heeft een figuurlijke betekenis en is niet letterlijk bedoeld. Synoniemen hebben bijna dezelfde betekenis, tegenstellingen het tegenovergestelde. Let ook op wat een zin laat zien over de gevoelens van de spreker.",
+ "begrippen": [
+  {
+   "t": "Context",
+   "d": "De woorden en zinnen om een woord heen."
+  },
+  {
+   "t": "Uitdrukking",
+   "d": "Een vaste combinatie van woorden met een eigen betekenis."
+  },
+  {
+   "t": "Letterlijk",
+   "d": "Precies wat de woorden zeggen."
+  },
+  {
+   "t": "Figuurlijk",
+   "d": "Een andere betekenis dan de woorden zelf."
+  },
+  {
+   "t": "Synoniem",
+   "d": "Een woord met bijna dezelfde betekenis."
+  },
+  {
+   "t": "Tegenovergestelde",
+   "d": "Een woord met de omgekeerde betekenis."
+  },
+  {
+   "t": "Omschrijving",
+   "d": "Een uitleg van een woord in andere woorden."
+  },
+  {
+   "t": "Aanwijzing",
+   "d": "Iets in de tekst dat de betekenis verraadt."
+  },
+  {
+   "t": "Gevoelswoord",
+   "d": "Een woord dat laat zien hoe iemand zich voelt."
+  },
+  {
+   "t": "Onbekend woord",
+   "d": "Een woord dat je niet kent en uit de context afleidt."
+  },
+  {
+   "t": "Gewend raken",
+   "d": "Iets wordt gewoon doordat je het vaak doet."
+  },
+  {
+   "t": "Betekenis",
+   "d": "Wat een woord of zin wil zeggen."
+  }
+ ],
+ "sv": [
+  {
+   "v": "What can you do when you hear a word you do not know?",
+   "o": [
+    "stop listening and wait for the next question",
+    "use the sentence to guess it",
+    "translate the word into Dutch letter by letter",
+    "choose the answer that has the longest words"
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 4,
+   "u": "Gebruik de context. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"stop listening and wait for the next question\"? Dan denk je dat je moet stoppen. Je mist dan de rest van de opname, en het woord is meestal niet nodig.",
+    "Klopt: de zinnen om het woord heen geven vaak genoeg aanwijzingen.",
+    "Koos je \"translate the word into Dutch letter by letter\"? Dan denk je dat je het woord letter voor letter kunt vertalen. Dat werkt niet in een opname, want je hebt maar een paar seconden.",
+    "Koos je \"choose the answer that has the longest words\"? Dan denk je dat lange woorden het goede antwoord zijn. De lengte zegt niets, en je moet naar de betekenis luisteren."
+   ],
+   "uh": "Wat doe je bij een onbekend woord?"
+  },
+  {
+   "v": "What does the expression \"a piece of cake\" mean?",
+   "o": [
+    "very sweet and tasty to eat in the afternoon",
+    "very expensive and almost impossible to buy",
+    "very small, like a tiny part of something big",
+    "very easy"
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 1,
+   "u": "Piece of cake = makkelijk. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"very sweet and tasty to eat in the afternoon\"? Dan denk je dat het over eten gaat. De uitdrukking is figuurlijk, en gaat over moeite.",
+    "Koos je \"very expensive and almost impossible to buy\"? Dan denk je dat het over een prijs gaat. Dat klopt niet, want het gaat om hoe moeilijk iets is.",
+    "Koos je \"very small, like a tiny part of something big\"? Dan denk je dat het over grootte gaat. De uitdrukking zegt iets over moeilijkheid, en niet over afmeting.",
+    "Klopt: a piece of cake betekent dat iets heel makkelijk is."
+   ],
+   "uh": "Wat betekent de uitdrukking?"
+  },
+  {
+   "v": "What does \"to be under the weather\" mean?",
+   "o": [
+    "to feel a bit ill",
+    "to stand outside when it is raining heavily",
+    "to be very happy about the sunny weather",
+    "to live in a place with a very cold climate"
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 1,
+   "u": "Under the weather = ziek. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: under the weather betekent dat je je niet lekker voelt.",
+    "Koos je \"to stand outside when it is raining heavily\"? Dan denk je dat het letterlijk over regen gaat. De uitdrukking is figuurlijk, en zegt iets over je gezondheid.",
+    "Koos je \"to be very happy about the sunny weather\"? Dan denk je dat het over vrolijkheid gaat. Het betekent juist het tegenovergestelde, namelijk niet lekker zijn.",
+    "Koos je \"to live in a place with a very cold climate\"? Dan denk je dat het over het klimaat gaat. Het gaat om hoe je je voelt, en niet om waar je woont."
+   ],
+   "uh": "Wat betekent de uitdrukking?"
+  },
+  {
+   "v": "Which word has almost the same meaning as \"exhausted\"?",
+   "o": [
+    "very hungry after a long day",
+    "very angry about something unfair",
+    "very tired",
+    "very busy at work every day"
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 2,
+   "u": "Exhausted = doodmoe. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"very hungry after a long day\"? Dan denk je dat exhausted honger is. Het woord gaat over vermoeidheid, en niet over eten.",
+    "Koos je \"very angry about something unfair\"? Dan denk je dat exhausted boos is. Het woord gaat over energie, en niet over een gevoel van boosheid.",
+    "Klopt: exhausted betekent doodmoe, dus heel erg moe en zonder energie.",
+    "Koos je \"very busy at work every day\"? Dan denk je dat exhausted druk is. Je kunt moe zijn door drukte, maar het woord zelf betekent moe."
+   ],
+   "uh": "Welk woord past erbij?"
+  },
+  {
+   "v": "Which word is the opposite of \"cheap\"?",
+   "o": [
+    "quick, because it goes fast to buy",
+    "small, because it costs a few coins",
+    "expensive",
+    "easy, because anyone can afford it"
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 2,
+   "u": "Cheap tegenover expensive. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"quick, because it goes fast to buy\"? Dan denk je dat het tegenovergestelde snel is. Dat gaat over tijd, en cheap gaat over de prijs.",
+    "Koos je \"small, because it costs a few coins\"? Dan denk je dat klein het tegenovergestelde is. Dat gaat over afmeting, en niet over de prijs.",
+    "Klopt: cheap is goedkoop en expensive is duur.",
+    "Koos je \"easy, because anyone can afford it\"? Dan denk je dat easy het tegenovergestelde is. Het is eerder een gevolg van goedkoop, en dus geen tegenstelling."
+   ],
+   "uh": "Welk woord is het tegenovergestelde?"
+  },
+  {
+   "v": "You hear \"I am thrilled.\" Which word shows how the speaker feels?",
+   "o": [
+    "very happy and excited",
+    "very afraid of what will happen next",
+    "very bored with everything around him",
+    "very angry about a mistake that was made"
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 0,
+   "u": "Thrilled = opgewonden blij. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: thrilled betekent dat je heel blij en opgewonden bent.",
+    "Koos je \"very afraid of what will happen next\"? Dan denk je dat thrilled bang is. Het woord is positief, en bang zijn is negatief.",
+    "Koos je \"very bored with everything around him\"? Dan denk je dat thrilled verveeld is. Het woord is een sterk positief gevoel, en dat is het tegenovergestelde van verveeld.",
+    "Koos je \"very angry about a mistake that was made\"? Dan denk je dat thrilled boos is. Dat is een negatief gevoel, en thrilled is juist positief."
+   ],
+   "uh": "Hoe voelt de spreker?"
+  },
+  {
+   "v": "What does \"Could you give me a hand?\" mean?",
+   "o": [
+    "Could you shake hands with me?",
+    "Could you give me your hand luggage?",
+    "Could you wave goodbye to me?",
+    "Could you help me?"
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 3,
+   "u": "Give me a hand = help me. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"Could you shake hands with me?\"? Dan denk je dat het over een handdruk gaat. Het is figuurlijk, en gaat over hulp.",
+    "Koos je \"Could you give me your hand luggage?\"? Dan denk je dat het over handbagage gaat. Dat is een andere betekenis, en de uitdrukking is hulp vragen.",
+    "Koos je \"Could you wave goodbye to me?\"? Dan denk je dat het over zwaaien gaat. Dat is een gebaar, en de zin vraagt om hulp.",
+    "Klopt: give me a hand is een uitdrukking voor helpen."
+   ],
+   "uh": "Wat vraagt de spreker?"
+  },
+  {
+   "v": "What does \"shoulder season\" mean in this conversation?",
+   "o": [
+    "the busiest weeks of the whole year",
+    "fewer tourists and lower prices",
+    "the time when people wear warm clothes",
+    "the part of the year with the most rain"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 0,
+   "u": "Which means = uitleg. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"the busiest weeks of the whole year\"? Dan denk je dat shoulder season de drukste tijd is. De agent zegt juist fewer tourists, dus dat is het tegenovergestelde.",
+    "Klopt: de reisagent legt dit zelf uit met which means.",
+    "Koos je \"the time when people wear warm clothes\"? Dan denk je dat het om kleding gaat. De agent heeft het over toeristen en prijzen, en niet over kleren.",
+    "Koos je \"the part of the year with the most rain\"? Dan denk je dat het om regen gaat. Het gaat om drukte en prijzen, en over het weer wordt later gesproken."
+   ],
+   "uh": "Wat betekent het?",
+   "ctx": "You hear a conversation between a travel agent and a customer. Agent: \"So you want a cheap holiday? I would say go in October. It is the shoulder season, which means fewer tourists and lower prices.\" Customer: \"Is the weather still good?\" Agent: \"Usually, yes. It can be a bit unpredictable, so I would pack a raincoat. And by the way, the hotel is a stone's throw from the beach, so you can walk there in two minutes.\" Customer: \"That sounds perfect. Can I get a refund if I have to cancel?\" Agent: \"Only if you cancel at least a month before you leave.\""
+  },
+  {
+   "v": "What does the agent mean by \"a stone's throw\"?",
+   "o": [
+    "very expensive for people on a budget",
+    "very noisy because of all the visitors",
+    "very old, like a building from long ago",
+    "very close"
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 1,
+   "u": "Stone's throw = vlakbij. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"very expensive for people on a budget\"? Dan denk je dat het over de prijs gaat. De agent noemt de afstand, want hij zegt dat je er in twee minuten bent.",
+    "Koos je \"very noisy because of all the visitors\"? Dan denk je dat het om lawaai gaat. De zin gaat over de ligging, en over geluid wordt niets gezegd.",
+    "Koos je \"very old, like a building from long ago\"? Dan denk je dat het om leeftijd gaat. De agent beschrijft de afstand, en niet de leeftijd van het hotel.",
+    "Klopt: de agent zegt dat je er in twee minuten naartoe kunt lopen, dus heel dichtbij."
+   ],
+   "uh": "Hoe ver is het?",
+   "ctx": "You hear a conversation between a travel agent and a customer. Agent: \"So you want a cheap holiday? I would say go in October. It is the shoulder season, which means fewer tourists and lower prices.\" Customer: \"Is the weather still good?\" Agent: \"Usually, yes. It can be a bit unpredictable, so I would pack a raincoat. And by the way, the hotel is a stone's throw from the beach, so you can walk there in two minutes.\" Customer: \"That sounds perfect. Can I get a refund if I have to cancel?\" Agent: \"Only if you cancel at least a month before you leave.\""
+  },
+  {
+   "v": "What does the agent mean when he says the weather is \"unpredictable\"?",
+   "o": [
+    "the weather is always very hot and dry",
+    "it is hard to know what the weather will be",
+    "the weather will be bad for the whole week",
+    "the weather forecast is made by a good expert"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 0,
+   "u": "Unpredictable = niet te voorspellen.",
+   "uo": [
+    "Koos je \"the weather is always very hot and dry\"? Dan denk je dat unpredictable heet is. Hij raadt een regenjas aan, dus het kan ook regenen.",
+    "Klopt: het weer is moeilijk te voorspellen, daarom raadt hij een regenjas aan.",
+    "Koos je \"the weather will be bad for the whole week\"? Dan denk je dat het altijd slecht is. Hij zegt dat het meestal goed is, en soms niet.",
+    "Koos je \"the weather forecast is made by a good expert\"? Dan denk je dat het om een voorspeller gaat. Het woord zegt dat het moeilijk te voorspellen is, en niet wie voorspelt."
+   ],
+   "uh": "Waarom een regenjas?",
+   "ctx": "You hear a conversation between a travel agent and a customer. Agent: \"So you want a cheap holiday? I would say go in October. It is the shoulder season, which means fewer tourists and lower prices.\" Customer: \"Is the weather still good?\" Agent: \"Usually, yes. It can be a bit unpredictable, so I would pack a raincoat. And by the way, the hotel is a stone's throw from the beach, so you can walk there in two minutes.\" Customer: \"That sounds perfect. Can I get a refund if I have to cancel?\" Agent: \"Only if you cancel at least a month before you leave.\""
+  },
+  {
+   "v": "What is a \"refund\" in this conversation?",
+   "o": [
+    "a ticket that you buy at the airport",
+    "a discount for children and students",
+    "money you get back when you cancel",
+    "an extra night in the hotel by the beach"
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 2,
+   "u": "Refund = geld terug. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"a ticket that you buy at the airport\"? Dan denk je dat een refund een ticket is. De klant vraagt wanneer ze geld terug krijgt, en een ticket is iets anders.",
+    "Koos je \"a discount for children and students\"? Dan denk je dat een refund korting is. Korting is een lagere prijs vooraf, en een refund is geld achteraf terug.",
+    "Klopt: de klant vraagt of ze geld terug krijgt bij annulering.",
+    "Koos je \"an extra night in the hotel by the beach\"? Dan denk je dat een refund een extra nacht is. Dat noemt niemand, en de vraag is over annuleren."
+   ],
+   "uh": "Wat is een refund?",
+   "ctx": "You hear a conversation between a travel agent and a customer. Agent: \"So you want a cheap holiday? I would say go in October. It is the shoulder season, which means fewer tourists and lower prices.\" Customer: \"Is the weather still good?\" Agent: \"Usually, yes. It can be a bit unpredictable, so I would pack a raincoat. And by the way, the hotel is a stone's throw from the beach, so you can walk there in two minutes.\" Customer: \"That sounds perfect. Can I get a refund if I have to cancel?\" Agent: \"Only if you cancel at least a month before you leave.\""
+  },
+  {
+   "v": "What does \"an eye-opener\" mean in this talk?",
+   "o": [
+    "a surprising experience",
+    "an early alarm clock that wakes you up",
+    "a pair of glasses that helps you see",
+    "a very boring week at a new job"
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 1,
+   "u": "Eye-opener = verrassing. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: de eerste week was verrassend omdat hij om vijf uur op moest.",
+    "Koos je \"an early alarm clock that wakes you up\"? Dan denk je dat het om een wekker gaat. Het is een figuurlijke uitdrukking, en gaat over een ervaring.",
+    "Koos je \"a pair of glasses that helps you see\"? Dan denk je dat het om een bril gaat. Het is figuurlijk, en betekent iets dat je verbaast.",
+    "Koos je \"a very boring week at a new job\"? Dan denk je dat het saai is. Het woord geeft juist een verrassing aan, en niet verveling."
+   ],
+   "uh": "Wat betekent het?",
+   "ctx": "You hear a student talking about his part-time job: \"I work in a bakery on Saturdays. The first week was a real eye-opener, because I had to get up at five. At first I was exhausted, but I got used to it. My boss is very easygoing, she never gets angry when I make a mistake. Last week I accidentally dropped a whole tray of rolls, and she just laughed. What I like best is that I am earning my own money, so I can finally buy a new laptop without asking my parents. So I can honestly say that it was a good choice for me.\""
+  },
+  {
+   "v": "What does \"easygoing\" mean when the student talks about his boss?",
+   "o": [
+    "relaxed and not easily upset",
+    "strict and very serious about mistakes",
+    "slow and always late to work",
+    "young and full of energy for the job"
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 2,
+   "u": "Easygoing = ontspannen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: ze wordt niet boos als hij een fout maakt.",
+    "Koos je \"strict and very serious about mistakes\"? Dan denk je dat easygoing streng is. Zij lacht om een fout, dus zij is juist niet streng.",
+    "Koos je \"slow and always late to work\"? Dan denk je dat easygoing traag is. Het woord gaat over karakter, en niet over snelheid.",
+    "Koos je \"young and full of energy for the job\"? Dan denk je dat easygoing jong is. Het woord zegt niets over leeftijd, en gaat over een rustige houding."
+   ],
+   "uh": "Wat voor baas is ze?",
+   "ctx": "You hear a student talking about his part-time job: \"I work in a bakery on Saturdays. The first week was a real eye-opener, because I had to get up at five. At first I was exhausted, but I got used to it. My boss is very easygoing, she never gets angry when I make a mistake. Last week I accidentally dropped a whole tray of rolls, and she just laughed. What I like best is that I am earning my own money, so I can finally buy a new laptop without asking my parents. So I can honestly say that it was a good choice for me.\""
+  },
+  {
+   "v": "What does \"I got used to it\" mean?",
+   "o": [
+    "I started to like it more than before",
+    "I decided to stop going to the bakery",
+    "it became normal for me",
+    "I used it every day to make bread"
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 0,
+   "u": "Got used to = gewend geraakt. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"I started to like it more than before\"? Dan denk je dat used to betekent dat hij het leuker vond. Het gaat om gewoonte, en niet om hoeveel hij ervan houdt.",
+    "Koos je \"I decided to stop going to the bakery\"? Dan denk je dat hij stopte. Hij werkt er nog steeds, en hij heeft het over zijn baan.",
+    "Klopt: eerst was hij uitgeput, daarna werd vroeg opstaan gewoon.",
+    "Koos je \"I used it every day to make bread\"? Dan denk je dat used to over gebruiken gaat. Het is een vaste uitdrukking, en betekent gewend raken."
+   ],
+   "uh": "Wat veranderde er?",
+   "ctx": "You hear a student talking about his part-time job: \"I work in a bakery on Saturdays. The first week was a real eye-opener, because I had to get up at five. At first I was exhausted, but I got used to it. My boss is very easygoing, she never gets angry when I make a mistake. Last week I accidentally dropped a whole tray of rolls, and she just laughed. What I like best is that I am earning my own money, so I can finally buy a new laptop without asking my parents. So I can honestly say that it was a good choice for me.\""
+  },
+  {
+   "v": "What does \"renovation\" mean in this report?",
+   "o": [
+    "closing the library for a long time",
+    "improving the building",
+    "moving the library to another city",
+    "opening a second library next door"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 0,
+   "u": "Renovation = verbouwing. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"closing the library for a long time\"? Dan denk je dat renovation sluiten is. De bibliotheek is juist heropend, en renovation is verbouwen.",
+    "Klopt: de bibliotheek is verbouwd en weer geopend.",
+    "Koos je \"moving the library to another city\"? Dan denk je dat de bibliotheek is verhuisd. Het gebouw is hetzelfde, maar het is verbouwd.",
+    "Koos je \"opening a second library next door\"? Dan denk je dat er een tweede gebouw is. Er is maar een bibliotheek, en die is vernieuwd."
+   ],
+   "uh": "Wat is er gebeurd?",
+   "ctx": "You hear a radio report about a new library: \"The city library has reopened after a major renovation. The building is now fully accessible for wheelchairs, and visitors can borrow tablets as well as books. Librarian Ahmed says the project was a long time coming. We had been planning this for years, but the money was not available until the council stepped in. The library also offers free homework help on Tuesday evenings, which has already proved popular with local pupils. The mayor will officially open the new reading room next month.\""
+  },
+  {
+   "v": "What does \"accessible\" mean here?",
+   "o": [
+    "very expensive to visit for pupils",
+    "open only to members of the library",
+    "very modern and full of new computers",
+    "easy to enter and use for everyone"
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 2,
+   "u": "Accessible = toegankelijk. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"very expensive to visit for pupils\"? Dan denk je dat accessible duur is. Het woord gaat over toegankelijkheid, en niet over prijs.",
+    "Koos je \"open only to members of the library\"? Dan denk je dat het alleen voor leden is. Accessible is juist voor iedereen, dus dit klopt niet.",
+    "Koos je \"very modern and full of new computers\"? Dan denk je dat het modern is. Het woord gaat over toegang, en niet over techniek.",
+    "Klopt: het gebouw is nu geschikt voor rolstoelen."
+   ],
+   "uh": "Voor wie?",
+   "ctx": "You hear a radio report about a new library: \"The city library has reopened after a major renovation. The building is now fully accessible for wheelchairs, and visitors can borrow tablets as well as books. Librarian Ahmed says the project was a long time coming. We had been planning this for years, but the money was not available until the council stepped in. The library also offers free homework help on Tuesday evenings, which has already proved popular with local pupils. The mayor will officially open the new reading room next month.\""
+  },
+  {
+   "v": "What does \"stepped in\" mean in \"until the council stepped in\"?",
+   "o": [
+    "the council walked into the library",
+    "the council helped by providing the money",
+    "the council stopped the project of the librarians",
+    "the council asked for more time to decide"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 3,
+   "u": "Stepped in = hielp. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"the council walked into the library\"? Dan denk je dat stepped in letterlijk binnenlopen is. Het is figuurlijk, en betekent helpen of ingrijpen.",
+    "Klopt: de gemeente zorgde voor het geld waardoor het kon.",
+    "Koos je \"the council stopped the project of the librarians\"? Dan denk je dat de gemeente het project stopte. Het project kon daarna doorgaan, dus het was juist hulp.",
+    "Koos je \"the council asked for more time to decide\"? Dan denk je dat de gemeente tijd wilde. Dat staat niet in de tekst, en de zin gaat over geld."
+   ],
+   "uh": "Wat deed de gemeente?",
+   "ctx": "You hear a radio report about a new library: \"The city library has reopened after a major renovation. The building is now fully accessible for wheelchairs, and visitors can borrow tablets as well as books. Librarian Ahmed says the project was a long time coming. We had been planning this for years, but the money was not available until the council stepped in. The library also offers free homework help on Tuesday evenings, which has already proved popular with local pupils. The mayor will officially open the new reading room next month.\""
+  },
+  {
+   "v": "Why does the agent recommend a raincoat?",
+   "o": [
+    "the weather in October can change quickly",
+    "it always rains a lot near the beach hotel",
+    "raincoats are cheaper in the shoulder season",
+    "the customer has asked the agent for one"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 1,
+   "u": "Onvoorspelbaar weer, dus regenjas.",
+   "uo": [
+    "Klopt: hij noemt de weersverwachting onzeker en geeft dan het advies.",
+    "Koos je \"it always rains a lot near the beach hotel\"? Dan denk je dat het altijd regent. Hij zegt dat het meestal goed weer is, en geeft het advies voor de zekerheid.",
+    "Koos je \"raincoats are cheaper in the shoulder season\"? Dan denk je dat de prijs de reden is. Hij noemt een andere reden, namelijk het onzekere weer.",
+    "Koos je \"the customer has asked the agent for one\"? Dan denk je dat de klant erom vroeg. De klant vraagt naar het weer, en de agent geeft het advies zelf."
+   ],
+   "uh": "Waarom dit advies?",
+   "ctx": "You hear a conversation between a travel agent and a customer. Agent: \"So you want a cheap holiday? I would say go in October. It is the shoulder season, which means fewer tourists and lower prices.\" Customer: \"Is the weather still good?\" Agent: \"Usually, yes. It can be a bit unpredictable, so I would pack a raincoat. And by the way, the hotel is a stone's throw from the beach, so you can walk there in two minutes.\" Customer: \"That sounds perfect. Can I get a refund if I have to cancel?\" Agent: \"Only if you cancel at least a month before you leave.\""
+  },
+  {
+   "v": "When can the customer get a refund?",
+   "o": [
+    "at any moment, even on the day of the holiday",
+    "only if she cancels on the same day as booking",
+    "never, because the hotel is a stone's throw away",
+    "if she cancels a month before leaving"
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 3,
+   "u": "Voorwaarde: een maand vooraf. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"at any moment, even on the day of the holiday\"? Dan denk je dat een refund altijd kan. De agent noemt een voorwaarde, en de periode is een maand.",
+    "Koos je \"only if she cancels on the same day as booking\"? Dan denk je dat het om de boekingsdag gaat. De agent noemt de tijd voor vertrek, en niet de boekingsdag.",
+    "Koos je \"never, because the hotel is a stone's throw away\"? Dan denk je dat een refund nooit kan. De agent noemt een voorwaarde, dus het kan wel degelijk.",
+    "Klopt: de agent noemt een maand vooraf als voorwaarde."
+   ],
+   "uh": "Wanneer terug?",
+   "ctx": "You hear a conversation between a travel agent and a customer. Agent: \"So you want a cheap holiday? I would say go in October. It is the shoulder season, which means fewer tourists and lower prices.\" Customer: \"Is the weather still good?\" Agent: \"Usually, yes. It can be a bit unpredictable, so I would pack a raincoat. And by the way, the hotel is a stone's throw from the beach, so you can walk there in two minutes.\" Customer: \"That sounds perfect. Can I get a refund if I have to cancel?\" Agent: \"Only if you cancel at least a month before you leave.\""
+  },
+  {
+   "v": "Why is October a good choice for the customer?",
+   "o": [
+    "the beach is closed to visitors in October",
+    "the weather is always the best in October",
+    "it is cheaper and quieter",
+    "the hotel gives a refund for every customer"
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 4,
+   "u": "Goedkoop en rustig. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"the beach is closed to visitors in October\"? Dan denk je dat het strand dicht is. De agent zegt het tegenovergestelde, namelijk dat het hotel dicht bij het strand ligt.",
+    "Koos je \"the weather is always the best in October\"? Dan denk je dat het weer altijd goed is. De agent noemt het onvoorspelbaar, dus dat is niet de reden.",
+    "Klopt: de klant wil een goedkope vakantie en de agent noemt lagere prijzen.",
+    "Koos je \"the hotel gives a refund for every customer\"? Dan denk je dat dit de reden is. Het gaat om een voorwaarde bij annuleren, en niet om het kiezen van oktober."
+   ],
+   "uh": "Waarom oktober?",
+   "ctx": "You hear a conversation between a travel agent and a customer. Agent: \"So you want a cheap holiday? I would say go in October. It is the shoulder season, which means fewer tourists and lower prices.\" Customer: \"Is the weather still good?\" Agent: \"Usually, yes. It can be a bit unpredictable, so I would pack a raincoat. And by the way, the hotel is a stone's throw from the beach, so you can walk there in two minutes.\" Customer: \"That sounds perfect. Can I get a refund if I have to cancel?\" Agent: \"Only if you cancel at least a month before you leave.\""
+  },
+  {
+   "v": "Why was the first week \"a real eye-opener\" for the student?",
+   "o": [
+    "he dropped a whole tray of rolls on the floor",
+    "he earned his own money for the first time",
+    "he had to get up at five o'clock",
+    "his boss was very strict with him that week"
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 0,
+   "u": "Reden: vroeg opstaan. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"he dropped a whole tray of rolls on the floor\"? Dan denk je dat dit de reden is. Dat gebeurde pas de week erna, en dus niet de eerste week.",
+    "Koos je \"he earned his own money for the first time\"? Dan denk je dat dit de reden is. Dat noemt hij als reden dat hij de baan leuk vindt, en niet als verrassing.",
+    "Klopt: dat noemt hij zelf als reden na because.",
+    "Koos je \"his boss was very strict with him that week\"? Dan denk je dat de baas streng was. Hij beschrijft haar als easygoing, dus dit klopt niet."
+   ],
+   "uh": "Waarom verrassend?",
+   "ctx": "You hear a student talking about his part-time job: \"I work in a bakery on Saturdays. The first week was a real eye-opener, because I had to get up at five. At first I was exhausted, but I got used to it. My boss is very easygoing, she never gets angry when I make a mistake. Last week I accidentally dropped a whole tray of rolls, and she just laughed. What I like best is that I am earning my own money, so I can finally buy a new laptop without asking my parents. So I can honestly say that it was a good choice for me.\""
+  },
+  {
+   "v": "What does the student mean by \"she just laughed\"?",
+   "o": [
+    "she did not see the rolls on the floor",
+    "she was laughing at him in an unkind way",
+    "she was very angry but did not show it",
+    "she was not upset about the accident"
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 1,
+   "u": "Laughed = niet boos. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"she did not see the rolls on the floor\"? Dan denk je dat ze het niet zag. Ze lachte juist erom, dus ze wist het wel.",
+    "Koos je \"she was laughing at him in an unkind way\"? Dan denk je dat ze hem uitlachte. Hij noemt haar easygoing, dus ze lachte vriendelijk.",
+    "Koos je \"she was very angry but did not show it\"? Dan denk je dat ze boos was. Het woord laughed laat het tegenovergestelde zien, en dat ze niet boos was.",
+    "Klopt: hij gebruikt de uitdrukking om te laten zien hoe ontspannen ze is."
+   ],
+   "uh": "Wat zegt dit?",
+   "ctx": "You hear a student talking about his part-time job: \"I work in a bakery on Saturdays. The first week was a real eye-opener, because I had to get up at five. At first I was exhausted, but I got used to it. My boss is very easygoing, she never gets angry when I make a mistake. Last week I accidentally dropped a whole tray of rolls, and she just laughed. What I like best is that I am earning my own money, so I can finally buy a new laptop without asking my parents. So I can honestly say that it was a good choice for me.\""
+  },
+  {
+   "v": "Why does the student like his job best?",
+   "o": [
+    "he can buy things with his own money",
+    "he does not have to get up early",
+    "he gets free bread every Saturday morning",
+    "he has become friends with the whole team"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 4,
+   "u": "Eigen geld verdienen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: hij zegt dat hij een laptop kan kopen zonder zijn ouders te vragen.",
+    "Koos je \"he does not have to get up early\"? Dan denk je dat hij niet vroeg op hoeft. Hij moet om vijf uur op, en dat is juist de eye-opener.",
+    "Koos je \"he gets free bread every Saturday morning\"? Dan denk je dat hij gratis brood krijgt. Dat wordt niet gezegd, en hij noemt zijn eigen geld.",
+    "Koos je \"he has become friends with the whole team\"? Dan denk je dat hij vrienden maakte. Dat staat er niet, en hij noemt alleen zijn baas."
+   ],
+   "uh": "Wat vindt hij het leukst?",
+   "ctx": "You hear a student talking about his part-time job: \"I work in a bakery on Saturdays. The first week was a real eye-opener, because I had to get up at five. At first I was exhausted, but I got used to it. My boss is very easygoing, she never gets angry when I make a mistake. Last week I accidentally dropped a whole tray of rolls, and she just laughed. What I like best is that I am earning my own money, so I can finally buy a new laptop without asking my parents. So I can honestly say that it was a good choice for me.\""
+  },
+  {
+   "v": "What does \"a long time coming\" suggest about the project?",
+   "o": [
+    "the project was finished very quickly",
+    "people had waited for it for years",
+    "the project was cancelled by the council",
+    "the project started a long time ago and stopped"
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 2,
+   "u": "Long time coming = lang verwacht.",
+   "uo": [
+    "Koos je \"the project was finished very quickly\"? Dan denk je dat het snel klaar was. Long time coming zegt het tegenovergestelde, namelijk dat het lang duurde.",
+    "Klopt: de bibliothecaris zegt dat ze er jaren mee bezig waren.",
+    "Koos je \"the project was cancelled by the council\"? Dan denk je dat het project werd geannuleerd. Het is heropend, dus het is afgemaakt.",
+    "Koos je \"the project started a long time ago and stopped\"? Dan denk je dat het stopte. Er is verteld dat de gemeente hielp, dus het werd afgemaakt."
+   ],
+   "uh": "Hoe lang?",
+   "ctx": "You hear a radio report about a new library: \"The city library has reopened after a major renovation. The building is now fully accessible for wheelchairs, and visitors can borrow tablets as well as books. Librarian Ahmed says the project was a long time coming. We had been planning this for years, but the money was not available until the council stepped in. The library also offers free homework help on Tuesday evenings, which has already proved popular with local pupils. The mayor will officially open the new reading room next month.\""
+  },
+  {
+   "v": "Why could the library start the work?",
+   "o": [
+    "the librarians collected the money themselves",
+    "the pupils paid for the homework help",
+    "a rich visitor donated a tablet to the library",
+    "the council gave the money that was needed"
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 3,
+   "u": "Gemeente zorgde voor geld. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"the librarians collected the money themselves\"? Dan denk je dat de bibliothecarissen het geld inzamelden. Dat staat er niet, en de gemeente hielp.",
+    "Koos je \"the pupils paid for the homework help\"? Dan denk je dat de leerlingen betaalden. Het huiswerkuur is gratis, en dat is niet de oorzaak.",
+    "Koos je \"a rich visitor donated a tablet to the library\"? Dan denk je dat een bezoeker het geld gaf. Dat noemt het verslag niet, en het gaat om de gemeente.",
+    "Klopt: tot de gemeente ingreep was er geen geld beschikbaar."
+   ],
+   "uh": "Hoe kon het?",
+   "ctx": "You hear a radio report about a new library: \"The city library has reopened after a major renovation. The building is now fully accessible for wheelchairs, and visitors can borrow tablets as well as books. Librarian Ahmed says the project was a long time coming. We had been planning this for years, but the money was not available until the council stepped in. The library also offers free homework help on Tuesday evenings, which has already proved popular with local pupils. The mayor will officially open the new reading room next month.\""
+  },
+  {
+   "v": "Which sentence about the library is true?",
+   "o": [
+    "Visitors can borrow tablets and books.",
+    "Visitors must pay to use homework help.",
+    "The library is closed on Tuesday evenings.",
+    "The library only allows people with wheelchairs."
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 4,
+   "u": "Tablets en boeken lenen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: de verslaggever noemt tablets naast boeken als dingen die je kunt lenen.",
+    "Koos je \"Visitors must pay to use homework help.\"? Dan denk je dat het huiswerkuur geld kost. Het is gratis, en dat zegt het verslag.",
+    "Koos je \"The library is closed on Tuesday evenings.\"? Dan denk je dat de bibliotheek dinsdagavond dicht is. Er is dan huiswerkhulp, dus hij is open.",
+    "Koos je \"The library only allows people with wheelchairs.\"? Dan denk je dat alleen rolstoelers welkom zijn. Het gebouw is voor iedereen toegankelijk, en niet beperkt."
+   ],
+   "uh": "Wat klopt?",
+   "ctx": "You hear a radio report about a new library: \"The city library has reopened after a major renovation. The building is now fully accessible for wheelchairs, and visitors can borrow tablets as well as books. Librarian Ahmed says the project was a long time coming. We had been planning this for years, but the money was not available until the council stepped in. The library also offers free homework help on Tuesday evenings, which has already proved popular with local pupils. The mayor will officially open the new reading room next month.\""
+  },
+  {
+   "v": "What does the customer show by saying \"That sounds perfect\"?",
+   "o": [
+    "she wants to ask the agent for a refund",
+    "she likes the agent's plan",
+    "she does not like the idea of October",
+    "she wants to leave the conversation at once"
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 3,
+   "u": "Positieve reactie. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"she wants to ask the agent for a refund\"? Dan denk je dat de zin om een refund vraagt. De klant vraagt dat pas daarna, dus dit zegt niets over geld terug.",
+    "Klopt: zij vindt het hotel dichtbij en de prijs goed klinken.",
+    "Koos je \"she does not like the idea of October\"? Dan denk je dat ze oktober niet wil. That sounds perfect is positief, dus zij is blij.",
+    "Koos je \"she wants to leave the conversation at once\"? Dan denk je dat ze wil stoppen. Ze gaat juist verder met een nieuwe vraag, dus ze is geïnteresseerd."
+   ],
+   "uh": "Wat voelt de klant?",
+   "ctx": "You hear a conversation between a travel agent and a customer. Agent: \"So you want a cheap holiday? I would say go in October. It is the shoulder season, which means fewer tourists and lower prices.\" Customer: \"Is the weather still good?\" Agent: \"Usually, yes. It can be a bit unpredictable, so I would pack a raincoat. And by the way, the hotel is a stone's throw from the beach, so you can walk there in two minutes.\" Customer: \"That sounds perfect. Can I get a refund if I have to cancel?\" Agent: \"Only if you cancel at least a month before you leave.\""
+  }
+ ],
+ "oe": [
+  {
+   "bron": "Examenstijl",
+   "ctx": "You hear a conversation between a travel agent and a customer. Agent: \"So you want a cheap holiday? I would say go in October. It is the shoulder season, which means fewer tourists and lower prices.\" Customer: \"Is the weather still good?\" Agent: \"Usually, yes. It can be a bit unpredictable, so I would pack a raincoat. And by the way, the hotel is a stone's throw from the beach, so you can walk there in two minutes.\" Customer: \"That sounds perfect. Can I get a refund if I have to cancel?\" Agent: \"Only if you cancel at least a month before you leave.\"",
+   "v": "What do \"shoulder season\" and \"a stone's throw\" mean? Use the conversation to explain.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Shoulder season is een tijd met minder toeristen en lagere prijzen (1p). Een stone's throw is heel dichtbij, je loopt er in twee minuten (1p). De agent legt het zelf uit (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "You hear a student talking about his part-time job: \"I work in a bakery on Saturdays. The first week was a real eye-opener, because I had to get up at five. At first I was exhausted, but I got used to it. My boss is very easygoing, she never gets angry when I make a mistake. Last week I accidentally dropped a whole tray of rolls, and she just laughed. What I like best is that I am earning my own money, so I can finally buy a new laptop without asking my parents. So I can honestly say that it was a good choice for me.\"",
+   "v": "What does \"an eye-opener\" mean here and why did the student call his first week this?",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Een eye-opener is een verrassende ervaring (1p). De eerste week was dat omdat hij om vijf uur op moest (2p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "You hear a radio report about a new library: \"The city library has reopened after a major renovation. The building is now fully accessible for wheelchairs, and visitors can borrow tablets as well as books. Librarian Ahmed says the project was a long time coming. We had been planning this for years, but the money was not available until the council stepped in. The library also offers free homework help on Tuesday evenings, which has already proved popular with local pupils. The mayor will officially open the new reading room next month.\"",
+   "v": "What do \"renovation\" and \"stepped in\" mean in this report?",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Renovation is een verbouwing van het gebouw (1p). Stepped in betekent dat de gemeente hielp met geld (2p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "You hear a dialogue at a shop: \"Excuse me, do you have this jacket in a larger size?\" \"I am afraid not. It is the last one, and it is on sale, so we do not expect any more.\" \"That is a pity. Is there a similar one in the shop?\" \"Yes, over there. It is a bit pricier, but the quality is much better.\"",
+   "v": "What does \"on sale\" mean and why is the other jacket \"pricier\"?",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "On sale betekent dat de jas in de aanbieding is (1p). Pricier is duurder, maar de kwaliteit is veel beter (2p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "You hear a girl on the phone: \"Hi Tom, I am running late. The bus has broken down, so I will be about twenty minutes late. Could you save me a seat? I will be there as soon as possible. Don't worry, I'll make it up to you tonight!\"",
+   "v": "What does \"running late\" mean and what does the girl say to explain it?",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Running late betekent dat ze te laat komt (1p). De bus is kapot (1p), ze is ongeveer twintig minuten later (1p)."
+  }
+ ]
+}
