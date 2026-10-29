@@ -2650,6 +2650,27 @@ var VAKKEN = [
       "nOe": 5,
       "nBeg": 12,
       "hasSam": true
+     },
+     {
+      "id": "C4",
+      "lo": "en.C.4",
+      "gs": 2,
+      "naam": "Conclusies trekken over bedoeling, mening en gevoel van sprekers",
+      "beschrijving": "Je leert uit toon, woordkeus en wat iemand zegt af te leiden wat de spreker bedoelt, vindt en voelt.",
+      "ceStatus": "CE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "De bedoeling van de spreker",
+       "Meningen herkennen",
+       "Gevoelens uit toon en woordkeus",
+       "Conclusies trekken",
+       "Beleefd of direct"
+      ],
+      "nSv": 27,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
      }
     ]
    },

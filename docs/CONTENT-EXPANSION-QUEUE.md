@@ -19,7 +19,7 @@
    leerdoelen van het domein af, vink dan ook het domein af.
 4. Bij een rode poort: niets pushen, wél melden.
 
-> Voortgang: **107 leerdoelen op v2** (havo bi.M3, nl.A1 t/m nl.A7, nl.B1 t/m nl.B5, nl.C1 t/m nl.C6, nl.D1 t/m nl.D6, nl.F1 t/m nl.F6, en.A1, en.A2, en.A3, en.A4, en.A5, en.A6, en.A7, en.A8, en.B1, en.B2, en.B3, en.B4, en.B5, en.B6, en.B7, en.B8, vwo nl.A1, vwo nl.A2, vwo nl.A3, vwo nl.A4, vwo nl.A5, vwo nl.A6, vwo nl.A7, vwo nl.B1, vwo nl.B2, vwo nl.B3, vwo nl.B4, vwo nl.B5, vwo nl.C1, vwo nl.C2, vwo nl.C3, vwo nl.C4, vwo nl.C5, vwo nl.C6, vwo nl.D1, vwo nl.D2, vwo nl.D3, vwo nl.D4, vwo nl.D5, vwo nl.D6, vwo nl.E1, vwo nl.E2, vwo nl.E3, vwo nl.E4, vwo nl.E5, vwo nl.E6, vmbo nl.A1, vmbo nl.A2, vmbo nl.A3, vmbo nl.A4, vmbo nl.A5, vmbo nl.B1, vmbo nl.B2, vmbo nl.B3, vmbo nl.B4, vmbo nl.B5, vmbo nl.C1, vmbo nl.C2, vmbo nl.C3, vmbo nl.C4, vmbo nl.C5, vmbo nl.D1, vmbo nl.D2, vmbo nl.D3, vmbo nl.D4, vmbo nl.D5, vmbo nl.D6, vmbo nl.E1, vmbo nl.E2, vmbo nl.E3, vmbo nl.E4, vmbo nl.E5, vmbo nl.E6, havo en.C1, havo en.C2, havo en.C3). Werk dit getal bij bij elke afronding.
+> Voortgang: **108 leerdoelen op v2** (havo bi.M3, nl.A1 t/m nl.A7, nl.B1 t/m nl.B5, nl.C1 t/m nl.C6, nl.D1 t/m nl.D6, nl.F1 t/m nl.F6, en.A1, en.A2, en.A3, en.A4, en.A5, en.A6, en.A7, en.A8, en.B1, en.B2, en.B3, en.B4, en.B5, en.B6, en.B7, en.B8, vwo nl.A1, vwo nl.A2, vwo nl.A3, vwo nl.A4, vwo nl.A5, vwo nl.A6, vwo nl.A7, vwo nl.B1, vwo nl.B2, vwo nl.B3, vwo nl.B4, vwo nl.B5, vwo nl.C1, vwo nl.C2, vwo nl.C3, vwo nl.C4, vwo nl.C5, vwo nl.C6, vwo nl.D1, vwo nl.D2, vwo nl.D3, vwo nl.D4, vwo nl.D5, vwo nl.D6, vwo nl.E1, vwo nl.E2, vwo nl.E3, vwo nl.E4, vwo nl.E5, vwo nl.E6, vmbo nl.A1, vmbo nl.A2, vmbo nl.A3, vmbo nl.A4, vmbo nl.A5, vmbo nl.B1, vmbo nl.B2, vmbo nl.B3, vmbo nl.B4, vmbo nl.B5, vmbo nl.C1, vmbo nl.C2, vmbo nl.C3, vmbo nl.C4, vmbo nl.C5, vmbo nl.D1, vmbo nl.D2, vmbo nl.D3, vmbo nl.D4, vmbo nl.D5, vmbo nl.D6, vmbo nl.E1, vmbo nl.E2, vmbo nl.E3, vmbo nl.E4, vmbo nl.E5, vmbo nl.E6, havo en.C1, havo en.C2, havo en.C3, havo en.C4). Werk dit getal bij bij elke afronding.
 > Oude stand (v1, domeinniveau): 7/220 domeinen; die tellen niet meer als af.
 >
 > **Omvang (okt 2026):** 220 domeinen (havo 59, vwo 84, vmbo 77) × gemiddeld ~6 leerdoelen
@@ -155,7 +155,7 @@
   - [x] C1 · en.C.1 Relevante informatie vinden in een gesproken tekst · 27 vragen (R1 7, R2 10, R3 10, 3 eigen luisteropnames van 500-570 tekens), 12 begrippen, 4 figuren (luisterplan, klokken, verbetering, prijzen), geen clip
   - [x] C2 · en.C.2 De hoofdgedachte van een luister- of kijktekst aangeven · 26 vragen (R1 7, R2 10, R3 9, 3 eigen luisteropnames van 450-520 tekens), 12 begrippen, 4 figuren (kern en details, hoofdzaak en bijzaak, signaalwoorden, samenvatting), geen clip
   - [x] C3 · en.C.3 De betekenis van belangrijke woorden en zinnen in gesproken tekst · 27 vragen (R1 7, R2 10, R3 10, 3 eigen luisteropnames van 520-555 tekens), 12 begrippen, 4 figuren (stappen, uitdrukkingen, synoniemenlijn, letterlijk en figuurlijk), geen clip
-  - [ ] C4 · en.C.4 Conclusies trekken over bedoeling, mening en gevoel van sprekers
+  - [x] C4 · en.C.4 Conclusies trekken over bedoeling, mening en gevoel van sprekers · 27 vragen (R1 7, R2 10, R3 10, 3 eigen luisteropnames van 525-540 tekens), 12 begrippen, 4 figuren (bedoelingen, meningsschaal, gevoelswoorden, conclusie), geen clip
   - [ ] C5 · en.C.5 Het meest waarschijnlijke vervolg van een gesprek voorspellen
   - [ ] C6 · en.C.6 Aantekeningen maken bij het luisteren
 - [ ] **HAVO · Engels** (`en`) · domein D — Gespreksvaardigheid

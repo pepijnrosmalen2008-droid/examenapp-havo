@@ -117074,6 +117074,688 @@ var VAKKEN = [
         "u": "Running late betekent dat ze te laat komt (1p). De bus is kapot (1p), ze is ongeveer twintig minuten later (1p)."
        }
       ]
+     },
+     {
+      "id": "C4",
+      "lo": "en.C.4",
+      "gs": 2,
+      "naam": "Conclusies trekken over bedoeling, mening en gevoel van sprekers",
+      "beschrijving": "Je leert uit toon, woordkeus en wat iemand zegt af te leiden wat de spreker bedoelt, vindt en voelt.",
+      "ceStatus": "CE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "De bedoeling van de spreker",
+       "Meningen herkennen",
+       "Gevoelens uit toon en woordkeus",
+       "Conclusies trekken",
+       "Beleefd of direct"
+      ],
+      "sam": "Bij een luistertekst hoor je niet alleen wat iemand zegt, maar ook wat hij bedoelt. Een spreker kan adviseren, klagen, iets vragen of bedanken. Een mening herken je aan woorden als I think en aan sterke woorden als brilliant of terrible. Gevoelens hoor je aan toon en woordkeus. Soms zegt iemand het tegenovergestelde van wat hij bedoelt, dat is ironie. Trek een conclusie op basis van wat er echt gezegd wordt.",
+      "begrippen": [
+       {
+        "t": "Bedoeling",
+        "d": "Wat de spreker met zijn woorden wil bereiken."
+       },
+       {
+        "t": "Mening",
+        "d": "Wat iemand van iets vindt."
+       },
+       {
+        "t": "Standpunt",
+        "d": "Een mening met een reden erbij."
+       },
+       {
+        "t": "Toon",
+        "d": "Hoe iets klinkt: boos, blij of verdrietig."
+       },
+       {
+        "t": "Woordkeus",
+        "d": "De woorden die iemand kiest."
+       },
+       {
+        "t": "Gevoel",
+        "d": "Wat iemand voelt, zoals teleurstelling of trots."
+       },
+       {
+        "t": "Ironie",
+        "d": "Het tegenovergestelde zeggen van wat je bedoelt."
+       },
+       {
+        "t": "Klacht",
+        "d": "Een uiting van ontevredenheid."
+       },
+       {
+        "t": "Advies",
+        "d": "Een tip over wat iemand moet doen."
+       },
+       {
+        "t": "Verzoek",
+        "d": "Een vraag om iets te doen."
+       },
+       {
+        "t": "Beleefd",
+        "d": "Vriendelijk en met respect gezegd."
+       },
+       {
+        "t": "Conclusie",
+        "d": "Wat je afleidt uit wat je hoort."
+       }
+      ],
+      "sv": [
+       {
+        "v": "Which intention does a speaker have when he says \"You should really see this film\"?",
+        "o": [
+         "to ask for the way to the cinema",
+         "to give advice",
+         "to say sorry for a mistake that he made",
+         "to complain about the price of a ticket"
+        ],
+        "c": 1,
+        "d": 1,
+        "s": 0,
+        "u": "Should = advies. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"to ask for the way to the cinema\"? Dan denk je dat hij de weg vraagt. Hij vraagt niets, en hij zegt wat jij zou moeten doen.",
+         "Klopt: should geeft aan dat hij een advies geeft.",
+         "Koos je \"to say sorry for a mistake that he made\"? Dan denk je dat hij zijn excuses aanbiedt. Er is geen fout in de zin, dus het is geen excuus.",
+         "Koos je \"to complain about the price of a ticket\"? Dan denk je dat hij klaagt. Hij beveelt de film juist aan, dus hij is positief."
+        ],
+        "uh": "Wat wil hij?"
+       },
+       {
+        "v": "Which intention does a speaker have when she says \"I would like to book a room for two nights\"?",
+        "o": [
+         "to complain about the hotel service",
+         "to thank somebody for a nice stay",
+         "to warn other guests about a danger",
+         "to ask for something"
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 0,
+        "u": "Would like = verzoek. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"to complain about the hotel service\"? Dan denk je dat ze klaagt. Ze noemt geen probleem, dus het is een gewone vraag.",
+         "Koos je \"to thank somebody for a nice stay\"? Dan denk je dat ze bedankt. Ze wil nog boeken, dus het verblijf is nog niet geweest.",
+         "Koos je \"to warn other guests about a danger\"? Dan denk je dat ze waarschuwt. Er is geen gevaar genoemd, en ze vraagt alleen een kamer.",
+         "Klopt: ze wil iets regelen en vraagt om een kamer."
+        ],
+        "uh": "Wat wil ze?"
+       },
+       {
+        "v": "Which word shows that a speaker is angry?",
+        "o": [
+         "furious",
+         "delighted, as it is a happy word",
+         "curious, because it sounds the same",
+         "relaxed, as it is a very calm word"
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 2,
+        "u": "Furious = woedend. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: furious betekent woedend, dus heel erg boos en dat is een boos gevoel.",
+         "Koos je \"delighted, as it is a happy word\"? Dan denk je dat delighted boos is. Het woord is positief, en betekent erg blij.",
+         "Koos je \"curious, because it sounds the same\"? Dan denk je dat curious boos is. Het betekent nieuwsgierig, en lijkt alleen op furious.",
+         "Koos je \"relaxed, as it is a very calm word\"? Dan denk je dat relaxed boos is. Het woord is rustig, en past niet bij boosheid."
+        ],
+        "uh": "Welk woord is boos?"
+       },
+       {
+        "v": "Which sentence shows that a speaker is disappointed?",
+        "o": [
+         "\"I am looking forward to the trip.\"",
+         "\"This is exactly what I wanted.\"",
+         "\"I expected much more than this.\"",
+         "\"I will see you at the station.\""
+        ],
+        "c": 2,
+        "d": 1,
+        "s": 2,
+        "u": "Expected more = teleurgesteld.",
+        "uo": [
+         "Koos je \"I am looking forward to the trip.\"? Dan denk je dat dit teleurstelling is. Dit is blijde verwachting, en het tegenovergestelde van teleurstelling.",
+         "Koos je \"This is exactly what I wanted.\"? Dan denk je dat dit teleurstelling is. Het product is precies goed, dus de spreker is tevreden.",
+         "Klopt: hij had meer verwacht en dat is teleurstelling.",
+         "Koos je \"I will see you at the station.\"? Dan denk je dat dit teleurstelling is. Het is een afspraak, en zegt niets over een gevoel."
+        ],
+        "uh": "Welke zin is teleurgesteld?"
+       },
+       {
+        "v": "Which words often introduce an opinion?",
+        "o": [
+         "\"yesterday\" and \"last week\"",
+         "\"five o'clock\" and \"half past six\"",
+         "\"I think\" and \"in my opinion\"",
+         "\"in London\" and \"near the station\""
+        ],
+        "c": 2,
+        "d": 1,
+        "s": 1,
+        "u": "I think = mening. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"yesterday and last week\"? Dan denk je dat dit een mening inleidt. Het zijn tijdwoorden, en ze gaan over wanneer iets gebeurde.",
+         "Koos je \"five o'clock and half past six\"? Dan denk je dat dit een mening inleidt. Het zijn klokstijden, en die zijn feiten.",
+         "Klopt: zulke woorden laten horen dat het om een mening gaat.",
+         "Koos je \"in London and near the station\"? Dan denk je dat dit een mening inleidt. Het zijn plaatsen, en een plaats is een feit."
+        ],
+        "uh": "Welke woorden tonen een mening?"
+       },
+       {
+        "v": "Which sentence is the most polite?",
+        "o": [
+         "\"Could you open it, please?\"",
+         "\"Open the window now, please hurry up.\"",
+         "\"I want that window open right now.\"",
+         "\"The window must be opened at once.\""
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 4,
+        "u": "Could you + please = beleefd. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: could you en please maken de vraag beleefd.",
+         "Koos je \"Open the window now, please hurry up.\"? Dan denk je dat dit beleefd is. Dit is een bevel zonder please, en klinkt dus onbeleefd.",
+         "Koos je \"I want that window open right now.\"? Dan denk je dat dit beleefd is. I want klinkt eisend, en is dus niet beleefd.",
+         "Koos je \"The window must be opened at once.\"? Dan denk je dat dit beleefd is. Het klinkt als een bevel, dus is het niet beleefd."
+        ],
+        "uh": "Welke vraag is vriendelijk?"
+       },
+       {
+        "v": "A speaker says \"Great, another delay!\" in a sad voice. What does he really mean?",
+        "o": [
+         "he is happy about the delay",
+         "he wants to take the next train at once",
+         "he does not care about the time at all",
+         "he is annoyed, not happy"
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 3,
+        "u": "Toon + great = ironie. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"he is happy about the delay\"? Dan denk je dat great blij betekent. De toon is verdrietig, dus het is niet letterlijk bedoeld.",
+         "Koos je \"he wants to take the next train at once\"? Dan denk je dat hij meteen wil vertrekken. Dat zegt hij niet, en hij klaagt over de vertraging.",
+         "Koos je \"he does not care about the time at all\"? Dan denk je dat het hem niets kan schelen. Zijn toon laat juist ergernis horen, dus hij vindt het wel erg.",
+         "Klopt: de toon laat zien dat great hier ironisch bedoeld is."
+        ],
+        "uh": "Hoe klinkt hij?"
+       },
+       {
+        "v": "Why is the customer calling the helpdesk?",
+        "o": [
+         "to ask for a new laptop as a free gift from the shop",
+         "to complain about a broken laptop",
+         "to thank the shop for its good service last month",
+         "to ask how the laptop works for school every day"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 0,
+        "u": "Klacht. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"to ask for a new laptop as a free gift from the shop\"? Dan denk je dat hij een cadeau vraagt. Hij vraagt een reparatie of vervanging, en dat is geen cadeau.",
+         "Klopt: de laptop is twee keer kapotgegaan, dus hij belt met een klacht.",
+         "Koos je \"to thank the shop for its good service last month\"? Dan denk je dat hij bedankt. Hij is teleurgesteld, dus hij klaagt.",
+         "Koos je \"to ask how the laptop works for school every day\"? Dan denk je dat hij uitleg vraagt. De laptop werkt juist niet, dus hij belt om een probleem."
+        ],
+        "uh": "Waarom belt hij?",
+        "ctx": "You hear a customer calling a helpdesk: \"Hello, I bought this laptop two weeks ago and it has already broken down twice. I was told it was a reliable brand, so I am really disappointed. I am not asking for a miracle, I just want it repaired or replaced. If nobody can help me, I will have to write a review to warn other people.\" The helpdesk worker answers: \"I am very sorry to hear that, sir. Let me see what I can do for you. Could you give me your order number, please? I understand how frustrating this must be for you.\""
+       },
+       {
+        "v": "How does the customer feel at the start of the call?",
+        "o": [
+         "delighted with the new laptop",
+         "curious about the new brand",
+         "relaxed and in no hurry at all",
+         "disappointed"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 2,
+        "u": "Disappointed. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"delighted with the new laptop\"? Dan denk je dat hij blij is. Hij zegt dat de laptop kapotging, dus hij is niet blij.",
+         "Koos je \"curious about the new brand\"? Dan denk je dat hij nieuwsgierig is. Hij zegt dat hij er teleurgesteld over is, en dat is een ander gevoel.",
+         "Koos je \"relaxed and in no hurry at all\"? Dan denk je dat hij ontspannen is. Hij dreigt met een review, dus hij is niet rustig.",
+         "Klopt: hij zegt dat hij echt teleurgesteld is."
+        ],
+        "uh": "Hoe voelt hij?",
+        "ctx": "You hear a customer calling a helpdesk: \"Hello, I bought this laptop two weeks ago and it has already broken down twice. I was told it was a reliable brand, so I am really disappointed. I am not asking for a miracle, I just want it repaired or replaced. If nobody can help me, I will have to write a review to warn other people.\" The helpdesk worker answers: \"I am very sorry to hear that, sir. Let me see what I can do for you. Could you give me your order number, please? I understand how frustrating this must be for you.\""
+       },
+       {
+        "v": "What does the customer want the helpdesk to do?",
+        "o": [
+         "give him back his money in full",
+         "repair or replace the laptop",
+         "explain how to use a new laptop",
+         "send a worker to his home every day"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 0,
+        "u": "Repair or replace. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"give him back his money in full\"? Dan denk je dat hij zijn geld terug wil. Hij noemt reparatie of vervanging, en niet terugbetaling.",
+         "Klopt: hij zegt I just want it repaired or replaced.",
+         "Koos je \"explain how to use a new laptop\"? Dan denk je dat hij uitleg wil. Hij vraagt om een oplossing, en niet om uitleg.",
+         "Koos je \"send a worker to his home every day\"? Dan denk je dat hij een dagelijkse monteur wil. Dat staat niet in het gesprek, en hij noemt alleen herstel of een nieuwe."
+        ],
+        "uh": "Wat wil hij?",
+        "ctx": "You hear a customer calling a helpdesk: \"Hello, I bought this laptop two weeks ago and it has already broken down twice. I was told it was a reliable brand, so I am really disappointed. I am not asking for a miracle, I just want it repaired or replaced. If nobody can help me, I will have to write a review to warn other people.\" The helpdesk worker answers: \"I am very sorry to hear that, sir. Let me see what I can do for you. Could you give me your order number, please? I understand how frustrating this must be for you.\""
+       },
+       {
+        "v": "What will the customer do if nobody can help him?",
+        "o": [
+         "call a lawyer to take the case to court",
+         "buy a new laptop from the same shop",
+         "write a review to warn other people",
+         "ask his friends to call the helpdesk"
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 0,
+        "u": "Review als dreiging. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"call a lawyer to take the case to court\"? Dan denk je dat hij naar een advocaat gaat. Dat zegt hij niet, en hij noemt een recensie.",
+         "Koos je \"buy a new laptop from the same shop\"? Dan denk je dat hij een nieuwe koopt. Hij is teleurgesteld, dus hij wil niet weer kopen.",
+         "Klopt: hij dreigt een recensie te schrijven als niemand hem kan helpen.",
+         "Koos je \"ask his friends to call the helpdesk\"? Dan denk je dat vrienden bellen. Dat staat niet in de tekst, en het gaat om een recensie."
+        ],
+        "uh": "Wat doet hij?",
+        "ctx": "You hear a customer calling a helpdesk: \"Hello, I bought this laptop two weeks ago and it has already broken down twice. I was told it was a reliable brand, so I am really disappointed. I am not asking for a miracle, I just want it repaired or replaced. If nobody can help me, I will have to write a review to warn other people.\" The helpdesk worker answers: \"I am very sorry to hear that, sir. Let me see what I can do for you. Could you give me your order number, please? I understand how frustrating this must be for you.\""
+       },
+       {
+        "v": "What is the girl's opinion of the film?",
+        "o": [
+         "very positive",
+         "very negative",
+         "neither positive nor negative",
+         "only negative about the length"
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 1,
+        "u": "Positief. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: ze zegt dat ze zou terugkomen en hij aanbeveelt.",
+         "Koos je \"very negative\"? Dan denk je dat ze de film slecht vindt. Ze noemt het acteerwerk geweldig, dus ze is positief.",
+         "Koos je \"neither positive nor negative\"? Dan denk je dat ze neutraal is. Ze beveelt de film aan, en dat is positief.",
+         "Koos je \"only negative about the length\"? Dan denk je dat ze alleen klaagt over de lengte. Dat is een kleine kritiek, en het meeste is positief."
+        ],
+        "uh": "Wat vindt ze?",
+        "ctx": "You hear a teenager talking to her friend about a new film: \"Honestly, I did not expect much, but it blew me away. The acting was brilliant, and the ending gave me goosebumps. Okay, it was a bit long, and I almost fell asleep in the middle, but overall I would go again tomorrow. You have to see it, I promise you will not regret it. Take your sister along, because she loves this kind of story too. My friend Jess saw it last week and she said the same. It starts at eight tonight, so we could easily go together if you are free.\""
+       },
+       {
+        "v": "Which word shows the girl's enthusiasm about the acting?",
+        "o": [
+         "the word \"brilliant\"",
+         "the word \"expect\" at the start",
+         "the word \"almost\" in the middle",
+         "the word \"middle\" in the story"
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 2,
+        "u": "Brilliant = geweldig. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: brilliant is een sterk positief woord.",
+         "Koos je \"the word expect at the start\"? Dan denk je dat expect enthousiasme toont. Het is een gewoon werkwoord, en het zegt niets over haar gevoel.",
+         "Koos je \"the word almost in the middle\"? Dan denk je dat almost enthousiasme toont. Het woord beschrijft bijna in slaap vallen, en is juist negatief.",
+         "Koos je \"the word middle in the story\"? Dan denk je dat middle enthousiasme toont. Het woord gaat over een plaats in de film, en is neutraal."
+        ],
+        "uh": "Welk woord is enthousiast?",
+        "ctx": "You hear a teenager talking to her friend about a new film: \"Honestly, I did not expect much, but it blew me away. The acting was brilliant, and the ending gave me goosebumps. Okay, it was a bit long, and I almost fell asleep in the middle, but overall I would go again tomorrow. You have to see it, I promise you will not regret it. Take your sister along, because she loves this kind of story too. My friend Jess saw it last week and she said the same. It starts at eight tonight, so we could easily go together if you are free.\""
+       },
+       {
+        "v": "What criticism does the girl have about the film?",
+        "o": [
+         "the acting was not good enough",
+         "the ending was too sad for her",
+         "it was a bit long",
+         "the tickets were too expensive"
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 1,
+        "u": "Kritiek: te lang. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"the acting was not good enough\"? Dan denk je dat het acteerwerk slecht was. Ze noemt het brilliant, dus dat is geen kritiek.",
+         "Koos je \"the ending was too sad for her\"? Dan denk je dat het einde te verdrietig was. Het gaf haar kippenvel, en dat is positief.",
+         "Klopt: ze zegt dat ze bijna in slaap viel, dus de film was een beetje te lang.",
+         "Koos je \"the tickets were too expensive\"? Dan denk je dat de prijs de kritiek is. Daar zegt ze niets over, en ze noemt de lengte."
+        ],
+        "uh": "Wat vond ze minder?",
+        "ctx": "You hear a teenager talking to her friend about a new film: \"Honestly, I did not expect much, but it blew me away. The acting was brilliant, and the ending gave me goosebumps. Okay, it was a bit long, and I almost fell asleep in the middle, but overall I would go again tomorrow. You have to see it, I promise you will not regret it. Take your sister along, because she loves this kind of story too. My friend Jess saw it last week and she said the same. It starts at eight tonight, so we could easily go together if you are free.\""
+       },
+       {
+        "v": "How does the mayor feel about the park?",
+        "o": [
+         "worried about the cost",
+         "proud",
+         "disappointed by the visitors",
+         "bored by the opening"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 2,
+        "u": "Proud. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"worried about the cost\"? Dan denk je dat hij zich zorgen maakt. Dat deden anderen, en hij is trots.",
+         "Klopt: hij zegt dat hij trots is dat ze het gedaan hebben.",
+         "Koos je \"disappointed by the visitors\"? Dan denk je dat hij teleurgesteld is. Hij bedankt de bezoekers, dus dat past niet.",
+         "Koos je \"bored by the opening\"? Dan denk je dat hij zich verveelt. Hij spreekt enthousiast, en hij wil de poort openen."
+        ],
+        "uh": "Hoe voelt hij?",
+        "ctx": "You hear a mayor speaking at the opening of a park: \"Ladies and gentlemen, thank you for coming on this sunny afternoon. Three years ago this was an empty piece of land. Many people said we could not do it, and that it was too expensive. Today, I am proud to say that we proved them wrong. This park belongs to all of you, so please take care of it, and enjoy every minute. Now, let us cut the ribbon and open the gates. The first visitors are already walking along the new paths near the pond, and the band will play until five o'clock.\""
+       },
+       {
+        "v": "What did many people say three years ago?",
+        "o": [
+         "that the park would be very popular",
+         "that the land should be sold to a company",
+         "that the mayor should leave his job",
+         "that it was too expensive"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 0,
+        "u": "Te duur. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"that the park would be very popular\"? Dan denk je dat men enthousiast was. Er stond dat ze twijfelden, en het park zou te duur zijn.",
+         "Koos je \"that the land should be sold to a company\"? Dan denk je dat men de grond wilde verkopen. Dat noemt hij niet, en het gaat om het geld.",
+         "Koos je \"that the mayor should leave his job\"? Dan denk je dat men het ontslag wilde. Dat staat niet in de tekst, en het gaat om de kosten.",
+         "Klopt: de burgemeester zegt dat velen dachten dat het te duur was."
+        ],
+        "uh": "Wat zeiden mensen?",
+        "ctx": "You hear a mayor speaking at the opening of a park: \"Ladies and gentlemen, thank you for coming on this sunny afternoon. Three years ago this was an empty piece of land. Many people said we could not do it, and that it was too expensive. Today, I am proud to say that we proved them wrong. This park belongs to all of you, so please take care of it, and enjoy every minute. Now, let us cut the ribbon and open the gates. The first visitors are already walking along the new paths near the pond, and the band will play until five o'clock.\""
+       },
+       {
+        "v": "What does the mayor ask the people to do?",
+        "o": [
+         "pay a fee to enter the park",
+         "take care of the park",
+         "bring their own flowers and trees",
+         "stay away from the park at night"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 4,
+        "u": "Please take care. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"pay a fee to enter the park\"? Dan denk je dat er entree is. Hij zegt dat het park van iedereen is, en noemt geen geld.",
+         "Klopt: hij zegt please take care of it, dus hij vraagt zorg voor het park.",
+         "Koos je \"bring their own flowers and trees\"? Dan denk je dat ze bloemen moeten meenemen. Dat zegt hij niet, en hij vraagt om zorg.",
+         "Koos je \"stay away from the park at night\"? Dan denk je dat ze het park niet in mogen. Hij nodigt juist uit, dus dit klopt niet."
+        ],
+        "uh": "Wat vraagt hij?",
+        "ctx": "You hear a mayor speaking at the opening of a park: \"Ladies and gentlemen, thank you for coming on this sunny afternoon. Three years ago this was an empty piece of land. Many people said we could not do it, and that it was too expensive. Today, I am proud to say that we proved them wrong. This park belongs to all of you, so please take care of it, and enjoy every minute. Now, let us cut the ribbon and open the gates. The first visitors are already walking along the new paths near the pond, and the band will play until five o'clock.\""
+       },
+       {
+        "v": "Which sentence shows that the customer is still polite?",
+        "o": [
+         "\"I am not asking for a miracle.\"",
+         "\"I am really disappointed.\"",
+         "\"If nobody can help me, I will write a review.\"",
+         "\"It has already broken down twice.\""
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 4,
+        "u": "Beleefd en redelijk. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: hij maakt zijn eis klein en blijft redelijk.",
+         "Koos je \"I am really disappointed.\"? Dan denk je dat dit beleefd is. Het is een uiting van zijn gevoel, en zegt niets over beleefdheid.",
+         "Koos je \"If nobody can help me, I will write a review.\"? Dan denk je dat dit beleefd is. Het klinkt als een dreigement, dus is het niet beleefd.",
+         "Koos je \"It has already broken down twice.\"? Dan denk je dat dit beleefd is. Het is een feit, en een klacht, geen beleefdheid."
+        ],
+        "uh": "Wat is vriendelijk?",
+        "ctx": "You hear a customer calling a helpdesk: \"Hello, I bought this laptop two weeks ago and it has already broken down twice. I was told it was a reliable brand, so I am really disappointed. I am not asking for a miracle, I just want it repaired or replaced. If nobody can help me, I will have to write a review to warn other people.\" The helpdesk worker answers: \"I am very sorry to hear that, sir. Let me see what I can do for you. Could you give me your order number, please? I understand how frustrating this must be for you.\""
+       },
+       {
+        "v": "Why does the customer mention writing a review?",
+        "o": [
+         "because he likes writing about shops",
+         "because the helpdesk asked him to",
+         "because he wants to praise the brand",
+         "to put pressure on the helpdesk"
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 3,
+        "u": "Review = druk. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"because he likes writing about shops\"? Dan denk je dat hij graag recensies schrijft. Dat zegt hij niet, en het is een dreigement.",
+         "Koos je \"because the helpdesk asked him to\"? Dan denk je dat de helpdesk erom vroeg. Het is zijn eigen opmerking, en geen verzoek van de medewerker.",
+         "Koos je \"because he wants to praise the brand\"? Dan denk je dat hij het merk prijst. Hij is teleurgesteld, en wil waarschuwen.",
+         "Klopt: de dreiging moet de medewerker aanzetten tot hulp."
+        ],
+        "uh": "Waarom noemt hij dit?",
+        "ctx": "You hear a customer calling a helpdesk: \"Hello, I bought this laptop two weeks ago and it has already broken down twice. I was told it was a reliable brand, so I am really disappointed. I am not asking for a miracle, I just want it repaired or replaced. If nobody can help me, I will have to write a review to warn other people.\" The helpdesk worker answers: \"I am very sorry to hear that, sir. Let me see what I can do for you. Could you give me your order number, please? I understand how frustrating this must be for you.\""
+       },
+       {
+        "v": "What does the helpdesk worker's reply show about his attitude?",
+        "o": [
+         "he is angry with the customer on the phone",
+         "he does not believe the customer at all",
+         "he is kind and helpful",
+         "he wants to end the call quite quickly"
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 3,
+        "u": "Sorry + vraag = hulpvaardig. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"he is angry with the customer on the phone\"? Dan denk je dat hij boos is. Hij zegt sorry, dus hij is vriendelijk.",
+         "Koos je \"he does not believe the customer at all\"? Dan denk je dat hij hem niet gelooft. Hij biedt hulp aan, dus hij neemt het serieus.",
+         "Klopt: hij zegt dat het hem spijt en vraagt om het ordernummer.",
+         "Koos je \"he wants to end the call quite quickly\"? Dan denk je dat hij wil ophangen. Hij vraagt nog om het ordernummer, dus hij gaat verder."
+        ],
+        "uh": "Hoe klinkt hij?",
+        "ctx": "You hear a customer calling a helpdesk: \"Hello, I bought this laptop two weeks ago and it has already broken down twice. I was told it was a reliable brand, so I am really disappointed. I am not asking for a miracle, I just want it repaired or replaced. If nobody can help me, I will have to write a review to warn other people.\" The helpdesk worker answers: \"I am very sorry to hear that, sir. Let me see what I can do for you. Could you give me your order number, please? I understand how frustrating this must be for you.\""
+       },
+       {
+        "v": "What does \"it blew me away\" show about the girl?",
+        "o": [
+         "she was afraid in the dark cinema room",
+         "she left the film long before the end",
+         "she was impressed by the film",
+         "she wanted her money back after the film"
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 2,
+        "u": "Blew away = onder de indruk. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"she was afraid in the dark cinema room\"? Dan denk je dat ze bang was. Het is een positieve uitdrukking, dus ze was onder de indruk.",
+         "Koos je \"she left the film long before the end\"? Dan denk je dat ze wegging. Ze noemt het einde, dus ze bleef tot het eind.",
+         "Klopt: blew me away betekent dat de film haar enorm trof.",
+         "Koos je \"she wanted her money back after the film\"? Dan denk je dat ze geld terug wil. Ze is enthousiast, dus geen klacht."
+        ],
+        "uh": "Wat laat het zien?",
+        "ctx": "You hear a teenager talking to her friend about a new film: \"Honestly, I did not expect much, but it blew me away. The acting was brilliant, and the ending gave me goosebumps. Okay, it was a bit long, and I almost fell asleep in the middle, but overall I would go again tomorrow. You have to see it, I promise you will not regret it. Take your sister along, because she loves this kind of story too. My friend Jess saw it last week and she said the same. It starts at eight tonight, so we could easily go together if you are free.\""
+       },
+       {
+        "v": "Why does the girl say \"but overall\"?",
+        "o": [
+         "to say that the film was much too long for her",
+         "to change her mind about the film completely",
+         "to ask her friend for an opinion about it",
+         "to show the good points matter more"
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 1,
+        "u": "But overall = totaal. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"to say that the film was much too long for her\"? Dan denk je dat overall over de lengte gaat. Dat is het bijzaakje ervoor, en overall draait het om het totaal.",
+         "Koos je \"to change her mind about the film completely\"? Dan denk je dat ze van mening verandert. Ze blijft positief, en wil de conclusie aangeven.",
+         "Koos je \"to ask her friend for an opinion about it\"? Dan denk je dat ze een mening vraagt. Dat doet ze niet, want ze geeft haar eigen oordeel.",
+         "Klopt: ze noemt eerst kritiek en benadrukt dan dat het totaal positief is."
+        ],
+        "uh": "Wat wil ze zeggen?",
+        "ctx": "You hear a teenager talking to her friend about a new film: \"Honestly, I did not expect much, but it blew me away. The acting was brilliant, and the ending gave me goosebumps. Okay, it was a bit long, and I almost fell asleep in the middle, but overall I would go again tomorrow. You have to see it, I promise you will not regret it. Take your sister along, because she loves this kind of story too. My friend Jess saw it last week and she said the same. It starts at eight tonight, so we could easily go together if you are free.\""
+       },
+       {
+        "v": "Which statement best describes the girl's advice?",
+        "o": [
+         "a strong tip to see the film",
+         "a warning to stay away from the film at all",
+         "a neutral report about the film and its story",
+         "an invitation to go on a long trip together"
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 0,
+        "u": "Sterke aanbeveling. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: ze zegt you have to see it en belooft dat je er geen spijt van krijgt.",
+         "Koos je \"a warning to stay away from the film at all\"? Dan denk je dat ze waarschuwt. Ze beveelt het juist aan, dus dat is het tegenovergestelde.",
+         "Koos je \"a neutral report about the film and its story\"? Dan denk je dat ze neutraal verslag doet. Ze zegt dat je het moet zien, en dat is een mening.",
+         "Koos je \"an invitation to go on a long trip together\"? Dan denk je dat ze een uitstapje voorstelt. Ze spreekt over de film, en geeft een aanbeveling."
+        ],
+        "uh": "Wat adviseert ze?",
+        "ctx": "You hear a teenager talking to her friend about a new film: \"Honestly, I did not expect much, but it blew me away. The acting was brilliant, and the ending gave me goosebumps. Okay, it was a bit long, and I almost fell asleep in the middle, but overall I would go again tomorrow. You have to see it, I promise you will not regret it. Take your sister along, because she loves this kind of story too. My friend Jess saw it last week and she said the same. It starts at eight tonight, so we could easily go together if you are free.\""
+       },
+       {
+        "v": "What does the mayor mean by \"we proved them wrong\"?",
+        "o": [
+         "the people have made a mistake in the park",
+         "the project was possible after all",
+         "the mayor made a mistake and is sorry",
+         "the park was cheaper than the mayor said"
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 3,
+        "u": "Proved wrong = het kon toch. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"the people have made a mistake in the park\"? Dan denk je dat het om een fout gaat. Het gaat om de twijfelaars, en het park is er toch gekomen.",
+         "Klopt: ondanks de twijfel is het park er gekomen.",
+         "Koos je \"the mayor made a mistake and is sorry\"? Dan denk je dat de burgemeester een fout maakte. Hij is trots, dus hij biedt geen excuus.",
+         "Koos je \"the park was cheaper than the mayor said\"? Dan denk je dat het om prijs gaat. Hij zegt alleen dat het kon, en zegt niets over een bedrag."
+        ],
+        "uh": "Wat bedoelt hij?",
+        "ctx": "You hear a mayor speaking at the opening of a park: \"Ladies and gentlemen, thank you for coming on this sunny afternoon. Three years ago this was an empty piece of land. Many people said we could not do it, and that it was too expensive. Today, I am proud to say that we proved them wrong. This park belongs to all of you, so please take care of it, and enjoy every minute. Now, let us cut the ribbon and open the gates. The first visitors are already walking along the new paths near the pond, and the band will play until five o'clock.\""
+       },
+       {
+        "v": "Why does the mayor say \"This park belongs to all of you\"?",
+        "o": [
+         "to say that the park is free for everyone to buy",
+         "to tell people not to visit the park",
+         "to thank the council for its money",
+         "to make people feel responsible for it"
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 4,
+        "u": "Van jullie = verantwoordelijk.",
+        "uo": [
+         "Koos je \"to say that the park is free for everyone to buy\"? Dan denk je dat het park te koop is. Hij zegt dat het van iedereen is, en niet van een koper.",
+         "Koos je \"to tell people not to visit the park\"? Dan denk je dat hij mensen weg wil houden. Hij nodigt ze uit, en wil dat ze genieten.",
+         "Koos je \"to thank the council for its money\"? Dan denk je dat het een bedankje is. Hij richt zich op de bezoekers, en vraagt iets van hen.",
+         "Klopt: daarna vraagt hij om zorg voor het park."
+        ],
+        "uh": "Waarom zegt hij dit?",
+        "ctx": "You hear a mayor speaking at the opening of a park: \"Ladies and gentlemen, thank you for coming on this sunny afternoon. Three years ago this was an empty piece of land. Many people said we could not do it, and that it was too expensive. Today, I am proud to say that we proved them wrong. This park belongs to all of you, so please take care of it, and enjoy every minute. Now, let us cut the ribbon and open the gates. The first visitors are already walking along the new paths near the pond, and the band will play until five o'clock.\""
+       },
+       {
+        "v": "What is the main purpose of the mayor's speech?",
+        "o": [
+         "to celebrate and ask for care",
+         "to ask for more money from the visitors of the park",
+         "to complain about the people who doubted the plan",
+         "to announce a new project for the next year"
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 0,
+        "u": "Vieren en vragen. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: hij viert het nieuwe park en vraagt de mensen om er zorg voor te dragen.",
+         "Koos je \"to ask for more money from the visitors of the park\"? Dan denk je dat hij geld vraagt. Dat doet hij niet, en het gaat om zorg.",
+         "Koos je \"to complain about the people who doubted the plan\"? Dan denk je dat hij klaagt. Hij zegt dat hij trots is, dus hij viert.",
+         "Koos je \"to announce a new project for the next year\"? Dan denk je dat hij een nieuw project meldt. Dat staat nergens, en het gaat om dit park."
+        ],
+        "uh": "Wat is het doel?",
+        "ctx": "You hear a mayor speaking at the opening of a park: \"Ladies and gentlemen, thank you for coming on this sunny afternoon. Three years ago this was an empty piece of land. Many people said we could not do it, and that it was too expensive. Today, I am proud to say that we proved them wrong. This park belongs to all of you, so please take care of it, and enjoy every minute. Now, let us cut the ribbon and open the gates. The first visitors are already walking along the new paths near the pond, and the band will play until five o'clock.\""
+       },
+       {
+        "v": "Which word best describes the tone of the mayor's speech?",
+        "o": [
+         "angry and very strict",
+         "proud and kind",
+         "sad and rather worried",
+         "bored and very distant"
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 2,
+        "u": "Trots en vriendelijk. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"angry and very strict\"? Dan denk je dat de toon streng is. Hij bedankt de bezoekers, dus hij is vriendelijk.",
+         "Klopt: hij bedankt de mensen, is trots op het park en nodigt iedereen uit.",
+         "Koos je \"sad and rather worried\"? Dan denk je dat de toon verdrietig is. Hij spreekt over trots en genieten, dus het is positief.",
+         "Koos je \"bored and very distant\"? Dan denk je dat de toon afstandelijk is. Hij spreekt hen persoonlijk aan, dus hij is betrokken."
+        ],
+        "uh": "Hoe klinkt hij?",
+        "ctx": "You hear a mayor speaking at the opening of a park: \"Ladies and gentlemen, thank you for coming on this sunny afternoon. Three years ago this was an empty piece of land. Many people said we could not do it, and that it was too expensive. Today, I am proud to say that we proved them wrong. This park belongs to all of you, so please take care of it, and enjoy every minute. Now, let us cut the ribbon and open the gates. The first visitors are already walking along the new paths near the pond, and the band will play until five o'clock.\""
+       }
+      ],
+      "oe": [
+       {
+        "bron": "Examenstijl",
+        "ctx": "You hear a customer calling a helpdesk: \"Hello, I bought this laptop two weeks ago and it has already broken down twice. I was told it was a reliable brand, so I am really disappointed. I am not asking for a miracle, I just want it repaired or replaced. If nobody can help me, I will have to write a review to warn other people.\" The helpdesk worker answers: \"I am very sorry to hear that, sir. Let me see what I can do for you. Could you give me your order number, please? I understand how frustrating this must be for you.\"",
+        "v": "What does the customer want from the helpdesk and how does he put pressure on them?",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Hij wil dat de laptop gerepareerd of vervangen wordt (1p). Hij dreigt met een recensie om anderen te waarschuwen (2p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "You hear a teenager talking to her friend about a new film: \"Honestly, I did not expect much, but it blew me away. The acting was brilliant, and the ending gave me goosebumps. Okay, it was a bit long, and I almost fell asleep in the middle, but overall I would go again tomorrow. You have to see it, I promise you will not regret it. Take your sister along, because she loves this kind of story too. My friend Jess saw it last week and she said the same. It starts at eight tonight, so we could easily go together if you are free.\"",
+        "v": "What is the girl's opinion of the film? Name one positive and one negative point.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Ze is overwegend positief (1p). Positief is het acteerwerk of het einde (1p), negatief dat de film wat lang was (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "You hear a mayor speaking at the opening of a park: \"Ladies and gentlemen, thank you for coming on this sunny afternoon. Three years ago this was an empty piece of land. Many people said we could not do it, and that it was too expensive. Today, I am proud to say that we proved them wrong. This park belongs to all of you, so please take care of it, and enjoy every minute. Now, let us cut the ribbon and open the gates. The first visitors are already walking along the new paths near the pond, and the band will play until five o'clock.\"",
+        "v": "How does the mayor feel and which words in his speech show this?",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Hij is trots (1p). Hij zegt dat hij trots is dat ze het toch gedaan hebben (1p) en hij vraagt zorg voor het park (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "You hear a man in a restaurant: \"Excuse me, I ordered the soup twenty minutes ago and it still has not arrived. I do not want to make a fuss, but the other tables around me have all been served. Could you please check what is happening?\"",
+        "v": "What is the man's intention and how does he stay polite?",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Hij wil klagen dat zijn soep nog niet is gebracht (1p). Hij blijft beleefd met excuse me (1p) en could you please (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "You hear a girl at a bus stop talking to a friend: \"I can't believe it, I have failed my driving test again. The examiner said I was too nervous, but I think he was just in a bad mood. Next time I will practise more, because I am not giving up.\"",
+        "v": "How does the girl feel and what does she decide to do?",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Ze is teleurgesteld en een beetje boos (1p). Ze zal meer oefenen (1p) en geeft niet op (1p)."
+       }
+      ]
      }
     ]
    },
