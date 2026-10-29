@@ -2671,6 +2671,27 @@ var VAKKEN = [
       "nOe": 5,
       "nBeg": 12,
       "hasSam": true
+     },
+     {
+      "id": "C5",
+      "lo": "en.C.5",
+      "gs": 2,
+      "naam": "Het meest waarschijnlijke vervolg van een gesprek voorspellen",
+      "beschrijving": "Je leert uit het laatste deel van een gesprek af te leiden wat de sprekers daarna waarschijnlijk zeggen of doen.",
+      "ceStatus": "CE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Wat helpt bij voorspellen",
+       "Vragen en antwoorden",
+       "Voorstellen en reacties",
+       "Problemen en oplossingen",
+       "Een passend vervolg kiezen"
+      ],
+      "nSv": 27,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
      }
     ]
    },

@@ -117756,6 +117756,688 @@ var VAKKEN = [
         "u": "Ze is teleurgesteld en een beetje boos (1p). Ze zal meer oefenen (1p) en geeft niet op (1p)."
        }
       ]
+     },
+     {
+      "id": "C5",
+      "lo": "en.C.5",
+      "gs": 2,
+      "naam": "Het meest waarschijnlijke vervolg van een gesprek voorspellen",
+      "beschrijving": "Je leert uit het laatste deel van een gesprek af te leiden wat de sprekers daarna waarschijnlijk zeggen of doen.",
+      "ceStatus": "CE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Wat helpt bij voorspellen",
+       "Vragen en antwoorden",
+       "Voorstellen en reacties",
+       "Problemen en oplossingen",
+       "Een passend vervolg kiezen"
+      ],
+      "sam": "In een gesprek volgt na een vraag meestal een antwoord, na een excuus een geruststelling en na unfortunately een alternatief. Het laatste deel van het gesprek bepaalt het vervolg. Let op het onderwerp, de rol van de sprekers en signaalwoorden zoals how about en let me see. Kies het vervolg dat past bij wat er net gezegd is en dat logisch aansluit bij het probleem.",
+      "begrippen": [
+       {
+        "t": "Vervolg",
+        "d": "Wat er na het laatste deel van het gesprek waarschijnlijk komt."
+       },
+       {
+        "t": "Voorspellen",
+        "d": "Op basis van wat je hoort bedenken wat er komt."
+       },
+       {
+        "t": "Reactie",
+        "d": "Wat iemand antwoordt op een vraag of opmerking."
+       },
+       {
+        "t": "Voorstel",
+        "d": "Een idee of suggestie, zoals how about."
+       },
+       {
+        "t": "Excuus",
+        "d": "Een zin waarmee iemand sorry zegt."
+       },
+       {
+        "t": "Alternatief",
+        "d": "Een andere keuze of oplossing."
+       },
+       {
+        "t": "Keuzevraag",
+        "d": "Een vraag met twee of meer opties."
+       },
+       {
+        "t": "Probleem",
+        "d": "Iets dat niet goed gaat in het gesprek."
+       },
+       {
+        "t": "Oplossing",
+        "d": "Wat het probleem kan verhelpen."
+       },
+       {
+        "t": "Onderwerp",
+        "d": "Waar het gesprek over gaat."
+       },
+       {
+        "t": "Signaalwoord",
+        "d": "Een woord dat aankondigt wat er komt."
+       },
+       {
+        "t": "Twijfel",
+        "d": "Onzekerheid over een keuze."
+       }
+      ],
+      "sv": [
+       {
+        "v": "What helps you to predict what a speaker will say next?",
+        "o": [
+         "the name of the person who is speaking",
+         "the last question or remark",
+         "the length of the whole conversation",
+         "the first word of the recording"
+        ],
+        "c": 1,
+        "d": 1,
+        "s": 0,
+        "u": "Laatste zin stuurt het vervolg.",
+        "uo": [
+         "Koos je \"the name of the person who is speaking\"? Dan denk je dat de naam bepaalt wat er volgt. Een naam zegt niets over de inhoud, en je moet naar de laatste zin luisteren.",
+         "Klopt: een vraag of opmerking vraagt meestal om een bepaald antwoord.",
+         "Koos je \"the length of the whole conversation\"? Dan denk je dat de lengte iets voorspelt. De lengte zegt niets over het vervolg, want het gaat om de laatste zin.",
+         "Koos je \"the first word of the recording\"? Dan denk je dat het eerste woord het vervolg bepaalt. Het slot van het gesprek is belangrijker, en je moet daar op letten."
+        ],
+        "uh": "Wat helpt voorspellen?"
+       },
+       {
+        "v": "A shop assistant asks: \"Would you like to pay by card or in cash?\" What is the most likely answer?",
+        "o": [
+         "\"Yes, I am fine, thank you.\"",
+         "\"I like your shop very much.\"",
+         "\"It is raining outside today.\"",
+         "\"By card, please.\""
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 1,
+        "u": "Keuzevraag = kies een optie. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"Yes, I am fine, thank you.\"? Dan denk je dat dit past. Het is een antwoord op een andere vraag, en geeft geen keuze.",
+         "Koos je \"I like your shop very much.\"? Dan denk je dat dit past. Het is een compliment, en beantwoordt de vraag niet.",
+         "Koos je \"It is raining outside today.\"? Dan denk je dat dit past. Het gaat over het weer, en heeft niets met betalen te maken.",
+         "Klopt: een antwoord op een keuzevraag kiest een van de opties."
+        ],
+        "uh": "Welk antwoord past?"
+       },
+       {
+        "v": "Someone says \"I am so sorry I am late.\" What will the other person most likely say?",
+        "o": [
+         "\"That is okay, do not worry.\"",
+         "\"I would like a cup of tea, please.\"",
+         "\"The film starts at eight o'clock.\"",
+         "\"My sister lives in Edinburgh.\""
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 1,
+        "u": "Sorry -> geruststelling. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: op excuses volgt meestal een geruststelling.",
+         "Koos je \"I would like a cup of tea, please.\"? Dan denk je dat dit past. Het is een bestelling, en reageert niet op de excuses.",
+         "Koos je \"The film starts at eight o'clock.\"? Dan denk je dat dit past. Het zegt iets anders over de film, en reageert niet op de excuses.",
+         "Koos je \"My sister lives in Edinburgh.\"? Dan denk je dat dit past. Het is een zin over iets anders, en past niet bij de situatie."
+        ],
+        "uh": "Wat volgt op sorry?"
+       },
+       {
+        "v": "Which words suggest that a suggestion will follow?",
+        "o": [
+         "\"yesterday\" and \"last year\"",
+         "\"thank you\" and \"you are welcome\"",
+         "\"How about\" and \"Why don't we\"",
+         "\"on the left\" and \"behind the door\""
+        ],
+        "c": 2,
+        "d": 1,
+        "s": 2,
+        "u": "How about = voorstel. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"yesterday and last year\"? Dan denk je dat tijdwoorden een voorstel aankondigen. Ze gaan over het verleden, en kondigen geen voorstel aan.",
+         "Koos je \"thank you and you are welcome\"? Dan denk je dat dit een voorstel aankondigt. Het zijn beleefdheden, en ze doen geen voorstel.",
+         "Klopt: zulke woorden kondigen een voorstel aan.",
+         "Koos je \"on the left and behind the door\"? Dan denk je dat plaatsen een voorstel aankondigen. Het zijn plaatsaanduidingen, en geen voorstel."
+        ],
+        "uh": "Welke woorden kondigen aan?"
+       },
+       {
+        "v": "A friend says \"I have a problem with my phone.\" What will probably happen next?",
+        "o": [
+         "he will sell the phone to a stranger",
+         "he will talk about the weather for ten minutes",
+         "he will explain the problem",
+         "he will leave the conversation without a word"
+        ],
+        "c": 2,
+        "d": 1,
+        "s": 2,
+        "u": "Probleem -> uitleg. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"he will sell the phone to a stranger\"? Dan denk je dat hij de telefoon verkoopt. Dat past niet bij een probleem, en hij legt het eerst uit.",
+         "Koos je \"he will talk about the weather for ten minutes\"? Dan denk je dat hij van onderwerp verandert. Hij heeft net een probleem genoemd, dus hij blijft erbij.",
+         "Klopt: na ik heb een probleem volgt meestal de uitleg.",
+         "Koos je \"he will leave the conversation without a word\"? Dan denk je dat hij weggaat. Hij begon net met zijn verhaal, dus hij legt het uit."
+        ],
+        "uh": "Wat volgt?"
+       },
+       {
+        "v": "Someone says \"Unfortunately, we are fully booked on Friday.\" What will probably come next?",
+        "o": [
+         "an offer for another day",
+         "an invitation for Friday night",
+         "a long story about the history of the hotel",
+         "a thank you for the booking on Friday"
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 3,
+        "u": "Unfortunately -> alternatief. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: na unfortunately volgt vaak een alternatief.",
+         "Koos je \"an invitation for Friday night\"? Dan denk je dat ze alsnog uitnodigen. Ze zijn vol, dus Friday is niet mogelijk.",
+         "Koos je \"a long story about the history of the hotel\"? Dan denk je dat er een verhaal volgt. Dat past niet bij het probleem, en de spreker biedt een oplossing.",
+         "Koos je \"a thank you for the booking on Friday\"? Dan denk je dat ze bedanken. Er is niets geboekt, dus er is niets om te bedanken."
+        ],
+        "uh": "Wat volgt?"
+       },
+       {
+        "v": "Why is it wrong to choose a continuation that has nothing to do with the topic?",
+        "o": [
+         "because a conversation can never change at all",
+         "because every speaker always says the same",
+         "because the recording is always finished already",
+         "the next part fits the topic"
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 4,
+        "u": "Vervolg sluit aan. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"because a conversation can never change at all\"? Dan denk je dat een gesprek niet kan veranderen. Het kan wel, maar het vervolg past meestal bij het onderwerp.",
+         "Koos je \"because every speaker always says the same\"? Dan denk je dat iedereen hetzelfde zegt. Dat klopt niet, want elke spreker reageert op de ander.",
+         "Koos je \"because the recording is always finished already\"? Dan denk je dat de opname afgelopen is. Het gesprek stopt pas na jouw vraag, en het vervolg moet kloppen.",
+         "Klopt: een vervolg moet aansluiten bij wat er net gezegd is."
+        ],
+        "uh": "Waarom past dat niet?"
+       },
+       {
+        "v": "What problem does the customer have?",
+        "o": [
+         "the jumper has a hole in it",
+         "the jumper is too small",
+         "the jumper is the wrong colour",
+         "the jumper was too expensive"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 0,
+        "u": "Te klein. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"the jumper has a hole in it\"? Dan denk je dat de trui kapot is. Ze zegt dat hij te klein is, dus er is geen gat.",
+         "Klopt: de klant zegt dat de trui te klein is en wil daarom geld terug.",
+         "Koos je \"the jumper is the wrong colour\"? Dan denk je dat het om de kleur gaat. Daar zegt ze niets over, en het gaat om de maat.",
+         "Koos je \"the jumper was too expensive\"? Dan denk je dat de prijs het probleem is. De prijs wordt niet genoemd, en het gaat om de maat."
+        ],
+        "uh": "Wat is het probleem?",
+        "ctx": "You hear a conversation in a clothes shop. Customer: \"Hello, I bought this jumper last week, but it is too small. I would like my money back, please.\" Assistant: \"I am sorry about that. Do you have the receipt with you?\" Customer: \"Oh no, I think I left it at home. But I paid by card, so you can probably see it on your system.\" Assistant: \"That is possible, but our rule is that we can only give a refund with a receipt. Without one, we can offer you a credit note, which you can use for anything in the shop.\" Customer: \"Hmm, I am not sure about that.\""
+       },
+       {
+        "v": "Why can the assistant not give a refund?",
+        "o": [
+         "the jumper has been worn for a month",
+         "the shop is closed for the day",
+         "the customer paid in cash",
+         "the customer has no receipt"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 1,
+        "u": "Regel: refund met receipt. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"the jumper has been worn for a month\"? Dan denk je dat de trui al lang gedragen is. Ze kocht hem vorige week, en dat is geen reden.",
+         "Koos je \"the shop is closed for the day\"? Dan denk je dat de winkel dicht is. Ze praten juist met elkaar, dus de winkel is open.",
+         "Koos je \"the customer paid in cash\"? Dan denk je dat ze contant betaalde. Ze zegt dat ze met de pinpas betaalde, dus dat is niet het probleem.",
+         "Klopt: de regel is dat een terugbetaling alleen met bon kan."
+        ],
+        "uh": "Waarom geen geld terug?",
+        "ctx": "You hear a conversation in a clothes shop. Customer: \"Hello, I bought this jumper last week, but it is too small. I would like my money back, please.\" Assistant: \"I am sorry about that. Do you have the receipt with you?\" Customer: \"Oh no, I think I left it at home. But I paid by card, so you can probably see it on your system.\" Assistant: \"That is possible, but our rule is that we can only give a refund with a receipt. Without one, we can offer you a credit note, which you can use for anything in the shop.\" Customer: \"Hmm, I am not sure about that.\""
+       },
+       {
+        "v": "What does the assistant offer instead of a refund?",
+        "o": [
+         "a free jumper in a bigger size",
+         "a credit note",
+         "a discount on the next visit only",
+         "a phone call from the manager"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 3,
+        "u": "Credit note. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"a free jumper in a bigger size\"? Dan denk je dat ze een gratis trui aanbiedt. Dat staat niet in het gesprek, en ze noemt een tegoedbon.",
+         "Klopt: ze noemt een tegoedbon voor alles in de winkel.",
+         "Koos je \"a discount on the next visit only\"? Dan denk je dat het om een korting gaat. Een tegoedbon is geld om uit te geven, en geen korting.",
+         "Koos je \"a phone call from the manager\"? Dan denk je dat de manager belt. Dat wordt niet genoemd, en ze biedt een tegoedbon."
+        ],
+        "uh": "Wat biedt ze aan?",
+        "ctx": "You hear a conversation in a clothes shop. Customer: \"Hello, I bought this jumper last week, but it is too small. I would like my money back, please.\" Assistant: \"I am sorry about that. Do you have the receipt with you?\" Customer: \"Oh no, I think I left it at home. But I paid by card, so you can probably see it on your system.\" Assistant: \"That is possible, but our rule is that we can only give a refund with a receipt. Without one, we can offer you a credit note, which you can use for anything in the shop.\" Customer: \"Hmm, I am not sure about that.\""
+       },
+       {
+        "v": "What will the customer most likely do next?",
+        "o": [
+         "pay for another jumper at once",
+         "shout at the assistant and walk out",
+         "ask more about the credit note",
+         "thank the assistant and say goodbye"
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 1,
+        "u": "Twijfel -> vraag. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"pay for another jumper at once\"? Dan denk je dat ze direct nog een trui koopt. Ze twijfelt nog, en ze heeft het aanbod net gehoord.",
+         "Koos je \"shout at the assistant and walk out\"? Dan denk je dat ze boos weggaat. Ze zegt hmm en is nog beleefd, dus dat past niet.",
+         "Klopt: ze twijfelt en heeft nog vragen over het aanbod.",
+         "Koos je \"thank the assistant and say goodbye\"? Dan denk je dat ze al gaat. Ze twijfelt nog, dus het gesprek gaat door."
+        ],
+        "uh": "Wat volgt?",
+        "ctx": "You hear a conversation in a clothes shop. Customer: \"Hello, I bought this jumper last week, but it is too small. I would like my money back, please.\" Assistant: \"I am sorry about that. Do you have the receipt with you?\" Customer: \"Oh no, I think I left it at home. But I paid by card, so you can probably see it on your system.\" Assistant: \"That is possible, but our rule is that we can only give a refund with a receipt. Without one, we can offer you a credit note, which you can use for anything in the shop.\" Customer: \"Hmm, I am not sure about that.\""
+       },
+       {
+        "v": "What is the problem with Barcelona for Lisa?",
+        "o": [
+         "she has little money this month",
+         "she does not like flying at all",
+         "she has been to Barcelona before",
+         "she is afraid of the hot weather"
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 0,
+        "u": "Weinig geld. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: Lisa zegt dat ze voorzichtig moet zijn met geld deze maand.",
+         "Koos je \"she does not like flying at all\"? Dan denk je dat ze niet wil vliegen. Daar zegt ze niets over, en het gaat om geld.",
+         "Koos je \"she has been to Barcelona before\"? Dan denk je dat ze er al was. Dat staat niet in het gesprek, en ze noemt geld.",
+         "Koos je \"she is afraid of the hot weather\"? Dan denk je dat het weer het probleem is. Het weer wordt niet genoemd, en zij noemt geld."
+        ],
+        "uh": "Wat is het probleem?",
+        "ctx": "You hear two friends planning a weekend trip. Ben: \"Shall we go to Barcelona? I have seen a cheap flight for ninety pounds.\" Lisa: \"Barcelona sounds great, but I have to be careful with money this month. Is the hotel cheap too?\" Ben: \"Not really, it is about eighty pounds a night. But we could share a room, so it would be forty each.\" Lisa: \"That is better. And what about food? I heard that restaurants there are expensive.\" Ben: \"I will look it up right now and show you the prices. We can decide tonight when we have all the numbers.\""
+       },
+       {
+        "v": "How much would each friend pay for the hotel per night?",
+        "o": [
+         "forty pounds",
+         "eighty pounds",
+         "ninety pounds",
+         "twenty pounds"
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 1,
+        "u": "80 : 2 = 40. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: de kamer kost tachtig en ze delen hem.",
+         "Koos je \"eighty pounds\"? Dan denk je dat ieder tachtig betaalt. Dat is de prijs voor de hele kamer, en ze delen hem.",
+         "Koos je \"ninety pounds\"? Dan denk je dat ieder negentig betaalt. Dat is de prijs van de vlucht, en niet van het hotel.",
+         "Koos je \"twenty pounds\"? Dan denk je dat ieder twintig betaalt. Dat is te weinig, want tachtig gedeeld door twee is veertig."
+        ],
+        "uh": "Hoeveel per persoon?",
+        "ctx": "You hear two friends planning a weekend trip. Ben: \"Shall we go to Barcelona? I have seen a cheap flight for ninety pounds.\" Lisa: \"Barcelona sounds great, but I have to be careful with money this month. Is the hotel cheap too?\" Ben: \"Not really, it is about eighty pounds a night. But we could share a room, so it would be forty each.\" Lisa: \"That is better. And what about food? I heard that restaurants there are expensive.\" Ben: \"I will look it up right now and show you the prices. We can decide tonight when we have all the numbers.\""
+       },
+       {
+        "v": "What will Ben probably do next?",
+        "o": [
+         "book the flight without asking Lisa",
+         "tell Lisa that she must stay at home",
+         "look up the prices of restaurants",
+         "change the plan to another country"
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 2,
+        "u": "Hij zoekt het op. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"book the flight without asking Lisa\"? Dan denk je dat hij meteen boekt. Hij zoekt eerst de prijzen, en vraagt Lisa nog.",
+         "Koos je \"tell Lisa that she must stay at home\"? Dan denk je dat hij haar thuis laat. Hij wil juist een oplossing, dus dat klopt niet.",
+         "Klopt: Ben zegt dat hij het meteen opzoekt en de prijzen laat zien.",
+         "Koos je \"change the plan to another country\"? Dan denk je dat hij een ander land kiest. Hij blijft bij Barcelona, en kijkt naar het eten."
+        ],
+        "uh": "Wat doet Ben?",
+        "ctx": "You hear two friends planning a weekend trip. Ben: \"Shall we go to Barcelona? I have seen a cheap flight for ninety pounds.\" Lisa: \"Barcelona sounds great, but I have to be careful with money this month. Is the hotel cheap too?\" Ben: \"Not really, it is about eighty pounds a night. But we could share a room, so it would be forty each.\" Lisa: \"That is better. And what about food? I heard that restaurants there are expensive.\" Ben: \"I will look it up right now and show you the prices. We can decide tonight when we have all the numbers.\""
+       },
+       {
+        "v": "Why is the patient calling the surgery?",
+        "o": [
+         "to cancel an appointment for her young son",
+         "to book a time for her sore throat",
+         "to ask for the opening hours of the surgery",
+         "to thank the doctor for the medicine she got"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 0,
+        "u": "Afspraak voor keelpijn. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"to cancel an appointment for her young son\"? Dan denk je dat ze een afspraak annuleert. Ze wil juist een afspraak maken, en gaat om haar eigen keel.",
+         "Klopt: ze heeft al drie dagen keelpijn en wil daarom een afspraak maken.",
+         "Koos je \"to ask for the opening hours of the surgery\"? Dan denk je dat ze naar openingstijden vraagt. Ze wil een afspraak, en dat is iets anders.",
+         "Koos je \"to thank the doctor for the medicine she got\"? Dan denk je dat ze bedankt. Ze heeft nog klachten, dus ze wil een afspraak."
+        ],
+        "uh": "Waarom belt ze?",
+        "ctx": "You hear a phone call to a doctor's surgery. Receptionist: \"Good morning, Dr Evans' surgery.\" Patient: \"Good morning, I would like to make an appointment, please. I have had a sore throat for three days.\" Receptionist: \"I understand. Let me check the diary. I am afraid Dr Evans is fully booked today and tomorrow. The first free time is on Thursday at ten past nine.\" Patient: \"Thursday is too late for me. Is there another doctor I could see sooner?\" Receptionist: \"Let me see, Dr Patel might have a free time this afternoon.\""
+       },
+       {
+        "v": "When is the first free time with Dr Evans?",
+        "o": [
+         "today at ten past nine",
+         "tomorrow at nine o'clock",
+         "on Thursday at nine ten in the evening",
+         "on Thursday at ten past nine"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 1,
+        "u": "Donderdag 9.10. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"today at ten past nine\"? Dan denk je dat het vandaag is. Dr Evans is vandaag vol, en de eerste tijd is later.",
+         "Koos je \"tomorrow at nine o'clock\"? Dan denk je dat het morgen is. Hij is morgen ook vol, dus het is later.",
+         "Koos je \"on Thursday at nine ten in the evening\"? Dan denk je dat het avond is. Ten past nine is in de ochtend, want het is niet avond.",
+         "Klopt: de assistente zegt donderdag om negen uur tien."
+        ],
+        "uh": "Wanneer?",
+        "ctx": "You hear a phone call to a doctor's surgery. Receptionist: \"Good morning, Dr Evans' surgery.\" Patient: \"Good morning, I would like to make an appointment, please. I have had a sore throat for three days.\" Receptionist: \"I understand. Let me check the diary. I am afraid Dr Evans is fully booked today and tomorrow. The first free time is on Thursday at ten past nine.\" Patient: \"Thursday is too late for me. Is there another doctor I could see sooner?\" Receptionist: \"Let me see, Dr Patel might have a free time this afternoon.\""
+       },
+       {
+        "v": "What will the receptionist probably say next?",
+        "o": [
+         "that the patient should go to hospital at once today",
+         "if Dr Patel has a time today",
+         "that Dr Evans is on holiday for a whole year",
+         "that the surgery is closed on Thursday morning"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 4,
+        "u": "Let me see -> mogelijkheid. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"that the patient should go to hospital at once today\"? Dan denk je dat ze naar het ziekenhuis stuurt. Dat past niet bij keelpijn, en ze kijkt naar een andere dokter.",
+         "Klopt: ze zegt let me see en noemt Dr Patel als mogelijk alternatief.",
+         "Koos je \"that Dr Evans is on holiday for a whole year\"? Dan denk je dat Dr Evans op vakantie is. Ze zegt dat hij vol zit, en niet weg is.",
+         "Koos je \"that the surgery is closed on Thursday morning\"? Dan denk je dat de praktijk dicht is. Donderdag is juist een mogelijke tijd, dus dat klopt niet."
+        ],
+        "uh": "Wat volgt?",
+        "ctx": "You hear a phone call to a doctor's surgery. Receptionist: \"Good morning, Dr Evans' surgery.\" Patient: \"Good morning, I would like to make an appointment, please. I have had a sore throat for three days.\" Receptionist: \"I understand. Let me check the diary. I am afraid Dr Evans is fully booked today and tomorrow. The first free time is on Thursday at ten past nine.\" Patient: \"Thursday is too late for me. Is there another doctor I could see sooner?\" Receptionist: \"Let me see, Dr Patel might have a free time this afternoon.\""
+       },
+       {
+        "v": "The customer says \"Hmm, I am not sure about that.\" What is she most likely thinking?",
+        "o": [
+         "she would prefer her money back",
+         "she wants to buy ten more jumpers",
+         "she is happy with the credit note",
+         "she does not understand English"
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 0,
+        "u": "Twijfel = liever geld. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: ze wilde geld terug en twijfelt over het tegoed.",
+         "Koos je \"she wants to buy ten more jumpers\"? Dan denk je dat ze meer wil kopen. Ze twijfelt over het aanbod, dus ze is niet enthousiast.",
+         "Koos je \"she is happy with the credit note\"? Dan denk je dat ze blij is. Hmm met twijfel is niet blij, en ze is nog niet overtuigd.",
+         "Koos je \"she does not understand English\"? Dan denk je dat ze het niet verstaat. Ze reageert in het gesprek, dus ze begrijpt het wel."
+        ],
+        "uh": "Wat denkt ze?",
+        "ctx": "You hear a conversation in a clothes shop. Customer: \"Hello, I bought this jumper last week, but it is too small. I would like my money back, please.\" Assistant: \"I am sorry about that. Do you have the receipt with you?\" Customer: \"Oh no, I think I left it at home. But I paid by card, so you can probably see it on your system.\" Assistant: \"That is possible, but our rule is that we can only give a refund with a receipt. Without one, we can offer you a credit note, which you can use for anything in the shop.\" Customer: \"Hmm, I am not sure about that.\""
+       },
+       {
+        "v": "Which reply of the assistant is the most likely next?",
+        "o": [
+         "\"Of course, here is all of your money back now.\"",
+         "\"Please leave the shop at once, madam.\"",
+         "\"I do not sell any jumpers in this shop.\"",
+         "\"A credit note is all I can offer.\""
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 1,
+        "u": "Beleefd maar vast. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"Of course, here is all of your money back now.\"? Dan denk je dat de assistente toegeeft. Ze noemde een regel, dus dat volgt niet.",
+         "Koos je \"Please leave the shop at once, madam.\"? Dan denk je dat ze de klant wegstuurt. Ze is beleefd, dus dat past niet.",
+         "Koos je \"I do not sell any jumpers in this shop.\"? Dan denk je dat ze dit zegt. De klant kocht er een, dus dat klopt niet.",
+         "Klopt: dit past bij haar regel en haar vriendelijke toon."
+        ],
+        "uh": "Welke reactie past?",
+        "ctx": "You hear a conversation in a clothes shop. Customer: \"Hello, I bought this jumper last week, but it is too small. I would like my money back, please.\" Assistant: \"I am sorry about that. Do you have the receipt with you?\" Customer: \"Oh no, I think I left it at home. But I paid by card, so you can probably see it on your system.\" Assistant: \"That is possible, but our rule is that we can only give a refund with a receipt. Without one, we can offer you a credit note, which you can use for anything in the shop.\" Customer: \"Hmm, I am not sure about that.\""
+       },
+       {
+        "v": "Which words show that the assistant is polite but firm?",
+        "o": [
+         "\"you are wrong\" and \"go away\" at once",
+         "\"of course\" and \"here you are\" quickly",
+         "\"I am sorry\" and \"our rule is\"",
+         "\"I do not know\" and \"ask someone else\" please"
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 2,
+        "u": "Beleefd + regel. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"you are wrong and go away at once\"? Dan denk je dat ze onbeleefd is. Ze zegt dat ze het jammer vindt, dus dat past niet.",
+         "Koos je \"of course and here you are quickly\"? Dan denk je dat ze direct toegeeft. Ze noemt een regel, dus ze is niet toegeeflijk.",
+         "Klopt: ze toont begrip met sorry en noemt daarna duidelijk de regel.",
+         "Koos je \"I do not know and ask someone else please\"? Dan denk je dat ze het niet weet. Ze noemt een duidelijke regel, dus ze weet het wel."
+        ],
+        "uh": "Welke woorden?",
+        "ctx": "You hear a conversation in a clothes shop. Customer: \"Hello, I bought this jumper last week, but it is too small. I would like my money back, please.\" Assistant: \"I am sorry about that. Do you have the receipt with you?\" Customer: \"Oh no, I think I left it at home. But I paid by card, so you can probably see it on your system.\" Assistant: \"That is possible, but our rule is that we can only give a refund with a receipt. Without one, we can offer you a credit note, which you can use for anything in the shop.\" Customer: \"Hmm, I am not sure about that.\""
+       },
+       {
+        "v": "Why does Lisa say \"That is better\"?",
+        "o": [
+         "the flight is much cheaper than before",
+         "the restaurants are free in the city",
+         "sharing makes the hotel cheaper",
+         "Ben will pay for everything himself this time"
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 1,
+        "u": "Delen = goedkoper. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"the flight is much cheaper than before\"? Dan denk je dat de vlucht goedkoper werd. De vlucht is nog negentig, en ze reageert op het hotel.",
+         "Koos je \"the restaurants are free in the city\"? Dan denk je dat het eten gratis is. Ze vraagt er juist naar, dus dat is niet de reden.",
+         "Klopt: veertig pond per persoon past beter bij haar budget.",
+         "Koos je \"Ben will pay for everything himself this time\"? Dan denk je dat Ben alles betaalt. Ze delen de kamer, dus ieder betaalt veertig."
+        ],
+        "uh": "Waarom zegt ze dat?",
+        "ctx": "You hear two friends planning a weekend trip. Ben: \"Shall we go to Barcelona? I have seen a cheap flight for ninety pounds.\" Lisa: \"Barcelona sounds great, but I have to be careful with money this month. Is the hotel cheap too?\" Ben: \"Not really, it is about eighty pounds a night. But we could share a room, so it would be forty each.\" Lisa: \"That is better. And what about food? I heard that restaurants there are expensive.\" Ben: \"I will look it up right now and show you the prices. We can decide tonight when we have all the numbers.\""
+       },
+       {
+        "v": "What is the topic of the whole conversation?",
+        "o": [
+         "choosing a gift for a birthday",
+         "learning to speak Spanish well",
+         "finding a new job in Barcelona",
+         "planning a cheap weekend away"
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 0,
+        "u": "Reisplan met budget. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"choosing a gift for a birthday\"? Dan denk je dat het over een cadeau gaat. Het gaat om een reis, dus dat past niet.",
+         "Koos je \"learning to speak Spanish well\"? Dan denk je dat het over Spaans leren gaat. Ze noemen Barcelona alleen als plek, en plannen een reis.",
+         "Koos je \"finding a new job in Barcelona\"? Dan denk je dat het over werk gaat. Het is een weekendje, en geen verhuizing.",
+         "Klopt: ze bespreken vlucht, hotel en eten met oog op het geld."
+        ],
+        "uh": "Waar gaat het over?",
+        "ctx": "You hear two friends planning a weekend trip. Ben: \"Shall we go to Barcelona? I have seen a cheap flight for ninety pounds.\" Lisa: \"Barcelona sounds great, but I have to be careful with money this month. Is the hotel cheap too?\" Ben: \"Not really, it is about eighty pounds a night. But we could share a room, so it would be forty each.\" Lisa: \"That is better. And what about food? I heard that restaurants there are expensive.\" Ben: \"I will look it up right now and show you the prices. We can decide tonight when we have all the numbers.\""
+       },
+       {
+        "v": "What will Lisa probably say after she sees the prices?",
+        "o": [
+         "whether she can afford the trip",
+         "that she wants to learn how to cook",
+         "that she has never heard of Barcelona",
+         "that she wants to cancel before she looks"
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 2,
+        "u": "Beslist op de prijzen. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: haar zorg is geld en dat bepaalt haar reactie.",
+         "Koos je \"that she wants to learn how to cook\"? Dan denk je dat ze over koken praat. Dat past niet bij het gesprek, en het gaat om geld.",
+         "Koos je \"that she has never heard of Barcelona\"? Dan denk je dat ze de stad niet kent. Ze noemt het in het begin, dus ze kent hem.",
+         "Koos je \"that she wants to cancel before she looks\"? Dan denk je dat ze meteen afzegt. Ze wil juist eerst de prijzen zien, dus ze zegt niet af."
+        ],
+        "uh": "Wat zegt ze?",
+        "ctx": "You hear two friends planning a weekend trip. Ben: \"Shall we go to Barcelona? I have seen a cheap flight for ninety pounds.\" Lisa: \"Barcelona sounds great, but I have to be careful with money this month. Is the hotel cheap too?\" Ben: \"Not really, it is about eighty pounds a night. But we could share a room, so it would be forty each.\" Lisa: \"That is better. And what about food? I heard that restaurants there are expensive.\" Ben: \"I will look it up right now and show you the prices. We can decide tonight when we have all the numbers.\""
+       },
+       {
+        "v": "How does the patient react to the time on Thursday?",
+        "o": [
+         "she agrees at once and thanks the receptionist",
+         "she wants to be seen sooner",
+         "she says she does not need a doctor",
+         "she asks for a time in the next month"
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 3,
+        "u": "Te laat, dus eerder. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"she agrees at once and thanks the receptionist\"? Dan denk je dat ze akkoord gaat. Ze zegt dat het te laat is, dus ze wil eerder.",
+         "Klopt: de patient zegt dat donderdag te laat is en vraagt naar een andere dokter.",
+         "Koos je \"she says she does not need a doctor\"? Dan denk je dat ze geen dokter wil. Ze vraagt juist om een andere dokter, dus ze wil hulp.",
+         "Koos je \"she asks for a time in the next month\"? Dan denk je dat ze later wil. Ze wil eerder, dus dat past niet."
+        ],
+        "uh": "Hoe reageert ze?",
+        "ctx": "You hear a phone call to a doctor's surgery. Receptionist: \"Good morning, Dr Evans' surgery.\" Patient: \"Good morning, I would like to make an appointment, please. I have had a sore throat for three days.\" Receptionist: \"I understand. Let me check the diary. I am afraid Dr Evans is fully booked today and tomorrow. The first free time is on Thursday at ten past nine.\" Patient: \"Thursday is too late for me. Is there another doctor I could see sooner?\" Receptionist: \"Let me see, Dr Patel might have a free time this afternoon.\""
+       },
+       {
+        "v": "What will the patient most likely say if there is a free time at three o'clock?",
+        "o": [
+         "\"No, I prefer to wait until next Thursday.\"",
+         "\"I do not know what a doctor really does.\"",
+         "\"Please call me again next week or so.\"",
+         "\"Yes, three o'clock is fine.\""
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 4,
+        "u": "Snel geholpen. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"No, I prefer to wait until next Thursday.\"? Dan denk je dat ze toch wil wachten. Ze wilde eerder, dus ze neemt de tijd.",
+         "Koos je \"I do not know what a doctor really does.\"? Dan denk je dat ze dit zegt. Dit past niet in het gesprek, en ze bedoelt een afspraak.",
+         "Koos je \"Please call me again next week or so.\"? Dan denk je dat ze later wil. Ze wil eerder, dus dat past niet.",
+         "Klopt: ze wil snel geholpen worden, dus een tijd vanmiddag past bij haar."
+        ],
+        "uh": "Wat zegt ze?",
+        "ctx": "You hear a phone call to a doctor's surgery. Receptionist: \"Good morning, Dr Evans' surgery.\" Patient: \"Good morning, I would like to make an appointment, please. I have had a sore throat for three days.\" Receptionist: \"I understand. Let me check the diary. I am afraid Dr Evans is fully booked today and tomorrow. The first free time is on Thursday at ten past nine.\" Patient: \"Thursday is too late for me. Is there another doctor I could see sooner?\" Receptionist: \"Let me see, Dr Patel might have a free time this afternoon.\""
+       },
+       {
+        "v": "Why does the receptionist say \"Let me see...\"?",
+        "o": [
+         "she is checking another time",
+         "she is angry that the patient called today",
+         "she does not know the doctor's name at all",
+         "she wants to end the call quite soon"
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 2,
+        "u": "Let me see = zoeken. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: ze zoekt in de agenda naar een andere tijd.",
+         "Koos je \"she is angry that the patient called today\"? Dan denk je dat ze boos is. Ze is vriendelijk, en ze zoekt een tijd.",
+         "Koos je \"she does not know the doctor's name at all\"? Dan denk je dat ze de naam niet weet. Ze noemt Dr Patel, dus ze weet hem wel.",
+         "Koos je \"she wants to end the call quite soon\"? Dan denk je dat ze wil ophangen. Ze zoekt nog een mogelijkheid, dus ze gaat verder."
+        ],
+        "uh": "Wat doet ze?",
+        "ctx": "You hear a phone call to a doctor's surgery. Receptionist: \"Good morning, Dr Evans' surgery.\" Patient: \"Good morning, I would like to make an appointment, please. I have had a sore throat for three days.\" Receptionist: \"I understand. Let me check the diary. I am afraid Dr Evans is fully booked today and tomorrow. The first free time is on Thursday at ten past nine.\" Patient: \"Thursday is too late for me. Is there another doctor I could see sooner?\" Receptionist: \"Let me see, Dr Patel might have a free time this afternoon.\""
+       },
+       {
+        "v": "What will the patient probably have to give at the end of the call?",
+        "o": [
+         "her favourite colour and hobby",
+         "her name and contact details",
+         "the names of all her friends",
+         "the price of her train ticket"
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 0,
+        "u": "Naam en gegevens. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"her favourite colour and hobby\"? Dan denk je dat dit nodig is. Het heeft niets met een afspraak te maken, dus het wordt niet gevraagd.",
+         "Klopt: bij een afspraak vraagt de praktijk naam en gegevens.",
+         "Koos je \"the names of all her friends\"? Dan denk je dat dit nodig is. Het is niet relevant, dus het wordt niet gevraagd.",
+         "Koos je \"the price of her train ticket\"? Dan denk je dat dit nodig is. De praktijk heeft er niets aan, dus het wordt niet gevraagd."
+        ],
+        "uh": "Wat vraagt de praktijk?",
+        "ctx": "You hear a phone call to a doctor's surgery. Receptionist: \"Good morning, Dr Evans' surgery.\" Patient: \"Good morning, I would like to make an appointment, please. I have had a sore throat for three days.\" Receptionist: \"I understand. Let me check the diary. I am afraid Dr Evans is fully booked today and tomorrow. The first free time is on Thursday at ten past nine.\" Patient: \"Thursday is too late for me. Is there another doctor I could see sooner?\" Receptionist: \"Let me see, Dr Patel might have a free time this afternoon.\""
+       }
+      ],
+      "oe": [
+       {
+        "bron": "Examenstijl",
+        "ctx": "You hear a conversation in a clothes shop. Customer: \"Hello, I bought this jumper last week, but it is too small. I would like my money back, please.\" Assistant: \"I am sorry about that. Do you have the receipt with you?\" Customer: \"Oh no, I think I left it at home. But I paid by card, so you can probably see it on your system.\" Assistant: \"That is possible, but our rule is that we can only give a refund with a receipt. Without one, we can offer you a credit note, which you can use for anything in the shop.\" Customer: \"Hmm, I am not sure about that.\"",
+        "v": "Why can the assistant not give a refund, and what does the customer probably do next?",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "De klant heeft geen bon (1p). De assistente biedt een tegoedbon aan (1p). De klant vraagt waarschijnlijk meer over de tegoedbon of twijfelt (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "You hear two friends planning a weekend trip. Ben: \"Shall we go to Barcelona? I have seen a cheap flight for ninety pounds.\" Lisa: \"Barcelona sounds great, but I have to be careful with money this month. Is the hotel cheap too?\" Ben: \"Not really, it is about eighty pounds a night. But we could share a room, so it would be forty each.\" Lisa: \"That is better. And what about food? I heard that restaurants there are expensive.\" Ben: \"I will look it up right now and show you the prices. We can decide tonight when we have all the numbers.\"",
+        "v": "How much does each friend pay for the hotel and what will Ben do next?",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Veertig pond per persoon (1p) omdat ze de kamer delen (1p). Ben zoekt de prijzen van restaurants op (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "You hear a phone call to a doctor's surgery. Receptionist: \"Good morning, Dr Evans' surgery.\" Patient: \"Good morning, I would like to make an appointment, please. I have had a sore throat for three days.\" Receptionist: \"I understand. Let me check the diary. I am afraid Dr Evans is fully booked today and tomorrow. The first free time is on Thursday at ten past nine.\" Patient: \"Thursday is too late for me. Is there another doctor I could see sooner?\" Receptionist: \"Let me see, Dr Patel might have a free time this afternoon.\"",
+        "v": "Why does the patient not want Thursday and what will the receptionist probably say next?",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Donderdag is te laat voor haar (1p). De receptioniste kijkt of Dr Patel vanmiddag een tijd heeft (2p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "You hear two people at a bus stop. Man: \"Excuse me, does this bus go to the station?\" Woman: \"No, I am afraid you need the number twelve. This is the number nine.\" Man: \"Oh dear. And where can I catch the twelve?\"",
+        "v": "What will the woman most likely say next to the man?",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Ze zegt waar hij bus twaalf kan nemen (1p), bijvoorbeeld aan de overkant of bij een andere halte (1p), omdat hij daar net naar vroeg (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "You hear a teacher at the end of a lesson: \"Please remember that your reports are due on Monday. If you have any questions, send me an email tonight, because I will be at a conference tomorrow. Does anyone want to ask something before you go?\"",
+        "v": "What will probably happen after the teacher asks the question?",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Een leerling stelt een vraag of niemand reageert (1p). Daarna eindigt de les (1p), want de docent vroeg net of iemand nog iets wilde vragen (1p)."
+       }
+      ]
      }
     ]
    },

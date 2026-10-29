@@ -5,7 +5,7 @@
 Volledige beschrijving (functies, inhoud per niveau, prijs, wat Slagio niet is): https://slagio.nl/llms-full.txt
 
 ## In het kort
-- 12 vakken havo, 16 vakken vwo, 12 vakken vmbo; 23.837 oefenvragen en 4.346 begrippen.
+- 12 vakken havo, 16 vakken vwo, 12 vakken vmbo; 23.864 oefenvragen en 4.346 begrippen.
 - Adaptief oefenen: na een fout een vraag over hetzelfde onderwerp, een niveau makkelijker; uitleg bij elk fout antwoord.
 - Foutenboek en herhalen met gespreide herhaling, beheersing per leerdoel, studieplan tot het examen.
 - Examens met klok, proefexamens in examenstijl met modelantwoord en puntenverdeling, archief met officiële oude examens.
@@ -100,6 +100,7 @@ Volledige beschrijving (functies, inhoud per niveau, prijs, wat Slagio niet is):
 - [De hoofdgedachte van een luister- of kijktekst aangeven (Engels HAVO)](https://slagio.nl/leren/havo/engels/de-hoofdgedachte-van-een-luister-of-kijktekst-aangeven.html): Je leert de kernboodschap van een gesproken tekst te vinden, hoofdzaak van bijzaak te scheiden en een titel of samenvatting te kiezen die past.
 - [De betekenis van belangrijke woorden en zinnen in gesproken tekst (Engels HAVO)](https://slagio.nl/leren/havo/engels/de-betekenis-van-belangrijke-woorden-en-zinnen-in-gesproken-tekst.html): Je leert de betekenis van onbekende woorden en vaste uitdrukkingen in een luistertekst af te leiden uit de context.
 - [Conclusies trekken over bedoeling, mening en gevoel van sprekers (Engels HAVO)](https://slagio.nl/leren/havo/engels/conclusies-trekken-over-bedoeling-mening-en-gevoel-van-sprekers.html): Je leert uit toon, woordkeus en wat iemand zegt af te leiden wat de spreker bedoelt, vindt en voelt.
+- [Het meest waarschijnlijke vervolg van een gesprek voorspellen (Engels HAVO)](https://slagio.nl/leren/havo/engels/het-meest-waarschijnlijke-vervolg-van-een-gesprek-voorspellen.html): Je leert uit het laatste deel van een gesprek af te leiden wat de sprekers daarna waarschijnlijk zeggen of doen.
 - [Tekstsoort en schrijfdoel bepalen (Nederlands VWO)](https://slagio.nl/leren/vwo/nederlands/tekstsoort-en-schrijfdoel-bepalen.html): Je bepaalt of een tekst of tekstgedeelte uiteenzettend, beschouwend of betogend is, wat de schrijver ermee wil bereiken en wat het belangrijkste doel is als…
 - [Onderwerp en hoofdgedachte aangeven (Nederlands VWO)](https://slagio.nl/leren/vwo/nederlands/onderwerp-en-hoofdgedachte-aangeven.html): Je geeft het onderwerp en de hoofdgedachte van een tekst of tekstgedeelte aan: letterlijk als de kernzin er staat, en in eigen woorden als de hoofdgedachte…
 - [Relaties tussen tekstdelen benoemen (Nederlands VWO)](https://slagio.nl/leren/vwo/nederlands/relaties-tussen-tekstdelen-benoemen.html): Je benoemt inhoudelijke en functionele relaties tussen tekstdelen: verwijzingen, oorzaak en gevolg, doel en middel, standpunt met argumenten en subargumenten,…
