@@ -1,0 +1,661 @@
+{
+ "id": "C2",
+ "lo": "en.C.2",
+ "gs": 2,
+ "naam": "De hoofdgedachte van een luister- of kijktekst aangeven",
+ "beschrijving": "Je leert de kernboodschap van een gesproken tekst te vinden, hoofdzaak van bijzaak te scheiden en een titel of samenvatting te kiezen die past.",
+ "ceStatus": "CE",
+ "binas": "",
+ "val": "",
+ "onderwerpen": [
+  "De hoofdgedachte van een luistertekst",
+  "Hoofdzaak en bijzaak",
+  "Signaalwoorden",
+  "Het doel van de spreker",
+  "Een titel of samenvatting kiezen"
+ ],
+ "sam": "De hoofdgedachte van een gesproken tekst is de kernboodschap: wat de spreker je vooral wil laten begrijpen. Voorbeelden, getallen en bijzaken ondersteunen die boodschap. Signaalwoorden zoals the main point is en but kondigen de kern aan. Let ook op het doel van de spreker: informeren, overtuigen of adviseren. Een goede titel of samenvatting noemt de kern, niet een detail.",
+ "begrippen": [
+  {
+   "t": "Hoofdgedachte",
+   "d": "De kernboodschap van de hele tekst."
+  },
+  {
+   "t": "Hoofdzaak",
+   "d": "Wat de spreker echt wil zeggen."
+  },
+  {
+   "t": "Bijzaak",
+   "d": "Een detail dat de hoofdzaak ondersteunt."
+  },
+  {
+   "t": "Voorbeeld",
+   "d": "Een geval dat de kern duidelijk maakt."
+  },
+  {
+   "t": "Signaalwoord",
+   "d": "Een woord dat aangeeft wat er komt, zoals but of for example."
+  },
+  {
+   "t": "Tegenstelling",
+   "d": "Twee dingen die tegenover elkaar staan."
+  },
+  {
+   "t": "Doel",
+   "d": "Waarom de spreker iets zegt: informeren, overtuigen of adviseren."
+  },
+  {
+   "t": "Overtuigen",
+   "d": "Iemand proberen te laten denken zoals jij."
+  },
+  {
+   "t": "Samenvatting",
+   "d": "Een korte versie met alleen de kern."
+  },
+  {
+   "t": "Conclusie",
+   "d": "Het slot dat de boodschap afrondt."
+  },
+  {
+   "t": "Titel",
+   "d": "Een korte naam die de kern noemt."
+  },
+  {
+   "t": "Oorzaak",
+   "d": "De reden waarom iets gebeurt."
+  }
+ ],
+ "sv": [
+  {
+   "v": "What is the main idea of a recording?",
+   "o": [
+    "the first sentence that you hear in the recording",
+    "the most important message of the speaker",
+    "the longest example that the speaker gives you",
+    "the name and job of the person who is talking"
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 0,
+   "u": "Hoofdgedachte = kernboodschap.",
+   "uo": [
+    "Koos je \"the first sentence that you hear in the recording\"? Dan denk je dat de eerste zin altijd de hoofdgedachte is. Die zin is vaak een inleiding, en de kern staat vaak later.",
+    "Klopt: de hoofdgedachte is wat de spreker je vooral wil laten begrijpen.",
+    "Koos je \"the longest example that the speaker gives you\"? Dan denk je dat het langste stuk het belangrijkste is. Een voorbeeld ondersteunt de kern, en is zelf geen hoofdgedachte.",
+    "Koos je \"the name and job of the person who is talking\"? Dan denk je dat je moet noteren wie spreekt. Dat is een gegeven, maar de hoofdgedachte gaat over de boodschap."
+   ],
+   "uh": "Wat wil de spreker vooral zeggen?"
+  },
+  {
+   "v": "Which question helps you find the main idea?",
+   "o": [
+    "How many numbers does the speaker mention in total?",
+    "Which word does the speaker repeat most of all?",
+    "Does the speaker have a loud or a quiet voice?",
+    "What does the speaker most want me to understand?"
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 0,
+   "u": "Vraag naar de kernboodschap. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"How many numbers does the speaker mention in total?\"? Dan denk je dat getallen de hoofdgedachte geven. Getallen zijn details, en een telling helpt je niet bij de kern.",
+    "Koos je \"Which word does the speaker repeat most of all?\"? Dan denk je dat het meest herhaalde woord de hoofdgedachte is. Een woord is geen boodschap, en je zoekt een hele gedachte.",
+    "Koos je \"Does the speaker have a loud or a quiet voice?\"? Dan denk je dat het volume de hoofdgedachte bepaalt. Dat zegt iets over de stem, en niet over de inhoud.",
+    "Klopt: zo zoek je de kernboodschap en niet de losse details."
+   ],
+   "uh": "Welke vraag helpt?"
+  },
+  {
+   "v": "Which words often introduce the main point of a talk?",
+   "o": [
+    "\"the main point is\"",
+    "\"for example\" and \"for instance\" in the middle of the talk",
+    "\"good morning\" and \"thank you for listening\" at the start",
+    "\"by the way\" and \"as I said before\" in the talk"
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 2,
+   "u": "Signaal: the main point is. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: zulke woorden kondigen aan dat de kern volgt.",
+    "Koos je \"for example and for instance in the middle of the...\"? Dan denk je dat for example de kern aankondigt. Het kondigt een voorbeeld aan, en dat is bijzaak.",
+    "Koos je \"good morning and thank you for listening at the...\"? Dan denk je dat de begroeting de kern bevat. Zulke woorden zijn beleefdheid, en bevatten geen boodschap.",
+    "Koos je \"by the way and as I said before in the talk\"? Dan denk je dat by the way het hoofdpunt introduceert. Het introduceert een zijpad, en dus een bijzaak."
+   ],
+   "uh": "Welke woorden wijzen naar de kern?"
+  },
+  {
+   "v": "Which part of a talk is usually a detail?",
+   "o": [
+    "the sentence in which the speaker gives his main opinion",
+    "the conclusion at the end of the talk",
+    "a small example that supports the point",
+    "the main reason that the speaker gives"
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 1,
+   "u": "Voorbeeld = detail. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"the sentence in which the speaker gives his main...\"? Dan denk je dat de mening een detail is. Een mening is juist vaak de kern, en je hoeft hem niet te negeren.",
+    "Koos je \"the conclusion at the end of the talk\"? Dan denk je dat de conclusie een detail is. Een conclusie vat de kern samen, en is dus belangrijk.",
+    "Klopt: een voorbeeld maakt de kern duidelijk, maar is zelf een detail.",
+    "Koos je \"the main reason that the speaker gives\"? Dan denk je dat de hoofdreden een detail is. Zij is een dragend argument, en hoort bij de hoofdzaak."
+   ],
+   "uh": "Wat is bijzaak?"
+  },
+  {
+   "v": "What does \"but\" often show in a talk?",
+   "o": [
+    "an example that you can skip completely without a loss",
+    "the end of the talk and a short thank you",
+    "a contrast with a key point",
+    "a repeated detail from earlier in the whole talk"
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 2,
+   "u": "But = tegenstelling. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"an example that you can skip completely without a...\"? Dan denk je dat but een voorbeeld aankondigt. Dat doet for example, en but zet iets tegenover elkaar.",
+    "Koos je \"the end of the talk and a short thank you\"? Dan denk je dat but het einde markeert. Dat doet een afsluitende zin, en but komt midden in het verhaal.",
+    "Klopt: na but komt vaak de eigenlijke boodschap.",
+    "Koos je \"a repeated detail from earlier in the whole talk\"? Dan denk je dat but iets herhaalt. Het markeert juist iets nieuws, en dat is vaak belangrijk."
+   ],
+   "uh": "Wat doet but?"
+  },
+  {
+   "v": "Which sentence shows that the speaker wants to persuade you?",
+   "o": [
+    "\"You should really try it.\"",
+    "\"The shop opens at nine o'clock.\"",
+    "\"There are three platforms in the station.\"",
+    "\"My name is Anna and I am a teacher.\""
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 3,
+   "u": "Should = overtuigen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: een advies en should laten zien dat hij je wil overtuigen.",
+    "Koos je \"The shop opens at nine o'clock.\"? Dan denk je dat dit overtuigt. Het is een feit over een tijd, en het probeert je niet te overhalen.",
+    "Koos je \"There are three platforms in the station.\"? Dan denk je dat dit overtuigt. Het geeft alleen informatie, en vraagt niets van je.",
+    "Koos je \"My name is Anna and I am a teacher.\"? Dan denk je dat dit overtuigt. Het is een voorstelling, en het zegt niets over je mening."
+   ],
+   "uh": "Wie wil je overtuigen?"
+  },
+  {
+   "v": "Which title best fits a talk about how sleep helps students to learn?",
+   "o": [
+    "What students eat for breakfast every day",
+    "A day in the life of a school teacher",
+    "The history of the school bell in Britain",
+    "Why sleep helps you learn"
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 4,
+   "u": "Titel = kern. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"What students eat for breakfast every day\"? Dan denk je dat een titel over ontbijt past. Het ontbijt is niet de kern, en slaap is het onderwerp.",
+    "Koos je \"A day in the life of a school teacher\"? Dan denk je dat een dag uit het leven van een docent past. Dat is een ander onderwerp, en geen samenvatting van de talk.",
+    "Koos je \"The history of the school bell in Britain\"? Dan denk je dat een titel over de schoolbel past. Dat heeft niets met slaap te maken, en zegt dus niets over de inhoud.",
+    "Klopt: deze titel noemt de kern van de talk, namelijk dat slaap het leren helpt."
+   ],
+   "uh": "Welke titel past?"
+  },
+  {
+   "v": "What is the main idea of the interview?",
+   "o": [
+    "Fewer young people cycle than they did ten years ago.",
+    "Safer cycle paths help teenagers cycle.",
+    "Dr Moore studies how teenagers get to school every day.",
+    "Teenagers do not like to exercise any more these days."
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 0,
+   "u": "Kern: veilige paden. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"Fewer young people cycle than they did ten years...\"? Dan denk je dat het getal de kern is. Dat is een feit dat zij bevestigt, maar zij zegt dat het geen hoofdpunt is.",
+    "Klopt: Dr Moore zegt dat veilige fietspaden tieners weer op de fiets krijgen.",
+    "Koos je \"Dr Moore studies how teenagers get to school every...\"? Dan denk je dat haar werk de kern is. Dat is een toelichting door de presentator, en niet de boodschap van het gesprek.",
+    "Koos je \"Teenagers do not like to exercise any more these...\"? Dan denk je dat tieners niet willen bewegen. Dat zegt ze niet, want het probleem is de onveiligheid."
+   ],
+   "uh": "Wat is de hoofdgedachte?",
+   "ctx": "You hear a radio interview about cycling to school. Presenter: \"Today we talk to Dr Lisa Moore, who studies how teenagers get to school. Dr Moore, your research says that fewer young people cycle than ten years ago?\" Dr Moore: \"Yes, that is right. But the most important point is not the numbers. The main problem is that many parents think the roads are not safe. If cities build better cycle paths, I am sure more teenagers will cycle again. It is good for their health, for their mood and for the air in the city.\""
+  },
+  {
+   "v": "According to Dr Moore, why do fewer teenagers cycle?",
+   "o": [
+    "Teenagers think cycling is boring for them.",
+    "There are no more bicycles for sale now.",
+    "Teenagers prefer to go to school by train.",
+    "Parents think the roads are not safe."
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 1,
+   "u": "Reden: onveilige wegen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"Teenagers think cycling is boring for them.\"? Dan denk je dat tieners het saai vinden. Daar zegt ze niets over, en zij noemt de ouders.",
+    "Koos je \"There are no more bicycles for sale now.\"? Dan denk je dat er geen fietsen te koop zijn. Dat wordt niet gezegd, en de reden is onveiligheid.",
+    "Koos je \"Teenagers prefer to go to school by train.\"? Dan denk je dat de trein een reden is. De trein wordt niet genoemd, en zij noemt de wegen.",
+    "Klopt: zij noemt de onveiligheid van de wegen als hoofdprobleem."
+   ],
+   "uh": "Waarom fietsen ze minder?",
+   "ctx": "You hear a radio interview about cycling to school. Presenter: \"Today we talk to Dr Lisa Moore, who studies how teenagers get to school. Dr Moore, your research says that fewer young people cycle than ten years ago?\" Dr Moore: \"Yes, that is right. But the most important point is not the numbers. The main problem is that many parents think the roads are not safe. If cities build better cycle paths, I am sure more teenagers will cycle again. It is good for their health, for their mood and for the air in the city.\""
+  },
+  {
+   "v": "What does Dr Moore expect if cities build better cycle paths?",
+   "o": [
+    "Fewer cars will be driving in the city.",
+    "More teenagers will cycle again.",
+    "Parents will stop worrying about school.",
+    "Cycling will become more expensive in the city."
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 2,
+   "u": "Gevolg: meer tieners fietsen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"Fewer cars will be driving in the city.\"? Dan denk je dat er minder auto's komen. Dat noemt ze niet, en zij spreekt over meer tieners op de fiets.",
+    "Klopt: zij is er zeker van dat meer jongeren weer gaan fietsen.",
+    "Koos je \"Parents will stop worrying about school.\"? Dan denk je dat de zorgen over school verdwijnen. Ze spreekt over verkeersveiligheid, en niet over school.",
+    "Koos je \"Cycling will become more expensive in the city.\"? Dan denk je dat fietsen duurder wordt. Daar gaat het niet over, en zij noemt geen kosten."
+   ],
+   "uh": "Wat verwacht ze?",
+   "ctx": "You hear a radio interview about cycling to school. Presenter: \"Today we talk to Dr Lisa Moore, who studies how teenagers get to school. Dr Moore, your research says that fewer young people cycle than ten years ago?\" Dr Moore: \"Yes, that is right. But the most important point is not the numbers. The main problem is that many parents think the roads are not safe. If cities build better cycle paths, I am sure more teenagers will cycle again. It is good for their health, for their mood and for the air in the city.\""
+  },
+  {
+   "v": "Which benefit of cycling does Dr Moore mention?",
+   "o": [
+    "It saves a lot of money for parents.",
+    "It makes teenagers faster at school.",
+    "It improves the mood of teenagers.",
+    "It helps teenagers to make more friends."
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 3,
+   "u": "Voordelen: gezondheid, stemming, lucht.",
+   "uo": [
+    "Koos je \"It saves a lot of money for parents.\"? Dan denk je dat geld wordt genoemd. Over kosten zegt ze niets, en zij noemt gezondheid.",
+    "Koos je \"It makes teenagers faster at school.\"? Dan denk je dat het hun schoolresultaat verbetert. Dat wordt niet genoemd, en zij noemt stemming.",
+    "Klopt: zij noemt gezondheid, stemming en schone lucht.",
+    "Koos je \"It helps teenagers to make more friends.\"? Dan denk je dat het vriendschappen helpt. Dat zegt ze niet, dus je moet bij de genoemde voordelen blijven."
+   ],
+   "uh": "Welk voordeel hoor je?",
+   "ctx": "You hear a radio interview about cycling to school. Presenter: \"Today we talk to Dr Lisa Moore, who studies how teenagers get to school. Dr Moore, your research says that fewer young people cycle than ten years ago?\" Dr Moore: \"Yes, that is right. But the most important point is not the numbers. The main problem is that many parents think the roads are not safe. If cities build better cycle paths, I am sure more teenagers will cycle again. It is good for their health, for their mood and for the air in the city.\""
+  },
+  {
+   "v": "What is the main idea of the teacher's talk?",
+   "o": [
+    "Phones stay in lockers so students talk.",
+    "The teacher walked through the canteen last week to look.",
+    "Students must buy a new locker for their phone next year.",
+    "The results will be shown to everybody in two months."
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 0,
+   "u": "Kern: telefoonvrije pauze. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: de docent wil dat leerlingen tijdens de pauze met elkaar praten.",
+    "Koos je \"The teacher walked through the canteen last week to...\"? Dan denk je dat de wandeling de kern is. Het is een voorbeeld, en de kern is de nieuwe regel.",
+    "Koos je \"Students must buy a new locker for their phone next...\"? Dan denk je dat de kluisjes nieuw zijn. Dat wordt niet gezegd, en de kluisjes zijn alleen een middel.",
+    "Koos je \"The results will be shown to everybody in two...\"? Dan denk je dat de uitslag de kern is. Dat is een detail aan het slot, en de kern is de regel zelf."
+   ],
+   "uh": "Wat is de boodschap?",
+   "ctx": "You hear a teacher speaking at a school assembly: \"Good morning, everyone. This year we are going to try something new: a phone-free lunch break. Some of you will not like it, I know. But when I walked through the canteen last week, I saw forty students looking at their screens and nobody talking. Lunch should be a time to relax and to talk to friends. So from Monday, phones stay in your lockers until 13.30. We will look at the results after two months. I know it is a big change, but I think it will be good for all of us.\""
+  },
+  {
+   "v": "Why does the teacher introduce the new rule?",
+   "o": [
+    "Students looked at screens and nobody talked.",
+    "The school wants to sell more food in the canteen at lunch.",
+    "Many students broke their phones in the canteen last week.",
+    "Teachers want to use phones in their lessons from now on."
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 1,
+   "u": "Aanleiding: nobody talking. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: dat zag hij in de kantine en dat noemt hij als aanleiding.",
+    "Koos je \"The school wants to sell more food in the canteen...\"? Dan denk je dat het om de verkoop gaat. Dat zegt hij niet, en hij noemt het gebrek aan gesprekken.",
+    "Koos je \"Many students broke their phones in the canteen...\"? Dan denk je dat telefoons kapot waren. Daar gaat hij niet over, en hij kijkt naar het praten.",
+    "Koos je \"Teachers want to use phones in their lessons from...\"? Dan denk je dat de docenten de telefoons willen gebruiken. Dat staat er niet, en het gaat om de pauze."
+   ],
+   "uh": "Waarom die regel?",
+   "ctx": "You hear a teacher speaking at a school assembly: \"Good morning, everyone. This year we are going to try something new: a phone-free lunch break. Some of you will not like it, I know. But when I walked through the canteen last week, I saw forty students looking at their screens and nobody talking. Lunch should be a time to relax and to talk to friends. So from Monday, phones stay in your lockers until 13.30. We will look at the results after two months. I know it is a big change, but I think it will be good for all of us.\""
+  },
+  {
+   "v": "Until what time must the phones stay in the lockers?",
+   "o": [
+    "until 13.00, when the lunch break begins",
+    "until 12.30, half an hour before the break",
+    "until 13.30",
+    "until the end of the school day in the afternoon"
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 2,
+   "u": "Eindtijd 13.30. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"until 13.00, when the lunch break begins\"? Dan denk je dat de pauze begint om 13.00. De eindtijd is 13.30, dus je moet goed letten op de tijd.",
+    "Koos je \"until 12.30, half an hour before the break\"? Dan denk je dat het eerder is. De tijd is later, namelijk 13.30.",
+    "Klopt: hij noemt 13.30 als eindtijd van de regel.",
+    "Koos je \"until the end of the school day in the afternoon\"? Dan denk je dat het de hele dag is. Hij noemt alleen de pauze, en een eindtijd van 13.30."
+   ],
+   "uh": "Hoe laat?",
+   "ctx": "You hear a teacher speaking at a school assembly: \"Good morning, everyone. This year we are going to try something new: a phone-free lunch break. Some of you will not like it, I know. But when I walked through the canteen last week, I saw forty students looking at their screens and nobody talking. Lunch should be a time to relax and to talk to friends. So from Monday, phones stay in your lockers until 13.30. We will look at the results after two months. I know it is a big change, but I think it will be good for all of us.\""
+  },
+  {
+   "v": "What is the main idea of the podcast?",
+   "o": [
+    "Sixteen-year-olds are too young for any kind of volunteer work.",
+    "A few hours of volunteering matter.",
+    "Animal shelters need more money from the city every single year.",
+    "Volunteers should work every single day of the week."
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 0,
+   "u": "Kern: weinig tijd is genoeg. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"Sixteen-year-olds are too young for any kind of...\"? Dan denk je dat jongeren te jong zijn. Jack is zestien en doet het, dus dit klopt niet.",
+    "Klopt: de spreker zegt dat een kleine hoeveelheid tijd al veel uitmaakt.",
+    "Koos je \"Animal shelters need more money from the city every...\"? Dan denk je dat het om geld gaat. Dat wordt niet gezegd, en het gaat om tijd.",
+    "Koos je \"Volunteers should work every single day of the week.\"? Dan denk je dat je elke dag moet werken. Er staat dat enkele uren genoeg zijn, dus dit is het tegenovergestelde."
+   ],
+   "uh": "Wat is de hoofdgedachte?",
+   "ctx": "You hear part of a podcast about volunteering: \"Many people say they have no time to do volunteer work. But Jack, who is sixteen, helps at a local animal shelter for just two hours every Saturday. He says it gave him new friends and made him more confident. Experts agree that even a small amount of time can make a big difference, both for the volunteer and for the organisation. So you do not need to give up your weekend, a few hours is enough. Many local organisations are still looking for new helpers every week.\""
+  },
+  {
+   "v": "How much time does Jack spend at the shelter?",
+   "o": [
+    "two hours every day after school",
+    "all day long during the weekend",
+    "twenty hours every month on Sundays",
+    "two hours every Saturday"
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 1,
+   "u": "Twee uur op zaterdag. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"two hours every day after school\"? Dan denk je dat hij elke dag gaat. Hij gaat alleen op zaterdag, dus het is veel minder.",
+    "Koos je \"all day long during the weekend\"? Dan denk je dat hij het hele weekend werkt. Dat is niet zo, want het zijn maar twee uur.",
+    "Koos je \"twenty hours every month on Sundays\"? Dan denk je dat hij maanden uren maakt. Dat staat niet in de tekst, en het gaat om zaterdagen.",
+    "Klopt: de spreker zegt dat Jack twee uur per zaterdag in het asiel helpt."
+   ],
+   "uh": "Hoeveel tijd?",
+   "ctx": "You hear part of a podcast about volunteering: \"Many people say they have no time to do volunteer work. But Jack, who is sixteen, helps at a local animal shelter for just two hours every Saturday. He says it gave him new friends and made him more confident. Experts agree that even a small amount of time can make a big difference, both for the volunteer and for the organisation. So you do not need to give up your weekend, a few hours is enough. Many local organisations are still looking for new helpers every week.\""
+  },
+  {
+   "v": "What did volunteering give Jack?",
+   "o": [
+    "a job at the local animal shelter",
+    "new friends and more confidence",
+    "good marks in all of his school subjects",
+    "a pet that he can take home with him"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 4,
+   "u": "Vrienden en zelfvertrouwen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"a job at the local animal shelter\"? Dan denk je dat hij een baan kreeg. Hij is vrijwilliger, dus hij krijgt geen salaris.",
+    "Klopt: hij zegt dat hij nieuwe vrienden en meer zelfvertrouwen kreeg.",
+    "Koos je \"good marks in all of his school subjects\"? Dan denk je dat hij hogere cijfers kreeg. Dat wordt niet genoemd, en hij noemt vrienden.",
+    "Koos je \"a pet that he can take home with him\"? Dan denk je dat hij een huisdier kreeg. Dat staat er niet, en het gaat om vrienden en zelfvertrouwen."
+   ],
+   "uh": "Wat levert het op?",
+   "ctx": "You hear part of a podcast about volunteering: \"Many people say they have no time to do volunteer work. But Jack, who is sixteen, helps at a local animal shelter for just two hours every Saturday. He says it gave him new friends and made him more confident. Experts agree that even a small amount of time can make a big difference, both for the volunteer and for the organisation. So you do not need to give up your weekend, a few hours is enough. Many local organisations are still looking for new helpers every week.\""
+  },
+  {
+   "v": "Which sentence best summarises the interview?",
+   "o": [
+    "Safety worries stop cycling, so better paths help.",
+    "Dr Moore studies how teenagers travel to school in big cities.",
+    "More teenagers cycle than ten years ago in the city today.",
+    "Cycling is good for health, mood and the air in cities too."
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 0,
+   "u": "Probleem, oorzaak, oplossing. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: de zin bevat het probleem, de oorzaak en de oplossing.",
+    "Koos je \"Dr Moore studies how teenagers travel to school in...\"? Dan denk je dat dit de samenvatting is. Het beschrijft alleen haar onderwerp, en bevat geen boodschap.",
+    "Koos je \"More teenagers cycle than ten years ago in the city...\"? Dan denk je dat meer tieners fietsen. Het is andersom, want er zijn minder fietsers dan tien jaar geleden.",
+    "Koos je \"Cycling is good for health, mood and the air in...\"? Dan denk je dat dit de hoofdgedachte is. Het is een bijzaak aan het eind, en geen samenvatting van het gesprek."
+   ],
+   "uh": "Welke zin vat samen?",
+   "ctx": "You hear a radio interview about cycling to school. Presenter: \"Today we talk to Dr Lisa Moore, who studies how teenagers get to school. Dr Moore, your research says that fewer young people cycle than ten years ago?\" Dr Moore: \"Yes, that is right. But the most important point is not the numbers. The main problem is that many parents think the roads are not safe. If cities build better cycle paths, I am sure more teenagers will cycle again. It is good for their health, for their mood and for the air in the city.\""
+  },
+  {
+   "v": "Why does Dr Moore say \"the most important point is not the numbers\"?",
+   "o": [
+    "she thinks the numbers in the research are all wrong",
+    "she does not want to talk about the research at all",
+    "she wants to stop the interview as soon as she can",
+    "she wants to give the reason"
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 2,
+   "u": "Signaal: not the numbers. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"she thinks the numbers in the research are all wrong\"? Dan denk je dat de cijfers fout zijn. Ze zegt dat ze kloppen, maar ze zijn niet de kern.",
+    "Koos je \"she does not want to talk about the research at all\"? Dan denk je dat ze er niets over wil zeggen. Ze legt juist de uitkomst uit, dus ze wil wel praten.",
+    "Koos je \"she wants to stop the interview as soon as she can\"? Dan denk je dat ze het gesprek wil stoppen. Ze gaat verder met haar punt, en dat past niet bij stoppen.",
+    "Klopt: ze legt na deze zin uit wat de oorzaak is."
+   ],
+   "uh": "Wat zegt ze erna?",
+   "ctx": "You hear a radio interview about cycling to school. Presenter: \"Today we talk to Dr Lisa Moore, who studies how teenagers get to school. Dr Moore, your research says that fewer young people cycle than ten years ago?\" Dr Moore: \"Yes, that is right. But the most important point is not the numbers. The main problem is that many parents think the roads are not safe. If cities build better cycle paths, I am sure more teenagers will cycle again. It is good for their health, for their mood and for the air in the city.\""
+  },
+  {
+   "v": "Which opinion does Dr Moore clearly show in the interview?",
+   "o": [
+    "Teenagers are lazy and do not want to cycle to school.",
+    "Parents should not let their children go to school at all.",
+    "Cities can help with cycle paths.",
+    "Cars are better than bicycles for the city and its air."
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 3,
+   "u": "Mening: de stad kan veranderen.",
+   "uo": [
+    "Koos je \"Teenagers are lazy and do not want to cycle to...\"? Dan denk je dat ze luie tieners noemt. Ze zegt dat de ouders de wegen onveilig vinden, en geeft de tieners geen schuld.",
+    "Koos je \"Parents should not let their children go to school...\"? Dan denk je dat ouders hun kinderen thuis moeten houden. Dat zegt ze niet, en ze wil juist dat kinderen fietsen.",
+    "Klopt: ze zegt dat ze er zeker van is dat betere paden helpen.",
+    "Koos je \"Cars are better than bicycles for the city and its...\"? Dan denk je dat ze auto's beter vindt. Dat staat nergens, en ze noemt de lucht in de stad als voordeel van fietsen."
+   ],
+   "uh": "Wat vindt ze?",
+   "ctx": "You hear a radio interview about cycling to school. Presenter: \"Today we talk to Dr Lisa Moore, who studies how teenagers get to school. Dr Moore, your research says that fewer young people cycle than ten years ago?\" Dr Moore: \"Yes, that is right. But the most important point is not the numbers. The main problem is that many parents think the roads are not safe. If cities build better cycle paths, I am sure more teenagers will cycle again. It is good for their health, for their mood and for the air in the city.\""
+  },
+  {
+   "v": "Which sentence is the main reason for the new rule?",
+   "o": [
+    "Some of you will not like it, I know, but we try.",
+    "We will look at the results after two months of the test.",
+    "Lunch should be a time to relax and talk.",
+    "Phones stay in your lockers until 13.30 on Monday."
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 0,
+   "u": "Reden = pauze is voor praten. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"Some of you will not like it, I know, but we try.\"? Dan denk je dat dit de reden is. Het is een toegeving aan de leerlingen, en geen reden voor de regel.",
+    "Koos je \"We will look at the results after two months of the...\"? Dan denk je dat dit de reden is. Het gaat over de evaluatie, en niet over het waarom.",
+    "Klopt: dit is de doelstelling van de docent en de eigenlijke reden voor de regel.",
+    "Koos je \"Phones stay in your lockers until 13.30 on Monday.\"? Dan denk je dat dit de reden is. Het is de regel zelf, en niet de reden ervoor."
+   ],
+   "uh": "Waarom deze regel?",
+   "ctx": "You hear a teacher speaking at a school assembly: \"Good morning, everyone. This year we are going to try something new: a phone-free lunch break. Some of you will not like it, I know. But when I walked through the canteen last week, I saw forty students looking at their screens and nobody talking. Lunch should be a time to relax and to talk to friends. So from Monday, phones stay in your lockers until 13.30. We will look at the results after two months. I know it is a big change, but I think it will be good for all of us.\""
+  },
+  {
+   "v": "Which sentence is a detail and not the main idea?",
+   "o": [
+    "Lunch should be a time to relax and to talk to friends.",
+    "We are going to try something new this year at school.",
+    "Phones stay in the lockers from Monday on.",
+    "Forty students looked at screens."
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 1,
+   "u": "Voorbeeld = detail. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"Lunch should be a time to relax and to talk to...\"? Dan denk je dat dit een detail is. Dit is juist de kern, en dus geen bijzaak.",
+    "Koos je \"We are going to try something new this year at...\"? Dan denk je dat dit een detail is. Dit kondigt de hoofdzaak aan, en is dus belangrijk.",
+    "Koos je \"Phones stay in the lockers from Monday on.\"? Dan denk je dat dit een detail is. Dit is de nieuwe regel, en daarom de hoofdzaak.",
+    "Klopt: dit is een voorbeeld dat de aanleiding laat zien."
+   ],
+   "uh": "Welke zin is bijzaak?",
+   "ctx": "You hear a teacher speaking at a school assembly: \"Good morning, everyone. This year we are going to try something new: a phone-free lunch break. Some of you will not like it, I know. But when I walked through the canteen last week, I saw forty students looking at their screens and nobody talking. Lunch should be a time to relax and to talk to friends. So from Monday, phones stay in your lockers until 13.30. We will look at the results after two months. I know it is a big change, but I think it will be good for all of us.\""
+  },
+  {
+   "v": "What is true about the rule?",
+   "o": [
+    "It is a test and will be evaluated after two months.",
+    "It is a permanent rule for all students in the school.",
+    "It is a rule only for the teachers in the school.",
+    "It starts on Friday after the weekend of the school."
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 4,
+   "u": "Proefperiode van twee maanden.",
+   "uo": [
+    "Klopt: de docent zegt dat de school na twee maanden de resultaten bekijkt.",
+    "Koos je \"It is a permanent rule for all students in the...\"? Dan denk je dat de regel voor altijd is. De docent noemt een proef, en hij evalueert na twee maanden.",
+    "Koos je \"It is a rule only for the teachers in the school.\"? Dan denk je dat het voor leraren is. Het gaat om de leerlingen, want zij hebben telefoons in de pauze.",
+    "Koos je \"It starts on Friday after the weekend of the school.\"? Dan denk je dat het vrijdag begint. Hij zegt Monday, dus dat moet je onthouden."
+   ],
+   "uh": "Is het blijvend?",
+   "ctx": "You hear a teacher speaking at a school assembly: \"Good morning, everyone. This year we are going to try something new: a phone-free lunch break. Some of you will not like it, I know. But when I walked through the canteen last week, I saw forty students looking at their screens and nobody talking. Lunch should be a time to relax and to talk to friends. So from Monday, phones stay in your lockers until 13.30. We will look at the results after two months. I know it is a big change, but I think it will be good for all of us.\""
+  },
+  {
+   "v": "Which title fits the podcast best?",
+   "o": [
+    "Why teenagers do not like animals very much",
+    "A few hours can change a lot",
+    "How to open a shelter for animals in the city",
+    "The best weekend plans for every single person"
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 4,
+   "u": "Titel = kern. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"Why teenagers do not like animals very much\"? Dan denk je dat de titel over een afkeer van dieren gaat. Jack houdt van dieren, dus dit klopt niet.",
+    "Klopt: de titel noemt de kern van de podcast.",
+    "Koos je \"How to open a shelter for animals in the city\"? Dan denk je dat de titel over een asiel openen gaat. Dat wordt niet uitgelegd, en het gaat om vrijwilligers.",
+    "Koos je \"The best weekend plans for every single person\"? Dan denk je dat het over weekendplannen gaat. Het gaat over vrijwilligerswerk, en niet over vrije tijd."
+   ],
+   "uh": "Welke titel?",
+   "ctx": "You hear part of a podcast about volunteering: \"Many people say they have no time to do volunteer work. But Jack, who is sixteen, helps at a local animal shelter for just two hours every Saturday. He says it gave him new friends and made him more confident. Experts agree that even a small amount of time can make a big difference, both for the volunteer and for the organisation. So you do not need to give up your weekend, a few hours is enough. Many local organisations are still looking for new helpers every week.\""
+  },
+  {
+   "v": "Why does the speaker mention Jack?",
+   "o": [
+    "because Jack is the main person of the podcast",
+    "because the podcast is about animal shelters only",
+    "because Jack is famous in the local community",
+    "as an example that supports the main idea"
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 3,
+   "u": "Jack = voorbeeld. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"because Jack is the main person of the podcast\"? Dan denk je dat Jack de hoofdzaak is. Hij is een voorbeeld, en de kern is de boodschap.",
+    "Koos je \"because the podcast is about animal shelters only\"? Dan denk je dat het over asielen gaat. Het gaat over vrijwilligerswerk, en het asiel is het voorbeeld.",
+    "Koos je \"because Jack is famous in the local community\"? Dan denk je dat Jack beroemd is. Dat wordt niet gezegd, en hij is een gewone zestienjarige.",
+    "Klopt: Jack laat zien dat weinig tijd genoeg is."
+   ],
+   "uh": "Waarom Jack?",
+   "ctx": "You hear part of a podcast about volunteering: \"Many people say they have no time to do volunteer work. But Jack, who is sixteen, helps at a local animal shelter for just two hours every Saturday. He says it gave him new friends and made him more confident. Experts agree that even a small amount of time can make a big difference, both for the volunteer and for the organisation. So you do not need to give up your weekend, a few hours is enough. Many local organisations are still looking for new helpers every week.\""
+  },
+  {
+   "v": "What would the experts in the podcast probably agree with?",
+   "o": [
+    "Small amounts of time help everyone.",
+    "Only full-time volunteers can really help an organisation to run.",
+    "Organisations do not need any volunteers at all any more.",
+    "Volunteering is only useful for people who are sixteen years old."
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 4,
+   "u": "Weinig tijd = verschil. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: experts zeggen dat het verschil maakt voor beide.",
+    "Koos je \"Only full-time volunteers can really help an...\"? Dan denk je dat alleen veel tijd helpt. Experts zeggen het tegenovergestelde, namelijk dat weinig tijd genoeg is.",
+    "Koos je \"Organisations do not need any volunteers at all any...\"? Dan denk je dat vrijwilligers niet nodig zijn. Experts zeggen dat ze helpen, dus dit klopt niet.",
+    "Koos je \"Volunteering is only useful for people who are...\"? Dan denk je dat het alleen voor zestienjarigen is. Dat zegt niemand, en Jack is een voorbeeld."
+   ],
+   "uh": "Wat zeggen experts?",
+   "ctx": "You hear part of a podcast about volunteering: \"Many people say they have no time to do volunteer work. But Jack, who is sixteen, helps at a local animal shelter for just two hours every Saturday. He says it gave him new friends and made him more confident. Experts agree that even a small amount of time can make a big difference, both for the volunteer and for the organisation. So you do not need to give up your weekend, a few hours is enough. Many local organisations are still looking for new helpers every week.\""
+  }
+ ],
+ "oe": [
+  {
+   "bron": "Examenstijl",
+   "ctx": "You hear a radio interview about cycling to school. Presenter: \"Today we talk to Dr Lisa Moore, who studies how teenagers get to school. Dr Moore, your research says that fewer young people cycle than ten years ago?\" Dr Moore: \"Yes, that is right. But the most important point is not the numbers. The main problem is that many parents think the roads are not safe. If cities build better cycle paths, I am sure more teenagers will cycle again. It is good for their health, for their mood and for the air in the city.\"",
+   "v": "What is the main problem Dr Moore mentions, and what does she think is the solution?",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Het probleem is dat ouders de wegen onveilig vinden (1p). Zij denkt dat betere fietspaden helpen (1p) zodat meer tieners weer gaan fietsen (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "You hear a teacher speaking at a school assembly: \"Good morning, everyone. This year we are going to try something new: a phone-free lunch break. Some of you will not like it, I know. But when I walked through the canteen last week, I saw forty students looking at their screens and nobody talking. Lunch should be a time to relax and to talk to friends. So from Monday, phones stay in your lockers until 13.30. We will look at the results after two months. I know it is a big change, but I think it will be good for all of us.\"",
+   "v": "What is the main reason for the phone-free lunch break? Name one detail that supports it.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "De pauze moet een moment zijn om te ontspannen en te praten (2p). Een detail is dat veertig leerlingen naar hun scherm keken (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "You hear part of a podcast about volunteering: \"Many people say they have no time to do volunteer work. But Jack, who is sixteen, helps at a local animal shelter for just two hours every Saturday. He says it gave him new friends and made him more confident. Experts agree that even a small amount of time can make a big difference, both for the volunteer and for the organisation. So you do not need to give up your weekend, a few hours is enough. Many local organisations are still looking for new helpers every week.\"",
+   "v": "What is the main idea of the podcast and which example supports it?",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Een paar uur vrijwilligerswerk maakt al verschil (2p). Het voorbeeld is Jack die twee uur per zaterdag helpt in het asiel (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "You hear an announcement at a museum: \"Welcome to the City Museum. Today we have a special tour about ancient Rome at 14.00. The tour is free, but you need a ticket for the museum. Please remember that photos are allowed, but only without flash. We hope you enjoy your visit.\"",
+   "v": "What is the announcement about and what must you do to take part in the tour?",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Een gratis rondleiding over het oude Rome om 14.00 (1p). Je hebt een kaartje voor het museum nodig (1p) en foto's mogen zonder flits (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "You hear a short news item: \"Pupils at Park School collected 400 kilos of plastic in one week. The school wants to show that small actions matter. Next month, they will visit the town hall to ask the mayor for more recycling bins in the city centre.\"",
+   "v": "What is the main message of the news item and what will the pupils do next month?",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Kleine acties tellen want zij verzamelden 400 kilo plastic (2p). Volgende maand gaan ze naar het stadhuis (1p) om de burgemeester om meer afvalbakken te vragen (1p)."
+  }
+ ]
+}

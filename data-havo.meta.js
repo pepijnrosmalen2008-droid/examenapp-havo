@@ -2608,6 +2608,27 @@ var VAKKEN = [
       "nOe": 5,
       "nBeg": 12,
       "hasSam": true
+     },
+     {
+      "id": "C2",
+      "lo": "en.C.2",
+      "gs": 2,
+      "naam": "De hoofdgedachte van een luister- of kijktekst aangeven",
+      "beschrijving": "Je leert de kernboodschap van een gesproken tekst te vinden, hoofdzaak van bijzaak te scheiden en een titel of samenvatting te kiezen die past.",
+      "ceStatus": "CE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "De hoofdgedachte van een luistertekst",
+       "Hoofdzaak en bijzaak",
+       "Signaalwoorden",
+       "Het doel van de spreker",
+       "Een titel of samenvatting kiezen"
+      ],
+      "nSv": 26,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
      }
     ]
    },
