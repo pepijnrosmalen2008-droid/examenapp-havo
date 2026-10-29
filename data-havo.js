@@ -118438,6 +118438,688 @@ var VAKKEN = [
         "u": "Een leerling stelt een vraag of niemand reageert (1p). Daarna eindigt de les (1p), want de docent vroeg net of iemand nog iets wilde vragen (1p)."
        }
       ]
+     },
+     {
+      "id": "C6",
+      "lo": "en.C.6",
+      "gs": 2,
+      "naam": "Aantekeningen maken bij het luisteren",
+      "beschrijving": "Je leert bij een luistertekst korte, bruikbare aantekeningen te maken en die te gebruiken om de vragen te beantwoorden.",
+      "ceStatus": "CE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Wat noteer je",
+       "Kort noteren",
+       "Structuur in je notities",
+       "Notities gebruiken",
+       "Wat laat je weg"
+      ],
+      "sam": "Bij een luistertekst maak je aantekeningen met trefwoorden: getallen, namen, tijden, plaatsen en voorwaarden. Schrijf geen hele zinnen, maar gebruik afkortingen en symbolen zoals & en =. Geef je notities structuur met wie, wat, wanneer en waar. Noteer getallen direct, laat begroetingen weg en gebruik je notities daarna om de vragen te beantwoorden.",
+      "begrippen": [
+       {
+        "t": "Aantekening",
+        "d": "Een korte notitie van wat je hoort."
+       },
+       {
+        "t": "Trefwoord",
+        "d": "Een belangrijk woord dat je opschrijft."
+       },
+       {
+        "t": "Afkorting",
+        "d": "Een korte vorm van een woord, zoals approx. of Tue."
+       },
+       {
+        "t": "Symbool",
+        "d": "Een teken in plaats van een woord, zoals & of =."
+       },
+       {
+        "t": "Structuur",
+        "d": "Een duidelijke indeling van je notities."
+       },
+       {
+        "t": "Gegeven",
+        "d": "Een stukje informatie zoals een tijd of naam."
+       },
+       {
+        "t": "Detail",
+        "d": "Een kleine, specifieke informatie."
+       },
+       {
+        "t": "Bijzaak",
+        "d": "Informatie die je niet nodig hebt."
+       },
+       {
+        "t": "Opsomming",
+        "d": "Een lijst met punten onder elkaar."
+       },
+       {
+        "t": "Begroeting",
+        "d": "Zinnen zoals hello of good morning."
+       },
+       {
+        "t": "Voorwaarde",
+        "d": "Iets dat moet gebeuren, zoals boeken of een id meenemen."
+       },
+       {
+        "t": "Controle",
+        "d": "Je notities nalopen om te zien of ze kloppen."
+       }
+      ],
+      "sv": [
+       {
+        "v": "What should you write down when you take notes during a listening text?",
+        "o": [
+         "every word that the speaker says in full sentences",
+         "key words such as numbers, names and times",
+         "only the greetings and the name of the speaker",
+         "only the last sentence of the recording"
+        ],
+        "c": 1,
+        "d": 1,
+        "s": 0,
+        "u": "Noteer trefwoorden. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"every word that the speaker says in full sentences\"? Dan denk je dat je alles moet opschrijven. Dat lukt niet in de tijd, en je mist dan het volgende gegeven.",
+         "Klopt: trefwoorden zijn kort en bevatten het gegeven dat je nodig hebt.",
+         "Koos je \"only the greetings and the name of the speaker\"? Dan denk je dat de begroeting belangrijk is. Zij bevat geen gegeven, en helpt niet bij het beantwoorden.",
+         "Koos je \"only the last sentence of the recording\"? Dan denk je dat het slot genoeg is. Belangrijke gegevens staan vaak eerder, dus je moet doorlopend noteren."
+        ],
+        "uh": "Wat schrijf je op?"
+       },
+       {
+        "v": "Why should you not write whole sentences when you take notes?",
+        "o": [
+         "because whole sentences are not allowed in the exam",
+         "because the speaker will repeat everything twice",
+         "because the answers are always one word long",
+         "you do not have enough time to listen and write"
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 0,
+        "u": "Kort noteren. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"because whole sentences are not allowed in the exam\"? Dan denk je dat volledige zinnen verboden zijn. Er is geen regel, het gaat om tijd.",
+         "Koos je \"because the speaker will repeat everything twice\"? Dan denk je dat alles wordt herhaald. Dat is niet altijd zo, dus je moet slim noteren.",
+         "Koos je \"because the answers are always one word long\"? Dan denk je dat alle antwoorden één woord zijn. Dat klopt niet, en je noteert om de tijd.",
+         "Klopt: lange zinnen kosten tijd en je mist daardoor wat daarna wordt gezegd."
+        ],
+        "uh": "Waarom korte notities?"
+       },
+       {
+        "v": "Which note is best for \"The meeting starts at half past two on Tuesday\"?",
+        "o": [
+         "\"meeting Tue 2.30\"",
+         "\"The meeting is going to start at half past two on Tuesday afternoon.\"",
+         "\"a meeting about something\"",
+         "\"2.30\""
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 1,
+        "u": "Onderwerp, dag, tijd. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: dag, tijd en onderwerp staan er kort in.",
+         "Koos je \"The meeting is going to start at half past two on...\"? Dan denk je dat de hele zin overgenomen moet worden. Dat kost te veel tijd, en een korte notitie volstaat.",
+         "Koos je \"a meeting about something\"? Dan denk je dat een vaag woord genoeg is. Dag en tijd ontbreken, dus je kunt de vraag niet beantwoorden.",
+         "Koos je \"2.30\"? Dan denk je dat alleen de tijd genoeg is. De dag en het onderwerp ontbreken, dus je weet niet waar het over gaat."
+        ],
+        "uh": "Welke notitie is kort en volledig?"
+       },
+       {
+        "v": "Which symbol can you use for the word \"and\" in your notes?",
+        "o": [
+         "\"=\" because it is also short and quick to write",
+         "\"?\" because it shows that you are not sure",
+         "\"&\"",
+         "\"!\" because it shows that something is important"
+        ],
+        "c": 2,
+        "d": 1,
+        "s": 1,
+        "u": "& = and. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"= because it is also short and quick to write\"? Dan denk je dat = hetzelfde is als en. Het teken betekent gelijk aan, en is dus niet het woord and.",
+         "Koos je \"? because it shows that you are not sure\"? Dan denk je dat ? en betekent. Het geeft twijfel aan, en is een ander teken.",
+         "Klopt: een symbool kost veel minder tijd dan het woord.",
+         "Koos je \"! because it shows that something is important\"? Dan denk je dat ! en betekent. Het geeft nadruk, en is dus een ander teken."
+        ],
+        "uh": "Welk teken past?"
+       },
+       {
+        "v": "When should you write down a number that you hear?",
+        "o": [
+         "at the end of the recording, when you know more",
+         "never, because numbers are not important",
+         "at once, because you may forget it",
+         "only when the speaker says them twice"
+        ],
+        "c": 2,
+        "d": 1,
+        "s": 2,
+        "u": "Cijfers direct noteren. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"at the end of the recording, when you know more\"? Dan denk je dat wachten beter is. Je vergeet dan het getal, en je kunt het niet meer terughalen.",
+         "Koos je \"never, because numbers are not important\"? Dan denk je dat getallen niet belangrijk zijn. Ze zijn juist vaak het antwoord, dus noteer ze.",
+         "Klopt: getallen vergeet je snel, dus noteer ze direct.",
+         "Koos je \"only when the speaker says them twice\"? Dan denk je dat alleen herhaalde getallen tellen. Dat is niet nodig, en je mist anders het getal."
+        ],
+        "uh": "Wanneer noteer je?"
+       },
+       {
+        "v": "What can you do with your notes after you have listened?",
+        "o": [
+         "use them to answer the questions",
+         "throw them away without reading them",
+         "read them aloud to the other students",
+         "write them again in full sentences"
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 3,
+        "u": "Notities gebruiken. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: de notities helpen je gegevens terug te vinden.",
+         "Koos je \"throw them away without reading them\"? Dan denk je dat notities niet nodig zijn. Ze zijn er voor de vragen, dus gebruik ze.",
+         "Koos je \"read them aloud to the other students\"? Dan denk je dat je ze voor moet lezen. Dat is niet de bedoeling, en je moet de vragen beantwoorden.",
+         "Koos je \"write them again in full sentences\"? Dan denk je dat je ze moet herschrijven. Dat kost tijd, en je gebruikt ze direct."
+        ],
+        "uh": "Wat doe je ermee?"
+       },
+       {
+        "v": "Which information is usually not useful in your notes?",
+        "o": [
+         "times such as \"ten past nine\" in the morning",
+         "prices such as \"twelve pounds\" for a ticket",
+         "names such as \"Mrs Collins\" of the office",
+         "greetings like \"hello\""
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 4,
+        "u": "Geen groeten noteren. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"times such as ten past nine in the morning\"? Dan denk je dat tijden niet nuttig zijn. Ze zijn juist vaak het antwoord, dus noteer ze.",
+         "Koos je \"prices such as twelve pounds for a ticket\"? Dan denk je dat prijzen niet nuttig zijn. Ze zijn belangrijk, dus noteer ze.",
+         "Koos je \"names such as Mrs Collins of the office\"? Dan denk je dat namen niet nuttig zijn. Namen kunnen in de vraag voorkomen, dus noteer ze kort.",
+         "Klopt: een begroeting bevat geen gegeven en kost tijd."
+        ],
+        "uh": "Wat laat je weg?"
+       },
+       {
+        "v": "At what time does the science building open?",
+        "o": [
+         "at eleven o'clock",
+         "at ten o'clock",
+         "at half past ten",
+         "at noon"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 0,
+        "u": "Science: 10.00. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"at eleven o'clock\"? Dan denk je dat het om elf uur opent. Dan begint de robotshow, en het gebouw is al open.",
+         "Klopt: de spreker zegt dat het om tien uur opent.",
+         "Koos je \"at half past ten\"? Dan denk je dat het half elf is. Dat is de start van de tekenworkshop, en niet de opening van het gebouw.",
+         "Koos je \"at noon\"? Dan denk je dat het twaalf uur is. Dat is het einde van de workshop, en het gebouw is al eerder open."
+        ],
+        "uh": "Hoe laat open?",
+        "ctx": "You hear a presentation on a school open day: \"Welcome to Parkview College. Today you can visit three buildings. The science building opens at ten and has a robot show at eleven. The arts building has a drawing workshop from ten thirty until noon, and you must book a place at the desk. The sports hall is open all day, but the swimming pool closes at one o'clock. Lunch is served in the canteen from half past twelve. Please note that the last tour leaves at three. If you have any questions, ask one of the students in a school jacket, they will be happy to help you find your way around.\""
+       },
+       {
+        "v": "What must a visitor do to join the drawing workshop?",
+        "o": [
+         "bring a pencil and some paper",
+         "arrive at eleven o'clock sharp",
+         "pay at the canteen in advance",
+         "book a place"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 1,
+        "u": "Boeken aan de balie. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"bring a pencil and some paper\"? Dan denk je dat je tekenspullen moet meenemen. Dat staat er niet, en je moet boeken.",
+         "Koos je \"arrive at eleven o'clock sharp\"? Dan denk je dat de workshop om elf uur begint. De workshop begint om half elf, dus dat klopt niet.",
+         "Koos je \"pay at the canteen in advance\"? Dan denk je dat je bij de kantine betaalt. Dat wordt niet gezegd, en het gaat om boeken aan de balie.",
+         "Klopt: de spreker zegt dat je een plaats moet boeken."
+        ],
+        "uh": "Wat moet je doen?",
+        "ctx": "You hear a presentation on a school open day: \"Welcome to Parkview College. Today you can visit three buildings. The science building opens at ten and has a robot show at eleven. The arts building has a drawing workshop from ten thirty until noon, and you must book a place at the desk. The sports hall is open all day, but the swimming pool closes at one o'clock. Lunch is served in the canteen from half past twelve. Please note that the last tour leaves at three. If you have any questions, ask one of the students in a school jacket, they will be happy to help you find your way around.\""
+       },
+       {
+        "v": "When does the swimming pool close?",
+        "o": [
+         "at noon",
+         "at one o'clock",
+         "at three o'clock",
+         "at half past twelve"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 2,
+        "u": "Zwembad: 13.00. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"at noon\"? Dan denk je dat het om twaalf uur dicht gaat. Dat is het einde van de workshop, en niet van het zwembad.",
+         "Klopt: de spreker zegt dat het zwembad om één uur sluit.",
+         "Koos je \"at three o'clock\"? Dan denk je dat het om drie uur dicht gaat. Dat is de laatste rondleiding, en niet het zwembad.",
+         "Koos je \"at half past twelve\"? Dan denk je dat het om half een dicht gaat. Dat is de start van de lunch, en niet de sluiting."
+        ],
+        "uh": "Wanneer sluit het?",
+        "ctx": "You hear a presentation on a school open day: \"Welcome to Parkview College. Today you can visit three buildings. The science building opens at ten and has a robot show at eleven. The arts building has a drawing workshop from ten thirty until noon, and you must book a place at the desk. The sports hall is open all day, but the swimming pool closes at one o'clock. Lunch is served in the canteen from half past twelve. Please note that the last tour leaves at three. If you have any questions, ask one of the students in a school jacket, they will be happy to help you find your way around.\""
+       },
+       {
+        "v": "When does the last tour leave?",
+        "o": [
+         "at one o'clock",
+         "at noon",
+         "at three o'clock",
+         "at half past twelve"
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 0,
+        "u": "Laatste tour: 15.00. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"at one o'clock\"? Dan denk je dat het één uur is. Dat is de sluiting van het zwembad, en niet de laatste tour.",
+         "Koos je \"at noon\"? Dan denk je dat het twaalf uur is. Dat is het einde van de workshop, en niet de tour.",
+         "Klopt: de spreker noemt drie uur als vertrektijd van de laatste rondleiding.",
+         "Koos je \"at half past twelve\"? Dan denk je dat het half een is. Dat is de start van de lunch, en niet de tour."
+        ],
+        "uh": "Hoe laat?",
+        "ctx": "You hear a presentation on a school open day: \"Welcome to Parkview College. Today you can visit three buildings. The science building opens at ten and has a robot show at eleven. The arts building has a drawing workshop from ten thirty until noon, and you must book a place at the desk. The sports hall is open all day, but the swimming pool closes at one o'clock. Lunch is served in the canteen from half past twelve. Please note that the last tour leaves at three. If you have any questions, ask one of the students in a school jacket, they will be happy to help you find your way around.\""
+       },
+       {
+        "v": "What has the lost property office found?",
+        "o": [
+         "a backpack with a laptop",
+         "a wallet with a lot of money inside it",
+         "a phone and a big set of keys",
+         "a coat with two small umbrellas"
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 1,
+        "u": "Rugzak met laptop. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: mevrouw Collins zegt dat er een laptop in de rugzak zit.",
+         "Koos je \"a wallet with a lot of money inside it\"? Dan denk je dat het een portemonnee is. Dat wordt niet genoemd, en het gaat om een rugzak.",
+         "Koos je \"a phone and a big set of keys\"? Dan denk je dat het een telefoon is. Dat staat niet in de tekst, en ze noemen een rugzak.",
+         "Koos je \"a coat with two small umbrellas\"? Dan denk je dat het een jas is. Dat wordt niet gezegd, en het is een rugzak."
+        ],
+        "uh": "Wat is gevonden?",
+        "ctx": "You hear a voicemail message: \"Hello, this is Mrs Collins from the lost property office at Central Station. We have found a large backpack that matches your description. Inside there are a laptop, two notebooks and a water bottle. You can collect it from the office, which is open from eight in the morning until six in the evening, Monday to Saturday. Please bring an ID card and the receipt of your laptop. If you cannot come, call us on 020 555 0147. Thank you very much and have a nice day, goodbye.\""
+       },
+       {
+        "v": "What are the opening hours of the office?",
+        "o": [
+         "from eight to six, Monday to Saturday",
+         "from nine to five, Monday to Friday",
+         "from eight to six, every day of the week",
+         "from six to eight, Monday to Saturday"
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 2,
+        "u": "Ma-za 8-18. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: van acht uur tot zes uur en van maandag tot zaterdag.",
+         "Koos je \"from nine to five, Monday to Friday\"? Dan denk je dat het negen tot vijf is. De tijden zijn acht en zes, en zaterdag is ook open.",
+         "Koos je \"from eight to six, every day of the week\"? Dan denk je dat ook zondag open is. De dagen zijn maandag tot zaterdag, dus zondag niet.",
+         "Koos je \"from six to eight, Monday to Saturday\"? Dan denk je dat de tijden zijn omgedraaid. Het is acht tot zes, en niet zes tot acht."
+        ],
+        "uh": "Wanneer open?",
+        "ctx": "You hear a voicemail message: \"Hello, this is Mrs Collins from the lost property office at Central Station. We have found a large backpack that matches your description. Inside there are a laptop, two notebooks and a water bottle. You can collect it from the office, which is open from eight in the morning until six in the evening, Monday to Saturday. Please bring an ID card and the receipt of your laptop. If you cannot come, call us on 020 555 0147. Thank you very much and have a nice day, goodbye.\""
+       },
+       {
+        "v": "What must the owner bring to the office?",
+        "o": [
+         "a letter from the owner's school or work",
+         "a photo of the backpack and its contents",
+         "an ID card and a receipt",
+         "a key and a ticket for the next train"
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 3,
+        "u": "ID + bon. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"a letter from the owner's school or work\"? Dan denk je dat een brief nodig is. Dat noemt ze niet, en ze vraagt om een id.",
+         "Koos je \"a photo of the backpack and its contents\"? Dan denk je dat een foto nodig is. Dat noemt ze niet, en ze vraagt om de bon.",
+         "Klopt: de spreker noemt een identiteitsbewijs en de bon van de laptop.",
+         "Koos je \"a key and a ticket for the next train\"? Dan denk je dat een sleutel nodig is. Dat noemt ze niet, en ze vraagt om de bon."
+        ],
+        "uh": "Wat meenemen?",
+        "ctx": "You hear a voicemail message: \"Hello, this is Mrs Collins from the lost property office at Central Station. We have found a large backpack that matches your description. Inside there are a laptop, two notebooks and a water bottle. You can collect it from the office, which is open from eight in the morning until six in the evening, Monday to Saturday. Please bring an ID card and the receipt of your laptop. If you cannot come, call us on 020 555 0147. Thank you very much and have a nice day, goodbye.\""
+       },
+       {
+        "v": "Why is there a long queue on the A12?",
+        "o": [
+         "because of heavy rain and a storm today",
+         "because of an accident",
+         "because of road works on the N5 road",
+         "because of a broken traffic light there"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 0,
+        "u": "Ongeluk bij Exit 8. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"because of heavy rain and a storm today\"? Dan denk je dat het weer de oorzaak is. Het weer blijft droog, dus dat is niet de reden.",
+         "Klopt: de verslaggever noemt een ongeluk bij afrit 8.",
+         "Koos je \"because of road works on the N5 road\"? Dan denk je dat het om wegwerkzaamheden gaat. Dat wordt niet genoemd, en de N5 is juist het alternatief.",
+         "Koos je \"because of a broken traffic light there\"? Dan denk je dat het om een stoplicht gaat. Dat wordt niet gezegd, en er is een ongeluk."
+        ],
+        "uh": "Waarom file?",
+        "ctx": "You hear a radio travel report: \"Good afternoon. On the A12 towards the city there is a long queue because of an accident near Exit 8. Drivers should expect delays of about forty minutes. We advise you to leave the motorway at Exit 6 and take the N5 road instead. Trains between the airport and the city are running normally, but there are some delays on the line to the north because of a broken signal. The weather will stay dry, with temperatures around fifteen degrees. That was the travel report, and now back to the music in our studio.\""
+       },
+       {
+        "v": "Which exit should drivers take to avoid the queue?",
+        "o": [
+         "Exit 8",
+         "Exit 5",
+         "Exit 12",
+         "Exit 6"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 1,
+        "u": "Exit 6. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"Exit 8\"? Dan denk je dat afrit 8 het alternatief is. Daar is juist het ongeluk, dus dat is de verkeerde afrit.",
+         "Koos je \"Exit 5\"? Dan denk je dat het afrit 5 is. Dat wordt niet genoemd, en het gaat om afrit 6.",
+         "Koos je \"Exit 12\"? Dan denk je dat het afrit 12 is. Dat is het nummer van de weg, en niet van de afrit.",
+         "Klopt: de verslaggever adviseert afrit 6 en de N5."
+        ],
+        "uh": "Welke afrit?",
+        "ctx": "You hear a radio travel report: \"Good afternoon. On the A12 towards the city there is a long queue because of an accident near Exit 8. Drivers should expect delays of about forty minutes. We advise you to leave the motorway at Exit 6 and take the N5 road instead. Trains between the airport and the city are running normally, but there are some delays on the line to the north because of a broken signal. The weather will stay dry, with temperatures around fifteen degrees. That was the travel report, and now back to the music in our studio.\""
+       },
+       {
+        "v": "How long will drivers have to wait?",
+        "o": [
+         "about fourteen minutes",
+         "about forty minutes",
+         "about four hours",
+         "about fifteen minutes"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 2,
+        "u": "Veertig minuten. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"about fourteen minutes\"? Dan denk je dat het veertien minuten is. Het getal klinkt gelijk, maar het is veertig.",
+         "Klopt: de verslaggever noemt een vertraging van ongeveer veertig minuten.",
+         "Koos je \"about four hours\"? Dan denk je dat het vier uur is. De tijd is in minuten, en het is veertig.",
+         "Koos je \"about fifteen minutes\"? Dan denk je dat het kwartier is. Dat is de temperatuur, en niet de vertraging."
+        ],
+        "uh": "Hoe lang?",
+        "ctx": "You hear a radio travel report: \"Good afternoon. On the A12 towards the city there is a long queue because of an accident near Exit 8. Drivers should expect delays of about forty minutes. We advise you to leave the motorway at Exit 6 and take the N5 road instead. Trains between the airport and the city are running normally, but there are some delays on the line to the north because of a broken signal. The weather will stay dry, with temperatures around fifteen degrees. That was the travel report, and now back to the music in our studio.\""
+       },
+       {
+        "v": "A student wants to see the robot show and have lunch. Which plan is possible?",
+        "o": [
+         "robot show at eleven, lunch later",
+         "lunch at ten, then the robot show at eleven o'clock",
+         "the robot show at one o'clock after the swim in the pool",
+         "the robot show in the sports hall at noon sharp"
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 0,
+        "u": "Show 11, lunch 12.30. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: de show is om elf uur en de lunch begint na half een.",
+         "Koos je \"lunch at ten, then the robot show at eleven o'clock\"? Dan denk je dat de lunch om tien uur is. De lunch begint om half een, dus dat past niet.",
+         "Koos je \"the robot show at one o'clock after the swim in the...\"? Dan denk je dat de show om één uur is. De show is om elf uur, dus dat klopt niet.",
+         "Koos je \"the robot show in the sports hall at noon sharp\"? Dan denk je dat de show in de sporthal is. De show is in het science building, en om elf uur."
+        ],
+        "uh": "Wat past?",
+        "ctx": "You hear a presentation on a school open day: \"Welcome to Parkview College. Today you can visit three buildings. The science building opens at ten and has a robot show at eleven. The arts building has a drawing workshop from ten thirty until noon, and you must book a place at the desk. The sports hall is open all day, but the swimming pool closes at one o'clock. Lunch is served in the canteen from half past twelve. Please note that the last tour leaves at three. If you have any questions, ask one of the students in a school jacket, they will be happy to help you find your way around.\""
+       },
+       {
+        "v": "Which notes are best for the arts building?",
+        "o": [
+         "arts building is a building where people draw things",
+         "arts: 12",
+         "drawing and swimming and robots",
+         "arts: drawing 10.30-12, book at desk"
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 1,
+        "u": "Gebouw, tijd, voorwaarde. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"arts building is a building where people draw things\"? Dan denk je dat een lange zin beter is. Dat kost tijd, en het mist de tijd en de boeking.",
+         "Koos je \"arts: 12\"? Dan denk je dat een getal genoeg is. Je weet niet wat 12 betekent, en de rest ontbreekt.",
+         "Koos je \"drawing and swimming and robots\"? Dan denk je dat een lijst genoeg is. Tijden en boeking ontbreken, dus de notitie is niet bruikbaar.",
+         "Klopt: het bevat gebouw, activiteit, tijd en een voorwaarde."
+        ],
+        "uh": "Welke notitie werkt?",
+        "ctx": "You hear a presentation on a school open day: \"Welcome to Parkview College. Today you can visit three buildings. The science building opens at ten and has a robot show at eleven. The arts building has a drawing workshop from ten thirty until noon, and you must book a place at the desk. The sports hall is open all day, but the swimming pool closes at one o'clock. Lunch is served in the canteen from half past twelve. Please note that the last tour leaves at three. If you have any questions, ask one of the students in a school jacket, they will be happy to help you find your way around.\""
+       },
+       {
+        "v": "A visitor arrives at two o'clock and wants to swim. What is true?",
+        "o": [
+         "the pool is open until three o'clock",
+         "the pool opens at two o'clock",
+         "the pool is already closed",
+         "the pool is only open for the staff"
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 2,
+        "u": "Dicht na 13.00. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"the pool is open until three o'clock\"? Dan denk je dat het tot drie uur open is. Dat is de laatste tour, en het zwembad sloot om één uur.",
+         "Koos je \"the pool opens at two o'clock\"? Dan denk je dat het zwembad om twee uur opent. Het opent niet later, en is al dicht.",
+         "Klopt: het zwembad sloot om één uur, dus om twee uur is het dicht.",
+         "Koos je \"the pool is only open for the staff\"? Dan denk je dat het zwembad voor personeel is. Dat staat er niet, en het is gewoon dicht."
+        ],
+        "uh": "Is het open?",
+        "ctx": "You hear a presentation on a school open day: \"Welcome to Parkview College. Today you can visit three buildings. The science building opens at ten and has a robot show at eleven. The arts building has a drawing workshop from ten thirty until noon, and you must book a place at the desk. The sports hall is open all day, but the swimming pool closes at one o'clock. Lunch is served in the canteen from half past twelve. Please note that the last tour leaves at three. If you have any questions, ask one of the students in a school jacket, they will be happy to help you find your way around.\""
+       },
+       {
+        "v": "Which notes are best for the voicemail?",
+        "o": [
+         "Mrs Collins called from the station about a bag that she found",
+         "Hello, this is Mrs Collins from the lost property office at the station",
+         "backpack + laptop, 8-6 Mon-Sat, ID + receipt, 020 555 0147",
+         "laptop, notebooks, bottle, backpack, office, ID card, desk"
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 0,
+        "u": "Alle gegevens, kort. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"Mrs Collins called from the station about a bag...\"? Dan denk je dat de naam en het onderwerp genoeg zijn. De gegevens ontbreken, dus je kunt de vragen niet beantwoorden.",
+         "Koos je \"Hello, this is Mrs Collins from the lost property...\"? Dan denk je dat de begroeting nodig is. Zij bevat geen gegeven, en kost tijd.",
+         "Klopt: de notitie bevat alle gegevens in korte vorm.",
+         "Koos je \"laptop, notebooks, bottle, backpack, office, ID...\"? Dan denk je dat een lijst genoeg is. Tijden en telefoonnummer ontbreken, en de lijst heeft geen structuur."
+        ],
+        "uh": "Welke notitie is compleet?",
+        "ctx": "You hear a voicemail message: \"Hello, this is Mrs Collins from the lost property office at Central Station. We have found a large backpack that matches your description. Inside there are a laptop, two notebooks and a water bottle. You can collect it from the office, which is open from eight in the morning until six in the evening, Monday to Saturday. Please bring an ID card and the receipt of your laptop. If you cannot come, call us on 020 555 0147. Thank you very much and have a nice day, goodbye.\""
+       },
+       {
+        "v": "A man arrives at the office at seven in the evening on Tuesday. What happens?",
+        "o": [
+         "he can collect the backpack at once",
+         "he must wait until Sunday",
+         "he must pay for the lost laptop",
+         "the office is closed"
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 2,
+        "u": "Dicht na 18.00. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"he can collect the backpack at once\"? Dan denk je dat het kantoor nog open is. Het sluit om zes uur, dus hij kan niet.",
+         "Koos je \"he must wait until Sunday\"? Dan denk je dat hij tot zondag moet wachten. Het kantoor is ook op zaterdag open, en maandag tot zaterdag.",
+         "Koos je \"he must pay for the lost laptop\"? Dan denk je dat hij moet betalen. Dat staat er niet, en het kantoor is dicht.",
+         "Klopt: het kantoor sluit om zes uur, dus om zeven uur is het dicht."
+        ],
+        "uh": "Is het open?",
+        "ctx": "You hear a voicemail message: \"Hello, this is Mrs Collins from the lost property office at Central Station. We have found a large backpack that matches your description. Inside there are a laptop, two notebooks and a water bottle. You can collect it from the office, which is open from eight in the morning until six in the evening, Monday to Saturday. Please bring an ID card and the receipt of your laptop. If you cannot come, call us on 020 555 0147. Thank you very much and have a nice day, goodbye.\""
+       },
+       {
+        "v": "What does the owner need to prove that the laptop is his?",
+        "o": [
+         "the receipt of the laptop",
+         "a photo of the water bottle",
+         "a letter from the police",
+         "the key of the backpack"
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 3,
+        "u": "Bon als bewijs. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: de bon bewijst dat de laptop van hem is.",
+         "Koos je \"a photo of the water bottle\"? Dan denk je dat een foto van de fles nodig is. Dat noemt ze niet, en ze vraagt om de bon.",
+         "Koos je \"a letter from the police\"? Dan denk je dat een brief van de politie nodig is. Dat noemt ze niet, dus dat klopt niet.",
+         "Koos je \"the key of the backpack\"? Dan denk je dat een sleutel nodig is. Dat noemt ze niet, en ze vraagt om de bon."
+        ],
+        "uh": "Wat bewijst het?",
+        "ctx": "You hear a voicemail message: \"Hello, this is Mrs Collins from the lost property office at Central Station. We have found a large backpack that matches your description. Inside there are a laptop, two notebooks and a water bottle. You can collect it from the office, which is open from eight in the morning until six in the evening, Monday to Saturday. Please bring an ID card and the receipt of your laptop. If you cannot come, call us on 020 555 0147. Thank you very much and have a nice day, goodbye.\""
+       },
+       {
+        "v": "Which notes are best for travellers who go to the city by car?",
+        "o": [
+         "It is dry and fifteen degrees",
+         "A12 queue Exit 8, 40 min; take Exit 6 + N5",
+         "Trains run normally between airport and city",
+         "Good afternoon, the A12 is a motorway"
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 0,
+        "u": "Weg, oorzaak, tijd, alternatief.",
+        "uo": [
+         "Koos je \"It is dry and fifteen degrees\"? Dan denk je dat het weer genoeg is. Het weer is niet het probleem, en de weg ontbreekt.",
+         "Klopt: het bevat de weg, de oorzaak, de tijd en het alternatief.",
+         "Koos je \"Trains run normally between airport and city\"? Dan denk je dat de trein genoeg is. De reiziger rijdt met de auto, dus de notitie past niet.",
+         "Koos je \"Good afternoon, the A12 is a motorway\"? Dan denk je dat de groet en uitleg genoeg zijn. Er staat geen advies in, dus het helpt niet."
+        ],
+        "uh": "Wat noteer je?",
+        "ctx": "You hear a radio travel report: \"Good afternoon. On the A12 towards the city there is a long queue because of an accident near Exit 8. Drivers should expect delays of about forty minutes. We advise you to leave the motorway at Exit 6 and take the N5 road instead. Trains between the airport and the city are running normally, but there are some delays on the line to the north because of a broken signal. The weather will stay dry, with temperatures around fifteen degrees. That was the travel report, and now back to the music in our studio.\""
+       },
+       {
+        "v": "A traveller wants to take the train to the north. What should she know?",
+        "o": [
+         "all trains are cancelled for the whole day",
+         "the trains run normally on every single line",
+         "the line to the north is closed for a whole week",
+         "there are delays on that line"
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 2,
+        "u": "Noorden: vertraging. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"all trains are cancelled for the whole day\"? Dan denk je dat alle treinen niet rijden. Er zijn alleen vertragingen, en tussen luchthaven en stad rijden ze normaal.",
+         "Koos je \"the trains run normally on every single line\"? Dan denk je dat alles normaal is. De lijn naar het noorden heeft vertraging, dus dat klopt niet.",
+         "Koos je \"the line to the north is closed for a whole week\"? Dan denk je dat de lijn dicht is. Er is een vertraging, en geen sluiting.",
+         "Klopt: de lijn naar het noorden heeft vertraging."
+        ],
+        "uh": "Wat weet ze?",
+        "ctx": "You hear a radio travel report: \"Good afternoon. On the A12 towards the city there is a long queue because of an accident near Exit 8. Drivers should expect delays of about forty minutes. We advise you to leave the motorway at Exit 6 and take the N5 road instead. Trains between the airport and the city are running normally, but there are some delays on the line to the north because of a broken signal. The weather will stay dry, with temperatures around fifteen degrees. That was the travel report, and now back to the music in our studio.\""
+       },
+       {
+        "v": "Which statement about the report is true?",
+        "o": [
+         "airport trains run normally",
+         "the N5 has a long queue after an accident today",
+         "the weather will be wet and cold all week",
+         "the A12 is closed for the whole week of the year"
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 3,
+        "u": "Luchthaven-stad: normaal. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: de verslaggever zegt dat die treinen normaal rijden.",
+         "Koos je \"the N5 has a long queue after an accident today\"? Dan denk je dat de N5 file heeft. De N5 is juist het alternatief, en het ongeluk is op de A12.",
+         "Koos je \"the weather will be wet and cold all week\"? Dan denk je dat het nat is. Het blijft droog, en het is vijftien graden.",
+         "Koos je \"the A12 is closed for the whole week of the year\"? Dan denk je dat de A12 dicht is. Er is een file door een ongeluk, dus dat klopt niet."
+        ],
+        "uh": "Wat klopt?",
+        "ctx": "You hear a radio travel report: \"Good afternoon. On the A12 towards the city there is a long queue because of an accident near Exit 8. Drivers should expect delays of about forty minutes. We advise you to leave the motorway at Exit 6 and take the N5 road instead. Trains between the airport and the city are running normally, but there are some delays on the line to the north because of a broken signal. The weather will stay dry, with temperatures around fifteen degrees. That was the travel report, and now back to the music in our studio.\""
+       },
+       {
+        "v": "Which note is a poor use of your time during the travel report?",
+        "o": [
+         "writing \"A12 - Ex 8 - 40 min\" in your notes",
+         "writing the weather in full sentences",
+         "writing \"Ex 6 + N5\" as a quick alternative",
+         "writing \"airport-city: OK\" next to the line"
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 4,
+        "u": "Geen volledige zinnen over bijzaken.",
+        "uo": [
+         "Koos je \"writing A12 - Ex 8 - 40 min in your notes\"? Dan denk je dat dit slecht is. Het is een korte en bruikbare notitie, dus het is goed.",
+         "Klopt: het weer is niet wat gevraagd wordt en volledige zinnen kosten tijd.",
+         "Koos je \"writing Ex 6 + N5 as a quick alternative\"? Dan denk je dat dit slecht is. Het is een kort alternatief, dus het is goed.",
+         "Koos je \"writing airport-city: OK next to the line\"? Dan denk je dat dit slecht is. Het is een kort gegeven, dus het is goed."
+        ],
+        "uh": "Wat is verspilling?",
+        "ctx": "You hear a radio travel report: \"Good afternoon. On the A12 towards the city there is a long queue because of an accident near Exit 8. Drivers should expect delays of about forty minutes. We advise you to leave the motorway at Exit 6 and take the N5 road instead. Trains between the airport and the city are running normally, but there are some delays on the line to the north because of a broken signal. The weather will stay dry, with temperatures around fifteen degrees. That was the travel report, and now back to the music in our studio.\""
+       }
+      ],
+      "oe": [
+       {
+        "bron": "Examenstijl",
+        "ctx": "You hear a presentation on a school open day: \"Welcome to Parkview College. Today you can visit three buildings. The science building opens at ten and has a robot show at eleven. The arts building has a drawing workshop from ten thirty until noon, and you must book a place at the desk. The sports hall is open all day, but the swimming pool closes at one o'clock. Lunch is served in the canteen from half past twelve. Please note that the last tour leaves at three. If you have any questions, ask one of the students in a school jacket, they will be happy to help you find your way around.\"",
+        "v": "Write short notes on the open day: science building, arts building, swimming pool and last tour. What do you write?",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Science 10.00 en robotshow 11.00 (1p). Arts: drawing 10.30-12.00 en boeken (1p). Pool dicht om 13.00 (1p). Laatste tour 15.00 (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "You hear a voicemail message: \"Hello, this is Mrs Collins from the lost property office at Central Station. We have found a large backpack that matches your description. Inside there are a laptop, two notebooks and a water bottle. You can collect it from the office, which is open from eight in the morning until six in the evening, Monday to Saturday. Please bring an ID card and the receipt of your laptop. If you cannot come, call us on 020 555 0147. Thank you very much and have a nice day, goodbye.\"",
+        "v": "Write short notes about the voicemail. Which items are important for the owner?",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Rugzak met laptop (1p). Kantoor 8-18 ma-za (1p). Id en bon van de laptop meenemen (1p). Telefoon 020 555 0147 (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "You hear a radio travel report: \"Good afternoon. On the A12 towards the city there is a long queue because of an accident near Exit 8. Drivers should expect delays of about forty minutes. We advise you to leave the motorway at Exit 6 and take the N5 road instead. Trains between the airport and the city are running normally, but there are some delays on the line to the north because of a broken signal. The weather will stay dry, with temperatures around fifteen degrees. That was the travel report, and now back to the music in our studio.\"",
+        "v": "Write short notes for a driver who wants to go to the city. What do you note?",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "A12 file bij afrit 8, ongeveer 40 minuten (2p). Neem afrit 6 en de N5 (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "You hear a phone message: \"Hi, it is Anna. Just to let you know that the party on Saturday has moved to half past seven. Please bring a salad or a dessert, and do not forget the address, which is 14 Maple Street. Call me if you cannot come.\"",
+        "v": "Write short notes about the phone message: day, time, what to bring and address.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Zaterdag (1p), 7.30 (1p), salade of toetje (1p), 14 Maple Street (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "You hear a teacher giving homework: \"For next lesson, read chapter five and make exercises one to six. The test is on the twentieth of March, so start studying early. If you are ill, send me an email before nine o'clock.\"",
+        "v": "Which notes do you make about the homework message?",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Hoofdstuk 5 en opdrachten 1 tot 6 (1p). Toets op 20 maart (1p). Ziek: mail voor 9.00 uur (1p)."
+       }
+      ]
      }
     ]
    },

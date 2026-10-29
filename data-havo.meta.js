@@ -2692,6 +2692,27 @@ var VAKKEN = [
       "nOe": 5,
       "nBeg": 12,
       "hasSam": true
+     },
+     {
+      "id": "C6",
+      "lo": "en.C.6",
+      "gs": 2,
+      "naam": "Aantekeningen maken bij het luisteren",
+      "beschrijving": "Je leert bij een luistertekst korte, bruikbare aantekeningen te maken en die te gebruiken om de vragen te beantwoorden.",
+      "ceStatus": "CE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Wat noteer je",
+       "Kort noteren",
+       "Structuur in je notities",
+       "Notities gebruiken",
+       "Wat laat je weg"
+      ],
+      "nSv": 27,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
      }
     ]
    },
