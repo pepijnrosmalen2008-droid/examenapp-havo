@@ -1,0 +1,661 @@
+{
+ "id": "D7",
+ "lo": "en.D.7",
+ "gs": 2,
+ "naam": "Een korte presentatie opbouwen voor doel en publiek",
+ "beschrijving": "Je leert in het Engels een korte presentatie op te bouwen met inleiding, kern en slot en je taal aan te passen aan je publiek.",
+ "ceStatus": "SE",
+ "binas": "",
+ "val": "",
+ "onderwerpen": [
+  "Doel en publiek",
+  "Opbouw van een presentatie",
+  "Signaalwoorden en overgangen",
+  "Standpunt en voorbeelden",
+  "Duidelijk spreken"
+ ],
+ "sam": "Een presentatie begint met een inleiding waarin je het onderwerp en het doel noemt. In de kern geef je je punten met signaalwoorden als firstly, secondly en next en onderbouw je ze met een voorbeeld. Je sluit af met to sum up en een bedankje. Pas je taal aan op je publiek, spreek duidelijk en niet te snel, gebruik trefwoorden op een kaart en kijk naar je publiek.",
+ "begrippen": [
+  {
+   "t": "Presentatie",
+   "d": "Een korte talk voor een groep luisteraars."
+  },
+  {
+   "t": "Publiek",
+   "d": "De mensen die naar je luisteren."
+  },
+  {
+   "t": "Doel",
+   "d": "Wat je met je talk wilt bereiken."
+  },
+  {
+   "t": "Inleiding",
+   "d": "Het begin waarin je het onderwerp noemt."
+  },
+  {
+   "t": "Kern",
+   "d": "Het middenstuk met je belangrijkste punten."
+  },
+  {
+   "t": "Slot",
+   "d": "Het einde waarin je samenvat en bedankt."
+  },
+  {
+   "t": "Signaalwoord",
+   "d": "Een woord dat het volgende deel aankondigt."
+  },
+  {
+   "t": "Overgang",
+   "d": "Een zin waarmee je naar het volgende punt gaat."
+  },
+  {
+   "t": "Voorbeeld",
+   "d": "Een geval dat je punt ondersteunt."
+  },
+  {
+   "t": "Trefwoorden",
+   "d": "Korte woorden op een kaart in plaats van hele zinnen."
+  },
+  {
+   "t": "Oogcontact",
+   "d": "Naar je publiek kijken terwijl je spreekt."
+  },
+  {
+   "t": "Verwijzing",
+   "d": "Naar een dia of grafiek wijzen met as you can see."
+  }
+ ],
+ "sv": [
+  {
+   "v": "Why do you think about your audience before you give a talk?",
+   "o": [
+    "to learn their names by heart",
+    "to choose suitable words",
+    "to speak much faster than usual",
+    "to make the talk much longer"
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 0,
+   "u": "Publiek bepaalt taal. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"to learn their names by heart\"? Dan denk je dat namen het doel zijn. Je denkt aan hun kennis en belangstelling, en niet aan hun namen.",
+    "Klopt: je past je taal en voorbeelden aan op wie luistert.",
+    "Koos je \"to speak much faster than usual\"? Dan denk je dat sneller spreken past bij publiek. Dat maakt je minder duidelijk, en helpt het publiek niet.",
+    "Koos je \"to make the talk much longer\"? Dan denk je dat een lange presentatie beter is. De lengte hangt af van je doel, en niet van het publiek alleen."
+   ],
+   "uh": "Waarom denk je aan het publiek?"
+  },
+  {
+   "v": "Which part of a presentation comes first?",
+   "o": [
+    "the conclusion, which sums up",
+    "the examples, which support points",
+    "the questions, which come at the end",
+    "the introduction"
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 1,
+   "u": "Inleiding eerst. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"the conclusion, which sums up\"? Dan denk je dat het slot eerst komt. Het slot vat samen aan het einde, en komt dus als laatste.",
+    "Koos je \"the examples, which support points\"? Dan denk je dat de voorbeelden eerst komen. Ze ondersteunen de kernpunten, en volgen daarop.",
+    "Koos je \"the questions, which come at the end\"? Dan denk je dat de vragen eerst komen. Die komen na je verhaal, en niet bij het begin.",
+    "Klopt: je begint met een inleiding waarin je het onderwerp noemt."
+   ],
+   "uh": "Wat komt eerst?"
+  },
+  {
+   "v": "Which sentence is a good opening for a talk?",
+   "o": [
+    "\"Today I will talk about uniforms.\"",
+    "\"That is all, thank you.\"",
+    "\"I do not know what to say.\"",
+    "\"Sorry, I forgot my notes.\""
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 1,
+   "u": "Noem het onderwerp. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: je noemt het onderwerp meteen duidelijk.",
+    "Koos je \"That is all, thank you.\"? Dan denk je dat dit een opening is. Het is een afsluiting, en past aan het einde.",
+    "Koos je \"I do not know what to say.\"? Dan denk je dat dit een opening is. Het toont onzekerheid, en noemt geen onderwerp.",
+    "Koos je \"Sorry, I forgot my notes.\"? Dan denk je dat dit een opening is. Het is een excuus, en noemt geen onderwerp."
+   ],
+   "uh": "Welke zin opent een talk?"
+  },
+  {
+   "v": "Which word shows that you move to the next point?",
+   "o": [
+    "\"Although, ...\" at the start",
+    "\"Unless, ...\" at the start",
+    "\"Next, ...\"",
+    "\"Because, ...\" at the start"
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 2,
+   "u": "Next = volgende punt. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"Although, ... at the start\"? Dan denk je dat although een volgend punt opent. Het zet iets tegenover elkaar, en geeft dus geen volgorde.",
+    "Koos je \"Unless, ... at the start\"? Dan denk je dat unless de volgende stap noemt. Het stelt een voorwaarde, en noemt geen opeenvolging.",
+    "Klopt: next kondigt het volgende punt van je presentatie aan.",
+    "Koos je \"Because, ... at the start\"? Dan denk je dat because een nieuw punt inleidt. Het geeft een oorzaak, en geen volgende stap."
+   ],
+   "uh": "Welk woord kondigt aan?"
+  },
+  {
+   "v": "Which phrase introduces the conclusion?",
+   "o": [
+    "\"For example, ...\" near the end",
+    "\"On the other hand, ...\" near the end",
+    "\"To sum up, ...\"",
+    "\"First of all, ...\" near the end"
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 2,
+   "u": "To sum up = tot slot. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"For example, ... near the end\"? Dan denk je dat een voorbeeld het slot opent. For example geeft een geval, en rondt dus niets af.",
+    "Koos je \"On the other hand, ... near the end\"? Dan denk je dat een tegenargument het slot opent. On the other hand komt voor het eind, en vat niets samen.",
+    "Klopt: to sum up leidt de samenvatting aan het einde in.",
+    "Koos je \"First of all, ... near the end\"? Dan denk je dat de opsomming het slot opent. First of all start de lijst, en staat dus aan het begin."
+   ],
+   "uh": "Welke woorden sluiten af?"
+  },
+  {
+   "v": "Which sentence states an opinion in a talk?",
+   "o": [
+    "\"I believe uniforms are fair.\"",
+    "\"School uniforms have a collar.\"",
+    "\"There are 600 students at my school.\"",
+    "\"My school is in the city centre.\""
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 3,
+   "u": "I believe = mening. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: I believe leidt een mening in en geeft dus een standpunt.",
+    "Koos je \"School uniforms have a collar.\"? Dan denk je dat dit een mening is. Het is een feit over kleding, en geen oordeel.",
+    "Koos je \"There are 600 students at my school.\"? Dan denk je dat dit een mening is. Het is een feit, en geen oordeel.",
+    "Koos je \"My school is in the city centre.\"? Dan denk je dat dit een mening is. Het is een plaats, en geen oordeel."
+   ],
+   "uh": "Welke zin is een mening?"
+  },
+  {
+   "v": "What should you do with your voice during a talk?",
+   "o": [
+    "whisper so that people listen closely",
+    "speak as fast as you can",
+    "read in the same flat voice",
+    "speak clearly and not too fast"
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 4,
+   "u": "Duidelijk en rustig. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"whisper so that people listen closely\"? Dan denk je dat fluisteren aandacht trekt. Het publiek verstaat je dan niet, en je talk mislukt.",
+    "Koos je \"speak as fast as you can\"? Dan denk je dat snel praten tijd bespaart. Het publiek kan je niet volgen, en je wordt onduidelijk.",
+    "Koos je \"read in the same flat voice\"? Dan denk je dat een vlakke stem prima is. Het publiek raakt verveeld, en je boodschap komt niet over.",
+    "Klopt: duidelijk en rustig spreken maakt je verstaanbaar."
+   ],
+   "uh": "Hoe spreek je?"
+  },
+  {
+   "v": "Which sentence is suitable for this audience?",
+   "o": [
+    "\"Honourable members, I hereby present a long lecture.\"",
+    "\"Hi everyone, today I will tell you about my sport.\"",
+    "\"Yo guys, listen up, bla bla.\"",
+    "\"Sports are things, I think.\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 0,
+   "u": "Eenvoudig en vriendelijk. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"Honourable members, I hereby present a long lecture.\"? Dan denk je dat deze stijl past. Het is veel te formeel, en klinkt vreemd voor klasgenoten.",
+    "Klopt: een vriendelijke, eenvoudige opening past bij klasgenoten.",
+    "Koos je \"Yo guys, listen up, bla bla.\"? Dan denk je dat deze stijl past. Het is te slordig, en geeft geen onderwerp.",
+    "Koos je \"Sports are things, I think.\"? Dan denk je dat deze zin past. Het is vaag, en noemt je onderwerp niet."
+   ],
+   "uh": "Welke zin past bij het publiek?",
+   "ctx": "You must give a short talk about your favourite sport to your classmates. They are fifteen years old and they know you well. Your teacher wants you to use simple words and a friendly style, so that everybody understands you."
+  },
+  {
+   "v": "Which sentence is a good introduction?",
+   "o": [
+    "\"Recycling, bottles, paper, and so on and so on.\"",
+    "\"That was my talk, thank you.\"",
+    "\"I forgot what I wanted to say today.\"",
+    "\"Today I will tell you why it matters.\""
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 1,
+   "u": "Onderwerp + doel. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"Recycling, bottles, paper, and so on and so on.\"? Dan denk je dat dit een inleiding is. Het is een rij woorden, en noemt geen doel.",
+    "Koos je \"That was my talk, thank you.\"? Dan denk je dat dit een inleiding is. Het is een slot, en past niet aan het begin.",
+    "Koos je \"I forgot what I wanted to say today.\"? Dan denk je dat dit een inleiding is. Het toont onzekerheid, en noemt geen onderwerp.",
+    "Klopt: je noemt onderwerp en doel in een zin."
+   ],
+   "uh": "Welke zin leidt in?",
+   "ctx": "You give a talk about recycling to your class. You want to start with a clear sentence that tells the audience what your talk is about and why you chose this topic, so everyone knows what to expect."
+  },
+  {
+   "v": "Which phrase moves to the second point?",
+   "o": [
+    "\"Goodbye, that was the reason.\"",
+    "\"Now the second reason.\"",
+    "\"Whatever, here is something.\"",
+    "\"The first reason again, please.\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 2,
+   "u": "Second reason = volgend punt. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"Goodbye, that was the reason.\"? Dan denk je dat dit past. Het is een afscheid, en kondigt niets aan.",
+    "Klopt: dit kondigt het tweede punt duidelijk aan.",
+    "Koos je \"Whatever, here is something.\"? Dan denk je dat dit past. Het is vaag, en geeft geen structuur.",
+    "Koos je \"The first reason again, please.\"? Dan denk je dat dit past. Je herhaalt het eerste punt, en gaat niet verder."
+   ],
+   "uh": "Hoe ga je door?",
+   "ctx": "In your talk about recycling you have already explained the first reason: recycling saves energy. Now you want to move on to the second reason, that it creates less waste, and you need a clear phrase."
+  },
+  {
+   "v": "Which sentence gives an example?",
+   "o": [
+    "\"In conclusion, my school has many bins.\"",
+    "\"However, my school is big.\"",
+    "\"For example, we sort paper at school.\"",
+    "\"In my opinion, school is very much fun.\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 1,
+   "u": "For example = voorbeeld. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"In conclusion, my school has many bins.\"? Dan denk je dat dit een voorbeeld is. Het is een afsluiting, en geen voorbeeld.",
+    "Koos je \"However, my school is big.\"? Dan denk je dat dit een voorbeeld is. Het is een tegenstelling, en geeft geen voorbeeld.",
+    "Klopt: for example leidt een concreet voorbeeld in.",
+    "Koos je \"In my opinion, school is very much fun.\"? Dan denk je dat dit een voorbeeld is. Het is een mening, en geen voorbeeld."
+   ],
+   "uh": "Welke zin geeft een voorbeeld?",
+   "ctx": "During your talk you want to make your argument about recycling stronger. You decide to add a short example from your own school, where students sort paper and plastic every day in different bins."
+  },
+  {
+   "v": "Which question keeps the audience involved?",
+   "o": [
+    "\"Who of you recycles at home?\"",
+    "\"Do I have to continue?\"",
+    "\"Is this talk boring for you?\"",
+    "\"What time does the lesson end?\""
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 4,
+   "u": "Vraag aan het publiek. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: een vraag aan het publiek houdt de aandacht vast.",
+    "Koos je \"Do I have to continue?\"? Dan denk je dat dit de aandacht vasthoudt. Het toont onzekerheid, en betrekt niemand.",
+    "Koos je \"Is this talk boring for you?\"? Dan denk je dat dit de aandacht vasthoudt. Het klinkt negatief, en nodigt niet uit.",
+    "Koos je \"What time does the lesson end?\"? Dan denk je dat dit de aandacht vasthoudt. Het gaat over iets anders, en haalt de aandacht weg van je onderwerp."
+   ],
+   "uh": "Welke vraag trekt aandacht?",
+   "ctx": "You notice that some of your classmates are looking out of the window while you talk about recycling. You want to keep their attention by involving them in your talk with a short question."
+  },
+  {
+   "v": "Which sentence is a good conclusion?",
+   "o": [
+    "\"To sum up, recycling helps.\"",
+    "\"By the way, I like paper a lot.\"",
+    "\"For example, plastic is a material for bags.\"",
+    "\"However, recycling is difficult for me.\""
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 2,
+   "u": "To sum up + kernboodschap. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: to sum up vat je boodschap samen in een slotzin.",
+    "Koos je \"By the way, I like paper a lot.\"? Dan denk je dat dit een conclusie is. Het is een zijpad, en vat niets samen.",
+    "Koos je \"For example, plastic is a material for bags.\"? Dan denk je dat dit een conclusie is. Het is een voorbeeld, en rondt niets af.",
+    "Koos je \"However, recycling is difficult for me.\"? Dan denk je dat dit een conclusie is. Het opent een tegenargument, en rondt niets af."
+   ],
+   "uh": "Welke zin sluit af?",
+   "ctx": "You are at the end of your talk about recycling and you want to sum up your main point in one clear sentence before you thank your audience, so they remember your message."
+  },
+  {
+   "v": "Which sentence is a good ending?",
+   "o": [
+    "\"That was it. Bye, see you soon.\"",
+    "\"I have nothing more to say, sorry.\"",
+    "\"Thank you. Any questions?\"",
+    "\"Do not ask me anything, please, now.\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 0,
+   "u": "Bedank + vragen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"That was it. Bye, see you soon.\"? Dan denk je dat dit een goed slot is. Het is kortaf, en nodigt niet uit.",
+    "Koos je \"I have nothing more to say, sorry.\"? Dan denk je dat dit een goed slot is. Het klinkt onzeker, en bedankt het publiek niet.",
+    "Klopt: je bedankt het publiek en nodigt uit tot vragen.",
+    "Koos je \"Do not ask me anything, please, now.\"? Dan denk je dat dit een goed slot is. Het sluit het publiek buiten, en is onbeleefd."
+   ],
+   "uh": "Hoe sluit je af?",
+   "ctx": "You have just finished your talk and the teacher looks at you. You want to close politely and invite the audience to ask you something about the talk, so there is a short conversation at the end."
+  },
+  {
+   "v": "What can you say?",
+   "o": [
+    "\"I give up, this is too hard for me.\"",
+    "\"Sorry, let me say that again.\"",
+    "\"Whatever, I will skip this part now.\"",
+    "\"I do not know what I am saying.\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 4,
+   "u": "Zeg het op een andere manier. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"I give up, this is too hard for me.\"? Dan denk je dat dit past. Je geeft op, en je verliest het publiek.",
+    "Klopt: je bent eerlijk en gaat door met een andere formulering.",
+    "Koos je \"Whatever, I will skip this part now.\"? Dan denk je dat dit past. Je slaat het over, en je boodschap blijft onvolledig.",
+    "Koos je \"I do not know what I am saying.\"? Dan denk je dat dit past. Het klinkt onzeker, en maakt het publiek onrustig."
+   ],
+   "uh": "Wat zeg je?",
+   "ctx": "In the middle of your talk you cannot remember an English word and you stop for a moment. The audience looks at you and waits. You want to continue without losing the attention of the people in the room."
+  },
+  {
+   "v": "Which phrase refers to the graph?",
+   "o": [
+    "\"As I do not know it, ...\"",
+    "\"By the way, I forgot, ...\"",
+    "\"In conclusion, the slide is ...\"",
+    "\"As you can see here, ...\""
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 3,
+   "u": "As you can see = verwijzing. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"As I do not know it, ...\"? Dan denk je dat dit verwijst naar de dia. Het zegt dat je het niet weet, en verwijst niet naar de grafiek.",
+    "Koos je \"By the way, I forgot, ...\"? Dan denk je dat dit verwijst naar de dia. Het is een uitweiding, en wijst niet op de grafiek.",
+    "Koos je \"In conclusion, the slide is ...\"? Dan denk je dat dit verwijst naar de dia. Het sluit af, en past niet in het midden.",
+    "Klopt: dit verwijst naar de dia met de grafiek."
+   ],
+   "uh": "Hoe verwijs je naar een dia?",
+   "ctx": "You show a slide with a graph about the number of people who recycle. You want to point to the graph and explain what the audience can see in it, so everyone understands your point."
+  },
+  {
+   "v": "What should you do?",
+   "o": [
+    "speak softer and look at your paper",
+    "speak louder and look up",
+    "speak faster and look at the floor",
+    "stop and leave the classroom"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 4,
+   "u": "Luider en oogcontact. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"speak softer and look at your paper\"? Dan denk je dat zachter spreken helpt. Dan verstaat niemand je, en je kijkt niet naar je publiek.",
+    "Klopt: je spreekt luider en kijkt naar het publiek.",
+    "Koos je \"speak faster and look at the floor\"? Dan denk je dat sneller praten helpt. Het maakt je nog onduidelijker, en je ziet je publiek niet.",
+    "Koos je \"stop and leave the classroom\"? Dan denk je dat weggaan helpt. Je lost het niet op, en je talk stopt."
+   ],
+   "uh": "Wat doe je?",
+   "ctx": "You are giving a talk in a large classroom and you notice that the people at the back look puzzled. They lean forward and one of them shakes his head when you ask if everyone can hear you."
+  },
+  {
+   "v": "Which sentence is the introduction of the talk about sleep?",
+   "o": [
+    "\"Today I am going to talk about sleep.\"",
+    "\"Secondly, sleep keeps you healthy, and fit.\"",
+    "\"To sum up, sleep is very important for all of us.\"",
+    "\"Thank you for listening to this talk.\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 1,
+   "u": "Inleiding = onderwerp. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: de spreker noemt zijn onderwerp meteen in de inleiding.",
+    "Koos je \"Secondly, sleep keeps you healthy, and fit.\"? Dan denk je dat dit de inleiding is. Het is het tweede argument, en komt na de inleiding.",
+    "Koos je \"To sum up, sleep is very important for all of us.\"? Dan denk je dat dit de inleiding is. Het is het slot, en komt als laatste.",
+    "Koos je \"Thank you for listening to this talk.\"? Dan denk je dat dit de inleiding is. Het is een bedankje, en staat aan het einde."
+   ],
+   "uh": "Welke zin leidt in?",
+   "ctx": "Good morning everyone. Today I am going to talk about sleep. Firstly, sleep helps you concentrate. For example, students who sleep eight hours get better grades. Secondly, sleep keeps you healthy. To sum up, sleep is very important for students. Thank you for listening."
+  },
+  {
+   "v": "Which words show the order of the arguments in the talk about sleep?",
+   "o": [
+    "\"Today\" and \"Thank you\"",
+    "\"For example\" and \"To sum up\"",
+    "\"Good morning\" and \"everyone\"",
+    "\"Firstly\" and \"Secondly\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 2,
+   "u": "Firstly, secondly. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"Today and Thank you\"? Dan denk je dat deze woorden de volgorde tonen. Ze markeren begin en einde, en niet de argumenten.",
+    "Koos je \"For example and To sum up\"? Dan denk je dat deze woorden de argumenten nummeren. Het zijn een voorbeeld en een slot, en niet de volgorde.",
+    "Koos je \"Good morning and everyone\"? Dan denk je dat deze woorden de volgorde tonen. Het is een groet, en geen opsomming.",
+    "Klopt: deze woorden nummeren de argumenten in de juiste volgorde."
+   ],
+   "uh": "Welke woorden nummeren?",
+   "ctx": "Good morning everyone. Today I am going to talk about sleep. Firstly, sleep helps you concentrate. For example, students who sleep eight hours get better grades. Secondly, sleep keeps you healthy. To sum up, sleep is very important for students. Thank you for listening."
+  },
+  {
+   "v": "Which part of the talk is an example?",
+   "o": [
+    "\"sleep helps you to concentrate on your work\"",
+    "\"sleep keeps you healthy and fit for the day\"",
+    "\"students who sleep eight hours get better grades\"",
+    "\"sleep is very important for all students in school\""
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 1,
+   "u": "For example + geval. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"sleep helps you to concentrate on your work\"? Dan denk je dat dit een voorbeeld is. Het is het argument zelf, en geen geval.",
+    "Koos je \"sleep keeps you healthy and fit for the day\"? Dan denk je dat dit een voorbeeld is. Het is het tweede argument, en geen concreet geval.",
+    "Klopt: dit is een concreet geval bij het argument.",
+    "Koos je \"sleep is very important for all students in school\"? Dan denk je dat dit een voorbeeld is. Het is de conclusie, en geen voorbeeld."
+   ],
+   "uh": "Welk deel is het voorbeeld?",
+   "ctx": "Good morning everyone. Today I am going to talk about sleep. Firstly, sleep helps you concentrate. For example, students who sleep eight hours get better grades. Secondly, sleep keeps you healthy. To sum up, sleep is very important for students. Thank you for listening."
+  },
+  {
+   "v": "Which part is the conclusion of the talk about sleep?",
+   "o": [
+    "\"Firstly, sleep helps you concentrate on all subjects.\"",
+    "\"Good morning everyone, and thank you all so much.\"",
+    "\"To sum up, sleep is very important for students.\"",
+    "\"Thank you for listening to this talk.\""
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 2,
+   "u": "To sum up = conclusie. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"Firstly, sleep helps you concentrate on all...\"? Dan denk je dat dit de conclusie is. Het is het eerste argument, en komt vroeg in de talk.",
+    "Koos je \"Good morning everyone, and thank you all so much.\"? Dan denk je dat dit de conclusie is. Het is een groet, en komt aan het begin.",
+    "Klopt: to sum up vat de boodschap samen en sluit de talk af.",
+    "Koos je \"Thank you for listening to this talk.\"? Dan denk je dat dit de conclusie is. Het is een bedankje, en vat de boodschap niet samen."
+   ],
+   "uh": "Welk deel sluit af?",
+   "ctx": "Good morning everyone. Today I am going to talk about sleep. Firstly, sleep helps you concentrate. For example, students who sleep eight hours get better grades. Secondly, sleep keeps you healthy. To sum up, sleep is very important for students. Thank you for listening."
+  },
+  {
+   "v": "What is the speaker's opinion in the talk about electric bikes?",
+   "o": [
+    "electric bikes are very cheap to buy for all",
+    "electric bikes are slower than normal bikes",
+    "electric bikes are only useful in big cities",
+    "a good choice for long distances"
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 3,
+   "u": "In my opinion = standpunt. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"electric bikes are very cheap to buy for all\"? Dan denk je dat hij dit vindt. Hij zegt dat ze duur zijn om te kopen, dus dit klopt niet.",
+    "Koos je \"electric bikes are slower than normal bikes\"? Dan denk je dat hij dit zegt. Hij noemt ze snel, dus het is het omgekeerde.",
+    "Koos je \"electric bikes are only useful in big cities\"? Dan denk je dat hij dit zegt. Hij noemt lange afstanden, en niet alleen steden.",
+    "Klopt: in my opinion leidt zijn standpunt in."
+   ],
+   "uh": "Wat vindt hij?",
+   "ctx": "Hello everyone. My talk is about electric bikes. They are fast and cheap to use, but they are also expensive to buy. In my opinion, electric bikes are a good choice for long distances. That is why I would like to have one myself. Thank you."
+  },
+  {
+   "v": "Which word shows a contrast in the talk about electric bikes?",
+   "o": [
+    "\"but\"",
+    "\"and\"",
+    "\"so\"",
+    "\"that\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 2,
+   "u": "But = contrast. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: but zet cheap to use tegenover expensive to buy.",
+    "Koos je \"and\"? Dan denk je dat and twee dingen tegenover elkaar zet. Het voegt alleen iets toe, en maakt geen tegenstelling.",
+    "Koos je \"so\"? Dan denk je dat so een tegenstelling aangeeft. Het koppelt een gevolg, en een gevolg is geen contrast.",
+    "Koos je \"that\"? Dan denk je dat that een tegenstelling maakt. Het is alleen een verwijswoord, en dus geen signaalwoord."
+   ],
+   "uh": "Welk woord toont contrast?",
+   "ctx": "Hello everyone. My talk is about electric bikes. They are fast and cheap to use, but they are also expensive to buy. In my opinion, electric bikes are a good choice for long distances. That is why I would like to have one myself. Thank you."
+  },
+  {
+   "v": "What could make the talk about electric bikes stronger?",
+   "o": [
+    "a longer introduction with a joke",
+    "an example and a figure",
+    "no conclusion at all",
+    "more fast words and less structure"
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 0,
+   "u": "Voorbeeld en cijfers. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"a longer introduction with a joke\"? Dan denk je dat een grap het argument sterker maakt. Het is vermaak, en geeft geen bewijs.",
+    "Klopt: een voorbeeld en cijfers maken het argument sterker.",
+    "Koos je \"no conclusion at all\"? Dan denk je dat het zonder conclusie sterker is. Een slot vat je mening samen, dus het is zwakker.",
+    "Koos je \"more fast words and less structure\"? Dan denk je dat meer snelle woorden helpen. Het publiek raakt het spoor bijster, en structuur ontbreekt."
+   ],
+   "uh": "Wat maakt de talk sterker?",
+   "ctx": "Hello everyone. My talk is about electric bikes. They are fast and cheap to use, but they are also expensive to buy. In my opinion, electric bikes are a good choice for long distances. That is why I would like to have one myself. Thank you."
+  },
+  {
+   "v": "Why is a card with key words better than full sentences?",
+   "o": [
+    "you can read every word aloud without looking up",
+    "the card is easier to hide from the teacher",
+    "you do not have to prepare the talk",
+    "you can speak freely and look at the audience"
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 4,
+   "u": "Trefwoorden = vrij spreken. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"you can read every word aloud without looking up\"? Dan denk je dat voorlezen beter is. Het klinkt vlak, en je kijkt het publiek niet aan.",
+    "Koos je \"the card is easier to hide from the teacher\"? Dan denk je dat verstoppen het doel is. Het doel is spreken, en niet de kaart verbergen.",
+    "Koos je \"you do not have to prepare the talk\"? Dan denk je dat trefwoorden voorbereiding overbodig maken. Je moet nog steeds oefenen, en weet wat je gaat zeggen.",
+    "Klopt: met trefwoorden spreek je vrijuit en kijk je het publiek aan."
+   ],
+   "uh": "Waarom trefwoorden?",
+   "ctx": "You prepare a talk and write your notes. A friend says that you should write only key words on a card and not whole sentences, because it makes your talk clearer and your voice more natural."
+  },
+  {
+   "v": "Which advice about the ending is best?",
+   "o": [
+    "sum up your main point",
+    "add a new argument at the very end of it",
+    "stop suddenly without saying anything",
+    "repeat your whole talk from the very beginning"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 3,
+   "u": "Eén duidelijke slotzin. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: een korte samenvatting blijft het best hangen.",
+    "Koos je \"add a new argument at the very end of it\"? Dan denk je dat een nieuw argument aan het slot helpt. Het verwart het publiek, en past niet bij een afsluiting.",
+    "Koos je \"stop suddenly without saying anything\"? Dan denk je dat plotseling stoppen werkt. Het klinkt onaf, en geeft geen boodschap mee.",
+    "Koos je \"repeat your whole talk from the very beginning\"? Dan denk je dat alles herhalen werkt. Het is te lang, en een korte samenvatting is genoeg."
+   ],
+   "uh": "Wat is het beste slot?",
+   "ctx": "You want your audience to remember your message after your talk. Your teacher gives you advice about the end of the presentation and says that the last words are the ones that people remember best."
+  }
+ ],
+ "oe": [
+  {
+   "bron": "Examenstijl",
+   "ctx": "You must give a two-minute talk about your favourite hobby to your English class. The teacher says that you must use a clear opening, two points with examples and a short ending, and that you should keep your audience interested.",
+   "v": "Write one opening sentence and one sentence to introduce your second point.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Een duidelijke opening zoals \"Today I am going to talk about ...\" (1p). Een overgang zoals \"Secondly, ...\" of \"Now let us look at the second reason\" (2p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "You give a talk about healthy food to a group of younger students who are about twelve years old. You want to use simple words and a friendly tone, and you want to show a slide with a picture of a healthy lunch.",
+   "v": "Write one sentence to introduce your topic and one sentence to refer to the slide.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Een eenvoudige inleiding zoals \"Today I will tell you about healthy food\" (1p). Een verwijzing zoals \"As you can see on this slide\" (2p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "In your talk you want to convince the class that students should have more sports lessons. You have two arguments: sports make you fit, and sports are fun with friends. You also want to give an example.",
+   "v": "Write one opinion sentence and one example sentence for your talk.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Een standpunt zoals \"I believe that students need more sport\" (1p). Een voorbeeld met \"For example\" (2p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "You have finished your talk about recycling in school. You want to finish well, so that the audience remembers your main message, and you want to invite the audience to ask questions about it.",
+   "v": "Write a closing sentence with a signal word and a polite invitation to ask questions.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Een afsluitend signaalwoord zoals \"To sum up\" (1p). Een samenvatting van de kern (1p). Een uitnodiging zoals \"Are there any questions?\" (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "During your talk you notice that your classmates at the back cannot hear you, and one of them is looking at his phone. You want to improve your talk and keep their attention for the rest of the time.",
+   "v": "Write two things you can do to improve your talk.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Luider en duidelijker spreken (1p). Een vraag aan het publiek of oogcontact (2p)."
+  }
+ ]
+}

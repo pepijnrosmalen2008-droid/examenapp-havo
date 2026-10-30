@@ -2860,6 +2860,27 @@ var VAKKEN = [
       "nOe": 5,
       "nBeg": 12,
       "hasSam": true
+     },
+     {
+      "id": "D7",
+      "lo": "en.D.7",
+      "gs": 2,
+      "naam": "Een korte presentatie opbouwen voor doel en publiek",
+      "beschrijving": "Je leert in het Engels een korte presentatie op te bouwen met inleiding, kern en slot en je taal aan te passen aan je publiek.",
+      "ceStatus": "SE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Doel en publiek",
+       "Opbouw van een presentatie",
+       "Signaalwoorden en overgangen",
+       "Standpunt en voorbeelden",
+       "Duidelijk spreken"
+      ],
+      "nSv": 26,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
      }
     ]
    },

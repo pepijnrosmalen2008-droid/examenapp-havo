@@ -5,7 +5,7 @@
 Volledige beschrijving (functies, inhoud per niveau, prijs, wat Slagio niet is): https://slagio.nl/llms-full.txt
 
 ## In het kort
-- 12 vakken havo, 16 vakken vwo, 12 vakken vmbo; 24.051 oefenvragen en 4.346 begrippen.
+- 12 vakken havo, 16 vakken vwo, 12 vakken vmbo; 24.077 oefenvragen en 4.346 begrippen.
 - Adaptief oefenen: na een fout een vraag over hetzelfde onderwerp, een niveau makkelijker; uitleg bij elk fout antwoord.
 - Foutenboek en herhalen met gespreide herhaling, beheersing per leerdoel, studieplan tot het examen.
 - Examens met klok, proefexamens in examenstijl met modelantwoord en puntenverdeling, archief met officiële oude examens.
@@ -108,6 +108,7 @@ Volledige beschrijving (functies, inhoud per niveau, prijs, wat Slagio niet is):
 - [Zaken en personen beschrijven (Engels HAVO)](https://slagio.nl/leren/havo/engels/zaken-en-personen-beschrijven.html): Je leert in het Engels personen, voorwerpen en plaatsen te beschrijven, met de juiste woordvolgorde en vergelijkingen.
 - [Standpunten en argumenten verwoorden (Engels HAVO)](https://slagio.nl/leren/havo/engels/standpunten-en-argumenten-verwoorden.html): Je leert in het Engels een mening te geven, die met redenen en voorbeelden te onderbouwen, het oneens te zijn en een betoog af te ronden.
 - [Strategieën om een gesprek gaande te houden (Engels HAVO)](https://slagio.nl/leren/havo/engels/strategieen-om-een-gesprek-gaande-te-houden.html): Je leert in het Engels tijd te winnen, een onbekend woord te omschrijven, om herhaling te vragen en een gesprek met vragen en reacties gaande te houden.
+- [Een korte presentatie opbouwen voor doel en publiek (Engels HAVO)](https://slagio.nl/leren/havo/engels/een-korte-presentatie-opbouwen-voor-doel-en-publiek.html): Je leert in het Engels een korte presentatie op te bouwen met inleiding, kern en slot en je taal aan te passen aan je publiek.
 - [Tekstsoort en schrijfdoel bepalen (Nederlands VWO)](https://slagio.nl/leren/vwo/nederlands/tekstsoort-en-schrijfdoel-bepalen.html): Je bepaalt of een tekst of tekstgedeelte uiteenzettend, beschouwend of betogend is, wat de schrijver ermee wil bereiken en wat het belangrijkste doel is als…
 - [Onderwerp en hoofdgedachte aangeven (Nederlands VWO)](https://slagio.nl/leren/vwo/nederlands/onderwerp-en-hoofdgedachte-aangeven.html): Je geeft het onderwerp en de hoofdgedachte van een tekst of tekstgedeelte aan: letterlijk als de kernzin er staat, en in eigen woorden als de hoofdgedachte…
 - [Relaties tussen tekstdelen benoemen (Nederlands VWO)](https://slagio.nl/leren/vwo/nederlands/relaties-tussen-tekstdelen-benoemen.html): Je benoemt inhoudelijke en functionele relaties tussen tekstdelen: verwijzingen, oorzaak en gevolg, doel en middel, standpunt met argumenten en subargumenten,…
