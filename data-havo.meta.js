@@ -2755,6 +2755,27 @@ var VAKKEN = [
       "nOe": 5,
       "nBeg": 12,
       "hasSam": true
+     },
+     {
+      "id": "D2",
+      "lo": "en.D.2",
+      "gs": 2,
+      "naam": "Informatie vragen en verstrekken",
+      "beschrijving": "Je leert in het Engels beleefd informatie te vragen, de weg te wijzen, tijden en prijzen te noemen en om herhaling te vragen.",
+      "ceStatus": "SE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Vragen stellen met vraagwoorden",
+       "Beleefd informatie vragen",
+       "Informatie geven",
+       "Om herhaling vragen",
+       "Gegevens doorgeven"
+      ],
+      "nSv": 26,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
      }
     ]
    },

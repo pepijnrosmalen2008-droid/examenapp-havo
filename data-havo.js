@@ -121348,6 +121348,667 @@ var VAKKEN = [
         "u": "Een bedankje (1p). Een afscheid zoals \"See you on Friday, goodbye!\" (1p). Een vriendelijke toon (1p)."
        }
       ]
+     },
+     {
+      "id": "D2",
+      "lo": "en.D.2",
+      "gs": 2,
+      "naam": "Informatie vragen en verstrekken",
+      "beschrijving": "Je leert in het Engels beleefd informatie te vragen, de weg te wijzen, tijden en prijzen te noemen en om herhaling te vragen.",
+      "ceStatus": "SE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Vragen stellen met vraagwoorden",
+       "Beleefd informatie vragen",
+       "Informatie geven",
+       "Om herhaling vragen",
+       "Gegevens doorgeven"
+      ],
+      "sam": "Je vraagt informatie met vraagwoorden: where voor een plaats, when of what time voor een tijd en how much voor een prijs. Een gewone vraag heeft het hulpwerkwoord do of does: What time does the film start? Beleefd vragen doe je met excuse me en could you tell me. Bij een indirecte vraag blijft het onderwerp voor het werkwoord staan. Geef antwoord met de richting, de tijd of de prijs. Vraag om herhaling met sorry, could you repeat that en geef getallen cijfer voor cijfer door.",
+      "begrippen": [
+       {
+        "t": "Vraagwoord",
+        "d": "Een woord waarmee een vraag begint, zoals where of how much."
+       },
+       {
+        "t": "Hulpwerkwoord",
+        "d": "Een werkwoord als do of does in een vraag."
+       },
+       {
+        "t": "Indirecte vraag",
+        "d": "Een beleefde vraag zoals Could you tell me where the bank is?"
+       },
+       {
+        "t": "Wegwijzing",
+        "d": "Uitleg hoe iemand ergens komt."
+       },
+       {
+        "t": "Richting",
+        "d": "Left, right of straight on."
+       },
+       {
+        "t": "Prijs",
+        "d": "Wat iets kost."
+       },
+       {
+        "t": "Openingstijd",
+        "d": "Wanneer een plaats open is."
+       },
+       {
+        "t": "Herhaling",
+        "d": "Iets nog een keer laten zeggen."
+       },
+       {
+        "t": "Spellen",
+        "d": "Een naam letter voor letter zeggen."
+       },
+       {
+        "t": "Telefoonnummer",
+        "d": "Een rij cijfers die je apart zegt."
+       },
+       {
+        "t": "Beleefd",
+        "d": "Vriendelijk met excuse me en please."
+       },
+       {
+        "t": "Verduidelijking",
+        "d": "Vragen wat iemand precies bedoelt."
+       }
+      ],
+      "sv": [
+       {
+        "v": "Which question asks for a place?",
+        "o": [
+         "\"When is the station, please?\"",
+         "\"Where is the station?\"",
+         "\"Who is the station, please?\"",
+         "\"Why is the station, please?\""
+        ],
+        "c": 1,
+        "d": 1,
+        "s": 0,
+        "u": "Where = plaats. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"When is the station, please?\"? Dan denk je dat de vraag over wanneer gaat. When vraagt naar een tijd, en dus niet naar een plek.",
+         "Klopt: where vraagt naar een plaats, zoals het station waar je naartoe wilt.",
+         "Koos je \"Who is the station, please?\"? Dan denk je dat een station een persoon is. Who hoort bij mensen, en een station is geen persoon.",
+         "Koos je \"Why is the station, please?\"? Dan denk je dat je een reden wilt weten. Why zoekt een oorzaak, en geeft dus geen plek."
+        ],
+        "uh": "Welk vraagwoord past?"
+       },
+       {
+        "v": "Which question word asks for a price?",
+        "o": [
+         "\"How many\" is used for prices",
+         "\"How long\" is used for prices",
+         "\"How often\" is used for prices",
+         "\"How much\""
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 0,
+        "u": "How much = prijs. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"How many is used for prices\"? Dan denk je dat een bedrag een aantal is. Met how many tel je dingen zoals tickets, maar je betaalt geen aantal.",
+         "Koos je \"How long is used for prices\"? Dan denk je dat een prijs een tijdsduur heeft. Bij how long hoort een antwoord als twee uur, en geen bedrag.",
+         "Koos je \"How often is used for prices\"? Dan denk je dat het om herhaling gaat. Daarvoor gebruik je how often met antwoorden als twee keer per week, en niet met prijzen.",
+         "Klopt: how much vraagt naar een bedrag of een prijs die je moet betalen."
+        ],
+        "uh": "Welk vraagwoord?"
+       },
+       {
+        "v": "Which is the most polite way to ask for the time?",
+        "o": [
+         "\"Excuse me, what is the time, please?\"",
+         "\"What time? I need to know it now.\"",
+         "\"Tell me the time now, I am in a hurry.\"",
+         "\"Time? Quick, please, I am late for it.\""
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 1,
+        "u": "Excuse me, could you ... please.",
+        "uo": [
+         "Klopt: excuse me, could you en please maken de vraag beleefd.",
+         "Koos je \"What time? I need to know it now.\"? Dan denk je dat twee woorden genoeg zijn. Het is kortaf, en klinkt onbeleefd.",
+         "Koos je \"Tell me the time now, I am in a hurry.\"? Dan denk je dat een bevel past. Het klinkt onbeleefd, en het mist please.",
+         "Koos je \"Time? Quick, please, I am late for it.\"? Dan denk je dat time met please beleefd is. Het blijft een losse opmerking, en het is geen volledige vraag."
+        ],
+        "uh": "Welke vraag is het beleefdst?"
+       },
+       {
+        "v": "You hear: \"Turn left at the traffic lights.\" What do you do?",
+        "o": [
+         "go to the right at the lights",
+         "go straight on past the lights",
+         "go to the left",
+         "stop at the lights and wait"
+        ],
+        "c": 2,
+        "d": 1,
+        "s": 2,
+        "u": "Turn left = linksaf. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"go to the right at the lights\"? Dan denk je dat left rechts betekent. Left is links, en right is rechts.",
+         "Koos je \"go straight on past the lights\"? Dan denk je dat turn gaat voor rechtdoor. Turn betekent afslaan, en straight on is rechtdoor.",
+         "Klopt: turn left betekent linksaf slaan bij het stoplicht.",
+         "Koos je \"stop at the lights and wait\"? Dan denk je dat turn stoppen betekent. Turn betekent afslaan, en je stopt niet."
+        ],
+        "uh": "Welke kant op?"
+       },
+       {
+        "v": "Which phrase asks someone to repeat what they said?",
+        "o": [
+         "\"Thank you, that is all I wanted to know.\"",
+         "\"I do not want to know it any more.\"",
+         "\"Sorry, could you repeat that?\"",
+         "\"See you tomorrow, bye, have a nice evening.\""
+        ],
+        "c": 2,
+        "d": 1,
+        "s": 3,
+        "u": "Could you repeat that? Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"Thank you, that is all I wanted to know.\"? Dan denk je dat dit om herhaling vraagt. Het is een afsluiting, en je vraagt niets.",
+         "Koos je \"I do not want to know it any more.\"? Dan denk je dat dit om herhaling vraagt. Het weigert informatie, en het is onbeleefd.",
+         "Klopt: dit vraagt beleefd om herhaling met sorry en could you.",
+         "Koos je \"See you tomorrow, bye, have a nice evening.\"? Dan denk je dat dit om herhaling vraagt. Het is een afscheid, en je wilt het gesprek niet beëindigen."
+        ],
+        "uh": "Hoe vraag je herhaling?"
+       },
+       {
+        "v": "How do you say the number 0 in a British phone number?",
+        "o": [
+         "\"oh\" or \"zero\"",
+         "\"nothing\" because zero has no value",
+         "\"nil\" as in football scores",
+         "\"null\" as in Dutch"
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 4,
+        "u": "0 = oh of zero. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: in een telefoonnummer zeg je oh of zero.",
+         "Koos je \"nothing because zero has no value\"? Dan denk je dat je nothing zegt. Dat gebruik je niet bij cijfers, en het is niet gebruikelijk.",
+         "Koos je \"nil as in football scores\"? Dan denk je dat je nil zegt. Dat hoort bij een voetbaluitslag, en niet bij een telefoonnummer.",
+         "Koos je \"null as in Dutch\"? Dan denk je dat je null zegt. Dat is Nederlands of Duits, en niet de Engelse uitspraak."
+        ],
+        "uh": "Hoe zeg je 0?"
+       },
+       {
+        "v": "Which phrase can you use to ask for information in a shop?",
+        "o": [
+         "\"Give me a bigger one of these, please quick.\"",
+         "\"A bigger? I want it, this one is too small.\"",
+         "\"You have it or you have it not at all?\"",
+         "\"Excuse me, do you have this in a larger one?\""
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 1,
+        "u": "Excuse me + volledige vraag. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"Give me a bigger one of these, please quick.\"? Dan denk je dat dit beleefd is. Het is een bevel, en het mist please.",
+         "Koos je \"A bigger? I want it, this one is too small.\"? Dan denk je dat dit een duidelijke vraag is. Het is geen volledige zin, en klinkt onbeleefd.",
+         "Koos je \"You have it or you have it not at all?\"? Dan denk je dat dit een goede vraag is. Het is Nederlands van structuur, en klinkt kortaf.",
+         "Klopt: excuse me en een duidelijke vraag zijn beleefd."
+        ],
+        "uh": "Hoe vraag je het in de winkel?"
+       },
+       {
+        "v": "Which question is correct?",
+        "o": [
+         "\"How much costs a ticket?\"",
+         "\"How much does a ticket cost?\"",
+         "\"How many costs a ticket?\"",
+         "\"What cost the ticket?\""
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 1,
+        "u": "How much does ... cost? Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"How much costs a ticket?\"? Dan denk je dat het werkwoord direct achter how much staat. In het Engels gebruik je does, en cost krijgt dan geen s.",
+         "Klopt: bij how much hoort does en het werkwoord cost zonder s.",
+         "Koos je \"How many costs a ticket?\"? Dan denk je dat how many naar een prijs vraagt. Voor een prijs gebruik je how much, en does ontbreekt.",
+         "Koos je \"What cost the ticket?\"? Dan denk je dat what cost een goede vraag is. De vraag mist hulpwerkwoord does, en is niet correct."
+        ],
+        "uh": "Welke vraag klopt?",
+        "ctx": "You are in a tourist office in London. You want to know how much a ticket for the museum costs. The woman behind the desk is friendly, but she is very busy, so you want to ask a clear question."
+       },
+       {
+        "v": "Which question asks the way politely?",
+        "o": [
+         "\"Where is the way station, tell me now?\"",
+         "\"How do I come to the station from here?\"",
+         "\"Station? Where? Quick, I am in a hurry!\"",
+         "\"Excuse me, how do I get to the station?\""
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 1,
+        "u": "Excuse me, could you tell me the way?",
+        "uo": [
+         "Koos je \"Where is the way station, tell me now?\"? Dan denk je dat de woorden in deze volgorde kloppen. De zin is geen goede Engelse vraag, en klinkt vreemd.",
+         "Koos je \"How do I come to the station from here?\"? Dan denk je dat come hier past. Je zegt get to the station, en come is een Nederlandse vertaling.",
+         "Koos je \"Station? Where? Quick, I am in a hurry!\"? Dan denk je dat losse woorden voldoende zijn. Het is onbeleefd, en je gebruikt geen zin.",
+         "Klopt: dit is een beleefde vraag met excuse me en could you."
+        ],
+        "uh": "Hoe vraag je de weg?",
+        "ctx": "You are lost in a city in England. You have a map, but you cannot find the street. A woman walks by and you want to ask her politely how you can get to the railway station."
+       },
+       {
+        "v": "Which answer gives correct directions?",
+        "o": [
+         "\"Go left and take the second street on the right.\"",
+         "\"Go straight on, then second right.\"",
+         "\"Go straight on and take the first street on the left.\"",
+         "\"Go back and take the second street on the left.\""
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 2,
+        "u": "Rechtdoor, tweede rechts. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"Go left and take the second street on the right.\"? Dan denk je dat je eerst linksaf moet. Dat staat niet in de beschrijving, en dus ga je eerst rechtdoor.",
+         "Klopt: je noemt de richting en het aantal straten.",
+         "Koos je \"Go straight on and take the first street on the...\"? Dan denk je dat de eerste straat links is. Het is de tweede straat rechts, dus je wijst de verkeerde kant.",
+         "Koos je \"Go back and take the second street on the left.\"? Dan denk je dat je terug moet. Je loopt rechtdoor, en de straat is rechts."
+        ],
+        "uh": "Welke aanwijzing klopt?",
+        "ctx": "A stranger asks you the way to the library. You know the town well. The library is in Park Street, which is the second street on the right after the church. You want to give clear directions."
+       },
+       {
+        "v": "Which answer is correct?",
+        "o": [
+         "\"It is about ten minutes with feet.\"",
+         "\"It is ten minutes far.\"",
+         "\"It is about ten minutes on foot.\"",
+         "\"It lasts ten minutes to walk.\""
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 2,
+        "u": "On foot = te voet. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"It is about ten minutes with feet.\"? Dan denk je dat with feet te voet is. De vaste uitdrukking is on foot, en with feet klinkt fout.",
+         "Koos je \"It is ten minutes far.\"? Dan denk je dat far met minutes past. Je zegt how far voor afstand, en minutes ga je met it takes.",
+         "Klopt: on foot betekent te voet, dus je loopt er heen.",
+         "Koos je \"It lasts ten minutes to walk.\"? Dan denk je dat lasts hier past. Je zegt it takes of it is, en lasts is een vertaling uit het Nederlands."
+        ],
+        "uh": "Hoe zeg je het?",
+        "ctx": "A tourist asks you how far it is to the beach. You live near the sea and you know that it takes about ten minutes to walk there from the town centre. You want to be clear and friendly."
+       },
+       {
+        "v": "Which sentence gives the information correctly?",
+        "o": [
+         "\"The train to Leeds leaves from platform 4.\"",
+         "\"The train to Leeds leaves at 4 o'clock.\"",
+         "\"The train to Leeds arrives on platform 4 at 14.15.\"",
+         "\"The platform is Leeds and the train is number 4.\""
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 2,
+        "u": "Platform 4. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: de beambte noemt perron 4 als vertrekplaats van de trein.",
+         "Koos je \"The train to Leeds leaves at 4 o'clock.\"? Dan denk je dat het getal 4 de tijd is. Het is het perron, en de tijd is 14.15.",
+         "Koos je \"The train to Leeds arrives on platform 4 at 14.15.\"? Dan denk je dat de trein aankomt. De vraag gaat over vertrek, dus arrives past niet.",
+         "Koos je \"The platform is Leeds and the train is number 4.\"? Dan denk je dat de woorden verwisseld zijn. Leeds is de bestemming, en 4 is het perron."
+        ],
+        "uh": "Welk perron?",
+        "ctx": "At a railway station, a man asks the clerk: \"Excuse me, which platform does the train to Leeds leave from?\" The clerk looks at the screen. The train leaves at 14.15 from platform 4."
+       },
+       {
+        "v": "Which question is correct?",
+        "o": [
+         "\"What time does the film start?\"",
+         "\"What time starts the film?\"",
+         "\"What time the film starts?\"",
+         "\"When does the film starting?\""
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 1,
+        "u": "What time does ... start? Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: after what time volgt does en dan het onderwerp.",
+         "Koos je \"What time starts the film?\"? Dan denk je dat het werkwoord direct na what time volgt. Je hebt does nodig, en dan het onderwerp.",
+         "Koos je \"What time the film starts?\"? Dan denk je dat de woordvolgorde van een mededeling past. In een vraag volgt does, en de zin klopt niet.",
+         "Koos je \"When does the film starting?\"? Dan denk je dat starting na does past. Na does volgt de hele werkwoordsvorm start, dus starting is fout."
+        ],
+        "uh": "Welke vraag klopt?",
+        "ctx": "You phone a cinema to find out when the film about the dog starts tonight. A man answers the phone and you want to ask him the question in the correct English."
+       },
+       {
+        "v": "Which question is correct?",
+        "o": [
+         "\"Is open the museum on Sundays?\"",
+         "\"Open the museum on Sundays?\"",
+         "\"Is the museum open on Sundays?\"",
+         "\"Do the museum open on Sundays?\""
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 1,
+        "u": "Is + onderwerp + open? Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"Is open the museum on Sundays?\"? Dan denk je dat open na is komt. Het onderwerp volgt na is, en open komt daarna.",
+         "Koos je \"Open the museum on Sundays?\"? Dan denk je dat het werkwoord open als vraag past. Dat is een bevel, en geen vraag.",
+         "Klopt: het werkwoord is komt vóór het onderwerp in een vraag.",
+         "Koos je \"Do the museum open on Sundays?\"? Dan denk je dat do bij museum past. Museum is enkelvoud, dus does en open zonder s."
+        ],
+        "uh": "Welke vraag klopt?",
+        "ctx": "You are on holiday in York and you want to visit a museum on Sunday. You are not sure whether it is open on Sundays, so you ask the woman at the information desk."
+       },
+       {
+        "v": "Which answer gives the information correctly?",
+        "o": [
+         "\"Breakfast is served between ten and seven.\"",
+         "\"Breakfast is served from seven until ten.\"",
+         "\"Breakfast is served at seven only.\"",
+         "\"Breakfast is served on the second floor.\""
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 2,
+        "u": "Van zeven tot tien. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"Breakfast is served between ten and seven.\"? Dan denk je dat de tijden omgedraaid zijn. Het begint om zeven, en eindigt om tien.",
+         "Klopt: dit noemt de begintijd en de eindtijd van het ontbijt.",
+         "Koos je \"Breakfast is served at seven only.\"? Dan denk je dat er maar één tijd is. Het ontbijt loopt tot tien, dus het is een periode.",
+         "Koos je \"Breakfast is served on the second floor.\"? Dan denk je dat het op de tweede verdieping is. Het is op de eerste verdieping, en de vraag was naar de tijd."
+        ],
+        "uh": "Wanneer is het ontbijt?",
+        "ctx": "A guest at the Sunrise Hotel asks the receptionist: \"When can I have breakfast?\" The restaurant is on the first floor. Breakfast is served every day from seven until ten in the morning."
+       },
+       {
+        "v": "Which question is polite?",
+        "o": [
+         "\"Have you this book in English, please now?\"",
+         "\"You have this book? In English or not?\"",
+         "\"Give me the English book from the shelf.\"",
+         "\"Excuse me, do you have this in English?\""
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 1,
+        "u": "Excuse me, do you have ...? Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"Have you this book in English, please now?\"? Dan denk je dat have you hier past. Dat is erg ouderwets, en je gebruikt liever do you have.",
+         "Koos je \"You have this book? In English or not?\"? Dan denk je dat losse woorden voldoen. Het is geen volledige zin, en klinkt onbeleefd.",
+         "Koos je \"Give me the English book from the shelf.\"? Dan denk je dat een bevel past. Het is onbeleefd, en mist excuse me.",
+         "Klopt: excuse me en do you have zijn beleefd."
+        ],
+        "uh": "Hoe vraag je het?",
+        "ctx": "You are in a bookshop in Manchester and you want to know if the shop has a book in English. You have the title written on a piece of paper. A shop assistant stands near the desk."
+       },
+       {
+        "v": "What do you say?",
+        "o": [
+         "\"I do not care which platform it is.\"",
+         "\"Sorry, which platform?\"",
+         "\"Where did you say platform is?\"",
+         "\"Thank you for the platform, goodbye.\""
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 3,
+        "u": "Sorry, which platform? Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"I do not care which platform it is.\"? Dan denk je dat dit past. Het klinkt onbeleefd, en je wilt het juist weten.",
+         "Klopt: je vraagt beleefd om herhaling van het perronnummer.",
+         "Koos je \"Where did you say platform is?\"? Dan denk je dat deze zin klopt. De woordvolgorde is fout, en het is geen beleefde vraag.",
+         "Koos je \"Thank you for the platform, goodbye.\"? Dan denk je dat dit past. Je bedankt hem voor niets, en je vraagt niets."
+        ],
+        "uh": "Wat zeg je?",
+        "ctx": "You are on a platform and you hear an announcement, but a train passes and you cannot hear the platform number. A man next to you also heard it. You want to ask him politely."
+       },
+       {
+        "v": "Which complete answer is the most helpful?",
+        "o": [
+         "\"Go straight on, take the second left, five minutes.\"",
+         "\"Go straight on and then you see it right away.\"",
+         "\"It is far away, I do not know where it is.\"",
+         "\"Take the second right and it is on the left side.\""
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 0,
+        "u": "Richting, straat, kant, tijd. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: je noemt de richting, de straat, de kant en de tijd.",
+         "Koos je \"Go straight on and then you see it right away.\"? Dan denk je dat dit genoeg is. Het is te vaag, want de afslag en de kant ontbreken.",
+         "Koos je \"It is far away, I do not know where it is.\"? Dan denk je dat dit helpt. Je kent de weg wel, en dit antwoord is niet nuttig.",
+         "Koos je \"Take the second right and it is on the left side.\"? Dan denk je dat de kanten kloppen. Het is de tweede links, en het kasteel rechts."
+        ],
+        "uh": "Welk antwoord helpt het meest?",
+        "ctx": "You are in London near Tower Bridge. A tourist says to you: \"Excuse me, how do I get to the castle?\" You know the way: go straight on, take the second left and the castle is on your right, five minutes on foot."
+       },
+       {
+        "v": "Which question is complete and polite?",
+        "o": [
+         "\"What is the wifi password, tell me quickly.\"",
+         "\"Password wifi, please, for my room?\"",
+         "\"I want the password now, give it to me.\"",
+         "\"Excuse me, could I have the wifi password?\""
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 1,
+        "u": "Could you tell me ... please? Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"What is the wifi password, tell me quickly.\"? Dan denk je dat de zin beleefd is. Het is een bevel erachter, en onbeleefd.",
+         "Koos je \"Password wifi, please, for my room?\"? Dan denk je dat twee woorden genoeg zijn. De zin is niet volledig, en het klinkt onhandig.",
+         "Koos je \"I want the password now, give it to me.\"? Dan denk je dat dit past. Het is een eis, en niet beleefd.",
+         "Klopt: dit is een volledige en beleefde vraag zonder bevel."
+        ],
+        "uh": "Welke vraag is beleefd en volledig?",
+        "ctx": "You are staying at a hotel in Edinburgh for three days. You want to use the internet in your room, but you do not know the password. You go to the reception desk and speak to the receptionist."
+       },
+       {
+        "v": "Which two questions are correct and polite?",
+        "o": [
+         "\"What time opens the pool on Saturday morning, and how much costs a child ticket?\"",
+         "\"When open the pool Saturday, and how much child for ticket?\"",
+         "\"What time does the pool open, and how much is a child ticket?\"",
+         "\"What the pool opens on Saturday, and how much a ticket for a child costs?\""
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 1,
+        "u": "Does + onderwerp + werkwoord. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"What time opens the pool on Saturday morning, and...\"? Dan denk je dat het werkwoord direct na de vraagwoorden volgt. In het Engels gebruik je does, en cost krijgt dan geen s.",
+         "Koos je \"When open the pool Saturday, and how much child for...\"? Dan denk je dat losse woorden voldoende zijn. De zinnen zijn niet volledig, en onbeleefd.",
+         "Klopt: beide vragen hebben de juiste woordvolgorde.",
+         "Koos je \"What the pool opens on Saturday, and how much a...\"? Dan denk je dat deze woordvolgorde klopt. De volgorde is verkeerd, en er ontbreekt does."
+        ],
+        "uh": "Welke vragen kloppen?",
+        "ctx": "You phone a swimming pool because you want to go swimming with your family on Saturday. You want to know the opening time and the price for children. A receptionist answers the phone and waits for your question."
+       },
+       {
+        "v": "Which way of spelling is correct?",
+        "o": [
+         "\"Vee, Ay, En, Dee, Ee, En, Bee, Ee, Ar, Gee\" without stopping",
+         "\"V, A, N, DEN, B, E, R, G\"",
+         "\"V-A-N, D-E-N, B-E-R-G\"",
+         "\"Van den Berg\" said three times quickly"
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 4,
+        "u": "Spel per deel. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"Vee, Ay, En, Dee, Ee, En, Bee, Ee, Ar, Gee without...\"? Dan denk je dat je alle letters aan elkaar zegt. Dat is lastig te volgen, dus splits de naam in delen.",
+         "Koos je \"V, A, N, DEN, B, E, R, G\"? Dan denk je dat je den als woord kunt zeggen. Je spelt alle letters, dus ook D-E-N.",
+         "Klopt: je spelt elke letter en gebruikt de Engelse letternamen.",
+         "Koos je \"Van den Berg said three times quickly\"? Dan denk je dat herhalen een spelling is. Het is geen spelling, en je noemt geen letters."
+        ],
+        "uh": "Hoe spel je het?",
+        "ctx": "You phone a hotel to book a room. The receptionist asks for your name, which is Van den Berg, and you must spell it clearly for her so she writes it down correctly."
+       },
+       {
+        "v": "Which way of saying the number is best?",
+        "o": [
+         "\"two hundred and seven, nine hundred forty-six\"",
+         "\"zero twenty-seven, ninety-four, six, zero, one, two, three\"",
+         "\"seven, six, three, two, one, nine, oh, nought\"",
+         "\"oh two oh seven, nine four six, oh one two three\""
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 4,
+        "u": "Cijfer voor cijfer, in groepjes.",
+        "uo": [
+         "Koos je \"two hundred and seven, nine hundred forty-six\"? Dan denk je dat je getallen zegt als grote getallen. Een telefoonnummer lees je cijfer voor cijfer, dus dit is verkeerd.",
+         "Koos je \"zero twenty-seven, ninety-four, six, zero, one,...\"? Dan denk je dat je cijfers samenvoegt. Dat is verwarrend, en je zegt ze apart.",
+         "Koos je \"seven, six, three, two, one, nine, oh, nought\"? Dan denk je dat de volgorde mag veranderen. Dat klopt niet, en het nummer wordt fout.",
+         "Klopt: je zegt de cijfers apart en in groepjes."
+        ],
+        "uh": "Hoe lees je het voor?",
+        "ctx": "You phone a doctor's surgery to make an appointment. The receptionist asks for your phone number, which is 0207 946 0123, and you need to read it out loud, so she can write it down."
+       },
+       {
+        "v": "What is the best question to ask?",
+        "o": [
+         "\"Fifteen or fifty, please?\"",
+         "\"How much? Say that again, please!\"",
+         "\"Fifteen? Fifty? Whatever it is, I buy it.\"",
+         "\"I do not understand numbers in English.\""
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 3,
+        "u": "Fifteen or fifty? Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: je vraagt beleefd en noemt beide opties.",
+         "Koos je \"How much? Say that again, please!\"? Dan denk je dat dit beleefd is. Het is een bevel zonder sorry, en het noemt de opties niet.",
+         "Koos je \"Fifteen? Fifty? Whatever it is, I buy it.\"? Dan denk je dat dit past. Het klinkt onverschillig, en het is geen beleefde vraag.",
+         "Koos je \"I do not understand numbers in English.\"? Dan denk je dat dit helpt. Het is geen vraag, en het geeft geen oplossing."
+        ],
+        "uh": "Wat vraag je?",
+        "ctx": "At the market a woman tells you the price of a scarf. You think she says \"fifteen pounds\", but it may be \"fifty pounds\". You want to be sure, because the difference is large and you have little money."
+       },
+       {
+        "v": "Which question is complete and polite?",
+        "o": [
+         "\"Could you tell me how much costs a return ticket to York, please?\"",
+         "\"Could you tell me how much a return to York costs?\"",
+         "\"Could you tell me how much does a return ticket to York cost, please?\"",
+         "\"Tell me a return ticket York price now, please.\""
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 1,
+        "u": "Indirecte vraag: onderwerp, werkwoord.",
+        "uo": [
+         "Koos je \"Could you tell me how much costs a return ticket to...\"? Dan denk je dat het werkwoord direct na how much volgt. In een indirecte vraag volgt eerst het onderwerp, dus costs komt na ticket.",
+         "Klopt: in een indirecte vraag blijft het onderwerp voor het werkwoord.",
+         "Koos je \"Could you tell me how much does a return ticket to...\"? Dan denk je dat does hier past. In een indirecte vraag gebruik je geen does, en de volgorde is anders.",
+         "Koos je \"Tell me a return ticket York price now, please.\"? Dan denk je dat een rijtje woorden voldoende is. Het is onbeleefd, en het is geen volledige zin."
+        ],
+        "uh": "Welke zin klopt?",
+        "ctx": "You are at the train station and you want to know the price of a return ticket to York. The man at the desk is waiting for you, and you want to ask in a polite and complete way."
+       },
+       {
+        "v": "Which sentence has the correct word order?",
+        "o": [
+         "\"Could you tell me where is the bank?\"",
+         "\"Could you tell me where the bank be?\"",
+         "\"Could you tell me the bank where is?\"",
+         "\"Could you tell me where the bank is?\""
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 1,
+        "u": "Where + onderwerp + werkwoord.",
+        "uo": [
+         "Koos je \"Could you tell me where is the bank?\"? Dan denk je dat het werkwoord direct na where volgt. In een indirecte vraag komt het onderwerp eerst, dus the bank is.",
+         "Koos je \"Could you tell me where the bank be?\"? Dan denk je dat be hier past. De juiste vorm is is, en be klopt niet.",
+         "Koos je \"Could you tell me the bank where is?\"? Dan denk je dat where achteraan past. Het vraagwoord staat voorop, en de rest volgt erna.",
+         "Klopt: na where volgt het onderwerp en dan het werkwoord."
+        ],
+        "uh": "Welke volgorde klopt?",
+        "ctx": "You are in a new city and you want to find a bank. You see a police officer and you want to ask the question in a polite way, with the correct word order for a polite question."
+       },
+       {
+        "v": "Which answer is the most helpful?",
+        "o": [
+         "\"Yes, next to the post office, two minutes from here.\"",
+         "\"Yes, there is a bank somewhere in this town.\"",
+         "\"No, there is not, I think, not in this street.\"",
+         "\"Banks are good for money and for saving it.\""
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 2,
+        "u": "Ja + plaats + afstand. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: je antwoordt ja en noemt de plek en de afstand.",
+         "Koos je \"Yes, there is a bank somewhere in this town.\"? Dan denk je dat een kort ja genoeg is. Hij weet dan nog niet waar het is, dus je moet meer zeggen.",
+         "Koos je \"No, there is not, I think, not in this street.\"? Dan denk je dat dit helpt. Er is wel een bank, dus dit klopt niet.",
+         "Koos je \"Banks are good for money and for saving it.\"? Dan denk je dat dit een antwoord is. Het beantwoordt de vraag niet, en het helpt niet."
+        ],
+        "uh": "Welk antwoord helpt?",
+        "ctx": "A tourist says to you: \"Is there a bank near here?\" You know that there is a bank next to the post office, about two minutes on foot from where you are standing, on the same street."
+       }
+      ],
+      "oe": [
+       {
+        "bron": "Examenstijl",
+        "ctx": "You are in London and want to visit the Science Museum. You go to the information desk. The woman behind the desk smiles and waits for your question. You do not know the opening time or the price of a ticket for students.",
+        "v": "Write two polite questions: one about the opening time and one about the price for students.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Een beleefde vraag over de openingstijd, bijvoorbeeld \"What time does the museum open?\" (1p). Een vraag over de prijs, bijvoorbeeld \"How much is a ticket for students?\" (1p). Beleefd met excuse me of please (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "A tourist stops you in the street and says: \"Excuse me, where is the post office?\" You know the town well. The post office is straight on, then the first street on the left, next to the bakery. It takes about three minutes on foot.",
+        "v": "Write a clear answer with the directions.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Rechtdoor (1p). De eerste straat links, naast de bakker (1p). Ongeveer drie minuten te voet (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "You are at a railway station and you want to take a train to Cambridge. The man at the desk is busy, but he looks at you. You want to know when the next train leaves and from which platform, and you want to be polite.",
+        "v": "Write one polite indirect question that asks for both pieces of information.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Een beleefde start zoals \"Could you tell me ...\" (1p). Een goede indirecte vraag over tijd en perron zonder does (1p). Een volledige zin met please of excuse me (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "You phone a doctor's surgery to make an appointment. The receptionist asks for your name, which is Hendriks, and for your phone number, which is 06 12 34 56 78. You must spell your name and say the number clearly.",
+        "v": "Write how you spell your name and how you say the first four digits of the number.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "H-E-N-D-R-I-K-S (2p). Het begin van het nummer cijfer voor cijfer, zoals oh six, one two (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "You are on holiday in Scotland. A shop assistant tells you the price of a postcard, but there was a lot of noise, so you did not hear it well. You want to know the price and you want to be polite, as the assistant is waiting.",
+        "v": "Write what you say to ask for the price again.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Een beleefde vraag om herhaling, zoals \"Sorry, could you repeat that, please?\" (2p). Of \"How much is it, please?\" (1p)."
+       }
+      ]
      }
     ]
    },
