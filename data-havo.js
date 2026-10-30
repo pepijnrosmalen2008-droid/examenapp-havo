@@ -124034,6 +124034,688 @@ var VAKKEN = [
         "u": "Een afsluitend signaalwoord zoals \"In conclusion\" (1p). Een duidelijke samenvatting van de mening (2p)."
        }
       ]
+     },
+     {
+      "id": "D6",
+      "lo": "en.D.6",
+      "gs": 2,
+      "naam": "Strategieën om een gesprek gaande te houden",
+      "beschrijving": "Je leert in het Engels tijd te winnen, een onbekend woord te omschrijven, om herhaling te vragen en een gesprek met vragen en reacties gaande te houden.",
+      "ceStatus": "SE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Tijd winnen",
+       "Een woord omschrijven",
+       "Om hulp of herhaling vragen",
+       "Het gesprek gaande houden",
+       "Controleren en verbeteren"
+      ],
+      "sam": "Als je in een gesprek vastloopt, gebruik je een strategie. Je wint tijd met let me think of well. Weet je een woord niet, dan omschrijf je het of vraag je what do you call it. Je vraagt om herhaling met sorry, could you say that again. Je houdt het gesprek gaande met open vragen, een reactie als really en een vervolgvraag. Met do you mean controleer je of je het begrepen hebt en met sorry, I mean verbeter je jezelf.",
+      "begrippen": [
+       {
+        "t": "Strategie",
+        "d": "Een slimme manier om een probleem in een gesprek op te lossen."
+       },
+       {
+        "t": "Tijd winnen",
+        "d": "Even nadenken zonder dat het gesprek stilvalt."
+       },
+       {
+        "t": "Opvulwoord",
+        "d": "Een woord als well waarmee je een pauze vult."
+       },
+       {
+        "t": "Omschrijven",
+        "d": "Uitleggen wat iets is of doet zonder het woord."
+       },
+       {
+        "t": "Herhaling vragen",
+        "d": "Iets nog een keer laten zeggen."
+       },
+       {
+        "t": "Open vraag",
+        "d": "Een vraag waarop je meer dan ja of nee zegt."
+       },
+       {
+        "t": "Gesloten vraag",
+        "d": "Een vraag die je met ja of nee beantwoordt."
+       },
+       {
+        "t": "Vervolgvraag",
+        "d": "Een vraag die doorgaat op wat de ander zei."
+       },
+       {
+        "t": "Interesse tonen",
+        "d": "Laten merken dat je het verhaal leuk vindt."
+       },
+       {
+        "t": "Controleren",
+        "d": "Vragen of je de ander goed begrepen hebt."
+       },
+       {
+        "t": "Verbeteren",
+        "d": "Je eigen fout herstellen."
+       },
+       {
+        "t": "Verduidelijking",
+        "d": "Vragen wat iemand precies bedoelt."
+       }
+      ],
+      "sv": [
+       {
+        "v": "Which phrase gives you time to think?",
+        "o": [
+         "\"I do not care about it at all.\"",
+         "\"Let me think for a moment.\"",
+         "\"See you later, goodbye now.\"",
+         "\"Thank you very much for this.\""
+        ],
+        "c": 1,
+        "d": 1,
+        "s": 0,
+        "u": "Let me think = denktijd. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"I do not care about it at all.\"? Dan denk je dat dit tijd geeft. Het toont desinteresse, en het gesprek loopt dan vast.",
+         "Klopt: zo laat je weten dat je even nadenkt en blijft het gesprek gaande.",
+         "Koos je \"See you later, goodbye now.\"? Dan denk je dat dit tijd geeft. Het is een afscheid, en het beëindigt het gesprek.",
+         "Koos je \"Thank you very much for this.\"? Dan denk je dat dit tijd geeft. Het is een bedankje, en geeft geen denktijd."
+        ],
+        "uh": "Wat zeg je om tijd te winnen?"
+       },
+       {
+        "v": "Which word can you say while you are thinking?",
+        "o": [
+         "\"because\", which gives a reason",
+         "\"although\", which shows a contrast",
+         "\"goodbye\", which ends a talk",
+         "\"well\""
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 0,
+        "u": "Well = opvulwoord. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"because, which gives a reason\"? Dan denk je dat because een opvulwoord is. Het leidt een reden in, en vraagt om een vervolg.",
+         "Koos je \"although, which shows a contrast\"? Dan denk je dat although een opvulwoord is. Het zet iets tegenover elkaar, en past niet in een pauze.",
+         "Koos je \"goodbye, which ends a talk\"? Dan denk je dat goodbye een opvulwoord is. Het beëindigt het gesprek, en dus past het niet.",
+         "Klopt: well vult een korte pauze op zonder dat je stilvalt."
+        ],
+        "uh": "Welk woord overbrugt een pauze?"
+       },
+       {
+        "v": "What can you say when you do not know a word in English?",
+        "o": [
+         "\"What do you call it in English?\"",
+         "\"I give up, it is too hard.\"",
+         "\"Never mind, forget it.\"",
+         "\"I will say it in Dutch.\""
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 1,
+        "u": "What do you call it? Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: zo vraag je direct om het Engelse woord dat je zoekt.",
+         "Koos je \"I give up, it is too hard.\"? Dan denk je dat opgeven helpt. Dan stopt het gesprek, en je krijgt het woord niet.",
+         "Koos je \"Never mind, forget it.\"? Dan denk je dat vergeten helpt. Het gesprek loopt dan vast, en je blijft het woord missen.",
+         "Koos je \"I will say it in Dutch.\"? Dan denk je dat Nederlands helpt. De ander begrijpt het niet, en het lost niets op."
+        ],
+        "uh": "Wat vraag je?"
+       },
+       {
+        "v": "How can you explain a word you do not know?",
+        "o": [
+         "say the Dutch word louder than before",
+         "stop the conversation and go away",
+         "describe what it is or what it does",
+         "wait until the other person guesses"
+        ],
+        "c": 2,
+        "d": 1,
+        "s": 2,
+        "u": "Omschrijf het. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"say the Dutch word louder than before\"? Dan denk je dat harder spreken helpt. De ander begrijpt het Nederlandse woord niet, dus dat lost niets op.",
+         "Koos je \"stop the conversation and go away\"? Dan denk je dat weggaan helpt. Je lost het niet op, en het is onbeleefd.",
+         "Klopt: een omschrijving maakt duidelijk wat je bedoelt.",
+         "Koos je \"wait until the other person guesses\"? Dan denk je dat wachten helpt. De ander weet niet wat je zoekt, en het gesprek valt stil."
+        ],
+        "uh": "Hoe leg je het uit?"
+       },
+       {
+        "v": "Which question keeps a conversation going?",
+        "o": [
+         "\"Yes, that is all I wanted to say.\"",
+         "\"Goodbye, I have to go now.\"",
+         "\"And you?\"",
+         "\"Okay, stop talking, please.\""
+        ],
+        "c": 2,
+        "d": 1,
+        "s": 3,
+        "u": "What about you? Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"Yes, that is all I wanted to say.\"? Dan denk je dat een kort antwoord het gesprek gaande houdt. Het is een eindpunt, en vraagt niets terug.",
+         "Koos je \"Goodbye, I have to go now.\"? Dan denk je dat dit het gesprek gaande houdt. Het is een afscheid, en beëindigt het.",
+         "Klopt: je vraagt de ander mee te doen en het gesprek gaat door.",
+         "Koos je \"Okay, stop talking, please.\"? Dan denk je dat dit het gesprek gaande houdt. Het kapt af, en klinkt onbeleefd."
+        ],
+        "uh": "Welke vraag houdt het gaande?"
+       },
+       {
+        "v": "Which reaction shows that you are interested?",
+        "o": [
+         "\"Really? How nice!\"",
+         "\"Hmm.\" and nothing more at all",
+         "\"So what? Who cares about it?\"",
+         "\"I do not care about it.\""
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 3,
+        "u": "Really? = interesse. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: je toont belangstelling en nodigt uit om verder te vertellen.",
+         "Koos je \"Hmm. and nothing more at all\"? Dan denk je dat een korte klank interesse toont. Het klinkt onverschillig, en nodigt niet uit.",
+         "Koos je \"So what? Who cares about it?\"? Dan denk je dat dit interesse toont. Het klinkt onbeleefd, en kapt het gesprek af.",
+         "Koos je \"I do not care about it.\"? Dan denk je dat dit interesse toont. Het zegt het tegenovergestelde, en het is onbeleefd."
+        ],
+        "uh": "Welke reactie toont interesse?"
+       },
+       {
+        "v": "Which phrase checks that you understood?",
+        "o": [
+         "\"You are wrong about it.\"",
+         "\"I do not know anything.\"",
+         "\"Never mind, it is fine.\"",
+         "\"Do you mean that ...?\""
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 4,
+        "u": "Do you mean ...? Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"You are wrong about it.\"? Dan denk je dat dit controleert. Het is een aanval, en vraagt niets na.",
+         "Koos je \"I do not know anything.\"? Dan denk je dat dit controleert. Het zegt alleen dat je het niet weet, en je lost niets op.",
+         "Koos je \"Never mind, it is fine.\"? Dan denk je dat dit controleert. Het laat het misverstand bestaan, en je controleert niets.",
+         "Klopt: zo controleer je of je het goed begrepen hebt."
+        ],
+        "uh": "Hoe controleer je het?"
+       },
+       {
+        "v": "What can you say to get some time?",
+        "o": [
+         "\"I do not know and I do not care about it.\"",
+         "\"Interesting question, let me think.\"",
+         "\"Next question, please, quickly.\"",
+         "\"Goodbye now, I am leaving the room.\""
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 0,
+        "u": "Interesting question + denktijd.",
+        "uo": [
+         "Koos je \"I do not know and I do not care about it.\"? Dan denk je dat dit tijd geeft. Het is onbeleefd, en beëindigt het antwoord.",
+         "Klopt: je laat weten dat je nadenkt en blijft beleefd.",
+         "Koos je \"Next question, please, quickly.\"? Dan denk je dat dit tijd geeft. Je slaat de vraag over, en dat is geen antwoord.",
+         "Koos je \"Goodbye now, I am leaving the room.\"? Dan denk je dat dit tijd geeft. Het is een afscheid, en past niet in een examen."
+        ],
+        "uh": "Wat zeg je?",
+        "ctx": "In an oral exam the examiner asks you a difficult question about your future plans. You need a moment to find the right words in English, and you do not want a long and awkward silence in the room."
+       },
+       {
+        "v": "Which sentence explains the word without using it?",
+        "o": [
+         "\"It is a screwdriver, you know, a screwdriver.\"",
+         "\"It is a thing, a very good thing to have.\"",
+         "\"It is a hammer for screws and nails.\"",
+         "\"It is a tool to put screws in wood.\""
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 2,
+        "u": "Omschrijf het gebruik. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"It is a screwdriver, you know, a screwdriver.\"? Dan denk je dat dit uitlegt. Je noemt het woord dat je niet weet, dus je legt niets uit.",
+         "Koos je \"It is a thing, a very good thing to have.\"? Dan denk je dat dit uitlegt. Het is vaag, en noemt geen gebruik.",
+         "Koos je \"It is a hammer for screws and nails.\"? Dan denk je dat dit uitlegt. Het noemt een ander voorwerp, en dat klopt niet.",
+         "Klopt: je omschrijft het gebruik van het gereedschap."
+        ],
+        "uh": "Hoe leg je het uit?",
+        "ctx": "You are in a hardware shop and you want to buy a screwdriver, but you do not know the English word for it. The shop assistant is friendly and waits for you to explain what you need for your bicycle."
+       },
+       {
+        "v": "Which question asks for the English word?",
+        "o": [
+         "\"Give me the scissors in Dutch, please.\"",
+         "\"What is the word for what you cut paper with?\"",
+         "\"Where is the thing, please, I need it?\"",
+         "\"What is the paper, please, for my tea?\""
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 1,
+        "u": "Omschrijf en vraag het woord. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"Give me the scissors in Dutch, please.\"? Dan denk je dat dit vraagt om het woord. Je vraagt een Nederlandse versie, en je krijgt het Engelse woord niet.",
+         "Klopt: je omschrijft het voorwerp en vraagt om het woord.",
+         "Koos je \"Where is the thing, please, I need it?\"? Dan denk je dat dit vraagt om het woord. Het is te vaag, en je omschrijft niets.",
+         "Koos je \"What is the paper, please, for my tea?\"? Dan denk je dat dit vraagt om het woord. Je vraagt naar papier, en niet naar het voorwerp."
+        ],
+        "uh": "Hoe vraag je het woord?",
+        "ctx": "You are making a cup of tea at a friend's house, but you cannot remember the English word for \"schaar\". You want to ask your friend where to find it, as you need to cut open a bag of tea."
+       },
+       {
+        "v": "What do you say?",
+        "o": [
+         "\"Speak slowly, I cannot hear you at all.\"",
+         "\"What? Again, and quickly this time!\"",
+         "\"Sorry, could you speak more slowly?\"",
+         "\"I do not understand you at all today.\""
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 1,
+        "u": "Could you speak more slowly? Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"Speak slowly, I cannot hear you at all.\"? Dan denk je dat een bevel past. Het klinkt onbeleefd, en mist please.",
+         "Koos je \"What? Again, and quickly this time!\"? Dan denk je dat dit past. Het is kortaf, en klinkt onbeleefd.",
+         "Klopt: je vraagt beleefd om langzamer te spreken.",
+         "Koos je \"I do not understand you at all today.\"? Dan denk je dat dit helpt. Het geeft geen oplossing, en je vraagt niets."
+        ],
+        "uh": "Wat zeg je?",
+        "ctx": "The teacher asks you a question in English, but she speaks very quickly and you do not catch everything she says. You want to answer well, so you need to ask her politely to say it again, at a slower pace."
+       },
+       {
+        "v": "Which follow-up question shows interest?",
+        "o": [
+         "\"Where did you stay?\"",
+         "\"Is it far?\" in a bored voice",
+         "\"I stayed at home last summer.\"",
+         "\"Okay. Next.\""
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 3,
+        "u": "Open vraag = interesse. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: een open vraag laat zien dat je meer wilt weten.",
+         "Koos je \"Is it far? in a bored voice\"? Dan denk je dat dit interesse toont. Het klinkt onverschillig, en het is geen echte vraag.",
+         "Koos je \"I stayed at home last summer.\"? Dan denk je dat dit een vraag is. Het is een mededeling over jezelf, en je blijft niet bij haar verhaal.",
+         "Koos je \"Okay. Next.\"? Dan denk je dat dit interesse toont. Het kapt haar af, en klinkt onbeleefd."
+        ],
+        "uh": "Welke vraag toont interesse?",
+        "ctx": "A friend tells you that she went on holiday to Italy with her family last summer. She seems happy and she tells you about the sea and the food. You want to show that you are interested in her story."
+       },
+       {
+        "v": "Which reaction shows interest?",
+        "o": [
+         "\"Oh, nice! Did you like it?\"",
+         "\"Okay, and then?\" in a flat voice",
+         "\"I do not like Spain, sorry.\"",
+         "\"Spain is a country.\""
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 3,
+        "u": "Reageer + vraag door. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: je reageert enthousiast en stelt een vervolgvraag.",
+         "Koos je \"Okay, and then? in a flat voice\"? Dan denk je dat dit interesse toont. Het klinkt vlak, en nodigt niet uit.",
+         "Koos je \"I do not like Spain, sorry.\"? Dan denk je dat dit interesse toont. Het gaat over jouw mening, en je toont geen belangstelling voor haar verhaal.",
+         "Koos je \"Spain is a country.\"? Dan denk je dat dit een reactie is. Het is een feit, en toont geen interesse."
+        ],
+        "uh": "Welke reactie past?",
+        "ctx": "A friend says: \"I went to Spain last summer.\" She smiles and waits for your reaction. You want to show that you are listening, and you would like her to tell you more about the trip."
+       },
+       {
+        "v": "Which sentence checks your understanding?",
+        "o": [
+         "\"I do not remember the time at all.\"",
+         "\"Whatever you say, it is fine.\"",
+         "\"So the meeting is at three?\"",
+         "\"Is it Monday or not, I wonder?\""
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 4,
+        "u": "Herhaal + bevestiging. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"I do not remember the time at all.\"? Dan denk je dat dit controleert. Het zegt alleen dat je het niet weet, en je vraagt niets na.",
+         "Koos je \"Whatever you say, it is fine.\"? Dan denk je dat dit controleert. Het is onverschillig, en je krijgt geen zekerheid.",
+         "Klopt: je herhaalt wat je dacht en vraagt om bevestiging.",
+         "Koos je \"Is it Monday or not, I wonder?\"? Dan denk je dat dit controleert. Het noemt een andere dag, en niet wat je dacht."
+        ],
+        "uh": "Hoe controleer je?",
+        "ctx": "Your friend tells you the time of tomorrow's meeting, but you are not sure that you understood it, because she spoke quickly. You want to be sure that you will be there on time."
+       },
+       {
+        "v": "How do you correct yourself?",
+        "o": [
+         "\"No, it is Sunday, you are wrong.\"",
+         "\"Sorry, I mean Monday.\"",
+         "\"Whatever, it does not matter.\"",
+         "\"Monday, Sunday, I do not know.\""
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 4,
+        "u": "Sorry, I mean ... Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"No, it is Sunday, you are wrong.\"? Dan denk je dat dit verbetert. Het houdt vast aan de fout, en beschuldigt de ander.",
+         "Klopt: sorry, I mean verbetert je fout kort en het gesprek gaat door.",
+         "Koos je \"Whatever, it does not matter.\"? Dan denk je dat dit verbetert. Het laat de fout staan, en verwart de ander.",
+         "Koos je \"Monday, Sunday, I do not know.\"? Dan denk je dat dit verbetert. Het is onduidelijk, en je lost het niet op."
+        ],
+        "uh": "Hoe verbeter je jezelf?",
+        "ctx": "During a talk you say \"Sunday\" but you mean \"Monday\". The other person looks confused. You notice your mistake and you want to correct it right away without making it a big problem."
+       },
+       {
+        "v": "Which sentence helps the talk continue?",
+        "o": [
+         "\"You are very quiet.\"",
+         "\"Okay, bye then.\"",
+         "\"Say something, anything.\"",
+         "\"Tell me more about it.\""
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 3,
+        "u": "Tell me more. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"You are very quiet.\"? Dan denk je dat dit helpt. Het is een opmerking over haar gedrag, en maakt haar eerder ongemakkelijk.",
+         "Koos je \"Okay, bye then.\"? Dan denk je dat dit helpt. Het is een afscheid, en beëindigt het gesprek.",
+         "Koos je \"Say something, anything.\"? Dan denk je dat dit helpt. Het is een bevel, en onbeleefd.",
+         "Klopt: je nodigt haar uit om verder te vertellen."
+        ],
+        "uh": "Wat zeg je?",
+        "ctx": "You are talking to a new classmate. After a few sentences, she stops talking and looks at the floor. You want to help the conversation to continue in a friendly way, so that she feels comfortable."
+       },
+       {
+        "v": "Which phrase asks for clarification?",
+        "o": [
+         "\"I do not understand and I do not care.\"",
+         "\"What exactly do you mean by that?\"",
+         "\"That is wrong, you know.\"",
+         "\"Say it in Dutch, please.\""
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 4,
+        "u": "What do you mean? Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"I do not understand and I do not care.\"? Dan denk je dat dit verduidelijking vraagt. Het is onbeleefd, en vraagt niets.",
+         "Klopt: je vraagt beleefd naar de precieze betekenis van de zin.",
+         "Koos je \"That is wrong, you know.\"? Dan denk je dat dit verduidelijking vraagt. Het oordeelt zonder vraag, en lost niets op.",
+         "Koos je \"Say it in Dutch, please.\"? Dan denk je dat dit verduidelijking vraagt. De ander spreekt misschien geen Nederlands, en het lost het probleem niet op."
+        ],
+        "uh": "Hoe vraag je verduidelijking?",
+        "ctx": "A classmate says something and you are not sure what he means by it, because he used an expression you do not know. You want to find out in a polite way before you answer, so you do not make a mistake."
+       },
+       {
+        "v": "Which is the best strategy?",
+        "o": [
+         "\"It is a thing to cross a river.\"",
+         "\"It is a, a, a... forget it, it is hard.\"",
+         "\"It is ... brug, you know, the brug there.\"",
+         "\"It is a big something, I cannot say it.\""
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 2,
+        "u": "Omschrijf de functie. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: je omschrijft de functie van het voorwerp.",
+         "Koos je \"It is a, a, a... forget it, it is hard.\"? Dan denk je dat dit een strategie is. Je geeft op, en de ander begrijpt het niet.",
+         "Koos je \"It is ... brug, you know, the brug there.\"? Dan denk je dat het Nederlandse woord helpt. De ander verstaat het niet, dus dit lost het niet op.",
+         "Koos je \"It is a big something, I cannot say it.\"? Dan denk je dat dit een strategie is. Het is vaag, en geeft geen aanwijzing."
+        ],
+        "uh": "Wat is de beste strategie?",
+        "ctx": "You are on a school trip in England and you want to talk about a bridge, but you have forgotten the English word. You cannot use a dictionary because you are walking with the group, and the guide waits for your answer."
+       },
+       {
+        "v": "Which is the best strategy?",
+        "o": [
+         "\"I do not understand, so no answer from me.\"",
+         "\"What? Say it in Dutch, please.\"",
+         "\"You speak too fast, please stop it.\"",
+         "\"Sorry, could you rephrase that?\""
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 1,
+        "u": "Could you rephrase? Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"I do not understand, so no answer from me.\"? Dan denk je dat zwijgen verstandig is. Dan krijg je geen punten, en het gesprek valt stil.",
+         "Koos je \"What? Say it in Dutch, please.\"? Dan denk je dat dit past. De examinator spreekt Engels, en dit is onbeleefd.",
+         "Koos je \"You speak too fast, please stop it.\"? Dan denk je dat dit past. Het klinkt onbeleefd, en helpt je niet.",
+         "Klopt: je vraagt beleefd om een andere formulering."
+        ],
+        "uh": "Hoe vraag je het opnieuw?",
+        "ctx": "In a speaking test the examiner asks you something, but she speaks fast and uses a difficult word. You do not understand the question and you do not want to lose points because you stay silent for a long time."
+       },
+       {
+        "v": "How do you change the topic politely?",
+        "o": [
+         "\"Stop talking about that, please now.\"",
+         "\"I am bored, let us talk about something else.\"",
+         "\"By the way, did you see the match?\"",
+         "\"Whatever. Next topic, please.\""
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 3,
+        "u": "By the way = nieuw onderwerp. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"Stop talking about that, please now.\"? Dan denk je dat dit past. Het is onbeleefd, en bedoeld om het gesprek te stoppen.",
+         "Koos je \"I am bored, let us talk about something else.\"? Dan denk je dat dit past. Het is onbeleefd, en laat de ander zich slecht voelen.",
+         "Klopt: by the way introduceert vriendelijk een nieuw onderwerp.",
+         "Koos je \"Whatever. Next topic, please.\"? Dan denk je dat dit past. Het klinkt onverschillig, en onbeleefd."
+        ],
+        "uh": "Hoe wissel je van onderwerp?",
+        "ctx": "You have been talking about hobbies for a while and now you want to move to another subject, but you want to do it in a natural and friendly way, without making the other person feel that you want to stop talking."
+       },
+       {
+        "v": "Which question invites a longer answer?",
+        "o": [
+         "\"Did you like the trip a lot?\"",
+         "\"Was it nice there, or not?\"",
+         "\"What was the best part?\"",
+         "\"Did you go by plane or train?\""
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 3,
+        "u": "Open vraag = langer antwoord. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"Did you like the trip a lot?\"? Dan denk je dat did you like het uitgebreid laat vertellen. Je kunt gewoon ja zeggen, dus het antwoord blijft kort.",
+         "Koos je \"Was it nice there, or not?\"? Dan denk je dat was it nice meer dan een woord vraagt. Er volgt meestal yes of no, dus het antwoord blijft kort.",
+         "Klopt: een open vraag met what vraagt om uitleg.",
+         "Koos je \"Did you go by plane or train?\"? Dan denk je dat een vraag over vervoer een verhaal geeft. Je noemt alleen plane of train, dus het antwoord is kort."
+        ],
+        "uh": "Welke vraag lokt uitleg uit?",
+        "ctx": "Your conversation partner answers only with \"yes\" or \"no\" and does not say more. You want her to speak more freely and tell you what she thinks about her last holiday, so you choose a good question."
+       },
+       {
+        "v": "Which question is a closed question?",
+        "o": [
+         "\"Why did you like it?\"",
+         "\"What did you do there?\"",
+         "\"How was your day?\"",
+         "\"Did you enjoy it?\""
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 3,
+        "u": "Gesloten = ja of nee. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"Why did you like it?\"? Dan denk je dat why een ja of nee oplevert. Je moet een reden geven, dus het is een open vraag.",
+         "Koos je \"What did you do there?\"? Dan denk je dat what een kort antwoord oplevert. Je beschrijft wat je deed, dus het is een open vraag.",
+         "Koos je \"How was your day?\"? Dan denk je dat how met ja of nee te beantwoorden is. Je geeft een beschrijving van je dag, dus het is een open vraag.",
+         "Klopt: did you ... kun je met ja of nee beantwoorden."
+        ],
+        "uh": "Welke vraag is gesloten?",
+        "ctx": "In a conversation class, you are told to use open questions to keep a conversation going. You must choose the question that can be answered only with \"yes\" or \"no\", so that you know what a closed question is."
+       },
+       {
+        "v": "Which phrase does both?",
+        "o": [
+         "\"Let me see... after school?\"",
+         "\"Let me see... goodbye now, bye.\"",
+         "\"I do not know, next question, please.\"",
+         "\"Do you mean nothing at all?\""
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 1,
+        "u": "Tijd winnen + controleren. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: je wint tijd en controleert tegelijk de vraag.",
+         "Koos je \"Let me see... goodbye now, bye.\"? Dan denk je dat dit beide doet. Het wint tijd maar beëindigt het gesprek, en controleert niets.",
+         "Koos je \"I do not know, next question, please.\"? Dan denk je dat dit beide doet. Het geeft het antwoord op, en controleert niets.",
+         "Koos je \"Do you mean nothing at all?\"? Dan denk je dat dit beide doet. Het is een raar antwoord, en wint geen tijd."
+        ],
+        "uh": "Welke zin doet beide?",
+        "ctx": "The examiner asks you a question about your future plans, and you want to gain some time and also check that you understood the question correctly. You use one sentence for both purposes."
+       },
+       {
+        "v": "What is the best strategy?",
+        "o": [
+         "stop talking and stay silent for a long time",
+         "correct yourself and continue",
+         "say the same word louder and louder",
+         "leave the room and talk to someone else"
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 2,
+        "u": "Verbeter jezelf kort. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"stop talking and stay silent for a long time\"? Dan denk je dat zwijgen helpt. Het gesprek valt dan stil, en het misverstand blijft.",
+         "Klopt: je verbetert je fout kort en gaat door met het gesprek.",
+         "Koos je \"say the same word louder and louder\"? Dan denk je dat harder praten helpt. Het woord blijft fout, en de ander begrijpt het nog steeds niet.",
+         "Koos je \"leave the room and talk to someone else\"? Dan denk je dat weggaan helpt. Dat is onbeleefd, en lost het misverstand niet op."
+        ],
+        "uh": "Wat doe je?",
+        "ctx": "You make a mistake with a word during a talk with an English guest, and she looks puzzled. You want to solve the problem quickly and keep the talk going in a natural way, so that she understands you."
+       },
+       {
+        "v": "Which sentence is best?",
+        "o": [
+         "\"What? Cinema, no, whatever it is.\"",
+         "\"I do not want to talk about it now.\"",
+         "\"Say it in English again, quickly please.\"",
+         "\"Sorry, cinema or theatre?\""
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 1,
+        "u": "Herhaal wat je hoorde. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"What? Cinema, no, whatever it is.\"? Dan denk je dat dit past. Het klinkt onverschillig, en helpt niet.",
+         "Koos je \"I do not want to talk about it now.\"? Dan denk je dat dit past. Het is onbeleefd, en lost het misverstand niet op.",
+         "Koos je \"Say it in English again, quickly please.\"? Dan denk je dat dit past. Het is een bevel, en onbeleefd.",
+         "Klopt: je herhaalt wat je hoorde en vraagt of het klopt."
+        ],
+        "uh": "Hoe vraag je het na?",
+        "ctx": "The English friend asks you quickly: \"Did you go to the cinema or to the theatre?\" You only heard the word cinema and you are not sure about the second place, so you want to ask for the exact question."
+       },
+       {
+        "v": "Which phrase is best?",
+        "o": [
+         "\"Sorry, the line is bad. Again, please?\"",
+         "\"I cannot hear you, so stop talking now.\"",
+         "\"Hello? Hello? Hello? Whatever it is.\"",
+         "\"Bye, I will call you never again.\""
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 1,
+        "u": "Noem het probleem en vraag herhaling.",
+        "uo": [
+         "Klopt: je noemt het probleem en vraagt beleefd om herhaling.",
+         "Koos je \"I cannot hear you, so stop talking now.\"? Dan denk je dat dit past. Het is onbeleefd, en je geeft geen oplossing.",
+         "Koos je \"Hello? Hello? Hello? Whatever it is.\"? Dan denk je dat dit past. Het is een rommelige reactie, en je vraagt niets.",
+         "Koos je \"Bye, I will call you never again.\"? Dan denk je dat dit past. Het beëindigt het gesprek, en is onbeleefd."
+        ],
+        "uh": "Wat zeg je?",
+        "ctx": "You are talking on the phone with an English friend and the line is bad. You hear only half of what she says, and you want to ask her to repeat it in a polite way, since the call is important."
+       },
+       {
+        "v": "Which sentence is polite?",
+        "o": [
+         "\"I do not know and I do not care.\"",
+         "\"Good question. Let me think for a second.\"",
+         "\"That is a stupid question, really.\"",
+         "\"Next question, please, quickly now.\""
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 0,
+        "u": "Good question + denktijd. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"I do not know and I do not care.\"? Dan denk je dat dit past. Het is onbeleefd, en geen antwoord.",
+         "Klopt: je compliment de vraag en vraagt even tijd.",
+         "Koos je \"That is a stupid question, really.\"? Dan denk je dat dit past. Het beledigt de vrager, en is onbeleefd.",
+         "Koos je \"Next question, please, quickly now.\"? Dan denk je dat dit past. Je slaat de vraag over, en dat is geen antwoord."
+        ],
+        "uh": "Wat zeg je?",
+        "ctx": "After your talk, a student asks you a difficult question and you need a moment to think about your answer. You are still standing in front of the class, and you want to stay polite and calm."
+       }
+      ],
+      "oe": [
+       {
+        "bron": "Examenstijl",
+        "ctx": "In an oral test the examiner asks you: \"What would you like to do after your exams?\" You have not thought about it much and you need a few seconds to find your words, but you do not want to stay silent.",
+        "v": "Write two things you can say to gain time before you answer.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Een opvulwoord zoals \"well\" (1p). Een zin zoals \"That is an interesting question, let me think\" (2p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "You are in an English shop and you want to buy a charger for your phone, but you cannot remember the word charger. The shop assistant is waiting for you and the shop is quite busy at the moment.",
+        "v": "Write what you say to explain the word without using it.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Een omschrijving van de functie, zoals \"It is a thing you use to put energy in my phone\" (2p). Een beleefde toon (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "A classmate from England tells you about his hobby, which is rock climbing. He says that he goes every Saturday with his father to a climbing hall near his house, and that he is getting better.",
+        "v": "Write two follow-up questions that show your interest and keep the talk going.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Een open vraag zoals \"What do you like most about it?\" (1p). Een vervolgvraag zoals \"How often do you climb?\" (1p). Beleefde zinnen (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "During a conversation with a guest family, the father says something quickly, and you are not sure what he said. You think he asked you to come for dinner on Friday, but you are not certain about the day.",
+        "v": "Write a polite sentence to check what you understood.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Beleefd begin zoals \"Sorry\" (1p). Controle zoals \"Did you say Friday?\" of \"Do you mean dinner on Friday?\" (2p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "You are telling a friend about last weekend. You say \"I went to the cinema on Sunday\", but you meant Saturday, and your friend looks puzzled because he saw you on Sunday at the swimming pool.",
+        "v": "Write a short sentence to correct your mistake and continue the talk.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Een correctie zoals \"Sorry, I mean Saturday\" (2p). Een zin die het gesprek vervolgt (1p)."
+       }
+      ]
      }
     ]
    },

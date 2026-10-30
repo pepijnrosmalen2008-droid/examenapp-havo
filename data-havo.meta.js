@@ -2839,6 +2839,27 @@ var VAKKEN = [
       "nOe": 5,
       "nBeg": 12,
       "hasSam": true
+     },
+     {
+      "id": "D6",
+      "lo": "en.D.6",
+      "gs": 2,
+      "naam": "Strategieën om een gesprek gaande te houden",
+      "beschrijving": "Je leert in het Engels tijd te winnen, een onbekend woord te omschrijven, om herhaling te vragen en een gesprek met vragen en reacties gaande te houden.",
+      "ceStatus": "SE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Tijd winnen",
+       "Een woord omschrijven",
+       "Om hulp of herhaling vragen",
+       "Het gesprek gaande houden",
+       "Controleren en verbeteren"
+      ],
+      "nSv": 27,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
      }
     ]
    },
