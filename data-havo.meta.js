@@ -2733,7 +2733,30 @@ var VAKKEN = [
     "nSv": 104,
     "nOe": 3,
     "nBeg": 21,
-    "hasSam": true
+    "hasSam": true,
+    "leerdoelen": [
+     {
+      "id": "D1",
+      "lo": "en.D.1",
+      "gs": 2,
+      "naam": "Adequaat reageren in sociale contacten",
+      "beschrijving": "Je leert in het Engels passend te reageren op begroetingen, bedankjes, excuses, uitnodigingen en complimenten, formeel en informeel.",
+      "ceStatus": "SE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Begroeten en afscheid nemen",
+       "Bedanken en excuses maken",
+       "Uitnodigen en reageren",
+       "Formeel en informeel",
+       "Een gesprek beginnen en afsluiten"
+      ],
+      "nSv": 27,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
+     }
+    ]
    },
    {
     "id": "E",

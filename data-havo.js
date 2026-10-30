@@ -120665,6 +120665,690 @@ var VAKKEN = [
       "t": "Om herhaling vragen",
       "d": "\"Could you repeat that, please?\""
      }
+    ],
+    "leerdoelen": [
+     {
+      "id": "D1",
+      "lo": "en.D.1",
+      "gs": 2,
+      "naam": "Adequaat reageren in sociale contacten",
+      "beschrijving": "Je leert in het Engels passend te reageren op begroetingen, bedankjes, excuses, uitnodigingen en complimenten, formeel en informeel.",
+      "ceStatus": "SE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Begroeten en afscheid nemen",
+       "Bedanken en excuses maken",
+       "Uitnodigen en reageren",
+       "Formeel en informeel",
+       "Een gesprek beginnen en afsluiten"
+      ],
+      "sam": "In sociale contacten reageer je passend op wat de ander zegt. Op een begroeting zeg je iets terug, op thank you zeg je you are welcome, bij een fout zeg je sorry. Een uitnodiging accepteer je met I would love to of wijs je beleefd af met een reden. Formele situaties vragen om how do you do en would you mind, informele om see you later. Met small talk begin je een gesprek en met een bedankje sluit je het af.",
+      "begrippen": [
+       {
+        "t": "Begroeting",
+        "d": "Een woord of zin waarmee je iemand begroet."
+       },
+       {
+        "t": "Afscheid",
+        "d": "Een zin waarmee je weggaat, zoals see you later."
+       },
+       {
+        "t": "Bedankje",
+        "d": "Een zin waarmee je dank zegt."
+       },
+       {
+        "t": "Excuus",
+        "d": "Een zin waarmee je sorry zegt."
+       },
+       {
+        "t": "Uitnodiging",
+        "d": "Een vraag of je ergens naartoe komt."
+       },
+       {
+        "t": "Weigeren",
+        "d": "Beleefd nee zeggen met een reden."
+       },
+       {
+        "t": "Compliment",
+        "d": "Een vriendelijke opmerking over iets goeds."
+       },
+       {
+        "t": "Formeel",
+        "d": "Beleefd en afstandelijk, voor onbekenden of een baas."
+       },
+       {
+        "t": "Informeel",
+        "d": "Los en vriendelijk, voor vrienden."
+       },
+       {
+        "t": "Small talk",
+        "d": "Een luchtig gesprekje over weer of weekend."
+       },
+       {
+        "t": "Reactie",
+        "d": "Wat je terugzegt op de ander."
+       },
+       {
+        "t": "Register",
+        "d": "De mate van beleefdheid van je taal."
+       }
+      ],
+      "sv": [
+       {
+        "v": "Which reply fits \"How are you?\"",
+        "o": [
+         "\"I am twenty-two years old.\"",
+         "\"Fine, thanks. And you?\"",
+         "\"You are welcome, my friend.\"",
+         "\"Very well, goodbye now.\""
+        ],
+        "c": 1,
+        "d": 1,
+        "s": 0,
+        "u": "How are you? -> Fine, thanks. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"I am twenty-two years old.\"? Dan denk je dat de vraag over je leeftijd gaat. How are you vraagt naar hoe het gaat, en niet naar je leeftijd.",
+         "Klopt: je antwoordt kort en vraagt beleefd terug hoe het met de ander gaat.",
+         "Koos je \"You are welcome, my friend.\"? Dan denk je dat je moet bedanken. Er is niets om voor te bedanken, en you are welcome past bij thank you.",
+         "Koos je \"Very well, goodbye now.\"? Dan denk je dat je meteen afscheid moet nemen. Je hebt het gesprek net begonnen, dus dat klinkt onbeleefd."
+        ],
+        "uh": "Hoe reageer je?"
+       },
+       {
+        "v": "Which reply fits \"Thank you very much!\"",
+        "o": [
+         "\"Please, after you.\"",
+         "\"Nice to meet you.\"",
+         "\"No, thanks.\"",
+         "\"You're welcome.\""
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 1,
+        "u": "Thank you -> You're welcome. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"Please, after you.\"? Dan denk je dat dit een reactie op een bedankje is. Dit zeg je als iemand voor mag gaan, en niet bij thank you.",
+         "Koos je \"Nice to meet you.\"? Dan denk je dat dit past. Dit zeg je bij een kennismaking, en niet na een bedankje.",
+         "Koos je \"No, thanks.\"? Dan denk je dat je iets weigert. Er is niets aangeboden, en je bedankt alleen terug.",
+         "Klopt: you're welcome is het gewone antwoord op een bedankje."
+        ],
+        "uh": "Wat zeg je terug?"
+       },
+       {
+        "v": "You step on someone's foot by accident. What do you say?",
+        "o": [
+         "\"Oh, sorry!\"",
+         "\"Excuse me, how are you?\"",
+         "\"You are welcome.\"",
+         "\"Congratulations!\""
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 1,
+        "u": "Fout gemaakt -> sorry. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: je biedt direct je excuses aan, want je deed de ander pijn.",
+         "Koos je \"Excuse me, how are you?\"? Dan denk je dat excuse me hier past. Je vraagt dan iets of trekt aandacht, en je biedt geen excuses aan.",
+         "Koos je \"You are welcome.\"? Dan denk je dat je bedankt wordt. Je trapt iemand op zijn voet, en dat vraagt om sorry.",
+         "Koos je \"Congratulations!\"? Dan denk je dat je moet feliciteren. Er is niets te vieren, en het is een ongelukje."
+        ],
+        "uh": "Wat zeg je?"
+       },
+       {
+        "v": "Which phrase can you use to say goodbye to a friend?",
+        "o": [
+         "\"How do you do?\"",
+         "\"Nice to meet you.\"",
+         "\"See you later!\"",
+         "\"Good morning, sir.\""
+        ],
+        "c": 2,
+        "d": 1,
+        "s": 0,
+        "u": "See you later = tot straks. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"How do you do?\"? Dan denk je dat dit een afscheid is. Het is een formele begroeting bij een kennismaking, dus het past niet.",
+         "Koos je \"Nice to meet you.\"? Dan denk je dat dit een afscheid is. Je zegt het bij het ontmoeten van iemand, en niet bij het weggaan.",
+         "Klopt: see you later is een gewone informele afscheidsgroet.",
+         "Koos je \"Good morning, sir.\"? Dan denk je dat dit een afscheid is. Het is een groet in de ochtend, en erg formeel voor een vriend."
+        ],
+        "uh": "Hoe zeg je gedag?"
+       },
+       {
+        "v": "Which reply accepts the invitation \"Would you like to come to my party?\"",
+        "o": [
+         "\"No problem, you are welcome.\"",
+         "\"I am afraid I can't, sorry.\"",
+         "\"I'd love to, thank you.\"",
+         "\"Sorry, I did not hear you.\""
+        ],
+        "c": 2,
+        "d": 1,
+        "s": 2,
+        "u": "I'd love to = graag. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"No problem, you are welcome.\"? Dan denk je dat dit een ja is. Dit zeg je na een bedankje, en het beantwoordt de uitnodiging niet.",
+         "Koos je \"I am afraid I can't, sorry.\"? Dan denk je dat dit accepteert. Dit is juist een nee, dus het klopt niet bij de vraag.",
+         "Klopt: ik zou graag komen is een beleefde ja.",
+         "Koos je \"Sorry, I did not hear you.\"? Dan denk je dat dit een antwoord is. Je vraagt om herhaling, en je accepteert niets."
+        ],
+        "uh": "Welk antwoord is ja?"
+       },
+       {
+        "v": "Which sentence is the most formal?",
+        "o": [
+         "\"Would you mind opening the window?\"",
+         "\"Open the window now, will you please?\"",
+         "\"Can you open the window for me?\"",
+         "\"Hey, open that window right now!\""
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 3,
+        "u": "Would you mind = formeel. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: would you mind klinkt beleefd en formeel.",
+         "Koos je \"Open the window now, will you please?\"? Dan denk je dat dit formeel is. Het klinkt als een bevel, en is dus informeel.",
+         "Koos je \"Can you open the window for me?\"? Dan denk je dat dit het meest formeel is. Het is gewoon neutraal, en would you mind is beleefder.",
+         "Koos je \"Hey, open that window right now!\"? Dan denk je dat dit formeel is. Het is een kort bevel, en dus onbeleefd."
+        ],
+        "uh": "Welke zin is het beleefdst?"
+       },
+       {
+        "v": "Which question is a good way to start small talk?",
+        "o": [
+         "\"What is your salary every single month?\"",
+         "\"How much did your car cost you last year?\"",
+         "\"Why are you so late again today?\"",
+         "\"Lovely weather today, isn't it?\""
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 4,
+        "u": "Small talk = weer, neutraal. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"What is your salary every single month?\"? Dan denk je dat dit een goede opening is. Het is een persoonlijke vraag, en klinkt bij een vreemde onbeleefd.",
+         "Koos je \"How much did your car cost you last year?\"? Dan denk je dat dit een goede opening is. Het gaat over geld, en dat is te persoonlijk.",
+         "Koos je \"Why are you so late again today?\"? Dan denk je dat dit een goede opening is. Het klinkt als een verwijt, en maakt geen prettig gesprek.",
+         "Klopt: een opmerking over het weer is neutraal en maakt een gesprek makkelijk."
+        ],
+        "uh": "Hoe begin je?"
+       },
+       {
+        "v": "What is the best reply?",
+        "o": [
+         "\"No problem. I am very hungry now.\"",
+         "\"Nice to meet you too. I am Sara.\"",
+         "\"You are welcome, Tom, any time.\"",
+         "\"Goodbye, Tom, see you tomorrow.\""
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 0,
+        "u": "Nice to meet you too. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"No problem. I am very hungry now.\"? Dan denk je dat no problem past. Er is niets gevraagd, en je geeft geen naam terug.",
+         "Klopt: je beantwoordt de groet en stelt jezelf voor.",
+         "Koos je \"You are welcome, Tom, any time.\"? Dan denk je dat hij je bedankt heeft. Hij stelt zich voor, dus you are welcome past niet.",
+         "Koos je \"Goodbye, Tom, see you tomorrow.\"? Dan denk je dat je moet vertrekken. Jullie ontmoeten elkaar net, dus een afscheid is te vroeg."
+        ],
+        "uh": "Wat zeg je terug?",
+        "ctx": "At a party, a boy you do not know comes to you and says: \"Hi, I am Tom. Nice to meet you.\" The music is loud, but he smiles and holds out his hand. You are at a birthday party of a friend from school and you want to be friendly."
+       },
+       {
+        "v": "Which reply is the best?",
+        "o": [
+         "\"Yes, I was in the weekend at home.\"",
+         "\"Weekend, ten hours, finished, bye.\"",
+         "\"I do not want to say anything.\"",
+         "\"Great, thanks! How was yours?\""
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 0,
+        "u": "Groet + antwoord + vraag terug.",
+        "uo": [
+         "Koos je \"Yes, I was in the weekend at home.\"? Dan denk je dat een ja past. Het is geen ja/nee-vraag, en de zin is ook grammaticaal onjuist.",
+         "Koos je \"Weekend, ten hours, finished, bye.\"? Dan denk je dat losse woorden genoeg zijn. Het is geen volledig antwoord, en het klinkt onbeleefd.",
+         "Koos je \"I do not want to say anything.\"? Dan denk je dat dit beleefd is. Het klinkt afwijzend, en past niet bij een gewone vraag.",
+         "Klopt: je groet terug, antwoordt en vraagt beleefd terug."
+        ],
+        "uh": "Wat zeg je?",
+        "ctx": "Your English teacher says: \"Good morning! How was your weekend?\" You meet her in the corridor at eight o'clock on Monday. She is smiling and waits for your answer before the lesson begins."
+       },
+       {
+        "v": "What is the best reply?",
+        "o": [
+         "\"Nice to meet you, my friend.\"",
+         "\"No problem.\"",
+         "\"Please, after you, go first.\"",
+         "\"I am fine, thanks a lot.\""
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 1,
+        "u": "Thanks -> no problem. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"Nice to meet you, my friend.\"? Dan denk je dat dit past. Jullie kennen elkaar al, en het is geen kennismaking.",
+         "Klopt: no problem betekent dat je het graag deed.",
+         "Koos je \"Please, after you, go first.\"? Dan denk je dat dit een reactie op een bedankje is. Dit zeg je bij een deur, en niet bij thanks.",
+         "Koos je \"I am fine, thanks a lot.\"? Dan denk je dat hij vraagt hoe het gaat. Hij bedankt je, dus je antwoordt op het bedankje."
+        ],
+        "uh": "Wat zeg je?",
+        "ctx": "Your friend says: \"Thanks for helping me with my homework!\" You helped her for an hour yesterday afternoon at her house, because she did not understand the maths. You were happy to help."
+       },
+       {
+        "v": "What is the best thing to say?",
+        "o": [
+         "\"Hello, you are welcome here.\"",
+         "\"Is it Friday today?\"",
+         "\"I am so sorry I am late.\"",
+         "\"Good luck with your meeting.\""
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 1,
+        "u": "Te laat = sorry. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"Hello, you are welcome here.\"? Dan denk je dat you are welcome past. Niemand bedankt je, en je moet sorry zeggen.",
+         "Koos je \"Is it Friday today?\"? Dan denk je dat een vraag over de dag past. Het lost niets op, en het is geen excuus.",
+         "Klopt: je biedt je excuses aan voor het te laat komen.",
+         "Koos je \"Good luck with your meeting.\"? Dan denk je dat dit past. Je bent zelf te laat, en je moet sorry zeggen."
+        ],
+        "uh": "Wat zeg je?",
+        "ctx": "You arrive ten minutes late for a meeting with your teacher. The meeting was about your project and the teacher is waiting at her desk. The bus was late, but you want to stay polite."
+       },
+       {
+        "v": "Which reply is the best?",
+        "o": [
+         "\"Thank you, you too!\"",
+         "\"No, I do not want to.\"",
+         "\"I am twenty years old.\"",
+         "\"Excuse me, where is the exit?\""
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 1,
+        "u": "Have a nice day -> You too. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: je bedankt en wenst de verkoper hetzelfde terug.",
+         "Koos je \"No, I do not want to.\"? Dan denk je dat het een vraag is. Het is een beleefde wens, en geen aanbod.",
+         "Koos je \"I am twenty years old.\"? Dan denk je dat je je leeftijd moet noemen. Dat hoort er niet bij, en het is geen antwoord.",
+         "Koos je \"Excuse me, where is the exit?\"? Dan denk je dat je de weg moet vragen. Je reageert niet op de wens, en dat klinkt onbeleefd."
+        ],
+        "uh": "Wat zeg je terug?",
+        "ctx": "A shop assistant says: \"Have a nice day!\" You have just bought a notebook and some pens in a small shop in town. You pick up your bag and are about to walk out of the door."
+       },
+       {
+        "v": "What is the best reply?",
+        "o": [
+         "\"Congratulations! Great news.\"",
+         "\"I am sorry to hear that news.\"",
+         "\"See you later, goodbye now.\"",
+         "\"You are welcome, my friend.\""
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 2,
+        "u": "Goed nieuws -> Congratulations.",
+        "uo": [
+         "Klopt: je feliciteert hem met het goede nieuws dat hij vertelt.",
+         "Koos je \"I am sorry to hear that news.\"? Dan denk je dat dit goed nieuws is dat je moet betreuren. Hij is geslaagd, dus je feliciteert.",
+         "Koos je \"See you later, goodbye now.\"? Dan denk je dat je moet vertrekken. Hij vertelt belangrijk nieuws, dus reageer erop.",
+         "Koos je \"You are welcome, my friend.\"? Dan denk je dat je bedankt wordt. Hij vertelt nieuws, en dus is it niet passend."
+        ],
+        "uh": "Wat zeg je?",
+        "ctx": "A classmate says: \"I passed my driving test!\" He tells you this at the start of the lesson with a big smile. He had to take the test twice and he worked very hard for it."
+       },
+       {
+        "v": "Which reply declines politely?",
+        "o": [
+         "\"No. I do not want to come to dinner.\"",
+         "\"Yes, I will come at ten o'clock sharp.\"",
+         "\"I would love to, but I have a trip.\"",
+         "\"Dinner is a bad idea for me, bye.\""
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 2,
+        "u": "Nee = bedanken + reden. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"No. I do not want to come to dinner.\"? Dan denk je dat een kort nee goed is. Het klinkt onvriendelijk, en je geeft geen reden.",
+         "Koos je \"Yes, I will come at ten o'clock sharp.\"? Dan denk je dat je moet accepteren. Je hebt die dag een schoolreis, dus je kunt niet komen.",
+         "Klopt: je bedankt, geeft een reden en blijft vriendelijk.",
+         "Koos je \"Dinner is a bad idea for me, bye.\"? Dan denk je dat dit beleefd is. Het is onbeleefd en afwijzend, en je geeft geen reden."
+        ],
+        "uh": "Wat zeg je?",
+        "ctx": "Your neighbour invites you for dinner on Friday, but you have a school trip that day. She is a friendly woman who often waves to you in the street. You want to stay polite, but you will not be home until late that evening."
+       },
+       {
+        "v": "Which greeting is polite?",
+        "o": [
+         "\"Hey, what's up, my mate, long time?\"",
+         "\"How do you do?\"",
+         "\"Where is the toilet, please, quickly?\"",
+         "\"Goodbye, see you soon, my friend.\""
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 0,
+        "u": "Eerste keer = How do you do? Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"Hey, what's up, my mate, long time?\"? Dan denk je dat dit past. Het is erg informeel, en niet geschikt voor een eerste ontmoeting met een ouder.",
+         "Klopt: dit is een beleefde begroeting bij een eerste ontmoeting.",
+         "Koos je \"Where is the toilet, please, quickly?\"? Dan denk je dat dit een begroeting is. Het is een vraag, en geen kennismaking.",
+         "Koos je \"Goodbye, see you soon, my friend.\"? Dan denk je dat dit een begroeting is. Het is een afscheid, en je ontmoet haar net."
+        ],
+        "uh": "Hoe begroet je haar?",
+        "ctx": "You meet your friend's mother for the first time. You are at your friend's house for a school project and she opens the door. She smiles and invites you in, and you want to make a good impression."
+       },
+       {
+        "v": "What is the best reply?",
+        "o": [
+         "\"No, I did not hear you at all.\"",
+         "\"Excuse me, I am very hungry now.\"",
+         "\"Welcome to my house, come in.\"",
+         "\"Thanks, I need it!\""
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 1,
+        "u": "Wens -> Thanks. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"No, I did not hear you at all.\"? Dan denk je dat je niets gehoord hebt. Hij wenst je succes, dus je reageert vriendelijk.",
+         "Koos je \"Excuse me, I am very hungry now.\"? Dan denk je dat dit past. Het heeft niets met de wens te maken, en klinkt vreemd.",
+         "Koos je \"Welcome to my house, come in.\"? Dan denk je dat dit past. Het is een andere situatie, en het reageert niet op de wens.",
+         "Klopt: je bedankt en reageert vriendelijk op de wens."
+        ],
+        "uh": "Wat zeg je?",
+        "ctx": "Your friend says: \"Good luck with your exam tomorrow!\" It is the evening before your English exam and you are a bit nervous. She sends you this message and wants to cheer you up."
+       },
+       {
+        "v": "How do you start?",
+        "o": [
+         "\"Who are you? Give me a room now.\"",
+         "\"Good afternoon, a room please.\"",
+         "\"Sorry, I have the wrong number.\"",
+         "\"Hello, you are welcome.\""
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 0,
+        "u": "Groet + doel + please. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"Who are you? Give me a room now.\"? Dan denk je dat een bevel past. Het klinkt onbeleefd, en past niet bij een hotel.",
+         "Klopt: je groet, noemt je doel en gebruikt please.",
+         "Koos je \"Sorry, I have the wrong number.\"? Dan denk je dat het fout nummer is. Je wilde juist een hotel bellen, dus je noemt je doel.",
+         "Koos je \"Hello, you are welcome.\"? Dan denk je dat de groet past. Zij heeft je niet bedankt, dus you are welcome past niet."
+        ],
+        "uh": "Hoe begin je?",
+        "ctx": "You phone a hotel and the receptionist answers: \"Good afternoon, Sunrise Hotel, how can I help you?\" You want to book a room for two nights for your family during the holidays. You have never called this hotel before."
+       },
+       {
+        "v": "Which reply is polite?",
+        "o": [
+         "\"No, thank you, I am full.\"",
+         "\"No. I hate all potatoes in general.\"",
+         "\"Yes, please, bring ten more potatoes.\"",
+         "\"Potatoes, no, finished, thank.\""
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 0,
+        "u": "Nee, dank je + compliment. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: je weigert vriendelijk en geeft een compliment.",
+         "Koos je \"No. I hate all potatoes in general.\"? Dan denk je dat een eerlijk antwoord goed is. Het klinkt onbeleefd, en is geen compliment.",
+         "Koos je \"Yes, please, bring ten more potatoes.\"? Dan denk je dat je moet accepteren. Je bent vol, dus je zegt nee.",
+         "Koos je \"Potatoes, no, finished, thank.\"? Dan denk je dat korte woorden genoeg zijn. Het klinkt abrupt, en het is geen beleefde zin."
+        ],
+        "uh": "Wat zeg je?",
+        "ctx": "Your host mother says: \"Would you like some more potatoes?\" You are full. You are staying with an English family for a week and you eat dinner with them. The food is very good, but you cannot eat any more."
+       },
+       {
+        "v": "What is a friendly reply?",
+        "o": [
+         "\"You should say sorry ten times now.\"",
+         "\"Happy birthday to you too, goodbye now.\"",
+         "\"I am fine, thanks. And how are you?\"",
+         "\"Thanks! Never mind.\""
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 2,
+        "u": "Sorry -> never mind. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"You should say sorry ten times now.\"? Dan denk je dat strenge woorden goed zijn. Het is onvriendelijk, en het is geen gerust stellen.",
+         "Koos je \"Happy birthday to you too, goodbye now.\"? Dan denk je dat hij jarig is. Jij bent jarig, dus dit past niet.",
+         "Koos je \"I am fine, thanks. And how are you?\"? Dan denk je dat hij vraagt hoe het gaat. Hij zegt sorry en feliciteert, dus je reageert daarop.",
+         "Klopt: je bedankt voor de felicitatie en stelt hem gerust."
+        ],
+        "uh": "Wat zeg je?",
+        "ctx": "Your friend writes: \"Happy birthday! Sorry I forgot your party last week.\" Your birthday was a week ago and he was ill and could not come to the party. He sends you this message and feels a little bad about it."
+       },
+       {
+        "v": "What do you say to the host?",
+        "o": [
+         "\"This party is really boring, I am going home.\"",
+         "\"Where is my coat? Quick, please!\"",
+         "\"Thank you. I have to go now.\"",
+         "\"Goodbye, nobody, I do not like it.\""
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 0,
+        "u": "Bedank + reden + compliment. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"This party is really boring, I am going home.\"? Dan denk je dat dit eerlijk en goed is. Het is onbeleefd, en kwetst de gastheer.",
+         "Koos je \"Where is my coat? Quick, please!\"? Dan denk je dat een vraag genoeg is. Je bedankt niet, en klinkt kortaf.",
+         "Klopt: je bedankt, noemt dat je weg moet en zegt dat het fijn was.",
+         "Koos je \"Goodbye, nobody, I do not like it.\"? Dan denk je dat dit past. Het is onduidelijk en onbeleefd, en het geeft geen reden."
+        ],
+        "uh": "Wat zeg je?",
+        "ctx": "You want to leave a party early. It is nine o'clock and you have to be up early tomorrow for a football match. The host is a friend of your sister, and you have enjoyed the evening."
+       },
+       {
+        "v": "What do you say?",
+        "o": [
+         "\"Yes, it is free.\"",
+         "\"You are welcome.\"",
+         "\"No, please go ahead.\"",
+         "\"I do not speak English.\""
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 2,
+        "u": "Taken? -> No, go ahead. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"Yes, it is free.\"? Dan denk je dat dit klopt. Yes betekent dat de plaats bezet is, dus dit is verwarrend.",
+         "Koos je \"You are welcome.\"? Dan denk je dat je bedankt wordt. Hij vraagt iets, en je antwoordt op de vraag.",
+         "Klopt: je zegt dat de plaats vrij is en nodigt uit te gaan zitten.",
+         "Koos je \"I do not speak English.\"? Dan denk je dat je niets hoeft te zeggen. Dat is niet waar, en klinkt vreemd."
+        ],
+        "uh": "Wat zeg je?",
+        "ctx": "A stranger on the train says: \"Excuse me, is this seat taken?\" The seat is free. The train is quite full and the stranger has a heavy bag. He looks friendly and waits for your reply before he sits down next to you."
+       },
+       {
+        "v": "What is the best reply?",
+        "o": [
+         "\"No, it was very bad indeed.\"",
+         "\"You are welcome, my dear teacher.\"",
+         "\"What is the next question for me?\"",
+         "\"Thank you, I am glad.\""
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 1,
+        "u": "Compliment -> thank you. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"No, it was very bad indeed.\"? Dan denk je dat bescheiden zijn betekent tegenspreken. Dat is ongemakkelijk, en een bedankje past beter.",
+         "Koos je \"You are welcome, my dear teacher.\"? Dan denk je dat je bedankt wordt voor een gunst. Je krijgt een compliment, dus je bedankt.",
+         "Koos je \"What is the next question for me?\"? Dan denk je dat je meteen door moet. Je reageert dan niet, en het klinkt onbeleefd.",
+         "Klopt: je bedankt de docent voor het compliment over je werk."
+        ],
+        "uh": "Wat zeg je?",
+        "ctx": "Your teacher says: \"Thank you for the presentation, it was very good.\" You have just given a presentation for the class about your holiday in Scotland. The other students are clapping and the teacher is smiling."
+       },
+       {
+        "v": "Which opening is suitable?",
+        "o": [
+         "\"Dear Mr Smith,\"",
+         "\"Hi mate, how is it going?\"",
+         "\"Yo Smith, what is up?\"",
+         "\"Hello you, how are things?\""
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 3,
+        "u": "Formeel: Dear Mr Smith. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: dear Mr + achternaam is formeel en beleefd.",
+         "Koos je \"Hi mate, how is it going?\"? Dan denk je dat dit past. Het is erg informeel, en niet geschikt voor een onbekende manager.",
+         "Koos je \"Yo Smith, what is up?\"? Dan denk je dat dit past. Het is te los, en onbeleefd voor een manager.",
+         "Koos je \"Hello you, how are things?\"? Dan denk je dat dit past. Het is te persoonlijk, en je kent hem niet."
+        ],
+        "uh": "Hoe begin je?",
+        "ctx": "You write an email to a manager you do not know. You are applying for a summer job at a company and you want to ask when you can come for an interview. You have never met the manager before."
+       },
+       {
+        "v": "What does he most likely mean?",
+        "o": [
+         "I am angry with you today",
+         "thank you or good health",
+         "where is the cup now",
+         "please leave the room now"
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 1,
+        "u": "Cheers = thanks of toost. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"I am angry with you today\"? Dan denk je dat cheers boos is. Het is juist vriendelijk, dus het klopt niet.",
+         "Klopt: cheers kan bedankt betekenen of een toost zijn.",
+         "Koos je \"where is the cup now\"? Dan denk je dat het een vraag is. Het is een uitroep, en geen vraag.",
+         "Koos je \"please leave the room now\"? Dan denk je dat cheers een verzoek is om te gaan. Het is juist vriendelijk, dus dat klopt niet."
+        ],
+        "uh": "Wat bedoelt hij?",
+        "ctx": "Someone hands you a coffee and says nothing. After you take it, he says: \"Cheers!\" You are visiting a small café with a British friend, and the owner puts the coffee on your table. He smiles when you pick up the cup."
+       },
+       {
+        "v": "Which polite phrase do you use?",
+        "o": [
+         "\"What? Say it again, quickly!\"",
+         "\"I do not care at all.\"",
+         "\"You are welcome, thank you.\"",
+         "\"Sorry, could you repeat?\""
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 4,
+        "u": "Sorry, could you repeat? Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"What? Say it again, quickly!\"? Dan denk je dat een kort bevel goed is. Het klinkt onbeleefd, en past niet bij een gesprek.",
+         "Koos je \"I do not care at all.\"? Dan denk je dat dit past. Het toont desinteresse, en is onbeleefd.",
+         "Koos je \"You are welcome, thank you.\"? Dan denk je dat dit past. Je bent niet bedankt, en je vraagt om herhaling.",
+         "Klopt: je vraagt beleefd om herhaling zonder onaardig te zijn."
+        ],
+        "uh": "Hoe vraag je om herhaling?",
+        "ctx": "You do not hear what someone says to you. You are in a busy train station and a woman asks you something, but a train passes and you cannot hear her. You want to stay polite."
+       },
+       {
+        "v": "What is the best short reply?",
+        "o": [
+         "\"Fine, thanks. You?\"",
+         "\"Let me tell you my whole day, from six o'clock.\"",
+         "\"Where is the printer?\"",
+         "\"No problem, you are welcome.\""
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 0,
+        "u": "Korte groet, kort antwoord. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: het is kort en vriendelijk en je vraagt terug.",
+         "Koos je \"Let me tell you my whole day, from six o'clock.\"? Dan denk je dat een lang verhaal past. Het is een luchtige groet, en bedoeld voor een kort antwoord.",
+         "Koos je \"Where is the printer?\"? Dan denk je dat een vraag over iets anders past. Je reageert niet op de groet, en het klinkt onhandig.",
+         "Koos je \"No problem, you are welcome.\"? Dan denk je dat hij bedankt heeft. Hij vraagt hoe het gaat, en je antwoordt daarop."
+        ],
+        "uh": "Wat zeg je?",
+        "ctx": "A colleague says \"How is it going?\" while walking past you. You do a summer job in an office and the colleague is on her way to a meeting. She does not stop walking, but she looks at you and smiles."
+       },
+       {
+        "v": "Which sentence is best?",
+        "o": [
+         "\"Okay, stop talking now. Bye.\"",
+         "\"Thank you. I must go now.\"",
+         "\"Nice to meet you, hello again.\"",
+         "\"You are welcome, how are you today?\""
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 4,
+        "u": "Bedank + reden + gedag. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"Okay, stop talking now. Bye.\"? Dan denk je dat dit past. Het klinkt onbeleefd, en is geen vriendelijk einde.",
+         "Klopt: je bedankt, noemt je reden en zegt gedag.",
+         "Koos je \"Nice to meet you, hello again.\"? Dan denk je dat dit past. Dit is een begroeting bij een kennismaking, en geen afscheid.",
+         "Koos je \"You are welcome, how are you today?\"? Dan denk je dat dit past. Je begint dan weer van voren af aan, en maakt het gesprek niet af."
+        ],
+        "uh": "Hoe sluit je af?",
+        "ctx": "You want to end a phone call politely. You talk with a friend of your parents about a holiday plan and the call has already lasted twenty minutes. You have to leave for your sports training."
+       }
+      ],
+      "oe": [
+       {
+        "bron": "Examenstijl",
+        "ctx": "Your friend says: \"Thanks so much for the lift to school, it really helped me.\" You were happy to help and you do not want to make a big deal of it.",
+        "v": "What do you reply? Write one friendly sentence.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Bijvoorbeeld \"No problem, any time.\" of \"You are welcome.\" (2p). De zin is vriendelijk en past bij het bedankje (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "A neighbour you do not know well invites you to a barbecue on Saturday evening. You have a football match that evening and you cannot miss it, because you are in the team. You like your neighbour and want to stay friendly.",
+        "v": "Write a polite reply that declines the invitation and gives a reason.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Een bedankje of \"Thank you for asking\" (1p). Een weigering zoals \"I am afraid I can't\" (1p). Een reden: je hebt een voetbalwedstrijd (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "You are in a shop and the assistant says: \"Good afternoon! Can I help you?\" You want to try a jacket in the window. It is a warm winter jacket and you have never been in this shop before, so you want to ask politely.",
+        "v": "Write a polite reply that starts the conversation.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Een groet (1p). Een beleefde vraag zoals \"Could I try the jacket in the window, please?\" (2p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "You are at the school gate and meet the father of a friend for the first time. He says: \"Hello, I am Paul, Jan's father.\" He smiles and holds out his hand. You are waiting for Jan and you want to make a good impression.",
+        "v": "Write a polite greeting and one short question for small talk.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Een formele groet zoals \"How do you do?\" of \"Nice to meet you\" (1p). Een korte vraag, bijvoorbeeld over de school of het weer (2p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "At the end of a phone call with your host family, the mother says: \"Thank you for calling, we will see you on Friday.\" You have talked for ten minutes about your visit and the call is almost over. You want to end it in a friendly way.",
+        "v": "Write a polite way to end the call.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Een bedankje (1p). Een afscheid zoals \"See you on Friday, goodbye!\" (1p). Een vriendelijke toon (1p)."
+       }
+      ]
+     }
     ]
    },
    {
