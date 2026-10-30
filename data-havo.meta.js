@@ -2797,6 +2797,27 @@ var VAKKEN = [
       "nOe": 5,
       "nBeg": 12,
       "hasSam": true
+     },
+     {
+      "id": "D4",
+      "lo": "en.D.4",
+      "gs": 2,
+      "naam": "Zaken en personen beschrijven",
+      "beschrijving": "Je leert in het Engels personen, voorwerpen en plaatsen te beschrijven, met de juiste woordvolgorde en vergelijkingen.",
+      "ceStatus": "SE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Uiterlijk van personen",
+       "Karakter en gedrag",
+       "Voorwerpen beschrijven",
+       "Plaatsen beschrijven",
+       "Vergelijken"
+      ],
+      "nSv": 27,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
      }
     ]
    },

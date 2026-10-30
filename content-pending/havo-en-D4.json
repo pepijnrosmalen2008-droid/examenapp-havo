@@ -1,0 +1,682 @@
+{
+ "id": "D4",
+ "lo": "en.D.4",
+ "gs": 2,
+ "naam": "Zaken en personen beschrijven",
+ "beschrijving": "Je leert in het Engels personen, voorwerpen en plaatsen te beschrijven, met de juiste woordvolgorde en vergelijkingen.",
+ "ceStatus": "SE",
+ "binas": "",
+ "val": "",
+ "onderwerpen": [
+  "Uiterlijk van personen",
+  "Karakter en gedrag",
+  "Voorwerpen beschrijven",
+  "Plaatsen beschrijven",
+  "Vergelijken"
+ ],
+ "sam": "Bij een beschrijving noem je uiterlijk, karakter, materiaal en plaats. Bijvoeglijke woorden staan vóór het zelfstandig naamwoord in de volgorde mening, grootte, leeftijd en materiaal. Je beschrijft een plaats met there is of there are en je vergelijkt met -er than, as ... as en the most. Kun je een woord niet vinden, omschrijf het dan met zijn functie. Noem bij een mening altijd een reden.",
+ "begrippen": [
+  {
+   "t": "Uiterlijk",
+   "d": "Hoe iemand eruitziet."
+  },
+  {
+   "t": "Karakter",
+   "d": "Hoe iemand is als persoon."
+  },
+  {
+   "t": "Bijvoeglijk naamwoord",
+   "d": "Een woord dat een zelfstandig naamwoord beschrijft."
+  },
+  {
+   "t": "Volgorde van bijvoeglijke woorden",
+   "d": "Mening, grootte, leeftijd, materiaal."
+  },
+  {
+   "t": "Materiaal",
+   "d": "Waarvan iets gemaakt is, zoals wooden of leather."
+  },
+  {
+   "t": "Vergrotende trap",
+   "d": "De -er vorm om twee dingen te vergelijken."
+  },
+  {
+   "t": "Overtreffende trap",
+   "d": "De the most of -est vorm voor drie of meer dingen."
+  },
+  {
+   "t": "Gelijkheid",
+   "d": "Met as ... as zeg je dat twee dingen gelijk zijn."
+  },
+  {
+   "t": "There is",
+   "d": "Een zin waarmee je zegt dat iets er is."
+  },
+  {
+   "t": "Omschrijven",
+   "d": "Uitleggen wat iets is of doet zonder het woord."
+  },
+  {
+   "t": "Contrast",
+   "d": "Twee dingen tegenover elkaar zetten met but."
+  },
+  {
+   "t": "Reden",
+   "d": "Waarom je iets vindt, met because."
+  }
+ ],
+ "sv": [
+  {
+   "v": "Which sentence describes a person's height?",
+   "o": [
+    "\"She is quite old, I think.\"",
+    "\"She is quite tall.\"",
+    "\"She is quite kind to everyone.\"",
+    "\"She is quite clever at school.\""
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 0,
+   "u": "Tall = lang. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"She is quite old, I think.\"? Dan denk je dat oud iets zegt over hoe lang iemand is. Old beschrijft de leeftijd, en niet hoe lang iemand is.",
+    "Klopt: tall gaat over lengte en quite verzacht het.",
+    "Koos je \"She is quite kind to everyone.\"? Dan denk je dat aardig iets over het lichaam zegt. Kind gaat over karakter, en niet over hoe groot iemand is.",
+    "Koos je \"She is quite clever at school.\"? Dan denk je dat slim iets over de lengte zegt. Clever beschrijft verstand, en geeft geen lichaamsmaat."
+   ],
+   "uh": "Welk woord gaat over lengte?"
+  },
+  {
+   "v": "Which word describes a person who likes to help others?",
+   "o": [
+    "lazy, a person who does not like work",
+    "selfish, a person who thinks of himself",
+    "shy, a person who is afraid to talk",
+    "helpful"
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 1,
+   "u": "Helpful = behulpzaam. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"lazy, a person who does not like work\"? Dan denk je dat lazy behulpzaam is. Lazy betekent lui, en dat is het tegenovergestelde.",
+    "Koos je \"selfish, a person who thinks of himself\"? Dan denk je dat selfish behulpzaam is. Selfish betekent egoïstisch, en past niet bij helpen.",
+    "Koos je \"shy, a person who is afraid to talk\"? Dan denk je dat shy behulpzaam is. Shy betekent verlegen, en gaat over spreken met anderen.",
+    "Klopt: helpful betekent behulpzaam, dus iemand die graag anderen helpt."
+   ],
+   "uh": "Welk woord past?"
+  },
+  {
+   "v": "Which word is the opposite of \"generous\"?",
+   "o": [
+    "mean",
+    "kind, a person who is nice to others",
+    "friendly, a person who is easy to like",
+    "cheerful, a person who is often happy"
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 1,
+   "u": "Generous <-> mean. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: mean betekent gierig en is het tegenovergestelde van vrijgevig.",
+    "Koos je \"kind, a person who is nice to others\"? Dan denk je dat kind het tegenovergestelde is. Kind is vriendelijk, en past bij generous.",
+    "Koos je \"friendly, a person who is easy to like\"? Dan denk je dat friendly het tegenovergestelde is. Friendly is aardig, en niet gierig.",
+    "Koos je \"cheerful, a person who is often happy\"? Dan denk je dat cheerful het tegenovergestelde is. Cheerful is vrolijk, en gaat over stemming."
+   ],
+   "uh": "Welk woord is het tegenovergestelde?"
+  },
+  {
+   "v": "Which word describes what an object is made of?",
+   "o": [
+    "heavy, which describes the weight",
+    "round, which describes the shape",
+    "wooden",
+    "expensive, which describes the price"
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 2,
+   "u": "Wooden = van hout. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"heavy, which describes the weight\"? Dan denk je dat zwaar iets over het materiaal zegt. Heavy gaat over gewicht, en niet over waarvan iets gemaakt is.",
+    "Koos je \"round, which describes the shape\"? Dan denk je dat rond een stof is. Round beschrijft alleen de vorm, en niet het materiaal.",
+    "Klopt: wooden betekent van hout en noemt dus het materiaal van een voorwerp.",
+    "Koos je \"expensive, which describes the price\"? Dan denk je dat duur een materiaal is. Expensive noemt de prijs, en zegt niets over waarvan iets is gemaakt."
+   ],
+   "uh": "Welk woord noemt het materiaal?"
+  },
+  {
+   "v": "Which phrase describes a place that is calm and has few people?",
+   "o": [
+    "\"a crowded city centre\"",
+    "\"a noisy street at night\"",
+    "\"a quiet village\"",
+    "\"a busy market on Saturday\""
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 3,
+   "u": "Quiet = rustig. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"a crowded city centre\"? Dan denk je dat crowded rustig is. Crowded betekent druk, en dat is het tegenovergestelde.",
+    "Koos je \"a noisy street at night\"? Dan denk je dat noisy rustig is. Noisy betekent lawaaierig, en past niet bij rustig.",
+    "Klopt: quiet betekent rustig en village is een klein dorp.",
+    "Koos je \"a busy market on Saturday\"? Dan denk je dat busy rustig is. Busy betekent druk, en past niet bij weinig mensen."
+   ],
+   "uh": "Welke plaats is rustig?"
+  },
+  {
+   "v": "Which sentence compares two people correctly?",
+   "o": [
+    "\"Tom is taller than Jim.\"",
+    "\"Tom is more tall than Jim.\"",
+    "\"Tom is tallest than Jim.\"",
+    "\"Tom is as taller as Jim.\""
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 4,
+   "u": "Taller than. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: bij een korte bijvoeglijk naamwoord gebruik je -er en than.",
+    "Koos je \"Tom is more tall than Jim.\"? Dan denk je dat je more bij tall gebruikt. Bij korte woorden gebruik je -er, en dus taller.",
+    "Koos je \"Tom is tallest than Jim.\"? Dan denk je dat je -est bij twee personen gebruikt. -est is de overtreffende trap, en is voor drie of meer.",
+    "Koos je \"Tom is as taller as Jim.\"? Dan denk je dat as en -er samen kunnen. Bij as ... as blijft het woord gewoon tall, dus as tall as."
+   ],
+   "uh": "Hoe vergelijk je twee mensen?"
+  },
+  {
+   "v": "Which word means \"slank\" in English?",
+   "o": [
+    "slow, which describes speed",
+    "sleepy, which describes a tired person",
+    "small, which describes size",
+    "slim"
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 0,
+   "u": "Slim = slank. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"slow, which describes speed\"? Dan denk je dat slow slank is. Slow beschrijft snelheid, en is niet hetzelfde als slim.",
+    "Koos je \"sleepy, which describes a tired person\"? Dan denk je dat sleepy slank is. Sleepy betekent slaperig, en gaat niet over lichaamsbouw.",
+    "Koos je \"small, which describes size\"? Dan denk je dat small slank is. Small betekent klein, en slim beschrijft de bouw.",
+    "Klopt: slim betekent slank en beschrijft de lichaamsbouw van een persoon."
+   ],
+   "uh": "Welk woord past?"
+  },
+  {
+   "v": "Which description is the best?",
+   "o": [
+    "\"He is a boy and he is lost in the shop.\"",
+    "\"He is seven, short, with curly hair.\"",
+    "\"He has curly short glasses hair.\"",
+    "\"He is very nice and kind to me at home.\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 0,
+   "u": "Leeftijd, lengte, haar, bril. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"He is a boy and he is lost in the shop.\"? Dan denk je dat dit genoeg is. De assistent weet dan niet hoe hij eruitziet, dus je moet details noemen.",
+    "Klopt: je noemt leeftijd, lengte, haar en bril.",
+    "Koos je \"He has curly short glasses hair.\"? Dan denk je dat deze volgorde klopt. De woorden staan door elkaar, en de zin is onbegrijpelijk.",
+    "Koos je \"He is very nice and kind to me at home.\"? Dan denk je dat dit past. Dit beschrijft karakter, en niet hoe hij eruitziet."
+   ],
+   "uh": "Hoe beschrijf je hem?",
+   "ctx": "You are in a big shop with your family and your little brother is lost. A shop assistant comes to help and asks: \"What does he look like?\" Your brother is seven years old, he is short, he has curly hair, and he wears glasses."
+  },
+  {
+   "v": "Which sentence describes her character?",
+   "o": [
+    "\"She is tall and has long hair.\"",
+    "\"She is fifteen and lives in Utrecht.\"",
+    "\"She is wearing a long coat.\"",
+    "\"She is funny and always ready to help.\""
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 1,
+   "u": "Funny + helpful = karakter. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"She is tall and has long hair.\"? Dan denk je dat dit karakter is. Het beschrijft het uiterlijk, en niet hoe ze is.",
+    "Koos je \"She is fifteen and lives in Utrecht.\"? Dan denk je dat dit karakter is. Het zijn feiten over leeftijd en plaats, en geen eigenschappen.",
+    "Koos je \"She is wearing a long coat.\"? Dan denk je dat dit karakter is. Het beschrijft kleding, en niet haar persoonlijkheid.",
+    "Klopt: funny en ready to help beschrijven haar karakter."
+   ],
+   "uh": "Welke zin beschrijft haar karakter?",
+   "ctx": "Your English teacher asks you to say something about your best friend. She is always the first to help when someone has a problem, and she makes everyone laugh with her stories during lunch."
+  },
+  {
+   "v": "Which description is correct?",
+   "o": [
+    "\"It is a leather small bag with a zip.\"",
+    "\"It is a small leather bag with a zip.\"",
+    "\"It is a bag small leather zip.\"",
+    "\"It has a small leather and zip bag.\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 2,
+   "u": "Grootte, materiaal, zelfstandig naamwoord.",
+   "uo": [
+    "Koos je \"It is a leather small bag with a zip.\"? Dan denk je dat het materiaal voor de grootte komt. De juiste volgorde is eerst grootte, en dan materiaal.",
+    "Klopt: de volgorde is grootte, materiaal en dan het zelfstandig naamwoord.",
+    "Koos je \"It is a bag small leather zip.\"? Dan denk je dat een rij woorden voldoende is. Het mist een, with en de juiste volgorde, dus het is geen goede zin.",
+    "Koos je \"It has a small leather and zip bag.\"? Dan denk je dat de woorden zo kloppen. De bag is het onderwerp, en het hoort aan het eind."
+   ],
+   "uh": "Hoe beschrijf je de tas?",
+   "ctx": "You have left your bag on the train and you are at the lost property office. The clerk asks you to describe it. It is small, it is made of leather, and it has a zip on the front and a long strap."
+  },
+  {
+   "v": "Which sentence describes the town correctly?",
+   "o": [
+    "\"It is a town small near sea with church old.\"",
+    "\"My town have a church old and sea.\"",
+    "\"It is a small town by the sea.\"",
+    "\"The town is big and very busy.\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 3,
+   "u": "Klein, bij de zee, oude kerk. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"It is a town small near sea with church old.\"? Dan denk je dat de woorden zo mogen staan. De woordvolgorde is verkeerd, en de zin klopt niet.",
+    "Koos je \"My town have a church old and sea.\"? Dan denk je dat have hier past. Het onderwerp is enkelvoud, dus it has.",
+    "Klopt: je noemt grootte, ligging en een kenmerk.",
+    "Koos je \"The town is big and very busy.\"? Dan denk je dat dit klopt. De stad is juist klein, en dus niet druk."
+   ],
+   "uh": "Hoe beschrijf je de stad?",
+   "ctx": "A visitor from England asks you about your hometown. It is a small town near the sea. It has an old church in the centre, a market on Saturdays, and a long beach where people walk in the summer."
+  },
+  {
+   "v": "Which word means \"hardwerkend\"?",
+   "o": [
+    "hardworking",
+    "workhard, which is not a word",
+    "hardly-working, which means almost nothing",
+    "working-hard, which is the wrong order"
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 1,
+   "u": "Hardworking = hardwerkend. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: hardworking betekent hardwerkend, iemand die altijd zijn best doet.",
+    "Koos je \"workhard, which is not a word\"? Dan denk je dat de woorden omgedraaid mogen worden. Workhard bestaat niet, en het juiste woord is hardworking.",
+    "Koos je \"hardly-working, which means almost nothing\"? Dan denk je dat dit hetzelfde is. Hardly betekent bijna niet, dus het is het omgekeerde.",
+    "Koos je \"working-hard, which is the wrong order\"? Dan denk je dat deze volgorde klopt. Het woord is hardworking, en de volgorde klopt niet."
+   ],
+   "uh": "Welk woord past?",
+   "ctx": "In a school report, a teacher writes about a student who always does her homework, never comes late, and is polite to everyone in the class. The report says she is a very good student."
+  },
+  {
+   "v": "Which sentence is correct?",
+   "o": [
+    "\"This phone is cheaper than that one.\"",
+    "\"This phone is more cheap than that one.\"",
+    "\"This phone is cheapest than that one.\"",
+    "\"This phone is as cheaper as that one.\""
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 4,
+   "u": "Cheaper than. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: cheap wordt cheaper en je gebruikt than.",
+    "Koos je \"This phone is more cheap than that one.\"? Dan denk je dat je more bij een kort woord gebruikt. Bij cheap gebruik je -er, dus cheaper.",
+    "Koos je \"This phone is cheapest than that one.\"? Dan denk je dat -est bij twee dingen past. -est is voor de overtreffende trap, en is voor drie of meer.",
+    "Koos je \"This phone is as cheaper as that one.\"? Dan denk je dat as en -er samen mogen. Bij as ... as blijft het woord gewoon, dus as cheap as."
+   ],
+   "uh": "Hoe vergelijk je?",
+   "ctx": "You want to buy a new phone and you compare two of them in a shop. The first phone costs 200 euros and the second costs 300 euros. Both have the same size and a good camera, so you decide on the price."
+  },
+  {
+   "v": "Which sentence uses \"there is\" correctly?",
+   "o": [
+    "\"There are a desk next to the window.\"",
+    "\"Is a desk next to the window.\"",
+    "\"There is a desk next to the window.\"",
+    "\"It has a desk next at the window.\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 3,
+   "u": "There is + enkelvoud. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"There are a desk next to the window.\"? Dan denk je dat there are bij een enkelvoud past. Een desk is enkelvoud, dus there is.",
+    "Koos je \"Is a desk next to the window.\"? Dan denk je dat there weggelaten kan worden. Dat kan in het Engels niet, dus er ontbreekt there.",
+    "Klopt: there is gebruik je bij een enkelvoud en je noemt de plaats.",
+    "Koos je \"It has a desk next at the window.\"? Dan denk je dat it has hier past. Je beschrijft de kamer, en next to is de juiste voorzetsel."
+   ],
+   "uh": "Welke zin klopt?",
+   "ctx": "You describe your bedroom in an email to a new friend in England. You want to tell her where the furniture is. There is a desk next to the window and a bed against the wall opposite the door."
+  },
+  {
+   "v": "Which sentence gives a reason?",
+   "o": [
+    "\"I like her, she is my teacher at school.\"",
+    "\"I like her because she explains well.\"",
+    "\"I like her so much, very very.\"",
+    "\"I like her but she is a teacher.\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 0,
+   "u": "Because = reden. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"I like her, she is my teacher at school.\"? Dan denk je dat dit een reden is. Het zegt alleen wie ze is, en je noemt geen reden.",
+    "Klopt: because voert de reden in waarom je haar je favoriete docent vindt.",
+    "Koos je \"I like her so much, very very.\"? Dan denk je dat herhalen een reden is. Het is alleen sterker, maar geen reden.",
+    "Koos je \"I like her but she is a teacher.\"? Dan denk je dat but uitlegt waarom je iets vindt. But zet iets tegenover elkaar, en geeft dus geen reden."
+   ],
+   "uh": "Welke zin geeft een reden?",
+   "ctx": "A classmate asks you why your favourite teacher is your favourite. You want to give an opinion and a reason, because she is very clear in lessons and always has time for your questions."
+  },
+  {
+   "v": "Which sentence is correct?",
+   "o": [
+    "\"She have long dark hair.\"",
+    "\"She has hairs long dark.\"",
+    "\"She is long dark hair.\"",
+    "\"She has long dark hair.\""
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 0,
+   "u": "She has long dark hair. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"She have long dark hair.\"? Dan denk je dat have bij she past. Bij she gebruik je has, dus dit is fout.",
+    "Koos je \"She has hairs long dark.\"? Dan denk je dat hairs en deze volgorde kloppen. Het is hair en de bijvoeglijke woorden staan ervoor, dus long dark hair.",
+    "Koos je \"She is long dark hair.\"? Dan denk je dat is bij haar past. Je zegt she has hair, en niet she is hair.",
+    "Klopt: has bij een mensen en long dark staan voor hair."
+   ],
+   "uh": "Welke zin klopt?",
+   "ctx": "You describe a girl in your class to a friend who has not met her yet. She has hair that falls to her shoulders. It is dark and straight, and she often wears a long scarf in winter."
+  },
+  {
+   "v": "Which sentence describes his personality?",
+   "o": [
+    "\"He is wearing a short jacket.\"",
+    "\"He is brave and clever.\"",
+    "\"He is sixteen years old.\"",
+    "\"He is in a house with a door.\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 1,
+   "u": "Brave + clever = karakter. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"He is wearing a short jacket.\"? Dan denk je dat dit karakter is. Het beschrijft kleding, en niet wie hij is.",
+    "Klopt: brave en clever zijn eigenschappen van zijn karakter in de film.",
+    "Koos je \"He is sixteen years old.\"? Dan denk je dat dit karakter is. Het is zijn leeftijd, en geen eigenschap.",
+    "Koos je \"He is in a house with a door.\"? Dan denk je dat dit karakter is. Het beschrijft een plaats, en niet zijn persoonlijkheid."
+   ],
+   "uh": "Welke zin beschrijft hem?",
+   "ctx": "In a film, the main character is a boy who saves his little sister from a fire and finds a clever way to open a locked door. Your friend asks you what he is like as a person."
+  },
+  {
+   "v": "Which description mentions both appearance and character?",
+   "o": [
+    "\"He is tall with short hair and he is very friendly.\"",
+    "\"He is tall, thin and has short hair.\"",
+    "\"He is friendly, kind and always helpful.\"",
+    "\"He lives in a house in my street.\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 0,
+   "u": "Uiterlijk + karakter. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: tall en short hair zijn uiterlijk en friendly is karakter.",
+    "Koos je \"He is tall, thin and has short hair.\"? Dan denk je dat dit beide beschrijft. Alles gaat over uiterlijk, en een eigenschap ontbreekt.",
+    "Koos je \"He is friendly, kind and always helpful.\"? Dan denk je dat dit beide beschrijft. Alles gaat over karakter, en het uiterlijk ontbreekt.",
+    "Koos je \"He lives in a house in my street.\"? Dan denk je dat dit beide beschrijft. Het noemt alleen een plaats, en geen uiterlijk of karakter."
+   ],
+   "uh": "Welke zin heeft beide?",
+   "ctx": "You are asked to describe your new neighbour for a school project about people in your street. You want to say what he looks like and what he is like as a person, so your description is complete."
+  },
+  {
+   "v": "Which phrase has the correct word order?",
+   "o": [
+    "\"a stone old beautiful house\"",
+    "\"an old stone beautiful house\"",
+    "\"a house beautiful old stone\"",
+    "\"a beautiful old stone house\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 2,
+   "u": "Mening, leeftijd, materiaal. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"a stone old beautiful house\"? Dan denk je dat het materiaal eerst komt. Het materiaal staat vlak voor het zelfstandig naamwoord, dus de volgorde is verkeerd.",
+    "Koos je \"an old stone beautiful house\"? Dan denk je dat de mening aan het eind komt. De mening staat meestal vooraan, dus de volgorde klopt niet.",
+    "Koos je \"a house beautiful old stone\"? Dan denk je dat het zelfstandig naamwoord voorop staat. In het Engels staan de bijvoeglijke woorden ervoor, dus dit is Frans-achtig.",
+    "Klopt: de volgorde is mening, leeftijd, materiaal en dan het zelfstandig naamwoord."
+   ],
+   "uh": "Welke volgorde klopt?",
+   "ctx": "In a text about a holiday house, the writer describes the house with four adjectives before the noun: beautiful (opinion), old (age), stone (material), and house. You must find the right order."
+  },
+  {
+   "v": "Which sentence compares three things correctly?",
+   "o": [
+    "\"This is more expensive of the three.\"",
+    "\"This is the expensivest of the three.\"",
+    "\"This is the most expensive of the three.\"",
+    "\"This is most expensive than the three.\""
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 4,
+   "u": "The most expensive of. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"This is more expensive of the three.\"? Dan denk je dat more past bij drie dingen. Dat is de vergrotende trap voor twee, dus the most.",
+    "Koos je \"This is the expensivest of the three.\"? Dan denk je dat -est bij een lang woord past. Expensive is lang, dus je gebruikt the most.",
+    "Klopt: bij drie of meer dingen gebruik je the most + het lange woord.",
+    "Koos je \"This is most expensive than the three.\"? Dan denk je dat than past bij de overtreffende trap. Bij the most gebruik je of, en niet than."
+   ],
+   "uh": "Hoe vergelijk je drie dingen?",
+   "ctx": "You write about three phones in a class review. The first costs 200 euros, the second 300 euros and the third 450 euros. You want to say that the third phone costs more than the other two."
+  },
+  {
+   "v": "Which sentence is correct?",
+   "o": [
+    "\"My bag is as heavier as yours.\"",
+    "\"My bag is so heavy than yours.\"",
+    "\"My bag is as heavy as yours.\"",
+    "\"My bag is heavy as yours.\""
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 4,
+   "u": "As heavy as. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"My bag is as heavier as yours.\"? Dan denk je dat heavier past in as ... as. Bij gelijkheid blijft het woord gewoon, dus as heavy as.",
+    "Koos je \"My bag is so heavy than yours.\"? Dan denk je dat so en than samen gelijkheid geven. Bij gelijkheid hoort as ... as, en than hoort bij vergelijken.",
+    "Klopt: as ... as drukt gelijkheid uit, dus beide tassen wegen evenveel.",
+    "Koos je \"My bag is heavy as yours.\"? Dan denk je dat de eerste as mag ontbreken. Je hebt as ... as nodig, dus as heavy as."
+   ],
+   "uh": "Hoe zeg je gelijk?",
+   "ctx": "You and your sister each own a school bag. Yours weighs three kilos and so does hers. You want to say that they weigh the same, so you use a comparison with the correct structure."
+  },
+  {
+   "v": "Which sentence describes the place with a feeling?",
+   "o": [
+    "\"The village is loud and busy, so it feels tiring.\"",
+    "\"The village has a school and a shop.\"",
+    "\"The village is in England near London.\"",
+    "\"The village is quiet and peaceful, so it feels relaxing.\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 3,
+   "u": "Plaats + gevoel. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"The village is loud and busy, so it feels tiring.\"? Dan denk je dat dit past. Het is het omgekeerde, en het dorp is juist rustig.",
+    "Koos je \"The village has a school and a shop.\"? Dan denk je dat dit gevoel beschrijft. Het noemt alleen voorzieningen, en geen gevoel.",
+    "Koos je \"The village is in England near London.\"? Dan denk je dat dit past. Het noemt alleen een plaats, en geen gevoel of sfeer.",
+    "Klopt: je noemt eigenschappen van de plaats en het gevoel dat het geeft."
+   ],
+   "uh": "Welke zin beschrijft sfeer?",
+   "ctx": "You describe the village where your grandparents live in a text for an English friend. The village is small, there are few cars, and you can hear the birds. You want to say that you feel calm when you are there."
+  },
+  {
+   "v": "Which sentence shows the contrast correctly?",
+   "o": [
+    "\"My cousin is shy, but my other cousin is outgoing.\"",
+    "\"My cousin is shy, and my other cousin is shy.\"",
+    "\"My cousin is shy, so my other cousin is outgoing.\"",
+    "\"My cousin is shy because my other cousin is outgoing.\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 4,
+   "u": "But = contrast. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: but zet de twee eigenschappen tegenover elkaar.",
+    "Koos je \"My cousin is shy, and my other cousin is shy.\"? Dan denk je dat twee keer shy een tegenstelling is. Beide nichten zijn dan gelijk, dus er is geen contrast.",
+    "Koos je \"My cousin is shy, so my other cousin is outgoing.\"? Dan denk je dat so twee dingen tegenover elkaar zet. So geeft een gevolg aan, en dat is een ander verband.",
+    "Koos je \"My cousin is shy because my other cousin is...\"? Dan denk je dat because een tegenstelling maakt. Het geeft een reden, en dat is een ander verband dan contrast."
+   ],
+   "uh": "Welke zin toont contrast?",
+   "ctx": "You describe your two cousins to a friend. One is very shy and she hardly talks in class. The other is outgoing and loves speaking in front of a group. You want to show the contrast in one sentence."
+  },
+  {
+   "v": "Which sentence is correct?",
+   "o": [
+    "\"He wears a long coat and carry a bag.\"",
+    "\"He is wearing a long coat and carrying a bag.\"",
+    "\"He is wear a long coat and carrying bag.\"",
+    "\"He was wearing a long coat and carries a bag.\""
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 2,
+   "u": "He is wearing ... and carrying ...",
+   "uo": [
+    "Koos je \"He wears a long coat and carry a bag.\"? Dan denk je dat carry hier past. Bij he is carrying nodig, en na and komt de ing-vorm.",
+    "Klopt: de tegenwoordige tijd met -ing past bij wat nu gebeurt.",
+    "Koos je \"He is wear a long coat and carrying bag.\"? Dan denk je dat wear past na is. Na is volgt wearing, en a ontbreekt voor bag.",
+    "Koos je \"He was wearing a long coat and carries a bag.\"? Dan denk je dat de tijden mogen verschillen. Beide handelingen gebeuren nu, dus dezelfde vorm."
+   ],
+   "uh": "Welke zin klopt?",
+   "ctx": "You see a man on the street and you describe him to a police officer. You want to say what he is wearing now and what he is carrying in his hands, using the present continuous."
+  },
+  {
+   "v": "Which phrase describes this classmate?",
+   "o": [
+    "\"loud and outgoing\"",
+    "\"lazy and careless\"",
+    "\"funny and cheerful\"",
+    "\"quiet and shy\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 0,
+   "u": "Quiet + shy. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"loud and outgoing\"? Dan denk je dat loud en outgoing passen. Dat is het tegenovergestelde, namelijk een druk persoon.",
+    "Koos je \"lazy and careless\"? Dan denk je dat lazy en careless passen. Dat gaat over inzet, en niet over weinig praten.",
+    "Koos je \"funny and cheerful\"? Dan denk je dat funny en cheerful passen. Dat is een vrolijk persoon, en niet iemand die stil is.",
+    "Klopt: quiet en shy passen bij iemand die weinig praat."
+   ],
+   "uh": "Welke woorden passen?",
+   "ctx": "You are describing a classmate to a new teacher. He does not say much during lessons, he blushes when the teacher asks him something and he prefers to work alone rather than in a group."
+  },
+  {
+   "v": "How can you describe the thing?",
+   "o": [
+    "\"It is a thing you use to open tins.\"",
+    "\"I do not know, forget it.\"",
+    "\"Give me the thing, you know.\"",
+    "\"It is a tin tool opening metal.\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 2,
+   "u": "Omschrijf met de functie. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: je omschrijft het voorwerp met zijn functie.",
+    "Koos je \"I do not know, forget it.\"? Dan denk je dat opgeven helpt. Dan krijg je je voorwerp niet, en je kunt het omschrijven.",
+    "Koos je \"Give me the thing, you know.\"? Dan denk je dat dit duidelijk is. Je noemt de functie niet, dus hij begrijpt het niet.",
+    "Koos je \"It is a tin tool opening metal.\"? Dan denk je dat deze losse woorden duidelijk zijn. De zin is grammaticaal fout, en moeilijk te volgen."
+   ],
+   "uh": "Hoe omschrijf je het?",
+   "ctx": "You are describing a tool to a shop assistant, but you do not know the English word for it. You want to explain what it is for, using simple words, so that he understands what you are looking for."
+  },
+  {
+   "v": "Which sentence gives an opinion with a reason?",
+   "o": [
+    "\"I like the town, it is a nice town.\"",
+    "\"I like the town because it has parks.\"",
+    "\"I like the town but it has parks.\"",
+    "\"I like the town so I like it.\""
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 3,
+   "u": "Mening + because. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"I like the town, it is a nice town.\"? Dan denk je dat het woord town een reden is. Je herhaalt alleen hetzelfde woord, en dat verklaart niets.",
+    "Klopt: I like is de mening en because de reden.",
+    "Koos je \"I like the town but it has parks.\"? Dan denk je dat but een reden inleidt. But zet iets tegenover elkaar, en geeft geen reden.",
+    "Koos je \"I like the town so I like it.\"? Dan denk je dat so een reden inleidt. Het herhaalt alleen je mening, en geeft dus geen echte reden."
+   ],
+   "uh": "Welke zin geeft een reden?",
+   "ctx": "You write a short text about your town for a pen friend. You want to give your opinion about it and add a reason, so your friend understands why you like living there."
+  }
+ ],
+ "oe": [
+  {
+   "bron": "Examenstijl",
+   "ctx": "You are in a shopping centre and you lose your small cousin. A security guard asks you to describe her. She is six years old, she is quite short, she has long fair hair in a ponytail and she is wearing a jacket with a hood.",
+   "v": "Write two sentences that describe your cousin so that the guard can find her.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Leeftijd en lengte, zoals \"She is six and quite short\" (1p). Haar en kleding, zoals \"long hair in a ponytail and a jacket with a hood\" (2p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Your English teacher asks you to describe your best friend to the class. He is kind and funny, he always helps others and he is a bit shy when he meets new people. You want to give a reason for liking him.",
+   "v": "Write three sentences about his character and give one reason why you like him.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Twee eigenschappen zoals kind en funny (1p). Een tegenstelling met but, zoals shy but friendly (1p). Een reden met because (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "You have lost a small wooden box with a metal lid at a campsite, and you go to the reception to describe it. It is the size of a book. Inside there are some old photos that are very important to you.",
+   "v": "Write two sentences that describe the box and what it contains.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Een beschrijving met de juiste volgorde, zoals \"a small wooden box with a metal lid\" (2p). Wat erin zit, zoals \"some old photos\" (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "You describe your town for an English pen friend. It is a big town with a lot of shops and a river. It is busy on Saturdays, but it has quiet parks where you can relax and read a book.",
+   "v": "Write two sentences about your town with there is or there are and one comparison.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "There is of there are correct gebruikt (1p). Een vergelijking zoals \"busier than\" of \"as quiet as\" (1p). Een duidelijke zin (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "You are comparing two phones for a school review. Phone A is cheaper than phone B, but phone B has a better camera and a bigger screen. You want to say which phone you prefer and why.",
+   "v": "Write two sentences: one comparison and one opinion with a reason.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Een vergelijking met -er than, zoals \"Phone A is cheaper than phone B\" (1p). Een mening met because (2p)."
+  }
+ ]
+}
