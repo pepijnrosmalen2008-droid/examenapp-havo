@@ -2776,6 +2776,27 @@ var VAKKEN = [
       "nOe": 5,
       "nBeg": 12,
       "hasSam": true
+     },
+     {
+      "id": "D3",
+      "lo": "en.D.3",
+      "gs": 2,
+      "naam": "Gevoelens uitdrukken",
+      "beschrijving": "Je leert in het Engels te zeggen hoe je je voelt, medeleven te tonen en de sterkte van een gevoel aan te passen.",
+      "ceStatus": "SE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Positieve gevoelens",
+       "Negatieve gevoelens",
+       "Uitdrukkingen voor gevoelens",
+       "Medeleven en geruststellen",
+       "De sterkte van een gevoel"
+      ],
+      "nSv": 26,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
      }
     ]
    },

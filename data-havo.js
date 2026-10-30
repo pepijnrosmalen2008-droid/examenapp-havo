@@ -122009,6 +122009,667 @@ var VAKKEN = [
         "u": "Een beleefde vraag om herhaling, zoals \"Sorry, could you repeat that, please?\" (2p). Of \"How much is it, please?\" (1p)."
        }
       ]
+     },
+     {
+      "id": "D3",
+      "lo": "en.D.3",
+      "gs": 2,
+      "naam": "Gevoelens uitdrukken",
+      "beschrijving": "Je leert in het Engels te zeggen hoe je je voelt, medeleven te tonen en de sterkte van een gevoel aan te passen.",
+      "ceStatus": "SE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Positieve gevoelens",
+       "Negatieve gevoelens",
+       "Uitdrukkingen voor gevoelens",
+       "Medeleven en geruststellen",
+       "De sterkte van een gevoel"
+      ],
+      "sam": "Je drukt een gevoel uit met een gevoelswoord of een uitdrukking: pleased, proud en over the moon voor blijdschap, disappointed, worried en fed up voor negatieve gevoelens. Bij slecht nieuws toon je medeleven met I am so sorry en stel je iemand gerust met don't worry. Met a bit, quite, really en extremely pas je de sterkte van een gevoel aan. Noem bij een gevoel ook de reden.",
+      "begrippen": [
+       {
+        "t": "Gevoel",
+        "d": "Wat je voelt, zoals blijdschap of verdriet."
+       },
+       {
+        "t": "Gevoelswoord",
+        "d": "Een woord dat een gevoel noemt, zoals pleased."
+       },
+       {
+        "t": "Uitdrukking",
+        "d": "Een vaste zin zoals over the moon of fed up."
+       },
+       {
+        "t": "Medeleven",
+        "d": "Laten merken dat je het jammer vindt voor de ander."
+       },
+       {
+        "t": "Geruststellen",
+        "d": "Iemand helpen minder bang of bezorgd te zijn."
+       },
+       {
+        "t": "Opluchting",
+        "d": "Een fijn gevoel als iets is afgelopen."
+       },
+       {
+        "t": "Verrassing",
+        "d": "Een gevoel bij iets onverwachts."
+       },
+       {
+        "t": "Teleurstelling",
+        "d": "Een gevoel als iets minder goed is dan verwacht."
+       },
+       {
+        "t": "Trots",
+        "d": "Een goed gevoel over iets of iemand."
+       },
+       {
+        "t": "Sterkte",
+        "d": "Hoe sterk een gevoel is, van a bit tot extremely."
+       },
+       {
+        "t": "Verzachten",
+        "d": "Een gevoel zwakker maken met a bit of quite."
+       },
+       {
+        "t": "Versterken",
+        "d": "Een gevoel sterker maken met really of extremely."
+       }
+      ],
+      "sv": [
+       {
+        "v": "Which phrase means that you are very happy?",
+        "o": [
+         "\"I am under the weather today.\"",
+         "\"I am over the moon.\"",
+         "\"I am down in the dumps today.\"",
+         "\"I am fed up with everything.\""
+        ],
+        "c": 1,
+        "d": 1,
+        "s": 0,
+        "u": "Over the moon = dolblij. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"I am under the weather today.\"? Dan denk je dat dit blij betekent. Under the weather betekent dat je ziek bent, en dus niet blij.",
+         "Klopt: over the moon is een uitdrukking voor heel erg blij zijn.",
+         "Koos je \"I am down in the dumps today.\"? Dan denk je dat dit blij betekent. Down in the dumps betekent somber, en is dus het tegenovergestelde.",
+         "Koos je \"I am fed up with everything.\"? Dan denk je dat dit blij betekent. Fed up betekent dat je er genoeg van hebt, en dat is geen blijdschap."
+        ],
+        "uh": "Welke uitdrukking is blij?"
+       },
+       {
+        "v": "Which phrase means that you feel sad?",
+        "o": [
+         "\"I feel on top of the world.\"",
+         "\"I feel full of beans.\"",
+         "\"I feel over the moon.\"",
+         "\"I feel down.\""
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 1,
+        "u": "Feel down = somber. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"I feel on top of the world.\"? Dan denk je dat dit verdrietig is. Het betekent juist dat je je geweldig voelt, en is dus positief.",
+         "Koos je \"I feel full of beans.\"? Dan denk je dat dit verdrietig is. Het betekent vol energie zijn, en is dus positief.",
+         "Koos je \"I feel over the moon.\"? Dan denk je dat dit verdrietig is. Het betekent dolblij, en dat is het tegenovergestelde.",
+         "Klopt: feel down betekent dat je je somber voelt."
+        ],
+        "uh": "Welke uitdrukking is verdrietig?"
+       },
+       {
+        "v": "Which word means \"teleurgesteld\"?",
+        "o": [
+         "disappointed",
+         "delighted, because it sounds similar",
+         "determined, because it starts the same",
+         "disgusted, because it starts with dis"
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 1,
+        "u": "Disappointed = teleurgesteld. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: disappointed betekent teleurgesteld, een gevoel als iets tegenvalt.",
+         "Koos je \"delighted, because it sounds similar\"? Dan denk je dat delighted teleurgesteld is. Delighted betekent erg blij, en is dus het tegenovergestelde.",
+         "Koos je \"determined, because it starts the same\"? Dan denk je dat determined teleurgesteld is. Determined betekent vastberaden, en gaat over doorzetten.",
+         "Koos je \"disgusted, because it starts with dis\"? Dan denk je dat disgusted teleurgesteld is. Disgusted betekent walging, en is sterker en anders."
+        ],
+        "uh": "Welk woord past?"
+       },
+       {
+        "v": "Which phrase means that you are tired of something?",
+        "o": [
+         "\"I am looking forward to it.\"",
+         "\"I am keen on it.\"",
+         "\"I am fed up with it.\"",
+         "\"I am crazy about it.\""
+        ],
+        "c": 2,
+        "d": 1,
+        "s": 2,
+        "u": "Fed up = er genoeg van hebben.",
+        "uo": [
+         "Koos je \"I am looking forward to it.\"? Dan denk je dat uitkijken naar iets hetzelfde is als het zat zijn. Looking forward to is blij verwachten, dus het tegenovergestelde.",
+         "Koos je \"I am keen on it.\"? Dan denk je dat graag willen gelijk is aan genoeg hebben. Keen on is enthousiast zijn, en dus positief.",
+         "Klopt: fed up with betekent dat je er genoeg van hebt.",
+         "Koos je \"I am crazy about it.\"? Dan denk je dat dol zijn op iets betekent dat je er klaar mee bent. Crazy about is juist heel graag, en dus positief."
+        ],
+        "uh": "Welke uitdrukking past?"
+       },
+       {
+        "v": "What do you say when a friend tells you bad news?",
+        "o": [
+         "\"Great, I am so glad about that.\"",
+         "\"That is not my problem.\"",
+         "\"Oh no, I am so sorry.\"",
+         "\"Wow, how nice for you.\""
+        ],
+        "c": 2,
+        "d": 1,
+        "s": 3,
+        "u": "Slecht nieuws -> medeleven. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"Great, I am so glad about that.\"? Dan denk je dat dit past. Je zegt dat je blij bent bij slecht nieuws, en dat is gevoelloos.",
+         "Koos je \"That is not my problem.\"? Dan denk je dat dit past. Het klinkt koud, en toont geen medeleven.",
+         "Klopt: je toont medeleven met de ander door sorry te zeggen bij slecht nieuws.",
+         "Koos je \"Wow, how nice for you.\"? Dan denk je dat dit past. Het klinkt alsof het goed nieuws is, terwijl het slecht nieuws is."
+        ],
+        "uh": "Wat zeg je?"
+       },
+       {
+        "v": "Which word expresses the strongest anger?",
+        "o": [
+         "furious",
+         "annoyed, which is a little angry",
+         "cross, which is quite angry",
+         "upset, which is a bit sad"
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 4,
+        "u": "Furious > annoyed. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: furious is de sterkste vorm van boos, bijna woedend.",
+         "Koos je \"annoyed, which is a little angry\"? Dan denk je dat annoyed het sterkste is. Annoyed is licht geïrriteerd, dus zwakker dan furious.",
+         "Koos je \"cross, which is quite angry\"? Dan denk je dat cross het sterkste is. Cross is boos maar niet extreem, dus zwakker dan furious.",
+         "Koos je \"upset, which is a bit sad\"? Dan denk je dat upset het sterkste is. Upset is meestal van streek zijn, en niet het sterkste."
+        ],
+        "uh": "Welk woord is het sterkst?"
+       },
+       {
+        "v": "Which sentence expresses that you look forward to something?",
+        "o": [
+         "\"I am sick of the holidays.\"",
+         "\"I am afraid of the holidays.\"",
+         "\"I am bored with the holidays.\"",
+         "\"I look forward to the holidays.\""
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 0,
+        "u": "Looking forward to = uitkijken naar.",
+        "uo": [
+         "Koos je \"I am sick of the holidays.\"? Dan denk je dat sick of uitkijken is. Het betekent er genoeg van hebben, dus een negatief gevoel.",
+         "Koos je \"I am afraid of the holidays.\"? Dan denk je dat bang zijn hetzelfde is als uitkijken. Afraid is een angstgevoel, en geen verlangen.",
+         "Koos je \"I am bored with the holidays.\"? Dan denk je dat zich vervelen een verwachting is. Bored betekent verveeld zijn, en past niet bij het uitkijken naar iets.",
+         "Klopt: looking forward to betekent uitkijken naar iets."
+        ],
+        "uh": "Welke zin past?"
+       },
+       {
+        "v": "Which reply expresses your joy?",
+        "o": [
+         "\"I am fed up, I worked so hard for it, really.\"",
+         "\"I am really pleased with them.\"",
+         "\"I am a bit worried about it all, to be honest.\"",
+         "\"I do not know how I feel about it at all.\""
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 0,
+        "u": "Pleased + reden. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"I am fed up, I worked so hard for it, really.\"? Dan denk je dat fed up past. Je bent juist blij, dus dat is een negatief gevoel.",
+         "Klopt: je noemt je gevoel en geeft meteen de reden waarom je blij bent.",
+         "Koos je \"I am a bit worried about it all, to be honest.\"? Dan denk je dat worried past. Je bent geslaagd, dus er is geen reden tot zorgen.",
+         "Koos je \"I do not know how I feel about it at all.\"? Dan denk je dat dit past. Het geeft geen gevoel, en je bent juist blij."
+        ],
+        "uh": "Hoe voel je je?",
+        "ctx": "You have just received your exam results. You passed all your subjects with good grades, and you had worked hard for months. Your friend phones you and asks: \"How do you feel about your results?\""
+       },
+       {
+        "v": "Which reply shows sympathy?",
+        "o": [
+         "\"Well, he was very old anyway, so that is normal.\"",
+         "\"Cheer up, it is only a dog after all.\"",
+         "\"Great, now you can buy a new one soon.\"",
+         "\"I am so sorry, that must be hard.\""
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 3,
+        "u": "Sympathie tonen. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"Well, he was very old anyway, so that is normal.\"? Dan denk je dat dit troost. Het klinkt koud, en neemt haar verdriet niet serieus.",
+         "Koos je \"Cheer up, it is only a dog after all.\"? Dan denk je dat dit troost. Het kleineert haar gevoel, en is onbeleefd.",
+         "Koos je \"Great, now you can buy a new one soon.\"? Dan denk je dat dit troost. Het klinkt gevoelloos, en past niet bij haar verdriet.",
+         "Klopt: je toont begrip voor haar verdriet en neemt haar gevoel serieus."
+        ],
+        "uh": "Wat zeg je?",
+        "ctx": "Your friend sends you a message: \"My dog died last night. He was fourteen years old. I cannot stop crying.\" You want to answer in a kind and warm way, as she really needs a friend now."
+       },
+       {
+        "v": "Which sentence expresses your annoyance?",
+        "o": [
+         "\"I am over the moon, the bus is an hour late.\"",
+         "\"I am fed up with waiting, the bus is late.\"",
+         "\"I am looking forward to waiting here for hours.\"",
+         "\"It is wonderful, I really love the rain.\""
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 2,
+        "u": "Fed up + reden. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"I am over the moon, the bus is an hour late.\"? Dan denk je dat over the moon past. Dat betekent dolblij, en je bent juist boos.",
+         "Klopt: fed up en de reden laten je ergernis horen.",
+         "Koos je \"I am looking forward to waiting here for hours.\"? Dan denk je dat dit past. Je wilt niet wachten, dus looking forward past niet.",
+         "Koos je \"It is wonderful, I really love the rain.\"? Dan denk je dat dit past. Je bent koud en nat, dus je vindt het niet wonderful."
+        ],
+        "uh": "Hoe voel je je?",
+        "ctx": "You have waited at the bus stop for an hour in the rain. The bus has not come, and you will be late for an important lesson. You are cold and wet, and you call a friend to complain."
+       },
+       {
+        "v": "Which sentence shows your excitement?",
+        "o": [
+         "\"I am not sure, I think I am a bit bored.\"",
+         "\"I am fed up with all the plans for it.\"",
+         "\"I can't wait, I am so excited!\"",
+         "\"It is okay, I guess, nothing special at all.\""
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 0,
+        "u": "Can't wait = opgewonden. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"I am not sure, I think I am a bit bored.\"? Dan denk je dat dit past. Je bent juist enthousiast, en bored past niet.",
+         "Koos je \"I am fed up with all the plans for it.\"? Dan denk je dat dit past. Je hebt je juist verheugd, dus fed up klopt niet.",
+         "Klopt: can't wait en excited laten je opwinding horen.",
+         "Koos je \"It is okay, I guess, nothing special at all.\"? Dan denk je dat dit past. Je telt de dagen af, dus het klinkt niet enthousiast."
+        ],
+        "uh": "Hoe voel je je?",
+        "ctx": "Tomorrow you are going on holiday to Spain with your family. You have never been abroad by plane before, and you have been counting the days. Your friend asks: \"Are you ready for the trip?\""
+       },
+       {
+        "v": "Which sentence expresses disappointment?",
+        "o": [
+         "\"I am so disappointed, I studied hard.\"",
+         "\"I am delighted, I got a low grade for it.\"",
+         "\"I am proud of my very low grade.\"",
+         "\"I am surprised, nothing happened to me.\""
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 1,
+        "u": "Disappointed + reden. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: disappointed past bij een tegenvallend resultaat.",
+         "Koos je \"I am delighted, I got a low grade for it.\"? Dan denk je dat delighted past. Je bent juist niet blij, en delighted is dolblij.",
+         "Koos je \"I am proud of my very low grade.\"? Dan denk je dat proud past. Een laag cijfer geeft geen trots, en het past niet bij je gevoel.",
+         "Koos je \"I am surprised, nothing happened to me.\"? Dan denk je dat dit past. Je geeft geen gevoel van teleurstelling, en de zin klopt niet bij de situatie."
+        ],
+        "uh": "Hoe voel je je?",
+        "ctx": "You studied hard for a history test for two weeks, but you got a low grade. Your parents ask you how the test went, and you want to tell them honestly how you feel about it."
+       },
+       {
+        "v": "What do you say to calm him down?",
+        "o": [
+         "\"Don't worry, you will be fine.\"",
+         "\"You will fail anyway.\"",
+         "\"It is your problem, not mine.\"",
+         "\"I am nervous too, I think we will fail.\""
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 3,
+        "u": "Don't worry = stel gerust. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: je stelt hem gerust met een vriendelijke zin.",
+         "Koos je \"You will fail anyway.\"? Dan denk je dat dit geruststelt. Het is onaardig, en maakt hem juist bang.",
+         "Koos je \"It is your problem, not mine.\"? Dan denk je dat dit past. Het klinkt koud, en helpt je vriend niet.",
+         "Koos je \"I am nervous too, I think we will fail.\"? Dan denk je dat dit geruststelt. Het maakt hem nog banger, dus dat helpt niet."
+        ],
+        "uh": "Hoe stel je hem gerust?",
+        "ctx": "Your friend is very nervous about an important exam tomorrow. He cannot sleep and keeps saying that he will fail. You want to calm him down and give him some hope with a short sentence."
+       },
+       {
+        "v": "Which phrase shows that you are proud of her?",
+        "o": [
+         "\"I am jealous of you.\"",
+         "\"I am angry with you.\"",
+         "\"I am really proud of you.\"",
+         "\"I am tired of you.\""
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 0,
+        "u": "Proud of you. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"I am jealous of you.\"? Dan denk je dat dit trots is. Jealous betekent jaloers, en dat is een ander gevoel.",
+         "Koos je \"I am angry with you.\"? Dan denk je dat dit past. Je hebt geen reden om boos te zijn, en het is onvriendelijk.",
+         "Klopt: proud of you laat zien dat je trots bent op haar prestatie.",
+         "Koos je \"I am tired of you.\"? Dan denk je dat dit past. Het klinkt negatief, en past niet bij haar succes."
+        ],
+        "uh": "Wat zeg je?",
+        "ctx": "Your younger sister has won first prize in the school science competition. She worked on her project for months, and she gave a great presentation in front of the whole school this afternoon."
+       },
+       {
+        "v": "Which sentence expresses her fear?",
+        "o": [
+         "\"I am delighted by big dogs.\"",
+         "\"I am terrified of big dogs.\"",
+         "\"I am curious about big dogs.\"",
+         "\"I am bored with big dogs.\""
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 1,
+        "u": "Terrified = doodsbang. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"I am delighted by big dogs.\"? Dan denk je dat delighted past. Dat betekent blij, en niet bang.",
+         "Klopt: terrified betekent doodsbang, dus een sterke vorm van angst.",
+         "Koos je \"I am curious about big dogs.\"? Dan denk je dat curious past. Dat is nieuwsgierigheid, en geen angst.",
+         "Koos je \"I am bored with big dogs.\"? Dan denk je dat bored past. Dat is verveling, en geen angst."
+        ],
+        "uh": "Hoe voelt ze zich?",
+        "ctx": "Your friend is afraid of dogs, and she has been since she was bitten as a child. Today you walk past a house with a very big dog in the garden. She stops and takes your arm."
+       },
+       {
+        "v": "Which sentence expresses your surprise?",
+        "o": [
+         "\"Oh, I knew everything about it already.\"",
+         "\"I am fed up with all of you now.\"",
+         "\"I do not like parties at all, really.\"",
+         "\"Wow, what a surprise!\""
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 0,
+        "u": "Surprise = verrassing. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"Oh, I knew everything about it already.\"? Dan denk je dat dit verrassing is. Je wist niets, dus het klopt niet.",
+         "Koos je \"I am fed up with all of you now.\"? Dan denk je dat dit past. Het is boosheid, en geen verrassing.",
+         "Koos je \"I do not like parties at all, really.\"? Dan denk je dat dit past. Het geeft geen verrassing weer, en past niet bij het moment.",
+         "Klopt: wow en I did not expect this laten verrassing horen."
+        ],
+        "uh": "Hoe reageer je?",
+        "ctx": "You come home after a long day at school. When you open the door, all your friends jump out and shout \"Happy birthday!\". You did not know anything about the party, and you are speechless."
+       },
+       {
+        "v": "Which reply shows that you understand her feelings?",
+        "o": [
+         "\"It is not a big deal, calm down.\"",
+         "\"I can understand why you are angry.\"",
+         "\"Why are you always angry?\"",
+         "\"Your brother is right to do that.\""
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 3,
+        "u": "Begrip tonen. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"It is not a big deal, calm down.\"? Dan denk je dat dit helpt. Het kleineert haar boosheid, en maakt haar eerder boos.",
+         "Klopt: je toont begrip voor haar gevoel zonder het te kleineren.",
+         "Koos je \"Why are you always angry?\"? Dan denk je dat dit past. Het klinkt als een verwijt, en toont geen begrip.",
+         "Koos je \"Your brother is right to do that.\"? Dan denk je dat dit past. Het geeft haar ongelijk, en toont geen begrip."
+        ],
+        "uh": "Hoe reageer je?",
+        "ctx": "Your friend tells you she is very angry with her brother because he used her laptop without asking and deleted her homework. She talks fast and her voice is shaking when she tells you about it."
+       },
+       {
+        "v": "What is the difference between the two sentences?",
+        "o": [
+         "the second feeling is much stronger",
+         "the first feeling is stronger than the second",
+         "there is no difference between the two",
+         "the first one is about the exam"
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 4,
+        "u": "A bit < extremely. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: extremely versterkt het gevoel veel meer dan a bit.",
+         "Koos je \"the first feeling is stronger than the second\"? Dan denk je dat a bit sterker is. A bit maakt het gevoel juist zwakker, en extremely maakt het sterker.",
+         "Koos je \"there is no difference between the two\"? Dan denk je dat de woorden niets doen. Ze veranderen de sterkte, dus er is een verschil.",
+         "Koos je \"the first one is about the exam\"? Dan denk je dat het onderwerp de verandering is. Het verschil zit in a bit en extremely, en niet in het onderwerp."
+        ],
+        "uh": "Wat is het verschil?",
+        "ctx": "You describe your feelings about two things. About the trip you say: \"I am a bit worried.\" About the exam you say: \"I am extremely worried.\" You want to show a difference between the two feelings."
+       },
+       {
+        "v": "Which feeling does he express?",
+        "o": [
+         "very tired",
+         "very angry",
+         "very worried",
+         "very happy"
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 0,
+        "u": "Over the moon = dolblij. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"very tired\"? Dan denk je dat het om vermoeidheid gaat. Over the moon heeft niets met moe te maken, en betekent dolblij.",
+         "Koos je \"very angry\"? Dan denk je dat het om boosheid gaat. Zijn stem is blij, en de uitdrukking is positief.",
+         "Koos je \"very worried\"? Dan denk je dat het om zorgen gaat. Hij heeft goed nieuws, dus hij is niet bezorgd.",
+         "Klopt: over the moon betekent dolblij en past bij goed nieuws over een baan."
+        ],
+        "uh": "Welk gevoel?",
+        "ctx": "A friend tells you in a happy voice: \"I am over the moon about my new job! They offered me the job this morning.\" You want to understand exactly how he feels, so you think about the expression."
+       },
+       {
+        "v": "Which sentence expresses both a positive and a negative feeling?",
+        "o": [
+         "\"I am happy and delighted about the trip too.\"",
+         "\"I am nervous and worried about the trip now.\"",
+         "\"I am happy, but a bit nervous.\"",
+         "\"I am happy, so I am happy.\""
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 1,
+        "u": "Positief + but + negatief. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"I am happy and delighted about the trip too.\"? Dan denk je dat hier een mengsel staat. Happy en delighted zijn allebei positief, dus er is geen tegenstelling.",
+         "Koos je \"I am nervous and worried about the trip now.\"? Dan denk je dat hier een mengsel staat. Nervous en worried zijn allebei negatief, dus het positieve gevoel ontbreekt.",
+         "Klopt: happy is positief en nervous negatief, met but verbonden.",
+         "Koos je \"I am happy, so I am happy.\"? Dan denk je dat herhalen een tweede gevoel is. De zin zegt twee keer happy, en dus is er maar één gevoel."
+        ],
+        "uh": "Welke zin heeft beide?",
+        "ctx": "You are going on a school trip next week. You are happy about the places you will visit, but you are also a little nervous because you will sleep away from home for the first time in your life."
+       },
+       {
+        "v": "What does he express?",
+        "o": [
+         "he loves the weather and wants more rain",
+         "he is afraid of the weather outside",
+         "he is tired of the weather",
+         "he is surprised by the weather today"
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 2,
+        "u": "Fed up = genoeg ervan. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"he loves the weather and wants more rain\"? Dan denk je dat hij de regen leuk vindt. Fed up betekent het tegenovergestelde, en hij wil zon.",
+         "Koos je \"he is afraid of the weather outside\"? Dan denk je dat hij bang is. Fed up gaat over genoeg hebben, en niet over angst.",
+         "Klopt: fed up betekent dat hij er genoeg van heeft.",
+         "Koos je \"he is surprised by the weather today\"? Dan denk je dat hij verrast is. Het regent al twee weken, dus er is geen verrassing."
+        ],
+        "uh": "Wat drukt hij uit?",
+        "ctx": "A classmate looks out of the window and says: \"I am so fed up with this weather. It has rained for two weeks now and I never get to play outside. I just want some sun for once!\""
+       },
+       {
+        "v": "Which sentence is the most suitable?",
+        "o": [
+         "\"This grade is stupid, you are wrong about it.\"",
+         "\"I am furious with you and with the grade.\"",
+         "\"Whatever. I do not care about it at all.\"",
+         "\"I am a bit disappointed. Could we talk?\""
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 4,
+        "u": "A bit disappointed + could we talk.",
+        "uo": [
+         "Koos je \"This grade is stupid, you are wrong about it.\"? Dan denk je dat dit past. Het is onbeleefd en beschuldigend, en lost niets op.",
+         "Koos je \"I am furious with you and with the grade.\"? Dan denk je dat dit past. Furious is erg sterk, en klinkt onbeleefd.",
+         "Koos je \"Whatever. I do not care about it at all.\"? Dan denk je dat dit past. Het is onverschillig en onbeleefd, en je wilt juist praten.",
+         "Klopt: a bit verzacht het gevoel en could we talk is beleefd."
+        ],
+        "uh": "Hoe zeg je het beleefd?",
+        "ctx": "You are a bit unhappy with your grade for a school project, because you think the teacher has made a mistake. You want to talk to her and stay polite, without sounding angry or rude."
+       },
+       {
+        "v": "What is the best reply?",
+        "o": [
+         "\"Oh no, sorry. Better luck next time!\"",
+         "\"That is what you get for not practising enough.\"",
+         "\"Congratulations, that is great news for you!\"",
+         "\"Whatever, it is not my problem.\""
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 3,
+        "u": "Sorry + moed inspreken. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: je toont medeleven en moedigt hem aan.",
+         "Koos je \"That is what you get for not practising enough.\"? Dan denk je dat dit past. Het klinkt als een verwijt, en troost niet.",
+         "Koos je \"Congratulations, that is great news for you!\"? Dan denk je dat dit past. Het is slecht nieuws, dus feliciteren is verkeerd.",
+         "Koos je \"Whatever, it is not my problem.\"? Dan denk je dat dit past. Het klinkt onverschillig, en toont geen medeleven."
+        ],
+        "uh": "Wat antwoord je?",
+        "ctx": "A friend sends you a message: \"I failed my driving test again. I do not know what to do. It is the third time.\" You want to reply in a warm and encouraging way that helps him feel better."
+       },
+       {
+        "v": "Which word is the opposite of \"thrilled\" here?",
+        "o": [
+         "cheerful, which is a similar feeling",
+         "miserable",
+         "pleased, which is also positive",
+         "excited, which is a close synonym"
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 1,
+        "u": "Thrilled <-> miserable. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"cheerful, which is a similar feeling\"? Dan denk je dat cheerful het tegenovergestelde is. Cheerful is vrolijk, en past bij thrilled.",
+         "Klopt: thrilled is enthousiast en miserable is ongelukkig.",
+         "Koos je \"pleased, which is also positive\"? Dan denk je dat pleased het tegenovergestelde is. Pleased is tevreden, dus ook positief.",
+         "Koos je \"excited, which is a close synonym\"? Dan denk je dat excited het tegenovergestelde is. Excited is opgewonden, en bijna gelijk aan thrilled."
+        ],
+        "uh": "Welk woord is het tegenovergestelde?",
+        "ctx": "In a text about a trip, a girl says: \"I was thrilled when we arrived, but the next day I felt miserable because it rained all day.\" You must find the word that has the opposite meaning of \"thrilled\"."
+       },
+       {
+        "v": "Which sentence uses a softener?",
+        "o": [
+         "\"I was extremely disappointed by the film.\"",
+         "\"I was totally furious about the film.\"",
+         "\"I was absolutely devastated by the film.\"",
+         "\"I was a bit disappointed by the film.\""
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 4,
+        "u": "A bit = verzachten. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"I was extremely disappointed by the film.\"? Dan denk je dat extremely het gevoel zwakker maakt. Het woord versterkt juist, en dat is het omgekeerde van verzachten.",
+         "Koos je \"I was totally furious about the film.\"? Dan denk je dat furious mild is. Het is een heel sterke boosheid, en past niet bij een gematigd oordeel.",
+         "Koos je \"I was absolutely devastated by the film.\"? Dan denk je dat devastated een licht woord is. Het betekent verwoest, en is veel te sterk voor een zacht oordeel.",
+         "Klopt: a bit maakt het gevoel zwakker en dus gematigder."
+        ],
+        "uh": "Welke zin is zacht?",
+        "ctx": "You want to express a weak negative feeling about a film you saw last night. You liked parts of it, but it was too long, and you want to sound moderate and not too strong in your opinion."
+       },
+       {
+        "v": "Which sentence expresses relief?",
+        "o": [
+         "\"What a relief, I passed!\"",
+         "\"What a pity, I passed!\"",
+         "\"What a shame, I am so sad!\"",
+         "\"What a surprise, I am very angry.\""
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 0,
+        "u": "Relief = opluchting. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: what a relief laat opluchting horen nu de spanning voorbij is.",
+         "Koos je \"What a pity, I passed!\"? Dan denk je dat dit opluchting is. What a pity betekent jammer, en past niet bij slagen.",
+         "Koos je \"What a shame, I am so sad!\"? Dan denk je dat dit opluchting is. Het is verdriet, en past niet bij het goede nieuws.",
+         "Koos je \"What a surprise, I am very angry.\"? Dan denk je dat dit opluchting is. Het is boosheid, en past niet bij het gevoel."
+        ],
+        "uh": "Welke zin past?",
+        "ctx": "You have just heard that you passed your difficult driving test on the first try. You had been very nervous for weeks, and now you tell your friend that you feel better than before the test."
+       }
+      ],
+      "oe": [
+       {
+        "bron": "Examenstijl",
+        "ctx": "Your best friend phones you and says that she has failed her driving test for the second time. She sounds very sad and says that she does not want to try again. You want to cheer her up and show that you care about her.",
+        "v": "Write two sentences: one that shows sympathy and one that comforts her.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Een zin met medeleven, zoals \"Oh no, I am so sorry\" (1p). Een zin die geruststelt, zoals \"Don't worry, you will pass next time\" (2p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "You have just heard that you got the part-time job that you wanted so much. You applied three weeks ago and were very nervous about it. Now your friend asks you how you feel.",
+        "v": "Write one sentence that tells your friend how you feel, and give a reason.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Een gevoelswoord of uitdrukking zoals \"I am over the moon\" (1p). Een reden zoals \"because I got the job\" (1p). Een goede zin (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "A classmate has been waiting for you for half an hour at the station, because your train was late. When you arrive, she is angry and says that she is fed up with waiting. You feel guilty and want to say sorry.",
+        "v": "Write what you say to apologise and to show you understand her feelings.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Een excuus zoals \"I am so sorry I am late\" (1p). Begrip zoals \"I can understand why you are angry\" (2p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "You and your friend have been planning a trip to London for months. Now you find out that the trip will be cancelled because of a strike. You are very disappointed, but your friend is only a bit sad.",
+        "v": "Write one sentence for you that expresses strong disappointment and one for your friend with a softener.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Sterk: \"I am extremely disappointed\" of gelijk (1p). Verzacht met a bit, zoals \"I am a bit sad\" (1p). Beide zinnen kloppen (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "You get a message from your teacher: you have won the school writing contest and you will read your story aloud at the party next week. You did not expect this, because you thought you were not good at writing.",
+        "v": "Write two sentences: one that expresses surprise and one that expresses pride.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Verrassing zoals \"Wow, what a surprise!\" (1p). Trots zoals \"I am really proud of myself\" (1p). Beide beleefd en duidelijk (1p)."
+       }
+      ]
      }
     ]
    },

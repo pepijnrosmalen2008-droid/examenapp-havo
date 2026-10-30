@@ -5,7 +5,7 @@
 Volledige beschrijving (functies, inhoud per niveau, prijs, wat Slagio niet is): https://slagio.nl/llms-full.txt
 
 ## In het kort
-- 12 vakken havo, 16 vakken vwo, 12 vakken vmbo; 23.944 oefenvragen en 4.346 begrippen.
+- 12 vakken havo, 16 vakken vwo, 12 vakken vmbo; 23.970 oefenvragen en 4.346 begrippen.
 - Adaptief oefenen: na een fout een vraag over hetzelfde onderwerp, een niveau makkelijker; uitleg bij elk fout antwoord.
 - Foutenboek en herhalen met gespreide herhaling, beheersing per leerdoel, studieplan tot het examen.
 - Examens met klok, proefexamens in examenstijl met modelantwoord en puntenverdeling, archief met officiële oude examens.
@@ -104,6 +104,7 @@ Volledige beschrijving (functies, inhoud per niveau, prijs, wat Slagio niet is):
 - [Aantekeningen maken bij het luisteren (Engels HAVO)](https://slagio.nl/leren/havo/engels/aantekeningen-maken-bij-het-luisteren.html): Je leert bij een luistertekst korte, bruikbare aantekeningen te maken en die te gebruiken om de vragen te beantwoorden.
 - [Adequaat reageren in sociale contacten (Engels HAVO)](https://slagio.nl/leren/havo/engels/adequaat-reageren-in-sociale-contacten.html): Je leert in het Engels passend te reageren op begroetingen, bedankjes, excuses, uitnodigingen en complimenten, formeel en informeel.
 - [Informatie vragen en verstrekken (Engels HAVO)](https://slagio.nl/leren/havo/engels/informatie-vragen-en-verstrekken.html): Je leert in het Engels beleefd informatie te vragen, de weg te wijzen, tijden en prijzen te noemen en om herhaling te vragen.
+- [Gevoelens uitdrukken (Engels HAVO)](https://slagio.nl/leren/havo/engels/gevoelens-uitdrukken.html): Je leert in het Engels te zeggen hoe je je voelt, medeleven te tonen en de sterkte van een gevoel aan te passen.
 - [Tekstsoort en schrijfdoel bepalen (Nederlands VWO)](https://slagio.nl/leren/vwo/nederlands/tekstsoort-en-schrijfdoel-bepalen.html): Je bepaalt of een tekst of tekstgedeelte uiteenzettend, beschouwend of betogend is, wat de schrijver ermee wil bereiken en wat het belangrijkste doel is als…
 - [Onderwerp en hoofdgedachte aangeven (Nederlands VWO)](https://slagio.nl/leren/vwo/nederlands/onderwerp-en-hoofdgedachte-aangeven.html): Je geeft het onderwerp en de hoofdgedachte van een tekst of tekstgedeelte aan: letterlijk als de kernzin er staat, en in eigen woorden als de hoofdgedachte…
 - [Relaties tussen tekstdelen benoemen (Nederlands VWO)](https://slagio.nl/leren/vwo/nederlands/relaties-tussen-tekstdelen-benoemen.html): Je benoemt inhoudelijke en functionele relaties tussen tekstdelen: verwijzingen, oorzaak en gevolg, doel en middel, standpunt met argumenten en subargumenten,…

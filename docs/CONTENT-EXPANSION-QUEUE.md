@@ -19,7 +19,7 @@
    leerdoelen van het domein af, vink dan ook het domein af.
 4. Bij een rode poort: niets pushen, wél melden.
 
-> Voortgang: **112 leerdoelen op v2** (havo bi.M3, nl.A1 t/m nl.A7, nl.B1 t/m nl.B5, nl.C1 t/m nl.C6, nl.D1 t/m nl.D6, nl.F1 t/m nl.F6, en.A1, en.A2, en.A3, en.A4, en.A5, en.A6, en.A7, en.A8, en.B1, en.B2, en.B3, en.B4, en.B5, en.B6, en.B7, en.B8, vwo nl.A1, vwo nl.A2, vwo nl.A3, vwo nl.A4, vwo nl.A5, vwo nl.A6, vwo nl.A7, vwo nl.B1, vwo nl.B2, vwo nl.B3, vwo nl.B4, vwo nl.B5, vwo nl.C1, vwo nl.C2, vwo nl.C3, vwo nl.C4, vwo nl.C5, vwo nl.C6, vwo nl.D1, vwo nl.D2, vwo nl.D3, vwo nl.D4, vwo nl.D5, vwo nl.D6, vwo nl.E1, vwo nl.E2, vwo nl.E3, vwo nl.E4, vwo nl.E5, vwo nl.E6, vmbo nl.A1, vmbo nl.A2, vmbo nl.A3, vmbo nl.A4, vmbo nl.A5, vmbo nl.B1, vmbo nl.B2, vmbo nl.B3, vmbo nl.B4, vmbo nl.B5, vmbo nl.C1, vmbo nl.C2, vmbo nl.C3, vmbo nl.C4, vmbo nl.C5, vmbo nl.D1, vmbo nl.D2, vmbo nl.D3, vmbo nl.D4, vmbo nl.D5, vmbo nl.D6, vmbo nl.E1, vmbo nl.E2, vmbo nl.E3, vmbo nl.E4, vmbo nl.E5, vmbo nl.E6, havo en.C1, havo en.C2, havo en.C3, havo en.C4, havo en.C5, havo en.C6, havo en.D1, havo en.D2). Werk dit getal bij bij elke afronding.
+> Voortgang: **113 leerdoelen op v2** (havo bi.M3, nl.A1 t/m nl.A7, nl.B1 t/m nl.B5, nl.C1 t/m nl.C6, nl.D1 t/m nl.D6, nl.F1 t/m nl.F6, en.A1, en.A2, en.A3, en.A4, en.A5, en.A6, en.A7, en.A8, en.B1, en.B2, en.B3, en.B4, en.B5, en.B6, en.B7, en.B8, vwo nl.A1, vwo nl.A2, vwo nl.A3, vwo nl.A4, vwo nl.A5, vwo nl.A6, vwo nl.A7, vwo nl.B1, vwo nl.B2, vwo nl.B3, vwo nl.B4, vwo nl.B5, vwo nl.C1, vwo nl.C2, vwo nl.C3, vwo nl.C4, vwo nl.C5, vwo nl.C6, vwo nl.D1, vwo nl.D2, vwo nl.D3, vwo nl.D4, vwo nl.D5, vwo nl.D6, vwo nl.E1, vwo nl.E2, vwo nl.E3, vwo nl.E4, vwo nl.E5, vwo nl.E6, vmbo nl.A1, vmbo nl.A2, vmbo nl.A3, vmbo nl.A4, vmbo nl.A5, vmbo nl.B1, vmbo nl.B2, vmbo nl.B3, vmbo nl.B4, vmbo nl.B5, vmbo nl.C1, vmbo nl.C2, vmbo nl.C3, vmbo nl.C4, vmbo nl.C5, vmbo nl.D1, vmbo nl.D2, vmbo nl.D3, vmbo nl.D4, vmbo nl.D5, vmbo nl.D6, vmbo nl.E1, vmbo nl.E2, vmbo nl.E3, vmbo nl.E4, vmbo nl.E5, vmbo nl.E6, havo en.C1, havo en.C2, havo en.C3, havo en.C4, havo en.C5, havo en.C6, havo en.D1, havo en.D2, havo en.D3). Werk dit getal bij bij elke afronding.
 > Oude stand (v1, domeinniveau): 7/220 domeinen; die tellen niet meer als af.
 >
 > **Omvang (okt 2026):** 220 domeinen (havo 59, vwo 84, vmbo 77) × gemiddeld ~6 leerdoelen
@@ -161,7 +161,7 @@
 - [ ] **HAVO · Engels** (`en`) · domein D — Gespreksvaardigheid
   - [x] D1 · en.D.1 Adequaat reageren in sociale contacten · 27 vragen (R1 7, R2 10, R3 10, 20 met eigen situatie), 12 begrippen, 4 figuren (begroetingen, bedankje en excuus, uitnodiging, formeel en informeel), geen clip
   - [x] D2 · en.D.2 Informatie vragen en verstrekken · 26 vragen (R1 7, R2 10, R3 9, 19 met eigen situatie), 12 begrippen, 4 figuren (vraagwoorden, directe en indirecte vraag, informatie geven, gegevens doorgeven), geen clip
-  - [ ] D3 · en.D.3 Gevoelens uitdrukken
+  - [x] D3 · en.D.3 Gevoelens uitdrukken · 26 vragen (R1 7, R2 10, R3 9, 19 met eigen situatie), 12 begrippen, 4 figuren (positieve gevoelens, uitdrukkingen, medeleven, sterkte), geen clip
   - [ ] D4 · en.D.4 Zaken en personen beschrijven
   - [ ] D5 · en.D.5 Standpunten en argumenten verwoorden
   - [ ] D6 · en.D.6 Strategieën om een gesprek gaande te houden
