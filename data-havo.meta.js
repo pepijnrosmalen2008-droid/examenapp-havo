@@ -2818,6 +2818,27 @@ var VAKKEN = [
       "nOe": 5,
       "nBeg": 12,
       "hasSam": true
+     },
+     {
+      "id": "D5",
+      "lo": "en.D.5",
+      "gs": 2,
+      "naam": "Standpunten en argumenten verwoorden",
+      "beschrijving": "Je leert in het Engels een mening te geven, die met redenen en voorbeelden te onderbouwen, het oneens te zijn en een betoog af te ronden.",
+      "ceStatus": "SE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Een standpunt innemen",
+       "Argumenten en voorbeelden geven",
+       "Instemmen en het oneens zijn",
+       "Tegenargumenten en nuanceren",
+       "Een betoog afronden"
+      ],
+      "nSv": 27,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
      }
     ]
    },

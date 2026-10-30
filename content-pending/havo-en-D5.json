@@ -1,0 +1,682 @@
+{
+ "id": "D5",
+ "lo": "en.D.5",
+ "gs": 2,
+ "naam": "Standpunten en argumenten verwoorden",
+ "beschrijving": "Je leert in het Engels een mening te geven, die met redenen en voorbeelden te onderbouwen, het oneens te zijn en een betoog af te ronden.",
+ "ceStatus": "SE",
+ "binas": "",
+ "val": "",
+ "onderwerpen": [
+  "Een standpunt innemen",
+  "Argumenten en voorbeelden geven",
+  "Instemmen en het oneens zijn",
+  "Tegenargumenten en nuanceren",
+  "Een betoog afronden"
+ ],
+ "sam": "Je neemt een standpunt in met I think of in my opinion en onderbouwt het met een reden die begint met because. Een voorbeeld leid je in met for example. Je stemt in met I agree en bent beleefd oneens met I am afraid I do not agree. Met however en on the other hand laat je een tegenargument zien. Met in conclusion of so rond je je betoog af. Een argument gaat over het onderwerp en niet over je smaak.",
+ "begrippen": [
+  {
+   "t": "Standpunt",
+   "d": "De mening die je verdedigt."
+  },
+  {
+   "t": "Argument",
+   "d": "Een reden voor je standpunt."
+  },
+  {
+   "t": "Voorbeeld",
+   "d": "Een geval dat je argument sterker maakt."
+  },
+  {
+   "t": "Tegenargument",
+   "d": "Een argument voor de andere kant."
+  },
+  {
+   "t": "Instemmen",
+   "d": "Zeggen dat je het eens bent."
+  },
+  {
+   "t": "Oneens zijn",
+   "d": "Zeggen dat je het anders ziet."
+  },
+  {
+   "t": "Beleefd",
+   "d": "Vriendelijk en met respect gezegd."
+  },
+  {
+   "t": "Signaalwoord",
+   "d": "Een woord dat het volgende deel aankondigt."
+  },
+  {
+   "t": "Contrast",
+   "d": "Twee dingen tegenover elkaar zetten."
+  },
+  {
+   "t": "Conclusie",
+   "d": "Het slot dat je mening samenvat."
+  },
+  {
+   "t": "Nuanceren",
+   "d": "Een mening verzachten door ook de andere kant te noemen."
+  },
+  {
+   "t": "Betoog",
+   "d": "Een tekst waarin je een mening onderbouwt."
+  }
+ ],
+ "sv": [
+  {
+   "v": "Which phrase introduces your opinion?",
+   "o": [
+    "\"For example, ...\" at the start",
+    "\"In my opinion, ...\"",
+    "\"By the way, ...\" at the start",
+    "\"As soon as, ...\" at the start"
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 0,
+   "u": "In my opinion = mijn mening. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"For example, ... at the start\"? Dan denk je dat een voorbeeld je oordeel is. For example kondigt een geval aan, en dus niet je mening.",
+    "Klopt: in my opinion kondigt aan dat je je eigen mening geeft.",
+    "Koos je \"By the way, ... at the start\"? Dan denk je dat een zijpad een standpunt is. By the way voegt iets losstaands toe, en geeft geen kant aan.",
+    "Koos je \"As soon as, ... at the start\"? Dan denk je dat een tijdsaanduiding een oordeel is. As soon as noemt een moment, en geen mening."
+   ],
+   "uh": "Welke woorden kondigen een mening aan?"
+  },
+  {
+   "v": "Which word introduces a reason?",
+   "o": [
+    "\"although\", which shows a contrast",
+    "\"however\", which shows a contrast",
+    "\"unless\", which sets a condition",
+    "\"because\""
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 1,
+   "u": "Because = reden. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"although, which shows a contrast\"? Dan denk je dat although een reden geeft. Het zet iets tegenover elkaar, en dat is een ander verband.",
+    "Koos je \"however, which shows a contrast\"? Dan denk je dat however een reden geeft. Het markeert een tegenstelling, en geeft geen reden.",
+    "Koos je \"unless, which sets a condition\"? Dan denk je dat unless een reden geeft. Het stelt een voorwaarde, en geen reden.",
+    "Klopt: because geeft de reden voor je standpunt."
+   ],
+   "uh": "Welk woord geeft een reden?"
+  },
+  {
+   "v": "Which phrase introduces an example?",
+   "o": [
+    "\"for example\"",
+    "\"in conclusion\", which ends the text",
+    "\"on the other hand\", which gives the other side",
+    "\"in my opinion\", which gives your view"
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 1,
+   "u": "For example = voorbeeld. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: for example kondigt een voorbeeld aan.",
+    "Koos je \"in conclusion, which ends the text\"? Dan denk je dat in conclusion een voorbeeld inleidt. Het sluit je betoog af, en geeft geen voorbeeld.",
+    "Koos je \"on the other hand, which gives the other side\"? Dan denk je dat on the other hand een voorbeeld inleidt. Het introduceert de andere kant, en is geen voorbeeld.",
+    "Koos je \"in my opinion, which gives your view\"? Dan denk je dat in my opinion een voorbeeld inleidt. Het geeft je mening, en is geen voorbeeld."
+   ],
+   "uh": "Welke woorden kondigen een voorbeeld aan?"
+  },
+  {
+   "v": "Which phrase shows that you agree?",
+   "o": [
+    "\"I am afraid I disagree.\"",
+    "\"That is not true at all.\"",
+    "\"I totally agree with you.\"",
+    "\"I see it differently.\""
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 2,
+   "u": "Agree = het eens. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"I am afraid I disagree.\"? Dan denk je dat dit instemming is. I disagree betekent dat je het oneens bent, en is dus het tegenovergestelde.",
+    "Koos je \"That is not true at all.\"? Dan denk je dat dit instemming is. Het ontkent de uitspraak, en toont dus oneens zijn.",
+    "Klopt: I totally agree zegt dat je het eens bent.",
+    "Koos je \"I see it differently.\"? Dan denk je dat dit instemming is. Het zegt dat je het anders ziet, en dus oneens bent."
+   ],
+   "uh": "Welke zin toont instemming?"
+  },
+  {
+   "v": "Which phrase disagrees politely?",
+   "o": [
+    "\"You are completely wrong.\"",
+    "\"That is a stupid idea.\"",
+    "\"I am afraid I do not agree.\"",
+    "\"I totally agree with you.\""
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 2,
+   "u": "I am afraid I do not agree. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"You are completely wrong.\"? Dan denk je dat dit beleefd oneens is. Het is een aanval, en klinkt onbeleefd.",
+    "Koos je \"That is a stupid idea.\"? Dan denk je dat dit beleefd is. Het beledigt de ander, en dat past niet bij een discussie.",
+    "Klopt: I am afraid verzacht het oneens zijn en blijft beleefd.",
+    "Koos je \"I totally agree with you.\"? Dan denk je dat dit oneens zijn is. Het betekent juist instemming, dus het is het tegenovergestelde."
+   ],
+   "uh": "Hoe ben je beleefd oneens?"
+  },
+  {
+   "v": "Which word introduces a contrast?",
+   "o": [
+    "\"however\"",
+    "\"therefore\", which shows a result",
+    "\"moreover\", which adds a point",
+    "\"for instance\", which gives an example"
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 3,
+   "u": "However = contrast. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: however zet iets tegenover het vorige.",
+    "Koos je \"therefore, which shows a result\"? Dan denk je dat therefore een tegenstelling geeft. Het geeft een gevolg, en dat is een ander verband.",
+    "Koos je \"moreover, which adds a point\"? Dan denk je dat moreover een tegenstelling geeft. Het voegt iets toe, en zet niets tegenover.",
+    "Koos je \"for instance, which gives an example\"? Dan denk je dat for instance een tegenstelling geeft. Het geeft een voorbeeld, en is geen tegenstelling."
+   ],
+   "uh": "Welk woord toont contrast?"
+  },
+  {
+   "v": "Which phrase introduces a conclusion?",
+   "o": [
+    "\"for instance\", at the end of a text",
+    "\"on the other hand\", at the end of a text",
+    "\"by the way\", at the end of a text",
+    "\"in conclusion\""
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 4,
+   "u": "In conclusion = tot slot. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"for instance, at the end of a text\"? Dan denk je dat een voorbeeld het slot is. For instance voegt een geval toe, en sluit niets af.",
+    "Koos je \"on the other hand, at the end of a text\"? Dan denk je dat de andere kant het slot is. On the other hand opent een nieuw punt, en rondt niets af.",
+    "Koos je \"by the way, at the end of a text\"? Dan denk je dat een zijpad een samenvatting is. By the way voegt iets bij, en vat niets samen.",
+    "Klopt: in conclusion sluit je betoog af en vat je mening samen."
+   ],
+   "uh": "Welke woorden sluiten af?"
+  },
+  {
+   "v": "Which sentence states your opinion clearly?",
+   "o": [
+    "\"School uniforms are in England.\"",
+    "\"I think uniforms are a good idea.\"",
+    "\"Maybe uniforms, I do not know.\"",
+    "\"My cousin has a uniform and a bag.\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 0,
+   "u": "I think = standpunt. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"School uniforms are in England.\"? Dan denk je dat dit een mening is. Het is een feit, en geen standpunt.",
+    "Klopt: I think en een duidelijke bewering geven je standpunt.",
+    "Koos je \"Maybe uniforms, I do not know.\"? Dan denk je dat dit een duidelijk standpunt is. Het blijft vaag, en geeft geen mening.",
+    "Koos je \"My cousin has a uniform and a bag.\"? Dan denk je dat dit een mening is. Het beschrijft alleen, en geeft geen oordeel."
+   ],
+   "uh": "Welke zin geeft je mening?",
+   "ctx": "In class your teacher asks: \"Should students wear school uniforms?\" You think that uniforms are a good idea, because you saw how it works at the school of your cousin in England. You want to start with a clear opinion."
+  },
+  {
+   "v": "Which sentence gives a reason?",
+   "o": [
+    "\"I think so, uniforms are just uniforms to me.\"",
+    "\"I think so but I like my jeans and sweaters.\"",
+    "\"I think so, so I think so, as I said.\"",
+    "\"I think so because it is fair.\""
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 1,
+   "u": "Because = reden. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"I think so, uniforms are just uniforms to me.\"? Dan denk je dat dit een reden is. Het herhaalt alleen het woord, en geeft geen reden.",
+    "Koos je \"I think so but I like my jeans and sweaters.\"? Dan denk je dat but een reden geeft. But zet iets tegenover elkaar, en geeft geen reden.",
+    "Koos je \"I think so, so I think so, as I said.\"? Dan denk je dat dit een reden is. Het herhaalt je mening, en verklaart niets.",
+    "Klopt: because voert de reden in waarom je dit vindt."
+   ],
+   "uh": "Welke zin geeft een reden?",
+   "ctx": "You have said that you are in favour of school uniforms. Your teacher now asks you to explain why you think so. You want to give one good reason that makes your opinion stronger and clear for the class."
+  },
+  {
+   "v": "Which reply disagrees politely?",
+   "o": [
+    "\"That is stupid, you are completely wrong.\"",
+    "\"I see your point, but it helps us.\"",
+    "\"I agree, so I do not agree with you.\"",
+    "\"No. Homework is good. That is the end.\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 2,
+   "u": "I see your point, but ... Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"That is stupid, you are completely wrong.\"? Dan denk je dat dit beleefd is. Het is een belediging, en geeft geen argument.",
+    "Klopt: je toont begrip en geeft daarna je eigen mening.",
+    "Koos je \"I agree, so I do not agree with you.\"? Dan denk je dat dit een goed antwoord is. Het spreekt zichzelf tegen, en het is onduidelijk.",
+    "Koos je \"No. Homework is good. That is the end.\"? Dan denk je dat dit beleefd oneens is. Het is kortaf, en je geeft geen reden."
+   ],
+   "uh": "Hoe ben je beleefd oneens?",
+   "ctx": "A friend says: \"Homework should be banned, because it is a waste of time.\" You do not agree, but you do not want to be rude. You want to show that you understand his point and then give your own view."
+  },
+  {
+   "v": "Which reply shows agreement and gives a reason?",
+   "o": [
+    "\"I agree, but phones are bad for us all.\"",
+    "\"I disagree, because we can look up things.\"",
+    "\"I agree, we can look things up fast.\"",
+    "\"Phones, yes, no, maybe, I do not know.\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 2,
+   "u": "Agree + because. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"I agree, but phones are bad for us all.\"? Dan denk je dat dit instemming met een reden is. But keert het om, en het geeft geen reden.",
+    "Koos je \"I disagree, because we can look up things.\"? Dan denk je dat dit instemming is. I disagree betekent oneens, en het zinsdeel is ook onvolledig.",
+    "Klopt: je toont instemming en geeft een reden.",
+    "Koos je \"Phones, yes, no, maybe, I do not know.\"? Dan denk je dat dit een antwoord is. Het is onduidelijk, en geeft geen reden."
+   ],
+   "uh": "Hoe stem je in?",
+   "ctx": "A friend says: \"Phones are really useful in class.\" You agree with him, because last week you used your phone to find an answer in a few seconds during a project and it saved you a lot of time."
+  },
+  {
+   "v": "Which word introduces the second argument?",
+   "o": [
+    "\"In addition\"",
+    "\"Firstly\", which starts the list",
+    "\"In conclusion\", which ends the essay",
+    "\"Although\", which sets a contrast"
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 1,
+   "u": "In addition = bovendien. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: in addition voegt een tweede punt toe.",
+    "Koos je \"Firstly, which starts the list\"? Dan denk je dat firstly het tweede argument inleidt. Het begint de lijst, en is dus het eerste.",
+    "Koos je \"In conclusion, which ends the essay\"? Dan denk je dat in conclusion het tweede argument inleidt. Het sluit af, en komt aan het einde.",
+    "Koos je \"Although, which sets a contrast\"? Dan denk je dat although een tweede argument inleidt. Het zet iets tegenover elkaar, en voegt niets toe."
+   ],
+   "uh": "Welk woord voegt toe?",
+   "ctx": "You write an essay about cycling. You have two arguments: first, it is cheap, and second, it keeps you fit. You want to start the second argument with a word that adds a point to the first one in your text."
+  },
+  {
+   "v": "Which sentence gives an example?",
+   "o": [
+    "\"For example, my cousin feels fitter.\"",
+    "\"In my opinion, my cousin is a good cyclist.\"",
+    "\"However, my cousin is not a cyclist at all.\"",
+    "\"In conclusion, my cousin is a cyclist too.\""
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 1,
+   "u": "For example + feit. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: for example leidt een voorbeeld uit het leven van je neef in.",
+    "Koos je \"In my opinion, my cousin is a good cyclist.\"? Dan denk je dat een oordeel een voorbeeld is. In my opinion geeft je mening, en geen concreet geval.",
+    "Koos je \"However, my cousin is not a cyclist at all.\"? Dan denk je dat een tegenstelling een voorbeeld is. However zet iets tegenover elkaar, en toont geen geval.",
+    "Koos je \"In conclusion, my cousin is a cyclist too.\"? Dan denk je dat een afsluiting een voorbeeld is. In conclusion sluit je betoog af, en geeft geen geval."
+   ],
+   "uh": "Welke zin geeft een voorbeeld?",
+   "ctx": "You write that cycling is healthy. To make the argument stronger, you add a short example from your own life about a cousin who started cycling to school and now feels fitter and more cheerful."
+  },
+  {
+   "v": "Which phrase introduces the other side?",
+   "o": [
+    "\"For example, ...\" at the start",
+    "\"In my opinion, ...\" at the start",
+    "\"On the other hand, ...\"",
+    "\"Because of this, ...\" at the start"
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 3,
+   "u": "On the other hand = andere kant.",
+   "uo": [
+    "Koos je \"For example, ... at the start\"? Dan denk je dat een voorbeeld de andere kant toont. For example geeft een geval, en geen tegenpunt.",
+    "Koos je \"In my opinion, ... at the start\"? Dan denk je dat je eigen mening de andere kant is. In my opinion geeft jouw standpunt, en niet dat van een ander.",
+    "Klopt: on the other hand introduceert de andere kant.",
+    "Koos je \"Because of this, ... at the start\"? Dan denk je dat een reden de andere kant is. Because of this geeft een gevolg, en laat geen tegenpunt zien."
+   ],
+   "uh": "Welke woorden tonen de andere kant?",
+   "ctx": "You have given your opinion and reasons in a discussion. Now you want to show that you also see the other side of the question, because a good argument often looks at both sides of the topic."
+  },
+  {
+   "v": "Which phrase softens the disagreement?",
+   "o": [
+    "\"No, you are wrong about sports, sorry.\"",
+    "\"I understand, but not completely.\"",
+    "\"I hate sports and exercise, so no.\"",
+    "\"That is rubbish, I think so.\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 2,
+   "u": "I understand, but ... Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"No, you are wrong about sports, sorry.\"? Dan denk je dat dit verzacht. Het is een aanval, en niet beleefd.",
+    "Klopt: I understand en not completely verzachten het oneens zijn.",
+    "Koos je \"I hate sports and exercise, so no.\"? Dan denk je dat dit verzacht. Het klinkt als een grap, en geeft geen argument.",
+    "Koos je \"That is rubbish, I think so.\"? Dan denk je dat dit verzacht. Het is onbeleefd, en kwetst de ander."
+   ],
+   "uh": "Hoe verzacht je?",
+   "ctx": "Your teacher thinks that everybody should do sports every day. You do not completely agree, because you think some pupils are too busy, but you want to stay polite and respectful in your answer."
+  },
+  {
+   "v": "Which question asks for an opinion?",
+   "o": [
+    "\"What time is it now?\"",
+    "\"Where do you live in town?\"",
+    "\"How old are you now?\"",
+    "\"What do you think about it?\""
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 0,
+   "u": "What do you think? Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"What time is it now?\"? Dan denk je dat dit een mening vraagt. Het vraagt naar de tijd, en niet naar zijn standpunt.",
+    "Koos je \"Where do you live in town?\"? Dan denk je dat dit een mening vraagt. Het vraagt naar een plaats, en niet naar een standpunt.",
+    "Koos je \"How old are you now?\"? Dan denk je dat dit een mening vraagt. Het vraagt naar leeftijd, en niet naar een standpunt.",
+    "Klopt: what do you think vraagt naar een mening."
+   ],
+   "uh": "Welke vraag vraagt naar een mening?",
+   "ctx": "In a group discussion you want to know what your classmate Sam thinks about the new school rules, because he has not said anything yet. You want to ask him in a friendly and open way."
+  },
+  {
+   "v": "Which sentence is the best conclusion?",
+   "o": [
+    "\"By the way, many schools have phones now.\"",
+    "\"In conclusion, schools should allow phones.\"",
+    "\"For example, phones are in many schools.\"",
+    "\"However, I also have a phone myself.\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 4,
+   "u": "In conclusion + mening. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"By the way, many schools have phones now.\"? Dan denk je dat dit een conclusie is. Het begint een zijpad, en vat niets samen.",
+    "Klopt: in conclusion en een duidelijke zin vatten je mening samen.",
+    "Koos je \"For example, phones are in many schools.\"? Dan denk je dat dit een conclusie is. Het geeft een voorbeeld, en rondt niets af.",
+    "Koos je \"However, I also have a phone myself.\"? Dan denk je dat dit een conclusie is. Het zet iets tegenover elkaar, en rondt je mening niet af."
+   ],
+   "uh": "Welke zin sluit af?",
+   "ctx": "At the end of your talk about phones in school, you want to sum up your view in one sentence and show your audience that you have reached your conclusion after all the arguments you gave."
+  },
+  {
+   "v": "Which sentence states the writer's opinion about zoos?",
+   "o": [
+    "\"In conclusion, zoos are useful.\"",
+    "\"Some people think that zoos should be closed down.\"",
+    "\"Zoos protect animals in danger of dying out.\"",
+    "\"Many rare birds survive in cages.\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 0,
+   "u": "Standpunt in de conclusie. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: de conclusie vat zijn mening over dierentuinen samen in een zin.",
+    "Koos je \"Some people think that zoos should be closed down.\"? Dan denk je dat dit zijn mening is. Het is de mening van anderen, en hij is het ermee oneens.",
+    "Koos je \"Zoos protect animals in danger of dying out.\"? Dan denk je dat dit alleen zijn mening is. Het is een argument, en geen samenvatting.",
+    "Koos je \"Many rare birds survive in cages.\"? Dan denk je dat dit zijn mening is. Het is een voorbeeld, en geen standpunt."
+   ],
+   "uh": "Welke zin is zijn mening?",
+   "ctx": "Some people think that zoos should be closed, but I disagree. Zoos protect animals that are in danger of dying out. For example, many rare birds survive because zoos breed them. However, I do think that zoos need bigger cages. In conclusion, zoos are useful, but they must treat animals well."
+  },
+  {
+   "v": "What does the word \"However\" show in the text about zoos?",
+   "o": [
+    "an example that supports his view of zoos",
+    "the end of the whole text about zoos",
+    "a reason for closing the zoos at once",
+    "a point against his own view"
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 3,
+   "u": "However = tegenstelling. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"an example that supports his view of zoos\"? Dan denk je dat however een voorbeeld inleidt. Het zet iets tegenover elkaar, en is geen voorbeeld.",
+    "Koos je \"the end of the whole text about zoos\"? Dan denk je dat however het einde markeert. Het komt midden in het betoog, en daarna volgt nog een conclusie.",
+    "Koos je \"a reason for closing the zoos at once\"? Dan denk je dat however de reden voor sluiting geeft. Hij is tegen sluiting, dus dat klopt niet.",
+    "Klopt: however introduceert een kanttekening bij zijn eigen standpunt."
+   ],
+   "uh": "Wat doet however?",
+   "ctx": "Some people think that zoos should be closed, but I disagree. Zoos protect animals that are in danger of dying out. For example, many rare birds survive because zoos breed them. However, I do think that zoos need bigger cages. In conclusion, zoos are useful, but they must treat animals well."
+  },
+  {
+   "v": "Which part of the text is an example?",
+   "o": [
+    "\"Zoos protect animals in danger of dying out.\"",
+    "\"Zoos need bigger cages for the animals.\"",
+    "\"many rare birds survive because of zoos\"",
+    "\"Zoos must treat their animals well.\""
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 1,
+   "u": "For example + geval. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"Zoos protect animals in danger of dying out.\"? Dan denk je dat dit een voorbeeld is. Het is het argument zelf, en geen concreet geval.",
+    "Koos je \"Zoos need bigger cages for the animals.\"? Dan denk je dat dit een voorbeeld is. Het is een kanttekening, en geen voorbeeld.",
+    "Klopt: dit is een concreet geval dat zijn argument ondersteunt.",
+    "Koos je \"Zoos must treat their animals well.\"? Dan denk je dat dit een voorbeeld is. Het is een conclusie, en geen voorbeeld."
+   ],
+   "uh": "Welk deel is het voorbeeld?",
+   "ctx": "Some people think that zoos should be closed, but I disagree. Zoos protect animals that are in danger of dying out. For example, many rare birds survive because zoos breed them. However, I do think that zoos need bigger cages. In conclusion, zoos are useful, but they must treat animals well."
+  },
+  {
+   "v": "Which words mark the two arguments in the text about homework?",
+   "o": [
+    "\"Many\" and \"Therefore\"",
+    "\"On the other hand\" and \"Therefore\"",
+    "\"Firstly\" and \"Secondly\"",
+    "\"Homework\" and \"Teachers\""
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 1,
+   "u": "Firstly, secondly. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"Many and Therefore\"? Dan denk je dat deze woorden de argumenten markeren. Many opent de tekst en therefore de conclusie, en dus niet de argumenten.",
+    "Koos je \"On the other hand and Therefore\"? Dan denk je dat deze woorden de argumenten markeren. Ze markeren een tegenargument en een conclusie, en niet de twee argumenten.",
+    "Klopt: deze woorden nummeren de twee argumenten.",
+    "Koos je \"Homework and Teachers\"? Dan denk je dat deze woorden de argumenten markeren. Het zijn gewone zelfstandige naamwoorden, en geen signaalwoorden."
+   ],
+   "uh": "Welke woorden markeren?",
+   "ctx": "Many students say that homework is a waste of time. Firstly, it takes up the whole evening. Secondly, you are often too tired to learn anything. On the other hand, homework helps you remember the lesson. Therefore, I think teachers should give less homework, but not none."
+  },
+  {
+   "v": "What does \"On the other hand\" introduce in the text about homework?",
+   "o": [
+    "the writer's conclusion",
+    "the first argument",
+    "an example of homework",
+    "a counter-argument"
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 3,
+   "u": "On the other hand = tegenargument.",
+   "uo": [
+    "Koos je \"the writer's conclusion\"? Dan denk je dat on the other hand de conclusie is. Dat komt na therefore, en niet hier.",
+    "Koos je \"the first argument\"? Dan denk je dat on the other hand het eerste argument inleidt. Dat is firstly, en dus niet dit.",
+    "Koos je \"an example of homework\"? Dan denk je dat on the other hand een voorbeeld inleidt. Het markeert een tegenpunt, en geen voorbeeld.",
+    "Klopt: on the other hand geeft de andere kant, dus een tegenargument."
+   ],
+   "uh": "Wat leidt het in?",
+   "ctx": "Many students say that homework is a waste of time. Firstly, it takes up the whole evening. Secondly, you are often too tired to learn anything. On the other hand, homework helps you remember the lesson. Therefore, I think teachers should give less homework, but not none."
+  },
+  {
+   "v": "What is the writer's conclusion about homework?",
+   "o": [
+    "give less homework, but not none",
+    "homework should be banned for ever and ever",
+    "teachers should give a lot more homework",
+    "homework is always a waste of time for all"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 4,
+   "u": "Therefore = conclusie. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: therefore leidt de conclusie in en die is gematigd.",
+    "Koos je \"homework should be banned for ever and ever\"? Dan denk je dat hij huiswerk wil verbieden. Hij zegt less homework, but not none, en dat is gematigd.",
+    "Koos je \"teachers should give a lot more homework\"? Dan denk je dat hij meer huiswerk wil. Hij zegt less, dus het tegenovergestelde.",
+    "Koos je \"homework is always a waste of time for all\"? Dan denk je dat hij dit concludeert. Dat zeggen studenten, en hij nuanceert dat."
+   ],
+   "uh": "Wat concludeert hij?",
+   "ctx": "Many students say that homework is a waste of time. Firstly, it takes up the whole evening. Secondly, you are often too tired to learn anything. On the other hand, homework helps you remember the lesson. Therefore, I think teachers should give less homework, but not none."
+  },
+  {
+   "v": "Which sentence states the opinion in the text about cycling?",
+   "o": [
+    "\"It is cheaper than a car and a train.\"",
+    "\"In my opinion, everyone should cycle.\"",
+    "\"Some people say that it is too dangerous for them.\"",
+    "\"Cities can build safe cycle paths for all.\""
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 0,
+   "u": "In my opinion = standpunt. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"It is cheaper than a car and a train.\"? Dan denk je dat dit het standpunt is. Het is een argument, en geen mening.",
+    "Klopt: in my opinion leidt het standpunt van de schrijver in.",
+    "Koos je \"Some people say that it is too dangerous for them.\"? Dan denk je dat dit het standpunt is. Het is de mening van anderen, en niet van de schrijver.",
+    "Koos je \"Cities can build safe cycle paths for all.\"? Dan denk je dat dit het standpunt is. Het is een antwoord op het bezwaar, en geen kernmening."
+   ],
+   "uh": "Welke zin is de mening?",
+   "ctx": "In my opinion, everyone in the city should cycle to work. It is cheaper than a car, and it keeps you fit. Some people say that it is too dangerous. That is true on busy roads, but cities can build safe cycle paths. So I believe cycling is the best choice."
+  },
+  {
+   "v": "How does the writer answer the objection that cycling is dangerous?",
+   "o": [
+    "by saying that cycling is not dangerous at all for people",
+    "by changing his opinion about cycling in cities",
+    "by ignoring the objection completely and moving on",
+    "by suggesting safe cycle paths"
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 3,
+   "u": "Bezwaar erkennen + oplossing. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"by saying that cycling is not dangerous at all for...\"? Dan denk je dat hij het gevaar ontkent. Hij erkent dat het gevaarlijk kan zijn, en geeft dan een oplossing.",
+    "Koos je \"by changing his opinion about cycling in cities\"? Dan denk je dat hij zijn mening verandert. Hij blijft bij zijn standpunt, en gaat verder.",
+    "Koos je \"by ignoring the objection completely and moving on\"? Dan denk je dat hij het bezwaar negeert. Hij noemt het wel en reageert erop, dus dat klopt niet.",
+    "Klopt: hij erkent het gevaar en geeft een oplossing."
+   ],
+   "uh": "Hoe reageert hij?",
+   "ctx": "In my opinion, everyone in the city should cycle to work. It is cheaper than a car, and it keeps you fit. Some people say that it is too dangerous. That is true on busy roads, but cities can build safe cycle paths. So I believe cycling is the best choice."
+  },
+  {
+   "v": "Which word starts the conclusion in the text about cycling?",
+   "o": [
+    "\"So\"",
+    "\"Some\"",
+    "\"That\"",
+    "\"It\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 4,
+   "u": "So = dus. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: so leidt de slotzin in met het gevolg.",
+    "Koos je \"Some\"? Dan denk je dat some het slot opent. Het begint de zin over de mening van anderen, dus het is geen conclusie.",
+    "Koos je \"That\"? Dan denk je dat that het slot opent. Het wijst terug naar het bezwaar, dus het is geen conclusie.",
+    "Koos je \"It\"? Dan denk je dat it het slot opent. Het begint het argument over de kosten, dus het komt niet aan het einde."
+   ],
+   "uh": "Welk woord start de conclusie?",
+   "ctx": "In my opinion, everyone in the city should cycle to work. It is cheaper than a car, and it keeps you fit. Some people say that it is too dangerous. That is true on busy roads, but cities can build safe cycle paths. So I believe cycling is the best choice."
+  },
+  {
+   "v": "Which statement is a weak argument for or against homework?",
+   "o": [
+    "\"It takes up the whole evening.\"",
+    "\"I do not like it, so it must be bad.\"",
+    "\"You are too tired to learn.\"",
+    "\"It helps you remember the lesson.\""
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 1,
+   "u": "Smaak ≠ argument. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"It takes up the whole evening.\"? Dan denk je dat dit een zwak argument is. Het is een concreet gevolg, en dus sterk.",
+    "Klopt: persoonlijke smaak is geen argument over het onderwerp zelf.",
+    "Koos je \"You are too tired to learn.\"? Dan denk je dat dit een zwak argument is. Het noemt een concreet gevolg, en is sterk.",
+    "Koos je \"It helps you remember the lesson.\"? Dan denk je dat dit een zwak argument is. Het geeft een nuttig effect, en is sterk."
+   ],
+   "uh": "Welke zin is zwak?",
+   "ctx": "Many students say that homework is a waste of time. Firstly, it takes up the whole evening. Secondly, you are often too tired to learn anything. On the other hand, homework helps you remember the lesson. Therefore, I think teachers should give less homework, but not none."
+  }
+ ],
+ "oe": [
+  {
+   "bron": "Examenstijl",
+   "ctx": "Your class is discussing the question: \"Should students be allowed to use their phones during breaks?\" You think that they should be allowed to use them, because many students use them to talk to friends or to check the time for the next lesson.",
+   "v": "Write your opinion and one reason in two sentences.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Een standpunt zoals \"I think students should be allowed to use phones\" (1p). Een reden met because (2p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "In a debate about homework a student says: \"Homework is a waste of time, because we have to do it every evening.\" You do not agree completely, but you want to be polite and show that you understand his point of view.",
+   "v": "Write a polite reply that disagrees and gives your own reason.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Beleefd begin zoals \"I see your point\" (1p). Een tegenstelling met but (1p). Een eigen reden (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "You write an essay about the question whether cycling to school is a good idea. You have two arguments: it is healthy and it is cheap. You also want to add a short example from your own life and a counter-argument.",
+   "v": "Write the second argument with a signal word and one counter-argument with a signal word.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Een signaalwoord zoals \"Secondly\" of \"In addition\" (1p). Een tegenargument met \"However\" of \"On the other hand\" (2p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "A friend says: \"I think that school should start later, because teenagers need more sleep.\" You agree completely and want to add a good example of your own, so that your reply is stronger and more convincing.",
+   "v": "Write a reply that shows agreement and gives an example.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Instemming zoals \"I totally agree\" (1p). Een voorbeeld met \"For example\" (2p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "You are at the end of your short talk about zoos. You said that zoos help rare animals, but that the cages must be bigger. You now want to finish your talk with one sentence that sums up your view clearly.",
+   "v": "Write a conclusion with a signal word.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Een afsluitend signaalwoord zoals \"In conclusion\" (1p). Een duidelijke samenvatting van de mening (2p)."
+  }
+ ]
+}
