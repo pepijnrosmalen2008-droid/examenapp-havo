@@ -2963,6 +2963,27 @@ var VAKKEN = [
       "nOe": 5,
       "nBeg": 12,
       "hasSam": true
+     },
+     {
+      "id": "E4",
+      "lo": "en.E.4",
+      "gs": 2,
+      "naam": "Standpunten en argumenten opschrijven",
+      "beschrijving": "Je leert in het Engels een betoog op te bouwen met een stelling, argumenten met voorbeelden, een tegenargument en een conclusie in een formele stijl.",
+      "ceStatus": "SE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Inleiding en stelling",
+       "Argumenten in alinea's",
+       "Tegenargument en weerlegging",
+       "Conclusie",
+       "Formele stijl"
+      ],
+      "nSv": 27,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
      }
     ]
    },

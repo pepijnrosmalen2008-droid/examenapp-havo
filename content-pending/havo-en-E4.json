@@ -1,0 +1,682 @@
+{
+ "id": "E4",
+ "lo": "en.E.4",
+ "gs": 2,
+ "naam": "Standpunten en argumenten opschrijven",
+ "beschrijving": "Je leert in het Engels een betoog op te bouwen met een stelling, argumenten met voorbeelden, een tegenargument en een conclusie in een formele stijl.",
+ "ceStatus": "SE",
+ "binas": "",
+ "val": "",
+ "onderwerpen": [
+  "Inleiding en stelling",
+  "Argumenten in alinea's",
+  "Tegenargument en weerlegging",
+  "Conclusie",
+  "Formele stijl"
+ ],
+ "sam": "Een betoog heeft een inleiding met je stelling, alinea's met elk één argument en een slot. Elke alinea begint met een openingszin, gevolgd door een uitleg en een voorbeeld. Met some people say noem je een tegenargument en met however weerleg je het. Je noemt in de conclusie geen nieuw argument en je schrijft formeel, zonder spreektaal. Verbind alinea's met firstly, secondly en another reason.",
+ "begrippen": [
+  {
+   "t": "Stelling",
+   "d": "Het standpunt waarvoor je argumenten geeft."
+  },
+  {
+   "t": "Inleiding",
+   "d": "Het begin waarin je het onderwerp en je stelling noemt."
+  },
+  {
+   "t": "Openingszin",
+   "d": "De eerste zin van een alinea met het idee."
+  },
+  {
+   "t": "Argument",
+   "d": "Een reden voor je standpunt."
+  },
+  {
+   "t": "Voorbeeld",
+   "d": "Een concreet geval dat een argument ondersteunt."
+  },
+  {
+   "t": "Tegenargument",
+   "d": "Een argument van de andere kant."
+  },
+  {
+   "t": "Weerlegging",
+   "d": "Je antwoord op een tegenargument."
+  },
+  {
+   "t": "Conclusie",
+   "d": "Het slot waarin je je standpunt herhaalt."
+  },
+  {
+   "t": "Alinea",
+   "d": "Een deel van de tekst over één idee."
+  },
+  {
+   "t": "Formeel",
+   "d": "Zakelijke taal zonder spreektaal."
+  },
+  {
+   "t": "Verbinding",
+   "d": "Een woord of zin tussen alinea's, zoals another reason."
+  },
+  {
+   "t": "Samenhang",
+   "d": "Het verband tussen delen van je tekst."
+  }
+ ],
+ "sv": [
+  {
+   "v": "Which sentence is a clear statement of opinion for an essay?",
+   "o": [
+    "\"Schools start at eight o'clock.\"",
+    "\"I believe that schools should start later.\"",
+    "\"Maybe schools could start later, I do not know.\"",
+    "\"This essay is about schools.\""
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 0,
+   "u": "I believe = standpunt. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"Schools start at eight o'clock.\"? Dan denk je dat deze zin een mening is. Het is een feit, en geen standpunt.",
+    "Klopt: I believe plus een duidelijke bewering geeft je standpunt.",
+    "Koos je \"Maybe schools could start later, I do not know.\"? Dan denk je dat deze zin een standpunt is. Het blijft vaag, en kiest geen kant.",
+    "Koos je \"This essay is about schools.\"? Dan denk je dat deze zin een standpunt is. Het noemt alleen het onderwerp, en geeft geen mening."
+   ],
+   "uh": "Welke zin geeft de mening?"
+  },
+  {
+   "v": "Where does the main opinion of an essay appear?",
+   "o": [
+    "only in the last line of the essay",
+    "nowhere, the reader must guess it",
+    "in the title only, as one word",
+    "in the introduction"
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 0,
+   "u": "Standpunt in de inleiding. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"only in the last line of the essay\"? Dan denk je dat het standpunt pas aan het eind komt. De lezer wil het direct weten, en het hoort in de inleiding.",
+    "Koos je \"nowhere, the reader must guess it\"? Dan denk je dat de lezer het raadt. Dat is onduidelijk, en geeft een zwakke tekst.",
+    "Koos je \"in the title only, as one word\"? Dan denk je dat een titel het standpunt vervangt. Een titel is te kort, en geeft geen reden.",
+    "Klopt: je noemt je standpunt al in de inleiding."
+   ],
+   "uh": "Waar staat de mening?"
+  },
+  {
+   "v": "Which sentence is a good topic sentence for a paragraph?",
+   "o": [
+    "\"First, later lessons help concentration.\"",
+    "\"Lessons are in rooms at school, mostly.\"",
+    "\"My cat likes sleeping all day long.\"",
+    "\"There is nothing to say about it at all.\""
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 1,
+   "u": "Openingszin = idee. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: de zin noemt het idee van de hele alinea.",
+    "Koos je \"Lessons are in rooms at school, mostly.\"? Dan denk je dat deze zin een goede openingszin is. Het is een feit zonder argument, en leidt niet tot een idee.",
+    "Koos je \"My cat likes sleeping all day long.\"? Dan denk je dat deze zin een goede openingszin is. Het gaat over iets anders, en past niet bij het onderwerp.",
+    "Koos je \"There is nothing to say about it at all.\"? Dan denk je dat deze zin een goede openingszin is. Het zegt niets, en geeft geen idee."
+   ],
+   "uh": "Welke zin opent een alinea?"
+  },
+  {
+   "v": "What usually follows a topic sentence in a good paragraph?",
+   "o": [
+    "a new title for the essay",
+    "the signature of the writer",
+    "a reason or an example",
+    "a long list of unrelated words"
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 1,
+   "u": "Reden of voorbeeld. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"a new title for the essay\"? Dan denk je dat een nieuwe titel volgt. Een titel staat aan het begin, en niet midden in een alinea.",
+    "Koos je \"the signature of the writer\"? Dan denk je dat de handtekening volgt. Dat is voor een brief, en niet voor een essay.",
+    "Klopt: de steunzinnen maken het idee duidelijk.",
+    "Koos je \"a long list of unrelated words\"? Dan denk je dat losse woorden volgen. Dat past niet bij een alinea, en verklaart het idee niet."
+   ],
+   "uh": "Wat volgt?"
+  },
+  {
+   "v": "Which phrase introduces an opposite view?",
+   "o": [
+    "\"In conclusion, ...\"",
+    "\"For example, ...\"",
+    "\"Some people argue that ...\"",
+    "\"Thank you for reading, ...\""
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 2,
+   "u": "Some people argue = tegenargument.",
+   "uo": [
+    "Koos je \"In conclusion, ...\"? Dan denk je dat in conclusion een tegenargument inleidt. Het sluit af, en komt aan het einde.",
+    "Koos je \"For example, ...\"? Dan denk je dat for example een tegenargument inleidt. Het geeft een voorbeeld, en geen andere mening.",
+    "Klopt: zo introduceer je een tegengestelde mening.",
+    "Koos je \"Thank you for reading, ...\"? Dan denk je dat dit een tegenargument inleidt. Het is een bedankje, en geen mening."
+   ],
+   "uh": "Welke zin leidt een tegenargument in?"
+  },
+  {
+   "v": "Which phrase starts a conclusion?",
+   "o": [
+    "\"In conclusion, ...\"",
+    "\"Firstly, ...\" at the end",
+    "\"For instance, ...\" at the end",
+    "\"By the way, ...\" at the end"
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 3,
+   "u": "In conclusion = slot. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: in conclusion kondigt het slot van de tekst aan.",
+    "Koos je \"Firstly, ... at the end\"? Dan denk je dat firstly het slot start. Het begint de opsomming, en staat vooraan.",
+    "Koos je \"For instance, ... at the end\"? Dan denk je dat for instance het slot start. Het geeft een voorbeeld, en rondt niet af.",
+    "Koos je \"By the way, ... at the end\"? Dan denk je dat by the way het slot start. Het begint een zijpad, en vat niets samen."
+   ],
+   "uh": "Welke woorden starten het slot?"
+  },
+  {
+   "v": "Which sentence is more suitable for a formal essay?",
+   "o": [
+    "\"Kids are always zoning out in class, lol.\"",
+    "\"Students are totally brain-dead after lunch.\"",
+    "\"Whatever, nobody can focus on anything.\"",
+    "\"Students often find it hard to focus.\""
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 4,
+   "u": "Formeel = neutrale taal. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"Kids are always zoning out in class, lol.\"? Dan denk je dat deze zin formeel is. Het is spreektaal met lol, en past niet in een essay.",
+    "Koos je \"Students are totally brain-dead after lunch.\"? Dan denk je dat deze zin formeel is. Het is overdreven en grof, en niet zakelijk.",
+    "Koos je \"Whatever, nobody can focus on anything.\"? Dan denk je dat deze zin formeel is. Het klinkt onverschillig, en is spreektaal.",
+    "Klopt: dit is neutrale, formele taal zonder spreektaal."
+   ],
+   "uh": "Welke zin is formeel?"
+  },
+  {
+   "v": "Which sentence is the best thesis?",
+   "o": [
+    "\"Homework is a thing in many schools.\"",
+    "\"Schools should give less homework.\"",
+    "\"I have homework every day, sometimes a lot.\"",
+    "\"Homework could maybe be less or more, who knows.\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 0,
+   "u": "Stelling + reden. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"Homework is a thing in many schools.\"? Dan denk je dat een vage zin een stelling is. Homework is a thing noemt geen mening, en kiest geen kant.",
+    "Klopt: het standpunt en de reden staan in één duidelijke zin.",
+    "Koos je \"I have homework every day, sometimes a lot.\"? Dan denk je dat een persoonlijke mededeling een stelling is. I have homework vertelt een feit over jou, en geeft geen standpunt.",
+    "Koos je \"Homework could maybe be less or more, who knows.\"? Dan denk je dat maybe een stelling is. Less or more kiest geen kant, en blijft dus vaag."
+   ],
+   "uh": "Welke zin is de stelling?",
+   "ctx": "You write an essay for school about homework. You think that students get too much homework and that schools should reduce it, because students need free time to relax and to meet friends. You need a clear thesis sentence."
+  },
+  {
+   "v": "Which sentence is a good introduction?",
+   "o": [
+    "\"That is all for today, thank you very much.\"",
+    "\"I will now write about bananas and apples.\"",
+    "\"The end of the essay is here now, goodbye.\"",
+    "\"Many students spend hours on homework.\""
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 0,
+   "u": "Inleiding = onderwerp. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"That is all for today, thank you very much.\"? Dan denk je dat deze zin een inleiding is. Het is een afsluiting, en past aan het einde.",
+    "Koos je \"I will now write about bananas and apples.\"? Dan denk je dat deze zin een inleiding is. Het noemt een ander onderwerp, en past niet bij het essay.",
+    "Koos je \"The end of the essay is here now, goodbye.\"? Dan denk je dat deze zin een inleiding is. Het is een slot, en past niet aan het begin.",
+    "Klopt: de zin leidt het onderwerp in met een herkenbaar feit."
+   ],
+   "uh": "Welke zin leidt in?",
+   "ctx": "Your essay about homework needs an introduction. You want the first sentence to catch the interest of the reader and to introduce the topic with a fact that many readers know from their own life."
+  },
+  {
+   "v": "Which sentence supports the topic sentence?",
+   "o": [
+    "\"In conclusion, the essay is quite long.\"",
+    "\"For example, some work until midnight.\"",
+    "\"Teachers are tall people, usually.\"",
+    "\"Some people like writing with pens.\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 1,
+   "u": "For example + concreet geval. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"In conclusion, the essay is quite long.\"? Dan denk je dat deze zin het idee ondersteunt. Het is een slot, en geen voorbeeld.",
+    "Klopt: for example geeft een concreet voorbeeld bij het idee.",
+    "Koos je \"Teachers are tall people, usually.\"? Dan denk je dat deze zin het idee ondersteunt. Het gaat over lengte, en past niet bij huiswerk.",
+    "Koos je \"Some people like writing with pens.\"? Dan denk je dat deze zin het idee ondersteunt. Het heeft niets met huiswerk te maken, en is geen voorbeeld."
+   ],
+   "uh": "Welke zin ondersteunt?",
+   "ctx": "In a paragraph of your essay the topic sentence says: \"Homework takes too much time.\" Now you need a sentence that supports this idea with a concrete example from the life of a student."
+  },
+  {
+   "v": "Which sentence states a counter-argument?",
+   "o": [
+    "\"I think that homework is really bad.\"",
+    "\"Homework is done at home in the evening.\"",
+    "\"Some say that homework helps students.\"",
+    "\"In conclusion, there is a lot of homework.\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 2,
+   "u": "Some people say = tegenargument.",
+   "uo": [
+    "Koos je \"I think that homework is really bad.\"? Dan denk je dat deze zin een tegenargument is. Het is je eigen mening, en geen standpunt van anderen.",
+    "Koos je \"Homework is done at home in the evening.\"? Dan denk je dat deze zin een tegenargument is. Het is een feit, en geen mening.",
+    "Klopt: some people say leidt de mening van anderen in.",
+    "Koos je \"In conclusion, there is a lot of homework.\"? Dan denk je dat deze zin een tegenargument is. Het is een slot, en geen tegengestelde mening."
+   ],
+   "uh": "Welke zin geeft het tegenargument?",
+   "ctx": "In your essay you want to show that you know the other side of the discussion too. You must write a sentence that gives the opinion of people who think that homework is very useful for students."
+  },
+  {
+   "v": "Which sentence answers the counter-argument?",
+   "o": [
+    "\"However, free time matters too.\"",
+    "\"I do not agree, you are silly, sorry.\"",
+    "\"Homework is homework, and that is it.\"",
+    "\"And therefore the end, thank you.\""
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 2,
+   "u": "However + eigen punt. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: however weerlegt het tegenargument met een eigen punt.",
+    "Koos je \"I do not agree, you are silly, sorry.\"? Dan denk je dat deze zin het tegenargument beantwoordt. Het is onbeleefd, en geeft geen argument.",
+    "Koos je \"Homework is homework, and that is it.\"? Dan denk je dat deze zin het tegenargument beantwoordt. Het herhaalt alleen een woord, en geeft geen argument.",
+    "Koos je \"And therefore the end, thank you.\"? Dan denk je dat deze zin het tegenargument beantwoordt. Het is onduidelijk, en geeft geen reden."
+   ],
+   "uh": "Welke zin reageert op het tegenargument?",
+   "ctx": "After you have given the opinion of the people who like homework, you want to answer them. You want to say politely that you see their point, but that you think that free time is just as important."
+  },
+  {
+   "v": "Which sentence is a good conclusion?",
+   "o": [
+    "\"In conclusion, reduce homework.\"",
+    "\"Firstly, homework is a thing at school.\"",
+    "\"Another question is how big a school bag is.\"",
+    "\"Maybe more later, I do not know yet.\""
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 3,
+   "u": "In conclusion + standpunt. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: in conclusion herhaalt het standpunt in één zin.",
+    "Koos je \"Firstly, homework is a thing at school.\"? Dan denk je dat deze zin een slot is. Firstly begint een opsomming, en staat niet aan het einde.",
+    "Koos je \"Another question is how big a school bag is.\"? Dan denk je dat deze zin een slot is. Het opent een nieuw punt, en rondt niets af.",
+    "Koos je \"Maybe more later, I do not know yet.\"? Dan denk je dat deze zin een slot is. Het is vaag, en herhaalt het standpunt niet."
+   ],
+   "uh": "Welke zin sluit af?",
+   "ctx": "You have finished the main part of your essay about homework and now you need a last sentence. You want to repeat your main opinion in a short and clear sentence, so the reader remembers your position."
+  },
+  {
+   "v": "Which sentence does not belong in a conclusion?",
+   "o": [
+    "\"To sum up, homework should be reduced.\"",
+    "\"In conclusion, students need free time.\"",
+    "\"Another reason is that teachers have too little time.\"",
+    "\"For these reasons, I believe schools should change.\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 3,
+   "u": "Geen nieuw argument. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"To sum up, homework should be reduced.\"? Dan denk je dat deze zin niet in de conclusie hoort. Het vat samen, en hoort er juist.",
+    "Koos je \"In conclusion, students need free time.\"? Dan denk je dat deze zin niet in de conclusie hoort. Het herhaalt een eerder punt, en hoort er juist.",
+    "Klopt: een conclusie bevat geen nieuw argument.",
+    "Koos je \"For these reasons, I believe schools should change.\"? Dan denk je dat deze zin niet in de conclusie hoort. Het vat de redenen samen, en hoort er juist."
+   ],
+   "uh": "Welke zin hoort er niet?",
+   "ctx": "Your teacher says that a conclusion should not contain new information. You must read four sentences and decide which one does not belong in the conclusion of your essay about homework."
+  },
+  {
+   "v": "Which sentence is too informal?",
+   "o": [
+    "\"Homework can be stressful for students.\"",
+    "\"Homework is a pain, honestly.\"",
+    "\"Many students feel tired after school.\"",
+    "\"Free time is important for young people.\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 4,
+   "u": "Spreektaal = informeel. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"Homework can be stressful for students.\"? Dan denk je dat deze zin te informeel is. Het is neutraal en formeel, en past in een essay.",
+    "Klopt: a pain en honestly zijn spreektaal en passen niet in een essay.",
+    "Koos je \"Many students feel tired after school.\"? Dan denk je dat deze zin te informeel is. Het is neutraal, en past in een essay.",
+    "Koos je \"Free time is important for young people.\"? Dan denk je dat deze zin te informeel is. Het is formeel, en past in een essay."
+   ],
+   "uh": "Welke zin is te informeel?",
+   "ctx": "In an essay about homework you read four sentences. Your teacher wants a formal style and has told you that slang and strong personal feelings should not be used in a formal text like an essay."
+  },
+  {
+   "v": "Which phrase starts a new argument?",
+   "o": [
+    "\"In conclusion, ...\"",
+    "\"Thank you, ...\"",
+    "\"Once upon a time, ...\"",
+    "\"Secondly, ...\""
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 1,
+   "u": "Secondly = tweede argument. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"In conclusion, ...\"? Dan denk je dat in conclusion een nieuw argument inleidt. Het sluit af, en komt aan het einde.",
+    "Koos je \"Thank you, ...\"? Dan denk je dat dit een nieuw argument inleidt. Het is een bedankje, en geen argument.",
+    "Koos je \"Once upon a time, ...\"? Dan denk je dat dit een nieuw argument inleidt. Het begint een verhaal, en past niet in een essay.",
+    "Klopt: secondly kondigt het tweede argument aan."
+   ],
+   "uh": "Welke woorden leiden een argument in?",
+   "ctx": "You have written a first argument about the time that homework takes. Now you start a second paragraph with a new argument, and you need a phrase that tells the reader that you now give a second reason."
+  },
+  {
+   "v": "Which sentence is polite?",
+   "o": [
+    "\"That view is stupid and wrong.\"",
+    "\"I see this view, but I disagree.\"",
+    "\"Nobody thinks like that, ever.\"",
+    "\"You are wrong, and that is the end of the story.\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 2,
+   "u": "Begrip + but. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"That view is stupid and wrong.\"? Dan denk je dat deze zin beleefd is. Het beledigt, en is geen argument.",
+    "Klopt: je toont begrip en geeft daarna je eigen standpunt.",
+    "Koos je \"Nobody thinks like that, ever.\"? Dan denk je dat deze zin beleefd is. Het is een onware overdrijving, en is geen argument.",
+    "Koos je \"You are wrong, and that is the end of the story.\"? Dan denk je dat deze zin beleefd is. Het kapt af, en is onbeleefd."
+   ],
+   "uh": "Welke zin is beleefd?",
+   "ctx": "You disagree with the opinion of a reader, but you want to stay polite in your essay. You must choose a sentence that shows respect for another opinion, and then says clearly that you think differently."
+  },
+  {
+   "v": "Which sentence states the writer's opinion in the introduction?",
+   "o": [
+    "\"I disagree.\"",
+    "\"Many people think that students should wear school uniforms.\"",
+    "\"For example, a blazer can cost over fifty pounds.\"",
+    "\"Secondly, uniforms limit personal freedom.\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 0,
+   "u": "I disagree = standpunt. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: de schrijver kiest direct een kant na de bewering.",
+    "Koos je \"Many people think that students should wear school...\"? Dan denk je dat dit de mening van de schrijver is. Het is de mening van anderen, en hij is het er niet mee eens.",
+    "Koos je \"For example, a blazer can cost over fifty pounds.\"? Dan denk je dat dit de mening is. Het is een voorbeeld, en geen standpunt.",
+    "Koos je \"Secondly, uniforms limit personal freedom.\"? Dan denk je dat dit de mening in de inleiding is. Het is een argument, en staat in de kern."
+   ],
+   "uh": "Welke zin geeft de mening?",
+   "ctx": "Many people think that students should wear school uniforms. I disagree. Firstly, uniforms are expensive for parents. For example, a blazer can cost over fifty pounds. Secondly, uniforms limit personal freedom. Some people say that uniforms make everyone equal. However, equality is more than clothes. In conclusion, schools should not make students wear uniforms."
+  },
+  {
+   "v": "Which part of the essay is an example?",
+   "o": [
+    "\"uniforms are expensive for parents\"",
+    "\"uniforms limit personal freedom\"",
+    "\"schools should not make students wear uniforms\"",
+    "\"a blazer can cost over fifty pounds\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 1,
+   "u": "For example + geval. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"uniforms are expensive for parents\"? Dan denk je dat dit een voorbeeld is. Het is het argument zelf, en geen concreet geval.",
+    "Koos je \"uniforms limit personal freedom\"? Dan denk je dat dit een voorbeeld is. Het is het tweede argument, en geen concreet geval.",
+    "Koos je \"schools should not make students wear uniforms\"? Dan denk je dat dit een voorbeeld is. Het is de conclusie, en geen voorbeeld.",
+    "Klopt: dit is een concreet geval bij het argument over kosten."
+   ],
+   "uh": "Welk deel is het voorbeeld?",
+   "ctx": "Many people think that students should wear school uniforms. I disagree. Firstly, uniforms are expensive for parents. For example, a blazer can cost over fifty pounds. Secondly, uniforms limit personal freedom. Some people say that uniforms make everyone equal. However, equality is more than clothes. In conclusion, schools should not make students wear uniforms."
+  },
+  {
+   "v": "Which sentence is a counter-argument in the essay?",
+   "o": [
+    "\"Firstly, uniforms are expensive for parents.\"",
+    "\"I disagree.\"",
+    "\"Some people say that uniforms make everyone equal.\"",
+    "\"In conclusion, schools should not make students wear uniforms.\""
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 2,
+   "u": "Some people say = tegenargument.",
+   "uo": [
+    "Koos je \"Firstly, uniforms are expensive for parents.\"? Dan denk je dat dit het tegenargument is. Het is het eerste argument van de schrijver, en geen mening van anderen.",
+    "Koos je \"I disagree.\"? Dan denk je dat dit het tegenargument is. Het is zijn eigen standpunt, en geen mening van anderen.",
+    "Klopt: some people say leidt de mening van anderen in.",
+    "Koos je \"In conclusion, schools should not make students...\"? Dan denk je dat dit het tegenargument is. Het is de conclusie, en geen tegenmening."
+   ],
+   "uh": "Welke zin is het tegenargument?",
+   "ctx": "Many people think that students should wear school uniforms. I disagree. Firstly, uniforms are expensive for parents. For example, a blazer can cost over fifty pounds. Secondly, uniforms limit personal freedom. Some people say that uniforms make everyone equal. However, equality is more than clothes. In conclusion, schools should not make students wear uniforms."
+  },
+  {
+   "v": "How does the writer answer the counter-argument?",
+   "o": [
+    "by agreeing that uniforms make everyone equal",
+    "by ignoring the other opinion completely",
+    "by saying that equality is more than clothes",
+    "by saying that uniforms are cheap"
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 2,
+   "u": "However + weerlegging. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"by agreeing that uniforms make everyone equal\"? Dan denk je dat de schrijver het eens is. Hij zegt however, en weerlegt het juist.",
+    "Koos je \"by ignoring the other opinion completely\"? Dan denk je dat hij het negeert. Hij reageert er direct op, dus dat klopt niet.",
+    "Klopt: na however geeft de schrijver zijn weerlegging.",
+    "Koos je \"by saying that uniforms are cheap\"? Dan denk je dat hij dit zegt. Hij noemt uniformen juist duur, dus dat klopt niet."
+   ],
+   "uh": "Hoe reageert hij?",
+   "ctx": "Many people think that students should wear school uniforms. I disagree. Firstly, uniforms are expensive for parents. For example, a blazer can cost over fifty pounds. Secondly, uniforms limit personal freedom. Some people say that uniforms make everyone equal. However, equality is more than clothes. In conclusion, schools should not make students wear uniforms."
+  },
+  {
+   "v": "Which words show the order of the arguments in the essay?",
+   "o": [
+    "\"Many\" and \"Some\"",
+    "\"For example\" and \"However\"",
+    "\"I\" and \"In conclusion\"",
+    "\"Firstly\" and \"Secondly\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 1,
+   "u": "Firstly, secondly. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"Many and Some\"? Dan denk je dat deze woorden de volgorde tonen. Het zijn hoeveelheidswoorden, en geen volgorde.",
+    "Koos je \"For example and However\"? Dan denk je dat deze woorden de argumenten nummeren. Het zijn een voorbeeld en een contrast, en geen volgorde.",
+    "Koos je \"I and In conclusion\"? Dan denk je dat deze woorden de volgorde tonen. Het zijn een voornaamwoord en een slotwoord, en niet de argumenten.",
+    "Klopt: deze woorden nummeren de twee argumenten."
+   ],
+   "uh": "Welke woorden nummeren?",
+   "ctx": "Many people think that students should wear school uniforms. I disagree. Firstly, uniforms are expensive for parents. For example, a blazer can cost over fifty pounds. Secondly, uniforms limit personal freedom. Some people say that uniforms make everyone equal. However, equality is more than clothes. In conclusion, schools should not make students wear uniforms."
+  },
+  {
+   "v": "Which sentence closes the essay on uniforms?",
+   "o": [
+    "\"In conclusion, schools should not make students wear uniforms.\"",
+    "\"Secondly, uniforms limit personal freedom.\"",
+    "\"However, equality is more than clothes.\"",
+    "\"I disagree.\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 3,
+   "u": "In conclusion = slot. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: in conclusion herhaalt het standpunt aan het einde van het essay.",
+    "Koos je \"Secondly, uniforms limit personal freedom.\"? Dan denk je dat dit de conclusie is. Het is het tweede argument, en staat in de kern.",
+    "Koos je \"However, equality is more than clothes.\"? Dan denk je dat dit de conclusie is. Het is een weerlegging, en staat voor het slot.",
+    "Koos je \"I disagree.\"? Dan denk je dat dit de conclusie is. Het staat in de inleiding, en herhaalt niet alle redenen."
+   ],
+   "uh": "Welk deel sluit af?",
+   "ctx": "Many people think that students should wear school uniforms. I disagree. Firstly, uniforms are expensive for parents. For example, a blazer can cost over fifty pounds. Secondly, uniforms limit personal freedom. Some people say that uniforms make everyone equal. However, equality is more than clothes. In conclusion, schools should not make students wear uniforms."
+  },
+  {
+   "v": "What could make the introduction of the essay stronger?",
+   "o": [
+    "a list of all the arguments in one line",
+    "a sentence that explains the topic",
+    "an example of a uniform from history",
+    "the conclusion before the arguments"
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 0,
+   "u": "Context in de inleiding. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"a list of all the arguments in one line\"? Dan denk je dat alle argumenten in de inleiding moeten staan. Dan blijft er niets over voor de kern, en het wordt een lijst.",
+    "Klopt: een korte uitleg geeft de lezer context.",
+    "Koos je \"an example of a uniform from history\"? Dan denk je dat een lang historisch voorbeeld helpt. Het is te uitgebreid, en hoort niet in de inleiding.",
+    "Koos je \"the conclusion before the arguments\"? Dan denk je dat het slot vooraan kan. Dat maakt de structuur onduidelijk, en een slot komt aan het einde."
+   ],
+   "uh": "Wat maakt de inleiding sterker?",
+   "ctx": "Many people think that students should wear school uniforms. I disagree. Firstly, uniforms are expensive for parents. For example, a blazer can cost over fifty pounds. Secondly, uniforms limit personal freedom. Some people say that uniforms make everyone equal. However, equality is more than clothes. In conclusion, schools should not make students wear uniforms."
+  },
+  {
+   "v": "Which structure is best for a body paragraph?",
+   "o": [
+    "example, conclusion, topic sentence",
+    "conclusion, example, topic sentence",
+    "support, topic sentence, title",
+    "topic sentence, support, example"
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 1,
+   "u": "Idee, uitleg, voorbeeld. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"example, conclusion, topic sentence\"? Dan denk je dat het voorbeeld eerst kan. De lezer weet dan niet waarvoor het voorbeeld dient, en de structuur is onduidelijk.",
+    "Koos je \"conclusion, example, topic sentence\"? Dan denk je dat de conclusie eerst komt. Een conclusie hoort aan het einde van het essay, en niet in een alinea.",
+    "Koos je \"support, topic sentence, title\"? Dan denk je dat de titel in een alinea staat. De titel staat boven de tekst, en niet in een alinea.",
+    "Klopt: eerst het idee, dan de uitleg en dan het voorbeeld."
+   ],
+   "uh": "Wat is de beste volgorde?",
+   "ctx": "You plan the paragraphs of your essay and you want to be sure that each paragraph has a good structure. You must pick the best order of the parts of a paragraph in a clear and logical way."
+  },
+  {
+   "v": "Which sentence is a weak argument?",
+   "o": [
+    "\"Uniforms are bad because I do not like them.\"",
+    "\"Uniforms can be expensive for many families.\"",
+    "\"Uniforms limit the choice of students.\"",
+    "\"Some students feel less free in a uniform.\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 1,
+   "u": "Smaak ≠ argument. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: persoonlijke smaak is geen argument over het onderwerp.",
+    "Koos je \"Uniforms can be expensive for many families.\"? Dan denk je dat dit een zwak argument is. Het noemt een concrete reden, en is sterk.",
+    "Koos je \"Uniforms limit the choice of students.\"? Dan denk je dat dit een zwak argument is. Het noemt een gevolg, en is sterk.",
+    "Koos je \"Some students feel less free in a uniform.\"? Dan denk je dat dit een zwak argument is. Het noemt een reële ervaring, en is sterk."
+   ],
+   "uh": "Welke zin is zwak?",
+   "ctx": "In your class you discuss weak and strong arguments. Your teacher gives you four sentences and asks which one is a weak argument, since it is based on personal taste only and does not tell the reader anything about the topic."
+  },
+  {
+   "v": "Which sentence links two paragraphs best?",
+   "o": [
+    "\"Bananas are good for you, I read.\"",
+    "\"Another reason is that ...\"",
+    "\"That is all for now, goodbye.\"",
+    "\"I like pizza very much, really.\""
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 3,
+   "u": "Another reason = verbinding. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"Bananas are good for you, I read.\"? Dan denk je dat deze zin de alinea's verbindt. Het heeft niets met het onderwerp te maken, en breekt de lijn.",
+    "Klopt: another reason knoopt aan bij de vorige alinea en voegt een punt toe.",
+    "Koos je \"That is all for now, goodbye.\"? Dan denk je dat deze zin de alinea's verbindt. Het is een afsluiting, en past niet in het midden.",
+    "Koos je \"I like pizza very much, really.\"? Dan denk je dat deze zin de alinea's verbindt. Het gaat over iets anders, en verbindt niets."
+   ],
+   "uh": "Hoe verbind je alinea's?",
+   "ctx": "You have written two paragraphs and want to connect them so that the reader can follow your ideas easily. You must choose a sentence that starts the second paragraph and refers to the first paragraph."
+  }
+ ],
+ "oe": [
+  {
+   "bron": "Examenstijl",
+   "ctx": "You write an essay with the title \"Should students have a longer lunch break?\" You think that the break should be longer, because students need time to eat and relax, and because many students are tired in the afternoon.",
+   "v": "Write a thesis sentence and one topic sentence for your first paragraph.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Een duidelijke stelling zoals \"I believe that students need a longer lunch break\" (1p). Een openingszin voor alinea 1 zoals \"First, a longer break helps students to relax\" (2p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "In your essay about phones in schools you have written this argument: \"Phones help students to find information quickly.\" Your teacher says that your argument needs an example to be stronger and more convincing.",
+   "v": "Write one sentence with an example that supports the argument.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Een voorbeeld met for example (1p). Een concreet geval, zoals een leerling die iets opzoekt (1p). Een goede, volledige zin (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "In your essay about uniforms you want to show that you know the other side. Some people say that uniforms prevent bullying, but you disagree and you think that bullying happens in other ways as well.",
+   "v": "Write a counter-argument sentence and your answer to it.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Een tegenargument met \"Some people say that ...\" (1p). Een weerlegging met however (2p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "You are at the end of your essay about homework. Your first draft ends with a new argument about teachers, and your teacher says that this does not belong in a conclusion because a conclusion should repeat the main opinion.",
+   "v": "Rewrite the last sentence as a good conclusion.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Een afsluitend signaalwoord zoals \"In conclusion\" (1p). Het standpunt herhaald (1p). Geen nieuw argument (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "You read this sentence in an essay: \"Homework is a pain, honestly, and teachers are crazy.\" Your teacher says that the style is too informal and personal for a formal essay and that the sentence must be improved.",
+   "v": "Rewrite the sentence in a formal style.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Neutrale, formele woorden (1p). Geen spreektaal of belediging (1p). Een duidelijke, volledige zin (1p)."
+  }
+ ]
+}
