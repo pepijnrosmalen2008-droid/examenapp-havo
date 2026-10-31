@@ -1,0 +1,640 @@
+{
+ "id": "E6",
+ "lo": "en.E.6",
+ "gs": 2,
+ "naam": "Informatie presenteren voor doel en publiek",
+ "beschrijving": "Je leert in het Engels informatie te kiezen, samen te vatten en op te schrijven voor een bepaald doel en publiek, zoals in een folder of bericht.",
+ "ceStatus": "SE",
+ "binas": "",
+ "val": "",
+ "onderwerpen": [
+  "Doel en publiek",
+  "Informatie kiezen en samenvatten",
+  "Taalgebruik aanpassen",
+  "Koppen en opbouw",
+  "Oproep tot actie"
+ ],
+ "sam": "Voor je schrijft, bepaal je het doel (informeren of overtuigen) en het publiek. Je kiest de hoofdzaken, laat details weg en schrijft een korte samenvatting. Voor tieners gebruik je een losse toon, voor ouders een beleefde en voor een officieel bericht een formele. Een goede kop noemt onderwerp en tijd, een opsomming geeft overzicht en een oproep zegt wat de lezer moet doen.",
+ "begrippen": [
+  {
+   "t": "Doel",
+   "d": "Wat je met de tekst wilt bereiken, zoals informeren."
+  },
+  {
+   "t": "Publiek",
+   "d": "De mensen voor wie je schrijft."
+  },
+  {
+   "t": "Samenvatting",
+   "d": "Een korte versie met alleen de hoofdzaken."
+  },
+  {
+   "t": "Hoofdzaak",
+   "d": "Informatie die niet kan ontbreken."
+  },
+  {
+   "t": "Bijzaak",
+   "d": "Informatie die je kunt weglaten."
+  },
+  {
+   "t": "Toon",
+   "d": "Hoe de tekst klinkt: los, beleefd of formeel."
+  },
+  {
+   "t": "Kop",
+   "d": "De titel die de aandacht trekt."
+  },
+  {
+   "t": "Opsomming",
+   "d": "Een lijst met punten onder elkaar."
+  },
+  {
+   "t": "Oproep",
+   "d": "Een zin die de lezer iets laat doen."
+  },
+  {
+   "t": "Informeren",
+   "d": "Feiten geven zonder te overtuigen."
+  },
+  {
+   "t": "Overtuigen",
+   "d": "Iemand iets laten doen of vinden."
+  },
+  {
+   "t": "Affiche",
+   "d": "Een poster met korte, duidelijke gegevens."
+  }
+ ],
+ "sv": [
+  {
+   "v": "Which purpose does a leaflet about a school event have?",
+   "o": [
+    "to confuse the reader about the event",
+    "to inform people",
+    "to tell a long story about yourself",
+    "to ask people for money without reason"
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 0,
+   "u": "Folder = informeren. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"to confuse the reader about the event\"? Dan denk je dat een folder verwart. Het doel is juist duidelijk te zijn, en de lezer te informeren.",
+    "Klopt: een folder over een evenement geeft informatie.",
+    "Koos je \"to tell a long story about yourself\"? Dan denk je dat een folder een verhaal over jezelf is. Het gaat over het evenement, en niet over jou.",
+    "Koos je \"to ask people for money without reason\"? Dan denk je dat een folder geld vraagt. Het doel is informeren of uitnodigen, en niet om geld te vragen."
+   ],
+   "uh": "Wat is het doel?"
+  },
+  {
+   "v": "Which audience needs the simplest language in a text?",
+   "o": [
+    "university professors",
+    "doctors with many years of training",
+    "lawyers who read contracts all day",
+    "young children"
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 0,
+   "u": "Kinderen = eenvoudig. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"university professors\"? Dan denk je dat professoren de eenvoudigste taal nodig hebben. Zij begrijpen moeilijke taal, en hebben die niet nodig.",
+    "Koos je \"doctors with many years of training\"? Dan denk je dat artsen de eenvoudigste taal nodig hebben. Zij kennen vaktaal, en kunnen ingewikkelde teksten lezen.",
+    "Koos je \"lawyers who read contracts all day\"? Dan denk je dat advocaten de eenvoudigste taal nodig hebben. Zij lezen juridische taal, en kunnen ingewikkelde zinnen aan.",
+    "Klopt: jonge kinderen hebben korte, eenvoudige zinnen nodig."
+   ],
+   "uh": "Wie heeft eenvoudige taal nodig?"
+  },
+  {
+   "v": "What do you do when you summarise a text?",
+   "o": [
+    "keep only the main points",
+    "copy every sentence one by one",
+    "add your own long opinion to it",
+    "change all the facts in the text"
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 1,
+   "u": "Samenvatting = hoofdzaken. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: een samenvatting bevat alleen de hoofdzaken.",
+    "Koos je \"copy every sentence one by one\"? Dan denk je dat een samenvatting alles overneemt. Dan is het geen samenvatting, maar een kopie.",
+    "Koos je \"add your own long opinion to it\"? Dan denk je dat een samenvatting je mening bevat. Het geeft de inhoud weer, en niet jouw mening.",
+    "Koos je \"change all the facts in the text\"? Dan denk je dat je de feiten mag veranderen. Een samenvatting blijft trouw aan de tekst, en verandert geen feiten."
+   ],
+   "uh": "Wat doe je?"
+  },
+  {
+   "v": "Which information can you leave out of a summary?",
+   "o": [
+    "the main idea of the text",
+    "the most important facts",
+    "small details and examples",
+    "the answer to the question of the text"
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 1,
+   "u": "Details en voorbeelden weg. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"the main idea of the text\"? Dan denk je dat het hoofdidee bijzaak is. Het hoofdidee is juist de kern, en moet in de samenvatting blijven.",
+    "Koos je \"the most important facts\"? Dan denk je dat de belangrijkste feiten overbodig zijn. Zonder feiten klopt de samenvatting niet, dus ze moeten blijven.",
+    "Klopt: details en voorbeelden zijn bijzaken die je kunt weglaten.",
+    "Koos je \"the answer to the question of the text\"? Dan denk je dat het antwoord op de vraag weg kan. Het is de uitkomst van de tekst, en hoort erin."
+   ],
+   "uh": "Wat laat je weg?"
+  },
+  {
+   "v": "Which sentence is suitable for a leaflet for teenagers?",
+   "o": [
+    "\"We hereby request your presence.\"",
+    "\"Attendance is strictly obligatory.\"",
+    "\"Join us for a fun night!\"",
+    "\"The undersigned wishes to inform you.\""
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 2,
+   "u": "Tieners: losse toon. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"We hereby request your presence.\"? Dan denk je dat deze zin past bij tieners. Het is erg formeel, en klinkt afstandelijk.",
+    "Koos je \"Attendance is strictly obligatory.\"? Dan denk je dat deze zin past. Het is streng en formeel, en nodigt niet uit.",
+    "Klopt: dit is een losse, uitnodigende toon voor tieners.",
+    "Koos je \"The undersigned wishes to inform you.\"? Dan denk je dat deze zin past. Het is zakelijk en ouderwets, en trekt tieners niet aan."
+   ],
+   "uh": "Welke zin past?"
+  },
+  {
+   "v": "Which heading is best for a leaflet about a school disco?",
+   "o": [
+    "\"School disco: Friday 8 p.m.\"",
+    "\"Something is happening\"",
+    "\"A leaflet\"",
+    "\"Read this now maybe\""
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 3,
+   "u": "Kop = evenement + tijd. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: de kop noemt het evenement, de dag en de tijd.",
+    "Koos je \"Something is happening\"? Dan denk je dat deze kop past. Het is vaag, en noemt geen evenement.",
+    "Koos je \"A leaflet\"? Dan denk je dat deze kop past. Het noemt alleen het soort tekst, en geeft geen informatie.",
+    "Koos je \"Read this now maybe\"? Dan denk je dat deze kop past. Het is onduidelijk, en vertelt niets over het evenement."
+   ],
+   "uh": "Welke kop past?"
+  },
+  {
+   "v": "Which sentence has a clear call to action?",
+   "o": [
+    "\"It is a nice day.\"",
+    "\"We like cakes.\"",
+    "\"Maybe think about it.\"",
+    "\"Sign up before 1 June!\""
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 4,
+   "u": "Call to action = wat te doen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"It is a nice day.\"? Dan denk je dat de zin over een mooie dag oproept. Het is slechts een mededeling, en vraagt niets van de lezer.",
+    "Koos je \"We like cakes.\"? Dan denk je dat we like cakes oproept. Het is een voorkeur van de schrijver, en geen opdracht aan de lezer.",
+    "Koos je \"Maybe think about it.\"? Dan denk je dat maybe think about it oproept. Het blijft vaag, en geeft geen duidelijke stap.",
+    "Klopt: de lezer weet wat hij moet doen en wanneer."
+   ],
+   "uh": "Welke zin roept op?"
+  },
+  {
+   "v": "Which sentence fits a flyer for parents?",
+   "o": [
+    "\"Yo, come and rock out with us, parents!\"",
+    "\"We invite you to the concert.\"",
+    "\"Be there or never come again.\"",
+    "\"Concert, Friday, whatever.\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 0,
+   "u": "Ouders: beleefde uitnodiging. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"Yo, come and rock out with us, parents!\"? Dan denk je dat deze zin past bij ouders. Het is spreektaal, en klinkt niet beleefd.",
+    "Klopt: dit is een beleefde uitnodiging voor volwassenen.",
+    "Koos je \"Be there or never come again.\"? Dan denk je dat deze zin past. Het is een dreigement, en onvriendelijk.",
+    "Koos je \"Concert, Friday, whatever.\"? Dan denk je dat deze zin past. Het klinkt onverschillig, en geeft geen uitnodiging."
+   ],
+   "uh": "Welke zin past?",
+   "ctx": "Your school organises a concert on Friday evening. You must write a flyer for the parents of the students. The parents are adults, they are busy, and they want to know what the concert is about."
+  },
+  {
+   "v": "Which sentence fits a flyer for teenagers?",
+   "o": [
+    "\"We respectfully request your attendance.\"",
+    "\"Attendance will be recorded by staff.\"",
+    "\"The concert is held on Friday evening.\"",
+    "\"Come and dance with us on Friday!\""
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 0,
+   "u": "Tieners: losse toon. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"We respectfully request your attendance.\"? Dan denk je dat deze zin past bij tieners. Het is erg formeel, en klinkt afstandelijk.",
+    "Koos je \"Attendance will be recorded by staff.\"? Dan denk je dat deze zin past. Het klinkt als een regel, en niet als een uitnodiging.",
+    "Koos je \"The concert is held on Friday evening.\"? Dan denk je dat deze zin past. Het is saai en zakelijk, en nodigt niet uit.",
+    "Klopt: dit is een losse en uitnodigende toon voor tieners."
+   ],
+   "uh": "Welke zin past?",
+   "ctx": "You make a flyer for the same concert, but now for teenagers in your school. They like a relaxed and exciting style, and you want them to feel that it is a fun event where they can meet friends."
+  },
+  {
+   "v": "Which information must be on an event poster?",
+   "o": [
+    "the history of the school building",
+    "what, when, where and how to join",
+    "all the names of the teachers",
+    "a long story about the last party"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 1,
+   "u": "Wat, wanneer, waar, aanmelden.",
+   "uo": [
+    "Koos je \"the history of the school building\"? Dan denk je dat de geschiedenis op het affiche hoort. Dat is bijzaak, en niet nodig om mee te doen.",
+    "Klopt: dit zijn de basisgegevens voor een affiche.",
+    "Koos je \"all the names of the teachers\"? Dan denk je dat alle namen erop horen. Dat is te veel, en niet nodig.",
+    "Koos je \"a long story about the last party\"? Dan denk je dat een lang verhaal erop hoort. Een affiche is kort, en leest men snel."
+   ],
+   "uh": "Wat hoort op het affiche?",
+   "ctx": "You design a poster for a school party and you must decide what information to put on it. The poster is read in a few seconds by people who walk past it in the corridor, so it must be clear."
+  },
+  {
+   "v": "Which sentence persuades the reader?",
+   "o": [
+    "\"English is a language in the whole world.\"",
+    "\"The course exists.\"",
+    "\"Do not miss this chance!\"",
+    "\"Maybe you could think about it a bit.\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 4,
+   "u": "Overtuigen = positief + direct.",
+   "uo": [
+    "Koos je \"English is a language in the whole world.\"? Dan denk je dat deze zin overtuigt. Het is een neutraal feit, en roept niet op.",
+    "Koos je \"The course exists.\"? Dan denk je dat deze zin overtuigt. Het is een mededeling, en roept niet op.",
+    "Klopt: een positieve oproep overtuigt de lezer.",
+    "Koos je \"Maybe you could think about it a bit.\"? Dan denk je dat deze zin overtuigt. Het is vaag, en klinkt onzeker."
+   ],
+   "uh": "Welke zin overtuigt?",
+   "ctx": "You write a short text to persuade students to join an English course. The text must make them want to sign up, so you use a positive tone and speak directly to the reader in the sentences."
+  },
+  {
+   "v": "Which sentence only informs?",
+   "o": [
+    "\"The course starts on 4 July.\"",
+    "\"Do not miss the best course ever, friends!\"",
+    "\"You will love every single moment of it!\"",
+    "\"Sign up now, it is truly amazing!\""
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 0,
+   "u": "Informeren = feiten. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: het zijn feiten zonder overtuigende woorden.",
+    "Koos je \"Do not miss the best course ever, friends!\"? Dan denk je dat deze zin alleen informeert. Het overtuigt met best ever, en roept op.",
+    "Koos je \"You will love every single moment of it!\"? Dan denk je dat deze zin alleen informeert. Het overtuigt met you will love, en is een belofte.",
+    "Koos je \"Sign up now, it is truly amazing!\"? Dan denk je dat deze zin alleen informeert. Het roept op en overtuigt, en is dus niet neutraal."
+   ],
+   "uh": "Welke zin informeert alleen?",
+   "ctx": "You write a notice that only informs students about a summer course, without trying to persuade them. The notice gives the plain facts and the language is neutral and clear for all readers."
+  },
+  {
+   "v": "Which heading catches attention?",
+   "o": [
+    "\"Win a trip to London!\"",
+    "\"A competition is organised\"",
+    "\"Information about something\"",
+    "\"Please read the text below carefully\""
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 3,
+   "u": "Kop: kort en aantrekkelijk. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: een korte, krachtige kop met een prijs trekt de aandacht.",
+    "Koos je \"A competition is organised\"? Dan denk je dat deze kop opvalt. Het is een droge mededeling, en trekt niet aan.",
+    "Koos je \"Information about something\"? Dan denk je dat deze kop opvalt. Het is vaag, en nodigt niet uit.",
+    "Koos je \"Please read the text below carefully\"? Dan denk je dat deze kop opvalt. Het is een instructie, en zegt niets over de prijs."
+   ],
+   "uh": "Welke kop valt op?",
+   "ctx": "You write a flyer for a school competition and you want a heading that catches the attention of students who walk past. The prize is a trip to London, which makes the competition exciting and worth a try."
+  },
+  {
+   "v": "Which sentence is a good opening?",
+   "o": [
+    "\"This is an article about something.\"",
+    "\"Bees are small insects with six legs.\"",
+    "\"Ever wondered how bees make honey?\"",
+    "\"I will now write about bees for you.\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 3,
+   "u": "Vraag = nieuwsgierigheid. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"This is an article about something.\"? Dan denk je dat deze zin een goede opening is. Het is vaag, en wekt geen nieuwsgierigheid.",
+    "Koos je \"Bees are small insects with six legs.\"? Dan denk je dat deze zin een goede opening is. Het is een droog feit, en wekt weinig nieuwsgierigheid.",
+    "Klopt: een vraag aan de lezer wekt nieuwsgierigheid.",
+    "Koos je \"I will now write about bees for you.\"? Dan denk je dat deze zin een goede opening is. Het is saai, en noemt niets interessants."
+   ],
+   "uh": "Welke zin opent goed?",
+   "ctx": "You write an article for the school magazine about bees and you want the first sentence to make readers curious. The article is for students of your own age who like to read interesting facts about nature."
+  },
+  {
+   "v": "Which sentence suits a formal notice?",
+   "o": [
+    "\"Kids, get here on time, okay, please?\"",
+    "\"Students must arrive on time.\"",
+    "\"You better be on time or else, guys.\"",
+    "\"Be early, guys, it is really cool.\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 2,
+   "u": "Formeel = requested. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"Kids, get here on time, okay, please?\"? Dan denk je dat deze zin formeel is. Het is spreektaal, en niet zakelijk.",
+    "Klopt: dit is een beleefde, formele formulering.",
+    "Koos je \"You better be on time or else, guys.\"? Dan denk je dat deze zin formeel is. Het is een dreigement, en onbeleefd.",
+    "Koos je \"Be early, guys, it is really cool.\"? Dan denk je dat deze zin formeel is. Het is slang, en niet formeel."
+   ],
+   "uh": "Welke zin is formeel?",
+   "ctx": "You write a formal notice for the school board about a new rule for students. The notice is read by teachers and parents, so the language should be clear and polite without slang or short forms."
+  },
+  {
+   "v": "Why use bullet points in a leaflet?",
+   "o": [
+    "they make the text much longer",
+    "they hide the important facts",
+    "they are only for children",
+    "they make information easy to find"
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 4,
+   "u": "Opsomming = overzicht. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"they make the text much longer\"? Dan denk je dat opsommingstekens de tekst langer maken. Ze maken hem juist overzichtelijker, en de lengte verandert niet.",
+    "Koos je \"they hide the important facts\"? Dan denk je dat opsommingstekens feiten verbergen. Ze laten ze juist zien, en maken ze makkelijk te vinden.",
+    "Koos je \"they are only for children\"? Dan denk je dat opsommingstekens alleen voor kinderen zijn. Ze zijn voor iedereen nuttig, en geven overzicht.",
+    "Klopt: een lijst geeft overzicht en is snel te lezen."
+   ],
+   "uh": "Waarom een opsomming?",
+   "ctx": "In your leaflet you have a list of four things that visitors should bring to the school open day. You can write this as a list with bullet points or as a long paragraph, and you must decide which one to use."
+  },
+  {
+   "v": "Which sentence is the best summary of the text?",
+   "o": [
+    "\"The head teacher hopes that more students will study there.\"",
+    "\"From 1 March the library is open longer.\"",
+    "\"Students must bring their own headphones to use.\"",
+    "\"The library has a quiet room for exams.\""
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 1,
+   "u": "Kern: nieuwe openingstijden. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"The head teacher hopes that more students will...\"? Dan denk je dat dit de samenvatting is. Het is een detail aan het slot, en niet de kern.",
+    "Klopt: dit is de kern van het bericht over de bibliotheek in één zin.",
+    "Koos je \"Students must bring their own headphones to use.\"? Dan denk je dat dit de samenvatting is. Het is een detail, en niet de hoofdzaak.",
+    "Koos je \"The library has a quiet room for exams.\"? Dan denk je dat dit de samenvatting is. Het is een detail, en niet de hoofdzaak."
+   ],
+   "uh": "Welke zin is de samenvatting?",
+   "ctx": "The school library will be open longer from next month. From 1 March it will open at 8 a.m. instead of 9 a.m. and close at 6 p.m. instead of 5 p.m. Students can use computers for free, but they must bring their own headphones. The library also offers a quiet room for exams. The head teacher says that she hopes more students will use the library to study."
+  },
+  {
+   "v": "Which part of the text can be left out of a short notice?",
+   "o": [
+    "the head teacher's hope",
+    "the new opening times",
+    "the date of 1 March",
+    "the rule about headphones"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 1,
+   "u": "Bijzaak weglaten. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: dit is een bijzaak voor een kort bericht.",
+    "Koos je \"the new opening times\"? Dan denk je dat de openingstijden weg mogen. Dat is juist de kern, en moet blijven.",
+    "Koos je \"the date of 1 March\"? Dan denk je dat de datum weg mag. De leerlingen moeten weten wanneer het ingaat, dus hij moet blijven.",
+    "Koos je \"the rule about headphones\"? Dan denk je dat de regel over koptelefoons weg mag. Het is nuttig voor leerlingen, en kan blijven."
+   ],
+   "uh": "Wat kan weg?",
+   "ctx": "The school library will be open longer from next month. From 1 March it will open at 8 a.m. instead of 9 a.m. and close at 6 p.m. instead of 5 p.m. Students can use computers for free, but they must bring their own headphones. The library also offers a quiet room for exams. The head teacher says that she hopes more students will use the library to study."
+  },
+  {
+   "v": "Which detail is essential for students in the notice?",
+   "o": [
+    "the opinion of the head teacher",
+    "the number of books in the library",
+    "the name of the library",
+    "the new opening times"
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 1,
+   "u": "Essentieel: openingstijden. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"the opinion of the head teacher\"? Dan denk je dat de mening van de rector essentieel is. Het is een detail, en niet nodig voor het gebruik.",
+    "Koos je \"the number of books in the library\"? Dan denk je dat het aantal boeken essentieel is. Het staat niet in de tekst, en is niet nodig.",
+    "Koos je \"the name of the library\"? Dan denk je dat de naam van de bibliotheek essentieel is. Het staat niet in de tekst, en leerlingen kennen die al.",
+    "Klopt: leerlingen willen weten wanneer de bibliotheek open is."
+   ],
+   "uh": "Welk detail is essentieel?",
+   "ctx": "The school library will be open longer from next month. From 1 March it will open at 8 a.m. instead of 9 a.m. and close at 6 p.m. instead of 5 p.m. Students can use computers for free, but they must bring their own headphones. The library also offers a quiet room for exams. The head teacher says that she hopes more students will use the library to study."
+  },
+  {
+   "v": "Which notice for students is written in a suitable style?",
+   "o": [
+    "\"The library will be open longer in the future somehow, maybe.\"",
+    "\"We announce that something has changed at school.\"",
+    "\"Good news! The library is open 8 a.m. to 6 p.m.\"",
+    "\"Library, time, change, maybe, I think.\""
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 3,
+   "u": "Duidelijk en vriendelijk. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"The library will be open longer in the future...\"? Dan denk je dat dit past. Het is vaag, en noemt geen tijden.",
+    "Koos je \"We announce that something has changed at school.\"? Dan denk je dat dit past. Het is onduidelijk, en geeft geen feiten.",
+    "Klopt: dit is een duidelijke, vriendelijke mededeling met de feiten.",
+    "Koos je \"Library, time, change, maybe, I think.\"? Dan denk je dat dit past. Het is een rij woorden, en geen bruikbaar bericht."
+   ],
+   "uh": "Welk bericht past?",
+   "ctx": "The school library will be open longer from next month. From 1 March it will open at 8 a.m. instead of 9 a.m. and close at 6 p.m. instead of 5 p.m. Students can use computers for free, but they must bring their own headphones. The library also offers a quiet room for exams. The head teacher says that she hopes more students will use the library to study."
+  },
+  {
+   "v": "Which closing line makes a call to action in the notice?",
+   "o": [
+    "\"The library is a library.\"",
+    "\"It has books.\"",
+    "\"Come and use the library!\"",
+    "\"Maybe it is nice.\""
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 4,
+   "u": "Oproep tot actie. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"The library is a library.\"? Dan denk je dat library is a library een oproep is. Het is een lege mededeling, en vraagt niets.",
+    "Koos je \"It has books.\"? Dan denk je dat it has books een oproep is. Het is slechts een feit, en vraagt niets van de lezer.",
+    "Klopt: dit roept de lezer op om iets te doen.",
+    "Koos je \"Maybe it is nice.\"? Dan denk je dat maybe it is nice een oproep is. Het blijft vaag, en geeft geen duidelijke stap."
+   ],
+   "uh": "Welke zin roept op?",
+   "ctx": "The school library will be open longer from next month. From 1 March it will open at 8 a.m. instead of 9 a.m. and close at 6 p.m. instead of 5 p.m. Students can use computers for free, but they must bring their own headphones. The library also offers a quiet room for exams. The head teacher says that she hopes more students will use the library to study."
+  },
+  {
+   "v": "Which heading fits the notice best?",
+   "o": [
+    "\"News from school and the town\"",
+    "\"A text about the school and its library\"",
+    "\"Headphones for everyone in the building\"",
+    "\"Longer library hours\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 3,
+   "u": "Kop = onderwerp en kern. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"News from school and the town\"? Dan denk je dat deze kop past. Het is te algemeen, en noemt het onderwerp niet.",
+    "Koos je \"A text about the school and its library\"? Dan denk je dat deze kop past. Het is vaag, en noemt de kern niet.",
+    "Koos je \"Headphones for everyone in the building\"? Dan denk je dat deze kop past. Het noemt een detail, en niet de hoofdzaak.",
+    "Klopt: de kop noemt het onderwerp en de kern."
+   ],
+   "uh": "Welke kop past?",
+   "ctx": "The school library will be open longer from next month. From 1 March it will open at 8 a.m. instead of 9 a.m. and close at 6 p.m. instead of 5 p.m. Students can use computers for free, but they must bring their own headphones. The library also offers a quiet room for exams. The head teacher says that she hopes more students will use the library to study."
+  },
+  {
+   "v": "Which approach is best for ten-year-old readers?",
+   "o": [
+    "short, simple sentences with easy words",
+    "long sentences with technical words",
+    "formal language with many rules",
+    "a long text without any pictures"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 0,
+   "u": "Kinderen: kort en makkelijk. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: korte zinnen met makkelijke woorden zijn voor kinderen duidelijk.",
+    "Koos je \"long sentences with technical words\"? Dan denk je dat lange zinnen helpen. Ze zijn moeilijk voor kinderen, en vaktaal begrijpen ze niet.",
+    "Koos je \"formal language with many rules\"? Dan denk je dat formele taal helpt. Die is moeilijk voor kinderen, en afstandelijk.",
+    "Koos je \"a long text without any pictures\"? Dan denk je dat een lange tekst helpt. Het is saai voor kinderen, en moeilijk te volgen."
+   ],
+   "uh": "Wat is het beste?",
+   "ctx": "You write a text about healthy food for ten-year-old children. They read slowly and do not know difficult words, so you want to choose the best way to write your text for this young audience."
+  },
+  {
+   "v": "Which tone is best for a persuasive text?",
+   "o": [
+    "negative and boring",
+    "positive and direct",
+    "angry and very strict",
+    "very formal and cold"
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 4,
+   "u": "Overtuigen: positief en direct.",
+   "uo": [
+    "Koos je \"negative and boring\"? Dan denk je dat een negatieve toon overtuigt. Dat schrikt af, en maakt mensen niet enthousiast.",
+    "Klopt: een positieve, directe toon overtuigt het best.",
+    "Koos je \"angry and very strict\"? Dan denk je dat een boze toon overtuigt. Dat roept weerstand op, en past niet bij uitnodigen.",
+    "Koos je \"very formal and cold\"? Dan denk je dat een koude toon overtuigt. Dat is afstandelijk, en past niet bij jongeren."
+   ],
+   "uh": "Welke toon past?",
+   "ctx": "You write a text to persuade students to take part in a charity run. You want them to feel excited, and you must decide what tone is best for a persuasive text for a young audience."
+  },
+  {
+   "v": "How can you check that your text suits the audience?",
+   "o": [
+    "print it and do not read it again",
+    "ask nobody and hope it is fine",
+    "make the text as long as you can",
+    "imagine the reader and read the text aloud"
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 0,
+   "u": "Lezer voorstellen en hardop lezen.",
+   "uo": [
+    "Koos je \"print it and do not read it again\"? Dan denk je dat controleren niet nodig is. Je mist dan fouten, en weet niet of het past.",
+    "Koos je \"ask nobody and hope it is fine\"? Dan denk je dat hopen genoeg is. Je kunt dan fouten maken, en je weet het niet zeker.",
+    "Koos je \"make the text as long as you can\"? Dan denk je dat een langere tekst beter past. Lengte zegt niets over de toon, en kan juist verwarren.",
+    "Klopt: zo hoor en zie je of toon en woorden passen."
+   ],
+   "uh": "Hoe controleer je?",
+   "ctx": "You have finished a leaflet for parents about a school trip, but you are not sure if the style is right for them. You want to check this before you print it so that the text really fits your readers."
+  }
+ ],
+ "oe": [
+  {
+   "bron": "Examenstijl",
+   "ctx": "Your school will hold a Christmas market on 15 December from 2 p.m. to 6 p.m. in the sports hall. There will be food, music and games, and all money goes to a charity for children. You write a flyer for the students.",
+   "v": "Write a heading and two sentences for the flyer with the main facts.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Een kop met evenement en datum (1p). De tijd en plaats (1p). Het goede doel of het programma (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "The same Christmas market is also announced to the parents of the students in a letter. The parents are adults and they want to know what happens and when, and whether they can help.",
+   "v": "Write two polite sentences for the parents that inform them.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Een beleefde uitnodiging (1p). Feiten over datum en tijd (1p). Een vraag om hulp of een formele toon (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "You must summarise this text for the school website: \"The school bus will now leave at 7.45 instead of 8.00 because of road works. The bus will stop at the same places. The school hopes that students will arrive on time. Road works will end in March.\" You may use only two sentences.",
+   "v": "Write a short summary with the main facts.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "De nieuwe tijd noemen (1p). De reden noemen (1p). Geen bijzaken (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "You write a poster for a school party and you want students to sign up. The party is on 20 June in the canteen. Students must sign up before 15 June at the school desk. You want to use a short and exciting text.",
+   "v": "Write a heading and a call to action for the poster.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Een aantrekkelijke kop (1p). Een duidelijke oproep zoals \"Sign up before 15 June\" (2p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "You write a notice for the school board about a new rule: students must wear sports shoes in the gym. The notice is read by teachers and parents, so it must be formal and polite, and clear about the reason.",
+   "v": "Write a formal sentence that informs readers about the rule and the reason.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Een formele en beleefde zin (1p). De regel genoemd (1p). De reden genoemd (1p)."
+  }
+ ]
+}

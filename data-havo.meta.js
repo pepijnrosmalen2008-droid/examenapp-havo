@@ -3005,6 +3005,27 @@ var VAKKEN = [
       "nOe": 5,
       "nBeg": 12,
       "hasSam": true
+     },
+     {
+      "id": "E6",
+      "lo": "en.E.6",
+      "gs": 2,
+      "naam": "Informatie presenteren voor doel en publiek",
+      "beschrijving": "Je leert in het Engels informatie te kiezen, samen te vatten en op te schrijven voor een bepaald doel en publiek, zoals in een folder of bericht.",
+      "ceStatus": "SE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Doel en publiek",
+       "Informatie kiezen en samenvatten",
+       "Taalgebruik aanpassen",
+       "Koppen en opbouw",
+       "Oproep tot actie"
+      ],
+      "nSv": 25,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
      }
     ]
    },
