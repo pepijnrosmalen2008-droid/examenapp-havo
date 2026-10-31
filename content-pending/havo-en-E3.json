@@ -1,0 +1,682 @@
+{
+ "id": "E3",
+ "lo": "en.E.3",
+ "gs": 2,
+ "naam": "Personen en zaken beschrijven en gevoelens uitdrukken in een tekst",
+ "beschrijving": "Je leert in het Engels op papier personen, plaatsen en gevoelens te beschrijven met goede woorden, verbindingswoorden en alinea's.",
+ "ceStatus": "SE",
+ "binas": "",
+ "val": "",
+ "onderwerpen": [
+  "Personen beschrijven",
+  "Plaatsen en voorwerpen",
+  "Gevoelens opschrijven",
+  "Verbindingswoorden",
+  "Alinea's"
+ ],
+ "sam": "In een geschreven beschrijving noem je uiterlijk, karakter en plaats met passende bijvoeglijke naamwoorden in de juiste volgorde. Je drukt gevoelens uit met woorden als thrilled en sad en laat ze zien met wat iemand doet. Met because, but en so verbind je zinnen en met first, then en after that geef je de volgorde aan. Elke alinea gaat over één idee en je wisselt je woorden af.",
+ "begrippen": [
+  {
+   "t": "Beschrijving",
+   "d": "Een tekst die vertelt hoe iets of iemand is."
+  },
+  {
+   "t": "Bijvoeglijk naamwoord",
+   "d": "Een woord dat iets beschrijft, zoals peaceful."
+  },
+  {
+   "t": "Gevoelswoord",
+   "d": "Een woord als thrilled of sad."
+  },
+  {
+   "t": "Verbindingswoord",
+   "d": "Een woord als because, but of so."
+  },
+  {
+   "t": "Contrast",
+   "d": "Twee ideeën tegenover elkaar."
+  },
+  {
+   "t": "Reden",
+   "d": "Waarom iets zo is, met because."
+  },
+  {
+   "t": "Gevolg",
+   "d": "Wat daarna gebeurt, met so."
+  },
+  {
+   "t": "Alinea",
+   "d": "Een deel van de tekst over één idee."
+  },
+  {
+   "t": "Volgorde",
+   "d": "Eerst, dan en daarna."
+  },
+  {
+   "t": "Afwisseling",
+   "d": "Niet steeds hetzelfde woord gebruiken."
+  },
+  {
+   "t": "Levendig",
+   "d": "Met details waardoor je het voor je ziet."
+  },
+  {
+   "t": "Laten zien",
+   "d": "Een gevoel tonen met wat iemand doet."
+  }
+ ],
+ "sv": [
+  {
+   "v": "Which sentence describes a person in writing?",
+   "o": [
+    "\"My sister goes to school every day.\"",
+    "\"My sister is tall and has long hair.\"",
+    "\"My sister lives in a house.\"",
+    "\"My sister has a bike and a bag.\""
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 0,
+   "u": "Uiterlijk beschrijven. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"My sister goes to school every day.\"? Dan denk je dat deze zin haar beschrijft. Het noemt een gewoonte, en geen uiterlijk of karakter.",
+    "Klopt: tall en long hair beschrijven haar uiterlijk.",
+    "Koos je \"My sister lives in a house.\"? Dan denk je dat deze zin haar beschrijft. Het noemt alleen waar ze woont, en niet hoe ze eruitziet.",
+    "Koos je \"My sister has a bike and a bag.\"? Dan denk je dat deze zin haar beschrijft. Het noemt voorwerpen, en geen persoon."
+   ],
+   "uh": "Welke zin beschrijft een persoon?"
+  },
+  {
+   "v": "Which adjective fits a quiet village by the sea?",
+   "o": [
+    "crowded, which means full of people",
+    "noisy, which means loud",
+    "dirty, which means not clean",
+    "peaceful"
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 1,
+   "u": "Peaceful = rustig. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"crowded, which means full of people\"? Dan denk je dat crowded past. Het betekent druk, en dat past niet bij een rustig dorp.",
+    "Koos je \"noisy, which means loud\"? Dan denk je dat noisy past. Het betekent lawaaierig, en is het tegenovergestelde van rustig.",
+    "Koos je \"dirty, which means not clean\"? Dan denk je dat dirty past. Het gaat over vuil, en niet over de sfeer.",
+    "Klopt: peaceful betekent rustig en vredig en past bij een dorp aan zee."
+   ],
+   "uh": "Welk woord past?"
+  },
+  {
+   "v": "Which sentence expresses a feeling in a letter?",
+   "o": [
+    "\"I was thrilled when I got your letter.\"",
+    "\"I got your letter on Monday.\"",
+    "\"Your letter was in the mail box.\"",
+    "\"The letter had two pages.\""
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 2,
+   "u": "Gevoelswoord + reden. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: thrilled noemt het gevoel en de reden.",
+    "Koos je \"I got your letter on Monday.\"? Dan denk je dat deze zin een gevoel uitdrukt. Het noemt alleen een feit, en geen gevoel.",
+    "Koos je \"Your letter was in the mail box.\"? Dan denk je dat deze zin een gevoel uitdrukt. Het beschrijft een plaats, en geen gevoel.",
+    "Koos je \"The letter had two pages.\"? Dan denk je dat deze zin een gevoel uitdrukt. Het noemt een aantal, en geen gevoel."
+   ],
+   "uh": "Welke zin toont een gevoel?"
+  },
+  {
+   "v": "Which word joins two sentences with a reason?",
+   "o": [
+    "\"but\", which shows a contrast",
+    "\"so\", which shows a result",
+    "\"because\"",
+    "\"and\", which adds something"
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 3,
+   "u": "Because = reden. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"but, which shows a contrast\"? Dan denk je dat but een reden geeft. Het zet iets tegenover elkaar, en is geen reden.",
+    "Koos je \"so, which shows a result\"? Dan denk je dat so een reden geeft. Het geeft een gevolg, en niet de reden.",
+    "Klopt: because geeft de reden waarom twee zinnen bij elkaar horen.",
+    "Koos je \"and, which adds something\"? Dan denk je dat and een reden geeft. Het voegt alleen toe, en verklaart niets."
+   ],
+   "uh": "Welk woord geeft een reden?"
+  },
+  {
+   "v": "Which word adds a contrast between two ideas?",
+   "o": [
+    "\"and\", which adds an idea",
+    "\"because\", which gives a reason",
+    "\"but\"",
+    "\"so\", which gives a result"
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 3,
+   "u": "But = contrast. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"and, which adds an idea\"? Dan denk je dat and een tegenstelling maakt. Het voegt alleen een idee toe, en zet niets tegenover.",
+    "Koos je \"because, which gives a reason\"? Dan denk je dat een reden een tegenstelling is. Because legt uit waarom, en dat is een ander verband.",
+    "Klopt: but zet twee ideeën tegenover elkaar en geeft dus een contrast.",
+    "Koos je \"so, which gives a result\"? Dan denk je dat een gevolg een tegenstelling is. So noemt wat daarna komt, en dat is een ander verband."
+   ],
+   "uh": "Welk woord geeft contrast?"
+  },
+  {
+   "v": "Which description of a paragraph is best?",
+   "o": [
+    "a group of sentences about one topic",
+    "a single word in a long text",
+    "the title at the top of a text",
+    "a list of all the verbs in a text"
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 4,
+   "u": "Alinea = één onderwerp. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: een alinea hoort bij één onderwerp of idee.",
+    "Koos je \"a single word in a long text\"? Dan denk je dat een alinea één woord is. Het is een groep zinnen, en dus langer.",
+    "Koos je \"the title at the top of a text\"? Dan denk je dat een alinea de titel is. De titel is de naam van de tekst, en geen alinea.",
+    "Koos je \"a list of all the verbs in a text\"? Dan denk je dat een alinea een lijst werkwoorden is. Het is een stuk tekst, en geen lijst."
+   ],
+   "uh": "Wat is een alinea?"
+  },
+  {
+   "v": "When do you start a new paragraph?",
+   "o": [
+    "after every single sentence you write",
+    "never, one block is always better",
+    "only at the end of the page",
+    "when you begin a new idea"
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 4,
+   "u": "Nieuw idee = nieuwe alinea. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"after every single sentence you write\"? Dan denk je dat elke zin een nieuwe alinea is. Dat maakt je tekst rommelig, en een alinea heeft meerdere zinnen.",
+    "Koos je \"never, one block is always better\"? Dan denk je dat een blok altijd beter is. Het is moeilijk leesbaar, en mist structuur.",
+    "Koos je \"only at the end of the page\"? Dan denk je dat de pagina bepaalt waar een alinea begint. De inhoud bepaalt dat, en niet de pagina.",
+    "Klopt: bij een nieuw idee begin je een nieuwe alinea."
+   ],
+   "uh": "Wanneer begin je een alinea?"
+  },
+  {
+   "v": "Which sentence is a good description?",
+   "o": [
+    "\"My friend Lisa is my friend and she is called Lisa.\"",
+    "\"Lisa is kind and has curly hair.\"",
+    "\"Lisa is a person who goes to school every day.\"",
+    "\"There is a girl and she is there in my class.\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 0,
+   "u": "Karakter en uiterlijk. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"My friend Lisa is my friend and she is called Lisa.\"? Dan denk je dat deze zin beschrijft. Het herhaalt alleen de naam, en geeft geen kenmerk.",
+    "Klopt: karakter en uiterlijk staan in één duidelijke zin.",
+    "Koos je \"Lisa is a person who goes to school every day.\"? Dan denk je dat deze zin beschrijft. Het noemt geen kenmerk, en is vaag.",
+    "Koos je \"There is a girl and she is there in my class.\"? Dan denk je dat deze zin beschrijft. Het is een lege zin, en noemt niets over Lisa."
+   ],
+   "uh": "Welke zin beschrijft?",
+   "ctx": "Your English pen friend asks you to describe your best friend Lisa in your next letter. Lisa is kind and funny, and she has short curly hair. You want to give a clear and friendly description in one sentence."
+  },
+  {
+   "v": "Which sentence describes the room well?",
+   "o": [
+    "\"My room is a room with things.\"",
+    "\"My room, small, cosy, I like.\"",
+    "\"There is a room that is a room.\"",
+    "\"My room is small, but it is very cosy.\""
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 1,
+   "u": "Small but cosy. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"My room is a room with things.\"? Dan denk je dat deze zin beschrijft. Het is vaag, en noemt geen kenmerk.",
+    "Koos je \"My room, small, cosy, I like.\"? Dan denk je dat deze zin beschrijft. Het is geen volledige zin, en klinkt onhandig.",
+    "Koos je \"There is a room that is a room.\"? Dan denk je dat deze zin beschrijft. Het herhaalt alleen het woord, en geeft geen informatie.",
+    "Klopt: small en cosy beschrijven de kamer met een contrast."
+   ],
+   "uh": "Welke zin beschrijft de kamer?",
+   "ctx": "In a letter to a friend you want to describe your bedroom. It is small, but you have decorated it with posters and plants, and you like to spend time there reading and listening to music in the evening."
+  },
+  {
+   "v": "Which sentence tells how you feel?",
+   "o": [
+    "\"The beach is next to the hotel.\"",
+    "\"I am having a wonderful time here!\"",
+    "\"We eat dinner at eight o'clock.\"",
+    "\"There is a pool at the hotel.\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 2,
+   "u": "Wonderful = gevoel. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"The beach is next to the hotel.\"? Dan denk je dat de ligging van het hotel een gevoel is. Het is een plaatsbepaling, en geen emotie.",
+    "Klopt: wonderful drukt een positief gevoel uit over je vakantie.",
+    "Koos je \"We eat dinner at eight o'clock.\"? Dan denk je dat de tijd van het eten een gevoel is. Het noemt een tijdstip, en geen emotie.",
+    "Koos je \"There is a pool at the hotel.\"? Dan denk je dat een zwembad een gevoel is. Het is een feit over het hotel, en geen emotie."
+   ],
+   "uh": "Welke zin toont je gevoel?",
+   "ctx": "You are on holiday in Spain and you write a postcard to your grandparents. You want to tell them how you feel, because you have a great time at the beach and you eat nice food every day."
+  },
+  {
+   "v": "Which sentence expresses sadness?",
+   "o": [
+    "\"I heard the news on the radio.\"",
+    "\"The news was on at seven.\"",
+    "\"I was very sad when I heard the news.\"",
+    "\"I was very happy about the news.\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 2,
+   "u": "Sad + reden. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"I heard the news on the radio.\"? Dan denk je dat luisteren naar de radio verdriet toont. Het meldt alleen waar je het hoorde, en zegt niets over je gevoel.",
+    "Koos je \"The news was on at seven.\"? Dan denk je dat het uur van het journaal verdriet toont. De zin geeft alleen een klokstijd, en dat is geen emotie.",
+    "Klopt: sad noemt het gevoel en when I heard noemt de aanleiding.",
+    "Koos je \"I was very happy about the news.\"? Dan denk je dat blij zijn verdriet is. Happy is positief, en past niet bij dit nieuws."
+   ],
+   "uh": "Welke zin toont verdriet?",
+   "ctx": "Your friend has lost his grandfather. You write a short letter and you want to say that you were very sad when you heard the news, because you knew his grandfather well and you liked him."
+  },
+  {
+   "v": "Which sentence joins the ideas correctly?",
+   "o": [
+    "\"I like the town, because it has many parks.\"",
+    "\"I like the town, but it has many parks.\"",
+    "\"I like the town, and because many parks.\"",
+    "\"I like the town so it has many parks.\""
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 3,
+   "u": "Because = reden. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: because verbindt het oordeel met de reden.",
+    "Koos je \"I like the town, but it has many parks.\"? Dan denk je dat but uitlegt waarom je iets leuk vindt. But zet iets tegenover elkaar, en past niet bij een reden.",
+    "Koos je \"I like the town, and because many parks.\"? Dan denk je dat and because samen een reden geven. De zin is onvolledig, en because heeft een hele zin nodig.",
+    "Koos je \"I like the town so it has many parks.\"? Dan denk je dat so de reden inleidt. So noemt het gevolg, en past hier logisch niet."
+   ],
+   "uh": "Welke zin verbindt goed?",
+   "ctx": "You write about your hometown in a letter. You want to tell your friend that you like it and give a reason in the same sentence, because you want your friend to understand why you like the place."
+  },
+  {
+   "v": "Which sentence shows the contrast?",
+   "o": [
+    "\"The hotel was cheap, but the rooms were small.\"",
+    "\"The hotel was cheap, because the rooms were small.\"",
+    "\"The hotel was cheap, so the rooms were small.\"",
+    "\"The hotel was cheap, and the rooms were cheap.\""
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 3,
+   "u": "But = contrast. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: but zet de twee tegengestelde ideeën naast elkaar.",
+    "Koos je \"The hotel was cheap, because the rooms were small.\"? Dan denk je dat because een tegenstelling aangeeft. Het geeft een reden, en maakt er een onlogische reden van.",
+    "Koos je \"The hotel was cheap, so the rooms were small.\"? Dan denk je dat een gevolg een contrast is. So past niet bij goedkoop en klein, en is hier onlogisch.",
+    "Koos je \"The hotel was cheap, and the rooms were cheap.\"? Dan denk je dat and de twee ideeën tegenover elkaar zet. Het voegt alleen toe, en laat geen contrast zien."
+   ],
+   "uh": "Welke zin toont contrast?",
+   "ctx": "In your report about a short holiday you want to say that the hotel was cheap, but that you did not like the size of the rooms. You want to put these two opposite ideas in one sentence."
+  },
+  {
+   "v": "Which sentence shows the result?",
+   "o": [
+    "\"It rained all day, but we stayed inside.\"",
+    "\"It rained all day, because we stayed inside.\"",
+    "\"It rained all day, so we stayed inside.\"",
+    "\"It rained all day, and stay inside.\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 3,
+   "u": "So = gevolg. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"It rained all day, but we stayed inside.\"? Dan denk je dat but het gevolg toont. Het zet iets tegenover elkaar, en past niet bij dit verband.",
+    "Koos je \"It rained all day, because we stayed inside.\"? Dan denk je dat because het gevolg toont. Het geeft een omgekeerde reden, en klopt logisch niet.",
+    "Klopt: so geeft het gevolg van de regen, namelijk binnen blijven.",
+    "Koos je \"It rained all day, and stay inside.\"? Dan denk je dat deze zin klopt. Het werkwoord klopt niet, en er mist een onderwerp."
+   ],
+   "uh": "Welke zin toont het gevolg?",
+   "ctx": "You write about a day on holiday. It rained all day, and because of the weather you and your family did not go out, but stayed inside and played games. You want to show the result with a connecting word."
+  },
+  {
+   "v": "Which phrase has the correct order?",
+   "o": [
+    "\"a wooden old small house\"",
+    "\"a small old wooden house\"",
+    "\"an old wooden small house\"",
+    "\"a house small old wooden\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 1,
+   "u": "Grootte, leeftijd, materiaal. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"a wooden old small house\"? Dan denk je dat het materiaal eerst komt. Het materiaal staat vlak voor het zelfstandig naamwoord, dus de volgorde is fout.",
+    "Klopt: de volgorde is grootte, leeftijd, materiaal.",
+    "Koos je \"an old wooden small house\"? Dan denk je dat de grootte aan het eind komt. De grootte staat eerst, dus de volgorde klopt niet.",
+    "Koos je \"a house small old wooden\"? Dan denk je dat het zelfstandig naamwoord voorop staat. In het Engels staat het erachter, dus dit is fout."
+   ],
+   "uh": "Welke volgorde klopt?",
+   "ctx": "You describe an old house in your holiday story. The house is small, it is old and it is made of wood. You want to put the adjectives in the right order before the noun in your sentence."
+  },
+  {
+   "v": "Which sentence describes the trip correctly?",
+   "o": [
+    "\"The beach is beautiful and the water were warm.\"",
+    "\"The beach were beautiful and the water was warm.\"",
+    "\"The beach be beautiful and water is warm.\"",
+    "\"The beach was beautiful and the water was warm.\""
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 1,
+   "u": "Verleden tijd: was. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"The beach is beautiful and the water were warm.\"? Dan denk je dat de tijden mogen verschillen. Je beschrijft een reis uit het verleden, dus alles staat in de verleden tijd.",
+    "Koos je \"The beach were beautiful and the water was warm.\"? Dan denk je dat were bij beach past. Beach is enkelvoud, dus was.",
+    "Koos je \"The beach be beautiful and water is warm.\"? Dan denk je dat be hier past. De juiste vorm is was, en dit klopt niet.",
+    "Klopt: was staat in de verleden tijd en past bij het enkelvoud."
+   ],
+   "uh": "Welke zin klopt?",
+   "ctx": "You write about a trip you made last summer. You want to describe the beach and the water in the past tense, as the trip is over now, and you want to use the correct form of the verb to be."
+  },
+  {
+   "v": "Which sentence avoids repeating \"nice\"?",
+   "o": [
+    "\"The film was nice and the music was nice too.\"",
+    "\"The film was great, the music wonderful.\"",
+    "\"The film was nice, nice and nice again.\"",
+    "\"The film was a thing and a thing.\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 0,
+   "u": "Gevarieerde woorden. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"The film was nice and the music was nice too.\"? Dan denk je dat twee keer nice afwisseling is. Het herhaalt hetzelfde woord, en is dus saai.",
+    "Klopt: great en wonderful zijn afwisselende woorden.",
+    "Koos je \"The film was nice, nice and nice again.\"? Dan denk je dat drie keer nice afwisselt. Het woord blijft gelijk, en klinkt vreemd.",
+    "Koos je \"The film was a thing and a thing.\"? Dan denk je dat thing en thing afwisselen. Het zijn lege woorden, en beschrijven niets."
+   ],
+   "uh": "Welke zin wisselt af?",
+   "ctx": "In a letter you want to say that you liked a film and a song. You want to avoid repeating the word \"nice\" three times and use stronger and more varied adjectives in your sentence to make your text more interesting."
+  },
+  {
+   "v": "Which words describe the village in the text?",
+   "o": [
+    "\"small and peaceful\"",
+    "\"full of tourists in July\"",
+    "\"the sea for the first time\"",
+    "\"a bit sad at the end\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 0,
+   "u": "Small and peaceful. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: de eerste zin noemt de grootte en de sfeer.",
+    "Koos je \"full of tourists in July\"? Dan denk je dat dit het dorp beschrijft. Het beschrijft een tijd van het jaar, en niet het dorp zelf.",
+    "Koos je \"the sea for the first time\"? Dan denk je dat dit het dorp beschrijft. Het beschrijft de zee, en niet het dorp.",
+    "Koos je \"a bit sad at the end\"? Dan denk je dat dit het dorp beschrijft. Het is een gevoel van de schrijver, en geen kenmerk van het dorp."
+   ],
+   "uh": "Welke woorden beschrijven het dorp?",
+   "ctx": "Last summer I visited my cousin in Cornwall. The village is small and peaceful, but in July it is full of tourists. I was thrilled when I saw the sea for the first time, because it was so big and bright. However, I felt a bit sad when we had to leave."
+  },
+  {
+   "v": "Which sentence expresses a positive feeling in the text?",
+   "o": [
+    "\"I felt a bit sad when we had to leave there.\"",
+    "\"Last summer I visited my cousin in Cornwall.\"",
+    "\"The village is small and peaceful, I think.\"",
+    "\"I was thrilled when I saw the sea.\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 2,
+   "u": "Thrilled = positief. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"I felt a bit sad when we had to leave there.\"? Dan denk je dat dit een positief gevoel is. Sad is verdrietig, en dus negatief.",
+    "Koos je \"Last summer I visited my cousin in Cornwall.\"? Dan denk je dat dit een gevoel toont. Het is een feit, en geen gevoel.",
+    "Koos je \"The village is small and peaceful, I think.\"? Dan denk je dat dit een gevoel toont. Het beschrijft het dorp, en geen gevoel.",
+    "Klopt: thrilled is een sterk positief gevoel."
+   ],
+   "uh": "Welke zin toont een positief gevoel?",
+   "ctx": "Last summer I visited my cousin in Cornwall. The village is small and peaceful, but in July it is full of tourists. I was thrilled when I saw the sea for the first time, because it was so big and bright. However, I felt a bit sad when we had to leave."
+  },
+  {
+   "v": "Which word marks a contrast at the end of the text?",
+   "o": [
+    "\"because\"",
+    "\"for the first time\"",
+    "\"However\"",
+    "\"Last summer\""
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 3,
+   "u": "However = contrast. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"because\"? Dan denk je dat because het contrast toont. Het geeft een reden, en is geen contrast.",
+    "Koos je \"for the first time\"? Dan denk je dat dit een contrast toont. Het is een tijdsaanduiding, en geen verbindingswoord.",
+    "Klopt: however zet het verdriet tegenover de blijdschap.",
+    "Koos je \"Last summer\"? Dan denk je dat dit een contrast toont. Het is een tijdsaanduiding aan het begin, en geen verbindingswoord."
+   ],
+   "uh": "Welk woord markeert het contrast?",
+   "ctx": "Last summer I visited my cousin in Cornwall. The village is small and peaceful, but in July it is full of tourists. I was thrilled when I saw the sea for the first time, because it was so big and bright. However, I felt a bit sad when we had to leave."
+  },
+  {
+   "v": "Which feeling does the writer show in the last sentence?",
+   "o": [
+    "joy about the sea",
+    "anger about the tourists",
+    "sadness about leaving",
+    "fear of the water"
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 2,
+   "u": "Sad bij vertrek. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"joy about the sea\"? Dan denk je dat het slot vreugde toont. Het slot noemt verdriet, en de vreugde stond eerder.",
+    "Koos je \"anger about the tourists\"? Dan denk je dat het slot boosheid toont. Er is geen boosheid, en de toeristen worden alleen genoemd.",
+    "Klopt: a bit sad past bij het vertrek aan het einde van de reis.",
+    "Koos je \"fear of the water\"? Dan denk je dat het slot angst toont. Er is geen angst, en het gaat om vertrekken."
+   ],
+   "uh": "Welk gevoel past?",
+   "ctx": "Last summer I visited my cousin in Cornwall. The village is small and peaceful, but in July it is full of tourists. I was thrilled when I saw the sea for the first time, because it was so big and bright. However, I felt a bit sad when we had to leave."
+  },
+  {
+   "v": "Where could you start a new paragraph in this text about Tom?",
+   "o": [
+    "after \"My best friend is called Tom\"",
+    "before \"Tom laughed a lot at it\"",
+    "after \"Next week we are going\"",
+    "before \"Last week we went to the cinema\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 4,
+   "u": "Nieuw idee = nieuwe alinea. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"after My best friend is called Tom\"? Dan denk je dat hier een nieuwe alinea begint. De beschrijving van Tom gaat nog door, dus het idee verandert niet.",
+    "Koos je \"before Tom laughed a lot at it\"? Dan denk je dat hier een nieuwe alinea begint. Het hoort bij de bioscoop, en het idee blijft hetzelfde.",
+    "Koos je \"after Next week we are going\"? Dan denk je dat hier een nieuwe alinea begint. Het is het slot van de tekst, en dat is een kleine toevoeging.",
+    "Klopt: daar begint een nieuw idee, het bioscoopbezoek."
+   ],
+   "uh": "Waar begint een alinea?",
+   "ctx": "My best friend is called Tom. He is tall and funny. Last week we went to the cinema. The film was great. Tom laughed a lot. Next week we are going to a concert."
+  },
+  {
+   "v": "How can you join \"The film was great. Tom laughed a lot.\" better?",
+   "o": [
+    "\"The film was great, so Tom laughed a lot.\"",
+    "\"The film was great, but Tom laughed a lot.\"",
+    "\"The film was great, because Tom laughed.\"",
+    "\"The film was great Tom laughed a lot.\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 3,
+   "u": "So = gevolg. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: so verbindt oorzaak en gevolg: de film was goed, dus Tom lachte.",
+    "Koos je \"The film was great, but Tom laughed a lot.\"? Dan denk je dat but past. Er is geen tegenstelling, en but past niet.",
+    "Koos je \"The film was great, because Tom laughed.\"? Dan denk je dat because past. De volgorde van oorzaak en gevolg is omgedraaid, en dat klopt niet.",
+    "Koos je \"The film was great Tom laughed a lot.\"? Dan denk je dat een komma niet nodig is. Je mist een verbindingswoord, en de zin is onjuist."
+   ],
+   "uh": "Hoe verbind je de zinnen?",
+   "ctx": "My best friend is called Tom. He is tall and funny. Last week we went to the cinema. The film was great. Tom laughed a lot. Next week we are going to a concert."
+  },
+  {
+   "v": "Which connecting word fits in: \"I wanted to go to the cinema, ... I was ill.\"?",
+   "o": [
+    "\"so\", which shows a result",
+    "\"but\"",
+    "\"because\", which gives a reason",
+    "\"and\", which adds an idea"
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 3,
+   "u": "But = contrast. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"so, which shows a result\"? Dan denk je dat so past. Ziek zijn is geen gevolg van naar de bioscoop willen, en het verband klopt niet.",
+    "Klopt: but zet het plan om te gaan tegenover het feit dat je ziek was.",
+    "Koos je \"because, which gives a reason\"? Dan denk je dat because past. Het zou betekenen dat je ziek was door de bioscoop, en dat klopt niet.",
+    "Koos je \"and, which adds an idea\"? Dan denk je dat and past. Het voegt alleen toe, en laat het contrast niet zien."
+   ],
+   "uh": "Welk woord past?",
+   "ctx": "My best friend is called Tom. He is tall and funny. Last week we went to the cinema. The film was great. Tom laughed a lot. Next week we are going to a concert."
+  },
+  {
+   "v": "Which description is more vivid?",
+   "o": [
+    "\"There was a castle there, I think.\"",
+    "\"The castle was a castle, a big one.\"",
+    "\"I saw a thing near some water there.\"",
+    "\"The old castle stood on a rocky hill.\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 0,
+   "u": "Details = levendig. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"There was a castle there, I think.\"? Dan denk je dat deze zin levendig is. Het geeft geen details, en maakt geen beeld.",
+    "Koos je \"The castle was a castle, a big one.\"? Dan denk je dat deze zin levendig is. Het herhaalt alleen het woord, en beschrijft niets.",
+    "Koos je \"I saw a thing near some water there.\"? Dan denk je dat deze zin levendig is. Het is vaag, en noemt geen kenmerk.",
+    "Klopt: de zin geeft details over plaats, ouderdom en omgeving."
+   ],
+   "uh": "Welke beschrijving is levendiger?",
+   "ctx": "You are writing a letter about a trip to a castle. You want your friend to see the place in his mind, so you choose between sentences that are plain and sentences that give more details about the place."
+  },
+  {
+   "v": "Which sentence shows fear without saying the word?",
+   "o": [
+    "\"My heart was beating fast.\"",
+    "\"I was afraid and I felt afraid inside.\"",
+    "\"I was in the room and I sat down slowly.\"",
+    "\"I like to sit on the sofa a lot.\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 2,
+   "u": "Laat het gevoel zien. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: lichamelijke reacties laten de angst zien.",
+    "Koos je \"I was afraid and I felt afraid inside.\"? Dan denk je dat deze zin de angst toont. Het zegt het alleen met het woord, en herhaalt het.",
+    "Koos je \"I was in the room and I sat down slowly.\"? Dan denk je dat deze zin angst toont. Het beschrijft alleen een plaats, en geen gevoel.",
+    "Koos je \"I like to sit on the sofa a lot.\"? Dan denk je dat deze zin angst toont. Het gaat over een hobby, en geen angst."
+   ],
+   "uh": "Welke zin toont angst?",
+   "ctx": "In a story you want to show that a character is afraid, but you do not want to use the word \"afraid\". Your teacher says that you can show a feeling by describing what the character does and feels."
+  },
+  {
+   "v": "Which sequence of linking words is correct?",
+   "o": [
+    "\"After that, first, then\"",
+    "\"First, then, after that\"",
+    "\"Then, after that, first\"",
+    "\"But, because, so\""
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 3,
+   "u": "First, then, after that. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"After that, first, then\"? Dan denk je dat de volgorde van de woorden kan wisselen. Je moet met first beginnen, en dan then en after that.",
+    "Klopt: first, then en after that geven de volgorde aan.",
+    "Koos je \"Then, after that, first\"? Dan denk je dat first als laatste kan. First hoort bij het begin, dus dit klopt niet.",
+    "Koos je \"But, because, so\"? Dan denk je dat deze woorden de volgorde tonen. Ze tonen contrast, reden en gevolg, en geen volgorde."
+   ],
+   "uh": "Welke volgorde klopt?",
+   "ctx": "You write a short text about last weekend. You want to join three events in the correct order: you got up late, then you had breakfast, and after that you went to the park. You choose a sequence of linking words."
+  }
+ ],
+ "oe": [
+  {
+   "bron": "Examenstijl",
+   "ctx": "Your English pen friend asks you to describe your best friend in your next letter. Your friend is called Daan, he is tall and kind, he loves football, and he always makes you laugh when you are in a bad mood.",
+   "v": "Write three sentences that describe Daan and give his character and one detail about his looks.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Een zin met uiterlijk zoals \"He is tall\" (1p). Een zin met karakter zoals \"He is kind and funny\" (1p). Een goede, volledige zin met verbinding (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "You are on holiday in Portugal and you write a postcard to your grandmother. The weather is warm, the hotel is near the sea, and you swim every day. You want to say how you feel.",
+   "v": "Write a postcard text of three sentences with a feeling and a reason.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Een gevoelszin zoals \"I am having a wonderful time\" (1p). Een reden met because (1p). Een beschrijving van het hotel of de zee (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "You write a short text about a day when it rained all day. You stayed at home with your family and you played games. You want to show cause and effect and use at least two connecting words.",
+   "v": "Write four sentences with the connecting words because, so or but.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Een gevolgzin met so (1p). Een redenzin met because (1p). Een contrast met but of een goede volgorde (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "You are writing about your hometown for an English friend. The town is small and old, and it is on a river. In the evening it is peaceful, but on Saturday the market is busy.",
+   "v": "Write two sentences that describe the town with adjectives in the correct order.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Bijvoeglijke naamwoorden in de juiste volgorde, zoals \"a small old town\" (2p). Een contrast met but (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "In your story the main character, Maria, is afraid in a dark house at night. Your teacher says that you must show her feeling and not only say the word afraid in your text.",
+   "v": "Write two sentences that show her fear by what she does and feels.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Een lichamelijke reactie zoals \"her heart was beating fast\" (1p). Een tweede handeling zoals \"her hands were shaking\" (1p). Het woord afraid niet gebruikt (1p)."
+  }
+ ]
+}

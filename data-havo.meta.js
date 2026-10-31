@@ -2942,6 +2942,27 @@ var VAKKEN = [
       "nOe": 5,
       "nBeg": 12,
       "hasSam": true
+     },
+     {
+      "id": "E3",
+      "lo": "en.E.3",
+      "gs": 2,
+      "naam": "Personen en zaken beschrijven en gevoelens uitdrukken in een tekst",
+      "beschrijving": "Je leert in het Engels op papier personen, plaatsen en gevoelens te beschrijven met goede woorden, verbindingswoorden en alinea's.",
+      "ceStatus": "SE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Personen beschrijven",
+       "Plaatsen en voorwerpen",
+       "Gevoelens opschrijven",
+       "Verbindingswoorden",
+       "Alinea's"
+      ],
+      "nSv": 27,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
      }
     ]
    },

@@ -5,7 +5,7 @@
 Volledige beschrijving (functies, inhoud per niveau, prijs, wat Slagio niet is): https://slagio.nl/llms-full.txt
 
 ## In het kort
-- 12 vakken havo, 16 vakken vwo, 12 vakken vmbo; 24.131 oefenvragen en 4.346 begrippen.
+- 12 vakken havo, 16 vakken vwo, 12 vakken vmbo; 24.158 oefenvragen en 4.346 begrippen.
 - Adaptief oefenen: na een fout een vraag over hetzelfde onderwerp, een niveau makkelijker; uitleg bij elk fout antwoord.
 - Foutenboek en herhalen met gespreide herhaling, beheersing per leerdoel, studieplan tot het examen.
 - Examens met klok, proefexamens in examenstijl met modelantwoord en puntenverdeling, archief met officiële oude examens.
@@ -111,6 +111,7 @@ Volledige beschrijving (functies, inhoud per niveau, prijs, wat Slagio niet is):
 - [Een korte presentatie opbouwen voor doel en publiek (Engels HAVO)](https://slagio.nl/leren/havo/engels/een-korte-presentatie-opbouwen-voor-doel-en-publiek.html): Je leert in het Engels een korte presentatie op te bouwen met inleiding, kern en slot en je taal aan te passen aan je publiek.
 - [Formele en informele brieven en e-mails schrijven (Engels HAVO)](https://slagio.nl/leren/havo/engels/formele-en-informele-brieven-en-e-mails-schrijven.html): Je leert in het Engels een formele of informele brief of e-mail te schrijven met de juiste aanhef, taal, opbouw en afsluiting.
 - [Informatie vragen en verstrekken in een e-mail (Engels HAVO)](https://slagio.nl/leren/havo/engels/informatie-vragen-en-verstrekken-in-een-e-mail.html): Je leert in het Engels in een e-mail beleefd informatie te vragen, duidelijk antwoord te geven en data, tijden en prijzen goed op te schrijven.
+- [Personen en zaken beschrijven en gevoelens uitdrukken in een tekst (Engels HAVO)](https://slagio.nl/leren/havo/engels/personen-en-zaken-beschrijven-en-gevoelens-uitdrukken-in-een-tekst.html): Je leert in het Engels op papier personen, plaatsen en gevoelens te beschrijven met goede woorden, verbindingswoorden en alinea's.
 - [Tekstsoort en schrijfdoel bepalen (Nederlands VWO)](https://slagio.nl/leren/vwo/nederlands/tekstsoort-en-schrijfdoel-bepalen.html): Je bepaalt of een tekst of tekstgedeelte uiteenzettend, beschouwend of betogend is, wat de schrijver ermee wil bereiken en wat het belangrijkste doel is als…
 - [Onderwerp en hoofdgedachte aangeven (Nederlands VWO)](https://slagio.nl/leren/vwo/nederlands/onderwerp-en-hoofdgedachte-aangeven.html): Je geeft het onderwerp en de hoofdgedachte van een tekst of tekstgedeelte aan: letterlijk als de kernzin er staat, en in eigen woorden als de hoofdgedachte…
 - [Relaties tussen tekstdelen benoemen (Nederlands VWO)](https://slagio.nl/leren/vwo/nederlands/relaties-tussen-tekstdelen-benoemen.html): Je benoemt inhoudelijke en functionele relaties tussen tekstdelen: verwijzingen, oorzaak en gevolg, doel en middel, standpunt met argumenten en subargumenten,…
