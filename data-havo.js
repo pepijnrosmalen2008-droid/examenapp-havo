@@ -127419,6 +127419,687 @@ var VAKKEN = [
         "u": "Een informele verwijzing zoals \"Thanks for your e-mail!\" (2p). Een informele afsluiting zoals \"Write back soon!\" (1p)."
        }
       ]
+     },
+     {
+      "id": "E2",
+      "lo": "en.E.2",
+      "gs": 2,
+      "naam": "Informatie vragen en verstrekken in een e-mail",
+      "beschrijving": "Je leert in het Engels in een e-mail beleefd informatie te vragen, duidelijk antwoord te geven en data, tijden en prijzen goed op te schrijven.",
+      "ceStatus": "SE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Beleefd vragen",
+       "Informatie geven",
+       "Een antwoord schrijven",
+       "Details en bevestigen"
+      ],
+      "sam": "In een e-mail stel je een beleefde vraag met could you tell me en een indirecte vraag met whether of if. Je schrijft data met de dag eerst, 15 June, prijzen met het teken ervoor, £25, en tijden als 3.30 p.m. In een antwoord bedank je eerst, geef je dan de informatie en eindig je met een vriendelijke zin. Controleer details met could you confirm en vraag bij onduidelijkheid beleefd om uitleg.",
+      "begrippen": [
+       {
+        "t": "Beleefde vraag",
+        "d": "Een vraag met could you of would you."
+       },
+       {
+        "t": "Indirecte vraag",
+        "d": "Een vraag met whether of if, met het onderwerp voor het werkwoord."
+       },
+       {
+        "t": "Vraagwoord",
+        "d": "Een woord als when, where, how much."
+       },
+       {
+        "t": "Datum",
+        "d": "De dag en de maand, zoals 15 June."
+       },
+       {
+        "t": "Prijs",
+        "d": "Het bedrag met een muntteken, zoals £25."
+       },
+       {
+        "t": "Tijd",
+        "d": "Het uur met a.m. of p.m., zoals 3.30 p.m."
+       },
+       {
+        "t": "Bijlage",
+        "d": "Een bestand dat je meestuurt in een e-mail."
+       },
+       {
+        "t": "Bevestigen",
+        "d": "Zeggen of vragen dat iets klopt."
+       },
+       {
+        "t": "Antwoord",
+        "d": "De reactie op een vraag in een mail."
+       },
+       {
+        "t": "Details",
+        "d": "Kleine gegevens zoals datum, tijd en prijs."
+       },
+       {
+        "t": "Uiterlijk",
+        "d": "De uiterste datum, zoals by Friday."
+       },
+       {
+        "t": "Uitleg vragen",
+        "d": "Beleefd vragen wat iets betekent."
+       }
+      ],
+      "sv": [
+       {
+        "v": "Which sentence is a polite written question?",
+        "o": [
+         "\"Tell me the price now, please quickly.\"",
+         "\"Could you tell me the room price?\"",
+         "\"What price room you have for me, please?\"",
+         "\"Price single room, answer me now, thanks.\""
+        ],
+        "c": 1,
+        "d": 1,
+        "s": 0,
+        "u": "Could you tell me ...? Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"Tell me the price now, please quickly.\"? Dan denk je dat deze zin beleefd is. Het is een bevel, en klinkt onbeleefd.",
+         "Klopt: could you tell me maakt de vraag beleefd en volledig.",
+         "Koos je \"What price room you have for me, please?\"? Dan denk je dat deze zin een goede vraag is. De woordvolgorde is fout, en het is geen beleefde zin.",
+         "Koos je \"Price single room, answer me now, thanks.\"? Dan denk je dat deze zin beleefd is. Het is een rij woorden, en geen vraag."
+        ],
+        "uh": "Welke vraag is beleefd?"
+       },
+       {
+        "v": "Which question word asks for a date?",
+        "o": [
+         "\"Where\", which asks for a place",
+         "\"Who\", which asks for a person",
+         "\"Why\", which asks for a reason",
+         "\"When\""
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 0,
+        "u": "When = datum of tijd. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"Where, which asks for a place\"? Dan denk je dat een plaats een datum is. Where vraagt naar een plek, en niet naar een tijd.",
+         "Koos je \"Who, which asks for a person\"? Dan denk je dat een persoon een datum geeft. Who vraagt naar mensen, en niet naar een moment.",
+         "Koos je \"Why, which asks for a reason\"? Dan denk je dat een reden een datum is. Why zoekt een oorzaak, en noemt geen tijdstip.",
+         "Klopt: when vraagt naar een tijdstip of datum."
+        ],
+        "uh": "Welk vraagwoord past?"
+       },
+       {
+        "v": "Which is a correct way to write a date in British English?",
+        "o": [
+         "\"15 June\"",
+         "\"15. Juni\" with a dot, as in German",
+         "\"June 15 days\" on the letter",
+         "\"15 of the June year\" in the text"
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 1,
+        "u": "Dag + maand. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: in het Brits-Engels schrijf je eerst de dag en dan de maand.",
+         "Koos je \"15. Juni with a dot, as in German\"? Dan denk je dat een punt en Juni gebruikelijk zijn. Dat is Duits of Nederlands, en niet Engels.",
+         "Koos je \"June 15 days on the letter\"? Dan denk je dat dit een datum is. Het betekent vijftien dagen, en niet de vijftiende juni.",
+         "Koos je \"15 of the June year in the text\"? Dan denk je dat dit een datum is. Het is geen gewone schrijfwijze, en klinkt vreemd."
+        ],
+        "uh": "Hoe schrijf je een datum?"
+       },
+       {
+        "v": "How do you write a price in British English?",
+        "o": [
+         "\"25 £\" with the sign after the number",
+         "\"25,- pounds\" with a comma and a dash",
+         "\"£25\"",
+         "\"pounds 25\" with the word first"
+        ],
+        "c": 2,
+        "d": 1,
+        "s": 1,
+        "u": "£ voor het bedrag. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"25 £ with the sign after the number\"? Dan denk je dat het teken erachter staat. In het Engels staat het ervoor, dus £25.",
+         "Koos je \"25,- pounds with a comma and a dash\"? Dan denk je dat dit een Engelse schrijfwijze is. Het is Nederlands, en niet gebruikelijk in het Engels.",
+         "Klopt: in het Engels staat het muntteken voor het bedrag, dus £25.",
+         "Koos je \"pounds 25 with the word first\"? Dan denk je dat het woord voor het bedrag staat. Je schrijft het teken ervoor, en geen woord."
+        ],
+        "uh": "Hoe schrijf je een prijs?"
+       },
+       {
+        "v": "Which phrase begins a reply politely?",
+        "o": [
+         "\"I got your message, so what?\"",
+         "\"Here is the answer, quickly.\"",
+         "\"Thank you for your e-mail.\"",
+         "\"Your question is very strange.\""
+        ],
+        "c": 2,
+        "d": 1,
+        "s": 2,
+        "u": "Reply: bedank eerst. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"I got your message, so what?\"? Dan denk je dat deze zin beleefd begint. Het klinkt onverschillig, en is onbeleefd.",
+         "Koos je \"Here is the answer, quickly.\"? Dan denk je dat deze zin beleefd begint. Het klinkt als een bevel, en bedankt niet.",
+         "Klopt: je bedankt voor het bericht van de ander.",
+         "Koos je \"Your question is very strange.\"? Dan denk je dat deze zin beleefd begint. Het oordeelt over de vraag, en is onbeleefd."
+        ],
+        "uh": "Hoe begin je een antwoord?"
+       },
+       {
+        "v": "Which phrase gives information in a reply?",
+        "o": [
+         "\"The course starts on 4 July.\"",
+         "\"Do you know the course?\"",
+         "\"I think so, maybe, I am not sure.\"",
+         "\"Thank you for your question.\""
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 2,
+        "u": "Feit met datum. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: dit is een concrete mededeling met een datum.",
+         "Koos je \"Do you know the course?\"? Dan denk je dat deze zin informatie geeft. Het is een vraag, en geeft geen informatie.",
+         "Koos je \"I think so, maybe, I am not sure.\"? Dan denk je dat deze zin informatie geeft. Het is vaag, en noemt geen feit.",
+         "Koos je \"Thank you for your question.\"? Dan denk je dat deze zin informatie geeft. Het is een beleefdheid, en geeft geen feit."
+        ],
+        "uh": "Welke zin geeft informatie?"
+       },
+       {
+        "v": "Which phrase checks details with the reader?",
+        "o": [
+         "\"Tell me the time or else I leave.\"",
+         "\"I do not care about the time at all.\"",
+         "\"The time is a thing to know.\"",
+         "\"Could you confirm the time?\""
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 3,
+        "u": "Could you confirm ...? Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"Tell me the time or else I leave.\"? Dan denk je dat deze zin controleert. Het is een dreigement, en onbeleefd.",
+         "Koos je \"I do not care about the time at all.\"? Dan denk je dat deze zin controleert. Het toont desinteresse, en vraagt niets.",
+         "Koos je \"The time is a thing to know.\"? Dan denk je dat deze zin controleert. Het is een lege zin, en vraagt niets.",
+         "Klopt: je vraagt beleefd om bevestiging van een detail."
+        ],
+        "uh": "Hoe controleer je een detail?"
+       },
+       {
+        "v": "Which sentence asks about breakfast correctly?",
+        "o": [
+         "\"Breakfast is in the price, yes?\"",
+         "\"Is breakfast included in the price?\"",
+         "\"Does breakfast included the price?\"",
+         "\"The price has breakfast or not?\""
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 0,
+        "u": "Is breakfast included? Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"Breakfast is in the price, yes?\"? Dan denk je dat deze zin een vraag is. Het is een mededeling met yes, en klinkt onzorgvuldig.",
+         "Klopt: dit is een correcte vraag met is en included.",
+         "Koos je \"Does breakfast included the price?\"? Dan denk je dat does hier past. Included is een voltooid deelwoord, dus is breakfast included.",
+         "Koos je \"The price has breakfast or not?\"? Dan denk je dat deze zin een goede vraag is. De woordvolgorde is Nederlands, en niet Engels."
+        ],
+        "uh": "Hoe vraag je naar ontbijt?",
+        "ctx": "You want to stay in a youth hostel in London for three nights and you write an e-mail to ask some questions. You need to know whether breakfast is included in the price, because you have little money."
+       },
+       {
+        "v": "Which sentence asks about the opening hours?",
+        "o": [
+         "\"When open on Sundays, you?\"",
+         "\"The museum is open Sundays, what time is it?\"",
+         "\"Is opening hours on Sundays for you?\"",
+         "\"What are the opening hours?\""
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 0,
+        "u": "What are the opening hours? Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"When open on Sundays, you?\"? Dan denk je dat deze zin een goede vraag is. Het is geen volledige zin, en klinkt onbeleefd.",
+         "Koos je \"The museum is open Sundays, what time is it?\"? Dan denk je dat deze zin een vraag is. De woordvolgorde is fout, en het is een Nederlandse structuur.",
+         "Koos je \"Is opening hours on Sundays for you?\"? Dan denk je dat deze zin een vraag is. Het is onvolledig, en grammaticaal onjuist.",
+         "Klopt: dit is een correcte vraag naar openingstijden."
+        ],
+        "uh": "Hoe vraag je naar openingstijden?",
+        "ctx": "You are planning a visit to a museum with your class. You write an e-mail to the museum and you want to know when the museum is open on Sundays, because you can only go on that day."
+       },
+       {
+        "v": "Which sentence gives clear directions?",
+        "o": [
+         "\"Go somewhere at the station, you will see.\"",
+         "\"Turn left at the station, walk five minutes.\"",
+         "\"Turn right at the station and walk for five hours.\"",
+         "\"The station is a station, my house is near.\""
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 1,
+        "u": "Richting, plaats, tijd. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"Go somewhere at the station, you will see.\"? Dan denk je dat dit duidelijk is. Het is vaag, en geeft geen richting.",
+         "Klopt: je noemt de richting, de plaats en de tijd van de wandeling.",
+         "Koos je \"Turn right at the station and walk for five hours.\"? Dan denk je dat deze zin klopt. De richting en de tijd zijn fout, dus de lezer raakt de weg kwijt.",
+         "Koos je \"The station is a station, my house is near.\"? Dan denk je dat deze zin helpt. Het geeft geen route, en is niet duidelijk."
+        ],
+        "uh": "Hoe wijs je de weg?",
+        "ctx": "A friend from England is coming to visit you. In an e-mail you want to explain how to walk from the railway station to your house. It is easy: you turn left at the station and walk straight on for five minutes."
+       },
+       {
+        "v": "Which reply answers the question?",
+        "o": [
+         "\"Maybe, I do not know, ask later.\"",
+         "\"No, but we have many places.\"",
+         "\"Yes, there are still two places left.\"",
+         "\"Thank you for your question, goodbye.\""
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 2,
+        "u": "Ja + aantal. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"Maybe, I do not know, ask later.\"? Dan denk je dat dit een antwoord is. Het is vaag, en geeft geen informatie.",
+         "Koos je \"No, but we have many places.\"? Dan denk je dat dit een antwoord is. Het spreekt zichzelf tegen, en is verwarrend.",
+         "Klopt: je antwoordt direct met ja en noemt het aantal.",
+         "Koos je \"Thank you for your question, goodbye.\"? Dan denk je dat dit een antwoord is. Het beantwoordt niets, en sluit alleen af."
+        ],
+        "uh": "Welk antwoord beantwoordt de vraag?",
+        "ctx": "A customer writes to you: \"Are there still places left on the summer course?\" You work for the language school and you must answer politely. There are two places left on the course, one for the first week and one for the second week."
+       },
+       {
+        "v": "Which sentence gives the price correctly?",
+        "o": [
+         "\"The tickets cost £12 each.\"",
+         "\"The tickets cost 12 £ each.\"",
+         "\"The tickets cost 12,- pounds.\"",
+         "\"The tickets pound twelve each.\""
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 1,
+        "u": "£12. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: in het Engels staat het muntteken voor het bedrag, dus £12.",
+         "Koos je \"The tickets cost 12 £ each.\"? Dan denk je dat het teken achter het bedrag staat. In het Engels staat het ervoor, dus £12.",
+         "Koos je \"The tickets cost 12,- pounds.\"? Dan denk je dat deze schrijfwijze klopt. Het is Nederlands, en niet gebruikelijk in het Engels.",
+         "Koos je \"The tickets pound twelve each.\"? Dan denk je dat pound hier een werkwoord is. Het is een zelfstandig naamwoord, en het teken hoort voor het bedrag."
+        ],
+        "uh": "Hoe noem je de prijs?",
+        "ctx": "You write to a friend about a concert. The tickets for the concert cost twelve pounds each, and you want to tell your friend the price so that she knows how much money she has to bring with her."
+       },
+       {
+        "v": "Which sentence gives the time correctly?",
+        "o": [
+         "\"The meeting starts at 3.30 p.m.\"",
+         "\"The meeting starts at 3.30 o'clock p.m.\"",
+         "\"The meeting starts at half four.\"",
+         "\"The meeting starts at 30.3 p.m.\""
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 1,
+        "u": "3.30 p.m. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: 3.30 p.m. is half vier in de middag, dus de juiste tijd.",
+         "Koos je \"The meeting starts at 3.30 o'clock p.m.\"? Dan denk je dat o'clock past bij 3.30. O'clock gebruik je alleen bij hele uren, dus niet bij 3.30.",
+         "Koos je \"The meeting starts at half four.\"? Dan denk je dat half four half vier is. In het Engels betekent half four half vijf, dus 4.30 en niet 3.30.",
+         "Koos je \"The meeting starts at 30.3 p.m.\"? Dan denk je dat de cijfers omgedraaid mogen. Je schrijft eerst het uur, en dan de minuten."
+        ],
+        "uh": "Hoe schrijf je de tijd?",
+        "ctx": "You invite a friend to a meeting at half past three in the afternoon, and you want to write the time in your e-mail in a clear way, so that she does not make a mistake and arrives on time."
+       },
+       {
+        "v": "Which sentence asks for confirmation?",
+        "o": [
+         "\"Confirm the room, I want it today.\"",
+         "\"The room is available, I think so.\"",
+         "\"Could you confirm the room?\"",
+         "\"Room available, yes or no, quickly?\""
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 3,
+        "u": "Could you confirm ...? Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"Confirm the room, I want it today.\"? Dan denk je dat deze zin beleefd is. Het is een bevel, en onbeleefd.",
+         "Koos je \"The room is available, I think so.\"? Dan denk je dat deze zin om bevestiging vraagt. Het is een mededeling, en vraagt niets.",
+         "Klopt: could you confirm vraagt beleefd om bevestiging.",
+         "Koos je \"Room available, yes or no, quickly?\"? Dan denk je dat deze zin beleefd is. Het is kortaf, en niet formeel."
+        ],
+        "uh": "Hoe vraag je bevestiging?",
+        "ctx": "You have received an e-mail from a hotel. They say that they have a room, but they do not say for which dates. You want to be sure, so you ask them to confirm the dates in a polite sentence."
+       },
+       {
+        "v": "Which sentence is suitable?",
+        "o": [
+         "\"No, I will not come on Friday.\"",
+         "\"Unfortunately, I cannot come.\"",
+         "\"Friday no good for me, sorry mate.\"",
+         "\"I do not want to come there on Friday.\""
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 2,
+        "u": "Unfortunately + reden. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"No, I will not come on Friday.\"? Dan denk je dat deze zin beleefd is. Het is kortaf, en geeft geen uitleg.",
+         "Klopt: unfortunately maakt de weigering beleefd.",
+         "Koos je \"Friday no good for me, sorry mate.\"? Dan denk je dat deze zin past. Het is informeel en onhandig, en niet voor een docent.",
+         "Koos je \"I do not want to come there on Friday.\"? Dan denk je dat deze zin past. Het klinkt onwillig, en niet beleefd."
+        ],
+        "uh": "Hoe zeg je dat je niet kunt?",
+        "ctx": "Your teacher has invited you to a meeting on Friday afternoon, but you have a dentist appointment. You write an e-mail and you want to explain politely in one sentence that you cannot come."
+       },
+       {
+        "v": "Which sentence tells the reader about an attachment?",
+        "o": [
+         "\"I put something in the mail for you.\"",
+         "\"Look at the thing, it is just there.\"",
+         "\"The programme is a program for you.\"",
+         "\"Please find the map attached.\""
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 2,
+        "u": "Please find ... attached. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"I put something in the mail for you.\"? Dan denk je dat deze zin een bijlage noemt. Het is vaag, en noemt het document niet.",
+         "Koos je \"Look at the thing, it is just there.\"? Dan denk je dat deze zin een bijlage noemt. Het is informeel, en onduidelijk.",
+         "Koos je \"The programme is a program for you.\"? Dan denk je dat deze zin een bijlage noemt. Het zegt niets over een bestand, en is een lege zin.",
+         "Klopt: please find attached is de vaste zin voor een bijlage."
+        ],
+        "uh": "Hoe verwijs je naar een bijlage?",
+        "ctx": "You send an e-mail to your pen friend and you add a document with a map of your town. You want to tell her in one sentence that the map is attached, so that she knows that she should open the file."
+       },
+       {
+        "v": "Which sentence asks politely for an explanation?",
+        "o": [
+         "\"Your word deposit is stupid, really.\"",
+         "\"I am unsure about 'deposit'.\"",
+         "\"What deposit? You did not say it to me.\"",
+         "\"Deposit means money, I know it.\""
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 3,
+        "u": "Not sure what you mean ... Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"Your word deposit is stupid, really.\"? Dan denk je dat deze zin beleefd is. Het beledigt de schrijver, en vraagt niets.",
+         "Klopt: je geeft beleefd aan dat je het niet zeker weet.",
+         "Koos je \"What deposit? You did not say it to me.\"? Dan denk je dat deze zin beleefd is. Het klinkt als een verwijt, en is onbeleefd.",
+         "Koos je \"Deposit means money, I know it.\"? Dan denk je dat deze zin een vraag is. Het is een bewering, en vraagt niet om uitleg."
+        ],
+        "uh": "Hoe vraag je om uitleg?",
+        "ctx": "In an e-mail from a school you read the word \"deposit\", but you are not sure what it means in this text. You want to ask the school to explain it, and you do not want to sound rude in your message."
+       },
+       {
+        "v": "Which three things does Ruben want to know?",
+        "o": [
+         "availability, price, breakfast",
+         "the dates, the weather and the local food",
+         "the price, the train and the nearest museum",
+         "the address, the name and the age of friends"
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 0,
+        "u": "Beschikbaarheid, prijs, ontbijt.",
+        "uo": [
+         "Klopt: dit staat in zijn mail aan het hotel over de kamer.",
+         "Koos je \"the dates, the weather and the local food\"? Dan denk je dat dit klopt. Het weer wordt niet genoemd, en hij vraagt naar een kamer.",
+         "Koos je \"the price, the train and the nearest museum\"? Dan denk je dat dit klopt. De trein en het museum staan er niet, en hij vraagt naar het hotel.",
+         "Koos je \"the address, the name and the age of friends\"? Dan denk je dat dit klopt. Deze gegevens vraagt hij niet, dus ze zijn niet wat hij wil weten."
+        ],
+        "uh": "Wat wil hij weten?",
+        "ctx": "Dear Sir or Madam, I am planning to visit Edinburgh from 10 to 14 August with two friends. Could you tell me if you have a triple room available for those dates? We would also like to know the price per night and whether breakfast is included. Thank you in advance. Yours faithfully, Ruben Smit"
+       },
+       {
+        "v": "Which words show that Ruben is polite at the end?",
+        "o": [
+         "\"I am planning to visit Edinburgh.\"",
+         "\"Dear Sir or Madam,\"",
+         "\"from 10 to 14 August\"",
+         "\"Thank you in advance.\""
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 2,
+        "u": "Thank you in advance. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"I am planning to visit Edinburgh.\"? Dan denk je dat deze zin beleefdheid toont. Het is een mededeling over zijn plan, en geen beleefdheid.",
+         "Koos je \"Dear Sir or Madam,\"? Dan denk je dat deze zin beleefdheid aan het eind toont. Het is de aanhef, en staat aan het begin.",
+         "Koos je \"from 10 to 14 August\"? Dan denk je dat deze woorden beleefdheid tonen. Het zijn data, en geen beleefdheid.",
+         "Klopt: hij bedankt vooraf voor een antwoord van het hotel."
+        ],
+        "uh": "Welke woorden zijn beleefd?",
+        "ctx": "Dear Sir or Madam, I am planning to visit Edinburgh from 10 to 14 August with two friends. Could you tell me if you have a triple room available for those dates? We would also like to know the price per night and whether breakfast is included. Thank you in advance. Yours faithfully, Ruben Smit"
+       },
+       {
+        "v": "Which part of the e-mail is an indirect question?",
+        "o": [
+         "\"Could you tell me if you have a triple room?\"",
+         "\"I am planning to visit Edinburgh.\"",
+         "\"whether breakfast is included\"",
+         "\"Thank you in advance.\""
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 3,
+        "u": "Whether = indirecte vraag. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"Could you tell me if you have a triple room?\"? Dan denk je dat dit de indirecte vraag is. Het is een directe vraag met could you, en niet de whether-zin.",
+         "Koos je \"I am planning to visit Edinburgh.\"? Dan denk je dat dit een indirecte vraag is. Het is een mededeling, en geen vraag.",
+         "Klopt: whether leidt een indirecte vraag in, met het onderwerp voor het werkwoord.",
+         "Koos je \"Thank you in advance.\"? Dan denk je dat dit een indirecte vraag is. Het is een bedankje, en geen vraag."
+        ],
+        "uh": "Welk deel is de indirecte vraag?",
+        "ctx": "Dear Sir or Madam, I am planning to visit Edinburgh from 10 to 14 August with two friends. Could you tell me if you have a triple room available for those dates? We would also like to know the price per night and whether breakfast is included. Thank you in advance. Yours faithfully, Ruben Smit"
+       },
+       {
+        "v": "What must Ruben do by Friday?",
+        "o": [
+         "pay the whole price at the hotel desk",
+         "arrive at the hotel on Friday",
+         "tell the hotel if he books",
+         "send a photo of his friends"
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 2,
+        "u": "Deadline: laten weten. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"pay the whole price at the hotel desk\"? Dan denk je dat hij moet betalen. Dat staat niet in de mail, en hij moet antwoorden.",
+         "Koos je \"arrive at the hotel on Friday\"? Dan denk je dat hij vrijdag moet komen. Hij reist in augustus, en vrijdag is de deadline.",
+         "Klopt: de hotelmanager vraagt om uiterlijk vrijdag te laten weten of hij boekt.",
+         "Koos je \"send a photo of his friends\"? Dan denk je dat hij een foto moet sturen. Dat staat nergens, en het gaat om boeken."
+        ],
+        "uh": "Wat moet hij doen?",
+        "ctx": "Dear Mr Smit, Thank you for your e-mail. We have a triple room available from 10 to 14 August. The price is £85 per night, and breakfast is included. Please let us know by Friday if you want to book. Yours sincerely, Mary Hill"
+       },
+       {
+        "v": "What is the total price for the room for the whole stay?",
+        "o": [
+         "£85",
+         "£255",
+         "£425",
+         "£340"
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 1,
+        "u": "4 x 85 = 340. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"£85\"? Dan denk je dat 85 het totaal is. Dat bedrag geldt voor een nacht, en hij blijft vier nachten.",
+         "Koos je \"£255\"? Dan denk je dat je drie nachten telt. Van 10 tot 14 augustus slaap je vier nachten, dus het totaal is hoger.",
+         "Koos je \"£425\"? Dan denk je dat de dag van vertrek meetelt. Je telt de nachten, en dat zijn er vier en geen vijf.",
+         "Klopt: 85 pond maal vier nachten is 340 pond."
+        ],
+        "uh": "Wat is de totaalprijs?",
+        "ctx": "Dear Mr Smit, Thank you for your e-mail. We have a triple room available from 10 to 14 August. The price is £85 per night, and breakfast is included. Please let us know by Friday if you want to book. Yours sincerely, Mary Hill"
+       },
+       {
+        "v": "Why does Mary end with \"Yours sincerely\"?",
+        "o": [
+         "she knows the name of the reader",
+         "she does not know the name",
+         "she wants to sound very informal",
+         "she writes to a close friend"
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 0,
+        "u": "Dear Mr Smit -> Yours sincerely.",
+        "uo": [
+         "Klopt: zij schrijft Dear Mr Smit en kent dus zijn naam.",
+         "Koos je \"she does not know the name\"? Dan denk je dat ze de naam niet kent. Ze begint met Dear Mr Smit, dus ze kent hem.",
+         "Koos je \"she wants to sound very informal\"? Dan denk je dat ze informeel is. Yours sincerely is formeel, en niet informeel.",
+         "Koos je \"she writes to a close friend\"? Dan denk je dat ze aan een vriend schrijft. Het is een zakelijke mail, en geen vriendschap."
+        ],
+        "uh": "Waarom dit slot?",
+        "ctx": "Dear Mr Smit, Thank you for your e-mail. We have a triple room available from 10 to 14 August. The price is £85 per night, and breakfast is included. Please let us know by Friday if you want to book. Yours sincerely, Mary Hill"
+       },
+       {
+        "v": "Which important information is missing in this e-mail?",
+        "o": [
+         "the name of the weather",
+         "who writes and the month",
+         "the colour of the invitation",
+         "the age of the writer's dog"
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 0,
+        "u": "Wie en welke maand. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"the name of the weather\"? Dan denk je dat dit mist. Dat is geen informatie voor een uitnodiging, en het speelt geen rol.",
+         "Klopt: de mail noemt geen naam en alleen de vijfde.",
+         "Koos je \"the colour of the invitation\"? Dan denk je dat dit mist. Dat is niet belangrijk, en de lezer heeft het niet nodig.",
+         "Koos je \"the age of the writer's dog\"? Dan denk je dat dit mist. Dat is niet relevant, en past niet bij de vraag."
+        ],
+        "uh": "Wat ontbreekt?",
+        "ctx": "Hi, I want to come to your party on the 5th, but I do not know the time or the address. Please write to me soon, because I would like to know it before the weekend. Bye"
+       },
+       {
+        "v": "Which sentence asks politely for the time of the party?",
+        "o": [
+         "\"What time the party starts, please?\"",
+         "\"Tell me the time of the party, now.\"",
+         "\"The time of the party, quick, please.\"",
+         "\"Could you tell me what time it starts?\""
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 1,
+        "u": "Could you tell me what time ...?",
+        "uo": [
+         "Koos je \"What time the party starts, please?\"? Dan denk je dat deze zin een vraag is. De woordvolgorde is die van een mededeling, en klinkt kortaf.",
+         "Koos je \"Tell me the time of the party, now.\"? Dan denk je dat tell me beleefd klinkt. Het is een bevel zonder could you, dus het is niet beleefd.",
+         "Koos je \"The time of the party, quick, please.\"? Dan denk je dat losse woorden beleefd zijn. Het is geen zin, en het klinkt onbeleefd.",
+         "Klopt: dit is een beleefde indirecte vraag met het onderwerp voor het werkwoord."
+        ],
+        "uh": "Hoe vraag je beleefd?",
+        "ctx": "Hi, I want to come to your party on the 5th, but I do not know the time or the address. Please write to me soon, because I would like to know it before the weekend. Bye"
+       },
+       {
+        "v": "How can the writer improve the end of this e-mail?",
+        "o": [
+         "add a polite end and his name",
+         "write \"Bye\" in big capital letters",
+         "stop the e-mail right after \"Hi\"",
+         "add a joke about the party food"
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 3,
+        "u": "Slotzin en naam. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: een beleefde slotzin en een naam maken de mail volledig.",
+         "Koos je \"write Bye in big capital letters\"? Dan denk je dat dit beter is. Het blijft informeel, en geeft geen naam.",
+         "Koos je \"stop the e-mail right after Hi\"? Dan denk je dat dit beter is. Dan mist alle informatie, en de mail is onvolledig.",
+         "Koos je \"add a joke about the party food\"? Dan denk je dat dit beter is. Het lost het gebrek niet op, en is niet nodig."
+        ],
+        "uh": "Hoe maak je het beter?",
+        "ctx": "Hi, I want to come to your party on the 5th, but I do not know the time or the address. Please write to me soon, because I would like to know it before the weekend. Bye"
+       },
+       {
+        "v": "What do you do if a question is unclear?",
+        "o": [
+         "answer anything and hope it is right",
+         "ask a polite question",
+         "do not answer and wait for a year",
+         "write a long text about something else"
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 3,
+        "u": "Vraag na wat bedoeld wordt. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"answer anything and hope it is right\"? Dan denk je dat gokken helpt. Je kunt dan iets verkeerds antwoorden, en je helpt niemand.",
+         "Klopt: je vraagt beleefd na wat bedoeld wordt voordat je antwoordt.",
+         "Koos je \"do not answer and wait for a year\"? Dan denk je dat wachten helpt. De ander wacht op je antwoord, en het is onbeleefd.",
+         "Koos je \"write a long text about something else\"? Dan denk je dat dit helpt. Het beantwoordt de vraag niet, en maakt de mail onduidelijk."
+        ],
+        "uh": "Wat doe je?",
+        "ctx": "You get an e-mail from a company, but one question in it is not clear to you. You need the answer for your homework, and you want to answer the company in a way that is clear, polite, and correct in English."
+       }
+      ],
+      "oe": [
+       {
+        "bron": "Examenstijl",
+        "ctx": "You are planning a school trip to London for your class. You write an e-mail to a museum to ask whether there is a guided tour for twenty students, how much it costs, and at what time the museum opens on Monday.",
+        "v": "Write three polite questions for the museum.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Een beleefde vraag over de rondleiding (1p). Een vraag naar de prijs, bijvoorbeeld \"How much does it cost?\" (1p). Een vraag naar de openingstijd op maandag (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "A guest writes to your hotel: \"Is breakfast included, and what time does the restaurant open?\" You work at the hotel. Breakfast is included in the price and the restaurant opens at 7.30 a.m. every day of the week.",
+        "v": "Write a polite reply with the information.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Een bedankje of aanhef (1p). Ontbijt is inbegrepen (1p). Het restaurant opent om 7.30 a.m. (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "You receive an e-mail from a summer course. It says that you must pay a deposit by Friday, but you do not know how much it is or where to send it. You want to ask for these two details in a polite way.",
+        "v": "Write two polite sentences to ask for the missing information.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Een beleefde vraag naar het bedrag (1p). Een beleefde vraag naar waar je het naartoe stuurt (1p). Beleefdheid zoals could you tell me (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Your English friend is coming to visit you next week and will arrive by train. You explain in an e-mail how to get from the station to your house: leave the station, turn left, and walk straight on for ten minutes.",
+        "v": "Write clear directions in two sentences and add the date, 15 June.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Duidelijke route met leave, turn left en walk straight on (2p). De datum correct, 15 June (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "A company has sent you a price list as an attachment. You must write an e-mail to confirm the price of a book, which costs fifteen pounds, and ask them to confirm that the book will arrive by the end of the week.",
+        "v": "Write the sentence with the price and one polite request to confirm.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "De prijs correct, £15 (1p). Een beleefd verzoek zoals \"Could you confirm that ...?\" (2p)."
+       }
+      ]
      }
     ]
    },

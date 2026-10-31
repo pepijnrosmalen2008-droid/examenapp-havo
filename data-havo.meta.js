@@ -2922,6 +2922,26 @@ var VAKKEN = [
       "nOe": 5,
       "nBeg": 12,
       "hasSam": true
+     },
+     {
+      "id": "E2",
+      "lo": "en.E.2",
+      "gs": 2,
+      "naam": "Informatie vragen en verstrekken in een e-mail",
+      "beschrijving": "Je leert in het Engels in een e-mail beleefd informatie te vragen, duidelijk antwoord te geven en data, tijden en prijzen goed op te schrijven.",
+      "ceStatus": "SE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Beleefd vragen",
+       "Informatie geven",
+       "Een antwoord schrijven",
+       "Details en bevestigen"
+      ],
+      "nSv": 27,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
      }
     ]
    },
