@@ -130765,6 +130765,688 @@ var VAKKEN = [
         "u": "Een formele en beleefde zin (1p). De regel genoemd (1p). De reden genoemd (1p)."
        }
       ]
+     },
+     {
+      "id": "E7",
+      "lo": "en.E.7",
+      "gs": 2,
+      "naam": "Een tekst schrijven met een tekstverwerker en naslagmateriaal",
+      "beschrijving": "Je leert een Engelse tekst te schrijven met een tekstverwerker en hulpmiddelen zoals een woordenboek, thesaurus en spellingcontrole, en ze slim te gebruiken.",
+      "ceStatus": "SE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Tekstverwerker en opmaak",
+       "Woordenboek gebruiken",
+       "Synoniemen en thesaurus",
+       "Valkuilen van spellingcontrole",
+       "Nalezen en verbeteren"
+      ],
+      "sam": "Met een tekstverwerker maak je kopjes, alinea's en lijsten en tel je woorden. In een woordenboek zoek je woordsoort, betekenis, uitspraak en voorbeeldzinnen; de voorbeeldzin laat zien welke betekenis past. Een thesaurus geeft synoniemen. De spellingcontrole vindt alleen woorden die niet bestaan, dus their/there en beech/beach blijven staan. Controleer ook autocorrect en online vertalers, en lees je tekst altijd nog hardop na.",
+      "begrippen": [
+       {
+        "t": "Tekstverwerker",
+        "d": "Een programma om teksten te schrijven en op te maken."
+       },
+       {
+        "t": "Woordenboek",
+        "d": "Een boek of site met betekenis, woordsoort en uitspraak."
+       },
+       {
+        "t": "Thesaurus",
+        "d": "Een lijst met woorden van gelijke betekenis."
+       },
+       {
+        "t": "Synoniem",
+        "d": "Een woord met bijna dezelfde betekenis."
+       },
+       {
+        "t": "Woordsoort",
+        "d": "Het type woord, zoals noun of verb."
+       },
+       {
+        "t": "Voorbeeldzin",
+        "d": "Een zin die laat zien hoe een woord gebruikt wordt."
+       },
+       {
+        "t": "Spellingcontrole",
+        "d": "Een functie die niet-bestaande woorden markeert."
+       },
+       {
+        "t": "Autocorrect",
+        "d": "Een functie die woorden automatisch verandert."
+       },
+       {
+        "t": "Kopje",
+        "d": "Een titel boven een deel van de tekst."
+       },
+       {
+        "t": "Alinea",
+        "d": "Een deel van de tekst over één punt."
+       },
+       {
+        "t": "Nalezen",
+        "d": "Je tekst nog eens goed doorlezen op fouten."
+       },
+       {
+        "t": "False friend",
+        "d": "Een woord dat op een Nederlands woord lijkt maar iets anders betekent."
+       }
+      ],
+      "sv": [
+       {
+        "v": "What does \"n.\" mean in a dictionary entry?",
+        "o": [
+         "number, a figure",
+         "noun",
+         "name of the author",
+         "negative, not good"
+        ],
+        "c": 1,
+        "d": 1,
+        "s": 0,
+        "u": "n. = zelfstandig naamwoord. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"number, a figure\"? Dan denk je dat n. een getal is. In een woordenboek staat n. voor de woordsoort, en niet voor een getal.",
+         "Klopt: n. staat voor noun, een zelfstandig naamwoord.",
+         "Koos je \"name of the author\"? Dan denk je dat n. de naam van de schrijver is. Het gaat om de woordsoort, en niet om de auteur.",
+         "Koos je \"negative, not good\"? Dan denk je dat n. negatief betekent. Het is een afkorting van een woordsoort, en geeft geen waardering."
+        ],
+        "uh": "Wat betekent n.?"
+       },
+       {
+        "v": "What is the use of example sentences in a dictionary?",
+        "o": [
+         "they show how to spell a word",
+         "they tell the age of a word",
+         "they replace the meaning",
+         "they show how a word is used"
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 0,
+        "u": "Voorbeeldzin toont gebruik. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"they show how to spell a word\"? Dan denk je dat voorbeeldzinnen de spelling oefenen. Die staat al bij het trefwoord zelf, dus de zinnen hebben een ander doel.",
+         "Koos je \"they tell the age of a word\"? Dan denk je dat voorbeeldzinnen de leeftijd van een woord geven. Zo'n gegeven staat er niet in, want de zinnen tonen gebruik.",
+         "Koos je \"they replace the meaning\"? Dan denk je dat voorbeeldzinnen de betekenis vervangen. De betekenis staat apart, en de zin geeft er alleen context bij.",
+         "Klopt: een voorbeeldzin laat zien hoe je het woord in een zin gebruikt."
+        ],
+        "uh": "Waarvoor dienen voorbeeldzinnen?"
+       },
+       {
+        "v": "Which tool finds a word with a similar meaning?",
+        "o": [
+         "a thesaurus",
+         "an atlas, with maps",
+         "a calendar, with dates",
+         "a calculator, with numbers"
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 1,
+        "u": "Thesaurus = synoniemen. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: een thesaurus geeft woorden met bijna dezelfde betekenis, synoniemen.",
+         "Koos je \"an atlas, with maps\"? Dan denk je dat een atlas hier helpt omdat hij veel opzoekwerk bevat. Het zijn kaarten van landen, geen lijst met woorden.",
+         "Koos je \"a calendar, with dates\"? Dan denk je dat een kalender woorden geeft omdat er namen van maanden op staan. Het toont vooral data, dus daar vind je geen synoniemen.",
+         "Koos je \"a calculator, with numbers\"? Dan denk je dat een rekenmachine tekst kan helpen verbeteren. Het is bedoeld voor sommen, en daarmee zoek je geen woorden."
+        ],
+        "uh": "Welk hulpmiddel helpt?"
+       },
+       {
+        "v": "Which sentence has an error that a spell checker will not find?",
+        "o": [
+         "\"They left thier bags at home.\"",
+         "\"They lefft their bags at home.\"",
+         "\"They left there bags at home.\"",
+         "\"They left thare bags at home.\""
+        ],
+        "c": 2,
+        "d": 1,
+        "s": 2,
+        "u": "Echt woord = niet gevonden. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"They left thier bags at home.\"? Dan denk je dat de verwisselde letters in thier onopgemerkt blijven. Zo'n woord staat in geen woordenlijst, dus het krijgt een rode lijn.",
+         "Koos je \"They lefft their bags at home.\"? Dan denk je dat een dubbele letter geen alarm geeft. Lefft is geen woord, en daarom wordt het meteen gemarkeerd.",
+         "Klopt: there is een bestaand woord, dus de controle ziet geen fout.",
+         "Koos je \"They left thare bags at home.\"? Dan denk je dat een klinkerfout door de controle komt. Thare bestaat niet, dus het programma stelt there of their voor."
+        ],
+        "uh": "Welke fout vindt de controle niet?"
+       },
+       {
+        "v": "Which feature of a word processor helps you to structure a long text?",
+        "o": [
+         "only a bigger font size",
+         "only a coloured background",
+         "headings and paragraphs",
+         "only a page number"
+        ],
+        "c": 2,
+        "d": 1,
+        "s": 3,
+        "u": "Kopjes en alinea's. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"only a bigger font size\"? Dan denk je dat een grotere letter structuur geeft. Het maakt alleen alles groter, en het geeft geen overzicht.",
+         "Koos je \"only a coloured background\"? Dan denk je dat een achtergrond structuur geeft. Het is alleen versiering, en geeft geen overzicht.",
+         "Klopt: kopjes en alinea's verdelen een tekst in duidelijke delen.",
+         "Koos je \"only a page number\"? Dan denk je dat een paginanummer structuur geeft. Het helpt bij zoeken, maar geeft de tekst geen indeling."
+        ],
+        "uh": "Wat geeft structuur?"
+       },
+       {
+        "v": "What should you do last before you hand in a text?",
+        "o": [
+         "read it again carefully",
+         "close the file at once",
+         "change the language of the text",
+         "add more pictures to the text"
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 4,
+        "u": "Nalezen als laatste. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: door nalezen vang je nog de laatste fouten die overblijven.",
+         "Koos je \"close the file at once\"? Dan denk je dat sluiten genoeg is. Dan mis je fouten, en je controleert niets.",
+         "Koos je \"change the language of the text\"? Dan denk je dat dit nodig is. De taal is al goed, en het levert niets op.",
+         "Koos je \"add more pictures to the text\"? Dan denk je dat meer plaatjes nodig zijn. Het gaat om de tekst, en niet om de plaatjes."
+        ],
+        "uh": "Wat doe je als laatste?"
+       },
+       {
+        "v": "Where can you find how to pronounce a word?",
+        "o": [
+         "in a spell checker only",
+         "in the font menu",
+         "in the word count",
+         "in a dictionary entry"
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 0,
+        "u": "Woordenboek = uitspraak. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"in a spell checker only\"? Dan denk je dat de spellingcontrole de uitspraak geeft. Die controleert alleen spelling, en geeft geen uitspraak.",
+         "Koos je \"in the font menu\"? Dan denk je dat het lettertypemenu de uitspraak geeft. Het gaat over uiterlijk, en niet over uitspraak.",
+         "Koos je \"in the word count\"? Dan denk je dat het aantal woorden de uitspraak geeft. Het telt alleen woorden, en geeft geen klank.",
+         "Klopt: een woordenboek geeft bij het woord ook de uitspraak weer."
+        ],
+        "uh": "Waar vind je de uitspraak?"
+       },
+       {
+        "v": "Which meaning fits \"a light bag\"?",
+        "o": [
+         "not dark",
+         "not heavy",
+         "not expensive",
+         "not fast"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 0,
+        "u": "Voorbeeld a light bag = niet zwaar.",
+        "uo": [
+         "Koos je \"not dark\"? Dan denk je dat betekenis 2 past. Not dark hoort bij een kamer, en niet bij een tas.",
+         "Klopt: de voorbeeldzin a light bag hoort bij betekenis 1, niet zwaar.",
+         "Koos je \"not expensive\"? Dan denk je dat light goedkoop betekent. Zo'n betekenis ontbreekt in de ingang, dus je verzint een eigen betekenis.",
+         "Koos je \"not fast\"? Dan denk je dat light langzaam betekent. Die betekenis staat er niet bij, en een tas heeft geen snelheid."
+        ],
+        "uh": "Welke betekenis past?",
+        "ctx": "In a dictionary you read this entry: \"light (adj.) 1 not heavy: a light bag; 2 not dark: a light room\". You must choose the right meaning for the word in the phrase \"a light bag\" in your text."
+       },
+       {
+        "v": "How do you find the right meaning?",
+        "o": [
+         "always take the first meaning",
+         "take the shortest meaning",
+         "pick one at random",
+         "read the example sentences"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 0,
+        "u": "Voorbeeldzinnen kiezen. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"always take the first meaning\"? Dan denk je dat de eerste betekenis altijd klopt. Dat hangt van de zin af, en je tekst gaat over een rivier.",
+         "Koos je \"take the shortest meaning\"? Dan denk je dat de kortste betekenis klopt. De lengte zegt niets, en je moet naar de context kijken.",
+         "Koos je \"pick one at random\"? Dan denk je dat kiezen op gevoel werkt. Dat kan fout gaan, en de voorbeelden helpen je.",
+         "Klopt: de voorbeeldzinnen laten zien welke betekenis past."
+        ],
+        "uh": "Hoe vind je de betekenis?",
+        "ctx": "You look up the word \"bank\" in a dictionary and see two meanings: a place where you keep money and the side of a river. You are not sure which meaning belongs in your text about a picnic by a river."
+       },
+       {
+        "v": "What does the spell checker do?",
+        "o": [
+         "it deletes the whole sentence at once",
+         "it marks it and suggests a fix",
+         "it writes the whole essay for you",
+         "it changes all your grammar everywhere"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 2,
+        "u": "Rode lijn + suggestie. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"it deletes the whole sentence at once\"? Dan denk je dat de controle de zin wist. Het markeert alleen een woord, en verwijdert niets.",
+         "Klopt: de controle markeert een niet-bestaand woord en geeft een suggestie.",
+         "Koos je \"it writes the whole essay for you\"? Dan denk je dat de controle het essay schrijft. Het controleert alleen spelling, en schrijft niets.",
+         "Koos je \"it changes all your grammar everywhere\"? Dan denk je dat de controle alle grammatica herstelt. Het kijkt vooral naar spelling, en laat veel fouten staan."
+        ],
+        "uh": "Wat doet de controle?",
+        "ctx": "You type the word \"recieve\" in your essay on a computer. The program has a spelling checker that marks wrong words with a red line, and you want to know what happens when you use this function."
+       },
+       {
+        "v": "Why does the spell checker not mark \"form\"?",
+        "o": [
+         "because the computer does not know English",
+         "because the sentence is too short",
+         "because \"form\" is also a real word",
+         "because the spell checker is switched off"
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 2,
+        "u": "Echt woord = geen markering. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"because the computer does not know English\"? Dan denk je dat de computer geen Engels kent. Het programma kent de woorden, maar niet altijd de context.",
+         "Koos je \"because the sentence is too short\"? Dan denk je dat de lengte uitmaakt. De controle kijkt naar losse woorden, en niet naar de lengte.",
+         "Klopt: form is een bestaand woord, dus de controle ziet geen fout.",
+         "Koos je \"because the spell checker is switched off\"? Dan denk je dat de controle uit staat. Hij markeert andere fouten wel, en deze fout is een echt woord."
+        ],
+        "uh": "Waarom geen markering?",
+        "ctx": "You write the sentence \"I got a letter form my friend\" and the spell checker does not mark any word. You are surprised, because the sentence is wrong and the word \"from\" should be used instead."
+       },
+       {
+        "v": "Which word is a formal synonym for \"buy\"?",
+        "o": [
+         "purchase",
+         "grab, which is informal",
+         "get, which is very common",
+         "pick up, which is a phrase"
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 1,
+        "u": "Purchase = formeel. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: purchase is een formeel synoniem voor het gewone woord buy.",
+         "Koos je \"grab, which is informal\"? Dan denk je dat grab formeel is. Het is spreektaal, en niet formeel.",
+         "Koos je \"get, which is very common\"? Dan denk je dat get formeel is. Het is een gewoon woord, en niet formeel.",
+         "Koos je \"pick up, which is a phrase\"? Dan denk je dat pick up formeel is. Het is een alledaagse uitdrukking, en niet formeel."
+        ],
+        "uh": "Welk woord is formeel?",
+        "ctx": "You want to write a formal e-mail and you use the word \"buy\". You think it sounds a bit too simple for a formal text and you search a thesaurus for a more formal word with the same meaning."
+       },
+       {
+        "v": "Which feature helps readers find the main parts?",
+        "o": [
+         "headings",
+         "a lot of different colours",
+         "a very small font",
+         "a long list of references"
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 3,
+        "u": "Kopjes = overzicht. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: kopjes tonen waar de delen van het rapport beginnen.",
+         "Koos je \"a lot of different colours\"? Dan denk je dat veel kleuren helpen. Het maakt de tekst rommelig, en geeft geen structuur.",
+         "Koos je \"a very small font\"? Dan denk je dat een klein lettertype helpt. Het maakt de tekst moeilijker te lezen, en geeft geen structuur.",
+         "Koos je \"a long list of references\"? Dan denk je dat een lange lijst bronnen helpt. Het staat achteraan, en toont de delen niet."
+        ],
+        "uh": "Wat helpt de lezer?",
+        "ctx": "You write a report on the computer and it has four pages. You want the reader to find the main parts quickly, so you use a feature of the program to show where the introduction, main part and conclusion start."
+       },
+       {
+        "v": "Why should you check autocorrect?",
+        "o": [
+         "it never makes any mistakes at all",
+         "it only works for numbers and dates",
+         "it can make a wrong word",
+         "it changes the language of your text"
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 2,
+        "u": "Controleer autocorrect. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"it never makes any mistakes at all\"? Dan denk je dat autocorrect nooit fouten maakt. Het raadt de bedoeling, en raadt soms fout.",
+         "Koos je \"it only works for numbers and dates\"? Dan denk je dat autocorrect alleen met getallen werkt. Het werkt ook voor woorden, en kan die veranderen.",
+         "Klopt: autocorrect kan een woord veranderen in een verkeerd woord.",
+         "Koos je \"it changes the language of your text\"? Dan denk je dat autocorrect de taal verandert. Het herstelt vermeende fouten, en dat gaat soms mis."
+        ],
+        "uh": "Waarom controleren?",
+        "ctx": "Your word processor has an autocorrect function that changes words while you type. You see that it changed a word in your sentence, but you are not sure whether the new word is the one that you meant."
+       },
+       {
+        "v": "What is a risk of an online translator?",
+        "o": [
+         "it always gives a perfect translation",
+         "it may give wrong sentences",
+         "it is too slow to use for any sentence",
+         "it only works for single separate words"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 4,
+        "u": "Controleer vertalingen. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"it always gives a perfect translation\"? Dan denk je dat een vertaler altijd perfect is. Dat is niet zo, en je moet het controleren.",
+         "Klopt: een vertaler kan onnatuurlijke of verkeerde zinnen geven.",
+         "Koos je \"it is too slow to use for any sentence\"? Dan denk je dat de vertaler te traag is. Het gaat in seconden, en het risico is een fout.",
+         "Koos je \"it only works for single separate words\"? Dan denk je dat een vertaler alleen losse woorden doet. Het vertaalt ook zinnen, en dat gaat niet altijd goed."
+        ],
+        "uh": "Wat is het risico?",
+        "ctx": "You use an online translator to turn a Dutch sentence into English for your homework, because you do not know how to say it. The translator gives you a sentence in a few seconds."
+       },
+       {
+        "v": "Which meaning is right for \"actual\"?",
+        "o": [
+         "current, as in the news today",
+         "modern, as in new fashion",
+         "late, as in after the time",
+         "real"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 0,
+        "u": "Actual = echt. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"current, as in the news today\"? Dan denk je dat actual actueel betekent. Dat is een false friend, en de betekenis is real.",
+         "Koos je \"modern, as in new fashion\"? Dan denk je dat actual modern betekent. Dat staat niet in het woordenboek, en past niet.",
+         "Koos je \"late, as in after the time\"? Dan denk je dat actual laat betekent. Dat staat niet in het woordenboek, en past niet.",
+         "Klopt: actual betekent echt of werkelijk, het is een false friend."
+        ],
+        "uh": "Welke betekenis klopt?",
+        "ctx": "You read the word \"actual\" in an English text and think that it means \"actueel\" in Dutch. You look it up in a dictionary to check if you are right, because you know that some words are false friends."
+       },
+       {
+        "v": "Which tool tells you how many words you wrote?",
+        "o": [
+         "the spell checker",
+         "the word count",
+         "the font menu",
+         "the page margin"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 4,
+        "u": "Word count = aantal woorden. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"the spell checker\"? Dan denk je dat de spellingcontrole woorden telt. Die controleert alleen spelling, en telt niet.",
+         "Klopt: de woordenteller geeft het precieze aantal woorden in de tekst.",
+         "Koos je \"the font menu\"? Dan denk je dat het lettertypemenu woorden telt. Het regelt de vorm, en telt niet.",
+         "Koos je \"the page margin\"? Dan denk je dat de marge woorden telt. Het regelt de ruimte, en telt niet."
+        ],
+        "uh": "Welk hulpmiddel telt?",
+        "ctx": "You write a long text of five hundred words for your teacher. She has told you that the text must have at least four hundred words, and you want to know how many words you have now."
+       },
+       {
+        "v": "Which misspelt word will a spell checker find?",
+        "o": [
+         "\"freinds\"",
+         "\"beech\"",
+         "\"grate\"",
+         "\"than\""
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 2,
+        "u": "Niet-woord wordt gevonden. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: freinds bestaat niet en wordt gemarkeerd.",
+         "Koos je \"beech\"? Dan denk je dat beech een rode lijn krijgt omdat het niet bij de zin past. Het is een boom en dus een echt woord, dus de controle zwijgt.",
+         "Koos je \"grate\"? Dan denk je dat grate wordt gemarkeerd omdat great bedoeld is. Grate betekent rooster of raspen, en staat in de woordenlijst.",
+         "Koos je \"than\"? Dan denk je dat than wordt gemarkeerd omdat then bedoeld is. Than hoort bij vergelijkingen, dus het is geldig gespeld."
+        ],
+        "uh": "Welk woord vindt de controle?",
+        "ctx": "Last weekend we went to the beech with our freinds. The weather was grate and we swam all day. We had a picnic and than we played volleyball. Their was a lot of people, but it was fun."
+       },
+       {
+        "v": "Which words will a spell checker NOT find?",
+        "o": [
+         "only the word \"freinds\" is missed",
+         "\"weather\", \"swam\" and \"picnic\"",
+         "\"volleyball\", \"people\" and \"fun\"",
+         "\"beech\", \"grate\" and \"than\""
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 2,
+        "u": "Echte woorden niet gevonden. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"only the word freinds is missed\"? Dan denk je dat freinds niet gevonden wordt. Dat woord bestaat niet, en de controle markeert het.",
+         "Koos je \"weather, swam and picnic\"? Dan denk je dat deze moeilijke woorden fout zijn. Ze staan juist goed geschreven in de tekst, dus er valt niets te missen.",
+         "Koos je \"volleyball, people and fun\"? Dan denk je dat lange woorden vaak mis gaan. Hier zijn ze correct gespeld, en de controle heeft er geen werk aan.",
+         "Klopt: dit zijn allemaal echte woorden die hier niet passen, dus niet gemarkeerd."
+        ],
+        "uh": "Welke woorden mist de controle?",
+        "ctx": "Last weekend we went to the beech with our freinds. The weather was grate and we swam all day. We had a picnic and than we played volleyball. Their was a lot of people, but it was fun."
+       },
+       {
+        "v": "What is the correct word instead of \"beech\" in the text?",
+        "o": [
+         "beach is spelt beech",
+         "beef",
+         "beach",
+         "bench"
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 1,
+        "u": "Beach = strand. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"beach is spelt beech\"? Dan denk je dat beech juist is omdat het ook met b begint. Beech is een boom, en je bedoelt het strand.",
+         "Koos je \"beef\"? Dan denk je dat beef bedoeld is omdat het op beech lijkt. Beef is rundvlees, dat past niet bij een uitstapje.",
+         "Klopt: je gaat naar het strand om te zwemmen, dus beach.",
+         "Koos je \"bench\"? Dan denk je dat bench bedoeld is door de beginletters. Bench is een bank, en daar zwem je niet in."
+        ],
+        "uh": "Welk woord is juist?",
+        "ctx": "Last weekend we went to the beech with our freinds. The weather was grate and we swam all day. We had a picnic and than we played volleyball. Their was a lot of people, but it was fun."
+       },
+       {
+        "v": "What is the correct word instead of \"than\" in \"and than we played volleyball\"?",
+        "o": [
+         "than, as in better than",
+         "that",
+         "then",
+         "though"
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 1,
+        "u": "Then = daarna. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"than, as in better than\"? Dan denk je dat than juist is. Than gebruik je bij vergelijken, en niet bij volgorde.",
+         "Koos je \"that\"? Dan denk je dat that past door de klank. Het is een aanwijzend woord, dus het zegt niets over eerst en daarna.",
+         "Klopt: then geeft de volgorde aan, dus eerst picknicken en daarna volleybal.",
+         "Koos je \"though\"? Dan denk je dat though bedoeld is omdat het een bijzin begint. Het geeft een tegenstelling, terwijl de zin juist een volgorde noemt."
+        ],
+        "uh": "Welk woord past?",
+        "ctx": "Last weekend we went to the beech with our freinds. The weather was grate and we swam all day. We had a picnic and than we played volleyball. Their was a lot of people, but it was fun."
+       },
+       {
+        "v": "What is the correct word instead of \"Their\" in \"Their was a lot of people\"?",
+        "o": [
+         "They're, which means they are",
+         "Their, as in the group's",
+         "These",
+         "There"
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 0,
+        "u": "There was ... Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"They're, which means they are\"? Dan denk je dat de afkorting klopt omdat de zin over mensen gaat. They're betekent they are, en dat past niet voor Their was.",
+         "Koos je \"Their, as in the group's\"? Dan denk je dat het bezit bedoeld wordt omdat het woord al in de zin staat. Their hoort bij mensen, maar je wilt een woord voor het bestaan.",
+         "Koos je \"These\"? Dan denk je dat these past omdat het over meerdere mensen gaat. Het wijst echter naar iets in de buurt, en laat de zin ongrammaticaal.",
+         "Klopt: there was a lot of people gebruikt there als plaatswoord."
+        ],
+        "uh": "Welk woord past?",
+        "ctx": "Last weekend we went to the beech with our freinds. The weather was grate and we swam all day. We had a picnic and than we played volleyball. Their was a lot of people, but it was fun."
+       },
+       {
+        "v": "Which method is best to find all the mistakes in this text?",
+        "o": [
+         "checker, then read it aloud",
+         "use only the spell checker program",
+         "read it once quickly in your head",
+         "do nothing at all and hand it in"
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 4,
+        "u": "Controle + hardop lezen. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: de controle vindt niet-woorden en hardop lezen vindt de rest.",
+         "Koos je \"use only the spell checker program\"? Dan denk je dat de controle genoeg is. Echte woorden als beech blijven staan, en je mist fouten.",
+         "Koos je \"read it once quickly in your head\"? Dan denk je dat snel lezen genoeg is. Je ziet dan veel fouten niet, en je leest te vlot.",
+         "Koos je \"do nothing at all and hand it in\"? Dan denk je dat nakijken niet nodig is. Je laat dan fouten staan, en dat kost punten."
+        ],
+        "uh": "Wat is het beste?",
+        "ctx": "Last weekend we went to the beech with our freinds. The weather was grate and we swam all day. We had a picnic and than we played volleyball. Their was a lot of people, but it was fun."
+       },
+       {
+        "v": "Which meaning fits \"She runs a small shop\"?",
+        "o": [
+         "to move fast on foot",
+         "to manage a business",
+         "to flow like water",
+         "to be in a hurry"
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 0,
+        "u": "Run a shop = leiden. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"to move fast on foot\"? Dan denk je dat run hier rennen betekent. Een winkel kun je niet rennen, en de zin gaat over leiden.",
+         "Klopt: a shop is een bedrijf en run betekent hier leiden.",
+         "Koos je \"to flow like water\"? Dan denk je dat run hier stromen betekent. Een winkel stroomt niet, en de zin gaat over leiden.",
+         "Koos je \"to be in a hurry\"? Dan denk je dat run hier haast betekent. Dat staat niet in de zin, en past niet bij een winkel."
+        ],
+        "uh": "Welke betekenis past?",
+        "ctx": "In a dictionary you find this entry: \"run (v.) 1 to move fast on foot; 2 to manage a business; 3 to flow\". You read the sentence \"She runs a small shop in town\" in your reading text and want to pick the right meaning."
+       },
+       {
+        "v": "Which tool helps you avoid repeating \"good\"?",
+        "o": [
+         "a spell checker",
+         "a word count",
+         "a page layout tool",
+         "a thesaurus"
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 1,
+        "u": "Thesaurus = afwisseling. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"a spell checker\"? Dan denk je dat de spellingcontrole synoniemen geeft. Die controleert alleen spelling, en biedt geen alternatieven.",
+         "Koos je \"a word count\"? Dan denk je dat de woordenteller synoniemen geeft. Die telt alleen, en geeft geen alternatieven.",
+         "Koos je \"a page layout tool\"? Dan denk je dat een opmaakhulpmiddel synoniemen geeft. Het regelt de pagina, en geeft geen woorden.",
+         "Klopt: een thesaurus geeft synoniemen om afwisseling te maken."
+        ],
+        "uh": "Welk hulpmiddel helpt?",
+        "ctx": "You write a text and you notice that you have used the word \"good\" six times. You want to make your text more interesting by using other words with a similar meaning, so you look for a helpful tool."
+       },
+       {
+        "v": "How can you check the translation?",
+        "o": [
+         "check key words in a dictionary",
+         "trust it because it is a computer",
+         "translate it back with the same tool",
+         "ask nobody and hand it in right away"
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 4,
+        "u": "Woorden in het woordenboek. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: het woordenboek bevestigt of de woorden en betekenissen kloppen.",
+         "Koos je \"trust it because it is a computer\"? Dan denk je dat een computer altijd klopt. Een vertaler kan fouten maken, en je moet controleren.",
+         "Koos je \"translate it back with the same tool\"? Dan denk je dat dit bewijst dat het klopt. Dezelfde fout kan terugkomen, en dat is geen echte controle.",
+         "Koos je \"ask nobody and hand it in right away\"? Dan denk je dat nakijken niet nodig is. Je weet dan niet of het klopt, en dat kost punten."
+        ],
+        "uh": "Hoe controleer je het?",
+        "ctx": "You used an online translator to turn your Dutch sentence into English. Now you want to be sure that the English sentence is correct before you hand it in, because the translator sometimes makes mistakes."
+       },
+       {
+        "v": "What should you do with a long text on screen?",
+        "o": [
+         "wait until the end to save it once",
+         "save it often and keep a copy",
+         "never save it, the computer remembers",
+         "print it and delete the file"
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 3,
+        "u": "Vaak opslaan, kopie. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"wait until the end to save it once\"? Dan denk je dat een keer opslaan genoeg is. Je verliest dan veel bij een storing, en dat is riskant.",
+         "Klopt: regelmatig opslaan en een kopie bewaren voorkomt verlies.",
+         "Koos je \"never save it, the computer remembers\"? Dan denk je dat de computer alles onthoudt. Dat is niet zo, en je kunt je werk kwijtraken.",
+         "Koos je \"print it and delete the file\"? Dan denk je dat afdrukken en wissen veilig is. Dan kun je niet meer bewerken, en je verliest je bestand."
+        ],
+        "uh": "Wat doe je met een lange tekst?",
+        "ctx": "You are writing a long report on a computer and you have worked on it for two hours. You are afraid that you may lose your work if the computer stops, so you want to know what a careful writer does."
+       }
+      ],
+      "oe": [
+       {
+        "bron": "Examenstijl",
+        "ctx": "You write an essay of five hundred words about a holiday on your computer. The teacher wants the text to have a clear structure with an introduction, a main part and a conclusion, so that the reader can find the parts easily.",
+        "v": "Name two features of a word processor that you can use to give the text structure.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Kopjes of titels gebruiken (1p). Alinea's of een lijst gebruiken (1p). Een geschikte reden geven, zoals overzicht (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "In your reading text you see the word \"fair\" and you are not sure what it means. In the dictionary you find several meanings: \"just and correct\", \"light in colour\" and \"a public event with games\". The sentence in the text is: \"There is a fair in our town every summer.\"",
+        "v": "Explain how you find the right meaning and say which one fits.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "De voorbeeldzin of context gebruiken (1p). Betekenis 3, a public event, kiezen (1p). Reden, zoals every summer in town (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "You have written a short text and the spell checker found no mistakes. But your text says \"I want to go to the beech with my freind and play there\". Your teacher says that the text still contains three errors.",
+        "v": "Name the three errors and give the correct words.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "beech - beach (1p). freind - friend (1p). Er is een derde fout genoemd, zoals there/their of grammatica (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "You use the word \"nice\" five times in your letter to a friend. You want to make it more interesting by using other words with the same meaning, and you want to be sure that the new words fit the sentence.",
+        "v": "Name the tool that helps and explain how you check the new word.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Een thesaurus (1p). Een synoniem zoeken (1p). Het woord in het woordenboek of in een voorbeeldzin controleren (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "You must translate a Dutch sentence into English for homework. You use an online translator, but the sentence sounds strange to you. The teacher says that you should not trust the translator completely.",
+        "v": "Give two ways to check and improve the sentence.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Woorden opzoeken in een woordenboek (1p). Voorbeeldzinnen bekijken (1p). Hardop lezen of laten nalezen (1p)."
+       }
+      ]
      }
     ]
    },

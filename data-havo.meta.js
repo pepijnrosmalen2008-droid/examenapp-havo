@@ -3026,6 +3026,27 @@ var VAKKEN = [
       "nOe": 5,
       "nBeg": 12,
       "hasSam": true
+     },
+     {
+      "id": "E7",
+      "lo": "en.E.7",
+      "gs": 2,
+      "naam": "Een tekst schrijven met een tekstverwerker en naslagmateriaal",
+      "beschrijving": "Je leert een Engelse tekst te schrijven met een tekstverwerker en hulpmiddelen zoals een woordenboek, thesaurus en spellingcontrole, en ze slim te gebruiken.",
+      "ceStatus": "SE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Tekstverwerker en opmaak",
+       "Woordenboek gebruiken",
+       "Synoniemen en thesaurus",
+       "Valkuilen van spellingcontrole",
+       "Nalezen en verbeteren"
+      ],
+      "nSv": 27,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
      }
     ]
    },
