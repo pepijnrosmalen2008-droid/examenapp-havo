@@ -2984,6 +2984,27 @@ var VAKKEN = [
       "nOe": 5,
       "nBeg": 12,
       "hasSam": true
+     },
+     {
+      "id": "E5",
+      "lo": "en.E.5",
+      "gs": 2,
+      "naam": "Een verslag schrijven",
+      "beschrijving": "Je leert in het Engels een feitelijk verslag te schrijven met titel, inleiding, kern en conclusie, in de verleden tijd en zonder persoonlijke mening.",
+      "ceStatus": "SE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Opbouw van een verslag",
+       "Verleden tijd",
+       "Volgorde van gebeurtenissen",
+       "Objectief schrijven",
+       "Wie, wat, wanneer, waar"
+      ],
+      "nSv": 26,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
      }
     ]
    },

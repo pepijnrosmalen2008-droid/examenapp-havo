@@ -129464,6 +129464,667 @@ var VAKKEN = [
         "u": "Neutrale, formele woorden (1p). Geen spreektaal of belediging (1p). Een duidelijke, volledige zin (1p)."
        }
       ]
+     },
+     {
+      "id": "E5",
+      "lo": "en.E.5",
+      "gs": 2,
+      "naam": "Een verslag schrijven",
+      "beschrijving": "Je leert in het Engels een feitelijk verslag te schrijven met titel, inleiding, kern en conclusie, in de verleden tijd en zonder persoonlijke mening.",
+      "ceStatus": "SE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Opbouw van een verslag",
+       "Verleden tijd",
+       "Volgorde van gebeurtenissen",
+       "Objectief schrijven",
+       "Wie, wat, wanneer, waar"
+      ],
+      "sam": "Een verslag heeft een titel, een inleiding met doel, een kern met de gebeurtenissen in volgorde en een conclusie met een aanbeveling. Je schrijft in de verleden tijd, gebruikt first, after lunch en then en noemt feiten zoals aantallen en tijden. Mening en spreektaal horen er niet in. Een verslag beantwoordt wie, wat, wanneer en waar.",
+      "begrippen": [
+       {
+        "t": "Verslag",
+        "d": "Een feitelijke tekst over iets dat gebeurd is."
+       },
+       {
+        "t": "Titel",
+        "d": "De naam van het verslag, met het onderwerp."
+       },
+       {
+        "t": "Inleiding",
+        "d": "Het begin met onderwerp en doel."
+       },
+       {
+        "t": "Kern",
+        "d": "Het middenstuk met de gebeurtenissen in volgorde."
+       },
+       {
+        "t": "Conclusie",
+        "d": "Het slot met de uitkomst."
+       },
+       {
+        "t": "Aanbeveling",
+        "d": "Een advies voor de toekomst, met we recommend."
+       },
+       {
+        "t": "Verleden tijd",
+        "d": "De vorm voor iets dat gebeurd is, zoals went."
+       },
+       {
+        "t": "Objectief",
+        "d": "Met feiten en zonder mening."
+       },
+       {
+        "t": "Feit",
+        "d": "Iets dat je kunt controleren, zoals een aantal."
+       },
+       {
+        "t": "Volgorde",
+        "d": "Wat eerst gebeurde en wat daarna."
+       },
+       {
+        "t": "Passief",
+        "d": "Een zin waarin de handeling centraal staat, zoals were bought."
+       },
+       {
+        "t": "Kopje",
+        "d": "Een woord boven een deel van de tekst."
+       }
+      ],
+      "sv": [
+       {
+        "v": "Which is the best title for a report on a school trip?",
+        "o": [
+         "\"My day in London, a story\"",
+         "\"Report on the school trip to London\"",
+         "\"Hello, everybody, listen to me!\"",
+         "\"Something about a trip, maybe\""
+        ],
+        "c": 1,
+        "d": 1,
+        "s": 0,
+        "u": "Titel = soort tekst + onderwerp.",
+        "uo": [
+         "Koos je \"My day in London, a story\"? Dan denk je dat deze titel past. Het is vaag, en noemt het onderwerp niet.",
+         "Klopt: de titel noemt het soort tekst en het onderwerp.",
+         "Koos je \"Hello, everybody, listen to me!\"? Dan denk je dat deze titel past. Het is een groet, en geen titel van een verslag.",
+         "Koos je \"Something about a trip, maybe\"? Dan denk je dat deze titel past. Het is onzeker, en niet zakelijk."
+        ],
+        "uh": "Welke titel past?"
+       },
+       {
+        "v": "What is the purpose of the introduction of a report?",
+        "o": [
+         "to give your personal opinion about everything",
+         "to end the text with a short thank you",
+         "to give all the details in a list of words",
+         "to say what the report is about"
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 0,
+        "u": "Inleiding = onderwerp en doel.",
+        "uo": [
+         "Koos je \"to give your personal opinion about everything\"? Dan denk je dat de inleiding een mening geeft. Een verslag is feitelijk, en de inleiding noemt het onderwerp.",
+         "Koos je \"to end the text with a short thank you\"? Dan denk je dat de inleiding een slot is. Het slot komt aan het einde, en de inleiding aan het begin.",
+         "Koos je \"to give all the details in a list of words\"? Dan denk je dat de inleiding alle details geeft. De details staan in de kern, en de inleiding blijft kort.",
+         "Klopt: de inleiding noemt het onderwerp en het doel."
+        ],
+        "uh": "Wat doet de inleiding?"
+       },
+       {
+        "v": "Which tense do you use for a report about a past event?",
+        "o": [
+         "the past simple",
+         "the present simple, as it is now",
+         "the future with will, as it comes later",
+         "the imperative, as an order"
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 1,
+        "u": "Verslag = verleden tijd. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: je beschrijft een gebeurtenis die voorbij is.",
+         "Koos je \"the present simple, as it is now\"? Dan denk je dat de tegenwoordige tijd past. De gebeurtenis is voorbij, dus je gebruikt de verleden tijd.",
+         "Koos je \"the future with will, as it comes later\"? Dan denk je dat de toekomst past. Er is al iets gebeurd, en dus niet in de toekomst.",
+         "Koos je \"the imperative, as an order\"? Dan denk je dat de gebiedende wijs past. Een verslag geeft geen bevelen, maar beschrijft wat gebeurde."
+        ],
+        "uh": "Welke tijd gebruik je?"
+       },
+       {
+        "v": "Which sentence is in the correct tense for a report?",
+        "o": [
+         "\"We visit the museum in the morning.\"",
+         "\"We will visit the museum in the morning.\"",
+         "\"We visited the museum in the morning.\"",
+         "\"We are visiting the museum in the morning.\""
+        ],
+        "c": 2,
+        "d": 1,
+        "s": 1,
+        "u": "Visited = verleden. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"We visit the museum in the morning.\"? Dan denk je dat visit hier past. Het is de tegenwoordige tijd, en het bezoek is al voorbij.",
+         "Koos je \"We will visit the museum in the morning.\"? Dan denk je dat will visit past. Dat is een toekomstvorm, en het bezoek is al geweest.",
+         "Klopt: visited is de verleden tijd van visit en past bij een bezoek dat voorbij is.",
+         "Koos je \"We are visiting the museum in the morning.\"? Dan denk je dat are visiting past. Dat is een duurvorm van nu, en geen verleden."
+        ],
+        "uh": "Welke zin klopt?"
+       },
+       {
+        "v": "Which word shows the order of events?",
+        "o": [
+         "\"Because\", which gives a reason",
+         "\"But\", which shows a contrast",
+         "\"Then\"",
+         "\"Or\", which gives a choice"
+        ],
+        "c": 2,
+        "d": 1,
+        "s": 2,
+        "u": "Then = daarna. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"Because, which gives a reason\"? Dan denk je dat because wijst op volgorde. Het geeft juist een reden, en geen volgorde.",
+         "Koos je \"But, which shows a contrast\"? Dan denk je dat but de eerste stap van de dag aangeeft. Het zet iets tegenover elkaar, en geeft geen volgorde.",
+         "Klopt: then geeft aan wat er daarna gebeurde en toont dus de volgorde.",
+         "Koos je \"Or, which gives a choice\"? Dan denk je dat or de volgende stap noemt. Het geeft een keuze, en geen opeenvolging."
+        ],
+        "uh": "Welk woord toont volgorde?"
+       },
+       {
+        "v": "Which sentence is objective?",
+        "o": [
+         "\"The visit lasted two hours.\"",
+         "\"The visit was boring.\"",
+         "\"The visit was wonderful.\"",
+         "\"The visit was too long.\""
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 3,
+        "u": "Feit = objectief. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: de duur is een feit zonder mening en dus objectief.",
+         "Koos je \"The visit was boring.\"? Dan denk je dat boring een feit is. Het is een oordeel van de schrijver, en dus subjectief.",
+         "Koos je \"The visit was wonderful.\"? Dan denk je dat wonderful objectief klinkt. Het drukt een gevoel uit, en is geen meetbaar feit.",
+         "Koos je \"The visit was too long.\"? Dan denk je dat too long een feit is. Het hangt af van wat je lang vindt, en is dus een oordeel."
+        ],
+        "uh": "Welke zin is objectief?"
+       },
+       {
+        "v": "Which questions should a report on an event answer?",
+        "o": [
+         "why you like it and how you feel",
+         "which colour you prefer and why",
+         "what you will do next year only",
+         "who, what, when and where"
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 4,
+        "u": "Wie, wat, wanneer, waar. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"why you like it and how you feel\"? Dan denk je dat een verslag over gevoelens gaat. Het gaat om feiten, en niet om jouw gevoel.",
+         "Koos je \"which colour you prefer and why\"? Dan denk je dat dit in een verslag hoort. Het gaat om de gebeurtenis, en niet om je voorkeuren.",
+         "Koos je \"what you will do next year only\"? Dan denk je dat een verslag alleen over de toekomst gaat. Het beschrijft wat gebeurde, en dus het verleden.",
+         "Klopt: een verslag beantwoordt wie, wat, wanneer en waar."
+        ],
+        "uh": "Welke vragen beantwoord je?"
+       },
+       {
+        "v": "Which sentence is a good opening?",
+        "o": [
+         "\"I had a great time, you know, really.\"",
+         "\"This report is about our trip to London.\"",
+         "\"London is a big city with many people.\"",
+         "\"Something happened last week, I think.\""
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 0,
+        "u": "Onderwerp, plaats, datum. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"I had a great time, you know, really.\"? Dan denk je dat deze zin een goede opening is. Het is een persoonlijke mening, en noemt het onderwerp niet.",
+         "Klopt: de zin noemt het onderwerp, de plaats en de datum.",
+         "Koos je \"London is a big city with many people.\"? Dan denk je dat deze zin een goede opening is. Het is een algemeen feit, en gaat niet over jullie reis.",
+         "Koos je \"Something happened last week, I think.\"? Dan denk je dat deze zin een goede opening is. Het is vaag, en noemt geen onderwerp."
+        ],
+        "uh": "Welke zin opent het verslag?",
+        "ctx": "Your class visited London on 12 May. Your teacher asks you to write a report of the trip for the school newsletter. You want to start with an opening sentence that tells the reader what the report is about."
+       },
+       {
+        "v": "Which sentence uses the correct tense?",
+        "o": [
+         "\"First, we go to the Tower of London.\"",
+         "\"First, we goed to the Tower of London.\"",
+         "\"First, we will go to the Tower of London.\"",
+         "\"First, we went to the Tower of London.\""
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 1,
+        "u": "Went = verleden. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"First, we go to the Tower of London.\"? Dan denk je dat go past. Het is tegenwoordige tijd, en de reis is voorbij.",
+         "Koos je \"First, we goed to the Tower of London.\"? Dan denk je dat goed past. Go is onregelmatig, en de verleden tijd is went.",
+         "Koos je \"First, we will go to the Tower of London.\"? Dan denk je dat will go past. Dat is toekomend, en de reis is al geweest.",
+         "Klopt: went is de verleden tijd van go en past bij de reis die voorbij is."
+        ],
+        "uh": "Welke zin klopt?",
+        "ctx": "In the main part of your report you describe the first activity of the trip: you went to the Tower of London by train in the morning. You want to use the correct tense in your sentence."
+       },
+       {
+        "v": "Which sentence shows the order correctly?",
+        "o": [
+         "\"Before lunch, we visited the museum last.\"",
+         "\"After lunch, we visited the museum.\"",
+         "\"We visited the museum first, then breakfast.\"",
+         "\"Lunch after the museum, we ate.\""
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 2,
+        "u": "After lunch = na de lunch. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"Before lunch, we visited the museum last.\"? Dan denk je dat deze zin klopt. De volgorde is omgekeerd, en de zin is onduidelijk.",
+         "Klopt: after lunch zet het museum na de lunch.",
+         "Koos je \"We visited the museum first, then breakfast.\"? Dan denk je dat deze zin klopt. Het noemt een ander ontbijt, en klopt niet met de dag.",
+         "Koos je \"Lunch after the museum, we ate.\"? Dan denk je dat deze zin klopt. De volgorde is omgedraaid, en de zin is onhandig."
+        ],
+        "uh": "Welke volgorde klopt?",
+        "ctx": "You describe the events of the day in the right order in your report. After the visit to the Tower of London, the class had lunch. After lunch, the class went to the museum. You must show the order clearly."
+       },
+       {
+        "v": "Which sentence gives a fact?",
+        "o": [
+         "\"A lot of nice students took part.\"",
+         "\"Many students were very lucky.\"",
+         "\"Thirty students took part.\"",
+         "\"The students were the best.\""
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 3,
+        "u": "Aantal = feit. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"A lot of nice students took part.\"? Dan denk je dat nice een feit is. Het is een mening over de leerlingen, en a lot is vaag.",
+         "Koos je \"Many students were very lucky.\"? Dan denk je dat lucky iets meetbaars zegt. Het is een oordeel, en geen aantal.",
+         "Klopt: een aantal leerlingen is een feit dat je kunt controleren.",
+         "Koos je \"The students were the best.\"? Dan denk je dat the best een feit noemt. Het is een oordeel over de leerlingen, en geen controleerbaar gegeven."
+        ],
+        "uh": "Welke zin geeft een feit?",
+        "ctx": "In your report you want to give facts, not opinions. You want to tell the reader how many students took part, because this is an important detail for the school newsletter."
+       },
+       {
+        "v": "Which sentence is too personal for a report?",
+        "o": [
+         "\"I thought it was the best day ever!\"",
+         "\"The class arrived at 9.30.\"",
+         "\"The tour lasted two hours.\"",
+         "\"The students returned by train.\""
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 3,
+        "u": "Persoonlijk = niet objectief. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: dit is een persoonlijke mening met een uitroep.",
+         "Koos je \"The class arrived at 9.30.\"? Dan denk je dat de aankomsttijd te persoonlijk is. Het is een feit, en past in een verslag.",
+         "Koos je \"The tour lasted two hours.\"? Dan denk je dat de duur van de tour te persoonlijk is. Het is een feit, en past in een verslag.",
+         "Koos je \"The students returned by train.\"? Dan denk je dat de terugreis te persoonlijk is. Het noemt alleen wat gebeurde, en past in een verslag."
+        ],
+        "uh": "Welke zin is te persoonlijk?",
+        "ctx": "You write a report about a school trip and your teacher has told you that a report must stay objective. You must choose the sentence that is too personal and that does not belong in a report."
+       },
+       {
+        "v": "Which sentence gives a recommendation?",
+        "o": [
+         "\"We recommend a visit to the museum.\"",
+         "\"It is a museum, I think, in London.\"",
+         "\"Maybe yes, maybe no, who knows it.\"",
+         "\"The museum was open at ten o'clock.\""
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 0,
+        "u": "We recommend = advies. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: we recommend geeft een formeel advies.",
+         "Koos je \"It is a museum, I think, in London.\"? Dan denk je dat deze zin een advies geeft. Het is vaag, en geeft geen aanbeveling.",
+         "Koos je \"Maybe yes, maybe no, who knows it.\"? Dan denk je dat deze zin een advies geeft. Het kiest niets, en is geen aanbeveling.",
+         "Koos je \"The museum was open at ten o'clock.\"? Dan denk je dat deze zin een advies geeft. Het is een feit, en geen aanbeveling."
+        ],
+        "uh": "Welke zin geeft advies?",
+        "ctx": "At the end of your report about the school trip you want to give advice for the next year, because the teacher wants to know if the trip should be repeated. You want a formal recommendation."
+       },
+       {
+        "v": "Which sentence is suitable?",
+        "o": [
+         "\"The meeting starts at 4 p.m.\"",
+         "\"The meeting was so boring at 4 p.m.\"",
+         "\"The meeting started at 4 p.m.\"",
+         "\"We hope the meeting will start at 4 p.m.\""
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 4,
+        "u": "Started = verleden en feit. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"The meeting starts at 4 p.m.\"? Dan denk je dat deze zin past. Starts is tegenwoordig, en de vergadering is voorbij.",
+         "Koos je \"The meeting was so boring at 4 p.m.\"? Dan denk je dat deze zin past. Boring is een mening, en niet objectief.",
+         "Klopt: het is een feit over het begin van de vergadering in de verleden tijd.",
+         "Koos je \"We hope the meeting will start at 4 p.m.\"? Dan denk je dat deze zin past. Het is een wens, en geen verslag van een feit."
+        ],
+        "uh": "Welke zin past?",
+        "ctx": "You write a short report about a meeting of the student council. You must say when the meeting began, so that the reader knows the time, and you want to write it in a formal and factual way."
+       },
+       {
+        "v": "Which sentence uses the passive correctly?",
+        "o": [
+         "\"The tickets was buy by the teacher.\"",
+         "\"The tickets were bought by the teacher.\"",
+         "\"The teacher were bought the tickets.\"",
+         "\"The tickets are buying by the teacher.\""
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 4,
+        "u": "Were + voltooid deelwoord. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"The tickets was buy by the teacher.\"? Dan denk je dat was buy klopt. Het deelwoord is bought, en bij tickets hoort were.",
+         "Klopt: were bought is de passieve vorm in de verleden tijd.",
+         "Koos je \"The teacher were bought the tickets.\"? Dan denk je dat deze zin passief is. Het onderwerp is de leraar, en dat is actief.",
+         "Koos je \"The tickets are buying by the teacher.\"? Dan denk je dat are buying passief is. Dat is een tegenwoordige actieve vorm, en klopt niet."
+        ],
+        "uh": "Welke zin is passief?",
+        "ctx": "Reports often use the passive to focus on what was done instead of who did it. You want to say that the teacher bought the tickets for the whole class before the trip, and you want to use the passive."
+       },
+       {
+        "v": "Which sentence starts the conclusion?",
+        "o": [
+         "\"First of all, the trip was successful.\"",
+         "\"By the way, the trip was successful.\"",
+         "\"For example, the trip was successful.\"",
+         "\"In conclusion, the trip was successful.\""
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 3,
+        "u": "In conclusion = slot. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"First of all, the trip was successful.\"? Dan denk je dat first of all het slot start. Het begint een opsomming, en staat vooraan.",
+         "Koos je \"By the way, the trip was successful.\"? Dan denk je dat by the way het slot start. Het is een zijpad, en vat niets samen.",
+         "Koos je \"For example, the trip was successful.\"? Dan denk je dat for example het slot start. Het geeft een voorbeeld, en rondt niets af.",
+         "Klopt: in conclusion kondigt het slot van het verslag aan."
+        ],
+        "uh": "Hoe begin je het slot?",
+        "ctx": "You write the last part of your report about the trip. You want to start your conclusion with a clear signal word that tells the reader that this is the end of the report and that you now sum up."
+       },
+       {
+        "v": "Which headings are typical in a report?",
+        "o": [
+         "Hello, Story, Goodbye, Thanks",
+         "Introduction, Main part, Conclusion",
+         "Dear Sir, Yours faithfully, Hi there",
+         "Title, Joke, Song, Picture, Game"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 0,
+        "u": "Inleiding, kern, conclusie. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"Hello, Story, Goodbye, Thanks\"? Dan denk je dat deze kopjes passen. Het zijn geen zakelijke kopjes, en horen niet bij een verslag.",
+         "Klopt: dit zijn de drie vaste delen van een verslag.",
+         "Koos je \"Dear Sir, Yours faithfully, Hi there\"? Dan denk je dat deze kopjes passen. Dit zijn onderdelen van een brief, en niet van een verslag.",
+         "Koos je \"Title, Joke, Song, Picture, Game\"? Dan denk je dat deze kopjes passen. Ze structureren een verslag niet, en zijn willekeurig."
+        ],
+        "uh": "Welke kopjes passen?",
+        "ctx": "Your teacher says that a report has headings to help the reader find the parts. You must choose the set of headings that fits a report about a school trip and that has a clear and logical structure."
+       },
+       {
+        "v": "What was the aim of the school trip according to the report?",
+        "o": [
+         "to learn about British history",
+         "to have a day off from school",
+         "to buy souvenirs in London",
+         "to test the new train line"
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 0,
+        "u": "Doel in de inleiding. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: de inleiding noemt dit als doel van de reis naar Londen.",
+         "Koos je \"to have a day off from school\"? Dan denk je dat dit het doel was. Dat staat nergens, en het doel is geschiedenis.",
+         "Koos je \"to buy souvenirs in London\"? Dan denk je dat dit het doel was. Dat wordt niet genoemd, en het doel is leren.",
+         "Koos je \"to test the new train line\"? Dan denk je dat dit het doel was. Dat staat niet in het verslag, en het doel is leren over geschiedenis."
+        ],
+        "uh": "Wat was het doel?",
+        "ctx": "Report on the school trip to London. Introduction: On 12 May, 30 students of class 4B visited London with two teachers. The aim was to learn about British history. Main part: First, we went to the Tower of London by train. After lunch, we visited the British Museum. Then we returned by train at 5 p.m. Conclusion: The trip was successful, because all students learned something. We recommend a similar trip next year."
+       },
+       {
+        "v": "Which words show the order of events in the main part?",
+        "o": [
+         "\"Introduction\", \"Main part\" and \"Conclusion\"",
+         "\"because\", \"but\" and \"so\"",
+         "\"students\", \"teachers\" and \"class\"",
+         "\"First\", \"After lunch\" and \"Then\""
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 2,
+        "u": "First, after lunch, then. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"Introduction, Main part and Conclusion\"? Dan denk je dat deze woorden de volgorde van gebeurtenissen tonen. Het zijn kopjes, en geven de structuur aan.",
+         "Koos je \"because, but and so\"? Dan denk je dat deze woorden de volgorde tonen. Ze geven reden, contrast en gevolg, en geen volgorde.",
+         "Koos je \"students, teachers and class\"? Dan denk je dat deze woorden de volgorde tonen. Het zijn zelfstandige naamwoorden, en geven geen volgorde.",
+         "Klopt: deze woorden geven de volgorde van de gebeurtenissen aan."
+        ],
+        "uh": "Welke woorden tonen volgorde?",
+        "ctx": "Report on the school trip to London. Introduction: On 12 May, 30 students of class 4B visited London with two teachers. The aim was to learn about British history. Main part: First, we went to the Tower of London by train. After lunch, we visited the British Museum. Then we returned by train at 5 p.m. Conclusion: The trip was successful, because all students learned something. We recommend a similar trip next year."
+       },
+       {
+        "v": "Which tense is used in the main part of the report?",
+        "o": [
+         "the present simple",
+         "the future with will",
+         "the past simple",
+         "the present continuous"
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 1,
+        "u": "Went, visited = verleden. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"the present simple\"? Dan denk je dat de tegenwoordige tijd wordt gebruikt. De werkwoorden staan in de verleden tijd, en de reis is voorbij.",
+         "Koos je \"the future with will\"? Dan denk je dat de toekomende tijd wordt gebruikt. Er staat nergens will, en het verslag is achteraf.",
+         "Klopt: went, visited en returned zijn verleden tijd.",
+         "Koos je \"the present continuous\"? Dan denk je dat de tegenwoordige duurvorm wordt gebruikt. Er staat geen -ing met is of are, en de verleden tijd wordt gebruikt."
+        ],
+        "uh": "Welke tijd wordt gebruikt?",
+        "ctx": "Report on the school trip to London. Introduction: On 12 May, 30 students of class 4B visited London with two teachers. The aim was to learn about British history. Main part: First, we went to the Tower of London by train. After lunch, we visited the British Museum. Then we returned by train at 5 p.m. Conclusion: The trip was successful, because all students learned something. We recommend a similar trip next year."
+       },
+       {
+        "v": "Which sentence in the report is a recommendation?",
+        "o": [
+         "\"The trip was successful.\"",
+         "\"Then we returned by train at 5 p.m.\"",
+         "\"We recommend a similar trip next year.\"",
+         "\"The aim was to learn about British history.\""
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 0,
+        "u": "We recommend = advies. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"The trip was successful.\"? Dan denk je dat dit een advies is. Het is een oordeel over de reis, en geen advies.",
+         "Koos je \"Then we returned by train at 5 p.m.\"? Dan denk je dat dit een advies is. Het is een feit over de terugreis, en geen advies.",
+         "Klopt: we recommend geeft een advies voor de toekomst.",
+         "Koos je \"The aim was to learn about British history.\"? Dan denk je dat dit een advies is. Het is het doel, en geen advies."
+        ],
+        "uh": "Welke zin is een advies?",
+        "ctx": "Report on the school trip to London. Introduction: On 12 May, 30 students of class 4B visited London with two teachers. The aim was to learn about British history. Main part: First, we went to the Tower of London by train. After lunch, we visited the British Museum. Then we returned by train at 5 p.m. Conclusion: The trip was successful, because all students learned something. We recommend a similar trip next year."
+       },
+       {
+        "v": "Why does the writer say \"The trip was successful\"?",
+        "o": [
+         "because it did not rain in London",
+         "because the students had a lot of free time",
+         "because the teachers were very happy",
+         "because all students learned something"
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 3,
+        "u": "Reden: iedereen leerde iets. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"because it did not rain in London\"? Dan denk je dat het weer de reden is. Dat staat nergens, en de reden is dat iedereen iets leerde.",
+         "Koos je \"because the students had a lot of free time\"? Dan denk je dat vrije tijd de reden is. Dat staat nergens, en de reden is leren.",
+         "Koos je \"because the teachers were very happy\"? Dan denk je dat de leraren de reden zijn. Dat wordt niet genoemd, en de reden is dat studenten leerden.",
+         "Klopt: de reden staat in dezelfde zin na het woord because."
+        ],
+        "uh": "Waarom succesvol?",
+        "ctx": "Report on the school trip to London. Introduction: On 12 May, 30 students of class 4B visited London with two teachers. The aim was to learn about British history. Main part: First, we went to the Tower of London by train. After lunch, we visited the British Museum. Then we returned by train at 5 p.m. Conclusion: The trip was successful, because all students learned something. We recommend a similar trip next year."
+       },
+       {
+        "v": "How many students visited London?",
+        "o": [
+         "30 students from 4B",
+         "two teachers only, no students",
+         "all of the school together",
+         "12 students in total, I think"
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 3,
+        "u": "30 leerlingen. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: de inleiding noemt dertig leerlingen van klas 4B.",
+         "Koos je \"two teachers only, no students\"? Dan denk je dat alleen leraren gingen. De twee leraren gingen mee, maar er waren ook dertig leerlingen.",
+         "Koos je \"all of the school together\"? Dan denk je dat de hele school ging. Het was één klas, en niet de hele school.",
+         "Koos je \"12 students in total, I think\"? Dan denk je dat het twaalf waren. Twaalf is de datum in mei, en niet het aantal leerlingen."
+        ],
+        "uh": "Hoeveel leerlingen gingen?",
+        "ctx": "Report on the school trip to London. Introduction: On 12 May, 30 students of class 4B visited London with two teachers. The aim was to learn about British history. Main part: First, we went to the Tower of London by train. After lunch, we visited the British Museum. Then we returned by train at 5 p.m. Conclusion: The trip was successful, because all students learned something. We recommend a similar trip next year."
+       },
+       {
+        "v": "Which is the best rewrite of \"The food was yucky\"?",
+        "o": [
+         "\"The food was totally disgusting, lol.\"",
+         "\"The students did not like the food.\"",
+         "\"The food was awful, in my opinion.\"",
+         "\"The food was bad, I think so.\""
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 3,
+        "u": "Neutraal en feitelijk. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"The food was totally disgusting, lol.\"? Dan denk je dat dit objectief is. Het is overdreven en informeel, en nog steeds een mening.",
+         "Klopt: dit is neutraal en benoemt wie het vond.",
+         "Koos je \"The food was awful, in my opinion.\"? Dan denk je dat dit objectief is. In my opinion maakt het persoonlijk, en past niet in een verslag.",
+         "Koos je \"The food was bad, I think so.\"? Dan denk je dat dit objectief is. I think so is een mening, en niet zakelijk."
+        ],
+        "uh": "Hoe herschrijf je het?",
+        "ctx": "You write a report about a trip, and one student wrote \"The food was yucky\". Your teacher says that this sentence is too personal and informal for a report and must be rewritten in a neutral and objective way."
+       },
+       {
+        "v": "Which information belongs in the introduction?",
+        "o": [
+         "all the details of every hour of the day",
+         "only your opinion about the visit",
+         "a joke to make the reader laugh",
+         "who went, when, where and why"
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 0,
+        "u": "Wie, wanneer, waar, waarom. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"all the details of every hour of the day\"? Dan denk je dat alle details in de inleiding horen. De details staan in de kern, en de inleiding blijft kort.",
+         "Koos je \"only your opinion about the visit\"? Dan denk je dat alleen je mening in de inleiding hoort. Een verslag is feitelijk, en de inleiding noemt feiten.",
+         "Koos je \"a joke to make the reader laugh\"? Dan denk je dat een grap in de inleiding hoort. Dat past niet bij een zakelijk verslag, en noemt het onderwerp niet.",
+         "Klopt: de inleiding noemt de belangrijkste feiten kort."
+        ],
+        "uh": "Wat staat in de inleiding?",
+        "ctx": "You are writing the introduction of a report about a visit to a factory. You want to put in the introduction the most important facts that the reader needs before reading the rest of the report."
+       },
+       {
+        "v": "Which verb form is correct?",
+        "o": [
+         "arrived",
+         "arrive",
+         "arriving",
+         "will arrive"
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 1,
+        "u": "Arrived = verleden. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: arrived is de verleden tijd van arrive.",
+         "Koos je \"arrive\"? Dan denk je dat de stam arrive genoeg is. Dat is de tegenwoordige tijd, en het is al gebeurd.",
+         "Koos je \"arriving\"? Dan denk je dat arriving alleen kan. Zonder hulpwerkwoord is het geen volledige vorm, en het is geen verleden tijd.",
+         "Koos je \"will arrive\"? Dan denk je dat will arrive de aankomst beschrijft. Dat is een toekomstvorm, en de aankomst is al geweest."
+        ],
+        "uh": "Welke vorm klopt?",
+        "ctx": "In your report you want to write that the class arrived at the factory at half past nine in the morning. You must choose the verb in the past simple that fits best in the sentence: \"We ... at 9.30.\""
+       }
+      ],
+      "oe": [
+       {
+        "bron": "Examenstijl",
+        "ctx": "Your class visited a museum in Amsterdam last Tuesday. Your teacher wants a short report for the school website. There were 25 students and two teachers, and the visit lasted three hours.",
+        "v": "Write a title and an introduction of two sentences for the report.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Een titel met het onderwerp, zoals \"Report on the museum visit\" (1p). Een inleiding met wie, wanneer en waar (2p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "You describe the programme of a trip in your report. In the morning you went to a castle, then you had lunch in a park, and in the afternoon you visited a market. You took the bus home at five.",
+        "v": "Write three sentences in the past simple with words for the order.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Verleden tijd correct (1p). Volgordewoorden zoals first, then, after lunch (1p). Een goede volgorde (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "A student wrote this sentence for your report: \"The visit was boring and the guide was stupid.\" Your teacher says that a report must be objective, so you must write a neutral version of this sentence.",
+        "v": "Rewrite the sentence in an objective way.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Geen mening of belediging (1p). Een feitelijke en neutrale zin (1p). Een goede, volledige zin (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "You are writing the conclusion of a report about a school trip to Paris. The trip was a success because all students learned something and nobody got lost. You also want to make a recommendation.",
+        "v": "Write a conclusion with a signal word and a recommendation.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Signaalwoord zoals In conclusion (1p). Een samenvatting met reden (1p). Een aanbeveling met we recommend (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "You attended a meeting of the student council. The meeting started at 4 p.m. and ended at 5 p.m., six students were present, and they decided to organise a party. You write a short report about the meeting.",
+        "v": "Write three sentences about the meeting with facts and the past simple.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Feiten zoals tijd en aantal (1p). Verleden tijd (1p). Een besluit genoemd (1p)."
+       }
+      ]
      }
     ]
    },
