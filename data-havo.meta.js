@@ -2901,7 +2901,29 @@ var VAKKEN = [
     "nSv": 87,
     "nOe": 3,
     "nBeg": 17,
-    "hasSam": true
+    "hasSam": true,
+    "leerdoelen": [
+     {
+      "id": "E1",
+      "lo": "en.E.1",
+      "gs": 2,
+      "naam": "Formele en informele brieven en e-mails schrijven",
+      "beschrijving": "Je leert in het Engels een formele of informele brief of e-mail te schrijven met de juiste aanhef, taal, opbouw en afsluiting.",
+      "ceStatus": "SE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Aanhef en afsluiting",
+       "Formeel en informeel",
+       "Doel en beleefd vragen",
+       "Opbouw en volgorde"
+      ],
+      "nSv": 27,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
+     }
+    ]
    },
    {
     "id": "F",

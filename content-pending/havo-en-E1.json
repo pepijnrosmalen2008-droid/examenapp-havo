@@ -1,0 +1,681 @@
+{
+ "id": "E1",
+ "lo": "en.E.1",
+ "gs": 2,
+ "naam": "Formele en informele brieven en e-mails schrijven",
+ "beschrijving": "Je leert in het Engels een formele of informele brief of e-mail te schrijven met de juiste aanhef, taal, opbouw en afsluiting.",
+ "ceStatus": "SE",
+ "binas": "",
+ "val": "",
+ "onderwerpen": [
+  "Aanhef en afsluiting",
+  "Formeel en informeel",
+  "Doel en beleefd vragen",
+  "Opbouw en volgorde"
+ ],
+ "sam": "Een brief of e-mail begint met een aanhef en eindigt met een afsluiting. Bij Dear Sir or Madam hoort Yours faithfully, bij Dear Mr Brown hoort Yours sincerely, bij een vriend gebruik je Hi en Cheers. In een formele tekst gebruik je volledige vormen en beleefde zinnen als I would be grateful if you could. In de eerste alinea noem je het doel met I am writing to. Sluit af met I look forward to hearing from you.",
+ "begrippen": [
+  {
+   "t": "Aanhef",
+   "d": "De groet aan het begin van een brief."
+  },
+  {
+   "t": "Afsluiting",
+   "d": "De zin en groet aan het einde."
+  },
+  {
+   "t": "Formeel",
+   "d": "Beleefd en zakelijk, voor onbekenden of een baas."
+  },
+  {
+   "t": "Informeel",
+   "d": "Los en vriendelijk, voor vrienden."
+  },
+  {
+   "t": "Doel",
+   "d": "De reden waarom je schrijft."
+  },
+  {
+   "t": "Samentrekking",
+   "d": "Een korte vorm als can't of I'm."
+  },
+  {
+   "t": "Yours faithfully",
+   "d": "Afsluiting na Dear Sir or Madam."
+  },
+  {
+   "t": "Yours sincerely",
+   "d": "Afsluiting na Dear plus een naam."
+  },
+  {
+   "t": "Beleefde vraag",
+   "d": "Een vraag met could you of would you."
+  },
+  {
+   "t": "Verwijzing",
+   "d": "Een zin die naar een eerdere mail verwijst."
+  },
+  {
+   "t": "Alinea",
+   "d": "Een deel van de tekst over één onderwerp."
+  },
+  {
+   "t": "Register",
+   "d": "De mate van formaliteit van je taal."
+  }
+ ],
+ "sv": [
+  {
+   "v": "Which opening is suitable for a formal letter to a person you do not know?",
+   "o": [
+    "\"Hi there, how are you?\"",
+    "\"Dear Sir or Madam,\"",
+    "\"Hey mate, what's up?\"",
+    "\"Yo! Listen to this!\""
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 0,
+   "u": "Onbekende: Dear Sir or Madam. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"Hi there, how are you?\"? Dan denk je dat deze groet formeel is. Het is een losse, informele aanhef, en past niet bij een onbekende.",
+    "Klopt: dear sir or madam is de formele aanhef als je de naam niet kent.",
+    "Koos je \"Hey mate, what's up?\"? Dan denk je dat deze groet past. Het is spreektaal voor vrienden, en te los voor een formele brief.",
+    "Koos je \"Yo! Listen to this!\"? Dan denk je dat deze groet past. Het is erg informeel, en klinkt onbeleefd in een brief."
+   ],
+   "uh": "Welke aanhef is formeel?"
+  },
+  {
+   "v": "Which closing goes with \"Dear Mr Brown,\"?",
+   "o": [
+    "\"Cheers, see you later,\"",
+    "\"See ya soon, bye,\"",
+    "\"Lots of love and kisses,\"",
+    "\"Yours sincerely,\""
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 0,
+   "u": "Dear Mr Brown -> Yours sincerely.",
+   "uo": [
+    "Koos je \"Cheers, see you later,\"? Dan denk je dat deze afsluiting past. Het is spreektaal, en te informeel voor een formele brief.",
+    "Koos je \"See ya soon, bye,\"? Dan denk je dat deze afsluiting past. Het is slang, en niet voor een formele brief.",
+    "Koos je \"Lots of love and kisses,\"? Dan denk je dat deze afsluiting past. Het is voor familie of vrienden, en niet voor een meneer Brown.",
+    "Klopt: bij dear plus een naam hoort yours sincerely."
+   ],
+   "uh": "Welk slot past?"
+  },
+  {
+   "v": "Which closing goes with \"Dear Sir or Madam,\"?",
+   "o": [
+    "\"Yours faithfully,\"",
+    "\"Yours sincerely,\"",
+    "\"Best wishes and cheers,\"",
+    "\"See you soon, bye,\""
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 0,
+   "u": "Sir or Madam -> Yours faithfully.",
+   "uo": [
+    "Klopt: bij dear sir or madam hoort yours faithfully.",
+    "Koos je \"Yours sincerely,\"? Dan denk je dat deze afsluiting past. Die hoort bij een brief waarin je de naam kent, en niet bij sir or madam.",
+    "Koos je \"Best wishes and cheers,\"? Dan denk je dat deze afsluiting past. Het klinkt te vriendelijk, en is niet de vaste formele vorm.",
+    "Koos je \"See you soon, bye,\"? Dan denk je dat deze afsluiting past. Het is informeel, en past niet bij een onbekende."
+   ],
+   "uh": "Welk slot past?"
+  },
+  {
+   "v": "Which sentence is the most formal?",
+   "o": [
+    "\"Send me more info now, please hurry up.\"",
+    "\"Can you send me some info, mate?\"",
+    "\"I would be grateful for more information.\"",
+    "\"Gimme more info, please, thanks a lot.\""
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 1,
+   "u": "Would be grateful = formeel. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"Send me more info now, please hurry up.\"? Dan denk je dat deze zin formeel is. Het is een bevel, en klinkt onbeleefd.",
+    "Koos je \"Can you send me some info, mate?\"? Dan denk je dat deze zin formeel is. Het is kort en los, en mist beleefde woorden.",
+    "Klopt: I would be grateful if you could is een beleefde, formele vraag.",
+    "Koos je \"Gimme more info, please, thanks a lot.\"? Dan denk je dat deze zin formeel is. Gimme is spreektaal, en niet geschikt voor een brief."
+   ],
+   "uh": "Welke zin is formeel?"
+  },
+  {
+   "v": "Which line is typical for an informal e-mail to a friend?",
+   "o": [
+    "\"Dear Sir or Madam, thank you for your letter.\"",
+    "\"I should be most obliged for a reply.\"",
+    "\"Hi Sam, thanks for your message!\"",
+    "\"Yours faithfully, Samantha Jones.\""
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 1,
+   "u": "Hi + thanks = informeel. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"Dear Sir or Madam, thank you for your letter.\"? Dan denk je dat dit informeel is. Het is een formele aanhef, en past niet bij een vriend.",
+    "Koos je \"I should be most obliged for a reply.\"? Dan denk je dat dit informeel is. Het is erg formeel, en klinkt vreemd voor een vriend.",
+    "Klopt: hi en thanks zijn gewoon in een mail aan een vriend.",
+    "Koos je \"Yours faithfully, Samantha Jones.\"? Dan denk je dat dit informeel is. Het is een formele afsluiting, en past niet bij een vriend."
+   ],
+   "uh": "Welke regel is informeel?"
+  },
+  {
+   "v": "Which sentence explains why you are writing a formal e-mail?",
+   "o": [
+    "\"I am writing to ask about the summer course.\"",
+    "\"I wanted to say something about it.\"",
+    "\"This is an e-mail from me.\"",
+    "\"Hello, what is your name?\""
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 2,
+   "u": "I am writing to ... = doel. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: I am writing to noemt direct het doel van de mail.",
+    "Koos je \"I wanted to say something about it.\"? Dan denk je dat dit het doel noemt. Het is vaag, en vertelt niet waarover je schrijft.",
+    "Koos je \"This is an e-mail from me.\"? Dan denk je dat dit het doel noemt. Het zegt alleen dat het een mail is, en geeft geen reden.",
+    "Koos je \"Hello, what is your name?\"? Dan denk je dat dit het doel noemt. Het is een persoonlijke vraag, en past niet in een formele mail."
+   ],
+   "uh": "Welke zin noemt het doel?"
+  },
+  {
+   "v": "Where does the reason for writing belong in a formal e-mail?",
+   "o": [
+    "in the last sentence only",
+    "in the signature at the bottom",
+    "nowhere, the reader will guess it",
+    "in the first paragraph"
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 3,
+   "u": "Doel in alinea 1. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"in the last sentence only\"? Dan denk je dat het doel aan het eind hoort. De lezer wil het doel meteen weten, en niet pas aan het slot.",
+    "Koos je \"in the signature at the bottom\"? Dan denk je dat het doel in de handtekening hoort. Die bevat alleen je naam, en geen reden.",
+    "Koos je \"nowhere, the reader will guess it\"? Dan denk je dat de lezer het doel raadt. Dat is onduidelijk, en onbeleefd.",
+    "Klopt: je noemt het doel meteen in de eerste alinea."
+   ],
+   "uh": "Waar noem je het doel?"
+  },
+  {
+   "v": "Which sentence is a good formal start?",
+   "o": [
+    "\"Hey, your hotel was much too noisy, guys.\"",
+    "\"I am writing to complain about the noise.\"",
+    "\"Hi, what's up with all the noise there?\"",
+    "\"You are very bad at hotel work, sir.\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 0,
+   "u": "I am writing to complain. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"Hey, your hotel was much too noisy, guys.\"? Dan denk je dat deze start past. Het is informeel en onbeleefd, en niet geschikt voor een manager.",
+    "Klopt: je noemt het doel direct en blijft formeel.",
+    "Koos je \"Hi, what's up with all the noise there?\"? Dan denk je dat deze start past. Het is spreektaal, en klinkt niet beleefd.",
+    "Koos je \"You are very bad at hotel work, sir.\"? Dan denk je dat deze start past. Het is een beschuldiging, en geen formele klacht."
+   ],
+   "uh": "Hoe begin je de klacht?",
+   "ctx": "You stayed at a hotel last week, but your room was very noisy because of a party in the next room. You want to write a formal e-mail to the manager and explain the problem clearly and politely."
+  },
+  {
+   "v": "Which line fits an informal thank-you e-mail?",
+   "o": [
+    "\"I wish to express my sincere gratitude.\"",
+    "\"Your present has been received.\"",
+    "\"Dear Madam, I thank you.\"",
+    "\"Thanks a lot for the lovely present!\""
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 1,
+   "u": "Informeel bedankje. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"I wish to express my sincere gratitude.\"? Dan denk je dat deze zin past. Het is erg formeel, en klinkt vreemd voor een vriendin.",
+    "Koos je \"Your present has been received.\"? Dan denk je dat deze zin past. Het klinkt als een ontvangstbevestiging, en is niet warm.",
+    "Koos je \"Dear Madam, I thank you.\"? Dan denk je dat deze zin past. Het is een formele aanhef, en past niet bij een vriendin.",
+    "Klopt: dit is een warm en informeel bedankje."
+   ],
+   "uh": "Welke regel past?",
+   "ctx": "Your English friend Jess sent you a lovely birthday present, a book about cooking. You want to send her a short informal e-mail to say thank you, as you really like the gift and you want her to know."
+  },
+  {
+   "v": "Which sentence is polite and correct?",
+   "o": [
+    "\"Send me a brochure at once.\"",
+    "\"Could you send me a brochure?\"",
+    "\"I want a brochure right now.\"",
+    "\"Brochure, please, quick, quick.\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 0,
+   "u": "Could you please ...? Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"Send me a brochure at once.\"? Dan denk je dat deze zin beleefd is. Het is een bevel, en mist please.",
+    "Klopt: could you please maakt de vraag beleefd.",
+    "Koos je \"I want a brochure right now.\"? Dan denk je dat deze zin beleefd is. Het is een eis, en onbeleefd.",
+    "Koos je \"Brochure, please, quick, quick.\"? Dan denk je dat deze zin beleefd is. Het is kortaf, en geen volledige zin."
+   ],
+   "uh": "Welke zin is beleefd?",
+   "ctx": "You want to know more about a language course in London. You write a formal letter to the school and you want to ask them politely to send you a brochure with the prices and the dates of the courses."
+  },
+  {
+   "v": "Which apology is suitable?",
+   "o": [
+    "\"Whatever, it is only homework.\"",
+    "\"Sorry, but it is your fault.\"",
+    "\"I am sorry that my homework is late.\"",
+    "\"I do not care about the homework.\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 2,
+   "u": "Excuus + reden. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"Whatever, it is only homework.\"? Dan denk je dat deze zin een excuus is. Het klinkt onverschillig, en onbeleefd.",
+    "Koos je \"Sorry, but it is your fault.\"? Dan denk je dat deze zin een excuus is. Het geeft de docent de schuld, en is onbeleefd.",
+    "Klopt: je biedt netjes je excuses aan en noemt de reden.",
+    "Koos je \"I do not care about the homework.\"? Dan denk je dat deze zin een excuus is. Het toont desinteresse, en is geen excuus."
+   ],
+   "uh": "Welk excuus past?",
+   "ctx": "You forgot to hand in your homework on time and your English teacher is not happy. You write her a short e-mail to say that you are sorry, and you want to sound honest and polite in your message."
+  },
+  {
+   "v": "Which sentence invites her informally?",
+   "o": [
+    "\"Do you fancy coming to my party on Saturday?\"",
+    "\"I should be honoured by your presence.\"",
+    "\"You are hereby invited to the party.\"",
+    "\"Come to the party, that is an order.\""
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 0,
+   "u": "Do you fancy ...? Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: do you fancy is een informele uitnodiging.",
+    "Koos je \"I should be honoured by your presence.\"? Dan denk je dat deze zin past. Het is erg formeel, en klinkt vreemd voor een vriendin.",
+    "Koos je \"You are hereby invited to the party.\"? Dan denk je dat deze zin past. Het is formeel en juridisch, en niet vriendelijk.",
+    "Koos je \"Come to the party, that is an order.\"? Dan denk je dat deze zin past. Het is een bevel, en klinkt onvriendelijk."
+   ],
+   "uh": "Welke zin nodigt informeel uit?",
+   "ctx": "You write an informal e-mail to a friend in England to invite her to your birthday party on Saturday. You know her well, so you want to use a friendly and relaxed style and ask her if she wants to come."
+  },
+  {
+   "v": "Which sentence is a good formal ending?",
+   "o": [
+    "\"I look forward to your reply.\"",
+    "\"Write soon, bye bye, see you!\"",
+    "\"Answer me quickly, please, now.\"",
+    "\"See you in the pub, mate, cheers.\""
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 3,
+   "u": "I look forward to ... Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: dit is de vaste beleefde slotzin van een formele brief of e-mail.",
+    "Koos je \"Write soon, bye bye, see you!\"? Dan denk je dat deze slotzin past. Het is informeel, en niet voor een formele brief.",
+    "Koos je \"Answer me quickly, please, now.\"? Dan denk je dat deze slotzin past. Het klinkt als een bevel, en is niet formeel.",
+    "Koos je \"See you in the pub, mate, cheers.\"? Dan denk je dat deze slotzin past. Het is spreektaal, en niet voor een brief."
+   ],
+   "uh": "Hoe sluit je formeel af?",
+   "ctx": "You have written a formal letter to a language school to ask for information. Now you want to end your letter with a polite sentence that shows that you hope for an answer and that thanks them."
+  },
+  {
+   "v": "Which closing sentence is suitable?",
+   "o": [
+    "\"I remain, Sir, your obedient servant.\"",
+    "\"Yours faithfully, Mr Jones.\"",
+    "\"Write back soon!\"",
+    "\"Please acknowledge receipt.\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 3,
+   "u": "Write back soon = informeel. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"I remain, Sir, your obedient servant.\"? Dan denk je dat deze slotzin past. Het is ouderwets en formeel, en klinkt vreemd.",
+    "Koos je \"Yours faithfully, Mr Jones.\"? Dan denk je dat deze slotzin past. Het is een formele afsluiting, en niet voor een vriend.",
+    "Klopt: dit is een vriendelijke, informele slotzin.",
+    "Koos je \"Please acknowledge receipt.\"? Dan denk je dat deze slotzin past. Het is zakelijk, en klinkt koud."
+   ],
+   "uh": "Welke slotzin past?",
+   "ctx": "You write an informal e-mail to your friend Sam in Scotland. You tell him about your week and you want to finish the e-mail in a friendly way and ask him to answer you soon."
+  },
+  {
+   "v": "Which sentence is too informal for this e-mail?",
+   "o": [
+    "\"I am interested in the job.\"",
+    "\"Hi, what's up? I need a job.\"",
+    "\"I would like to apply for the job.\"",
+    "\"Please find my CV attached.\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 1,
+   "u": "Spreektaal = te informeel. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"I am interested in the job.\"? Dan denk je dat deze zin te informeel is. Het is neutraal en goed, dus past in een formele mail.",
+    "Klopt: deze zin is spreektaal en klinkt niet professioneel.",
+    "Koos je \"I would like to apply for the job.\"? Dan denk je dat deze zin te informeel is. Het is beleefd en formeel, en goed voor een sollicitatie.",
+    "Koos je \"Please find my CV attached.\"? Dan denk je dat deze zin te informeel is. Het is een vaste formele zin, en past prima."
+   ],
+   "uh": "Welke zin is te informeel?",
+   "ctx": "You apply for a summer job and you write an e-mail to the manager. You must avoid sentences that are too informal, because the manager does not know you and you want to make a good impression."
+  },
+  {
+   "v": "Which form is better in a formal letter?",
+   "o": [
+    "\"I can't come, sorry.\"",
+    "\"I won't make it, I'm afraid.\"",
+    "\"No way I'm coming.\"",
+    "\"I am unable to attend.\""
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 1,
+   "u": "Geen samentrekkingen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"I can't come, sorry.\"? Dan denk je dat deze vorm past. Het gebruikt een samentrekking, en is informeel.",
+    "Koos je \"I won't make it, I'm afraid.\"? Dan denk je dat deze vorm past. Het is spreektaal met samentrekkingen, en klinkt los.",
+    "Koos je \"No way I'm coming.\"? Dan denk je dat deze vorm past. Het is slang en onbeleefd, en niet formeel.",
+    "Klopt: een volledige vorm zonder samentrekking is formeel."
+   ],
+   "uh": "Welke vorm is formeel?",
+   "ctx": "In a formal letter you want to write that you are not able to come to a meeting. Your teacher says that you should avoid contractions in formal writing and use the full forms instead."
+  },
+  {
+   "v": "Which phrase refers to the earlier e-mail politely?",
+   "o": [
+    "\"About your thing from May.\"",
+    "\"Thank you for your e-mail of 5 May.\"",
+    "\"I got your mail, whatever.\"",
+    "\"So, what was that e-mail?\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 2,
+   "u": "Thank you for your e-mail of ...",
+   "uo": [
+    "Koos je \"About your thing from May.\"? Dan denk je dat deze zin past. Het is vaag, en niet beleefd.",
+    "Klopt: je bedankt en noemt de datum van het bericht.",
+    "Koos je \"I got your mail, whatever.\"? Dan denk je dat deze zin past. Het klinkt onverschillig, en is niet formeel.",
+    "Koos je \"So, what was that e-mail?\"? Dan denk je dat deze zin past. Het klinkt onbeleefd, en verwijst niet duidelijk."
+   ],
+   "uh": "Hoe verwijs je naar de mail?",
+   "ctx": "You received an e-mail from a company dated 5 May. Now you want to answer it in a polite way, and you want to refer to their message at the start of your reply so they know which message you mean."
+  },
+  {
+   "v": "Why is Emma writing this letter?",
+   "o": [
+    "to ask about places and details of a summer course",
+    "to complain about a course she took last year",
+    "to apply for a job at the school in July",
+    "to thank the school for a nice holiday"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 1,
+   "u": "Doel: informatie vragen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: ze vraagt naar plaatsen, prijs, startdatum en lunch.",
+    "Koos je \"to complain about a course she took last year\"? Dan denk je dat ze klaagt. Ze vraagt alleen informatie, en er is geen klacht.",
+    "Koos je \"to apply for a job at the school in July\"? Dan denk je dat ze solliciteert. Ze vraagt naar een cursus, en niet naar een baan.",
+    "Koos je \"to thank the school for a nice holiday\"? Dan denk je dat ze bedankt. Ze vraagt iets, en er is geen vakantie genoemd."
+   ],
+   "uh": "Waarom schrijft ze?",
+   "ctx": "Dear Sir or Madam, I am writing to ask whether there are still places on your summer course in July. I would like to know the price and the starting date. Could you also tell me if lunch is included? I look forward to hearing from you. Yours faithfully, Emma de Vries"
+  },
+  {
+   "v": "Why does Emma end with \"Yours faithfully\"?",
+   "o": [
+    "she knows the reader very well",
+    "she wants to sound informal and funny",
+    "she is writing to a close friend",
+    "she does not know the name of the reader"
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 0,
+   "u": "Sir or Madam -> Yours faithfully.",
+   "uo": [
+    "Koos je \"she knows the reader very well\"? Dan denk je dat ze de lezer kent. Ze gebruikt sir or madam, dus ze kent de naam niet.",
+    "Koos je \"she wants to sound informal and funny\"? Dan denk je dat ze informeel wil zijn. Yours faithfully is formeel, en niet grappig.",
+    "Koos je \"she is writing to a close friend\"? Dan denk je dat ze aan een vriend schrijft. Het is een formele brief, en geen privébrief.",
+    "Klopt: bij dear sir or madam hoort yours faithfully."
+   ],
+   "uh": "Waarom dit slot?",
+   "ctx": "Dear Sir or Madam, I am writing to ask whether there are still places on your summer course in July. I would like to know the price and the starting date. Could you also tell me if lunch is included? I look forward to hearing from you. Yours faithfully, Emma de Vries"
+  },
+  {
+   "v": "Which phrase makes the request in the letter polite?",
+   "o": [
+    "\"Tell me about lunch, I need to know.\"",
+    "\"Dear Sir or Madam, good morning,\"",
+    "\"Could you tell me if lunch is included?\"",
+    "\"Yours faithfully, Emma de Vries, Utrecht\""
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 2,
+   "u": "Could you ...? = beleefd. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"Tell me about lunch, I need to know.\"? Dan denk je dat deze zin beleefd is. Het is een bevel, en mist could you.",
+    "Koos je \"Dear Sir or Madam, good morning,\"? Dan denk je dat deze zin de vraag beleefd maakt. Het is de aanhef, en geen verzoek.",
+    "Klopt: could you also tell me maakt de vraag beleefd.",
+    "Koos je \"Yours faithfully, Emma de Vries, Utrecht\"? Dan denk je dat deze zin de vraag beleefd maakt. Het is het slot, en geen verzoek."
+   ],
+   "uh": "Welke zin is beleefd?",
+   "ctx": "Dear Sir or Madam, I am writing to ask whether there are still places on your summer course in July. I would like to know the price and the starting date. Could you also tell me if lunch is included? I look forward to hearing from you. Yours faithfully, Emma de Vries"
+  },
+  {
+   "v": "Which words show that this e-mail is informal?",
+   "o": [
+    "\"Dear Sir\", \"Yours faithfully\" and \"obliged\"",
+    "\"Dear Mr Tom\", \"regards\" and \"kindly\"",
+    "\"Hi Tom\", \"Thanks\" and \"See you\"",
+    "\"Honoured guest\", \"hereby\" and \"sincerely\""
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 1,
+   "u": "Hi, thanks, see you. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"Dear Sir, Yours faithfully and obliged\"? Dan denk je dat dear sir en yours faithfully informeel zijn. Het zijn formele woorden, en ze staan niet in deze mail.",
+    "Koos je \"Dear Mr Tom, regards and kindly\"? Dan denk je dat Dear Mr Tom een losse groet is. Regards en kindly zijn zakelijk, en komen in deze mail niet voor.",
+    "Klopt: hi, thanks en see you zijn spreektaal tussen vrienden.",
+    "Koos je \"Honoured guest, hereby and sincerely\"? Dan denk je dat hereby en honoured informeel klinken. Het zijn juridische woorden, en staan niet in Liams mail."
+   ],
+   "uh": "Welke woorden zijn informeel?",
+   "ctx": "Hi Tom, Thanks for your message! I am so happy that you can come to my party on Saturday. It starts at seven, and you can bring a friend if you like. Do you fancy pizza? Let me know soon. See you, Liam"
+  },
+  {
+   "v": "Which sentence asks something of the reader?",
+   "o": [
+    "\"It starts at seven.\"",
+    "\"I am so happy.\"",
+    "\"Thanks for your message!\"",
+    "\"Do you fancy pizza?\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 2,
+   "u": "Vraag aan de lezer. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"It starts at seven.\"? Dan denk je dat de tijd iets van Tom vraagt. It starts at seven is alleen informatie, en geen vraag.",
+    "Koos je \"I am so happy.\"? Dan denk je dat blij zijn een vraag is. I am so happy noemt een gevoel van Liam, en stelt niets aan Tom.",
+    "Koos je \"Thanks for your message!\"? Dan denk je dat een bedankje om antwoord vraagt. Thanks for your message sluit iets af, en vraagt niets van Tom.",
+    "Klopt: Liam stelt hier een vraag aan Tom, dus de zin vraagt iets van de lezer."
+   ],
+   "uh": "Welke zin vraagt iets?",
+   "ctx": "Hi Tom, Thanks for your message! I am so happy that you can come to my party on Saturday. It starts at seven, and you can bring a friend if you like. Do you fancy pizza? Let me know soon. See you, Liam"
+  },
+  {
+   "v": "Which parts of this e-mail to Mr Jones are too informal?",
+   "o": [
+    "\"Thanks\", \"can't\" and \"Cheers\"",
+    "only \"Dear Mr Jones\" at the start",
+    "only the words \"e-mail\" and \"Monday\"",
+    "nothing, it is all fine as it is"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 1,
+   "u": "Spreektaal en samentrekkingen.",
+   "uo": [
+    "Klopt: dit zijn samentrekkingen en spreektaal in een formele mail.",
+    "Koos je \"only Dear Mr Jones at the start\"? Dan denk je dat alleen de aanhef informeel is. De aanhef is juist formeel, en het probleem zit elders.",
+    "Koos je \"only the words e-mail and Monday\"? Dan denk je dat deze woorden informeel zijn. Het zijn neutrale woorden, en niet het probleem.",
+    "Koos je \"nothing, it is all fine as it is\"? Dan denk je dat de mail goed is. De mail bevat veel spreektaal, dus hij is te informeel."
+   ],
+   "uh": "Wat is te informeel?",
+   "ctx": "Dear Mr Jones, Thanks for your e-mail. I can't come on Monday because I'm ill. Sorry! Can we meet on Friday instead? Cheers, Anna"
+  },
+  {
+   "v": "Which closing should Anna use at the end of this e-mail?",
+   "o": [
+    "\"Cheers,\"",
+    "\"Yours sincerely,\"",
+    "\"Yours faithfully,\"",
+    "\"Lots of love,\""
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 0,
+   "u": "Mr Jones -> Yours sincerely. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"Cheers,\"? Dan denk je dat cheers past. Het is informeel, en niet voor meneer Jones.",
+    "Klopt: de naam van de lezer is bekend, dus yours sincerely.",
+    "Koos je \"Yours faithfully,\"? Dan denk je dat yours faithfully past. Die hoort bij sir or madam, en niet bij Mr Jones.",
+    "Koos je \"Lots of love,\"? Dan denk je dat lots of love past. Het is voor familie, en niet voor een formele mail."
+   ],
+   "uh": "Welk slot past?",
+   "ctx": "Dear Mr Jones, Thanks for your e-mail. I can't come on Monday because I'm ill. Sorry! Can we meet on Friday instead? Cheers, Anna"
+  },
+  {
+   "v": "How can the second sentence be written formally?",
+   "o": [
+    "\"I can't come on Monday, I'm ill, so sorry!\"",
+    "\"No Monday for me, I'm sick, sorry.\"",
+    "\"Monday is not possible, because I ill.\"",
+    "\"I am afraid I cannot attend on Monday.\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 1,
+   "u": "Volledige vormen, beleefd. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"I can't come on Monday, I'm ill, so sorry!\"? Dan denk je dat deze zin formeel is. Het gebruikt samentrekkingen, en spreektaal.",
+    "Koos je \"No Monday for me, I'm sick, sorry.\"? Dan denk je dat deze zin formeel is. Het is kortaf en informeel, en gebruikt een samentrekking.",
+    "Koos je \"Monday is not possible, because I ill.\"? Dan denk je dat deze zin formeel is. Hij is grammaticaal onjuist, en klinkt vreemd.",
+    "Klopt: geen samentrekkingen en een beleefde formulering."
+   ],
+   "uh": "Hoe schrijf je het formeel?",
+   "ctx": "Dear Mr Jones, Thanks for your e-mail. I can't come on Monday because I'm ill. Sorry! Can we meet on Friday instead? Cheers, Anna"
+  },
+  {
+   "v": "What is the best order of a formal e-mail?",
+   "o": [
+    "greeting, reason for writing, details, closing",
+    "closing, details, reason for writing, greeting",
+    "details, greeting, closing, reason for writing",
+    "reason for writing, closing, greeting, details"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 3,
+   "u": "Groet, doel, details, slot. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: je begint met de groet en het doel en sluit af met het slot.",
+    "Koos je \"closing, details, reason for writing, greeting\"? Dan denk je dat de volgorde omgekeerd kan. Een mail begint met de groet, en eindigt met het slot.",
+    "Koos je \"details, greeting, closing, reason for writing\"? Dan denk je dat de details eerst komen. De lezer wil eerst het doel weten, en dan de details.",
+    "Koos je \"reason for writing, closing, greeting, details\"? Dan denk je dat het doel voor de groet komt. De groet staat altijd vooraan, en het slot staat aan het einde."
+   ],
+   "uh": "Wat is de volgorde?",
+   "ctx": "You write a formal e-mail to a company and you want to put the parts in the best order for the reader. You have: a greeting, the reason for writing, the details and a closing line."
+  },
+  {
+   "v": "Which sentence is best at the end of the e-mail?",
+   "o": [
+    "\"Reply fast, I have no time to wait.\"",
+    "\"I would appreciate a reply soon.\"",
+    "\"Answer me now, please, or else I leave.\"",
+    "\"Write back whenever you want, no stress.\""
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 2,
+   "u": "At your earliest convenience. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"Reply fast, I have no time to wait.\"? Dan denk je dat deze zin past. Het is een bevel, en onbeleefd.",
+    "Klopt: dit is een formele, beleefde manier om om een antwoord te vragen.",
+    "Koos je \"Answer me now, please, or else I leave.\"? Dan denk je dat deze zin past. Het klinkt als een dreigement, en is niet formeel.",
+    "Koos je \"Write back whenever you want, no stress.\"? Dan denk je dat deze zin past. Het is informeel, en klinkt onzakelijk."
+   ],
+   "uh": "Welke slotzin past?",
+   "ctx": "You write a formal e-mail to a hotel to ask about a room. At the end you want to say that you hope for a quick answer, and you must pick the sentence that sounds formal and polite and not demanding."
+  }
+ ],
+ "oe": [
+  {
+   "bron": "Examenstijl",
+   "ctx": "You want to follow a one-week English course in Brighton in the summer. You do not know who works at the school, so you write a formal e-mail. You want to ask about the price, the dates and whether there is a place for you.",
+   "v": "Write the greeting, one sentence that gives the reason for writing and the closing.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Aanhef Dear Sir or Madam (1p). Een zin zoals \"I am writing to ask about your summer course\" (1p). Afsluiting Yours faithfully (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Your English friend Alex has sent you a nice postcard from Wales. You want to thank him in a short informal e-mail and tell him that you hope to visit him next summer. You want to sound warm and friendly.",
+   "v": "Write a short informal e-mail of three sentences.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Informele aanhef zoals Hi Alex (1p). Een bedankje (1p). Een informele zin over een bezoek en afsluiting zoals See you of Cheers (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "You wrote this e-mail to your English teacher Mr Smith: \"Hi, I can't come tomorrow because I'm ill. Cheers.\" Your teacher says that it is too informal for a message to a teacher, so you must rewrite it in a more formal way.",
+   "v": "Rewrite the e-mail formally with a correct greeting and closing.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Aanhef Dear Mr Smith (1p). Formele zin zonder samentrekkingen (1p). Afsluiting Yours sincerely (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "You write a formal letter to a company because you did not receive the book that you ordered two weeks ago. You want to explain what happened and ask the company to send the book quickly in a polite way.",
+   "v": "Write two formal sentences: one that explains the problem and one polite request.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Een formele zin die het probleem noemt (1p). Een beleefde vraag zoals \"I would be grateful if you could send it\" (2p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "You answer an e-mail from your English pen friend Kim. She asked you about your hobbies and your school. You want to answer her in a friendly and informal way, and you want to refer to her message at the start.",
+   "v": "Write an informal opening sentence that refers to her message, and an informal closing.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Een informele verwijzing zoals \"Thanks for your e-mail!\" (2p). Een informele afsluiting zoals \"Write back soon!\" (1p)."
+  }
+ ]
+}
