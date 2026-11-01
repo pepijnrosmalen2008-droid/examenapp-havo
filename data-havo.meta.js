@@ -3089,6 +3089,27 @@ var VAKKEN = [
       "nOe": 5,
       "nBeg": 12,
       "hasSam": true
+     },
+     {
+      "id": "F2",
+      "lo": "en.F.2",
+      "gs": 2,
+      "naam": "Verteller en vertelperspectief",
+      "beschrijving": "Je leert bij een Engels verhaal te bepalen wie er vertelt en hoe: een ik-verteller, een hij- of zij-verteller die één personage volgt, of een alwetende verteller.",
+      "ceStatus": "SE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Verteller en schrijver",
+       "Eerste persoon (ik-verteller)",
+       "Derde persoon beperkt",
+       "Alwetende verteller",
+       "Het perspectief herkennen en het effect"
+      ],
+      "nSv": 27,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
      }
     ]
    }

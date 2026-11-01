@@ -134601,6 +134601,688 @@ var VAKKEN = [
         "u": "Een zin over een roman of boek (1p). Het genre historical fiction genoemd (1p). Een verwijzing naar de pest of Londen (1p)."
        }
       ]
+     },
+     {
+      "id": "F2",
+      "lo": "en.F.2",
+      "gs": 2,
+      "naam": "Verteller en vertelperspectief",
+      "beschrijving": "Je leert bij een Engels verhaal te bepalen wie er vertelt en hoe: een ik-verteller, een hij- of zij-verteller die één personage volgt, of een alwetende verteller.",
+      "ceStatus": "SE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Verteller en schrijver",
+       "Eerste persoon (ik-verteller)",
+       "Derde persoon beperkt",
+       "Alwetende verteller",
+       "Het perspectief herkennen en het effect"
+      ],
+      "sam": "De verteller is de stem die het verhaal vertelt; dat is niet de schrijver. Een ik-verteller is zelf een personage en zegt I en my. Een hij-verteller (derde persoon) schrijft met he en she. Is hij beperkt, dan lees je alleen de gedachten van één personage; is hij alwetend, dan weet hij meer dan alle personages. Soms spreekt de verteller je aan met you. Je herkent het perspectief aan de voornaamwoorden en aan wiens gedachten je leest.",
+      "begrippen": [
+       {
+        "t": "Verteller",
+        "d": "De stem die het verhaal vertelt."
+       },
+       {
+        "t": "Schrijver",
+        "d": "De persoon die het boek bedacht en schreef."
+       },
+       {
+        "t": "Perspectief",
+        "d": "Het standpunt waarmee het verhaal wordt verteld."
+       },
+       {
+        "t": "Ik-verteller",
+        "d": "Een verteller die zelf meedoet en I zegt."
+       },
+       {
+        "t": "Eerste persoon",
+        "d": "Vertellen met I, my en me."
+       },
+       {
+        "t": "Derde persoon",
+        "d": "Vertellen met he, she en they."
+       },
+       {
+        "t": "Beperkte verteller",
+        "d": "Volgt één personage en kent alleen zijn gedachten."
+       },
+       {
+        "t": "Alwetende verteller",
+        "d": "Weet alles over alle personages en de toekomst."
+       },
+       {
+        "t": "Tweede persoon",
+        "d": "De verteller spreekt de lezer aan met you."
+       },
+       {
+        "t": "Gedachten",
+        "d": "Wat een personage denkt of voelt."
+       },
+       {
+        "t": "Betrouwbaarheid",
+        "d": "Of je kunt geloven wat de verteller vertelt."
+       },
+       {
+        "t": "Dagboek",
+        "d": "Een tekst waarin de schrijver in de ik-vorm over zichzelf vertelt."
+       }
+      ],
+      "sv": [
+       {
+        "v": "Who tells the story in a novel?",
+        "o": [
+         "the publisher of the book",
+         "the narrator",
+         "the reader of the book",
+         "the main character, always"
+        ],
+        "c": 1,
+        "d": 1,
+        "s": 0,
+        "u": "Verteller = stem van het verhaal.",
+        "uo": [
+         "Koos je \"the publisher of the book\"? Dan denk je dat de uitgever het verhaal vertelt. De uitgever maakt het boek alleen uit, en vertelt het verhaal zelf niet.",
+         "Klopt: de verteller is de stem die het verhaal aan de lezer vertelt.",
+         "Koos je \"the reader of the book\"? Dan denk je dat de lezer het verhaal vertelt. De lezer ontvangt het verhaal, en wordt er door de verteller mee verteld.",
+         "Koos je \"the main character, always\"? Dan denk je dat de hoofdpersoon altijd vertelt. Dat kan zo zijn bij een ik-verteller, maar niet bij elk verhaal."
+        ],
+        "uh": "Wie vertelt het verhaal?"
+       },
+       {
+        "v": "Which pronoun is typical for a first-person narrator?",
+        "o": [
+         "\"he\" and \"she\"",
+         "\"you\" and \"your\"",
+         "\"they\" and \"them\"",
+         "\"I\""
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 1,
+        "u": "Ik-verteller = I. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"he and she\"? Dan denk je dat he en she bij een ik-verteller horen. Die woorden gebruikt een verteller over anderen, dus ze passen bij de derde persoon.",
+         "Koos je \"you and your\"? Dan denk je dat you bij een ik-verteller hoort. Dat woord noemt de lezer of een ander, en past bij de tweede persoon.",
+         "Koos je \"they and them\"? Dan denk je dat they bij een ik-verteller hoort. Dat woord gaat over een groep, en past bij de derde persoon.",
+         "Klopt: een ik-verteller praat over zichzelf met I, my en me."
+        ],
+        "uh": "Welk voornaamwoord past?"
+       },
+       {
+        "v": "Which pronouns are typical for a third-person narrator?",
+        "o": [
+         "\"he\" and \"she\"",
+         "\"I\" and \"me\"",
+         "\"we\" and \"us\"",
+         "\"you\" and \"your\""
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 2,
+        "u": "Derde persoon = he, she. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: een hij-verteller schrijft over personages als he, she en they.",
+         "Koos je \"I and me\"? Dan denk je dat I en me bij de derde persoon horen. Die woorden gebruikt de ik-verteller over zichzelf, dus ze horen bij de eerste persoon.",
+         "Koos je \"we and us\"? Dan denk je dat we en us bij de derde persoon horen. De verteller hoort dan zelf bij de groep, dus het is een eerste persoon.",
+         "Koos je \"you and your\"? Dan denk je dat you bij de derde persoon hoort. Dat woord spreekt de lezer aan, en past bij de tweede persoon."
+        ],
+        "uh": "Welke voornaamwoorden?"
+       },
+       {
+        "v": "Which narrator knows everything about all characters?",
+        "o": [
+         "a first-person narrator",
+         "a limited narrator",
+         "an omniscient narrator",
+         "a silent narrator"
+        ],
+        "c": 2,
+        "d": 1,
+        "s": 3,
+        "u": "Alwetend = weet alles. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"a first-person narrator\"? Dan denk je dat een ik-verteller alles weet. Hij kent alleen zijn eigen kant, en niet de gedachten van anderen.",
+         "Koos je \"a limited narrator\"? Dan denk je dat een beperkte verteller alles weet. Hij blijft bij één personage, en weet dus niet alles.",
+         "Klopt: een alwetende verteller weet alles over alle personages en de gebeurtenissen.",
+         "Koos je \"a silent narrator\"? Dan denk je dat een stille verteller alles weet. Zo'n verteller bestaat niet als vaste soort, en zegt niets over kennis."
+        ],
+        "uh": "Welke verteller weet alles?"
+       },
+       {
+        "v": "Which term describes the position from which a story is told?",
+        "o": [
+         "the setting of a scene",
+         "the theme of the book",
+         "point of view",
+         "the title of a chapter"
+        ],
+        "c": 2,
+        "d": 1,
+        "s": 0,
+        "u": "Point of view = vertelstandpunt.",
+        "uo": [
+         "Koos je \"the setting of a scene\"? Dan denk je dat de plaats van het verhaal bedoeld wordt. Setting gaat over tijd en plek, en niet over wie vertelt.",
+         "Koos je \"the theme of the book\"? Dan denk je dat het thema bedoeld wordt. Het thema is waar het verhaal over gaat, en zegt niets over de verteller.",
+         "Klopt: het standpunt of de vertelwijze waarmee de verteller de gebeurtenissen laat zien.",
+         "Koos je \"the title of a chapter\"? Dan denk je dat de titel van een hoofdstuk bedoeld wordt. Een titel noemt het onderwerp, en niet de vertelwijze."
+        ],
+        "uh": "Welke term past?"
+       },
+       {
+        "v": "In which point of view does the narrator take part in the story as \"I\"?",
+        "o": [
+         "first person",
+         "third person limited",
+         "omniscient",
+         "second person"
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 1,
+        "u": "Deelnemer + I = eerste persoon.",
+        "uo": [
+         "Klopt: in de eerste persoon is de verteller zelf een personage dat I zegt.",
+         "Koos je \"third person limited\"? Dan denk je dat dit de derde persoon is. De verteller doet dan niet mee, en praat over een personage met he of she.",
+         "Koos je \"omniscient\"? Dan denk je dat dit de alwetende verteller is. Die kent alles van buitenaf, en is geen deelnemer in het verhaal.",
+         "Koos je \"second person\"? Dan denk je dat dit de tweede persoon is. Daarin spreekt de verteller de lezer aan met you, en noemt zichzelf niet I."
+        ],
+        "uh": "Welke vertelwijze past?"
+       },
+       {
+        "v": "Which question helps you find the narrator?",
+        "o": [
+         "How long is the text?",
+         "What is the price of the book?",
+         "Where was the book printed?",
+         "Who is telling this?"
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 4,
+        "u": "Wie vertelt het? Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"How long is the text?\"? Dan denk je dat de lengte van de tekst helpt. De lengte zegt niets over de verteller, dus de vraag brengt je niet verder.",
+         "Koos je \"What is the price of the book?\"? Dan denk je dat de prijs helpt. De prijs hoort bij de uitgave van het boek, en niet bij het verhaal.",
+         "Koos je \"Where was the book printed?\"? Dan denk je dat de drukker helpt. Dat zegt niets over de vertelwijze, dus het is geen vraag over de verteller.",
+         "Klopt: met die vraag zoek je de stem die het verhaal vertelt."
+        ],
+        "uh": "Welke vraag helpt?"
+       },
+       {
+        "v": "Which point of view is used in this fragment?",
+        "o": [
+         "third person limited",
+         "first person",
+         "omniscient",
+         "second person"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 1,
+        "u": "I en my = eerste persoon. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"third person limited\"? Dan denk je dat dit de derde persoon is omdat het over een sleutel gaat. De verteller zegt I, dus hij doet mee in het verhaal.",
+         "Klopt: de verteller zegt I en my en doet zelf mee in het verhaal.",
+         "Koos je \"omniscient\"? Dan denk je dat dit alwetend is omdat het over een geheim gaat. De verteller kent alleen zijn eigen daad, dus hij weet niet alles.",
+         "Koos je \"second person\"? Dan denk je dat dit de tweede persoon is omdat er een lezer is. Er staat geen you in het fragment, maar I en my."
+        ],
+        "uh": "Welke vertelwijze is dit?",
+        "ctx": "Read this fragment: \"I never told anyone about the key. When I found it under the stairs, I put it in my pocket and decided to keep it secret.\""
+       },
+       {
+        "v": "Which point of view is used in this fragment?",
+        "o": [
+         "first person",
+         "omniscient",
+         "second person",
+         "third person limited"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 2,
+        "u": "She + één bewustzijn. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"first person\"? Dan denk je dat dit de eerste persoon is omdat we Lena's gevoelens lezen. De verteller zegt echter she, en niet I.",
+         "Koos je \"omniscient\"? Dan denk je dat dit alwetend is omdat er gedachten staan. Het zijn alleen die van Lena, dus de verteller blijft bij haar.",
+         "Koos je \"second person\"? Dan denk je dat dit de tweede persoon is omdat er een deur wordt geopend. Er staat geen you in de tekst, maar she.",
+         "Klopt: we volgen alleen Lena van buitenaf en lezen alleen haar gedachten."
+        ],
+        "uh": "Welke vertelwijze is dit?",
+        "ctx": "Read this fragment: \"Lena opened the door slowly. She felt that something was wrong, though she could not say why. Her brother, she thought, was hiding something.\""
+       },
+       {
+        "v": "Which point of view is used in this fragment?",
+        "o": [
+         "first person",
+         "omniscient",
+         "third person limited",
+         "second person"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 3,
+        "u": "Weet meer dan de personages. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"first person\"? Dan denk je dat dit de eerste persoon is omdat er een verhaal is. Er staat geen I in de tekst, en de verteller doet niet mee.",
+         "Klopt: de verteller kent de buurman, de broer en de storm die niemand verwacht.",
+         "Koos je \"third person limited\"? Dan denk je dat dit beperkt is omdat Lena genoemd wordt. De verteller kent ook de buurman en de storm, dus hij is niet beperkt.",
+         "Koos je \"second person\"? Dan denk je dat dit de tweede persoon is omdat er een deur is. Er staat geen you in de tekst, dus het is een derde persoon."
+        ],
+        "uh": "Welke vertelwijze is dit?",
+        "ctx": "Read this fragment: \"Lena opened the door slowly. Behind the curtain her brother held his breath, and in the garden the neighbour, who had seen everything, decided to say nothing. None of them knew that a storm would come that night.\""
+       },
+       {
+        "v": "Which words in the fragment show the point of view?",
+        "o": [
+         "\"under the stairs\"",
+         "\"the key\"",
+         "\"I put it in my pocket\"",
+         "\"anyone\""
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 4,
+        "u": "I en my verraden de verteller.",
+        "uo": [
+         "Koos je \"under the stairs\"? Dan denk je dat de plaats het standpunt laat zien. De trap zegt iets over de plek, en niet over de verteller.",
+         "Koos je \"the key\"? Dan denk je dat het voorwerp het standpunt laat zien. Een sleutel is alleen een zaak, en geen aanwijzing voor de verteller.",
+         "Klopt: I en my laten zien dat de verteller zelf spreekt.",
+         "Koos je \"anyone\"? Dan denk je dat dit woord het standpunt laat zien. Anyone is een onbepaald woord, en niet het persoon van de verteller."
+        ],
+        "uh": "Welke woorden laten het zien?",
+        "ctx": "Read this fragment: \"I never told anyone about the key. When I found it under the stairs, I put it in my pocket and decided to keep it secret.\""
+       },
+       {
+        "v": "How do you know that only Lena's thoughts are shown?",
+        "o": [
+         "we only read what Lena feels and thinks",
+         "the narrator says \"I\"",
+         "it is told in the present tense",
+         "her brother speaks in the fragment"
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 2,
+        "u": "Alleen Lena's gedachten. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: de gevoelens en gedachten die we lezen zijn alleen die van Lena.",
+         "Koos je \"the narrator says I\"? Dan denk je dat de verteller I zegt. In het fragment staat she, dus het is een hij- of zij-verteller.",
+         "Koos je \"it is told in the present tense\"? Dan denk je dat de tegenwoordige tijd dit bepaalt. Het fragment staat in de verleden tijd, en de tijd bepaalt de verteller niet.",
+         "Koos je \"her brother speaks in the fragment\"? Dan denk je dat de broer praat. Er is geen dialoog van hem, en alleen Lena's gedachten staan erin."
+        ],
+        "uh": "Hoe weet je dat?",
+        "ctx": "Read this fragment: \"Lena opened the door slowly. She felt that something was wrong, though she could not say why. Her brother, she thought, was hiding something.\""
+       },
+       {
+        "v": "Why is this narrator not limited to Mia?",
+        "o": [
+         "it tells something Mia does not know",
+         "it uses \"she\" instead of \"I\"",
+         "it is written in the past tense",
+         "it mentions a teacher"
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 3,
+        "u": "Weet meer dan Mia. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: de verteller weet iets wat Mia niet weet, dus hij kent meer dan zij.",
+         "Koos je \"it uses she instead of I\"? Dan denk je dat she de verteller onbeperkt maakt. She hoort bij elke derde persoon, ook de beperkte.",
+         "Koos je \"it is written in the past tense\"? Dan denk je dat de verleden tijd de verteller onbeperkt maakt. Dat zegt niets over zijn kennis, want ook beperkte vertellers gebruiken die.",
+         "Koos je \"it mentions a teacher\"? Dan denk je dat een leraar de verteller onbeperkt maakt. Elk verhaal mag een leraar noemen, dus het gaat om wat Mia weet."
+        ],
+        "uh": "Waarom is hij niet beperkt?",
+        "ctx": "In a story, the narrator says: \"Mia was late again. She did not know that her teacher was writing her name on a list at that moment.\" You must decide how much the narrator knows compared with the girl."
+       },
+       {
+        "v": "Who is the narrator?",
+        "o": [
+         "an outside observer",
+         "the author of the book",
+         "Ben, a character in the story",
+         "Ben's mother"
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 1,
+        "u": "Ik = Ben. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"an outside observer\"? Dan denk je dat een buitenstaander vertelt. De verteller zegt I en praat over zijn eigen moeder, dus hij doet zelf mee.",
+         "Koos je \"the author of the book\"? Dan denk je dat de schrijver het vertelt. De verteller is een personage in het verhaal, en niet per se de schrijver.",
+         "Klopt: Ben noemt zichzelf in de eerste persoon en doet mee in het verhaal.",
+         "Koos je \"Ben's mother\"? Dan denk je dat de moeder vertelt. Zij komt voor als iemand die huilt, en Ben zegt I over zichzelf."
+        ],
+        "uh": "Wie is de verteller?",
+        "ctx": "A story begins: \"My name is Ben, and I was twelve when we moved to the coast. I remember that my mother cried in the car.\" You want to know who is speaking in this opening."
+       },
+       {
+        "v": "Who is the narrator?",
+        "o": [
+         "the fifty-year-old author",
+         "Nora",
+         "the publisher",
+         "the reader"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 0,
+        "u": "Verteller is niet de schrijver.",
+        "uo": [
+         "Koos je \"the fifty-year-old author\"? Dan denk je dat de schrijver vertelt omdat hij het boek schreef. De verteller is Nora, en ze is een personage.",
+         "Klopt: de ik in het verhaal is Nora, een verzonnen personage, niet de schrijver.",
+         "Koos je \"the publisher\"? Dan denk je dat de uitgever vertelt. De uitgever geeft het boek uit, maar vertelt het verhaal niet.",
+         "Koos je \"the reader\"? Dan denk je dat de lezer vertelt. De lezer krijgt het verhaal te horen, en verzint het niet zelf."
+        ],
+        "uh": "Wie vertelt?",
+        "ctx": "The author of a novel is a fifty-year-old man, but the novel is told by \"I\", a young girl called Nora, who describes her first year at a new school."
+       },
+       {
+        "v": "Which point of view is used?",
+        "o": [
+         "first person",
+         "third person limited",
+         "omniscient",
+         "second person"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 1,
+        "u": "You = tweede persoon. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"first person\"? Dan denk je dat dit een ik-verteller is. Er staat geen I of my, maar steeds you.",
+         "Koos je \"third person limited\"? Dan denk je dat dit een hij-verteller is. Er staat geen he of she, en de lezer wordt aangesproken.",
+         "Koos je \"omniscient\"? Dan denk je dat dit alwetend is. De verteller weet niets meer dan jij, en spreekt je direct aan.",
+         "Klopt: de verteller spreekt de lezer aan met you, de tweede persoon."
+        ],
+        "uh": "Welke vertelwijze is dit?",
+        "ctx": "Read this fragment: \"You open the door and you see an empty room. You walk to the window and you hear a sound behind you.\" The text speaks directly to someone, and you must name the point of view."
+       },
+       {
+        "v": "Whose thoughts do we read?",
+        "o": [
+         "the teacher's",
+         "Omar's only",
+         "all students'",
+         "the author's"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 3,
+        "u": "Alleen Omar. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"the teacher's\"? Dan denk je dat de leraar zijn gedachten krijgt. De leraar komt niet voor, dus we lezen zijn gedachten niet.",
+         "Klopt: alle gedachten in dit fragment zijn die van Omar en van niemand anders.",
+         "Koos je \"all students'\"? Dan denk je dat alle leerlingen hun gedachten krijgen. Alleen Omar wordt gevolgd, dus de verteller blijft bij hem.",
+         "Koos je \"the author's\"? Dan denk je dat de schrijver zijn eigen gedachten laat horen. Het zijn de gedachten van een personage, en die van Omar zelf."
+        ],
+        "uh": "Wiens gedachten lezen we?",
+        "ctx": "Read this fragment: \"Omar looked at the exam paper. Everything seemed to blur. Why did he not learn more? he asked himself.\" You must decide whose thoughts the narrator lets you read in this short text."
+       },
+       {
+        "v": "What mistake does the student make?",
+        "o": [
+         "author and narrator are not the same",
+         "a murderer cannot tell a story",
+         "Frank cannot be a character",
+         "novels never have a narrator"
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 0,
+        "u": "Verteller is niet de auteur. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: Frank is een verzonnen verteller, de schrijver hoeft niets met hem te maken te hebben.",
+         "Koos je \"a murderer cannot tell a story\"? Dan denk je dat een moordenaar niet kan vertellen. Een verteller kan elk soort personage zijn, dus dat is niet de fout.",
+         "Koos je \"Frank cannot be a character\"? Dan denk je dat Frank geen personage kan zijn. Een ik-verteller is meestal juist een personage, dus ook dat is niet de fout.",
+         "Koos je \"novels never have a narrator\"? Dan denk je dat romans geen verteller hebben. Elk verhaal wordt door een stem verteld, dus dat is onjuist."
+        ],
+        "uh": "Welke fout maakt de leerling?",
+        "ctx": "A student says: \"The author of this novel is a murderer, because the narrator confesses to a murder in the first chapter.\" The narrator is a character called Frank."
+       },
+       {
+        "v": "What does this tell you about the narrator?",
+        "o": [
+         "he knows everything about the thief",
+         "he is a third-person narrator",
+         "he is lying on purpose",
+         "what he tells may not be certain"
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 4,
+        "u": "Ik ziet maar een deel. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"he knows everything about the thief\"? Dan denk je dat hij alles weet. Hij twijfelt zelf en ziet weinig, dus hij weet het niet zeker.",
+         "Koos je \"he is a third-person narrator\"? Dan denk je dat dit een hij-verteller is. Hij zegt I, dus het is de eerste persoon.",
+         "Koos je \"he is lying on purpose\"? Dan denk je dat hij liegt. Hij geeft juist toe dat hij het niet zeker weet, en dat is eerlijk.",
+         "Klopt: hij zegt zelf dat hij in het donker zonder bril zijn zaak niet zeker weet."
+        ],
+        "uh": "Wat zegt dit over de verteller?",
+        "ctx": "Read this fragment: \"I saw the thief run away. At least, I think it was a thief, because it was dark and I had lost my glasses.\""
+       },
+       {
+        "v": "Which point of view fits best?",
+        "o": [
+         "omniscient, because it tells everything",
+         "second person, because it uses \"you\"",
+         "first person or third person limited",
+         "an outside observer with no thoughts"
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 4,
+        "u": "Eén bewustzijn dichtbij. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"omniscient, because it tells everything\"? Dan denk je dat alwetend het beste is. Dan weet de lezer meer dan het meisje, en dat is niet de bedoeling.",
+         "Koos je \"second person, because it uses you\"? Dan denk je dat you de lezer dichtbij brengt. Het gaat om het meisje, en de lezer is niet het personage.",
+         "Klopt: allebei houden de lezer dicht bij het meisje en beperken de kennis tot haar.",
+         "Koos je \"an outside observer with no thoughts\"? Dan denk je dat een waarnemer zonder gedachten past. Dan voelt de lezer niet wat zij voelt, en ze blijft ver weg."
+        ],
+        "uh": "Welke vertelwijze past?",
+        "ctx": "A writer wants the reader to feel close to a nervous girl before an exam, and to know only what the girl herself knows."
+       },
+       {
+        "v": "Why is the student wrong?",
+        "o": [
+         "a narrator can only tell facts about the weather",
+         "the storm is not part of the story",
+         "an omniscient narrator knows more than the characters",
+         "a first-person narrator knows the future"
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 3,
+        "u": "Alwetend = meer dan personages.",
+        "uo": [
+         "Koos je \"a narrator can only tell facts about the weather\"? Dan denk je dat een verteller alleen over het weer vertelt. Een verteller mag elk onderwerp noemen, dus dat is geen beperking.",
+         "Koos je \"the storm is not part of the story\"? Dan denk je dat de storm er niet bij hoort. De storm is nu juist onderdeel van het verhaal, en de verteller kent hem.",
+         "Klopt: een alwetende verteller mag meer weten dan de personages, ook wat nog moet komen.",
+         "Koos je \"a first-person narrator knows the future\"? Dan denk je dat een ik-verteller de toekomst kent. Hier is geen I, en de verteller is alwetend."
+        ],
+        "uh": "Waarom heeft hij ongelijk?",
+        "ctx": "An omniscient narrator says: \"None of them knew that a storm would come that night.\" A student says this is impossible, because a narrator can only tell what the characters know."
+       },
+       {
+        "v": "Why is this narration not first person?",
+        "o": [
+         "the story has a main character",
+         "the narrator shows her thoughts",
+         "the narrator uses the past tense",
+         "the narrator is not a character who says \"I\""
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 2,
+        "u": "She, niet I. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"the story has a main character\"? Dan denk je dat een hoofdpersoon de eerste persoon bepaalt. Elk verhaal kan een hoofdpersoon hebben, ook bij een hij-verteller.",
+         "Koos je \"the narrator shows her thoughts\"? Dan denk je dat het tonen van gedachten de eerste persoon bepaalt. Ook een beperkte verteller toont die, dus dat is geen bewijs.",
+         "Koos je \"the narrator uses the past tense\"? Dan denk je dat de verleden tijd de eerste persoon bepaalt. Elke vertelwijze kan die tijd gebruiken, en de tijd bepaalt de persoon niet.",
+         "Klopt: de verteller noemt het personage she en doet zelf niet mee met I."
+        ],
+        "uh": "Waarom niet eerste persoon?",
+        "ctx": "In a novel, the narrator calls the main character \"she\" and never tells what other characters think. All thoughts shown in the book are hers."
+       },
+       {
+        "v": "Why is a diary usually written in the first person?",
+        "o": [
+         "the writer tells about their own experiences",
+         "a diary is always about other people",
+         "diaries have an omniscient narrator",
+         "diaries are written in the second person"
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 1,
+        "u": "Dagboek = ik. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: in een dagboek vertelt de schrijver over zichzelf, dus met I.",
+         "Koos je \"a diary is always about other people\"? Dan denk je dat een dagboek altijd over anderen gaat. Het gaat vooral over de schrijver, en zo gebruikt hij I.",
+         "Koos je \"diaries have an omniscient narrator\"? Dan denk je dat een dagboek een alwetende verteller heeft. De schrijver weet alleen wat hij zelf meemaakt, en niet alles.",
+         "Koos je \"diaries are written in the second person\"? Dan denk je dat een dagboek je zegt. Het is gericht aan dagboek of aan jezelf, en niet aan jou als lezer."
+        ],
+        "uh": "Waarom eerste persoon?",
+        "ctx": "A diary entry says: \"Dear diary, today I got my results. I was so nervous that I could not eat. Mum says I worry too much.\""
+       },
+       {
+        "v": "What do you change?",
+        "o": [
+         "\"I\" becomes \"you\" and the thoughts change",
+         "\"I\" becomes \"she\" or \"Ayla\"",
+         "add the thoughts of all characters",
+         "the past tense becomes the present tense"
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 2,
+        "u": "Alleen de persoon verandert. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"I becomes you and the thoughts change\"? Dan denk je dat you de derde persoon maakt. Dat is de tweede persoon, en de gedachten moeten juist blijven.",
+         "Klopt: je vervangt I door she of Ayla en laat de gedachten van Ayla zoals ze zijn.",
+         "Koos je \"add the thoughts of all characters\"? Dan denk je dat je alle gedachten toevoegt. Dan wordt de verteller alwetend, en niet beperkt.",
+         "Koos je \"the past tense becomes the present tense\"? Dan denk je dat de tijd verandert. De persoon verandert, niet de tijd, dus dit is geen nodige stap."
+        ],
+        "uh": "Wat verander je?",
+        "ctx": "You must rewrite \"I was scared of the dark\" in the third person limited, about a girl called Ayla, without changing what she feels or thinks."
+       },
+       {
+        "v": "Which point of view is this, and what is the effect?",
+        "o": [
+         "first person, the reader is close to one person",
+         "third person limited, we know one character",
+         "second person, the reader is the hero",
+         "omniscient, the reader knows more than any character"
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 3,
+        "u": "Weet alles = alwetend. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"first person, the reader is close to one person\"? Dan denk je dat de ik-verteller alle gedachten kent. Een ik-verteller kent alleen zichzelf, dus dit past niet.",
+         "Koos je \"third person limited, we know one character\"? Dan denk je dat de verteller bij één personage blijft. Hier worden drie personages gevolgd, dus hij is niet beperkt.",
+         "Koos je \"second person, the reader is the hero\"? Dan denk je dat de lezer de held is. Er wordt over drie personages verteld, en de lezer wordt niet aangesproken.",
+         "Klopt: de verteller kent iedereen en de toekomst, dus de lezer weet meer dan ieder personage."
+        ],
+        "uh": "Welke vertelwijze en welk effect?",
+        "ctx": "In a story about a robbery, the narrator knows what the robber, the guard and the owner think, and also what will happen tomorrow."
+       },
+       {
+        "v": "Which sentence fits your choice?",
+        "o": [
+         "\"I called the dog's name again and again.\"",
+         "\"He called the dog's name again and again.\"",
+         "\"You called the dog's name again and again.\"",
+         "\"They called the dog's name again and again.\""
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 0,
+        "u": "Eerste persoon = I. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: I laat zien dat de jongen zelf vertelt, passend bij de eerste persoon.",
+         "Koos je \"He called the dog's name again and again.\"? Dan denk je dat he bij de eerste persoon past. Dat is de derde persoon, want de jongen vertelt niet zelf.",
+         "Koos je \"You called the dog's name again and again.\"? Dan denk je dat you bij de eerste persoon past. Dat spreekt de lezer aan, en dat is de tweede persoon.",
+         "Koos je \"They called the dog's name again and again.\"? Dan denk je dat they bij de eerste persoon past. Dat gaat over een groep van buiten, dus het is de derde persoon."
+        ],
+        "uh": "Welke zin past?",
+        "ctx": "You write a fragment about a boy who loses his dog. You decide to use the first person, so that the reader can feel what the boy feels."
+       },
+       {
+        "v": "What does the fragment show about the point of view?",
+        "o": [
+         "the narrator knows what her brother thinks",
+         "we know the narrator's secret feelings",
+         "the narrator is outside the story",
+         "the story is told by a teacher"
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 4,
+        "u": "Ik toont eigen gevoelens. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"the narrator knows what her brother thinks\"? Dan denk je dat zij de gedachten van haar broer kent. Ze weet alleen wat hij zegt, en niet wat hij denkt.",
+         "Klopt: de verteller deelt gevoelens die haar broer niet kent, dat is de kracht van de eerste persoon.",
+         "Koos je \"the narrator is outside the story\"? Dan denk je dat de verteller buiten het verhaal staat. Ze zegt I en speelt zelf mee, dus ze is deelnemer.",
+         "Koos je \"the story is told by a teacher\"? Dan denk je dat een leraar vertelt. Er komt geen leraar in het fragment voor, en de ik is een meisje."
+        ],
+        "uh": "Wat laat het fragment zien?",
+        "ctx": "Read this fragment: \"My brother says I was never afraid of the water. That is not true, but I never told him. When I stood at the edge of the pool, my knees shook, and I jumped before anyone could see.\""
+       }
+      ],
+      "oe": [
+       {
+        "bron": "Examenstijl",
+        "ctx": "You read this fragment: \"I never told anyone about the key. When I found it under the stairs, I put it in my pocket and decided to keep it secret.\" Your teacher asks about the narrator.",
+        "v": "Name the point of view and give one reason from the fragment.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Eerste persoon of ik-verteller (1p). Een bewijs, zoals I of my (1p). De verteller doet mee in het verhaal (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "You read this fragment: \"Lena opened the door slowly. She felt that something was wrong, though she could not say why. Her brother, she thought, was hiding something.\" You must describe the narrator.",
+        "v": "Name the point of view and say whose thoughts we read.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Derde persoon beperkt (1p). De gedachten van Lena (1p). Alleen van haar, niet van anderen (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "You read this fragment: \"Lena opened the door slowly. Behind the curtain her brother held his breath, and in the garden the neighbour decided to say nothing. None of them knew that a storm would come that night.\" You must say what makes this narrator special.",
+        "v": "Name the point of view and explain with two details.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Alwetende verteller (1p). Kent meer dan één personage, zoals de broer en de buurman (1p). Weet van de storm die niemand verwacht (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "A student says: \"The author of this book is a thief, because the narrator tells how he steals a bike.\" The narrator is a boy called Sam, who says \"I\" in the book.",
+        "v": "Explain what the student forgets.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Verteller en schrijver zijn niet dezelfde (1p). Sam is een verzonnen personage (1p). De schrijver hoeft niets gedaan te hebben (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "You write the first sentence of a story about a girl who loses her phone. You want the reader to feel what the girl feels and to know only what she knows.",
+        "v": "Write the sentence and name the point of view you used.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Een zin met I of she, passend bij de keuze (1p). Eerste persoon of derde persoon beperkt benoemd (1p). Reden: dichtbij en één personage (1p)."
+       }
+      ]
      }
     ]
    }
