@@ -3067,7 +3067,30 @@ var VAKKEN = [
     "nSv": 174,
     "nOe": 3,
     "nBeg": 39,
-    "hasSam": true
+    "hasSam": true,
+    "leerdoelen": [
+     {
+      "id": "F1",
+      "lo": "en.F.1",
+      "gs": 2,
+      "naam": "Literaire tekstsoorten en genres herkennen",
+      "beschrijving": "Je leert Engelse literaire teksten herkennen en indelen: proza, poëzie en drama, fictie en non-fictie, en genres zoals fantasy, sciencefiction en misdaadverhalen.",
+      "ceStatus": "SE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Proza, poëzie en drama",
+       "Fictie en non-fictie",
+       "Genres herkennen",
+       "Vorm aan een fragment zien",
+       "Een werk indelen en beschrijven"
+      ],
+      "nSv": 27,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
+     }
+    ]
    }
   ]
  },
