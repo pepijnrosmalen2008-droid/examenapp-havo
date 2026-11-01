@@ -135283,6 +135283,688 @@ var VAKKEN = [
         "u": "Een zin met I of she, passend bij de keuze (1p). Eerste persoon of derde persoon beperkt benoemd (1p). Reden: dichtbij en één personage (1p)."
        }
       ]
+     },
+     {
+      "id": "F3",
+      "lo": "en.F.3",
+      "gs": 2,
+      "naam": "Plot, conflict en opbouw van een verhaal",
+      "beschrijving": "Je leert hoe een Engels verhaal is opgebouwd: setting, conflict, begin, hoogtepunt en afloop, en hoe schrijvers spanning maken met flashbacks, hints en tempo.",
+      "ceStatus": "SE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Plot en setting",
+       "Soorten conflict",
+       "Opbouw: van begin tot afloop",
+       "Flashback en foreshadowing",
+       "Spanning opbouwen"
+      ],
+      "sam": "De plot is de volgorde van gebeurtenissen, de setting is tijd en plaats. Een conflict drijft het verhaal: in een personage zelf, tussen personages of tegen de natuur. Een verhaal heeft een begin (exposition), een opbouw, een hoogtepunt (climax) en een afloop (resolution). Een flashback springt terug in de tijd, foreshadowing wijst vooruit met een hint. Spanning (suspense) bouw je op met trage details en korte zinnen.",
+      "begrippen": [
+       {
+        "t": "Plot",
+        "d": "De volgorde van gebeurtenissen in het verhaal."
+       },
+       {
+        "t": "Setting",
+        "d": "De tijd en de plaats waarin het verhaal speelt."
+       },
+       {
+        "t": "Conflict",
+        "d": "De strijd of het probleem dat het verhaal drijft."
+       },
+       {
+        "t": "Exposition",
+        "d": "Het begin waarin je personages en setting leert kennen."
+       },
+       {
+        "t": "Rising action",
+        "d": "De opbouw waarin het probleem groter wordt."
+       },
+       {
+        "t": "Climax",
+        "d": "Het spannendste moment van het verhaal."
+       },
+       {
+        "t": "Falling action",
+        "d": "Het stuk waarin de spanning afneemt."
+       },
+       {
+        "t": "Resolution",
+        "d": "De afloop waarin het verhaal wordt afgesloten."
+       },
+       {
+        "t": "Flashback",
+        "d": "Een sprong terug naar een eerder moment."
+       },
+       {
+        "t": "Foreshadowing",
+        "d": "Een hint over wat later gaat gebeuren."
+       },
+       {
+        "t": "Suspense",
+        "d": "Spanning die de lezer vasthoudt."
+       },
+       {
+        "t": "Innerlijk conflict",
+        "d": "Een strijd in het hoofd van een personage."
+       }
+      ],
+      "sv": [
+       {
+        "v": "Which term describes the order of events in a story?",
+        "o": [
+         "setting",
+         "plot",
+         "theme",
+         "title"
+        ],
+        "c": 1,
+        "d": 1,
+        "s": 0,
+        "u": "Plot = volgorde van gebeurtenissen.",
+        "uo": [
+         "Koos je \"setting\"? Dan denk je dat de setting de volgorde van gebeurtenissen is. De setting gaat over tijd en plaats, en niet over wat er gebeurt.",
+         "Klopt: de plot is de reeks gebeurtenissen die het verhaal vormen.",
+         "Koos je \"theme\"? Dan denk je dat het thema de volgorde is. Het thema is het onderwerp van het verhaal, en geeft geen volgorde.",
+         "Koos je \"title\"? Dan denk je dat de titel de volgorde is. De titel noemt het verhaal alleen, en vertelt geen gebeurtenissen."
+        ],
+        "uh": "Welke term past?"
+       },
+       {
+        "v": "Which term describes the time and place of a story?",
+        "o": [
+         "plot",
+         "conflict",
+         "climax",
+         "setting"
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 0,
+        "u": "Setting = tijd en plaats. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"plot\"? Dan denk je dat de plot tijd en plaats is. De plot is de reeks gebeurtenissen, en niet de omgeving.",
+         "Koos je \"conflict\"? Dan denk je dat het conflict tijd en plaats is. Het conflict is de strijd die het verhaal drijft, en niet de omgeving.",
+         "Koos je \"climax\"? Dan denk je dat de climax tijd en plaats is. De climax is het spannendste moment, en geen omgeving.",
+         "Klopt: de setting is waar en wanneer het verhaal zich afspeelt."
+        ],
+        "uh": "Welke term past?"
+       },
+       {
+        "v": "Which word describes the struggle that drives a story?",
+        "o": [
+         "conflict",
+         "setting",
+         "narrator",
+         "mood"
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 1,
+        "u": "Conflict = strijd. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: het conflict is de strijd of het probleem dat het verhaal in beweging zet.",
+         "Koos je \"setting\"? Dan denk je dat de setting de strijd is. Dat is de plek en tijd, en geen probleem voor een personage.",
+         "Koos je \"narrator\"? Dan denk je dat de verteller de strijd is. De verteller vertelt het verhaal, en is zelf geen probleem.",
+         "Koos je \"mood\"? Dan denk je dat de sfeer de strijd is. De sfeer is hoe een tekst voelt, en is geen botsing."
+        ],
+        "uh": "Welk woord past?"
+       },
+       {
+        "v": "Which part of a story is the most exciting moment?",
+        "o": [
+         "the exposition",
+         "the title",
+         "the climax",
+         "the setting"
+        ],
+        "c": 2,
+        "d": 1,
+        "s": 2,
+        "u": "Climax = hoogtepunt. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"the exposition\"? Dan denk je dat de inleiding het spannendst is. In de inleiding maken we kennis met de personages, en nog niet met het hoogtepunt.",
+         "Koos je \"the title\"? Dan denk je dat de titel het spannendst is. Een titel is alleen een naam, en geen moment in het verhaal.",
+         "Klopt: de climax is het hoogtepunt, het spannendste moment van het verhaal.",
+         "Koos je \"the setting\"? Dan denk je dat de setting het spannendst is. Die beschrijft tijd en plaats, en geen spannend moment."
+        ],
+        "uh": "Welk deel is het spannendst?"
+       },
+       {
+        "v": "Which part of the plot introduces the characters and the setting?",
+        "o": [
+         "the climax",
+         "the resolution",
+         "the exposition",
+         "the falling action"
+        ],
+        "c": 2,
+        "d": 1,
+        "s": 2,
+        "u": "Exposition = begin. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"the climax\"? Dan denk je dat de climax personages introduceert. De climax komt later, als het verhaal op zijn spannendst is.",
+         "Koos je \"the resolution\"? Dan denk je dat de afloop personages introduceert. De afloop komt aan het eind, en sluit het verhaal af.",
+         "Klopt: in de exposition maak je kennis met personages, tijd en plaats.",
+         "Koos je \"the falling action\"? Dan denk je dat de afname van spanning personages introduceert. Die komt na de climax, en is dus niet het begin."
+        ],
+        "uh": "Welk deel is het begin?"
+       },
+       {
+        "v": "Which technique shows a scene from the past?",
+        "o": [
+         "a flashback",
+         "a rhyme",
+         "a stanza",
+         "a title"
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 3,
+        "u": "Flashback = terug in de tijd. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: een flashback springt terug naar een eerder moment in het verhaal.",
+         "Koos je \"a rhyme\"? Dan denk je dat rijm helpt om het verleden te tonen omdat oude verhalen vaak rijmen. Rijm is alleen klank, en geen sprong in de tijd.",
+         "Koos je \"a stanza\"? Dan denk je dat een strofe een herinnering is omdat het een afgesloten blok is. Dat is een groep regels in een gedicht, en zegt niets over tijd.",
+         "Koos je \"a title\"? Dan denk je dat een titel het verleden laat zien omdat die vooraan staat. Een titel noemt het onderwerp, en geeft geen herinnering."
+        ],
+        "uh": "Welke techniek past?"
+       },
+       {
+        "v": "Which feeling does suspense create in the reader?",
+        "o": [
+         "boredom",
+         "sleepiness",
+         "laughter",
+         "tension"
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 4,
+        "u": "Suspense = spanning. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"boredom\"? Dan denk je dat spanning verveling geeft. Spanning houdt je juist bij het verhaal, en laat je niet afhaken.",
+         "Koos je \"sleepiness\"? Dan denk je dat spanning slaperigheid geeft. Spanning maakt je alert, en niet moe.",
+         "Koos je \"laughter\"? Dan denk je dat spanning gelach geeft. Dat is bij humor, en niet bij suspense.",
+         "Klopt: spanning maakt dat je wilt weten wat er gebeurt."
+        ],
+        "uh": "Welk gevoel past?"
+       },
+       {
+        "v": "Which part of the plot is this fragment?",
+        "o": [
+         "the climax",
+         "the exposition",
+         "the resolution",
+         "the rising action"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 2,
+        "u": "Kennismaking = exposition. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"the climax\"? Dan denk je dat dit het hoogtepunt is omdat Jonas een wens heeft. Er gebeurt nog niets spannends, dus dit is het begin.",
+         "Klopt: we leren Jonas, zijn omgeving en zijn wens kennen, dat is het begin.",
+         "Koos je \"the resolution\"? Dan denk je dat dit de afloop is omdat het rustig is. Er is nog niets opgelost, dus het is het begin.",
+         "Koos je \"the rising action\"? Dan denk je dat dit de opbouw is omdat er een wens is. We maken pas kennis met de personages, dus het is nog de introductie."
+        ],
+        "uh": "Welk deel is dit?",
+        "ctx": "Read this fragment: \"Every morning Jonas walked to school along the canal. He lived with his grandmother in a small house, and he wanted to become a famous drummer.\""
+       },
+       {
+        "v": "Which part of the plot is this fragment?",
+        "o": [
+         "the exposition",
+         "the resolution",
+         "the setting",
+         "the climax"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 2,
+        "u": "Dambreuk = hoogtepunt. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"the exposition\"? Dan denk je dat dit het begin is omdat de scène begint met water. Er gebeurt al van alles, dus het is het hoogtepunt.",
+         "Koos je \"the resolution\"? Dan denk je dat dit de afloop is omdat de straat onder water staat. Het probleem is nog niet opgelost, dus het is het hoogtepunt.",
+         "Koos je \"the setting\"? Dan denk je dat dit de setting is omdat er regen is. De nadruk ligt op de gebeurtenis, en niet op de omgeving.",
+         "Klopt: de dam breekt en de straat loopt vol, het spannendste moment."
+        ],
+        "uh": "Welk deel is dit?",
+        "ctx": "Read this fragment: \"The water reached the door. Jonas grabbed the drum and ran into the rain. Behind him the dam broke with a roar, and the whole street was flooded in seconds.\""
+       },
+       {
+        "v": "Which part of the plot is this fragment?",
+        "o": [
+         "the exposition",
+         "the resolution",
+         "the climax",
+         "the conflict"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 2,
+        "u": "Afloop = resolution. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"the exposition\"? Dan denk je dat dit het begin is omdat Jonas speelt. Er is al een probleem geweest, dus dit is de afloop.",
+         "Klopt: het water is weg en de buren ruimen samen op, het verhaal sluit af.",
+         "Koos je \"the climax\"? Dan denk je dat dit het hoogtepunt is omdat Jonas speelt. De dam is al gebroken, dus de spanning is voorbij.",
+         "Koos je \"the conflict\"? Dan denk je dat dit het conflict is omdat het over water gaat. Het water is verdwenen, dus het probleem is opgelost."
+        ],
+        "uh": "Welk deel is dit?",
+        "ctx": "Read this fragment: \"A week later the water had gone. The neighbours cleaned their houses together, and Jonas played a song on his drum for the whole street.\""
+       },
+       {
+        "v": "Which technique does the writer use here?",
+        "o": [
+         "foreshadowing",
+         "a rhyme",
+         "a flashback",
+         "suspense"
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 3,
+        "u": "Ten years earlier = flashback.",
+        "uo": [
+         "Koos je \"foreshadowing\"? Dan denk je dat dit een voorspelling is omdat er een foto is. Er wordt niets over de toekomst gezegd, maar over het verleden.",
+         "Koos je \"a rhyme\"? Dan denk je dat dit rijm is omdat er korte zinnen zijn. Er is geen klankpatroon, dus het is een sprong in de tijd.",
+         "Klopt: Ten years earlier brengt ons terug naar een moment uit Anna's verleden.",
+         "Koos je \"suspense\"? Dan denk je dat dit spanning is omdat er een foto is. Het fragment kijkt terug, en bouwt geen spanning op."
+        ],
+        "uh": "Welke techniek is dit?",
+        "ctx": "Read this fragment: \"Anna looked at the old photo. Ten years earlier, she had stood on the same beach with her father, holding a red kite.\""
+       },
+       {
+        "v": "Which technique does the writer use here?",
+        "o": [
+         "foreshadowing",
+         "a flashback",
+         "a resolution",
+         "a climax"
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 3,
+        "u": "Hint = foreshadowing. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: de visser hint dat er vanavond iets gaat gebeuren.",
+         "Koos je \"a flashback\"? Dan denk je dat dit een terugblik is omdat er een visser is. Het wijst vooruit, niet terug.",
+         "Koos je \"a resolution\"? Dan denk je dat dit de afloop is omdat de visser iets zegt. Het verhaal moet nog verder, dus het is geen afloop.",
+         "Koos je \"a climax\"? Dan denk je dat dit het hoogtepunt is omdat er een storm dreigt. De storm komt nog, en dit is een hint daarop."
+        ],
+        "uh": "Welke techniek is dit?",
+        "ctx": "Read this fragment: \"Ben did not notice the dark clouds on the horizon. The old fisherman shook his head and whispered, 'Tonight the sea will be angry.'\""
+       },
+       {
+        "v": "What kind of conflict is this?",
+        "o": [
+         "a conflict inside Mina",
+         "a fight between two characters",
+         "a fight against nature",
+         "a fight against society"
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 1,
+        "u": "Twijfel = innerlijk conflict. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: Mina twijfelt aan zichzelf, dus het conflict speelt in haar hoofd.",
+         "Koos je \"a fight between two characters\"? Dan denk je dat Mina met een ander vecht. Zij worstelt met haar eigen keuze, en er is geen ruzie met iemand.",
+         "Koos je \"a fight against nature\"? Dan denk je dat er een strijd met natuur is. Er komt geen weer of ramp voor, maar een keuze in Mina zelf.",
+         "Koos je \"a fight against society\"? Dan denk je dat het een strijd met de samenleving is. Het gaat om haar vrienden, en vooral om haar eigen twijfel."
+        ],
+        "uh": "Welk conflict is dit?",
+        "ctx": "Read this fragment: \"Mina wanted to tell the truth about the broken window, but she was afraid that her friends would stop talking to her. All night she turned in bed and could not decide.\""
+       },
+       {
+        "v": "What kind of conflict is this?",
+        "o": [
+         "an inner conflict in one person",
+         "a conflict with nature itself",
+         "a conflict between characters",
+         "a conflict with time"
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 1,
+        "u": "Ruzie = tussen personages. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"an inner conflict in one person\"? Dan denk je dat de broers met zichzelf worstelen. Ze schreeuwen tegen elkaar, dus het conflict zit tussen hen.",
+         "Koos je \"a conflict with nature itself\"? Dan denk je dat er een strijd met natuur is. De boerderij is de aanleiding, maar de ruzie is tussen personen.",
+         "Klopt: de broers botsen met elkaar over de boerderij.",
+         "Koos je \"a conflict with time\"? Dan denk je dat er tijdsdruk is. Dat staat niet in het fragment, en de broers ruziën gewoon."
+        ],
+        "uh": "Welk conflict is dit?",
+        "ctx": "Read this fragment: \"The two brothers both wanted the family farm. One night they stood in the yard and shouted at each other, until their father came out and ordered them to stop.\""
+       },
+       {
+        "v": "How does the writer build suspense in this fragment?",
+        "o": [
+         "by explaining the end at once",
+         "by slowing down the scene",
+         "by describing the weather",
+         "by adding a rhyme"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 4,
+        "u": "Kort en traag = spanning. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"by explaining the end at once\"? Dan denk je dat het einde wordt verklapt. Het fragment houdt juist alles vast, en maakt je nieuwsgierig.",
+         "Klopt: korte zinnen en trage details, zoals de klink die draait, houden je in spanning.",
+         "Koos je \"by describing the weather\"? Dan denk je dat het weer spanning geeft. Er staat niets over het weer, maar over voetstappen en een deur.",
+         "Koos je \"by adding a rhyme\"? Dan denk je dat rijm spanning geeft. Er is geen rijm in dit fragment, en spanning komt van het tempo."
+        ],
+        "uh": "Hoe bouwt hij spanning op?",
+        "ctx": "Read this fragment: \"The footsteps came closer. Sam held his breath. Slowly the handle of the door began to turn, and the light in the hall went out.\""
+       },
+       {
+        "v": "Which two things does this fragment show about the setting?",
+        "o": [
+         "theme and tone",
+         "plot and mood",
+         "narrator and genre",
+         "time and place"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 0,
+        "u": "Datum en stad = setting. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"theme and tone\"? Dan denk je dat thema en toon hier staan. Dat zijn onderwerp en sfeer, en niet waar en wanneer.",
+         "Koos je \"plot and mood\"? Dan denk je dat plot en sfeer hier staan. Er gebeurt nog niets, en de plaats en tijd zijn het belangrijkst.",
+         "Koos je \"narrator and genre\"? Dan denk je dat verteller en genre hier staan. Daarover zegt het fragment niets, maar wel over tijd en plaats.",
+         "Klopt: de datum en de plaats vormen samen de setting van het verhaal."
+        ],
+        "uh": "Wat toont het fragment?",
+        "ctx": "Read this fragment: \"On the tenth of May the market square of Leiden was empty, and the clock struck noon.\""
+       },
+       {
+        "v": "Which part of the plot is part 4?",
+        "o": [
+         "the exposition",
+         "the climax",
+         "the resolution",
+         "the setting"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 2,
+        "u": "Onweer en deur = climax. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"the exposition\"? Dan denk je dat dit de introductie is omdat Lisa wordt genoemd. De introductie staat eerder in het verhaal, en dit deel is het hoogtepunt.",
+         "Klopt: het onweer, de dichte deur en de gedoofde lamp vormen het spannendste moment.",
+         "Koos je \"the resolution\"? Dan denk je dat dit de afloop is omdat Lisa haar hond vindt. Het probleem is nog niet opgelost, want ze zitten opgesloten.",
+         "Koos je \"the setting\"? Dan denk je dat dit alleen de setting is omdat er een schuur is. Er gebeurt veel meer, dus het draait om het hoogtepunt."
+        ],
+        "uh": "Welk deel is dit?",
+        "ctx": "Part 4 of a story: \"During a thunderstorm Lisa finds her dog in a barn, and the barn door falls shut behind them. The wind is howling and the lamp goes out.\" Earlier parts introduce Lisa and her search; the last part ends with them going home."
+       },
+       {
+        "v": "Why is the student wrong?",
+        "o": [
+         "a conflict can be inside someone",
+         "a conflict is only about the weather",
+         "a conflict needs three characters",
+         "a conflict is the title of the story"
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 1,
+        "u": "Conflict kan innerlijk zijn. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: de strijd kan ook in een personage zelf zitten, zoals twijfel tussen angst en wens.",
+         "Koos je \"a conflict is only about the weather\"? Dan denk je dat een conflict alleen om het weer gaat. Het weer is er één voorbeeld van, en er zijn meer soorten.",
+         "Koos je \"a conflict needs three characters\"? Dan denk je dat een conflict drie personages nodig heeft. Eén personage kan al een conflict hebben, dus dat is niet nodig.",
+         "Koos je \"a conflict is the title of the story\"? Dan denk je dat een conflict de titel is. De titel noemt het verhaal, en is geen strijd."
+        ],
+        "uh": "Waarom heeft de leerling ongelijk?",
+        "ctx": "A student says: \"A conflict always means that two people fight.\" Your teacher then reads a story in which a girl is afraid to speak in class, but she really wants to join the debating team."
+       },
+       {
+        "v": "Which event is the climax?",
+        "o": [
+         "event 1, the move to a new town",
+         "event 2, the bike thefts begin",
+         "event 4, the new friendship",
+         "event 3, catching the thief"
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 2,
+        "u": "Betrappen = hoogtepunt. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"event 1, the move to a new town\"? Dan denk je dat de verhuizing het hoogtepunt is. Dat is het begin van het verhaal, en geeft de situatie.",
+         "Koos je \"event 2, the bike thefts begin\"? Dan denk je dat de fietsendiefstal het hoogtepunt is. Het probleem is er dan pas, en de spanning loopt nog op.",
+         "Koos je \"event 4, the new friendship\"? Dan denk je dat de vriendschap het hoogtepunt is. Dat gebeurt na het spannendste moment, dus het hoort bij de afloop.",
+         "Klopt: de achtervolging en het betrappen van de dief vormen het spannendste punt."
+        ],
+        "uh": "Welke gebeurtenis is de climax?",
+        "ctx": "A story has these events: (1) The family moves to a new town. (2) Eli finds out that someone steals bikes. (3) Eli catches the thief in the park during a chase. (4) Eli and the thief become friends."
+       },
+       {
+        "v": "What do we call the mention of the key in chapter one?",
+        "o": [
+         "a flashback",
+         "a resolution",
+         "foreshadowing",
+         "a setting"
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 3,
+        "u": "Sleutel vooraf = hint. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"a flashback\"? Dan denk je dat de sleutel een terugblik is. Er wordt niet teruggesprongen, maar vooruit gewezen.",
+         "Koos je \"a resolution\"? Dan denk je dat de sleutel de afloop is. Hij komt pas in hoofdstuk één voor, en lost niets op.",
+         "Klopt: de sleutel en de waarschuwing hinten naar wat later gaat gebeuren.",
+         "Koos je \"a setting\"? Dan denk je dat de sleutel de setting is. Het is een voorwerp met een rol, en geen tijd of plaats."
+        ],
+        "uh": "Welke term past?",
+        "ctx": "In chapter one a writer mentions a rusty key in a drawer and a warning from an old neighbour: \"Never open that door.\" In chapter ten the key opens a secret door in the cellar."
+       },
+       {
+        "v": "What is the function of the chapter set in 2010?",
+        "o": [
+         "it is the climax of the book",
+         "it is the resolution of the plot",
+         "a flashback about her past",
+         "it is foreshadowing of the funeral"
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 3,
+        "u": "Terug naar 2010 = flashback. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"it is the climax of the book\"? Dan denk je dat dit hoofdstuk het hoogtepunt is. Het is een rustige herinnering, en niet het spannendste moment.",
+         "Koos je \"it is the resolution of the plot\"? Dan denk je dat dit de afloop is. Het verhaal gaat daarna door, dus het is geen einde.",
+         "Klopt: de terugblik laat zien waarom Zoe haar oma mist.",
+         "Koos je \"it is foreshadowing of the funeral\"? Dan denk je dat het vooruitwijst naar de begrafenis. De begrafenis is al gebeurd, en het hoofdstuk kijkt terug."
+        ],
+        "uh": "Wat is de functie?",
+        "ctx": "A novel starts in 2020 with Zoe at her grandmother's funeral. The next chapter shows Zoe as a girl of seven, in 2010, baking cookies with her grandmother. Then the story returns to 2020."
+       },
+       {
+        "v": "Which version builds more suspense, and why?",
+        "o": [
+         "A, because it is shorter",
+         "A, because it tells everything at once",
+         "Neither, because they say the same",
+         "B, because it slows down with details"
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 4,
+        "u": "Details vertragen = spanning. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"A, because it is shorter\"? Dan denk je dat korter altijd spannender is. Versie A vertelt alles meteen, en laat geen spanning opbouwen.",
+         "Koos je \"A, because it tells everything at once\"? Dan denk je dat alles vertellen spanning geeft. Dan is er niets meer om te raden, en de spanning is weg.",
+         "Koos je \"Neither, because they say the same\"? Dan denk je dat beide gelijk zijn. De details in B maken een groot verschil, dus de spanning is anders.",
+         "Klopt: de trage details en het geluid maken dat je gespannen blijft."
+        ],
+        "uh": "Welke versie is spannender?",
+        "ctx": "Two versions of the same scene. Version A: \"He walked into the room and saw the box.\" Version B: \"He walked slowly into the dark room. The floor creaked. In the corner, half hidden, stood a box with a lock.\""
+       },
+       {
+        "v": "What kind of main conflict is this?",
+        "o": [
+         "a conflict with nature",
+         "an inner conflict",
+         "a conflict with technology",
+         "a conflict with the narrator"
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 1,
+        "u": "Droogte = natuur. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: het dorp strijdt tegen de droogte, een natuurkracht.",
+         "Koos je \"an inner conflict\"? Dan denk je dat het conflict in één persoon zit. Het gaat om een dorp en de droogte, en niet om één twijfelend personage.",
+         "Koos je \"a conflict with technology\"? Dan denk je dat het om machines gaat. Er staat niets over technologie, maar over het weer.",
+         "Koos je \"a conflict with the narrator\"? Dan denk je dat het dorp tegen de verteller strijdt. De verteller vertelt alleen, en is geen tegenstander."
+        ],
+        "uh": "Welk conflict is dit?",
+        "ctx": "In a story, a village tries to survive a long drought. The farmers argue about the last water, but the main struggle of the village is against the weather that will not change."
+       },
+       {
+        "v": "What is the role of this chapter?",
+        "o": [
+         "it is the exposition",
+         "the resolution, the end",
+         "it is the climax",
+         "it is a flashback"
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 2,
+        "u": "Later = afloop. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"it is the exposition\"? Dan denk je dat het hoofdstuk het begin is. Het speelt drie jaar later, en sluit het verhaal juist af.",
+         "Klopt: het hoofdstuk toont de gevolgen en sluit het verhaal rustig af.",
+         "Koos je \"it is the climax\"? Dan denk je dat het hoofdstuk het hoogtepunt is. De overstroming was het hoogtepunt, en dit is erna.",
+         "Koos je \"it is a flashback\"? Dan denk je dat het hoofdstuk een terugblik is. Het springt vooruit, en niet naar het verleden."
+        ],
+        "uh": "Wat is de rol?",
+        "ctx": "After the climax, the writer adds a short chapter: three years later Jonas plays in a band, and the street still talks about the night of the flood."
+       },
+       {
+        "v": "Which sentence is the exposition?",
+        "o": [
+         "\"A flood threatens the street.\"",
+         "\"He saves the drum while the street is flooded.\"",
+         "\"In the end the neighbours clean up together.\"",
+         "\"Jonas lives with his grandmother.\""
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 0,
+        "u": "Eerste zin = exposition. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"A flood threatens the street.\"? Dan denk je dat de dreiging het begin is. Dat is de opbouw naar het conflict, dus de introductie is een eerdere zin.",
+         "Koos je \"He saves the drum while the street is flooded.\"? Dan denk je dat deze zin de introductie is. Dit is het hoogtepunt, en komt later in het verhaal.",
+         "Koos je \"In the end the neighbours clean up together.\"? Dan denk je dat de laatste zin de introductie is. Dat is de afloop, en staat aan het eind van het verhaal.",
+         "Klopt: de zin introduceert Jonas en zijn omgeving, dat is het begin."
+        ],
+        "uh": "Welke zin is de exposition?",
+        "ctx": "Marco writes a plot summary: \"Jonas lives with his grandmother. A flood threatens the street. He saves the drum while the street is flooded. In the end the neighbours clean up together.\" His teacher asks him to point out the exposition."
+       },
+       {
+        "v": "Which words show the time and the place?",
+        "o": [
+         "\"May\" and \"Leiden\"",
+         "\"empty\" and \"struck\"",
+         "\"was\" and \"the clock\"",
+         "\"the\" and \"of\""
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 0,
+        "u": "Datum en stad = setting. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: de datum is de tijd en Leiden is de plaats van het verhaal.",
+         "Koos je \"empty and struck\"? Dan denk je dat deze woorden de setting zijn. Het zijn eigenschappen en een handeling, maar geen tijd of plaats.",
+         "Koos je \"was and the clock\"? Dan denk je dat deze woorden de setting zijn. Ze zijn een hulpwerkwoord en een voorwerp, en noemen geen plaats.",
+         "Koos je \"the and of\"? Dan denk je dat deze woorden de setting zijn. Het zijn gewone lidwoorden en voorzetsels, die niets over tijd of plaats zeggen."
+        ],
+        "uh": "Welke woorden tonen de setting?",
+        "ctx": "A teacher asks: \"Which words in this fragment show the setting?\" The fragment reads: \"On the tenth of May the market square of Leiden was empty, and the clock struck noon.\""
+       },
+       {
+        "v": "How can you improve the scene?",
+        "o": [
+         "tell the ending at once",
+         "add slow details he sees and hears",
+         "use more rhyme in every sentence",
+         "make the scene even shorter"
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 4,
+        "u": "Details = spanning. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"tell the ending at once\"? Dan denk je dat het einde direct vertellen spanning geeft. Dan is er niets meer om te weten, en de spanning verdwijnt.",
+         "Klopt: trage details over wat hij ziet en hoort laten de spanning opbouwen.",
+         "Koos je \"use more rhyme in every sentence\"? Dan denk je dat rijm spanning geeft. Rijm hoort bij gedichten, en maakt de scène niet spannender.",
+         "Koos je \"make the scene even shorter\"? Dan denk je dat korter spannender is. Dan is er geen opbouw, en de lezer voelt niets."
+        ],
+        "uh": "Hoe verbeter je de scène?",
+        "ctx": "You write a scary scene and want to build suspense. Your draft says: \"It was a dark house. There was a noise. He was scared. The end.\""
+       }
+      ],
+      "oe": [
+       {
+        "bron": "Examenstijl",
+        "ctx": "You read this fragment: \"Every morning Jonas walked to school along the canal. He lived with his grandmother in a small house, and he wanted to become a famous drummer.\" Your teacher asks about the plot.",
+        "v": "Name the part of the plot and give two things the fragment tells the reader.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "De exposition of het begin (1p). We leren Jonas of zijn omgeving kennen (1p). Zijn wens of leven met zijn oma (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "You read this fragment: \"Mina wanted to tell the truth about the broken window, but she was afraid that her friends would stop talking to her. All night she turned in bed and could not decide.\" Your teacher asks what drives the story.",
+        "v": "Name the kind of conflict and explain your answer.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Een innerlijk conflict (1p). Mina twijfelt tussen waarheid en angst (1p). De strijd zit in haar zelf (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "In chapter one of a novel a rusty key lies in a drawer and an old neighbour says: \"Never open that door.\" In chapter ten the key opens a secret door in the cellar. A student asks why the writer mentioned the key so early.",
+        "v": "Name the technique and explain its effect on the reader.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Foreshadowing (1p). Een hint op wat later gebeurt (1p). De lezer wordt nieuwsgierig of gespannen (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "A novel starts in 2020 with Zoe at her grandmother's funeral. The next chapter shows Zoe at seven years old in 2010, baking cookies with her grandmother. Then the story returns to 2020.",
+        "v": "Name the technique and explain what it adds to the story.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Flashback (1p). Een sprong terug in de tijd (1p). Het verklaart Zoe's gevoelens of haar band met oma (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "You write a scary scene. Your first draft says: \"It was a dark house. There was a noise. He was scared. The end.\" Your teacher says that the scene needs more suspense.",
+        "v": "Give two ways to build suspense in the scene.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Trage details van wat hij ziet of hoort (1p). Het einde niet meteen vertellen (1p). Korte zinnen of een dreigend geluid gebruiken (1p)."
+       }
+      ]
      }
     ]
    }

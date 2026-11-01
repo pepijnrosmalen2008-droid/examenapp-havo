@@ -3110,6 +3110,27 @@ var VAKKEN = [
       "nOe": 5,
       "nBeg": 12,
       "hasSam": true
+     },
+     {
+      "id": "F3",
+      "lo": "en.F.3",
+      "gs": 2,
+      "naam": "Plot, conflict en opbouw van een verhaal",
+      "beschrijving": "Je leert hoe een Engels verhaal is opgebouwd: setting, conflict, begin, hoogtepunt en afloop, en hoe schrijvers spanning maken met flashbacks, hints en tempo.",
+      "ceStatus": "SE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Plot en setting",
+       "Soorten conflict",
+       "Opbouw: van begin tot afloop",
+       "Flashback en foreshadowing",
+       "Spanning opbouwen"
+      ],
+      "nSv": 27,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
      }
     ]
    }
