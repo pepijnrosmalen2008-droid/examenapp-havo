@@ -1,0 +1,682 @@
+{
+ "id": "F6",
+ "lo": "en.F.6",
+ "gs": 2,
+ "naam": "Je leeservaring beargumenteerd verwoorden",
+ "beschrijving": "Je leert in het Engels vertellen wat je van een boek vindt: een korte samenvatting, een mening met redenen, voorbeelden en citaten, een vergelijking en een aanbeveling.",
+ "ceStatus": "SE",
+ "binas": "",
+ "val": "",
+ "onderwerpen": [
+  "Samenvatten wat je las",
+  "Mening met reden",
+  "Voorbeelden en citaten",
+  "Vergelijken en contrast",
+  "Opbouw en afsluiting van een leesverslag"
+ ],
+ "sam": "Een leesverslag begint met titel, schrijver en genre, daarna een korte samenvatting zonder het einde te verklappen. Dan geef je je mening met een reden (because) en een voorbeeld (for example) of een citaat uit het boek. Met both en but vergelijk je boeken, met however zet je punten tegenover elkaar. Je sluit af met een oordeel en een aanbeveling. Een mening zonder reden is zwak, een feit kun je controleren.",
+ "begrippen": [
+  {
+   "t": "Leesverslag",
+   "d": "Een verslag over wat je van een boek vindt."
+  },
+  {
+   "t": "Samenvatting",
+   "d": "Een korte weergave van de inhoud."
+  },
+  {
+   "t": "Mening",
+   "d": "Wat jij van het boek vindt."
+  },
+  {
+   "t": "Feit",
+   "d": "Iets wat je in het boek kunt controleren."
+  },
+  {
+   "t": "Reden",
+   "d": "Waarom je iets vindt, met because."
+  },
+  {
+   "t": "Voorbeeld",
+   "d": "Een gebeurtenis uit het boek die je mening bewijst."
+  },
+  {
+   "t": "Citaat",
+   "d": "Een zin die je letterlijk uit het boek overneemt."
+  },
+  {
+   "t": "Genre",
+   "d": "De soort boek, zoals fantasy of thriller."
+  },
+  {
+   "t": "Vergelijken",
+   "d": "Gelijkenissen en verschillen tussen boeken noemen."
+  },
+  {
+   "t": "Contrast",
+   "d": "Een punt tegenover een ander punt zetten, met however."
+  },
+  {
+   "t": "Aanbeveling",
+   "d": "Een advies over voor wie het boek geschikt is."
+  },
+  {
+   "t": "Spoiler",
+   "d": "Het einde verklappen aan iemand die het nog niet las."
+  }
+ ],
+ "sv": [
+  {
+   "v": "Which part of a book report tells what the book is about?",
+   "o": [
+    "the opinion, with your reasons",
+    "the summary",
+    "the title page of the book",
+    "the price of the book"
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 0,
+   "u": "Samenvatting = inhoud. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"the opinion, with your reasons\"? Dan denk je dat de mening vertelt waar het boek over gaat. De mening zegt wat jij ervan vindt, en niet wat er in het verhaal staat.",
+    "Klopt: in de samenvatting vertel je kort waar het boek over gaat.",
+    "Koos je \"the title page of the book\"? Dan denk je dat de titelpagina vertelt waar het boek over gaat. Die noemt alleen titel en schrijver, en zegt niets over de inhoud.",
+    "Koos je \"the price of the book\"? Dan denk je dat de prijs vertelt waar het boek over gaat. De prijs is een los gegeven, en hoort niet in de inhoud."
+   ],
+   "uh": "Welk deel vertelt waar het over gaat?"
+  },
+  {
+   "v": "Which word introduces a reason for your opinion?",
+   "o": [
+    "although, a small contrast",
+    "however, a different point",
+    "finally, the last point",
+    "because"
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 1,
+   "u": "Because = reden. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"although, a small contrast\"? Dan denk je dat although een reden inleidt. Although zet iets tegenover elkaar, en geeft geen reden.",
+    "Koos je \"however, a different point\"? Dan denk je dat however een reden inleidt. Het begint een tegenstelling, en geeft geen reden.",
+    "Koos je \"finally, the last point\"? Dan denk je dat finally een reden inleidt. Het geeft aan dat iets als laatste komt, en geeft geen reden.",
+    "Klopt: because leidt een reden in, zoals I liked it because it was exciting."
+   ],
+   "uh": "Welk woord geeft een reden?"
+  },
+  {
+   "v": "Which words introduce an example from the book?",
+   "o": [
+    "\"for example\"",
+    "\"in conclusion, then\"",
+    "\"on the other hand\"",
+    "\"as a result of that\""
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 2,
+   "u": "For example = voorbeeld. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: for example kondigt een voorbeeld uit het boek aan.",
+    "Koos je \"in conclusion, then\"? Dan denk je dat in conclusion een voorbeeld inleidt. Het leidt de afsluiting in, en geeft geen voorbeeld.",
+    "Koos je \"on the other hand\"? Dan denk je dat on the other hand een voorbeeld inleidt. Het zet een tegenovergesteld punt neer, en geeft geen voorbeeld.",
+    "Koos je \"as a result of that\"? Dan denk je dat as a result een voorbeeld inleidt. Het geeft een gevolg, en geen voorbeeld."
+   ],
+   "uh": "Welke woorden geven een voorbeeld?"
+  },
+  {
+   "v": "Which sentence gives an opinion?",
+   "o": [
+    "\"The book has three hundred pages.\"",
+    "\"The book is about a fox in winter.\"",
+    "\"I think the book is too long.\"",
+    "\"The story takes place in a village.\""
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 1,
+   "u": "I think = mening. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"The book has three hundred pages.\"? Dan denk je dat dit een mening is. Het aantal pagina's is een feit, en je kunt het natellen.",
+    "Koos je \"The book is about a fox in winter.\"? Dan denk je dat dit een mening is. Het vertelt waar het boek over gaat, en dat is een feit.",
+    "Klopt: I think en too long zijn een persoonlijke mening.",
+    "Koos je \"The story takes place in a village.\"? Dan denk je dat dit een mening is. Een plaats in het verhaal is een feit, en geen oordeel."
+   ],
+   "uh": "Welke zin is een mening?"
+  },
+  {
+   "v": "Which word shows a contrast?",
+   "o": [
+    "because, a reason",
+    "for example, an example",
+    "however",
+    "so, a result"
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 3,
+   "u": "However = tegenstelling. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"because, a reason\"? Dan denk je dat because een tegenstelling aangeeft. Het geeft een reden, en dat is iets anders.",
+    "Koos je \"for example, an example\"? Dan denk je dat for example een tegenstelling aangeeft. Het geeft een voorbeeld, en zet niets tegenover elkaar.",
+    "Klopt: however zet een tegengesteld punt neer, zoals It is slow, however the ending is great.",
+    "Koos je \"so, a result\"? Dan denk je dat so een tegenstelling aangeeft. Het geeft een gevolg, en niet een verschil."
+   ],
+   "uh": "Welk woord toont een tegenstelling?"
+  },
+  {
+   "v": "Which sentence is a good ending for a book report?",
+   "o": [
+    "\"I recommend this book.\"",
+    "\"The end of the story.\"",
+    "\"I do not know what to say.\"",
+    "\"Page three hundred and one.\""
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 4,
+   "u": "Afsluiting = aanbeveling. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: de zin sluit af met een aanbeveling voor andere lezers.",
+    "Koos je \"The end of the story.\"? Dan denk je dat het woord end de afsluiting van een verslag is. Het zegt niets over het boek, en geeft geen aanbeveling.",
+    "Koos je \"I do not know what to say.\"? Dan denk je dat dit een goede afsluiting is. Je laat de lezer met niets achter, en geeft geen mening.",
+    "Koos je \"Page three hundred and one.\"? Dan denk je dat een paginanummer een goede afsluiting is. Het is alleen een getal, en het zegt niets over het boek."
+   ],
+   "uh": "Welke zin sluit goed af?"
+  },
+  {
+   "v": "Which information belongs in a short summary of a book?",
+   "o": [
+    "every single sentence of each chapter",
+    "what the cover of the book looks like",
+    "where you bought the book last week",
+    "main characters and events"
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 0,
+   "u": "Hoofdpersonen en hoofdzaken. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"every single sentence of each chapter\"? Dan denk je dat een samenvatting alles herhaalt. Dat is te lang, en dan is het geen samenvatting meer.",
+    "Koos je \"what the cover of the book looks like\"? Dan denk je dat de kaft in een samenvatting hoort. De kaft zegt niets over het verhaal, en geen over de inhoud.",
+    "Koos je \"where you bought the book last week\"? Dan denk je dat de winkel in een samenvatting hoort. Dat is een persoonlijk detail, en geen deel van het verhaal.",
+    "Klopt: een samenvatting noemt de hoofdpersonen en de belangrijkste gebeurtenissen."
+   ],
+   "uh": "Wat hoort in een samenvatting?"
+  },
+  {
+   "v": "Which part of a book report is this?",
+   "o": [
+    "a recommendation",
+    "a summary",
+    "a quotation",
+    "a title"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 0,
+   "u": "Waar gaat het over = samenvatting.",
+   "uo": [
+    "Koos je \"a recommendation\"? Dan denk je dat dit een aanbeveling is omdat het positief klinkt. De zinnen geven geen advies, maar vertellen de inhoud.",
+    "Klopt: de zinnen vertellen kort waar het boek over gaat en wie de hoofdpersoon is.",
+    "Koos je \"a quotation\"? Dan denk je dat dit een citaat is omdat er een titel staat. Er staat geen zin uit het boek zelf, maar een eigen samenvatting.",
+    "Koos je \"a title\"? Dan denk je dat dit een titel is omdat het boek wordt genoemd. De zinnen zijn te lang voor een titel, en geven een verhaal weer."
+   ],
+   "uh": "Welk deel is dit?",
+   "ctx": "Read this part of a book report written by a student: \"I read The Winter Fox, a fantasy novel. It is about a girl who finds a talking fox in the snow and travels with him to find her lost brother.\" Read the text carefully and think about what the writer of the report does in these sentences."
+  },
+  {
+   "v": "Which words give the reason for the opinion?",
+   "o": [
+    "\"I liked the book\"",
+    "\"in chapter three\"",
+    "\"crosses the frozen lake\"",
+    "\"because the main character is brave\""
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 1,
+   "u": "Because = reden. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"I liked the book\"? Dan denk je dat dit de reden is. Dit is de mening zelf, en de reden volgt daarna.",
+    "Koos je \"in chapter three\"? Dan denk je dat dit de reden is. Het noemt alleen waar iets gebeurt, en is een plaats in het boek.",
+    "Koos je \"crosses the frozen lake\"? Dan denk je dat dit de reden is. Het is een voorbeeld van haar moed, en geen reden op zich.",
+    "Klopt: na because staat de reden waarom de schrijfster het boek leuk vond."
+   ],
+   "uh": "Welke woorden zijn de reden?",
+   "ctx": "Read this part of a book report written by a student: \"I liked the book because the main character is brave. For example, in chapter three she crosses the frozen lake alone to save the fox.\" Read the text carefully and think about what the writer of the report does in these sentences."
+  },
+  {
+   "v": "Which words give an example from the book?",
+   "o": [
+    "\"I liked the book\"",
+    "\"in chapter three she crosses the frozen lake alone\"",
+    "\"the main character is brave\"",
+    "\"to save the fox\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 2,
+   "u": "Gebeurtenis = voorbeeld. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"I liked the book\"? Dan denk je dat dit een voorbeeld is. Het is de mening, en geen gebeurtenis uit het boek.",
+    "Klopt: dit is een gebeurtenis uit het boek die de moed van de hoofdpersoon laat zien.",
+    "Koos je \"the main character is brave\"? Dan denk je dat dit een voorbeeld is. Het is de reden zelf, en nog geen gebeurtenis.",
+    "Koos je \"to save the fox\"? Dan denk je dat dit een voorbeeld is. Het geeft alleen het doel, en niet de scène zelf."
+   ],
+   "uh": "Welke woorden zijn het voorbeeld?",
+   "ctx": "Read this part of a book report written by a student: \"I liked the book because the main character is brave. For example, in chapter three she crosses the frozen lake alone to save the fox.\" Read the text carefully and think about what the writer of the report does in these sentences."
+  },
+  {
+   "v": "Why is this opinion weak?",
+   "o": [
+    "it is too long",
+    "it is a summary of the book",
+    "it gives no reasons",
+    "it uses difficult words"
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 1,
+   "u": "Mening zonder reden is zwak. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"it is too long\"? Dan denk je dat de mening te lang is. De tekst is juist kort, en het probleem is dat er geen reden staat.",
+    "Koos je \"it is a summary of the book\"? Dan denk je dat dit een samenvatting is. Er staat niets over de inhoud, alleen een oordeel.",
+    "Klopt: er staat geen because of voorbeeld, dus de lezer weet niet waarom het goed is.",
+    "Koos je \"it uses difficult words\"? Dan denk je dat de woorden moeilijk zijn. De zinnen zijn heel simpel, maar er staat geen reden bij."
+   ],
+   "uh": "Waarom is de mening zwak?",
+   "ctx": "Read this part of a book report written by a student after a lesson about opinions: \"The book is good. I like it. Everyone should read it.\" Read the text carefully and think about what the writer of the report does in these sentences."
+  },
+  {
+   "v": "Which word introduces a contrasting point?",
+   "o": [
+    "\"However\"",
+    "\"because\"",
+    "\"too fast\"",
+    "\"disappointing\""
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 3,
+   "u": "However = tegenstelling. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: however zet na een negatief punt een positief punt tegenover elkaar.",
+    "Koos je \"because\"? Dan denk je dat because een tegenstelling inleidt. Het geeft een reden voor het oordeel, en zet niets tegenover elkaar.",
+    "Koos je \"too fast\"? Dan denk je dat deze woorden het contrast brengen omdat ze negatief zijn. Het is alleen een beschrijving van het slot, en geen verbindingswoord.",
+    "Koos je \"disappointing\"? Dan denk je dat dit woord het tweede punt inleidt omdat het sterk klinkt. Het is een oordeel over het slot, en verbindt geen twee zinnen."
+   ],
+   "uh": "Welk woord toont contrast?",
+   "ctx": "Read this part of a book report written by a student: \"The ending was disappointing, because everything was solved too fast. However, the characters stayed interesting until the last page.\" Read the text carefully and think about what the writer of the report does in these sentences."
+  },
+  {
+   "v": "What does the writer do in this fragment?",
+   "o": [
+    "compares two books",
+    "summarises one book",
+    "gives a quotation",
+    "tells the ending of the story"
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 3,
+   "u": "Both en but = vergelijken. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: both en but laten zien wat de twee boeken gemeen hebben en waarin ze verschillen.",
+    "Koos je \"summarises one book\"? Dan denk je dat het één boek samenvat. Er worden twee boeken genoemd, en geen verhaal verteld.",
+    "Koos je \"gives a quotation\"? Dan denk je dat er een citaat staat. Er staat geen zin uit een boek, alleen een eigen vergelijking.",
+    "Koos je \"tells the ending of the story\"? Dan denk je dat het einde verteld wordt. Er wordt niets over het einde gezegd, maar over de aard van de boeken."
+   ],
+   "uh": "Wat doet de schrijver?",
+   "ctx": "Read this part of a report that a student wrote about two books: \"Both books are about friendship, but the first is funny and the second is serious.\" Read the text carefully and think about what the writer of the report does in these sentences."
+  },
+  {
+   "v": "Is this a good structure?",
+   "o": [
+    "no, the opinion must come first",
+    "no, the recommendation must be at the start",
+    "yes, it is a clear order",
+    "no, a summary should be left out of it"
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 4,
+   "u": "Gegevens, inhoud, mening, advies.",
+   "uo": [
+    "Koos je \"no, the opinion must come first\"? Dan denk je dat de mening eerst moet. Dan weet de lezer nog niet waar het over gaat, dus de samenvatting staat beter eerst.",
+    "Koos je \"no, the recommendation must be at the start\"? Dan denk je dat de aanbeveling vooraan hoort. Die volgt pas na je mening, en past aan het eind.",
+    "Klopt: het verslag gaat van gegevens naar inhoud, mening en aanbeveling.",
+    "Koos je \"no, a summary should be left out of it\"? Dan denk je dat de samenvatting weg moet. Zonder samenvatting begrijpt de lezer je mening niet, dus hij hoort erin."
+   ],
+   "uh": "Is de opbouw goed?",
+   "ctx": "A student writes a book report in this order: first the title and the writer, then what the book is about, then her opinion with two reasons and an example, and last a recommendation for other readers."
+  },
+  {
+   "v": "What is this called?",
+   "o": [
+    "a summary",
+    "a quotation",
+    "a recommendation",
+    "a title"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 2,
+   "u": "Letterlijk overgenomen = citaat.",
+   "uo": [
+    "Koos je \"a summary\"? Dan denk je dat dit een samenvatting is. Een samenvatting geeft de inhoud in eigen woorden, en hier staan letterlijke woorden.",
+    "Klopt: een citaat is een zin die je letterlijk uit het boek overneemt.",
+    "Koos je \"a recommendation\"? Dan denk je dat dit een aanbeveling is. Het is een zin uit het boek, en geen advies aan de lezer.",
+    "Koos je \"a title\"? Dan denk je dat dit een titel is. Een titel staat boven een tekst, en deze zin staat in hoofdstuk vijf."
+   ],
+   "uh": "Hoe heet dit?",
+   "ctx": "The student wants to support her opinion with something from the book. She chooses a short sentence from chapter five in which the hero says: \"I will never give up.\" She puts quotation marks around the sentence."
+  },
+  {
+   "v": "Which sentence has all three?",
+   "o": [
+    "\"I liked the book a lot.\"",
+    "\"The story is about a girl and a fox.\"",
+    "\"The fox was brave and kind.\"",
+    "\"The Winter Fox\" by Ella Brown is a fantasy novel."
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 0,
+   "u": "Titel, schrijver, genre. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"I liked the book a lot.\"? Dan denk je dat deze zin alles noemt. Hij geeft alleen een mening, en geen titel of genre.",
+    "Koos je \"The story is about a girl and a fox.\"? Dan denk je dat deze zin alles noemt. Hij noemt de inhoud, maar geen titel, schrijver of genre.",
+    "Koos je \"The fox was brave and kind.\"? Dan denk je dat deze zin alles noemt. Hij beschrijft alleen een personage, en geen titel of genre.",
+    "Klopt: de zin noemt de titel, de schrijver en het genre."
+   ],
+   "uh": "Welke zin heeft alle drie?",
+   "ctx": "Your teacher asks for the genre, the title and the writer of the book in the first sentence of your report. You want to be sure that your sentence contains all three of them."
+  },
+  {
+   "v": "Which sentence is a balanced recommendation?",
+   "o": [
+    "\"Everybody must read it at once.\"",
+    "\"I liked the adventure, but the ending is too fast.\"",
+    "\"Never read this book at all.\"",
+    "\"It is a book with some pages.\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 4,
+   "u": "Sterk en zwak punt = balans. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"Everybody must read it at once.\"? Dan denk je dat een overdreven aanbeveling goed is. Je noemt dan geen zwak punt, en je bent niet eerlijk.",
+    "Klopt: de zin noemt een sterk punt en een zwak punt.",
+    "Koos je \"Never read this book at all.\"? Dan denk je dat een afkeuring eerlijk is. Je noemt dan geen sterk punt, terwijl je het avontuur leuk vond.",
+    "Koos je \"It is a book with some pages.\"? Dan denk je dat dit een aanbeveling is. De zin zegt niets over je mening, en helpt je vriend niet."
+   ],
+   "uh": "Welke zin is een eerlijk advies?",
+   "ctx": "A friend asks if he should read your book. You liked the adventure, but you found the ending too fast, and you want to give him honest advice that is also fair to the writer."
+  },
+  {
+   "v": "Which opinion is better, and why?",
+   "o": [
+    "B, because it gives a reason",
+    "A, because it is shorter",
+    "A, because it is stronger",
+    "B, because it has more words"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 1,
+   "u": "Reden maakt de mening sterk. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: B zegt waarom het boek saai is, zodat de lezer het kan controleren.",
+    "Koos je \"A, because it is shorter\"? Dan denk je dat korter altijd beter is. Een korte mening zonder reden helpt de lezer niet, en is dus zwak.",
+    "Koos je \"A, because it is stronger\"? Dan denk je dat een kort oordeel sterker is. Zonder reden is het alleen een bewering, dus het overtuigt niet.",
+    "Koos je \"B, because it has more words\"? Dan denk je dat meer woorden altijd beter is. Het gaat om de reden, en niet om het aantal woorden."
+   ],
+   "uh": "Welke mening is beter?",
+   "ctx": "A student writes two opinions about the same book. Opinion A: \"The book is boring.\" Opinion B: \"The book is boring, because the first fifty pages only describe the weather and nothing happens.\""
+  },
+  {
+   "v": "What should she add?",
+   "o": [
+    "a longer title for the report",
+    "the price of the book",
+    "a picture of the writer",
+    "an example from the book"
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 2,
+   "u": "Voorbeeld onderbouwt. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"a longer title for the report\"? Dan denk je dat een langere titel haar mening onderbouwt. Een titel geeft geen bewijs, en overtuigt de lezer niet.",
+    "Koos je \"the price of the book\"? Dan denk je dat de prijs helpt. De prijs zegt niets over de held, en is geen bewijs.",
+    "Koos je \"a picture of the writer\"? Dan denk je dat een foto van de schrijver helpt. Dat is niet het boek zelf, en bewijst niets over de held.",
+    "Klopt: een voorbeeld laat zien waar de moed van de held uit blijkt."
+   ],
+   "uh": "Wat moet ze toevoegen?",
+   "ctx": "A student says that the hero of a novel is very brave, but she gives no example and no quotation from the book. Her teacher says that the statement is not yet convincing for a reader who did not read the book."
+  },
+  {
+   "v": "What is wrong with this summary?",
+   "o": [
+    "it has too few details",
+    "it is missing an opinion",
+    "it is too long and gives away the ending",
+    "it is about two different books"
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 0,
+   "u": "Kort en geen spoilers. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"it has too few details\"? Dan denk je dat er te weinig details zijn. Er zijn juist veel te veel, dus de samenvatting is te lang.",
+    "Koos je \"it is missing an opinion\"? Dan denk je dat er een mening in moet. Een samenvatting geeft alleen inhoud, en de mening staat apart.",
+    "Klopt: een samenvatting is kort en verklapt het einde niet.",
+    "Koos je \"it is about two different books\"? Dan denk je dat het over twee boeken gaat. Er staat één roman in, alleen veel te lang verteld."
+   ],
+   "uh": "Wat is er mis?",
+   "ctx": "A student's summary of a novel has thirty sentences. It retells every chapter in detail and gives away the ending in full, so a reader no longer needs to read the book."
+  },
+  {
+   "v": "Which sentence compares them well?",
+   "o": [
+    "\"Both books are books.\"",
+    "\"The thriller has a nice cover.\"",
+    "\"Both books are about a secret, but the thriller is fast and the family story is calm.\"",
+    "\"I read them last week.\""
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 3,
+   "u": "Gelijk en verschil noemen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"Both books are books.\"? Dan denk je dat dit een vergelijking is. De zin zegt niets bijzonders, en noemt geen verschil.",
+    "Koos je \"The thriller has a nice cover.\"? Dan denk je dat dit een vergelijking is. Er wordt maar één boek genoemd, en de kaft zegt niets over de inhoud.",
+    "Klopt: de zin noemt wat ze delen en waarin ze verschillen.",
+    "Koos je \"I read them last week.\"? Dan denk je dat dit een vergelijking is. De zin zegt alleen wanneer je las, en vergelijkt niets."
+   ],
+   "uh": "Welke zin vergelijkt goed?",
+   "ctx": "You read two books by different writers: one is a fast thriller and the other is a calm family story. You want to compare them in one sentence in your report and show what they share and what is different."
+  },
+  {
+   "v": "Which sentence is a fact and not an opinion?",
+   "o": [
+    "\"The story is the best of the year.\"",
+    "\"The story is too sad.\"",
+    "\"The story is beautiful.\"",
+    "\"The story is set in winter.\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 1,
+   "u": "Controleerbaar = feit. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"The story is the best of the year.\"? Dan denk je dat dit een feit is. Beste van het jaar is een oordeel, en niet te controleren.",
+    "Koos je \"The story is too sad.\"? Dan denk je dat dit een feit is. Te triest is wat jij vindt, en niet wat je kunt nagaan.",
+    "Koos je \"The story is beautiful.\"? Dan denk je dat dit een feit is. Mooi is een smaak, en geen controleerbaar feit.",
+    "Klopt: waar het verhaal speelt kun je in het boek controleren, dus het is een feit."
+   ],
+   "uh": "Welke zin is een feit?",
+   "ctx": "A teacher says: \"An opinion is not a fact.\" In a report a student writes: \"The book is the best of the year\", and she gives no evidence. The teacher asks her to find a sentence that is a fact."
+  },
+  {
+   "v": "Which ending is stronger?",
+   "o": [
+    "\"I give it four stars because the characters feel real.\"",
+    "\"I do not know what to say.\"",
+    "\"That is all about it.\"",
+    "\"Thanks for reading my text.\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 4,
+   "u": "Oordeel met reden. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: de zin geeft een oordeel met een reden, wat het einde sterker maakt.",
+    "Koos je \"I do not know what to say.\"? Dan denk je dat dit een goed einde is. Het geeft geen oordeel, en laat de lezer met niets achter.",
+    "Koos je \"That is all about it.\"? Dan denk je dat dit een goed einde is. Het zegt niets over het boek, en geeft geen mening.",
+    "Koos je \"Thanks for reading my text.\"? Dan denk je dat een bedankje genoeg is. Het is beleefd, maar geeft geen oordeel over het boek."
+   ],
+   "uh": "Welk einde is sterker?",
+   "ctx": "A student ends her report with just \"The end.\" Her teacher says that the ending of a report should tell the reader what she thinks of the book and who might like it, in one or two clear sentences."
+  },
+  {
+   "v": "What does the word \"however\" show?",
+   "o": [
+    "a reason for the first point",
+    "a contrast between two points",
+    "an example of the plot of the book",
+    "the order in time"
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 3,
+   "u": "However = contrast. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"a reason for the first point\"? Dan denk je dat however een reden geeft. Een reden begint met because, en however zet punten tegenover elkaar.",
+    "Klopt: however zet het zwakke punt tegenover het sterke punt.",
+    "Koos je \"an example of the plot of the book\"? Dan denk je dat however een voorbeeld geeft. Een voorbeeld begint met for example, en dit is een tegenstelling.",
+    "Koos je \"the order in time\"? Dan denk je dat however een volgorde aangeeft. Dat zou first of then zijn, en dit woord geeft contrast."
+   ],
+   "uh": "Wat laat het woord zien?",
+   "ctx": "In one paragraph a student writes: \"The plot is exciting. However, the dialogue is flat.\" She wants her reader to see that she values the book, but also sees a weakness."
+  },
+  {
+   "v": "Why is this quotation useful?",
+   "o": [
+    "it tells the ending of the story",
+    "it gives the number of pages",
+    "it names the writer of the book",
+    "it shows how the writer describes the village"
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 2,
+   "u": "Citaat toont beschrijving. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"it tells the ending of the story\"? Dan denk je dat het citaat het einde vertelt. Het gaat over de huizen, en niet over het slot.",
+    "Koos je \"it gives the number of pages\"? Dan denk je dat het citaat een paginanummer geeft. Het is een zin uit het boek, en geen getal.",
+    "Koos je \"it names the writer of the book\"? Dan denk je dat het citaat de schrijver noemt. De schrijver staat er niet in, en de zin beschrijft huizen.",
+    "Klopt: het citaat laat zien hoe de schrijver het dorp beschrijft, met een vergelijking."
+   ],
+   "uh": "Waarom is het citaat nuttig?",
+   "ctx": "A student wants to show that the writer describes the village in detail. She quotes: \"The houses leaned against each other like tired old men.\" She wants her reader to understand why she chose this sentence."
+  },
+  {
+   "v": "What must Maya say about each work?",
+   "o": [
+    "her opinion with reasons",
+    "only the number of pages",
+    "only the age of the writer",
+    "only the price of the book"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 0,
+   "u": "Mening met redenen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: bij elk werk geeft ze haar mening met redenen en een voorbeeld.",
+    "Koos je \"only the number of pages\"? Dan denk je dat het aantal pagina's genoeg is. Dat is een feit, en zegt niets over haar leeservaring.",
+    "Koos je \"only the age of the writer\"? Dan denk je dat de leeftijd van de schrijver genoeg is. Dat is een bijzaak, en geen leeservaring.",
+    "Koos je \"only the price of the book\"? Dan denk je dat de prijs genoeg is. Dat is een los feit, en zegt niets over haar mening."
+   ],
+   "uh": "Wat moet ze zeggen?",
+   "ctx": "Maya read three works this year: a fantasy novel, a book of poems and a play. Her teacher asks her to report on her reading experience with all three works, in English."
+  },
+  {
+   "v": "Which sentence is best?",
+   "o": [
+    "\"I read it.\"",
+    "\"I read a historical novel about London in 1665, and I liked it because it felt real.\"",
+    "\"It was about history.\"",
+    "\"I did not like it.\""
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 4,
+   "u": "Genre, onderwerp en reden. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"I read it.\"? Dan denk je dat dit genoeg is. De zin noemt geen genre of reden, en zegt bijna niets.",
+    "Klopt: de zin noemt het genre, het onderwerp en een reden.",
+    "Koos je \"It was about history.\"? Dan denk je dat dit genoeg is. De zin noemt geen reden of mening, en het onderwerp is vaag.",
+    "Koos je \"I did not like it.\"? Dan denk je dat dit genoeg is. Het geeft een oordeel zonder reden, en past niet bij het boek dat je leuk vond."
+   ],
+   "uh": "Welke zin is het best?",
+   "ctx": "You write the first sentence of a report about a historical novel that you liked. Your teacher wants the sentence to name the kind of book, what it is about, and one reason why you liked it."
+  }
+ ],
+ "oe": [
+  {
+   "bron": "Examenstijl",
+   "ctx": "You read this part of a book report: \"I liked the book because the main character is brave. For example, in chapter three she crosses the frozen lake alone to save the fox.\" Your teacher asks how the student supports her opinion.",
+   "v": "Name the opinion, the reason and the example.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "De mening: ze vond het boek leuk (1p). De reden: de hoofdpersoon is dapper (1p). Het voorbeeld: ze steekt in hoofdstuk drie het ijs alleen over (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "You read this part of a book report: \"The book is good. I like it. Everyone should read it.\" Your teacher says that the opinion is not yet convincing for someone who has not read the book.",
+   "v": "Say what is missing and write an improved sentence.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Er ontbreekt een reden of voorbeeld (1p). Een zin met because of for example (1p). De zin noemt iets uit het boek (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "You write a report about two books. The first is a fast thriller and the second is a calm family story, but both are about a secret. Your teacher wants you to compare them in your report.",
+   "v": "Write a sentence that compares the two books.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Een gelijkenis genoemd, zoals een geheim (1p). Het verschil genoemd, zoals snel en rustig (1p). Een passend woord als both of but (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "A student writes: \"The plot is exciting. However, the dialogue is flat.\" Your teacher wants you to explain how the student builds this part of the report and what the word however does.",
+   "v": "Explain what however shows and give the two points of the student.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "However toont een tegenstelling (1p). Het sterke punt is de spannende plot (1p). Het zwakke punt is de vlakke dialoog (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "You must end a report about a historical novel that you liked. The novel is set in London in 1665 and its characters feel real. Your teacher wants a strong ending that helps other readers decide.",
+   "v": "Write an ending with an opinion, a reason and a recommendation.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Een oordeel, zoals ik vond het goed (1p). Een reden, zoals de personages voelen echt (1p). Een aanbeveling voor een lezer (1p)."
+  }
+ ]
+}

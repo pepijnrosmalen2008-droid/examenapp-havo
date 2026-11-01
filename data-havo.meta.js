@@ -3173,6 +3173,27 @@ var VAKKEN = [
       "nOe": 5,
       "nBeg": 12,
       "hasSam": true
+     },
+     {
+      "id": "F6",
+      "lo": "en.F.6",
+      "gs": 2,
+      "naam": "Je leeservaring beargumenteerd verwoorden",
+      "beschrijving": "Je leert in het Engels vertellen wat je van een boek vindt: een korte samenvatting, een mening met redenen, voorbeelden en citaten, een vergelijking en een aanbeveling.",
+      "ceStatus": "SE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Samenvatten wat je las",
+       "Mening met reden",
+       "Voorbeelden en citaten",
+       "Vergelijken en contrast",
+       "Opbouw en afsluiting van een leesverslag"
+      ],
+      "nSv": 27,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
      }
     ]
    }
