@@ -1,0 +1,686 @@
+{
+ "id": "F4",
+ "lo": "en.F.4",
+ "gs": 2,
+ "naam": "Personages, thema en symboliek",
+ "beschrijving": "Je leert personages beschrijven (hoofdpersoon, tegenstander, verandering, karakterisering) en de boodschap van een Engels verhaal vinden via thema, symbool, sfeer en toon.",
+ "ceStatus": "SE",
+ "binas": "",
+ "val": "",
+ "onderwerpen": [
+  "Hoofdpersoon en tegenstander",
+  "Soorten personages",
+  "Karakteriseren: direct en indirect",
+  "Thema, motief en symbool",
+  "Sfeer en toon"
+ ],
+ "sam": "De protagonist is de hoofdpersoon, de antagonist de tegenstander. Een dynamisch personage verandert, een statisch personage niet; een rond personage is complex, een plat personage heeft één eigenschap. De verteller kan een personage direct beschrijven (arrogant) of indirect laten zien via daden en woorden. Het thema is de boodschap van het verhaal; een symbool is een voorwerp dat voor een idee staat en een motief komt steeds terug. De mood is de sfeer, de tone de houding van de schrijver.",
+ "begrippen": [
+  {
+   "t": "Protagonist",
+   "d": "De hoofdpersoon van het verhaal."
+  },
+  {
+   "t": "Antagonist",
+   "d": "De tegenstander van de hoofdpersoon."
+  },
+  {
+   "t": "Dynamisch personage",
+   "d": "Een personage dat verandert door het verhaal."
+  },
+  {
+   "t": "Statisch personage",
+   "d": "Een personage dat hetzelfde blijft."
+  },
+  {
+   "t": "Rond personage",
+   "d": "Een complex personage met meer kanten."
+  },
+  {
+   "t": "Plat personage",
+   "d": "Een personage met één eigenschap."
+  },
+  {
+   "t": "Directe karakterisering",
+   "d": "De verteller noemt de eigenschap zelf."
+  },
+  {
+   "t": "Indirecte karakterisering",
+   "d": "Je leest de eigenschap af uit daden en woorden."
+  },
+  {
+   "t": "Thema",
+   "d": "De boodschap of kern van het verhaal."
+  },
+  {
+   "t": "Symbool",
+   "d": "Een voorwerp dat voor een idee staat."
+  },
+  {
+   "t": "Motief",
+   "d": "Een element dat steeds terugkomt."
+  },
+  {
+   "t": "Mood",
+   "d": "De sfeer die de tekst oproept."
+  },
+  {
+   "t": "Tone",
+   "d": "De houding van de schrijver tegenover het onderwerp."
+  }
+ ],
+ "sv": [
+  {
+   "v": "Who is the main character of a story?",
+   "o": [
+    "the antagonist, the rival",
+    "the protagonist",
+    "the narrator, the voice",
+    "the author"
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 0,
+   "u": "Protagonist = hoofdpersoon. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"the antagonist, the rival\"? Dan denk je dat de antagonist de hoofdpersoon is. Dat is de tegenstander, en niet de held van het verhaal.",
+    "Klopt: de protagonist is de hoofdpersoon om wie het verhaal draait.",
+    "Koos je \"the narrator, the voice\"? Dan denk je dat de verteller de hoofdpersoon is. De verteller vertelt alleen, en hoeft niet de held te zijn.",
+    "Koos je \"the author\"? Dan denk je dat de schrijver de hoofdpersoon is. De schrijver zit buiten het verhaal, en is geen personage."
+   ],
+   "uh": "Wie is de hoofdpersoon?"
+  },
+  {
+   "v": "Who works against the protagonist?",
+   "o": [
+    "the narrator of the story",
+    "the reader of the book",
+    "the author of the book",
+    "the antagonist"
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 0,
+   "u": "Antagonist = tegenstander. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"the narrator of the story\"? Dan denk je dat de verteller de tegenstander is. De verteller vertelt het verhaal, en werkt niemand tegen.",
+    "Koos je \"the reader of the book\"? Dan denk je dat de lezer de tegenstander is. De lezer leest het verhaal, en is geen personage.",
+    "Koos je \"the author of the book\"? Dan denk je dat de schrijver de tegenstander is. De schrijver bedenkt het verhaal, en komt er zelf niet in voor.",
+    "Klopt: de antagonist is de tegenstander die de protagonist dwarszit."
+   ],
+   "uh": "Wie werkt de held tegen?"
+  },
+  {
+   "v": "Which word describes a character who changes during the story?",
+   "o": [
+    "dynamic",
+    "static, not changing",
+    "absent from the story",
+    "silent in class"
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 1,
+   "u": "Dynamisch = verandert. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: een dynamisch personage verandert door wat er in het verhaal gebeurt.",
+    "Koos je \"static, not changing\"? Dan denk je dat static een veranderend personage is omdat het op een beweging lijkt. Static blijft juist hetzelfde, dus het is het tegenovergestelde.",
+    "Koos je \"absent from the story\"? Dan denk je dat absent iets met verandering te maken heeft omdat iemand dan weg is. Het betekent afwezig, en zegt niets over ontwikkeling.",
+    "Koos je \"silent in class\"? Dan denk je dat silent bij verandering hoort omdat het personage rustiger wordt. Het betekent stil, en dat is geen ontwikkeling."
+   ],
+   "uh": "Welk woord past?"
+  },
+  {
+   "v": "Which word describes a character who stays the same?",
+   "o": [
+    "dynamic",
+    "round",
+    "static",
+    "changing"
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 1,
+   "u": "Statisch = blijft gelijk. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"dynamic\"? Dan denk je dat dynamic hetzelfde blijft. Dynamic verandert juist, dus het is het tegenovergestelde.",
+    "Koos je \"round\"? Dan denk je dat round hetzelfde blijft. Round betekent complex met veel kanten, en zegt niets over verandering.",
+    "Klopt: een statisch personage blijft hetzelfde van begin tot eind.",
+    "Koos je \"changing\"? Dan denk je dat changing hetzelfde blijft. Changing betekent veranderend, dus dat is het omgekeerde."
+   ],
+   "uh": "Welk woord past?"
+  },
+  {
+   "v": "Which word means the main message of a story?",
+   "o": [
+    "plot",
+    "setting",
+    "theme",
+    "title"
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 2,
+   "u": "Thema = boodschap. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"plot\"? Dan denk je dat de plot de boodschap is. De plot is de volgorde van gebeurtenissen, en is geen boodschap.",
+    "Koos je \"setting\"? Dan denk je dat de setting de boodschap is. De setting is tijd en plaats, en geen boodschap.",
+    "Klopt: het thema is de kern of boodschap waar het verhaal over gaat.",
+    "Koos je \"title\"? Dan denk je dat de titel de boodschap is. Een titel noemt het verhaal, maar is geen boodschap."
+   ],
+   "uh": "Welk woord past?"
+  },
+  {
+   "v": "Which word means an object that stands for an idea?",
+   "o": [
+    "a symbol",
+    "a rhyme",
+    "a stanza",
+    "a setting"
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 3,
+   "u": "Symbool = staat voor een idee.",
+   "uo": [
+    "Klopt: een symbool is een voorwerp dat staat voor een idee, zoals een duif voor vrede.",
+    "Koos je \"a rhyme\"? Dan denk je dat rijm een voorwerp is dat voor een idee staat. Rijm is een klankpatroon, en geen voorwerp.",
+    "Koos je \"a stanza\"? Dan denk je dat een strofe voor een idee staat. Een strofe is een groep regels, en geen voorwerp.",
+    "Koos je \"a setting\"? Dan denk je dat de setting voor een idee staat. Die geeft tijd en plaats, en zegt niets over een idee."
+   ],
+   "uh": "Welk woord past?"
+  },
+  {
+   "v": "Which word means the feeling or atmosphere of a text?",
+   "o": [
+    "plot",
+    "conflict",
+    "theme",
+    "mood"
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 4,
+   "u": "Mood = sfeer. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"plot\"? Dan denk je dat de plot de sfeer is. De plot is de volgorde van gebeurtenissen, en niet de sfeer.",
+    "Koos je \"conflict\"? Dan denk je dat het conflict de sfeer is. Dat is de strijd in het verhaal, en geen sfeer.",
+    "Koos je \"theme\"? Dan denk je dat het thema de sfeer is. Dat is de boodschap, en zegt niets over de sfeer.",
+    "Klopt: de mood is de sfeer die de tekst bij de lezer oproept."
+   ],
+   "uh": "Welk woord past?"
+  },
+  {
+   "v": "Who is the antagonist in this fragment?",
+   "o": [
+    "Lucy",
+    "Mark",
+    "the teacher",
+    "the prize"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 0,
+   "u": "Mark werkt tegen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"Lucy\"? Dan denk je dat Lucy de tegenstander is. Zij wil winnen, en is de hoofdpersoon.",
+    "Klopt: Mark werkt Lucy tegen door haar aantekeningen te verstoppen.",
+    "Koos je \"the teacher\"? Dan denk je dat de leraar de tegenstander is. De leraar komt niet voor, dus het is Mark.",
+    "Koos je \"the prize\"? Dan denk je dat de prijs de tegenstander is. Een prijs is geen personage, dus hij kan niets tegenwerken."
+   ],
+   "uh": "Wie is de antagonist?",
+   "ctx": "Read this fragment: \"Lucy wants to win the science prize. Her rival Mark hides her notes so that she will lose, and he smiles when she cannot find them.\""
+  },
+  {
+   "v": "Which word describes Hana directly?",
+   "o": [
+    "\"best at everything\"",
+    "\"never listened\"",
+    "\"spoke\"",
+    "\"arrogant\""
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 1,
+   "u": "Verteller noemt eigenschap. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"best at everything\"? Dan denk je dat deze woorden de verteller zijn. Het is wat Hana zegt, dus het toont haar indirect.",
+    "Koos je \"never listened\"? Dan denk je dat deze woorden een eigenschap noemen. Het is wat ze doet, en dat is indirect.",
+    "Koos je \"spoke\"? Dan denk je dat dit woord haar beschrijft. Het is alleen een handeling, en geen eigenschap.",
+    "Klopt: de verteller noemt haar zelf arrogant, dat is directe karakterisering."
+   ],
+   "uh": "Welk woord beschrijft haar direct?",
+   "ctx": "Read this fragment: \"Hana was very arrogant. She said she was the best at everything and never listened when others spoke.\""
+  },
+  {
+   "v": "What does this fragment show about Tom, and how?",
+   "o": [
+    "he is lazy, shown by his words",
+    "he is kind, shown by his actions",
+    "he is rude, shown by the narrator",
+    "he is shy, shown directly"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 1,
+   "u": "Daden = indirect. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"he is lazy, shown by his words\"? Dan denk je dat hij lui is. Hij helpt anderen juist, en er staan geen woorden van hem.",
+    "Klopt: zijn daden laten zien dat hij aardig is, zonder dat het woord valt.",
+    "Koos je \"he is rude, shown by the narrator\"? Dan denk je dat hij onbeleefd is. Een onbeleefd persoon houdt de deur niet open, en de verteller zegt dat niet.",
+    "Koos je \"he is shy, shown directly\"? Dan denk je dat hij verlegen is. Het woord staat er niet, en zijn daden laten iets anders zien."
+   ],
+   "uh": "Wat toont het fragment?",
+   "ctx": "Read this fragment: \"Tom always held the door for others, gave his lunch to a hungry classmate and said sorry first after every quarrel.\""
+  },
+  {
+   "v": "Which kind of character is Ravi?",
+   "o": [
+    "static",
+    "minor",
+    "dynamic",
+    "antagonist"
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 1,
+   "u": "Verandering = dynamisch. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"static\"? Dan denk je dat Ravi hetzelfde blijft. Hij verandert juist veel, dus hij is niet statisch.",
+    "Koos je \"minor\"? Dan denk je dat Ravi een bijfiguur is. Hij heeft een grote ontwikkeling, dus hij is een belangrijk personage.",
+    "Klopt: Ravi verandert van verlegen naar iemand die een toespraak houdt.",
+    "Koos je \"antagonist\"? Dan denk je dat Ravi de tegenstander is. Hij werkt niemand tegen, en maakt een eigen ontwikkeling door."
+   ],
+   "uh": "Welk soort personage is Ravi?",
+   "ctx": "Read this fragment: \"At the start of the book Ravi is shy and never speaks in class. At the end he gives a speech in front of the whole school.\""
+  },
+  {
+   "v": "Which kind of character is Mr Gray?",
+   "o": [
+    "static",
+    "dynamic",
+    "round",
+    "protagonist"
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 1,
+   "u": "Altijd gelijk = statisch. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: meneer Gray is van begin tot eind even chagrijnig, dus hij verandert niet.",
+    "Koos je \"dynamic\"? Dan denk je dat meneer Gray verandert. Hij blijft in elk hoofdstuk hetzelfde, dus hij is niet dynamisch.",
+    "Koos je \"round\"? Dan denk je dat hij een rond personage is. Hij heeft maar één kant, en een rond personage is juist complex.",
+    "Koos je \"protagonist\"? Dan denk je dat hij de hoofdpersoon is. Het fragment zegt niets over zijn rol, en hij hoeft het niet te zijn."
+   ],
+   "uh": "Welk soort personage is hij?",
+   "ctx": "Read this fragment: \"Mr Gray was grumpy in chapter one, grumpy in chapter ten and still grumpy on the very last page.\""
+  },
+  {
+   "v": "What does the white bird most likely stand for?",
+   "o": [
+    "freedom",
+    "hunger for food",
+    "anger and rage",
+    "speed and travel"
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 3,
+   "u": "Vogel + vrij = vrijheid. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: de vogel verschijnt als Eva zich vrij voelt, dus hij staat voor vrijheid.",
+    "Koos je \"hunger for food\"? Dan denk je dat de vogel honger voorstelt. Er staat niets over eten, maar over zich vrij voelen.",
+    "Koos je \"anger and rage\"? Dan denk je dat de vogel boosheid voorstelt. Boos is Eva hier niet, de vogel komt als zij zich vrij voelt.",
+    "Koos je \"speed and travel\"? Dan denk je dat de vogel snelheid voorstelt. Het gaat niet over snelheid, maar over gevoel van vrijheid."
+   ],
+   "uh": "Waar staat de vogel voor?",
+   "ctx": "Read this fragment: \"Every time Eva feels free, a white bird flies over her head. When she is locked in her room, the window is closed and the sky is grey.\""
+  },
+  {
+   "v": "Which theme fits this story best?",
+   "o": [
+    "money brings real happiness",
+    "nature must always be protected",
+    "honesty beats popularity",
+    "speed wins every single race"
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 2,
+   "u": "Eerlijkheid is het thema. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"money brings real happiness\"? Dan denk je dat geld gelukkig maakt. Er komt geen geld voor in het verhaal, en de les gaat over eerlijkheid.",
+    "Koos je \"nature must always be protected\"? Dan denk je dat het over natuur gaat. Het verhaal speelt tussen vrienden, en niet in de natuur.",
+    "Klopt: de jongen leert dat eerlijkheid meer waard is dan populair zijn.",
+    "Koos je \"speed wins every single race\"? Dan denk je dat snelheid wint. Er is geen race, en de les gaat over eerlijkheid."
+   ],
+   "uh": "Welk thema past?",
+   "ctx": "Read this fragment: \"A boy lies to his friends to look cool. They find out, and he loses them. In the end he learns that honesty is worth more than being popular.\""
+  },
+  {
+   "v": "Which mood does this fragment create?",
+   "o": [
+    "happy and relaxed",
+    "scary and gloomy",
+    "funny and silly",
+    "calm and warm"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 4,
+   "u": "Wind, leeg, donker = eng. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"happy and relaxed\"? Dan denk je dat de sfeer vrolijk is. Een leeg, donker huis maakt je juist bang, en niet blij.",
+    "Klopt: het huilende windgeluid, het lege huis en het donker maken het sfeertje eng.",
+    "Koos je \"funny and silly\"? Dan denk je dat de sfeer grappig is. De woorden zijn dreigend, en er is niets om te lachen.",
+    "Koos je \"calm and warm\"? Dan denk je dat de sfeer rustig en warm is. Het huilen van de wind en het donker, zijn koud en eng."
+   ],
+   "uh": "Welke sfeer past?",
+   "ctx": "Read this fragment: \"The wind howled around the empty house, and the windows rattled in the dark.\""
+  },
+  {
+   "v": "What do we call the clock that returns in every chapter?",
+   "o": [
+    "a flashback",
+    "a resolution",
+    "a stanza",
+    "a motif"
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 3,
+   "u": "Terugkerend = motief. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"a flashback\"? Dan denk je dat de klok een terugblik is. Een terugblik springt naar het verleden, en komt niet steeds terug.",
+    "Koos je \"a resolution\"? Dan denk je dat de klok de afloop is. De klok komt in elk hoofdstuk voor, en niet alleen aan het eind.",
+    "Koos je \"a stanza\"? Dan denk je dat de klok een strofe is. Een strofe is een groep regels van een gedicht, en geen voorwerp.",
+    "Klopt: een motief is een element dat steeds terugkomt in het verhaal."
+   ],
+   "uh": "Hoe noem je dit?",
+   "ctx": "Read this fragment: \"In every chapter a clock appears: a broken clock on the wall, a ticking clock on the table, a watch that stops.\""
+  },
+  {
+   "v": "Who is the protagonist?",
+   "o": [
+    "the company owner",
+    "the inventor",
+    "the robot",
+    "the narrator, the voice"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 0,
+   "u": "Uitvinder is de hoofdpersoon. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"the company owner\"? Dan denk je dat de eigenaar de hoofdpersoon is. Hij werkt haar juist tegen, dus hij is de antagonist.",
+    "Klopt: we volgen de uitvinder en zien het verhaal door haar ogen.",
+    "Koos je \"the robot\"? Dan denk je dat de robot de hoofdpersoon is. De robot is haar project, en geen personage met een rol.",
+    "Koos je \"the narrator, the voice\"? Dan denk je dat de verteller de hoofdpersoon is. De verteller vertelt alleen, en doet niet mee."
+   ],
+   "uh": "Wie is de protagonist?",
+   "ctx": "In a book a young inventor tries to build a robot. A rich company owner tries to steal the plans. Both characters have a large role, but we follow the inventor most of the time and see events through her eyes."
+  },
+  {
+   "v": "Why is the student wrong?",
+   "o": [
+    "an antagonist is just an opponent",
+    "an antagonist is always the narrator",
+    "a story has no antagonist",
+    "an antagonist must be older"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 0,
+   "u": "Antagonist = tegenstander. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: een antagonist is een tegenstander, ook als hij aardig is.",
+    "Koos je \"an antagonist is always the narrator\"? Dan denk je dat de verteller de antagonist is. De verteller is een stem, en geen tegenstander.",
+    "Koos je \"a story has no antagonist\"? Dan denk je dat er geen antagonist is. Haar vriendin staat in de weg, dus er is wel een tegenstander.",
+    "Koos je \"an antagonist must be older\"? Dan denk je dat leeftijd telt. De rol hangt af van wat iemand doet, en niet van zijn leeftijd."
+   ],
+   "uh": "Waarom heeft de leerling ongelijk?",
+   "ctx": "A student says: \"The antagonist is always an evil person.\" In a story a girl wants to win a race, but her kind best friend also wants to win and so stands in her way."
+  },
+  {
+   "v": "Which description fits the caretaker best?",
+   "o": [
+    "dynamic: he changes",
+    "round: complex and surprising",
+    "protagonist: the main character",
+    "flat: one trait only"
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 1,
+   "u": "Eén eigenschap = plat. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"dynamic: he changes\"? Dan denk je dat de conciërge verandert. Hij komt maar twee keer voor, en verandert niet.",
+    "Koos je \"round: complex and surprising\"? Dan denk je dat hij complex is. Er staat maar één eigenschap, dus hij is plat.",
+    "Koos je \"protagonist: the main character\"? Dan denk je dat hij de hoofdpersoon is. Hij komt twee keer voor, dus hij is een bijfiguur.",
+    "Klopt: de conciërge heeft maar één eigenschap en weinig diepgang."
+   ],
+   "uh": "Welke beschrijving past?",
+   "ctx": "Ravi is described as \"never speaking in class\" at the start and \"giving a speech to the school\" at the end. The caretaker appears twice in the book and is only described as \"old and quiet\"."
+  },
+  {
+   "v": "How does the reader learn that Sara is generous?",
+   "o": [
+    "the narrator says so directly",
+    "from the title of the book",
+    "from what she does",
+    "from her name"
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 1,
+   "u": "Daden = indirect. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"the narrator says so directly\"? Dan denk je dat de verteller het zegt. Er staat dat hij het nooit zegt, dus het is indirect.",
+    "Koos je \"from the title of the book\"? Dan denk je dat de titel het laat zien. De titel wordt niet genoemd, en de daden zijn belangrijker.",
+    "Klopt: haar daden laten zien dat zij vrijgevig is, dat is indirecte karakterisering.",
+    "Koos je \"from her name\"? Dan denk je dat haar naam het laat zien. Een naam zegt niets over karakter, en haar gedrag wel."
+   ],
+   "uh": "Hoe leer je het kennen?",
+   "ctx": "In a story, the narrator never says that Sara is generous. She buys a bike for a lost boy, shares her lunch with a stranger and lends her phone to a woman at the station."
+  },
+  {
+   "v": "Which theme fits best?",
+   "o": [
+    "being poor is shameful",
+    "mothers know everything",
+    "honesty beats money",
+    "wallets are easily lost"
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 2,
+   "u": "Teruggeven = eerlijkheid. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"being poor is shameful\"? Dan denk je dat armoede iets om je voor te schamen is. Het meisje is arm maar handelt goed, dus dat is de les niet.",
+    "Koos je \"mothers know everything\"? Dan denk je dat moeders alles weten. De moeder zegt iets over eerlijkheid, en dat is het thema.",
+    "Klopt: het meisje geeft de portemonnee terug, ook al heeft ze geld nodig.",
+    "Koos je \"wallets are easily lost\"? Dan denk je dat portemonnees makkelijk zoekraken. Dat is een detail, en niet de kern van het verhaal."
+   ],
+   "uh": "Welk thema past?",
+   "ctx": "A story ends with a girl who gives back a wallet she found, although she needs money badly. Her mother says: \"Honesty feels better than money.\""
+  },
+  {
+   "v": "What do the doors and keys most likely stand for?",
+   "o": [
+    "a famous old house",
+    "money in a bank",
+    "the weather outside",
+    "a way out"
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 3,
+   "u": "Deur = uitweg. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"a famous old house\"? Dan denk je dat ze een beroemd huis voorstellen. Het huis is alleen de plek, en de deuren staan voor iets meer.",
+    "Koos je \"money in a bank\"? Dan denk je dat ze geld voorstellen. Geld komt niet voor in het fragment, en de deur gaat open voor vrijheid.",
+    "Koos je \"the weather outside\"? Dan denk je dat ze het weer voorstellen. Het weer wordt niet genoemd, dus dat is niet de betekenis.",
+    "Klopt: de deur gaat open als zij eindelijk vertrekt, dus een nieuw begin."
+   ],
+   "uh": "Waar staan ze voor?",
+   "ctx": "In a story a locked door, a broken lock and a rusty key return many times. At the end the heroine opens a door and walks out of her house for the first time in years."
+  },
+  {
+   "v": "Why is the student wrong?",
+   "o": [
+    "a symbol is not a place",
+    "a symbol is always a person",
+    "a setting always has a rhyme",
+    "a symbol is only found in poems"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 3,
+   "u": "Symbool = idee, setting = plaats.",
+   "uo": [
+    "Klopt: een symbool staat voor een idee, de setting is waar het verhaal speelt.",
+    "Koos je \"a symbol is always a person\"? Dan denk je dat een symbool altijd een mens is. Een duif is geen mens, en toch is hij een symbool.",
+    "Koos je \"a setting always has a rhyme\"? Dan denk je dat een setting rijmt. Rijm hoort bij gedichten, en niet bij een plaats.",
+    "Koos je \"a symbol is only found in poems\"? Dan denk je dat symbolen alleen in gedichten staan. Ook in verhalen komen ze voor, zoals deze duif."
+   ],
+   "uh": "Waarom heeft hij ongelijk?",
+   "ctx": "A student says: \"A symbol is the same thing as the setting.\" The teacher gives an example: in a story about war, a white dove often flies over the ruins."
+  },
+  {
+   "v": "Which words build a gloomy mood in B?",
+   "o": [
+    "\"garden\", \"pond\" and \"the\"",
+    "\"dark clouds\" and \"quiet\"",
+    "\"the\", \"over\" and \"and\" only",
+    "\"children laughed by the pond\""
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 4,
+   "u": "Donker en koud = somber. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"garden, pond and the\"? Dan denk je dat deze plaatsen de sfeer somber maken. Ze staan in beide zinnen, en maken geen verschil.",
+    "Klopt: donkere wolken en een stille, koude vijver maken de sfeer somber.",
+    "Koos je \"the, over and and only\"? Dan denk je dat deze kleine woorden iets doen. Het zijn lidwoorden en voorzetsels, zonder sfeer.",
+    "Koos je \"children laughed by the pond\"? Dan denk je dat deze woorden in B staan. Ze horen bij zin A, en geven juist een vrolijke sfeer."
+   ],
+   "uh": "Welke woorden bouwen de sfeer?",
+   "ctx": "Compare two sentences. A: \"The sun shone on the garden, and children laughed by the pond.\" B: \"Dark clouds hung over the garden, and the pond was quiet and cold.\""
+  },
+  {
+   "v": "How do the tones of the two notes differ?",
+   "o": [
+    "both are very thankful",
+    "both are sad and tired",
+    "angry versus bored",
+    "angry versus thankful"
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 4,
+   "u": "Boos tegenover dankbaar. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"both are very thankful\"? Dan denk je dat beide dankbaar zijn. Alleen de tweede zegt thank you, en de eerste is boos.",
+    "Koos je \"both are sad and tired\"? Dan denk je dat beide verdrietig zijn. Geen van beide noemt verdriet, en de eerste is boos.",
+    "Koos je \"angry versus bored\"? Dan denk je dat de tweede verveeld is. Hij is juist enthousiast, met so much en lovely.",
+    "Klopt: de eerste schrijver is boos en de tweede dankbaar."
+   ],
+   "uh": "Hoe verschillen de tonen?",
+   "ctx": "A short note says: \"Your invitation was sent to the wrong address, and I am very angry.\" Another note says: \"Thank you so much for the lovely invitation!\" The writers show their attitude to the reader in different ways."
+  },
+  {
+   "v": "What kind of character is Jack, and why?",
+   "o": [
+    "dynamic, because he changes",
+    "static, because he is rich",
+    "flat, because he is selfish",
+    "antagonist, because he is greedy"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 1,
+   "u": "Egoïst wordt gul = dynamisch. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: Jack verandert van egoïstisch naar gul, dus hij is een dynamisch personage.",
+    "Koos je \"static, because he is rich\"? Dan denk je dat rijkdom hem statisch maakt. Statisch gaat over niet veranderen, en Jack verandert juist.",
+    "Koos je \"flat, because he is selfish\"? Dan denk je dat egoïsme hem plat maakt. Hij ontwikkelt zich, dus hij heeft meer diepgang.",
+    "Koos je \"antagonist, because he is greedy\"? Dan denk je dat hebzucht hem tot tegenstander maakt. Hij werkt niemand tegen, en hij is waarschijnlijk de hoofdpersoon."
+   ],
+   "uh": "Wat voor personage is Jack?",
+   "ctx": "A novel starts with Jack as a greedy, selfish boy. After a long journey he gives away his treasure to help a village that has lost its harvest."
+  },
+  {
+   "v": "Which sentence is a good theme?",
+   "o": [
+    "\"A girl moves to a new country.\"",
+    "\"Friendship takes time to grow.\"",
+    "\"The book has twelve long chapters.\"",
+    "\"The girl is called Maria.\""
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 2,
+   "u": "Thema = boodschap. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"A girl moves to a new country.\"? Dan denk je dat dit het thema is. Het is een gebeurtenis uit de plot, en geen boodschap.",
+    "Klopt: de zin noemt de boodschap van het verhaal, geen losse gebeurtenis.",
+    "Koos je \"The book has twelve long chapters.\"? Dan denk je dat dit het thema is. Het aantal hoofdstukken zegt niets, over de boodschap.",
+    "Koos je \"The girl is called Maria.\"? Dan denk je dat de naam het thema is. Een naam is een detail, en geen boodschap."
+   ],
+   "uh": "Welke zin is een goed thema?",
+   "ctx": "You must write the theme of a book you have read in one sentence. The book tells how a girl moves to a new country, feels lonely and slowly makes friends."
+  }
+ ],
+ "oe": [
+  {
+   "bron": "Examenstijl",
+   "ctx": "You read this fragment: \"Lucy wants to win the science prize. Her rival Mark hides her notes so that she will lose, and he smiles when she cannot find them.\" Your teacher asks about the characters.",
+   "v": "Name the protagonist and the antagonist and explain your choice.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Lucy is de protagonist (1p). Mark is de antagonist (1p). Hij werkt haar tegen of verstopt haar aantekeningen (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "You read this fragment: \"Tom always held the door for others, gave his lunch to a hungry classmate and said sorry first after every quarrel.\" The narrator never says what kind of boy Tom is.",
+   "v": "Say what Tom is like and explain how you can tell.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Tom is aardig of behulpzaam (1p). Je leest het af uit zijn daden (1p). Dat is indirecte karakterisering (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "You read this fragment: \"At the start of the book Ravi is shy and never speaks in class. At the end he gives a speech in front of the whole school.\" Your teacher asks what kind of character Ravi is.",
+   "v": "Name the kind of character and give a reason.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Dynamisch personage (1p). Hij verandert van verlegen naar durven spreken (1p). Een verwijzing naar begin en eind (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "You read this fragment: \"Every time Eva feels free, a white bird flies over her head. When she is locked in her room, the window is closed and the sky is grey.\" Your teacher asks about the bird.",
+   "v": "Say what the bird stands for and name the technique.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "De vogel staat voor vrijheid (1p). Het is een symbool (1p). Uitleg: de vogel komt als Eva zich vrij voelt (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "You read this fragment: \"The wind howled around the empty house, and the windows rattled in the dark.\" You must describe the mood and say which words create it.",
+   "v": "Name the mood and give two words that create it.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Sfeer eng of somber (1p). Een woord als howled of empty (1p). Een tweede woord als rattled of dark (1p)."
+  }
+ ]
+}

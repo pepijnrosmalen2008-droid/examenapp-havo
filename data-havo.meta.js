@@ -3131,6 +3131,27 @@ var VAKKEN = [
       "nOe": 5,
       "nBeg": 12,
       "hasSam": true
+     },
+     {
+      "id": "F4",
+      "lo": "en.F.4",
+      "gs": 2,
+      "naam": "Personages, thema en symboliek",
+      "beschrijving": "Je leert personages beschrijven (hoofdpersoon, tegenstander, verandering, karakterisering) en de boodschap van een Engels verhaal vinden via thema, symbool, sfeer en toon.",
+      "ceStatus": "SE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Hoofdpersoon en tegenstander",
+       "Soorten personages",
+       "Karakteriseren: direct en indirect",
+       "Thema, motief en symbool",
+       "Sfeer en toon"
+      ],
+      "nSv": 27,
+      "nOe": 5,
+      "nBeg": 13,
+      "hasSam": true
      }
     ]
    }
