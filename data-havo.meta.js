@@ -3152,6 +3152,27 @@ var VAKKEN = [
       "nOe": 5,
       "nBeg": 13,
       "hasSam": true
+     },
+     {
+      "id": "F5",
+      "lo": "en.F.5",
+      "gs": 2,
+      "naam": "Stijlfiguren en poëzie",
+      "beschrijving": "Je leert stijlfiguren in Engelse teksten en gedichten herkennen en uitleggen: vergelijking, metafoor, personificatie, overdrijving, klankspel en rijm.",
+      "ceStatus": "SE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Vergelijking en metafoor",
+       "Personificatie en overdrijving",
+       "Klankspel: alliteratie en onomatopee",
+       "Strofe en rijmschema",
+       "Beeldspraak en tegenstellingen"
+      ],
+      "nSv": 27,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
      }
     ]
    }

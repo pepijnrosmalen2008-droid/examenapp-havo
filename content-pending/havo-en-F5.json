@@ -1,0 +1,682 @@
+{
+ "id": "F5",
+ "lo": "en.F.5",
+ "gs": 2,
+ "naam": "Stijlfiguren en poëzie",
+ "beschrijving": "Je leert stijlfiguren in Engelse teksten en gedichten herkennen en uitleggen: vergelijking, metafoor, personificatie, overdrijving, klankspel en rijm.",
+ "ceStatus": "SE",
+ "binas": "",
+ "val": "",
+ "onderwerpen": [
+  "Vergelijking en metafoor",
+  "Personificatie en overdrijving",
+  "Klankspel: alliteratie en onomatopee",
+  "Strofe en rijmschema",
+  "Beeldspraak en tegenstellingen"
+ ],
+ "sam": "Een simile vergelijkt met like of as, een metafoor zegt dat iets iets anders is. Personificatie geeft een ding menselijke eigenschappen, hyperbole overdrijft. Alliteratie herhaalt een beginklank, onomatopoeia bootst een geluid na. Een gedicht heeft strofen en een rijmschema (abab, aabb, abba). Imagery spreekt de zintuigen aan en een oxymoron combineert tegenstellingen. Bij elke figuur zeg je wat hij betekent.",
+ "begrippen": [
+  {
+   "t": "Simile",
+   "d": "Een vergelijking met like of as."
+  },
+  {
+   "t": "Metaphor",
+   "d": "Zeggen dat iets iets anders is, zonder like of as."
+  },
+  {
+   "t": "Personification",
+   "d": "Een ding krijgt menselijke eigenschappen."
+  },
+  {
+   "t": "Hyperbole",
+   "d": "Een sterke overdrijving."
+  },
+  {
+   "t": "Alliteration",
+   "d": "Herhaling van dezelfde beginklank."
+  },
+  {
+   "t": "Assonance",
+   "d": "Herhaling van dezelfde klinker."
+  },
+  {
+   "t": "Onomatopoeia",
+   "d": "Een woord dat klinkt als het geluid dat het noemt."
+  },
+  {
+   "t": "Oxymoron",
+   "d": "Twee tegengestelde woorden bij elkaar."
+  },
+  {
+   "t": "Imagery",
+   "d": "Woorden die de zintuigen aanspreken."
+  },
+  {
+   "t": "Stanza",
+   "d": "Een groepje regels in een gedicht."
+  },
+  {
+   "t": "Rhyme scheme",
+   "d": "Het patroon van eindrijm, zoals abab."
+  },
+  {
+   "t": "Rhyme",
+   "d": "Woorden met dezelfde klank aan het einde."
+  }
+ ],
+ "sv": [
+  {
+   "v": "Which figure of speech compares two things with \"like\" or \"as\"?",
+   "o": [
+    "a metaphor, without like or as",
+    "a simile",
+    "an oxymoron, with opposites",
+    "alliteration, with repeated sounds"
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 0,
+   "u": "Simile = like of as. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"a metaphor, without like or as\"? Dan denk je dat een metafoor like of as gebruikt. Een metafoor zegt juist dat iets iets anders is, zonder dat woordje.",
+    "Klopt: een simile vergelijkt twee dingen met like of as.",
+    "Koos je \"an oxymoron, with opposites\"? Dan denk je dat een oxymoron twee dingen vergelijkt met like. Een oxymoron combineert tegenstellingen, en vergelijkt niet.",
+    "Koos je \"alliteration, with repeated sounds\"? Dan denk je dat alliteratie vergelijkt. Alliteratie herhaalt een beginklank, en vergelijkt niets met like of as."
+   ],
+   "uh": "Welke figuur vergelijkt met like?"
+  },
+  {
+   "v": "Which figure of speech says that one thing IS another thing?",
+   "o": [
+    "a simile, with like or as",
+    "hyperbole, a big exaggeration",
+    "rhyme, with matching sounds",
+    "a metaphor"
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 0,
+   "u": "Metafoor = A is B. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"a simile, with like or as\"? Dan denk je dat een simile iets iets anders noemt. Een simile gebruikt like of as, en is dus een vergelijking.",
+    "Koos je \"hyperbole, a big exaggeration\"? Dan denk je dat hyperbool zegt dat iets iets anders is. Hyperbool overdrijft alleen, en maakt geen gelijkstelling.",
+    "Koos je \"rhyme, with matching sounds\"? Dan denk je dat rijm iets gelijkstelt. Rijm is gelijke klank aan het einde, en zegt niets over betekenis.",
+    "Klopt: een metafoor zegt direct dat iets iets anders is, zonder like of as."
+   ],
+   "uh": "Welke figuur zegt dat iets iets anders is?"
+  },
+  {
+   "v": "Which figure of speech gives human qualities to an object?",
+   "o": [
+    "personification",
+    "hyperbole, an exaggeration",
+    "a simile, with like or as",
+    "assonance, repeated vowels"
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 1,
+   "u": "Personificatie = menselijk. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: bij personificatie krijgt een ding of dier menselijke eigenschappen.",
+    "Koos je \"hyperbole, an exaggeration\"? Dan denk je dat een ding menselijk wordt als je het groter maakt. Hyperbool overdrijft alleen, en geeft geen menselijke trek.",
+    "Koos je \"a simile, with like or as\"? Dan denk je dat het verbinden van een ding met een mens een simile is. Een simile vergelijkt alleen met like of as, zonder dat het ding iets doet.",
+    "Koos je \"assonance, repeated vowels\"? Dan denk je dat zachte klinkers een ding laten leven. Assonantie speelt met klank, en zegt niets over mensen."
+   ],
+   "uh": "Welke figuur past?"
+  },
+  {
+   "v": "Which figure of speech is a strong exaggeration?",
+   "o": [
+    "a simile, with like or as",
+    "alliteration, a repeated start",
+    "hyperbole",
+    "rhyme, a matching ending"
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 1,
+   "u": "Hyperbool = overdrijving. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"a simile, with like or as\"? Dan denk je dat een simile overdrijft. Een simile vergelijkt alleen, en hoeft niet te overdrijven.",
+    "Koos je \"alliteration, a repeated start\"? Dan denk je dat alliteratie overdrijft. Alliteratie herhaalt een beginklank, en overdrijft niets.",
+    "Klopt: een hyperbool overdrijft sterk om nadruk te geven.",
+    "Koos je \"rhyme, a matching ending\"? Dan denk je dat rijm overdrijft. Rijm is gelijke klank, en zegt niets over overdrijving."
+   ],
+   "uh": "Welke figuur past?"
+  },
+  {
+   "v": "Which sound pattern repeats the same first sound in nearby words?",
+   "o": [
+    "assonance, repeated vowels",
+    "rhyme, similar word endings",
+    "alliteration",
+    "a stanza, a group of lines"
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 2,
+   "u": "Alliteratie = zelfde begin. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"assonance, repeated vowels\"? Dan denk je dat assonantie de beginklank herhaalt. Assonantie herhaalt klinkers, binnen de woorden.",
+    "Koos je \"rhyme, similar word endings\"? Dan denk je dat rijm de beginklank herhaalt. Rijm zit aan het einde van woorden, en niet aan het begin.",
+    "Klopt: alliteratie herhaalt dezelfde beginklank in woorden vlak bij elkaar.",
+    "Koos je \"a stanza, a group of lines\"? Dan denk je dat een strofe een klankpatroon is. Een strofe is een groep regels, en geen klank."
+   ],
+   "uh": "Welk klankpatroon past?"
+  },
+  {
+   "v": "What do we call a group of lines in a poem?",
+   "o": [
+    "a stanza",
+    "a chapter, in a book",
+    "a scene, in a play",
+    "a paragraph, in prose"
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 3,
+   "u": "Strofe = groep regels. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: een strofe is een groepje regels in een gedicht.",
+    "Koos je \"a chapter, in a book\"? Dan denk je dat een deel van een tekst altijd een hoofdstuk is. Een hoofdstuk hoort bij een boek met proza, en is veel langer dan een paar regels.",
+    "Koos je \"a scene, in a play\"? Dan denk je dat elk blok een scène is omdat je dat van toneel kent. Een scène is een deel van een toneelstuk, met spelers en geen regels in rijm.",
+    "Koos je \"a paragraph, in prose\"? Dan denk je dat elk blok tekst een alinea is. Een alinea hoort bij zinnen in proza, en bij een gedicht gaat het om regels."
+   ],
+   "uh": "Hoe heet een groep regels?"
+  },
+  {
+   "v": "Which term describes the pattern of end rhymes in a poem?",
+   "o": [
+    "the stanza, a group of lines",
+    "the setting, time and place",
+    "the theme, the main idea",
+    "the rhyme scheme"
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 3,
+   "u": "Rijmschema = abab. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"the stanza, a group of lines\"? Dan denk je dat de strofe het rijmpatroon is. De strofe is een groep regels, en niet het rijm.",
+    "Koos je \"the setting, time and place\"? Dan denk je dat de setting het rijmpatroon is. De setting is tijd en plaats, en zegt niets over rijm.",
+    "Koos je \"the theme, the main idea\"? Dan denk je dat het thema het rijmpatroon is. Het thema is de boodschap, en zegt niets over klank.",
+    "Klopt: het rijmschema laat zien welke regels op elkaar rijmen, zoals abab."
+   ],
+   "uh": "Welke term past?"
+  },
+  {
+   "v": "Which figure of speech is used in this line?",
+   "o": [
+    "a metaphor, without like or as",
+    "a simile",
+    "personification, human traits",
+    "hyperbole, a big exaggeration"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 0,
+   "u": "As bright as = simile. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"a metaphor, without like or as\"? Dan denk je dat dit een metafoor is omdat haar lach met de zon wordt verbonden. Er staat as bright as, dus het is een vergelijking.",
+    "Klopt: as bright as vergelijkt haar lach met de zon, dat is een simile.",
+    "Koos je \"personification, human traits\"? Dan denk je dat dit personificatie is omdat de zon helder is. Niemand krijgt menselijke eigenschappen, er is alleen een vergelijking.",
+    "Koos je \"hyperbole, a big exaggeration\"? Dan denk je dat dit een overdrijving is omdat de zon fel is. De zin vergelijkt alleen met as, en overdrijft niets."
+   ],
+   "uh": "Welke figuur is dit?",
+   "ctx": "Read this line from a poem about a happy day: \"Her smile was as bright as the sun.\" Read it slowly and think about the words that the writer has chosen before you answer."
+  },
+  {
+   "v": "Which figure of speech is used in this line?",
+   "o": [
+    "a simile, with like or as",
+    "alliteration, a repeated start",
+    "rhyme, a matching ending",
+    "a metaphor"
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 0,
+   "u": "Was a zoo = metafoor. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"a simile, with like or as\"? Dan denk je dat dit een simile is omdat het twee dingen verbindt. Er staat geen like of as, dus het is een metafoor.",
+    "Koos je \"alliteration, a repeated start\"? Dan denk je dat dit alliteratie is omdat het een korte zin is. Er is geen herhaalde beginklank, maar wel een gelijkstelling.",
+    "Koos je \"rhyme, a matching ending\"? Dan denk je dat dit rijm is omdat het een poëtische zin lijkt. Er zijn geen rijmende woorden, dus het is een metafoor.",
+    "Klopt: de klas wordt direct een dierentuin genoemd, zonder like of as."
+   ],
+   "uh": "Welke figuur is dit?",
+   "ctx": "Read this line from a story about a noisy lesson: \"The classroom was a zoo.\" Read it slowly and think about the words that the writer has chosen before you answer."
+  },
+  {
+   "v": "Which figure of speech is used in this line?",
+   "o": [
+    "a simile, with like or as",
+    "personification",
+    "hyperbole, an exaggeration",
+    "alliteration, a repeated start"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 1,
+   "u": "Wind fluistert = personificatie.",
+   "uo": [
+    "Koos je \"a simile, with like or as\"? Dan denk je dat dit een simile is omdat de wind en het fluisteren worden verbonden. Er staat geen like of as, dus het is personificatie.",
+    "Klopt: de wind fluistert, iets wat alleen mensen doen.",
+    "Koos je \"hyperbole, an exaggeration\"? Dan denk je dat dit hyperbool is omdat de wind iets bijzonders doet. Er wordt niets overdreven, maar de wind krijgt een menselijke eigenschap.",
+    "Koos je \"alliteration, a repeated start\"? Dan denk je dat dit alliteratie is omdat de woorden lijken op elkaar. Wind en whispered hebben geen zelfde begin, al klinken ze zacht."
+   ],
+   "uh": "Welke figuur is dit?",
+   "ctx": "Read this line from a poem about a stormy afternoon: \"The wind whispered through the trees.\" Read it slowly and think about the words that the writer has chosen before you answer."
+  },
+  {
+   "v": "Which figure of speech is used in this line?",
+   "o": [
+    "a simile, with like or as",
+    "personification, human traits",
+    "hyperbole",
+    "assonance, repeated vowels"
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 1,
+   "u": "Een miljoen keer = hyperbool. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"a simile, with like or as\"? Dan denk je dat dit een vergelijking is omdat er een getal in staat. Er staat geen like of as, dus het is een overdrijving.",
+    "Koos je \"personification, human traits\"? Dan denk je dat dit personificatie is omdat iemand iets zegt. Het gaat om een mens, en niet om een voorwerp.",
+    "Klopt: een miljoen keer is een sterke overdrijving om te benadrukken hoe vaak.",
+    "Koos je \"assonance, repeated vowels\"? Dan denk je dat dit assonantie is omdat er veel klinkers zijn. Het gaat niet om klank, maar om een overdrijving."
+   ],
+   "uh": "Welke figuur is dit?",
+   "ctx": "Read this line from a story about a tired father: \"I have told you a million times to close the door.\" Read it slowly and think about the words that the writer has chosen before you answer."
+  },
+  {
+   "v": "Which sound pattern is used in this line?",
+   "o": [
+    "alliteration",
+    "rhyme, matching endings",
+    "assonance, repeated vowels",
+    "a simile, a comparison"
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 2,
+   "u": "Zelfde beginletter = alliteratie.",
+   "uo": [
+    "Klopt: de b in big, blue, bubbles, bounced en bath herhaalt de beginklank.",
+    "Koos je \"rhyme, matching endings\"? Dan denk je dat dit rijm is omdat er veel gelijke klanken zijn. De woorden eindigen niet op elkaar, maar beginnen met dezelfde letter.",
+    "Koos je \"assonance, repeated vowels\"? Dan denk je dat dit assonantie is omdat er klinkers terugkomen. De herhaling zit aan het begin van de woorden, niet in het midden.",
+    "Koos je \"a simile, a comparison\"? Dan denk je dat dit een simile is omdat het een beeld oproept. Er staat geen like of as, en geen vergelijking."
+   ],
+   "uh": "Welk klankpatroon is dit?",
+   "ctx": "Read this line from a poem for children: \"Big blue bubbles bounced in the bath.\" Read it slowly and think about the words that the writer has chosen before you answer."
+  },
+  {
+   "v": "Which figure of speech is this phrase?",
+   "o": [
+    "an oxymoron",
+    "a simile, a comparison",
+    "hyperbole, an exaggeration",
+    "personification, human traits"
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 4,
+   "u": "Luid + stil = oxymoron. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: deafening en silence zijn tegenstellingen die samen één beeld vormen.",
+    "Koos je \"a simile, a comparison\"? Dan denk je dat dit een simile is omdat er twee woorden zijn. Er staat geen like of as, en de woorden zijn tegenstellingen.",
+    "Koos je \"hyperbole, an exaggeration\"? Dan denk je dat dit een overdrijving is omdat deafening sterk klinkt. Het gaat om twee tegenstellingen, en niet om een overdrijving.",
+    "Koos je \"personification, human traits\"? Dan denk je dat dit personificatie is omdat stilte iets doet. Stilte krijgt geen menselijke eigenschap, het gaat om tegenstellingen."
+   ],
+   "uh": "Welke figuur is dit?",
+   "ctx": "Read this phrase from a story about a night in a quiet house: \"a deafening silence\". Read it slowly and think about the words that the writer has chosen before you answer."
+  },
+  {
+   "v": "Which rhyme scheme does this poem have?",
+   "o": [
+    "aabb, pairs next to each other",
+    "abba, rhyme around the middle",
+    "abab",
+    "aaaa, all lines rhyme"
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 3,
+   "u": "High/sky en long/song = abab. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"aabb, pairs next to each other\"? Dan denk je dat de eerste twee regels rijmen. Regel 1 rijmt op regel 3, en niet op regel 2.",
+    "Koos je \"abba, rhyme around the middle\"? Dan denk je dat de buitenste regels rijmen. Regel 1 rijmt op 3 en niet op 4, dus het schema is anders.",
+    "Klopt: high rijmt op sky en long op song, dus regels 1 en 3 en regels 2 en 4.",
+    "Koos je \"aaaa, all lines rhyme\"? Dan denk je dat alle regels rijmen. High en long rijmen niet, dus er zijn twee klanken."
+   ],
+   "uh": "Welk rijmschema is dit?",
+   "ctx": "Read this poem: \"The moon is high, / The night is long, / I watch the sky, / And hum a song.\" Read it slowly and think about the words that the writer has chosen before you answer."
+  },
+  {
+   "v": "Which rhyme scheme does this poem have?",
+   "o": [
+    "abab, lines one and three rhyme",
+    "aabb",
+    "abba, outer lines rhyme",
+    "abcd, no lines rhyme"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 3,
+   "u": "Out/shout, home/roam = aabb. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"abab, lines one and three rhyme\"? Dan denk je dat regel 1 op regel 3 rijmt. Regel 1 rijmt op regel 2, dus de paren staan naast elkaar.",
+    "Klopt: out rijmt op shout en home rijmt op roam, de paren staan naast elkaar.",
+    "Koos je \"abba, outer lines rhyme\"? Dan denk je dat de buitenste regels rijmen. Regel 1 rijmt op regel 2, en regel 4 op regel 3.",
+    "Koos je \"abcd, no lines rhyme\"? Dan denk je dat geen enkele regel rijmt. Out en shout rijmen duidelijk, net als home en roam."
+   ],
+   "uh": "Welk rijmschema is dit?",
+   "ctx": "Read this poem: \"The sun came out, / the children shout, / the dog ran home, / the cat did roam.\" Read it slowly and think about the words that the writer has chosen before you answer."
+  },
+  {
+   "v": "How many stanzas does this poem have?",
+   "o": [
+    "two, one for each half",
+    "six, one for each line",
+    "four, for each rhyme",
+    "three"
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 3,
+   "u": "Drie groepjes = drie strofen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"two, one for each half\"? Dan denk je dat het gedicht uit twee delen bestaat. Er zijn twee scheidingen, dus er zijn drie groepjes.",
+    "Koos je \"six, one for each line\"? Dan denk je dat elke regel een strofe is. Een strofe bevat meer regels, en hier staan er twee in elk groepje.",
+    "Koos je \"four, for each rhyme\"? Dan denk je dat elk rijm een strofe maakt. Strofen worden door witruimte gescheiden, en niet door rijm.",
+    "Klopt: de dubbele schuine streep scheidt drie groepjes van twee regels."
+   ],
+   "uh": "Hoeveel strofen?",
+   "ctx": "Read this poem: \"The wind is cold, / the leaves are red, // the days are old, / the sun has fled, // the geese fly south, / the lake is still.\" Read it slowly and think about the words that the writer has chosen before you answer."
+  },
+  {
+   "v": "Which senses does this imagery appeal to?",
+   "o": [
+    "sight and hearing",
+    "smell and touch",
+    "taste and hearing",
+    "sight only"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 4,
+   "u": "Geur en kou = twee zintuigen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"sight and hearing\"? Dan denk je dat het om kijken en luisteren gaat. Er is geen geluid of kleur beschreven, maar geur en gevoel.",
+    "Klopt: burnt toast ruik je en cold tiles voel je aan je voeten.",
+    "Koos je \"taste and hearing\"? Dan denk je dat toast proeven betekent. Het gaat om de geur van toast, en niet om proeven of horen.",
+    "Koos je \"sight only\"? Dan denk je dat het alleen om zien gaat. Er wordt niets over uiterlijk gezegd, maar over geur en kou."
+   ],
+   "uh": "Welke zintuigen?",
+   "ctx": "Read this line from a story about a lonely morning: \"The room smelled of burnt toast, and the cold tiles bit his bare feet.\" Read it slowly and think about the words that the writer has chosen before you answer."
+  },
+  {
+   "v": "What is the difference between the two lines?",
+   "o": [
+    "A is a metaphor, B is a simile",
+    "A is a simile, B is a metaphor",
+    "both are metaphors",
+    "both are examples of hyperbole"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 0,
+   "u": "Zonder like = metafoor, met like = simile.",
+   "uo": [
+    "Klopt: A zegt dat het leven een reis is, B vergelijkt het leven met like.",
+    "Koos je \"A is a simile, B is a metaphor\"? Dan denk je dat A de vergelijking is. De vergelijking heeft like of as, en dat staat in B.",
+    "Koos je \"both are metaphors\"? Dan denk je dat beide metaforen zijn omdat de betekenis gelijk is. De vorm verschilt echter, want B gebruikt like.",
+    "Koos je \"both are examples of hyperbole\"? Dan denk je dat beide overdrijvingen zijn. Het leven noemen een reis is geen overdrijving, maar een beeld."
+   ],
+   "uh": "Wat is het verschil?",
+   "ctx": "Compare two lines. A: \"Life is a journey.\" B: \"Life is like a journey.\" A student says that both lines use the same figure of speech, because they have the same meaning."
+  },
+  {
+   "v": "Which figure is it and why?",
+   "o": [
+    "a simile, because it compares",
+    "personification, because a bag acts like a person",
+    "alliteration, because of repeated sounds",
+    "hyperbole, a strong exaggeration"
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 1,
+   "u": "Een ton = overdrijving. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"a simile, because it compares\"? Dan denk je dat het een simile is omdat het iets vergelijkt. Er staat geen like of as, dus het is geen simile.",
+    "Koos je \"personification, because a bag acts like a person\"? Dan denk je dat het personificatie is omdat de tas iets doet. De tas krijgt geen menselijke eigenschap, het is overdrijving.",
+    "Koos je \"alliteration, because of repeated sounds\"? Dan denk je dat het alliteratie is omdat er veel w-klanken lijken te zijn. Het gaat niet om klank, maar om overdrijving.",
+    "Klopt: een tas weegt geen ton, het is een sterke overdrijving om nadruk te geven."
+   ],
+   "uh": "Welke figuur en waarom?",
+   "ctx": "A writer says: \"My bag weighs a ton.\" A student says that this is a metaphor, because a bag is compared with something heavy. Your teacher says that this is not correct."
+  },
+  {
+   "v": "Which sound pattern is used?",
+   "o": [
+    "assonance with the \"o\" sound",
+    "rhyme at the end of two lines",
+    "alliteration with the \"t\" sound",
+    "onomatopoeia, a sound word"
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 2,
+   "u": "T-klank herhaald = alliteratie.",
+   "uo": [
+    "Koos je \"assonance with the o sound\"? Dan denk je dat het om de klinker o gaat. De herhaling zit aan het begin van de woorden, en het is een t.",
+    "Koos je \"rhyme at the end of two lines\"? Dan denk je dat het rijm is. Het is één regel zonder rijmend woord, dus het is alliteratie.",
+    "Klopt: tall, tree, towered, tiny en town beginnen allemaal met een t.",
+    "Koos je \"onomatopoeia, a sound word\"? Dan denk je dat het een klanknabootsing is. Er staat geen woord dat een geluid nabootst, maar een herhaalde beginklank."
+   ],
+   "uh": "Welk klankpatroon is dit?",
+   "ctx": "Read this line from a poem about a quiet town at night, in which the writer plays with sounds to make the words flow: \"The tall tree towered over the tiny town.\""
+  },
+  {
+   "v": "Which term is correct for \"buzzed\" and \"tick tock\"?",
+   "o": [
+    "personification, the bees act like people",
+    "hyperbole, the bees are exaggerated",
+    "onomatopoeia, words that sound like their meaning",
+    "a simile, the bees are like a clock"
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 2,
+   "u": "Klanknabootsing = onomatopoeia.",
+   "uo": [
+    "Koos je \"personification, the bees act like people\"? Dan denk je dat de bijen menselijk handelen. Bijen en klokken doen gewoon wat ze doen, en het gaat om klank.",
+    "Koos je \"hyperbole, the bees are exaggerated\"? Dan denk je dat er wordt overdreven. Er is geen overdrijving in de tekst, maar een nabootsing van geluid.",
+    "Klopt: buzzed en tick tock klinken als het geluid dat ze noemen.",
+    "Koos je \"a simile, the bees are like a clock\"? Dan denk je dat de bijen met een klok worden vergeleken. Er staat geen like of as, en de woorden klinken als het geluid."
+   ],
+   "uh": "Welke term klopt?",
+   "ctx": "Read this line from a story about a quiet room: \"The bees buzzed and the clock ticked, tick tock.\" A student says: \"These words are examples of hyperbole.\" Your teacher disagrees."
+  },
+  {
+   "v": "Which rhyme scheme does the poem have?",
+   "o": [
+    "abab, lines one and three rhyme",
+    "aabb, pairs next to each other",
+    "abcd, no rhymes at all",
+    "abba"
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 3,
+   "u": "Deep/asleep + bright/white = abba.",
+   "uo": [
+    "Koos je \"abab, lines one and three rhyme\"? Dan denk je dat regel 1 op regel 3 rijmt. Regel 1 rijmt op regel 4, en dat is een ander patroon.",
+    "Koos je \"aabb, pairs next to each other\"? Dan denk je dat regel 1 en 2 rijmen. Regel 1 rijmt op regel 4, en de middelste twee rijmen samen.",
+    "Koos je \"abcd, no rhymes at all\"? Dan denk je dat er geen rijm is. Deep en asleep rijmen en bright en white ook, dus er zijn twee rijmparen.",
+    "Klopt: deep rijmt op asleep en bright op white, dus de buitenste en de middelste regels rijmen."
+   ],
+   "uh": "Welk rijmschema is dit?",
+   "ctx": "Read this poem about a calm night and look at the last word of each line: \"The night is deep, / the stars are bright, / the moon shines white, / and I fall asleep.\""
+  },
+  {
+   "v": "Which figure is it and what does it mean?",
+   "o": [
+    "a metaphor: the sea slowly takes the land",
+    "a simile, because it uses like",
+    "hyperbole: the ocean really eats the shore",
+    "alliteration: a repeated \"h\" sound"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 4,
+   "u": "Oceaan is wolf = metafoor. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: de oceaan wordt een wolf genoemd en zo beeldt de dichter uit dat de zee het land wegneemt.",
+    "Koos je \"a simile, because it uses like\"? Dan denk je dat er een vergelijking is. Er staat geen like of as, dus het is een metafoor.",
+    "Koos je \"hyperbole: the ocean really eats the shore\"? Dan denk je dat de oceaan echt eet. Het is een beeld dat het wegslaan van land toont, en geen letterlijke overdrijving.",
+    "Koos je \"alliteration: a repeated h sound\"? Dan denk je dat het om de h-klank gaat. De zin draait om een beeld, en niet om een klankspel."
+   ],
+   "uh": "Welke figuur en wat betekent het?",
+   "ctx": "A poet writes: \"The ocean is a hungry wolf that eats the shore every night.\" A student says that this is hyperbole because the ocean cannot eat. Another student says it is a simile."
+  },
+  {
+   "v": "Why are these phrases oxymorons?",
+   "o": [
+    "they repeat the same sound",
+    "they combine opposite ideas",
+    "they compare with like or as",
+    "they exaggerate a fact"
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 4,
+   "u": "Tegenstellingen = oxymoron. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"they repeat the same sound\"? Dan denk je dat het om herhaalde klank gaat. Bij een oxymoron gaat het om tegenstellingen, en niet om klank.",
+    "Klopt: bitter en sweet en awfully en good zijn tegenstellingen die samen één uitdrukking vormen.",
+    "Koos je \"they compare with like or as\"? Dan denk je dat er een vergelijking is. Er staat geen like of as, maar twee tegengestelde woorden.",
+    "Koos je \"they exaggerate a fact\"? Dan denk je dat ze overdrijven. Bittersweet overdrijft niets, het combineert twee gevoelens."
+   ],
+   "uh": "Waarom oxymorons?",
+   "ctx": "In a poem, the speaker describes a \"bittersweet goodbye\" and a party that was \"awfully good\". A student asks why these are called oxymorons."
+  },
+  {
+   "v": "Which term is the correct one?",
+   "o": [
+    "a simile, because there are two verbs",
+    "hyperbole, because the car is old",
+    "alliteration, because of repeated \"c\" sounds",
+    "personification"
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 1,
+   "u": "Kuchen en kreunen = personificatie.",
+   "uo": [
+    "Koos je \"a simile, because there are two verbs\"? Dan denk je dat twee werkwoorden een simile maken. Een simile heeft like of as, en dat staat er niet.",
+    "Koos je \"hyperbole, because the car is old\"? Dan denk je dat oud zijn overdrijving is. Er wordt niets overdreven, maar de auto doet menselijke dingen.",
+    "Koos je \"alliteration, because of repeated c sounds\"? Dan denk je dat de c in car en coughed alliteratie is. De figuur draait om kuchen en kreunen, en niet om klank.",
+    "Klopt: de auto kucht en kreunt zoals een mens, dat is personificatie."
+   ],
+   "uh": "Welke term klopt?",
+   "ctx": "A student writes: \"The old car coughed and groaned up the hill\" and calls this sentence a simile. Your teacher says that the student is wrong."
+  },
+  {
+   "v": "Which sentence is a simile?",
+   "o": [
+    "\"She ran like a deer.\"",
+    "\"She was a deer.\"",
+    "\"She ran a thousand miles in a second.\"",
+    "\"The path whispered to her.\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 0,
+   "u": "Like a deer = simile. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: like a deer vergelijkt haar met een hert, dat is een simile.",
+    "Koos je \"She was a deer.\"? Dan denk je dat dit een simile is omdat het een hert noemt. Er staat geen like of as, dus het is een metafoor.",
+    "Koos je \"She ran a thousand miles in a second.\"? Dan denk je dat dit een simile is omdat het snelheid toont. Het is een overdrijving, en geen vergelijking met like.",
+    "Koos je \"The path whispered to her.\"? Dan denk je dat dit een simile is omdat er een beeld is. Het pad doet iets menselijks, en dat is personificatie."
+   ],
+   "uh": "Welke zin is een simile?",
+   "ctx": "You want to write a line about a fast runner and your teacher asks you to use a simile. Read all four sentences carefully and think about which words show a comparison before you choose."
+  },
+  {
+   "v": "Which description is correct?",
+   "o": [
+    "3 lines in 12 stanzas, with abab rhyme",
+    "12 lines in 3 stanzas, with abab rhyme",
+    "12 stanzas of 3 lines, with no rhyme",
+    "4 stanzas of 3 lines, with aabb rhyme"
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 3,
+   "u": "3 × 4 = 12 regels. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"3 lines in 12 stanzas, with abab rhyme\"? Dan denk je dat het omgekeerd is. Drie strofen van vier regels geeft twaalf regels, en geen twaalf strofen.",
+    "Klopt: drie strofen van vier regels is twaalf regels en abab is het rijmschema.",
+    "Koos je \"12 stanzas of 3 lines, with no rhyme\"? Dan denk je dat er twaalf strofen zijn. Het zijn er drie, en het gedicht rijmt wel.",
+    "Koos je \"4 stanzas of 3 lines, with aabb rhyme\"? Dan denk je dat het vier strofen met aabb zijn. Het zijn drie strofen, en het schema is abab."
+   ],
+   "uh": "Welke beschrijving klopt?",
+   "ctx": "A student must describe a poem in one sentence. The poem has three stanzas, each stanza has four lines, and the lines rhyme in the pattern abab. Think about how many lines and stanzas the poem has in total."
+  }
+ ],
+ "oe": [
+  {
+   "bron": "Examenstijl",
+   "ctx": "You read this line from a poem about a happy day: \"Her smile was as bright as the sun.\" Your teacher asks about the style of the line and wants you to use words from the line itself in your answer.",
+   "v": "Name the figure of speech and explain how you know.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Simile (1p). Een vergelijking met as of like (1p). De lach wordt met de zon vergeleken (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "You read this line from a poem about a stormy afternoon: \"The wind whispered through the trees.\" Your teacher asks why this line sounds soft and alive, and you must explain it with words from the line.",
+   "v": "Name the figure of speech and explain it.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Personificatie (1p). De wind krijgt een menselijke eigenschap, fluisteren (1p). Het maakt de wind levend of zacht (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "You read this poem: \"The sun came out, / the children shout, / the dog ran home, / the cat did roam.\" Your teacher asks about the structure of the poem and wants you to look at the last word of every line.",
+   "v": "Give the rhyme scheme and name the rhyming words.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Rijmschema aabb, de paren staan naast elkaar (1p). out en shout rijmen (1p). home en roam rijmen (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "You read this line from a story about a quiet room: \"The bees buzzed and the clock ticked, tick tock.\" Your teacher asks what the writer wants to make the reader hear and why these words were chosen.",
+   "v": "Name the term and explain your answer.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Onomatopoeia of klanknabootsing (1p). De woorden klinken als het geluid (1p). Voorbeeld buzzed of tick tock (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "A poet writes: \"The ocean is a hungry wolf that eats the shore every night.\" Your teacher asks what the sentence means.",
+   "v": "Name the figure of speech and explain its meaning.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Metafoor (1p). De oceaan wordt een wolf genoemd, zonder like of as (1p). De zee neemt langzaam het land weg (1p)."
+  }
+ ]
+}
