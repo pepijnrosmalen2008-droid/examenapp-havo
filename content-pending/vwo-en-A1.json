@@ -1,0 +1,682 @@
+{
+ "id": "A1",
+ "lo": "en.A.1",
+ "gs": 2,
+ "naam": "Relevante informatie vinden in een Engelse tekst",
+ "beschrijving": "Je leert een Engelse tekst snel te overzien (skimmen), gericht een gegeven te zoeken (scannen) en voorwaarden, uitzonderingen en details in programma's en webpagina's nauwkeurig te controleren.",
+ "ceStatus": "CE",
+ "binas": "",
+ "val": "",
+ "onderwerpen": [
+  "Skimmen en scannen onderscheiden",
+  "Aanwijzingen in de tekst gebruiken",
+  "Schema's en programma's lezen",
+  "Voorwaarden en uitzonderingen",
+  "Details controleren en kiezen"
+ ],
+ "sam": "Bij skimmen lees je vluchtig om het onderwerp en de opbouw te zien, bij scannen zoek je gericht één naam, getal of tijd. Titel, kopjes en eerste zinnen helpen je en met de vraag in je hoofd weet je waarop je moet letten. In schema's en programma's let je op tijd, plaats, prijs, leeftijd en aanmelding. Woorden als unless, only, all en never geven voorwaarden en uitzonderingen. Na het scannen lees je het gevonden stuk nauwkeurig en controleer je elke optie in de tekst.",
+ "begrippen": [
+  {
+   "t": "Skimmen",
+   "d": "Vluchtig lezen voor onderwerp en opbouw."
+  },
+  {
+   "t": "Scannen",
+   "d": "Gericht zoeken naar één gegeven."
+  },
+  {
+   "t": "Kopje",
+   "d": "Een titel boven een deel van de tekst."
+  },
+  {
+   "t": "Eerste zin",
+   "d": "De zin waarmee een alinea vaak het hoofdpunt noemt."
+  },
+  {
+   "t": "Schema",
+   "d": "Een overzicht met tijden, plaatsen en regels."
+  },
+  {
+   "t": "Voorwaarde",
+   "d": "Iets wat moet kloppen voordat iets mag, zoals provided that."
+  },
+  {
+   "t": "Uitzondering",
+   "d": "Een geval waarvoor de regel niet geldt, zoals unless."
+  },
+  {
+   "t": "Detail",
+   "d": "Een klein gegeven zoals een tijd, prijs of naam."
+  },
+  {
+   "t": "Beperking",
+   "d": "Een grens, zoals limited to of only."
+  },
+  {
+   "t": "Alleen",
+   "d": "Het woord only: beperkt het antwoord tot één geval."
+  },
+  {
+   "t": "Absoluut woord",
+   "d": "Woorden als all en never zonder uitzondering."
+  },
+  {
+   "t": "Controleren",
+   "d": "Elk antwoord naast de tekst leggen."
+  }
+ ],
+ "sv": [
+  {
+   "v": "Which reading strategy gives you a quick idea of what a text is about?",
+   "o": [
+    "scanning for one name",
+    "skimming",
+    "reading every word carefully",
+    "studying each word in a dictionary"
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 0,
+   "u": "Skimmen = vluchtig overzicht. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"scanning for one name\"? Dan denk je dat scannen een globaal beeld geeft. Bij scannen zoek je één detail, en dat geeft geen overzicht van de tekst.",
+    "Klopt: bij skimmen lees je vluchtig om het onderwerp en de opbouw te zien.",
+    "Koos je \"reading every word carefully\"? Dan denk je dat woord voor woord lezen een snel overzicht geeft. Dat kost juist veel tijd, en is geen snelle strategie.",
+    "Koos je \"studying each word in a dictionary\"? Dan denk je dat opzoeken een overzicht geeft. Dat is traag werk, en het geeft geen globaal beeld."
+   ],
+   "uh": "Welke strategie past?"
+  },
+  {
+   "v": "Which reading strategy do you use to find a specific number or name?",
+   "o": [
+    "skimming the first lines only",
+    "reading each sentence twice",
+    "guessing from the title",
+    "scanning"
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 0,
+   "u": "Scannen = gericht zoeken. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"skimming the first lines only\"? Dan denk je dat skimmen één detail oplevert. Skimmen geeft een globaal beeld, en vindt niet zomaar een getal.",
+    "Koos je \"reading each sentence twice\"? Dan denk je dat je alles twee keer moet lezen. Dat is veel te traag, voor het zoeken naar één gegeven.",
+    "Koos je \"guessing from the title\"? Dan denk je dat de titel het getal geeft. Een titel noemt het onderwerp, en zelden een precies detail.",
+    "Klopt: bij scannen laat je je ogen over de tekst gaan op zoek naar één gegeven."
+   ],
+   "uh": "Welke strategie past?"
+  },
+  {
+   "v": "Which parts of a text help you skim quickly?",
+   "o": [
+    "title and headings",
+    "footnotes and page numbers",
+    "only the longest paragraph",
+    "the pictures only"
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 1,
+   "u": "Titel, kopjes en eerste zinnen.",
+   "uo": [
+    "Klopt: titel, kopjes en openingszinnen geven de kern van elk deel.",
+    "Koos je \"footnotes and page numbers\"? Dan denk je dat voetnoten en paginanummers de kern geven. Die zeggen niets over de inhoud, en helpen niet bij overzicht.",
+    "Koos je \"only the longest paragraph\"? Dan denk je dat de langste alinea de kern bevat. Lengte zegt niets over belang, dus je mist de andere delen.",
+    "Koos je \"the pictures only\"? Dan denk je dat plaatjes genoeg zijn. Ze geven een indruk, maar missen veel van de inhoud."
+   ],
+   "uh": "Welke delen helpen?"
+  },
+  {
+   "v": "Which words usually signal an exception or a condition?",
+   "o": [
+    "\"for example\" and \"such as\"",
+    "\"therefore\" and \"as a result\"",
+    "\"unless\" and \"provided that\"",
+    "\"firstly\" and \"finally\""
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 3,
+   "u": "Unless en provided that = voorwaarde.",
+   "uo": [
+    "Koos je \"for example and such as\"? Dan denk je dat deze woorden een regel beperken omdat ze iets specifieks noemen. Ze leiden alleen een voorbeeld in, dus er komt geen voorwaarde.",
+    "Koos je \"therefore and as a result\"? Dan denk je dat deze woorden een uitzondering geven omdat ze een nieuw punt openen. Ze geven een gevolg aan, en laten de regel gelden.",
+    "Klopt: unless en provided that geven een uitzondering of voorwaarde aan.",
+    "Koos je \"firstly and finally\"? Dan denk je dat deze woorden een voorwaarde geven omdat ze de lezer sturen. Ze noemen alleen de volgorde, en beperken niets."
+   ],
+   "uh": "Welke woorden geven een voorwaarde?"
+  },
+  {
+   "v": "Why is it useful to read the question before you read the text?",
+   "o": [
+    "you can skip the whole text",
+    "the answer is always in the first line",
+    "you know what to look for",
+    "you do not need to read any heading"
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 1,
+   "u": "Eerst de vraag, dan zoeken. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"you can skip the whole text\"? Dan denk je dat je de tekst kunt overslaan. Het antwoord staat toch in de tekst, dus je moet wel lezen.",
+    "Koos je \"the answer is always in the first line\"? Dan denk je dat het antwoord altijd vooraan staat. Dat klopt niet, het kan overal staan.",
+    "Klopt: je weet dan waarop je moet letten en kunt gericht lezen.",
+    "Koos je \"you do not need to read any heading\"? Dan denk je dat kopjes onnodig zijn. Kopjes helpen juist, om de juiste plek te vinden."
+   ],
+   "uh": "Waarom eerst de vraag?"
+  },
+  {
+   "v": "What should you check when an answer contains \"all\" or \"never\"?",
+   "o": [
+    "if the text has no exceptions",
+    "whether the answer is short",
+    "whether it is the first option",
+    "whether it uses a difficult word"
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 4,
+   "u": "All en never: controleer uitzonderingen.",
+   "uo": [
+    "Klopt: zulke woorden zijn sterk, dus controleer of de tekst echt geen uitzondering noemt.",
+    "Koos je \"whether the answer is short\"? Dan denk je dat de lengte telt. De lengte zegt niets, over de juistheid van het antwoord.",
+    "Koos je \"whether it is the first option\"? Dan denk je dat de volgorde telt. De plaats van een optie zegt niets, over de juistheid.",
+    "Koos je \"whether it uses a difficult word\"? Dan denk je dat moeilijke woorden telt. Het gaat om de strekking, en niet om de woordkeus."
+   ],
+   "uh": "Wat controleer je?"
+  },
+  {
+   "v": "What do you do after you have scanned your way to the right part of the text?",
+   "o": [
+    "stop reading and choose an answer",
+    "read the whole text again from the start",
+    "look for the longest word nearby",
+    "read that part carefully"
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 4,
+   "u": "Scannen, dan nauwkeurig lezen.",
+   "uo": [
+    "Koos je \"stop reading and choose an answer\"? Dan denk je dat scannen genoeg is. Je weet pas na zorgvuldig lezen of het klopt, dus je moet nog controleren.",
+    "Koos je \"read the whole text again from the start\"? Dan denk je dat je opnieuw moet beginnen. Dat kost tijd, en je hebt de plek al gevonden.",
+    "Koos je \"look for the longest word nearby\"? Dan denk je dat het langste woord helpt. De lengte zegt niets, over wat je zoekt.",
+    "Klopt: na het scannen lees je dat stuk nauwkeurig om de details te controleren."
+   ],
+   "uh": "Wat doe je daarna?"
+  },
+  {
+   "v": "At what time is the debate?",
+   "o": [
+    "15.00 on Sunday afternoon",
+    "13.00 on Saturday",
+    "14.00 on Friday",
+    "16.00 on Saturday evening"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 2,
+   "u": "Debat: zaterdag 13.00. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"15.00 on Sunday afternoon\"? Dan denk je dat het debat op zondag is. Op zondag staat het slotconcert om 15.00, en het debat is op zaterdag.",
+    "Klopt: het debat Should Cities Ban Cars? begint zaterdag om 13.00.",
+    "Koos je \"14.00 on Friday\"? Dan denk je dat het debat op vrijdag is. Om 14.00 is de lezing over zoet water, en niet het debat.",
+    "Koos je \"16.00 on Saturday evening\"? Dan denk je dat het debat om 16.00 is. Om 16.00 is de film Ocean Planet, en het debat begint eerder."
+   ],
+   "uh": "Wanneer is het debat?",
+   "ctx": "Read this programme: \"Riverside Science Festival, 14-16 March. Friday 14 March: 10.00 opening by Professor Anna Verhoef in the Great Hall; 11.30 workshop 'Robots in Healthcare' in Room 2 (limited to 30 participants, registration required); 14.00 lecture 'The Future of Fresh Water' in the Great Hall (free entry). Saturday 15 March: 09.30 guided walk through the botanical garden, meeting at the main gate (children under 12 must be accompanied by an adult); 13.00 debate 'Should Cities Ban Cars?' in Room 1; 16.00 film 'Ocean Planet' in the Cinema Hall (tickets 6 euros, students 4 euros). Sunday 16 March: 10.30 family workshop 'Build Your Own Rocket' in Room 3 (ages 8 to 12); 15.00 closing concert by the Riverside Youth Orchestra. All events are in English unless stated otherwise. The cafeteria is open from 09.00 to 17.00 every day and offers vegetarian and vegan food. Visitors who arrive by bicycle receive a free drink at the entrance.\""
+  },
+  {
+   "v": "How much does a student pay for the film?",
+   "o": [
+    "6 euros",
+    "nothing at all",
+    "10 euros",
+    "4 euros"
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 2,
+   "u": "Student: 4 euro. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"6 euros\"? Dan denk je dat studenten het gewone tarief betalen. Dat is 6 euro voor iedereen, en studenten krijgen korting.",
+    "Koos je \"nothing at all\"? Dan denk je dat de film gratis is. Alleen de lezing is gratis, en de film kost geld.",
+    "Koos je \"10 euros\"? Dan denk je dat studenten meer betalen. Dat staat nergens, de prijs is 4 euro.",
+    "Klopt: voor studenten kost het kaartje 4 euro."
+   ],
+   "uh": "Hoeveel betaalt een student?",
+   "ctx": "Read this programme: \"Riverside Science Festival, 14-16 March. Friday 14 March: 10.00 opening by Professor Anna Verhoef in the Great Hall; 11.30 workshop 'Robots in Healthcare' in Room 2 (limited to 30 participants, registration required); 14.00 lecture 'The Future of Fresh Water' in the Great Hall (free entry). Saturday 15 March: 09.30 guided walk through the botanical garden, meeting at the main gate (children under 12 must be accompanied by an adult); 13.00 debate 'Should Cities Ban Cars?' in Room 1; 16.00 film 'Ocean Planet' in the Cinema Hall (tickets 6 euros, students 4 euros). Sunday 16 March: 10.30 family workshop 'Build Your Own Rocket' in Room 3 (ages 8 to 12); 15.00 closing concert by the Riverside Youth Orchestra. All events are in English unless stated otherwise. The cafeteria is open from 09.00 to 17.00 every day and offers vegetarian and vegan food. Visitors who arrive by bicycle receive a free drink at the entrance.\""
+  },
+  {
+   "v": "Which event requires registration?",
+   "o": [
+    "the rocket workshop for children",
+    "the robots workshop",
+    "the botanical walk in the garden",
+    "the closing concert on Sunday"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 3,
+   "u": "Registration required = aanmelden.",
+   "uo": [
+    "Koos je \"the rocket workshop for children\"? Dan denk je dat de raketworkshop aanmelding vraagt. Dat staat er niet bij, alleen de leeftijd van 8 tot 12.",
+    "Klopt: bij de workshop Robots in Healthcare staat dat je je moet aanmelden.",
+    "Koos je \"the botanical walk in the garden\"? Dan denk je dat de wandeling aanmelding vraagt. Er staat alleen dat kinderen onder 12 begeleid moeten worden, en niets over aanmelding.",
+    "Koos je \"the closing concert on Sunday\"? Dan denk je dat het concert aanmelding vraagt. Daar staat niets over, alleen de tijd en het orkest."
+   ],
+   "uh": "Welk evenement vraagt aanmelding?",
+   "ctx": "Read this programme: \"Riverside Science Festival, 14-16 March. Friday 14 March: 10.00 opening by Professor Anna Verhoef in the Great Hall; 11.30 workshop 'Robots in Healthcare' in Room 2 (limited to 30 participants, registration required); 14.00 lecture 'The Future of Fresh Water' in the Great Hall (free entry). Saturday 15 March: 09.30 guided walk through the botanical garden, meeting at the main gate (children under 12 must be accompanied by an adult); 13.00 debate 'Should Cities Ban Cars?' in Room 1; 16.00 film 'Ocean Planet' in the Cinema Hall (tickets 6 euros, students 4 euros). Sunday 16 March: 10.30 family workshop 'Build Your Own Rocket' in Room 3 (ages 8 to 12); 15.00 closing concert by the Riverside Youth Orchestra. All events are in English unless stated otherwise. The cafeteria is open from 09.00 to 17.00 every day and offers vegetarian and vegan food. Visitors who arrive by bicycle receive a free drink at the entrance.\""
+  },
+  {
+   "v": "What must adults do on the guided walk?",
+   "o": [
+    "pay 4 euros for each child",
+    "register in Room 1",
+    "accompany children under 12",
+    "reserve seats in advance"
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 3,
+   "u": "Onder 12: begeleiding. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"pay 4 euros for each child\"? Dan denk je dat er per kind betaald moet worden. Daar staat niets over, alleen over begeleiding.",
+    "Koos je \"register in Room 1\"? Dan denk je dat er aanmelding in Room 1 nodig is. Room 1 hoort bij het debat, en niet bij de wandeling.",
+    "Klopt: kinderen onder de 12 moeten door een volwassene worden begeleid.",
+    "Koos je \"reserve seats in advance\"? Dan denk je dat er stoelen gereserveerd moeten worden. Bij een wandeling zijn er geen stoelen, en dat staat er niet."
+   ],
+   "uh": "Wat moeten volwassenen doen?",
+   "ctx": "Read this programme: \"Riverside Science Festival, 14-16 March. Friday 14 March: 10.00 opening by Professor Anna Verhoef in the Great Hall; 11.30 workshop 'Robots in Healthcare' in Room 2 (limited to 30 participants, registration required); 14.00 lecture 'The Future of Fresh Water' in the Great Hall (free entry). Saturday 15 March: 09.30 guided walk through the botanical garden, meeting at the main gate (children under 12 must be accompanied by an adult); 13.00 debate 'Should Cities Ban Cars?' in Room 1; 16.00 film 'Ocean Planet' in the Cinema Hall (tickets 6 euros, students 4 euros). Sunday 16 March: 10.30 family workshop 'Build Your Own Rocket' in Room 3 (ages 8 to 12); 15.00 closing concert by the Riverside Youth Orchestra. All events are in English unless stated otherwise. The cafeteria is open from 09.00 to 17.00 every day and offers vegetarian and vegan food. Visitors who arrive by bicycle receive a free drink at the entrance.\""
+  },
+  {
+   "v": "How much of the words did the daily group remember six weeks later?",
+   "o": [
+    "78 per cent",
+    "52 per cent",
+    "100 per cent",
+    "26 per cent"
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 3,
+   "u": "Dagelijkse groep: 78 procent. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: de groep die elke dag oefende onthield 78 procent van de woorden.",
+    "Koos je \"52 per cent\"? Dan denk je dat het 52 procent was. Dat is de score van de eerste groep, niet van de dagelijkse groep.",
+    "Koos je \"100 per cent\"? Dan denk je dat ze alles onthielden. Dat staat er niet, het was 78 procent.",
+    "Koos je \"26 per cent\"? Dan denk je dat het verschil als score telt. De score was 78 procent, en 26 is het verschil."
+   ],
+   "uh": "Hoeveel onthield de dagelijkse groep?",
+   "ctx": "Read this article: \"For decades, language teachers have told students to study for an hour every evening. A growing number of researchers now argue that shorter, more frequent sessions work better. In a study at a university in Utrecht, two groups of first-year students learned the same 200 French words over four weeks. The first group studied for one hour twice a week; the second group studied for ten minutes every day on a phone app. When tested six weeks later, the second group remembered 78 per cent of the words, against 52 per cent for the first group. The researchers explain that the brain needs time between sessions to store new information, and that daily repetition keeps words fresh. Critics, however, point out that the students in the second group were also more motivated, because the app awarded points and badges. They warn that the results might say more about motivation than about method. The research team accepts this, but notes that even after correcting for motivation the daily group still scored higher. Teachers are therefore advised to combine short daily practice with longer lessons in which students apply what they have learned.\""
+  },
+  {
+   "v": "What is the best summary of the article after skimming it?",
+   "o": [
+    "short daily practice works well",
+    "apps harm how students learn words",
+    "students should always study at night",
+    "French is a very difficult language"
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 0,
+   "u": "Kort en vaak werkt beter. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: het onderzoek laat zien dat kort en dagelijks oefenen betere resultaten gaf.",
+    "Koos je \"apps harm how students learn words\"? Dan denk je dat apps slecht zijn. De app-groep scoorde juist beter, dus dat is de strekking niet.",
+    "Koos je \"students should always study at night\"? Dan denk je dat studeren in de avond de kern is. Dat staat er niet, het gaat om korte, dagelijkse sessies.",
+    "Koos je \"French is a very difficult language\"? Dan denk je dat het over de moeilijkheid van Frans gaat. Frans is alleen het voorbeeld, de kern gaat over oefenen."
+   ],
+   "uh": "Wat is de samenvatting?",
+   "ctx": "Read this article: \"For decades, language teachers have told students to study for an hour every evening. A growing number of researchers now argue that shorter, more frequent sessions work better. In a study at a university in Utrecht, two groups of first-year students learned the same 200 French words over four weeks. The first group studied for one hour twice a week; the second group studied for ten minutes every day on a phone app. When tested six weeks later, the second group remembered 78 per cent of the words, against 52 per cent for the first group. The researchers explain that the brain needs time between sessions to store new information, and that daily repetition keeps words fresh. Critics, however, point out that the students in the second group were also more motivated, because the app awarded points and badges. They warn that the results might say more about motivation than about method. The research team accepts this, but notes that even after correcting for motivation the daily group still scored higher. Teachers are therefore advised to combine short daily practice with longer lessons in which students apply what they have learned.\""
+  },
+  {
+   "v": "Who can apply for the card?",
+   "o": [
+    "part-time students of 18",
+    "everyone with a school e-mail address",
+    "full-time students of 16 or older",
+    "children under 4"
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 2,
+   "u": "Fulltime en 16 jaar. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"part-time students of 18\"? Dan denk je dat parttimers de kaart kunnen krijgen. Zij komen niet in aanmerking, ook al zijn ze 18.",
+    "Koos je \"everyone with a school e-mail address\"? Dan denk je dat een e-mailadres genoeg is. De tekst eist inschrijving als fulltimestudent, en noemt geen e-mailadres.",
+    "Klopt: de kaart is voor fulltimestudenten van 16 jaar of ouder.",
+    "Koos je \"children under 4\"? Dan denk je dat kleine kinderen een kaart kunnen aanvragen. Die reizen gratis met een volwassene, maar vragen geen kaart aan."
+   ],
+   "uh": "Wie kan de kaart aanvragen?",
+   "ctx": "Read this web page: \"Student Travel Card, frequently asked questions. Who can apply? Students aged 16 or older who are enrolled full-time at a recognised school or university; part-time students are not eligible. How much does it cost? The card itself is free, but you pay 12 euros per month when you use it. Which trips are included? Unlimited travel by train and bus on weekdays between 6.00 and 18.00 and all day at weekends. On weekdays between 18.00 and 6.00 you get 40 per cent off. When do I have to renew? Every year before 1 September; if you renew after that date, you pay a late fee of 10 euros. What if I lose my card? Report it within 24 hours via the website; a new card costs 7.50 euros and arrives within five working days. Can I travel abroad? No, the card is only valid within the country. Can I take a friend? Children under 4 travel free with a paying adult; other passengers need their own ticket. How do I cancel? Cancellations must be made in writing at least 14 days before the end of the month.\""
+  },
+  {
+   "v": "What happens if you renew after 1 September?",
+   "o": [
+    "you get 40 per cent off your fare",
+    "you pay a 10-euro late fee",
+    "you pay 7.50 euros for a new card",
+    "you cannot renew at all"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 3,
+   "u": "Te laat verlengen: 10 euro. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"you get 40 per cent off your fare\"? Dan denk je dat je korting krijgt. De 40 procent geldt voor reizen in de avond, en niet voor verlengen.",
+    "Klopt: wie na 1 september verlengt, betaalt 10 euro extra.",
+    "Koos je \"you pay 7.50 euros for a new card\"? Dan denk je dat je 7,50 euro betaalt. Dat is de prijs van een nieuwe kaart, en niet van laat verlengen.",
+    "Koos je \"you cannot renew at all\"? Dan denk je dat verlengen niet meer kan. De tekst noemt alleen een boete, en geen verbod."
+   ],
+   "uh": "Wat gebeurt er na 1 september?",
+   "ctx": "Read this web page: \"Student Travel Card, frequently asked questions. Who can apply? Students aged 16 or older who are enrolled full-time at a recognised school or university; part-time students are not eligible. How much does it cost? The card itself is free, but you pay 12 euros per month when you use it. Which trips are included? Unlimited travel by train and bus on weekdays between 6.00 and 18.00 and all day at weekends. On weekdays between 18.00 and 6.00 you get 40 per cent off. When do I have to renew? Every year before 1 September; if you renew after that date, you pay a late fee of 10 euros. What if I lose my card? Report it within 24 hours via the website; a new card costs 7.50 euros and arrives within five working days. Can I travel abroad? No, the card is only valid within the country. Can I take a friend? Children under 4 travel free with a paying adult; other passengers need their own ticket. How do I cancel? Cancellations must be made in writing at least 14 days before the end of the month.\""
+  },
+  {
+   "v": "When do you get a discount on weekdays?",
+   "o": [
+    "between 6.00 and 18.00",
+    "only at weekends",
+    "after you have cancelled",
+    "between 18.00 and 6.00"
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 3,
+   "u": "Avond: 40 procent korting. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"between 6.00 and 18.00\"? Dan denk je dat er overdag korting is. Dan reis je onbeperkt, en krijg je geen korting maar gratis reizen.",
+    "Koos je \"only at weekends\"? Dan denk je dat korting alleen in het weekend geldt. In het weekend reis je de hele dag onbeperkt, dus daar is geen korting.",
+    "Koos je \"after you have cancelled\"? Dan denk je dat korting bij opzeggen hoort. Daar staat niets over, alleen over de schriftelijke opzegging.",
+    "Klopt: tussen 18.00 en 6.00 krijg je 40 procent korting."
+   ],
+   "uh": "Wanneer is er korting?",
+   "ctx": "Read this web page: \"Student Travel Card, frequently asked questions. Who can apply? Students aged 16 or older who are enrolled full-time at a recognised school or university; part-time students are not eligible. How much does it cost? The card itself is free, but you pay 12 euros per month when you use it. Which trips are included? Unlimited travel by train and bus on weekdays between 6.00 and 18.00 and all day at weekends. On weekdays between 18.00 and 6.00 you get 40 per cent off. When do I have to renew? Every year before 1 September; if you renew after that date, you pay a late fee of 10 euros. What if I lose my card? Report it within 24 hours via the website; a new card costs 7.50 euros and arrives within five working days. Can I travel abroad? No, the card is only valid within the country. Can I take a friend? Children under 4 travel free with a paying adult; other passengers need their own ticket. How do I cancel? Cancellations must be made in writing at least 14 days before the end of the month.\""
+  },
+  {
+   "v": "Which group studied for one hour twice a week?",
+   "o": [
+    "the second group",
+    "the first group",
+    "both groups",
+    "neither of the groups"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 4,
+   "u": "Eerste groep: een uur, twee keer.",
+   "uo": [
+    "Koos je \"the second group\"? Dan denk je dat de tweede groep dit deed. Die studeerde elke dag tien minuten, en niet twee keer per week een uur.",
+    "Klopt: de eerste groep studeerde twee keer per week een uur.",
+    "Koos je \"both groups\"? Dan denk je dat beide groepen hetzelfde deden. Hun schema verschilde juist, en dat was het hele onderzoek.",
+    "Koos je \"neither of the groups\"? Dan denk je dat geen groep dit deed. De eerste groep deed het wel, en dat staat in de tekst."
+   ],
+   "uh": "Welke groep?",
+   "ctx": "Read this article: \"For decades, language teachers have told students to study for an hour every evening. A growing number of researchers now argue that shorter, more frequent sessions work better. In a study at a university in Utrecht, two groups of first-year students learned the same 200 French words over four weeks. The first group studied for one hour twice a week; the second group studied for ten minutes every day on a phone app. When tested six weeks later, the second group remembered 78 per cent of the words, against 52 per cent for the first group. The researchers explain that the brain needs time between sessions to store new information, and that daily repetition keeps words fresh. Critics, however, point out that the students in the second group were also more motivated, because the app awarded points and badges. They warn that the results might say more about motivation than about method. The research team accepts this, but notes that even after correcting for motivation the daily group still scored higher. Teachers are therefore advised to combine short daily practice with longer lessons in which students apply what they have learned.\""
+  },
+  {
+   "v": "Which statement is NOT correct according to the programme?",
+   "o": [
+    "The lecture on fresh water needs registration.",
+    "The cafeteria is open on all three days.",
+    "Cyclists receive a free drink.",
+    "The closing concert is on Sunday."
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 4,
+   "u": "Controleer elke uitspraak in de tekst.",
+   "uo": [
+    "Klopt: bij de lezing staat free entry en geen aanmelding.",
+    "Koos je \"The cafeteria is open on all three days.\"? Dan denk je dat dit niet klopt. Er staat dat de cafetaria elke dag open is, dus de uitspraak is juist.",
+    "Koos je \"Cyclists receive a free drink.\"? Dan denk je dat dit niet klopt. Er staat dat fietsers een gratis drankje krijgen, dus de uitspraak is juist.",
+    "Koos je \"The closing concert is on Sunday.\"? Dan denk je dat dit niet klopt. Het slotconcert staat op zondag 16 maart, dus de uitspraak is juist."
+   ],
+   "uh": "Welke uitspraak klopt niet?",
+   "ctx": "Read this programme: \"Riverside Science Festival, 14-16 March. Friday 14 March: 10.00 opening by Professor Anna Verhoef in the Great Hall; 11.30 workshop 'Robots in Healthcare' in Room 2 (limited to 30 participants, registration required); 14.00 lecture 'The Future of Fresh Water' in the Great Hall (free entry). Saturday 15 March: 09.30 guided walk through the botanical garden, meeting at the main gate (children under 12 must be accompanied by an adult); 13.00 debate 'Should Cities Ban Cars?' in Room 1; 16.00 film 'Ocean Planet' in the Cinema Hall (tickets 6 euros, students 4 euros). Sunday 16 March: 10.30 family workshop 'Build Your Own Rocket' in Room 3 (ages 8 to 12); 15.00 closing concert by the Riverside Youth Orchestra. All events are in English unless stated otherwise. The cafeteria is open from 09.00 to 17.00 every day and offers vegetarian and vegan food. Visitors who arrive by bicycle receive a free drink at the entrance.\""
+  },
+  {
+   "v": "Anna is 17 and studies part-time. She wants a card. What does the text say about her?",
+   "o": [
+    "she can apply and pays 12 euros per month",
+    "she can apply but pays a late fee",
+    "she must wait until she is 18",
+    "no, she is not full-time"
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 3,
+   "u": "Parttime: niet toegestaan. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"she can apply and pays 12 euros per month\"? Dan denk je dat leeftijd genoeg is. De tekst eist ook fulltime studeren, dus ze komt niet in aanmerking.",
+    "Koos je \"she can apply but pays a late fee\"? Dan denk je dat ze met een boete kan aanvragen. De boete geldt voor te laat verlengen, en niet voor aanvragen.",
+    "Koos je \"she must wait until she is 18\"? Dan denk je dat ze op haar 18e kan aanvragen. Leeftijd is niet het probleem, maar parttime studeren.",
+    "Klopt: parttimestudenten komen niet in aanmerking, ook als ze oud genoeg zijn."
+   ],
+   "uh": "Wat zegt de tekst over Anna?",
+   "ctx": "Read this web page: \"Student Travel Card, frequently asked questions. Who can apply? Students aged 16 or older who are enrolled full-time at a recognised school or university; part-time students are not eligible. How much does it cost? The card itself is free, but you pay 12 euros per month when you use it. Which trips are included? Unlimited travel by train and bus on weekdays between 6.00 and 18.00 and all day at weekends. On weekdays between 18.00 and 6.00 you get 40 per cent off. When do I have to renew? Every year before 1 September; if you renew after that date, you pay a late fee of 10 euros. What if I lose my card? Report it within 24 hours via the website; a new card costs 7.50 euros and arrives within five working days. Can I travel abroad? No, the card is only valid within the country. Can I take a friend? Children under 4 travel free with a paying adult; other passengers need their own ticket. How do I cancel? Cancellations must be made in writing at least 14 days before the end of the month.\""
+  },
+  {
+   "v": "Tom loses his card and reports it within a day. What will he pay, and when does he get a new card?",
+   "o": [
+    "10 euros, delivered within one day",
+    "12 euros, delivered within 14 days",
+    "7.50 euros in five working days",
+    "nothing, within five working days"
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 3,
+   "u": "7,50 euro en vijf werkdagen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"10 euros, delivered within one day\"? Dan denk je dat de nieuwe kaart 10 euro kost. Dat is de boete voor laat verlengen, en de levertijd is vijf werkdagen.",
+    "Koos je \"12 euros, delivered within 14 days\"? Dan denk je dat de nieuwe kaart 12 euro kost. Dat is het maandbedrag voor gebruik, en de levertijd is korter.",
+    "Klopt: een nieuwe kaart kost 7,50 euro en komt binnen vijf werkdagen.",
+    "Koos je \"nothing, within five working days\"? Dan denk je dat een nieuwe kaart gratis is. De tekst noemt een prijs van 7,50 euro, dus het is niet gratis."
+   ],
+   "uh": "Wat betaalt Tom?",
+   "ctx": "Read this web page: \"Student Travel Card, frequently asked questions. Who can apply? Students aged 16 or older who are enrolled full-time at a recognised school or university; part-time students are not eligible. How much does it cost? The card itself is free, but you pay 12 euros per month when you use it. Which trips are included? Unlimited travel by train and bus on weekdays between 6.00 and 18.00 and all day at weekends. On weekdays between 18.00 and 6.00 you get 40 per cent off. When do I have to renew? Every year before 1 September; if you renew after that date, you pay a late fee of 10 euros. What if I lose my card? Report it within 24 hours via the website; a new card costs 7.50 euros and arrives within five working days. Can I travel abroad? No, the card is only valid within the country. Can I take a friend? Children under 4 travel free with a paying adult; other passengers need their own ticket. How do I cancel? Cancellations must be made in writing at least 14 days before the end of the month.\""
+  },
+  {
+   "v": "A family with a ten-year-old child wants a morning activity on Sunday. Which fits best?",
+   "o": [
+    "the debate at 13.00",
+    "the film at 16.00",
+    "the rocket workshop",
+    "the robots workshop at 11.30 on Friday"
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 2,
+   "u": "Zondagochtend, 10 jaar: raket.",
+   "uo": [
+    "Koos je \"the debate at 13.00\"? Dan denk je dat het debat past. Dat is op zaterdag en niet voor kinderen, en niet in de ochtend.",
+    "Koos je \"the film at 16.00\"? Dan denk je dat de film past. Die is op zaterdag middag, en niet op zondagochtend.",
+    "Klopt: de raketworkshop is voor 8 tot 12 jaar en begint zondag om 10.30.",
+    "Koos je \"the robots workshop at 11.30 on Friday\"? Dan denk je dat de robotworkshop past. Die is op vrijdag, en beperkt tot 30 deelnemers met aanmelding."
+   ],
+   "uh": "Welke activiteit past?",
+   "ctx": "Read this programme: \"Riverside Science Festival, 14-16 March. Friday 14 March: 10.00 opening by Professor Anna Verhoef in the Great Hall; 11.30 workshop 'Robots in Healthcare' in Room 2 (limited to 30 participants, registration required); 14.00 lecture 'The Future of Fresh Water' in the Great Hall (free entry). Saturday 15 March: 09.30 guided walk through the botanical garden, meeting at the main gate (children under 12 must be accompanied by an adult); 13.00 debate 'Should Cities Ban Cars?' in Room 1; 16.00 film 'Ocean Planet' in the Cinema Hall (tickets 6 euros, students 4 euros). Sunday 16 March: 10.30 family workshop 'Build Your Own Rocket' in Room 3 (ages 8 to 12); 15.00 closing concert by the Riverside Youth Orchestra. All events are in English unless stated otherwise. The cafeteria is open from 09.00 to 17.00 every day and offers vegetarian and vegan food. Visitors who arrive by bicycle receive a free drink at the entrance.\""
+  },
+  {
+   "v": "Max arrives on Friday at 13.30 and wants to attend a lecture. Which one can he see?",
+   "o": [
+    "\"Robots in Healthcare\" at 11.30",
+    "the opening at 10.00",
+    "the debate on Saturday",
+    "\"The Future of Fresh Water\" at 14.00"
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 2,
+   "u": "Lezing vrijdag 14.00. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"Robots in Healthcare at 11.30\"? Dan denk je dat hij de robotworkshop kan zien. Die begon al om 11.30, en hij komt pas om 13.30.",
+    "Koos je \"the opening at 10.00\"? Dan denk je dat hij de opening kan zien. Die was al voorbij, toen hij aankwam.",
+    "Koos je \"the debate on Saturday\"? Dan denk je dat het debat een lezing is. Het is op zaterdag, en Max komt op vrijdag.",
+    "Klopt: de lezing begint vrijdag om 14.00, nadat hij is aangekomen."
+   ],
+   "uh": "Welke lezing kan hij zien?",
+   "ctx": "Read this programme: \"Riverside Science Festival, 14-16 March. Friday 14 March: 10.00 opening by Professor Anna Verhoef in the Great Hall; 11.30 workshop 'Robots in Healthcare' in Room 2 (limited to 30 participants, registration required); 14.00 lecture 'The Future of Fresh Water' in the Great Hall (free entry). Saturday 15 March: 09.30 guided walk through the botanical garden, meeting at the main gate (children under 12 must be accompanied by an adult); 13.00 debate 'Should Cities Ban Cars?' in Room 1; 16.00 film 'Ocean Planet' in the Cinema Hall (tickets 6 euros, students 4 euros). Sunday 16 March: 10.30 family workshop 'Build Your Own Rocket' in Room 3 (ages 8 to 12); 15.00 closing concert by the Riverside Youth Orchestra. All events are in English unless stated otherwise. The cafeteria is open from 09.00 to 17.00 every day and offers vegetarian and vegan food. Visitors who arrive by bicycle receive a free drink at the entrance.\""
+  },
+  {
+   "v": "Which sentence gives the main conclusion for teachers?",
+   "o": [
+    "\"Teachers are therefore advised to combine short daily practice with longer lessons.\"",
+    "\"Critics, however, point out that the students were more motivated.\"",
+    "\"In a study at a university in Utrecht, two groups learned the same words.\"",
+    "\"For decades, teachers have told students to study for an hour.\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 0,
+   "u": "Therefore = conclusie. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: therefore leidt het advies in, dat uit het onderzoek volgt.",
+    "Koos je \"Critics, however, point out that the students were...\"? Dan denk je dat de kritiek de conclusie is. Dat is een tegenwerping, en niet het advies.",
+    "Koos je \"In a study at a university in Utrecht, two groups...\"? Dan denk je dat de opzet de conclusie is. Dat is een beschrijving, en geen advies.",
+    "Koos je \"For decades, teachers have told students to study...\"? Dan denk je dat de eerste zin de conclusie is. Die beschrijft de oude gewoonte, en geeft geen advies."
+   ],
+   "uh": "Welke zin is de conclusie?",
+   "ctx": "Read this article: \"For decades, language teachers have told students to study for an hour every evening. A growing number of researchers now argue that shorter, more frequent sessions work better. In a study at a university in Utrecht, two groups of first-year students learned the same 200 French words over four weeks. The first group studied for one hour twice a week; the second group studied for ten minutes every day on a phone app. When tested six weeks later, the second group remembered 78 per cent of the words, against 52 per cent for the first group. The researchers explain that the brain needs time between sessions to store new information, and that daily repetition keeps words fresh. Critics, however, point out that the students in the second group were also more motivated, because the app awarded points and badges. They warn that the results might say more about motivation than about method. The research team accepts this, but notes that even after correcting for motivation the daily group still scored higher. Teachers are therefore advised to combine short daily practice with longer lessons in which students apply what they have learned.\""
+  },
+  {
+   "v": "Which word signals that the next point will be an objection?",
+   "o": [
+    "\"therefore\"",
+    "\"however\"",
+    "\"for example\"",
+    "\"also\""
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 1,
+   "u": "However = tegenwerping. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"therefore\"? Dan denk je dat therefore een bezwaar inleidt omdat het na kritiek kan staan. Het leidt een gevolg of conclusie in, en geen bezwaar.",
+    "Klopt: bij Critics, however, volgt een tegenwerping.",
+    "Koos je \"for example\"? Dan denk je dat for example een bezwaar inleidt omdat het iets specifieks noemt. Het geeft alleen een voorbeeld, en geen tegenwerping.",
+    "Koos je \"also\"? Dan denk je dat also een bezwaar inleidt omdat het nieuwe informatie brengt. Het voegt iets toe, en zet niets tegenover."
+   ],
+   "uh": "Welk woord toont een bezwaar?",
+   "ctx": "Read this article: \"For decades, language teachers have told students to study for an hour every evening. A growing number of researchers now argue that shorter, more frequent sessions work better. In a study at a university in Utrecht, two groups of first-year students learned the same 200 French words over four weeks. The first group studied for one hour twice a week; the second group studied for ten minutes every day on a phone app. When tested six weeks later, the second group remembered 78 per cent of the words, against 52 per cent for the first group. The researchers explain that the brain needs time between sessions to store new information, and that daily repetition keeps words fresh. Critics, however, point out that the students in the second group were also more motivated, because the app awarded points and badges. They warn that the results might say more about motivation than about method. The research team accepts this, but notes that even after correcting for motivation the daily group still scored higher. Teachers are therefore advised to combine short daily practice with longer lessons in which students apply what they have learned.\""
+  },
+  {
+   "v": "According to the critics, why might the results be misleading?",
+   "o": [
+    "the first group was tested too early",
+    "the study used too few words",
+    "the app group studied for longer",
+    "the app group was more motivated"
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 3,
+   "u": "Motivatie door punten. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"the first group was tested too early\"? Dan denk je dat de eerste groep te vroeg getest werd. Beide groepen werden na zes weken getest, en dat is niet het bezwaar.",
+    "Koos je \"the study used too few words\"? Dan denk je dat er te weinig woorden waren. De critici noemen dat niet, ze wijzen op motivatie.",
+    "Koos je \"the app group studied for longer\"? Dan denk je dat de app-groep langer studeerde. Ze studeerde elke dag tien minuten, en dat is in totaal minder dan twee uur per week.",
+    "Klopt: de app gaf punten en badges, dus de groep was gemotiveerder."
+   ],
+   "uh": "Wat is het bezwaar?",
+   "ctx": "Read this article: \"For decades, language teachers have told students to study for an hour every evening. A growing number of researchers now argue that shorter, more frequent sessions work better. In a study at a university in Utrecht, two groups of first-year students learned the same 200 French words over four weeks. The first group studied for one hour twice a week; the second group studied for ten minutes every day on a phone app. When tested six weeks later, the second group remembered 78 per cent of the words, against 52 per cent for the first group. The researchers explain that the brain needs time between sessions to store new information, and that daily repetition keeps words fresh. Critics, however, point out that the students in the second group were also more motivated, because the app awarded points and badges. They warn that the results might say more about motivation than about method. The research team accepts this, but notes that even after correcting for motivation the daily group still scored higher. Teachers are therefore advised to combine short daily practice with longer lessons in which students apply what they have learned.\""
+  },
+  {
+   "v": "Which cost is NOT mentioned in the text?",
+   "o": [
+    "a fee for travel abroad",
+    "12 euros per month for use",
+    "a late fee of 10 euros",
+    "7.50 euros for a new card"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 4,
+   "u": "Controleer elke optie in de tekst.",
+   "uo": [
+    "Klopt: de tekst zegt alleen dat de kaart niet geldig is in het buitenland.",
+    "Koos je \"12 euros per month for use\"? Dan denk je dat dit niet genoemd wordt. Het maandbedrag staat in de tekst, dus dit is wel genoemd.",
+    "Koos je \"a late fee of 10 euros\"? Dan denk je dat dit niet genoemd wordt. De boete staat bij verlengen, dus dit is wel genoemd.",
+    "Koos je \"7.50 euros for a new card\"? Dan denk je dat dit niet genoemd wordt. De prijs van een nieuwe kaart staat in de tekst, dus dit is wel genoemd."
+   ],
+   "uh": "Welke kosten staan er niet?",
+   "ctx": "Read this web page: \"Student Travel Card, frequently asked questions. Who can apply? Students aged 16 or older who are enrolled full-time at a recognised school or university; part-time students are not eligible. How much does it cost? The card itself is free, but you pay 12 euros per month when you use it. Which trips are included? Unlimited travel by train and bus on weekdays between 6.00 and 18.00 and all day at weekends. On weekdays between 18.00 and 6.00 you get 40 per cent off. When do I have to renew? Every year before 1 September; if you renew after that date, you pay a late fee of 10 euros. What if I lose my card? Report it within 24 hours via the website; a new card costs 7.50 euros and arrives within five working days. Can I travel abroad? No, the card is only valid within the country. Can I take a friend? Children under 4 travel free with a paying adult; other passengers need their own ticket. How do I cancel? Cancellations must be made in writing at least 14 days before the end of the month.\""
+  },
+  {
+   "v": "A student wants to travel by train at 19.30 on a Tuesday. What does the text say?",
+   "o": [
+    "she travels for free",
+    "she gets 40 per cent off",
+    "she pays the full price",
+    "she cannot travel at that time"
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 3,
+   "u": "Dinsdagavond: 40 procent korting.",
+   "uo": [
+    "Koos je \"she travels for free\"? Dan denk je dat ze gratis reist. Alleen kinderen onder 4 reizen gratis, en zij krijgt korting.",
+    "Klopt: op doordeweekse dagen tussen 18.00 en 6.00 is er 40 procent korting.",
+    "Koos je \"she pays the full price\"? Dan denk je dat ze het volle tarief betaalt. In de avond is er juist korting, en dat staat in de tekst.",
+    "Koos je \"she cannot travel at that time\"? Dan denk je dat ze dan niet kan reizen. De tekst noemt alleen een lager tarief, en geen verbod."
+   ],
+   "uh": "Wat zegt de tekst?",
+   "ctx": "Read this web page: \"Student Travel Card, frequently asked questions. Who can apply? Students aged 16 or older who are enrolled full-time at a recognised school or university; part-time students are not eligible. How much does it cost? The card itself is free, but you pay 12 euros per month when you use it. Which trips are included? Unlimited travel by train and bus on weekdays between 6.00 and 18.00 and all day at weekends. On weekdays between 18.00 and 6.00 you get 40 per cent off. When do I have to renew? Every year before 1 September; if you renew after that date, you pay a late fee of 10 euros. What if I lose my card? Report it within 24 hours via the website; a new card costs 7.50 euros and arrives within five working days. Can I travel abroad? No, the card is only valid within the country. Can I take a friend? Children under 4 travel free with a paying adult; other passengers need their own ticket. How do I cancel? Cancellations must be made in writing at least 14 days before the end of the month.\""
+  }
+ ],
+ "oe": [
+  {
+   "bron": "Examenstijl",
+   "ctx": "You read the programme of a festival: \"Riverside Science Festival, 14-16 March. Friday 14 March: 10.00 opening by Professor Anna Verhoef in the Great Hall; 11.30 workshop 'Robots in Healthcare' in Room 2 (limited to 30 participants, registration required); 14.00 lecture 'The Future of Fresh Water' in the Great Hall (free entry). Saturday 15 March: 09.30 guided walk through the botanical garden, meeting at the main gate (children under 12 must be accompanied by an adult); 13.00 debate 'Should Cities Ban Cars?' in Room 1; 16.00 film 'Ocean Planet' in the Cinema Hall (tickets 6 euros, students 4 euros). Sunday 16 March: 10.30 family workshop 'Build Your Own Rocket' in Room 3 (ages 8 to 12); 15.00 closing concert by the Riverside Youth Orchestra. All events are in English unless stated otherwise. The cafeteria is open from 09.00 to 17.00 every day and offers vegetarian and vegan food. Visitors who arrive by bicycle receive a free drink at the entrance.\" You must plan a day for a family with a ten-year-old child.",
+   "v": "Choose one activity for Sunday morning and give two reasons from the programme.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "De raketworkshop van 10.30 (1p). De leeftijd van 8 tot 12 past bij een kind van tien (1p). Het is een familieworkshop of in Room 3 op zondag (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "You read a web page about a travel card: \"Student Travel Card, frequently asked questions. Who can apply? Students aged 16 or older who are enrolled full-time at a recognised school or university; part-time students are not eligible. How much does it cost? The card itself is free, but you pay 12 euros per month when you use it. Which trips are included? Unlimited travel by train and bus on weekdays between 6.00 and 18.00 and all day at weekends. On weekdays between 18.00 and 6.00 you get 40 per cent off. When do I have to renew? Every year before 1 September; if you renew after that date, you pay a late fee of 10 euros. What if I lose my card? Report it within 24 hours via the website; a new card costs 7.50 euros and arrives within five working days. Can I travel abroad? No, the card is only valid within the country. Can I take a friend? Children under 4 travel free with a paying adult; other passengers need their own ticket. How do I cancel? Cancellations must be made in writing at least 14 days before the end of the month.\" A friend asks you whether he can get a card.",
+   "v": "Say whether a 17-year-old part-time student can apply and explain why.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Nee, hij kan niet aanvragen (1p). Alleen fulltimestudenten komen in aanmerking (1p). Part-time wordt in de tekst uitgesloten ondanks de leeftijd van 16 of ouder (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "You read an article about learning vocabulary: \"For decades, language teachers have told students to study for an hour every evening. A growing number of researchers now argue that shorter, more frequent sessions work better. In a study at a university in Utrecht, two groups of first-year students learned the same 200 French words over four weeks. The first group studied for one hour twice a week; the second group studied for ten minutes every day on a phone app. When tested six weeks later, the second group remembered 78 per cent of the words, against 52 per cent for the first group. The researchers explain that the brain needs time between sessions to store new information, and that daily repetition keeps words fresh. Critics, however, point out that the students in the second group were also more motivated, because the app awarded points and badges. They warn that the results might say more about motivation than about method. The research team accepts this, but notes that even after correcting for motivation the daily group still scored higher. Teachers are therefore advised to combine short daily practice with longer lessons in which students apply what they have learned.\" Your teacher asks you for the findings.",
+   "v": "Give the two results of the study with their percentages.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "De dagelijkse groep onthield 78 procent van de woorden (1p). De groep van twee keer per week een uur onthield 52 procent (1p). Het verschil is 26 procentpunten of de dagelijkse groep scoorde hoger (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "You read a web page about a travel card: \"Student Travel Card, frequently asked questions. Who can apply? Students aged 16 or older who are enrolled full-time at a recognised school or university; part-time students are not eligible. How much does it cost? The card itself is free, but you pay 12 euros per month when you use it. Which trips are included? Unlimited travel by train and bus on weekdays between 6.00 and 18.00 and all day at weekends. On weekdays between 18.00 and 6.00 you get 40 per cent off. When do I have to renew? Every year before 1 September; if you renew after that date, you pay a late fee of 10 euros. What if I lose my card? Report it within 24 hours via the website; a new card costs 7.50 euros and arrives within five working days. Can I travel abroad? No, the card is only valid within the country. Can I take a friend? Children under 4 travel free with a paying adult; other passengers need their own ticket. How do I cancel? Cancellations must be made in writing at least 14 days before the end of the month.\" A student plans a trip.",
+   "v": "Say what the student pays when he travels at 19.30 on a weekday and why.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Hij krijgt 40 procent korting (1p). Het is op een doordeweekse dag tussen 18.00 en 6.00 (1p). In de uren overdag reist hij onbeperkt zonder korting of het is niet gratis (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "You read the programme of a festival: \"Riverside Science Festival, 14-16 March. Friday 14 March: 10.00 opening by Professor Anna Verhoef in the Great Hall; 11.30 workshop 'Robots in Healthcare' in Room 2 (limited to 30 participants, registration required); 14.00 lecture 'The Future of Fresh Water' in the Great Hall (free entry). Saturday 15 March: 09.30 guided walk through the botanical garden, meeting at the main gate (children under 12 must be accompanied by an adult); 13.00 debate 'Should Cities Ban Cars?' in Room 1; 16.00 film 'Ocean Planet' in the Cinema Hall (tickets 6 euros, students 4 euros). Sunday 16 March: 10.30 family workshop 'Build Your Own Rocket' in Room 3 (ages 8 to 12); 15.00 closing concert by the Riverside Youth Orchestra. All events are in English unless stated otherwise. The cafeteria is open from 09.00 to 17.00 every day and offers vegetarian and vegan food. Visitors who arrive by bicycle receive a free drink at the entrance.\" Max arrives on Friday afternoon.",
+   "v": "Name the first event that Max can still attend at 13.30 on Friday and explain what you checked.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "De lezing The Future of Fresh Water om 14.00 (1p). De workshop om 11.30 en de opening om 10.00 zijn al voorbij (1p). Hij scant op de tijd na 13.30 (1p)."
+  }
+ ]
+}
