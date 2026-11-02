@@ -1,0 +1,682 @@
+{
+ "id": "A7",
+ "lo": "en.A.7",
+ "gs": 2,
+ "naam": "Engelse brieven en e-mails lezen",
+ "beschrijving": "Je leert formele brieven en informele e-mails te lezen: je herkent de opbouw, het doel van de afzender, de toon en de belangrijke details zoals data, bedragen en voorwaarden.",
+ "ceStatus": "CE",
+ "binas": "",
+ "val": "",
+ "onderwerpen": [
+  "Opbouw en soorten brieven",
+  "Doel van de afzender",
+  "Details, bedragen en voorwaarden",
+  "Formeel en informeel register",
+  "Verzoek en afsluiting"
+ ],
+ "sam": "Een brief of e-mail heeft een aanhef, een eerste alinea met het doel, een middenstuk met details en een afsluiting met een verzoek. Een formele brief gebruikt Dear Ms ..., beleefde zinnen als I would appreciate en Yours sincerely. Een informele e-mail gebruikt een voornaam, spreektaal en een afsluiting als Speak soon. Let op data, namen, bedragen, termijnen en voorwaarden zoals unless en maximum.",
+ "begrippen": [
+  {
+   "t": "Aanhef",
+   "d": "De groet aan het begin, zoals Dear Ms Alvarez."
+  },
+  {
+   "t": "Afsluiting",
+   "d": "De slotgroet, zoals Yours sincerely of Speak soon."
+  },
+  {
+   "t": "Formeel",
+   "d": "Beleefd en zakelijk, voor onbekenden en instanties."
+  },
+  {
+   "t": "Informeel",
+   "d": "Los en persoonlijk, voor vrienden."
+  },
+  {
+   "t": "Register",
+   "d": "De mate van formaliteit van de taal."
+  },
+  {
+   "t": "Doel",
+   "d": "Waarom de afzender schrijft."
+  },
+  {
+   "t": "Klacht",
+   "d": "Een brief die een probleem meldt en om herstel vraagt."
+  },
+  {
+   "t": "Verzoek",
+   "d": "Wat de schrijver van de lezer wil, zoals een antwoord."
+  },
+  {
+   "t": "Termijn",
+   "d": "Een datum of tijd waarbinnen iets moet gebeuren."
+  },
+  {
+   "t": "Voorwaarde",
+   "d": "Iets wat moet gelden voordat iets mag."
+  },
+  {
+   "t": "Maximum",
+   "d": "De hoogste grens, zoals 10 euro per item."
+  },
+  {
+   "t": "Afzender",
+   "d": "De persoon die de brief schrijft."
+  }
+ ],
+ "sv": [
+  {
+   "v": "Which opening is typical of a formal letter?",
+   "o": [
+    "\"Hi Sam,\"",
+    "\"Dear Ms Alvarez,\"",
+    "\"Hey there!\"",
+    "\"Yo Lou,\""
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 0,
+   "u": "Dear + naam = formeel. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"Hi Sam,\"? Dan denk je dat Hi een formele aanhef is. Hi hoort bij een bericht aan een vriend, en is informeel.",
+    "Klopt: Dear met een achternaam en titel is de gebruikelijke formele aanhef.",
+    "Koos je \"Hey there!\"? Dan denk je dat Hey there formeel is. Het is spreektaal, en past niet in een officiële brief.",
+    "Koos je \"Yo Lou,\"? Dan denk je dat Yo formeel is. Het is een zeer informele groet, en hoort bij vrienden."
+   ],
+   "uh": "Welke aanhef is formeel?"
+  },
+  {
+   "v": "Which closing is typical of an informal e-mail to a friend?",
+   "o": [
+    "\"Yours faithfully,\"",
+    "\"Yours sincerely,\"",
+    "\"With kind regards,\"",
+    "\"Speak soon,\""
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 0,
+   "u": "Speak soon = informeel. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"Yours faithfully,\"? Dan denk je dat Yours faithfully informeel is. Het is een formele afsluiting, bij een brief aan Dear Sir or Madam.",
+    "Koos je \"Yours sincerely,\"? Dan denk je dat Yours sincerely informeel is. Het is formeel, en hoort bij een brief aan een bekende naam.",
+    "Koos je \"With kind regards,\"? Dan denk je dat With kind regards informeel is. Het is beleefd en zakelijk, en past niet bij een vriend.",
+    "Klopt: Speak soon is een vriendschappelijke afsluiting."
+   ],
+   "uh": "Welke afsluiting is informeel?"
+  },
+  {
+   "v": "Which phrase is more formal?",
+   "o": [
+    "\"I would appreciate a reply.\"",
+    "\"Write back to me soon, OK!\"",
+    "\"Just get back to me, please.\"",
+    "\"Let me know when you can.\""
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 3,
+   "u": "Would appreciate = formeel. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: dit is een beleefde, zakelijke formulering.",
+    "Koos je \"Write back to me soon, OK!\"? Dan denk je dat dit formeel is. Het is een uitroep onder vrienden, en geen zakelijke zin.",
+    "Koos je \"Just get back to me, please.\"? Dan denk je dat dit formeel is. Het klinkt bevelend en informeel, en past niet in een brief.",
+    "Koos je \"Let me know when you can.\"? Dan denk je dat dit formeel is. Het is een korte spreektaalvorm, en past niet bij een officiële brief."
+   ],
+   "uh": "Welke zin is formeler?"
+  },
+  {
+   "v": "What is the aim of a letter of complaint?",
+   "o": [
+    "to invite a friend to a party",
+    "to give news about a holiday",
+    "to ask for a fix",
+    "to thank someone for a gift"
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 1,
+   "u": "Klacht = probleem en oplossing.",
+   "uo": [
+    "Koos je \"to invite a friend to a party\"? Dan denk je dat een klachtenbrief uitnodigt. Dat doet een uitnodiging, en een klacht beschrijft een probleem.",
+    "Koos je \"to give news about a holiday\"? Dan denk je dat een klachtenbrief vakantienieuws geeft. Dat hoort bij een persoonlijke mail, en een klacht vraagt om herstel.",
+    "Klopt: een klachtenbrief beschrijft het probleem en vraagt om een oplossing.",
+    "Koos je \"to thank someone for a gift\"? Dan denk je dat een klachtenbrief bedankt. Dat is een bedankbrief, en een klacht is kritisch."
+   ],
+   "uh": "Wat is het doel?"
+  },
+  {
+   "v": "Which details are usually important in a formal letter?",
+   "o": [
+    "the colour of the paper",
+    "the font of the address",
+    "dates and amounts",
+    "the length of the signature"
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 2,
+   "u": "Datums, namen, bedragen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"the colour of the paper\"? Dan denk je dat de kleur van het papier belangrijk is. Die zegt niets over de inhoud, en geeft geen gegeven.",
+    "Koos je \"the font of the address\"? Dan denk je dat het lettertype belangrijk is. Dat is vorm, en geen inhoud.",
+    "Klopt: zulke gegevens bepalen wat er geregeld moet worden.",
+    "Koos je \"the length of the signature\"? Dan denk je dat de lengte van de handtekening belangrijk is. Die zegt niets over de regeling, en geeft geen gegeven."
+   ],
+   "uh": "Welke gegevens zijn belangrijk?"
+  },
+  {
+   "v": "What does \"I look forward to hearing from you\" ask the reader to do?",
+   "o": [
+    "to reply",
+    "to visit the writer",
+    "to pay a bill",
+    "to sign a form"
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 4,
+   "u": "Hearing from you = antwoorden.",
+   "uo": [
+    "Klopt: de zin is een beleefde manier om om een antwoord te vragen.",
+    "Koos je \"to visit the writer\"? Dan denk je dat de lezer op bezoek moet. Hearing from you gaat over een antwoord, en niet over een bezoek.",
+    "Koos je \"to pay a bill\"? Dan denk je dat de lezer moet betalen. De zin vraagt om een reactie, en niet om een betaling.",
+    "Koos je \"to sign a form\"? Dan denk je dat de lezer iets moet tekenen. De zin vraagt om een antwoord, en niet om een handtekening."
+   ],
+   "uh": "Wat vraagt de zin?"
+  },
+  {
+   "v": "Which part of a letter usually tells why the writer is writing?",
+   "o": [
+    "the signature",
+    "the date line",
+    "the address at the top",
+    "the first paragraph"
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 1,
+   "u": "Eerste alinea = doel. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"the signature\"? Dan denk je dat de handtekening het doel noemt. Die noemt alleen de afzender, en geen doel.",
+    "Koos je \"the date line\"? Dan denk je dat de datum het doel noemt. Die geeft alleen tijd, en geen doel.",
+    "Koos je \"the address at the top\"? Dan denk je dat het adres het doel noemt. Het adres noemt een plaats, en geen reden.",
+    "Klopt: in de eerste alinea noemt de schrijver meestal het doel."
+   ],
+   "uh": "Welk deel noemt het doel?"
+  },
+  {
+   "v": "Why is Daniel Fraser writing?",
+   "o": [
+    "to book a table for ten",
+    "to complain",
+    "to thank the restaurant",
+    "to ask for a job"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 1,
+   "u": "I am writing to complain. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"to book a table for ten\"? Dan denk je dat hij reserveert. Die reservering is al gedaan, en hij klaagt erover.",
+    "Klopt: hij begint met I am writing to complain about the conference dinner.",
+    "Koos je \"to thank the restaurant\"? Dan denk je dat hij bedankt. De brief begint met een klacht, en bevat kritiek.",
+    "Koos je \"to ask for a job\"? Dan denk je dat hij solliciteert. Hij schrijft namens zijn bedrijf over een diner, en niet over een baan."
+   ],
+   "uh": "Waarom schrijft hij?",
+   "ctx": "Read this letter: \"Dear Ms Alvarez, I am writing to complain about the conference dinner on 12 October, which I attended on behalf of Hartwell Associates. We had booked a table for ten in the garden room, as confirmed by your e-mail of 28 September. On arrival, however, we were told that the garden room was closed for a private event and were moved to a corner of the main restaurant, where the music made conversation almost impossible. In addition, three of the vegetarian meals arrived forty minutes after the others, and one was incorrect. I do not expect compensation for the whole evening, but I would appreciate a partial refund of the bill and an explanation of what went wrong. I look forward to hearing from you by the end of next week. Yours sincerely, Daniel Fraser, Events Manager, Hartwell Associates.\""
+  },
+  {
+   "v": "What went wrong with the vegetarian meals?",
+   "o": [
+    "all of them were missing",
+    "they were too expensive for the group",
+    "they were served to another table",
+    "three arrived late and one was wrong"
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 2,
+   "u": "Drie te laat, één fout. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"all of them were missing\"? Dan denk je dat alle maaltijden ontbraken. De tekst zegt dat ze te laat kwamen, en dat er één onjuist was.",
+    "Koos je \"they were too expensive for the group\"? Dan denk je dat het om de prijs ging. De prijs wordt alleen genoemd bij de terugbetaling, en niet bij deze gerechten.",
+    "Koos je \"they were served to another table\"? Dan denk je dat ze bij een andere tafel kwamen. Dat staat niet in de brief, en het gaat om vertraging.",
+    "Klopt: drie vegetarische maaltijden kwamen veertig minuten later en één was fout."
+   ],
+   "uh": "Wat ging er mis?",
+   "ctx": "Read this letter: \"Dear Ms Alvarez, I am writing to complain about the conference dinner on 12 October, which I attended on behalf of Hartwell Associates. We had booked a table for ten in the garden room, as confirmed by your e-mail of 28 September. On arrival, however, we were told that the garden room was closed for a private event and were moved to a corner of the main restaurant, where the music made conversation almost impossible. In addition, three of the vegetarian meals arrived forty minutes after the others, and one was incorrect. I do not expect compensation for the whole evening, but I would appreciate a partial refund of the bill and an explanation of what went wrong. I look forward to hearing from you by the end of next week. Yours sincerely, Daniel Fraser, Events Manager, Hartwell Associates.\""
+  },
+  {
+   "v": "What does he ask for?",
+   "o": [
+    "a full refund and a free dinner",
+    "a refund and an explanation",
+    "a new booking in the garden room",
+    "an apology from the musicians"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 4,
+   "u": "Gedeeltelijke terugbetaling plus uitleg.",
+   "uo": [
+    "Koos je \"a full refund and a free dinner\"? Dan denk je dat hij alles terug wil. Hij schrijft juist dat hij geen vergoeding voor de hele avond verwacht, en vraagt om een gedeelte.",
+    "Klopt: hij vraagt om een gedeeltelijke terugbetaling en een verklaring.",
+    "Koos je \"a new booking in the garden room\"? Dan denk je dat hij een nieuwe reservering wil. Hij vraagt om geld en uitleg, en niet om een nieuwe boeking.",
+    "Koos je \"an apology from the musicians\"? Dan denk je dat hij een excuus van muzikanten wil. Hij noemt alleen de muziek als overlast, en vraagt de eigenaar om uitleg."
+   ],
+   "uh": "Waar vraagt hij om?",
+   "ctx": "Read this letter: \"Dear Ms Alvarez, I am writing to complain about the conference dinner on 12 October, which I attended on behalf of Hartwell Associates. We had booked a table for ten in the garden room, as confirmed by your e-mail of 28 September. On arrival, however, we were told that the garden room was closed for a private event and were moved to a corner of the main restaurant, where the music made conversation almost impossible. In addition, three of the vegetarian meals arrived forty minutes after the others, and one was incorrect. I do not expect compensation for the whole evening, but I would appreciate a partial refund of the bill and an explanation of what went wrong. I look forward to hearing from you by the end of next week. Yours sincerely, Daniel Fraser, Events Manager, Hartwell Associates.\""
+  },
+  {
+   "v": "By when does he want a reply?",
+   "o": [
+    "the end of this month",
+    "the day of the dinner",
+    "the end of next week",
+    "within twenty-four hours"
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 2,
+   "u": "End of next week. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"the end of this month\"? Dan denk je dat hij het eind van de maand noemt. Hij noemt volgende week, en dat is eerder.",
+    "Koos je \"the day of the dinner\"? Dan denk je dat hij de dag van het diner noemt. Dat was 12 oktober, en de reactietermijn komt later.",
+    "Klopt: hij vraagt om een antwoord voor het eind van volgende week.",
+    "Koos je \"within twenty-four hours\"? Dan denk je dat hij binnen een dag wil antwoord. Hij geeft een ruimere termijn, namelijk het eind van volgende week."
+   ],
+   "uh": "Voor wanneer wil hij antwoord?",
+   "ctx": "Read this letter: \"Dear Ms Alvarez, I am writing to complain about the conference dinner on 12 October, which I attended on behalf of Hartwell Associates. We had booked a table for ten in the garden room, as confirmed by your e-mail of 28 September. On arrival, however, we were told that the garden room was closed for a private event and were moved to a corner of the main restaurant, where the music made conversation almost impossible. In addition, three of the vegetarian meals arrived forty minutes after the others, and one was incorrect. I do not expect compensation for the whole evening, but I would appreciate a partial refund of the bill and an explanation of what went wrong. I look forward to hearing from you by the end of next week. Yours sincerely, Daniel Fraser, Events Manager, Hartwell Associates.\""
+  },
+  {
+   "v": "Which phrase shows the formal tone of the letter?",
+   "o": [
+    "\"I would appreciate a partial refund\"",
+    "\"as confirmed by your e-mail\"",
+    "\"the music made conversation almost impossible\"",
+    "\"were moved to a corner\""
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 3,
+   "u": "Would appreciate = beleefd. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: would appreciate is een beleefde, formele formulering.",
+    "Koos je \"as confirmed by your e-mail\"? Dan denk je dat deze woorden de toon tonen. Het is een verwijzing naar een bevestiging, en een feit.",
+    "Koos je \"the music made conversation almost impossible\"? Dan denk je dat deze woorden de formele toon tonen. Ze beschrijven het probleem, en zijn geen beleefde formulering.",
+    "Koos je \"were moved to a corner\"? Dan denk je dat deze woorden de formele toon tonen. Ze beschrijven wat er gebeurde, en zijn neutraal."
+   ],
+   "uh": "Welke woorden tonen de toon?",
+   "ctx": "Read this letter: \"Dear Ms Alvarez, I am writing to complain about the conference dinner on 12 October, which I attended on behalf of Hartwell Associates. We had booked a table for ten in the garden room, as confirmed by your e-mail of 28 September. On arrival, however, we were told that the garden room was closed for a private event and were moved to a corner of the main restaurant, where the music made conversation almost impossible. In addition, three of the vegetarian meals arrived forty minutes after the others, and one was incorrect. I do not expect compensation for the whole evening, but I would appreciate a partial refund of the bill and an explanation of what went wrong. I look forward to hearing from you by the end of next week. Yours sincerely, Daniel Fraser, Events Manager, Hartwell Associates.\""
+  },
+  {
+   "v": "Why is Lou writing to Sam?",
+   "o": [
+    "to say sorry",
+    "to buy festival tickets",
+    "to complain about the flat",
+    "to ask for a lemon cake recipe"
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 1,
+   "u": "Sorry en een voorstel. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: Lou verontschuldigt zich voor de stilte en stelt een picknick voor.",
+    "Koos je \"to buy festival tickets\"? Dan denk je dat Lou kaartjes wil kopen. Lou kan het kaartje nu niet betalen, en stelt iets anders voor.",
+    "Koos je \"to complain about the flat\"? Dan denk je dat Lou klaagt over de flat. Het hete water noemt Lou alleen als reden, en niet als klacht aan Sam.",
+    "Koos je \"to ask for a lemon cake recipe\"? Dan denk je dat Lou om een recept vraagt. Lou vraagt Sam de taart mee te nemen, en niet om een recept."
+   ],
+   "uh": "Waarom schrijft Lou?",
+   "ctx": "Read this e-mail: \"Hi Sam, Sorry I've been so quiet! The last month has been completely mad. First I moved into the new flat, which turned out to have no hot water until last Tuesday (long story), and then my sister's wedding took over everything. I did get your message about the festival, and honestly I'd love to come, but I'm not sure I can afford the ticket right now. Could we maybe do something smaller, like a picnic in the park when the weather improves? I'll bring the sandwiches if you bring that amazing lemon cake you made last time. Let me know which Saturday suits you. Oh, and tell your brother thanks for the book; I finished it on the train and loved the ending! Speak soon, Lou\""
+  },
+  {
+   "v": "Why can Lou probably not go to the festival?",
+   "o": [
+    "the wedding is on the same weekend",
+    "the flat has no hot water",
+    "the ticket is too dear",
+    "Lou has no free time at all"
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 2,
+   "u": "Kaartje te duur. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"the wedding is on the same weekend\"? Dan denk je dat de bruiloft op hetzelfde weekend valt. Dat staat niet in de mail, en Lou noemt geld.",
+    "Koos je \"the flat has no hot water\"? Dan denk je dat het hete water de reden is. Dat probleem is al opgelost, sinds vorige dinsdag.",
+    "Klopt: Lou zegt dat ze het kaartje nu niet kan betalen.",
+    "Koos je \"Lou has no free time at all\"? Dan denk je dat Lou geen tijd heeft. Lou stelt juist een zaterdag voor, dus er is wel tijd."
+   ],
+   "uh": "Waarom gaat Lou waarschijnlijk niet?",
+   "ctx": "Read this e-mail: \"Hi Sam, Sorry I've been so quiet! The last month has been completely mad. First I moved into the new flat, which turned out to have no hot water until last Tuesday (long story), and then my sister's wedding took over everything. I did get your message about the festival, and honestly I'd love to come, but I'm not sure I can afford the ticket right now. Could we maybe do something smaller, like a picnic in the park when the weather improves? I'll bring the sandwiches if you bring that amazing lemon cake you made last time. Let me know which Saturday suits you. Oh, and tell your brother thanks for the book; I finished it on the train and loved the ending! Speak soon, Lou\""
+  },
+  {
+   "v": "What does Lou suggest doing instead of the festival?",
+   "o": [
+    "a visit to the cinema",
+    "a picnic in the park",
+    "a second festival in the autumn",
+    "a holiday abroad together"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 2,
+   "u": "Picknick in het park. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"a visit to the cinema\"? Dan denk je dat Lou de bioscoop voorstelt. Daar staat niets over, en Lou noemt een picknick.",
+    "Klopt: Lou stelt een picknick in het park voor.",
+    "Koos je \"a second festival in the autumn\"? Dan denk je dat Lou een tweede festival voorstelt. Lou kan het eerste niet betalen, en wil iets kleiners.",
+    "Koos je \"a holiday abroad together\"? Dan denk je dat Lou samen op vakantie wil. Dat is juist iets groots, en Lou wil iets kleins."
+   ],
+   "uh": "Wat stelt Lou voor?",
+   "ctx": "Read this e-mail: \"Hi Sam, Sorry I've been so quiet! The last month has been completely mad. First I moved into the new flat, which turned out to have no hot water until last Tuesday (long story), and then my sister's wedding took over everything. I did get your message about the festival, and honestly I'd love to come, but I'm not sure I can afford the ticket right now. Could we maybe do something smaller, like a picnic in the park when the weather improves? I'll bring the sandwiches if you bring that amazing lemon cake you made last time. Let me know which Saturday suits you. Oh, and tell your brother thanks for the book; I finished it on the train and loved the ending! Speak soon, Lou\""
+  },
+  {
+   "v": "Which phrase shows the informal tone of the e-mail?",
+   "o": [
+    "\"I would appreciate\"",
+    "\"Yours sincerely\"",
+    "\"Dear Sir or Madam\"",
+    "\"completely mad\""
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 3,
+   "u": "Completely mad = informeel. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"I would appreciate\"? Dan denk je dat deze woorden informeel zijn omdat ze vriendelijk klinken. Het is een beleefde formele zin, en komt niet in de mail voor.",
+    "Koos je \"Yours sincerely\"? Dan denk je dat deze woorden informeel zijn omdat sincerely warm klinkt. Het is een vaste formele afsluiting, en staat niet in de mail.",
+    "Koos je \"Dear Sir or Madam\"? Dan denk je dat deze woorden informeel zijn omdat het een aanhef is. Het is een formele aanhef aan een onbekende, en staat niet in de mail.",
+    "Klopt: completely mad is spreektaal en past bij een vriend."
+   ],
+   "uh": "Welke woorden tonen de informele toon?",
+   "ctx": "Read this e-mail: \"Hi Sam, Sorry I've been so quiet! The last month has been completely mad. First I moved into the new flat, which turned out to have no hot water until last Tuesday (long story), and then my sister's wedding took over everything. I did get your message about the festival, and honestly I'd love to come, but I'm not sure I can afford the ticket right now. Could we maybe do something smaller, like a picnic in the park when the weather improves? I'll bring the sandwiches if you bring that amazing lemon cake you made last time. Let me know which Saturday suits you. Oh, and tell your brother thanks for the book; I finished it on the train and loved the ending! Speak soon, Lou\""
+  },
+  {
+   "v": "When will the membership card be sent?",
+   "o": [
+    "as soon as he confirms his e-mail",
+    "within ten working days",
+    "within four weeks",
+    "after the first loan"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 2,
+   "u": "Binnen tien werkdagen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"as soon as he confirms his e-mail\"? Dan denk je dat de kaart komt zodra hij zijn e-mail bevestigt. Dat is de voorwaarde om te activeren, en niet de verzendtijd.",
+    "Klopt: de kaart wordt binnen tien werkdagen gestuurd.",
+    "Koos je \"within four weeks\"? Dan denk je dat de kaart binnen vier weken komt. Vier weken is de uitleentermijn, en niet de verzendtijd.",
+    "Koos je \"after the first loan\"? Dan denk je dat de kaart pas na het eerste lenen komt. Dat staat niet in de brief, de kaart komt eerder."
+   ],
+   "uh": "Wanneer komt de kaart?",
+   "ctx": "Read this letter: \"Dear Mr Okafor, Thank you for your application for membership of Riverside Library. We are pleased to confirm that your application has been approved. Your membership card will be sent to the address you provided within ten working days. Please note that the card can only be activated after you have confirmed your e-mail address by clicking the link in the message we will send you tomorrow. Members may borrow up to eight items at a time for a period of four weeks; items can be renewed twice unless another member has reserved them. Late returns cost 25 cents per item per day, with a maximum of 10 euros per item. If you have any questions, you are welcome to contact the front desk, which is open Monday to Saturday from 9.00 to 17.00. Yours sincerely, Hannah Brooks, Membership Services.\""
+  },
+  {
+   "v": "What must Mr Okafor do before the card can be used?",
+   "o": [
+    "confirm his e-mail",
+    "visit the front desk",
+    "pay a fee of 10 euros",
+    "return a signed form"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 2,
+   "u": "E-mail bevestigen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: de kaart kan pas worden geactiveerd nadat hij zijn e-mailadres bevestigt.",
+    "Koos je \"visit the front desk\"? Dan denk je dat hij langs de balie moet. De balie is alleen voor vragen, en niet voor activeren.",
+    "Koos je \"pay a fee of 10 euros\"? Dan denk je dat hij 10 euro moet betalen. Dat is het maximum van de boete, en niet een activeringsprijs.",
+    "Koos je \"return a signed form\"? Dan denk je dat hij een formulier moet terugsturen. Dat staat niet in de brief, en alleen de e-mail moet worden bevestigd."
+   ],
+   "uh": "Wat moet hij eerst doen?",
+   "ctx": "Read this letter: \"Dear Mr Okafor, Thank you for your application for membership of Riverside Library. We are pleased to confirm that your application has been approved. Your membership card will be sent to the address you provided within ten working days. Please note that the card can only be activated after you have confirmed your e-mail address by clicking the link in the message we will send you tomorrow. Members may borrow up to eight items at a time for a period of four weeks; items can be renewed twice unless another member has reserved them. Late returns cost 25 cents per item per day, with a maximum of 10 euros per item. If you have any questions, you are welcome to contact the front desk, which is open Monday to Saturday from 9.00 to 17.00. Yours sincerely, Hannah Brooks, Membership Services.\""
+  },
+  {
+   "v": "Mr Okafor returns a book ten days later than allowed. What does he pay for that book?",
+   "o": [
+    "10 euros",
+    "25 cents in total",
+    "nothing, because renewals are free",
+    "2.50 euros"
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 2,
+   "u": "10 × 25 cent = 2,50 euro. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"10 euros\"? Dan denk je dat hij het maximum betaalt. Dat zou pas na veertig dagen gelden, en hij is maar tien dagen te laat.",
+    "Koos je \"25 cents in total\"? Dan denk je dat hij maar één dag betaalt. De boete geldt per dag, dus tien dagen kosten meer.",
+    "Koos je \"nothing, because renewals are free\"? Dan denk je dat verlengen gratis is, dus er is geen boete. Hij heeft niet verlengd, en te laat inleveren kost geld.",
+    "Klopt: tien dagen keer 25 cent is 2,50 euro, onder het maximum van 10 euro."
+   ],
+   "uh": "Wat betaalt hij?",
+   "ctx": "Read this letter: \"Dear Mr Okafor, Thank you for your application for membership of Riverside Library. We are pleased to confirm that your application has been approved. Your membership card will be sent to the address you provided within ten working days. Please note that the card can only be activated after you have confirmed your e-mail address by clicking the link in the message we will send you tomorrow. Members may borrow up to eight items at a time for a period of four weeks; items can be renewed twice unless another member has reserved them. Late returns cost 25 cents per item per day, with a maximum of 10 euros per item. If you have any questions, you are welcome to contact the front desk, which is open Monday to Saturday from 9.00 to 17.00. Yours sincerely, Hannah Brooks, Membership Services.\""
+  },
+  {
+   "v": "Which statement about renewing is correct?",
+   "o": [
+    "items can never be renewed",
+    "items can be renewed without any limit",
+    "items can be renewed twice unless reserved",
+    "items can be renewed only at the front desk"
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 2,
+   "u": "Twee keer, tenzij gereserveerd.",
+   "uo": [
+    "Koos je \"items can never be renewed\"? Dan denk je dat verlengen niet kan. De brief zegt dat het tweemaal mag, dus dat is onjuist.",
+    "Koos je \"items can be renewed without any limit\"? Dan denk je dat er geen grens is. Er staat twice, en dat is een limiet.",
+    "Klopt: verlengen kan twee keer, tenzij een ander lid het item heeft gereserveerd.",
+    "Koos je \"items can be renewed only at the front desk\"? Dan denk je dat verlengen alleen aan de balie kan. Dat staat niet in de brief, en er wordt geen plaats genoemd."
+   ],
+   "uh": "Welke bewering klopt?",
+   "ctx": "Read this letter: \"Dear Mr Okafor, Thank you for your application for membership of Riverside Library. We are pleased to confirm that your application has been approved. Your membership card will be sent to the address you provided within ten working days. Please note that the card can only be activated after you have confirmed your e-mail address by clicking the link in the message we will send you tomorrow. Members may borrow up to eight items at a time for a period of four weeks; items can be renewed twice unless another member has reserved them. Late returns cost 25 cents per item per day, with a maximum of 10 euros per item. If you have any questions, you are welcome to contact the front desk, which is open Monday to Saturday from 9.00 to 17.00. Yours sincerely, Hannah Brooks, Membership Services.\""
+  },
+  {
+   "v": "What is the maximum late fee per item?",
+   "o": [
+    "25 cents",
+    "8 euros",
+    "10 euros",
+    "2.50 euros"
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 2,
+   "u": "Maximum 10 euro per item. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"25 cents\"? Dan denk je dat 25 cent het maximum is. Dat is de boete per dag, en niet het maximum.",
+    "Koos je \"8 euros\"? Dan denk je dat acht euro het maximum is. Acht is het aantal items dat je mag lenen, en niet een bedrag.",
+    "Klopt: de brief noemt een maximum van 10 euro per item.",
+    "Koos je \"2.50 euros\"? Dan denk je dat 2,50 euro het maximum is. Dat is de boete na tien dagen, en niet het maximum."
+   ],
+   "uh": "Wat is het maximum?",
+   "ctx": "Read this letter: \"Dear Mr Okafor, Thank you for your application for membership of Riverside Library. We are pleased to confirm that your application has been approved. Your membership card will be sent to the address you provided within ten working days. Please note that the card can only be activated after you have confirmed your e-mail address by clicking the link in the message we will send you tomorrow. Members may borrow up to eight items at a time for a period of four weeks; items can be renewed twice unless another member has reserved them. Late returns cost 25 cents per item per day, with a maximum of 10 euros per item. If you have any questions, you are welcome to contact the front desk, which is open Monday to Saturday from 9.00 to 17.00. Yours sincerely, Hannah Brooks, Membership Services.\""
+  },
+  {
+   "v": "Which phrase shows the formal register of this letter?",
+   "o": [
+    "\"Hi there\"",
+    "\"Cheers\"",
+    "\"No worries\"",
+    "\"We are pleased to confirm\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 3,
+   "u": "Pleased to confirm = formeel. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"Hi there\"? Dan denk je dat deze groet formeel is omdat er een aanspreekvorm in zit. Het is een losse groet aan bekenden, en past niet in een brief van een bibliotheek.",
+    "Koos je \"Cheers\"? Dan denk je dat dit woord formeel is omdat het vriendelijk is. Het is spreektaal als afscheid, en past niet bij een officiële brief.",
+    "Koos je \"No worries\"? Dan denk je dat deze uitdrukking formeel is omdat ze geruststelt. Het is een alledaagse zin, en past niet bij een officiële brief.",
+    "Klopt: we are pleased to confirm is een beleefde, zakelijke formulering."
+   ],
+   "uh": "Welke zin is formeel?",
+   "ctx": "Read this letter: \"Dear Mr Okafor, Thank you for your application for membership of Riverside Library. We are pleased to confirm that your application has been approved. Your membership card will be sent to the address you provided within ten working days. Please note that the card can only be activated after you have confirmed your e-mail address by clicking the link in the message we will send you tomorrow. Members may borrow up to eight items at a time for a period of four weeks; items can be renewed twice unless another member has reserved them. Late returns cost 25 cents per item per day, with a maximum of 10 euros per item. If you have any questions, you are welcome to contact the front desk, which is open Monday to Saturday from 9.00 to 17.00. Yours sincerely, Hannah Brooks, Membership Services.\""
+  },
+  {
+   "v": "What is the main purpose of the letter?",
+   "o": [
+    "to confirm and explain",
+    "to reject the application",
+    "to ask for payment",
+    "to advertise new books"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 1,
+   "u": "Bevestigen en regels uitleggen.",
+   "uo": [
+    "Klopt: de brief bevestigt het lidmaatschap en legt de regels uit.",
+    "Koos je \"to reject the application\"? Dan denk je dat de aanvraag wordt afgewezen. De brief zegt dat die is goedgekeurd, dus dat is onjuist.",
+    "Koos je \"to ask for payment\"? Dan denk je dat de brief om betaling vraagt. Alleen boetes bij te laat inleveren worden genoemd, en geen betaling.",
+    "Koos je \"to advertise new books\"? Dan denk je dat de brief reclame maakt. Er worden geen boeken genoemd, en het gaat om lidmaatschap."
+   ],
+   "uh": "Wat is het doel?",
+   "ctx": "Read this letter: \"Dear Mr Okafor, Thank you for your application for membership of Riverside Library. We are pleased to confirm that your application has been approved. Your membership card will be sent to the address you provided within ten working days. Please note that the card can only be activated after you have confirmed your e-mail address by clicking the link in the message we will send you tomorrow. Members may borrow up to eight items at a time for a period of four weeks; items can be renewed twice unless another member has reserved them. Late returns cost 25 cents per item per day, with a maximum of 10 euros per item. If you have any questions, you are welcome to contact the front desk, which is open Monday to Saturday from 9.00 to 17.00. Yours sincerely, Hannah Brooks, Membership Services.\""
+  },
+  {
+   "v": "What is the function of \"I do not expect compensation for the whole evening, but ...\"?",
+   "o": [
+    "a threat of legal action",
+    "a polite concession",
+    "a thanks for the dinner",
+    "a refusal to pay anything"
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 4,
+   "u": "Toegeving, dan verzoek. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"a threat of legal action\"? Dan denk je dat hij dreigt. De zin is juist beleefd, en er staat geen dreigement.",
+    "Klopt: hij geeft iets toe en doet daarna een redelijk verzoek.",
+    "Koos je \"a thanks for the dinner\"? Dan denk je dat hij bedankt. Het is een klacht, en geen bedankje.",
+    "Koos je \"a refusal to pay anything\"? Dan denk je dat hij niets wil betalen. Hij vraagt een gedeeltelijke terugbetaling, en weigert niet."
+   ],
+   "uh": "Welke functie heeft de zin?",
+   "ctx": "Read this letter: \"Dear Ms Alvarez, I am writing to complain about the conference dinner on 12 October, which I attended on behalf of Hartwell Associates. We had booked a table for ten in the garden room, as confirmed by your e-mail of 28 September. On arrival, however, we were told that the garden room was closed for a private event and were moved to a corner of the main restaurant, where the music made conversation almost impossible. In addition, three of the vegetarian meals arrived forty minutes after the others, and one was incorrect. I do not expect compensation for the whole evening, but I would appreciate a partial refund of the bill and an explanation of what went wrong. I look forward to hearing from you by the end of next week. Yours sincerely, Daniel Fraser, Events Manager, Hartwell Associates.\""
+  },
+  {
+   "v": "What does \"(long story)\" tell the reader?",
+   "o": [
+    "a long story will follow in the next e-mail",
+    "the writer is writing a book",
+    "the writer is very angry about it",
+    "the writer does not want to explain, informally"
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 3,
+   "u": "Long story = informele afwimpeling.",
+   "uo": [
+    "Koos je \"a long story will follow in the next e-mail\"? Dan denk je dat er een lang verhaal komt. Het is een uitdrukking, en er volgt niets.",
+    "Koos je \"the writer is writing a book\"? Dan denk je dat Lou een boek schrijft. Het is een gespreksuitdrukking, en geen schrijfproject.",
+    "Koos je \"the writer is very angry about it\"? Dan denk je dat Lou boos is. De toon is luchtig, en niet boos.",
+    "Klopt: het is een informele manier om te zeggen dat de schrijver het niet uitlegt."
+   ],
+   "uh": "Wat zegt long story?",
+   "ctx": "Read this e-mail: \"Hi Sam, Sorry I've been so quiet! The last month has been completely mad. First I moved into the new flat, which turned out to have no hot water until last Tuesday (long story), and then my sister's wedding took over everything. I did get your message about the festival, and honestly I'd love to come, but I'm not sure I can afford the ticket right now. Could we maybe do something smaller, like a picnic in the park when the weather improves? I'll bring the sandwiches if you bring that amazing lemon cake you made last time. Let me know which Saturday suits you. Oh, and tell your brother thanks for the book; I finished it on the train and loved the ending! Speak soon, Lou\""
+  },
+  {
+   "v": "How can you tell that this is an informal e-mail?",
+   "o": [
+    "first name and friendly tone",
+    "it starts with \"Dear Sir or Madam\"",
+    "it uses long and complex sentences",
+    "it ends with \"Yours faithfully\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 0,
+   "u": "Voornaam, korte vormen, vriendelijk.",
+   "uo": [
+    "Klopt: Hi Sam, I'd en een vriendelijke toon zijn kenmerken van een informele mail.",
+    "Koos je \"it starts with Dear Sir or Madam\"? Dan denk je dat de mail zo begint. Hij begint met Hi Sam, en dat is informeel.",
+    "Koos je \"it uses long and complex sentences\"? Dan denk je dat de zinnen lang en ingewikkeld zijn. Ze zijn kort en luchtig, en dat past bij informeel.",
+    "Koos je \"it ends with Yours faithfully\"? Dan denk je dat de mail zo eindigt. Hij eindigt met Speak soon, en dat is vriendschappelijk."
+   ],
+   "uh": "Hoe zie je dat het informeel is?",
+   "ctx": "Read this e-mail: \"Hi Sam, Sorry I've been so quiet! The last month has been completely mad. First I moved into the new flat, which turned out to have no hot water until last Tuesday (long story), and then my sister's wedding took over everything. I did get your message about the festival, and honestly I'd love to come, but I'm not sure I can afford the ticket right now. Could we maybe do something smaller, like a picnic in the park when the weather improves? I'll bring the sandwiches if you bring that amazing lemon cake you made last time. Let me know which Saturday suits you. Oh, and tell your brother thanks for the book; I finished it on the train and loved the ending! Speak soon, Lou\""
+  },
+  {
+   "v": "Which two things does Lou ask Sam to do?",
+   "o": [
+    "buy the festival ticket and bring sandwiches",
+    "a Saturday and lemon cake",
+    "send the book back and call her",
+    "visit the new flat and fix the water"
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 4,
+   "u": "Zaterdag noemen, taart meenemen.",
+   "uo": [
+    "Koos je \"buy the festival ticket and bring sandwiches\"? Dan denk je dat Sam de kaartjes moet kopen. Lou brengt zelf de broodjes, en Sam brengt de taart.",
+    "Klopt: Lou vraagt om een zaterdag te noemen en om de citroentaart mee te nemen.",
+    "Koos je \"send the book back and call her\"? Dan denk je dat Sam het boek terug moet sturen. Lou bedankt voor het boek, en vraagt om een zaterdag.",
+    "Koos je \"visit the new flat and fix the water\"? Dan denk je dat Sam het huis moet bezoeken. Het water is al opgelost, en dat vraagt Lou niet."
+   ],
+   "uh": "Wat vraagt Lou aan Sam?",
+   "ctx": "Read this e-mail: \"Hi Sam, Sorry I've been so quiet! The last month has been completely mad. First I moved into the new flat, which turned out to have no hot water until last Tuesday (long story), and then my sister's wedding took over everything. I did get your message about the festival, and honestly I'd love to come, but I'm not sure I can afford the ticket right now. Could we maybe do something smaller, like a picnic in the park when the weather improves? I'll bring the sandwiches if you bring that amazing lemon cake you made last time. Let me know which Saturday suits you. Oh, and tell your brother thanks for the book; I finished it on the train and loved the ending! Speak soon, Lou\""
+  }
+ ],
+ "oe": [
+  {
+   "bron": "Examenstijl",
+   "ctx": "You read a letter of complaint: \"Dear Ms Alvarez, I am writing to complain about the conference dinner on 12 October, which I attended on behalf of Hartwell Associates. We had booked a table for ten in the garden room, as confirmed by your e-mail of 28 September. On arrival, however, we were told that the garden room was closed for a private event and were moved to a corner of the main restaurant, where the music made conversation almost impossible. In addition, three of the vegetarian meals arrived forty minutes after the others, and one was incorrect. I do not expect compensation for the whole evening, but I would appreciate a partial refund of the bill and an explanation of what went wrong. I look forward to hearing from you by the end of next week. Yours sincerely, Daniel Fraser, Events Manager, Hartwell Associates.\" Your teacher asks about the purpose of the letter.",
+   "v": "Say why Daniel Fraser writes and what he asks for.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Hij klaagt over het diner (1p). Hij vraagt een gedeeltelijke terugbetaling (1p). En een uitleg van wat er misging (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "You read a letter of complaint: \"Dear Ms Alvarez, I am writing to complain about the conference dinner on 12 October, which I attended on behalf of Hartwell Associates. We had booked a table for ten in the garden room, as confirmed by your e-mail of 28 September. On arrival, however, we were told that the garden room was closed for a private event and were moved to a corner of the main restaurant, where the music made conversation almost impossible. In addition, three of the vegetarian meals arrived forty minutes after the others, and one was incorrect. I do not expect compensation for the whole evening, but I would appreciate a partial refund of the bill and an explanation of what went wrong. I look forward to hearing from you by the end of next week. Yours sincerely, Daniel Fraser, Events Manager, Hartwell Associates.\" Your teacher asks about the problems at the dinner.",
+   "v": "Name two things that went wrong.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Ze werden naar een hoek van het restaurant verplaatst of de tuinkamer was dicht (1p). De muziek maakte praten bijna onmogelijk (1p). Drie vegetarische maaltijden kwamen te laat of één was fout (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "You read an e-mail to a friend: \"Hi Sam, Sorry I've been so quiet! The last month has been completely mad. First I moved into the new flat, which turned out to have no hot water until last Tuesday (long story), and then my sister's wedding took over everything. I did get your message about the festival, and honestly I'd love to come, but I'm not sure I can afford the ticket right now. Could we maybe do something smaller, like a picnic in the park when the weather improves? I'll bring the sandwiches if you bring that amazing lemon cake you made last time. Let me know which Saturday suits you. Oh, and tell your brother thanks for the book; I finished it on the train and loved the ending! Speak soon, Lou\" Your teacher asks about the e-mail to a friend.",
+   "v": "Say why Lou cannot go to the festival and what Lou suggests instead.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "De kaartjes zijn nu te duur (1p). Lou stelt een picknick in het park voor (1p). Lou brengt broodjes en Sam een taart of Sam kiest een zaterdag (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "You read a letter from a library: \"Dear Mr Okafor, Thank you for your application for membership of Riverside Library. We are pleased to confirm that your application has been approved. Your membership card will be sent to the address you provided within ten working days. Please note that the card can only be activated after you have confirmed your e-mail address by clicking the link in the message we will send you tomorrow. Members may borrow up to eight items at a time for a period of four weeks; items can be renewed twice unless another member has reserved them. Late returns cost 25 cents per item per day, with a maximum of 10 euros per item. If you have any questions, you are welcome to contact the front desk, which is open Monday to Saturday from 9.00 to 17.00. Yours sincerely, Hannah Brooks, Membership Services.\" Your teacher asks about the rules in the letter.",
+   "v": "Explain what Mr Okafor pays if he returns a book ten days late.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "De boete is 25 cent per dag per item (1p). Tien dagen kost 2,50 euro (1p). Het maximum is 10 euro per item (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "You read an e-mail to a friend: \"Hi Sam, Sorry I've been so quiet! The last month has been completely mad. First I moved into the new flat, which turned out to have no hot water until last Tuesday (long story), and then my sister's wedding took over everything. I did get your message about the festival, and honestly I'd love to come, but I'm not sure I can afford the ticket right now. Could we maybe do something smaller, like a picnic in the park when the weather improves? I'll bring the sandwiches if you bring that amazing lemon cake you made last time. Let me know which Saturday suits you. Oh, and tell your brother thanks for the book; I finished it on the train and loved the ending! Speak soon, Lou\" Your teacher asks you about the register.",
+   "v": "Explain how you can tell that this e-mail is informal.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Een voornaam in de aanhef of Hi Sam (1p). Spreektaal zoals completely mad of long story (1p). Een vriendelijke afsluiting als Speak soon (1p)."
+  }
+ ]
+}
