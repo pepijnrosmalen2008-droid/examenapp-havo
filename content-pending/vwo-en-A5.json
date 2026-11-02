@@ -1,0 +1,682 @@
+{
+ "id": "A5",
+ "lo": "en.A.5",
+ "gs": 2,
+ "naam": "De bedoeling en opvatting van de schrijver in een Engelse tekst",
+ "beschrijving": "Je leert aan woordkeus, toon en ironie te zien wat de schrijver wil bereiken en wat hij vindt, en je onderbouwt dat met citaten uit de tekst.",
+ "ceStatus": "CE",
+ "binas": "",
+ "val": "",
+ "onderwerpen": [
+  "Het doel van de schrijver",
+  "Woordkeus en toon",
+  "Ironie en sarcasme",
+  "Impliciete opvatting",
+  "Tekstbewijs en conclusie"
+ ],
+ "sam": "De schrijver wil informeren, overtuigen of vermaken. Zijn opvatting zie je aan woordkeus en toon: beladen woorden als bleak of petty laten een oordeel zien. Bij ironie zegt hij het tegenovergestelde van wat hij bedoelt, vaak spottend, bij sarcasme met scherpere kritiek. Een impliciete mening haal je uit woordkeus en uit wat hij weglaat. Onderbouw je conclusie altijd met een citaat uit de tekst.",
+ "begrippen": [
+  {
+   "t": "Schrijfdoel",
+   "d": "Wat de schrijver wil bereiken met de tekst."
+  },
+  {
+   "t": "Informeren",
+   "d": "Feiten geven zonder te willen overtuigen."
+  },
+  {
+   "t": "Overtuigen",
+   "d": "De lezer ergens van willen overtuigen of tot actie aanzetten."
+  },
+  {
+   "t": "Vermaken",
+   "d": "De lezer laten lachen of genieten."
+  },
+  {
+   "t": "Toon",
+   "d": "De houding van de schrijver, zichtbaar in woordkeus."
+  },
+  {
+   "t": "Beladen woord",
+   "d": "Een woord met een duidelijk positief of negatief oordeel."
+  },
+  {
+   "t": "Ironie",
+   "d": "Het tegenovergestelde zeggen van wat je bedoelt."
+  },
+  {
+   "t": "Sarcasme",
+   "d": "Scherpe, spottende ironie."
+  },
+  {
+   "t": "Opvatting",
+   "d": "Wat de schrijver vindt."
+  },
+  {
+   "t": "Impliciet",
+   "d": "Niet rechtstreeks gezegd, maar af te leiden."
+  },
+  {
+   "t": "Expliciet",
+   "d": "Rechtstreeks gezegd."
+  },
+  {
+   "t": "Tekstbewijs",
+   "d": "Een citaat dat je conclusie onderbouwt."
+  }
+ ],
+ "sv": [
+  {
+   "v": "Which aim does a text have that wants to make readers do something?",
+   "o": [
+    "to inform only",
+    "to persuade",
+    "to amuse the reader",
+    "to describe a place"
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 0,
+   "u": "Overtuigen = tot actie aanzetten.",
+   "uo": [
+    "Koos je \"to inform only\"? Dan denk je dat zo'n tekst alleen informeert. Informeren geeft feiten zonder aan te zetten, en dat is hier niet genoeg.",
+    "Klopt: een tekst die lezers tot iets wil bewegen wil overtuigen.",
+    "Koos je \"to amuse the reader\"? Dan denk je dat zo'n tekst vooral vermaakt. Vermaken is leuk bedoeld, en wil niet tot actie aanzetten.",
+    "Koos je \"to describe a place\"? Dan denk je dat zo'n tekst een plek beschrijft. Beschrijven laat zien hoe iets eruitziet, en zet niet aan tot iets doen."
+   ],
+   "uh": "Welk doel past?"
+  },
+  {
+   "v": "Which aim does a neutral news report usually have?",
+   "o": [
+    "to persuade readers to act",
+    "to amuse readers with jokes",
+    "to attack a person or company",
+    "to inform"
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 0,
+   "u": "Nieuws = informeren. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"to persuade readers to act\"? Dan denk je dat een nieuwsbericht overtuigt. Overtuigen hoort bij een betoog, en een nieuwsbericht blijft neutraal.",
+    "Koos je \"to amuse readers with jokes\"? Dan denk je dat een nieuwsbericht vermaakt. Vermaken hoort bij een column, en een bericht geeft feiten.",
+    "Koos je \"to attack a person or company\"? Dan denk je dat een nieuwsbericht aanvalt. Dat past niet bij neutraal nieuws, en een bericht geeft feiten.",
+    "Klopt: een neutraal nieuwsbericht geeft feiten en wil informeren."
+   ],
+   "uh": "Welk doel past?"
+  },
+  {
+   "v": "What do words like \"bleak\" or \"petty\" show about the writer?",
+   "o": [
+    "a negative attitude",
+    "no opinion at all",
+    "a positive attitude",
+    "a neutral and balanced view"
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 1,
+   "u": "Bleak en petty = negatief. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: beladen woorden als bleak en petty laten een negatieve houding zien.",
+    "Koos je \"no opinion at all\"? Dan denk je dat deze woorden neutraal zijn. Ze zijn beladen, en tonen juist een mening.",
+    "Koos je \"a positive attitude\"? Dan denk je dat deze woorden positief zijn. Ze hebben een negatieve klank, en tonen afkeuring.",
+    "Koos je \"a neutral and balanced view\"? Dan denk je dat deze woorden een evenwichtig beeld geven. Ze zijn eenzijdig negatief, en niet neutraal."
+   ],
+   "uh": "Wat tonen deze woorden?"
+  },
+  {
+   "v": "What is \"tone\" in a text?",
+   "o": [
+    "the length of the sentences",
+    "the topic of the text",
+    "the writer's attitude",
+    "the number of paragraphs"
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 1,
+   "u": "Toon = houding. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"the length of the sentences\"? Dan denk je dat de toon over zinslengte gaat. Dat is stijl, en niet de houding van de schrijver.",
+    "Koos je \"the topic of the text\"? Dan denk je dat de toon het onderwerp is. Het onderwerp is waar het over gaat, en de toon is hoe de schrijver erover denkt.",
+    "Klopt: de toon is de houding van de schrijver, die je aan woordkeus herkent.",
+    "Koos je \"the number of paragraphs\"? Dan denk je dat de toon het aantal alinea's is. Dat is opbouw, en zegt niets over houding."
+   ],
+   "uh": "Wat is toon?"
+  },
+  {
+   "v": "What does a writer do who says the opposite of what he means, in a mocking way?",
+   "o": [
+    "he writes a summary",
+    "he gives an example",
+    "he uses irony",
+    "he repeats the topic"
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 2,
+   "u": "Ironie = tegenovergestelde. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"he writes a summary\"? Dan denk je dat dit een samenvatting is. Een samenvatting is kort en neutraal, en bevat geen spot.",
+    "Koos je \"he gives an example\"? Dan denk je dat dit een voorbeeld is. Een voorbeeld illustreert een punt, en bevat geen spot.",
+    "Klopt: bij ironie zeg je het tegenovergestelde van wat je bedoelt, vaak spottend.",
+    "Koos je \"he repeats the topic\"? Dan denk je dat dit herhaling van het onderwerp is. Herhaling is geen spot, en ironie zegt het omgekeerde."
+   ],
+   "uh": "Wat doet de schrijver?"
+  },
+  {
+   "v": "How can you recognise an implicit opinion?",
+   "o": [
+    "word choice and gaps",
+    "from the title only",
+    "from the number of words",
+    "from the page number"
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 3,
+   "u": "Impliciet: woordkeus en weglaten.",
+   "uo": [
+    "Klopt: een impliciete mening haal je uit woordkeus en uit wat de schrijver wel of niet noemt.",
+    "Koos je \"from the title only\"? Dan denk je dat alleen de titel de mening toont. De titel zegt weinig, en de mening zit in de tekst zelf.",
+    "Koos je \"from the number of words\"? Dan denk je dat het aantal woorden de mening toont. Dat zegt niets over houding, en geeft geen aanwijzing.",
+    "Koos je \"from the page number\"? Dan denk je dat het paginanummer de mening toont. Dat is een los gegeven, en zegt niets over de schrijver."
+   ],
+   "uh": "Hoe herken je een impliciete mening?"
+  },
+  {
+   "v": "Which of these is the best evidence for the writer's attitude?",
+   "o": [
+    "the length of the text",
+    "the number of paragraphs",
+    "the name of the author",
+    "a quotation with loaded words"
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 4,
+   "u": "Bewijs = citaat. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"the length of the text\"? Dan denk je dat de lengte van de tekst bewijs is. Die zegt niets over de houding, en is geen aanwijzing.",
+    "Koos je \"the number of paragraphs\"? Dan denk je dat het aantal alinea's bewijs is. Dat toont alleen opbouw, en niet de houding.",
+    "Koos je \"the name of the author\"? Dan denk je dat de naam van de schrijver bewijs is. Een naam zegt niets, over wat de schrijver vindt.",
+    "Klopt: een citaat met beladen woorden laat letterlijk zien welke houding de schrijver heeft."
+   ],
+   "uh": "Wat is het beste bewijs?"
+  },
+  {
+   "v": "What is the main intention of the writer?",
+   "o": [
+    "to explain how to run a good meeting",
+    "to mock pointless meetings",
+    "to praise the consultant",
+    "to advertise the company"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 0,
+   "u": "Column: kritiek met spot. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"to explain how to run a good meeting\"? Dan denk je dat de schrijver uitlegt hoe je vergadert. Hij beschrijft juist een slechte vergadering, en geeft geen handleiding.",
+    "Klopt: de column maakt met spot duidelijk dat zinloze vergaderingen tijd en geld verspillen.",
+    "Koos je \"to praise the consultant\"? Dan denk je dat de schrijver de adviseur prijst. Zijn lof is ironisch, en eigenlijk bekritiseert hij hem.",
+    "Koos je \"to advertise the company\"? Dan denk je dat de schrijver reclame maakt. De tekst laat het bedrijf juist geld verspillen, en is dus kritisch."
+   ],
+   "uh": "Wat is de bedoeling?",
+   "ctx": "Read this column: \"This Monday, I attended a meeting to discuss the agenda for another meeting. Fourteen people sat around a table for ninety minutes while a consultant, who had apparently been flown in from abroad, explained that communication is important. Several colleagues nodded gravely, as if they had just heard a revelation. I confess that I admired the efficiency of the whole exercise: in a single morning, the company managed to spend the equivalent of a small car on a conclusion that a child could have reached. Of course, I am sure the consultant's intentions were excellent, and I do not doubt that his invoice will be paid promptly. It was only the hour that I would like back. At the end, we agreed to meet again next week to evaluate whether the meeting had been useful.\""
+  },
+  {
+   "v": "What does the writer mean by \"I admired the efficiency of the whole exercise\"?",
+   "o": [
+    "the meeting was truly efficient",
+    "he wants to hire the consultant",
+    "he enjoyed the meeting very much",
+    "he means the opposite: it was wasteful"
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 2,
+   "u": "Ironie: bedoelt het omgekeerde.",
+   "uo": [
+    "Koos je \"the meeting was truly efficient\"? Dan denk je dat hij het letterlijk meent. De rest van de zin noemt de kosten van een auto, dus het is ironie.",
+    "Koos je \"he wants to hire the consultant\"? Dan denk je dat hij de adviseur wil inhuren. Hij kritiseert de adviseur, en wil hem niet aannemen.",
+    "Koos je \"he enjoyed the meeting very much\"? Dan denk je dat hij van de vergadering genoot. Hij zou het uur terug willen, en vond het zonde van de tijd.",
+    "Klopt: de schrijver bedoelt het tegenovergestelde, want de vergadering was een verspilling."
+   ],
+   "uh": "Wat bedoelt hij?",
+   "ctx": "Read this column: \"This Monday, I attended a meeting to discuss the agenda for another meeting. Fourteen people sat around a table for ninety minutes while a consultant, who had apparently been flown in from abroad, explained that communication is important. Several colleagues nodded gravely, as if they had just heard a revelation. I confess that I admired the efficiency of the whole exercise: in a single morning, the company managed to spend the equivalent of a small car on a conclusion that a child could have reached. Of course, I am sure the consultant's intentions were excellent, and I do not doubt that his invoice will be paid promptly. It was only the hour that I would like back. At the end, we agreed to meet again next week to evaluate whether the meeting had been useful.\""
+  },
+  {
+   "v": "Which phrase shows the writer's mocking tone?",
+   "o": [
+    "\"This Monday, I attended a meeting\"",
+    "\"as if they had just heard a revelation\"",
+    "\"Fourteen people sat around a table\"",
+    "\"we agreed to meet again next week\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 1,
+   "u": "As if = spot. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"This Monday, I attended a meeting\"? Dan denk je dat deze zin spottend is. Het is een neutrale opening, en toont geen houding.",
+    "Klopt: as if maakt duidelijk dat de collega's gewone woorden als een openbaring behandelen.",
+    "Koos je \"Fourteen people sat around a table\"? Dan denk je dat deze zin spottend is. Het is een feit, en zonder oordeel.",
+    "Koos je \"we agreed to meet again next week\"? Dan denk je dat deze zin spottend is. Dat is op zichzelf een feit, en de spot zit in de context."
+   ],
+   "uh": "Welke zin toont spot?",
+   "ctx": "Read this column: \"This Monday, I attended a meeting to discuss the agenda for another meeting. Fourteen people sat around a table for ninety minutes while a consultant, who had apparently been flown in from abroad, explained that communication is important. Several colleagues nodded gravely, as if they had just heard a revelation. I confess that I admired the efficiency of the whole exercise: in a single morning, the company managed to spend the equivalent of a small car on a conclusion that a child could have reached. Of course, I am sure the consultant's intentions were excellent, and I do not doubt that his invoice will be paid promptly. It was only the hour that I would like back. At the end, we agreed to meet again next week to evaluate whether the meeting had been useful.\""
+  },
+  {
+   "v": "What is the writer's attitude to the consultant?",
+   "o": [
+    "admiring",
+    "furious",
+    "sarcastic",
+    "completely neutral"
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 3,
+   "u": "Sarcasme = verborgen kritiek. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"admiring\"? Dan denk je dat de schrijver hem bewondert. De lof is ironisch, en eigenlijk wantrouwt hij de waarde.",
+    "Koos je \"furious\"? Dan denk je dat de schrijver woedend is. Zijn toon is spottend en niet boos, en hij blijft beleefd.",
+    "Klopt: de schrijver zegt beleefde dingen, maar bedoelt dat het advies niets waard was.",
+    "Koos je \"completely neutral\"? Dan denk je dat de schrijver neutraal is. Ironische woorden tonen juist een oordeel, dus hij is niet neutraal."
+   ],
+   "uh": "Wat is de houding?",
+   "ctx": "Read this column: \"This Monday, I attended a meeting to discuss the agenda for another meeting. Fourteen people sat around a table for ninety minutes while a consultant, who had apparently been flown in from abroad, explained that communication is important. Several colleagues nodded gravely, as if they had just heard a revelation. I confess that I admired the efficiency of the whole exercise: in a single morning, the company managed to spend the equivalent of a small car on a conclusion that a child could have reached. Of course, I am sure the consultant's intentions were excellent, and I do not doubt that his invoice will be paid promptly. It was only the hour that I would like back. At the end, we agreed to meet again next week to evaluate whether the meeting had been useful.\""
+  },
+  {
+   "v": "What is the writer's aim?",
+   "o": [
+    "to persuade readers",
+    "to describe a school building",
+    "to amuse the reader",
+    "to report on a study"
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 0,
+   "u": "Oproep = overtuigen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: de schrijver eindigt met een oproep aan scholen en ouders.",
+    "Koos je \"to describe a school building\"? Dan denk je dat de schrijver een gebouw beschrijft. Het gaat om schoolpleinen en een oplossing, en niet om een gebouw.",
+    "Koos je \"to amuse the reader\"? Dan denk je dat de schrijver vermaakt. De toon is serieus, en er volgt een oproep.",
+    "Koos je \"to report on a study\"? Dan denk je dat de schrijver een onderzoek meldt. Er is een mening en een oproep, en geen neutraal verslag."
+   ],
+   "uh": "Wat is het doel?",
+   "ctx": "Read this opinion piece: \"Look at almost any school playground in the country and you will see the same grey expanse of tarmac, as bleak as a car park. It is hardly surprising that children complain of boredom and that teachers struggle to keep order at break. Yet there is a simple and cheap remedy. Schools that have planted trees and shrubs report that pupils play more creatively, fight less and return to lessons calmer. Shade also protects children from the sun, which matters now that summers are becoming hotter. Some headteachers fear that fallen leaves will cost money to clear, but that is a petty objection when set against the benefits. Every school should therefore be given the budget to turn its tarmac into a small woodland, and parents should demand it.\""
+  },
+  {
+   "v": "Which words show the writer's negative view of tarmac playgrounds?",
+   "o": [
+    "\"bleak as a car park\"",
+    "\"almost any school playground\"",
+    "\"report that pupils play more creatively\"",
+    "\"a simple and cheap remedy\""
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 1,
+   "u": "Bleak = negatief. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: bleak en de vergelijking met een parkeerplaats laten een negatief beeld zien.",
+    "Koos je \"almost any school playground\"? Dan denk je dat deze woorden een oordeel geven. Het is een neutrale aanduiding, en zegt niets over waardering.",
+    "Koos je \"report that pupils play more creatively\"? Dan denk je dat deze woorden negatief zijn. Ze zijn juist positief, en gaan over de oplossing.",
+    "Koos je \"a simple and cheap remedy\"? Dan denk je dat deze woorden het negatieve beeld tonen. Ze zijn juist positief, en gaan over de oplossing."
+   ],
+   "uh": "Welke woorden tonen een negatief beeld?",
+   "ctx": "Read this opinion piece: \"Look at almost any school playground in the country and you will see the same grey expanse of tarmac, as bleak as a car park. It is hardly surprising that children complain of boredom and that teachers struggle to keep order at break. Yet there is a simple and cheap remedy. Schools that have planted trees and shrubs report that pupils play more creatively, fight less and return to lessons calmer. Shade also protects children from the sun, which matters now that summers are becoming hotter. Some headteachers fear that fallen leaves will cost money to clear, but that is a petty objection when set against the benefits. Every school should therefore be given the budget to turn its tarmac into a small woodland, and parents should demand it.\""
+  },
+  {
+   "v": "What does the writer think of the headteachers' objection?",
+   "o": [
+    "it is a serious problem",
+    "it is a good reason to wait",
+    "it is a minor matter",
+    "it proves that the plan is wrong"
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 3,
+   "u": "Petty = onbelangrijk. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"it is a serious problem\"? Dan denk je dat hij het bezwaar serieus neemt. Het woord petty zegt juist het tegenovergestelde, en tegen de voordelen valt het weg.",
+    "Koos je \"it is a good reason to wait\"? Dan denk je dat hij het een reden vindt om te wachten. Hij roept op om nu te handelen, en neemt het bezwaar niet over.",
+    "Klopt: het woord petty laat zien dat de schrijver het bezwaar onbelangrijk vindt.",
+    "Koos je \"it proves that the plan is wrong\"? Dan denk je dat het bezwaar het plan weerlegt. Hij noemt het een klein punt, en weegt het licht."
+   ],
+   "uh": "Wat vindt hij van het bezwaar?",
+   "ctx": "Read this opinion piece: \"Look at almost any school playground in the country and you will see the same grey expanse of tarmac, as bleak as a car park. It is hardly surprising that children complain of boredom and that teachers struggle to keep order at break. Yet there is a simple and cheap remedy. Schools that have planted trees and shrubs report that pupils play more creatively, fight less and return to lessons calmer. Shade also protects children from the sun, which matters now that summers are becoming hotter. Some headteachers fear that fallen leaves will cost money to clear, but that is a petty objection when set against the benefits. Every school should therefore be given the budget to turn its tarmac into a small woodland, and parents should demand it.\""
+  },
+  {
+   "v": "Which words are the clearest evidence that the writer wants action?",
+   "o": [
+    "\"Shade also protects children\"",
+    "\"and parents should demand it\"",
+    "\"Schools that have planted trees report\"",
+    "\"children complain of boredom\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 4,
+   "u": "Oproep = demand. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"Shade also protects children\"? Dan denk je dat deze woorden de wens tot actie tonen omdat ze een voordeel noemen. Het is een argument voor het plan, en vraagt niemand om iets te doen.",
+    "Klopt: de oproep aan ouders laat zien dat de schrijver wil dat er iets gebeurt.",
+    "Koos je \"Schools that have planted trees report\"? Dan denk je dat deze woorden een oproep zijn omdat ze scholen noemen. Het is een feitelijke melding van ervaringen, en geen vraag aan de lezer.",
+    "Koos je \"children complain of boredom\"? Dan denk je dat deze woorden om actie vragen omdat ze een klacht tonen. Het is een probleem dat de schrijver schetst, en nog geen oproep."
+   ],
+   "uh": "Welke woorden tonen de wens tot actie?",
+   "ctx": "Read this opinion piece: \"Look at almost any school playground in the country and you will see the same grey expanse of tarmac, as bleak as a car park. It is hardly surprising that children complain of boredom and that teachers struggle to keep order at break. Yet there is a simple and cheap remedy. Schools that have planted trees and shrubs report that pupils play more creatively, fight less and return to lessons calmer. Shade also protects children from the sun, which matters now that summers are becoming hotter. Some headteachers fear that fallen leaves will cost money to clear, but that is a petty objection when set against the benefits. Every school should therefore be given the budget to turn its tarmac into a small woodland, and parents should demand it.\""
+  },
+  {
+   "v": "What is the writer's aim?",
+   "o": [
+    "to criticise museums in general",
+    "to sell tickets at any cost",
+    "to entertain with jokes",
+    "to inform and recommend"
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 0,
+   "u": "Recensie: informeren en aanbevelen.",
+   "uo": [
+    "Koos je \"to criticise museums in general\"? Dan denk je dat de schrijver musea bekritiseert. Hij beveelt deze tentoonstelling aan, en spreekt niet over musea in het algemeen.",
+    "Koos je \"to sell tickets at any cost\"? Dan denk je dat het alleen om kaartjes gaat. De prijs staat er maar bijzonder, en de recensie beoordeelt.",
+    "Koos je \"to entertain with jokes\"? Dan denk je dat de schrijver vermaakt. Er zijn geen grappen, en de toon is serieus.",
+    "Klopt: de schrijver beschrijft de tentoonstelling en beveelt haar aan."
+   ],
+   "uh": "Wat is het doel?",
+   "ctx": "Read this review: \"The new exhibition on medieval trade routes at the city museum is ambitious in scope and, for the most part, successful. Its strongest feature is the way objects are grouped by journey rather than by period: a Venetian glass bowl stands beside spices, coins and a worn travelling chest, which allows visitors to follow a single route from port to market. The accompanying texts are clear and rarely condescending. Less convincing is the final room, where a touch-screen game about modern shipping feels tacked on and distracts from the quiet authority of the earlier displays. Nevertheless, the exhibition deserves a visit, especially for anyone who thinks that history is a matter of dates. It runs until the end of November, and tickets cost twelve euros.\""
+  },
+  {
+   "v": "What is the writer's overall opinion of the exhibition?",
+   "o": [
+    "entirely negative",
+    "mostly positive",
+    "entirely positive",
+    "neutral, without an opinion"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 3,
+   "u": "Overwegend positief, één minpunt.",
+   "uo": [
+    "Koos je \"entirely negative\"? Dan denk je dat de schrijver alles afkeurt. Hij noemt de tentoonstelling geslaagd, en beveelt haar aan.",
+    "Klopt: de schrijver noemt het over het geheel geslaagd, met één zwakke zaal.",
+    "Koos je \"entirely positive\"? Dan denk je dat de schrijver alles prijst. Hij noemt ook de laatste zaal minder overtuigend, dus er is kritiek.",
+    "Koos je \"neutral, without an opinion\"? Dan denk je dat de schrijver geen mening geeft. Er staan duidelijke oordelen in, en een aanbeveling."
+   ],
+   "uh": "Wat is zijn oordeel?",
+   "ctx": "Read this review: \"The new exhibition on medieval trade routes at the city museum is ambitious in scope and, for the most part, successful. Its strongest feature is the way objects are grouped by journey rather than by period: a Venetian glass bowl stands beside spices, coins and a worn travelling chest, which allows visitors to follow a single route from port to market. The accompanying texts are clear and rarely condescending. Less convincing is the final room, where a touch-screen game about modern shipping feels tacked on and distracts from the quiet authority of the earlier displays. Nevertheless, the exhibition deserves a visit, especially for anyone who thinks that history is a matter of dates. It runs until the end of November, and tickets cost twelve euros.\""
+  },
+  {
+   "v": "Which word suggests criticism of the last room?",
+   "o": [
+    "\"tacked on\"",
+    "\"ambitious\"",
+    "\"quiet authority\"",
+    "\"deserves a visit\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 1,
+   "u": "Tacked on = kritiek. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: tacked on laat zien dat het spel er los bij is geplakt en afleidt.",
+    "Koos je \"ambitious\"? Dan denk je dat ambitious kritiek geeft. Het woord is positief, en gaat over de hele tentoonstelling.",
+    "Koos je \"quiet authority\"? Dan denk je dat quiet authority kritiek geeft. Het is lof, en slaat op de eerdere zalen.",
+    "Koos je \"deserves a visit\"? Dan denk je dat deserves a visit kritiek geeft. Het is een aanbeveling, en geen kritiek."
+   ],
+   "uh": "Welk woord toont kritiek?",
+   "ctx": "Read this review: \"The new exhibition on medieval trade routes at the city museum is ambitious in scope and, for the most part, successful. Its strongest feature is the way objects are grouped by journey rather than by period: a Venetian glass bowl stands beside spices, coins and a worn travelling chest, which allows visitors to follow a single route from port to market. The accompanying texts are clear and rarely condescending. Less convincing is the final room, where a touch-screen game about modern shipping feels tacked on and distracts from the quiet authority of the earlier displays. Nevertheless, the exhibition deserves a visit, especially for anyone who thinks that history is a matter of dates. It runs until the end of November, and tickets cost twelve euros.\""
+  },
+  {
+   "v": "Why is \"I am sure the consultant's intentions were excellent\" ironic?",
+   "o": [
+    "the writer really praises him",
+    "the writer is certain about the invoice",
+    "the writer is too shy to say more",
+    "he implies the opposite"
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 2,
+   "u": "Beleefd klinken, het omgekeerde bedoelen.",
+   "uo": [
+    "Koos je \"the writer really praises him\"? Dan denk je dat de schrijver hem echt prijst. De zin staat tussen sarcastische opmerkingen, dus het is spot.",
+    "Koos je \"the writer is certain about the invoice\"? Dan denk je dat de factuur de kern is. Het gaat om de toon van de zin, en niet om de factuur.",
+    "Koos je \"the writer is too shy to say more\"? Dan denk je dat de schrijver verlegen is. Hij is juist uitgesproken, en gebruikt ironie bewust.",
+    "Klopt: de schrijver klinkt beleefd, maar laat doorschemeren dat hij het niet meent."
+   ],
+   "uh": "Waarom is de zin ironisch?",
+   "ctx": "Read this column: \"This Monday, I attended a meeting to discuss the agenda for another meeting. Fourteen people sat around a table for ninety minutes while a consultant, who had apparently been flown in from abroad, explained that communication is important. Several colleagues nodded gravely, as if they had just heard a revelation. I confess that I admired the efficiency of the whole exercise: in a single morning, the company managed to spend the equivalent of a small car on a conclusion that a child could have reached. Of course, I am sure the consultant's intentions were excellent, and I do not doubt that his invoice will be paid promptly. It was only the hour that I would like back. At the end, we agreed to meet again next week to evaluate whether the meeting had been useful.\""
+  },
+  {
+   "v": "What is the writer's real opinion of the meeting?",
+   "o": [
+    "it was useful but too long",
+    "it was a good idea in principle",
+    "it was a waste of time and money",
+    "it was too short"
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 3,
+   "u": "Verspilling van tijd en geld. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"it was useful but too long\"? Dan denk je dat hij het nuttig vond. Hij noemt de conclusie een kinderlijke, dus het was niet nuttig.",
+    "Koos je \"it was a good idea in principle\"? Dan denk je dat hij het in principe een goed idee vond. Er staat niets positiefs over het idee, alleen spot over het resultaat.",
+    "Klopt: hij zou het uur terug willen en vergelijkt de kosten met een auto.",
+    "Koos je \"it was too short\"? Dan denk je dat de vergadering te kort was. Hij klaagt over negentig minuten, en wil het uur terug."
+   ],
+   "uh": "Wat vindt hij echt?",
+   "ctx": "Read this column: \"This Monday, I attended a meeting to discuss the agenda for another meeting. Fourteen people sat around a table for ninety minutes while a consultant, who had apparently been flown in from abroad, explained that communication is important. Several colleagues nodded gravely, as if they had just heard a revelation. I confess that I admired the efficiency of the whole exercise: in a single morning, the company managed to spend the equivalent of a small car on a conclusion that a child could have reached. Of course, I am sure the consultant's intentions were excellent, and I do not doubt that his invoice will be paid promptly. It was only the hour that I would like back. At the end, we agreed to meet again next week to evaluate whether the meeting had been useful.\""
+  },
+  {
+   "v": "Which sentence best states the writer's standpoint?",
+   "o": [
+    "Playgrounds are made of tarmac.",
+    "Fallen leaves cost money to clear.",
+    "Schoolyards should become green.",
+    "Summers are becoming hotter."
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 0,
+   "u": "Standpunt: groen schoolplein. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"Playgrounds are made of tarmac.\"? Dan denk je dat dit het standpunt is. Het is een vaststelling, en geen oordeel of oproep.",
+    "Koos je \"Fallen leaves cost money to clear.\"? Dan denk je dat dit het standpunt is. Het is het bezwaar dat de schrijver wegwuift, en niet zijn mening.",
+    "Klopt: dit is de kern van de oproep aan het eind van de tekst.",
+    "Koos je \"Summers are becoming hotter.\"? Dan denk je dat dit het standpunt is. Het is een argument, en niet de kern."
+   ],
+   "uh": "Wat is het standpunt?",
+   "ctx": "Read this opinion piece: \"Look at almost any school playground in the country and you will see the same grey expanse of tarmac, as bleak as a car park. It is hardly surprising that children complain of boredom and that teachers struggle to keep order at break. Yet there is a simple and cheap remedy. Schools that have planted trees and shrubs report that pupils play more creatively, fight less and return to lessons calmer. Shade also protects children from the sun, which matters now that summers are becoming hotter. Some headteachers fear that fallen leaves will cost money to clear, but that is a petty objection when set against the benefits. Every school should therefore be given the budget to turn its tarmac into a small woodland, and parents should demand it.\""
+  },
+  {
+   "v": "Which quotation best supports the claim that the writer is mostly positive?",
+   "o": [
+    "\"Less convincing is the final room\"",
+    "\"It runs until the end of November\"",
+    "\"tickets cost twelve euros\"",
+    "\"ambitious in scope\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 4,
+   "u": "Opening = oordeel. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"Less convincing is the final room\"? Dan denk je dat deze woorden de positieve houding tonen. Het is de kritiek, en juist het zwakke punt.",
+    "Koos je \"It runs until the end of November\"? Dan denk je dat deze woorden de houding tonen. Het is praktische informatie, en geen oordeel.",
+    "Koos je \"tickets cost twelve euros\"? Dan denk je dat deze woorden de houding tonen. Het is een feit, en geen oordeel.",
+    "Klopt: de opening noemt de tentoonstelling ambitieus en grotendeels geslaagd."
+   ],
+   "uh": "Welk citaat toont de positieve houding?",
+   "ctx": "Read this review: \"The new exhibition on medieval trade routes at the city museum is ambitious in scope and, for the most part, successful. Its strongest feature is the way objects are grouped by journey rather than by period: a Venetian glass bowl stands beside spices, coins and a worn travelling chest, which allows visitors to follow a single route from port to market. The accompanying texts are clear and rarely condescending. Less convincing is the final room, where a touch-screen game about modern shipping feels tacked on and distracts from the quiet authority of the earlier displays. Nevertheless, the exhibition deserves a visit, especially for anyone who thinks that history is a matter of dates. It runs until the end of November, and tickets cost twelve euros.\""
+  },
+  {
+   "v": "What does \"Nevertheless\" signal about the writer's view?",
+   "o": [
+    "it does not change his advice",
+    "the writer changes his mind completely",
+    "the writer repeats the criticism",
+    "the writer introduces a new topic"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 3,
+   "u": "Nevertheless = toch aanbevelen.",
+   "uo": [
+    "Klopt: nevertheless laat zien dat hij ondanks de kritiek toch aanbeveelt.",
+    "Koos je \"the writer changes his mind completely\"? Dan denk je dat hij zijn mening omdraait. Hij blijft de tentoonstelling aanbevelen, dus er is geen omslag.",
+    "Koos je \"the writer repeats the criticism\"? Dan denk je dat hij de kritiek herhaalt. Hij zet er juist een positief oordeel tegenover, en herhaalt niets.",
+    "Koos je \"the writer introduces a new topic\"? Dan denk je dat hij een nieuw onderwerp begint. Hij blijft bij dezelfde tentoonstelling, en rondt af."
+   ],
+   "uh": "Wat laat nevertheless zien?",
+   "ctx": "Read this review: \"The new exhibition on medieval trade routes at the city museum is ambitious in scope and, for the most part, successful. Its strongest feature is the way objects are grouped by journey rather than by period: a Venetian glass bowl stands beside spices, coins and a worn travelling chest, which allows visitors to follow a single route from port to market. The accompanying texts are clear and rarely condescending. Less convincing is the final room, where a touch-screen game about modern shipping feels tacked on and distracts from the quiet authority of the earlier displays. Nevertheless, the exhibition deserves a visit, especially for anyone who thinks that history is a matter of dates. It runs until the end of November, and tickets cost twelve euros.\""
+  },
+  {
+   "v": "What is the effect of the words \"petty objection\"?",
+   "o": [
+    "it makes the objection sound reasonable",
+    "it makes the worry look small",
+    "it shows the writer is neutral",
+    "it praises the headteachers"
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 1,
+   "u": "Petty = klein en onbelangrijk.",
+   "uo": [
+    "Koos je \"it makes the objection sound reasonable\"? Dan denk je dat de woorden het bezwaar redelijk laten klinken. Petty is afkeurend, en maakt het juist klein.",
+    "Klopt: petty doet het bezwaar klein en onbelangrijk lijken.",
+    "Koos je \"it shows the writer is neutral\"? Dan denk je dat de woorden neutraal zijn. Petty is beladen, en toont een oordeel.",
+    "Koos je \"it praises the headteachers\"? Dan denk je dat de woorden de schoolleiders prijzen. Het is een negatief woord, en bedoeld als afkeuring."
+   ],
+   "uh": "Wat is het effect?",
+   "ctx": "Read this opinion piece: \"Look at almost any school playground in the country and you will see the same grey expanse of tarmac, as bleak as a car park. It is hardly surprising that children complain of boredom and that teachers struggle to keep order at break. Yet there is a simple and cheap remedy. Schools that have planted trees and shrubs report that pupils play more creatively, fight less and return to lessons calmer. Shade also protects children from the sun, which matters now that summers are becoming hotter. Some headteachers fear that fallen leaves will cost money to clear, but that is a petty objection when set against the benefits. Every school should therefore be given the budget to turn its tarmac into a small woodland, and parents should demand it.\""
+  },
+  {
+   "v": "What is the effect of the irony in the text?",
+   "o": [
+    "it informs the reader neutrally",
+    "it persuades readers to attend more meetings",
+    "it hides the writer's opinion completely",
+    "it amuses and criticises"
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 2,
+   "u": "Ironie: grappig en kritisch. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"it informs the reader neutrally\"? Dan denk je dat de ironie neutraal informeert. Ironie toont een mening, en is niet neutraal.",
+    "Koos je \"it persuades readers to attend more meetings\"? Dan denk je dat de ironie aanzet tot vergaderen. Ze kritiseert juist vergaderingen, en bedoelt het omgekeerde.",
+    "Koos je \"it hides the writer's opinion completely\"? Dan denk je dat de ironie de mening verbergt. De lezer begrijpt juist wat de schrijver vindt, en de kritiek blijft zichtbaar.",
+    "Klopt: de ironie laat de lezer lachen en maakt tegelijk de kritiek duidelijk."
+   ],
+   "uh": "Wat is het effect?",
+   "ctx": "Read this column: \"This Monday, I attended a meeting to discuss the agenda for another meeting. Fourteen people sat around a table for ninety minutes while a consultant, who had apparently been flown in from abroad, explained that communication is important. Several colleagues nodded gravely, as if they had just heard a revelation. I confess that I admired the efficiency of the whole exercise: in a single morning, the company managed to spend the equivalent of a small car on a conclusion that a child could have reached. Of course, I am sure the consultant's intentions were excellent, and I do not doubt that his invoice will be paid promptly. It was only the hour that I would like back. At the end, we agreed to meet again next week to evaluate whether the meeting had been useful.\""
+  },
+  {
+   "v": "Which statement about the text is correct?",
+   "o": [
+    "it uses emotional language",
+    "the writer remains neutral throughout",
+    "the writer presents the objections as strong",
+    "the writer only reports a study"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 4,
+   "u": "Beladen taal = overtuigen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: woorden als bleak en petty en de oproep aan het eind zijn bedoeld om te overtuigen.",
+    "Koos je \"the writer remains neutral throughout\"? Dan denk je dat de schrijver neutraal blijft. Er staan beladen woorden in, en een oproep.",
+    "Koos je \"the writer presents the objections as strong\"? Dan denk je dat het bezwaar sterk wordt gemaakt. Het wordt juist klein genoemd, met petty.",
+    "Koos je \"the writer only reports a study\"? Dan denk je dat het een verslag van een onderzoek is. De schrijver geeft een mening, en doet een oproep."
+   ],
+   "uh": "Welke bewering klopt?",
+   "ctx": "Read this opinion piece: \"Look at almost any school playground in the country and you will see the same grey expanse of tarmac, as bleak as a car park. It is hardly surprising that children complain of boredom and that teachers struggle to keep order at break. Yet there is a simple and cheap remedy. Schools that have planted trees and shrubs report that pupils play more creatively, fight less and return to lessons calmer. Shade also protects children from the sun, which matters now that summers are becoming hotter. Some headteachers fear that fallen leaves will cost money to clear, but that is a petty objection when set against the benefits. Every school should therefore be given the budget to turn its tarmac into a small woodland, and parents should demand it.\""
+  },
+  {
+   "v": "Which words show that the text also gives practical information?",
+   "o": [
+    "\"a Venetian glass bowl stands beside spices\"",
+    "\"tickets cost twelve euros\"",
+    "\"ambitious in scope\"",
+    "\"quiet authority\""
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 0,
+   "u": "Prijs = praktisch. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"a Venetian glass bowl stands beside spices\"? Dan denk je dat deze woorden praktisch zijn omdat ze iets concreets beschrijven. Ze tonen een stuk uit de zaal, maar vertellen niet wat je moet weten om te gaan.",
+    "Klopt: de prijs is een praktisch gegeven voor wie wil gaan.",
+    "Koos je \"ambitious in scope\"? Dan denk je dat deze woorden praktisch zijn omdat ze iets over omvang zeggen. Het is een oordeel over de tentoonstelling, en geen gegeven voor de bezoeker.",
+    "Koos je \"quiet authority\"? Dan denk je dat deze woorden praktisch zijn omdat ze een kenmerk noemen. Het is een waardering, en geen gegeven voor een bezoek."
+   ],
+   "uh": "Welke woorden geven praktische informatie?",
+   "ctx": "Read this review: \"The new exhibition on medieval trade routes at the city museum is ambitious in scope and, for the most part, successful. Its strongest feature is the way objects are grouped by journey rather than by period: a Venetian glass bowl stands beside spices, coins and a worn travelling chest, which allows visitors to follow a single route from port to market. The accompanying texts are clear and rarely condescending. Less convincing is the final room, where a touch-screen game about modern shipping feels tacked on and distracts from the quiet authority of the earlier displays. Nevertheless, the exhibition deserves a visit, especially for anyone who thinks that history is a matter of dates. It runs until the end of November, and tickets cost twelve euros.\""
+  }
+ ],
+ "oe": [
+  {
+   "bron": "Examenstijl",
+   "ctx": "You read a column about meetings: \"This Monday, I attended a meeting to discuss the agenda for another meeting. Fourteen people sat around a table for ninety minutes while a consultant, who had apparently been flown in from abroad, explained that communication is important. Several colleagues nodded gravely, as if they had just heard a revelation. I confess that I admired the efficiency of the whole exercise: in a single morning, the company managed to spend the equivalent of a small car on a conclusion that a child could have reached. Of course, I am sure the consultant's intentions were excellent, and I do not doubt that his invoice will be paid promptly. It was only the hour that I would like back. At the end, we agreed to meet again next week to evaluate whether the meeting had been useful.\" Your teacher asks you about the writer's attitude.",
+   "v": "Name the writer's attitude and explain it with one phrase from the text.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "De houding is spottend of sarcastisch of kritisch (1p). Een passend citaat, zoals as if they had just heard a revelation (1p). De uitleg: hij bedoelt het omgekeerde van zijn lof (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "You read a column about meetings: \"This Monday, I attended a meeting to discuss the agenda for another meeting. Fourteen people sat around a table for ninety minutes while a consultant, who had apparently been flown in from abroad, explained that communication is important. Several colleagues nodded gravely, as if they had just heard a revelation. I confess that I admired the efficiency of the whole exercise: in a single morning, the company managed to spend the equivalent of a small car on a conclusion that a child could have reached. Of course, I am sure the consultant's intentions were excellent, and I do not doubt that his invoice will be paid promptly. It was only the hour that I would like back. At the end, we agreed to meet again next week to evaluate whether the meeting had been useful.\" Your teacher asks about the irony in the text.",
+   "v": "Explain why \"I admired the efficiency of the whole exercise\" is ironic.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "De schrijver bedoelt het tegenovergestelde (1p). Hij noemt de vergadering efficiënt maar bedoelt dat ze verspillend was (1p). Het blijkt uit de kosten van een kleine auto of de conclusie die een kind kon trekken (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "You read an opinion piece about playgrounds: \"Look at almost any school playground in the country and you will see the same grey expanse of tarmac, as bleak as a car park. It is hardly surprising that children complain of boredom and that teachers struggle to keep order at break. Yet there is a simple and cheap remedy. Schools that have planted trees and shrubs report that pupils play more creatively, fight less and return to lessons calmer. Shade also protects children from the sun, which matters now that summers are becoming hotter. Some headteachers fear that fallen leaves will cost money to clear, but that is a petty objection when set against the benefits. Every school should therefore be given the budget to turn its tarmac into a small woodland, and parents should demand it.\" Your teacher asks about the writer's aim.",
+   "v": "State the writer's aim and give one piece of evidence from the text.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Het doel is overtuigen of oproepen tot actie (1p). Een citaat, zoals parents should demand it (1p). Of beladen woorden als bleak of petty (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "You read an opinion piece about playgrounds: \"Look at almost any school playground in the country and you will see the same grey expanse of tarmac, as bleak as a car park. It is hardly surprising that children complain of boredom and that teachers struggle to keep order at break. Yet there is a simple and cheap remedy. Schools that have planted trees and shrubs report that pupils play more creatively, fight less and return to lessons calmer. Shade also protects children from the sun, which matters now that summers are becoming hotter. Some headteachers fear that fallen leaves will cost money to clear, but that is a petty objection when set against the benefits. Every school should therefore be given the budget to turn its tarmac into a small woodland, and parents should demand it.\" Your teacher asks about word choice.",
+   "v": "Explain the effect of the words \"petty objection\".",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Petty maakt het bezwaar onbelangrijk of klein (1p). Het toont een negatieve houding tegenover de schoolleiders (1p). Het steunt het standpunt dat scholen groener moeten worden (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "You read a review of an exhibition: \"The new exhibition on medieval trade routes at the city museum is ambitious in scope and, for the most part, successful. Its strongest feature is the way objects are grouped by journey rather than by period: a Venetian glass bowl stands beside spices, coins and a worn travelling chest, which allows visitors to follow a single route from port to market. The accompanying texts are clear and rarely condescending. Less convincing is the final room, where a touch-screen game about modern shipping feels tacked on and distracts from the quiet authority of the earlier displays. Nevertheless, the exhibition deserves a visit, especially for anyone who thinks that history is a matter of dates. It runs until the end of November, and tickets cost twelve euros.\" Your teacher asks about the writer's opinion.",
+   "v": "Say what the writer thinks of the exhibition and support it with two phrases.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Overwegend positief (1p). Een positief citaat, zoals ambitious in scope of deserves a visit (1p). Een kritisch citaat, zoals tacked on over de laatste zaal (1p)."
+  }
+ ]
+}
