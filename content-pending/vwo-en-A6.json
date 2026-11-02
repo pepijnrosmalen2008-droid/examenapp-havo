@@ -1,0 +1,682 @@
+{
+ "id": "A6",
+ "lo": "en.A.6",
+ "gs": 2,
+ "naam": "Feiten, meningen en argumenten in een Engelse tekst onderscheiden",
+ "beschrijving": "Je leert feiten van meningen te scheiden, een standpunt met zijn argumenten, tegenargumenten en weerwoorden te herkennen en de kracht van bewijs en bronnen kritisch te beoordelen.",
+ "ceStatus": "CE",
+ "binas": "",
+ "val": "",
+ "onderwerpen": [
+  "Feit en mening",
+  "Standpunt en argument",
+  "Tegenargument en weerwoord",
+  "Kracht van bewijs en bronnen",
+  "Signalen van mening en retorische middelen"
+ ],
+ "sam": "Een feit kun je controleren, een mening niet. Woorden als I believe, wiser en personally wijzen op een mening. Een standpunt is de mening die de schrijver verdedigt, een argument is een reden die het ondersteunt en een tegenargument een reden ertegen. Met admittedly geeft hij iets toe, met yet of but geeft hij een weerwoord. Bewijs is sterker bij een grote, gevarieerde groep en een betrouwbare bron; een verband is nog geen oorzaak. Een retorische vraag of een korte tegenstelling maakt een mening krachtig.",
+ "begrippen": [
+  {
+   "t": "Feit",
+   "d": "Iets wat je kunt controleren, vaak met een cijfer of bron."
+  },
+  {
+   "t": "Mening",
+   "d": "Wat iemand vindt; niet te controleren."
+  },
+  {
+   "t": "Standpunt",
+   "d": "De mening die de schrijver verdedigt."
+  },
+  {
+   "t": "Argument",
+   "d": "Een reden die het standpunt ondersteunt."
+  },
+  {
+   "t": "Tegenargument",
+   "d": "Een reden tegen het standpunt."
+  },
+  {
+   "t": "Weerwoord",
+   "d": "Een antwoord op een tegenargument."
+  },
+  {
+   "t": "Bron",
+   "d": "De herkomst van een gegeven, zoals een instituut."
+  },
+  {
+   "t": "Toegeving",
+   "d": "Iets toegeven voordat je je punt maakt."
+  },
+  {
+   "t": "Retorische vraag",
+   "d": "Een vraag waar je geen antwoord op verwacht."
+  },
+  {
+   "t": "Verband",
+   "d": "Twee dingen die samen voorkomen."
+  },
+  {
+   "t": "Oorzaak",
+   "d": "Het ene veroorzaakt het andere."
+  },
+  {
+   "t": "Beladen woord",
+   "d": "Een woord dat een oordeel bevat, zoals wiser."
+  }
+ ],
+ "sv": [
+  {
+   "v": "Which sentence is a fact?",
+   "o": [
+    "\"Water is the most refreshing drink.\"",
+    "\"Water boils at 100 degrees.\"",
+    "\"Boiled water always tastes bad.\"",
+    "\"Everyone should drink more water.\""
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 0,
+   "u": "Feit = controleerbaar. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"Water is the most refreshing drink.\"? Dan denk je dat dit een feit is. Het is een smaakoordeel, en niet te controleren.",
+    "Klopt: dit is een meetbaar en te controleren feit.",
+    "Koos je \"Boiled water always tastes bad.\"? Dan denk je dat dit een feit is. Het is een persoonlijke mening, en niet te meten.",
+    "Koos je \"Everyone should drink more water.\"? Dan denk je dat dit een feit is. Het is een advies, en dus een mening."
+   ],
+   "uh": "Welke zin is een feit?"
+  },
+  {
+   "v": "Which words often signal an opinion?",
+   "o": [
+    "\"according to\" and \"research shows\"",
+    "\"in 2022\" and \"on average\"",
+    "\"at 9.30\" and \"on Monday\"",
+    "\"I believe\" and \"in my view\""
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 0,
+   "u": "I believe = mening. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"according to and research shows\"? Dan denk je dat deze woorden een mening aangeven omdat ze iets beweren. Ze verwijzen naar een bron, en leiden meestal een feit in.",
+    "Koos je \"in 2022 and on average\"? Dan denk je dat deze woorden een oordeel geven omdat ze een samenvatting suggereren. Ze noemen een jaar of gemiddelde, en zijn feitelijk.",
+    "Koos je \"at 9.30 and on Monday\"? Dan denk je dat deze woorden een standpunt tonen omdat ze iets vastleggen. Ze noemen alleen een moment, en zijn feitelijk.",
+    "Klopt: deze woorden laten zien dat de schrijver zijn eigen oordeel geeft."
+   ],
+   "uh": "Welke woorden tonen een mening?"
+  },
+  {
+   "v": "Which description fits a standpoint?",
+   "o": [
+    "the writer's opinion",
+    "a fact that nobody doubts",
+    "an example from daily life",
+    "the title of the text"
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 1,
+   "u": "Standpunt = verdedigde mening.",
+   "uo": [
+    "Klopt: het standpunt is de mening die de schrijver verdedigt.",
+    "Koos je \"a fact that nobody doubts\"? Dan denk je dat het standpunt een onbetwist feit is. Een standpunt is juist een mening, die verdedigd moet worden.",
+    "Koos je \"an example from daily life\"? Dan denk je dat het standpunt een voorbeeld is. Een voorbeeld ondersteunt, en is geen mening.",
+    "Koos je \"the title of the text\"? Dan denk je dat het standpunt de titel is. Een titel noemt het onderwerp, en is geen mening."
+   ],
+   "uh": "Wat is een standpunt?"
+  },
+  {
+   "v": "Which description fits an argument?",
+   "o": [
+    "a repeat of the standpoint",
+    "a question to the reader",
+    "a supporting reason",
+    "a detail about the author"
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 1,
+   "u": "Argument = reden. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"a repeat of the standpoint\"? Dan denk je dat een argument een herhaling is. Een argument geeft een reden, en herhaalt niet.",
+    "Koos je \"a question to the reader\"? Dan denk je dat een argument een vraag is. Een argument is een reden, en geen vraag.",
+    "Klopt: een argument is een reden die het standpunt ondersteunt.",
+    "Koos je \"a detail about the author\"? Dan denk je dat een argument een detail over de schrijver is. Een argument gaat over het standpunt, en niet over de schrijver."
+   ],
+   "uh": "Wat is een argument?"
+  },
+  {
+   "v": "Which word often introduces a reply to criticism?",
+   "o": [
+    "\"therefore\"",
+    "\"for example\"",
+    "\"yet\"",
+    "\"firstly\""
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 2,
+   "u": "Yet = weerwoord. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"therefore\"? Dan denk je dat therefore een weerwoord inleidt omdat het na kritiek kan staan. Het leidt een conclusie in, en geeft geen antwoord op kritiek.",
+    "Koos je \"for example\"? Dan denk je dat for example een weerwoord inleidt omdat het meer uitleg geeft. Het geeft een voorbeeld, en antwoordt niet op kritiek.",
+    "Klopt: yet leidt vaak een weerwoord in op een eerder genoemd bezwaar.",
+    "Koos je \"firstly\"? Dan denk je dat firstly een weerwoord inleidt omdat het iets opent. Het noemt een volgorde, en reageert niet op kritiek."
+   ],
+   "uh": "Welk woord leidt een weerwoord in?"
+  },
+  {
+   "v": "Which kind of evidence is usually the strongest?",
+   "o": [
+    "research with a large and varied group",
+    "one personal story",
+    "a rumour from friends",
+    "a newspaper headline"
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 3,
+   "u": "Groot onderzoek = sterker. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: onderzoek bij een grote, gevarieerde groep is het minst toevallig.",
+    "Koos je \"one personal story\"? Dan denk je dat één verhaal sterk bewijs is. Eén geval kan toeval zijn, en zegt weinig over anderen.",
+    "Koos je \"a rumour from friends\"? Dan denk je dat een gerucht sterk bewijs is. Een gerucht is niet te controleren, en dus zwak.",
+    "Koos je \"a newspaper headline\"? Dan denk je dat een kop sterk bewijs is. Een kop is kort, en kan overdrijven."
+   ],
+   "uh": "Welk bewijs is het sterkst?"
+  },
+  {
+   "v": "Which function does a rhetorical question have?",
+   "o": [
+    "it asks the reader to reply",
+    "it gives a factual answer",
+    "it ends the text",
+    "it makes a point only"
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 4,
+   "u": "Retorische vraag = stelling. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"it asks the reader to reply\"? Dan denk je dat een retorische vraag antwoord vraagt. Ze is bedoeld als stelling, en verwacht geen reactie.",
+    "Koos je \"it gives a factual answer\"? Dan denk je dat een retorische vraag een feit geeft. Ze is een mening in vraagvorm, en geen feit.",
+    "Koos je \"it ends the text\"? Dan denk je dat een retorische vraag de tekst afsluit. Ze kan overal staan, en sluit niet per se af.",
+    "Klopt: een retorische vraag wil geen antwoord maar een punt maken."
+   ],
+   "uh": "Wat doet een retorische vraag?"
+  },
+  {
+   "v": "Which sentence is a fact?",
+   "o": [
+    "\"I find the cost argument the most convincing\"",
+    "\"nuclear plants supplied ten per cent of electricity\"",
+    "\"a mix of wind, solar and storage is the wiser investment\"",
+    "\"money spent on a reactor cannot be spent on faster alternatives\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 0,
+   "u": "Cijfer met bron = feit. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"I find the cost argument the most convincing\"? Dan denk je dat dit een feit is. Het begint met I find, en is een mening.",
+    "Klopt: dit is een cijfer met een bron dat je kunt nagaan.",
+    "Koos je \"a mix of wind, solar and storage is the wiser...\"? Dan denk je dat dit een feit is. Wiser is een oordeel, en geen controleerbaar gegeven.",
+    "Koos je \"money spent on a reactor cannot be spent on faster...\"? Dan denk je dat dit een feit is. Het is een argument van de schrijver, en geen cijfer met een bron."
+   ],
+   "uh": "Welke zin is een feit?",
+   "ctx": "Read this text: \"Nuclear power divides opinion like few other energy sources. Supporters point out that a nuclear plant produces electricity around the clock, regardless of weather, and that its carbon emissions over its lifetime are about as low as those of wind. Opponents counter that building a plant takes more than a decade and costs billions, and that the waste remains dangerous for thousands of years. According to the International Energy Agency, nuclear plants supplied roughly ten per cent of the world's electricity in 2022. Personally, I find the cost argument the most convincing, because money spent on a reactor cannot be spent on faster alternatives. Admittedly, a country without enough wind or sun may have little choice. But for most countries, I believe, a mix of wind, solar and storage is the wiser investment.\""
+  },
+  {
+   "v": "Which words show that a sentence is the writer's own opinion?",
+   "o": [
+    "\"Supporters point out\"",
+    "\"According to the International Energy Agency\"",
+    "\"Opponents counter\"",
+    "\"Personally, I find\""
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 4,
+   "u": "I find = eigen mening. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"Supporters point out\"? Dan denk je dat deze woorden zijn eigen mening zijn. Het is de mening van voorstanders, en niet van de schrijver.",
+    "Koos je \"According to the International Energy Agency\"? Dan denk je dat deze woorden zijn mening zijn. Het is een bronvermelding, en geeft een feit.",
+    "Koos je \"Opponents counter\"? Dan denk je dat deze woorden zijn mening zijn. Het is de mening van tegenstanders, en niet van de schrijver.",
+    "Klopt: I find laat zien dat de schrijver zijn eigen oordeel geeft."
+   ],
+   "uh": "Welke woorden tonen zijn eigen mening?",
+   "ctx": "Read this text: \"Nuclear power divides opinion like few other energy sources. Supporters point out that a nuclear plant produces electricity around the clock, regardless of weather, and that its carbon emissions over its lifetime are about as low as those of wind. Opponents counter that building a plant takes more than a decade and costs billions, and that the waste remains dangerous for thousands of years. According to the International Energy Agency, nuclear plants supplied roughly ten per cent of the world's electricity in 2022. Personally, I find the cost argument the most convincing, because money spent on a reactor cannot be spent on faster alternatives. Admittedly, a country without enough wind or sun may have little choice. But for most countries, I believe, a mix of wind, solar and storage is the wiser investment.\""
+  },
+  {
+   "v": "What is the writer's standpoint?",
+   "o": [
+    "nuclear power should be built everywhere",
+    "a mix is wiser for most countries",
+    "nuclear power should be banned at once",
+    "wind turbines are ugly"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 1,
+   "u": "Standpunt: mix is slimmer. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"nuclear power should be built everywhere\"? Dan denk je dat de schrijver kernenergie overal wil. Hij vindt de kosten overtuigend tegen, en kiest een mix.",
+    "Klopt: de laatste zin zegt dat de schrijver voor de meeste landen een mix verkiest.",
+    "Koos je \"nuclear power should be banned at once\"? Dan denk je dat de schrijver een verbod eist. Hij laat ruimte voor landen zonder wind en zon, dus hij verbiedt niet meteen.",
+    "Koos je \"wind turbines are ugly\"? Dan denk je dat de schrijver windmolens lelijk vindt. Daar staat niets over, en hij noemt ze juist onderdeel van een mix."
+   ],
+   "uh": "Wat is zijn standpunt?",
+   "ctx": "Read this text: \"Nuclear power divides opinion like few other energy sources. Supporters point out that a nuclear plant produces electricity around the clock, regardless of weather, and that its carbon emissions over its lifetime are about as low as those of wind. Opponents counter that building a plant takes more than a decade and costs billions, and that the waste remains dangerous for thousands of years. According to the International Energy Agency, nuclear plants supplied roughly ten per cent of the world's electricity in 2022. Personally, I find the cost argument the most convincing, because money spent on a reactor cannot be spent on faster alternatives. Admittedly, a country without enough wind or sun may have little choice. But for most countries, I believe, a mix of wind, solar and storage is the wiser investment.\""
+  },
+  {
+   "v": "Which sentence gives an argument against nuclear power?",
+   "o": [
+    "A plant produces electricity around the clock.",
+    "Its carbon emissions are about as low as those of wind.",
+    "Building takes a decade and costs billions.",
+    "Nuclear plants supplied ten per cent of electricity."
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 2,
+   "u": "Tijd en kosten = bezwaar. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"A plant produces electricity around the clock.\"? Dan denk je dat dit een argument tegen is. Het is een argument vóór, van de voorstanders.",
+    "Koos je \"Its carbon emissions are about as low as those of...\"? Dan denk je dat dit een argument tegen is. Het is een voordeel, dat voorstanders noemen.",
+    "Klopt: tijd en kosten worden door tegenstanders als bezwaar genoemd.",
+    "Koos je \"Nuclear plants supplied ten per cent of electricity.\"? Dan denk je dat dit een argument tegen is. Het is een neutraal feit, en geen bezwaar."
+   ],
+   "uh": "Welke zin is een tegenargument?",
+   "ctx": "Read this text: \"Nuclear power divides opinion like few other energy sources. Supporters point out that a nuclear plant produces electricity around the clock, regardless of weather, and that its carbon emissions over its lifetime are about as low as those of wind. Opponents counter that building a plant takes more than a decade and costs billions, and that the waste remains dangerous for thousands of years. According to the International Energy Agency, nuclear plants supplied roughly ten per cent of the world's electricity in 2022. Personally, I find the cost argument the most convincing, because money spent on a reactor cannot be spent on faster alternatives. Admittedly, a country without enough wind or sun may have little choice. But for most countries, I believe, a mix of wind, solar and storage is the wiser investment.\""
+  },
+  {
+   "v": "What does \"Admittedly\" introduce?",
+   "o": [
+    "a concession",
+    "a conclusion",
+    "a new fact from a source",
+    "an example"
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 2,
+   "u": "Admittedly = toegeving. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: admittedly geeft iets toe, waarna de schrijver zijn punt maakt.",
+    "Koos je \"a conclusion\"? Dan denk je dat admittedly een conclusie inleidt. Het geeft een toegeving, en sluit niet af.",
+    "Koos je \"a new fact from a source\"? Dan denk je dat admittedly een bron inleidt. Het geeft een toegeving, en noemt geen bron.",
+    "Koos je \"an example\"? Dan denk je dat admittedly een voorbeeld inleidt. Het geeft een toegeving, en illustreert niets."
+   ],
+   "uh": "Wat leidt admittedly in?",
+   "ctx": "Read this text: \"Nuclear power divides opinion like few other energy sources. Supporters point out that a nuclear plant produces electricity around the clock, regardless of weather, and that its carbon emissions over its lifetime are about as low as those of wind. Opponents counter that building a plant takes more than a decade and costs billions, and that the waste remains dangerous for thousands of years. According to the International Energy Agency, nuclear plants supplied roughly ten per cent of the world's electricity in 2022. Personally, I find the cost argument the most convincing, because money spent on a reactor cannot be spent on faster alternatives. Admittedly, a country without enough wind or sun may have little choice. But for most countries, I believe, a mix of wind, solar and storage is the wiser investment.\""
+  },
+  {
+   "v": "Which evidence supports the claim that a ban is easy to evade?",
+   "o": [
+    "9 in 10 teens use a platform",
+    "teenagers online for three hours report lower self-esteem",
+    "the effect was smaller for those who chatted",
+    "companies design platforms addictively"
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 3,
+   "u": "Negen op tien = omzeilen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: dit cijfer laat zien dat jongeren de leeftijdsgrens al omzeilen.",
+    "Koos je \"teenagers online for three hours report lower...\"? Dan denk je dat dit bewijs voor omzeilen is. Het is een argument van de verdedigers, en gaat over zelfvertrouwen.",
+    "Koos je \"the effect was smaller for those who chatted\"? Dan denk je dat dit bewijs voor omzeilen is. Het gaat over de aard van het gebruik, en niet over omzeilen.",
+    "Koos je \"companies design platforms addictively\"? Dan denk je dat dit bewijs voor omzeilen is. Het gaat over het ontwerp, en niet over omzeilen."
+   ],
+   "uh": "Welk bewijs past?",
+   "ctx": "Read this text: \"Banning social media for under-sixteens sounds decisive, but it is unlikely to work. A recent survey of fourteen-year-olds found that nine out of ten already use at least one platform, and most had signed up with a false birth date. Strict rules that are easy to evade merely teach children to lie. Defenders of a ban argue that teenagers who spend more than three hours a day online report lower self-esteem. That may be true, yet the same survey showed that the effect was much smaller for those who mainly chatted with friends than for those who scrolled through strangers' posts. Surely the better answer is to teach young people how to use these platforms wisely, and to make companies design them less addictively. A ban is a headline; education is a solution.\""
+  },
+  {
+   "v": "Which counter-argument does the writer discuss?",
+   "o": [
+    "a ban is easy to enforce",
+    "teaching about social media is too expensive",
+    "heavy use is linked to lower self-esteem",
+    "companies are not to blame"
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 2,
+   "u": "Zelfvertrouwen = tegenargument.",
+   "uo": [
+    "Koos je \"a ban is easy to enforce\"? Dan denk je dat de verdedigers dit zeggen. De tekst zegt het tegenovergestelde, namelijk dat een verbod makkelijk te omzeilen is.",
+    "Koos je \"teaching about social media is too expensive\"? Dan denk je dat dit het tegenargument is. De kosten van onderwijs worden niet genoemd, dus dit staat er niet.",
+    "Klopt: de verdedigers van een verbod wijzen op lager zelfvertrouwen bij veel gebruik.",
+    "Koos je \"companies are not to blame\"? Dan denk je dat dit het tegenargument is. De schrijver vindt juist dat bedrijven minder verslavend moeten ontwerpen, dus dit is niet het tegenargument."
+   ],
+   "uh": "Welk tegenargument bespreekt de schrijver?",
+   "ctx": "Read this text: \"Banning social media for under-sixteens sounds decisive, but it is unlikely to work. A recent survey of fourteen-year-olds found that nine out of ten already use at least one platform, and most had signed up with a false birth date. Strict rules that are easy to evade merely teach children to lie. Defenders of a ban argue that teenagers who spend more than three hours a day online report lower self-esteem. That may be true, yet the same survey showed that the effect was much smaller for those who mainly chatted with friends than for those who scrolled through strangers' posts. Surely the better answer is to teach young people how to use these platforms wisely, and to make companies design them less addictively. A ban is a headline; education is a solution.\""
+  },
+  {
+   "v": "What is the function of \"Surely the better answer is ...\"?",
+   "o": [
+    "a neutral fact from a survey",
+    "a rhetorical opinion",
+    "a quotation from the survey",
+    "a question the writer cannot answer"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 4,
+   "u": "Surely = retorisch. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"a neutral fact from a survey\"? Dan denk je dat dit een feit is. Surely geeft een mening, en geen enquêtecijfer.",
+    "Klopt: surely doet alsof de lezer het al met hem eens is en presenteert zijn mening.",
+    "Koos je \"a quotation from the survey\"? Dan denk je dat dit een citaat is. Er staan geen aanhalingstekens, en het is de mening van de schrijver.",
+    "Koos je \"a question the writer cannot answer\"? Dan denk je dat het een onbeantwoorde vraag is. Het is een stelling, en het antwoord volgt direct."
+   ],
+   "uh": "Welke functie heeft de zin?",
+   "ctx": "Read this text: \"Banning social media for under-sixteens sounds decisive, but it is unlikely to work. A recent survey of fourteen-year-olds found that nine out of ten already use at least one platform, and most had signed up with a false birth date. Strict rules that are easy to evade merely teach children to lie. Defenders of a ban argue that teenagers who spend more than three hours a day online report lower self-esteem. That may be true, yet the same survey showed that the effect was much smaller for those who mainly chatted with friends than for those who scrolled through strangers' posts. Surely the better answer is to teach young people how to use these platforms wisely, and to make companies design them less addictively. A ban is a headline; education is a solution.\""
+  },
+  {
+   "v": "What is the writer's standpoint?",
+   "o": [
+    "a ban is the only answer",
+    "social media is harmless",
+    "teenagers should use platforms more",
+    "a ban fails; education works"
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 1,
+   "u": "Standpunt: onderwijs boven verbod.",
+   "uo": [
+    "Koos je \"a ban is the only answer\"? Dan denk je dat de schrijver een verbod wil. Hij zegt dat het niet zal werken, en kiest onderwijs.",
+    "Koos je \"social media is harmless\"? Dan denk je dat de schrijver sociale media onschuldig vindt. Hij wil bedrijven laten ontwerpen met minder verslaving, en erkent risico's.",
+    "Koos je \"teenagers should use platforms more\"? Dan denk je dat de schrijver meer gebruik wil. Hij wil dat ze er verstandig mee omgaan, en niet meer.",
+    "Klopt: de eerste zin zegt dat een verbod waarschijnlijk niet werkt en het slot kiest voor onderwijs."
+   ],
+   "uh": "Wat is het standpunt?",
+   "ctx": "Read this text: \"Banning social media for under-sixteens sounds decisive, but it is unlikely to work. A recent survey of fourteen-year-olds found that nine out of ten already use at least one platform, and most had signed up with a false birth date. Strict rules that are easy to evade merely teach children to lie. Defenders of a ban argue that teenagers who spend more than three hours a day online report lower self-esteem. That may be true, yet the same survey showed that the effect was much smaller for those who mainly chatted with friends than for those who scrolled through strangers' posts. Surely the better answer is to teach young people how to use these platforms wisely, and to make companies design them less addictively. A ban is a headline; education is a solution.\""
+  },
+  {
+   "v": "Which fact weakens the claim that coffee protects the heart?",
+   "o": [
+    "the study followed 20,000 adults",
+    "the study was funded by a coffee producer",
+    "the study lasted ten years",
+    "coffee drinkers had a 12 per cent lower risk"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 3,
+   "u": "Betaald door producent = zwakker.",
+   "uo": [
+    "Koos je \"the study followed 20,000 adults\"? Dan denk je dat dit het onderzoek zwakker maakt. Een grote groep maakt het juist sterker, en niet zwakker.",
+    "Klopt: een betaler met belang maakt de uitkomst minder betrouwbaar.",
+    "Koos je \"the study lasted ten years\"? Dan denk je dat dit het onderzoek zwakker maakt. Een lange looptijd is een sterk punt, en niet een zwak punt.",
+    "Koos je \"coffee drinkers had a 12 per cent lower risk\"? Dan denk je dat dit de claim zwakker maakt. Het is juist de uitkomst die de claim steunt, en niet een zwak punt."
+   ],
+   "uh": "Welk feit maakt de claim zwakker?",
+   "ctx": "Read this text: \"A new study claims that drinking three cups of coffee a day lowers the risk of heart disease. The researchers followed 20,000 adults for ten years and found that coffee drinkers had a 12 per cent lower risk than people who drank none. However, the study was funded by a coffee producer, and participants reported their own consumption, which may be unreliable. The authors themselves stress that the study shows a link, not a cause: people who drink coffee may also exercise more or eat differently. 'We would not advise anyone to start drinking coffee for their heart,' said one of them. Even so, the headline in several newspapers read 'Coffee protects your heart', a claim that the evidence does not support.\""
+  },
+  {
+   "v": "What do the authors mean by \"a link, not a cause\"?",
+   "o": [
+    "a link without proof of cause",
+    "coffee surely causes better health",
+    "there is no connection at all",
+    "the study found nothing"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 3,
+   "u": "Verband is geen oorzaak. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: er is een verband, maar dat bewijst niet dat koffie de oorzaak is.",
+    "Koos je \"coffee surely causes better health\"? Dan denk je dat een verband een oorzaak bewijst. De auteurs zeggen juist dat dat niet zo is, en noemen andere factoren.",
+    "Koos je \"there is no connection at all\"? Dan denk je dat er helemaal geen verband is. Het onderzoek vond wel een verband, maar geen bewijs voor oorzaak.",
+    "Koos je \"the study found nothing\"? Dan denk je dat het onderzoek niets vond. Het vond een twaalf procent lager risico, dus er is wel iets gevonden."
+   ],
+   "uh": "Wat bedoelen de auteurs?",
+   "ctx": "Read this text: \"A new study claims that drinking three cups of coffee a day lowers the risk of heart disease. The researchers followed 20,000 adults for ten years and found that coffee drinkers had a 12 per cent lower risk than people who drank none. However, the study was funded by a coffee producer, and participants reported their own consumption, which may be unreliable. The authors themselves stress that the study shows a link, not a cause: people who drink coffee may also exercise more or eat differently. 'We would not advise anyone to start drinking coffee for their heart,' said one of them. Even so, the headline in several newspapers read 'Coffee protects your heart', a claim that the evidence does not support.\""
+  },
+  {
+   "v": "Why is the headline \"Coffee protects your heart\" misleading?",
+   "o": [
+    "it is too short",
+    "it uses the word coffee",
+    "it comes from a scientific journal",
+    "it claims a cause"
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 3,
+   "u": "Kop beweert oorzaak. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"it is too short\"? Dan denk je dat de kop te kort is. De lengte is niet het probleem, maar de claim.",
+    "Koos je \"it uses the word coffee\"? Dan denk je dat het woord koffie fout is. Het onderwerp klopt, maar de oorzaak niet.",
+    "Koos je \"it comes from a scientific journal\"? Dan denk je dat de kop uit een tijdschrift komt. Hij komt uit kranten, en is een overdrijving.",
+    "Klopt: het onderzoek toont een verband en geen oorzaak, zoals de kop beweert."
+   ],
+   "uh": "Waarom is de kop misleidend?",
+   "ctx": "Read this text: \"A new study claims that drinking three cups of coffee a day lowers the risk of heart disease. The researchers followed 20,000 adults for ten years and found that coffee drinkers had a 12 per cent lower risk than people who drank none. However, the study was funded by a coffee producer, and participants reported their own consumption, which may be unreliable. The authors themselves stress that the study shows a link, not a cause: people who drink coffee may also exercise more or eat differently. 'We would not advise anyone to start drinking coffee for their heart,' said one of them. Even so, the headline in several newspapers read 'Coffee protects your heart', a claim that the evidence does not support.\""
+  },
+  {
+   "v": "Which statement is a fact?",
+   "o": [
+    "coffee is good for everybody",
+    "the researchers were careless",
+    "self-reported consumption",
+    "newspapers always exaggerate"
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 0,
+   "u": "Letterlijk in de tekst = feit.",
+   "uo": [
+    "Koos je \"coffee is good for everybody\"? Dan denk je dat dit een feit is. Het is een algemene bewering, die het onderzoek niet bewijst.",
+    "Koos je \"the researchers were careless\"? Dan denk je dat dit een feit is. Het is een oordeel, en staat niet in de tekst.",
+    "Klopt: dat deelnemers zelf opgaven hoeveel ze dronken, staat letterlijk in de tekst.",
+    "Koos je \"newspapers always exaggerate\"? Dan denk je dat dit een feit is. Het is een algemene mening, en altijd is een sterk woord."
+   ],
+   "uh": "Welke uitspraak is een feit?",
+   "ctx": "Read this text: \"A new study claims that drinking three cups of coffee a day lowers the risk of heart disease. The researchers followed 20,000 adults for ten years and found that coffee drinkers had a 12 per cent lower risk than people who drank none. However, the study was funded by a coffee producer, and participants reported their own consumption, which may be unreliable. The authors themselves stress that the study shows a link, not a cause: people who drink coffee may also exercise more or eat differently. 'We would not advise anyone to start drinking coffee for their heart,' said one of them. Even so, the headline in several newspapers read 'Coffee protects your heart', a claim that the evidence does not support.\""
+  },
+  {
+   "v": "Which type of argument is \"nine out of ten already use a platform\"?",
+   "o": [
+    "an argument based on authority",
+    "an argument based on emotion",
+    "an argument based on research data",
+    "an argument based on a personal story"
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 2,
+   "u": "Cijfer uit enquête = onderzoek.",
+   "uo": [
+    "Koos je \"an argument based on authority\"? Dan denk je dat dit een gezagsargument is. Er wordt geen expert aangehaald, maar een enquête.",
+    "Koos je \"an argument based on emotion\"? Dan denk je dat dit een emotioneel argument is. Er zijn geen emotionele woorden, maar een cijfer.",
+    "Klopt: het cijfer komt uit een enquête en is onderzoeksbewijs.",
+    "Koos je \"an argument based on a personal story\"? Dan denk je dat dit een persoonlijk verhaal is. Het gaat om een groep, en niet om één persoon."
+   ],
+   "uh": "Welk soort argument is dit?",
+   "ctx": "Read this text: \"Banning social media for under-sixteens sounds decisive, but it is unlikely to work. A recent survey of fourteen-year-olds found that nine out of ten already use at least one platform, and most had signed up with a false birth date. Strict rules that are easy to evade merely teach children to lie. Defenders of a ban argue that teenagers who spend more than three hours a day online report lower self-esteem. That may be true, yet the same survey showed that the effect was much smaller for those who mainly chatted with friends than for those who scrolled through strangers' posts. Surely the better answer is to teach young people how to use these platforms wisely, and to make companies design them less addictively. A ban is a headline; education is a solution.\""
+  },
+  {
+   "v": "Which source is cited to support a fact in the text?",
+   "o": [
+    "the opponents",
+    "the writer himself",
+    "the supporters",
+    "the IEA"
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 3,
+   "u": "Cijfer met bron. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"the opponents\"? Dan denk je dat de tegenstanders de bron zijn. Zij geven een mening, en geen cijfer.",
+    "Koos je \"the writer himself\"? Dan denk je dat de schrijver de bron van het cijfer is. Hij verwijst naar het IEA, en geeft zelf geen cijfer.",
+    "Koos je \"the supporters\"? Dan denk je dat de voorstanders de bron zijn. Zij noemen argumenten, en geen cijfer.",
+    "Klopt: de tekst noemt het IEA bij het cijfer over tien procent."
+   ],
+   "uh": "Welke bron wordt genoemd?",
+   "ctx": "Read this text: \"Nuclear power divides opinion like few other energy sources. Supporters point out that a nuclear plant produces electricity around the clock, regardless of weather, and that its carbon emissions over its lifetime are about as low as those of wind. Opponents counter that building a plant takes more than a decade and costs billions, and that the waste remains dangerous for thousands of years. According to the International Energy Agency, nuclear plants supplied roughly ten per cent of the world's electricity in 2022. Personally, I find the cost argument the most convincing, because money spent on a reactor cannot be spent on faster alternatives. Admittedly, a country without enough wind or sun may have little choice. But for most countries, I believe, a mix of wind, solar and storage is the wiser investment.\""
+  },
+  {
+   "v": "How does the writer treat the opponents of nuclear power?",
+   "o": [
+    "he agrees on the cost point",
+    "he rejects all their arguments",
+    "he ignores them completely",
+    "he calls them uninformed"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 2,
+   "u": "Hij volgt het kostenargument. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: hij vindt het kostenargument het meest overtuigend.",
+    "Koos je \"he rejects all their arguments\"? Dan denk je dat hij alles verwerpt. Hij noemt het kostenargument overtuigend, dus hij verwerpt niet alles.",
+    "Koos je \"he ignores them completely\"? Dan denk je dat hij hen negeert. Hij bespreekt hun kosten en afval, en gaat er serieus op in.",
+    "Koos je \"he calls them uninformed\"? Dan denk je dat hij hen onwetend noemt. Dat zegt hij nergens, en hij volgt hun kostenargument."
+   ],
+   "uh": "Hoe behandelt hij de tegenstanders?",
+   "ctx": "Read this text: \"Nuclear power divides opinion like few other energy sources. Supporters point out that a nuclear plant produces electricity around the clock, regardless of weather, and that its carbon emissions over its lifetime are about as low as those of wind. Opponents counter that building a plant takes more than a decade and costs billions, and that the waste remains dangerous for thousands of years. According to the International Energy Agency, nuclear plants supplied roughly ten per cent of the world's electricity in 2022. Personally, I find the cost argument the most convincing, because money spent on a reactor cannot be spent on faster alternatives. Admittedly, a country without enough wind or sun may have little choice. But for most countries, I believe, a mix of wind, solar and storage is the wiser investment.\""
+  },
+  {
+   "v": "What does \"A ban is a headline; education is a solution\" do?",
+   "o": [
+    "it gives a statistic",
+    "it contrasts two options",
+    "it quotes a critic",
+    "it introduces a new topic"
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 4,
+   "u": "Contrast = onthoudbaar. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"it gives a statistic\"? Dan denk je dat de zin een cijfer geeft. Er staat geen getal, maar een tegenstelling.",
+    "Klopt: de korte tegenstelling maakt het standpunt makkelijk te onthouden.",
+    "Koos je \"it quotes a critic\"? Dan denk je dat de zin een criticus citeert. Er staan geen aanhalingstekens, en het is de eigen mening.",
+    "Koos je \"it introduces a new topic\"? Dan denk je dat de zin een nieuw onderwerp opent. Het sluit het betoog af, en blijft bij hetzelfde."
+   ],
+   "uh": "Wat doet de zin?",
+   "ctx": "Read this text: \"Banning social media for under-sixteens sounds decisive, but it is unlikely to work. A recent survey of fourteen-year-olds found that nine out of ten already use at least one platform, and most had signed up with a false birth date. Strict rules that are easy to evade merely teach children to lie. Defenders of a ban argue that teenagers who spend more than three hours a day online report lower self-esteem. That may be true, yet the same survey showed that the effect was much smaller for those who mainly chatted with friends than for those who scrolled through strangers' posts. Surely the better answer is to teach young people how to use these platforms wisely, and to make companies design them less addictively. A ban is a headline; education is a solution.\""
+  },
+  {
+   "v": "Which sentence is the strongest argument for the writer's standpoint?",
+   "o": [
+    "A ban for under-sixteens sounds decisive.",
+    "Defenders argue that teenagers report lower self-esteem.",
+    "A ban is a headline.",
+    "Easy-to-evade rules teach lying."
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 1,
+   "u": "Reden dat een verbod niet werkt.",
+   "uo": [
+    "Koos je \"A ban for under-sixteens sounds decisive.\"? Dan denk je dat dit een argument is. Het is een beschrijving, en geen reden.",
+    "Koos je \"Defenders argue that teenagers report lower...\"? Dan denk je dat dit een argument voor de schrijver is. Het is een argument van de tegenstanders, en dus niet van hem.",
+    "Koos je \"A ban is a headline.\"? Dan denk je dat dit een argument is. Het is een samenvattende uitspraak, en geen onderbouwing.",
+    "Klopt: dit is een reden waarom een verbod niet werkt."
+   ],
+   "uh": "Welke zin is het sterkste argument?",
+   "ctx": "Read this text: \"Banning social media for under-sixteens sounds decisive, but it is unlikely to work. A recent survey of fourteen-year-olds found that nine out of ten already use at least one platform, and most had signed up with a false birth date. Strict rules that are easy to evade merely teach children to lie. Defenders of a ban argue that teenagers who spend more than three hours a day online report lower self-esteem. That may be true, yet the same survey showed that the effect was much smaller for those who mainly chatted with friends than for those who scrolled through strangers' posts. Surely the better answer is to teach young people how to use these platforms wisely, and to make companies design them less addictively. A ban is a headline; education is a solution.\""
+  },
+  {
+   "v": "Which word makes \"the wiser investment\" an opinion?",
+   "o": [
+    "\"wiser\"",
+    "\"investment\"",
+    "\"mix\"",
+    "\"wind\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 0,
+   "u": "Wiser = oordeel. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: wiser is een waardeoordeel dat je niet kunt meten.",
+    "Koos je \"investment\"? Dan denk je dat het geldwoord de mening maakt omdat het over keuzes gaat. Investment is een neutrale term, en bevat geen oordeel.",
+    "Koos je \"mix\"? Dan denk je dat dit woord de mening maakt omdat het een keuze beschrijft. Het noemt alleen een combinatie, en bevat geen waardering.",
+    "Koos je \"wind\"? Dan denk je dat dit woord de mening maakt omdat het bij een voorkeur hoort. Het is slechts een energiebron, en een feit."
+   ],
+   "uh": "Welk woord maakt het een mening?",
+   "ctx": "Read this text: \"Nuclear power divides opinion like few other energy sources. Supporters point out that a nuclear plant produces electricity around the clock, regardless of weather, and that its carbon emissions over its lifetime are about as low as those of wind. Opponents counter that building a plant takes more than a decade and costs billions, and that the waste remains dangerous for thousands of years. According to the International Energy Agency, nuclear plants supplied roughly ten per cent of the world's electricity in 2022. Personally, I find the cost argument the most convincing, because money spent on a reactor cannot be spent on faster alternatives. Admittedly, a country without enough wind or sun may have little choice. But for most countries, I believe, a mix of wind, solar and storage is the wiser investment.\""
+  },
+  {
+   "v": "Which question would a critical reader ask about the coffee study?",
+   "o": [
+    "How many pages does the report have?",
+    "Who paid and how was it measured?",
+    "Which newspaper printed the story first?",
+    "Is coffee a popular drink?"
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 3,
+   "u": "Wie betaalt, hoe gemeten? Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"How many pages does the report have?\"? Dan denk je dat de lengte van het rapport belangrijk is. Dat zegt niets over betrouwbaarheid, en is geen kritische vraag.",
+    "Klopt: de betaler en de meetmethode bepalen hoe betrouwbaar het onderzoek is.",
+    "Koos je \"Which newspaper printed the story first?\"? Dan denk je dat de eerste krant belangrijk is. Dat zegt niets over het onderzoek zelf, en is geen kritische vraag.",
+    "Koos je \"Is coffee a popular drink?\"? Dan denk je dat populariteit belangrijk is. Dat zegt niets over de gezondheid, en toetst het onderzoek niet."
+   ],
+   "uh": "Welke vraag stelt een kritische lezer?",
+   "ctx": "Read this text: \"A new study claims that drinking three cups of coffee a day lowers the risk of heart disease. The researchers followed 20,000 adults for ten years and found that coffee drinkers had a 12 per cent lower risk than people who drank none. However, the study was funded by a coffee producer, and participants reported their own consumption, which may be unreliable. The authors themselves stress that the study shows a link, not a cause: people who drink coffee may also exercise more or eat differently. 'We would not advise anyone to start drinking coffee for their heart,' said one of them. Even so, the headline in several newspapers read 'Coffee protects your heart', a claim that the evidence does not support.\""
+  }
+ ],
+ "oe": [
+  {
+   "bron": "Examenstijl",
+   "ctx": "You read a text about energy: \"Nuclear power divides opinion like few other energy sources. Supporters point out that a nuclear plant produces electricity around the clock, regardless of weather, and that its carbon emissions over its lifetime are about as low as those of wind. Opponents counter that building a plant takes more than a decade and costs billions, and that the waste remains dangerous for thousands of years. According to the International Energy Agency, nuclear plants supplied roughly ten per cent of the world's electricity in 2022. Personally, I find the cost argument the most convincing, because money spent on a reactor cannot be spent on faster alternatives. Admittedly, a country without enough wind or sun may have little choice. But for most countries, I believe, a mix of wind, solar and storage is the wiser investment.\" Your teacher asks about the writer's opinion.",
+   "v": "Name the writer's standpoint and one opinion signal from the text.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Het standpunt: een mix van wind, zon en opslag is voor de meeste landen beter (1p). Een signaal zoals I find of I believe of personally (1p). Of het woord wiser als oordeel (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "You read a text about energy: \"Nuclear power divides opinion like few other energy sources. Supporters point out that a nuclear plant produces electricity around the clock, regardless of weather, and that its carbon emissions over its lifetime are about as low as those of wind. Opponents counter that building a plant takes more than a decade and costs billions, and that the waste remains dangerous for thousands of years. According to the International Energy Agency, nuclear plants supplied roughly ten per cent of the world's electricity in 2022. Personally, I find the cost argument the most convincing, because money spent on a reactor cannot be spent on faster alternatives. Admittedly, a country without enough wind or sun may have little choice. But for most countries, I believe, a mix of wind, solar and storage is the wiser investment.\" Your teacher asks about facts and opinions.",
+   "v": "Give one fact with its source and explain why it is a fact.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Nucleaire centrales leverden in 2022 ongeveer tien procent van de elektriciteit (1p). De bron is het International Energy Agency (1p). Het is controleerbaar (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "You read a text about social media: \"Banning social media for under-sixteens sounds decisive, but it is unlikely to work. A recent survey of fourteen-year-olds found that nine out of ten already use at least one platform, and most had signed up with a false birth date. Strict rules that are easy to evade merely teach children to lie. Defenders of a ban argue that teenagers who spend more than three hours a day online report lower self-esteem. That may be true, yet the same survey showed that the effect was much smaller for those who mainly chatted with friends than for those who scrolled through strangers' posts. Surely the better answer is to teach young people how to use these platforms wisely, and to make companies design them less addictively. A ban is a headline; education is a solution.\" Your teacher asks about the argument.",
+   "v": "Name one argument and one counter-argument from the text.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Een argument: het verbod is makkelijk te omzeilen of negen op tien gebruiken al een platform (1p). Een tegenargument: veel gebruik gaat samen met lager zelfvertrouwen (1p). De schrijver geeft een weerwoord: het effect was kleiner bij chatten (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "You read a text about a study: \"A new study claims that drinking three cups of coffee a day lowers the risk of heart disease. The researchers followed 20,000 adults for ten years and found that coffee drinkers had a 12 per cent lower risk than people who drank none. However, the study was funded by a coffee producer, and participants reported their own consumption, which may be unreliable. The authors themselves stress that the study shows a link, not a cause: people who drink coffee may also exercise more or eat differently. 'We would not advise anyone to start drinking coffee for their heart,' said one of them. Even so, the headline in several newspapers read 'Coffee protects your heart', a claim that the evidence does not support.\" Your teacher asks about the strength of the evidence.",
+   "v": "Name two reasons why the claim about coffee is not convincing.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Het onderzoek werd betaald door een koffieproducent (1p). Deelnemers gaven hun eigen koffiegebruik op (1p). Het is een verband en geen oorzaak (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "You read a text about social media: \"Banning social media for under-sixteens sounds decisive, but it is unlikely to work. A recent survey of fourteen-year-olds found that nine out of ten already use at least one platform, and most had signed up with a false birth date. Strict rules that are easy to evade merely teach children to lie. Defenders of a ban argue that teenagers who spend more than three hours a day online report lower self-esteem. That may be true, yet the same survey showed that the effect was much smaller for those who mainly chatted with friends than for those who scrolled through strangers' posts. Surely the better answer is to teach young people how to use these platforms wisely, and to make companies design them less addictively. A ban is a headline; education is a solution.\" Your teacher asks about the style of the argument.",
+   "v": "Explain the function of the last sentence of the text.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Het is een korte tegenstelling (1p). Het maakt het standpunt krachtig of onthoudbaar (1p). Een verbod is een kop en onderwijs is een oplossing (1p)."
+  }
+ ]
+}
