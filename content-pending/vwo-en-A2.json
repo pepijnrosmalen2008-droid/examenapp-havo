@@ -1,0 +1,682 @@
+{
+ "id": "A2",
+ "lo": "en.A.2",
+ "gs": 2,
+ "naam": "De hoofdgedachte van een Engelse tekst aangeven",
+ "beschrijving": "Je leert het onderwerp en de hoofdgedachte van een tekst of alinea te onderscheiden, kernzinnen, toegevingen en voorbeelden te herkennen en een hoofdgedachte niet te breed en niet te smal te formuleren.",
+ "ceStatus": "CE",
+ "binas": "",
+ "val": "",
+ "onderwerpen": [
+  "Onderwerp en hoofdgedachte onderscheiden",
+  "Kernzin, opening en slot",
+  "Hoofdzaak, voorbeeld en bewijs",
+  "Signaalwoorden en toegeving",
+  "Een hoofdgedachte goed formuleren"
+ ],
+ "sam": "Het onderwerp is waar een tekst over gaat, de hoofdgedachte is wat de schrijver erover zegt. Een kernzin staat vaak vooraan of achteraan een alinea, en de slotzin of titel geeft vaak de conclusie. Voorbeelden en cijfers ondersteunen de kern maar zijn zelf niet de kern. Met signaalwoorden als however, therefore en of course herken je een tegenstelling, een conclusie of een toegeving. Een goede hoofdgedachte is niet te breed en niet te smal.",
+ "begrippen": [
+  {
+   "t": "Onderwerp",
+   "d": "Waar de tekst over gaat, in een paar woorden."
+  },
+  {
+   "t": "Hoofdgedachte",
+   "d": "Wat de schrijver over het onderwerp zegt."
+  },
+  {
+   "t": "Kernzin",
+   "d": "De zin die het hoofdpunt van een alinea noemt."
+  },
+  {
+   "t": "Voorbeeld",
+   "d": "Een geval dat een punt illustreert, zoals for example."
+  },
+  {
+   "t": "Bewijs",
+   "d": "Cijfers of onderzoek dat een bewering ondersteunt."
+  },
+  {
+   "t": "Toegeving",
+   "d": "Iets wat de schrijver toegeeft voordat hij zijn punt maakt."
+  },
+  {
+   "t": "Conclusie",
+   "d": "De slotsom die uit de argumenten volgt."
+  },
+  {
+   "t": "Signaalwoord",
+   "d": "Een woord dat een relatie aangeeft, zoals however."
+  },
+  {
+   "t": "Tegenstelling",
+   "d": "Twee punten die tegenover elkaar staan."
+  },
+  {
+   "t": "Te breed",
+   "d": "Een formulering die op elke tekst past."
+  },
+  {
+   "t": "Te smal",
+   "d": "Een formulering die maar één detail noemt."
+  },
+  {
+   "t": "Opening",
+   "d": "De eerste zin die het onderwerp noemt."
+  }
+ ],
+ "sv": [
+  {
+   "v": "Which statement describes the main idea of a text?",
+   "o": [
+    "the most interesting example in the text",
+    "what the author says about the topic",
+    "the first sentence of the text, always",
+    "a list of all the names in the text"
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 0,
+   "u": "Hoofdgedachte = kernboodschap.",
+   "uo": [
+    "Koos je \"the most interesting example in the text\"? Dan denk je dat het leukste voorbeeld de kern is. Een voorbeeld ondersteunt alleen, en is zelf niet de boodschap.",
+    "Klopt: de hoofdgedachte is de kernboodschap die de schrijver over het onderwerp wil overbrengen.",
+    "Koos je \"the first sentence of the text, always\"? Dan denk je dat de eerste zin altijd de kern geeft. Soms is dat zo, maar vaak is het alleen een inleiding, en de kern staat elders.",
+    "Koos je \"a list of all the names in the text\"? Dan denk je dat namen de kern vormen. Namen zijn details, en zeggen niet wat de schrijver wil zeggen."
+   ],
+   "uh": "Wat is de hoofdgedachte?"
+  },
+  {
+   "v": "Which phrase describes the topic of a text?",
+   "o": [
+    "the opinion of the author in one sentence",
+    "the number of paragraphs in the text",
+    "the title written in capital letters",
+    "what the text is about, in a few words"
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 0,
+   "u": "Onderwerp = waar het over gaat.",
+   "uo": [
+    "Koos je \"the opinion of the author in one sentence\"? Dan denk je dat het onderwerp een mening is. Een mening in een zin is de hoofdgedachte, en het onderwerp is korter.",
+    "Koos je \"the number of paragraphs in the text\"? Dan denk je dat het aantal alinea's het onderwerp is. Dat zegt iets over de vorm, en niet over de inhoud.",
+    "Koos je \"the title written in capital letters\"? Dan denk je dat de titel in hoofdletters het onderwerp is. De vorm van de titel doet er niet toe, het gaat om de inhoud.",
+    "Klopt: het onderwerp noem je in een paar woorden, zonder te zeggen wat de schrijver ervan vindt."
+   ],
+   "uh": "Wat is het onderwerp?"
+  },
+  {
+   "v": "Which part of a paragraph often states its main point?",
+   "o": [
+    "the topic sentence",
+    "an example in the middle",
+    "a number in brackets",
+    "a footnote at the bottom"
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 1,
+   "u": "Kernzin = hoofdpunt. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: de kernzin vat de alinea samen en staat vaak vooraan of achteraan.",
+    "Koos je \"an example in the middle\"? Dan denk je dat een voorbeeld de kern geeft. Een voorbeeld ondersteunt de kern, en is zelf geen kernzin.",
+    "Koos je \"a number in brackets\"? Dan denk je dat een getal de kern geeft. Een getal is een detail, en zegt niets over het hoofdpunt.",
+    "Koos je \"a footnote at the bottom\"? Dan denk je dat een voetnoot de kern geeft. Voetnoten geven extra informatie, en vatten niet samen."
+   ],
+   "uh": "Welk deel geeft het hoofdpunt?"
+  },
+  {
+   "v": "Which description fits an example in a text?",
+   "o": [
+    "it always states the main idea",
+    "it is the conclusion of the text",
+    "it supports but is not the main idea",
+    "it introduces the topic of the text"
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 2,
+   "u": "Voorbeeld ondersteunt. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"it always states the main idea\"? Dan denk je dat een voorbeeld altijd de kern is. Het illustreert alleen, en kan zonder verlies weg.",
+    "Koos je \"it is the conclusion of the text\"? Dan denk je dat een voorbeeld de conclusie is. De conclusie volgt uit de argumenten, en een voorbeeld is geen slotsom.",
+    "Klopt: een voorbeeld onderbouwt een punt, maar is zelf niet de kern.",
+    "Koos je \"it introduces the topic of the text\"? Dan denk je dat een voorbeeld het onderwerp inleidt. Het onderwerp wordt in de inleiding genoemd, en het voorbeeld komt later."
+   ],
+   "uh": "Wat doet een voorbeeld?"
+  },
+  {
+   "v": "Which words often introduce a conclusion?",
+   "o": [
+    "\"for example\" and \"for instance\"",
+    "\"however\" and \"but\"",
+    "\"therefore\" and \"in short\"",
+    "\"first\" and \"next\""
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 3,
+   "u": "Therefore = conclusie. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"for example and for instance\"? Dan denk je dat deze woorden de slotsom brengen omdat ze iets uitleggen. Ze illustreren een punt met een geval, en trekken geen slotsom.",
+    "Koos je \"however and but\"? Dan denk je dat deze woorden een conclusie geven omdat ze het betoog een draai geven. Ze zetten iets tegenover het vorige, en sluiten niets af.",
+    "Klopt: therefore en in short leiden een slotsom of samenvatting in.",
+    "Koos je \"first and next\"? Dan denk je dat deze woorden een conclusie geven omdat ze de lezer door de tekst leiden. Ze noemen alleen een volgorde, en geven geen slotsom."
+   ],
+   "uh": "Welke woorden geven een conclusie?"
+  },
+  {
+   "v": "Which word often signals a contrast?",
+   "o": [
+    "\"however\"",
+    "\"therefore\"",
+    "\"for example\"",
+    "\"moreover\""
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 3,
+   "u": "However = tegenstelling. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: however zet een tegengesteld punt tegenover het vorige.",
+    "Koos je \"therefore\"? Dan denk je dat therefore een tegenstelling aangeeft. Het geeft een gevolg of conclusie aan, en geen tegenstelling.",
+    "Koos je \"for example\"? Dan denk je dat for example een tegenstelling aangeeft. Het geeft een voorbeeld, en zet niets tegenover.",
+    "Koos je \"moreover\"? Dan denk je dat moreover een tegenstelling aangeeft. Het voegt iets toe, en zet niets tegenover."
+   ],
+   "uh": "Welk woord toont contrast?"
+  },
+  {
+   "v": "The main idea \"Food is important\" for a text about a school canteen is...",
+   "o": [
+    "too narrow, because it names one detail",
+    "perfect, because it is short",
+    "wrong, because it is a question",
+    "too broad, so not specific"
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 4,
+   "u": "Te breed = niet specifiek. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"too narrow, because it names one detail\"? Dan denk je dat de bewering te smal is. Ze noemt geen detail, maar is juist te algemeen.",
+    "Koos je \"perfect, because it is short\"? Dan denk je dat korte formuleringen altijd goed zijn. De lengte zegt niets, de inhoud is te algemeen.",
+    "Koos je \"wrong, because it is a question\"? Dan denk je dat het een vraag is. Het is een bewering, maar een te brede.",
+    "Klopt: de bewering is zo algemeen dat ze niets zegt over deze tekst."
+   ],
+   "uh": "Hoe is de bewering?"
+  },
+  {
+   "v": "What is the topic of the text?",
+   "o": [
+    "jam in supermarkets",
+    "choice in shops",
+    "the price of houses",
+    "psychologists at universities"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 0,
+   "u": "Onderwerp = keuze. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"jam in supermarkets\"? Dan denk je dat het over jam gaat. Jam is alleen het voorbeeld uit het onderzoek, en niet het onderwerp.",
+    "Klopt: de tekst gaat over keuze en het aantal opties bij het kopen.",
+    "Koos je \"the price of houses\"? Dan denk je dat het over huizen gaat. Het huis wordt alleen als uitzondering genoemd, en is niet het onderwerp.",
+    "Koos je \"psychologists at universities\"? Dan denk je dat het over psychologen gaat. Zij leveren het onderzoek, en zijn niet het onderwerp."
+   ],
+   "uh": "Wat is het onderwerp?",
+   "ctx": "Read this text: \"Supermarkets proudly advertise the number of products on their shelves, as if endless choice were the same as freedom. Psychologists are less enthusiastic. In a well-known experiment, shoppers were offered either six or twenty-four jars of jam to taste. The larger display attracted more visitors, yet only three per cent of those visitors bought a jar, against thirty per cent at the small display. The explanation, researchers argue, is that too many options make us afraid of choosing wrongly and tire us out before we have decided. Of course, some people enjoy comparing everything, and for expensive purchases such as a house a thorough search is wise. But for everyday decisions, a smaller selection leaves us calmer and, surprisingly, more satisfied with what we pick. Shops and websites would therefore do better to offer fewer, carefully chosen options than to overwhelm their customers.\""
+  },
+  {
+   "v": "What function does the jam experiment have in the text?",
+   "o": [
+    "it is the main idea of the text",
+    "it introduces a completely new topic",
+    "it gives a counter-argument",
+    "it supports the main point"
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 2,
+   "u": "Experiment = bewijs. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"it is the main idea of the text\"? Dan denk je dat het experiment de kern is. Het onderbouwt alleen, en de kern is de conclusie voor winkels.",
+    "Koos je \"it introduces a completely new topic\"? Dan denk je dat het experiment een nieuw onderwerp opent. Het hoort bij hetzelfde onderwerp, en het onderbouwt de stelling.",
+    "Koos je \"it gives a counter-argument\"? Dan denk je dat het experiment een tegenargument is. Het ondersteunt de stelling, en spreekt haar niet tegen.",
+    "Klopt: het experiment laat met cijfers zien dat te veel keuze minder verkoop geeft."
+   ],
+   "uh": "Welke functie heeft het experiment?",
+   "ctx": "Read this text: \"Supermarkets proudly advertise the number of products on their shelves, as if endless choice were the same as freedom. Psychologists are less enthusiastic. In a well-known experiment, shoppers were offered either six or twenty-four jars of jam to taste. The larger display attracted more visitors, yet only three per cent of those visitors bought a jar, against thirty per cent at the small display. The explanation, researchers argue, is that too many options make us afraid of choosing wrongly and tire us out before we have decided. Of course, some people enjoy comparing everything, and for expensive purchases such as a house a thorough search is wise. But for everyday decisions, a smaller selection leaves us calmer and, surprisingly, more satisfied with what we pick. Shops and websites would therefore do better to offer fewer, carefully chosen options than to overwhelm their customers.\""
+  },
+  {
+   "v": "Which sentence best states the main idea of the text?",
+   "o": [
+    "A larger display attracted more visitors than a smaller one.",
+    "Fewer options make everyday choices calmer.",
+    "Some people enjoy comparing everything.",
+    "Supermarkets advertise the number of products."
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 1,
+   "u": "Kern: minder keuze is beter. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"A larger display attracted more visitors than a...\"? Dan denk je dat dit de kern is. Het is een detail uit het experiment, en niet de boodschap.",
+    "Klopt: dit is de kernboodschap, die ook in de laatste zin terugkomt.",
+    "Koos je \"Some people enjoy comparing everything.\"? Dan denk je dat dit de kern is. Het is een toegeving, en niet de hoofdzaak.",
+    "Koos je \"Supermarkets advertise the number of products.\"? Dan denk je dat dit de kern is. Het is de inleiding, en niet de boodschap."
+   ],
+   "uh": "Welke zin is de hoofdgedachte?",
+   "ctx": "Read this text: \"Supermarkets proudly advertise the number of products on their shelves, as if endless choice were the same as freedom. Psychologists are less enthusiastic. In a well-known experiment, shoppers were offered either six or twenty-four jars of jam to taste. The larger display attracted more visitors, yet only three per cent of those visitors bought a jar, against thirty per cent at the small display. The explanation, researchers argue, is that too many options make us afraid of choosing wrongly and tire us out before we have decided. Of course, some people enjoy comparing everything, and for expensive purchases such as a house a thorough search is wise. But for everyday decisions, a smaller selection leaves us calmer and, surprisingly, more satisfied with what we pick. Shops and websites would therefore do better to offer fewer, carefully chosen options than to overwhelm their customers.\""
+  },
+  {
+   "v": "Which words introduce a concession that does not change the main idea?",
+   "o": [
+    "\"Therefore\"",
+    "\"Surprisingly\"",
+    "\"Of course\"",
+    "\"Psychologists\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 3,
+   "u": "Of course = toegeving. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"Therefore\"? Dan denk je dat therefore een toegeving geeft. Het leidt een conclusie in, en geeft geen toegeving.",
+    "Koos je \"Surprisingly\"? Dan denk je dat surprisingly een toegeving geeft. Het benadrukt iets onverwachts, en geeft geen toegeving.",
+    "Klopt: of course geeft een toegeving, waarna de schrijver zijn eigenlijke punt maakt.",
+    "Koos je \"Psychologists\"? Dan denk je dat dit woord een toegeving geeft. Het is een onderwerp in de zin, en geen signaalwoord."
+   ],
+   "uh": "Welke woorden geven een toegeving?",
+   "ctx": "Read this text: \"Supermarkets proudly advertise the number of products on their shelves, as if endless choice were the same as freedom. Psychologists are less enthusiastic. In a well-known experiment, shoppers were offered either six or twenty-four jars of jam to taste. The larger display attracted more visitors, yet only three per cent of those visitors bought a jar, against thirty per cent at the small display. The explanation, researchers argue, is that too many options make us afraid of choosing wrongly and tire us out before we have decided. Of course, some people enjoy comparing everything, and for expensive purchases such as a house a thorough search is wise. But for everyday decisions, a smaller selection leaves us calmer and, surprisingly, more satisfied with what we pick. Shops and websites would therefore do better to offer fewer, carefully chosen options than to overwhelm their customers.\""
+  },
+  {
+   "v": "What is the main idea of the text?",
+   "o": [
+    "green roofs should become standard",
+    "Rotterdam pays for green roofs",
+    "owners dislike expensive maintenance",
+    "roofs are flat and exposed to weather"
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 2,
+   "u": "Kern: groene daken als norm. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: de laatste zin zegt dat groene daken de norm moeten worden voor nieuwbouw.",
+    "Koos je \"Rotterdam pays for green roofs\"? Dan denk je dat de subsidie de kern is. Het is een voorbeeld, en niet de boodschap.",
+    "Koos je \"owners dislike expensive maintenance\"? Dan denk je dat het bezwaar van eigenaren de kern is. Het is een tegenwerping, en de schrijver weerlegt haar.",
+    "Koos je \"roofs are flat and exposed to weather\"? Dan denk je dat de eigenschap van daken de kern is. Het is alleen de inleiding, en niet de boodschap."
+   ],
+   "uh": "Wat is de hoofdgedachte?",
+   "ctx": "Read this text: \"Roofs are among the least used spaces in a city: they are flat, empty and exposed to sun and rain. A growing number of cities now want to turn them green. A roof covered with plants absorbs rainwater, which reduces the risk of flooding during heavy storms, and it keeps buildings cooler in summer, so that less energy is needed for air conditioning. In Rotterdam, for example, the city pays part of the cost for owners who install a green roof. Not everyone is convinced, however. Building owners point out that a green roof is expensive to install and needs maintenance, and older buildings are often too weak to carry the extra weight. Supporters reply that the benefits for the whole neighbourhood outweigh the costs for the individual owner, and that new buildings can be designed to carry the load from the start. For this reason, many planners argue that green roofs should become the standard for new construction, while subsidies help owners of existing buildings.\""
+  },
+  {
+   "v": "Which words in the last sentence signal the conclusion?",
+   "o": [
+    "\"For this reason\"",
+    "\"Not everyone is convinced\"",
+    "\"In Rotterdam, for example\"",
+    "\"Supporters reply that\""
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 1,
+   "u": "For this reason = conclusie. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: for this reason leidt de conclusie in, die uit de argumenten volgt.",
+    "Koos je \"Not everyone is convinced\"? Dan denk je dat dit de conclusie inleidt. Het staat middenin en leidt een bezwaar in, en geen slotsom.",
+    "Koos je \"In Rotterdam, for example\"? Dan denk je dat for example de conclusie inleidt. Het leidt een voorbeeld in, en geen slotsom.",
+    "Koos je \"Supporters reply that\"? Dan denk je dat dit de conclusie inleidt. Het geeft een weerwoord, en niet de slotsom."
+   ],
+   "uh": "Welke woorden geven de conclusie?",
+   "ctx": "Read this text: \"Roofs are among the least used spaces in a city: they are flat, empty and exposed to sun and rain. A growing number of cities now want to turn them green. A roof covered with plants absorbs rainwater, which reduces the risk of flooding during heavy storms, and it keeps buildings cooler in summer, so that less energy is needed for air conditioning. In Rotterdam, for example, the city pays part of the cost for owners who install a green roof. Not everyone is convinced, however. Building owners point out that a green roof is expensive to install and needs maintenance, and older buildings are often too weak to carry the extra weight. Supporters reply that the benefits for the whole neighbourhood outweigh the costs for the individual owner, and that new buildings can be designed to carry the load from the start. For this reason, many planners argue that green roofs should become the standard for new construction, while subsidies help owners of existing buildings.\""
+  },
+  {
+   "v": "What does \"however\" signal in \"Not everyone is convinced, however\"?",
+   "o": [
+    "an example of a benefit",
+    "the conclusion of the text",
+    "a contrast",
+    "a new and unrelated topic"
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 3,
+   "u": "However = tegenstelling. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"an example of a benefit\"? Dan denk je dat however een voorbeeld inleidt. Het zet iets tegenover het vorige, en geeft geen voorbeeld.",
+    "Koos je \"the conclusion of the text\"? Dan denk je dat however de conclusie inleidt. De conclusie komt aan het eind, met for this reason.",
+    "Klopt: na de voordelen volgt met however een tegengesteld punt.",
+    "Koos je \"a new and unrelated topic\"? Dan denk je dat however een nieuw onderwerp opent. Het blijft bij hetzelfde onderwerp, en zet kritiek tegenover de voordelen."
+   ],
+   "uh": "Wat signaleert however?",
+   "ctx": "Read this text: \"Roofs are among the least used spaces in a city: they are flat, empty and exposed to sun and rain. A growing number of cities now want to turn them green. A roof covered with plants absorbs rainwater, which reduces the risk of flooding during heavy storms, and it keeps buildings cooler in summer, so that less energy is needed for air conditioning. In Rotterdam, for example, the city pays part of the cost for owners who install a green roof. Not everyone is convinced, however. Building owners point out that a green roof is expensive to install and needs maintenance, and older buildings are often too weak to carry the extra weight. Supporters reply that the benefits for the whole neighbourhood outweigh the costs for the individual owner, and that new buildings can be designed to carry the load from the start. For this reason, many planners argue that green roofs should become the standard for new construction, while subsidies help owners of existing buildings.\""
+  },
+  {
+   "v": "What is the topic of the text?",
+   "o": [
+    "monasteries",
+    "silence in modern life",
+    "the health of the brain",
+    "noise in offices"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 0,
+   "u": "Onderwerp = stilte. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"monasteries\"? Dan denk je dat het over kloosters gaat. Het klooster is alleen een toegeving, en niet het onderwerp.",
+    "Klopt: de tekst gaat over stilte en de plaats ervan in het moderne leven.",
+    "Koos je \"the health of the brain\"? Dan denk je dat het over de hersenen gaat omdat die herstellen. Dat is onderzoek dat de stelling ondersteunt, en niet het onderwerp.",
+    "Koos je \"noise in offices\"? Dan denk je dat het over kantoorlawaai gaat omdat dat als eerste voorbeeld staat. Het is alleen een deel van het onderwerp, en niet het geheel."
+   ],
+   "uh": "Wat is het onderwerp?",
+   "ctx": "Read this text: \"Few things are as rare in modern life as silence. Open-plan offices, buses with screens and shops that play music all day have taught us to expect a constant background of sound. When the noise suddenly stops, many people feel uneasy, as if something has gone wrong. This discomfort says less about silence than about us. Research on stress shows that quiet moments lower blood pressure and help the brain to recover, and some studies suggest that two minutes of silence relax the body more than calming music. I do not claim that everyone should move to a monastery. But I do believe that we should treat silence as a basic need, like sleep, rather than as an empty gap to be filled. A short walk without headphones is a good place to start.\""
+  },
+  {
+   "v": "Which sentence is the opening that introduces the topic?",
+   "o": [
+    "\"But I do believe that we should treat silence as a basic need.\"",
+    "\"A short walk without headphones is a good place to start.\"",
+    "\"Research on stress shows that quiet moments lower blood pressure.\"",
+    "\"Few things are as rare in modern life as silence.\""
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 1,
+   "u": "Opening noemt het onderwerp. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"But I do believe that we should treat silence as a...\"? Dan denk je dat dit de opening is. Het is de kern van de schrijver, en staat aan het eind.",
+    "Koos je \"A short walk without headphones is a good place to...\"? Dan denk je dat dit de opening is. Het is het slotadvies, en staat aan het eind.",
+    "Koos je \"Research on stress shows that quiet moments lower...\"? Dan denk je dat dit de opening is. Het is bewijs, en komt midden in de tekst.",
+    "Klopt: de eerste zin noemt het onderwerp en zet de toon."
+   ],
+   "uh": "Welke zin opent de tekst?",
+   "ctx": "Read this text: \"Few things are as rare in modern life as silence. Open-plan offices, buses with screens and shops that play music all day have taught us to expect a constant background of sound. When the noise suddenly stops, many people feel uneasy, as if something has gone wrong. This discomfort says less about silence than about us. Research on stress shows that quiet moments lower blood pressure and help the brain to recover, and some studies suggest that two minutes of silence relax the body more than calming music. I do not claim that everyone should move to a monastery. But I do believe that we should treat silence as a basic need, like sleep, rather than as an empty gap to be filled. A short walk without headphones is a good place to start.\""
+  },
+  {
+   "v": "What is the function of the sentence about the monastery?",
+   "o": [
+    "it is the main idea of the text",
+    "a concession to the reader",
+    "it is an example of noise",
+    "it is the conclusion of a study"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 2,
+   "u": "Klooster = toegeving. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"it is the main idea of the text\"? Dan denk je dat de zin over het klooster de kern is. Het is een toegeving, en de kern volgt met but.",
+    "Klopt: de schrijver zegt dat hij niet te ver gaat, en maakt daarna zijn eigenlijke punt.",
+    "Koos je \"it is an example of noise\"? Dan denk je dat de zin lawaai illustreert. Het klooster staat voor het tegenovergestelde, en is geen voorbeeld van lawaai.",
+    "Koos je \"it is the conclusion of a study\"? Dan denk je dat de zin een onderzoeksconclusie is. Het is de mening van de schrijver zelf, en geen studie."
+   ],
+   "uh": "Welke functie heeft de zin?",
+   "ctx": "Read this text: \"Few things are as rare in modern life as silence. Open-plan offices, buses with screens and shops that play music all day have taught us to expect a constant background of sound. When the noise suddenly stops, many people feel uneasy, as if something has gone wrong. This discomfort says less about silence than about us. Research on stress shows that quiet moments lower blood pressure and help the brain to recover, and some studies suggest that two minutes of silence relax the body more than calming music. I do not claim that everyone should move to a monastery. But I do believe that we should treat silence as a basic need, like sleep, rather than as an empty gap to be filled. A short walk without headphones is a good place to start.\""
+  },
+  {
+   "v": "Which formulation of the main idea is too narrow?",
+   "o": [
+    "Only three per cent bought jam at the large display.",
+    "Shopping is part of everyday life.",
+    "Too much choice can make people less satisfied with everyday decisions.",
+    "Choice is a subject that many people like."
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 4,
+   "u": "Te smal = één detail. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: dit noemt alleen één uitkomst van het experiment, niet de boodschap van de hele tekst.",
+    "Koos je \"Shopping is part of everyday life.\"? Dan denk je dat deze zin te smal is. Hij is juist te breed, en zegt niets specifieks over de tekst.",
+    "Koos je \"Too much choice can make people less satisfied with...\"? Dan denk je dat deze zin te smal is. Hij vat de hele tekst goed samen, en is dus niet te smal.",
+    "Koos je \"Choice is a subject that many people like.\"? Dan denk je dat deze zin te smal is. Hij is juist te breed, en zegt niets over de boodschap."
+   ],
+   "uh": "Welke formulering is te smal?",
+   "ctx": "Read this text: \"Supermarkets proudly advertise the number of products on their shelves, as if endless choice were the same as freedom. Psychologists are less enthusiastic. In a well-known experiment, shoppers were offered either six or twenty-four jars of jam to taste. The larger display attracted more visitors, yet only three per cent of those visitors bought a jar, against thirty per cent at the small display. The explanation, researchers argue, is that too many options make us afraid of choosing wrongly and tire us out before we have decided. Of course, some people enjoy comparing everything, and for expensive purchases such as a house a thorough search is wise. But for everyday decisions, a smaller selection leaves us calmer and, surprisingly, more satisfied with what we pick. Shops and websites would therefore do better to offer fewer, carefully chosen options than to overwhelm their customers.\""
+  },
+  {
+   "v": "Which formulation of the main idea is too broad?",
+   "o": [
+    "Green roofs help cities, so they should be standard for new buildings.",
+    "Rotterdam pays part of the cost of green roofs.",
+    "Green roofs are heavy for older buildings.",
+    "Cities have many different kinds of buildings."
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 4,
+   "u": "Te breed = geen kern. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"Green roofs help cities, so they should be standard...\"? Dan denk je dat deze zin te breed is. Hij vat de tekst goed samen, en is dus een goede formulering.",
+    "Koos je \"Rotterdam pays part of the cost of green roofs.\"? Dan denk je dat deze zin te breed is. Hij is juist te smal, want hij noemt één voorbeeld.",
+    "Koos je \"Green roofs are heavy for older buildings.\"? Dan denk je dat deze zin te breed is. Hij is juist te smal, want hij noemt één bezwaar.",
+    "Klopt: de zin is zo algemeen dat hij op elke stadstekst past."
+   ],
+   "uh": "Welke formulering is te breed?",
+   "ctx": "Read this text: \"Roofs are among the least used spaces in a city: they are flat, empty and exposed to sun and rain. A growing number of cities now want to turn them green. A roof covered with plants absorbs rainwater, which reduces the risk of flooding during heavy storms, and it keeps buildings cooler in summer, so that less energy is needed for air conditioning. In Rotterdam, for example, the city pays part of the cost for owners who install a green roof. Not everyone is convinced, however. Building owners point out that a green roof is expensive to install and needs maintenance, and older buildings are often too weak to carry the extra weight. Supporters reply that the benefits for the whole neighbourhood outweigh the costs for the individual owner, and that new buildings can be designed to carry the load from the start. For this reason, many planners argue that green roofs should become the standard for new construction, while subsidies help owners of existing buildings.\""
+  },
+  {
+   "v": "How are the sentences about cost and about benefits related?",
+   "o": [
+    "both give examples of the same benefit",
+    "the cost causes the benefits",
+    "a cost objection, then a reply",
+    "the benefits cause the cost"
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 3,
+   "u": "Bezwaar en weerwoord. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"both give examples of the same benefit\"? Dan denk je dat beide een voorbeeld van een voordeel zijn. De kosten zijn een nadeel, en dus een bezwaar.",
+    "Koos je \"the cost causes the benefits\"? Dan denk je dat de kosten de voordelen veroorzaken. Het is een tegenwerping en een weerwoord, en geen oorzaak.",
+    "Klopt: de eigenaren noemen de kosten als bezwaar en de voorstanders antwoorden met de voordelen.",
+    "Koos je \"the benefits cause the cost\"? Dan denk je dat de voordelen de kosten veroorzaken. De kosten komen van installatie en onderhoud, en niet van de voordelen."
+   ],
+   "uh": "Hoe hangen ze samen?",
+   "ctx": "Read this text: \"Roofs are among the least used spaces in a city: they are flat, empty and exposed to sun and rain. A growing number of cities now want to turn them green. A roof covered with plants absorbs rainwater, which reduces the risk of flooding during heavy storms, and it keeps buildings cooler in summer, so that less energy is needed for air conditioning. In Rotterdam, for example, the city pays part of the cost for owners who install a green roof. Not everyone is convinced, however. Building owners point out that a green roof is expensive to install and needs maintenance, and older buildings are often too weak to carry the extra weight. Supporters reply that the benefits for the whole neighbourhood outweigh the costs for the individual owner, and that new buildings can be designed to carry the load from the start. For this reason, many planners argue that green roofs should become the standard for new construction, while subsidies help owners of existing buildings.\""
+  },
+  {
+   "v": "Which statement is a detail, not the main idea?",
+   "o": [
+    "Silence should be treated as a basic need.",
+    "Quiet is rare and undervalued in modern life.",
+    "Two minutes of silence may relax the body more than music.",
+    "We should give silence a place in daily life."
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 2,
+   "u": "Onderzoeksgegeven = detail. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"Silence should be treated as a basic need.\"? Dan denk je dat dit een detail is. Het is de kernboodschap van de schrijver, en geen bijzaak.",
+    "Koos je \"Quiet is rare and undervalued in modern life.\"? Dan denk je dat dit een detail is. Het is de basis van de hele tekst, en dus geen bijzaak.",
+    "Klopt: dit is een onderzoeksgegeven dat de kern ondersteunt.",
+    "Koos je \"We should give silence a place in daily life.\"? Dan denk je dat dit een detail is. Het is de oproep van de schrijver, en dus geen bijzaak."
+   ],
+   "uh": "Welke bewering is een detail?",
+   "ctx": "Read this text: \"Few things are as rare in modern life as silence. Open-plan offices, buses with screens and shops that play music all day have taught us to expect a constant background of sound. When the noise suddenly stops, many people feel uneasy, as if something has gone wrong. This discomfort says less about silence than about us. Research on stress shows that quiet moments lower blood pressure and help the brain to recover, and some studies suggest that two minutes of silence relax the body more than calming music. I do not claim that everyone should move to a monastery. But I do believe that we should treat silence as a basic need, like sleep, rather than as an empty gap to be filled. A short walk without headphones is a good place to start.\""
+  },
+  {
+   "v": "Which sentence best states the main idea of the text?",
+   "o": [
+    "Modern life is full of noise.",
+    "Silence lowers blood pressure.",
+    "People should move to a monastery.",
+    "Silence is a basic need."
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 1,
+   "u": "Kern: stilte als basisbehoefte.",
+   "uo": [
+    "Koos je \"Modern life is full of noise.\"? Dan denk je dat dit de kern is. Het is de aanleiding, en niet de boodschap.",
+    "Koos je \"Silence lowers blood pressure.\"? Dan denk je dat dit de kern is. Het is een onderbouwing, en niet de hoofdzaak.",
+    "Koos je \"People should move to a monastery.\"? Dan denk je dat dit de kern is. De schrijver zegt juist dat dat niet hoeft, dus dit is onjuist.",
+    "Klopt: de schrijver wil dat we stilte zien als een basisbehoefte, net als slaap."
+   ],
+   "uh": "Welke zin is de hoofdgedachte?",
+   "ctx": "Read this text: \"Few things are as rare in modern life as silence. Open-plan offices, buses with screens and shops that play music all day have taught us to expect a constant background of sound. When the noise suddenly stops, many people feel uneasy, as if something has gone wrong. This discomfort says less about silence than about us. Research on stress shows that quiet moments lower blood pressure and help the brain to recover, and some studies suggest that two minutes of silence relax the body more than calming music. I do not claim that everyone should move to a monastery. But I do believe that we should treat silence as a basic need, like sleep, rather than as an empty gap to be filled. A short walk without headphones is a good place to start.\""
+  },
+  {
+   "v": "What is the difference between the topic and the main idea of this text?",
+   "o": [
+    "topic: silence; idea: a basic need",
+    "topic: monasteries; main idea: silence",
+    "topic: sleep; main idea: noise",
+    "there is no difference between them"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 0,
+   "u": "Onderwerp en hoofdgedachte verschillen.",
+   "uo": [
+    "Klopt: het onderwerp is stilte en de hoofdgedachte is wat de schrijver erover zegt.",
+    "Koos je \"topic: monasteries; main idea: silence\"? Dan denk je dat het onderwerp kloosters is. Het klooster komt maar één keer voor, en de tekst gaat over stilte.",
+    "Koos je \"topic: sleep; main idea: noise\"? Dan denk je dat het onderwerp slaap is. Slaap is een vergelijking, en het onderwerp is stilte.",
+    "Koos je \"there is no difference between them\"? Dan denk je dat ze hetzelfde zijn. Het onderwerp is een paar woorden, en de hoofdgedachte is een bewering."
+   ],
+   "uh": "Wat is het verschil?",
+   "ctx": "Read this text: \"Few things are as rare in modern life as silence. Open-plan offices, buses with screens and shops that play music all day have taught us to expect a constant background of sound. When the noise suddenly stops, many people feel uneasy, as if something has gone wrong. This discomfort says less about silence than about us. Research on stress shows that quiet moments lower blood pressure and help the brain to recover, and some studies suggest that two minutes of silence relax the body more than calming music. I do not claim that everyone should move to a monastery. But I do believe that we should treat silence as a basic need, like sleep, rather than as an empty gap to be filled. A short walk without headphones is a good place to start.\""
+  },
+  {
+   "v": "How are the \"Of course\" sentence and the \"But\" sentence related?",
+   "o": [
+    "cause and effect",
+    "a concession followed by the writer's real point",
+    "an example and a rule",
+    "a question and an answer"
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 3,
+   "u": "Toegeving en kern. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"cause and effect\"? Dan denk je dat de ene zin de oorzaak van de andere is. De tweede zet iets tegenover de eerste, en geeft geen gevolg.",
+    "Klopt: eerst geeft de schrijver iets toe, daarna volgt met but zijn echte punt.",
+    "Koos je \"an example and a rule\"? Dan denk je dat de eerste een voorbeeld is van de tweede. De zinnen staan tegenover elkaar, en zijn niet een voorbeeld en regel.",
+    "Koos je \"a question and an answer\"? Dan denk je dat er een vraag en antwoord staan. Er is geen vraag in de tekst, maar een toegeving en een stelling."
+   ],
+   "uh": "Hoe hangen de zinnen samen?",
+   "ctx": "Read this text: \"Supermarkets proudly advertise the number of products on their shelves, as if endless choice were the same as freedom. Psychologists are less enthusiastic. In a well-known experiment, shoppers were offered either six or twenty-four jars of jam to taste. The larger display attracted more visitors, yet only three per cent of those visitors bought a jar, against thirty per cent at the small display. The explanation, researchers argue, is that too many options make us afraid of choosing wrongly and tire us out before we have decided. Of course, some people enjoy comparing everything, and for expensive purchases such as a house a thorough search is wise. But for everyday decisions, a smaller selection leaves us calmer and, surprisingly, more satisfied with what we pick. Shops and websites would therefore do better to offer fewer, carefully chosen options than to overwhelm their customers.\""
+  },
+  {
+   "v": "What does the writer do in the sentence about Rotterdam?",
+   "o": [
+    "states the main idea",
+    "gives a counter-argument",
+    "introduces a new topic",
+    "gives an example of support for green roofs"
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 2,
+   "u": "For example = voorbeeld. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"states the main idea\"? Dan denk je dat de zin de kern geeft. Het is een voorbeeld, en de kern staat aan het eind.",
+    "Koos je \"gives a counter-argument\"? Dan denk je dat de zin een bezwaar geeft. Rotterdam steunt groene daken, en spreekt ze niet tegen.",
+    "Koos je \"introduces a new topic\"? Dan denk je dat de zin een nieuw onderwerp opent. Het hoort bij hetzelfde onderwerp, en geeft een voorbeeld.",
+    "Klopt: for example laat zien dat een stad geld geeft voor groene daken."
+   ],
+   "uh": "Wat doet de zin?",
+   "ctx": "Read this text: \"Roofs are among the least used spaces in a city: they are flat, empty and exposed to sun and rain. A growing number of cities now want to turn them green. A roof covered with plants absorbs rainwater, which reduces the risk of flooding during heavy storms, and it keeps buildings cooler in summer, so that less energy is needed for air conditioning. In Rotterdam, for example, the city pays part of the cost for owners who install a green roof. Not everyone is convinced, however. Building owners point out that a green roof is expensive to install and needs maintenance, and older buildings are often too weak to carry the extra weight. Supporters reply that the benefits for the whole neighbourhood outweigh the costs for the individual owner, and that new buildings can be designed to carry the load from the start. For this reason, many planners argue that green roofs should become the standard for new construction, while subsidies help owners of existing buildings.\""
+  },
+  {
+   "v": "Which title fits the text best?",
+   "o": [
+    "Time to make green roofs standard",
+    "The history of flat roofs",
+    "Rotterdam and its subsidies",
+    "How air conditioning works"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 4,
+   "u": "Titel = hoofdgedachte. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: de titel vat de hoofdgedachte samen dat groene daken de norm moeten worden.",
+    "Koos je \"The history of flat roofs\"? Dan denk je dat de tekst over geschiedenis gaat. Daar staat niets over, en de titel past niet.",
+    "Koos je \"Rotterdam and its subsidies\"? Dan denk je dat de tekst over Rotterdam gaat. Rotterdam is een voorbeeld, en niet het onderwerp.",
+    "Koos je \"How air conditioning works\"? Dan denk je dat de tekst over airco gaat. Airco komt alleen voor als besparing, en niet als onderwerp."
+   ],
+   "uh": "Welke titel past?",
+   "ctx": "Read this text: \"Roofs are among the least used spaces in a city: they are flat, empty and exposed to sun and rain. A growing number of cities now want to turn them green. A roof covered with plants absorbs rainwater, which reduces the risk of flooding during heavy storms, and it keeps buildings cooler in summer, so that less energy is needed for air conditioning. In Rotterdam, for example, the city pays part of the cost for owners who install a green roof. Not everyone is convinced, however. Building owners point out that a green roof is expensive to install and needs maintenance, and older buildings are often too weak to carry the extra weight. Supporters reply that the benefits for the whole neighbourhood outweigh the costs for the individual owner, and that new buildings can be designed to carry the load from the start. For this reason, many planners argue that green roofs should become the standard for new construction, while subsidies help owners of existing buildings.\""
+  },
+  {
+   "v": "Which sentence gives the writer's advice at the end of the text?",
+   "o": [
+    "\"I do not claim that everyone should move to a monastery.\"",
+    "\"A short walk without headphones is a good place to start.\"",
+    "\"Research on stress shows that quiet moments lower blood pressure.\"",
+    "\"Few things are as rare in modern life as silence.\""
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 1,
+   "u": "Laatste zin = advies. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"I do not claim that everyone should move to a...\"? Dan denk je dat dit het advies is. Het is een toegeving, en geen advies.",
+    "Klopt: de laatste zin geeft een concreet advies.",
+    "Koos je \"Research on stress shows that quiet moments lower...\"? Dan denk je dat dit het advies is. Het is bewijs, en geen advies.",
+    "Koos je \"Few things are as rare in modern life as silence.\"? Dan denk je dat dit het advies is. Het is de opening, en geen advies."
+   ],
+   "uh": "Welke zin geeft het advies?",
+   "ctx": "Read this text: \"Few things are as rare in modern life as silence. Open-plan offices, buses with screens and shops that play music all day have taught us to expect a constant background of sound. When the noise suddenly stops, many people feel uneasy, as if something has gone wrong. This discomfort says less about silence than about us. Research on stress shows that quiet moments lower blood pressure and help the brain to recover, and some studies suggest that two minutes of silence relax the body more than calming music. I do not claim that everyone should move to a monastery. But I do believe that we should treat silence as a basic need, like sleep, rather than as an empty gap to be filled. A short walk without headphones is a good place to start.\""
+  }
+ ],
+ "oe": [
+  {
+   "bron": "Examenstijl",
+   "ctx": "You read a text about shopping: \"Supermarkets proudly advertise the number of products on their shelves, as if endless choice were the same as freedom. Psychologists are less enthusiastic. In a well-known experiment, shoppers were offered either six or twenty-four jars of jam to taste. The larger display attracted more visitors, yet only three per cent of those visitors bought a jar, against thirty per cent at the small display. The explanation, researchers argue, is that too many options make us afraid of choosing wrongly and tire us out before we have decided. Of course, some people enjoy comparing everything, and for expensive purchases such as a house a thorough search is wise. But for everyday decisions, a smaller selection leaves us calmer and, surprisingly, more satisfied with what we pick. Shops and websites would therefore do better to offer fewer, carefully chosen options than to overwhelm their customers.\" Your teacher wants you to find the main idea.",
+   "v": "State the main idea of the text in one sentence.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Te veel keuze maakt mensen minder tevreden of minder koopgeneigd (1p). Dit geldt voor alledaagse beslissingen (1p). Winkels kunnen beter minder opties aanbieden (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "You read a text about cities: \"Roofs are among the least used spaces in a city: they are flat, empty and exposed to sun and rain. A growing number of cities now want to turn them green. A roof covered with plants absorbs rainwater, which reduces the risk of flooding during heavy storms, and it keeps buildings cooler in summer, so that less energy is needed for air conditioning. In Rotterdam, for example, the city pays part of the cost for owners who install a green roof. Not everyone is convinced, however. Building owners point out that a green roof is expensive to install and needs maintenance, and older buildings are often too weak to carry the extra weight. Supporters reply that the benefits for the whole neighbourhood outweigh the costs for the individual owner, and that new buildings can be designed to carry the load from the start. For this reason, many planners argue that green roofs should become the standard for new construction, while subsidies help owners of existing buildings.\" Your teacher asks about the structure of the argument.",
+   "v": "Name the objection and the reply, and give the main idea.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Het bezwaar: dure installatie, onderhoud of te zwakke gebouwen (1p). Het weerwoord: de voordelen voor de buurt zijn groter of nieuwbouw kan het dragen (1p). De kern: groene daken moeten de norm worden voor nieuwbouw (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "You read a column: \"Few things are as rare in modern life as silence. Open-plan offices, buses with screens and shops that play music all day have taught us to expect a constant background of sound. When the noise suddenly stops, many people feel uneasy, as if something has gone wrong. This discomfort says less about silence than about us. Research on stress shows that quiet moments lower blood pressure and help the brain to recover, and some studies suggest that two minutes of silence relax the body more than calming music. I do not claim that everyone should move to a monastery. But I do believe that we should treat silence as a basic need, like sleep, rather than as an empty gap to be filled. A short walk without headphones is a good place to start.\" Your teacher wants you to look at how the text is built.",
+   "v": "Explain the function of the sentence about the monastery.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Het is een toegeving (1p). De schrijver gaat niet te ver of vraagt geen extreme maatregelen (1p). Daarna volgt met but zijn echte punt dat stilte een basisbehoefte is (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "You read a text about shopping: \"Supermarkets proudly advertise the number of products on their shelves, as if endless choice were the same as freedom. Psychologists are less enthusiastic. In a well-known experiment, shoppers were offered either six or twenty-four jars of jam to taste. The larger display attracted more visitors, yet only three per cent of those visitors bought a jar, against thirty per cent at the small display. The explanation, researchers argue, is that too many options make us afraid of choosing wrongly and tire us out before we have decided. Of course, some people enjoy comparing everything, and for expensive purchases such as a house a thorough search is wise. But for everyday decisions, a smaller selection leaves us calmer and, surprisingly, more satisfied with what we pick. Shops and websites would therefore do better to offer fewer, carefully chosen options than to overwhelm their customers.\" Your teacher asks about the evidence in the text.",
+   "v": "Say what the jam experiment shows and what function it has.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Op de grote display kocht 3 procent, op de kleine 30 procent (1p). Het is bewijs dat te veel keuze minder verkoop geeft (1p). Het ondersteunt de hoofdgedachte en is zelf niet de kern (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "You read a text about cities: \"Roofs are among the least used spaces in a city: they are flat, empty and exposed to sun and rain. A growing number of cities now want to turn them green. A roof covered with plants absorbs rainwater, which reduces the risk of flooding during heavy storms, and it keeps buildings cooler in summer, so that less energy is needed for air conditioning. In Rotterdam, for example, the city pays part of the cost for owners who install a green roof. Not everyone is convinced, however. Building owners point out that a green roof is expensive to install and needs maintenance, and older buildings are often too weak to carry the extra weight. Supporters reply that the benefits for the whole neighbourhood outweigh the costs for the individual owner, and that new buildings can be designed to carry the load from the start. For this reason, many planners argue that green roofs should become the standard for new construction, while subsidies help owners of existing buildings.\" Your teacher wants you to write a good title.",
+   "v": "Write a title and explain why it fits the main idea.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Een titel die de kern noemt, zoals groene daken als norm (1p). De titel noemt het onderwerp groene daken (1p). Hij is niet te breed of te smal, of hij verwijst naar de conclusie (1p)."
+  }
+ ]
+}
