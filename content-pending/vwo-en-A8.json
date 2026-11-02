@@ -1,0 +1,682 @@
+{
+ "id": "A8",
+ "lo": "en.A.8",
+ "gs": 2,
+ "naam": "Een Engelse tekst samenvatten en parafraseren",
+ "beschrijving": "Je leert hoofdzaken van bijzaken te scheiden, een tekst in eigen woorden en kort samen te vatten, zinnen te parafraseren en een samenvatting op volgorde en samenhang te beoordelen.",
+ "ceStatus": "CE",
+ "binas": "",
+ "val": "",
+ "onderwerpen": [
+  "Hoofdzaak en bijzaak",
+  "Samenvatten in eigen woorden",
+  "Parafraseren",
+  "Een samenvatting beoordelen",
+  "Volgorde en samenhang"
+ ],
+ "sam": "Bij een samenvatting kies je de hoofdzaken en laat je voorbeelden en kleine details weg. Je schrijft in eigen woorden, korter dan het origineel en zonder eigen mening of nieuwe beweringen. Een parafrase zegt hetzelfde met andere woorden: je mag synoniemen, woordvolgorde en woordsoort veranderen, maar de betekenis blijft gelijk. Houd de volgorde van de tekst aan en gebruik verbindingswoorden zoals because en however.",
+ "begrippen": [
+  {
+   "t": "Samenvatting",
+   "d": "Een korte weergave van alleen de hoofdzaken."
+  },
+  {
+   "t": "Hoofdzaak",
+   "d": "Informatie die niet kan ontbreken."
+  },
+  {
+   "t": "Bijzaak",
+   "d": "Informatie die je kunt weglaten."
+  },
+  {
+   "t": "Parafrase",
+   "d": "Dezelfde betekenis in andere woorden."
+  },
+  {
+   "t": "Synoniem",
+   "d": "Een woord met bijna dezelfde betekenis."
+  },
+  {
+   "t": "Eigen woorden",
+   "d": "Niet letterlijk overnemen uit de tekst."
+  },
+  {
+   "t": "Letterlijk",
+   "d": "Woord voor woord, zoals in de tekst."
+  },
+  {
+   "t": "Mening",
+   "d": "Wat jij vindt; hoort niet in een samenvatting."
+  },
+  {
+   "t": "Verbindingswoord",
+   "d": "Een woord als because dat zinnen verbindt."
+  },
+  {
+   "t": "Chronologie",
+   "d": "De volgorde in de tijd."
+  },
+  {
+   "t": "Selecteren",
+   "d": "Kiezen wat erin hoort."
+  },
+  {
+   "t": "Kern",
+   "d": "Het belangrijkste punt van de tekst."
+  }
+ ],
+ "sv": [
+  {
+   "v": "Which information belongs in a summary?",
+   "o": [
+    "every example",
+    "the main points",
+    "all numbers and names",
+    "the summariser's holiday plans"
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 0,
+   "u": "Alleen hoofdzaken. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"every example\"? Dan denk je dat alle voorbeelden erin horen. Voorbeelden zijn bijzaken, en maken de samenvatting te lang.",
+    "Klopt: een samenvatting bevat alleen de hoofdzaken.",
+    "Koos je \"all numbers and names\"? Dan denk je dat alle cijfers en namen erin horen. Dat zijn details, en je kiest alleen de hoofdzaken.",
+    "Koos je \"the summariser's holiday plans\"? Dan denk je dat eigen plannen erin horen. Een samenvatting gaat over de tekst, en niet over jou."
+   ],
+   "uh": "Wat hoort in een samenvatting?"
+  },
+  {
+   "v": "Which information can you leave out of a summary?",
+   "o": [
+    "the main idea",
+    "the conclusion of the text",
+    "the topic of the text",
+    "examples, details"
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 0,
+   "u": "Voorbeelden mogen weg. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"the main idea\"? Dan denk je dat de hoofdgedachte weg mag. Die is juist de kern, en moet blijven.",
+    "Koos je \"the conclusion of the text\"? Dan denk je dat de conclusie weg mag. Die hoort meestal bij de kern, en mag niet ontbreken.",
+    "Koos je \"the topic of the text\"? Dan denk je dat het onderwerp weg mag. Zonder onderwerp snapt niemand de samenvatting, dus het moet erin.",
+    "Klopt: voorbeelden en kleine details zijn bijzaken die je kunt weglaten."
+   ],
+   "uh": "Wat kun je weglaten?"
+  },
+  {
+   "v": "Which rule is important for a good summary?",
+   "o": [
+    "use your own words and stay short",
+    "copy whole sentences from the text",
+    "add your own opinion",
+    "change the order of ideas at random"
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 1,
+   "u": "Eigen woorden en kort. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: een goede samenvatting is korter en in eigen woorden.",
+    "Koos je \"copy whole sentences from the text\"? Dan denk je dat kopiëren mag. Dan is het geen eigen samenvatting, en vaak te lang.",
+    "Koos je \"add your own opinion\"? Dan denk je dat een mening erbij hoort. Een samenvatting geeft de mening van de schrijver, en niet de jouwe.",
+    "Koos je \"change the order of ideas at random\"? Dan denk je dat de volgorde vrij is. De volgorde moet de tekst volgen, en niet willekeurig zijn."
+   ],
+   "uh": "Welke regel is belangrijk?"
+  },
+  {
+   "v": "Which description fits paraphrasing?",
+   "o": [
+    "saying the opposite",
+    "quoting word for word",
+    "the same, other words",
+    "shortening to one word"
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 2,
+   "u": "Parafrase = zelfde betekenis. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"saying the opposite\"? Dan denk je dat parafraseren het omgekeerde zeggen is. Dan verandert de betekenis, en dat mag niet.",
+    "Koos je \"quoting word for word\"? Dan denk je dat parafraseren letterlijk citeren is. Dat is geen herformulering, en gebruikt dezelfde woorden.",
+    "Klopt: parafraseren is dezelfde betekenis met andere woorden.",
+    "Koos je \"shortening to one word\"? Dan denk je dat parafraseren tot één woord inkorten is. Dan verlies je betekenis, en het is geen parafrase."
+   ],
+   "uh": "Wat is parafraseren?"
+  },
+  {
+   "v": "Which change is NOT allowed in a paraphrase?",
+   "o": [
+    "using synonyms",
+    "changing the word order",
+    "changing the meaning",
+    "changing a noun into a verb"
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 2,
+   "u": "Betekenis blijft gelijk. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"using synonyms\"? Dan denk je dat synoniemen niet mogen. Dat is juist de bedoeling, want de woorden veranderen.",
+    "Koos je \"changing the word order\"? Dan denk je dat de woordvolgorde niet mag veranderen. Dat mag wel, zolang de betekenis gelijk blijft.",
+    "Klopt: een parafrase moet dezelfde betekenis houden.",
+    "Koos je \"changing a noun into a verb\"? Dan denk je dat een woordsoort niet mag veranderen. Dat mag, als de zin hetzelfde betekent."
+   ],
+   "uh": "Wat mag niet?"
+  },
+  {
+   "v": "What is wrong with a summary that is as long as the original?",
+   "o": [
+    "it does not select",
+    "it uses the writer's words",
+    "it has a title",
+    "it is easy to read"
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 3,
+   "u": "Samenvatten = selecteren. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: een samenvatting kiest hoofdzaken en is dus korter.",
+    "Koos je \"it uses the writer's words\"? Dan denk je dat het gebruik van de woorden van de schrijver het probleem is. Het probleem is dat er niets geselecteerd is, en niet het woordgebruik.",
+    "Koos je \"it has a title\"? Dan denk je dat een titel het probleem is. Een titel is prima, en niet de oorzaak van de fout.",
+    "Koos je \"it is easy to read\"? Dan denk je dat gemakkelijk leesbaar het probleem is. Dat is geen fout, en het gaat om selectie."
+   ],
+   "uh": "Wat is er mis?"
+  },
+  {
+   "v": "Which words help to keep the order of a summary clear?",
+   "o": [
+    "extra examples",
+    "quotes in every sentence",
+    "the name of the writer",
+    "connecting words"
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 4,
+   "u": "Verbindingswoorden = samenhang.",
+   "uo": [
+    "Koos je \"extra examples\"? Dan denk je dat meer voorbeelden de volgorde helpen. Voorbeelden maken het langer, en helpen niet bij de samenhang.",
+    "Koos je \"quotes in every sentence\"? Dan denk je dat citaten de samenhang tonen. Citaten maken een samenvatting te letterlijk, en tonen geen verband.",
+    "Koos je \"the name of the writer\"? Dan denk je dat de naam van de schrijver de volgorde helpt. Een naam geeft geen verband, en is een detail.",
+    "Klopt: verbindingswoorden laten zien hoe de ideeën samenhangen."
+   ],
+   "uh": "Welke woorden helpen?"
+  },
+  {
+   "v": "What is the main point of the text?",
+   "o": [
+    "flights are cheaper than ever before",
+    "a comeback with problems",
+    "Brussels and Vienna are far apart",
+    "sleeper carriages are very comfortable"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 0,
+   "u": "Kern: terugkeer met problemen.",
+   "uo": [
+    "Koos je \"flights are cheaper than ever before\"? Dan denk je dat het over goedkope vluchten gaat. Vliegen is alleen de vergelijking, en niet de kern.",
+    "Klopt: de tekst meldt de terugkeer van nachttreinen en de beperkingen daarvan.",
+    "Koos je \"Brussels and Vienna are far apart\"? Dan denk je dat het over afstand gaat. De route is een voorbeeld, en niet de kern.",
+    "Koos je \"sleeper carriages are very comfortable\"? Dan denk je dat het over comfort gaat. Comfort wordt door reizigers geprezen, maar is niet de kern."
+   ],
+   "uh": "Wat is de hoofdzaak?",
+   "ctx": "Read this text: \"Night trains, once written off as relics, are making a comeback in Europe. Several railway companies have ordered new sleeper carriages, and routes that were closed a decade ago, such as the link between Brussels and Vienna, are being reopened. Environmental concern is the main driver: a journey by rail produces a fraction of the emissions of the same flight. Yet the revival is fragile. Sleeper carriages are expensive to build and there are very few left, so companies cannot expand quickly. Ticket prices are often higher than airfares, which puts off students and families. Passengers, for their part, praise the comfort and the chance to arrive in a city centre without a trip to a distant airport. Experts say that cheaper tickets and more carriages are essential if night trains are to become more than a niche.\""
+  },
+  {
+   "v": "Which detail can you leave out of a short summary?",
+   "o": [
+    "the high cost of carriages",
+    "the comeback of night trains",
+    "the need for cheaper tickets",
+    "the Brussels route"
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 0,
+   "u": "Voorbeeldroute is bijzaak. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"the high cost of carriages\"? Dan denk je dat de kosten weg mogen. Ze verklaren waarom het herstel fragiel is, en horen bij de kern.",
+    "Koos je \"the comeback of night trains\"? Dan denk je dat de terugkeer weg mag. Dat is het onderwerp, en dus de kern.",
+    "Koos je \"the need for cheaper tickets\"? Dan denk je dat de behoefte aan goedkopere kaartjes weg mag. Dat is de conclusie van de experts, en moet erin.",
+    "Klopt: de route is een voorbeeld en een bijzaak."
+   ],
+   "uh": "Welk detail kun je weglaten?",
+   "ctx": "Read this text: \"Night trains, once written off as relics, are making a comeback in Europe. Several railway companies have ordered new sleeper carriages, and routes that were closed a decade ago, such as the link between Brussels and Vienna, are being reopened. Environmental concern is the main driver: a journey by rail produces a fraction of the emissions of the same flight. Yet the revival is fragile. Sleeper carriages are expensive to build and there are very few left, so companies cannot expand quickly. Ticket prices are often higher than airfares, which puts off students and families. Passengers, for their part, praise the comfort and the chance to arrive in a city centre without a trip to a distant airport. Experts say that cheaper tickets and more carriages are essential if night trains are to become more than a niche.\""
+  },
+  {
+   "v": "Which sentence paraphrases \"Ticket prices are often higher than airfares\"?",
+   "o": [
+    "Flying is often more expensive than going by train.",
+    "Going by train is often more expensive than flying.",
+    "Train tickets are always cheaper than plane tickets.",
+    "Airfares are often higher than train fares."
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 2,
+   "u": "Zelfde betekenis, andere woorden.",
+   "uo": [
+    "Koos je \"Flying is often more expensive than going by train.\"? Dan denk je dat dit hetzelfde zegt. Het is het omgekeerde, dus de betekenis verandert.",
+    "Klopt: dit zegt hetzelfde met andere woorden.",
+    "Koos je \"Train tickets are always cheaper than plane tickets.\"? Dan denk je dat dit hetzelfde zegt. Het is het tegenovergestelde, en bevat het sterke woord always.",
+    "Koos je \"Airfares are often higher than train fares.\"? Dan denk je dat dit hetzelfde zegt. De rollen zijn omgedraaid, dus de betekenis is anders."
+   ],
+   "uh": "Welke zin is een parafrase?",
+   "ctx": "Read this text: \"Night trains, once written off as relics, are making a comeback in Europe. Several railway companies have ordered new sleeper carriages, and routes that were closed a decade ago, such as the link between Brussels and Vienna, are being reopened. Environmental concern is the main driver: a journey by rail produces a fraction of the emissions of the same flight. Yet the revival is fragile. Sleeper carriages are expensive to build and there are very few left, so companies cannot expand quickly. Ticket prices are often higher than airfares, which puts off students and families. Passengers, for their part, praise the comfort and the chance to arrive in a city centre without a trip to a distant airport. Experts say that cheaper tickets and more carriages are essential if night trains are to become more than a niche.\""
+  },
+  {
+   "v": "Which sentence is the best one-sentence summary of the text?",
+   "o": [
+    "Night trains are old and nobody uses them.",
+    "Brussels and Vienna are connected again.",
+    "Night trains return, held back by cost.",
+    "Passengers like the comfort of sleeper trains."
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 1,
+   "u": "Kern, reden en beperking. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"Night trains are old and nobody uses them.\"? Dan denk je dat dit de kern is. Het is het tegenovergestelde, en de tekst meldt een terugkeer.",
+    "Koos je \"Brussels and Vienna are connected again.\"? Dan denk je dat dit de kern is. Het is een voorbeeld, en niet de hoofdzaak.",
+    "Klopt: de zin noemt de terugkeer en de belangrijkste beperking.",
+    "Koos je \"Passengers like the comfort of sleeper trains.\"? Dan denk je dat dit de kern is. Het is een deelpunt, en laat de problemen weg."
+   ],
+   "uh": "Welke zin is de beste samenvatting?",
+   "ctx": "Read this text: \"Night trains, once written off as relics, are making a comeback in Europe. Several railway companies have ordered new sleeper carriages, and routes that were closed a decade ago, such as the link between Brussels and Vienna, are being reopened. Environmental concern is the main driver: a journey by rail produces a fraction of the emissions of the same flight. Yet the revival is fragile. Sleeper carriages are expensive to build and there are very few left, so companies cannot expand quickly. Ticket prices are often higher than airfares, which puts off students and families. Passengers, for their part, praise the comfort and the chance to arrive in a city centre without a trip to a distant airport. Experts say that cheaper tickets and more carriages are essential if night trains are to become more than a niche.\""
+  },
+  {
+   "v": "Which phrase paraphrases \"productivity stayed the same or improved\"?",
+   "o": [
+    "as much work or more",
+    "the companies did less work",
+    "the companies hired more staff",
+    "the companies closed earlier"
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 2,
+   "u": "Productivity = hoeveel werk. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: productivity is hoeveel werk er gedaan wordt.",
+    "Koos je \"the companies did less work\"? Dan denk je dat de productiviteit daalde. Er staat dat ze gelijk bleef of verbeterde, dus dat is het omgekeerde.",
+    "Koos je \"the companies hired more staff\"? Dan denk je dat er meer personeel kwam. Daar staat niets over, het gaat om hoeveel werk er werd gedaan.",
+    "Koos je \"the companies closed earlier\"? Dan denk je dat ze eerder sloten. Dat staat niet in de tekst, en gaat over iets anders."
+   ],
+   "uh": "Welke zin is een parafrase?",
+   "ctx": "Read this text: \"Trials of a four-day working week, in which employees work thirty-two hours for the same pay, have produced striking results. In a British pilot involving sixty-one companies, most of them reported that productivity stayed the same or improved, and more than half of the staff said they felt less stressed. Absence through sickness fell by about a third, and few employees chose to leave. Sceptics point out that the participating companies volunteered, so they may have been the ones most likely to succeed. Moreover, in sectors such as healthcare, where someone must always be present, a shorter week is hard to organise without hiring more people. Supporters reply that the experiment shows what is possible when work is organised more carefully, for example by cutting unnecessary meetings. The debate is therefore likely to continue as more countries launch their own trials.\""
+  },
+  {
+   "v": "Which sentence states a main point of the text?",
+   "o": [
+    "A four-day week worked well.",
+    "Sixty-one companies took part.",
+    "Staff worked thirty-two hours.",
+    "Healthcare always needs staff."
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 0,
+   "u": "Kern: goed resultaat. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: dit is de kern van het onderzoek dat de tekst beschrijft.",
+    "Koos je \"Sixty-one companies took part.\"? Dan denk je dat dit een hoofdpunt is. Het aantal is een detail, en niet de kern.",
+    "Koos je \"Staff worked thirty-two hours.\"? Dan denk je dat dit een hoofdpunt is. Het is een kenmerk van de proef, en niet het resultaat.",
+    "Koos je \"Healthcare always needs staff.\"? Dan denk je dat dit een hoofdpunt is. Het is een bezwaar van twijfelaars, en niet de kern."
+   ],
+   "uh": "Welke zin is een hoofdpunt?",
+   "ctx": "Read this text: \"Trials of a four-day working week, in which employees work thirty-two hours for the same pay, have produced striking results. In a British pilot involving sixty-one companies, most of them reported that productivity stayed the same or improved, and more than half of the staff said they felt less stressed. Absence through sickness fell by about a third, and few employees chose to leave. Sceptics point out that the participating companies volunteered, so they may have been the ones most likely to succeed. Moreover, in sectors such as healthcare, where someone must always be present, a shorter week is hard to organise without hiring more people. Supporters reply that the experiment shows what is possible when work is organised more carefully, for example by cutting unnecessary meetings. The debate is therefore likely to continue as more countries launch their own trials.\""
+  },
+  {
+   "v": "What is wrong with this summary: \"I think a four-day week is great, because the companies were happy\"?",
+   "o": [
+    "it is too long",
+    "it has no main idea",
+    "it has the summariser's opinion",
+    "it copies the text word for word"
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 3,
+   "u": "Geen eigen mening. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"it is too long\"? Dan denk je dat de samenvatting te lang is. Het is maar één zin, en lengte is niet het probleem.",
+    "Koos je \"it has no main idea\"? Dan denk je dat er geen hoofdgedachte in staat. Er staat wel iets over het resultaat, maar met een eigen oordeel.",
+    "Klopt: een samenvatting geeft geen eigen mening, alleen wat de tekst zegt.",
+    "Koos je \"it copies the text word for word\"? Dan denk je dat de zin gekopieerd is. De zin staat zo niet in de tekst, en het probleem is de mening."
+   ],
+   "uh": "Wat is er mis?",
+   "ctx": "Read this text: \"Trials of a four-day working week, in which employees work thirty-two hours for the same pay, have produced striking results. In a British pilot involving sixty-one companies, most of them reported that productivity stayed the same or improved, and more than half of the staff said they felt less stressed. Absence through sickness fell by about a third, and few employees chose to leave. Sceptics point out that the participating companies volunteered, so they may have been the ones most likely to succeed. Moreover, in sectors such as healthcare, where someone must always be present, a shorter week is hard to organise without hiring more people. Supporters reply that the experiment shows what is possible when work is organised more carefully, for example by cutting unnecessary meetings. The debate is therefore likely to continue as more countries launch their own trials.\""
+  },
+  {
+   "v": "Which order of ideas fits a good summary of the text?",
+   "o": [
+    "reply, results, criticism, conclusion",
+    "results, doubt, reply, end",
+    "criticism, reply, conclusion, results",
+    "conclusion, reply, results, criticism"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 4,
+   "u": "Volg de volgorde van de tekst.",
+   "uo": [
+    "Koos je \"reply, results, criticism, conclusion\"? Dan denk je dat het weerwoord het eerst genoemd moet worden omdat het sterk klinkt. Een weerwoord kan pas na kritiek komen, dus deze volgorde klopt niet.",
+    "Klopt: dit volgt de opbouw van de tekst van resultaten naar conclusie.",
+    "Koos je \"criticism, reply, conclusion, results\"? Dan denk je dat de kritiek voorop staat omdat die het meest opvalt. In de tekst komen eerst de resultaten, en daarna pas de twijfel.",
+    "Koos je \"conclusion, reply, results, criticism\"? Dan denk je dat de conclusie vooraan hoort omdat het de kern is. In de tekst staat die juist aan het eind, en volgt uit de rest."
+   ],
+   "uh": "Welke volgorde past?",
+   "ctx": "Read this text: \"Trials of a four-day working week, in which employees work thirty-two hours for the same pay, have produced striking results. In a British pilot involving sixty-one companies, most of them reported that productivity stayed the same or improved, and more than half of the staff said they felt less stressed. Absence through sickness fell by about a third, and few employees chose to leave. Sceptics point out that the participating companies volunteered, so they may have been the ones most likely to succeed. Moreover, in sectors such as healthcare, where someone must always be present, a shorter week is hard to organise without hiring more people. Supporters reply that the experiment shows what is possible when work is organised more carefully, for example by cutting unnecessary meetings. The debate is therefore likely to continue as more countries launch their own trials.\""
+  },
+  {
+   "v": "Which of these is a summary in your own words?",
+   "o": [
+    "Trials of a four-day working week, in which employees work thirty-two hours for the same pay, have produced striking results.",
+    "I was surprised by the results of the trial.",
+    "The four-day week.",
+    "A British trial found that a shorter week kept output up and reduced stress and sick leave."
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 1,
+   "u": "Eigen woorden en kort. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"Trials of a four-day working week, in which...\"? Dan denk je dat dit een samenvatting is. Het is de eerste zin van de tekst, en dus gekopieerd.",
+    "Koos je \"I was surprised by the results of the trial.\"? Dan denk je dat dit een samenvatting is. Het is een eigen reactie, en geeft de inhoud niet weer.",
+    "Koos je \"The four-day week.\"? Dan denk je dat dit een samenvatting is. Het is maar een onderwerp, en geeft geen kern.",
+    "Klopt: de zin geeft de kern in eigen woorden en kort."
+   ],
+   "uh": "Welke zin is een samenvatting?",
+   "ctx": "Read this text: \"Trials of a four-day working week, in which employees work thirty-two hours for the same pay, have produced striking results. In a British pilot involving sixty-one companies, most of them reported that productivity stayed the same or improved, and more than half of the staff said they felt less stressed. Absence through sickness fell by about a third, and few employees chose to leave. Sceptics point out that the participating companies volunteered, so they may have been the ones most likely to succeed. Moreover, in sectors such as healthcare, where someone must always be present, a shorter week is hard to organise without hiring more people. Supporters reply that the experiment shows what is possible when work is organised more carefully, for example by cutting unnecessary meetings. The debate is therefore likely to continue as more countries launch their own trials.\""
+  },
+  {
+   "v": "Which sentence shows the order of events correctly?",
+   "o": [
+    "Curie taught at the Sorbonne, then moved to Paris and married Pierre.",
+    "Moved, married, won a prize, then taught.",
+    "Curie won a Nobel Prize, then married Pierre and moved to Paris.",
+    "Curie married Pierre, then moved to Paris and taught at the Sorbonne."
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 4,
+   "u": "Chronologie volgt de tekst. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"Curie taught at the Sorbonne, then moved to Paris...\"? Dan denk je dat ze eerst lesgaf. Ze verhuisde eerst naar Parijs, en gaf pas later les.",
+    "Klopt: deze volgorde klopt met de levensloop in de tekst.",
+    "Koos je \"Curie won a Nobel Prize, then married Pierre and...\"? Dan denk je dat de prijs eerst kwam. Ze verhuisde en trouwde eerst, en won daarna in 1903.",
+    "Koos je \"Curie married Pierre, then moved to Paris and...\"? Dan denk je dat ze eerst trouwde. Ze verhuisde eerst naar Parijs, en ontmoette daar Pierre."
+   ],
+   "uh": "Welke volgorde klopt?",
+   "ctx": "Read this text: \"Marie Curie was born in Warsaw in 1867 and moved to Paris at the age of twenty-four to study physics. There she met Pierre Curie, whom she married in 1895. Together they discovered two new elements, polonium and radium, and in 1903 they shared the Nobel Prize in Physics with Henri Becquerel. After Pierre's death in 1906 she took over his professorship at the Sorbonne, becoming the first woman to teach there. In 1911 she received a second Nobel Prize, this time in Chemistry, for her work on radium. During the First World War she developed mobile X-ray units that were used near the front. She died in 1934 from an illness probably caused by her long exposure to radiation.\""
+  },
+  {
+   "v": "Which fact is the most important for a short summary of her achievements?",
+   "o": [
+    "two Nobel Prizes",
+    "she married Pierre in 1895",
+    "she moved to Paris at twenty-four",
+    "she was born in Warsaw"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 0,
+   "u": "Prestaties zijn de kern. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: twee Nobelprijzen in verschillende vakken zijn haar belangrijkste prestatie.",
+    "Koos je \"she married Pierre in 1895\"? Dan denk je dat het huwelijk de kern is. Dat is een persoonlijk detail, en geen prestatie.",
+    "Koos je \"she moved to Paris at twenty-four\"? Dan denk je dat de verhuizing de kern is. Dat is een detail uit haar leven, en geen prestatie.",
+    "Koos je \"she was born in Warsaw\"? Dan denk je dat de geboorteplaats de kern is. Dat is een detail, en geen prestatie."
+   ],
+   "uh": "Welk feit is het belangrijkst?",
+   "ctx": "Read this text: \"Marie Curie was born in Warsaw in 1867 and moved to Paris at the age of twenty-four to study physics. There she met Pierre Curie, whom she married in 1895. Together they discovered two new elements, polonium and radium, and in 1903 they shared the Nobel Prize in Physics with Henri Becquerel. After Pierre's death in 1906 she took over his professorship at the Sorbonne, becoming the first woman to teach there. In 1911 she received a second Nobel Prize, this time in Chemistry, for her work on radium. During the First World War she developed mobile X-ray units that were used near the front. She died in 1934 from an illness probably caused by her long exposure to radiation.\""
+  },
+  {
+   "v": "Which sentence paraphrases \"she took over his professorship at the Sorbonne\"?",
+   "o": [
+    "She lost her job at the Sorbonne.",
+    "She taught at the Sorbonne before him.",
+    "He took over her professorship.",
+    "She replaced him as professor."
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 2,
+   "u": "Zij volgt hem op. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"She lost her job at the Sorbonne.\"? Dan denk je dat ze haar baan verloor. De tekst zegt dat ze zijn baan kreeg, en dat is het tegenovergestelde.",
+    "Koos je \"She taught at the Sorbonne before him.\"? Dan denk je dat ze eerder dan hij les gaf. Zij volgde hem op, en kwam dus later.",
+    "Koos je \"He took over her professorship.\"? Dan denk je dat de rollen omgekeerd zijn. Zij nam over van hem, en niet andersom.",
+    "Klopt: ze nam zijn plaats als hoogleraar over."
+   ],
+   "uh": "Welke zin is een parafrase?",
+   "ctx": "Read this text: \"Marie Curie was born in Warsaw in 1867 and moved to Paris at the age of twenty-four to study physics. There she met Pierre Curie, whom she married in 1895. Together they discovered two new elements, polonium and radium, and in 1903 they shared the Nobel Prize in Physics with Henri Becquerel. After Pierre's death in 1906 she took over his professorship at the Sorbonne, becoming the first woman to teach there. In 1911 she received a second Nobel Prize, this time in Chemistry, for her work on radium. During the First World War she developed mobile X-ray units that were used near the front. She died in 1934 from an illness probably caused by her long exposure to radiation.\""
+  },
+  {
+   "v": "Which phrase paraphrases \"an illness probably caused by her long exposure to radiation\"?",
+   "o": [
+    "a disease that certainly came from a cold",
+    "an accident with an X-ray machine",
+    "a disease likely caused by radiation",
+    "an illness that she had as a child"
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 2,
+   "u": "Probably = likely. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"a disease that certainly came from a cold\"? Dan denk je dat de ziekte van een verkoudheid kwam. Dat staat niet in de tekst, en probably wordt certainly.",
+    "Koos je \"an accident with an X-ray machine\"? Dan denk je dat het een ongeluk was. Er staat een ziekte door langdurige blootstelling, en geen ongeluk.",
+    "Klopt: probably wordt likely en exposure wordt werken met straling.",
+    "Koos je \"an illness that she had as a child\"? Dan denk je dat ze de ziekte als kind had. Er staat dat het door lange blootstelling kwam, dus later in haar leven."
+   ],
+   "uh": "Welke zin is een parafrase?",
+   "ctx": "Read this text: \"Marie Curie was born in Warsaw in 1867 and moved to Paris at the age of twenty-four to study physics. There she met Pierre Curie, whom she married in 1895. Together they discovered two new elements, polonium and radium, and in 1903 they shared the Nobel Prize in Physics with Henri Becquerel. After Pierre's death in 1906 she took over his professorship at the Sorbonne, becoming the first woman to teach there. In 1911 she received a second Nobel Prize, this time in Chemistry, for her work on radium. During the First World War she developed mobile X-ray units that were used near the front. She died in 1934 from an illness probably caused by her long exposure to radiation.\""
+  },
+  {
+   "v": "Which summary is best?",
+   "o": [
+    "Marie Curie was born in Warsaw in 1867 and moved to Paris at twenty-four to study physics.",
+    "Marie Curie was a great woman and I admire her.",
+    "Curie discovered elements, won two Nobels and helped soldiers.",
+    "Marie Curie."
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 3,
+   "u": "Kern in eigen woorden. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"Marie Curie was born in Warsaw in 1867 and moved to...\"? Dan denk je dat de eerste zin een samenvatting is. Hij geeft alleen het begin, en laat haar prestaties weg.",
+    "Koos je \"Marie Curie was a great woman and I admire her.\"? Dan denk je dat dit een samenvatting is. Het bevat een eigen mening, en geen inhoud.",
+    "Klopt: de zin noemt de kern in eigen woorden en kort.",
+    "Koos je \"Marie Curie.\"? Dan denk je dat de naam een samenvatting is. Het is alleen het onderwerp, en geeft geen kern."
+   ],
+   "uh": "Welke samenvatting is het best?",
+   "ctx": "Read this text: \"Marie Curie was born in Warsaw in 1867 and moved to Paris at the age of twenty-four to study physics. There she met Pierre Curie, whom she married in 1895. Together they discovered two new elements, polonium and radium, and in 1903 they shared the Nobel Prize in Physics with Henri Becquerel. After Pierre's death in 1906 she took over his professorship at the Sorbonne, becoming the first woman to teach there. In 1911 she received a second Nobel Prize, this time in Chemistry, for her work on radium. During the First World War she developed mobile X-ray units that were used near the front. She died in 1934 from an illness probably caused by her long exposure to radiation.\""
+  },
+  {
+   "v": "Which detail is the least important for a summary of the text?",
+   "o": [
+    "the finding on productivity",
+    "the sceptics' objection",
+    "the supporters' reply",
+    "how many companies"
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 0,
+   "u": "Aantal bedrijven = detail. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"the finding on productivity\"? Dan denk je dat de uitkomst over productiviteit weg mag. Dat is het kernresultaat, en moet erin.",
+    "Koos je \"the sceptics' objection\"? Dan denk je dat het bezwaar weg mag. Het hoort bij de afweging in de tekst, en laat een kant weg.",
+    "Koos je \"the supporters' reply\"? Dan denk je dat het weerwoord weg mag. Het hoort bij de opbouw, en geeft de tekst balans.",
+    "Klopt: het exacte aantal bedrijven is een detail dat de kern niet verandert."
+   ],
+   "uh": "Welk detail is het minst belangrijk?",
+   "ctx": "Read this text: \"Trials of a four-day working week, in which employees work thirty-two hours for the same pay, have produced striking results. In a British pilot involving sixty-one companies, most of them reported that productivity stayed the same or improved, and more than half of the staff said they felt less stressed. Absence through sickness fell by about a third, and few employees chose to leave. Sceptics point out that the participating companies volunteered, so they may have been the ones most likely to succeed. Moreover, in sectors such as healthcare, where someone must always be present, a shorter week is hard to organise without hiring more people. Supporters reply that the experiment shows what is possible when work is organised more carefully, for example by cutting unnecessary meetings. The debate is therefore likely to continue as more countries launch their own trials.\""
+  },
+  {
+   "v": "Which sentence is NOT a paraphrase of the sentence about sleeper carriages?",
+   "o": [
+    "Sleeper carriages are cheap and easy to find.",
+    "Building sleeper carriages costs a lot and few remain.",
+    "There are hardly any sleeper carriages left, and they are costly to make.",
+    "Few sleeper carriages survive and producing them is pricey."
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 2,
+   "u": "Tegenovergesteld = geen parafrase.",
+   "uo": [
+    "Klopt: dit zegt het tegenovergestelde van de tekst.",
+    "Koos je \"Building sleeper carriages costs a lot and few...\"? Dan denk je dat dit geen parafrase is. Het zegt hetzelfde met andere woorden, dus het is wel een parafrase.",
+    "Koos je \"There are hardly any sleeper carriages left, and...\"? Dan denk je dat dit geen parafrase is. De betekenis is gelijk, dus het is een goede parafrase.",
+    "Koos je \"Few sleeper carriages survive and producing them is...\"? Dan denk je dat dit geen parafrase is. De betekenis is gelijk, dus het is wel een parafrase."
+   ],
+   "uh": "Welke zin is geen parafrase?",
+   "ctx": "Read this text: \"Night trains, once written off as relics, are making a comeback in Europe. Several railway companies have ordered new sleeper carriages, and routes that were closed a decade ago, such as the link between Brussels and Vienna, are being reopened. Environmental concern is the main driver: a journey by rail produces a fraction of the emissions of the same flight. Yet the revival is fragile. Sleeper carriages are expensive to build and there are very few left, so companies cannot expand quickly. Ticket prices are often higher than airfares, which puts off students and families. Passengers, for their part, praise the comfort and the chance to arrive in a city centre without a trip to a distant airport. Experts say that cheaper tickets and more carriages are essential if night trains are to become more than a niche.\""
+  },
+  {
+   "v": "Which sentence is too close to the original to be a good summary?",
+   "o": [
+    "Night trains are returning in Europe because of environmental concerns.",
+    "Night trains, once written off as relics, are making a comeback.",
+    "The rail revival is held back by cost and a lack of carriages.",
+    "Experts want cheaper tickets and more carriages."
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 1,
+   "u": "Letterlijk = geen samenvatting.",
+   "uo": [
+    "Koos je \"Night trains are returning in Europe because of...\"? Dan denk je dat dit te dicht bij de tekst ligt. De zin gebruikt andere woorden, en geeft de reden.",
+    "Klopt: de zin is letterlijk de eerste zin van de tekst.",
+    "Koos je \"The rail revival is held back by cost and a lack of...\"? Dan denk je dat dit te dicht bij de tekst ligt. De zin gebruikt eigen woorden, en vat een deel samen.",
+    "Koos je \"Experts want cheaper tickets and more carriages.\"? Dan denk je dat dit te dicht bij de tekst ligt. De zin is een korte herformulering, en geen kopie."
+   ],
+   "uh": "Welke zin is te letterlijk?",
+   "ctx": "Read this text: \"Night trains, once written off as relics, are making a comeback in Europe. Several railway companies have ordered new sleeper carriages, and routes that were closed a decade ago, such as the link between Brussels and Vienna, are being reopened. Environmental concern is the main driver: a journey by rail produces a fraction of the emissions of the same flight. Yet the revival is fragile. Sleeper carriages are expensive to build and there are very few left, so companies cannot expand quickly. Ticket prices are often higher than airfares, which puts off students and families. Passengers, for their part, praise the comfort and the chance to arrive in a city centre without a trip to a distant airport. Experts say that cheaper tickets and more carriages are essential if night trains are to become more than a niche.\""
+  },
+  {
+   "v": "A summary says: \"Night trains will certainly take over from planes soon.\" What is wrong with it?",
+   "o": [
+    "it is too short",
+    "it uses synonyms",
+    "it leaves out an example",
+    "it adds a new claim"
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 3,
+   "u": "Voeg niets toe. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"it is too short\"? Dan denk je dat de zin te kort is. De lengte is niet het probleem, maar de inhoud.",
+    "Koos je \"it uses synonyms\"? Dan denk je dat synoniemen het probleem zijn. Synoniemen horen bij een goede samenvatting, dus dat is niet de fout.",
+    "Koos je \"it leaves out an example\"? Dan denk je dat een weggelaten voorbeeld het probleem is. Voorbeelden mogen weg, dus dat is geen fout.",
+    "Klopt: de tekst zegt dat het herstel fragiel is en geen overname belooft."
+   ],
+   "uh": "Wat is er mis?",
+   "ctx": "Read this text: \"Night trains, once written off as relics, are making a comeback in Europe. Several railway companies have ordered new sleeper carriages, and routes that were closed a decade ago, such as the link between Brussels and Vienna, are being reopened. Environmental concern is the main driver: a journey by rail produces a fraction of the emissions of the same flight. Yet the revival is fragile. Sleeper carriages are expensive to build and there are very few left, so companies cannot expand quickly. Ticket prices are often higher than airfares, which puts off students and families. Passengers, for their part, praise the comfort and the chance to arrive in a city centre without a trip to a distant airport. Experts say that cheaper tickets and more carriages are essential if night trains are to become more than a niche.\""
+  },
+  {
+   "v": "Which words fit the gap between the Nobel Prize and the X-ray units?",
+   "o": [
+    "and later",
+    "because",
+    "although",
+    "so that"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 4,
+   "u": "Chronologie: and later. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: de röntgenwagens kwamen na 1911, dus later.",
+    "Koos je \"because\"? Dan denk je dat de prijs de reden voor de wagens was. Daar staat niets over, en een reden is niet bedoeld.",
+    "Koos je \"although\"? Dan denk je dat er een tegenstelling is. De zinnen staan niet tegenover elkaar, en although past dus niet.",
+    "Koos je \"so that\"? Dan denk je dat de prijs een doel was voor de wagens. Dat staat niet in de tekst, en de volgorde is chronologisch."
+   ],
+   "uh": "Welke woorden passen?",
+   "ctx": "Read this text: \"Marie Curie was born in Warsaw in 1867 and moved to Paris at the age of twenty-four to study physics. There she met Pierre Curie, whom she married in 1895. Together they discovered two new elements, polonium and radium, and in 1903 they shared the Nobel Prize in Physics with Henri Becquerel. After Pierre's death in 1906 she took over his professorship at the Sorbonne, becoming the first woman to teach there. In 1911 she received a second Nobel Prize, this time in Chemistry, for her work on radium. During the First World War she developed mobile X-ray units that were used near the front. She died in 1934 from an illness probably caused by her long exposure to radiation.\""
+  },
+  {
+   "v": "Which sentence gives the conclusion of the text that belongs in a summary?",
+   "o": [
+    "all companies should adopt the four-day week at once",
+    "the debate will go on",
+    "the trials have failed",
+    "healthcare cannot change at all"
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 0,
+   "u": "Debat gaat door. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"all companies should adopt the four-day week at once\"? Dan denk je dat de tekst om invoer bij alle bedrijven vraagt. Dat staat nergens, de tekst noemt een voortdurend debat.",
+    "Klopt: dit is de slotzin van de tekst die de uitkomst samenvat.",
+    "Koos je \"the trials have failed\"? Dan denk je dat de proeven mislukten. De resultaten waren juist opvallend goed, en niet mislukt.",
+    "Koos je \"healthcare cannot change at all\"? Dan denk je dat de zorg niet kan veranderen. De tekst noemt alleen dat het moeilijk te organiseren is, en niet onmogelijk."
+   ],
+   "uh": "Welke conclusie hoort erin?",
+   "ctx": "Read this text: \"Trials of a four-day working week, in which employees work thirty-two hours for the same pay, have produced striking results. In a British pilot involving sixty-one companies, most of them reported that productivity stayed the same or improved, and more than half of the staff said they felt less stressed. Absence through sickness fell by about a third, and few employees chose to leave. Sceptics point out that the participating companies volunteered, so they may have been the ones most likely to succeed. Moreover, in sectors such as healthcare, where someone must always be present, a shorter week is hard to organise without hiring more people. Supporters reply that the experiment shows what is possible when work is organised more carefully, for example by cutting unnecessary meetings. The debate is therefore likely to continue as more countries launch their own trials.\""
+  }
+ ],
+ "oe": [
+  {
+   "bron": "Examenstijl",
+   "ctx": "You read a text about trains: \"Night trains, once written off as relics, are making a comeback in Europe. Several railway companies have ordered new sleeper carriages, and routes that were closed a decade ago, such as the link between Brussels and Vienna, are being reopened. Environmental concern is the main driver: a journey by rail produces a fraction of the emissions of the same flight. Yet the revival is fragile. Sleeper carriages are expensive to build and there are very few left, so companies cannot expand quickly. Ticket prices are often higher than airfares, which puts off students and families. Passengers, for their part, praise the comfort and the chance to arrive in a city centre without a trip to a distant airport. Experts say that cheaper tickets and more carriages are essential if night trains are to become more than a niche.\" Your teacher asks you to summarise the text.",
+   "v": "Write a summary of the text in one sentence, in your own words.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "De terugkeer van nachttreinen (1p). De reden: het milieu (1p). De beperking: hoge prijzen of te weinig slaaprijtuigen (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "You read a text about trains: \"Night trains, once written off as relics, are making a comeback in Europe. Several railway companies have ordered new sleeper carriages, and routes that were closed a decade ago, such as the link between Brussels and Vienna, are being reopened. Environmental concern is the main driver: a journey by rail produces a fraction of the emissions of the same flight. Yet the revival is fragile. Sleeper carriages are expensive to build and there are very few left, so companies cannot expand quickly. Ticket prices are often higher than airfares, which puts off students and families. Passengers, for their part, praise the comfort and the chance to arrive in a city centre without a trip to a distant airport. Experts say that cheaper tickets and more carriages are essential if night trains are to become more than a niche.\" Your teacher asks you to paraphrase one sentence.",
+   "v": "Paraphrase the sentence \"Ticket prices are often higher than airfares\".",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Reizen met de trein is vaak duurder dan vliegen (1p). Andere woorden dan de tekst (1p). De betekenis blijft gelijk (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "You read a text about work: \"Trials of a four-day working week, in which employees work thirty-two hours for the same pay, have produced striking results. In a British pilot involving sixty-one companies, most of them reported that productivity stayed the same or improved, and more than half of the staff said they felt less stressed. Absence through sickness fell by about a third, and few employees chose to leave. Sceptics point out that the participating companies volunteered, so they may have been the ones most likely to succeed. Moreover, in sectors such as healthcare, where someone must always be present, a shorter week is hard to organise without hiring more people. Supporters reply that the experiment shows what is possible when work is organised more carefully, for example by cutting unnecessary meetings. The debate is therefore likely to continue as more countries launch their own trials.\" Your teacher asks about the structure of the text.",
+   "v": "Give the order of the ideas that belong in a summary of the text.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Eerst de resultaten van de proef (1p). Dan de kritiek van de twijfelaars en het weerwoord (1p). Tot slot de conclusie dat het debat doorgaat (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "You read a text about work: \"Trials of a four-day working week, in which employees work thirty-two hours for the same pay, have produced striking results. In a British pilot involving sixty-one companies, most of them reported that productivity stayed the same or improved, and more than half of the staff said they felt less stressed. Absence through sickness fell by about a third, and few employees chose to leave. Sceptics point out that the participating companies volunteered, so they may have been the ones most likely to succeed. Moreover, in sectors such as healthcare, where someone must always be present, a shorter week is hard to organise without hiring more people. Supporters reply that the experiment shows what is possible when work is organised more carefully, for example by cutting unnecessary meetings. The debate is therefore likely to continue as more countries launch their own trials.\" Your teacher asks about details.",
+   "v": "Name one detail that you can leave out and explain why.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Het aantal bedrijven of de dertig uur (1p). Het is een detail of bijzaak (1p). De kern verandert niet als je het weglaat (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "You read a short biography: \"Marie Curie was born in Warsaw in 1867 and moved to Paris at the age of twenty-four to study physics. There she met Pierre Curie, whom she married in 1895. Together they discovered two new elements, polonium and radium, and in 1903 they shared the Nobel Prize in Physics with Henri Becquerel. After Pierre's death in 1906 she took over his professorship at the Sorbonne, becoming the first woman to teach there. In 1911 she received a second Nobel Prize, this time in Chemistry, for her work on radium. During the First World War she developed mobile X-ray units that were used near the front. She died in 1934 from an illness probably caused by her long exposure to radiation.\" Your teacher asks you about her life.",
+   "v": "Write a short summary of her achievements in your own words.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Ontdekking van twee elementen of Nobelprijs (1p). Twee Nobelprijzen in verschillende vakken (1p). Röntgenwagens in de oorlog of eerste vrouwelijke hoogleraar (1p)."
+  }
+ ]
+}
