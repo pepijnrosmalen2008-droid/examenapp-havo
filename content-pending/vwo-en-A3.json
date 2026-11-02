@@ -1,0 +1,682 @@
+{
+ "id": "A3",
+ "lo": "en.A.3",
+ "gs": 2,
+ "naam": "De betekenis van woorden en zinsdelen in een Engelse tekst",
+ "beschrijving": "Je leert de betekenis van onbekende woorden af te leiden uit de context en uit woorddelen, letterlijk en figuurlijk taalgebruik te onderscheiden, verwijswoorden te herkennen en zinnen te parafraseren.",
+ "ceStatus": "CE",
+ "binas": "",
+ "val": "",
+ "onderwerpen": [
+  "Betekenis afleiden uit de context",
+  "Letterlijk en figuurlijk",
+  "Verwijswoorden herkennen",
+  "Parafraseren",
+  "Woorddelen en woordvorming"
+ ],
+ "sam": "Een onbekend woord leid je af uit de zin eromheen en uit woorddelen zoals un-, -able en -ity. Figuurlijke taal (frosty nods, stem the tide, a drop in the ocean) betekent iets anders dan de losse woorden. Verwijswoorden als it, they, this en the first verwijzen naar iets eerder in de tekst. Een parafrase zegt hetzelfde met andere woorden. Pas op voor valse vrienden zoals vacancies: dat zijn vacatures, geen vakanties.",
+ "begrippen": [
+  {
+   "t": "Context",
+   "d": "De zinnen rond een woord die de betekenis aangeven."
+  },
+  {
+   "t": "Letterlijk",
+   "d": "Precies wat de woorden zeggen."
+  },
+  {
+   "t": "Figuurlijk",
+   "d": "Een overdrachtelijke betekenis, zoals a drop in the ocean."
+  },
+  {
+   "t": "Idioom",
+   "d": "Een vaste uitdrukking met een eigen betekenis."
+  },
+  {
+   "t": "Verwijswoord",
+   "d": "Een woord als it of they dat naar iets eerder verwijst."
+  },
+  {
+   "t": "Parafrase",
+   "d": "Dezelfde betekenis in andere woorden."
+  },
+  {
+   "t": "Voorvoegsel",
+   "d": "Een deel voor het woord, zoals un-."
+  },
+  {
+   "t": "Achtervoegsel",
+   "d": "Een deel achter het woord, zoals -ity."
+  },
+  {
+   "t": "Woordfamilie",
+   "d": "Woorden met dezelfde stam, zoals rely en reliability."
+  },
+  {
+   "t": "Synoniem",
+   "d": "Een woord met bijna dezelfde betekenis."
+  },
+  {
+   "t": "Valse vriend",
+   "d": "Een woord dat op een Nederlands woord lijkt maar iets anders betekent."
+  },
+  {
+   "t": "Verwijzing",
+   "d": "De band tussen een verwijswoord en het woord waar het naar wijst."
+  }
+ ],
+ "sv": [
+  {
+   "v": "Which clue helps most to guess the meaning of an unknown word?",
+   "o": [
+    "the length of the word",
+    "the sentences around the word",
+    "the first letter of the word",
+    "the position of the word on the page"
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 0,
+   "u": "Context geeft de betekenis. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"the length of the word\"? Dan denk je dat de lengte van het woord iets zegt. De lengte zegt niets over de betekenis, en helpt dus niet bij raden.",
+    "Klopt: de context rond het woord laat zien welke betekenis past.",
+    "Koos je \"the first letter of the word\"? Dan denk je dat de beginletter de betekenis geeft. Een beginletter zegt niets, over wat het woord betekent.",
+    "Koos je \"the position of the word on the page\"? Dan denk je dat de plaats op de pagina de betekenis geeft. Die zegt niets over betekenis, en is geen aanwijzing."
+   ],
+   "uh": "Welke aanwijzing helpt het meest?"
+  },
+  {
+   "v": "What should you do first with an unknown word in an exam text?",
+   "o": [
+    "skip the whole paragraph",
+    "look up every difficult word",
+    "translate the word letter by letter",
+    "read the whole sentence around it"
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 0,
+   "u": "Eerst de zin lezen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"skip the whole paragraph\"? Dan denk je dat overslaan het beste is. Dan mis je de context, en ook het antwoord op een vraag.",
+    "Koos je \"look up every difficult word\"? Dan denk je dat opzoeken eerst moet. Op een examen is dat meestal niet mogelijk, en het kost veel tijd.",
+    "Koos je \"translate the word letter by letter\"? Dan denk je dat letter voor letter vertalen werkt. Dat geeft geen betekenis, en je moet naar de zin kijken.",
+    "Klopt: de zin eromheen laat vaak al zien wat het woord ongeveer betekent."
+   ],
+   "uh": "Wat doe je eerst?"
+  },
+  {
+   "v": "Which phrase is used figuratively?",
+   "o": [
+    "\"a drop in the ocean\"",
+    "\"a glass of water\"",
+    "\"a day at the beach\"",
+    "\"a cup of tea\""
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 1,
+   "u": "Figuurlijk = niet letterlijk. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: er is geen echte druppel, het betekent iets heel kleins.",
+    "Koos je \"a glass of water\"? Dan denk je dat dit figuurlijk is omdat water vaak als symbool dient. Hier is het gewoon een glas, en niets anders.",
+    "Koos je \"a day at the beach\"? Dan denk je dat dit figuurlijk is omdat het een mooie dag suggereert. De woorden betekenen precies wat ze zeggen, namelijk een dag op het strand.",
+    "Koos je \"a cup of tea\"? Dan denk je dat dit figuurlijk is omdat thee met rust wordt verbonden. Het is een gewone kop thee, zonder verborgen betekenis."
+   ],
+   "uh": "Welke uitdrukking is figuurlijk?"
+  },
+  {
+   "v": "Which meaning does the idiom \"a drop in the ocean\" have?",
+   "o": [
+    "a lot of water in the sea",
+    "a sad ending",
+    "far too little",
+    "a dangerous situation"
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 1,
+   "u": "Druppel in de oceaan = te weinig.",
+   "uo": [
+    "Koos je \"a lot of water in the sea\"? Dan denk je dat het letterlijk over water gaat. Het is een uitdrukking, en betekent iets heel kleins.",
+    "Koos je \"a sad ending\"? Dan denk je dat het over een triest einde gaat. Die betekenis bestaat niet, het gaat om de grootte.",
+    "Klopt: een druppel in de oceaan is veel te weinig voor wat nodig is.",
+    "Koos je \"a dangerous situation\"? Dan denk je dat het over gevaar gaat. Het gaat niet over gevaar, maar over te weinig."
+   ],
+   "uh": "Wat betekent de uitdrukking?"
+  },
+  {
+   "v": "Which kind of word refers back to something mentioned earlier?",
+   "o": [
+    "a number in the text",
+    "the title of the text",
+    "a pronoun such as \"it\"",
+    "a footnote at the bottom"
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 2,
+   "u": "Verwijswoord = it, they, this.",
+   "uo": [
+    "Koos je \"a number in the text\"? Dan denk je dat een getal terugverwijst. Een getal noemt een hoeveelheid, en verwijst niet naar iets eerder.",
+    "Koos je \"the title of the text\"? Dan denk je dat de titel terugverwijst. De titel staat vooraan, en verwijst naar de hele tekst.",
+    "Klopt: een verwijswoord als it of they verwijst naar iets eerder in de tekst.",
+    "Koos je \"a footnote at the bottom\"? Dan denk je dat een voetnoot terugverwijst. Een voetnoot geeft extra uitleg, en is geen verwijswoord."
+   ],
+   "uh": "Welk woord verwijst terug?"
+  },
+  {
+   "v": "Which description fits a paraphrase?",
+   "o": [
+    "the same meaning in other words",
+    "a word for word copy of the sentence",
+    "a shorter title for the text",
+    "an opinion about the text"
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 3,
+   "u": "Parafrase = zelfde betekenis. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: een parafrase zegt hetzelfde met andere woorden.",
+    "Koos je \"a word for word copy of the sentence\"? Dan denk je dat een kopie een parafrase is. Een kopie gebruikt dezelfde woorden, en dat is geen herformulering.",
+    "Koos je \"a shorter title for the text\"? Dan denk je dat een titel een parafrase is. Een titel noemt het onderwerp, en herformuleert geen zin.",
+    "Koos je \"an opinion about the text\"? Dan denk je dat een mening een parafrase is. Een mening zegt wat jij vindt, en niet wat er staat."
+   ],
+   "uh": "Wat is een parafrase?"
+  },
+  {
+   "v": "Which part of a word often changes its meaning into the opposite, as in \"unhappy\"?",
+   "o": [
+    "a suffix like \"-ness\"",
+    "a full stop at the end",
+    "a capital letter at the start",
+    "a prefix like \"un-\""
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 4,
+   "u": "Voorvoegsel un- = tegenovergesteld.",
+   "uo": [
+    "Koos je \"a suffix like -ness\"? Dan denk je dat een achtervoegsel het tegenovergestelde maakt. Een achtervoegsel verandert vaak de woordsoort, en niet de richting.",
+    "Koos je \"a full stop at the end\"? Dan denk je dat een punt de betekenis omkeert. Een punt is een leesteken, en geen woorddeel.",
+    "Koos je \"a capital letter at the start\"? Dan denk je dat een hoofdletter de betekenis omkeert. Dat verandert niets aan betekenis, en is geen woorddeel.",
+    "Klopt: een voorvoegsel als un- maakt vaak het tegenovergestelde."
+   ],
+   "uh": "Welk woorddeel keert de betekenis om?"
+  },
+  {
+   "v": "What does \"insular\" mean in \"The village had always been insular\"?",
+   "o": [
+    "surrounded by water",
+    "inward-looking",
+    "very rich and successful",
+    "very old and traditional"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 0,
+   "u": "Context: weinig reizen, wantrouwen.",
+   "uo": [
+    "Koos je \"surrounded by water\"? Dan denk je dat insular letterlijk eiland betekent. In de tekst gaat het om een dorp in een vallei, en om gedrag van de mensen.",
+    "Klopt: de context zegt dat de bewoners nauwelijks reisden en vreemden wantrouwden.",
+    "Koos je \"very rich and successful\"? Dan denk je dat insular rijk betekent. Dat staat niet in de context, de bewoners zijn vooral gesloten.",
+    "Koos je \"very old and traditional\"? Dan denk je dat insular oud betekent. De tekst beschrijft hoe mensen met vreemden omgaan, en niet hun leeftijd."
+   ],
+   "uh": "Wat betekent insular?",
+   "ctx": "Read this text: \"The village had always been insular. Its residents rarely travelled beyond the valley, and they regarded newcomers with a wariness that bordered on hostility. When a young doctor arrived to take over the old surgery, she was met with polite but frosty nods. Yet within a year she had earned their trust, not through grand gestures but through small acts of reliability: she answered every call, remembered every name, and never pretended to know more than she did. By the following spring, the same villagers who had once eyed her suspiciously were bringing her vegetables from their gardens, and the baker refused to let her pay for bread. The doctor, for her part, admitted that she had arrived expecting to be lonely, and had instead found a community that, once it let you in, held on tightly.\""
+  },
+  {
+   "v": "What is the meaning of \"wariness\" in this text?",
+   "o": [
+    "anger about the weather",
+    "curiosity about travel",
+    "joy at meeting newcomers",
+    "a careful attitude"
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 0,
+   "u": "Wariness = voorzichtigheid. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"anger about the weather\"? Dan denk je dat wariness boosheid over het weer is. Er staat niets over het weer, en het gaat om nieuwkomers.",
+    "Koos je \"curiosity about travel\"? Dan denk je dat wariness nieuwsgierigheid is. Nieuwsgierige mensen verwelkomen nieuwkomers, en dat gebeurt hier niet.",
+    "Koos je \"joy at meeting newcomers\"? Dan denk je dat wariness blijdschap is. De dokter krijgt koele begroetingen, dus dat is geen vreugde.",
+    "Klopt: wariness bordered on hostility beschrijft wantrouwen tegenover nieuwkomers."
+   ],
+   "uh": "Wat betekent wariness?",
+   "ctx": "Read this text: \"The village had always been insular. Its residents rarely travelled beyond the valley, and they regarded newcomers with a wariness that bordered on hostility. When a young doctor arrived to take over the old surgery, she was met with polite but frosty nods. Yet within a year she had earned their trust, not through grand gestures but through small acts of reliability: she answered every call, remembered every name, and never pretended to know more than she did. By the following spring, the same villagers who had once eyed her suspiciously were bringing her vegetables from their gardens, and the baker refused to let her pay for bread. The doctor, for her part, admitted that she had arrived expecting to be lonely, and had instead found a community that, once it let you in, held on tightly.\""
+  },
+  {
+   "v": "What do the words \"frosty nods\" suggest?",
+   "o": [
+    "a greeting in winter weather",
+    "a cold, unfriendly greeting",
+    "a very warm welcome",
+    "a loud shout from a distance"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 1,
+   "u": "Frosty = koel. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"a greeting in winter weather\"? Dan denk je dat frosty letterlijk vorst betekent. Het gaat om een groet van mensen, en niet om het weer.",
+    "Klopt: frosty is hier figuurlijk en beschrijft een kille begroeting.",
+    "Koos je \"a very warm welcome\"? Dan denk je dat het een hartelijke ontvangst is. Frosty is juist het tegenovergestelde, en past bij polite but frosty.",
+    "Koos je \"a loud shout from a distance\"? Dan denk je dat het een harde roep is. Nods zijn knikjes, en geen geluid."
+   ],
+   "uh": "Wat suggereert frosty nods?",
+   "ctx": "Read this text: \"The village had always been insular. Its residents rarely travelled beyond the valley, and they regarded newcomers with a wariness that bordered on hostility. When a young doctor arrived to take over the old surgery, she was met with polite but frosty nods. Yet within a year she had earned their trust, not through grand gestures but through small acts of reliability: she answered every call, remembered every name, and never pretended to know more than she did. By the following spring, the same villagers who had once eyed her suspiciously were bringing her vegetables from their gardens, and the baker refused to let her pay for bread. The doctor, for her part, admitted that she had arrived expecting to be lonely, and had instead found a community that, once it let you in, held on tightly.\""
+  },
+  {
+   "v": "Who is \"she\" in \"she answered every call\"?",
+   "o": [
+    "the old surgery",
+    "one of the villagers",
+    "the young doctor",
+    "the writer of the text"
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 2,
+   "u": "She = de arts. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"the old surgery\"? Dan denk je dat she het dichtstbijzijnde zelfstandig naamwoord is. De praktijk is een gebouw, en kan geen oproepen beantwoorden.",
+    "Koos je \"one of the villagers\"? Dan denk je dat she een dorpeling is. De dorpelingen worden als groep they genoemd, en niet als she.",
+    "Klopt: she verwijst naar de jonge arts die in het dorp aankwam.",
+    "Koos je \"the writer of the text\"? Dan denk je dat she de schrijver is. De schrijver verteld over de arts, en is niet de persoon die de oproepen beantwoordt."
+   ],
+   "uh": "Naar wie verwijst she?",
+   "ctx": "Read this text: \"The village had always been insular. Its residents rarely travelled beyond the valley, and they regarded newcomers with a wariness that bordered on hostility. When a young doctor arrived to take over the old surgery, she was met with polite but frosty nods. Yet within a year she had earned their trust, not through grand gestures but through small acts of reliability: she answered every call, remembered every name, and never pretended to know more than she did. By the following spring, the same villagers who had once eyed her suspiciously were bringing her vegetables from their gardens, and the baker refused to let her pay for bread. The doctor, for her part, admitted that she had arrived expecting to be lonely, and had instead found a community that, once it let you in, held on tightly.\""
+  },
+  {
+   "v": "Which sentence paraphrases \"earned their trust through small acts of reliability\"?",
+   "o": [
+    "She gained trust by being dependable in small ways, not by big displays.",
+    "She lost trust by making big promises.",
+    "She gained trust with expensive gifts.",
+    "She earned money by working small jobs."
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 3,
+   "u": "Parafrase: betrouwbaar in het klein.",
+   "uo": [
+    "Klopt: grand gestures zijn grote gebaren en small acts of reliability zijn kleine betrouwbare daden.",
+    "Koos je \"She lost trust by making big promises.\"? Dan denk je dat ze door grote beloften vertrouwen verloor. Er staat dat ze vertrouwen won, en dat gebeurde met kleine daden.",
+    "Koos je \"She gained trust with expensive gifts.\"? Dan denk je dat grote gebaren dure cadeaus zijn en dat ze die gaf. De tekst zegt juist not through grand gestures, dus dat deed ze niet.",
+    "Koos je \"She earned money by working small jobs.\"? Dan denk je dat trust over geld verdienen gaat. Het gaat om vertrouwen, en niet om inkomen."
+   ],
+   "uh": "Welke zin betekent hetzelfde?",
+   "ctx": "Read this text: \"The village had always been insular. Its residents rarely travelled beyond the valley, and they regarded newcomers with a wariness that bordered on hostility. When a young doctor arrived to take over the old surgery, she was met with polite but frosty nods. Yet within a year she had earned their trust, not through grand gestures but through small acts of reliability: she answered every call, remembered every name, and never pretended to know more than she did. By the following spring, the same villagers who had once eyed her suspiciously were bringing her vegetables from their gardens, and the baker refused to let her pay for bread. The doctor, for her part, admitted that she had arrived expecting to be lonely, and had instead found a community that, once it let you in, held on tightly.\""
+  },
+  {
+   "v": "What does \"soared\" mean in \"Rents have soared by almost forty per cent\"?",
+   "o": [
+    "risen very quickly",
+    "fallen slightly",
+    "stayed the same",
+    "been counted carefully"
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 0,
+   "u": "Soared = sterk gestegen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: soared betekent sterk gestegen, wat bij de problemen van jonge huurders past.",
+    "Koos je \"fallen slightly\"? Dan denk je dat soared dalen betekent. Dan zou het nachtmerrie geen reden zijn, en de context zegt dat huren stijgen.",
+    "Koos je \"stayed the same\"? Dan denk je dat soared niets verandert. Er staat dat de huren met veertig procent veranderden, dus ze bleven niet gelijk.",
+    "Koos je \"been counted carefully\"? Dan denk je dat soared tellen betekent. De tekst gaat over een stijging, niet over tellen."
+   ],
+   "uh": "Wat betekent soared?",
+   "ctx": "Read this text: \"For young people in the capital, finding an affordable flat has become a nightmare. Rents have soared by almost forty per cent in five years, and a single room in a shared house now costs more than a month's wage for many graduates. The council has promised to stem the tide of rising prices by building twenty thousand new homes, but critics call the plan a drop in the ocean. Developers argue that strict regulations make building slow and costly, while tenants' groups claim that landlords simply exploit the shortage. Meanwhile, many graduates are moving back in with their parents or leaving the city altogether, a trend that worries employers who struggle to fill vacancies. 'We are losing a generation of talent,' one hiring manager told us, 'and nobody seems to have a plan that works.'\""
+  },
+  {
+   "v": "What does \"a drop in the ocean\" mean in the text?",
+   "o": [
+    "a good start for the market",
+    "a plan that involves water",
+    "too small to solve it",
+    "a plan that is too expensive"
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 1,
+   "u": "Druppel in de oceaan = te klein.",
+   "uo": [
+    "Koos je \"a good start for the market\"? Dan denk je dat het een goed begin is. Critici gebruiken de uitdrukking juist negatief, en vinden het te weinig.",
+    "Koos je \"a plan that involves water\"? Dan denk je dat het plan over water gaat. Het is een uitdrukking, en geen plan met water.",
+    "Klopt: critici vinden twintigduizend huizen veel te weinig tegen de woningnood.",
+    "Koos je \"a plan that is too expensive\"? Dan denk je dat het plan te duur is. De uitdrukking gaat over de grootte, en niet over de prijs."
+   ],
+   "uh": "Wat betekent de uitdrukking hier?",
+   "ctx": "Read this text: \"For young people in the capital, finding an affordable flat has become a nightmare. Rents have soared by almost forty per cent in five years, and a single room in a shared house now costs more than a month's wage for many graduates. The council has promised to stem the tide of rising prices by building twenty thousand new homes, but critics call the plan a drop in the ocean. Developers argue that strict regulations make building slow and costly, while tenants' groups claim that landlords simply exploit the shortage. Meanwhile, many graduates are moving back in with their parents or leaving the city altogether, a trend that worries employers who struggle to fill vacancies. 'We are losing a generation of talent,' one hiring manager told us, 'and nobody seems to have a plan that works.'\""
+  },
+  {
+   "v": "What does \"a trend\" in \"a trend that worries employers\" refer to?",
+   "o": [
+    "rents rising by forty per cent",
+    "graduates moving away",
+    "the plan of the council",
+    "strict regulations for builders"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 2,
+   "u": "A trend verwijst naar de vorige zin.",
+   "uo": [
+    "Koos je \"rents rising by forty per cent\"? Dan denk je dat de trend de stijging van huren is. Die staat eerder in de tekst, en de werkgevers maken zich zorgen over het vertrek.",
+    "Klopt: a trend verwijst naar de zin ervoor over afgestudeerden die terugverhuizen of vertrekken.",
+    "Koos je \"the plan of the council\"? Dan denk je dat de trend het plan is. Het plan is een belofte, en geen ontwikkeling.",
+    "Koos je \"strict regulations for builders\"? Dan denk je dat de trend de regels zijn. Regels zijn een argument van ontwikkelaars, en geen ontwikkeling bij afgestudeerden."
+   ],
+   "uh": "Waar verwijst a trend naar?",
+   "ctx": "Read this text: \"For young people in the capital, finding an affordable flat has become a nightmare. Rents have soared by almost forty per cent in five years, and a single room in a shared house now costs more than a month's wage for many graduates. The council has promised to stem the tide of rising prices by building twenty thousand new homes, but critics call the plan a drop in the ocean. Developers argue that strict regulations make building slow and costly, while tenants' groups claim that landlords simply exploit the shortage. Meanwhile, many graduates are moving back in with their parents or leaving the city altogether, a trend that worries employers who struggle to fill vacancies. 'We are losing a generation of talent,' one hiring manager told us, 'and nobody seems to have a plan that works.'\""
+  },
+  {
+   "v": "What are \"vacancies\" in the text?",
+   "o": [
+    "holidays from work",
+    "rooms in shared houses",
+    "empty rental flats",
+    "unfilled jobs"
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 0,
+   "u": "Vacancies = open vacatures. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"holidays from work\"? Dan denk je dat vacancies vakanties zijn. Het woord lijkt op vacation, maar de werkgevers zoeken mensen.",
+    "Koos je \"rooms in shared houses\"? Dan denk je dat vacancies kamers zijn. Het gaat om werkgevers, en niet om woningen.",
+    "Koos je \"empty rental flats\"? Dan denk je dat vacancies lege huurwoningen zijn. Fill vacancies gaat over personeel, en niet over woningen.",
+    "Klopt: employers who struggle to fill vacancies zoeken mensen voor open banen."
+   ],
+   "uh": "Wat zijn vacancies?",
+   "ctx": "Read this text: \"For young people in the capital, finding an affordable flat has become a nightmare. Rents have soared by almost forty per cent in five years, and a single room in a shared house now costs more than a month's wage for many graduates. The council has promised to stem the tide of rising prices by building twenty thousand new homes, but critics call the plan a drop in the ocean. Developers argue that strict regulations make building slow and costly, while tenants' groups claim that landlords simply exploit the shortage. Meanwhile, many graduates are moving back in with their parents or leaving the city altogether, a trend that worries employers who struggle to fill vacancies. 'We are losing a generation of talent,' one hiring manager told us, 'and nobody seems to have a plan that works.'\""
+  },
+  {
+   "v": "What does \"They\" refer to in \"They had expected that students who studied alone would perform better\"?",
+   "o": [
+    "the teachers",
+    "the authors",
+    "the students",
+    "the three countries"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 2,
+   "u": "They = de onderzoekers. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"the teachers\"? Dan denk je dat they de leraren zijn. De leraren komen later voor, en spreken over een vermoeden.",
+    "Klopt: de zin ervoor noemt its authors en they verwijst daarnaar.",
+    "Koos je \"the students\"? Dan denk je dat they de leerlingen zijn. De leerlingen staan in dezelfde zin als students, en they verwijst naar de verwachting van de onderzoekers.",
+    "Koos je \"the three countries\"? Dan denk je dat they de landen zijn. Landen verwachten niets, en het zijn de onderzoekers."
+   ],
+   "uh": "Naar wie verwijst they?",
+   "ctx": "Read this text: \"The experiment, which was repeated in three countries, produced results that surprised even its authors. They had expected that students who studied alone would perform better, since fewer distractions would allow deeper concentration. This turned out to be only partly true. Students who worked alone did indeed finish tasks faster, but those who worked in pairs remembered the material longer and could explain it to others. Those who tried both approaches found the first quicker and the second more rewarding. It is a finding that teachers have long suspected, but which until now lacked firm evidence. The authors caution, however, that it applies mainly to complex tasks; for simple ones, working alone seemed to make no difference.\""
+  },
+  {
+   "v": "What does \"This\" refer to in \"This turned out to be only partly true\"?",
+   "o": [
+    "the expectation about studying alone",
+    "the fact that the experiment was repeated",
+    "the fact that students found it hard",
+    "the finding that teachers suspected"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 2,
+   "u": "This = de vorige verwachting. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: this verwijst naar de verwachting uit de zin ervoor, die maar gedeeltelijk bleek te kloppen.",
+    "Koos je \"the fact that the experiment was repeated\"? Dan denk je dat this naar de herhaling verwijst. Dat is een feit dat al bewezen is, en niet iets wat maar gedeeltelijk waar is.",
+    "Koos je \"the fact that students found it hard\"? Dan denk je dat this naar moeilijkheid verwijst. Die staat niet in de tekst, en kan niet gedeeltelijk waar zijn.",
+    "Koos je \"the finding that teachers suspected\"? Dan denk je dat this naar het vermoeden van leraren verwijst. Dat komt later in de tekst, en staat niet in de zin ervoor."
+   ],
+   "uh": "Waar verwijst this naar?",
+   "ctx": "Read this text: \"The experiment, which was repeated in three countries, produced results that surprised even its authors. They had expected that students who studied alone would perform better, since fewer distractions would allow deeper concentration. This turned out to be only partly true. Students who worked alone did indeed finish tasks faster, but those who worked in pairs remembered the material longer and could explain it to others. Those who tried both approaches found the first quicker and the second more rewarding. It is a finding that teachers have long suspected, but which until now lacked firm evidence. The authors caution, however, that it applies mainly to complex tasks; for simple ones, working alone seemed to make no difference.\""
+  },
+  {
+   "v": "What do \"the first\" and \"the second\" refer to in \"found the first quicker and the second more rewarding\"?",
+   "o": [
+    "the two countries",
+    "the first and second experiment",
+    "the authors and the teachers",
+    "alone and in pairs"
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 2,
+   "u": "Eerste en tweede aanpak. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"the two countries\"? Dan denk je dat het om twee landen gaat. Er worden drie landen genoemd, en de aanpakken zijn het onderwerp.",
+    "Koos je \"the first and second experiment\"? Dan denk je dat het om twee experimenten gaat. Er is één experiment herhaald, en het gaat om aanpakken.",
+    "Koos je \"the authors and the teachers\"? Dan denk je dat het om twee groepen mensen gaat. Het gaat om twee manieren van werken, en niet om personen.",
+    "Klopt: de eerste aanpak is alleen werken en de tweede is werken in tweetallen."
+   ],
+   "uh": "Waar verwijzen deze woorden naar?",
+   "ctx": "Read this text: \"The experiment, which was repeated in three countries, produced results that surprised even its authors. They had expected that students who studied alone would perform better, since fewer distractions would allow deeper concentration. This turned out to be only partly true. Students who worked alone did indeed finish tasks faster, but those who worked in pairs remembered the material longer and could explain it to others. Those who tried both approaches found the first quicker and the second more rewarding. It is a finding that teachers have long suspected, but which until now lacked firm evidence. The authors caution, however, that it applies mainly to complex tasks; for simple ones, working alone seemed to make no difference.\""
+  },
+  {
+   "v": "Which sentence best paraphrases \"The authors caution that it applies mainly to complex tasks\"?",
+   "o": [
+    "The authors say that the result is true for all tasks.",
+    "The authors doubt that complex tasks exist.",
+    "The authors warn it mostly holds for hard tasks.",
+    "The authors prefer to give simple tasks."
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 3,
+   "u": "Caution = waarschuwen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"The authors say that the result is true for all...\"? Dan denk je dat het voor alle taken geldt. Er staat mainly, en dat betekent vooral voor ingewikkelde taken.",
+    "Koos je \"The authors doubt that complex tasks exist.\"? Dan denk je dat de auteurs twijfelen. Ze waarschuwen alleen, en ontkennen niet dat zulke taken bestaan.",
+    "Klopt: caution betekent waarschuwen en complex betekent moeilijk of ingewikkeld.",
+    "Koos je \"The authors prefer to give simple tasks.\"? Dan denk je dat de auteurs simpele taken kiezen. Dat staat niet in de zin, en het gaat om waar het resultaat geldt."
+   ],
+   "uh": "Welke zin betekent hetzelfde?",
+   "ctx": "Read this text: \"The experiment, which was repeated in three countries, produced results that surprised even its authors. They had expected that students who studied alone would perform better, since fewer distractions would allow deeper concentration. This turned out to be only partly true. Students who worked alone did indeed finish tasks faster, but those who worked in pairs remembered the material longer and could explain it to others. Those who tried both approaches found the first quicker and the second more rewarding. It is a finding that teachers have long suspected, but which until now lacked firm evidence. The authors caution, however, that it applies mainly to complex tasks; for simple ones, working alone seemed to make no difference.\""
+  },
+  {
+   "v": "What does \"lacked firm evidence\" mean?",
+   "o": [
+    "had a lot of proof",
+    "had unclear teachers",
+    "had no solid proof",
+    "needed more students"
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 0,
+   "u": "Lacked = ontbrak. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"had a lot of proof\"? Dan denk je dat lacked veel hebben betekent. Lacked betekent juist ontbreken, en dat past bij until now.",
+    "Koos je \"had unclear teachers\"? Dan denk je dat het over leraren gaat. Het gaat om bewijs voor de bevinding, en niet om leraren.",
+    "Klopt: lacked betekent ontbrak en firm evidence is stevig bewijs.",
+    "Koos je \"needed more students\"? Dan denk je dat er meer leerlingen nodig waren. Het gaat om bewijs, en niet om aantallen."
+   ],
+   "uh": "Wat betekent lacked firm evidence?",
+   "ctx": "Read this text: \"The experiment, which was repeated in three countries, produced results that surprised even its authors. They had expected that students who studied alone would perform better, since fewer distractions would allow deeper concentration. This turned out to be only partly true. Students who worked alone did indeed finish tasks faster, but those who worked in pairs remembered the material longer and could explain it to others. Those who tried both approaches found the first quicker and the second more rewarding. It is a finding that teachers have long suspected, but which until now lacked firm evidence. The authors caution, however, that it applies mainly to complex tasks; for simple ones, working alone seemed to make no difference.\""
+  },
+  {
+   "v": "Which phrase is used figuratively?",
+   "o": [
+    "\"twenty thousand new homes\"",
+    "\"almost forty per cent\"",
+    "\"in five years\"",
+    "\"stem the tide\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 1,
+   "u": "Stem the tide = tegenhouden. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"twenty thousand new homes\"? Dan denk je dat dit figuurlijk is. Het is een letterlijk aantal, en het betekent wat er staat.",
+    "Koos je \"almost forty per cent\"? Dan denk je dat dit figuurlijk is. Het is een percentage, en het betekent wat er staat.",
+    "Koos je \"in five years\"? Dan denk je dat dit figuurlijk is. Het is een tijdsduur, en het betekent wat er staat.",
+    "Klopt: er is geen echt getij, het betekent de stijging tegenhouden."
+   ],
+   "uh": "Welke uitdrukking is figuurlijk?",
+   "ctx": "Read this text: \"For young people in the capital, finding an affordable flat has become a nightmare. Rents have soared by almost forty per cent in five years, and a single room in a shared house now costs more than a month's wage for many graduates. The council has promised to stem the tide of rising prices by building twenty thousand new homes, but critics call the plan a drop in the ocean. Developers argue that strict regulations make building slow and costly, while tenants' groups claim that landlords simply exploit the shortage. Meanwhile, many graduates are moving back in with their parents or leaving the city altogether, a trend that worries employers who struggle to fill vacancies. 'We are losing a generation of talent,' one hiring manager told us, 'and nobody seems to have a plan that works.'\""
+  },
+  {
+   "v": "What does \"exploit\" mean when tenants' groups say that landlords \"exploit the shortage\"?",
+   "o": [
+    "misuse for own gain",
+    "explore with curiosity",
+    "repair carefully",
+    "share fairly"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 0,
+   "u": "Exploit = misbruik maken. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: exploit betekent hier misbruik maken van, voor eigen voordeel.",
+    "Koos je \"explore with curiosity\"? Dan denk je dat exploit verkennen is. Het lijkt op explore, maar het gaat om oneerlijk gebruik.",
+    "Koos je \"repair carefully\"? Dan denk je dat exploit repareren betekent. Dat past niet bij een tekort, en het gaat om misbruik.",
+    "Koos je \"share fairly\"? Dan denk je dat exploit eerlijk delen betekent. Dat is het tegenovergestelde, van misbruik maken."
+   ],
+   "uh": "Wat betekent exploit?",
+   "ctx": "Read this text: \"For young people in the capital, finding an affordable flat has become a nightmare. Rents have soared by almost forty per cent in five years, and a single room in a shared house now costs more than a month's wage for many graduates. The council has promised to stem the tide of rising prices by building twenty thousand new homes, but critics call the plan a drop in the ocean. Developers argue that strict regulations make building slow and costly, while tenants' groups claim that landlords simply exploit the shortage. Meanwhile, many graduates are moving back in with their parents or leaving the city altogether, a trend that worries employers who struggle to fill vacancies. 'We are losing a generation of talent,' one hiring manager told us, 'and nobody seems to have a plan that works.'\""
+  },
+  {
+   "v": "Which meaning of \"reliability\" follows from its word parts (rely, -able, -ity)?",
+   "o": [
+    "the ability to read quickly",
+    "being someone you can rely on",
+    "the quality of being religious",
+    "the habit of telling stories"
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 4,
+   "u": "Rely + able + ity = betrouwbaarheid.",
+   "uo": [
+    "Koos je \"the ability to read quickly\"? Dan denk je dat reliability met lezen te maken heeft. Het woord komt van rely, en niet van read.",
+    "Klopt: rely, -able en -ity geven samen de eigenschap dat je op iemand kunt vertrouwen.",
+    "Koos je \"the quality of being religious\"? Dan denk je dat reliability met religie te maken heeft. Het woord lijkt op religion, maar het komt van rely.",
+    "Koos je \"the habit of telling stories\"? Dan denk je dat reliability met verhalen te maken heeft. Dat staat niet in de woorddelen, en het gaat om betrouwbaarheid."
+   ],
+   "uh": "Welke betekenis volgt uit het woord?",
+   "ctx": "Read this text: \"The village had always been insular. Its residents rarely travelled beyond the valley, and they regarded newcomers with a wariness that bordered on hostility. When a young doctor arrived to take over the old surgery, she was met with polite but frosty nods. Yet within a year she had earned their trust, not through grand gestures but through small acts of reliability: she answered every call, remembered every name, and never pretended to know more than she did. By the following spring, the same villagers who had once eyed her suspiciously were bringing her vegetables from their gardens, and the baker refused to let her pay for bread. The doctor, for her part, admitted that she had arrived expecting to be lonely, and had instead found a community that, once it let you in, held on tightly.\""
+  },
+  {
+   "v": "In \"unaffordable\" the prefix \"un-\" shows that the flat is...",
+   "o": [
+    "very cheap",
+    "very old",
+    "far away from the centre",
+    "too costly to pay"
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 4,
+   "u": "Un- keert affordable om. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"very cheap\"? Dan denk je dat un- goedkoop betekent. Un- keert de betekenis om, en onbetaalbaar is duur.",
+    "Koos je \"very old\"? Dan denk je dat un- oud betekent. Dat zegt het voorvoegsel niet, het gaat om de prijs.",
+    "Koos je \"far away from the centre\"? Dan denk je dat un- ver weg betekent. Dat staat niet in het woord, het gaat om de prijs.",
+    "Klopt: affordable is betaalbaar en un- maakt het tegenovergestelde, dus onbetaalbaar."
+   ],
+   "uh": "Wat laat un- zien?",
+   "ctx": "Read this text: \"For young people in the capital, finding an affordable flat has become a nightmare. Rents have soared by almost forty per cent in five years, and a single room in a shared house now costs more than a month's wage for many graduates. The council has promised to stem the tide of rising prices by building twenty thousand new homes, but critics call the plan a drop in the ocean. Developers argue that strict regulations make building slow and costly, while tenants' groups claim that landlords simply exploit the shortage. Meanwhile, many graduates are moving back in with their parents or leaving the city altogether, a trend that worries employers who struggle to fill vacancies. 'We are losing a generation of talent,' one hiring manager told us, 'and nobody seems to have a plan that works.'\""
+  },
+  {
+   "v": "What does \"held on tightly\" suggest in the last sentence?",
+   "o": [
+    "staying loyal to those it accepts",
+    "the villagers kept the doctor locked up",
+    "the community pushed newcomers away",
+    "the doctor held a rope"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 1,
+   "u": "Held on tightly = trouw blijven.",
+   "uo": [
+    "Klopt: held on tightly is figuurlijk en betekent trouw blijven aan wie erbij hoort.",
+    "Koos je \"the villagers kept the doctor locked up\"? Dan denk je dat de dorpelingen haar opsloten. Het is figuurlijk, en gaat over trouw.",
+    "Koos je \"the community pushed newcomers away\"? Dan denk je dat de gemeenschap nieuwkomers wegduwt. Na het binnenlaten houdt ze juist vast, dus dat is het tegenovergestelde.",
+    "Koos je \"the doctor held a rope\"? Dan denk je dat het letterlijk is. Er wordt geen touw genoemd, en het gaat om de gemeenschap."
+   ],
+   "uh": "Wat suggereert de zin?",
+   "ctx": "Read this text: \"The village had always been insular. Its residents rarely travelled beyond the valley, and they regarded newcomers with a wariness that bordered on hostility. When a young doctor arrived to take over the old surgery, she was met with polite but frosty nods. Yet within a year she had earned their trust, not through grand gestures but through small acts of reliability: she answered every call, remembered every name, and never pretended to know more than she did. By the following spring, the same villagers who had once eyed her suspiciously were bringing her vegetables from their gardens, and the baker refused to let her pay for bread. The doctor, for her part, admitted that she had arrived expecting to be lonely, and had instead found a community that, once it let you in, held on tightly.\""
+  },
+  {
+   "v": "Which sentence from the text shows that the villagers changed their attitude?",
+   "o": [
+    "\"The village had always been insular.\"",
+    "\"the baker refused to let her pay for bread\"",
+    "\"a young doctor arrived to take over the old surgery\"",
+    "\"she answered every call\""
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 3,
+   "u": "Bakker weigert betaling. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"The village had always been insular.\"? Dan denk je dat deze zin de verandering laat zien. Het is de begintoestand, dus juist het oude beeld.",
+    "Klopt: de bakker weigert betaling, wat laat zien dat ze nu welkom is.",
+    "Koos je \"a young doctor arrived to take over the old surgery\"? Dan denk je dat deze zin de verandering laat zien. Het is de aanleiding, en geen verandering van de dorpelingen.",
+    "Koos je \"she answered every call\"? Dan denk je dat deze zin de verandering van de dorpelingen laat zien. Het beschrijft wat de arts doet, en niet hoe zij reageren."
+   ],
+   "uh": "Welke zin toont de verandering?",
+   "ctx": "Read this text: \"The village had always been insular. Its residents rarely travelled beyond the valley, and they regarded newcomers with a wariness that bordered on hostility. When a young doctor arrived to take over the old surgery, she was met with polite but frosty nods. Yet within a year she had earned their trust, not through grand gestures but through small acts of reliability: she answered every call, remembered every name, and never pretended to know more than she did. By the following spring, the same villagers who had once eyed her suspiciously were bringing her vegetables from their gardens, and the baker refused to let her pay for bread. The doctor, for her part, admitted that she had arrived expecting to be lonely, and had instead found a community that, once it let you in, held on tightly.\""
+  }
+ ],
+ "oe": [
+  {
+   "bron": "Examenstijl",
+   "ctx": "You read a text about a village: \"The village had always been insular. Its residents rarely travelled beyond the valley, and they regarded newcomers with a wariness that bordered on hostility. When a young doctor arrived to take over the old surgery, she was met with polite but frosty nods. Yet within a year she had earned their trust, not through grand gestures but through small acts of reliability: she answered every call, remembered every name, and never pretended to know more than she did. By the following spring, the same villagers who had once eyed her suspiciously were bringing her vegetables from their gardens, and the baker refused to let her pay for bread. The doctor, for her part, admitted that she had arrived expecting to be lonely, and had instead found a community that, once it let you in, held on tightly.\" Your teacher asks about some words in the text.",
+   "v": "Explain what \"insular\" means in the text and give a clue from the context.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Insular betekent gesloten of naar binnen gekeerd (1p). Een aanwijzing: de bewoners reisden zelden of bekeken nieuwkomers met wantrouwen (1p). Het woord betekent hier niet omringd door water (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "You read a text about housing: \"For young people in the capital, finding an affordable flat has become a nightmare. Rents have soared by almost forty per cent in five years, and a single room in a shared house now costs more than a month's wage for many graduates. The council has promised to stem the tide of rising prices by building twenty thousand new homes, but critics call the plan a drop in the ocean. Developers argue that strict regulations make building slow and costly, while tenants' groups claim that landlords simply exploit the shortage. Meanwhile, many graduates are moving back in with their parents or leaving the city altogether, a trend that worries employers who struggle to fill vacancies. 'We are losing a generation of talent,' one hiring manager told us, 'and nobody seems to have a plan that works.'\" Your teacher asks you about figurative language.",
+   "v": "Explain what \"a drop in the ocean\" means here and why it is not literal.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Het plan is veel te klein voor het probleem (1p). Er is geen echte druppel of oceaan, het is figuurlijk (1p). De critici zijn negatief over de twintigduizend huizen (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "You read a text about an experiment: \"The experiment, which was repeated in three countries, produced results that surprised even its authors. They had expected that students who studied alone would perform better, since fewer distractions would allow deeper concentration. This turned out to be only partly true. Students who worked alone did indeed finish tasks faster, but those who worked in pairs remembered the material longer and could explain it to others. Those who tried both approaches found the first quicker and the second more rewarding. It is a finding that teachers have long suspected, but which until now lacked firm evidence. The authors caution, however, that it applies mainly to complex tasks; for simple ones, working alone seemed to make no difference.\" Your teacher asks about the references in the text.",
+   "v": "Say what \"They\" and \"This\" refer to in the text.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "They verwijst naar de auteurs of onderzoekers (1p). This verwijst naar de verwachting dat leerlingen alleen beter presteren (1p). Het wordt gebaseerd op de zin ervoor (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "You read a text about an experiment: \"The experiment, which was repeated in three countries, produced results that surprised even its authors. They had expected that students who studied alone would perform better, since fewer distractions would allow deeper concentration. This turned out to be only partly true. Students who worked alone did indeed finish tasks faster, but those who worked in pairs remembered the material longer and could explain it to others. Those who tried both approaches found the first quicker and the second more rewarding. It is a finding that teachers have long suspected, but which until now lacked firm evidence. The authors caution, however, that it applies mainly to complex tasks; for simple ones, working alone seemed to make no difference.\" Your teacher asks you to rewrite a sentence.",
+   "v": "Paraphrase the sentence \"The authors caution that it applies mainly to complex tasks\".",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "De onderzoekers waarschuwen of zeggen voorzichtig (1p). Het geldt vooral of voornamelijk (1p). Voor moeilijke of ingewikkelde taken (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "You read a text about a village: \"The village had always been insular. Its residents rarely travelled beyond the valley, and they regarded newcomers with a wariness that bordered on hostility. When a young doctor arrived to take over the old surgery, she was met with polite but frosty nods. Yet within a year she had earned their trust, not through grand gestures but through small acts of reliability: she answered every call, remembered every name, and never pretended to know more than she did. By the following spring, the same villagers who had once eyed her suspiciously were bringing her vegetables from their gardens, and the baker refused to let her pay for bread. The doctor, for her part, admitted that she had arrived expecting to be lonely, and had instead found a community that, once it let you in, held on tightly.\" Your teacher asks about the word \"reliability\".",
+   "v": "Explain the meaning of \"reliability\" using its word parts.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Rely betekent op iemand kunnen vertrouwen (1p). -able en -ity vormen de eigenschap betrouwbaar te zijn (1p). Reliability betekent betrouwbaarheid (1p)."
+  }
+ ]
+}
