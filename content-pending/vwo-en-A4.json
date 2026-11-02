@@ -1,0 +1,682 @@
+{
+ "id": "A4",
+ "lo": "en.A.4",
+ "gs": 2,
+ "naam": "Relaties tussen tekstdelen in een Engelse tekst herkennen",
+ "beschrijving": "Je leert aan signaalwoorden en tekststructuur te zien hoe zinnen en alinea's samenhangen: oorzaak en gevolg, tegenstelling en toegeving, voorbeeld, conclusie en samenvatting.",
+ "ceStatus": "CE",
+ "binas": "",
+ "val": "",
+ "onderwerpen": [
+  "Signaalwoorden en relaties",
+  "Oorzaak en gevolg",
+  "Tegenstelling en toegeving",
+  "Voorbeeld, conclusie en samenvatting",
+  "Tekststructuur en functie van een tekstdeel"
+ ],
+ "sam": "Signaalwoorden laten zien hoe tekstdelen samenhangen. Because geeft een oorzaak, as a result en consequently een gevolg. However, yet en on the other hand geven een tegenstelling, although een toegeving. For instance leidt een voorbeeld in, therefore een conclusie en in short een samenvatting. Zo herken je ook de structuur van een tekst: probleem en oplossing, twee standpunten of oorzaak en gevolg, en de functie van elke zin.",
+ "begrippen": [
+  {
+   "t": "Signaalwoord",
+   "d": "Een woord dat de relatie tussen tekstdelen aangeeft."
+  },
+  {
+   "t": "Oorzaak",
+   "d": "De reden waarom iets gebeurt, met because."
+  },
+  {
+   "t": "Gevolg",
+   "d": "Wat uit iets volgt, met as a result."
+  },
+  {
+   "t": "Tegenstelling",
+   "d": "Twee punten die tegenover elkaar staan, met however."
+  },
+  {
+   "t": "Toegeving",
+   "d": "Een beperking van je punt, met although."
+  },
+  {
+   "t": "Voorbeeld",
+   "d": "Een geval dat een punt illustreert, met for instance."
+  },
+  {
+   "t": "Conclusie",
+   "d": "De slotsom, met therefore."
+  },
+  {
+   "t": "Samenvatting",
+   "d": "Een korte herhaling, met in short."
+  },
+  {
+   "t": "Probleem en oplossing",
+   "d": "Een structuur waarin eerst een moeilijkheid en daarna een aanpak staat."
+  },
+  {
+   "t": "Standpunt",
+   "d": "Een mening die iemand verdedigt."
+  },
+  {
+   "t": "Weerwoord",
+   "d": "Een antwoord op kritiek, vaak met yet."
+  },
+  {
+   "t": "Functie",
+   "d": "De taak van een zin of alinea in de tekst."
+  }
+ ],
+ "sv": [
+  {
+   "v": "Which relation does \"because\" express?",
+   "o": [
+    "result of the other part",
+    "cause",
+    "contrast with something",
+    "example of something"
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 0,
+   "u": "Because = oorzaak. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"result of the other part\"? Dan denk je dat because een gevolg aangeeft. Het geeft juist de reden, en het gevolg staat in het andere zinsdeel.",
+    "Klopt: because geeft de reden of oorzaak van iets.",
+    "Koos je \"contrast with something\"? Dan denk je dat because een tegenstelling aangeeft. Het verbindt een reden met een gevolg, en zet niets tegenover elkaar.",
+    "Koos je \"example of something\"? Dan denk je dat because een voorbeeld inleidt. Het geeft een reden, en illustreert geen punt."
+   ],
+   "uh": "Welke relatie past?"
+  },
+  {
+   "v": "Which words express a result?",
+   "o": [
+    "\"for example\" and \"for instance\"",
+    "\"on the other hand\" and \"yet\"",
+    "\"in addition\" and \"moreover\"",
+    "\"as a result\" and \"consequently\""
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 1,
+   "u": "As a result = gevolg. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"for example and for instance\"? Dan denk je dat deze woorden een gevolg aangeven. Ze leiden een voorbeeld in, en geven geen resultaat.",
+    "Koos je \"on the other hand and yet\"? Dan denk je dat deze woorden een gevolg aangeven. Ze zetten iets tegenover het vorige, en geven geen gevolg.",
+    "Koos je \"in addition and moreover\"? Dan denk je dat deze woorden een gevolg aangeven. Ze voegen informatie toe, en geven geen gevolg.",
+    "Klopt: deze woorden geven het gevolg van iets aan."
+   ],
+   "uh": "Welke woorden geven een gevolg?"
+  },
+  {
+   "v": "Which words express a contrast?",
+   "o": [
+    "\"on the other hand\" and \"whereas\"",
+    "\"therefore\" and \"so\"",
+    "\"for instance\" and \"such as\"",
+    "\"in short\" and \"in conclusion\""
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 2,
+   "u": "On the other hand = tegenstelling.",
+   "uo": [
+    "Klopt: deze woorden zetten twee punten tegenover elkaar.",
+    "Koos je \"therefore and so\"? Dan denk je dat deze woorden een tegenstelling aangeven. Ze geven een gevolg aan, en geen tegenstelling.",
+    "Koos je \"for instance and such as\"? Dan denk je dat deze woorden een tegenstelling aangeven. Ze leiden een voorbeeld in, en zetten niets tegenover elkaar.",
+    "Koos je \"in short and in conclusion\"? Dan denk je dat deze woorden een tegenstelling aangeven. Ze leiden een samenvatting in, en zijn geen tegenstelling."
+   ],
+   "uh": "Welke woorden geven een tegenstelling?"
+  },
+  {
+   "v": "Which relation does \"although\" introduce?",
+   "o": [
+    "a cause of the result",
+    "a result of the cause",
+    "a concession",
+    "an example of a point"
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 2,
+   "u": "Although = toegeving. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"a cause of the result\"? Dan denk je dat although een reden geeft omdat het twee zinsdelen verbindt. Het geeft een toegeving, en geen oorzaak.",
+    "Koos je \"a result of the cause\"? Dan denk je dat although een uitkomst aangeeft omdat het na de hoofdzaak komt. Het beperkt het punt, en geeft geen gevolg.",
+    "Klopt: although geeft een toegeving die iets afzwakt zonder de hoofdzaak te veranderen.",
+    "Koos je \"an example of a point\"? Dan denk je dat although iets illustreert omdat het extra informatie brengt. Het zet iets tegenover het punt, en geeft geen voorbeeld."
+   ],
+   "uh": "Welke relatie past?"
+  },
+  {
+   "v": "Which words introduce a summary?",
+   "o": [
+    "\"for example\" and \"for instance\"",
+    "\"however\" and \"yet\"",
+    "\"in short\" and \"to sum up\"",
+    "\"because\" and \"since\""
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 3,
+   "u": "In short = samenvatting. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"for example and for instance\"? Dan denk je dat deze woorden een samenvatting inleiden. Ze leiden een voorbeeld in, en vatten niet samen.",
+    "Koos je \"however and yet\"? Dan denk je dat deze woorden een samenvatting inleiden. Ze zetten iets tegenover het vorige, en vatten niet samen.",
+    "Klopt: deze woorden leiden een samenvatting in.",
+    "Koos je \"because and since\"? Dan denk je dat deze woorden een samenvatting inleiden. Ze geven een reden aan, en vatten niet samen."
+   ],
+   "uh": "Welke woorden vatten samen?"
+  },
+  {
+   "v": "Which relation does \"for instance\" introduce?",
+   "o": [
+    "an example",
+    "a contrast",
+    "a result",
+    "a time order"
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 3,
+   "u": "For instance = voorbeeld. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: for instance leidt een voorbeeld in dat een punt illustreert.",
+    "Koos je \"a contrast\"? Dan denk je dat for instance een tegenstelling aangeeft. Het geeft een voorbeeld, en zet niets tegenover elkaar.",
+    "Koos je \"a result\"? Dan denk je dat for instance een gevolg aangeeft. Het illustreert een punt, en geeft geen resultaat.",
+    "Koos je \"a time order\"? Dan denk je dat for instance een volgorde aangeeft. Het noemt een geval, en geen volgorde in tijd."
+   ],
+   "uh": "Welke relatie past?"
+  },
+  {
+   "v": "Which text structure first describes a difficulty and then a way to deal with it?",
+   "o": [
+    "cause and effect only",
+    "a comparison of two things",
+    "a list in time order",
+    "problem and solution"
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 4,
+   "u": "Probleem, dan oplossing. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"cause and effect only\"? Dan denk je dat dit alleen oorzaak en gevolg is. Een oplossing is meer dan een gevolg, en komt na het probleem.",
+    "Koos je \"a comparison of two things\"? Dan denk je dat dit een vergelijking is. Er worden geen twee dingen naast elkaar gezet, maar een probleem aangepakt.",
+    "Koos je \"a list in time order\"? Dan denk je dat dit een lijst in tijd is. Een tijdsvolgorde is geen probleem, en geen oplossing.",
+    "Klopt: bij probleem en oplossing volgt na het probleem een manier om het aan te pakken."
+   ],
+   "uh": "Welke structuur past?"
+  },
+  {
+   "v": "What is the relation between the rise in temperature and the coral turning white?",
+   "o": [
+    "a contrast between them",
+    "cause and effect",
+    "an example of warm water",
+    "only a time order"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 1,
+   "u": "Warmte veroorzaakt bleken. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"a contrast between them\"? Dan denk je dat de twee dingen tegenover elkaar staan. De ene volgt uit de andere, en er is geen tegenstelling.",
+    "Klopt: warm water zorgt ervoor dat het koraal zijn algen kwijtraakt en wit wordt.",
+    "Koos je \"an example of warm water\"? Dan denk je dat het koraal een voorbeeld van warm water is. Het is een gevolg, en geen illustratie.",
+    "Koos je \"only a time order\"? Dan denk je dat het alleen om volgorde gaat. As a result geeft een gevolg aan, en niet alleen een tijdsvolgorde."
+   ],
+   "uh": "Wat is de relatie?",
+   "ctx": "Read this text: \"Coral reefs cover less than one per cent of the ocean floor, yet they support about a quarter of all marine species. This richness is now under threat. When sea temperatures rise by even one or two degrees, corals expel the algae that live in their tissue and give them their colour and much of their food. As a result, the coral turns white and, if the heat lasts too long, it starves. Bleaching events were once rare; in the past decade, however, they have struck reefs on every continent. Scientists therefore warn that the loss of reefs would affect not only fish but also the millions of people who depend on them for food and for protection against storms. Some researchers are experimenting with heat-resistant corals, although this approach is still at an early stage. Others insist that nothing will help unless greenhouse gas emissions fall.\""
+  },
+  {
+   "v": "What does \"yet\" express in \"yet they support about a quarter of all marine species\"?",
+   "o": [
+    "a result of the sentence before",
+    "an example from the text",
+    "a summary of the text",
+    "a surprising contrast"
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 2,
+   "u": "Yet = tegenstelling. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"a result of the sentence before\"? Dan denk je dat yet een gevolg aangeeft. Het zet iets tegenover het vorige, en geeft geen resultaat.",
+    "Koos je \"an example from the text\"? Dan denk je dat yet een voorbeeld inleidt. Het zet een tegengesteld feit neer, en geeft geen voorbeeld.",
+    "Koos je \"a summary of the text\"? Dan denk je dat yet een samenvatting inleidt. Het begint een tegenstelling, en vat niets samen.",
+    "Klopt: riffen zijn klein, maar dragen veel soorten, en yet laat dat verrassende contrast zien."
+   ],
+   "uh": "Wat drukt yet uit?",
+   "ctx": "Read this text: \"Coral reefs cover less than one per cent of the ocean floor, yet they support about a quarter of all marine species. This richness is now under threat. When sea temperatures rise by even one or two degrees, corals expel the algae that live in their tissue and give them their colour and much of their food. As a result, the coral turns white and, if the heat lasts too long, it starves. Bleaching events were once rare; in the past decade, however, they have struck reefs on every continent. Scientists therefore warn that the loss of reefs would affect not only fish but also the millions of people who depend on them for food and for protection against storms. Some researchers are experimenting with heat-resistant corals, although this approach is still at an early stage. Others insist that nothing will help unless greenhouse gas emissions fall.\""
+  },
+  {
+   "v": "What does \"therefore\" introduce in the text?",
+   "o": [
+    "an example of heat-resistant coral",
+    "a conclusion the scientists draw",
+    "a contradiction of the earlier idea",
+    "a list of dates"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 1,
+   "u": "Therefore = conclusie. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"an example of heat-resistant coral\"? Dan denk je dat therefore een voorbeeld inleidt. Het voorbeeld van hittebestendig koraal volgt later, en begint met some researchers.",
+    "Klopt: therefore leidt in wat de wetenschappers uit het bleken concluderen.",
+    "Koos je \"a contradiction of the earlier idea\"? Dan denk je dat therefore een tegenspraak inleidt. Het volgt uit het vorige, en spreekt het niet tegen.",
+    "Koos je \"a list of dates\"? Dan denk je dat therefore een opsomming van data inleidt. De tekst noemt geen data, maar een waarschuwing."
+   ],
+   "uh": "Wat leidt therefore in?",
+   "ctx": "Read this text: \"Coral reefs cover less than one per cent of the ocean floor, yet they support about a quarter of all marine species. This richness is now under threat. When sea temperatures rise by even one or two degrees, corals expel the algae that live in their tissue and give them their colour and much of their food. As a result, the coral turns white and, if the heat lasts too long, it starves. Bleaching events were once rare; in the past decade, however, they have struck reefs on every continent. Scientists therefore warn that the loss of reefs would affect not only fish but also the millions of people who depend on them for food and for protection against storms. Some researchers are experimenting with heat-resistant corals, although this approach is still at an early stage. Others insist that nothing will help unless greenhouse gas emissions fall.\""
+  },
+  {
+   "v": "What is the function of \"although\" in \"although this approach is still at an early stage\"?",
+   "o": [
+    "it adds a second example",
+    "it gives the cause of bleaching",
+    "it limits the hope",
+    "it summarises the whole paragraph"
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 2,
+   "u": "Although = beperking. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"it adds a second example\"? Dan denk je dat although een extra voorbeeld toevoegt. Het zwakt iets af, en voegt niets toe.",
+    "Koos je \"it gives the cause of bleaching\"? Dan denk je dat although de oorzaak van bleken geeft. De oorzaak staat eerder, en although relativeert de proef.",
+    "Klopt: although relativeert de hoop die de proeven met hittebestendig koraal geven.",
+    "Koos je \"it summarises the whole paragraph\"? Dan denk je dat although de alinea samenvat. De samenvatting staat niet in deze zin, en although geeft een beperking."
+   ],
+   "uh": "Welke functie heeft although?",
+   "ctx": "Read this text: \"Coral reefs cover less than one per cent of the ocean floor, yet they support about a quarter of all marine species. This richness is now under threat. When sea temperatures rise by even one or two degrees, corals expel the algae that live in their tissue and give them their colour and much of their food. As a result, the coral turns white and, if the heat lasts too long, it starves. Bleaching events were once rare; in the past decade, however, they have struck reefs on every continent. Scientists therefore warn that the loss of reefs would affect not only fish but also the millions of people who depend on them for food and for protection against storms. Some researchers are experimenting with heat-resistant corals, although this approach is still at an early stage. Others insist that nothing will help unless greenhouse gas emissions fall.\""
+  },
+  {
+   "v": "What is the function of the sentence starting with \"Others insist\"?",
+   "o": [
+    "it gives a different view",
+    "it gives an example of bleaching",
+    "it states the result of the experiments",
+    "it repeats the introduction"
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 4,
+   "u": "Others = andere mening. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: Others insist zet een andere mening tegenover die van de onderzoekers met hittebestendig koraal.",
+    "Koos je \"it gives an example of bleaching\"? Dan denk je dat de zin een voorbeeld geeft. Er staat geen voorbeeld in, maar een mening.",
+    "Koos je \"it states the result of the experiments\"? Dan denk je dat de zin een resultaat geeft. Het gaat om een mening over wat helpt, en niet om een resultaat.",
+    "Koos je \"it repeats the introduction\"? Dan denk je dat de zin de inleiding herhaalt. De inleiding ging over de rijkdom van riffen, en deze zin gaat over de oplossing."
+   ],
+   "uh": "Welke functie heeft de laatste zin?",
+   "ctx": "Read this text: \"Coral reefs cover less than one per cent of the ocean floor, yet they support about a quarter of all marine species. This richness is now under threat. When sea temperatures rise by even one or two degrees, corals expel the algae that live in their tissue and give them their colour and much of their food. As a result, the coral turns white and, if the heat lasts too long, it starves. Bleaching events were once rare; in the past decade, however, they have struck reefs on every continent. Scientists therefore warn that the loss of reefs would affect not only fish but also the millions of people who depend on them for food and for protection against storms. Some researchers are experimenting with heat-resistant corals, although this approach is still at an early stage. Others insist that nothing will help unless greenhouse gas emissions fall.\""
+  },
+  {
+   "v": "What is the relation between \"but building cycle lanes is not enough\" and the sentence before it?",
+   "o": [
+    "a contrast",
+    "a result of the sentence before",
+    "an example of the sentence before",
+    "a summary of the sentence before"
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 0,
+   "u": "But = tegenstelling. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: but zet het ontbrekende effect van fietspaden tegenover de wens om meer te fietsen.",
+    "Koos je \"a result of the sentence before\"? Dan denk je dat but een gevolg aangeeft. Het zet iets tegenover het vorige, en geeft geen resultaat.",
+    "Koos je \"an example of the sentence before\"? Dan denk je dat but een voorbeeld inleidt. Het geeft een beperking, en geen illustratie.",
+    "Koos je \"a summary of the sentence before\"? Dan denk je dat but een samenvatting inleidt. Het begint een tegenstelling, en vat niets samen."
+   ],
+   "uh": "Welke relatie past?",
+   "ctx": "Read this text: \"Many cities want more people to cycle to work, but building cycle lanes is not enough. Surveys show that the main reason people stay in their cars is not a lack of lanes but fear of theft: in several large cities, one in five bikes is stolen within a few years. Secure parking is therefore as important as safe roads. In Utrecht, for instance, a huge underground garage now holds more than twelve thousand bikes, and commuters who park there are twice as likely to keep cycling in winter. Critics say that such garages are expensive. Yet the cost per parking space is lower than that of a space for a car, and the garage also frees up valuable street space. In short, a city that wants more cyclists should first make sure that their bikes are safe.\""
+  },
+  {
+   "v": "What does \"for instance\" introduce in the text?",
+   "o": [
+    "a result of the survey",
+    "a counter-argument of the critics",
+    "an example of bike parking",
+    "a summary of the argument"
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 3,
+   "u": "For instance = voorbeeld. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"a result of the survey\"? Dan denk je dat for instance een resultaat inleidt. Het leidt een voorbeeld in, en geen resultaat.",
+    "Koos je \"a counter-argument of the critics\"? Dan denk je dat for instance een tegenargument inleidt. Het tegenargument komt later met critics say, en for instance geeft een voorbeeld.",
+    "Klopt: de zin over de garage in Utrecht is een voorbeeld van veilig fietsparkeren.",
+    "Koos je \"a summary of the argument\"? Dan denk je dat for instance een samenvatting inleidt. De samenvatting begint met in short, en niet met for instance."
+   ],
+   "uh": "Wat leidt for instance in?",
+   "ctx": "Read this text: \"Many cities want more people to cycle to work, but building cycle lanes is not enough. Surveys show that the main reason people stay in their cars is not a lack of lanes but fear of theft: in several large cities, one in five bikes is stolen within a few years. Secure parking is therefore as important as safe roads. In Utrecht, for instance, a huge underground garage now holds more than twelve thousand bikes, and commuters who park there are twice as likely to keep cycling in winter. Critics say that such garages are expensive. Yet the cost per parking space is lower than that of a space for a car, and the garage also frees up valuable street space. In short, a city that wants more cyclists should first make sure that their bikes are safe.\""
+  },
+  {
+   "v": "What does \"Yet\" do in \"Yet the cost per parking space is lower than that of a space for a car\"?",
+   "o": [
+    "it gives an example",
+    "it answers the criticism",
+    "it repeats the main idea",
+    "it introduces the cause"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 2,
+   "u": "Yet = weerwoord. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"it gives an example\"? Dan denk je dat yet een voorbeeld geeft. Het zet iets tegenover de kritiek, en geeft geen voorbeeld.",
+    "Klopt: yet geeft een weerwoord op de kritiek dat zulke garages duur zijn.",
+    "Koos je \"it repeats the main idea\"? Dan denk je dat yet de kern herhaalt. Het antwoordt op een bezwaar, en herhaalt niets.",
+    "Koos je \"it introduces the cause\"? Dan denk je dat yet de oorzaak inleidt. Het begint een weerwoord, en geeft geen reden voor iets eerder."
+   ],
+   "uh": "Wat doet yet?",
+   "ctx": "Read this text: \"Many cities want more people to cycle to work, but building cycle lanes is not enough. Surveys show that the main reason people stay in their cars is not a lack of lanes but fear of theft: in several large cities, one in five bikes is stolen within a few years. Secure parking is therefore as important as safe roads. In Utrecht, for instance, a huge underground garage now holds more than twelve thousand bikes, and commuters who park there are twice as likely to keep cycling in winter. Critics say that such garages are expensive. Yet the cost per parking space is lower than that of a space for a car, and the garage also frees up valuable street space. In short, a city that wants more cyclists should first make sure that their bikes are safe.\""
+  },
+  {
+   "v": "What does \"In short\" introduce at the end of the text?",
+   "o": [
+    "an extra example",
+    "a contrast with the criticism",
+    "a question for the reader",
+    "a summary of the argument"
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 3,
+   "u": "In short = samenvatting. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"an extra example\"? Dan denk je dat in short een voorbeeld inleidt. Het vat samen, en voegt geen voorbeeld toe.",
+    "Koos je \"a contrast with the criticism\"? Dan denk je dat in short een tegenstelling inleidt. Het sluit af, en zet niets tegenover elkaar.",
+    "Koos je \"a question for the reader\"? Dan denk je dat in short een vraag inleidt. Het eindigt met een advies, en niet met een vraag.",
+    "Klopt: in short leidt een korte samenvatting van het betoog in."
+   ],
+   "uh": "Wat leidt in short in?",
+   "ctx": "Read this text: \"Many cities want more people to cycle to work, but building cycle lanes is not enough. Surveys show that the main reason people stay in their cars is not a lack of lanes but fear of theft: in several large cities, one in five bikes is stolen within a few years. Secure parking is therefore as important as safe roads. In Utrecht, for instance, a huge underground garage now holds more than twelve thousand bikes, and commuters who park there are twice as likely to keep cycling in winter. Critics say that such garages are expensive. Yet the cost per parking space is lower than that of a space for a car, and the garage also frees up valuable street space. In short, a city that wants more cyclists should first make sure that their bikes are safe.\""
+  },
+  {
+   "v": "What does \"Consequently\" introduce in the last sentence?",
+   "o": [
+    "an example of homework",
+    "the result of the findings",
+    "a contrast with the studies",
+    "the cause of the stress"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 1,
+   "u": "Consequently = gevolg. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"an example of homework\"? Dan denk je dat consequently een voorbeeld inleidt. Het geeft een gevolg, en geen illustratie.",
+    "Klopt: consequently leidt in wat scholen doen als gevolg van het onderzoek.",
+    "Koos je \"a contrast with the studies\"? Dan denk je dat consequently een tegenstelling inleidt. Het volgt uit de studies, en spreekt ze niet tegen.",
+    "Koos je \"the cause of the stress\"? Dan denk je dat consequently een oorzaak inleidt. Het geeft een gevolg, en geen reden."
+   ],
+   "uh": "Wat leidt consequently in?",
+   "ctx": "Read this text: \"Few subjects divide teachers as sharply as homework. On the one hand, supporters argue that practising at home helps pupils to remember what they learned in class and teaches them to work independently. On the other hand, opponents claim that homework mainly increases stress and widens the gap between pupils who have a quiet room at home and those who do not. Research offers no simple answer. One large review found that homework helped older pupils, while for primary school children the effect was close to zero. A second study, by contrast, showed that the quality of the tasks mattered more than their quantity. Consequently, a growing number of schools set shorter, more focused tasks and offer a homework club for pupils who have no quiet place at home.\""
+  },
+  {
+   "v": "How is the text structured?",
+   "o": [
+    "two views, research, a result",
+    "a problem and its history",
+    "a list of steps in time order",
+    "a single argument with only examples"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 4,
+   "u": "Twee standpunten, onderzoek, gevolg.",
+   "uo": [
+    "Klopt: eerst twee tegengestelde standpunten, dan onderzoek en daarna een praktisch gevolg.",
+    "Koos je \"a problem and its history\"? Dan denk je dat het een probleem en zijn geschiedenis beschrijft. Er is geen geschiedenis, maar twee standpunten.",
+    "Koos je \"a list of steps in time order\"? Dan denk je dat het stappen in tijd geeft. De tekst volgt geen tijd, maar een afweging.",
+    "Koos je \"a single argument with only examples\"? Dan denk je dat het één betoog met voorbeelden is. Er staan twee standpunten in, en onderzoek met een gevolg."
+   ],
+   "uh": "Hoe is de tekst opgebouwd?",
+   "ctx": "Read this text: \"Few subjects divide teachers as sharply as homework. On the one hand, supporters argue that practising at home helps pupils to remember what they learned in class and teaches them to work independently. On the other hand, opponents claim that homework mainly increases stress and widens the gap between pupils who have a quiet room at home and those who do not. Research offers no simple answer. One large review found that homework helped older pupils, while for primary school children the effect was close to zero. A second study, by contrast, showed that the quality of the tasks mattered more than their quantity. Consequently, a growing number of schools set shorter, more focused tasks and offer a homework club for pupils who have no quiet place at home.\""
+  },
+  {
+   "v": "What does \"while\" express in the sentence about older and primary pupils?",
+   "o": [
+    "a cause of the effect",
+    "a sequence in time",
+    "an example of the effect",
+    "a contrast between two groups"
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 2,
+   "u": "While = tegenstelling. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"a cause of the effect\"? Dan denk je dat while een oorzaak aangeeft. Het zet twee groepen tegenover elkaar, en geeft geen reden.",
+    "Koos je \"a sequence in time\"? Dan denk je dat while een tijdsvolgorde aangeeft. Hier gaat het niet om tegelijk gebeuren, maar om een verschil tussen groepen.",
+    "Koos je \"an example of the effect\"? Dan denk je dat while een voorbeeld inleidt. Het vergelijkt, en illustreert niet.",
+    "Klopt: while zet het effect bij oudere leerlingen tegenover dat bij basisschoolleerlingen."
+   ],
+   "uh": "Wat drukt while uit?",
+   "ctx": "Read this text: \"Few subjects divide teachers as sharply as homework. On the one hand, supporters argue that practising at home helps pupils to remember what they learned in class and teaches them to work independently. On the other hand, opponents claim that homework mainly increases stress and widens the gap between pupils who have a quiet room at home and those who do not. Research offers no simple answer. One large review found that homework helped older pupils, while for primary school children the effect was close to zero. A second study, by contrast, showed that the quality of the tasks mattered more than their quantity. Consequently, a growing number of schools set shorter, more focused tasks and offer a homework club for pupils who have no quiet place at home.\""
+  },
+  {
+   "v": "What does \"by contrast\" show about the second study?",
+   "o": [
+    "it confirms the first study",
+    "it is a result of the first study",
+    "it points another way",
+    "it is an example of the first study"
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 2,
+   "u": "By contrast = andere richting.",
+   "uo": [
+    "Koos je \"it confirms the first study\"? Dan denk je dat by contrast bevestigt. Het zet iets tegenover het vorige, en bevestigt niets.",
+    "Koos je \"it is a result of the first study\"? Dan denk je dat de tweede studie een gevolg is van de eerste. Het zijn twee losse onderzoeken, en by contrast geeft een tegenstelling.",
+    "Klopt: by contrast zegt dat de tweede studie iets anders liet zien dan de eerste.",
+    "Koos je \"it is an example of the first study\"? Dan denk je dat de tweede studie een voorbeeld is. Ze laat iets anders zien, en illustreert de eerste niet."
+   ],
+   "uh": "Wat laat by contrast zien?",
+   "ctx": "Read this text: \"Few subjects divide teachers as sharply as homework. On the one hand, supporters argue that practising at home helps pupils to remember what they learned in class and teaches them to work independently. On the other hand, opponents claim that homework mainly increases stress and widens the gap between pupils who have a quiet room at home and those who do not. Research offers no simple answer. One large review found that homework helped older pupils, while for primary school children the effect was close to zero. A second study, by contrast, showed that the quality of the tasks mattered more than their quantity. Consequently, a growing number of schools set shorter, more focused tasks and offer a homework club for pupils who have no quiet place at home.\""
+  },
+  {
+   "v": "According to the text, why does the coral turn white?",
+   "o": [
+    "it gets too little sunlight",
+    "it is covered with plastic",
+    "it expels the algae",
+    "it is eaten by many fish"
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 1,
+   "u": "Warmte, algen weg, wit. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"it gets too little sunlight\"? Dan denk je dat het koraal te weinig zonlicht krijgt. Er staat dat de temperatuur stijgt, en niet dat er te weinig licht is.",
+    "Koos je \"it is covered with plastic\"? Dan denk je dat plastic de oorzaak is. Dat wordt nergens genoemd, en de tekst noemt warmte.",
+    "Klopt: bij te warm water laat het koraal zijn algen los, die kleur en voedsel geven.",
+    "Koos je \"it is eaten by many fish\"? Dan denk je dat vissen het koraal opeten. Vissen leven juist van riffen, en de tekst noemt warmte als oorzaak."
+   ],
+   "uh": "Waarom wordt het koraal wit?",
+   "ctx": "Read this text: \"Coral reefs cover less than one per cent of the ocean floor, yet they support about a quarter of all marine species. This richness is now under threat. When sea temperatures rise by even one or two degrees, corals expel the algae that live in their tissue and give them their colour and much of their food. As a result, the coral turns white and, if the heat lasts too long, it starves. Bleaching events were once rare; in the past decade, however, they have struck reefs on every continent. Scientists therefore warn that the loss of reefs would affect not only fish but also the millions of people who depend on them for food and for protection against storms. Some researchers are experimenting with heat-resistant corals, although this approach is still at an early stage. Others insist that nothing will help unless greenhouse gas emissions fall.\""
+  },
+  {
+   "v": "What is the structure of the argument in the text?",
+   "o": [
+    "only a comparison of two cities",
+    "only a list of examples",
+    "only a series of causes",
+    "problem, solution and reply"
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 4,
+   "u": "Probleem, reden, oplossing, weerwoord.",
+   "uo": [
+    "Koos je \"only a comparison of two cities\"? Dan denk je dat het een vergelijking van twee steden is. Utrecht is één voorbeeld, en er is geen vergelijking.",
+    "Koos je \"only a list of examples\"? Dan denk je dat het alleen voorbeelden zijn. Er staat één voorbeeld, en er is meer opbouw.",
+    "Koos je \"only a series of causes\"? Dan denk je dat het alleen oorzaken zijn. Er zijn ook een oplossing en een reactie op kritiek, dus het is meer.",
+    "Klopt: de tekst noemt het probleem, de reden, een oplossing en een antwoord op kritiek."
+   ],
+   "uh": "Hoe is het betoog opgebouwd?",
+   "ctx": "Read this text: \"Many cities want more people to cycle to work, but building cycle lanes is not enough. Surveys show that the main reason people stay in their cars is not a lack of lanes but fear of theft: in several large cities, one in five bikes is stolen within a few years. Secure parking is therefore as important as safe roads. In Utrecht, for instance, a huge underground garage now holds more than twelve thousand bikes, and commuters who park there are twice as likely to keep cycling in winter. Critics say that such garages are expensive. Yet the cost per parking space is lower than that of a space for a car, and the garage also frees up valuable street space. In short, a city that wants more cyclists should first make sure that their bikes are safe.\""
+  },
+  {
+   "v": "Which part of the text is the example?",
+   "o": [
+    "the sentence about the garage in Utrecht",
+    "the sentence about the cost per space",
+    "the sentence about theft",
+    "the last sentence"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 3,
+   "u": "Utrecht = voorbeeld. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: de garage in Utrecht illustreert het punt over veilig parkeren.",
+    "Koos je \"the sentence about the cost per space\"? Dan denk je dat deze zin het voorbeeld is. Het is een weerwoord op kritiek, en geen voorbeeld.",
+    "Koos je \"the sentence about theft\"? Dan denk je dat deze zin het voorbeeld is. Het is de reden waarom mensen de auto kiezen, en geen voorbeeld.",
+    "Koos je \"the last sentence\"? Dan denk je dat de laatste zin het voorbeeld is. Het is de samenvatting, en geen voorbeeld."
+   ],
+   "uh": "Welk deel is het voorbeeld?",
+   "ctx": "Read this text: \"Many cities want more people to cycle to work, but building cycle lanes is not enough. Surveys show that the main reason people stay in their cars is not a lack of lanes but fear of theft: in several large cities, one in five bikes is stolen within a few years. Secure parking is therefore as important as safe roads. In Utrecht, for instance, a huge underground garage now holds more than twelve thousand bikes, and commuters who park there are twice as likely to keep cycling in winter. Critics say that such garages are expensive. Yet the cost per parking space is lower than that of a space for a car, and the garage also frees up valuable street space. In short, a city that wants more cyclists should first make sure that their bikes are safe.\""
+  },
+  {
+   "v": "Why do many people stay in their cars, according to the surveys?",
+   "o": [
+    "a lack of cycle lanes",
+    "fear of theft",
+    "the high price of bikes",
+    "bad weather in winter"
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 0,
+   "u": "Not ... but = correctie. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"a lack of cycle lanes\"? Dan denk je dat het aan fietspaden ligt. De tekst zegt not a lack of lanes, maar angst voor diefstal.",
+    "Klopt: de enquêtes noemen de angst voor diefstal als belangrijkste reden.",
+    "Koos je \"the high price of bikes\"? Dan denk je dat de prijs van fietsen de reden is. Dat wordt niet genoemd, en de tekst noemt diefstal.",
+    "Koos je \"bad weather in winter\"? Dan denk je dat het weer de reden is. Het weer wordt alleen genoemd bij wie wel blijft fietsen, en niet bij de enquêtes."
+   ],
+   "uh": "Waarom blijven mensen in de auto?",
+   "ctx": "Read this text: \"Many cities want more people to cycle to work, but building cycle lanes is not enough. Surveys show that the main reason people stay in their cars is not a lack of lanes but fear of theft: in several large cities, one in five bikes is stolen within a few years. Secure parking is therefore as important as safe roads. In Utrecht, for instance, a huge underground garage now holds more than twelve thousand bikes, and commuters who park there are twice as likely to keep cycling in winter. Critics say that such garages are expensive. Yet the cost per parking space is lower than that of a space for a car, and the garage also frees up valuable street space. In short, a city that wants more cyclists should first make sure that their bikes are safe.\""
+  },
+  {
+   "v": "Which words introduce the criticism in the text?",
+   "o": [
+    "\"for instance, in Utrecht\"",
+    "\"In short, a city\"",
+    "\"therefore, secure parking\"",
+    "\"Critics say that\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 2,
+   "u": "Critics say = kritiek. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"for instance, in Utrecht\"? Dan denk je dat deze woorden de kritiek inleiden omdat ze iets nieuws noemen. Ze brengen een voorbeeld van fietsparkeren, en geen bezwaar.",
+    "Koos je \"In short, a city\"? Dan denk je dat deze woorden de kritiek inleiden omdat ze een nieuwe zin beginnen. Ze vatten het betoog aan het eind samen, en geven geen bezwaar.",
+    "Koos je \"therefore, secure parking\"? Dan denk je dat deze woorden de kritiek inleiden omdat ze over parkeren gaan. Ze trekken een conclusie uit het probleem, en brengen geen kritiek.",
+    "Klopt: critics say that leidt de kritiek op de dure garages in."
+   ],
+   "uh": "Welke woorden leiden de kritiek in?",
+   "ctx": "Read this text: \"Many cities want more people to cycle to work, but building cycle lanes is not enough. Surveys show that the main reason people stay in their cars is not a lack of lanes but fear of theft: in several large cities, one in five bikes is stolen within a few years. Secure parking is therefore as important as safe roads. In Utrecht, for instance, a huge underground garage now holds more than twelve thousand bikes, and commuters who park there are twice as likely to keep cycling in winter. Critics say that such garages are expensive. Yet the cost per parking space is lower than that of a space for a car, and the garage also frees up valuable street space. In short, a city that wants more cyclists should first make sure that their bikes are safe.\""
+  },
+  {
+   "v": "Which word pair signals that two views are compared?",
+   "o": [
+    "\"On the one hand ... on the other hand\"",
+    "\"as a result ... and therefore\"",
+    "\"for example ... and in short\"",
+    "\"first ... then\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 0,
+   "u": "On the one hand = twee kanten.",
+   "uo": [
+    "Klopt: dit paar zet twee standpunten tegenover elkaar.",
+    "Koos je \"as a result ... and therefore\"? Dan denk je dat dit paar twee zijden laat zien omdat er twee signaalwoorden staan. Het bouwt een keten van gevolgen, en zet niets tegenover elkaar.",
+    "Koos je \"for example ... and in short\"? Dan denk je dat dit paar twee zijden laat zien omdat het begin en einde markeert. Het noemt een voorbeeld en een samenvatting, en geen twee standpunten.",
+    "Koos je \"first ... then\"? Dan denk je dat dit paar twee zijden laat zien omdat het twee stappen noemt. Het geeft alleen een volgorde in tijd, en geen standpunten."
+   ],
+   "uh": "Welk paar toont twee standpunten?",
+   "ctx": "Read this text: \"Few subjects divide teachers as sharply as homework. On the one hand, supporters argue that practising at home helps pupils to remember what they learned in class and teaches them to work independently. On the other hand, opponents claim that homework mainly increases stress and widens the gap between pupils who have a quiet room at home and those who do not. Research offers no simple answer. One large review found that homework helped older pupils, while for primary school children the effect was close to zero. A second study, by contrast, showed that the quality of the tasks mattered more than their quantity. Consequently, a growing number of schools set shorter, more focused tasks and offer a homework club for pupils who have no quiet place at home.\""
+  },
+  {
+   "v": "What is the function of the second sentence (\"This richness is now under threat\")?",
+   "o": [
+    "it gives an example",
+    "it turns to the problem",
+    "it summarises the whole text",
+    "it gives the solution"
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 4,
+   "u": "Overgang van inleiding naar probleem.",
+   "uo": [
+    "Koos je \"it gives an example\"? Dan denk je dat de zin een voorbeeld geeft. Er wordt niets geïllustreerd, maar een overgang gemaakt.",
+    "Klopt: de zin gaat van de rijkdom van riffen naar het probleem dat erop volgt.",
+    "Koos je \"it summarises the whole text\"? Dan denk je dat de zin alles samenvat. Het is pas de tweede zin, dus er volgt nog veel.",
+    "Koos je \"it gives the solution\"? Dan denk je dat de zin een oplossing geeft. Er staat een bedreiging, en geen oplossing."
+   ],
+   "uh": "Welke functie heeft de zin?",
+   "ctx": "Read this text: \"Coral reefs cover less than one per cent of the ocean floor, yet they support about a quarter of all marine species. This richness is now under threat. When sea temperatures rise by even one or two degrees, corals expel the algae that live in their tissue and give them their colour and much of their food. As a result, the coral turns white and, if the heat lasts too long, it starves. Bleaching events were once rare; in the past decade, however, they have struck reefs on every continent. Scientists therefore warn that the loss of reefs would affect not only fish but also the millions of people who depend on them for food and for protection against storms. Some researchers are experimenting with heat-resistant corals, although this approach is still at an early stage. Others insist that nothing will help unless greenhouse gas emissions fall.\""
+  }
+ ],
+ "oe": [
+  {
+   "bron": "Examenstijl",
+   "ctx": "You read a text about coral reefs: \"Coral reefs cover less than one per cent of the ocean floor, yet they support about a quarter of all marine species. This richness is now under threat. When sea temperatures rise by even one or two degrees, corals expel the algae that live in their tissue and give them their colour and much of their food. As a result, the coral turns white and, if the heat lasts too long, it starves. Bleaching events were once rare; in the past decade, however, they have struck reefs on every continent. Scientists therefore warn that the loss of reefs would affect not only fish but also the millions of people who depend on them for food and for protection against storms. Some researchers are experimenting with heat-resistant corals, although this approach is still at an early stage. Others insist that nothing will help unless greenhouse gas emissions fall.\" Your teacher asks about the relations in the text.",
+   "v": "Explain the relation between the temperature and the colour of the coral and name the signal words.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Oorzaak en gevolg (1p). Het koraal werpt zijn algen af bij warm water (1p). Signaalwoord as a result of when (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "You read a text about coral reefs: \"Coral reefs cover less than one per cent of the ocean floor, yet they support about a quarter of all marine species. This richness is now under threat. When sea temperatures rise by even one or two degrees, corals expel the algae that live in their tissue and give them their colour and much of their food. As a result, the coral turns white and, if the heat lasts too long, it starves. Bleaching events were once rare; in the past decade, however, they have struck reefs on every continent. Scientists therefore warn that the loss of reefs would affect not only fish but also the millions of people who depend on them for food and for protection against storms. Some researchers are experimenting with heat-resistant corals, although this approach is still at an early stage. Others insist that nothing will help unless greenhouse gas emissions fall.\" Your teacher asks about the last two sentences.",
+   "v": "Explain the function of \"although\" and of \"Others insist\".",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Although geeft een beperking of toegeving (1p). Het zwakt de hoop op hittebestendig koraal af (1p). Others insist geeft een andere mening (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "You read a text about cycling: \"Many cities want more people to cycle to work, but building cycle lanes is not enough. Surveys show that the main reason people stay in their cars is not a lack of lanes but fear of theft: in several large cities, one in five bikes is stolen within a few years. Secure parking is therefore as important as safe roads. In Utrecht, for instance, a huge underground garage now holds more than twelve thousand bikes, and commuters who park there are twice as likely to keep cycling in winter. Critics say that such garages are expensive. Yet the cost per parking space is lower than that of a space for a car, and the garage also frees up valuable street space. In short, a city that wants more cyclists should first make sure that their bikes are safe.\" Your teacher asks about the structure of the argument.",
+   "v": "Name the problem, the solution and the reply to the criticism.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Het probleem is angst voor diefstal (1p). De oplossing is veilig fietsparkeren zoals in Utrecht (1p). Het weerwoord is dat de kosten per plek lager zijn dan bij een auto (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "You read a text about homework: \"Few subjects divide teachers as sharply as homework. On the one hand, supporters argue that practising at home helps pupils to remember what they learned in class and teaches them to work independently. On the other hand, opponents claim that homework mainly increases stress and widens the gap between pupils who have a quiet room at home and those who do not. Research offers no simple answer. One large review found that homework helped older pupils, while for primary school children the effect was close to zero. A second study, by contrast, showed that the quality of the tasks mattered more than their quantity. Consequently, a growing number of schools set shorter, more focused tasks and offer a homework club for pupils who have no quiet place at home.\" Your teacher asks about the way the text is built.",
+   "v": "Say how the text is structured and name two signal words.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Twee standpunten, onderzoek en gevolg (1p). On the one hand en on the other hand (1p). Consequently of by contrast of while (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "You read a text about homework: \"Few subjects divide teachers as sharply as homework. On the one hand, supporters argue that practising at home helps pupils to remember what they learned in class and teaches them to work independently. On the other hand, opponents claim that homework mainly increases stress and widens the gap between pupils who have a quiet room at home and those who do not. Research offers no simple answer. One large review found that homework helped older pupils, while for primary school children the effect was close to zero. A second study, by contrast, showed that the quality of the tasks mattered more than their quantity. Consequently, a growing number of schools set shorter, more focused tasks and offer a homework club for pupils who have no quiet place at home.\" Your teacher asks about two sentences in the text.",
+   "v": "Explain what \"while\" and \"Consequently\" show.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "While toont een tegenstelling tussen oudere en jongere leerlingen (1p). Consequently toont een gevolg van het onderzoek (1p). Scholen geven kortere taken of een huiswerkklas (1p)."
+  }
+ ]
+}
