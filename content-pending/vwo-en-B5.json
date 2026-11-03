@@ -1,0 +1,682 @@
+{
+ "id": "B5",
+ "lo": "en.B.5",
+ "gs": 2,
+ "naam": "Het meest waarschijnlijke vervolg van een gesprek voorspellen",
+ "beschrijving": "Je leert bij een Engels gesprek dat midden in een beurt stopt, te voorspellen wat het meest waarschijnlijk volgt, door te letten op de laatste uitspraak, voorstel en reactie, probleem en oplossing.",
+ "ceStatus": "CE",
+ "binas": "",
+ "val": "",
+ "onderwerpen": [
+  "De laatste uitspraak als aanwijzing",
+  "Voorstel en reactie",
+  "Probleem en oplossing",
+  "Vraag-antwoord en aanbod",
+  "Onwaarschijnlijke vervolgen herkennen"
+ ],
+ "sam": "Je voorspelt het vervolg uit de laatste uitspraak: op een vraag volgt een antwoord, op een aanbod een acceptatie of weigering, op een voorstel een reactie en bij een probleem een oplossing. Signaalwoorden als but en however kondigen een wending aan, aarzelingen als hmm en well een voorbehoud. Let op de toon en wat de sprekers eerder zeiden. Een vervolg dat niet past bij de situatie, zoals wegsturen van een klant, is onwaarschijnlijk.",
+ "begrippen": [
+  {
+   "t": "Vervolg",
+   "d": "Wat er na het laatste woord waarschijnlijk komt."
+  },
+  {
+   "t": "Voorspellen",
+   "d": "Aan aanwijzingen zien wat er volgt."
+  },
+  {
+   "t": "Laatste uitspraak",
+   "d": "Het laatste wat gezegd is, bepaalt het vervolg."
+  },
+  {
+   "t": "Vraag en antwoord",
+   "d": "Op een vraag volgt een antwoord."
+  },
+  {
+   "t": "Aanbod",
+   "d": "Iets wat een spreker aanbiedt, met acceptatie of weigering als reactie."
+  },
+  {
+   "t": "Voorstel",
+   "d": "Een suggestie, met een reactie als vervolg."
+  },
+  {
+   "t": "Reactie",
+   "d": "Wat de ander zegt op iets wat gezegd is."
+  },
+  {
+   "t": "Probleem",
+   "d": "Een moeilijkheid die om een oplossing vraagt."
+  },
+  {
+   "t": "Oplossing",
+   "d": "Een manier om het probleem aan te pakken."
+  },
+  {
+   "t": "Aarzeling",
+   "d": "Een woord als hmm dat twijfel toont."
+  },
+  {
+   "t": "Doorvragen",
+   "d": "Een vervolgvraag stellen."
+  },
+  {
+   "t": "Waarschijnlijk",
+   "d": "Het meest logisch gezien de situatie."
+  }
+ ],
+ "sv": [
+  {
+   "v": "Which part of a conversation helps most to predict what comes next?",
+   "o": [
+    "the first sentence",
+    "the last thing that was said",
+    "the names of the speakers",
+    "the length of the conversation"
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 0,
+   "u": "Laatste uitspraak bepaalt het vervolg. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"the first sentence\"? Dan denk je dat de eerste zin het vervolg bepaalt. Die ligt te ver terug, en het gesprek is verder gegaan.",
+    "Klopt: het laatste wat gezegd is, bepaalt meestal wat er logisch op volgt.",
+    "Koos je \"the names of the speakers\"? Dan denk je dat de namen het vervolg bepalen. Namen zeggen niets over de inhoud, en geven geen aanwijzing.",
+    "Koos je \"the length of the conversation\"? Dan denk je dat de lengte het vervolg bepaalt. Lengte zegt niets over wat er volgt, en is geen aanwijzing."
+   ],
+   "uh": "Wat helpt het meest?"
+  },
+  {
+   "v": "What usually follows a question?",
+   "o": [
+    "another question about the weather",
+    "a goodbye",
+    "a very long story",
+    "an answer"
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 3,
+   "u": "Vraag, dan antwoord. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"another question about the weather\"? Dan denk je dat er een vraag over het weer volgt. Dat past niet bij de vorige vraag, en is geen antwoord.",
+    "Koos je \"a goodbye\"? Dan denk je dat er een afscheid volgt. Dat past niet bij een vraag, en laat de vraag onbeantwoord.",
+    "Koos je \"a very long story\"? Dan denk je dat er een lang verhaal volgt. Een antwoord is meestal kort, en past bij de vraag.",
+    "Klopt: op een vraag volgt normaal gesproken een antwoord."
+   ],
+   "uh": "Wat volgt op een vraag?"
+  },
+  {
+   "v": "What usually follows an offer?",
+   "o": [
+    "an acceptance or a refusal",
+    "a new offer from the other person only",
+    "an apology for no reason",
+    "a joke about something else"
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 3,
+   "u": "Aanbod, dan accepteren of weigeren. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: op een aanbod reageert de ander door te accepteren of te weigeren.",
+    "Koos je \"a new offer from the other person only\"? Dan denk je dat er altijd een nieuw aanbod volgt. Eerst komt een reactie, en daarna eventueel iets nieuws.",
+    "Koos je \"an apology for no reason\"? Dan denk je dat er een excuus volgt. Dat past niet bij een aanbod, en is geen reactie.",
+    "Koos je \"a joke about something else\"? Dan denk je dat er een grap volgt. Dat past niet bij een aanbod, en is geen reactie."
+   ],
+   "uh": "Wat volgt op een aanbod?"
+  },
+  {
+   "v": "What usually follows a suggestion?",
+   "o": [
+    "a goodbye",
+    "a number",
+    "agree or disagree",
+    "a summary of the day"
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 1,
+   "u": "Voorstel, dan reactie. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"a goodbye\"? Dan denk je dat de ander afscheid neemt omdat het voorstel een afspraak lijkt af te ronden. Er moet eerst een reactie komen, en pas daarna een afscheid.",
+    "Koos je \"a number\"? Dan denk je dat er een getal volgt omdat voorstellen vaak tijden noemen. Een getal is geen reactie, en past niet bij de vraag of het kan.",
+    "Klopt: op een voorstel volgt een reactie van de ander.",
+    "Koos je \"a summary of the day\"? Dan denk je dat de ander de dag samenvat omdat een voorstel naar de toekomst kijkt. Dat past niet, want hij moet eerst reageren."
+   ],
+   "uh": "Wat volgt op een voorstel?"
+  },
+  {
+   "v": "What do people often do when a problem is mentioned?",
+   "o": [
+    "change the topic completely",
+    "look for a solution",
+    "ignore the problem",
+    "say goodbye at once"
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 2,
+   "u": "Probleem, dan oplossing. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"change the topic completely\"? Dan denk je dat het onderwerp meteen verandert. Dat is onbeleefd, en komt zelden voor.",
+    "Klopt: bij een probleem zoeken gesprekspartners meestal een oplossing.",
+    "Koos je \"ignore the problem\"? Dan denk je dat het probleem genegeerd wordt. Dat past niet bij een gesprek, waar iemand om hulp vraagt.",
+    "Koos je \"say goodbye at once\"? Dan denk je dat het gesprek meteen eindigt. Dat past niet bij een probleem, dat nog besproken moet worden."
+   ],
+   "uh": "Wat doen mensen bij een probleem?"
+  },
+  {
+   "v": "Which reply is NOT likely after \"I'm afraid we're closed\"?",
+   "o": [
+    "\"Oh, what time do you open tomorrow?\"",
+    "\"That's a pity.\"",
+    "\"OK, thank you.\"",
+    "\"Great, I'll come in now!\""
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 4,
+   "u": "Dicht, dus niet binnenkomen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"Oh, what time do you open tomorrow?\"\"? Dan denk je dat deze vraag niet past bij een gesloten winkel. Het is juist een logische vraag, omdat de klant wil terugkomen.",
+    "Koos je \"\"That's a pity.\"\"? Dan denk je dat dit een vreemde reactie is omdat de klant niet boos is. Het is een normale teleurstelling, en past bij de mededeling.",
+    "Koos je \"\"OK, thank you.\"\"? Dan denk je dat dit te beleefd is voor de situatie. Het is een gewone reactie, en past bij de mededeling.",
+    "Klopt: dat past niet bij de mededeling dat de winkel dicht is."
+   ],
+   "uh": "Welke reactie is onwaarschijnlijk?"
+  },
+  {
+   "v": "Which words often introduce a contrast and so a new step in a conversation?",
+   "o": [
+    "\"but\" and \"however\"",
+    "\"and\" and \"also\"",
+    "\"so\" and \"then\"",
+    "\"first\" and \"next\""
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 0,
+   "u": "But en however = wending. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: but en however kondigen een tegenstelling of tegenvaller aan.",
+    "Koos je \"\"and\" and \"also\"\"? Dan denk je dat deze woorden een nieuwe wending brengen omdat ze iets nieuws noemen. Ze voegen alleen iets toe, en veranderen niets aan de richting.",
+    "Koos je \"\"so\" and \"then\"\"? Dan denk je dat deze woorden een tegenstelling aankondigen omdat ze een stap markeren. Ze geven een gevolg of vervolg aan, en geen tegenstelling.",
+    "Koos je \"\"first\" and \"next\"\"? Dan denk je dat deze woorden een tegenstelling aankondigen omdat ze de volgorde sturen. Ze noemen alleen een stap in een lijst, en geven geen contrast."
+   ],
+   "uh": "Welke woorden kondigen een wending aan?"
+  },
+  {
+   "v": "What is the customer's problem?",
+   "o": [
+    "she has lost the receipt",
+    "the jacket is too big",
+    "the zip is broken",
+    "she wants a different colour"
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 2,
+   "u": "Kapotte rits. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"she has lost the receipt\"? Dan denk je dat ze de bon kwijt is. Ze laat de bon juist zien, dus dat is het probleem niet.",
+    "Koos je \"the jacket is too big\"? Dan denk je dat de jas te groot is. Ze noemt een kapotte rits, en de maat speelt alleen bij ruilen.",
+    "Klopt: ze zegt dat de rits al kapot is, een week na aankoop.",
+    "Koos je \"she wants a different colour\"? Dan denk je dat ze een andere kleur wil. Ze koos juist blauw, en wil die graag houden."
+   ],
+   "uh": "Wat is het probleem?",
+   "ctx": "You hear this conversation in a shop: \"Customer: Hi, I bought this jacket last week, but the zip is already broken. Assistant: I'm sorry to hear that. Do you have the receipt? Customer: Yes, here it is. Assistant: Thank you. Normally we can offer a refund or an exchange within fourteen days. Customer: I'd prefer an exchange, but I'm not sure you have the same one in my size. Assistant: Let me check the computer. We had two in blue, but I think they were sold yesterday. Customer: Oh dear. The blue was the reason I chose it. Assistant: Well, we could order one from our other shop, but it would take a week to arrive. Customer: A week is quite long, I'm going on holiday on Friday. Assistant:\""
+  },
+  {
+   "v": "Why is a week too long for the customer?",
+   "o": [
+    "the shop is closing next week",
+    "she goes on holiday on Friday",
+    "the jacket is on sale",
+    "the other shop is very far away"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 2,
+   "u": "Vrijdag vakantie. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"the shop is closing next week\"? Dan denk je dat de winkel sluit. Daar staat niets over, en ze noemt haar vakantie.",
+    "Klopt: ze zegt dat ze vrijdag op vakantie gaat.",
+    "Koos je \"the jacket is on sale\"? Dan denk je dat de jas in de aanbieding is. Dat wordt niet genoemd, en de reden is haar vakantie.",
+    "Koos je \"the other shop is very far away\"? Dan denk je dat de afstand het probleem is. Het gaat om de levertijd, en niet om afstand."
+   ],
+   "uh": "Waarom is een week te lang?",
+   "ctx": "You hear this conversation in a shop: \"Customer: Hi, I bought this jacket last week, but the zip is already broken. Assistant: I'm sorry to hear that. Do you have the receipt? Customer: Yes, here it is. Assistant: Thank you. Normally we can offer a refund or an exchange within fourteen days. Customer: I'd prefer an exchange, but I'm not sure you have the same one in my size. Assistant: Let me check the computer. We had two in blue, but I think they were sold yesterday. Customer: Oh dear. The blue was the reason I chose it. Assistant: Well, we could order one from our other shop, but it would take a week to arrive. Customer: A week is quite long, I'm going on holiday on Friday. Assistant:\""
+  },
+  {
+   "v": "What will the assistant most probably say next?",
+   "o": [
+    "ask the customer to leave",
+    "say the jacket is not broken",
+    "offer a free holiday",
+    "suggest a refund"
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 1,
+   "u": "Terugbetaling is logisch. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"ask the customer to leave\"? Dan denk je dat de verkoopster de klant wegstuurt. Ze is tot nu toe behulpzaam, en zoekt een oplossing.",
+    "Koos je \"say the jacket is not broken\"? Dan denk je dat ze het probleem ontkent. Ze geloofde de klant al, en zocht een oplossing.",
+    "Koos je \"offer a free holiday\"? Dan denk je dat ze een gratis vakantie aanbiedt. Dat is onrealistisch, en past niet bij een winkel.",
+    "Klopt: omdat een week te lang is, ligt een terugbetaling of een ander alternatief voor de hand."
+   ],
+   "uh": "Wat zegt de verkoopster waarschijnlijk?",
+   "ctx": "You hear this conversation in a shop: \"Customer: Hi, I bought this jacket last week, but the zip is already broken. Assistant: I'm sorry to hear that. Do you have the receipt? Customer: Yes, here it is. Assistant: Thank you. Normally we can offer a refund or an exchange within fourteen days. Customer: I'd prefer an exchange, but I'm not sure you have the same one in my size. Assistant: Let me check the computer. We had two in blue, but I think they were sold yesterday. Customer: Oh dear. The blue was the reason I chose it. Assistant: Well, we could order one from our other shop, but it would take a week to arrive. Customer: A week is quite long, I'm going on holiday on Friday. Assistant:\""
+  },
+  {
+   "v": "Which reply is the most unlikely at the end?",
+   "o": [
+    "\"Please leave, I cannot help you.\"",
+    "\"Then maybe a refund would suit you better.\"",
+    "\"Let me check whether the other shop has one.\"",
+    "\"I can offer you a voucher instead.\""
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 4,
+   "u": "Niet behulpzaam = onwaarschijnlijk. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: de verkoopster is tot nu toe behulpzaam, dus dit past niet.",
+    "Koos je \"\"Then maybe a refund would suit you better.\"\"? Dan denk je dat dit onwaarschijnlijk is. Het is een logisch voorstel, en past bij de situatie.",
+    "Koos je \"\"Let me check whether the other shop has one.\"\"? Dan denk je dat dit onwaarschijnlijk is. Het is een behulpzaam voorstel, en past bij de situatie.",
+    "Koos je \"\"I can offer you a voucher instead.\"\"? Dan denk je dat dit onwaarschijnlijk is. Het is een gebruikelijk alternatief, en past bij de situatie."
+   ],
+   "uh": "Welke reactie is onwaarschijnlijk?",
+   "ctx": "You hear this conversation in a shop: \"Customer: Hi, I bought this jacket last week, but the zip is already broken. Assistant: I'm sorry to hear that. Do you have the receipt? Customer: Yes, here it is. Assistant: Thank you. Normally we can offer a refund or an exchange within fourteen days. Customer: I'd prefer an exchange, but I'm not sure you have the same one in my size. Assistant: Let me check the computer. We had two in blue, but I think they were sold yesterday. Customer: Oh dear. The blue was the reason I chose it. Assistant: Well, we could order one from our other shop, but it would take a week to arrive. Customer: A week is quite long, I'm going on holiday on Friday. Assistant:\""
+  },
+  {
+   "v": "What is Noah's problem with going to the beach on Saturday?",
+   "o": [
+    "he dislikes the beach",
+    "he has no swimsuit",
+    "a match and rain",
+    "the others cannot come"
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 1,
+   "u": "Wedstrijd en regen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"he dislikes the beach\"? Dan denk je dat Noah het strand niet leuk vindt. Hij zegt dat hij graag zou willen, dus dat is het probleem niet.",
+    "Koos je \"he has no swimsuit\"? Dan denk je dat hij geen zwembroek heeft. Daar wordt niets over gezegd, en de problemen zijn de wedstrijd en het weer.",
+    "Klopt: hij heeft een wedstrijd in de ochtend en er wordt regen voorspeld.",
+    "Koos je \"the others cannot come\"? Dan denk je dat de anderen niet kunnen. Mia heeft het hen al verteld, en dat is geen probleem van Noah."
+   ],
+   "uh": "Wat is Noahs probleem?",
+   "ctx": "You hear two friends planning something: \"Mia: Shall we go to the beach on Saturday? Noah: I'd love to, but I've got a football match in the morning. Mia: What time does it finish? Noah: Around twelve, I think. Mia: Then we could leave after lunch. Noah: That could work, but the forecast says rain in the afternoon. Mia: Really? That's a pity. I'd already told the others. Noah: Maybe we could do something indoors instead, like bowling or the cinema. Mia: Hmm, the cinema is a good idea, but I'd rather do something active. Noah:\""
+  },
+  {
+   "v": "What will Noah most probably suggest?",
+   "o": [
+    "a day at home alone",
+    "an active indoor activity",
+    "the beach anyway in the rain",
+    "a long drive to another country"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 0,
+   "u": "Actief binnen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"a day at home alone\"? Dan denk je dat Noah thuis wil blijven. Hij stelt steeds iets samen voor, en wil een alternatief.",
+    "Klopt: Mia wil iets actiefs en Noah noemde al binnenactiviteiten.",
+    "Koos je \"the beach anyway in the rain\"? Dan denk je dat hij toch naar het strand wil. Hij zei dat de regen een probleem is, en stelt een alternatief voor.",
+    "Koos je \"a long drive to another country\"? Dan denk je dat hij ver wil rijden. Dat past niet bij een zaterdag met een wedstrijd, en niet bij het gesprek."
+   ],
+   "uh": "Wat stelt Noah voor?",
+   "ctx": "You hear two friends planning something: \"Mia: Shall we go to the beach on Saturday? Noah: I'd love to, but I've got a football match in the morning. Mia: What time does it finish? Noah: Around twelve, I think. Mia: Then we could leave after lunch. Noah: That could work, but the forecast says rain in the afternoon. Mia: Really? That's a pity. I'd already told the others. Noah: Maybe we could do something indoors instead, like bowling or the cinema. Mia: Hmm, the cinema is a good idea, but I'd rather do something active. Noah:\""
+  },
+  {
+   "v": "How does Mia react to the cinema idea?",
+   "o": [
+    "she rejects it angrily",
+    "she accepts it happily at once",
+    "she ignores the idea",
+    "she likes it, wants active"
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 1,
+   "u": "Goed idee, maar liever actief. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"she rejects it angrily\"? Dan denk je dat Mia boos afwijst. Ze noemt het een goed idee, en blijft vriendelijk.",
+    "Koos je \"she accepts it happily at once\"? Dan denk je dat Mia direct instemt. Ze zegt but I'd rather, en wil iets anders.",
+    "Koos je \"she ignores the idea\"? Dan denk je dat Mia het negeert. Ze reageert er direct op, en geeft haar voorkeur.",
+    "Klopt: ze noemt de bioscoop een goed idee, maar wil liever iets actiefs."
+   ],
+   "uh": "Hoe reageert Mia?",
+   "ctx": "You hear two friends planning something: \"Mia: Shall we go to the beach on Saturday? Noah: I'd love to, but I've got a football match in the morning. Mia: What time does it finish? Noah: Around twelve, I think. Mia: Then we could leave after lunch. Noah: That could work, but the forecast says rain in the afternoon. Mia: Really? That's a pity. I'd already told the others. Noah: Maybe we could do something indoors instead, like bowling or the cinema. Mia: Hmm, the cinema is a good idea, but I'd rather do something active. Noah:\""
+  },
+  {
+   "v": "What will the interviewer most probably ask next?",
+   "o": [
+    "how she handles it",
+    "whether she likes tea",
+    "where she was born",
+    "what time the interview ends"
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 0,
+   "u": "Zwak punt, dan doorvragen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: na een zwak punt volgt meestal een vraag hoe ze ermee omgaat.",
+    "Koos je \"whether she likes tea\"? Dan denk je dat hij naar thee vraagt. Dat past niet bij een sollicitatie, en volgt niet uit haar antwoord.",
+    "Koos je \"where she was born\"? Dan denk je dat hij naar haar geboorteplaats vraagt. Dat is niet logisch na een zwak punt, en staat los van het gesprek.",
+    "Koos je \"what time the interview ends\"? Dan denk je dat hij naar de eindtijd vraagt. Dat past niet bij het gesprek, en is geen vervolg op haar antwoord."
+   ],
+   "uh": "Wat vraagt de interviewer waarschijnlijk?",
+   "ctx": "You hear part of a job interview: \"Interviewer: Thank you for coming in, Ms Hall. Could you tell me why you applied for this position? Ms Hall: Of course. I've been working as a nurse for six years, but I'd like to move into training new nurses. Interviewer: That's interesting. Have you had any experience with teaching? Ms Hall: A little. I've been mentoring students on my ward for two years. Interviewer: And how did they respond? Ms Hall: Very well, I think. Three of them have since asked me to be their tutor. Interviewer: Impressive. And what would you say is your biggest weakness? Ms Hall: Well, I can be a bit impatient when people don't ask for help. Interviewer:\""
+  },
+  {
+   "v": "What does Ms Hall say about her weakness?",
+   "o": [
+    "she is always late",
+    "she dislikes teaching",
+    "she is impatient",
+    "she cannot work in a team"
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 2,
+   "u": "Ongeduldig. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"she is always late\"? Dan denk je dat ze altijd te laat is. Dat noemt ze niet, en haar zwak punt is ongeduld.",
+    "Koos je \"she dislikes teaching\"? Dan denk je dat ze lesgeven niet leuk vindt. Ze wil juist nieuwe verpleegkundigen opleiden, dus dat klopt niet.",
+    "Klopt: ze noemt ongeduld als mensen niet om hulp vragen.",
+    "Koos je \"she cannot work in a team\"? Dan denk je dat ze niet kan samenwerken. Dat staat niet in het gesprek, en haar zwak punt is ongeduld."
+   ],
+   "uh": "Wat is haar zwakte?",
+   "ctx": "You hear part of a job interview: \"Interviewer: Thank you for coming in, Ms Hall. Could you tell me why you applied for this position? Ms Hall: Of course. I've been working as a nurse for six years, but I'd like to move into training new nurses. Interviewer: That's interesting. Have you had any experience with teaching? Ms Hall: A little. I've been mentoring students on my ward for two years. Interviewer: And how did they respond? Ms Hall: Very well, I think. Three of them have since asked me to be their tutor. Interviewer: Impressive. And what would you say is your biggest weakness? Ms Hall: Well, I can be a bit impatient when people don't ask for help. Interviewer:\""
+  },
+  {
+   "v": "What is the function of \"Impressive\" in the conversation?",
+   "o": [
+    "the interviewer doubts her answer",
+    "praise",
+    "the interviewer ends the interview",
+    "the interviewer asks a question"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 3,
+   "u": "Impressive = compliment. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"the interviewer doubts her answer\"? Dan denk je dat hij twijfelt. Impressive is positief, en toont waardering.",
+    "Klopt: impressive is een compliment voor haar antwoord over haar studenten.",
+    "Koos je \"the interviewer ends the interview\"? Dan denk je dat hij het gesprek beëindigt. Hij stelt daarna nog een vraag, dus het gesprek gaat door.",
+    "Koos je \"the interviewer asks a question\"? Dan denk je dat hij een vraag stelt. Impressive is een compliment, en geen vraag."
+   ],
+   "uh": "Wat betekent impressive hier?",
+   "ctx": "You hear part of a job interview: \"Interviewer: Thank you for coming in, Ms Hall. Could you tell me why you applied for this position? Ms Hall: Of course. I've been working as a nurse for six years, but I'd like to move into training new nurses. Interviewer: That's interesting. Have you had any experience with teaching? Ms Hall: A little. I've been mentoring students on my ward for two years. Interviewer: And how did they respond? Ms Hall: Very well, I think. Three of them have since asked me to be their tutor. Interviewer: Impressive. And what would you say is your biggest weakness? Ms Hall: Well, I can be a bit impatient when people don't ask for help. Interviewer:\""
+  },
+  {
+   "v": "Which clue tells you the assistant will probably offer a refund?",
+   "o": [
+    "the customer lost the receipt",
+    "the jacket is blue",
+    "the assistant is polite",
+    "a week is too long"
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 0,
+   "u": "Te lang wachten = terugbetaling. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"the customer lost the receipt\"? Dan denk je dat het kwijtraken van de bon het vervolg bepaalt. Ze liet de bon juist zien, dus dat is het niet.",
+    "Koos je \"the jacket is blue\"? Dan denk je dat de kleur het vervolg bepaalt. Blauw is alleen de reden voor haar keuze, en geeft geen aanwijzing.",
+    "Koos je \"the assistant is polite\"? Dan denk je dat beleefdheid het vervolg bepaalt. Die zegt niets over wat ze gaat aanbieden, en geeft geen aanwijzing.",
+    "Klopt: omdat wachten niet past, ligt terugbetalen voor de hand."
+   ],
+   "uh": "Welke aanwijzing past?",
+   "ctx": "You hear this conversation in a shop: \"Customer: Hi, I bought this jacket last week, but the zip is already broken. Assistant: I'm sorry to hear that. Do you have the receipt? Customer: Yes, here it is. Assistant: Thank you. Normally we can offer a refund or an exchange within fourteen days. Customer: I'd prefer an exchange, but I'm not sure you have the same one in my size. Assistant: Let me check the computer. We had two in blue, but I think they were sold yesterday. Customer: Oh dear. The blue was the reason I chose it. Assistant: Well, we could order one from our other shop, but it would take a week to arrive. Customer: A week is quite long, I'm going on holiday on Friday. Assistant:\""
+  },
+  {
+   "v": "What is the most likely reaction of the customer to a refund?",
+   "o": [
+    "she accepts: she is leaving",
+    "she refuses because she loves waiting",
+    "she asks for a bigger jacket",
+    "she buys two more jackets"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 2,
+   "u": "Vakantie, dus terugbetaling. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: ze gaat vrijdag op vakantie en kan niet wachten op een ruil.",
+    "Koos je \"she refuses because she loves waiting\"? Dan denk je dat ze graag wacht. Ze vindt een week te lang, en wil snel een oplossing.",
+    "Koos je \"she asks for a bigger jacket\"? Dan denk je dat ze een grotere jas wil. De maat is niet het probleem, en ze heeft haast.",
+    "Koos je \"she buys two more jackets\"? Dan denk je dat ze meer jassen koopt. Haar jas is kapot, en ze wil een oplossing."
+   ],
+   "uh": "Wat doet de klant waarschijnlijk?",
+   "ctx": "You hear this conversation in a shop: \"Customer: Hi, I bought this jacket last week, but the zip is already broken. Assistant: I'm sorry to hear that. Do you have the receipt? Customer: Yes, here it is. Assistant: Thank you. Normally we can offer a refund or an exchange within fourteen days. Customer: I'd prefer an exchange, but I'm not sure you have the same one in my size. Assistant: Let me check the computer. We had two in blue, but I think they were sold yesterday. Customer: Oh dear. The blue was the reason I chose it. Assistant: Well, we could order one from our other shop, but it would take a week to arrive. Customer: A week is quite long, I'm going on holiday on Friday. Assistant:\""
+  },
+  {
+   "v": "What does \"Hmm\" at the start of Mia's last answer show?",
+   "o": [
+    "enthusiasm about the idea",
+    "anger at Noah",
+    "she is not convinced",
+    "boredom with the conversation"
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 3,
+   "u": "Hmm = aarzeling. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"enthusiasm about the idea\"? Dan denk je dat hmm enthousiasme toont. Een aarzeling past niet bij enthousiasme, en ze zegt but.",
+    "Koos je \"anger at Noah\"? Dan denk je dat hmm boosheid toont. Haar toon blijft vriendelijk, en ze noemt het een goed idee.",
+    "Klopt: hmm laat aarzeling horen voordat ze liever iets actiefs noemt.",
+    "Koos je \"boredom with the conversation\"? Dan denk je dat hmm verveling toont. Ze denkt na en reageert inhoudelijk, en geeft haar voorkeur."
+   ],
+   "uh": "Wat laat hmm zien?",
+   "ctx": "You hear two friends planning something: \"Mia: Shall we go to the beach on Saturday? Noah: I'd love to, but I've got a football match in the morning. Mia: What time does it finish? Noah: Around twelve, I think. Mia: Then we could leave after lunch. Noah: That could work, but the forecast says rain in the afternoon. Mia: Really? That's a pity. I'd already told the others. Noah: Maybe we could do something indoors instead, like bowling or the cinema. Mia: Hmm, the cinema is a good idea, but I'd rather do something active. Noah:\""
+  },
+  {
+   "v": "Which suggestion would fit best after \"I'd rather do something active\"?",
+   "o": [
+    "\"Let's stay at home and sleep.\"",
+    "\"What about bowling?\"",
+    "\"The beach is closed forever.\"",
+    "\"I hate all sports.\""
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 1,
+   "u": "Actief en binnen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"Let's stay at home and sleep.\"\"? Dan denk je dat dit past. Slapen is juist niet actief, en past niet bij Mia's wens.",
+    "Klopt: klimmen of bowlen is actief en kan binnen.",
+    "Koos je \"\"The beach is closed forever.\"\"? Dan denk je dat dit past. Het is overdreven, en geeft geen actief alternatief.",
+    "Koos je \"\"I hate all sports.\"\"? Dan denk je dat dit past. Noah wil juist iets actiefs voorstellen, en dat past niet bij een wedstrijd."
+   ],
+   "uh": "Welk voorstel past?",
+   "ctx": "You hear two friends planning something: \"Mia: Shall we go to the beach on Saturday? Noah: I'd love to, but I've got a football match in the morning. Mia: What time does it finish? Noah: Around twelve, I think. Mia: Then we could leave after lunch. Noah: That could work, but the forecast says rain in the afternoon. Mia: Really? That's a pity. I'd already told the others. Noah: Maybe we could do something indoors instead, like bowling or the cinema. Mia: Hmm, the cinema is a good idea, but I'd rather do something active. Noah:\""
+  },
+  {
+   "v": "Which continuation is NOT likely at the end of the conversation?",
+   "o": [
+    "they agree to go bowling",
+    "they make a plan for Sunday",
+    "they decide to ask the others",
+    "Mia refuses to see him"
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 4,
+   "u": "Vriendelijk gesprek, dus geen ruzie. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"they agree to go bowling\"? Dan denk je dat dit onwaarschijnlijk is. Het is een logisch vervolg, en past bij het gesprek.",
+    "Koos je \"they make a plan for Sunday\"? Dan denk je dat dit onwaarschijnlijk is. Het is mogelijk als zaterdag niet lukt, en past bij het gesprek.",
+    "Koos je \"they decide to ask the others\"? Dan denk je dat dit onwaarschijnlijk is. Mia heeft de anderen al uitgenodigd, en past bij het gesprek.",
+    "Klopt: het gesprek is vriendelijk, dus dit past niet."
+   ],
+   "uh": "Welk vervolg is onwaarschijnlijk?",
+   "ctx": "You hear two friends planning something: \"Mia: Shall we go to the beach on Saturday? Noah: I'd love to, but I've got a football match in the morning. Mia: What time does it finish? Noah: Around twelve, I think. Mia: Then we could leave after lunch. Noah: That could work, but the forecast says rain in the afternoon. Mia: Really? That's a pity. I'd already told the others. Noah: Maybe we could do something indoors instead, like bowling or the cinema. Mia: Hmm, the cinema is a good idea, but I'd rather do something active. Noah:\""
+  },
+  {
+   "v": "Why will the interviewer probably ask a follow-up about the weakness?",
+   "o": [
+    "to see how she handles it",
+    "to end the interview at once",
+    "to offer her the job immediately",
+    "to check her address"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 0,
+   "u": "Doorvragen naar omgaan met zwak punt. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: een interviewer wil weten hoe de kandidaat met haar zwak punt omgaat.",
+    "Koos je \"to end the interview at once\"? Dan denk je dat het gesprek eindigt. Hij zou dan iets anders zeggen, en niet een zwak punt uitdiepen.",
+    "Koos je \"to offer her the job immediately\"? Dan denk je dat hij haar de baan aanbiedt. Dat is te vroeg, en past niet bij doorvragen.",
+    "Koos je \"to check her address\"? Dan denk je dat hij haar adres controleert. Dat past niet bij een zwak punt, en volgt niet uit het gesprek."
+   ],
+   "uh": "Waarom vraagt hij door?",
+   "ctx": "You hear part of a job interview: \"Interviewer: Thank you for coming in, Ms Hall. Could you tell me why you applied for this position? Ms Hall: Of course. I've been working as a nurse for six years, but I'd like to move into training new nurses. Interviewer: That's interesting. Have you had any experience with teaching? Ms Hall: A little. I've been mentoring students on my ward for two years. Interviewer: And how did they respond? Ms Hall: Very well, I think. Three of them have since asked me to be their tutor. Interviewer: Impressive. And what would you say is your biggest weakness? Ms Hall: Well, I can be a bit impatient when people don't ask for help. Interviewer:\""
+  },
+  {
+   "v": "Which answer from Ms Hall would fit best after the follow-up?",
+   "o": [
+    "she never helps anyone",
+    "she dislikes patients",
+    "she asks if they need help",
+    "she cannot remember anything"
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 3,
+   "u": "Zelf hulp aanbieden. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"she never helps anyone\"? Dan denk je dat ze nooit helpt. Ze is juist verpleegkundige en mentor, dus dat past niet.",
+    "Koos je \"she dislikes patients\"? Dan denk je dat ze patiënten niet mag. Dat staat niet in het gesprek, en past niet bij haar werk.",
+    "Klopt: dat is een logische manier om met haar ongeduld om te gaan.",
+    "Koos je \"she cannot remember anything\"? Dan denk je dat ze het niet meer weet. Ze antwoordt tot nu toe duidelijk, dus dat is onwaarschijnlijk."
+   ],
+   "uh": "Welk antwoord past?",
+   "ctx": "You hear part of a job interview: \"Interviewer: Thank you for coming in, Ms Hall. Could you tell me why you applied for this position? Ms Hall: Of course. I've been working as a nurse for six years, but I'd like to move into training new nurses. Interviewer: That's interesting. Have you had any experience with teaching? Ms Hall: A little. I've been mentoring students on my ward for two years. Interviewer: And how did they respond? Ms Hall: Very well, I think. Three of them have since asked me to be their tutor. Interviewer: Impressive. And what would you say is your biggest weakness? Ms Hall: Well, I can be a bit impatient when people don't ask for help. Interviewer:\""
+  },
+  {
+   "v": "What does Ms Hall want to change in her career?",
+   "o": [
+    "leave nursing completely",
+    "train new nurses",
+    "become a doctor",
+    "work fewer hours"
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 2,
+   "u": "Opleiden van nieuwe verpleegkundigen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"leave nursing completely\"? Dan denk je dat ze stopt met verpleging. Ze wil binnen het vak blijven, en alleen opleiden.",
+    "Klopt: ze wil nieuwe verpleegkundigen gaan opleiden.",
+    "Koos je \"become a doctor\"? Dan denk je dat ze arts wil worden. Dat staat niet in het gesprek, en ze noemt opleiden.",
+    "Koos je \"work fewer hours\"? Dan denk je dat ze minder uren wil werken. Dat noemt ze niet, en ze wil iets anders doen."
+   ],
+   "uh": "Wat wil ze veranderen?",
+   "ctx": "You hear part of a job interview: \"Interviewer: Thank you for coming in, Ms Hall. Could you tell me why you applied for this position? Ms Hall: Of course. I've been working as a nurse for six years, but I'd like to move into training new nurses. Interviewer: That's interesting. Have you had any experience with teaching? Ms Hall: A little. I've been mentoring students on my ward for two years. Interviewer: And how did they respond? Ms Hall: Very well, I think. Three of them have since asked me to be their tutor. Interviewer: Impressive. And what would you say is your biggest weakness? Ms Hall: Well, I can be a bit impatient when people don't ask for help. Interviewer:\""
+  },
+  {
+   "v": "What does the assistant do after the customer says \"Oh dear\"?",
+   "o": [
+    "refuses any more help at all",
+    "closes the shop",
+    "asks for more money",
+    "orders from another shop"
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 1,
+   "u": "Bestellen bij de andere winkel. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"refuses any more help at all\"? Dan denk je dat ze niet meer helpt. Ze zoekt juist een oplossing, en blijft behulpzaam.",
+    "Koos je \"closes the shop\"? Dan denk je dat ze de winkel sluit. Daar staat niets over, en het gesprek gaat door.",
+    "Koos je \"asks for more money\"? Dan denk je dat ze meer geld vraagt. Dat past niet bij een ruil, en wordt niet genoemd.",
+    "Klopt: ze stelt voor een jas uit de andere winkel te bestellen."
+   ],
+   "uh": "Wat doet de verkoopster?",
+   "ctx": "You hear this conversation in a shop: \"Customer: Hi, I bought this jacket last week, but the zip is already broken. Assistant: I'm sorry to hear that. Do you have the receipt? Customer: Yes, here it is. Assistant: Thank you. Normally we can offer a refund or an exchange within fourteen days. Customer: I'd prefer an exchange, but I'm not sure you have the same one in my size. Assistant: Let me check the computer. We had two in blue, but I think they were sold yesterday. Customer: Oh dear. The blue was the reason I chose it. Assistant: Well, we could order one from our other shop, but it would take a week to arrive. Customer: A week is quite long, I'm going on holiday on Friday. Assistant:\""
+  },
+  {
+   "v": "Which final sentence from the customer is the most probable?",
+   "o": [
+    "\"Then I'll take a refund.\"",
+    "\"I'll wait a year, no problem.\"",
+    "\"I want to buy ten more jackets.\"",
+    "\"I never wanted a jacket.\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 4,
+   "u": "Terugbetaling is logisch. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: een week wachten past niet, dus ze kiest voor terugbetaling.",
+    "Koos je \"\"I'll wait a year, no problem.\"\"? Dan denk je dat ze een jaar wil wachten. Ze vindt een week al te lang, en gaat op vakantie.",
+    "Koos je \"\"I want to buy ten more jackets.\"\"? Dan denk je dat ze tien jassen wil kopen. Haar jas is kapot, en ze wil een oplossing.",
+    "Koos je \"\"I never wanted a jacket.\"\"? Dan denk je dat ze nooit een jas wilde. Ze koos juist de blauwe, en dat staat in het gesprek."
+   ],
+   "uh": "Welke zin is het waarschijnlijkst?",
+   "ctx": "You hear this conversation in a shop: \"Customer: Hi, I bought this jacket last week, but the zip is already broken. Assistant: I'm sorry to hear that. Do you have the receipt? Customer: Yes, here it is. Assistant: Thank you. Normally we can offer a refund or an exchange within fourteen days. Customer: I'd prefer an exchange, but I'm not sure you have the same one in my size. Assistant: Let me check the computer. We had two in blue, but I think they were sold yesterday. Customer: Oh dear. The blue was the reason I chose it. Assistant: Well, we could order one from our other shop, but it would take a week to arrive. Customer: A week is quite long, I'm going on holiday on Friday. Assistant:\""
+  }
+ ],
+ "oe": [
+  {
+   "bron": "Examenstijl",
+   "ctx": "You hear this conversation in a shop: \"Customer: Hi, I bought this jacket last week, but the zip is already broken. Assistant: I'm sorry to hear that. Do you have the receipt? Customer: Yes, here it is. Assistant: Thank you. Normally we can offer a refund or an exchange within fourteen days. Customer: I'd prefer an exchange, but I'm not sure you have the same one in my size. Assistant: Let me check the computer. We had two in blue, but I think they were sold yesterday. Customer: Oh dear. The blue was the reason I chose it. Assistant: Well, we could order one from our other shop, but it would take a week to arrive. Customer: A week is quite long, I'm going on holiday on Friday. Assistant:\" You must predict what the assistant says next.",
+   "v": "Say what the assistant will most probably say and give the clue.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Ze stelt een terugbetaling of ander alternatief voor (1p). De klant zegt dat een week te lang is (1p). Ze gaat vrijdag op vakantie (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "You hear two friends planning something: \"Mia: Shall we go to the beach on Saturday? Noah: I'd love to, but I've got a football match in the morning. Mia: What time does it finish? Noah: Around twelve, I think. Mia: Then we could leave after lunch. Noah: That could work, but the forecast says rain in the afternoon. Mia: Really? That's a pity. I'd already told the others. Noah: Maybe we could do something indoors instead, like bowling or the cinema. Mia: Hmm, the cinema is a good idea, but I'd rather do something active. Noah:\" You must predict what Noah says next.",
+   "v": "Say what Noah most probably suggests and explain why.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Een actieve binnenactiviteit, zoals bowlen of klimmen (1p). Mia wil liever iets actiefs (1p). Het strand en de bioscoop vallen af (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "You hear part of a job interview: \"Interviewer: Thank you for coming in, Ms Hall. Could you tell me why you applied for this position? Ms Hall: Of course. I've been working as a nurse for six years, but I'd like to move into training new nurses. Interviewer: That's interesting. Have you had any experience with teaching? Ms Hall: A little. I've been mentoring students on my ward for two years. Interviewer: And how did they respond? Ms Hall: Very well, I think. Three of them have since asked me to be their tutor. Interviewer: Impressive. And what would you say is your biggest weakness? Ms Hall: Well, I can be a bit impatient when people don't ask for help. Interviewer:\" You must predict what the interviewer asks next.",
+   "v": "Say what the interviewer will ask and why.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Hoe ze met haar ongeduld omgaat (1p). Ze noemde net haar zwakte (1p). Een interviewer wil weten hoe een kandidaat daarmee omgaat (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "You hear this conversation in a shop: \"Customer: Hi, I bought this jacket last week, but the zip is already broken. Assistant: I'm sorry to hear that. Do you have the receipt? Customer: Yes, here it is. Assistant: Thank you. Normally we can offer a refund or an exchange within fourteen days. Customer: I'd prefer an exchange, but I'm not sure you have the same one in my size. Assistant: Let me check the computer. We had two in blue, but I think they were sold yesterday. Customer: Oh dear. The blue was the reason I chose it. Assistant: Well, we could order one from our other shop, but it would take a week to arrive. Customer: A week is quite long, I'm going on holiday on Friday. Assistant:\" You must judge a possible reply.",
+   "v": "Name one reply from the customer that is probable and one that is not, with reasons.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Probabel: ik neem een terugbetaling (1p). Reden: ze gaat op vakantie (1p). Onwaarschijnlijk: ik wacht een jaar (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "You hear two friends planning something: \"Mia: Shall we go to the beach on Saturday? Noah: I'd love to, but I've got a football match in the morning. Mia: What time does it finish? Noah: Around twelve, I think. Mia: Then we could leave after lunch. Noah: That could work, but the forecast says rain in the afternoon. Mia: Really? That's a pity. I'd already told the others. Noah: Maybe we could do something indoors instead, like bowling or the cinema. Mia: Hmm, the cinema is a good idea, but I'd rather do something active. Noah:\" You must explain a hesitation.",
+   "v": "Explain what \"Hmm\" shows in Mia's last answer.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Aarzeling of twijfel (1p). Ze vindt de bioscoop een goed idee (1p). Maar ze wil liever iets actiefs (1p)."
+  }
+ ]
+}
