@@ -1,0 +1,682 @@
+{
+ "id": "B2",
+ "lo": "en.B.2",
+ "gs": 2,
+ "naam": "De hoofdgedachte van een luister- of kijktekst aangeven",
+ "beschrijving": "Je leert bij een Engelse lezing, reportage of gesprek het onderwerp en de hoofdgedachte te onderscheiden, hoofdzaken van voorbeelden te scheiden en signaalwoorden te gebruiken.",
+ "ceStatus": "CE",
+ "binas": "",
+ "val": "",
+ "onderwerpen": [
+  "Onderwerp en hoofdgedachte",
+  "Signaalwoorden in gesproken tekst",
+  "Hoofdzaak en voorbeeld",
+  "Begin en slot als aanwijzing",
+  "De kern van een gesprek"
+ ],
+ "sam": "Het onderwerp is waar de opname over gaat, de hoofdgedachte is wat de spreker erover zegt. Aan het begin kondigt de spreker de kern vaak aan en aan het eind vat hij samen met so of in short. Voorbeelden en getallen ondersteunen de kern maar zijn zelf niet de kern. Of course geeft een toegeving, however een tegenstelling en therefore een gevolg. In een gesprek is de kern wat beide sprekers besluiten of afspreken.",
+ "begrippen": [
+  {
+   "t": "Onderwerp",
+   "d": "Waar de opname over gaat, in een paar woorden."
+  },
+  {
+   "t": "Hoofdgedachte",
+   "d": "Wat de spreker over het onderwerp zegt."
+  },
+  {
+   "t": "Kernboodschap",
+   "d": "De belangrijkste boodschap van de spreker."
+  },
+  {
+   "t": "Voorbeeld",
+   "d": "Een geval dat een punt illustreert."
+  },
+  {
+   "t": "Bewijs",
+   "d": "Een onderzoek of cijfer dat het punt ondersteunt."
+  },
+  {
+   "t": "Toegeving",
+   "d": "Iets toegeven voordat het echte punt komt, met of course."
+  },
+  {
+   "t": "Tegenstelling",
+   "d": "Een tegengesteld punt, met however."
+  },
+  {
+   "t": "Conclusie",
+   "d": "De slotsom, met so of in short."
+  },
+  {
+   "t": "Gevolg",
+   "d": "Wat uit iets volgt, met therefore."
+  },
+  {
+   "t": "Samenvatting",
+   "d": "Een korte weergave van de kern."
+  },
+  {
+   "t": "Besluit",
+   "d": "Wat sprekers in een gesprek afspreken."
+  },
+  {
+   "t": "Bijzaak",
+   "d": "Een detail dat je kunt weglaten."
+  }
+ ],
+ "sv": [
+  {
+   "v": "Which question helps you find the main idea of a recording?",
+   "o": [
+    "How many words does the speaker use?",
+    "What is the main message?",
+    "Where does the speaker live?",
+    "How fast does the speaker talk?"
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 0,
+   "u": "Kern = belangrijkste boodschap. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"How many words does the speaker use?\"? Dan denk je dat het aantal woorden helpt. Dat zegt niets over de boodschap, en geeft geen kern.",
+    "Klopt: met die vraag zoek je de kernboodschap van de spreker.",
+    "Koos je \"Where does the speaker live?\"? Dan denk je dat de woonplaats helpt. Dat is een detail over de persoon, en niet de boodschap.",
+    "Koos je \"How fast does the speaker talk?\"? Dan denk je dat het tempo helpt. Dat zegt iets over de stijl, en niet over de inhoud."
+   ],
+   "uh": "Welke vraag helpt?"
+  },
+  {
+   "v": "Which words often introduce the speaker's conclusion?",
+   "o": [
+    "\"for example\" and \"for instance\"",
+    "\"however\" and \"but\"",
+    "\"first\" and \"next\"",
+    "\"so\" and \"in short\""
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 1,
+   "u": "So en in short = conclusie. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"for example\" and \"for instance\"\"? Dan denk je dat deze woorden de conclusie inleiden. Ze leiden een voorbeeld in, en trekken geen slotsom.",
+    "Koos je \"\"however\" and \"but\"\"? Dan denk je dat deze woorden de conclusie inleiden. Ze geven een tegenstelling aan, en sluiten niets af.",
+    "Koos je \"\"first\" and \"next\"\"? Dan denk je dat deze woorden de conclusie inleiden. Ze geven een volgorde aan, en geen slotsom.",
+    "Klopt: so en in short leiden een samenvatting of conclusie in."
+   ],
+   "uh": "Welke woorden leiden de conclusie in?"
+  },
+  {
+   "v": "What is the function of an example in a talk?",
+   "o": [
+    "it supports a point",
+    "it states the main idea",
+    "it ends the talk",
+    "it changes the subject"
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 2,
+   "u": "Voorbeeld ondersteunt. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: een voorbeeld ondersteunt een punt maar is zelf niet de kern.",
+    "Koos je \"it states the main idea\"? Dan denk je dat een voorbeeld de kern geeft. Het illustreert alleen, en kan zonder verlies weg.",
+    "Koos je \"it ends the talk\"? Dan denk je dat een voorbeeld de spreker afsluit. Een voorbeeld staat meestal in het midden, en sluit niets af.",
+    "Koos je \"it changes the subject\"? Dan denk je dat een voorbeeld het onderwerp verandert. Het blijft bij hetzelfde onderwerp, en geeft een illustratie."
+   ],
+   "uh": "Wat doet een voorbeeld?"
+  },
+  {
+   "v": "Where do speakers often state the main idea?",
+   "o": [
+    "only in the middle of the talk",
+    "in the example",
+    "near the beginning or the end",
+    "in the greeting"
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 3,
+   "u": "Begin en eind. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"only in the middle of the talk\"? Dan denk je dat de kern alleen in het midden staat. Daar staan meestal de voorbeelden, en niet de kern.",
+    "Koos je \"in the example\"? Dan denk je dat de kern in het voorbeeld zit. Een voorbeeld is een bijzaak, en niet de kern.",
+    "Klopt: aan het begin kondigen ze de kern aan en aan het eind vatten ze samen.",
+    "Koos je \"in the greeting\"? Dan denk je dat de groet de kern bevat. Een groet zegt niets over de boodschap, en is alleen beleefdheid."
+   ],
+   "uh": "Waar staat de kern?"
+  },
+  {
+   "v": "Which word pair shows that a speaker admits something but continues with the real point?",
+   "o": [
+    "\"first ... then\"",
+    "\"of course ... however\"",
+    "\"for example ... such as\"",
+    "\"because ... so\""
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 1,
+   "u": "Of course, however = toegeving. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"first ... then\"\"? Dan denk je dat dit paar een toegeving toont omdat het twee delen verbindt. Het noemt alleen een volgorde, en geeft niets toe.",
+    "Klopt: of course geeft iets toe en however leidt het echte punt in.",
+    "Koos je \"\"for example ... such as\"\"? Dan denk je dat dit paar een toegeving toont omdat het iets nuanceert. Het geeft alleen voorbeelden, en gaat daarna niet verder met een tegenpunt.",
+    "Koos je \"\"because ... so\"\"? Dan denk je dat dit paar een toegeving toont omdat het twee ideeën koppelt. Het geeft een reden en een gevolg, en erkent niets."
+   ],
+   "uh": "Welk woordpaar toont een toegeving?"
+  },
+  {
+   "v": "In a conversation, how do you find the main point?",
+   "o": [
+    "only listen to the first speaker",
+    "count the number of questions",
+    "note every name that is mentioned",
+    "what both speakers agree on"
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 4,
+   "u": "Kern = besluit of afspraak. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"only listen to the first speaker\"? Dan denk je dat de eerste spreker genoeg is. Het antwoord komt vaak van de ander, en je mist de afspraak.",
+    "Koos je \"count the number of questions\"? Dan denk je dat het aantal vragen de kern geeft. Dat zegt niets over de inhoud, en geeft geen boodschap.",
+    "Koos je \"note every name that is mentioned\"? Dan denk je dat namen de kern bevatten. Namen zijn details, en niet de boodschap.",
+    "Klopt: bij een gesprek is de kern wat beide sprekers besluiten of afspreken."
+   ],
+   "uh": "Hoe vind je de kern?"
+  },
+  {
+   "v": "What is the difference between the topic and the main idea?",
+   "o": [
+    "topic = subject, main idea = message",
+    "there is no difference at all",
+    "topic = message, main idea = subject",
+    "topic = a detail, main idea = an example"
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 0,
+   "u": "Onderwerp en boodschap verschillen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: het onderwerp zegt waar het over gaat en de hoofdgedachte wat de spreker erover zegt.",
+    "Koos je \"there is no difference at all\"? Dan denk je dat ze gelijk zijn. Het onderwerp is korter, en de hoofdgedachte is een bewering.",
+    "Koos je \"topic = message, main idea = subject\"? Dan denk je dat het omgekeerd is. Het onderwerp is waar het over gaat, en de hoofdgedachte de boodschap.",
+    "Koos je \"topic = a detail, main idea = an example\"? Dan denk je dat het onderwerp een detail is. Het is het thema van de hele tekst, en niet een bijzaak."
+   ],
+   "uh": "Wat is het verschil?"
+  },
+  {
+   "v": "What is the topic of the talk?",
+   "o": [
+    "rooftops in Singapore",
+    "cooler cities in summer",
+    "urban gardening",
+    "children and their food"
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 0,
+   "u": "Onderwerp = stadstuinen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"rooftops in Singapore\"? Dan denk je dat het over daken in Singapore gaat. Singapore is alleen het voorbeeld, en niet het onderwerp.",
+    "Koos je \"cooler cities in summer\"? Dan denk je dat het over koelere steden gaat. Dat is een van de voordelen, en niet het onderwerp.",
+    "Klopt: de lezing gaat over stadstuinen op daken, balkons en parkeerplaatsen.",
+    "Koos je \"children and their food\"? Dan denk je dat het over kinderen en eten gaat. Dat is een voordeel, en niet het onderwerp."
+   ],
+   "uh": "Wat is het onderwerp?",
+   "ctx": "You hear the start of a talk: \"Welcome to today's talk on urban gardening. Many people think that growing food requires a large garden, but that is simply not true. In cities around the world, residents are turning rooftops, balconies and even abandoned car parks into productive gardens. In Singapore, for example, vegetables grown on rooftops now provide a small but growing share of the city's fresh food. Of course, urban gardens will never feed an entire city. However, they bring other benefits: neighbours meet each other, children learn where food comes from, and cities become greener and cooler in summer. So, as you can see, the real value of an urban garden is not only the vegetables it produces, but also the community it creates.\""
+  },
+  {
+   "v": "What is the function of Singapore in the talk?",
+   "o": [
+    "the main idea of the talk",
+    "an example of rooftops",
+    "the conclusion of the talk",
+    "a counter-argument"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 2,
+   "u": "Singapore = voorbeeld. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"the main idea of the talk\"? Dan denk je dat Singapore de kern is. Het is een voorbeeld, en niet de boodschap.",
+    "Klopt: de spreker noemt Singapore als voorbeeld van daken die voedsel leveren.",
+    "Koos je \"the conclusion of the talk\"? Dan denk je dat Singapore de conclusie is. De conclusie volgt na so, en gaat over gemeenschap.",
+    "Koos je \"a counter-argument\"? Dan denk je dat Singapore een tegenargument is. Het ondersteunt juist het punt, en spreekt het niet tegen."
+   ],
+   "uh": "Welke functie heeft Singapore?",
+   "ctx": "You hear the start of a talk: \"Welcome to today's talk on urban gardening. Many people think that growing food requires a large garden, but that is simply not true. In cities around the world, residents are turning rooftops, balconies and even abandoned car parks into productive gardens. In Singapore, for example, vegetables grown on rooftops now provide a small but growing share of the city's fresh food. Of course, urban gardens will never feed an entire city. However, they bring other benefits: neighbours meet each other, children learn where food comes from, and cities become greener and cooler in summer. So, as you can see, the real value of an urban garden is not only the vegetables it produces, but also the community it creates.\""
+  },
+  {
+   "v": "What does \"Of course\" introduce in the talk?",
+   "o": [
+    "a conclusion of the talk",
+    "an example of a point",
+    "a new topic of the talk",
+    "a concession"
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 1,
+   "u": "Of course = toegeving. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"a conclusion of the talk\"? Dan denk je dat of course een conclusie inleidt. Het geeft iets toe, en sluit niet af.",
+    "Koos je \"an example of a point\"? Dan denk je dat of course een voorbeeld inleidt. Het geeft een toegeving, en illustreert niets.",
+    "Koos je \"a new topic of the talk\"? Dan denk je dat of course een nieuw onderwerp opent. Het blijft bij hetzelfde, en geeft iets toe.",
+    "Klopt: de spreker geeft toe dat tuinen nooit een hele stad voeden."
+   ],
+   "uh": "Wat leidt of course in?",
+   "ctx": "You hear the start of a talk: \"Welcome to today's talk on urban gardening. Many people think that growing food requires a large garden, but that is simply not true. In cities around the world, residents are turning rooftops, balconies and even abandoned car parks into productive gardens. In Singapore, for example, vegetables grown on rooftops now provide a small but growing share of the city's fresh food. Of course, urban gardens will never feed an entire city. However, they bring other benefits: neighbours meet each other, children learn where food comes from, and cities become greener and cooler in summer. So, as you can see, the real value of an urban garden is not only the vegetables it produces, but also the community it creates.\""
+  },
+  {
+   "v": "What is the main idea of the talk?",
+   "o": [
+    "community, not only food",
+    "urban gardens will feed whole cities",
+    "gardens need large spaces",
+    "Singapore is a very green city"
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 3,
+   "u": "Kern: gemeenschap, niet alleen voedsel. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: de laatste zin zegt dat de waarde meer is dan groente: ook gemeenschap.",
+    "Koos je \"urban gardens will feed whole cities\"? Dan denk je dat stadstuinen steden voeden. De spreker zegt juist dat dat nooit zal gebeuren, en noemt andere voordelen.",
+    "Koos je \"gardens need large spaces\"? Dan denk je dat grote tuinen nodig zijn. De spreker zegt het tegenovergestelde, namelijk dat daken en balkons volstaan.",
+    "Koos je \"Singapore is a very green city\"? Dan denk je dat de kern over Singapore gaat. Singapore is een voorbeeld, en niet de boodschap."
+   ],
+   "uh": "Wat is de hoofdgedachte?",
+   "ctx": "You hear the start of a talk: \"Welcome to today's talk on urban gardening. Many people think that growing food requires a large garden, but that is simply not true. In cities around the world, residents are turning rooftops, balconies and even abandoned car parks into productive gardens. In Singapore, for example, vegetables grown on rooftops now provide a small but growing share of the city's fresh food. Of course, urban gardens will never feed an entire city. However, they bring other benefits: neighbours meet each other, children learn where food comes from, and cities become greener and cooler in summer. So, as you can see, the real value of an urban garden is not only the vegetables it produces, but also the community it creates.\""
+  },
+  {
+   "v": "What is the topic of the report?",
+   "o": [
+    "a Dutch university",
+    "lights in Antwerp",
+    "phone use when walking",
+    "traffic in busy streets"
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 0,
+   "u": "Onderwerp = telefoon en lopen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"a Dutch university\"? Dan denk je dat het over een universiteit gaat. Die voert alleen het onderzoek uit, en is niet het onderwerp.",
+    "Koos je \"lights in Antwerp\"? Dan denk je dat het over lampen gaat. Die zijn een oplossing, en niet het onderwerp.",
+    "Klopt: het onderzoek gaat over telefoongebruik tijdens het lopen.",
+    "Koos je \"traffic in busy streets\"? Dan denk je dat het over verkeer gaat. Verkeer is de context, en niet het onderwerp."
+   ],
+   "uh": "Wat is het onderwerp?",
+   "ctx": "You hear a radio report: \"Good evening. A new study from a Dutch university has looked at how people use their phones while walking. Researchers followed more than a thousand pedestrians in busy city streets and found that almost half of them looked at their screens while crossing the road. Not surprisingly, those people walked more slowly and were far less aware of traffic. Some listeners might say this is nothing new, but the researchers point out that the problem is getting worse each year. The city of Antwerp has therefore started to experiment with lights set into the pavement, which turn red at crossings so that people looking down can still see them. It is too early to say whether the lights work, but the idea has attracted attention from several other cities.\""
+  },
+  {
+   "v": "What is the function of the sentence about more than a thousand pedestrians?",
+   "o": [
+    "it gives the solution",
+    "it gives evidence",
+    "it states the conclusion",
+    "it is a joke"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 2,
+   "u": "Onderzoek = bewijs. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"it gives the solution\"? Dan denk je dat de zin de oplossing geeft. De oplossing volgt later met de lampen, en niet in deze zin.",
+    "Klopt: de zin laat met een onderzoek zien dat bijna de helft op het scherm kijkt.",
+    "Koos je \"it states the conclusion\"? Dan denk je dat de zin de conclusie geeft. Het is een onderzoeksresultaat, en geen slotsom.",
+    "Koos je \"it is a joke\"? Dan denk je dat de zin een grap is. De toon is serieus, en het is een gegeven."
+   ],
+   "uh": "Welke functie heeft de zin?",
+   "ctx": "You hear a radio report: \"Good evening. A new study from a Dutch university has looked at how people use their phones while walking. Researchers followed more than a thousand pedestrians in busy city streets and found that almost half of them looked at their screens while crossing the road. Not surprisingly, those people walked more slowly and were far less aware of traffic. Some listeners might say this is nothing new, but the researchers point out that the problem is getting worse each year. The city of Antwerp has therefore started to experiment with lights set into the pavement, which turn red at crossings so that people looking down can still see them. It is too early to say whether the lights work, but the idea has attracted attention from several other cities.\""
+  },
+  {
+   "v": "Which word signals the consequence in \"The city of Antwerp has therefore started to experiment\"?",
+   "o": [
+    "\"not surprisingly\"",
+    "\"some listeners\"",
+    "\"too early\"",
+    "\"therefore\""
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 1,
+   "u": "Therefore = gevolg. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"not surprisingly\"\"? Dan denk je dat not surprisingly het gevolg aangeeft. Het zegt dat iets te verwachten was, en geeft geen gevolg.",
+    "Koos je \"\"some listeners\"\"? Dan denk je dat some listeners het gevolg aangeeft. Het introduceert een tegenwerping, en geen gevolg.",
+    "Koos je \"\"too early\"\"? Dan denk je dat too early het gevolg aangeeft. Het geeft een voorbehoud, en geen gevolg.",
+    "Klopt: therefore laat zien dat Antwerpen uit het probleem een gevolg trekt."
+   ],
+   "uh": "Welk woord toont het gevolg?",
+   "ctx": "You hear a radio report: \"Good evening. A new study from a Dutch university has looked at how people use their phones while walking. Researchers followed more than a thousand pedestrians in busy city streets and found that almost half of them looked at their screens while crossing the road. Not surprisingly, those people walked more slowly and were far less aware of traffic. Some listeners might say this is nothing new, but the researchers point out that the problem is getting worse each year. The city of Antwerp has therefore started to experiment with lights set into the pavement, which turn red at crossings so that people looking down can still see them. It is too early to say whether the lights work, but the idea has attracted attention from several other cities.\""
+  },
+  {
+   "v": "What is the main idea of the report?",
+   "o": [
+    "a growing danger",
+    "pavement lights definitely work",
+    "people should never use phones",
+    "Antwerp is the first city in Europe"
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 3,
+   "u": "Kern: gevaar en proeven. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: het verslag meldt het probleem en de eerste proeven met lampen.",
+    "Koos je \"pavement lights definitely work\"? Dan denk je dat de lampen zeker werken. De spreker zegt dat het te vroeg is, en dus niet zeker.",
+    "Koos je \"people should never use phones\"? Dan denk je dat de boodschap een verbod is. Daar staat niets over, en het gaat om gevaar op straat.",
+    "Koos je \"Antwerp is the first city in Europe\"? Dan denk je dat de kern over Antwerpen gaat. De stad is een voorbeeld, en niet de boodschap."
+   ],
+   "uh": "Wat is de hoofdgedachte?",
+   "ctx": "You hear a radio report: \"Good evening. A new study from a Dutch university has looked at how people use their phones while walking. Researchers followed more than a thousand pedestrians in busy city streets and found that almost half of them looked at their screens while crossing the road. Not surprisingly, those people walked more slowly and were far less aware of traffic. Some listeners might say this is nothing new, but the researchers point out that the problem is getting worse each year. The city of Antwerp has therefore started to experiment with lights set into the pavement, which turn red at crossings so that people looking down can still see them. It is too early to say whether the lights work, but the idea has attracted attention from several other cities.\""
+  },
+  {
+   "v": "What is the conversation about?",
+   "o": [
+    "Anna's cousin and her job",
+    "studying law at university",
+    "Tom's choice after school",
+    "the work of Tom's parents"
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 4,
+   "u": "Onderwerp = Toms keuze. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"Anna's cousin and her job\"? Dan denk je dat het over het werk van Anna's nicht gaat. Zij is alleen een voorbeeld, en niet het onderwerp.",
+    "Koos je \"studying law at university\"? Dan denk je dat het over rechten gaat. Dat is de wens van zijn ouders, en maar een deel.",
+    "Klopt: Anna en Tom praten over wat Tom na school gaat doen.",
+    "Koos je \"the work of Tom's parents\"? Dan denk je dat het over het werk van zijn ouders gaat. Er wordt alleen hun wens genoemd, en dat is niet het onderwerp."
+   ],
+   "uh": "Waar gaat het gesprek over?",
+   "ctx": "You hear a conversation between two friends: \"Anna: Have you decided what to do after school? Tom: Not really. My parents want me to study law, but I'm not sure that's what I want. Anna: What would you choose? Tom: Honestly, I'd love to study something with music, but everyone says there are no jobs in it. Anna: That's not entirely true, you know. My cousin works as a sound engineer and she's never been out of work. Tom: Really? Maybe I should look into that. But what if my parents are right? Anna: Why not talk to them and show them some real figures? And go to an open day first, before you decide anything. Tom: That's actually a good idea. I'll check the dates tonight.\""
+  },
+  {
+   "v": "What does Anna advise Tom to do?",
+   "o": [
+    "study law as his parents want",
+    "talk and visit an open day",
+    "become a sound engineer at once",
+    "forget about music completely"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 4,
+   "u": "Praten en open dag. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"study law as his parents want\"? Dan denk je dat Anna rechten adviseert. Ze adviseert het niet, en ze wil dat hij zelf kiest.",
+    "Klopt: ze raadt een gesprek met zijn ouders en een open dag aan.",
+    "Koos je \"become a sound engineer at once\"? Dan denk je dat ze een snelle keuze adviseert. Ze zegt dat hij eerst een open dag moet bezoeken, en niet meteen moet kiezen.",
+    "Koos je \"forget about music completely\"? Dan denk je dat Anna muziek afraadt. Ze zegt juist dat er wel banen zijn, en geeft een voorbeeld."
+   ],
+   "uh": "Wat adviseert Anna?",
+   "ctx": "You hear a conversation between two friends: \"Anna: Have you decided what to do after school? Tom: Not really. My parents want me to study law, but I'm not sure that's what I want. Anna: What would you choose? Tom: Honestly, I'd love to study something with music, but everyone says there are no jobs in it. Anna: That's not entirely true, you know. My cousin works as a sound engineer and she's never been out of work. Tom: Really? Maybe I should look into that. But what if my parents are right? Anna: Why not talk to them and show them some real figures? And go to an open day first, before you decide anything. Tom: That's actually a good idea. I'll check the dates tonight.\""
+  },
+  {
+   "v": "Which sentence best summarises the talk?",
+   "o": [
+    "Urban gardens will soon replace farms.",
+    "Singapore grows all its food on roofs.",
+    "Gardening is only possible in large gardens.",
+    "Gardens unite people and give food."
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 3,
+   "u": "Gemeenschap, groen en voedsel. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"Urban gardens will soon replace farms.\"? Dan denk je dat tuinen de landbouw vervangen. De spreker zegt dat ze nooit een stad voeden, dus dat is te sterk.",
+    "Koos je \"Singapore grows all its food on roofs.\"? Dan denk je dat Singapore alles op daken verbouwt. De tekst zegt een klein maar groeiend deel, en niet alles.",
+    "Koos je \"Gardening is only possible in large gardens.\"? Dan denk je dat grote tuinen nodig zijn. De spreker zegt juist het tegenovergestelde, namelijk dat daken en balkons volstaan.",
+    "Klopt: de zin noemt gemeenschap, groen en voedsel samen."
+   ],
+   "uh": "Welke zin vat samen?",
+   "ctx": "You hear the start of a talk: \"Welcome to today's talk on urban gardening. Many people think that growing food requires a large garden, but that is simply not true. In cities around the world, residents are turning rooftops, balconies and even abandoned car parks into productive gardens. In Singapore, for example, vegetables grown on rooftops now provide a small but growing share of the city's fresh food. Of course, urban gardens will never feed an entire city. However, they bring other benefits: neighbours meet each other, children learn where food comes from, and cities become greener and cooler in summer. So, as you can see, the real value of an urban garden is not only the vegetables it produces, but also the community it creates.\""
+  },
+  {
+   "v": "What is the effect of \"However, they bring other benefits\"?",
+   "o": [
+    "it shifts from a limit to a positive point",
+    "it repeats the limit once more",
+    "it gives an example of it",
+    "it ends the talk right there"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 1,
+   "u": "However = omslag. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: na de toegeving komt met however een positief punt.",
+    "Koos je \"it repeats the limit once more\"? Dan denk je dat however de beperking herhaalt. Het zet er juist iets tegenover, en herhaalt niets.",
+    "Koos je \"it gives an example of it\"? Dan denk je dat however een voorbeeld inleidt. Het begint een tegengesteld punt, en geen voorbeeld.",
+    "Koos je \"it ends the talk right there\"? Dan denk je dat however de lezing afsluit. De afsluiting volgt met so, en niet met however."
+   ],
+   "uh": "Wat doet however?",
+   "ctx": "You hear the start of a talk: \"Welcome to today's talk on urban gardening. Many people think that growing food requires a large garden, but that is simply not true. In cities around the world, residents are turning rooftops, balconies and even abandoned car parks into productive gardens. In Singapore, for example, vegetables grown on rooftops now provide a small but growing share of the city's fresh food. Of course, urban gardens will never feed an entire city. However, they bring other benefits: neighbours meet each other, children learn where food comes from, and cities become greener and cooler in summer. So, as you can see, the real value of an urban garden is not only the vegetables it produces, but also the community it creates.\""
+  },
+  {
+   "v": "Which detail can you leave out when you give the main idea?",
+   "o": [
+    "the benefit of community",
+    "the concession that gardens cannot feed a city",
+    "the example of Singapore",
+    "the final conclusion"
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 2,
+   "u": "Voorbeeld mag weg. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"the benefit of community\"? Dan denk je dat de gemeenschap weg mag. Dat is de kern van de hele lezing, en moet blijven.",
+    "Koos je \"the concession that gardens cannot feed a city\"? Dan denk je dat de toegeving de kern is. Het is een bijzaak, maar hoort bij de nuance.",
+    "Klopt: het voorbeeld ondersteunt, maar de kern blijft zonder staan.",
+    "Koos je \"the final conclusion\"? Dan denk je dat de conclusie weg mag. Die geeft juist de kern, en moet erin."
+   ],
+   "uh": "Welk detail kun je weglaten?",
+   "ctx": "You hear the start of a talk: \"Welcome to today's talk on urban gardening. Many people think that growing food requires a large garden, but that is simply not true. In cities around the world, residents are turning rooftops, balconies and even abandoned car parks into productive gardens. In Singapore, for example, vegetables grown on rooftops now provide a small but growing share of the city's fresh food. Of course, urban gardens will never feed an entire city. However, they bring other benefits: neighbours meet each other, children learn where food comes from, and cities become greener and cooler in summer. So, as you can see, the real value of an urban garden is not only the vegetables it produces, but also the community it creates.\""
+  },
+  {
+   "v": "What does \"Some listeners might say this is nothing new\" prepare for?",
+   "o": [
+    "an example of an old study",
+    "a reply: it is worse",
+    "a conclusion about Antwerp",
+    "a joke about phones"
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 1,
+   "u": "Tegenwerping, weerwoord. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"an example of an old study\"? Dan denk je dat er een oud onderzoek volgt. Er volgt een weerwoord, en geen oud voorbeeld.",
+    "Klopt: de spreker erkent de tegenwerping en zegt daarna dat het erger wordt.",
+    "Koos je \"a conclusion about Antwerp\"? Dan denk je dat de zin een conclusie over Antwerpen voorbereidt. Daarover gaat het later, en eerst volgt een weerwoord.",
+    "Koos je \"a joke about phones\"? Dan denk je dat er een grap volgt. De toon blijft serieus, en er komt een argument."
+   ],
+   "uh": "Waarop bereidt de zin voor?",
+   "ctx": "You hear a radio report: \"Good evening. A new study from a Dutch university has looked at how people use their phones while walking. Researchers followed more than a thousand pedestrians in busy city streets and found that almost half of them looked at their screens while crossing the road. Not surprisingly, those people walked more slowly and were far less aware of traffic. Some listeners might say this is nothing new, but the researchers point out that the problem is getting worse each year. The city of Antwerp has therefore started to experiment with lights set into the pavement, which turn red at crossings so that people looking down can still see them. It is too early to say whether the lights work, but the idea has attracted attention from several other cities.\""
+  },
+  {
+   "v": "What is the speaker's attitude towards the lights in Antwerp?",
+   "o": [
+    "very enthusiastic about the lights",
+    "completely negative about the lights",
+    "indifferent to the whole idea",
+    "cautious: it is too early to say"
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 3,
+   "u": "Voorzichtig: te vroeg. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"very enthusiastic about the lights\"? Dan denk je dat de spreker enthousiast is. Hij noemt het te vroeg, en voorzichtig.",
+    "Koos je \"completely negative about the lights\"? Dan denk je dat de spreker negatief is. Hij noemt de aandacht van andere steden, en niet alleen negatief.",
+    "Koos je \"indifferent to the whole idea\"? Dan denk je dat de spreker onverschillig is. Hij legt het idee uitgebreid uit, en meldt aandacht.",
+    "Klopt: de spreker zegt dat het te vroeg is om te zeggen of het werkt."
+   ],
+   "uh": "Wat is zijn houding?",
+   "ctx": "You hear a radio report: \"Good evening. A new study from a Dutch university has looked at how people use their phones while walking. Researchers followed more than a thousand pedestrians in busy city streets and found that almost half of them looked at their screens while crossing the road. Not surprisingly, those people walked more slowly and were far less aware of traffic. Some listeners might say this is nothing new, but the researchers point out that the problem is getting worse each year. The city of Antwerp has therefore started to experiment with lights set into the pavement, which turn red at crossings so that people looking down can still see them. It is too early to say whether the lights work, but the idea has attracted attention from several other cities.\""
+  },
+  {
+   "v": "Which detail is least important for the main idea?",
+   "o": [
+    "the Dutch university",
+    "that people walk more slowly",
+    "that the problem is getting worse",
+    "that lights are being tested"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 2,
+   "u": "Herkomst = detail. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: de herkomst van het onderzoek verandert de kern niet.",
+    "Koos je \"that people walk more slowly\"? Dan denk je dat dit onbelangrijk is. Het toont het gevaar, en hoort bij de kern.",
+    "Koos je \"that the problem is getting worse\"? Dan denk je dat dit onbelangrijk is. Het geeft het belang van het probleem aan, en hoort bij de kern.",
+    "Koos je \"that lights are being tested\"? Dan denk je dat dit onbelangrijk is. Het is de reactie van steden, en hoort bij de kern."
+   ],
+   "uh": "Welk detail is het minst belangrijk?",
+   "ctx": "You hear a radio report: \"Good evening. A new study from a Dutch university has looked at how people use their phones while walking. Researchers followed more than a thousand pedestrians in busy city streets and found that almost half of them looked at their screens while crossing the road. Not surprisingly, those people walked more slowly and were far less aware of traffic. Some listeners might say this is nothing new, but the researchers point out that the problem is getting worse each year. The city of Antwerp has therefore started to experiment with lights set into the pavement, which turn red at crossings so that people looking down can still see them. It is too early to say whether the lights work, but the idea has attracted attention from several other cities.\""
+  },
+  {
+   "v": "What is Tom's problem?",
+   "o": [
+    "he has no money for studying",
+    "he dislikes Anna",
+    "his parents want else",
+    "he cannot find a school"
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 4,
+   "u": "Wens ouders tegenover eigen wens. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"he has no money for studying\"? Dan denk je dat geld het probleem is. Daar wordt niet over gesproken, en het gaat om zijn keuze.",
+    "Koos je \"he dislikes Anna\"? Dan denk je dat Tom Anna niet mag. Hij luistert naar haar advies, en volgt het op.",
+    "Klopt: zijn ouders willen rechten, hij denkt aan muziek.",
+    "Koos je \"he cannot find a school\"? Dan denk je dat hij geen school kan vinden. Hij heeft nog niet gekozen, en dat is het probleem."
+   ],
+   "uh": "Wat is Toms probleem?",
+   "ctx": "You hear a conversation between two friends: \"Anna: Have you decided what to do after school? Tom: Not really. My parents want me to study law, but I'm not sure that's what I want. Anna: What would you choose? Tom: Honestly, I'd love to study something with music, but everyone says there are no jobs in it. Anna: That's not entirely true, you know. My cousin works as a sound engineer and she's never been out of work. Tom: Really? Maybe I should look into that. But what if my parents are right? Anna: Why not talk to them and show them some real figures? And go to an open day first, before you decide anything. Tom: That's actually a good idea. I'll check the dates tonight.\""
+  },
+  {
+   "v": "How does Anna react when Tom says there are no jobs in music?",
+   "o": [
+    "she agrees with him",
+    "she disagrees",
+    "she changes the subject",
+    "she laughs at him"
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 4,
+   "u": "Not entirely true = tegenspraak. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"she agrees with him\"? Dan denk je dat Anna het eens is. Ze zegt not entirely true, en spreekt hem dus tegen.",
+    "Klopt: ze zegt dat het niet helemaal waar is en noemt haar nicht als voorbeeld.",
+    "Koos je \"she changes the subject\"? Dan denk je dat ze van onderwerp verandert. Ze reageert direct op wat hij zegt, en geeft een voorbeeld.",
+    "Koos je \"she laughs at him\"? Dan denk je dat ze hem uitlacht. Ze reageert serieus, en geeft een voorbeeld."
+   ],
+   "uh": "Hoe reageert Anna?",
+   "ctx": "You hear a conversation between two friends: \"Anna: Have you decided what to do after school? Tom: Not really. My parents want me to study law, but I'm not sure that's what I want. Anna: What would you choose? Tom: Honestly, I'd love to study something with music, but everyone says there are no jobs in it. Anna: That's not entirely true, you know. My cousin works as a sound engineer and she's never been out of work. Tom: Really? Maybe I should look into that. But what if my parents are right? Anna: Why not talk to them and show them some real figures? And go to an open day first, before you decide anything. Tom: That's actually a good idea. I'll check the dates tonight.\""
+  },
+  {
+   "v": "How does the conversation end?",
+   "o": [
+    "Tom rejects the idea",
+    "Anna leaves the room",
+    "they start to argue",
+    "Tom agrees"
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 3,
+   "u": "Tom stemt toe. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"Tom rejects the idea\"? Dan denk je dat Tom het idee afwijst. Hij zegt that's actually a good idea, dus hij gaat akkoord.",
+    "Koos je \"Anna leaves the room\"? Dan denk je dat Anna weggaat. Er wordt niets over weggaan gezegd, en het gesprek eindigt met een afspraak.",
+    "Koos je \"they start to argue\"? Dan denk je dat ze ruzie krijgen. De toon blijft vriendelijk, en Tom stemt toe.",
+    "Klopt: Tom vindt het een goed idee en zegt dat hij de data gaat opzoeken."
+   ],
+   "uh": "Hoe eindigt het gesprek?",
+   "ctx": "You hear a conversation between two friends: \"Anna: Have you decided what to do after school? Tom: Not really. My parents want me to study law, but I'm not sure that's what I want. Anna: What would you choose? Tom: Honestly, I'd love to study something with music, but everyone says there are no jobs in it. Anna: That's not entirely true, you know. My cousin works as a sound engineer and she's never been out of work. Tom: Really? Maybe I should look into that. But what if my parents are right? Anna: Why not talk to them and show them some real figures? And go to an open day first, before you decide anything. Tom: That's actually a good idea. I'll check the dates tonight.\""
+  },
+  {
+   "v": "What is the main message of Anna's advice?",
+   "o": [
+    "check facts, visit first",
+    "follow your parents without question",
+    "decide as quickly as possible",
+    "avoid music at all costs"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 0,
+   "u": "Feiten checken, bezoeken. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: ze raadt aan cijfers te laten zien en eerst een open dag te bezoeken.",
+    "Koos je \"follow your parents without question\"? Dan denk je dat Anna volgen van de ouders adviseert. Ze wil juist dat hij zelf onderzoekt, en cijfers laat zien.",
+    "Koos je \"decide as quickly as possible\"? Dan denk je dat ze snel beslissen adviseert. Ze zegt first, before you decide anything, dus eerst bezoeken.",
+    "Koos je \"avoid music at all costs\"? Dan denk je dat Anna muziek afraadt. Ze geeft juist een voorbeeld van een succesvolle nicht, en moedigt aan."
+   ],
+   "uh": "Wat is haar boodschap?",
+   "ctx": "You hear a conversation between two friends: \"Anna: Have you decided what to do after school? Tom: Not really. My parents want me to study law, but I'm not sure that's what I want. Anna: What would you choose? Tom: Honestly, I'd love to study something with music, but everyone says there are no jobs in it. Anna: That's not entirely true, you know. My cousin works as a sound engineer and she's never been out of work. Tom: Really? Maybe I should look into that. But what if my parents are right? Anna: Why not talk to them and show them some real figures? And go to an open day first, before you decide anything. Tom: That's actually a good idea. I'll check the dates tonight.\""
+  }
+ ],
+ "oe": [
+  {
+   "bron": "Examenstijl",
+   "ctx": "You hear the start of a talk: \"Welcome to today's talk on urban gardening. Many people think that growing food requires a large garden, but that is simply not true. In cities around the world, residents are turning rooftops, balconies and even abandoned car parks into productive gardens. In Singapore, for example, vegetables grown on rooftops now provide a small but growing share of the city's fresh food. Of course, urban gardens will never feed an entire city. However, they bring other benefits: neighbours meet each other, children learn where food comes from, and cities become greener and cooler in summer. So, as you can see, the real value of an urban garden is not only the vegetables it produces, but also the community it creates.\" Your teacher asks about the talk.",
+   "v": "State the main idea of the talk and name the function of Singapore.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "De hoofdgedachte: stadstuinen scheppen gemeenschap, niet alleen voedsel (1p). Singapore is een voorbeeld (1p). Het ondersteunt het punt dat daken voedsel kunnen leveren (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "You hear the start of a talk: \"Welcome to today's talk on urban gardening. Many people think that growing food requires a large garden, but that is simply not true. In cities around the world, residents are turning rooftops, balconies and even abandoned car parks into productive gardens. In Singapore, for example, vegetables grown on rooftops now provide a small but growing share of the city's fresh food. Of course, urban gardens will never feed an entire city. However, they bring other benefits: neighbours meet each other, children learn where food comes from, and cities become greener and cooler in summer. So, as you can see, the real value of an urban garden is not only the vegetables it produces, but also the community it creates.\" Your teacher asks about the signal words.",
+   "v": "Explain what \"Of course\" and \"However\" do in the talk.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Of course geeft een toegeving (1p). De tuinen voeden nooit een hele stad (1p). However begint het positieve punt over andere voordelen (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "You hear a radio report: \"Good evening. A new study from a Dutch university has looked at how people use their phones while walking. Researchers followed more than a thousand pedestrians in busy city streets and found that almost half of them looked at their screens while crossing the road. Not surprisingly, those people walked more slowly and were far less aware of traffic. Some listeners might say this is nothing new, but the researchers point out that the problem is getting worse each year. The city of Antwerp has therefore started to experiment with lights set into the pavement, which turn red at crossings so that people looking down can still see them. It is too early to say whether the lights work, but the idea has attracted attention from several other cities.\" Your teacher asks about the report.",
+   "v": "State the topic and the main idea of the report.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Het onderwerp is telefoongebruik tijdens het lopen (1p). De kern is dat het een groeiend gevaar is (1p). Steden proberen oplossingen zoals lichten in het trottoir (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "You hear a radio report: \"Good evening. A new study from a Dutch university has looked at how people use their phones while walking. Researchers followed more than a thousand pedestrians in busy city streets and found that almost half of them looked at their screens while crossing the road. Not surprisingly, those people walked more slowly and were far less aware of traffic. Some listeners might say this is nothing new, but the researchers point out that the problem is getting worse each year. The city of Antwerp has therefore started to experiment with lights set into the pavement, which turn red at crossings so that people looking down can still see them. It is too early to say whether the lights work, but the idea has attracted attention from several other cities.\" Your teacher asks about the evidence.",
+   "v": "Explain the function of the sentence about more than a thousand pedestrians.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Het is bewijs of een onderzoeksresultaat (1p). Bijna de helft keek naar het scherm (1p). Het ondersteunt de kern dat het een probleem is (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "You hear a conversation between two friends: \"Anna: Have you decided what to do after school? Tom: Not really. My parents want me to study law, but I'm not sure that's what I want. Anna: What would you choose? Tom: Honestly, I'd love to study something with music, but everyone says there are no jobs in it. Anna: That's not entirely true, you know. My cousin works as a sound engineer and she's never been out of work. Tom: Really? Maybe I should look into that. But what if my parents are right? Anna: Why not talk to them and show them some real figures? And go to an open day first, before you decide anything. Tom: That's actually a good idea. I'll check the dates tonight.\" Your teacher asks about the conversation.",
+   "v": "Say what Tom's problem is and what Anna advises.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Zijn ouders willen rechten maar hij wil iets met muziek (1p). Anna adviseert met zijn ouders te praten met cijfers (1p). En eerst een open dag te bezoeken (1p)."
+  }
+ ]
+}
