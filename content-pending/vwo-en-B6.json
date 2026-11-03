@@ -1,0 +1,682 @@
+{
+ "id": "B6",
+ "lo": "en.B.6",
+ "gs": 2,
+ "naam": "Aantekeningen maken bij het luisteren",
+ "beschrijving": "Je leert bij een Engelse lezing, instructie of reportage kort en overzichtelijk te noteren: trefwoorden, afkortingen en symbolen, structuur, en je gebruikt je aantekeningen om vragen te beantwoorden.",
+ "ceStatus": "CE",
+ "binas": "",
+ "val": "",
+ "onderwerpen": [
+  "Waarom en hoe je noteert",
+  "Trefwoorden en wat je weglaat",
+  "Afkortingen en symbolen",
+  "Structuur van aantekeningen",
+  "Aantekeningen gebruiken bij vragen"
+ ],
+ "sam": "Je noteert tijdens het luisteren alleen trefwoorden: namen, getallen, data en kernwoorden. Kleine woorden en voorbeelden laat je weg. Met afkortingen (approx.) en symbolen (≈, →, ↓) schrijf je sneller. Je geeft je notities structuur met korte regels, nummers en kopjes, zodat je later snel iets terugvindt. Bij een vraag zoek je de trefwoorden van de vraag in je notities.",
+ "begrippen": [
+  {
+   "t": "Aantekening",
+   "d": "Een korte notitie die je tijdens het luisteren maakt."
+  },
+  {
+   "t": "Trefwoord",
+   "d": "Een kernwoord zoals een naam, getal of datum."
+  },
+  {
+   "t": "Weglaten",
+   "d": "Kleine woorden en voorbeelden niet noteren."
+  },
+  {
+   "t": "Afkorting",
+   "d": "Een verkorte schrijfwijze, zoals approx."
+  },
+  {
+   "t": "Symbool",
+   "d": "Een teken zoals ≈, + of →."
+  },
+  {
+   "t": "Pijl",
+   "d": "Een teken voor oorzaak, gevolg of volgorde."
+  },
+  {
+   "t": "Structuur",
+   "d": "De indeling met regels, nummers en kopjes."
+  },
+  {
+   "t": "Nummering",
+   "d": "Stappen of punten met 1, 2, 3."
+  },
+  {
+   "t": "Kopje",
+   "d": "Een woord boven een onderdeel van je notities."
+  },
+  {
+   "t": "Volgorde",
+   "d": "Wat eerst en wat daarna komt."
+  },
+  {
+   "t": "Detail",
+   "d": "Een klein gegeven dat je kunt opzoeken."
+  },
+  {
+   "t": "Controleren",
+   "d": "Je antwoord nalopen in je notities."
+  }
+ ],
+ "sv": [
+  {
+   "v": "What is the main purpose of taking notes while listening?",
+   "o": [
+    "to write every single word",
+    "to remember key facts",
+    "to show your handwriting",
+    "to avoid listening carefully"
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 0,
+   "u": "Aantekeningen = kerngegevens onthouden. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"to write every single word\"? Dan denk je dat alles opschrijven het doel is. Dat lukt niet in het tempo van een spreker, en je mist de rest.",
+    "Klopt: aantekeningen helpen je de belangrijke informatie te onthouden.",
+    "Koos je \"to show your handwriting\"? Dan denk je dat mooi schrijven het doel is. Aantekeningen zijn voor jezelf, en niet om te laten zien.",
+    "Koos je \"to avoid listening carefully\"? Dan denk je dat je dan minder hoeft te luisteren. Je moet juist goed luisteren, om te weten wat je noteert."
+   ],
+   "uh": "Wat is het doel?"
+  },
+  {
+   "v": "What should you write down?",
+   "o": [
+    "every sentence in full",
+    "all the small words",
+    "the speaker's jokes",
+    "names, numbers, dates"
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 1,
+   "u": "Trefwoorden noteren. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"every sentence in full\"? Dan denk je dat hele zinnen nodig zijn. Dat kost te veel tijd, en je mist de volgende informatie.",
+    "Koos je \"all the small words\"? Dan denk je dat kleine woorden nodig zijn. Die voegen weinig toe, en maken je notities langer.",
+    "Koos je \"the speaker's jokes\"? Dan denk je dat grappen belangrijk zijn. Ze zijn een bijzaak, en niet de kern.",
+    "Klopt: trefwoorden zoals namen, getallen en data zijn het belangrijkst."
+   ],
+   "uh": "Wat schrijf je op?"
+  },
+  {
+   "v": "What can you leave out of your notes?",
+   "o": [
+    "small words such as \"the\" and \"a\", and examples",
+    "all the important numbers",
+    "all the names of people",
+    "the main points of the lecture"
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 1,
+   "u": "Weglaten: kleine woorden en voorbeelden. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: kleine woorden en voorbeelden kun je weglaten zonder de kern te verliezen.",
+    "Koos je \"all the important numbers\"? Dan denk je dat getallen weg mogen. Getallen zijn vaak het antwoord, en moet je juist noteren.",
+    "Koos je \"all the names of people\"? Dan denk je dat namen weg mogen. Namen zijn vaak belangrijk, en horen in je notities.",
+    "Koos je \"the main points of the lecture\"? Dan denk je dat de hoofdpunten weg mogen. Die zijn juist de kern, en moeten erin."
+   ],
+   "uh": "Wat kun je weglaten?"
+  },
+  {
+   "v": "Which abbreviation or symbol is good for \"approximately\"?",
+   "o": [
+    "\"=\" and \"→\" together",
+    "\"+\" and \"&\" together",
+    "\"approx.\" or \"≈\"",
+    "\"%\" and \"#\" together"
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 2,
+   "u": "Approx. en ≈ = ongeveer. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"=\" and \"→\" together\"? Dan denk je dat deze tekens ongeveer betekenen omdat ze ook een verband tonen. Ze staan voor gelijk aan en leidt tot, en dat is iets anders dan ongeveer.",
+    "Koos je \"\"+\" and \"&\" together\"? Dan denk je dat deze tekens ongeveer betekenen omdat ze twee dingen bij elkaar zetten. Ze staan voor en, en zeggen niets over een schatting.",
+    "Klopt: approx. en ≈ betekenen allebei ongeveer, een schatting.",
+    "Koos je \"\"%\" and \"#\" together\"? Dan denk je dat deze tekens ongeveer betekenen omdat ze vaak bij getallen staan. Ze staan voor procent en nummer, en niet voor een schatting."
+   ],
+   "uh": "Welke afkorting past?"
+  },
+  {
+   "v": "What does the arrow \"→\" often mean in notes?",
+   "o": [
+    "is the same as",
+    "leads to or results in",
+    "is less than",
+    "stop"
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 2,
+   "u": "Pijl = leidt tot. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"is the same as\"? Dan denk je dat een pijl gelijk aan betekent omdat hij twee dingen verbindt. Daarvoor gebruik je =, en de pijl toont juist een richting.",
+    "Klopt: een pijl laat een oorzaak, gevolg of volgorde zien.",
+    "Koos je \"is less than\"? Dan denk je dat een pijl minder dan betekent omdat hij een hoek heeft. Daarvoor gebruik je <, en de pijl laat zien wat volgt.",
+    "Koos je \"stop\"? Dan denk je dat een pijl stop betekent omdat hij ergens naartoe wijst. Hij laat juist zien wat volgt, en gaat dus verder."
+   ],
+   "uh": "Wat betekent de pijl?"
+  },
+  {
+   "v": "Which structure helps you find information quickly later?",
+   "o": [
+    "one long paragraph",
+    "a messy list in random order",
+    "only drawings without words",
+    "short lines and headings"
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 3,
+   "u": "Korte regels en kopjes. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"one long paragraph\"? Dan denk je dat één lange alinea handig is. Dan kun je niets snel vinden, en mist de structuur.",
+    "Koos je \"a messy list in random order\"? Dan denk je dat een rommelige lijst genoeg is. Je weet dan niet waar iets staat, en verliest tijd.",
+    "Koos je \"only drawings without words\"? Dan denk je dat tekeningen genoeg zijn. Zonder woorden weet je later niet wat ze betekenen, en mis je gegevens.",
+    "Klopt: korte regels, nummers en kopjes maken je notities overzichtelijk."
+   ],
+   "uh": "Welke structuur helpt?"
+  },
+  {
+   "v": "What do you do first when you must answer a question with your notes?",
+   "o": [
+    "find the question's key words",
+    "read all your notes again from the start",
+    "guess the answer",
+    "copy your notes into the answer"
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 4,
+   "u": "Trefwoorden van de vraag zoeken. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: zo vind je snel de juiste plek in je aantekeningen.",
+    "Koos je \"read all your notes again from the start\"? Dan denk je dat alles opnieuw lezen helpt. Dat kost veel tijd, en je hebt maar weinig.",
+    "Koos je \"guess the answer\"? Dan denk je dat raden genoeg is. Je hebt notities om het antwoord te controleren, en gokken is onnodig.",
+    "Koos je \"copy your notes into the answer\"? Dan denk je dat kopiëren genoeg is. De vraag vraagt een specifiek gegeven, en geen hele notities."
+   ],
+   "uh": "Wat doe je eerst?"
+  },
+  {
+   "v": "Which words are the key words for the origin of tea?",
+   "o": [
+    "first and probably",
+    "drunk, more than that",
+    "China, 2000 years",
+    "tea, was, first"
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 1,
+   "u": "Plaats en tijd = kern. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"first and probably\"? Dan denk je dat deze woorden de kern zijn. Het zijn kleine woorden die niets zeggen, en geen gegeven.",
+    "Koos je \"drunk, more than that\"? Dan denk je dat deze woorden de kern zijn. Ze zijn losse woorden zonder gegeven, en geven geen plaats of tijd.",
+    "Klopt: China en meer dan tweeduizend jaar zijn de kerngegevens.",
+    "Koos je \"tea, was, first\"? Dan denk je dat deze woorden de kern zijn. Ze zijn algemeen, en bevatten geen kerngegeven."
+   ],
+   "uh": "Welke woorden zijn trefwoorden?",
+   "ctx": "You hear a short lecture: \"Today I'd like to say a few words about the history of tea. Tea was first drunk in China, probably more than two thousand years ago. It reached Europe in the early seventeenth century, when Dutch traders brought it from Asia. At first it was very expensive, so only rich people could afford it. In Britain, tea became popular after 1660, and by the eighteenth century it was the national drink. The government taxed tea heavily, which led to smuggling on a large scale. Only in 1784, when the tax was cut dramatically, did smuggling stop. Today, tea is the second most consumed drink in the world, after water. Three main types exist: green, black and oolong tea, which differ in how long the leaves are left to oxidise.\""
+  },
+  {
+   "v": "Which note correctly shortens \"Tea reached Europe in the early seventeenth century\"?",
+   "o": [
+    "Europe was early for tea",
+    "tea → Europe, 1600s",
+    "tea 17 century only",
+    "early tea reached"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 2,
+   "u": "Pijl en getal = kort. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"Europe was early for tea\"? Dan denk je dat dit de zin goed samenvat omdat het over Europa gaat. Het zegt niet wat er gebeurde, en noemt de eeuw niet.",
+    "Klopt: de pijl en het getal bevatten de kerngegevens kort.",
+    "Koos je \"tea 17 century only\"? Dan denk je dat dit de zin goed samenvat omdat de eeuw erin staat. Het noemt Europa niet, en voegt het woord only toe.",
+    "Koos je \"early tea reached\"? Dan denk je dat dit de zin goed samenvat omdat de woorden uit de zin komen. Het mist de plaats en de eeuw, en is te vaag."
+   ],
+   "uh": "Welke notitie klopt?",
+   "ctx": "You hear a short lecture: \"Today I'd like to say a few words about the history of tea. Tea was first drunk in China, probably more than two thousand years ago. It reached Europe in the early seventeenth century, when Dutch traders brought it from Asia. At first it was very expensive, so only rich people could afford it. In Britain, tea became popular after 1660, and by the eighteenth century it was the national drink. The government taxed tea heavily, which led to smuggling on a large scale. Only in 1784, when the tax was cut dramatically, did smuggling stop. Today, tea is the second most consumed drink in the world, after water. Three main types exist: green, black and oolong tea, which differ in how long the leaves are left to oxidise.\""
+  },
+  {
+   "v": "How can you note the three types of tea?",
+   "o": [
+    "one word: tea",
+    "a list of all countries",
+    "a drawing of a cup",
+    "green, black, oolong"
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 3,
+   "u": "Lijstje van soorten. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"one word: tea\"? Dan denk je dat één woord genoeg is. Dan mis je de drie soorten, en kun je vragen niet beantwoorden.",
+    "Koos je \"a list of all countries\"? Dan denk je dat landen de soorten zijn. Landen worden hier niet genoemd, en horen niet bij de soorten.",
+    "Koos je \"a drawing of a cup\"? Dan denk je dat een tekening genoeg is. Dan weet je niet welke soorten er zijn, en is het geen notitie.",
+    "Klopt: een lijst met drie trefwoorden is kort en duidelijk."
+   ],
+   "uh": "Hoe noteer je de soorten?",
+   "ctx": "You hear a short lecture: \"Today I'd like to say a few words about the history of tea. Tea was first drunk in China, probably more than two thousand years ago. It reached Europe in the early seventeenth century, when Dutch traders brought it from Asia. At first it was very expensive, so only rich people could afford it. In Britain, tea became popular after 1660, and by the eighteenth century it was the national drink. The government taxed tea heavily, which led to smuggling on a large scale. Only in 1784, when the tax was cut dramatically, did smuggling stop. Today, tea is the second most consumed drink in the world, after water. Three main types exist: green, black and oolong tea, which differ in how long the leaves are left to oxidise.\""
+  },
+  {
+   "v": "Which detail is least important for your notes?",
+   "o": [
+    "the opening words",
+    "the year 1784",
+    "the date 2000 years ago",
+    "heavy tax and smuggling"
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 1,
+   "u": "Aanloop = geen gegeven. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: de aanloop van de spreker bevat geen gegeven.",
+    "Koos je \"the year 1784\"? Dan denk je dat 1784 onbelangrijk is. Het is een belangrijk jaartal, en hoort in de notities.",
+    "Koos je \"the date 2000 years ago\"? Dan denk je dat het oude tijdstip onbelangrijk is. Het hoort bij de herkomst van thee, en is een belangrijk gegeven.",
+    "Koos je \"heavy tax and smuggling\"? Dan denk je dat belasting en smokkel onbelangrijk zijn. Ze zijn een kernpunt, en komen terug in een vraag."
+   ],
+   "uh": "Welk detail is onbelangrijk?",
+   "ctx": "You hear a short lecture: \"Today I'd like to say a few words about the history of tea. Tea was first drunk in China, probably more than two thousand years ago. It reached Europe in the early seventeenth century, when Dutch traders brought it from Asia. At first it was very expensive, so only rich people could afford it. In Britain, tea became popular after 1660, and by the eighteenth century it was the national drink. The government taxed tea heavily, which led to smuggling on a large scale. Only in 1784, when the tax was cut dramatically, did smuggling stop. Today, tea is the second most consumed drink in the world, after water. Three main types exist: green, black and oolong tea, which differ in how long the leaves are left to oxidise.\""
+  },
+  {
+   "v": "How long does the workshop last?",
+   "o": [
+    "two hours, with a break after thirty minutes",
+    "three hours, without a break",
+    "three hours, break at 90",
+    "four hours, with a break after two hours"
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 1,
+   "u": "3 uur, pauze na 90 min. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"two hours, with a break after thirty minutes\"? Dan denk je dat de totale duur twee uur is omdat twee getallen klinken. De spreker noemt drie uur, en de pauze komt pas na negentig minuten.",
+    "Koos je \"three hours, without a break\"? Dan denk je dat er geen pauze is omdat hij alleen de duur noemt. Hij noemt ook een pauze na negentig minuten, dus die is er wel.",
+    "Klopt: de workshop duurt drie uur met een pauze na anderhalf uur.",
+    "Koos je \"four hours, with a break after two hours\"? Dan denk je dat de workshop vier uur duurt omdat je de pauze meetelt. De spreker noemt drie uur in totaal, en de pauze komt na anderhalf uur."
+   ],
+   "uh": "Hoe lang duurt de workshop?",
+   "ctx": "You hear the instructions at a workshop: \"Welcome to the pottery workshop. Before we start, a few practical points. The workshop runs for three hours, with a break after ninety minutes. Please put on an apron; they are hanging by the door. You will each get a lump of clay, about one kilo, and you should keep it covered with a damp cloth when you're not using it. First, we'll make a simple bowl. Press your thumbs into the centre of the ball, then slowly widen the hole, turning the clay as you go. Second, we smooth the surface with a wet sponge. Third, we let the bowls dry for a week, and then I'll fire them in the kiln. You can collect them on the fifteenth of June. If you want to paint your bowl, bring your own colours; I only provide transparent glaze.\""
+  },
+  {
+   "v": "What is the best way to note the steps for the bowl?",
+   "o": [
+    "one long sentence",
+    "numbered steps",
+    "a list of random words",
+    "only the last step"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 3,
+   "u": "Genummerde stappen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"one long sentence\"? Dan denk je dat één lange zin duidelijk is. De stappen raken door elkaar, en je ziet de volgorde niet.",
+    "Klopt: genummerde stappen met trefwoorden zijn kort en in volgorde.",
+    "Koos je \"a list of random words\"? Dan denk je dat willekeurige woorden genoeg zijn. Zonder volgorde weet je niet wat eerst komt, en verlies je de stappen.",
+    "Koos je \"only the last step\"? Dan denk je dat alleen de laatste stap genoeg is. Je mist dan hoe je begint, en de rest van het proces."
+   ],
+   "uh": "Hoe noteer je de stappen?",
+   "ctx": "You hear the instructions at a workshop: \"Welcome to the pottery workshop. Before we start, a few practical points. The workshop runs for three hours, with a break after ninety minutes. Please put on an apron; they are hanging by the door. You will each get a lump of clay, about one kilo, and you should keep it covered with a damp cloth when you're not using it. First, we'll make a simple bowl. Press your thumbs into the centre of the ball, then slowly widen the hole, turning the clay as you go. Second, we smooth the surface with a wet sponge. Third, we let the bowls dry for a week, and then I'll fire them in the kiln. You can collect them on the fifteenth of June. If you want to paint your bowl, bring your own colours; I only provide transparent glaze.\""
+  },
+  {
+   "v": "Which note is best for \"collect on the fifteenth of June\"?",
+   "o": [
+    "June 15: paint it",
+    "15 kilos of clay",
+    "collect: 1 kilo of clay",
+    "collect: 15 June"
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 2,
+   "u": "Collect: 15 June. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"June 15: paint it\"? Dan denk je dat de datum bij schilderen hoort. De datum is voor ophalen, en niet voor schilderen.",
+    "Koos je \"15 kilos of clay\"? Dan denk je dat 15 een gewicht is. De klei weegt ongeveer één kilo, en de 15 is de datum.",
+    "Koos je \"collect: 1 kilo of clay\"? Dan denk je dat ophalen over een kilo gaat. Een kilo is de hoeveelheid klei, en niet de datum.",
+    "Klopt: een kort kopje met de datum is genoeg."
+   ],
+   "uh": "Welke notitie past?",
+   "ctx": "You hear the instructions at a workshop: \"Welcome to the pottery workshop. Before we start, a few practical points. The workshop runs for three hours, with a break after ninety minutes. Please put on an apron; they are hanging by the door. You will each get a lump of clay, about one kilo, and you should keep it covered with a damp cloth when you're not using it. First, we'll make a simple bowl. Press your thumbs into the centre of the ball, then slowly widen the hole, turning the clay as you go. Second, we smooth the surface with a wet sponge. Third, we let the bowls dry for a week, and then I'll fire them in the kiln. You can collect them on the fifteenth of June. If you want to paint your bowl, bring your own colours; I only provide transparent glaze.\""
+  },
+  {
+   "v": "Which item must you bring yourself?",
+   "o": [
+    "your own colours",
+    "a protective apron",
+    "a damp cloth",
+    "a clear glaze"
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 4,
+   "u": "Kleuren zelf meenemen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: de docent levert alleen transparante glazuur, kleuren neem je zelf mee.",
+    "Koos je \"a protective apron\"? Dan denk je dat je een eigen schort moet meenemen. De schorten hangen bij de deur, dus je neemt ze daar.",
+    "Koos je \"a damp cloth\"? Dan denk je dat je een natte doek moet meenemen. De spreker noemt hem bij de klei, en dat hoort bij de workshop.",
+    "Koos je \"a clear glaze\"? Dan denk je dat je zelf glazuur moet meenemen. De docent levert een doorzichtige laag, dus dat hoef je niet."
+   ],
+   "uh": "Wat neem je zelf mee?",
+   "ctx": "You hear the instructions at a workshop: \"Welcome to the pottery workshop. Before we start, a few practical points. The workshop runs for three hours, with a break after ninety minutes. Please put on an apron; they are hanging by the door. You will each get a lump of clay, about one kilo, and you should keep it covered with a damp cloth when you're not using it. First, we'll make a simple bowl. Press your thumbs into the centre of the ball, then slowly widen the hole, turning the clay as you go. Second, we smooth the surface with a wet sponge. Third, we let the bowls dry for a week, and then I'll fire them in the kiln. You can collect them on the fifteenth of June. If you want to paint your bowl, bring your own colours; I only provide transparent glaze.\""
+  },
+  {
+   "v": "Which numbers are most important about the accidents?",
+   "o": [
+    "180,000 trips per day",
+    "3,000 bikes a morning",
+    "fatal accidents 8 → 3",
+    "18 million euros"
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 1,
+   "u": "8 → 3 = ongelukken. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"180,000 trips per day\"? Dan denk je dat dit over ongelukken gaat. Dat is het aantal fietsritten per dag, en niet de ongelukken.",
+    "Koos je \"3,000 bikes a morning\"? Dan denk je dat dit over ongelukken gaat. Dat is het aantal fietsen bij het station, en niet de ongelukken.",
+    "Klopt: het aantal dodelijke ongelukken daalde van acht naar drie.",
+    "Koos je \"18 million euros\"? Dan denk je dat dit over ongelukken gaat. Dat is het bedrag voor de garage, en niet de ongelukken."
+   ],
+   "uh": "Welke getallen horen bij de ongelukken?",
+   "ctx": "You hear a radio report: \"Our reporter has looked into the rising popularity of cycling in the city. According to the council, the number of bicycle trips rose by twenty per cent last year, to about 180,000 per day. The main reason, say researchers, is the new network of protected cycle lanes, which opened in March. Fatal accidents fell from eight to three. However, parking remains a problem: the central station has room for only two thousand bikes, while more than three thousand arrive each morning. The council now plans to build an underground garage for five thousand bicycles, to open in 2027 at a cost of eighteen million euros. Critics say the money would be better spent on extending the lanes to the suburbs.\""
+  },
+  {
+   "v": "How many bikes does the planned garage hold?",
+   "o": [
+    "2,000",
+    "5,000",
+    "3,000",
+    "18,000"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 4,
+   "u": "Garage = 5000. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"2,000\"? Dan denk je dat het 2000 is. Dat is de huidige ruimte bij het station, en niet de nieuwe garage.",
+    "Klopt: de ondergrondse garage krijgt plaats voor vijfduizend fietsen.",
+    "Koos je \"3,000\"? Dan denk je dat het 3000 is. Dat is het aantal fietsen dat elke ochtend aankomt, en niet de garage.",
+    "Koos je \"18,000\"? Dan denk je dat het 18.000 is. Dat lijkt op 18 miljoen euro, maar dat is het bedrag."
+   ],
+   "uh": "Hoeveel fietsen passen erin?",
+   "ctx": "You hear a radio report: \"Our reporter has looked into the rising popularity of cycling in the city. According to the council, the number of bicycle trips rose by twenty per cent last year, to about 180,000 per day. The main reason, say researchers, is the new network of protected cycle lanes, which opened in March. Fatal accidents fell from eight to three. However, parking remains a problem: the central station has room for only two thousand bikes, while more than three thousand arrive each morning. The council now plans to build an underground garage for five thousand bicycles, to open in 2027 at a cost of eighteen million euros. Critics say the money would be better spent on extending the lanes to the suburbs.\""
+  },
+  {
+   "v": "Which note shows the problem with parking?",
+   "o": [
+    "station: 2,000 → 5,000 soon",
+    "garage 2027 → 18 mln",
+    "bikes +20%",
+    "room 2,000, bikes 3,000+"
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 2,
+   "u": "Te weinig ruimte. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"station: 2,000 → 5,000 soon\"? Dan denk je dat dit het probleem toont. Het is het plan van de garage, en niet het probleem.",
+    "Koos je \"garage 2027 → 18 mln\"? Dan denk je dat dit het probleem toont. Het zijn de kosten en het jaar, en niet het probleem.",
+    "Koos je \"bikes +20%\"? Dan denk je dat dit het probleem toont. Het is de groei van het fietsen, en niet het parkeerprobleem.",
+    "Klopt: de ruimte bij het station is kleiner dan het aantal fietsen."
+   ],
+   "uh": "Welke notitie toont het probleem?",
+   "ctx": "You hear a radio report: \"Our reporter has looked into the rising popularity of cycling in the city. According to the council, the number of bicycle trips rose by twenty per cent last year, to about 180,000 per day. The main reason, say researchers, is the new network of protected cycle lanes, which opened in March. Fatal accidents fell from eight to three. However, parking remains a problem: the central station has room for only two thousand bikes, while more than three thousand arrive each morning. The council now plans to build an underground garage for five thousand bicycles, to open in 2027 at a cost of eighteen million euros. Critics say the money would be better spent on extending the lanes to the suburbs.\""
+  },
+  {
+   "v": "How could you structure your notes of the report?",
+   "o": [
+    "headings per topic",
+    "one paragraph with all the numbers",
+    "only the numbers",
+    "only the critics"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 3,
+   "u": "Kopjes per onderdeel. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: kopjes per onderdeel maken de notities overzichtelijk.",
+    "Koos je \"one paragraph with all the numbers\"? Dan denk je dat één alinea genoeg is. Je kunt dan niets snel terugvinden, en mist de volgorde.",
+    "Koos je \"only the numbers\"? Dan denk je dat alleen getallen genoeg zijn. Je weet dan niet waar ze bij horen, en verliest de betekenis.",
+    "Koos je \"only the critics\"? Dan denk je dat alleen de critici genoeg zijn. Dan mis je de rest van het verslag, en veel kerngegevens."
+   ],
+   "uh": "Hoe structureer je de notities?",
+   "ctx": "You hear a radio report: \"Our reporter has looked into the rising popularity of cycling in the city. According to the council, the number of bicycle trips rose by twenty per cent last year, to about 180,000 per day. The main reason, say researchers, is the new network of protected cycle lanes, which opened in March. Fatal accidents fell from eight to three. However, parking remains a problem: the central station has room for only two thousand bikes, while more than three thousand arrive each morning. The council now plans to build an underground garage for five thousand bicycles, to open in 2027 at a cost of eighteen million euros. Critics say the money would be better spent on extending the lanes to the suburbs.\""
+  },
+  {
+   "v": "Which fact would you NOT note as essential?",
+   "o": [
+    "the rise of twenty per cent",
+    "the opening of the lanes in March",
+    "the reporter has looked into it",
+    "the plan for a garage"
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 1,
+   "u": "Aanloop = geen gegeven. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"the rise of twenty per cent\"? Dan denk je dat de stijging onbelangrijk is. Het is een kerngegeven, en hoort in de notities.",
+    "Koos je \"the opening of the lanes in March\"? Dan denk je dat de opening onbelangrijk is. Het is de reden voor de toename, en een kerngegeven.",
+    "Klopt: de aanloop van de verslaggever bevat geen gegeven.",
+    "Koos je \"the plan for a garage\"? Dan denk je dat het plan onbelangrijk is. Het is een kernpunt, en hoort in de notities."
+   ],
+   "uh": "Welk feit is niet essentieel?",
+   "ctx": "You hear a radio report: \"Our reporter has looked into the rising popularity of cycling in the city. According to the council, the number of bicycle trips rose by twenty per cent last year, to about 180,000 per day. The main reason, say researchers, is the new network of protected cycle lanes, which opened in March. Fatal accidents fell from eight to three. However, parking remains a problem: the central station has room for only two thousand bikes, while more than three thousand arrive each morning. The council now plans to build an underground garage for five thousand bicycles, to open in 2027 at a cost of eighteen million euros. Critics say the money would be better spent on extending the lanes to the suburbs.\""
+  },
+  {
+   "v": "What do the critics say?",
+   "o": [
+    "the garage is too small",
+    "the money should extend lanes to the suburbs",
+    "the lanes should be removed",
+    "nobody uses bicycles"
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 4,
+   "u": "Critici: uitbreiden naar buitenwijken. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"the garage is too small\"? Dan denk je dat de critici de garage te klein vinden. Ze willen het geld ergens anders voor, en niet voor een grotere garage.",
+    "Klopt: critici willen het geld besteden aan fietspaden in de buitenwijken.",
+    "Koos je \"the lanes should be removed\"? Dan denk je dat de critici de fietspaden willen weghalen. Ze willen ze juist uitbreiden, naar de buitenwijken.",
+    "Koos je \"nobody uses bicycles\"? Dan denk je dat de critici zeggen dat niemand fietst. De cijfers laten juist groei zien, en dat bestrijden ze niet."
+   ],
+   "uh": "Wat zeggen de critici?",
+   "ctx": "You hear a radio report: \"Our reporter has looked into the rising popularity of cycling in the city. According to the council, the number of bicycle trips rose by twenty per cent last year, to about 180,000 per day. The main reason, say researchers, is the new network of protected cycle lanes, which opened in March. Fatal accidents fell from eight to three. However, parking remains a problem: the central station has room for only two thousand bikes, while more than three thousand arrive each morning. The council now plans to build an underground garage for five thousand bicycles, to open in 2027 at a cost of eighteen million euros. Critics say the money would be better spent on extending the lanes to the suburbs.\""
+  },
+  {
+   "v": "Which note is clear for \"In 1784 the tax was cut and smuggling stopped\"?",
+   "o": [
+    "1784: tax ↑ → smuggling stops",
+    "1784: smuggling → tax",
+    "1784: tax cut, tea ↑↑",
+    "1784: tax ↓ → stops"
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 2,
+   "u": "Pijlen tonen oorzaak en gevolg. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"1784: tax ↑ → smuggling stops\"? Dan denk je dat de belasting steeg. De belasting werd juist verlaagd, en dat staat met ↓.",
+    "Koos je \"1784: smuggling → tax\"? Dan denk je dat de smokkel de belasting veroorzaakte. De belasting verlaagde de smokkel, dus de richting klopt niet.",
+    "Koos je \"1784: tax cut, tea ↑↑\"? Dan denk je dat de thee omhooggaat. De tekst zegt dat de smokkel stopte, en niet dat thee steeg.",
+    "Klopt: de pijl omlaag toont de verlaging en de tweede pijl het gevolg."
+   ],
+   "uh": "Welke notitie is duidelijk?",
+   "ctx": "You hear a short lecture: \"Today I'd like to say a few words about the history of tea. Tea was first drunk in China, probably more than two thousand years ago. It reached Europe in the early seventeenth century, when Dutch traders brought it from Asia. At first it was very expensive, so only rich people could afford it. In Britain, tea became popular after 1660, and by the eighteenth century it was the national drink. The government taxed tea heavily, which led to smuggling on a large scale. Only in 1784, when the tax was cut dramatically, did smuggling stop. Today, tea is the second most consumed drink in the world, after water. Three main types exist: green, black and oolong tea, which differ in how long the leaves are left to oxidise.\""
+  },
+  {
+   "v": "When did smuggling stop, and why?",
+   "o": [
+    "in 1784, because the tax was cut",
+    "in 1660, because tea became cheaper",
+    "in 1784, because tea was banned",
+    "in the eighteenth century, because tea was rationed"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 4,
+   "u": "1784: belasting omlaag. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: in 1784 werd de belasting drastisch verlaagd.",
+    "Koos je \"in 1660, because tea became cheaper\"? Dan denk je dat het in 1660 stopte. Toen werd thee populair in Brittannië, en de smokkel kwam daarna.",
+    "Koos je \"in 1784, because tea was banned\"? Dan denk je dat thee verboden werd. De belasting werd verlaagd, en niet verboden.",
+    "Koos je \"in the eighteenth century, because tea was rationed\"? Dan denk je dat er rantsoenering was. Dat staat niet in de tekst, en de oorzaak was de lagere belasting."
+   ],
+   "uh": "Wanneer stopte de smokkel?",
+   "ctx": "You hear a short lecture: \"Today I'd like to say a few words about the history of tea. Tea was first drunk in China, probably more than two thousand years ago. It reached Europe in the early seventeenth century, when Dutch traders brought it from Asia. At first it was very expensive, so only rich people could afford it. In Britain, tea became popular after 1660, and by the eighteenth century it was the national drink. The government taxed tea heavily, which led to smuggling on a large scale. Only in 1784, when the tax was cut dramatically, did smuggling stop. Today, tea is the second most consumed drink in the world, after water. Three main types exist: green, black and oolong tea, which differ in how long the leaves are left to oxidise.\""
+  },
+  {
+   "v": "Why should you not write down every word of the lecture?",
+   "o": [
+    "the lecturer forbids it",
+    "short notes are only for fun",
+    "you would miss the rest",
+    "paper is too expensive"
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 0,
+   "u": "Alles opschrijven kost tijd. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"the lecturer forbids it\"? Dan denk je dat het verboden is. Dat staat nergens, en het gaat om beperkte tijd.",
+    "Koos je \"short notes are only for fun\"? Dan denk je dat korte notities een spel zijn. Ze zijn nuttig, omdat je dan alles kunt volgen.",
+    "Klopt: terwijl je schrijft, mis je wat de spreker daarna zegt.",
+    "Koos je \"paper is too expensive\"? Dan denk je dat papier te duur is. Dat is geen reden, en het gaat om tijd."
+   ],
+   "uh": "Waarom niet alles opschrijven?",
+   "ctx": "You hear a short lecture: \"Today I'd like to say a few words about the history of tea. Tea was first drunk in China, probably more than two thousand years ago. It reached Europe in the early seventeenth century, when Dutch traders brought it from Asia. At first it was very expensive, so only rich people could afford it. In Britain, tea became popular after 1660, and by the eighteenth century it was the national drink. The government taxed tea heavily, which led to smuggling on a large scale. Only in 1784, when the tax was cut dramatically, did smuggling stop. Today, tea is the second most consumed drink in the world, after water. Three main types exist: green, black and oolong tea, which differ in how long the leaves are left to oxidise.\""
+  },
+  {
+   "v": "Which order should the notes for making the bowl have?",
+   "o": [
+    "fire → dry → smooth → widen → start",
+    "widen → smooth → dry → fire",
+    "smooth → widen → fire",
+    "dry → thumbs in → fire"
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 3,
+   "u": "Volgorde van de stappen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"fire → dry → smooth → widen → start\"? Dan denk je dat het omgekeerd gaat. Je moet eerst vormen en pas daarna drogen en bakken, dus de volgorde klopt niet.",
+    "Klopt: dit is de volgorde die de docent noemt.",
+    "Koos je \"smooth → widen → fire\"? Dan denk je dat je eerst gladstrijkt. Je moet eerst het gat verbreden, en pas daarna gladstrijken.",
+    "Koos je \"dry → thumbs in → fire\"? Dan denk je dat drogen eerst komt. De klei moet eerst gevormd worden, en dan pas drogen."
+   ],
+   "uh": "Welke volgorde klopt?",
+   "ctx": "You hear the instructions at a workshop: \"Welcome to the pottery workshop. Before we start, a few practical points. The workshop runs for three hours, with a break after ninety minutes. Please put on an apron; they are hanging by the door. You will each get a lump of clay, about one kilo, and you should keep it covered with a damp cloth when you're not using it. First, we'll make a simple bowl. Press your thumbs into the centre of the ball, then slowly widen the hole, turning the clay as you go. Second, we smooth the surface with a wet sponge. Third, we let the bowls dry for a week, and then I'll fire them in the kiln. You can collect them on the fifteenth of June. If you want to paint your bowl, bring your own colours; I only provide transparent glaze.\""
+  },
+  {
+   "v": "How long must the bowls dry before they are fired?",
+   "o": [
+    "one day",
+    "three hours",
+    "two weeks",
+    "one week"
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 4,
+   "u": "Een week drogen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"one day\"? Dan denk je dat ze een dag drogen. De spreker noemt een week, en dat is langer.",
+    "Koos je \"three hours\"? Dan denk je dat ze drie uur drogen. Drie uur is de duur van de workshop, en niet het drogen.",
+    "Koos je \"two weeks\"? Dan denk je dat ze twee weken drogen. De spreker noemt een week, en ze zijn de vijftiende klaar.",
+    "Klopt: de schalen drogen een week voordat ze gebakken worden."
+   ],
+   "uh": "Hoe lang drogen de schalen?",
+   "ctx": "You hear the instructions at a workshop: \"Welcome to the pottery workshop. Before we start, a few practical points. The workshop runs for three hours, with a break after ninety minutes. Please put on an apron; they are hanging by the door. You will each get a lump of clay, about one kilo, and you should keep it covered with a damp cloth when you're not using it. First, we'll make a simple bowl. Press your thumbs into the centre of the ball, then slowly widen the hole, turning the clay as you go. Second, we smooth the surface with a wet sponge. Third, we let the bowls dry for a week, and then I'll fire them in the kiln. You can collect them on the fifteenth of June. If you want to paint your bowl, bring your own colours; I only provide transparent glaze.\""
+  },
+  {
+   "v": "When are your notes most useful?",
+   "o": [
+    "for detail questions",
+    "before the recording starts",
+    "instead of listening",
+    "only for the title"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 0,
+   "u": "Notities voor detailvragen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: na de opname helpen je notities bij vragen over details.",
+    "Koos je \"before the recording starts\"? Dan denk je dat je notities vooraf nodig hebt. Je maakt ze tijdens het luisteren, dus ze zijn er pas later.",
+    "Koos je \"instead of listening\"? Dan denk je dat notities luisteren vervangen. Je moet eerst luisteren, en noteren is een hulpmiddel.",
+    "Koos je \"only for the title\"? Dan denk je dat notities alleen voor de titel zijn. Ze bevatten juist details, en horen bij de vragen."
+   ],
+   "uh": "Wanneer zijn je notities nuttig?",
+   "ctx": "You hear a radio report: \"Our reporter has looked into the rising popularity of cycling in the city. According to the council, the number of bicycle trips rose by twenty per cent last year, to about 180,000 per day. The main reason, say researchers, is the new network of protected cycle lanes, which opened in March. Fatal accidents fell from eight to three. However, parking remains a problem: the central station has room for only two thousand bikes, while more than three thousand arrive each morning. The council now plans to build an underground garage for five thousand bicycles, to open in 2027 at a cost of eighteen million euros. Critics say the money would be better spent on extending the lanes to the suburbs.\""
+  }
+ ],
+ "oe": [
+  {
+   "bron": "Examenstijl",
+   "ctx": "You hear a short lecture: \"Today I'd like to say a few words about the history of tea. Tea was first drunk in China, probably more than two thousand years ago. It reached Europe in the early seventeenth century, when Dutch traders brought it from Asia. At first it was very expensive, so only rich people could afford it. In Britain, tea became popular after 1660, and by the eighteenth century it was the national drink. The government taxed tea heavily, which led to smuggling on a large scale. Only in 1784, when the tax was cut dramatically, did smuggling stop. Today, tea is the second most consumed drink in the world, after water. Three main types exist: green, black and oolong tea, which differ in how long the leaves are left to oxidise.\" You make notes during the lecture.",
+   "v": "Write down brief notes on the history of tea in Europe and Britain.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Europa: begin 1600, Nederlandse handelaren (1p). Brittannië: populair na 1660 (1p). Hoge belasting, smokkel tot 1784 (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "You hear the instructions at a workshop: \"Welcome to the pottery workshop. Before we start, a few practical points. The workshop runs for three hours, with a break after ninety minutes. Please put on an apron; they are hanging by the door. You will each get a lump of clay, about one kilo, and you should keep it covered with a damp cloth when you're not using it. First, we'll make a simple bowl. Press your thumbs into the centre of the ball, then slowly widen the hole, turning the clay as you go. Second, we smooth the surface with a wet sponge. Third, we let the bowls dry for a week, and then I'll fire them in the kiln. You can collect them on the fifteenth of June. If you want to paint your bowl, bring your own colours; I only provide transparent glaze.\" You make notes during the instructions.",
+   "v": "Write down the steps for making the bowl in order.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Duimen in het midden en verbreden (1p). Gladstrijken met een natte spons (1p). Een week drogen en bakken (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "You hear a radio report: \"Our reporter has looked into the rising popularity of cycling in the city. According to the council, the number of bicycle trips rose by twenty per cent last year, to about 180,000 per day. The main reason, say researchers, is the new network of protected cycle lanes, which opened in March. Fatal accidents fell from eight to three. However, parking remains a problem: the central station has room for only two thousand bikes, while more than three thousand arrive each morning. The council now plans to build an underground garage for five thousand bicycles, to open in 2027 at a cost of eighteen million euros. Critics say the money would be better spent on extending the lanes to the suburbs.\" You make notes during the report.",
+   "v": "Write down notes on the numbers in the report.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "20 procent meer ritten, 180.000 per dag (1p). Dodelijke ongelukken van 8 naar 3 (1p). Station 2000 plaatsen tegenover 3000 fietsen, garage 5000 in 2027 voor 18 miljoen (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "You hear a short lecture: \"Today I'd like to say a few words about the history of tea. Tea was first drunk in China, probably more than two thousand years ago. It reached Europe in the early seventeenth century, when Dutch traders brought it from Asia. At first it was very expensive, so only rich people could afford it. In Britain, tea became popular after 1660, and by the eighteenth century it was the national drink. The government taxed tea heavily, which led to smuggling on a large scale. Only in 1784, when the tax was cut dramatically, did smuggling stop. Today, tea is the second most consumed drink in the world, after water. Three main types exist: green, black and oolong tea, which differ in how long the leaves are left to oxidise.\" Your teacher asks about your notes.",
+   "v": "Explain why you should not write down every word and what you leave out.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Je mist anders de volgende informatie (1p). Je laat kleine woorden weg (1p). Ook voorbeelden en aanloop (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "You hear the instructions at a workshop: \"Welcome to the pottery workshop. Before we start, a few practical points. The workshop runs for three hours, with a break after ninety minutes. Please put on an apron; they are hanging by the door. You will each get a lump of clay, about one kilo, and you should keep it covered with a damp cloth when you're not using it. First, we'll make a simple bowl. Press your thumbs into the centre of the ball, then slowly widen the hole, turning the clay as you go. Second, we smooth the surface with a wet sponge. Third, we let the bowls dry for a week, and then I'll fire them in the kiln. You can collect them on the fifteenth of June. If you want to paint your bowl, bring your own colours; I only provide transparent glaze.\" Your teacher asks about the structure of your notes.",
+   "v": "Explain how numbers and headings help you to use your notes.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Je vindt snel een stap of gegeven terug (1p). Een nummer toont de volgorde (1p). Een kopje toont het onderdeel (1p)."
+  }
+ ]
+}
