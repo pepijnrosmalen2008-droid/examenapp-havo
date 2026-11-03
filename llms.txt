@@ -5,7 +5,7 @@
 Volledige beschrijving (functies, inhoud per niveau, prijs, wat Slagio niet is): https://slagio.nl/llms-full.txt
 
 ## In het kort
-- 12 vakken havo, 16 vakken vwo, 12 vakken vmbo; 24.641 oefenvragen en 4.346 begrippen.
+- 12 vakken havo, 16 vakken vwo, 12 vakken vmbo; 24.668 oefenvragen en 4.346 begrippen.
 - Adaptief oefenen: na een fout een vraag over hetzelfde onderwerp, een niveau makkelijker; uitleg bij elk fout antwoord.
 - Foutenboek en herhalen met gespreide herhaling, beheersing per leerdoel, studieplan tot het examen.
 - Examens met klok, proefexamens in examenstijl met modelantwoord en puntenverdeling, archief met officiële oude examens.
@@ -160,6 +160,7 @@ Volledige beschrijving (functies, inhoud per niveau, prijs, wat Slagio niet is):
 - [Feiten, meningen en argumenten in een Engelse tekst onderscheiden (Engels VWO)](https://slagio.nl/leren/vwo/engels/feiten-meningen-en-argumenten-in-een-engelse-tekst-onderscheiden.html): Je leert feiten van meningen te scheiden, een standpunt met zijn argumenten, tegenargumenten en weerwoorden te herkennen en de kracht van bewijs en bronnen…
 - [Engelse brieven en e-mails lezen (Engels VWO)](https://slagio.nl/leren/vwo/engels/engelse-brieven-en-e-mails-lezen.html): Je leert formele brieven en informele e-mails te lezen: je herkent de opbouw, het doel van de afzender, de toon en de belangrijke details zoals data, bedragen…
 - [Een Engelse tekst samenvatten en parafraseren (Engels VWO)](https://slagio.nl/leren/vwo/engels/een-engelse-tekst-samenvatten-en-parafraseren.html): Je leert hoofdzaken van bijzaken te scheiden, een tekst in eigen woorden en kort samen te vatten, zinnen te parafraseren en een samenvatting op volgorde en…
+- [Relevante informatie vinden in een gesproken tekst (Engels VWO)](https://slagio.nl/leren/vwo/engels/relevante-informatie-vinden-in-een-gesproken-tekst.html): Je leert bij een Engelse luistertekst eerst de vraag te lezen en dan gericht te luisteren naar tijden, plaatsen, getallen, wijzigingen en voorwaarden, en…
 - [Feit en mening onderscheiden (Nederlands VMBO)](https://slagio.nl/leren/vmbo/nederlands/feit-en-mening-onderscheiden.html): Je hoort of ziet een tekst en weet of een uitspraak een feit of een mening is. Je let op woorden die een oordeel geven en je controleert wat te controleren is.
 - [De hoofdzaak en de kernboodschap vinden (Nederlands VMBO)](https://slagio.nl/leren/vmbo/nederlands/de-hoofdzaak-en-de-kernboodschap-vinden.html): Je luistert naar een gesproken tekst en vindt de hoofdzaak, de bijzaken en de kernboodschap, zodat je die kort en volledig kunt samenvatten.
 - [Het doel van de spreker herkennen (Nederlands VMBO)](https://slagio.nl/leren/vmbo/nederlands/het-doel-van-de-spreker-herkennen.html): Je hoort of ziet een tekst en herkent wat de spreker wil: informeren, overtuigen of amuseren. Je let op signalen zoals oproepen, meningen en grapjes.

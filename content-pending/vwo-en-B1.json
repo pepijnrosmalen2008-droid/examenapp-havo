@@ -1,0 +1,682 @@
+{
+ "id": "B1",
+ "lo": "en.B.1",
+ "gs": 2,
+ "naam": "Relevante informatie vinden in een gesproken tekst",
+ "beschrijving": "Je leert bij een Engelse luistertekst eerst de vraag te lezen en dan gericht te luisteren naar tijden, plaatsen, getallen, wijzigingen en voorwaarden, en afleiders te negeren.",
+ "ceStatus": "CE",
+ "binas": "",
+ "val": "",
+ "onderwerpen": [
+  "Luisterdoel en voorbereiding",
+  "Tijden, plaatsen en getallen",
+  "Wijzigingen en correcties",
+  "Opties en voorwaarden",
+  "Relevant en niet relevant"
+ ],
+ "sam": "Lees voor het luisteren de vraag en de opties, zodat je weet waarop je moet letten. In aankondigingen, voicemails en interviews zoek je tijden, plaatsen, bedragen en namen. Een spreker kan zichzelf corrigeren (not at three, but at four) of een wijziging noemen met unfortunately en instead: dan telt de nieuwe informatie. Let op voorwaarden als if en unless en negeer details die niet bij de vraag horen. De tweede keer controleer je je antwoorden.",
+ "begrippen": [
+  {
+   "t": "Luisterdoel",
+   "d": "Wat je uit de tekst moet halen."
+  },
+  {
+   "t": "Gericht luisteren",
+   "d": "Alleen letten op wat de vraag vraagt."
+  },
+  {
+   "t": "Detail",
+   "d": "Een klein gegeven zoals een tijd, plaats of bedrag."
+  },
+  {
+   "t": "Aankondiging",
+   "d": "Een korte mededeling, zoals op een luchthaven."
+  },
+  {
+   "t": "Voicemail",
+   "d": "Een ingesproken boodschap."
+  },
+  {
+   "t": "Correctie",
+   "d": "Een spreker verbetert zichzelf, met not ... but."
+  },
+  {
+   "t": "Wijziging",
+   "d": "Iets is anders dan gepland, met unfortunately of instead."
+  },
+  {
+   "t": "Voorwaarde",
+   "d": "Iets wat moet gelden, met if of unless."
+  },
+  {
+   "t": "Afleider",
+   "d": "Informatie die lijkt op het antwoord maar het niet is."
+  },
+  {
+   "t": "Optie",
+   "d": "Een keuze die de spreker aanbiedt."
+  },
+  {
+   "t": "Termijn",
+   "d": "Het moment waarvóór iets moet gebeuren."
+  },
+  {
+   "t": "Controleren",
+   "d": "De tweede keer je antwoorden nalopen."
+  }
+ ],
+ "sv": [
+  {
+   "v": "What should you do before the recording starts?",
+   "o": [
+    "close your eyes and relax",
+    "read the question",
+    "translate the text in your head",
+    "write down every single word"
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 0,
+   "u": "Eerst de vraag lezen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"close your eyes and relax\"? Dan denk je dat ontspannen genoeg is. Zonder voorbereiding weet je niet waarop je moet letten, en mis je gegevens.",
+    "Klopt: zo weet je waarop je moet letten en kun je gericht luisteren.",
+    "Koos je \"translate the text in your head\"? Dan denk je dat vertalen helpt. Dat kost aandacht tijdens het luisteren, en je mist de rest van de tekst.",
+    "Koos je \"write down every single word\"? Dan denk je dat alles opschrijven helpt. Dat is onmogelijk bij normaal tempo, en je mist de belangrijke gegevens."
+   ],
+   "uh": "Wat doe je voor de opname?"
+  },
+  {
+   "v": "Which details are typically important in an announcement?",
+   "o": [
+    "the voice of the speaker",
+    "the length of the recording",
+    "the name of the airline only",
+    "times, places and numbers"
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 1,
+   "u": "Tijd, plaats en getal. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"the voice of the speaker\"? Dan denk je dat de stem belangrijk is. Die zegt niets over wat je moet doen, en geeft geen gegeven.",
+    "Koos je \"the length of the recording\"? Dan denk je dat de lengte van de opname belangrijk is. Die geeft geen informatie, en helpt je niet bij de vraag.",
+    "Koos je \"the name of the airline only\"? Dan denk je dat de naam van de maatschappij genoeg is. Die zegt niets over tijd of plek, en je hebt meer nodig.",
+    "Klopt: tijden, plaatsen en getallen bepalen wat je moet doen."
+   ],
+   "uh": "Welke details zijn belangrijk?"
+  },
+  {
+   "v": "Which time is correct if a speaker says \"not at three, but at four o'clock\"?",
+   "o": [
+    "four o'clock",
+    "three o'clock",
+    "both three and four o'clock",
+    "neither of the two times"
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 2,
+   "u": "Not ... but = correctie. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: na but volgt de gecorrigeerde, juiste tijd.",
+    "Koos je \"three o'clock\"? Dan denk je dat de eerste tijd geldt. De spreker corrigeert die direct, en de nieuwe tijd is de juiste.",
+    "Koos je \"both three and four o'clock\"? Dan denk je dat beide tijden gelden. De spreker zegt not at three, dus alleen vier uur klopt.",
+    "Koos je \"neither of the two times\"? Dan denk je dat geen enkele tijd klopt. De spreker noemt de juiste tijd na but, en dat is vier uur."
+   ],
+   "uh": "Welke tijd klopt?"
+  },
+  {
+   "v": "Which words often signal a change of plan?",
+   "o": [
+    "\"for example\" and \"such as\"",
+    "\"in the morning\" and \"at night\"",
+    "\"unfortunately\" and \"instead\"",
+    "\"first\" and \"next\""
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 2,
+   "u": "Unfortunately, instead = wijziging. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"for example\" and \"such as\"\"? Dan denk je dat deze woorden een wijziging aankondigen. Ze leiden een voorbeeld in, en veranderen niets aan het plan.",
+    "Koos je \"\"in the morning\" and \"at night\"\"? Dan denk je dat deze woorden een wijziging aankondigen. Ze noemen een moment van de dag, en geven geen verandering.",
+    "Klopt: deze woorden kondigen een wijziging of tegenvaller aan.",
+    "Koos je \"\"first\" and \"next\"\"? Dan denk je dat deze woorden een wijziging aankondigen. Ze geven een volgorde aan, en veranderen niets."
+   ],
+   "uh": "Welke woorden tonen een wijziging?"
+  },
+  {
+   "v": "Which words usually introduce a condition?",
+   "o": [
+    "\"and\" and \"also\"",
+    "\"if\" and \"unless\"",
+    "\"because\" and \"since\"",
+    "\"before\" and \"after\""
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 3,
+   "u": "If en unless = voorwaarde. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"and\" and \"also\"\"? Dan denk je dat deze woorden een voorwaarde geven omdat ze zinnen verbinden. Ze voegen alleen iets toe, en stellen niets verplicht.",
+    "Klopt: if en unless geven een voorwaarde of uitzondering.",
+    "Koos je \"\"because\" and \"since\"\"? Dan denk je dat deze woorden een voorwaarde geven omdat ze een link leggen. Ze geven een reden voor iets dat al zo is, en zetten geen eis.",
+    "Koos je \"\"before\" and \"after\"\"? Dan denk je dat deze woorden een voorwaarde geven omdat ze over timing gaan. Ze noemen alleen een volgorde in tijd, en geen eis."
+   ],
+   "uh": "Welke woorden geven een voorwaarde?"
+  },
+  {
+   "v": "Which information can you usually ignore when you listen for one detail?",
+   "o": [
+    "the information that answers the question",
+    "the numbers near the answer",
+    "the change of plan",
+    "details that do not answer the question"
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 4,
+   "u": "Negeer wat niet past. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"the information that answers the question\"? Dan denk je dat je het antwoord kunt negeren. Dat is juist wat je zoekt, en moet je noteren.",
+    "Koos je \"the numbers near the answer\"? Dan denk je dat je cijfers rond het antwoord altijd kunt negeren. Ze kunnen het antwoord veranderen, dus luister ook daarnaar.",
+    "Koos je \"the change of plan\"? Dan denk je dat een wijziging onbelangrijk is. Een wijziging bepaalt vaak het juiste antwoord, en mag je niet missen.",
+    "Klopt: bij gericht luisteren let je alleen op wat de vraag vraagt."
+   ],
+   "uh": "Wat kun je negeren?"
+  },
+  {
+   "v": "Why is it useful to listen to a recording twice?",
+   "o": [
+    "you check your answers",
+    "the first time you can skip",
+    "the second time you can stop writing",
+    "the text is different the second time"
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 0,
+   "u": "Tweede keer: controleren. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: bij de tweede keer controleer je wat je de eerste keer noteerde.",
+    "Koos je \"the first time you can skip\"? Dan denk je dat de eerste keer overslaan kan. Dan mis je belangrijke informatie, en blijft je antwoord onzeker.",
+    "Koos je \"the second time you can stop writing\"? Dan denk je dat je dan niet meer hoeft te schrijven. Je controleert juist, en vult nog aan.",
+    "Koos je \"the text is different the second time\"? Dan denk je dat de tekst verandert. Dat is niet zo, het is dezelfde opname."
+   ],
+   "uh": "Waarom twee keer luisteren?"
+  },
+  {
+   "v": "What is the new departure time of flight BA 417?",
+   "o": [
+    "14.20 in the afternoon",
+    "15.05 at the gate",
+    "16.05",
+    "16.20 sharp"
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 1,
+   "u": "Nieuwe tijd = 16.05. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"14.20 in the afternoon\"? Dan denk je dat 14.20 de nieuwe tijd is. Dat was de oorspronkelijke tijd, en die is vervallen.",
+    "Koos je \"15.05 at the gate\"? Dan denk je dat het 15.05 is. Dat tijdstip wordt niet genoemd, de nieuwe tijd is 16.05.",
+    "Klopt: de nieuwe vertrektijd is 16.05, na de vertraging van de oude 14.20.",
+    "Koos je \"16.20 sharp\"? Dan denk je dat het 16.20 is. Dat lijkt op 14.20 en 16.05, maar de tekst noemt 16.05."
+   ],
+   "uh": "Wat is de nieuwe vertrektijd?",
+   "ctx": "You hear this announcement at an airport: \"Good afternoon, ladies and gentlemen. This is an announcement for passengers on flight BA 417 to Lisbon. Due to a technical problem with the aircraft, the departure, originally scheduled for 14.20, has been delayed. The new departure time is 16.05. Passengers are requested to remain in the departure area, as the gate may change at short notice; please check the screens regularly. Passengers who have a connecting flight in Lisbon should go to the information desk near gate 12, where staff will rebook their tickets free of charge. Meal vouchers worth fifteen euros are available at the same desk for everyone on this flight. We apologise for the inconvenience and thank you for your patience.\""
+  },
+  {
+   "v": "Where should passengers with a connecting flight go?",
+   "o": [
+    "to gate 12 itself",
+    "the desk near gate 12",
+    "to the screens in the departure area",
+    "to the airline lounge"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 3,
+   "u": "Aansluiting: balie bij gate 12. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"to gate 12 itself\"? Dan denk je dat ze naar de gate zelf moeten. Gate 12 is alleen de plaats bij de balie, en de balie is het doel.",
+    "Klopt: daar worden hun tickets gratis omgeboekt.",
+    "Koos je \"to the screens in the departure area\"? Dan denk je dat ze naar de schermen moeten. De schermen zijn om de gate te controleren, en niet voor het omboeken.",
+    "Koos je \"to the airline lounge\"? Dan denk je dat ze naar een lounge moeten. Een lounge wordt niet genoemd, en de balie is aangewezen."
+   ],
+   "uh": "Waar gaan ze heen?",
+   "ctx": "You hear this announcement at an airport: \"Good afternoon, ladies and gentlemen. This is an announcement for passengers on flight BA 417 to Lisbon. Due to a technical problem with the aircraft, the departure, originally scheduled for 14.20, has been delayed. The new departure time is 16.05. Passengers are requested to remain in the departure area, as the gate may change at short notice; please check the screens regularly. Passengers who have a connecting flight in Lisbon should go to the information desk near gate 12, where staff will rebook their tickets free of charge. Meal vouchers worth fifteen euros are available at the same desk for everyone on this flight. We apologise for the inconvenience and thank you for your patience.\""
+  },
+  {
+   "v": "How much are the meal vouchers worth?",
+   "o": [
+    "twelve euros in total",
+    "fifty euros per person",
+    "five euros each",
+    "fifteen euros"
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 1,
+   "u": "Fifteen = 15 euro. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"twelve euros in total\"? Dan denk je dat het twaalf euro is. Twaalf is het nummer van de gate, en geen bedrag.",
+    "Koos je \"fifty euros per person\"? Dan denk je dat het vijftig euro is. Vijftien klinkt als vijftig, maar de tekst noemt vijftien.",
+    "Koos je \"five euros each\"? Dan denk je dat het vijf euro is. Dat is een klein deel van vijftien, en niet het genoemde bedrag.",
+    "Klopt: de maaltijdbonnen zijn vijftien euro waard voor iedereen op de vlucht."
+   ],
+   "uh": "Hoeveel zijn de bonnen waard?",
+   "ctx": "You hear this announcement at an airport: \"Good afternoon, ladies and gentlemen. This is an announcement for passengers on flight BA 417 to Lisbon. Due to a technical problem with the aircraft, the departure, originally scheduled for 14.20, has been delayed. The new departure time is 16.05. Passengers are requested to remain in the departure area, as the gate may change at short notice; please check the screens regularly. Passengers who have a connecting flight in Lisbon should go to the information desk near gate 12, where staff will rebook their tickets free of charge. Meal vouchers worth fifteen euros are available at the same desk for everyone on this flight. We apologise for the inconvenience and thank you for your patience.\""
+  },
+  {
+   "v": "Why does the appointment have to be moved?",
+   "o": [
+    "the dentist is ill",
+    "the practice is closed on Thursday",
+    "the patient is ill",
+    "the practice has moved to Mill Road"
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 2,
+   "u": "Dr Patel is ziek. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: Dr Patel is ziek geworden, dus de afspraak moet verplaatst worden.",
+    "Koos je \"the practice is closed on Thursday\"? Dan denk je dat de praktijk dicht is. De praktijk is gewoon open van acht tot vijf, en het gaat om een zieke arts.",
+    "Koos je \"the patient is ill\"? Dan denk je dat de patiënt ziek is. Het is de tandarts die ziek is, en niet meneer Davies.",
+    "Koos je \"the practice has moved to Mill Road\"? Dan denk je dat de praktijk verhuisd is. Mill Road is een tweede locatie, en niet de reden."
+   ],
+   "uh": "Waarom wordt de afspraak verplaatst?",
+   "ctx": "You hear this voicemail message: \"Hello Mr Davies, this is Karen from Greenfield Dental Practice. I'm calling about your appointment on Thursday the ninth. Unfortunately, Dr Patel has fallen ill, so we need to move it. We can offer you Friday the tenth at 9.30, or Monday the thirteenth at 4.15 in the afternoon. If neither suits you, we also have a free slot with Dr Ahmed on Thursday at 11.00, though he is at our other practice on Mill Road. Please call us back before Wednesday noon on 555 0142 to confirm; otherwise we'll have to give the slot to another patient. The practice is open from eight until five. Thank you, and have a good day.\""
+  },
+  {
+   "v": "Which time is offered on Monday?",
+   "o": [
+    "9.30 in the morning",
+    "11.00 in the morning",
+    "4.15 in the afternoon",
+    "8.00 in the morning"
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 1,
+   "u": "Maandag 4.15. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"9.30 in the morning\"? Dan denk je dat de eerste tijd bij maandag hoort omdat die als eerste klinkt. Die hoort bij vrijdag de tiende, en niet bij maandag.",
+    "Koos je \"11.00 in the morning\"? Dan denk je dat de tijd van de tweede optie voor maandag geldt. Dat is de plek bij Dr Ahmed op donderdag, en niet op maandag.",
+    "Klopt: maandag de dertiende wordt 4.15 in de middag aangeboden.",
+    "Koos je \"8.00 in the morning\"? Dan denk je dat de openingstijd een afspraaktijd is. Het is alleen het moment waarop de praktijk opent, en niet een aangeboden tijd."
+   ],
+   "uh": "Welke tijd is er op maandag?",
+   "ctx": "You hear this voicemail message: \"Hello Mr Davies, this is Karen from Greenfield Dental Practice. I'm calling about your appointment on Thursday the ninth. Unfortunately, Dr Patel has fallen ill, so we need to move it. We can offer you Friday the tenth at 9.30, or Monday the thirteenth at 4.15 in the afternoon. If neither suits you, we also have a free slot with Dr Ahmed on Thursday at 11.00, though he is at our other practice on Mill Road. Please call us back before Wednesday noon on 555 0142 to confirm; otherwise we'll have to give the slot to another patient. The practice is open from eight until five. Thank you, and have a good day.\""
+  },
+  {
+   "v": "What is a disadvantage of the slot with Dr Ahmed?",
+   "o": [
+    "it is on Friday",
+    "at another practice",
+    "it is later in the afternoon",
+    "it costs more money"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 3,
+   "u": "Andere locatie = nadeel. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"it is on Friday\"? Dan denk je dat het vrijdag is. De afspraak met Dr Ahmed is donderdag, en niet vrijdag.",
+    "Klopt: de afspraak is op een andere locatie, in Mill Road.",
+    "Koos je \"it is later in the afternoon\"? Dan denk je dat het laat op de middag is. De tijd is 11.00, en dus in de ochtend.",
+    "Koos je \"it costs more money\"? Dan denk je dat het meer kost. Over kosten wordt niets gezegd, en het nadeel is de locatie."
+   ],
+   "uh": "Wat is het nadeel?",
+   "ctx": "You hear this voicemail message: \"Hello Mr Davies, this is Karen from Greenfield Dental Practice. I'm calling about your appointment on Thursday the ninth. Unfortunately, Dr Patel has fallen ill, so we need to move it. We can offer you Friday the tenth at 9.30, or Monday the thirteenth at 4.15 in the afternoon. If neither suits you, we also have a free slot with Dr Ahmed on Thursday at 11.00, though he is at our other practice on Mill Road. Please call us back before Wednesday noon on 555 0142 to confirm; otherwise we'll have to give the slot to another patient. The practice is open from eight until five. Thank you, and have a good day.\""
+  },
+  {
+   "v": "By when must Mr Davies call back?",
+   "o": [
+    "before Thursday noon",
+    "before Friday at 9.30",
+    "before five o'clock today",
+    "before Wednesday noon"
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 3,
+   "u": "Terugbellen voor woensdag 12.00. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"before Thursday noon\"? Dan denk je dat het donderdag is. Donderdag is de oorspronkelijke afspraak, en niet de uiterste datum.",
+    "Koos je \"before Friday at 9.30\"? Dan denk je dat het vrijdag om 9.30 is. Dat is een aangeboden afspraak, en geen terugbeltermijn.",
+    "Koos je \"before five o'clock today\"? Dan denk je dat het vandaag om vijf uur is. Vijf uur is de sluitingstijd, en niet de termijn.",
+    "Klopt: hij moet vóór woensdag twaalf uur terugbellen."
+   ],
+   "uh": "Wanneer moet hij terugbellen?",
+   "ctx": "You hear this voicemail message: \"Hello Mr Davies, this is Karen from Greenfield Dental Practice. I'm calling about your appointment on Thursday the ninth. Unfortunately, Dr Patel has fallen ill, so we need to move it. We can offer you Friday the tenth at 9.30, or Monday the thirteenth at 4.15 in the afternoon. If neither suits you, we also have a free slot with Dr Ahmed on Thursday at 11.00, though he is at our other practice on Mill Road. Please call us back before Wednesday noon on 555 0142 to confirm; otherwise we'll have to give the slot to another patient. The practice is open from eight until five. Thank you, and have a good day.\""
+  },
+  {
+   "v": "When does the repair café meet?",
+   "o": [
+    "the first Saturday",
+    "every Saturday",
+    "the last Saturday of every month",
+    "the first Sunday of every month"
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 1,
+   "u": "Eerste zaterdag van de maand. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: de bijeenkomst is elke eerste zaterdag van de maand.",
+    "Koos je \"every Saturday\"? Dan denk je dat het elke zaterdag is. Het is alleen de eerste zaterdag van de maand, en dus minder vaak.",
+    "Koos je \"the last Saturday of every month\"? Dan denk je dat het de laatste zaterdag is. Maya noemt de eerste zaterdag, en niet de laatste.",
+    "Koos je \"the first Sunday of every month\"? Dan denk je dat het zondag is. Het is een zaterdag, en geen zondag."
+   ],
+   "uh": "Wanneer is het repair café?",
+   "ctx": "You hear this radio interview: \"Presenter: Today we're talking to Maya Torres, who runs a repair café in Leeds. Maya, what exactly happens there? Maya: People bring broken things, like toasters, bicycles or even jeans with a hole, and volunteers help them fix them for free. We meet on the first Saturday of every month from ten to two in the community centre. Presenter: And does everything get repaired? Maya: About two thirds, actually. When we can't fix something, we explain why, so people learn something anyway. We always need more volunteers, especially people who know about electronics, and we don't ask for any experience with sewing; we'll teach you. Presenter: How can listeners get involved? Maya: Just turn up, or visit our website, where there's a form.\""
+  },
+  {
+   "v": "How many things get repaired?",
+   "o": [
+    "about a third",
+    "almost everything",
+    "about two thirds",
+    "about half"
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 1,
+   "u": "Two thirds = 2/3. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"about a third\"? Dan denk je dat het een derde is. Een derde is juist het deel dat niet lukt, en niet het deel dat lukt.",
+    "Koos je \"almost everything\"? Dan denk je dat bijna alles gerepareerd wordt. Maya zegt tweederde, en dat is minder dan bijna alles.",
+    "Klopt: Maya zegt dat ongeveer tweederde gerepareerd wordt.",
+    "Koos je \"about half\"? Dan denk je dat het de helft is. Maya noemt tweederde, en dat is meer dan de helft."
+   ],
+   "uh": "Hoeveel wordt gerepareerd?",
+   "ctx": "You hear this radio interview: \"Presenter: Today we're talking to Maya Torres, who runs a repair café in Leeds. Maya, what exactly happens there? Maya: People bring broken things, like toasters, bicycles or even jeans with a hole, and volunteers help them fix them for free. We meet on the first Saturday of every month from ten to two in the community centre. Presenter: And does everything get repaired? Maya: About two thirds, actually. When we can't fix something, we explain why, so people learn something anyway. We always need more volunteers, especially people who know about electronics, and we don't ask for any experience with sewing; we'll teach you. Presenter: How can listeners get involved? Maya: Just turn up, or visit our website, where there's a form.\""
+  },
+  {
+   "v": "What kind of volunteers does Maya especially need?",
+   "o": [
+    "people who can sew",
+    "people who know electronics",
+    "people who bring their jeans",
+    "people with experience of radio"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 4,
+   "u": "Vooral elektronica. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"people who can sew\"? Dan denk je dat ze naaiers zoekt. Ze zegt juist dat naaiervaring niet nodig is, en dat ze het leren.",
+    "Klopt: Maya zoekt vooral vrijwilligers die iets van elektronica weten.",
+    "Koos je \"people who bring their jeans\"? Dan denk je dat ze mensen met kapotte spijkerbroeken zoekt. Dat zijn bezoekers, en geen vrijwilligers.",
+    "Koos je \"people with experience of radio\"? Dan denk je dat ze presentatoren zoekt. Radio is het medium van het gesprek, en geen vrijwilligerswerk."
+   ],
+   "uh": "Welke vrijwilligers zoekt ze?",
+   "ctx": "You hear this radio interview: \"Presenter: Today we're talking to Maya Torres, who runs a repair café in Leeds. Maya, what exactly happens there? Maya: People bring broken things, like toasters, bicycles or even jeans with a hole, and volunteers help them fix them for free. We meet on the first Saturday of every month from ten to two in the community centre. Presenter: And does everything get repaired? Maya: About two thirds, actually. When we can't fix something, we explain why, so people learn something anyway. We always need more volunteers, especially people who know about electronics, and we don't ask for any experience with sewing; we'll teach you. Presenter: How can listeners get involved? Maya: Just turn up, or visit our website, where there's a form.\""
+  },
+  {
+   "v": "Why must passengers stay in the departure area?",
+   "o": [
+    "the plane is already boarding",
+    "security is closed",
+    "the delay is only ten minutes",
+    "the gate may change"
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 2,
+   "u": "Gate kan wijzigen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"the plane is already boarding\"? Dan denk je dat het boarden al is begonnen. Het vliegtuig heeft een technisch probleem, en vertrekt pas om 16.05.",
+    "Koos je \"security is closed\"? Dan denk je dat de beveiliging dicht is. Dat staat niet in de tekst, de reden is een mogelijke gatewijziging.",
+    "Koos je \"the delay is only ten minutes\"? Dan denk je dat de vertraging kort is. Het is bijna twee uur, en dat is geen tien minuten.",
+    "Klopt: de gate kan op korte termijn wijzigen."
+   ],
+   "uh": "Waarom blijven ze in de vertrekhal?",
+   "ctx": "You hear this announcement at an airport: \"Good afternoon, ladies and gentlemen. This is an announcement for passengers on flight BA 417 to Lisbon. Due to a technical problem with the aircraft, the departure, originally scheduled for 14.20, has been delayed. The new departure time is 16.05. Passengers are requested to remain in the departure area, as the gate may change at short notice; please check the screens regularly. Passengers who have a connecting flight in Lisbon should go to the information desk near gate 12, where staff will rebook their tickets free of charge. Meal vouchers worth fifteen euros are available at the same desk for everyone on this flight. We apologise for the inconvenience and thank you for your patience.\""
+  },
+  {
+   "v": "A passenger on BA 417 has no connecting flight. What can she get at the desk near gate 12?",
+   "o": [
+    "a meal voucher",
+    "a free rebooking of her ticket",
+    "a refund of her ticket",
+    "a free hotel room"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 4,
+   "u": "Bonnen voor iedereen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: de maaltijdbonnen zijn voor iedereen op deze vlucht.",
+    "Koos je \"a free rebooking of her ticket\"? Dan denk je dat ook zij een omboeking krijgt. Dat geldt alleen voor aansluitende vluchten, en zij heeft er geen.",
+    "Koos je \"a refund of her ticket\"? Dan denk je dat ze haar geld terugkrijgt. Dat wordt niet genoemd, en de tekst zegt alleen omboeken.",
+    "Koos je \"a free hotel room\"? Dan denk je dat ze een hotelkamer krijgt. Dat staat niet in de tekst, en de vertraging is geen nacht."
+   ],
+   "uh": "Wat krijgt zij?",
+   "ctx": "You hear this announcement at an airport: \"Good afternoon, ladies and gentlemen. This is an announcement for passengers on flight BA 417 to Lisbon. Due to a technical problem with the aircraft, the departure, originally scheduled for 14.20, has been delayed. The new departure time is 16.05. Passengers are requested to remain in the departure area, as the gate may change at short notice; please check the screens regularly. Passengers who have a connecting flight in Lisbon should go to the information desk near gate 12, where staff will rebook their tickets free of charge. Meal vouchers worth fifteen euros are available at the same desk for everyone on this flight. We apologise for the inconvenience and thank you for your patience.\""
+  },
+  {
+   "v": "Mr Davies wants to keep Thursday. Which option does he have?",
+   "o": [
+    "the slot with Dr Patel at 9.30",
+    "the slot on Friday at 4.15",
+    "the slot with Dr Ahmed",
+    "there is no option for Thursday"
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 2,
+   "u": "Donderdag: Dr Ahmed 11.00. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"the slot with Dr Patel at 9.30\"? Dan denk je dat Dr Patel nog kan. Dr Patel is ziek, en 9.30 is de tijd op vrijdag.",
+    "Koos je \"the slot on Friday at 4.15\"? Dan denk je dat 4.15 vrijdag is. Dat is de tijd op maandag, en vrijdag is om 9.30.",
+    "Klopt: Dr Ahmed heeft donderdag om 11.00 nog een plek.",
+    "Koos je \"there is no option for Thursday\"? Dan denk je dat er geen plek is. Dr Ahmed heeft donderdag een plek, dus er is een optie."
+   ],
+   "uh": "Welke optie heeft hij?",
+   "ctx": "You hear this voicemail message: \"Hello Mr Davies, this is Karen from Greenfield Dental Practice. I'm calling about your appointment on Thursday the ninth. Unfortunately, Dr Patel has fallen ill, so we need to move it. We can offer you Friday the tenth at 9.30, or Monday the thirteenth at 4.15 in the afternoon. If neither suits you, we also have a free slot with Dr Ahmed on Thursday at 11.00, though he is at our other practice on Mill Road. Please call us back before Wednesday noon on 555 0142 to confirm; otherwise we'll have to give the slot to another patient. The practice is open from eight until five. Thank you, and have a good day.\""
+  },
+  {
+   "v": "What happens if Mr Davies does not call back in time?",
+   "o": [
+    "the practice will phone again",
+    "it may go to others",
+    "he must pay a fine",
+    "the appointment stays as it is"
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 3,
+   "u": "Anders gaat de plek weg. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"the practice will phone again\"? Dan denk je dat de praktijk opnieuw belt. Dat staat niet in de tekst, en de plek vervalt.",
+    "Klopt: de assistente zegt dat de plek anders naar een andere patiënt gaat.",
+    "Koos je \"he must pay a fine\"? Dan denk je dat hij een boete krijgt. Daar wordt niets over gezegd, en het gaat om de plek.",
+    "Koos je \"the appointment stays as it is\"? Dan denk je dat de afspraak blijft staan. De arts is ziek, dus de oude afspraak vervalt."
+   ],
+   "uh": "Wat gebeurt er als hij niet belt?",
+   "ctx": "You hear this voicemail message: \"Hello Mr Davies, this is Karen from Greenfield Dental Practice. I'm calling about your appointment on Thursday the ninth. Unfortunately, Dr Patel has fallen ill, so we need to move it. We can offer you Friday the tenth at 9.30, or Monday the thirteenth at 4.15 in the afternoon. If neither suits you, we also have a free slot with Dr Ahmed on Thursday at 11.00, though he is at our other practice on Mill Road. Please call us back before Wednesday noon on 555 0142 to confirm; otherwise we'll have to give the slot to another patient. The practice is open from eight until five. Thank you, and have a good day.\""
+  },
+  {
+   "v": "Which information in the message is NOT needed to choose an appointment?",
+   "o": [
+    "the offered times",
+    "the place of Dr Ahmed",
+    "the date by which to call back",
+    "opening hours"
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 4,
+   "u": "Openingstijden = niet nodig. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"the offered times\"? Dan denk je dat de aangeboden tijden niet nodig zijn. Daaruit kiest hij, dus ze zijn juist nodig.",
+    "Koos je \"the place of Dr Ahmed\"? Dan denk je dat de plaats niet nodig is. Die bepaalt of de afspraak past, dus hij is wel nodig.",
+    "Koos je \"the date by which to call back\"? Dan denk je dat de terugbeldatum niet nodig is. Zonder datum verliest hij de plek, dus ze is wel nodig.",
+    "Klopt: de openingstijden helpen niet om een van de aangeboden tijden te kiezen."
+   ],
+   "uh": "Welke informatie is niet nodig?",
+   "ctx": "You hear this voicemail message: \"Hello Mr Davies, this is Karen from Greenfield Dental Practice. I'm calling about your appointment on Thursday the ninth. Unfortunately, Dr Patel has fallen ill, so we need to move it. We can offer you Friday the tenth at 9.30, or Monday the thirteenth at 4.15 in the afternoon. If neither suits you, we also have a free slot with Dr Ahmed on Thursday at 11.00, though he is at our other practice on Mill Road. Please call us back before Wednesday noon on 555 0142 to confirm; otherwise we'll have to give the slot to another patient. The practice is open from eight until five. Thank you, and have a good day.\""
+  },
+  {
+   "v": "Which statement is true about the repair café?",
+   "o": [
+    "free repairs, not all fixed",
+    "only electronics are repaired",
+    "people pay ten euros per item",
+    "everything is repaired"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 2,
+   "u": "Gratis en niet alles lukt. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: de reparaties zijn gratis en ongeveer tweederde lukt.",
+    "Koos je \"only electronics are repaired\"? Dan denk je dat alleen elektronica wordt gerepareerd. Maya noemt ook fietsen en spijkerbroeken, dus het is breder.",
+    "Koos je \"people pay ten euros per item\"? Dan denk je dat bezoekers per voorwerp betalen. Maya zegt for free, dus het is gratis.",
+    "Koos je \"everything is repaired\"? Dan denk je dat alles lukt. Maya zegt ongeveer tweederde, dus niet alles."
+   ],
+   "uh": "Welke bewering klopt?",
+   "ctx": "You hear this radio interview: \"Presenter: Today we're talking to Maya Torres, who runs a repair café in Leeds. Maya, what exactly happens there? Maya: People bring broken things, like toasters, bicycles or even jeans with a hole, and volunteers help them fix them for free. We meet on the first Saturday of every month from ten to two in the community centre. Presenter: And does everything get repaired? Maya: About two thirds, actually. When we can't fix something, we explain why, so people learn something anyway. We always need more volunteers, especially people who know about electronics, and we don't ask for any experience with sewing; we'll teach you. Presenter: How can listeners get involved? Maya: Just turn up, or visit our website, where there's a form.\""
+  },
+  {
+   "v": "What does Maya say about sewing?",
+   "o": [
+    "only experts can help with sewing",
+    "sewing is not offered at all",
+    "no experience is needed",
+    "volunteers must bring their own machines"
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 3,
+   "u": "Geen ervaring nodig. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"only experts can help with sewing\"? Dan denk je dat alleen experts mogen helpen. Maya zegt juist dat ervaring niet nodig is, en dat ze het leert.",
+    "Koos je \"sewing is not offered at all\"? Dan denk je dat naaien niet wordt aangeboden. Er worden ook spijkerbroeken gerepareerd, dus naaien hoort erbij.",
+    "Klopt: ze vraagt geen naai-ervaring en leert het de vrijwilligers.",
+    "Koos je \"volunteers must bring their own machines\"? Dan denk je dat vrijwilligers een machine moeten meenemen. Dat zegt Maya niet, en ze leren het ter plekke."
+   ],
+   "uh": "Wat zegt Maya over naaien?",
+   "ctx": "You hear this radio interview: \"Presenter: Today we're talking to Maya Torres, who runs a repair café in Leeds. Maya, what exactly happens there? Maya: People bring broken things, like toasters, bicycles or even jeans with a hole, and volunteers help them fix them for free. We meet on the first Saturday of every month from ten to two in the community centre. Presenter: And does everything get repaired? Maya: About two thirds, actually. When we can't fix something, we explain why, so people learn something anyway. We always need more volunteers, especially people who know about electronics, and we don't ask for any experience with sewing; we'll teach you. Presenter: How can listeners get involved? Maya: Just turn up, or visit our website, where there's a form.\""
+  },
+  {
+   "v": "Why do the volunteers explain when something cannot be fixed?",
+   "o": [
+    "to get paid anyway",
+    "they still learn",
+    "to avoid fixing the item",
+    "to sell new products"
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 4,
+   "u": "Uitleg: toch iets leren. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"to get paid anyway\"? Dan denk je dat ze betaald worden. Het werk is gratis, dus dat is niet de reden.",
+    "Klopt: Maya zegt dat bezoekers zo toch iets leren.",
+    "Koos je \"to avoid fixing the item\"? Dan denk je dat ze het reparatiewerk willen ontlopen. Ze helpen juist, en leggen uit als het niet lukt.",
+    "Koos je \"to sell new products\"? Dan denk je dat ze nieuwe spullen verkopen. Daar staat niets over, en het gaat om leren."
+   ],
+   "uh": "Waarom leggen ze het uit?",
+   "ctx": "You hear this radio interview: \"Presenter: Today we're talking to Maya Torres, who runs a repair café in Leeds. Maya, what exactly happens there? Maya: People bring broken things, like toasters, bicycles or even jeans with a hole, and volunteers help them fix them for free. We meet on the first Saturday of every month from ten to two in the community centre. Presenter: And does everything get repaired? Maya: About two thirds, actually. When we can't fix something, we explain why, so people learn something anyway. We always need more volunteers, especially people who know about electronics, and we don't ask for any experience with sewing; we'll teach you. Presenter: How can listeners get involved? Maya: Just turn up, or visit our website, where there's a form.\""
+  },
+  {
+   "v": "Which time and place are given for the meetings?",
+   "o": [
+    "from ten to four in the library",
+    "from nine to two in the town hall",
+    "from one to five in the community centre",
+    "from ten to two in the community centre"
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 1,
+   "u": "Tien tot twee, buurthuis. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"from ten to four in the library\"? Dan denk je dat het tot vier uur in de bibliotheek is. Maya noemt twee uur en het buurthuis, dus beide kloppen niet.",
+    "Koos je \"from nine to two in the town hall\"? Dan denk je dat het om negen uur begint in het stadhuis. Het begint om tien uur, en het is in het buurthuis.",
+    "Koos je \"from one to five in the community centre\"? Dan denk je dat het van één tot vijf is. De plaats klopt, maar de tijd niet: het is van tien tot twee.",
+    "Klopt: de bijeenkomst is van tien tot twee in het buurthuis."
+   ],
+   "uh": "Welke tijd en plaats?",
+   "ctx": "You hear this radio interview: \"Presenter: Today we're talking to Maya Torres, who runs a repair café in Leeds. Maya, what exactly happens there? Maya: People bring broken things, like toasters, bicycles or even jeans with a hole, and volunteers help them fix them for free. We meet on the first Saturday of every month from ten to two in the community centre. Presenter: And does everything get repaired? Maya: About two thirds, actually. When we can't fix something, we explain why, so people learn something anyway. We always need more volunteers, especially people who know about electronics, and we don't ask for any experience with sewing; we'll teach you. Presenter: How can listeners get involved? Maya: Just turn up, or visit our website, where there's a form.\""
+  },
+  {
+   "v": "How can listeners get involved?",
+   "o": [
+    "turn up or use the form",
+    "call the radio station",
+    "write a letter to Maya",
+    "bring a broken item to the presenter"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 0,
+   "u": "Komen of formulier. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: Maya zegt dat je gewoon kunt komen of het formulier op de website invult.",
+    "Koos je \"call the radio station\"? Dan denk je dat ze naar de zender moeten bellen. Dat noemt Maya niet, en het gaat om het repair café.",
+    "Koos je \"write a letter to Maya\"? Dan denk je dat ze een brief moeten schrijven. Maya noemt een formulier op de website, en geen brief.",
+    "Koos je \"bring a broken item to the presenter\"? Dan denk je dat ze iets naar de presentator moeten brengen. Het repair café is in het buurthuis, en niet bij de zender."
+   ],
+   "uh": "Hoe kunnen ze meedoen?",
+   "ctx": "You hear this radio interview: \"Presenter: Today we're talking to Maya Torres, who runs a repair café in Leeds. Maya, what exactly happens there? Maya: People bring broken things, like toasters, bicycles or even jeans with a hole, and volunteers help them fix them for free. We meet on the first Saturday of every month from ten to two in the community centre. Presenter: And does everything get repaired? Maya: About two thirds, actually. When we can't fix something, we explain why, so people learn something anyway. We always need more volunteers, especially people who know about electronics, and we don't ask for any experience with sewing; we'll teach you. Presenter: How can listeners get involved? Maya: Just turn up, or visit our website, where there's a form.\""
+  }
+ ],
+ "oe": [
+  {
+   "bron": "Examenstijl",
+   "ctx": "You hear an airport announcement: \"Good afternoon, ladies and gentlemen. This is an announcement for passengers on flight BA 417 to Lisbon. Due to a technical problem with the aircraft, the departure, originally scheduled for 14.20, has been delayed. The new departure time is 16.05. Passengers are requested to remain in the departure area, as the gate may change at short notice; please check the screens regularly. Passengers who have a connecting flight in Lisbon should go to the information desk near gate 12, where staff will rebook their tickets free of charge. Meal vouchers worth fifteen euros are available at the same desk for everyone on this flight. We apologise for the inconvenience and thank you for your patience.\" You must tell a friend who is travelling on this flight what to do.",
+   "v": "Give the new departure time and say where passengers with a connecting flight must go.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "De nieuwe tijd is 16.05 (1p). Naar de informatiebalie bij gate 12 (1p). Daar worden tickets gratis omgeboekt (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "You hear this voicemail message: \"Hello Mr Davies, this is Karen from Greenfield Dental Practice. I'm calling about your appointment on Thursday the ninth. Unfortunately, Dr Patel has fallen ill, so we need to move it. We can offer you Friday the tenth at 9.30, or Monday the thirteenth at 4.15 in the afternoon. If neither suits you, we also have a free slot with Dr Ahmed on Thursday at 11.00, though he is at our other practice on Mill Road. Please call us back before Wednesday noon on 555 0142 to confirm; otherwise we'll have to give the slot to another patient. The practice is open from eight until five. Thank you, and have a good day.\" Mr Davies wants to keep his appointment on Thursday.",
+   "v": "Say which option he has and what he must do before Wednesday noon.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "De afspraak met Dr Ahmed donderdag om 11.00 (1p). Die is op een andere locatie, Mill Road (1p). Hij moet terugbellen om te bevestigen (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "You hear this radio interview: \"Presenter: Today we're talking to Maya Torres, who runs a repair café in Leeds. Maya, what exactly happens there? Maya: People bring broken things, like toasters, bicycles or even jeans with a hole, and volunteers help them fix them for free. We meet on the first Saturday of every month from ten to two in the community centre. Presenter: And does everything get repaired? Maya: About two thirds, actually. When we can't fix something, we explain why, so people learn something anyway. We always need more volunteers, especially people who know about electronics, and we don't ask for any experience with sewing; we'll teach you. Presenter: How can listeners get involved? Maya: Just turn up, or visit our website, where there's a form.\" You want to visit the repair café with a broken toaster.",
+   "v": "Say when and where it takes place and whether you have to pay.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "De eerste zaterdag van de maand van tien tot twee (1p). In het buurthuis (1p). Het is gratis (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "You hear this announcement at an airport: \"Good afternoon, ladies and gentlemen. This is an announcement for passengers on flight BA 417 to Lisbon. Due to a technical problem with the aircraft, the departure, originally scheduled for 14.20, has been delayed. The new departure time is 16.05. Passengers are requested to remain in the departure area, as the gate may change at short notice; please check the screens regularly. Passengers who have a connecting flight in Lisbon should go to the information desk near gate 12, where staff will rebook their tickets free of charge. Meal vouchers worth fifteen euros are available at the same desk for everyone on this flight. We apologise for the inconvenience and thank you for your patience.\" A passenger without a connecting flight asks for help.",
+   "v": "Say what he can get and where.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Een maaltijdbon van vijftien euro (1p). Bij de informatiebalie bij gate 12 (1p). Die is voor iedereen op deze vlucht (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "You hear this voicemail message: \"Hello Mr Davies, this is Karen from Greenfield Dental Practice. I'm calling about your appointment on Thursday the ninth. Unfortunately, Dr Patel has fallen ill, so we need to move it. We can offer you Friday the tenth at 9.30, or Monday the thirteenth at 4.15 in the afternoon. If neither suits you, we also have a free slot with Dr Ahmed on Thursday at 11.00, though he is at our other practice on Mill Road. Please call us back before Wednesday noon on 555 0142 to confirm; otherwise we'll have to give the slot to another patient. The practice is open from eight until five. Thank you, and have a good day.\" Mr Davies cannot come on Friday.",
+   "v": "Name the other time that is offered for a normal appointment and say what happens if he does not call back.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Maandag de dertiende om 4.15 in de middag (1p). Hij moet vóór woensdag twaalf uur terugbellen (1p). Anders gaat de plek naar een andere patiënt (1p)."
+  }
+ ]
+}
