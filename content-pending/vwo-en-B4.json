@@ -1,0 +1,682 @@
+{
+ "id": "B4",
+ "lo": "en.B.4",
+ "gs": 2,
+ "naam": "Conclusies trekken over bedoeling, mening en gevoel van sprekers",
+ "beschrijving": "Je leert bij een Engelse opname uit woordkeus, toon en wat niet gezegd wordt af te leiden wat sprekers willen, vinden en voelen, en je onderscheidt expliciete van impliciete boodschappen.",
+ "ceStatus": "CE",
+ "binas": "",
+ "val": "",
+ "onderwerpen": [
+  "De bedoeling van de spreker",
+  "Toon en woordkeus",
+  "Mening en oordeel",
+  "Gevoelens afleiden",
+  "Impliciet, ironie en sarcasme"
+ ],
+ "sam": "Je leidt af wat een spreker wil (klagen, troosten, adviseren), vindt en voelt uit woordkeus en toon. Positieve woorden zoals superb tonen waardering, negatieve zoals disappointing afkeuring. Zinnen als I really expected more tonen teleurstelling. Bij ironie en sarcasme zegt een spreker het omgekeerde, en een impliciete mening wordt niet gezegd maar is te horen. Signaalwoorden als that said en but tonen een omslag. Onderbouw je conclusie met wat je hoort.",
+ "begrippen": [
+  {
+   "t": "Bedoeling",
+   "d": "Wat een spreker met zijn woorden wil bereiken."
+  },
+  {
+   "t": "Toon",
+   "d": "De houding van de spreker, hoorbaar in stem en woordkeus."
+  },
+  {
+   "t": "Intonatie",
+   "d": "De melodie van de stem."
+  },
+  {
+   "t": "Mening",
+   "d": "Wat een spreker vindt."
+  },
+  {
+   "t": "Oordeel",
+   "d": "Een waardering, positief of negatief."
+  },
+  {
+   "t": "Gevoel",
+   "d": "Hoe een spreker zich voelt."
+  },
+  {
+   "t": "Teleurstelling",
+   "d": "Het gevoel dat iets tegenvalt."
+  },
+  {
+   "t": "Verzachten",
+   "d": "Kritiek vriendelijker maken, zoals met I'm sure it was busy."
+  },
+  {
+   "t": "Ironie",
+   "d": "Het tegenovergestelde zeggen van wat je bedoelt."
+  },
+  {
+   "t": "Sarcasme",
+   "d": "Scherpe, spottende ironie."
+  },
+  {
+   "t": "Impliciet",
+   "d": "Niet direct gezegd maar af te leiden."
+  },
+  {
+   "t": "Expliciet",
+   "d": "Direct gezegd."
+  }
+ ],
+ "sv": [
+  {
+   "v": "Which intention does a complaint have?",
+   "o": [
+    "to say thank you",
+    "to ask for improvement",
+    "to give a compliment",
+    "to entertain the listener"
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 0,
+   "u": "Klacht = om verbetering vragen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"to say thank you\"? Dan denk je dat een klacht bedankt. Een klacht meldt juist een probleem, en is niet vriendelijk bedoeld.",
+    "Klopt: bij een klacht wil de spreker dat er iets verbetert.",
+    "Koos je \"to give a compliment\"? Dan denk je dat een klacht een compliment is. Een klacht is kritisch, en vraagt om herstel.",
+    "Koos je \"to entertain the listener\"? Dan denk je dat een klacht vermaakt. Een klacht heeft een serieus doel, en wil niet amuseren."
+   ],
+   "uh": "Welke bedoeling past?"
+  },
+  {
+   "v": "What can a speaker's tone of voice show?",
+   "o": [
+    "the time of day",
+    "the speaker's age",
+    "the length of the text",
+    "feelings and attitude"
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 1,
+   "u": "Toon = gevoel en houding. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"the time of day\"? Dan denk je dat de toon het tijdstip toont. Dat zegt een stem niet, en de toon gaat over gevoel.",
+    "Koos je \"the speaker's age\"? Dan denk je dat de toon de leeftijd toont. Leeftijd is geen houding, en de toon gaat over gevoel.",
+    "Koos je \"the length of the text\"? Dan denk je dat de toon de tekstlengte toont. Lengte zegt niets over houding, en is geen toon.",
+    "Klopt: de toon laat zien hoe iemand zich voelt en wat hij vindt."
+   ],
+   "uh": "Wat toont de toon?"
+  },
+  {
+   "v": "Which words signal a positive opinion?",
+   "o": [
+    "\"superb\" and \"gripping\"",
+    "\"falls apart\" and \"rushed\"",
+    "\"however\" and \"but\"",
+    "\"first\" and \"then\""
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 2,
+   "u": "Superb en gripping = positief. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: superb en gripping zijn lovende woorden.",
+    "Koos je \"\"falls apart\" and \"rushed\"\"? Dan denk je dat deze woorden positief zijn. Ze zijn juist negatief, en tonen kritiek.",
+    "Koos je \"\"however\" and \"but\"\"? Dan denk je dat deze woorden een oordeel geven. Ze zijn alleen signaalwoorden, en zeggen niet of iets goed is.",
+    "Koos je \"\"first\" and \"then\"\"? Dan denk je dat deze woorden een oordeel geven. Ze geven alleen een volgorde, en zijn neutraal."
+   ],
+   "uh": "Welke woorden zijn positief?"
+  },
+  {
+   "v": "Which words signal a negative opinion?",
+   "o": [
+    "\"excellent\" and \"brilliant\"",
+    "\"on time\" and \"in order\"",
+    "\"disappointing\" and \"weak\"",
+    "\"tomorrow\" and \"tonight\""
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 2,
+   "u": "Disappointing, weak = negatief. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"excellent\" and \"brilliant\"\"? Dan denk je dat deze woorden negatief zijn. Ze zijn juist positief, en tonen waardering.",
+    "Koos je \"\"on time\" and \"in order\"\"? Dan denk je dat deze woorden negatief zijn. Ze zijn neutraal of positief, en bevatten geen afkeuring.",
+    "Klopt: disappointing en weak zijn afkeurende woorden.",
+    "Koos je \"\"tomorrow\" and \"tonight\"\"? Dan denk je dat deze woorden negatief zijn. Het zijn tijdswoorden, en tonen geen oordeel."
+   ],
+   "uh": "Welke woorden zijn negatief?"
+  },
+  {
+   "v": "Which phrase shows disappointment?",
+   "o": [
+    "\"That is wonderful news\"",
+    "\"I expected more\"",
+    "\"I can't wait\"",
+    "\"That sounds like fun\""
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 3,
+   "u": "Expected more = teleurgesteld. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"That is wonderful news\"\"? Dan denk je dat deze zin teleurstelling toont. Het is juist blij, en positief.",
+    "Klopt: de spreker had meer verwacht, dus is teleurgesteld.",
+    "Koos je \"\"I can't wait\"\"? Dan denk je dat deze zin teleurstelling toont. Het toont verwachting, en geen teleurstelling.",
+    "Koos je \"\"That sounds like fun\"\"? Dan denk je dat deze zin teleurstelling toont. Het toont interesse, en is positief."
+   ],
+   "uh": "Welke zin toont teleurstelling?"
+  },
+  {
+   "v": "Which description fits sarcasm?",
+   "o": [
+    "saying exactly what you mean",
+    "telling a long story",
+    "asking a polite question",
+    "mocking opposite"
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 4,
+   "u": "Sarcasme = omgekeerd en spottend. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"saying exactly what you mean\"? Dan denk je dat sarcasme eerlijk zeggen is. Sarcasme is het omgekeerde, en juist niet letterlijk.",
+    "Koos je \"telling a long story\"? Dan denk je dat sarcasme een lang verhaal is. De lengte zegt niets, en sarcasme is een vorm.",
+    "Koos je \"asking a polite question\"? Dan denk je dat sarcasme een beleefde vraag is. Sarcasme is spottend, en niet beleefd.",
+    "Klopt: bij sarcasme zeg je het omgekeerde, spottend."
+   ],
+   "uh": "Wat is sarcasme?"
+  },
+  {
+   "v": "Which description fits an implicit opinion?",
+   "o": [
+    "not said outright",
+    "said very loudly",
+    "repeated twice",
+    "written in a letter"
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 4,
+   "u": "Impliciet = niet direct gezegd. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: een impliciete mening wordt niet gezegd maar is af te leiden.",
+    "Koos je \"said very loudly\"? Dan denk je dat impliciet luid betekent. Het gaat om niet direct zeggen, en niet om volume.",
+    "Koos je \"repeated twice\"? Dan denk je dat impliciet herhaald betekent. Het gaat om niet noemen, en niet om herhalen.",
+    "Koos je \"written in a letter\"? Dan denk je dat impliciet geschreven betekent. Het gaat om hoe iets gezegd wordt, en niet om het medium."
+   ],
+   "uh": "Wat is impliciet?"
+  },
+  {
+   "v": "What is Rachel's main intention?",
+   "o": [
+    "to thank Jonas warmly for his work",
+    "to give Jonas a new job",
+    "criticise and set a meeting",
+    "to cancel the report"
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 0,
+   "u": "Kritiek en afspraak. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"to thank Jonas warmly for his work\"? Dan denk je dat ze hartelijk bedankt. Haar dank klinkt met I suppose halfhartig, en ze noemt fouten.",
+    "Koos je \"to give Jonas a new job\"? Dan denk je dat ze een nieuwe baan geeft. Daar staat niets over, en ze bespreekt het rapport.",
+    "Klopt: ze benoemt fouten en nodigt Jonas uit voor een gesprek.",
+    "Koos je \"to cancel the report\"? Dan denk je dat ze het rapport annuleert. Ze wil het bespreken, en niet laten vervallen."
+   ],
+   "uh": "Wat is haar bedoeling?",
+   "ctx": "You hear a voicemail from a manager: \"Hi Jonas, it's Rachel. I've just read your report, and, well, thanks for getting it to me on time, I suppose. I did notice a few things. The figures on page four don't match the summary, and there's no mention of the budget we agreed. I'm sure it was a busy week, but I really expected a bit more care from someone with your experience. I know you can do better than this. Anyway, let's talk about it tomorrow at nine. Please bring the original data with you. And, er, get some rest tonight.\""
+  },
+  {
+   "v": "Which phrase shows that Rachel is not fully pleased?",
+   "o": [
+    "\"it's Rachel\"",
+    "\"thanks ... I suppose\"",
+    "\"Hi Jonas\"",
+    "\"let's talk about it tomorrow at nine\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 1,
+   "u": "I suppose = halfhartig. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"it's Rachel\"\"? Dan denk je dat deze woorden onvrede tonen. Ze noemen alleen haar naam, en geven geen oordeel.",
+    "Klopt: I suppose maakt haar dank halfhartig en dus niet oprecht.",
+    "Koos je \"\"Hi Jonas\"\"? Dan denk je dat deze woorden onvrede tonen. Het is een neutrale groet, en geeft geen oordeel.",
+    "Koos je \"\"let's talk about it tomorrow at nine\"\"? Dan denk je dat deze woorden onvrede tonen. Het is een afspraak, en neutraal gezegd."
+   ],
+   "uh": "Welke woorden tonen onvrede?",
+   "ctx": "You hear a voicemail from a manager: \"Hi Jonas, it's Rachel. I've just read your report, and, well, thanks for getting it to me on time, I suppose. I did notice a few things. The figures on page four don't match the summary, and there's no mention of the budget we agreed. I'm sure it was a busy week, but I really expected a bit more care from someone with your experience. I know you can do better than this. Anyway, let's talk about it tomorrow at nine. Please bring the original data with you. And, er, get some rest tonight.\""
+  },
+  {
+   "v": "How does Rachel feel about the report?",
+   "o": [
+    "delighted about it",
+    "indifferent to it",
+    "amused by it",
+    "disappointed"
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 3,
+   "u": "Verwachtte meer = teleurgesteld. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"delighted about it\"? Dan denk je dat ze verheugd is. Ze noemt fouten en tegenvallers, en is dus niet blij.",
+    "Koos je \"indifferent to it\"? Dan denk je dat ze onverschillig is. Ze noemt precies wat ontbreekt, dus het raakt haar.",
+    "Koos je \"amused by it\"? Dan denk je dat ze geamuseerd is. Haar toon is serieus, en niet vrolijk.",
+    "Klopt: ze had meer zorg verwacht, dus is teleurgesteld."
+   ],
+   "uh": "Hoe voelt Rachel zich?",
+   "ctx": "You hear a voicemail from a manager: \"Hi Jonas, it's Rachel. I've just read your report, and, well, thanks for getting it to me on time, I suppose. I did notice a few things. The figures on page four don't match the summary, and there's no mention of the budget we agreed. I'm sure it was a busy week, but I really expected a bit more care from someone with your experience. I know you can do better than this. Anyway, let's talk about it tomorrow at nine. Please bring the original data with you. And, er, get some rest tonight.\""
+  },
+  {
+   "v": "Why does she ask Jonas to bring the original data?",
+   "o": [
+    "to check the figures that do not match",
+    "to copy it for herself",
+    "to give him a prize for it",
+    "to delete the report"
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 0,
+   "u": "Data nodig om cijfers te controleren. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: de cijfers op bladzijde vier kloppen niet met de samenvatting.",
+    "Koos je \"to copy it for herself\"? Dan denk je dat ze het wil kopiëren. Ze wil de cijfers controleren, en niet kopiëren.",
+    "Koos je \"to give him a prize for it\"? Dan denk je dat ze hem beloont. Ze is teleurgesteld, en wil de fouten bespreken.",
+    "Koos je \"to delete the report\"? Dan denk je dat ze het rapport wil wissen. Ze wil het bespreken, en de gegevens nakijken."
+   ],
+   "uh": "Waarom moet hij de data meenemen?",
+   "ctx": "You hear a voicemail from a manager: \"Hi Jonas, it's Rachel. I've just read your report, and, well, thanks for getting it to me on time, I suppose. I did notice a few things. The figures on page four don't match the summary, and there's no mention of the budget we agreed. I'm sure it was a busy week, but I really expected a bit more care from someone with your experience. I know you can do better than this. Anyway, let's talk about it tomorrow at nine. Please bring the original data with you. And, er, get some rest tonight.\""
+  },
+  {
+   "v": "What is the reviewer's overall opinion of the film?",
+   "o": [
+    "entirely positive",
+    "entirely negative",
+    "mostly negative",
+    "neutral, without an opinion"
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 2,
+   "u": "Overwegend negatief, met lof. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"entirely positive\"? Dan denk je dat de recensent alles prijst. Hij noemt de plot falend, en het einde gehaast.",
+    "Koos je \"entirely negative\"? Dan denk je dat de recensent alles afkeurt. Hij noemt de hoofdrolspeler superb, en enkele scènes gripping.",
+    "Klopt: de plot en het einde vallen tegen, maar de hoofdrolspeler is goed.",
+    "Koos je \"neutral, without an opinion\"? Dan denk je dat de recensent geen mening geeft. Hij oordeelt duidelijk, en eindigt met een advies."
+   ],
+   "uh": "Wat is zijn oordeel?",
+   "ctx": "You hear a film review on the radio: \"I went into this film with high hopes, since the trailer promised a clever thriller. Sadly, the plot falls apart after about an hour. The characters make decisions that no sensible person would make, and the ending, which I won't spoil, feels rushed. That said, the lead actor is superb, and a few scenes in the middle are genuinely gripping. If you enjoy beautiful photography, you might still find it worth a watch. But if you want a story that holds together, I'd save your money.\""
+  },
+  {
+   "v": "Which parts of the film does the reviewer praise?",
+   "o": [
+    "the ending of the film",
+    "the actor and scenes",
+    "the trailer for the film",
+    "the plot of the film"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 2,
+   "u": "Acteur en enkele scènes. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"the ending of the film\"? Dan denk je dat hij het einde prijst. Hij vindt het einde gehaast, dus dat is kritiek.",
+    "Klopt: hij noemt de hoofdrolspeler superb en enkele scènes boeiend.",
+    "Koos je \"the trailer for the film\"? Dan denk je dat hij de trailer prijst. De trailer maakte hoge verwachtingen, die de film niet waarmaakt.",
+    "Koos je \"the plot of the film\"? Dan denk je dat hij de plot prijst. Hij zegt dat de plot uit elkaar valt, dus dat is kritiek."
+   ],
+   "uh": "Wat prijst hij?",
+   "ctx": "You hear a film review on the radio: \"I went into this film with high hopes, since the trailer promised a clever thriller. Sadly, the plot falls apart after about an hour. The characters make decisions that no sensible person would make, and the ending, which I won't spoil, feels rushed. That said, the lead actor is superb, and a few scenes in the middle are genuinely gripping. If you enjoy beautiful photography, you might still find it worth a watch. But if you want a story that holds together, I'd save your money.\""
+  },
+  {
+   "v": "What does the reviewer finally advise?",
+   "o": [
+    "to see the film twice",
+    "to buy the soundtrack",
+    "to watch the trailer again",
+    "save your money"
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 0,
+   "u": "Besparen als je een goed verhaal wilt. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"to see the film twice\"? Dan denk je dat hij een tweede keer kijken adviseert. Hij raadt het geld sparen aan, en niet opnieuw kijken.",
+    "Koos je \"to buy the soundtrack\"? Dan denk je dat hij de muziek adviseert. Over muziek wordt niet gesproken, en het gaat om geld sparen.",
+    "Koos je \"to watch the trailer again\"? Dan denk je dat hij de trailer adviseert. Die gaf juist te hoge verwachtingen, en hij raadt iets anders aan.",
+    "Klopt: wie een verhaal wil dat klopt, kan het geld beter besparen."
+   ],
+   "uh": "Wat adviseert hij?",
+   "ctx": "You hear a film review on the radio: \"I went into this film with high hopes, since the trailer promised a clever thriller. Sadly, the plot falls apart after about an hour. The characters make decisions that no sensible person would make, and the ending, which I won't spoil, feels rushed. That said, the lead actor is superb, and a few scenes in the middle are genuinely gripping. If you enjoy beautiful photography, you might still find it worth a watch. But if you want a story that holds together, I'd save your money.\""
+  },
+  {
+   "v": "How does Lena feel about the move?",
+   "o": [
+    "sad and worried",
+    "very excited",
+    "angry with her father",
+    "relieved"
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 3,
+   "u": "Verdrietig en bezorgd. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: ze noemt een kleinere kamer, twee bussen en het missen van Sophie.",
+    "Koos je \"very excited\"? Dan denk je dat Lena enthousiast is. Dat was ze vorige week, maar nu noemt ze nadelen.",
+    "Koos je \"angry with her father\"? Dan denk je dat Lena boos is op haar vader. Ze noemt zorgen, en is niet boos op hem.",
+    "Koos je \"relieved\"? Dan denk je dat Lena opgelucht is. Ze noemt veranderingen die haar zorgen baren, en dat is geen opluchting."
+   ],
+   "uh": "Hoe voelt Lena zich?",
+   "ctx": "You hear a conversation between a father and his daughter: \"Dad: So, what do you think of the new house? Lena: It's fine, I guess. Dad: Fine? You seemed excited last week. Lena: I was. But my room is smaller, and I'll have to take two buses to school. Dad: I know it's not perfect. Lena: And I'll miss Sophie. We've been friends since we were five. Dad: She can come and stay in the holidays, you know. Lena: Yeah, maybe. It's just... everything is changing so fast. Dad: I understand, sweetheart. Give it a few weeks, and I think you'll feel differently.\""
+  },
+  {
+   "v": "What does \"everything is changing so fast\" show?",
+   "o": [
+    "she is bored",
+    "she is very happy",
+    "she is overwhelmed",
+    "she is angry at Sophie"
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 3,
+   "u": "Te snel = overweldigd. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"she is bored\"? Dan denk je dat Lena zich verveelt. Ze noemt veranderingen die haar zorgen baren, en dat is geen verveling.",
+    "Koos je \"she is very happy\"? Dan denk je dat Lena blij is. Haar toon is treurig, en ze noemt nadelen.",
+    "Klopt: ze vindt het te veel en te snel gaan, dus overweldigd.",
+    "Koos je \"she is angry at Sophie\"? Dan denk je dat Lena boos is op Sophie. Ze zal haar juist missen, en is niet boos."
+   ],
+   "uh": "Wat laat de zin zien?",
+   "ctx": "You hear a conversation between a father and his daughter: \"Dad: So, what do you think of the new house? Lena: It's fine, I guess. Dad: Fine? You seemed excited last week. Lena: I was. But my room is smaller, and I'll have to take two buses to school. Dad: I know it's not perfect. Lena: And I'll miss Sophie. We've been friends since we were five. Dad: She can come and stay in the holidays, you know. Lena: Yeah, maybe. It's just... everything is changing so fast. Dad: I understand, sweetheart. Give it a few weeks, and I think you'll feel differently.\""
+  },
+  {
+   "v": "What is the father's intention in the conversation?",
+   "o": [
+    "to scold her for being negative",
+    "to comfort Lena",
+    "to change the topic",
+    "to make her decide at once"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 0,
+   "u": "Troosten. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"to scold her for being negative\"? Dan denk je dat hij haar uitscheldt. Hij zegt I understand, en toont begrip.",
+    "Klopt: hij toont begrip en biedt een oplossing en geduld aan.",
+    "Koos je \"to change the topic\"? Dan denk je dat hij van onderwerp verandert. Hij blijft bij haar zorgen, en reageert erop.",
+    "Koos je \"to make her decide at once\"? Dan denk je dat hij haar dwingt te beslissen. Hij zegt give it a few weeks, en geeft haar tijd."
+   ],
+   "uh": "Wat is zijn bedoeling?",
+   "ctx": "You hear a conversation between a father and his daughter: \"Dad: So, what do you think of the new house? Lena: It's fine, I guess. Dad: Fine? You seemed excited last week. Lena: I was. But my room is smaller, and I'll have to take two buses to school. Dad: I know it's not perfect. Lena: And I'll miss Sophie. We've been friends since we were five. Dad: She can come and stay in the holidays, you know. Lena: Yeah, maybe. It's just... everything is changing so fast. Dad: I understand, sweetheart. Give it a few weeks, and I think you'll feel differently.\""
+  },
+  {
+   "v": "Why does Rachel say \"I'm sure it was a busy week\"?",
+   "o": [
+    "to excuse the mistakes completely",
+    "to blame someone else",
+    "to start a new topic",
+    "to soften her criticism"
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 4,
+   "u": "Verzachten, maar kritisch blijven. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"to excuse the mistakes completely\"? Dan denk je dat ze de fouten helemaal vergeeft. Ze zegt but I really expected more, dus ze blijft kritisch.",
+    "Koos je \"to blame someone else\"? Dan denk je dat ze iemand anders de schuld geeft. Ze spreekt Jonas zelf aan, en richt de kritiek op hem.",
+    "Koos je \"to start a new topic\"? Dan denk je dat ze een nieuw onderwerp begint. Het hoort bij de kritiek, en verzacht die.",
+    "Klopt: ze erkent dat het druk was, maar blijft kritisch."
+   ],
+   "uh": "Waarom zegt ze dit?",
+   "ctx": "You hear a voicemail from a manager: \"Hi Jonas, it's Rachel. I've just read your report, and, well, thanks for getting it to me on time, I suppose. I did notice a few things. The figures on page four don't match the summary, and there's no mention of the budget we agreed. I'm sure it was a busy week, but I really expected a bit more care from someone with your experience. I know you can do better than this. Anyway, let's talk about it tomorrow at nine. Please bring the original data with you. And, er, get some rest tonight.\""
+  },
+  {
+   "v": "Which description fits Rachel's tone?",
+   "o": [
+    "polite but critical",
+    "warm and friendly throughout",
+    "angry and shouting",
+    "joking and carefree"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 4,
+   "u": "Beleefd maar kritisch. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: ze blijft beleefd, maar zegt duidelijk dat ze meer had verwacht.",
+    "Koos je \"warm and friendly throughout\"? Dan denk je dat haar toon warm is. Ze zegt I suppose en noemt fouten, dus haar toon is kritisch.",
+    "Koos je \"angry and shouting\"? Dan denk je dat ze woedend is. Ze blijft beleefd, en schreeuwt niet.",
+    "Koos je \"joking and carefree\"? Dan denk je dat ze grapt. Haar toon is serieus, en ze noemt fouten."
+   ],
+   "uh": "Welke toon past?",
+   "ctx": "You hear a voicemail from a manager: \"Hi Jonas, it's Rachel. I've just read your report, and, well, thanks for getting it to me on time, I suppose. I did notice a few things. The figures on page four don't match the summary, and there's no mention of the budget we agreed. I'm sure it was a busy week, but I really expected a bit more care from someone with your experience. I know you can do better than this. Anyway, let's talk about it tomorrow at nine. Please bring the original data with you. And, er, get some rest tonight.\""
+  },
+  {
+   "v": "What does \"well\" at the start of Rachel's message suggest?",
+   "o": [
+    "delight about the report",
+    "confusion about the name",
+    "hesitation",
+    "anger at the delay"
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 1,
+   "u": "Well = aarzeling. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"delight about the report\"? Dan denk je dat well vreugde toont. Een aarzeling past niet bij blijdschap, en ze is teleurgesteld.",
+    "Koos je \"confusion about the name\"? Dan denk je dat well verwarring over een naam toont. Ze noemt Jonas direct bij naam, dus dat is het niet.",
+    "Klopt: well laat een aarzeling horen voordat ze iets negatiefs zegt.",
+    "Koos je \"anger at the delay\"? Dan denk je dat well boosheid toont. Ze bedankt hem voor het op tijd inleveren, en is niet boos op de vertraging."
+   ],
+   "uh": "Wat suggereert well?",
+   "ctx": "You hear a voicemail from a manager: \"Hi Jonas, it's Rachel. I've just read your report, and, well, thanks for getting it to me on time, I suppose. I did notice a few things. The figures on page four don't match the summary, and there's no mention of the budget we agreed. I'm sure it was a busy week, but I really expected a bit more care from someone with your experience. I know you can do better than this. Anyway, let's talk about it tomorrow at nine. Please bring the original data with you. And, er, get some rest tonight.\""
+  },
+  {
+   "v": "What does \"That said\" signal in the review?",
+   "o": [
+    "a turn from praise to criticism",
+    "a turn to praise",
+    "a repetition of the criticism",
+    "the final conclusion"
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 2,
+   "u": "That said = omslag naar lof. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"a turn from praise to criticism\"? Dan denk je dat de lof naar kritiek gaat. De zin ervoor is kritisch, en daarna volgt lof.",
+    "Klopt: na de kritiek volgt met that said lof voor de acteur.",
+    "Koos je \"a repetition of the criticism\"? Dan denk je dat de kritiek herhaald wordt. Er komt iets anders, namelijk een positief punt.",
+    "Koos je \"the final conclusion\"? Dan denk je dat that said de conclusie inleidt. De conclusie volgt met but, en niet met that said."
+   ],
+   "uh": "Wat signaleert that said?",
+   "ctx": "You hear a film review on the radio: \"I went into this film with high hopes, since the trailer promised a clever thriller. Sadly, the plot falls apart after about an hour. The characters make decisions that no sensible person would make, and the ending, which I won't spoil, feels rushed. That said, the lead actor is superb, and a few scenes in the middle are genuinely gripping. If you enjoy beautiful photography, you might still find it worth a watch. But if you want a story that holds together, I'd save your money.\""
+  },
+  {
+   "v": "Which statement is an opinion, not a fact?",
+   "o": [
+    "the film has a lead actor",
+    "the reviewer saw the trailer",
+    "the film has beautiful photography",
+    "the ending feels rushed"
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 2,
+   "u": "Feels rushed = mening. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"the film has a lead actor\"? Dan denk je dat dit een mening is omdat de acteur genoemd wordt. Het is een feit over de film, dat je kunt controleren.",
+    "Koos je \"the reviewer saw the trailer\"? Dan denk je dat dit een mening is omdat het over verwachting gaat. Het is een feit over wat hij deed, en geen oordeel.",
+    "Koos je \"the film has beautiful photography\"? Dan denk je dat dit een feit is. Beautiful is een waardeoordeel, dus het is een mening.",
+    "Klopt: feels rushed is een persoonlijk oordeel."
+   ],
+   "uh": "Welke uitspraak is een mening?",
+   "ctx": "You hear a film review on the radio: \"I went into this film with high hopes, since the trailer promised a clever thriller. Sadly, the plot falls apart after about an hour. The characters make decisions that no sensible person would make, and the ending, which I won't spoil, feels rushed. That said, the lead actor is superb, and a few scenes in the middle are genuinely gripping. If you enjoy beautiful photography, you might still find it worth a watch. But if you want a story that holds together, I'd save your money.\""
+  },
+  {
+   "v": "What does the reviewer imply with \"I'd save your money\"?",
+   "o": [
+    "not worth the price",
+    "the film is free",
+    "the tickets are very cheap",
+    "the film is a bargain"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 4,
+   "u": "Save your money = niet de moeite. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: hij zegt indirect dat de film het kaartje niet waard is.",
+    "Koos je \"the film is free\"? Dan denk je dat de film gratis is. Hij praat over geld besparen, dus niet over gratis.",
+    "Koos je \"the tickets are very cheap\"? Dan denk je dat de kaartjes goedkoop zijn. Hij raadt aan niet te betalen, en niet dat ze goedkoop zijn.",
+    "Koos je \"the film is a bargain\"? Dan denk je dat de film een koopje is. Hij raadt het juist af, en dat is het tegenovergestelde."
+   ],
+   "uh": "Wat impliceert hij?",
+   "ctx": "You hear a film review on the radio: \"I went into this film with high hopes, since the trailer promised a clever thriller. Sadly, the plot falls apart after about an hour. The characters make decisions that no sensible person would make, and the ending, which I won't spoil, feels rushed. That said, the lead actor is superb, and a few scenes in the middle are genuinely gripping. If you enjoy beautiful photography, you might still find it worth a watch. But if you want a story that holds together, I'd save your money.\""
+  },
+  {
+   "v": "Why does Lena say \"It's fine, I guess\"?",
+   "o": [
+    "she loves the house",
+    "she is joking with her father",
+    "she hides her unhappiness",
+    "she has not seen the house"
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 3,
+   "u": "I guess = weifelend. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"she loves the house\"? Dan denk je dat ze het huis geweldig vindt. Ze noemt direct nadelen, dus ze is niet blij.",
+    "Koos je \"she is joking with her father\"? Dan denk je dat ze een grapje maakt. Haar toon is zorgelijk, en ze noemt echte bezwaren.",
+    "Klopt: I guess maakt haar antwoord weifelend, haar zorgen volgen even later.",
+    "Koos je \"she has not seen the house\"? Dan denk je dat ze het huis niet gezien heeft. Ze kent de kamer en de buslijn, dus ze heeft het gezien."
+   ],
+   "uh": "Waarom zegt ze dit?",
+   "ctx": "You hear a conversation between a father and his daughter: \"Dad: So, what do you think of the new house? Lena: It's fine, I guess. Dad: Fine? You seemed excited last week. Lena: I was. But my room is smaller, and I'll have to take two buses to school. Dad: I know it's not perfect. Lena: And I'll miss Sophie. We've been friends since we were five. Dad: She can come and stay in the holidays, you know. Lena: Yeah, maybe. It's just... everything is changing so fast. Dad: I understand, sweetheart. Give it a few weeks, and I think you'll feel differently.\""
+  },
+  {
+   "v": "What does Dad's sentence \"She can come and stay in the holidays\" show?",
+   "o": [
+    "he is annoyed with her",
+    "he offers a solution",
+    "he ignores her feelings",
+    "he wants her to move away"
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 3,
+   "u": "Begrip en oplossing. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"he is annoyed with her\"? Dan denk je dat hij geërgerd is. Hij biedt hulp aan, en toont begrip.",
+    "Klopt: hij reageert op haar zorg over Sophie met een voorstel.",
+    "Koos je \"he ignores her feelings\"? Dan denk je dat hij haar gevoelens negeert. Hij reageert juist op Sophie, en neemt haar serieus.",
+    "Koos je \"he wants her to move away\"? Dan denk je dat hij haar weg wil hebben. Hij biedt een logeerpartij aan, en wil haar steunen."
+   ],
+   "uh": "Wat toont de zin?",
+   "ctx": "You hear a conversation between a father and his daughter: \"Dad: So, what do you think of the new house? Lena: It's fine, I guess. Dad: Fine? You seemed excited last week. Lena: I was. But my room is smaller, and I'll have to take two buses to school. Dad: I know it's not perfect. Lena: And I'll miss Sophie. We've been friends since we were five. Dad: She can come and stay in the holidays, you know. Lena: Yeah, maybe. It's just... everything is changing so fast. Dad: I understand, sweetheart. Give it a few weeks, and I think you'll feel differently.\""
+  },
+  {
+   "v": "Which sentence shows implicitly how Lena feels?",
+   "o": [
+    "\"My room is smaller.\"",
+    "\"I'll have to take two buses to school.\"",
+    "\"We've been friends since we were five.\"",
+    "\"everything is changing so fast\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 4,
+   "u": "Impliciet: gevoel via toon. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"My room is smaller.\"\"? Dan denk je dat deze zin haar gevoel impliciet toont. Het is een feitelijk bezwaar, en geen gevoel.",
+    "Koos je \"\"I'll have to take two buses to school.\"\"? Dan denk je dat deze zin haar gevoel toont. Het is een feit over de reis, en geen gevoel.",
+    "Koos je \"\"We've been friends since we were five.\"\"? Dan denk je dat deze zin haar gevoel toont. Het is een feit over de vriendschap, en geen gevoel.",
+    "Klopt: ze zegt niet dat ze verdrietig is, maar het is te horen."
+   ],
+   "uh": "Welke zin toont impliciet haar gevoel?",
+   "ctx": "You hear a conversation between a father and his daughter: \"Dad: So, what do you think of the new house? Lena: It's fine, I guess. Dad: Fine? You seemed excited last week. Lena: I was. But my room is smaller, and I'll have to take two buses to school. Dad: I know it's not perfect. Lena: And I'll miss Sophie. We've been friends since we were five. Dad: She can come and stay in the holidays, you know. Lena: Yeah, maybe. It's just... everything is changing so fast. Dad: I understand, sweetheart. Give it a few weeks, and I think you'll feel differently.\""
+  },
+  {
+   "v": "What is the main message of the conversation?",
+   "o": [
+    "Lena is sad, Dad reassures",
+    "Lena loves the new house",
+    "the father wants to sell the house",
+    "Lena refuses to move"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 0,
+   "u": "Zorgen en geruststelling. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: ze noemt haar zorgen en hij stelt haar gerust.",
+    "Koos je \"Lena loves the new house\"? Dan denk je dat Lena het huis geweldig vindt. Ze noemt haar zorgen, en is niet enthousiast.",
+    "Koos je \"the father wants to sell the house\"? Dan denk je dat de vader het huis wil verkopen. Daar wordt niet over gepraat, en het gesprek gaat over verhuizen.",
+    "Koos je \"Lena refuses to move\"? Dan denk je dat Lena weigert te verhuizen. Ze is verdrietig, maar weigert niet."
+   ],
+   "uh": "Wat is de kern?",
+   "ctx": "You hear a conversation between a father and his daughter: \"Dad: So, what do you think of the new house? Lena: It's fine, I guess. Dad: Fine? You seemed excited last week. Lena: I was. But my room is smaller, and I'll have to take two buses to school. Dad: I know it's not perfect. Lena: And I'll miss Sophie. We've been friends since we were five. Dad: She can come and stay in the holidays, you know. Lena: Yeah, maybe. It's just... everything is changing so fast. Dad: I understand, sweetheart. Give it a few weeks, and I think you'll feel differently.\""
+  }
+ ],
+ "oe": [
+  {
+   "bron": "Examenstijl",
+   "ctx": "You hear a voicemail from a manager: \"Hi Jonas, it's Rachel. I've just read your report, and, well, thanks for getting it to me on time, I suppose. I did notice a few things. The figures on page four don't match the summary, and there's no mention of the budget we agreed. I'm sure it was a busy week, but I really expected a bit more care from someone with your experience. I know you can do better than this. Anyway, let's talk about it tomorrow at nine. Please bring the original data with you. And, er, get some rest tonight.\" Your teacher asks about the manager's message.",
+   "v": "Say what Rachel's intention is and how she feels about the report.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Ze wil de fouten bespreken en een afspraak maken (1p). Ze is teleurgesteld (1p). Ze verwachtte meer zorg van Jonas (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "You hear a voicemail from a manager: \"Hi Jonas, it's Rachel. I've just read your report, and, well, thanks for getting it to me on time, I suppose. I did notice a few things. The figures on page four don't match the summary, and there's no mention of the budget we agreed. I'm sure it was a busy week, but I really expected a bit more care from someone with your experience. I know you can do better than this. Anyway, let's talk about it tomorrow at nine. Please bring the original data with you. And, er, get some rest tonight.\" Your teacher asks about her tone.",
+   "v": "Describe Rachel's tone and explain what \"I suppose\" shows.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Beleefd maar kritisch (1p). I suppose maakt haar dank halfhartig (1p). Ze verzacht haar kritiek met een zin als I'm sure it was a busy week (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "You hear a film review on the radio: \"I went into this film with high hopes, since the trailer promised a clever thriller. Sadly, the plot falls apart after about an hour. The characters make decisions that no sensible person would make, and the ending, which I won't spoil, feels rushed. That said, the lead actor is superb, and a few scenes in the middle are genuinely gripping. If you enjoy beautiful photography, you might still find it worth a watch. But if you want a story that holds together, I'd save your money.\" Your teacher asks about the reviewer's opinion.",
+   "v": "Give the reviewer's overall opinion and one reason for it.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Overwegend negatief (1p). De plot valt uit elkaar of het einde is gehaast (1p). Hij raadt aan het geld te sparen (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "You hear a film review on the radio: \"I went into this film with high hopes, since the trailer promised a clever thriller. Sadly, the plot falls apart after about an hour. The characters make decisions that no sensible person would make, and the ending, which I won't spoil, feels rushed. That said, the lead actor is superb, and a few scenes in the middle are genuinely gripping. If you enjoy beautiful photography, you might still find it worth a watch. But if you want a story that holds together, I'd save your money.\" Your teacher asks about a signal phrase.",
+   "v": "Explain what \"That said\" signals and name two things the reviewer praises.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Een omslag van kritiek naar lof (1p). De hoofdrolspeler (1p). Een paar scènes of de mooie foto's (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "You hear a conversation between a father and his daughter: \"Dad: So, what do you think of the new house? Lena: It's fine, I guess. Dad: Fine? You seemed excited last week. Lena: I was. But my room is smaller, and I'll have to take two buses to school. Dad: I know it's not perfect. Lena: And I'll miss Sophie. We've been friends since we were five. Dad: She can come and stay in the holidays, you know. Lena: Yeah, maybe. It's just... everything is changing so fast. Dad: I understand, sweetheart. Give it a few weeks, and I think you'll feel differently.\" Your teacher asks about the feelings in the conversation.",
+   "v": "Say how Lena feels and how her father reacts.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Lena is verdrietig of bezorgd (1p). Haar vader toont begrip (1p). Hij biedt een oplossing of geduld aan (1p)."
+  }
+ ]
+}
