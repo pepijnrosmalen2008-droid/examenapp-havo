@@ -1,0 +1,682 @@
+{
+ "id": "B3",
+ "lo": "en.B.3",
+ "gs": 2,
+ "naam": "De betekenis van woorden en zinnen in gesproken tekst",
+ "beschrijving": "Je leert bij een Engelse luistertekst de betekenis van onbekende woorden, idiomen, phrasal verbs en spreektaal af te leiden uit de context en zinnen te parafraseren.",
+ "ceStatus": "CE",
+ "binas": "",
+ "val": "",
+ "onderwerpen": [
+  "Betekenis afleiden uit de context",
+  "Idiomen en figuurlijk taalgebruik",
+  "Phrasal verbs",
+  "Spreektaal en uitdrukkingen",
+  "Parafraseren"
+ ],
+ "sam": "Een onbekend woord leid je af uit de zinnen eromheen. Idiomen als throw in the towel (opgeven) en turned the corner (het ging beter) betekenen iets anders dan de losse woorden. Phrasal verbs zoals top up (bijvullen), look over (onderzoeken) en drop by (langskomen) krijgen met een klein woord een nieuwe betekenis. Uitdrukkingen als far from it betekenen helemaal niet. Een parafrase zegt hetzelfde met andere woorden; luister door als je een woord niet kent.",
+ "begrippen": [
+  {
+   "t": "Context",
+   "d": "De zinnen rond een woord die de betekenis aangeven."
+  },
+  {
+   "t": "Idioom",
+   "d": "Een vaste uitdrukking met een eigen betekenis."
+  },
+  {
+   "t": "Letterlijk",
+   "d": "Precies wat de woorden zeggen."
+  },
+  {
+   "t": "Figuurlijk",
+   "d": "Een overdrachtelijke betekenis."
+  },
+  {
+   "t": "Phrasal verb",
+   "d": "Een werkwoord plus een klein woord met een nieuwe betekenis."
+  },
+  {
+   "t": "Spreektaal",
+   "d": "Informele taal zoals gewone sprekers die gebruiken."
+  },
+  {
+   "t": "Uitdrukking",
+   "d": "Een vaste zegswijze, zoals far from it."
+  },
+  {
+   "t": "Parafrase",
+   "d": "Dezelfde betekenis in andere woorden."
+  },
+  {
+   "t": "Parafraseren",
+   "d": "Een zin met andere woorden herformuleren."
+  },
+  {
+   "t": "Raden",
+   "d": "Een betekenis afleiden uit de zin."
+  },
+  {
+   "t": "Vaste uitdrukking",
+   "d": "Woorden die samen een eigen betekenis hebben."
+  },
+  {
+   "t": "Doorluisteren",
+   "d": "Niet stoppen als je een woord niet kent."
+  }
+ ],
+ "sv": [
+  {
+   "v": "Which clue helps you understand an unknown word when listening?",
+   "o": [
+    "the speed of the speaker",
+    "the sentences around it",
+    "the volume of the voice",
+    "the length of the word"
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 0,
+   "u": "Context geeft de betekenis. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"the speed of the speaker\"? Dan denk je dat het tempo de betekenis geeft. Het tempo zegt niets over betekenis, en helpt niet bij raden.",
+    "Klopt: de context rond het woord laat zien wat het ongeveer betekent.",
+    "Koos je \"the volume of the voice\"? Dan denk je dat het volume de betekenis geeft. Volume zegt niets over de woorden, en is geen aanwijzing.",
+    "Koos je \"the length of the word\"? Dan denk je dat de lengte de betekenis geeft. Een lang woord kan van alles betekenen, dus de lengte helpt niet."
+   ],
+   "uh": "Welke aanwijzing helpt?"
+  },
+  {
+   "v": "Which description fits an idiom?",
+   "o": [
+    "a word that sounds like another word",
+    "a word from another language",
+    "a very long sentence",
+    "a fixed expression"
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 1,
+   "u": "Idioom = vaste uitdrukking. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"a word that sounds like another word\"? Dan denk je dat een idioom een woord is dat klinkt als een ander woord. Dat is een homoniem, en geen vaste uitdrukking.",
+    "Koos je \"a word from another language\"? Dan denk je dat een idioom een leenwoord is. Een idioom bestaat uit meerdere woorden, en is niet per se vreemd.",
+    "Koos je \"a very long sentence\"? Dan denk je dat een idioom een lange zin is. De lengte zegt niets, en een idioom is vaak kort.",
+    "Klopt: een idioom is een vaste uitdrukking met een eigen betekenis."
+   ],
+   "uh": "Wat is een idioom?"
+  },
+  {
+   "v": "Which meaning does \"throw in the towel\" have?",
+   "o": [
+    "give up",
+    "start cleaning the house",
+    "go for a swim",
+    "win a game"
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 1,
+   "u": "Throw in the towel = opgeven. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: de uitdrukking betekent opgeven, zoals een bokser die het handdoekje gooit.",
+    "Koos je \"start cleaning the house\"? Dan denk je dat het over schoonmaken gaat. Het is figuurlijk, en betekent opgeven.",
+    "Koos je \"go for a swim\"? Dan denk je dat het over zwemmen gaat. Het is geen letterlijke handeling, en betekent opgeven.",
+    "Koos je \"win a game\"? Dan denk je dat het winnen betekent. Het is juist het tegenovergestelde, namelijk opgeven."
+   ],
+   "uh": "Wat betekent de uitdrukking?"
+  },
+  {
+   "v": "Which description fits a phrasal verb?",
+   "o": [
+    "a verb that is very long",
+    "a noun made from a verb",
+    "verb plus particle",
+    "a verb without a subject"
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 2,
+   "u": "Werkwoord plus klein woord. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"a verb that is very long\"? Dan denk je dat een phrasal verb een lang werkwoord is. De lengte zegt niets, en het gaat om twee woorden.",
+    "Koos je \"a noun made from a verb\"? Dan denk je dat een phrasal verb een zelfstandig naamwoord is. Het blijft een werkwoord, met een klein woord erbij.",
+    "Klopt: een phrasal verb is een werkwoord met een klein woord dat samen een nieuwe betekenis geeft.",
+    "Koos je \"a verb without a subject\"? Dan denk je dat een phrasal verb geen onderwerp heeft. Het heeft gewoon een onderwerp, en bestaat uit twee delen."
+   ],
+   "uh": "Wat is een phrasal verb?"
+  },
+  {
+   "v": "What does \"look over\" mean in \"We looked the car over\"?",
+   "o": [
+    "look above the car",
+    "examine",
+    "forget the car",
+    "sell the car"
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 2,
+   "u": "Look over = bekijken. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"look above the car\"? Dan denk je dat het letterlijk boven de auto kijken is. Het is een phrasal verb, met een eigen betekenis.",
+    "Klopt: look over betekent nauwkeurig bekijken of onderzoeken.",
+    "Koos je \"forget the car\"? Dan denk je dat het vergeten betekent. Daar heeft look over niets mee te maken, en het gaat om bekijken.",
+    "Koos je \"sell the car\"? Dan denk je dat het verkopen betekent. Dat staat niet in de uitdrukking, en het gaat om onderzoeken."
+   ],
+   "uh": "Wat betekent look over?"
+  },
+  {
+   "v": "What does \"Far from it\" mean as an answer to \"Was it easy?\"",
+   "o": [
+    "yes, very easy",
+    "sometimes it was",
+    "I do not know",
+    "not at all"
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 3,
+   "u": "Far from it = helemaal niet. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"yes, very easy\"? Dan denk je dat het ja betekent. Far from it is juist een ontkenning, en betekent helemaal niet.",
+    "Koos je \"sometimes it was\"? Dan denk je dat het soms betekent. Het is veel sterker, en betekent helemaal niet.",
+    "Koos je \"I do not know\"? Dan denk je dat het weet ik niet betekent. De spreker weet het wel, en antwoordt sterk ontkennend.",
+    "Klopt: far from it betekent helemaal niet, een sterke ontkenning."
+   ],
+   "uh": "Wat betekent far from it?"
+  },
+  {
+   "v": "Which strategy helps if you do not know a word?",
+   "o": [
+    "guess from context and keep listening",
+    "stop listening and think about it",
+    "write down only the sound of the word",
+    "skip the question completely"
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 4,
+   "u": "Raden uit context. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: zo mis je de rest van de opname niet en blijf je meeluisteren.",
+    "Koos je \"stop listening and think about it\"? Dan denk je dat stoppen helpt. Dan mis je de rest van de tekst, en kun je de vragen niet beantwoorden.",
+    "Koos je \"write down only the sound of the word\"? Dan denk je dat het opschrijven van het geluid helpt. Dat kost aandacht, en geeft geen betekenis.",
+    "Koos je \"skip the question completely\"? Dan denk je dat overslaan het beste is. Vaak is het woord niet nodig, of kun je het raden."
+   ],
+   "uh": "Welke strategie helpt?"
+  },
+  {
+   "v": "What does \"thrown in at the deep end\" mean?",
+   "o": [
+    "sent on a swimming course",
+    "praised for good work",
+    "a hard task unprepared",
+    "asked to leave the project"
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 1,
+   "u": "Deep end = moeilijke start. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"sent on a swimming course\"? Dan denk je dat het letterlijk om zwemmen gaat. Het is een uitdrukking, en gaat over een moeilijke start.",
+    "Koos je \"praised for good work\"? Dan denk je dat het een compliment is. De spreker kreeg juist een moeilijk project, en geen lof.",
+    "Klopt: de spreker kreeg meteen een moeilijk project zonder voorbereiding.",
+    "Koos je \"asked to leave the project\"? Dan denk je dat de spreker werd weggestuurd. Ze kreeg het project juist, en moest het zelf oplossen."
+   ],
+   "uh": "Wat betekent de uitdrukking?",
+   "ctx": "You hear a speaker in a podcast: \"I've been meaning to tell you about my first week at the new job. Honestly, it was a bit of a rollercoaster. On Monday I was thrown in at the deep end: my manager handed me a project that was already behind schedule and said she'd be back in two weeks. I was close to giving up, but a colleague, Priya, took me under her wing. She showed me the ropes and even stayed late to help me get my head around the software. By Friday I'd turned the corner, and the project was back on track. I'm not saying it was easy, but looking back, I'm glad I didn't throw in the towel.\""
+  },
+  {
+   "v": "What does \"took me under her wing\" mean?",
+   "o": [
+    "hid me from other colleagues",
+    "helped and protected me",
+    "gave me a present",
+    "fired me from the job"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 1,
+   "u": "Under her wing = beschermen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"hid me from other colleagues\"? Dan denk je dat Priya de spreker verstopte. De uitdrukking is figuurlijk, en gaat over helpen.",
+    "Klopt: Priya hielp en beschermde de spreker, zoals een vogel zijn jong.",
+    "Koos je \"gave me a present\"? Dan denk je dat Priya iets cadeau gaf. Er wordt geen cadeau genoemd, en de uitdrukking gaat over hulp.",
+    "Koos je \"fired me from the job\"? Dan denk je dat Priya de spreker ontsloeg. Ze hielp juist, en dat is het tegenovergestelde."
+   ],
+   "uh": "Wat betekent de uitdrukking?",
+   "ctx": "You hear a speaker in a podcast: \"I've been meaning to tell you about my first week at the new job. Honestly, it was a bit of a rollercoaster. On Monday I was thrown in at the deep end: my manager handed me a project that was already behind schedule and said she'd be back in two weeks. I was close to giving up, but a colleague, Priya, took me under her wing. She showed me the ropes and even stayed late to help me get my head around the software. By Friday I'd turned the corner, and the project was back on track. I'm not saying it was easy, but looking back, I'm glad I didn't throw in the towel.\""
+  },
+  {
+   "v": "What does \"get my head around\" mean?",
+   "o": [
+    "turn my head to look",
+    "forget completely",
+    "finish quickly",
+    "understand"
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 0,
+   "u": "Get my head around = begrijpen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"turn my head to look\"? Dan denk je dat het letterlijk het hoofd draaien is. Het is een uitdrukking, en gaat over begrijpen.",
+    "Koos je \"forget completely\"? Dan denk je dat het vergeten betekent. Priya hielp juist bij de software, en dat helpt om te begrijpen.",
+    "Koos je \"finish quickly\"? Dan denk je dat het snel afmaken betekent. Het gaat om begrip, en niet om snelheid.",
+    "Klopt: get my head around betekent begrijpen."
+   ],
+   "uh": "Wat betekent de uitdrukking?",
+   "ctx": "You hear a speaker in a podcast: \"I've been meaning to tell you about my first week at the new job. Honestly, it was a bit of a rollercoaster. On Monday I was thrown in at the deep end: my manager handed me a project that was already behind schedule and said she'd be back in two weeks. I was close to giving up, but a colleague, Priya, took me under her wing. She showed me the ropes and even stayed late to help me get my head around the software. By Friday I'd turned the corner, and the project was back on track. I'm not saying it was easy, but looking back, I'm glad I didn't throw in the towel.\""
+  },
+  {
+   "v": "What does \"turned the corner\" suggest?",
+   "o": [
+    "things started to improve",
+    "the speaker changed jobs",
+    "the speaker got lost on the way",
+    "things got worse"
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 1,
+   "u": "Turned the corner = verbetering. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: turned the corner betekent dat het beter begon te gaan.",
+    "Koos je \"the speaker changed jobs\"? Dan denk je dat de spreker van baan wisselde. Het gaat over de week op het werk, en niet over nieuw werk.",
+    "Koos je \"the speaker got lost on the way\"? Dan denk je dat het letterlijk om verdwalen gaat. Het is figuurlijk, en gaat over verbetering.",
+    "Koos je \"things got worse\"? Dan denk je dat het slechter ging. De spreker zegt dat het project weer op schema lag, dus het werd beter."
+   ],
+   "uh": "Wat suggereert de uitdrukking?",
+   "ctx": "You hear a speaker in a podcast: \"I've been meaning to tell you about my first week at the new job. Honestly, it was a bit of a rollercoaster. On Monday I was thrown in at the deep end: my manager handed me a project that was already behind schedule and said she'd be back in two weeks. I was close to giving up, but a colleague, Priya, took me under her wing. She showed me the ropes and even stayed late to help me get my head around the software. By Friday I'd turned the corner, and the project was back on track. I'm not saying it was easy, but looking back, I'm glad I didn't throw in the towel.\""
+  },
+  {
+   "v": "What does \"topped up the oil\" mean?",
+   "o": [
+    "changed all the oil",
+    "spilled the oil on the floor",
+    "added oil to the right level",
+    "tested the quality of the oil"
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 2,
+   "u": "Top up = bijvullen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"changed all the oil\"? Dan denk je dat alle olie vervangen is. Top up betekent bijvullen, en niet verversen.",
+    "Koos je \"spilled the oil on the floor\"? Dan denk je dat de olie gemorst is. Dat zegt de uitdrukking niet, en het gaat om bijvullen.",
+    "Klopt: top up betekent bijvullen tot het goede niveau.",
+    "Koos je \"tested the quality of the oil\"? Dan denk je dat de olie getest werd. Top up gaat over bijvullen, en niet over testen."
+   ],
+   "uh": "Wat betekent top up?",
+   "ctx": "You hear a phone message: \"Hello, this is Mark from the garage. I'm calling to let you know that your car is ready to pick up. We looked it over and found that the brakes were worn out, so we replaced them. We also topped up the oil. The bill comes to two hundred and forty euros, which is slightly more than we first estimated, because the parts turned out to be more expensive than expected. If you'd like to pay by card, you can do so when you drop by. We're closed on Sundays, so please come before Saturday at six. By the way, you might want to get the tyres checked soon; they're wearing down quickly.\""
+  },
+  {
+   "v": "What does \"worn out\" mean about the brakes?",
+   "o": [
+    "brand new",
+    "no longer usable",
+    "too loud when braking",
+    "too hot after driving"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 2,
+   "u": "Worn out = versleten. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"brand new\"? Dan denk je dat worn out nieuw betekent. Het is het tegenovergestelde, en daarom zijn de remmen vervangen.",
+    "Klopt: worn out betekent versleten, dus niet meer bruikbaar.",
+    "Koos je \"too loud when braking\"? Dan denk je dat het om lawaai gaat. Het gaat om slijtage, en niet om geluid.",
+    "Koos je \"too hot after driving\"? Dan denk je dat het om warmte gaat. Het gaat om slijtage, en niet om temperatuur."
+   ],
+   "uh": "Wat betekent worn out?",
+   "ctx": "You hear a phone message: \"Hello, this is Mark from the garage. I'm calling to let you know that your car is ready to pick up. We looked it over and found that the brakes were worn out, so we replaced them. We also topped up the oil. The bill comes to two hundred and forty euros, which is slightly more than we first estimated, because the parts turned out to be more expensive than expected. If you'd like to pay by card, you can do so when you drop by. We're closed on Sundays, so please come before Saturday at six. By the way, you might want to get the tyres checked soon; they're wearing down quickly.\""
+  },
+  {
+   "v": "What does \"comes to two hundred and forty euros\" mean?",
+   "o": [
+    "the price rises by 240 euros",
+    "the garage pays 240 euros",
+    "the repair takes 240 minutes",
+    "the total is 240 euros"
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 0,
+   "u": "Comes to = komt op. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"the price rises by 240 euros\"? Dan denk je dat de prijs met 240 euro stijgt. Comes to noemt het totaalbedrag, en niet een stijging.",
+    "Koos je \"the garage pays 240 euros\"? Dan denk je dat de garage betaalt. De klant betaalt de rekening, en dat is het totaal.",
+    "Koos je \"the repair takes 240 minutes\"? Dan denk je dat het om tijd gaat. Het gaat om geld, en niet om minuten.",
+    "Klopt: comes to betekent dat het totaal 240 euro is."
+   ],
+   "uh": "Wat betekent comes to?",
+   "ctx": "You hear a phone message: \"Hello, this is Mark from the garage. I'm calling to let you know that your car is ready to pick up. We looked it over and found that the brakes were worn out, so we replaced them. We also topped up the oil. The bill comes to two hundred and forty euros, which is slightly more than we first estimated, because the parts turned out to be more expensive than expected. If you'd like to pay by card, you can do so when you drop by. We're closed on Sundays, so please come before Saturday at six. By the way, you might want to get the tyres checked soon; they're wearing down quickly.\""
+  },
+  {
+   "v": "What does \"took off\" mean when applied to the start-up?",
+   "o": [
+    "became successful quickly",
+    "left the country",
+    "crashed completely",
+    "was sold to a large company"
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 1,
+   "u": "Took off = snel succes. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: took off betekent hier snel succesvol worden.",
+    "Koos je \"left the country\"? Dan denk je dat het bedrijf vertrok. Het is figuurlijk, en gaat over succes.",
+    "Koos je \"crashed completely\"? Dan denk je dat het bedrijf mislukte. Dat zou het tegenovergestelde zijn, van snel succes.",
+    "Koos je \"was sold to a large company\"? Dan denk je dat het bedrijf verkocht werd. Dat staat niet in de tekst, en took off gaat over groei."
+   ],
+   "uh": "Wat betekent took off?",
+   "ctx": "You hear an interview: \"Interviewer: Your start-up took off remarkably fast. How did that happen? Ella: Honestly, we got lucky. A well-known blogger mentioned our app, and within a week, downloads skyrocketed. Interviewer: Was it all smooth sailing after that? Ella: Far from it. Our servers couldn't cope, and we spent three sleepless nights trying to keep the app from crashing. I felt like I was juggling ten balls at once. Interviewer: And what keeps you going? Ella: Our users. When someone writes to say that the app changed their routine, that makes it all worthwhile. I try not to take it for granted.\""
+  },
+  {
+   "v": "What does Ella mean by \"Far from it\"?",
+   "o": [
+    "it was very smooth",
+    "it was far away",
+    "it was not smooth at all",
+    "it was nearly smooth"
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 3,
+   "u": "Far from it = helemaal niet. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"it was very smooth\"? Dan denk je dat het ging zonder problemen. Far from it zegt het tegenovergestelde, en ze noemt problemen met servers.",
+    "Koos je \"it was far away\"? Dan denk je dat het letterlijk ver weg was. Het is een uitdrukking, en gaat over mate.",
+    "Klopt: far from it betekent helemaal niet, dus het ging niet gemakkelijk.",
+    "Koos je \"it was nearly smooth\"? Dan denk je dat het bijna gemakkelijk ging. Far from it is veel sterker, en betekent helemaal niet."
+   ],
+   "uh": "Wat bedoelt Ella?",
+   "ctx": "You hear an interview: \"Interviewer: Your start-up took off remarkably fast. How did that happen? Ella: Honestly, we got lucky. A well-known blogger mentioned our app, and within a week, downloads skyrocketed. Interviewer: Was it all smooth sailing after that? Ella: Far from it. Our servers couldn't cope, and we spent three sleepless nights trying to keep the app from crashing. I felt like I was juggling ten balls at once. Interviewer: And what keeps you going? Ella: Our users. When someone writes to say that the app changed their routine, that makes it all worthwhile. I try not to take it for granted.\""
+  },
+  {
+   "v": "What does \"juggling ten balls at once\" describe?",
+   "o": [
+    "a job in a circus",
+    "many tasks at once",
+    "a game with her team",
+    "playing sports at work"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 1,
+   "u": "Jongleren = veel tegelijk. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"a job in a circus\"? Dan denk je dat Ella in een circus werkte. Het is een beeld, en gaat over veel taken.",
+    "Klopt: het beeld laat zien dat Ella veel dingen tegelijk moest regelen.",
+    "Koos je \"a game with her team\"? Dan denk je dat ze een spel speelde. Het is een vergelijking, en gaat over drukte.",
+    "Koos je \"playing sports at work\"? Dan denk je dat ze aan sport deed. Dat staat niet in de tekst, en het gaat om taken."
+   ],
+   "uh": "Wat beschrijft de uitdrukking?",
+   "ctx": "You hear an interview: \"Interviewer: Your start-up took off remarkably fast. How did that happen? Ella: Honestly, we got lucky. A well-known blogger mentioned our app, and within a week, downloads skyrocketed. Interviewer: Was it all smooth sailing after that? Ella: Far from it. Our servers couldn't cope, and we spent three sleepless nights trying to keep the app from crashing. I felt like I was juggling ten balls at once. Interviewer: And what keeps you going? Ella: Our users. When someone writes to say that the app changed their routine, that makes it all worthwhile. I try not to take it for granted.\""
+  },
+  {
+   "v": "Which sentence paraphrases \"I was close to giving up\"?",
+   "o": [
+    "I gave up at once.",
+    "I never wanted to stop.",
+    "I started again.",
+    "I nearly stopped."
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 4,
+   "u": "Close to = bijna. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"I gave up at once.\"? Dan denk je dat de spreker meteen opgaf. Close to betekent bijna, dus ze gaf niet echt op.",
+    "Koos je \"I never wanted to stop.\"? Dan denk je dat de spreker nooit wilde stoppen. De zin zegt dat ze er dichtbij was, dus ze twijfelde.",
+    "Koos je \"I started again.\"? Dan denk je dat de spreker opnieuw begon. Dat staat niet in de zin, en gaat over bijna opgeven.",
+    "Klopt: close to betekent bijna en giving up betekent opgeven."
+   ],
+   "uh": "Welke zin is een parafrase?",
+   "ctx": "You hear a speaker in a podcast: \"I've been meaning to tell you about my first week at the new job. Honestly, it was a bit of a rollercoaster. On Monday I was thrown in at the deep end: my manager handed me a project that was already behind schedule and said she'd be back in two weeks. I was close to giving up, but a colleague, Priya, took me under her wing. She showed me the ropes and even stayed late to help me get my head around the software. By Friday I'd turned the corner, and the project was back on track. I'm not saying it was easy, but looking back, I'm glad I didn't throw in the towel.\""
+  },
+  {
+   "v": "What does \"showed me the ropes\" mean?",
+   "o": [
+    "explained how things work",
+    "showed me where the ropes are",
+    "tied me up with ropes",
+    "taught me to climb"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 1,
+   "u": "Show the ropes = uitleggen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: show the ropes betekent uitleggen hoe iets werkt.",
+    "Koos je \"showed me where the ropes are\"? Dan denk je dat het letterlijk om touwen gaat. Het is een uitdrukking, en gaat over uitleg.",
+    "Koos je \"tied me up with ropes\"? Dan denk je dat het om vastbinden gaat. Dat staat niet in de tekst, en de uitdrukking gaat over hulp.",
+    "Koos je \"taught me to climb\"? Dan denk je dat het om klimmen gaat. Het is figuurlijk, en gaat over het werk."
+   ],
+   "uh": "Wat betekent de uitdrukking?",
+   "ctx": "You hear a speaker in a podcast: \"I've been meaning to tell you about my first week at the new job. Honestly, it was a bit of a rollercoaster. On Monday I was thrown in at the deep end: my manager handed me a project that was already behind schedule and said she'd be back in two weeks. I was close to giving up, but a colleague, Priya, took me under her wing. She showed me the ropes and even stayed late to help me get my head around the software. By Friday I'd turned the corner, and the project was back on track. I'm not saying it was easy, but looking back, I'm glad I didn't throw in the towel.\""
+  },
+  {
+   "v": "What does \"back on track\" mean?",
+   "o": [
+    "on the railway again",
+    "far behind schedule",
+    "going as planned again",
+    "cancelled for good"
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 1,
+   "u": "Back on track = weer volgens plan. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"on the railway again\"? Dan denk je dat het letterlijk om het spoor gaat. Het is een uitdrukking, en gaat over het plan.",
+    "Koos je \"far behind schedule\"? Dan denk je dat het project ver achterloopt. Dat was eerder, en nu ligt het weer op schema.",
+    "Klopt: back on track betekent dat het weer volgens plan gaat.",
+    "Koos je \"cancelled for good\"? Dan denk je dat het project werd stopgezet. De spreker zegt dat het weer goed ging, en niet stopgezet."
+   ],
+   "uh": "Wat betekent de uitdrukking?",
+   "ctx": "You hear a speaker in a podcast: \"I've been meaning to tell you about my first week at the new job. Honestly, it was a bit of a rollercoaster. On Monday I was thrown in at the deep end: my manager handed me a project that was already behind schedule and said she'd be back in two weeks. I was close to giving up, but a colleague, Priya, took me under her wing. She showed me the ropes and even stayed late to help me get my head around the software. By Friday I'd turned the corner, and the project was back on track. I'm not saying it was easy, but looking back, I'm glad I didn't throw in the towel.\""
+  },
+  {
+   "v": "How does the speaker feel at the end of the story?",
+   "o": [
+    "sorry to have taken the job",
+    "glad not to have given up",
+    "angry with Priya for her help",
+    "sure that she will quit soon"
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 4,
+   "u": "Blij dat ze doorzette. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"sorry to have taken the job\"? Dan denk je dat de spreker spijt heeft. Ze is juist blij, dat ze bleef.",
+    "Klopt: de spreker zegt dat ze blij is dat ze niet opgaf.",
+    "Koos je \"angry with Priya for her help\"? Dan denk je dat de spreker boos is. Priya hielp juist, en wordt gewaardeerd.",
+    "Koos je \"sure that she will quit soon\"? Dan denk je dat de spreker gaat stoppen. Ze is blij dat ze doorzette, en wil blijven."
+   ],
+   "uh": "Wat voelt de spreker?",
+   "ctx": "You hear a speaker in a podcast: \"I've been meaning to tell you about my first week at the new job. Honestly, it was a bit of a rollercoaster. On Monday I was thrown in at the deep end: my manager handed me a project that was already behind schedule and said she'd be back in two weeks. I was close to giving up, but a colleague, Priya, took me under her wing. She showed me the ropes and even stayed late to help me get my head around the software. By Friday I'd turned the corner, and the project was back on track. I'm not saying it was easy, but looking back, I'm glad I didn't throw in the towel.\""
+  },
+  {
+   "v": "Which sentence paraphrases \"The parts turned out to be more expensive than expected\"?",
+   "o": [
+    "The parts were cheaper than expected.",
+    "The parts were not needed.",
+    "The parts were turned upside down.",
+    "The parts cost more."
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 2,
+   "u": "Turned out = bleek. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"The parts were cheaper than expected.\"? Dan denk je dat de onderdelen goedkoper waren. De tekst zegt juist more expensive, en dat is duurder.",
+    "Koos je \"The parts were not needed.\"? Dan denk je dat de onderdelen niet nodig waren. Ze zijn gebruikt, en vervangen de remmen.",
+    "Koos je \"The parts were turned upside down.\"? Dan denk je dat turned out letterlijk omgedraaid betekent. Het is een phrasal verb, met de betekenis bleken te zijn.",
+    "Klopt: turned out betekent bleek en more expensive betekent duurder."
+   ],
+   "uh": "Welke zin is een parafrase?",
+   "ctx": "You hear a phone message: \"Hello, this is Mark from the garage. I'm calling to let you know that your car is ready to pick up. We looked it over and found that the brakes were worn out, so we replaced them. We also topped up the oil. The bill comes to two hundred and forty euros, which is slightly more than we first estimated, because the parts turned out to be more expensive than expected. If you'd like to pay by card, you can do so when you drop by. We're closed on Sundays, so please come before Saturday at six. By the way, you might want to get the tyres checked soon; they're wearing down quickly.\""
+  },
+  {
+   "v": "What does \"drop by\" mean?",
+   "o": [
+    "visit",
+    "let something fall",
+    "pay late",
+    "cancel an appointment"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 2,
+   "u": "Drop by = langskomen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: drop by betekent even langskomen bij iemand of een plaats.",
+    "Koos je \"let something fall\"? Dan denk je dat het letterlijk laten vallen is. Het is een phrasal verb, met de betekenis langskomen.",
+    "Koos je \"pay late\"? Dan denk je dat het te laat betalen betekent. Het gaat over komen, en niet over betaling.",
+    "Koos je \"cancel an appointment\"? Dan denk je dat het afzeggen betekent. Dat is het tegenovergestelde, en de klant komt juist."
+   ],
+   "uh": "Wat betekent drop by?",
+   "ctx": "You hear a phone message: \"Hello, this is Mark from the garage. I'm calling to let you know that your car is ready to pick up. We looked it over and found that the brakes were worn out, so we replaced them. We also topped up the oil. The bill comes to two hundred and forty euros, which is slightly more than we first estimated, because the parts turned out to be more expensive than expected. If you'd like to pay by card, you can do so when you drop by. We're closed on Sundays, so please come before Saturday at six. By the way, you might want to get the tyres checked soon; they're wearing down quickly.\""
+  },
+  {
+   "v": "Why might \"wearing down quickly\" matter to the customer?",
+   "o": [
+    "the tyres are new",
+    "the garage will be closed",
+    "the tyres need replacing",
+    "the bill is already too high"
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 3,
+   "u": "Wearing down = slijten. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"the tyres are new\"? Dan denk je dat de banden nieuw zijn. Ze slijten juist snel, en zijn dus niet nieuw.",
+    "Koos je \"the garage will be closed\"? Dan denk je dat het over sluiting gaat. De sluitingstijd is een ander punt, en niet de banden.",
+    "Klopt: wearing down quickly betekent dat de banden snel slijten en vervangen moeten worden.",
+    "Koos je \"the bill is already too high\"? Dan denk je dat het om de rekening gaat. Het gaat om de banden, en de rekening is een apart punt."
+   ],
+   "uh": "Waarom is het belangrijk?",
+   "ctx": "You hear a phone message: \"Hello, this is Mark from the garage. I'm calling to let you know that your car is ready to pick up. We looked it over and found that the brakes were worn out, so we replaced them. We also topped up the oil. The bill comes to two hundred and forty euros, which is slightly more than we first estimated, because the parts turned out to be more expensive than expected. If you'd like to pay by card, you can do so when you drop by. We're closed on Sundays, so please come before Saturday at six. By the way, you might want to get the tyres checked soon; they're wearing down quickly.\""
+  },
+  {
+   "v": "What does \"skyrocketed\" mean about the downloads?",
+   "o": [
+    "fell very fast",
+    "rose very fast",
+    "stayed the same",
+    "were counted carefully"
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 0,
+   "u": "Skyrocketed = razendsnel omhoog. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"fell very fast\"? Dan denk je dat de downloads daalden. Skyrocketed is het tegenovergestelde, en past bij het succes.",
+    "Klopt: skyrocketed betekent razendsnel stijgen.",
+    "Koos je \"stayed the same\"? Dan denk je dat de aantallen gelijk bleven. Het woord beschrijft een sterke stijging, en geen stilstand.",
+    "Koos je \"were counted carefully\"? Dan denk je dat het om tellen gaat. Het woord gaat over snelheid, en niet over tellen."
+   ],
+   "uh": "Wat betekent skyrocketed?",
+   "ctx": "You hear an interview: \"Interviewer: Your start-up took off remarkably fast. How did that happen? Ella: Honestly, we got lucky. A well-known blogger mentioned our app, and within a week, downloads skyrocketed. Interviewer: Was it all smooth sailing after that? Ella: Far from it. Our servers couldn't cope, and we spent three sleepless nights trying to keep the app from crashing. I felt like I was juggling ten balls at once. Interviewer: And what keeps you going? Ella: Our users. When someone writes to say that the app changed their routine, that makes it all worthwhile. I try not to take it for granted.\""
+  },
+  {
+   "v": "What does \"makes it all worthwhile\" mean?",
+   "o": [
+    "it makes the work easier",
+    "it pays more money",
+    "it stops the work",
+    "it gives purpose"
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 3,
+   "u": "Worthwhile = de moeite waard. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"it makes the work easier\"? Dan denk je dat het werk gemakkelijker wordt. Het gaat om zin, en niet om gemak.",
+    "Koos je \"it pays more money\"? Dan denk je dat het meer geld oplevert. Ella noemt een reactie van gebruikers, en geen geld.",
+    "Koos je \"it stops the work\"? Dan denk je dat het werk stopt. Ze zegt dat het haar motiveert, en niet stopt.",
+    "Klopt: worthwhile betekent de moeite waard, zodat het werk zin krijgt."
+   ],
+   "uh": "Wat betekent de zin?",
+   "ctx": "You hear an interview: \"Interviewer: Your start-up took off remarkably fast. How did that happen? Ella: Honestly, we got lucky. A well-known blogger mentioned our app, and within a week, downloads skyrocketed. Interviewer: Was it all smooth sailing after that? Ella: Far from it. Our servers couldn't cope, and we spent three sleepless nights trying to keep the app from crashing. I felt like I was juggling ten balls at once. Interviewer: And what keeps you going? Ella: Our users. When someone writes to say that the app changed their routine, that makes it all worthwhile. I try not to take it for granted.\""
+  },
+  {
+   "v": "Which sentence paraphrases \"I try not to take it for granted\"?",
+   "o": [
+    "I stay grateful.",
+    "I try not to accept it.",
+    "I try to forget it.",
+    "I try to take it away."
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 4,
+   "u": "Not take for granted = waarderen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: take for granted betekent als vanzelfsprekend zien, dus dankbaar blijven is het tegenovergestelde.",
+    "Koos je \"I try not to accept it.\"? Dan denk je dat take letterlijk accepteren is. Het is een uitdrukking, met de betekenis als vanzelfsprekend zien.",
+    "Koos je \"I try to forget it.\"? Dan denk je dat het vergeten betekent. Dat staat niet in de zin, en ze waardeert het juist.",
+    "Koos je \"I try to take it away.\"? Dan denk je dat het wegnemen betekent. Dat is letterlijk, en de uitdrukking is figuurlijk."
+   ],
+   "uh": "Welke zin is een parafrase?",
+   "ctx": "You hear an interview: \"Interviewer: Your start-up took off remarkably fast. How did that happen? Ella: Honestly, we got lucky. A well-known blogger mentioned our app, and within a week, downloads skyrocketed. Interviewer: Was it all smooth sailing after that? Ella: Far from it. Our servers couldn't cope, and we spent three sleepless nights trying to keep the app from crashing. I felt like I was juggling ten balls at once. Interviewer: And what keeps you going? Ella: Our users. When someone writes to say that the app changed their routine, that makes it all worthwhile. I try not to take it for granted.\""
+  }
+ ],
+ "oe": [
+  {
+   "bron": "Examenstijl",
+   "ctx": "You hear a speaker in a podcast: \"I've been meaning to tell you about my first week at the new job. Honestly, it was a bit of a rollercoaster. On Monday I was thrown in at the deep end: my manager handed me a project that was already behind schedule and said she'd be back in two weeks. I was close to giving up, but a colleague, Priya, took me under her wing. She showed me the ropes and even stayed late to help me get my head around the software. By Friday I'd turned the corner, and the project was back on track. I'm not saying it was easy, but looking back, I'm glad I didn't throw in the towel.\" Your teacher asks about some expressions.",
+   "v": "Explain what \"thrown in at the deep end\" and \"turned the corner\" mean in this story.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Thrown in at the deep end: een moeilijke taak zonder voorbereiding (1p). Turned the corner: het begon beter te gaan (1p). Het is figuurlijk en niet letterlijk (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "You hear a speaker in a podcast: \"I've been meaning to tell you about my first week at the new job. Honestly, it was a bit of a rollercoaster. On Monday I was thrown in at the deep end: my manager handed me a project that was already behind schedule and said she'd be back in two weeks. I was close to giving up, but a colleague, Priya, took me under her wing. She showed me the ropes and even stayed late to help me get my head around the software. By Friday I'd turned the corner, and the project was back on track. I'm not saying it was easy, but looking back, I'm glad I didn't throw in the towel.\" Your teacher asks about the colleague.",
+   "v": "Explain what \"took me under her wing\" and \"showed me the ropes\" tell us about Priya.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Priya hielp en beschermde de spreker (1p). Ze legde uit hoe het werk gaat (1p). Ze bleef zelfs laat om met de software te helpen (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "You hear a phone message: \"Hello, this is Mark from the garage. I'm calling to let you know that your car is ready to pick up. We looked it over and found that the brakes were worn out, so we replaced them. We also topped up the oil. The bill comes to two hundred and forty euros, which is slightly more than we first estimated, because the parts turned out to be more expensive than expected. If you'd like to pay by card, you can do so when you drop by. We're closed on Sundays, so please come before Saturday at six. By the way, you might want to get the tyres checked soon; they're wearing down quickly.\" Your teacher asks about phrasal verbs.",
+   "v": "Explain what \"topped up\", \"looked over\" and \"drop by\" mean.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Topped up: bijgevuld (1p). Looked over: onderzocht of bekeken (1p). Drop by: langskomen (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "You hear an interview: \"Interviewer: Your start-up took off remarkably fast. How did that happen? Ella: Honestly, we got lucky. A well-known blogger mentioned our app, and within a week, downloads skyrocketed. Interviewer: Was it all smooth sailing after that? Ella: Far from it. Our servers couldn't cope, and we spent three sleepless nights trying to keep the app from crashing. I felt like I was juggling ten balls at once. Interviewer: And what keeps you going? Ella: Our users. When someone writes to say that the app changed their routine, that makes it all worthwhile. I try not to take it for granted.\" Your teacher asks about figurative language.",
+   "v": "Explain what \"took off\" and \"juggling ten balls\" mean.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Took off: snel succesvol worden (1p). Juggling ten balls: veel taken tegelijk doen (1p). Het is figuurlijk, niet letterlijk (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "You hear an interview: \"Interviewer: Your start-up took off remarkably fast. How did that happen? Ella: Honestly, we got lucky. A well-known blogger mentioned our app, and within a week, downloads skyrocketed. Interviewer: Was it all smooth sailing after that? Ella: Far from it. Our servers couldn't cope, and we spent three sleepless nights trying to keep the app from crashing. I felt like I was juggling ten balls at once. Interviewer: And what keeps you going? Ella: Our users. When someone writes to say that the app changed their routine, that makes it all worthwhile. I try not to take it for granted.\" Your teacher asks you to paraphrase.",
+   "v": "Paraphrase \"I try not to take it for granted\" and explain \"Far from it\".",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Ik probeer het te blijven waarderen (1p). Far from it betekent helemaal niet (1p). Het ging niet gemakkelijk (1p)."
+  }
+ ]
+}
