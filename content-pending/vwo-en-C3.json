@@ -1,0 +1,682 @@
+{
+ "id": "C3",
+ "lo": "en.C.3",
+ "gs": 2,
+ "naam": "Gevoelens uitdrukken",
+ "beschrijving": "Je leert in het Engels gevoelens te benoemen, de sterkte van een gevoel aan te passen, te reageren op het gevoel van een ander, de reden van een gevoel te geven en een klacht beleefd en eerlijk te uiten.",
+ "ceStatus": "SE",
+ "binas": "",
+ "val": "",
+ "onderwerpen": [
+  "Gevoelens benoemen",
+  "Sterkte van een gevoel",
+  "Reageren op gevoelens van anderen",
+  "De reden van een gevoel geven",
+  "Eerlijk en beleefd je gevoel uiten"
+ ],
+ "sam": "Een gevoelswoord als delighted, proud of relieved drukt een positief gevoel uit; annoyed, disappointed en nervous horen bij een negatief gevoel of bij zenuwen. Met een versterker als really of absolutely maak je een gevoel sterker, met een verzwakker als a bit of slightly zwakker. Bij goed nieuws feliciteer je (felicitatie: Congratulations!), bij slecht nieuws toon je medeleven (I'm so sorry to hear that). Met because geef je de reden van je gevoel. Wil je beleefd klagen, begin dan met I'm afraid of excuse me en noem het probleem zonder de ander aan te vallen. Een teleurstelling ontstaat als iets tegenvalt, opluchting als een zorg voorbij is.",
+ "begrippen": [
+  {
+   "t": "Gevoelswoord",
+   "d": "Een woord dat zegt hoe je je voelt, zoals delighted of annoyed."
+  },
+  {
+   "t": "Positief gevoel",
+   "d": "Een prettig gevoel zoals blij, trots of opgelucht."
+  },
+  {
+   "t": "Negatief gevoel",
+   "d": "Een onprettig gevoel zoals boos, verdrietig of teleurgesteld."
+  },
+  {
+   "t": "Versterker",
+   "d": "Een woord als really of absolutely dat het gevoel sterker maakt."
+  },
+  {
+   "t": "Verzwakker",
+   "d": "Een woord als a bit of slightly dat het gevoel zwakker maakt."
+  },
+  {
+   "t": "Medeleven",
+   "d": "Laten merken dat het je spijt, zoals I'm sorry to hear that."
+  },
+  {
+   "t": "Felicitatie",
+   "d": "Iemand feliciteren met goed nieuws, zoals Congratulations!"
+  },
+  {
+   "t": "Reden",
+   "d": "Zeggen waarom je je zo voelt, met because of that."
+  },
+  {
+   "t": "Teleurstelling",
+   "d": "Het gevoel dat iets minder goed is dan je hoopte."
+  },
+  {
+   "t": "Opluchting",
+   "d": "Het gevoel dat een zorg voorbij is, zoals relieved."
+  },
+  {
+   "t": "Beleefd klagen",
+   "d": "Een klacht zacht formuleren, zoals I'm afraid there is a problem."
+  },
+  {
+   "t": "Zenuwen",
+   "d": "Het gevoel dat je gespannen bent voor iets, zoals nervous."
+  }
+ ],
+ "sv": [
+  {
+   "v": "Which word means that you feel very happy and pleased?",
+   "o": [
+    "\"annoyed\"",
+    "\"delighted\"",
+    "\"nervous\"",
+    "\"disappointed\""
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 0,
+   "u": "Delighted = heel blij. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"annoyed\"\"? Dan denk je dat annoyed blij betekent omdat het positief klinkt. Het betekent geïrriteerd, en dat is een negatief gevoel.",
+    "Klopt: delighted betekent dat je heel blij en tevreden bent met iets.",
+    "Koos je \"\"nervous\"\"? Dan denk je dat nervous blij betekent omdat je opgewonden bent. Het betekent zenuwachtig, en dat is iets anders dan blij.",
+    "Koos je \"\"disappointed\"\"? Dan denk je dat disappointed blij betekent omdat het met dis begint. Het betekent teleurgesteld, en dat is juist niet blij."
+   ],
+   "uh": "Welk woord betekent heel blij?"
+  },
+  {
+   "v": "Which sentence expresses disappointment?",
+   "o": [
+    "\"I can't wait for the party, to be honest!\"",
+    "\"That's a lovely surprise.\"",
+    "\"I'm so proud of you.\"",
+    "\"I had hoped for a better result.\""
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 0,
+   "u": "Hoopte op meer = teleurstelling. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"I can't wait for the party, to be honest!\"\"? Dan denk je dat dit teleurstelling is omdat er iets niet is. Het is een gevoel van verheugen, en niet van tegenvallen.",
+    "Koos je \"\"That's a lovely surprise.\"\"? Dan denk je dat een verrassing altijd tegenvalt. Hier is het een positief gevoel, dus geen teleurstelling.",
+    "Koos je \"\"I'm so proud of you.\"\"? Dan denk je dat trots hier teleurstelling kan zijn. Trots is een positief gevoel, over iemand die iets goed deed.",
+    "Klopt: je hoopte op meer, dus het resultaat valt tegen en dat is teleurstelling."
+   ],
+   "uh": "Welke zin drukt teleurstelling uit?"
+  },
+  {
+   "v": "Which sentence shows the strongest feeling?",
+   "o": [
+    "\"I'm absolutely exhausted.\"",
+    "\"I'm a bit tired.\"",
+    "\"I'm slightly tired, I suppose.\"",
+    "\"I'm not very tired.\""
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 1,
+   "u": "Absolutely = zeer sterk. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: absolutely is een versterker en maakt het gevoel zo sterk mogelijk.",
+    "Koos je \"\"I'm a bit tired.\"\"? Dan denk je dat a bit sterk is omdat het over moe zijn gaat. A bit is een verzwakker, dus het gevoel is zwak.",
+    "Koos je \"\"I'm slightly tired, I suppose.\"\"? Dan denk je dat slightly een sterk woord is omdat het lang klinkt. Het is een verzwakker, en maakt het gevoel kleiner.",
+    "Koos je \"\"I'm not very tired.\"\"? Dan denk je dat not very hier sterk is omdat er een ontkenning in zit. Het betekent weinig moe, en dus een zwak gevoel."
+   ],
+   "uh": "Welke zin toont het sterkste gevoel?"
+  },
+  {
+   "v": "What do you say when a friend tells you that they passed their exam?",
+   "o": [
+    "\"I'm sorry to hear that.\"",
+    "\"Never mind, better luck next time, you know.\"",
+    "\"Congratulations! That's great news.\"",
+    "\"Oh dear, what a shame.\""
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 2,
+   "u": "Goed nieuws = congratulations. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"I'm sorry to hear that.\"\"? Dan denk je dat sorry bij elk nieuws past. Het is een uiting van medeleven, voor slecht nieuws.",
+    "Koos je \"\"Never mind, better luck next time, you know.\"\"? Dan denk je dat een troostzin hier past. Die troost je bij een mislukking, en het examen is gehaald.",
+    "Klopt: bij goed nieuws feliciteer je iemand, en dat doe je met congratulations.",
+    "Koos je \"\"Oh dear, what a shame.\"\"? Dan denk je dat dit meelevend en dus vriendelijk is. Het past bij een tegenvaller, en niet bij een voldoende."
+   ],
+   "uh": "Wat zeg je bij een gehaald examen?"
+  },
+  {
+   "v": "What do you say when a friend tells you that their pet has died?",
+   "o": [
+    "\"Congratulations on that, really!\"",
+    "\"I'm so sorry to hear that.\"",
+    "\"That sounds like fun!\"",
+    "\"Lucky you!\""
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 2,
+   "u": "Slecht nieuws = medeleven. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"Congratulations on that, really!\"\"? Dan denk je dat congratulations altijd vriendelijk is. Het is een felicitatie, en past bij goed nieuws.",
+    "Klopt: bij verdrietig nieuws toon je medeleven met I'm so sorry to hear that.",
+    "Koos je \"\"That sounds like fun!\"\"? Dan denk je dat een enthousiaste reactie hier past. Het is vrolijk, terwijl je vriend verdrietig is.",
+    "Koos je \"\"Lucky you!\"\"? Dan denk je dat lucky you een vriendelijke opmerking is. Het is jaloers of vrolijk, en dus niet meelevend."
+   ],
+   "uh": "Wat zeg je als een huisdier is overleden?"
+  },
+  {
+   "v": "Which sentence gives a feeling and the reason for it?",
+   "o": [
+    "\"I'm nervous and very nervous.\"",
+    "\"I'm nervous, nervous, nervous, I think, I suppose.\"",
+    "\"I'm nervous but happy.\"",
+    "\"I'm nervous because I have a test tomorrow.\""
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 3,
+   "u": "Because geeft de reden. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"I'm nervous and very nervous.\"\"? Dan denk je dat herhalen van het gevoel een reden is. Er staat alleen nervous, en geen oorzaak.",
+    "Koos je \"\"I'm nervous, nervous, nervous, I think, I suppose.\"\"? Dan denk je dat vaker zeggen hetzelfde is als uitleggen. Je noemt alleen het gevoel, zonder te zeggen waarom.",
+    "Koos je \"\"I'm nervous but happy.\"\"? Dan denk je dat but een reden geeft. But zet twee gevoelens tegenover elkaar, en geeft geen oorzaak.",
+    "Klopt: de zin noemt het gevoel nervous en geeft met because de reden: de toets."
+   ],
+   "uh": "Welke zin geeft gevoel en reden?"
+  },
+  {
+   "v": "Which sentence softens a complaint politely?",
+   "o": [
+    "\"I'm afraid there is a problem with my order.\"",
+    "\"Your service is terrible, to be honest, you know!\"",
+    "\"You made a mistake again!\"",
+    "\"Fix this at once.\""
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 4,
+   "u": "I'm afraid ... = beleefd klagen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: I'm afraid is een beleefde opening en noemt het probleem zonder aanval.",
+    "Koos je \"\"Your service is terrible, to be honest, you know!\"\"? Dan denk je dat eerlijk zijn betekent dat je hard mag zijn. Dit valt de ander aan, en is niet beleefd.",
+    "Koos je \"\"You made a mistake again!\"\"? Dan denk je dat een verwijt een beleefde klacht is. Het beschuldigt de ander, in plaats van het probleem te noemen.",
+    "Koos je \"\"Fix this at once.\"\"? Dan denk je dat een duidelijk bevel genoeg is. Het is een bevel, en klinkt niet beleefd."
+   ],
+   "uh": "Welke zin klaagt beleefd?"
+  },
+  {
+   "v": "Which reply fits your feeling best?",
+   "o": [
+    "\"I'm thrilled; it's the best news this year, I suppose, really.\"",
+    "\"I'm a bit bored, that's all.\"",
+    "\"I'm really disappointed; I had been looking forward to it for months.\"",
+    "\"I'm relieved; now I don't have to go.\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 0,
+   "u": "Hoopte op de reis = teleurgesteld. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"I'm thrilled; it's the best news this year, I suppose, really.\"\"? Dan denk je dat een annulering goed nieuws is. Thrilled is zeer blij, en dat past niet bij je gevoel.",
+    "Koos je \"\"I'm a bit bored, that's all.\"\"? Dan denk je dat verveling bij een geannuleerde reis past. Je bent juist teleurgesteld, en niet verveeld.",
+    "Klopt: je hoopte op de reis, dus teleurstelling past en really versterkt dat gevoel.",
+    "Koos je \"\"I'm relieved; now I don't have to go.\"\"? Dan denk je dat opluchting past. Je keek juist uit naar de reis, dus dat past niet."
+   ],
+   "uh": "Welk antwoord past bij je gevoel?",
+   "ctx": "You have just heard that your school trip to Rome has been cancelled because of a strike. You had saved money for months and were looking forward to it, and your friend asks how you feel."
+  },
+  {
+   "v": "Which answer fits your feeling?",
+   "o": [
+    "\"I'm extremely nervous; I can't sleep, you know, I think.\"",
+    "\"I'm a little nervous, but I've practised a lot.\"",
+    "\"I'm absolutely terrified.\"",
+    "\"I don't feel anything.\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 1,
+   "u": "A little nervous = zwak gevoel. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"I'm extremely nervous; I can't sleep, you know, I think.\"\"? Dan denk je dat extremely past bij elke spanning. Het is een versterker, en dat past niet bij een klein beetje.",
+    "Klopt: a little is een verzwakker en past bij een klein beetje zenuwen.",
+    "Koos je \"\"I'm absolutely terrified.\"\"? Dan denk je dat terrified een gewone uitdrukking van spanning is. Het is heel sterk, en overdrijft hier.",
+    "Koos je \"\"I don't feel anything.\"\"? Dan denk je dat een antwoord zonder gevoel genoeg is. Je bent wel een beetje nerveus, dus dit klopt niet."
+   ],
+   "uh": "Welk antwoord past bij een klein beetje zenuwen?",
+   "ctx": "A classmate asks whether you are nervous about tomorrow's oral exam. You are only mildly nervous, because you have practised a lot and you know most of the topics well."
+  },
+  {
+   "v": "What do you say?",
+   "o": [
+    "\"Congratulations, you will have more free time, really, to be honest!\"",
+    "\"Never mind, it's only a job.\"",
+    "\"That's lucky; I'd love to quit mine.\"",
+    "\"I'm so sorry to hear that. Is there anything I can do?\""
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 2,
+   "u": "Medeleven + hulp aanbieden. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"Congratulations, you will have more free time, really, to be honest!\"\"? Dan denk je dat vrije tijd een reden is om te feliciteren. Zij is juist verdrietig, dus dit is kwetsend.",
+    "Koos je \"\"Never mind, it's only a job.\"\"? Dan denk je dat het helpt om het probleem klein te maken. Zo neem je haar gevoel niet serieus, en dat voelt koud.",
+    "Koos je \"\"That's lucky; I'd love to quit mine.\"\"? Dan denk je dat jouw situatie hier past. Je praat over jezelf, terwijl zij hulp en troost nodig heeft.",
+    "Klopt: je toont medeleven en biedt hulp aan, dat is warm en bruikbaar."
+   ],
+   "uh": "Wat zeg je tegen je buurvrouw?",
+   "ctx": "Your neighbour tells you that she has just lost her job after twelve years at the same company. She looks sad and tired, and she is clearly worried about the future."
+  },
+  {
+   "v": "Which reply is the warmest?",
+   "o": [
+    "\"Congratulations! You really deserve it.\"",
+    "\"Well, someone had to win.\"",
+    "\"Oh, that's a pity for the others, I think.\"",
+    "\"Fine. Whatever.\""
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 2,
+   "u": "Felicitatie + oprechte reden. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: je feliciteert haar en zegt dat ze het verdient, dat is warm en oprecht.",
+    "Koos je \"\"Well, someone had to win.\"\"? Dan denk je dat een nuchtere opmerking goed is. Het klinkt kil, en toont geen blijdschap.",
+    "Koos je \"\"Oh, that's a pity for the others, I think.\"\"? Dan denk je dat meeleven met anderen past. Je bagatelliseert haar succes, in plaats van haar te feliciteren.",
+    "Koos je \"\"Fine. Whatever.\"\"? Dan denk je dat kort reageren genoeg is. Het klinkt onverschillig, en dat past niet bij blijdschap."
+   ],
+   "uh": "Welk antwoord is het warmst?",
+   "ctx": "Your cousin sends you a message saying that she has won first prize in a national drawing competition. You are really happy for her and want to reply in a warm way."
+  },
+  {
+   "v": "Which answer gives a feeling and its reason?",
+   "o": [
+    "\"I'm delighted and happy and pleased.\"",
+    "\"I got a nine for biology because delighted, to be honest.\"",
+    "\"I'm delighted because I got a nine for biology.\"",
+    "\"Delighted, biology, nine.\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 3,
+   "u": "Gevoel + because + reden. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"I'm delighted and happy and pleased.\"\"? Dan denk je dat meer gevoelswoorden een reden zijn. Je noemt drie keer het gevoel, zonder te zeggen waarom.",
+    "Koos je \"\"I got a nine for biology because delighted, to be honest.\"\"? Dan denk je dat because overal kan staan. Hier volgt geen reden, en de zin loopt niet.",
+    "Klopt: delighted is het gevoel en because I got a nine for biology is de reden.",
+    "Koos je \"\"Delighted, biology, nine.\"\"? Dan denk je dat losse woorden een antwoord zijn. Er staat geen zin, dus geen duidelijke reden."
+   ],
+   "uh": "Welk antwoord geeft gevoel en reden?",
+   "ctx": "Your teacher asks why you look so happy today. You got the results of your biology test back and you scored a nine, which is your best grade of the year."
+  },
+  {
+   "v": "Which sentence is best?",
+   "o": [
+    "\"I'm annoyed, but I won't say why.\"",
+    "\"I'm annoyed that he used my laptop without asking.\"",
+    "\"I'm annoyed because it is Tuesday, I suppose, really.\"",
+    "\"My brother, laptop, annoyed!\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 3,
+   "u": "Gevoel + echte oorzaak. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"I'm annoyed, but I won't say why.\"\"? Dan denk je dat je geen reden hoeft te geven. Dan weet je vriend niet waarom, en dat helpt het gesprek niet.",
+    "Klopt: de zin noemt het gevoel annoyed en de echte oorzaak, zonder te vragen.",
+    "Koos je \"\"I'm annoyed because it is Tuesday, I suppose, really.\"\"? Dan denk je dat elke reden goed is. De dag is niet de oorzaak, dus de reden klopt niet.",
+    "Koos je \"\"My brother, laptop, annoyed!\"\"? Dan denk je dat losse woorden duidelijk genoeg zijn. Er staat geen volledige zin, dus de reden blijft onduidelijk."
+   ],
+   "uh": "Welke zin is het best?",
+   "ctx": "A friend asks why you are annoyed. The cause is that your brother used your laptop without asking and accidentally deleted the file with your homework for tomorrow."
+  },
+  {
+   "v": "What do you say?",
+   "o": [
+    "\"This soup is disgusting, take it away, you know!\"",
+    "\"Nothing is wrong, thank you.\"",
+    "\"Cold, soup, now.\"",
+    "\"Excuse me, I'm afraid my soup is rather cold.\""
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 4,
+   "u": "Excuse me + I'm afraid. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"This soup is disgusting, take it away, you know!\"\"? Dan denk je dat eerlijk betekent dat je hard mag zijn. Je valt de ober aan, en dat is onbeleefd.",
+    "Koos je \"\"Nothing is wrong, thank you.\"\"? Dan denk je dat je beleefd bent door te zwijgen. Je noemt het probleem niet, dus je krijgt geen warme soep.",
+    "Koos je \"\"Cold, soup, now.\"\"? Dan denk je dat kort en duidelijk genoeg is. Het is geen zin, en klinkt als een bevel.",
+    "Klopt: excuse me en I'm afraid maken de klacht beleefd, rather cold noemt het probleem."
+   ],
+   "uh": "Wat zeg je tegen de ober?",
+   "ctx": "You are in a restaurant. Your soup arrives cold, and the waiter is friendly. You want to tell him about the problem politely without being rude, because he did nothing wrong himself."
+  },
+  {
+   "v": "Which message is best?",
+   "o": [
+    "\"I'm so sorry, but I feel ill, so I can't come. I hope we can meet soon.\"",
+    "\"I can't come. I don't want to, really, to be honest.\"",
+    "\"I'm fine, but I won't come.\"",
+    "\"Maybe I'll come, maybe not.\""
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 4,
+   "u": "Sorry + reden + vriendelijk slot. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: je zegt sorry, geeft de reden en laat zien dat je de ontmoeting wilt.",
+    "Koos je \"\"I can't come. I don't want to, really, to be honest.\"\"? Dan denk je dat kort en eerlijk zijn genoeg is. Het is kortaf en geeft geen reden, en dat kwetst de familie.",
+    "Koos je \"\"I'm fine, but I won't come.\"\"? Dan denk je dat dit een eerlijke boodschap is. Het is tegenstrijdig, want je zegt eerst dat je fit bent.",
+    "Koos je \"\"Maybe I'll come, maybe not.\"\"? Dan denk je dat onzekerheid netjes is. Het is vaag, en de familie weet niet waar ze aan toe is."
+   ],
+   "uh": "Welk bericht is het best?",
+   "ctx": "You have to tell your host family that you cannot come to their dinner because you feel ill. You do not want to disappoint them, but you also want to be honest."
+  },
+  {
+   "v": "Which reply fits best?",
+   "o": [
+    "\"It was okay, I suppose, I think, I suppose.\"",
+    "\"It was a bit nice.\"",
+    "\"It was absolutely amazing; I've never enjoyed a concert more.\"",
+    "\"I liked it slightly.\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 1,
+   "u": "Sterke versterker bij sterk gevoel. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"It was okay, I suppose, I think, I suppose.\"\"? Dan denk je dat okay een sterk gevoel uitdrukt. Het is neutraal, en dat past niet bij jouw enthousiasme.",
+    "Koos je \"\"It was a bit nice.\"\"? Dan denk je dat a bit een versterker is. Het is een verzwakker, en maakt je gevoel kleiner.",
+    "Klopt: absolutely amazing is een sterk gevoel en dat past bij het beste concert ooit.",
+    "Koos je \"\"I liked it slightly.\"\"? Dan denk je dat slightly sterk klinkt omdat het een lang woord is. Het is een verzwakker, en dat past niet bij je blijdschap."
+   ],
+   "uh": "Welk antwoord past bij het concert?",
+   "ctx": "Your friend asks how you liked the concert last night. It was the best concert of your life, and you are still excited about it this morning."
+  },
+  {
+   "v": "Which sentence describes your feelings best?",
+   "o": [
+    "\"I'm furious about tomorrow, to be honest.\"",
+    "\"I'm nervous but excited about tomorrow.\"",
+    "\"I'm bored with tomorrow.\"",
+    "\"I'm ashamed of tomorrow.\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 0,
+   "u": "Nervous + excited = gemengd. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"I'm furious about tomorrow, to be honest.\"\"? Dan denk je dat furious bij een nieuwe school past. Het betekent woedend, en je bent niet boos.",
+    "Klopt: nervous en excited noemen allebei de gevoelens die je hebt voor een nieuwe start.",
+    "Koos je \"\"I'm bored with tomorrow.\"\"? Dan denk je dat bored past bij een onbekende dag. Het betekent verveeld, en je ligt wakker van spanning.",
+    "Koos je \"\"I'm ashamed of tomorrow.\"\"? Dan denk je dat ashamed past bij zenuwen. Het betekent beschaamd, en er is niets om je voor te schamen."
+   ],
+   "uh": "Welke zin past bij je gevoelens?",
+   "ctx": "Before your first day at a new school you lie awake. You are excited about the new start, but you are also worried about whether you will find friends in the new class."
+  },
+  {
+   "v": "Which feeling does Sam mainly show?",
+   "o": [
+    "\"pride in his hard work\"",
+    "\"anger at the teacher\"",
+    "\"relief that the test is over, I suppose, really\"",
+    "\"disappointment and worry about letting his parents down\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 0,
+   "u": "Teleurstelling en zorgen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"pride in his hard work\"\"? Dan denk je dat studeren trots maakt. Hij is niet trots, want het cijfer viel tegen.",
+    "Koos je \"\"anger at the teacher\"\"? Dan denk je dat hij boos is op de leraar. De tekst noemt dat niet, hij twijfelt aan zichzelf.",
+    "Koos je \"\"relief that the test is over, I suppose, really\"\"? Dan denk je dat hij opgelucht is. Er staat niets over opluchting, hij klinkt juist somber.",
+    "Klopt: hij hoopte op een goed cijfer en maakt zich zorgen om zijn ouders, dus teleurstelling."
+   ],
+   "uh": "Welk gevoel toont Sam vooral?",
+   "ctx": "Your friend Sam writes: \"I studied all week and still only got a five. I don't understand it. I really wanted to do well, because my parents have been so supportive.\" He sounds low and does not want to talk about it."
+  },
+  {
+   "v": "Which statement is true?",
+   "o": [
+    "\"Ben expresses a much stronger negative feeling than Anna.\"",
+    "\"Both reviews show exactly the same strength of feeling, you know.\"",
+    "\"Anna is more negative than Ben because she says small.\"",
+    "\"Neither review expresses a negative feeling.\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 1,
+   "u": "Versterkers bepalen de sterkte. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: Ben gebruikt absolutely en awful, Anna alleen a bit, dus Ben is veel negatiever.",
+    "Koos je \"\"Both reviews show exactly the same strength of feeling, you know.\"\"? Dan denk je dat beide reviews hetzelfde klinken omdat het om dezelfde kamer gaat. De versterkers verschillen, dus de sterkte ook.",
+    "Koos je \"\"Anna is more negative than Ben because she says small.\"\"? Dan denk je dat het woord small zwaarder weegt. Bens versterkers maken zijn kritiek sterker, dus Anna is milder.",
+    "Koos je \"\"Neither review expresses a negative feeling.\"\"? Dan denk je dat nice alles positief maakt. Beide noemen een nadeel, dus beide zijn deels negatief."
+   ],
+   "uh": "Welke bewering klopt?",
+   "ctx": "Two reviews of the same hotel. Anna writes: \"The room was a bit small, but the staff were nice.\" Ben writes: \"The room was absolutely tiny and the staff were awful.\" Both stayed for three nights in the same week."
+  },
+  {
+   "v": "What exactly made Mia angry?",
+   "o": [
+    "\"that he forgot her birthday\"",
+    "\"that she received no present\"",
+    "\"that he did not apologise afterwards\"",
+    "\"that her birthday fell on a Monday, really\""
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 3,
+   "u": "Lees na not ... but welke reden volgt. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"that he forgot her birthday\"\"? Dan denk je dat de eerste zin de reden noemt. Daar zegt ze juist wasn't angry, dus dat is het niet.",
+    "Koos je \"\"that she received no present\"\"? Dan denk je dat een cadeau de oorzaak is. Dat staat nergens in de tekst, je verzint een reden.",
+    "Klopt: Mia zegt dat de vergeten verjaardag niet erg was, maar dat hij zich niet verontschuldigde.",
+    "Koos je \"\"that her birthday fell on a Monday, really\"\"? Dan denk je dat de dag een rol speelt. De tekst noemt geen dag, dus dit is verzonnen."
+   ],
+   "uh": "Waarom was Mia boos?",
+   "ctx": "Mia says to a friend: \"I wasn't angry that you forgot my birthday. I was angry because you didn't even say sorry afterwards, and you acted as if nothing had happened.\""
+  },
+  {
+   "v": "Which is the best thing to say?",
+   "o": [
+    "\"You lost us the match, you know.\"",
+    "\"Hey, it's okay. We win together and we lose together.\"",
+    "\"Don't cry, it's just a game; grow up, I think, I suppose.\"",
+    "\"Congratulations on the penalty!\""
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 2,
+   "u": "Troost zonder verwijt. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"You lost us the match, you know.\"\"? Dan denk je dat eerlijk zijn betekent dat je de schuld benoemt. Dit is een verwijt, en maakt hem nog verdrietiger.",
+    "Klopt: je troost hem en laat zien dat het team samen verliest, dat helpt zonder verwijt.",
+    "Koos je \"\"Don't cry, it's just a game; grow up, I think, I suppose.\"\"? Dan denk je dat je zijn gevoel moet wegwuiven. Zo neem je hem niet serieus, en dat is niet meelevend.",
+    "Koos je \"\"Congratulations on the penalty!\"\"? Dan denk je dat congratulations altijd vriendelijk is. Het is een felicitatie, en dat is bij een gemiste penalty spottend."
+   ],
+   "uh": "Wat zeg je het best?",
+   "ctx": "Your football teammate misses the winning penalty in the final and sits crying on the bench. An exchange student next to you asks what to say in English to cheer him up and not to make things worse."
+  },
+  {
+   "v": "Which sentence is the best opening of your complaint?",
+   "o": [
+    "\"Your shop is a disgrace and so are your laptops, to be honest, you know.\"",
+    "\"Hi, my screen is cracked, lol, fix it.\"",
+    "\"Everything is fine, but the screen is cracked.\"",
+    "\"I am writing to tell you that I am disappointed with my order, because the screen was cracked on arrival.\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 4,
+   "u": "Gevoel + reden + formeel. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"Your shop is a disgrace and so are your laptops, to be honest, you know.\"\"? Dan denk je dat een scherpe aanval de klacht sterker maakt. Het is onbeleefd, en past niet bij een formele e-mail.",
+    "Koos je \"\"Hi, my screen is cracked, lol, fix it.\"\"? Dan denk je dat informeel taalgebruik past. Het is een bevel in chattaal, en niet formeel genoeg.",
+    "Koos je \"\"Everything is fine, but the screen is cracked.\"\"? Dan denk je dat een vriendelijk begin je klacht verzacht. Je zegt dat alles goed is, en dat is tegenstrijdig.",
+    "Klopt: je noemt je gevoel, geeft de reden en blijft formeel en beleefd."
+   ],
+   "uh": "Welke zin opent de klacht het best?",
+   "ctx": "You ordered a laptop online and it arrived with a cracked screen. You are writing a formal email to customer service. You want to be clear and polite, but also to show that you are not happy about it."
+  },
+  {
+   "v": "Which reply shows a stronger feeling?",
+   "o": [
+    "\"I thought it was absolutely brilliant.\"",
+    "\"I thought it was fairly good, too, I suppose.\"",
+    "\"I thought it was okay.\"",
+    "\"I thought it was a little good.\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 1,
+   "u": "Absolutely brilliant > quite good. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: absolutely brilliant is sterker dan quite good, dus je toont een sterker gevoel.",
+    "Koos je \"\"I thought it was fairly good, too, I suppose.\"\"? Dan denk je dat fairly good een sterker gevoel is dan quite good. Het is even sterk, dus je toont geen verschil.",
+    "Koos je \"\"I thought it was okay.\"\"? Dan denk je dat okay boven quite good staat. Okay is neutraal, en dus zwakker.",
+    "Koos je \"\"I thought it was a little good.\"\"? Dan denk je dat a little good sterker is. Het is een verzwakker, dus je klinkt minder enthousiast."
+   ],
+   "uh": "Welk antwoord toont een sterker gevoel?",
+   "ctx": "Your friend says: \"The film was quite good.\" You loved it, and you want to show that you feel much more strongly about it than she does, without sounding rude or boasting."
+  },
+  {
+   "v": "How does the writer feel?",
+   "o": [
+    "\"only happy about the move\"",
+    "\"only sad because he is leaving, you know\"",
+    "\"mixed feelings: happy and sad at once\"",
+    "\"angry that he is moving abroad\""
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 0,
+   "u": "Twee gevoelens tegelijk. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"only happy about the move\"\"? Dan denk je dat I'm happy for him het hele verhaal is. Ze zegt ook I'll miss him, dus er is ook verdriet.",
+    "Koos je \"\"only sad because he is leaving, you know\"\"? Dan denk je dat crying alleen verdriet betekent. Ze zegt ook smiling, dus er is ook blijdschap.",
+    "Klopt: de schrijver is blij voor haar broer en verdrietig dat hij weggaat, dus gemengde gevoelens.",
+    "Koos je \"\"angry that he is moving abroad\"\"? Dan denk je dat verhuizen boos maakt. Er staat niets over boosheid, dat is jouw verzinsel."
+   ],
+   "uh": "Hoe voelt de schrijver zich?",
+   "ctx": "A text: \"My brother is moving abroad next month. I'm happy for him, but I'll miss him so much. It's strange: I'm smiling and crying at the same time.\" The writer is trying to describe two feelings at once."
+  },
+  {
+   "v": "What is the teacher less happy about?",
+   "o": [
+    "\"that the reports were handed in late, really\"",
+    "\"the spelling mistakes in the reports\"",
+    "\"the group as a whole\"",
+    "\"the topic of the report\""
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 3,
+   "u": "Less happy that = reden van minder blij. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"that the reports were handed in late, really\"\"? Dan denk je dat laat inleveren het probleem is. Ze zegt juist on time, dus dat was goed.",
+    "Klopt: ze is blij met het op tijd inleveren, maar minder blij dat bijna niemand de spelling controleerde.",
+    "Koos je \"\"the group as a whole\"\"? Dan denk je dat I'm pleased with the group het probleem noemt. Dat is de positieve zin, en niet de negatieve.",
+    "Koos je \"\"the topic of the report\"\"? Dan denk je dat het onderwerp slecht was. De tekst zegt daar niets over, dus je verzint een reden."
+   ],
+   "uh": "Waar is de docent minder blij over?",
+   "ctx": "Your teacher says: \"I'm pleased with the group as a whole, because everyone handed in the report on time. I'm less happy that so few of you checked the spelling.\" You must report this back to your parents."
+  },
+  {
+   "v": "Which reply is best?",
+   "o": [
+    "\"Don't be silly, there's nothing to be nervous about, I think, I suppose.\"",
+    "\"You will probably fail, to be honest.\"",
+    "\"I'm not nervous, so you needn't be.\"",
+    "\"I understand you're nervous, but you've practised a lot, so I think you'll do well.\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 2,
+   "u": "Erken het gevoel, geef een reden. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"Don't be silly, there's nothing to be nervous about, I think, I suppose.\"\"? Dan denk je dat haar gevoel wegpraten helpt. Zo neem je haar zenuwen niet serieus, en dat stelt niet gerust.",
+    "Koos je \"\"You will probably fail, to be honest.\"\"? Dan denk je dat eerlijkheid hier helpt. Het is een negatieve voorspelling, en maakt haar zenuwen erger.",
+    "Koos je \"\"I'm not nervous, so you needn't be.\"\"? Dan denk je dat jouw gevoel haar gevoel oplost. Je praat over jezelf, en erkent haar spanning niet.",
+    "Klopt: je erkent haar zenuwen en geeft een reden voor vertrouwen, dat stelt haar gerust."
+   ],
+   "uh": "Welk antwoord stelt haar het best gerust?",
+   "ctx": "Your friend Lena says she is nervous about her driving test tomorrow, and she is sure she will fail. You want to reassure her and show that you understand how she feels."
+  },
+  {
+   "v": "Which sentence is best?",
+   "o": [
+    "\"I feel a bit frustrated when you arrive late, because I have to start your work.\"",
+    "\"You are always lazy and selfish, to be honest, you know.\"",
+    "\"It doesn't bother me at all.\"",
+    "\"Why are you so stupid?\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 4,
+   "u": "I feel ... when ..., because ... Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: I feel noemt je gevoel, a bit houdt het zacht en because geeft de reden.",
+    "Koos je \"\"You are always lazy and selfish, to be honest, you know.\"\"? Dan denk je dat een eerlijk oordeel genoeg is. Het is een aanval op de persoon, en noemt geen gevoel.",
+    "Koos je \"\"It doesn't bother me at all.\"\"? Dan denk je dat je het gevoel beter kunt verbergen. Dat is onwaar, en lost het probleem niet op.",
+    "Koos je \"\"Why are you so stupid?\"\"? Dan denk je dat een vraag beleefd is. Het is een belediging, en geen gevoel met reden."
+   ],
+   "uh": "Welke zin is het best?",
+   "ctx": "Your colleague at a summer job keeps arriving late, and it makes your own work harder. You want to say how you feel without attacking him, so you decide to start with \"I feel\"."
+  }
+ ],
+ "oe": [
+  {
+   "bron": "Examenstijl",
+   "ctx": "Your best friend has just heard that she did not get the part she wanted in the school play. She had practised for weeks and looks very upset when she comes to sit next to you at lunch.",
+   "v": "Write two sentences in English in which you show that you understand how she feels and offer some support.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Een meelevende zin, zoals I'm so sorry to hear that (1p). Een benoeming van het gevoel, zoals you must be really disappointed (1p). Een aanbod of troostzin, zoals can I do anything for you (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "You have just received the results of your final exam and you have passed with a good grade. You want to tell your English pen friend about it in an e-mail and describe how you feel and why.",
+   "v": "Write two or three sentences about your feelings and the reason for them.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Een gevoelswoord, zoals delighted of proud (1p). Een reden met because (1p). Een passende versterker zoals really of absolutely (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Your cousin has just told you that she is going to be a big sister next month. She is smiling, but she also says that she is a bit worried about how her life will change.",
+   "v": "Write a reply in which you congratulate her and respond to her worry.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Een felicitatie, zoals congratulations (1p). Erkenning van de zorg, zoals I understand that you are a bit worried (1p). Een geruststellende of vriendelijke zin (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "You booked a hotel room with a sea view, but you were given a room that looks out onto a car park. You go to the reception desk and the receptionist looks friendly and tired.",
+   "v": "Write what you say to the receptionist, in a polite and clear way.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Een beleefde opening, zoals excuse me of I'm afraid (1p). Het probleem benoemd: de kamer heeft geen zeezicht (1p). Een vraag om een oplossing, zoals could you change my room (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "A classmate keeps borrowing your pens and never gives them back. It annoys you a lot, but you do not want to start a fight and you want to keep the friendship.",
+   "v": "Write what you say to your classmate, using I feel ... when ... because ...",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Het gevoel genoemd met I feel (1p). De situatie genoemd met when (1p). De reden genoemd met because, zonder de ander aan te vallen (1p)."
+  }
+ ]
+}
