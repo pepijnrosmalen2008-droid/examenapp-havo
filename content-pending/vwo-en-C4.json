@@ -1,0 +1,682 @@
+{
+ "id": "C4",
+ "lo": "en.C.4",
+ "gs": 2,
+ "naam": "Zaken en personen beschrijven",
+ "beschrijving": "Je leert in het Engels personen en voorwerpen te beschrijven met uiterlijk, karakter, materiaal, afmeting en functie, te vergelijken, een woord dat je niet kent te omschrijven en je beschrijving van algemeen naar detail op te bouwen.",
+ "ceStatus": "SE",
+ "binas": "",
+ "val": "",
+ "onderwerpen": [
+  "Personen beschrijven",
+  "Voorwerpen beschrijven",
+  "Vergelijken",
+  "Een woord omschrijven",
+  "Van algemeen naar detail"
+ ],
+ "sam": "Bij het beschrijven van een persoon onderscheid je uiterlijk (tall, curly hair) en karakter (shy, generous). Een voorwerp beschrijf je met materiaal (made of wood), afmeting (forty centimetres high), kleur en functie (you use it to cut paper). Bijvoeglijke naamwoorden helpen daarbij. Een vergelijking maak je met -er than (taller than) of as ... as; de overtreffende trap gebruik je bij drie of meer (the biggest). Ken je een woord niet, dan ga je omschrijven: a thing you use to eat with. Een goede beschrijving heeft een vaste volgorde: eerst algemeen, dan detail.",
+ "begrippen": [
+  {
+   "t": "Beschrijven",
+   "d": "Vertellen hoe iets of iemand eruitziet of is."
+  },
+  {
+   "t": "Uiterlijk",
+   "d": "Hoe iemand eruitziet, zoals tall of curly hair."
+  },
+  {
+   "t": "Karakter",
+   "d": "Hoe iemand is van binnen, zoals shy of generous."
+  },
+  {
+   "t": "Bijvoeglijk naamwoord",
+   "d": "Een woord dat een zelfstandig naamwoord beschrijft, zoals small."
+  },
+  {
+   "t": "Vergelijking",
+   "d": "Twee dingen naast elkaar zetten met -er than of as ... as."
+  },
+  {
+   "t": "Overtreffende trap",
+   "d": "De hoogste vorm, zoals the biggest of the three."
+  },
+  {
+   "t": "Omschrijven",
+   "d": "Een woord uitleggen dat je niet kent, zoals a thing you use to eat with."
+  },
+  {
+   "t": "Functie",
+   "d": "Waarvoor je iets gebruikt, zoals you use it to cut paper."
+  },
+  {
+   "t": "Materiaal",
+   "d": "Waarvan iets gemaakt is, zoals made of wood."
+  },
+  {
+   "t": "Afmeting",
+   "d": "De grootte van iets, zoals forty centimetres high."
+  },
+  {
+   "t": "Volgorde",
+   "d": "Eerst het algemene beeld, daarna de details."
+  },
+  {
+   "t": "Detail",
+   "d": "Een klein, specifiek kenmerk, zoals a small scar."
+  }
+ ],
+ "sv": [
+  {
+   "v": "Which sentence describes someone's character?",
+   "o": [
+    "\"He is tall and has dark hair.\"",
+    "\"He is shy and rather quiet.\"",
+    "\"He is wearing a blue jacket.\"",
+    "\"He is twenty years old.\""
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 0,
+   "u": "Karakter = eigenschap van binnen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"He is tall and has dark hair.\"\"? Dan denk je dat tall en dark hair een karakter beschrijven. Dit gaat over lengte en haar, dus over uiterlijk.",
+    "Klopt: shy en quiet zeggen iets over zijn karakter, niet over hoe hij eruitziet.",
+    "Koos je \"\"He is wearing a blue jacket.\"\"? Dan denk je dat kleding iets over karakter zegt. Dit beschrijft alleen wat hij draagt, en geen eigenschap van binnen.",
+    "Koos je \"\"He is twenty years old.\"\"? Dan denk je dat leeftijd een karaktereigenschap is. Het is een feit over hem, en zegt niets over zijn gedrag."
+   ],
+   "uh": "Welke zin beschrijft karakter?"
+  },
+  {
+   "v": "Which sentence describes someone's appearance?",
+   "o": [
+    "\"She is always kind and helpful, to be honest.\"",
+    "\"She loves swimming and reading.\"",
+    "\"She comes from Spain.\"",
+    "\"She has short red hair and green eyes.\""
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 0,
+   "u": "Uiterlijk = wat je ziet. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"She is always kind and helpful, to be honest.\"\"? Dan denk je dat kind en helpful iets zichtbaars zijn. Het zijn eigenschappen van karakter, en die zie je niet direct.",
+    "Koos je \"\"She loves swimming and reading.\"\"? Dan denk je dat hobby's haar uiterlijk beschrijven. Het zegt wat ze leuk vindt, en niet hoe ze eruitziet.",
+    "Koos je \"\"She comes from Spain.\"\"? Dan denk je dat herkomst het uiterlijk beschrijft. Het is een feit over waar ze vandaan komt, en geen uiterlijk.",
+    "Klopt: haar en ogen zijn dingen die je ziet, dus dit beschrijft haar uiterlijk."
+   ],
+   "uh": "Welke zin beschrijft uiterlijk?"
+  },
+  {
+   "v": "Which sentence names the material of an object?",
+   "o": [
+    "\"The table is made of wood.\"",
+    "\"The table is in the kitchen.\"",
+    "\"The table is very expensive.\"",
+    "\"We use the table for dinner.\""
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 1,
+   "u": "Made of = materiaal. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: made of wood zegt uit welk materiaal de tafel gemaakt is.",
+    "Koos je \"\"The table is in the kitchen.\"\"? Dan denk je dat de plaats het materiaal noemt. In the kitchen zegt waar de tafel staat, en niet waarvan hij is gemaakt.",
+    "Koos je \"\"The table is very expensive.\"\"? Dan denk je dat de prijs het materiaal noemt. Het zegt iets over de kosten, en niet over het materiaal.",
+    "Koos je \"\"We use the table for dinner.\"\"? Dan denk je dat het gebruik het materiaal noemt. Het noemt de functie, en niet waarvan hij is gemaakt."
+   ],
+   "uh": "Welke zin noemt het materiaal?"
+  },
+  {
+   "v": "Which sentence says what an object is used for?",
+   "o": [
+    "\"It is small and silver, you know.\"",
+    "\"It is made of steel.\"",
+    "\"You use it to cut paper.\"",
+    "\"It is on the desk.\""
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 1,
+   "u": "Use it to = functie. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"It is small and silver, you know.\"\"? Dan denk je dat kleur en grootte de functie noemen. Het beschrijft hoe het eruitziet, en niet waarvoor je het gebruikt.",
+    "Koos je \"\"It is made of steel.\"\"? Dan denk je dat het materiaal de functie noemt. Steel zegt waarvan het is gemaakt, en niet wat je ermee doet.",
+    "Klopt: you use it to ... noemt de functie, hier het knippen van papier.",
+    "Koos je \"\"It is on the desk.\"\"? Dan denk je dat de plaats de functie noemt. Het zegt waar het ligt, en niet wat je ermee doet."
+   ],
+   "uh": "Welke zin noemt de functie?"
+  },
+  {
+   "v": "Which sentence is a correct comparison?",
+   "o": [
+    "\"My brother is more tall than I am.\"",
+    "\"My brother is taller than I am.\"",
+    "\"My brother is tallest than I am.\"",
+    "\"My brother is as taller as I am.\""
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 2,
+   "u": "Kort woord + -er + than. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"My brother is more tall than I am.\"\"? Dan denk je dat je more voor elk bijvoeglijk naamwoord gebruikt. Bij korte woorden gebruik je -er, dus taller.",
+    "Klopt: bij een kort bijvoeglijk naamwoord als tall maak je de vergelijking met -er than.",
+    "Koos je \"\"My brother is tallest than I am.\"\"? Dan denk je dat de overtreffende trap hier past. Tallest hoort bij the, niet bij than, dus dit klopt niet.",
+    "Koos je \"\"My brother is as taller as I am.\"\"? Dan denk je dat as en -er samen kunnen. Bij as ... as blijft het woord gewoon staan, dus as tall as."
+   ],
+   "uh": "Welke vergelijking is correct?"
+  },
+  {
+   "v": "What do you say when you do not know the word for 'fork'?",
+   "o": [
+    "\"I don't know the word, sorry, bye, I think.\"",
+    "\"Let's talk about something else.\"",
+    "\"It's a fork, a fork, a fork.\"",
+    "\"It's a thing you use to eat with.\""
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 3,
+   "u": "Omschrijven met thing you use to. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"I don't know the word, sorry, bye, I think.\"\"? Dan denk je dat opgeven netjes is. Je laat het gesprek vallen, en omschrijven kan wel.",
+    "Koos je \"\"Let's talk about something else.\"\"? Dan denk je dat een ander onderwerp kiezen een oplossing is. Je ontwijkt het probleem, terwijl omschrijven wél kan.",
+    "Koos je \"\"It's a fork, a fork, a fork.\"\"? Dan denk je dat je het woord kunt herhalen. Je kent het woord niet, dus dit is niet mogelijk.",
+    "Klopt: je omschrijft het woord met functie en blijft in het Engels doorpraten."
+   ],
+   "uh": "Wat zeg je als je het woord niet weet?"
+  },
+  {
+   "v": "Which description goes from general to specific?",
+   "o": [
+    "\"She is a tall woman; she has long dark hair and a small scar.\"",
+    "\"A small scar, dark, long hair, woman.\"",
+    "\"She has a small scar and she is a woman, to be honest, you know.\"",
+    "\"She exists.\""
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 4,
+   "u": "Eerst algemeen, dan detail. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: eerst het algemene beeld, tall woman, en daarna de details zoals haar en een litteken.",
+    "Koos je \"\"A small scar, dark, long hair, woman.\"\"? Dan denk je dat losse details een beschrijving zijn. Het begint bij een detail, en geeft geen algemeen beeld.",
+    "Koos je \"\"She has a small scar and she is a woman, to be honest, you know.\"\"? Dan denk je dat het altijd klopt om met een detail te beginnen. Dan mist het algemene beeld, en het is minder duidelijk.",
+    "Koos je \"\"She exists.\"\"? Dan denk je dat een korte zin genoeg is. Hij is algemeen, maar geeft geen enkel detail."
+   ],
+   "uh": "Welke beschrijving gaat van algemeen naar detail?"
+  },
+  {
+   "v": "Which message helps her most?",
+   "o": [
+    "\"I'm a very nice and friendly person.\"",
+    "\"I'm the person who is waiting for you, I suppose, really.\"",
+    "\"I'm tall, I have short curly hair and I'm wearing a red jacket.\"",
+    "\"I'm Dutch and I like football.\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 0,
+   "u": "Uiterlijk met details. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"I'm a very nice and friendly person.\"\"? Dan denk je dat karakter helpt om iemand te vinden. Je kunt dat niet zien, dus ze herkent je niet.",
+    "Koos je \"\"I'm the person who is waiting for you, I suppose, really.\"\"? Dan denk je dat dit genoeg is om jezelf te beschrijven. Er staat niets over uiterlijk, dus het helpt niet.",
+    "Klopt: lengte, haar en een rode jas zijn zichtbaar, dus ze kan je herkennen in de menigte.",
+    "Koos je \"\"I'm Dutch and I like football.\"\"? Dan denk je dat herkomst en hobby je herkenbaar maken. Het zijn feiten die je niet ziet, dus het helpt niet."
+   ],
+   "uh": "Welk bericht helpt het meest?",
+   "ctx": "You are meeting an exchange student at the airport whom you have never seen before. You write her a message to tell her what you look like, so that she can find you in the crowd."
+  },
+  {
+   "v": "Which description is best?",
+   "o": [
+    "\"He is tall and wears glasses.\"",
+    "\"He's strict but fair, and he explains things clearly.\"",
+    "\"He's got a car and two children, you know, I think.\"",
+    "\"He is a teacher.\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 0,
+   "u": "Karakter en lesstijl noemen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"He is tall and wears glasses.\"\"? Dan denk je dat uiterlijk antwoord geeft op wat hij voor iemand is. Je vriend vraagt naar zijn aard, en niet naar zijn bril.",
+    "Klopt: strict en fair beschrijven zijn karakter en explains things clearly zegt hoe hij lesgeeft.",
+    "Koos je \"\"He's got a car and two children, you know, I think.\"\"? Dan denk je dat privé-details beschrijven hoe hij is. Het zegt niets over zijn lessen, dus het beantwoordt de vraag niet.",
+    "Koos je \"\"He is a teacher.\"\"? Dan denk je dat dit een beschrijving is. Je vriend weet dat al, en het geeft geen informatie."
+   ],
+   "uh": "Welke beschrijving is het best?",
+   "ctx": "A friend asks you what your new maths teacher is like. He is strict but fair, always explains things twice, and rarely smiles in class, although he is kind after the lesson."
+  },
+  {
+   "v": "Which description is the most useful?",
+   "o": [
+    "\"It's a nice bag that I like a lot.\"",
+    "\"It's a backpack for school.\"",
+    "\"It's somewhere in the train, I think, really, to be honest.\"",
+    "\"It's a dark blue canvas backpack, about forty centimetres high, with a white zip.\""
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 1,
+   "u": "Kleur, materiaal, maat, detail. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"It's a nice bag that I like a lot.\"\"? Dan denk je dat een mening de rugzak herkenbaar maakt. Nice en like zeggen niets concreets, dus de medewerker kan hem niet vinden.",
+    "Koos je \"\"It's a backpack for school.\"\"? Dan denk je dat alleen de functie genoeg is. Veel rugzakken zijn voor school, dus dat helpt niet.",
+    "Koos je \"\"It's somewhere in the train, I think, really, to be honest.\"\"? Dan denk je dat een plaats de rugzak beschrijft. Je beschrijft niet hoe hij eruitziet, dus het is geen beschrijving.",
+    "Klopt: kleur, materiaal, afmeting en een opvallend detail maken de rugzak herkenbaar."
+   ],
+   "uh": "Welke beschrijving is het nuttigst?",
+   "ctx": "You lost your backpack on the train. At the lost-property office the clerk asks you to describe it. It is dark blue, made of canvas, about forty centimetres high, with a white zip."
+  },
+  {
+   "v": "Which explanation is best?",
+   "o": [
+    "\"It's a small device you can use to phone people, send messages and take photos.\"",
+    "\"It's a smartphone, obviously.\"",
+    "\"It's black and made of glass.\"",
+    "\"It's expensive and everyone has one, I think, I suppose.\""
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 1,
+   "u": "Wat is het + waarvoor. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: je noemt wat het is en waarvoor je het gebruikt, zonder het woord zelf te herhalen.",
+    "Koos je \"\"It's a smartphone, obviously.\"\"? Dan denk je dat het woord zelf een uitleg is. Ze kent het woord niet, dus je legt niets uit.",
+    "Koos je \"\"It's black and made of glass.\"\"? Dan denk je dat uiterlijk uitlegt wat het is. Je noemt kleur en materiaal, maar niet waarvoor het dient.",
+    "Koos je \"\"It's expensive and everyone has one, I think, I suppose.\"\"? Dan denk je dat prijs en populariteit uitleg zijn. Je zegt niet wat je ermee doet, dus ze begrijpt het nog niet."
+   ],
+   "uh": "Welke uitleg is het best?",
+   "ctx": "You want to explain to your grandmother in English what a smartphone is. She has never used one and only knows old telephones with a cord, but she is curious and listens carefully."
+  },
+  {
+   "v": "Which sentence is correct?",
+   "o": [
+    "\"The red bike is more cheap than the black one.\"",
+    "\"The black bike is cheaper than the red one.\"",
+    "\"The red bike is cheaper than the black one.\"",
+    "\"The red bike is as cheap than the black one.\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 2,
+   "u": "Kort woord + -er + than. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"The red bike is more cheap than the black one.\"\"? Dan denk je dat more bij elk bijvoeglijk naamwoord past. Bij korte woorden als cheap gebruik je -er, dus cheaper.",
+    "Koos je \"\"The black bike is cheaper than the red one.\"\"? Dan denk je dat de vorm klopt en dus ook het feit. De zwarte fiets kost juist meer, dus de volgorde is omgedraaid.",
+    "Klopt: cheap is kort, dus cheaper than, en de rode fiets kost minder dan de zwarte.",
+    "Koos je \"\"The red bike is as cheap than the black one.\"\"? Dan denk je dat as en than samen kunnen. Bij as hoort as, dus as cheap as."
+   ],
+   "uh": "Welke zin is correct?",
+   "ctx": "You compare two bikes in a shop. The red one costs 300 euros and weighs 12 kilos. The black one costs 450 euros and weighs 10 kilos. You tell your father which one is cheaper."
+  },
+  {
+   "v": "Which sentence is correct?",
+   "o": [
+    "\"Lisbon is bigger of the three cities.\"",
+    "\"Lisbon is the biggest of the three cities.\"",
+    "\"Lisbon is the most big of the three cities, I suppose.\"",
+    "\"Faro is the biggest of the three cities.\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 2,
+   "u": "The + -est bij drie of meer. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"Lisbon is bigger of the three cities.\"\"? Dan denk je dat de vergelijkende trap hier past. Bij drie steden gebruik je de overtreffende trap, dus the biggest.",
+    "Klopt: big krijgt als overtreffende trap the biggest, en Lisbon heeft de meeste inwoners.",
+    "Koos je \"\"Lisbon is the most big of the three cities, I suppose.\"\"? Dan denk je dat the most bij elk woord past. Bij korte woorden gebruik je -est, dus the biggest.",
+    "Koos je \"\"Faro is the biggest of the three cities.\"\"? Dan denk je dat de vorm klopt en daarmee de stad. Faro heeft de minste inwoners, dus de stad is verkeerd."
+   ],
+   "uh": "Welke zin is correct?",
+   "ctx": "Three cities are described: Lisbon has 500,000 inhabitants, Porto has 230,000 and Faro has 60,000. You write one sentence about the biggest city of the three for your geography teacher."
+  },
+  {
+   "v": "What is the best way to ask?",
+   "o": [
+    "\"I want that, you know, the thing.\"",
+    "\"Do you have pencils, sharp, thing, you know, I think?\"",
+    "\"Never mind, I'll go without.\"",
+    "\"I'm looking for a small thing you use to make a pencil sharp.\""
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 3,
+   "u": "Omschrijf met functie. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"I want that, you know, the thing.\"\"? Dan denk je dat that thing genoeg is. Het is te vaag, dus de verkoper begrijpt het niet.",
+    "Koos je \"\"Do you have pencils, sharp, thing, you know, I think?\"\"? Dan denk je dat losse woorden duidelijk zijn. Het is geen zin, en het blijft onduidelijk wat je zoekt.",
+    "Koos je \"\"Never mind, I'll go without.\"\"? Dan denk je dat opgeven een oplossing is. Je kunt het wel omschrijven, dus dat is niet nodig.",
+    "Klopt: je omschrijft het voorwerp met afmeting en functie, zodat de verkoper het snapt."
+   ],
+   "uh": "Wat is de beste manier om te vragen?",
+   "ctx": "In a shop abroad you want to buy a pencil sharpener, but you forget the English word. The shop assistant looks friendly and is willing to help you in English."
+  },
+  {
+   "v": "What is the best strategy?",
+   "o": [
+    "\"Say: 'It's something you hold over your head when it rains.'\"",
+    "\"Stay silent until you remember the word.\"",
+    "\"Say the Dutch word 'paraplu' and hope she understands, really.\"",
+    "\"Change the subject and never mention it.\""
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 3,
+   "u": "Omschrijven = strategie. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: je omschrijft het woord met de functie en blijft Engels praten, zodat de examinator je snapt.",
+    "Koos je \"\"Stay silent until you remember the word.\"\"? Dan denk je dat stilte een strategie is. Je verliest tijd, en de examinator denkt dat je het niet weet.",
+    "Koos je \"\"Say the Dutch word 'paraplu' and hope she understands, really.\"\"? Dan denk je dat een Nederlands woord werkt. Het hoort niet bij de Engelse toets, en kost punten.",
+    "Koos je \"\"Change the subject and never mention it.\"\"? Dan denk je dat ontwijken het probleem oplost. Je laat zien dat je niet kunt omschrijven, terwijl je dat juist kunt."
+   ],
+   "uh": "Wat is de beste strategie?",
+   "ctx": "During a speaking exam you cannot remember the English word for 'umbrella'. The examiner is waiting, and you know that you lose points when you stay silent for too long."
+  },
+  {
+   "v": "Which order is best?",
+   "o": [
+    "\"Start with the colour of her socks, then say she is a girl, I think, I suppose.\"",
+    "\"Mention only her clothes and nothing else.\"",
+    "\"Say she is a tall girl first, then mention her hair and her clothes.\"",
+    "\"Say the details in a random order.\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 4,
+   "u": "Algemeen, dan details. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"Start with the colour of her socks, then say she is a girl, I think, I suppose.\"\"? Dan denk je dat een detail het begin mag zijn. Dan ontbreekt het algemene beeld, en het klinkt rommelig.",
+    "Koos je \"\"Mention only her clothes and nothing else.\"\"? Dan denk je dat kleding genoeg is. Je beschrijft haar niet, alleen wat ze aanheeft.",
+    "Klopt: eerst het algemene beeld, tall girl, dan haar en kleding als details.",
+    "Koos je \"\"Say the details in a random order.\"\"? Dan denk je dat volgorde er niet toe doet. Zonder vaste volgorde raakt je klasgenoot de draad kwijt, en het beeld klopt niet."
+   ],
+   "uh": "Welke volgorde is het best?",
+   "ctx": "You describe your best friend to a classmate. You want to start with the general picture and then give details, so that your classmate gets a clear image step by step."
+  },
+  {
+   "v": "Which description starts best?",
+   "o": [
+    "\"Two children, boat, palm tree, sand.\"",
+    "\"This is a photo of a beach; in front, two children are building a sandcastle.\"",
+    "\"There is a small boat which I like because I like boats, to be honest, you know.\"",
+    "\"I don't like photos of beaches much.\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 4,
+   "u": "Algemeen beeld, dan details. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"Two children, boat, palm tree, sand.\"\"? Dan denk je dat losse woorden een beschrijving zijn. Het is een opsomming, en zegt niet wat de foto is.",
+    "Klopt: eerst zeg je wat de foto laat zien, daarna volgen de details in volgorde van voor naar achter.",
+    "Koos je \"\"There is a small boat which I like because I like boats, to be honest, you know.\"\"? Dan denk je dat een mening de beschrijving opent. Het beschrijft de foto niet, en begint met een detail.",
+    "Koos je \"\"I don't like photos of beaches much.\"\"? Dan denk je dat je mening een beschrijving is. Je beschrijft niets van de foto, dus het helpt niet."
+   ],
+   "uh": "Welke beschrijving begint het best?",
+   "ctx": "You are describing a holiday photo of a beach. In the photo there are palm trees, a small boat on the water and two children building a sandcastle in the foreground."
+  },
+  {
+   "v": "Which detail describes Tom's appearance?",
+   "o": [
+    "\"he is a little shy at first, I suppose\"",
+    "\"he is talkative and funny\"",
+    "\"he always arrives early\"",
+    "\"he is quite tall and has a beard\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 0,
+   "u": "Uiterlijk = lengte, baard. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"he is a little shy at first, I suppose\"\"? Dan denk je dat shy iets is wat je ziet. Het is een karaktertrek, dus geen uiterlijk.",
+    "Koos je \"\"he is talkative and funny\"\"? Dan denk je dat talkative en funny uiterlijk zijn. Het zijn eigenschappen van karakter, en dat is iets anders.",
+    "Koos je \"\"he always arrives early\"\"? Dan denk je dat gedrag uiterlijk beschrijft. Het zegt hoe hij zich gedraagt, en niet hoe hij eruitziet.",
+    "Klopt: lengte en een baard zie je, dus dit beschrijft zijn uiterlijk en niet zijn karakter."
+   ],
+   "uh": "Welk detail beschrijft zijn uiterlijk?",
+   "ctx": "Read the text: \"Tom is the sort of person who always arrives early. He is a little shy at first, but once you know him he's talkative and funny. He's quite tall, with a beard that he's very proud of.\""
+  },
+  {
+   "v": "Which piece of information is NOT given?",
+   "o": [
+    "\"the price of the lamp\"",
+    "\"the material of the lamp\"",
+    "\"the height of the lamp\"",
+    "\"what the lamp is used for\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 1,
+   "u": "Zoek wat er niet staat. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: er staat geen prijs in de tekst, maar wel materiaal, hoogte, gebruik en kleuren.",
+    "Koos je \"\"the material of the lamp\"\"? Dan denk je dat het materiaal ontbreekt. Er staat made of recycled glass, dus het materiaal wordt genoemd.",
+    "Koos je \"\"the height of the lamp\"\"? Dan denk je dat de hoogte ontbreekt. Er staat 35 cm tall, dus de afmeting wordt genoemd.",
+    "Koos je \"\"what the lamp is used for\"\"? Dan denk je dat het gebruik ontbreekt. Er staat ideal for reading in bed, dus de functie wordt genoemd."
+   ],
+   "uh": "Welke informatie staat NIET in de tekst?",
+   "ctx": "Read the product description: \"This lamp is made of recycled glass and stands 35 cm tall. It gives a warm light, so it is ideal for reading in bed. It comes in green or grey.\""
+  },
+  {
+   "v": "Which statement is true?",
+   "o": [
+    "\"Phone A is heavier than Phone B.\"",
+    "\"Phone A has a better battery than Phone B, really.\"",
+    "\"Phone B is the most expensive of the three.\"",
+    "\"Phone C has the best camera of the three.\""
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 2,
+   "u": "As ... as = gelijk; the most = hoogste. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"Phone A is heavier than Phone B.\"\"? Dan denk je dat as light as een verschil in gewicht noemt. Het betekent even licht, dus niet zwaarder.",
+    "Koos je \"\"Phone A has a better battery than Phone B, really.\"\"? Dan denk je dat A een betere batterij heeft. Not as good zegt het omgekeerde, dus de batterij van A is slechter.",
+    "Klopt: de tekst zegt letterlijk dat Phone B de duurste van de drie is.",
+    "Koos je \"\"Phone C has the best camera of the three.\"\"? Dan denk je dat C de beste camera heeft. B is slechts een beetje beter dan C, dus B heeft de beste."
+   ],
+   "uh": "Welke bewering klopt?",
+   "ctx": "Two phone reviews: \"Phone A is as light as Phone B, but its battery is not as good.\" and \"Phone B is the most expensive of the three phones, yet its camera is only slightly better than Phone C's.\""
+  },
+  {
+   "v": "Which word is Mark describing?",
+   "o": [
+    "\"suitcase\"",
+    "\"briefcase\"",
+    "\"rucksack\"",
+    "\"shopping bag\""
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 3,
+   "u": "Omschrijving met vorm en gebruik. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"suitcase\"\"? Dan denk je dat een grote reistas wordt bedoeld. Een suitcase is voor reizen, en niet voor papieren.",
+    "Klopt: een platte tas die je onder je arm draagt en gebruikt voor papieren op het werk is een briefcase.",
+    "Koos je \"\"rucksack\"\"? Dan denk je dat een rugzak wordt bedoeld. Die draag je op je rug, niet onder je arm.",
+    "Koos je \"\"shopping bag\"\"? Dan denk je dat een boodschappentas wordt bedoeld. Die is voor winkelen, en niet voor papieren op het werk."
+   ],
+   "uh": "Welk woord beschrijft Mark?",
+   "ctx": "Mark tries to explain a word to his pen friend in English: \"It's a kind of bag, but it's flat and you carry it under your arm. People use it for papers at work.\""
+  },
+  {
+   "v": "Why is B's description better?",
+   "o": [
+    "\"because it is shorter and uses fewer details, to be honest, you know\"",
+    "\"because it only describes the background\"",
+    "\"because it is written in the past tense\"",
+    "\"it gives the general picture first and then adds specific details\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 4,
+   "u": "Eerst algemeen, dan details. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"because it is shorter and uses fewer details, to be honest, you know\"\"? Dan denk je dat korter altijd beter is. B noemt juist meer details, en dat maakt het duidelijker.",
+    "Koos je \"\"because it only describes the background\"\"? Dan denk je dat het beter is om één plek te beschrijven. B noemt ook links en de verkoopster, dus niet alleen de achtergrond.",
+    "Koos je \"\"because it is written in the past tense\"\"? Dan denk je dat de tijdsvorm het verschil maakt. Beide zijn in de tegenwoordige tijd, dus dat is het niet.",
+    "Klopt: B noemt eerst het algemene beeld en voegt daarna details toe, zoals plaats en achtergrond."
+   ],
+   "uh": "Waarom is de beschrijving van B beter?",
+   "ctx": "A student has to describe a picture of a market scene. Student A says: \"It's busy, there are people, there are stalls.\" Student B says: \"This is a busy market; on the left a woman sells fruit, and in the background there's a church.\""
+  },
+  {
+   "v": "Which pair of sentences is best?",
+   "o": [
+    "\"He's an elderly man with white hair and a friendly face. He is kind and always helps people.\"",
+    "\"He is kind and always helps people. He is also helpful and nice, I suppose, really.\"",
+    "\"He has white hair. He has white hair and a friendly face.\"",
+    "\"He's seventy. He is a man.\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 0,
+   "u": "Een zin uiterlijk, een zin karakter. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: de eerste zin gaat over uiterlijk en de tweede over karakter, precies zoals gevraagd.",
+    "Koos je \"\"He is kind and always helps people. He is also helpful and nice, I suppose, really.\"\"? Dan denk je dat twee zinnen over karakter genoeg zijn. Je beschrijft zijn uiterlijk niet, en dat werd gevraagd.",
+    "Koos je \"\"He has white hair. He has white hair and a friendly face.\"\"? Dan denk je dat herhalen een tweede zin oplevert. Beide zinnen gaan over uiterlijk, en je noemt zijn karakter niet.",
+    "Koos je \"\"He's seventy. He is a man.\"\"? Dan denk je dat feiten genoeg zijn. Je noemt geen uiterlijk en geen karakter, dus de opdracht ontbreekt."
+   ],
+   "uh": "Welke twee zinnen zijn het best?",
+   "ctx": "You must describe your neighbour in two sentences: one about appearance and one about character. Mr Jansen is seventy, has white hair and a friendly face, and he always helps people with their shopping."
+  },
+  {
+   "v": "Why should you use a wooden spoon?",
+   "o": [
+    "\"because the pan is twenty-four centimetres wide\"",
+    "\"because wood is cheaper than metal\"",
+    "\"because a metal spoon can scratch the pan\"",
+    "\"because the pan is made of wood\""
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 1,
+   "u": "Zoek de reden na because. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"because the pan is twenty-four centimetres wide\"\"? Dan denk je dat de breedte de reden is. Dat is alleen een afmeting, en geen reden voor een houten lepel.",
+    "Koos je \"\"because wood is cheaper than metal\"\"? Dan denk je dat de prijs de reden is. De tekst noemt geen prijs, dus dat is verzonnen.",
+    "Klopt: de tekst geeft met because de reden: een metalen lepel kan de pan bekrassen.",
+    "Koos je \"\"because the pan is made of wood\"\"? Dan denk je dat de pan van hout is. Er staat non-stick, dus dat klopt niet."
+   ],
+   "uh": "Waarom gebruik je een houten lepel?",
+   "ctx": "Read the instruction: \"Use a wooden spoon, because a metal one can scratch the pan. The pan itself is non-stick and about twenty-four centimetres wide.\""
+  },
+  {
+   "v": "What is true about Leo's essay?",
+   "o": [
+    "\"It is longer than Maya's essay.\"",
+    "\"It is the shortest and is considered the clearest.\"",
+    "\"It is the longest and the best organised, really, to be honest.\"",
+    "\"It is not as clear as Maya's essay.\""
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 2,
+   "u": "The shortest en the clearest. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"It is longer than Maya's essay.\"\"? Dan denk je dat Leo's essay langer is. Maya's essay is much longer, dus dat is omgekeerd.",
+    "Klopt: de tekst noemt Leo's essay the shortest en volgens velen the clearest.",
+    "Koos je \"\"It is the longest and the best organised, really, to be honest.\"\"? Dan denk je dat Leo de langste en best geordende is. Hij is de kortste, dus het eerste klopt niet.",
+    "Koos je \"\"It is not as clear as Maya's essay.\"\"? Dan denk je dat Maya's essay duidelijker is. Many people think Leo's is the clearest, dus het tegendeel."
+   ],
+   "uh": "Wat klopt er over Leo's essay?",
+   "ctx": "Read the text: \"Maya's essay is much longer than Leo's, but it is not as well organised. Leo's essay is the shortest in class, though many people think it is the clearest.\""
+  },
+  {
+   "v": "How does she explain the word?",
+   "o": [
+    "\"by giving its price and brand\"",
+    "\"by translating it into Dutch\"",
+    "\"by spelling the word letter by letter, I think\"",
+    "\"by saying what it is and what it is used for\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 3,
+   "u": "Wat is het + waarvoor. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"by giving its price and brand\"\"? Dan denk je dat prijs en merk uitleg zijn. Ze noemt geen prijs of merk, dus dat doet ze niet.",
+    "Koos je \"\"by translating it into Dutch\"\"? Dan denk je dat ze het vertaalt. De zin is helemaal Engels, en bevat geen Nederlands.",
+    "Koos je \"\"by spelling the word letter by letter, I think\"\"? Dan denk je dat ze het woord spelt. Ze noemt het woord niet eens, dus dat doet ze niet.",
+    "Klopt: ze noemt het soort ding, a machine in the kitchen, en de functie, heats up food."
+   ],
+   "uh": "Hoe omschrijft zij het woord?",
+   "ctx": "A student must describe a 'microwave' without using the word. Her sentence is: \"It's a machine in the kitchen that heats up food very quickly.\""
+  },
+  {
+   "v": "Which conclusion does the writer draw from the picture?",
+   "o": [
+    "\"the man looks tired\"",
+    "\"the man is a doctor\"",
+    "\"the man is forty-four\"",
+    "\"the man is wearing a hat\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 4,
+   "u": "Conclusie uit het beeld. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: de schrijver zegt he looks tired, dat is een conclusie op basis van wat hij ziet.",
+    "Koos je \"\"the man is a doctor\"\"? Dan denk je dat zijn beroep wordt genoemd. De tekst zegt niets over een beroep, dus dat is verzonnen.",
+    "Koos je \"\"the man is forty-four\"\"? Dan denk je dat zijn leeftijd precies bekend is. Er staat about forty, dus een schatting.",
+    "Koos je \"\"the man is wearing a hat\"\"? Dan denk je dat hij een hoed draagt. Hij draagt een bril, en niet een hoed."
+   ],
+   "uh": "Welke conclusie trekt de schrijver?",
+   "ctx": "Read the text: \"The man in the picture is about forty. He has a round face and wears glasses. He looks tired, as if he has been working all night.\""
+  }
+ ],
+ "oe": [
+  {
+   "bron": "Examenstijl",
+   "ctx": "Your English pen friend is coming to stay with your family and she has never met your older brother. You want to tell her in a short message what he looks like and what he is like as a person.",
+   "v": "Write two or three sentences in which you describe your brother's appearance and character.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Een zin over uiterlijk, zoals he is tall and has dark hair (1p). Een zin over karakter, zoals he is kind and funny (1p). Een correcte, duidelijke formulering (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "You left your umbrella in a shop in London and you phone the shop to ask whether they have found it. The assistant needs a description to be able to recognise it among other lost things.",
+   "v": "Write what you say to describe your umbrella.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Kleur en materiaal of patroon, zoals it is dark green (1p). Afmeting of vorm, zoals it is quite small and folds up (1p). Een opvallend detail of de functie (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "You are in a cafe abroad and you want to ask for a straw, but you forget the English word. The waiter is friendly but does not speak Dutch, and you want to keep the conversation in English.",
+   "v": "Write how you describe the word you do not know.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Een omschrijving met a thing you use to (1p). De functie noemen, zoals drink through (1p). Een beleefde vraag of inleiding (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "You compare two holiday destinations for your parents: a city with museums and a beach resort. The city is cheaper and closer, but the beach is warmer and quieter.",
+   "v": "Write three sentences in English comparing the two destinations.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Een correcte vergelijking met -er than of more ... than (1p). Een correcte as ... as of overtreffende trap (1p). Twee verschillende kenmerken vergeleken (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Your teacher shows a photo of a street market on the board and asks you to describe it. In the front there is a man selling flowers, in the middle many people, and in the back a tall church tower.",
+   "v": "Describe the photo in an organised way.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Eerst een algemene zin, zoals this is a busy market (1p). Details op plaats, zoals in front, in the middle, in the back (1p). Een duidelijke volgorde van algemeen naar detail (1p)."
+  }
+ ]
+}
