@@ -1,0 +1,682 @@
+{
+ "id": "C1",
+ "lo": "en.C.1",
+ "gs": 2,
+ "naam": "Adequaat reageren in sociale contacten",
+ "beschrijving": "Je leert in het Engels passend te reageren in sociale situaties: groeten, bedanken, excuses maken, uitnodigingen aannemen of afslaan en reageren op goed en slecht nieuws, formeel of informeel.",
+ "ceStatus": "SE",
+ "binas": "",
+ "val": "",
+ "onderwerpen": [
+  "Begroeten en afscheid nemen",
+  "Bedanken en excuses maken",
+  "Uitnodigen, aannemen en afslaan",
+  "Formeel en informeel register",
+  "Reageren op nieuws"
+ ],
+ "sam": "Je kiest taal die past bij de persoon en de situatie. Formeel: Good morning, nice to meet you; would you mind; thank you for your time. Informeel: Hi, see you soon. Je bedankt en antwoordt met You're welcome, je maakt excuses met I'm so sorry en een reden, en je slaat een uitnodiging beleefd af met Thanks for asking, but ... en een reden. Bij goed nieuws feliciteer je (Congratulations!), bij slecht nieuws toon je medeleven (I'm so sorry to hear that).",
+ "begrippen": [
+  {
+   "t": "Begroeting",
+   "d": "Wat je zegt als je iemand ontmoet."
+  },
+  {
+   "t": "Afscheid",
+   "d": "Wat je zegt als je weggaat."
+  },
+  {
+   "t": "Formeel",
+   "d": "Beleefd en zakelijk, voor onbekenden en autoriteiten."
+  },
+  {
+   "t": "Informeel",
+   "d": "Los, voor vrienden en familie."
+  },
+  {
+   "t": "Register",
+   "d": "De mate van formaliteit van je taal."
+  },
+  {
+   "t": "Bedanken",
+   "d": "Dankbaarheid tonen met thank you."
+  },
+  {
+   "t": "Excuus",
+   "d": "Zeggen dat het je spijt, met een reden."
+  },
+  {
+   "t": "Uitnodiging",
+   "d": "Een vraag om ergens aan mee te doen."
+  },
+  {
+   "t": "Weigering",
+   "d": "Beleefd nee zeggen met een reden."
+  },
+  {
+   "t": "Felicitatie",
+   "d": "Blijdschap tonen over goed nieuws."
+  },
+  {
+   "t": "Medeleven",
+   "d": "Meeleven bij slecht nieuws."
+  },
+  {
+   "t": "Beleefdheidsvorm",
+   "d": "Een zin als would you mind of could you."
+  }
+ ],
+ "sv": [
+  {
+   "v": "Which greeting is suitable for a first meeting with a manager?",
+   "o": [
+    "\"Hey dude, to be honest, you know!\"",
+    "\"Good morning, nice to meet you.\"",
+    "\"Yo, what's up?\"",
+    "\"Sup, right now, honestly or whatever?\""
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 0,
+   "u": "Formeel: good morning. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"Hey dude, to be honest, you know!\"\"? Dan denk je dat deze groet past bij een manager. Het is spreektaal voor vrienden, en te informeel bij een eerste ontmoeting.",
+    "Klopt: dit is een beleefde, formele groet bij een eerste ontmoeting.",
+    "Koos je \"\"Yo, what's up?\"\"? Dan denk je dat deze groet past bij een manager. Het is jongerentaal, en niet beleefd genoeg.",
+    "Koos je \"\"Sup, right now, honestly or whatever?\"\"? Dan denk je dat deze groet past bij een manager. Het is een zeer korte slang, en past niet bij een eerste kennismaking."
+   ],
+   "uh": "Welke groet past?"
+  },
+  {
+   "v": "Which phrase is a polite way to say goodbye after a pleasant evening?",
+   "o": [
+    "\"Bye, finally, to be honest.\"",
+    "\"Whatever, see you.\"",
+    "\"I'm leaving, bye, right now.\"",
+    "\"It was nice meeting you.\""
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 0,
+   "u": "It was nice meeting you. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"Bye, finally, to be honest.\"\"? Dan denk je dat dit beleefd is. Het klinkt alsof je opgelucht bent, en dat is onbeleefd.",
+    "Koos je \"\"Whatever, see you.\"\"? Dan denk je dat dit beleefd is. Whatever klinkt onverschillig, en maakt geen goede indruk.",
+    "Koos je \"\"I'm leaving, bye, right now.\"\"? Dan denk je dat dit beleefd is. Het is kaal en abrupt, en toont geen waardering.",
+    "Klopt: dit sluit beleefd af en toont waardering."
+   ],
+   "uh": "Welke afscheidsgroet is beleefd?"
+  },
+  {
+   "v": "What do you usually say when someone thanks you?",
+   "o": [
+    "\"You're welcome.\"",
+    "\"No, thanks.\"",
+    "\"Sorry about that.\"",
+    "\"Please, you first.\""
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 1,
+   "u": "You're welcome. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: you're welcome is het gebruikelijke antwoord op bedankt.",
+    "Koos je \"\"No, thanks.\"\"? Dan denk je dat dit een antwoord op bedankt is. Het is een weigering van iets, en geen antwoord op dank.",
+    "Koos je \"\"Sorry about that.\"\"? Dan denk je dat dit een antwoord op bedankt is. Het is een excuus, en past niet bij dank.",
+    "Koos je \"\"Please, you first.\"\"? Dan denk je dat dit een antwoord op bedankt is. Het is iets wat je zegt bij een deur, en past niet bij dank."
+   ],
+   "uh": "Wat zeg je na een bedankje?"
+  },
+  {
+   "v": "Which phrase is a polite apology?",
+   "o": [
+    "\"It's not my fault, to be honest.\"",
+    "\"Who cares?\"",
+    "\"I'm so sorry about that.\"",
+    "\"You should have asked, right now.\""
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 1,
+   "u": "I'm so sorry = excuus. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"It's not my fault, to be honest.\"\"? Dan denk je dat dit een excuus is. Het ontkent de schuld, en is geen verontschuldiging.",
+    "Koos je \"\"Who cares?\"\"? Dan denk je dat dit een excuus is. Het toont onverschilligheid, en is onbeleefd.",
+    "Klopt: dit neemt de verantwoordelijkheid en klinkt oprecht.",
+    "Koos je \"\"You should have asked, right now.\"\"? Dan denk je dat dit een excuus is. Het geeft de ander de schuld, en is geen excuus."
+   ],
+   "uh": "Welke zin is een excuus?"
+  },
+  {
+   "v": "Which reply politely declines an invitation?",
+   "o": [
+    "\"No way, to be honest, you know, obviously.\"",
+    "\"Thanks for asking, but I can't make it.\"",
+    "\"I don't want to.\"",
+    "\"Boring, right now, honestly or whatever, if you ask me.\""
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 2,
+   "u": "Thanks, but I can't. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"No way, to be honest, you know, obviously.\"\"? Dan denk je dat dit een beleefde weigering is. Het is kortaf en onbeleefd, en bedankt niet.",
+    "Klopt: je bedankt en geeft aan dat je niet kunt.",
+    "Koos je \"\"I don't want to.\"\"? Dan denk je dat dit een beleefde weigering is. Het is direct en onaardig, en geeft geen reden.",
+    "Koos je \"\"Boring, right now, honestly or whatever, if you ask me.\"\"? Dan denk je dat dit een beleefde weigering is. Het is een belediging, en geen reactie op een uitnodiging."
+   ],
+   "uh": "Welk antwoord weigert beleefd?"
+  },
+  {
+   "v": "Which sentence is the most formal request?",
+   "o": [
+    "\"Open the window, to be honest, you know!\"",
+    "\"Window, now.\"",
+    "\"Hey, window, right now, honestly or whatever!\"",
+    "\"Would you mind opening the window?\""
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 3,
+   "u": "Would you mind = formeel. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"Open the window, to be honest, you know!\"\"? Dan denk je dat dit formeel is. Het is een bevel, en niet beleefd.",
+    "Koos je \"\"Window, now.\"\"? Dan denk je dat dit formeel is. Het is te kort en bevelend, en niet beleefd.",
+    "Koos je \"\"Hey, window, right now, honestly or whatever!\"\"? Dan denk je dat dit formeel is. Het is spreektaal, en geen beleefd verzoek.",
+    "Klopt: would you mind is een beleefde, formele verzoekvorm."
+   ],
+   "uh": "Welk verzoek is formeel?"
+  },
+  {
+   "v": "What do you say to congratulate someone on good exam results?",
+   "o": [
+    "\"Congratulations, well done!\"",
+    "\"Hard luck, to be honest, you know.\"",
+    "\"Never mind.\"",
+    "\"Too bad, right now, honestly.\""
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 4,
+   "u": "Congratulations = felicitatie. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: dit felicitateert en prijst iemand voor een goed resultaat.",
+    "Koos je \"\"Hard luck, to be honest, you know.\"\"? Dan denk je dat dit een felicitatie is. Het gebruik je bij pech, en niet bij een goed resultaat.",
+    "Koos je \"\"Never mind.\"\"? Dan denk je dat dit een felicitatie is. Het troost iemand, en past niet bij een succes.",
+    "Koos je \"\"Too bad, right now, honestly.\"\"? Dan denk je dat dit een felicitatie is. Het toont teleurstelling, en past niet bij een succes."
+   ],
+   "uh": "Wat zeg je bij goede resultaten?"
+  },
+  {
+   "v": "What do you say?",
+   "o": [
+    "\"Hi mate, what's up, to be honest, you know, obviously?\"",
+    "\"Yo, Evans!\"",
+    "\"Good morning, Mr Evans. Pleased to meet you.\"",
+    "\"Hey, you must be the guy, right now, honestly.\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 0,
+   "u": "Formele groet met meneer. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"Hi mate, what's up, to be honest, you know, obviously?\"\"? Dan denk je dat deze groet past omdat hij vriendelijk klinkt. Het is te informeel, en niet geschikt voor een klant.",
+    "Koos je \"\"Yo, Evans!\"\"? Dan denk je dat deze groet past omdat je zijn naam noemt. Het is te los, en onbeleefd voor een klant.",
+    "Klopt: dit is een beleefde en formele groet bij een eerste ontmoeting.",
+    "Koos je \"\"Hey, you must be the guy, right now, honestly.\"\"? Dan denk je dat deze groet past omdat je de ander herkent. Het is respectloos, en past niet bij een zakelijke ontmoeting."
+   ],
+   "uh": "Wat zeg je?",
+   "ctx": "You arrive at a business meeting and meet your client Mr Evans for the first time. He holds out his hand and smiles. You want to make a good impression, and your teacher asks which greeting is appropriate in this formal situation."
+  },
+  {
+   "v": "What is the best way to say goodbye?",
+   "o": [
+    "\"OK, I'm leaving, to be honest, you know, obviously.\"",
+    "\"Thanks for having me, I had a lovely time.\"",
+    "\"Finally, I can go.\"",
+    "\"The food was awful, right now, honestly or whatever.\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 0,
+   "u": "Thanks for having me. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"OK, I'm leaving, to be honest, you know, obviously.\"\"? Dan denk je dat dit beleefd is. Het is kaal en abrupt, en bedankt niet.",
+    "Klopt: je bedankt voor de gastvrijheid en zegt dat je het fijn had.",
+    "Koos je \"\"Finally, I can go.\"\"? Dan denk je dat dit beleefd is. Het klinkt opgelucht, en is onbeleefd.",
+    "Koos je \"\"The food was awful, right now, honestly or whatever.\"\"? Dan denk je dat dit beleefd is. Het is een belediging, en onbeleefd tegenover de gastheer."
+   ],
+   "uh": "Hoe neem je afscheid?",
+   "ctx": "After a pleasant dinner at your English friend's house, it is getting late and you must go home. Your friend walks you to the door and her parents wave from the kitchen. You want to leave a good impression of yourself."
+  },
+  {
+   "v": "What do you say?",
+   "o": [
+    "\"Here, take it, to be honest, you know, obviously.\"",
+    "\"I don't need to thank you.\"",
+    "\"You did what you had to, right now, honestly.\"",
+    "\"Thank you so much, it really helped me.\""
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 1,
+   "u": "Thank you so much. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"Here, take it, to be honest, you know, obviously.\"\"? Dan denk je dat dit voldoende is. Het is kaal en bedankt niet, en klinkt bijna onbeleefd.",
+    "Koos je \"\"I don't need to thank you.\"\"? Dan denk je dat dit beleefd is. Het is ontkennend, en toont geen dankbaarheid.",
+    "Koos je \"\"You did what you had to, right now, honestly.\"\"? Dan denk je dat dit beleefd is. Het klinkt als een plicht, en is niet dankbaar.",
+    "Klopt: je bedankt hartelijk en zegt dat het je echt hielp."
+   ],
+   "uh": "Wat zeg je?",
+   "ctx": "Your neighbour has looked after your cat for a week while you were away, and she has refused to take any money. You meet her at the door with a small plant as a gift and want to show how grateful you are."
+  },
+  {
+   "v": "What do you say first?",
+   "o": [
+    "\"I'm really sorry I'm late; the traffic was terrible.\"",
+    "\"You should have called, to be honest, you know, obviously.\"",
+    "\"It isn't a big deal.\"",
+    "\"Why are you angry, right now, honestly or whatever, if you ask me?\""
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 1,
+   "u": "Sorry en een reden. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: je biedt excuses aan en geeft kort de reden.",
+    "Koos je \"\"You should have called, to be honest, you know, obviously.\"\"? Dan denk je dat dit een goede start is. Je geeft hem de schuld, en biedt geen excuus.",
+    "Koos je \"\"It isn't a big deal.\"\"? Dan denk je dat dit een goede start is. Je bagatelliseert, en dat kan hem boos maken.",
+    "Koos je \"\"Why are you angry, right now, honestly or whatever, if you ask me?\"\"? Dan denk je dat dit een goede start is. Je valt hem aan, en biedt geen excuus."
+   ],
+   "uh": "Wat zeg je eerst?",
+   "ctx": "You are late for a meeting with a friend because of a traffic jam. He has waited for twenty minutes outside the cafe and looks a little annoyed when you finally arrive, out of breath, a few minutes after four."
+  },
+  {
+   "v": "Which reply is best?",
+   "o": [
+    "\"No, I can't, to be honest, you know, obviously, right now.\"",
+    "\"I'd rather not come to your party.\"",
+    "\"Thanks for the invitation, but I'm helping my brother move; I'm sorry.\"",
+    "\"Moving is more important than you, right now, honestly or whatever, if you ask me.\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 2,
+   "u": "Bedanken, reden, spijt. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"No, I can't, to be honest, you know, obviously, right now.\"\"? Dan denk je dat dit beleefd is. Het is kortaf, en geeft geen reden.",
+    "Koos je \"\"I'd rather not come to your party.\"\"? Dan denk je dat dit beleefd is. Het is onaardig, en kwetsend.",
+    "Klopt: je bedankt, geeft de reden en zegt dat het je spijt.",
+    "Koos je \"\"Moving is more important than you, right now, honestly or whatever, if you ask me.\"\"? Dan denk je dat dit beleefd is. Het is beledigend, en past niet bij een vriendin."
+   ],
+   "uh": "Welk antwoord is het best?",
+   "ctx": "A classmate invites you to her birthday party on Saturday evening, but you have already promised to help your brother move house that day. You like her and want to decline politely without hurting her feelings."
+  },
+  {
+   "v": "Which reply is polite?",
+   "o": [
+    "\"No, to be honest, you know, obviously, right now.\"",
+    "\"No, thank you; it was delicious, but I'm full.\"",
+    "\"I don't like it.\"",
+    "\"Give it to someone else, right now, honestly or whatever.\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 2,
+   "u": "Nee, bedankt en een compliment. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"No, to be honest, you know, obviously, right now.\"\"? Dan denk je dat dit voldoende is. Het is kortaf en onbeleefd, en geeft geen reden.",
+    "Klopt: je bedankt, complimenteert en legt uit waarom je weigert.",
+    "Koos je \"\"I don't like it.\"\"? Dan denk je dat dit eerlijk en beleefd is. Het is een belediging voor de kok, en je zei dat het lekker was.",
+    "Koos je \"\"Give it to someone else, right now, honestly or whatever.\"\"? Dan denk je dat dit beleefd is. Het is bevelend, en onaardig."
+   ],
+   "uh": "Welk antwoord is beleefd?",
+   "ctx": "Your host offers you a second slice of cake after dinner. You are full, but the cake was delicious and you do not want to seem rude. The host looks at you with a friendly smile and waits for your answer."
+  },
+  {
+   "v": "Which question is best?",
+   "o": [
+    "\"Open the window, to be honest, you know, obviously!\"",
+    "\"I'm opening the window.\"",
+    "\"Window, please, quick, right now, honestly or whatever.\"",
+    "\"Excuse me, would you mind if I opened the window?\""
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 3,
+   "u": "Excuse me, would you mind. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"Open the window, to be honest, you know, obviously!\"\"? Dan denk je dat dit beleefd is. Het is een bevel, en niet geschikt voor een vreemde.",
+    "Koos je \"\"I'm opening the window.\"\"? Dan denk je dat dit beleefd is. Je vraagt niets, en je overvalt de ander.",
+    "Koos je \"\"Window, please, quick, right now, honestly or whatever.\"\"? Dan denk je dat dit beleefd is. Het is kortaf, en klinkt haastig.",
+    "Klopt: dit is een beleefde vraag aan een vreemde."
+   ],
+   "uh": "Welke vraag is het best?",
+   "ctx": "You want to ask a stranger on the train whether you can open the window. It is hot, the stranger sits next to the window and he is reading a newspaper. You do not know him, so you want to be polite."
+  },
+  {
+   "v": "Which sentence is suitable for your teacher?",
+   "o": [
+    "\"Would it be possible to hand in my essay a day later?\"",
+    "\"Can I get one more day, mate, to be honest, you know, obviously?\"",
+    "\"Gimme one more day.\"",
+    "\"Extra day, thanks, right now, honestly or whatever, if you ask me.\""
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 3,
+   "u": "Would it be possible = formeel. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: dit is beleefd en formeel, passend voor een docent.",
+    "Koos je \"\"Can I get one more day, mate, to be honest, you know, obviously?\"\"? Dan denk je dat dit past omdat het vriendelijk klinkt. Mate is informeel, en past niet bij een docent.",
+    "Koos je \"\"Gimme one more day.\"\"? Dan denk je dat dit past. Het is zeer informeel, en onbeleefd tegen een docent.",
+    "Koos je \"\"Extra day, thanks, right now, honestly or whatever, if you ask me.\"\"? Dan denk je dat dit past. Het is te kort, en mist een beleefde vraagvorm."
+   ],
+   "uh": "Welke zin past bij de docent?",
+   "ctx": "You must write a short e-mail to your teacher to ask for an extra day for your essay, because you were ill for two days. You also send a message to a friend about the same thing, and you want to choose the right register."
+  },
+  {
+   "v": "What do you say?",
+   "o": [
+    "\"Bad luck, to be honest, you know, obviously.\"",
+    "\"Lucky you.\"",
+    "\"Congratulations! That's fantastic news.\"",
+    "\"I'm sorry to hear that, right now, honestly.\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 4,
+   "u": "Congratulations. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"Bad luck, to be honest, you know, obviously.\"\"? Dan denk je dat dit past. Het zeg je bij pech, en niet bij succes.",
+    "Koos je \"\"Lucky you.\"\"? Dan denk je dat dit past. Het klinkt jaloers, en onderschat haar inspanning.",
+    "Klopt: je feliciteert haar en toont dat je blij voor haar bent.",
+    "Koos je \"\"I'm sorry to hear that, right now, honestly.\"\"? Dan denk je dat dit past. Het gebruik je bij slecht nieuws, en dit is goed nieuws."
+   ],
+   "uh": "Wat zeg je?",
+   "ctx": "Your friend tells you that she has passed her driving test on the first try, after weeks of practice and a lot of stress. She is very happy and shows you the certificate with a big smile on her face."
+  },
+  {
+   "v": "What do you say?",
+   "o": [
+    "\"Congratulations, to be honest, you know, obviously, right now!\"",
+    "\"I'm so sorry to hear that. Please accept my condolences.\"",
+    "\"That's great news.\"",
+    "\"Cheer up, it's not that bad, right now, honestly or whatever.\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 4,
+   "u": "I'm so sorry = medeleven. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"Congratulations, to be honest, you know, obviously, right now!\"\"? Dan denk je dat dit past. Het is een felicitatie, en past niet bij een overlijden.",
+    "Klopt: dit toont medeleven op een passende, beleefde manier.",
+    "Koos je \"\"That's great news.\"\"? Dan denk je dat dit past. Het is onbeleefd, en past niet bij verdriet.",
+    "Koos je \"\"Cheer up, it's not that bad, right now, honestly or whatever.\"\"? Dan denk je dat dit past. Het bagatelliseert zijn verdriet, en is niet respectvol."
+   ],
+   "uh": "Wat zeg je?",
+   "ctx": "A colleague tells you that his grandmother passed away last week. He looks tired and sad, and he speaks quietly. You do not know him very well, but you want to show that you care."
+  },
+  {
+   "v": "Which reply is the most appropriate?",
+   "o": [
+    "\"OK, bye, to be honest, you know, obviously, right now.\"",
+    "\"Cool, call me.\"",
+    "\"Fine, don't be late, right now, honestly or whatever, if you ask me.\"",
+    "\"Thank you for your time; I look forward to hearing from you.\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 3,
+   "u": "Formeel bedanken. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"OK, bye, to be honest, you know, obviously, right now.\"\"? Dan denk je dat dit voldoende is. Het is kortaf, en onprofessioneel.",
+    "Koos je \"\"Cool, call me.\"\"? Dan denk je dat dit past. Het is informeel, en bevelend.",
+    "Koos je \"\"Fine, don't be late, right now, honestly or whatever, if you ask me.\"\"? Dan denk je dat dit past. Het is brutaal, en past niet bij een sollicitatie.",
+    "Klopt: je bedankt en toont belangstelling op een formele manier."
+   ],
+   "uh": "Welk antwoord past?",
+   "ctx": "At the end of a job interview, the interviewer says: \"Thank you for coming in today; we will let you know our decision next week.\" You want to leave a good final impression and you are nervous but polite."
+  },
+  {
+   "v": "Which reply is the most appropriate?",
+   "o": [
+    "\"That's all right, thank you.\"",
+    "\"It's your fault.\"",
+    "\"I'll complain to the manager.\"",
+    "\"Whatever, I'm leaving.\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 1,
+   "u": "Excuus accepteren. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: je accepteert het excuus vriendelijk en bedankt.",
+    "Koos je \"\"It's your fault.\"\"? Dan denk je dat dit past. Het is onnodig scherp, en de fout was klein.",
+    "Koos je \"\"I'll complain to the manager.\"\"? Dan denk je dat dit past. Het is overdreven, en de ober bood al excuses aan.",
+    "Koos je \"\"Whatever, I'm leaving.\"\"? Dan denk je dat dit past. Het is overdreven, en past niet bij een kleine fout."
+   ],
+   "uh": "Welk antwoord past?",
+   "ctx": "A waiter brings you the wrong dish and apologises: \"I'm so sorry, I'll take that back right away.\" You are not angry, because the mistake is small and the restaurant is very busy this evening."
+  },
+  {
+   "v": "Which reply is best?",
+   "o": [
+    "\"Maybe, I don't know, to be honest, you know, obviously.\"",
+    "\"Sure, I will come, no problem.\"",
+    "\"Thank you, I'd love to; may I let you know next week?\"",
+    "\"No, too expensive, right now, honestly or whatever, if you ask me.\""
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 2,
+   "u": "Bedanken en bedenktijd vragen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"Maybe, I don't know, to be honest, you know, obviously.\"\"? Dan denk je dat dit past. Het is vaag, en bedankt niet.",
+    "Koos je \"\"Sure, I will come, no problem.\"\"? Dan denk je dat dit past. Je belooft iets dat je nog niet zeker weet, en later kan het tegenvallen.",
+    "Klopt: je bedankt, toont enthousiasme en vraagt om bedenktijd.",
+    "Koos je \"\"No, too expensive, right now, honestly or whatever, if you ask me.\"\"? Dan denk je dat dit past. Het is kortaf, en onbeleefd."
+   ],
+   "uh": "Welk antwoord is het best?",
+   "ctx": "Your English penfriend invites you to stay for a week in the summer. You would love to go, but you are not sure yet whether you can afford the trip, and you do not want to sound ungrateful or too sure."
+  },
+  {
+   "v": "Which reply is best?",
+   "o": [
+    "\"Who are you, to be honest, you know?\"",
+    "\"Nice to see you too! How are you?\"",
+    "\"I don't remember you.\"",
+    "\"Yes, so, right now, honestly or whatever?\""
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 0,
+   "u": "Groet beantwoorden. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"Who are you, to be honest, you know?\"\"? Dan denk je dat dit past. Het is onbeleefd, en je kent haar.",
+    "Klopt: je beantwoordt de groet en toont belangstelling.",
+    "Koos je \"\"I don't remember you.\"\"? Dan denk je dat dit past. Het is onaardig, en onwaar, want je kent haar.",
+    "Koos je \"\"Yes, so, right now, honestly or whatever?\"\"? Dan denk je dat dit past. Het is kortaf, en onbeleefd."
+   ],
+   "uh": "Welk antwoord past?",
+   "ctx": "You meet your friend's mother in a shop. You have met her only once before, a year ago. She smiles and says: \"Hello, nice to see you again!\" You remember her name, but you are a bit shy."
+  },
+  {
+   "v": "Which sentence is most suitable?",
+   "o": [
+    "\"What, to be honest, you know, obviously, right now?\"",
+    "\"Say that again.\"",
+    "\"Huh? No idea, right now, honestly or whatever, if you ask me.\"",
+    "\"I'm sorry, could you repeat the question, please?\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 3,
+   "u": "Could you repeat = beleefd. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"What, to be honest, you know, obviously, right now?\"\"? Dan denk je dat dit past. Het is kortaf, en onbeleefd tegen een schoolleider.",
+    "Koos je \"\"Say that again.\"\"? Dan denk je dat dit past. Het is een bevel, en niet beleefd.",
+    "Koos je \"\"Huh? No idea, right now, honestly or whatever, if you ask me.\"\"? Dan denk je dat dit past. Het is slordig, en klinkt onverschillig.",
+    "Klopt: dit is een beleefde, formele manier om om herhaling te vragen."
+   ],
+   "uh": "Welke zin past?",
+   "ctx": "You are speaking to the headteacher of your school and you did not understand her question, because she spoke quickly and used a difficult word. You want to ask politely whether she can say it again."
+  },
+  {
+   "v": "Which reply is best?",
+   "o": [
+    "\"I'm sorry to hear that. Is there anything I can do?\"",
+    "\"Well, you should have studied, to be honest, you know.\"",
+    "\"That's your problem.\"",
+    "\"Never mind, it's just an exam, right now, honestly or whatever.\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 4,
+   "u": "Medeleven en hulp. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: je toont medeleven en biedt daarnaast concrete hulp aan.",
+    "Koos je \"\"Well, you should have studied, to be honest, you know.\"\"? Dan denk je dat dit past. Het is verwijtend, en helpt haar niet.",
+    "Koos je \"\"That's your problem.\"\"? Dan denk je dat dit past. Het is onaardig, en toont geen medeleven.",
+    "Koos je \"\"Never mind, it's just an exam, right now, honestly or whatever.\"\"? Dan denk je dat dit past. Het bagatelliseert haar gevoel, en klinkt gevoelloos."
+   ],
+   "uh": "Welk antwoord is het best?",
+   "ctx": "Your best friend tells you that she failed an important exam and is feeling terrible. She looks close to tears and wants someone to listen to her. You want to support her in a kind way."
+  },
+  {
+   "v": "What do you say?",
+   "o": [
+    "\"It was only a little, to be honest, you know, obviously, right now.\"",
+    "\"Why were you standing there?\"",
+    "\"Oh no, I'm so sorry! Please let me pay for the cleaning.\"",
+    "\"That's not my problem, right now, honestly or whatever, if you ask me.\""
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 1,
+   "u": "Excuus en oplossing. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"It was only a little, to be honest, you know, obviously, right now.\"\"? Dan denk je dat dit past. Je bagatelliseert, en biedt geen excuus.",
+    "Koos je \"\"Why were you standing there?\"\"? Dan denk je dat dit past. Je geeft de ander de schuld, en dat is onbeleefd.",
+    "Klopt: je biedt excuses aan en een oplossing.",
+    "Koos je \"\"That's not my problem, right now, honestly or whatever, if you ask me.\"\"? Dan denk je dat dit past. Het is onaardig, en jij veroorzaakte het."
+   ],
+   "uh": "Wat zeg je?",
+   "ctx": "You accidentally spill coffee on a stranger's jacket in a cafe. The stranger looks surprised but not angry, and a few people nearby are watching. You feel embarrassed and want to put it right."
+  },
+  {
+   "v": "Which reply is polite and keeps the door open?",
+   "o": [
+    "\"No, I have to babysit, to be honest, you know, obviously.\"",
+    "\"I'd love to, but I have to babysit; maybe next time?\"",
+    "\"Football is boring.\"",
+    "\"Ask someone else, right now, honestly or whatever, if you ask me.\""
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 2,
+   "u": "Enthousiast, reden, volgende keer. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"No, I have to babysit, to be honest, you know, obviously.\"\"? Dan denk je dat dit past. Het is kortaf, en laat de deur niet open.",
+    "Klopt: je toont enthousiasme, geeft een reden en laat de deur open.",
+    "Koos je \"\"Football is boring.\"\"? Dan denk je dat dit past. Het is onwaar en onbeleefd, want je houdt van voetbal.",
+    "Koos je \"\"Ask someone else, right now, honestly or whatever, if you ask me.\"\"? Dan denk je dat dit past. Het is onaardig, en sluit de deur."
+   ],
+   "uh": "Welk antwoord past?",
+   "ctx": "Someone from your class asks if you want to join a football match after school. You like football, but you have to babysit your little sister that afternoon, and you would like to be asked again another time."
+  },
+  {
+   "v": "Which reply is best?",
+   "o": [
+    "\"OK, bye, to be honest, you know, obviously.\"",
+    "\"Finally over.\"",
+    "\"Yes, I know, right now, honestly or whatever.\"",
+    "\"Thank you, I had a great time. Goodbye!\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 0,
+   "u": "Bedanken en afscheid. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"OK, bye, to be honest, you know, obviously.\"\"? Dan denk je dat dit voldoende is. Het is kortaf, en bedankt niet.",
+    "Koos je \"\"Finally over.\"\"? Dan denk je dat dit past. Het klinkt opgelucht, en is onbeleefd.",
+    "Koos je \"\"Yes, I know, right now, honestly or whatever.\"\"? Dan denk je dat dit past. Het is arrogant, en bedankt niet.",
+    "Klopt: je bedankt, zegt dat je het fijn had en neemt afscheid."
+   ],
+   "uh": "Welk antwoord past?",
+   "ctx": "You are leaving a summer camp after two weeks. One of the leaders shakes your hand and says: \"It was a pleasure having you here.\" The other children are waiting at the bus and you want to leave a friendly impression."
+  },
+  {
+   "v": "Which reply is best?",
+   "o": [
+    "\"No, thank you; I'm driving.\"",
+    "\"No!\"",
+    "\"I'm not going to drink with you.\"",
+    "\"Do I look like I want some?\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 2,
+   "u": "Nee, bedankt en reden. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: je bedankt en geeft kort de reden voor je weigering.",
+    "Koos je \"\"No!\"\"? Dan denk je dat dit past. Het is te scherp, en onbeleefd.",
+    "Koos je \"\"I'm not going to drink with you.\"\"? Dan denk je dat dit past. Het is beledigend, en klinkt als een afwijzing van de persoon.",
+    "Koos je \"\"Do I look like I want some?\"\"? Dan denk je dat dit past. Het is sarcastisch, en onbeleefd."
+   ],
+   "uh": "Welk antwoord past?",
+   "ctx": "At a formal dinner, your neighbour offers you more wine, but you are driving home later. You want to decline in a polite way and explain it briefly without making a big fuss in front of other guests."
+  }
+ ],
+ "oe": [
+  {
+   "bron": "Examenstijl",
+   "ctx": "You arrive at a business meeting and meet your client Mr Evans for the first time. He holds out his hand and smiles. You want to make a good impression, and the meeting is in a formal office with other directors watching.",
+   "v": "Write what you say as a greeting and name the register.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Een formele groet, zoals Good morning, Mr Evans (1p). Pleased to meet you of een gelijkwaardige zin (1p). Het register is formeel (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "A classmate invites you to her birthday party on Saturday evening, but you have already promised to help your brother move house that day. You like her and want to decline politely.",
+   "v": "Write a polite reply with thanks, a reason and an apology.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Een bedankje, zoals Thanks for the invitation (1p). De reden: je helpt je broer verhuizen (1p). Een excuus, zoals I'm sorry (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "You are late for a meeting with a friend because of a traffic jam. He has waited for twenty minutes and looks a little annoyed when you finally arrive, out of breath, a few minutes after four o'clock in the afternoon.",
+   "v": "Write what you say first.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Een excuus, zoals I'm really sorry I'm late (1p). Een korte reden: het verkeer (1p). Een vriendelijke toon (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "A colleague tells you that his grandmother passed away last week. He looks tired and sad, and he speaks quietly while looking at the floor. You do not know him very well, but you want to show that you care.",
+   "v": "Write what you say and explain why a formal reaction fits.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Een medelevende zin, zoals I'm so sorry to hear that (1p). Condoleances of een aanbod om te helpen (1p). Het is formeel omdat je hem niet goed kent (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "You want to ask a stranger on the train whether you can open the window. It is hot, the stranger sits next to the window and he is reading a newspaper. You do not know him, so you want to be polite.",
+   "v": "Write a polite question and explain why it is polite.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Excuse me, would you mind if I opened the window (1p). Een beleefdheidsvorm als would you mind (1p). Het is geen bevel, dus beleefd tegen een vreemde (1p)."
+  }
+ ]
+}
