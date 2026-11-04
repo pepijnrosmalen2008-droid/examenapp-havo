@@ -1,0 +1,682 @@
+{
+ "id": "C6",
+ "lo": "en.C.6",
+ "gs": 2,
+ "naam": "Strategieën om een gesprek gaande te houden",
+ "beschrijving": "Je leert in het Engels een gesprek gaande te houden met open vragen, luisterreacties en doorvragen, tijd te winnen als je moet nadenken, een misverstand te herstellen en een gesprek beleefd van onderwerp te laten wisselen of af te ronden.",
+ "ceStatus": "SE",
+ "binas": "",
+ "val": "",
+ "onderwerpen": [
+  "Open vragen stellen",
+  "Reageren en doorvragen",
+  "Tijd winnen",
+  "Misverstanden herstellen",
+  "Van onderwerp wisselen en afronden"
+ ],
+ "sam": "Open vragen met what, how of why houden een gesprek gaande, gesloten vragen die je met ja of nee beantwoordt laten het stilvallen. Met een luisterreactie (Really?) toon je interesse en met doorvragen (Could you tell me more?) nodig je uit tot meer; samenvatten laat zien dat je het begrepen hebt. Heb je tijd nodig, dan win je tijd met een aarzelwoord of een zin als Let me think. Bij een misverstand ga je herformuleren (What I meant was ...). Je kunt van onderwerp wisselen met By the way, en afronden met Anyway, ... gevolgd door een beleefde reden.",
+ "begrippen": [
+  {
+   "t": "Open vraag",
+   "d": "Een vraag met what, how of why die om een eigen verhaal vraagt."
+  },
+  {
+   "t": "Gesloten vraag",
+   "d": "Een vraag die je met ja of nee kunt beantwoorden."
+  },
+  {
+   "t": "Doorvragen",
+   "d": "Een vervolgvraag stellen, zoals Could you tell me more?"
+  },
+  {
+   "t": "Luisterreactie",
+   "d": "Een korte reactie die toont dat je luistert, zoals Really?"
+  },
+  {
+   "t": "Tijd winnen",
+   "d": "Een zin zeggen om na te denken, zoals Let me think."
+  },
+  {
+   "t": "Aarzelwoord",
+   "d": "Een woord als well of hmm dat je tijd geeft."
+  },
+  {
+   "t": "Herformuleren",
+   "d": "Je bedoeling anders zeggen, zoals What I meant was ..."
+  },
+  {
+   "t": "Misverstand",
+   "d": "Iemand begrijpt iets anders dan je bedoelde."
+  },
+  {
+   "t": "Onderwerp wisselen",
+   "d": "Naar een ander onderwerp gaan, zoals By the way, ..."
+  },
+  {
+   "t": "Afronden",
+   "d": "Een gesprek beleefd beëindigen, zoals I have to go now."
+  },
+  {
+   "t": "Gesprek gaande houden",
+   "d": "Zorgen dat het gesprek niet stilvalt."
+  },
+  {
+   "t": "Samenvatten",
+   "d": "Terugzeggen wat de ander zei, zoals So what you mean is ..."
+  }
+ ],
+ "sv": [
+  {
+   "v": "Which question is an open question?",
+   "o": [
+    "\"Do you like the new teacher?\"",
+    "\"What do you think of the new teacher?\"",
+    "\"Is the new teacher tall?\"",
+    "\"Have you met the new teacher, I think, I suppose?\""
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 0,
+   "u": "Open vraag = what, how, why. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"Do you like the new teacher?\"\"? Dan denk je dat vragen naar een mening altijd open zijn. Het begint met do you like, dus een kort ja of nee volstaat.",
+    "Klopt: een vraag met what do you think nodigt uit tot een uitgebreid antwoord, dus is hij open.",
+    "Koos je \"\"Is the new teacher tall?\"\"? Dan denk je dat een vraag over een persoon open is. Is the teacher tall vraagt naar één eigenschap, en het antwoord is één woord.",
+    "Koos je \"\"Have you met the new teacher, I think, I suppose?\"\"? Dan denk je dat een vraag over een ervaring open is. Have you met begint met een werkwoord, en vraagt niet om een verhaal."
+   ],
+   "uh": "Welke vraag is open?"
+  },
+  {
+   "v": "Which question can be answered with just yes or no?",
+   "o": [
+    "\"What kind of pizza do you like?\"",
+    "\"Why do you like pizza?\"",
+    "\"How often do you eat pizza?\"",
+    "\"Do you like pizza?\""
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 0,
+   "u": "Gesloten vraag = ja of nee. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"What kind of pizza do you like?\"\"? Dan denk je dat dit een gesloten vraag is omdat het over pizza gaat. What kind vraagt om een beschrijving, dus hij is open.",
+    "Koos je \"\"Why do you like pizza?\"\"? Dan denk je dat why een kort antwoord geeft. Je moet een reden geven, dus de vraag is open.",
+    "Koos je \"\"How often do you eat pizza?\"\"? Dan denk je dat how often met een getal te beantwoorden is. Je geeft een frequentie of verhaal, dus de vraag is open.",
+    "Klopt: do you like begint met een werkwoord en vraagt om ja of nee, dus het is een gesloten vraag."
+   ],
+   "uh": "Welke vraag beantwoord je met ja of nee?"
+  },
+  {
+   "v": "What can you say to show that you are listening?",
+   "o": [
+    "\"Really? That sounds interesting.\"",
+    "\"Hmm... I'm checking my phone, I suppose.\"",
+    "\"Yes, yes, yes, whatever.\"",
+    "\"Sorry, what was the question?\""
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 1,
+   "u": "Luisterreactie = interesse tonen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: really en that sounds interesting tonen interesse, dat is een luisterreactie.",
+    "Koos je \"\"Hmm... I'm checking my phone, I suppose.\"\"? Dan denk je dat dit luisteren toont. Je kijkt naar je telefoon, dus je luistert niet.",
+    "Koos je \"\"Yes, yes, yes, whatever.\"\"? Dan denk je dat herhalen van yes interesse toont. Het klinkt onverschillig, en reageert niet op de inhoud.",
+    "Koos je \"\"Sorry, what was the question?\"\"? Dan denk je dat dit een luisterreactie is. Het toont dat je niet hebt opgelet, dus het is geen reactie."
+   ],
+   "uh": "Wat zeg je om te laten zien dat je luistert?"
+  },
+  {
+   "v": "Which follow-up question invites the speaker to say more?",
+   "o": [
+    "\"Is that all?\"",
+    "\"Are you sure?\"",
+    "\"Could you tell me more about that?\"",
+    "\"Okay, next topic, you know, I think.\""
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 1,
+   "u": "Tell me more = doorvragen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"Is that all?\"\"? Dan denk je dat dit uitnodigt tot meer. Het klinkt kortaf, en stopt het verhaal eerder.",
+    "Koos je \"\"Are you sure?\"\"? Dan denk je dat dit doorvragen is. Het twijfelt aan de spreker, en nodigt niet uit tot meer.",
+    "Klopt: could you tell me more nodigt de spreker uit om meer te vertellen, dat is doorvragen.",
+    "Koos je \"\"Okay, next topic, you know, I think.\"\"? Dan denk je dat dit het gesprek gaande houdt. Je kapt het onderwerp af, en toont geen interesse."
+   ],
+   "uh": "Welke vraag nodigt uit tot meer?"
+  },
+  {
+   "v": "Which phrase gives you time to think?",
+   "o": [
+    "\"No comment, bye.\"",
+    "\"Let me think for a moment.\"",
+    "\"I don't know. Goodbye, really.\"",
+    "\"Ask someone else.\""
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 2,
+   "u": "Let me think = tijd winnen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"No comment, bye.\"\"? Dan denk je dat dit tijd wint. Je weigert te antwoorden, en beëindigt het gesprek.",
+    "Klopt: let me think for a moment wint tijd en laat de ander weten dat je antwoordt.",
+    "Koos je \"\"I don't know. Goodbye, really.\"\"? Dan denk je dat dit tijd wint. Het geeft op, en beëindigt het gesprek.",
+    "Koos je \"\"Ask someone else.\"\"? Dan denk je dat dit tijd wint. Je schuift de vraag door, en geeft zelf geen antwoord."
+   ],
+   "uh": "Welke zin geeft je denktijd?"
+  },
+  {
+   "v": "What do you say when someone has misunderstood you?",
+   "o": [
+    "\"You obviously don't listen.\"",
+    "\"Never mind, forget it.\"",
+    "\"That's not what I said, you never listen, I think!\"",
+    "\"Sorry, what I meant was that I'm busy on Friday.\""
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 3,
+   "u": "What I meant was = herformuleren. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"You obviously don't listen.\"\"? Dan denk je dat een verwijt het misverstand oplost. Het valt de ander aan, en verklaart niets.",
+    "Koos je \"\"Never mind, forget it.\"\"? Dan denk je dat opgeven een oplossing is. Het misverstand blijft bestaan, en de ander begrijpt je nog niet.",
+    "Koos je \"\"That's not what I said, you never listen, I think!\"\"? Dan denk je dat uitvallen helpt. Het is een aanval, en verheldert niets.",
+    "Klopt: what I meant was herformuleert je boodschap en klinkt beleefd, dat herstelt het misverstand."
+   ],
+   "uh": "Wat zeg je bij een misverstand?"
+  },
+  {
+   "v": "Which sentence ends a conversation politely?",
+   "o": [
+    "\"It was nice talking to you, but I have to go.\"",
+    "\"Okay, bye, I'm bored.\"",
+    "\"Stop talking, I'm leaving, to be honest, you know.\"",
+    "\"Whatever. Goodbye.\""
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 4,
+   "u": "Beleefd afronden met reden. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: it was nice talking to you is vriendelijk en but I have to go geeft een reden om af te ronden.",
+    "Koos je \"\"Okay, bye, I'm bored.\"\"? Dan denk je dat eerlijk zijn betekent dat je dit mag zeggen. Het is onbeleefd, en kwetst de ander.",
+    "Koos je \"\"Stop talking, I'm leaving, to be honest, you know.\"\"? Dan denk je dat een duidelijk bevel netjes is. Het is een bevel, en klinkt boos.",
+    "Koos je \"\"Whatever. Goodbye.\"\"? Dan denk je dat kort afscheid nemen genoeg is. Het klinkt onverschillig, en geeft geen reden."
+   ],
+   "uh": "Welke zin sluit beleefd af?"
+  },
+  {
+   "v": "Which opening question is best?",
+   "o": [
+    "\"Are you alone?\"",
+    "\"Do you like parties, I suppose, really?\"",
+    "\"What brings you to this party?\"",
+    "\"Is this your drink?\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 0,
+   "u": "Open vraag als opener. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"Are you alone?\"\"? Dan denk je dat dit een goede opening is. Het is een ja/nee-vraag, en kan ongemakkelijk klinken.",
+    "Koos je \"\"Do you like parties, I suppose, really?\"\"? Dan denk je dat dit een open vraag is. Je kunt ja of nee zeggen, en het gesprek stokt.",
+    "Klopt: what brings you is een open vraag en nodigt uit tot een persoonlijk antwoord.",
+    "Koos je \"\"Is this your drink?\"\"? Dan denk je dat dit een gespreksopener is. Het is een ja/nee-vraag, en geeft geen onderwerp."
+   ],
+   "uh": "Welke openingsvraag is het best?",
+   "ctx": "You are at a party where you only know the host. You see a girl standing alone and you want to start a conversation with her, and you want her to talk for more than one word."
+  },
+  {
+   "v": "Which question will help most?",
+   "o": [
+    "\"Is your home town nice, you know, I think, I suppose?\"",
+    "\"What is the nicest thing about your home town?\"",
+    "\"Is it big?\"",
+    "\"Do you miss it?\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 0,
+   "u": "Open vraag bij een verlegen gesprekspartner. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"Is your home town nice, you know, I think, I suppose?\"\"? Dan denk je dat dit haar aan het praten zet. Ze antwoordt met ja, en het gesprek stopt.",
+    "Klopt: what is the nicest thing is een open vraag die om een uitleg of verhaal vraagt.",
+    "Koos je \"\"Is it big?\"\"? Dan denk je dat dit een goede vraag is. Het is een ja/nee-vraag, en levert weinig op.",
+    "Koos je \"\"Do you miss it?\"\"? Dan denk je dat deze vraag een verhaal oplevert. Je kunt met ja of nee antwoorden, en dat doet ze waarschijnlijk."
+   ],
+   "uh": "Welke vraag helpt het meest?",
+   "ctx": "Your exchange student is very shy and answers your questions with just \"yes\" or \"no\". You want to get her talking about her home town in her own words."
+  },
+  {
+   "v": "What do you say?",
+   "o": [
+    "\"Oh. Right.\"",
+    "\"I did that too, and mine was higher, really, to be honest.\"",
+    "\"Mountains are boring.\"",
+    "\"Wow, how did you feel when you reached the top?\""
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 1,
+   "u": "Interesse tonen + doorvragen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"Oh. Right.\"\"? Dan denk je dat een korte reactie interesse toont. Het klinkt onverschillig, en nodigt niet uit tot meer.",
+    "Koos je \"\"I did that too, and mine was higher, really, to be honest.\"\"? Dan denk je dat jouw verhaal interesse toont. Je neemt het gesprek over, in plaats van door te vragen.",
+    "Koos je \"\"Mountains are boring.\"\"? Dan denk je dat een eigen mening het gesprek gaande houdt. Je kapt haar verhaal af, en kwetst haar.",
+    "Klopt: wow toont interesse en how did you feel is een open vervolgvraag."
+   ],
+   "uh": "Wat zeg je?",
+   "ctx": "Your friend says: \"Last summer I climbed a mountain in Austria.\" You want to show interest and encourage her to tell you more about the trip."
+  },
+  {
+   "v": "Which reaction invites her to continue?",
+   "o": [
+    "\"That sounds hard. What happened?\"",
+    "\"Don't be silly, everybody feels lonely.\"",
+    "\"Well, that's life.\"",
+    "\"Can we talk about something else?\""
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 1,
+   "u": "Begrip tonen + open vraag. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: that sounds hard toont begrip en what happened nodigt haar uit om verder te vertellen.",
+    "Koos je \"\"Don't be silly, everybody feels lonely.\"\"? Dan denk je dat haar gevoel kleiner maken helpt. Zo neem je haar niet serieus, en stopt ze met praten.",
+    "Koos je \"\"Well, that's life.\"\"? Dan denk je dat een wijsheid troost. Het klinkt onverschillig, en nodigt niet uit tot meer.",
+    "Koos je \"\"Can we talk about something else?\"\"? Dan denk je dat een ander onderwerp helpt. Je ontwijkt haar probleem, en laat haar alleen."
+   ],
+   "uh": "Welke reactie nodigt haar uit?",
+   "ctx": "A classmate tells you that she is thinking of changing schools because she feels lonely at the moment. She sounds sad and hesitant, and then she stops talking."
+  },
+  {
+   "v": "What do you say?",
+   "o": [
+    "\"I have no idea, so I'm not going to answer, to be honest, you know.\"",
+    "\"Hmm... hmm... hmm... hmm...\"",
+    "\"That's an interesting question; let me think for a moment.\"",
+    "\"Next question, please.\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 2,
+   "u": "Tijd winnen met een zin. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"I have no idea, so I'm not going to answer, to be honest, you know.\"\"? Dan denk je dat eerlijk zijn betekent dat je mag opgeven. Je geeft geen antwoord, en verliest punten.",
+    "Koos je \"\"Hmm... hmm... hmm... hmm...\"\"? Dan denk je dat aarzelwoorden genoeg zijn. Je zegt niets zinnigs, en de stilte blijft.",
+    "Klopt: je prijst de vraag en zegt dat je even nadenkt, dat wint tijd en blijft beleefd.",
+    "Koos je \"\"Next question, please.\"\"? Dan denk je dat je een vraag mag overslaan. Je ontwijkt de vraag, en de examinator geeft geen punten."
+   ],
+   "uh": "Wat zeg je?",
+   "ctx": "The examiner asks you: \"What would you change about your town?\" You have never thought about it and need a moment before you answer, but you do not want to stay silent."
+  },
+  {
+   "v": "Which strategy is best?",
+   "o": [
+    "\"Switch to Dutch for a moment.\"",
+    "\"Say 'Well, how can I put it?' while you think.\"",
+    "\"Say nothing until the word comes, I suppose, really.\"",
+    "\"Say 'Skip' and walk away.\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 2,
+   "u": "Aarzelzin = tijd winnen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"Switch to Dutch for a moment.\"\"? Dan denk je dat Nederlands een oplossing is. Het hoort niet bij het gesprek, en je partner begrijpt het niet.",
+    "Klopt: well, how can I put it is een aarzelzin die tijd wint en in het Engels blijft.",
+    "Koos je \"\"Say nothing until the word comes, I suppose, really.\"\"? Dan denk je dat zwijgen netjes is. Je maakt de stilte lang, en het gesprek stokt.",
+    "Koos je \"\"Say 'Skip' and walk away.\"\"? Dan denk je dat weglopen een strategie is. Je beëindigt het gesprek, en dat was niet de bedoeling."
+   ],
+   "uh": "Welke strategie is het best?",
+   "ctx": "You are in a conversation in English and you are looking for a word. You want to avoid a long silence, but you also want to stay in English with your conversation partner."
+  },
+  {
+   "v": "What do you say?",
+   "o": [
+    "\"Yes, that's exactly what I mean, you know, I think, I suppose.\"",
+    "\"You always misunderstand me.\"",
+    "\"Whatever you think.\"",
+    "\"No, what I meant was that I'd love to come, but I have a test.\""
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 3,
+   "u": "What I meant was ... Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"Yes, that's exactly what I mean, you know, I think, I suppose.\"\"? Dan denk je dat instemmen het misverstand oplost. Je bevestigt het misverstand, terwijl je het wilde herstellen.",
+    "Koos je \"\"You always misunderstand me.\"\"? Dan denk je dat een verwijt het herstelt. Je valt haar aan, en je legt niets uit.",
+    "Koos je \"\"Whatever you think.\"\"? Dan denk je dat onverschilligheid het oplost. Het misverstand blijft, en je klinkt boos.",
+    "Klopt: what I meant was herformuleert je boodschap en laat zien dat je wel wilt komen."
+   ],
+   "uh": "Wat zeg je?",
+   "ctx": "You told a friend, \"I can't come on Friday because I have a test.\" She replies, \"Oh, so you don't want to come to my party.\" You did not mean that at all and you want to repair this."
+  },
+  {
+   "v": "Which reply is best?",
+   "o": [
+    "\"Sorry, let me put it differently: I'd like us to share the work.\"",
+    "\"Yes, exactly, it's your job.\"",
+    "\"That's a ridiculous thing to say.\"",
+    "\"I'm not going to explain it again, really, to be honest, you know.\""
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 3,
+   "u": "Let me put it differently. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: let me put it differently herformuleert het en I'd like us to share verklaart je echte bedoeling.",
+    "Koos je \"\"Yes, exactly, it's your job.\"\"? Dan denk je dat bevestigen werkt. Je versterkt het misverstand, en maakt hem boos.",
+    "Koos je \"\"That's a ridiculous thing to say.\"\"? Dan denk je dat een scherpe reactie helpt. Je valt hem aan, en verklaart je bedoeling niet.",
+    "Koos je \"\"I'm not going to explain it again, really, to be honest, you know.\"\"? Dan denk je dat weigeren verstandig is. Je laat het misverstand liggen, en het groepswerk stokt."
+   ],
+   "uh": "Welke reactie is het best?",
+   "ctx": "In a group project a classmate says \"So you want me to do all the work?\" after you asked him to write the report. You only wanted to share the tasks, and you want to explain this politely."
+  },
+  {
+   "v": "What do you say?",
+   "o": [
+    "\"Shut up and look out of the window, I think, I suppose, really.\"",
+    "\"This conversation is boring.\"",
+    "\"By the way, did you see the weather forecast for the weekend?\"",
+    "\"Let's never talk again.\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 4,
+   "u": "By the way = onderwerp wisselen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"Shut up and look out of the window, I think, I suppose, really.\"\"? Dan denk je dat een bevel een onderwerp wisselt. Het is onbeleefd, en beëindigt het gesprek.",
+    "Koos je \"\"This conversation is boring.\"\"? Dan denk je dat eerlijk zijn goed is. Het kwetst haar, en wisselt niet van onderwerp.",
+    "Klopt: by the way introduceert vriendelijk een ander onderwerp en de vraag houdt het gesprek gaande.",
+    "Koos je \"\"Let's never talk again.\"\"? Dan denk je dat dit het onderwerp wisselt. Het is een afwijzing, en dat is onbeleefd."
+   ],
+   "uh": "Wat zeg je?",
+   "ctx": "You are talking to your neighbour on the bus and the conversation has become a bit awkward. You would like to talk about something lighter, such as the weather, without being rude."
+  },
+  {
+   "v": "Which sentence is best?",
+   "o": [
+    "\"I'm hanging up, bye.\"",
+    "\"I'm sorry, I have to go now; dinner is ready. Let's talk tomorrow.\"",
+    "\"Dinner is ready, so stop talking, to be honest, you know, I think.\"",
+    "\"I don't want to talk anymore.\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 4,
+   "u": "Sorry + reden + afspraak. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"I'm hanging up, bye.\"\"? Dan denk je dat kort en duidelijk beleefd is. Het geeft geen reden, en klinkt abrupt.",
+    "Klopt: je zegt sorry, geeft een reden en maakt een nieuwe afspraak, dat is een beleefde afsluiting.",
+    "Koos je \"\"Dinner is ready, so stop talking, to be honest, you know, I think.\"\"? Dan denk je dat een reden een bevel mag zijn. Het is een bevel, en klinkt onbeleefd.",
+    "Koos je \"\"I don't want to talk anymore.\"\"? Dan denk je dat eerlijk zijn genoeg is. Het is onaardig, en geeft geen echte reden."
+   ],
+   "uh": "Welke zin is het best?",
+   "ctx": "You are on the phone with a friend, but you have to go because dinner is ready and your family is waiting for you. You do not want to hang up in a rude way."
+  },
+  {
+   "v": "What is the problem with A's questions?",
+   "o": [
+    "\"they are too long\"",
+    "\"they are rude\"",
+    "\"they are about the wrong topic, I suppose, really, to be honest\"",
+    "\"they are closed questions that invite short answers\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 0,
+   "u": "Gesloten vragen stoppen gesprekken. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"they are too long\"\"? Dan denk je dat de lengte het probleem is. De vragen zijn juist kort, en dat is het probleem niet.",
+    "Koos je \"\"they are rude\"\"? Dan denk je dat A onbeleefd is. De toon is vriendelijk, maar de vraagvorm is gesloten.",
+    "Koos je \"\"they are about the wrong topic, I suppose, really, to be honest\"\"? Dan denk je dat het onderwerp niet past. Een weekend is een prima onderwerp, maar de vragen zijn te kort.",
+    "Klopt: A stelt alleen vragen die met ja, nee of een kort woord te beantwoorden zijn."
+   ],
+   "uh": "Wat is het probleem met de vragen?",
+   "ctx": "Read the conversation. A: \"How was your weekend?\" B: \"Fine.\" A: \"Did you do anything nice?\" B: \"Not really.\" A: \"Was the weather good?\" B: \"Yes.\" The conversation stops after a few lines."
+  },
+  {
+   "v": "Why does B give such a long answer?",
+   "o": [
+    "\"because A asked an open question\"",
+    "\"because B is bored\"",
+    "\"because A asked for the time, you know\"",
+    "\"because B did not hear A\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 0,
+   "u": "Open vraag = lang antwoord. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: what was the best part vraagt om een beschrijving, dus B vertelt uitgebreid.",
+    "Koos je \"\"because B is bored\"\"? Dan denk je dat B een lang antwoord geeft omdat hij zich verveelt. Hij klinkt juist enthousiast, en dat is geen verveling.",
+    "Koos je \"\"because A asked for the time, you know\"\"? Dan denk je dat A naar de tijd vroeg. Er staat een vraag over de trip, dus dat klopt niet.",
+    "Koos je \"\"because B did not hear A\"\"? Dan denk je dat B niet luisterde. Hij antwoordt precies op de vraag, dus hij heeft A gehoord."
+   ],
+   "uh": "Waarom geeft B zo'n lang antwoord?",
+   "ctx": "Read the conversation. A: \"What was the best part of your trip?\" B: \"The food. We ate in tiny restaurants every night and I tried so many things I'd never had before!\" A: \"Like what?\""
+  },
+  {
+   "v": "What is B doing wrong?",
+   "o": [
+    "\"B talks too much\"",
+    "\"B interrupts A\"",
+    "\"B shows no interest and asks no follow-up questions\"",
+    "\"B changes the subject, really, to be honest, you know\""
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 1,
+   "u": "Doorvragen toont interesse. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"B talks too much\"\"? Dan denk je dat B te veel praat. B zegt juist erg weinig, en dat is het probleem.",
+    "Koos je \"\"B interrupts A\"\"? Dan denk je dat B A onderbreekt. B wacht netjes, maar toont geen interesse.",
+    "Klopt: B geeft alleen korte reacties en vraagt niet door, dus A stopt met praten.",
+    "Koos je \"\"B changes the subject, really, to be honest, you know\"\"? Dan denk je dat B een ander onderwerp kiest. B blijft bij het onderwerp, maar reageert nauwelijks."
+   ],
+   "uh": "Wat doet B verkeerd?",
+   "ctx": "Read the conversation. A: \"I got a new job.\" B: \"Oh. OK.\" A: \"It's in a bakery.\" B: \"Right.\" A: \"I start next week.\" B: \"Hm.\" A sighs and stops talking."
+  },
+  {
+   "v": "What does B do?",
+   "o": [
+    "\"B changes the subject\"",
+    "\"B shows understanding and asks a follow-up question\"",
+    "\"B laughs at A\"",
+    "\"B gives advice without listening, I think, I suppose, really\""
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 1,
+   "u": "Begrip + vervolgvraag. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"B changes the subject\"\"? Dan denk je dat B een nieuw onderwerp kiest. B blijft bij het examen, dus dat klopt niet.",
+    "Klopt: I can imagine toont begrip en which subject worries you most is een vervolgvraag.",
+    "Koos je \"\"B laughs at A\"\"? Dan denk je dat B A uitlacht. Er staat niets spottends, B toont juist begrip.",
+    "Koos je \"\"B gives advice without listening, I think, I suppose, really\"\"? Dan denk je dat B adviezen geeft. B stelt alleen vragen, en luistert eerst."
+   ],
+   "uh": "Wat doet B?",
+   "ctx": "Read the conversation. A: \"I'm worried about my exam.\" B: \"I can imagine. Which subject worries you most?\" A: \"Maths, I think.\" B: \"What makes it difficult for you?\""
+  },
+  {
+   "v": "What does B do before answering?",
+   "o": [
+    "\"B refuses to answer\"",
+    "\"B asks A another question, to be honest\"",
+    "\"B changes the subject\"",
+    "\"B gains time with a hesitation phrase\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 2,
+   "u": "Aarzelzin = tijd winnen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"B refuses to answer\"\"? Dan denk je dat B niet wil antwoorden. B geeft uiteindelijk een antwoord, dus dat klopt niet.",
+    "Koos je \"\"B asks A another question, to be honest\"\"? Dan denk je dat B een vraag terugstelt. Er staat geen vraag van B, dus dat klopt niet.",
+    "Koos je \"\"B changes the subject\"\"? Dan denk je dat B een ander onderwerp kiest. B blijft bij de vraag, en antwoordt daarna.",
+    "Klopt: that's a good question en let me think zijn aarzelwoorden die tijd winnen."
+   ],
+   "uh": "Wat doet B voor het antwoord?",
+   "ctx": "Read the conversation. A: \"Where would you like to live in ten years?\" B: \"Hmm, that's a good question. Well, let me think ... probably somewhere near the sea.\" A smiles and waits patiently."
+  },
+  {
+   "v": "How does B repair the misunderstanding?",
+   "o": [
+    "\"by restating what he actually said\"",
+    "\"by denying that he said anything at all\"",
+    "\"by apologising and agreeing with A\"",
+    "\"by walking away from the conversation\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 3,
+   "u": "Herformuleren herstelt misverstand. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: B zegt wat hij werkelijk zei en biedt uitleg aan, dat herstelt het misverstand.",
+    "Koos je \"\"by denying that he said anything at all\"\"? Dan denk je dat ontkennen het herstelt. B zegt wel iets, en legt het daarna uit.",
+    "Koos je \"\"by apologising and agreeing with A\"\"? Dan denk je dat B alles toegeeft. B corrigeert juist wat hij zei, dus dat klopt niet.",
+    "Koos je \"\"by walking away from the conversation\"\"? Dan denk je dat B het gesprek verlaat. B blijft praten, en wil uitleggen."
+   ],
+   "uh": "Hoe herstelt B het misverstand?",
+   "ctx": "Read the conversation. A: \"You said you'd call me!\" B: \"I didn't say that. I said I might call you if I had time. Let me explain what happened...\" A listens and calms down."
+  },
+  {
+   "v": "What is the function of 'Anyway' here?",
+   "o": [
+    "\"it asks a question\"",
+    "\"it starts a new topic\"",
+    "\"it signals that the speaker wants to end the conversation\"",
+    "\"it shows that the speaker disagrees, you know, I think, I suppose\""
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 4,
+   "u": "Anyway = afronden. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"it asks a question\"\"? Dan denk je dat anyway een vraag inleidt. Er volgt geen vraag, maar een afscheid.",
+    "Koos je \"\"it starts a new topic\"\"? Dan denk je dat anyway een nieuw onderwerp opent. Hier volgt een afscheid, dus geen nieuw onderwerp.",
+    "Klopt: anyway markeert een overgang naar afronden, gevolgd door I should get going.",
+    "Koos je \"\"it shows that the speaker disagrees, you know, I think, I suppose\"\"? Dan denk je dat anyway oneens zijn betekent. Het toont geen tegenspraak, maar een afronding."
+   ],
+   "uh": "Wat doet anyway?",
+   "ctx": "Read the closing of a conversation: \"Anyway, I should get going. It was lovely to see you, and let's meet again soon!\" The speaker picks up a bag and smiles at the other person."
+  },
+  {
+   "v": "Which opening shows good time-winning technique and starts your answer?",
+   "o": [
+    "\"Yes.\"",
+    "\"That's a difficult question. I think, on the whole, it can be both good and bad.\"",
+    "\"I don't know and I don't care, really, to be honest, you know.\"",
+    "\"Let me not answer that.\""
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 2,
+   "u": "Tijd winnen en antwoord starten. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"Yes.\"\"? Dan denk je dat een kort antwoord genoeg is. Het geeft geen argument, en wint geen tijd.",
+    "Klopt: that's a difficult question wint tijd en on the whole it can be both opent je antwoord.",
+    "Koos je \"\"I don't know and I don't care, really, to be honest, you know.\"\"? Dan denk je dat eerlijk zijn volstaat. Het is onbeleefd, en levert geen punten.",
+    "Koos je \"\"Let me not answer that.\"\"? Dan denk je dat je een vraag mag weigeren. Je geeft geen antwoord, en verliest punten."
+   ],
+   "uh": "Welke opening is het best?",
+   "ctx": "During a speaking test you hear: \"Do you think social media is good for young people?\" You think you know your opinion, but you need a moment to organise your thoughts before you start."
+  },
+  {
+   "v": "What does B do?",
+   "o": [
+    "\"B agrees that A is lazy, I think, I suppose, really\"",
+    "\"B refuses to explain\"",
+    "\"B changes the subject\"",
+    "\"B corrects the misunderstanding and explains what he meant\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 3,
+   "u": "Herstel met I meant that. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"B agrees that A is lazy, I think, I suppose, really\"\"? Dan denk je dat B A lui vindt. B zegt juist dat dat niet zijn bedoeling was, dus dat klopt niet.",
+    "Koos je \"\"B refuses to explain\"\"? Dan denk je dat B niets uitlegt. B legt zijn bedoeling uit, dus dat klopt niet.",
+    "Koos je \"\"B changes the subject\"\"? Dan denk je dat B een nieuw onderwerp begint. B blijft bij het misverstand, en legt het uit.",
+    "Klopt: that's not what I meant en I meant that verklaren de echte bedoeling van B."
+   ],
+   "uh": "Wat doet B?",
+   "ctx": "Read the conversation. A: \"So you think I'm lazy?\" B: \"No, no, that's not what I meant. I meant that you seem tired lately, and I wanted to ask if you're okay.\" A smiles."
+  },
+  {
+   "v": "What does the speaker do?",
+   "o": [
+    "\"closes the conversation politely and thanks the other person\"",
+    "\"starts a new topic\"",
+    "\"complains about the help\"",
+    "\"asks the other person a question, to be honest, you know, I think\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 4,
+   "u": "Beleefd afsluiten met dank. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: before I go en thank you sluiten vriendelijk af, en speak to you soon rondt het gesprek mooi af.",
+    "Koos je \"\"starts a new topic\"\"? Dan denk je dat de spreker iets nieuws begint. Er volgt geen nieuw onderwerp, maar een afsluiting.",
+    "Koos je \"\"complains about the help\"\"? Dan denk je dat thank you klagen is. Het is een bedankje, en geen klacht.",
+    "Koos je \"\"asks the other person a question, to be honest, you know, I think\"\"? Dan denk je dat de spreker een vraag stelt. Er staat geen vraag, maar een afscheid."
+   ],
+   "uh": "Wat doet de spreker?",
+   "ctx": "Read the end of a phone call: \"Before I go, I'd just like to say thank you for your help. Speak to you soon!\" The speaker sounds friendly and a bit rushed, and then hangs up."
+  }
+ ],
+ "oe": [
+  {
+   "bron": "Examenstijl",
+   "ctx": "You are in a lift with a new classmate whom you hardly know. You have thirty seconds and you want to start a friendly conversation and keep it going, but she seems a bit shy.",
+   "v": "Write two open questions in English that help her to talk.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Een open vraag met what, how of why (1p). Een tweede open vraag over een ander onderwerp (1p). Een vriendelijke toon (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "A friend tells you: \"I'm thinking of leaving my football club.\" You want to show that you listen and encourage her to say more, without giving advice immediately.",
+   "v": "Write a reaction and a follow-up question.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Een luisterreactie, zoals Really, that sounds hard (1p). Een open vervolgvraag, zoals what is making you think about it (1p). Geen direct advies (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "In an English speaking test the examiner asks you why you chose your study subjects. You did not expect the question and need a moment to organise your answer in English.",
+   "v": "Write what you say to gain time and how you start your answer.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Een aarzelzin, zoals that's a good question (1p). Tijd winnen, zoals let me think for a moment (1p). Een begin van het antwoord (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "You told your friend that you cannot help her move on Saturday. She says, \"So you don't care about me.\" You actually have to work and you want to repair the misunderstanding kindly.",
+   "v": "Write what you say to explain what you meant.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Een herformulering, zoals what I meant was (1p). De echte reden, namelijk het werk (1p). Een vriendelijke toon of aanbod (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "You are talking to a friend on the phone and it is getting late. You still want to finish the conversation in a friendly way, and you also want to meet again soon.",
+   "v": "Write how you end the conversation politely.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Een aankondiging, zoals anyway (1p). Een reden om af te sluiten (1p). Een vriendelijk afscheid met een nieuwe afspraak (1p)."
+  }
+ ]
+}
