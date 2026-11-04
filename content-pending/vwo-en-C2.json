@@ -1,0 +1,682 @@
+{
+ "id": "C2",
+ "lo": "en.C.2",
+ "gs": 2,
+ "naam": "Informatie vragen en verstrekken",
+ "beschrijving": "Je leert in het Engels beleefd om informatie te vragen met directe en indirecte vragen, duidelijke en volledige informatie te geven en te controleren of je iemand goed begrepen hebt.",
+ "ceStatus": "SE",
+ "binas": "",
+ "val": "",
+ "onderwerpen": [
+  "Vraagwoorden en vraagvormen",
+  "Directe en indirecte vragen",
+  "Duidelijke informatie geven",
+  "Controleren en verduidelijken",
+  "Beleefd en formeel vragen"
+ ],
+ "sam": "Met vraagwoorden vraag je naar plaats (where), tijd (when), reden (why), prijs (how much) en duur (how long). Een indirecte vraag als Could you tell me where the station is? klinkt beleefder dan een directe vraag en heeft de zinsvolgorde van een mededeling. Een goed antwoord is duidelijk en volledig: tijd, plaats en wat je moet meenemen. Als je iets niet verstaat, vraag je beleefd om herhaling of controleer je met Do you mean ...?",
+ "begrippen": [
+  {
+   "t": "Vraagwoord",
+   "d": "Een woord als where, when of why dat de vraag stuurt."
+  },
+  {
+   "t": "Directe vraag",
+   "d": "Een vraag zoals Where is the station?"
+  },
+  {
+   "t": "Indirecte vraag",
+   "d": "Een beleefde vraag zoals Could you tell me where the station is?"
+  },
+  {
+   "t": "Zinsvolgorde",
+   "d": "In een indirecte vraag staat het onderwerp voor het werkwoord."
+  },
+  {
+   "t": "Duidelijk antwoord",
+   "d": "Een antwoord met concrete tijd, plaats of getal."
+  },
+  {
+   "t": "Volledig antwoord",
+   "d": "Een antwoord dat alle gevraagde onderdelen noemt."
+  },
+  {
+   "t": "Herhaling vragen",
+   "d": "Sorry, could you say that again?"
+  },
+  {
+   "t": "Verduidelijken",
+   "d": "Navragen wat iemand precies bedoelt."
+  },
+  {
+   "t": "Bevestigen",
+   "d": "Controleren of je het goed begrepen hebt."
+  },
+  {
+   "t": "Beleefd",
+   "d": "Vriendelijk en niet bevelend."
+  },
+  {
+   "t": "Schatting",
+   "d": "Zeggen dat je het niet zeker weet, met I think."
+  },
+  {
+   "t": "Eerlijk",
+   "d": "Zeggen dat je iets niet weet en hulp aanbieden."
+  }
+ ],
+ "sv": [
+  {
+   "v": "Which question word do you use to ask about a reason?",
+   "o": [
+    "\"Where\"",
+    "\"Why\"",
+    "\"When\"",
+    "\"Who\""
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 0,
+   "u": "Why = reden. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"Where\"\"? Dan denk je dat where naar een reden vraagt omdat het ook met w begint. Where vraagt naar een plaats, en niet naar een reden.",
+    "Klopt: why vraagt naar de reden achter iets, bijvoorbeeld waarom een trein te laat is.",
+    "Koos je \"\"When\"\"? Dan denk je dat when naar een reden vraagt omdat een gebeurtenis ergens door komt. When vraagt naar een tijd, en niet naar een oorzaak.",
+    "Koos je \"\"Who\"\"? Dan denk je dat who naar een reden vraagt omdat een persoon iets veroorzaakt. Who vraagt alleen naar een persoon, en niet naar het waarom."
+   ],
+   "uh": "Welk vraagwoord vraagt naar een reden?"
+  },
+  {
+   "v": "Which question gives you the most useful answer about a train?",
+   "o": [
+    "\"Is there a train?\"",
+    "\"Do you like trains?\"",
+    "\"Are trains ever late?\"",
+    "\"What time does the next train to Leeds leave?\""
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 0,
+   "u": "Vraag naar tijd en bestemming. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"Is there a train?\"\"? Dan denk je dat deze vraag genoeg is omdat ze kort is. Je krijgt alleen ja of nee, en je weet de tijd nog niet.",
+    "Koos je \"\"Do you like trains?\"\"? Dan denk je dat deze vraag past omdat het over treinen gaat. Het is een vraag naar een mening, en geeft geen reisinformatie.",
+    "Koos je \"\"Are trains ever late?\"\"? Dan denk je dat deze vraag past omdat ze over de dienstregeling gaat. Je krijgt een algemeen ja, en geen vertrektijd.",
+    "Klopt: de vraag naar een tijd en een bestemming levert een concreet antwoord op."
+   ],
+   "uh": "Welke vraag geeft het beste antwoord?"
+  },
+  {
+   "v": "Which question asks about the price?",
+   "o": [
+    "\"How much does it cost?\"",
+    "\"How long does it take?\"",
+    "\"How far is it?\"",
+    "\"How old is it?\""
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 0,
+   "u": "How much = prijs. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: how much vraagt naar de prijs of hoeveelheid, hier het bedrag van het kaartje.",
+    "Koos je \"\"How long does it take?\"\"? Dan denk je dat dit naar de prijs vraagt omdat het met how begint. How long vraagt naar duur, en niet naar geld.",
+    "Koos je \"\"How far is it?\"\"? Dan denk je dat dit naar de prijs vraagt omdat afstand soms geld kost. How far vraagt naar afstand, en niet naar een bedrag.",
+    "Koos je \"\"How old is it?\"\"? Dan denk je dat dit naar de prijs vraagt omdat oude dingen waarde hebben. How old vraagt naar leeftijd, en niet naar prijs."
+   ],
+   "uh": "Welke vraag vraagt naar de prijs?"
+  },
+  {
+   "v": "Which sentence is an indirect question?",
+   "o": [
+    "\"Where is the station?\"",
+    "\"Is the station far?\"",
+    "\"Could you tell me where the station is?\"",
+    "\"Where the station is?\""
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 1,
+   "u": "Indirect = beleefde inleiding. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"Where is the station?\"\"? Dan denk je dat een vraagwoord genoeg is voor een indirecte vraag. Maar de zin begint direct met where, zonder beleefde inleiding ervoor.",
+    "Koos je \"\"Is the station far?\"\"? Dan denk je dat kort en vriendelijk klinken betekent dat het indirect is. Dit is gewoon een ja/nee-vraag, met werkwoord vooraan.",
+    "Klopt: een indirecte vraag begint met een beleefde inleiding en heeft zinsvolgorde van een zin.",
+    "Koos je \"\"Where the station is?\"\"? Dan denk je dat de zinsvolgorde na where genoeg is. Er ontbreekt een beleefde opening, dus het is slechts een zinsdeel."
+   ],
+   "uh": "Welke zin is een indirecte vraag?"
+  },
+  {
+   "v": "What is the word order in an indirect question after \"Could you tell me ...\"?",
+   "o": [
+    "like a question: \"where is the station\"",
+    "like a statement: \"where the station is\"",
+    "the verb comes first",
+    "there is no subject"
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 1,
+   "u": "Indirecte vraag: zinsvolgorde. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"like a question: \"where is the station\"\"? Dan denk je dat de volgorde van een vraag blijft. In een indirecte vraag staat het onderwerp voor het werkwoord, zoals in een zin.",
+    "Klopt: na de inleiding staat het onderwerp voor het werkwoord.",
+    "Koos je \"the verb comes first\"? Dan denk je dat het werkwoord eerst komt. Dat is bij een directe vraag, en niet na een inleiding.",
+    "Koos je \"there is no subject\"? Dan denk je dat het onderwerp wegvalt. Het onderwerp blijft staan, en komt voor het werkwoord."
+   ],
+   "uh": "Wat is de woordvolgorde?"
+  },
+  {
+   "v": "Which sentence gives clear information about time and place?",
+   "o": [
+    "\"The train leaves sometime, to be honest, you know.\"",
+    "\"There is a train.\"",
+    "\"Maybe later, right now, honestly or whatever.\"",
+    "\"The train leaves at 10.15 from platform 3.\""
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 2,
+   "u": "Tijd en plaats noemen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"The train leaves sometime, to be honest, you know.\"\"? Dan denk je dat dit duidelijk is. Het noemt geen tijd of plaats, en is te vaag.",
+    "Koos je \"\"There is a train.\"\"? Dan denk je dat dit duidelijk is. Het noemt geen tijd of plaats, en geeft geen informatie.",
+    "Koos je \"\"Maybe later, right now, honestly or whatever.\"\"? Dan denk je dat dit duidelijk is. Het is vaag, en noemt geen tijd of plaats.",
+    "Klopt: de zin noemt een tijd en een plaats, dus de luisteraar weet genoeg."
+   ],
+   "uh": "Welke zin is duidelijk?"
+  },
+  {
+   "v": "What do you say if you want someone to repeat something?",
+   "o": [
+    "\"Sorry, could you say that again?\"",
+    "\"What, to be honest, you know, obviously?\"",
+    "\"Say it again!\"",
+    "\"I'm not listening, right now, honestly.\""
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 3,
+   "u": "Sorry, could you say that again. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: dit is een beleefde manier om om herhaling te vragen, zonder kortaf te zijn.",
+    "Koos je \"\"What, to be honest, you know, obviously?\"\"? Dan denk je dat dit beleefd genoeg is. Het is kortaf, en onbeleefd.",
+    "Koos je \"\"Say it again!\"\"? Dan denk je dat dit beleefd is. Het is een bevel, en klinkt boos.",
+    "Koos je \"\"I'm not listening, right now, honestly.\"\"? Dan denk je dat dit past. Het is onbeleefd, en vraagt niets."
+   ],
+   "uh": "Wat zeg je?"
+  },
+  {
+   "v": "Which question is best?",
+   "o": [
+    "\"Museum, to be honest, you know, obviously?\"",
+    "\"Where is your museum, you?\"",
+    "\"Excuse me, how do I get to the museum?\"",
+    "\"Tell me the way, right now, honestly or whatever.\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 0,
+   "u": "Excuse me, how do I get to. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"Museum, to be honest, you know, obviously?\"\"? Dan denk je dat één woord genoeg is. Het is te kort, en niet beleefd.",
+    "Koos je \"\"Where is your museum, you?\"\"? Dan denk je dat dit past. Het is onbeleefd en onjuist, en klinkt vreemd.",
+    "Klopt: je spreekt beleefd aan en vraagt duidelijk naar de weg.",
+    "Koos je \"\"Tell me the way, right now, honestly or whatever.\"\"? Dan denk je dat dit past. Het is een bevel, en niet beleefd."
+   ],
+   "uh": "Welke vraag is het best?",
+   "ctx": "You are in a foreign city and want to know how to get to the museum. You approach a passer-by who looks friendly and is not in a hurry, and you want to ask for directions in a polite way."
+  },
+  {
+   "v": "Which question is best?",
+   "o": [
+    "\"Oxford ticket, to be honest, you know, obviously?\"",
+    "\"How much is a return ticket to Oxford, please?\"",
+    "\"What price Oxford?\"",
+    "\"Give me price, right now, honestly or whatever, if you ask me.\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 0,
+   "u": "How much ..., please. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"Oxford ticket, to be honest, you know, obviously?\"\"? Dan denk je dat dit past. Het is te kort, en niet beleefd.",
+    "Klopt: je vraagt naar de prijs en zegt please.",
+    "Koos je \"\"What price Oxford?\"\"? Dan denk je dat dit past. Het is geen goede zin, en niet beleefd.",
+    "Koos je \"\"Give me price, right now, honestly or whatever, if you ask me.\"\"? Dan denk je dat duidelijk zijn genoeg is. Het is een bevel, en niet geschikt voor een receptie."
+   ],
+   "uh": "Welke vraag is het best?",
+   "ctx": "You are at a ticket office at the station and want to know the price of a return ticket to Oxford for next Saturday. The clerk is friendly, and there is a short queue behind you."
+  },
+  {
+   "v": "Which question is the most polite?",
+   "o": [
+    "\"What time is breakfast served, to be honest, you know?\"",
+    "\"Breakfast time?\"",
+    "\"When breakfast, right now, honestly or whatever, if you ask me?\"",
+    "\"Could you tell me what time breakfast is served?\""
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 1,
+   "u": "Could you tell me = beleefd. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"What time is breakfast served, to be honest, you know?\"\"? Dan denk je dat dit het beleefdst is. Het is een directe vraag, en minder beleefd dan een indirecte.",
+    "Koos je \"\"Breakfast time?\"\"? Dan denk je dat dit beleefd is. Het is te kort, en mist beleefdheid.",
+    "Koos je \"\"When breakfast, right now, honestly or whatever, if you ask me?\"\"? Dan denk je dat dit beleefd is. Het is geen goede zin, en kortaf.",
+    "Klopt: een indirecte vraag klinkt het beleefdst."
+   ],
+   "uh": "Welke vraag is het beleefdst?",
+   "ctx": "You are at a hotel reception and want to find out what time breakfast is served. The receptionist is busy with another guest but friendly, and you do not want to sound too direct."
+  },
+  {
+   "v": "Which question is best?",
+   "o": [
+    "\"Could you tell me if there are still tickets for tonight?\"",
+    "\"Tickets tonight, to be honest, you know, obviously, right now?\"",
+    "\"Are there still tickets? Quick.\"",
+    "\"Tell me the tickets, right now, honestly or whatever, if you ask me.\""
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 1,
+   "u": "Could you tell me if. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: een indirecte vraag met if is beleefd.",
+    "Koos je \"\"Tickets tonight, to be honest, you know, obviously, right now?\"\"? Dan denk je dat dit past. Het is te kort, en onbeleefd.",
+    "Koos je \"\"Are there still tickets? Quick.\"\"? Dan denk je dat dit past. Quick klinkt ongeduldig, en onbeleefd.",
+    "Koos je \"\"Tell me the tickets, right now, honestly or whatever, if you ask me.\"\"? Dan denk je dat dit past. Het is een bevel, en geen vraag."
+   ],
+   "uh": "Welke vraag is het best?",
+   "ctx": "You phone a cinema and want to know whether there are still tickets for tonight's film. The person on the phone speaks clearly, but you want to be polite because you are asking a favour."
+  },
+  {
+   "v": "Which answer is clear?",
+   "o": [
+    "\"It's over there somewhere, to be honest, you know, obviously, right now, to be honest.\"",
+    "\"Just go.\"",
+    "\"Go straight on, turn left at the traffic lights; it's about ten minutes on foot.\"",
+    "\"I don't know, maybe far, right now, honestly or whatever, if you ask me, right now.\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 2,
+   "u": "Route en tijd. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"It's over there somewhere, to be honest, you know, obviously, right now, to be honest.\"\"? Dan denk je dat dit helpt. Het is vaag, en geeft geen route.",
+    "Koos je \"\"Just go.\"\"? Dan denk je dat dit helpt. Het is te kort, en geeft geen route.",
+    "Klopt: het antwoord geeft de route en de duur.",
+    "Koos je \"\"I don't know, maybe far, right now, honestly or whatever, if you ask me, right now.\"\"? Dan denk je dat dit helpt. Het is vaag, en geeft geen route."
+   ],
+   "uh": "Welk antwoord is duidelijk?",
+   "ctx": "A tourist asks you in English how to get to the station from your school. The station is straight on, then left at the traffic lights, and it is about ten minutes on foot. You want to explain clearly."
+  },
+  {
+   "v": "Which answer is complete?",
+   "o": [
+    "\"Soon, to be honest, you know, obviously, right now, to be honest, you know.\"",
+    "\"It starts on Monday 12 May at 8.30 at the school gate; bring lunch.\"",
+    "\"Next week, I think.\"",
+    "\"Ask someone else, right now, honestly or whatever, if you ask me, right now.\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 2,
+   "u": "Datum, tijd, plaats, lunch. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"Soon, to be honest, you know, obviously, right now, to be honest, you know.\"\"? Dan denk je dat dit genoeg is. Het is vaag, en geeft geen datum of tijd.",
+    "Klopt: het antwoord noemt datum, tijd, plaats en wat je meeneemt.",
+    "Koos je \"\"Next week, I think.\"\"? Dan denk je dat dit genoeg is. Het is onzeker en vaag, en geeft geen tijd.",
+    "Koos je \"\"Ask someone else, right now, honestly or whatever, if you ask me, right now.\"\"? Dan denk je dat dit past. Het geeft geen informatie, en helpt niet."
+   ],
+   "uh": "Welk antwoord is volledig?",
+   "ctx": "A classmate asks you when the school trip starts. It starts on Monday 12 May at 8.30 at the school gate, and everyone must bring a packed lunch and wear sturdy shoes because the group will walk a lot."
+  },
+  {
+   "v": "Which reply is best?",
+   "o": [
+    "\"What, to be honest, you know, obviously, right now?\"",
+    "\"Speak slowly!\"",
+    "\"I don't care, right now, honestly or whatever.\"",
+    "\"Sorry, did you say twelve or twenty euros?\""
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 3,
+   "u": "Did you say twelve or twenty? Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"What, to be honest, you know, obviously, right now?\"\"? Dan denk je dat dit past. Het is kortaf, en onbeleefd.",
+    "Koos je \"\"Speak slowly!\"\"? Dan denk je dat dit past. Het is een bevel, en onbeleefd.",
+    "Koos je \"\"I don't care, right now, honestly or whatever.\"\"? Dan denk je dat dit past. Het is onbeleefd, en vraagt niets.",
+    "Klopt: je vraagt beleefd om bevestiging van het bedrag."
+   ],
+   "uh": "Welk antwoord is het best?",
+   "ctx": "A shop assistant speaks very quickly and you did not catch the price of the jacket. You want to be sure you heard it right, and there are other customers waiting behind you who look impatient."
+  },
+  {
+   "v": "Which question is best?",
+   "o": [
+    "\"Do you mean the market in the town centre?\"",
+    "\"Market? Why, to be honest, you know, obviously?\"",
+    "\"I don't like markets.\"",
+    "\"That's boring, right now, honestly or whatever.\""
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 3,
+   "u": "Do you mean ...? Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: je controleert wat ze bedoelt met een concrete vraag.",
+    "Koos je \"\"Market? Why, to be honest, you know, obviously?\"\"? Dan denk je dat dit past. Het is kortaf, en vraagt niet naar bevestiging.",
+    "Koos je \"\"I don't like markets.\"\"? Dan denk je dat dit past. Het is onbeleefd, en vraagt niets.",
+    "Koos je \"\"That's boring, right now, honestly or whatever.\"\"? Dan denk je dat dit past. Het is onbeleefd, en vraagt niets."
+   ],
+   "uh": "Welke vraag is het best?",
+   "ctx": "Your host says: \"We'll go to the market after lunch.\" You are not sure what she means by \"the market\" because there is a market in the town centre and one near the harbour. You want to check."
+  },
+  {
+   "v": "Which sentence is best?",
+   "o": [
+    "\"Open day? When, to be honest, you know, obviously, right now, to be honest, you know?\"",
+    "\"Tell me when open day is.\"",
+    "\"I would like to know whether I could visit on the open day and when it starts.\"",
+    "\"Give me the time, right now, honestly or whatever, if you ask me, right now, honestly.\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 4,
+   "u": "Formele indirecte vraag. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"Open day? When, to be honest, you know, obviously, right now, to be honest, you know?\"\"? Dan denk je dat dit past. Het is te kort, en onbeleefd in een e-mail.",
+    "Koos je \"\"Tell me when open day is.\"\"? Dan denk je dat dit past. Het is een bevel, en onbeleefd.",
+    "Klopt: een formele indirecte vraag met twee vragen.",
+    "Koos je \"\"Give me the time, right now, honestly or whatever, if you ask me, right now, honestly.\"\"? Dan denk je dat dit past. Het is een bevel, en vaag."
+   ],
+   "uh": "Welke zin is het best?",
+   "ctx": "You write an e-mail to a university to ask whether you can visit on an open day, and what time it starts. You do not know the person who will read your message, so you want to sound polite and clear."
+  },
+  {
+   "v": "Which question is best?",
+   "o": [
+    "\"How long wait, to be honest, you know, obviously?\"",
+    "\"Could you tell me how long I will have to wait?\"",
+    "\"Wait how long?\"",
+    "\"Tell me wait time, right now, honestly or whatever.\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 4,
+   "u": "Could you tell me how long. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"How long wait, to be honest, you know, obviously?\"\"? Dan denk je dat de woorden genoeg zijn voor een vraag. Het is geen volledige zin, en klinkt kortaf aan de telefoon.",
+    "Klopt: een beleefde indirecte vraag naar de wachttijd, passend bij een receptie.",
+    "Koos je \"\"Wait how long?\"\"? Dan denk je dat de volgorde er niet toe doet. De woordvolgorde klopt niet, en het klinkt onbeleefd.",
+    "Koos je \"\"Tell me wait time, right now, honestly or whatever.\"\"? Dan denk je dat dit past. Het is een bevel, en onbeleefd."
+   ],
+   "uh": "Welke vraag is het best?",
+   "ctx": "You phone a doctor's surgery to make an appointment, and you want to ask how long you will have to wait for the first available time. The receptionist sounds busy but kind."
+  },
+  {
+   "v": "Which reply is best?",
+   "o": [
+    "\"No, to be honest, you know, obviously, right now.\"",
+    "\"Not my problem.\"",
+    "\"Ask someone else, right now, honestly or whatever, if you ask me.\"",
+    "\"I'm sorry, I don't know, but I can ask someone for you.\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 1,
+   "u": "Eerlijk en hulp aanbieden. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"No, to be honest, you know, obviously, right now.\"\"? Dan denk je dat dit genoeg is. Het is kortaf, en biedt geen hulp.",
+    "Koos je \"\"Not my problem.\"\"? Dan denk je dat dit past. Het is onbeleefd, en helpt niet.",
+    "Koos je \"\"Ask someone else, right now, honestly or whatever, if you ask me.\"\"? Dan denk je dat dit past. Het is een bevel, en onbeleefd.",
+    "Klopt: je zegt het eerlijk en biedt ook hulp aan, dat is vriendelijk."
+   ],
+   "uh": "Welk antwoord is het best?",
+   "ctx": "A friend asks: \"Do you know where the post office is?\" You do not know, but you want to answer politely and offer to help. You have a phone and could ask someone nearby."
+  },
+  {
+   "v": "Which answer is complete?",
+   "o": [
+    "\"It's open Monday to Friday from 8 to 5 and on Saturday from 9 to 12; it's closed on Sundays.\"",
+    "\"It's open in the daytime, to be honest, you know, obviously, right now, to be honest, you know.\"",
+    "\"Monday to Friday.\"",
+    "\"Always open, right now, honestly or whatever, if you ask me, right now, honestly or whatever, if you ask me.\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 2,
+   "u": "Alle dagen en tijden. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: alle dagen en tijden worden genoemd, ook dat zondag dicht is.",
+    "Koos je \"\"It's open in the daytime, to be honest, you know, obviously, right now, to be honest, you know.\"\"? Dan denk je dat dit genoeg is. Het is vaag, en noemt geen tijden.",
+    "Koos je \"\"Monday to Friday.\"\"? Dan denk je dat dit genoeg is. Het noemt geen tijden en zaterdag, en is onvolledig.",
+    "Koos je \"\"Always open, right now, honestly or whatever, if you ask me, right now, honestly or whatever, if you ask me.\"\"? Dan denk je dat dit klopt. Het is onjuist, want zondag is het dicht."
+   ],
+   "uh": "Welk antwoord is volledig?",
+   "ctx": "A visitor asks about the opening times of your school library. It is open Monday to Friday from 8.00 to 17.00 and on Saturday from 9.00 to 12.00, and it is closed on Sundays. You want to be complete."
+  },
+  {
+   "v": "What do you say?",
+   "o": [
+    "\"You said bakery, to be honest, you know, obviously.\"",
+    "\"I don't understand anything.\"",
+    "\"Sorry, did you say the bank or the bakery?\"",
+    "\"That's wrong, right now, honestly or whatever.\""
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 3,
+   "u": "Did you say the bank or the bakery? Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"You said bakery, to be honest, you know, obviously.\"\"? Dan denk je dat dit past. Het beweert iets zonder te vragen, en kan fout zijn.",
+    "Koos je \"\"I don't understand anything.\"\"? Dan denk je dat dit past. Het is overdreven, en helpt niet bij het verduidelijken.",
+    "Klopt: je controleert beleefd welk woord ze zei, zodat je niet verdwaalt.",
+    "Koos je \"\"That's wrong, right now, honestly or whatever.\"\"? Dan denk je dat dit past. Het is onbeleefd, en je weet het niet zeker."
+   ],
+   "uh": "Wat zeg je?",
+   "ctx": "Someone gives you directions, but you are unsure about the last part: \"Turn right after the bank.\" You think she said the bank, not the bakery, because the street was noisy and you could not hear well."
+  },
+  {
+   "v": "Which pair of questions is best?",
+   "o": [
+    "\"Airport? Bus, to be honest, you know, obviously, right now?\"",
+    "\"How far is it to the airport, and how long does the bus take?\"",
+    "\"Why airport?\"",
+    "\"Who goes to the airport, right now, honestly or whatever, if you ask me?\""
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 0,
+   "u": "How far en how long. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"Airport? Bus, to be honest, you know, obviously, right now?\"\"? Dan denk je dat dit past. Het is te kort, en niet duidelijk.",
+    "Klopt: je vraagt naar afstand en duur in één duidelijke zin.",
+    "Koos je \"\"Why airport?\"\"? Dan denk je dat dit past. Het vraagt naar een reden, en niet naar afstand of duur.",
+    "Koos je \"\"Who goes to the airport, right now, honestly or whatever, if you ask me?\"\"? Dan denk je dat dit past. Het vraagt naar personen, en niet naar afstand of duur."
+   ],
+   "uh": "Welke vragen passen?",
+   "ctx": "You want to find out how far it is to the airport and how long it takes by bus, because your flight leaves early on Sunday morning and you must plan your journey."
+  },
+  {
+   "v": "Which reply is best?",
+   "o": [
+    "\"Six, to be honest, you know, obviously, right now.\"",
+    "\"Ask the shop.\"",
+    "\"I never go there, right now, honestly or whatever.\"",
+    "\"I'm not sure, but I think it closes around six.\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 1,
+   "u": "Niet zeker, maar ongeveer. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"Six, to be honest, you know, obviously, right now.\"\"? Dan denk je dat dit genoeg is. Je weet het niet zeker, en klinkt te stellig.",
+    "Koos je \"\"Ask the shop.\"\"? Dan denk je dat dit past. Het is kortaf, en helpt niet.",
+    "Koos je \"\"I never go there, right now, honestly or whatever.\"\"? Dan denk je dat dit past. Het is onwaar, want je was er vorige week.",
+    "Klopt: je zegt eerlijk dat je het niet zeker weet en geeft je schatting."
+   ],
+   "uh": "Welk antwoord is het best?",
+   "ctx": "A neighbour asks: \"Could you tell me what time the shop closes?\" You do not know exactly, but you think it is around six, because you went there last week. You want to answer honestly."
+  },
+  {
+   "v": "Which message is best?",
+   "o": [
+    "\"Hello, could you tell me the price and age of the bicycle, and whether I could see it on Saturday?\"",
+    "\"Bike price, to be honest, you know, obviously, right now, to be honest, you know, obviously, right now?\"",
+    "\"Bike? Saturday? Price?\"",
+    "\"Tell me about the bike, right now, honestly or whatever, if you ask me, right now, honestly or whatever.\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 4,
+   "u": "Beleefde boodschap met drie vragen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: een formele boodschap met drie duidelijke vragen.",
+    "Koos je \"\"Bike price, to be honest, you know, obviously, right now, to be honest, you know, obviously, right now?\"\"? Dan denk je dat dit past. Het noemt maar één ding, en is te kort.",
+    "Koos je \"\"Bike? Saturday? Price?\"\"? Dan denk je dat dit past. Het zijn losse woorden, en onbeleefd.",
+    "Koos je \"\"Tell me about the bike, right now, honestly or whatever, if you ask me, right now, honestly or whatever.\"\"? Dan denk je dat dit past. Het is een bevel, en niet duidelijk."
+   ],
+   "uh": "Welk bericht is het best?",
+   "ctx": "You send a message to a stranger who sells a bicycle online. You want to know the price, the age of the bike and whether you can see it on Saturday afternoon, and you want to sound polite and clear."
+  },
+  {
+   "v": "Which answer is complete and clear?",
+   "o": [
+    "\"Ask at the library, to be honest, you know, obviously, right now, to be honest, you know.\"",
+    "\"You need a photo.\"",
+    "\"You need your school pass and a photo; the card is free and ready in two days.\"",
+    "\"It takes some days, right now, honestly or whatever, if you ask me, right now, honestly.\""
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 2,
+   "u": "Vereisten, prijs en duur. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"Ask at the library, to be honest, you know, obviously, right now, to be honest, you know.\"\"? Dan denk je dat dit genoeg is. Het is vaag, en geeft geen informatie.",
+    "Koos je \"\"You need a photo.\"\"? Dan denk je dat dit genoeg is. Het is onvolledig, want de pas ontbreekt.",
+    "Klopt: wat je nodig hebt, de prijs en de duur worden genoemd.",
+    "Koos je \"\"It takes some days, right now, honestly or whatever, if you ask me, right now, honestly.\"\"? Dan denk je dat dit genoeg is. Het is vaag, en noemt geen vereisten."
+   ],
+   "uh": "Welk antwoord is volledig?",
+   "ctx": "A foreign student asks how to get a library card at your school. Students need their school pass and a photo, and the card is free and ready in two days. You want to give a clear and complete answer."
+  },
+  {
+   "v": "Which question checks your understanding?",
+   "o": [
+    "\"Homework, to be honest, you know, obviously, right now, to be honest?\"",
+    "\"So I read pages ten to twenty and answer the questions, right?\"",
+    "\"Why homework?\"",
+    "\"Is it boring, right now, honestly or whatever, if you ask me, right now?\""
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 3,
+   "u": "Herhalen en controleren. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"Homework, to be honest, you know, obviously, right now, to be honest?\"\"? Dan denk je dat dit past. Het is te kort, en controleert niets.",
+    "Klopt: je herhaalt de opdracht en vraagt of het klopt.",
+    "Koos je \"\"Why homework?\"\"? Dan denk je dat dit past. Het vraagt naar een reden, en controleert niets.",
+    "Koos je \"\"Is it boring, right now, honestly or whatever, if you ask me, right now?\"\"? Dan denk je dat dit past. Het vraagt naar een mening, en niet naar de opdracht."
+   ],
+   "uh": "Welke vraag controleert?",
+   "ctx": "You are not sure that you have understood an instruction about homework: \"Read pages ten to twenty and answer the questions.\" You want to check this with the teacher in a polite way."
+  },
+  {
+   "v": "Which question is best?",
+   "o": [
+    "\"Chemist where, to be honest, you know, obviously, right now?\"",
+    "\"Open when?\"",
+    "\"Chemist, tell me, right now, honestly or whatever, if you ask me.\"",
+    "\"Where is the nearest chemist, and when does it open?\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 0,
+   "u": "Where en when. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"Chemist where, to be honest, you know, obviously, right now?\"\"? Dan denk je dat dit past. Het is geen goede zin, en vraagt maar één ding.",
+    "Koos je \"\"Open when?\"\"? Dan denk je dat dit past. Het noemt de plaats niet, en is te kort.",
+    "Koos je \"\"Chemist, tell me, right now, honestly or whatever, if you ask me.\"\"? Dan denk je dat dit past. Het is een bevel, en onduidelijk.",
+    "Klopt: je vraagt naar plaats en tijd in één duidelijke zin."
+   ],
+   "uh": "Welke vraag is het best?",
+   "ctx": "At an information desk you want to know where the nearest chemist is and when it opens, because you need medicine and it is already late in the afternoon."
+  },
+  {
+   "v": "Which question is suitable?",
+   "o": [
+    "\"Would it be all right if I borrowed this book?\"",
+    "\"Give me the book, to be honest, you know, obviously.\"",
+    "\"I take this book.\"",
+    "\"Book, please, now, right now, honestly or whatever.\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 1,
+   "u": "Would it be all right = beleefd. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: dit is een beleefde, formele vraag aan een docent die respect toont.",
+    "Koos je \"\"Give me the book, to be honest, you know, obviously.\"\"? Dan denk je dat dit past. Het is een bevel, en niet beleefd.",
+    "Koos je \"\"I take this book.\"\"? Dan denk je dat dit past. Je vraagt niets, en overvalt de docent.",
+    "Koos je \"\"Book, please, now, right now, honestly or whatever.\"\"? Dan denk je dat dit past. Het is kortaf, en onbeleefd."
+   ],
+   "uh": "Welke vraag past?",
+   "ctx": "You want to ask a teacher whether you may borrow a book from the classroom. You are not sure how formal you must be, but you want to be polite and show respect."
+  }
+ ],
+ "oe": [
+  {
+   "bron": "Examenstijl",
+   "ctx": "You are in a foreign city and want to know how to get to the museum. You approach a passer-by who looks friendly and is not in a hurry, and you want to ask for directions in a polite way.",
+   "v": "Write a polite direct question and an indirect question about the museum.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Een directe vraag, zoals How do I get to the museum (1p). Een indirecte vraag, zoals Could you tell me how to get to the museum (1p). Een beleefde inleiding als excuse me of please (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "A tourist asks you in English how to get to the station from your school. The station is straight on, then left at the traffic lights, and it is about ten minutes on foot. You want to explain clearly.",
+   "v": "Write a clear and complete answer.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "De route: rechtdoor en links bij het stoplicht (1p). De duur: ongeveer tien minuten lopen (1p). Een duidelijke, volledige zin (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "A shop assistant speaks very quickly and you did not catch the price of the jacket. There are other customers waiting behind you who look impatient, but you want to be sure of the price.",
+   "v": "Write what you say to check the price politely.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Een beleefde inleiding, zoals Sorry (1p). Een controlevraag, zoals did you say twelve or twenty euros (1p). Geen kortaf of bevelend taalgebruik (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "You send a message to a stranger who sells a bicycle online. You want to know the price, the age of the bike and whether you can see it on Saturday afternoon, and you want to sound polite and clear.",
+   "v": "Write a polite message with three questions.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Een beleefde aanhef of inleiding (1p). Vragen over prijs en leeftijd (1p). Een vraag over zaterdag (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "A friend asks: \"Do you know where the post office is?\" You do not know, but you want to answer politely and offer to help. You have a phone and could ask someone nearby.",
+   "v": "Write an honest and helpful reply.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Je zegt dat je het niet weet (1p). Je biedt aan het te vragen (1p). Een beleefde formulering (1p)."
+  }
+ ]
+}
