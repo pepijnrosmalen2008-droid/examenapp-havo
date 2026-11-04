@@ -1,0 +1,682 @@
+{
+ "id": "C7",
+ "lo": "en.C.7",
+ "gs": 2,
+ "naam": "Een korte presentatie opbouwen voor doel en publiek",
+ "beschrijving": "Je leert in het Engels een korte presentatie op te bouwen die past bij je doel en je publiek, met een inleiding, kernpunten, signaalwoorden, technieken om aandacht te trekken en een slot met samenvatting en ruimte voor vragen.",
+ "ceStatus": "SE",
+ "binas": "",
+ "val": "",
+ "onderwerpen": [
+  "Doel en publiek bepalen",
+  "De opbouw van een presentatie",
+  "Signaalwoorden gebruiken",
+  "Aandacht trekken en houden",
+  "Afsluiten en vragen beantwoorden"
+ ],
+ "sam": "Het doel van een presentatie is informeren, overtuigen of vermaken; het publiek bepaalt je register: formeel of informeel. Een presentatie heeft een inleiding, enkele kernpunten en een slot. Met een signaalwoord als firstly of finally laat je de opbouw horen. Met een retorische vraag kun je de aandacht trekken. In het slot ga je samenvatten (To sum up) en daarna volgt een vragenronde. Let ook op je spreektempo: niet te snel, met pauzes.",
+ "begrippen": [
+  {
+   "t": "Doel",
+   "d": "Waarom je presenteert: informeren, overtuigen of vermaken."
+  },
+  {
+   "t": "Publiek",
+   "d": "De mensen die luisteren en naar wie je je taal aanpast."
+  },
+  {
+   "t": "Register",
+   "d": "Formeel of informeel taalgebruik, passend bij het publiek."
+  },
+  {
+   "t": "Inleiding",
+   "d": "Het begin waarin je onderwerp en opbouw noemt."
+  },
+  {
+   "t": "Kernpunt",
+   "d": "Een hoofdpunt in het middendeel, met een voorbeeld."
+  },
+  {
+   "t": "Slot",
+   "d": "De afsluiting met een samenvatting of oproep."
+  },
+  {
+   "t": "Signaalwoord",
+   "d": "Een woord als firstly of finally dat de opbouw aangeeft."
+  },
+  {
+   "t": "Retorische vraag",
+   "d": "Een vraag waarop je geen antwoord verwacht, om het publiek te boeien."
+  },
+  {
+   "t": "Aandacht trekken",
+   "d": "Het publiek bij de les houden met een vraag of voorbeeld."
+  },
+  {
+   "t": "Samenvatten",
+   "d": "Kort herhalen wat je behandelde, zoals To sum up."
+  },
+  {
+   "t": "Vragenronde",
+   "d": "Het moment na de talk waarop het publiek vragen mag stellen."
+  },
+  {
+   "t": "Spreektempo",
+   "d": "Hoe snel je praat; niet te snel en met pauzes."
+  }
+ ],
+ "sv": [
+  {
+   "v": "Which talk has the aim to persuade?",
+   "o": [
+    "\"A talk that lists the dates of a school trip, I think.\"",
+    "\"A talk that urges classmates to recycle more.\"",
+    "\"A funny story about a holiday.\"",
+    "\"A report of last week's match.\""
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 0,
+   "u": "Overtuigen = oproepen tot actie. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"A talk that lists the dates of a school trip, I think.\"\"? Dan denk je dat een lijst met data overtuigt. Het geeft alleen informatie, en wil niemand overhalen.",
+    "Klopt: een talk die klasgenoten aanspoort iets te doen, wil overtuigen.",
+    "Koos je \"\"A funny story about a holiday.\"\"? Dan denk je dat een grappig verhaal overtuigt. Het wil vermaken, en niemand overhalen.",
+    "Koos je \"\"A report of last week's match.\"\"? Dan denk je dat een verslag overtuigt. Het informeert over wat er gebeurde, en roept niet op tot actie."
+   ],
+   "uh": "Welke talk wil overtuigen?"
+  },
+  {
+   "v": "Which opening suits a talk to the headteacher?",
+   "o": [
+    "\"Hey guys, listen up, this is cool, to be honest.\"",
+    "\"Yo, what's up, this is my thing.\"",
+    "\"Hi mate, whatever, here we go.\"",
+    "\"Good morning, I'd like to present my proposal.\""
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 0,
+   "u": "Formeel publiek = formeel register. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"Hey guys, listen up, this is cool, to be honest.\"\"? Dan denk je dat een informele opening bij een directeur past. Het is te los, en niet formeel genoeg.",
+    "Koos je \"\"Yo, what's up, this is my thing.\"\"? Dan denk je dat straattaal werkt. Het is te informeel, voor een formeel publiek.",
+    "Koos je \"\"Hi mate, whatever, here we go.\"\"? Dan denk je dat een vriendelijke opening genoeg is. Het is slordig, en niet passend voor een directeur.",
+    "Klopt: good morning en I'd like to present passen bij een formeel publiek."
+   ],
+   "uh": "Welke opening past bij de directeur?"
+  },
+  {
+   "v": "Where do you say what your talk will be about?",
+   "o": [
+    "\"I do that in the introduction, at the start.\"",
+    "\"I do that in the conclusion, at the end.\"",
+    "\"I do that during the question round.\"",
+    "\"I do that in the middle of the main part, I suppose.\""
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 1,
+   "u": "Inleiding = onderwerp noemen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: in de inleiding zeg je waar de talk over gaat en wat je gaat behandelen.",
+    "Koos je \"\"I do that in the conclusion, at the end.\"\"? Dan denk je dat het onderwerp aan het eind genoemd wordt. In de conclusie vat je samen, en dat is te laat.",
+    "Koos je \"\"I do that during the question round.\"\"? Dan denk je dat de vragenronde het onderwerp opent. Die komt na de talk, en is niet het begin.",
+    "Koos je \"\"I do that in the middle of the main part, I suppose.\"\"? Dan denk je dat het midden een goed moment is. Dan zit het publiek al in de uitleg, en heeft geen overzicht."
+   ],
+   "uh": "Waar noem je het onderwerp?"
+  },
+  {
+   "v": "Which sentence belongs in the conclusion?",
+   "o": [
+    "\"Today I'd like to talk about recycling.\"",
+    "\"Firstly, recycling saves energy.\"",
+    "\"To sum up, we should recycle more.\"",
+    "\"Does anyone know how much glass we recycle?\""
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 1,
+   "u": "To sum up = slot. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"Today I'd like to talk about recycling.\"\"? Dan denk je dat dit een slotzin is. Dit opent de talk, en hoort in de inleiding.",
+    "Koos je \"\"Firstly, recycling saves energy.\"\"? Dan denk je dat dit een slotzin is. Dit is het eerste kernpunt, en hoort in het middendeel.",
+    "Klopt: to sum up vat het hoofdpunt samen en hoort bij het slot.",
+    "Koos je \"\"Does anyone know how much glass we recycle?\"\"? Dan denk je dat een vraag het slot is. Het is een aandachtstrekker, en hoort bij het begin."
+   ],
+   "uh": "Welke zin hoort bij het slot?"
+  },
+  {
+   "v": "Which sentence introduces the first main point?",
+   "o": [
+    "\"Finally, recycling saves energy.\"",
+    "\"Firstly, recycling saves energy.\"",
+    "\"In conclusion, recycling saves energy.\"",
+    "\"By the way, recycling saves energy.\""
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 2,
+   "u": "Firstly = eerste punt. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"Finally, recycling saves energy.\"\"? Dan denk je dat finally het eerste punt inleidt. Het hoort bij het laatste punt, en niet het eerste.",
+    "Klopt: firstly introduceert het eerste kernpunt in een rij.",
+    "Koos je \"\"In conclusion, recycling saves energy.\"\"? Dan denk je dat in conclusion het eerste punt inleidt. Het sluit de talk af, en niet het begin.",
+    "Koos je \"\"By the way, recycling saves energy.\"\"? Dan denk je dat by the way een kernpunt opent. Het introduceert een bijzaak, en geen hoofdpunt."
+   ],
+   "uh": "Welke zin leidt het eerste punt in?"
+  },
+  {
+   "v": "Which question is a rhetorical question to get attention?",
+   "o": [
+    "\"Does anyone have a pen?\"",
+    "\"What time is it?\"",
+    "\"Is the projector working, I think, I suppose, really?\"",
+    "\"Have you ever wondered where your rubbish goes?\""
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 3,
+   "u": "Retorische vraag = geen antwoord nodig. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"Does anyone have a pen?\"\"? Dan denk je dat dit een retorische vraag is. Je wilt echt een pen, en verwacht dus een antwoord.",
+    "Koos je \"\"What time is it?\"\"? Dan denk je dat dit de aandacht trekt. Je vraagt om informatie, en verwacht een antwoord.",
+    "Koos je \"\"Is the projector working, I think, I suppose, really?\"\"? Dan denk je dat dit een retorische vraag is. Het is een praktische vraag, en gaat niet over je onderwerp.",
+    "Klopt: je verwacht geen antwoord, het laat het publiek meedenken en trekt de aandacht."
+   ],
+   "uh": "Welke vraag is retorisch?"
+  },
+  {
+   "v": "What do you say at the end of your presentation to invite questions?",
+   "o": [
+    "\"Thank you for listening. Are there any questions?\"",
+    "\"That's all, bye.\"",
+    "\"Questions are not allowed, to be honest, you know, I think.\"",
+    "\"Please don't ask anything.\""
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 4,
+   "u": "Bedanken + vragenronde. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: je bedankt het publiek en nodigt uit tot vragen, dat sluit beleefd af.",
+    "Koos je \"\"That's all, bye.\"\"? Dan denk je dat kort afsluiten volstaat. Je nodigt niet uit tot vragen, en klinkt abrupt.",
+    "Koos je \"\"Questions are not allowed, to be honest, you know, I think.\"\"? Dan denk je dat vragen een onderbreking zijn. Een vragenronde hoort bij een talk, en dat verbod is onbeleefd.",
+    "Koos je \"\"Please don't ask anything.\"\"? Dan denk je dat dit netjes is. Het is een bevel, en nodigt niemand uit."
+   ],
+   "uh": "Wat zeg je aan het eind?"
+  },
+  {
+   "v": "Which opening is best?",
+   "o": [
+    "\"Good morning. Today I will present a detailed analysis of nutritional values.\"",
+    "\"Yo, listen up, kids, this is boring but important.\"",
+    "\"Hello everyone! Who likes apples and carrots?\"",
+    "\"I would like to begin with a statistical overview.\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 0,
+   "u": "Publiek bepaalt taalniveau. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"Good morning. Today I will present a detailed analysis of nutritional values.\"\"? Dan denk je dat een formele opening bij kinderen past. Het is te moeilijk, en saai voor tienjarigen.",
+    "Koos je \"\"Yo, listen up, kids, this is boring but important.\"\"? Dan denk je dat een grove opening aanslaat. Je noemt je talk saai, en dat is onbeleefd.",
+    "Klopt: de taal is simpel en de vraag betrekt jonge kinderen meteen.",
+    "Koos je \"\"I would like to begin with a statistical overview.\"\"? Dan denk je dat cijfers kinderen boeien. Het is te abstract, en te formeel."
+   ],
+   "uh": "Welke opening past bij kinderen?",
+   "ctx": "You must give a presentation to a group of ten-year-old children about healthy food at their primary school. You have to choose the right language level and keep their attention."
+  },
+  {
+   "v": "Which aim fits this talk?",
+   "o": [
+    "\"to make them laugh\"",
+    "\"to inform them about the plan\"",
+    "\"to convince them to stay at home\"",
+    "\"to sell them a product\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 0,
+   "u": "Feiten geven = informeren. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"to make them laugh\"\"? Dan denk je dat vermaken het doel is. Dat past niet bij een reisplan, waarin feiten centraal staan.",
+    "Klopt: ze weten niets en jij geeft feiten, dus het doel is informeren.",
+    "Koos je \"\"to convince them to stay at home\"\"? Dan denk je dat overtuigen hier past. Je wilt ze juist informeren, en niet afhouden.",
+    "Koos je \"\"to sell them a product\"\"? Dan denk je dat verkopen het doel is. Je geeft informatie, en verkoopt niets."
+   ],
+   "uh": "Welk doel past?",
+   "ctx": "Your aim is to inform your classmates about a trip to Scotland next year. They know nothing about the plan yet and they need to know the dates, the price and the activities."
+  },
+  {
+   "v": "How should you build the talk?",
+   "o": [
+    "\"only the three main points, with no beginning or end\"",
+    "\"the conclusion first, then everything in random order\"",
+    "\"a long introduction and one small main point\"",
+    "\"introduction, three main points and a conclusion\""
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 1,
+   "u": "Inleiding, kernpunten, slot. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"only the three main points, with no beginning or end\"\"? Dan denk je dat een begin en slot niet nodig zijn. Dan weet het publiek niet wat komt, en mist het overzicht.",
+    "Koos je \"\"the conclusion first, then everything in random order\"\"? Dan denk je dat de volgorde er niet toe doet. Zonder structuur raakt het publiek de draad kwijt, en volgt het niet.",
+    "Koos je \"\"a long introduction and one small main point\"\"? Dan denk je dat een lange inleiding genoeg is. Je hebt drie punten, en die verdienen elk aandacht.",
+    "Klopt: een inleiding, drie kernpunten en een slot geven een duidelijke opbouw."
+   ],
+   "uh": "Hoe bouw je de talk op?",
+   "ctx": "You prepare a five-minute talk about the history of your town. You have three main points: the founding of the town, the medieval market and the modern harbour."
+  },
+  {
+   "v": "Which introduction is best?",
+   "o": [
+    "\"Today I'm going to talk about recycling. I'll cover three points: energy, waste and jobs.\"",
+    "\"Good. Next topic.\"",
+    "\"I forgot my notes, so I'll just say something, I think, I suppose, really.\"",
+    "\"Recycling is when you recycle.\""
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 1,
+   "u": "Onderwerp + kernpunten noemen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: je noemt het onderwerp en kondigt de drie kernpunten aan, dat geeft overzicht.",
+    "Koos je \"\"Good. Next topic.\"\"? Dan denk je dat een kort woord een inleiding is. Het noemt geen onderwerp, en geeft geen overzicht.",
+    "Koos je \"\"I forgot my notes, so I'll just say something, I think, I suppose, really.\"\"? Dan denk je dat eerlijk zijn een inleiding is. Het toont onvoorbereid zijn, en geeft geen overzicht.",
+    "Koos je \"\"Recycling is when you recycle.\"\"? Dan denk je dat een omschrijving een inleiding is. Het is een cirkeldefinitie, en kondigt niets aan."
+   ],
+   "uh": "Welke inleiding is het best?",
+   "ctx": "In the introduction of your talk on recycling you want to say what the talk is about and what you will cover. You have thirty seconds and want to be clear."
+  },
+  {
+   "v": "What do you say?",
+   "o": [
+    "\"And then something else.\"",
+    "\"Okay, whatever, next.\"",
+    "\"That was my first point. Now let's move on to my second point.\"",
+    "\"I don't know what comes next, to be honest, you know, I think.\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 2,
+   "u": "Signaalwoord bij overgang. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"And then something else.\"\"? Dan denk je dat een vaag signaal volstaat. Het zegt niet welk punt volgt, en het publiek raakt het spoor bijster.",
+    "Koos je \"\"Okay, whatever, next.\"\"? Dan denk je dat een kort woord genoeg is. Het klinkt onverschillig, en het publiek weet niet waar je bent.",
+    "Klopt: je rondt het eerste punt af en kondigt het tweede aan, dat is een duidelijk signaalwoord.",
+    "Koos je \"\"I don't know what comes next, to be honest, you know, I think.\"\"? Dan denk je dat eerlijkheid hier past. Het toont onvoorbereid zijn, en geeft geen structuur."
+   ],
+   "uh": "Wat zeg je bij de overgang?",
+   "ctx": "You are presenting your three main points and you want the audience to follow the structure. You have just finished the first point and are about to start the second."
+  },
+  {
+   "v": "Which phrase is best?",
+   "o": [
+    "\"And firstly, I'd like to talk about jobs.\"",
+    "\"And finally, I'd like to talk about jobs.\"",
+    "\"By the way, here is the first point.\"",
+    "\"At the beginning, I'd like to talk about jobs.\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 2,
+   "u": "Finally = laatste punt. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"And firstly, I'd like to talk about jobs.\"\"? Dan denk je dat firstly bij het laatste punt past. Het hoort bij het eerste punt, en verwart het publiek.",
+    "Klopt: finally kondigt het laatste kernpunt aan, dus het publiek weet dat het slot nadert.",
+    "Koos je \"\"By the way, here is the first point.\"\"? Dan denk je dat by the way een kernpunt aankondigt. Het opent een bijzaak, en zegt niets over het slot.",
+    "Koos je \"\"At the beginning, I'd like to talk about jobs.\"\"? Dan denk je dat het begin hier past. Het zegt dat je net begint, terwijl je bijna klaar bent."
+   ],
+   "uh": "Welke aankondiging past?",
+   "ctx": "You are near the end of your talk and you want to signal the last main point, so that the audience knows that the conclusion is coming soon."
+  },
+  {
+   "v": "What do you do?",
+   "o": [
+    "\"Shout at them to put their phones away, you know, I think.\"",
+    "\"Speak faster and quieter.\"",
+    "\"Stop the talk and sit down.\"",
+    "\"Ask a question: 'How many of you recycle at home?'\""
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 3,
+   "u": "Aandacht trekken met een vraag. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"Shout at them to put their phones away, you know, I think.\"\"? Dan denk je dat schreeuwen werkt. Het is onbeleefd, en verpest de sfeer.",
+    "Koos je \"\"Speak faster and quieter.\"\"? Dan denk je dat tempo de aandacht terugbrengt. Zo verlies je ze nog meer, want ze horen je niet.",
+    "Koos je \"\"Stop the talk and sit down.\"\"? Dan denk je dat stoppen een oplossing is. Je geeft op, en je talk blijft onaf.",
+    "Klopt: een vraag aan het publiek haalt de aandacht terug en houdt de sfeer vriendelijk."
+   ],
+   "uh": "Wat doe je?",
+   "ctx": "You notice that some classmates are looking at their phones in the middle of your talk. You want to get their attention back in a friendly way, without stopping the talk."
+  },
+  {
+   "v": "What is the best way?",
+   "o": [
+    "\"Give a simple example: 'It's the pollution that you cause by driving or flying.'\"",
+    "\"Use more difficult words to sound smart.\"",
+    "\"Skip the term and talk about something else, really, to be honest, you know.\"",
+    "\"Say it very quickly so nobody notices.\""
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 3,
+   "u": "Eenvoudig voorbeeld bij een moeilijk begrip. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: een eenvoudig voorbeeld legt het begrip uit in taal die jonge leerlingen snappen.",
+    "Koos je \"\"Use more difficult words to sound smart.\"\"? Dan denk je dat moeilijke woorden slim klinken. Het publiek haakt af, en begrijpt je niet.",
+    "Koos je \"\"Skip the term and talk about something else, really, to be honest, you know.\"\"? Dan denk je dat het begrip overgeslagen kan worden. Dan mist je talk de kern, en blijft het onduidelijk.",
+    "Koos je \"\"Say it very quickly so nobody notices.\"\"? Dan denk je dat snel praten het probleem oplost. Het publiek begrijpt het nog niet, en raakt het spoor bijster."
+   ],
+   "uh": "Wat is de beste aanpak?",
+   "ctx": "You want to explain a difficult concept, 'carbon footprint', to a group of younger students. You know they will not know the term yet and some are only twelve years old."
+  },
+  {
+   "v": "Which sentence is best?",
+   "o": [
+    "\"I forgot what I said, sorry.\"",
+    "\"Now here is a new idea I didn't mention before, I think.\"",
+    "\"To sum up, I've talked about energy, waste and jobs.\"",
+    "\"That was a boring talk, wasn't it?\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 4,
+   "u": "Samenvatten in het slot. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"I forgot what I said, sorry.\"\"? Dan denk je dat eerlijk zijn een slot is. Je vat niets samen, en toont onvoorbereid zijn.",
+    "Koos je \"\"Now here is a new idea I didn't mention before, I think.\"\"? Dan denk je dat een nieuw idee een goed slot is. In het slot hoort geen nieuw argument, en het verwart het publiek.",
+    "Klopt: to sum up vat de drie kernpunten samen, dat is een goede slotzin.",
+    "Koos je \"\"That was a boring talk, wasn't it?\"\"? Dan denk je dat zelfspot werkt. Het is een negatief slot, en vat niets samen."
+   ],
+   "uh": "Welke slotzin is het best?",
+   "ctx": "At the end of your talk you want to remind the audience of your main points before you thank them. You covered energy, waste and jobs."
+  },
+  {
+   "v": "What do you say?",
+   "o": [
+    "\"That's a stupid question.\"",
+    "\"That's a good question; I don't know the answer, but I can find out.\"",
+    "\"I'm not answering that.\"",
+    "\"Everybody knows that, so I won't answer, to be honest, you know, I think.\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 4,
+   "u": "Eerlijk en beleefd bij een onbekend antwoord. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"That's a stupid question.\"\"? Dan denk je dat eerlijk zijn betekent dat je mag beledigen. Dit is onbeleefd, en beantwoordt niets.",
+    "Klopt: je prijst de vraag, bent eerlijk en biedt aan het uit te zoeken.",
+    "Koos je \"\"I'm not answering that.\"\"? Dan denk je dat weigeren kan. Je blijft de vraag schuldig, en klinkt kortaf.",
+    "Koos je \"\"Everybody knows that, so I won't answer, to be honest, you know, I think.\"\"? Dan denk je dat je het kunt afwimpelen. Het is onwaar, en beledigt de vragensteller."
+   ],
+   "uh": "Wat zeg je?",
+   "ctx": "After your presentation a classmate asks a question that you cannot answer, and the class waits silently. You want to respond honestly and politely."
+  },
+  {
+   "v": "Who is the audience and what is the register?",
+   "o": [
+    "\"classmates; informal\"",
+    "\"small children; very simple\"",
+    "\"a friend; slang\"",
+    "\"adults at school; formal\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 0,
+   "u": "Aanhef verraadt publiek. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"classmates; informal\"\"? Dan denk je dat het publiek klasgenoten zijn. De tekst spreekt de directeur aan, dus het register is formeel.",
+    "Koos je \"\"small children; very simple\"\"? Dan denk je dat het publiek kinderen is. De zinnen zijn volwassen, en niet eenvoudig.",
+    "Koos je \"\"a friend; slang\"\"? Dan denk je dat het publiek een vriend is. Er staat geen straattaal, en de toon is formeel.",
+    "Klopt: de aanhef met headteacher and teachers en de beleefde zinnen wijzen op een formeel publiek."
+   ],
+   "uh": "Wie is het publiek en welk register?",
+   "ctx": "Read the opening: \"Good morning, headteacher and teachers. I would like to put forward a proposal about the school canteen. I hope you will consider it carefully.\" Your teacher asks you who the audience is and what the register is."
+  },
+  {
+   "v": "Which statement is true?",
+   "o": [
+    "\"A uses an informal register and B a formal register\"",
+    "\"Both use the same formal register, you know, I think.\"",
+    "\"A is formal and B is informal.\"",
+    "\"Neither speaker has an audience.\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 0,
+   "u": "Register hoort bij het publiek. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: A gebruikt hey guys en een losse toon, B gebruikt good afternoon en een formele zin.",
+    "Koos je \"\"Both use the same formal register, you know, I think.\"\"? Dan denk je dat beide openingen even formeel zijn. A klinkt juist los, en B is formeel.",
+    "Koos je \"\"A is formal and B is informal.\"\"? Dan denk je dat de rollen omgekeerd zijn. Hey guys is informeel, en good afternoon is formeel.",
+    "Koos je \"\"Neither speaker has an audience.\"\"? Dan denk je dat er geen publiek is. Beide spreken een publiek aan, met een andere toon."
+   ],
+   "uh": "Welke bewering klopt?",
+   "ctx": "Two speakers open their talks. A: \"Hey guys! Ever wanted to skip homework? Well, I've got news!\" B: \"Good afternoon. Today I will explain the new homework policy.\" Your teacher asks you to compare the openings."
+  },
+  {
+   "v": "What does this part of the talk do?",
+   "o": [
+    "\"it gives the conclusion\"",
+    "\"it answers questions from the audience, really\"",
+    "\"it announces the structure of the talk\"",
+    "\"it gives an example of a solution\""
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 1,
+   "u": "Structuur aankondigen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"it gives the conclusion\"\"? Dan denk je dat het het slot is. Het komt aan het begin, en kondigt alleen aan.",
+    "Koos je \"\"it answers questions from the audience, really\"\"? Dan denk je dat het vragen beantwoordt. Er is nog geen vraag, en de speaker kondigt alleen aan.",
+    "Klopt: first, then en finally kondigen aan wat het publiek kan verwachten.",
+    "Koos je \"\"it gives an example of a solution\"\"? Dan denk je dat het een voorbeeld geeft. Het noemt alleen de stappen, en geeft geen voorbeeld."
+   ],
+   "uh": "Wat doet dit deel?",
+   "ctx": "Read the part of a talk: \"First, I'll tell you about the problem. Then I'll show two solutions. Finally, I'll ask for your opinion.\" The speaker says this right after saying hello and naming the topic."
+  },
+  {
+   "v": "What does the conclusion contain?",
+   "o": [
+    "\"a new argument and a joke\"",
+    "\"a summary and a call to action\"",
+    "\"an apology and a question\"",
+    "\"the introduction of the topic, I think\""
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 1,
+   "u": "Slot = samenvatting + oproep. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"a new argument and a joke\"\"? Dan denk je dat een slot nieuwe argumenten heeft. Hier staat een samenvatting, en geen nieuw argument.",
+    "Klopt: in conclusion vat samen en so please try it is een oproep tot actie.",
+    "Koos je \"\"an apology and a question\"\"? Dan denk je dat de speaker zich verontschuldigt. Er staat geen verontschuldiging, en geen vraag.",
+    "Koos je \"\"the introduction of the topic, I think\"\"? Dan denk je dat het slot het onderwerp opent. Het onderwerp is al behandeld, dus het is afsluiting."
+   ],
+   "uh": "Wat bevat het slot?",
+   "ctx": "Read the closing of a talk: \"In conclusion, I've shown that cycling is cheap, healthy and good for the environment. So please try it this week. Thank you.\" The audience applauds."
+  },
+  {
+   "v": "Which phrase signals the last main point?",
+   "o": [
+    "\"First of all\"",
+    "\"Secondly\"",
+    "\"let's look at the costs, to be honest\"",
+    "\"Moving on to my last point\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 2,
+   "u": "My last point = laatste punt. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"First of all\"\"? Dan denk je dat first of all het laatste punt aankondigt. Het opent het eerste punt, en niet het laatste.",
+    "Koos je \"\"Secondly\"\"? Dan denk je dat secondly het laatste punt aankondigt. Het hoort bij het tweede punt, en niet het laatste.",
+    "Koos je \"\"let's look at the costs, to be honest\"\"? Dan denk je dat dit het laatste punt inleidt. Het is de inhoud van het eerste punt, en geen aankondiging.",
+    "Klopt: my last point kondigt het laatste kernpunt aan."
+   ],
+   "uh": "Welke woorden kondigen het laatste punt aan?",
+   "ctx": "Read the middle of a talk: \"First of all, let's look at the costs. Secondly, there is the question of time. Moving on to my last point: safety.\" You must find the signal for the final point."
+  },
+  {
+   "v": "What does 'Now, turning to' do?",
+   "o": [
+    "\"it signals a move to the next point\"",
+    "\"it ends the talk\"",
+    "\"it asks a question\"",
+    "\"it gives an example, I suppose, really\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 2,
+   "u": "Now, turning to = overgang. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: now, turning to kondigt het volgende kernpunt aan en rondt het vorige af.",
+    "Koos je \"\"it ends the talk\"\"? Dan denk je dat het einde wordt aangekondigd. De talk gaat verder met waste, dus het is geen einde.",
+    "Koos je \"\"it asks a question\"\"? Dan denk je dat het een vraag stelt. Er staat geen vraagteken, en de zin gaat verder.",
+    "Koos je \"\"it gives an example, I suppose, really\"\"? Dan denk je dat het een voorbeeld inleidt. Het leidt het volgende punt in, en geeft geen voorbeeld."
+   ],
+   "uh": "Wat doet 'now, turning to'?",
+   "ctx": "Read the transition: \"That's all I wanted to say about energy. Now, turning to waste ...\" The speaker pauses, looks at the audience and moves to the next slide."
+  },
+  {
+   "v": "Which technique does the speaker use to attract attention?",
+   "o": [
+    "\"a long list of statistics\"",
+    "\"a quote from a famous person, you know, I think, I suppose\"",
+    "\"imagine and a question to involve the audience\"",
+    "\"a joke about the teacher\""
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 3,
+   "u": "Imagine en vraag = aandacht. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"a long list of statistics\"\"? Dan denk je dat cijfers de aandacht trekken. Er staan geen cijfers, maar een voorstelling.",
+    "Koos je \"\"a quote from a famous person, you know, I think, I suppose\"\"? Dan denk je dat er een citaat staat. Er staat geen citaat, maar een denkbeeld.",
+    "Klopt: imagine en een vraag betrekken het publiek meteen bij het onderwerp.",
+    "Koos je \"\"a joke about the teacher\"\"? Dan denk je dat er een grap staat. De tekst is serieus, en gaat over water."
+   ],
+   "uh": "Welke techniek trekt de aandacht?",
+   "ctx": "Read the opening of a talk: \"Imagine you wake up and there is no more water. What would you do? That's what happened in Cape Town in 2018.\" The speaker pauses and looks at the audience."
+  },
+  {
+   "v": "What is wrong?",
+   "o": [
+    "\"the slides are too colourful\"",
+    "\"the slides contain too much text and the speaker only reads them\"",
+    "\"the speaker looks at the audience, really, to be honest, you know\"",
+    "\"the talk is too short\""
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 3,
+   "u": "Korte dia's en geen voorlezen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"the slides are too colourful\"\"? Dan denk je dat kleur het probleem is. De tekst noemt kleur niet, maar tekst en voorlezen.",
+    "Klopt: te veel tekst en alleen voorlezen verliest het publiek, kort en visueel werkt beter.",
+    "Koos je \"\"the speaker looks at the audience, really, to be honest, you know\"\"? Dan denk je dat oogcontact het probleem is. Oogcontact is juist goed, en hij leest voor.",
+    "Koos je \"\"the talk is too short\"\"? Dan denk je dat de lengte het probleem is. Het gaat om de inhoud van de dia's, en het voorlezen."
+   ],
+   "uh": "Wat gaat er mis?",
+   "ctx": "A speaker shows slides with eighty words each in a small font, and reads every slide aloud word for word. After five minutes half of the audience is looking out of the window."
+  },
+  {
+   "v": "Which two things does the speaker do?",
+   "o": [
+    "\"starts a new topic and apologises, I think\"",
+    "\"gives a new argument and thanks\"",
+    "\"ends without inviting questions\"",
+    "\"announces the end and invites questions\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 4,
+   "u": "Einde aankondigen + vragen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"starts a new topic and apologises, I think\"\"? Dan denk je dat er een nieuw onderwerp begint. Het is een afsluiting, en er is geen verontschuldiging.",
+    "Koos je \"\"gives a new argument and thanks\"\"? Dan denk je dat er een nieuw argument komt. Het is een afsluiting, zonder nieuwe inhoud.",
+    "Koos je \"\"ends without inviting questions\"\"? Dan denk je dat vragen ontbreken. If you have any questions staat in de tekst, dus die nodigt uit.",
+    "Klopt: that brings me to the end sluit af en I'd be happy to answer them nodigt uit tot vragen."
+   ],
+   "uh": "Wat doet de spreker?",
+   "ctx": "Read the closing of a talk: \"That brings me to the end of my talk. Thank you for listening. If you have any questions, I'd be happy to answer them.\" The audience starts clapping."
+  },
+  {
+   "v": "How does the speaker handle the question?",
+   "o": [
+    "\"honestly and politely, with a promise\"",
+    "\"by ignoring it\"",
+    "\"by inventing a figure, to be honest, you know\"",
+    "\"by getting angry\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 4,
+   "u": "Eerlijk, beleefd en belofte. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: good question is beleefd, I don't have the exact figure is eerlijk en I'll email it is een belofte.",
+    "Koos je \"\"by ignoring it\"\"? Dan denk je dat de spreker het negeert. Hij antwoordt direct, en belooft later het cijfer.",
+    "Koos je \"\"by inventing a figure, to be honest, you know\"\"? Dan denk je dat de spreker een bedrag verzint. Hij zegt juist dat hij het niet weet, en belooft het uit te zoeken.",
+    "Koos je \"\"by getting angry\"\"? Dan denk je dat de spreker boos is. Hij zegt good question, en blijft vriendelijk."
+   ],
+   "uh": "Hoe gaat de spreker met de vraag om?",
+   "ctx": "Read the Q&A: A: \"How much does it cost?\" Speaker: \"Good question. I don't have the exact figure here, but I'll email it to you tomorrow.\" A nods and writes the speaker's address down."
+  }
+ ],
+ "oe": [
+  {
+   "bron": "Examenstijl",
+   "ctx": "You must give a short talk to the first-year students of your school about how to get used to a new school. You want to help them and make them feel welcome. You have two minutes.",
+   "v": "Write the introduction of your talk in English, with a greeting, your topic and what you will cover.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Een passende groet voor het publiek (1p). Het onderwerp genoemd (1p). Een korte aankondiging van de kernpunten (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "You are giving a presentation to your class on why teenagers should sleep more. You want to attract the audience's attention at the very start of your talk.",
+   "v": "Write an opening of two sentences with a rhetorical question.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Een retorische vraag (1p). Een zin die het publiek erbij betrekt (1p). Een duidelijke link met het onderwerp (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "In the middle of your talk you have finished your first main point about the benefits of sleep, and you want to move on to your second point, about the dangers of too little sleep.",
+   "v": "Write what you say to signal the transition.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Een afronding van punt 1, zoals that was my first point (1p). Een signaalwoord, zoals now let us move on to (1p). De aankondiging van punt 2 (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "You must end your presentation about sleep with a conclusion. You want to summarise your three main points and ask the audience to do something in the coming week.",
+   "v": "Write the closing of your talk in English.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Een samenvatting, zoals to sum up (1p). Een oproep tot actie (1p). Een bedankje en uitnodiging voor vragen (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "After your talk a teacher asks: \"How do you know that teenagers need nine hours of sleep?\" You read this on a website, but you cannot remember which one right now.",
+   "v": "Write what you answer, honestly and politely.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Een beleefde start, zoals good question (1p). Eerlijk zeggen dat je het niet precies weet (1p). Aanbieden het op te zoeken (1p)."
+  }
+ ]
+}
