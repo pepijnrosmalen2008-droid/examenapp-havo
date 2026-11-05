@@ -1,0 +1,682 @@
+{
+ "id": "D7",
+ "lo": "en.D.7",
+ "gs": 2,
+ "naam": "Een tekst schrijven met een tekstverwerker en naslagmateriaal",
+ "beschrijving": "Je leert in het Engels een tekst te schrijven met een tekstverwerker en naslagmateriaal: je gebruikt opmaak en woordentelling, begrijpt wat de spellingcontrole wel en niet vindt, zoekt woorden op in een woordenboek of thesaurus en proeflees je tekst.",
+ "ceStatus": "SE",
+ "binas": "",
+ "val": "",
+ "onderwerpen": [
+  "Tekstverwerker gebruiken",
+  "Grenzen van de spellingcontrole",
+  "Woordenboek gebruiken",
+  "Andere naslagwerken kritisch gebruiken",
+  "Controleren en verbeteren"
+ ],
+ "sam": "Met een tekstverwerker gebruik je opmaak en de woordenaantal-functie. De spellingcontrole vindt alleen woorden die niet bestaan en mist goed gespelde woorden op de verkeerde plek, zoals their en there. In een woordenboek zoek je betekenis, woordsoort en voorbeeldzin op; een thesaurus geeft synoniemen en een grammaticagids legt regels uit. Controleer vertalingen kritisch en sluit af met proeflezen, bij voorkeur hardop.",
+ "begrippen": [
+  {
+   "t": "Tekstverwerker",
+   "d": "Een programma waarmee je teksten typt en opmaakt."
+  },
+  {
+   "t": "Spellingcontrole",
+   "d": "Een functie die verkeerd gespelde woorden markeert."
+  },
+  {
+   "t": "Opmaak",
+   "d": "Kopjes, alinea's en lettertype van een tekst."
+  },
+  {
+   "t": "Woordenaantal",
+   "d": "Het aantal woorden van je tekst."
+  },
+  {
+   "t": "Woordenboek",
+   "d": "Een boek of site waar je betekenis opzoekt."
+  },
+  {
+   "t": "Eentalig woordenboek",
+   "d": "Een woordenboek dat Engels in het Engels uitlegt."
+  },
+  {
+   "t": "Woordsoort",
+   "d": "Of een woord een werkwoord of zelfstandig naamwoord is."
+  },
+  {
+   "t": "Voorbeeldzin",
+   "d": "Een zin in het woordenboek die het gebruik laat zien."
+  },
+  {
+   "t": "Synoniem",
+   "d": "Een woord met een vergelijkbare betekenis."
+  },
+  {
+   "t": "Thesaurus",
+   "d": "Een naslagwerk met synoniemen."
+  },
+  {
+   "t": "Grammaticagids",
+   "d": "Een naslagwerk over grammaticaregels."
+  },
+  {
+   "t": "Proeflezen",
+   "d": "Je tekst zorgvuldig nalezen om fouten te vinden."
+  }
+ ],
+ "sv": [
+  {
+   "v": "What does a spell checker do?",
+   "o": [
+    "\"it understands what you want to say, I think, I suppose\"",
+    "\"it marks words that are spelled incorrectly\"",
+    "\"it makes your text more interesting\"",
+    "\"it translates your text\""
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 0,
+   "u": "Spellingcontrole = spelling. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"it understands what you want to say, I think, I suppose\"\"? Dan denk je dat de controle de betekenis begrijpt. Hij kijkt alleen naar woorden, niet naar je bedoeling.",
+    "Klopt: een spellingcontrole markeert woorden die niet in zijn woordenlijst staan.",
+    "Koos je \"\"it makes your text more interesting\"\"? Dan denk je dat de controle je tekst verbetert. Hij controleert alleen spelling, en niet de inhoud.",
+    "Koos je \"\"it translates your text\"\"? Dan denk je dat de controle vertaalt. Dat is een andere functie, en geen spellingcontrole."
+   ],
+   "uh": "Wat doet een spellingcontrole?"
+  },
+  {
+   "v": "Which function counts the words of your text?",
+   "o": [
+    "\"the spell checker, to be honest\"",
+    "\"the thesaurus\"",
+    "\"the dictionary\"",
+    "\"the word count function\""
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 0,
+   "u": "Woordtelling = aantal woorden. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"the spell checker, to be honest\"\"? Dan denk je dat de spellingcontrole woorden telt. Hij zoekt fouten, en telt niets.",
+    "Koos je \"\"the thesaurus\"\"? Dan denk je dat de thesaurus woorden telt. Hij geeft synoniemen, en telt niets.",
+    "Koos je \"\"the dictionary\"\"? Dan denk je dat het woordenboek woorden telt. Het legt woorden uit, en telt er geen.",
+    "Klopt: de woordtelling geeft het aantal woorden van je tekst."
+   ],
+   "uh": "Welke functie telt de woorden?"
+  },
+  {
+   "v": "Which sentence has a mistake that a spell checker will NOT find?",
+   "o": [
+    "\"I put my books over their.\"",
+    "\"I put my bookz over there, I suppose.\"",
+    "\"I put my boks over there.\"",
+    "\"I put my books ovr there.\""
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 1,
+   "u": "Juist gespeld, verkeerd woord. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: their is correct gespeld maar hier fout, de controle ziet dat niet.",
+    "Koos je \"\"I put my bookz over there, I suppose.\"\"? Dan denk je dat een z-fout aan het eind ontsnapt. Bookz staat in geen woordenlijst, dus de controle zet er een rode lijn onder.",
+    "Koos je \"\"I put my boks over there.\"\"? Dan denk je dat een ontbrekende letter niet opvalt. Boks is geen Engels woord voor boeken, en wordt dus gemarkeerd.",
+    "Koos je \"\"I put my books ovr there.\"\"? Dan denk je dat een weggelaten klinker over het hoofd wordt gezien. Ovr bestaat niet, dus de controle ziet die fout wel."
+   ],
+   "uh": "Welke fout vindt de controle niet?"
+  },
+  {
+   "v": "What does a dictionary entry tell you besides the meaning?",
+   "o": [
+    "\"the weather\"",
+    "\"the writer's opinion\"",
+    "\"the part of speech and an example sentence\"",
+    "\"the price of the book, you know, I think, I suppose\""
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 2,
+   "u": "Woordsoort en voorbeeldzin. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"the weather\"\"? Dan denk je dat een woordenboek het weer noemt. Het gaat over woorden, en niet over het weer.",
+    "Koos je \"\"the writer's opinion\"\"? Dan denk je dat een woordenboek meningen geeft. Het is feitelijk, en geeft geen mening.",
+    "Klopt: een woordenboek geeft ook de woordsoort en vaak een voorbeeldzin.",
+    "Koos je \"\"the price of the book, you know, I think, I suppose\"\"? Dan denk je dat de prijs bij een woord hoort. Dat staat niet in een lemma, maar op het boek."
+   ],
+   "uh": "Wat staat er nog meer in een woordenboek?"
+  },
+  {
+   "v": "Which dictionary explains English words in English?",
+   "o": [
+    "\"a bilingual dictionary, really, to be honest\"",
+    "\"a monolingual (English-English) dictionary\"",
+    "\"a picture book\"",
+    "\"a spell checker\""
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 2,
+   "u": "Eentalig = Engels met Engels. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"a bilingual dictionary, really, to be honest\"\"? Dan denk je dat een tweetalig woordenboek in het Engels uitlegt. Het vertaalt tussen twee talen, en legt niet in het Engels uit.",
+    "Klopt: een eentalig woordenboek legt Engelse woorden in het Engels uit.",
+    "Koos je \"\"a picture book\"\"? Dan denk je dat een prentenboek woorden uitlegt. Het is een verhaal, en geen woordenboek.",
+    "Koos je \"\"a spell checker\"\"? Dan denk je dat een spellingcontrole woorden uitlegt. Hij markeert alleen fouten, en legt niets uit."
+   ],
+   "uh": "Welk woordenboek legt in het Engels uit?"
+  },
+  {
+   "v": "What does a thesaurus give you?",
+   "o": [
+    "\"the translation of a word, I think, I suppose\"",
+    "\"the spelling of names\"",
+    "\"the page count of a text\"",
+    "\"synonyms, words with a similar meaning\""
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 3,
+   "u": "Thesaurus = synoniemen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"the translation of a word, I think, I suppose\"\"? Dan denk je dat een thesaurus vertaalt. Dat doet een tweetalig woordenboek, en geen thesaurus.",
+    "Koos je \"\"the spelling of names\"\"? Dan denk je dat een thesaurus namen spelt. Het gaat om betekenis, en niet om namen.",
+    "Koos je \"\"the page count of a text\"\"? Dan denk je dat een thesaurus pagina's telt. Dat doet de woordtelling, en niet een thesaurus.",
+    "Klopt: een thesaurus geeft synoniemen en woorden met een vergelijkbare betekenis."
+   ],
+   "uh": "Wat geeft een thesaurus?"
+  },
+  {
+   "v": "What is proofreading?",
+   "o": [
+    "\"reading your text carefully to find and correct mistakes\"",
+    "\"writing the first draft, to be honest, you know, I think\"",
+    "\"translating the text\"",
+    "\"counting the words\""
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 4,
+   "u": "Proeflezen = fouten zoeken. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: proeflezen is je tekst zorgvuldig nalezen om fouten te vinden en te verbeteren.",
+    "Koos je \"\"writing the first draft, to be honest, you know, I think\"\"? Dan denk je dat proeflezen het schrijven is. Het volgt na het schrijven, en is nalezen.",
+    "Koos je \"\"translating the text\"\"? Dan denk je dat proeflezen vertalen is. Het gaat om fouten, en niet om vertalen.",
+    "Koos je \"\"counting the words\"\"? Dan denk je dat proeflezen woorden tellen is. Dat is een andere functie, en geen nalezen."
+   ],
+   "uh": "Wat is proeflezen?"
+  },
+  {
+   "v": "Which feature helps most?",
+   "o": [
+    "\"making all the text bold\"",
+    "\"using many different fonts\"",
+    "\"using paragraphs and headings\"",
+    "\"writing everything in capitals, I suppose\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 0,
+   "u": "Alinea's en kopjes. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"making all the text bold\"\"? Dan denk je dat vet alles duidelijk maakt. Als alles opvalt, valt niets op, en het leest slecht.",
+    "Koos je \"\"using many different fonts\"\"? Dan denk je dat veel lettertypen netjes zijn. Het wordt rommelig, en leest moeilijker.",
+    "Klopt: alinea's en kopjes verdelen de tekst in duidelijke delen.",
+    "Koos je \"\"writing everything in capitals, I suppose\"\"? Dan denk je dat hoofdletters leesbaar zijn. Het lijkt schreeuwen, en leest slecht."
+   ],
+   "uh": "Welke functie helpt het meest?",
+   "ctx": "You type an e-mail in a word processor and you want to make the message easy to read by dividing it into clear parts, so that the reader can find the information easily."
+  },
+  {
+   "v": "What do you do?",
+   "o": [
+    "\"count the lines by hand, you know, I think, I suppose\"",
+    "\"use the word count function and cut if needed\"",
+    "\"ignore the limit\"",
+    "\"increase the font size\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 0,
+   "u": "Woordtelling gebruiken. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"count the lines by hand, you know, I think, I suppose\"\"? Dan denk je dat regels tellen genoeg is. Regels zeggen weinig over woorden, en het is niet nauwkeurig.",
+    "Klopt: de woordtelling geeft het exacte aantal, en als het te veel is, schrap je tekst.",
+    "Koos je \"\"ignore the limit\"\"? Dan denk je dat de grens niet telt. Je overschrijdt de opdracht, en verliest punten.",
+    "Koos je \"\"increase the font size\"\"? Dan denk je dat een groter lettertype het oplost. Het aantal woorden blijft hetzelfde, en dat is het probleem."
+   ],
+   "uh": "Wat doe je?",
+   "ctx": "Your teacher requires a text of at most 250 words, and you notice that your text seems to be much longer. You are using a word processor and want to check the length quickly and exactly."
+  },
+  {
+   "v": "Why does the checker not mark it?",
+   "o": [
+    "\"the checker only works in Dutch, really, to be honest, you know\"",
+    "\"the checker is broken\"",
+    "\"the sentence has no verb\"",
+    "\"see is a correct word, so the checker does not know you meant sea\""
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 1,
+   "u": "Juist woord, verkeerd gebruikt. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"the checker only works in Dutch, really, to be honest, you know\"\"? Dan denk je dat de controle alleen Nederlands kan. Hij werkt in de taal die je instelt, en dat is hier Engels.",
+    "Koos je \"\"the checker is broken\"\"? Dan denk je dat de controle kapot is. Hij werkt prima, maar kijkt alleen naar spelling.",
+    "Koos je \"\"the sentence has no verb\"\"? Dan denk je dat het ontbrekende werkwoord de reden is. De zin heeft going, en dat is niet de reden.",
+    "Klopt: see bestaat als woord, dus de controle markeert het niet, ook al bedoel je sea."
+   ],
+   "uh": "Waarom markeert de controle het niet?",
+   "ctx": "You write in your text: \"I'm going to the see.\" The spell checker finds no mistake in this sentence, so you wonder why. You want to understand why the tool does not mark this word."
+  },
+  {
+   "v": "What should you do?",
+   "o": [
+    "\"check the meaning in a dictionary before accepting\"",
+    "\"always accept the first suggestion, I think, I suppose\"",
+    "\"ignore all red lines\"",
+    "\"delete the word\""
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 1,
+   "u": "Controleer in het woordenboek. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: een woordenboek laat zien welk woord past, in plaats van blind een suggestie te volgen.",
+    "Koos je \"\"always accept the first suggestion, I think, I suppose\"\"? Dan denk je dat de eerste suggestie altijd goed is. Het kan een ander woord zijn, met een andere betekenis.",
+    "Koos je \"\"ignore all red lines\"\"? Dan denk je dat rode lijnen niets uitmaken. Ze wijzen op mogelijke fouten, en moeten bekeken worden.",
+    "Koos je \"\"delete the word\"\"? Dan denk je dat weghalen de oplossing is. Je mist dan je boodschap, en lost niets op."
+   ],
+   "uh": "Wat doe je met de suggestie?",
+   "ctx": "The spell checker suggests changing your word \"complement\" to \"compliment\", but you are not sure which one fits your sentence about praising a friend's work. You want to decide carefully."
+  },
+  {
+   "v": "What does the part of speech tell you?",
+   "o": [
+    "\"that affect is a noun, so the sentence is correct, to be honest\"",
+    "\"that the sentence needs no change\"",
+    "\"that affect is a verb, so you need the noun effect here\"",
+    "\"that you should add a second verb\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 2,
+   "u": "Woordsoort controleren. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"that affect is a noun, so the sentence is correct, to be honest\"\"? Dan denk je dat affect een zelfstandig naamwoord is. Het woordenboek zegt verb, dus de zin is fout.",
+    "Koos je \"\"that the sentence needs no change\"\"? Dan denk je dat de zin klopt. Een verb past niet na the, dus er is wel een fout.",
+    "Klopt: affect is een werkwoord, op die plek hoort het zelfstandig naamwoord effect.",
+    "Koos je \"\"that you should add a second verb\"\"? Dan denk je dat er een werkwoord bij moet. Je hebt een zelfstandig naamwoord nodig, en geen werkwoord."
+   ],
+   "uh": "Wat vertelt de woordsoort?",
+   "ctx": "You look up \"affect\" in a dictionary and see that it is a verb. In your text you wrote: \"The affect of sleep is big.\" You want to decide whether the word is used correctly in this sentence."
+  },
+  {
+   "v": "What do you learn from the example?",
+   "o": [
+    "\"depend is followed by of\"",
+    "\"depend is followed by on\"",
+    "\"depend is followed by at\"",
+    "\"depend needs no preposition\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 2,
+   "u": "Voorbeeldzin toont voorzetsel. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"depend is followed by of\"\"? Dan denk je dat depend of past omdat de Nederlandse vorm met van klinkt. Het voorbeeld toont on, en niet of.",
+    "Klopt: het voorbeeld laat zien dat depend wordt gevolgd door on.",
+    "Koos je \"\"depend is followed by at\"\"? Dan denk je dat een plaatsvoorzetsel als at bij depend hoort. In het voorbeeld staat on, dus at is fout.",
+    "Koos je \"\"depend needs no preposition\"\"? Dan denk je dat depend zonder voorzetsel kan, zoals in het Nederlands afhangen. Het voorbeeld heeft toch on, dus het voorzetsel is verplicht."
+   ],
+   "uh": "Wat leer je van het voorbeeld?",
+   "ctx": "You do not know which preposition goes with the verb \"depend\". The dictionary example says: \"It depends on the weather.\" You want to use the verb correctly in your own sentence."
+  },
+  {
+   "v": "Which tool helps?",
+   "o": [
+    "\"a spell checker\"",
+    "\"a word counter\"",
+    "\"a map\"",
+    "\"a thesaurus\""
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 3,
+   "u": "Thesaurus = alternatieven. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"a spell checker\"\"? Dan denk je dat de spellingcontrole alternatieven geeft. Hij kijkt alleen naar spelling, en geeft geen synoniemen.",
+    "Koos je \"\"a word counter\"\"? Dan denk je dat de woordtelling alternatieven geeft. Hij telt alleen woorden, en geeft geen synoniemen.",
+    "Koos je \"\"a map\"\"? Dan denk je dat een kaart woorden geeft. Een kaart toont plaatsen, en geen synoniemen.",
+    "Klopt: een thesaurus geeft synoniemen voor nice, zoals lovely of pleasant."
+   ],
+   "uh": "Welk hulpmiddel helpt?",
+   "ctx": "You have used the word \"nice\" five times in a short text about your holiday, and your teacher says your word choice is repetitive. You want to find other words with a similar meaning."
+  },
+  {
+   "v": "What should you do with the result?",
+   "o": [
+    "\"check it, because translators can make mistakes\"",
+    "\"trust it completely\"",
+    "\"use it without reading it\"",
+    "\"hand it in as your own writing, really, to be honest\""
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 3,
+   "u": "Controleer een vertaling. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: vertaalprogramma's maken fouten, dus controleer de zin in een woordenboek of met je eigen kennis.",
+    "Koos je \"\"trust it completely\"\"? Dan denk je dat een computer nooit fouten maakt. Vertalers maken vaak fouten, vooral bij vaste uitdrukkingen.",
+    "Koos je \"\"use it without reading it\"\"? Dan denk je dat lezen niet nodig is. Je ziet dan niet wat er staat, en je kunt fouten missen.",
+    "Koos je \"\"hand it in as your own writing, really, to be honest\"\"? Dan denk je dat het van jou is. De zin komt van de vertaler, en dat is oneerlijk."
+   ],
+   "uh": "Wat doe je met het resultaat?",
+   "ctx": "An online translator turns your Dutch sentence into English. You want to use the result in your text, but you know that machine translation is not always reliable, particularly for idioms."
+  },
+  {
+   "v": "Which method helps most?",
+   "o": [
+    "\"read it only once, quickly\"",
+    "\"rely on the spell checker only\"",
+    "\"read the text aloud slowly\"",
+    "\"send it immediately\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 4,
+   "u": "Hardop lezen vindt fouten. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"read it only once, quickly\"\"? Dan denk je dat snel lezen genoeg is. Je mist dan fouten, en leest er overheen.",
+    "Koos je \"\"rely on the spell checker only\"\"? Dan denk je dat de controle alles vindt. Hij mist juist goed gespelde verkeerde woorden, zoals their en there.",
+    "Klopt: hardop en langzaam lezen laat je fouten horen en zien die je anders mist.",
+    "Koos je \"\"send it immediately\"\"? Dan denk je dat direct opsturen handig is. Je controleert niets, en fouten blijven staan."
+   ],
+   "uh": "Welke methode helpt het meest?",
+   "ctx": "You finished the first version of your essay and you want to find as many mistakes as possible before you hand it in. You have a quiet half hour and want an effective method."
+  },
+  {
+   "v": "Why do you save a copy first?",
+   "o": [
+    "\"to make the file bigger\"",
+    "\"so that you can go back to an earlier version\"",
+    "\"to avoid proofreading\"",
+    "\"because the checker requires it, to be honest, you know\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 4,
+   "u": "Kopie = terug kunnen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"to make the file bigger\"\"? Dan denk je dat een grotere file beter is. Dat is geen doel, en niet nuttig.",
+    "Klopt: een kopie laat je terug naar een eerdere versie als de wijziging niet bevalt.",
+    "Koos je \"\"to avoid proofreading\"\"? Dan denk je dat een kopie het nalezen overbodig maakt. Je moet nog steeds nalezen, en een kopie helpt daar niet bij.",
+    "Koos je \"\"because the checker requires it, to be honest, you know\"\"? Dan denk je dat de controle een kopie eist. Dat is niet zo, het is je eigen keuze."
+   ],
+   "uh": "Waarom bewaar je een kopie?",
+   "ctx": "Before you make large changes to your essay you save a copy of the file under a new name. Your friend asks why you do this, since it takes extra time and the word processor also has an undo button."
+  },
+  {
+   "v": "What mistake remains after the spelling is corrected?",
+   "o": [
+    "\"the noun letter\"",
+    "\"the word yesterday, I suppose, really, to be honest\"",
+    "\"the pronoun I\"",
+    "\"the verb should be received (past tense)\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 0,
+   "u": "Tijd controleert de checker niet. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"the noun letter\"\"? Dan denk je dat letter fout is. Het woord is goed gespeld en past, dus dat klopt niet.",
+    "Koos je \"\"the word yesterday, I suppose, really, to be honest\"\"? Dan denk je dat yesterday fout is. Het woord is goed, en het wijst op de verleden tijd.",
+    "Koos je \"\"the pronoun I\"\"? Dan denk je dat I fout is. Het is een correct onderwerp, dus dat klopt niet.",
+    "Klopt: yesterday vraagt om de verleden tijd, en dat ziet de spellingcontrole niet."
+   ],
+   "uh": "Welke fout blijft over?",
+   "ctx": "Read the sentence: \"I recieve your letter yesterday.\" The spell checker underlines 'recieve' and you correct it to 'receive'. Your teacher then says there is still a mistake that the checker did not mark."
+  },
+  {
+   "v": "Which formatting makes the text easier to read?",
+   "o": [
+    "\"clear headings and short paragraphs\"",
+    "\"a very small font\"",
+    "\"all text in capitals\"",
+    "\"no spaces between paragraphs, you know\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 0,
+   "u": "Kopjes en korte alinea's. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: kopjes en korte alinea's maken het overzicht beter en de tekst makkelijker te lezen.",
+    "Koos je \"\"a very small font\"\"? Dan denk je dat een klein lettertype ruimte bespaart. Het leest slecht, en is vermoeiend.",
+    "Koos je \"\"all text in capitals\"\"? Dan denk je dat hoofdletters opvallen. Het lijkt schreeuwen, en leest slecht.",
+    "Koos je \"\"no spaces between paragraphs, you know\"\"? Dan denk je dat geen ruimte netter is. De alinea's lopen in elkaar, en de tekst oogt als één blok."
+   ],
+   "uh": "Welke opmaak leest het best?",
+   "ctx": "A student compares two versions of the same text in a word processor. In one version the title is bold, there are headings and the paragraphs are short. In the other version the text is one huge block."
+  },
+  {
+   "v": "Which words are correct spellings but wrong here?",
+   "o": [
+    "\"beach and went\"",
+    "\"parents and came, really, to be honest, you know\"",
+    "\"too (should be to) and there (should be their)\"",
+    "\"we and the\""
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 1,
+   "u": "Juist gespeld, fout gebruikt. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"beach and went\"\"? Dan denk je dat beach en went fout zijn. Ze zijn correct, en passen in de zin.",
+    "Koos je \"\"parents and came, really, to be honest, you know\"\"? Dan denk je dat parents en came fout zijn. Ze zijn goed gespeld en passend, dus dat klopt niet.",
+    "Klopt: too en there bestaan wel, maar hier horen to en their.",
+    "Koos je \"\"we and the\"\"? Dan denk je dat we en the fout zijn. Ze zijn correct en op de goede plek, dus dat klopt niet."
+   ],
+   "uh": "Welke woorden zijn fout gebruikt?",
+   "ctx": "Read the sentence: \"We went too the beach, there parents came to.\" The spell checker finds no mistakes in it, but your teacher says there are three words wrong. You must find the correct spellings that are used in the wrong place."
+  },
+  {
+   "v": "What is wrong?",
+   "o": [
+    "\"would should be will\"",
+    "\"except should be accept, and the checker does not notice it\"",
+    "\"invitation is misspelled, I think, I suppose, really\"",
+    "\"like should be liked\""
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 1,
+   "u": "Echt woord, verkeerd gebruikt. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"would should be will\"\"? Dan denk je dat would fout is. Would like to is juist beleefd, dus dat klopt.",
+    "Klopt: except en accept zijn allebei echte woorden, dus de controle merkt de fout niet op.",
+    "Koos je \"\"invitation is misspelled, I think, I suppose, really\"\"? Dan denk je dat invitation fout gespeld is. Het is correct, dus dat klopt niet.",
+    "Koos je \"\"like should be liked\"\"? Dan denk je dat like fout is. Would like to is de goede vorm, dus dat klopt niet."
+   ],
+   "uh": "Wat is er mis?",
+   "ctx": "Read the sentence: \"I would like to except your invitation.\" The spell checker does not mark any word. Your teacher says that one word is wrong and asks you to explain why the tool did not find it."
+  },
+  {
+   "v": "Which sense fits \"The film made me cry\"?",
+   "o": [
+    "\"create or produce\"",
+    "\"a cake\"",
+    "\"a noun\"",
+    "\"force or cause\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 2,
+   "u": "Kies de juiste betekenis. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"create or produce\"\"? Dan denk je dat make hier maken betekent. Een film maakt geen tranen, maar veroorzaakt een reactie.",
+    "Koos je \"\"a cake\"\"? Dan denk je dat de zin over taart gaat. Het voorbeeld is she makes cakes, en past hier niet.",
+    "Koos je \"\"a noun\"\"? Dan denk je dat make hier een zelfstandig naamwoord is. Het woordenboek zegt verb, dus dat klopt niet.",
+    "Klopt: de film zorgde ervoor dat ik huilde, dat is make in de betekenis cause, zoals in he made me laugh."
+   ],
+   "uh": "Welke betekenis past?",
+   "ctx": "Read the dictionary entry: \"make (verb) 1 create or produce: She makes cakes. 2 force or cause: He made me laugh.\" You want to use the right sense in the sentence \"The film made me cry.\""
+  },
+  {
+   "v": "What can you learn from this entry?",
+   "o": [
+    "\"rely is followed by on\"",
+    "\"rely is followed by with\"",
+    "\"rely is a noun\"",
+    "\"rely is always negative\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 2,
+   "u": "Rely on = vaste combinatie. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: rely on is een vaste combinatie, rely wordt gevolgd door on.",
+    "Koos je \"\"rely is followed by with\"\"? Dan denk je dat rely met with gaat. Het voorbeeld heeft on, dus dat klopt niet.",
+    "Koos je \"\"rely is a noun\"\"? Dan denk je dat rely een zelfstandig naamwoord is. Het woordenboek zegt phrasal verb, dus een werkwoord.",
+    "Koos je \"\"rely is always negative\"\"? Dan denk je dat rely negatief is. Het voorbeeld is positief, dus dat klopt niet."
+   ],
+   "uh": "Wat leer je uit dit lemma?",
+   "ctx": "Read the dictionary entry: \"rely on (phrasal verb): depend on someone: You can rely on me.\" A student wants to learn how to use this phrase correctly in her own text."
+  },
+  {
+   "v": "What should the student check before choosing?",
+   "o": [
+    "\"that it is the longest word\"",
+    "\"that it has the most letters, you know, I think, I suppose\"",
+    "\"that the synonym fits the context and the register\"",
+    "\"nothing; any synonym fits\""
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 3,
+   "u": "Synoniem moet passen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"that it is the longest word\"\"? Dan denk je dat een lang woord beter is. De lengte telt niet, wat telt is de betekenis.",
+    "Koos je \"\"that it has the most letters, you know, I think, I suppose\"\"? Dan denk je dat meer letters beter zijn. Dat zegt niets over de betekenis, en kan fout zijn.",
+    "Klopt: een synoniem moet passen bij de zin en de toon, anders klinkt het fout.",
+    "Koos je \"\"nothing; any synonym fits\"\"? Dan denk je dat elk synoniem past. Synoniemen verschillen in toon, en niet elk past overal."
+   ],
+   "uh": "Wat controleer je?",
+   "ctx": "A student writes \"very big\" in many places. The thesaurus gives: huge, enormous, vast. Her teacher says she should not just choose any synonym without thinking about the sentence."
+  },
+  {
+   "v": "What is wrong?",
+   "o": [
+    "\"hunger should be capitalised, really\"",
+    "\"in English you say I am hungry\"",
+    "\"have should be has\"",
+    "\"nothing is wrong\""
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 3,
+   "u": "Vertalers vertalen letterlijk. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"hunger should be capitalised, really\"\"? Dan denk je dat een hoofdletter de fout is. De spelling is niet het probleem, maar de constructie.",
+    "Klopt: in het Engels gebruik je to be met hungry, de letterlijke vertaling klopt niet.",
+    "Koos je \"\"have should be has\"\"? Dan denk je dat has beter is. Bij I hoort have, en het probleem is een andere constructie.",
+    "Koos je \"\"nothing is wrong\"\"? Dan denk je dat de zin klopt. Het is een letterlijke vertaling, en geen goed Engels."
+   ],
+   "uh": "Wat is er mis?",
+   "ctx": "A translator turns a Dutch sentence into English: \"I have hunger.\" Your teacher asks you to explain why this sentence is not correct English, and how a good writer would phrase it."
+  },
+  {
+   "v": "Which is a sensible first check?",
+   "o": [
+    "\"whether the font is Times New Roman, I think, I suppose\"",
+    "\"whether every comma is perfect\"",
+    "\"whether the file name is short\"",
+    "\"whether the text fits its purpose and audience\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 4,
+   "u": "Eerst doel en publiek. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"whether the font is Times New Roman, I think, I suppose\"\"? Dan denk je dat het lettertype eerst komt. Het is een detail, en volgt later.",
+    "Koos je \"\"whether every comma is perfect\"\"? Dan denk je dat komma's eerst komen. Dat is een detail, en hoort bij de laatste controle.",
+    "Koos je \"\"whether the file name is short\"\"? Dan denk je dat de bestandsnaam eerst komt. Het heeft niets met de inhoud te maken, en is bijzaak.",
+    "Klopt: eerst controleer je of de tekst past bij doel en lezer, daarna de details."
+   ],
+   "uh": "Wat controleer je eerst?",
+   "ctx": "A student has a checklist for her essay: spelling, punctuation, tenses, word choice and layout. She asks you what is the most sensible first thing to check, before she looks at the details."
+  },
+  {
+   "v": "What should she do?",
+   "o": [
+    "\"split it into two shorter sentences\"",
+    "\"add more commas without changing the sentence\"",
+    "\"delete the full stop\"",
+    "\"make it even longer\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 4,
+   "u": "Lange zin = splitsen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: een te lange zin splits je in twee kortere zinnen, dan leest hij makkelijker.",
+    "Koos je \"\"add more commas without changing the sentence\"\"? Dan denk je dat extra komma's de zin leesbaar maken. De zin blijft te lang, en wordt rommelig.",
+    "Koos je \"\"delete the full stop\"\"? Dan denk je dat de punt weghalen helpt. De zin wordt nog langer, en onduidelijker.",
+    "Koos je \"\"make it even longer\"\"? Dan denk je dat meer woorden beter zijn. Het wordt moeilijker te lezen, en is het probleem."
+   ],
+   "uh": "Wat doe je met de lange zin?",
+   "ctx": "After reading her text aloud, a student says: \"This sentence is so long that I run out of breath.\" Her teacher says that the sentence is probably hard for readers too."
+  }
+ ],
+ "oe": [
+  {
+   "bron": "Examenstijl",
+   "ctx": "You are writing an essay in English on a laptop. The spell checker has underlined five words in red, and one of them is \"definately\". You want to use the tool wisely and not just click on the first suggestion.",
+   "v": "Explain in English how you will deal with the red underlines and what the tool cannot do.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Controleren in een woordenboek of de suggestie klopt (1p). Benoemen dat de controle goed gespelde verkeerde woorden niet vindt (1p). Een voorbeeld, zoals their en there (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "You are writing an English text for your teacher and you are not sure which preposition goes with the verb \"depend\". You have a dictionary at hand and you want to be sure.",
+   "v": "Write what you look up, what you find and the correct sentence.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Opzoeken in een woordenboek (1p). Voorbeeldzin met on genoemd (1p). Een correcte eigen zin met depend on (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "You have used the word \"good\" six times in a text about your school. Your teacher asks you to vary your words, and you may use a thesaurus. You do not want to choose a word that sounds odd.",
+   "v": "Write three alternative words or phrases and say how you decide which one to use.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Drie passende alternatieven (1p). Controle van de betekenis in een woordenboek (1p). Aandacht voor de context en toon (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "You translated a Dutch sentence with an online translator and got: \"I am agree with you.\" You suspect that something is wrong and you want to check it with a reference book.",
+   "v": "Explain in English what is wrong and give the correct sentence.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Herkennen van de fout: am agree (1p). De juiste zin: I agree with you (1p). Uitleggen dat een vertaler fouten kan maken (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "You wrote an e-mail of 300 words for a teacher. You must check it before you send it, using a word processor. You have a little time and you want a plan to find as many mistakes as possible.",
+   "v": "Describe in English three steps of your checking plan.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Hardop of langzaam nalezen (1p). Spellingcontrole gebruiken met kritisch oog (1p). Controleren van tijden, woordkeuze of opmaak (1p)."
+  }
+ ]
+}

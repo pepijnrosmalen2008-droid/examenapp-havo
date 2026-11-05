@@ -5,7 +5,7 @@
 Volledige beschrijving (functies, inhoud per niveau, prijs, wat Slagio niet is): https://slagio.nl/llms-full.txt
 
 ## In het kort
-- 12 vakken havo, 16 vakken vwo, 12 vakken vmbo; 25.154 oefenvragen en 4.346 begrippen.
+- 12 vakken havo, 16 vakken vwo, 12 vakken vmbo; 25.181 oefenvragen en 4.346 begrippen.
 - Adaptief oefenen: na een fout een vraag over hetzelfde onderwerp, een niveau makkelijker; uitleg bij elk fout antwoord.
 - Foutenboek en herhalen met gespreide herhaling, beheersing per leerdoel, studieplan tot het examen.
 - Examens met klok, proefexamens in examenstijl met modelantwoord en puntenverdeling, archief met officiële oude examens.
@@ -179,6 +179,7 @@ Volledige beschrijving (functies, inhoud per niveau, prijs, wat Slagio niet is):
 - [Standpunten en argumenten opschrijven (Engels VWO)](https://slagio.nl/leren/vwo/engels/standpunten-en-argumenten-opschrijven.html): Je leert in het Engels een standpunt op te schrijven en met argumenten, uitleg en voorbeelden te onderbouwen, een tegenargument te weerleggen, een betoog op…
 - [Een verslag schrijven (Engels VWO)](https://slagio.nl/leren/vwo/engels/een-verslag-schrijven.html): Je leert in het Engels een verslag te schrijven met een titel, inleiding, methode, bevindingen, conclusie en aanbeveling, objectief en in de verleden tijd, en…
 - [Informatie presenteren voor doel en publiek (Engels VWO)](https://slagio.nl/leren/vwo/engels/informatie-presenteren-voor-doel-en-publiek.html): Je leert in het Engels informatie te presenteren die past bij je doel en je publiek: je kiest het juiste taalniveau en register, selecteert en ordent de…
+- [Een tekst schrijven met een tekstverwerker en naslagmateriaal (Engels VWO)](https://slagio.nl/leren/vwo/engels/een-tekst-schrijven-met-een-tekstverwerker-en-naslagmateriaal.html): Je leert in het Engels een tekst te schrijven met een tekstverwerker en naslagmateriaal: je gebruikt opmaak en woordentelling, begrijpt wat de…
 - [Feit en mening onderscheiden (Nederlands VMBO)](https://slagio.nl/leren/vmbo/nederlands/feit-en-mening-onderscheiden.html): Je hoort of ziet een tekst en weet of een uitspraak een feit of een mening is. Je let op woorden die een oordeel geven en je controleert wat te controleren is.
 - [De hoofdzaak en de kernboodschap vinden (Nederlands VMBO)](https://slagio.nl/leren/vmbo/nederlands/de-hoofdzaak-en-de-kernboodschap-vinden.html): Je luistert naar een gesproken tekst en vindt de hoofdzaak, de bijzaken en de kernboodschap, zodat je die kort en volledig kunt samenvatten.
 - [Het doel van de spreker herkennen (Nederlands VMBO)](https://slagio.nl/leren/vmbo/nederlands/het-doel-van-de-spreker-herkennen.html): Je hoort of ziet een tekst en herkent wat de spreker wil: informeren, overtuigen of amuseren. Je let op signalen zoals oproepen, meningen en grapjes.
