@@ -51,6 +51,17 @@
       "verwacht": 88,
       "laag": 68,
       "hoog": 108,
+      "uitkomst": 122,
+      "raak": false,
+      "afwijking": 34
+    },
+    {
+      "gedaan": "2026-11-05",
+      "voor": "2026-11-12",
+      "metriek": "betrokken dagbezoeken per week",
+      "verwacht": 135,
+      "laag": 105,
+      "hoog": 165,
       "uitkomst": null,
       "raak": null
     }
@@ -69,14 +80,24 @@
     },
     {
       "gestart": "2026-10-15",
-      "status": "loopt",
-      "resultaat": "Dagdoel gehaald: 37 betrokken en 46 nieuwe apparaten op 28 okt, met Klassenquiz 13 keer in de week (vorige week 1). Terugkeer van die instroomweek is pas volgende week meetbaar.",
+      "status": "mislukt",
+      "resultaat": "Eén klas speelde de klassenquiz (11 keer op 26 okt). Terugkeer van de instroomweek van 22 okt is 8%, doel was 25%. Het effect van de klas is niet los te zien.",
       "titel": "Eén klas activeren vóór zondagavond",
       "hypothese": "Leerlingen die Slagio met hun klas gebruiken, komen vaker terug dan leerlingen die het alleen vinden.",
       "actie": "Laat een docent of mentor de klassenquiz starten en noteer de datum en klas. Is dat al gebeurd op 27 of 28 oktober? Stuur mij die datum.",
       "meting": "Terugkeer van de instroomweek van 22 oktober (98 nieuwe leerlingen) en gebruik van Klassenquiz in de weekcijfers.",
       "doel": "Minstens 15 nieuwe betrokken leerlingen op één dag, en minstens 25% komt de week erna terug.",
       "bijgewerkt": "2026-10-29"
+    },
+    {
+      "gestart": "2026-11-05",
+      "status": "loopt",
+      "resultaat": "",
+      "titel": "De piekgroep van 29 oktober terughalen",
+      "hypothese": "Nieuwe leerlingen komen terug als ze een concreet, klein verzoek krijgen op het kanaal waar ze Slagio vonden.",
+      "actie": "Deel op de plek waar je Slagio het laatst deelde (groepsapp, klas, Instagram) één bericht met een kleine opdracht, bijvoorbeeld '5 vragen vandaag' met een directe link. Noteer de datum en de plek en stuur ze mij.",
+      "meting": "Terugkeer van de instroomweek van 29 oktober (169 nieuwe leerlingen) in de cohorten van volgende week.",
+      "doel": "Minstens 15% van die 169 leerlingen komt terug (het gemiddelde is 5% tot 9%)."
     }
   ],
   "backlog": [
@@ -199,6 +220,30 @@
       "waarom": "Simpele klussen (zoekvragen groeperen, korte samenvattingen) kunnen bij een open model voor bijna niets, zonder Pepijns laptop.",
       "bewijs": "Gesprek 23 okt: lokaal draaien op de HP 15-fc (geen losse videokaart) is te traag en de routines draaien in de cloud.",
       "voorstel": "Vergelijk een paar aanbieders op prijs, gratis laag en Nederlandse kwaliteit; koppel de beste achter één functie in scripts/social met Claude als vangnet. Eerst voorstel met kosten naar Pepijn."
+    },
+    {
+      "id": "B-11",
+      "gemaakt": "2026-11-05",
+      "status": "open",
+      "prioriteit": 2,
+      "grootte": "middel",
+      "soort": "content",
+      "titel": "Sjabloonzin uit de uitleg van Engelse en vmbo-vragen halen en de uitleg echt laten uitleggen",
+      "waarom": "Een leerling die een fout maakt leest de uitleg. 'Denk aan de regel die hierbij hoort' zegt niets en herhaalt soms het antwoord, waardoor de uitleg geen denkfout benoemt.",
+      "bewijs": "Telling van `u`-velden met 'Denk aan de regel die hierbij hoort' in gs:2-modules: vwo en 698/756, havo en 623/1129, vmbo nl 193/701. Voorbeeld vwo en A4: vraag 'Which part of the text is the example?' met uitleg 'Utrecht = voorbeeld.'",
+      "voorstel": "Voeg een poort toe aan check-leerdoel.mjs die de sjabloonzin afkeurt, haal hem uit de bestaande modules, en schrijf per vraag één zin die zegt welke redenering naar het goede antwoord leidt. Begin bij vwo en, daarna havo en."
+    },
+    {
+      "id": "B-12",
+      "gemaakt": "2026-11-05",
+      "status": "open",
+      "prioriteit": 2,
+      "grootte": "klein",
+      "soort": "bug",
+      "titel": "Twee kleine robuustheidsfouten oplossen: lookbehind-regex in schedule.js en array-controle in arcade.js",
+      "waarom": "Safari voor 16.4 laadt schedule.js niet, waardoor het rooster en de aftelklok kunnen ontbreken. De Arcade kan crashen bij een ander opslagformaat van mijnvakken.",
+      "bewijs": "schedule.js:687 `split(/(?<=[.!?])\\s+/)`; op 28 okt twee apparaten met `Invalid regular expression: invalid group specifier name` en `Can't find variable: renderSchedule` (init.js:400). arcade.js:249 `mijn.find(...)` zonder controle, tegen examenbieb.js:31 mét `Array.isArray`. Melding op 11 okt: `mijn.find is not a function`.",
+      "voorstel": "Splits de zin zonder lookbehind (split op /([.!?])\\s+/ en plak terug) en neem de Array.isArray-controle uit examenbieb.js:31 over. Bump de SW-cache."
     }
   ]
 }
