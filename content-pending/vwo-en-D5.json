@@ -1,0 +1,682 @@
+{
+ "id": "D5",
+ "lo": "en.D.5",
+ "gs": 2,
+ "naam": "Een verslag schrijven",
+ "beschrijving": "Je leert in het Engels een verslag te schrijven met een titel, inleiding, methode, bevindingen, conclusie en aanbeveling, objectief en in de verleden tijd, en gegevens met percentages en trends weer te geven.",
+ "ceStatus": "SE",
+ "binas": "",
+ "val": "",
+ "onderwerpen": [
+  "Doel en opbouw",
+  "Objectief en formeel schrijven",
+  "Gegevens en percentages",
+  "Trends beschrijven",
+  "Conclusie en aanbeveling"
+ ],
+ "sam": "Een verslag heeft een titel, een inleiding met het doel, een methode, bevindingen, een conclusie en een aanbeveling. Je schrijft objectief, in de verleden tijd en vaak in de lijdende vorm. Gegevens geef je weer met percentages en een trend met werkwoorden als rose en fell. Een conclusie volgt uit de bevindingen en een aanbeveling geeft een advies met I recommend that.",
+ "begrippen": [
+  {
+   "t": "Verslag",
+   "d": "Een tekst die feiten over een onderzoek geordend weergeeft."
+  },
+  {
+   "t": "Titel",
+   "d": "Een korte, duidelijke naam van het verslag."
+  },
+  {
+   "t": "Inleiding",
+   "d": "Het doel en onderwerp van het verslag."
+  },
+  {
+   "t": "Methode",
+   "d": "Hoe je het onderzoek hebt uitgevoerd."
+  },
+  {
+   "t": "Bevindingen",
+   "d": "De feiten en cijfers uit het onderzoek."
+  },
+  {
+   "t": "Conclusie",
+   "d": "Wat uit de bevindingen volgt."
+  },
+  {
+   "t": "Aanbeveling",
+   "d": "Een advies op grond van de resultaten."
+  },
+  {
+   "t": "Objectief",
+   "d": "Feitelijk, zonder eigen mening."
+  },
+  {
+   "t": "Lijdende vorm",
+   "d": "Een zinsvorm als It was found that ..., onpersoonlijk."
+  },
+  {
+   "t": "Verleden tijd",
+   "d": "De tijd voor wat al gedaan is."
+  },
+  {
+   "t": "Percentage",
+   "d": "Een deel van de honderd, zoals 50 per cent."
+  },
+  {
+   "t": "Trend",
+   "d": "De richting van veranderende cijfers: rise of fall."
+  }
+ ],
+ "sv": [
+  {
+   "v": "What is the purpose of a report?",
+   "o": [
+    "\"to entertain with a story, I think, I suppose\"",
+    "\"to give facts and information clearly\"",
+    "\"to persuade with emotion\"",
+    "\"to write a personal diary\""
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 0,
+   "u": "Verslag = feiten. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"to entertain with a story, I think, I suppose\"\"? Dan denk je dat een verslag een verhaal is. Een verhaal vermaakt, en een verslag informeert.",
+    "Klopt: een verslag geeft feiten en informatie duidelijk en geordend weer.",
+    "Koos je \"\"to persuade with emotion\"\"? Dan denk je dat een verslag overtuigt met gevoel. Dat doet een betoog, en een verslag blijft feitelijk.",
+    "Koos je \"\"to write a personal diary\"\"? Dan denk je dat een verslag persoonlijk is. Een dagboek is persoonlijk, en een verslag is objectief."
+   ],
+   "uh": "Wat is het doel van een verslag?"
+  },
+  {
+   "v": "Which sentence belongs in the introduction of a report?",
+   "o": [
+    "\"In conclusion, most pupils cycle, to be honest, you know, I think.\"",
+    "\"I think cycling is great.\"",
+    "\"Thank you for reading.\"",
+    "\"The aim of this report is to find out how pupils travel to school.\""
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 1,
+   "u": "Inleiding = doel. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"In conclusion, most pupils cycle, to be honest, you know, I think.\"\"? Dan denk je dat dit in de inleiding past. Het is een conclusie, en hoort aan het eind.",
+    "Koos je \"\"I think cycling is great.\"\"? Dan denk je dat een mening in de inleiding past. Het is subjectief, en niet feitelijk.",
+    "Koos je \"\"Thank you for reading.\"\"? Dan denk je dat een bedankje in de inleiding past. Het is een afsluiting, en geen doel.",
+    "Klopt: de inleiding noemt het doel van het verslag, hier hoe leerlingen naar school gaan."
+   ],
+   "uh": "Welke zin hoort in de inleiding?"
+  },
+  {
+   "v": "Which sentence belongs in the findings of a report?",
+   "o": [
+    "\"Of the 120 pupils surveyed, 60 cycle to school.\"",
+    "\"The aim of this report is to ...\"",
+    "\"I recommend that the school builds bike racks, I suppose.\"",
+    "\"In conclusion, cycling is popular.\""
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 1,
+   "u": "Bevindingen = feiten en cijfers. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: de bevindingen geven feiten en getallen uit het onderzoek.",
+    "Koos je \"\"The aim of this report is to ...\"\"? Dan denk je dat het doel bij de bevindingen hoort. Het doel staat in de inleiding, en niet bij de bevindingen.",
+    "Koos je \"\"I recommend that the school builds bike racks, I suppose.\"\"? Dan denk je dat een aanbeveling bij de bevindingen hoort. Die komt aan het eind, na de conclusie.",
+    "Koos je \"\"In conclusion, cycling is popular.\"\"? Dan denk je dat een conclusie bij de bevindingen hoort. Die staat aan het eind, en trekt een gevolgtrekking."
+   ],
+   "uh": "Welke zin hoort bij de bevindingen?"
+  },
+  {
+   "v": "Which sentence is objective?",
+   "o": [
+    "\"The lunch was disgusting.\"",
+    "\"Everybody obviously hates the canteen, you know.\"",
+    "\"Most pupils said that they were satisfied.\"",
+    "\"I feel the school is wonderful.\""
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 2,
+   "u": "Objectief = geen eigen oordeel. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"The lunch was disgusting.\"\"? Dan denk je dat dit objectief is. Het is een eigen oordeel, en dus subjectief.",
+    "Koos je \"\"Everybody obviously hates the canteen, you know.\"\"? Dan denk je dat obviously feiten geeft. Het is een overdrijving, en niet te bewijzen.",
+    "Klopt: de zin geeft weer wat leerlingen zeiden, zonder eigen mening.",
+    "Koos je \"\"I feel the school is wonderful.\"\"? Dan denk je dat feel een feit is. Het is een persoonlijk gevoel, en dus subjectief."
+   ],
+   "uh": "Welke zin is objectief?"
+  },
+  {
+   "v": "Which tense is normally used to report what was done in a survey?",
+   "o": [
+    "\"the future: We will ask 100 pupils.\"",
+    "\"the past tense: We asked 100 pupils.\"",
+    "\"the imperative: Ask 100 pupils!\"",
+    "\"the present continuous: We are asking 100 pupils.\""
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 2,
+   "u": "Onderzoek = verleden tijd. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"the future: We will ask 100 pupils.\"\"? Dan denk je dat de toekomst past. Het onderzoek is al gedaan, dus de verleden tijd.",
+    "Klopt: een uitgevoerd onderzoek beschrijf je in de verleden tijd.",
+    "Koos je \"\"the imperative: Ask 100 pupils!\"\"? Dan denk je dat een bevel past. Een verslag geeft geen opdracht, maar beschrijft.",
+    "Koos je \"\"the present continuous: We are asking 100 pupils.\"\"? Dan denk je dat het nu bezig is. Het onderzoek is afgelopen, dus de verleden tijd."
+   ],
+   "uh": "Welke tijd gebruik je?"
+  },
+  {
+   "v": "Which sentence describes a rise in numbers?",
+   "o": [
+    "\"The number of cyclists decreased from 40 to 60.\"",
+    "\"The number of cyclists stayed the same from 40 to 60.\"",
+    "\"The number of cyclists disappeared from 40 to 60.\"",
+    "\"The number of cyclists increased from 40 to 60.\""
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 3,
+   "u": "Increased = stijging. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"The number of cyclists decreased from 40 to 60.\"\"? Dan denk je dat decreased een stijging is. Het betekent afnemen, en 40 naar 60 is groter.",
+    "Koos je \"\"The number of cyclists stayed the same from 40 to 60.\"\"? Dan denk je dat het gelijk blijft. 40 en 60 zijn verschillend, dus er is een verandering.",
+    "Koos je \"\"The number of cyclists disappeared from 40 to 60.\"\"? Dan denk je dat disappeared een stijging is. Het betekent verdwijnen, en dat past niet.",
+    "Klopt: increased betekent toenemen en 40 naar 60 is een stijging."
+   ],
+   "uh": "Welke zin beschrijft een stijging?"
+  },
+  {
+   "v": "Which sentence is a recommendation?",
+   "o": [
+    "\"I recommend that the school builds more bike racks.\"",
+    "\"Sixty pupils cycle to school.\"",
+    "\"The survey took place in March, to be honest, you know.\"",
+    "\"The report is about cycling.\""
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 4,
+   "u": "Recommend = advies. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: I recommend that geeft een advies op grond van de resultaten.",
+    "Koos je \"\"Sixty pupils cycle to school.\"\"? Dan denk je dat dit een aanbeveling is. Het is een bevinding, en geen advies.",
+    "Koos je \"\"The survey took place in March, to be honest, you know.\"\"? Dan denk je dat dit een aanbeveling is. Het is een feit over de methode, en geen advies.",
+    "Koos je \"\"The report is about cycling.\"\"? Dan denk je dat dit een aanbeveling is. Het is een onderwerpaanduiding, en geen advies."
+   ],
+   "uh": "Welke zin is een aanbeveling?"
+  },
+  {
+   "v": "Which aim is best for the report?",
+   "o": [
+    "\"to say that phones are bad\"",
+    "\"to make people laugh about phones, I suppose, really, to be honest\"",
+    "\"to find out how many hours pupils spend on their phones each day\"",
+    "\"to describe my own phone\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 0,
+   "u": "Doel = onderzoeksvraag. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"to say that phones are bad\"\"? Dan denk je dat een mening het doel is. Een verslag geeft feiten, en geen oordeel vooraf.",
+    "Koos je \"\"to make people laugh about phones, I suppose, really, to be honest\"\"? Dan denk je dat vermaken het doel is. Een verslag informeert, en dat is geen humor.",
+    "Klopt: het doel is een onderzoeksvraag die met feiten beantwoord kan worden.",
+    "Koos je \"\"to describe my own phone\"\"? Dan denk je dat jouw telefoon het onderwerp is. Het verslag gaat over leerlingen, en niet over jou."
+   ],
+   "uh": "Welk doel past?",
+   "ctx": "Your teacher asks you to write a report on how much time pupils spend on their phones. The report is for the headteacher, who wants to decide about a possible phone rule in school."
+  },
+  {
+   "v": "Which style suits the report?",
+   "o": [
+    "\"personal and emotional\"",
+    "\"formal and factual\"",
+    "\"funny and slangy\"",
+    "\"short and secretive\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 0,
+   "u": "Verslag = formeel en feitelijk. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"personal and emotional\"\"? Dan denk je dat gevoel een verslag sterker maakt. Het maakt het subjectief, en niet geschikt voor de directeur.",
+    "Klopt: een verslag voor de directeur is formeel en feitelijk, zonder emotie of slang.",
+    "Koos je \"\"funny and slangy\"\"? Dan denk je dat humor de directeur aanspreekt. Het is onprofessioneel, en past niet bij een verslag.",
+    "Koos je \"\"short and secretive\"\"? Dan denk je dat kort en geheimzinnig netter is. Het geeft geen informatie, en is onbruikbaar."
+   ],
+   "uh": "Welke stijl past?",
+   "ctx": "You write a report for the school's headteacher about the results of a survey on lunch breaks. You want to choose a style that fits both the purpose of the report and the reader."
+  },
+  {
+   "v": "What is the correct order?",
+   "o": [
+    "\"findings, title, conclusion, introduction, recommendation, really\"",
+    "\"introduction, recommendation, findings, title, conclusion\"",
+    "\"conclusion, introduction, title, findings, recommendation\"",
+    "\"title, introduction, findings, conclusion, recommendation\""
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 1,
+   "u": "Titel, inleiding, bevindingen, conclusie, aanbeveling. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"findings, title, conclusion, introduction, recommendation, really\"\"? Dan denk je dat de volgorde er niet toe doet. De titel staat bovenaan, en de inleiding komt eerst.",
+    "Koos je \"\"introduction, recommendation, findings, title, conclusion\"\"? Dan denk je dat de aanbeveling vooraan kan. Die volgt na de conclusie, en de titel staat bovenaan.",
+    "Koos je \"\"conclusion, introduction, title, findings, recommendation\"\"? Dan denk je dat je met de conclusie begint. Die komt na de bevindingen, dus aan het eind.",
+    "Klopt: dit is de gebruikelijke volgorde van een verslag."
+   ],
+   "uh": "Wat is de juiste volgorde?",
+   "ctx": "You have written a report with a title, an introduction, the findings, a conclusion and a recommendation. Before you hand it in you check the order of the parts one more time."
+  },
+  {
+   "v": "Which title is best?",
+   "o": [
+    "\"Report on pupils' lunch preferences\"",
+    "\"Yummy lunch!!!\"",
+    "\"Report\"",
+    "\"What I think about food, I think, I suppose\""
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 1,
+   "u": "Titel = soort tekst + onderwerp. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: de titel noemt het soort tekst en het onderwerp, neutraal en duidelijk.",
+    "Koos je \"\"Yummy lunch!!!\"\"? Dan denk je dat een leuke titel past. Het is informeel, en noemt geen onderzoek.",
+    "Koos je \"\"Report\"\"? Dan denk je dat één woord genoeg is. Het noemt het onderwerp niet, en is te vaag.",
+    "Koos je \"\"What I think about food, I think, I suppose\"\"? Dan denk je dat een mening past. Een verslag is objectief, en geen persoonlijk oordeel."
+   ],
+   "uh": "Welke titel is het best?",
+   "ctx": "You write a report about a survey on lunch preferences at your school. You must choose a clear title that tells the reader at once what the report is about, in a neutral and professional way."
+  },
+  {
+   "v": "Which sentence is best?",
+   "o": [
+    "\"The canteen is a rip-off.\"",
+    "\"Everybody hates the canteen prices.\"",
+    "\"Forty per cent of the pupils said that the canteen is too expensive.\"",
+    "\"I think the canteen is far too expensive, to be honest, you know, I think.\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 2,
+   "u": "Percentage + wat leerlingen zeiden. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"The canteen is a rip-off.\"\"? Dan denk je dat dit een bevinding is. Het is een eigen oordeel, en spreektaal.",
+    "Koos je \"\"Everybody hates the canteen prices.\"\"? Dan denk je dat everybody een feit is. Het is een overdrijving, en niet bewezen.",
+    "Klopt: de zin geeft een percentage en wat de leerlingen zeiden, zonder eigen oordeel.",
+    "Koos je \"\"I think the canteen is far too expensive, to be honest, you know, I think.\"\"? Dan denk je dat I think in een verslag past. Het is een persoonlijke mening, en geen bevinding."
+   ],
+   "uh": "Welke zin is het best?",
+   "ctx": "You report on survey results about the canteen. You must keep your sentences objective and report only what the pupils said, without adding your own judgement or strong language."
+  },
+  {
+   "v": "Which sentence is best?",
+   "o": [
+    "\"I gave my questionnaire to loads of kids, I suppose.\"",
+    "\"The questionnaire was handed out to 120 pupils.\"",
+    "\"We just asked some kids, you know.\"",
+    "\"Kids got my questionnaire.\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 2,
+   "u": "Lijdende vorm = formeel. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"I gave my questionnaire to loads of kids, I suppose.\"\"? Dan denk je dat I en loads of passen. Het is informeel, en niet onpersoonlijk.",
+    "Klopt: de lijdende vorm is formeel en onpersoonlijk, passend bij een verslag.",
+    "Koos je \"\"We just asked some kids, you know.\"\"? Dan denk je dat dit een methode beschrijft. Het is spreektaal, en vaag over het aantal.",
+    "Koos je \"\"Kids got my questionnaire.\"\"? Dan denk je dat dit een formele zin is. Het is te kort en informeel, en zegt niet hoeveel."
+   ],
+   "uh": "Welke zin is het best?",
+   "ctx": "You describe in your report how you collected the data. You want to use a formal, impersonal style and avoid I, we, and slang words like 'kids' or 'loads of', as in a professional report."
+  },
+  {
+   "v": "Which sentence describes it?",
+   "o": [
+    "\"The number of cyclists fell from 30 to 45, you know, I think, I suppose.\"",
+    "\"The number of cyclists stayed at 45.\"",
+    "\"Cycling got much, much better.\"",
+    "\"The number of cyclists rose from 30 in January to 45 in June.\""
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 3,
+   "u": "Rose from ... to ... Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"The number of cyclists fell from 30 to 45, you know, I think, I suppose.\"\"? Dan denk je dat fell een stijging is. Het betekent dalen, en 30 naar 45 is groter.",
+    "Koos je \"\"The number of cyclists stayed at 45.\"\"? Dan denk je dat het gelijk bleef. Het begon bij 30, dus er was een stijging.",
+    "Koos je \"\"Cycling got much, much better.\"\"? Dan denk je dat een mening de verandering beschrijft. Het noemt geen getallen, en is geen feit.",
+    "Klopt: rose from ... to ... beschrijft de stijging met begin- en eindgetal."
+   ],
+   "uh": "Welke zin beschrijft de verandering?",
+   "ctx": "Your data show that 30 pupils cycled to school in January and 45 pupils cycled in June. You must describe this change in one clear, factual sentence in your findings."
+  },
+  {
+   "v": "Which sentence is correct?",
+   "o": [
+    "\"Fifty per cent of the pupils cycle to school.\"",
+    "\"Sixty per cent of the pupils cycle to school.\"",
+    "\"Twenty per cent of the pupils cycle to school, really.\"",
+    "\"Ten per cent of the pupils cycle to school.\""
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 3,
+   "u": "60 van 120 = 50%. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: 60 van de 120 is de helft, dus vijftig procent.",
+    "Koos je \"\"Sixty per cent of the pupils cycle to school.\"\"? Dan denk je dat het getal 60 het percentage is. 60 is het aantal, en niet het percentage.",
+    "Koos je \"\"Twenty per cent of the pupils cycle to school, really.\"\"? Dan denk je dat 60 van de 120 een vijfde deel is. Een vijfde van 120 is maar 24, dus dit is te laag.",
+    "Koos je \"\"Ten per cent of the pupils cycle to school.\"\"? Dan denk je dat een tiende de juiste verhouding is. Een tiende van 120 is slechts 12, en 60 is veel meer."
+   ],
+   "uh": "Welke zin klopt?",
+   "ctx": "In your survey 60 of the 120 pupils said that they cycle to school. You want to express this in your report as a percentage, in one sentence, so that the reader understands it at once."
+  },
+  {
+   "v": "Which recommendation is best?",
+   "o": [
+    "\"The bike racks are full.\"",
+    "\"Pupils like cycling.\"",
+    "\"I recommend that the school installs more bike racks.\"",
+    "\"More bike racks are nice maybe whatever, I think, I suppose.\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 4,
+   "u": "Recommend = advies uit bevinding. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"The bike racks are full.\"\"? Dan denk je dat dit een aanbeveling is. Het is een bevinding, en geen advies.",
+    "Koos je \"\"Pupils like cycling.\"\"? Dan denk je dat dit een aanbeveling is. Het is een bevinding zonder advies, en niet bewezen.",
+    "Klopt: I recommend that geeft een concreet advies op basis van de bevinding.",
+    "Koos je \"\"More bike racks are nice maybe whatever, I think, I suppose.\"\"? Dan denk je dat dit een aanbeveling is. Het is vaag en informeel, en geeft geen helder advies."
+   ],
+   "uh": "Welke aanbeveling is het best?",
+   "ctx": "Your findings show that the bike racks at school are full every morning and that many pupils have to leave their bikes in the street. You now write the recommendation."
+  },
+  {
+   "v": "Which conclusion matches?",
+   "o": [
+    "\"It can be concluded that most pupils hate the canteen, to be honest, you know.\"",
+    "\"It can be concluded that most pupils are satisfied with the canteen.\"",
+    "\"It can be concluded that nobody eats lunch.\"",
+    "\"It can be concluded that the canteen is expensive.\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 4,
+   "u": "Conclusie volgt uit de data. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"It can be concluded that most pupils hate the canteen, to be honest, you know.\"\"? Dan denk je dat de meeste leerlingen ontevreden zijn. De bevinding zegt het tegenovergestelde, dus dat klopt niet.",
+    "Klopt: 75 procent is de meerderheid, dus de conclusie sluit aan bij de bevinding.",
+    "Koos je \"\"It can be concluded that nobody eats lunch.\"\"? Dan denk je dat niemand lunch eet. Dat staat niet in de data, dus je verzint iets.",
+    "Koos je \"\"It can be concluded that the canteen is expensive.\"\"? Dan denk je dat de prijs de conclusie is. De data gaan over tevredenheid, en niet over de prijs."
+   ],
+   "uh": "Welke conclusie past bij de bevinding?",
+   "ctx": "Your findings show that 75 per cent of the pupils are satisfied with the canteen. You must write a conclusion that matches this finding and does not go beyond what the data show."
+  },
+  {
+   "v": "What does this excerpt do?",
+   "o": [
+    "\"gives the conclusion\"",
+    "\"gives recommendations\"",
+    "\"describes the writer's feelings\"",
+    "\"states the aim and the method\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 0,
+   "u": "Doel en methode. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"gives the conclusion\"\"? Dan denk je dat dit het slot is. Er staat geen conclusie, maar een doel en een methode.",
+    "Koos je \"\"gives recommendations\"\"? Dan denk je dat dit een advies is. Er staat geen advies, alleen een doel en methode.",
+    "Koos je \"\"describes the writer's feelings\"\"? Dan denk je dat dit gevoelens beschrijft. De tekst is feitelijk, en objectief.",
+    "Klopt: this report investigates noemt het doel en a questionnaire was given de methode."
+   ],
+   "uh": "Wat doet deze passage?",
+   "ctx": "Read the excerpt: \"This report investigates how pupils travel to school. A questionnaire was given to 120 pupils in March.\" Your teacher asks you which two things the first lines of a report normally do."
+  },
+  {
+   "v": "Why is it unsuitable?",
+   "o": [
+    "\"it is subjective and has no evidence\"",
+    "\"it is too formal\"",
+    "\"it uses numbers\"",
+    "\"it is written in the past tense, you know\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 0,
+   "u": "Oordeel zonder bewijs. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: disaster is een oordeel en everybody knows it is niet bewezen, dus het is subjectief.",
+    "Koos je \"\"it is too formal\"\"? Dan denk je dat de zin te formeel is. Het is informeel en emotioneel, dus dat klopt niet.",
+    "Koos je \"\"it uses numbers\"\"? Dan denk je dat er cijfers staan. Er staan geen cijfers, en dat is juist het probleem.",
+    "Koos je \"\"it is written in the past tense, you know\"\"? Dan denk je dat de tijd het probleem is. De zin is in de tegenwoordige tijd, en dat is niet de fout."
+   ],
+   "uh": "Waarom is de zin ongeschikt?",
+   "ctx": "Read the sentence from a student report: \"The cafeteria is a disaster and everybody knows it.\" Your teacher says that it is not suitable for a report and asks you to explain why."
+  },
+  {
+   "v": "Where do you describe how the survey was done?",
+   "o": [
+    "\"in the conclusion\"",
+    "\"in the title\"",
+    "\"in the method section\"",
+    "\"in the recommendations, really\""
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 1,
+   "u": "Method = hoe onderzoek is uitgevoerd. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"in the conclusion\"\"? Dan denk je dat de methode in de conclusie staat. De conclusie trekt gevolgtrekkingen, en beschrijft de methode niet.",
+    "Koos je \"\"in the title\"\"? Dan denk je dat de titel de methode noemt. De titel is te kort, en noemt alleen het onderwerp.",
+    "Klopt: in het onderdeel Method beschrijf je hoe het onderzoek is uitgevoerd.",
+    "Koos je \"\"in the recommendations, really\"\"? Dan denk je dat de aanbevelingen de methode noemen. Die geven advies, en beschrijven niet hoe het onderzoek ging."
+   ],
+   "uh": "Waar beschrijf je de methode?",
+   "ctx": "Read the outline of a report: \"Introduction; Method; Findings; Conclusion; Recommendations.\" Your teacher asks in which part you explain how you carried out the survey."
+  },
+  {
+   "v": "What can you check?",
+   "o": [
+    "\"they add up to 90\"",
+    "\"the percentages add up to 100\"",
+    "\"they add up to 110\"",
+    "\"they should not add up, I think\""
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 1,
+   "u": "Percentages samen 100. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"they add up to 90\"\"? Dan denk je dat er tien procent ontbreekt. Tel je 54, 31 en 15 op, dan kom je precies op 100.",
+    "Klopt: 54, 31 en 15 samen zijn 100, dus de cijfers kloppen als geheel.",
+    "Koos je \"\"they add up to 110\"\"? Dan denk je dat de percentages samen meer dan het geheel zijn. Dat kan niet bij één vraag, en de som is 100.",
+    "Koos je \"\"they should not add up, I think\"\"? Dan denk je dat percentages niet bij elkaar hoeven te komen. Bij één vraag moeten ze samen 100 zijn, dus dat klopt niet."
+   ],
+   "uh": "Wat kun je controleren?",
+   "ctx": "Read the findings: \"54% of pupils eat at school, 31% bring a packed lunch and 15% go home.\" Your teacher asks you to check whether the numbers in the findings are consistent."
+  },
+  {
+   "v": "Which feature makes the text objective?",
+   "o": [
+    "\"personal opinion words, to be honest, you know\"",
+    "\"slang\"",
+    "\"emotional exclamations\"",
+    "\"passive constructions and neutral wording\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 2,
+   "u": "Lijdende vorm = objectief. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"personal opinion words, to be honest, you know\"\"? Dan denk je dat er meningswoorden staan. Er staan geen, de tekst is neutraal.",
+    "Koos je \"\"slang\"\"? Dan denk je dat er slang in staat. De woorden zijn standaardtaal, en neutraal.",
+    "Koos je \"\"emotional exclamations\"\"? Dan denk je dat er uitroepen staan. Er zijn er geen, en de toon is zakelijk.",
+    "Klopt: it was found en was chosen zijn lijdende vormen en de woorden zijn neutraal."
+   ],
+   "uh": "Welk kenmerk maakt de tekst objectief?",
+   "ctx": "Read the text: \"It was found that most pupils preferred pasta. Pizza was chosen by fewer pupils.\" Your teacher asks you which feature makes the text objective."
+  },
+  {
+   "v": "What is wrong?",
+   "o": [
+    "\"it states an opinion which is not supported by the data\"",
+    "\"it uses the passive, I suppose, really, to be honest\"",
+    "\"it is too short\"",
+    "\"it has no verb\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 2,
+   "u": "Mening zonder data. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: I think en lazy zijn een mening, en de data tonen dat niet.",
+    "Koos je \"\"it uses the passive, I suppose, really, to be honest\"\"? Dan denk je dat de lijdende vorm de fout is. De zin is actief, en dat is niet het probleem.",
+    "Koos je \"\"it is too short\"\"? Dan denk je dat de lengte de fout is. De zin is kort, maar de inhoud is subjectief.",
+    "Koos je \"\"it has no verb\"\"? Dan denk je dat een werkwoord ontbreekt. Er staan think en shows, dus dat klopt niet."
+   ],
+   "uh": "Wat is er mis?",
+   "ctx": "Read the sentence in a student report: \"I think the survey shows that pupils are lazy.\" Your teacher asks you what is wrong with this sentence in a report."
+  },
+  {
+   "v": "Which description is correct?",
+   "o": [
+    "\"The percentage of cyclists fell steadily.\"",
+    "\"The percentage of cyclists stayed the same.\"",
+    "\"The percentage of cyclists rose steadily.\"",
+    "\"The percentage of cyclists rose and then fell.\""
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 3,
+   "u": "40, 55, 70 = stijging. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"The percentage of cyclists fell steadily.\"\"? Dan denk je dat het percentage daalt. 40, 55 en 70 stijgen, dus dat klopt niet.",
+    "Koos je \"\"The percentage of cyclists stayed the same.\"\"? Dan denk je dat het gelijk bleef. De getallen verschillen, en stijgen elk jaar.",
+    "Klopt: 40, 55 en 70 procent zijn een gestage stijging.",
+    "Koos je \"\"The percentage of cyclists rose and then fell.\"\"? Dan denk je dat het eerst steeg en toen daalde. Elk jaar is het hoger, dus het daalde nooit."
+   ],
+   "uh": "Welke beschrijving klopt?",
+   "ctx": "Read the data: \"In 2022, 40% of pupils cycled. In 2023, 55% cycled. In 2024, 70% cycled.\" Your teacher asks you to choose the correct description of the trend."
+  },
+  {
+   "v": "Which phrase shows the size of the change?",
+   "o": [
+    "\"in May\"",
+    "\"fell sharply\"",
+    "\"in June, really\"",
+    "\"sales\""
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 3,
+   "u": "Sharply = grote verandering. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"in May\"\"? Dan denk je dat de maand de grootte van de verandering aangeeft. In May is het beginpunt, dus een tijdstip.",
+    "Klopt: sharply geeft aan dat de daling groot was, naast de getallen.",
+    "Koos je \"\"in June, really\"\"? Dan denk je dat de eindmaand de omvang laat zien. In June is alleen het eindpunt, en geen maat voor de daling.",
+    "Koos je \"\"sales\"\"? Dan denk je dat het zelfstandig naamwoord de verandering beschrijft. Sales is het onderwerp van de zin, en noemt geen grootte."
+   ],
+   "uh": "Welke woorden tonen de grootte?",
+   "ctx": "Read the sentence: \"Sales fell sharply from 200 in May to 50 in June.\" Your teacher asks which words show how big the change was, apart from the numbers themselves."
+  },
+  {
+   "v": "Which phrase signals a recommendation?",
+   "o": [
+    "\"On the basis of, I think\"",
+    "\"these results\"",
+    "\"the lunch break\"",
+    "\"it is recommended that\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 4,
+   "u": "It is recommended that = aanbeveling. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"On the basis of, I think\"\"? Dan denk je dat dit een aanbeveling aangeeft. Het verwijst naar de grond ervoor, en niet naar het advies.",
+    "Koos je \"\"these results\"\"? Dan denk je dat dit een aanbeveling aangeeft. Het noemt de bevindingen, en niet het advies.",
+    "Koos je \"\"the lunch break\"\"? Dan denk je dat dit een aanbeveling aangeeft. Het is het onderwerp van het advies, en niet het signaal.",
+    "Klopt: it is recommended that is de formele aanduiding van een aanbeveling."
+   ],
+   "uh": "Welke woorden signaleren de aanbeveling?",
+   "ctx": "Read the sentence: \"On the basis of these results, it is recommended that the school extends the lunch break.\" Your teacher asks you to find the phrase that signals the recommendation."
+  },
+  {
+   "v": "Which conclusion follows?",
+   "o": [
+    "\"The library might be used more if it were quieter.\"",
+    "\"The library is a failure and should close, to be honest.\"",
+    "\"Pupils do not like reading.\"",
+    "\"Everyone loves the library.\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 4,
+   "u": "Conclusie volgt uit de data. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: de reden die leerlingen noemen, lawaai, leidt tot een voorzichtige conclusie.",
+    "Koos je \"\"The library is a failure and should close, to be honest.\"\"? Dan denk je dat sluiten volgt. De data zeggen niets over sluiten, en dat gaat verder dan de bevinding.",
+    "Koos je \"\"Pupils do not like reading.\"\"? Dan denk je dat leerlingen niet van lezen houden. De data gaan over lawaai, en niet over lezen.",
+    "Koos je \"\"Everyone loves the library.\"\"? Dan denk je dat iedereen de bibliotheek leuk vindt. Maar 20 procent gebruikt hem, dus dat klopt niet."
+   ],
+   "uh": "Welke conclusie volgt?",
+   "ctx": "Read the findings: \"Only 20% of pupils use the library; most say it is too noisy.\" Your teacher asks you which conclusion follows from these findings without going beyond the data."
+  }
+ ],
+ "oe": [
+  {
+   "bron": "Examenstijl",
+   "ctx": "Your class has done a survey among 100 pupils about how they travel to school. Sixty pupils cycle, 30 take the bus and 10 walk. You must write the findings part of the report.",
+   "v": "Write three sentences in English that report these findings with percentages.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Juiste percentages: 60, 30 en 10 per cent (1p). Een objectieve, feitelijke formulering (1p). Een correcte tijd en structuur (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "You must write the introduction of a report on how much sleep pupils get on school nights. The headteacher wants to know whether pupils sleep enough and he will read your report carefully.",
+   "v": "Write an introduction of two or three sentences in English.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Een duidelijk doel (1p). Een korte beschrijving van de methode (1p). Een formele, objectieve toon (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Your survey shows that 70 per cent of the pupils say the canteen is too crowded at lunchtime, and that 20 per cent do not eat there for that reason. You must write a conclusion and a recommendation.",
+   "v": "Write one sentence for the conclusion and one for the recommendation.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Een conclusie die volgt uit de cijfers (1p). Een concrete aanbeveling met recommend (1p). Een formele toon (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "A student writes in a report: \"Everybody thinks the new timetable is stupid and I hate it too.\" Your teacher says this does not belong in a report and asks the student to rewrite it neutrally.",
+   "v": "Rewrite the sentence objectively in English, with an invented percentage.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Een percentage of aantal (1p). Een objectieve formulering zoals it was found that (1p). Geen eigen mening of slang (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "A report shows the number of pupils in the school choir: 24 in 2022, 30 in 2023 and 41 in 2024. You must describe the change over the three years in your report.",
+   "v": "Write two sentences in English that describe the trend.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Een juiste beschrijving van de stijging (1p). Een juist gebruik van rose, increased of vergelijkbaar (1p). Een vermelding van de getallen of jaren (1p)."
+  }
+ ]
+}
