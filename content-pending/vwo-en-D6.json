@@ -1,0 +1,682 @@
+{
+ "id": "D6",
+ "lo": "en.D.6",
+ "gs": 2,
+ "naam": "Informatie presenteren voor doel en publiek",
+ "beschrijving": "Je leert in het Engels informatie te presenteren die past bij je doel en je publiek: je kiest het juiste taalniveau en register, selecteert en ordent de hoofdpunten, kiest een vorm zoals een folder of poster en maakt een samenvatting met bronvermelding.",
+ "ceStatus": "SE",
+ "binas": "",
+ "val": "",
+ "onderwerpen": [
+  "Doel en publiek",
+  "Taalniveau en register",
+  "Selecteren en ordenen",
+  "Vorm kiezen",
+  "Samenvatten en bronnen"
+ ],
+ "sam": "Voordat je informatie presenteert bepaal je je doel en je publiek. Je past het taalniveau en het register aan: eenvoudig voor kinderen, formeel voor een bedrijf. Je gaat selecteren: hoofdpunten wel, details weg, onder een tussenkopje en met een opsomming. De vorm kies je bij het publiek, zoals een folder of een poster. Een samenvatting geeft de hoofdpunten in eigen woorden en noemt de bron.",
+ "begrippen": [
+  {
+   "t": "Doel",
+   "d": "Waarom je schrijft: informeren, overtuigen of vermaken."
+  },
+  {
+   "t": "Publiek",
+   "d": "De lezers voor wie je schrijft."
+  },
+  {
+   "t": "Voorkennis",
+   "d": "Wat de lezer al weet."
+  },
+  {
+   "t": "Register",
+   "d": "Formeel of informeel taalgebruik."
+  },
+  {
+   "t": "Selecteren",
+   "d": "Alleen de belangrijkste informatie kiezen."
+  },
+  {
+   "t": "Hoofdpunt",
+   "d": "Een belangrijke boodschap uit de tekst."
+  },
+  {
+   "t": "Detail",
+   "d": "Een kleine bijzonderheid die je kunt weglaten."
+  },
+  {
+   "t": "Tussenkopje",
+   "d": "Een korte titel boven een deel van de tekst."
+  },
+  {
+   "t": "Opsomming",
+   "d": "Een lijst met één punt per regel."
+  },
+  {
+   "t": "Samenvatting",
+   "d": "De hoofdpunten korter weergegeven."
+  },
+  {
+   "t": "Eigen woorden",
+   "d": "Niet overschrijven maar zelf formuleren."
+  },
+  {
+   "t": "Bron",
+   "d": "Waar de informatie vandaan komt."
+  }
+ ],
+ "sv": [
+  {
+   "v": "What should you decide first when you present information in writing?",
+   "o": [
+    "\"which font is the prettiest\"",
+    "\"who the reader is and what the aim is\"",
+    "\"how many pictures you can find\"",
+    "\"what colour the title should be, I think\""
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 0,
+   "u": "Eerst doel en publiek. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"which font is the prettiest\"\"? Dan denk je dat het lettertype als eerste komt. Het is een detail, en hangt van doel en lezer af.",
+    "Klopt: doel en publiek bepalen welke woorden, vorm en informatie je kiest.",
+    "Koos je \"\"how many pictures you can find\"\"? Dan denk je dat het aantal plaatjes het begin is. Dat volgt later, na doel en lezer.",
+    "Koos je \"\"what colour the title should be, I think\"\"? Dan denk je dat de kleur als eerste telt. Het is een detail, en hangt van doel en lezer af."
+   ],
+   "uh": "Wat bepaal je eerst?"
+  },
+  {
+   "v": "Which text has the aim to inform?",
+   "o": [
+    "\"Buy these trainers now, you will love them, to be honest!\"",
+    "\"Please sign the petition to ban plastic.\"",
+    "\"Here is a funny story about my dog.\"",
+    "\"This leaflet explains how to recycle glass.\""
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 0,
+   "u": "Uitleggen = informeren. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"Buy these trainers now, you will love them, to be honest!\"\"? Dan denk je dat dit informeert. Het wil iets verkopen, en overtuigt dus.",
+    "Koos je \"\"Please sign the petition to ban plastic.\"\"? Dan denk je dat dit informeert. Het roept op tot actie, en overtuigt dus.",
+    "Koos je \"\"Here is a funny story about my dog.\"\"? Dan denk je dat dit informeert. Het wil vermaken, en geeft geen uitleg.",
+    "Klopt: de tekst legt iets uit zonder te overtuigen, dus het doel is informeren."
+   ],
+   "uh": "Welke tekst wil informeren?"
+  },
+  {
+   "v": "Which sentence is suitable for ten-year-olds?",
+   "o": [
+    "\"Plants make food from sunlight.\"",
+    "\"Photosynthesis is the biochemical process by which plants convert light energy.\"",
+    "\"Chlorophyll-mediated anabolism converts solar energy.\"",
+    "\"Autotrophic organisms utilise light.\""
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 1,
+   "u": "Eenvoudig voor kinderen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: korte zin met eenvoudige woorden die tienjarigen kennen.",
+    "Koos je \"\"Photosynthesis is the biochemical process by which plants convert light energy.\"\"? Dan denk je dat een vakterm bij kinderen past. Het is te moeilijk, en te lang.",
+    "Koos je \"\"Chlorophyll-mediated anabolism converts solar energy.\"\"? Dan denk je dat moeilijke woorden slim klinken. Het is te technisch, voor kinderen.",
+    "Koos je \"\"Autotrophic organisms utilise light.\"\"? Dan denk je dat een geleerde zin past. Het is te abstract, voor tienjarigen."
+   ],
+   "uh": "Welke zin past bij tienjarigen?"
+  },
+  {
+   "v": "Which sentence is suitable for a formal letter to a company?",
+   "o": [
+    "\"Gimme a brochure, ok, you know, I think, I suppose?\"",
+    "\"Send brochure now.\"",
+    "\"I would be grateful if you could send me a brochure.\"",
+    "\"Hey, brochure pls!\""
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 1,
+   "u": "Formeel = volledig en beleefd. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"Gimme a brochure, ok, you know, I think, I suppose?\"\"? Dan denk je dat korte spreektaal past. Het is informeel, en onbeleefd.",
+    "Koos je \"\"Send brochure now.\"\"? Dan denk je dat een kort bevel past. Het is kortaf, en niet beleefd.",
+    "Klopt: de zin is volledig en beleefd, dus formeel.",
+    "Koos je \"\"Hey, brochure pls!\"\"? Dan denk je dat afkortingen passen. Het is informeel, en geen formele zin."
+   ],
+   "uh": "Welke zin past in een formele brief?"
+  },
+  {
+   "v": "Which information belongs in a short summary for busy readers?",
+   "o": [
+    "\"every small detail\"",
+    "\"the main points\"",
+    "\"the writer's holiday photos\"",
+    "\"the full bibliography\""
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 2,
+   "u": "Samenvatting = hoofdpunten. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"every small detail\"\"? Dan denk je dat alle details erin moeten. Dan is het geen samenvatting meer, en te lang.",
+    "Klopt: een korte samenvatting geeft alleen de hoofdpunten.",
+    "Koos je \"\"the writer's holiday photos\"\"? Dan denk je dat foto's de samenvatting vullen. Ze horen er niet bij, en geven geen informatie.",
+    "Koos je \"\"the full bibliography\"\"? Dan denk je dat alle bronnen erin moeten. Dat is te veel, voor een korte samenvatting."
+   ],
+   "uh": "Wat staat in een korte samenvatting?"
+  },
+  {
+   "v": "Which text type uses headings and bullet points to present information quickly?",
+   "o": [
+    "\"a letter to a friend\"",
+    "\"a diary entry\"",
+    "\"a poem\"",
+    "\"a leaflet\""
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 3,
+   "u": "Folder = kopjes en lijsten. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"a letter to a friend\"\"? Dan denk je dat een brief aan een vriend tussenkopjes gebruikt. Het is een persoonlijk bericht, en loopt als doorlopende tekst.",
+    "Koos je \"\"a diary entry\"\"? Dan denk je dat een dagboek tussenkopjes heeft. Het is een persoonlijk verhaal, zonder opmaak.",
+    "Koos je \"\"a poem\"\"? Dan denk je dat een gedicht tussenkopjes heeft. Het is kunst, en geen informatietekst.",
+    "Klopt: een folder gebruikt tussenkopjes en opsommingen om informatie snel te laten vinden."
+   ],
+   "uh": "Welke tekstsoort gebruikt kopjes en lijsten?"
+  },
+  {
+   "v": "What does summarising mean?",
+   "o": [
+    "\"giving the main points in your own, shorter words\"",
+    "\"copying the text word for word\"",
+    "\"adding your own opinion to every sentence, to be honest\"",
+    "\"translating every word\""
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 4,
+   "u": "Samenvatten = hoofdpunten, eigen woorden. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: samenvatten is de hoofdpunten korter en in eigen woorden weergeven.",
+    "Koos je \"\"copying the text word for word\"\"? Dan denk je dat overschrijven samenvatten is. Het is geen eigen werk, en niet korter.",
+    "Koos je \"\"adding your own opinion to every sentence, to be honest\"\"? Dan denk je dat een mening erbij hoort. Een samenvatting blijft feitelijk, en geeft geen oordeel.",
+    "Koos je \"\"translating every word\"\"? Dan denk je dat vertalen samenvatten is. Het is niet korter, en het geeft geen hoofdpunten."
+   ],
+   "uh": "Wat betekent samenvatten?"
+  },
+  {
+   "v": "What matters most?",
+   "o": [
+    "\"technical terms to teach them new vocabulary, I suppose\"",
+    "\"long, complex sentences to sound serious\"",
+    "\"short sentences and simple words that children know\"",
+    "\"statistics and tables\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 0,
+   "u": "Publiek bepaalt taalniveau. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"technical terms to teach them new vocabulary, I suppose\"\"? Dan denk je dat vaktermen de kinderen helpen. Het is te moeilijk, en ze haken af.",
+    "Koos je \"\"long, complex sentences to sound serious\"\"? Dan denk je dat lange zinnen serieus klinken. Kinderen begrijpen ze niet, en lezen ze niet.",
+    "Klopt: voor zevenjarigen zijn korte zinnen en bekende woorden het belangrijkst.",
+    "Koos je \"\"statistics and tables\"\"? Dan denk je dat cijfers de kinderen boeien. Het is te abstract, voor zevenjarigen."
+   ],
+   "uh": "Wat is het belangrijkst?",
+   "ctx": "You must explain recycling to a group of seven-year-olds in a short text for the school's open day. You know that they do not have a large vocabulary yet but are very curious."
+  },
+  {
+   "v": "Which approach is best?",
+   "o": [
+    "\"slang and abbreviations\"",
+    "\"clear, respectful language with practical tips\"",
+    "\"very long scientific explanations, you know, I think\"",
+    "\"jokes about their age\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 0,
+   "u": "Respectvol en praktisch. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"slang and abbreviations\"\"? Dan denk je dat spreektaal modern en dus passend is. Het is voor deze lezers onduidelijk, en niet respectvol.",
+    "Klopt: duidelijke, respectvolle taal met praktische tips past bij ervaren oudere lezers.",
+    "Koos je \"\"very long scientific explanations, you know, I think\"\"? Dan denk je dat veel wetenschap overtuigt. Het is te zwaar, en te lang voor een nieuwsbrief.",
+    "Koos je \"\"jokes about their age\"\"? Dan denk je dat grappen over leeftijd leuk zijn. Het is niet respectvol, en kan kwetsen."
+   ],
+   "uh": "Welke aanpak is het best?",
+   "ctx": "You write an article about healthy eating for the newsletter of a care home. The readers are elderly, they know a lot about food, and they dislike being talked down to."
+  },
+  {
+   "v": "Which rewrite is best?",
+   "o": [
+    "\"The museum houses a collection of nineteenth-century artefacts.\"",
+    "\"The museum's collection comprises nineteenth-century artefacts.\"",
+    "\"It is a museum.\"",
+    "\"The museum has things from more than a hundred years ago.\""
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 1,
+   "u": "Moeilijke woorden vereenvoudigen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"The museum houses a collection of nineteenth-century artefacts.\"\"? Dan denk je dat de zin voor kinderen al goed is. Het is de moeilijke oorspronkelijke zin, en niet vereenvoudigd.",
+    "Koos je \"\"The museum's collection comprises nineteenth-century artefacts.\"\"? Dan denk je dat een andere formulering simpeler is. Het is nog formeler, en moeilijk.",
+    "Koos je \"\"It is a museum.\"\"? Dan denk je dat kort altijd simpel is. Het geeft geen informatie, en laat de kern weg.",
+    "Klopt: has things en more than a hundred years ago zijn eenvoudige woorden voor kinderen."
+   ],
+   "uh": "Welke herschrijving is het best?",
+   "ctx": "You rewrite information about a museum for a class of eight-year-olds. The original sentence is \"The museum houses a collection of nineteenth-century artefacts.\" You must make it easy to understand."
+  },
+  {
+   "v": "Which sentence is best?",
+   "o": [
+    "\"I would like to propose that the council build a new playground.\"",
+    "\"Build a playground, mate!\"",
+    "\"We want a playground, like, right now, I think, I suppose, really.\"",
+    "\"Playground = good idea.\""
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 1,
+   "u": "Formeel register bij een burgemeester. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: I would like to propose that is beleefd en formeel, dus passend voor een burgemeester.",
+    "Koos je \"\"Build a playground, mate!\"\"? Dan denk je dat een directe zin duidelijk is. Het is een bevel, en mate is te informeel.",
+    "Koos je \"\"We want a playground, like, right now, I think, I suppose, really.\"\"? Dan denk je dat een eis werkt. Het is spreektaal, en onbeleefd.",
+    "Koos je \"\"Playground = good idea.\"\"? Dan denk je dat een formule voldoende is. Het is geen zin, en niet formeel."
+   ],
+   "uh": "Welke zin past het best?",
+   "ctx": "You write a letter to the mayor to propose a new playground in your neighbourhood. You do not know the mayor personally and you want to present your idea in a suitable register."
+  },
+  {
+   "v": "What do you do?",
+   "o": [
+    "\"write all ten in tiny letters\"",
+    "\"choose the facts you find funniest\"",
+    "\"select the most important facts for your reader\"",
+    "\"write only the first five whatever they are, to be honest\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 2,
+   "u": "Selecteren voor de lezer. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"write all ten in tiny letters\"\"? Dan denk je dat alles erin moet. Kleine letters zijn moeilijk te lezen, en het blijft te veel.",
+    "Koos je \"\"choose the facts you find funniest\"\"? Dan denk je dat jouw smaak telt. De lezer heeft andere behoeften, dus nuttige feiten ontbreken.",
+    "Klopt: je kiest de feiten die voor toeristen het nuttigst zijn en laat de rest weg.",
+    "Koos je \"\"write only the first five whatever they are, to be honest\"\"? Dan denk je dat de eerste vijf genoeg zijn. Je kijkt niet naar belang, en mist de belangrijkste feiten."
+   ],
+   "uh": "Wat doe je?",
+   "ctx": "You have ten facts about your town but space for only five lines in a leaflet for tourists who will visit for a day. You must decide which facts to include and which to leave out."
+  },
+  {
+   "v": "How should you arrange the information?",
+   "o": [
+    "\"put them in random order\"",
+    "\"group related facts under clear headings\"",
+    "\"put the longest facts first\"",
+    "\"put the most boring facts first, I suppose\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 2,
+   "u": "Groeperen onder kopjes. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"put them in random order\"\"? Dan denk je dat de volgorde er niet toe doet. De lezer vindt dan niets, en raakt de weg kwijt.",
+    "Klopt: samenhorende feiten onder duidelijke kopjes laten de lezer snel vinden wat hij zoekt.",
+    "Koos je \"\"put the longest facts first\"\"? Dan denk je dat lengte de volgorde bepaalt. Lengte zegt niets over belang, en de lezer zoekt op onderwerp.",
+    "Koos je \"\"put the most boring facts first, I suppose\"\"? Dan denk je dat saai eerst moet. Dat schrikt de lezer af, en helpt niet bij het zoeken."
+   ],
+   "uh": "Hoe ordenen je de informatie?",
+   "ctx": "You have collected facts about a town: a bridge, two museums, a market, bus times and a restaurant street. You want to arrange them so that a visitor can find things at a glance."
+  },
+  {
+   "v": "Which form is best?",
+   "o": [
+    "\"a long poem\"",
+    "\"a diary entry\"",
+    "\"a single block of text, you know, I think, I suppose\"",
+    "\"a short leaflet with headings and a list\""
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 3,
+   "u": "Folder = kopjes en lijst. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"a long poem\"\"? Dan denk je dat een gedicht informatie overbrengt. Het is mooi, maar geeft geen snelle gegevens.",
+    "Koos je \"\"a diary entry\"\"? Dan denk je dat een dagboek past. Het is persoonlijk, en niet gericht op ouders.",
+    "Koos je \"\"a single block of text, you know, I think, I suppose\"\"? Dan denk je dat één blok genoeg is. Ouders vinden de gegevens niet snel, zonder kopjes.",
+    "Klopt: kopjes en een lijst laten ouders snel de gegevens vinden."
+   ],
+   "uh": "Welke vorm is het best?",
+   "ctx": "You must give parents information about a school trip: the date, the cost and what the pupils should bring. The parents have little time and want to find the facts quickly."
+  },
+  {
+   "v": "Which design is best?",
+   "o": [
+    "\"a clear title, short text and one image\"",
+    "\"three pages of text\"",
+    "\"no title and tiny text, really, to be honest\"",
+    "\"only a long paragraph\""
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 3,
+   "u": "Poster = titel, korte tekst, beeld. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: een duidelijke titel, korte tekst en één plaatje trekken de aandacht en zijn snel te lezen.",
+    "Koos je \"\"three pages of text\"\"? Dan denk je dat veel tekst informatief is. Niemand leest het in de gang, en het is geen poster.",
+    "Koos je \"\"no title and tiny text, really, to be honest\"\"? Dan denk je dat een kleine tekst netjes is. Niemand ziet de kern, en het onderwerp ontbreekt.",
+    "Koos je \"\"only a long paragraph\"\"? Dan denk je dat één alinea duidelijk is. Het is niet in een oogopslag te lezen, en saai."
+   ],
+   "uh": "Welk ontwerp is het best?",
+   "ctx": "You are designing a poster for the school fair. You want people who walk past the poster in the corridor to understand in a few seconds what it is about and when and where it is."
+  },
+  {
+   "v": "Which summary is best?",
+   "o": [
+    "\"The library is changing a lot and I think it's great.\"",
+    "\"The town library, from March, will open until 9 pm on Thursdays, there will be a new café, and children can borrow games, and the council hopes more young people will visit.\"",
+    "\"From March the library opens later on Thursdays, has a café and lends games, to attract more young people.\"",
+    "\"There is a library.\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 4,
+   "u": "Hoofdpunten in eigen woorden. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"The library is changing a lot and I think it's great.\"\"? Dan denk je dat een mening een samenvatting is. De hoofdpunten ontbreken, en het is subjectief.",
+    "Koos je \"\"The town library, from March, will open until 9 pm on Thursdays, there will be a new café, and children can borrow games, and the council hopes more young people will visit.\"\"? Dan denk je dat overnemen een samenvatting is. Het is bijna een kopie, en niet korter.",
+    "Klopt: de hoofdpunten staan erin, in eigen woorden en korter dan de tekst.",
+    "Koos je \"\"There is a library.\"\"? Dan denk je dat kort genoeg is. Het mist alle hoofdpunten, en zegt niets nieuws."
+   ],
+   "uh": "Welke samenvatting is het best?",
+   "ctx": "You read this article: \"The town library is changing. From March it will open until 9 pm on Thursdays, there will be a new café, and children can borrow games. The council hopes more young people will visit.\" You must write a one-sentence summary."
+  },
+  {
+   "v": "What should you do?",
+   "o": [
+    "\"copy and paste it without saying where it came from, to be honest\"",
+    "\"put it in your own words and say where it came from\"",
+    "\"change one word only\"",
+    "\"claim it is your own idea\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 4,
+   "u": "Eigen woorden + bron. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"copy and paste it without saying where it came from, to be honest\"\"? Dan denk je dat knippen en plakken efficiënt is. Het is geen eigen werk, en zonder bron onbetrouwbaar.",
+    "Klopt: eigen woorden en een bronvermelding zijn eerlijk en betrouwbaar.",
+    "Koos je \"\"change one word only\"\"? Dan denk je dat één woord veranderen genoeg is. Het is nog steeds overgenomen, zonder bron.",
+    "Koos je \"\"claim it is your own idea\"\"? Dan denk je dat het mag. Het is oneerlijk, en fraude."
+   ],
+   "uh": "Wat doe je met de informatie?",
+   "ctx": "You use information from a website in a school project about your town. You know that a good presentation of information must also show where the information comes from."
+  },
+  {
+   "v": "Who is the audience and what is the aim?",
+   "o": [
+    "\"pupils; to entertain them\"",
+    "\"teachers; to persuade them\"",
+    "\"strangers; to complain\"",
+    "\"parents; to inform them\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 0,
+   "u": "Ouders, informeren. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"pupils; to entertain them\"\"? Dan denk je dat de lezers leerlingen zijn. De aanhef is dear parents, en de tekst is niet vermakelijk.",
+    "Koos je \"\"teachers; to persuade them\"\"? Dan denk je dat het publiek leraren is. De tekst noemt ouders, en overtuigt niemand.",
+    "Koos je \"\"strangers; to complain\"\"? Dan denk je dat de tekst een klacht is. Er is geen klacht, en het publiek is bekend.",
+    "Klopt: de tekst richt zich tot ouders en geeft feitelijke informatie over de reis."
+   ],
+   "uh": "Wie is het publiek en wat is het doel?",
+   "ctx": "Read the leaflet: \"Dear parents, the trip takes place on 14 June. Please give your child a packed lunch and a raincoat.\" Your teacher asks who the audience is and what the aim of the leaflet is."
+  },
+  {
+   "v": "What is the aim?",
+   "o": [
+    "\"to persuade readers to act\"",
+    "\"to give neutral information only\"",
+    "\"to entertain readers\"",
+    "\"to complain to a shop\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 0,
+   "u": "Oproep = overtuigen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: please sign en without it, 200 young people lose ... willen lezers tot actie bewegen.",
+    "Koos je \"\"to give neutral information only\"\"? Dan denk je dat de tekst neutraal is. Er staat een oproep, en dat is overtuigen.",
+    "Koos je \"\"to entertain readers\"\"? Dan denk je dat de tekst vermaakt. De toon is serieus, en gaat om actie.",
+    "Koos je \"\"to complain to a shop\"\"? Dan denk je dat de tekst een klacht is. Het gaat om een jeugdclub, en niet om een winkel."
+   ],
+   "uh": "Wat is het doel van de tekst?",
+   "ctx": "Read the text: \"Please sign our petition to save the youth club. Without it, 200 young people lose their meeting place.\" Your teacher asks what the aim of this text is."
+  },
+  {
+   "v": "Which suits eight-year-olds?",
+   "o": [
+    "\"A, because it contains technical terms, really, to be honest\"",
+    "\"A, because it is longer\"",
+    "\"B, because it uses simple words and a short sentence\"",
+    "\"B, because it is slang\""
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 1,
+   "u": "Eenvoudige woorden voor kinderen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"A, because it contains technical terms, really, to be honest\"\"? Dan denk je dat vaktermen kinderen helpen. Ze zijn te moeilijk, en verwarren.",
+    "Koos je \"\"A, because it is longer\"\"? Dan denk je dat langer beter is. Een lange zin is moeilijker, en haakt kinderen af.",
+    "Klopt: B is korter en gebruikt woorden die achtjarigen kennen.",
+    "Koos je \"\"B, because it is slang\"\"? Dan denk je dat B slang is. B is gewone, eenvoudige taal, en geen slang."
+   ],
+   "uh": "Welke zin past bij achtjarigen?",
+   "ctx": "Read two sentences. A: \"Photosynthesis is the process whereby chlorophyll converts light energy.\" B: \"Plants use sunlight to make their food.\" You have to choose which one is better for a class of eight-year-olds."
+  },
+  {
+   "v": "What is wrong with the message?",
+   "o": [
+    "\"it is too long\"",
+    "\"the register is too informal for the audience\"",
+    "\"it contains too many numbers, I think, I suppose\"",
+    "\"it is too formal\""
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 1,
+   "u": "Register past niet bij publiek. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"it is too long\"\"? Dan denk je dat de lengte het probleem is. De zin is kort, en dat is het probleem niet.",
+    "Klopt: Hi guys en the thing zijn te informeel voor een directeur.",
+    "Koos je \"\"it contains too many numbers, I think, I suppose\"\"? Dan denk je dat er te veel getallen staan. Er staat één tijd, en dat is genoeg.",
+    "Koos je \"\"it is too formal\"\"? Dan denk je dat het te formeel is. Het is juist te informeel, dus dat klopt niet."
+   ],
+   "uh": "Wat is er mis met de boodschap?",
+   "ctx": "Read the message for the headteacher: \"Hi guys, the thing starts at 8!\" A student wrote it for a formal invitation to the school's prize-giving, and her teacher says it is not suitable for the audience."
+  },
+  {
+   "v": "Which fact is least useful for tourists?",
+   "o": [
+    "\"It has a famous bridge.\"",
+    "\"The market is on Saturdays.\"",
+    "\"It has two museums.\"",
+    "\"The mayor has a dog.\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 2,
+   "u": "Selecteer wat de lezer nodig heeft. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"It has a famous bridge.\"\"? Dan denk je dat de brug onbelangrijk is. Een beroemde brug is juist een bezienswaardigheid, dus nuttig.",
+    "Koos je \"\"The market is on Saturdays.\"\"? Dan denk je dat de markt onbelangrijk is. De dag is belangrijk voor een bezoek, dus nuttig.",
+    "Koos je \"\"It has two museums.\"\"? Dan denk je dat musea onbelangrijk zijn. Toeristen willen ze juist weten, dus nuttig.",
+    "Klopt: de hond van de burgemeester helpt toeristen niet bij hun bezoek."
+   ],
+   "uh": "Welk feit is het minst nuttig?",
+   "ctx": "A leaflet for tourists about a small town has these facts: \"The town has 12,000 inhabitants. It has a famous bridge. The mayor has a dog. The market is on Saturdays. It has two museums.\" Space is limited, and you must drop one fact."
+  },
+  {
+   "v": "How should these be grouped?",
+   "o": [
+    "\"under headings like Sights, Shopping and Getting around\"",
+    "\"in one paragraph with no order\"",
+    "\"alphabetically by the writer's name, I suppose, really, to be honest\"",
+    "\"by the length of the word\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 2,
+   "u": "Groeperen onder kopjes. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: kopjes als Sights, Shopping en Getting around ordenen de feiten per onderwerp.",
+    "Koos je \"\"in one paragraph with no order\"\"? Dan denk je dat één alinea overzichtelijk is. De lezer vindt niets, en het is rommelig.",
+    "Koos je \"\"alphabetically by the writer's name, I suppose, really, to be honest\"\"? Dan denk je dat de schrijver de volgorde bepaalt. De lezer zoekt op onderwerp, en niet op naam van de schrijver.",
+    "Koos je \"\"by the length of the word\"\"? Dan denk je dat woordlengte een volgorde is. Het zegt niets over inhoud, en helpt niet."
+   ],
+   "uh": "Hoe groepeer je de feiten?",
+   "ctx": "For the same leaflet you have these facts: a famous bridge, two museums, a Saturday market, a restaurant street and bus times. You want to arrange them so that tourists can find things quickly."
+  },
+  {
+   "v": "How can it be improved?",
+   "o": [
+    "\"add more colours and remove the text\"",
+    "\"add a long paragraph about the history of fairs, you know, I think\"",
+    "\"use a clear title and put the date and place on separate lines\"",
+    "\"turn it into a poem\""
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 3,
+   "u": "Titel en aparte regels. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"add more colours and remove the text\"\"? Dan denk je dat kleur en geen tekst helpt. De lezer weet dan niets, en het mist de informatie.",
+    "Koos je \"\"add a long paragraph about the history of fairs, you know, I think\"\"? Dan denk je dat een lange alinea helpt. Niemand leest die op een poster, en het is niet nodig.",
+    "Klopt: een titel en aparte regels voor datum en plaats maken de poster snel leesbaar.",
+    "Koos je \"\"turn it into a poem\"\"? Dan denk je dat een gedicht helpt. Het is niet duidelijk, en geeft geen snelle informatie."
+   ],
+   "uh": "Hoe verbeter je de poster?",
+   "ctx": "Read a poster draft for the school fair: \"Spring Fair Saturday 10 May 10-16 Town Hall games food music\" Your teacher says the layout is hard to read and asks how to improve it."
+  },
+  {
+   "v": "What function do the headings serve?",
+   "o": [
+    "\"they make the text longer\"",
+    "\"they help readers find information quickly\"",
+    "\"they replace the information\"",
+    "\"they show the writer's opinion, really, to be honest\""
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 3,
+   "u": "Kopjes = snel vinden. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"they make the text longer\"\"? Dan denk je dat kopjes de tekst langer maken. Dat is niet hun doel, ze maken de tekst overzichtelijk.",
+    "Klopt: tussenkopjes laten de lezer in één oogopslag zien waar de informatie staat.",
+    "Koos je \"\"they replace the information\"\"? Dan denk je dat een kopje de informatie vervangt. Er moet nog tekst onder, anders mist de inhoud.",
+    "Koos je \"\"they show the writer's opinion, really, to be honest\"\"? Dan denk je dat kopjes een mening geven. Het zijn labels, en geen oordeel."
+   ],
+   "uh": "Wat doen de kopjes?",
+   "ctx": "Read the headings in a leaflet: \"What to bring\", \"When\", \"Where\". Your teacher asks you what these headings do for the reader and why leaflets use them."
+  },
+  {
+   "v": "Which summary is correct?",
+   "o": [
+    "\"From September, nobody will have homework.\"",
+    "\"From September, years 1 and 2 will have one hour per night, I think, I suppose, really.\"",
+    "\"From September, the school will have a new building.\"",
+    "\"From September, years 1 and 2 will have no homework, and higher years a maximum of one hour per night.\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 4,
+   "u": "Hoofdpunten correct. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"From September, nobody will have homework.\"\"? Dan denk je dat niemand huiswerk krijgt. De hogere jaren krijgen nog een uur, dus dat klopt niet.",
+    "Koos je \"\"From September, years 1 and 2 will have one hour per night, I think, I suppose, really.\"\"? Dan denk je dat jaar 1 en 2 een uur krijgen. Zij krijgen juist geen huiswerk, dus de groepen zijn verwisseld.",
+    "Koos je \"\"From September, the school will have a new building.\"\"? Dan denk je dat er een nieuw gebouw komt. Dat staat nergens, en je verzint iets.",
+    "Klopt: de hoofdpunten van beide groepen staan erin, in kortere vorm."
+   ],
+   "uh": "Welke samenvatting klopt?",
+   "ctx": "Read the original: \"The school will introduce a new homework policy from September. Pupils in years 1 and 2 will have no homework at all. Pupils in higher years will have a maximum of one hour per night.\" You must choose a correct summary."
+  },
+  {
+   "v": "Why is 'According to the school website' useful?",
+   "o": [
+    "\"it shows the source of the information\"",
+    "\"it makes the sentence longer\"",
+    "\"it gives the writer's opinion\"",
+    "\"it shows the writer thinks the number is wrong\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 4,
+   "u": "According to = bron. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: according to noemt waar de informatie vandaan komt, dat is een bronvermelding.",
+    "Koos je \"\"it makes the sentence longer\"\"? Dan denk je dat langer beter is. Het gaat niet om de lengte, maar om de bron.",
+    "Koos je \"\"it gives the writer's opinion\"\"? Dan denk je dat het een mening geeft. Het noemt een bron, en geen oordeel.",
+    "Koos je \"\"it shows the writer thinks the number is wrong\"\"? Dan denk je dat het twijfel uitdrukt. Het noemt alleen waar het getal vandaan komt, en betwist niets."
+   ],
+   "uh": "Waarom is dit nuttig?",
+   "ctx": "Read the sentence: \"According to the school website, 80% of pupils cycle.\" Your teacher asks why it is useful to begin the sentence with 'According to the school website'."
+  }
+ ],
+ "oe": [
+  {
+   "bron": "Examenstijl",
+   "ctx": "You must explain to the pupils of year 1 how to use the school library. They are twelve years old, new to the school and a bit shy. You have space for a short text of four or five sentences.",
+   "v": "Write the text in English, in a simple and friendly style.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Eenvoudige woorden en korte zinnen (1p). Een vriendelijke toon voor de doelgroep (1p). Alle belangrijke informatie genoemd (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "You write to the manager of a local sports centre to ask whether your class can use the hall on a Friday afternoon for a charity match. You do not know the manager personally.",
+   "v": "Write a formal request of three sentences in English.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Een formele aanhef of opening (1p). Een duidelijke, beleefde vraag (1p). Een geschikte slotzin (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "You have found an article of 400 words about plastic in the sea. Your teacher asks you to give your classmates the main points in three sentences, and to say where you found the information.",
+   "v": "Write a summary in your own words with a source reference.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Hoofdpunten in eigen woorden (1p). Korte, duidelijke zinnen (1p). Een bronvermelding, zoals according to (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Your school organises a charity run on Saturday 14 June from 10.00 to 14.00 at the town park. You must make a short text for a poster, for pupils and their parents.",
+   "v": "Write the text for the poster in English.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Een titel (1p). Datum, tijd en plaats (1p). Korte, duidelijke tekst (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "You have ten facts about your hometown for a leaflet for tourists, but space for only five lines. Facts: a castle, a market, a river, a museum, 15,000 inhabitants, the school, a football club, a park, an old bridge, a lake.",
+   "v": "Choose five facts and write them as short lines under two headings.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Vijf geschikte, nuttige feiten gekozen (1p). Twee duidelijke kopjes (1p). Korte, duidelijke regels (1p)."
+  }
+ ]
+}
