@@ -475,7 +475,7 @@ function dagmissiePick(){
       title:'Oefen '+p.domNaam,
       sub:p.vakNaam+' · nu '+Math.round(p.pct*100)+'%',
       btn:'Start quiz',act:"goToDomein('"+p.vakId+"','"+p.domId+"','snel')",
-      vonk:p.domNaam+' ('+p.vakNaam+') kan nog een boost gebruiken. Eén snelle quiz en je staat er beter voor!'};
+      vonk:p.domNaam+' ('+p.vakNaam+') kan nog wat oefening gebruiken. Eén snelle quiz helpt al.'};
   }
   try{
     const cur=(typeof calcStreak==='function')?(calcStreak().current||0):0;
@@ -1025,7 +1025,7 @@ function _leagueReveal(reward){
                      :(_AV_SKIN_SVG[reward.item.id]?`<svg viewBox="0 0 100 100" width="64" height="64">${_AV_SKIN_SVG[reward.item.id]}</svg>`:reward.item.emoji);
     const tag=isLegend?'<div class="chest-rare-tag chest-tag-legend">👑 LEGENDE-BELONING 👑</div>':'<div class="chest-rare-tag">✦ ZELDZAAM ITEM ✦</div>';
     const icCls=isLegend?'chest-item-ic-legend':'chest-item-ic-gold';
-    head=`${tag}<div class="chest-item-ic ${icCls}">${icon}</div><div class="chest-item-nm">${reward.item.naam}</div><div class="chest-item-sub">Ontgrendeld - draag het in de winkel.</div>`;
+    head=`${tag}<div class="chest-item-ic ${icCls}">${icon}</div><div class="chest-item-nm">${reward.item.naam}</div><div class="chest-item-sub">Nu van jou. Draag het in de winkel.</div>`;
   }else if(reward.power){
     const pic=(typeof _ico==='function')?_ico(reward.power.icon,50):'⚡';
     head=`<div class="chest-rare-tag chest-tag-blue">POWER-UP</div><div class="chest-item-ic chest-item-ic-blue">${pic}</div><div class="chest-item-nm">${reward.power.naam}</div><div class="chest-item-sub">Toegevoegd aan je voorraad.</div>`;
@@ -1078,7 +1078,7 @@ function _chestBurst(ov,reward,close,hint,box){
       revealHtml=`<div class="chest-rare-tag">✦ ZELDZAAM ✦</div>
         <div class="chest-item-ic chest-item-ic-gold">${icon}</div>
         <div class="chest-item-nm">${reward.item.naam}</div>
-        <div class="chest-item-sub">Nieuw kledingstuk ontgrendeld! Trek het aan in de winkel.</div>`;
+        <div class="chest-item-sub">Nieuw kledingstuk. Trek het aan in de winkel.</div>`;
     }else{
       try{if(typeof addCoins==='function')addCoins(reward.coins);}catch(e){}
       const cico=(typeof _ico==='function')?_ico('coin',30):'🪙';

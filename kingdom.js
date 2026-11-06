@@ -333,12 +333,12 @@ function kdBallonnen(wd){
 const KD_NIVEAUS=[[0,'Kamp'],[1,'Gehucht'],[4,'Dorp'],[10,'Stadje'],[20,'Stad'],[34,'Metropool'],[48,'Kingdom']];
 // Elk nieuw eilandniveau zet er iets groots bij: zo wordt het eiland zichtbaar grootser.
 const KD_WONDEREN=[
-  {id:'inwoners',min:1,ic:'🚶',naam:'Inwoners',tekst:'Mensen wandelen over je paden. Hoe meer je bouwt, hoe drukker het wordt.'},
-  {id:'lantaarns',min:4,ic:'🏮',naam:'Lantaarns',tekst:'Lantaarns langs alle paden, \'s avonds branden ze.'},
-  {id:'muur',min:10,ic:'🧱',naam:'Stadsmuur',tekst:'Een muur met torens rond het kasteelplein.'},
-  {id:'haven',min:20,ic:'🌉',naam:'Buiteneiland',tekst:'Een tweede eiland met een watermolen, verbonden door een brug.'},
-  {id:'ballon',min:34,ic:'🎈',naam:'Luchtballonnen',tekst:'Luchtballonnen in je vakkleuren drijven over het eiland.'},
-  {id:'kasteel',min:48,ic:'👑',naam:'Het grote kasteel',tekst:'Vier torens, gouden vaandels en vuurwerk in de avond.'}];
+  {id:'inwoners',min:1,ic:'<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="8" cy="6" r="3" fill="#f59e0b"/><path d="M3 21v-6a5 5 0 0 1 10 0v6z" fill="#3b82f6"/><circle cx="17" cy="8" r="2.5" fill="#d97706"/><path d="M13 21v-4.5a4 4 0 0 1 8 0V21z" fill="#1d4ed8"/></svg>',naam:'Inwoners',tekst:'Mensen wandelen over je paden. Hoe meer je bouwt, hoe drukker het wordt.'},
+  {id:'lantaarns',min:4,ic:'<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="11" y="2" width="2" height="4" fill="#475569"/><path d="M7 7h10l-1 10H8z" fill="#f59e0b"/><path d="M10 9h4l-.5 6h-3z" fill="#fde68a"/><rect x="11" y="17" width="2" height="5" fill="#475569"/></svg>',naam:'Lantaarns',tekst:'Lantaarns langs alle paden, \'s avonds branden ze.'},
+  {id:'muur',min:10,ic:'<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 9h3V6h3v3h3V6h2v3h3V6h3v3h3v12H2z" fill="#94a3b8"/><path d="M2 13h20v2H2zm5 4h2v4H7zm8 0h2v4h-2zM11 13h2v4h-2z" fill="#64748b"/></svg>',naam:'Stadsmuur',tekst:'Een muur met torens rond het kasteelplein.'},
+  {id:'haven',min:20,ic:'<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M1 19h22v3H1z" fill="#38bdf8"/><path d="M2 12h20v3a7 4 0 0 0-14 0H2z" fill="#a16207"/><path d="M4 8h2v7H4zm14 0h2v7h-2z" fill="#78350f"/></svg>',naam:'Buiteneiland',tekst:'Een tweede eiland met een watermolen, verbonden door een brug.'},
+  {id:'ballon',min:34,ic:'<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 1 7 7c0 4-4 7-5 8h-4c-1-1-5-4-5-8a7 7 0 0 1 7-7z" fill="#ef4444"/><path d="M12 2c2 2 2.5 4.5 2.5 7S13 15 12 17c-1-2-2.5-5.5-2.5-8S10 4 12 2z" fill="#fde68a"/><rect x="9.5" y="18" width="5" height="4" rx="1" fill="#a16207"/></svg>',naam:'Luchtballonnen',tekst:'Luchtballonnen in je vakkleuren drijven over het eiland.'},
+  {id:'kasteel',min:48,ic:'<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 1l5 3-5 2z" fill="#f59e0b"/><rect x="11" y="1" width="1.5" height="8" fill="#475569"/><path d="M5 9h2v2h2V9h2v2h2V9h2v2h2V9h2v13H5z" fill="#94a3b8"/><path d="M10 15a2 2 0 0 1 4 0v7h-4z" fill="#475569"/></svg>',naam:'Het grote kasteel',tekst:'Vier torens, gouden vaandels en vuurwerk in de avond.'}];
 function kdWonderAan(id,b){const w=KD_WONDEREN.find(x=>x.id===id);return !!w&&(b==null?(KD.wereld?KD.wereld.totaal:0):b)>=w.min;}
 function kdWonderBij(min){return KD_WONDEREN.find(x=>x.min===min);}
 function kdEilandNiveau(b){let n=KD_NIVEAUS[0],v=null;for(let i=0;i<KD_NIVEAUS.length;i++){if(b>=KD_NIVEAUS[i][0]){n=KD_NIVEAUS[i];v=KD_NIVEAUS[i+1]||null;}}return {naam:n[1],min:n[0],volgende:v};}
@@ -618,7 +618,7 @@ function kdToonLijst(scroll){
       <div class="kd-balk"><i style="width:${pct}%"></i></div>
       <small>${niv.volgende?`Nog ${niv.volgende[0]-wd.totaal} ${niv.volgende[0]-wd.totaal===1?'gebouw':'gebouwen'} tot ${niv.volgende[1]}${(kdWonderBij(niv.volgende[0])||{}).naam?` · dan: ${kdWonderBij(niv.volgende[0]).naam.toLowerCase()}`:''}`:'Je eiland is compleet'}</small>
     </div>
-    ${wd.klaar?`<button class="kd-klaar" onclick="kdKies('${volg[0].vak.id}')"><span class="kd-klaar-ic">🏗️</span><span><b>${wd.klaar===1?'1 gebouw':wd.klaar+' gebouwen'} klaar om te bouwen</b><small>Je beheersing heeft ${wd.klaar===1?'het':'ze'} vrijgespeeld</small></span><span class="kd-chev">›</span></button>`
+    ${wd.klaar?`<button class="kd-klaar" onclick="kdKies('${volg[0].vak.id}')"><span class="kd-klaar-ic"><svg viewBox="0 0 24 24" aria-hidden="true" width="24" height="24"><path d="M4 22V10l6-4 6 4v12z" fill="#fde68a"/><path d="M8 22v-6h4v6z" fill="#a16207"/><path d="M15 3h6v2h-6zm2 2h2v5h-2z" fill="#f59e0b"/></svg></span><span><b>${wd.klaar===1?'1 gebouw':wd.klaar+' gebouwen'} klaar om te bouwen</b><small>Je beheersing heeft ${wd.klaar===1?'het':'ze'} vrijgespeeld</small></span><span class="kd-chev">›</span></button>`
       :`<p class="kd-uitleg">Gebouwen komen vrij als je leerdoelen <b>beheerst</b> (80% of meer). Oefen, speel Zwakke plek, en kom terug om te bouwen.</p>`}
     <div class="kd-lijst">${volg.map(w=>{const vlg=w.gebouwd+w.klaar;const eis=w.st.eisen[vlg];const thema=kdThema(w.vak.id);
       const rest=vlg<4?Math.max(0,eis-w.st.beheerst):0;
@@ -653,7 +653,7 @@ function kdToonWijk(id,stil){
     ${volgende<4?`<div class="kd-bijna"><div class="kd-bijna-h">Hier liggen je punten</div>
       ${bijna.map(x=>`<div class="kd-ld"><span>${_kdEsc(x.ld.naam||x.ld.id)}</span><i style="--p:${Math.round(x.score*100)}%"></i><b>${Math.round(x.score*100)}%</b></div>`).join('')}
       ${nooit.map(x=>`<div class="kd-ld nooit"><span>${_kdEsc(x.ld.naam||x.ld.id)}</span><i style="--p:0%"></i><b>nieuw</b></div>`).join('')}
-      <div class="kd-acties"><button class="kd-knop" onclick="kdOefen('${id}')">Oefen ${_kdEsc(w.vak.naam)}</button><button class="kd-knop sec" onclick="kdZwak('${id}')">🎯 Zwakke plek</button></div></div>`
+      <div class="kd-acties"><button class="kd-knop" onclick="kdOefen('${id}')">Oefen ${_kdEsc(w.vak.naam)}</button><button class="kd-knop sec" onclick="kdZwak('${id}')">Zwakke plek</button></div></div>`
       :'<p class="kd-uitleg">Deze wijk is compleet. Knap werk.</p>'}`;
   _KG.clear();
   if(!stil){box.scrollTop=0;if(!KD.bouwt&&KD.blad!=='vol')kdBlad('half');}

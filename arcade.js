@@ -267,14 +267,16 @@ function renderArcade(){
     </button>`;
   };
   box.innerHTML=`
-    <header class="arc-hub-head"><div class="arc-hub-deco" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div><div class="arc-hub-eyebrow">${(typeof APP_LEVEL!=='undefined'?APP_LEVEL:'').toUpperCase()} · Arcade</div>
-      <h1 class="arc-hub-title">Leren dat voelt als spelen</h1>
-      <p class="arc-hub-sub">Alles draait op echte examenstof en telt mee voor je XP, je divisie en je beheersing.</p></header>
+    <header class="arc-hub-head"><div class="arc-hub-eyebrow">${(typeof APP_LEVEL!=='undefined'?APP_LEVEL:'').toUpperCase()} · Arcade</div>
+      <h1 class="arc-hub-title">Spelen met je eigen stof</h1>
+      <p class="arc-hub-sub">Zes korte spellen en twee werelden. De vragen komen uit het vak dat je kiest en tellen mee voor je XP en je beheersing.</p></header>
     <div class="arc-chips" role="group" aria-label="Vak">${chips}</div>
     ${arcWerelden()}
     <h2 class="arc-sectie">Minigames</h2>
     <div class="arc-grid">${ARC_VOLGORDE.map(id=>tile(ARC_GAMES[id])).join('')}</div>
     <p class="arc-hub-foot">${vak?`Vragen uit <b>${_arcEsc(vak.naam)}</b>. `:''}Stoppen kan altijd met ✕; wat je verdiende, houd je.</p>`;
+  // Het gekozen vak in beeld schuiven (zonder de pagina zelf te scrollen).
+  try{const rij=box.querySelector('.arc-chips'),on=rij&&rij.querySelector('.arc-chip.on');if(on){const x=on.getBoundingClientRect().left-rij.getBoundingClientRect().left+rij.scrollLeft;rij.scrollLeft=Math.max(0,x-rij.clientWidth/2+on.offsetWidth/2);}}catch(e){}
   // Illustraties bewegen alleen als ze in beeld zijn (zuinig op batterij).
   try{ARC._io&&ARC._io.disconnect();ARC._io=new IntersectionObserver(es=>es.forEach(e=>e.target.classList.toggle('live',e.isIntersecting)),{threshold:.3});
     box.querySelectorAll('.arc-tile').forEach(t=>ARC._io.observe(t));}catch(e){}
@@ -341,11 +343,11 @@ const BOM_REL=[
   {vak:['na','na1'],P:['m','massa','g'],A:['ρ','dichtheid','g/cm³'],B:['V','volume','cm³'],a:[0.8,1,2.7,7.9,8.9,11.3],b:[2,5,10,20,50,100],ctx:'Een blokje van één materiaal.'},
   {vak:['na','na1'],P:['W','arbeid','J'],A:['F','kracht','N'],B:['s','afstand','m'],a:[10,20,50,100,250,500],b:[0.5,1,2,3,4,10],ctx:'Je duwt een kar over de vloer.'},
   {vak:['na','na1'],P:['F','kracht','N'],A:['p','druk','Pa'],B:['A','oppervlakte','m²'],a:[100,200,500,1000,2000],b:[0.5,1,2,3,5],ctx:'Een kist drukt op de grond.',niv:['havo','vwo']},
-  {vak:['sk','na2'],P:['m','massa','g'],A:['n','stoffeelhoeveelheid','mol'],B:['M','molaire massa','g/mol'],a:[0.1,0.2,0.25,0.5,1,2,3],b:[2.0,18.0,32.0,44.0,58.4,100.1],ctx:'Je weegt een hoeveelheid stof af.',niv:['havo','vwo']},
-  {vak:['sk','na2'],P:['n','stoffeelhoeveelheid','mol'],A:['c','molariteit','mol/L'],B:['V','volume','L'],a:[0.1,0.2,0.5,1,2],b:[0.25,0.5,1,2,5],ctx:'Een oplossing in een maatkolf.',niv:['havo','vwo']},
+  {vak:['sk','na2'],P:['m','massa','g'],A:['n','stofhoeveelheid','mol'],B:['M','molaire massa','g/mol'],a:[0.1,0.2,0.25,0.5,1,2,3],b:[2.0,18.0,32.0,44.0,58.4,100.1],ctx:'Je weegt een hoeveelheid stof af.',niv:['havo','vwo']},
+  {vak:['sk','na2'],P:['n','stofhoeveelheid','mol'],A:['c','molariteit','mol/L'],B:['V','volume','L'],a:[0.1,0.2,0.5,1,2],b:[0.25,0.5,1,2,5],ctx:'Een oplossing in een maatkolf.',niv:['havo','vwo']},
   {vak:['sk','na2','na1'],P:['m','massa','g'],A:['ρ','dichtheid','g/mL'],B:['V','volume','mL'],a:[0.79,1,1.2,1.84],b:[10,25,50,100,250],ctx:'Een vloeistof in een maatcilinder.'},
   {vak:['ec','be'],P:['TO','omzet','€'],A:['p','prijs','€'],B:['q','afzet','stuks'],a:[2,5,8,12,15,20,25,40],b:[100,250,400,500,1000,2000],ctx:'Een bedrijf verkoopt één product.'},
-  {vak:['ec','be'],P:['TK','totale variabele kosten','€'],A:['GVK','variabele kosten per stuk','€'],B:['q','productie','stuks'],a:[1.5,2,3,4,6,8],b:[200,500,1000,1500,4000],ctx:'Een fabriek draait een week.'},
+  {vak:['ec','be'],P:['TVK','totale variabele kosten','€'],A:['GVK','variabele kosten per stuk','€'],B:['q','productie','stuks'],a:[1.5,2,3,4,6,8],b:[200,500,1000,1500,4000],ctx:'Een fabriek draait een week.'},
   {vak:['wa','wb','wi'],P:['s','afstand','km'],A:['v','snelheid','km/u'],B:['t','tijd','u'],a:[4,12,15,20,50,60,80,100,120],b:[0.25,0.5,1.5,2,2.5,3],ctx:'Een reis met constante snelheid.'},
   {vak:['wa','wb','wi'],P:['A','oppervlakte','m²'],A:['l','lengte','m'],B:['b','breedte','m'],a:[3,4,5,6,7.5,8,12],b:[2,3,4,5,6,10],ctx:'Een rechthoekige tuin.'},
 ];
@@ -381,7 +383,7 @@ function _bomSom(vakId){
     ctx:r.ctx,
     gegeven:kend.map(k=>`${naam(k)}: <b>${_bomGeld(w[k],eh(k))}</b>`),
     vraag:`Bereken ${/^(vermogen|volume|bruto binnenlands product)$/.test(naam(onb))?'het':'de'} ${naam(onb)}.`,
-    A:{vraag:'Welke grootheid zoek je?',opts:arcShuffle([`${sym(onb)} · ${naam(onb)}`,...arcShuffle([...kend.map(k=>`${sym(k)} · ${naam(k)}`),...arcShuffle(andere).slice(0,3).map(q=>`${q[0]} · ${q[1]}`)]).slice(0,3)]),juist:`${sym(onb)} · ${naam(onb)}`},
+    A:{vraag:`Welk symbool hoort bij ${naam(onb)}?`,opts:arcShuffle([sym(onb),...arcShuffle([...new Set([...kend.map(sym),...arcShuffle(andere).map(q=>q[0])])].filter(x=>x!==sym(onb))).slice(0,3)]),juist:sym(onb)},
     B:{vraag:'Welke formule gebruik je?',opts:arcShuffle([formule,...arcShuffle(fout).slice(0,3)]),juist:formule},
     C:{vraag:'Wat is de uitkomst?',opts:arcShuffle([_bomGeld(juist,eh(onb)),...arcShuffle(uniek).slice(0,3)]),juist:_bomGeld(juist,eh(onb))},
     uitleg:`${formule} = ${som} = ${_bomGeld(juist,eh(onb))}`,
@@ -393,7 +395,7 @@ function _bomProc(){
     const nieuw=_bomRond(oud*(1+pct/100));
     const f='% verandering = (nieuw − oud) / oud × 100%';
     return {ctx:'Een prijs verandert.',gegeven:[`oude prijs: <b>€ ${arcNf(oud,2)}</b>`,`nieuwe prijs: <b>€ ${arcNf(nieuw,2)}</b>`],vraag:'Bereken de procentuele verandering.',
-      A:{vraag:'Welke grootheid zoek je?',opts:arcShuffle(['procentuele verandering','absolute verandering','nieuwe prijs','indexcijfer']),juist:'procentuele verandering'},
+      A:(()=>{const e=v=>'€ '+arcNf(_bomRond(v),2),j=e(nieuw-oud);return {vraag:'Wat is het verschil, nieuw − oud?',opts:arcShuffle([...new Set([j,e(oud-nieuw),e(nieuw+oud),e((nieuw-oud)/100)])].filter((v,i)=>i<4)),juist:j};})(),
       B:{vraag:'Welke formule gebruik je?',opts:arcShuffle([f,'% verandering = (nieuw − oud) / nieuw × 100%','% verandering = nieuw / oud × 100%','% verandering = (oud − nieuw) × 100%']),juist:f},
       C:{vraag:'Wat is de uitkomst?',opts:arcShuffle([arcNf(pct,1)+'%',arcNf(_bomRond((nieuw-oud)/nieuw*100),1)+'%',arcNf(_bomRond(nieuw/oud*100),1)+'%',arcNf(-pct,1)+'%']),juist:arcNf(pct,1)+'%'},
       uitleg:`(${arcNf(nieuw,2)} − ${arcNf(oud,2)}) / ${arcNf(oud,2)} × 100% = ${arcNf(pct,1)}%`};
@@ -401,7 +403,7 @@ function _bomProc(){
   const geheel=arcPick([40,80,120,250,400,600,1200]),p=arcPick([5,10,12,15,20,25,30,60,75]);
   const deel=_bomRond(geheel*p/100);const f='deel = p / 100 × geheel';
   return {ctx:'Een korting of een aandeel.',gegeven:[`geheel: <b>${arcNf(geheel,0)}</b>`,`percentage: <b>${p}%</b>`],vraag:`Hoeveel is ${p}% van ${arcNf(geheel,0)}?`,
-    A:{vraag:'Welke grootheid zoek je?',opts:arcShuffle(['het deel','het percentage','het geheel','de groeifactor']),juist:'het deel'},
+    A:(()=>{const j=arcNf(_bomRond(geheel/100),3);return {vraag:'Hoeveel is 1% van het geheel?',opts:arcShuffle([...new Set([j,arcNf(_bomRond(geheel/10),3),arcNf(_bomRond(100/geheel),3),arcNf(geheel,0)])]),juist:j};})(),
     B:{vraag:'Welke formule gebruik je?',opts:arcShuffle([f,'deel = geheel / p','deel = p × geheel','deel = geheel − p']),juist:f},
     C:{vraag:'Wat is de uitkomst?',opts:arcShuffle([arcNf(deel,2),arcNf(_bomRond(geheel/p),2),arcNf(p*geheel,0),arcNf(geheel-p,0)].filter((v,i,a)=>a.indexOf(v)===i)),juist:arcNf(deel,2)},
     uitleg:`${p} / 100 × ${arcNf(geheel,0)} = ${arcNf(deel,2)}`};
@@ -498,10 +500,10 @@ function bomBoem(reden){
   st.appendChild(ov);
   if(!met3d)arcBurst(innerWidth/2,innerHeight/2-40,{n:44,kleuren:['#1c1917','#44403c','#f97316','#facc15','#ef4444'],afstand:260,maat:11,duur:1000,val:120});
   arcLater(()=>arcResult({game:'bom',gewonnen:BOM.defused>0,kicker:BOM.defused?'Explosie na':'Direct de lucht in',groot:'',tel:{naar:BOM.defused,na:` <small>${BOM.defused===1?'bom':'bommen'}</small>`},
-    sub:BOM.defused?'ontmanteld voordat het misging':'Volgende keer: eerst de grootheid, dan de formule, dan rekenen.',
+    sub:BOM.defused?'ontmanteld voordat het misging':'Volgende keer: eerst het symbool, dan de formule, dan rekenen.',
     recWaarde:BOM.defused||null,stats:[['Tijd over',arcNf(BOM.tijdBonus/1000,1)+' s'],['Fouten',BOM.fouten],['Moeilijkste klok',Math.round(bomTijd()/1000)+' s']],
     xp:BOM.defused*30+Math.min(40,Math.round(BOM.tijdBonus/1000)),
-    leer:'Procedurele kennis: welke grootheid, welke formule, dan pas de rekenmachine. Precies de volgorde van een examensom.'}),2300);
+    leer:'Eerst het symbool, dan de formule, dan pas de rekenmachine. Zo pak je ook een examensom aan.'}),2300);
 }
 
 // ═══════ 👹 EXAMENBOSS ═══════
@@ -538,12 +540,12 @@ function bossRun(){
   arcA3('boss','a3-boss',vak&&vak.kleur);
   arcCountdown(()=>{BOSS.start=performance.now();bossZeg('start');bossVraag();bossLoop();});
 }
-function bossAv(g){try{if(typeof getAnimalDisplay==='function'){const h=getAnimalDisplay(g.animalId,g.stage||0,28,'');if(h)return h;}}catch(e){}return '🦊';}
+function bossAv(g){try{if(typeof getAnimalDisplay==='function'){const h=getAnimalDisplay(g.animalId,g.stage||0,28,'');if(h)return h;}}catch(e){}return '';}
 function bossSVG(vak){
   const code=_arcEsc(((vak&&vak.naam)||'CE').slice(0,2).toUpperCase());
-  return `<svg viewBox="0 0 200 170" aria-hidden="true"><defs><linearGradient id="bsg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="color-mix(in srgb,var(--vk) 70%,#fff)"/><stop offset="1" stop-color="var(--vk)"/></linearGradient></defs>
+  return `<svg viewBox="0 0 200 170" aria-hidden="true">
     <ellipse cx="100" cy="160" rx="62" ry="8" fill="rgba(0,0,0,.35)"/>
-    <path class="boss-body" d="M44 150V58c0-26 24-44 56-44s56 18 56 44v92l-14-12-14 12-14-12-14 12-14-12-14 12-14-12-14 12z" fill="url(#bsg)" stroke="#12051f" stroke-width="5" stroke-linejoin="round"/>
+    <path class="boss-body" d="M44 150V58c0-26 24-44 56-44s56 18 56 44v92l-14-12-14 12-14-12-14 12-14-12-14 12-14-12-14 12z" fill="var(--vk)" stroke="#12051f" stroke-width="5" stroke-linejoin="round"/>
     <path d="M60 40l-14-22 26 12M140 40l14-22-26 12" fill="var(--vk)" stroke="#12051f" stroke-width="5" stroke-linejoin="round"/>
     <g class="boss-eyes"><ellipse cx="78" cy="72" rx="13" ry="15" fill="#fff" stroke="#12051f" stroke-width="4"/><ellipse cx="122" cy="72" rx="13" ry="15" fill="#fff" stroke="#12051f" stroke-width="4"/><circle cx="81" cy="76" r="6" fill="#12051f"/><circle cx="119" cy="76" r="6" fill="#12051f"/>
     <path d="M62 52l30 10M138 52l-30 10" stroke="#12051f" stroke-width="6" stroke-linecap="round"/></g>
@@ -609,10 +611,11 @@ function bossAntwoord(k,knoppen,card){
     else arcFly(van,naar,`<span class="boss-orb${sup?' super':''}"></span>`,{duur:380,boog:-40,eind:1.4,klaar:()=>{klap();arcBurst(naar.x,naar.y-10,{n:sup?30:12,kleuren:['#fde047','#fff','#f97316'],afstand:sup?150:80,maat:7});}});
     if(sup)bossZeg('super');
   }else{
-    knoppen[k].classList.add('fout');BOSS.combo=0;BOSS.fout++;BOSS.diff=Math.max(1,BOSS.diff-1);BOSS.superAan=false;
+    knoppen[k].classList.add('fout');BOSS.combo=0;BOSS.fout++;BOSS.diff=Math.max(1,BOSS.diff-1);
     bossSlag(BOSS_FASE[BOSS.fase].slag+5);bossZeg('fout',.7);
     const uo=it.q.uo&&it.q.uo[BOSS.opts.idx[k]];
-    card.insertAdjacentHTML('beforeend',`<div class="arc-uitleg"><b>Boss-aanval.</b> ${_arcEsc(uo||it.q.u||'')}</div>`);
+    const uitleg=uo||it.q.u||'';BOSS.leesTijd=Math.min(6500,1800+uitleg.length*32);
+    card.insertAdjacentHTML('beforeend',`<div class="arc-uitleg"><b>Boss-aanval.</b> ${_arcEsc(uitleg)}</div>`);
   }
   // Fasewissel.
   BOSS.fase=BOSS.hp<=BOSS.max*.33?2:BOSS.hp<=BOSS.max*.66?1:0;
@@ -620,7 +623,7 @@ function bossAntwoord(k,knoppen,card){
   if(!goed)bossBalken();
   if(BOSS.hp<=0){BOSS.klaar=true;a3Haak('boss','dood');arcLater(()=>{const m=document.getElementById('boss-mon');if(m&&!(typeof A3S!=='undefined'&&A3S.boss)){m.classList.add('poef');const c=arcMid(m);arcBurst(c.x,c.y,{n:40,kleuren:['#a78bfa','#c4b5fd','#fde047','#fff'],afstand:220,maat:10,duur:1000});}arcSnd('fanfare');},450);arcLater(()=>{BOSS.klaar=false;bossEinde('win');},2300);return;}
   if(BOSS.jij<=0)return;
-  arcLater(bossVraag,goed?560:2100);
+  arcLater(bossVraag,goed?560:(BOSS.leesTijd||2100));
 }
 function bossFase(f){
   a3Haak('boss','fase',f);arcSnd('levelup');arcHap([40,40,80]);bossZeg(f===1?'fase1':'fase2');
@@ -691,6 +694,8 @@ function riskKeuze(){
 }
 function riskVraag(){
   const it=arcNext(RISK.pool,RISK.gebruikt,RISK.inzet.d);RISK.item=it;RISK.t0=performance.now();
+  // Geen vraag op het gekozen niveau over? Dan telt het niveau van de vraag die je krijgt.
+  if(it&&it.d!==RISK.inzet.d){const z=RISK_INZET.find(x=>x.d===it.d);if(z)RISK.inzet=z;}
   const o=arcOpties(it.q);RISK.opts=o;
   const m=document.getElementById('risk-main');
   m.innerHTML=`<div class="risk-inzet risk-${RISK.inzet.id}">${RISK.inzet.st} ${RISK.inzet.naam} · +${Math.round(RISK.inzet.pt*RISK.mult)}</div>`+arcVraagHtml(it,o,'risk-card');
@@ -725,8 +730,8 @@ function riskBeslis(w){
   const m=document.getElementById('risk-main');
   m.innerHTML=`<div class="risk-beslis"><div class="risk-plus">+${arcNf(w,0)}</div>
     <div class="risk-beslis-h">Pot: <b>${arcNf(RISK.pot,0)}</b></div>
-    <div class="risk-beslis-b"><button class="risk-bankknop" id="risk-op"><span>🏦</span>Opslaan<small>zet ${arcNf(RISK.pot,0)} veilig</small></button>
-    <button class="risk-doorknop" id="risk-door"><span>🔥</span>Doorgaan<small>volgende ×${arcNf(RISK.mult,1)}</small></button></div></div>`;
+    <div class="risk-beslis-b"><button class="risk-bankknop" id="risk-op">Opslaan<small>zet ${arcNf(RISK.pot,0)} veilig</small></button>
+    <button class="risk-doorknop" id="risk-door">Doorgaan<small>volgende ×${arcNf(RISK.mult,1)}</small></button></div></div>`;
   document.getElementById('risk-op').onclick=()=>riskOpslaan(false);
   document.getElementById('risk-door').onclick=()=>{arcSnd('tap');riskKeuze();};
 }
@@ -841,7 +846,7 @@ function zwakEinde(){
   const v=Math.round((ZWAK.voor.hasData?ZWAK.voor.score:0)*100),n=Math.round((na.hasData?na.score:0)*100);
   const beter=n>v;const gerepareerd=beter&&(n>=65||n-v>=15);
   const ring=(p,c)=>`<svg viewBox="0 0 120 120" class="zwak-ring"><circle cx="60" cy="60" r="50" fill="none" stroke="currentColor" stroke-opacity=".14" stroke-width="12"/><circle class="zwak-ring-v" cx="60" cy="60" r="50" fill="none" stroke="${c}" stroke-width="12" stroke-linecap="round" pathLength="100" stroke-dasharray="${p} 100" style="--p:${p}" transform="rotate(-90 60 60)"/></svg>`;
-  arcResult({game:'zwak',gewonnen:gerepareerd||ZWAK.goed>=3,kicker:gerepareerd?'🎯 Zwakke plek gerepareerd':beter?'Vooruitgang':'Nog even doorzetten',
+  arcResult({game:'zwak',gewonnen:gerepareerd||ZWAK.goed>=3,kicker:gerepareerd?'Zwakke plek gerepareerd':beter?'Vooruitgang':'Nog even doorzetten',
     groot:`<span class="zwak-van">${v}%</span><span class="zwak-pijl">→</span><span class="zwak-naar">${n}%</span>`,
     sub:`${_arcEsc(d.naam||d.ldId)} · ${ZWAK.goed} van ${ZWAK.max} goed${ZWAK.herkans?` · ${ZWAK.herkans}× hersteld na een fout`:''}`,
     recWaarde:null,geenRecPill:true,stats:null,
@@ -986,7 +991,8 @@ const VAL={};
 function valVoorbereid(klaar){arcPool(ARC.vakId,p=>{VAL.pool=p;klaar();});}
 function valRun(){
   // Sjabloonvragen ('Wat betekent «X»?') werken niet als stelling: die slaan we hier over.
-  if(VAL.pool)VAL.pool=VAL.pool.filter(x=>!/^wat betekent «|welk begrip|hoort bij deze omschrijving|welke term|herken je hier|wat is de juiste term/i.test(x.q.v));
+  if(VAL.pool)VAL.pool=VAL.pool.filter(x=>!/^wat (betekent|houdt) «|welk begrip|hoort bij deze omschrijving|welke term|herken je hier|wat is de juiste term|welke .*\b(niet|geen)\b/i.test(x.q.v)
+    &&!x.q.o.some(o=>/^(alle|beide|geen van|zowel|a en b|b en c|a, b|antwoord [a-d])\b|bovenstaande/i.test(String(o))));
   if(!VAL.pool||VAL.pool.length<8){arcGeenVragen('val');return;}
   Object.assign(VAL,{score:0,streak:0,beste:0,goed:0,fout:0,vallen:0,duur:60000,gebruikt:new Set(),klaar:false,pauze:0});
   arcStage('val',`${arcTop('Val of waar',`<span class="val-klok" id="val-klok">60</span>`)}
@@ -1040,7 +1046,7 @@ function valOordeel(zegtKlopt){
     VAL.goed++;VAL.streak++;VAL.beste=Math.max(VAL.beste,VAL.streak);
     const mult=VAL.streak>=10?3:VAL.streak>=5?2:1;VAL.score+=10*mult;
     if(!c.waar){VAL.vallen++;arcSnd('combo');a3Haak('val','ontdekt');const uo=c.it.q.uo&&c.it.q.uo[c.oi];
-      if(feed)feed.innerHTML=`<div class="val-gevangen"><b>🪤 Val ontdekt</b>${uo?' · '+_arcEsc(uo):''}</div>`;}
+      if(feed)feed.innerHTML=`<div class="val-gevangen"><b>Val ontdekt</b>${uo?' · '+_arcEsc(uo):''}</div>`;}
     else{arcSnd('correct');if(feed)feed.innerHTML='';}
     arcHap(12);
   }else{
@@ -1050,7 +1056,7 @@ function valOordeel(zegtKlopt){
   }
   const s=document.getElementById('val-score');if(s)s.textContent=arcNf(VAL.score,0);
   const vm=document.getElementById('val-meter');if(vm){vm.style.width=Math.min(100,VAL.streak*10)+'%';vm.classList.toggle('vuur',VAL.streak>=5);}
-  const sk=document.getElementById('val-streak');if(sk)sk.textContent=VAL.streak>=5?`🔥 ×${VAL.streak>=10?3:2}`:VAL.streak>=2?`${VAL.streak} op rij`:'';
+  const sk=document.getElementById('val-streak');if(sk)sk.textContent=VAL.streak>=5?`Reeks ×${VAL.streak>=10?3:2}`:VAL.streak>=2?`${VAL.streak} op rij`:'';
   arcLater(valKaart,goed?260:1900);
 }
 function valEinde(){
@@ -1076,8 +1082,8 @@ const ARC_GAMES={
     uitleg:'Vijf scherpe vragen op één leerdoel. Het spel past zich aan: gaat het mis, dan krijg je meteen een vergelijkbare vraag. Je ziet je beheersing stijgen.',
     art:ARC_ART.zwak,recLabel:'Gerepareerd',recFmt:v=>v+'×',voorbereid:zwakVoorbereid,introExtra:()=>zwakIntroExtra(),
     run:()=>zwakRun(),kan:()=>true},
-  bom:{id:'bom',naam:'Bom ontmantelen',theme:'bom',kleur:'#ef4444',pitch:'Grootheid, formule, uitkomst. Voordat de klok op nul staat.',
-    uitleg:'Los de drie modules op in de goede volgorde: welke grootheid zoek je, welke formule gebruik je, wat komt eruit. Elke bom heeft minder tijd. Drie fouten en het is BOEM.',
+  bom:{id:'bom',naam:'Bom ontmantelen',theme:'bom',kleur:'#ef4444',pitch:'Symbool, formule, uitkomst. Voordat de klok op nul staat.',
+    uitleg:'Los de drie modules op in de goede volgorde: het symbool of de eerste tussenstap, de formule, de uitkomst. Elke bom heeft minder tijd. Drie fouten en het is BOEM.',
     art:ARC_ART.bom,recLabel:'Record',recFmt:v=>v+' '+(v===1?'bom':'bommen'),run:bomRun,
     kan:v=>BOM_REL.some(r=>r.vak.includes(v))||BOM_PROC_VAK.includes(v)?true:'Speelt met gemengde natuurkunde-sommen'},
   boss:{id:'boss',naam:'Examenboss',theme:'boss',kleur:'#8b5cf6',pitch:'Versla de boss in 3 minuten, sneller dan een ghost uit je divisie.',
