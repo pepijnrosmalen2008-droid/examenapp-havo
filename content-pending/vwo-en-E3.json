@@ -1,0 +1,682 @@
+{
+ "id": "E3",
+ "lo": "en.E.3",
+ "gs": 2,
+ "naam": "Verteller en vertelperspectief",
+ "beschrijving": "Je leert in het Engels vertellers en vertelperspectieven herkennen en onderscheiden: ik-verteller en hij/zij-verteller, alwetend en beperkt, de onbetrouwbare verteller en het effect van het perspectief op nabijheid en spanning.",
+ "ceStatus": "SE",
+ "binas": "",
+ "val": "",
+ "onderwerpen": [
+  "Wie vertelt het verhaal",
+  "Hoeveel weet de verteller",
+  "De onbetrouwbare verteller",
+  "Effect van het perspectief",
+  "Perspectief herkennen in een fragment"
+ ],
+ "sam": "De verteller kan een ik-verteller, een hij/zij-verteller, een wij-verteller of een jij-verteller zijn; het voornaamwoord verraadt het. Een alwetende verteller kent alle gedachten, een beperkte verteller volgt één personage. Een onbetrouwbare verteller herken je aan een tegenspraak. Het perspectief bepaalt de nabijheid en de spanning voor de lezer.",
+ "begrippen": [
+  {
+   "t": "Verteller",
+   "d": "Degene die het verhaal vertelt."
+  },
+  {
+   "t": "Ik-verteller",
+   "d": "Een verteller die in het verhaal staat en I zegt."
+  },
+  {
+   "t": "Hij/zij-verteller",
+   "d": "Een verteller buiten het verhaal, met he of she."
+  },
+  {
+   "t": "Wij-verteller",
+   "d": "Een verteller die namens een groep spreekt, met we."
+  },
+  {
+   "t": "Jij-verteller",
+   "d": "Een verteller die de lezer aanspreekt, met you."
+  },
+  {
+   "t": "Alwetende verteller",
+   "d": "Een verteller die alle gedachten kent."
+  },
+  {
+   "t": "Beperkte verteller",
+   "d": "Een verteller die één personage volgt."
+  },
+  {
+   "t": "Onbetrouwbare verteller",
+   "d": "Een verteller die je niet helemaal kunt vertrouwen."
+  },
+  {
+   "t": "Perspectief",
+   "d": "Vanuit wiens oogpunt het verhaal verteld wordt."
+  },
+  {
+   "t": "Nabijheid",
+   "d": "Hoe dicht de lezer bij een personage komt."
+  },
+  {
+   "t": "Spanning",
+   "d": "Het gevoel dat je wilt weten wat er gebeurt."
+  },
+  {
+   "t": "Tegenspraak",
+   "d": "Wat iemand zegt botst met wat er gebeurt."
+  }
+ ],
+ "sv": [
+  {
+   "v": "Which sentence has a first-person narrator?",
+   "o": [
+    "\"She walked into the room.\"",
+    "\"I walked into the room.\"",
+    "\"They walked into the room.\"",
+    "\"You walked into the room.\""
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 0,
+   "u": "I = ik-verteller. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"She walked into the room.\"\"? Dan denk je dat een vrouwelijk voornaamwoord een ik-vorm is. She verwijst naar iemand anders, dus de verteller staat erbuiten.",
+    "Klopt: het woord I toont dat de verteller zelf in het verhaal staat.",
+    "Koos je \"\"They walked into the room.\"\"? Dan denk je dat een groepswoord als they de verteller zelf is. They noemt een groep buitenstaanders, en niet de verteller.",
+    "Koos je \"\"You walked into the room.\"\"? Dan denk je dat je de verteller bent als je jij leest. You spreekt de lezer aan, en is dus de tweede persoon."
+   ],
+   "uh": "Welke zin heeft een ik-verteller?"
+  },
+  {
+   "v": "Which sentence has a third-person narrator?",
+   "o": [
+    "\"I opened the door and looked outside.\"",
+    "\"We opened the door and looked outside.\"",
+    "\"You opened the door and looked outside, to be honest.\"",
+    "\"He opened the door and looked outside.\""
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 0,
+   "u": "He/she = derde persoon. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"I opened the door and looked outside.\"\"? Dan denk je dat een ik-zin een derde persoon toont. I betekent dat de verteller zelf spreekt, en dat is de eerste persoon.",
+    "Koos je \"\"We opened the door and looked outside.\"\"? Dan denk je dat we een buitenstaander noemt. We omvat de verteller zelf, dus een wij-verteller.",
+    "Koos je \"\"You opened the door and looked outside, to be honest.\"\"? Dan denk je dat you iemand in het verhaal noemt. You richt zich op de lezer, en dat is de tweede persoon.",
+    "Klopt: he is een derde persoon, dus de verteller staat buiten het verhaal."
+   ],
+   "uh": "Welke zin heeft een hij-verteller?"
+  },
+  {
+   "v": "What does an omniscient narrator know?",
+   "o": [
+    "\"the thoughts of all characters\"",
+    "\"only what one character sees\"",
+    "\"only the narrator's own thoughts\"",
+    "\"nothing about the characters\""
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 1,
+   "u": "Alwetend = alles weten. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: een alwetende verteller kent de gedachten van alle personages.",
+    "Koos je \"\"only what one character sees\"\"? Dan denk je dat de verteller één blik heeft. Dat is een beperkte verteller, en niet alwetend.",
+    "Koos je \"\"only the narrator's own thoughts\"\"? Dan denk je dat de verteller alleen zichzelf kent. Een alwetende verteller kent alle personages, en niet alleen zichzelf.",
+    "Koos je \"\"nothing about the characters\"\"? Dan denk je dat de verteller niets weet. Dat is het tegenovergestelde, van alwetend."
+   ],
+   "uh": "Wat weet een alwetende verteller?"
+  },
+  {
+   "v": "What does a limited narrator know?",
+   "o": [
+    "\"everything about everyone\"",
+    "\"nothing about any character\"",
+    "\"only the thoughts of one character\"",
+    "\"only what the reader guesses, you know\""
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 1,
+   "u": "Beperkt = één personage. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"everything about everyone\"\"? Dan denk je dat de verteller alles weet. Dat is een alwetende verteller, en niet beperkt.",
+    "Koos je \"\"nothing about any character\"\"? Dan denk je dat de verteller niets weet. Hij kent wel één personage, en dat is genoeg.",
+    "Klopt: een beperkte verteller volgt één personage en kent alleen diens gedachten.",
+    "Koos je \"\"only what the reader guesses, you know\"\"? Dan denk je dat de lezer de kennis bepaalt. De verteller bepaalt wat de lezer weet, en niet andersom."
+   ],
+   "uh": "Wat weet een beperkte verteller?"
+  },
+  {
+   "v": "What is an unreliable narrator?",
+   "o": [
+    "\"a narrator who never speaks\"",
+    "\"a narrator whose version of events cannot be fully trusted\"",
+    "\"a narrator who is always the hero, really, to be honest, you know\"",
+    "\"a narrator who tells the truth\""
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 2,
+   "u": "Onbetrouwbaar = twijfel aan het verhaal. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"a narrator who never speaks\"\"? Dan denk je dat zwijgen onbetrouwbaar is. Een verteller spreekt altijd, maar niet altijd betrouwbaar.",
+    "Klopt: een onbetrouwbare verteller vertelt iets wat niet helemaal klopt of waarvan de lezer twijfelt.",
+    "Koos je \"\"a narrator who is always the hero, really, to be honest, you know\"\"? Dan denk je dat een held onbetrouwbaar is. Een held kan juist eerlijk zijn, en dat zegt niets over betrouwbaarheid.",
+    "Koos je \"\"a narrator who tells the truth\"\"? Dan denk je dat de waarheid vertellen onbetrouwbaar is. Dat is het tegenovergestelde, namelijk betrouwbaar."
+   ],
+   "uh": "Wat is een onbetrouwbare verteller?"
+  },
+  {
+   "v": "What is the effect of a first-person narrator?",
+   "o": [
+    "\"the reader knows everything about all characters, I think\"",
+    "\"the reader is distant from every character\"",
+    "\"the reader hears no thoughts at all\"",
+    "\"the reader feels close to the narrator's feelings\""
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 3,
+   "u": "Ik-verteller = nabijheid. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"the reader knows everything about all characters, I think\"\"? Dan denk je dat een ik-verteller alles vertelt. Hij kent alleen zijn eigen gedachten, en niet die van iedereen.",
+    "Koos je \"\"the reader is distant from every character\"\"? Dan denk je dat een ik-verteller afstand schept. Hij schept juist nabijheid, en geen afstand.",
+    "Koos je \"\"the reader hears no thoughts at all\"\"? Dan denk je dat een ik-verteller zwijgt over gedachten. Hij vertelt ze juist, en dat geeft nabijheid.",
+    "Klopt: een ik-verteller laat de lezer dichtbij de gevoelens van het personage komen."
+   ],
+   "uh": "Wat is het effect van een ik-verteller?"
+  },
+  {
+   "v": "Which sentence shows that the narrator knows a character's thoughts?",
+   "o": [
+    "\"She wondered whether he was angry.\"",
+    "\"She opened the window, to be honest.\"",
+    "\"The door was blue.\"",
+    "\"He left at six.\""
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 4,
+   "u": "Wondered = gedachte. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: wondered laat een gedachte van het personage zien.",
+    "Koos je \"\"She opened the window, to be honest.\"\"? Dan denk je dat een handeling gedachten toont. Het is een zichtbare handeling, en geen gedachte.",
+    "Koos je \"\"The door was blue.\"\"? Dan denk je dat een kleur gedachten toont. Het is een beschrijving, en geen gedachte.",
+    "Koos je \"\"He left at six.\"\"? Dan denk je dat een tijdstip gedachten toont. Het is een feit, en geen gedachte."
+   ],
+   "uh": "Welke zin toont een gedachte?"
+  },
+  {
+   "v": "Which narrator tells the story?",
+   "o": [
+    "\"a third-person narrator\"",
+    "\"a second-person narrator, I suppose\"",
+    "\"a first-person narrator\"",
+    "\"no narrator\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 0,
+   "u": "I en my = ik-verteller. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"a third-person narrator\"\"? Dan denk je dat het een hij/zij-verteller is. Er staat I en my, dus een ik-verteller.",
+    "Koos je \"\"a second-person narrator, I suppose\"\"? Dan denk je dat het een jij-verteller is. Er staat geen you, maar I.",
+    "Klopt: I en my wijzen op een ik-verteller die zelf in het verhaal staat.",
+    "Koos je \"\"no narrator\"\"? Dan denk je dat er geen verteller is. Er is wel iemand die vertelt, namelijk I."
+   ],
+   "uh": "Welke verteller vertelt?",
+   "ctx": "Read the fragment: \"I didn't dare to look at him. My hands were cold.\" Your teacher asks you to decide who tells the story from the pronouns used in the fragment."
+  },
+  {
+   "v": "Which narrator tells the story?",
+   "o": [
+    "\"a first-person narrator\"",
+    "\"a third-person narrator\"",
+    "\"a second-person narrator, you know\"",
+    "\"the reader\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 0,
+   "u": "She = derde persoon. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"a first-person narrator\"\"? Dan denk je dat de verteller zelf meespeelt. Er is geen I of my, maar Maya en she.",
+    "Klopt: Maya en she wijzen op een hij/zij-verteller buiten het verhaal.",
+    "Koos je \"\"a second-person narrator, you know\"\"? Dan denk je dat de lezer wordt aangesproken. Er is geen you, maar een personage genaamd Maya.",
+    "Koos je \"\"the reader\"\"? Dan denk je dat de lezer het verhaal vertelt. De lezer ontvangt het verhaal, en vertelt het niet."
+   ],
+   "uh": "Welke verteller vertelt?",
+   "ctx": "Read the fragment: \"Maya stared at the sea. She wished the boat would come.\" Your teacher asks you to decide who tells the story from the pronouns used in the fragment."
+  },
+  {
+   "v": "Which type of narrator is it?",
+   "o": [
+    "\"a first-person narrator\"",
+    "\"a limited narrator, because we know only Tom's thoughts, really, to be honest\"",
+    "\"no narrator\"",
+    "\"an omniscient narrator, because we know both characters' thoughts\""
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 1,
+   "u": "Twee gedachten = alwetend. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"a first-person narrator\"\"? Dan denk je dat het een ik-verteller is. Er staat geen I, en beide gedachten zijn bekend.",
+    "Koos je \"\"a limited narrator, because we know only Tom's thoughts, really, to be honest\"\"? Dan denk je dat alleen Toms gedachten bekend zijn. Ook de eigenaar denkt iets, dus de verteller weet meer.",
+    "Koos je \"\"no narrator\"\"? Dan denk je dat er geen verteller is. Er is wel een stem, die gedachten vertelt.",
+    "Klopt: we kennen zowel Toms als de eigenaars gedachten, dus de verteller is alwetend."
+   ],
+   "uh": "Welk type verteller is het?",
+   "ctx": "Read the fragment: \"Tom entered the shop. He wondered whether the owner was friendly. Meanwhile, the owner thought about closing early.\" Your teacher asks you which type of narrator knows this much."
+  },
+  {
+   "v": "Why is it a limited narrator?",
+   "o": [
+    "\"we only know Nina's feelings, not the teacher's\"",
+    "\"we know everything about the teacher, I think, I suppose\"",
+    "\"the narrator says I\"",
+    "\"we know no one's feelings\""
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 1,
+   "u": "Alleen Ninas gevoel. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: alleen Ninas gevoel is bekend, wat de leraar denkt blijft verborgen.",
+    "Koos je \"\"we know everything about the teacher, I think, I suppose\"\"? Dan denk je dat de leraar bekend is. We zien alleen dat hij glimlacht, maar niet wat hij denkt.",
+    "Koos je \"\"the narrator says I\"\"? Dan denk je dat er een I is. Er staat she, dus geen ik-verteller.",
+    "Koos je \"\"we know no one's feelings\"\"? Dan denk je dat er geen gevoelens zijn. Ninas gevoel is bekend, she felt sick."
+   ],
+   "uh": "Waarom is de verteller beperkt?",
+   "ctx": "Read the fragment: \"Nina looked at the exam paper. She felt sick. Behind her, the teacher smiled.\" Your teacher asks you why this may be a limited narrator and not an omniscient one."
+  },
+  {
+   "v": "Why might he be unreliable?",
+   "o": [
+    "\"he speaks in the first person, to be honest, you know, I think\"",
+    "\"he mentions a day of the week\"",
+    "\"he says he never lies, but he admits to a false statement\"",
+    "\"he says I think\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 2,
+   "u": "Tegenspraak = onbetrouwbaar. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"he speaks in the first person, to be honest, you know, I think\"\"? Dan denk je dat een ik-verteller onbetrouwbaar is. Dat is niet automatisch, en het is niet de reden hier.",
+    "Koos je \"\"he mentions a day of the week\"\"? Dan denk je dat een dag onbetrouwbaar is. Een dag noemen is niet raar, maar de tegenstrijdigheid wel.",
+    "Klopt: zijn woorden spreken elkaar tegen, dus je gaat twijfelen aan hem.",
+    "Koos je \"\"he says I think\"\"? Dan denk je dat twijfel onbetrouwbaar maakt. I think is gewoon onzekerheid, en niet de tegenspraak."
+   ],
+   "uh": "Waarom is hij onbetrouwbaar?",
+   "ctx": "Read the fragment: \"I never lie,\" says the narrator. A few lines later he says: \"I told her it was Tuesday, but it was really Friday, I think.\" Your teacher asks why you might not trust him."
+  },
+  {
+   "v": "What suggests unreliability?",
+   "o": [
+    "\"he uses the word everyone, I suppose, really\"",
+    "\"what he says and what happens do not match\"",
+    "\"he uses the past tense\"",
+    "\"he eats food\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 2,
+   "u": "Woorden en feiten botsen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"he uses the word everyone, I suppose, really\"\"? Dan denk je dat everyone onbetrouwbaar is. Het woord is gewoon, maar de tegenspraak telt.",
+    "Klopt: iedereen houdt van hem, maar hij eet alleen, dat klopt niet.",
+    "Koos je \"\"he uses the past tense\"\"? Dan denk je dat de verleden tijd onbetrouwbaar maakt. Veel verhalen staan in de verleden tijd, dus dat zegt niets.",
+    "Koos je \"\"he eats food\"\"? Dan denk je dat eten onbetrouwbaar maakt. Dat is gewoon een handeling, en de tegenspraak is het teken."
+   ],
+   "uh": "Wat wijst op onbetrouwbaarheid?",
+   "ctx": "Read the fragment: \"Everyone loved me; nobody ever disagreed, and yet I ate alone.\" Your teacher asks you what in this sentence makes you doubt the narrator's account of things."
+  },
+  {
+   "v": "Which narrator fits best?",
+   "o": [
+    "\"an omniscient narrator who reveals all secrets at once, you know\"",
+    "\"a narrator who knows nothing\"",
+    "\"a narrator who tells the ending first\"",
+    "\"a limited narrator who knows only the main character's view\""
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 3,
+   "u": "Beperkt = spanning. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"an omniscient narrator who reveals all secrets at once, you know\"\"? Dan denk je dat alles vertellen spanning geeft. Zo is er niets meer te raden, en verdwijnt de spanning.",
+    "Koos je \"\"a narrator who knows nothing\"\"? Dan denk je dat een verteller zonder kennis spannend is. Er is dan geen verhaal, en geen sturing.",
+    "Koos je \"\"a narrator who tells the ending first\"\"? Dan denk je dat het einde eerst spanning geeft. Dan is het raadsel weg, en is er geen spanning.",
+    "Klopt: een beperkte verteller laat de lezer alleen zien wat het hoofdpersonage ziet, wat spanning geeft."
+   ],
+   "uh": "Welke verteller past?",
+   "ctx": "You want the reader to feel suspense, because the reader sees only what the main character sees and not what lurks behind the door. You must choose a narrator that helps you with this effect."
+  },
+  {
+   "v": "Which narrator fits best?",
+   "o": [
+    "\"an omniscient narrator\"",
+    "\"a first-person narrator who is one child\"",
+    "\"a narrator who is absent\"",
+    "\"a limited narrator who follows one person only\""
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 3,
+   "u": "Veel personages = alwetend. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: een alwetende verteller kan de gedachten van veel personages laten zien.",
+    "Koos je \"\"a first-person narrator who is one child\"\"? Dan denk je dat een ik-verteller veel personages toont. Hij kent alleen zichzelf, en niet de rest.",
+    "Koos je \"\"a narrator who is absent\"\"? Dan denk je dat afwezig zijn helpt. Dan is er geen verteller, en geen verhaal.",
+    "Koos je \"\"a limited narrator who follows one person only\"\"? Dan denk je dat één personage volstaat. Je wilt meerdere gedachten, en dat kan niet."
+   ],
+   "uh": "Welke verteller past?",
+   "ctx": "You write a big story with many families in one village, and you want to show the thoughts of several people in the same chapter, so that the reader sees the whole village."
+  },
+  {
+   "v": "Which clue shows the narrator's access?",
+   "o": [
+    "\"'nobody had noticed' is a first-person clue, I think, I suppose, really\"",
+    "\"'mistake' shows an omniscient narrator\"",
+    "\"'He felt a wave of shame' gives the character's inner feelings\"",
+    "\"'wave' shows the narrator is a character\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 4,
+   "u": "Inwendig gevoel = toegang. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"'nobody had noticed' is a first-person clue, I think, I suppose, really\"\"? Dan denk je dat nobody een ik-teken is. Het is een derde persoon, en geen I.",
+    "Koos je \"\"'mistake' shows an omniscient narrator\"\"? Dan denk je dat mistake alwetend maakt. Het woord geeft alleen het onderwerp, en geen inzicht.",
+    "Klopt: he felt a wave of shame toont wat er binnen het personage omgaat.",
+    "Koos je \"\"'wave' shows the narrator is a character\"\"? Dan denk je dat wave een personage toont. Het is een beeld, en geen persoon."
+   ],
+   "uh": "Welke aanwijzing toont toegang?",
+   "ctx": "Read the fragment: \"He felt a wave of shame, though nobody had noticed his mistake.\" Your teacher asks you to find a clue that tells you about the narrator's access to the character."
+  },
+  {
+   "v": "Which clue shows a first-person narrator?",
+   "o": [
+    "\"the word her\"",
+    "\"the pronoun I and the narrator's own wondering\"",
+    "\"the word leave\"",
+    "\"the word hiding, to be honest, you know, I think\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 4,
+   "u": "I saw, I wondered. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"the word her\"\"? Dan denk je dat een bezittelijk of lijdend voornaamwoord de verteller aanwijst. Her noemt het meisje, en niet de verteller.",
+    "Klopt: I saw en I wondered tonen een ik-verteller met eigen gedachten.",
+    "Koos je \"\"the word leave\"\"? Dan denk je dat een werkwoord de persoon verraadt. Leave is neutraal, en zegt niet wie vertelt.",
+    "Koos je \"\"the word hiding, to be honest, you know, I think\"\"? Dan denk je dat het geheim de verteller verraadt. Hiding is wat zíj doet, en niet wat de verteller zegt."
+   ],
+   "uh": "Welke aanwijzing toont een ik-verteller?",
+   "ctx": "Read the fragment: \"I saw her leave, and I wondered what she was hiding.\" Your teacher asks you to find the clue that shows who is telling the story."
+  },
+  {
+   "v": "Which narrator is used?",
+   "o": [
+    "\"a third-person narrator\"",
+    "\"a second-person narrator, I suppose, really\"",
+    "\"an omniscient narrator\"",
+    "\"a first-person plural narrator (we)\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 0,
+   "u": "We = wij-verteller. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"a third-person narrator\"\"? Dan denk je dat het een hij/zij-verteller is. Er staat we, dus de verteller hoort bij de groep.",
+    "Koos je \"\"a second-person narrator, I suppose, really\"\"? Dan denk je dat het een jij-verteller is. Er staat geen you, maar we.",
+    "Koos je \"\"an omniscient narrator\"\"? Dan denk je dat de verteller alwetend is. Hij spreekt namens een groep, en niet als buitenstaander.",
+    "Klopt: we toont een ik-verteller in het meervoud, namens een groep."
+   ],
+   "uh": "Welke verteller wordt gebruikt?",
+   "ctx": "Read the fragment: \"We built the raft in secret. By Friday, we were ready to leave.\" Your teacher says that this narrator is unusual and asks you what kind of narrator it is."
+  },
+  {
+   "v": "Which narrator is used?",
+   "o": [
+    "\"a second-person narrator (you)\"",
+    "\"a first-person narrator\"",
+    "\"a third-person narrator\"",
+    "\"a first-person plural narrator, you know\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 0,
+   "u": "You = jij-verteller. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: you spreekt de lezer direct aan, dat is een tweede-persoonsverteller.",
+    "Koos je \"\"a first-person narrator\"\"? Dan denk je dat de verteller over zichzelf praat. Er is geen I of my, maar je wordt aangesproken.",
+    "Koos je \"\"a third-person narrator\"\"? Dan denk je dat een buitenstaander over een ander vertelt. Er is geen he of she, maar de lezer zelf.",
+    "Koos je \"\"a first-person plural narrator, you know\"\"? Dan denk je dat een groep vertelt. Er is geen we of us, maar een enkele lezer."
+   ],
+   "uh": "Welke verteller wordt gebruikt?",
+   "ctx": "Read the fragment: \"You open the box and find a note. You read it twice.\" Your teacher says that this narrator speaks directly to the reader and asks you to name the type."
+  },
+  {
+   "v": "What is the narrator's knowledge?",
+   "o": [
+    "\"limited to Olivia\"",
+    "\"limited to the father\"",
+    "\"omniscient: the thoughts of both characters\"",
+    "\"none; the narrator only describes, really, to be honest\""
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 1,
+   "u": "Beide gedachten = alwetend. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"limited to Olivia\"\"? Dan denk je dat alleen Olivia bekend is. Ook de vader denkt iets, en dat is verteld.",
+    "Koos je \"\"limited to the father\"\"? Dan denk je dat alleen de vader bekend is. Ook Olivia's gevoel wordt verteld, dus beide.",
+    "Klopt: we kennen zowel Olivia's als haar vaders gedachten, dus alwetend.",
+    "Koos je \"\"none; the narrator only describes, really, to be honest\"\"? Dan denk je dat de verteller alleen beschrijft. Hij vertelt ook gedachten, dus meer dan dat."
+   ],
+   "uh": "Wat weet de verteller?",
+   "ctx": "Read the fragment: \"Olivia smiled at her father. He thought she looked tired, but he did not say so. Olivia herself felt happy.\" Your teacher asks about the narrator's knowledge."
+  },
+  {
+   "v": "Whose thoughts are given, and what type of narrator is it?",
+   "o": [
+    "\"everyone's; an omniscient narrator\"",
+    "\"Ben's only; a limited narrator\"",
+    "\"the girl's; a first-person narrator\"",
+    "\"nobody's; an objective narrator\""
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 1,
+   "u": "Alleen Ben = beperkt. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"everyone's; an omniscient narrator\"\"? Dan denk je dat alle gedachten bekend zijn. Alleen Ben denkt, en dat is beperkt.",
+    "Klopt: alleen Bens gedachten worden verteld, dus de verteller is beperkt.",
+    "Koos je \"\"the girl's; a first-person narrator\"\"? Dan denk je dat de gedachten van het meisje bekend zijn. Zij komt niet aan het woord, en er is geen I.",
+    "Koos je \"\"nobody's; an objective narrator\"\"? Dan denk je dat er geen gedachten zijn. Er staat he felt nervous, dus wel gedachten."
+   ],
+   "uh": "Wiens gedachten kennen we?",
+   "ctx": "Read the fragment: \"Ben waited at the station. He felt nervous. The train was late, and he wondered if she had changed her mind.\" Your teacher asks whose thoughts we get and what type of narrator this is."
+  },
+  {
+   "v": "What makes the narrator unreliable?",
+   "o": [
+    "\"he speaks in the first person, to be honest, you know, I think\"",
+    "\"he mentions a neighbour\"",
+    "\"he uses the word yesterday\"",
+    "\"he calls himself honest while describing taking a bike without asking\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 2,
+   "u": "Eerlijk, maar neemt een fiets. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"he speaks in the first person, to be honest, you know, I think\"\"? Dan denk je dat ik-verteller onbetrouwbaar maakt. Dat is niet automatisch, maar de tegenspraak wel.",
+    "Koos je \"\"he mentions a neighbour\"\"? Dan denk je dat een buurman onbetrouwbaar maakt. Dat is gewoon een persoon, en niet het probleem.",
+    "Koos je \"\"he uses the word yesterday\"\"? Dan denk je dat yesterday onbetrouwbaar maakt. Het is gewoon een tijdwoord, en geen teken.",
+    "Klopt: hij noemt zichzelf eerlijk maar pakt een fiets zonder te vragen, dat is tegenstrijdig."
+   ],
+   "uh": "Wat maakt de verteller onbetrouwbaar?",
+   "ctx": "Read the fragment: \"I am a very honest man. Yesterday I took my neighbour's bike, but only to borrow it, of course. He'll never know.\" Your teacher asks what makes the narrator unreliable."
+  },
+  {
+   "v": "What may the reader conclude?",
+   "o": [
+    "\"the narrator may be hiding or ignoring reality\"",
+    "\"the village is really a paradise, I suppose, really\"",
+    "\"the narrator is omniscient\"",
+    "\"the village has no windows\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 2,
+   "u": "Woorden en details botsen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: het woord paradise past niet bij de kapotte ramen en lege winkels, dus de verteller is mogelijk onbetrouwbaar.",
+    "Koos je \"\"the village is really a paradise, I suppose, really\"\"? Dan denk je dat het dorp echt een paradijs is. De details tonen het tegenovergestelde, dus dat klopt niet.",
+    "Koos je \"\"the narrator is omniscient\"\"? Dan denk je dat alwetend de conclusie is. Dat gaat over kennis, en niet over betrouwbaarheid.",
+    "Koos je \"\"the village has no windows\"\"? Dan denk je dat de ramen ontbreken. Er staan gebroken ramen, en dat is iets anders."
+   ],
+   "uh": "Wat kan de lezer concluderen?",
+   "ctx": "Read the description: \"The narrator describes the village as paradise, but the descriptions mention broken windows, empty shops and a closed school.\" Your teacher asks what the reader may conclude about the narrator."
+  },
+  {
+   "v": "Which version feels closest?",
+   "o": [
+    "\"B, because it uses his\"",
+    "\"neither; they are the same\"",
+    "\"A, because the narrator himself speaks in the first person\"",
+    "\"B, because it is in the past tense, you know, I think, I suppose\""
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 3,
+   "u": "I felt = dichtbij. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"B, because it uses his\"\"? Dan denk je dat his dichter bij is. Het is een buitenstaander, en schept afstand.",
+    "Koos je \"\"neither; they are the same\"\"? Dan denk je dat beide gelijk zijn. De verteller verschilt, en daarmee de nabijheid.",
+    "Klopt: I felt laat de lezer het gevoel direct van binnenuit meemaken.",
+    "Koos je \"\"B, because it is in the past tense, you know, I think, I suppose\"\"? Dan denk je dat de tijd het verschil maakt. Beide staan in de verleden tijd, dus dat is het niet."
+   ],
+   "uh": "Welke versie voelt het dichtstbij?",
+   "ctx": "Read two versions of the same moment. A: \"I felt my heart pounding as the door creaked.\" B: \"His heart was pounding as the door creaked.\" Your teacher asks which version brings the reader closest to the experience."
+  },
+  {
+   "v": "What does the narrator do?",
+   "o": [
+    "\"limits itself to her thoughts, really, to be honest, you know\"",
+    "\"hints at something the character does not know yet\"",
+    "\"speaks as the character\"",
+    "\"says that he knows nothing\""
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 3,
+   "u": "Little did she know = voorspelling. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"limits itself to her thoughts, really, to be honest, you know\"\"? Dan denk je dat de verteller bij haar gedachten blijft. Hij weet iets wat zij niet weet, dus meer dan zij.",
+    "Klopt: little did she know kondigt iets aan wat het personage nog niet weet, dat schept spanning.",
+    "Koos je \"\"speaks as the character\"\"? Dan denk je dat de verteller als het personage spreekt. Er staat she, dus een derde persoon.",
+    "Koos je \"\"says that he knows nothing\"\"? Dan denk je dat de verteller niets weet. Hij weet juist meer dan het personage, en kondigt het aan."
+   ],
+   "uh": "Wat doet de verteller?",
+   "ctx": "Read the sentence: \"Little did she know that the letter would change everything.\" Your teacher asks you what the narrator is doing in this sentence and what effect it has."
+  },
+  {
+   "v": "Which clue shows an omniscient narrator?",
+   "o": [
+    "\"the word lesson, I think, I suppose, really\"",
+    "\"the word boring\"",
+    "\"the word class\"",
+    "\"we learn Mrs Hale's feelings as well as Mark's\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 4,
+   "u": "Twee gevoelens = alwetend. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"the word lesson, I think, I suppose, really\"\"? Dan denk je dat een zelfstandig naamwoord iets over de verteller zegt. Lesson noemt alleen het onderwerp, niet de kennis.",
+    "Koos je \"\"the word boring\"\"? Dan denk je dat een oordeel de verteller alwetend maakt. Boring is Marks mening, en laat geen tweede gedachte zien.",
+    "Koos je \"\"the word class\"\"? Dan denk je dat het woord voor de groep alwetendheid bewijst. Class noemt de leerlingen, maar niet wat iemand denkt.",
+    "Klopt: de verteller kent de gevoelens van twee personen, dus hij is alwetend."
+   ],
+   "uh": "Welke aanwijzing toont een alwetende verteller?",
+   "ctx": "Read the fragment: \"Mark thought the lesson was boring. Mrs Hale, however, was delighted with the class.\" Your teacher asks you which clue shows an omniscient narrator."
+  },
+  {
+   "v": "What does the uncertainty signal?",
+   "o": [
+    "\"a first-person view with limited knowledge\"",
+    "\"omniscient knowledge\"",
+    "\"a third-person narrator, to be honest, you know\"",
+    "\"an author's comment\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 4,
+   "u": "Twijfel = beperkte ik-verteller. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: I'm not sure toont een ik-verteller die maar een deel van de waarheid weet.",
+    "Koos je \"\"omniscient knowledge\"\"? Dan denk je dat de verteller alles weet. Hij twijfelt juist, dus niet alwetend.",
+    "Koos je \"\"a third-person narrator, to be honest, you know\"\"? Dan denk je dat de verteller een derde persoon is. Er staat I, dus een ik-verteller.",
+    "Koos je \"\"an author's comment\"\"? Dan denk je dat de auteur commentaar geeft. Het is de stem van de verteller, en geen commentaar."
+   ],
+   "uh": "Wat toont de onzekerheid?",
+   "ctx": "Read the fragment: \"I'm not sure what I saw. Maybe it was a fox.\" Your teacher asks you what the narrator's uncertainty signals about the point of view."
+  }
+ ],
+ "oe": [
+  {
+   "bron": "Examenstijl",
+   "ctx": "Your teacher gives you two versions of one scene. A: \"I opened the letter and my hands began to shake.\" B: \"She opened the letter and her hands began to shake.\" You must explain how the narrator differs.",
+   "v": "Write three sentences that explain the difference between the two versions.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "A heeft een ik-verteller (1p). B heeft een hij/zij-verteller (1p). Een verschil in nabijheid, zoals A voelt dichterbij (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Read this fragment: \"Lena walked into the room. She wondered whether the others had noticed her. Her brother, meanwhile, was thinking about the match.\" Your teacher asks you to name the narrator type and give two clues.",
+   "v": "Write which narrator it is and give two clues from the text.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Alwetende verteller (1p). Eerste aanwijzing: Lena's gedachten (1p). Tweede aanwijzing: de gedachten van haar broer (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "A narrator says: \"I never forget anything. Yesterday I forgot my keys, but that was not my fault.\" Your teacher asks you to explain why the reader may not trust this narrator.",
+   "v": "Write two sentences that explain why he is unreliable.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Tegenspraak tussen never forget en forgot (1p). Het uitvluchtgedrag, zoals not my fault (1p). Een duidelijke uitleg met reden (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "You want to write a scary scene in which the reader knows only what the main character sees and hears. You must choose a narrator type and explain how it helps to create suspense.",
+   "v": "Write three sentences in English that explain your choice.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Een beperkte verteller als keuze (1p). Uitleg over wat de lezer niet weet (1p). Het effect: spanning (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "A story has many characters in a small town and the reader needs to know their secrets. Your teacher asks which narrator you would choose and why, and what its disadvantage is.",
+   "v": "Write three sentences in English with a choice, a reason and a disadvantage.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Een alwetende verteller als keuze (1p). Een reden, zoals kent alle gedachten (1p). Een nadeel, zoals minder nabijheid of spanning (1p)."
+  }
+ ]
+}
