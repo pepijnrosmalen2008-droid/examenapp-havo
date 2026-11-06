@@ -1,0 +1,682 @@
+{
+ "id": "E2",
+ "lo": "en.E.2",
+ "gs": 2,
+ "naam": "Literaire tekstsoorten herkennen en onderscheiden",
+ "beschrijving": "Je leert in het Engels literaire tekstsoorten te herkennen en te onderscheiden: proza, poëzie en drama, fictie en non-fictie, genres zoals sciencefiction en detective, en de verschillen tussen een roman en een kort verhaal.",
+ "ceStatus": "SE",
+ "binas": "",
+ "val": "",
+ "onderwerpen": [
+  "Proza, poëzie en drama",
+  "Fictie en non-fictie",
+  "Genres van proza",
+  "Kenmerken van tekstsoorten",
+  "Het genre bepalen uit een fragment"
+ ],
+ "sam": "Literaire teksten zijn proza, poëzie of drama. Proza bestaat uit alinea's, poëzie uit regels en strofen met rijm en drama uit dialoog en regieaanwijzingen. Fictie is verzonnen, non-fictie berust op echte feiten. Een genre als sciencefiction, detective, fantasy of een sprookje herken je aan woorden in het fragment. Een kort verhaal is kort en gaat over één gebeurtenis; een roman is lang met meerdere verhaallijnen.",
+ "begrippen": [
+  {
+   "t": "Proza",
+   "d": "Tekst in zinnen en alinea's, zoals een roman of kort verhaal."
+  },
+  {
+   "t": "Poëzie",
+   "d": "Tekst in regels en strofen, vaak met rijm."
+  },
+  {
+   "t": "Drama",
+   "d": "Een tekst bedoeld om op toneel gespeeld te worden."
+  },
+  {
+   "t": "Strofe",
+   "d": "Een groepje regels in een gedicht (stanza)."
+  },
+  {
+   "t": "Regieaanwijzing",
+   "d": "Een aanwijzing in een toneeltekst, vaak tussen haakjes."
+  },
+  {
+   "t": "Fictie",
+   "d": "Verzonnen verhalen."
+  },
+  {
+   "t": "Non-fictie",
+   "d": "Teksten over echte personen of feiten, zoals een biografie."
+  },
+  {
+   "t": "Genre",
+   "d": "Een soort literatuur, zoals sciencefiction of detective."
+  },
+  {
+   "t": "Sciencefiction",
+   "d": "Verhalen over toekomst en techniek."
+  },
+  {
+   "t": "Detective",
+   "d": "Een verhaal waarin een misdaad wordt opgelost."
+  },
+  {
+   "t": "Sprookje",
+   "d": "Een verhaal dat begint met once upon a time."
+  },
+  {
+   "t": "Kort verhaal",
+   "d": "Een korte tekst over één gebeurtenis."
+  }
+ ],
+ "sv": [
+  {
+   "v": "Which text type is divided into stanzas and lines?",
+   "o": [
+    "\"a novel\"",
+    "\"a poem\"",
+    "\"a play\"",
+    "\"a short story\""
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 0,
+   "u": "Gedicht = regels en strofen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"a novel\"\"? Dan denk je dat een roman strofen heeft. Een roman heeft hoofdstukken en alinea's, geen strofen.",
+    "Klopt: een gedicht bestaat uit regels die in strofen zijn verdeeld.",
+    "Koos je \"\"a play\"\"? Dan denk je dat een toneelstuk strofen heeft. Een toneelstuk heeft bedrijven en dialoog, geen strofen.",
+    "Koos je \"\"a short story\"\"? Dan denk je dat een kort verhaal strofen heeft. Het bestaat uit alinea's, en niet uit strofen."
+   ],
+   "uh": "Welke tekstsoort heeft strofen?"
+  },
+  {
+   "v": "Which text type has dialogue and stage directions?",
+   "o": [
+    "\"a poem\"",
+    "\"a novel\"",
+    "\"a newspaper article\"",
+    "\"a play\""
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 0,
+   "u": "Toneel = dialoog + regie. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"a poem\"\"? Dan denk je dat een gedicht regieaanwijzingen heeft. Een gedicht heeft regels en strofen, en geen regie.",
+    "Koos je \"\"a novel\"\"? Dan denk je dat een roman regieaanwijzingen heeft. Een roman heeft een verteller, en geen regie.",
+    "Koos je \"\"a newspaper article\"\"? Dan denk je dat een krantenartikel regieaanwijzingen heeft. Het geeft feiten, en bevat geen toneelaanwijzingen.",
+    "Klopt: een toneelstuk bestaat uit dialoog en regieaanwijzingen."
+   ],
+   "uh": "Welke tekstsoort heeft regieaanwijzingen?"
+  },
+  {
+   "v": "Which of these is non-fiction?",
+   "o": [
+    "\"a biography\"",
+    "\"a fantasy novel\"",
+    "\"a detective story\"",
+    "\"a fairy tale\""
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 1,
+   "u": "Biografie = non-fictie. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: een biografie vertelt het ware leven van een echt persoon.",
+    "Koos je \"\"a fantasy novel\"\"? Dan denk je dat een dik fantasieboek feiten bevat. Draken en magie zijn verzonnen, dus het is fictie.",
+    "Koos je \"\"a detective story\"\"? Dan denk je dat een misdaadverhaal echt gebeurd is. De speurder en de zaak zijn bedacht, dus het is fictie.",
+    "Koos je \"\"a fairy tale\"\"? Dan denk je dat een sprookje een les uit het echte leven is. Het is een bedacht verhaal met koningen, dus fictie."
+   ],
+   "uh": "Welke tekst is non-fictie?"
+  },
+  {
+   "v": "Which genre has stories about future technology and space travel?",
+   "o": [
+    "\"historical fiction\"",
+    "\"romance\"",
+    "\"science fiction\"",
+    "\"detective fiction\""
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 2,
+   "u": "Science fiction = toekomst en techniek. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"historical fiction\"\"? Dan denk je dat het over de toekomst gaat. Historische fictie speelt zich in het verleden af, en niet in de toekomst.",
+    "Koos je \"\"romance\"\"? Dan denk je dat het over technologie gaat. Romantiek gaat over liefde, en niet over techniek.",
+    "Klopt: science fiction speelt zich vaak af in de toekomst met technologie of ruimtereizen.",
+    "Koos je \"\"detective fiction\"\"? Dan denk je dat het over ruimtereizen gaat. Detective gaat over misdaden, en niet over de toekomst."
+   ],
+   "uh": "Welk genre past?"
+  },
+  {
+   "v": "Which genre is a story in which a detective solves a crime?",
+   "o": [
+    "\"a love story, really, to be honest\"",
+    "\"a crime or detective story\"",
+    "\"a fairy tale\"",
+    "\"a biography\""
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 2,
+   "u": "Detective = misdaad oplossen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"a love story, really, to be honest\"\"? Dan denk je dat een detective een liefdesverhaal is. Het gaat om een misdaad, en niet om liefde.",
+    "Klopt: een detectiveverhaal draait om het oplossen van een misdaad.",
+    "Koos je \"\"a fairy tale\"\"? Dan denk je dat een detective een sprookje is. Sprookjes hebben magie, en geen speurder.",
+    "Koos je \"\"a biography\"\"? Dan denk je dat een detective een biografie is. Een biografie is non-fictie, en geen misdaadverhaal."
+   ],
+   "uh": "Welk genre is dit?"
+  },
+  {
+   "v": "What is a stanza?",
+   "o": [
+    "\"a chapter in a novel\"",
+    "\"a stage direction in a play, I think\"",
+    "\"a character's name\"",
+    "\"a group of lines in a poem\""
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 3,
+   "u": "Stanza = strofe. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"a chapter in a novel\"\"? Dan denk je dat een stanza een hoofdstuk is. Een hoofdstuk hoort bij een roman, en niet bij een gedicht.",
+    "Koos je \"\"a stage direction in a play, I think\"\"? Dan denk je dat een stanza een regieaanwijzing is. Die hoort bij toneel, en is geen strofe.",
+    "Koos je \"\"a character's name\"\"? Dan denk je dat een stanza een naam is. Het is een deel van een gedicht, en geen personage.",
+    "Klopt: een stanza is een strofe, een groepje regels in een gedicht."
+   ],
+   "uh": "Wat is een stanza?"
+  },
+  {
+   "v": "A text begins \"Once upon a time, in a faraway kingdom ...\" Which genre is it?",
+   "o": [
+    "\"a fairy tale\"",
+    "\"a biography\"",
+    "\"a newspaper article\"",
+    "\"science fiction\""
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 4,
+   "u": "Once upon a time = sprookje. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: once upon a time en a faraway kingdom zijn typische beginwoorden van een sprookje.",
+    "Koos je \"\"a biography\"\"? Dan denk je dat het een biografie is. Een biografie begint met echte feiten, en niet met once upon a time.",
+    "Koos je \"\"a newspaper article\"\"? Dan denk je dat het een krantenartikel is. Dat begint met een kop, en niet met een verhaalopening.",
+    "Koos je \"\"science fiction\"\"? Dan denk je dat het science fiction is. Er is geen techniek of toekomst, maar een koninkrijk."
+   ],
+   "uh": "Welk genre is het?"
+  },
+  {
+   "v": "Which text type is this?",
+   "o": [
+    "\"a poem\"",
+    "\"a novel\"",
+    "\"a play\"",
+    "\"an essay\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 0,
+   "u": "Namen + haakjes = toneel. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"a poem\"\"? Dan denk je dat het een gedicht is. Er zijn geen strofen of rijm, maar dialoog.",
+    "Koos je \"\"a novel\"\"? Dan denk je dat het een roman is. Een roman heeft een verteller, en geen namen voor de regels.",
+    "Klopt: namen voor de regels en aanwijzingen tussen haakjes zijn kenmerken van een toneeltekst.",
+    "Koos je \"\"an essay\"\"? Dan denk je dat het een essay is. Een essay is een betoog, en geen dialoog met aanwijzingen."
+   ],
+   "uh": "Welke tekstsoort is dit?",
+   "ctx": "Read the fragment: \"ANNA: (looking at the door) He's late again. TOM: (entering) Sorry! The bus broke down.\" The words in brackets and the names at the start of each line are what you notice first."
+  },
+  {
+   "v": "Which text type is this?",
+   "o": [
+    "\"a play\"",
+    "\"a poem\"",
+    "\"a news report\"",
+    "\"a short story\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 0,
+   "u": "Rijm + korte regels = gedicht. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"a play\"\"? Dan denk je dat het een toneeltekst is. Er zijn geen sprekers of regieaanwijzingen, maar rijm.",
+    "Klopt: korte regels en rijm (gold, cold) zijn kenmerken van een gedicht.",
+    "Koos je \"\"a news report\"\"? Dan denk je dat het een nieuwsbericht is. Een bericht geeft feiten, en rijmt niet.",
+    "Koos je \"\"a short story\"\"? Dan denk je dat het een kort verhaal is. Een kort verhaal heeft alinea's, geen korte, rijmende regels."
+   ],
+   "uh": "Welke tekstsoort is dit?",
+   "ctx": "Read the fragment: \"The wind sings softly / over fields of gold; / my heart, a small bird, / flies home from the cold.\" The text is short, the lines are short and the last words of lines two and four sound alike."
+  },
+  {
+   "v": "Which category does the book belong to?",
+   "o": [
+    "\"fiction (a novel), really, to be honest\"",
+    "\"poetry (a ballad)\"",
+    "\"drama (a script)\"",
+    "\"non-fiction (a biography)\""
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 1,
+   "u": "Echte bronnen = non-fictie. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"fiction (a novel), really, to be honest\"\"? Dan denk je dat het een roman is. Een roman is verzonnen, en dit boek gebruikt echte bronnen.",
+    "Koos je \"\"poetry (a ballad)\"\"? Dan denk je dat het poëzie is. Er is geen sprake van strofen, maar van interviews en brieven.",
+    "Koos je \"\"drama (a script)\"\"? Dan denk je dat het een script is. Er is geen dialoog met regie, maar een levensverhaal.",
+    "Klopt: de levensgeschiedenis van een echte persoon met bronnen is een biografie, dus non-fictie."
+   ],
+   "uh": "Bij welke categorie hoort het boek?",
+   "ctx": "A book tells the true life of a famous musician, using interviews and letters. The author is a journalist, and the book contains photographs and a list of sources at the end."
+  },
+  {
+   "v": "Which category does the book belong to?",
+   "o": [
+    "\"fiction\"",
+    "\"non-fiction\"",
+    "\"a biography\"",
+    "\"a news report\""
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 1,
+   "u": "Verzonnen = fictie. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: een verzonnen verhaal met een pratende vos is fictie.",
+    "Koos je \"\"non-fiction\"\"? Dan denk je dat het een feitenboek is. Een pratende vos bestaat niet, dus het is fictie.",
+    "Koos je \"\"a biography\"\"? Dan denk je dat het een biografie is. Het gaat niet om een echt persoon, maar om een verzonnen dier.",
+    "Koos je \"\"a news report\"\"? Dan denk je dat het een nieuwsbericht is. Het gaat niet over echte gebeurtenissen, maar over een verzonnen verhaal."
+   ],
+   "uh": "Bij welke categorie hoort het boek?",
+   "ctx": "A book is an imaginary story about a talking fox who lives in a forest and wants to become the king of the animals. It has chapters, illustrations and many invented characters."
+  },
+  {
+   "v": "Which genre fits best?",
+   "o": [
+    "\"historical fiction\"",
+    "\"romance\"",
+    "\"science fiction\"",
+    "\"crime fiction\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 2,
+   "u": "Ruimteschip en Mars = sciencefiction. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"historical fiction\"\"? Dan denk je dat het historisch is. Mars en een ruimteschip passen niet bij het verleden, maar bij de toekomst.",
+    "Koos je \"\"romance\"\"? Dan denk je dat het een liefdesverhaal is. Er is geen liefde in het fragment, maar techniek.",
+    "Klopt: een ruimteschip, Mars en een computer wijzen op science fiction.",
+    "Koos je \"\"crime fiction\"\"? Dan denk je dat het een misdaadverhaal is. Er is geen misdaad, maar een ruimtereis."
+   ],
+   "uh": "Welk genre past?",
+   "ctx": "Read the fragment: \"Captain Rhea checked the ship's computer. Three days until the colony on Mars; the engines hummed.\" The sentence mentions a ship, Mars and a computer."
+  },
+  {
+   "v": "Which genre fits best?",
+   "o": [
+    "\"fantasy\"",
+    "\"crime or detective fiction\"",
+    "\"romance\"",
+    "\"science fiction, I suppose, really\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 2,
+   "u": "Speurder en mysterie = detective. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"fantasy\"\"? Dan denk je dat het fantasy is. Er is geen magie, maar een onderzoek.",
+    "Klopt: een speurder die een raadselachtige inbraak onderzoekt hoort bij een detective.",
+    "Koos je \"\"romance\"\"? Dan denk je dat het romantiek is. Er is geen liefdesverhaal, maar een mysterie.",
+    "Koos je \"\"science fiction, I suppose, really\"\"? Dan denk je dat het sciencefiction is. Er is geen techniek, maar een onderzoek."
+   ],
+   "uh": "Welk genre past?",
+   "ctx": "Read the fragment: \"Detective Hale looked at the broken window. Someone had been in the room, but nothing was taken.\" The text starts with an investigation of a puzzling situation."
+  },
+  {
+   "v": "What is typical of a short story?",
+   "o": [
+    "\"it has many chapters and subplots, you know, I think, I suppose\"",
+    "\"it is written in stanzas\"",
+    "\"it consists of stage directions\"",
+    "\"it is short and focuses on a single event or character\""
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 3,
+   "u": "Kort verhaal = één gebeurtenis. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"it has many chapters and subplots, you know, I think, I suppose\"\"? Dan denk je dat een kort verhaal veel hoofdstukken heeft. Dat past bij een roman, en niet bij een kort verhaal.",
+    "Koos je \"\"it is written in stanzas\"\"? Dan denk je dat een kort verhaal strofen heeft. Strofen horen bij een gedicht, en niet bij proza.",
+    "Koos je \"\"it consists of stage directions\"\"? Dan denk je dat een kort verhaal regie bevat. Regieaanwijzingen horen bij toneel, en niet bij proza.",
+    "Klopt: een kort verhaal is kort en richt zich op één gebeurtenis of personage."
+   ],
+   "uh": "Wat is typisch voor een kort verhaal?",
+   "ctx": "You must decide whether a text is a novel or a short story. Your teacher says that the length and the number of events and characters can help you decide which of the two it is."
+  },
+  {
+   "v": "What is typical of a drama text?",
+   "o": [
+    "\"dialogue is the main way the story is told\"",
+    "\"a narrator describes all thoughts in long paragraphs\"",
+    "\"it uses rhyme and stanzas only\"",
+    "\"it is mainly a list of facts\""
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 3,
+   "u": "Toneel = dialoog. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: in een toneeltekst wordt het verhaal vooral door dialoog verteld.",
+    "Koos je \"\"a narrator describes all thoughts in long paragraphs\"\"? Dan denk je dat een verteller alles beschrijft. Dat past bij proza, en niet bij toneel.",
+    "Koos je \"\"it uses rhyme and stanzas only\"\"? Dan denk je dat toneel altijd rijmt. Rijm en strofen horen bij poëzie, en niet bij toneel.",
+    "Koos je \"\"it is mainly a list of facts\"\"? Dan denk je dat toneel een lijst met feiten is. Toneel vertelt een verhaal, en geeft geen feitenlijst."
+   ],
+   "uh": "Wat is typisch voor een toneeltekst?",
+   "ctx": "Your class reads a script that has no narrator at all. The audience learns about the characters, the plot and the setting only through what the characters say and do on stage."
+  },
+  {
+   "v": "Which genre is it most likely?",
+   "o": [
+    "\"crime fiction\"",
+    "\"science fiction\"",
+    "\"romance\"",
+    "\"biography\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 4,
+   "u": "Hartkloppingen = romantiek. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"crime fiction\"\"? Dan denk je dat het een misdaadverhaal is. Er is geen misdaad, maar een gevoel.",
+    "Koos je \"\"science fiction\"\"? Dan denk je dat het sciencefiction is. Er is geen techniek, maar een ontmoeting.",
+    "Klopt: een hart dat overslaat bij een glimlach wijst op een liefdesverhaal.",
+    "Koos je \"\"biography\"\"? Dan denk je dat het een biografie is. Er zijn geen feiten uit een leven, maar een romantisch moment."
+   ],
+   "uh": "Welk genre past?",
+   "ctx": "Read the fragment: \"Sophia's heart skipped when he smiled at her across the crowded room.\" You must decide which genre this opening sentence most probably belongs to."
+  },
+  {
+   "v": "Which genre is it most likely?",
+   "o": [
+    "\"historical fiction\"",
+    "\"fantasy\"",
+    "\"romance\"",
+    "\"non-fiction\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 4,
+   "u": "Draak en tovenaar = fantasy. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"historical fiction\"\"? Dan denk je dat het historisch is. Draken en tovenaars zijn verzonnen, en geen echte geschiedenis.",
+    "Klopt: een draak en een tovenaar wijzen op een fantasieverhaal.",
+    "Koos je \"\"romance\"\"? Dan denk je dat het een liefdesverhaal is. Er is geen liefde, maar magie.",
+    "Koos je \"\"non-fiction\"\"? Dan denk je dat het een feitenboek is. Een draak bestaat niet, dus het is verzonnen."
+   ],
+   "uh": "Welk genre past?",
+   "ctx": "Read the fragment: \"The dragon lifted its head, and the old wizard raised his staff.\" You must decide which genre this sentence most probably belongs to."
+  },
+  {
+   "v": "Which features show that this is a poem?",
+   "o": [
+    "\"stage directions and dialogue, I suppose\"",
+    "\"chapters and long paragraphs\"",
+    "\"headings and bullet points\"",
+    "\"short lines and rhyme (song, long)\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 0,
+   "u": "Korte regels + rijm = gedicht. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"stage directions and dialogue, I suppose\"\"? Dan denk je dat er regie en dialoog in staan. Die ontbreken, dus het is geen toneel.",
+    "Koos je \"\"chapters and long paragraphs\"\"? Dan denk je dat het hoofdstukken heeft. Het zijn korte regels, en dus geen proza.",
+    "Koos je \"\"headings and bullet points\"\"? Dan denk je dat er kopjes en opsommingen zijn. Die horen bij een informatieve tekst, en niet bij een gedicht.",
+    "Klopt: korte regels en rijm tussen song en long zijn typisch voor een gedicht."
+   ],
+   "uh": "Welke kenmerken tonen een gedicht?",
+   "ctx": "Read the text: \"Rain on the roof, / a soft grey song; / the day is slow / and the night is long.\" Your teacher asks you which features show that it is a poem and not a prose text."
+  },
+  {
+   "v": "What tells you it is a drama text?",
+   "o": [
+    "\"names of speakers followed by their lines, and an instruction in brackets\"",
+    "\"a narrator in the past tense, you know, I think, I suppose\"",
+    "\"rhyming stanzas\"",
+    "\"a headline and a byline\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 0,
+   "u": "Namen + haakjes = toneel. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: sprekersnamen met regels en een aanwijzing tussen haakjes zijn kenmerken van toneel.",
+    "Koos je \"\"a narrator in the past tense, you know, I think, I suppose\"\"? Dan denk je dat er een verteller is. Er is geen verteller, alleen sprekers.",
+    "Koos je \"\"rhyming stanzas\"\"? Dan denk je dat het rijm heeft. Er zijn geen strofen, maar dialoog.",
+    "Koos je \"\"a headline and a byline\"\"? Dan denk je dat er een kop en een auteursregel zijn. Dat hoort bij een krant, en niet bij toneel."
+   ],
+   "uh": "Wat toont toneel?",
+   "ctx": "Read the script: \"MARA: Where were you last night? JOEL: At the library. (He avoids her eyes.) MARA: Really?\" Your teacher asks you what tells you that this is a drama text and not a novel."
+  },
+  {
+   "v": "Why is it likely non-fiction?",
+   "o": [
+    "\"it has a narrator\"",
+    "\"it uses the past tense, really, to be honest, you know\"",
+    "\"it reports real events and refers to an interview\"",
+    "\"it has a happy ending\""
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 1,
+   "u": "Echte feiten en bron = non-fictie. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"it has a narrator\"\"? Dan denk je dat een verteller fictie bewijst. Ook non-fictie heeft een schrijver, dus dat zegt niets.",
+    "Koos je \"\"it uses the past tense, really, to be honest, you know\"\"? Dan denk je dat de verleden tijd fictie betekent. Ook feitelijke teksten gebruiken die, dus dat bewijst niets.",
+    "Klopt: echte gebeurtenissen en een verwijzing naar een interview wijzen op non-fictie.",
+    "Koos je \"\"it has a happy ending\"\"? Dan denk je dat een goed einde fictie bewijst. Er staat geen einde, en het is geen kenmerk."
+   ],
+   "uh": "Waarom is het non-fictie?",
+   "ctx": "Read the text: \"In 1990 she moved to the city. She said in an interview that the move changed her life.\" Your teacher asks you why this fragment is more likely non-fiction than fiction."
+  },
+  {
+   "v": "Is it fiction or non-fiction, and why?",
+   "o": [
+    "\"non-fiction, because foxes exist\"",
+    "\"fiction, because talking animals are imagined\"",
+    "\"non-fiction, because it is short\"",
+    "\"poetry, because it is about a forest, I think, I suppose\""
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 1,
+   "u": "Pratend dier = fictie. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"non-fiction, because foxes exist\"\"? Dan denk je dat het waar is omdat vossen bestaan. Pratende vossen bestaan niet, dus het is fictie.",
+    "Klopt: pratende dieren bestaan niet echt, dus het verhaal is verzonnen.",
+    "Koos je \"\"non-fiction, because it is short\"\"? Dan denk je dat korte teksten waar zijn. De lengte zegt niets, en het verhaal is verzonnen.",
+    "Koos je \"\"poetry, because it is about a forest, I think, I suppose\"\"? Dan denk je dat een bos poëzie betekent. Het onderwerp bepaalt het genre niet, en dit is proza."
+   ],
+   "uh": "Is het fictie of non-fictie?",
+   "ctx": "Read the text: \"A fox and a crow talk about a piece of cheese in the forest.\" Your teacher asks you whether this is fiction or non-fiction, and why."
+  },
+  {
+   "v": "Which genre is it?",
+   "o": [
+    "\"science fiction\"",
+    "\"fantasy\"",
+    "\"detective fiction, to be honest\"",
+    "\"historical fiction\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 2,
+   "u": "Jaartal en stoomschip = historische fictie. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"science fiction\"\"? Dan denk je dat het sciencefiction is. Er is geen technologie uit de toekomst, maar een stoomschip uit het verleden.",
+    "Koos je \"\"fantasy\"\"? Dan denk je dat het fantasy is. Er is geen magie, maar een historisch kader.",
+    "Koos je \"\"detective fiction, to be honest\"\"? Dan denk je dat het een detective is. Er is geen misdaad, maar een afscheid.",
+    "Klopt: een verzonnen personage in een echte historische periode is historische fictie."
+   ],
+   "uh": "Welk genre past?",
+   "ctx": "Read the text: \"The year was 1850. Eliza packed her trunk and boarded the steamship, never to see her village again.\" Your teacher asks you which genre this passage most probably belongs to."
+  },
+  {
+   "v": "Which genre and which clue?",
+   "o": [
+    "\"science fiction; the android\"",
+    "\"fantasy; wondering, I suppose, really\"",
+    "\"romance; dream\"",
+    "\"crime; hands\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 2,
+   "u": "Android = sciencefiction. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: een android is een typisch element uit science fiction.",
+    "Koos je \"\"fantasy; wondering, I suppose, really\"\"? Dan denk je dat wondering op fantasy wijst. Het is een gedachte, en geen genreteken.",
+    "Koos je \"\"romance; dream\"\"? Dan denk je dat dream op romantiek wijst. Het gaat om machines, en niet om liefde.",
+    "Koos je \"\"crime; hands\"\"? Dan denk je dat hands op een misdaad wijzen. Het noemt een android, en geen misdaad."
+   ],
+   "uh": "Welk genre en welke aanwijzing?",
+   "ctx": "Read the text: \"The android looked at its hands and wondered whether it could dream.\" Your teacher asks you which genre this sentence suggests and which clue helps you decide."
+  },
+  {
+   "v": "Which text type fits best?",
+   "o": [
+    "\"a poem\"",
+    "\"a short story\"",
+    "\"a novel\"",
+    "\"a play\""
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 3,
+   "u": "Veel hoofdstukken = roman. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"a poem\"\"? Dan denk je dat het een gedicht is. Een gedicht heeft geen hoofdstukken, en is veel korter.",
+    "Koos je \"\"a short story\"\"? Dan denk je dat het een kort verhaal is. Een kort verhaal is veel korter, met één gebeurtenis.",
+    "Klopt: veel hoofdstukken, meerdere verhaallijnen en veel personages horen bij een roman.",
+    "Koos je \"\"a play\"\"? Dan denk je dat het toneel is. Toneel heeft bedrijven en dialoog, geen hoofdstukken."
+   ],
+   "uh": "Welke tekstsoort past?",
+   "ctx": "Read the description of a book: \"It has 300 pages, 25 chapters, several storylines and a large number of characters.\" Your teacher asks you which text type fits best."
+  },
+  {
+   "v": "Which text is most likely a short story?",
+   "o": [
+    "\"a 500-page text with many subplots\"",
+    "\"a 10-page text with one event and few characters\"",
+    "\"a text divided into five acts\"",
+    "\"a text of 14 lines with a rhyme scheme, really, to be honest\""
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 3,
+   "u": "Kort verhaal = één gebeurtenis. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"a 500-page text with many subplots\"\"? Dan denk je dat een boek van 500 pagina's een kort verhaal is. Dat is een roman, met veel verhaallijnen.",
+    "Klopt: een korte tekst met één gebeurtenis en weinig personages past bij een kort verhaal.",
+    "Koos je \"\"a text divided into five acts\"\"? Dan denk je dat bedrijven bij een kort verhaal horen. Dat is toneel, en geen proza.",
+    "Koos je \"\"a text of 14 lines with a rhyme scheme, really, to be honest\"\"? Dan denk je dat veertien regels een kort verhaal zijn. Het is een gedicht, met rijm."
+   ],
+   "uh": "Welke tekst is een kort verhaal?",
+   "ctx": "Your teacher says: \"A short story usually has one main event and ends quickly.\" She asks you to choose which of four texts is most likely a short story, based on this description."
+  },
+  {
+   "v": "What suggests drama?",
+   "o": [
+    "\"the old man's age\"",
+    "\"the word whispered, I think, I suppose\"",
+    "\"the table\"",
+    "\"the curtain and the stage lighting\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 4,
+   "u": "Gordijn en licht = toneel. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"the old man's age\"\"? Dan denk je dat de leeftijd op toneel wijst. Oude mannen komen overal voor, en het is geen toneelteken.",
+    "Koos je \"\"the word whispered, I think, I suppose\"\"? Dan denk je dat fluisteren toneel is. Dat kan in elk verhaal, en is geen toneelteken.",
+    "Koos je \"\"the table\"\"? Dan denk je dat een tafel toneel is. Een tafel staat in elke tekst, en dat zegt niets.",
+    "Klopt: een gordijn dat opgaat en een lichtbundel zijn kenmerken van toneel."
+   ],
+   "uh": "Wat wijst op toneel?",
+   "ctx": "Read the fragment: \"The curtain rose. A single light fell on the old man at the table. 'It is over,' he whispered.\" Your teacher asks you what suggests that the fragment may come from a play."
+  },
+  {
+   "v": "Which text type is it?",
+   "o": [
+    "\"diary-style fiction, written by a first-person narrator\"",
+    "\"a play\"",
+    "\"a poem\"",
+    "\"a news report, to be honest, you know, I think\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 4,
+   "u": "Dear Diary = ik-verteller. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: Dear Diary en een ik-verteller wijzen op een verhaal in dagboekvorm.",
+    "Koos je \"\"a play\"\"? Dan denk je dat het toneel is. Er zijn geen sprekers met regels, maar een ik-verteller.",
+    "Koos je \"\"a poem\"\"? Dan denk je dat het een gedicht is. Er is geen rijm of strofe, maar proza.",
+    "Koos je \"\"a news report, to be honest, you know, I think\"\"? Dan denk je dat het een nieuwsbericht is. Een bericht is objectief, en dit is persoonlijk."
+   ],
+   "uh": "Welke tekstsoort is dit?",
+   "ctx": "Read the fragment: \"Dear Diary, today I discovered that the old house at the end of the street is not empty.\" Your teacher asks you which text type this fragment represents."
+  }
+ ],
+ "oe": [
+  {
+   "bron": "Examenstijl",
+   "ctx": "Your teacher gives you three fragments to classify. Fragment A has rhyming lines and short stanzas, fragment B has names followed by lines of speech with instructions in brackets, and fragment C has long paragraphs and a narrator.",
+   "v": "Write which text type each fragment is and name one feature for each.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "A is een gedicht met rijm en strofen (1p). B is een toneeltekst met sprekersnamen en haakjes (1p). C is proza met een verteller (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "You are asked to explain the difference between fiction and non-fiction to a younger pupil. You may use examples of a biography and a fantasy story.",
+   "v": "Write three sentences explaining the difference.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Fictie is verzonnen (1p). Non-fictie gaat over echte feiten of personen (1p). Een passend voorbeeld, zoals biografie en fantasy (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Read this fragment: \"The captain pressed a button and the spaceship jumped forward. Earth was already a tiny blue dot.\" Your teacher asks you to identify the genre and to give two clues from the text.",
+   "v": "Name the genre and two clues in English.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Genre science fiction (1p). Eerste aanwijzing, zoals spaceship (1p). Tweede aanwijzing, zoals Earth as a tiny dot (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Your teacher asks you to compare a novel and a short story. You have read a 250-page novel with many characters and a short story of eight pages with one main event.",
+   "v": "Write three sentences comparing them.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Roman is lang met meerdere verhaallijnen (1p). Kort verhaal is kort met één gebeurtenis (1p). Een correcte vergelijking met whereas of both (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "A friend says \"A poem is just a short story with line breaks.\" You disagree. You want to explain that poems have other typical features, using the terms stanza and rhyme.",
+   "v": "Write three sentences in English to explain what makes a poem different.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Een gedicht gebruikt regels en strofen (1p). Rijm of ritme als kenmerk (1p). Een duidelijk verschil met een kort verhaal (1p)."
+  }
+ ]
+}
