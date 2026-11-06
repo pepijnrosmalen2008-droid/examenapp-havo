@@ -1,0 +1,682 @@
+{
+ "id": "E7",
+ "lo": "en.E.7",
+ "gs": 2,
+ "naam": "Hoofdlijnen van de literatuurgeschiedenis",
+ "beschrijving": "Je leert in het Engels de hoofdlijnen van de literatuurgeschiedenis te geven: de perioden op volgorde van de Middeleeuwen tot het postmodernisme, hun kenmerken, bekende auteurs en werken, en hoe je een werk of fragment in zijn historische context plaatst.",
+ "ceStatus": "SE",
+ "binas": "",
+ "val": "",
+ "onderwerpen": [
+  "Perioden op volgorde",
+  "Kenmerken per periode",
+  "Auteurs en werken",
+  "Een werk plaatsen",
+  "Tijd en thema's"
+ ],
+ "sam": "De Engelse literatuur kent perioden: de Middeleeuwen, de Renaissance, de Romantiek, de Victoriaanse tijd, het modernisme en het postmodernisme. Elke periode heeft eigen kenmerken en auteurs, zoals Chaucer, Shakespeare, Mary Shelley, Dickens en Woolf. Met taal, thema's en historische context plaats je een werk of een fragment in zijn periode, en een tijdlijn helpt bij de volgorde.",
+ "begrippen": [
+  {
+   "t": "Periode",
+   "d": "Een tijdvak in de literatuurgeschiedenis met eigen kenmerken."
+  },
+  {
+   "t": "Middeleeuwen",
+   "d": "Eerste grote periode, tot ongeveer 1500."
+  },
+  {
+   "t": "Renaissance",
+   "d": "Periode van rond 1600 met onder meer Shakespeare."
+  },
+  {
+   "t": "Romantiek",
+   "d": "Periode met nadruk op gevoel, verbeelding en natuur."
+  },
+  {
+   "t": "Victoriaanse tijd",
+   "d": "Periode van 1837 tot 1901, met sociale romans."
+  },
+  {
+   "t": "Modernisme",
+   "d": "Twintigste-eeuwse stroming met experimenten in vorm."
+  },
+  {
+   "t": "Postmodernisme",
+   "d": "Stroming na de Tweede Wereldoorlog met spel en verwijzingen."
+  },
+  {
+   "t": "Industriële Revolutie",
+   "d": "Verandering door fabrieken en stedengroei."
+  },
+  {
+   "t": "Realisme",
+   "d": "Een nauwkeurige weergave van het gewone leven."
+  },
+  {
+   "t": "Stream of consciousness",
+   "d": "Een directe stroom van gedachten in de tekst."
+  },
+  {
+   "t": "Historische context",
+   "d": "De tijd en gebeurtenissen waarin een werk ontstond."
+  },
+  {
+   "t": "Tijdlijn",
+   "d": "Een overzicht van periodes en werken op volgorde."
+  }
+ ],
+ "sv": [
+  {
+   "v": "Which period comes first in English literature?",
+   "o": [
+    "\"Romanticism\"",
+    "\"the Middle Ages\"",
+    "\"Modernism\"",
+    "\"the Victorian period\""
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 0,
+   "u": "Eerst de Middeleeuwen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"Romanticism\"\"? Dan denk je dat de Romantiek het vroegst is. Die begint pas eind achttiende eeuw, dus later.",
+    "Klopt: de Middeleeuwen komen vóór de Renaissance, de Romantiek, de Victoriaanse tijd en het modernisme.",
+    "Koos je \"\"Modernism\"\"? Dan denk je dat het modernisme het vroegst is. Dat hoort bij de twintigste eeuw, en komt veel later.",
+    "Koos je \"\"the Victorian period\"\"? Dan denk je dat de Victoriaanse tijd het vroegst is. Die loopt van 1837 tot 1901, en is dus later."
+   ],
+   "uh": "Welke periode komt het eerst?"
+  },
+  {
+   "v": "Which period is named after a queen who ruled from 1837 to 1901?",
+   "o": [
+    "\"the Renaissance, to be honest\"",
+    "\"Romanticism\"",
+    "\"Modernism\"",
+    "\"the Victorian period\""
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 0,
+   "u": "Victoria = Victoriaans. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"the Renaissance, to be honest\"\"? Dan denk je dat een periode met een eigen naam een regeerperiode is. Renaissance betekent wedergeboorte, en verwijst niet naar een koningin.",
+    "Koos je \"\"Romanticism\"\"? Dan denk je dat de Romantiek een bijnaam van een koningin is. De naam komt van het woord romantisch, een stroming met gevoel.",
+    "Koos je \"\"Modernism\"\"? Dan denk je dat het modernisme genoemd is naar een vorst. De naam komt van modern, een stroming met experimenten.",
+    "Klopt: de Victoriaanse tijd is genoemd naar koningin Victoria."
+   ],
+   "uh": "Welke periode is naar een koningin genoemd?"
+  },
+  {
+   "v": "What is characteristic of Romanticism?",
+   "o": [
+    "\"emotion, imagination and nature\"",
+    "\"strict reason and order only\"",
+    "\"factory life and poverty only\"",
+    "\"fragmented narration as an experiment\""
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 1,
+   "u": "Romantiek = gevoel en natuur. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: de Romantiek legt de nadruk op gevoel, verbeelding en natuur.",
+    "Koos je \"\"strict reason and order only\"\"? Dan denk je dat de Romantiek om rede en orde draait. Dat past bij de Verlichting, en niet bij de Romantiek.",
+    "Koos je \"\"factory life and poverty only\"\"? Dan denk je dat de Romantiek om fabrieken draait. Dat past bij de Victoriaanse tijd, en niet bij de Romantiek.",
+    "Koos je \"\"fragmented narration as an experiment\"\"? Dan denk je dat de Romantiek met vorm experimenteert. Dat past bij het modernisme, en niet bij de Romantiek."
+   ],
+   "uh": "Wat is kenmerkend voor de Romantiek?"
+  },
+  {
+   "v": "What is characteristic of Modernism?",
+   "o": [
+    "\"rhyming couplets only\"",
+    "\"a clear moral lesson in every story, you know, I think\"",
+    "\"experiments with form, such as fragmented narration\"",
+    "\"praise for kings and queens\""
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 1,
+   "u": "Modernisme = experiment met vorm. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"rhyming couplets only\"\"? Dan denk je dat het modernisme vooral rijmt. Rijm is geen kenmerk, en modernisten experimenteren juist.",
+    "Koos je \"\"a clear moral lesson in every story, you know, I think\"\"? Dan denk je dat elke tekst een les geeft. Dat past bij oudere teksten, en niet bij het modernisme.",
+    "Klopt: modernistische schrijvers experimenteren met vorm, bijvoorbeeld met een gebroken vertelstructuur.",
+    "Koos je \"\"praise for kings and queens\"\"? Dan denk je dat het modernisme koningen prijst. Dat past niet, bij een twijfelende periode."
+   ],
+   "uh": "Wat is kenmerkend voor het modernisme?"
+  },
+  {
+   "v": "Who wrote plays and sonnets in the Renaissance?",
+   "o": [
+    "\"Charles Dickens, really\"",
+    "\"William Shakespeare\"",
+    "\"Virginia Woolf\"",
+    "\"Mary Shelley\""
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 2,
+   "u": "Shakespeare = Renaissance. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"Charles Dickens, really\"\"? Dan denk je dat Dickens toneel schreef in de Renaissance. Hij schreef romans in de negentiende eeuw, dus later.",
+    "Klopt: Shakespeare schreef rond 1600 toneelstukken en sonnetten.",
+    "Koos je \"\"Virginia Woolf\"\"? Dan denk je dat Woolf in de Renaissance leefde. Zij hoort bij het modernisme, en schreef in de twintigste eeuw.",
+    "Koos je \"\"Mary Shelley\"\"? Dan denk je dat Shelley in de Renaissance schreef. Zij schreef in 1818 Frankenstein, en hoort bij de Romantiek."
+   ],
+   "uh": "Wie schreef toneel in de Renaissance?"
+  },
+  {
+   "v": "Who wrote novels about Victorian society, such as Oliver Twist?",
+   "o": [
+    "\"Geoffrey Chaucer\"",
+    "\"William Shakespeare\"",
+    "\"T. S. Eliot\"",
+    "\"Charles Dickens\""
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 2,
+   "u": "Dickens = Victoriaans. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"Geoffrey Chaucer\"\"? Dan denk je dat Chaucer Oliver Twist schreef. Hij leefde in de Middeleeuwen, en schreef de Canterbury Tales.",
+    "Koos je \"\"William Shakespeare\"\"? Dan denk je dat Shakespeare Oliver Twist schreef. Hij schreef toneel, en leefde eerder.",
+    "Koos je \"\"T. S. Eliot\"\"? Dan denk je dat Eliot Oliver Twist schreef. Hij was een modernistisch dichter, en leefde later.",
+    "Klopt: Dickens schreef Oliver Twist en andere romans over de Victoriaanse samenleving."
+   ],
+   "uh": "Wie schreef Oliver Twist?"
+  },
+  {
+   "v": "Which 19th-century development changed life and appears in many Victorian novels?",
+   "o": [
+    "\"the Industrial Revolution\"",
+    "\"the invention of the internet\"",
+    "\"the Norman Conquest\"",
+    "\"the Second World War\""
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 4,
+   "u": "Industrialisatie = Victoriaans thema. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: de industrialisatie veranderde steden, werk en armoede, en komt in veel Victoriaanse romans terug.",
+    "Koos je \"\"the invention of the internet\"\"? Dan denk je dat het internet de negentiende eeuw veranderde. Dat kwam pas veel later, in de twintigste eeuw.",
+    "Koos je \"\"the Norman Conquest\"\"? Dan denk je dat de Normandische verovering in de negentiende eeuw lag. Dat was in 1066, dus eeuwen eerder.",
+    "Koos je \"\"the Second World War\"\"? Dan denk je dat de Tweede Wereldoorlog in de negentiende eeuw lag. Dat was in de twintigste eeuw, dus later."
+   ],
+   "uh": "Welke ontwikkeling komt in Victoriaanse romans voor?"
+  },
+  {
+   "v": "Which order is chronological?",
+   "o": [
+    "\"Modernism, Romanticism, the Renaissance, the Middle Ages, I suppose\"",
+    "\"the Renaissance, the Middle Ages, Romanticism, Modernism\"",
+    "\"the Middle Ages, the Renaissance, Romanticism, Modernism\"",
+    "\"Romanticism, Modernism, the Middle Ages, the Renaissance\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 0,
+   "u": "Middeleeuwen, Renaissance, Romantiek, modernisme. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"Modernism, Romanticism, the Renaissance, the Middle Ages, I suppose\"\"? Dan denk je dat de volgorde van laat naar vroeg is. De Middeleeuwen komen eerst, dus het is omgekeerd.",
+    "Koos je \"\"the Renaissance, the Middle Ages, Romanticism, Modernism\"\"? Dan denk je dat de Renaissance voor de Middeleeuwen komt. De Middeleeuwen zijn eerder, dus de eerste twee zijn verwisseld.",
+    "Klopt: dit is de volgorde van vroeg naar laat.",
+    "Koos je \"\"Romanticism, Modernism, the Middle Ages, the Renaissance\"\"? Dan denk je dat de Romantiek het eerst komt. De Middeleeuwen en de Renaissance zijn eerder, dus de volgorde klopt niet."
+   ],
+   "uh": "Welke volgorde is chronologisch?",
+   "ctx": "Your teacher gives you four periods in the wrong order: Modernism, the Middle Ages, Romanticism and the Renaissance. You must put them in chronological order, from earliest to latest, for your timeline."
+  },
+  {
+   "v": "Which period does it belong to?",
+   "o": [
+    "\"the Middle Ages, you know\"",
+    "\"the Victorian period\"",
+    "\"the Renaissance\"",
+    "\"Modernism\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 0,
+   "u": "1860 = Victoriaans. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"the Middle Ages, you know\"\"? Dan denk je dat 1860 bij de Middeleeuwen hoort. Die lopen tot ongeveer 1500, dus veel eerder.",
+    "Klopt: 1860 valt onder de regering van Victoria, 1837 tot 1901.",
+    "Koos je \"\"the Renaissance\"\"? Dan denk je dat 1860 bij de Renaissance hoort. Die ligt in de zestiende en zeventiende eeuw, dus eerder.",
+    "Koos je \"\"Modernism\"\"? Dan denk je dat 1860 bij het modernisme hoort. Dat begint aan het begin van de twintigste eeuw, dus later."
+   ],
+   "uh": "Bij welke periode hoort het?",
+   "ctx": "A novel was written in England in 1860, when Queen Victoria was on the throne. It describes a poor boy in a big city and his struggle to find a place in society. Your teacher asks about the period."
+  },
+  {
+   "v": "Which period's style does it suggest?",
+   "o": [
+    "\"Modernism, with its fragmented structure, really, to be honest\"",
+    "\"the Victorian realism of factories\"",
+    "\"the Middle Ages, with religious allegory\"",
+    "\"Romanticism, with its focus on nature and feeling\""
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 1,
+   "u": "Natuur en gevoel = Romantiek. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"Modernism, with its fragmented structure, really, to be honest\"\"? Dan denk je dat het modernistisch is. Er is geen gebroken vorm, maar een gevoelige natuurbeschrijving.",
+    "Koos je \"\"the Victorian realism of factories\"\"? Dan denk je dat het om fabrieken gaat. Er is geen sociale kritiek, maar een natuurbeleving.",
+    "Koos je \"\"the Middle Ages, with religious allegory\"\"? Dan denk je dat het middeleeuws is. Er is geen allegorie, maar een persoonlijk gevoel.",
+    "Klopt: natuur, gevoel en verbeelding passen bij de Romantiek."
+   ],
+   "uh": "Welke stijl past erbij?",
+   "ctx": "Read the fragment: \"The lonely hills stood silent in the golden dusk, and my heart felt as wide as the sky.\" The poet describes nature and personal feeling, and uses an emotional tone."
+  },
+  {
+   "v": "Which period's concerns does it suggest?",
+   "o": [
+    "\"the Victorian period, with its social problems\"",
+    "\"Romanticism, with its love of nature\"",
+    "\"the Renaissance, with its court poetry, I think, I suppose\"",
+    "\"the Middle Ages, with knights\""
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 1,
+   "u": "Fabrieksarbeid = Victoriaans. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: industriële steden, werkende kinderen en armoede zijn Victoriaanse thema's.",
+    "Koos je \"\"Romanticism, with its love of nature\"\"? Dan denk je dat het om natuur gaat. Het gaat om een fabriek, en dus om het stadsleven.",
+    "Koos je \"\"the Renaissance, with its court poetry, I think, I suppose\"\"? Dan denk je dat het hofpoëzie is. Er is geen koning, maar sociale ellende.",
+    "Koos je \"\"the Middle Ages, with knights\"\"? Dan denk je dat het om ridders gaat. Er zijn geen ridders, maar fabrieksarbeiders."
+   ],
+   "uh": "Welke periode past erbij?",
+   "ctx": "Read the sentence: \"The city's smoke covered the factory workers' children in soot.\" The sentence shows a hard social reality in an industrial city, in a plain and detailed way."
+  },
+  {
+   "v": "Which period does it belong to?",
+   "o": [
+    "\"the Middle Ages\"",
+    "\"the Renaissance\"",
+    "\"Romanticism\"",
+    "\"Postmodernism\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 2,
+   "u": "1818 = Romantiek. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"the Middle Ages\"\"? Dan denk je dat 1818 middeleeuws is. Dat is veel te laat, en de Middeleeuwen eindigen rond 1500.",
+    "Koos je \"\"the Renaissance\"\"? Dan denk je dat 1818 bij de Renaissance hoort. Die is eerder, in de zestiende en zeventiende eeuw.",
+    "Klopt: 1818 valt in de Romantische periode, met verbeelding en gevoel.",
+    "Koos je \"\"Postmodernism\"\"? Dan denk je dat 1818 postmodern is. Het postmodernisme begint pas na de Tweede Wereldoorlog, en is veel later."
+   ],
+   "uh": "Bij welke periode hoort Frankenstein?",
+   "ctx": "Your teacher says: \"Frankenstein by Mary Shelley was published in 1818.\" You must decide which period this novel belongs to, using the date and the typical themes of imagination and science that go wrong."
+  },
+  {
+   "v": "Which period does it belong to?",
+   "o": [
+    "\"the Victorian period\"",
+    "\"the Middle Ages\"",
+    "\"Modernism\"",
+    "\"Romanticism\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 2,
+   "u": "14e eeuw = Middeleeuwen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"the Victorian period\"\"? Dan denk je dat de veertiende eeuw Victoriaans is. Die ligt in de negentiende eeuw, dus veel later.",
+    "Klopt: de veertiende eeuw valt in de Middeleeuwen.",
+    "Koos je \"\"Modernism\"\"? Dan denk je dat de veertiende eeuw modernistisch is. Dat is de twintigste eeuw, en veel later.",
+    "Koos je \"\"Romanticism\"\"? Dan denk je dat de veertiende eeuw romantisch is. Dat is eind achttiende eeuw, en later."
+   ],
+   "uh": "Bij welke periode hoort het?",
+   "ctx": "Your teacher says: \"The Canterbury Tales by Geoffrey Chaucer dates from the fourteenth century.\" You must decide which period this work belongs to, from the given century."
+  },
+  {
+   "v": "Which historical event shapes this text?",
+   "o": [
+    "\"the Norman Conquest\"",
+    "\"the Industrial Revolution\"",
+    "\"the invention of printing\"",
+    "\"the First World War\""
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 3,
+   "u": "Loopgraven = Eerste Wereldoorlog. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"the Norman Conquest\"\"? Dan denk je dat de Normandische verovering het beeld bepaalt. Loopgraven horen niet bij 1066, maar bij de moderne oorlog.",
+    "Koos je \"\"the Industrial Revolution\"\"? Dan denk je dat de industrialisatie centraal staat. Er is een oorlog, en geen fabriek.",
+    "Koos je \"\"the invention of printing\"\"? Dan denk je dat de boekdrukkunst centraal staat. Er is een oorlog, en geen drukkerij.",
+    "Klopt: loopgraven en een verlies van oude zekerheden verwijzen naar de Eerste Wereldoorlog."
+   ],
+   "uh": "Welke gebeurtenis bepaalt de tekst?",
+   "ctx": "Read the sentence: \"We sat in the trenches, and the old words no longer meant anything.\" The writer describes soldiers in a war and a loss of old certainties and shared meaning."
+  },
+  {
+   "v": "Which period is it?",
+   "o": [
+    "\"the Renaissance\"",
+    "\"the Victorian period\"",
+    "\"Modernism\"",
+    "\"Romanticism\""
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 3,
+   "u": "Rond 1600 = Renaissance. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: rond 1600 en het theater in Londen horen bij de Renaissance.",
+    "Koos je \"\"the Victorian period\"\"? Dan denk je dat 1600 Victoriaans is. Die periode is in de negentiende eeuw, dus veel later.",
+    "Koos je \"\"Modernism\"\"? Dan denk je dat 1600 modernistisch is. Dat is de twintigste eeuw, en veel later.",
+    "Koos je \"\"Romanticism\"\"? Dan denk je dat 1600 romantisch is. Dat is eind achttiende eeuw, en later."
+   ],
+   "uh": "Welke periode is dit?",
+   "ctx": "A play was performed in an open-air theatre in London around 1600, and its author was also an actor in the same company. Your teacher asks you in which period this play was written and performed."
+  },
+  {
+   "v": "Why do many Victorian novels describe poverty?",
+   "o": [
+    "\"because the writers did not know anything else, I think, I suppose\"",
+    "\"because poverty did not exist before\"",
+    "\"because industrialisation created poverty and crowded cities\"",
+    "\"because the queen asked for it\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 4,
+   "u": "Industrialisatie = armoede in steden. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"because the writers did not know anything else, I think, I suppose\"\"? Dan denk je dat schrijvers niets anders kenden. Ze kozen die thema's bewust, vanwege de maatschappij.",
+    "Koos je \"\"because poverty did not exist before\"\"? Dan denk je dat armoede nieuw was. Armoede bestond altijd, maar werd nu zichtbaar in steden.",
+    "Klopt: de industrialisatie bracht fabrieken, drukke steden en armoede, en schrijvers wilden dat laten zien.",
+    "Koos je \"\"because the queen asked for it\"\"? Dan denk je dat de koningin het vroeg. Er is geen opdracht, en de reden ligt in de maatschappij."
+   ],
+   "uh": "Waarom beschrijven Victoriaanse romans armoede?",
+   "ctx": "Your classmate asks why so many Victorian novels describe poverty, factories and crowded cities. You know that the century changed society in a few decades, and you want to give a historical reason."
+  },
+  {
+   "v": "Why did Modernist writers experiment with form?",
+   "o": [
+    "\"because they could not write well\"",
+    "\"because old forms did not express a changed, uncertain world\"",
+    "\"because kings forbade traditional forms, to be honest, you know\"",
+    "\"because there was no paper\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 4,
+   "u": "Veranderde wereld = nieuwe vormen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"because they could not write well\"\"? Dan denk je dat ze niet goed konden schrijven. Ze experimenteerden bewust, om iets nieuws uit te drukken.",
+    "Klopt: na de oorlog en grote veranderingen pasten oude vormen niet meer bij de ervaring.",
+    "Koos je \"\"because kings forbade traditional forms, to be honest, you know\"\"? Dan denk je dat koningen vormen verboden. Er was geen verbod, maar een keuze.",
+    "Koos je \"\"because there was no paper\"\"? Dan denk je dat er geen papier was. Dat is niet waar, en er was veel papier."
+   ],
+   "uh": "Waarom experimenteerden modernisten?",
+   "ctx": "Your teacher explains that Modernist writers experimented with form. A student asks why they did not simply write in the traditional way of earlier novels, and you must give a reason that fits the time."
+  },
+  {
+   "v": "Which writer wrote last?",
+   "o": [
+    "\"Chaucer\"",
+    "\"Shakespeare\"",
+    "\"Dickens\"",
+    "\"Woolf\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 0,
+   "u": "Laatste jaartal = laatste schrijver. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"Chaucer\"\"? Dan denk je dat Chaucer het laatst schreef. Hij leefde in de veertiende eeuw, dus het vroegst na Beowulf.",
+    "Koos je \"\"Shakespeare\"\"? Dan denk je dat Shakespeare het laatst schreef. Hij leefde rond 1600, dus veel eerder.",
+    "Koos je \"\"Dickens\"\"? Dan denk je dat Dickens het laatst schreef. Hij leefde in de negentiende eeuw, dus voor Woolf.",
+    "Klopt: Woolf staat in de jaren twintig van de twintigste eeuw, het laatst van de lijst."
+   ],
+   "uh": "Welke schrijver schreef het laatst?",
+   "ctx": "Read the timeline: \"around 1000: the manuscript of Beowulf; 14th century: Chaucer; around 1600: Shakespeare; 1818: Frankenstein; 1850s: Dickens; 1920s: Woolf.\" Your teacher asks which writer on the timeline wrote last."
+  },
+  {
+   "v": "Which two novels are Victorian?",
+   "o": [
+    "\"Oliver Twist and Great Expectations\"",
+    "\"Frankenstein and Oliver Twist\"",
+    "\"Great Expectations and Mrs Dalloway, you know\"",
+    "\"Frankenstein and Mrs Dalloway\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 0,
+   "u": "1837-1901 = Victoriaans. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: 1838 en 1860 vallen binnen 1837 tot 1901, de Victoriaanse tijd.",
+    "Koos je \"\"Frankenstein and Oliver Twist\"\"? Dan denk je dat Frankenstein Victoriaans is. Het verscheen in 1818, voor de regering van Victoria.",
+    "Koos je \"\"Great Expectations and Mrs Dalloway, you know\"\"? Dan denk je dat Mrs Dalloway Victoriaans is. Het verscheen in 1925, dus na de Victoriaanse tijd.",
+    "Koos je \"\"Frankenstein and Mrs Dalloway\"\"? Dan denk je dat de uiterste jaartallen Victoriaans zijn. 1818 en 1925 liggen beide buiten 1837 tot 1901, dus geen van beide."
+   ],
+   "uh": "Welke twee romans zijn Victoriaans?",
+   "ctx": "Four novels are listed with their year of publication: Frankenstein (1818), Oliver Twist (1838), Great Expectations (1860) and Mrs Dalloway (1925). Your teacher asks you which two of them belong to the Victorian period."
+  },
+  {
+   "v": "Which period fits best?",
+   "o": [
+    "\"Modernism\"",
+    "\"the Victorian realism of the city\"",
+    "\"Romanticism\"",
+    "\"the Middle Ages\""
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 1,
+   "u": "Natuur en gevoel = Romantiek. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"Modernism\"\"? Dan denk je dat het modernistisch is. Er is geen experiment, maar een gevoelige natuurbeschrijving.",
+    "Koos je \"\"the Victorian realism of the city\"\"? Dan denk je dat het om de stad gaat. Er is een berg en een meer, dus natuur.",
+    "Klopt: natuur en diepe gevoelens zijn typisch voor de Romantiek.",
+    "Koos je \"\"the Middle Ages\"\"? Dan denk je dat het middeleeuws is. Er is geen heiligenverhaal, maar een persoonlijk gevoel."
+   ],
+   "uh": "Welke periode past het best?",
+   "ctx": "Read the description: \"A poem praises a mountain, a lake and the poet's own deep feelings about them.\" Your teacher asks which period this poem most probably belongs to, from its subject and tone."
+  },
+  {
+   "v": "Which period and style fit best?",
+   "o": [
+    "\"Romanticism, with praise for nature\"",
+    "\"the Victorian period, with realism about society\"",
+    "\"the Renaissance, with court poetry\"",
+    "\"Postmodernism, with playful references, I think, I suppose\""
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 1,
+   "u": "Fabriek en realisme = Victoriaans. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"Romanticism, with praise for nature\"\"? Dan denk je dat het romantisch is. Er is geen natuurverheerlijking, maar fabrieksleven.",
+    "Klopt: kinderarbeid en fabrieken zijn Victoriaanse onderwerpen, vaak realistisch beschreven.",
+    "Koos je \"\"the Renaissance, with court poetry\"\"? Dan denk je dat het een hofdicht is. Er is geen hof, maar een fabriek.",
+    "Koos je \"\"Postmodernism, with playful references, I think, I suppose\"\"? Dan denk je dat het postmodern is. Er is geen spel, maar een serieuze beschrijving."
+   ],
+   "uh": "Welke periode en stijl past?",
+   "ctx": "Read the description: \"A novel shows children working in a factory, and describes in detail the crowded streets, the smoke and the hunger of the workers.\" Your teacher asks about the period and the style."
+  },
+  {
+   "v": "Which period and text type?",
+   "o": [
+    "\"the Victorian period; a novel\"",
+    "\"Modernism; a poem\"",
+    "\"the Middle Ages; a short story, to be honest\"",
+    "\"the Renaissance; a play (a tragedy)\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 2,
+   "u": "Hamlet = Renaissance toneel. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"the Victorian period; a novel\"\"? Dan denk je dat Hamlet een Victoriaanse roman is. Het is toneel, en veel eerder geschreven.",
+    "Koos je \"\"Modernism; a poem\"\"? Dan denk je dat Hamlet een modernistisch gedicht is. Het is een toneelstuk, en veel eerder geschreven.",
+    "Koos je \"\"the Middle Ages; a short story, to be honest\"\"? Dan denk je dat Hamlet een middeleeuws kort verhaal is. Het is een toneelstuk, uit de Renaissance.",
+    "Klopt: Hamlet is een Renaissance-toneelstuk en een tragedie."
+   ],
+   "uh": "Welke periode en tekstsoort?",
+   "ctx": "Read the statement: \"Hamlet is a play by William Shakespeare.\" Your teacher asks you to say in which period it was written and which type of text it is."
+  },
+  {
+   "v": "Which period does it belong to?",
+   "o": [
+    "\"the Victorian period, because it appeared during Victoria's reign\"",
+    "\"the Renaissance, because Dickens was an old writer, I suppose, really\"",
+    "\"Modernism, because it is a novel\"",
+    "\"Romanticism, because it has a young hero\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 2,
+   "u": "Jaartal bepaalt de periode. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: 1860 valt binnen 1837 tot 1901, de regering van Victoria.",
+    "Koos je \"\"the Renaissance, because Dickens was an old writer, I suppose, really\"\"? Dan denk je dat Dickens in de Renaissance leefde. Het jaartal 1860 wijst op de negentiende eeuw, dus later.",
+    "Koos je \"\"Modernism, because it is a novel\"\"? Dan denk je dat elke roman modernistisch is. Het jaartal zegt Victoriaans, en niet modernisme.",
+    "Koos je \"\"Romanticism, because it has a young hero\"\"? Dan denk je dat een jonge held romantisch is. Het jaartal 1860 is Victoriaans, en de romantiek was eerder."
+   ],
+   "uh": "Bij welke periode hoort het boek?",
+   "ctx": "Read the statement: \"Great Expectations by Charles Dickens appeared in 1860 and 1861.\" Your teacher asks you to say to which period this novel belongs and why, based on the date."
+  },
+  {
+   "v": "Which technique and period?",
+   "o": [
+    "\"rhyming couplets, typical of the Renaissance, you know\"",
+    "\"a moral story, typical of the Middle Ages\"",
+    "\"stream of consciousness, typical of Modernism\"",
+    "\"a travel diary, typical of Romanticism\""
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 3,
+   "u": "Stroom van gedachten = modernisme. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"rhyming couplets, typical of the Renaissance, you know\"\"? Dan denk je dat er rijm is. Er is geen rijm, en het gaat om gedachten.",
+    "Koos je \"\"a moral story, typical of the Middle Ages\"\"? Dan denk je dat het een moraal heeft. Er is geen les, maar een stroom van gedachten.",
+    "Klopt: een directe stroom van gedachten is een modernistische techniek.",
+    "Koos je \"\"a travel diary, typical of Romanticism\"\"? Dan denk je dat het een reisdagboek is. Er is geen reis, maar een gedachtestroom."
+   ],
+   "uh": "Welke techniek en periode?",
+   "ctx": "Read the fragment: \"She thought: the bus, the street, the letter, and then nothing, and then everything.\" Your teacher asks you which period's technique this could be, as it follows a character's thoughts directly."
+  },
+  {
+   "v": "Which period is it linked to?",
+   "o": [
+    "\"the Middle Ages\"",
+    "\"Postmodernism\"",
+    "\"Romanticism\"",
+    "\"the Victorian period\""
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 3,
+   "u": "Spel met vorm = postmodern. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"the Middle Ages\"\"? Dan denk je dat het middeleeuws is. Er zijn geen middeleeuwse kenmerken, maar een spel met vorm.",
+    "Klopt: spelen met vorm, een onbetrouwbare verteller en verwijzingen naar andere boeken zijn postmodern.",
+    "Koos je \"\"Romanticism\"\"? Dan denk je dat het romantisch is. Er is geen natuurgevoel, maar een spel met verwijzingen.",
+    "Koos je \"\"the Victorian period\"\"? Dan denk je dat het Victoriaans is. Er is geen sociaal realisme, maar een spel met vorm."
+   ],
+   "uh": "Welke periode past erbij?",
+   "ctx": "Read the description: \"A story is told in pieces, with an unreliable narrator and playful references to other books.\" Your teacher asks you which later period this style is often linked to."
+  },
+  {
+   "v": "Why is it useful to place a book in its period?",
+   "o": [
+    "\"it makes the book shorter\"",
+    "\"it replaces reading the book\"",
+    "\"it proves that the book is good, I think, I suppose, really\"",
+    "\"it helps you to understand its themes and style in context\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 4,
+   "u": "Context verklaart thema en stijl. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"it makes the book shorter\"\"? Dan denk je dat de periode het boek korter maakt. Het boek blijft hetzelfde, maar je begrijpt het beter.",
+    "Koos je \"\"it replaces reading the book\"\"? Dan denk je dat de periode het lezen vervangt. Het is achtergrond, en geen vervanging.",
+    "Koos je \"\"it proves that the book is good, I think, I suppose, really\"\"? Dan denk je dat de periode kwaliteit bewijst. Ze verklaart alleen de context, en bewijst niets over kwaliteit.",
+    "Klopt: de periode verklaart waarom een boek bepaalde thema's en een bepaalde stijl heeft."
+   ],
+   "uh": "Waarom een boek in een periode plaatsen?",
+   "ctx": "Your teacher says it is useful to place a novel in its period before you read it. A classmate asks why this is useful, since the book can be read without any background."
+  },
+  {
+   "v": "How can you decide the period?",
+   "o": [
+    "\"look at the language, the themes and the historical setting\"",
+    "\"count the words in the fragment, to be honest, you know, I think\"",
+    "\"look only at the font\"",
+    "\"ask which character is the hero\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 4,
+   "u": "Taal, thema en context. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: taal, thema's en historische context samen wijzen op de periode.",
+    "Koos je \"\"count the words in the fragment, to be honest, you know, I think\"\"? Dan denk je dat het aantal woorden de periode toont. Dat zegt niets, over de tijd van schrijven.",
+    "Koos je \"\"look only at the font\"\"? Dan denk je dat het lettertype de periode toont. Dat hangt van de uitgave af, en niet van de schrijver.",
+    "Koos je \"\"ask which character is the hero\"\"? Dan denk je dat de held de periode toont. Helden komen in alle periodes voor, en dat zegt niets."
+   ],
+   "uh": "Hoe bepaal je de periode?",
+   "ctx": "You are given a fragment without any date and your teacher asks you to find out in which period it was probably written. You may use several clues from the text, such as the language, the subject and the historical setting."
+  }
+ ],
+ "oe": [
+  {
+   "bron": "Examenstijl",
+   "ctx": "Your teacher gives you four writers and four periods and asks you to link them in your reading file: Shakespeare, Dickens, Woolf and Chaucer; the Middle Ages, the Renaissance, the Victorian period and Modernism.",
+   "v": "Link each writer to the correct period in English.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Chaucer is Middle Ages (1p). Shakespeare is Renaissance en Dickens is Victorian (1p). Woolf is Modernism (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Read this sentence: \"The factory chimneys covered the poor streets in smoke, and the children worked fourteen hours a day.\" Your teacher asks you to say in which period it was most likely written and why.",
+   "v": "Write two sentences that name the period and give a reason from the text.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Victoriaanse tijd genoemd (1p). Een reden uit de tekst, zoals fabrieken of kinderarbeid (1p). Het verband met de industrialisatie (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "A classmate says: \"Romanticism and Modernism are the same, because both are about feelings.\" You disagree, as you know that they have different aims and styles, and you want to explain the difference briefly.",
+   "v": "Write three sentences that explain the difference.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Romantiek draait om natuur en gevoel (1p). Modernisme experimenteert met vorm (1p). Een duidelijk verschil (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "You have read a novel that was published in 1818 and a novel that was published in 1860. Your teacher asks you to put both on a timeline and to explain how their periods differ in themes.",
+   "v": "Write three sentences comparing the periods in English.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "1818 is Romantiek en 1860 is Victoriaans (1p). Thema's per periode (1p). Een vergelijking met whereas of both (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Your teacher gives you an undated fragment: \"She thought: the bus, the street, the letter, and then nothing, and then everything.\" You must decide the period and explain the clue.",
+   "v": "Write two sentences that name the period and the technique.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Modernisme (1p). Stream of consciousness als techniek (1p). Een verwijzing naar de tekst (1p)."
+  }
+ ]
+}
