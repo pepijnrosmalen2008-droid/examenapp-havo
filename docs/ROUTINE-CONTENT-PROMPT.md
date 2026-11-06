@@ -43,6 +43,8 @@ STAP 3 - Keur je eigen werk (herhaal tot alles klopt):
 - Lees daarna alle vragen na als een strenge docent: is er precies één juist antwoord, klopt het juiste antwoord met de syllabus, benoemt elke uitleg de echte denkfout, verraadt de vraag het antwoord niet? Verbeter wat niet klopt.
 - Toets de moeilijkheid: zou een gemiddelde examenkandidaat elke R3-vraag in één keer goed hebben zonder de bron te lezen? Dan is hij te makkelijk. Zijn afleiders weg te strepen zonder de stof te kennen? Vervangen.
 - Toets elke figuur: kan dit ook als een rijtje tekst? Dan is het geen figuur; teken het verband.
+- **Maak figuren met `scripts/figuur.mjs`** (fragment, grafiek, tijdlijn, boom, kring), zie `docs/FIGUREN.md`. Geen begrippen in rondjes, geen genummerde rijtjes, geen stippen met lijntjes: `check-leerdoel` keurt die af. Bij taalvakken is minstens één figuur een `fragment` met de echte tekst.
+- **Opknappen**: maak na je nieuwe leerdoelen ook 2 bestaande leerdoelen mooier. `node scripts/figuur.mjs --overzicht` toont welke nog sjabloonfiguren hebben (bovenaan beginnen). Vervang ze met `node scripts/vervang-figuren.mjs`, render, bekijk, `node scripts/split-data.js` is niet nodig (alleen de samenvatting verandert), wel `build-leren.mjs`. Eén commit per leerdoel: `Figuren: <niveau> <vak> <id>`.
 
 STAP 4 - Integreren en poorten:
 - `node scripts/integreer-leerdoel.mjs <niveau> <vak> <domein> content-pending/<x>.json content-pending/<x>.html`

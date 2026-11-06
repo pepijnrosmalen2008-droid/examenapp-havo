@@ -74,8 +74,8 @@ if (htmlPath) {
   const html = fs.readFileSync(htmlPath, 'utf8');
   if (/—/.test(html)) hard.push('em dash (—) in de samenvatting-HTML');
   const chapters = (html.match(/class="sam-chapter"/g) || []).length;
-  const figs = (html.match(/class="sam-figure"|class="sam-clip /g) || []).length;   // clip telt als beeld
-  const svgs = (html.match(/<svg/g) || []).length;
+  const figs = (html.match(/class="sam-figure"|class="sam-figure sam-frag"|class="sam-clip /g) || []).length;   // clip en tekstfragment tellen als beeld
+  const svgs = (html.match(/<svg|class="sam-figure sam-frag"/g) || []).length;
   if (chapters < 3) hard.push(`samenvatting: ${chapters} hoofdstukken (>=3 vereist)`);
   if (figs < chapters) hard.push(`samenvatting: ${figs} figuren bij ${chapters} hoofdstukken - ELK hoofdstuk moet een afbeelding hebben`);
   if (svgs < chapters) hard.push(`samenvatting: ${svgs} svg's bij ${chapters} hoofdstukken`);

@@ -76,6 +76,13 @@ for (const donker of [false, true]) {
     blokken.forEach((b, i) => {
       const n = i + 1, isClip = b.classList.contains('sam-clip');
       const naam = isClip ? `clip ${n}` : `figuur ${n}`;
+      if (b.classList.contains('sam-frag')) {   // geannoteerd tekstfragment: echte tekst, geen svg
+        const m = b.querySelectorAll('mark').length, nt = b.querySelectorAll('.sam-frag-noten li').length, cap = b.querySelector('.sam-figcap');
+        if (m < 2) out.hard.push(`${naam}: tekstfragment met ${m} markering(en) (min. 2)`);
+        if (m !== nt) out.hard.push(`${naam}: ${m} markeringen maar ${nt} aantekeningen`);
+        if (!cap || cap.textContent.trim().length < 40) out.hard.push(`${naam}: bijschrift (.sam-figcap) ontbreekt of is te kort (≥40 tekens)`);
+        return;
+      }
       const svg = b.querySelector('svg');
       if (!svg) { out.hard.push(`${naam}: geen <svg>`); return; }
       const lbl = svg.getAttribute('aria-label') || '';

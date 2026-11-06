@@ -42,6 +42,7 @@ extra eisen, hard in `check-leerdoel.mjs` (live modules krijgen alleen een waars
 | figuren | **min. 4** figuren/clips | |
 | lijstfiguur | max. 1 figuur met < 3 lijnen/paden/vormen (alleen vakjes met tekst) | een lijst kan ook als tekst |
 | rijke figuur | **min. 2** met ≥6 lijnen/paden/vormen en ≥5 labels (een clip telt mee) | een figuur moet iets laten zien |
+| sjabloonfiguur | **0**: geen begrippen in rondjes, genummerde rijtjes of stippen met lijntjes (sinds 6 nov 2026) | maak figuren met `scripts/figuur.mjs`, zie `docs/FIGUREN.md` |
 
 **bi.M3 blijft de referentie voor uitleg per fout antwoord en voor figuren**, maar haalt de nieuwe
 moeilijkheidseis zelf net niet (7 R3-vragen, 6 met context). Ga voor moeilijkheid uit van deze tabel.

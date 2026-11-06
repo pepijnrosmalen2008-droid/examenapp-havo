@@ -1,3 +1,4 @@
+import { generiek } from './figuur.mjs';
 /**
  * leerdoel-v2.mjs - de inhoudelijke regels van de gouden standaard v2
  * (docs/GOUDEN-STANDAARD-V2.md). Gedeeld door check-leerdoel.mjs (vóór integratie)
@@ -123,7 +124,7 @@ export function checkV2(ld, samHtml, opt = {}) {
     if (!/class="sam-intro"/.test(h)) hard.push('samenvatting: sam-intro ontbreekt');
     if (!/class="sam-table"/.test(h)) hard.push('samenvatting: begrippenlijst (sam-table) ontbreekt');
     if (hoofd.length < 3) hard.push(`samenvatting: ${hoofd.length} hoofdstukken (min. 3)`);
-    hoofd.forEach((c, i) => { if (!/class="sam-figure"|class="sam-clip /.test(c)) hard.push(`samenvatting: hoofdstuk ${i + 1} heeft geen figuur of clip`); });
+    hoofd.forEach((c, i) => { if (!/class="sam-figure[ "]|class="sam-clip /.test(c)) hard.push(`samenvatting: hoofdstuk ${i + 1} heeft geen figuur of clip`); });
     if (!/class="sam-tip"/.test(h)) hard.push('samenvatting: examentip (sam-tip) ontbreekt');
     const tekst = zichtbaar(h);
     if (tekst.length < 2500) hard.push(`samenvatting: ${tekst.length} tekens leestekst (min. 2500): te dun voor een heel leerdoel`);
@@ -138,12 +139,17 @@ export function checkV2(ld, samHtml, opt = {}) {
     }
     // ── Uitgebreidere figuren (okt 2026): geen opgemaakte lijstjes, echte tekeningen.
     const svgs = [...h.matchAll(/<div class="sam-(figure|clip)[^"]*">[\s\S]*?<svg[\s\S]*?<\/svg>/g)].map(m => ({ clip: m[1] === 'clip', svg: m[0] }));
+    const frags = [...h.matchAll(/<div class="sam-figure sam-frag">[\s\S]*?<\/ol>/g)].map(m => ({ frag: true, marks: (m[0].match(/<mark\b/g) || []).length, svg: '' }));
+    svgs.push(...frags);
     const teken = x => (x.match(/<(path|line|circle|ellipse|polygon|polyline)\b/g) || []).length;
     const labels = x => (x.match(/<text\b/g) || []).length;
     if (svgs.length < 4) streng.push(`samenvatting: ${svgs.length} figuren/clips (min. 4)`);
-    const lijst = svgs.filter(f => !f.clip && teken(f.svg) < 3).length;
+    const lijst = svgs.filter(f => !f.clip && !f.frag && teken(f.svg) < 3).length;
     if (lijst > 1) streng.push(`samenvatting: ${lijst} figuren zijn alleen vakjes met tekst (max. 1): teken het verband (pijlen, lijnen, assen, haken, een doorsnede), geen opgemaakte lijst`);
-    const rijk = svgs.filter(f => f.clip || (teken(f.svg) >= 6 && labels(f.svg) >= 5)).length;
+    const rijk = svgs.filter(f => f.clip || (f.frag && f.marks >= 3) || (teken(f.svg) >= 6 && labels(f.svg) >= 5)).length;
+    // ── Geen sjabloonfiguren (nov 2026): rondjes met een woord, genummerde rijtjes, stippen met lijntjes.
+    const sjabloon = svgs.filter(f => !f.clip && !f.frag).map((f, i) => [i + 1, generiek(f.svg)]).filter(x => x[1].length);
+    if (sjabloon.length) streng.push(`samenvatting: ${sjabloon.length} figuur/figuren zien eruit als een sjabloon (${sjabloon.map(([i, r]) => `fig ${i}: ${r[0]}`).join('; ')}). Maak ze met scripts/figuur.mjs (fragment, grafiek, tijdlijn, boom, kring), zie docs/FIGUREN.md`);
     if (rijk < 2) streng.push(`samenvatting: ${rijk} rijke figuren (min. 2 met ≥6 lijnen/paden/vormen en ≥5 labels, of een clip): denk aan een grafiek met assen en ticks, een doorsnede, een proces met pijlen, een geannoteerd tekstfragment`);
     const sleutel = [...beg.map(b => b.t), ...ond].flatMap(x => String(x || '').toLowerCase().split(/[\s/(),&:]+/)).filter(w => w.length >= 5);
     const blokken = h.match(/<div class="sam-(figure|clip)[^"]*">[\s\S]*?(<\/svg>[\s\S]*?<\/div>)/g) || [];
