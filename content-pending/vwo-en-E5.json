@@ -1,0 +1,682 @@
+{
+ "id": "E5",
+ "lo": "en.E.5",
+ "gs": 2,
+ "naam": "Personages, thema en symboliek",
+ "beschrijving": "Je leert in het Engels personages te beschrijven als protagonist, antagonist, statisch of dynamisch, directe en indirecte karakterisering te herkennen, het thema van het onderwerp te onderscheiden en een symbool te interpreteren met bewijs uit de tekst.",
+ "ceStatus": "SE",
+ "binas": "",
+ "val": "",
+ "onderwerpen": [
+  "Personages",
+  "Karakterisering",
+  "Onderwerp en thema",
+  "Symboliek",
+  "Interpretatie onderbouwen"
+ ],
+ "sam": "Een protagonist is het hoofdpersonage en een antagonist de tegenstander. Een statisch personage verandert niet en een dynamisch personage wel. Een schrijver toont karakter direct of indirect. Het onderwerp is waar het verhaal over gaat, het thema is de boodschap. Een symbool verwijst naar een groter idee en een interpretatie ondersteun je met bewijs uit de tekst.",
+ "begrippen": [
+  {
+   "t": "Protagonist",
+   "d": "Het hoofdpersonage."
+  },
+  {
+   "t": "Antagonist",
+   "d": "Het personage dat de hoofdpersoon tegenwerkt."
+  },
+  {
+   "t": "Statisch personage",
+   "d": "Een personage dat niet verandert."
+  },
+  {
+   "t": "Dynamisch personage",
+   "d": "Een personage dat in het verhaal verandert."
+  },
+  {
+   "t": "Directe karakterisering",
+   "d": "De verteller noemt de eigenschap zelf."
+  },
+  {
+   "t": "Indirecte karakterisering",
+   "d": "Je leest het karakter af uit handelingen en woorden."
+  },
+  {
+   "t": "Thema",
+   "d": "De kernboodschap van het verhaal."
+  },
+  {
+   "t": "Onderwerp",
+   "d": "Waar het verhaal over gaat."
+  },
+  {
+   "t": "Symbool",
+   "d": "Een beeld dat naar een groter idee verwijst."
+  },
+  {
+   "t": "Interpretatie",
+   "d": "Je uitleg van wat een tekst betekent."
+  },
+  {
+   "t": "Bewijs",
+   "d": "Een citaat of gebeurtenis die je uitleg ondersteunt."
+  },
+  {
+   "t": "Motief",
+   "d": "Een beeld of idee dat terugkomt in het verhaal."
+  }
+ ],
+ "sv": [
+  {
+   "v": "Who is the protagonist of a story?",
+   "o": [
+    "\"the villain\"",
+    "\"the main character\"",
+    "\"a minor character\"",
+    "\"the narrator, always\""
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 0,
+   "u": "Protagonist = hoofdpersoon. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"the villain\"\"? Dan denk je dat de protagonist de schurk is. De schurk is de antagonist, en niet de hoofdpersoon.",
+    "Klopt: de protagonist is het hoofdpersonage rond wie het verhaal draait.",
+    "Koos je \"\"a minor character\"\"? Dan denk je dat een bijpersonage de protagonist is. Bijfiguren spelen een kleine rol, en niet de hoofdrol.",
+    "Koos je \"\"the narrator, always\"\"? Dan denk je dat de verteller altijd de protagonist is. Een verteller is een stem, en kan een ander zijn."
+   ],
+   "uh": "Wie is de protagonist?"
+  },
+  {
+   "v": "Who is the antagonist of a story?",
+   "o": [
+    "\"the hero\"",
+    "\"the narrator, to be honest, you know, I think\"",
+    "\"the author\"",
+    "\"a character who opposes the main character\""
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 0,
+   "u": "Antagonist = tegenstander. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"the hero\"\"? Dan denk je dat de held de antagonist is. De held is de protagonist, en niet de tegenstander.",
+    "Koos je \"\"the narrator, to be honest, you know, I think\"\"? Dan denk je dat de verteller de antagonist is. De verteller is een stem, en niet automatisch een tegenstander.",
+    "Koos je \"\"the author\"\"? Dan denk je dat de schrijver de antagonist is. De schrijver staat buiten het verhaal, en is geen personage.",
+    "Klopt: de antagonist werkt het hoofdpersonage tegen."
+   ],
+   "uh": "Wie is de antagonist?"
+  },
+  {
+   "v": "Which sentence is direct characterisation?",
+   "o": [
+    "\"Tom is generous.\"",
+    "\"Tom gave his lunch to a stranger.\"",
+    "\"Tom's coat was torn.\"",
+    "\"Tom said nothing and left.\""
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 1,
+   "u": "Direct = het karakter benoemen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: de zin zegt rechtstreeks welk karakter Tom heeft.",
+    "Koos je \"\"Tom gave his lunch to a stranger.\"\"? Dan denk je dat een handeling directe karakterisering is. Het is gedrag, en laat het karakter indirect zien.",
+    "Koos je \"\"Tom's coat was torn.\"\"? Dan denk je dat een kapotte jas direct is. Het is een uiterlijk detail, en zegt niets rechtstreeks.",
+    "Koos je \"\"Tom said nothing and left.\"\"? Dan denk je dat zwijgen direct is. Het is gedrag, en laat je zelf concluderen."
+   ],
+   "uh": "Welke zin is directe karakterisering?"
+  },
+  {
+   "v": "Which sentence shows a character indirectly?",
+   "o": [
+    "\"She is generous.\"",
+    "\"The narrator says she is kind, you know.\"",
+    "\"She gave her last coin to a beggar.\"",
+    "\"She is a kind woman.\""
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 1,
+   "u": "Indirect = handeling laat het zien. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"She is generous.\"\"? Dan denk je dat een korte zin zonder handeling indirect is. Generous noemt de eigenschap zelf, dus de zin is direct.",
+    "Koos je \"\"The narrator says she is kind, you know.\"\"? Dan denk je dat de stem van een verteller het karakter laat zien. Hij benoemt kind rechtstreeks, en dan is het direct.",
+    "Klopt: ze laat met een handeling zien dat ze vrijgevig is, zonder het te zeggen.",
+    "Koos je \"\"She is a kind woman.\"\"? Dan denk je dat een omschrijving als kind woman een handeling toont. Er staat geen gebeurtenis, alleen een benoeming."
+   ],
+   "uh": "Welke zin toont het karakter indirect?"
+  },
+  {
+   "v": "What is the theme of a story?",
+   "o": [
+    "\"the first sentence\"",
+    "\"the central message or idea of the story\"",
+    "\"the setting\"",
+    "\"the main character's name, really, to be honest\""
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 2,
+   "u": "Thema = boodschap. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"the first sentence\"\"? Dan denk je dat het thema de openingszin is. Dat is gewoon het begin, en geen boodschap.",
+    "Klopt: het thema is de kernboodschap of het idee achter het verhaal.",
+    "Koos je \"\"the setting\"\"? Dan denk je dat het thema de plaats is. De setting is waar het speelt, en niet de boodschap.",
+    "Koos je \"\"the main character's name, really, to be honest\"\"? Dan denk je dat het thema een naam is. Een naam is een detail, en geen idee."
+   ],
+   "uh": "Wat is het thema?"
+  },
+  {
+   "v": "What is a symbol in a story?",
+   "o": [
+    "\"a long description\"",
+    "\"a character's name only, I think, I suppose, really\"",
+    "\"a summary of the plot\"",
+    "\"an object or image that stands for a bigger idea\""
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 3,
+   "u": "Symbool = beeld met betekenis. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"a long description\"\"? Dan denk je dat een symbool een lange beschrijving is. Het is een beeld, en geen lengte.",
+    "Koos je \"\"a character's name only, I think, I suppose, really\"\"? Dan denk je dat een naam een symbool is. Een naam kan symbolisch zijn, maar niet altijd.",
+    "Koos je \"\"a summary of the plot\"\"? Dan denk je dat een symbool een samenvatting is. Het is een beeld, en geen samenvatting.",
+    "Klopt: een symbool is iets concreets dat naar een groter idee verwijst."
+   ],
+   "uh": "Wat is een symbool?"
+  },
+  {
+   "v": "Which sentence interprets a text and supports the claim with evidence?",
+   "o": [
+    "\"The storm symbolises his anger, because it arrives when he shouts.\"",
+    "\"The storm is a storm.\"",
+    "\"I like the storm.\"",
+    "\"The storm is in chapter two, to be honest, you know, I think.\""
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 4,
+   "u": "Betekenis + bewijs. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: de zin geeft een betekenis en een bewijs uit het verhaal.",
+    "Koos je \"\"The storm is a storm.\"\"? Dan denk je dat dit een interpretatie is. Het herhaalt alleen, en zegt niets.",
+    "Koos je \"\"I like the storm.\"\"? Dan denk je dat een voorkeur een interpretatie is. Het is een smaak, en geen betekenis.",
+    "Koos je \"\"The storm is in chapter two, to be honest, you know, I think.\"\"? Dan denk je dat een plaats in de tekst een interpretatie is. Het noemt alleen waar het staat, en geeft geen betekenis."
+   ],
+   "uh": "Welke zin interpreteert met bewijs?"
+  },
+  {
+   "v": "Which kind of character is Mia?",
+   "o": [
+    "\"a dynamic character, who changes, I suppose\"",
+    "\"an antagonist\"",
+    "\"a static character, who does not change\"",
+    "\"the narrator\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 0,
+   "u": "Verandert niet = statisch. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"a dynamic character, who changes, I suppose\"\"? Dan denk je dat ze verandert. Ze blijft hetzelfde, dus statisch.",
+    "Koos je \"\"an antagonist\"\"? Dan denk je dat ze de tegenstander is. Ze maakt iedereen aan het lachen, en werkt niemand tegen.",
+    "Klopt: Mia blijft in elk hoofdstuk dezelfde, dus ze is een statisch personage.",
+    "Koos je \"\"the narrator\"\"? Dan denk je dat ze de verteller is. Er staat niets over vertellen, dus ze is een personage."
+   ],
+   "uh": "Wat voor personage is Mia?",
+   "ctx": "Read the passage: \"Mia never changes. In every chapter she is the same funny girl who makes everyone laugh, whatever happens around her.\" Your teacher asks what kind of character she is."
+  },
+  {
+   "v": "Which kind of character is Leo?",
+   "o": [
+    "\"a static character, who does not change\"",
+    "\"a dynamic character, who changes\"",
+    "\"a villain\"",
+    "\"a minor character\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 0,
+   "u": "Verandert = dynamisch. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"a static character, who does not change\"\"? Dan denk je dat hij gelijk blijft. Hij verandert juist, van egoïstisch naar hardwerkend.",
+    "Klopt: Leo verandert van egoïstisch naar behulpzaam, dus hij is een dynamisch personage.",
+    "Koos je \"\"a villain\"\"? Dan denk je dat hij een schurk is. Hij helpt aan het eind zijn zus, en wordt beter.",
+    "Koos je \"\"a minor character\"\"? Dan denk je dat hij een bijfiguur is. Het verhaal gaat om zijn verandering, en dat is een hoofdrol."
+   ],
+   "uh": "Wat voor personage is Leo?",
+   "ctx": "Read the passage: \"At the start, Leo is selfish and lazy. By the end of the story, he works hard to help his sister and he apologises to his friends.\" Your teacher asks what kind of character he is."
+  },
+  {
+   "v": "What does this show about Anna?",
+   "o": [
+    "\"she is proud, really, to be honest\"",
+    "\"she is bored\"",
+    "\"she is angry\"",
+    "\"she is nervous or afraid\""
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 1,
+   "u": "Lichaamstaal = indirect. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"she is proud, really, to be honest\"\"? Dan denk je dat trots hier past. Trillende handen horen niet bij trots, maar bij spanning.",
+    "Koos je \"\"she is bored\"\"? Dan denk je dat ze zich verveelt. Wegkijken met trillende handen is geen verveling, maar angst.",
+    "Koos je \"\"she is angry\"\"? Dan denk je dat ze boos is. Boosheid toont zich anders, en hier gaat het om angst.",
+    "Klopt: trillende handen en wegkijken tonen spanning of angst, indirect."
+   ],
+   "uh": "Wat toont dit over Anna?",
+   "ctx": "Read the passage: \"Anna's hands trembled and she avoided his eyes.\" Your teacher asks you what this shows about her, without the narrator saying it directly."
+  },
+  {
+   "v": "How is his character shown?",
+   "o": [
+    "\"directly: the narrator names the trait\"",
+    "\"indirectly: through what he does\"",
+    "\"indirectly: through his appearance\"",
+    "\"indirectly: through other characters, I think\""
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 1,
+   "u": "Benoemen = direct. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: de verteller zegt rechtstreeks dat hij hebzuchtig is.",
+    "Koos je \"\"indirectly: through what he does\"\"? Dan denk je dat een handeling het toont. Er staat geen handeling, maar een benoeming.",
+    "Koos je \"\"indirectly: through his appearance\"\"? Dan denk je dat uiterlijk het toont. Er staat geen uiterlijk, alleen een eigenschap.",
+    "Koos je \"\"indirectly: through other characters, I think\"\"? Dan denk je dat anderen het zeggen. De verteller zegt het zelf, dus direct."
+   ],
+   "uh": "Hoe wordt zijn karakter getoond?",
+   "ctx": "Read the passage: \"The narrator says: 'Mr Cole was a greedy man.'\" Your teacher asks you how the writer shows Mr Cole's character in this sentence."
+  },
+  {
+   "v": "Which statement is a theme?",
+   "o": [
+    "\"a girl and her friend, to be honest, you know\"",
+    "\"a school in a village\"",
+    "\"loyalty and honesty can come into conflict\"",
+    "\"a lie\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 2,
+   "u": "Thema = boodschap. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"a girl and her friend, to be honest, you know\"\"? Dan denk je dat de personages het thema zijn. Het is een onderwerp, en geen boodschap.",
+    "Koos je \"\"a school in a village\"\"? Dan denk je dat de plaats het thema is. Dat is de setting, en geen boodschap.",
+    "Klopt: dit is een boodschap over hoe twee waarden botsen.",
+    "Koos je \"\"a lie\"\"? Dan denk je dat een leugen het thema is. Het is een gebeurtenis, en geen idee."
+   ],
+   "uh": "Welke uitspraak is een thema?",
+   "ctx": "A story is about a girl who lies to protect her friend and later regrets it, because her lie causes a much bigger problem. Your teacher asks you what the theme could be."
+  },
+  {
+   "v": "Which statement is a theme?",
+   "o": [
+    "\"A story about war.\"",
+    "\"War destroys more than buildings.\"",
+    "\"A war starts in 1914.\"",
+    "\"Soldiers wear uniforms, I suppose, really.\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 2,
+   "u": "Onderwerp ≠ thema. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"A story about war.\"\"? Dan denk je dat dit een thema is. Het noemt alleen het onderwerp, en geen boodschap.",
+    "Klopt: de zin geeft een boodschap over oorlog, dat is een thema.",
+    "Koos je \"\"A war starts in 1914.\"\"? Dan denk je dat een feit een thema is. Het is een gebeurtenis, en geen boodschap.",
+    "Koos je \"\"Soldiers wear uniforms, I suppose, really.\"\"? Dan denk je dat een detail een thema is. Het is een beschrijving, en geen boodschap."
+   ],
+   "uh": "Welke uitspraak is een thema?",
+   "ctx": "Your class discusses the difference between a topic and a theme. The topic of a book is war. You must choose a sentence that expresses a theme, not just a topic."
+  },
+  {
+   "v": "What does the caged bird symbolise?",
+   "o": [
+    "\"the importance of pets\"",
+    "\"a shop that sells birds, you know\"",
+    "\"her wish to sing\"",
+    "\"the heroine's lack of freedom\""
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 3,
+   "u": "Kooi = geen vrijheid. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"the importance of pets\"\"? Dan denk je dat de vogel over huisdieren gaat. Het beeld wordt gebruikt voor haar gevoel, en niet voor dieren.",
+    "Koos je \"\"a shop that sells birds, you know\"\"? Dan denk je dat het een winkel betekent. Er is geen winkel, maar een kooi.",
+    "Koos je \"\"her wish to sing\"\"? Dan denk je dat de vogel haar zangtalent toont. De kooi wijst op opgesloten zijn, en niet op zingen.",
+    "Klopt: de gevangen vogel staat voor haar gebrek aan vrijheid, en het loslaten voor haar bevrijding."
+   ],
+   "uh": "Wat symboliseert de vogel?",
+   "ctx": "In a story a caged bird is mentioned whenever the heroine feels trapped in her home. At the end, the bird is released at the moment she leaves. Your teacher asks about the symbol."
+  },
+  {
+   "v": "What might the rain symbolise?",
+   "o": [
+    "\"grief and sadness\"",
+    "\"joy and celebration\"",
+    "\"a new beginning\"",
+    "\"a warm summer day\""
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 3,
+   "u": "Regen bij begrafenis = verdriet. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: regen en een grijze lucht bij een begrafenis staan vaak voor verdriet.",
+    "Koos je \"\"joy and celebration\"\"? Dan denk je dat regen blijdschap toont. Bij een begrafenis past dat niet, en het beeld wijst op rouw.",
+    "Koos je \"\"a new beginning\"\"? Dan denk je dat de regen een nieuw begin toont. De sfeer is rouw, en er is geen nieuw begin.",
+    "Koos je \"\"a warm summer day\"\"? Dan denk je dat de regen zomer toont. De lucht is grijs, en het is niet warm."
+   ],
+   "uh": "Wat kan de regen symboliseren?",
+   "ctx": "At a funeral in a story, it rains heavily and the sky is dark grey. Nobody opens an umbrella, and everyone stands silently. Your teacher asks you what the rain might symbolise."
+  },
+  {
+   "v": "Which evidence supports the claim best?",
+   "o": [
+    "\"The storm is in the book, I think, I suppose, really.\"",
+    "\"I like storms.\"",
+    "\"The storm breaks just as he starts to shout.\"",
+    "\"Storms are wet.\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 4,
+   "u": "Koppel symbool en gevoel. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"The storm is in the book, I think, I suppose, really.\"\"? Dan denk je dat het noemen van de storm bewijst. Het is geen verband, en zegt niets.",
+    "Koos je \"\"I like storms.\"\"? Dan denk je dat een voorkeur bewijst. Het is een smaak, en geen bewijs.",
+    "Klopt: de storm begint op het moment van zijn woede, dat koppelt beide.",
+    "Koos je \"\"Storms are wet.\"\"? Dan denk je dat een feit bewijst. Het zegt niets over woede, en is geen tekstbewijs."
+   ],
+   "uh": "Welk bewijs ondersteunt de bewering?",
+   "ctx": "A student claims in her essay that the storm in a story symbolises the hero's anger. Her teacher says the claim needs evidence from the text, and asks you which piece of evidence is best."
+  },
+  {
+   "v": "Which claim is best supported by evidence?",
+   "o": [
+    "\"He is brave because I think so, to be honest, you know, I think.\"",
+    "\"He is brave: he enters a burning house to save his dog.\"",
+    "\"He is brave, brave, brave.\"",
+    "\"He is brave and tall.\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 4,
+   "u": "Bewering + handeling. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"He is brave because I think so, to be honest, you know, I think.\"\"? Dan denk je dat jouw mening bewijs is. Het is geen tekstvoorbeeld, en overtuigt niet.",
+    "Klopt: de bewering krijgt een concrete handeling uit het verhaal als bewijs.",
+    "Koos je \"\"He is brave, brave, brave.\"\"? Dan denk je dat herhalen bewijst. Het herhaalt alleen, en geeft geen voorbeeld.",
+    "Koos je \"\"He is brave and tall.\"\"? Dan denk je dat zijn lengte moed bewijst. Lengte zegt niets over moed, en is geen bewijs."
+   ],
+   "uh": "Welke bewering is onderbouwd?",
+   "ctx": "A student writes: \"The hero is brave.\" Her teacher says: \"Prove it with the text.\" The text shows that the hero enters a burning house to save his dog, and that he is very tall."
+  },
+  {
+   "v": "What is Mrs Drake's role?",
+   "o": [
+    "\"the protagonist\"",
+    "\"the narrator\"",
+    "\"a friend of the children\"",
+    "\"the antagonist\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 0,
+   "u": "Werkt tegen = antagonist. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"the protagonist\"\"? Dan denk je dat ze de hoofdrol heeft. Ze werkt de kinderen tegen, en is dus tegenstander.",
+    "Koos je \"\"the narrator\"\"? Dan denk je dat ze de verteller is. Er staat niets over vertellen, dus ze is een personage.",
+    "Koos je \"\"a friend of the children\"\"? Dan denk je dat ze een vriend is. Ze is de reden voor het sluiten, en dus geen vriend.",
+    "Klopt: ze werkt de kinderen tegen, dus ze is de antagonist."
+   ],
+   "uh": "Wat is haar rol?",
+   "ctx": "Read the passage: \"Everyone feared Mrs Drake. She opposed every plan the children made, and she was the reason the playground was closed.\" Your teacher asks about her role in the story."
+  },
+  {
+   "v": "What does it tell you about Ben?",
+   "o": [
+    "\"Ben is a dynamic character who changes\"",
+    "\"Ben is a static character\"",
+    "\"Ben is the antagonist\"",
+    "\"Ben is a flat background figure, you know\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 0,
+   "u": "Verandering = dynamisch. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: van verlegen naar leider van de debatclub is een duidelijke verandering.",
+    "Koos je \"\"Ben is a static character\"\"? Dan denk je dat hij hetzelfde blijft. Hij verandert juist sterk, dus dynamisch.",
+    "Koos je \"\"Ben is the antagonist\"\"? Dan denk je dat hij de tegenstander is. Hij werkt niemand tegen, en wordt juist beter.",
+    "Koos je \"\"Ben is a flat background figure, you know\"\"? Dan denk je dat hij een achtergrondfiguur is. Het verhaal toont zijn ontwikkeling, en hij is dus belangrijk."
+   ],
+   "uh": "Wat zegt dit over Ben?",
+   "ctx": "Read the passage: \"Ben started the year as a shy boy. After the rescue he began to speak up in class, and by June he was leading the debate club.\" Your teacher asks what this tells you about Ben."
+  },
+  {
+   "v": "What does her behaviour show?",
+   "o": [
+    "\"she is calm and never gets angry\"",
+    "\"she does not care about others\"",
+    "\"she is angry but regrets it\"",
+    "\"she is afraid of the door\""
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 1,
+   "u": "Handelingen tonen karakter. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"she is calm and never gets angry\"\"? Dan denk je dat ze rustig is. De deur dichtgooien is geen rust, en toont boosheid.",
+    "Koos je \"\"she does not care about others\"\"? Dan denk je dat het haar niets uitmaakt. Het briefje toont spijt, dus ze geeft wel om anderen.",
+    "Klopt: de deur dichtgooien toont boosheid, het briefje spijt.",
+    "Koos je \"\"she is afraid of the door\"\"? Dan denk je dat ze bang is voor de deur. Ze gooit hem juist dicht, uit boosheid."
+   ],
+   "uh": "Wat toont haar gedrag?",
+   "ctx": "Read the passage: \"Lara slammed the door and refused to answer. Later, she left a small note on the kitchen table: 'Sorry.'\" Your teacher asks what her behaviour shows about her character."
+  },
+  {
+   "v": "Which impression is given?",
+   "o": [
+    "\"a cruel man\"",
+    "\"a hard exterior hides a kind side\"",
+    "\"a man without feelings, I think, I suppose\"",
+    "\"a man who loves rules\""
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 1,
+   "u": "Tegenstelling in karakter. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"a cruel man\"\"? Dan denk je dat hij wreed is. Hij voedt juist de katten, dus hij is zorgzaam.",
+    "Klopt: zijn harde gezicht staat tegenover zijn zorg voor zwerfkatten.",
+    "Koos je \"\"a man without feelings, I think, I suppose\"\"? Dan denk je dat hij geen gevoelens heeft. Hij zorgt voor de katten, dus wel.",
+    "Koos je \"\"a man who loves rules\"\"? Dan denk je dat hij regels liefheeft. Er staat niets over regels, maar over zorg."
+   ],
+   "uh": "Welke indruk wordt gegeven?",
+   "ctx": "Read the passage: \"He was a man with a hard face, but he fed every stray cat on the street every evening.\" Your teacher asks you which impression of his character the writer wants to give."
+  },
+  {
+   "v": "Which statement is a possible theme?",
+   "o": [
+    "\"boats are useful\"",
+    "\"boys can build things\"",
+    "\"escape is always the best choice, to be honest, you know\"",
+    "\"belonging and family loyalty matter more than escape\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 2,
+   "u": "Thema = boodschap. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"boats are useful\"\"? Dan denk je dat boten het thema zijn. Het is een voorwerp, en geen boodschap.",
+    "Koos je \"\"boys can build things\"\"? Dan denk je dat bouwen het thema is. Het is een handeling, en geen boodschap.",
+    "Koos je \"\"escape is always the best choice, to be honest, you know\"\"? Dan denk je dat vluchten het thema is. De jongen keert juist terug, dus het tegendeel.",
+    "Klopt: de jongen keert terug uit verbondenheid, dat is de kernboodschap."
+   ],
+   "uh": "Welke uitspraak is een mogelijk thema?",
+   "ctx": "Read the summary: \"A boy builds a boat to escape an unfair life, but he returns when he understands that his family needs him.\" Your teacher asks you which statement expresses a possible theme."
+  },
+  {
+   "v": "How do topic and theme differ?",
+   "o": [
+    "\"the topic is the subject, the theme is the message about it\"",
+    "\"the topic is the message, the theme is the subject, I suppose\"",
+    "\"they mean the same\"",
+    "\"the theme is always one word\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 2,
+   "u": "Onderwerp = wat, thema = boodschap. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: het onderwerp is waar het over gaat, het thema is wat het verhaal erover zegt.",
+    "Koos je \"\"the topic is the message, the theme is the subject, I suppose\"\"? Dan denk je dat ze omgekeerd zijn. Het onderwerp is waar het over gaat, en het thema de boodschap.",
+    "Koos je \"\"they mean the same\"\"? Dan denk je dat onderwerp en thema hetzelfde zijn. Het onderwerp is school, en het thema is de les.",
+    "Koos je \"\"the theme is always one word\"\"? Dan denk je dat een thema één woord is. Het is een boodschap, vaak een hele zin."
+   ],
+   "uh": "Wat is het verschil?",
+   "ctx": "Read the explanation: \"The story's topic is school; its theme is that fear grows when we do not talk about it.\" Your teacher asks how the topic and the theme differ."
+  },
+  {
+   "v": "What might the clock symbolise?",
+   "o": [
+    "\"the importance of exact time, you know\"",
+    "\"a shop that sells clocks\"",
+    "\"time standing still after a loss\"",
+    "\"a happy day\""
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 3,
+   "u": "Klok stopt = verlies. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"the importance of exact time, you know\"\"? Dan denk je dat de klok de nauwkeurigheid toont. Het gaat om stilstaan, en niet om precisie.",
+    "Koos je \"\"a shop that sells clocks\"\"? Dan denk je dat de klok een winkel toont. Er is geen winkel, maar een klok.",
+    "Klopt: de stilstaande klok staat voor de tijd die na zijn vertrek stopt.",
+    "Koos je \"\"a happy day\"\"? Dan denk je dat de klok een blije dag toont. Hij stopt bij zijn vertrek, en dat is verlies."
+   ],
+   "uh": "Wat symboliseert de klok?",
+   "ctx": "Read the sentence: \"The old clock stopped on the day he left, and nobody wound it again.\" Your teacher asks what the clock might symbolise."
+  },
+  {
+   "v": "What does the feather suggest?",
+   "o": [
+    "\"danger\"",
+    "\"peace or forgiveness\"",
+    "\"anger\"",
+    "\"a long journey, really\""
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 3,
+   "u": "Witte veer = vrede. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"danger\"\"? Dan denk je dat de veer gevaar toont. Er is geen bedreiging, maar een verzoening.",
+    "Klopt: de witte veer valt op het moment van vergeven en wijst op vrede.",
+    "Koos je \"\"anger\"\"? Dan denk je dat de veer boosheid toont. Ze besluit juist te vergeven, dus vrede.",
+    "Koos je \"\"a long journey, really\"\"? Dan denk je dat de veer een reis toont. Er is geen reis, maar een besluit."
+   ],
+   "uh": "Wat suggereert de veer?",
+   "ctx": "Read the sentence: \"A white feather lands on her hand just as she decides to forgive him.\" Your teacher asks what the feather suggests in this moment of the story."
+  },
+  {
+   "v": "Which quotation supports the claim best?",
+   "o": [
+    "\"'The wall was painted white.'\"",
+    "\"'The wall stood next to the house.', I think, I suppose\"",
+    "\"'She walked past the wall.'\"",
+    "\"'The wall rose higher each time they argued.'\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 4,
+   "u": "Koppel muur en ruzie. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"'The wall was painted white.'\"\"? Dan denk je dat de kleur de afstand bewijst. De kleur zegt niets over ruzie, en bewijst niets.",
+    "Koos je \"\"'The wall stood next to the house.', I think, I suppose\"\"? Dan denk je dat de plaats de afstand bewijst. Het is een beschrijving, en geeft geen verband.",
+    "Koos je \"\"'She walked past the wall.'\"\"? Dan denk je dat het lopen langs de muur bewijst. Het is een handeling, en geen verband met de ruzie.",
+    "Klopt: de muur groeit mee met de ruzies, dat koppelt hem aan de afstand."
+   ],
+   "uh": "Welk citaat ondersteunt de bewering?",
+   "ctx": "A student claims: \"The wall symbolises the distance between them.\" Your teacher asks which quotation from the text would best support this claim, as the student must back it up."
+  },
+  {
+   "v": "Which is argued better?",
+   "o": [
+    "\"A, because it gives a reason from the text\"",
+    "\"B, because it is shorter\"",
+    "\"B, because it uses I think, to be honest, you know\"",
+    "\"both are equally good\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 4,
+   "u": "Bewering + bewijs uit de tekst. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: A noemt een gebeurtenis uit het verhaal, de overstroming, als bewijs.",
+    "Koos je \"\"B, because it is shorter\"\"? Dan denk je dat korter beter is. B geeft geen reden, en is vaag.",
+    "Koos je \"\"B, because it uses I think, to be honest, you know\"\"? Dan denk je dat I think een argument is. Het is twijfel, en geen bewijs.",
+    "Koos je \"\"both are equally good\"\"? Dan denk je dat ze gelijk zijn. A geeft een reden en B niet, dus A is sterker."
+   ],
+   "uh": "Welke interpretatie is beter onderbouwd?",
+   "ctx": "Two student interpretations. A: \"The river symbolises change, because it floods when he leaves.\" B: \"The river symbolises something, I think.\" Your teacher asks which one is argued better."
+  }
+ ],
+ "oe": [
+  {
+   "bron": "Examenstijl",
+   "ctx": "Read this fragment: \"Jess always arrives early. She helps the teacher clean the board without being asked, and she shares her lunch with anyone who has forgotten theirs.\" Your teacher asks what this tells you about her character.",
+   "v": "Write two sentences that describe her character and refer to the text.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Een karaktereigenschap, zoals behulpzaam of vrijgevig (1p). Een verwijzing naar een handeling uit de tekst (1p). Het woord indirect of een uitleg van hoe je het weet (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Read this summary: \"At the start, Karim is angry with his father. After a long journey together, he understands why his father made difficult choices, and they hug at the end.\" Your teacher asks about the type of character and the theme.",
+   "v": "Write two sentences that name the type of character and a possible theme.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Een dynamisch personage genoemd (1p). Een mogelijk thema, zoals begrip tussen vader en zoon (1p). Een verwijzing naar de tekst (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "In a story, a red balloon floats away whenever the main character feels lonely, and the last page shows the balloon returning when she makes a friend. Your teacher asks you what the balloon might symbolise.",
+   "v": "Write two sentences that interpret the balloon with evidence.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Een mogelijke betekenis, zoals eenzaamheid of verbondenheid (1p). Bewijs uit de tekst (1p). Een duidelijke verwijzing naar het moment (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Your classmate says: \"The theme of this story is football.\" You disagree, because the story is about a team that learns to trust each other after a loss. You want to explain the difference between topic and theme.",
+   "v": "Write three sentences that explain the difference.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Football is het onderwerp (1p). Het thema is een boodschap, zoals vertrouwen (1p). Een duidelijke uitleg van het verschil (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "You want to write about an antagonist in a story you have read. The antagonist is a headteacher who forbids the pupils to hold a school party, and the pupils then organise it in secret.",
+   "v": "Write three sentences that describe the antagonist and how he or she affects the plot.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "De antagonist genoemd (1p). Zijn of haar verbod als conflict (1p). Het effect op de plot, zoals het geheime feest (1p)."
+  }
+ ]
+}
