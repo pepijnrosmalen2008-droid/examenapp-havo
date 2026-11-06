@@ -1370,6 +1370,40 @@ document.addEventListener('click', function (e) {
   }
 }, { passive: true });
 
+// ═══════ DIRECTE TIKFEEDBACK ═══════
+// Elke knop geeft meteen bij aanraken een indruk, nog vóór de klik afgehandeld wordt.
+// Via de Web Animations API op de losse eigenschap `scale`: botst niet met transform
+// of transition van de knop zelf. Kleine knoppen veren meer in dan grote kaarten.
+(function(){
+  if(!document.body||!document.body.animate)return;
+  const SEL='button,a[href],[onclick],[role="button"],label[for],summary';
+  let actief=null,t0=0;
+  const los=()=>{if(!actief)return;const el=actief,an=el._tikAn;actief=null;
+    const wacht=Math.max(0,90-(performance.now()-t0));
+    setTimeout(()=>{try{an&&an.cancel();el.animate([{scale:el._tikK},{scale:1.015,offset:.6},{scale:1}],{duration:170,easing:'ease-out'});}catch(e){}},wacht);};
+  document.addEventListener('pointerdown',e=>{
+    if(e.button>0)return;
+    const el=e.target.closest&&e.target.closest(SEL);
+    if(!el||el.disabled||el.getAttribute('aria-disabled')==='true'||el.closest('[data-geen-tik],canvas'))return;
+    try{if(matchMedia('(prefers-reduced-motion: reduce)').matches)return;}catch(x){}
+    const r=el.getBoundingClientRect(),m=Math.max(r.width,r.height);
+    el._tikK=m<120?.93:m<320?.965:.985;actief=el;t0=performance.now();
+    try{el._tikAn=el.animate([{scale:1},{scale:el._tikK}],{duration:70,easing:'ease-out',fill:'forwards'});}catch(x){}
+  },{passive:true,capture:true});
+  ['pointerup','pointercancel','dragstart'].forEach(t=>document.addEventListener(t,los,{passive:true,capture:true}));
+  document.addEventListener('pointermove',e=>{if(actief&&!actief.contains(document.elementFromPoint(e.clientX,e.clientY)))los();},{passive:true});
+})();
+
+// Spelen alvast klaarzetten: na het opstarten, als de telefoon niets te doen heeft,
+// halen we de Arcade-bestanden op (alleen downloaden, nog niet uitvoeren). Zo opent
+// de Arcade daarna meteen. Niet op een zuinige verbinding.
+(function(){
+  const c=navigator.connection;if(c&&(c.saveData||/2g/.test(c.effectiveType||'')))return;
+  const zet=()=>['/arcade2d.js','/arcade.js','/clash.js','/kingdom.js'].forEach(h=>{const l=document.createElement('link');l.rel='prefetch';l.as='script';l.href=h;document.head.appendChild(l);});
+  const later=()=>('requestIdleCallback' in window)?requestIdleCallback(zet,{timeout:8000}):setTimeout(zet,4000);
+  if(document.readyState==='complete')setTimeout(later,6000);else addEventListener('load',()=>setTimeout(later,6000),{once:true});
+})();
+
 // ═══════ ARCADE (lazy) ═══════
 // De minigames staan in arcade.js en laden pas als je de Arcade opent.
 function arcadeOpen(cb){
@@ -1377,10 +1411,11 @@ function arcadeOpen(cb){
   try{if(typeof trackEvent==='function')trackEvent('arcade_open',{});}catch(e){}
   if(window._arcLoaded&&typeof openArcade==='function'){openArcade();if(typeof cb==='function')setTimeout(cb,60);return;}
   if(window._arcLoading)return;window._arcLoading=true;
+  try{vonkLoading('Arcade laden…');}catch(e){}
   // Eerst de 2D-scènes (arcade2d.js), dan de games zelf (arcade.js).
   const laad=(src,ok)=>{const s=document.createElement('script');s.src=src;s.onload=ok;
-    s.onerror=()=>{window._arcLoading=false;try{showToast('De Arcade kon niet laden. Controleer je verbinding.');}catch(e){}};document.head.appendChild(s);};
-  laad('/arcade2d.js',()=>laad('/arcade.js',()=>{window._arcLoaded=true;window._arcLoading=false;try{openArcade();}catch(e){}if(typeof cb==='function')setTimeout(cb,120);}));
+    s.onerror=()=>{window._arcLoading=false;try{vonkLoadingHide();}catch(e){}try{showToast('De Arcade kon niet laden. Controleer je verbinding.');}catch(e){}};document.head.appendChild(s);};
+  laad('/arcade2d.js',()=>laad('/arcade.js',()=>{window._arcLoaded=true;window._arcLoading=false;try{vonkLoadingHide();}catch(e){}try{openArcade();}catch(e){}if(typeof cb==='function')setTimeout(cb,120);}));
 }
 
 // ═══════ KINGDOM (gedeeld deel: drempels, stand per vak, badge, lazy laden) ═══════
@@ -1421,8 +1456,9 @@ function kingdomCheck(){
 function kingdomOpen(){
   if(window._kdLoaded&&typeof openKingdom==='function'){openKingdom();return;}
   if(window._kdLoading)return;window._kdLoading=true;
+  try{vonkLoading('Je eiland laden…');}catch(e){}
   const s=document.createElement('script');s.src='/kingdom.js';
-  s.onload=()=>{window._kdLoaded=true;window._kdLoading=false;try{openKingdom();}catch(e){}};
-  s.onerror=()=>{window._kdLoading=false;try{showToast('Kingdom kon niet laden. Controleer je verbinding.');}catch(e){}};
+  s.onload=()=>{window._kdLoaded=true;window._kdLoading=false;try{vonkLoadingHide();}catch(e){}try{openKingdom();}catch(e){}};
+  s.onerror=()=>{window._kdLoading=false;try{vonkLoadingHide();}catch(e){}try{showToast('Kingdom kon niet laden. Controleer je verbinding.');}catch(e){}};
   document.head.appendChild(s);
 }

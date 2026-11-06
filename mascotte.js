@@ -459,8 +459,24 @@ function vonkReact(mood, text, opts) {
 }
 
 // ─── Laad-overlay: Vonk leest een boekje terwijl data laadt ───
-// Verschijnt pas na ~200ms zodat snelle (gecachete) loads nooit flitsen.
-var _vlTimer = null;
+// Verschijnt pas na ~200ms zodat snelle (gecachete) loads nooit flitsen. Duurt het
+// langer, dan komt er een weetje bij (wisselt elke paar seconden), en na 8 s een
+// eerlijke melding met een knop om het scherm weg te tikken. Tik op Vonk: hij reageert.
+var _vlTimer = null, _vlTips = null, _vlTraag = null;
+var VL_WEETJES = [
+  'Herhalen werkt het best net voordat je iets vergeet. Daarom komen oude vragen terug.',
+  'Van een fout leer je meer als je meteen leest waarom hij fout was.',
+  'Drie keer tien minuten oefenen werkt beter dan één lange avond.',
+  'Lees bij een examenvraag eerst de vraag en pas daarna de tekst.',
+  'Slapen zet de stof van vandaag vast in je geheugen.',
+  'Leg het hardop uit aan iemand anders. Waar je hapert, zit je gat.',
+  'Bij een rekenvraag: schrijf eerst op wat gegeven is en wat er gevraagd wordt.',
+  'Wat je in de Arcade beantwoordt, telt mee voor je beheersing.',
+  'Een kernwoord in de vraag (noem, leg uit, bereken) zegt hoeveel je moet schrijven.',
+  'Twijfel je tussen twee antwoorden? Zoek het woord dat het ene antwoord net fout maakt.',
+  'Je foutenboek is de snelste route naar een hoger cijfer.',
+  'Tik maar eens op Vonk.'
+];
 function vonkLoading(caption) {
   clearTimeout(_vlTimer);
   _vlTimer = setTimeout(function () {
@@ -470,14 +486,32 @@ function vonkLoading(caption) {
       el.setAttribute('role', 'status'); el.setAttribute('aria-live', 'polite');
       document.body.appendChild(el);
     }
-    el.innerHTML = '<div class="vl-card"><div class="vl-vonk">' + mascotSVG('lees', 120) + '</div>'
+    el.classList.remove('traag');
+    el.innerHTML = '<div class="vl-card"><button class="vl-vonk" type="button" aria-label="Vonk">' + mascotSVG('lees', 120) + '</button>'
       + '<div class="vl-cap">' + (caption || 'Even laden…') + '</div>'
-      + '<div class="vl-dots"><span></span><span></span><span></span></div></div>';
+      + '<div class="vl-balk" aria-hidden="true"><i></i></div>'
+      + '<div class="vl-tip" aria-live="off"></div>'
+      + '<div class="vl-traag"><span>Dit duurt langer dan normaal. Controleer je verbinding.</span><button type="button" class="vl-sluit">Sluiten</button></div></div>';
+    const v = el.querySelector('.vl-vonk');
+    v.onclick = function () {
+      const svg = v.querySelector('svg');
+      v.classList.remove('vl-hup'); void v.offsetWidth; v.classList.add('vl-hup');
+      try { if (typeof vonkEmote === 'function' && svg) vonkEmote(svg, ['blij', 'wow', 'giechel', 'knipoog'][Math.floor(Math.random() * 4)], 900); } catch (e) {}
+      try { if (typeof playSound === 'function') playSound('pop'); } catch (e) {}
+    };
+    el.querySelector('.vl-sluit').onclick = vonkLoadingHide;
     requestAnimationFrame(function () { el.classList.add('on'); });
+    // weetje na een seconde, daarna wisselen
+    const tip = el.querySelector('.vl-tip');
+    let i = Math.floor(Math.random() * VL_WEETJES.length);
+    const zet = function () { if (!tip.isConnected) return; tip.classList.remove('in'); setTimeout(function () { tip.innerHTML = '<small>Wist je dat</small>' + VL_WEETJES[i++ % VL_WEETJES.length]; tip.classList.add('in'); }, 160); };
+    clearTimeout(_vlTips); clearInterval(_vlTips);
+    _vlTips = setTimeout(function () { zet(); _vlTips = setInterval(zet, 3600); }, 900);
+    clearTimeout(_vlTraag); _vlTraag = setTimeout(function () { el.classList.add('traag'); }, 8000);
   }, 200);
 }
 function vonkLoadingHide() {
-  clearTimeout(_vlTimer);
+  clearTimeout(_vlTimer); clearTimeout(_vlTips); clearInterval(_vlTips); clearTimeout(_vlTraag);
   const el = document.getElementById('vonk-loading');
   if (el) { el.classList.remove('on'); setTimeout(function () { if (el && !el.classList.contains('on')) el.remove(); }, 260); }
 }

@@ -283,6 +283,7 @@ function renderArcade(){
 }
 // Twee grote werelden bovenaan: Clash en Kingdom.
 function arcWerelden(){
+  if(!ARC._pre){ARC._pre=1;try{['/clash.js','/kingdom.js'].forEach(h=>{const l=document.createElement('link');l.rel='prefetch';l.as='script';l.href=h;document.head.appendChild(l);});}catch(e){}}
   let bekers=0,kd=0,gebouwd=0;try{bekers=(arcStore().clash||{}).bekers||0;}catch(e){}
   try{kd=typeof kdBouwklaar==='function'?kdBouwklaar():0;Object.values((kdStaat().gebouwd)||{}).forEach(x=>gebouwd+=x);}catch(e){}
   return `<div class="arc-werelden">
@@ -302,17 +303,17 @@ function arcWerelden(){
 function clashOpen(){
   if(typeof openClash==='function'){openClash();return;}
   if(ARC._clLaadt)return;ARC._clLaadt=true;
-  arcStage('clash',`<div class="arc-laden" style="margin:auto"><span></span>Arena laden…</div>`);
+  try{vonkLoading('Arena laden…');}catch(e){}
   const s=document.createElement('script');s.src='/clash.js';
-  s.onload=()=>{ARC._clLaadt=false;try{openClash();}catch(e){arcClose();}};
-  s.onerror=()=>{ARC._clLaadt=false;arcClose();try{showToast('Clash kon niet laden. Controleer je verbinding.');}catch(e){}};
+  s.onload=()=>{ARC._clLaadt=false;try{vonkLoadingHide();}catch(e){}try{openClash();}catch(e){arcClose();}};
+  s.onerror=()=>{ARC._clLaadt=false;try{vonkLoadingHide();}catch(e){}try{showToast('Clash kon niet laden. Controleer je verbinding.');}catch(e){}};
   document.head.appendChild(s);
 }
 function arcStart(id,direct){
   const g=ARC_GAMES[id];if(!g||ARC.busy)return;
   arcStopAll();ARC.game=id;
   if(direct&&id!=='zwak'){if(g.voorbereid)g.voorbereid(()=>g.run());else g.run();return;}
-  if(g.voorbereid){arcStage(g.theme,`${arcTop('')}<div class="arc-laden"><span></span>Vragen laden…</div>`);g.voorbereid(()=>arcIntro(g));return;}
+  if(g.voorbereid){arcStage(g.theme,`${arcTop('')}`);try{vonkLoading('Vragen laden…');}catch(e){}g.voorbereid(()=>{try{vonkLoadingHide();}catch(e){}arcIntro(g);});return;}
   arcIntro(g);
 }
 // Algemene vraagkaart met vier knoppen (gebruikt door boss, risico, zwak).
@@ -927,7 +928,7 @@ function sortRun(){
 }
 function _sortId(x){return x.gen?null:'s_'+x.t;}
 function sortRonde(eerste){
-  const x=SORT.rondes[SORT.i];SORT.x=x;SORT.pos=0;SORT.straf=0;SORT.t0=0;
+  const x=SORT.rondes[SORT.i];SORT.x=x;SORT.pos=0;SORT.straf=0;SORT.t0=0;SORT.mis=0;
   const kaarten=arcShuffle(x.k.map((t,i)=>({t,i})));
   arcStage('sorteer',`${arcTop('Sorteer',`<span class="sort-klok" id="sort-klok">0,00 s</span>`)}
     <div class="sort-wrap">
@@ -936,7 +937,7 @@ function sortRonde(eerste){
       <div class="a3-host a3-sorteer" id="a3-sorteer" aria-hidden="true"></div>
       <ol class="sort-slots">${x.k.map((_,i)=>`<li data-i="${i}"><span>${i+1}</span></li>`).join('')}</ol>
       <div class="sort-deck">${kaarten.map(c=>`<button class="sort-card" data-i="${c.i}">${_arcEsc(c.t)}</button>`).join('')}</div>
-      <p class="sort-hint">Tik de kaarten in de goede volgorde. Een fout kost 1 seconde.</p>
+      <p class="sort-hint">Tik de kaarten in de goede volgorde. Een fout kost 1 seconde. Na drie keer mis licht de goede kaart op.</p>
     </div>`);
   document.querySelectorAll('.sort-card').forEach(b=>b.addEventListener('click',()=>sortTik(b)));
   arcA3('sorteer','a3-sorteer',x.k.length);
@@ -953,11 +954,13 @@ function sortTik(b){
     const vul=()=>{if(slot&&!slot.classList.contains('vol')){slot.classList.add('vol');slot.insertAdjacentHTML('beforeend',`<b>${_arcEsc(tekst)}</b>`);}};
     if(slot&&!arcLite())arcFly(van,{x:naar.x,y:naar.y},`<span class="sort-vlieg">${_arcEsc(tekst)}</span>`,{duur:300,boog:-30,eind:.9,klaar:vul});else vul();
     a3Haak('sorteer','zet',SORT.pos);
-    SORT.pos++;
+    SORT.pos++;SORT.mis=0;
     if(SORT.pos>=SORT.x.k.length)sortKlaar();
   }else{
     SORT.straf+=1000;SORT.fouten++;arcSnd('wrong');arcHap([30,20,30]);a3Haak('sorteer','fout');
     b.classList.remove('schud');void b.offsetWidth;b.classList.add('schud');
+    // Drie keer mis op dezelfde plek: de goede kaart licht even op, zodat je niet blijft gokken.
+    if(++SORT.mis>=3){const juist=document.querySelector(`.sort-card[data-i="${SORT.pos}"]`);if(juist){arcRestart(juist,'hint');arcLater(()=>juist.classList.remove('hint'),1400);}SORT.mis=0;}
   }
 }
 function sortKlaar(){
@@ -1101,5 +1104,15 @@ const ARC_GAMES={
     art:ARC_ART.val,recLabel:'Record',recFmt:v=>arcNf(v,0),voorbereid:valVoorbereid,run:valRun},
 };
 const ARC_VOLGORDE=['zwak','bom','boss','risico','sorteer','val'];
+// App naar de achtergrond (appje, telefoontje)? Dan staan de klokken van de spellen stil.
+document.addEventListener('visibilitychange',()=>{
+  if(document.hidden){ARC._weg=performance.now();return;}
+  if(!ARC._weg)return;const d=performance.now()-ARC._weg;ARC._weg=0;
+  const st=document.getElementById('arc-stage');if(!st||st.hidden)return;
+  if(BOM.einde)BOM.einde+=d;
+  if(BOSS.start){BOSS.start+=d;BOSS.qStart+=d;}
+  if(VAL.eind)VAL.eind+=d;
+  if(SORT.t0)SORT.t0+=d;
+});
 // Terug-knop van de browser/telefoon sluit eerst de game, niet de app.
 window.addEventListener('popstate',()=>{const st=document.getElementById('arc-stage');if(st&&!st.hidden)arcClose();});
