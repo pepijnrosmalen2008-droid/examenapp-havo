@@ -1,0 +1,682 @@
+{
+ "id": "E1",
+ "lo": "en.E.1",
+ "gs": 2,
+ "naam": "Je leeservaring beargumenteerd verwoorden",
+ "beschrijving": "Je leert in het Engels je leeservaring met een boek of gedicht te verwoorden met een duidelijke mening en argumenten, die je onderbouwt met verwijzingen en citaten, een samenvatting zonder spoilers, een vergelijking en een aanbeveling.",
+ "ceStatus": "SE",
+ "binas": "",
+ "val": "",
+ "onderwerpen": [
+  "Mening geven",
+  "Onderbouwen met de tekst",
+  "Samenvatten zonder spoilers",
+  "Vergelijken van werken",
+  "Afronden met een aanbeveling"
+ ],
+ "sam": "In een leesverslag geef je je leeservaring weer met een mening en een argument. Je onderbouwt die met een tekstverwijzing en een citaat. Een samenvatting staat in de tegenwoordige tijd en bevat geen spoiler. Bij een vergelijking noem je een overeenkomst met both en een contrast met whereas of unlike. Je rondt af met een korte beoordeling en een aanbeveling.",
+ "begrippen": [
+  {
+   "t": "Leeservaring",
+   "d": "Wat je van een boek of gedicht vindt en waarom."
+  },
+  {
+   "t": "Mening",
+   "d": "Je oordeel over een tekst."
+  },
+  {
+   "t": "Argument",
+   "d": "De reden waarom je iets vindt, vaak met because."
+  },
+  {
+   "t": "Tekstverwijzing",
+   "d": "Verwijzen naar een hoofdstuk of regel, zoals In chapter 4."
+  },
+  {
+   "t": "Citaat",
+   "d": "Een korte, letterlijke zin uit de tekst."
+  },
+  {
+   "t": "Samenvatting",
+   "d": "Kort vertellen wat er gebeurt, in de tegenwoordige tijd."
+  },
+  {
+   "t": "Spoiler",
+   "d": "Het einde verklappen aan wie het nog niet las."
+  },
+  {
+   "t": "Vergelijking",
+   "d": "Twee werken naast elkaar zetten."
+  },
+  {
+   "t": "Contrast",
+   "d": "Een tegenstelling, met whereas of unlike."
+  },
+  {
+   "t": "Overeenkomst",
+   "d": "Iets wat beide werken gemeen hebben, met both."
+  },
+  {
+   "t": "Aanbeveling",
+   "d": "Zeggen voor wie het boek geschikt is."
+  },
+  {
+   "t": "Leesverslag",
+   "d": "Een tekst over wat je las, met mening en argumenten."
+  }
+ ],
+ "sv": [
+  {
+   "v": "Which sentence gives an opinion about a book?",
+   "o": [
+    "\"The book has 300 pages.\"",
+    "\"I found the book exciting because the story kept surprising me.\"",
+    "\"The book was published last year, I think, I suppose, really.\"",
+    "\"The book is about a boy.\""
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 0,
+   "u": "Mening = oordeel met reden. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"The book has 300 pages.\"\"? Dan denk je dat een aantal pagina's een mening is. Het is een feit, dat je kunt tellen.",
+    "Klopt: I found the book exciting is een mening en because geeft de reden.",
+    "Koos je \"\"The book was published last year, I think, I suppose, really.\"\"? Dan denk je dat een jaartal een mening is. Het is een feit over het boek, en geen oordeel.",
+    "Koos je \"\"The book is about a boy.\"\"? Dan denk je dat een samenvatting een mening is. Het zegt waar het over gaat, en niet wat je ervan vindt."
+   ],
+   "uh": "Welke zin geeft een mening?"
+  },
+  {
+   "v": "Which phrase introduces your own opinion?",
+   "o": [
+    "\"The story takes place in London.\"",
+    "\"There are twelve chapters.\"",
+    "\"The main character is called Anna, to be honest.\"",
+    "\"In my view, the ending was disappointing.\""
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 0,
+   "u": "In my view = mening. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"The story takes place in London.\"\"? Dan denk je dat dit een mening inleidt. Het noemt de plaats, en dat is een feit.",
+    "Koos je \"\"There are twelve chapters.\"\"? Dan denk je dat dit een mening inleidt. Het is een telling, en geen oordeel.",
+    "Koos je \"\"The main character is called Anna, to be honest.\"\"? Dan denk je dat dit een mening inleidt. Het noemt een naam, en geen oordeel.",
+    "Klopt: in my view leidt een eigen mening in, zoals voor mijn part."
+   ],
+   "uh": "Welke zin leidt een mening in?"
+  },
+  {
+   "v": "Which sentence supports an opinion with an example from the text?",
+   "o": [
+    "\"The ending is sad; for example, in the last chapter the hero is left alone.\"",
+    "\"The ending is sad because I say so, I suppose, really, to be honest.\"",
+    "\"The ending is sad and sad and sad.\"",
+    "\"The ending is sad, everybody knows.\""
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 1,
+   "u": "Voorbeeld uit de tekst. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: for example met een gebeurtenis uit het laatste hoofdstuk ondersteunt de mening.",
+    "Koos je \"\"The ending is sad because I say so, I suppose, really, to be honest.\"\"? Dan denk je dat jouw woord een bewijs is. Het is geen voorbeeld uit de tekst, en overtuigt niet.",
+    "Koos je \"\"The ending is sad and sad and sad.\"\"? Dan denk je dat herhalen een voorbeeld is. Het herhaalt alleen, en geeft geen bewijs.",
+    "Koos je \"\"The ending is sad, everybody knows.\"\"? Dan denk je dat algemene instemming een bewijs is. Het is een bewering, zonder tekstvoorbeeld."
+   ],
+   "uh": "Welke zin ondersteunt met een voorbeeld?"
+  },
+  {
+   "v": "How do you refer to a specific part of the text?",
+   "o": [
+    "\"Somewhere the narrator describes something, you know.\"",
+    "\"The narrator is a narrator.\"",
+    "\"In chapter three, the narrator describes the storm.\"",
+    "\"I don't remember where.\""
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 1,
+   "u": "Verwijs naar hoofdstuk of regel. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"Somewhere the narrator describes something, you know.\"\"? Dan denk je dat vaag verwijzen genoeg is. De lezer kan het niet terugvinden, en het is te algemeen.",
+    "Koos je \"\"The narrator is a narrator.\"\"? Dan denk je dat dit een verwijzing is. Het zegt niets, en is een cirkelredenering.",
+    "Klopt: in chapter three noemt precies waar je het vindt.",
+    "Koos je \"\"I don't remember where.\"\"? Dan denk je dat eerlijk zijn volstaat. Het geeft geen plek, en ondersteunt niets."
+   ],
+   "uh": "Hoe verwijs je naar de tekst?"
+  },
+  {
+   "v": "Which tense do you normally use to summarise a story?",
+   "o": [
+    "\"the future tense: The hero will leave his village.\"",
+    "\"the present tense: The hero leaves his village.\"",
+    "\"the present perfect continuous: The hero has been leaving.\"",
+    "\"the past perfect: The hero had left his village.\""
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 2,
+   "u": "Samenvatting = tegenwoordige tijd. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"the future tense: The hero will leave his village.\"\"? Dan denk je dat de toekomst past. Het verhaal staat vast, en je vat samen wat er gebeurt.",
+    "Klopt: een samenvatting van een verhaal schrijf je meestal in de tegenwoordige tijd.",
+    "Koos je \"\"the present perfect continuous: The hero has been leaving.\"\"? Dan denk je dat deze vorm past. Het klinkt vreemd, en is niet gebruikelijk.",
+    "Koos je \"\"the past perfect: The hero had left his village.\"\"? Dan denk je dat de voltooide verleden tijd past. Het is te ver weg, voor een samenvatting."
+   ],
+   "uh": "Welke tijd gebruik je bij een samenvatting?"
+  },
+  {
+   "v": "Which sentence shows a contrast between two books?",
+   "o": [
+    "\"The first book is serious, because the second one is funny.\"",
+    "\"The first book is serious, for example the second one is funny.\"",
+    "\"The first book is serious, so the second one is funny.\"",
+    "\"The first book is serious, whereas the second one is funny.\""
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 3,
+   "u": "Whereas = contrast. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"The first book is serious, because the second one is funny.\"\"? Dan denk je dat een reden hetzelfde is als een verschil. Because zegt dat het eerste boek het tweede verklaart, en dat is hier onzin.",
+    "Koos je \"\"The first book is serious, for example the second one is funny.\"\"? Dan denk je dat een voorbeeld twee boeken kan afzetten tegen elkaar. For example noemt een geval, maar geen verschil.",
+    "Koos je \"\"The first book is serious, so the second one is funny.\"\"? Dan denk je dat een gevolgwoord een contrast maakt. So zegt dat het ene boek het andere veroorzaakt, en dat klopt niet.",
+    "Klopt: whereas zet de twee boeken tegenover elkaar."
+   ],
+   "uh": "Welke zin toont een tegenstelling?"
+  },
+  {
+   "v": "Which sentence is a recommendation?",
+   "o": [
+    "\"I would recommend this book to anyone who enjoys mysteries.\"",
+    "\"The book has ten chapters.\"",
+    "\"The book was written in English, to be honest, you know, I think.\"",
+    "\"I read it in March.\""
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 4,
+   "u": "Recommend = advies. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: I would recommend noemt voor wie het boek geschikt is.",
+    "Koos je \"\"The book has ten chapters.\"\"? Dan denk je dat dit een aanbeveling is. Het is een feit, en geen advies.",
+    "Koos je \"\"The book was written in English, to be honest, you know, I think.\"\"? Dan denk je dat dit een aanbeveling is. Het is een feit over de taal, en geen advies.",
+    "Koos je \"\"I read it in March.\"\"? Dan denk je dat dit een aanbeveling is. Het is een feit over jou, en geen advies."
+   ],
+   "uh": "Welke zin is een aanbeveling?"
+  },
+  {
+   "v": "Which statement is best?",
+   "o": [
+    "\"The Last Train is a novel.\"",
+    "\"I read The Last Train.\"",
+    "\"I really enjoyed The Last Train because the mystery kept me guessing until the end.\"",
+    "\"The Last Train is long, I think, I suppose, really, to be honest.\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 0,
+   "u": "Mening + reden. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"The Last Train is a novel.\"\"? Dan denk je dat het noemen van het genre een mening is. De zin zegt wat voor boek het is, maar niet wat je ervan vindt.",
+    "Koos je \"\"I read The Last Train.\"\"? Dan denk je dat het vertellen dat je las een mening is. Het is een handeling van jou, en geeft geen oordeel over het boek.",
+    "Klopt: de zin geeft een mening en een concrete reden.",
+    "Koos je \"\"The Last Train is long, I think, I suppose, really, to be honest.\"\"? Dan denk je dat een lengte een mening is. Long zegt iets over omvang, maar niets over het verhaal en de spanning."
+   ],
+   "uh": "Welke uitspraak is het best?",
+   "ctx": "Your teacher asks for your reaction to The Last Train, a novel you read for class. You liked it a lot because the mystery kept you guessing until the very last page."
+  },
+  {
+   "v": "Which sentence expresses this with a reason?",
+   "o": [
+    "\"The poem is a poem.\"",
+    "\"I did not enjoy the poem because its meaning was too vague for me.\"",
+    "\"The poem was bad, full stop, you know, I think, I suppose.\"",
+    "\"The poem has fourteen lines.\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 0,
+   "u": "Oordeel + because + reden. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"The poem is a poem.\"\"? Dan denk je dat dit een oordeel is. Het is een cirkelredenering, en zegt niets.",
+    "Klopt: de zin noemt het oordeel en de reden met because.",
+    "Koos je \"\"The poem was bad, full stop, you know, I think, I suppose.\"\"? Dan denk je dat stellig zijn overtuigt. Het geeft geen reden, dus het is geen argument.",
+    "Koos je \"\"The poem has fourteen lines.\"\"? Dan denk je dat een aantal regels een oordeel is. Het is een feit, en geen mening."
+   ],
+   "uh": "Welke zin geeft oordeel en reden?",
+   "ctx": "You did not enjoy a poem that your class read, because you found its meaning too vague and you could not follow the images. You want to say so in an honest, well-argued way."
+  },
+  {
+   "v": "Which sentence is best?",
+   "o": [
+    "\"He is brave because he is brave, really, to be honest, you know.\"",
+    "\"He is brave; he is a hero.\"",
+    "\"He is brave, I just know.\"",
+    "\"He is brave: in chapter 4, he enters a burning house to save his dog.\""
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 1,
+   "u": "Bewering + bewijs uit de tekst. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"He is brave because he is brave, really, to be honest, you know.\"\"? Dan denk je dat herhalen een bewijs is. Het is een cirkelredenering, en bewijst niets.",
+    "Koos je \"\"He is brave; he is a hero.\"\"? Dan denk je dat het woord hero een bewijs is. Het herhaalt het oordeel, zonder voorbeeld.",
+    "Koos je \"\"He is brave, I just know.\"\"? Dan denk je dat een gevoel een bewijs is. Het is geen tekstvoorbeeld, en overtuigt niet.",
+    "Klopt: de bewering krijgt direct een bewijs met hoofdstuk en gebeurtenis."
+   ],
+   "uh": "Welke zin is het best?",
+   "ctx": "You argue that the hero of a story is brave. In chapter 4 he enters a burning house to save his dog. You want to support your claim with this evidence in one clear sentence."
+  },
+  {
+   "v": "Which way of using the quotation is best?",
+   "o": [
+    "\"The narrator's loneliness is clear when he says: 'I had never felt so alone.'\"",
+    "\"The narrator is lonely.\"",
+    "\"The narrator says something about feelings.\"",
+    "\"I had never felt so alone, I had never felt so alone, I think, I suppose, really.\""
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 1,
+   "u": "Citaat inleiden en duiden. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: de zin leidt het citaat in en laat zien wat het bewijst.",
+    "Koos je \"\"The narrator is lonely.\"\"? Dan denk je dat een bewering genoeg is. Er is geen citaat, dus geen bewijs.",
+    "Koos je \"\"The narrator says something about feelings.\"\"? Dan denk je dat een vage zin volstaat. Het noemt geen citaat, en is te algemeen.",
+    "Koos je \"\"I had never felt so alone, I had never felt so alone, I think, I suppose, really.\"\"? Dan denk je dat herhalen van het citaat helpt. Het legt niet uit wat het bewijst, en is eentonig."
+   ],
+   "uh": "Hoe gebruik je het citaat?",
+   "ctx": "In your review you want to use a short quotation. The narrator says: \"I had never felt so alone.\" You want to show how this line supports your point that the narrator is lonely."
+  },
+  {
+   "v": "Which summary is best?",
+   "o": [
+    "\"In the end, the keeper finds his lost brother.\"",
+    "\"A lighthouse keeper found a letter and then he went, to be honest, you know, I think.\"",
+    "\"A lighthouse keeper finds a letter in a bottle and sets out to find the sender.\"",
+    "\"It is a book about a lighthouse, a nice one.\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 2,
+   "u": "Samenvatten zonder spoiler. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"In the end, the keeper finds his lost brother.\"\"? Dan denk je dat het einde erbij hoort. Dat is een spoiler, en neemt de lezer de spanning af.",
+    "Koos je \"\"A lighthouse keeper found a letter and then he went, to be honest, you know, I think.\"\"? Dan denk je dat een verleden tijd past. De samenvatting hoort in de tegenwoordige tijd, en is vaag.",
+    "Klopt: de samenvatting staat in de tegenwoordige tijd en verklapt het einde niet.",
+    "Koos je \"\"It is a book about a lighthouse, a nice one.\"\"? Dan denk je dat dit een samenvatting is. Er staat geen gebeurtenis in, alleen een mening."
+   ],
+   "uh": "Welke samenvatting is het best?",
+   "ctx": "You summarise the story The Lighthouse Keeper in two sentences for classmates who have not read it. In the book the keeper finds a letter in a bottle and, at the end, finds his lost brother."
+  },
+  {
+   "v": "Which sentence is correct?",
+   "o": [
+    "\"The keeper discovers a letter and decided to find the sender.\"",
+    "\"The keeper discovers a letter and decides to find the sender.\"",
+    "\"The keeper will discover a letter and decides to find the sender.\"",
+    "\"The keeper is discover a letter.\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 2,
+   "u": "Eén tijd in de samenvatting. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"The keeper discovers a letter and decided to find the sender.\"\"? Dan denk je dat je tijden mag mengen. Discovers en decided horen niet bij elkaar, en dat is een fout.",
+    "Klopt: beide werkwoorden staan in de tegenwoordige tijd, zoals gebruikelijk bij een samenvatting.",
+    "Koos je \"\"The keeper will discover a letter and decides to find the sender.\"\"? Dan denk je dat will en decides samen kunnen. De tijden zijn gemengd, en dat klopt niet.",
+    "Koos je \"\"The keeper is discover a letter.\"\"? Dan denk je dat is en discover samen kunnen. De zin is ongrammaticaal, en klopt niet."
+   ],
+   "uh": "Welke zin is correct?",
+   "ctx": "You continue your summary of The Lighthouse Keeper. You want to write the sentence about the letter in the correct tense and with correct grammar, as in a proper plot summary."
+  },
+  {
+   "v": "Which sentence is the best comparison?",
+   "o": [
+    "\"Because the first novel is serious, the second is a comedy.\"",
+    "\"For example, the first novel is serious and the second is a comedy, you know, I think.\"",
+    "\"The first novel is serious, so the second novel is serious too.\"",
+    "\"Whereas the first novel is a serious war story, the second is a light comedy.\""
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 3,
+   "u": "Whereas = contrast. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"Because the first novel is serious, the second is a comedy.\"\"? Dan denk je dat because een contrast geeft. Het geeft een reden, en die bestaat niet.",
+    "Koos je \"\"For example, the first novel is serious and the second is a comedy, you know, I think.\"\"? Dan denk je dat for example vergelijkt. Het leidt een voorbeeld in, en geeft geen contrast.",
+    "Koos je \"\"The first novel is serious, so the second novel is serious too.\"\"? Dan denk je dat het tweede boek ook serieus is. Het is juist een komedie, dus dat klopt niet.",
+    "Klopt: whereas zet de twee romans tegenover elkaar."
+   ],
+   "uh": "Welke vergelijking is het best?",
+   "ctx": "You compare two novels in your review. The first is a serious war story and the second is a light comedy, and you want to express this difference clearly in one sentence."
+  },
+  {
+   "v": "Which sentence states the similarity?",
+   "o": [
+    "\"Both novels feature a lonely main character.\"",
+    "\"Neither novel features a lonely character, really.\"",
+    "\"Only the first novel features one.\"",
+    "\"Novels have characters.\""
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 3,
+   "u": "Both = overeenkomst. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: both noemt een gemeenschappelijk kenmerk van de twee romans.",
+    "Koos je \"\"Neither novel features a lonely character, really.\"\"? Dan denk je dat neither een overeenkomst noemt. Neither ontkent juist het kenmerk, terwijl beide romans het hebben.",
+    "Koos je \"\"Only the first novel features one.\"\"? Dan denk je dat only een overeenkomst geeft. Only noemt één roman, en dat is geen gemeenschappelijk kenmerk.",
+    "Koos je \"\"Novels have characters.\"\"? Dan denk je dat een algemene opmerking over romans genoeg is. Novels have characters is altijd waar, en noemt de eenzaamheid niet."
+   ],
+   "uh": "Welke zin noemt de overeenkomst?",
+   "ctx": "Both novels you compare have a lonely main character, and you want to state this similarity in your review in one sentence, before you describe the differences."
+  },
+  {
+   "v": "Which closing sentence is best?",
+   "o": [
+    "\"That is all I have to say about it, I think, I suppose, really.\"",
+    "\"The end.\"",
+    "\"Overall, I would recommend this book to readers who like slow, thoughtful stories.\"",
+    "\"Bye.\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 4,
+   "u": "Eindoordeel en aanbeveling. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"That is all I have to say about it, I think, I suppose, really.\"\"? Dan denk je dat een neutrale afsluiting netjes is. That is all zegt niet wat je van het boek vindt, en geeft geen aanbeveling.",
+    "Koos je \"\"The end.\"\"? Dan denk je dat twee woorden een slot vormen. The end is een verhaalformule, en geen eindoordeel over het boek.",
+    "Klopt: de zin geeft een eindoordeel en een aanbeveling.",
+    "Koos je \"\"Bye.\"\"? Dan denk je dat een afscheidsgroet een slot is. Bye is spreektaal, en past niet bij een leesverslag."
+   ],
+   "uh": "Welke slotzin is het best?",
+   "ctx": "You end your book review for your teacher. You want a closing sentence that gives your final evaluation and tells the reader who might like the book, without introducing new points."
+  },
+  {
+   "v": "Which opening is best?",
+   "o": [
+    "\"I read a book.\"",
+    "\"The Last Train by Mara Voss is a gripping mystery that I enjoyed from start to finish.\"",
+    "\"It was a book that I read last week, to be honest, you know, I think.\"",
+    "\"Mystery books are long.\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 4,
+   "u": "Titel, auteur, mening. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"I read a book.\"\"? Dan denk je dat dit een opening is. Er staat geen titel of mening, en het is te vaag.",
+    "Klopt: titel, auteur, genre en mening staan er direct in.",
+    "Koos je \"\"It was a book that I read last week, to be honest, you know, I think.\"\"? Dan denk je dat dit genoeg is. Titel, auteur en mening ontbreken, dus de lezer weet niets.",
+    "Koos je \"\"Mystery books are long.\"\"? Dan denk je dat een algemene opmerking een opening is. Het gaat niet over jouw boek, en geeft geen mening."
+   ],
+   "uh": "Welke opening is het best?",
+   "ctx": "You write the first paragraph of a review for your teacher. You must give the title and the author, and say in one sentence what you think of the book, so that the reader knows your opinion at once."
+  },
+  {
+   "v": "What is the opinion and the reason?",
+   "o": [
+    "\"positive; the character changed, I suppose\"",
+    "\"neutral; no reason is given\"",
+    "\"positive; the ending was long\"",
+    "\"negative; the ending felt rushed\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 0,
+   "u": "Oordeel en reden herkennen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"positive; the character changed, I suppose\"\"? Dan denk je dat de schrijver positief is. Er staat did not like, dus het oordeel is negatief.",
+    "Koos je \"\"neutral; no reason is given\"\"? Dan denk je dat er geen oordeel is. De schrijver zegt duidelijk dat hij het niet leuk vond, met een reden.",
+    "Koos je \"\"positive; the ending was long\"\"? Dan denk je dat de lengte de reden is. Er staat rushed, dus het was te snel.",
+    "Klopt: I did not like geeft een negatieve mening en rushed is de reden."
+   ],
+   "uh": "Wat is de mening en de reden?",
+   "ctx": "Read the review: \"I did not like the ending. It felt rushed, and the main character changed too quickly.\" Your teacher asks you to describe the writer's opinion and the reason that is given."
+  },
+  {
+   "v": "Which sentence is an opinion?",
+   "o": [
+    "\"B, because it judges the book as moving\"",
+    "\"A, because it describes the plot\"",
+    "\"both, because they mention the girl, you know\"",
+    "\"neither, because opinions use I\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 0,
+   "u": "Oordeelswoord = mening. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: moving is een oordeel, terwijl A alleen vertelt waar het boek over gaat.",
+    "Koos je \"\"A, because it describes the plot\"\"? Dan denk je dat A een mening is. A vat alleen de inhoud samen, en oordeelt niet.",
+    "Koos je \"\"both, because they mention the girl, you know\"\"? Dan denk je dat het noemen van het meisje een mening is. Beide noemen haar, maar alleen B oordeelt.",
+    "Koos je \"\"neither, because opinions use I\"\"? Dan denk je dat een mening altijd I bevat. Moving is ook zonder I een oordeel, dus B is een mening."
+   ],
+   "uh": "Welke zin is een mening?",
+   "ctx": "Read two sentences from a review. A: \"The book is about a girl who moves to a new town.\" B: \"The book is moving because it shows how lonely the girl feels.\" Your teacher asks which sentence gives an opinion."
+  },
+  {
+   "v": "What does the quotation do?",
+   "o": [
+    "\"summarises the plot\"",
+    "\"gives the writer's opinion about the author, really\"",
+    "\"supports the claim with evidence from the text\"",
+    "\"introduces a new character\""
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 1,
+   "u": "Citaat = bewijs. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"summarises the plot\"\"? Dan denk je dat het citaat de plot samenvat. Het beschrijft de omgeving, en niet het verhaal.",
+    "Koos je \"\"gives the writer's opinion about the author, really\"\"? Dan denk je dat het citaat een oordeel geeft. Het is een tekstvoorbeeld, en geen mening.",
+    "Klopt: het citaat uit hoofdstuk twee bewijst dat de omgeving dreigend voelt.",
+    "Koos je \"\"introduces a new character\"\"? Dan denk je dat het citaat een personage opvoert. Het gaat over bomen, en niet over een persoon."
+   ],
+   "uh": "Wat doet het citaat?",
+   "ctx": "Read the sentence: \"The author makes the setting feel threatening. In chapter two, 'the trees leaned over the path like silent guards'.\" Your teacher asks you what the quotation does."
+  },
+  {
+   "v": "What is weak?",
+   "o": [
+    "\"it is written in the past tense, I think, I suppose\"",
+    "\"no example or quotation supports the claim\"",
+    "\"it is too formal\"",
+    "\"it has too many examples\""
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 1,
+   "u": "Bewering zonder bewijs. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"it is written in the past tense, I think, I suppose\"\"? Dan denk je dat de tijd het probleem is. De zin is in de tegenwoordige tijd, en dat is niet het probleem.",
+    "Klopt: er staat geen voorbeeld of citaat dat bewijst dat de held egoïstisch is.",
+    "Koos je \"\"it is too formal\"\"? Dan denk je dat de zin te formeel is. De zin is eenvoudig, en het probleem is het gebrek aan bewijs.",
+    "Koos je \"\"it has too many examples\"\"? Dan denk je dat er te veel voorbeelden zijn. Er is geen enkel voorbeeld, en dat is het probleem."
+   ],
+   "uh": "Wat is zwak aan de bewering?",
+   "ctx": "Read the claim in a student review: \"The hero is selfish. He never helps anyone.\" Your teacher says that the claim is not convincing yet and asks you to say what is weak about it."
+  },
+  {
+   "v": "What is wrong?",
+   "o": [
+    "\"it is in the future tense, to be honest\"",
+    "\"it is too short\"",
+    "\"it has no verb\"",
+    "\"it gives away the ending (a spoiler)\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 2,
+   "u": "Geen spoilers. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"it is in the future tense, to be honest\"\"? Dan denk je dat de tijd het probleem is. De zin staat in de tegenwoordige tijd, en dat is gebruikelijk.",
+    "Koos je \"\"it is too short\"\"? Dan denk je dat de lengte het probleem is. Het gaat om de inhoud, en niet om de lengte.",
+    "Koos je \"\"it has no verb\"\"? Dan denk je dat het werkwoord ontbreekt. Turns out is een werkwoord, dus dat klopt niet.",
+    "Klopt: het verklapt de clou, waardoor de lezers de spanning verliezen."
+   ],
+   "uh": "Wat is er mis met deze zin?",
+   "ctx": "Read the sentence from a review that will be read by classmates who have not read the book: \"In the end the detective turns out to be the thief.\" Your teacher asks what is wrong with it."
+  },
+  {
+   "v": "Which tense is used, and why?",
+   "o": [
+    "\"present tense, the usual tense for summarising a story\"",
+    "\"past tense, because the story is old\"",
+    "\"future tense, because the boy will find it, I suppose, really\"",
+    "\"any tense, because there are no rules\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 2,
+   "u": "Samenvatting = tegenwoordige tijd. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: follows en finds staan in de tegenwoordige tijd, de gebruikelijke tijd voor een samenvatting.",
+    "Koos je \"\"past tense, because the story is old\"\"? Dan denk je dat een oud verhaal de verleden tijd vraagt. Een samenvatting staat in de tegenwoordige tijd, ook bij oude verhalen.",
+    "Koos je \"\"future tense, because the boy will find it, I suppose, really\"\"? Dan denk je dat de toekomst past. De werkwoorden staan niet in de toekomende tijd, maar in de tegenwoordige.",
+    "Koos je \"\"any tense, because there are no rules\"\"? Dan denk je dat er geen regel is. Er is wel een afspraak, namelijk de tegenwoordige tijd."
+   ],
+   "uh": "Welke tijd wordt gebruikt?",
+   "ctx": "Read the summary: \"The story follows a boy who finds a map. He follows it to an island.\" Your teacher asks you to say in which tense it is written and why."
+  },
+  {
+   "v": "How do the poems differ?",
+   "o": [
+    "\"the first is bitter and the second is hopeful, you know\"",
+    "\"they differ in topic\"",
+    "\"the first is hopeful and the second is bitter\"",
+    "\"they do not differ\""
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 3,
+   "u": "Whereas = verschil in toon. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"the first is bitter and the second is hopeful, you know\"\"? Dan denk je dat de volgorde omgekeerd is. De tekst zegt het tegenovergestelde, dus dat klopt niet.",
+    "Koos je \"\"they differ in topic\"\"? Dan denk je dat het onderwerp verschilt. Both deal with loss, dus het onderwerp is gelijk.",
+    "Klopt: whereas zet hopeful en bitter tegenover elkaar.",
+    "Koos je \"\"they do not differ\"\"? Dan denk je dat er geen verschil is. However en whereas tonen juist een verschil, in de toon."
+   ],
+   "uh": "Hoe verschillen de gedichten?",
+   "ctx": "Read the sentences: \"Both poems deal with loss. However, the first is hopeful, whereas the second is bitter.\" Your teacher asks you how the two poems differ."
+  },
+  {
+   "v": "What does 'Unlike the novel' signal?",
+   "o": [
+    "\"a similarity, really, to be honest, you know\"",
+    "\"a difference between the film and the novel\"",
+    "\"a conclusion\"",
+    "\"an example\""
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 3,
+   "u": "Unlike = verschil. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"a similarity, really, to be honest, you know\"\"? Dan denk je dat unlike een overeenkomst noemt. Dat doet like, en unlike juist het tegenovergestelde.",
+    "Klopt: unlike geeft aan dat de film op dit punt anders is dan de roman.",
+    "Koos je \"\"a conclusion\"\"? Dan denk je dat unlike afsluit. Er volgt nog een zin, en het is een vergelijking.",
+    "Koos je \"\"an example\"\"? Dan denk je dat unlike een voorbeeld inleidt. Het noemt een verschil, en geen voorbeeld."
+   ],
+   "uh": "Wat signaleert unlike?",
+   "ctx": "Read the sentences: \"Like the novel, the film shows the hero's fear. Unlike the novel, it ends happily.\" Your teacher asks you what the phrase 'Unlike the novel' signals."
+  },
+  {
+   "v": "Which two things does the conclusion contain?",
+   "o": [
+    "\"a new plot point and a question, I think, I suppose\"",
+    "\"a quotation and a title\"",
+    "\"a summary of every chapter\"",
+    "\"a short evaluation and a recommendation\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 4,
+   "u": "Slot = oordeel + aanbeveling. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"a new plot point and a question, I think, I suppose\"\"? Dan denk je dat er een nieuw plotpunt in staat. Er staat geen plot, en geen vraag.",
+    "Koos je \"\"a quotation and a title\"\"? Dan denk je dat er een citaat en een titel staan. Beide ontbreken, in dit slot.",
+    "Koos je \"\"a summary of every chapter\"\"? Dan denk je dat het slot elk hoofdstuk samenvat. Het is juist kort, en beoordeelt het boek.",
+    "Klopt: slow but rewarding is een korte beoordeling en I would recommend een aanbeveling."
+   ],
+   "uh": "Wat bevat het slot?",
+   "ctx": "Read the closing of a review: \"To sum up, the novel is slow but rewarding. I would recommend it to patient readers.\" Your teacher asks which two things the conclusion contains."
+  },
+  {
+   "v": "Where does the recommendation usually go?",
+   "o": [
+    "\"in the conclusion\"",
+    "\"in the title\"",
+    "\"in the summary\"",
+    "\"in the quotation, to be honest\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 4,
+   "u": "Aanbeveling in het slot. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: de aanbeveling hoort in het slot, na oordeel en vergelijking.",
+    "Koos je \"\"in the title\"\"? Dan denk je dat de titel de aanbeveling bevat. Een titel is kort, en geeft geen advies.",
+    "Koos je \"\"in the summary\"\"? Dan denk je dat de samenvatting adviseert. Die geeft alleen feiten, en geen mening.",
+    "Koos je \"\"in the quotation, to be honest\"\"? Dan denk je dat een citaat een aanbeveling is. Het is een bewijs uit de tekst, en geen advies."
+   ],
+   "uh": "Waar staat de aanbeveling?",
+   "ctx": "Read the outline of a review: \"Introduction; Summary; Opinion with examples; Comparison; Conclusion.\" Your teacher asks in which part a recommendation normally goes."
+  }
+ ],
+ "oe": [
+  {
+   "bron": "Examenstijl",
+   "ctx": "You have read a novel called The Silent Garden for your English class. It is about a girl who finds a hidden garden. You enjoyed it because the descriptions were beautiful, but you found the ending a little rushed.",
+   "v": "Write four sentences in English that give your opinion about the novel with reasons.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Een duidelijke algemene mening (1p). Een reden voor het positieve punt (1p). Een reden voor het kritiekpunt (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "For your reading file you must support the claim that the main character of a story is lonely. In chapter 2 she eats her lunch alone every day and in chapter 5 she says, \"Nobody ever asks me anything.\"",
+   "v": "Write two sentences that support the claim with evidence from the text.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Een duidelijke bewering (1p). Een verwijzing naar een hoofdstuk (1p). Een citaat of voorbeeld uit de tekst (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "You must summarise the plot of a novel in three sentences for classmates who have not read it. In the book, a boy finds a map, follows it to an island and, at the end, learns that the treasure was his grandfather's diary.",
+   "v": "Write the summary in English without giving away the ending.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Tegenwoordige tijd (1p). Een duidelijke beschrijving van het begin en de reis (1p). Het einde wordt niet verklapt (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "You read two poems about autumn. The first is sad and slow, the second is bright and playful. Both describe falling leaves and cool winds. You must compare them in your reading file.",
+   "v": "Write two sentences: one with both and one with whereas.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Een zin met both over een overeenkomst (1p). Een zin met whereas over een verschil (1p). Een correcte formulering (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "You have to end a review of a novel you liked but found slow. You want to give your final evaluation and recommend the book to a specific group of readers.",
+   "v": "Write the concluding paragraph in English.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Een samenvattende zin zoals to sum up (1p). Een eindoordeel (1p). Een aanbeveling voor een groep lezers (1p)."
+  }
+ ]
+}
