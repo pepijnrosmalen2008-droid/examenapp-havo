@@ -1,0 +1,682 @@
+{
+ "id": "E4",
+ "lo": "en.E.4",
+ "gs": 2,
+ "naam": "Plot, conflict en opbouw van een verhaal",
+ "beschrijving": "Je leert in het Engels de plot van een verhaal te beschrijven met exposition, opbouw, climax en afloop, het soort conflict te herkennen, de setting en een flashback te benoemen en technieken voor spanning zoals een cliffhanger en een plottwist te herkennen.",
+ "ceStatus": "SE",
+ "binas": "",
+ "val": "",
+ "onderwerpen": [
+  "Opbouw van een verhaal",
+  "Conflict",
+  "Setting en tijd",
+  "Spanning en keerpunt",
+  "Plot samenvatten"
+ ],
+ "sam": "De plot loopt van exposition via opbouw naar de climax en een afloop. Een conflict is innerlijk of extern. De setting is tijd en plaats en een flashback gaat terug naar het verleden. Een cliffhanger, een plottwist en foreshadowing houden de spanning vast.",
+ "begrippen": [
+  {
+   "t": "Plot",
+   "d": "De volgorde van gebeurtenissen in een verhaal."
+  },
+  {
+   "t": "Exposition",
+   "d": "Het begin waar personages en plaats worden voorgesteld."
+  },
+  {
+   "t": "Opbouw",
+   "d": "Het deel waarin de spanning toeneemt (rising action)."
+  },
+  {
+   "t": "Climax",
+   "d": "Het hoogtepunt met de grootste spanning."
+  },
+  {
+   "t": "Afloop",
+   "d": "Het slot waarin het conflict is opgelost."
+  },
+  {
+   "t": "Conflict",
+   "d": "Het probleem of de strijd in het verhaal."
+  },
+  {
+   "t": "Innerlijk conflict",
+   "d": "Een strijd in het hoofd van een personage."
+  },
+  {
+   "t": "Extern conflict",
+   "d": "Een strijd met een ander personage of met de natuur."
+  },
+  {
+   "t": "Setting",
+   "d": "Tijd en plaats van het verhaal."
+  },
+  {
+   "t": "Flashback",
+   "d": "Een terugblik naar het verleden."
+  },
+  {
+   "t": "Cliffhanger",
+   "d": "Een open einde dat spanning geeft."
+  },
+  {
+   "t": "Plottwist",
+   "d": "Een onverwachte onthulling die alles verandert."
+  }
+ ],
+ "sv": [
+  {
+   "v": "What is the exposition of a story?",
+   "o": [
+    "\"the most exciting moment, I think, I suppose, really\"",
+    "\"the beginning, where characters and setting are introduced\"",
+    "\"the end of the story\"",
+    "\"the moment of conflict\""
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 0,
+   "u": "Exposition = begin. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"the most exciting moment, I think, I suppose, really\"\"? Dan denk je dat de exposition het spannendste moment is. Dat is de climax, en komt later.",
+    "Klopt: in de inleiding maak je kennis met personages en plaats van handeling.",
+    "Koos je \"\"the end of the story\"\"? Dan denk je dat de exposition het einde is. Dat is de afloop, en komt aan het eind.",
+    "Koos je \"\"the moment of conflict\"\"? Dan denk je dat de exposition het conflict is. Het conflict ontstaat na de inleiding, in het middendeel."
+   ],
+   "uh": "Wat is de exposition?"
+  },
+  {
+   "v": "What is the climax of a story?",
+   "o": [
+    "\"the introduction of characters, to be honest\"",
+    "\"the last sentence\"",
+    "\"a description of the setting\"",
+    "\"the most intense moment of the story\""
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 0,
+   "u": "Climax = hoogtepunt. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"the introduction of characters, to be honest\"\"? Dan denk je dat de climax het begin is. Dat is de exposition, en komt eerder.",
+    "Koos je \"\"the last sentence\"\"? Dan denk je dat de climax de laatste zin is. De climax staat voor het slot, en niet in de laatste zin.",
+    "Koos je \"\"a description of the setting\"\"? Dan denk je dat de climax een beschrijving is. De climax is een gebeurtenis, en geen beschrijving.",
+    "Klopt: de climax is het hoogtepunt, waar de spanning het grootst is."
+   ],
+   "uh": "Wat is de climax?"
+  },
+  {
+   "v": "What is an internal conflict?",
+   "o": [
+    "\"a struggle inside a character\"",
+    "\"a fight between two characters\"",
+    "\"a fight with nature\"",
+    "\"a conflict between two countries\""
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 1,
+   "u": "Innerlijk = in het personage. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: een innerlijk conflict speelt zich af in het hoofd van het personage.",
+    "Koos je \"\"a fight between two characters\"\"? Dan denk je dat een ruzie een innerlijk conflict is. Dat is een extern conflict, tussen twee mensen.",
+    "Koos je \"\"a fight with nature\"\"? Dan denk je dat een storm een innerlijk conflict is. Dat is een extern conflict, met de natuur.",
+    "Koos je \"\"a conflict between two countries\"\"? Dan denk je dat een oorlog innerlijk is. Het is extern, tussen groepen."
+   ],
+   "uh": "Wat is een innerlijk conflict?"
+  },
+  {
+   "v": "Which sentence describes an external conflict?",
+   "o": [
+    "\"A girl cannot decide whether to tell the truth.\"",
+    "\"A boy feels guilty about a lie.\"",
+    "\"A sailor fights a storm at sea.\"",
+    "\"A woman doubts herself.\""
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 1,
+   "u": "Extern = buiten het personage. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"A girl cannot decide whether to tell the truth.\"\"? Dan denk je dat een keuze extern is. De twijfel zit in haar, dus innerlijk.",
+    "Koos je \"\"A boy feels guilty about a lie.\"\"? Dan denk je dat schuld een extern conflict is. Het gevoel zit in hem, dus innerlijk.",
+    "Klopt: de matroos vecht tegen de storm, een conflict met iets buiten hemzelf.",
+    "Koos je \"\"A woman doubts herself.\"\"? Dan denk je dat twijfel extern is. Het gaat om zichzelf, dus innerlijk."
+   ],
+   "uh": "Welke zin is een extern conflict?"
+  },
+  {
+   "v": "What is the setting of a story?",
+   "o": [
+    "\"the main character's name, really\"",
+    "\"the time and place of the story\"",
+    "\"the moral of the story\"",
+    "\"the narrator's voice\""
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 2,
+   "u": "Setting = tijd en plaats. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"the main character's name, really\"\"? Dan denk je dat de setting een naam is. Een naam hoort bij een personage, en niet bij de plaats.",
+    "Klopt: de setting is waar en wanneer het verhaal zich afspeelt.",
+    "Koos je \"\"the moral of the story\"\"? Dan denk je dat de setting de les is. De les is het thema, en geen plaats of tijd.",
+    "Koos je \"\"the narrator's voice\"\"? Dan denk je dat de setting de stem is. De stem is het perspectief, en geen plaats of tijd."
+   ],
+   "uh": "Wat is de setting?"
+  },
+  {
+   "v": "What is a cliffhanger?",
+   "o": [
+    "\"a happy ending\"",
+    "\"a long description, I think, I suppose, really\"",
+    "\"a flashback\"",
+    "\"an ending that leaves the outcome open and creates suspense\""
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 3,
+   "u": "Cliffhanger = open einde. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"a happy ending\"\"? Dan denk je dat een cliffhanger een goed einde is. Hij laat het open, en geeft geen afloop.",
+    "Koos je \"\"a long description, I think, I suppose, really\"\"? Dan denk je dat een cliffhanger een beschrijving is. Het is een afsluiting, en geen beschrijving.",
+    "Koos je \"\"a flashback\"\"? Dan denk je dat een cliffhanger een terugblik is. Een terugblik gaat naar het verleden, en een cliffhanger naar het open einde.",
+    "Klopt: een cliffhanger laat de afloop open, zodat de lezer wil weten wat er gebeurt."
+   ],
+   "uh": "Wat is een cliffhanger?"
+  },
+  {
+   "v": "What is the resolution of a story?",
+   "o": [
+    "\"the part where the conflict is solved or ends\"",
+    "\"the first scene\"",
+    "\"the moment of greatest tension, to be honest, you know\"",
+    "\"a new problem that begins\""
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 4,
+   "u": "Resolution = afloop. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: de afloop is waar het conflict wordt opgelost of eindigt.",
+    "Koos je \"\"the first scene\"\"? Dan denk je dat de afloop de eerste scène is. Dat is de inleiding, en komt aan het begin.",
+    "Koos je \"\"the moment of greatest tension, to be honest, you know\"\"? Dan denk je dat de afloop het spannendste moment is. Dat is de climax, en komt eerder.",
+    "Koos je \"\"a new problem that begins\"\"? Dan denk je dat de afloop een nieuw probleem is. De afloop lost het probleem op, en begint geen nieuw."
+   ],
+   "uh": "Wat is de resolution?"
+  },
+  {
+   "v": "Which event is the climax?",
+   "o": [
+    "\"(1) a girl moves to a new town\"",
+    "\"(2) she struggles to make friends, I suppose, really, to be honest\"",
+    "\"(3) she forgets her lines in front of the whole hall\"",
+    "\"(5) she has a group of friends\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 0,
+   "u": "Climax = hoogste spanning. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"(1) a girl moves to a new town\"\"? Dan denk je dat het begin de climax is. Dat is de inleiding, en komt eerst.",
+    "Koos je \"\"(2) she struggles to make friends, I suppose, really, to be honest\"\"? Dan denk je dat het moeilijk hebben de climax is. Dat bouwt spanning op, maar is nog niet het hoogtepunt.",
+    "Klopt: het stille moment voor de hele zaal is het hoogtepunt, waar de spanning het grootst is.",
+    "Koos je \"\"(5) she has a group of friends\"\"? Dan denk je dat het slot de climax is. Dat is de afloop, en niet het hoogtepunt."
+   ],
+   "uh": "Welke gebeurtenis is de climax?",
+   "ctx": "Read the outline: (1) A girl moves to a new town. (2) She struggles to make friends. (3) On the day of the school play she forgets her lines and the whole hall goes silent. (4) She improvises a funny speech and everybody laughs. (5) Soon she has a group of friends."
+  },
+  {
+   "v": "Which event is the resolution?",
+   "o": [
+    "\"(1) a girl moves to a new town\"",
+    "\"(5) soon she has a group of friends\"",
+    "\"(3) she forgets her lines\"",
+    "\"(2) she struggles to make friends, you know\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 0,
+   "u": "Afloop = probleem opgelost. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"(1) a girl moves to a new town\"\"? Dan denk je dat het begin de afloop is. Dat is de inleiding, en niet het slot.",
+    "Klopt: het probleem, geen vrienden hebben, is opgelost aan het eind.",
+    "Koos je \"\"(3) she forgets her lines\"\"? Dan denk je dat het stille moment de afloop is. Dat is de climax, en niet het slot.",
+    "Koos je \"\"(2) she struggles to make friends, you know\"\"? Dan denk je dat het probleem de afloop is. Het is het conflict, en niet de oplossing."
+   ],
+   "uh": "Welke gebeurtenis is de afloop?",
+   "ctx": "Read the outline: (1) A girl moves to a new town. (2) She struggles to make friends. (3) On the day of the school play she forgets her lines and the whole hall goes silent. (4) She improvises a funny speech and everybody laughs. (5) Soon she has a group of friends."
+  },
+  {
+   "v": "What kind of conflict is this?",
+   "o": [
+    "\"an external conflict with a storm, really, to be honest, you know\"",
+    "\"a conflict between two nations\"",
+    "\"no conflict at all\"",
+    "\"an internal conflict: Marc struggles with a moral choice\""
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 1,
+   "u": "Moreel dilemma = innerlijk conflict. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"an external conflict with a storm, really, to be honest, you know\"\"? Dan denk je dat het om een storm gaat. Er is geen storm, maar een keuze.",
+    "Koos je \"\"a conflict between two nations\"\"? Dan denk je dat het om landen gaat. Het gaat om één jongen, en zijn geweten.",
+    "Koos je \"\"no conflict at all\"\"? Dan denk je dat er geen conflict is. Marc kan niet slapen, dus er is wel een.",
+    "Klopt: de strijd zit in Marc zelf, tussen loyaliteit en eerlijkheid."
+   ],
+   "uh": "Welk soort conflict is dit?",
+   "ctx": "Read the passage: \"Marc must decide whether to tell his teacher that his best friend cheated on the exam. He cannot sleep, and every time he picks up the phone, he puts it down again.\""
+  },
+  {
+   "v": "What kind of conflict is this?",
+   "o": [
+    "\"an external conflict between two characters\"",
+    "\"an internal conflict within Rita, I think, I suppose\"",
+    "\"a conflict with nature\"",
+    "\"a conflict with society\""
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 1,
+   "u": "Twee personen = extern. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: twee personen botsen over een kamer, dat is een extern conflict.",
+    "Koos je \"\"an internal conflict within Rita, I think, I suppose\"\"? Dan denk je dat het alleen in Rita zit. Er zijn twee personen, dus het is extern.",
+    "Koos je \"\"a conflict with nature\"\"? Dan denk je dat de natuur meespeelt. Er is geen natuur, maar een ruzie.",
+    "Koos je \"\"a conflict with society\"\"? Dan denk je dat de maatschappij meespeelt. Het gaat om twee mensen, en een kamer."
+   ],
+   "uh": "Welk soort conflict is dit?",
+   "ctx": "Read the passage: \"Rita and her brother argue about who gets the last room in the house. Each of them refuses to give in, and the argument grows louder.\""
+  },
+  {
+   "v": "Which words describe the setting?",
+   "o": [
+    "\"the character's anger, to be honest, you know\"",
+    "\"the story's moral\"",
+    "\"a small fishing village in the 1920s\"",
+    "\"the narrator's name\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 2,
+   "u": "Plaats en tijd = setting. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"the character's anger, to be honest, you know\"\"? Dan denk je dat een gevoel de setting is. Het is een emotie, en geen plaats.",
+    "Koos je \"\"the story's moral\"\"? Dan denk je dat de les de setting is. Dat is het thema, en geen plaats.",
+    "Klopt: village noemt de plaats en the 1920s de tijd, samen de setting.",
+    "Koos je \"\"the narrator's name\"\"? Dan denk je dat de naam de setting is. Het is een naam, en geen plaats."
+   ],
+   "uh": "Welke woorden beschrijven de setting?",
+   "ctx": "Read the first line of a story: \"The story starts in a small fishing village in the 1920s.\" Your teacher asks you which words describe the setting."
+  },
+  {
+   "v": "Which technique is used?",
+   "o": [
+    "\"a cliffhanger\"",
+    "\"a flashback\"",
+    "\"a climax\"",
+    "\"a resolution\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 2,
+   "u": "Terugblik = flashback. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"a cliffhanger\"\"? Dan denk je dat het een cliffhanger is. Een cliffhanger staat aan het eind, en is geen terugblik.",
+    "Klopt: ten years earlier brengt de lezer terug naar het verleden, dat is een flashback.",
+    "Koos je \"\"a climax\"\"? Dan denk je dat het de climax is. De climax is een hoogtepunt, en geen terugblik.",
+    "Koos je \"\"a resolution\"\"? Dan denk je dat het de afloop is. De afloop komt aan het eind, en dit is een sprong terug."
+   ],
+   "uh": "Welke techniek is dit?",
+   "ctx": "A chapter begins with: \"Ten years earlier, Anna had lived in this house.\" The previous chapter was set in the present, and the reader is suddenly taken to a different time."
+  },
+  {
+   "v": "What effect does this ending have?",
+   "o": [
+    "\"it solves the main conflict, you know, I think, I suppose\"",
+    "\"it describes the setting\"",
+    "\"it makes the story boring\"",
+    "\"it creates suspense and makes the reader want to continue\""
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 3,
+   "u": "Open einde = spanning. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"it solves the main conflict, you know, I think, I suppose\"\"? Dan denk je dat het conflict is opgelost. Het begint juist, en de lezer weet niets.",
+    "Koos je \"\"it describes the setting\"\"? Dan denk je dat het de plaats beschrijft. Het toont een gebeurtenis, en geen plaats.",
+    "Koos je \"\"it makes the story boring\"\"? Dan denk je dat het saai is. Het wekt juist nieuwsgierigheid, en niet verveling.",
+    "Klopt: een onverwacht personage bij de deur maakt de lezer nieuwsgierig naar het vervolg."
+   ],
+   "uh": "Welk effect heeft dit einde?",
+   "ctx": "A chapter ends with: \"The door opened and then and there stood the one person he had hoped never to see again.\" The next chapter starts with a different scene."
+  },
+  {
+   "v": "What is this called?",
+   "o": [
+    "\"a plot twist\"",
+    "\"an exposition, really\"",
+    "\"a setting\"",
+    "\"a moral\""
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 3,
+   "u": "Verrassende onthulling = twist. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: een onverwachte onthulling die alles verandert heet een plottwist.",
+    "Koos je \"\"an exposition, really\"\"? Dan denk je dat het de inleiding is. Een exposition staat vooraan, en dit is aan het eind.",
+    "Koos je \"\"a setting\"\"? Dan denk je dat het de plaats is. Een setting is waar het gebeurt, en geen onthulling.",
+    "Koos je \"\"a moral\"\"? Dan denk je dat het de les is. Een les is het thema, en geen onthulling."
+   ],
+   "uh": "Hoe heet dit?",
+   "ctx": "In the final scene of a story we learn that the narrator was the thief all along, and the reader suddenly sees the whole story differently, as everything he said now has another meaning."
+  },
+  {
+   "v": "Which order is correct?",
+   "o": [
+    "\"climax, introduction, resolution, rising action\"",
+    "\"introduction, climax, rising action, resolution\"",
+    "\"introduction, rising action, climax, falling action, resolution\"",
+    "\"resolution, climax, introduction, falling action, I think, I suppose\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 4,
+   "u": "Inleiding tot afloop. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"climax, introduction, resolution, rising action\"\"? Dan denk je dat de climax eerst komt. Eerst is er opbouw, en dan pas het hoogtepunt.",
+    "Koos je \"\"introduction, climax, rising action, resolution\"\"? Dan denk je dat de climax vóór de opbouw komt. De opbouw leidt naar de climax, dus de volgorde klopt niet.",
+    "Klopt: dit is de gebruikelijke volgorde van een verhaal.",
+    "Koos je \"\"resolution, climax, introduction, falling action, I think, I suppose\"\"? Dan denk je dat de afloop eerst komt. De afloop is het slot, en niet het begin."
+   ],
+   "uh": "Welke volgorde klopt?",
+   "ctx": "You must put the parts of a plot in the correct order for a presentation. The parts are: climax, introduction, resolution, rising action and falling action. Choose the correct sequence."
+  },
+  {
+   "v": "What is the conflict?",
+   "o": [
+    "\"Sam against nature\"",
+    "\"Sam against time, to hide the broken vase\"",
+    "\"Sam against his teacher\"",
+    "\"no conflict, only a description, to be honest\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 4,
+   "u": "Conflict = probleem + deadline. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"Sam against nature\"\"? Dan denk je dat de natuur meespeelt. Er is geen storm of weer, maar een deadline.",
+    "Klopt: Sam moet de sleutel vinden voordat zijn zus thuiskomt, hij vecht tegen de tijd.",
+    "Koos je \"\"Sam against his teacher\"\"? Dan denk je dat zijn leraar meespeelt. De leraar komt niet voor, en de zus is het probleem.",
+    "Koos je \"\"no conflict, only a description, to be honest\"\"? Dan denk je dat er geen conflict is. Er is een probleem met een deadline, dus wel een conflict."
+   ],
+   "uh": "Wat is het conflict?",
+   "ctx": "You summarise a story: \"In The Missing Key, Sam must find a key before his sister returns home, or she will discover the broken vase.\" Your teacher asks you to name the conflict."
+  },
+  {
+   "v": "Which part is part of the rising action?",
+   "o": [
+    "\"the village is quiet at dawn, I suppose\"",
+    "\"the villagers welcome him\"",
+    "\"the stranger saves a child\"",
+    "\"the argument about letting him in\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 0,
+   "u": "Opbouw = spanning stijgt. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"the village is quiet at dawn, I suppose\"\"? Dan denk je dat het begin de opbouw is. Het is de inleiding, en geen opbouw.",
+    "Koos je \"\"the villagers welcome him\"\"? Dan denk je dat het slot de opbouw is. Het is de afloop, en geen opbouw.",
+    "Koos je \"\"the stranger saves a child\"\"? Dan denk je dat het hoogtepunt de opbouw is. Het is de climax, en geen opbouw.",
+    "Klopt: de ruzie bouwt de spanning op naar het hoogtepunt."
+   ],
+   "uh": "Welk deel is de opbouw?",
+   "ctx": "Read the outline: \"At dawn, the village is quiet. A stranger arrives and asks for shelter. The villagers argue about whether to let him in. During a storm, the stranger saves a child. The villagers welcome him.\" Your teacher asks about the rising action."
+  },
+  {
+   "v": "Which part is the exposition?",
+   "o": [
+    "\"a young fisherman called Jo lives with his mother in a quiet harbour town\"",
+    "\"the boat is stolen\"",
+    "\"the chase in the fog, you know, I think, I suppose\"",
+    "\"the town celebrates\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 0,
+   "u": "Exposition = personages en plaats. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: het begin stelt Jo en zijn omgeving voor, dat is de exposition.",
+    "Koos je \"\"the boat is stolen\"\"? Dan denk je dat de diefstal de inleiding is. Dat is het begin van het conflict, en dus na de inleiding.",
+    "Koos je \"\"the chase in the fog, you know, I think, I suppose\"\"? Dan denk je dat de achtervolging de inleiding is. Dat is de opbouw of climax, en niet het begin.",
+    "Koos je \"\"the town celebrates\"\"? Dan denk je dat het feest de inleiding is. Dat is de afloop, en niet het begin."
+   ],
+   "uh": "Welk deel is de exposition?",
+   "ctx": "Read the outline: \"In a quiet harbour town, a young fisherman called Jo lives with his mother. One day his boat is stolen. Jo follows the thief across the bay. After a chase in the fog, he finds the boat and the thief confesses. Jo returns home, and the town celebrates.\" Your teacher asks about the exposition."
+  },
+  {
+   "v": "What type of conflict is it?",
+   "o": [
+    "\"external: Lena against her parents\"",
+    "\"external: Lena against nature\"",
+    "\"internal: fear against honesty\"",
+    "\"external: Lena against society\""
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 1,
+   "u": "Angst tegen eerlijkheid = innerlijk. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"external: Lena against her parents\"\"? Dan denk je dat de ouders de tegenstander zijn. Ze zijn er nog niet, en de strijd zit in Lena.",
+    "Koos je \"\"external: Lena against nature\"\"? Dan denk je dat de natuur meespeelt. Er is geen natuur, alleen haar angst.",
+    "Klopt: Lena strijdt met haar angst en haar wil om eerlijk te zijn.",
+    "Koos je \"\"external: Lena against society\"\"? Dan denk je dat de maatschappij meespeelt. Het gaat om een raam, en haar gevoel."
+   ],
+   "uh": "Welk soort conflict is dit?",
+   "ctx": "Read the passage: \"Lena wants to tell the truth about the broken window, but she is afraid her parents will be angry. She walks around the block three times before going in.\" Your teacher asks about the type of conflict."
+  },
+  {
+   "v": "Which conflict is described?",
+   "o": [
+    "\"person against person\"",
+    "\"person against nature\"",
+    "\"person against self\"",
+    "\"person against society, I think\""
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 1,
+   "u": "Wind en kou = natuur. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"person against person\"\"? Dan denk je dat de klimmers ruzie hebben. Er is geen tegenstander, maar het weer.",
+    "Klopt: de klimmers vechten tegen wind en kou, dat is mens tegen natuur.",
+    "Koos je \"\"person against self\"\"? Dan denk je dat het om twijfel gaat. Er is een uitwendige kracht, namelijk de natuur.",
+    "Koos je \"\"person against society, I think\"\"? Dan denk je dat de maatschappij meespeelt. Het gaat om bergen, en niet om regels."
+   ],
+   "uh": "Welk conflict wordt beschreven?",
+   "ctx": "Read the passage: \"The mountaineers fight the wind and the cold to reach the summit.\" Your teacher asks you to name the type of conflict that this sentence describes."
+  },
+  {
+   "v": "Which two elements of the setting are given?",
+   "o": [
+    "\"character and plot\"",
+    "\"theme and moral\"",
+    "\"narrator and tense\"",
+    "\"place and time\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 2,
+   "u": "Setting = plaats en tijd. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"character and plot\"\"? Dan denk je dat de zin personages noemt. Er staat geen naam van iemand, en geen gebeurtenis.",
+    "Koos je \"\"theme and moral\"\"? Dan denk je dat de zin een boodschap geeft. Er staat geen les of idee, alleen waar en wanneer.",
+    "Koos je \"\"narrator and tense\"\"? Dan denk je dat de zin iets over de vertelstem zegt. Er is geen ik of hij, alleen een plek en een jaar.",
+    "Klopt: space station is de plaats en the year 2200 de tijd."
+   ],
+   "uh": "Welke twee elementen geeft de zin?",
+   "ctx": "Read the sentence: \"The story takes place on a space station in the year 2200.\" Your teacher asks you which two elements of the setting are given in this sentence."
+  },
+  {
+   "v": "Which technique is used?",
+   "o": [
+    "\"a flashback inside a present-day scene\"",
+    "\"foreshadowing\"",
+    "\"a cliffhanger\"",
+    "\"a conclusion\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 2,
+   "u": "Herinnering = flashback. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: de herinnering aan de zomer onderbreekt de huidige scène, dat is een flashback.",
+    "Koos je \"\"foreshadowing\"\"? Dan denk je dat het een voorspelling is. Het gaat terug in de tijd, en niet vooruit.",
+    "Koos je \"\"a cliffhanger\"\"? Dan denk je dat het een open einde is. De scène gaat verder, en eindigt niet.",
+    "Koos je \"\"a conclusion\"\"? Dan denk je dat het een slot is. Het is een tijdsprong, en geen einde."
+   ],
+   "uh": "Welke techniek is dit?",
+   "ctx": "Read the passage: \"Today Tom visits his grandfather. He remembers the summer when they built a boat together, and then the story returns to the living room.\" Your teacher asks about the technique."
+  },
+  {
+   "v": "Which effect is created?",
+   "o": [
+    "\"humour\"",
+    "\"a happy mood\"",
+    "\"suspense: the reader expects something to happen\"",
+    "\"a detailed description, you know, I think, I suppose\""
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 3,
+   "u": "Stilte = spanning. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"humour\"\"? Dan denk je dat de zin grappig is. Er is geen grap, maar een dreigende sfeer.",
+    "Koos je \"\"a happy mood\"\"? Dan denk je dat de zin vrolijk is. Er is geen vrolijkheid, maar spanning.",
+    "Klopt: de stilte na het uitgaan van het licht bouwt spanning op.",
+    "Koos je \"\"a detailed description, you know, I think, I suppose\"\"? Dan denk je dat de zin een beschrijving is. Er is weinig informatie, maar veel sfeer."
+   ],
+   "uh": "Welk effect ontstaat?",
+   "ctx": "Read the sentence: \"As the clock struck midnight, a single light went out in the house and then and then, silence.\" Your teacher asks what effect the writer wants to create."
+  },
+  {
+   "v": "Which technique is used?",
+   "o": [
+    "\"a flashback\"",
+    "\"foreshadowing, planting a clue for later\"",
+    "\"a twist ending, really, to be honest, you know\"",
+    "\"a cliffhanger\""
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 3,
+   "u": "Aanwijzing vooraf = foreshadowing. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"a flashback\"\"? Dan denk je dat het een terugblik is. Het gaat vooruit, en niet terug.",
+    "Klopt: het geweer in hoofdstuk 3 kondigt iets aan dat later gebeurt.",
+    "Koos je \"\"a twist ending, really, to be honest, you know\"\"? Dan denk je dat het een verrassend einde is. Het is een hint, en geen onthulling.",
+    "Koos je \"\"a cliffhanger\"\"? Dan denk je dat het een open einde is. Het is een vroege aanwijzing, en geen slot."
+   ],
+   "uh": "Welke techniek is dit?",
+   "ctx": "Read the passage: \"In chapter 3, the narrator mentions an old gun hanging on the wall; in chapter 9 it is fired.\" Your teacher asks you which technique is used when a clue is planted early."
+  },
+  {
+   "v": "Which part of the plot is it?",
+   "o": [
+    "\"the exposition\"",
+    "\"the rising action\"",
+    "\"the climax\"",
+    "\"the resolution\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 4,
+   "u": "At the end = resolution. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"the exposition\"\"? Dan denk je dat het de inleiding is. Het staat aan het eind, en niet aan het begin.",
+    "Koos je \"\"the rising action\"\"? Dan denk je dat het de opbouw is. De spanning is al weg, dus het is de afloop.",
+    "Koos je \"\"the climax\"\"? Dan denk je dat het het hoogtepunt is. Het is rustig, en dus de afloop.",
+    "Klopt: het conflict is opgelost, dat hoort bij de afloop."
+   ],
+   "uh": "Welk deel van de plot is dit?",
+   "ctx": "Read the passage: \"At the end, Lily finally forgives her brother and they walk home together.\" Your teacher asks you which part of the plot this belongs to."
+  },
+  {
+   "v": "Which ending has a resolution?",
+   "o": [
+    "\"B, because the conflict is solved\"",
+    "\"A, because the story ends\"",
+    "\"both, because both end\"",
+    "\"neither, because nothing happens, to be honest\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 4,
+   "u": "Afloop = probleem opgelost. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: bij B is het probleem opgelost, bij A blijft het open.",
+    "Koos je \"\"A, because the story ends\"\"? Dan denk je dat einde hetzelfde is als afloop. A laat de uitkomst open, dus geen oplossing.",
+    "Koos je \"\"both, because both end\"\"? Dan denk je dat elk einde een afloop is. A is open, en dus geen oplossing.",
+    "Koos je \"\"neither, because nothing happens, to be honest\"\"? Dan denk je dat er niets gebeurt. B toont een oplossing, dus dat klopt niet."
+   ],
+   "uh": "Welk einde heeft een oplossing?",
+   "ctx": "Compare two endings. A: \"The door opens. The story ends.\" B: \"The family settles into their new home, happy at last.\" Your teacher asks which ending has a resolution."
+  }
+ ],
+ "oe": [
+  {
+   "bron": "Examenstijl",
+   "ctx": "Your teacher gives you an outline: A boy loses his dog (1). He searches the neighbourhood and meets a stranger (2). The stranger turns out to have the dog and refuses to return it (3). The boy persuades him, and the dog is returned (4). They become friends (5).",
+   "v": "Write which event is the exposition, the climax and the resolution.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Exposition is 1 (1p). Climax is 3 (1p). Afloop is 4 of 5 (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "You read: \"Anna cannot decide whether to accept the job in another city. She loves her friends but also her dream.\" Your teacher asks you to name the type of conflict and explain how you can tell.",
+   "v": "Write two sentences that name the conflict and explain it.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Innerlijk conflict genoemd (1p). Uitleg: de strijd zit in Anna zelf (1p). Een voorbeeld uit de tekst (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "You describe the setting of your own story: a lighthouse on a remote island in winter. You must write two sentences that show the time and place and give the reader an idea of the mood.",
+   "v": "Write the opening two sentences of your story, describing the setting.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Plaats duidelijk genoemd (1p). Tijd duidelijk genoemd (1p). Een passende sfeer (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "A friend asks you what a cliffhanger is and why writers use it. You want to explain it with a short example of your own.",
+   "v": "Write three sentences that explain a cliffhanger and give an example.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Uitleg: een open einde (1p). Het effect: spanning (1p). Een eigen voorbeeld (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "You write the summary of a story for your reading file. The story has a flashback and a twist at the end, where the narrator turns out to be the thief. You do not want to give away the ending.",
+   "v": "Write two sentences that mention the flashback and hint at the twist without revealing it.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "De flashback genoemd (1p). Een hint op een onverwachte onthulling (1p). Het einde niet verklapt (1p)."
+  }
+ ]
+}
