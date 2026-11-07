@@ -486,6 +486,10 @@ const _MS_IC={
   wissel:'<path d="M7 4 3 8l4 4"/><path d="M3 8h14"/><path d="m17 12 4 4-4 4"/><path d="M21 16H7"/>',
   help:'<circle cx="12" cy="12" r="9"/><path d="M9.6 9.3a2.5 2.5 0 0 1 4.8 1c0 1.7-2.4 2.2-2.4 3.7M12 17.3h.01"/>'
 };
+// Instagram: @slagio.nl. Opent in een nieuw tabblad (of de Instagram-app op de telefoon).
+const SLAGIO_INSTA='https://www.instagram.com/slagio.nl/';
+const _INSTA_IC='<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5.5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4.2" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.4" cy="6.6" r="1.3" fill="currentColor"/></svg>';
+function openInsta(waar){try{trackEvent('instagram_klik',{waar:waar||''});}catch(e){}try{window.open(SLAGIO_INSTA,'_blank','noopener');}catch(e){location.href=SLAGIO_INSTA;}}
 function _msSvg(n){return '<svg viewBox="0 0 24 24" aria-hidden="true">'+(_MS_IC[n]||'')+'</svg>';}
 // Wat er nu speelt per tegel: kort, echt en alleen als het iets zegt.
 function _msStand(){
@@ -551,7 +555,8 @@ function renderZijbalk(){
       +'<span class="zb-tx"><b>'+lbl+'</b>'+(st?'<small'+(st.heet?' class="heet"':'')+'>'+esc(st.t)+'</small>':'')+'</span></button>';
   };
   sec.innerHTML='<button class="snav-btn zb-trainer" data-screen="sc-plus" onclick="openExamentrainer()" title="Examentrainer" aria-label="Examentrainer"><span class="zb-art">'+_msArt('trainer')+'</span><span class="zb-tx"><b>Examentrainer</b><small>jouw verwachte cijfer</small></span></button>'
-    +_MS_GROEPEN.map(([kop,kl,items])=>'<div class="zb-groep '+kl+'"><div class="snav-label">'+kop+'</div>'+items.map(rij).join('')+'</div>').join('');
+    +_MS_GROEPEN.map(([kop,kl,items])=>'<div class="zb-groep '+kl+'"><div class="snav-label">'+kop+'</div>'+items.map(rij).join('')+'</div>').join('')
+    +'<button class="snav-btn zb-rij zb-insta" onclick="openInsta(\'zijbalk\')" title="Volg ons op Instagram" aria-label="Volg ons op Instagram"><span class="zb-art zb-art-insta">'+_INSTA_IC+'</span><span class="zb-tx"><b>Instagram</b><small>@slagio.nl</small></span></button>';
   try{const a=document.querySelector('.sc.on');if(a)sec.querySelectorAll('.snav-btn').forEach(b=>b.classList.toggle('active',b.dataset.screen===a.id));}catch(e){}
 }
 function _zbPlan(){clearTimeout(_zbT);_zbT=setTimeout(renderZijbalk,60);}
@@ -647,6 +652,7 @@ function openNavSheet(){
       +'<div class="ms-rij"><span class="ms-rij-ic">'+_msSvg('maan')+'</span><span class="ms-rij-t">Nachtmodus</span><button class="ms-switch'+(donker?' aan':'')+'" role="switch" aria-checked="'+donker+'" aria-label="Nachtmodus" onclick="_msSchakel(this,\'donker\')"><i></i></button></div>'
       +'<button class="ms-rij" onclick="'+ga("show('sc-welcome')")+'"><span class="ms-rij-ic">'+_msSvg('wissel')+'</span><span class="ms-rij-t">Ander niveau</span><span class="ms-rij-w">'+niv+'</span><span class="ms-rij-pijl">›</span></button>'
       +'<button class="ms-rij" onclick="'+ga('showIntroModal()')+'"><span class="ms-rij-ic">'+_msSvg('help')+'</span><span class="ms-rij-t">Hoe werkt Slagio?</span><span class="ms-rij-pijl">›</span></button>'
+      +'<button class="ms-rij ms-insta" onclick="openInsta(\'menu\')"><span class="ms-rij-ic">'+_INSTA_IC+'</span><span class="ms-rij-t">Volg ons op Instagram</span><span class="ms-rij-w">@slagio.nl</span><span class="ms-rij-pijl">›</span></button>'
     +'</div>'
     +'</div></div>';
   ov.addEventListener('click',e=>{if(e.target===ov)closeNavSheet();});
