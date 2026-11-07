@@ -1,0 +1,682 @@
+{
+ "id": "A2",
+ "lo": "en.A.2",
+ "gs": 2,
+ "naam": "De hoofdgedachte van een tekst bepalen",
+ "beschrijving": "Je leert in een Engelse tekst de hoofdgedachte te vinden: je gebruikt de titel en de eerste en laatste zin, onderscheidt hoofdzaak van bijzaak, formuleert de kern in één zin die niet te smal of te breed is en let op het doel van de schrijver.",
+ "ceStatus": "CE",
+ "binas": "",
+ "val": "",
+ "onderwerpen": [
+  "Titel en kernzin",
+  "Hoofdzaak en bijzaak",
+  "Een hoofdgedachte formuleren",
+  "Het doel van de schrijver",
+  "Controleren"
+ ],
+ "sam": "De hoofdgedachte is de belangrijkste boodschap van de hele tekst. Je vindt hem met de titel en de eerste en laatste zin van een alinea. Een detail of bijzaak kun je weglaten. Formuleer de hoofdgedachte in één zin die niet te smal en niet te breed is, en controleer hem. Het schrijversdoel helpt: vertellen, informeren of overtuigen.",
+ "begrippen": [
+  {
+   "t": "Hoofdgedachte",
+   "d": "De belangrijkste boodschap van de hele tekst."
+  },
+  {
+   "t": "Hoofdzaak",
+   "d": "Het deel dat het belangrijkst is."
+  },
+  {
+   "t": "Bijzaak",
+   "d": "Een extra gegeven dat je kunt weglaten."
+  },
+  {
+   "t": "Detail",
+   "d": "Een klein gegeven, zoals een tijd of prijs."
+  },
+  {
+   "t": "Titel",
+   "d": "Een korte naam die het onderwerp noemt."
+  },
+  {
+   "t": "Kernzin",
+   "d": "De zin die de kern van een alinea geeft."
+  },
+  {
+   "t": "Alinea",
+   "d": "Een blok tekst met één onderwerp."
+  },
+  {
+   "t": "Te smal",
+   "d": "Een samenvatting die maar één detail dekt."
+  },
+  {
+   "t": "Te breed",
+   "d": "Een samenvatting die over meer gaat dan de tekst."
+  },
+  {
+   "t": "Schrijversdoel",
+   "d": "Waarom de schrijver de tekst schreef."
+  },
+  {
+   "t": "Overtuigen",
+   "d": "De lezer ergens toe bewegen."
+  },
+  {
+   "t": "Controleren",
+   "d": "Je keuze nakijken met de tekst."
+  }
+ ],
+ "sv": [
+  {
+   "v": "Welke zin in een alinea bevat vaak de hoofdgedachte?",
+   "o": [
+    "\"altijd de zin in het midden\"",
+    "\"meestal de eerste of de laatste zin\"",
+    "\"de zin met het langste woord, I think\"",
+    "\"de zin met de meeste cijfers\""
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 0,
+   "u": "Eerste of laatste zin. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"altijd de zin in het midden\"\"? Dan denk je dat de kern altijd in het midden staat. Dat is zelden zo, de kern staat meestal vooraan of achteraan.",
+    "Klopt: schrijvers zetten de kern vaak aan het begin of aan het eind van een alinea.",
+    "Koos je \"\"de zin met het langste woord, I think\"\"? Dan denk je dat het langste woord de kern is. Lengte zegt niets, over belang.",
+    "Koos je \"\"de zin met de meeste cijfers\"\"? Dan denk je dat cijfers de kern bepalen. Cijfers zijn vaak details, en geen hoofdgedachte."
+   ],
+   "uh": "Welke zin bevat vaak de hoofdgedachte?"
+  },
+  {
+   "v": "Wat vertelt de titel van een tekst meestal?",
+   "o": [
+    "\"alle details van de tekst\"",
+    "\"wie de tekst gelezen heeft\"",
+    "\"hoeveel alinea's de tekst heeft, to be honest\"",
+    "\"waar de tekst ongeveer over gaat\""
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 0,
+   "u": "Titel = onderwerp. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"alle details van de tekst\"\"? Dan denk je dat de titel alles vertelt. Een titel is kort, en noemt alleen het onderwerp.",
+    "Koos je \"\"wie de tekst gelezen heeft\"\"? Dan denk je dat de titel de lezer noemt. De titel gaat over de tekst, en niet over de lezers.",
+    "Koos je \"\"hoeveel alinea's de tekst heeft, to be honest\"\"? Dan denk je dat de titel het aantal alinea's noemt. Dat staat niet in een titel, maar je telt het zelf.",
+    "Klopt: de titel noemt het onderwerp in een paar woorden."
+   ],
+   "uh": "Wat zegt de titel?"
+  },
+  {
+   "v": "Wat is een bijzaak in een tekst?",
+   "o": [
+    "\"een detail dat je kunt weglaten zonder dat de hoofdgedachte verandert\"",
+    "\"de belangrijkste zin van de tekst, I suppose, really, to be honest\"",
+    "\"de titel van de tekst\"",
+    "\"de laatste zin van elke tekst\""
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 1,
+   "u": "Bijzaak = weglaten kan. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: een bijzaak is een extra gegeven dat de kern niet verandert.",
+    "Koos je \"\"de belangrijkste zin van de tekst, I suppose, really, to be honest\"\"? Dan denk je dat een bijzaak de kern is. Dat is de hoofdzaak, en niet de bijzaak.",
+    "Koos je \"\"de titel van de tekst\"\"? Dan denk je dat een bijzaak de titel is. De titel noemt het onderwerp, en dat is geen bijzaak.",
+    "Koos je \"\"de laatste zin van elke tekst\"\"? Dan denk je dat de laatste zin altijd een bijzaak is. Die kan juist de kern zijn, en is niet altijd een detail."
+   ],
+   "uh": "Wat is een bijzaak?"
+  },
+  {
+   "v": "Wat is de hoofdgedachte van een tekst?",
+   "o": [
+    "\"het eerste woord van de tekst, you know, I think\"",
+    "\"een leuk detail uit de tekst\"",
+    "\"wat de schrijver de lezer vooral wil vertellen\"",
+    "\"de naam van de schrijver\""
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 1,
+   "u": "Hoofdgedachte = belangrijkste boodschap. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"het eerste woord van de tekst, you know, I think\"\"? Dan denk je dat de hoofdgedachte het eerste woord is. Dat is slechts een woord, en geen boodschap.",
+    "Koos je \"\"een leuk detail uit de tekst\"\"? Dan denk je dat een detail de hoofdgedachte is. Een detail hoort bij één deel, en niet bij het geheel.",
+    "Klopt: de hoofdgedachte is de belangrijkste boodschap van de hele tekst.",
+    "Koos je \"\"de naam van de schrijver\"\"? Dan denk je dat de schrijver de hoofdgedachte is. De naam zegt niets, over de inhoud."
+   ],
+   "uh": "Wat is de hoofdgedachte?"
+  },
+  {
+   "v": "Wanneer is een gekozen hoofdgedachte te smal?",
+   "o": [
+    "\"als hij de hele tekst samenvat, really\"",
+    "\"als hij maar over één detail gaat\"",
+    "\"als hij kort is\"",
+    "\"als hij in de eerste zin staat\""
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 2,
+   "u": "Te smal = één detail. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"als hij de hele tekst samenvat, really\"\"? Dan denk je dat een samenvatting te smal is. Dat is juist een goede hoofdgedachte, want hij dekt alles.",
+    "Klopt: een te smalle hoofdgedachte dekt maar een klein deel van de tekst.",
+    "Koos je \"\"als hij kort is\"\"? Dan denk je dat kort te smal betekent. Een goede hoofdgedachte mag kort zijn, als hij maar alles dekt.",
+    "Koos je \"\"als hij in de eerste zin staat\"\"? Dan denk je dat de plaats bepaalt of hij smal is. Dat zegt niets, over de inhoud."
+   ],
+   "uh": "Wanneer is een hoofdgedachte te smal?"
+  },
+  {
+   "v": "Wat is het doel van een advertentie?",
+   "o": [
+    "\"de lezer alleen laten lachen\"",
+    "\"de lezer een verhaal vertellen\"",
+    "\"de lezer een rekensom laten maken, I think, I suppose\"",
+    "\"de lezer overtuigen om iets te doen of te kopen\""
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 3,
+   "u": "Advertentie = overtuigen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"de lezer alleen laten lachen\"\"? Dan denk je dat een advertentie vooral grappig is. Humor kan, maar het doel is overtuigen, en niet alleen lachen.",
+    "Koos je \"\"de lezer een verhaal vertellen\"\"? Dan denk je dat een advertentie een verhaal is. Een verhaal vermaakt, en een advertentie overtuigt.",
+    "Koos je \"\"de lezer een rekensom laten maken, I think, I suppose\"\"? Dan denk je dat een advertentie een opdracht geeft. Dat is geen doel, en niet de bedoeling.",
+    "Klopt: een advertentie wil de lezer tot een actie bewegen, zoals kopen of komen."
+   ],
+   "uh": "Wat is het doel van een advertentie?"
+  },
+  {
+   "v": "Wat controleer je nadat je een hoofdgedachte hebt gekozen?",
+   "o": [
+    "\"of alle delen van de tekst bij je keuze passen\"",
+    "\"of de zin mooi klinkt\"",
+    "\"of het antwoord lang is\"",
+    "\"of je de tekst al eerder las, to be honest, you know\""
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 4,
+   "u": "Past de keuze bij de hele tekst? Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: een goede hoofdgedachte past bij de hele tekst en niet alleen bij een stukje.",
+    "Koos je \"\"of de zin mooi klinkt\"\"? Dan denk je dat een mooie zin goed is. Het gaat om de inhoud, en niet om de klank.",
+    "Koos je \"\"of het antwoord lang is\"\"? Dan denk je dat een lang antwoord beter is. Een kort antwoord kan juist goed zijn, als het alles dekt.",
+    "Koos je \"\"of je de tekst al eerder las, to be honest, you know\"\"? Dan denk je dat dat bepaalt of de keuze goed is. Dat zegt niets, over de inhoud."
+   ],
+   "uh": "Wat controleer je?"
+  },
+  {
+   "v": "What is the best title for the text?",
+   "o": [
+    "\"Jo's timetable\"",
+    "\"A school in London\"",
+    "\"Phones in school: a new rule\"",
+    "\"Parents and emergencies, I suppose\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 0,
+   "u": "Titel past bij het geheel. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"Jo's timetable\"\"? Dan denk je dat de titel over het rooster gaat. Dat is één detail, en niet de hele tekst.",
+    "Koos je \"\"A school in London\"\"? Dan denk je dat de plaats het onderwerp is. De tekst noemt geen Londen, en het gaat om de regel.",
+    "Klopt: de hele tekst gaat over een nieuwe telefoonregel op school.",
+    "Koos je \"\"Parents and emergencies, I suppose\"\"? Dan denk je dat de ouders het onderwerp zijn. Dat is één deel, en niet de hele tekst."
+   ],
+   "uh": "Wat is de beste titel?",
+   "ctx": "Read the text: \"Phones at school. Many schools in the UK are changing their rules about mobile phones. At Park High School, pupils must hand in their phones every morning. The head teacher says that pupils are more active at break and talk to each other more. Some pupils are not happy. \"I use my phone to check my timetable,\" says Jo, 15. Parents also have different opinions. Some say that a phone is important in an emergency. After six months, the school will ask everybody what they think and then decide if the rule stays.\""
+  },
+  {
+   "v": "Which sentence is a detail and not the main point of the text?",
+   "o": [
+    "\"Pupils must hand in their phones every morning, you know.\"",
+    "\"\"I use my phone to check my timetable,\" says Jo.\"",
+    "\"The school will ask everybody what they think.\"",
+    "\"Many schools are changing their rules.\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 1,
+   "u": "Detail = voorbeeld van één persoon. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"Pupils must hand in their phones every morning, you know.\"\"? Dan denk je dat de nieuwe regel een detail is. De regel is juist de kern, en de rest hoort erbij.",
+    "Klopt: het voorbeeld van Jo is een detail dat de kern niet verandert als je het weglaat.",
+    "Koos je \"\"The school will ask everybody what they think.\"\"? Dan denk je dat de enquête een detail is. Het is een belangrijk onderdeel, dat bij de regel hoort.",
+    "Koos je \"\"Many schools are changing their rules.\"\"? Dan denk je dat dit een detail is. Het is de opening, en de kern van het onderwerp."
+   ],
+   "uh": "Welke zin is een detail?",
+   "ctx": "Read the text: \"Phones at school. Many schools in the UK are changing their rules about mobile phones. At Park High School, pupils must hand in their phones every morning. The head teacher says that pupils are more active at break and talk to each other more. Some pupils are not happy. \"I use my phone to check my timetable,\" says Jo, 15. Parents also have different opinions. Some say that a phone is important in an emergency. After six months, the school will ask everybody what they think and then decide if the rule stays.\""
+  },
+  {
+   "v": "What is the main idea of the text?",
+   "o": [
+    "\"All pupils love the new rule, really, to be honest, you know.\"",
+    "\"Phones are dangerous.\"",
+    "\"Jo is fifteen.\"",
+    "\"A school has a new phone rule and will check after six months if it works.\""
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 2,
+   "u": "Hoofdgedachte = de hele tekst. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"All pupils love the new rule, really, to be honest, you know.\"\"? Dan denk je dat iedereen blij is. Er staat dat sommige leerlingen niet blij zijn, dus dat klopt niet.",
+    "Koos je \"\"Phones are dangerous.\"\"? Dan denk je dat het om gevaar gaat. Dat staat niet in de tekst, je verzint iets.",
+    "Koos je \"\"Jo is fifteen.\"\"? Dan denk je dat Jo's leeftijd de kern is. Dat is een detail, en geen hoofdgedachte.",
+    "Klopt: de tekst vertelt over de regel, de meningen en de evaluatie na zes maanden."
+   ],
+   "uh": "Wat is de hoofdgedachte?",
+   "ctx": "Read the text: \"Phones at school. Many schools in the UK are changing their rules about mobile phones. At Park High School, pupils must hand in their phones every morning. The head teacher says that pupils are more active at break and talk to each other more. Some pupils are not happy. \"I use my phone to check my timetable,\" says Jo, 15. Parents also have different opinions. Some say that a phone is important in an emergency. After six months, the school will ask everybody what they think and then decide if the rule stays.\""
+  },
+  {
+   "v": "Which statement is NOT in the text?",
+   "o": [
+    "\"Teachers also have to hand in their phones.\"",
+    "\"Pupils talk to each other more at break.\"",
+    "\"Some parents think a phone is important in an emergency.\"",
+    "\"The school will decide after six months.\""
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 4,
+   "u": "Controleer met de tekst. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: er staat niets over leraren die hun telefoon inleveren, alleen over leerlingen.",
+    "Koos je \"\"Pupils talk to each other more at break.\"\"? Dan denk je dat dit niet in de tekst staat. De directeur zegt het, dus het staat er wel.",
+    "Koos je \"\"Some parents think a phone is important in an emergency.\"\"? Dan denk je dat dit niet in de tekst staat. Er staat some say that a phone is important, dus het staat er wel.",
+    "Koos je \"\"The school will decide after six months.\"\"? Dan denk je dat dit niet in de tekst staat. De laatste zin noemt het, dus het staat er wel."
+   ],
+   "uh": "Welke bewering staat niet in de tekst?",
+   "ctx": "Read the text: \"Phones at school. Many schools in the UK are changing their rules about mobile phones. At Park High School, pupils must hand in their phones every morning. The head teacher says that pupils are more active at break and talk to each other more. Some pupils are not happy. \"I use my phone to check my timetable,\" says Jo, 15. Parents also have different opinions. Some say that a phone is important in an emergency. After six months, the school will ask everybody what they think and then decide if the rule stays.\""
+  },
+  {
+   "v": "Which fact is a detail and not the main idea?",
+   "o": [
+    "\"She started babysitting last month.\"",
+    "\"She now writes down the rules.\"",
+    "\"She earns 6 euros an hour.\"",
+    "\"She babysits every Thursday.\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 1,
+   "u": "Detail = loon. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"She started babysitting last month.\"\"? Dan denk je dat dit een detail is. Het begin is onderdeel van de kern, namelijk haar eerste maand.",
+    "Koos je \"\"She now writes down the rules.\"\"? Dan denk je dat dit een detail is. Het is de verandering, en hoort bij de kern.",
+    "Klopt: het uurloon is een detail dat bij de kern hoort, maar niet de kern zelf is.",
+    "Koos je \"\"She babysits every Thursday.\"\"? Dan denk je dat dit een detail is. Het is een feit over haar werk, maar de hoofdgedachte is breder."
+   ],
+   "uh": "Welk feit is een detail?",
+   "ctx": "Read the text: \"My first month as a babysitter. Last month I started babysitting for a family in my street. I look after two boys, aged 5 and 7, every Thursday evening. The first night was difficult: the boys did not want to go to bed and I forgot to ask the parents about the rules. Now I always write down what the parents say. I also bring a game that we can play together. I earn 6 euros an hour, which is not a lot, but I like the boys and I am saving for a new bike.\""
+  },
+  {
+   "v": "What is the main idea of the text?",
+   "o": [
+    "\"The writer wants to buy a bike.\"",
+    "\"The writer is learning to babysit and likes it.\"",
+    "\"Babysitting is badly paid.\"",
+    "\"Two boys do not want to go to bed, I suppose, really.\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 2,
+   "u": "Kern = leren en leuk vinden. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"The writer wants to buy a bike.\"\"? Dan denk je dat de fiets de kern is. Dat is een detail aan het eind, en niet de hoofdgedachte.",
+    "Klopt: ze begon moeilijk, leerde bij en vindt het nu leuk.",
+    "Koos je \"\"Babysitting is badly paid.\"\"? Dan denk je dat het loon de kern is. Het is één zin, en niet de hele tekst.",
+    "Koos je \"\"Two boys do not want to go to bed, I suppose, really.\"\"? Dan denk je dat het eerste avond-probleem de kern is. Dat is één moment, en niet de hele tekst."
+   ],
+   "uh": "Wat is de hoofdgedachte?",
+   "ctx": "Read the text: \"My first month as a babysitter. Last month I started babysitting for a family in my street. I look after two boys, aged 5 and 7, every Thursday evening. The first night was difficult: the boys did not want to go to bed and I forgot to ask the parents about the rules. Now I always write down what the parents say. I also bring a game that we can play together. I earn 6 euros an hour, which is not a lot, but I like the boys and I am saving for a new bike.\""
+  },
+  {
+   "v": "Why does the writer write this text?",
+   "o": [
+    "\"to advertise babysitting\"",
+    "\"to complain about the boys, you know, I think, I suppose\"",
+    "\"to ask for more money\"",
+    "\"to tell about her experience as a babysitter\""
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 3,
+   "u": "Persoonlijk verhaal. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"to advertise babysitting\"\"? Dan denk je dat ze reclame maakt. Ze vraagt niemand om te boeken, dus het is geen advertentie.",
+    "Koos je \"\"to complain about the boys, you know, I think, I suppose\"\"? Dan denk je dat ze klaagt. Ze zegt juist dat ze de jongens leuk vindt, dus niet.",
+    "Koos je \"\"to ask for more money\"\"? Dan denk je dat ze om geld vraagt. Ze noemt het loon alleen, en vraagt niets.",
+    "Klopt: ze vertelt in de ik-vorm over haar eerste maand, dat is een persoonlijk verhaal."
+   ],
+   "uh": "Waarom schrijft ze dit?",
+   "ctx": "Read the text: \"My first month as a babysitter. Last month I started babysitting for a family in my street. I look after two boys, aged 5 and 7, every Thursday evening. The first night was difficult: the boys did not want to go to bed and I forgot to ask the parents about the rules. Now I always write down what the parents say. I also bring a game that we can play together. I earn 6 euros an hour, which is not a lot, but I like the boys and I am saving for a new bike.\""
+  },
+  {
+   "v": "What is the aim of the text?",
+   "o": [
+    "\"to invite people to come to the Repair Cafe\"",
+    "\"to sell new toasters\"",
+    "\"to tell a story about a bike, really, to be honest\"",
+    "\"to warn people about waste\""
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 3,
+   "u": "Uitnodigen = doel. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: de tekst nodigt mensen uit om kapotte spullen mee te brengen.",
+    "Koos je \"\"to sell new toasters\"\"? Dan denk je dat het om verkopen gaat. Er staat dat je alleen voor onderdelen betaalt, dus niet om verkoop.",
+    "Koos je \"\"to tell a story about a bike, really, to be honest\"\"? Dan denk je dat het een verhaal is. De fiets is een voorbeeld, en geen verhaal.",
+    "Koos je \"\"to warn people about waste\"\"? Dan denk je dat het een waarschuwing is. De nadruk ligt op komen, en niet op waarschuwen."
+   ],
+   "uh": "Wat is het doel van de tekst?",
+   "ctx": "Read the text: \"Repair Cafe opens in our town! Is your bike broken? Does your toaster not work any more? Don't throw it away: bring it to the Repair Cafe in the community centre on the first Saturday of every month. Volunteers will help you to repair your things for free. You only pay for new parts. It is better for your wallet and for the environment, because we produce less waste. Everybody is welcome, and there is free coffee and tea. No need to book; just come in between 10.00 am and 1.00 pm.\""
+  },
+  {
+   "v": "What is the main idea of the text?",
+   "o": [
+    "\"The Repair Cafe has free coffee and tea, I think, I suppose, really.\"",
+    "\"The Repair Cafe is open until 1.00 pm.\"",
+    "\"You can bring broken things to the Repair Cafe, where volunteers help you repair them for free.\"",
+    "\"Toasters are better than bikes.\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 2,
+   "u": "Kern = gratis repareren. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"The Repair Cafe has free coffee and tea, I think, I suppose, really.\"\"? Dan denk je dat de koffie de kern is. Dat is een detail, en niet de hoofdgedachte.",
+    "Koos je \"\"The Repair Cafe is open until 1.00 pm.\"\"? Dan denk je dat de sluitingstijd de kern is. Dat is een detail, en niet de hoofdgedachte.",
+    "Klopt: dit vat de kern van de uitnodiging samen.",
+    "Koos je \"\"Toasters are better than bikes.\"\"? Dan denk je dat de tekst vergelijkt. Het noemt ze alleen als voorbeeld, en vergelijkt ze niet."
+   ],
+   "uh": "Wat is de hoofdgedachte?",
+   "ctx": "Read the text: \"Repair Cafe opens in our town! Is your bike broken? Does your toaster not work any more? Don't throw it away: bring it to the Repair Cafe in the community centre on the first Saturday of every month. Volunteers will help you to repair your things for free. You only pay for new parts. It is better for your wallet and for the environment, because we produce less waste. Everybody is welcome, and there is free coffee and tea. No need to book; just come in between 10.00 am and 1.00 pm.\""
+  },
+  {
+   "v": "Which sentence is too small to be the main idea?",
+   "o": [
+    "\"You can repair your things for free.\"",
+    "\"There is free coffee and tea.\"",
+    "\"Everybody is welcome at the Repair Cafe.\"",
+    "\"It is better for the environment.\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 4,
+   "u": "Te klein = één detail. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"You can repair your things for free.\"\"? Dan denk je dat dit te klein is. Het is juist de kern, en past bij de hele tekst.",
+    "Klopt: koffie en thee zijn een detail dat maar één zin beslaat.",
+    "Koos je \"\"Everybody is welcome at the Repair Cafe.\"\"? Dan denk je dat dit te klein is. Het is een belangrijk deel van de uitnodiging, en dekt veel.",
+    "Koos je \"\"It is better for the environment.\"\"? Dan denk je dat dit te klein is. Het is een reden uit de tekst, en past bij de kern."
+   ],
+   "uh": "Welke zin is te klein?",
+   "ctx": "Read the text: \"Repair Cafe opens in our town! Is your bike broken? Does your toaster not work any more? Don't throw it away: bring it to the Repair Cafe in the community centre on the first Saturday of every month. Volunteers will help you to repair your things for free. You only pay for new parts. It is better for your wallet and for the environment, because we produce less waste. Everybody is welcome, and there is free coffee and tea. No need to book; just come in between 10.00 am and 1.00 pm.\""
+  },
+  {
+   "v": "What does the first sentence of the text tell you?",
+   "o": [
+    "\"that Jo is fifteen\"",
+    "\"that a phone is important in an emergency, I suppose\"",
+    "\"that the rule will stay\"",
+    "\"that many schools are changing their phone rules\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 0,
+   "u": "Eerste zin = onderwerp. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"that Jo is fifteen\"\"? Dan denk je dat de eerste zin over Jo gaat. Jo komt veel later, dus dat klopt niet.",
+    "Koos je \"\"that a phone is important in an emergency, I suppose\"\"? Dan denk je dat de eerste zin over noodgevallen gaat. Dat zeggen sommige ouders, en komt later.",
+    "Koos je \"\"that the rule will stay\"\"? Dan denk je dat de eerste zin de uitkomst noemt. De school beslist pas na zes maanden, dus dat is later.",
+    "Klopt: de eerste zin zet het onderwerp neer, zoals vaak bij een kernzin."
+   ],
+   "uh": "Wat zegt de eerste zin?",
+   "ctx": "Read the text: \"Phones at school. Many schools in the UK are changing their rules about mobile phones. At Park High School, pupils must hand in their phones every morning. The head teacher says that pupils are more active at break and talk to each other more. Some pupils are not happy. \"I use my phone to check my timetable,\" says Jo, 15. Parents also have different opinions. Some say that a phone is important in an emergency. After six months, the school will ask everybody what they think and then decide if the rule stays.\""
+  },
+  {
+   "v": "Which sentence is too narrow to be the main idea?",
+   "o": [
+    "\"Jo uses a phone to check the timetable.\"",
+    "\"A school has a new rule about phones.\"",
+    "\"Pupils and parents have different opinions about a phone rule.\"",
+    "\"A school will decide after six months if its phone rule stays.\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 2,
+   "u": "Te smal = één voorbeeld. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: dit is één voorbeeld en dekt de tekst niet.",
+    "Koos je \"\"A school has a new rule about phones.\"\"? Dan denk je dat dit te smal is. Het dekt de hele tekst, en is dus een goede hoofdgedachte.",
+    "Koos je \"\"Pupils and parents have different opinions about a phone rule.\"\"? Dan denk je dat dit te smal is. Het dekt het grootste deel van de tekst, en is dus ruim genoeg.",
+    "Koos je \"\"A school will decide after six months if its phone rule stays.\"\"? Dan denk je dat dit te smal is. Het noemt de regel en het besluit, en past bij de tekst."
+   ],
+   "uh": "Welke zin is te smal?",
+   "ctx": "Read the text: \"Phones at school. Many schools in the UK are changing their rules about mobile phones. At Park High School, pupils must hand in their phones every morning. The head teacher says that pupils are more active at break and talk to each other more. Some pupils are not happy. \"I use my phone to check my timetable,\" says Jo, 15. Parents also have different opinions. Some say that a phone is important in an emergency. After six months, the school will ask everybody what they think and then decide if the rule stays.\""
+  },
+  {
+   "v": "Which words show that the text gives two sides of the story?",
+   "o": [
+    "\"\"Many schools\" and \"Park High School\", really, to be honest, you know\"",
+    "\"\"Every morning\" and \"six months\"\"",
+    "\"\"Some pupils are not happy\" and \"Some say that a phone is important\"\"",
+    "\"\"Jo, 15\" and \"the head teacher\"\""
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 3,
+   "u": "Verschillende meningen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"\"Many schools\" and \"Park High School\", really, to be honest, you know\"\"? Dan denk je dat de namen twee kanten tonen. Ze noemen alleen schoolnamen, en geen meningen.",
+    "Koos je \"\"\"Every morning\" and \"six months\"\"\"? Dan denk je dat de tijden twee kanten tonen. Ze zijn gegevens, en geen meningen.",
+    "Klopt: beide zinnen tonen dat er verschillende meningen zijn.",
+    "Koos je \"\"\"Jo, 15\" and \"the head teacher\"\"\"? Dan denk je dat de personen twee kanten tonen. Ze noemen alleen wie spreekt, en niet wat ze vinden."
+   ],
+   "uh": "Welke woorden tonen twee kanten?",
+   "ctx": "Read the text: \"Phones at school. Many schools in the UK are changing their rules about mobile phones. At Park High School, pupils must hand in their phones every morning. The head teacher says that pupils are more active at break and talk to each other more. Some pupils are not happy. \"I use my phone to check my timetable,\" says Jo, 15. Parents also have different opinions. Some say that a phone is important in an emergency. After six months, the school will ask everybody what they think and then decide if the rule stays.\""
+  },
+  {
+   "v": "What changed between the first night and now?",
+   "o": [
+    "\"The boys now go to bed by themselves, I think, I suppose.\"",
+    "\"She now writes down the rules and brings a game.\"",
+    "\"She earns more money.\"",
+    "\"She works every evening now.\""
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 1,
+   "u": "Voor en nu vergelijken. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"The boys now go to bed by themselves, I think, I suppose.\"\"? Dan denk je dat de jongens veranderd zijn. Daar staat niets over, je verzint iets.",
+    "Klopt: ze noteert nu wat de ouders zeggen en neemt een spelletje mee.",
+    "Koos je \"\"She earns more money.\"\"? Dan denk je dat het loon is veranderd. Er staat 6 euros zonder verandering, dus dat klopt niet.",
+    "Koos je \"\"She works every evening now.\"\"? Dan denk je dat ze vaker werkt. Er staat every Thursday, dus het is hetzelfde."
+   ],
+   "uh": "Wat is er veranderd?",
+   "ctx": "Read the text: \"My first month as a babysitter. Last month I started babysitting for a family in my street. I look after two boys, aged 5 and 7, every Thursday evening. The first night was difficult: the boys did not want to go to bed and I forgot to ask the parents about the rules. Now I always write down what the parents say. I also bring a game that we can play together. I earn 6 euros an hour, which is not a lot, but I like the boys and I am saving for a new bike.\""
+  },
+  {
+   "v": "Which statement is too broad to be the main idea of the text?",
+   "o": [
+    "\"The writer learned to babysit and likes it.\"",
+    "\"The writer improved after a difficult first night.\"",
+    "\"The writer started a new job in her street.\"",
+    "\"Children are difficult to look after.\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 4,
+   "u": "Te breed = niet over deze tekst. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"The writer learned to babysit and likes it.\"\"? Dan denk je dat dit te breed is. Het past precies bij de tekst, en is dus goed.",
+    "Koos je \"\"The writer improved after a difficult first night.\"\"? Dan denk je dat dit te breed is. Het past bij de tekst, en is dus goed.",
+    "Koos je \"\"The writer started a new job in her street.\"\"? Dan denk je dat dit te breed is. Het is specifiek, en past bij de tekst.",
+    "Klopt: dit gaat over alle kinderen en past niet bij deze specifieke tekst."
+   ],
+   "uh": "Welke uitspraak is te breed?",
+   "ctx": "Read the text: \"My first month as a babysitter. Last month I started babysitting for a family in my street. I look after two boys, aged 5 and 7, every Thursday evening. The first night was difficult: the boys did not want to go to bed and I forgot to ask the parents about the rules. Now I always write down what the parents say. I also bring a game that we can play together. I earn 6 euros an hour, which is not a lot, but I like the boys and I am saving for a new bike.\""
+  },
+  {
+   "v": "What does the title \"My first month as a babysitter\" tell you?",
+   "o": [
+    "\"that the text is about the writer's start in a new job\"",
+    "\"that the writer is a very good babysitter\"",
+    "\"that the text is about all babysitters\"",
+    "\"that the text gives a babysitting price list, I suppose, really\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 0,
+   "u": "Titel = persoonlijk begin. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: first month en babysitter noemen het onderwerp en de ik-vorm.",
+    "Koos je \"\"that the writer is a very good babysitter\"\"? Dan denk je dat de titel kwaliteit noemt. De titel zegt alleen over de eerste maand, en niet hoe goed ze is.",
+    "Koos je \"\"that the text is about all babysitters\"\"? Dan denk je dat de titel over iedereen gaat. My first month is persoonlijk, dus alleen over haar.",
+    "Koos je \"\"that the text gives a babysitting price list, I suppose, really\"\"? Dan denk je dat de titel prijzen noemt. Er staat niets over een prijslijst, dus dat klopt niet."
+   ],
+   "uh": "Wat zegt de titel?",
+   "ctx": "Read the text: \"My first month as a babysitter. Last month I started babysitting for a family in my street. I look after two boys, aged 5 and 7, every Thursday evening. The first night was difficult: the boys did not want to go to bed and I forgot to ask the parents about the rules. Now I always write down what the parents say. I also bring a game that we can play together. I earn 6 euros an hour, which is not a lot, but I like the boys and I am saving for a new bike.\""
+  },
+  {
+   "v": "Which pair is correct?",
+   "o": [
+    "\"Main idea: coffee and tea are free. Detail: repair broken things for free.\"",
+    "\"Main idea: it opens between 10 am and 1 pm. Detail: repairs are free.\"",
+    "\"Main idea: repair broken things for free. Detail: coffee and tea are free.\"",
+    "\"Main idea: the community centre has a toaster. Detail: bikes can be repaired.\""
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 1,
+   "u": "Kern en detail onderscheiden. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"Main idea: coffee and tea are free. Detail: repair broken things for free.\"\"? Dan denk je dat de koffie de kern is. Dat is een detail, en de reparatie is de kern.",
+    "Koos je \"\"Main idea: it opens between 10 am and 1 pm. Detail: repairs are free.\"\"? Dan denk je dat de openingstijd de kern is. Dat is een detail, en de reparatie is de kern.",
+    "Klopt: de gratis reparatie is de kern en de koffie en thee is een detail.",
+    "Koos je \"\"Main idea: the community centre has a toaster. Detail: bikes can be repaired.\"\"? Dan denk je dat een toaster de kern is. Dat is een voorbeeld, en de kern is repareren."
+   ],
+   "uh": "Welk paar klopt?",
+   "ctx": "Read the text: \"Repair Cafe opens in our town! Is your bike broken? Does your toaster not work any more? Don't throw it away: bring it to the Repair Cafe in the community centre on the first Saturday of every month. Volunteers will help you to repair your things for free. You only pay for new parts. It is better for your wallet and for the environment, because we produce less waste. Everybody is welcome, and there is free coffee and tea. No need to book; just come in between 10.00 am and 1.00 pm.\""
+  },
+  {
+   "v": "Which words show that the text wants to persuade people to come?",
+   "o": [
+    "\"\"on the first Saturday of every month\", really, to be honest\"",
+    "\"\"Don't throw it away: bring it to the Repair Cafe\"\"",
+    "\"\"between 10.00 am and 1.00 pm\"\"",
+    "\"\"in the community centre\"\""
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 3,
+   "u": "Oproep = overtuigen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"\"on the first Saturday of every month\", really, to be honest\"\"? Dan denk je dat de dag overtuigt. Het is een gegeven, en geen oproep.",
+    "Klopt: dit is een oproep aan de lezer, typisch voor een overtuigende tekst.",
+    "Koos je \"\"\"between 10.00 am and 1.00 pm\"\"\"? Dan denk je dat de tijd overtuigt. Het is een gegeven, en geen oproep.",
+    "Koos je \"\"\"in the community centre\"\"\"? Dan denk je dat de plaats overtuigt. Het is een gegeven, en geen oproep."
+   ],
+   "uh": "Welke woorden overtuigen?",
+   "ctx": "Read the text: \"Repair Cafe opens in our town! Is your bike broken? Does your toaster not work any more? Don't throw it away: bring it to the Repair Cafe in the community centre on the first Saturday of every month. Volunteers will help you to repair your things for free. You only pay for new parts. It is better for your wallet and for the environment, because we produce less waste. Everybody is welcome, and there is free coffee and tea. No need to book; just come in between 10.00 am and 1.00 pm.\""
+  },
+  {
+   "v": "Which sentence gives a reason why the Repair Cafe is good?",
+   "o": [
+    "\"It is on the first Saturday, I think, I suppose, really.\"",
+    "\"Everybody is welcome.\"",
+    "\"You do not need to book.\"",
+    "\"It is better for your wallet and for the environment.\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 2,
+   "u": "Redenen = voor je portemonnee en milieu. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"It is on the first Saturday, I think, I suppose, really.\"\"? Dan denk je dat de dag een reden is. Het is een gegeven, en geen reden.",
+    "Koos je \"\"Everybody is welcome.\"\"? Dan denk je dat welkom zijn een reden is. Het is een uitnodiging, en geen reden.",
+    "Koos je \"\"You do not need to book.\"\"? Dan denk je dat niet boeken een reden is. Het is een praktisch punt, en geen reden.",
+    "Klopt: de zin noemt twee redenen voor het café."
+   ],
+   "uh": "Welke zin noemt een reden?",
+   "ctx": "Read the text: \"Repair Cafe opens in our town! Is your bike broken? Does your toaster not work any more? Don't throw it away: bring it to the Repair Cafe in the community centre on the first Saturday of every month. Volunteers will help you to repair your things for free. You only pay for new parts. It is better for your wallet and for the environment, because we produce less waste. Everybody is welcome, and there is free coffee and tea. No need to book; just come in between 10.00 am and 1.00 pm.\""
+  },
+  {
+   "v": "A student says: \"The main idea is that everybody can drink coffee.\" What is wrong with this answer?",
+   "o": [
+    "\"it is only a detail and does not cover the whole text\"",
+    "\"it is too broad\"",
+    "\"it is not in the text\"",
+    "\"it is the title of the text, to be honest, you know, I think\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 4,
+   "u": "Controleer of het alles dekt. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: de koffie is één zin, de tekst gaat over repareren.",
+    "Koos je \"\"it is too broad\"\"? Dan denk je dat het te breed is. Het is juist te klein, en dekt maar één zin.",
+    "Koos je \"\"it is not in the text\"\"? Dan denk je dat het niet in de tekst staat. Het staat er wel, maar is een detail.",
+    "Koos je \"\"it is the title of the text, to be honest, you know, I think\"\"? Dan denk je dat het de titel is. De titel noemt het Repair Cafe, en niet de koffie."
+   ],
+   "uh": "Wat is er mis met het antwoord?",
+   "ctx": "Read the text: \"Repair Cafe opens in our town! Is your bike broken? Does your toaster not work any more? Don't throw it away: bring it to the Repair Cafe in the community centre on the first Saturday of every month. Volunteers will help you to repair your things for free. You only pay for new parts. It is better for your wallet and for the environment, because we produce less waste. Everybody is welcome, and there is free coffee and tea. No need to book; just come in between 10.00 am and 1.00 pm.\""
+  }
+ ],
+ "oe": [
+  {
+   "bron": "Examenstijl",
+   "ctx": "Read the text: \"Sam gets up at 6.30 am every day because he delivers newspapers before school. He earns 40 euros a week. Last week he saved enough money to buy a new phone. Sam says that the work is tiring, but he likes the quiet streets in the morning and the exercise on his bike.\" You must say what the text is about.",
+   "v": "Write the main idea of the text in one sentence.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Sam bezorgt kranten voor school (1p). Hij vindt het werk leuk of nuttig ondanks de vermoeidheid (1p). Een volledige zin die niet te smal is (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Read the text: \"Our school wants a new bike shed. At the moment, there are only 50 places and 200 pupils cycle to school. Many bikes stand outside in the rain. The head teacher says that the school will ask the council for money, but that it will take a year.\" Your teacher asks you which sentence is a detail.",
+   "v": "Write one detail from the text and say why it is a detail.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Een juist detail, zoals 50 plaatsen (1p). Een reden: het verandert de kern niet (1p). De hoofdgedachte duidelijk anders (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Read the text: \"Visit the Sunny Day Camp this summer! Swim in the lake, climb trees and sleep in tents. Camps are for children aged 8 to 14. Book before 1 June and get 10% off.\" You must say what the aim of the text is.",
+   "v": "Write the aim of the text and one phrase that shows it.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Het doel: de lezer overtuigen om te boeken (1p). Een zin of woorden als Book before 1 June (1p). Een duidelijke uitleg (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "A classmate chooses this main idea for a text about a school trip to London: \"The trip costs 120 euros.\" The text also tells about the museums, the hotel and the journey by train. Your teacher says that the answer is too small.",
+   "v": "Explain in English why this main idea is too small.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Het is maar één detail (1p). De tekst gaat ook over musea, hotel en reis (1p). Een betere hoofdgedachte genoemd of omschreven (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "You read a text with the title \"My new hobby: skating\". After the text you must choose between: A \"Skating is difficult\" and B \"The writer enjoys learning to skate\". The text tells about falls, progress and new friends.",
+   "v": "Choose A or B and explain your choice.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "B gekozen (1p). Uitleg: de tekst noemt vallen, vooruitgang en vrienden (1p). A is te smal of te negatief (1p)."
+  }
+ ]
+}

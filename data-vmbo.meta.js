@@ -718,6 +718,27 @@ var VAKKEN_VMBO = [
       "nOe": 5,
       "nBeg": 12,
       "hasSam": true
+     },
+     {
+      "id": "A2",
+      "lo": "en.A.2",
+      "gs": 2,
+      "naam": "De hoofdgedachte van een tekst bepalen",
+      "beschrijving": "Je leert in een Engelse tekst de hoofdgedachte te vinden: je gebruikt de titel en de eerste en laatste zin, onderscheidt hoofdzaak van bijzaak, formuleert de kern in één zin die niet te smal of te breed is en let op het doel van de schrijver.",
+      "ceStatus": "CE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Titel en kernzin",
+       "Hoofdzaak en bijzaak",
+       "Een hoofdgedachte formuleren",
+       "Het doel van de schrijver",
+       "Controleren"
+      ],
+      "nSv": 27,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
      }
     ]
    },
