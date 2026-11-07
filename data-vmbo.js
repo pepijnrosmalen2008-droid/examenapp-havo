@@ -21921,7 +21921,691 @@ var VAKKEN_VMBO = [
       "d": "Engels voor \"terwijl\"; geeft gelijktijdigheid aan"
      }
     ],
-    "sam": "<div class=\"sam-intro\">Bij <strong>leesvaardigheid</strong> gebruik je strategieën als <strong>skimmen</strong> (globaal lezen) en <strong>scannen</strong> (gericht zoeken). <strong>Signaalwoorden</strong> (connectors) zoals <em>but</em>, <em>because</em> en <em>therefore</em> laten zien hoe zinnen samenhangen.</div><div class=\"sam-head\">1. Leesstrategieën</div><p>Je leest een tekst niet altijd woord voor woord. Met <strong>skimmen</strong> lees je snel en globaal om de hoofdgedachte te pakken. Met <strong>scannen</strong> zoek je gericht naar één ding, bijvoorbeeld een naam of datum. Bij <strong>intensief lezen</strong> lees je nauwkeurig omdat elk detail telt. De <strong>kernzin</strong> geeft de hoofdgedachte van een alinea en staat vaak vooraan of achteraan.</p><div class=\"sam-head\">2. Signaalwoorden (connectors)</div><p><strong>Signaalwoorden</strong> verbinden zinnen en verraden het verband. Een <strong>tegenstelling</strong>: <em>but</em> (maar), <em>however</em> (echter), <em>although</em> (hoewel). Een <strong>reden</strong>: <em>because</em> (omdat). Een <strong>gevolg</strong>: <em>so</em> (dus), <em>therefore</em> (daarom). Een <strong>opsomming</strong>: <em>and</em>, <em>moreover</em> (bovendien). Een <strong>voorbeeld</strong>: <em>for example</em> (bijvoorbeeld). Herken je het signaalwoord, dan snap je vaak de zin zonder alles te vertalen.</p><div class=\"sam-head\">Begrippen op een rij</div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Skimmen</div><div class=\"sam-definitie-body\">snel en globaal lezen om de hoofdgedachte te pakken.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Scannen</div><div class=\"sam-definitie-body\">gericht zoeken naar één stukje informatie.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Intensief lezen</div><div class=\"sam-definitie-body\">nauwkeurig lezen omdat elk detail telt.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Kernzin</div><div class=\"sam-definitie-body\">de zin met de hoofdgedachte van een alinea.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">But</div><div class=\"sam-definitie-body\">Engels voor \"maar\"; geeft een tegenstelling aan.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">However</div><div class=\"sam-definitie-body\">Engels voor \"echter\"; geeft een tegenstelling aan.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Although</div><div class=\"sam-definitie-body\">Engels voor \"hoewel\"; geeft een tegenstelling aan.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Because</div><div class=\"sam-definitie-body\">Engels voor \"omdat\"; geeft een reden aan.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Therefore</div><div class=\"sam-definitie-body\">Engels voor \"daarom\"; geeft een gevolg aan.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">For example</div><div class=\"sam-definitie-body\">Engels voor \"bijvoorbeeld\"; leidt een voorbeeld in.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Moreover</div><div class=\"sam-definitie-body\">Engels voor \"bovendien\"; voegt iets toe.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">While</div><div class=\"sam-definitie-body\">Engels voor \"terwijl\"; geeft gelijktijdigheid aan.</div></div><div class=\"sam-onthoud\"><b>Let op de verschillen.</b> <b>«Skimmen»</b> is globaal lezen, terwijl <b>«Scannen»</b> gericht zoeken is. <b>«Intensief lezen»</b> is nauwkeurig lezen, terwijl <b>«Skimmen»</b> globaal lezen is. <b>«But»</b> is maar (tegenstelling), terwijl <b>«Because»</b> omdat (reden) is. <b>«However»</b> is echter (tegenstelling), terwijl <b>«Therefore»</b> daarom (gevolg) is.</div>"
+    "sam": "<div class=\"sam-intro\">Bij <strong>leesvaardigheid</strong> gebruik je strategieën als <strong>skimmen</strong> (globaal lezen) en <strong>scannen</strong> (gericht zoeken). <strong>Signaalwoorden</strong> (connectors) zoals <em>but</em>, <em>because</em> en <em>therefore</em> laten zien hoe zinnen samenhangen.</div><div class=\"sam-head\">1. Leesstrategieën</div><p>Je leest een tekst niet altijd woord voor woord. Met <strong>skimmen</strong> lees je snel en globaal om de hoofdgedachte te pakken. Met <strong>scannen</strong> zoek je gericht naar één ding, bijvoorbeeld een naam of datum. Bij <strong>intensief lezen</strong> lees je nauwkeurig omdat elk detail telt. De <strong>kernzin</strong> geeft de hoofdgedachte van een alinea en staat vaak vooraan of achteraan.</p><div class=\"sam-head\">2. Signaalwoorden (connectors)</div><p><strong>Signaalwoorden</strong> verbinden zinnen en verraden het verband. Een <strong>tegenstelling</strong>: <em>but</em> (maar), <em>however</em> (echter), <em>although</em> (hoewel). Een <strong>reden</strong>: <em>because</em> (omdat). Een <strong>gevolg</strong>: <em>so</em> (dus), <em>therefore</em> (daarom). Een <strong>opsomming</strong>: <em>and</em>, <em>moreover</em> (bovendien). Een <strong>voorbeeld</strong>: <em>for example</em> (bijvoorbeeld). Herken je het signaalwoord, dan snap je vaak de zin zonder alles te vertalen.</p><div class=\"sam-head\">Begrippen op een rij</div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Skimmen</div><div class=\"sam-definitie-body\">snel en globaal lezen om de hoofdgedachte te pakken.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Scannen</div><div class=\"sam-definitie-body\">gericht zoeken naar één stukje informatie.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Intensief lezen</div><div class=\"sam-definitie-body\">nauwkeurig lezen omdat elk detail telt.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Kernzin</div><div class=\"sam-definitie-body\">de zin met de hoofdgedachte van een alinea.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">But</div><div class=\"sam-definitie-body\">Engels voor \"maar\"; geeft een tegenstelling aan.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">However</div><div class=\"sam-definitie-body\">Engels voor \"echter\"; geeft een tegenstelling aan.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Although</div><div class=\"sam-definitie-body\">Engels voor \"hoewel\"; geeft een tegenstelling aan.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Because</div><div class=\"sam-definitie-body\">Engels voor \"omdat\"; geeft een reden aan.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Therefore</div><div class=\"sam-definitie-body\">Engels voor \"daarom\"; geeft een gevolg aan.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">For example</div><div class=\"sam-definitie-body\">Engels voor \"bijvoorbeeld\"; leidt een voorbeeld in.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Moreover</div><div class=\"sam-definitie-body\">Engels voor \"bovendien\"; voegt iets toe.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">While</div><div class=\"sam-definitie-body\">Engels voor \"terwijl\"; geeft gelijktijdigheid aan.</div></div><div class=\"sam-onthoud\"><b>Let op de verschillen.</b> <b>«Skimmen»</b> is globaal lezen, terwijl <b>«Scannen»</b> gericht zoeken is. <b>«Intensief lezen»</b> is nauwkeurig lezen, terwijl <b>«Skimmen»</b> globaal lezen is. <b>«But»</b> is maar (tegenstelling), terwijl <b>«Because»</b> omdat (reden) is. <b>«However»</b> is echter (tegenstelling), terwijl <b>«Therefore»</b> daarom (gevolg) is.</div>",
+    "leerdoelen": [
+     {
+      "id": "A1",
+      "lo": "en.A.1",
+      "gs": 2,
+      "naam": "Informatie zoeken in een Engelse tekst",
+      "beschrijving": "Je leert in een Engelse tekst gericht informatie te zoeken: je scant naar prijzen, tijden en namen, skimt voor het overzicht, gebruikt de trefwoorden uit de vraag en controleert je antwoord in de tekst.",
+      "ceStatus": "CE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Scannen",
+       "Skimmen",
+       "Kopjes en alinea's",
+       "De vraag als wegwijzer",
+       "Controleren in de tekst"
+      ],
+      "sam": "Bij scannen zoek je snel naar een gegeven zoals een prijs, tijd of naam. Bij skimmen lees je vluchtig voor het overzicht, met de titel, de kopjes en de eerste zinnen. Je leest eerst de vraag en onderstreept de trefwoorden. Een tijdwoord als at first geeft een verandering aan. Controleer je antwoord altijd in de tekst.",
+      "begrippen": [
+       {
+        "t": "Scannen",
+        "d": "Snel zoeken naar een bepaald gegeven, zoals een getal of naam."
+       },
+       {
+        "t": "Skimmen",
+        "d": "Snel lezen om het algemene idee te krijgen."
+       },
+       {
+        "t": "Trefwoord",
+        "d": "Een belangrijk woord in de vraag waarmee je zoekt."
+       },
+       {
+        "t": "Kopje",
+        "d": "Een korte titel boven een deel van de tekst."
+       },
+       {
+        "t": "Alinea",
+        "d": "Een blok tekst met één onderwerp."
+       },
+       {
+        "t": "Hoofdzaak",
+        "d": "Waar de tekst vooral over gaat."
+       },
+       {
+        "t": "Detail",
+        "d": "Een klein gegeven, zoals een tijd of prijs."
+       },
+       {
+        "t": "Folder",
+        "d": "Een tekst met praktische informatie."
+       },
+       {
+        "t": "Gegeven",
+        "d": "Een stukje informatie, zoals een datum."
+       },
+       {
+        "t": "Controleren",
+        "d": "Je antwoord nog eens in de tekst nakijken."
+       },
+       {
+        "t": "Strategie",
+        "d": "Een slimme manier om een vraag aan te pakken."
+       },
+       {
+        "t": "Tijdwoord",
+        "d": "Een woord als at first of now dat een tijd aangeeft."
+       }
+      ],
+      "sv": [
+       {
+        "v": "Waar let je op als je wilt weten hoeveel iets kost?",
+        "o": [
+         "\"op namen van personen\"",
+         "\"op getallen en het woord euro\"",
+         "\"alleen op de titel\"",
+         "\"alleen op de laatste zin, I think\""
+        ],
+        "c": 1,
+        "d": 1,
+        "s": 0,
+        "u": "Zoek cijfers en euro. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"op namen van personen\"\"? Dan denk je dat namen iets over een prijs zeggen. Een naam noemt een persoon, en geen bedrag.",
+         "Klopt: bedragen zoek je door te letten op cijfers en woorden als euro of pound.",
+         "Koos je \"\"alleen op de titel\"\"? Dan denk je dat de titel de prijs noemt. De titel zegt waar het over gaat, maar meestal niet wat het kost.",
+         "Koos je \"\"alleen op de laatste zin, I think\"\"? Dan denk je dat de prijs altijd aan het eind staat. Dat klopt niet, bedragen staan overal in de tekst."
+        ],
+        "uh": "Waar let je op bij een prijs?"
+       },
+       {
+        "v": "Wat is scannen?",
+        "o": [
+         "\"elk woord langzaam lezen\"",
+         "\"de hele tekst vertalen\"",
+         "\"de tekst uit je hoofd leren, to be honest, you know\"",
+         "\"snel zoeken naar een bepaald stukje informatie\""
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 0,
+        "u": "Scannen = gericht zoeken. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"elk woord langzaam lezen\"\"? Dan denk je dat scannen woord voor woord lezen is. Dat kost veel tijd, en dat heet intensief lezen.",
+         "Koos je \"\"de hele tekst vertalen\"\"? Dan denk je dat scannen vertalen is. Je zoekt alleen een gegeven, en vertaalt niets.",
+         "Koos je \"\"de tekst uit je hoofd leren, to be honest, you know\"\"? Dan denk je dat scannen onthouden is. Je zoekt alleen iets op, en leert niets uit je hoofd.",
+         "Klopt: bij scannen laat je je ogen over de tekst gaan om één bepaald gegeven te vinden."
+        ],
+        "uh": "Wat is scannen?"
+       },
+       {
+        "v": "Wat is skimmen?",
+        "o": [
+         "\"snel lezen om het algemene idee van de tekst te krijgen\"",
+         "\"een bepaald getal zoeken\"",
+         "\"elke zin precies begrijpen, I suppose, really, to be honest\"",
+         "\"de tekst hardop voorlezen\""
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 1,
+        "u": "Skimmen = globaal lezen. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: bij skimmen lees je vluchtig om te zien waar een tekst over gaat.",
+         "Koos je \"\"een bepaald getal zoeken\"\"? Dan denk je dat skimmen zoeken naar een getal is. Dat is scannen, en geen skimmen.",
+         "Koos je \"\"elke zin precies begrijpen, I suppose, really, to be honest\"\"? Dan denk je dat skimmen elke zin vraagt. Dat is nauwkeurig lezen, en kost veel tijd.",
+         "Koos je \"\"de tekst hardop voorlezen\"\"? Dan denk je dat skimmen voorlezen is. Dat is een andere vaardigheid, en geen snel globaal lezen."
+        ],
+        "uh": "Wat is skimmen?"
+       },
+       {
+        "v": "Welke delen helpen je bij het skimmen van een tekst?",
+        "o": [
+         "\"alleen het laatste woord, you know, I think\"",
+         "\"alleen de getallen\"",
+         "\"de titel, de kopjes en de eerste zinnen\"",
+         "\"alleen het paginanummer\""
+        ],
+        "c": 2,
+        "d": 1,
+        "s": 1,
+        "u": "Titel, kopjes, eerste zinnen. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"alleen het laatste woord, you know, I think\"\"? Dan denk je dat één woord genoeg is. Dat geeft geen overzicht, en zegt niets over de tekst.",
+         "Koos je \"\"alleen de getallen\"\"? Dan denk je dat getallen het onderwerp tonen. Dat helpt bij scannen, en niet bij skimmen.",
+         "Klopt: titel, kopjes en eerste zinnen geven snel een beeld van de inhoud.",
+         "Koos je \"\"alleen het paginanummer\"\"? Dan denk je dat het paginanummer helpt. Het zegt niets over de inhoud, en is geen onderdeel van de tekst."
+        ],
+        "uh": "Wat helpt bij skimmen?"
+       },
+       {
+        "v": "Wat vertelt een kopje boven een stuk tekst je?",
+        "o": [
+         "\"wat het antwoord op de vraag is, really\"",
+         "\"waar het volgende stuk over gaat\"",
+         "\"hoeveel woorden de tekst heeft\"",
+         "\"wie de tekst heeft geschreven\""
+        ],
+        "c": 1,
+        "d": 1,
+        "s": 2,
+        "u": "Kopje = onderwerp. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"wat het antwoord op de vraag is, really\"\"? Dan denk je dat het kopje het antwoord geeft. Het noemt alleen het onderwerp, en niet het antwoord.",
+         "Klopt: een kopje vat in een paar woorden samen waar het volgende deel over gaat.",
+         "Koos je \"\"hoeveel woorden de tekst heeft\"\"? Dan denk je dat het kopje het aantal woorden noemt. Het noemt het onderwerp, en niet de lengte.",
+         "Koos je \"\"wie de tekst heeft geschreven\"\"? Dan denk je dat het kopje de schrijver noemt. Het geeft het onderwerp, en geen auteur."
+        ],
+        "uh": "Wat zegt een kopje?"
+       },
+       {
+        "v": "Wat doe je eerst als je een leesvraag krijgt?",
+        "o": [
+         "\"de tekst woord voor woord lezen\"",
+         "\"een antwoord kiezen dat logisch klinkt, I think, I suppose\"",
+         "\"alleen naar de antwoorden kijken\"",
+         "\"de vraag lezen en de belangrijke woorden onderstrepen\""
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 3,
+        "u": "Eerst de vraag, dan zoeken. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"de tekst woord voor woord lezen\"\"? Dan denk je dat je eerst alles moet lezen. Dat kost tijd, en je weet nog niet waar je op moet letten.",
+         "Koos je \"\"een antwoord kiezen dat logisch klinkt, I think, I suppose\"\"? Dan denk je dat raden werkt. Dan mis je het bewijs in de tekst, en kies je vaak fout.",
+         "Koos je \"\"alleen naar de antwoorden kijken\"\"? Dan denk je dat de antwoorden genoeg zijn. De vraag bepaalt waar je zoekt, en de antwoorden kunnen misleiden.",
+         "Klopt: met de trefwoorden uit de vraag weet je precies waar je in de tekst moet zoeken."
+        ],
+        "uh": "Wat doe je eerst bij een leesvraag?"
+       },
+       {
+        "v": "Waarom controleer je je antwoord in de tekst?",
+        "o": [
+         "\"de tekst gebruikt soms andere woorden en foute opties lijken vaak op de tekst\"",
+         "\"omdat het altijd fout is\"",
+         "\"omdat de tekst vaak verandert\"",
+         "\"omdat je dan sneller klaar bent, to be honest, you know, I think\""
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 4,
+        "u": "Controleer met de tekst. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: controleren voorkomt dat je kiest voor een antwoord dat alleen op de tekst lijkt.",
+         "Koos je \"\"omdat het altijd fout is\"\"? Dan denk je dat een eerste antwoord altijd fout is. Het kan juist goed zijn, maar controleren geeft zekerheid.",
+         "Koos je \"\"omdat de tekst vaak verandert\"\"? Dan denk je dat de tekst verandert. De tekst blijft gelijk, maar je kunt iets over het hoofd zien.",
+         "Koos je \"\"omdat je dan sneller klaar bent, to be honest, you know, I think\"\"? Dan denk je dat controleren tijd bespaart. Het kost een paar seconden, maar voorkomt fouten."
+        ],
+        "uh": "Waarom controleer je in de tekst?"
+       },
+       {
+        "v": "How much does a swimming lesson cost?",
+        "o": [
+         "\"A lesson costs 5 euros, I suppose.\"",
+         "\"A lesson costs 3 euros.\"",
+         "\"A lesson costs 8 euros.\"",
+         "\"A lesson costs 1 euro.\""
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 0,
+        "u": "Zoek lesson en euros. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"A lesson costs 5 euros, I suppose.\"\"? Dan denk je dat het eerste bedrag in de tekst de lesprijs is. 5 euros is het toegangstarief voor volwassenen, en geen lesgeld.",
+         "Koos je \"\"A lesson costs 3 euros.\"\"? Dan denk je dat een laag bedrag bij een les past. 3 euros is de entree voor kinderen, en niet de prijs van de zwemles.",
+         "Klopt: in de tekst staat dat een zwemles 8 euro kost en 45 minuten duurt.",
+         "Koos je \"\"A lesson costs 1 euro.\"\"? Dan denk je dat het kleinste bedrag de les is. 1 euro is de prijs van een kluisje, en je krijgt die munt terug."
+        ],
+        "uh": "Hoeveel kost een zwemles?",
+        "ctx": "Read the text: \"Greenfield Swimming Pool. Opening times: Monday to Friday 7.00 am to 9.00 pm; Saturday and Sunday 9.00 am to 6.00 pm. The pool is closed on public holidays. Prices: adults 5 euros, children under 12 3 euros, children under 4 swim for free. A swimming lesson costs 8 euros and lasts 45 minutes. Lessons for beginners start on Wednesday at 4.00 pm. You need to bring your own towel; hairdryers are available in the changing rooms. Lockers cost 1 euro, but you get the coin back. Please shower before you enter the pool.\""
+       },
+       {
+        "v": "When is the pool open on Sunday?",
+        "o": [
+         "\"from 7.00 am to 9.00 pm, you know\"",
+         "\"from 9.00 am to 6.00 pm\"",
+         "\"it is closed on Sundays\"",
+         "\"only in the afternoon\""
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 0,
+        "u": "Weekend = 9 tot 6. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"from 7.00 am to 9.00 pm, you know\"\"? Dan denk je dat de tijden van maandag tot vrijdag ook voor zondag gelden. Die gelden alleen doordeweeks, en niet in het weekend.",
+         "Klopt: in het weekend is het bad open van 9.00 tot 18.00 uur.",
+         "Koos je \"\"it is closed on Sundays\"\"? Dan denk je dat het bad op zondag dicht is. Alleen op feestdagen is het dicht, en zondag is gewoon open.",
+         "Koos je \"\"only in the afternoon\"\"? Dan denk je dat het alleen in de middag open is. Het opent al om 9.00, dus ook in de ochtend."
+        ],
+        "uh": "Wanneer is het zwembad op zondag open?",
+        "ctx": "Read the text: \"Greenfield Swimming Pool. Opening times: Monday to Friday 7.00 am to 9.00 pm; Saturday and Sunday 9.00 am to 6.00 pm. The pool is closed on public holidays. Prices: adults 5 euros, children under 12 3 euros, children under 4 swim for free. A swimming lesson costs 8 euros and lasts 45 minutes. Lessons for beginners start on Wednesday at 4.00 pm. You need to bring your own towel; hairdryers are available in the changing rooms. Lockers cost 1 euro, but you get the coin back. Please shower before you enter the pool.\""
+       },
+       {
+        "v": "What must you do before you go into the pool?",
+        "o": [
+         "\"buy a hairdryer\"",
+         "\"make a phone call\"",
+         "\"book a lesson\"",
+         "\"take a shower\""
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 3,
+        "u": "Please shower. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"buy a hairdryer\"\"? Dan denk je dat je een föhn moet kopen. De föhns zijn beschikbaar, en niet verplicht.",
+         "Koos je \"\"make a phone call\"\"? Dan denk je dat je moet bellen. Dat staat alleen genoemd voor informatie, en niet als regel.",
+         "Koos je \"\"book a lesson\"\"? Dan denk je dat je een les moet boeken. Lessen zijn optioneel, en niet vereist.",
+         "Klopt: in de laatste zin staat dat je moet douchen voordat je het bad in gaat."
+        ],
+        "uh": "Wat moet je eerst doen?",
+        "ctx": "Read the text: \"Greenfield Swimming Pool. Opening times: Monday to Friday 7.00 am to 9.00 pm; Saturday and Sunday 9.00 am to 6.00 pm. The pool is closed on public holidays. Prices: adults 5 euros, children under 12 3 euros, children under 4 swim for free. A swimming lesson costs 8 euros and lasts 45 minutes. Lessons for beginners start on Wednesday at 4.00 pm. You need to bring your own towel; hairdryers are available in the changing rooms. Lockers cost 1 euro, but you get the coin back. Please shower before you enter the pool.\""
+       },
+       {
+        "v": "A family wants to swim on a public holiday. What will they find?",
+        "o": [
+         "\"The pool is closed.\"",
+         "\"The pool opens at 7.00 am.\"",
+         "\"The pool is open until 9.00 pm.\"",
+         "\"The pool is free for children.\""
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 4,
+        "u": "Public holidays = dicht. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: op feestdagen is het zwembad gesloten.",
+         "Koos je \"\"The pool opens at 7.00 am.\"\"? Dan denk je dat de openingstijden van een gewone dag ook op een feestdag gelden. 7.00 am staat bij maandag tot vrijdag, dus niet bij feestdagen.",
+         "Koos je \"\"The pool is open until 9.00 pm.\"\"? Dan denk je dat het bad op feestdagen tot laat open blijft. 9.00 pm is de sluitingstijd doordeweeks, maar op feestdagen is het dicht.",
+         "Koos je \"\"The pool is free for children.\"\"? Dan denk je dat een gratis regel voor iedereen op een feestdag geldt. Alleen kinderen onder 4 zwemmen gratis, en dan nog niet als het bad dicht is."
+        ],
+        "uh": "Wat vindt het gezin op een feestdag?",
+        "ctx": "Read the text: \"Greenfield Swimming Pool. Opening times: Monday to Friday 7.00 am to 9.00 pm; Saturday and Sunday 9.00 am to 6.00 pm. The pool is closed on public holidays. Prices: adults 5 euros, children under 12 3 euros, children under 4 swim for free. A swimming lesson costs 8 euros and lasts 45 minutes. Lessons for beginners start on Wednesday at 4.00 pm. You need to bring your own towel; hairdryers are available in the changing rooms. Lockers cost 1 euro, but you get the coin back. Please shower before you enter the pool.\""
+       },
+       {
+        "v": "How old is Lena?",
+        "o": [
+         "\"Lena is 20 years old, to be honest.\"",
+         "\"Lena is 2 years old.\"",
+         "\"Lena is 17 years old.\"",
+         "\"Lena is 12 years old.\""
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 0,
+        "u": "Lena (17). Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"Lena is 20 years old, to be honest.\"\"? Dan denk je dat 20 haar leeftijd is. Dat zijn de minuten die ze fietst, en niet haar leeftijd.",
+         "Koos je \"\"Lena is 2 years old.\"\"? Dan denk je dat 2 haar leeftijd is. Dat is hoe lang de familie op de boot woont, en niet haar leeftijd.",
+         "Klopt: de tekst noemt Lena (17) in de eerste zin.",
+         "Koos je \"\"Lena is 12 years old.\"\"? Dan denk je dat ze 12 is. Dat staat niet in de tekst, en je verzint een getal."
+        ],
+        "uh": "Hoe oud is Lena?",
+        "ctx": "Read the text: \"A new life on a boat. Lena (17) lives on a boat with her parents and her little brother. The family moved onto the boat two years ago, when her father lost his job in the city. At first, Lena hated it. The boat was small and she missed her friends. Now she loves the quiet mornings on the water. She cycles to school along the canal, which takes 20 minutes. Her friends often visit at weekends and sleep on deck when the weather is warm. \"People think we are poor,\" says Lena, \"but I think we are lucky.\" Next summer the family plans to sail to Belgium.\""
+       },
+       {
+        "v": "What is the text mainly about?",
+        "o": [
+         "\"a boat race to Belgium\"",
+         "\"a girl who lives on a boat and now likes it\"",
+         "\"a father who looks for a new job, I suppose, really\"",
+         "\"how to cycle to school\""
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 1,
+        "u": "Hoofdzaak = Lena en de boot. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"a boat race to Belgium\"\"? Dan denk je dat het over een wedstrijd gaat. Belgium noemt alleen een plan, en geen race.",
+         "Klopt: de tekst gaat over Lena, die op een boot woont en daar nu blij mee is.",
+         "Koos je \"\"a father who looks for a new job, I suppose, really\"\"? Dan denk je dat het over zijn werk gaat. Dat is een reden om te verhuizen, en niet de hoofdzaak.",
+         "Koos je \"\"how to cycle to school\"\"? Dan denk je dat het over fietsen gaat. Dat is een detail, en niet de hoofdzaak."
+        ],
+        "uh": "Waar gaat de tekst vooral over?",
+        "ctx": "Read the text: \"A new life on a boat. Lena (17) lives on a boat with her parents and her little brother. The family moved onto the boat two years ago, when her father lost his job in the city. At first, Lena hated it. The boat was small and she missed her friends. Now she loves the quiet mornings on the water. She cycles to school along the canal, which takes 20 minutes. Her friends often visit at weekends and sleep on deck when the weather is warm. \"People think we are poor,\" says Lena, \"but I think we are lucky.\" Next summer the family plans to sail to Belgium.\""
+       },
+       {
+        "v": "Why did the family move onto the boat?",
+        "o": [
+         "\"Lena wanted to live near the water.\"",
+         "\"They wanted to sail to Belgium.\"",
+         "\"Her friends lived on boats.\"",
+         "\"Lena's father lost his job.\""
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 3,
+        "u": "Zoek why: lost his job. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"Lena wanted to live near the water.\"\"? Dan denk je dat Lena het wilde. Ze haatte het eerst, dus dat was niet de reden.",
+         "Koos je \"\"They wanted to sail to Belgium.\"\"? Dan denk je dat het om België ging. Dat is een plan voor volgende zomer, en niet de reden.",
+         "Koos je \"\"Her friends lived on boats.\"\"? Dan denk je dat haar vrienden op boten woonden. Ze bezoeken haar alleen, en wonen er niet.",
+         "Klopt: de familie verhuisde toen vader zijn baan in de stad verloor."
+        ],
+        "uh": "Waarom verhuisde de familie?",
+        "ctx": "Read the text: \"A new life on a boat. Lena (17) lives on a boat with her parents and her little brother. The family moved onto the boat two years ago, when her father lost his job in the city. At first, Lena hated it. The boat was small and she missed her friends. Now she loves the quiet mornings on the water. She cycles to school along the canal, which takes 20 minutes. Her friends often visit at weekends and sleep on deck when the weather is warm. \"People think we are poor,\" says Lena, \"but I think we are lucky.\" Next summer the family plans to sail to Belgium.\""
+       },
+       {
+        "v": "What time does the party start?",
+        "o": [
+         "\"It starts at 7.30 pm.\"",
+         "\"It starts at 7.00 pm.\"",
+         "\"It starts at 8.30 pm.\"",
+         "\"It starts after dinner.\""
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 0,
+        "u": "Zoek de tijd. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: in de tweede zin staat dat het feest om 7.30 uur 's avonds begint.",
+         "Koos je \"\"It starts at 7.00 pm.\"\"? Dan denk je dat het feest om 7.00 begint. Dat getal staat niet in de tekst, en je verzint een tijd.",
+         "Koos je \"\"It starts at 8.30 pm.\"\"? Dan denk je dat het om 8.30 begint. Dat staat niet in de tekst, en je verwisselt de cijfers.",
+         "Koos je \"\"It starts after dinner.\"\"? Dan denk je dat het na het eten begint. Het is zelf een barbecue, en de tijd is genoemd."
+        ],
+        "uh": "Hoe laat begint het feest?",
+        "ctx": "Read the text: \"Hi Sam, Thanks for your message. I am happy that you can come to my party on Saturday 14 June! It starts at 7.30 pm at my house, 12 Oak Street. Take bus 5 from the station and get off at the library; my house is two minutes from there. The party is a barbecue, so we will eat outside. If it rains, we will move inside. Please bring something to drink, and a swimsuit if you want to use the pool in the garden. My brother Tim will be there too; you met him last year. Could you tell me before Thursday if you are vegetarian? See you soon! Mia\""
+       },
+       {
+        "v": "Where should Sam get off the bus?",
+        "o": [
+         "\"at the station, I think\"",
+         "\"at Oak Street\"",
+         "\"at the library\"",
+         "\"at the pool\""
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 0,
+        "u": "Get off = library. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"at the station, I think\"\"? Dan denk je dat hij bij het station uitstapt. Daar stapt hij juist op de bus, en niet af.",
+         "Koos je \"\"at Oak Street\"\"? Dan denk je dat hij bij Oak Street uitstapt. Dat is het adres van het huis, en niet de halte.",
+         "Klopt: Sam moet uitstappen bij de bibliotheek, daar is het huis twee minuten vandaan.",
+         "Koos je \"\"at the pool\"\"? Dan denk je dat hij bij het zwembad uitstapt. Het zwembad is in de tuin, en geen halte."
+        ],
+        "uh": "Waar stapt Sam uit?",
+        "ctx": "Read the text: \"Hi Sam, Thanks for your message. I am happy that you can come to my party on Saturday 14 June! It starts at 7.30 pm at my house, 12 Oak Street. Take bus 5 from the station and get off at the library; my house is two minutes from there. The party is a barbecue, so we will eat outside. If it rains, we will move inside. Please bring something to drink, and a swimsuit if you want to use the pool in the garden. My brother Tim will be there too; you met him last year. Could you tell me before Thursday if you are vegetarian? See you soon! Mia\""
+       },
+       {
+        "v": "What does Sam have to tell Mia before Thursday?",
+        "o": [
+         "\"if he can come\"",
+         "\"if he is vegetarian\"",
+         "\"what he wants to drink\"",
+         "\"which bus he takes\""
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 4,
+        "u": "Before Thursday = vegetarian. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"if he can come\"\"? Dan denk je dat hij moet laten weten of hij komt. Dat staat al vast, want hij heeft toegezegd.",
+         "Klopt: Mia vraagt of Sam vóór donderdag laat weten of hij vegetariër is.",
+         "Koos je \"\"what he wants to drink\"\"? Dan denk je dat hij zijn drankje moet noemen. Hij moet drinken meenemen, en niet doorgeven.",
+         "Koos je \"\"which bus he takes\"\"? Dan denk je dat hij het busnummer moet doorgeven. Mia noemt zelf bus 5, en vraagt dat niet."
+        ],
+        "uh": "Wat moet Sam vóór donderdag doorgeven?",
+        "ctx": "Read the text: \"Hi Sam, Thanks for your message. I am happy that you can come to my party on Saturday 14 June! It starts at 7.30 pm at my house, 12 Oak Street. Take bus 5 from the station and get off at the library; my house is two minutes from there. The party is a barbecue, so we will eat outside. If it rains, we will move inside. Please bring something to drink, and a swimsuit if you want to use the pool in the garden. My brother Tim will be there too; you met him last year. Could you tell me before Thursday if you are vegetarian? See you soon! Mia\""
+       },
+       {
+        "v": "A man goes swimming with his daughter (3 years old) and his son (10). How much do they pay in total to get in?",
+        "o": [
+         "\"11 euros, I suppose\"",
+         "\"5 euros\"",
+         "\"10 euros\"",
+         "\"8 euros\""
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 0,
+        "u": "5 + 0 + 3 = 8. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"11 euros, I suppose\"\"? Dan denk je dat het meisje van 3 ook 3 euro betaalt. Kinderen onder 4 zwemmen gratis, dus dat is te veel.",
+         "Koos je \"\"5 euros\"\"? Dan denk je dat alleen de vader betaalt. De jongen van 10 betaalt nog 3, dus het is meer.",
+         "Koos je \"\"10 euros\"\"? Dan denk je dat er twee volwassenen zijn. Er is maar één vader, en dat klopt niet.",
+         "Klopt: de vader betaalt 5, het meisje onder 4 is gratis en de jongen betaalt 3, samen 8 euro."
+        ],
+        "uh": "Hoeveel betalen ze samen?",
+        "ctx": "Read the text: \"Greenfield Swimming Pool. Opening times: Monday to Friday 7.00 am to 9.00 pm; Saturday and Sunday 9.00 am to 6.00 pm. The pool is closed on public holidays. Prices: adults 5 euros, children under 12 3 euros, children under 4 swim for free. A swimming lesson costs 8 euros and lasts 45 minutes. Lessons for beginners start on Wednesday at 4.00 pm. You need to bring your own towel; hairdryers are available in the changing rooms. Lockers cost 1 euro, but you get the coin back. Please shower before you enter the pool.\""
+       },
+       {
+        "v": "What kind of text is this?",
+        "o": [
+         "\"a leaflet with practical information\"",
+         "\"a story about a swimmer\"",
+         "\"a letter to a friend\"",
+         "\"a news report about an accident, you know\""
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 1,
+        "u": "Folder = praktische informatie. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: de tekst geeft tijden, prijzen en regels, dat is een folder met praktische informatie.",
+         "Koos je \"\"a story about a swimmer\"\"? Dan denk je dat het een verhaal is. Er is geen persoon, alleen informatie.",
+         "Koos je \"\"a letter to a friend\"\"? Dan denk je dat het een brief is. Er is geen aanhef, en geen persoonlijke boodschap.",
+         "Koos je \"\"a news report about an accident, you know\"\"? Dan denk je dat het nieuws is. Er is geen gebeurtenis, maar een lijst met regels."
+        ],
+        "uh": "Wat voor tekst is dit?",
+        "ctx": "Read the text: \"Greenfield Swimming Pool. Opening times: Monday to Friday 7.00 am to 9.00 pm; Saturday and Sunday 9.00 am to 6.00 pm. The pool is closed on public holidays. Prices: adults 5 euros, children under 12 3 euros, children under 4 swim for free. A swimming lesson costs 8 euros and lasts 45 minutes. Lessons for beginners start on Wednesday at 4.00 pm. You need to bring your own towel; hairdryers are available in the changing rooms. Lockers cost 1 euro, but you get the coin back. Please shower before you enter the pool.\""
+       },
+       {
+        "v": "A beginner wants to start swimming lessons. Which facts does she need?",
+        "o": [
+         "\"lessons are on Sunday and cost 5 euros\"",
+         "\"lessons start at 7.00 am and cost 3 euros, really, to be honest\"",
+         "\"lessons start on Wednesday at 4.00 pm and cost 8 euros\"",
+         "\"lessons last 45 minutes and are free\""
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 3,
+        "u": "Let op welke zin bij welk gegeven hoort. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"lessons are on Sunday and cost 5 euros\"\"? Dan denk je dat de les op zondag is en 5 euro kost. Zondag en 5 euros zijn andere gegevens, uit andere zinnen.",
+         "Koos je \"\"lessons start at 7.00 am and cost 3 euros, really, to be honest\"\"? Dan denk je dat de les om 7.00 begint. Dat is de openingstijd van het bad, en 3 euro is een kindertarief.",
+         "Klopt: de dag, het uur en de prijs van de beginnersles staan in de tekst.",
+         "Koos je \"\"lessons last 45 minutes and are free\"\"? Dan denk je dat de les gratis is. Er staat dat een les 8 euro kost, en 45 minuten duurt."
+        ],
+        "uh": "Welke gegevens heeft zij nodig?",
+        "ctx": "Read the text: \"Greenfield Swimming Pool. Opening times: Monday to Friday 7.00 am to 9.00 pm; Saturday and Sunday 9.00 am to 6.00 pm. The pool is closed on public holidays. Prices: adults 5 euros, children under 12 3 euros, children under 4 swim for free. A swimming lesson costs 8 euros and lasts 45 minutes. Lessons for beginners start on Wednesday at 4.00 pm. You need to bring your own towel; hairdryers are available in the changing rooms. Lockers cost 1 euro, but you get the coin back. Please shower before you enter the pool.\""
+       },
+       {
+        "v": "Which sentence gives the main idea?",
+        "o": [
+         "\"Lena is poor and unhappy on the boat, I think, I suppose, really.\"",
+         "\"Lena's life on a boat is different from what people think, and she is happy.\"",
+         "\"Lena hates her school.\"",
+         "\"The family wants to leave the boat.\""
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 1,
+        "u": "Hoofdgedachte = wat de tekst als geheel zegt. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"Lena is poor and unhappy on the boat, I think, I suppose, really.\"\"? Dan denk je dat Lena arm en ongelukkig is. Ze zegt juist dat ze geluk heeft, dus dat klopt niet.",
+         "Klopt: de tekst laat zien dat Lena het leven op de boot fijn vindt, ondanks wat mensen denken.",
+         "Koos je \"\"Lena hates her school.\"\"? Dan denk je dat ze haar school haat. Dat staat niet in de tekst, je verwart het met de boot.",
+         "Koos je \"\"The family wants to leave the boat.\"\"? Dan denk je dat ze weg willen. Ze plannen juist een reis met de boot, naar België."
+        ],
+        "uh": "Welke zin geeft de hoofdgedachte?",
+        "ctx": "Read the text: \"A new life on a boat. Lena (17) lives on a boat with her parents and her little brother. The family moved onto the boat two years ago, when her father lost his job in the city. At first, Lena hated it. The boat was small and she missed her friends. Now she loves the quiet mornings on the water. She cycles to school along the canal, which takes 20 minutes. Her friends often visit at weekends and sleep on deck when the weather is warm. \"People think we are poor,\" says Lena, \"but I think we are lucky.\" Next summer the family plans to sail to Belgium.\""
+       },
+       {
+        "v": "What does 'At first' tell you in 'At first, Lena hated it'?",
+        "o": [
+         "\"that she still hates it\"",
+         "\"that it was the first boat she saw\"",
+         "\"that she never liked anything\"",
+         "\"that her feelings changed later\""
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 2,
+        "u": "At first = later anders. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"that she still hates it\"\"? Dan denk je dat ze het nog steeds haat. At first betekent in het begin, dus daarna veranderde het.",
+         "Koos je \"\"that it was the first boat she saw\"\"? Dan denk je dat first de eerste boot noemt. Het gaat om de tijd, en niet om een boot.",
+         "Koos je \"\"that she never liked anything\"\"? Dan denk je dat ze nooit iets leuk vond. Ze houdt nu van de ochtenden, dus dat klopt niet.",
+         "Klopt: at first wijst erop dat het later anders werd, zoals Now she loves ... laat zien."
+        ],
+        "uh": "Wat betekent at first?",
+        "ctx": "Read the text: \"A new life on a boat. Lena (17) lives on a boat with her parents and her little brother. The family moved onto the boat two years ago, when her father lost his job in the city. At first, Lena hated it. The boat was small and she missed her friends. Now she loves the quiet mornings on the water. She cycles to school along the canal, which takes 20 minutes. Her friends often visit at weekends and sleep on deck when the weather is warm. \"People think we are poor,\" says Lena, \"but I think we are lucky.\" Next summer the family plans to sail to Belgium.\""
+       },
+       {
+        "v": "How does Lena go to school?",
+        "o": [
+         "\"by bike along the canal\"",
+         "\"by boat, I suppose, really\"",
+         "\"by bus\"",
+         "\"on foot\""
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 3,
+        "u": "Zoek cycles. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: ze fietst langs het kanaal en doet er twintig minuten over.",
+         "Koos je \"\"by boat, I suppose, really\"\"? Dan denk je dat ze met de boot gaat. Ze woont op een boot, maar fietst naar school.",
+         "Koos je \"\"by bus\"\"? Dan denk je dat ze met de bus gaat. De bus staat niet in de tekst, en ze fietst.",
+         "Koos je \"\"on foot\"\"? Dan denk je dat ze loopt. Ze fietst, en het duurt twintig minuten."
+        ],
+        "uh": "Hoe gaat Lena naar school?",
+        "ctx": "Read the text: \"A new life on a boat. Lena (17) lives on a boat with her parents and her little brother. The family moved onto the boat two years ago, when her father lost his job in the city. At first, Lena hated it. The boat was small and she missed her friends. Now she loves the quiet mornings on the water. She cycles to school along the canal, which takes 20 minutes. Her friends often visit at weekends and sleep on deck when the weather is warm. \"People think we are poor,\" says Lena, \"but I think we are lucky.\" Next summer the family plans to sail to Belgium.\""
+       },
+       {
+        "v": "Is this statement true or false? 'Lena still hates living on the boat.'",
+        "o": [
+         "\"True, because she missed her friends, you know, I think, I suppose.\"",
+         "\"True, because the boat is small.\"",
+         "\"False, because now she loves the quiet mornings on the water.\"",
+         "\"True, because she wants to leave.\""
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 4,
+        "u": "Controleer de tijd: at first versus now. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"True, because she missed her friends, you know, I think, I suppose.\"\"? Dan denk je dat ze het nog haat omdat ze vrienden miste. Dat was in het begin, en nu is het anders.",
+         "Koos je \"\"True, because the boat is small.\"\"? Dan denk je dat de kleine boot haar nog stoort. De tekst noemt dat bij het begin, en nu is ze blij.",
+         "Klopt: de tekst zegt dat ze het eerst haatte, maar nu van de rustige ochtenden houdt.",
+         "Koos je \"\"True, because she wants to leave.\"\"? Dan denk je dat ze weg wil. Ze plant juist een reis met de boot, en is blij."
+        ],
+        "uh": "Is de uitspraak waar of onwaar?",
+        "ctx": "Read the text: \"A new life on a boat. Lena (17) lives on a boat with her parents and her little brother. The family moved onto the boat two years ago, when her father lost his job in the city. At first, Lena hated it. The boat was small and she missed her friends. Now she loves the quiet mornings on the water. She cycles to school along the canal, which takes 20 minutes. Her friends often visit at weekends and sleep on deck when the weather is warm. \"People think we are poor,\" says Lena, \"but I think we are lucky.\" Next summer the family plans to sail to Belgium.\""
+       },
+       {
+        "v": "Why did Mia write this message?",
+        "o": [
+         "\"to invite Sam for the first time, really, to be honest, you know\"",
+         "\"to answer Sam and give him information about the party\"",
+         "\"to cancel the party\"",
+         "\"to ask Sam for money\""
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 1,
+        "u": "Doel van de e-mail. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"to invite Sam for the first time, really, to be honest, you know\"\"? Dan denk je dat het een eerste uitnodiging is. Sam heeft al een bericht gestuurd, en komt al.",
+         "Klopt: Mia bedankt Sam voor zijn bericht en geeft tijd, plaats en praktische informatie.",
+         "Koos je \"\"to cancel the party\"\"? Dan denk je dat het feest afgelast wordt. Mia noemt juist tijd en plaats, dus het gaat door.",
+         "Koos je \"\"to ask Sam for money\"\"? Dan denk je dat Mia geld vraagt. Ze vraagt alleen om drinken, en of hij vegetariër is."
+        ],
+        "uh": "Waarom schreef Mia dit bericht?",
+        "ctx": "Read the text: \"Hi Sam, Thanks for your message. I am happy that you can come to my party on Saturday 14 June! It starts at 7.30 pm at my house, 12 Oak Street. Take bus 5 from the station and get off at the library; my house is two minutes from there. The party is a barbecue, so we will eat outside. If it rains, we will move inside. Please bring something to drink, and a swimsuit if you want to use the pool in the garden. My brother Tim will be there too; you met him last year. Could you tell me before Thursday if you are vegetarian? See you soon! Mia\""
+       },
+       {
+        "v": "What happens if it rains?",
+        "o": [
+         "\"The party is cancelled, I think.\"",
+         "\"They go to the library.\"",
+         "\"Tim cooks inside alone.\"",
+         "\"The party moves inside.\""
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 3,
+        "u": "If it rains = naar binnen. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"The party is cancelled, I think.\"\"? Dan denk je dat het feest afgelast wordt. Mia zegt dat ze naar binnen gaan, dus het gaat door.",
+         "Koos je \"\"They go to the library.\"\"? Dan denk je dat ze naar de bibliotheek gaan. Dat is alleen de halte, en geen schuilplaats.",
+         "Koos je \"\"Tim cooks inside alone.\"\"? Dan denk je dat Tim alleen kookt. Tim wordt niet bij het weer genoemd, dus dat is verzonnen.",
+         "Klopt: bij regen verhuist het feest naar binnen."
+        ],
+        "uh": "Wat gebeurt er bij regen?",
+        "ctx": "Read the text: \"Hi Sam, Thanks for your message. I am happy that you can come to my party on Saturday 14 June! It starts at 7.30 pm at my house, 12 Oak Street. Take bus 5 from the station and get off at the library; my house is two minutes from there. The party is a barbecue, so we will eat outside. If it rains, we will move inside. Please bring something to drink, and a swimsuit if you want to use the pool in the garden. My brother Tim will be there too; you met him last year. Could you tell me before Thursday if you are vegetarian? See you soon! Mia\""
+       },
+       {
+        "v": "Why should Sam bring a swimsuit if he wants to?",
+        "o": [
+         "\"because there is a pool in the garden\"",
+         "\"because the party is at a swimming pool\"",
+         "\"because it will rain\"",
+         "\"because Tim asked him\""
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 4,
+        "u": "Controleer wie vraagt en waarom. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: Mia noemt het zwembad in de tuin als reden voor een zwempak.",
+         "Koos je \"\"because the party is at a swimming pool\"\"? Dan denk je dat het feest in een zwembad is. Het is thuis, en het bad staat in de tuin.",
+         "Koos je \"\"because it will rain\"\"? Dan denk je dat regen de reden is. Bij regen gaan ze naar binnen, en dan gaat niemand zwemmen.",
+         "Koos je \"\"because Tim asked him\"\"? Dan denk je dat Tim het vroeg. Mia vraagt het, en Tim wordt hier niet genoemd."
+        ],
+        "uh": "Waarom een zwempak?",
+        "ctx": "Read the text: \"Hi Sam, Thanks for your message. I am happy that you can come to my party on Saturday 14 June! It starts at 7.30 pm at my house, 12 Oak Street. Take bus 5 from the station and get off at the library; my house is two minutes from there. The party is a barbecue, so we will eat outside. If it rains, we will move inside. Please bring something to drink, and a swimsuit if you want to use the pool in the garden. My brother Tim will be there too; you met him last year. Could you tell me before Thursday if you are vegetarian? See you soon! Mia\""
+       }
+      ],
+      "oe": [
+       {
+        "bron": "Examenstijl",
+        "ctx": "Read the text: \"Open Day at the Brook School is on Saturday 8 March from 10.00 am to 2.00 pm. Parents and pupils can visit the classrooms, meet the teachers and join a free lunch in the canteen. You do not need to make an appointment, but please register online before Thursday.\" You want to check the day and the time.",
+        "v": "Write the day, the time and one thing that visitors can do.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "De dag: zaterdag 8 maart (1p). De tijd: 10.00 tot 14.00 uur (1p). Een activiteit, zoals de lokalen bekijken of lunchen (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Read the text: \"Max works at a bike shop on Saturdays. He started last year, when he was 15. At first he only cleaned bikes, but now he repairs tyres and chains. His boss says that Max learns fast. Max wants to study mechanics after school.\" You must find the main idea.",
+        "v": "Write in one sentence what the text is mainly about.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Max werkt bij een fietsenwinkel (1p). Hij leert nieuwe dingen of ontwikkelt zich (1p). Een duidelijke zin zonder losse details (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Read the text: \"To get to the museum, take tram 7 from the station and get off at Central Square. The museum is next to the bank. It is open from Tuesday to Sunday. The ticket costs 6 euros, but students pay 3 euros. The cafe in the museum is closed on Sundays.\" A tourist asks you for help.",
+        "v": "Write how she gets to the museum and what a student pays.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Tram 7 van het station (1p). Uitstappen bij Central Square (1p). Studenten betalen 3 euro (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Read the text: \"My name is Eva and I am 16. I live in a small village. There is no cinema, so on Fridays my friends and I take the train to the city. We usually go to the cinema and then eat pizza. I come home at about 11 pm, and my father picks me up at the station.\" You must scan the text for details.",
+        "v": "Write two details about what Eva does on Fridays.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "De trein naar de stad (1p). De bioscoop of pizza eten (1p). Het ophalen of 23.00 uur genoemd (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Your teacher says: \"When you do a reading task, you should read the question first.\" A classmate does not understand why. You want to explain it with the words scanning and key words.",
+        "v": "Write two sentences in English that explain why you read the question first.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Je weet waar je op moet letten (1p). Je kunt de trefwoorden in de tekst zoeken, dus scannen (1p). Een duidelijke uitleg (1p)."
+       }
+      ]
+     }
+    ]
    },
    {
     "id": "B",

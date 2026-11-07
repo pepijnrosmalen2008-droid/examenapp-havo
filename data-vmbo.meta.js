@@ -696,7 +696,30 @@ var VAKKEN_VMBO = [
     "nSv": 34,
     "nOe": 0,
     "nBeg": 12,
-    "hasSam": true
+    "hasSam": true,
+    "leerdoelen": [
+     {
+      "id": "A1",
+      "lo": "en.A.1",
+      "gs": 2,
+      "naam": "Informatie zoeken in een Engelse tekst",
+      "beschrijving": "Je leert in een Engelse tekst gericht informatie te zoeken: je scant naar prijzen, tijden en namen, skimt voor het overzicht, gebruikt de trefwoorden uit de vraag en controleert je antwoord in de tekst.",
+      "ceStatus": "CE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Scannen",
+       "Skimmen",
+       "Kopjes en alinea's",
+       "De vraag als wegwijzer",
+       "Controleren in de tekst"
+      ],
+      "nSv": 27,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
+     }
+    ]
    },
    {
     "id": "B",
