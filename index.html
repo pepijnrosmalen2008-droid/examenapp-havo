@@ -1662,6 +1662,13 @@
 </div>
 
 <!-- SCHEDULE -->
+<div id="sc-voortgang" class="sc">
+<nav class="nav"><div class="nav-inner"><div class="logo" onclick="show('sc-home')"><img src="/icon-192.png" alt="Slagio" style="width:26px;height:26px;border-radius:7px;object-fit:cover;flex-shrink:0">Slagio</div><button class="bk" onclick="terug()">Terug</button><button class="theme-btn" onclick="toggleDark()" title="Nachtmodus" style="margin-left:auto"><svg viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg></button></div></nav>
+<div class="w vgp-w">
+  <header class="vgp-kop"><h2>Voortgang</h2><p id="vgp-sub">Wat je per vak beheerst. Werkt zich bij na elke quiz.</p></header>
+  <div id="rapport-content"></div>
+</div>
+</div>
 <div id="sc-schedule" class="sc">
 <nav class="nav"><div class="nav-inner"><div class="logo" onclick="show('sc-home')"><img src="/icon-192.png" alt="Slagio" style="width:26px;height:26px;border-radius:7px;object-fit:cover;flex-shrink:0">Slagio</div><button class="bk" onclick="terug()">Terug</button><button class="theme-btn" onclick="toggleDark()" title="Nachtmodus" style="margin-left:auto"><svg viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg></button></div></nav>
 <div class="w" style="padding-top:24px">
@@ -2784,15 +2791,5 @@
 
 
 <!-- RAPPORT MODAL -->
-<div id="rapport-modal" class="rapport-modal" onclick="closeRapport()">
-  <div class="rapport-sheet" onclick="event.stopPropagation()">
-    <div class="rapport-handle"></div>
-    <div class="rapport-hdr">
-      <span class="rapport-title">Je voortgang</span>
-      <button class="rapport-close-btn" onclick="closeRapport()">✕</button>
-    </div>
-    <div class="rapport-body" id="rapport-content"></div>
-  </div>
-</div>
 </body>
 </html>

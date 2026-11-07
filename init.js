@@ -527,7 +527,7 @@ const _MS_GROEPEN=[
 // taal als het telefoonmenu: nachtblauwe kop met Vonk en je stand, de zoekknop,
 // de Examentrainer als donkere kaart en de groepen Leren/Plannen/Spelen met de
 // tekeningen uit _MS_ART en per onderdeel wat er nu speelt (_msStand).
-const _ZB_SCHERM={mijnstof:'sc-mijnstof',examens:'sc-examens',herhalen:'sc-herhalen',fouten:'sc-foutenboek',plan:'sc-studieplan',rooster:'sc-schedule',cijfers:'sc-calc',arcade:'sc-arcade',wedstrijd:'sc-league',groep:'sc-groep',winkel:'sc-shop'};
+const _ZB_SCHERM={voortgang:'sc-voortgang',mijnstof:'sc-mijnstof',examens:'sc-examens',herhalen:'sc-herhalen',fouten:'sc-foutenboek',plan:'sc-studieplan',rooster:'sc-schedule',cijfers:'sc-calc',arcade:'sc-arcade',wedstrijd:'sc-league',groep:'sc-groep',winkel:'sc-shop'};
 let _zbT=0;
 function renderZijbalk(){
   if(window.innerWidth<900)return;
@@ -581,7 +581,6 @@ const _ESC_LAGEN=[
   ['msx-ov',()=>_msSheetDicht()],
   ['vonk-chat',()=>closeVonkChat(),'on'],
   ['vonk-coach',()=>closeVonkCoach(),'on'],
-  ['rapport-modal',()=>closeRapport(),'open'],
 ];
 document.addEventListener('keydown',e=>{
   if(e.key!=='Escape'||e.defaultPrevented)return;

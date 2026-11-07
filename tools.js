@@ -1,32 +1,32 @@
 // ═══════ RAPPORT ═══════
+// Voortgang is een eigen pagina (sc-voortgang, #voortgang), geen pop-up.
+// Alles draait op beheersing per leerdoel (ldMastery): ≥80% = beheerst.
 function openRapport(){
-  const modal=document.getElementById('rapport-modal');
-  if(!modal)return;
-  renderRapport();
-  modal.classList.add('open');
-  document.body.style.overflow='hidden';
+  show('sc-voortgang');
+  try{renderRapport();}catch(e){}
+  try{scrollTo(0,0);}catch(e){}
 }
-function closeRapport(){
-  document.getElementById('rapport-modal')?.classList.remove('open');
-  document.body.style.overflow='';
-}
-// Het rapport draait op beheersing per leerdoel (dezelfde ruggengraat als Kingdom,
-// het Vandaag-blok en de docent): hoeveel leerdoelen heb je echt in de vingers,
-// per vak, wat ging deze week vooruit, en waar liggen je punten.
+function closeRapport(){}   // oude aanroepen (pop-up bestaat niet meer)
 function _rpExamen(vakId){
-  try{const ex=EXAM_SCHEDULE.filter(e=>e.vakId===vakId&&(!e.niveau||e.niveau===APP_LEVEL)&&!e.tijdvak).sort((a,b)=>a.datum<b.datum?-1:1)[0];
-    if(!ex)return null;const d=new Date(ex.datum+'T00:00:00');const dagen=Math.ceil((d-new Date().setHours(0,0,0,0))/864e5);return dagen>=0?{d,dagen}:null;}catch(e){return null;}
+  // Eerstvolgende datum uit het rooster van dit jaar én volgend jaar (het oude rooster ligt al achter ons).
+  try{const alle=[].concat(typeof EXAM_SCHEDULE!=='undefined'?EXAM_SCHEDULE:[],typeof EXAM_SCHEDULE_2027!=='undefined'?EXAM_SCHEDULE_2027:[]);
+    const vandaag=new Date().setHours(0,0,0,0);
+    const ex=alle.filter(e=>e.vakId===vakId&&(!e.niveau||e.niveau===APP_LEVEL)&&!e.tijdvak&&new Date(e.datum+'T00:00:00')>=vandaag).sort((a,b)=>a.datum<b.datum?-1:1)[0];
+    if(!ex)return null;const d=new Date(ex.datum+'T00:00:00');return {d,dagen:Math.ceil((d-vandaag)/864e5)};}catch(e){return null;}
 }
+function _rpBand(m){return !m.hasData?'nog':m.score>=.8?'groen':m.score>=.65?'geel':'rood';}
 function _rpVak(vak){
-  const t={groen:0,geel:0,rood:0,nog:0,totaal:0,zakt:0};
+  const t={groen:0,geel:0,rood:0,nog:0,totaal:0,zakt:0,doms:[]};
   (vak.domeinen||[]).forEach(dom=>{
     const lds=(dom.leerdoelen&&dom.leerdoelen.length)?dom.leerdoelen:[{id:dom.id,naam:dom.naam}];
-    lds.forEach(ld=>{const m=ldMastery(vak.id,ld);t.totaal++;
-      if(!m.hasData)t.nog++;else if(m.score>=.8)t.groen++;else if(m.score>=.65)t.geel++;else t.rood++;
-      if(m.hasData&&m.decayDays!=null&&m.decayDays>=21&&m.raw>=.65)t.zakt++;});
+    const items=lds.map(ld=>{const m=ldMastery(vak.id,ld);const band=_rpBand(m);t[band]++;t.totaal++;
+      if(m.hasData&&m.decayDays!=null&&m.decayDays>=21&&m.raw>=.65)t.zakt++;
+      return {id:ld.id,naam:ld.naam||m.naam||ld.id,band,pct:m.hasData?Math.round(m.score*100):null};});
+    t.doms.push({naam:dom.naam,items});
   });
   return t;
 }
+function rpKlap(btn){const r=btn.closest('.vgp-vak');const open=r.classList.toggle('open');btn.setAttribute('aria-expanded',open);}
 function renderRapport(){
   const el=document.getElementById('rapport-content');
   if(!el)return;
@@ -34,56 +34,46 @@ function renderRapport(){
   const V=getVK(),mijn=getMijnVakken();
   const rijen=V.map(v=>({vak:v,t:_rpVak(v),ex:_rpExamen(v.id)})).filter(r=>mijn.includes(r.vak.id)||r.t.nog<r.t.totaal);
   rijen.sort((a,b)=>((a.ex?a.ex.dagen:1e4)-(b.ex?b.ex.dagen:1e4))||a.vak.naam.localeCompare(b.vak.naam));
-  const geoefend=rijen.some(r=>r.t.nog<r.t.totaal);
   const maand=['jan','feb','mrt','apr','mei','jun','jul','aug','sep','okt','nov','dec'];
-  // Laatste 14 dagen
-  const dagen=new Set(((typeof getStreak==='function'?getStreak():{}).days)||[]);
-  const strook=[];for(let i=13;i>=0;i--){const d=new Date();d.setDate(d.getDate()-i);const k=d.toISOString().slice(0,10);strook.push({k,aan:dagen.has(k),dag:'zmdwdvz'[d.getDay()],vandaag:i===0});}
-  const actief=strook.filter(x=>x.aan).length;
-  const quizzen=Object.values(getProgress()).reduce((s,v)=>s+(v.attempts||0),0);
-  if(!geoefend){
-    el.innerHTML=`<div class="rp2-leeg"><div class="rp2-leeg-vonk" aria-hidden="true">${typeof mascotSVG==='function'?mascotSVG('kijk',96):''}</div>
-      <h3>Hier zie je straks hoe ver je bent</h3><p>Maak je eerste quiz. Daarna zie je per vak hoeveel leerdoelen je beheerst en waar je de meeste punten kunt halen.</p>
-      <button class="rp2-knop" onclick="closeRapport();show('sc-home')">Begin met oefenen</button></div>`;
+  if(!rijen.some(r=>r.t.nog<r.t.totaal)){
+    el.innerHTML=`<div class="vgp-leeg"><p>Je hebt nog niets geoefend. Na je eerste quiz zie je hier per vak welke leerdoelen je beheerst.</p>
+      <button class="vgp-knop" onclick="show('sc-home')">Naar oefenen</button></div>`;
     return;
   }
-  const som=rijen.reduce((a,r)=>({groen:a.groen+r.t.groen,totaal:a.totaal+r.t.totaal,zakt:a.zakt+r.t.zakt}),{groen:0,totaal:0,zakt:0});
+  const som={groen:0,geel:0,rood:0,nog:0,totaal:0,zakt:0};
+  rijen.forEach(r=>['groen','geel','rood','nog','totaal','zakt'].forEach(k=>som[k]+=r.t[k]));
   let vg=null;try{vg=vgVoortgang();}catch(e){}
-  const eerste=rijen.find(r=>r.ex);
-  const week=vg&&vg.heeftVorige?(vg.beter||vg.nieuw?`Sinds ${vg.dagen} dagen geleden: <b>${vg.beter}</b> leerdoel${vg.beter===1?'':'en'} beter, <b>${vg.nieuw}</b> nieuw geoefend.`:`Sinds ${vg.dagen} dagen geleden nog geen leerdoel vooruit. Eén quiz per dag maakt al verschil.`):'Volgende week zie je hier wat je vooruitging.';
-  const balk=t=>`<div class="rp2-balk" role="img" aria-label="${t.groen} beheerst, ${t.geel} bijna, ${t.rood} aandacht nodig, ${t.nog} nog niet geoefend">${[['groen',t.groen],['geel',t.geel],['rood',t.rood],['nog',t.nog]].filter(x=>x[1]).map(([k,n])=>`<i class="${k}" style="flex:${n}"></i>`).join('')}</div>`;
-  let zwak=[];try{zwak=weakestLeerdoelen({vakIds:rijen.map(r=>r.vak.id),limit:4,maxScore:.79});}catch(e){}
+  const dagen=new Set(((typeof getStreak==='function'?getStreak():{}).days)||[]);
+  let actief=0;for(let i=0;i<14;i++){const d=new Date();d.setDate(d.getDate()-i);if(dagen.has(d.toISOString().slice(0,10)))actief++;}
+  const balk=t=>`<div class="vgp-balk" aria-hidden="true">${['groen','geel','rood','nog'].filter(k=>t[k]).map(k=>`<i class="${k}" style="flex:${t[k]}"></i>`).join('')}</div>`;
+  let zwak=[];try{zwak=weakestLeerdoelen({vakIds:rijen.map(r=>r.vak.id),limit:3,maxScore:.79});}catch(e){}
+  const week=vg&&vg.heeftVorige?String(vg.beter+vg.nieuw):'–';
   el.innerHTML=`
-    <section class="rp2-hero">
-      <div class="rp2-hero-k">${(typeof APP_LEVEL!=='undefined'?APP_LEVEL:'').toUpperCase()} · ${rijen.length} ${rijen.length===1?'vak':'vakken'}</div>
-      <div class="rp2-hero-n"><b>${som.groen}</b><span>van ${som.totaal} leerdoelen beheerst</span></div>
-      ${balk(rijen.reduce((a,r)=>({groen:a.groen+r.t.groen,geel:a.geel+r.t.geel,rood:a.rood+r.t.rood,nog:a.nog+r.t.nog}),{groen:0,geel:0,rood:0,nog:0}))}
-      <div class="rp2-legenda"><span><i class="groen"></i>beheerst</span><span><i class="geel"></i>bijna</span><span><i class="rood"></i>aandacht</span><span><i class="nog"></i>nog niet</span></div>
-      <p class="rp2-week">${week}</p>
-      ${eerste?`<p class="rp2-week">Je eerste examen (${esc(eerste.vak.naam)}) is over <b>${eerste.ex.dagen}</b> dagen.</p>`:''}
+    <section class="vgp-cijfers">
+      <div><b>${som.groen}<small> / ${som.totaal}</small></b><span>leerdoelen beheerst</span></div>
+      <div><b>${week}</b><span>${vg&&vg.heeftVorige?`vooruit in ${vg.dagen} dagen`:'vooruit (meet vanaf volgende week)'}</span></div>
+      <div><b>${actief}<small> / 14</small></b><span>dagen geoefend</span></div>
     </section>
-    <section class="rp2-blok">
-      <h3 class="rp2-kop">Laatste twee weken</h3>
-      <div class="rp2-strook">${strook.map(x=>`<span class="${x.aan?'aan':''}${x.vandaag?' nu':''}" title="${x.k}"><i></i><small>${x.dag}</small></span>`).join('')}</div>
-      <p class="rp2-klein">${actief} van de 14 dagen geoefend · ${quizzen} quizzen in totaal</p>
+    ${balk(som)}
+    <p class="vgp-legenda"><span><i class="groen"></i>beheerst, 80% of meer</span><span><i class="geel"></i>bijna</span><span><i class="rood"></i>nog niet goed</span><span><i class="nog"></i>nog niet geoefend</span></p>
+    ${zwak.length?`<section class="vgp-sectie"><h3>Eerst oefenen</h3><p class="vgp-sub">Je laagste scores. Hier haal je het snelst punten.</p>
+      <ol class="vgp-lijst">${zwak.map(m=>`<li><span class="vgp-dot ${_rpBand(m)}"></span><span class="vgp-lt"><b>${esc(m.naam||m.ldId)}</b><small>${esc(m.vakNaam)} · ${Math.round(m.score*100)}%</small></span><button class="vgp-oefen" onclick="focusStartLeerdoel('${m.vakId}','${esc(m.ldId)}')">Oefen</button></li>`).join('')}</ol></section>`:''}
+    ${som.zakt?`<p class="vgp-zakt">${som.zakt} leerdoel${som.zakt===1?'':'en'} had je goed, maar oefende je ruim drie weken niet. <button onclick="openHerhalen()">Herhaal ${som.zakt===1?'het':'ze'}</button></p>`:''}
+    <section class="vgp-sectie"><h3>Per vak</h3><p class="vgp-sub">Tik op een vak voor alle leerdoelen.</p>
+      ${rijen.map(r=>`<div class="vgp-vak">
+        <button class="vgp-vak-kop" aria-expanded="false" onclick="rpKlap(this)">
+          <span class="vgp-vak-n" style="--vk:${r.vak.kleur||'var(--or)'}">${esc(r.vak.naam)}</span>
+          <span class="vgp-vak-s">${r.t.groen}/${r.t.totaal}</span>
+          ${balk(r.t)}
+          <span class="vgp-vak-ex">${r.ex?`examen ${r.ex.d.getDate()} ${maand[r.ex.d.getMonth()]} · nog ${r.ex.dagen} dagen`:'geen examendatum'}</span>
+        </button>
+        <div class="vgp-vak-in">${r.t.doms.map(d=>`<div class="vgp-dom"><div class="vgp-dom-n">${esc(d.naam)}</div>
+          ${d.items.map(it=>`<div class="vgp-ld"><span class="vgp-dot ${it.band}"></span><span class="vgp-ld-n">${esc(it.naam)}</span><span class="vgp-ld-p">${it.pct==null?'–':it.pct+'%'}</span></div>`).join('')}</div>`).join('')}
+          <button class="vgp-naar" onclick="openVak('${r.vak.id}')">Naar ${esc(r.vak.naam)}</button></div>
+      </div>`).join('')}
     </section>
-    ${zwak.length?`<section class="rp2-blok">
-      <h3 class="rp2-kop">Hier liggen je punten</h3>
-      ${zwak.map(m=>`<div class="rp2-punt"><span class="rp2-pct" style="--c:${m.color}">${Math.round(m.score*100)}%</span><span class="rp2-punt-t"><b>${esc(m.naam||m.ldId)}</b><small>${esc(m.vakNaam)} · ${esc(m.label)}</small></span><button class="rp2-oefen" onclick="closeRapport();focusStartLeerdoel('${m.vakId}','${esc(m.ldId)}')">Oefen</button></div>`).join('')}
-    </section>`:''}
-    ${som.zakt?`<button class="rp2-zakt" onclick="closeRapport();openHerhalen()"><b>${som.zakt} leerdoel${som.zakt===1?'':'en'} zakken weg</b><span>Je had ze goed, maar oefende ze ruim drie weken niet. Herhaal ze nu, dat kost weinig tijd.</span></button>`:''}
-    <section class="rp2-blok">
-      <h3 class="rp2-kop">Per vak</h3>
-      ${rijen.map(r=>`<button class="rp2-vak" onclick="closeRapport();openVak('${r.vak.id}')" style="--vk:${r.vak.kleur||'var(--or)'}">
-        <span class="rp2-vak-t"><b>${esc(r.vak.naam)}</b><small>${r.t.groen} van ${r.t.totaal} beheerst${r.ex?` · examen ${r.ex.d.getDate()} ${maand[r.ex.d.getMonth()]}`:''}</small></span>
-        <span class="rp2-vak-p">${r.t.totaal?Math.round(r.t.groen/r.t.totaal*100):0}%</span>${balk(r.t)}</button>`).join('')}
-    </section>
-    <p class="rp2-uitleg">Een leerdoel telt als beheerst als je beste score 80% of hoger is. Wat je lang niet oefent, telt iets minder mee.</p>
-    ${(typeof plusHookHTML==='function')?plusHookHTML('Plus zet dit rapport om in een concreet plan: wat je nu moet doen én je verwachte examencijfer'):''}
-    <button class="rp-share-btn" onclick="shareRapport()">
-      <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>
-      Deel mijn rapport
-    </button>`;
+    ${(typeof plusHookHTML==='function')?plusHookHTML('Plus zet dit om in een plan: wat je nu moet doen en je verwachte examencijfer'):''}
+    <button class="vgp-deel" onclick="shareRapport()">Deel je voortgang</button>`;
   try{trackEvent('rapport_open',{beheerst:som.groen,totaal:som.totaal,vakken:rijen.length});}catch(e){}
 }
 async function shareRapport(){
