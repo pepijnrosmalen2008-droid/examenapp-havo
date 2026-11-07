@@ -1052,12 +1052,13 @@ function renderChallengeResult(){
 
 function daagUit(){
   if(!ST.vak||!ST.domein)return;
-  const naam=localStorage.getItem('slagio_naam')||(currentUser&&currentUser.user_metadata&&currentUser.user_metadata.naam)||'Jij';
+  const naam=localStorage.getItem('slagio_naam')||(currentUser&&currentUser.user_metadata&&currentUser.user_metadata.naam)||'Een klasgenoot';
   const myScore=ST.antwrd.reduce((s,a)=>s+a.pts*50+Math.round((a.tijdOver||0)/20*50),0);
   const url=buildChallengeUrl(ST.vak.id,ST.domein.id,myScore,naam);
-  const tekst='Ik scoorde '+myScore+'/1000 bij '+ST.vak.naam+' op Slagio - kun jij mij verslaan? 🎯\n'+url;
-  if(navigator.share){navigator.share({title:'Slagio uitdaging',text:tekst,url:url}).catch(()=>{});}
-  else{navigator.clipboard.writeText(url).then(()=>showToast('Link gekopieerd! 📋')).catch(()=>showToast(url));}
+  const tot=ST.antwrd.length||10,goed=Math.round(ST.antwrd.reduce((t,a)=>t+(a.pts||0),0)*10)/10;
+  slDeel({bron:'uitdaging',titel:'Slagio uitdaging',bestand:'slagio-uitdaging.png',url,
+    tekst:'Ik scoorde '+myScore+' van de 1000 punten bij '+ST.vak.naam+' op Slagio. Kun jij mij verslaan? Je krijgt dezelfde vragen:',
+    kaart:()=>_buildShareCard({vak:ST.vak.naam,modus:'Uitdaging · '+myScore+' punten',goed,totaal:tot,vakjes:ST.antwrd.map(a=>a.pts),mood:'vastberaden',kop:'Durf jij de uitdaging aan?'})});
 }
 // ── END CHALLENGE LINKS ───────────────────────────────────────────────
 

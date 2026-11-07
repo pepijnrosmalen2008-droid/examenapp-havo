@@ -48,66 +48,45 @@ function renderRapport(){
   const balk=t=>`<div class="vgp-balk" aria-hidden="true">${['groen','geel','rood','nog'].filter(k=>t[k]).map(k=>`<i class="${k}" style="flex:${t[k]}"></i>`).join('')}</div>`;
   let zwak=[];try{zwak=weakestLeerdoelen({vakIds:rijen.map(r=>r.vak.id),limit:3,maxScore:.79});}catch(e){}
   const week=vg&&vg.heeftVorige?String(vg.beter+vg.nieuw):'–';
+  const vonk=(typeof mascotSVG==='function')?mascotSVG(som.groen?'trots':'blij',84):'';
+  const pct=som.totaal?Math.round(som.groen/som.totaal*100):0;
   el.innerHTML=`
-    <section class="vgp-cijfers">
-      <div><b>${som.groen}<small> / ${som.totaal}</small></b><span>leerdoelen beheerst</span></div>
-      <div><b>${week}</b><span>${vg&&vg.heeftVorige?`vooruit in ${vg.dagen} dagen`:'vooruit (meet vanaf volgende week)'}</span></div>
-      <div><b>${actief}<small> / 14</small></b><span>dagen geoefend</span></div>
+    <section class="vgp-held">
+      <div class="vgp-held-vonk" aria-hidden="true">${vonk}</div>
+      <div class="vgp-held-k">${(typeof APP_LEVEL!=='undefined'?APP_LEVEL:'').toUpperCase()} · ${rijen.length} ${rijen.length===1?'vak':'vakken'}</div>
+      <div class="vgp-held-n"><b>${som.groen}</b><span>van ${som.totaal} leerdoelen<br>beheerst (${pct}%)</span></div>
+      ${balk(som)}
+      <div class="vgp-pillen"><span><i class="groen"></i>${som.groen} beheerst</span><span><i class="geel"></i>${som.geel} bijna</span><span><i class="rood"></i>${som.rood} nog niet goed</span><span><i class="nog"></i>${som.nog} nog niet geoefend</span></div>
+      <div class="vgp-held-rij"><span><b>${actief}</b>/14 dagen geoefend</span><span>${vg&&vg.heeftVorige?`<b>${week}</b> vooruit in ${vg.dagen} dagen`:'Vooruitgang zie je vanaf volgende week'}</span></div>
     </section>
-    ${balk(som)}
-    <p class="vgp-legenda"><span><i class="groen"></i>beheerst, 80% of meer</span><span><i class="geel"></i>bijna</span><span><i class="rood"></i>nog niet goed</span><span><i class="nog"></i>nog niet geoefend</span></p>
-    ${zwak.length?`<section class="vgp-sectie"><h3>Eerst oefenen</h3><p class="vgp-sub">Je laagste scores. Hier haal je het snelst punten.</p>
-      <ol class="vgp-lijst">${zwak.map(m=>`<li><span class="vgp-dot ${_rpBand(m)}"></span><span class="vgp-lt"><b>${esc(m.naam||m.ldId)}</b><small>${esc(m.vakNaam)} · ${Math.round(m.score*100)}%</small></span><button class="vgp-oefen" onclick="focusStartLeerdoel('${m.vakId}','${esc(m.ldId)}')">Oefen</button></li>`).join('')}</ol></section>`:''}
-    ${som.zakt?`<p class="vgp-zakt">${som.zakt} leerdoel${som.zakt===1?'':'en'} had je goed, maar oefende je ruim drie weken niet. <button onclick="openHerhalen()">Herhaal ${som.zakt===1?'het':'ze'}</button></p>`:''}
-    <section class="vgp-sectie"><h3>Per vak</h3><p class="vgp-sub">Tik op een vak voor alle leerdoelen.</p>
+    ${zwak.length?`<section class="vgp-groep ms-g-leer"><h3 class="ms-groep-kop">Eerst oefenen</h3>
+      <div class="ms-lijst">${zwak.map(m=>`<div class="ms-rij vgp-rij"><span class="vgp-pct ${_rpBand(m)}">${Math.round(m.score*100)}%</span><span class="ms-rij-t"><b>${esc(m.naam||m.ldId)}</b><small>${esc(m.vakNaam)}</small></span><button class="vgp-oefen" onclick="focusStartLeerdoel('${m.vakId}','${esc(m.ldId)}')">Oefen</button></div>`).join('')}</div></section>`:''}
+    ${som.zakt?`<button class="ms-tegel vgp-zakt ms-g-plan" onclick="openHerhalen()"><span class="ms-art">${typeof _msArt==='function'?_msArt('herhalen'):''}</span><span class="ms-tt"><b>${som.zakt} leerdoel${som.zakt===1?'':'en'} zakken weg</b><small>ruim drie weken niet geoefend · herhaal nu</small></span></button>`:''}
+    <section class="vgp-groep ms-g-leer"><h3 class="ms-groep-kop">Per vak</h3>
       ${rijen.map(r=>`<div class="vgp-vak">
-        <button class="vgp-vak-kop" aria-expanded="false" onclick="rpKlap(this)">
-          <span class="vgp-vak-n" style="--vk:${r.vak.kleur||'var(--or)'}">${esc(r.vak.naam)}</span>
-          <span class="vgp-vak-s">${r.t.groen}/${r.t.totaal}</span>
+        <button class="vgp-vak-kop" aria-expanded="false" onclick="rpKlap(this)" style="--vk:${r.vak.kleur||'var(--or)'}">
+          <span class="vgp-vak-blok" aria-hidden="true">${esc((r.vak.code||r.vak.naam).slice(0,2))}</span>
+          <span class="vgp-vak-t"><b>${esc(r.vak.naam)}</b><small>${r.ex?`examen ${r.ex.d.getDate()} ${maand[r.ex.d.getMonth()]} · nog ${r.ex.dagen} dagen`:'geen examendatum'}</small></span>
+          <span class="vgp-vak-s">${r.t.groen}<small>/${r.t.totaal}</small></span>
           ${balk(r.t)}
-          <span class="vgp-vak-ex">${r.ex?`examen ${r.ex.d.getDate()} ${maand[r.ex.d.getMonth()]} · nog ${r.ex.dagen} dagen`:'geen examendatum'}</span>
         </button>
-        <div class="vgp-vak-in">${r.t.doms.map(d=>`<div class="vgp-dom"><div class="vgp-dom-n">${esc(d.naam)}</div>
+        <div class="vgp-vak-in">${r.t.doms.map(d=>`<div class="vgp-dom">${d.items.length===1&&d.items[0].naam===d.naam?'':`<div class="vgp-dom-n">${esc(d.naam)}</div>`}
           ${d.items.map(it=>`<div class="vgp-ld"><span class="vgp-dot ${it.band}"></span><span class="vgp-ld-n">${esc(it.naam)}</span><span class="vgp-ld-p">${it.pct==null?'–':it.pct+'%'}</span></div>`).join('')}</div>`).join('')}
           <button class="vgp-naar" onclick="openVak('${r.vak.id}')">Naar ${esc(r.vak.naam)}</button></div>
       </div>`).join('')}
     </section>
+    <p class="vgp-uitleg">Een leerdoel telt als beheerst bij een beste score van 80% of meer. Wat je lang niet oefent, telt iets minder mee.</p>
     ${(typeof plusHookHTML==='function')?plusHookHTML('Plus zet dit om in een plan: wat je nu moet doen en je verwachte examencijfer'):''}
-    <button class="vgp-deel" onclick="shareRapport()">Deel je voortgang</button>`;
+    <button class="ms-tegel vgp-deel ms-g-leer" onclick="shareRapport()"><span class="ms-art"><svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="34" cy="13" r="6" fill="var(--t1)"/><circle cx="14" cy="24" r="6" fill="var(--t2)"/><circle cx="34" cy="35" r="6" fill="var(--t1)"/><path d="M19 21l10-5M19 27l10 5" stroke="var(--t1)" stroke-width="3.5" stroke-linecap="round"/></svg></span><span class="ms-tt"><b>Deel je voortgang</b><small>als kaart met link, voor WhatsApp of Instagram</small></span></button>`;
   try{trackEvent('rapport_open',{beheerst:som.groen,totaal:som.totaal,vakken:rijen.length});}catch(e){}
 }
 async function shareRapport(){
-  const vakken=getVK();
-  const allDomains=[],rows=[];
-  vakken.forEach(vak=>{(vak.domeinen||[]).forEach(dom=>{const {pct,hasData}=getDomeinBestPct(vak.id,dom.id);if(hasData){allDomains.push(pct);rows.push({naam:dom.naam,pct:Math.round(pct*100)});}});});
-  const avg=allDomains.length?Math.round(allDomains.reduce((s,v)=>s+v,0)/allDomains.length*100):0;
-  const p=getProgress();
-  const tot=Object.values(p).reduce((s,v)=>s+(v.attempts||0),0);
-  rows.sort((a,b)=>b.pct-a.pct);                              // sterkste domeinen bovenaan
-  const id=(typeof _cardIdentityData==='function')?_cardIdentityData():{};
-  const tekst=`Mijn voortgang op Slagio: ${tot} quizzen, ${allDomains.length} onderwerpen geoefend, gemiddeld ${avg}%.\nOok gratis oefenen voor je eindexamen? slagio.nl`;
-  const _done=()=>{if(earnAch('ambassadeur'))setTimeout(()=>showAch('📣','Ambassadeur! Rapport gedeeld.'),500);};
-  // 1) Premium rapport-kaart genereren en delen.
-  let file=null;
-  try{
-    if(typeof _buildRapportCard==='function'){
-      const cv=await _buildRapportCard({avg,quizzen:tot,domeinen:allDomains.length,rows,id});
-      const blob=await new Promise(r=>cv.toBlob(r,'image/png',0.95));
-      if(blob)file=new File([blob],'slagio-rapport.png',{type:'image/png'});
-    }
-  }catch(e){}
-  if(file&&navigator.canShare&&navigator.canShare({files:[file]})){
-    try{await navigator.share({files:[file],text:tekst});_done();return;}catch(e){if(e&&e.name==='AbortError')return;}
-  }
-  if(navigator.share){
-    try{await navigator.share({title:'Mijn Slagio Rapport',text:tekst,url:'https://slagio.nl'});_done();return;}catch(e){if(e&&e.name==='AbortError')return;}
-  }
-  if(file){
-    const url=URL.createObjectURL(file);const a=document.createElement('a');a.href=url;a.download='slagio-rapport.png';document.body.appendChild(a);a.click();a.remove();
-    setTimeout(()=>URL.revokeObjectURL(url),200);showToast('📸 Rapportkaart opgeslagen, deel \'m met je klas!');_done();return;
-  }
-  try{await navigator.clipboard.writeText(tekst);showToast('📋 Rapport gekopieerd!');}catch(e){showToast('slagio.nl');}
-  _done();
+  let d=null;try{d=rapportKaartData();}catch(e){}
+  if(!d||!d.totaal){showToast('Maak eerst een quiz, dan heb je iets om te delen.');return;}
+  const niv=(typeof APP_LEVEL!=='undefined'?APP_LEVEL:'havo');
+  await slDeel({bron:'voortgang',titel:'Mijn voortgang op Slagio',bestand:'slagio-voortgang.png',url:slDeelUrl('voortgang'),
+    tekst:`Ik beheers ${d.beheerst} van de ${d.totaal} leerdoelen voor mijn ${niv}-eindexamen. Oefen gratis mee op Slagio:`,
+    kaart:()=>_buildRapportCard(d)});
 }
 // ═══════ STUDIEPLAN v2 ═══════
 const SP_PREF_KEY='slagio_sp_prefs_v1';

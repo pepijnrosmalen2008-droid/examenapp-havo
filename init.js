@@ -1409,6 +1409,14 @@ document.addEventListener('click', function (e) {
   if(document.readyState==='complete')setTimeout(later,6000);else addEventListener('load',()=>setTimeout(later,6000),{once:true});
 })();
 
+// Binnen via een gedeelde link (?ref=score|uitdaging|voortgang): één keer meten,
+// daarna de parameter uit het adres halen zodat hij niet verder gedeeld wordt.
+(function(){
+  try{const q=new URLSearchParams(location.search),ref=q.get('ref');if(!ref)return;
+    setTimeout(()=>{try{trackEvent('via_deellink',{ref:ref.slice(0,30)});}catch(e){}},2500);
+    q.delete('ref');const rest=q.toString();history.replaceState(history.state,'',location.pathname+(rest?'?'+rest:'')+location.hash);}catch(e){}
+})();
+
 // ═══════ ARCADE (lazy) ═══════
 // De minigames staan in arcade.js en laden pas als je de Arcade opent.
 function arcadeOpen(cb){

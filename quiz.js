@@ -2246,71 +2246,172 @@ async function _drawVonk(g,mood,x,y,size){
     if(img)g.drawImage(img,x,y,size,size);}catch(e){}
 }
 function _fitFont(g,text,max,weight,start,fam){let s=start;g.font=weight+' '+s+'px '+(fam||_FH);while(g.measureText(text).width>max&&s>40){s-=6;g.font=weight+' '+s+'px '+(fam||_FH);}return s;}
+// ═══════ DEELKAARTEN IN MENUSTIJL ═══════
+// Zelfde taal als het menu: nachtblauwe grond met gloed in de niveaukleur en een
+// fijn raster, een witte dikke tegel (rand + dikkere onderrand) en Vonk die over
+// de rand kijkt. Geen goudfolie, geen ring, geen emoji. 1080×1350 (Instagram/WhatsApp).
+const _KAART_NIV={havo:'#1d4ed8',vwo:'#6d28d9',vmbo:'#0d9488'};
+const _KAART_GLOED={havo:'91,155,255',vwo:'185,130,255',vmbo:'47,214,193'};
+function _kaartNiv(){return (typeof APP_LEVEL!=='undefined'&&APP_LEVEL)||'havo';}
+function _kaartGrond(g,W,H,opt){
+  const n=_kaartNiv(),gl=_KAART_GLOED[n]||_KAART_GLOED.havo;
+  const bg=g.createLinearGradient(0,0,W*.4,H);bg.addColorStop(0,'#0c0d1a');bg.addColorStop(.55,'#0f1022');bg.addColorStop(1,'#080912');
+  g.fillStyle=bg;g.fillRect(0,0,W,H);
+  let r=g.createRadialGradient(W*.88,-H*.05,10,W*.88,-H*.05,W*.95);r.addColorStop(0,'rgba('+gl+',.62)');r.addColorStop(1,'rgba('+gl+',0)');g.fillStyle=r;g.fillRect(0,0,W,H);
+  r=g.createRadialGradient(0,H*1.05,10,0,H*1.05,W*.8);r.addColorStop(0,'rgba('+gl+',.22)');r.addColorStop(1,'rgba('+gl+',0)');g.fillStyle=r;g.fillRect(0,0,W,H);
+  // fijn raster dat vanuit rechtsboven wegvalt, net als de kop van het menu (masker zoals in de CSS)
+  const rc=document.createElement('canvas');rc.width=W;rc.height=H;const rg=rc.getContext('2d');
+  rg.strokeStyle='rgba(255,255,255,.06)';rg.lineWidth=2;
+  for(let x=0;x<=W;x+=60){rg.beginPath();rg.moveTo(x,0);rg.lineTo(x,H);rg.stroke();}
+  for(let y=0;y<=H;y+=60){rg.beginPath();rg.moveTo(0,y);rg.lineTo(W,y);rg.stroke();}
+  rg.globalCompositeOperation='destination-in';
+  const m=rg.createRadialGradient(W*.8,0,0,W*.8,0,Math.max(W,H)*.75);m.addColorStop(0,'rgba(0,0,0,1)');m.addColorStop(1,'rgba(0,0,0,0)');
+  rg.fillStyle=m;rg.fillRect(0,0,W,H);g.drawImage(rc,0,0);
+  // logo + niveau
+  g.textAlign='left';g.textBaseline='alphabetic';g.fillStyle='#fff';g.font='800 50px '+_FH;g.fillText('Slagio',72,118);
+  if(opt&&opt.geenChip)return;
+  const chip=n.toUpperCase();g.font='800 26px '+_FH;const cw=g.measureText(chip).width+44;
+  g.fillStyle='rgba('+gl+',.35)';_rr(g,W-72-cw,80,cw,50,25);g.fill();g.strokeStyle='rgba('+gl+',.6)';g.lineWidth=2;_rr(g,W-72-cw,80,cw,50,25);g.stroke();
+  g.fillStyle='#fff';g.textAlign='center';g.fillText(chip,W-72-cw/2,115);g.textAlign='left';
+}
+// Witte dikke tegel, zoals de tegels in het menu (2px rand, 4px onderrand → hier ×2,5).
+function _kaartTegel(g,x,y,w,h){
+  g.fillStyle='#d5d9e4';_rr(g,x,y+12,w,h,44);g.fill();
+  g.fillStyle='#ffffff';_rr(g,x,y,w,h,44);g.fill();
+  g.strokeStyle='#e3e6ee';g.lineWidth=5;_rr(g,x+2.5,y+2.5,w-5,h-5,42);g.stroke();
+}
+async function _kaartWie(g,W,y){
+  // Eigen maatje + naam (alleen als die is ingevuld), anders niets.
+  let naam='';try{naam=(localStorage.getItem('slagio_naam')||JSON.parse(localStorage.getItem(PROF_KEY)||'{}').naam||'').trim();}catch(e){}
+  if(/^(jij|speler)$/i.test(naam))naam='';
+  if(!naam)return false;
+  let svg='';try{const p=JSON.parse(localStorage.getItem(PROF_KEY)||'{}');if(p.animalId&&typeof getAnimalDisplay==='function')svg=getAnimalDisplay(p.animalId,getAnimalStageIdx(getTotalXP()),96);}catch(e){}
+  const m=(svg.match(/<svg[\s\S]*<\/svg>/)||[])[0];
+  let x=72;
+  if(m){try{const img=await Promise.race([_svgToImg(m),new Promise((_,r)=>setTimeout(()=>r('t'),1500))]);g.fillStyle='rgba(255,255,255,.08)';_rr(g,72,y-48,96,96,28);g.fill();g.drawImage(img,80,y-40,80,80);x=190;}catch(e){}}
+  g.textAlign='left';g.textBaseline='middle';g.fillStyle='#fff';g.font='800 40px '+_FH;g.fillText(naam,x,y-8);
+  g.fillStyle='rgba(255,255,255,.6)';g.font='600 26px '+_FB;g.fillText('oefent op Slagio',x,y+30);g.textBaseline='alphabetic';
+  return true;
+}
+function _kaartVoet(g,W,H){
+  g.textAlign='left';g.fillStyle='#fff';g.font='800 46px '+_FH;g.fillText('slagio.nl',72,H-86);
+  g.fillStyle='rgba(255,255,255,.62)';g.font='600 27px '+_FB;g.fillText('Gratis oefenen voor je eindexamen',72,H-44);
+}
+// Scorekaart. o: {vak, modus, goed, totaal, vakjes:[pts], kop, mood}
 async function _buildShareCard(o){
   await _cardFonts();
   const W=1080,H=1350,cv=document.createElement('canvas');cv.width=W;cv.height=H;
-  const g=cv.getContext('2d');const t=_cardTheme();
-  const chip=((typeof APP_LEVEL!=='undefined'&&APP_LEVEL)||'havo').toUpperCase();
-  _cardBase(g,W,H,t,chip);
-  // ring-gauge
-  const cx=W/2,cy=496,r=196;const pct=(typeof o.pct==='number')?o.pct:0;
-  _ring(g,cx,cy,r+38,0.0001,_GOLD,'rgba(255,255,255,.05)',2);          // fijne buitenring (certificaat)
-  const gr=g.createLinearGradient(cx-r,cy-r,cx+r,cy+r);gr.addColorStop(0,_GOLD2);gr.addColorStop(1,_GOLD);
-  _ring(g,cx,cy,r,pct,gr,'rgba(255,255,255,.10)',30);
-  // grote score in de ring
-  g.textAlign='center';g.fillStyle=_GOLD;
-  const bs=_fitFont(g,o.big,r*1.7,'800',162);g.save();g.shadowColor='rgba(0,0,0,.28)';g.shadowBlur=14;g.shadowOffsetY=5;
-  g.fillText(o.big,cx,cy+bs*0.34);g.restore();
-  if(o.frac){g.fillStyle='rgba(255,255,255,.82)';g.font='600 34px '+_FB;g.fillText(o.frac,cx,cy+118);}
-  // prestatie-label + sub
-  g.fillStyle=_GOLD;g.font='700 '+_fitFont(g,o.msg,W-180,'700',54)+'px '+_FH;g.fillText(o.msg,cx,796);
-  g.fillStyle='rgba(255,255,255,.62)';g.font='500 30px '+_FB;g.fillText(o.sub,cx,846);
-  // identiteitsstrip
-  _cardIdentity(g,W,72,900,W-144,132,o.id||_cardIdentityData());
-  // Vonk peekt linksonder
-  await _drawVonk(g,o.mood,44,1092,214);
-  // footer (rechts van Vonk, gecentreerd in de rest)
-  g.textAlign='center';g.fillStyle='rgba(255,255,255,.9)';g.font='700 30px '+_FB;g.fillText('Kun jij dit verslaan?',620,1150);
-  g.fillStyle='#fff';g.font='800 46px '+_FH;g.fillText('slagio.nl',620,1210);
-  g.fillStyle=_GOLD;g.font='500 27px '+_FB;g.fillText('gratis oefenen voor je eindexamen',620,1252);
-  _grain(g,W,H);
+  const g=cv.getContext('2d');const acc=_KAART_NIV[_kaartNiv()]||_KAART_NIV.havo;
+  _kaartGrond(g,W,H);
+  const tx=60,ty=230,tw=W-120,th=760;
+  _kaartTegel(g,tx,ty,tw,th);
+  g.textAlign='left';g.fillStyle='#6b7280';g.font='700 30px '+_FB;g.fillText(o.modus||'Snelle quiz',tx+60,ty+92);
+  g.fillStyle='#141826';g.font='800 '+_fitFont(g,o.vak||'',tw-330,'800',70)+'px '+_FH;g.fillText(o.vak||'',tx+60,ty+170);
+  // grote score
+  const sc=String(o.goed).replace('.',','),tot='/'+o.totaal;
+  g.fillStyle=acc;g.font='800 250px '+_FH;g.fillText(sc,tx+52,ty+440);
+  const sw=g.measureText(sc).width;g.fillStyle='#9aa1b2';g.font='800 110px '+_FH;g.fillText(tot,tx+64+sw,ty+440);
+  g.fillStyle='#141826';g.font='700 34px '+_FB;g.fillText('goed beantwoord',tx+60,ty+500);
+  // vakjes per vraag
+  const vk=(o.vakjes||[]).slice(0,15),n=vk.length;
+  if(n){const gap=12,bw=Math.min(64,(tw-120-gap*(n-1))/n);vk.forEach((p,i)=>{const x=tx+60+i*(bw+gap),y=ty+560;
+    g.fillStyle=p>=1?'#16a34a':p>0?'#eab308':'#e5e7eb';_rr(g,x,y+6,bw,bw,14);g.fill();
+    g.fillStyle=p>=1?'#22c55e':p>0?'#facc15':'#f1f2f6';_rr(g,x,y,bw,bw,14);g.fill();});}
+  g.fillStyle='#141826';g.font='800 42px '+_FH;g.fillText(o.kop||'Kun jij dit verslaan?',tx+60,ty+th-62);
+  await _drawVonk(g,o.mood||'trots',W-480,ty-170,250);
+  const wie=await _kaartWie(g,W,ty+th+110);
+  _kaartVoet(g,W,H);
   return cv;
 }
-// Voortgangsrapport-kaart: gemiddelde als ring + top-domeinen als mini-balken.
+// Gegevens voor de voortgangskaart, uit dezelfde berekening als de Voortgang-pagina.
+function rapportKaartData(){
+  const V=getVK(),mijn=getMijnVakken();
+  const r=V.map(v=>({vak:v,t:_rpVak(v),ex:_rpExamen(v.id)})).filter(x=>mijn.includes(x.vak.id)||x.t.nog<x.t.totaal);
+  r.sort((a,b)=>((a.ex?a.ex.dagen:1e4)-(b.ex?b.ex.dagen:1e4))||a.vak.naam.localeCompare(b.vak.naam));
+  const s={groen:0,geel:0,rood:0,nog:0,totaal:0};r.forEach(x=>['groen','geel','rood','nog','totaal'].forEach(k=>s[k]+=x.t[k]));
+  return {beheerst:s.groen,totaal:s.totaal,verdeling:s,vakken:r.map(x=>({naam:x.vak.naam,kleur:x.vak.kleur,t:x.t}))};
+}
+function _kaartBalk(g,x,y,w,h,t){
+  const delen=[['groen','#22c55e'],['geel','#eab308'],['rood','#f97316'],['nog','#e5e7eb']].filter(d=>t[d[0]]);
+  const som=delen.reduce((s,d)=>s+t[d[0]],0)||1;let cx=x;
+  g.save();_rr(g,x,y,w,h,h/2);g.clip();g.fillStyle='#e5e7eb';g.fillRect(x,y,w,h);
+  delen.forEach(([k,c])=>{const dw=w*t[k]/som;g.fillStyle=c;g.fillRect(cx,y,Math.max(0,dw-4),h);cx+=dw;});g.restore();
+}
 async function _buildRapportCard(o){
   await _cardFonts();
   const W=1080,H=1350,cv=document.createElement('canvas');cv.width=W;cv.height=H;
-  const g=cv.getContext('2d');const t=_cardTheme();
-  _cardBase(g,W,H,t,((typeof APP_LEVEL!=='undefined'&&APP_LEVEL)||'havo').toUpperCase());
-  g.textAlign='center';
-  g.fillStyle='rgba(255,255,255,.62)';g.font='800 26px '+_FB;g.fillText('V O O R T G A N G S R A P P O R T',W/2,196);
-  // ring: gemiddelde
-  const cx=W/2,cy=430,r=168,pct=(o.avg||0)/100;
-  const gr=g.createLinearGradient(cx-r,cy-r,cx+r,cy+r);gr.addColorStop(0,_GOLD2);gr.addColorStop(1,_GOLD);
-  _ring(g,cx,cy,r,pct,gr,'rgba(255,255,255,.10)',28);
-  g.fillStyle=_GOLD;g.font='800 128px '+_FH;g.save();g.shadowColor='rgba(0,0,0,.28)';g.shadowBlur=14;g.shadowOffsetY=5;g.fillText((o.avg||0)+'%',cx,cy+44);g.restore();
-  g.fillStyle='rgba(255,255,255,.8)';g.font='600 30px '+_FB;g.fillText('gemiddelde beheersing',cx,cy+108);
-  // 3 statcijfers
-  const stats=[[o.quizzen,'quizzen'],[o.domeinen,'domeinen'],[(o.id&&o.id.streak)||0,'dagen streak']];
-  const sw=(W-144)/3;g.textAlign='center';
-  stats.forEach((s,i)=>{const x=72+sw*i+sw/2;g.fillStyle='#fff';g.font='800 56px '+_FH;g.fillText(String(s[0]),x,700);
-    g.fillStyle='rgba(255,255,255,.6)';g.font='500 26px '+_FB;g.fillText(s[1],x,738);});
-  // top-domeinen als mini-balken
-  const rows=(o.rows||[]).slice(0,4);let y=812;g.textAlign='left';
-  rows.forEach(rw=>{
-    g.fillStyle='#fff';g.font='600 28px '+_FB;const nm=rw.naam.length>26?rw.naam.slice(0,25)+'…':rw.naam;g.fillText(nm,84,y);
-    g.textAlign='right';g.fillStyle=_GOLD;g.font='700 28px '+_FB;g.fillText(rw.pct+'%',W-84,y);g.textAlign='left';
-    const bx=84,bw=W-168,by=y+14,bh=14;g.fillStyle='rgba(255,255,255,.12)';_rr(g,bx,by,bw,bh,7);g.fill();
-    const pv=Math.max(0.03,rw.pct/100);const bar=g.createLinearGradient(bx,0,bx+bw,0);bar.addColorStop(0,t.acc);bar.addColorStop(1,_GOLD);
-    g.fillStyle=bar;_rr(g,bx,by,bw*pv,bh,7);g.fill();
-    y+=74;
+  const g=cv.getContext('2d');const acc=_KAART_NIV[_kaartNiv()]||_KAART_NIV.havo;
+  o=o&&o.verdeling?o:rapportKaartData();
+  _kaartGrond(g,W,H);
+  const vakken=o.vakken.slice(0,5);
+  const tx=60,ty=230,tw=W-120,th=Math.min(800,430+vakken.length*86);
+  _kaartTegel(g,tx,ty,tw,th);
+  g.textAlign='left';g.fillStyle='#6b7280';g.font='700 30px '+_FB;g.fillText('Mijn voortgang',tx+60,ty+92);
+  g.fillStyle=acc;g.font='800 170px '+_FH;const bs=String(o.beheerst);g.fillText(bs,tx+52,ty+270);
+  const bw=g.measureText(bs).width;g.fillStyle='#9aa1b2';g.font='800 80px '+_FH;g.fillText('/'+o.totaal,tx+64+bw,ty+270);
+  g.fillStyle='#141826';g.font='700 34px '+_FB;g.fillText('leerdoelen beheerst',tx+60,ty+326);
+  _kaartBalk(g,tx+60,ty+360,tw-120,22,o.verdeling);
+  let y=ty+450;
+  vakken.forEach(v=>{
+    g.fillStyle=v.kleur||acc;_rr(g,tx+60,y-26,22,22,6);g.fill();
+    g.fillStyle='#141826';g.font='700 32px '+_FB;const nm=v.naam.length>24?v.naam.slice(0,23)+'…':v.naam;g.fillText(nm,tx+96,y-4);
+    g.textAlign='right';g.fillStyle='#6b7280';g.font='800 30px '+_FH;g.fillText(v.t.groen+'/'+v.t.totaal,tx+tw-60,y-4);g.textAlign='left';
+    _kaartBalk(g,tx+60,y+16,tw-120,14,v.t);y+=86;
   });
-  // identiteitsstrip + footer
-  _cardIdentity(g,W,72,1068,W-144,116,o.id||_cardIdentityData());
-  g.textAlign='center';g.fillStyle='#fff';g.font='800 44px '+_FH;g.fillText('slagio.nl',W/2,1250);
-  g.fillStyle=_GOLD;g.font='500 26px '+_FB;g.fillText('gratis oefenen voor je eindexamen',W/2,1290);
-  _grain(g,W,H);
+  await _drawVonk(g,'trots',W-480,ty-170,250);
+  await _kaartWie(g,W,ty+th+110);
+  _kaartVoet(g,W,H);
   return cv;
+}
+
+// ═══════ DELEN ═══════
+// Eén deelroute voor alles (score, uitdaging, voortgang). Telefoon: het deelmenu van
+// het toestel met kaart + tekst (de link staat in de tekst, want veel apps laten het
+// url-veld vallen zodra er een plaatje bij zit). Computer: een eigen deelvenster met
+// voorbeeld, WhatsApp, kopiëren en opslaan. o: {bron, titel, tekst, url, kaart, bestand}
+function slDeelUrl(bron){return 'https://slagio.nl/'+_kaartNiv()+'?ref='+encodeURIComponent(bron||'deel');}
+async function slDeel(o){
+  let file=null,cv=null;
+  try{if(o.kaart){cv=await o.kaart();const blob=await new Promise(r=>cv.toBlob(r,'image/png'));if(blob)file=new File([blob],o.bestand||'slagio.png',{type:'image/png'});}}catch(e){}
+  const metLink=o.tekst+'\n'+o.url;
+  let telefoon=false;try{telefoon=matchMedia('(pointer:coarse)').matches;}catch(e){}
+  const klaar=via=>{try{trackEvent('gedeeld',{bron:o.bron,via});}catch(e){}try{_ambassadeur();}catch(e){}};
+  if(telefoon&&navigator.share){
+    if(file&&navigator.canShare&&navigator.canShare({files:[file]})){
+      try{await navigator.share({files:[file],text:metLink});klaar('toestel-kaart');return;}catch(e){if(e&&e.name==='AbortError')return;}
+    }
+    try{await navigator.share({title:o.titel||'Slagio',text:o.tekst,url:o.url});klaar('toestel');return;}catch(e){if(e&&e.name==='AbortError')return;}
+  }
+  _slDeelVenster(o,cv,file,metLink,klaar);
+}
+function _slDeelVenster(o,cv,file,metLink,klaar){
+  document.getElementById('dl-ov')?.remove();
+  const ov=document.createElement('div');ov.id='dl-ov';ov.className='dl-ov';ov.setAttribute('role','dialog');ov.setAttribute('aria-label','Delen');
+  const src=cv?cv.toDataURL('image/png'):'';
+  const ic={wa:'<svg viewBox="0 0 24 24"><path d="M4 20l1.3-3.9A8 8 0 1 1 8 19z"/><path d="M9 9.5c.3 2 2.5 4.2 4.5 4.5l1.2-1.2 1.8.8-.4 1.6c-3.5.4-7.6-3.7-7.2-7.2l1.6-.4.8 1.8z"/></svg>',
+    kop:'<svg viewBox="0 0 24 24"><rect x="8" y="8" width="12" height="12" rx="2.5"/><path d="M16 8V5.5A1.5 1.5 0 0 0 14.5 4h-9A1.5 1.5 0 0 0 4 5.5v9A1.5 1.5 0 0 0 5.5 16H8"/></svg>',
+    link:'<svg viewBox="0 0 24 24"><path d="M10 14a4 4 0 0 0 5.7 0l3-3a4 4 0 0 0-5.7-5.7l-1 1"/><path d="M14 10a4 4 0 0 0-5.7 0l-3 3a4 4 0 0 0 5.7 5.7l1-1"/></svg>',
+    op:'<svg viewBox="0 0 24 24"><path d="M12 4v11"/><path d="M7 10l5 5 5-5"/><path d="M5 20h14"/></svg>'};
+  ov.innerHTML=`<div class="dl-sheet"><div class="dl-kop"><b>Delen</b><button class="ms-x dl-x" aria-label="Sluiten">✕</button></div>
+    ${src?`<img class="dl-voorbeeld" src="${src}" alt="Voorbeeld van de kaart die je deelt">`:''}
+    <p class="dl-tekst">${o.tekst.replace(/[&<>]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]))}<br><span>${o.url}</span></p>
+    <div class="ms-lijst dl-lijst">
+      <button class="ms-rij" data-a="wa"><span class="ms-rij-ic">${ic.wa}</span><span class="ms-rij-t">WhatsApp</span><span class="ms-rij-pijl">›</span></button>
+      <button class="ms-rij" data-a="kop"><span class="ms-rij-ic">${ic.kop}</span><span class="ms-rij-t">Kopieer tekst en link</span></button>
+      <button class="ms-rij" data-a="link"><span class="ms-rij-ic">${ic.link}</span><span class="ms-rij-t">Kopieer alleen de link</span></button>
+      ${file?`<button class="ms-rij" data-a="op"><span class="ms-rij-ic">${ic.op}</span><span class="ms-rij-t">Afbeelding opslaan</span></button>`:''}
+    </div></div>`;
+  document.body.appendChild(ov);requestAnimationFrame(()=>ov.classList.add('on'));
+  const weg=()=>{ov.classList.remove('on');setTimeout(()=>ov.remove(),200);};
+  ov.addEventListener('click',e=>{if(e.target===ov)weg();});ov.querySelector('.dl-x').onclick=weg;
+  const kopieer=async(t,melding)=>{try{await navigator.clipboard.writeText(t);showToast(melding);}catch(e){showToast(t);}};
+  ov.querySelectorAll('[data-a]').forEach(b=>b.onclick=async()=>{
+    const a=b.dataset.a;
+    if(a==='wa'){window.open('https://wa.me/?text='+encodeURIComponent(metLink),'_blank','noopener');klaar('whatsapp');}
+    else if(a==='kop'){await kopieer(metLink,'Tekst en link gekopieerd');klaar('kopie');}
+    else if(a==='link'){await kopieer(o.url,'Link gekopieerd');klaar('link');}
+    else if(a==='op'&&file){const u=URL.createObjectURL(file);const l=document.createElement('a');l.href=u;l.download=file.name;document.body.appendChild(l);l.click();l.remove();setTimeout(()=>URL.revokeObjectURL(u),300);showToast('Afbeelding opgeslagen');klaar('opslaan');}
+  });
 }
 function _ambassadeur(){if(earnAch('ambassadeur'))setTimeout(()=>showAch('📣','Ambassadeur! Score gedeeld.'),500);}
 // Deel-rij op het resultaatscherm: op het emotionele piekmoment één tik om je
@@ -2325,55 +2426,26 @@ function _renderResShare(pct){
   if(!okMode){ box.innerHTML=''; return; }
   const perfect=pct>=1, strong=pct>=0.8, peak=perfect||strong;
   const canChallenge=ST.mode==='snel' && ST.domein && ST.antwrd && ST.antwrd.length;
-  const kick=perfect?'🌟 Perfecte score! Laat je klas zien wat je kan.'
-            :strong?'🔥 Sterke score! Daag een klasgenoot uit!'
-            :'💛 Trots op je progressie? Deel het met je klas.';
+  const kick=perfect?'Alles goed. Laat je klas het zien.'
+            :strong?'Sterke score. Daag een klasgenoot uit.'
+            :'Deel je score met je klas.';
   let html=`<div class="res-share-kick">${kick}</div><div class="res-share-row">`
-    +`<button class="res-share-btn primary" onclick="deelScore()">📤 Deel je score</button>`;
-  if(canChallenge) html+=`<button class="res-share-btn" onclick="daagUit()">🎯 Daag klasgenoot uit</button>`;
+    +`<button class="res-share-btn primary" onclick="deelScore()">Deel je score</button>`;
+  if(canChallenge) html+=`<button class="res-share-btn" onclick="daagUit()">Daag een klasgenoot uit</button>`;
   html+=`</div>`;
   box.innerHTML=html;
   box.classList.toggle('peak', peak);
 }
 async function deelScore(){
   const vakNaam=ST.vak?.naam||'een vak';
-  // Score rechtstreeks uit ST (het resultaatscherm toont "sc van tot"; DOM-scrapen
-  // gaf een verkeerde "van"-parse). sc = behaalde punten, tot = aantal vragen.
   const tot=(ST.adaptive?ST.aqTarget:(ST.vragen&&ST.vragen.length))||ST.antwrd.length||10;
   const sc=Math.round((ST.score||0)*10)/10;
-  const pctRaw=tot?Math.round(sc/tot*100):null;
-  const scoreTxt=(Number.isInteger(sc)?sc:String(sc).replace('.',','))+'/'+tot;
-  const pctTxt=pctRaw!=null?` (${pctRaw}%)`:'';
-  const modeTxt={snel:'snelle quiz',oud:'open vragen',fc:'flashcards',race:'Bot Race'}[ST.mode]||'quiz';
-  const tekst=`${pctRaw>=90?'🌟':pctRaw>=70?'🔥':'💪'} ${scoreTxt}${pctTxt} op ${vakNaam} ${modeTxt} - kun jij het beter?\nGratis oefenen op slagio.nl`;
-  const mood=pctRaw>=100?'feest':pctRaw>=85?'trots':pctRaw>=65?'blij':'goed';
-  const msg=pctRaw>=100?'Perfecte score!':pctRaw>=90?'Bijna perfect!':pctRaw>=80?'Super gedaan!':pctRaw>=65?'Goed bezig!':'Lekker geoefend!';
-  const big=pctRaw!=null?pctRaw+'%':scoreTxt;
-  // 1) Beeld-kaart genereren en delen (met tekst + link).
-  let file=null;
-  try{
-    const cv=await _buildShareCard({big,msg,sub:`${vakNaam} · ${modeTxt}`,mood,pct:pctRaw!=null?pctRaw/100:sc/tot,frac:scoreTxt,id:_cardIdentityData()});
-    const blob=await new Promise(r=>cv.toBlob(r,'image/png',0.95));
-    if(blob)file=new File([blob],'slagio-score.png',{type:'image/png'});
-  }catch(e){}
-  if(file&&navigator.canShare&&navigator.canShare({files:[file]})){
-    try{await navigator.share({files:[file],text:tekst});_ambassadeur();return;}
-    catch(e){if(e&&e.name==='AbortError')return;}
-  }
-  // 2) Tekst-share (oudere browsers).
-  if(navigator.share){
-    try{await navigator.share({title:'Slagio - Mijn score',text:tekst,url:'https://slagio.nl'});_ambassadeur();return;}
-    catch(e){if(e&&e.name==='AbortError')return;}
-  }
-  // 3) Desktop: kaart downloaden, anders tekst naar klembord.
-  if(file){
-    const url=URL.createObjectURL(file);const a=document.createElement('a');
-    a.href=url;a.download='slagio-score.png';document.body.appendChild(a);a.click();a.remove();
-    setTimeout(()=>URL.revokeObjectURL(url),200);
-    showToast('📸 Kaart opgeslagen - deel \'m met je klas!');_ambassadeur();return;
-  }
-  try{await navigator.clipboard.writeText(tekst);showToast('📋 Score gekopieerd naar klembord!');}
-  catch(e){showToast('slagio.nl');}
-  _ambassadeur();
+  const pct=tot?Math.round(sc/tot*100):0;
+  const modus={snel:'Snelle quiz',oud:'Open vragen',fc:'Flashcards',race:'Bot Race'}[ST.mode]||'Quiz';
+  const scTxt=String(sc).replace('.',',');
+  const niv=_kaartNiv();
+  await slDeel({bron:'score',titel:'Mijn score op Slagio',bestand:'slagio-score.png',url:slDeelUrl('score'),
+    tekst:`Ik had ${scTxt} van de ${tot} goed bij ${vakNaam} (${niv}) op Slagio. Kun jij dit verslaan?`,
+    kaart:()=>_buildShareCard({vak:vakNaam,modus,goed:sc,totaal:tot,vakjes:(ST.antwrd||[]).map(a=>a.pts),mood:pct>=85?'trots':pct>=60?'blij':'goed',kop:'Kun jij dit verslaan?'})});
 }
 
