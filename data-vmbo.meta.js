@@ -739,6 +739,27 @@ var VAKKEN_VMBO = [
       "nOe": 5,
       "nBeg": 12,
       "hasSam": true
+     },
+     {
+      "id": "A3",
+      "lo": "en.A.3",
+      "gs": 2,
+      "naam": "De betekenis van woorden uit de tekst afleiden",
+      "beschrijving": "Je leert in een Engelse tekst de betekenis van onbekende woorden af te leiden uit de context, voorvoegsels en achtervoegsels, verwante woorden en valse vrienden, en verwijswoorden als it en which te herkennen en je gok te controleren.",
+      "ceStatus": "CE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Raden uit de context",
+       "Voor- en achtervoegsels",
+       "Woorden die op Nederlands lijken",
+       "Verwijswoorden",
+       "Controleren"
+      ],
+      "nSv": 27,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
      }
     ]
    },

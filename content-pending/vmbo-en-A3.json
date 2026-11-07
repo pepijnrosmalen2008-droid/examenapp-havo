@@ -1,0 +1,682 @@
+{
+ "id": "A3",
+ "lo": "en.A.3",
+ "gs": 2,
+ "naam": "De betekenis van woorden uit de tekst afleiden",
+ "beschrijving": "Je leert in een Engelse tekst de betekenis van onbekende woorden af te leiden uit de context, voorvoegsels en achtervoegsels, verwante woorden en valse vrienden, en verwijswoorden als it en which te herkennen en je gok te controleren.",
+ "ceStatus": "CE",
+ "binas": "",
+ "val": "",
+ "onderwerpen": [
+  "Raden uit de context",
+  "Voor- en achtervoegsels",
+  "Woorden die op Nederlands lijken",
+  "Verwijswoorden",
+  "Controleren"
+ ],
+ "sam": "Een onbekend woord kun je raden uit de context, met uitleg, voorbeelden en tegengestelde woorden in de buurt. Een voorvoegsel als un- of dis- maakt het tegengestelde en -less betekent zonder. Verwante woorden lijken op Nederlands, een valse vriend als receipt niet. Een verwijswoord wijst terug naar een eerder woord. Controleer je gok altijd in de zin.",
+ "begrippen": [
+  {
+   "t": "Context",
+   "d": "De woorden en zinnen om een onbekend woord heen."
+  },
+  {
+   "t": "Voorvoegsel",
+   "d": "Een stukje voor een woord, zoals un- of dis-."
+  },
+  {
+   "t": "Achtervoegsel",
+   "d": "Een stukje achter een woord, zoals -less of -ful."
+  },
+  {
+   "t": "Samenstelling",
+   "d": "Een woord van twee woorden, zoals breakfast."
+  },
+  {
+   "t": "Verwant woord",
+   "d": "Een woord dat lijkt op een Nederlands woord, zoals winter."
+  },
+  {
+   "t": "Valse vriend",
+   "d": "Een woord dat lijkt op Nederlands maar iets anders betekent."
+  },
+  {
+   "t": "Verwijswoord",
+   "d": "Een woord als it, they of which dat terugwijst."
+  },
+  {
+   "t": "Synoniem",
+   "d": "Een woord met dezelfde betekenis."
+  },
+  {
+   "t": "Tegengesteld woord",
+   "d": "Een woord met de omgekeerde betekenis."
+  },
+  {
+   "t": "Raden",
+   "d": "Een slimme gok op grond van aanwijzingen."
+  },
+  {
+   "t": "Controleren",
+   "d": "Je gok in de zin zetten en kijken of het klopt."
+  },
+  {
+   "t": "Betekenis",
+   "d": "Wat een woord of zin zegt."
+  }
+ ],
+ "sv": [
+  {
+   "v": "Wat doe je als je een Engels woord niet kent?",
+   "o": [
+    "\"het woord overslaan en niet meer lezen, I think, I suppose\"",
+    "\"de zinnen eromheen lezen om de betekenis te raden\"",
+    "\"het eerste woord kiezen dat je kent\"",
+    "\"de hele tekst in het Nederlands zetten\""
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 0,
+   "u": "Gebruik de context. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"het woord overslaan en niet meer lezen, I think, I suppose\"\"? Dan denk je dat een onbekend woord de tekst onleesbaar maakt. Vaak begrijp je het woord wel uit de zin, en overslaan kost je het antwoord.",
+    "Klopt: de omringende zinnen geven vaak genoeg aanwijzingen voor de betekenis.",
+    "Koos je \"\"het eerste woord kiezen dat je kent\"\"? Dan denk je dat het eerste bekende woord past. Dat kan een ander woord zijn, en klopt dan niet.",
+    "Koos je \"\"de hele tekst in het Nederlands zetten\"\"? Dan denk je dat je alles moet vertalen. Dat kost veel tijd, en is niet nodig."
+   ],
+   "uh": "Wat doe je met een onbekend woord?"
+  },
+  {
+   "v": "Welke aanwijzing in de tekst helpt je de betekenis van een woord te raden?",
+   "o": [
+    "\"het aantal letters van het woord\"",
+    "\"het lettertype van het woord\"",
+    "\"de plaats van het woord op de pagina, to be honest, you know\"",
+    "\"een uitleg of een tegengesteld woord in dezelfde zin\""
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 0,
+   "u": "Uitleg of tegenstelling. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"het aantal letters van het woord\"\"? Dan denk je dat de lengte iets zegt. Dat zegt niets over de betekenis, en helpt dus niet.",
+    "Koos je \"\"het lettertype van het woord\"\"? Dan denk je dat het lettertype iets zegt. Dat hangt van de uitgave af, en heeft geen betekenis.",
+    "Koos je \"\"de plaats van het woord op de pagina, to be honest, you know\"\"? Dan denk je dat de plek iets zegt. Dat geeft geen betekenis, en is toevallig.",
+    "Klopt: zo'n aanwijzing laat zien wat het woord betekent of juist niet betekent."
+   ],
+   "uh": "Welke aanwijzing helpt?"
+  },
+  {
+   "v": "Wat betekent het voorvoegsel un- meestal, zoals in unhappy?",
+   "o": [
+    "\"niet of het tegenovergestelde\"",
+    "\"heel erg\"",
+    "\"opnieuw\"",
+    "\"samen met, I suppose, really, to be honest\""
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 1,
+   "u": "Un- = niet. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: un- maakt van een woord het tegenovergestelde, zoals bij unhappy en unsure.",
+    "Koos je \"\"heel erg\"\"? Dan denk je dat un- een versterking is. Het maakt juist het tegenovergestelde, en versterkt niet.",
+    "Koos je \"\"opnieuw\"\"? Dan denk je dat un- opnieuw betekent. Dat is re-, en niet un-.",
+    "Koos je \"\"samen met, I suppose, really, to be honest\"\"? Dan denk je dat un- samen met betekent. Dat is co-, en niet un-."
+   ],
+   "uh": "Wat betekent un-?"
+  },
+  {
+   "v": "Wat betekent het achtervoegsel -less meestal, zoals in careless?",
+   "o": [
+    "\"met veel\"",
+    "\"opnieuw\"",
+    "\"zonder\"",
+    "\"een beetje\""
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 1,
+   "u": "-less = zonder. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"met veel\"\"? Dan denk je dat -less veel betekent. Dat is -ful, en -less is het tegenovergestelde.",
+    "Koos je \"\"opnieuw\"\"? Dan denk je dat -less opnieuw betekent. Dat is een voorvoegsel, en geen achtervoegsel.",
+    "Klopt: -less betekent zonder, dus careless is zonder zorg.",
+    "Koos je \"\"een beetje\"\"? Dan denk je dat -less een beetje betekent. Het betekent zonder, en niet een beetje."
+   ],
+   "uh": "Wat betekent -less?"
+  },
+  {
+   "v": "Welk Engels woord betekent hetzelfde als het Nederlandse woord?",
+   "o": [
+    "\"gift\"",
+    "\"winter\"",
+    "\"become\"",
+    "\"actual\""
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 2,
+   "u": "Let op valse vrienden. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"gift\"\"? Dan denk je dat gift als het Nederlandse gif te vertalen is. Gift betekent cadeau, en niet gif.",
+    "Klopt: winter betekent in het Engels hetzelfde als in het Nederlands.",
+    "Koos je \"\"become\"\"? Dan denk je dat become krijgen betekent. Het betekent worden, en dat is iets anders.",
+    "Koos je \"\"actual\"\"? Dan denk je dat actual actueel betekent. Het betekent echt, en niet actueel."
+   ],
+   "uh": "Welk woord betekent hetzelfde?"
+  },
+  {
+   "v": "Waar verwijst een woord als it in een tekst meestal naar?",
+   "o": [
+    "\"naar iets wat later pas komt\"",
+    "\"naar de schrijver van de tekst\"",
+    "\"naar de titel van de tekst alleen, I think, I suppose\"",
+    "\"naar iets wat eerder in de tekst is genoemd\""
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 3,
+   "u": "It wijst meestal terug. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"naar iets wat later pas komt\"\"? Dan denk je dat het woord vooruit wijst. Meestal wijst het terug, naar iets dat al is genoemd.",
+    "Koos je \"\"naar de schrijver van de tekst\"\"? Dan denk je dat it de schrijver is. Dat is I, en niet it.",
+    "Koos je \"\"naar de titel van de tekst alleen, I think, I suppose\"\"? Dan denk je dat it altijd de titel is. Het kan een voorwerp in de zin zijn, en niet de titel.",
+    "Klopt: een verwijswoord als it of they verwijst naar iets uit een eerdere zin."
+   ],
+   "uh": "Waar verwijst it naar?"
+  },
+  {
+   "v": "Hoe controleer je je gok voor de betekenis van een woord?",
+   "o": [
+    "\"je zet je gok in de zin en kijkt of de zin nog klopt\"",
+    "\"je kiest het kortste woord\"",
+    "\"je vraagt het aan een klasgenoot, to be honest, you know\"",
+    "\"je laat het woord weg\""
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 4,
+   "u": "Controleer in de zin. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: past je gok in de zin en in de tekst, dan is de kans groot dat hij goed is.",
+    "Koos je \"\"je kiest het kortste woord\"\"? Dan denk je dat het kortste woord goed is. Lengte zegt niets, over de betekenis.",
+    "Koos je \"\"je vraagt het aan een klasgenoot, to be honest, you know\"\"? Dan denk je dat een klasgenoot het weet. Tijdens het examen kan dat niet, dus je controleert zelf.",
+    "Koos je \"\"je laat het woord weg\"\"? Dan denk je dat weglaten het oplost. Dan verlies je de betekenis, en is de zin onvolledig."
+   ],
+   "uh": "Hoe controleer je een gok?"
+  },
+  {
+   "v": "What does 'dishonest' mean in 'that would be dishonest'?",
+   "o": [
+    "\"very kind\"",
+    "\"a little tired\"",
+    "\"not honest\"",
+    "\"not expensive\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 0,
+   "u": "Dis- = niet. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"very kind\"\"? Dan denk je dat dishonest vriendelijk is. Dis- betekent niet, en het geld houden is niet aardig.",
+    "Koos je \"\"a little tired\"\"? Dan denk je dat dishonest moe betekent. Het woord gaat over eerlijkheid, en niet over moe zijn.",
+    "Klopt: dis- maakt het tegenovergestelde van honest, en het geld houden dat niet van hem is, is oneerlijk.",
+    "Koos je \"\"not expensive\"\"? Dan denk je dat dishonest goedkoop betekent. Het gaat om eerlijkheid, en niet om prijs."
+   ],
+   "uh": "Wat betekent dishonest?",
+   "ctx": "Read the text: \"The Lost Wallet. On Monday morning, Ben found a wallet in the park. It was brown and looked old. Inside there was a bus card, a photo of a dog and thirty euros, but no name. Ben felt unsure. He could keep the money, but that would be dishonest. Instead, he took the wallet to the police station. The officer was very pleased and thanked him. Two days later, an elderly lady came to the school to say thank you. It was her wallet, and the dog in the photo was her best friend. She gave Ben a small box of chocolates and invited him for tea. Ben said that he only did what everybody should do.\""
+  },
+  {
+   "v": "What does 'unsure' mean in 'Ben felt unsure'?",
+   "o": [
+    "\"very happy\"",
+    "\"not certain\"",
+    "\"afraid of dogs\"",
+    "\"angry\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 1,
+   "u": "Un- + sure. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"very happy\"\"? Dan denk je dat unsure blij betekent. Un- betekent niet, en het woord noemt geen blijdschap.",
+    "Klopt: un- betekent niet, dus unsure is niet zeker, en Ben twijfelde wat hij moest doen.",
+    "Koos je \"\"afraid of dogs\"\"? Dan denk je dat unsure bang voor honden betekent. De hond is alleen een foto, en het gaat om twijfel.",
+    "Koos je \"\"angry\"\"? Dan denk je dat unsure boos betekent. Het woord betekent niet zeker, en niet boos."
+   ],
+   "uh": "Wat betekent unsure?",
+   "ctx": "Read the text: \"The Lost Wallet. On Monday morning, Ben found a wallet in the park. It was brown and looked old. Inside there was a bus card, a photo of a dog and thirty euros, but no name. Ben felt unsure. He could keep the money, but that would be dishonest. Instead, he took the wallet to the police station. The officer was very pleased and thanked him. Two days later, an elderly lady came to the school to say thank you. It was her wallet, and the dog in the photo was her best friend. She gave Ben a small box of chocolates and invited him for tea. Ben said that he only did what everybody should do.\""
+  },
+  {
+   "v": "In 'It was her wallet', what does 'her' refer to?",
+   "o": [
+    "\"Ben\"",
+    "\"the police officer\"",
+    "\"the dog\"",
+    "\"the elderly lady\""
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 3,
+   "u": "Her = de dame. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"Ben\"\"? Dan denk je dat her naar Ben verwijst. Ben is een jongen, en her is vrouwelijk.",
+    "Koos je \"\"the police officer\"\"? Dan denk je dat her naar de agent verwijst. De agent wordt niet als vrouw genoemd, en her volgt op the elderly lady.",
+    "Koos je \"\"the dog\"\"? Dan denk je dat her naar de hond verwijst. De hond is de beste vriend van de dame, en niet van wie de portemonnee is.",
+    "Klopt: her verwijst naar de oudere dame die de portemonnee kwam halen."
+   ],
+   "uh": "Waar verwijst her naar?",
+   "ctx": "Read the text: \"The Lost Wallet. On Monday morning, Ben found a wallet in the park. It was brown and looked old. Inside there was a bus card, a photo of a dog and thirty euros, but no name. Ben felt unsure. He could keep the money, but that would be dishonest. Instead, he took the wallet to the police station. The officer was very pleased and thanked him. Two days later, an elderly lady came to the school to say thank you. It was her wallet, and the dog in the photo was her best friend. She gave Ben a small box of chocolates and invited him for tea. Ben said that he only did what everybody should do.\""
+  },
+  {
+   "v": "What does 'elderly' mean in 'an elderly lady'?",
+   "o": [
+    "\"old\"",
+    "\"young\"",
+    "\"rich\"",
+    "\"foreign\""
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 2,
+   "u": "Elderly = oud. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: elderly betekent oud, een nette manier om iemand op leeftijd te noemen.",
+    "Koos je \"\"young\"\"? Dan denk je dat een dame jong is omdat ze naar school komt. Elderly betekent juist op leeftijd, dus het tegenovergestelde van jong.",
+    "Koos je \"\"rich\"\"? Dan denk je dat een portemonnee met geld op rijkdom wijst. Elderly zegt iets over haar leeftijd, en niet over haar geld.",
+    "Koos je \"\"foreign\"\"? Dan denk je dat een ouder woord op een andere herkomst wijst. Elderly zegt niets over waar ze vandaan komt, maar over leeftijd."
+   ],
+   "uh": "Wat betekent elderly?",
+   "ctx": "Read the text: \"The Lost Wallet. On Monday morning, Ben found a wallet in the park. It was brown and looked old. Inside there was a bus card, a photo of a dog and thirty euros, but no name. Ben felt unsure. He could keep the money, but that would be dishonest. Instead, he took the wallet to the police station. The officer was very pleased and thanked him. Two days later, an elderly lady came to the school to say thank you. It was her wallet, and the dog in the photo was her best friend. She gave Ben a small box of chocolates and invited him for tea. Ben said that he only did what everybody should do.\""
+  },
+  {
+   "v": "What does 'avoid' mean in 'Avoid screens in the last hour before bed'?",
+   "o": [
+    "\"look at carefully\"",
+    "\"buy more of\"",
+    "\"stay away from\"",
+    "\"share with friends\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 0,
+   "u": "Reden in de zin helpt. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"look at carefully\"\"? Dan denk je dat avoid kijken betekent. De reden zegt dat het licht je wakker houdt, dus je moet het niet doen.",
+    "Koos je \"\"buy more of\"\"? Dan denk je dat avoid kopen betekent. Het gaat om een gewoonte, en niet om kopen.",
+    "Klopt: avoid betekent vermijden, en de reden staat erachter, het heldere licht houdt je wakker.",
+    "Koos je \"\"share with friends\"\"? Dan denk je dat avoid delen betekent. De zin gaat over slapen, en niet over delen."
+   ],
+   "uh": "Wat betekent avoid?",
+   "ctx": "Read the text: \"Tips for a healthy week. Many teenagers are tired because they sleep too little. Try to go to bed at the same time every night. Avoid screens in the last hour before bed; the bright light keeps your brain awake. Eating breakfast gives you energy for the morning, so never skip it. Drink water instead of sweet drinks, which contain a lot of sugar. Finally, move for at least thirty minutes a day. A short walk is already helpful, and it is free. If you follow these tips for two weeks, you will probably feel much better in the morning.\""
+  },
+  {
+   "v": "What does 'skip' mean in 'never skip it'?",
+   "o": [
+    "\"eat twice\"",
+    "\"leave out\"",
+    "\"cook for friends\"",
+    "\"buy new\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 0,
+   "u": "Skip = overslaan. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"eat twice\"\"? Dan denk je dat skip twee keer betekent. Het gaat over overslaan, en niet over meer.",
+    "Klopt: skip betekent overslaan, en het ontbijt geeft energie, dus je moet het niet overslaan.",
+    "Koos je \"\"cook for friends\"\"? Dan denk je dat skip koken betekent. De zin zegt dat het ontbijt energie geeft, dus je moet het niet missen.",
+    "Koos je \"\"buy new\"\"? Dan denk je dat skip kopen betekent. Het gaat om ontbijt, en niet om kopen."
+   ],
+   "uh": "Wat betekent skip?",
+   "ctx": "Read the text: \"Tips for a healthy week. Many teenagers are tired because they sleep too little. Try to go to bed at the same time every night. Avoid screens in the last hour before bed; the bright light keeps your brain awake. Eating breakfast gives you energy for the morning, so never skip it. Drink water instead of sweet drinks, which contain a lot of sugar. Finally, move for at least thirty minutes a day. A short walk is already helpful, and it is free. If you follow these tips for two weeks, you will probably feel much better in the morning.\""
+  },
+  {
+   "v": "In 'sweet drinks, which contain a lot of sugar', what does 'which' refer to?",
+   "o": [
+    "\"water\"",
+    "\"sugar\"",
+    "\"energy\"",
+    "\"sweet drinks\""
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 3,
+   "u": "Which = sweet drinks. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"water\"\"? Dan denk je dat which naar water verwijst. Water staat in de zin ervoor, en bevat geen suiker.",
+    "Koos je \"\"sugar\"\"? Dan denk je dat which naar suiker verwijst. Sugar komt pas daarna, en is het deel van de uitleg.",
+    "Koos je \"\"energy\"\"? Dan denk je dat which naar energie verwijst. Dat staat in een eerdere zin, en past niet bij suiker.",
+    "Klopt: which verwijst terug naar sweet drinks, die veel suiker bevatten."
+   ],
+   "uh": "Waar verwijst which naar?",
+   "ctx": "Read the text: \"Tips for a healthy week. Many teenagers are tired because they sleep too little. Try to go to bed at the same time every night. Avoid screens in the last hour before bed; the bright light keeps your brain awake. Eating breakfast gives you energy for the morning, so never skip it. Drink water instead of sweet drinks, which contain a lot of sugar. Finally, move for at least thirty minutes a day. A short walk is already helpful, and it is free. If you follow these tips for two weeks, you will probably feel much better in the morning.\""
+  },
+  {
+   "v": "What does 'replace' mean in 'replace the jacket'?",
+   "o": [
+    "\"give a new one instead\"",
+    "\"wash the jacket, really, to be honest\"",
+    "\"hide the jacket\"",
+    "\"sell the jacket\""
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 0,
+   "u": "Replace = vervangen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: replace betekent vervangen, dus een nieuwe jas in plaats van de kapotte.",
+    "Koos je \"\"wash the jacket, really, to be honest\"\"? Dan denk je dat een jas die kapot is eerst gewassen moet worden. De rits is kapot, en wassen lost dat niet op.",
+    "Koos je \"\"hide the jacket\"\"? Dan denk je dat Anna de jas wil laten verdwijnen. Ze vraagt om een andere jas, en niet om verstoppen.",
+    "Koos je \"\"sell the jacket\"\"? Dan denk je dat Anna de jas aan de winkel wil verkopen. Ze wil juist een nieuwe, of haar geld terug."
+   ],
+   "uh": "Wat betekent replace?",
+   "ctx": "Read the text: \"Dear Mr Evans, I am writing to complain about the jacket that I bought in your shop last week. The jacket cost 49 euros and I have only worn it once. When I got home, I noticed that the zip was broken. The shop assistant told me that I could return it, but I lost the receipt. I would be grateful if you could replace the jacket or give me my money back. I have attached a photo of the broken zip. I hope to hear from you soon. Yours sincerely, Anna de Vries\""
+  },
+  {
+   "v": "What does 'broken' tell you about the zip?",
+   "o": [
+    "\"it is new\"",
+    "\"it is very long\"",
+    "\"it does not work\"",
+    "\"it is the wrong colour\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 1,
+   "u": "Broken = kapot. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"it is new\"\"? Dan denk je dat broken nieuw betekent. Het betekent kapot, en niet nieuw.",
+    "Koos je \"\"it is very long\"\"? Dan denk je dat broken lang betekent. Het gaat om werken, en niet om lengte.",
+    "Klopt: broken betekent kapot, de rits werkt niet meer.",
+    "Koos je \"\"it is the wrong colour\"\"? Dan denk je dat broken een kleur betekent. Het gaat om kapot, en niet om kleur."
+   ],
+   "uh": "Wat zegt broken over de rits?",
+   "ctx": "Read the text: \"Dear Mr Evans, I am writing to complain about the jacket that I bought in your shop last week. The jacket cost 49 euros and I have only worn it once. When I got home, I noticed that the zip was broken. The shop assistant told me that I could return it, but I lost the receipt. I would be grateful if you could replace the jacket or give me my money back. I have attached a photo of the broken zip. I hope to hear from you soon. Yours sincerely, Anna de Vries\""
+  },
+  {
+   "v": "In 'I have attached a photo of the broken zip', what is the photo attached to?",
+   "o": [
+    "\"the jacket\"",
+    "\"the letter\"",
+    "\"the shop\"",
+    "\"the receipt, to be honest\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 3,
+   "u": "Attached = bijgevoegd. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"the jacket\"\"? Dan denk je dat de foto aan de jas zit. De foto is van de rits, en is bijgevoegd aan de brief.",
+    "Klopt: attached betekent bijgevoegd, de foto zit bij de brief.",
+    "Koos je \"\"the shop\"\"? Dan denk je dat de foto aan de winkel zit. Dat is niet logisch, want de brief gaat naar de winkel.",
+    "Koos je \"\"the receipt, to be honest\"\"? Dan denk je dat de foto aan het bonnetje zit. Dat is verloren, dus dat kan niet."
+   ],
+   "uh": "Waaraan zit de foto?",
+   "ctx": "Read the text: \"Dear Mr Evans, I am writing to complain about the jacket that I bought in your shop last week. The jacket cost 49 euros and I have only worn it once. When I got home, I noticed that the zip was broken. The shop assistant told me that I could return it, but I lost the receipt. I would be grateful if you could replace the jacket or give me my money back. I have attached a photo of the broken zip. I hope to hear from you soon. Yours sincerely, Anna de Vries\""
+  },
+  {
+   "v": "What does 'pleased' mean in 'The officer was very pleased'?",
+   "o": [
+    "\"angry\"",
+    "\"surprised and afraid\"",
+    "\"confused\"",
+    "\"happy\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 0,
+   "u": "Pleased = tevreden. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"angry\"\"? Dan denk je dat pleased boos betekent. De agent bedankt hem, dus hij is blij.",
+    "Koos je \"\"surprised and afraid\"\"? Dan denk je dat pleased bang betekent. Er is niets om bang voor te zijn, dus dat klopt niet.",
+    "Koos je \"\"confused\"\"? Dan denk je dat pleased in de war betekent. Hij bedankt Ben, dus hij is tevreden.",
+    "Klopt: pleased betekent tevreden of blij, en dat past bij het bedanken."
+   ],
+   "uh": "Wat betekent pleased?",
+   "ctx": "Read the text: \"The Lost Wallet. On Monday morning, Ben found a wallet in the park. It was brown and looked old. Inside there was a bus card, a photo of a dog and thirty euros, but no name. Ben felt unsure. He could keep the money, but that would be dishonest. Instead, he took the wallet to the police station. The officer was very pleased and thanked him. Two days later, an elderly lady came to the school to say thank you. It was her wallet, and the dog in the photo was her best friend. She gave Ben a small box of chocolates and invited him for tea. Ben said that he only did what everybody should do.\""
+  },
+  {
+   "v": "Which word from the text has the prefix un- and means the opposite of certain?",
+   "o": [
+    "\"unsure\"",
+    "\"under\"",
+    "\"wallet\"",
+    "\"police\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 1,
+   "u": "Un- = niet. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: unsure is un- + sure en betekent niet zeker.",
+    "Koos je \"\"under\"\"? Dan denk je dat een woord met u begint met un-. Under is een gewoon woord voor onder, en staat niet in de tekst.",
+    "Koos je \"\"wallet\"\"? Dan denk je dat het eerste woord uit de tekst het antwoord is. Wallet is gewoon een voorwerp, zonder voorvoegsel.",
+    "Koos je \"\"police\"\"? Dan denk je dat een dienstwoord een voorvoegsel heeft. Police is een instantie, en heeft geen un-."
+   ],
+   "uh": "Welk woord heeft un- en betekent niet zeker?",
+   "ctx": "Read the text: \"The Lost Wallet. On Monday morning, Ben found a wallet in the park. It was brown and looked old. Inside there was a bus card, a photo of a dog and thirty euros, but no name. Ben felt unsure. He could keep the money, but that would be dishonest. Instead, he took the wallet to the police station. The officer was very pleased and thanked him. Two days later, an elderly lady came to the school to say thank you. It was her wallet, and the dog in the photo was her best friend. She gave Ben a small box of chocolates and invited him for tea. Ben said that he only did what everybody should do.\""
+  },
+  {
+   "v": "Which meaning of 'keep' fits 'He could keep the money'?",
+   "o": [
+    "\"hide it\"",
+    "\"count it, really, to be honest\"",
+    "\"have it for himself\"",
+    "\"lose it\""
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 4,
+   "u": "Keep = houden. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"hide it\"\"? Dan denk je dat keep verbergen betekent. Het gaat om houden, en niet om verstoppen.",
+    "Koos je \"\"count it, really, to be honest\"\"? Dan denk je dat keep tellen betekent. Het gaat om eigendom, en niet om tellen.",
+    "Klopt: keep betekent houden, dus het geld voor zichzelf houden.",
+    "Koos je \"\"lose it\"\"? Dan denk je dat keep verliezen betekent. Het is het tegenovergestelde, namelijk houden."
+   ],
+   "uh": "Welke betekenis past?",
+   "ctx": "Read the text: \"The Lost Wallet. On Monday morning, Ben found a wallet in the park. It was brown and looked old. Inside there was a bus card, a photo of a dog and thirty euros, but no name. Ben felt unsure. He could keep the money, but that would be dishonest. Instead, he took the wallet to the police station. The officer was very pleased and thanked him. Two days later, an elderly lady came to the school to say thank you. It was her wallet, and the dog in the photo was her best friend. She gave Ben a small box of chocolates and invited him for tea. Ben said that he only did what everybody should do.\""
+  },
+  {
+   "v": "The word 'energy' looks like the Dutch word 'energie'. What does it mean in this text?",
+   "o": [
+    "\"electricity in the house\"",
+    "\"power to do things\"",
+    "\"a kind of drink\"",
+    "\"a sport\""
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 2,
+   "u": "Energy = kracht. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"electricity in the house\"\"? Dan denk je dat het woord naar het huis verwijst. Hier gaat het om je lichaam, en niet om stroom.",
+    "Klopt: energy is hier de kracht om dingen te doen, zoals bij het ontbijt.",
+    "Koos je \"\"a kind of drink\"\"? Dan denk je dat een ontbijt met een drankje te maken heeft. Energy is hier wat je lichaam krijgt, en geen drankje.",
+    "Koos je \"\"a sport\"\"? Dan denk je dat energy een activiteit is. Het is wat je nodig hebt voor een sport, en geen sport zelf."
+   ],
+   "uh": "Wat betekent energy hier?",
+   "ctx": "Read the text: \"Tips for a healthy week. Many teenagers are tired because they sleep too little. Try to go to bed at the same time every night. Avoid screens in the last hour before bed; the bright light keeps your brain awake. Eating breakfast gives you energy for the morning, so never skip it. Drink water instead of sweet drinks, which contain a lot of sugar. Finally, move for at least thirty minutes a day. A short walk is already helpful, and it is free. If you follow these tips for two weeks, you will probably feel much better in the morning.\""
+  },
+  {
+   "v": "Which word means the same as 'helpful' in 'A short walk is already helpful'?",
+   "o": [
+    "\"harmful\"",
+    "\"boring\"",
+    "\"expensive\"",
+    "\"useful\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 4,
+   "u": "Helpful = nuttig. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"harmful\"\"? Dan denk je dat helpful schadelijk betekent. Het is het tegenovergestelde, namelijk nuttig.",
+    "Koos je \"\"boring\"\"? Dan denk je dat helpful saai betekent. Het woord zegt niets over saai, maar over nut.",
+    "Koos je \"\"expensive\"\"? Dan denk je dat helpful duur betekent. De wandeling is gratis, en het gaat om nut.",
+    "Klopt: helpful en useful betekenen allebei nuttig."
+   ],
+   "uh": "Welk woord betekent hetzelfde?",
+   "ctx": "Read the text: \"Tips for a healthy week. Many teenagers are tired because they sleep too little. Try to go to bed at the same time every night. Avoid screens in the last hour before bed; the bright light keeps your brain awake. Eating breakfast gives you energy for the morning, so never skip it. Drink water instead of sweet drinks, which contain a lot of sugar. Finally, move for at least thirty minutes a day. A short walk is already helpful, and it is free. If you follow these tips for two weeks, you will probably feel much better in the morning.\""
+  },
+  {
+   "v": "In 'A short walk is already helpful, and it is free', what does 'it' refer to?",
+   "o": [
+    "\"a short walk\"",
+    "\"water\"",
+    "\"energy\"",
+    "\"the morning, I suppose\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 3,
+   "u": "It = a short walk. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: it verwijst terug naar a short walk, het onderwerp van de zin.",
+    "Koos je \"\"water\"\"? Dan denk je dat it naar water verwijst. Water staat verderop in de tekst, en niet in deze zin.",
+    "Koos je \"\"energy\"\"? Dan denk je dat it naar energie verwijst. Dat staat in een andere zin, en past niet bij gratis.",
+    "Koos je \"\"the morning, I suppose\"\"? Dan denk je dat it naar de ochtend verwijst. De zin gaat over een wandeling, en niet over de ochtend."
+   ],
+   "uh": "Waar verwijst it naar?",
+   "ctx": "Read the text: \"Tips for a healthy week. Many teenagers are tired because they sleep too little. Try to go to bed at the same time every night. Avoid screens in the last hour before bed; the bright light keeps your brain awake. Eating breakfast gives you energy for the morning, so never skip it. Drink water instead of sweet drinks, which contain a lot of sugar. Finally, move for at least thirty minutes a day. A short walk is already helpful, and it is free. If you follow these tips for two weeks, you will probably feel much better in the morning.\""
+  },
+  {
+   "v": "How can you check your guess that 'skip' means 'leave out'?",
+   "o": [
+    "\"count the letters in the word, you know, I think, I suppose\"",
+    "\"look at the title only\"",
+    "\"put 'leave out' in the sentence and see if it still makes sense\"",
+    "\"choose the word you like best\""
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 4,
+   "u": "Zet je gok in de zin. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"count the letters in the word, you know, I think, I suppose\"\"? Dan denk je dat de lengte iets zegt. Dat zegt niets over de betekenis, en is geen controle.",
+    "Koos je \"\"look at the title only\"\"? Dan denk je dat de titel de betekenis geeft. De titel noemt het onderwerp, en geen woorden.",
+    "Klopt: past je gok in de zin, dan is de kans groot dat hij goed is.",
+    "Koos je \"\"choose the word you like best\"\"? Dan denk je dat je smaak telt. Het gaat om de zin, en niet om jouw voorkeur."
+   ],
+   "uh": "Hoe controleer je je gok?",
+   "ctx": "Read the text: \"Tips for a healthy week. Many teenagers are tired because they sleep too little. Try to go to bed at the same time every night. Avoid screens in the last hour before bed; the bright light keeps your brain awake. Eating breakfast gives you energy for the morning, so never skip it. Drink water instead of sweet drinks, which contain a lot of sugar. Finally, move for at least thirty minutes a day. A short walk is already helpful, and it is free. If you follow these tips for two weeks, you will probably feel much better in the morning.\""
+  },
+  {
+   "v": "'I would be grateful if you could replace the jacket' means that the writer would be ...",
+   "o": [
+    "\"angry\"",
+    "\"thankful\"",
+    "\"afraid\"",
+    "\"surprised\""
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 2,
+   "u": "Grateful = dankbaar. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"angry\"\"? Dan denk je dat een klacht boos klinkt. Grateful is juist een beleefd woord, en betekent dankbaar.",
+    "Klopt: grateful betekent dankbaar, een beleefde manier om iets te vragen.",
+    "Koos je \"\"afraid\"\"? Dan denk je dat de schrijver bang is voor de winkel. Grateful drukt waardering uit, en geen angst.",
+    "Koos je \"\"surprised\"\"? Dan denk je dat de schrijver zich verbaast. Grateful drukt uit dat ze iets waardeert, en is geen verbazing."
+   ],
+   "uh": "Wat betekent grateful?",
+   "ctx": "Read the text: \"Dear Mr Evans, I am writing to complain about the jacket that I bought in your shop last week. The jacket cost 49 euros and I have only worn it once. When I got home, I noticed that the zip was broken. The shop assistant told me that I could return it, but I lost the receipt. I would be grateful if you could replace the jacket or give me my money back. I have attached a photo of the broken zip. I hope to hear from you soon. Yours sincerely, Anna de Vries\""
+  },
+  {
+   "v": "What does 'receipt' mean in 'I lost the receipt'?",
+   "o": [
+    "\"a recipe for a meal\"",
+    "\"a letter to the shop, I think, I suppose, really\"",
+    "\"a new jacket\"",
+    "\"a piece of paper that shows that you paid\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 2,
+   "u": "Receipt = bon. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"a recipe for a meal\"\"? Dan denk je dat receipt recept betekent. Dat is een valse vriend, een recept is in het Engels recipe.",
+    "Koos je \"\"a letter to the shop, I think, I suppose, really\"\"? Dan denk je dat receipt een brief betekent. Het is een bewijs van betaling, en geen brief.",
+    "Koos je \"\"a new jacket\"\"? Dan denk je dat receipt een jas betekent. Het is een bon, en geen kledingstuk.",
+    "Klopt: receipt is een kassabon, geen recept zoals het Nederlandse woord doet denken."
+   ],
+   "uh": "Wat betekent receipt?",
+   "ctx": "Read the text: \"Dear Mr Evans, I am writing to complain about the jacket that I bought in your shop last week. The jacket cost 49 euros and I have only worn it once. When I got home, I noticed that the zip was broken. The shop assistant told me that I could return it, but I lost the receipt. I would be grateful if you could replace the jacket or give me my money back. I have attached a photo of the broken zip. I hope to hear from you soon. Yours sincerely, Anna de Vries\""
+  },
+  {
+   "v": "In 'I hope to hear from you soon', who does 'I' refer to?",
+   "o": [
+    "\"Anna\"",
+    "\"Mr Evans\"",
+    "\"the shop assistant\"",
+    "\"the jacket\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 3,
+   "u": "I = de schrijver. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: I is de schrijver van de brief, Anna de Vries.",
+    "Koos je \"\"Mr Evans\"\"? Dan denk je dat I naar meneer Evans verwijst. Hij is de ontvanger, en de schrijver zegt I.",
+    "Koos je \"\"the shop assistant\"\"? Dan denk je dat I naar de verkoopster verwijst. Zij wordt in de derde persoon genoemd, en niet met I.",
+    "Koos je \"\"the jacket\"\"? Dan denk je dat I naar de jas verwijst. Een jas schrijft geen brief, en I is een persoon."
+   ],
+   "uh": "Waar verwijst I naar?",
+   "ctx": "Read the text: \"Dear Mr Evans, I am writing to complain about the jacket that I bought in your shop last week. The jacket cost 49 euros and I have only worn it once. When I got home, I noticed that the zip was broken. The shop assistant told me that I could return it, but I lost the receipt. I would be grateful if you could replace the jacket or give me my money back. I have attached a photo of the broken zip. I hope to hear from you soon. Yours sincerely, Anna de Vries\""
+  }
+ ],
+ "oe": [
+  {
+   "bron": "Examenstijl",
+   "ctx": "Read the text: \"Tom was exhausted after the football match. His legs were heavy and he could hardly walk. He went home, took a hot shower and fell asleep on the sofa within five minutes.\" You do not know the word exhausted.",
+   "v": "Write what exhausted means and which words in the text help you to guess it.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Uitgeput of heel moe (1p). Een aanwijzing, zoals legs were heavy (1p). Een tweede aanwijzing, zoals fell asleep (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Read the text: \"The film was brilliant. The actors were funny and the story was exciting. Everybody in the cinema laughed, and many people clapped at the end.\" You do not know the word brilliant.",
+   "v": "Write what brilliant means and explain which words show you.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Heel goed of schitterend (1p). Een aanwijzing, zoals funny of exciting (1p). Een uitleg waarom de rest positief is (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Read the text: \"Sara bought a hairdryer, but it was useless. It made a lot of noise and the air was never warm. She took it back to the shop and got her money back.\" You must work out the meaning of the word useless.",
+   "v": "Write what useless means and use the prefix or suffix to explain it.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Nutteloos of niet bruikbaar (1p). -less betekent zonder (1p). Een aanwijzing uit de tekst, zoals never warm (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Read the text: \"My sister is very forgetful. Last week she left her keys at home, and yesterday she forgot her lunch. She now writes everything on a list.\" You have to say which words show the meaning of forgetful.",
+   "v": "Write what forgetful means and two clues from the text.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Vergeetachtig (1p). Een aanwijzing, zoals left her keys (1p). Een tweede, zoals forgot her lunch (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Read the text: \"The museum is open every day. It has a big garden and it is free for children. There you can see paintings from many countries.\" You must say what the words it and there refer to.",
+   "v": "Write what it and there refer to in the text.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "It verwijst naar het museum (1p). There verwijst naar het museum of de tuin (1p). Een korte uitleg dat verwijswoorden terugwijzen (1p)."
+  }
+ ]
+}
