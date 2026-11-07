@@ -99,9 +99,9 @@
    "s": 0,
    "u": "Meanwhile = ondertussen. Denk aan de regel die hierbij hoort.",
    "uo": [
-    "Koos je \"\"daarna\"\"? Dan verwart meanwhile met afterwards, een woord voor wat later volgt. Meanwhile beschrijft twee handelingen op hetzelfde moment.",
+    "Koos je \"\"daarna\"\"? Dan verwar je meanwhile met afterwards, een woord voor wat later volgt. Meanwhile beschrijft twee handelingen op hetzelfde moment.",
     "Koos je \"\"eerst\"\"? Dan denk je dat meanwhile een begin aangeeft, zoals first. Maar het staat midden in het recept, terwijl het beslag rust.",
-    "Koos je \"\"nooit\"\"? Dan haalt meanwhile door elkaar met never, omdat beide met n lijken te eindigen of te beginnen. In het recept gebeurt het verwarmen juist wel.",
+    "Koos je \"\"nooit\"\"? Dan haal je meanwhile door elkaar met never, omdat het allebei woorden over tijd zijn. In het recept gebeurt het verwarmen juist wel.",
     "Klopt: meanwhile betekent dat twee dingen tegelijk gebeuren."
    ],
    "uh": "Wat betekent meanwhile?"
@@ -120,9 +120,9 @@
    "u": "Because = reden. Denk aan de regel die hierbij hoort.",
    "uo": [
     "Klopt: because leidt de reden in, zoals in I was angry because I could not watch my series.",
-    "Koos je \"\"however\"\"? Dan kiest een woord van tegenstelling, terwijl de vraag een reden zoekt. However zet iets tegenover het vorige in plaats van het uit te leggen.",
-    "Koos je \"\"finally\"\"? Dan kiest een woord voor het laatste punt van een reeks. Een slotwoord geeft geen reden, het sluit alleen af.",
-    "Koos je \"\"for example\"\"? Dan denkt dat een voorbeeld hetzelfde is als een verklaring. Een voorbeeld laat iets zien, maar legt niet uit waarom."
+    "Koos je \"\"however\"\"? Dan kies je een woord van tegenstelling, terwijl de vraag een reden zoekt. However zet iets tegenover het vorige in plaats van het uit te leggen.",
+    "Koos je \"\"finally\"\"? Dan kies je een woord voor het laatste punt van een reeks. Een slotwoord geeft geen reden, het sluit alleen af.",
+    "Koos je \"\"for example\"\"? Dan denk je dat een voorbeeld hetzelfde is als een verklaring. Een voorbeeld laat iets zien, maar legt niet uit waarom."
    ],
    "uh": "Welk woord geeft een reden?"
   },
@@ -159,10 +159,10 @@
    "s": 2,
    "u": "However = echter. Denk aan de regel die hierbij hoort.",
    "uo": [
-    "Koos je \"\"moreover\"\"? Dan gebruikt een toevoegwoord voor een tegenstelling. Moreover voegt een punt in dezelfde richting toe.",
+    "Koos je \"\"moreover\"\"? Dan gebruik je een toevoegwoord voor een tegenstelling. Moreover voegt een punt in dezelfde richting toe.",
     "Klopt: however betekent echter en zet iets tegenover het vorige.",
-    "Koos je \"\"therefore\"\"? Dan denkt dat daarom hetzelfde is als echter. Therefore noemt een gevolg, geen tegendeel.",
-    "Koos je \"\"next\"\"? Dan denkt dat de volgende stap een tegendeel is. Next geeft alleen een volgorde in de tijd."
+    "Koos je \"\"therefore\"\"? Dan denk je dat daarom hetzelfde is als echter. Therefore noemt een gevolg, geen tegendeel.",
+    "Koos je \"\"next\"\"? Dan denk je dat de volgende stap een tegendeel is. Next geeft alleen een volgorde in de tijd."
    ],
    "uh": "Welk woord geeft een tegenstelling?"
   },
@@ -179,9 +179,9 @@
    "s": 3,
    "u": "For example = voorbeeld. Denk aan de regel die hierbij hoort.",
    "uo": [
-    "Koos je \"\"as a result\"\"? Dan gebruikt een gevolgwoord waar een voorbeeld nodig is. As a result zegt wat eruit volgt, niet wat een voorbeeld is.",
-    "Koos je \"\"in the end\"\"? Dan kiest een slotwoord terwijl de vraag een voorbeeld zoekt. In the end sluit een verhaal af in plaats van iets te illustreren.",
-    "Koos je \"\"on the other hand\"\"? Dan denkt dat de keerzijde een voorbeeld is. On the other hand zet twee kanten tegenover elkaar.",
+    "Koos je \"\"as a result\"\"? Dan gebruik je een gevolgwoord waar een voorbeeld nodig is. As a result zegt wat eruit volgt, niet wat een voorbeeld is.",
+    "Koos je \"\"in the end\"\"? Dan kies je een slotwoord terwijl de vraag een voorbeeld zoekt. In the end sluit een verhaal af in plaats van iets te illustreren.",
+    "Koos je \"\"on the other hand\"\"? Dan denk je dat de keerzijde een voorbeeld is. On the other hand zet twee kanten tegenover elkaar.",
     "Klopt: for example leidt een voorbeeld in dat een bewering ondersteunt."
    ],
    "uh": "Welke woorden leiden een voorbeeld in?"
@@ -190,7 +190,7 @@
    "v": "Hoe vind je het verband tussen twee zinnen?",
    "o": [
     "\"je let op het signaalwoord en vraagt wat de tweede zin met de eerste doet\"",
-    "\"je telt de woorden in beide zinnen, to be honest, you know, I think\"",
+    "\"je telt de woorden in beide zinnen, volgens mij, eigenlijk, denk ik\"",
     "\"je leest alleen de laatste zin\"",
     "\"je kijkt naar het lettertype\""
    ],
@@ -200,7 +200,7 @@
    "u": "Signaalwoord + functie. Denk aan de regel die hierbij hoort.",
    "uo": [
     "Klopt: een signaalwoord laat zien of de tweede zin een reden, gevolg, tegenstelling of voorbeeld geeft.",
-    "Koos je \"\"je telt de woorden in beide zinnen, to be honest, you know, I think\"\"? Dan denk je dat het aantal woorden het verband laat zien. Dat zegt niets, over de betekenis.",
+    "Koos je \"\"je telt de woorden in beide zinnen, volgens mij, eigenlijk, denk ik\"\"? Dan denk je dat het aantal woorden het verband laat zien. Dat zegt niets, over de betekenis.",
     "Koos je \"\"je leest alleen de laatste zin\"\"? Dan denk je dat de laatste zin genoeg is. Je mist dan het verband, met de eerste zin.",
     "Koos je \"\"je kijkt naar het lettertype\"\"? Dan denk je dat het lettertype het verband toont. Dat hangt van de uitgave af, en zegt niets over de zin."
    ],
@@ -451,9 +451,9 @@
    "u": "In the end = slot. Denk aan de regel die hierbij hoort.",
    "uo": [
     "Klopt: in the end leidt het slot van het verhaal in.",
-    "Koos je \"\"At first\"\"? Dan kiest een woord dat het begin van het verhaal markeert. At first leidt de eerste reactie in, niet de afsluiting van de dag.",
-    "Koos je \"\"Then\"\"? Dan denkt dat then het einde markeert. Then is een tussenstap in het verhaal, de afsluiting komt later.",
-    "Koos je \"\"After dinner\"\"? Dan verwart een tijdsaanduiding met een slotwoord. After dinner is een moment in de avond, geen afsluiting van het verhaal."
+    "Koos je \"\"At first\"\"? Dan kies je een woord dat het begin van het verhaal markeert. At first leidt de eerste reactie in, niet de afsluiting van de dag.",
+    "Koos je \"\"Then\"\"? Dan denk je dat then het einde markeert. Then is een tussenstap in het verhaal, de afsluiting komt later.",
+    "Koos je \"\"After dinner\"\"? Dan verwar je een tijdsaanduiding met een slotwoord. After dinner is een moment in de avond, geen afsluiting van het verhaal."
    ],
    "uh": "Welke woorden tonen het einde?",
    "ctx": "Read the text: \"A day without the internet. Last weekend our internet was down for two days. At first, I was angry because I could not watch my favourite series. However, I soon found other things to do. First, I cleaned my room, which I had not done for months. Then I called my grandmother, because I normally only send her messages. She was so happy that she invited me for dinner. After dinner we played cards until midnight. As a result, I went to bed late, but I felt relaxed. In the end, I was almost sorry when the internet came back.\""
@@ -471,8 +471,8 @@
    "s": 2,
    "u": "However = contrast. Denk aan de regel die hierbij hoort.",
    "uo": [
-    "Koos je \"\"cleaning the room and calling grandmother, really, to be honest\"\"? Dan ziet twee opeenvolgende taken als tegenstelling. Beide acties horen bij first en then en vullen elkaar aan.",
-    "Koos je \"\"playing cards and going to bed\"\"? Dan denkt dat een oorzaak en gevolg een tegenstelling zijn. Het kaarten leidt tot laat naar bed gaan, dat is een as a result.",
+    "Koos je \"\"cleaning the room and calling grandmother, really, to be honest\"\"? Dan zie je twee opeenvolgende taken als tegenstelling. Beide acties horen bij first en then en vullen elkaar aan.",
+    "Koos je \"\"playing cards and going to bed\"\"? Dan denk je dat een oorzaak en gevolg een tegenstelling zijn. Het kaarten leidt tot laat naar bed gaan, dat is een as a result.",
     "Klopt: however zet de woede tegenover het vinden van andere dingen.",
     "Koos je \"\"grandmother being happy and dinner\"\"? Dan verbindt twee prettige gebeurtenissen als een contrast. Het ene volgt uit het andere, ze staan niet tegenover elkaar."
    ],
@@ -513,9 +513,9 @@
    "s": 4,
    "u": "Therefore = gevolg. Denk aan de regel die hierbij hoort.",
    "uo": [
-    "Koos je \"\"it gives an example\"\"? Dan denkt dat de laatste zin iets illustreert, zoals for example doet. Therefore wijst op een uitkomst, niet op een illustratie.",
-    "Koos je \"\"it shows a contrast\"\"? Dan leest therefore als een woord van tegenstelling. Het woord betekent daarom en past bij een gevolg.",
-    "Koos je \"\"it starts a new subject, to be honest\"\"? Dan denkt dat de laatste zin een ander onderwerp opent. De zin sluit juist het onderwerp van de proef af.",
+    "Koos je \"\"it gives an example\"\"? Dan denk je dat de laatste zin iets illustreert, zoals for example doet. Therefore wijst op een uitkomst, niet op een illustratie.",
+    "Koos je \"\"it shows a contrast\"\"? Dan lees je therefore als een woord van tegenstelling. Het woord betekent daarom en past bij een gevolg.",
+    "Koos je \"\"it starts a new subject, to be honest\"\"? Dan denk je dat de laatste zin een ander onderwerp opent. De zin sluit juist het onderwerp van de proef af.",
     "Klopt: therefore laat zien dat de proef ervoor zorgt dat iedereen kan reageren."
    ],
    "uh": "Wat doet de laatste zin?",
@@ -576,10 +576,10 @@
    "s": 3,
    "u": "Or = keuze. Denk aan de regel die hierbij hoort.",
    "uo": [
-    "Koos je \"\"a result\"\"? Dan denkt dat or een gevolg inleidt, zoals so. Or noemt alleen twee mogelijkheden naast elkaar.",
+    "Koos je \"\"a result\"\"? Dan denk je dat or een gevolg inleidt, zoals so. Or noemt alleen twee mogelijkheden naast elkaar.",
     "Klopt: or geeft een keuze tussen suiker en fruit.",
-    "Koos je \"\"a contrast\"\"? Dan leest or als een woord van tegenstelling. Suiker en fruit staan niet tegenover elkaar, je mag kiezen.",
-    "Koos je \"\"a time order, really, to be honest\"\"? Dan denkt dat or een volgorde aangeeft. Je eet niet eerst het een en dan het ander, je kiest."
+    "Koos je \"\"a contrast\"\"? Dan lees je or als een woord van tegenstelling. Suiker en fruit staan niet tegenover elkaar, je mag kiezen.",
+    "Koos je \"\"a time order, really, to be honest\"\"? Dan denk je dat or een volgorde aangeeft. Je eet niet eerst het een en dan het ander, je kiest."
    ],
    "uh": "Wat toont or?",
    "ctx": "Read the text: \"How to make pancakes. First, mix 250 grams of flour with two eggs and half a litre of milk. Stir until there are no lumps. Next, let the mixture rest for ten minutes. Meanwhile, heat a little butter in a pan. After that, pour a thin layer of mixture into the pan. Bake the pancake for about one minute, and then turn it over. Finally, put the pancake on a plate. You can eat it with sugar or with fruit. If you want a tasty pancake, do not make the layer too thick. Otherwise it will burn on the outside and stay raw inside.\""
@@ -619,9 +619,9 @@
    "u": "And then = volgorde. Denk aan de regel die hierbij hoort.",
    "uo": [
     "Klopt: and then laat zien dat het omdraaien na het bakken komt.",
-    "Koos je \"\"the second action is a reason for the first\"\"? Dan denkt dat omdraaien de reden voor het bakken is. And then geeft aan dat het omdraaien erna komt.",
-    "Koos je \"\"the second action is a contrast\"\"? Dan ziet het omdraaien als tegenstelling met het bakken. Er staat geen but of however, alleen de volgende stap.",
-    "Koos je \"\"the second action is an example\"\"? Dan denkt dat het omdraaien een voorbeeld van bakken is. Er staat geen for example, het is een nieuwe stap."
+    "Koos je \"\"the second action is a reason for the first\"\"? Dan denk je dat omdraaien de reden voor het bakken is. And then geeft aan dat het omdraaien erna komt.",
+    "Koos je \"\"the second action is a contrast\"\"? Dan zie je het omdraaien als tegenstelling met het bakken. Er staat geen but of however, alleen de volgende stap.",
+    "Koos je \"\"the second action is an example\"\"? Dan denk je dat het omdraaien een voorbeeld van bakken is. Er staat geen for example, het is een nieuwe stap."
    ],
    "uh": "Hoe zijn de delen verbonden?",
    "ctx": "Read the text: \"How to make pancakes. First, mix 250 grams of flour with two eggs and half a litre of milk. Stir until there are no lumps. Next, let the mixture rest for ten minutes. Meanwhile, heat a little butter in a pan. After that, pour a thin layer of mixture into the pan. Bake the pancake for about one minute, and then turn it over. Finally, put the pancake on a plate. You can eat it with sugar or with fruit. If you want a tasty pancake, do not make the layer too thick. Otherwise it will burn on the outside and stay raw inside.\""

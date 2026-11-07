@@ -72,7 +72,7 @@
     "\"op namen van personen\"",
     "\"op getallen en het woord euro\"",
     "\"alleen op de titel\"",
-    "\"alleen op de laatste zin, I think\""
+    "\"alleen op de laatste zin, denk ik\""
    ],
    "c": 1,
    "d": 1,
@@ -82,7 +82,7 @@
     "Koos je \"\"op namen van personen\"\"? Dan denk je dat namen iets over een prijs zeggen. Een naam noemt een persoon, en geen bedrag.",
     "Klopt: bedragen zoek je door te letten op cijfers en woorden als euro of pound.",
     "Koos je \"\"alleen op de titel\"\"? Dan denk je dat de titel de prijs noemt. De titel zegt waar het over gaat, maar meestal niet wat het kost.",
-    "Koos je \"\"alleen op de laatste zin, I think\"\"? Dan denk je dat de prijs altijd aan het eind staat. Dat klopt niet, bedragen staan overal in de tekst."
+    "Koos je \"\"alleen op de laatste zin, denk ik\"\"? Dan denk je dat de prijs altijd aan het eind staat. Dat klopt niet, bedragen staan overal in de tekst."
    ],
    "uh": "Waar let je op bij een prijs?"
   },
@@ -91,7 +91,7 @@
    "o": [
     "\"elk woord langzaam lezen\"",
     "\"de hele tekst vertalen\"",
-    "\"de tekst uit je hoofd leren, to be honest, you know\"",
+    "\"de tekst uit je hoofd leren, volgens mij, eigenlijk\"",
     "\"snel zoeken naar een bepaald stukje informatie\""
    ],
    "c": 3,
@@ -101,7 +101,7 @@
    "uo": [
     "Koos je \"\"elk woord langzaam lezen\"\"? Dan denk je dat scannen woord voor woord lezen is. Dat kost veel tijd, en dat heet intensief lezen.",
     "Koos je \"\"de hele tekst vertalen\"\"? Dan denk je dat scannen vertalen is. Je zoekt alleen een gegeven, en vertaalt niets.",
-    "Koos je \"\"de tekst uit je hoofd leren, to be honest, you know\"\"? Dan denk je dat scannen onthouden is. Je zoekt alleen iets op, en leert niets uit je hoofd.",
+    "Koos je \"\"de tekst uit je hoofd leren, volgens mij, eigenlijk\"\"? Dan denk je dat scannen onthouden is. Je zoekt alleen iets op, en leert niets uit je hoofd.",
     "Klopt: bij scannen laat je je ogen over de tekst gaan om één bepaald gegeven te vinden."
    ],
    "uh": "Wat is scannen?"
@@ -111,7 +111,7 @@
    "o": [
     "\"snel lezen om het algemene idee van de tekst te krijgen\"",
     "\"een bepaald getal zoeken\"",
-    "\"elke zin precies begrijpen, I suppose, really, to be honest\"",
+    "\"elke zin precies begrijpen, zeg maar, gewoon, volgens mij\"",
     "\"de tekst hardop voorlezen\""
    ],
    "c": 0,
@@ -121,7 +121,7 @@
    "uo": [
     "Klopt: bij skimmen lees je vluchtig om te zien waar een tekst over gaat.",
     "Koos je \"\"een bepaald getal zoeken\"\"? Dan denk je dat skimmen zoeken naar een getal is. Dat is scannen, en geen skimmen.",
-    "Koos je \"\"elke zin precies begrijpen, I suppose, really, to be honest\"\"? Dan denk je dat skimmen elke zin vraagt. Dat is nauwkeurig lezen, en kost veel tijd.",
+    "Koos je \"\"elke zin precies begrijpen, zeg maar, gewoon, volgens mij\"\"? Dan denk je dat skimmen elke zin vraagt. Dat is nauwkeurig lezen, en kost veel tijd.",
     "Koos je \"\"de tekst hardop voorlezen\"\"? Dan denk je dat skimmen voorlezen is. Dat is een andere vaardigheid, en geen snel globaal lezen."
    ],
    "uh": "Wat is skimmen?"
@@ -129,7 +129,7 @@
   {
    "v": "Welke delen helpen je bij het skimmen van een tekst?",
    "o": [
-    "\"alleen het laatste woord, you know, I think\"",
+    "\"alleen het laatste woord, eigenlijk, denk ik\"",
     "\"alleen de getallen\"",
     "\"de titel, de kopjes en de eerste zinnen\"",
     "\"alleen het paginanummer\""
@@ -139,7 +139,7 @@
    "s": 1,
    "u": "Titel, kopjes, eerste zinnen. Denk aan de regel die hierbij hoort.",
    "uo": [
-    "Koos je \"\"alleen het laatste woord, you know, I think\"\"? Dan denk je dat één woord genoeg is. Dat geeft geen overzicht, en zegt niets over de tekst.",
+    "Koos je \"\"alleen het laatste woord, eigenlijk, denk ik\"\"? Dan denk je dat één woord genoeg is. Dat geeft geen overzicht, en zegt niets over de tekst.",
     "Koos je \"\"alleen de getallen\"\"? Dan denk je dat getallen het onderwerp tonen. Dat helpt bij scannen, en niet bij skimmen.",
     "Klopt: titel, kopjes en eerste zinnen geven snel een beeld van de inhoud.",
     "Koos je \"\"alleen het paginanummer\"\"? Dan denk je dat het paginanummer helpt. Het zegt niets over de inhoud, en is geen onderdeel van de tekst."
@@ -149,7 +149,7 @@
   {
    "v": "Wat vertelt een kopje boven een stuk tekst je?",
    "o": [
-    "\"wat het antwoord op de vraag is, really\"",
+    "\"wat het antwoord op de vraag is, gewoon\"",
     "\"waar het volgende stuk over gaat\"",
     "\"hoeveel woorden de tekst heeft\"",
     "\"wie de tekst heeft geschreven\""
@@ -159,7 +159,7 @@
    "s": 2,
    "u": "Kopje = onderwerp. Denk aan de regel die hierbij hoort.",
    "uo": [
-    "Koos je \"\"wat het antwoord op de vraag is, really\"\"? Dan denk je dat het kopje het antwoord geeft. Het noemt alleen het onderwerp, en niet het antwoord.",
+    "Koos je \"\"wat het antwoord op de vraag is, gewoon\"\"? Dan denk je dat het kopje het antwoord geeft. Het noemt alleen het onderwerp, en niet het antwoord.",
     "Klopt: een kopje vat in een paar woorden samen waar het volgende deel over gaat.",
     "Koos je \"\"hoeveel woorden de tekst heeft\"\"? Dan denk je dat het kopje het aantal woorden noemt. Het noemt het onderwerp, en niet de lengte.",
     "Koos je \"\"wie de tekst heeft geschreven\"\"? Dan denk je dat het kopje de schrijver noemt. Het geeft het onderwerp, en geen auteur."
@@ -170,7 +170,7 @@
    "v": "Wat doe je eerst als je een leesvraag krijgt?",
    "o": [
     "\"de tekst woord voor woord lezen\"",
-    "\"een antwoord kiezen dat logisch klinkt, I think, I suppose\"",
+    "\"een antwoord kiezen dat logisch klinkt, denk ik, zeg maar\"",
     "\"alleen naar de antwoorden kijken\"",
     "\"de vraag lezen en de belangrijke woorden onderstrepen\""
    ],
@@ -180,7 +180,7 @@
    "u": "Eerst de vraag, dan zoeken. Denk aan de regel die hierbij hoort.",
    "uo": [
     "Koos je \"\"de tekst woord voor woord lezen\"\"? Dan denk je dat je eerst alles moet lezen. Dat kost tijd, en je weet nog niet waar je op moet letten.",
-    "Koos je \"\"een antwoord kiezen dat logisch klinkt, I think, I suppose\"\"? Dan denk je dat raden werkt. Dan mis je het bewijs in de tekst, en kies je vaak fout.",
+    "Koos je \"\"een antwoord kiezen dat logisch klinkt, denk ik, zeg maar\"\"? Dan denk je dat raden werkt. Dan mis je het bewijs in de tekst, en kies je vaak fout.",
     "Koos je \"\"alleen naar de antwoorden kijken\"\"? Dan denk je dat de antwoorden genoeg zijn. De vraag bepaalt waar je zoekt, en de antwoorden kunnen misleiden.",
     "Klopt: met de trefwoorden uit de vraag weet je precies waar je in de tekst moet zoeken."
    ],
@@ -192,7 +192,7 @@
     "\"de tekst gebruikt soms andere woorden en foute opties lijken vaak op de tekst\"",
     "\"omdat het altijd fout is\"",
     "\"omdat de tekst vaak verandert\"",
-    "\"omdat je dan sneller klaar bent, to be honest, you know, I think\""
+    "\"omdat je dan sneller klaar bent, volgens mij, eigenlijk, denk ik\""
    ],
    "c": 0,
    "d": 1,
@@ -202,7 +202,7 @@
     "Klopt: controleren voorkomt dat je kiest voor een antwoord dat alleen op de tekst lijkt.",
     "Koos je \"\"omdat het altijd fout is\"\"? Dan denk je dat een eerste antwoord altijd fout is. Het kan juist goed zijn, maar controleren geeft zekerheid.",
     "Koos je \"\"omdat de tekst vaak verandert\"\"? Dan denk je dat de tekst verandert. De tekst blijft gelijk, maar je kunt iets over het hoofd zien.",
-    "Koos je \"\"omdat je dan sneller klaar bent, to be honest, you know, I think\"\"? Dan denk je dat controleren tijd bespaart. Het kost een paar seconden, maar voorkomt fouten."
+    "Koos je \"\"omdat je dan sneller klaar bent, volgens mij, eigenlijk, denk ik\"\"? Dan denk je dat controleren tijd bespaart. Het kost een paar seconden, maar voorkomt fouten."
    ],
    "uh": "Waarom controleer je in de tekst?"
   },

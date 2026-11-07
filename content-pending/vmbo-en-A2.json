@@ -71,7 +71,7 @@
    "o": [
     "\"altijd de zin in het midden\"",
     "\"meestal de eerste of de laatste zin\"",
-    "\"de zin met het langste woord, I think\"",
+    "\"de zin met het langste woord, denk ik\"",
     "\"de zin met de meeste cijfers\""
    ],
    "c": 1,
@@ -81,7 +81,7 @@
    "uo": [
     "Koos je \"\"altijd de zin in het midden\"\"? Dan denk je dat de kern altijd in het midden staat. Dat is zelden zo, de kern staat meestal vooraan of achteraan.",
     "Klopt: schrijvers zetten de kern vaak aan het begin of aan het eind van een alinea.",
-    "Koos je \"\"de zin met het langste woord, I think\"\"? Dan denk je dat het langste woord de kern is. Lengte zegt niets, over belang.",
+    "Koos je \"\"de zin met het langste woord, denk ik\"\"? Dan denk je dat het langste woord de kern is. Lengte zegt niets, over belang.",
     "Koos je \"\"de zin met de meeste cijfers\"\"? Dan denk je dat cijfers de kern bepalen. Cijfers zijn vaak details, en geen hoofdgedachte."
    ],
    "uh": "Welke zin bevat vaak de hoofdgedachte?"
@@ -91,7 +91,7 @@
    "o": [
     "\"alle details van de tekst\"",
     "\"wie de tekst gelezen heeft\"",
-    "\"hoeveel alinea's de tekst heeft, to be honest\"",
+    "\"hoeveel alinea's de tekst heeft, volgens mij\"",
     "\"waar de tekst ongeveer over gaat\""
    ],
    "c": 3,
@@ -101,7 +101,7 @@
    "uo": [
     "Koos je \"\"alle details van de tekst\"\"? Dan denk je dat de titel alles vertelt. Een titel is kort, en noemt alleen het onderwerp.",
     "Koos je \"\"wie de tekst gelezen heeft\"\"? Dan denk je dat de titel de lezer noemt. De titel gaat over de tekst, en niet over de lezers.",
-    "Koos je \"\"hoeveel alinea's de tekst heeft, to be honest\"\"? Dan denk je dat de titel het aantal alinea's noemt. Dat staat niet in een titel, maar je telt het zelf.",
+    "Koos je \"\"hoeveel alinea's de tekst heeft, volgens mij\"\"? Dan denk je dat de titel het aantal alinea's noemt. Dat staat niet in een titel, maar je telt het zelf.",
     "Klopt: de titel noemt het onderwerp in een paar woorden."
    ],
    "uh": "Wat zegt de titel?"
@@ -110,7 +110,7 @@
    "v": "Wat is een bijzaak in een tekst?",
    "o": [
     "\"een detail dat je kunt weglaten zonder dat de hoofdgedachte verandert\"",
-    "\"de belangrijkste zin van de tekst, I suppose, really, to be honest\"",
+    "\"de belangrijkste zin van de tekst, zeg maar, gewoon, volgens mij\"",
     "\"de titel van de tekst\"",
     "\"de laatste zin van elke tekst\""
    ],
@@ -120,7 +120,7 @@
    "u": "Bijzaak = weglaten kan. Denk aan de regel die hierbij hoort.",
    "uo": [
     "Klopt: een bijzaak is een extra gegeven dat de kern niet verandert.",
-    "Koos je \"\"de belangrijkste zin van de tekst, I suppose, really, to be honest\"\"? Dan denk je dat een bijzaak de kern is. Dat is de hoofdzaak, en niet de bijzaak.",
+    "Koos je \"\"de belangrijkste zin van de tekst, zeg maar, gewoon, volgens mij\"\"? Dan denk je dat een bijzaak de kern is. Dat is de hoofdzaak, en niet de bijzaak.",
     "Koos je \"\"de titel van de tekst\"\"? Dan denk je dat een bijzaak de titel is. De titel noemt het onderwerp, en dat is geen bijzaak.",
     "Koos je \"\"de laatste zin van elke tekst\"\"? Dan denk je dat de laatste zin altijd een bijzaak is. Die kan juist de kern zijn, en is niet altijd een detail."
    ],
@@ -129,7 +129,7 @@
   {
    "v": "Wat is de hoofdgedachte van een tekst?",
    "o": [
-    "\"het eerste woord van de tekst, you know, I think\"",
+    "\"het eerste woord van de tekst, eigenlijk, denk ik\"",
     "\"een leuk detail uit de tekst\"",
     "\"wat de schrijver de lezer vooral wil vertellen\"",
     "\"de naam van de schrijver\""
@@ -139,7 +139,7 @@
    "s": 1,
    "u": "Hoofdgedachte = belangrijkste boodschap. Denk aan de regel die hierbij hoort.",
    "uo": [
-    "Koos je \"\"het eerste woord van de tekst, you know, I think\"\"? Dan denk je dat de hoofdgedachte het eerste woord is. Dat is slechts een woord, en geen boodschap.",
+    "Koos je \"\"het eerste woord van de tekst, eigenlijk, denk ik\"\"? Dan denk je dat de hoofdgedachte het eerste woord is. Dat is slechts een woord, en geen boodschap.",
     "Koos je \"\"een leuk detail uit de tekst\"\"? Dan denk je dat een detail de hoofdgedachte is. Een detail hoort bij één deel, en niet bij het geheel.",
     "Klopt: de hoofdgedachte is de belangrijkste boodschap van de hele tekst.",
     "Koos je \"\"de naam van de schrijver\"\"? Dan denk je dat de schrijver de hoofdgedachte is. De naam zegt niets, over de inhoud."
@@ -149,7 +149,7 @@
   {
    "v": "Wanneer is een gekozen hoofdgedachte te smal?",
    "o": [
-    "\"als hij de hele tekst samenvat, really\"",
+    "\"als hij de hele tekst samenvat, gewoon\"",
     "\"als hij maar over één detail gaat\"",
     "\"als hij kort is\"",
     "\"als hij in de eerste zin staat\""
@@ -159,7 +159,7 @@
    "s": 2,
    "u": "Te smal = één detail. Denk aan de regel die hierbij hoort.",
    "uo": [
-    "Koos je \"\"als hij de hele tekst samenvat, really\"\"? Dan denk je dat een samenvatting te smal is. Dat is juist een goede hoofdgedachte, want hij dekt alles.",
+    "Koos je \"\"als hij de hele tekst samenvat, gewoon\"\"? Dan denk je dat een samenvatting te smal is. Dat is juist een goede hoofdgedachte, want hij dekt alles.",
     "Klopt: een te smalle hoofdgedachte dekt maar een klein deel van de tekst.",
     "Koos je \"\"als hij kort is\"\"? Dan denk je dat kort te smal betekent. Een goede hoofdgedachte mag kort zijn, als hij maar alles dekt.",
     "Koos je \"\"als hij in de eerste zin staat\"\"? Dan denk je dat de plaats bepaalt of hij smal is. Dat zegt niets, over de inhoud."
@@ -171,7 +171,7 @@
    "o": [
     "\"de lezer alleen laten lachen\"",
     "\"de lezer een verhaal vertellen\"",
-    "\"de lezer een rekensom laten maken, I think, I suppose\"",
+    "\"de lezer een rekensom laten maken, denk ik, zeg maar\"",
     "\"de lezer overtuigen om iets te doen of te kopen\""
    ],
    "c": 3,
@@ -181,7 +181,7 @@
    "uo": [
     "Koos je \"\"de lezer alleen laten lachen\"\"? Dan denk je dat een advertentie vooral grappig is. Humor kan, maar het doel is overtuigen, en niet alleen lachen.",
     "Koos je \"\"de lezer een verhaal vertellen\"\"? Dan denk je dat een advertentie een verhaal is. Een verhaal vermaakt, en een advertentie overtuigt.",
-    "Koos je \"\"de lezer een rekensom laten maken, I think, I suppose\"\"? Dan denk je dat een advertentie een opdracht geeft. Dat is geen doel, en niet de bedoeling.",
+    "Koos je \"\"de lezer een rekensom laten maken, denk ik, zeg maar\"\"? Dan denk je dat een advertentie een opdracht geeft. Dat is geen doel, en niet de bedoeling.",
     "Klopt: een advertentie wil de lezer tot een actie bewegen, zoals kopen of komen."
    ],
    "uh": "Wat is het doel van een advertentie?"
@@ -192,7 +192,7 @@
     "\"of alle delen van de tekst bij je keuze passen\"",
     "\"of de zin mooi klinkt\"",
     "\"of het antwoord lang is\"",
-    "\"of je de tekst al eerder las, to be honest, you know\""
+    "\"of je de tekst al eerder las, volgens mij, eigenlijk\""
    ],
    "c": 0,
    "d": 1,
@@ -202,7 +202,7 @@
     "Klopt: een goede hoofdgedachte past bij de hele tekst en niet alleen bij een stukje.",
     "Koos je \"\"of de zin mooi klinkt\"\"? Dan denk je dat een mooie zin goed is. Het gaat om de inhoud, en niet om de klank.",
     "Koos je \"\"of het antwoord lang is\"\"? Dan denk je dat een lang antwoord beter is. Een kort antwoord kan juist goed zijn, als het alles dekt.",
-    "Koos je \"\"of je de tekst al eerder las, to be honest, you know\"\"? Dan denk je dat dat bepaalt of de keuze goed is. Dat zegt niets, over de inhoud."
+    "Koos je \"\"of je de tekst al eerder las, volgens mij, eigenlijk\"\"? Dan denk je dat dat bepaalt of de keuze goed is. Dat zegt niets, over de inhoud."
    ],
    "uh": "Wat controleer je?"
   },

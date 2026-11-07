@@ -21997,7 +21997,7 @@ var VAKKEN_VMBO = [
          "\"op namen van personen\"",
          "\"op getallen en het woord euro\"",
          "\"alleen op de titel\"",
-         "\"alleen op de laatste zin, I think\""
+         "\"alleen op de laatste zin, denk ik\""
         ],
         "c": 1,
         "d": 1,
@@ -22007,7 +22007,7 @@ var VAKKEN_VMBO = [
          "Koos je \"\"op namen van personen\"\"? Dan denk je dat namen iets over een prijs zeggen. Een naam noemt een persoon, en geen bedrag.",
          "Klopt: bedragen zoek je door te letten op cijfers en woorden als euro of pound.",
          "Koos je \"\"alleen op de titel\"\"? Dan denk je dat de titel de prijs noemt. De titel zegt waar het over gaat, maar meestal niet wat het kost.",
-         "Koos je \"\"alleen op de laatste zin, I think\"\"? Dan denk je dat de prijs altijd aan het eind staat. Dat klopt niet, bedragen staan overal in de tekst."
+         "Koos je \"\"alleen op de laatste zin, denk ik\"\"? Dan denk je dat de prijs altijd aan het eind staat. Dat klopt niet, bedragen staan overal in de tekst."
         ],
         "uh": "Waar let je op bij een prijs?"
        },
@@ -22016,7 +22016,7 @@ var VAKKEN_VMBO = [
         "o": [
          "\"elk woord langzaam lezen\"",
          "\"de hele tekst vertalen\"",
-         "\"de tekst uit je hoofd leren, to be honest, you know\"",
+         "\"de tekst uit je hoofd leren, volgens mij, eigenlijk\"",
          "\"snel zoeken naar een bepaald stukje informatie\""
         ],
         "c": 3,
@@ -22026,7 +22026,7 @@ var VAKKEN_VMBO = [
         "uo": [
          "Koos je \"\"elk woord langzaam lezen\"\"? Dan denk je dat scannen woord voor woord lezen is. Dat kost veel tijd, en dat heet intensief lezen.",
          "Koos je \"\"de hele tekst vertalen\"\"? Dan denk je dat scannen vertalen is. Je zoekt alleen een gegeven, en vertaalt niets.",
-         "Koos je \"\"de tekst uit je hoofd leren, to be honest, you know\"\"? Dan denk je dat scannen onthouden is. Je zoekt alleen iets op, en leert niets uit je hoofd.",
+         "Koos je \"\"de tekst uit je hoofd leren, volgens mij, eigenlijk\"\"? Dan denk je dat scannen onthouden is. Je zoekt alleen iets op, en leert niets uit je hoofd.",
          "Klopt: bij scannen laat je je ogen over de tekst gaan om één bepaald gegeven te vinden."
         ],
         "uh": "Wat is scannen?"
@@ -22036,7 +22036,7 @@ var VAKKEN_VMBO = [
         "o": [
          "\"snel lezen om het algemene idee van de tekst te krijgen\"",
          "\"een bepaald getal zoeken\"",
-         "\"elke zin precies begrijpen, I suppose, really, to be honest\"",
+         "\"elke zin precies begrijpen, zeg maar, gewoon, volgens mij\"",
          "\"de tekst hardop voorlezen\""
         ],
         "c": 0,
@@ -22046,7 +22046,7 @@ var VAKKEN_VMBO = [
         "uo": [
          "Klopt: bij skimmen lees je vluchtig om te zien waar een tekst over gaat.",
          "Koos je \"\"een bepaald getal zoeken\"\"? Dan denk je dat skimmen zoeken naar een getal is. Dat is scannen, en geen skimmen.",
-         "Koos je \"\"elke zin precies begrijpen, I suppose, really, to be honest\"\"? Dan denk je dat skimmen elke zin vraagt. Dat is nauwkeurig lezen, en kost veel tijd.",
+         "Koos je \"\"elke zin precies begrijpen, zeg maar, gewoon, volgens mij\"\"? Dan denk je dat skimmen elke zin vraagt. Dat is nauwkeurig lezen, en kost veel tijd.",
          "Koos je \"\"de tekst hardop voorlezen\"\"? Dan denk je dat skimmen voorlezen is. Dat is een andere vaardigheid, en geen snel globaal lezen."
         ],
         "uh": "Wat is skimmen?"
@@ -22054,7 +22054,7 @@ var VAKKEN_VMBO = [
        {
         "v": "Welke delen helpen je bij het skimmen van een tekst?",
         "o": [
-         "\"alleen het laatste woord, you know, I think\"",
+         "\"alleen het laatste woord, eigenlijk, denk ik\"",
          "\"alleen de getallen\"",
          "\"de titel, de kopjes en de eerste zinnen\"",
          "\"alleen het paginanummer\""
@@ -22064,7 +22064,7 @@ var VAKKEN_VMBO = [
         "s": 1,
         "u": "Titel, kopjes, eerste zinnen. Denk aan de regel die hierbij hoort.",
         "uo": [
-         "Koos je \"\"alleen het laatste woord, you know, I think\"\"? Dan denk je dat één woord genoeg is. Dat geeft geen overzicht, en zegt niets over de tekst.",
+         "Koos je \"\"alleen het laatste woord, eigenlijk, denk ik\"\"? Dan denk je dat één woord genoeg is. Dat geeft geen overzicht, en zegt niets over de tekst.",
          "Koos je \"\"alleen de getallen\"\"? Dan denk je dat getallen het onderwerp tonen. Dat helpt bij scannen, en niet bij skimmen.",
          "Klopt: titel, kopjes en eerste zinnen geven snel een beeld van de inhoud.",
          "Koos je \"\"alleen het paginanummer\"\"? Dan denk je dat het paginanummer helpt. Het zegt niets over de inhoud, en is geen onderdeel van de tekst."
@@ -22074,7 +22074,7 @@ var VAKKEN_VMBO = [
        {
         "v": "Wat vertelt een kopje boven een stuk tekst je?",
         "o": [
-         "\"wat het antwoord op de vraag is, really\"",
+         "\"wat het antwoord op de vraag is, gewoon\"",
          "\"waar het volgende stuk over gaat\"",
          "\"hoeveel woorden de tekst heeft\"",
          "\"wie de tekst heeft geschreven\""
@@ -22084,7 +22084,7 @@ var VAKKEN_VMBO = [
         "s": 2,
         "u": "Kopje = onderwerp. Denk aan de regel die hierbij hoort.",
         "uo": [
-         "Koos je \"\"wat het antwoord op de vraag is, really\"\"? Dan denk je dat het kopje het antwoord geeft. Het noemt alleen het onderwerp, en niet het antwoord.",
+         "Koos je \"\"wat het antwoord op de vraag is, gewoon\"\"? Dan denk je dat het kopje het antwoord geeft. Het noemt alleen het onderwerp, en niet het antwoord.",
          "Klopt: een kopje vat in een paar woorden samen waar het volgende deel over gaat.",
          "Koos je \"\"hoeveel woorden de tekst heeft\"\"? Dan denk je dat het kopje het aantal woorden noemt. Het noemt het onderwerp, en niet de lengte.",
          "Koos je \"\"wie de tekst heeft geschreven\"\"? Dan denk je dat het kopje de schrijver noemt. Het geeft het onderwerp, en geen auteur."
@@ -22095,7 +22095,7 @@ var VAKKEN_VMBO = [
         "v": "Wat doe je eerst als je een leesvraag krijgt?",
         "o": [
          "\"de tekst woord voor woord lezen\"",
-         "\"een antwoord kiezen dat logisch klinkt, I think, I suppose\"",
+         "\"een antwoord kiezen dat logisch klinkt, denk ik, zeg maar\"",
          "\"alleen naar de antwoorden kijken\"",
          "\"de vraag lezen en de belangrijke woorden onderstrepen\""
         ],
@@ -22105,7 +22105,7 @@ var VAKKEN_VMBO = [
         "u": "Eerst de vraag, dan zoeken. Denk aan de regel die hierbij hoort.",
         "uo": [
          "Koos je \"\"de tekst woord voor woord lezen\"\"? Dan denk je dat je eerst alles moet lezen. Dat kost tijd, en je weet nog niet waar je op moet letten.",
-         "Koos je \"\"een antwoord kiezen dat logisch klinkt, I think, I suppose\"\"? Dan denk je dat raden werkt. Dan mis je het bewijs in de tekst, en kies je vaak fout.",
+         "Koos je \"\"een antwoord kiezen dat logisch klinkt, denk ik, zeg maar\"\"? Dan denk je dat raden werkt. Dan mis je het bewijs in de tekst, en kies je vaak fout.",
          "Koos je \"\"alleen naar de antwoorden kijken\"\"? Dan denk je dat de antwoorden genoeg zijn. De vraag bepaalt waar je zoekt, en de antwoorden kunnen misleiden.",
          "Klopt: met de trefwoorden uit de vraag weet je precies waar je in de tekst moet zoeken."
         ],
@@ -22117,7 +22117,7 @@ var VAKKEN_VMBO = [
          "\"de tekst gebruikt soms andere woorden en foute opties lijken vaak op de tekst\"",
          "\"omdat het altijd fout is\"",
          "\"omdat de tekst vaak verandert\"",
-         "\"omdat je dan sneller klaar bent, to be honest, you know, I think\""
+         "\"omdat je dan sneller klaar bent, volgens mij, eigenlijk, denk ik\""
         ],
         "c": 0,
         "d": 1,
@@ -22127,7 +22127,7 @@ var VAKKEN_VMBO = [
          "Klopt: controleren voorkomt dat je kiest voor een antwoord dat alleen op de tekst lijkt.",
          "Koos je \"\"omdat het altijd fout is\"\"? Dan denk je dat een eerste antwoord altijd fout is. Het kan juist goed zijn, maar controleren geeft zekerheid.",
          "Koos je \"\"omdat de tekst vaak verandert\"\"? Dan denk je dat de tekst verandert. De tekst blijft gelijk, maar je kunt iets over het hoofd zien.",
-         "Koos je \"\"omdat je dan sneller klaar bent, to be honest, you know, I think\"\"? Dan denk je dat controleren tijd bespaart. Het kost een paar seconden, maar voorkomt fouten."
+         "Koos je \"\"omdat je dan sneller klaar bent, volgens mij, eigenlijk, denk ik\"\"? Dan denk je dat controleren tijd bespaart. Het kost een paar seconden, maar voorkomt fouten."
         ],
         "uh": "Waarom controleer je in de tekst?"
        },
@@ -22678,7 +22678,7 @@ var VAKKEN_VMBO = [
         "o": [
          "\"altijd de zin in het midden\"",
          "\"meestal de eerste of de laatste zin\"",
-         "\"de zin met het langste woord, I think\"",
+         "\"de zin met het langste woord, denk ik\"",
          "\"de zin met de meeste cijfers\""
         ],
         "c": 1,
@@ -22688,7 +22688,7 @@ var VAKKEN_VMBO = [
         "uo": [
          "Koos je \"\"altijd de zin in het midden\"\"? Dan denk je dat de kern altijd in het midden staat. Dat is zelden zo, de kern staat meestal vooraan of achteraan.",
          "Klopt: schrijvers zetten de kern vaak aan het begin of aan het eind van een alinea.",
-         "Koos je \"\"de zin met het langste woord, I think\"\"? Dan denk je dat het langste woord de kern is. Lengte zegt niets, over belang.",
+         "Koos je \"\"de zin met het langste woord, denk ik\"\"? Dan denk je dat het langste woord de kern is. Lengte zegt niets, over belang.",
          "Koos je \"\"de zin met de meeste cijfers\"\"? Dan denk je dat cijfers de kern bepalen. Cijfers zijn vaak details, en geen hoofdgedachte."
         ],
         "uh": "Welke zin bevat vaak de hoofdgedachte?"
@@ -22698,7 +22698,7 @@ var VAKKEN_VMBO = [
         "o": [
          "\"alle details van de tekst\"",
          "\"wie de tekst gelezen heeft\"",
-         "\"hoeveel alinea's de tekst heeft, to be honest\"",
+         "\"hoeveel alinea's de tekst heeft, volgens mij\"",
          "\"waar de tekst ongeveer over gaat\""
         ],
         "c": 3,
@@ -22708,7 +22708,7 @@ var VAKKEN_VMBO = [
         "uo": [
          "Koos je \"\"alle details van de tekst\"\"? Dan denk je dat de titel alles vertelt. Een titel is kort, en noemt alleen het onderwerp.",
          "Koos je \"\"wie de tekst gelezen heeft\"\"? Dan denk je dat de titel de lezer noemt. De titel gaat over de tekst, en niet over de lezers.",
-         "Koos je \"\"hoeveel alinea's de tekst heeft, to be honest\"\"? Dan denk je dat de titel het aantal alinea's noemt. Dat staat niet in een titel, maar je telt het zelf.",
+         "Koos je \"\"hoeveel alinea's de tekst heeft, volgens mij\"\"? Dan denk je dat de titel het aantal alinea's noemt. Dat staat niet in een titel, maar je telt het zelf.",
          "Klopt: de titel noemt het onderwerp in een paar woorden."
         ],
         "uh": "Wat zegt de titel?"
@@ -22717,7 +22717,7 @@ var VAKKEN_VMBO = [
         "v": "Wat is een bijzaak in een tekst?",
         "o": [
          "\"een detail dat je kunt weglaten zonder dat de hoofdgedachte verandert\"",
-         "\"de belangrijkste zin van de tekst, I suppose, really, to be honest\"",
+         "\"de belangrijkste zin van de tekst, zeg maar, gewoon, volgens mij\"",
          "\"de titel van de tekst\"",
          "\"de laatste zin van elke tekst\""
         ],
@@ -22727,7 +22727,7 @@ var VAKKEN_VMBO = [
         "u": "Bijzaak = weglaten kan. Denk aan de regel die hierbij hoort.",
         "uo": [
          "Klopt: een bijzaak is een extra gegeven dat de kern niet verandert.",
-         "Koos je \"\"de belangrijkste zin van de tekst, I suppose, really, to be honest\"\"? Dan denk je dat een bijzaak de kern is. Dat is de hoofdzaak, en niet de bijzaak.",
+         "Koos je \"\"de belangrijkste zin van de tekst, zeg maar, gewoon, volgens mij\"\"? Dan denk je dat een bijzaak de kern is. Dat is de hoofdzaak, en niet de bijzaak.",
          "Koos je \"\"de titel van de tekst\"\"? Dan denk je dat een bijzaak de titel is. De titel noemt het onderwerp, en dat is geen bijzaak.",
          "Koos je \"\"de laatste zin van elke tekst\"\"? Dan denk je dat de laatste zin altijd een bijzaak is. Die kan juist de kern zijn, en is niet altijd een detail."
         ],
@@ -22736,7 +22736,7 @@ var VAKKEN_VMBO = [
        {
         "v": "Wat is de hoofdgedachte van een tekst?",
         "o": [
-         "\"het eerste woord van de tekst, you know, I think\"",
+         "\"het eerste woord van de tekst, eigenlijk, denk ik\"",
          "\"een leuk detail uit de tekst\"",
          "\"wat de schrijver de lezer vooral wil vertellen\"",
          "\"de naam van de schrijver\""
@@ -22746,7 +22746,7 @@ var VAKKEN_VMBO = [
         "s": 1,
         "u": "Hoofdgedachte = belangrijkste boodschap. Denk aan de regel die hierbij hoort.",
         "uo": [
-         "Koos je \"\"het eerste woord van de tekst, you know, I think\"\"? Dan denk je dat de hoofdgedachte het eerste woord is. Dat is slechts een woord, en geen boodschap.",
+         "Koos je \"\"het eerste woord van de tekst, eigenlijk, denk ik\"\"? Dan denk je dat de hoofdgedachte het eerste woord is. Dat is slechts een woord, en geen boodschap.",
          "Koos je \"\"een leuk detail uit de tekst\"\"? Dan denk je dat een detail de hoofdgedachte is. Een detail hoort bij één deel, en niet bij het geheel.",
          "Klopt: de hoofdgedachte is de belangrijkste boodschap van de hele tekst.",
          "Koos je \"\"de naam van de schrijver\"\"? Dan denk je dat de schrijver de hoofdgedachte is. De naam zegt niets, over de inhoud."
@@ -22756,7 +22756,7 @@ var VAKKEN_VMBO = [
        {
         "v": "Wanneer is een gekozen hoofdgedachte te smal?",
         "o": [
-         "\"als hij de hele tekst samenvat, really\"",
+         "\"als hij de hele tekst samenvat, gewoon\"",
          "\"als hij maar over één detail gaat\"",
          "\"als hij kort is\"",
          "\"als hij in de eerste zin staat\""
@@ -22766,7 +22766,7 @@ var VAKKEN_VMBO = [
         "s": 2,
         "u": "Te smal = één detail. Denk aan de regel die hierbij hoort.",
         "uo": [
-         "Koos je \"\"als hij de hele tekst samenvat, really\"\"? Dan denk je dat een samenvatting te smal is. Dat is juist een goede hoofdgedachte, want hij dekt alles.",
+         "Koos je \"\"als hij de hele tekst samenvat, gewoon\"\"? Dan denk je dat een samenvatting te smal is. Dat is juist een goede hoofdgedachte, want hij dekt alles.",
          "Klopt: een te smalle hoofdgedachte dekt maar een klein deel van de tekst.",
          "Koos je \"\"als hij kort is\"\"? Dan denk je dat kort te smal betekent. Een goede hoofdgedachte mag kort zijn, als hij maar alles dekt.",
          "Koos je \"\"als hij in de eerste zin staat\"\"? Dan denk je dat de plaats bepaalt of hij smal is. Dat zegt niets, over de inhoud."
@@ -22778,7 +22778,7 @@ var VAKKEN_VMBO = [
         "o": [
          "\"de lezer alleen laten lachen\"",
          "\"de lezer een verhaal vertellen\"",
-         "\"de lezer een rekensom laten maken, I think, I suppose\"",
+         "\"de lezer een rekensom laten maken, denk ik, zeg maar\"",
          "\"de lezer overtuigen om iets te doen of te kopen\""
         ],
         "c": 3,
@@ -22788,7 +22788,7 @@ var VAKKEN_VMBO = [
         "uo": [
          "Koos je \"\"de lezer alleen laten lachen\"\"? Dan denk je dat een advertentie vooral grappig is. Humor kan, maar het doel is overtuigen, en niet alleen lachen.",
          "Koos je \"\"de lezer een verhaal vertellen\"\"? Dan denk je dat een advertentie een verhaal is. Een verhaal vermaakt, en een advertentie overtuigt.",
-         "Koos je \"\"de lezer een rekensom laten maken, I think, I suppose\"\"? Dan denk je dat een advertentie een opdracht geeft. Dat is geen doel, en niet de bedoeling.",
+         "Koos je \"\"de lezer een rekensom laten maken, denk ik, zeg maar\"\"? Dan denk je dat een advertentie een opdracht geeft. Dat is geen doel, en niet de bedoeling.",
          "Klopt: een advertentie wil de lezer tot een actie bewegen, zoals kopen of komen."
         ],
         "uh": "Wat is het doel van een advertentie?"
@@ -22799,7 +22799,7 @@ var VAKKEN_VMBO = [
          "\"of alle delen van de tekst bij je keuze passen\"",
          "\"of de zin mooi klinkt\"",
          "\"of het antwoord lang is\"",
-         "\"of je de tekst al eerder las, to be honest, you know\""
+         "\"of je de tekst al eerder las, volgens mij, eigenlijk\""
         ],
         "c": 0,
         "d": 1,
@@ -22809,7 +22809,7 @@ var VAKKEN_VMBO = [
          "Klopt: een goede hoofdgedachte past bij de hele tekst en niet alleen bij een stukje.",
          "Koos je \"\"of de zin mooi klinkt\"\"? Dan denk je dat een mooie zin goed is. Het gaat om de inhoud, en niet om de klank.",
          "Koos je \"\"of het antwoord lang is\"\"? Dan denk je dat een lang antwoord beter is. Een kort antwoord kan juist goed zijn, als het alles dekt.",
-         "Koos je \"\"of je de tekst al eerder las, to be honest, you know\"\"? Dan denk je dat dat bepaalt of de keuze goed is. Dat zegt niets, over de inhoud."
+         "Koos je \"\"of je de tekst al eerder las, volgens mij, eigenlijk\"\"? Dan denk je dat dat bepaalt of de keuze goed is. Dat zegt niets, over de inhoud."
         ],
         "uh": "Wat controleer je?"
        },
@@ -23358,7 +23358,7 @@ var VAKKEN_VMBO = [
        {
         "v": "Wat doe je als je een Engels woord niet kent?",
         "o": [
-         "\"het woord overslaan en niet meer lezen, I think, I suppose\"",
+         "\"het woord overslaan en niet meer lezen, denk ik, zeg maar\"",
          "\"de zinnen eromheen lezen om de betekenis te raden\"",
          "\"het eerste woord kiezen dat je kent\"",
          "\"de hele tekst in het Nederlands zetten\""
@@ -23368,7 +23368,7 @@ var VAKKEN_VMBO = [
         "s": 0,
         "u": "Gebruik de context. Denk aan de regel die hierbij hoort.",
         "uo": [
-         "Koos je \"\"het woord overslaan en niet meer lezen, I think, I suppose\"\"? Dan denk je dat een onbekend woord de tekst onleesbaar maakt. Vaak begrijp je het woord wel uit de zin, en overslaan kost je het antwoord.",
+         "Koos je \"\"het woord overslaan en niet meer lezen, denk ik, zeg maar\"\"? Dan denk je dat een onbekend woord de tekst onleesbaar maakt. Vaak begrijp je het woord wel uit de zin, en overslaan kost je het antwoord.",
          "Klopt: de omringende zinnen geven vaak genoeg aanwijzingen voor de betekenis.",
          "Koos je \"\"het eerste woord kiezen dat je kent\"\"? Dan denk je dat het eerste bekende woord past. Dat kan een ander woord zijn, en klopt dan niet.",
          "Koos je \"\"de hele tekst in het Nederlands zetten\"\"? Dan denk je dat je alles moet vertalen. Dat kost veel tijd, en is niet nodig."
@@ -23380,7 +23380,7 @@ var VAKKEN_VMBO = [
         "o": [
          "\"het aantal letters van het woord\"",
          "\"het lettertype van het woord\"",
-         "\"de plaats van het woord op de pagina, to be honest, you know\"",
+         "\"de plaats van het woord op de pagina, volgens mij, eigenlijk\"",
          "\"een uitleg of een tegengesteld woord in dezelfde zin\""
         ],
         "c": 3,
@@ -23390,7 +23390,7 @@ var VAKKEN_VMBO = [
         "uo": [
          "Koos je \"\"het aantal letters van het woord\"\"? Dan denk je dat de lengte iets zegt. Dat zegt niets over de betekenis, en helpt dus niet.",
          "Koos je \"\"het lettertype van het woord\"\"? Dan denk je dat het lettertype iets zegt. Dat hangt van de uitgave af, en heeft geen betekenis.",
-         "Koos je \"\"de plaats van het woord op de pagina, to be honest, you know\"\"? Dan denk je dat de plek iets zegt. Dat geeft geen betekenis, en is toevallig.",
+         "Koos je \"\"de plaats van het woord op de pagina, volgens mij, eigenlijk\"\"? Dan denk je dat de plek iets zegt. Dat geeft geen betekenis, en is toevallig.",
          "Klopt: zo'n aanwijzing laat zien wat het woord betekent of juist niet betekent."
         ],
         "uh": "Welke aanwijzing helpt?"
@@ -23401,7 +23401,7 @@ var VAKKEN_VMBO = [
          "\"niet of het tegenovergestelde\"",
          "\"heel erg\"",
          "\"opnieuw\"",
-         "\"samen met, I suppose, really, to be honest\""
+         "\"samen met, zeg maar, gewoon, volgens mij\""
         ],
         "c": 0,
         "d": 1,
@@ -23411,7 +23411,7 @@ var VAKKEN_VMBO = [
          "Klopt: un- maakt van een woord het tegenovergestelde, zoals bij unhappy en unsure.",
          "Koos je \"\"heel erg\"\"? Dan denk je dat un- een versterking is. Het maakt juist het tegenovergestelde, en versterkt niet.",
          "Koos je \"\"opnieuw\"\"? Dan denk je dat un- opnieuw betekent. Dat is re-, en niet un-.",
-         "Koos je \"\"samen met, I suppose, really, to be honest\"\"? Dan denk je dat un- samen met betekent. Dat is co-, en niet un-."
+         "Koos je \"\"samen met, zeg maar, gewoon, volgens mij\"\"? Dan denk je dat un- samen met betekent. Dat is co-, en niet un-."
         ],
         "uh": "Wat betekent un-?"
        },
@@ -23460,7 +23460,7 @@ var VAKKEN_VMBO = [
         "o": [
          "\"naar iets wat later pas komt\"",
          "\"naar de schrijver van de tekst\"",
-         "\"naar de titel van de tekst alleen, I think, I suppose\"",
+         "\"naar de titel van de tekst alleen, denk ik, zeg maar\"",
          "\"naar iets wat eerder in de tekst is genoemd\""
         ],
         "c": 3,
@@ -23470,7 +23470,7 @@ var VAKKEN_VMBO = [
         "uo": [
          "Koos je \"\"naar iets wat later pas komt\"\"? Dan denk je dat het woord vooruit wijst. Meestal wijst het terug, naar iets dat al is genoemd.",
          "Koos je \"\"naar de schrijver van de tekst\"\"? Dan denk je dat it de schrijver is. Dat is I, en niet it.",
-         "Koos je \"\"naar de titel van de tekst alleen, I think, I suppose\"\"? Dan denk je dat it altijd de titel is. Het kan een voorwerp in de zin zijn, en niet de titel.",
+         "Koos je \"\"naar de titel van de tekst alleen, denk ik, zeg maar\"\"? Dan denk je dat it altijd de titel is. Het kan een voorwerp in de zin zijn, en niet de titel.",
          "Klopt: een verwijswoord als it of they verwijst naar iets uit een eerdere zin."
         ],
         "uh": "Waar verwijst it naar?"
@@ -23480,7 +23480,7 @@ var VAKKEN_VMBO = [
         "o": [
          "\"je zet je gok in de zin en kijkt of de zin nog klopt\"",
          "\"je kiest het kortste woord\"",
-         "\"je vraagt het aan een klasgenoot, to be honest, you know\"",
+         "\"je vraagt het aan een klasgenoot, volgens mij, eigenlijk\"",
          "\"je laat het woord weg\""
         ],
         "c": 0,
@@ -23490,7 +23490,7 @@ var VAKKEN_VMBO = [
         "uo": [
          "Klopt: past je gok in de zin en in de tekst, dan is de kans groot dat hij goed is.",
          "Koos je \"\"je kiest het kortste woord\"\"? Dan denk je dat het kortste woord goed is. Lengte zegt niets, over de betekenis.",
-         "Koos je \"\"je vraagt het aan een klasgenoot, to be honest, you know\"\"? Dan denk je dat een klasgenoot het weet. Tijdens het examen kan dat niet, dus je controleert zelf.",
+         "Koos je \"\"je vraagt het aan een klasgenoot, volgens mij, eigenlijk\"\"? Dan denk je dat een klasgenoot het weet. Tijdens het examen kan dat niet, dus je controleert zelf.",
          "Koos je \"\"je laat het woord weg\"\"? Dan denk je dat weglaten het oplost. Dan verlies je de betekenis, en is de zin onvolledig."
         ],
         "uh": "Hoe controleer je een gok?"
@@ -24070,9 +24070,9 @@ var VAKKEN_VMBO = [
         "s": 0,
         "u": "Meanwhile = ondertussen. Denk aan de regel die hierbij hoort.",
         "uo": [
-         "Koos je \"\"daarna\"\"? Dan verwart meanwhile met afterwards, een woord voor wat later volgt. Meanwhile beschrijft twee handelingen op hetzelfde moment.",
+         "Koos je \"\"daarna\"\"? Dan verwar je meanwhile met afterwards, een woord voor wat later volgt. Meanwhile beschrijft twee handelingen op hetzelfde moment.",
          "Koos je \"\"eerst\"\"? Dan denk je dat meanwhile een begin aangeeft, zoals first. Maar het staat midden in het recept, terwijl het beslag rust.",
-         "Koos je \"\"nooit\"\"? Dan haalt meanwhile door elkaar met never, omdat beide met n lijken te eindigen of te beginnen. In het recept gebeurt het verwarmen juist wel.",
+         "Koos je \"\"nooit\"\"? Dan haal je meanwhile door elkaar met never, omdat het allebei woorden over tijd zijn. In het recept gebeurt het verwarmen juist wel.",
          "Klopt: meanwhile betekent dat twee dingen tegelijk gebeuren."
         ],
         "uh": "Wat betekent meanwhile?"
@@ -24091,9 +24091,9 @@ var VAKKEN_VMBO = [
         "u": "Because = reden. Denk aan de regel die hierbij hoort.",
         "uo": [
          "Klopt: because leidt de reden in, zoals in I was angry because I could not watch my series.",
-         "Koos je \"\"however\"\"? Dan kiest een woord van tegenstelling, terwijl de vraag een reden zoekt. However zet iets tegenover het vorige in plaats van het uit te leggen.",
-         "Koos je \"\"finally\"\"? Dan kiest een woord voor het laatste punt van een reeks. Een slotwoord geeft geen reden, het sluit alleen af.",
-         "Koos je \"\"for example\"\"? Dan denkt dat een voorbeeld hetzelfde is als een verklaring. Een voorbeeld laat iets zien, maar legt niet uit waarom."
+         "Koos je \"\"however\"\"? Dan kies je een woord van tegenstelling, terwijl de vraag een reden zoekt. However zet iets tegenover het vorige in plaats van het uit te leggen.",
+         "Koos je \"\"finally\"\"? Dan kies je een woord voor het laatste punt van een reeks. Een slotwoord geeft geen reden, het sluit alleen af.",
+         "Koos je \"\"for example\"\"? Dan denk je dat een voorbeeld hetzelfde is als een verklaring. Een voorbeeld laat iets zien, maar legt niet uit waarom."
         ],
         "uh": "Welk woord geeft een reden?"
        },
@@ -24130,10 +24130,10 @@ var VAKKEN_VMBO = [
         "s": 2,
         "u": "However = echter. Denk aan de regel die hierbij hoort.",
         "uo": [
-         "Koos je \"\"moreover\"\"? Dan gebruikt een toevoegwoord voor een tegenstelling. Moreover voegt een punt in dezelfde richting toe.",
+         "Koos je \"\"moreover\"\"? Dan gebruik je een toevoegwoord voor een tegenstelling. Moreover voegt een punt in dezelfde richting toe.",
          "Klopt: however betekent echter en zet iets tegenover het vorige.",
-         "Koos je \"\"therefore\"\"? Dan denkt dat daarom hetzelfde is als echter. Therefore noemt een gevolg, geen tegendeel.",
-         "Koos je \"\"next\"\"? Dan denkt dat de volgende stap een tegendeel is. Next geeft alleen een volgorde in de tijd."
+         "Koos je \"\"therefore\"\"? Dan denk je dat daarom hetzelfde is als echter. Therefore noemt een gevolg, geen tegendeel.",
+         "Koos je \"\"next\"\"? Dan denk je dat de volgende stap een tegendeel is. Next geeft alleen een volgorde in de tijd."
         ],
         "uh": "Welk woord geeft een tegenstelling?"
        },
@@ -24150,9 +24150,9 @@ var VAKKEN_VMBO = [
         "s": 3,
         "u": "For example = voorbeeld. Denk aan de regel die hierbij hoort.",
         "uo": [
-         "Koos je \"\"as a result\"\"? Dan gebruikt een gevolgwoord waar een voorbeeld nodig is. As a result zegt wat eruit volgt, niet wat een voorbeeld is.",
-         "Koos je \"\"in the end\"\"? Dan kiest een slotwoord terwijl de vraag een voorbeeld zoekt. In the end sluit een verhaal af in plaats van iets te illustreren.",
-         "Koos je \"\"on the other hand\"\"? Dan denkt dat de keerzijde een voorbeeld is. On the other hand zet twee kanten tegenover elkaar.",
+         "Koos je \"\"as a result\"\"? Dan gebruik je een gevolgwoord waar een voorbeeld nodig is. As a result zegt wat eruit volgt, niet wat een voorbeeld is.",
+         "Koos je \"\"in the end\"\"? Dan kies je een slotwoord terwijl de vraag een voorbeeld zoekt. In the end sluit een verhaal af in plaats van iets te illustreren.",
+         "Koos je \"\"on the other hand\"\"? Dan denk je dat de keerzijde een voorbeeld is. On the other hand zet twee kanten tegenover elkaar.",
          "Klopt: for example leidt een voorbeeld in dat een bewering ondersteunt."
         ],
         "uh": "Welke woorden leiden een voorbeeld in?"
@@ -24161,7 +24161,7 @@ var VAKKEN_VMBO = [
         "v": "Hoe vind je het verband tussen twee zinnen?",
         "o": [
          "\"je let op het signaalwoord en vraagt wat de tweede zin met de eerste doet\"",
-         "\"je telt de woorden in beide zinnen, to be honest, you know, I think\"",
+         "\"je telt de woorden in beide zinnen, volgens mij, eigenlijk, denk ik\"",
          "\"je leest alleen de laatste zin\"",
          "\"je kijkt naar het lettertype\""
         ],
@@ -24171,7 +24171,7 @@ var VAKKEN_VMBO = [
         "u": "Signaalwoord + functie. Denk aan de regel die hierbij hoort.",
         "uo": [
          "Klopt: een signaalwoord laat zien of de tweede zin een reden, gevolg, tegenstelling of voorbeeld geeft.",
-         "Koos je \"\"je telt de woorden in beide zinnen, to be honest, you know, I think\"\"? Dan denk je dat het aantal woorden het verband laat zien. Dat zegt niets, over de betekenis.",
+         "Koos je \"\"je telt de woorden in beide zinnen, volgens mij, eigenlijk, denk ik\"\"? Dan denk je dat het aantal woorden het verband laat zien. Dat zegt niets, over de betekenis.",
          "Koos je \"\"je leest alleen de laatste zin\"\"? Dan denk je dat de laatste zin genoeg is. Je mist dan het verband, met de eerste zin.",
          "Koos je \"\"je kijkt naar het lettertype\"\"? Dan denk je dat het lettertype het verband toont. Dat hangt van de uitgave af, en zegt niets over de zin."
         ],
@@ -24422,9 +24422,9 @@ var VAKKEN_VMBO = [
         "u": "In the end = slot. Denk aan de regel die hierbij hoort.",
         "uo": [
          "Klopt: in the end leidt het slot van het verhaal in.",
-         "Koos je \"\"At first\"\"? Dan kiest een woord dat het begin van het verhaal markeert. At first leidt de eerste reactie in, niet de afsluiting van de dag.",
-         "Koos je \"\"Then\"\"? Dan denkt dat then het einde markeert. Then is een tussenstap in het verhaal, de afsluiting komt later.",
-         "Koos je \"\"After dinner\"\"? Dan verwart een tijdsaanduiding met een slotwoord. After dinner is een moment in de avond, geen afsluiting van het verhaal."
+         "Koos je \"\"At first\"\"? Dan kies je een woord dat het begin van het verhaal markeert. At first leidt de eerste reactie in, niet de afsluiting van de dag.",
+         "Koos je \"\"Then\"\"? Dan denk je dat then het einde markeert. Then is een tussenstap in het verhaal, de afsluiting komt later.",
+         "Koos je \"\"After dinner\"\"? Dan verwar je een tijdsaanduiding met een slotwoord. After dinner is een moment in de avond, geen afsluiting van het verhaal."
         ],
         "uh": "Welke woorden tonen het einde?",
         "ctx": "Read the text: \"A day without the internet. Last weekend our internet was down for two days. At first, I was angry because I could not watch my favourite series. However, I soon found other things to do. First, I cleaned my room, which I had not done for months. Then I called my grandmother, because I normally only send her messages. She was so happy that she invited me for dinner. After dinner we played cards until midnight. As a result, I went to bed late, but I felt relaxed. In the end, I was almost sorry when the internet came back.\""
@@ -24442,8 +24442,8 @@ var VAKKEN_VMBO = [
         "s": 2,
         "u": "However = contrast. Denk aan de regel die hierbij hoort.",
         "uo": [
-         "Koos je \"\"cleaning the room and calling grandmother, really, to be honest\"\"? Dan ziet twee opeenvolgende taken als tegenstelling. Beide acties horen bij first en then en vullen elkaar aan.",
-         "Koos je \"\"playing cards and going to bed\"\"? Dan denkt dat een oorzaak en gevolg een tegenstelling zijn. Het kaarten leidt tot laat naar bed gaan, dat is een as a result.",
+         "Koos je \"\"cleaning the room and calling grandmother, really, to be honest\"\"? Dan zie je twee opeenvolgende taken als tegenstelling. Beide acties horen bij first en then en vullen elkaar aan.",
+         "Koos je \"\"playing cards and going to bed\"\"? Dan denk je dat een oorzaak en gevolg een tegenstelling zijn. Het kaarten leidt tot laat naar bed gaan, dat is een as a result.",
          "Klopt: however zet de woede tegenover het vinden van andere dingen.",
          "Koos je \"\"grandmother being happy and dinner\"\"? Dan verbindt twee prettige gebeurtenissen als een contrast. Het ene volgt uit het andere, ze staan niet tegenover elkaar."
         ],
@@ -24484,9 +24484,9 @@ var VAKKEN_VMBO = [
         "s": 4,
         "u": "Therefore = gevolg. Denk aan de regel die hierbij hoort.",
         "uo": [
-         "Koos je \"\"it gives an example\"\"? Dan denkt dat de laatste zin iets illustreert, zoals for example doet. Therefore wijst op een uitkomst, niet op een illustratie.",
-         "Koos je \"\"it shows a contrast\"\"? Dan leest therefore als een woord van tegenstelling. Het woord betekent daarom en past bij een gevolg.",
-         "Koos je \"\"it starts a new subject, to be honest\"\"? Dan denkt dat de laatste zin een ander onderwerp opent. De zin sluit juist het onderwerp van de proef af.",
+         "Koos je \"\"it gives an example\"\"? Dan denk je dat de laatste zin iets illustreert, zoals for example doet. Therefore wijst op een uitkomst, niet op een illustratie.",
+         "Koos je \"\"it shows a contrast\"\"? Dan lees je therefore als een woord van tegenstelling. Het woord betekent daarom en past bij een gevolg.",
+         "Koos je \"\"it starts a new subject, to be honest\"\"? Dan denk je dat de laatste zin een ander onderwerp opent. De zin sluit juist het onderwerp van de proef af.",
          "Klopt: therefore laat zien dat de proef ervoor zorgt dat iedereen kan reageren."
         ],
         "uh": "Wat doet de laatste zin?",
@@ -24547,10 +24547,10 @@ var VAKKEN_VMBO = [
         "s": 3,
         "u": "Or = keuze. Denk aan de regel die hierbij hoort.",
         "uo": [
-         "Koos je \"\"a result\"\"? Dan denkt dat or een gevolg inleidt, zoals so. Or noemt alleen twee mogelijkheden naast elkaar.",
+         "Koos je \"\"a result\"\"? Dan denk je dat or een gevolg inleidt, zoals so. Or noemt alleen twee mogelijkheden naast elkaar.",
          "Klopt: or geeft een keuze tussen suiker en fruit.",
-         "Koos je \"\"a contrast\"\"? Dan leest or als een woord van tegenstelling. Suiker en fruit staan niet tegenover elkaar, je mag kiezen.",
-         "Koos je \"\"a time order, really, to be honest\"\"? Dan denkt dat or een volgorde aangeeft. Je eet niet eerst het een en dan het ander, je kiest."
+         "Koos je \"\"a contrast\"\"? Dan lees je or als een woord van tegenstelling. Suiker en fruit staan niet tegenover elkaar, je mag kiezen.",
+         "Koos je \"\"a time order, really, to be honest\"\"? Dan denk je dat or een volgorde aangeeft. Je eet niet eerst het een en dan het ander, je kiest."
         ],
         "uh": "Wat toont or?",
         "ctx": "Read the text: \"How to make pancakes. First, mix 250 grams of flour with two eggs and half a litre of milk. Stir until there are no lumps. Next, let the mixture rest for ten minutes. Meanwhile, heat a little butter in a pan. After that, pour a thin layer of mixture into the pan. Bake the pancake for about one minute, and then turn it over. Finally, put the pancake on a plate. You can eat it with sugar or with fruit. If you want a tasty pancake, do not make the layer too thick. Otherwise it will burn on the outside and stay raw inside.\""
@@ -24590,9 +24590,9 @@ var VAKKEN_VMBO = [
         "u": "And then = volgorde. Denk aan de regel die hierbij hoort.",
         "uo": [
          "Klopt: and then laat zien dat het omdraaien na het bakken komt.",
-         "Koos je \"\"the second action is a reason for the first\"\"? Dan denkt dat omdraaien de reden voor het bakken is. And then geeft aan dat het omdraaien erna komt.",
-         "Koos je \"\"the second action is a contrast\"\"? Dan ziet het omdraaien als tegenstelling met het bakken. Er staat geen but of however, alleen de volgende stap.",
-         "Koos je \"\"the second action is an example\"\"? Dan denkt dat het omdraaien een voorbeeld van bakken is. Er staat geen for example, het is een nieuwe stap."
+         "Koos je \"\"the second action is a reason for the first\"\"? Dan denk je dat omdraaien de reden voor het bakken is. And then geeft aan dat het omdraaien erna komt.",
+         "Koos je \"\"the second action is a contrast\"\"? Dan zie je het omdraaien als tegenstelling met het bakken. Er staat geen but of however, alleen de volgende stap.",
+         "Koos je \"\"the second action is an example\"\"? Dan denk je dat het omdraaien een voorbeeld van bakken is. Er staat geen for example, het is een nieuwe stap."
         ],
         "uh": "Hoe zijn de delen verbonden?",
         "ctx": "Read the text: \"How to make pancakes. First, mix 250 grams of flour with two eggs and half a litre of milk. Stir until there are no lumps. Next, let the mixture rest for ten minutes. Meanwhile, heat a little butter in a pan. After that, pour a thin layer of mixture into the pan. Bake the pancake for about one minute, and then turn it over. Finally, put the pancake on a plate. You can eat it with sugar or with fruit. If you want a tasty pancake, do not make the layer too thick. Otherwise it will burn on the outside and stay raw inside.\""

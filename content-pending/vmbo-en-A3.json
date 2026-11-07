@@ -69,7 +69,7 @@
   {
    "v": "Wat doe je als je een Engels woord niet kent?",
    "o": [
-    "\"het woord overslaan en niet meer lezen, I think, I suppose\"",
+    "\"het woord overslaan en niet meer lezen, denk ik, zeg maar\"",
     "\"de zinnen eromheen lezen om de betekenis te raden\"",
     "\"het eerste woord kiezen dat je kent\"",
     "\"de hele tekst in het Nederlands zetten\""
@@ -79,7 +79,7 @@
    "s": 0,
    "u": "Gebruik de context. Denk aan de regel die hierbij hoort.",
    "uo": [
-    "Koos je \"\"het woord overslaan en niet meer lezen, I think, I suppose\"\"? Dan denk je dat een onbekend woord de tekst onleesbaar maakt. Vaak begrijp je het woord wel uit de zin, en overslaan kost je het antwoord.",
+    "Koos je \"\"het woord overslaan en niet meer lezen, denk ik, zeg maar\"\"? Dan denk je dat een onbekend woord de tekst onleesbaar maakt. Vaak begrijp je het woord wel uit de zin, en overslaan kost je het antwoord.",
     "Klopt: de omringende zinnen geven vaak genoeg aanwijzingen voor de betekenis.",
     "Koos je \"\"het eerste woord kiezen dat je kent\"\"? Dan denk je dat het eerste bekende woord past. Dat kan een ander woord zijn, en klopt dan niet.",
     "Koos je \"\"de hele tekst in het Nederlands zetten\"\"? Dan denk je dat je alles moet vertalen. Dat kost veel tijd, en is niet nodig."
@@ -91,7 +91,7 @@
    "o": [
     "\"het aantal letters van het woord\"",
     "\"het lettertype van het woord\"",
-    "\"de plaats van het woord op de pagina, to be honest, you know\"",
+    "\"de plaats van het woord op de pagina, volgens mij, eigenlijk\"",
     "\"een uitleg of een tegengesteld woord in dezelfde zin\""
    ],
    "c": 3,
@@ -101,7 +101,7 @@
    "uo": [
     "Koos je \"\"het aantal letters van het woord\"\"? Dan denk je dat de lengte iets zegt. Dat zegt niets over de betekenis, en helpt dus niet.",
     "Koos je \"\"het lettertype van het woord\"\"? Dan denk je dat het lettertype iets zegt. Dat hangt van de uitgave af, en heeft geen betekenis.",
-    "Koos je \"\"de plaats van het woord op de pagina, to be honest, you know\"\"? Dan denk je dat de plek iets zegt. Dat geeft geen betekenis, en is toevallig.",
+    "Koos je \"\"de plaats van het woord op de pagina, volgens mij, eigenlijk\"\"? Dan denk je dat de plek iets zegt. Dat geeft geen betekenis, en is toevallig.",
     "Klopt: zo'n aanwijzing laat zien wat het woord betekent of juist niet betekent."
    ],
    "uh": "Welke aanwijzing helpt?"
@@ -112,7 +112,7 @@
     "\"niet of het tegenovergestelde\"",
     "\"heel erg\"",
     "\"opnieuw\"",
-    "\"samen met, I suppose, really, to be honest\""
+    "\"samen met, zeg maar, gewoon, volgens mij\""
    ],
    "c": 0,
    "d": 1,
@@ -122,7 +122,7 @@
     "Klopt: un- maakt van een woord het tegenovergestelde, zoals bij unhappy en unsure.",
     "Koos je \"\"heel erg\"\"? Dan denk je dat un- een versterking is. Het maakt juist het tegenovergestelde, en versterkt niet.",
     "Koos je \"\"opnieuw\"\"? Dan denk je dat un- opnieuw betekent. Dat is re-, en niet un-.",
-    "Koos je \"\"samen met, I suppose, really, to be honest\"\"? Dan denk je dat un- samen met betekent. Dat is co-, en niet un-."
+    "Koos je \"\"samen met, zeg maar, gewoon, volgens mij\"\"? Dan denk je dat un- samen met betekent. Dat is co-, en niet un-."
    ],
    "uh": "Wat betekent un-?"
   },
@@ -171,7 +171,7 @@
    "o": [
     "\"naar iets wat later pas komt\"",
     "\"naar de schrijver van de tekst\"",
-    "\"naar de titel van de tekst alleen, I think, I suppose\"",
+    "\"naar de titel van de tekst alleen, denk ik, zeg maar\"",
     "\"naar iets wat eerder in de tekst is genoemd\""
    ],
    "c": 3,
@@ -181,7 +181,7 @@
    "uo": [
     "Koos je \"\"naar iets wat later pas komt\"\"? Dan denk je dat het woord vooruit wijst. Meestal wijst het terug, naar iets dat al is genoemd.",
     "Koos je \"\"naar de schrijver van de tekst\"\"? Dan denk je dat it de schrijver is. Dat is I, en niet it.",
-    "Koos je \"\"naar de titel van de tekst alleen, I think, I suppose\"\"? Dan denk je dat it altijd de titel is. Het kan een voorwerp in de zin zijn, en niet de titel.",
+    "Koos je \"\"naar de titel van de tekst alleen, denk ik, zeg maar\"\"? Dan denk je dat it altijd de titel is. Het kan een voorwerp in de zin zijn, en niet de titel.",
     "Klopt: een verwijswoord als it of they verwijst naar iets uit een eerdere zin."
    ],
    "uh": "Waar verwijst it naar?"
@@ -191,7 +191,7 @@
    "o": [
     "\"je zet je gok in de zin en kijkt of de zin nog klopt\"",
     "\"je kiest het kortste woord\"",
-    "\"je vraagt het aan een klasgenoot, to be honest, you know\"",
+    "\"je vraagt het aan een klasgenoot, volgens mij, eigenlijk\"",
     "\"je laat het woord weg\""
    ],
    "c": 0,
@@ -201,7 +201,7 @@
    "uo": [
     "Klopt: past je gok in de zin en in de tekst, dan is de kans groot dat hij goed is.",
     "Koos je \"\"je kiest het kortste woord\"\"? Dan denk je dat het kortste woord goed is. Lengte zegt niets, over de betekenis.",
-    "Koos je \"\"je vraagt het aan een klasgenoot, to be honest, you know\"\"? Dan denk je dat een klasgenoot het weet. Tijdens het examen kan dat niet, dus je controleert zelf.",
+    "Koos je \"\"je vraagt het aan een klasgenoot, volgens mij, eigenlijk\"\"? Dan denk je dat een klasgenoot het weet. Tijdens het examen kan dat niet, dus je controleert zelf.",
     "Koos je \"\"je laat het woord weg\"\"? Dan denk je dat weglaten het oplost. Dan verlies je de betekenis, en is de zin onvolledig."
    ],
    "uh": "Hoe controleer je een gok?"
