@@ -1,0 +1,682 @@
+{
+ "id": "A6",
+ "lo": "en.A.6",
+ "gs": 2,
+ "naam": "Praktische teksten lezen: advertenties, e-mails en borden",
+ "beschrijving": "Je leert in Engelse praktische teksten te lezen: je herkent het soort tekst en het doel, vindt gegevens zoals tijden, prijzen en eisen, begrijpt regels met must en not allowed en haalt het verzoek uit een e-mail.",
+ "ceStatus": "CE",
+ "binas": "",
+ "val": "",
+ "onderwerpen": [
+  "Soort tekst en doel",
+  "Gegevens vinden",
+  "Regels: moeten en mogen",
+  "Een e-mail lezen",
+  "Wat moet je doen?"
+ ],
+ "sam": "Een praktische tekst herken je aan zijn doel: een advertentie overtuigt, een regelbord geeft regels en een e-mail bevat een verzoek. Zoek gegevens zoals dag, tijd, prijs en leeftijdsgrens met trefwoorden. Must is een verplichting en not allowed een verbod. In een e-mail zoek je het verzoek, de reden en de afsluiting.",
+ "begrippen": [
+  {
+   "t": "Advertentie",
+   "d": "Een tekst die de lezer overtuigt om te komen of te kopen."
+  },
+  {
+   "t": "Regelbord",
+   "d": "Een bord dat zegt wat wel en niet mag."
+  },
+  {
+   "t": "E-mail",
+   "d": "Een bericht met aanhef, kern en afsluiting."
+  },
+  {
+   "t": "Gegeven",
+   "d": "Een stukje informatie zoals een tijd of prijs."
+  },
+  {
+   "t": "Verplichting",
+   "d": "Iets wat moet, met must."
+  },
+  {
+   "t": "Verbod",
+   "d": "Iets wat niet mag, met not allowed."
+  },
+  {
+   "t": "Verzoek",
+   "d": "Een vraag om hulp of informatie."
+  },
+  {
+   "t": "Beleefd",
+   "d": "Vriendelijk gevraagd, met could you."
+  },
+  {
+   "t": "Bijlage",
+   "d": "Iets wat bij een e-mail zit, zoals een bon."
+  },
+  {
+   "t": "Doel",
+   "d": "Waarom een tekst geschreven is."
+  },
+  {
+   "t": "Opdracht",
+   "d": "Iets wat de lezer moet doen, met please of bring."
+  },
+  {
+   "t": "Leeftijdsgrens",
+   "d": "De minimale leeftijd, zoals 16 and older."
+  }
+ ],
+ "sv": [
+  {
+   "v": "Waaraan herken je een advertentie?",
+   "o": [
+    "\"aan een lange reeks namen\"",
+    "\"aan woorden die je oproepen om te komen of te kopen\"",
+    "\"aan een verhaal in het verleden, I think, I suppose, really\"",
+    "\"aan de handtekening onderaan\""
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 0,
+   "u": "Advertentie = oproep. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"aan een lange reeks namen\"\"? Dan denk je dat een advertentie een lijst met namen is. Een lijst met namen overtuigt niet, en roept niemand op.",
+    "Klopt: een advertentie wil de lezer tot een actie bewegen, bijvoorbeeld komen of kopen.",
+    "Koos je \"\"aan een verhaal in het verleden, I think, I suppose, really\"\"? Dan denk je dat een advertentie een verhaal vertelt. Een verhaal vermaakt, terwijl een advertentie overtuigt.",
+    "Koos je \"\"aan de handtekening onderaan\"\"? Dan denk je dat een handtekening een advertentie verraadt. Die staat onder een brief, en niet in een advertentie."
+   ],
+   "uh": "Waaraan herken je een advertentie?"
+  },
+  {
+   "v": "Wat is het doel van een bord met regels voor bezoekers?",
+   "o": [
+    "\"bezoekers een verhaal vertellen, volgens mij\"",
+    "\"bezoekers laten lachen\"",
+    "\"bezoekers iets verkopen\"",
+    "\"bezoekers vertellen wat wel en niet mag\""
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 0,
+   "u": "Regelbord = wat mag en niet mag. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"bezoekers een verhaal vertellen, volgens mij\"\"? Dan denk je dat een bord vertelt. Een bord geeft regels, en geen verhaal.",
+    "Koos je \"\"bezoekers laten lachen\"\"? Dan denk je dat een bord grappig bedoeld is. Het doel is veiligheid en orde, en geen humor.",
+    "Koos je \"\"bezoekers iets verkopen\"\"? Dan denk je dat een bord reclame maakt. Het geeft regels, en verkoopt niets.",
+    "Klopt: een regelbord laat zien wat verplicht, toegestaan of verboden is."
+   ],
+   "uh": "Wat is het doel van een regelbord?"
+  },
+  {
+   "v": "Waar let je op als je openingstijden zoekt?",
+   "o": [
+    "\"op dagen en uren\"",
+    "\"op namen van personen\"",
+    "\"op de prijs van een kaartje\"",
+    "\"op de kleur van de tekst\""
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 1,
+   "u": "Zoek dagen en uren. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: openingstijden bestaan uit dagen en tijden, vaak met am en pm.",
+    "Koos je \"\"op namen van personen\"\"? Dan denk je dat een naam de tijd noemt. Een naam is een persoon, en geen tijdstip.",
+    "Koos je \"\"op de prijs van een kaartje\"\"? Dan denk je dat een prijs de openingstijd is. Een prijs is een bedrag, en geen uur.",
+    "Koos je \"\"op de kleur van de tekst\"\"? Dan denk je dat de kleur iets zegt. De kleur hangt van de opmaak af, en zegt niets over tijd."
+   ],
+   "uh": "Waar let je op bij openingstijden?"
+  },
+  {
+   "v": "Wat betekent must in een regel?",
+   "o": [
+    "\"het mag, maar het hoeft niet\"",
+    "\"het is verboden\"",
+    "\"het moet, het is verplicht\"",
+    "\"het is gratis\""
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 2,
+   "u": "Must = verplicht. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"het mag, maar het hoeft niet\"\"? Dan denk je dat must mogen betekent. Mogen is allowed, en must is verplicht.",
+    "Koos je \"\"het is verboden\"\"? Dan denk je dat must verbod betekent. Een verbod is not allowed, en must is verplicht.",
+    "Klopt: must geeft aan dat iets verplicht is, zoals dogs must be on a lead.",
+    "Koos je \"\"het is gratis\"\"? Dan denk je dat must gratis betekent. Het woord gaat over regels, en niet over prijs."
+   ],
+   "uh": "Wat betekent must?"
+  },
+  {
+   "v": "Wat betekent 'is not allowed'?",
+   "o": [
+    "\"het moet\"",
+    "\"het mag niet\"",
+    "\"het is gratis\"",
+    "\"het is mogelijk\""
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 2,
+   "u": "Not allowed = verboden. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"het moet\"\"? Dan denk je dat not allowed verplicht betekent. Dat is must, en het tegenovergestelde.",
+    "Klopt: not allowed betekent verboden, zoals no swimming in the lake.",
+    "Koos je \"\"het is gratis\"\"? Dan denk je dat not allowed gratis betekent. Het woord gaat over regels, en niet over prijs.",
+    "Koos je \"\"het is mogelijk\"\"? Dan denk je dat not allowed mogelijk betekent. Het betekent verboden, dus juist niet mogelijk."
+   ],
+   "uh": "Wat betekent not allowed?"
+  },
+  {
+   "v": "Wat wil iemand meestal als hij in een e-mail 'Could you tell me ...' schrijft?",
+   "o": [
+    "\"een klacht indienen\"",
+    "\"iemand bedanken\"",
+    "\"een uitnodiging geven, denk ik\"",
+    "\"beleefd om informatie vragen\""
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 3,
+   "u": "Could you tell me = beleefd vragen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"een klacht indienen\"\"? Dan denk je dat could you tell me een klacht is. Het is een vraag, en geen klacht.",
+    "Koos je \"\"iemand bedanken\"\"? Dan denk je dat het een bedankje is. Dat is thank you, en dit is een vraag.",
+    "Koos je \"\"een uitnodiging geven, denk ik\"\"? Dan denk je dat het een uitnodiging is. Dat is would you like, en dit is een vraag.",
+    "Klopt: could you tell me is een beleefde manier om informatie te vragen."
+   ],
+   "uh": "Wat wil iemand met could you tell me?"
+  },
+  {
+   "v": "Hoe vind je wat je moet doen na het lezen van een tekst?",
+   "o": [
+    "\"je zoekt zinnen met please, must of bring\"",
+    "\"je zoekt zinnen met yesterday en last week, volgens mij\"",
+    "\"je zoekt zinnen met namen\"",
+    "\"je zoekt zinnen met cijfers\""
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 4,
+   "u": "Please, must, bring. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: deze woorden geven opdrachten of verplichtingen aan.",
+    "Koos je \"\"je zoekt zinnen met yesterday en last week, volgens mij\"\"? Dan telt tijdwoorden uit het verleden mee als opdracht. Zulke woorden vertellen wat er gebeurde en niet wat je moet doen.",
+    "Koos je \"\"je zoekt zinnen met namen\"\"? Dan denk je dat een naam aangeeft wat je moet doen. Een naam wijst een persoon aan en geeft geen handeling.",
+    "Koos je \"\"je zoekt zinnen met cijfers\"\"? Dan vindt dat een getal altijd een opdracht is. Cijfers noemen aantallen of tijden, geen actie."
+   ],
+   "uh": "Hoe vind je wat je moet doen?"
+  },
+  {
+   "v": "When is the Summer Job Fair?",
+   "o": [
+    "\"on Sunday 17 May, from 11.00 am to 4.00 pm\"",
+    "\"on Saturday 17 May, from 4.00 am to 11.00 pm, I suppose\"",
+    "\"on Saturday 17 May, from 11.00 am to 4.00 pm\"",
+    "\"every Saturday in May\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 1,
+   "u": "Dag, datum, tijd. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"on Sunday 17 May, from 11.00 am to 4.00 pm\"\"? Dan denk je dat de beurs op zondag is. Er staat Saturday, dus zaterdag.",
+    "Koos je \"\"on Saturday 17 May, from 4.00 am to 11.00 pm, I suppose\"\"? Dan denk je dat de tijden verwisseld zijn. Er staat 11.00 am to 4.00 pm, dus overdag.",
+    "Klopt: de dag, de datum en de tijden staan in de tekst.",
+    "Koos je \"\"every Saturday in May\"\"? Dan denk je dat de beurs elke zaterdag is. Er staat één datum, namelijk 17 mei."
+   ],
+   "uh": "Wanneer is de banenbeurs?",
+   "ctx": "Read the text: \"Teen Summer Job Fair. Looking for a summer job? Come to the Summer Job Fair at the Town Hall on Saturday 17 May. More than thirty local companies are looking for pupils aged 16 and older. You can find jobs in shops, restaurants, hotels and sports clubs. The pay is at least 7 euros an hour. Bring your CV and a copy of your ID card. Free sandwiches and drinks are available for all visitors. Interviews take about ten minutes. The fair is open from 11.00 am to 4.00 pm. For more information, visit our website or call 020 555 0199.\""
+  },
+  {
+   "v": "Who can find a job at the fair?",
+   "o": [
+    "\"children of all ages, you know\"",
+    "\"pupils aged 16 and older\"",
+    "\"only adults\"",
+    "\"pupils under 16\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 1,
+   "u": "Aged 16 and older. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"children of all ages, you know\"\"? Dan denk je dat iedereen mag komen. Er staat aged 16 and older, dus er is een grens.",
+    "Klopt: de bedrijven zoeken leerlingen van 16 jaar en ouder.",
+    "Koos je \"\"only adults\"\"? Dan denk je dat alleen volwassenen mogen. Er staat pupils, dus ook jongeren.",
+    "Koos je \"\"pupils under 16\"\"? Dan denk je dat jongeren onder de 16 een baan kunnen vinden. Er staat 16 and older, dus juist niet."
+   ],
+   "uh": "Wie kan een baan vinden?",
+   "ctx": "Read the text: \"Teen Summer Job Fair. Looking for a summer job? Come to the Summer Job Fair at the Town Hall on Saturday 17 May. More than thirty local companies are looking for pupils aged 16 and older. You can find jobs in shops, restaurants, hotels and sports clubs. The pay is at least 7 euros an hour. Bring your CV and a copy of your ID card. Free sandwiches and drinks are available for all visitors. Interviews take about ten minutes. The fair is open from 11.00 am to 4.00 pm. For more information, visit our website or call 020 555 0199.\""
+  },
+  {
+   "v": "What must you bring to the fair?",
+   "o": [
+    "\"your lunch and a drink\"",
+    "\"a letter from your teacher, really, to be honest\"",
+    "\"only your phone\"",
+    "\"your CV and a copy of your ID card\""
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 4,
+   "u": "Bring = meenemen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"your lunch and a drink\"\"? Dan denk je dat je eten moet meenemen. Er zijn gratis broodjes en drankjes, dus dat hoeft niet.",
+    "Koos je \"\"a letter from your teacher, really, to be honest\"\"? Dan denk je dat je een brief van je leraar nodig hebt. Dat staat niet in de tekst, dus je verzint iets.",
+    "Koos je \"\"only your phone\"\"? Dan denk je dat een telefoon genoeg is. Er staat Bring your CV and a copy of your ID card, dus meer is nodig.",
+    "Klopt: de tekst vraagt om een CV en een kopie van je identiteitskaart."
+   ],
+   "uh": "Wat moet je meenemen?",
+   "ctx": "Read the text: \"Teen Summer Job Fair. Looking for a summer job? Come to the Summer Job Fair at the Town Hall on Saturday 17 May. More than thirty local companies are looking for pupils aged 16 and older. You can find jobs in shops, restaurants, hotels and sports clubs. The pay is at least 7 euros an hour. Bring your CV and a copy of your ID card. Free sandwiches and drinks are available for all visitors. Interviews take about ten minutes. The fair is open from 11.00 am to 4.00 pm. For more information, visit our website or call 020 555 0199.\""
+  },
+  {
+   "v": "What is the minimum pay?",
+   "o": [
+    "\"7 euros an hour\"",
+    "\"20 euros an hour, I think\"",
+    "\"30 euros a day\"",
+    "\"16 euros an hour\""
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 1,
+   "u": "At least 7 euros. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: at least 7 euros an hour geeft het minimumloon aan.",
+    "Koos je \"\"20 euros an hour, I think\"\"? Dan denk je dat het bedrag 20 is. Het telefoonnummer bevat 20, maar het loon is 7.",
+    "Koos je \"\"30 euros a day\"\"? Dan denk je dat het loon per dag is. Er staat an hour, dus per uur.",
+    "Koos je \"\"16 euros an hour\"\"? Dan denk je dat het loon 16 is. Dat is de leeftijdsgrens, en niet het loon."
+   ],
+   "uh": "Wat is het minimumloon?",
+   "ctx": "Read the text: \"Teen Summer Job Fair. Looking for a summer job? Come to the Summer Job Fair at the Town Hall on Saturday 17 May. More than thirty local companies are looking for pupils aged 16 and older. You can find jobs in shops, restaurants, hotels and sports clubs. The pay is at least 7 euros an hour. Bring your CV and a copy of your ID card. Free sandwiches and drinks are available for all visitors. Interviews take about ten minutes. The fair is open from 11.00 am to 4.00 pm. For more information, visit our website or call 020 555 0199.\""
+  },
+  {
+   "v": "Why is Mrs Visser writing to Mr Brown?",
+   "o": [
+    "\"to thank him for the trip\"",
+    "\"to invite him to a party\"",
+    "\"to ask if she can get the money back or if her son can go on another trip\"",
+    "\"to complain about the hotel, to be honest, you know, I think\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 3,
+   "u": "Doel: vraag om terugbetaling. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"to thank him for the trip\"\"? Dan denk je dat ze bedankt. Er staat dat Daan niet kan, en ze stelt een vraag.",
+    "Koos je \"\"to invite him to a party\"\"? Dan denk je dat het een uitnodiging is. Er is geen feest, en het gaat over een reis.",
+    "Klopt: ze vraagt of ze het geld terugkrijgt of dat Daan een andere reis mag maken.",
+    "Koos je \"\"to complain about the hotel, to be honest, you know, I think\"\"? Dan denk je dat ze klaagt over een hotel. Er staat geen hotel, alleen een vraag over geld."
+   ],
+   "uh": "Waarom schrijft ze?",
+   "ctx": "Read the text: \"Hi Mr Brown, I am writing about the school trip to Paris on 12 March. I am afraid that my son, Daan, cannot come, because he has to go to the hospital on that day. We have already paid the 150 euros. Could you tell me if we can get the money back or if Daan can go on another trip? I have attached the receipt. The hospital letter will follow next week. Thank you for your help, and I look forward to hearing from you. Kind regards, Mrs Visser\""
+  },
+  {
+   "v": "Why can Daan not come on the trip?",
+   "o": [
+    "\"he does not like Paris\"",
+    "\"he has to go to the hospital\"",
+    "\"he has lost his money\"",
+    "\"the school cancelled the trip, I suppose\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 1,
+   "u": "Reden: ziekenhuis. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"he does not like Paris\"\"? Dan denk je dat hij niet wil. Er staat dat hij niet kan, vanwege het ziekenhuis.",
+    "Klopt: de moeder schrijft dat Daan die dag naar het ziekenhuis moet.",
+    "Koos je \"\"he has lost his money\"\"? Dan denk je dat hij zijn geld kwijt is. Het geld is al betaald, dus dat klopt niet.",
+    "Koos je \"\"the school cancelled the trip, I suppose\"\"? Dan denk je dat de reis is afgelast. Er staat niets over afgelasten, alleen over Daan."
+   ],
+   "uh": "Waarom kan Daan niet mee?",
+   "ctx": "Read the text: \"Hi Mr Brown, I am writing about the school trip to Paris on 12 March. I am afraid that my son, Daan, cannot come, because he has to go to the hospital on that day. We have already paid the 150 euros. Could you tell me if we can get the money back or if Daan can go on another trip? I have attached the receipt. The hospital letter will follow next week. Thank you for your help, and I look forward to hearing from you. Kind regards, Mrs Visser\""
+  },
+  {
+   "v": "What will Mrs Visser send next week?",
+   "o": [
+    "\"the receipt\"",
+    "\"the 150 euros\"",
+    "\"a photo of Paris, you know\"",
+    "\"the hospital letter\""
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 4,
+   "u": "Will follow = volgt. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"the receipt\"\"? Dan denk je dat de bon volgende week komt. De bon is al bijgevoegd, dus die is er al.",
+    "Koos je \"\"the 150 euros\"\"? Dan denk je dat het geld volgende week komt. Het geld is al betaald, dus dat klopt niet.",
+    "Koos je \"\"a photo of Paris, you know\"\"? Dan denk je dat er een foto komt. Er staat niets over een foto, dus je verzint iets.",
+    "Klopt: in de e-mail staat dat the hospital letter will follow next week."
+   ],
+   "uh": "Wat stuurt ze volgende week?",
+   "ctx": "Read the text: \"Hi Mr Brown, I am writing about the school trip to Paris on 12 March. I am afraid that my son, Daan, cannot come, because he has to go to the hospital on that day. We have already paid the 150 euros. Could you tell me if we can get the money back or if Daan can go on another trip? I have attached the receipt. The hospital letter will follow next week. Thank you for your help, and I look forward to hearing from you. Kind regards, Mrs Visser\""
+  },
+  {
+   "v": "What does 'I look forward to hearing from you' mean?",
+   "o": [
+    "\"she hopes to get an answer soon\"",
+    "\"she is afraid of Mr Brown\"",
+    "\"she wants to visit Mr Brown\"",
+    "\"she will phone Mr Brown tomorrow, really\""
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 3,
+   "u": "Look forward = hopen op. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: I look forward to hearing from you is een beleefde manier om om een antwoord te vragen.",
+    "Koos je \"\"she is afraid of Mr Brown\"\"? Dan denk je dat ze bang is. Het is een beleefde zin, en toont geen angst.",
+    "Koos je \"\"she wants to visit Mr Brown\"\"? Dan denk je dat ze op bezoek wil. Het gaat om een antwoord, en niet om een bezoek.",
+    "Koos je \"\"she will phone Mr Brown tomorrow, really\"\"? Dan denk je dat ze gaat bellen. Het gaat om wat ze hoopt te horen, en niet om bellen."
+   ],
+   "uh": "Wat betekent deze zin?",
+   "ctx": "Read the text: \"Hi Mr Brown, I am writing about the school trip to Paris on 12 March. I am afraid that my son, Daan, cannot come, because he has to go to the hospital on that day. We have already paid the 150 euros. Could you tell me if we can get the money back or if Daan can go on another trip? I have attached the receipt. The hospital letter will follow next week. Thank you for your help, and I look forward to hearing from you. Kind regards, Mrs Visser\""
+  },
+  {
+   "v": "What must dog owners do in the park?",
+   "o": [
+    "\"keep their dogs at home\"",
+    "\"let their dogs swim in the lake\"",
+    "\"keep their dogs on a lead\"",
+    "\"feed their dogs bread\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 2,
+   "u": "Must = verplicht. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"keep their dogs at home\"\"? Dan denk je dat honden niet welkom zijn. Er staat dat honden welkom zijn, maar aan de lijn.",
+    "Koos je \"\"let their dogs swim in the lake\"\"? Dan denk je dat honden mogen zwemmen. Er is geen zwemmen in het meer, dus dat mag niet.",
+    "Klopt: in de tekst staat dat dogs must be on a lead at all times.",
+    "Koos je \"\"feed their dogs bread\"\"? Dan denk je dat honden brood mogen krijgen. Er staat dat je de eenden geen brood geeft, en niet over honden."
+   ],
+   "uh": "Wat moeten hondeneigenaren doen?",
+   "ctx": "Read the text: \"Notice for visitors. Riverside Park. The park is open from 8 am until sunset. Dogs are welcome, but they must be on a lead at all times. Please do not feed the ducks, because bread is bad for them. Barbecues are only allowed in the marked area near the lake. There is no swimming in the lake. Cycling is allowed on the main path only, and cyclists must give way to people on foot. Rubbish bins are at all park entrances. In an emergency, call 112. Please help us to keep the park clean and safe.\""
+  },
+  {
+   "v": "Where can you have a barbecue?",
+   "o": [
+    "\"anywhere in the park, to be honest, you know\"",
+    "\"only in the marked area near the lake\"",
+    "\"on the main path\"",
+    "\"nowhere in the park\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 2,
+   "u": "Only = alleen daar. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"anywhere in the park, to be honest, you know\"\"? Dan denk je dat het overal mag. Er staat only, dus alleen op één plek.",
+    "Klopt: barbecues are only allowed in the marked area near the lake.",
+    "Koos je \"\"on the main path\"\"? Dan denk je dat het op het pad mag. Dat pad is voor fietsers en wandelaars, en niet voor de barbecue.",
+    "Koos je \"\"nowhere in the park\"\"? Dan denk je dat het nergens mag. Er is een aangewezen plek, dus het mag wel daar."
+   ],
+   "uh": "Waar mag je barbecueën?",
+   "ctx": "Read the text: \"Notice for visitors. Riverside Park. The park is open from 8 am until sunset. Dogs are welcome, but they must be on a lead at all times. Please do not feed the ducks, because bread is bad for them. Barbecues are only allowed in the marked area near the lake. There is no swimming in the lake. Cycling is allowed on the main path only, and cyclists must give way to people on foot. Rubbish bins are at all park entrances. In an emergency, call 112. Please help us to keep the park clean and safe.\""
+  },
+  {
+   "v": "What kind of text is this and what is its aim?",
+   "o": [
+    "\"a diary entry that tells a story\"",
+    "\"a newspaper article about unemployment, I suppose, really, to be honest\"",
+    "\"a letter of complaint to a company\"",
+    "\"an advertisement that invites young people to a job fair\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 0,
+   "u": "Advertentie met oproep. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"a diary entry that tells a story\"\"? Dan denk je dat het een dagboek is. Er is geen persoonlijke ik-vorm, maar een uitnodiging.",
+    "Koos je \"\"a newspaper article about unemployment, I suppose, really, to be honest\"\"? Dan denk je dat het een krantenartikel is. Er staat geen nieuws, maar een uitnodiging.",
+    "Koos je \"\"a letter of complaint to a company\"\"? Dan denk je dat het een klacht is. Er is geen klacht, en het is een uitnodiging.",
+    "Klopt: de tekst nodigt jongeren uit om te komen en geeft praktische gegevens."
+   ],
+   "uh": "Wat voor tekst is dit?",
+   "ctx": "Read the text: \"Teen Summer Job Fair. Looking for a summer job? Come to the Summer Job Fair at the Town Hall on Saturday 17 May. More than thirty local companies are looking for pupils aged 16 and older. You can find jobs in shops, restaurants, hotels and sports clubs. The pay is at least 7 euros an hour. Bring your CV and a copy of your ID card. Free sandwiches and drinks are available for all visitors. Interviews take about ten minutes. The fair is open from 11.00 am to 4.00 pm. For more information, visit our website or call 020 555 0199.\""
+  },
+  {
+   "v": "A pupil is 15. Can she apply for a job at the fair?",
+   "o": [
+    "\"no, because the companies want pupils aged 16 and older\"",
+    "\"yes, because everybody can apply\"",
+    "\"yes, because the pay is high\"",
+    "\"no, because the fair is only for adults, you know, I think\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 1,
+   "u": "Controleer de leeftijd. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: de leeftijdsgrens is 16, dus een leerling van 15 is te jong.",
+    "Koos je \"\"yes, because everybody can apply\"\"? Dan denk je dat iedereen mag solliciteren. Er staat 16 and older, dus er is een grens.",
+    "Koos je \"\"yes, because the pay is high\"\"? Dan denk je dat het loon de regel verandert. Het loon is 7 euro per uur, en de grens blijft 16.",
+    "Koos je \"\"no, because the fair is only for adults, you know, I think\"\"? Dan denk je dat alleen volwassenen mogen. Er staat pupils aged 16, dus ook jongeren vanaf 16."
+   ],
+   "uh": "Mag een leerling van 15 solliciteren?",
+   "ctx": "Read the text: \"Teen Summer Job Fair. Looking for a summer job? Come to the Summer Job Fair at the Town Hall on Saturday 17 May. More than thirty local companies are looking for pupils aged 16 and older. You can find jobs in shops, restaurants, hotels and sports clubs. The pay is at least 7 euros an hour. Bring your CV and a copy of your ID card. Free sandwiches and drinks are available for all visitors. Interviews take about ten minutes. The fair is open from 11.00 am to 4.00 pm. For more information, visit our website or call 020 555 0199.\""
+  },
+  {
+   "v": "A girl arrives at the fair with only her CV. What is missing?",
+   "o": [
+    "\"her lunch\"",
+    "\"her phone number\"",
+    "\"a copy of her ID card\"",
+    "\"a letter from her mother\""
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 4,
+   "u": "Bring your CV and a copy of your ID. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"her lunch\"\"? Dan denk je dat ze eten mee moet nemen. Er is gratis eten, dus dat hoeft niet.",
+    "Koos je \"\"her phone number\"\"? Dan denk je dat haar telefoonnummer ontbreekt. Dat staat niet in de eisen, dus dat is niet nodig.",
+    "Klopt: de tekst vraagt om een CV en een kopie van de identiteitskaart.",
+    "Koos je \"\"a letter from her mother\"\"? Dan denk je dat een brief van haar moeder nodig is. Dat staat niet in de tekst, dus je verzint iets."
+   ],
+   "uh": "Wat ontbreekt?",
+   "ctx": "Read the text: \"Teen Summer Job Fair. Looking for a summer job? Come to the Summer Job Fair at the Town Hall on Saturday 17 May. More than thirty local companies are looking for pupils aged 16 and older. You can find jobs in shops, restaurants, hotels and sports clubs. The pay is at least 7 euros an hour. Bring your CV and a copy of your ID card. Free sandwiches and drinks are available for all visitors. Interviews take about ten minutes. The fair is open from 11.00 am to 4.00 pm. For more information, visit our website or call 020 555 0199.\""
+  },
+  {
+   "v": "What kind of text is this?",
+   "o": [
+    "\"a text message to a friend\"",
+    "\"a formal e-mail to a teacher\"",
+    "\"an advertisement for a school trip\"",
+    "\"a notice on a school wall\""
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 0,
+   "u": "Aanhef en afsluiting = e-mail. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"a text message to a friend\"\"? Dan denk je dat het een appje is. De toon is beleefd, dus het is geen appje.",
+    "Klopt: Mr Brown, Kind regards en I am afraid zijn kenmerken van een beleefde brief.",
+    "Koos je \"\"an advertisement for a school trip\"\"? Dan denk je dat het een advertentie is. Er is geen oproep, maar een vraag.",
+    "Koos je \"\"a notice on a school wall\"\"? Dan denk je dat het een bord is. Er is een aanhef en afsluiting, dus het is een e-mail."
+   ],
+   "uh": "Wat voor tekst is dit?",
+   "ctx": "Read the text: \"Hi Mr Brown, I am writing about the school trip to Paris on 12 March. I am afraid that my son, Daan, cannot come, because he has to go to the hospital on that day. We have already paid the 150 euros. Could you tell me if we can get the money back or if Daan can go on another trip? I have attached the receipt. The hospital letter will follow next week. Thank you for your help, and I look forward to hearing from you. Kind regards, Mrs Visser\""
+  },
+  {
+   "v": "Which sentence shows that the writer is polite?",
+   "o": [
+    "\"We have already paid the 150 euros.\"",
+    "\"The hospital letter will follow next week, to be honest.\"",
+    "\"I have attached the receipt.\"",
+    "\"Could you tell me if we can get the money back?\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 3,
+   "u": "Could you tell me = beleefd. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"We have already paid the 150 euros.\"\"? Dan denk je dat een feitelijke mededeling beleefd klinkt. Het noemt alleen een bedrag, en vraagt niets.",
+    "Koos je \"\"The hospital letter will follow next week, to be honest.\"\"? Dan denk je dat een aankondiging beleefd is. Het is alleen informatie over later, en geen vriendelijke vraag.",
+    "Koos je \"\"I have attached the receipt.\"\"? Dan denk je dat een bijlage noemen een beleefde zin is. Het meldt alleen wat erbij zit, en stelt geen vraag.",
+    "Klopt: could you tell me is een beleefde vraagvorm."
+   ],
+   "uh": "Welke zin is beleefd?",
+   "ctx": "Read the text: \"Hi Mr Brown, I am writing about the school trip to Paris on 12 March. I am afraid that my son, Daan, cannot come, because he has to go to the hospital on that day. We have already paid the 150 euros. Could you tell me if we can get the money back or if Daan can go on another trip? I have attached the receipt. The hospital letter will follow next week. Thank you for your help, and I look forward to hearing from you. Kind regards, Mrs Visser\""
+  },
+  {
+   "v": "What does Mrs Visser want Mr Brown to do?",
+   "o": [
+    "\"answer her question about the money or another trip\"",
+    "\"send Daan to the hospital\"",
+    "\"pay her 150 euros immediately, I suppose, really, to be honest\"",
+    "\"cancel the trip to Paris\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 4,
+   "u": "Verzoek in de e-mail. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: ze vraagt of ze het geld terugkrijgt of dat Daan een andere reis kan maken.",
+    "Koos je \"\"send Daan to the hospital\"\"? Dan denk je dat meneer Brown Daan moet sturen. Daan moet zelf naar het ziekenhuis, en dat is geen verzoek.",
+    "Koos je \"\"pay her 150 euros immediately, I suppose, really, to be honest\"\"? Dan denk je dat hij meteen moet betalen. Ze vraagt alleen of het kan, en eist niets.",
+    "Koos je \"\"cancel the trip to Paris\"\"? Dan denk je dat hij de reis moet afgelasten. Ze vraagt alleen om informatie, en niet om af te lassen."
+   ],
+   "uh": "Wat wil ze dat hij doet?",
+   "ctx": "Read the text: \"Hi Mr Brown, I am writing about the school trip to Paris on 12 March. I am afraid that my son, Daan, cannot come, because he has to go to the hospital on that day. We have already paid the 150 euros. Could you tell me if we can get the money back or if Daan can go on another trip? I have attached the receipt. The hospital letter will follow next week. Thank you for your help, and I look forward to hearing from you. Kind regards, Mrs Visser\""
+  },
+  {
+   "v": "Why should you not feed the ducks?",
+   "o": [
+    "\"because dogs are not allowed, you know\"",
+    "\"because the ducks cost money\"",
+    "\"because bread is bad for them\"",
+    "\"because there is no swimming\""
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 2,
+   "u": "Because = reden. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"because dogs are not allowed, you know\"\"? Dan denk je dat honden de reden zijn. Honden zijn welkom, dus dat klopt niet.",
+    "Koos je \"\"because the ducks cost money\"\"? Dan denk je dat de eenden geld kosten. Er staat niets over geld, dus dat klopt niet.",
+    "Klopt: de reden staat achter because, namelijk dat brood slecht is voor eenden.",
+    "Koos je \"\"because there is no swimming\"\"? Dan denk je dat zwemmen de reden is. Dat is een andere regel, en geen reden voor het voeren."
+   ],
+   "uh": "Waarom niet voeren?",
+   "ctx": "Read the text: \"Notice for visitors. Riverside Park. The park is open from 8 am until sunset. Dogs are welcome, but they must be on a lead at all times. Please do not feed the ducks, because bread is bad for them. Barbecues are only allowed in the marked area near the lake. There is no swimming in the lake. Cycling is allowed on the main path only, and cyclists must give way to people on foot. Rubbish bins are at all park entrances. In an emergency, call 112. Please help us to keep the park clean and safe.\""
+  },
+  {
+   "v": "A cyclist wants to cycle through the park. What must he do?",
+   "o": [
+    "\"cycle anywhere he likes\"",
+    "\"stay on the main path and give way to people on foot\"",
+    "\"walk with his bike on the grass\"",
+    "\"ring his bell to make people move, really, to be honest\""
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 2,
+   "u": "Main path only, give way. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"cycle anywhere he likes\"\"? Dan denk je dat hij overal mag fietsen. Er staat main path only, dus alleen op dat pad.",
+    "Klopt: fietsen mag alleen op het hoofdpad en voetgangers hebben voorrang.",
+    "Koos je \"\"walk with his bike on the grass\"\"? Dan denk je dat hij over het gras mag. Dat staat niet in de regels, en het pad is verplicht.",
+    "Koos je \"\"ring his bell to make people move, really, to be honest\"\"? Dan denk je dat voetgangers moeten wijken. Fietsers moeten juist voorrang geven, dus dat klopt niet."
+   ],
+   "uh": "Wat moet de fietser doen?",
+   "ctx": "Read the text: \"Notice for visitors. Riverside Park. The park is open from 8 am until sunset. Dogs are welcome, but they must be on a lead at all times. Please do not feed the ducks, because bread is bad for them. Barbecues are only allowed in the marked area near the lake. There is no swimming in the lake. Cycling is allowed on the main path only, and cyclists must give way to people on foot. Rubbish bins are at all park entrances. In an emergency, call 112. Please help us to keep the park clean and safe.\""
+  },
+  {
+   "v": "What should you do in an emergency?",
+   "o": [
+    "\"feed the ducks\"",
+    "\"go to the lake\"",
+    "\"put rubbish in a bin\"",
+    "\"call 112\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 4,
+   "u": "In an emergency = 112. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"feed the ducks\"\"? Dan denk je dat je de eenden moet voeren. Dat is verboden, en geen noodgeval.",
+    "Koos je \"\"go to the lake\"\"? Dan denk je dat je naar het meer moet gaan. Dat staat niet in de tekst, en helpt niet.",
+    "Koos je \"\"put rubbish in a bin\"\"? Dan denk je dat je afval moet weggooien. Dat is een algemene regel, en geen noodgeval.",
+    "Klopt: in an emergency, call 112 is de opdracht in de tekst."
+   ],
+   "uh": "Wat doe je bij nood?",
+   "ctx": "Read the text: \"Notice for visitors. Riverside Park. The park is open from 8 am until sunset. Dogs are welcome, but they must be on a lead at all times. Please do not feed the ducks, because bread is bad for them. Barbecues are only allowed in the marked area near the lake. There is no swimming in the lake. Cycling is allowed on the main path only, and cyclists must give way to people on foot. Rubbish bins are at all park entrances. In an emergency, call 112. Please help us to keep the park clean and safe.\""
+  },
+  {
+   "v": "Who is this text for?",
+   "o": [
+    "\"visitors of the park\"",
+    "\"only the park staff, to be honest\"",
+    "\"only children\"",
+    "\"only dog owners\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 0,
+   "u": "Notice for visitors. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: Notice for visitors noemt direct wie de lezers van de tekst zijn.",
+    "Koos je \"\"only the park staff, to be honest\"\"? Dan denk je dat de tekst voor medewerkers is. Er staat Notice for visitors, dus voor bezoekers.",
+    "Koos je \"\"only children\"\"? Dan denk je dat het alleen voor kinderen is. Er staat visitors, dus voor iedereen.",
+    "Koos je \"\"only dog owners\"\"? Dan denk je dat het alleen voor hondeneigenaren is. De regels gaan over meer, dus voor alle bezoekers."
+   ],
+   "uh": "Voor wie is de tekst?",
+   "ctx": "Read the text: \"Notice for visitors. Riverside Park. The park is open from 8 am until sunset. Dogs are welcome, but they must be on a lead at all times. Please do not feed the ducks, because bread is bad for them. Barbecues are only allowed in the marked area near the lake. There is no swimming in the lake. Cycling is allowed on the main path only, and cyclists must give way to people on foot. Rubbish bins are at all park entrances. In an emergency, call 112. Please help us to keep the park clean and safe.\""
+  }
+ ],
+ "oe": [
+  {
+   "bron": "Examenstijl",
+   "ctx": "Read the text: \"Sunshine Swimming Club. New season! Lessons start on Monday 5 September at 5.00 pm. The price is 40 euros a month, and you must bring your own towel. Children under 8 must come with an adult. Please register before 1 September at the front desk.\" You want to join your little sister.",
+   "v": "Write what you must do and what the lessons cost.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "De prijs: 40 euro per maand (1p). Registreren voor 1 september (1p). Een handdoek meenemen of met een volwassene komen (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Read the text: \"Dear Ms Green, I am writing about the English test next Friday. I am afraid that I cannot come, because I have a dentist appointment. Could I do the test on Monday instead? I have attached a letter from the dentist. Thank you for your help. Kind regards, Tom.\" Your teacher asks you what Tom wants.",
+   "v": "Write what Tom asks and why.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Hij vraagt om de toets op maandag te maken (1p). Reden: een afspraak bij de tandarts (1p). Een beleefde formulering of het noemen van de bijlage (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Read the text: \"Library rules. Books can be borrowed for three weeks. You must pay a fine of 10 cents per day if you bring a book back late. Eating and drinking is not allowed in the reading room. Please keep your phone silent.\" A friend asks you what is not allowed.",
+   "v": "Write two rules from the notice and name what each tells you.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Een regel over de boete of lenen (1p). Een verbod: eten en drinken niet toegestaan (1p). Een derde regel of opdracht, zoals telefoon stil (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Read the text: \"Win a trip to London! Fill in our short survey on the website before 30 June and you can win two tickets for the London Eye and a night in a hotel. Everybody older than 14 can take part.\" Your class discusses the advertisement.",
+   "v": "Write who can take part and what you must do.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Iedereen ouder dan 14 (1p). De enquête invullen op de website (1p). Voor 30 juni (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Your teacher says: \"When you read a practical text, you should first decide what kind of text it is.\" A classmate does not see why. You want to explain it with the examples of an advertisement and a notice.",
+   "v": "Write two sentences in English that explain why this helps.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Het soort tekst bepaalt het doel (1p). Een advertentie overtuigt en een bord geeft regels (1p). Een duidelijke uitleg (1p)."
+  }
+ ]
+}

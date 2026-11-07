@@ -802,6 +802,27 @@ var VAKKEN_VMBO = [
       "nOe": 5,
       "nBeg": 12,
       "hasSam": true
+     },
+     {
+      "id": "A6",
+      "lo": "en.A.6",
+      "gs": 2,
+      "naam": "Praktische teksten lezen: advertenties, e-mails en borden",
+      "beschrijving": "Je leert in Engelse praktische teksten te lezen: je herkent het soort tekst en het doel, vindt gegevens zoals tijden, prijzen en eisen, begrijpt regels met must en not allowed en haalt het verzoek uit een e-mail.",
+      "ceStatus": "CE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Soort tekst en doel",
+       "Gegevens vinden",
+       "Regels: moeten en mogen",
+       "Een e-mail lezen",
+       "Wat moet je doen?"
+      ],
+      "nSv": 27,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
      }
     ]
    },
