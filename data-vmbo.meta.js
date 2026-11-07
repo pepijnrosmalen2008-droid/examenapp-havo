@@ -781,6 +781,27 @@ var VAKKEN_VMBO = [
       "nOe": 5,
       "nBeg": 12,
       "hasSam": true
+     },
+     {
+      "id": "A5",
+      "lo": "en.A.5",
+      "gs": 2,
+      "naam": "Feit en mening onderscheiden",
+      "beschrijving": "Je leert in een Engelse tekst feiten en meningen te onderscheiden: een feit kun je controleren, een mening herken je aan signaalwoorden en oordeelswoorden, en je let op argumenten, bronnen en de zekerheid van de schrijver.",
+      "ceStatus": "CE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Feiten herkennen",
+       "Meningen herkennen",
+       "Argumenten en zekerheid",
+       "Bron en toegeving",
+       "Controleren in de tekst"
+      ],
+      "nSv": 27,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
      }
     ]
    },

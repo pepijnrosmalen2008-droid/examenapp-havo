@@ -1,0 +1,682 @@
+{
+ "id": "A5",
+ "lo": "en.A.5",
+ "gs": 2,
+ "naam": "Feit en mening onderscheiden",
+ "beschrijving": "Je leert in een Engelse tekst feiten en meningen te onderscheiden: een feit kun je controleren, een mening herken je aan signaalwoorden en oordeelswoorden, en je let op argumenten, bronnen en de zekerheid van de schrijver.",
+ "ceStatus": "CE",
+ "binas": "",
+ "val": "",
+ "onderwerpen": [
+  "Feiten herkennen",
+  "Meningen herkennen",
+  "Argumenten en zekerheid",
+  "Bron en toegeving",
+  "Controleren in de tekst"
+ ],
+ "sam": "Een feit kun je controleren, zoals een datum, een aantal of een prijs, vaak met een bron. Een mening herken je aan I think, in my opinion en oordeelswoorden als best of silly. Een argument is een reden voor een mening. Woorden als definitely tonen zekerheid en probably twijfel. Controleer altijd of je een uitspraak kunt nagaan.",
+ "begrippen": [
+  {
+   "t": "Feit",
+   "d": "Iets wat je kunt controleren of meten."
+  },
+  {
+   "t": "Mening",
+   "d": "Wat iemand vindt of denkt."
+  },
+  {
+   "t": "Argument",
+   "d": "Een reden voor een mening, vaak met because."
+  },
+  {
+   "t": "Standpunt",
+   "d": "De mening die iemand verdedigt."
+  },
+  {
+   "t": "Oordeelswoord",
+   "d": "Een woord als best, silly of expensive dat een oordeel geeft."
+  },
+  {
+   "t": "Signaalwoord voor mening",
+   "d": "Woorden als I think en in my opinion."
+  },
+  {
+   "t": "Bron",
+   "d": "Waar informatie vandaan komt, zoals according to a survey."
+  },
+  {
+   "t": "Zekerheid",
+   "d": "Woorden als definitely en clearly."
+  },
+  {
+   "t": "Twijfel",
+   "d": "Woorden als probably en maybe."
+  },
+  {
+   "t": "Toegeving",
+   "d": "Een punt van de ander erkennen, met of course."
+  },
+  {
+   "t": "Tegenargument",
+   "d": "Een argument van de andere kant."
+  },
+  {
+   "t": "Controleren",
+   "d": "Nagaan of iets een feit is."
+  }
+ ],
+ "sv": [
+  {
+   "v": "Wat is een feit?",
+   "o": [
+    "\"iets wat iemand mooi vindt\"",
+    "\"iets wat je kunt controleren of meten\"",
+    "\"iets wat veel mensen zeggen\"",
+    "\"iets wat de schrijver graag wil, denk ik\""
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 0,
+   "u": "Feit = controleerbaar. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"iets wat iemand mooi vindt\"\"? Dan denk je dat een mooi gevoel een feit is. Dat is een eigen oordeel, en niemand kan het meten.",
+    "Klopt: een feit is waar of onwaar en je kunt het nagaan, zoals een datum of een aantal.",
+    "Koos je \"\"iets wat veel mensen zeggen\"\"? Dan denk je dat een populaire uitspraak een feit is. Veel mensen kunnen zich vergissen, dus het blijft iets te controleren.",
+    "Koos je \"\"iets wat de schrijver graag wil, denk ik\"\"? Dan denk je dat een wens een feit is. Een wens is een voorkeur, en geen gegeven."
+   ],
+   "uh": "Wat is een feit?"
+  },
+  {
+   "v": "Welke Engelse zin is een feit?",
+   "o": [
+    "\"The shop is lovely.\"",
+    "\"The shop has the best bread.\"",
+    "\"The shop should open earlier.\"",
+    "\"The shop opens at 9 am.\""
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 0,
+   "u": "Feit = controleerbaar, mening = oordeel. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"The shop is lovely.\"\"? Dan hoort dit bij een gevoel over de winkel, want lovely is een oordeel. Daar kan iemand anders anders over denken.",
+    "Koos je \"\"The shop has the best bread.\"\"? Dan bevat dit het woord best, een vergelijking die van smaak afhangt. Er is geen meting die het bewijst.",
+    "Koos je \"\"The shop should open earlier.\"\"? Dan bevat dit should, een wens of advies. Een advies is geen gegeven dat je kunt controleren.",
+    "Klopt: de openingstijd kun je nagaan, dus het is een feit."
+   ],
+   "uh": "Welke Engelse zin is een feit?"
+  },
+  {
+   "v": "Wat is een mening?",
+   "o": [
+    "\"wat iemand vindt of denkt\"",
+    "\"een getal in een tekst\"",
+    "\"een datum in een tekst\"",
+    "\"de naam van een persoon, zeg maar\""
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 1,
+   "u": "Mening = persoonlijk oordeel. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: een mening is een persoonlijk oordeel dat kan verschillen van wat een ander vindt.",
+    "Koos je \"\"een getal in een tekst\"\"? Dan denk je dat een getal een mening is. Een getal is een gegeven, en geen oordeel.",
+    "Koos je \"\"een datum in een tekst\"\"? Dan denk je dat een datum een mening is. Je kunt een datum controleren, en dus is het een feit.",
+    "Koos je \"\"de naam van een persoon, zeg maar\"\"? Dan denk je dat een naam een mening is. Een naam is een gegeven, en geen standpunt."
+   ],
+   "uh": "Wat is een mening?"
+  },
+  {
+   "v": "Welke woorden verraden vaak een mening?",
+   "o": [
+    "\"on Monday, in 2020 en 40 kilometres, eigenlijk\"",
+    "\"the town, the school en the bus\"",
+    "\"I think, in my opinion en the best\"",
+    "\"opens, closes en costs\""
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 1,
+   "u": "Feit = controleerbaar, mening = oordeel. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"on Monday, in 2020 en 40 kilometres, eigenlijk\"\"? Dan wijst dit naar tijden en aantallen die je kunt nakijken. Dat zijn dus signalen voor feiten.",
+    "Koos je \"\"the town, the school en the bus\"\"? Dan noemt dit plaatsen en dingen. Zulke woorden geven nog geen oordeel.",
+    "Klopt: dit zijn signalen dat iemand zijn eigen oordeel geeft.",
+    "Koos je \"\"opens, closes en costs\"\"? Dan zijn gewone werkwoorden die iets beschrijven. Ze tonen geen eigen mening."
+   ],
+   "uh": "Welke woorden verraden vaak een mening?"
+  },
+  {
+   "v": "Wat is een argument?",
+   "o": [
+    "\"een andere mening\"",
+    "\"een reden voor een mening\"",
+    "\"een vraag aan de lezer, gewoon\"",
+    "\"de titel van de tekst\""
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 2,
+   "u": "Argument = reden. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"een andere mening\"\"? Dan denk je dat nog een mening een argument is. Een argument moet uitleggen waarom, en dat doet een losse mening niet.",
+    "Klopt: een argument is een reden waarom je iets vindt, vaak met because.",
+    "Koos je \"\"een vraag aan de lezer, gewoon\"\"? Dan denk je dat een vraag een argument is. Een vraag geeft geen reden, en laat iets open.",
+    "Koos je \"\"de titel van de tekst\"\"? Dan denk je dat de titel een argument is. Een titel noemt het onderwerp, en geeft geen reden."
+   ],
+   "uh": "Wat is een argument?"
+  },
+  {
+   "v": "Wat doet een woord als probably in een zin?",
+   "o": [
+    "\"het maakt de uitspraak zeker\"",
+    "\"het maakt van de zin een feit, denk ik\"",
+    "\"het sluit de tekst af\"",
+    "\"het maakt de uitspraak minder zeker\""
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 3,
+   "u": "Feit = controleerbaar, mening = oordeel. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"het maakt de uitspraak zeker\"\"? Dan denk je dat probably zekerheid geeft, zoals definitely. Het woord betekent juist dat er twijfel is.",
+    "Koos je \"\"het maakt van de zin een feit, denk ik\"\"? Dan denk je dat een feit door een bijwoord ontstaat. Een feit blijft een feit zonder dat woord.",
+    "Koos je \"\"het sluit de tekst af\"\"? Dan denk je dat het een slotwoord is, zoals finally. Probably staat midden in een zin.",
+    "Klopt: probably betekent waarschijnlijk, dus de schrijver is niet helemaal zeker."
+   ],
+   "uh": "Wat doet een woord als probably in een zin?"
+  },
+  {
+   "v": "Hoe controleer je of een uitspraak een feit is?",
+   "o": [
+    "\"je vraagt je af of je het kunt nagaan, meten of opzoeken\"",
+    "\"je vraagt je af of de zin lang genoeg is, volgens mij, eigenlijk\"",
+    "\"je telt de woorden met een hoofdletter\"",
+    "\"je kijkt of er een vraagteken staat\""
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 4,
+   "u": "Controleerbaar = feit. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: een feit kun je controleren, een mening niet.",
+    "Koos je \"\"je vraagt je af of de zin lang genoeg is, volgens mij, eigenlijk\"\"? Dan denk je dat lengte iets zegt. De lengte van een zin bepaalt niet of iets waar is, en is geen test.",
+    "Koos je \"\"je telt de woorden met een hoofdletter\"\"? Dan denk je dat hoofdletters feiten tonen. Ze tonen namen, en niet of iets klopt.",
+    "Koos je \"\"je kijkt of er een vraagteken staat\"\"? Dan denk je dat een vraagteken iets toont. Het toont een vraag, en zegt niets over waarheid."
+   ],
+   "uh": "Hoe controleer je een feit?"
+  },
+  {
+   "v": "Which statement from the text is a fact?",
+   "o": [
+    "\"School should start at 9.30 am.\"",
+    "\"A later start would definitely help, I suppose, really, to be honest.\"",
+    "\"70% of the pupils go to bed after 11 pm, according to a survey.\"",
+    "\"Pupils will just stay up even later.\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 0,
+   "u": "Feit = controleerbaar, mening = oordeel. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"School should start at 9.30 am.\"\"? Dan is dit een wens van de schrijver, want should geeft advies. Je kunt niet nagaan of iets zo moet zijn.",
+    "Koos je \"\"A later start would definitely help, I suppose, really, to be honest.\"\"? Dan geeft dit een voorspelling met zekere woorden. Het is geen gegeven maar een verwachting.",
+    "Klopt: een enquête met een percentage is een gegeven dat je kunt nagaan.",
+    "Koos je \"\"Pupils will just stay up even later.\"\"? Dan is dit de mening van de leraren. Dat is een voorspelling en geen meting."
+   ],
+   "uh": "Which statement from the text is a fact?",
+   "ctx": "Read the text: \"Should schools start later? Many teenagers are tired in the morning. According to a survey at our school, 70% of the pupils go to bed after 11 pm. I think that school should start at 9.30 am, because tired pupils cannot concentrate. Some teachers disagree. They say that a later start is silly, because pupils will just stay up even later. In my opinion, that is not a good argument. Of course, pupils must also try to sleep earlier. But a later start would definitely help, and it costs nothing.\""
+  },
+  {
+   "v": "Which sentence is an opinion?",
+   "o": [
+    "\"Some teachers disagree.\"",
+    "\"I think that school should start at 9.30 am.\"",
+    "\"Many teenagers are tired in the morning, you know.\"",
+    "\"There was a survey at our school.\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 1,
+   "u": "Feit = controleerbaar, mening = oordeel. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"Some teachers disagree.\"\"? Dan noemt dit een feit over de leraren. Er staat geen oordeel van de schrijver.",
+    "Klopt: I think toont dat de schrijver zijn eigen oordeel geeft.",
+    "Koos je \"\"Many teenagers are tired in the morning, you know.\"\"? Dan beschrijft dit een situatie die je kunt nagaan. Het is een algemeen gegeven en geen persoonlijk oordeel.",
+    "Koos je \"\"There was a survey at our school.\"\"? Dan noemt dit dat een enquête is gehouden. Dat is een feit dat je kunt controleren."
+   ],
+   "uh": "Which sentence is an opinion?",
+   "ctx": "Read the text: \"Should schools start later? Many teenagers are tired in the morning. According to a survey at our school, 70% of the pupils go to bed after 11 pm. I think that school should start at 9.30 am, because tired pupils cannot concentrate. Some teachers disagree. They say that a later start is silly, because pupils will just stay up even later. In my opinion, that is not a good argument. Of course, pupils must also try to sleep earlier. But a later start would definitely help, and it costs nothing.\""
+  },
+  {
+   "v": "What is the writer's reason for the opinion that school should start later?",
+   "o": [
+    "\"because teachers disagree\"",
+    "\"because 9.30 am is a nice time, really, to be honest\"",
+    "\"because it costs nothing\"",
+    "\"because tired pupils cannot concentrate\""
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 2,
+   "u": "Because = reden. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"because teachers disagree\"\"? Dan denk je dat de ruzie met leraren de reden is. Dat is een tegenargument, en geen reden voor de mening.",
+    "Koos je \"\"because 9.30 am is a nice time, really, to be honest\"\"? Dan denk je dat de tijd zelf de reden is. Dat is de mening zelf, en geen reden.",
+    "Koos je \"\"because it costs nothing\"\"? Dan denk je dat de kosten de reden zijn. Dat staat als bijzaak aan het eind, en is niet de hoofdreden.",
+    "Klopt: achter because staat de reden van de schrijver."
+   ],
+   "uh": "Wat is de reden van de schrijver?",
+   "ctx": "Read the text: \"Should schools start later? Many teenagers are tired in the morning. According to a survey at our school, 70% of the pupils go to bed after 11 pm. I think that school should start at 9.30 am, because tired pupils cannot concentrate. Some teachers disagree. They say that a later start is silly, because pupils will just stay up even later. In my opinion, that is not a good argument. Of course, pupils must also try to sleep earlier. But a later start would definitely help, and it costs nothing.\""
+  },
+  {
+   "v": "What does 'definitely' show in 'a later start would definitely help'?",
+   "o": [
+    "\"that the writer is sure about his opinion\"",
+    "\"that the writer doubts\"",
+    "\"that this is a fact from the survey, I think\"",
+    "\"that the writer is joking\""
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 3,
+   "u": "Feit = controleerbaar, mening = oordeel. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: definitely betekent zeker, dus de schrijver is stellig.",
+    "Koos je \"\"that the writer doubts\"\"? Dan denk je dat definitely twijfel toont, zoals probably. Het woord betekent juist zekerheid.",
+    "Koos je \"\"that this is a fact from the survey, I think\"\"? Dan denk je dat de enquête de zekerheid geeft. Het is een mening met een stellig woord.",
+    "Koos je \"\"that the writer is joking\"\"? Dan denk je dat definitely een grap toont. Er is niets grappigs in de zin."
+   ],
+   "uh": "What does 'definitely' show in 'a later start would definitely help'?",
+   "ctx": "Read the text: \"Should schools start later? Many teenagers are tired in the morning. According to a survey at our school, 70% of the pupils go to bed after 11 pm. I think that school should start at 9.30 am, because tired pupils cannot concentrate. Some teachers disagree. They say that a later start is silly, because pupils will just stay up even later. In my opinion, that is not a good argument. Of course, pupils must also try to sleep earlier. But a later start would definitely help, and it costs nothing.\""
+  },
+  {
+   "v": "Which statement is a fact?",
+   "o": [
+    "\"The popcorn is the best I have ever eaten.\"",
+    "\"The staff are friendly.\"",
+    "\"The Starlight Cinema opened in March.\"",
+    "\"The ticket is expensive.\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 0,
+   "u": "Feit = controleerbaar, mening = oordeel. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"The popcorn is the best I have ever eaten.\"\"? Dan is dit een persoonlijk oordeel met best. Anderen vinden het misschien niet het lekkerst.",
+    "Koos je \"\"The staff are friendly.\"\"? Dan is dit een indruk van de schrijver. Friendly is een oordeel en geen meting.",
+    "Klopt: de openingsmaand kun je nagaan, dus het is een feit.",
+    "Koos je \"\"The ticket is expensive.\"\"? Dan gebruik je expensive, een oordeel over de prijs. Wat duur is verschilt per persoon."
+   ],
+   "uh": "Which statement is a fact?",
+   "ctx": "Read the text: \"Review: the new cinema in town. The Starlight Cinema opened in March. It has six screens and the seats are very comfortable. A ticket costs 9 euros, which is expensive, I think. The popcorn is the best I have ever eaten. The staff are friendly, but the queue at the desk was far too long when I went on Saturday. The cinema is open until midnight on weekends. All in all, I would recommend it to everybody who loves films, although I hope the prices will go down soon.\""
+  },
+  {
+   "v": "Which words show an opinion?",
+   "o": [
+    "\"six screens\"",
+    "\"the best I have ever eaten\"",
+    "\"open until midnight, I suppose\"",
+    "\"opened in March\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 1,
+   "u": "Feit = controleerbaar, mening = oordeel. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"six screens\"\"? Dan noemt dit een aantal dat je kunt tellen. Het is dus een feit.",
+    "Klopt: the best is een oordeel van de schrijver over de popcorn.",
+    "Koos je \"\"open until midnight, I suppose\"\"? Dan noemt dit een tijd die je kunt nagaan. Het is dus een feit.",
+    "Koos je \"\"opened in March\"\"? Dan noemt dit een datum die je kunt nagaan. Het is dus een feit."
+   ],
+   "uh": "Which words show an opinion?",
+   "ctx": "Read the text: \"Review: the new cinema in town. The Starlight Cinema opened in March. It has six screens and the seats are very comfortable. A ticket costs 9 euros, which is expensive, I think. The popcorn is the best I have ever eaten. The staff are friendly, but the queue at the desk was far too long when I went on Saturday. The cinema is open until midnight on weekends. All in all, I would recommend it to everybody who loves films, although I hope the prices will go down soon.\""
+  },
+  {
+   "v": "'A ticket costs 9 euros, which is expensive, I think.' Which part is a fact?",
+   "o": [
+    "\"which is expensive, you know\"",
+    "\"I think\"",
+    "\"the whole sentence\"",
+    "\"A ticket costs 9 euros\""
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 0,
+   "u": "Prijs = feit, expensive = mening. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"which is expensive, you know\"\"? Dan denk je dat duur een feit is. Wat duur is hangt van de persoon af, dus het is een mening.",
+    "Koos je \"\"I think\"\"? Dan denk je dat I think een feit is. Het toont juist een mening, en dus geen feit.",
+    "Koos je \"\"the whole sentence\"\"? Dan denk je dat de hele zin een feit is. Er zit een mening in, dus maar een deel is een feit.",
+    "Klopt: de prijs kun je controleren, expensive is de mening."
+   ],
+   "uh": "Welk deel is een feit?",
+   "ctx": "Read the text: \"Review: the new cinema in town. The Starlight Cinema opened in March. It has six screens and the seats are very comfortable. A ticket costs 9 euros, which is expensive, I think. The popcorn is the best I have ever eaten. The staff are friendly, but the queue at the desk was far too long when I went on Saturday. The cinema is open until midnight on weekends. All in all, I would recommend it to everybody who loves films, although I hope the prices will go down soon.\""
+  },
+  {
+   "v": "Is 'The popcorn is the best I have ever eaten' a fact or an opinion?",
+   "o": [
+    "\"an opinion, because it is the writer's judgement\"",
+    "\"a fact, because the writer ate it, really, to be honest\"",
+    "\"a fact, because it is in a review\"",
+    "\"neither, because it is a question\""
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 4,
+   "u": "Best = oordeel. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: the best is een persoonlijk oordeel dat niet te meten is.",
+    "Koos je \"\"a fact, because the writer ate it, really, to be honest\"\"? Dan denk je dat eten een feit maakt. Het eten is een feit, maar het oordeel best is een mening.",
+    "Koos je \"\"a fact, because it is in a review\"\"? Dan denk je dat elke zin in een review een feit is. Een review bevat juist meningen, en veel oordelen.",
+    "Koos je \"\"neither, because it is a question\"\"? Dan denk je dat het een vraag is. Er staat geen vraagteken, maar een oordeel."
+   ],
+   "uh": "Is het een feit of mening?",
+   "ctx": "Read the text: \"Review: the new cinema in town. The Starlight Cinema opened in March. It has six screens and the seats are very comfortable. A ticket costs 9 euros, which is expensive, I think. The popcorn is the best I have ever eaten. The staff are friendly, but the queue at the desk was far too long when I went on Saturday. The cinema is open until midnight on weekends. All in all, I would recommend it to everybody who loves films, although I hope the prices will go down soon.\""
+  },
+  {
+   "v": "Which statement is a fact?",
+   "o": [
+    "\"Cycling is good for your health.\"",
+    "\"We should encourage more pupils to cycle, I think, I suppose.\"",
+    "\"There are 40 kilometres of cycle paths in the town.\"",
+    "\"Cycling is not dangerous.\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 0,
+   "u": "Feit = controleerbaar, mening = oordeel. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"Cycling is good for your health.\"\"? Dan is dit een uitspraak met good, een waardeoordeel. Het is geen exact aantal dat je meet.",
+    "Koos je \"\"We should encourage more pupils to cycle, I think, I suppose.\"\"? Dan bevat dit should en is een wens. Het is een advies en geen gegeven.",
+    "Klopt: het aantal kilometers kun je nagaan, dus het is een feit.",
+    "Koos je \"\"Cycling is not dangerous.\"\"? Dan is dit een mening van de schrijver in tegenspraak met de krant. Het is een standpunt, geen meting."
+   ],
+   "uh": "Which statement is a fact?",
+   "ctx": "Read the text: \"Dear editor, Last week your newspaper said that cycling to school is dangerous. I do not agree. In our town there are 40 kilometres of cycle paths, and the council has built two new bridges for cyclists. Cycling is also good for your health and it is free. My brother cycles 8 kilometres every day and he has never had an accident. Of course, there are some accidents each year, but this happens with every kind of transport. It is clear to me that we should encourage more pupils to cycle. Yours faithfully, Pieter Smits\""
+  },
+  {
+   "v": "Which argument supports the writer's opinion?",
+   "o": [
+    "\"The newspaper says that cycling is dangerous, to be honest.\"",
+    "\"Cycling is good for your health and it is free.\"",
+    "\"Yours faithfully, Pieter Smits\"",
+    "\"Dear editor\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 2,
+   "u": "Gezond en gratis = argumenten. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"The newspaper says that cycling is dangerous, to be honest.\"\"? Dan denk je dat de krant zijn argument is. Dat is de mening waar hij het niet mee eens is, en geen steun.",
+    "Klopt: gezondheid en gratis zijn redenen die zijn mening steunen.",
+    "Koos je \"\"Yours faithfully, Pieter Smits\"\"? Dan denk je dat de ondertekening een argument is. Het is een afsluiting, en geen reden.",
+    "Koos je \"\"Dear editor\"\"? Dan denk je dat de aanhef een argument is. Het is een groet, en geen reden."
+   ],
+   "uh": "Welk argument steunt zijn mening?",
+   "ctx": "Read the text: \"Dear editor, Last week your newspaper said that cycling to school is dangerous. I do not agree. In our town there are 40 kilometres of cycle paths, and the council has built two new bridges for cyclists. Cycling is also good for your health and it is free. My brother cycles 8 kilometres every day and he has never had an accident. Of course, there are some accidents each year, but this happens with every kind of transport. It is clear to me that we should encourage more pupils to cycle. Yours faithfully, Pieter Smits\""
+  },
+  {
+   "v": "Which sentence in the text is based on research?",
+   "o": [
+    "\"I think that school should start at 9.30 am, I suppose, really, to be honest.\"",
+    "\"Some teachers disagree.\"",
+    "\"But a later start would definitely help.\"",
+    "\"According to a survey at our school, 70% of the pupils go to bed after 11 pm.\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 0,
+   "u": "According to = bron. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"I think that school should start at 9.30 am, I suppose, really, to be honest.\"\"? Dan denk je dat een mening op onderzoek berust. I think toont een persoonlijk oordeel, zonder enquête.",
+    "Koos je \"\"Some teachers disagree.\"\"? Dan denk je dat dit uit onderzoek komt. Er staat geen bron, dus het is gewoon een bewering.",
+    "Koos je \"\"But a later start would definitely help.\"\"? Dan denk je dat dit door onderzoek gesteund wordt. Er is geen bron, en definitely toont een mening.",
+    "Klopt: according to a survey toont dat het getal uit onderzoek komt."
+   ],
+   "uh": "Welke zin berust op onderzoek?",
+   "ctx": "Read the text: \"Should schools start later? Many teenagers are tired in the morning. According to a survey at our school, 70% of the pupils go to bed after 11 pm. I think that school should start at 9.30 am, because tired pupils cannot concentrate. Some teachers disagree. They say that a later start is silly, because pupils will just stay up even later. In my opinion, that is not a good argument. Of course, pupils must also try to sleep earlier. But a later start would definitely help, and it costs nothing.\""
+  },
+  {
+   "v": "How can you tell that 'silly' is part of an opinion?",
+   "o": [
+    "\"it is a judgement and not something you can measure\"",
+    "\"it has more than five letters\"",
+    "\"it is at the start of a sentence, you know, I think, I suppose\"",
+    "\"it is a number\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 1,
+   "u": "Silly = oordeel. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: silly is een oordeel van de leraren, geen gegeven dat te controleren is.",
+    "Koos je \"\"it has more than five letters\"\"? Dan denk je dat de lengte van het woord een mening toont. Lengte zegt niets, over een oordeel.",
+    "Koos je \"\"it is at the start of a sentence, you know, I think, I suppose\"\"? Dan denk je dat de plaats een mening toont. Het staat midden in een zin, en dat is niet bepalend.",
+    "Koos je \"\"it is a number\"\"? Dan denk je dat silly een getal is. Het is een bijvoeglijk naamwoord, en geen cijfer."
+   ],
+   "uh": "Hoe zie je dat silly een mening is?",
+   "ctx": "Read the text: \"Should schools start later? Many teenagers are tired in the morning. According to a survey at our school, 70% of the pupils go to bed after 11 pm. I think that school should start at 9.30 am, because tired pupils cannot concentrate. Some teachers disagree. They say that a later start is silly, because pupils will just stay up even later. In my opinion, that is not a good argument. Of course, pupils must also try to sleep earlier. But a later start would definitely help, and it costs nothing.\""
+  },
+  {
+   "v": "How do the teachers' view and the writer's view compare?",
+   "o": [
+    "\"they both say that school should start later\"",
+    "\"they both say that school should start earlier, really, to be honest, you know\"",
+    "\"the teachers say a later start is silly, the writer says it would help\"",
+    "\"the teachers agree with the survey\""
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 2,
+   "u": "Verschillende meningen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"they both say that school should start later\"\"? Dan denk je dat ze het eens zijn. De tekst zegt dat sommige leraren het oneens zijn, dus ze zijn het niet eens.",
+    "Koos je \"\"they both say that school should start earlier, really, to be honest, you know\"\"? Dan denk je dat beide partijen vroeger willen. Niemand zegt dat, je verzint een mening.",
+    "Klopt: ze staan tegenover elkaar, dat is te zien aan disagree en not a good argument.",
+    "Koos je \"\"the teachers agree with the survey\"\"? Dan denk je dat de leraren de enquête steunen. Ze noemen die niet, en ze zijn tegen."
+   ],
+   "uh": "Hoe verhouden de meningen zich?",
+   "ctx": "Read the text: \"Should schools start later? Many teenagers are tired in the morning. According to a survey at our school, 70% of the pupils go to bed after 11 pm. I think that school should start at 9.30 am, because tired pupils cannot concentrate. Some teachers disagree. They say that a later start is silly, because pupils will just stay up even later. In my opinion, that is not a good argument. Of course, pupils must also try to sleep earlier. But a later start would definitely help, and it costs nothing.\""
+  },
+  {
+   "v": "What does 'Of course' do in 'Of course, pupils must also try to sleep earlier'?",
+   "o": [
+    "\"it shows that the writer is joking\"",
+    "\"it admits a point of the other side\"",
+    "\"it introduces a fact from the survey, I think\"",
+    "\"it ends the text\""
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 3,
+   "u": "Feit = controleerbaar, mening = oordeel. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"it shows that the writer is joking\"\"? Dan denk je dat of course een grap toont. Het woord geeft een erkenning, geen humor.",
+    "Klopt: of course geeft een punt van de tegenpartij toe, waarna but de eigen mening herhaalt.",
+    "Koos je \"\"it introduces a fact from the survey, I think\"\"? Dan denk je dat of course een bron noemt. Er staat geen bron, alleen een toegeving.",
+    "Koos je \"\"it ends the text\"\"? Dan denk je dat of course een slotwoord is. Er volgt nog een zin met but."
+   ],
+   "uh": "What does 'Of course' do in 'Of course, pupils must also try to sleep earlier'?",
+   "ctx": "Read the text: \"Should schools start later? Many teenagers are tired in the morning. According to a survey at our school, 70% of the pupils go to bed after 11 pm. I think that school should start at 9.30 am, because tired pupils cannot concentrate. Some teachers disagree. They say that a later start is silly, because pupils will just stay up even later. In my opinion, that is not a good argument. Of course, pupils must also try to sleep earlier. But a later start would definitely help, and it costs nothing.\""
+  },
+  {
+   "v": "What is the writer's overall opinion of the cinema?",
+   "o": [
+    "\"very negative\"",
+    "\"completely positive without any complaint\"",
+    "\"neutral, without an opinion\"",
+    "\"positive, with a few complaints\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 1,
+   "u": "All in all = eindoordeel. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"very negative\"\"? Dan denk je dat de schrijver alles slecht vindt. Hij beveelt het aan, dus hij is positief.",
+    "Koos je \"\"completely positive without any complaint\"\"? Dan denk je dat er geen kritiek is. Hij noemt de prijs en de rij, dus er is wel kritiek.",
+    "Koos je \"\"neutral, without an opinion\"\"? Dan denk je dat hij geen mening heeft. Hij geeft oordelen en een advies, dus hij heeft er een.",
+    "Klopt: de schrijver beveelt de bioscoop aan maar noemt de prijs en de rij als kritiek."
+   ],
+   "uh": "Wat is zijn algemene mening?",
+   "ctx": "Read the text: \"Review: the new cinema in town. The Starlight Cinema opened in March. It has six screens and the seats are very comfortable. A ticket costs 9 euros, which is expensive, I think. The popcorn is the best I have ever eaten. The staff are friendly, but the queue at the desk was far too long when I went on Saturday. The cinema is open until midnight on weekends. All in all, I would recommend it to everybody who loves films, although I hope the prices will go down soon.\""
+  },
+  {
+   "v": "What does 'although I hope the prices will go down' show?",
+   "o": [
+    "\"a small criticism about the price\"",
+    "\"a fact about future prices\"",
+    "\"a strong complaint about the staff, I suppose\"",
+    "\"a reason to avoid the cinema\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 3,
+   "u": "Although = kritiek tegenover aanbeveling. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: although en hope tonen dat de schrijver de prijs een nadeel vindt.",
+    "Koos je \"\"a fact about future prices\"\"? Dan denk je dat het een feit over de toekomst is. Hope is een wens, en geen gegeven.",
+    "Koos je \"\"a strong complaint about the staff, I suppose\"\"? Dan denk je dat het over het personeel gaat. Het gaat over prijzen, en niet over het personeel.",
+    "Koos je \"\"a reason to avoid the cinema\"\"? Dan denk je dat het een reden is om weg te blijven. De schrijver beveelt het juist aan, dus het is slechts een kleine kritiek."
+   ],
+   "uh": "Wat toont dit?",
+   "ctx": "Read the text: \"Review: the new cinema in town. The Starlight Cinema opened in March. It has six screens and the seats are very comfortable. A ticket costs 9 euros, which is expensive, I think. The popcorn is the best I have ever eaten. The staff are friendly, but the queue at the desk was far too long when I went on Saturday. The cinema is open until midnight on weekends. All in all, I would recommend it to everybody who loves films, although I hope the prices will go down soon.\""
+  },
+  {
+   "v": "Which statement from the text is an opinion?",
+   "o": [
+    "\"The cinema has six screens.\"",
+    "\"The cinema is open until midnight on weekends.\"",
+    "\"The staff are friendly.\"",
+    "\"The cinema opened in March.\""
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 4,
+   "u": "Feit = controleerbaar, mening = oordeel. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"The cinema has six screens.\"\"? Dan denk je dat een aantal schermen een oordeel is. Zes kun je tellen, dus het is een feit.",
+    "Koos je \"\"The cinema is open until midnight on weekends.\"\"? Dan denk je dat een openingstijd een mening is. Je kunt hem nagaan op de website, en dat maakt hem een feit.",
+    "Klopt: friendly is een oordeel van de schrijver over het personeel.",
+    "Koos je \"\"The cinema opened in March.\"\"? Dan denk je dat een openingsmaand een oordeel is. Je kunt de datum nakijken, dus het is een feit."
+   ],
+   "uh": "Which statement from the text is an opinion?",
+   "ctx": "Read the text: \"Review: the new cinema in town. The Starlight Cinema opened in March. It has six screens and the seats are very comfortable. A ticket costs 9 euros, which is expensive, I think. The popcorn is the best I have ever eaten. The staff are friendly, but the queue at the desk was far too long when I went on Saturday. The cinema is open until midnight on weekends. All in all, I would recommend it to everybody who loves films, although I hope the prices will go down soon.\""
+  },
+  {
+   "v": "Why does the writer mention the 40 kilometres of cycle paths?",
+   "o": [
+    "\"as a joke\"",
+    "\"as a fact to support his opinion\"",
+    "\"as a complaint about the council, really\"",
+    "\"as the opinion of the newspaper\""
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 2,
+   "u": "Feit = controleerbaar, mening = oordeel. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"as a joke\"\"? Dan denk je dat het getal grappig bedoeld is. Er staat niets grappigs in de zin.",
+    "Klopt: het getal laat zien dat de stad veel fietspaden heeft, wat zijn mening steunt.",
+    "Koos je \"\"as a complaint about the council, really\"\"? Dan denk je dat het een klacht is. De raad bouwde juist bruggen, dat is een pluspunt.",
+    "Koos je \"\"as the opinion of the newspaper\"\"? Dan denk je dat de krant dit zegt. De krant zegt dat fietsen gevaarlijk is, het getal komt van de schrijver."
+   ],
+   "uh": "Why does the writer mention the 40 kilometres of cycle paths?",
+   "ctx": "Read the text: \"Dear editor, Last week your newspaper said that cycling to school is dangerous. I do not agree. In our town there are 40 kilometres of cycle paths, and the council has built two new bridges for cyclists. Cycling is also good for your health and it is free. My brother cycles 8 kilometres every day and he has never had an accident. Of course, there are some accidents each year, but this happens with every kind of transport. It is clear to me that we should encourage more pupils to cycle. Yours faithfully, Pieter Smits\""
+  },
+  {
+   "v": "What does 'It is clear to me that' introduce?",
+   "o": [
+    "\"a fact from a survey\"",
+    "\"a quotation from the newspaper\"",
+    "\"a question for the editor\"",
+    "\"the writer's own opinion\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 3,
+   "u": "Feit = controleerbaar, mening = oordeel. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"a fact from a survey\"\"? Dan denk je dat het een bron noemt. Er staat geen enquête, alleen to me.",
+    "Koos je \"\"a quotation from the newspaper\"\"? Dan denk je dat het een citaat inleidt. De krant komt eerder in de brief voor.",
+    "Koos je \"\"a question for the editor\"\"? Dan denk je dat het een vraag stelt. Er staat geen vraagteken.",
+    "Klopt: it is clear to me that leidt een persoonlijk standpunt in."
+   ],
+   "uh": "What does 'It is clear to me that' introduce?",
+   "ctx": "Read the text: \"Dear editor, Last week your newspaper said that cycling to school is dangerous. I do not agree. In our town there are 40 kilometres of cycle paths, and the council has built two new bridges for cyclists. Cycling is also good for your health and it is free. My brother cycles 8 kilometres every day and he has never had an accident. Of course, there are some accidents each year, but this happens with every kind of transport. It is clear to me that we should encourage more pupils to cycle. Yours faithfully, Pieter Smits\""
+  },
+  {
+   "v": "The newspaper said that cycling to school is dangerous. How does the writer respond?",
+   "o": [
+    "\"he disagrees and gives facts and arguments\"",
+    "\"he agrees with the newspaper\"",
+    "\"he does not give any reasons\"",
+    "\"he only repeats the newspaper, to be honest, you know\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 4,
+   "u": "Tegenspreken met argumenten. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: hij zegt dat hij het niet eens is en noemt fietspaden, gezondheid en zijn broer.",
+    "Koos je \"\"he agrees with the newspaper\"\"? Dan denk je dat hij het met de krant eens is. Hij schrijft I do not agree, dus het tegenovergestelde.",
+    "Koos je \"\"he does not give any reasons\"\"? Dan denk je dat hij geen redenen geeft. Hij noemt fietspaden en gezondheid, dus wel.",
+    "Koos je \"\"he only repeats the newspaper, to be honest, you know\"\"? Dan denk je dat hij de krant herhaalt. Hij spreekt de krant juist tegen, met eigen argumenten."
+   ],
+   "uh": "Hoe reageert hij?",
+   "ctx": "Read the text: \"Dear editor, Last week your newspaper said that cycling to school is dangerous. I do not agree. In our town there are 40 kilometres of cycle paths, and the council has built two new bridges for cyclists. Cycling is also good for your health and it is free. My brother cycles 8 kilometres every day and he has never had an accident. Of course, there are some accidents each year, but this happens with every kind of transport. It is clear to me that we should encourage more pupils to cycle. Yours faithfully, Pieter Smits\""
+  }
+ ],
+ "oe": [
+  {
+   "bron": "Examenstijl",
+   "ctx": "Read the text: \"The school canteen is much too expensive. A sandwich costs 3 euros and a drink costs 2 euros. Last week, 30 pupils went to the supermarket instead. In my opinion, the school should lower the prices.\" You must separate facts and opinions.",
+   "v": "Write one fact and one opinion from the text.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Een feit, zoals een broodje kost 3 euro (1p). Een mening, zoals too expensive of in my opinion (1p). Juiste uitleg waarom (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Read the text: \"Football is the best sport in the world. More than 200 countries play it. I think that everybody should try it at least once. Of course, some people prefer other sports, but football is simply the most exciting.\" You must find the opinion words.",
+   "v": "Write two opinion words or phrases from the text.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "I think of the best (1p). The most exciting of simply (1p). Een korte uitleg dat het oordeel is (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Read the text: \"My town has a swimming pool. It is open from 8 am to 8 pm. Many people say that the water is too cold, but I think it is perfect. The entrance costs 4 euros.\" You must separate facts and opinions.",
+   "v": "Write two facts and one opinion.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Open van 8 tot 8, entree 4 euro (1p). De mening: perfect of too cold (1p). Een juiste scheiding (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Read the text: \"Mobile phones should be banned in lessons, because they distract pupils. A study at one school showed that grades went up after the ban. Some pupils disagree and say that phones are useful for homework.\" You must explain the writer's argument.",
+   "v": "Write the opinion and the argument.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Mening: phones should be banned (1p). Argument: they distract pupils (1p). Een steunend feit, zoals de studie (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "A friend says: \"Everyone knows that homework is useless. That is a fact.\" You do not agree and want to explain why this statement is an opinion.",
+   "v": "Write two sentences that explain why the statement is an opinion.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Everyone knows is geen controleerbaar feit (1p). Useless is een oordeel (1p). Een duidelijke uitleg met voorbeeld (1p)."
+  }
+ ]
+}
