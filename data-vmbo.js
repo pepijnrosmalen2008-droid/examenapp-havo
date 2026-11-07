@@ -23968,6 +23968,688 @@ var VAKKEN_VMBO = [
         "u": "It verwijst naar het museum (1p). There verwijst naar het museum of de tuin (1p). Een korte uitleg dat verwijswoorden terugwijzen (1p)."
        }
       ]
+     },
+     {
+      "id": "A4",
+      "lo": "en.A.4",
+      "gs": 2,
+      "naam": "Verbanden tussen zinnen en tekstdelen herkennen",
+      "beschrijving": "Je leert in een Engelse tekst verbanden tussen zinnen te herkennen aan signaalwoorden: volgorde, oorzaak en gevolg, tegenstelling, toevoeging, voorbeeld en conclusie, en je controleert welk verband een signaalwoord aangeeft.",
+      "ceStatus": "CE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Volgorde en gelijktijdigheid",
+       "Oorzaak en gevolg",
+       "Tegenstelling en keuze",
+       "Toevoeging en voorbeeld",
+       "Het verband controleren"
+      ],
+      "sam": "Een signaalwoord geeft het verband aan: first, next en finally voor volgorde, because voor een oorzaak, so en therefore voor een gevolg, but en however voor een tegenstelling, also en in addition voor een toevoeging en for example voor een voorbeeld. Vraag bij elk signaalwoord wat de zin met de vorige doet, en controleer je antwoord in de tekst.",
+      "begrippen": [
+       {
+        "t": "Signaalwoord",
+        "d": "Een woord dat het verband tussen zinnen aangeeft."
+       },
+       {
+        "t": "Volgorde",
+        "d": "Eerst, daarna, tot slot, met first, then en finally."
+       },
+       {
+        "t": "Oorzaak",
+        "d": "De reden, met because."
+       },
+       {
+        "t": "Gevolg",
+        "d": "Het resultaat, met so, therefore of as a result."
+       },
+       {
+        "t": "Tegenstelling",
+        "d": "Twee dingen tegenover elkaar, met but of however."
+       },
+       {
+        "t": "Toevoeging",
+        "d": "Een extra punt, met also of in addition."
+       },
+       {
+        "t": "Voorbeeld",
+        "d": "Een geval dat iets illustreert, met for example."
+       },
+       {
+        "t": "Keuze",
+        "d": "Twee mogelijkheden, met or."
+       },
+       {
+        "t": "Gelijktijdigheid",
+        "d": "Twee dingen tegelijk, met meanwhile."
+       },
+       {
+        "t": "Conclusie",
+        "d": "De afsluiting, met in the end of finally."
+       },
+       {
+        "t": "Verband",
+        "d": "De relatie tussen twee zinnen of delen."
+       },
+       {
+        "t": "Alinea",
+        "d": "Een blok tekst met één onderwerp."
+       }
+      ],
+      "sv": [
+       {
+        "v": "Welke woorden geven een volgorde aan in een tekst?",
+        "o": [
+         "\"because, so en therefore\"",
+         "\"first, then en finally\"",
+         "\"but, however en although\"",
+         "\"for example en such as\""
+        ],
+        "c": 1,
+        "d": 1,
+        "s": 0,
+        "u": "First, then, finally = volgorde. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"because, so en therefore\"\"? Dan denk je dat deze woorden een volgorde geven. Ze geven oorzaak en gevolg, en geen volgorde.",
+         "Klopt: first, then en finally laten zien in welke volgorde dingen gebeuren.",
+         "Koos je \"\"but, however en although\"\"? Dan denk je dat deze woorden een volgorde geven. Ze geven een tegenstelling, en geen volgorde.",
+         "Koos je \"\"for example en such as\"\"? Dan denk je dat deze woorden een volgorde geven. Ze leiden een voorbeeld in, en geven geen volgorde."
+        ],
+        "uh": "Welke woorden geven een volgorde?"
+       },
+       {
+        "v": "Wat betekent meanwhile?",
+        "o": [
+         "\"daarna\"",
+         "\"eerst\"",
+         "\"nooit\"",
+         "\"ondertussen, op hetzelfde moment\""
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 0,
+        "u": "Meanwhile = ondertussen. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"daarna\"\"? Dan verwart meanwhile met afterwards, een woord voor wat later volgt. Meanwhile beschrijft twee handelingen op hetzelfde moment.",
+         "Koos je \"\"eerst\"\"? Dan denk je dat meanwhile een begin aangeeft, zoals first. Maar het staat midden in het recept, terwijl het beslag rust.",
+         "Koos je \"\"nooit\"\"? Dan haalt meanwhile door elkaar met never, omdat beide met n lijken te eindigen of te beginnen. In het recept gebeurt het verwarmen juist wel.",
+         "Klopt: meanwhile betekent dat twee dingen tegelijk gebeuren."
+        ],
+        "uh": "Wat betekent meanwhile?"
+       },
+       {
+        "v": "Welk woord geeft een reden?",
+        "o": [
+         "\"because\"",
+         "\"however\"",
+         "\"finally\"",
+         "\"for example\""
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 1,
+        "u": "Because = reden. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: because leidt de reden in, zoals in I was angry because I could not watch my series.",
+         "Koos je \"\"however\"\"? Dan kiest een woord van tegenstelling, terwijl de vraag een reden zoekt. However zet iets tegenover het vorige in plaats van het uit te leggen.",
+         "Koos je \"\"finally\"\"? Dan kiest een woord voor het laatste punt van een reeks. Een slotwoord geeft geen reden, het sluit alleen af.",
+         "Koos je \"\"for example\"\"? Dan denkt dat een voorbeeld hetzelfde is als een verklaring. Een voorbeeld laat iets zien, maar legt niet uit waarom."
+        ],
+        "uh": "Welk woord geeft een reden?"
+       },
+       {
+        "v": "Welk woord geeft een gevolg aan?",
+        "o": [
+         "\"because\"",
+         "\"meanwhile\"",
+         "\"therefore\"",
+         "\"on the other hand\""
+        ],
+        "c": 2,
+        "d": 1,
+        "s": 1,
+        "u": "Therefore = daarom. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"because\"\"? Dan denk je dat because een gevolg geeft. Het geeft de reden, en niet het gevolg.",
+         "Koos je \"\"meanwhile\"\"? Dan denk je dat meanwhile een gevolg geeft. Het geeft gelijktijdigheid, en geen gevolg.",
+         "Klopt: therefore betekent daarom en geeft het gevolg van wat eerder gezegd is.",
+         "Koos je \"\"on the other hand\"\"? Dan denk je dat on the other hand een gevolg geeft. Het geeft een tegenstelling, en geen gevolg."
+        ],
+        "uh": "Welk woord geeft een gevolg?"
+       },
+       {
+        "v": "Welk woord geeft een tegenstelling aan?",
+        "o": [
+         "\"moreover\"",
+         "\"however\"",
+         "\"therefore\"",
+         "\"next\""
+        ],
+        "c": 1,
+        "d": 1,
+        "s": 2,
+        "u": "However = echter. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"moreover\"\"? Dan gebruikt een toevoegwoord voor een tegenstelling. Moreover voegt een punt in dezelfde richting toe.",
+         "Klopt: however betekent echter en zet iets tegenover het vorige.",
+         "Koos je \"\"therefore\"\"? Dan denkt dat daarom hetzelfde is als echter. Therefore noemt een gevolg, geen tegendeel.",
+         "Koos je \"\"next\"\"? Dan denkt dat de volgende stap een tegendeel is. Next geeft alleen een volgorde in de tijd."
+        ],
+        "uh": "Welk woord geeft een tegenstelling?"
+       },
+       {
+        "v": "Welke woorden leiden een voorbeeld in?",
+        "o": [
+         "\"as a result\"",
+         "\"in the end\"",
+         "\"on the other hand\"",
+         "\"for example\""
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 3,
+        "u": "For example = voorbeeld. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"as a result\"\"? Dan gebruikt een gevolgwoord waar een voorbeeld nodig is. As a result zegt wat eruit volgt, niet wat een voorbeeld is.",
+         "Koos je \"\"in the end\"\"? Dan kiest een slotwoord terwijl de vraag een voorbeeld zoekt. In the end sluit een verhaal af in plaats van iets te illustreren.",
+         "Koos je \"\"on the other hand\"\"? Dan denkt dat de keerzijde een voorbeeld is. On the other hand zet twee kanten tegenover elkaar.",
+         "Klopt: for example leidt een voorbeeld in dat een bewering ondersteunt."
+        ],
+        "uh": "Welke woorden leiden een voorbeeld in?"
+       },
+       {
+        "v": "Hoe vind je het verband tussen twee zinnen?",
+        "o": [
+         "\"je let op het signaalwoord en vraagt wat de tweede zin met de eerste doet\"",
+         "\"je telt de woorden in beide zinnen, to be honest, you know, I think\"",
+         "\"je leest alleen de laatste zin\"",
+         "\"je kijkt naar het lettertype\""
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 4,
+        "u": "Signaalwoord + functie. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: een signaalwoord laat zien of de tweede zin een reden, gevolg, tegenstelling of voorbeeld geeft.",
+         "Koos je \"\"je telt de woorden in beide zinnen, to be honest, you know, I think\"\"? Dan denk je dat het aantal woorden het verband laat zien. Dat zegt niets, over de betekenis.",
+         "Koos je \"\"je leest alleen de laatste zin\"\"? Dan denk je dat de laatste zin genoeg is. Je mist dan het verband, met de eerste zin.",
+         "Koos je \"\"je kijkt naar het lettertype\"\"? Dan denk je dat het lettertype het verband toont. Dat hangt van de uitgave af, en zegt niets over de zin."
+        ],
+        "uh": "Hoe vind je het verband?"
+       },
+       {
+        "v": "Why was the writer angry at first?",
+        "o": [
+         "\"because the internet was too expensive, I suppose, really\"",
+         "\"because the room was dirty\"",
+         "\"because the writer could not watch a favourite series\"",
+         "\"because grandmother did not call\""
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 1,
+        "u": "Because = reden. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"because the internet was too expensive, I suppose, really\"\"? Dan denk je dat de prijs de reden was. Daar staat niets over, je verzint een reden.",
+         "Koos je \"\"because the room was dirty\"\"? Dan denk je dat de rommel de reden was. Het schoonmaken komt later, en is een oplossing.",
+         "Klopt: because laat zien dat de reden was dat de serie niet te kijken was.",
+         "Koos je \"\"because grandmother did not call\"\"? Dan denk je dat oma de reden was. Zij komt pas later, en bij het eten."
+        ],
+        "uh": "Waarom was de schrijver boos?",
+        "ctx": "Read the text: \"A day without the internet. Last weekend our internet was down for two days. At first, I was angry because I could not watch my favourite series. However, I soon found other things to do. First, I cleaned my room, which I had not done for months. Then I called my grandmother, because I normally only send her messages. She was so happy that she invited me for dinner. After dinner we played cards until midnight. As a result, I went to bed late, but I felt relaxed. In the end, I was almost sorry when the internet came back.\""
+       },
+       {
+        "v": "What did the writer do first?",
+        "o": [
+         "\"called grandmother\"",
+         "\"cleaned the room\"",
+         "\"played cards\"",
+         "\"watched a series\""
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 0,
+        "u": "First = begin. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"called grandmother\"\"? Dan denk je dat het bellen eerst was. Dat staat bij then, en komt na het schoonmaken.",
+         "Klopt: First introduceert het schoonmaken van de kamer, daarna volgt then.",
+         "Koos je \"\"played cards\"\"? Dan denk je dat het kaarten eerst was. Dat komt na het eten, dus later.",
+         "Koos je \"\"watched a series\"\"? Dan denk je dat de schrijver een serie keek. Het internet was uit, dus dat kon niet."
+        ],
+        "uh": "Wat deed de schrijver eerst?",
+        "ctx": "Read the text: \"A day without the internet. Last weekend our internet was down for two days. At first, I was angry because I could not watch my favourite series. However, I soon found other things to do. First, I cleaned my room, which I had not done for months. Then I called my grandmother, because I normally only send her messages. She was so happy that she invited me for dinner. After dinner we played cards until midnight. As a result, I went to bed late, but I felt relaxed. In the end, I was almost sorry when the internet came back.\""
+       },
+       {
+        "v": "What does 'However' show in 'However, I soon found other things to do'?",
+        "o": [
+         "\"a reason for being angry, really\"",
+         "\"an example of a game\"",
+         "\"the end of the story\"",
+         "\"a contrast with feeling angry\""
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 2,
+        "u": "However = contrast. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"a reason for being angry, really\"\"? Dan denk je dat however een reden geeft. Het geeft een tegenstelling, en geen reden.",
+         "Koos je \"\"an example of a game\"\"? Dan denk je dat however een voorbeeld inleidt. Het geeft een tegenstelling, en geen voorbeeld.",
+         "Koos je \"\"the end of the story\"\"? Dan denk je dat however het einde is. Het staat vroeg in de tekst, en het verhaal gaat verder.",
+         "Klopt: however zet het vinden van andere dingen tegenover het eerste boze gevoel."
+        ],
+        "uh": "Wat toont however?",
+        "ctx": "Read the text: \"A day without the internet. Last weekend our internet was down for two days. At first, I was angry because I could not watch my favourite series. However, I soon found other things to do. First, I cleaned my room, which I had not done for months. Then I called my grandmother, because I normally only send her messages. She was so happy that she invited me for dinner. After dinner we played cards until midnight. As a result, I went to bed late, but I felt relaxed. In the end, I was almost sorry when the internet came back.\""
+       },
+       {
+        "v": "Why is the lunch service healthy, according to supporters?",
+        "o": [
+         "\"because pupils get fruit and vegetables\"",
+         "\"because it is cheap\"",
+         "\"because it is convenient for parents, I think\"",
+         "\"because pupils bring their own lunch\""
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 1,
+        "u": "Because = reden. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: de reden staat achter because in dezelfde zin.",
+         "Koos je \"\"because it is cheap\"\"? Dan denk je dat het goedkoop is. Er staat dat het geld kost, dus dat klopt niet.",
+         "Koos je \"\"because it is convenient for parents, I think\"\"? Dan denk je dat het gemak voor ouders de reden is. Dat is een ander voordeel, en geen gezondheid.",
+         "Koos je \"\"because pupils bring their own lunch\"\"? Dan denk je dat eigen lunch de reden is. Dat is een tegenargument, en geen reden."
+        ],
+        "uh": "Waarom is de lunch gezond?",
+        "ctx": "Read the text: \"School lunch: yes or no? Our school wants to start a lunch service. Supporters say that it is healthy, because pupils get fruit and vegetables. In addition, it is convenient for parents who work late. On the other hand, a lunch service costs money, so the school must raise the fees. Also, some pupils prefer to bring their own lunch. For example, Lisa says that she likes her own sandwiches. Nevertheless, the school will start a trial in March. Therefore, everybody will have a chance to give an opinion, and the school will decide in June.\""
+       },
+       {
+        "v": "What does 'In addition' do in the text?",
+        "o": [
+         "\"it gives a disadvantage, to be honest\"",
+         "\"it gives the result\"",
+         "\"it adds another advantage\"",
+         "\"it ends the text\""
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 3,
+        "u": "In addition = extra. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"it gives a disadvantage, to be honest\"\"? Dan denk je dat in addition een nadeel geeft. Het voegt iets toe, en is positief.",
+         "Koos je \"\"it gives the result\"\"? Dan denk je dat in addition een gevolg geeft. Het voegt iets toe, en geeft geen gevolg.",
+         "Klopt: in addition voegt een extra voordeel toe, het gemak voor ouders.",
+         "Koos je \"\"it ends the text\"\"? Dan denk je dat in addition het slot is. Het staat in het begin, en er volgt nog tekst."
+        ],
+        "uh": "Wat doet in addition?",
+        "ctx": "Read the text: \"School lunch: yes or no? Our school wants to start a lunch service. Supporters say that it is healthy, because pupils get fruit and vegetables. In addition, it is convenient for parents who work late. On the other hand, a lunch service costs money, so the school must raise the fees. Also, some pupils prefer to bring their own lunch. For example, Lisa says that she likes her own sandwiches. Nevertheless, the school will start a trial in March. Therefore, everybody will have a chance to give an opinion, and the school will decide in June.\""
+       },
+       {
+        "v": "What does 'On the other hand' show?",
+        "o": [
+         "\"another advantage, I suppose, really, to be honest\"",
+         "\"a disadvantage, the other side of the story\"",
+         "\"a time order\"",
+         "\"an example\""
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 2,
+        "u": "On the other hand = keerzijde. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"another advantage, I suppose, really, to be honest\"\"? Dan denk je dat het een extra voordeel is. Dat is in addition, en on the other hand geeft de keerzijde.",
+         "Klopt: on the other hand introduceert de keerzijde, dat de lunch geld kost.",
+         "Koos je \"\"a time order\"\"? Dan denk je dat het een volgorde geeft. Dat is first of next, en dit is een tegenstelling.",
+         "Koos je \"\"an example\"\"? Dan denk je dat het een voorbeeld inleidt. Dat is for example, en dit is een tegenstelling."
+        ],
+        "uh": "Wat toont on the other hand?",
+        "ctx": "Read the text: \"School lunch: yes or no? Our school wants to start a lunch service. Supporters say that it is healthy, because pupils get fruit and vegetables. In addition, it is convenient for parents who work late. On the other hand, a lunch service costs money, so the school must raise the fees. Also, some pupils prefer to bring their own lunch. For example, Lisa says that she likes her own sandwiches. Nevertheless, the school will start a trial in March. Therefore, everybody will have a chance to give an opinion, and the school will decide in June.\""
+       },
+       {
+        "v": "What does 'For example, Lisa says ...' do?",
+        "o": [
+         "\"it gives a reason for the trial, you know, I think, I suppose\"",
+         "\"it shows a contrast\"",
+         "\"it gives the end of the text\"",
+         "\"it gives an example of pupils who bring their own lunch\""
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 3,
+        "u": "For example = voorbeeld. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"it gives a reason for the trial, you know, I think, I suppose\"\"? Dan denk je dat het een reden voor de proef geeft. Het geeft een voorbeeld, en geen reden.",
+         "Koos je \"\"it shows a contrast\"\"? Dan denk je dat het een tegenstelling toont. Het geeft een voorbeeld, en geen tegenstelling.",
+         "Koos je \"\"it gives the end of the text\"\"? Dan denk je dat het het einde is. Er volgt nog een zin, dus niet.",
+         "Klopt: for example illustreert dat sommige leerlingen liever eigen lunch meenemen."
+        ],
+        "uh": "Wat doet for example?",
+        "ctx": "Read the text: \"School lunch: yes or no? Our school wants to start a lunch service. Supporters say that it is healthy, because pupils get fruit and vegetables. In addition, it is convenient for parents who work late. On the other hand, a lunch service costs money, so the school must raise the fees. Also, some pupils prefer to bring their own lunch. For example, Lisa says that she likes her own sandwiches. Nevertheless, the school will start a trial in March. Therefore, everybody will have a chance to give an opinion, and the school will decide in June.\""
+       },
+       {
+        "v": "What do you do next, after stirring the mixture?",
+        "o": [
+         "\"let the mixture rest for ten minutes\"",
+         "\"pour it into a pan\"",
+         "\"turn the pancake over, really, to be honest\"",
+         "\"put it on a plate\""
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 0,
+        "u": "Next = volgende stap. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: next laat zien dat het laten rusten de volgende stap is.",
+         "Koos je \"\"pour it into a pan\"\"? Dan denk je dat het eerst in de pan gaat. Dat komt pas na het rusten, dus later.",
+         "Koos je \"\"turn the pancake over, really, to be honest\"\"? Dan denk je dat je het meteen omdraait. Dat komt aan het eind van het bakken, dus later.",
+         "Koos je \"\"put it on a plate\"\"? Dan denk je dat het meteen op het bord gaat. Dat is de laatste stap, dus later."
+        ],
+        "uh": "Wat doe je na het roeren?",
+        "ctx": "Read the text: \"How to make pancakes. First, mix 250 grams of flour with two eggs and half a litre of milk. Stir until there are no lumps. Next, let the mixture rest for ten minutes. Meanwhile, heat a little butter in a pan. After that, pour a thin layer of mixture into the pan. Bake the pancake for about one minute, and then turn it over. Finally, put the pancake on a plate. You can eat it with sugar or with fruit. If you want a tasty pancake, do not make the layer too thick. Otherwise it will burn on the outside and stay raw inside.\""
+       },
+       {
+        "v": "Why should you not make the layer too thick?",
+        "o": [
+         "\"because it costs more flour, I think, I suppose, really\"",
+         "\"because it takes less time\"",
+         "\"otherwise it will burn on the outside and stay raw inside\"",
+         "\"because you need two eggs\""
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 1,
+        "u": "Otherwise = anders. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"because it costs more flour, I think, I suppose, really\"\"? Dan denk je dat het om meel gaat. Het gaat om bakken, en niet om meel.",
+         "Koos je \"\"because it takes less time\"\"? Dan denk je dat het sneller is. Een dikke laag duurt juist langer, en brandt.",
+         "Klopt: otherwise noemt het gevolg als je het toch doet.",
+         "Koos je \"\"because you need two eggs\"\"? Dan denk je dat het om eieren gaat. Dat staat bij het mengen, en niet bij de laag."
+        ],
+        "uh": "Waarom niet te dik?",
+        "ctx": "Read the text: \"How to make pancakes. First, mix 250 grams of flour with two eggs and half a litre of milk. Stir until there are no lumps. Next, let the mixture rest for ten minutes. Meanwhile, heat a little butter in a pan. After that, pour a thin layer of mixture into the pan. Bake the pancake for about one minute, and then turn it over. Finally, put the pancake on a plate. You can eat it with sugar or with fruit. If you want a tasty pancake, do not make the layer too thick. Otherwise it will burn on the outside and stay raw inside.\""
+       },
+       {
+        "v": "What does 'Meanwhile' mean in 'Meanwhile, heat a little butter in a pan'?",
+        "o": [
+         "\"after the pancake is ready\"",
+         "\"at the same time\"",
+         "\"before you mix the flour\"",
+         "\"never\""
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 0,
+        "u": "Meanwhile = tegelijk. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"after the pancake is ready\"\"? Dan denk je dat het daarna is. Het beslag rust nog, dus tegelijk.",
+         "Klopt: terwijl het beslag rust, verwarm je de boter.",
+         "Koos je \"\"before you mix the flour\"\"? Dan denk je dat het eerder is. Het mengen is al gedaan, dus tegelijk.",
+         "Koos je \"\"never\"\"? Dan denk je dat het nooit gebeurt. Het gebeurt juist, terwijl het beslag rust."
+        ],
+        "uh": "Wat betekent meanwhile?",
+        "ctx": "Read the text: \"How to make pancakes. First, mix 250 grams of flour with two eggs and half a litre of milk. Stir until there are no lumps. Next, let the mixture rest for ten minutes. Meanwhile, heat a little butter in a pan. After that, pour a thin layer of mixture into the pan. Bake the pancake for about one minute, and then turn it over. Finally, put the pancake on a plate. You can eat it with sugar or with fruit. If you want a tasty pancake, do not make the layer too thick. Otherwise it will burn on the outside and stay raw inside.\""
+       },
+       {
+        "v": "What is the result of playing cards until midnight?",
+        "o": [
+         "\"the writer was angry again\"",
+         "\"the writer cleaned the room, I suppose\"",
+         "\"the internet came back\"",
+         "\"the writer went to bed late\""
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 1,
+        "u": "As a result = gevolg. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"the writer was angry again\"\"? Dan denk je dat de schrijver weer boos was. Ze voelde zich ontspannen, dus dat klopt niet.",
+         "Koos je \"\"the writer cleaned the room, I suppose\"\"? Dan denk je dat dat het gevolg is. Dat deed ze eerder, en niet na het kaarten.",
+         "Koos je \"\"the internet came back\"\"? Dan denk je dat het internet terugkwam door het kaarten. Het was toeval, en geen gevolg.",
+         "Klopt: as a result leidt het gevolg in, namelijk laat naar bed."
+        ],
+        "uh": "Wat is het gevolg van kaarten tot middernacht?",
+        "ctx": "Read the text: \"A day without the internet. Last weekend our internet was down for two days. At first, I was angry because I could not watch my favourite series. However, I soon found other things to do. First, I cleaned my room, which I had not done for months. Then I called my grandmother, because I normally only send her messages. She was so happy that she invited me for dinner. After dinner we played cards until midnight. As a result, I went to bed late, but I felt relaxed. In the end, I was almost sorry when the internet came back.\""
+       },
+       {
+        "v": "Which words show the end of the story?",
+        "o": [
+         "\"In the end\"",
+         "\"At first\"",
+         "\"Then\"",
+         "\"After dinner\""
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 0,
+        "u": "In the end = slot. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: in the end leidt het slot van het verhaal in.",
+         "Koos je \"\"At first\"\"? Dan kiest een woord dat het begin van het verhaal markeert. At first leidt de eerste reactie in, niet de afsluiting van de dag.",
+         "Koos je \"\"Then\"\"? Dan denkt dat then het einde markeert. Then is een tussenstap in het verhaal, de afsluiting komt later.",
+         "Koos je \"\"After dinner\"\"? Dan verwart een tijdsaanduiding met een slotwoord. After dinner is een moment in de avond, geen afsluiting van het verhaal."
+        ],
+        "uh": "Welke woorden tonen het einde?",
+        "ctx": "Read the text: \"A day without the internet. Last weekend our internet was down for two days. At first, I was angry because I could not watch my favourite series. However, I soon found other things to do. First, I cleaned my room, which I had not done for months. Then I called my grandmother, because I normally only send her messages. She was so happy that she invited me for dinner. After dinner we played cards until midnight. As a result, I went to bed late, but I felt relaxed. In the end, I was almost sorry when the internet came back.\""
+       },
+       {
+        "v": "Which two ideas are in contrast in the text?",
+        "o": [
+         "\"cleaning the room and calling grandmother, really, to be honest\"",
+         "\"playing cards and going to bed\"",
+         "\"being angry at first and finding other things to do\"",
+         "\"grandmother being happy and dinner\""
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 2,
+        "u": "However = contrast. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"cleaning the room and calling grandmother, really, to be honest\"\"? Dan ziet twee opeenvolgende taken als tegenstelling. Beide acties horen bij first en then en vullen elkaar aan.",
+         "Koos je \"\"playing cards and going to bed\"\"? Dan denkt dat een oorzaak en gevolg een tegenstelling zijn. Het kaarten leidt tot laat naar bed gaan, dat is een as a result.",
+         "Klopt: however zet de woede tegenover het vinden van andere dingen.",
+         "Koos je \"\"grandmother being happy and dinner\"\"? Dan verbindt twee prettige gebeurtenissen als een contrast. Het ene volgt uit het andere, ze staan niet tegenover elkaar."
+        ],
+        "uh": "Welke twee ideeën staan tegenover elkaar?",
+        "ctx": "Read the text: \"A day without the internet. Last weekend our internet was down for two days. At first, I was angry because I could not watch my favourite series. However, I soon found other things to do. First, I cleaned my room, which I had not done for months. Then I called my grandmother, because I normally only send her messages. She was so happy that she invited me for dinner. After dinner we played cards until midnight. As a result, I went to bed late, but I felt relaxed. In the end, I was almost sorry when the internet came back.\""
+       },
+       {
+        "v": "Why must the school raise the fees?",
+        "o": [
+         "\"because parents work late\"",
+         "\"because a lunch service costs money\"",
+         "\"because pupils like sandwiches\"",
+         "\"because the trial starts in March, I think\""
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 1,
+        "u": "So = gevolg van kosten. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"because parents work late\"\"? Dan denk je dat late ouders de reden zijn. Dat is een voordeel, en geen reden voor hogere kosten.",
+         "Klopt: so geeft het gevolg, omdat de lunch geld kost moet het schoolgeld omhoog.",
+         "Koos je \"\"because pupils like sandwiches\"\"? Dan denk je dat broodjes de reden zijn. Dat is een voorbeeld, en geen reden.",
+         "Koos je \"\"because the trial starts in March, I think\"\"? Dan denk je dat de proef de reden is. De proef komt later, en is geen oorzaak."
+        ],
+        "uh": "Waarom moet het schoolgeld omhoog?",
+        "ctx": "Read the text: \"School lunch: yes or no? Our school wants to start a lunch service. Supporters say that it is healthy, because pupils get fruit and vegetables. In addition, it is convenient for parents who work late. On the other hand, a lunch service costs money, so the school must raise the fees. Also, some pupils prefer to bring their own lunch. For example, Lisa says that she likes her own sandwiches. Nevertheless, the school will start a trial in March. Therefore, everybody will have a chance to give an opinion, and the school will decide in June.\""
+       },
+       {
+        "v": "What does the last sentence ('Therefore, everybody will have a chance ...') do?",
+        "o": [
+         "\"it gives an example\"",
+         "\"it shows a contrast\"",
+         "\"it starts a new subject, to be honest\"",
+         "\"it gives a result of the trial\""
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 4,
+        "u": "Therefore = gevolg. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"it gives an example\"\"? Dan denkt dat de laatste zin iets illustreert, zoals for example doet. Therefore wijst op een uitkomst, niet op een illustratie.",
+         "Koos je \"\"it shows a contrast\"\"? Dan leest therefore als een woord van tegenstelling. Het woord betekent daarom en past bij een gevolg.",
+         "Koos je \"\"it starts a new subject, to be honest\"\"? Dan denkt dat de laatste zin een ander onderwerp opent. De zin sluit juist het onderwerp van de proef af.",
+         "Klopt: therefore laat zien dat de proef ervoor zorgt dat iedereen kan reageren."
+        ],
+        "uh": "Wat doet de laatste zin?",
+        "ctx": "Read the text: \"School lunch: yes or no? Our school wants to start a lunch service. Supporters say that it is healthy, because pupils get fruit and vegetables. In addition, it is convenient for parents who work late. On the other hand, a lunch service costs money, so the school must raise the fees. Also, some pupils prefer to bring their own lunch. For example, Lisa says that she likes her own sandwiches. Nevertheless, the school will start a trial in March. Therefore, everybody will have a chance to give an opinion, and the school will decide in June.\""
+       },
+       {
+        "v": "Which word shows that the school will start the trial in spite of the problems?",
+        "o": [
+         "\"Nevertheless\"",
+         "\"In addition, I suppose\"",
+         "\"For example\"",
+         "\"Therefore\""
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 2,
+        "u": "Nevertheless = toch. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: nevertheless betekent toch, ondanks de bezwaren.",
+         "Koos je \"\"In addition, I suppose\"\"? Dan denk je dat in addition de beslissing toont. Het voegt alleen toe, en toont geen contrast.",
+         "Koos je \"\"For example\"\"? Dan denk je dat for example de beslissing toont. Het geeft een voorbeeld, en toont geen contrast.",
+         "Koos je \"\"Therefore\"\"? Dan denk je dat therefore de beslissing toont. Het geeft een gevolg, en is hier niet de tegenstelling."
+        ],
+        "uh": "Welk woord toont toch?",
+        "ctx": "Read the text: \"School lunch: yes or no? Our school wants to start a lunch service. Supporters say that it is healthy, because pupils get fruit and vegetables. In addition, it is convenient for parents who work late. On the other hand, a lunch service costs money, so the school must raise the fees. Also, some pupils prefer to bring their own lunch. For example, Lisa says that she likes her own sandwiches. Nevertheless, the school will start a trial in March. Therefore, everybody will have a chance to give an opinion, and the school will decide in June.\""
+       },
+       {
+        "v": "Put the steps in the right order: pour the mixture, let it rest, mix the ingredients, bake the pancake.",
+        "o": [
+         "\"bake, mix, rest, pour, you know\"",
+         "\"pour, mix, bake, rest\"",
+         "\"mix, rest, pour, bake\"",
+         "\"rest, bake, mix, pour\""
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 0,
+        "u": "First, next, after that, finally. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"bake, mix, rest, pour, you know\"\"? Dan denk je dat je eerst bakt. Je moet het beslag eerst maken, en dat gebeurt door mengen.",
+         "Koos je \"\"pour, mix, bake, rest\"\"? Dan denk je dat je eerst giet. Het beslag moet eerst gemaakt zijn, dus mix komt voor pour.",
+         "Klopt: mix en rest komen eerst, daarna pour en bake.",
+         "Koos je \"\"rest, bake, mix, pour\"\"? Dan denk je dat het beslag rust voor het mengen. Dat kan niet, want er is nog geen beslag."
+        ],
+        "uh": "Wat is de juiste volgorde?",
+        "ctx": "Read the text: \"How to make pancakes. First, mix 250 grams of flour with two eggs and half a litre of milk. Stir until there are no lumps. Next, let the mixture rest for ten minutes. Meanwhile, heat a little butter in a pan. After that, pour a thin layer of mixture into the pan. Bake the pancake for about one minute, and then turn it over. Finally, put the pancake on a plate. You can eat it with sugar or with fruit. If you want a tasty pancake, do not make the layer too thick. Otherwise it will burn on the outside and stay raw inside.\""
+       },
+       {
+        "v": "What does 'or' show in 'with sugar or with fruit'?",
+        "o": [
+         "\"a result\"",
+         "\"a choice between two things\"",
+         "\"a contrast\"",
+         "\"a time order, really, to be honest\""
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 3,
+        "u": "Or = keuze. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"a result\"\"? Dan denkt dat or een gevolg inleidt, zoals so. Or noemt alleen twee mogelijkheden naast elkaar.",
+         "Klopt: or geeft een keuze tussen suiker en fruit.",
+         "Koos je \"\"a contrast\"\"? Dan leest or als een woord van tegenstelling. Suiker en fruit staan niet tegenover elkaar, je mag kiezen.",
+         "Koos je \"\"a time order, really, to be honest\"\"? Dan denkt dat or een volgorde aangeeft. Je eet niet eerst het een en dan het ander, je kiest."
+        ],
+        "uh": "Wat toont or?",
+        "ctx": "Read the text: \"How to make pancakes. First, mix 250 grams of flour with two eggs and half a litre of milk. Stir until there are no lumps. Next, let the mixture rest for ten minutes. Meanwhile, heat a little butter in a pan. After that, pour a thin layer of mixture into the pan. Bake the pancake for about one minute, and then turn it over. Finally, put the pancake on a plate. You can eat it with sugar or with fruit. If you want a tasty pancake, do not make the layer too thick. Otherwise it will burn on the outside and stay raw inside.\""
+       },
+       {
+        "v": "What does 'Otherwise' mean in 'Otherwise it will burn on the outside'?",
+        "o": [
+         "\"after that\"",
+         "\"for example\"",
+         "\"at the same time, I think\"",
+         "\"if you do not do that\""
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 1,
+        "u": "Otherwise = anders. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"after that\"\"? Dan denk je dat otherwise daarna betekent. Dat is afterwards, en otherwise betekent anders.",
+         "Koos je \"\"for example\"\"? Dan denk je dat otherwise een voorbeeld inleidt. Dat is for example, en otherwise geeft een gevolg.",
+         "Koos je \"\"at the same time, I think\"\"? Dan denk je dat otherwise tegelijk betekent. Dat is meanwhile, en otherwise betekent anders.",
+         "Klopt: otherwise betekent anders, als je het niet doet, zoals de laag niet te dik maken."
+        ],
+        "uh": "Wat betekent otherwise?",
+        "ctx": "Read the text: \"How to make pancakes. First, mix 250 grams of flour with two eggs and half a litre of milk. Stir until there are no lumps. Next, let the mixture rest for ten minutes. Meanwhile, heat a little butter in a pan. After that, pour a thin layer of mixture into the pan. Bake the pancake for about one minute, and then turn it over. Finally, put the pancake on a plate. You can eat it with sugar or with fruit. If you want a tasty pancake, do not make the layer too thick. Otherwise it will burn on the outside and stay raw inside.\""
+       },
+       {
+        "v": "How are the parts connected in 'Bake the pancake for about one minute, and then turn it over'?",
+        "o": [
+         "\"the second action follows the first\"",
+         "\"the second action is a reason for the first\"",
+         "\"the second action is a contrast\"",
+         "\"the second action is an example\""
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 4,
+        "u": "And then = volgorde. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: and then laat zien dat het omdraaien na het bakken komt.",
+         "Koos je \"\"the second action is a reason for the first\"\"? Dan denkt dat omdraaien de reden voor het bakken is. And then geeft aan dat het omdraaien erna komt.",
+         "Koos je \"\"the second action is a contrast\"\"? Dan ziet het omdraaien als tegenstelling met het bakken. Er staat geen but of however, alleen de volgende stap.",
+         "Koos je \"\"the second action is an example\"\"? Dan denkt dat het omdraaien een voorbeeld van bakken is. Er staat geen for example, het is een nieuwe stap."
+        ],
+        "uh": "Hoe zijn de delen verbonden?",
+        "ctx": "Read the text: \"How to make pancakes. First, mix 250 grams of flour with two eggs and half a litre of milk. Stir until there are no lumps. Next, let the mixture rest for ten minutes. Meanwhile, heat a little butter in a pan. After that, pour a thin layer of mixture into the pan. Bake the pancake for about one minute, and then turn it over. Finally, put the pancake on a plate. You can eat it with sugar or with fruit. If you want a tasty pancake, do not make the layer too thick. Otherwise it will burn on the outside and stay raw inside.\""
+       }
+      ],
+      "oe": [
+       {
+        "bron": "Examenstijl",
+        "ctx": "Read the text: \"Tim wanted to buy a new bike. He did not have enough money, so he started a job delivering newspapers. After two months he had saved 150 euros. However, the bike cost 200 euros, so he had to wait another month.\" Your teacher asks you about the links between the sentences.",
+        "v": "Name two signal words and say what each one shows.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "So toont het gevolg of de reden (1p). However toont een tegenstelling (1p). Een tweede juist signaalwoord, zoals after of so (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Read the text: \"My town has many good places for young people. For example, there is a skate park, a cinema and a library. On the other hand, there are no clubs for teenagers. In addition, the bus stops running at 8 pm. Therefore, many young people stay at home in the evening.\" You must find the links.",
+        "v": "Write what For example and Therefore do in the text.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "For example geeft voorbeelden (1p). Therefore geeft een gevolg (1p). Een goede uitleg met de tekst (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Read the text: \"First, wash your hands. Then, open the packet and put the pasta in a pan with boiling water. While the pasta is cooking, make the sauce. After ten minutes, drain the pasta and mix it with the sauce.\" You must put the steps in order.",
+        "v": "Write three signal words of order and the step that goes with each.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "First gaat met handen wassen (1p). Then gaat met pasta koken (1p). While, after of meanwhile met saus of afgieten (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Read the text: \"I like swimming, but I do not like cold water. Therefore, I only go to the pool in summer. Besides, the pool near my house is closed in winter.\" Your teacher asks about the links between sentences.",
+        "v": "Write what But, Therefore and Besides show.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "But toont een tegenstelling (1p). Therefore toont een gevolg (1p). Besides toont een extra punt (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "A classmate does not understand signal words. He says: \"Because and so are the same.\" You do not agree. You want to explain the difference with an example from daily life.",
+        "v": "Write two sentences in English with because and so.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Because geeft de reden (1p). So geeft het gevolg (1p). Twee correcte voorbeeldzinnen, zoals It rains, so I take an umbrella (1p)."
+       }
+      ]
      }
     ]
    },

@@ -760,6 +760,27 @@ var VAKKEN_VMBO = [
       "nOe": 5,
       "nBeg": 12,
       "hasSam": true
+     },
+     {
+      "id": "A4",
+      "lo": "en.A.4",
+      "gs": 2,
+      "naam": "Verbanden tussen zinnen en tekstdelen herkennen",
+      "beschrijving": "Je leert in een Engelse tekst verbanden tussen zinnen te herkennen aan signaalwoorden: volgorde, oorzaak en gevolg, tegenstelling, toevoeging, voorbeeld en conclusie, en je controleert welk verband een signaalwoord aangeeft.",
+      "ceStatus": "CE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Volgorde en gelijktijdigheid",
+       "Oorzaak en gevolg",
+       "Tegenstelling en keuze",
+       "Toevoeging en voorbeeld",
+       "Het verband controleren"
+      ],
+      "nSv": 27,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
      }
     ]
    },
