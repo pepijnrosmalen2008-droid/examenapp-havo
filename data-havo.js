@@ -84917,6 +84917,696 @@ var VAKKEN = [
       "t": "Optellen / aftrekken",
       "d": "evenveel decimalen als de waarde met de minste decimalen"
      }
+    ],
+    "leerdoelen": [
+     {
+      "id": "A1",
+      "lo": "na.A.1",
+      "gs": 2,
+      "naam": "Grootheden en eenheden",
+      "beschrijving": "Je onderscheidt grootheden en eenheden, rekent met SI-basiseenheden, voorvoegsels en machten van tien, rekent eenheden om (ook oppervlakte en volume) en controleert formules en antwoorden met de eenheden.",
+      "ceStatus": "CE",
+      "binas": "2, 3",
+      "val": "",
+      "onderwerpen": [
+       "Grootheid, eenheid en symbool",
+       "SI-basiseenheden",
+       "Voorvoegsels",
+       "Machten van tien",
+       "Eenheden omrekenen",
+       "Eenheden controleren in formules"
+      ],
+      "sam": "Een grootheid is wat je meet, een eenheid waarin; schrijf altijd een eenheid bij je antwoord. SI-basiseenheden: m, kg, s, A, K; afgeleid: N = kg·m/s², J = kg·m²/s². Voorvoegsels: n 10⁻⁹, µ 10⁻⁶, m 10⁻³, k 10³, M 10⁶, G 10⁹. Wetenschappelijke notatie: één cijfer vóór de komma; bij vermenigvuldigen exponenten optellen, bij delen aftrekken. km/h ÷ 3,6 = m/s; 1 m² = 10⁴ cm²; 1 L = 10⁻³ m³. Met eenhedencontrole spoor je fouten op.",
+      "begrippen": [
+       {
+        "t": "Grootheid",
+        "d": "Meetbare eigenschap, zoals massa, tijd of vermogen, met een eigen symbool."
+       },
+       {
+        "t": "Eenheid",
+        "d": "Maat waarin je een grootheid uitdrukt, zoals kilogram, seconde of watt."
+       },
+       {
+        "t": "SI-eenheid",
+        "d": "Eenheid uit het internationale stelsel; de basiseenheden zijn onder meer meter, kilogram, seconde, ampère en kelvin."
+       },
+       {
+        "t": "Basiseenheid",
+        "d": "Een van de zeven SI-eenheden waaruit alle andere eenheden zijn opgebouwd."
+       },
+       {
+        "t": "Afgeleide eenheid",
+        "d": "Eenheid die is samengesteld uit basiseenheden, zoals de newton (kg·m/s²) en de joule (kg·m²/s²)."
+       },
+       {
+        "t": "Voorvoegsel",
+        "d": "Letter voor een eenheid die een macht van tien aangeeft, zoals milli (10⁻³) of mega (10⁶)."
+       },
+       {
+        "t": "Wetenschappelijke notatie",
+        "d": "Getal met één cijfer vóór de komma, vermenigvuldigd met een macht van tien."
+       },
+       {
+        "t": "Macht van tien",
+        "d": "Getal als 10⁴ of 10⁻³; bij vermenigvuldigen tel je de exponenten op, bij delen trek je ze af."
+       },
+       {
+        "t": "Kelvin",
+        "d": "SI-eenheid van temperatuur; T (K) = t (°C) + 273."
+       },
+       {
+        "t": "Omrekenfactor",
+        "d": "Getal waarmee je van de ene eenheid naar de andere gaat, zoals 3,6 voor km/h naar m/s."
+       },
+       {
+        "t": "Eenhedencontrole",
+        "d": "Een formule controleren door alleen de eenheden in te vullen en na te gaan of de juiste eenheid uitkomt."
+       }
+      ],
+      "sv": [
+       {
+        "v": "In \"de massa is 5,0 kg\": wat is de grootheid en wat de eenheid?",
+        "o": [
+         "Grootheid 5,0, eenheid kg",
+         "Grootheid kilogram, eenheid massa",
+         "Grootheid massa, eenheid kilogram",
+         "Grootheid massa, eenheid de 5,0"
+        ],
+        "c": 2,
+        "d": 1,
+        "s": 0,
+        "u": "Grootheid = wat je meet; eenheid = waarin je het uitdrukt.",
+        "uo": [
+         "Koos je 5,0 als grootheid? Dat is de getalwaarde. Een grootheid is een meetbare eigenschap, zoals massa, lengte of tijd.",
+         "Koos je kilogram als grootheid? Kilogram is de eenheid, de maat die je gebruikt. De eigenschap die je meet, de massa, is de grootheid.",
+         "Klopt: de grootheid is wat je meet, hier de massa. De eenheid is de maat waarin je het uitdrukt, hier de kilogram. Het getal 5,0 is de waarde.",
+         "Koos je 5,0 als eenheid? Het getal is de waarde. De eenheid is het woord of symbool erachter: kg. Samen vormen getal en eenheid de meetwaarde."
+        ],
+        "uh": "Grootheid = wat, eenheid = waarin."
+       },
+       {
+        "v": "Welk symbool en welke eenheid horen bij de grootheid vermogen?",
+        "o": [
+         "W, in joule (J)",
+         "P, in watt (W)",
+         "E, in watt (W)",
+         "v, in meter per seconde"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 0,
+        "u": "Vermogen P [W]; energie E [J].",
+        "uo": [
+         "Koos je W in joule? W wordt soms gebruikt voor arbeid, in joule. Vermogen is P, met de eenheid watt.",
+         "Klopt: vermogen heeft het symbool P en de eenheid watt (W). Let op: W is hier het symbool van de eenheid, niet van de grootheid.",
+         "Koos je E in watt? E is het symbool voor energie, met de eenheid joule. Vermogen is energie per seconde: P in watt.",
+         "Koos je v? Dat is het symbool van snelheid, in m/s. Vermogen heeft het symbool P en geeft aan hoeveel energie er per seconde wordt omgezet."
+        ],
+        "uh": "Vermogen: P in W."
+       },
+       {
+        "v": "Waarom is \"de lengte is 3,0\" geen volledig antwoord?",
+        "o": [
+         "Er ontbreekt een eenheid",
+         "Er moeten meer significante cijfers bij",
+         "Een lengte schrijf je altijd met een macht van tien",
+         "Het symbool l ontbreekt"
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 0,
+        "u": "Waarde zonder eenheid is betekenisloos.",
+        "uo": [
+         "Klopt: een getal zonder eenheid zegt niets. 3,0 mm en 3,0 km verschillen een miljoen keer. Op het examen kost een vergeten eenheid een punt.",
+         "Koos je meer significante cijfers? 3,0 heeft er al twee, en dat kan prima. Het probleem is dat de eenheid ontbreekt.",
+         "Koos je macht van tien? Die is alleen nodig bij heel grote of kleine getallen. Het probleem is de ontbrekende eenheid.",
+         "Koos je symbool? Het woord \"lengte\" zegt al welke grootheid het is, dus het symbool l is niet nodig. Wat ontbreekt is de eenheid."
+        ],
+        "uh": "Altijd een eenheid.",
+        "ctx": "Bij een practicum meten drie leerlingen de lengte van een slinger. In hun verslagen staat: \"de lengte is 3,0\", \"l = 30 cm\" en \"lengte = 0,30 m\". De docent geeft de eerste leerling geen punt voor die meting, ook al heeft die precies hetzelfde gemeten als de andere twee."
+       },
+       {
+        "v": "Welke van deze is géén grootheid?",
+        "o": [
+         "Tijd",
+         "Temperatuur",
+         "Kracht",
+         "Seconde"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 0,
+        "u": "Seconde is een eenheid (van tijd).",
+        "uo": [
+         "Koos je tijd? Tijd is de grootheid die je meet; de seconde is de eenheid waarin je haar uitdrukt, net als de minuut of het uur.",
+         "Koos je temperatuur? Temperatuur is een meetbare eigenschap, dus een grootheid, met de eenheid kelvin of graden Celsius.",
+         "Koos je kracht? Kracht is een meetbare eigenschap, dus een grootheid, met symbool F en eenheid newton (N).",
+         "Klopt: de seconde is een eenheid, de maat waarin je tijd uitdrukt. Temperatuur, kracht en tijd zijn grootheden."
+        ],
+        "uh": "Seconde = eenheid."
+       },
+       {
+        "v": "Welke grootheid meet de energiemaatschappij in kWh?",
+        "o": [
+         "Stroomsterkte",
+         "Vermogen",
+         "Energie",
+         "Spanning"
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 0,
+        "u": "kWh = kW × h = energie (3,6 MJ).",
+        "uo": [
+         "Koos je stroomsterkte? Die meet je in ampère. De rekening gaat over de energie die je in een jaar hebt gebruikt.",
+         "Koos je vermogen? Vermogen meet je in watt of kilowatt. Door met uren te vermenigvuldigen krijg je energie: hoeveel je in totaal hebt verbruikt.",
+         "Klopt: een kilowattuur is een vermogen (kW) maal een tijd (h), en dat is energie. 1 kWh = 1000 W × 3600 s = 3,6·10⁶ J.",
+         "Koos je spanning? De spanning van het stopcontact is steeds 230 V. Je betaalt voor de energie, in kWh."
+        ],
+        "uh": "kWh = energie.",
+        "ctx": "Op de jaarrekening van een gezin staat een verbruik van 2900 kWh, voor 30 cent per kWh. De zoon zegt dat kWh de eenheid van vermogen is, omdat er \"watt\" in staat. Zijn zus denkt dat het om iets anders gaat, omdat er ook \"uur\" in staat."
+       },
+       {
+        "v": "Wat is de SI-eenheid van massa?",
+        "o": [
+         "Gram",
+         "Kilogram",
+         "Newton",
+         "Metrische ton"
+        ],
+        "c": 1,
+        "d": 1,
+        "s": 1,
+        "u": "SI-basiseenheid massa: kg.",
+        "uo": [
+         "Koos je gram? Gram is wel een eenheid van massa, maar geen SI-basiseenheid. In formules reken je met kilogram.",
+         "Klopt: de SI-basiseenheid van massa is de kilogram. Bijzonder is dat er al een voorvoegsel in zit: kilo.",
+         "Koos je newton? Dat is de eenheid van kracht, niet van massa. Gewicht in newton is iets anders dan massa in kilogram.",
+         "Koos je ton? Een ton is 1000 kg, handig voor grote massa's zoals vrachtwagens, maar geen SI-eenheid. In formules reken je met kilogram."
+        ],
+        "uh": "Massa: kg."
+       },
+       {
+        "v": "Welke drie zijn allemaal SI-basiseenheden?",
+        "o": [
+         "meter, kilogram, seconde",
+         "meter, gram, minuut",
+         "kilometer, kilogram, uur",
+         "centimeter, gram, seconde"
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 1,
+        "u": "Basis: m, kg, s, A, K, mol, cd.",
+        "uo": [
+         "Klopt: meter (lengte), kilogram (massa) en seconde (tijd) zijn SI-basiseenheden. Andere zijn ampère, kelvin, mol en candela.",
+         "Koos je gram en minuut? Die zijn wel eenheden, maar niet de SI-basiseenheden. SI gebruikt kilogram en seconde.",
+         "Koos je kilometer en uur? Handig in het verkeer, maar geen SI-basiseenheden. Reken in formules met meter en seconde.",
+         "Koos je centimeter en gram? Dat is een oud stelsel dat je soms nog tegenkomt. In het SI-stelsel zijn de basiseenheden meter en kilogram."
+        ],
+        "uh": "SI: m, kg, s."
+       },
+       {
+        "v": "Waarom moet je bij het berekenen van een kracht met F = m · a de massa in kilogram invullen en niet in gram?",
+        "o": [
+         "In gram zou de kracht negatief worden",
+         "Gram is te klein om mee te rekenen",
+         "Kilogram geeft meer significante cijfers",
+         "Een newton is kg·m/s²"
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 1,
+        "u": "1 N = 1 kg·m/s²: SI-eenheden in, SI-eenheid uit.",
+        "uo": [
+         "Koos je negatief? Een massa in gram is gewoon een groter getal, niet negatief. De uitkomst is dan duizend keer te groot.",
+         "Koos je te klein? Je kunt best met kleine getallen rekenen. Het gaat erom dat de eenheden in de formule op elkaar passen.",
+         "Koos je meer significante cijfers? Het aantal significante cijfers verandert niet door een eenheid om te rekenen.",
+         "Klopt: 1 N = 1 kg·m/s². Vul je alles in SI-basiseenheden in, dan komt de kracht vanzelf in newton uit. Met gram krijg je een getal dat duizend keer te groot is."
+        ],
+        "uh": "Reken in SI-eenheden.",
+        "ctx": "Een leerling berekent de kracht op een blokje van 250 g dat een versnelling van 2,0 m/s² krijgt. Ze vult in: F = 250 × 2,0 = 500 N. Haar buurman vult 0,250 kg in en vindt 0,50 N. Ze vragen zich af wie gelijk heeft."
+       },
+       {
+        "v": "Welke SI-eenheid hoort bij temperatuur in natuurkundige formules?",
+        "o": [
+         "Graden Fahrenheit",
+         "Graden Celsius",
+         "Kelvin",
+         "Joule"
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 1,
+        "u": "T in K; T(K) = t(°C) + 273.",
+        "uo": [
+         "Koos je Fahrenheit? Die schaal wordt vooral in de Verenigde Staten gebruikt en is geen SI-eenheid. In formules gebruik je kelvin.",
+         "Koos je Celsius? Die gebruik je dagelijks, maar de SI-eenheid is kelvin. In sommige formules moet je echt in kelvin rekenen.",
+         "Klopt: de SI-eenheid van temperatuur is de kelvin. 0 °C is 273 K. Een temperatuurverschil is in kelvin en graden Celsius even groot.",
+         "Koos je joule? Dat is de eenheid van energie. Temperatuur en energie zijn verschillende grootheden, ook al stijgt de temperatuur als je energie toevoert."
+        ],
+        "uh": "Temperatuur: K."
+       },
+       {
+        "v": "Wat betekent het voorvoegsel mega (M)?",
+        "o": [
+         "× 10³",
+         "× 10⁶",
+         "× 10⁹",
+         "× 10⁻⁶"
+        ],
+        "c": 1,
+        "d": 1,
+        "s": 2,
+        "u": "kilo 10³, mega 10⁶, giga 10⁹.",
+        "uo": [
+         "Koos je 10³? Dat is kilo, zoals in kilometer. Mega is nog duizend keer zo groot: een miljoen.",
+         "Klopt: mega betekent een miljoen, 10⁶. 5 MW is dus 5·10⁶ W.",
+         "Koos je 10⁹? Dat is giga, zoals in gigabyte. Mega is duizend keer zo klein: 10⁶.",
+         "Koos je 10⁻⁶? Dat is micro (µ), een miljoenste. Mega is juist een miljoen: een positieve macht, geen negatieve."
+        ],
+        "uh": "Mega = 10⁶."
+       },
+       {
+        "v": "Hoeveel seconde is 5,0 µs?",
+        "o": [
+         "5,0 · 10⁻⁶ s",
+         "5,0 · 10⁻³ s",
+         "5,0 · 10⁶ s",
+         "5,0 · 10⁻⁹ s"
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 2,
+        "u": "micro = 10⁻⁶.",
+        "uo": [
+         "Klopt: µ (micro) betekent 10⁻⁶. 5,0 µs = 5,0·10⁻⁶ s.",
+         "Koos je 10⁻³? Dat is milli, zoals in millimeter. Micro is nog duizend keer zo klein: 10⁻⁶.",
+         "Koos je 10⁶? Dat is mega, een miljoen. Micro is een miljoenste, dus een negatieve macht: 10⁻⁶.",
+         "Koos je 10⁻⁹? Dat is nano, zoals in nanometer. Micro is duizend keer groter dan nano: 10⁻⁶."
+        ],
+        "uh": "Micro = 10⁻⁶."
+       },
+       {
+        "v": "Hoeveel watt levert de windmolen?",
+        "o": [
+         "3,5 · 10⁻⁶ W",
+         "3,5 · 10³ W",
+         "3,5 · 10⁹ W",
+         "3,5 · 10⁶ W"
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 2,
+        "u": "3,5 MW = 3,5·10⁶ W.",
+        "uo": [
+         "Koos je 10⁻⁶? Dan heb je M verward met µ of m. Een hoofdletter M betekent mega, een miljoen.",
+         "Koos je 10³? Dat zou 3,5 kW zijn, ongeveer wat een waterkoker en een oven samen gebruiken. Een grote windmolen levert duizend keer meer.",
+         "Koos je 10⁹? Dat is 3,5 GW, het vermogen van een paar grote centrales. M is mega.",
+         "Klopt: M is mega, 10⁶. 3,5 MW = 3,5·10⁶ W. Let op het verschil tussen M (mega) en m (milli): één hoofdletter scheelt een factor 10⁹."
+        ],
+        "uh": "M = mega, m = milli.",
+        "ctx": "Op een informatiebord bij een windpark staat dat elke molen een vermogen heeft van 3,5 MW. Een leerling schrijft in haar verslag \"3,5 mW\" en rekent verder met 3,5·10⁻³ W. Haar uitkomst voor het aantal huishoudens dat de molen van stroom voorziet, klopt van geen kant."
+       },
+       {
+        "v": "Welke lengte is het kleinst?",
+        "o": [
+         "4,5 µm",
+         "0,45 mm",
+         "450 nm",
+         "0,045 cm"
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 2,
+        "u": "nm 10⁻⁹ < µm 10⁻⁶ < mm 10⁻³.",
+        "uo": [
+         "Koos je 4,5 µm? Dat is 4,5·10⁻⁶ m, tien keer groter dan 450 nm = 4,5·10⁻⁷ m. Let op het verschil tussen micro en nano.",
+         "Koos je 0,45 mm? Dat is 4,5·10⁻⁴ m, duizend keer groter dan 450 nm. Zet alles om naar meter voordat je vergelijkt.",
+         "Klopt: 450 nm = 4,5·10⁻⁷ m. 4,5 µm = 4,5·10⁻⁶ m, 0,45 mm = 4,5·10⁻⁴ m en 0,045 cm = 4,5·10⁻⁴ m. De nanometer-waarde is het kleinst.",
+         "Koos je 0,045 cm? Dat is 0,45 mm, gelijk aan 4,5·10⁻⁴ m. Zet alles om naar meter om te vergelijken."
+        ],
+        "uh": "Omrekenen naar m, dan vergelijken."
+       },
+       {
+        "v": "Een atoom heeft een diameter van ongeveer 0,1 nm. Hoeveel meter is dat?",
+        "o": [
+         "1 · 10⁻⁹ m",
+         "1 · 10⁻¹⁰ m",
+         "1 · 10⁻⁸ m",
+         "1 · 10⁻⁷ m"
+        ],
+        "c": 1,
+        "d": 1,
+        "s": 2,
+        "u": "0,1 × 10⁻⁹ = 10⁻¹⁰.",
+        "uo": [
+         "Koos je 10⁻⁹? Dat is 1 nm. Een atoom is tien keer kleiner: 0,1 nm = 0,1·10⁻⁹ m, en dat schrijf je als 1·10⁻¹⁰ m.",
+         "Klopt: nano is 10⁻⁹, dus 0,1 nm = 0,1·10⁻⁹ m = 1·10⁻¹⁰ m. Tien miljard atomen naast elkaar zijn samen een meter.",
+         "Koos je 10⁻⁸? Dat is 10 nm, honderd keer te groot voor een atoom. Zo groot zijn grote moleculen, zoals eiwitten.",
+         "Koos je 10⁻⁷? Dat is 100 nm, ongeveer de grootte van een virus. Een atoom is duizend keer kleiner."
+        ],
+        "uh": "Nano = 10⁻⁹."
+       },
+       {
+        "v": "Hoe schrijf je 0,00052 m in wetenschappelijke notatie?",
+        "o": [
+         "5,2 · 10⁻⁴ m",
+         "5,2 · 10⁴ m",
+         "52 · 10⁻⁵ m",
+         "0,52 · 10⁻³ m"
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 3,
+        "u": "Eén cijfer voor de komma: 5,2 · 10⁻⁴.",
+        "uo": [
+         "Klopt: in wetenschappelijke notatie staat er precies één cijfer (niet nul) vóór de komma. De komma schuift vier plaatsen naar rechts: 5,2·10⁻⁴ m.",
+         "Koos je 10⁴? Dat zou 52 000 m zijn, 52 kilometer. Een getal kleiner dan 1 krijgt in wetenschappelijke notatie een negatieve macht.",
+         "Koos je 52 · 10⁻⁵? De waarde klopt, maar in wetenschappelijke notatie staat er maar één cijfer vóór de komma.",
+         "Koos je 0,52 · 10⁻³? Ook die waarde klopt, maar er moet een cijfer van 1 tot en met 9 vóór de komma staan."
+        ],
+        "uh": "Eén cijfer vóór de komma."
+       },
+       {
+        "v": "Reken uit en schrijf in wetenschappelijke notatie: (3,0 · 10⁸) × (2,0 · 10⁻³).",
+        "o": [
+         "1,5 · 10¹¹",
+         "6,0 · 10¹¹",
+         "6,0 · 10⁻²⁴",
+         "6,0 · 10⁵"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 3,
+        "u": "Getallen × , machten + : 8 + (−3) = 5.",
+        "uo": [
+         "Koos je 1,5 · 10¹¹? Dan heb je gedeeld in plaats van vermenigvuldigd: 3,0 / 2,0 = 1,5 en 8 − (−3) = 11. De vraag is een product.",
+         "Koos je 10¹¹? Dan heb je de machten afgetrokken: 8 − (−3) = 11. Bij vermenigvuldigen tel je ze op: 8 + (−3) = 5.",
+         "Koos je 10⁻²⁴? Dan heb je de machten vermenigvuldigd. Bij vermenigvuldigen van machten van tien tel je de exponenten op.",
+         "Klopt: vermenigvuldig de getallen (3,0 × 2,0 = 6,0) en tel de machten op (8 + −3 = 5): 6,0·10⁵."
+        ],
+        "uh": "Vermenigvuldigen: exponenten optellen."
+       },
+       {
+        "v": "Hoeveel water verdampt er volgens deze schatting per seconde?",
+        "o": [
+         "5,0 · 10⁴ kg",
+         "2,0 · 10⁻⁴ kg",
+         "2,0 · 10⁴ kg",
+         "2,0 · 10¹⁴ kg"
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 3,
+        "u": "1,0·10⁹ / 5,0·10⁴ = 0,20·10⁵ = 2,0·10⁴.",
+        "uo": [
+         "Koos je 5,0 · 10⁴? Dan heb je het getal van de tijd overgenomen. Hoeveel per seconde vind je door de massa te delen door de tijd.",
+         "Koos je 10⁻⁴? Dan heb je de machten van tien verkeerd afgetrokken (4 − 9 in plaats van 9 − 4). De macht in de teller min die in de noemer.",
+         "Klopt: 1,0·10⁹ kg / 5,0·10⁴ s = 0,20·10⁵ kg/s = 2,0·10⁴ kg per seconde.",
+         "Koos je 10¹⁴? Dan heb je vermenigvuldigd en de machten opgeteld. Per seconde betekent delen door de tijd, dus de machten aftrekken."
+        ],
+        "uh": "Delen: exponenten aftrekken.",
+        "ctx": "Een leerling schat dat er op een zonnige dag uit het IJsselmeer in totaal 1,0·10⁹ kg water verdampt, verspreid over ongeveer 14 uur. Ze rondt de tijd af op 5,0·10⁴ s. Ze wil weten hoeveel kilogram water er gemiddeld per seconde verdampt."
+       },
+       {
+        "v": "Welke van deze waarden is het grootst?",
+        "o": [
+         "9 · 10⁻³",
+         "3 · 10⁻²",
+         "1 · 10⁻⁴",
+         "8 · 10⁻⁵"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 3,
+        "u": "Kijk eerst naar de macht: −2 > −3 > −4 > −5.",
+        "uo": [
+         "Koos je 9 · 10⁻³? Het getal 9 is groter, maar de macht −3 maakt het tien keer kleiner dan 10⁻²: 0,009 is minder dan 0,03.",
+         "Klopt: 3·10⁻² = 0,03. 9·10⁻³ = 0,009, 1·10⁻⁴ = 0,0001 en 8·10⁻⁵ = 0,00008. De minst negatieve macht wint.",
+         "Koos je 1 · 10⁻⁴? Dat is 0,0001, driehonderd keer kleiner dan 0,03. De macht −4 maakt het veel kleiner dan 10⁻².",
+         "Koos je 8 · 10⁻⁵? De 8 lijkt groot, maar 10⁻⁵ maakt er 0,00008 van, het kleinste van de vier."
+        ],
+        "uh": "Eerst de macht vergelijken."
+       },
+       {
+        "v": "Hoeveel m/s is 72 km/h?",
+        "o": [
+         "20 m/s",
+         "72 m/s",
+         "259 m/s",
+         "7,2 m/s"
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 4,
+        "u": "km/h ÷ 3,6 = m/s.",
+        "uo": [
+         "Klopt: 72 km/h = 72 000 m per 3600 s = 20 m/s. Snel: deel door 3,6.",
+         "Koos je 72 m/s? Dan heb je niet omgerekend. Een kilometer per uur is veel minder dan een meter per seconde.",
+         "Koos je 259 m/s? Dan heb je met 3,6 vermenigvuldigd. Dat doe je van m/s naar km/h. Van km/h naar m/s deel je door 3,6.",
+         "Koos je 7,2 m/s? Dan heb je door 10 gedeeld. De factor is 3,6, omdat 1 km/h = 1000 m / 3600 s."
+        ],
+        "uh": "km/h → m/s: ÷ 3,6."
+       },
+       {
+        "v": "Hoeveel m³ is 250 mL?",
+        "o": [
+         "2,5 · 10⁻⁶ m³",
+         "2,5 · 10⁻¹ m³",
+         "0,25 m³",
+         "2,5 · 10⁻⁴ m³"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 4,
+        "u": "1 mL = 1 cm³ = 10⁻⁶ m³.",
+        "uo": [
+         "Koos je 10⁻⁶? Dat is de omrekening van 1 mL, niet van 250 mL. Vermenigvuldig nog met 250: 250·10⁻⁶ = 2,5·10⁻⁴ m³.",
+         "Koos je 2,5 · 10⁻¹? Dat is 0,25 m³, een kist van ruim 60 bij 60 bij 60 cm. Een kopje is veel kleiner.",
+         "Koos je 0,25 m³? Dan heb je mL naar L omgerekend en gedacht dat 1 L = 1 m³. Maar 1 L = 1 dm³ = 10⁻³ m³.",
+         "Klopt: 1 mL = 1 cm³ = 10⁻⁶ m³. 250 mL = 250·10⁻⁶ m³ = 2,5·10⁻⁴ m³."
+        ],
+        "uh": "mL = cm³ = 10⁻⁶ m³."
+       },
+       {
+        "v": "Hoeveel cm² is een oppervlakte van 0,50 m²?",
+        "o": [
+         "5,0 · 10⁵ cm²",
+         "50 cm²",
+         "5,0 · 10³ cm²",
+         "5,0 · 10¹ cm²"
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 4,
+        "u": "1 m² = (100 cm)² = 10⁴ cm².",
+        "uo": [
+         "Koos je 10⁵? Dan heb je met 10⁶ vermenigvuldigd, zoals bij volume. Oppervlakte heeft twee dimensies: 10².",
+         "Koos je 50 cm²? Dan heb je met 100 vermenigvuldigd, zoals bij lengte. Bij oppervlakte moet je de factor kwadrateren.",
+         "Klopt: 1 m = 100 cm, dus 1 m² = 100 × 100 = 10⁴ cm². 0,50 m² = 0,50 × 10⁴ = 5,0·10³ cm².",
+         "Koos je 5,0 · 10¹? Dat is weer 50 cm², alleen anders geschreven. De factor is 10⁴, niet 10²."
+        ],
+        "uh": "Oppervlakte: factor kwadrateren.",
+        "ctx": "Een leerling berekent de druk van een boek op tafel. Het boek ligt op een oppervlak van 0,50 m². In een tabel staat de druk per cm², en ze moet de oppervlakte daarom omrekenen naar vierkante centimeters. Haar buurman zegt: \"Gewoon keer 100, net als bij meters naar centimeters.\""
+       },
+       {
+        "v": "De dichtheid van water is 1,0 g/cm³. Hoeveel is dat in kg/m³?",
+        "o": [
+         "1,0 kg/m³",
+         "1,0 · 10³ kg/m³",
+         "1,0 · 10⁶ kg/m³",
+         "1,0 · 10⁻³ kg/m³"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 4,
+        "u": "g → kg: ÷ 1000; cm³ → m³: × 10⁶ in de noemer → × 1000.",
+        "uo": [
+         "Koos je 1,0? Dan heb je niets omgerekend. Een kubieke meter water is een flinke bak, en die weegt veel meer dan 1 kg: 1000 kg.",
+         "Klopt: 1 g = 10⁻³ kg en 1 cm³ = 10⁻⁶ m³. 1,0 g/cm³ = 10⁻³ / 10⁻⁶ = 10³ kg/m³. Een kubieke meter water weegt 1000 kg.",
+         "Koos je 10⁶? Dan heb je alleen de cm³ omgerekend en de gram vergeten om te zetten naar kilogram.",
+         "Koos je 10⁻³? Dan heb je de verkeerde kant op gerekend. Een kubieke meter water weegt 1000 kg, dus het getal moet groter worden."
+        ],
+        "uh": "g/cm³ × 1000 = kg/m³."
+       },
+       {
+        "v": "Hoe groot is de snelheid van de kogel?",
+        "o": [
+         "3,0 · 10² m/s",
+         "30 m/s",
+         "3,0 · 10⁻⁴ m/s",
+         "4,8 · 10⁻⁵ m/s"
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 4,
+        "u": "v = 0,12 m / 4,0·10⁻⁴ s.",
+        "uo": [
+         "Klopt: zet eerst om naar SI: 12 cm = 0,12 m en 0,40 ms = 4,0·10⁻⁴ s. v = 0,12 / 4,0·10⁻⁴ = 3,0·10² m/s.",
+         "Koos je 30 m/s? Dan heb je één omrekening vergeten, bijvoorbeeld de centimeter of de milliseconde. Zet beide om naar meter en seconde.",
+         "Koos je 3,0 · 10⁻⁴ m/s? Dan heb je de tijd door de afstand gedeeld. Snelheid is afstand gedeeld door tijd.",
+         "Koos je 4,8 · 10⁻⁵ m/s? Dan heb je afstand en tijd vermenigvuldigd. Voor een snelheid deel je de afstand door de tijd."
+        ],
+        "uh": "Eerst SI, dan rekenen.",
+        "ctx": "Met een hogesnelheidscamera filmt een leerling een kogel van een luchtbuks. Tussen twee beelden legt de kogel 12 cm af. De camera maakt elke 0,40 ms een beeld. Hij wil de snelheid in m/s weten."
+       },
+       {
+        "v": "Welke combinatie van SI-eenheden is gelijk aan de newton?",
+        "o": [
+         "kg/m³",
+         "kg · m/s",
+         "kg · m²/s²",
+         "kg · m/s²"
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 5,
+        "u": "F = m · a: kg × m/s².",
+        "uo": [
+         "Koos je kg/m³? Dat is de eenheid van dichtheid: hoeveel kilogram er in een kubieke meter zit. Daar zit geen seconde in, en die hoort bij een kracht wel.",
+         "Koos je kg · m/s? Dat is de eenheid van impuls, massa maal snelheid. Kracht is massa maal versnelling.",
+         "Koos je kg · m²/s²? Dat is de joule, de eenheid van energie: kracht maal afstand.",
+         "Klopt: uit F = m · a volgt 1 N = 1 kg · m/s²."
+        ],
+        "uh": "N = kg·m/s²."
+       },
+       {
+        "v": "Een leerling vindt voor een snelheid de eenheid m/s². Wat weet je zeker?",
+        "o": [
+         "Het antwoord is goed, als het getal klopt",
+         "De snelheid is heel groot",
+         "Er zit een fout in de berekening",
+         "Hij moet nog door 3,6 delen"
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 5,
+        "u": "Snelheid moet m/s zijn; m/s² is versnelling.",
+        "uo": [
+         "Koos je goed? Met de verkeerde eenheid kan het antwoord niet goed zijn, ook als het getal toevallig klopt.",
+         "Koos je heel groot? De eenheid zegt niets over de grootte. Hij laat zien dat er iets mis is met de berekening.",
+         "Klopt: een snelheid heeft altijd de eenheid m/s. Komt er m/s² uit, dan heb je ergens een verkeerde formule of een fout gemaakt. Eenheden controleren vangt zulke fouten.",
+         "Koos je door 3,6 delen? Dat is voor km/h naar m/s. Het probleem is dat m/s² helemaal geen eenheid van snelheid is."
+        ],
+        "uh": "Verkeerde eenheid = fout."
+       },
+       {
+        "v": "Welke formule voor de valtijd t van een voorwerp vanaf hoogte h kan kloppen, alleen op basis van de eenheden?",
+        "o": [
+         "t = 2h · g",
+         "t = √(2h / g)",
+         "t = √(g / 2h)",
+         "t = h / g"
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 5,
+        "u": "√(m / (m/s²)) = √(s²) = s.",
+        "uo": [
+         "Koos je 2h · g? Dan krijg je m · m/s² = m²/s². Dat is geen tijd, en bovendien zou een grotere g dan een langere valtijd geven.",
+         "Klopt: h in m en g in m/s². h / g heeft de eenheid m / (m/s²) = s², en de wortel daaruit is s. Alleen deze formule geeft een tijd.",
+         "Koos je √(g / 2h)? Dan krijg je √(1/s²) = 1/s. Dat is de eenheid van een frequentie, geen tijd.",
+         "Koos je h / g? Dan krijg je s², het kwadraat van een tijd. Er ontbreekt een wortel, en ook de factor 2 uit de valformule."
+        ],
+        "uh": "Eenhedencontrole: komt er s uit?",
+        "ctx": "Een leerling weet niet meer welke formule hoort bij de tijd die een steen nodig heeft om vanaf hoogte h naar beneden te vallen. Ze herinnert zich alleen dat de valversnelling g = 9,81 m/s² erin zit. Ze besluit de eenheden van vier mogelijke formules te controleren."
+       },
+       {
+        "v": "Welke eenheid heeft de veerconstante C in F = C · u?",
+        "o": [
+         "N/m",
+         "N · m",
+         "m/N",
+         "N"
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 5,
+        "u": "C = F / u: N / m.",
+        "uo": [
+         "Klopt: C = F / u, met F in newton en u in meter. De eenheid is dus N/m.",
+         "Koos je N · m? Dat is de eenheid van een moment of een energie (joule). Bij C deel je kracht door uitrekking.",
+         "Koos je m/N? Dat is het omgekeerde. Een stugge veer heeft een grote C: er zijn veel newton nodig voor elke meter uitrekking.",
+         "Koos je N? Dat is de eenheid van kracht zelf. C geeft aan hoeveel kracht er per meter uitrekking nodig is."
+        ],
+        "uh": "C in N/m.",
+        "ctx": "In het boek staat de wet van Hooke als F = C · u, met F de veerkracht en u de uitrekking van de veer. Een leerling meet bij een veer een kracht van 2,0 N bij een uitrekking van 0,040 m. Hij moet de veerconstante met de juiste eenheid opschrijven."
+       },
+       {
+        "v": "Hoe schrijf je de joule in SI-basiseenheden?",
+        "o": [
+         "N/m",
+         "kg · m/s²",
+         "kg · m/s",
+         "kg · m²/s²"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 5,
+        "u": "J = N · m = kg·m/s² · m.",
+        "uo": [
+         "Koos je N/m? Dat is de eenheid van een veerconstante. Energie is newton maal meter, niet gedeeld door meter.",
+         "Koos je kg · m/s²? Dat is de newton, de eenheid van kracht. Energie is kracht maal afstand, dus er komt nog een meter bij.",
+         "Koos je kg · m/s? Dat is de eenheid van impuls: massa maal snelheid. Energie heeft een kwadraat in meter en seconde.",
+         "Klopt: arbeid is kracht maal afstand. 1 J = 1 N · m = 1 kg·m/s² · m = 1 kg·m²/s²."
+        ],
+        "uh": "J = kg·m²/s²."
+       }
+      ],
+      "oe": [
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een sprinter loopt de 100 m in 10,0 s. Een cheeta haalt een topsnelheid van 110 km/h. Een journalist schrijft dat de sprinter \"bijna half zo snel is als een cheeta\".",
+        "v": "Bereken de gemiddelde snelheid van de sprinter in km/h en beoordeel de bewering van de journalist.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "v = 100 / 10,0 = 10,0 m/s (1p). 10,0 × 3,6 = 36 km/h (1p). 36 is ongeveer een derde van 110, dus niet bijna de helft; de bewering klopt niet (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een aquarium is 80 cm lang, 40 cm breed en 50 cm hoog en wordt helemaal met water gevuld. De dichtheid van water is 1,0 g/cm³. De eigenaar wil weten of de plank waar het op staat 200 kg kan dragen.",
+        "v": "Bereken het volume in m³ en de massa van het water in kg, en beoordeel of de plank sterk genoeg is als het lege aquarium 25 kg weegt.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "V = 0,80 × 0,40 × 0,50 = 0,16 m³ (1p). ρ = 1,0·10³ kg/m³, m = 1,0·10³ × 0,16 = 1,6·10² kg (1p). Totaal 160 + 25 = 185 kg, minder dan 200 kg: de plank is sterk genoeg (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Licht doet over de afstand van de zon naar de aarde ongeveer 500 s. De lichtsnelheid is 3,00·10⁸ m/s. Een leerling schrijft het antwoord op als \"150 000 000 000 m\" en een andere als \"1,5·10⁸ km\".",
+        "v": "Bereken de afstand zon-aarde in meter in wetenschappelijke notatie en ga na of de antwoorden van beide leerlingen kloppen.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "s = 3,00·10⁸ × 500 = 1,50·10¹¹ m (1p). 150 000 000 000 m is hetzelfde getal, maar onhandig geschreven (1p). 1,5·10⁸ km = 1,5·10¹¹ m, dus ook dat klopt (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Voor de kinetische energie bestaan in een oud boek twee formules: Ek = ½ · m · v² en Ek = ½ · m · v. Een leerling wil met de eenheden nagaan welke goed is. De eenheid van energie is de joule, 1 J = 1 kg·m²/s².",
+        "v": "Laat met de eenheden zien welke formule klopt.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "½ · m · v²: kg · (m/s)² = kg·m²/s² = J (1p). ½ · m · v: kg · m/s = kg·m/s, dat is geen joule (1p). Alleen de eerste formule kan kloppen (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een wifi-router zendt uit op 5,0 GHz. Een leerling rekent de golflengte uit met λ = c / f en typt op zijn rekenmachine: 3,00 × 10 ^ 8 ÷ 5,0 × 10 ^ 9. Hij krijgt 6,0·10¹⁶ m, wat hem erg veel lijkt.",
+        "v": "Bereken de juiste golflengte en leg uit wat er bij het intypen fout ging.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "λ = 3,00·10⁸ / 5,0·10⁹ = 0,060 m = 6,0 cm (2p). De rekenmachine deelt alleen door 5,0 en vermenigvuldigt daarna met 10⁹, in plaats van te delen door 5,0·10⁹; met haakjes of de EXP-toets gaat het goed (1p)."
+       }
+      ]
+     }
     ]
    },
    {

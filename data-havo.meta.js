@@ -2123,7 +2123,31 @@ var VAKKEN = [
     "nSv": 92,
     "nOe": 3,
     "nBeg": 17,
-    "hasSam": true
+    "hasSam": true,
+    "leerdoelen": [
+     {
+      "id": "A1",
+      "lo": "na.A.1",
+      "gs": 2,
+      "naam": "Grootheden en eenheden",
+      "beschrijving": "Je onderscheidt grootheden en eenheden, rekent met SI-basiseenheden, voorvoegsels en machten van tien, rekent eenheden om (ook oppervlakte en volume) en controleert formules en antwoorden met de eenheden.",
+      "ceStatus": "CE",
+      "binas": "2, 3",
+      "val": "",
+      "onderwerpen": [
+       "Grootheid, eenheid en symbool",
+       "SI-basiseenheden",
+       "Voorvoegsels",
+       "Machten van tien",
+       "Eenheden omrekenen",
+       "Eenheden controleren in formules"
+      ],
+      "nSv": 28,
+      "nOe": 5,
+      "nBeg": 11,
+      "hasSam": true
+     }
+    ]
    },
    {
     "id": "B",
