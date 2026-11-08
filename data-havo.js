@@ -94109,565 +94109,689 @@ var VAKKEN = [
     "leerdoelen": [
      {
       "id": "C1",
+      "lo": "na.C.1",
+      "gs": 2,
       "naam": "Snelheid en versnelling",
-      "beschrijving": "Snelheid en versnelling berekenen en het verschil ertussen begrijpen, inclusief de vrije val met valversnelling g.",
+      "beschrijving": "Je rekent met snelheid (v = s / t) en versnelling (a = Δv / Δt), onderscheidt gemiddelde en momentane snelheid, eenparige en eenparig versnelde bewegingen, rekent aan de vrije val met g = 9,81 m/s² en leest snelheid, versnelling en afstand af uit (x,t)- en (v,t)-diagrammen.",
       "ceStatus": "CE",
+      "binas": "35A",
+      "val": "",
       "onderwerpen": [
        "Snelheid: v = s / t",
-       "Versnelling: a = verandering van snelheid per tijd",
-       "Verschil tussen snelheid en versnelling",
-       "Eenparige en eenparig versnelde beweging",
-       "Vrije val en valversnelling g",
-       "Diagrammen: (x,t) en (v,t)"
+       "Gemiddelde en momentane snelheid",
+       "Versnelling: Δv / Δt",
+       "Eenparig en eenparig versneld",
+       "Vrije val en valversnelling",
+       "Het (x,t)- en (v,t)-diagram"
       ],
-      "sam": "Snelheid en versnelling zijn twee verschillende dingen die vaak worden verward. Snelheid vertelt hoe snel je gaat: het is de afgelegde afstand gedeeld door de tijd, v = s / t, met eenheid meter per seconde. Versnelling vertelt hoe snel je snelheid verandert: het is de snelheidsverandering gedeeld door de tijd, a = verandering van v gedeeld door t, met eenheid meter per seconde per seconde. Bij een eenparige beweging is de snelheid constant en is de versnelling nul. Bij een eenparig versnelde beweging verandert de snelheid met een vaste versnelling. Een bijzonder geval is de vrije val: als je de luchtweerstand verwaarloost, valt elk voorwerp met dezelfde valversnelling g van ongeveer 9,8 meter per seconde per seconde. In een afstand-tijd-diagram lees je de snelheid af aan de helling; in een snelheid-tijd-diagram lees je de versnelling af aan de helling en de afgelegde afstand aan de oppervlakte onder de lijn.",
+      "sam": "Snelheid v = s / t in m/s (km/h ÷ 3,6). Gemiddelde snelheid = totale afstand / totale tijd. Versnelling a = Δv / Δt in m/s²; v = v₀ + a · t; remmen is vertraging. Eenparig: v constant. Eenparig versneld: a constant, vanuit stilstand s = ½ · a · t². Vrije val: a = g = 9,81 m/s², v = g · t, s = ½ · g · t², de massa doet er niet toe. (x,t)-diagram: helling = snelheid. (v,t)-diagram: helling = versnelling, oppervlakte = afstand.",
       "begrippen": [
        {
         "t": "Snelheid",
-        "d": "de afgelegde afstand per tijd; v = s / t, eenheid m/s"
-       },
-       {
-        "t": "Versnelling",
-        "d": "de snelheidsverandering per tijd; a = verandering van v / t, eenheid m/s2"
-       },
-       {
-        "t": "Vrije val",
-        "d": "een val waarbij alleen de zwaartekracht werkt (luchtweerstand verwaarloosd)"
-       },
-       {
-        "t": "Valversnelling",
-        "d": "de versnelling bij een vrije val, g is ongeveer 9,8 m/s2"
-       },
-       {
-        "t": "Eenparige beweging",
-        "d": "beweging met een constante snelheid (versnelling is nul)"
-       },
-       {
-        "t": "Eenparig versnelde beweging",
-        "d": "beweging waarbij de snelheid met een vaste versnelling toeneemt"
+        "d": "Afstand per tijd: v = s / t, in m/s."
        },
        {
         "t": "Gemiddelde snelheid",
-        "d": "de totale afstand gedeeld door de totale tijd"
+        "d": "Totale afstand gedeeld door totale tijd."
        },
        {
         "t": "Momentane snelheid",
-        "d": "de snelheid op één bepaald moment"
+        "d": "Snelheid op één moment, zoals de snelheidsmeter aangeeft."
+       },
+       {
+        "t": "Versnelling",
+        "d": "Verandering van de snelheid per seconde: a = Δv / Δt, in m/s²."
        },
        {
         "t": "Vertraging",
-        "d": "een versnelling die de snelheid juist kleiner maakt"
+        "d": "Negatieve versnelling: de snelheid neemt af, zoals bij remmen."
        },
        {
-        "t": "Afstand-tijd-diagram",
-        "d": "grafiek met de afstand tegen de tijd; helling is de snelheid"
+        "t": "Eenparige beweging",
+        "d": "Beweging met constante snelheid; de versnelling is nul."
        },
        {
-        "t": "Snelheid-tijd-diagram",
-        "d": "grafiek met de snelheid tegen de tijd; helling is de versnelling"
+        "t": "Eenparig versnelde beweging",
+        "d": "Beweging met constante versnelling; vanuit stilstand s = ½ · a · t²."
        },
        {
-        "t": "Meter per seconde",
-        "d": "de eenheid van snelheid (m/s)"
+        "t": "Vrije val",
+        "d": "Val zonder merkbare luchtweerstand; alle voorwerpen krijgen dezelfde versnelling g."
+       },
+       {
+        "t": "Valversnelling",
+        "d": "Versnelling bij een vrije val: g = 9,81 m/s² aan het aardoppervlak."
+       },
+       {
+        "t": "(x,t)-diagram",
+        "d": "Plaats tegen tijd; de helling is de snelheid."
+       },
+       {
+        "t": "(v,t)-diagram",
+        "d": "Snelheid tegen tijd; de helling is de versnelling, de oppervlakte de afgelegde afstand."
        }
       ],
       "sv": [
        {
-        "v": "Wat is snelheid?",
+        "v": "Een fietser legt 3,6 km af in 12 minuten. Hoe groot is zijn gemiddelde snelheid?",
         "o": [
-         "De afgelegde afstand per tijd",
-         "De verandering van snelheid per tijd",
-         "De totale afstand die je aflegt",
-         "De kracht die op een voorwerp werkt"
-        ],
-        "c": 0,
-        "d": 1,
-        "u": "Snelheid is de afgelegde afstand gedeeld door de tijd: v = s / t.",
-        "uo": [
-         "Klopt: afstand per tijd.",
-         "Dat is de versnelling.",
-         "Dat is alleen de afstand, niet per tijd.",
-         "Dat is een kracht, geen snelheid."
-        ],
-        "uh": "Snelheid = afstand / tijd."
-       },
-       {
-        "v": "Wat is versnelling?",
-        "o": [
-         "De afgelegde afstand per seconde tijdens de rit",
-         "De snelheidsverandering per tijd",
-         "De totale snelheid opgeteld",
-         "De massa van een voorwerp"
-        ],
-        "c": 1,
-        "d": 1,
-        "u": "Versnelling is hoe snel de snelheid verandert: a = verandering van v gedeeld door t.",
-        "uo": [
-         "Dat is de snelheid.",
-         "Klopt: verandering van snelheid per tijd.",
-         "Snelheid opgeteld is geen versnelling.",
-         "Dat is massa, geen versnelling."
-        ],
-        "uh": "Versnelling = snelheidsverandering / tijd."
-       },
-       {
-        "v": "Wat is het verschil tussen snelheid en versnelling?",
-        "o": [
-         "De twee begrippen betekenen precies hetzelfde",
-         "Snelheid is een kracht, versnelling een massa",
-         "Snelheid is hoe snel je gaat, versnelling hoe snel dat verandert",
-         "Beide zijn de afgelegde afstand"
+         "300 m/s",
+         "0,30 m/s",
+         "5,0 m/s",
+         "18 m/s"
         ],
         "c": 2,
-        "d": 2,
-        "u": "Snelheid zegt hoe snel je beweegt; versnelling zegt hoe snel die snelheid verandert.",
+        "d": 1,
+        "s": 0,
+        "u": "v = 3600 m / 720 s.",
         "uo": [
-         "Ze verschillen juist.",
-         "Geen van beide is een kracht of massa.",
-         "Klopt: snelheid = hoe snel, versnelling = hoe snel dat verandert.",
-         "Geen van beide is alleen de afstand."
+         "Koos je 300 m/s? Dan heb je 3600 m door 12 gedeeld en de minuten niet omgerekend naar seconden.",
+         "Koos je 0,30 m/s? Dan heb je 3,6 door 12 gedeeld zonder om te rekenen. Dat geeft km per minuut; zet eerst om naar meter en seconde.",
+         "Klopt: zet om naar SI: 3,6 km = 3600 m en 12 min = 720 s. v = s / t = 3600 / 720 = 5,0 m/s, oftewel 18 km/h.",
+         "Koos je 18 m/s? Dat getal hoort bij km/h: 18 km/h is 5,0 m/s. Let op de eenheid: het getal in m/s is 3,6 keer zo klein als in km/h."
         ],
-        "uh": "Snelheid = hoe snel, versnelling = de verandering ervan."
+        "uh": "Eerst SI, dan v = s/t."
        },
        {
-        "v": "Wat is de eenheid van snelheid?",
+        "v": "Hoe lang doet een trein met 144 km/h over 6,0 km?",
         "o": [
-         "m/s2",
-         "newton",
-         "kilogram",
-         "m/s"
+         "24 s",
+         "150 s",
+         "0,042 s",
+         "864 s"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 0,
+        "u": "144 km/h = 40 m/s; t = 6000 / 40.",
+        "uo": [
+         "Koos je 24 s? Dan heb je 144 door 6,0 gedeeld: dat is v / s, geen tijd. Tijd is afstand gedeeld door snelheid.",
+         "Klopt: 144 km/h = 144 / 3,6 = 40 m/s. t = s / v = 6000 / 40 = 150 s, twee en een halve minuut.",
+         "Koos je 0,042 s? Dan heb je 6,0 door 144 gedeeld zonder om te rekenen: dat is in uren, 0,042 h. Omgerekend is dat 150 s.",
+         "Koos je 864 s? Dan heb je met 144 vermenigvuldigd en weer ergens door gedeeld. Gebruik t = s / v met SI-eenheden."
+        ],
+        "uh": "t = s / v."
+       },
+       {
+        "v": "Hoeveel meter rijdt de automobilist \"blind\" terwijl hij 2,0 s op zijn telefoon kijkt?",
+        "o": [
+         "56 m",
+         "28 m",
+         "100 m",
+         "14 m"
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 0,
+        "u": "100 km/h = 27,8 m/s; s = 27,8 × 2,0.",
+        "uo": [
+         "Klopt: 100 km/h = 100 / 3,6 = 27,8 m/s. In 2,0 s legt de auto s = v · t = 27,8 × 2,0 = 56 m af, half een voetbalveld, zonder dat de bestuurder kijkt.",
+         "Koos je 28 m? Dat is de afstand in één seconde. Hij kijkt twee seconden op zijn telefoon, dus de afstand is twee keer zo groot.",
+         "Koos je 100 m? Dan reken je met 50 m/s of je vergeet om te rekenen. 100 km/h is ongeveer 28 m/s.",
+         "Koos je 14 m? Dan heb je door 2 gedeeld in plaats van met 2 vermenigvuldigd. Langer kijken betekent juist verder rijden."
+        ],
+        "uh": "s = v · t.",
+        "ctx": "Een automobilist rijdt met 100 km/h over de snelweg. Hij kijkt 2,0 s op zijn telefoon om een bericht te lezen. In die tijd rijdt de auto rechtdoor met dezelfde snelheid. Een campagne van Veilig Verkeer Nederland wil laten zien hoe ver hij dan \"blind\" rijdt."
+       },
+       {
+        "v": "Welke snelheid is het grootst?",
+        "o": [
+         "0,020 km/s",
+         "72 km/h",
+         "1200 m/min",
+         "25 m/s"
         ],
         "c": 3,
-        "d": 1,
-        "u": "Snelheid heeft de eenheid meter per seconde (m/s).",
+        "d": 2,
+        "s": 0,
+        "u": "Omrekenen: 72 km/h = 20, 1200 m/min = 20, 0,020 km/s = 20 m/s.",
         "uo": [
-         "Dat is de eenheid van versnelling.",
-         "Newton is een kracht.",
-         "Kilogram is massa.",
-         "Klopt: meter per seconde."
+         "Koos je 0,020 km/s? Dat is 20 m/s. Het kleine getal komt door de grote eenheid: een kilometer per seconde is heel snel.",
+         "Koos je 72 km/h? Het getal is groot, maar 72 / 3,6 = 20 m/s, minder dan 25 m/s. Vergelijk snelheden altijd in dezelfde eenheid.",
+         "Koos je 1200 m/min? Dat is 1200 / 60 = 20 m/s. Zet alles om naar m/s voordat je vergelijkt.",
+         "Klopt: 72 km/h = 20 m/s, 1200 m/min = 20 m/s en 0,020 km/s = 20 m/s. Alleen 25 m/s is groter."
         ],
-        "uh": "Snelheid in m/s."
+        "uh": "Alles naar m/s."
        },
        {
-        "v": "Wat is de eenheid van versnelling?",
+        "v": "Wat is het verschil tussen gemiddelde en momentane snelheid?",
         "o": [
-         "m/s2",
-         "m/s",
-         "kilogram",
-         "seconde"
+         "Momentaan is altijd groter",
+         "Ze zijn altijd gelijk",
+         "Hele rit tegen één moment",
+         "Gemiddeld meet je met een snelheidsmeter"
         ],
-        "c": 0,
+        "c": 2,
         "d": 1,
-        "u": "Versnelling heeft de eenheid meter per seconde per seconde (m/s2).",
+        "s": 1,
+        "u": "v_gem = s_totaal / t_totaal; v_moment = snelheidsmeter.",
         "uo": [
-         "Klopt: m/s2.",
-         "Dat is snelheid.",
-         "Kilogram is massa.",
-         "Seconde is tijd."
+         "Koos je altijd groter? Op sommige momenten rijd je sneller dan gemiddeld, op andere langzamer of sta je stil.",
+         "Koos je altijd gelijk? Alleen bij een constante snelheid. Bij optrekken, remmen of stilstaan verschillen ze.",
+         "Klopt: de gemiddelde snelheid is de totale afstand gedeeld door de totale tijd. De momentane snelheid is de snelheid op één moment, die je op de snelheidsmeter ziet.",
+         "Koos je snelheidsmeter? Die geeft juist de momentane snelheid. De gemiddelde reken je uit met afstand en tijd."
         ],
-        "uh": "Versnelling in m/s2."
+        "uh": "Gemiddeld = hele rit; momentaan = één moment."
        },
        {
-        "v": "Een auto rijdt 100 meter in 5 seconden. Wat is de gemiddelde snelheid?",
+        "v": "Een trajectcontrole meet over 3,0 km een tijd van 1 min 40 s. Hoe groot is de gemiddelde snelheid?",
         "o": [
-         "500 m/s",
-         "20 m/s",
-         "5 m/s",
-         "0,05 m/s"
+         "30 km/h",
+         "108 km/h",
+         "180 km/h",
+         "72,0 km/h"
         ],
         "c": 1,
         "d": 2,
-        "u": "v = s / t = 100 / 5 = 20 m/s.",
+        "s": 1,
+        "u": "3000 m / 100 s = 30 m/s = 108 km/h.",
         "uo": [
-         "500 is de vermenigvuldiging, niet de deling.",
-         "Klopt: 100 gedeeld door 5 is 20 m/s.",
-         "5 is de tijd, niet de snelheid.",
-         "0,05 is 5 gedeeld door 100, verkeerd om."
+         "Koos je 30 km/h? Dat is de snelheid in m/s, niet in km/h. Vermenigvuldig met 3,6 om naar km/h te gaan.",
+         "Klopt: 1 min 40 s = 100 s. v = 3000 / 100 = 30 m/s = 30 × 3,6 = 108 km/h. Bij een maximum van 100 km/h krijgt de bestuurder een boete.",
+         "Koos je 180 km/h? Dan heb je met 1,40 minuut = 60 s gerekend. 1 min 40 s is 60 + 40 = 100 s, niet 1,40 minuut.",
+         "Koos je 72 km/h? Dan heb je 3,0 km door 2,5 min gedeeld of een andere tijd gebruikt. De tijd is 100 s."
         ],
-        "uh": "v = s / t, hier 100 / 5 = 20 m/s."
+        "uh": "Trajectcontrole: gemiddelde snelheid."
        },
        {
-        "v": "Wat is een eenparige beweging?",
+        "v": "Hoe groot is de gemiddelde snelheid over de hele rit?",
         "o": [
-         "Een beweging die steeds sneller gaat",
-         "Een beweging die steeds langzamer gaat",
-         "Een beweging met een constante snelheid",
-         "Een beweging die de hele tijd stilstaat"
+         "60 km/h",
+         "70 km/h",
+         "80 km/h",
+         "40,0 km/h"
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 1,
+        "u": "Totaal 60 km in 1,0 h.",
+        "uo": [
+         "Klopt: heen 40 km met 80 km/h duurt 0,50 h; terug 20 km met 40 km/h duurt ook 0,50 h. Totaal 60 km in 1,0 h: gemiddeld 60 km/h.",
+         "Koos je 70 km/h? Dan heb je... de snelheden niet goed gewogen. Gemiddelde snelheid is totale afstand gedeeld door totale tijd, niet het gemiddelde van de snelheden.",
+         "Koos je 80 km/h? Dat is alleen de snelheid op het eerste stuk. Op het tweede stuk ging het langzamer.",
+         "Koos je 40 km/h? Dat is alleen het tweede stuk. Neem de hele rit: 60 km in een uur, dus 60 km/h."
+        ],
+        "uh": "Gemiddeld = totale afstand / totale tijd.",
+        "ctx": "Een bezorger rijdt eerst 40 km over de snelweg met gemiddeld 80 km/h. Daarna rijdt hij 20 km door de stad met gemiddeld 40 km/h. Hij zegt: \"Gemiddeld reed ik (80 + 40) / 2 = 60 km/h.\" Toevallig klopt zijn uitkomst, maar zijn collega twijfelt aan de methode."
+       },
+       {
+        "v": "Waarom is (80 + 40) / 2 in het algemeen niet de gemiddelde snelheid?",
+        "o": [
+         "Je moet de snelheden vermenigvuldigen",
+         "De snelheden moeten eerst in m/s",
+         "Gemiddelden van snelheden kun je nooit berekenen",
+         "Je rijdt niet even lang met beide snelheden"
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 1,
+        "u": "Gewogen naar tijd, niet naar het aantal stukken.",
+        "uo": [
+         "Koos je vermenigvuldigen? Snelheden vermenigvuldigen levert geen snelheid op. Gebruik afstand en tijd.",
+         "Koos je m/s? Het omrekenen verandert de verhouding niet. Het probleem is dat de tijden verschillen.",
+         "Koos je nooit berekenen? Je kunt het wel: totale afstand gedeeld door totale tijd. Dat is de juiste methode.",
+         "Klopt: de gemiddelde snelheid weegt elke snelheid naar de tijd die je ermee rijdt. Rijd je 40 km met 80 km/h en nog eens 40 km met 40 km/h, dan rijd je veel langer langzaam: totaal 80 km in 1,5 h = 53 km/h, niet 60."
+        ],
+        "uh": "Gewogen naar tijd."
+       },
+       {
+        "v": "Wat geeft de versnelling aan?",
+        "o": [
+         "Hoe ver je in een seconde komt",
+         "Hoe groot de snelheid is",
+         "De snelheidsverandering per seconde",
+         "Hoeveel kracht er op je lichaam werkt"
         ],
         "c": 2,
-        "d": 2,
-        "u": "Bij een eenparige beweging is de snelheid constant, dus de versnelling is nul.",
+        "d": 1,
+        "s": 2,
+        "u": "a = Δv / Δt, in m/s².",
         "uo": [
-         "Steeds sneller is versnelde beweging.",
-         "Steeds langzamer is een vertraagde beweging.",
-         "Klopt: constante snelheid.",
-         "Stilstaan is geen beweging."
+         "Koos je hoe ver? Dat is de snelheid, in m/s. Versnelling gaat over hoe snel de snelheid zelf verandert.",
+         "Koos je hoe groot de snelheid is? Een auto kan heel snel rijden zonder te versnellen, als de snelheid constant blijft.",
+         "Klopt: versnelling is de verandering van de snelheid per seconde: a = Δv / Δt, in m/s². Een auto met a = 3 m/s² wordt elke seconde 3 m/s sneller.",
+         "Koos je kracht? Kracht veroorzaakt versnelling (F = m · a), maar het is iets anders: de eenheid van kracht is newton."
+        ],
+        "uh": "Versnelling = Δv per seconde."
+       },
+       {
+        "v": "Een auto gaat in 8,0 s van 0 naar 100 km/h. Hoe groot is de gemiddelde versnelling?",
+        "o": [
+         "12,5 m/s²",
+         "3,5 m/s²",
+         "27,8 m/s²",
+         "0,29 m/s²"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 2,
+        "u": "100 km/h = 27,8 m/s; a = 27,8 / 8,0.",
+        "uo": [
+         "Koos je 12,5 m/s²? Dan heb je 100 / 8,0 gerekend zonder km/h om te zetten. Reken eerst om naar m/s.",
+         "Klopt: 100 km/h = 27,8 m/s. a = Δv / Δt = 27,8 / 8,0 = 3,5 m/s².",
+         "Koos je 27,8 m/s²? Dat is de eindsnelheid in m/s. Deel nog door de tijd van 8,0 s om de versnelling te krijgen.",
+         "Koos je 0,29 m/s²? Dan heb je de tijd door de snelheid gedeeld. Versnelling is Δv / Δt: snelheid boven de deelstreep."
+        ],
+        "uh": "a = Δv / Δt in SI."
+       },
+       {
+        "v": "Hoe groot is de vertraging van de auto tijdens de noodstop?",
+        "o": [
+         "8,3 m/s²",
+         "25 m/s²",
+         "3,00 m/s²",
+         "75 m/s²"
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 2,
+        "u": "Δv = 25 m/s in 3,0 s.",
+        "uo": [
+         "Klopt: 90 km/h = 25 m/s. De snelheid daalt van 25 naar 0 in 3,0 s: a = −25 / 3,0 = −8,3 m/s². Een vertraging van 8,3 m/s².",
+         "Koos je 25 m/s²? Dat is de beginsnelheid in m/s. Deel nog door de remtijd van 3,0 s.",
+         "Koos je 3,0 m/s²? Dat is de remtijd. De vertraging is de snelheidsverandering gedeeld door die tijd.",
+         "Koos je 75 m/s²? Dan heb je vermenigvuldigd: 25 × 3,0. Versnelling is een deling: Δv / Δt."
+        ],
+        "uh": "Vertraging: snelheid daalt.",
+        "ctx": "Een auto rijdt met 90 km/h als er plotseling een hert de weg op springt. De bestuurder trapt vol op de rem. Met een sensor in de auto is gemeten dat de auto 3,0 s na het intrappen van het rempedaal stilstaat. We nemen aan dat de vertraging constant is."
+       },
+       {
+        "v": "Een fietser rijdt met 4,0 m/s en versnelt 3,0 s lang met 1,5 m/s². Hoe groot is zijn eindsnelheid?",
+        "o": [
+         "5,5 m/s",
+         "4,50 m/s",
+         "6,0 m/s",
+         "8,5 m/s"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 2,
+        "u": "v = v₀ + a · t = 4,0 + 1,5 × 3,0.",
+        "uo": [
+         "Koos je 5,5 m/s? Dan heb je de versnelling maar één keer opgeteld. Na drie seconden is er drie keer 1,5 m/s bij gekomen.",
+         "Koos je 4,5 m/s? Dat is de snelheidstoename in 3,0 s. Tel de beginsnelheid van 4,0 m/s erbij.",
+         "Koos je 6,0 m/s? Dan heb je 4,0 + 1,5 + ... niet goed vermenigvuldigd. Δv = a · t = 1,5 × 3,0 = 4,5 m/s.",
+         "Klopt: elke seconde komt er 1,5 m/s bij. Na 3,0 s is dat 4,5 m/s erbij: v = 4,0 + 4,5 = 8,5 m/s."
+        ],
+        "uh": "v = v₀ + a·t."
+       },
+       {
+        "v": "Wat betekent een eenparige beweging?",
+        "o": [
+         "De snelheid wordt steeds kleiner",
+         "Constante versnelling",
+         "Constante snelheid",
+         "Het voorwerp staat stil"
+        ],
+        "c": 2,
+        "d": 1,
+        "s": 3,
+        "u": "Eenparig: v constant, a = 0.",
+        "uo": [
+         "Koos je steeds kleiner? Dat is een vertraagde beweging, zoals bij remmen. Bij eenparig verandert de snelheid niet.",
+         "Koos je constante versnelling? Dat is een eenparig versnelde beweging. Bij eenparig is de snelheid zelf constant.",
+         "Klopt: bij een eenparige beweging is de snelheid constant. De versnelling is nul, en in gelijke tijden leg je gelijke afstanden af.",
+         "Koos je stilstaan? Stilstaan is een bijzonder geval met v = 0, maar eenparig betekent elke constante snelheid."
         ],
         "uh": "Eenparig = constante snelheid."
        },
        {
-        "v": "Wat is een eenparig versnelde beweging?",
+        "v": "Een karretje start uit stilstand en versnelt eenparig. Welke uitspraak klopt?",
         "o": [
-         "Een beweging met een constante snelheid",
-         "Een beweging die stilstaat",
-         "Een beweging zonder enige kracht",
-         "Een beweging met een vaste versnelling"
+         "In elke seconde legt het evenveel afstand af",
+         "Elke seconde evenveel sneller",
+         "De snelheid blijft gelijk",
+         "De versnelling wordt steeds groter"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 3,
+        "u": "Eenparig versneld: a constant → Δv per seconde gelijk.",
+        "uo": [
+         "Koos je evenveel afstand? Dat geldt bij eenparig. Bij versnellen wordt het karretje steeds sneller en komt het per seconde steeds verder.",
+         "Klopt: bij eenparig versneld is de versnelling constant. De snelheid neemt elke seconde met hetzelfde bedrag toe; de afgelegde afstand per seconde wordt daardoor steeds groter.",
+         "Koos je gelijke snelheid? Dan zou het niet versnellen. Bij eenparig versneld neemt de snelheid gelijkmatig toe.",
+         "Koos je steeds grotere versnelling? Eenparig versneld betekent juist dat de versnelling constant is."
+        ],
+        "uh": "Eenparig versneld: a constant."
+       },
+       {
+        "v": "Hoe ver komt de auto in de 6,0 s van het optrekken?",
+        "o": [
+         "45 m",
+         "90 m",
+         "15 m",
+         "30,0 m"
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 3,
+        "u": "s = ½ · a · t² = ½ × 2,5 × 36 = 45 m; of v_gem × t = 7,5 × 6,0.",
+        "uo": [
+         "Klopt: de auto versnelt uit stilstand tot 2,5 × 6,0 = 15 m/s. De gemiddelde snelheid is 7,5 m/s, dus s = 7,5 × 6,0 = 45 m. Hetzelfde krijg je met s = ½ · a · t².",
+         "Koos je 90 m? Dan heb je met de eindsnelheid van 15 m/s gerekend: 15 × 6,0. Maar de auto reed niet de hele tijd 15 m/s; gemiddeld was het 7,5 m/s.",
+         "Koos je 15 m? Dat is de eindsnelheid in m/s, geen afstand. Gebruik de gemiddelde snelheid maal de tijd.",
+         "Koos je 30 m? Dan heb je ½ × 2,5 × 6,0 × 4 of iets dergelijks gerekend. Gebruik t² = 36 s²."
+        ],
+        "uh": "s = ½·a·t² of v_gem·t.",
+        "ctx": "Een elektrische auto staat voor een verkeerslicht. Als het groen wordt, versnelt hij 6,0 s lang eenparig met 2,5 m/s². Daarna rijdt hij met constante snelheid verder. Een leerling wil weten hoeveel meter hij tijdens het optrekken aflegt."
+       },
+       {
+        "v": "Welke formule geldt voor de afgelegde afstand bij een eenparig versnelde beweging vanuit stilstand?",
+        "o": [
+         "s = a / t²",
+         "s = a · t",
+         "s = v · t, met de eindsnelheid",
+         "s = ½ · a · t²"
         ],
         "c": 3,
         "d": 2,
-        "u": "Bij een eenparig versnelde beweging neemt de snelheid met een vaste versnelling toe.",
+        "s": 3,
+        "u": "Uit rust: s = ½ a t².",
         "uo": [
-         "Constante snelheid is juist eenparig, niet versneld.",
-         "Stilstaan is geen beweging.",
-         "Een versnelling vraagt juist een kracht.",
-         "Klopt: een vaste versnelling."
+         "Koos je a / t²? Controleer de eenheid: m/s² / s² is geen meter. De formule is ½ · a · t².",
+         "Koos je s = a · t? Dat geeft een snelheid, geen afstand: v = a · t. Controleer de eenheid: m/s² × s = m/s.",
+         "Koos je v · t met de eindsnelheid? Dan doe je alsof het voorwerp de hele tijd al op zijn eindsnelheid reed. Je krijgt twee keer te veel.",
+         "Klopt: bij een eenparig versnelde beweging vanuit stilstand is s = ½ · a · t². Je kunt ook de gemiddelde snelheid (de helft van de eindsnelheid) maal de tijd nemen."
         ],
-        "uh": "Eenparig versneld = vaste versnelling."
+        "uh": "s = ½·a·t²."
        },
        {
-        "v": "Wat is een vrije val?",
+        "v": "Hoe groot is de valversnelling g aan het aardoppervlak in Nederland?",
         "o": [
-         "Een val waarbij alleen de zwaartekracht werkt",
-         "Een val met heel veel luchtweerstand",
-         "Een beweging met constante snelheid",
-         "Een beweging recht omhoog de lucht in"
+         "1,62 m/s²",
+         "9,81 m/s",
+         "9,81 m/s²",
+         "98,10 m/s²"
         ],
-        "c": 0,
-        "d": 2,
-        "u": "Bij een vrije val verwaarloos je de luchtweerstand, zodat alleen de zwaartekracht werkt.",
-        "uo": [
-         "Klopt: alleen de zwaartekracht werkt.",
-         "Bij een vrije val verwaarloos je de luchtweerstand juist.",
-         "Bij een vrije val versnelt het voorwerp.",
-         "Een vrije val gaat omlaag."
-        ],
-        "uh": "Vrije val = alleen zwaartekracht (geen luchtweerstand)."
-       },
-       {
-        "v": "Hoe groot is de valversnelling g ongeveer?",
-        "o": [
-         "Ongeveer 100 m/s2",
-         "Ongeveer 9,8 m/s2",
-         "Een valversnelling van ongeveer 1 m/s2",
-         "Ongeveer 0 m/s2"
-        ],
-        "c": 1,
+        "c": 2,
         "d": 1,
-        "u": "De valversnelling g is op aarde ongeveer 9,8 meter per seconde per seconde.",
+        "s": 4,
+        "u": "g = 9,81 m/s².",
         "uo": [
-         "100 is veel te groot.",
-         "Klopt: ongeveer 9,8 m/s2.",
-         "1 is veel te klein.",
-         "0 zou betekenen dat er niet versneld wordt."
+         "Koos je 1,62 m/s²? Dat is de valversnelling op de maan, ongeveer zes keer zo klein als op aarde.",
+         "Koos je 9,81 m/s? Het getal klopt, maar de eenheid niet: een versnelling heeft m/s², geen m/s.",
+         "Klopt: bij een vrije val zonder luchtweerstand neemt de snelheid elke seconde met 9,81 m/s toe. De valversnelling is g = 9,81 m/s².",
+         "Koos je 98,1 m/s²? Dat is tien keer te groot. Een vallende steen wordt elke seconde ongeveer 10 m/s sneller, niet 100."
         ],
-        "uh": "g is ongeveer 9,8 m/s2."
+        "uh": "g = 9,81 m/s²."
        },
        {
-        "v": "Een steen valt vrij. Na 2 seconden, welke snelheid heeft hij ongeveer?",
+        "v": "Een steen valt vanuit stilstand 2,0 s vrij. Hoe groot is zijn snelheid dan?",
         "o": [
-         "Ongeveer 5 m/s",
-         "Ongeveer 2 m/s",
-         "Ongeveer 20 m/s",
-         "Ongeveer 100 m/s"
+         "9,81 m/s",
+         "19,6 m/s",
+         "4,9 m/s",
+         "39,2 m/s"
         ],
-        "c": 2,
-        "d": 3,
-        "u": "Bij een vrije val is v = g maal t, ongeveer 9,8 maal 2 is bijna 20 m/s.",
-        "uo": [
-         "5 is te weinig.",
-         "2 is de tijd, niet de snelheid.",
-         "Klopt: 9,8 maal 2 is ongeveer 20 m/s.",
-         "100 is veel te groot."
-        ],
-        "uh": "Vrije val: v = g maal t."
-       },
-       {
-        "v": "Wat lees je af aan de helling van een afstand-tijd-diagram?",
-        "o": [
-         "De versnelling",
-         "De massa",
-         "De kracht",
-         "De snelheid"
-        ],
-        "c": 3,
+        "c": 1,
         "d": 2,
-        "u": "In een afstand-tijd-diagram geeft de helling van de lijn de snelheid weer.",
+        "s": 4,
+        "u": "v = g · t = 9,81 × 2,0.",
         "uo": [
-         "De versnelling lees je af in een snelheid-tijd-diagram.",
-         "Massa staat niet in dit diagram.",
-         "Kracht staat niet in dit diagram.",
-         "Klopt: de helling is de snelheid."
+         "Koos je 9,81 m/s? Dat is de snelheid na 1,0 s. Na 2,0 s is er nog eens 9,81 m/s bij gekomen.",
+         "Klopt: v = g · t = 9,81 × 2,0 = 19,6 m/s, ongeveer 71 km/h.",
+         "Koos je 4,9 m/s? Dan heb je door 2 gedeeld. Dat hoort bij de afstand (½ g t²), niet bij de snelheid.",
+         "Koos je 39,2 m/s? Dan heb je met t² gerekend: 9,81 × 4. De snelheid groeit lineair met de tijd."
         ],
-        "uh": "(x,t)-diagram: helling = snelheid."
+        "uh": "Vrije val: v = g·t."
        },
        {
-        "v": "Wat lees je af aan de helling van een snelheid-tijd-diagram?",
+        "v": "Hoe diep is de put ongeveer?",
         "o": [
-         "De versnelling",
-         "De afgelegde afstand",
-         "De massa",
-         "De temperatuur"
+         "20 m",
+         "10 m",
+         "40 m",
+         "4,9 m"
         ],
         "c": 0,
         "d": 3,
-        "u": "In een snelheid-tijd-diagram geeft de helling de versnelling weer.",
+        "s": 4,
+        "u": "s = ½ g t² = ½ × 9,81 × 2,0² ≈ 20 m.",
         "uo": [
-         "Klopt: de helling is de versnelling.",
-         "De afstand lees je af aan de oppervlakte, niet de helling.",
-         "Massa staat niet in dit diagram.",
-         "Temperatuur staat niet in dit diagram."
+         "Klopt: s = ½ · g · t² = ½ × 9,81 × 2,0² = 19,6 m, ongeveer 20 m. (De tijd voor het geluid om terug te komen is hier verwaarloosd; die is maar 0,06 s.)",
+         "Koos je 10 m? Dan heb je ½ × 9,81 × 2,0 gerekend: de tijd moet in het kwadraat, want de steen gaat steeds sneller vallen.",
+         "Koos je 40 m? Dan heb je de ½ vergeten: 9,81 × 4. De gemiddelde valsnelheid is maar de helft van de eindsnelheid.",
+         "Koos je 4,9 m? Dat is de valafstand in de eerste seconde. In 2,0 s valt de steen vier keer zo ver."
         ],
-        "uh": "(v,t)-diagram: helling = versnelling."
+        "uh": "Valafstand: ½·g·t².",
+        "ctx": "Een toerist laat bij een oude waterput een steentje vallen en hoort na 2,0 s een plons. Hij wil schatten hoe diep de put is. Hij neemt aan dat de luchtweerstand verwaarloosbaar is en dat het geluid vrijwel meteen bij hem terug is."
        },
        {
-        "v": "Wat stelt de oppervlakte onder een snelheid-tijd-diagram voor?",
+        "v": "Waarom vallen een veer en een hamer op de maan even snel, maar op aarde niet?",
         "o": [
-         "De versnelling",
-         "De afgelegde afstand",
-         "De kracht",
-         "De massa van het bewegende voorwerp"
-        ],
-        "c": 1,
-        "d": 3,
-        "u": "De oppervlakte onder de lijn in een snelheid-tijd-diagram is de afgelegde afstand.",
-        "uo": [
-         "De versnelling lees je af aan de helling.",
-         "Klopt: de oppervlakte is de afstand.",
-         "Kracht staat niet in dit diagram.",
-         "Massa staat niet in dit diagram."
-        ],
-        "uh": "(v,t)-diagram: oppervlakte = afstand."
-       },
-       {
-        "v": "Een fietser gaat steeds langzamer. Wat geldt voor de versnelling?",
-        "o": [
-         "De versnelling is positief",
-         "Er is helemaal geen versnelling aanwezig",
-         "De versnelling is negatief (vertraging)",
-         "De snelheid is negatief"
-        ],
-        "c": 2,
-        "d": 3,
-        "u": "Langzamer gaan betekent dat de snelheid afneemt, dus is er een negatieve versnelling: een vertraging.",
-        "uo": [
-         "Positief zou juist sneller betekenen.",
-         "Er verandert wel iets: de snelheid daalt.",
-         "Klopt: afnemende snelheid geeft een vertraging.",
-         "De snelheid zelf is niet negatief, hij daalt."
-        ],
-        "uh": "Langzamer = negatieve versnelling (vertraging)."
-       },
-       {
-        "v": "Wat is momentane snelheid?",
-        "o": [
-         "De gemiddelde snelheid over de hele rit",
-         "De totale afgelegde afstand",
-         "De versnelling per seconde",
-         "De snelheid op één bepaald moment"
-        ],
-        "c": 3,
-        "d": 2,
-        "u": "De momentane snelheid is de snelheid op een bepaald moment, bijvoorbeeld wat je snelheidsmeter nu aanwijst.",
-        "uo": [
-         "Dat is de gemiddelde snelheid.",
-         "Dat is de afstand.",
-         "Dat is de versnelling.",
-         "Klopt: de snelheid op dat moment."
-        ],
-        "uh": "Momentane snelheid = op dit moment."
-       },
-       {
-        "v": "Een auto versnelt van 0 naar 30 m/s in 10 seconden. Wat is de versnelling?",
-        "o": [
-         "3 m/s2",
-         "300 m/s2",
-         "30 m/s2",
-         "0,3 m/s2"
-        ],
-        "c": 0,
-        "d": 3,
-        "u": "a = verandering van v gedeeld door t = 30 / 10 = 3 m/s2.",
-        "uo": [
-         "Klopt: 30 gedeeld door 10 is 3 m/s2.",
-         "300 is de vermenigvuldiging.",
-         "30 is de snelheidsverandering, niet de versnelling.",
-         "0,3 is 10 gedeeld door 30, verkeerd om."
-        ],
-        "uh": "a = verandering van v / t, hier 30 / 10 = 3."
-       },
-       {
-        "v": "Waarom vallen een steen en een veer in vacuüm even snel?",
-        "o": [
-         "Omdat de steen zwaarder is",
-         "Omdat er geen luchtweerstand is en g gelijk is",
-         "Omdat de veer een stuk lichter is dan de steen",
-         "Omdat er geen zwaartekracht is"
-        ],
-        "c": 1,
-        "d": 3,
-        "u": "Zonder luchtweerstand werkt alleen de zwaartekracht en versnellen beide met dezelfde g.",
-        "uo": [
-         "Zwaarder valt niet sneller in vacuüm.",
-         "Klopt: geen luchtweerstand, zelfde valversnelling g.",
-         "Lichter valt niet langzamer in vacuüm.",
-         "Er is juist wel zwaartekracht."
-        ],
-        "uh": "In vacuüm valt alles met dezelfde g."
-       },
-       {
-        "v": "Wat betekent een horizontale lijn in een snelheid-tijd-diagram?",
-        "o": [
-         "De snelheid neemt toe",
-         "De snelheid neemt af",
-         "De snelheid is constant",
-         "Het voorwerp staat altijd stil"
-        ],
-        "c": 2,
-        "d": 2,
-        "u": "Een horizontale lijn in een (v,t)-diagram betekent dat de snelheid gelijk blijft: eenparige beweging.",
-        "uo": [
-         "Toenemen zou een stijgende lijn zijn.",
-         "Afnemen zou een dalende lijn zijn.",
-         "Klopt: constante snelheid.",
-         "Constante snelheid hoeft niet nul te zijn."
-        ],
-        "uh": "Horizontale (v,t)-lijn = constante snelheid."
-       },
-       {
-        "v": "Wat betekent een stijgende rechte lijn in een snelheid-tijd-diagram?",
-        "o": [
-         "Een constante snelheid",
-         "Het voorwerp staat de hele tijd stil",
-         "Een afnemende snelheid",
-         "Een constante versnelling"
+         "Op aarde valt een zwaar voorwerp altijd sneller",
+         "Op de maan is de zwaartekracht op beide even groot",
+         "Op de maan heeft de hamer geen massa",
+         "Op de maan is er geen luchtweerstand"
         ],
         "c": 3,
         "d": 3,
-        "u": "Een stijgende rechte lijn in een (v,t)-diagram betekent dat de snelheid gelijkmatig toeneemt: een constante versnelling.",
+        "s": 4,
+        "u": "Zonder lucht: alle voorwerpen dezelfde valversnelling.",
         "uo": [
-         "Constante snelheid is een horizontale lijn.",
-         "Stilstand is de lijn op nul.",
-         "Afnemen zou een dalende lijn zijn.",
-         "Klopt: gelijkmatig sneller, dus constante versnelling."
+         "Koos je altijd sneller? In een vacuümbuis vallen een veer en een munt op aarde ook even snel. Het verschil komt door de lucht.",
+         "Koos je even grote zwaartekracht? De zwaartekracht op de hamer is ook op de maan veel groter. Maar de hamer heeft ook meer massa, zodat de versnelling gelijk is.",
+         "Koos je geen massa? Ook op de maan heeft de hamer gewoon zijn massa. Alleen de zwaartekracht is kleiner dan op aarde.",
+         "Klopt: zonder luchtweerstand krijgen alle voorwerpen dezelfde valversnelling, wat hun massa ook is. Op aarde remt de lucht de veer veel sterker af dan de hamer."
         ],
-        "uh": "Stijgende (v,t)-lijn = constante versnelling."
+        "uh": "Vrije val: geen lucht → zelfde a.",
+        "ctx": "In 1971 liet astronaut David Scott op de maan tegelijk een hamer en een veer vallen, voor een camera. Ze kwamen tegelijk op de grond. Op aarde dwarrelt een veer langzaam naar beneden, terwijl een hamer snel valt."
        },
        {
-        "v": "Iemand zegt: hoe hoger de snelheid, hoe hoger de versnelling. Klopt dat?",
+        "v": "Wat zie je in een (v,t)-diagram van een eenparige beweging?",
         "o": [
-         "Nee, snelheid en versnelling zijn los van elkaar",
-         "Ja, snelheid en versnelling zijn altijd gelijk",
-         "Ja, snelheid is versnelling",
-         "Nee, versnelling is de afstand"
+         "Een steeds steiler wordende kromme",
+         "Een schuin stijgende lijn",
+         "Een horizontale lijn",
+         "Een verticale lijn"
         ],
-        "c": 0,
-        "d": 3,
-        "u": "Je kunt hard rijden met versnelling nul (constante snelheid), dus een hoge snelheid betekent geen hoge versnelling.",
-        "uo": [
-         "Klopt: ze staan los van elkaar.",
-         "Ze zijn niet altijd gelijk.",
-         "Snelheid is niet hetzelfde als versnelling.",
-         "Versnelling is niet de afstand."
-        ],
-        "uh": "Hoge snelheid betekent niet hoge versnelling."
-       },
-       {
-        "v": "Wat is de gemiddelde snelheid?",
-        "o": [
-         "De gemiddelde snelheid over de hele rit heen",
-         "De totale afstand gedeeld door de totale tijd",
-         "De grootste snelheid tijdens de rit",
-         "De versnelling per seconde"
-        ],
-        "c": 1,
+        "c": 2,
         "d": 1,
-        "u": "De gemiddelde snelheid is de totale afgelegde afstand gedeeld door de totale tijd.",
+        "s": 5,
+        "u": "v constant → horizontaal.",
         "uo": [
-         "Dat is de momentane snelheid.",
-         "Klopt: totale afstand gedeeld door totale tijd.",
-         "Dat is de topsnelheid.",
-         "Dat is de versnelling."
+         "Koos je steeds steiler? Dat zie je in een (x,t)-diagram van een versnellende beweging, niet in een (v,t)-diagram van een eenparige.",
+         "Koos je schuin stijgend? Dat hoort bij een eenparig versnelde beweging: de snelheid neemt gelijkmatig toe.",
+         "Klopt: bij een eenparige beweging is de snelheid constant. In een (v,t)-diagram is dat een horizontale lijn.",
+         "Koos je verticaal? Dan zou de snelheid in een moment oneindig veranderen. Dat kan niet: een voorwerp heeft altijd tijd nodig om van snelheid te veranderen."
         ],
-        "uh": "Gemiddelde snelheid = totale afstand / totale tijd."
+        "uh": "Eenparig: horizontaal (v,t)."
        },
        {
-        "v": "Een trein rijdt met constante snelheid. Wat is zijn versnelling?",
+        "v": "Hoe ziet het (x,t)-diagram van een eenparig versnelde beweging uit stilstand eruit?",
         "o": [
-         "9,8 m/s2",
-         "Gelijk aan de snelheid",
-         "Nul",
-         "Heel groot"
+         "Een rechte lijn door de oorsprong",
+         "Een kromme die steeds steiler wordt",
+         "Een horizontale lijn",
+         "Een kromme die steeds minder steil wordt"
         ],
-        "c": 2,
+        "c": 1,
         "d": 2,
-        "u": "Bij een constante snelheid verandert de snelheid niet, dus de versnelling is nul.",
+        "s": 5,
+        "u": "x = ½ a t²: parabool.",
         "uo": [
-         "9,8 is de valversnelling, niet hier.",
-         "Versnelling is niet gelijk aan de snelheid.",
-         "Klopt: geen snelheidsverandering, dus versnelling nul.",
-         "De versnelling is juist nul."
+         "Koos je rechte lijn? Dat is het (x,t)-diagram van een eenparige beweging. Bij versnellen neemt de helling toe.",
+         "Klopt: x = ½ · a · t², een parabool. De helling, de snelheid, wordt steeds groter, dus de grafiek wordt steeds steiler.",
+         "Koos je horizontaal? In een (x,t)-diagram betekent dat stilstaan: de plaats verandert niet.",
+         "Koos je minder steil? Dat hoort bij afremmen: de snelheid, de helling, neemt dan af."
         ],
-        "uh": "Constante snelheid = versnelling nul."
+        "uh": "Versnellen: (x,t) steeds steiler."
        },
        {
-        "v": "Waaraan zie je in een afstand-tijd-diagram dat een voorwerp sneller gaat?",
+        "v": "Wat kun je zeggen over de beweging tussen t = 4 s en t = 6 s?",
         "o": [
-         "De lijn wordt vlakker",
-         "De lijn gaat omlaag",
-         "De lijn blijft horizontaal",
-         "De lijn wordt steiler"
-        ],
-        "c": 3,
-        "d": 3,
-        "u": "In een (x,t)-diagram hoort een grotere snelheid bij een steilere lijn, want per tijd wordt meer afstand afgelegd.",
-        "uo": [
-         "Vlakker betekent juist langzamer.",
-         "Omlaag zou terug betekenen.",
-         "Horizontaal betekent stilstaan.",
-         "Klopt: steiler betekent sneller."
-        ],
-        "uh": "Steilere (x,t)-lijn = hogere snelheid."
-       },
-       {
-        "v": "Wat gebeurt er met de snelheid van een vrij vallend voorwerp?",
-        "o": [
-         "Die neemt gelijkmatig toe",
-         "Die blijft constant",
-         "Die neemt tijdens het vallen juist af",
-         "Die wordt meteen nul"
+         "De auto staat stil",
+         "De auto rijdt met constante snelheid",
+         "De auto versnelt",
+         "De auto rijdt achteruit"
         ],
         "c": 0,
-        "d": 2,
-        "u": "Bij een vrije val versnelt het voorwerp met g, dus de snelheid neemt gelijkmatig toe.",
+        "d": 3,
+        "s": 5,
+        "u": "(x,t) horizontaal → x verandert niet → stil.",
         "uo": [
-         "Klopt: de snelheid neemt gelijkmatig toe.",
-         "Constant zou geen versnelling betekenen.",
-         "Afnemen zou omhoog bewegen zijn.",
-         "De snelheid wordt niet nul tijdens het vallen."
+         "Klopt: tussen 4 en 6 s blijft de plaats gelijk, op 40 m. De auto staat dus stil, bijvoorbeeld voor een verkeerslicht.",
+         "Koos je constante snelheid? Dan zou de plaats gelijkmatig toenemen: een schuine rechte lijn. Een horizontale lijn in een (x,t)-diagram betekent stilstaan.",
+         "Koos je versnellen? Dan zou de lijn steeds steiler worden. Hier is hij vlak, de plaats verandert niet.",
+         "Koos je achteruit? Dan zou de plaats afnemen: een dalende lijn. Hier blijft x op 40 m."
         ],
-        "uh": "Vrije val = snelheid neemt gelijkmatig toe."
+        "uh": "(x,t) vlak = stilstaan.",
+        "ctx": "In een (x,t)-diagram van een auto stijgt de lijn van t = 0 tot t = 4 s recht omhoog van 0 tot 40 m. Van t = 4 s tot t = 6 s loopt de lijn horizontaal op 40 m. Daarna stijgt hij weer."
+       },
+       {
+        "v": "Wat stelt de oppervlakte onder een (v,t)-diagram voor?",
+        "o": [
+         "De eindsnelheid aan het eind",
+         "De versnelling",
+         "De tijd",
+         "De afgelegde afstand"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 5,
+        "u": "Oppervlakte = v · t = s.",
+        "uo": [
+         "Koos je eindsnelheid? Die lees je af aan het eind van de grafiek op de verticale as. De oppervlakte gaat over de hele rit.",
+         "Koos je versnelling? Die is de helling van het (v,t)-diagram, niet de oppervlakte eronder.",
+         "Koos je tijd? Die lees je af op de horizontale as. De oppervlakte combineert snelheid en tijd.",
+         "Klopt: snelheid maal tijd is afstand. De oppervlakte tussen de (v,t)-grafiek en de tijdas is de afgelegde afstand."
+        ],
+        "uh": "(v,t): oppervlakte = afstand."
+       },
+       {
+        "v": "Hoe groot is de versnelling van de raket in de eerste 10 s?",
+        "o": [
+         "3,0 m/s²",
+         "300 m/s²",
+         "30 m/s²",
+         "0,033 m/s²"
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 2,
+        "u": "a = 300 / 10.",
+        "uo": [
+         "Koos je 3,0 m/s²? Dan heb je een factor tien te weinig: 300 / 10 = 30 m/s², niet 3,0.",
+         "Koos je 300 m/s²? Dat is de snelheid na 10 s, in m/s. Deel nog door de tijd om de versnelling per seconde te krijgen.",
+         "Klopt: de raket gaat van 0 naar 300 m/s in 10 s: a = Δv / Δt = 300 / 10 = 30 m/s², ruim drie keer de valversnelling.",
+         "Koos je 0,033 m/s²? Dan heb je de tijd door de snelheid gedeeld. Versnelling is snelheidsverandering gedeeld door tijd."
+        ],
+        "uh": "a = Δv / Δt.",
+        "ctx": "Bij een raketlancering meet een sensor aan boord dat de raket 10 s na de start een snelheid van 300 m/s heeft. In die eerste seconden is de versnelling ongeveer constant. Astronauten voelen zich dan meer dan drie keer zo zwaar als normaal."
+       },
+       {
+        "v": "Welke afstand legt de trein af tijdens het remmen?",
+        "o": [
+         "1200 m",
+         "600 m",
+         "30 m",
+         "40 m"
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 5,
+        "u": "Driehoek: ½ × 40 s × 30 m/s.",
+        "uo": [
+         "Koos je 1200 m? Dan heb je de rechthoek 40 × 30 genomen. De snelheid is niet de hele tijd 30 m/s; neem de helft.",
+         "Klopt: in het (v,t)-diagram daalt de snelheid in 40 s van 30 m/s naar 0. De oppervlakte is een driehoek: ½ × 40 × 30 = 600 m.",
+         "Koos je 30 m? Dat is de beginsnelheid in m/s, geen afstand. De afstand is de oppervlakte onder de grafiek.",
+         "Koos je 40 m? Dat is de remtijd in seconden. De afstand is de oppervlakte onder de grafiek."
+        ],
+        "uh": "Remweg = oppervlakte (v,t).",
+        "ctx": "Een intercity rijdt met 30 m/s (108 km/h) en remt voor een station gelijkmatig af tot stilstand. Het remmen duurt 40 s. In het (v,t)-diagram is dat een rechte lijn van 30 m/s naar 0 m/s. De machinist moet weten waar hij moet beginnen met remmen."
+       },
+       {
+        "v": "Welke formule hoort bij een constante snelheid?",
+        "o": [
+         "s = v · t",
+         "v = s · t",
+         "t = v · s",
+         "s = v / t"
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 0,
+        "u": "Afstand = snelheid maal tijd.",
+        "uo": [
+         "Klopt: bij een constante snelheid is de afstand gelijk aan snelheid maal tijd. Je kunt hem ook schrijven als v = s / t of t = s / v.",
+         "Koos je v = s · t? Een langere tijd voor dezelfde afstand zou dan een grotere snelheid geven, terwijl je juist langzamer gaat.",
+         "Koos je t = v · s? Dan zou een hogere snelheid meer tijd kosten. Wie sneller rijdt, is juist eerder op zijn bestemming.",
+         "Koos je s = v / t? Dan zou je in een langere tijd minder ver komen. Langer rijden met dezelfde snelheid brengt je juist verder."
+        ],
+        "uh": "s = v · t."
+       },
+       {
+        "v": "Je gooit een bal recht omhoog. Hoe groot is de versnelling op het hoogste punt?",
+        "o": [
+         "Die is oneindig groot",
+         "Nul, want de bal staat stil",
+         "9,81 m/s², omhoog gericht",
+         "9,81 m/s², omlaag gericht"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 4,
+        "u": "Zwaartekracht werkt altijd → a = g omlaag.",
+        "uo": [
+         "Koos je oneindig? De snelheid verandert gelijkmatig door nul heen. De versnelling is gewoon g.",
+         "Koos je nul? Snelheid nul is iets anders dan versnelling nul. Als de versnelling nul was, zou de bal in de lucht blijven hangen.",
+         "Koos je omhoog? De zwaartekracht trekt de bal altijd naar beneden, ook als hij omhoog beweegt. Daarom wordt hij op weg naar boven langzamer.",
+         "Klopt: op het hoogste punt is de snelheid even nul, maar de zwaartekracht werkt nog steeds. De versnelling is daarom ook daar 9,81 m/s² naar beneden. Daardoor gaat de bal weer vallen."
+        ],
+        "uh": "Hoogste punt: v = 0, a = g."
        }
       ],
       "oe": [
        {
-        "vraag": "Leg het verschil uit tussen snelheid en versnelling, met van elk de eenheid.",
-        "antwoord": "Snelheid geeft aan hoe snel je gaat: het is de afgelegde afstand gedeeld door de tijd, met eenheid meter per seconde (m/s). Versnelling geeft aan hoe snel je snelheid verandert: het is de verandering van de snelheid gedeeld door de tijd, met eenheid meter per seconde per seconde (m/s2). Een voorwerp kan een hoge snelheid hebben en toch versnelling nul, namelijk als het met constante snelheid beweegt."
+        "bron": "Examenstijl",
+        "ctx": "Op de A2 staat een trajectcontrole over 4,2 km waar je 100 km/h mag rijden. Een automobilist passeert het begin om 14:03:10 en het eind om 14:05:40. Hij zegt dat hij nergens harder dan 100 km/h op zijn teller heeft gezien.",
+        "v": "Bereken de gemiddelde snelheid in km/h en leg uit of de automobilist een boete krijgt en of zijn uitspraak kan kloppen.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "t = 2 min 30 s = 150 s; v = 4200 / 150 = 28 m/s = 101 km/h (1p). Gemiddeld boven 100 km/h, dus hij krijgt een boete (1p). Zijn uitspraak kan niet kloppen: als hij nooit harder dan 100 km/h reed, kan het gemiddelde niet boven 100 km/h liggen (1p)."
        },
        {
-        "vraag": "Een auto legt 150 meter af in 6 seconden. Bereken de gemiddelde snelheid.",
-        "antwoord": "De gemiddelde snelheid is de totale afstand gedeeld door de totale tijd: v = s / t = 150 / 6 = 25 m/s."
+        "bron": "Examenstijl",
+        "ctx": "Een sprinter versnelt bij de start in 2,5 s eenparig van 0 tot 10,0 m/s en loopt daarna met constant 10,0 m/s de rest van de 100 m.",
+        "v": "Bereken de versnelling, de afstand tijdens het versnellen en de totale tijd voor de 100 m.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "a = 10,0 / 2,5 = 4,0 m/s² (1p). s = ½ × 2,5 × 10,0 = 12,5 m (1p). Rest: 87,5 m / 10,0 m/s = 8,75 s; totaal 2,5 + 8,75 = 11,3 s (1p)."
        },
        {
-        "vraag": "Leg uit wat een vrije val is en hoe groot de valversnelling is.",
-        "antwoord": "Een vrije val is een val waarbij je de luchtweerstand verwaarloost, zodat alleen de zwaartekracht op het voorwerp werkt. Daardoor versnelt elk voorwerp met dezelfde valversnelling g, op aarde ongeveer 9,8 meter per seconde per seconde. In vacuüm vallen daarom een steen en een veer even snel."
+        "bron": "Examenstijl",
+        "ctx": "Een leerling laat een tennisbal van het dak van de school vallen en meet met een stopwatch een valtijd van 1,6 s. Hij neemt aan dat het een vrije val is. Zijn docent zegt dat de echte hoogte iets kleiner zal zijn dan zijn berekening.",
+        "v": "Bereken de hoogte van het dak en de snelheid waarmee de bal de grond raakt, en leg uit waarom de echte hoogte waarschijnlijk kleiner is.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "h = ½ × 9,81 × 1,6² = 12,6 m (1p). v = 9,81 × 1,6 = 15,7 m/s (1p). Door reactietijd bij het stoppen is de gemeten tijd waarschijnlijk te lang, en luchtweerstand remt de bal; de berekende hoogte is dan te groot (1p)."
        },
        {
-        "vraag": "Leg uit wat je afleest aan de helling en aan de oppervlakte in een snelheid-tijd-diagram.",
-        "antwoord": "In een snelheid-tijd-diagram geeft de helling van de lijn de versnelling weer: hoe steiler, hoe groter de versnelling. De oppervlakte onder de lijn geeft de afgelegde afstand weer. Een horizontale lijn betekent een constante snelheid; een stijgende rechte lijn betekent een constante versnelling."
+        "bron": "Examenstijl",
+        "ctx": "Een auto rijdt met 72 km/h. De bestuurder ziet een kind op straat en heeft een reactietijd van 0,80 s voordat hij remt. Daarna remt de auto met een constante vertraging van 6,0 m/s² tot stilstand.",
+        "v": "Bereken de reactieafstand, de remtijd en de remweg, en de totale stopafstand.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "v = 20 m/s; reactieafstand = 20 × 0,80 = 16 m (1p). Remtijd = 20 / 6,0 = 3,3 s; remweg = ½ × 3,3 × 20 = 33 m (1p). Stopafstand = 16 + 33 = 49 m (1p)."
        },
        {
-        "vraag": "Een fietser versnelt in 8 seconden van 4 m/s naar 12 m/s. Bereken de versnelling.",
-        "antwoord": "De versnelling is de verandering van de snelheid gedeeld door de tijd. De snelheid neemt toe met 12 min 4 is 8 m/s in 8 seconden. Dus a = 8 / 8 = 1 m/s2."
+        "bron": "Examenstijl",
+        "ctx": "In een (v,t)-diagram van een lift stijgt de snelheid in de eerste 2,0 s gelijkmatig van 0 tot 3,0 m/s, blijft dan 8,0 s constant op 3,0 m/s en daalt daarna in 2,0 s gelijkmatig naar 0.",
+        "v": "Bereken de versnelling bij het optrekken en de totale afstand die de lift aflegt.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "a = 3,0 / 2,0 = 1,5 m/s² (1p). Oppervlakte: twee driehoeken van ½ × 2,0 × 3,0 = 3,0 m en een rechthoek van 8,0 × 3,0 = 24 m (1p). Totaal 3,0 + 24 + 3,0 = 30 m (1p)."
        }
       ]
      },

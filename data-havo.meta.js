@@ -2415,20 +2415,24 @@ var VAKKEN = [
     "leerdoelen": [
      {
       "id": "C1",
+      "lo": "na.C.1",
+      "gs": 2,
       "naam": "Snelheid en versnelling",
-      "beschrijving": "Snelheid en versnelling berekenen en het verschil ertussen begrijpen, inclusief de vrije val met valversnelling g.",
+      "beschrijving": "Je rekent met snelheid (v = s / t) en versnelling (a = Δv / Δt), onderscheidt gemiddelde en momentane snelheid, eenparige en eenparig versnelde bewegingen, rekent aan de vrije val met g = 9,81 m/s² en leest snelheid, versnelling en afstand af uit (x,t)- en (v,t)-diagrammen.",
       "ceStatus": "CE",
+      "binas": "35A",
+      "val": "",
       "onderwerpen": [
        "Snelheid: v = s / t",
-       "Versnelling: a = verandering van snelheid per tijd",
-       "Verschil tussen snelheid en versnelling",
-       "Eenparige en eenparig versnelde beweging",
-       "Vrije val en valversnelling g",
-       "Diagrammen: (x,t) en (v,t)"
+       "Gemiddelde en momentane snelheid",
+       "Versnelling: Δv / Δt",
+       "Eenparig en eenparig versneld",
+       "Vrije val en valversnelling",
+       "Het (x,t)- en (v,t)-diagram"
       ],
-      "nSv": 25,
+      "nSv": 28,
       "nOe": 5,
-      "nBeg": 12,
+      "nBeg": 11,
       "hasSam": true
      },
      {
