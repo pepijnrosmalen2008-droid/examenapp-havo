@@ -1,0 +1,688 @@
+{
+ "id": "A2",
+ "lo": "na.A.2",
+ "gs": 2,
+ "naam": "Significante cijfers en rekenregels",
+ "beschrijving": "Je telt significante cijfers, weet wanneer nullen meetellen, past de regels voor vermenigvuldigen en delen en voor optellen en aftrekken toe, rondt correct af zonder tussenantwoorden af te ronden en kiest het aantal cijfers dat past bij een meetinstrument.",
+ "ceStatus": "CE",
+ "binas": "",
+ "val": "",
+ "onderwerpen": [
+  "Significante cijfers tellen",
+  "Nullen: wanneer tellen ze mee",
+  "Vermenigvuldigen en delen",
+  "Optellen en aftrekken",
+  "Afronden en tussenantwoorden",
+  "Meetinstrument en aantal cijfers"
+ ],
+ "sam": "Significante cijfers tel je vanaf het eerste cijfer dat geen nul is; voorloopnullen tellen niet, nullen tussenin en achteraan na de komma wel. Bij onduidelijke nullen gebruik je wetenschappelijke notatie. Vermenigvuldigen en delen: het antwoord krijgt het minste aantal significante cijfers. Optellen en aftrekken: het minste aantal decimalen. Aantallen en omrekenfactoren zijn exact. Rond alleen het eindantwoord af, in één keer. Lees af tot de kleinste schaaldeling.",
+ "begrippen": [
+  {
+   "t": "Significante cijfers",
+   "d": "De cijfers van een meetwaarde die iets zeggen over de meting, geteld vanaf het eerste cijfer dat geen nul is."
+  },
+  {
+   "t": "Voorloopnul",
+   "d": "Nul vóór het eerste cijfer dat geen nul is; telt niet mee als significant cijfer."
+  },
+  {
+   "t": "Decimaal",
+   "d": "Cijfer achter de komma; bij optellen en aftrekken bepaalt het minste aantal decimalen het antwoord."
+  },
+  {
+   "t": "Vermenigvuldigen / delen",
+   "d": "Regel: het antwoord krijgt zoveel significante cijfers als het gegeven met de minste."
+  },
+  {
+   "t": "Optellen / aftrekken",
+   "d": "Regel: het antwoord krijgt zoveel decimalen als het gegeven met de minste."
+  },
+  {
+   "t": "Afronden",
+   "d": "Een getal inkorten door te kijken naar het eerstvolgende cijfer: 5 of hoger naar boven, anders naar beneden."
+  },
+  {
+   "t": "Tussenantwoord",
+   "d": "Uitkomst halverwege een berekening; niet afronden, alleen het eindantwoord."
+  },
+  {
+   "t": "Exact getal",
+   "d": "Getal zonder meetonzekerheid, zoals een geteld aantal of een omrekenfactor; telt niet mee bij de regels."
+  },
+  {
+   "t": "Wetenschappelijke notatie",
+   "d": "Getal met één cijfer vóór de komma maal een macht van tien; maakt het aantal significante cijfers duidelijk."
+  },
+  {
+   "t": "Nauwkeurigheid",
+   "d": "Hoe precies een meting is; zichtbaar aan het aantal significante cijfers."
+  },
+  {
+   "t": "Kleinste schaaldeling",
+   "d": "Kleinste streepje op een meetinstrument; tot daar lees je af."
+  }
+ ],
+ "sv": [
+  {
+   "v": "Een leerling meet een lengte van 4,52 m. Uit hoeveel significante cijfers bestaat die meetwaarde?",
+   "o": [
+    "1",
+    "2",
+    "3",
+    "4, met de komma erbij"
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 0,
+   "u": "Alle cijfers die geen voorloopnul zijn, tellen.",
+   "uo": [
+    "Koos je 1? Alleen de 4 staat vóór de komma, maar de plaats van de komma maakt niet uit. De 5 en de 2 zijn ook gemeten.",
+    "Koos je 2? Dan heb je alleen de cijfers achter de komma geteld. Alle cijfers tellen mee, ook die vóór de komma.",
+    "Klopt: 4, 5 en 2 zijn alle drie significant. 4,52 m heeft dus drie significante cijfers.",
+    "Koos je 4? Er staan maar drie cijfers. De komma telt niet als cijfer; hij geeft alleen aan waar de hele meters ophouden."
+   ],
+   "uh": "4,52: drie cijfers."
+  },
+  {
+   "v": "Wat vertelt het aantal significante cijfers over een meetwaarde?",
+   "o": [
+    "Hoe groot de waarde is",
+    "Hoe nauwkeurig er gemeten is",
+    "Welke eenheid er gebruikt is",
+    "Hoeveel metingen er gedaan zijn"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 0,
+   "u": "Meer significante cijfers = nauwkeuriger.",
+   "uo": [
+    "Koos je hoe groot? 4,5 m en 4500 m kunnen allebei twee significante cijfers hebben. De grootte zit in de macht van tien, niet in het aantal cijfers.",
+    "Klopt: het aantal significante cijfers laat zien hoe nauwkeurig er gemeten is. 4,52 m is tot op de centimeter gemeten, 4,5 m maar tot op tien centimeter.",
+    "Koos je eenheid? Een eenheid omrekenen verandert het aantal significante cijfers niet. 4,52 m = 452 cm, nog steeds drie cijfers.",
+    "Koos je aantal metingen? Ook met één meting heb je een aantal significante cijfers. Ze gaan over de nauwkeurigheid van die meting."
+   ],
+   "uh": "Significante cijfers = nauwkeurigheid."
+  },
+  {
+   "v": "Waarom is 3,0 kg een ander meetresultaat dan 3 kg?",
+   "o": [
+    "3,0 kg is tot op een tiende kilogram gemeten",
+    "3,0 kg is zwaarder dan 3 kg",
+    "3 kg is nauwkeuriger omdat er minder cijfers staan",
+    "Er is geen verschil, de nul doet er niet toe"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 0,
+   "u": "De nul achter de komma laat de nauwkeurigheid zien.",
+   "uo": [
+    "Klopt: 3,0 kg heeft twee significante cijfers en is tot op 0,1 kg nauwkeurig gemeten. Bij 3 kg kan het ook 2,6 of 3,4 kg zijn geweest.",
+    "Koos je zwaarder? De waarde is hetzelfde. Het verschil zit in hoe nauwkeurig er gemeten is.",
+    "Koos je 3 kg nauwkeuriger? Het is precies andersom: minder cijfers betekent minder nauwkeurig.",
+    "Koos je geen verschil? Een nul achter de komma telt wel mee: hij laat zien dat er tot op een tiende is gemeten en dat het tiende precies 0 was."
+   ],
+   "uh": "Nul achter de komma telt.",
+   "ctx": "Twee leerlingen wegen hetzelfde pak. De een gebruikt een oude weegschaal met alleen hele kilogrammen en schrijft \"3 kg\". De ander gebruikt een digitale weegschaal die tienden laat zien en schrijft \"3,0 kg\". Hun docent zegt dat de tweede meting meer zegt, ook al lijkt het hetzelfde getal."
+  },
+  {
+   "v": "Een apotheker weegt 1,0050 kg af. Welk aantal cijfers van dit getal is significant?",
+   "o": [
+    "4",
+    "3",
+    "2",
+    "5"
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 0,
+   "u": "Nullen tussenin en achteraan na de komma tellen.",
+   "uo": [
+    "Koos je 4? Dan heb je de nul aan het eind vergeten. Die staat achter de komma en laat zien dat er tot op een tiende gram is gewogen.",
+    "Koos je 3? Dan heb je de twee nullen tussen 1 en 5 weggelaten. Nullen tussen andere cijfers tellen altijd mee.",
+    "Koos je 2? Dan heb je alleen 1 en 5 geteld. Alle nullen in dit getal staan tussen of achter de andere cijfers en tellen dus mee.",
+    "Klopt: 1, 0, 0, 5 en 0 tellen allemaal mee. De nullen tussen de 1 en de 5 tellen, en de nul achteraan na de komma ook. Vijf significante cijfers."
+   ],
+   "uh": "1,0050: vijf cijfers."
+  },
+  {
+   "v": "Welke cijfers van 0,0045 m tellen mee, en hoeveel zijn het er?",
+   "o": [
+    "5, alle cijfers samen",
+    "4",
+    "2",
+    "3"
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 1,
+   "u": "Voorloopnullen tellen niet.",
+   "uo": [
+    "Koos je 5? Dan heb je alle cijfers geteld, ook de nul vóór de komma. Voorloopnullen tellen nooit mee.",
+    "Koos je 4? Dan heb je de nullen na de komma meegeteld. Die staan alleen vóór het eerste cijfer dat geen nul is, en tellen niet mee.",
+    "Klopt: de nullen vóór de 4 geven alleen aan waar de komma staat. Alleen 4 en 5 tellen: twee significante cijfers. In wetenschappelijke notatie: 4,5·10⁻³ m.",
+    "Koos je 3? Er is geen enkele nul die meetelt: alle nullen staan vóór de 4 en geven alleen de plaats van de komma aan."
+   ],
+   "uh": "Voorloopnullen tellen niet."
+  },
+  {
+   "v": "Een lichtsluis meet een tijd van 2,050 s. Tot op hoeveel cijfers is deze meting gegeven?",
+   "o": [
+    "3",
+    "4",
+    "2",
+    "1, alleen de eerste"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 1,
+   "u": "Nullen tussen cijfers en achteraan na de komma tellen.",
+   "uo": [
+    "Koos je 3? Dan heb je de laatste nul niet meegeteld. Een nul aan het eind, achter de komma, laat zien dat er tot op duizendsten is gemeten.",
+    "Klopt: de nul tussen 2 en 5 telt mee, en de nul achteraan na de komma ook. 2,050 heeft vier significante cijfers.",
+    "Koos je 2? Dan heb je beide nullen weggelaten. Een nul tussen twee andere cijfers telt altijd mee.",
+    "Koos je 1? Alleen voorloopnullen tellen niet mee. Hier staat geen enkele nul vooraan."
+   ],
+   "uh": "Nul tussenin of achteraan na komma: telt."
+  },
+  {
+   "v": "Waarom is \"1200 m\" onduidelijk, en hoe schrijf je het met precies drie significante cijfers?",
+   "o": [
+    "Onduidelijke nullen; schrijf 1,20 · 10³ m",
+    "Het heeft altijd vier cijfers; schrijf 1200,0 m",
+    "Het heeft altijd twee cijfers; schrijf 12 · 10² m",
+    "Het is duidelijk; schrijf gewoon 1200 m"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 1,
+   "u": "Nullen achteraan zonder komma: onduidelijk → wetenschappelijke notatie.",
+   "uo": [
+    "Klopt: bij 1200 weet je niet of de twee nullen gemeten zijn of alleen plaatsvervangers. Met wetenschappelijke notatie maak je het duidelijk: 1,20·10³ m heeft drie significante cijfers.",
+    "Koos je 1200,0 m? Dat heeft vijf significante cijfers. Je wilt er drie, en dat lukt alleen met een macht van tien.",
+    "Koos je 12 · 10²? Dat heeft twee significante cijfers, en het is ook geen nette wetenschappelijke notatie.",
+    "Koos je duidelijk? Juist niet: 1200 kan twee, drie of vier significante cijfers hebben. Daarom gebruik je een macht van tien."
+   ],
+   "uh": "Onduidelijk? Gebruik ·10ⁿ.",
+   "ctx": "Een leerling meet met een meetwiel de lengte van een atletiekbaan en vindt 1200 m. Het meetwiel is tot op tien meter nauwkeurig. Haar docent zegt dat \"1200 m\" niet laat zien hoe nauwkeurig ze gemeten heeft, en dat ze het anders moet opschrijven."
+  },
+  {
+   "v": "Bij 3,40 · 10⁻⁵ m: hoeveel cijfers geven de nauwkeurigheid aan?",
+   "o": [
+    "7, als je het uitschrijft",
+    "2",
+    "5",
+    "3"
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 1,
+   "u": "In wetenschappelijke notatie tel je alleen het getal vóór ·10ⁿ.",
+   "uo": [
+    "Koos je 7? Dan heb je de nullen meegeteld die je zou krijgen als je het getal uitschrijft (0,0000340). Die voorloopnullen tellen niet.",
+    "Koos je 2? Dan heb je de nul aan het eind weggelaten. Die staat achter de komma en telt dus mee.",
+    "Koos je 5? Dan heb je de 5 uit de macht meegeteld. De macht geeft alleen de grootte aan.",
+    "Klopt: in wetenschappelijke notatie tellen alleen de cijfers vóór het maalteken: 3, 4 en 0. De macht van tien telt niet mee."
+   ],
+   "uh": "Alleen het getal vóór ·10ⁿ telt."
+  },
+  {
+   "v": "Hoe schrijf je 0,500 L in milliliter zonder nauwkeurigheid te verliezen of toe te voegen?",
+   "o": [
+    "5 · 10² mL",
+    "500 mL",
+    "5,00 · 10² mL",
+    "500,0 mL"
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 1,
+   "u": "0,500 heeft 3 sign. cijfers → 5,00·10² mL.",
+   "uo": [
+    "Koos je 5 · 10² mL? Dat is maar één significant cijfer. Dan gooi je de nauwkeurigheid van de meting weg.",
+    "Koos je 500 mL? De waarde klopt, maar uit 500 kun je niet opmaken of het één, twee of drie significante cijfers zijn.",
+    "Klopt: 0,500 L heeft drie significante cijfers. 500 mL is onduidelijk, want je weet niet of de nullen meetellen. Met 5,00·10² mL houd je precies drie cijfers.",
+    "Koos je 500,0 mL? Dat zijn vier significante cijfers, één meer dan gemeten. Dan doe je alsof je nauwkeuriger hebt gemeten."
+   ],
+   "uh": "Omrekenen: aantal cijfers behouden.",
+   "ctx": "Een leerling meet met een maatkolf precies 0,500 L water af. In haar verslag moet ze alle volumes in milliliter opschrijven. Ze twijfelt hoe ze dat doet zonder te doen alsof ze nauwkeuriger of minder nauwkeurig heeft gemeten."
+  },
+  {
+   "v": "Welke regel geldt voor significante cijfers bij vermenigvuldigen en delen?",
+   "o": [
+    "Antwoord krijgt zoveel decimalen als het getal met de minste decimalen",
+    "Antwoord krijgt zoveel cijfers als het minst nauwkeurige getal",
+    "Antwoord krijgt altijd drie significante cijfers",
+    "Antwoord krijgt alle cijfers van de rekenmachine"
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 2,
+   "u": "×, ÷: minste aantal significante cijfers.",
+   "uo": [
+    "Koos je decimalen? Dat is de regel voor optellen en aftrekken. Bij vermenigvuldigen tellen de significante cijfers.",
+    "Klopt: bij vermenigvuldigen en delen kijk je naar het aantal significante cijfers. Het antwoord krijgt er zoveel als het getal met de minste.",
+    "Koos je altijd drie? Drie is vaak een goede keus, maar het hangt af van de gegevens. Heeft een gegeven er maar twee, dan krijgt het antwoord er ook twee.",
+    "Koos je alle cijfers? Dan doe je alsof je veel nauwkeuriger gemeten hebt dan echt zo is. Het antwoord kan niet nauwkeuriger zijn dan de minst nauwkeurige meting."
+   ],
+   "uh": "×, ÷: minste significante cijfers."
+  },
+  {
+   "v": "Een auto rijdt 125 m in 4,0 s. Hoe schrijf je de gemiddelde snelheid op?",
+   "o": [
+    "31 m/s",
+    "31,25 m/s",
+    "31,3 m/s",
+    "30 m/s"
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 2,
+   "u": "4,0 heeft 2 sign. cijfers → antwoord 2.",
+   "uo": [
+    "Klopt: 125 / 4,0 = 31,25. De tijd 4,0 s heeft maar twee significante cijfers, dus het antwoord ook: 31 m/s.",
+    "Koos je 31,25 m/s? Dat is wat de rekenmachine geeft, maar zo nauwkeurig heb je niet gemeten. Rond af op twee significante cijfers.",
+    "Koos je 31,3 m/s? Dat zijn drie significante cijfers, zoveel als 125 heeft. Maar het minst nauwkeurige gegeven, 4,0, heeft er twee.",
+    "Koos je 30 m/s? Dan heb je te veel afgerond: dat is één significant cijfer. Met twee cijfers wordt het 31 m/s."
+   ],
+   "uh": "Twee cijfers, dus 31 m/s."
+  },
+  {
+   "v": "Wat is de dichtheid van het blokje, met het juiste aantal significante cijfers?",
+   "o": [
+    "3 g/cm³",
+    "2,72 g/cm³",
+    "2,7222 g/cm³",
+    "2,7 g/cm³"
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 2,
+   "u": "49,0 / 18 = 2,72; 18 heeft 2 sign. cijfers → 2,7.",
+   "uo": [
+    "Koos je 3? Dat is één significant cijfer, te weinig. Met twee cijfers houd je 2,7 over.",
+    "Koos je 2,72 g/cm³? Dat zijn drie significante cijfers, zoveel als de massa heeft. Maar het volume, 18 cm³, heeft er twee, en dat bepaalt het antwoord.",
+    "Koos je 2,7222? Dat zijn alle cijfers van de rekenmachine. Zo nauwkeurig is het volume niet gemeten.",
+    "Klopt: ρ = m / V = 49,0 / 18 = 2,72... Het volume heeft maar twee significante cijfers, dus het antwoord ook: 2,7 g/cm³. Dat past bij aluminium."
+   ],
+   "uh": "Minst nauwkeurige gegeven bepaalt.",
+   "ctx": "Een leerling bepaalt de dichtheid van een metalen blokje. Op een digitale weegschaal leest hij een massa van 49,0 g af. Het volume meet hij in een maatcilinder met water: het water stijgt van 50 naar 68 cm³, dus het volume is 18 cm³."
+  },
+  {
+   "v": "Je berekent 2,0 × 3,14159. Hoeveel significante cijfers krijgt het antwoord?",
+   "o": [
+    "3",
+    "6, net als 3,14159",
+    "2",
+    "1"
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 2,
+   "u": "Minste: 2,0 heeft er 2.",
+   "uo": [
+    "Koos je 3? Er is geen gegeven met drie significante cijfers. Het minst nauwkeurige, 2,0, heeft er twee, dus het antwoord is 6,3.",
+    "Koos je 6? Dat is het aantal van het nauwkeurigste getal. Bij vermenigvuldigen telt juist het minst nauwkeurige.",
+    "Klopt: 2,0 heeft twee significante cijfers en 3,14159 zes. Het antwoord krijgt er twee: 6,3.",
+    "Koos je 1? 2,0 heeft twee significante cijfers, want de nul achter de komma telt mee."
+   ],
+   "uh": "Tel het kleinste aantal."
+  },
+  {
+   "v": "Hoe groot is de oppervlakte van het tafelblad, met het juiste aantal significante cijfers?",
+   "o": [
+    "0,96 m²",
+    "1 m²",
+    "0,960 m²",
+    "0,9 m²"
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 2,
+   "u": "1,20 × 0,8 = 0,96; 0,8 heeft 1 sign. cijfer → 1 m².",
+   "uo": [
+    "Koos je 0,96 m²? Dat zijn twee significante cijfers, één meer dan de breedte heeft. De ruwe meting van 0,8 m beperkt het antwoord.",
+    "Klopt: 1,20 × 0,8 = 0,96 m². De breedte 0,8 m heeft maar één significant cijfer, dus het antwoord ook. Afgerond is dat 1 m².",
+    "Koos je 0,960 m²? Drie significante cijfers, zoveel als de lengte heeft. Maar het minst nauwkeurige gegeven bepaalt het antwoord.",
+    "Koos je 0,9 m²? Dan heb je afgekapt in plaats van afgerond. 0,96 rond je af op één cijfer naar 1 m²."
+   ],
+   "uh": "Eén cijfer: 1 m².",
+   "ctx": "Een leerling meet een tafelblad op. De lengte meet ze nauwkeurig met een rolmaat: 1,20 m. De breedte schat ze snel met haar arm: ongeveer 0,8 m. Ze wil de oppervlakte van het tafelblad uitrekenen."
+  },
+  {
+   "v": "Welke regel geldt bij optellen en aftrekken?",
+   "o": [
+    "Het antwoord krijgt zoveel decimalen als het getal met de minste decimalen",
+    "Het antwoord krijgt zoveel significante cijfers als het getal met de minste",
+    "Het antwoord krijgt altijd twee decimalen",
+    "Bij optellen hoef je niet af te ronden"
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 3,
+   "u": "+, −: minste aantal decimalen (cijfers achter de komma).",
+   "uo": [
+    "Klopt: bij optellen en aftrekken gaat het om de cijfers achter de komma. Het antwoord krijgt evenveel decimalen als het getal met de minste decimalen.",
+    "Koos je significante cijfers? Dat is de regel voor vermenigvuldigen en delen. Bij optellen kijk je naar de decimalen.",
+    "Koos je altijd twee? Het aantal decimalen hangt af van de gegevens. Heeft er een maar één, dan krijgt het antwoord er ook één.",
+    "Koos je niet afronden? Ook bij optellen kan het antwoord niet nauwkeuriger zijn dan het minst nauwkeurige getal. Je rondt af op de minste decimalen."
+   ],
+   "uh": "+, −: minste decimalen."
+  },
+  {
+   "v": "Hoeveel is 12,5 m + 3,27 m, met het juiste aantal cijfers?",
+   "o": [
+    "15,770 m",
+    "15,77 m",
+    "16 m",
+    "15,8 m"
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 3,
+   "u": "12,5 heeft 1 decimaal → antwoord 1 decimaal.",
+   "uo": [
+    "Koos je 15,770 m? Dat is nog nauwkeuriger dan de rekenmachine, en zeker nauwkeuriger dan gemeten is.",
+    "Koos je 15,77 m? Dat is de uitkomst zonder afronden. Maar 12,5 m is maar tot op een tiende gemeten, dus het honderdste is niet zeker.",
+    "Koos je 16 m? Dan heb je op hele meters afgerond. Met één decimaal wordt het 15,8 m.",
+    "Klopt: 12,5 + 3,27 = 15,77. Het getal 12,5 heeft één decimaal, dus het antwoord ook: 15,8 m."
+   ],
+   "uh": "Eén decimaal: 15,8 m."
+  },
+  {
+   "v": "Hoe zwaar is de lading volgens de weegbrug, met het juiste aantal cijfers?",
+   "o": [
+    "3,36 · 10³ kg",
+    "3362 kg",
+    "3,4 · 10³ kg",
+    "3361,5 kg"
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 3,
+   "u": "15 240 − 11 878 = 3362; de grootste onzekerheid is 100 kg → 3,4·10³ kg.",
+   "uo": [
+    "Koos je 3,36 · 10³ kg? Dat is tot op tien kilogram. De volle vrachtwagen is maar tot op honderd kilogram gewogen.",
+    "Koos je 3362 kg? Dat is de uitkomst van de rekenmachine. Maar 15 240 kg is maar tot op honderd kilogram gemeten, dus de laatste twee cijfers zijn niet zeker.",
+    "Klopt: 15 240 − 11 878 = 3362 kg. De weegbrug weegt de volle vrachtwagen alleen tot op honderd kilogram nauwkeurig. Bij aftrekken bepaalt dat de nauwkeurigheid: 3,4·10³ kg.",
+    "Koos je 3361,5 kg? Dat is nauwkeuriger dan beide wegingen. Je kunt niet op een halve kilogram nauwkeurig zijn als je op honderd kilogram gewogen hebt."
+   ],
+   "uh": "Aftrekken: minst nauwkeurige positie.",
+   "ctx": "Een vrachtwagen rijdt beladen over een weegbrug, die 15 240 kg aangeeft; de brug is tot op 100 kg nauwkeurig. Daarna wordt de lege vrachtwagen op een nauwkeurigere weegschaal gewogen: 11 878 kg. De chauffeur wil weten hoe zwaar de lading was."
+  },
+  {
+   "v": "Een bak weegt leeg 125,3 g en met water 230 g. Hoeveel water zit erin?",
+   "o": [
+    "104,7 g",
+    "105 g",
+    "104,70 g",
+    "100 g"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 3,
+   "u": "230 heeft 0 decimalen → antwoord op hele grammen.",
+   "uo": [
+    "Koos je 104,7 g? Dat is de rekenmachine-uitkomst. Maar 230 g is alleen op hele grammen gemeten, dus het tiende is niet zeker.",
+    "Klopt: 230 − 125,3 = 104,7 g. De meting 230 g heeft geen decimalen, dus het antwoord ook niet: 105 g.",
+    "Koos je 104,70 g? Twee decimalen is veel nauwkeuriger dan gemeten is. Rond af op hele grammen.",
+    "Koos je 100 g? Dan heb je op tientallen afgerond. De metingen zijn op hele grammen gedaan."
+   ],
+   "uh": "Hele grammen: 105 g."
+  },
+  {
+   "v": "Hoeveel is de temperatuur gestegen, met het juiste aantal cijfers?",
+   "o": [
+    "3 °C",
+    "3,4 °C",
+    "3,40 °C",
+    "3,0 °C"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 3,
+   "u": "21,4 − 18 = 3,4; 18 heeft 0 decimalen → 3 °C.",
+   "uo": [
+    "Klopt: 21,4 − 18 = 3,4 °C. De begintemperatuur van 18 °C is op hele graden afgelezen, dus het verschil ook: 3 °C.",
+    "Koos je 3,4 °C? Dat is de rekenmachine-uitkomst. Maar 18 °C is maar op hele graden nauwkeurig, dus het tiende van het verschil is niet zeker.",
+    "Koos je 3,40 °C? Dat is nog nauwkeuriger dan de beste meting. Bij aftrekken bepaalt de meting met de minste decimalen het antwoord.",
+    "Koos je 3,0 °C? Dat suggereert dat je op een tiende graad nauwkeurig weet hoe groot de stijging is. Met een meting op hele graden kan dat niet."
+   ],
+   "uh": "Aftrekken: minste decimalen.",
+   "ctx": "Bij een proef met een waterkoker leest een leerling de begintemperatuur af op een oude thermometer met alleen hele graden: 18 °C. Na een minuut meet ze met een digitale thermometer 21,4 °C. Ze wil weten hoeveel de temperatuur is gestegen."
+  },
+  {
+   "v": "Hoe rond je 0,04567 af op twee significante cijfers?",
+   "o": [
+    "0,0457",
+    "0,045",
+    "0,05",
+    "0,046"
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 4,
+   "u": "Eerste twee significante: 4 en 5; volgend cijfer 6 → naar boven.",
+   "uo": [
+    "Koos je 0,0457? Dat zijn drie significante cijfers. Rond nog één cijfer verder af.",
+    "Koos je 0,045? Dan heb je afgekapt in plaats van afgerond. Het cijfer na de 5 is een 6, dus de 5 wordt een 6.",
+    "Koos je 0,05? Dat is één significant cijfer. Je wilt er twee, dus je houdt de 4 en de 5 en kijkt naar het cijfer daarna.",
+    "Klopt: de eerste twee significante cijfers zijn 4 en 5. Het volgende cijfer is een 6, dus rond je naar boven af: 0,046."
+   ],
+   "uh": "Afronden: kijk naar het volgende cijfer."
+  },
+  {
+   "v": "Waarom moet je tussenantwoorden niet afronden?",
+   "o": [
+    "Afronden mag alleen bij optellen",
+    "Tussenantwoorden mogen geen eenheid hebben",
+    "Afrondfouten stapelen zich op",
+    "De rekenmachine rekent anders verkeerd"
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 4,
+   "u": "Rond pas af bij het eindantwoord.",
+   "uo": [
+    "Koos je alleen bij optellen? Afronden doe je bij elk eindantwoord, ook bij vermenigvuldigen. Alleen niet halverwege.",
+    "Koos je geen eenheid? Een tussenantwoord mag en moet juist een eenheid hebben. Het gaat erom dat je er niet te vroeg cijfers vanaf haalt.",
+    "Klopt: als je elke tussenstap afrondt, tellen de kleine afrondfouten op. Het eindantwoord kan dan in het laatste cijfer fout zijn. Reken door met alle cijfers en rond alleen het eindantwoord af.",
+    "Koos je rekenmachine? De rekenmachine rekent prima. Het probleem ontstaat als jij een tussenantwoord afrondt en met dat afgeronde getal verder rekent."
+   ],
+   "uh": "Pas aan het eind afronden."
+  },
+  {
+   "v": "Hoe groot is de afstand als je correct doorrekent?",
+   "o": [
+    "269 m",
+    "261 m",
+    "260,8 m",
+    "2,6 · 10² m"
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 4,
+   "u": "45,4 / 3,6 = 12,61 m/s; × 20,7 = 261 m (3 sign. cijfers; 3,6 is exact).",
+   "uo": [
+    "Koos je 269 m? Dat krijg je als je de snelheid eerst afrondt op 13 m/s: 13 × 20,7 = 269 m. De afrondfout in de tussenstap verandert het eindantwoord.",
+    "Klopt: v = 45,4 / 3,6 = 12,611 m/s (niet afronden) en s = 12,611 × 20,7 = 261 m. De gegevens hebben drie significante cijfers; de factor 3,6 is een exacte omrekenfactor en telt niet mee.",
+    "Koos je 260,8 m? Dat zijn vier significante cijfers, terwijl de gegevens er drie hebben. Rond af op 261 m.",
+    "Koos je 2,6 · 10² m? Dan heb je de factor 3,6 als meetwaarde met twee cijfers gezien. Een omrekenfactor is exact, dus houd je drie cijfers."
+   ],
+   "uh": "Doorrekenen, dan afronden.",
+   "ctx": "Een fietser rijdt met 45,4 km/h een helling af en doet daar 20,7 s over. Een leerling rekent eerst de snelheid om: 45,4 / 3,6 = 12,6 m/s, en rondt die af op 13 m/s. Daarna berekent ze de afstand. Haar buurman rondt tussendoor niet af."
+  },
+  {
+   "v": "Een tafel heeft 4 poten van elk 0,75 kg. Hoeveel significante cijfers heeft de totale massa van de poten?",
+   "o": [
+    "2, het aantal 4 is exact en telt niet",
+    "1, want 4 heeft één significant cijfer",
+    "3, want je telt de cijfers bij elkaar op",
+    "4, want er zijn vier poten"
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 4,
+   "u": "Getelde aantallen zijn exact.",
+   "uo": [
+    "Klopt: het aantal poten, 4, is geteld en dus precies. Het beperkt de nauwkeurigheid niet. 4 × 0,75 = 3,0 kg, met twee significante cijfers zoals 0,75.",
+    "Koos je 1? Een geteld aantal is geen meting en heeft geen meetonzekerheid. Het telt niet mee bij de regel voor significante cijfers.",
+    "Koos je 3? Je telt het aantal significante cijfers van gegevens niet bij elkaar op. Bij vermenigvuldigen neem je het kleinste aantal van de metingen.",
+    "Koos je 4? Het aantal poten zegt niets over het aantal significante cijfers. Dat hangt af van de meting van één poot: 0,75 kg."
+   ],
+   "uh": "Aantallen zijn exact."
+  },
+  {
+   "v": "Hoe rond je 2,449 af op twee significante cijfers?",
+   "o": [
+    "2,40",
+    "2,5",
+    "2,45",
+    "2,4"
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 4,
+   "u": "Kijk alleen naar het eerstvolgende cijfer (4) → naar beneden.",
+   "uo": [
+    "Koos je 2,40? Dat zijn drie significante cijfers, en de nul suggereert een nauwkeurigheid die er niet is.",
+    "Koos je 2,5? Dan heb je in stappen afgerond: eerst 2,449 → 2,45 en daarna → 2,5. Kijk alleen naar het cijfer direct na het laatste cijfer dat je houdt.",
+    "Koos je 2,45? Dat zijn drie significante cijfers. Je moet er nog één cijfer vanaf halen.",
+    "Klopt: na de eerste twee cijfers (2,4) komt een 4. Die is kleiner dan 5, dus je rondt naar beneden af: 2,4."
+   ],
+   "uh": "Eén keer afronden, niet in stappen."
+  },
+  {
+   "v": "Met een liniaal met millimeterstreepjes meet je een lengte. Hoe schrijf je het resultaat het best op?",
+   "o": [
+    "12,35 cm",
+    "12 cm",
+    "12,3 cm",
+    "123,45 mm"
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 5,
+   "u": "Aflezen tot de kleinste schaaldeling (mm).",
+   "uo": [
+    "Koos je 12,35 cm? Met een liniaal met millimeterstreepjes kun je het honderdste deel van een centimeter niet betrouwbaar aflezen. Hooguit kun je een halve millimeter schatten.",
+    "Koos je 12 cm? Dan gooi je informatie weg: je hebt tot op de millimeter gemeten, dus schrijf die ook op.",
+    "Klopt: met millimeterstreepjes lees je tot op een millimeter af: 12,3 cm. Zo laat je zien hoe nauwkeurig je gemeten hebt.",
+    "Koos je 123,45 mm? Dat zou tot op een honderdste millimeter zijn. Zo nauwkeurig is een liniaal bij lange na niet."
+   ],
+   "uh": "Liniaal: tot op mm."
+  },
+  {
+   "v": "Een digitale stopwatch geeft 12,47 s aan. Waarom schrijf je toch vaak 12,5 s op?",
+   "o": [
+    "De stopwatch rondt zelf verkeerd af",
+    "Je reactietijd maakt het honderdste onbetrouwbaar",
+    "Tijden schrijf je altijd met één decimaal",
+    "12,47 heeft te veel significante cijfers voor de eenheid seconde"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 5,
+   "u": "Reactietijd ~0,1-0,2 s → honderdsten niet zinvol.",
+   "uo": [
+    "Koos je verkeerd afronden? De stopwatch telt prima. De onzekerheid zit in jouw reactie bij het indrukken.",
+    "Klopt: als je met de hand start en stopt, is je reactietijd ongeveer een tiende seconde. Het honderdste deel is dan niet betrouwbaar, ook al toont de stopwatch het wel.",
+    "Koos je altijd één decimaal? Dat hangt van de meting af. Met lichtsluizen kun je wel op honderdsten nauwkeurig meten.",
+    "Koos je te veel cijfers voor seconde? De eenheid bepaalt niet hoeveel cijfers mag. Het gaat om de nauwkeurigheid van de meting."
+   ],
+   "uh": "Reactietijd beperkt de nauwkeurigheid."
+  },
+  {
+   "v": "Hoeveel significante cijfers geef je de trillingstijd van de slinger?",
+   "o": [
+    "3: 1,62 s",
+    "4: 1,624 s",
+    "2: 1,6 s",
+    "5: 1,6240 s"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 5,
+   "u": "16,24 s / 10 = 1,624; hele meting op 0,1 s → T op 0,01 s.",
+   "uo": [
+    "Klopt: de totale tijd is door je reactietijd op ongeveer 0,1 s nauwkeurig: 16,2 s. Gedeeld door 10 is T nauwkeurig op 0,01 s: 1,62 s. Daarom meet je juist tien trillingen.",
+    "Koos je 1,624 s? Dan neem je de honderdsten van de stopwatch serieus, terwijl je reactietijd ongeveer een tiende is. Na delen door 10 is het duizendste niet zeker.",
+    "Koos je 1,6 s? Dan gooi je de winst van het meten van tien trillingen weg. Door te delen door 10 wordt de onzekerheid ook tien keer kleiner.",
+    "Koos je 1,6240 s? Dat is nog nauwkeuriger dan de stopwatch zelf. Die extra nul is niet gemeten."
+   ],
+   "uh": "Tien trillingen: onzekerheid ÷ 10.",
+   "ctx": "Een leerling meet de trillingstijd van een slinger. Ze start en stopt de stopwatch met de hand. Voor tien hele trillingen leest ze 16,24 s af. Haar reactietijd schat ze op ongeveer een tiende seconde."
+  },
+  {
+   "v": "Je meet de dikte van een munt met een schuifmaat die op 0,1 mm afleest. Hoe noteer je het?",
+   "o": [
+    "2,312 mm",
+    "2 mm",
+    "2,30 mm",
+    "2,3 mm"
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 5,
+   "u": "Aflezen tot de kleinste eenheid van het instrument: 0,1 mm.",
+   "uo": [
+    "Koos je 2,312 mm? Zo nauwkeurig kan alleen een micrometer meten. Met een schuifmaat van 0,1 mm is dat niet mogelijk.",
+    "Koos je 2 mm? Dan gooi je de nauwkeurigheid van de schuifmaat weg. Met dit instrument kun je tienden aflezen.",
+    "Koos je 2,30 mm? Dat zou betekenen dat je honderdsten kunt aflezen. Deze schuifmaat gaat maar tot een tiende.",
+    "Klopt: een schuifmaat met een nonius van 0,1 mm laat je tot op een tiende millimeter aflezen: 2,3 mm. Dat zijn twee significante cijfers."
+   ],
+   "uh": "Schuifmaat: tot 0,1 mm."
+  }
+ ],
+ "oe": [
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een leerling meet de afmetingen van een houten blok: lengte 12,4 cm, breedte 5,1 cm en hoogte 2,05 cm. De massa is op een digitale weegschaal 85,62 g. Ze wil de dichtheid van het hout weten.",
+   "v": "Bereken het volume en de dichtheid van het blok en geef beide met het juiste aantal significante cijfers.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "V = 12,4 × 5,1 × 2,05 = 129,6... cm³; met twee significante cijfers (5,1): 1,3·10² cm³ (1p). ρ = 85,62 / 129,6 = 0,661 g/cm³ (doorrekenen met het onafgeronde volume) (1p). Ook hier bepaalt 5,1 het aantal: 0,66 g/cm³ (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een vrachtwagen weegt beladen 18,25 ton op een nauwkeurige weegbrug. Na het lossen weegt hij op een oude weegbrug 12,9 ton. De vervoerder wil weten hoeveel lading er is afgeleverd. Een medewerker schrijft \"5,35 ton\".",
+   "v": "Bereken de massa van de lading met het juiste aantal cijfers en beoordeel het antwoord van de medewerker.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "18,25 − 12,9 = 5,35 ton (1p). Bij aftrekken telt het minste aantal decimalen: 12,9 heeft er één, dus 5,4 ton (1p). De medewerker geeft een cijfer te veel; het honderdste is niet zeker omdat de tweede weging alleen op tienden nauwkeurig is (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een leerling meet de trillingstijd van een slinger door de tijd van 20 trillingen te meten: 28,4 s. Haar reactietijd bij het starten en stoppen is ongeveer 0,1 s. Haar buurman meet de tijd van één trilling: 1,4 s.",
+   "v": "Bereken de trillingstijd uit de meting van de leerling met het juiste aantal cijfers en leg uit waarom haar meting nauwkeuriger is dan die van haar buurman.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "T = 28,4 / 20 = 1,42 s; het aantal 20 is exact, dus drie significante cijfers (1p). De reactietijd van 0,1 s wordt over 20 trillingen verdeeld: per trilling 0,005 s (1p). Bij één trilling is de onzekerheid 0,1 s op 1,4 s, veel groter (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een fietser rijdt 24,0 km in 1 uur en 12 minuten. Een leerling rekent zo: 1 uur en 12 minuten is 1,2 h, dus v = 24,0 / 1,2 = 20 km/h. Haar docent zegt dat het antwoord 20,0 km/h moet zijn.",
+   "v": "Leg uit wie gelijk heeft over het aantal significante cijfers.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "1 uur en 12 minuten is precies 1,2 h: de tijd is in hele minuten gegeven en de omrekening is exact (1p). De afstand 24,0 km heeft drie significante cijfers en bepaalt het antwoord (1p). De docent heeft gelijk: 20,0 km/h (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een leerling berekent de kinetische energie van een bal van 0,45 kg met een snelheid van 12,6 m/s. Ze rekent eerst v² = 158,76 en rondt dat af op 1,6·10² m²/s². Daarna rekent ze Ek = ½ × 0,45 × 1,6·10² = 36 J.",
+   "v": "Bereken de kinetische energie correct en leg uit wat er misging.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Ek = ½ × 0,45 × 158,76 = 35,7 J, afgerond op twee significante cijfers (0,45): 36 J (2p). Hier komt het toevallig op hetzelfde uit, maar door het tussenantwoord v² af te ronden kan het eindantwoord afwijken; rond alleen het eindantwoord af (1p)."
+  }
+ ]
+}

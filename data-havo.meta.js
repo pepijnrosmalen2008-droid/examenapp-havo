@@ -2146,6 +2146,28 @@ var VAKKEN = [
       "nOe": 5,
       "nBeg": 11,
       "hasSam": true
+     },
+     {
+      "id": "A2",
+      "lo": "na.A.2",
+      "gs": 2,
+      "naam": "Significante cijfers en rekenregels",
+      "beschrijving": "Je telt significante cijfers, weet wanneer nullen meetellen, past de regels voor vermenigvuldigen en delen en voor optellen en aftrekken toe, rondt correct af zonder tussenantwoorden af te ronden en kiest het aantal cijfers dat past bij een meetinstrument.",
+      "ceStatus": "CE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Significante cijfers tellen",
+       "Nullen: wanneer tellen ze mee",
+       "Vermenigvuldigen en delen",
+       "Optellen en aftrekken",
+       "Afronden en tussenantwoorden",
+       "Meetinstrument en aantal cijfers"
+      ],
+      "nSv": 28,
+      "nOe": 5,
+      "nBeg": 11,
+      "hasSam": true
      }
     ]
    },
