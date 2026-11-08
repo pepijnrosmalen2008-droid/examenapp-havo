@@ -4319,5 +4319,124 @@ Object.assign(SAM_RICH,{
 <text x="24" y="40" font-size="12" font-weight="700" fill="var(--or)">+1,6 g O₂</text><text x="24" y="56" font-size="11.5" fill="var(--mu)">uit de lucht</text>
 </g></svg><div class="sam-figcap">De kroes wordt zwaarder, maar de wet klopt: <strong>2,4 g magnesium + 1,6 g zuurstof = 4,0 g magnesiumoxide</strong>. De zuurstof kwam uit de lucht en woog je vooraf niet mee.</div></div>
 <div class="sam-tip"><strong>Examentip:</strong> controleer bij een ionvergelijking als laatste stap de lading. Klopt het aantal atomen maar niet de lading, dan staat er een fout in de coëfficiënten of in een ionlading.</div>
+</div>`,
+'havo_sk_C2':`<div class="sam-intro">Met een kloppende reactievergelijking kun je uitrekenen hoeveel stof je nodig hebt en hoeveel er ontstaat. De sleutel is de <strong>molverhouding</strong>: de coëfficiënten gelden voor mol, niet voor gram. Je leert het <strong>rekenschema</strong>, werken met een <strong>beperkende stof</strong>, het <strong>rendement</strong> en rekenen met gasvolumes.</div>
+<div class="sam-head">Begrippenlijst</div>
+<table class="sam-table"><thead><tr><th>Begrip</th><th>Betekenis</th></tr></thead><tbody>
+<tr><td>Mol</td><td>vaste hoeveelheid deeltjes: 6,02 · 10²³</td></tr>
+<tr><td>Molaire massa (M)</td><td>massa van 1 mol, in g/mol</td></tr>
+<tr><td>Molverhouding</td><td>verhouding van de coëfficiënten</td></tr>
+<tr><td>Beperkende stof</td><td>beginstof die als eerste op is</td></tr>
+<tr><td>Overmaat</td><td>beginstof waarvan er over blijft</td></tr>
+<tr><td>Rendement</td><td>praktische ÷ theoretische opbrengst × 100%</td></tr>
+<tr><td>Molair volume (Vm)</td><td>24,5 L per mol gas bij 298 K en p₀</td></tr>
+</tbody></table>
+
+<div class="sam-chapter"><div class="sam-ch-title"><span class="sam-ch-n">1</span>De molverhouding staat in de vergelijking</div>
+<p>De coëfficiënten in een kloppende vergelijking zeggen in welke verhouding deeltjes reageren. Omdat een <strong>mol</strong> een vaste hoeveelheid deeltjes is (6,02 · 10²³), gelden dezelfde getallen voor mol. Bij N₂ + 3 H₂ → 2 NH₃ is de <strong>molverhouding</strong> N₂ : H₂ : NH₃ = 1 : 3 : 2. Uit 6,0 mol waterstof ontstaat dus 6,0 × 2/3 = 4,0 mol ammoniak.</p>
+<p>Je hebt steeds maar twee stoffen nodig: de stof die gegeven is en de stof die gevraagd wordt. Deel de coëfficiënt van de gevraagde stof door die van de gegeven stof, en vermenigvuldig het aantal mol daarmee.</p>
+<div class="sam-figure"><svg viewBox="0 0 320 190" role="img" aria-label="Deeltjesmodel van de vorming van ammoniak: één stikstofmolecuul en drie waterstofmoleculen geven twee ammoniakmoleculen, molverhouding 1 : 3 : 2">
+<g font-family="inherit">
+<g fill="var(--or)"><circle cx="26" cy="74" r="11"/><circle cx="46" cy="74" r="11"/></g>
+<g fill="rgba(var(--or-rgb),.25)"><circle cx="88" cy="46" r="8"/><circle cx="102" cy="46" r="8"/><circle cx="88" cy="74" r="8"/><circle cx="102" cy="74" r="8"/><circle cx="88" cy="102" r="8"/><circle cx="102" cy="102" r="8"/></g>
+<path d="M126 74h28" stroke="var(--dk)" stroke-width="2"/><polygon points="160,74 152,69 152,79" fill="var(--dk)"/>
+<g fill="var(--or)"><circle cx="210" cy="56" r="11"/><circle cx="270" cy="92" r="11"/></g>
+<g fill="rgba(var(--or-rgb),.25)"><circle cx="194" cy="68" r="7"/><circle cx="226" cy="68" r="7"/><circle cx="210" cy="40" r="7"/><circle cx="254" cy="104" r="7"/><circle cx="286" cy="104" r="7"/><circle cx="270" cy="76" r="7"/></g>
+<g font-size="10" font-weight="700" text-anchor="middle" fill="#fff"><text x="26" y="78">N</text><text x="46" y="78">N</text><text x="210" y="60">N</text><text x="270" y="96">N</text></g>
+<g font-size="12" font-weight="700" text-anchor="middle" fill="var(--dk)"><text x="36" y="140">1 N₂</text><text x="95" y="140">3 H₂</text><text x="240" y="140">2 NH₃</text></g>
+<path d="M14 152h292" stroke="var(--bo)"/>
+<g font-size="15" font-weight="800" text-anchor="middle" fill="var(--or)"><text x="36" y="176">1</text><text x="66" y="176">:</text><text x="95" y="176">3</text><text x="168" y="176">:</text><text x="240" y="176">2</text></g>
+</g></svg><div class="sam-figcap">Tel de moleculen: <strong>1 stikstof op 3 waterstof geeft 2 ammoniak</strong>. Diezelfde verhouding geldt voor mol, omdat een mol een vast aantal deeltjes is.</div></div>
+<div class="sam-onthoud"><strong>Onthoud:</strong> coëfficiënten zijn een verhouding in mol, nooit in gram.</div>
+</div>
+
+<div class="sam-chapter"><div class="sam-ch-title"><span class="sam-ch-n">2</span>Van gram naar mol en terug</div>
+<p>Een weegschaal geeft gram, de vergelijking werkt in mol. De brug is de <strong>molaire massa</strong> M: de massa van 1 mol van een stof. Je berekent M door de atoommassa's uit Binas op te tellen, elk keer de index. Voor H₂SO₄ is dat 2 × 1,008 + 32,06 + 4 × 16,00 = 98,08 g/mol.</p>
+<p>Van gram naar mol deel je door M: n = m / M. Van mol naar gram vermenigvuldig je met M: m = n × M. Schat altijd even: 9 g water is de helft van 18 g, dus een halve mol.</p>
+<div class="sam-figure"><svg viewBox="0 0 320 200" role="img" aria-label="Drie bekers met elk precies 1 mol stof: water 18 gram, keukenzout 58 gram en suiker 342 gram, zodat je ziet dat een mol per stof een andere massa heeft">
+<g font-family="inherit">
+<path d="M14 160h292" stroke="var(--dk)" stroke-width="2"/>
+<g fill="none" stroke="var(--mu)" stroke-width="2"><path d="M30 96v64h56V96"/><path d="M132 82v78h56V82"/><path d="M234 40v120h56V40"/></g>
+<rect x="32" y="153" width="52" height="6" fill="rgba(var(--or-rgb),.45)"/>
+<rect x="134" y="142" width="52" height="17" fill="rgba(var(--or-rgb),.6)"/>
+<rect x="236" y="59" width="52" height="100" fill="var(--or)"/>
+<g font-size="13" font-weight="800" text-anchor="middle" fill="var(--dk)"><text x="58" y="88">18,0 g</text><text x="160" y="74">58,4 g</text><text x="262" y="32">342 g</text></g>
+<g font-size="12" font-weight="700" text-anchor="middle" fill="var(--dk)"><text x="58" y="178">water</text><text x="160" y="178">keukenzout</text><text x="262" y="178">suiker</text></g>
+<g font-size="11" text-anchor="middle" fill="var(--mu)"><text x="58" y="194">H₂O</text><text x="160" y="194">NaCl</text><text x="262" y="194">C₁₂H₂₂O₁₁</text></g>
+</g></svg><div class="sam-figcap">In elke beker zit precies <strong>1 mol</strong>, evenveel deeltjes. Toch is de massa heel verschillend (de hoogtes zijn op schaal): grotere moleculen wegen meer. Daarom reken je eerst om naar mol.</div></div>
+</div>
+
+<div class="sam-chapter"><div class="sam-ch-title"><span class="sam-ch-n">3</span>Het rekenschema in vier stappen</div>
+<p>Bijna elke rekenvraag over een reactie volgt dezelfde route. Je gaat van de gegeven stof naar de gevraagde stof, en wisselt alleen in mol van stof. De grootste fout is de coëfficiënten toepassen op gram: bij CH₄ → CO₂ is de verhouding 1 : 1 in mol, maar 1,6 g methaan geeft 4,4 g koolstofdioxide.</p>
+<div class="sam-figure"><svg viewBox="0 0 320 200" role="img" aria-label="Rekenschema: gram van de gegeven stof gedeeld door M wordt mol, met de molverhouding naar mol van de gevraagde stof, keer M naar gram van de gevraagde stof">
+<g font-family="inherit">
+<g fill="var(--s)" stroke="var(--or)" stroke-width="2"><rect x="10" y="22" width="120" height="44" rx="12"/><rect x="190" y="22" width="120" height="44" rx="12"/></g>
+<g fill="var(--or)"><rect x="10" y="132" width="120" height="44" rx="12"/><rect x="190" y="132" width="120" height="44" rx="12"/></g>
+<g font-size="13" font-weight="800" text-anchor="middle"><text x="70" y="49" fill="var(--dk)">gram gegeven</text><text x="250" y="49" fill="var(--dk)">gram gevraagd</text><text x="70" y="159" fill="#fff">mol gegeven</text><text x="250" y="159" fill="#fff">mol gevraagd</text></g>
+<g stroke="var(--dk)" stroke-width="2" fill="none"><path d="M70 70v54"/><path d="M134 154h48"/><path d="M250 128V74"/></g>
+<g fill="var(--dk)"><polygon points="70,130 65,122 75,122"/><polygon points="188,154 180,149 180,159"/><polygon points="250,68 245,76 255,76"/></g>
+<g font-size="12" font-weight="700" fill="var(--or)"><text x="78" y="102">÷ M</text><text x="258" y="102">× M</text><text x="160" y="124" text-anchor="middle">× verhouding</text></g>
+<g font-size="11" fill="var(--mu)"><text x="78" y="116">(Binas)</text><text x="258" y="116">(Binas)</text><text x="160" y="194" text-anchor="middle">coëfficiënt gevraagd ÷ coëfficiënt gegeven</text></g>
+</g></svg><div class="sam-figcap">De route loopt via mol. Je wisselt alleen <strong>onderaan</strong> van stof, met de molverhouding uit de vergelijking. Bovenlangs, van gram naar gram, kan niet.</div></div>
+<div class="sam-worked"><div class="sam-worked-h">Uitgewerkt: kalksteen ontleden</div>
+<div class="sam-worked-q">Hoeveel gram CaO ontstaat uit 50,0 g CaCO₃? CaCO₃ → CaO + CO₂</div>
+<ol class="sam-worked-steps">
+<li>Gram naar mol: 50,0 / 100,09 = 0,500 mol CaCO₃.</li>
+<li>Verhouding CaCO₃ : CaO = 1 : 1, dus 0,500 mol CaO.</li>
+<li>Mol naar gram: 0,500 × 56,08 = 28,0 g CaO.</li>
+<li>Controle: het CO₂ weegt 22,0 g; samen weer 50,0 g.</li>
+</ol>
+<div class="sam-worked-ans">Er ontstaat 28,0 g ongebluste kalk.</div></div>
+</div>
+
+<div class="sam-chapter"><div class="sam-ch-title"><span class="sam-ch-n">4</span>Overmaat en beperkende stof</div>
+<p>Krijg je van twee beginstoffen een hoeveelheid, dan reageren ze zelden precies op. De stof die als eerste op is, heet de <strong>beperkende stof</strong>. Die bepaalt hoeveel product er ontstaat. Van de andere stof blijft iets over: die is in <strong>overmaat</strong>.</p>
+<p>Werkwijze: reken uit hoeveel er van de ene stof nodig is voor alles van de andere, en vergelijk met wat er is. Bij 4,0 mol H₂ en 3,0 mol O₂ (2 H₂ + O₂ → 2 H₂O) is voor alle waterstof 2,0 mol zuurstof nodig. Er is 3,0 mol, dus waterstof is beperkend en er blijft 1,0 mol zuurstof over. Fabrieken doen een goedkope stof vaak bewust in overmaat, zodat de dure stof helemaal reageert.</p>
+<div class="sam-figure"><svg viewBox="0 0 320 196" role="img" aria-label="Deeltjesmodel van overmaat: vier waterstofmoleculen en drie zuurstofmoleculen geven vier watermoleculen en er blijft één zuurstofmolecuul over, waterstof is de beperkende stof">
+<g font-family="inherit">
+<g fill="rgba(var(--or-rgb),.25)"><circle cx="22" cy="40" r="8"/><circle cx="36" cy="40" r="8"/><circle cx="22" cy="68" r="8"/><circle cx="36" cy="68" r="8"/><circle cx="22" cy="96" r="8"/><circle cx="36" cy="96" r="8"/><circle cx="22" cy="124" r="8"/><circle cx="36" cy="124" r="8"/></g>
+<g fill="var(--or)"><circle cx="80" cy="52" r="10"/><circle cx="98" cy="52" r="10"/><circle cx="80" cy="84" r="10"/><circle cx="98" cy="84" r="10"/><circle cx="80" cy="116" r="10"/><circle cx="98" cy="116" r="10"/></g>
+<path d="M124 84h26" stroke="var(--dk)" stroke-width="2"/><polygon points="156,84 148,79 148,89" fill="var(--dk)"/>
+<g fill="var(--or)"><circle cx="184" cy="44" r="10"/><circle cx="224" cy="44" r="10"/><circle cx="184" cy="98" r="10"/><circle cx="224" cy="98" r="10"/></g>
+<g fill="rgba(var(--or-rgb),.25)"><circle cx="172" cy="56" r="7"/><circle cx="196" cy="56" r="7"/><circle cx="212" cy="56" r="7"/><circle cx="236" cy="56" r="7"/><circle cx="172" cy="110" r="7"/><circle cx="196" cy="110" r="7"/><circle cx="212" cy="110" r="7"/><circle cx="236" cy="110" r="7"/></g>
+<rect x="258" y="58" width="56" height="52" rx="10" fill="none" stroke="var(--mu)" stroke-dasharray="4 3"/>
+<g fill="var(--or)"><circle cx="277" cy="84" r="10"/><circle cx="295" cy="84" r="10"/></g>
+<g font-size="12" font-weight="700" text-anchor="middle" fill="var(--dk)"><text x="29" y="154">4 H₂</text><text x="89" y="154">3 O₂</text><text x="204" y="154">4 H₂O</text><text x="286" y="130">over</text></g>
+<g font-size="11" text-anchor="middle" fill="var(--mu)"><text x="29" y="172">beperkend</text><text x="89" y="172">overmaat</text><text x="286" y="146">1 O₂</text></g>
+</g></svg><div class="sam-figcap">Vier waterstofmoleculen hebben maar <strong>twee</strong> zuurstofmoleculen nodig. Waterstof is als eerste op; één zuurstofmolecuul blijft over in het gestippelde vak.</div></div>
+<div class="sam-tip"><strong>Examentip:</strong> staan er twee beginstoffen met een hoeveelheid in de vraag, zoek dan eerst de beperkende stof. Reken het product daarna alleen met die stof uit.</div>
+</div>
+
+<div class="sam-chapter"><div class="sam-ch-title"><span class="sam-ch-n">5</span>Rendement</div>
+<p>De berekende opbrengst is de <strong>theoretische opbrengst</strong>: wat er maximaal kan ontstaan. In het echt krijg je meestal minder, de <strong>praktische opbrengst</strong>. Er blijft product achter in het filter, een reactie loopt niet helemaal af, of er stelt zich een evenwicht in. Het <strong>rendement</strong> is praktisch gedeeld door theoretisch, keer 100%.</p>
+<p>Een rendement boven 100% kan niet echt. Dan is er iets extra meegewogen, bijvoorbeeld water in kristallen die nog niet droog zijn, of een verontreiniging.</p>
+<div class="sam-figure"><svg viewBox="0 0 320 196" role="img" aria-label="Staafdiagram van de ammoniakfabriek: theoretische opbrengst 34 kilogram en praktische opbrengst 5,1 kilogram, rendement 15 procent">
+<g font-family="inherit">
+<path d="M40 20V156H300" stroke="var(--dk)" stroke-width="1.5" fill="none"/>
+<g stroke="var(--bo)"><path d="M40 116H300M40 76H300M40 36H300"/></g>
+<g font-size="10" fill="var(--mu)" text-anchor="end"><text x="34" y="159">0</text><text x="34" y="119">10</text><text x="34" y="79">20</text><text x="34" y="39">30</text></g>
+<rect x="80" y="20" width="64" height="136" fill="rgba(var(--or-rgb),.3)"/>
+<rect x="196" y="135.6" width="64" height="20.4" fill="var(--or)"/>
+<g font-size="13" font-weight="800" text-anchor="middle" fill="var(--dk)"><text x="112" y="88">34 kg</text><text x="228" y="128">5,1 kg</text></g>
+<g font-size="12" font-weight="700" text-anchor="middle" fill="var(--dk)"><text x="112" y="174">theoretisch</text><text x="228" y="174">praktisch</text></g>
+<text x="228" y="100" text-anchor="middle" font-size="14" font-weight="800" fill="var(--or)">15%</text>
+<text x="14" y="90" font-size="11" fill="var(--mu)" transform="rotate(-90 14 90)" text-anchor="middle">kg NH₃</text>
+</g></svg><div class="sam-figcap">Per keer doorstromen komt er maar <strong>5,1 van de 34 kg</strong> ammoniak uit de reactor: een rendement van 15%. De rest van het gas gaat terug de reactor in.</div></div>
+</div>
+
+<div class="sam-chapter"><div class="sam-ch-title"><span class="sam-ch-n">6</span>Rekenen met gasvolumes</div>
+<p>Bij gassen meet je vaak een volume in plaats van een massa. Bij dezelfde temperatuur en druk neemt een mol van elk gas hetzelfde volume in: het <strong>molair volume</strong>. Bij 298 K en standaarddruk is dat 24,5 L/mol (Binas). Bij 273 K is het 22,4 L/mol: let dus op de temperatuur.</p>
+<p>Van liter naar mol deel je door Vm, van mol naar liter vermenigvuldig je met Vm. Voor de rest blijft het rekenschema gelijk. In een airbag geeft 65,0 g NaN₃ (1,00 mol) via 2 NaN₃ → 2 Na + 3 N₂ precies 1,50 mol stikstof, en dat is 1,50 × 24,5 = 36,7 L.</p>
+<div class="sam-figure"><svg viewBox="0 0 320 196" role="img" aria-label="Drie ballonnen van 24,5 liter met elk 1 mol gas: waterstof 2 gram, zuurstof 32 gram en koolstofdioxide 44 gram, het molair volume is voor elk gas gelijk">
+<g font-family="inherit">
+<g fill="rgba(var(--or-rgb),.22)" stroke="var(--or)" stroke-width="2"><ellipse cx="56" cy="74" rx="40" ry="48"/><ellipse cx="160" cy="74" rx="40" ry="48"/><ellipse cx="264" cy="74" rx="40" ry="48"/></g>
+<g stroke="var(--mu)" stroke-width="1.5" fill="none"><path d="M56 122q-6 14 0 30"/><path d="M160 122q-6 14 0 30"/><path d="M264 122q-6 14 0 30"/></g>
+<g fill="var(--or)"><polygon points="50,124 62,124 56,118"/><polygon points="154,124 166,124 160,118"/><polygon points="258,124 270,124 264,118"/></g>
+<g font-size="13" font-weight="800" text-anchor="middle" fill="var(--dk)"><text x="56" y="70">H₂</text><text x="160" y="70">O₂</text><text x="264" y="70">CO₂</text></g>
+<g font-size="11" text-anchor="middle" fill="var(--mu)"><text x="56" y="88">1 mol</text><text x="160" y="88">1 mol</text><text x="264" y="88">1 mol</text></g>
+<g font-size="12" font-weight="700" text-anchor="middle" fill="var(--dk)"><text x="56" y="172">2,0 g</text><text x="160" y="172">32,0 g</text><text x="264" y="172">44,0 g</text></g>
+<text x="160" y="192" text-anchor="middle" font-size="11.5" font-weight="700" fill="var(--or)">elk 24,5 L bij 298 K</text>
+</g></svg><div class="sam-figcap">Drie even grote ballonnen met elk <strong>1 mol gas</strong>: ze nemen bij kamertemperatuur allemaal 24,5 L in, maar hun massa verschilt sterk.</div></div>
+<div class="sam-tip"><strong>Examentip:</strong> staat er een gasvolume in de vraag, controleer dan welke temperatuur er bij hoort en zoek het juiste molair volume op in Binas.</div>
 </div>`
 });

@@ -1651,6 +1651,28 @@ var VAKKEN = [
       "nOe": 5,
       "nBeg": 12,
       "hasSam": true
+     },
+     {
+      "id": "C2",
+      "lo": "sk.C.2",
+      "gs": 2,
+      "naam": "Rekenen aan reacties",
+      "beschrijving": "Je rekent uit hoeveel stof er reageert en ontstaat met de molverhouding, je vindt de beperkende stof, berekent het rendement en rekent met gasvolumes.",
+      "ceStatus": "CE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Molverhouding uit de vergelijking",
+       "Van massa naar mol en terug",
+       "Het rekenschema in vier stappen",
+       "Overmaat en beperkende stof",
+       "Rendement",
+       "Rekenen met gasvolumes"
+      ],
+      "nSv": 28,
+      "nOe": 5,
+      "nBeg": 11,
+      "hasSam": true
      }
     ]
    },

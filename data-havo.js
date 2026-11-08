@@ -67380,6 +67380,697 @@ var VAKKEN = [
         "u": "Magnesium reageert met zuurstof uit de lucht; de zuurstofatomen komen in het magnesiumoxide terecht en die massa weeg je voor de reactie niet mee (1p). Massa zuurstof: 4,0 − 2,4 = 1,6 g (1p). Vergelijking 2 Mg + O₂ → 2 MgO mag als onderbouwing, maar is niet vereist."
        }
       ]
+     },
+     {
+      "id": "C2",
+      "lo": "sk.C.2",
+      "gs": 2,
+      "naam": "Rekenen aan reacties",
+      "beschrijving": "Je rekent uit hoeveel stof er reageert en ontstaat met de molverhouding, je vindt de beperkende stof, berekent het rendement en rekent met gasvolumes.",
+      "ceStatus": "CE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Molverhouding uit de vergelijking",
+       "Van massa naar mol en terug",
+       "Het rekenschema in vier stappen",
+       "Overmaat en beperkende stof",
+       "Rendement",
+       "Rekenen met gasvolumes"
+      ],
+      "sam": "Coëfficiënten in een kloppende vergelijking geven de molverhouding. Rekenen gaat via mol: gram gedeeld door M wordt mol, met de molverhouding naar de andere stof, en keer M terug naar gram. De beginstof die als eerste op is, is beperkend en bepaalt de opbrengst. Rendement is praktisch gedeeld door theoretisch keer 100%. Een mol gas neemt bij 298 K 24,5 L in.",
+      "begrippen": [
+       {
+        "t": "Mol",
+        "d": "Vaste hoeveelheid deeltjes: 6,02 · 10²³. Hiermee tel je deeltjes in grote aantallen."
+       },
+       {
+        "t": "Molaire massa",
+        "d": "De massa van 1 mol van een stof in g/mol; som van de atoommassa’s uit Binas, elk keer de index."
+       },
+       {
+        "t": "Molverhouding",
+        "d": "De verhouding tussen de coëfficiënten in een kloppende reactievergelijking; geldt voor mol, niet voor gram."
+       },
+       {
+        "t": "Rekenschema",
+        "d": "Gram gegeven → mol gegeven → (molverhouding) → mol gevraagd → gram gevraagd."
+       },
+       {
+        "t": "Beperkende stof",
+        "d": "De beginstof die als eerste op is; bepaalt hoeveel product er ontstaat."
+       },
+       {
+        "t": "Overmaat",
+        "d": "Een beginstof waarvan na de reactie nog iets over is."
+       },
+       {
+        "t": "Theoretische opbrengst",
+        "d": "De maximale hoeveelheid product volgens de berekening."
+       },
+       {
+        "t": "Praktische opbrengst",
+        "d": "De hoeveelheid product die je in het echt krijgt."
+       },
+       {
+        "t": "Rendement",
+        "d": "Praktische opbrengst gedeeld door theoretische opbrengst, keer 100%."
+       },
+       {
+        "t": "Molair volume",
+        "d": "Volume van 1 mol gas: 24,5 L/mol bij 298 K en standaarddruk, 22,4 L/mol bij 273 K."
+       },
+       {
+        "t": "Standaarddruk",
+        "d": "p₀ = 1,013 · 10⁵ Pa; de druk waarbij het molair volume in Binas geldt."
+       }
+      ],
+      "sv": [
+       {
+        "v": "Welke molverhouding H₂ : O₂ hoort bij 2 H₂ + O₂ → 2 H₂O?",
+        "o": [
+         "1 : 1",
+         "2 : 1",
+         "1 : 2",
+         "4 : 32"
+        ],
+        "c": 1,
+        "d": 1,
+        "s": 0,
+        "u": "De coëfficiënten geven de molverhouding: 2 mol H₂ op 1 mol O₂.",
+        "uo": [
+         "Koos je 1 : 1? Dan keek je naar de stoffen en niet naar de getallen ervoor. De coëfficiënten 2 en 1 zeggen dat er twee keer zoveel H₂ reageert als O₂.",
+         "Klopt: de coëfficiënten 2 en 1 zijn de molverhouding. Voor elke mol zuurstof is twee mol waterstof nodig.",
+         "Koos je 1 : 2? Dan heb je de verhouding omgedraaid. H₂ heeft coëfficiënt 2 en O₂ coëfficiënt 1, dus H₂ : O₂ = 2 : 1.",
+         "Koos je 4 : 32? Dat is een massaverhouding in gram (2 × 2 g tegen 32 g). De vergelijking geeft een verhouding in mol, dus 2 : 1."
+        ],
+        "uh": "Coëfficiënten = molverhouding, nooit massaverhouding."
+       },
+       {
+        "v": "Hoeveel mol NH₃ ontstaat uit 6,0 mol H₂ bij N₂ + 3 H₂ → 2 NH₃?",
+        "o": [
+         "2,0 mol",
+         "6,0 mol",
+         "4,0 mol",
+         "12 mol"
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 0,
+        "u": "H₂ : NH₃ = 3 : 2, dus 6,0 mol H₂ geeft 6,0 × 2/3 = 4,0 mol NH₃.",
+        "uo": [
+         "Koos je 2,0 mol? Dan heb je 6,0 door 3 gedeeld en bent gestopt. Dat is het aantal \"porties\" van de reactie; elke portie levert 2 NH₃, dus 2 × 2,0 = 4,0 mol.",
+         "Koos je 6,0 mol? Dan ga je uit van 1 : 1. De coëfficiënten zijn 3 voor H₂ en 2 voor NH₃, dus er ontstaat minder ammoniak dan er waterstof reageert.",
+         "Klopt: de verhouding H₂ : NH₃ is 3 : 2. Dan geeft 6,0 mol H₂ precies 6,0 × 2 / 3 = 4,0 mol NH₃.",
+         "Koos je 12 mol? Dan heb je met 2 vermenigvuldigd zonder door 3 te delen. Bij een molverhouding 3 : 2 vermenigvuldig je met 2/3."
+        ],
+        "uh": "Gevraagd ÷ gegeven = coëfficiënt gevraagd ÷ coëfficiënt gegeven."
+       },
+       {
+        "v": "Hoeveel mol O₂ is nodig voor 0,50 mol CH₄ bij CH₄ + 2 O₂ → CO₂ + 2 H₂O?",
+        "o": [
+         "0,25 mol",
+         "0,50 mol",
+         "2,0 mol",
+         "1,0 mol"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 0,
+        "u": "CH₄ : O₂ = 1 : 2, dus 0,50 × 2 = 1,0 mol O₂.",
+        "uo": [
+         "Koos je 0,25 mol? Dan heb je gedeeld door 2 in plaats van vermenigvuldigd. Per molecuul methaan zijn twee moleculen zuurstof nodig: meer zuurstof, niet minder.",
+         "Koos je 0,50 mol? Dan ga je uit van 1 : 1. De vergelijking zegt 1 CH₄ op 2 O₂, dus er is twee keer zoveel zuurstof nodig.",
+         "Koos je 2,0 mol? Dat is de coëfficiënt van O₂, niet het aantal mol voor 0,50 mol methaan. Reken de verhouding door: 0,50 × 2 = 1,0.",
+         "Klopt: per mol methaan is 2 mol zuurstof nodig. Voor 0,50 mol methaan is dat 1,0 mol zuurstof."
+        ],
+        "uh": "Twee keer de coëfficiënt = twee keer zoveel mol."
+       },
+       {
+        "v": "Hoeveel mol aluminium is nodig om 3,0 mol ijzer te maken?",
+        "o": [
+         "1,5 mol",
+         "3,0 mol",
+         "6,0 mol",
+         "2,0 mol"
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 0,
+        "u": "Al : Fe = 2 : 2 = 1 : 1, dus 3,0 mol Al voor 3,0 mol Fe.",
+        "uo": [
+         "Koos je 1,5 mol? Dan heb je de 2 voor ijzer gebruikt om door te delen, maar Al heeft ook coëfficiënt 2. Twee gedeeld door twee is 1 : 1.",
+         "Klopt: Al en Fe hebben allebei coëfficiënt 2. De molverhouding is dus 1 : 1 en voor 3,0 mol ijzer is 3,0 mol aluminium nodig.",
+         "Koos je 6,0 mol? Dan heb je vermenigvuldigd met de coëfficiënt 2 van aluminium, maar vergeten te delen door de coëfficiënt 2 van ijzer.",
+         "Koos je 2,0 mol? Dan heb je de coëfficiënt overgenomen als antwoord. De coëfficiënt geeft de verhouding, niet de hoeveelheid voor deze opdracht."
+        ],
+        "uh": "Gelijke coëfficiënten = gelijke molen.",
+        "ctx": "Een lasser gebruikt de thermietreactie om twee treinrails te verbinden: Fe₂O₃ + 2 Al → 2 Fe + Al₂O₃. Om de naad te vullen is 3,0 mol vloeibaar ijzer nodig. Hij vraagt zich af hoeveel aluminiumpoeder hij in het mengsel moet doen."
+       },
+       {
+        "v": "Hoeveel mol zuurstof maakt de plant vrij?",
+        "o": [
+         "0,010 mol",
+         "0,060 mol",
+         "0,0017 mol",
+         "0,12 mol"
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 0,
+        "u": "C₆H₁₂O₆ : O₂ = 1 : 6, dus 6 × 0,010 = 0,060 mol O₂.",
+        "uo": [
+         "Koos je 0,010 mol? Dan ga je uit van 1 : 1 tussen glucose en zuurstof. De vergelijking geeft 6 O₂ per glucosemolecuul.",
+         "Klopt: per molecuul glucose komen zes moleculen zuurstof vrij. Bij 0,010 mol glucose is dat 6 × 0,010 = 0,060 mol zuurstof.",
+         "Koos je 0,0017 mol? Dan heb je door 6 gedeeld. Er ontstaat juist zes keer zoveel zuurstof als glucose, dus vermenigvuldigen.",
+         "Koos je 0,12 mol? Dan heb je de zuurstof als losse O-atomen geteld (12 per glucose). De vergelijking telt O₂-moleculen: 6 per glucose."
+        ],
+        "uh": "Lees de coëfficiënten bij de twee stoffen die je nodig hebt; de rest doet niet mee.",
+        "ctx": "Fotosynthese: 6 CO₂ + 6 H₂O → C₆H₁₂O₆ + 6 O₂. In een proef maakt een waterplant in een uur 0,010 mol glucose. Je wilt weten hoeveel zuurstof de plant in dat uur afgeeft aan het water."
+       },
+       {
+        "v": "Wat betekent een molaire massa van 18,02 g/mol voor water?",
+        "o": [
+         "1 mol water weegt 18,02 g",
+         "1 molecuul water weegt 18,02 g",
+         "18,02 mol water weegt 1 g",
+         "1 liter water weegt 18,02 g"
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 1,
+        "u": "De molaire massa is de massa van 1 mol van een stof, in g/mol.",
+        "uo": [
+         "Klopt: 1 mol watermoleculen (6,02 · 10²³ stuks) weegt samen 18,02 g. Daarmee reken je om tussen gram en mol.",
+         "Koos je één molecuul? Eén molecuul weegt veel te weinig om in gram te wegen. De molaire massa hoort bij een mol, een enorme hoeveelheid deeltjes.",
+         "Koos je 18,02 mol per gram? Dan heb je de eenheid omgedraaid. g/mol betekent gram per mol: 18,02 g voor elke mol.",
+         "Koos je 1 liter? Een liter water weegt ongeveer 1000 g. Molaire massa gaat over een hoeveelheid deeltjes, niet over een volume."
+        ],
+        "uh": "g/mol = gram per mol."
+       },
+       {
+        "v": "Hoeveel mol is 9,0 g water (M = 18,02 g/mol)?",
+        "o": [
+         "0,050 mol",
+         "0,50 mol",
+         "2,0 mol",
+         "162 mol"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 1,
+        "u": "n = m / M = 9,0 / 18,02 = 0,50 mol.",
+        "uo": [
+         "Koos je 0,050 mol? De berekening is goed begonnen, maar de komma staat verkeerd. 9 gedeeld door 18 is 0,5, niet 0,05. Schat even: 9 g is de helft van 18 g.",
+         "Klopt: aantal mol = massa gedeeld door molaire massa. 9,0 g is de helft van 18,02 g, dus 0,50 mol.",
+         "Koos je 2,0 mol? Dan heb je M door m gedeeld (18 / 9). Delen moet andersom: massa gedeeld door molaire massa.",
+         "Koos je 162 mol? Dan heb je vermenigvuldigd (9 × 18). Van gram naar mol deel je door de molaire massa."
+        ],
+        "uh": "Van gram naar mol: delen door M."
+       },
+       {
+        "v": "Hoeveel gram is 0,25 mol CO₂ (M = 44,01 g/mol)?",
+        "o": [
+         "11 g",
+         "44 g",
+         "0,0057 g",
+         "176 g"
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 1,
+        "u": "m = n × M = 0,25 × 44,01 = 11 g.",
+        "uo": [
+         "Klopt: van mol naar gram vermenigvuldig je met de molaire massa. Een kwart mol van 44 g is 11 g.",
+         "Koos je 44 g? Dat is de massa van 1 mol. Je hebt maar 0,25 mol, dus een kwart daarvan.",
+         "Koos je 0,0057 g? Dan heb je gedeeld (0,25 / 44). Van mol naar gram vermenigvuldig je met M.",
+         "Koos je 176 g? Dan heb je 44 door 0,25 gedeeld. Dat geeft vier keer de molaire massa in plaats van een kwart."
+        ],
+        "uh": "Van mol naar gram: keer M."
+       },
+       {
+        "v": "Hoe groot is de molaire massa van zwavelzuur, H₂SO₄?",
+        "o": [
+         "49,04 g/mol",
+         "97,07 g/mol",
+         "98,08 g/mol",
+         "50,08 g/mol"
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 1,
+        "u": "2 × 1,008 + 32,06 + 4 × 16,00 = 98,08 g/mol.",
+        "uo": [
+         "Koos je 49,04? Dat is de helft van het goede antwoord. Je telt alle atomen in één formule-eenheid op, niet de helft ervan.",
+         "Koos je 97,07? Dan telde je waterstof maar één keer. De index 2 bij H betekent twee waterstofatomen: 2 × 1,008.",
+         "Klopt: twee H (2,016), één S (32,06) en vier O (64,00) samen geeft 98,08 g/mol.",
+         "Koos je 50,08? Dan telde je zuurstof maar één keer. Met index 4 zijn het vier O-atomen: 4 × 16,00 = 64,00."
+        ],
+        "uh": "Elke index meenemen: atoommassa × index, alles optellen."
+       },
+       {
+        "v": "Hoeveel mol sacharose zit er in één suikerklontje?",
+        "o": [
+         "0,0088 mol",
+         "0,088 mol",
+         "114 mol",
+         "1,0 · 10³ mol"
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 1,
+        "u": "n = 3,0 / 342,3 = 0,0088 mol (8,8 · 10⁻³ mol).",
+        "uo": [
+         "Klopt: massa gedeeld door molaire massa geeft 3,0 / 342,3 = 0,0088 mol, oftewel 8,8 · 10⁻³ mol.",
+         "Koos je 0,088 mol? Dan ben je een factor tien kwijt. Schat: 3 g is ongeveer een honderdste van 342 g, dus rond de 0,01 mol.",
+         "Koos je 114 mol? Dan heb je M door m gedeeld (342,3 / 3,0). Een klontje van 3 gram kan nooit meer dan honderd mol zijn.",
+         "Koos je 1,0 · 10³ mol? Dan heb je vermenigvuldigd. Bij een klein klontje hoort een klein aantal mol: delen door M."
+        ],
+        "uh": "Controleer je antwoord met een schatting.",
+        "ctx": "Een suikerklontje weegt 3,0 g en bestaat uit sacharose, C₁₂H₂₂O₁₁. De molaire massa van sacharose is 342,3 g/mol. Voor een proef wil je weten hoeveel mol suiker er in één klontje zit."
+       },
+       {
+        "v": "Welke volgorde gebruik je om uit de massa van een beginstof de massa van een product te berekenen?",
+        "o": [
+         "g → g met de massaverhouding (gram op gram)",
+         "g → mol → molverhouding → mol → g",
+         "mol → g → molverhouding → g → mol",
+         "g → molverhouding → g → mol → g"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 2,
+        "u": "Gram omrekenen naar mol, molverhouding toepassen, terug naar gram.",
+        "uo": [
+         "Koos je de massaverhouding? Coëfficiënten gelden voor mol, niet voor gram. Een molecuul CO₂ weegt meer dan een molecuul CH₄, dus 1 : 1 in mol is geen 1 : 1 in gram.",
+         "Klopt: eerst van gram naar mol (delen door M), dan de molverhouding uit de vergelijking, dan terug naar gram (keer M van het product).",
+         "Koos je mol → gram eerst? Je begint met een massa, dus de eerste stap is van gram naar mol. De molverhouding pas je toe op mol.",
+         "Koos je deze? De molverhouding toepassen op gram is precies de fout die je moet vermijden. Pas de verhouding pas toe als je in mol rekent."
+        ],
+        "uh": "De molverhouding werkt alleen in mol."
+       },
+       {
+        "v": "Hoeveel gram O₂ reageert met 0,40 mol Mg bij 2 Mg + O₂ → 2 MgO?",
+        "o": [
+         "12,8 g",
+         "6,4 g",
+         "0,20 g",
+         "3,2 g"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 2,
+        "u": "Mg : O₂ = 2 : 1 → 0,20 mol O₂ × 32,00 g/mol = 6,4 g.",
+        "uo": [
+         "Koos je 12,8 g? Dan ging je uit van 1 : 1 (0,40 mol O₂). Er is maar half zoveel zuurstof nodig als magnesium: 0,20 mol.",
+         "Klopt: 0,40 mol magnesium vraagt 0,20 mol zuurstof. Met M = 32,00 g/mol is dat 6,4 g.",
+         "Koos je 0,20 g? Dat is het aantal mol zuurstof. De vraag is in gram, dus nog vermenigvuldigen met 32,00 g/mol.",
+         "Koos je 3,2 g? Dan rekende je met de massa van een losse O (16,00) in plaats van O₂ (32,00). Zuurstof reageert als O₂-moleculen."
+        ],
+        "uh": "Zuurstof is O₂: M = 32,00 g/mol."
+       },
+       {
+        "v": "Hoeveel gram CO₂ ontstaat bij de verbranding van 1,6 g methaan?",
+        "o": [
+         "1,6 g",
+         "8,8 g",
+         "4,4 g",
+         "0,10 g"
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 2,
+        "u": "1,6 / 16,04 = 0,0998 mol CH₄ → 0,0998 mol CO₂ × 44,01 = 4,4 g.",
+        "uo": [
+         "Koos je 1,6 g? Dan neem je aan dat er evenveel gram CO₂ ontstaat als er methaan verbrandt. De molverhouding is 1 : 1, maar een mol CO₂ weegt veel meer dan een mol CH₄.",
+         "Koos je 8,8 g? Dan heb je de coëfficiënt 2 van zuurstof of water meegenomen. CH₄ en CO₂ hebben allebei coëfficiënt 1, dus 1 : 1 in mol.",
+         "Klopt: 1,6 g methaan is 0,10 mol. Daaruit ontstaat 0,10 mol CO₂, en dat weegt 0,10 × 44,01 = 4,4 g.",
+         "Koos je 0,10 g? Dat is het aantal mol, geen massa. Vermenigvuldig het aantal mol CO₂ nog met de molaire massa 44,01 g/mol."
+        ],
+        "uh": "Gram → mol → (verhouding) → mol → gram.",
+        "ctx": "Een gasfornuis verbrandt methaan volledig: CH₄ + 2 O₂ → CO₂ + 2 H₂O. Een leerling wil weten hoeveel koolstofdioxide er vrijkomt als er 1,6 g methaan verbrandt. Gebruik M(CH₄) = 16,04 g/mol en M(CO₂) = 44,01 g/mol."
+       },
+       {
+        "v": "Hoeveel gram magnesiumoxide ontstaat er?",
+        "o": [
+         "4,86 g",
+         "16,1 g",
+         "0,200 g",
+         "8,06 g"
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 2,
+        "u": "4,86 / 24,31 = 0,200 mol Mg → 0,200 mol MgO × 40,31 = 8,06 g.",
+        "uo": [
+         "Koos je 4,86 g? Dan blijft de massa gelijk aan die van magnesium. Maar zuurstof uit de lucht wordt ingebouwd, dus het oxide weegt meer.",
+         "Koos je 16,1 g? Dan heb je de coëfficiënt 2 nog eens toegepast. Mg en MgO hebben allebei coëfficiënt 2: de verhouding is 1 : 1, dus 0,200 mol MgO.",
+         "Koos je 0,200 g? Dat is het aantal mol MgO. Maal de molaire massa van MgO (40,31 g/mol) geeft de massa.",
+         "Klopt: 4,86 g magnesium is 0,200 mol. Bij 2 Mg → 2 MgO ontstaat evenveel mol MgO, en 0,200 × 40,31 = 8,06 g."
+        ],
+        "uh": "Product zwaarder dan beginstof? Kan kloppen als er zuurstof bij komt.",
+        "ctx": "Je verbrandt 4,86 g magnesiumlint volledig: 2 Mg + O₂ → 2 MgO. Gebruik M(Mg) = 24,31 g/mol en M(MgO) = 40,31 g/mol. Je wilt voorspellen hoeveel wit poeder er na afloop in de kroes ligt."
+       },
+       {
+        "v": "Hoeveel gram ongebluste kalk (CaO) ontstaat uit 50,0 g kalksteen?",
+        "o": [
+         "50,0 g",
+         "22,0 g",
+         "28,0 g",
+         "0,500 g"
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 2,
+        "u": "50,0 / 100,09 = 0,500 mol CaCO₃ → 0,500 mol CaO × 56,08 = 28,0 g.",
+        "uo": [
+         "Koos je 50,0 g? Dan vergeet je dat er een gas ontsnapt. Een deel van de massa gaat als CO₂ de lucht in, dus er blijft minder dan 50,0 g over.",
+         "Koos je 22,0 g? Dat is de massa van het CO₂ dat ontsnapt (0,500 × 44,01). De vraag gaat over de vaste stof die achterblijft: CaO.",
+         "Klopt: 50,0 g kalksteen is 0,500 mol. Daaruit ontstaat 0,500 mol CaO, dat 0,500 × 56,08 = 28,0 g weegt. Samen met 22,0 g CO₂ is dat weer 50,0 g.",
+         "Koos je 0,500 g? Dat is het aantal mol, geen massa. Vermenigvuldig met de molaire massa van CaO, 56,08 g/mol."
+        ],
+        "uh": "Controle: alle producten samen wegen even veel als de beginstof.",
+        "ctx": "In een kalkoven wordt kalksteen sterk verhit: CaCO₃(s) → CaO(s) + CO₂(g). Een leerling verhit 50,0 g kalksteen tot alles is ontleed. Gebruik M(CaCO₃) = 100,09 g/mol, M(CaO) = 56,08 g/mol en M(CO₂) = 44,01 g/mol."
+       },
+       {
+        "v": "Wat is de beperkende stof bij een reactie?",
+        "o": [
+         "De stof die als eerste op is",
+         "De stof met de grootste molaire massa",
+         "De stof die je het meest toevoegt",
+         "De stof met de kleinste coëfficiënt"
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 3,
+        "u": "De beperkende stof is als eerste op en bepaalt hoeveel product ontstaat.",
+        "uo": [
+         "Klopt: als de beperkende stof op is, stopt de reactie. De andere beginstof blijft over: die was in overmaat.",
+         "Koos je de grootste molaire massa? Zwaar of licht zegt niets over welke stof eerst op is. Dat hangt af van het aantal mol en de molverhouding.",
+         "Koos je de stof die je het meest toevoegt? Veel gram betekent niet veel mol, en de molverhouding kan meer van die stof vragen. Je moet het narekenen.",
+         "Koos je de kleinste coëfficiënt? De coëfficiënt is maar de helft van het verhaal. Je vergelijkt het aantal mol dat je hebt met het aantal dat nodig is."
+        ],
+        "uh": "Beperkend = als eerste op."
+       },
+       {
+        "v": "Je laat 4,0 mol H₂ reageren met 3,0 mol O₂ (2 H₂ + O₂ → 2 H₂O). Wat blijft er over?",
+        "o": [
+         "1,0 mol H₂",
+         "1,0 mol O₂",
+         "Niets",
+         "2,0 mol O₂"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 3,
+        "u": "4,0 mol H₂ vraagt 2,0 mol O₂; er blijft 3,0 − 2,0 = 1,0 mol O₂ over.",
+        "uo": [
+         "Koos je 1,0 mol H₂? Dan rekende je met 1 : 1 (3,0 mol H₂ op 3,0 mol O₂). Waterstof en zuurstof reageren 2 : 1, dus alle 4,0 mol H₂ kan reageren.",
+         "Klopt: voor 4,0 mol waterstof is 2,0 mol zuurstof nodig. Er is 3,0 mol, dus 1,0 mol zuurstof blijft over. Waterstof is de beperkende stof.",
+         "Koos je niets? Dan zouden de hoeveelheden precies in verhouding 2 : 1 staan. 4,0 : 3,0 is geen 2 : 1, dus één stof blijft over.",
+         "Koos je 2,0 mol O₂? Dat is de hoeveelheid zuurstof die reageert, niet wat overblijft. Trek die af van wat er was: 3,0 − 2,0."
+        ],
+        "uh": "Reken uit wat nodig is en vergelijk met wat er is."
+       },
+       {
+        "v": "Waarom doet een fabriek vaak een goedkope beginstof in overmaat?",
+        "o": [
+         "Zodat de dure beginstof helemaal reageert",
+         "Zodat er minder warmte vrijkomt",
+         "Omdat de reactie anders niet kloppend is",
+         "Omdat de goedkope stof dan als katalysator werkt"
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 3,
+        "u": "Met de goedkope stof in overmaat is de dure stof de beperkende stof en wordt hij volledig gebruikt.",
+        "uo": [
+         "Klopt: de stof die als eerste op is, wordt helemaal gebruikt. Door de goedkope stof ruim toe te voegen, gaat er niets van de dure stof verloren.",
+         "Koos je warmte? De hoeveelheid warmte hangt af van hoeveel er reageert, niet van welke stof overblijft. Overmaat dient om de dure stof op te maken.",
+         "Koos je \"kloppend\"? Kloppend maken gaat over de vergelijking op papier. Hoeveel je in een reactor doet, verandert de vergelijking niet.",
+         "Koos je katalysator? Een stof in overmaat reageert gewoon mee; het teveel blijft over. Een katalysator wordt niet verbruikt en staat niet in de vergelijking als beginstof."
+        ],
+        "uh": "Dure stof beperkend, goedkope stof in overmaat."
+       },
+       {
+        "v": "Hoeveel mol NaCl ontstaat er?",
+        "o": [
+         "1,0 mol",
+         "0,25 mol",
+         "0,50 mol",
+         "0,75 mol"
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 3,
+        "u": "0,50 mol Na vraagt 0,25 mol Cl₂; natrium is beperkend en geeft 0,50 mol NaCl.",
+        "uo": [
+         "Koos je 1,0 mol? Dan heb je met chloor gerekend (0,50 mol Cl₂ geeft 1,0 mol NaCl). Maar daarvoor is 1,0 mol Na nodig en die is er niet: natrium is eerder op.",
+         "Koos je 0,25 mol? Dat is de hoeveelheid chloor die reageert. Per mol Cl₂ ontstaan twee mol NaCl, dus 0,50 mol NaCl.",
+         "Klopt: 0,50 mol natrium heeft maar 0,25 mol chloor nodig, dus natrium is als eerste op. Na : NaCl = 1 : 1, dus er ontstaat 0,50 mol NaCl.",
+         "Koos je 0,75 mol? Dan heb je de hoeveelheden opgeteld of gemiddeld. Het product hangt alleen af van de beperkende stof."
+        ],
+        "uh": "Het product reken je altijd uit met de beperkende stof.",
+        "ctx": "In een demonstratie laat de docent 0,50 mol natrium reageren met 0,50 mol chloorgas: 2 Na + Cl₂ → 2 NaCl. Een leerling zegt: \"Er is van beide evenveel, dus er reageert ook van beide evenveel.\" De docent vraagt hoeveel zout er ontstaat."
+       },
+       {
+        "v": "Hoeveel mol waterstofgas ontstaat er?",
+        "o": [
+         "0,10 mol",
+         "0,050 mol",
+         "0,20 mol",
+         "0,025 mol"
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 3,
+        "u": "Zink 0,100 mol, H⁺ 0,10 mol; H⁺ is beperkend (2 per Zn) en geeft 0,10 / 2 = 0,050 mol H₂.",
+        "uo": [
+         "Koos je 0,10 mol? Dan heb je met zink gerekend. Voor 0,100 mol zink is 0,20 mol H⁺ nodig, en er is maar 0,10 mol. H⁺ is eerder op.",
+         "Klopt: per zinkatoom zijn twee H⁺-ionen nodig. Met 0,10 mol H⁺ reageert maar 0,050 mol zink, en er ontstaat 0,050 mol H₂. Er blijft zink over.",
+         "Koos je 0,20 mol? Dan heb je de 2 voor H⁺ als vermenigvuldiger gebruikt. Twee H⁺ geven samen één H₂, dus delen door 2.",
+         "Koos je 0,025 mol? Dan heb je twee keer door 2 gedeeld. H⁺ : H₂ = 2 : 1, dus 0,10 mol H⁺ geeft 0,050 mol H₂."
+        ],
+        "uh": "Twee beginstoffen gegeven? Zoek eerst welke beperkend is.",
+        "ctx": "Je doet 6,54 g zink (M = 65,38 g/mol, dus 0,100 mol) in 100 mL zoutzuur met 0,10 mol H⁺: Zn + 2 H⁺ → Zn²⁺ + H₂. Na afloop ligt er nog zink op de bodem van het bekerglas."
+       },
+       {
+        "v": "Hoe bereken je het rendement van een reactie?",
+        "o": [
+         "Praktische opbrengst ÷ theoretische opbrengst × 100%",
+         "Theoretische opbrengst ÷ praktische opbrengst × 100%",
+         "Massa product ÷ massa beginstof × 100%",
+         "Theoretische − praktische opbrengst"
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 4,
+        "u": "Rendement = praktische opbrengst / theoretische opbrengst × 100%.",
+        "uo": [
+         "Klopt: je deelt wat je echt kreeg door wat je volgens de berekening maximaal kon krijgen. Het rendement is dus meestal kleiner dan 100%.",
+         "Koos je theoretisch gedeeld door praktisch? Dan komt er meestal meer dan 100% uit, wat niet kan. Wat je echt kreeg staat boven de deelstreep.",
+         "Koos je massa product gedeeld door massa beginstof? Dat is geen rendement: bij een verbranding komt er zuurstof bij en kan dit ver boven 100% liggen.",
+         "Koos je het verschil? Dat is het verlies in gram, geen percentage. Rendement is een verhouding."
+        ],
+        "uh": "Wat je kreeg ÷ wat je kon krijgen."
+       },
+       {
+        "v": "De theoretische opbrengst is 8,0 g, je krijgt 6,0 g. Wat is het rendement?",
+        "o": [
+         "133%",
+         "75%",
+         "25%",
+         "2,0%"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 4,
+        "u": "6,0 / 8,0 × 100% = 75%.",
+        "uo": [
+         "Koos je 133%? Dan heb je 8,0 door 6,0 gedeeld. Een rendement boven 100% zou betekenen dat je meer kreeg dan mogelijk is.",
+         "Klopt: je kreeg 6,0 van de 8,0 g die mogelijk was. Dat is 75%.",
+         "Koos je 25%? Dat is het deel dat verloren ging (2,0 van 8,0 g). Het rendement is het deel dat je wel kreeg.",
+         "Koos je 2,0%? Dan heb je het verschil in gram als percentage opgeschreven. Rendement reken je als verhouding × 100%."
+        ],
+        "uh": "Rendement boven 100%? Dan heb je omgekeerd gedeeld."
+       },
+       {
+        "v": "Hoe hoog is het rendement per keer doorstromen?",
+        "o": [
+         "18%",
+         "85%",
+         "15%",
+         "667%"
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 4,
+        "u": "5,1 / 34 × 100% = 15%.",
+        "uo": [
+         "Koos je 18%? Dan heb je de opbrengst gedeeld door de massa stikstof (5,1 / 28). Je moet delen door de theoretische opbrengst ammoniak: 34 kg.",
+         "Koos je 85%? Dat is het deel dat niet omgezet wordt. Het rendement is het deel dat wel als ammoniak uit de reactor komt.",
+         "Klopt: theoretisch kan er 34 kg ammoniak ontstaan, praktisch 5,1 kg. 5,1 / 34 × 100% = 15%.",
+         "Koos je 667%? Dan heb je omgekeerd gedeeld (34 / 5,1). Rendement kan nooit hoger zijn dan 100%."
+        ],
+        "uh": "Deel door de theoretische opbrengst van hetzelfde product.",
+        "ctx": "In een ammoniakfabriek stroomt per keer 28 kg stikstof met genoeg waterstof door de reactor: N₂ + 3 H₂ → 2 NH₃. Volgens de berekening kan daaruit 34 kg ammoniak ontstaan. Omdat er een evenwicht ontstaat, komt er per keer doorstromen maar 5,1 kg ammoniak uit."
+       },
+       {
+        "v": "Welke verklaring past het best bij dit rendement?",
+        "o": [
+         "De reactie is niet helemaal afgelopen",
+         "Er is een deel van het product gemorst",
+         "Er zit nog water in het product",
+         "Er is te weinig beginstof afgewogen"
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 4,
+        "u": "Een rendement boven 100% wijst op een vervuild of nat product.",
+        "uo": [
+         "Koos je \"niet afgelopen\"? Dan krijg je juist minder product en een rendement onder 100%. Hier is het rendement hoger dan mogelijk.",
+         "Koos je morsen? Morsen geeft minder product en een lager rendement. Boven de 100% kun je niet uitkomen door iets kwijt te raken.",
+         "Klopt: een product dat niet goed gedroogd is, weegt het water mee. Daardoor lijkt het of je meer hebt dan mogelijk is.",
+         "Koos je \"te weinig afgewogen\"? De theoretische opbrengst reken je uit met wat je echt afwoog. Een andere beginmassa verklaart geen rendement boven 100%."
+        ],
+        "uh": "Rendement boven 100%: zoek wat er extra meegewogen is.",
+        "ctx": "Een leerling maakt een zout en berekent dat er maximaal 5,0 g kan ontstaan. Ze filtreert de kristallen af, laat ze tien minuten liggen en weegt ze meteen: 5,6 g. Het rendement komt uit op 112%."
+       },
+       {
+        "v": "Hoeveel liter neemt 1,00 mol gas in bij 298 K en standaarddruk?",
+        "o": [
+         "22,4 L",
+         "24,5 L",
+         "1,00 L",
+         "18,0 L"
+        ],
+        "c": 1,
+        "d": 1,
+        "s": 5,
+        "u": "Molair volume bij 298 K en p₀: 24,5 dm³/mol (Binas).",
+        "uo": [
+         "Koos je 22,4 L? Dat is het molair volume bij 273 K (0 °C). Bij kamertemperatuur, 298 K, is het iets groter: 24,5 L.",
+         "Klopt: bij 298 K en standaarddruk neemt 1 mol van elk gas 24,5 L in. Dat staat in Binas als het molair volume.",
+         "Koos je 1,00 L? Een mol gas is veel groter dan een liter. Een liter bevat bij kamertemperatuur maar ongeveer 0,04 mol gas.",
+         "Koos je 18,0 L? Dat getal komt van de molaire massa van water (18,0 g/mol). Volume en massa zijn verschillende grootheden."
+        ],
+        "uh": "Kamertemperatuur: 24,5 L per mol gas."
+       },
+       {
+        "v": "Hoeveel mol is 4,9 L CO₂ bij 298 K en standaarddruk?",
+        "o": [
+         "0,20 mol",
+         "120 mol",
+         "5,0 mol",
+         "0,22 mol"
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 5,
+        "u": "n = V / Vm = 4,9 / 24,5 = 0,20 mol.",
+        "uo": [
+         "Klopt: aantal mol = volume gedeeld door molair volume. 4,9 L is een vijfde van 24,5 L, dus 0,20 mol.",
+         "Koos je 120 mol? Dan heb je vermenigvuldigd (4,9 × 24,5). Van liter naar mol deel je door het molair volume.",
+         "Koos je 5,0 mol? Dan heb je 24,5 door 4,9 gedeeld. De deling moet andersom: volume gedeeld door Vm.",
+         "Koos je 0,22 mol? Dan rekende je met 22,4 L/mol, het molair volume bij 273 K. Bij 298 K is het 24,5 L/mol."
+        ],
+        "uh": "Van liter gas naar mol: delen door Vm."
+       },
+       {
+        "v": "Hoeveel liter stikstof ontstaat er in de airbag (298 K, p₀)?",
+        "o": [
+         "24,5 L",
+         "36,7 L",
+         "49,0 L",
+         "1,50 L"
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 5,
+        "u": "65,0 / 65,02 = 1,00 mol NaN₃ → 1,50 mol N₂ × 24,5 = 36,7 L.",
+        "uo": [
+         "Koos je 24,5 L? Dan ging je uit van 1 : 1. Uit 2 NaN₃ ontstaat 3 N₂: anderhalf keer zoveel mol stikstof als natriumazide.",
+         "Klopt: 65,0 g is 1,00 mol natriumazide. Dat geeft 1,00 × 3/2 = 1,50 mol N₂, en 1,50 × 24,5 = 36,7 L.",
+         "Koos je 49,0 L? Dan heb je met de coëfficiënt 2 gerekend in plaats van met 3/2. Gebruik de verhouding NaN₃ : N₂ = 2 : 3.",
+         "Koos je 1,50 L? Dat is het aantal mol stikstof. Een mol gas is 24,5 L, dus vermenigvuldigen."
+        ],
+        "uh": "Gas gevraagd: mol uitrekenen, dan keer 24,5 L.",
+        "ctx": "In een airbag ontleedt natriumazide bij een botsing in een fractie van een seconde: 2 NaN₃(s) → 2 Na(s) + 3 N₂(g). De airbag bevat 65,0 g NaN₃ (M = 65,02 g/mol). Het stikstofgas blaast het kussen op."
+       },
+       {
+        "v": "Hoeveel liter CO₂ komt er vrij (298 K, p₀)?",
+        "o": [
+         "2,5 L",
+         "12 L",
+         "0,30 L",
+         "7,4 L"
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 5,
+        "u": "C₃H₈ : CO₂ = 1 : 3 → 0,30 mol × 24,5 = 7,4 L.",
+        "uo": [
+         "Koos je 2,5 L? Dan rekende je met 1 : 1 (0,10 mol CO₂). Uit één propaanmolecuul ontstaan drie CO₂-moleculen.",
+         "Koos je 12 L? Dat is het volume zuurstof dat nodig is (5 × 0,10 × 24,5). De vraag gaat over CO₂, met coëfficiënt 3.",
+         "Koos je 0,30 L? Dat is het aantal mol CO₂. Vermenigvuldig met 24,5 L/mol voor het volume.",
+         "Klopt: 0,10 mol propaan geeft 3 × 0,10 = 0,30 mol CO₂. Dat neemt 0,30 × 24,5 = 7,4 L in."
+        ],
+        "uh": "Kies de coëfficiënt van de stof die gevraagd wordt.",
+        "ctx": "Op de camping verbrandt in een gasbrander 0,10 mol propaan volledig: C₃H₈ + 5 O₂ → 3 CO₂ + 4 H₂O. Een leerling wil weten hoeveel liter koolstofdioxide er in de tent vrijkomt als die bij kamertemperatuur dicht zit."
+       }
+      ],
+      "oe": [
+       {
+        "bron": "Examenstijl",
+        "ctx": "Bij het verwerken van ijzererts in een hoogoven reageert ijzer(III)oxide met koolstofmono-oxide: Fe₂O₃ + 3 CO → 2 Fe + 3 CO₂. Een hoogoven verwerkt per uur 160 ton ijzer(III)oxide (M = 159,7 g/mol). IJzer heeft M = 55,85 g/mol.",
+        "v": "Bereken hoeveel ton ijzer er per uur kan ontstaan.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Omrekening van 160 ton Fe₂O₃ naar mol: 160 · 10⁶ g / 159,7 = 1,00 · 10⁶ mol (1p). Molverhouding Fe₂O₃ : Fe = 1 : 2, dus 2,00 · 10⁶ mol Fe (1p). Omrekening naar massa: 2,00 · 10⁶ × 55,85 = 1,12 · 10⁸ g = 112 ton (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een leerling maakt koperoxide door 3,18 g koper (M = 63,55 g/mol) in een open kroes te verhitten: 2 Cu + O₂ → 2 CuO. Koper(II)oxide heeft M = 79,55 g/mol. Na afloop weegt ze 3,58 g zwart poeder.",
+        "v": "Bereken het rendement van deze proef.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "3,18 / 63,55 = 0,0500 mol Cu, dus theoretisch 0,0500 mol CuO (1p). Theoretische opbrengst: 0,0500 × 79,55 = 3,98 g (1p). Rendement: 3,58 / 3,98 × 100% = 90% (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "In een fabriek maakt men zoutzuur door waterstof en chloor te laten reageren: H₂ + Cl₂ → 2 HCl. In de reactor gaat per minuut 10,0 mol H₂ en 8,0 mol Cl₂. Chloor is duur, waterstof is goedkoop.",
+        "v": "Leg uit welke stof beperkend is en bereken hoeveel mol HCl er per minuut maximaal ontstaat.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "H₂ en Cl₂ reageren 1 : 1; er is minder chloor dan waterstof, dus chloor is beperkend (1p). Er ontstaat 2 × 8,0 = 16 mol HCl (1p). Er blijft 2,0 mol waterstof over; dat is gunstig omdat zo alle dure chloor reageert."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Bij de bereiding van biogas zetten bacteriën glucose om in methaan en koolstofdioxide: C₆H₁₂O₆ → 3 CH₄ + 3 CO₂. Een vergister krijgt per dag 90 kg glucose (M = 180,2 g/mol). Het gas komt vrij bij 298 K en standaarddruk.",
+        "v": "Bereken hoeveel m³ methaan er per dag ontstaat.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "90 · 10³ / 180,2 = 499 mol glucose (1p). Glucose : CH₄ = 1 : 3, dus 1,50 · 10³ mol CH₄ (1p). Volume: 1,50 · 10³ × 24,5 = 3,67 · 10⁴ L = 37 m³ (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een leerling zegt: \"Bij 2 H₂ + O₂ → 2 H₂O reageert 2 gram waterstof met 1 gram zuurstof, want de coëfficiënten zijn 2 en 1.\"",
+        "v": "Leg uit wat er fout is aan deze redenering en geef de juiste massaverhouding.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "De coëfficiënten geven een verhouding in mol (of deeltjes), niet in gram (1p). 2 mol H₂ = 4,0 g en 1 mol O₂ = 32,0 g, dus de massaverhouding is 4,0 : 32,0 = 1 : 8 (1p)."
+       }
+      ]
      }
     ]
    },
