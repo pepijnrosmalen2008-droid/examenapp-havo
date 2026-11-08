@@ -2643,6 +2643,28 @@ var VAKKEN = [
       "nOe": 5,
       "nBeg": 11,
       "hasSam": true
+     },
+     {
+      "id": "E4",
+      "lo": "na.E.4",
+      "gs": 2,
+      "naam": "Medische toepassingen van straling",
+      "beschrijving": "Je legt uit hoe een röntgenfoto, een CT-scan, echografie, nucleaire diagnostiek met een tracer en een PET-scan werken, rekent met echotijden en halveringstijden, beschrijft hoe radiotherapie tumoren bestrijdt en kiest de juiste techniek op basis van wat je wilt zien en de dosis.",
+      "ceStatus": "CE",
+      "binas": "27, 28",
+      "val": "",
+      "onderwerpen": [
+       "De röntgenfoto",
+       "De CT-scan",
+       "Echografie",
+       "Nucleaire diagnostiek en PET",
+       "Bestraling van tumoren",
+       "De juiste techniek kiezen"
+      ],
+      "nSv": 28,
+      "nOe": 5,
+      "nBeg": 11,
+      "hasSam": true
      }
     ]
    }

@@ -106890,6 +106890,694 @@ var VAKKEN = [
         "u": "8 / 0,005 = 1600 tandfoto's (1p). De limiet van 1 mSv geldt voor extra straling uit de omgeving, niet voor medisch onderzoek (1p). De arts weegt het nut van de scan af tegen het kleine extra risico; de limiet is dus geen reden om te weigeren (1p)."
        }
       ]
+     },
+     {
+      "id": "E4",
+      "lo": "na.E.4",
+      "gs": 2,
+      "naam": "Medische toepassingen van straling",
+      "beschrijving": "Je legt uit hoe een röntgenfoto, een CT-scan, echografie, nucleaire diagnostiek met een tracer en een PET-scan werken, rekent met echotijden en halveringstijden, beschrijft hoe radiotherapie tumoren bestrijdt en kiest de juiste techniek op basis van wat je wilt zien en de dosis.",
+      "ceStatus": "CE",
+      "binas": "27, 28",
+      "val": "",
+      "onderwerpen": [
+       "De röntgenfoto",
+       "De CT-scan",
+       "Echografie",
+       "Nucleaire diagnostiek en PET",
+       "Bestraling van tumoren",
+       "De juiste techniek kiezen"
+      ],
+      "sam": "Röntgenfoto: schaduwbeeld, bot absorbeert veel en staat licht; contrastmiddel voor zacht weefsel. CT: röntgenopnamen van alle kanten, doorsneden, grotere dosis. Echografie: ultrageluid kaatst terug bij weefselgrenzen, d = v · t / 2, niet ioniserend. Tracer: gammastraler met korte halveringstijd die zich ophoopt; PET met fluor-18 laat tumoren zien. Radiotherapie: bundels uit meerdere richtingen en kleine porties. Kies de techniek die genoeg laat zien met zo weinig mogelijk dosis; MRI en echo zijn niet ioniserend.",
+      "begrippen": [
+       {
+        "t": "Röntgenfoto",
+        "d": "Schaduwbeeld met röntgenstraling; bot absorbeert veel en staat licht op de foto."
+       },
+       {
+        "t": "Contrastmiddel",
+        "d": "Stof die röntgenstraling sterk absorbeert, zoals barium, om zacht weefsel zichtbaar te maken."
+       },
+       {
+        "t": "CT-scan",
+        "d": "Röntgenopnamen vanuit alle richtingen waaruit een computer doorsneden en een 3D-beeld berekent."
+       },
+       {
+        "t": "Echografie",
+        "d": "Beeld maken met ultrageluid dat bij grenzen tussen weefsels terugkaatst; niet ioniserend."
+       },
+       {
+        "t": "Ultrageluid",
+        "d": "Geluid met een frequentie boven 20 kHz; bij echografie enkele MHz."
+       },
+       {
+        "t": "Tracer",
+        "d": "Stof met een radioactieve isotoop die zich in een orgaan ophoopt, zodat een camera de werking kan zien."
+       },
+       {
+        "t": "Gammacamera",
+        "d": "Camera die gammastraling uit het lichaam meet en laat zien waar een tracer zit."
+       },
+       {
+        "t": "PET-scan",
+        "d": "Scan met een tracer van fluor-18 in suiker; laat plekken met veel stofwisseling zien, zoals tumoren."
+       },
+       {
+        "t": "Radiotherapie",
+        "d": "Behandeling van kanker met ioniserende straling die het DNA van tumorcellen beschadigt."
+       },
+       {
+        "t": "Brachytherapie",
+        "d": "Inwendige bestraling met kleine radioactieve bronnetjes in of bij de tumor."
+       },
+       {
+        "t": "MRI",
+        "d": "Scan met een sterk magneetveld en radiogolven; geeft beelden van zacht weefsel zonder ioniserende straling."
+       }
+      ],
+      "sv": [
+       {
+        "v": "Waarom zijn botten op een röntgenfoto licht en zacht weefsel donker?",
+        "o": [
+         "Zacht weefsel kaatst de straling terug",
+         "Bot zendt zelf licht uit",
+         "Bot absorbeert meer röntgenstraling",
+         "Röntgenstraling gaat sneller door bot"
+        ],
+        "c": 2,
+        "d": 1,
+        "s": 0,
+        "u": "Bot (hoge dichtheid, calcium) absorbeert meer → minder straling op de plaat.",
+        "uo": [
+         "Koos je terugkaatsen? Röntgenstraling gaat door het lichaam heen en wordt aan de andere kant gemeten. Kaatsen speelt bij echografie een rol, niet bij röntgen.",
+         "Koos je zelf licht? Botten zenden niets uit. Het beeld ontstaat door het verschil in hoeveel straling erdoor komt.",
+         "Klopt: bot bevat veel calcium en heeft een grote dichtheid, dus het houdt veel röntgenstraling tegen. Achter een bot komt weinig straling op de detector en die plek blijft licht. Door zacht weefsel gaat veel straling heen: daar wordt de foto donker.",
+         "Koos je sneller? De snelheid maakt voor de foto niets uit. Het gaat om hoeveel straling er wordt geabsorbeerd."
+        ],
+        "uh": "Bot absorbeert meer → licht."
+       },
+       {
+        "v": "Waarom draagt een tandartsassistent geen loodschort maar gaat ze de kamer uit tijdens de foto?",
+        "o": [
+         "De straling is voor haar onschadelijk",
+         "Afstand en een muur beschermen haar",
+         "Ze moet de foto buiten ontwikkelen",
+         "De patiënt mag niet gestoord worden"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 0,
+        "u": "Herhaalde blootstelling: afstand + afscherming.",
+        "uo": [
+         "Koos je onschadelijk? Röntgenstraling is ioniserend en kan schade doen. Juist omdat zij vaak in de buurt is, beschermt ze zich.",
+         "Klopt: de patiënt krijgt één keer een kleine dosis, maar de assistent maakt elke dag veel foto's. Door de kamer uit te gaan, krijgt ze dankzij afstand en de muur vrijwel niets.",
+         "Koos je ontwikkelen? Tegenwoordig zijn foto's digitaal. De reden is bescherming tegen straling.",
+         "Koos je niet storen? De reden is haar eigen veiligheid: ze wil niet elke dag een kleine dosis oplopen."
+        ],
+        "uh": "Werker: afstand en afscherming."
+       },
+       {
+        "v": "Waarom drinkt een patiënt voor een röntgenfoto van de darmen eerst een papje met barium?",
+        "o": [
+         "Barium absorbeert röntgenstraling sterk",
+         "Barium is radioactief en straalt zelf",
+         "Barium maakt de straling zachter voor de patiënt",
+         "Barium verdooft de darmen tijdens het onderzoek"
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 0,
+        "u": "Contrastmiddel: hoge absorptie → darm licht op de foto.",
+        "uo": [
+         "Klopt: zacht weefsel als de darm is op een röntgenfoto slecht te onderscheiden. Barium absorbeert röntgenstraling sterk, net als bot. Met het papje in de darm wordt de vorm van de darm duidelijk zichtbaar.",
+         "Koos je radioactief? Bariumsulfaat is niet radioactief. Het werkt als contrastmiddel doordat het de straling tegenhoudt.",
+         "Koos je zachter? Barium beschermt de patiënt niet. Het zorgt voor contrast op de foto.",
+         "Koos je verdoven? Het papje heeft geen verdovende werking. Het maakt de darmen zichtbaar."
+        ],
+        "uh": "Barium = contrastmiddel.",
+        "ctx": "Een patiënt heeft al weken buikpijn. Op een gewone röntgenfoto van de buik zijn de darmen nauwelijks te zien, omdat ze ongeveer even veel straling doorlaten als het weefsel eromheen. Voor een tweede foto moet hij eerst een wit papje met bariumsulfaat drinken."
+       },
+       {
+        "v": "Een borstfoto geeft 0,02 mSv. Hoeveel borstfoto's geven samen de gemiddelde jaardosis van 2,5 mSv?",
+        "o": [
+         "1250",
+         "50",
+         "12",
+         "125"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 0,
+        "u": "2,5 / 0,02 = 125.",
+        "uo": [
+         "Koos je 1250? Dan heb je een factor tien te veel, waarschijnlijk door 0,002 in plaats van 0,02 te nemen. 2,5 / 0,02 = 125.",
+         "Koos je 50? Dan heb je met 0,05 mSv per foto gerekend. Reken met 0,02 mSv.",
+         "Koos je 12? Dan heb je een factor tien te weinig. 0,02 past 125 keer in 2,5.",
+         "Klopt: 2,5 / 0,02 = 125. Eén borstfoto geeft dus ongeveer evenveel straling als een paar dagen achtergrondstraling."
+        ],
+        "uh": "Aantal = totale dosis / dosis per foto."
+       },
+       {
+        "v": "Wat gebeurt er met röntgenstraling die door het lichaam gaat?",
+        "o": [
+         "Alles gaat er ongehinderd doorheen",
+         "Alles wordt teruggekaatst naar het apparaat",
+         "Een deel wordt geabsorbeerd, de rest valt op de detector",
+         "Het lichaam zet de straling om in licht"
+        ],
+        "c": 2,
+        "d": 1,
+        "s": 0,
+        "u": "Absorptie verschilt per weefsel → schaduwbeeld.",
+        "uo": [
+         "Koos je ongehinderd? Dan zou je niets zien: de foto zou overal even donker zijn. Juist het verschil in absorptie maakt het beeld.",
+         "Koos je teruggekaatst? Dan zou de detector niet achter de patiënt staan. Röntgen werkt met straling die door het lichaam heen gaat.",
+         "Klopt: elk weefsel houdt een deel van de straling tegen, bot meer dan spieren en vet. Achter het lichaam vangt een detector op wat er doorheen komt. Zo ontstaat een schaduwbeeld.",
+         "Koos je omzetten in licht? Het lichaam zendt geen licht uit. De detector zet de straling die erdoor komt om in een beeld."
+        ],
+        "uh": "Röntgen = schaduwbeeld."
+       },
+       {
+        "v": "Hoe maakt een CT-scanner een beeld?",
+        "o": [
+         "Hij luistert naar echo's van ultrageluid",
+         "Röntgenopnamen van alle kanten",
+         "Hij meet gammastraling uit een ingespoten stof",
+         "Hij fotografeert het lichaam met infrarood"
+        ],
+        "c": 1,
+        "d": 1,
+        "s": 1,
+        "u": "CT: röntgenbuis draait rond, computer berekent plakjes.",
+        "uo": [
+         "Koos je ultrageluid? Dat is echografie. Een CT-scan gebruikt röntgenstraling.",
+         "Klopt: bij een CT-scan draait een röntgenbuis rond de patiënt en maakt honderden opnamen vanuit verschillende hoeken. Een computer berekent daaruit dwarsdoorsneden en een driedimensionaal beeld.",
+         "Koos je gammastraling uit een ingespoten stof? Dat doen een gammacamera en een PET-scan. Bij CT komt de straling van buiten.",
+         "Koos je infrarood? Daarmee meet je warmte aan de huid. Een CT-scan kijkt met röntgenstraling dwars door het lichaam."
+        ],
+        "uh": "CT = röntgen van alle kanten."
+       },
+       {
+        "v": "Waarom geeft een CT-scan een veel grotere dosis dan een gewone röntgenfoto?",
+        "o": [
+         "Er worden heel veel opnamen gemaakt",
+         "CT gebruikt gammastraling in plaats van röntgen",
+         "De patiënt moet een radioactieve stof drinken",
+         "De scanner staat veel dichter bij de patiënt"
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 1,
+        "u": "Honderden opnamen → dosis 100× groter.",
+        "uo": [
+         "Klopt: een CT-scan bestaat uit honderden röntgenopnamen vanuit alle richtingen. De dosis is daardoor vaak 100 keer zo groot als bij één foto, enkele mSv.",
+         "Koos je gammastraling? Een CT-scanner heeft een gewone röntgenbuis. Het verschil zit in het aantal opnamen.",
+         "Koos je radioactieve stof? Bij een CT krijg je soms contrastvloeistof, maar die is niet radioactief. De dosis komt van de röntgenstraling.",
+         "Koos je dichterbij? De afstand is niet de reden. Het is de hoeveelheid opnamen die de dosis groot maakt."
+        ],
+        "uh": "CT: veel opnamen, grotere dosis."
+       },
+       {
+        "v": "Waarom kiest een arts bij een vermoeden van een hersenbloeding meteen voor een CT-scan, ondanks de dosis?",
+        "o": [
+         "De CT-scan geneest de bloeding",
+         "Een CT-scan geeft juist geen straling in het hoofd",
+         "Een röntgenfoto laat het hoofd scherper zien",
+         "Snel een gedetailleerd beeld"
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 1,
+        "u": "Nut (snel, detail) weegt op tegen kleine extra risico.",
+        "uo": [
+         "Koos je genezen? De scan stelt alleen vast wat er aan de hand is. De behandeling komt daarna.",
+         "Koos je geen straling? Ook bij een hoofdscan krijgt de patiënt een dosis, ongeveer 2 mSv. De afweging is dat het nut groter is.",
+         "Koos je röntgenfoto scherper? Op een gewone foto liggen alle lagen over elkaar en zie je de hersenen slecht door de schedel. CT geeft juist losse doorsneden.",
+         "Klopt: bij een hersenbloeding telt elke minuut. Een CT-scan geeft in een paar minuten doorsneden waarop een bloeding duidelijk te zien is. Het nut van een snelle, goede diagnose is veel groter dan het kleine risico van de dosis."
+        ],
+        "uh": "CT: snel en gedetailleerd, nut > risico.",
+        "ctx": "Een vrouw van 68 wordt met spoed naar het ziekenhuis gebracht: ze praat onduidelijk en kan haar arm niet bewegen. De arts vermoedt een beroerte, die kan komen door een bloeding of door een stolsel. Het hangt van de oorzaak af welke behandeling nodig is, en die moet zo snel mogelijk beginnen."
+       },
+       {
+        "v": "Welke golven gebruikt echografie?",
+        "o": [
+         "Gammastraling",
+         "Röntgenstraling",
+         "Ultrageluid",
+         "Radiogolven"
+        ],
+        "c": 2,
+        "d": 1,
+        "s": 2,
+        "u": "Echo: geluid boven 20 kHz, meestal MHz.",
+        "uo": [
+         "Koos je gamma? Gammastraling gebruik je bij nucleaire diagnostiek. Echografie werkt met geluid.",
+         "Koos je röntgen? Dat wordt gebruikt bij een röntgenfoto en een CT-scan. Echografie werkt met geluid.",
+         "Klopt: een echoapparaat zendt ultrageluid uit, met een frequentie van een paar megahertz. Dat is geluid dat te hoog is om te horen, en het is geen ioniserende straling.",
+         "Koos je radiogolven? Radiogolven worden gebruikt bij een MRI-scan. Echografie werkt met ultrageluid."
+        ],
+        "uh": "Echografie = ultrageluid."
+       },
+       {
+        "v": "Waarom wordt een zwangere vrouw met echografie onderzocht en niet met röntgen?",
+        "o": [
+         "Ultrageluid geeft altijd een scherper beeld",
+         "Ultrageluid is niet ioniserend",
+         "Röntgenstraling kan niet door water",
+         "Echografie is de enige techniek die bewegingen kan laten zien"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 2,
+        "u": "Geen ioniserende straling → veilig voor de baby.",
+        "uo": [
+         "Koos je scherper? Een echobeeld is vaak juist minder scherp dan een röntgenfoto. De reden is de veiligheid.",
+         "Klopt: ultrageluid is een drukgolf en kan geen atomen ioniseren. Er is dus geen risico op DNA-schade bij het ongeboren kind, dat juist heel gevoelig is voor straling.",
+         "Koos je niet door water? Röntgenstraling gaat wel door water en weefsel. Het nadeel is dat het ioniserend is.",
+         "Koos je bewegingen? Echo kan bewegingen goed laten zien, maar ook andere technieken kunnen dat. De belangrijkste reden is dat ultrageluid niet ioniserend is."
+        ],
+        "uh": "Zwanger: geen ioniserende straling."
+       },
+       {
+        "v": "Op welke diepte ligt de grens die de echo veroorzaakt?",
+        "o": [
+         "5,0 cm",
+         "10 cm",
+         "2,5 cm",
+         "0,10 cm"
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 2,
+        "u": "d = v · t / 2 = 1540 × 65·10⁻⁶ / 2.",
+        "uo": [
+         "Klopt: het geluid gaat heen en terug. d = v · t / 2 = 1540 × 65·10⁻⁶ / 2 = 0,050 m = 5,0 cm.",
+         "Koos je 10 cm? Dat is de weg heen en terug samen. De grens ligt op de helft.",
+         "Koos je 2,5 cm? Dan heb je twee keer door 2 gedeeld. Halveer alleen één keer, voor heen en terug.",
+         "Koos je 0,10 cm? Dan heb je de microseconden verkeerd omgerekend: 65 µs = 65·10⁻⁶ s."
+        ],
+        "uh": "Echo: d = v · t / 2.",
+        "ctx": "Bij een echo van de buik zendt de sonde korte pulsen ultrageluid het lichaam in. Een echo van de achterkant van de lever komt 65 µs na het uitzenden terug. De geluidssnelheid in zacht weefsel is ongeveer 1540 m/s."
+       },
+       {
+        "v": "Waarom smeert de laborant gel op de huid voor een echo?",
+        "o": [
+         "De gel geleidt elektriciteit naar de sonde",
+         "De gel maakt het geluid hoger",
+         "De gel beschermt de huid tegen de straling",
+         "Anders kaatst het geluid terug op lucht"
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 2,
+        "u": "Lucht-huid overgang kaatst bijna alles terug; gel verbindt.",
+        "uo": [
+         "Koos je elektriciteit? De sonde zet zelf elektrische signalen om in geluid. De gel is nodig om lucht tussen sonde en huid weg te halen.",
+         "Koos je hoger? De frequentie wordt door de sonde bepaald. De gel zorgt alleen dat het geluid goed doorgegeven wordt.",
+         "Koos je bescherming tegen straling? Ultrageluid is niet ioniserend; er is niets om tegen te beschermen. De gel is voor het doorgeven van het geluid.",
+         "Klopt: bij de overgang van lucht naar huid kaatst bijna al het ultrageluid terug, zodat er niets het lichaam in gaat. De gel vult de luchtspleet tussen sonde en huid, zodat het geluid er wel in komt."
+        ],
+        "uh": "Gel: geen luchtlaag.",
+        "ctx": "Bij een zwangerschapsecho smeert de laborant eerst een dikke laag koude gel op de buik. Pas daarna zet ze de sonde op de huid. Zonder gel ziet ze op het scherm bijna niets, ook als ze de sonde stevig aandrukt."
+       },
+       {
+        "v": "Waarom gebruikt een echoapparaat een hoge frequentie, zoals 3,5 MHz?",
+        "o": [
+         "Hoge frequenties gaan dieper het lichaam in",
+         "Hoge frequenties zijn niet ioniserend, lage wel",
+         "Een kleine golflengte geeft een scherp beeld",
+         "Een hoge frequentie maakt minder lawaai"
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 2,
+        "u": "λ = 1540 / 3,5·10⁶ ≈ 0,44 mm.",
+        "uo": [
+         "Koos je dieper? Hoge frequenties worden juist sneller gedempt en komen minder diep. Daarom is er een afweging tussen scherpte en diepte.",
+         "Koos je lage frequenties ioniserend? Geluid is nooit ioniserend, welke frequentie ook. De reden is de golflengte.",
+         "Klopt: bij 3,5 MHz is de golflengte in weefsel 1540 / 3,5·10⁶ = 0,44 mm. Details die groter zijn dan de golflengte kun je goed zien. Hoe hoger de frequentie, hoe scherper.",
+         "Koos je lawaai? Ultrageluid is sowieso niet te horen. De frequentie bepaalt hoe klein de details zijn die je ziet."
+        ],
+        "uh": "Hoge f → kleine λ → scherp."
+       },
+       {
+        "v": "Wat veroorzaakt een echo in het lichaam bij echografie?",
+        "o": [
+         "Alleen botten",
+         "De overgang tussen twee soorten weefsel",
+         "Het bloed dat stroomt",
+         "De huid die het geluid opwekt"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 2,
+        "u": "Weerkaatsing bij elke grens tussen weefsels.",
+        "uo": [
+         "Koos je alleen botten? Bot kaatst heel veel terug, maar ook bij grenzen tussen zachte weefsels ontstaan echo's. Daardoor zie je organen en een baby.",
+         "Klopt: telkens als het ultrageluid bij een grens tussen twee weefsels komt, bijvoorbeeld tussen vocht en een orgaan, kaatst een deel terug. Uit al die echo's bouwt de computer een beeld.",
+         "Koos je bloed? Stromend bloed geeft wel een kleine echo, die bij een echo-doppler gebruikt wordt. Het beeld ontstaat door alle grenzen tussen weefsels.",
+         "Koos je de huid? Het geluid wordt in de sonde opgewekt. De echo's ontstaan diep in het lichaam, bij grenzen tussen weefsels."
+        ],
+        "uh": "Echo: grens tussen weefsels."
+       },
+       {
+        "v": "Wat is een tracer bij nucleaire diagnostiek?",
+        "o": [
+         "Radioactieve stof die zich ophoopt",
+         "Een röntgenapparaat dat rond de patiënt draait",
+         "Een geluidsgolf die door het lichaam reist",
+         "Een loden plaat die straling tegenhoudt"
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 3,
+        "u": "Tracer: radioactieve stof die het lichaam opneemt; straling van binnenuit gemeten.",
+        "uo": [
+         "Klopt: een tracer is een stof met een radioactieve isotoop erin, die zich in een bepaald orgaan of weefsel ophoopt. Een camera buiten het lichaam meet de straling en laat zien waar de stof zit.",
+         "Koos je röntgenapparaat? Dat is een CT-scanner. Bij een tracer komt de straling van binnenuit.",
+         "Koos je geluidsgolf? Dat is echografie. Een tracer is een stof die straling uitzendt.",
+         "Koos je loden plaat? Die beschermt tegen straling. Een tracer zendt juist straling uit."
+        ],
+        "uh": "Tracer = radioactieve stof in het lichaam."
+       },
+       {
+        "v": "Waarom gebruikt men voor een tracer liefst een gammastraler en geen alfastraler?",
+        "o": [
+         "Alfastraling bestaat alleen in laboratoria",
+         "Alfa is te zwak om te meten",
+         "Gamma heeft een langere halveringstijd",
+         "Gamma komt het lichaam uit"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 3,
+        "u": "γ: doordringend (meetbaar buiten) en weinig ionisatie.",
+        "uo": [
+         "Koos je alleen in laboratoria? Alfastralers komen ook in de natuur voor, zoals radon. Ze zijn voor een tracer ongeschikt omdat de straling het lichaam niet uit komt.",
+         "Koos je te zwak? Alfa heeft veel energie, maar komt nog geen millimeter ver in weefsel. Buiten het lichaam meet je er niets van, en binnen doet het veel schade.",
+         "Koos je langere halveringstijd? De halveringstijd hangt van de isotoop af, niet van het soort straling. Voor een tracer wil je juist een korte halveringstijd.",
+         "Klopt: gammastraling dringt door het lichaam naar buiten, zodat een camera haar kan meten. Bovendien ioniseert gamma weinig. Alfa zou binnen het lichaam blijven en daar veel schade doen."
+        ],
+        "uh": "Tracer: gammastraler."
+       },
+       {
+        "v": "Waarom moet een PET-scanner dicht bij een deeltjesversneller staan die de tracer maakt?",
+        "o": [
+         "PET-tracers mogen niet over de weg",
+         "De tracer is te zwaar om te vervoeren",
+         "Fluor-18 vervalt snel",
+         "De scanner haalt zijn stroom uit de versneller"
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 3,
+        "u": "Korte t½: na vervoer van uren is veel vervallen.",
+        "uo": [
+         "Koos je niet over de weg? Radioactieve stoffen mogen onder voorwaarden vervoerd worden. Het punt is dat fluor-18 te snel vervalt voor lange ritten.",
+         "Koos je te zwaar? Er is maar een heel kleine hoeveelheid nodig. Het probleem is de tijd: de tracer vervalt snel.",
+         "Klopt: fluor-18 halveert elke 110 minuten. Duurt het vervoer een paar uur, dan is het grootste deel al vervallen voordat de patiënt het krijgt. Daarom wordt de tracer dichtbij gemaakt.",
+         "Koos je stroom? De versneller maakt alleen de radioactieve isotoop. De afstand is belangrijk vanwege de korte halveringstijd."
+        ],
+        "uh": "PET: korte t½, dichtbij maken.",
+        "ctx": "Bij een PET-scan krijgt een patiënt suiker ingespoten waarin een radioactief fluor-18-atoom zit. Kankercellen gebruiken veel suiker en hopen de tracer op. Fluor-18 wordt gemaakt in een cyclotron, een deeltjesversneller. Het heeft een halveringstijd van 110 minuten."
+       },
+       {
+        "v": "Hoe ontdekt een PET-scan een tumor?",
+        "o": [
+         "De tumor kaatst röntgenstraling terug",
+         "Tumorcellen nemen veel tracer op",
+         "Een tumor is warmer en straalt infrarood uit",
+         "De tumor absorbeert het ultrageluid sterk"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 3,
+        "u": "Tracer met fluor-18 in suiker; snelle stofwisseling → ophoping.",
+        "uo": [
+         "Koos je röntgen? Bij een PET-scan komt de straling van de tracer in het lichaam. Er wordt geen röntgenstraling gebruikt.",
+         "Klopt: kankercellen hebben een snelle stofwisseling en nemen veel suiker op. De radioactieve suiker hoopt zich dus op in de tumor, en de scanner ziet daar veel straling vandaan komen.",
+         "Koos je infrarood? Een tumor is niet meetbaar warmer van buitenaf. PET meet de straling van de radioactieve tracer.",
+         "Koos je ultrageluid? Dat is echografie. PET werkt met een radioactieve tracer."
+        ],
+        "uh": "PET: tracer hoopt op in tumor."
+       },
+       {
+        "v": "Welke activiteit is er nog over als de scan 3,0 uur na de injectie begint?",
+        "o": [
+         "500 MBq",
+         "350 MBq",
+         "250 MBq",
+         "600 MBq"
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 3,
+        "u": "3,0 h is een halve halveringstijd: 700 × (½)^0,5 ≈ 500.",
+        "uo": [
+         "Klopt: 3,0 uur is een halve halveringstijd. De activiteit is dan 700 × (½)^0,5 = 700 × 0,71 ≈ 500 MBq.",
+         "Koos je 350 MBq? Dat is de helft, en die bereik je pas na een hele halveringstijd van 6,0 uur. Na 3,0 uur is er meer dan de helft over.",
+         "Koos je 250 MBq? Dat is minder dan de helft; dat duurt nog langer dan één halveringstijd.",
+         "Koos je 600 MBq? Na een halve halveringstijd is de activiteit gedaald tot ongeveer 71%, niet 86%."
+        ],
+        "uh": "Halve t½: factor 0,71.",
+        "ctx": "Een patiënt krijgt voor een botscan technetium-99m ingespoten met een activiteit van 700 MBq. Technetium-99m zendt gammastraling uit en heeft een halveringstijd van 6,0 uur. De gammacamera begint 3,0 uur na de injectie met de scan."
+       },
+       {
+        "v": "Hoe werkt bestraling (radiotherapie) tegen kanker?",
+        "o": [
+         "De straling trekt de tumor uit het lichaam",
+         "De straling verwarmt de tumor tot hij smelt",
+         "De straling maakt de tumor radioactief",
+         "Het DNA van tumorcellen raakt beschadigd"
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 4,
+        "u": "Ionisatie → DNA-schade → celdood.",
+        "uo": [
+         "Koos je eruit trekken? Straling doodt de cellen; het lichaam ruimt ze daarna zelf op.",
+         "Koos je verwarmen? De dosis is groot voor cellen, maar de warmte is verwaarloosbaar. Het werkt door DNA-schade.",
+         "Koos je radioactief maken? Bestraling van buitenaf maakt niets radioactief. De patiënt straalt na de behandeling niet.",
+         "Klopt: de ioniserende straling beschadigt het DNA in de tumorcellen. Tumorcellen herstellen dat slechter dan gezonde cellen, en gaan daardoor dood."
+        ],
+        "uh": "Radiotherapie: DNA-schade in tumor."
+       },
+       {
+        "v": "Waarom bestraalt men een tumor vanuit verschillende richtingen?",
+        "o": [
+         "Omdat het apparaat anders oververhit raakt",
+         "Zo gaat de behandeling sneller",
+         "Tumor veel dosis, gezond weefsel weinig",
+         "Omdat straling uit één richting niet door de huid komt"
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 4,
+        "u": "Bundels kruisen in de tumor; gezond weefsel krijgt telkens een deel.",
+        "uo": [
+         "Koos je oververhitten? Het apparaat kan best lang in één richting stralen. Het gaat om de bescherming van het gezonde weefsel.",
+         "Koos je sneller? Het duurt juist langer om van meerdere kanten te bestralen. De reden is het sparen van gezond weefsel.",
+         "Klopt: alle bundels kruisen elkaar in de tumor, die dus de volle dosis krijgt. Het gezonde weefsel eromheen krijgt maar de dosis van één bundel, en wordt zo zoveel mogelijk gespaard.",
+         "Koos je niet door de huid? Hoogenergetische straling gaat gemakkelijk door de huid. Ook vanuit één richting bereik je de tumor, maar dan krijgt het weefsel ervoor dezelfde dosis."
+        ],
+        "uh": "Meerdere richtingen: tumor veel, gezond weinig."
+       },
+       {
+        "v": "Waarom krijgt een patiënt de totale dosis van 60 Gy verdeeld over 30 behandelingen van 2 Gy?",
+        "o": [
+         "Het apparaat kan maar 2 Gy per dag maken",
+         "Gezond weefsel herstelt tussendoor",
+         "In één keer 60 Gy is minder effectief tegen de tumor",
+         "Zo hoeft de patiënt niet stil te liggen"
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 4,
+        "u": "Fractionering: herstel van gezond weefsel tussen sessies.",
+        "uo": [
+         "Koos je apparaat? Een bestralingsapparaat kan veel meer geven. De verdeling is een bewuste keuze om gezond weefsel te sparen.",
+         "Klopt: na elke behandeling herstelt gezond weefsel een groot deel van de schade, tumorcellen veel minder. Door de dosis te verdelen, blijft de tumor schade opstapelen terwijl het gezonde weefsel steeds herstelt.",
+         "Koos je minder effectief? De tumor krijgt in totaal evenveel. Het verschil zit in het gezonde weefsel, dat in één keer 60 Gy niet zou overleven.",
+         "Koos je stilliggen? Ook bij elke korte behandeling moet de patiënt stil liggen. De reden is herstel van gezond weefsel."
+        ],
+        "uh": "Verdelen: gezond weefsel herstelt.",
+        "ctx": "Een patiënt met prostaatkanker krijgt zes weken lang elke werkdag een korte bestraling van 2 Gy op de tumor, in totaal 60 Gy. Een dosis van 60 Gy in één keer zou het gezonde weefsel rond de tumor ernstig beschadigen. De arts legt uit waarom het in kleine porties gaat."
+       },
+       {
+        "v": "Bij brachytherapie zet men kleine radioactieve bronnetjes in de tumor. Wat is het voordeel?",
+        "o": [
+         "De straling komt vooral in de tumor terecht",
+         "De patiënt krijgt geen enkele straling",
+         "Het werkt sneller dan uitwendige bestraling",
+         "De bronnetjes maken de tumor zichtbaar op een foto"
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 4,
+        "u": "Bron dicht bij tumor; korte dracht spaart omgeving.",
+        "uo": [
+         "Klopt: de bronnetjes zitten in of vlak bij de tumor. De straling heeft een korte dracht, dus de tumor krijgt een hoge dosis en het weefsel verder weg veel minder.",
+         "Koos je geen straling? De tumor krijgt juist een grote dosis, en het weefsel er vlak omheen ook wat. Het voordeel is dat het geconcentreerd is.",
+         "Koos je sneller? Het hoeft niet sneller te zijn. Het voordeel is dat de dosis geconcentreerd is op de tumor.",
+         "Koos je zichtbaar? De bronnetjes zijn bedoeld om te bestralen, niet om beelden te maken."
+        ],
+        "uh": "Brachytherapie: dosis op de plek."
+       },
+       {
+        "v": "Welke techniek gebruikt geen ioniserende straling?",
+        "o": [
+         "PET-scan",
+         "Röntgenfoto",
+         "CT-scan",
+         "Echografie"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 5,
+        "u": "Echo (en MRI) niet ioniserend.",
+        "uo": [
+         "Koos je PET? De tracer zendt straling uit die uiteindelijk als gammastraling gemeten wordt, en die is ioniserend.",
+         "Koos je röntgenfoto? Röntgenstraling is ioniserend: ze kan elektronen losslaan en DNA beschadigen. Daarom wordt het aantal foto's beperkt.",
+         "Koos je CT? Een CT-scan is een reeks röntgenopnamen en geeft juist een flinke dosis ioniserende straling.",
+         "Klopt: echografie werkt met ultrageluid, een drukgolf die niet ioniseert. Ook een MRI-scan gebruikt geen ioniserende straling, maar een sterk magneetveld en radiogolven."
+        ],
+        "uh": "Echo: niet ioniserend."
+       },
+       {
+        "v": "Welke techniek laat het best zien of een orgaan goed werkt, en niet alleen hoe het eruitziet?",
+        "o": [
+         "Een CT-scan zonder contrast",
+         "Een gewone röntgenfoto",
+         "Een scan met een tracer",
+         "Een echo van de huid"
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 5,
+        "u": "Tracer volgt stofwisseling: functie, niet alleen vorm.",
+        "uo": [
+         "Koos je CT? Een CT geeft heel nauwkeurig de vorm in 3D, maar zegt weinig over hoe actief het weefsel is.",
+         "Koos je röntgenfoto? Die laat vooral de vorm zien: waar bot of weefsel zit. Of een orgaan goed werkt, zie je er niet aan.",
+         "Klopt: een tracer gaat mee met de stofwisseling. Waar een orgaan hard werkt, hoopt zich veel tracer op. Een gammacamera of PET-scan laat dus de werking zien, niet alleen de vorm.",
+         "Koos je echo van de huid? Een echo laat vorm en beweging zien, maar geen stofwisseling."
+        ],
+        "uh": "Functie → tracer.",
+        "ctx": "Een arts wil weten of de schildklier van een patiënt te hard werkt. Op een echo ziet de schildklier er normaal uit. De arts wil zien hoeveel jodium de schildklier opneemt, want een te hard werkende schildklier neemt veel jodium op."
+       },
+       {
+        "v": "Een sporter heeft mogelijk een gebroken pols. Welke techniek is het meest geschikt?",
+        "o": [
+         "Een PET-scan",
+         "Een röntgenfoto",
+         "Een echo van de buik",
+         "Een gammacamera"
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 5,
+        "u": "Bot → röntgen: snel, goedkoop, lage dosis.",
+        "uo": [
+         "Koos je PET? Die laat stofwisseling zien en is bedoeld om bijvoorbeeld tumoren te vinden. Voor een botbreuk is het veel te ingewikkeld.",
+         "Klopt: botten zijn op een röntgenfoto heel duidelijk te zien, omdat ze veel straling absorberen. Een breuk zie je meteen, en de dosis voor een pols is heel klein.",
+         "Koos je echo van de buik? Die kijkt naar organen in de buik. Ultrageluid gaat bovendien slecht door bot.",
+         "Koos je gammacamera? Die laat zien waar een tracer zich ophoopt. Voor een eenvoudige breuk is een foto veel sneller en duidelijker."
+        ],
+        "uh": "Botbreuk → röntgen.",
+        "ctx": "Een volleyballer valt tijdens een wedstrijd op zijn uitgestrekte hand. Zijn pols is dik en doet pijn bij bewegen. Op de spoedeisende hulp wil de arts snel weten of er een bot gebroken is, en hoe de breuk eruitziet."
+       },
+       {
+        "v": "Hoe ontstaat het beeld bij een MRI-scan?",
+        "o": [
+         "Magneetveld en radiogolven",
+         "Met röntgenstraling van alle kanten",
+         "Met een radioactieve tracer",
+         "Met ultrageluid en echo's"
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 5,
+        "u": "MRI: magneetveld + radiogolven, niet ioniserend.",
+        "uo": [
+         "Klopt: bij een MRI ligt de patiënt in een heel sterk magneetveld. Radiogolven laten waterstofkernen in het lichaam signalen uitzenden, en daaruit maakt een computer gedetailleerde beelden van zacht weefsel, zonder ioniserende straling.",
+         "Koos je röntgenstraling? Dat is een CT-scan. Een MRI gebruikt een magneetveld.",
+         "Koos je tracer? Dat is nucleaire diagnostiek. Bij een MRI is er geen radioactieve stof nodig.",
+         "Koos je ultrageluid? Dat is echografie. Een MRI werkt met magnetisme en radiogolven."
+        ],
+        "uh": "MRI: magneet + radiogolven."
+       },
+       {
+        "v": "Waarom wordt een CT-scan bij kinderen alleen gemaakt als het echt nodig is?",
+        "o": [
+         "Kinderen worden radioactief van de scan",
+         "Kinderen passen niet goed in de scanner",
+         "Bij kinderen werkt een CT-scan niet",
+         "Kinderen zijn gevoeliger voor straling en leven nog lang"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 5,
+        "u": "Delende cellen gevoeliger; langer leven → meer tijd voor gevolgen.",
+        "uo": [
+         "Koos je radioactief? Een CT-scan is bestraling met röntgenstraling en maakt niemand radioactief.",
+         "Koos je niet passen? Er zijn scanners en instellingen voor elke lengte. De reden is de gevoeligheid voor straling.",
+         "Koos je werkt niet? Een CT-scan geeft ook bij kinderen een prima beeld. Men is voorzichtig vanwege de straling.",
+         "Klopt: bij kinderen delen cellen snel, en die zijn gevoeliger voor DNA-schade. Bovendien hebben ze nog een lang leven voor zich, waarin een eventuele kanker zich kan ontwikkelen. Daarom kiest men liever een echo of MRI."
+        ],
+        "uh": "Kinderen: gevoeliger, voorzichtig met CT."
+       }
+      ],
+      "oe": [
+       {
+        "bron": "Examenstijl",
+        "ctx": "Bij een zwangerschapsecho gebruikt de sonde ultrageluid van 5,0 MHz. Een echo van de schedel van de baby komt 91 µs na het uitzenden terug. De geluidssnelheid in weefsel is 1540 m/s. De moeder vraagt of het onderzoek schadelijk is voor de baby.",
+        "v": "Bereken op welke diepte de schedel ligt, bereken de golflengte van het ultrageluid en leg uit waarom het onderzoek geen stralingsrisico geeft.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "d = 1540 × 91·10⁻⁶ / 2 = 0,070 m = 7,0 cm (1p). λ = v / f = 1540 / 5,0·10⁶ = 3,1·10⁻⁴ m = 0,31 mm (1p). Ultrageluid is een drukgolf en niet ioniserend: het kan geen elektronen losmaken of DNA beschadigen (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Voor een schildklierscan krijgt een patiënt technetium-99m met een activiteit van 200 MBq. Technetium-99m zendt alleen gammastraling uit en heeft een halveringstijd van 6,0 uur. Een andere mogelijke tracer, jodium-131, zendt bèta- en gammastraling uit en heeft een halveringstijd van 8,0 dagen.",
+        "v": "Bereken de activiteit van het technetium na 24 uur en leg uit waarom technetium-99m beter geschikt is voor een scan dan jodium-131.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "24 / 6,0 = 4 halveringstijden; 200 / 16 = 12,5 MBq (1p). Technetium zendt alleen gamma uit, die het lichaam verlaat en gemeten kan worden; jodium-131 geeft ook bèta, die in het lichaam blijft en alleen dosis geeft (1p). De korte halveringstijd van technetium zorgt dat de straling snel weg is; jodium-131 straalt dagenlang (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een man van 45 heeft rugpijn. Zijn huisarts stuurt hem door voor beeldvorming. De man vraagt zich af of een CT-scan, een röntgenfoto of een MRI het beste is. Een CT-scan van de onderrug geeft ongeveer 6 mSv, een röntgenfoto 0,7 mSv en een MRI geen ioniserende straling. Op een MRI zijn tussenwervelschijven en zenuwen goed te zien.",
+        "v": "Leg uit welke techniek de voorkeur heeft als de arts een hernia (een uitpuilende tussenwervelschijf) vermoedt, en vergelijk de dosis van de CT-scan met de gemiddelde jaarlijkse dosis.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Een MRI: die laat zacht weefsel als tussenwervelschijven en zenuwen goed zien en geeft geen ioniserende straling (2p). 6 mSv is meer dan twee keer de gemiddelde jaardosis van 2,5 mSv (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een patiënt krijgt bestraling tegen een tumor in de long. Het bestralingsapparaat geeft vijf bundels uit verschillende richtingen die elkaar in de tumor kruisen. Elke bundel geeft 0,40 Gy. De behandeling wordt 30 keer herhaald.",
+        "v": "Bereken de totale dosis op de tumor en op een stukje gezond weefsel dat maar door één bundel geraakt wordt, en leg uit waarom de behandeling in 30 porties wordt gegeven.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Per behandeling krijgt de tumor 5 × 0,40 = 2,0 Gy; totaal 30 × 2,0 = 60 Gy (1p). Gezond weefsel in één bundel: 30 × 0,40 = 12 Gy (1p). Tussen de porties herstelt gezond weefsel de schade beter dan tumorweefsel (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Bij een röntgenfoto van de longen staat de patiënt met zijn borst tegen de detector, en de röntgenbuis staat achter zijn rug. Op de foto zijn de ribben licht en de longen donker. Een leerling schrijft: \"De longen zijn donker omdat ze de röntgenstraling terugkaatsen.\"",
+        "v": "Leg uit waardoor de ribben licht en de longen donker op de foto staan, en beoordeel de uitspraak van de leerling.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "De ribben (bot) absorberen veel straling, dus daar komt weinig op de detector: licht (1p). De longen bevatten vooral lucht en absorberen weinig, dus daar komt veel straling door: donker (1p). De uitspraak klopt niet: bij röntgen gaat de straling door het lichaam heen naar de detector; er wordt niets teruggekaatst (1p)."
+       }
+      ]
      }
     ]
    }
