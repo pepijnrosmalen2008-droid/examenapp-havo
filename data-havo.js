@@ -106201,6 +106201,695 @@ var VAKKEN = [
         "u": "⁴⁰₁₉K → ⁴⁰₂₀Ca + ⁰₋₁e (1p). 4,5 / 1,3 = 3,5 halveringstijden (1p). Over: (½)^3,5 ≈ 0,09, dus ongeveer 9%: veel minder dan de helft (1p)."
        }
       ]
+     },
+     {
+      "id": "E3",
+      "lo": "na.E.3",
+      "gs": 2,
+      "naam": "Activiteit, dosis en afscherming",
+      "beschrijving": "Je rekent met activiteit in becquerel, geabsorbeerde dosis (D = E / m) en equivalente dosis (H = w_R · D), onderscheidt bestraling en besmetting, rekent met halveringsdikte en beschrijft achtergrondstraling, dosislimieten en hoe je je beschermt met afstand, afscherming en tijd.",
+      "ceStatus": "CE",
+      "binas": "27, 28",
+      "val": "",
+      "onderwerpen": [
+       "Activiteit in becquerel",
+       "Geabsorbeerde dosis in gray",
+       "Equivalente dosis en weegfactor",
+       "Bestraling en besmetting",
+       "Afscherming en halveringsdikte",
+       "Achtergrondstraling, limieten en bescherming"
+      ],
+      "sam": "Activiteit = vervallen per seconde (Bq). Geabsorbeerde dosis D = E / m in gray. Equivalente dosis H = w_R · D in sievert; w_R = 20 voor alfa, 1 voor bèta en gamma. Bestraling stopt als je weggaat; bij besmetting zit de stof op of in je. Halveringsdikte: na n = d / d½ lagen is (½)ⁿ over. Achtergrond in Nederland ongeveer 2,5 mSv per jaar; limiet bevolking 1 mSv, werkers 20 mSv. Beschermen: afstand, afscherming, tijd.",
+      "begrippen": [
+       {
+        "t": "Activiteit",
+        "d": "Aantal kernen dat per seconde vervalt, in becquerel (Bq)."
+       },
+       {
+        "t": "Becquerel",
+        "d": "Eenheid van activiteit: één vervalling per seconde."
+       },
+       {
+        "t": "Geabsorbeerde dosis",
+        "d": "Stralingsenergie per kilogram weefsel: D = E / m, in gray (Gy)."
+       },
+       {
+        "t": "Equivalente dosis",
+        "d": "Dosis gewogen naar de schadelijkheid van de straling: H = w_R · D, in sievert (Sv)."
+       },
+       {
+        "t": "Weegfactor",
+        "d": "Factor w_R die aangeeft hoe schadelijk een soort straling is: alfa 20, bèta en gamma 1."
+       },
+       {
+        "t": "Bestraling",
+        "d": "Straling van een bron buiten het lichaam; stopt als je weggaat."
+       },
+       {
+        "t": "Besmetting",
+        "d": "Radioactieve stof op de huid of in het lichaam, die blijft stralen."
+       },
+       {
+        "t": "Halveringsdikte",
+        "d": "Dikte van een materiaal die de helft van de gammastraling doorlaat."
+       },
+       {
+        "t": "Afscherming",
+        "d": "Materiaal tussen bron en mens dat straling tegenhoudt of zwakker maakt."
+       },
+       {
+        "t": "Achtergrondstraling",
+        "d": "Straling die er altijd is; in Nederland gemiddeld ongeveer 2,5 mSv per jaar."
+       },
+       {
+        "t": "Dosislimiet",
+        "d": "Wettelijke grens voor extra straling: 1 mSv per jaar voor de bevolking, 20 mSv voor stralingswerkers."
+       }
+      ],
+      "sv": [
+       {
+        "v": "Wat betekent een activiteit van 1 becquerel (Bq)?",
+        "o": [
+         "De bron geeft 1 joule straling per seconde",
+         "Eén kern vervalt per minuut",
+         "Eén kern vervalt per seconde",
+         "De helft van de kernen vervalt in één seconde"
+        ],
+        "c": 2,
+        "d": 1,
+        "s": 0,
+        "u": "1 Bq = 1 vervalling per seconde.",
+        "uo": [
+         "Koos je 1 joule? Activiteit telt vervallen, geen energie. Hoeveel energie dat oplevert, hangt af van het soort straling.",
+         "Koos je per minuut? De becquerel is per seconde. Een bron van 1 Bq geeft dus ongeveer 60 vervallen per minuut.",
+         "Klopt: de activiteit is het aantal kernen dat per seconde vervalt. 1 Bq betekent dat er gemiddeld elke seconde één kern vervalt.",
+         "Koos je de helft? Dat heeft met de halveringstijd te maken. De activiteit telt hoeveel kernen per seconde vervallen."
+        ],
+        "uh": "Bq = verval per seconde."
+       },
+       {
+        "v": "Een teller telt 1200 vervallen per minuut van een bron en mist er geen. Welke activiteit is dat?",
+        "o": [
+         "1200 Bq",
+         "20 Bq",
+         "72 000 Bq",
+         "0,05 Bq"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 0,
+        "u": "1200 / 60 s = 20 per seconde.",
+        "uo": [
+         "Koos je 1200 Bq? Dat is het aantal per minuut. De becquerel is per seconde, dus deel je door 60.",
+         "Klopt: 1200 vervallen per minuut gedeeld door 60 seconden is 20 vervallen per seconde, dus 20 Bq.",
+         "Koos je 72 000 Bq? Dan heb je met 60 vermenigvuldigd. Per seconde zijn het er juist minder dan per minuut.",
+         "Koos je 0,05 Bq? Dan heb je 60 door 1200 gedeeld. Het aantal per seconde is 1200 / 60."
+        ],
+        "uh": "Per minuut → per seconde: delen door 60."
+       },
+       {
+        "v": "Waarom is de activiteit van een bron niet hetzelfde als wat een geigerteller op een meter afstand meet?",
+        "o": [
+         "Straling gaat alle kanten op",
+         "De teller telt elke kern twee keer",
+         "De activiteit is altijd kleiner dan de meting",
+         "Straling verliest in lucht al zijn energie na een centimeter"
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 0,
+        "u": "Straling verspreidt zich in alle richtingen; de teller vangt een fractie.",
+        "uo": [
+         "Klopt: de bron straalt naar alle kanten. Op een meter afstand vangt het kleine venster van de teller maar een heel klein deel daarvan op. Bovendien kan lucht een deel tegenhouden en telt de teller niet elk deeltje.",
+         "Koos je twee keer tellen? Een teller telt ieder deeltje dat hem raakt hoogstens één keer. De meting is juist lager dan de activiteit.",
+         "Koos je activiteit kleiner? Andersom: de teller vangt maar een deel op, dus de meting is lager dan de werkelijke activiteit.",
+         "Koos je een centimeter? Dat geldt voor alfa ongeveer, maar bèta en gamma komen veel verder. Het belangrijkste is dat de straling zich over alle richtingen verspreidt."
+        ],
+        "uh": "Teller vangt maar een deel.",
+        "ctx": "Een leerling heeft een bron met een activiteit van 37 kBq volgens het etiket. Op een meter afstand meet haar geigerteller maar 8 tikken per seconde. Ze denkt eerst dat de bron of de teller kapot is. Haar docent vraagt haar na te denken over de richting van de straling."
+       },
+       {
+        "v": "Wat gebeurt er met de activiteit van een bron na één halveringstijd?",
+        "o": [
+         "Die wordt nul",
+         "Die verdubbelt",
+         "Die blijft gelijk",
+         "Die halveert"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 0,
+        "u": "Halve kernen → halve activiteit.",
+        "uo": [
+         "Koos je nul? Na één halveringstijd is de helft van de kernen nog over, en die vervallen nog steeds.",
+         "Koos je verdubbelen? Er zijn juist minder kernen over, dus vervallen er per seconde minder.",
+         "Koos je gelijk? Met minder kernen vervallen er per seconde ook minder. De activiteit daalt mee met het aantal kernen.",
+         "Klopt: de activiteit is evenredig met het aantal instabiele kernen. Als de helft vervallen is, vervallen er per seconde ook half zoveel."
+        ],
+        "uh": "Activiteit halveert mee."
+       },
+       {
+        "v": "Een banaan heeft een activiteit van 15 Bq door kalium-40. Hoeveel kernen vervallen er in een uur?",
+        "o": [
+         "15",
+         "900",
+         "54 000",
+         "3600"
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 0,
+        "u": "15 per s × 3600 s.",
+        "uo": [
+         "Koos je 15? Dat is het aantal per seconde. In een uur gebeurt dat 3600 keer zo vaak.",
+         "Koos je 900? Dat is het aantal per minuut: 15 × 60. Een uur heeft 3600 seconden.",
+         "Klopt: 15 Bq betekent 15 vervallen per seconde. In een uur (3600 s) zijn dat 15 × 3600 = 54 000 vervallen.",
+         "Koos je 3600? Dat is het aantal seconden in een uur. Vermenigvuldig nog met 15 vervallen per seconde."
+        ],
+        "uh": "Aantal = activiteit × tijd."
+       },
+       {
+        "v": "Hoe bereken je de geabsorbeerde dosis?",
+        "o": [
+         "Het aantal vervallen per seconde",
+         "Stralingsenergie per kg weefsel",
+         "De totale energie van de bron",
+         "De tijd dat je aan straling blootstaat"
+        ],
+        "c": 1,
+        "d": 1,
+        "s": 1,
+        "u": "D = E / m, in gray (J/kg).",
+        "uo": [
+         "Koos je per seconde? Dat is de activiteit van de bron. De dosis gaat over wat het lichaam opneemt.",
+         "Klopt: de geabsorbeerde dosis is de energie die de straling afgeeft per kilogram weefsel: D = E / m. De eenheid is gray (Gy), gelijk aan J/kg.",
+         "Koos je de totale energie van de bron? De dosis gaat over de energie die in jouw weefsel terechtkomt, en dan per kilogram.",
+         "Koos je de tijd? Langer blootstaan geeft wel een grotere dosis, maar de dosis zelf is energie per kilogram."
+        ],
+        "uh": "D = E/m."
+       },
+       {
+        "v": "Een persoon van 70 kg absorbeert 0,14 J stralingsenergie. Hoe groot is de geabsorbeerde dosis?",
+        "o": [
+         "2,0 mGy",
+         "9,8 Gy",
+         "0,140 Gy",
+         "500 Gy"
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 1,
+        "u": "D = 0,14 / 70 = 0,0020 Gy.",
+        "uo": [
+         "Klopt: D = E / m = 0,14 / 70 = 0,0020 Gy = 2,0 mGy.",
+         "Koos je 9,8 Gy? Dan heb je E met m vermenigvuldigd. De dosis is energie gedeeld door massa.",
+         "Koos je 0,14 Gy? Dan heb je de energie zonder de massa genomen. Deel door 70 kg.",
+         "Koos je 500 Gy? Dan heb je m door E gedeeld. Zet de energie boven de deelstreep."
+        ],
+        "uh": "D = E/m."
+       },
+       {
+        "v": "Hoeveel energie neemt de hand op?",
+        "o": [
+         "2,5 · 10⁻⁵ J",
+         "2,0 · 10⁻⁴ J",
+         "4,0 · 10⁻⁴ J",
+         "1,0 · 10⁻⁴ J"
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 1,
+        "u": "E = D · m = 2,0·10⁻⁴ × 0,50.",
+        "uo": [
+         "Koos je 2,5 · 10⁻⁵ J? Dan heb je nog eens door twee gedeeld. E = D × m geeft 1,0·10⁻⁴ J.",
+         "Koos je 2,0 · 10⁻⁴ J? Dat is de dosis in Gy, niet de energie. Vermenigvuldig nog met de massa van de hand.",
+         "Koos je 4,0 · 10⁻⁴ J? Dan heb je door 0,50 gedeeld in plaats van ermee vermenigvuldigd.",
+         "Klopt: E = D · m = 2,0·10⁻⁴ Gy × 0,50 kg = 1,0·10⁻⁴ J."
+        ],
+        "uh": "E = D · m.",
+        "ctx": "Een laborant houdt per ongeluk even een bronnetje in zijn hand. Een dosismeter laat zien dat zijn hand een geabsorbeerde dosis van 2,0·10⁻⁴ Gy heeft gekregen. De hand en pols samen hebben een massa van ongeveer 0,50 kg."
+       },
+       {
+        "v": "Hoe groot is de geabsorbeerde dosis in de longen?",
+        "o": [
+         "1,6 · 10⁻³ Gy",
+         "8,0 · 10⁻⁴ Gy",
+         "4,0 · 10⁻⁴ Gy",
+         "2,5 · 10³ Gy"
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 1,
+        "u": "E = 1,0·10⁹ × 8,0·10⁻¹³ J = 8,0·10⁻⁴ J; D = E / 2,0 kg.",
+        "uo": [
+         "Koos je 1,6 · 10⁻³ Gy? Dan heb je met de massa vermenigvuldigd in plaats van erdoor gedeeld.",
+         "Koos je 8,0 · 10⁻⁴ Gy? Dat is de energie in joule. Deel nog door de massa van de longen, 2,0 kg.",
+         "Klopt: de totale energie is 1,0·10⁹ × 8,0·10⁻¹³ = 8,0·10⁻⁴ J. Gedeeld door 2,0 kg geeft D = 4,0·10⁻⁴ Gy.",
+         "Koos je 2,5 · 10³ Gy? Dan heb je de massa door de energie gedeeld. Een dosis is energie gedeeld door massa."
+        ],
+        "uh": "D = (aantal × E per deeltje) / m.",
+        "ctx": "Iemand ademt een jaar lang radon in. In zijn longen (massa 2,0 kg) worden in totaal 1,0·10⁹ alfadeeltjes geabsorbeerd. Elk alfadeeltje geeft een energie van 8,0·10⁻¹³ J af (5,0 MeV)."
+       },
+       {
+        "v": "Waarom gebruikt men naast de dosis in gray ook de equivalente dosis in sievert?",
+        "o": [
+         "Gray is te klein om mee te rekenen",
+         "Niet alle straling is even schadelijk",
+         "Sievert meet de activiteit van de bron",
+         "Sievert is alleen voor röntgenstraling"
+        ],
+        "c": 1,
+        "d": 1,
+        "s": 2,
+        "u": "H = w_R · D: weegfactor per soort straling.",
+        "uo": [
+         "Koos je te klein? Sommige doses zijn klein, maar daarvoor gebruik je milli. De sievert is er om het verschil in schadelijkheid mee te nemen.",
+         "Klopt: alfastraling doet per joule veel meer schade dan bèta of gamma, omdat hij zo geconcentreerd ioniseert. De weegfactor w_R houdt daar rekening mee: H = w_R · D.",
+         "Koos je activiteit? De activiteit meet je in becquerel. Sievert gaat over de schade aan het lichaam.",
+         "Koos je alleen röntgen? De equivalente dosis geldt voor alle ioniserende straling. Juist het verschil tussen soorten straling is de reden ervoor."
+        ],
+        "uh": "Sievert: schadelijkheid meegewogen."
+       },
+       {
+        "v": "Welke weegfactor heeft alfastraling, vergeleken met bèta en gamma (w_R = 1)?",
+        "o": [
+         "20",
+         "1",
+         "2",
+         "0,05"
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 2,
+        "u": "w_R: α = 20, β en γ = 1.",
+        "uo": [
+         "Klopt: alfastraling heeft een weegfactor van 20. Bij dezelfde geabsorbeerde dosis doet alfa ongeveer 20 keer zoveel biologische schade als bèta of gamma.",
+         "Koos je 1? Dat geldt voor bèta, gamma en röntgen. Alfa is per joule veel schadelijker.",
+         "Koos je 2? De lading van een alfadeeltje is +2, maar de weegfactor is veel groter: 20.",
+         "Koos je 0,05? Dat zou betekenen dat alfa minder schadelijk is. Alfa ioniseert juist het sterkst en heeft de grootste weegfactor."
+        ],
+        "uh": "w_R alfa = 20."
+       },
+       {
+        "v": "Hoe groot is de equivalente dosis voor de hand van de laborant als het alfastraling was?",
+        "o": [
+         "40 mSv",
+         "0,20 mSv",
+         "2,0 mSv",
+         "4,0 mSv"
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 2,
+        "u": "H = 20 × 2,0·10⁻⁴ Gy = 4,0·10⁻³ Sv.",
+        "uo": [
+         "Koos je 40 mSv? Dan heb je een macht van tien te veel. 20 × 0,20 mGy = 4,0 mSv.",
+         "Koos je 0,20 mSv? Dan heb je de dosis in Gy gewoon als mSv gelezen. 2,0·10⁻⁴ Gy is 0,20 mGy, en dat keer 20 is 4,0 mSv.",
+         "Koos je 2,0 mSv? Dan heb je met een factor 10 gerekend in plaats van 20, of de eenheid verkeerd omgezet.",
+         "Klopt: H = w_R · D = 20 × 2,0·10⁻⁴ = 4,0·10⁻³ Sv = 4,0 mSv."
+        ],
+        "uh": "H = w_R · D.",
+        "ctx": "Dezelfde laborant had een geabsorbeerde dosis van 2,0·10⁻⁴ Gy in zijn hand. Uit onderzoek blijkt dat het bronnetje een alfastraler was. De weegfactor voor alfastraling is 20, voor bèta en gamma 1."
+       },
+       {
+        "v": "Een persoon krijgt 0,50 mGy gammastraling. Hoe groot is de equivalente dosis?",
+        "o": [
+         "0,025 mSv",
+         "10 mSv",
+         "0,50 mSv",
+         "5,0 mSv"
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 2,
+        "u": "w_R = 1 → H = D.",
+        "uo": [
+         "Koos je 0,025 mSv? Dan heb je door 20 gedeeld. Bij gamma verandert het getal niet.",
+         "Koos je 10 mSv? Dan heb je de weegfactor van alfa (20) gebruikt. Gamma heeft weegfactor 1.",
+         "Klopt: voor gamma is de weegfactor 1, dus de equivalente dosis is even groot als de geabsorbeerde dosis: 0,50 mSv.",
+         "Koos je 5,0 mSv? Dan heb je met 10 vermenigvuldigd. De weegfactor van gamma is 1."
+        ],
+        "uh": "Gamma: H = D."
+       },
+       {
+        "v": "Wat is het verschil tussen bestraling en besmetting?",
+        "o": [
+         "Bestraling is altijd gevaarlijker dan besmetting",
+         "Bij besmetting zit radioactieve stof op of in je",
+         "Bij bestraling word je zelf radioactief",
+         "Er is geen verschil, het zijn twee woorden voor hetzelfde"
+        ],
+        "c": 1,
+        "d": 1,
+        "s": 3,
+        "u": "Bestraling: straling van buiten. Besmetting: de stof zelf zit op/in je.",
+        "uo": [
+         "Koos je bestraling altijd gevaarlijker? Dat hangt van de situatie af. Besmetting is vaak erger, omdat de bron blijft stralen en je hem meeneemt.",
+         "Klopt: bij bestraling komt straling van een bron buiten je lichaam en houdt het op zodra je weggaat. Bij besmetting zit de radioactieve stof zelf op je huid of in je lichaam en blijft je bestralen.",
+         "Koos je zelf radioactief? Bestraling met alfa, bèta of gamma maakt je niet radioactief. Pas als de stof op of in je zit, straal je zelf een beetje.",
+         "Koos je geen verschil? Het verschil is juist belangrijk: bestraling stopt als je weggaat, besmetting neem je mee."
+        ],
+        "uh": "Besmetting = stof op of in je."
+       },
+       {
+        "v": "Een patiënt heeft een röntgenfoto laten maken. Is hij daarna radioactief?",
+        "o": [
+         "Nee, dat was bestraling",
+         "Ja, een paar uur lang",
+         "Ja, maar alleen op de plek van de foto",
+         "Alleen als hij een loodschort droeg"
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 3,
+        "u": "Röntgen = bestraling, geen stof in het lichaam.",
+        "uo": [
+         "Klopt: bij een röntgenfoto gaat er even straling door het lichaam. Er blijft geen radioactieve stof achter, dus de patiënt straalt daarna niets uit.",
+         "Koos je een paar uur? Röntgenstraling maakt geen stoffen radioactief. Zodra het apparaat uit is, is er geen straling meer.",
+         "Koos je op de plek van de foto? Ook daar blijft niets achter. De straling is door het lichaam gegaan en weg.",
+         "Koos je loodschort? Een loodschort beschermt andere delen van het lichaam tegen straling, maar heeft niets te maken met radioactief worden."
+        ],
+        "uh": "Röntgen: bestraling, niet radioactief."
+       },
+       {
+        "v": "Waarom moet een patiënt na een behandeling met jodium-131 een paar dagen thuisblijven en apart slapen?",
+        "o": [
+         "Hij moet de straling uitzweten in bed",
+         "Hij is bestraald en is daardoor zelf radioactief geworden",
+         "Jodium is giftig voor zijn huisgenoten",
+         "Hij is besmet: de stof in zijn lichaam straalt nog"
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 3,
+        "u": "Inwendige besmetting → straalt naar omgeving, plast het uit.",
+        "uo": [
+         "Koos je uitzweten? Straling kun je niet uitzweten. Het jodium verlaat het lichaam via de urine en vervalt intussen met een halveringstijd van 8 dagen.",
+         "Koos je bestraald? Hij is juist besmet: de radioactieve stof zit in zijn lichaam. Bestraling alleen zou hem niet radioactief maken.",
+         "Koos je giftig? De kleine hoeveelheid jodium is chemisch onschuldig. Het gaat om de straling van de radioactieve isotoop.",
+         "Klopt: het jodium-131 zit in zijn schildklier en zendt nog dagen straling uit, ook naar mensen in de buurt. Bovendien plast hij een deel uit. Daarom houdt hij afstand tot hij voldoende is vervallen en uitgescheiden."
+        ],
+        "uh": "Inwendige besmetting.",
+        "ctx": "Een patiënt met een overactieve schildklier krijgt een capsule met jodium-131 (halveringstijd 8 dagen, bèta- en gammastraler). In de folder staat: blijf de eerste dagen op minstens een meter afstand van anderen, slaap apart, spoel het toilet twee keer door en houd vooral afstand tot zwangere vrouwen en kleine kinderen."
+       },
+       {
+        "v": "Na een kernongeluk wordt mensen gevraagd binnen te blijven en ramen dicht te doen. Waarom?",
+        "o": [
+         "Omdat straling niet door glas kan",
+         "Omdat muren alle straling volledig tegenhouden",
+         "Zo adem je geen radioactief stof in",
+         "Om de mensen te tellen"
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 3,
+        "u": "Radioactief stof inademen = inwendige besmetting.",
+        "uo": [
+         "Koos je glas? Gamma gaat gewoon door glas. Het dicht houden van ramen voorkomt vooral dat stof binnenkomt.",
+         "Koos je alle straling volledig? Muren schermen een deel af, maar niet alles. Het belangrijkste is dat je geen radioactieve stof binnenkrijgt.",
+         "Klopt: na een ongeluk kan radioactief stof door de lucht drijven. Binnen met de ramen dicht adem je minder van dat stof in en komt er minder op je huid. Muren geven bovendien wat afscherming.",
+         "Koos je tellen? Het advies is er voor je eigen veiligheid: voorkomen dat je radioactief stof inademt."
+        ],
+        "uh": "Binnenblijven: geen stof inademen."
+       },
+       {
+        "v": "Waarom krijgen omwonenden na een kernongeval jodiumtabletten?",
+        "o": [
+         "Jodium houdt gammastraling tegen als een loodschort",
+         "De schildklier neemt dan geen radioactief jodium op",
+         "Jodium maakt radioactieve stoffen in het lichaam onschadelijk",
+         "Jodiumtabletten genezen stralingsziekte"
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 3,
+        "u": "Voorkomen van inwendige besmetting met I-131.",
+        "uo": [
+         "Koos je gammastraling tegenhouden? Een tablet in je maag schermt geen straling af. Het werkt doordat je schildklier dan geen radioactief jodium meer opslaat.",
+         "Klopt: bij een kernongeval kan radioactief jodium-131 vrijkomen. De schildklier slaat jodium op. Door vooraf veel gewoon jodium te slikken, is de schildklier verzadigd en neemt hij het radioactieve jodium niet meer op.",
+         "Koos je onschadelijk maken? Jodium verandert niets aan het verval van andere stoffen. Het voorkomt alleen dat radioactief jodium in de schildklier terechtkomt.",
+         "Koos je genezen? De tabletten helpen alleen vooraf, tegen opname van radioactief jodium. Tegen schade door straling die je al hebt gekregen, doen ze niets."
+        ],
+        "uh": "Jodiumtablet: schildklier verzadigen.",
+        "ctx": "Rond de kerncentrale in Borssele krijgen huishoudens jodiumtabletten in een kastje thuis. Bij een ernstig ongeluk kan radioactief jodium-131 vrijkomen, dat via de lucht wordt ingeademd. De overheid zegt dat je de tabletten alleen moet slikken als dat wordt gezegd, liefst vóór de radioactieve wolk aankomt."
+       },
+       {
+        "v": "Hoe herken je de halveringsdikte van een materiaal voor gammastraling?",
+        "o": [
+         "De dikte die de helft van de straling doorlaat",
+         "De dikte die alle straling tegenhoudt",
+         "De helft van de dikte van een loden muur",
+         "De dikte waarbij de straling twee keer zo sterk wordt"
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 4,
+        "u": "Na d½ is de intensiteit gehalveerd.",
+        "uo": [
+         "Klopt: een laag van één halveringsdikte laat de helft van de gammastraling door. Twee lagen laten een kwart door, drie een achtste, enzovoort.",
+         "Koos je alles tegenhouden? Gamma wordt nooit helemaal tegengehouden. Daarom werkt men met halveringsdikte: elke laag halveert.",
+         "Koos je de helft van een muur? De halveringsdikte hangt af van het materiaal en de energie van de straling, niet van een bepaalde muur.",
+         "Koos je twee keer zo sterk? Afscherming maakt straling altijd zwakker, nooit sterker. Na één halveringsdikte is de intensiteit juist gehalveerd."
+        ],
+        "uh": "d½: helft door."
+       },
+       {
+        "v": "Lood heeft voor deze gammastraling een halveringsdikte van 1,2 cm. Welk deel komt door 3,6 cm lood?",
+        "o": [
+         "1/16",
+         "1/3",
+         "1/4",
+         "1/8"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 4,
+        "u": "3,6/1,2 = 3 → (½)³.",
+        "uo": [
+         "Koos je 1/16? Dat is na vier halveringsdiktes, dus achter 4,8 cm lood. Bij 3,6 cm is er één keer minder gehalveerd: 1/8.",
+         "Koos je 1/3? Dan heb je 3,6 door 1,2 gedeeld en dat als breuk genomen. Elke halveringsdikte halveert, dus (½)³.",
+         "Koos je 1/4? Dat is na twee halveringsdiktes, 2,4 cm. Bij 3,6 cm is het nog een keer gehalveerd.",
+         "Klopt: 3,6 cm is drie halveringsdiktes. De intensiteit halveert drie keer: ½ × ½ × ½ = 1/8."
+        ],
+        "uh": "n = d / d½, rest (½)ⁿ."
+       },
+       {
+        "v": "Hoe dik moet de loden wand minimaal zijn?",
+        "o": [
+         "2,0 cm",
+         "1,50 cm",
+         "3,0 cm",
+         "6,0 cm"
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 4,
+        "u": "1/32 = (½)⁵ → 5 × 0,60 cm.",
+        "uo": [
+         "Koos je 2,0 cm? Dan heb je 32 door 16 gedeeld of met de verkeerde macht gerekend. 1/32 vraagt vijf keer halveren.",
+         "Koos je 1,5 cm? Dat zijn maar 2,5 halveringsdiktes; dan komt er ongeveer 1/6 door, veel meer dan 1/32.",
+         "Klopt: de straling moet tot 1/32 deel terug. 32 = 2⁵, dus vijf halveringsdiktes: 5 × 0,60 = 3,0 cm lood.",
+         "Koos je 6,0 cm? Dat is tien halveringsdiktes, veel meer dan nodig: dan komt er maar een duizendste door."
+        ],
+        "uh": "Zoek n met 2ⁿ = factor.",
+        "ctx": "Een ziekenhuis bouwt een kast voor een gammabron. Achter de kast moet de straling teruggebracht worden tot 1/32 deel van de straling zonder afscherming. Voor deze gammastraling is de halveringsdikte van lood 0,60 cm."
+       },
+       {
+        "v": "Welk materiaal heeft voor dezelfde gammastraling de kleinste halveringsdikte?",
+        "o": [
+         "Water",
+         "Lood",
+         "Beton",
+         "Aluminium"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 4,
+        "u": "Grotere dichtheid → kleinere d½.",
+        "uo": [
+         "Koos je water? Water heeft een kleine dichtheid. Je hebt een dikke laag water nodig voor dezelfde afscherming.",
+         "Klopt: lood heeft een heel grote dichtheid en veel elektronen per atoom. Daardoor wisselwerkt gamma er vaak mee en is een dunne laag al genoeg om de straling te halveren.",
+         "Koos je beton? Beton werkt redelijk en is goedkoop, maar je hebt meer dikte nodig dan bij lood.",
+         "Koos je aluminium? Aluminium houdt bèta goed tegen, maar voor gamma is het veel minder effectief dan lood."
+        ],
+        "uh": "Lood: kleinste d½."
+       },
+       {
+        "v": "Hoe groot is de halveringsdikte van lood voor deze gammastraling?",
+        "o": [
+         "0,80 cm",
+         "1,2 cm",
+         "2,4 cm",
+         "0,30 cm"
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 4,
+        "u": "400 → 50 = (½)³ in 2,4 cm → d½ = 0,80 cm.",
+        "uo": [
+         "Klopt: van 400 naar 50 is drie keer halveren (400 → 200 → 100 → 50). Drie halveringsdiktes zijn samen 2,4 cm, dus d½ = 0,80 cm.",
+         "Koos je 1,2 cm? Dan heb je twee halveringen geteld. Van 400 naar 50 is drie keer halveren.",
+         "Koos je 2,4 cm? Dat is de totale dikte. Daarin passen drie halveringsdiktes.",
+         "Koos je 0,30 cm? Dan heb je 2,4 door 8 gedeeld. Het aantal halveringen is 3, want 2³ = 8."
+        ],
+        "uh": "Aantal halveringen uit de factor, dan d / n.",
+        "ctx": "Een leerling meet met een geigerteller de straling van een gammabron (na aftrek van de achtergrond). Zonder lood telt ze 400 tikken per minuut. Met een loden plaat van 2,4 cm ertussen telt ze 50 tikken per minuut."
+       },
+       {
+        "v": "Hoeveel stralingsdosis krijgt iemand in Nederland gemiddeld per jaar, alles bij elkaar?",
+        "o": [
+         "Ongeveer 25 Sv",
+         "Ongeveer 250 mSv",
+         "Ongeveer 0,0025 mSv",
+         "Ongeveer 2,5 mSv"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 5,
+        "u": "NL gemiddeld ~2,5 mSv/jaar (natuur + medisch).",
+        "uo": [
+         "Koos je 25 Sv? Zo'n dosis in korte tijd is dodelijk. De dosis per jaar is in de orde van millisievert.",
+         "Koos je 250 mSv? Dat is honderd keer te veel. Bij zo'n dosis per jaar zou het risico op kanker duidelijk verhoogd zijn.",
+         "Koos je 0,0025 mSv? Dat is duizend keer te weinig; zo weinig krijg je al in een paar uur van de natuurlijke achtergrond.",
+         "Klopt: gemiddeld krijgt een Nederlander ongeveer 2,5 mSv per jaar, vooral door radon, straling uit de bodem, kosmische straling, voedsel en medisch onderzoek."
+        ],
+        "uh": "NL: ~2,5 mSv/jaar."
+       },
+       {
+        "v": "Welke drie manieren gebruik je om je tegen straling van buitenaf te beschermen?",
+        "o": [
+         "Warm aankleden, eten en slapen",
+         "Zonnebrand, water drinken en ventileren",
+         "Afstand, afscherming en tijd beperken",
+         "Alleen afscherming, de rest helpt niet"
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 5,
+        "u": "Afstand houden, afschermen, kort blootstaan.",
+        "uo": [
+         "Koos je warm aankleden? Kleding houdt alleen alfa tegen. Tegen bèta en gamma helpen afstand, afscherming en korte tijd.",
+         "Koos je zonnebrand? Dat helpt tegen uv van de zon, maar niet tegen gamma of bèta. Ventileren helpt wel tegen radon, maar de drie regels zijn afstand, afscherming en tijd.",
+         "Klopt: hoe verder je weg bent, hoe minder straling je raakt; een afscherming houdt straling tegen; en hoe korter je blootstaat, hoe kleiner je dosis.",
+         "Koos je alleen afscherming? Afstand en tijd zijn net zo belangrijk. Een laborant die snel werkt en afstand houdt, krijgt veel minder dosis."
+        ],
+        "uh": "Afstand, afscherming, tijd."
+       },
+       {
+        "v": "Past deze CT-scan binnen de dosislimiet van 1 mSv per jaar voor de bevolking?",
+        "o": [
+         "Nee, de scan is verboden",
+         "De limiet geldt niet voor medische scans",
+         "Ja, want 8 mSv is minder dan 1 mSv",
+         "Ja, want de straling van een scan telt alleen voor de arts"
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 5,
+        "u": "Dosislimiet geldt niet voor medische toepassingen; afweging nut/risico.",
+        "uo": [
+         "Koos je verboden? Een CT-scan wordt alleen gemaakt als het nut groter is dan het risico. Hij is niet verboden, maar wordt niet zomaar gedaan.",
+         "Klopt: de limiet van 1 mSv per jaar geldt voor straling uit kunstmatige bronnen in de omgeving, niet voor medisch onderzoek. Daar weegt de arts het nut af tegen het kleine extra risico, en kiest hij een zo laag mogelijke dosis.",
+         "Koos je 8 mSv is minder? 8 mSv is juist acht keer zoveel als 1 mSv. Het punt is dat die limiet voor medische straling niet geldt.",
+         "Koos je alleen de arts? De patiënt krijgt de dosis zelf. De arts staat buiten de ruimte en krijgt vrijwel niets."
+        ],
+        "uh": "Medisch: nut tegen risico.",
+        "ctx": "Een patiënt krijgt na een val een CT-scan van zijn buik. Dat geeft een equivalente dosis van ongeveer 8 mSv. Zijn buurman zegt dat dat niet mag, omdat de wet maximaal 1 mSv per jaar toestaat voor gewone burgers. De gemiddelde Nederlander krijgt van nature al ongeveer 2,5 mSv per jaar."
+       },
+       {
+        "v": "Waarom krijgt een piloot per jaar meer straling dan iemand die op de grond werkt?",
+        "o": [
+         "Er zit minder lucht boven je",
+         "Vliegtuigen zijn gemaakt van radioactief metaal",
+         "De motoren van het vliegtuig zenden straling uit",
+         "Op grote hoogte is er meer radon"
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 5,
+        "u": "Atmosfeer schermt kosmische straling af; hoogte = minder afscherming.",
+        "uo": [
+         "Klopt: de atmosfeer werkt als een afscherming tegen kosmische straling uit de ruimte. Op 10 km hoogte zit er veel minder lucht boven je, dus krijg je meer straling. Een piloot kan zo een paar mSv per jaar extra oplopen.",
+         "Koos je radioactief metaal? Vliegtuigen zijn gewoon van aluminium en composiet. De extra straling komt van buiten.",
+         "Koos je motoren? Straalmotoren verbranden kerosine en zenden geen ioniserende straling uit. Het gaat om kosmische straling.",
+         "Koos je radon? Radon komt juist uit de bodem en zit vooral laag bij de grond en in kelders. Hoog in de lucht is er bijna geen radon."
+        ],
+        "uh": "Hoogte: minder afscherming door lucht.",
+        "ctx": "Piloten en stewardessen worden in Nederland als beroepsgroep gevolgd voor stralingsbelasting. Een piloot die veel lange vluchten op 11 km hoogte maakt, kan zo'n 3 mSv per jaar extra oplopen. Op zeeniveau beschermt de dampkring ons tegen het grootste deel van de kosmische straling."
+       },
+       {
+        "v": "Waarom draagt een laborant op de röntgenafdeling een dosismeter?",
+        "o": [
+         "Om de activiteit van het apparaat te regelen",
+         "Om de straling tegen te houden",
+         "Om de patiënt te beschermen",
+         "Om bij te houden hoeveel dosis hij oploopt"
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 5,
+        "u": "Dosismeter registreert de opgelopen dosis.",
+        "uo": [
+         "Koos je activiteit regelen? Een röntgenapparaat heeft geen radioactieve bron en wordt bediend vanaf een schakelpaneel. De meter meet alleen wat de drager ontvangt.",
+         "Koos je tegenhouden? Een dosismeter is klein en houdt vrijwel niets tegen. Daarvoor dient een loodschort of een loden wand.",
+         "Koos je de patiënt beschermen? De meter zit op de laborant zelf en meet zijn eigen dosis. De patiënt wordt beschermd door de dosis per foto laag te houden.",
+         "Klopt: een dosismeter of badge registreert hoeveel straling de laborant ontvangt. Zo kan worden gecontroleerd dat hij onder de limiet voor stralingswerkers blijft, 20 mSv per jaar."
+        ],
+        "uh": "Dosismeter = eigen dosis bijhouden."
+       }
+      ],
+      "oe": [
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een patiënt van 75 kg krijgt bij een onderzoek een gammastraler toegediend. Over de hele periode tot de stof vervallen en uitgescheiden is, neemt het lichaam in totaal 0,30 J stralingsenergie op. De weegfactor voor gamma is 1.",
+        "v": "Bereken de geabsorbeerde dosis en de equivalente dosis, en vergelijk die met de gemiddelde achtergronddosis in Nederland.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "D = E / m = 0,30 / 75 = 4,0·10⁻³ Gy (1p). H = 1 × 4,0·10⁻³ = 4,0 mSv (1p). Dat is ruim anderhalf keer de gemiddelde achtergronddosis van ongeveer 2,5 mSv per jaar (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een onderzoeker krijgt per ongeluk een kleine hoeveelheid van een alfastraler binnen. In zijn longen (2,0 kg) worden in een jaar 5,0·10⁸ alfadeeltjes geabsorbeerd, elk met een energie van 8,0·10⁻¹³ J. De weegfactor voor alfa is 20.",
+        "v": "Bereken de equivalente dosis voor de longen en leg uit waarom deze besmetting gevaarlijker is dan een alfabron op een meter afstand.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "E = 5,0·10⁸ × 8,0·10⁻¹³ = 4,0·10⁻⁴ J; D = 4,0·10⁻⁴ / 2,0 = 2,0·10⁻⁴ Gy (1p). H = 20 × 2,0·10⁻⁴ = 4,0·10⁻³ Sv = 4,0 mSv (1p). Op een meter afstand komt alfa niet eens bij je; in de longen geeft hij al zijn energie direct af aan levende cellen (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een technicus werkt aan een apparaat met een gammabron. Zonder afscherming is het dosistempo op zijn werkplek 40 µSv per uur. Hij plaatst een loden scherm van 3,0 cm; de halveringsdikte van lood voor deze straling is 1,0 cm. Hij werkt er 5 uur.",
+        "v": "Bereken de dosis die hij met het scherm oploopt en noem nog een manier om de dosis te verkleinen.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "3,0 cm is drie halveringsdiktes: 40 / 8 = 5,0 µSv per uur (1p). In 5 uur: 25 µSv (1p). Bijvoorbeeld afstand vergroten of de werktijd korter maken (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Na het ongeluk in Fukushima in 2011 maakten mensen in Nederland zich zorgen. Een krant schreef dat iedereen die ooit een röntgenfoto heeft laten maken \"een beetje radioactief\" is. In Japan werden mensen in de buurt van de centrale juist gevraagd binnen te blijven en geen groente uit de eigen tuin te eten.",
+        "v": "Beoordeel de uitspraak in de krant en leg uit waarom het advies in Japan zinvol was.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "De uitspraak klopt niet: een röntgenfoto is bestraling, er blijft geen radioactieve stof in het lichaam achter (1p). In Japan kwam radioactief stof vrij; binnenblijven voorkomt dat je het inademt (1p), en geen groente uit de tuin eten voorkomt inwendige besmetting via voedsel (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een leerling vergelijkt doses: een röntgenfoto van een tand geeft ongeveer 0,005 mSv, een retourvlucht naar New York ongeveer 0,08 mSv, een CT-scan van de buik ongeveer 8 mSv. De dosislimiet voor de bevolking is 1 mSv per jaar. Zijn moeder wil daarom geen CT-scan voor hem laten maken.",
+        "v": "Bereken hoeveel tandfoto's overeenkomen met één CT-scan en leg uit of de dosislimiet een reden is om de scan te weigeren.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "8 / 0,005 = 1600 tandfoto's (1p). De limiet van 1 mSv geldt voor extra straling uit de omgeving, niet voor medisch onderzoek (1p). De arts weegt het nut van de scan af tegen het kleine extra risico; de limiet is dus geen reden om te weigeren (1p)."
+       }
+      ]
      }
     ]
    }

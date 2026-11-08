@@ -2621,6 +2621,28 @@ var VAKKEN = [
       "nOe": 5,
       "nBeg": 11,
       "hasSam": true
+     },
+     {
+      "id": "E3",
+      "lo": "na.E.3",
+      "gs": 2,
+      "naam": "Activiteit, dosis en afscherming",
+      "beschrijving": "Je rekent met activiteit in becquerel, geabsorbeerde dosis (D = E / m) en equivalente dosis (H = w_R · D), onderscheidt bestraling en besmetting, rekent met halveringsdikte en beschrijft achtergrondstraling, dosislimieten en hoe je je beschermt met afstand, afscherming en tijd.",
+      "ceStatus": "CE",
+      "binas": "27, 28",
+      "val": "",
+      "onderwerpen": [
+       "Activiteit in becquerel",
+       "Geabsorbeerde dosis in gray",
+       "Equivalente dosis en weegfactor",
+       "Bestraling en besmetting",
+       "Afscherming en halveringsdikte",
+       "Achtergrondstraling, limieten en bescherming"
+      ],
+      "nSv": 28,
+      "nOe": 5,
+      "nBeg": 11,
+      "hasSam": true
      }
     ]
    }
