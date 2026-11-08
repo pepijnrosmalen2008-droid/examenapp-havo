@@ -5,7 +5,7 @@
 Volledige beschrijving (functies, inhoud per niveau, prijs, wat Slagio niet is): https://slagio.nl/llms-full.txt
 
 ## In het kort
-- 12 vakken havo, 16 vakken vwo, 12 vakken vmbo; 26.114 oefenvragen en 4.346 begrippen.
+- 12 vakken havo, 16 vakken vwo, 12 vakken vmbo; 26.142 oefenvragen en 4.346 begrippen.
 - Adaptief oefenen: na een fout een vraag over hetzelfde onderwerp, een niveau makkelijker; uitleg bij elk fout antwoord.
 - Foutenboek en herhalen met gespreide herhaling, beheersing per leerdoel, studieplan tot het examen.
 - Examens met klok, proefexamens in examenstijl met modelantwoord en puntenverdeling, archief met officiële oude examens.
@@ -89,6 +89,7 @@ Volledige beschrijving (functies, inhoud per niveau, prijs, wat Slagio niet is):
 - [Trillingen (Natuurkunde HAVO)](https://slagio.nl/leren/havo/natuurkunde/trillingen.html): Je beschrijft een trilling met uitwijking, amplitude, trillingstijd en frequentie, leest een (u,t)-diagram af en rekent de trillingstijd uit van een…
 - [Golven en golfgrootheden (Natuurkunde HAVO)](https://slagio.nl/leren/havo/natuurkunde/golven-en-golfgrootheden.html): Je legt uit wat een lopende golf is, onderscheidt transversale en longitudinale golven, leest de golflengte af uit een (u,x)-diagram en rekent met v = f · λ.…
 - [Geluid: grondtoon, boventonen en resonantie (Natuurkunde HAVO)](https://slagio.nl/leren/havo/natuurkunde/geluid-grondtoon-boventonen-en-resonantie.html): Je koppelt toonhoogte aan frequentie en luidheid aan amplitude, legt uit hoe staande golven met knopen en buiken ontstaan, berekent grondtoon en boventonen…
+- [Breking, spiegeling en interferentie (Natuurkunde HAVO)](https://slagio.nl/leren/havo/natuurkunde/breking-spiegeling-en-interferentie.html): Je past de spiegelwet toe, legt breking uit met de lichtsnelheid en de brekingsindex, rekent met de wet van Snellius en de grenshoek, verklaart totale…
 - [Snelheid en versnelling (Natuurkunde HAVO)](https://slagio.nl/leren/havo/natuurkunde/snelheid-en-versnelling.html): Snelheid en versnelling berekenen en het verschil ertussen begrijpen, inclusief de vrije val met valversnelling g.
 - [Krachten herkennen (Natuurkunde HAVO)](https://slagio.nl/leren/havo/natuurkunde/krachten-herkennen.html): De zwaartekracht, normaalkracht, wrijvingskracht en spankracht herkennen en tekenen, de resulterende kracht bepalen, en het verschil tussen gewicht (kracht)…
 - [Krachten samenstellen en ontbinden (Natuurkunde HAVO)](https://slagio.nl/leren/havo/natuurkunde/krachten-samenstellen-en-ontbinden.html): Krachten die op één lijn, loodrecht of onder een willekeurige hoek staan samenstellen tot een resulterende kracht, en een kracht ontbinden in componenten.

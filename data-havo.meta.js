@@ -2214,6 +2214,28 @@ var VAKKEN = [
       "nOe": 5,
       "nBeg": 11,
       "hasSam": true
+     },
+     {
+      "id": "B4",
+      "lo": "na.B.4",
+      "gs": 2,
+      "naam": "Breking, spiegeling en interferentie",
+      "beschrijving": "Je past de spiegelwet toe, legt breking uit met de lichtsnelheid en de brekingsindex, rekent met de wet van Snellius en de grenshoek, verklaart totale terugkaatsing en bepaalt met het weglengteverschil of twee golven elkaar versterken of uitdoven.",
+      "ceStatus": "CE",
+      "binas": "18",
+      "val": "",
+      "onderwerpen": [
+       "Spiegeling",
+       "Breking en brekingsindex",
+       "Rekenen met de wet van Snellius",
+       "Totale terugkaatsing en grenshoek",
+       "Interferentie: versterking en uitdoving",
+       "Interferentie in de praktijk"
+      ],
+      "nSv": 28,
+      "nOe": 5,
+      "nBeg": 11,
+      "hasSam": true
      }
     ]
    },

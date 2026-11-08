@@ -89278,6 +89278,696 @@ var VAKKEN = [
         "u": "De snaar moet strakker: dan wordt de golfsnelheid in de snaar groter (1p); λ = 2L blijft gelijk, dus f = v / λ stijgt (1p). De vriend heeft ongelijk: de trillende lengte tussen kam en brug verandert niet, en losser draaien verlaagt juist de toon (1p)."
        }
       ]
+     },
+     {
+      "id": "B4",
+      "lo": "na.B.4",
+      "gs": 2,
+      "naam": "Breking, spiegeling en interferentie",
+      "beschrijving": "Je past de spiegelwet toe, legt breking uit met de lichtsnelheid en de brekingsindex, rekent met de wet van Snellius en de grenshoek, verklaart totale terugkaatsing en bepaalt met het weglengteverschil of twee golven elkaar versterken of uitdoven.",
+      "ceStatus": "CE",
+      "binas": "18",
+      "val": "",
+      "onderwerpen": [
+       "Spiegeling",
+       "Breking en brekingsindex",
+       "Rekenen met de wet van Snellius",
+       "Totale terugkaatsing en grenshoek",
+       "Interferentie: versterking en uitdoving",
+       "Interferentie in de praktijk"
+      ],
+      "sam": "Spiegeling: hoek van inval = hoek van terugkaatsing, gemeten vanaf de normaal. Breking: de golf verandert van richting doordat de snelheid verandert; n = c / v. Snellius (vanuit lucht): sin i / sin r = n; naar een langzamere stof breekt licht naar de normaal toe. Grenshoek: sin g = 1 / n; bij i > g totale terugkaatsing (glasvezel). Interferentie: versterking bij Δx = 0, λ, 2λ; uitdoving bij Δx = ½λ, 1½λ (noise cancelling).",
+      "begrippen": [
+       {
+        "t": "Normaal",
+        "d": "Lijn loodrecht op een grensvlak of spiegel; hoeken van inval, terugkaatsing en breking meet je hiervandaan."
+       },
+       {
+        "t": "Spiegeling",
+        "d": "Terugkaatsen van licht of een andere golf; hoek van inval = hoek van terugkaatsing."
+       },
+       {
+        "t": "Breking",
+        "d": "Richtingsverandering van een golf die schuin van de ene stof naar de andere gaat, doordat de snelheid verandert."
+       },
+       {
+        "t": "Brekingsindex",
+        "d": "Verhouding tussen de lichtsnelheid in vacuüm en in een stof: n = c / v."
+       },
+       {
+        "t": "Wet van Snellius",
+        "d": "Verband tussen de hoeken bij breking: vanuit lucht sin i / sin r = n."
+       },
+       {
+        "t": "Grenshoek",
+        "d": "Hoek van inval waarbij de gebroken straal langs het grensvlak scheert: sin g = 1 / n."
+       },
+       {
+        "t": "Totale terugkaatsing",
+        "d": "Alle licht kaatst terug, als het naar een minder dichte stof gaat met een hoek groter dan de grenshoek."
+       },
+       {
+        "t": "Interferentie",
+        "d": "Optellen van twee golven op dezelfde plek; geeft versterking of uitdoving."
+       },
+       {
+        "t": "Weglengteverschil",
+        "d": "Verschil in afstand die twee golven van hun bron afleggen (Δx); bepaalt versterking of uitdoving."
+       },
+       {
+        "t": "Tegenfase",
+        "d": "Twee trillingen een halve trilling verschoven, zodat een top samenvalt met een dal."
+       },
+       {
+        "t": "Noise cancelling",
+        "d": "Techniek die lawaai laat uitdoven door hetzelfde geluid in tegenfase af te spelen."
+       }
+      ],
+      "sv": [
+       {
+        "v": "Welke regel geldt bij spiegeling van licht op een vlakke spiegel?",
+        "o": [
+         "De teruggekaatste straal gaat terug langs dezelfde weg",
+         "Hoek van inval is altijd 90°",
+         "Hoek van inval = hoek van terugkaatsing",
+         "De hoek van terugkaatsing is twee keer zo groot als de hoek van inval"
+        ],
+        "c": 2,
+        "d": 1,
+        "s": 0,
+        "u": "i = t, beide gemeten ten opzichte van de normaal.",
+        "uo": [
+         "Koos je dezelfde weg terug? Dat gebeurt alleen bij loodrechte inval. Bij een schuine straal gaat het licht aan de andere kant van de normaal verder.",
+         "Koos je altijd 90°? Licht kan onder elke hoek op een spiegel vallen. Alleen als het loodrecht invalt, is de hoek met de normaal 0° en gaat het recht terug.",
+         "Klopt: de hoek tussen de invallende straal en de normaal is even groot als de hoek tussen de teruggekaatste straal en de normaal. De normaal staat loodrecht op de spiegel.",
+         "Koos je twee keer zo groot? De hoeken zijn gelijk. Wel draait de teruggekaatste straal twee keer zo veel als je de spiegel een beetje kantelt."
+        ],
+        "uh": "Spiegeling: i = t."
+       },
+       {
+        "v": "Een lichtstraal maakt een hoek van 25° met het spiegeloppervlak. Hoe groot is de hoek van terugkaatsing?",
+        "o": [
+         "25°",
+         "65°",
+         "50°",
+         "115°"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 0,
+        "u": "Meet vanaf de normaal: 90° - 25° = 65°.",
+        "uo": [
+         "Koos je 25°? Dat is de hoek met de spiegel zelf. De regel i = t geldt voor hoeken met de normaal, dus eerst omrekenen.",
+         "Klopt: hoeken bij spiegeling meet je vanaf de normaal. Die staat loodrecht op de spiegel, dus i = 90° - 25° = 65°, en de hoek van terugkaatsing is ook 65°.",
+         "Koos je 50°? Dat is twee keer de hoek met de spiegel, en die heb je hier niet nodig. Reken eerst de hoek met de normaal uit: 90° - 25°.",
+         "Koos je 115°? Een hoek met de normaal is nooit groter dan 90°. Trek de hoek met de spiegel af van 90°."
+        ],
+        "uh": "Hoeken altijd vanaf de normaal.",
+        "ctx": "Bij een practicum schijnt een leerling met een laserpen op een vlakke spiegel die plat op tafel ligt. Met een geodriehoek meet ze dat de laserstraal een hoek van 25° maakt met het oppervlak van de spiegel. Ze wil voorspellen waar de teruggekaatste straal de muur raakt."
+       },
+       {
+        "v": "Waarom zie je in een rustig meer de bomen op de oever ondersteboven?",
+        "o": [
+         "Het water kaatst het licht terug als een spiegel",
+         "Het licht breekt in het water en keert om",
+         "De bomen staan in het water en je ziet de onderkant",
+         "Het licht buigt om de rand van het meer heen"
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 0,
+        "u": "Spiegeling aan het wateroppervlak: i = t.",
+        "uo": [
+         "Klopt: een glad wateroppervlak kaatst een deel van het licht terug, net als een spiegel. Licht van de top van een boom komt via een punt dichterbij op het water bij je oog, dus de top lijkt onderaan te staan.",
+         "Koos je breking? Licht dat het water in breekt, gaat naar beneden en komt niet bij je oog terug. Het spiegelbeeld komt van het teruggekaatste licht.",
+         "Koos je de onderkant? De bomen staan op de oever, niet in het water. Wat je ziet is een spiegelbeeld van de hele boom.",
+         "Koos je om de rand heen buigen? Dat effect is heel klein voor licht. Het spiegelbeeld ontstaat doordat het wateroppervlak het licht terugkaatst."
+        ],
+        "uh": "Rustig water = spiegel.",
+        "ctx": "Op een windstille ochtend kijkt een wandelaar over een meer. Aan de overkant staan hoge bomen op de oever. In het water ziet hij een scherp beeld van dezelfde bomen, maar dan met de toppen naar beneden. Zodra er wind komt en er golfjes ontstaan, wordt het beeld wazig."
+       },
+       {
+        "v": "Een straal valt onder 35° met de normaal op een spiegel. Hoe groot is de hoek tussen de twee stralen?",
+        "o": [
+         "110°",
+         "35°",
+         "55°",
+         "70°"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 0,
+        "u": "i + t = 35° + 35°.",
+        "uo": [
+         "Koos je 110°? Dat is 55° + 55°, de hoeken met het spiegeloppervlak opgeteld. De normaal ligt tussen de stralen in, dus tel de hoeken met de normaal op.",
+         "Koos je 35°? Dat is de hoek van één straal met de normaal. De vraag gaat over de hoek tussen de twee stralen, en daar ligt de normaal tussenin.",
+         "Koos je 55°? Dat is de hoek tussen de straal en het spiegeloppervlak. Tussen de twee stralen zelf zit 35° + 35°.",
+         "Klopt: de invallende straal maakt 35° met de normaal, de teruggekaatste straal ook 35° aan de andere kant. Samen is dat 70°."
+        ],
+        "uh": "Tussen de stralen: 2 × i."
+       },
+       {
+        "v": "Wat gebeurt er met een lichtstraal die schuin vanuit lucht een blok glas in gaat?",
+        "o": [
+         "Hij gaat rechtdoor",
+         "Hij breekt van de normaal af",
+         "Hij breekt naar de normaal toe",
+         "Hij wordt volledig teruggekaatst"
+        ],
+        "c": 2,
+        "d": 1,
+        "s": 1,
+        "u": "Naar een optisch dichtere stof (lagere v): naar de normaal toe.",
+        "uo": [
+         "Koos je rechtdoor? Dat gebeurt alleen bij loodrechte inval. Een schuine straal verandert van richting doordat de snelheid verandert.",
+         "Koos je van de normaal af? Dat gebeurt als licht van glas naar lucht gaat, dus van een langzame naar een snellere stof. Hier is het andersom.",
+         "Klopt: in glas gaat licht langzamer dan in lucht. Daardoor buigt de straal bij het grensvlak naar de normaal toe: de hoek van breking is kleiner dan de hoek van inval.",
+         "Koos je volledig teruggekaatst? Totale terugkaatsing kan alleen als licht van een dichtere naar een minder dichte stof gaat. Van lucht naar glas gaat het licht altijd het glas in."
+        ],
+        "uh": "Lucht → glas: naar de normaal toe."
+       },
+       {
+        "v": "Waarom breekt licht bij de overgang van lucht naar water?",
+        "o": [
+         "De frequentie van het licht verandert",
+         "De lichtsnelheid in water is kleiner",
+         "Water trekt het licht naar beneden",
+         "De lichtsnelheid in water is groter"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 1,
+        "u": "Breking ontstaat door een verandering van golfsnelheid.",
+        "uo": [
+         "Koos je frequentie? De frequentie blijft bij een overgang juist gelijk: die bepaalt de bron. De snelheid en de golflengte veranderen.",
+         "Klopt: in water gaat licht ongeveer 1,33 keer zo langzaam als in lucht. De kant van het golffront die het eerst in het water komt, gaat eerst langzamer, waardoor de golf van richting verandert.",
+         "Koos je naar beneden trekken? Er werkt geen kracht op het licht. De richting verandert doordat de golf in het water trager gaat.",
+         "Koos je groter? Dan zou het licht van de normaal af breken. In water is de lichtsnelheid kleiner, ongeveer 2,25·10⁸ m/s."
+        ],
+        "uh": "Breking: andere snelheid."
+       },
+       {
+        "v": "Hoe groot is de lichtsnelheid in dit glas?",
+        "o": [
+         "2,0 · 10⁸ m/s",
+         "4,50 · 10⁸ m/s",
+         "3,00 · 10⁸ m/s",
+         "1,50 · 10⁸ m/s"
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 1,
+        "u": "n = c / v → v = c / n.",
+        "uo": [
+         "Klopt: v = c / n = 3,00·10⁸ / 1,50 = 2,00·10⁸ m/s. Een grotere brekingsindex betekent een kleinere lichtsnelheid.",
+         "Koos je 4,50 · 10⁸ m/s? Dan heb je c met n vermenigvuldigd. Niets gaat sneller dan licht in vacuüm; deel daarom door n.",
+         "Koos je 3,00 · 10⁸ m/s? Dat is de snelheid in vacuüm. In glas gaat licht langzamer, anders zou het niet breken.",
+         "Koos je 1,50 · 10⁸ m/s? Dan heb je door 2 gedeeld in plaats van door 1,50. v = c / n = 3,00·10⁸ / 1,50."
+        ],
+        "uh": "v = c/n.",
+        "ctx": "Een fabrikant van brillenglazen maakt lenzen van een glassoort met een brekingsindex van 1,50. In de handleiding staat dat de brekingsindex aangeeft hoeveel keer zo langzaam licht in het glas gaat als in vacuüm (c = 3,00·10⁸ m/s)."
+       },
+       {
+        "v": "Licht gaat van lucht naar water. Wat gebeurt er met de golflengte?",
+        "o": [
+         "Die wordt nul aan het grensvlak",
+         "Die wordt groter",
+         "Die blijft gelijk",
+         "Die wordt kleiner"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 1,
+        "u": "f gelijk, v kleiner → λ = v/f kleiner.",
+        "uo": [
+         "Koos je nul? De golf gaat gewoon verder in het water, met een kleinere golflengte. Er is aan het grensvlak geen punt waar hij verdwijnt.",
+         "Koos je groter? Dat zou gebeuren als de snelheid toenam. In water gaat licht langzamer, dus de golven komen dichter op elkaar.",
+         "Koos je gelijk? Bij gelijke frequentie en kleinere snelheid moet λ kleiner worden. Alleen de frequentie blijft gelijk.",
+         "Klopt: de frequentie blijft gelijk, de snelheid daalt met een factor 1,33. Met λ = v / f wordt de golflengte dus ook 1,33 keer zo klein."
+        ],
+        "uh": "Langzamer → kortere golven."
+       },
+       {
+        "v": "Waarom lijkt een rietje in een glas water geknikt?",
+        "o": [
+         "Het licht wordt in het water teruggekaatst",
+         "Het water buigt het rietje een beetje",
+         "Licht breekt aan het wateroppervlak",
+         "Het glas werkt als een spiegel"
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 1,
+        "u": "Gebroken licht lijkt van een andere plek te komen.",
+        "uo": [
+         "Koos je terugkaatsing? Het licht dat je ziet, komt via het wateroppervlak naar je oog en verandert daar van richting door breking.",
+         "Koos je het water buigt het rietje? Haal het rietje eruit en het is recht. Het is gezichtsbedrog door breking.",
+         "Klopt: licht van het deel onder water breekt bij het wateroppervlak van de normaal af. Je oog volgt de straal recht terug, dus het rietje lijkt hoger te zitten dan het is: een knik.",
+         "Koos je spiegel? De glaswand heeft een klein effect, maar de knik ontstaat bij het wateroppervlak, waar het licht van water naar lucht gaat."
+        ],
+        "uh": "Knik = breking.",
+        "ctx": "Een leerling zet een recht rietje schuin in een glas water en kijkt er schuin van bovenaf naar. Precies bij het wateroppervlak lijkt het rietje te knikken, en het stuk onder water lijkt hoger te staan dan je zou verwachten. Haalt hij het rietje eruit, dan is het gewoon recht."
+       },
+       {
+        "v": "In diamant gaat licht met 1,24 · 10⁸ m/s. Hoe groot is de brekingsindex van diamant?",
+        "o": [
+         "0,41",
+         "2,42",
+         "1,24",
+         "3,72"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 1,
+        "u": "n = c / v = 3,00·10⁸ / 1,24·10⁸.",
+        "uo": [
+         "Koos je 0,41? Dan heb je v door c gedeeld. Een brekingsindex is altijd groter dan 1, want licht gaat in een stof langzamer dan in vacuüm.",
+         "Klopt: n = c / v = 3,00·10⁸ / 1,24·10⁸ = 2,42. Diamant breekt licht dus veel sterker dan glas, en dat geeft de schittering.",
+         "Koos je 1,24? Dat is het getal van de snelheid zonder de macht. Deel de lichtsnelheid in vacuüm door de snelheid in diamant.",
+         "Koos je 3,72? Dan heb je c en v vermenigvuldigd. De brekingsindex is een verhouding: c gedeeld door v."
+        ],
+        "uh": "n = c/v."
+       },
+       {
+        "v": "Welke formule hoort bij de wet van Snellius voor licht dat vanuit lucht een stof in gaat?",
+        "o": [
+         "sin i / sin r = n",
+         "i / r = n",
+         "sin r / sin i = n",
+         "i + r is altijd 90°"
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 2,
+        "u": "Snellius: sin i / sin r = n.",
+        "uo": [
+         "Klopt: voor licht dat vanuit lucht een stof met brekingsindex n in gaat, geldt sin i / sin r = n. Hoeken meet je vanaf de normaal.",
+         "Koos je i / r? De hoeken zelf zijn niet evenredig, hun sinussen wel. Gebruik dus altijd sin i en sin r.",
+         "Koos je sin r / sin i? Dan krijg je een getal kleiner dan 1, terwijl n van een stof groter is dan 1. Zet sin i boven.",
+         "Koos je i + r = 90°? Dat geldt in het algemeen niet. De wet van Snellius verbindt de sinussen van de hoeken met de brekingsindex."
+        ],
+        "uh": "sin i / sin r = n."
+       },
+       {
+        "v": "Licht valt vanuit lucht met een hoek van 30° op glas met n = 1,50. Hoe groot is de hoek van breking?",
+        "o": [
+         "48,59°",
+         "45,0°",
+         "20,0°",
+         "19,5°"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 2,
+        "u": "sin r = sin 30° / 1,50 = 0,333.",
+        "uo": [
+         "Koos je 48,6°? Dat is sin⁻¹(0,75), alsof sin r = 1,50 × 0,5. Van lucht naar glas deel je door n: sin r = 0,500 / 1,50.",
+         "Koos je 45,0°? Dan heb je sin i met n vermenigvuldigd. Bij lucht naar glas wordt de hoek kleiner, dus deel je door n.",
+         "Koos je 20,0°? Dan heb je de hoek zelf door 1,50 gedeeld. De wet van Snellius werkt met de sinus van de hoeken.",
+         "Klopt: sin r = sin i / n = 0,500 / 1,50 = 0,333, dus r = 19,5°. De straal breekt naar de normaal toe."
+        ],
+        "uh": "sin r = sin i / n."
+       },
+       {
+        "v": "Welke brekingsindex heeft de stof volgens deze meting?",
+        "o": [
+         "0,653",
+         "1,67",
+         "1,53",
+         "1,30"
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 2,
+        "u": "n = sin 50° / sin 30° = 0,766 / 0,500.",
+        "uo": [
+         "Koos je 0,65? Dan heb je sin r door sin i gedeeld. Een brekingsindex is altijd groter dan 1, want licht gaat in een stof langzamer.",
+         "Koos je 1,67? Dan heb je de hoeken zelf gedeeld: 50 / 30. De wet werkt met de sinussen van de hoeken.",
+         "Klopt: n = sin i / sin r = sin 50° / sin 30° = 0,766 / 0,500 = 1,53. Dat past bij een soort glas.",
+         "Koos je 1,30? Reken de sinussen opnieuw na met je rekenmachine op graden: sin 50° = 0,766 en sin 30° = 0,500."
+        ],
+        "uh": "n = sin i / sin r.",
+        "ctx": "Bij een practicum schijnt een leerling een smalle lichtbundel vanuit lucht op een halfrond blok van onbekende doorzichtige kunststof. Hij meet een hoek van inval van 50° en een hoek van breking van 30°, beide ten opzichte van de normaal."
+       },
+       {
+        "v": "Een straal onder water treft het oppervlak met i = 30°. Welke hoek maakt hij in de lucht? (n = 1,33)",
+        "o": [
+         "22,08°",
+         "41,7°",
+         "30,0°",
+         "39,9°"
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 2,
+        "u": "Water → lucht: sin r = n · sin i = 1,33 × 0,500.",
+        "uo": [
+         "Koos je 22,1°? Dan heb je gerekend alsof het licht van lucht naar water gaat. Hier gaat het juist het water uit, dus de hoek wordt groter.",
+         "Klopt: van water naar lucht keer je de formule om: sin r = n · sin i = 1,33 × 0,500 = 0,665, dus r = 41,7°. De straal breekt van de normaal af.",
+         "Koos je 30,0°? Dan zou er geen breking zijn. Bij een schuine straal en een verschil in lichtsnelheid verandert de richting wel.",
+         "Koos je 39,9°? Dan heb je de hoek met 1,33 vermenigvuldigd: 30 × 1,33. Vermenigvuldig de sinus, niet de hoek."
+        ],
+        "uh": "Uit water: sin r = n · sin i."
+       },
+       {
+        "v": "Bij welke hoek van inval breekt een lichtstraal niet, maar gaat hij rechtdoor?",
+        "o": [
+         "0°, loodrecht op het grensvlak",
+         "45°, precies schuin",
+         "90°, langs het grensvlak",
+         "Bij elke hoek als de stof doorzichtig is"
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 2,
+        "u": "sin 0° = 0 → sin r = 0.",
+        "uo": [
+         "Klopt: bij loodrechte inval is i = 0° en dan is ook sin r = 0, dus r = 0°. De lichtsnelheid verandert wel, maar de richting niet.",
+         "Koos je 45°? Ook dan breekt het licht, want sin 45° / n is niet gelijk aan sin 45°. Alleen bij 0° blijft de richting gelijk.",
+         "Koos je 90°? Een straal die langs het grensvlak scheert, komt nauwelijks de stof in. Gaat hij erin, dan breekt hij juist sterk.",
+         "Koos je elke hoek? Ook in doorzichtig glas of water breekt een schuine straal. Doorzichtig betekent dat licht erdoor kan, niet dat het rechtdoor gaat."
+        ],
+        "uh": "Loodrecht: geen breking."
+       },
+       {
+        "v": "Wanneer kan totale terugkaatsing optreden?",
+        "o": [
+         "Alleen bij spiegels van metaal",
+         "Van lucht naar glas, bij een kleine hoek",
+         "Bij elke overgang, als de hoek groot genoeg is",
+         "Naar een minder dichte stof, boven de grenshoek"
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 3,
+        "u": "Alleen van grote n naar kleine n en i > g.",
+        "uo": [
+         "Koos je metalen spiegels? Die kaatsen wel veel licht terug, maar dat is gewone spiegeling. Totale terugkaatsing gebeurt in doorzichtige stoffen als glas en water.",
+         "Koos je lucht naar glas? Dan breekt het licht naar de normaal toe en kan het altijd het glas in. Totale terugkaatsing vraagt de omgekeerde richting.",
+         "Koos je elke overgang? Van lucht naar water gaat het licht bij elke hoek het water in. Alleen de richting van dicht naar minder dicht kan totaal terugkaatsen.",
+         "Klopt: alleen als licht naar een stof gaat waarin het sneller gaat, breekt het van de normaal af. Boven de grenshoek zou de hoek van breking groter dan 90° moeten worden, en dan wordt al het licht teruggekaatst."
+        ],
+        "uh": "Totale terugkaatsing: dicht → minder dicht, i > g."
+       },
+       {
+        "v": "Hoe groot is de grenshoek van water (n = 1,33)?",
+        "o": [
+         "53,13°",
+         "41,8°",
+         "48,8°",
+         "90,0°"
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 3,
+        "u": "sin g = 1 / n = 1 / 1,33 = 0,752.",
+        "uo": [
+         "Koos je 53,1°? Dan heb je het andersom gerekend of de rekenmachine op een andere stand gehad. sin g = 1 / 1,33 geeft 48,8°.",
+         "Koos je 41,8°? Dat is de grenshoek van glas met n = 1,50. Water heeft een kleinere brekingsindex, dus een grotere grenshoek.",
+         "Klopt: sin g = 1 / n = 1 / 1,33 = 0,752, dus g = 48,8°. Komt licht onder water met een grotere hoek bij het oppervlak, dan kaatst het helemaal terug.",
+         "Koos je 90,0°? Bij de grenshoek zelf is de hoek van breking 90°. De hoek van inval die daarbij hoort, is kleiner."
+        ],
+        "uh": "sin g = 1/n."
+       },
+       {
+        "v": "Waarom blijft het licht in een glasvezelkabel, ook als de kabel een bocht maakt?",
+        "o": [
+         "De kabel is aan de binnenkant verzilverd",
+         "Het treft de wand boven de grenshoek",
+         "Het licht breekt steeds naar het midden van de kabel",
+         "Licht gaat in glas altijd rechtdoor"
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 3,
+        "u": "Totale terugkaatsing aan de wand van de kern.",
+        "uo": [
+         "Koos je verzilverd? Dan zou er bij elke weerkaatsing wat licht verloren gaan. Glasvezel gebruikt totale terugkaatsing, die vrijwel verliesvrij is.",
+         "Klopt: het licht komt steeds onder een grote hoek bij de wand van de glaskern. Die hoek is groter dan de grenshoek, dus het licht kaatst telkens helemaal terug en zigzagt door de kabel.",
+         "Koos je breken naar het midden? Er is geen breking naar binnen. Het licht wordt aan de wand teruggekaatst doordat het boven de grenshoek invalt.",
+         "Koos je rechtdoor? Dan zou het licht in een bocht de kabel uit gaan. Het blijft erin doordat het steeds tegen de wand terugkaatst."
+        ],
+        "uh": "Glasvezel = totale terugkaatsing.",
+        "ctx": "Internet komt bij veel huizen binnen via glasvezel. Een glasvezel is een dunne kern van glas (n = 1,50), omringd door een mantel met een iets lagere brekingsindex. Lichtpulsen van een laser gaan door de kern, ook als de kabel in een bocht om een hoek van het huis loopt."
+       },
+       {
+        "v": "Een duiker kijkt omhoog en ziet het wateroppervlak buiten een cirkel als een zilveren spiegel. Hoe komt dat?",
+        "o": [
+         "Daar kaatst het licht totaal terug",
+         "Daar is het water dieper",
+         "Daar breekt het licht naar de duiker toe",
+         "Daar valt het zonlicht er precies loodrecht op"
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 3,
+        "u": "Buiten de grenshoek (48,8°): totale terugkaatsing.",
+        "uo": [
+         "Klopt: recht boven zich ziet de duiker de lucht. Kijkt hij schuiner dan de grenshoek van 48,8°, dan komt er geen licht van buiten meer bij hem: het water kaatst daar het licht van onder water totaal terug, en het oppervlak lijkt een spiegel.",
+         "Koos je dieper water? Het wateroppervlak ligt overal even hoog. Het verschil zit in de hoek waaronder de duiker naar het oppervlak kijkt.",
+         "Koos je breken naar de duiker toe? Licht van boven dat breekt, komt juist binnen de cirkel bij hem aan. Buiten de cirkel is er alleen teruggekaatst licht.",
+         "Koos je loodrecht zonlicht? Loodrecht invallend licht gaat gewoon door en geeft geen spiegel. De spiegel ontstaat bij schuine hoeken boven de grenshoek."
+        ],
+        "uh": "Onder water: buiten de grenshoek een spiegel.",
+        "ctx": "Een duiker ligt op de bodem van een rustig zwembad en kijkt omhoog. Recht boven zich ziet hij een heldere cirkel met de lucht en het dak. Daarbuiten lijkt het wateroppervlak een zilveren spiegel, waarin hij de bodem van het zwembad weerspiegeld ziet."
+       },
+       {
+        "v": "Komt de lichtstraal aan de schuine kant het prisma uit?",
+        "o": [
+         "Nee, het licht wordt in het glas geabsorbeerd",
+         "Ja, glas laat altijd licht door",
+         "Ja, want hij valt onder 45° in",
+         "Nee, 45° is groter dan de grenshoek van 41,8°"
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 3,
+        "u": "g = sin⁻¹(1/1,50) = 41,8°; 45° > g → totale terugkaatsing.",
+        "uo": [
+         "Koos je absorptie? Helder glas absorbeert maar heel weinig licht. Het licht kaatst aan de schuine kant terug, het verdwijnt niet.",
+         "Koos je glas laat altijd door? Licht dat vanuit glas naar lucht gaat onder een hoek groter dan de grenshoek, komt er niet uit. Daar maken verrekijkers gebruik van.",
+         "Koos je onder 45° dus erdoor? Juist 45° is te groot. Alleen bij een hoek kleiner dan 41,8° zou het licht naar buiten breken.",
+         "Klopt: de grenshoek van dit glas is sin⁻¹(1 / 1,50) = 41,8°. De straal treft de schuine kant onder 45°, dat is meer dan de grenshoek. Het licht kaatst totaal terug en gaat 90° gedraaid verder."
+        ],
+        "uh": "i > g → totale terugkaatsing.",
+        "ctx": "In een verrekijker zitten glazen prisma's met een rechte hoek en twee hoeken van 45°. Een lichtstraal gaat loodrecht door een rechthoekszijde naar binnen en treft daarna de schuine kant onder een hoek van 45° met de normaal. Het glas heeft een brekingsindex van 1,50."
+       },
+       {
+        "v": "Twee golven met dezelfde frequentie komen in fase op een punt aan. Wat gebeurt er?",
+        "o": [
+         "Ze gaan elkaar ontwijken",
+         "Ze doven elkaar uit",
+         "Ze versterken elkaar",
+         "De frequentie verdubbelt"
+        ],
+        "c": 2,
+        "d": 1,
+        "s": 4,
+        "u": "In fase: toppen vallen samen → versterking.",
+        "uo": [
+         "Koos je ontwijken? Golven gaan door elkaar heen en tellen op. Daarna lopen ze gewoon verder.",
+         "Koos je uitdoven? Dat gebeurt als ze in tegenfase aankomen: een top valt dan op een dal. In fase is het precies andersom.",
+         "Klopt: in fase betekent dat toppen op toppen vallen en dalen op dalen. De uitwijkingen tellen op, dus de trilling wordt sterker.",
+         "Koos je dubbele frequentie? De frequentie blijft gelijk; alleen de amplitude verandert. In fase wordt de amplitude groter."
+        ],
+        "uh": "In fase = versterking."
+       },
+       {
+        "v": "Bij welk weglengteverschil treedt uitdoving op voor twee bronnen die in fase trillen?",
+        "o": [
+         "Een hele golflengte",
+         "Een halve golflengte",
+         "Nul",
+         "Twee hele golflengtes"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 4,
+        "u": "Uitdoving: Δx = ½λ, 1½λ, ...",
+        "uo": [
+         "Koos je een hele golflengte? Dan loopt de ene golf precies één trilling achter en vallen toppen weer op toppen: versterking.",
+         "Klopt: als de ene golf een halve golflengte meer aflegt, komt hij een halve trilling later aan. Een top valt dan op een dal en de golven doven elkaar uit.",
+         "Koos je nul? Bij gelijke afstanden komen de golven tegelijk aan, in fase. Dat geeft juist versterking.",
+         "Koos je twee golflengtes? Ook een geheel aantal golflengtes geeft versterking. Uitdoving hoort bij een half aantal: ½λ, 1½λ, ..."
+        ],
+        "uh": "Uitdoving: ½λ verschil."
+       },
+       {
+        "v": "Hoort de leerling op deze plek een harde of een zachte toon?",
+        "o": [
+         "Zacht, de golven doven elkaar uit",
+         "Hard, de golven versterken elkaar",
+         "Hard, want hij staat dicht bij een luidspreker",
+         "Even hard als bij één luidspreker"
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 4,
+        "u": "λ = 343/686 = 0,500 m; Δx = 0,25 m = ½λ.",
+        "uo": [
+         "Klopt: λ = v / f = 343 / 686 = 0,500 m. Het weglengteverschil is 3,25 - 3,00 = 0,25 m = ½λ. Een top van de ene luidspreker valt op een dal van de andere: uitdoving.",
+         "Koos je versterking? Dan zou het weglengteverschil een geheel aantal golflengtes zijn. 0,25 m is precies een halve golflengte.",
+         "Koos je dicht bij een luidspreker? Beide luidsprekers staan ongeveer even ver weg. Wat telt is het verschil in afstand vergeleken met de golflengte.",
+         "Koos je even hard als bij één? De twee golven tellen op. Op deze plek heffen ze elkaar grotendeels op, dus het is juist stiller."
+        ],
+        "uh": "Δx = ½λ → stil.",
+        "ctx": "In een lokaal staan twee luidsprekers die dezelfde toon van 686 Hz geven en precies in fase trillen. Een leerling staat op 3,00 m van de ene en 3,25 m van de andere luidspreker. De geluidssnelheid is 343 m/s."
+       },
+       {
+        "v": "De leerling loopt langzaam langs een lijn evenwijdig aan de luidsprekers. Wat hoort hij?",
+        "o": [
+         "Twee tonen die steeds verder uit elkaar gaan",
+         "Steeds dezelfde sterkte",
+         "Een toon die steeds hoger wordt",
+         "Afwisselend hard en zacht"
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 4,
+        "u": "Weglengteverschil verandert: afwisselend versterking en uitdoving.",
+        "uo": [
+         "Koos je twee tonen? Beide luidsprekers geven dezelfde toon. Hij hoort één toon, die op sommige plekken harder en op andere zachter is.",
+         "Koos je steeds even hard? Dat zou zo zijn als de golven niet interfereerden. Twee bronnen met dezelfde frequentie geven een patroon van harde en zachte plekken.",
+         "Koos je hoger? De frequentie van de luidsprekers verandert niet als hij loopt. Alleen de luidheid wisselt.",
+         "Klopt: tijdens het lopen verandert het weglengteverschil. Telkens als het een geheel aantal golflengtes is, hoort hij versterking; bij een half aantal uitdoving. Zo wisselen harde en zachte plekken elkaar af."
+        ],
+        "uh": "Lopen = afwisselend hard en zacht.",
+        "ctx": "Twee luidsprekers op 2 m van elkaar geven dezelfde toon en trillen in fase. Een leerling loopt op 5 m afstand langzaam langs de luidsprekers, van links naar rechts. Hij let op hoe hard hij de toon hoort."
+       },
+       {
+        "v": "Hoe werkt een koptelefoon met noise cancelling?",
+        "o": [
+         "Hij maakt het omgevingsgeluid hoger, zodat je het niet hoort",
+         "Hij sluit het oor helemaal luchtdicht af",
+         "Hij maakt geluid in tegenfase met het omgevingsgeluid",
+         "Hij versterkt de muziek tot je het lawaai niet meer hoort"
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 5,
+        "u": "Tegenfase → destructieve interferentie.",
+        "uo": [
+         "Koos je hoger maken? Dan hoor je het nog steeds, alleen als een andere toon. Uitdoving werkt met dezelfde frequentie in tegenfase.",
+         "Koos je luchtdicht afsluiten? Dat dempt wat, maar lage tonen gaan er nog door. Noise cancelling werkt actief met een tegengeluid.",
+         "Klopt: een microfoon vangt het omgevingsgeluid op en de koptelefoon maakt hetzelfde geluid in tegenfase. In je oor vallen toppen op dalen en dooft het lawaai grotendeels uit.",
+         "Koos je de muziek versterken? Dat is niet goed voor je oren en dempt het lawaai niet. Het tegengeluid laat het lawaai zelf uitdoven."
+        ],
+        "uh": "Noise cancelling = tegenfase."
+       },
+       {
+        "v": "Een tweede toon van 343 Hz klinkt. Hoe groot moet het weglengteverschil minimaal zijn voor uitdoving?",
+        "o": [
+         "1,00 m",
+         "0,50 m",
+         "0,250 m",
+         "2,00 m"
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 5,
+        "u": "λ = 343/343 = 1,00 m; uitdoving bij ½λ.",
+        "uo": [
+         "Koos je 1,00 m? Dat is een hele golflengte, en daar versterken de golven elkaar. Voor uitdoving heb je een halve golflengte nodig.",
+         "Klopt: λ = v / f = 343 / 343 = 1,00 m. De kleinste afstand voor uitdoving is een halve golflengte: 0,50 m.",
+         "Koos je 0,25 m? Dat is een kwart golflengte: dan zijn de golven half uit fase en is er geen volledige uitdoving.",
+         "Koos je 2,00 m? Dat zijn twee golflengtes, en dat geeft versterking. Neem de helft van één golflengte."
+        ],
+        "uh": "Minimale uitdoving: ½λ."
+       },
+       {
+        "v": "Waarom klinkt een concertzaal op sommige stoelen doffer dan op andere?",
+        "o": [
+         "Teruggekaatst geluid dooft daar deels uit",
+         "Daar gaat het geluid langzamer",
+         "Daar is de frequentie van de muziek lager",
+         "Op die plekken komt het geluid niet aan omdat het stil is"
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 5,
+        "u": "Directe en teruggekaatste golven interfereren.",
+        "uo": [
+         "Klopt: geluid komt direct van het podium én via de muren en het plafond bij je aan. Op sommige plekken komen die golven in tegenfase aan en doven ze bepaalde tonen deels uit. Akoestici ontwerpen zalen om dat te voorkomen.",
+         "Koos je langzamer? De geluidssnelheid is in de hele zaal gelijk. Het verschil komt door de verschillende weglengtes van direct en teruggekaatst geluid.",
+         "Koos je lagere frequentie? De muziek heeft overal dezelfde frequenties. Alleen sommige tonen worden op bepaalde plekken zwakker.",
+         "Koos je stil? Er komt overal geluid aan. Op sommige plekken worden alleen bepaalde tonen zwakker door interferentie."
+        ],
+        "uh": "Dode plek = interferentie."
+       },
+       {
+        "v": "Bij welke laagste frequentie hoort de leerling op deze plek uitdoving?",
+        "o": [
+         "172 Hz",
+         "686 Hz",
+         "1029 Hz",
+         "343 Hz"
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 5,
+        "u": "Uitdoving bij Δx = ½λ: λ = 1,00 m → f = 343 Hz.",
+        "uo": [
+         "Koos je 172 Hz? Dan is λ = 2,0 m en is het verschil een kwart golflengte. De golven zijn dan maar half uit fase en doven niet uit.",
+         "Koos je 686 Hz? Dan is λ = 0,50 m en is het weglengteverschil precies één golflengte. De golven komen in fase aan en versterken elkaar.",
+         "Koos je 1029 Hz? Dan is het verschil 1½λ, en dat geeft ook uitdoving. Maar de leerling draait de toon omhoog en komt eerst langs 343 Hz.",
+         "Klopt: het weglengteverschil is 0,50 m. De eerste uitdoving treedt op als dat een halve golflengte is, dus λ = 1,00 m en f = 343 / 1,00 = 343 Hz."
+        ],
+        "uh": "Eerste uitdoving: Δx = ½λ.",
+        "ctx": "Twee luidsprekers trillen in fase en geven dezelfde toon, die de leerling met een knop kan veranderen. Hij staat op 4,00 m van de ene en 4,50 m van de andere luidspreker. De geluidssnelheid is 343 m/s. Hij draait de toon vanaf heel laag langzaam omhoog."
+       }
+      ],
+      "oe": [
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een leerling schijnt met een laser vanuit lucht op het platte oppervlak van een halfrond blok perspex. Hij meet bij verschillende hoeken van inval de hoek van breking. Bij een hoek van inval van 40° vindt hij een hoek van breking van 25,4°.",
+        "v": "Bereken de brekingsindex van perspex en de lichtsnelheid in perspex.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "n = sin 40° / sin 25,4° = 0,643 / 0,429 = 1,50 (2p). v = c / n = 3,00·10⁸ / 1,50 = 2,00·10⁸ m/s (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Op de bodem van een vijver ligt een lamp die in alle richtingen licht uitzendt. De vijver is 1,20 m diep. Van bovenaf zie je op het wateroppervlak een lichte cirkel; daarbuiten komt geen licht van de lamp het water uit. De brekingsindex van water is 1,33.",
+        "v": "Bereken de grenshoek van water en bereken de straal van de lichte cirkel op het wateroppervlak.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "sin g = 1 / 1,33 = 0,752, g = 48,8° (1p). Buiten de cirkel treedt totale terugkaatsing op (1p). Straal: 1,20 × tan 48,8° = 1,37 m (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Bij een glasvezel is de kern van glas met n = 1,50 en de mantel eromheen van glas met n = 1,46. Een lichtstraal in de kern treft de grens met de mantel onder een hoek van 80° met de normaal. Een monteur legt een kabel met een heel scherpe knik.",
+        "v": "Bereken de grenshoek voor de overgang van kern naar mantel, ga na of de straal in de kern blijft en leg uit waarom een scherpe knik een probleem is.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "sin g = 1,46 / 1,50 = 0,973, g = 76,7° (1p). 80° is groter dan 76,7°, dus totale terugkaatsing: de straal blijft in de kern (1p). In een scherpe knik treft het licht de wand onder een kleinere hoek dan de grenshoek en lekt het eruit (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Op een schoolplein staan twee luidsprekers 3,0 m uit elkaar die in fase een toon van 1,0 kHz geven. Een leerling staat precies midden voor de luidsprekers en hoort een harde toon. Hij stapt opzij tot hij op 5,00 m van de ene en 5,17 m van de andere luidspreker staat. De geluidssnelheid is 343 m/s.",
+        "v": "Leg uit waarom de leerling in het midden een harde toon hoort en bereken of hij op de nieuwe plek versterking of uitdoving hoort.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "In het midden zijn de afstanden gelijk: Δx = 0, de golven komen in fase aan: versterking (1p). λ = 343 / 1000 = 0,343 m (1p). Δx = 0,17 m ≈ ½λ, dus uitdoving (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een fabrikant adverteert met een koptelefoon die \"vooral het brommen van vliegtuigmotoren wegneemt\". Het geluid van de motor heeft vooral lage tonen rond 100 Hz. De koptelefoon heeft een microfoon aan de buitenkant en speelt een tegengeluid af.",
+        "v": "Leg uit hoe het tegengeluid het motorgeluid laat verdwijnen en geef een reden waarom dit beter werkt voor lage dan voor hoge tonen.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Het tegengeluid heeft dezelfde frequentie en amplitude als het motorgeluid, maar is in tegenfase; in het oor vallen toppen op dalen en dooft het geluid uit (2p). Lage tonen hebben een grote golflengte (bij 100 Hz 3,4 m), dus een kleine vertraging of afstand tot het oor bederft de tegenfase nauwelijks; bij hoge tonen met een korte golflengte lukt dat veel minder goed (1p)."
+       }
+      ]
      }
     ]
    },
