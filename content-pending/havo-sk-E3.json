@@ -1,0 +1,690 @@
+{
+ "id": "E3",
+ "lo": "sk.E.3",
+ "gs": 2,
+ "naam": "Duurzaamheid en groene chemie",
+ "beschrijving": "Je beoordeelt processen met de principes van groene chemie, berekent de atoomeconomie en onderscheidt die van het rendement, legt de grenzen van recycling uit, beschrijft lineaire en circulaire economie en vergelijkt grijze en groene waterstof.",
+ "ceStatus": "CE",
+ "binas": "",
+ "val": "",
+ "onderwerpen": [
+  "Principes van groene chemie",
+  "Atoomeconomie berekenen",
+  "Atoomeconomie en rendement",
+  "Recycling en zijn grenzen",
+  "Lineaire en circulaire economie",
+  "Hernieuwbare grondstoffen en groene waterstof"
+ ],
+ "sam": "Groene chemie: afval voorkomen, veilige stoffen, minder energie, katalysatoren, hernieuwbare grondstoffen. Atoomeconomie = gewenst product / alle beginstoffen × 100% (additie 100%); rendement meet de praktijk; samen: atoomeconomie × rendement. Recycling is nooit verliesvrij (downcycling). Circulaire economie houdt grondstoffen in gebruik (ladder van Lansink). Groene waterstof uit elektrolyse met duurzame stroom, grijze uit aardgas met CO₂.",
+ "begrippen": [
+  {
+   "t": "Groene chemie",
+   "d": "Ontwerp van chemische processen met zo min mogelijk afval, gevaar en energieverbruik."
+  },
+  {
+   "t": "Atoomeconomie",
+   "d": "Massa van het gewenste product gedeeld door de massa van alle beginstoffen, keer 100%."
+  },
+  {
+   "t": "Bijproduct",
+   "d": "Stof die naast het gewenste product ontstaat en de atoomeconomie verlaagt."
+  },
+  {
+   "t": "Rendement",
+   "d": "Werkelijke opbrengst gedeeld door theoretische opbrengst, keer 100%."
+  },
+  {
+   "t": "Recycling",
+   "d": "Materiaal uit afval opnieuw verwerken tot grondstof voor nieuwe producten."
+  },
+  {
+   "t": "Downcycling",
+   "d": "Recycling waarbij het materiaal een lagere kwaliteit krijgt."
+  },
+  {
+   "t": "Chemische recycling",
+   "d": "Polymeerketens afbreken tot monomeren om er opnieuw zuiver materiaal van te maken."
+  },
+  {
+   "t": "Circulaire economie",
+   "d": "Economie waarin grondstoffen zo lang mogelijk in gebruik blijven en weinig afval ontstaat."
+  },
+  {
+   "t": "Ladder van Lansink",
+   "d": "Rangorde voor afval: voorkomen, hergebruiken, recyclen, verbranden met energie, storten."
+  },
+  {
+   "t": "Hernieuwbare grondstof",
+   "d": "Grondstof die binnen korte tijd opnieuw groeit, zoals hout of suikerbiet."
+  },
+  {
+   "t": "Groene waterstof",
+   "d": "Waterstof gemaakt door elektrolyse van water met duurzaam opgewekte stroom."
+  }
+ ],
+ "sv": [
+  {
+   "v": "Welke aanpak hoort bij groene chemie?",
+   "o": [
+    "Chemische fabrieken volledig sluiten",
+    "Alleen producten maken die groen van kleur zijn",
+    "Producten maken met weinig afval, gevaar en energie",
+    "Zo veel mogelijk product maken, ongeacht hoeveel afval er ontstaat"
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 0,
+   "u": "Groene chemie = processen ontwerpen die schoner, veiliger en zuiniger zijn.",
+   "uo": [
+    "Koos je fabrieken sluiten? Groene chemie wil chemie juist beter maken, niet afschaffen. We hebben medicijnen, kunstmest en materialen nodig.",
+    "Koos je groene kleur? Groen staat hier voor milieuvriendelijk, niet voor een kleur van het product.",
+    "Klopt: bij groene chemie ontwerp je processen zo dat er weinig afval ontstaat, je minder gevaarlijke stoffen gebruikt en minder energie nodig hebt, liefst met hernieuwbare grondstoffen.",
+    "Koos je zoveel mogelijk product? Dat is precies wat groene chemie niet wil: afval en gevaar tellen ook mee."
+   ],
+   "uh": "Groene chemie: weinig afval, veilig, zuinig."
+  },
+  {
+   "v": "Waarom is afval voorkomen beter dan afval achteraf opruimen?",
+   "o": [
+    "Afval opruimen is verboden",
+    "Wat niet ontstaat, hoeft niet verwerkt te worden",
+    "Afval voorkomen kost altijd meer energie dan het achteraf verwerken",
+    "Achteraf opruimen levert meer product op"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 0,
+   "u": "Eerste principe van groene chemie: preventie.",
+   "uo": [
+    "Koos je verboden? Afval opruimen is juist verplicht. Maar voorkomen is beter, omdat je dan geen grondstof verspilt.",
+    "Klopt: elk kilo afval is grondstof die niet in het product terechtkwam, en het moet ook nog verwerkt worden. Als je het proces zo ontwerpt dat het afval niet ontstaat, bespaar je beide.",
+    "Koos je meer energie? Voorkomen kost meestal juist minder energie, omdat je geen afval hoeft te verwerken.",
+    "Koos je meer product? Opruimen maakt geen extra product. Het kost alleen extra werk en geld."
+   ],
+   "uh": "Voorkomen gaat voor opruimen."
+  },
+  {
+   "v": "Welke aanpassing past het best bij groene chemie?",
+   "o": [
+    "Een katalysator, zodat het bij lagere temperatuur kan",
+    "De temperatuur verhogen tot 500 °C zodat het sneller gaat",
+    "Een giftig oplosmiddel gebruiken omdat het goedkoper is",
+    "Een extra beginstof in grote overmaat toevoegen die als afval eindigt"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 0,
+   "u": "Katalysator: minder energie, niet verbruikt, vaak minder bijproducten.",
+   "uo": [
+    "Klopt: met een katalysator verloopt de reactie bij lagere temperatuur, dus kost het minder energie. De katalysator wordt niet verbruikt en levert geen afval op.",
+    "Koos je 500 °C? Dat kost veel energie. Groene chemie zoekt juist naar processen bij lagere temperatuur en druk.",
+    "Koos je giftig oplosmiddel? Groene chemie vervangt gevaarlijke stoffen juist door veiligere, zoals water.",
+    "Koos je overmaat die afval wordt? Dat levert extra afval op, het tegenovergestelde van groene chemie."
+   ],
+   "uh": "Katalysator = groen.",
+   "ctx": "Een fabriek maakt een geurstof in een reactor bij 250 °C met een giftig oplosmiddel. De onderzoeksafdeling heeft vier ideeën om het proces te verbeteren. Het management wil de keuze die het best past bij de principes van groene chemie."
+  },
+  {
+   "v": "Waarom is water een groen oplosmiddel?",
+   "o": [
+    "Het is altijd zuur",
+    "Het lost alle stoffen op, ook vet en olie",
+    "Het verdampt nooit",
+    "Niet giftig, niet brandbaar en goedkoop"
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 0,
+   "u": "Veiliger alternatief voor organische oplosmiddelen.",
+   "uo": [
+    "Koos je altijd zuur? Zuiver water is neutraal, met een pH van 7. Dat is ook niet de reden dat het groen is.",
+    "Koos je alle stoffen? Water lost juist veel apolaire stoffen niet op. Daarom kun je het niet overal voor gebruiken.",
+    "Koos je verdampt nooit? Water verdampt wel, bij 100 °C koken. Dat is geen reden om het groen te noemen.",
+    "Klopt: water is niet giftig en niet brandbaar, het is overal te krijgen en goedkoop. Veel organische oplosmiddelen zijn giftig of brandbaar."
+   ],
+   "uh": "Veilig oplosmiddel = groen."
+  },
+  {
+   "v": "Hoe bereken je de atoomeconomie van een reactie?",
+   "o": [
+    "Aantal atomen in het product min aantal atomen in de beginstoffen",
+    "Werkelijke opbrengst gedeeld door theoretische opbrengst, keer 100%",
+    "Massa gewenst product / massa alle beginstoffen × 100%",
+    "Massa van het afval gedeeld door de massa van het product"
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 1,
+   "u": "AE = M(gewenst product) / ΣM(beginstoffen) × 100%, met coëfficiënten.",
+   "uo": [
+    "Koos je atomen aftrekken? Volgens de wet van behoud van massa blijft het aantal atomen gelijk. Atoomeconomie gaat over welk deel in het gewenste product komt.",
+    "Koos je werkelijk gedeeld door theoretisch? Dat is het rendement: hoe goed het proces in de praktijk verloopt. Atoomeconomie volgt uit de vergelijking.",
+    "Klopt: je kijkt welk deel van de massa van de beginstoffen in het gewenste product terechtkomt. Hoe hoger, hoe minder afval.",
+    "Koos je afval gedeeld door product? Dat is een andere maat, de E-factor. Atoomeconomie deelt het gewenste product door alle beginstoffen."
+   ],
+   "uh": "Atoomeconomie = gewenst product / alle beginstoffen."
+  },
+  {
+   "v": "Hoe hoog is de atoomeconomie van een additiereactie?",
+   "o": [
+    "50%",
+    "100%",
+    "Altijd lager dan het rendement",
+    "0%, want er ontstaat geen bijproduct"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 1,
+   "u": "Bij additie komen alle atomen in één product.",
+   "uo": [
+    "Koos je 50%? Dat zou betekenen dat de helft van de massa in een bijproduct verdwijnt. Bij additie is er geen bijproduct.",
+    "Klopt: bij additie komen alle atomen van de beginstoffen in het gewenste product. Er is geen bijproduct, dus de atoomeconomie is 100%.",
+    "Koos je lager dan het rendement? Atoomeconomie en rendement zijn verschillende maten. Bij additie is de atoomeconomie altijd het maximum.",
+    "Koos je 0%? Geen bijproduct betekent juist dat alles in het gewenste product komt: 100%."
+   ],
+   "uh": "Additie = 100% atoomeconomie."
+  },
+  {
+   "v": "Hoe groot is de atoomeconomie van ethanol maken door vergisting?",
+   "o": [
+    "51%",
+    "100%",
+    "26%",
+    "74%"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 1,
+   "u": "2 × 46,07 / 180,16 × 100% = 51%.",
+   "uo": [
+    "Klopt: uit 1 mol glucose (180,16 g) ontstaat 2 mol ethanol (2 × 46,07 = 92,14 g). Atoomeconomie = 92,14 / 180,16 × 100% = 51%. De rest gaat in CO₂.",
+    "Koos je 100%? Dat geldt voor additie. Bij vergisting komt een groot deel van de massa in CO₂ terecht.",
+    "Koos je 26%? Dan heb je maar 1 mol ethanol gerekend. Uit 1 mol glucose ontstaat 2 mol ethanol.",
+    "Koos je 74%? Reken de molaire massa's na: ethanol 46,07 en glucose 180,16. 2 × 46,07 / 180,16 = 0,51."
+   ],
+   "uh": "Coëfficiënten meenemen.",
+   "ctx": "Ethanol kan gemaakt worden door vergisting van glucose: C₆H₁₂O₆ → 2 C₂H₅OH + 2 CO₂. Het gewenste product is ethanol, CO₂ is bijproduct. Molaire massa's: glucose 180,16 g/mol, ethanol 46,07 g/mol, CO₂ 44,01 g/mol."
+  },
+  {
+   "v": "Welke route naar chloorethaan heeft de hoogste atoomeconomie?",
+   "o": [
+    "Dat hangt af van het rendement",
+    "Substitutie van ethaan met chloor",
+    "Beide even hoog",
+    "Additie van HCl aan etheen"
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 1,
+   "u": "Additie 100%; substitutie 64,51 / 100,97 = 64%.",
+   "uo": [
+    "Koos je rendement? Atoomeconomie volgt alleen uit de reactievergelijking. Het rendement is een andere maat.",
+    "Koos je substitutie? Daarbij ontstaat HCl als bijproduct. Een deel van de chlooratomen komt dus niet in het product.",
+    "Koos je even hoog? Bij substitutie gaat een deel van de massa in HCl. Bij additie niet.",
+    "Klopt: bij additie komen alle atomen in chloorethaan: 100%. Bij substitutie ontstaat ook HCl als bijproduct; de atoomeconomie is 64,51 / (30,07 + 70,90) × 100% = 64%."
+   ],
+   "uh": "Geen bijproduct = hoogste atoomeconomie.",
+   "ctx": "Chloorethaan kan op twee manieren gemaakt worden. Route 1: C₂H₄ + HCl → C₂H₅Cl. Route 2: C₂H₆ + Cl₂ → C₂H₅Cl + HCl. Molaire massa's: etheen 28,05; HCl 36,46; ethaan 30,07; Cl₂ 70,90; chloorethaan 64,51 g/mol."
+  },
+  {
+   "v": "Hoe groot is de atoomeconomie van de bereiding van ongebluste kalk: CaCO₃ → CaO + CO₂?",
+   "o": [
+    "100%",
+    "44%",
+    "56%",
+    "78%"
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 1,
+   "u": "56,08 / 100,09 × 100% = 56%.",
+   "uo": [
+    "Koos je 100%? Bij deze ontleding komt CO₂ vrij als bijproduct. Niet alle massa komt in CaO.",
+    "Koos je 44%? Dat is het deel dat als CO₂ verdwijnt. De atoomeconomie gaat over het gewenste product, CaO.",
+    "Klopt: het gewenste product is CaO (56,08 g/mol). De beginstof is CaCO₃ (100,09 g/mol). 56,08 / 100,09 × 100% = 56%.",
+    "Koos je 78%? Reken na met de molaire massa's uit Binas: CaO 56,08 en CaCO₃ 100,09."
+   ],
+   "uh": "Gewenst product door beginstof."
+  },
+  {
+   "v": "Waarin verschillen atoomeconomie en rendement?",
+   "o": [
+    "Ze betekenen hetzelfde",
+    "Atoomeconomie: vergelijking; rendement: praktijk",
+    "Rendement kan nooit lager zijn dan de atoomeconomie",
+    "Atoomeconomie meet je met een weegschaal na de proef"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 2,
+   "u": "AE = theoretisch, uit de vergelijking; rendement = werkelijke/theoretische opbrengst.",
+   "uo": [
+    "Koos je hetzelfde? Een reactie kan een atoomeconomie van 100% hebben en toch een rendement van 60%, bijvoorbeeld door een evenwicht.",
+    "Klopt: atoomeconomie kun je uitrekenen zonder proef: het zegt welk deel van de atomen in het gewenste product kan komen. Rendement meet hoeveel product je in de praktijk echt haalt.",
+    "Koos je rendement niet lager? Rendement en atoomeconomie zijn los van elkaar. Het rendement kan hoger of lager uitvallen.",
+    "Koos je weegschaal na de proef? Dat is het rendement. Atoomeconomie volgt uit de reactievergelijking."
+   ],
+   "uh": "AE = papier, rendement = praktijk."
+  },
+  {
+   "v": "Welke conclusie is juist?",
+   "o": [
+    "A: hoogste atoomeconomie; B: hoogste rendement",
+    "Route A is in alle opzichten beter",
+    "Route B heeft de hoogste atoomeconomie én het hoogste rendement",
+    "Beide routes zijn even groen"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 2,
+   "u": "A: additie 100% AE maar 60% rendement; B: AE 64% en rendement 90%.",
+   "uo": [
+    "Klopt: route A is een additie zonder bijproduct (atoomeconomie 100%), maar haalt in de praktijk maar 60%. Route B levert HCl als bijproduct (atoomeconomie 64%), maar haalt 90%. Welke route groener is, hangt dus van meer af.",
+    "Koos je A in alle opzichten? Route A heeft wel de hoogste atoomeconomie, maar een lager rendement dan B.",
+    "Koos je B hoogste atoomeconomie? Route B heeft een bijproduct (HCl), dus een lagere atoomeconomie dan de additie.",
+    "Koos je even groen? De routes verschillen in atoomeconomie, rendement en afval. Ze zijn niet even groen."
+   ],
+   "uh": "Kijk naar beide maten.",
+   "ctx": "Twee routes naar chloorethaan. Route A (additie, C₂H₄ + HCl → C₂H₅Cl) heeft een atoomeconomie van 100%, maar in de praktijk een rendement van 60%. Route B (substitutie, C₂H₆ + Cl₂ → C₂H₅Cl + HCl) heeft een atoomeconomie van 64% en een rendement van 90%."
+  },
+  {
+   "v": "Waarom kan een reactie met 100% atoomeconomie toch een laag rendement hebben?",
+   "o": [
+    "De atoomeconomie is fout berekend als het rendement laag is",
+    "De wet van behoud van massa geldt niet altijd",
+    "Een additie levert altijd bijproducten op",
+    "Door een evenwicht of verlies bij scheiden"
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 2,
+   "u": "AE zegt niets over hoe volledig de reactie in de praktijk verloopt.",
+   "uo": [
+    "Koos je fout berekend? De atoomeconomie volgt uit de vergelijking en is los van het rendement. Beide kunnen kloppen.",
+    "Koos je behoud van massa? Die geldt altijd. Een laag rendement komt door onvolledige omzetting of verlies.",
+    "Koos je bijproducten bij additie? Bij een zuivere additie ontstaat geen bijproduct. Een laag rendement komt door iets anders.",
+    "Klopt: atoomeconomie zegt alleen dat er geen bijproduct is als de reactie volledig verloopt. In de praktijk kan een evenwicht ervoor zorgen dat niet alles reageert, of gaat product verloren bij het scheiden."
+   ],
+   "uh": "AE ≠ rendement.",
+   "ctx": "De additie van water aan etheen tot ethanol heeft een atoomeconomie van 100%. Toch wordt in de fabriek bij één doorgang door de reactor maar ongeveer 5% van het etheen omgezet. Het overgebleven etheen wordt teruggevoerd naar de reactor."
+  },
+  {
+   "v": "Waarom is recycling van plastic nooit helemaal verliesvrij?",
+   "o": [
+    "Gerecycled plastic weegt meer dan nieuw plastic",
+    "Plastic verdwijnt vanzelf als je het recyclet",
+    "Er gaat steeds materiaal en kwaliteit verloren",
+    "Recycling kost geen energie, dus is het altijd verliesvrij"
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 3,
+   "u": "Verlies bij inzamelen en sorteren, vervuiling en kortere ketens.",
+   "uo": [
+    "Koos je weegt meer? Gerecycled plastic weegt niet meer. Er gaat juist materiaal verloren.",
+    "Koos je verdwijnt vanzelf? Plastic verdwijnt niet; een deel wordt wel afgekeurd en verbrand of gestort.",
+    "Klopt: niet al het plastic wordt ingezameld of goed gesorteerd, er zit vervuiling in en bij omsmelten breken ketens. Daardoor gaat er bij elke ronde materiaal en kwaliteit verloren.",
+    "Koos je geen energie? Recycling kost wel energie: inzamelen, wassen, smelten. En het is niet verliesvrij."
+   ],
+   "uh": "Recycling ≠ verliesvrij."
+  },
+  {
+   "v": "Wat is downcycling?",
+   "o": [
+    "Recycling waarbij het product beter wordt dan het origineel",
+    "Recycling naar een lagere kwaliteit",
+    "Afval naar beneden storten in een stortplaats",
+    "Het verbranden van afval voor energie"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 3,
+   "u": "Bijv. PET-fles → fleece → vulmateriaal.",
+   "uo": [
+    "Koos je beter dan het origineel? Dat heet upcycling. Bij downcycling neemt de kwaliteit juist af.",
+    "Klopt: bij downcycling wordt het materiaal steeds minder goed. Van een PET-fles wordt bijvoorbeeld fleece gemaakt, en daarvan later vulmateriaal. Het materiaal is daarna niet meer voor flessen te gebruiken.",
+    "Koos je storten? Storten is geen recycling. Downcycling is hergebruik op een lager niveau.",
+    "Koos je verbranden? Verbranden met energieterugwinning is geen recycling van het materiaal."
+   ],
+   "uh": "Downcycling = lagere kwaliteit."
+  },
+  {
+   "v": "Hoeveel kilo van de oorspronkelijke 100 kg is na drie recyclingrondes nog over, bij 20% verlies per ronde?",
+   "o": [
+    "51 kg",
+    "40 kg",
+    "60 kg",
+    "80 kg"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 3,
+   "u": "100 × 0,8 × 0,8 × 0,8 = 51,2 kg.",
+   "uo": [
+    "Klopt: na elke ronde blijft 80% over. 100 × 0,8 = 80; × 0,8 = 64; × 0,8 = 51,2 kg. Verlies stapelt zich op.",
+    "Koos je 40 kg? Dan heb je 3 × 20% = 60% van de oorspronkelijke 100 kg afgetrokken. Maar het verlies is steeds 20% van wat er nog over is.",
+    "Koos je 60 kg? Dat lijkt op 100 − 2 × 20. Reken per ronde: 80, dan 64, dan 51 kg.",
+    "Koos je 80 kg? Dat is na één ronde. Na drie rondes is er minder over, want het verlies herhaalt zich elke ronde."
+   ],
+   "uh": "Elke ronde ×0,8.",
+   "ctx": "Een recyclingbedrijf verwerkt PET-flessen. Stel dat bij elke ronde (inzamelen, sorteren, wassen en omsmelten) 20% van het materiaal verloren gaat door vervuiling, afkeur en verlies. Het bedrijf begint met 100 kg plastic en volgt het materiaal drie rondes lang."
+  },
+  {
+   "v": "Waarin verschillen mechanische en chemische recycling van plastic?",
+   "o": [
+    "Er is geen verschil",
+    "Mechanisch: verbranden voor energie; chemisch: smelten",
+    "Mechanisch is voor glas, chemisch voor papier",
+    "Mechanisch omsmelten, chemisch terug naar monomeren"
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 3,
+   "u": "Chemische recycling maakt weer zuivere grondstof, mechanische behoudt de ketens.",
+   "uo": [
+    "Koos je geen verschil? Het verschil is groot: chemische recycling breekt de moleculen af, mechanische niet.",
+    "Koos je verbranden? Verbranden is geen recycling van het materiaal. Bij mechanische recycling wordt het plastic omgesmolten.",
+    "Koos je glas en papier? Beide termen gaan hier over plastic, met een verschillende aanpak.",
+    "Klopt: bij mechanische recycling wordt plastic gemalen, gewassen en gesmolten tot nieuwe producten; de ketens blijven heel maar worden korter en vuiler. Bij chemische recycling worden de ketens afgebroken tot monomeren, waarvan weer zuiver plastic gemaakt kan worden."
+   ],
+   "uh": "Mechanisch = omsmelten; chemisch = terug naar monomeer."
+  },
+  {
+   "v": "Wat kenmerkt een lineaire economie?",
+   "o": [
+    "Producten worden alleen gerepareerd",
+    "Alle materialen worden steeds opnieuw gebruikt",
+    "Maken, gebruiken, weggooien",
+    "Er worden geen grondstoffen meer gebruikt"
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 4,
+   "u": "Lineair = maken, gebruiken, weggooien.",
+   "uo": [
+    "Koos je alleen repareren? Repareren hoort bij een circulaire economie. In een lineaire economie gooi je weg.",
+    "Koos je steeds opnieuw gebruiken? Dat is juist een circulaire economie.",
+    "Klopt: in een lineaire economie haal je grondstoffen uit de natuur, maak je er een product van en gooi je het na gebruik weg. Zo raken grondstoffen op en groeit de afvalberg.",
+    "Koos je geen grondstoffen? Een lineaire economie gebruikt juist steeds nieuwe grondstoffen."
+   ],
+   "uh": "Lineair: maken, gebruiken, weggooien."
+  },
+  {
+   "v": "Waar streeft een circulaire economie naar?",
+   "o": [
+    "Zo snel mogelijk nieuwe producten maken die de klant direct wil hebben",
+    "Grondstoffen zo lang mogelijk in gebruik houden",
+    "Al het afval verbranden voor energie",
+    "Alleen producten van hout maken"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 4,
+   "u": "Circulair = materialen in kringloop: hergebruik, reparatie, recycling.",
+   "uo": [
+    "Koos je snel nieuwe producten? Dat past bij een lineaire economie, waar veel grondstof en afval bij hoort.",
+    "Klopt: in een circulaire economie ontwerp je producten zo dat je ze kunt repareren, hergebruiken en uiteindelijk recyclen. Grondstoffen blijven in de kringloop en er ontstaat weinig afval.",
+    "Koos je verbranden? Verbranden met energieterugwinning is beter dan storten, maar de grondstof is dan wel weg.",
+    "Koos je hout? Ook producten van metaal, glas en plastic passen in een circulaire economie, als ze rondgaan."
+   ],
+   "uh": "Circulair = kringloop."
+  },
+  {
+   "v": "Welke keuze staat het hoogst op de afvalladder?",
+   "o": [
+    "Het product langer gebruiken of hergebruiken",
+    "Het product recyclen",
+    "Het product verbranden met energieterugwinning",
+    "Het product storten"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 4,
+   "u": "Ladder van Lansink: voorkomen > hergebruik > recycling > verbranden met energie > storten.",
+   "uo": [
+    "Klopt: het beste is afval voorkomen en producten hergebruiken. Dan is er geen nieuwe grondstof of energie voor recycling nodig.",
+    "Koos je recyclen? Recyclen is goed, maar kost energie en gaat met verlies. Hergebruiken staat hoger.",
+    "Koos je verbranden? Dan win je wel energie terug, maar is het materiaal verloren. Dat staat lager.",
+    "Koos je storten? Dat is de laatste optie op de ladder: het materiaal en de energie zijn helemaal verloren."
+   ],
+   "uh": "Hergebruik > recycling > verbranden > storten.",
+   "ctx": "Een gemeente wil minder afval en volgt de ladder van Lansink. Voor oude meubels uit kantoren heeft ze vier opties: ze opknappen en opnieuw gebruiken in scholen, ze vermalen tot spaanplaat, ze verbranden in de afvalcentrale die stroom levert, of ze naar de stortplaats brengen."
+  },
+  {
+   "v": "Welk ontwerp past het best bij een circulaire economie?",
+   "o": [
+    "Een telefoon van materialen die niet te scheiden zijn",
+    "Een telefoon waarvan de batterij is vastgelijmd",
+    "Een telefoon die na twee jaar niet meer bijgewerkt wordt",
+    "Een telefoon met vervangbare onderdelen"
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 4,
+   "u": "Repareerbaar en scheidbaar ontwerpen.",
+   "uo": [
+    "Koos je niet te scheiden? Dan kun je de materialen niet recyclen en eindigt alles als afval.",
+    "Koos je vastgelijmde batterij? Dan kun je de batterij niet vervangen en wordt de hele telefoon eerder weggegooid.",
+    "Koos je geen updates? Dan wordt de telefoon onbruikbaar terwijl hij nog werkt. Dat is het tegenovergestelde van circulair.",
+    "Klopt: als je onderdelen makkelijk kunt vervangen, gaat de telefoon langer mee. En aan het eind kun je de materialen gemakkelijker scheiden en recyclen."
+   ],
+   "uh": "Circulair ontwerpen = repareerbaar en scheidbaar."
+  },
+  {
+   "v": "Wat is een hernieuwbare grondstof?",
+   "o": [
+    "Een grondstof die in een fabriek wordt gemaakt",
+    "Een grondstof die nooit opraakt, zoals aardolie",
+    "Grondstof die opnieuw groeit, zoals hout",
+    "Een metaal dat je kunt omsmelten"
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 5,
+   "u": "Hernieuwbaar = biomassa die opnieuw groeit.",
+   "uo": [
+    "Koos je in een fabriek gemaakt? Dat is een tussenproduct of eindproduct, geen grondstof.",
+    "Koos je aardolie? Aardolie is fossiel en raakt op: het ontstaat pas in miljoenen jaren.",
+    "Klopt: hout, maïs en suikerbiet groeien opnieuw, binnen jaren of zelfs maanden. Daarom heten ze hernieuwbaar.",
+    "Koos je metaal? Metalen kun je goed recyclen, maar ze groeien niet opnieuw. Ze zijn niet hernieuwbaar."
+   ],
+   "uh": "Hernieuwbaar = groeit opnieuw."
+  },
+  {
+   "v": "Waarom heet waterstof uit elektrolyse met stroom van windmolens groene waterstof?",
+   "o": [
+    "Waterstof is een groen gas",
+    "Er komt bij de productie geen CO₂ vrij",
+    "Windmolens maken waterstof uit lucht",
+    "Het waterstof wordt gemaakt uit aardgas"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 5,
+   "u": "2 H₂O → 2 H₂ + O₂ met duurzame stroom: geen CO₂.",
+   "uo": [
+    "Koos je groen gas? Waterstof is kleurloos. Groen slaat op de manier waarop het gemaakt is.",
+    "Klopt: bij elektrolyse wordt water gesplitst in waterstof en zuurstof. Als de stroom van windmolens of zonnepanelen komt, ontstaat er geen CO₂.",
+    "Koos je uit lucht? Waterstof wordt gemaakt uit water. De windmolens leveren alleen de stroom.",
+    "Koos je uit aardgas? Waterstof uit aardgas heet grijze waterstof; daarbij komt juist CO₂ vrij."
+   ],
+   "uh": "Groene waterstof = elektrolyse met duurzame stroom."
+  },
+  {
+   "v": "Hoeveel mol CO₂ ontstaat er per mol waterstof bij het maken van grijze waterstof?",
+   "o": [
+    "0,25 mol",
+    "1 mol",
+    "4 mol",
+    "0 mol"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 5,
+   "u": "CH₄ + 2 H₂O → CO₂ + 4 H₂: 1 CO₂ per 4 H₂.",
+   "uo": [
+    "Klopt: per mol CO₂ ontstaan 4 mol H₂. Per mol waterstof is dat 1/4 = 0,25 mol CO₂.",
+    "Koos je 1 mol? Dan ga je uit van een verhouding 1 : 1. De vergelijking geeft 1 CO₂ op 4 H₂.",
+    "Koos je 4 mol? Dat is het aantal mol waterstof per mol CO₂. De vraag is andersom.",
+    "Koos je 0 mol? Dat geldt voor groene waterstof. Bij grijze waterstof uit aardgas ontstaat wel CO₂."
+   ],
+   "uh": "Molverhouding lezen uit de vergelijking.",
+   "ctx": "Het meeste waterstof wordt nu gemaakt uit aardgas en stoom: CH₄ + 2 H₂O → CO₂ + 4 H₂. Dit heet grijze waterstof. Bij groene waterstof wordt water gesplitst met stroom van zon of wind: 2 H₂O → 2 H₂ + O₂. Een leerling wil weten hoeveel CO₂ bij grijze waterstof per mol H₂ ontstaat."
+  },
+  {
+   "v": "Waarom is bioplastic uit maïs niet automatisch milieuvriendelijk?",
+   "o": [
+    "Maïs groeit niet opnieuw",
+    "Maïs bevat geen koolstof",
+    "Bioplastic is altijd giftig voor dieren die het opeten",
+    "Teelt vraagt land, water, kunstmest en energie"
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 5,
+   "u": "Ook een hernieuwbare grondstof heeft een milieubelasting in de keten.",
+   "uo": [
+    "Koos je groeit niet opnieuw? Maïs groeit elk jaar opnieuw; het is wel hernieuwbaar.",
+    "Koos je geen koolstof? Maïs bestaat juist uit koolstofverbindingen zoals zetmeel.",
+    "Koos je giftig? Bioplastics als PLA zijn niet giftig. Het punt is de milieubelasting van de teelt.",
+    "Klopt: voor maïs heb je landbouwgrond, water, kunstmest en brandstof voor machines nodig. Die grond kan niet meer voor voedsel gebruikt worden. Daarom moet je de hele keten bekijken, niet alleen de grondstof."
+   ],
+   "uh": "Hernieuwbaar ≠ automatisch duurzaam.",
+   "ctx": "Een frisdrankmerk maakt reclame met flessen van bioplastic: \"100% plantaardig, dus 100% groen.\" Het plastic wordt gemaakt uit maïs die in de Verenigde Staten wordt verbouwd. Een milieuorganisatie plaatst daar kanttekeningen bij."
+  },
+  {
+   "v": "Hoe wordt grijze waterstof gemaakt?",
+   "o": [
+    "Waterstof dat grijs van kleur is",
+    "Waterstof gemaakt met windenergie",
+    "Uit aardgas gemaakt, met CO₂-uitstoot",
+    "Waterstof dat opgeslagen is in grijze tanks"
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 5,
+   "u": "Grijs = uit fossiel aardgas, met CO₂-uitstoot.",
+   "uo": [
+    "Koos je grijs van kleur? Waterstof is kleurloos. De kleur slaat op de manier van productie.",
+    "Koos je windenergie? Dat is groene waterstof, gemaakt door elektrolyse van water met duurzame stroom.",
+    "Klopt: grijze waterstof wordt gemaakt uit aardgas en stoom. Daarbij komt CO₂ vrij dat in de atmosfeer verdwijnt.",
+    "Koos je grijze tanks? De naam heeft niets met de opslag te maken, maar met de bron."
+   ],
+   "uh": "Grijs = fossiel, groen = duurzaam."
+  },
+  {
+   "v": "Welk deel van de massa van de beginstoffen komt echt in het gewenste product?",
+   "o": [
+    "70%",
+    "56%",
+    "80%",
+    "150%"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 2,
+   "u": "0,70 × 0,80 = 0,56: beide verliezen tellen.",
+   "uo": [
+    "Koos je 70%? Dat is het maximum volgens de vergelijking. In de praktijk haal je daar maar 80% van.",
+    "Klopt: hoogstens 70% van de massa kan in het product komen, en daarvan haal je in de praktijk 80%. 0,70 × 0,80 = 0,56, dus 56%.",
+    "Koos je 80%? Dat is het rendement. Maar ook als de reactie volledig verloopt, gaat 30% van de massa al in bijproduct.",
+    "Koos je 150%? Je mag de percentages niet optellen. Beide verliezen gelden na elkaar, dus vermenigvuldig je."
+   ],
+   "uh": "Atoomeconomie × rendement.",
+   "ctx": "Een fabriek maakt een geurstof met een reactie die volgens de vergelijking een atoomeconomie van 70% heeft. In de praktijk haalt de fabriek een rendement van 80%. De directie wil weten welk deel van alle ingekochte grondstof uiteindelijk echt in het product terechtkomt."
+  },
+  {
+   "v": "Welke route is volgens de atoomeconomie het groenst, en waarom zegt dat nog niet alles?",
+   "o": [
+    "Route 1; maar het rendement en de energie tellen ook mee",
+    "Route 2, want CO₂ is onschadelijk",
+    "Route 1, en dan is er verder niets meer te verbeteren",
+    "Beide even groen, want ze maken hetzelfde product"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 2,
+   "u": "Additie 100% AE, vergisting 51%; maar rendement, energie, grondstof tellen ook.",
+   "uo": [
+    "Klopt: route 1 (additie) heeft een atoomeconomie van 100%, route 2 (vergisting) 51%. Maar route 1 gebruikt etheen uit aardolie en veel energie, route 2 een hernieuwbare grondstof. Atoomeconomie is één maat, niet het hele verhaal.",
+    "Koos je route 2? CO₂ is een broeikasgas en geldt hier als bijproduct. Route 2 heeft de laagste atoomeconomie.",
+    "Koos je niets meer te verbeteren? Ook met 100% atoomeconomie tellen het rendement, de energie en de herkomst van de grondstof mee.",
+    "Koos je even groen? Hetzelfde product betekent niet hetzelfde proces. De routes verschillen in afval en grondstof."
+   ],
+   "uh": "Atoomeconomie is één van de maten.",
+   "ctx": "Ethanol kan gemaakt worden via route 1: C₂H₄ + H₂O → C₂H₅OH (etheen uit aardolie, bij 300 °C) of via route 2: C₆H₁₂O₆ → 2 C₂H₅OH + 2 CO₂ (vergisting van suiker uit suikerriet, bij 35 °C). De atoomeconomie is 100% voor route 1 en 51% voor route 2."
+  },
+  {
+   "v": "Waarom kost recycling van aluminium veel minder energie dan aluminium maken uit erts?",
+   "o": [
+    "Erts bevat geen aluminium",
+    "Aluminium uit erts is lichter",
+    "Gerecycled aluminium is van zichzelf al vloeibaar",
+    "Het metaal hoeft alleen gesmolten te worden, niet uit het erts gehaald"
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 3,
+   "u": "Uit erts: elektrolyse, veel energie; recyclen: alleen omsmelten.",
+   "uo": [
+    "Koos je geen aluminium? Erts (bauxiet) bevat wel aluminium, maar gebonden als aluminiumoxide. Het eruit halen kost veel energie.",
+    "Koos je lichter? Aluminium is aluminium, of het nu uit erts komt of gerecycled is. Het verschil zit in de bewerking.",
+    "Koos je vloeibaar? Gerecycled aluminium is gewoon vast; het moet wel gesmolten worden, maar dat kost veel minder dan elektrolyse.",
+    "Klopt: om aluminium uit erts te halen, is elektrolyse nodig, wat heel veel stroom kost. Bij recycling hoef je het metaal alleen om te smelten: dat kost ongeveer 5% van de energie."
+   ],
+   "uh": "Recyclen van metaal bespaart veel energie."
+  }
+ ],
+ "oe": [
+  {
+   "bron": "Examenstijl",
+   "ctx": "Ethanol kan gemaakt worden door vergisting van glucose (C₆H₁₂O₆ → 2 C₂H₅OH + 2 CO₂) of door additie van water aan etheen (C₂H₄ + H₂O → C₂H₅OH). Molaire massa's: glucose 180,16; ethanol 46,07; etheen 28,05; water 18,02 g/mol.",
+   "v": "Bereken de atoomeconomie van beide routes en noem één argument waarom de route met de laagste atoomeconomie toch duurzamer kan zijn.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Vergisting: 2 × 46,07 / 180,16 × 100% = 51% (1p). Additie: 46,07 / (28,05 + 18,02) × 100% = 100% (1p). Vergisting gebruikt een hernieuwbare grondstof (suiker uit planten) en verloopt bij lage temperatuur; het CO₂ is kort geleden door planten opgenomen (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Ongebluste kalk (CaO) wordt gemaakt door kalksteen te verhitten: CaCO₃ → CaO + CO₂. Een fabriek verhit 1000 kg kalksteen en haalt 504 kg CaO. (CaCO₃ 100,09; CaO 56,08 g/mol)",
+   "v": "Bereken de atoomeconomie en het rendement van dit proces.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Atoomeconomie: 56,08 / 100,09 × 100% = 56% (1p). Theoretische opbrengst: 1000 × 56,08 / 100,09 = 560 kg CaO (1p). Rendement: 504 / 560 × 100% = 90% (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een gemeente zegt: \"Wij recyclen al ons plastic afval, dus het probleem is opgelost. Recycling is een gesloten kringloop zonder verlies.\" In de praktijk wordt ongeveer de helft van het ingezamelde plastic echt gerecycled.",
+   "v": "Geef twee redenen waarom recycling van plastic geen kringloop zonder verlies is.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Twee van: niet alles wordt ingezameld of goed gesorteerd; vervuiling leidt tot afkeur; bij omsmelten breken ketens en daalt de kwaliteit (downcycling); recycling kost energie (2 × 1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Grijze waterstof wordt gemaakt uit aardgas: CH₄ + 2 H₂O → CO₂ + 4 H₂. Een fabriek maakt per jaar 1,0 · 10⁸ mol waterstof op deze manier. (CO₂ 44,01 g/mol)",
+   "v": "Bereken hoeveel ton CO₂ daarbij per jaar ontstaat en leg uit hoe groene waterstof wordt gemaakt.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "1,0 · 10⁸ / 4 = 2,5 · 10⁷ mol CO₂ (1p). 2,5 · 10⁷ × 44,01 = 1,1 · 10⁹ g = 1,1 · 10³ ton CO₂ (1p). Groene waterstof: elektrolyse van water (2 H₂O → 2 H₂ + O₂) met stroom van zon of wind, zonder CO₂ (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een fabrikant van elektrische tandenborstels wil zijn product circulair maken. Nu zit de batterij vastgelijmd in een behuizing van een mengsel van verschillende plastics, en na drie jaar wordt de hele borstel weggegooid.",
+   "v": "Geef twee aanpassingen in het ontwerp die beter passen bij een circulaire economie en leg uit waarom.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Bijvoorbeeld: de batterij vervangbaar maken, zodat de borstel langer meegaat (hergebruik, hoger op de ladder) (1p); de behuizing van één soort plastic maken of onderdelen makkelijk scheidbaar, zodat het materiaal gerecycled kan worden (1p)."
+  }
+ ]
+}

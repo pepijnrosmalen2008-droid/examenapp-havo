@@ -2018,6 +2018,28 @@ var VAKKEN = [
       "nOe": 5,
       "nBeg": 11,
       "hasSam": true
+     },
+     {
+      "id": "E3",
+      "lo": "sk.E.3",
+      "gs": 2,
+      "naam": "Duurzaamheid en groene chemie",
+      "beschrijving": "Je beoordeelt processen met de principes van groene chemie, berekent de atoomeconomie en onderscheidt die van het rendement, legt de grenzen van recycling uit, beschrijft lineaire en circulaire economie en vergelijkt grijze en groene waterstof.",
+      "ceStatus": "CE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Principes van groene chemie",
+       "Atoomeconomie berekenen",
+       "Atoomeconomie en rendement",
+       "Recycling en zijn grenzen",
+       "Lineaire en circulaire economie",
+       "Hernieuwbare grondstoffen en groene waterstof"
+      ],
+      "nSv": 28,
+      "nOe": 5,
+      "nBeg": 11,
+      "hasSam": true
      }
     ]
    }

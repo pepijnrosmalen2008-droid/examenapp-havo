@@ -5,7 +5,7 @@
 Volledige beschrijving (functies, inhoud per niveau, prijs, wat Slagio niet is): https://slagio.nl/llms-full.txt
 
 ## In het kort
-- 12 vakken havo, 16 vakken vwo, 12 vakken vmbo; 25.946 oefenvragen en 4.346 begrippen.
+- 12 vakken havo, 16 vakken vwo, 12 vakken vmbo; 25.974 oefenvragen en 4.346 begrippen.
 - Adaptief oefenen: na een fout een vraag over hetzelfde onderwerp, een niveau makkelijker; uitleg bij elk fout antwoord.
 - Foutenboek en herhalen met gespreide herhaling, beheersing per leerdoel, studieplan tot het examen.
 - Examens met klok, proefexamens in examenstijl met modelantwoord en puntenverdeling, archief met officiële oude examens.
@@ -83,6 +83,7 @@ Volledige beschrijving (functies, inhoud per niveau, prijs, wat Slagio niet is):
 - [Polymeren (Scheikunde HAVO)](https://slagio.nl/leren/havo/scheikunde/polymeren.html): Je beschrijft de vorming van polymeren uit monomeren door additie- en condensatiepolymerisatie, leidt de repeterende eenheid en het monomeer uit elkaar af,…
 - [Grondstoffen, materialen en industrie (Scheikunde HAVO)](https://slagio.nl/leren/havo/scheikunde/grondstoffen-materialen-en-industrie.html): Je beschrijft de weg van grondstof via tussenproducten naar eindproduct, leest en tekent blokschema's met recirculatie, legt fractionele destillatie en kraken…
 - [Milieuproblemen: broeikaseffect, ozon en zure regen (Scheikunde HAVO)](https://slagio.nl/leren/havo/scheikunde/milieuproblemen-broeikaseffect-ozon-en-zure-regen.html): Je verklaart het natuurlijke en het versterkte broeikaseffect, de afbraak van de ozonlaag door CFK's en het ontstaan en de gevolgen van zure regen, en je…
+- [Duurzaamheid en groene chemie (Scheikunde HAVO)](https://slagio.nl/leren/havo/scheikunde/duurzaamheid-en-groene-chemie.html): Je beoordeelt processen met de principes van groene chemie, berekent de atoomeconomie en onderscheidt die van het rendement, legt de grenzen van recycling…
 - [Snelheid en versnelling (Natuurkunde HAVO)](https://slagio.nl/leren/havo/natuurkunde/snelheid-en-versnelling.html): Snelheid en versnelling berekenen en het verschil ertussen begrijpen, inclusief de vrije val met valversnelling g.
 - [Krachten herkennen (Natuurkunde HAVO)](https://slagio.nl/leren/havo/natuurkunde/krachten-herkennen.html): De zwaartekracht, normaalkracht, wrijvingskracht en spankracht herkennen en tekenen, de resulterende kracht bepalen, en het verschil tussen gewicht (kracht)…
 - [Krachten samenstellen en ontbinden (Natuurkunde HAVO)](https://slagio.nl/leren/havo/natuurkunde/krachten-samenstellen-en-ontbinden.html): Krachten die op één lijn, loodrecht of onder een willekeurige hoek staan samenstellen tot een resulterende kracht, en een kracht ontbinden in componenten.
