@@ -1,0 +1,690 @@
+{
+ "id": "C6",
+ "lo": "sk.C.6",
+ "gs": 2,
+ "naam": "Reactiesnelheid en katalyse",
+ "beschrijving": "Je verklaart met het botsende-deeltjesmodel hoe concentratie, verdelingsgraad, temperatuur en een katalysator de reactiesnelheid beïnvloeden, en je leest snelheid af uit een grafiek van gasvolume tegen de tijd.",
+ "ceStatus": "CE",
+ "binas": "",
+ "val": "",
+ "onderwerpen": [
+  "Het botsende-deeltjesmodel",
+  "Concentratie en verdelingsgraad",
+  "Temperatuur",
+  "Katalysator",
+  "Snelheid meten en grafieken lezen",
+  "Toepassingen in huis en industrie"
+ ],
+ "sam": "Een reactie verloopt via effectieve botsingen: hard genoeg (activeringsenergie) en goed gericht. Sneller door hogere concentratie, grotere verdelingsgraad, hogere temperatuur (+10 °C ≈ twee keer zo snel) of een katalysator, die de activeringsenergie verlaagt en niet verbruikt wordt. In een grafiek van gasvolume tegen de tijd is de helling de snelheid en de eindwaarde de hoeveelheid product.",
+ "begrippen": [
+  {
+   "t": "Reactiesnelheid",
+   "d": "De hoeveelheid stof die per tijdseenheid wordt omgezet; het aantal effectieve botsingen per seconde."
+  },
+  {
+   "t": "Botsende-deeltjesmodel",
+   "d": "Model waarin een reactie alleen plaatsvindt als deeltjes effectief met elkaar botsen."
+  },
+  {
+   "t": "Effectieve botsing",
+   "d": "Botsing met minstens de activeringsenergie en de juiste richting, die tot een reactie leidt."
+  },
+  {
+   "t": "Activeringsenergie",
+   "d": "De minimale energie die deeltjes bij een botsing nodig hebben om te reageren."
+  },
+  {
+   "t": "Concentratie",
+   "d": "Hoeveelheid opgeloste stof per liter; hoger betekent vaker botsen."
+  },
+  {
+   "t": "Verdelingsgraad",
+   "d": "Mate waarin een vaste stof fijn verdeeld is; poeder heeft een groter oppervlak dan een blok."
+  },
+  {
+   "t": "Katalysator",
+   "d": "Stof die een reactie versnelt door de activeringsenergie te verlagen en zelf niet wordt verbruikt."
+  },
+  {
+   "t": "Enzym",
+   "d": "Eiwit dat in levende cellen als katalysator werkt; gaat kapot bij hoge temperatuur."
+  },
+  {
+   "t": "Denaturatie",
+   "d": "Blijvende verandering van de vorm van een eiwit door hitte, waardoor een enzym niet meer werkt."
+  },
+  {
+   "t": "Stofexplosie",
+   "d": "Explosie doordat fijn verdeelde brandbare stof in lucht vrijwel tegelijk verbrandt."
+  },
+  {
+   "t": "Autokatalysator",
+   "d": "Katalysator van platina en rodium in de uitlaat die CO, NOₓ en onverbrande brandstof omzet."
+  }
+ ],
+ "sv": [
+  {
+   "v": "Wanneer leidt een botsing tussen deeltjes tot een reactie?",
+   "o": [
+    "Alleen als de deeltjes even zwaar zijn",
+    "Bij elke botsing, omdat deeltjes altijd bindingen breken als ze elkaar raken",
+    "Als de botsing genoeg energie heeft en de deeltjes goed op elkaar botsen",
+    "Alleen als er een katalysator bij is"
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 0,
+   "u": "Een effectieve botsing heeft genoeg energie (minstens de activeringsenergie) en de juiste richting.",
+   "uo": [
+    "Koos je even zwaar? De massa van de deeltjes bepaalt niet of een botsing effectief is. Het gaat om energie en richting.",
+    "Koos je elke botsing? Deeltjes botsen miljarden keren per seconde. Als elke botsing raak was, zou elke reactie in een flits verlopen.",
+    "Klopt: alleen effectieve botsingen leiden tot een reactie. De deeltjes moeten hard genoeg en op de goede plek botsen.",
+    "Koos je katalysator? Een katalysator maakt meer botsingen effectief, maar ook zonder katalysator verlopen reacties."
+   ],
+   "uh": "Effectief = hard genoeg én goed gericht."
+  },
+  {
+   "v": "Wat gebeurt er met de reactiesnelheid als het aantal effectieve botsingen per seconde stijgt?",
+   "o": [
+    "Die neemt af",
+    "Die neemt toe",
+    "Die blijft gelijk",
+    "De reactie stopt"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 0,
+   "u": "Meer effectieve botsingen per seconde = hogere reactiesnelheid.",
+   "uo": [
+    "Koos je afnemen? Elke effectieve botsing levert product op. Meer van die botsingen per seconde maakt de reactie dus sneller.",
+    "Klopt: de reactiesnelheid is precies het aantal effectieve botsingen per seconde. Meer raak botsingen betekent een snellere reactie.",
+    "Koos je gelijk? De snelheid hangt direct af van hoeveel botsingen per seconde effectief zijn. Verandert dat aantal, dan verandert de snelheid.",
+    "Koos je stoppen? Een reactie stopt als een beginstof op is, niet doordat er meer botsingen zijn."
+   ],
+   "uh": "Snelheid = effectieve botsingen per seconde."
+  },
+  {
+   "v": "Welke verklaring past het best bij deze waarneming?",
+   "o": [
+    "De deeltjes botsen wel, maar te zelden met genoeg energie",
+    "De stoffen botsen niet, omdat het allebei gassen zijn",
+    "Waterstof en zuurstof kunnen niet met elkaar reageren",
+    "De reactie is endotherm en heeft dus warmte nodig"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 0,
+   "u": "Bij kamertemperatuur hebben te weinig botsingen de activeringsenergie; een vonk levert die.",
+   "uo": [
+    "Klopt: de moleculen botsen voortdurend, maar bij kamertemperatuur bijna nooit hard genoeg. Een vonk geeft een paar deeltjes genoeg energie, en de vrijkomende warmte doet de rest.",
+    "Koos je \"botsen niet\"? Gasmoleculen bewegen juist snel en botsen veel. Het probleem is dat die botsingen te weinig energie hebben.",
+    "Koos je \"kunnen niet reageren\"? Na de vonk ontploft het mengsel. Ze kunnen dus wel reageren, alleen niet zonder duwtje.",
+    "Koos je endotherm? De knal laat zien dat er juist veel energie vrijkomt: exotherm. De vonk is alleen nodig om over de drempel te komen."
+   ],
+   "uh": "Geen reactie zonder vonk = activeringsenergie niet gehaald.",
+   "ctx": "Een ballon gevuld met een mengsel van waterstof en zuurstof kan je dagen bewaren zonder dat er iets gebeurt. Houdt de docent er een brandende lont tegen, dan ontploft de ballon met een harde knal en ontstaat er waterdamp."
+  },
+  {
+   "v": "Wat gebeurt er met de reactiesnelheid als je de concentratie van een opgeloste stof verhoogt?",
+   "o": [
+    "Die wordt eerst lager, dan hoger",
+    "Die neemt af",
+    "Die blijft gelijk",
+    "Die neemt toe"
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 1,
+   "u": "Hogere concentratie: meer deeltjes per liter, dus vaker botsingen.",
+   "uo": [
+    "Koos je eerst lager? Er is geen reden voor een vertraging. Vanaf het begin botsen de deeltjes vaker.",
+    "Koos je afnemen? Meer deeltjes in hetzelfde volume betekent juist meer botsingen per seconde, en dus een snellere reactie.",
+    "Koos je gelijk? Het aantal botsingen hangt af van hoe dicht de deeltjes op elkaar zitten. Dat verandert bij een hogere concentratie.",
+    "Klopt: bij een hogere concentratie zitten de deeltjes dichter op elkaar. Ze botsen vaker, dus ook vaker effectief."
+   ],
+   "uh": "Meer deeltjes per liter = vaker botsen."
+  },
+  {
+   "v": "Waarom reageert marmerpoeder sneller met zoutzuur dan een even zwaar stuk marmer?",
+   "o": [
+    "Poeder is warmer dan een stuk marmer",
+    "Poeder bevat per gram meer calciumcarbonaat dan een stuk marmer",
+    "Poeder heeft een groter oppervlak, dus vaker botsingen",
+    "Poeder lost op in water, een stuk niet"
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 1,
+   "u": "Grotere verdelingsgraad = groter oppervlak waar zuurdeeltjes op kunnen botsen.",
+   "uo": [
+    "Koos je warmer? Beide liggen bij dezelfde temperatuur. De snelheid verschilt door het oppervlak.",
+    "Koos je meer calciumcarbonaat? Het is even zwaar, dus er is evenveel stof. Het verschil zit in hoeveel ervan aan de buitenkant ligt.",
+    "Klopt: alleen de deeltjes aan het oppervlak kunnen botsen met de H⁺-ionen. Poeder heeft veel meer oppervlak, dus veel meer botsingen per seconde.",
+    "Koos je oplossen? Marmer lost niet op in water. Het reageert met het zuur, en dat gaat sneller naarmate er meer oppervlak is."
+   ],
+   "uh": "Fijner verdeeld = meer oppervlak = sneller."
+  },
+  {
+   "v": "Hoe verandert het oppervlak als de leerling het blokje in acht gelijke blokjes zaagt?",
+   "o": [
+    "Het blijft gelijk",
+    "Het wordt twee keer zo groot",
+    "Het wordt acht keer zo groot",
+    "Het wordt vier keer zo groot"
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 1,
+   "u": "Blok 2 cm: 6 × 4 = 24 cm². Acht blokjes van 1 cm: 8 × 6 × 1 = 48 cm²: twee keer zo groot.",
+   "uo": [
+    "Koos je gelijk? De massa blijft gelijk, maar door het zagen komen er nieuwe vlakken bij die eerst binnenin zaten.",
+    "Klopt: het grote blok heeft 6 vlakken van 2 × 2 = 24 cm². Acht kleine blokjes hebben elk 6 cm², samen 48 cm². Het oppervlak verdubbelt.",
+    "Koos je acht keer? Dan ga je ervan uit dat elk klein blokje evenveel oppervlak heeft als het grote. Een klein blokje heeft 6 cm², het grote 24 cm².",
+    "Koos je vier keer? Reken het na: 48 cm² na het zagen tegen 24 cm² ervoor. Dat is een factor twee."
+   ],
+   "uh": "Kleiner maken: zelfde massa, meer oppervlak.",
+   "ctx": "Een leerling heeft een blokje marmer van 2 cm bij 2 cm bij 2 cm. Ze zaagt het in acht gelijke kubusjes van 1 cm. Ze wil weten waarom de kleine blokjes sneller met zoutzuur reageren en rekent eerst het oppervlak uit."
+  },
+  {
+   "v": "Waarom is fijn meelstof in een silo gevaarlijk, terwijl een zak meel niet zomaar ontploft?",
+   "o": [
+    "Zwevend stof heeft een enorm oppervlak, dus alles brandt tegelijk",
+    "Meelstof bevat per gram meer energie dan het meel in een gesloten zak",
+    "In een silo zit meer zuurstof dan in de lucht",
+    "Meelstof is een katalysator voor de verbranding"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 1,
+   "u": "Fijn verdeeld en gemengd met lucht kan elk korreltje tegelijk branden: een stofexplosie.",
+   "uo": [
+    "Klopt: elk stofdeeltje is omringd door lucht. Daardoor brandt bijna alles tegelijk en komt de energie in een fractie van een seconde vrij.",
+    "Koos je meer energie per gram? Het is dezelfde stof, dus per gram komt evenveel energie vrij. Alleen de snelheid verschilt.",
+    "Koos je meer zuurstof? In een silo zit gewone lucht. Het verschil is dat de zuurstof bij elk korreltje kan.",
+    "Koos je katalysator? Meel is zelf de brandstof. Het brandt snel door het grote oppervlak, niet doordat het iets anders versnelt."
+   ],
+   "uh": "Fijn verdeelde brandstof in lucht: kans op explosie.",
+   "ctx": "In meelfabrieken zijn strenge regels tegen vonken. Een zak meel kun je met een aansteker moeilijk laten branden. Maar als er een wolk fijn meelstof in de lucht van een silo hangt, kan één vonk een zware explosie veroorzaken."
+  },
+  {
+   "v": "Wat doet een hogere temperatuur met een reactie?",
+   "o": [
+    "De activeringsenergie stijgt",
+    "Die verloopt langzamer",
+    "Er ontstaat meer product",
+    "Die verloopt sneller"
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 2,
+   "u": "Hogere temperatuur: deeltjes bewegen sneller, botsen vaker en harder.",
+   "uo": [
+    "Koos je activeringsenergie? De drempel blijft gelijk. Er zijn alleen meer deeltjes die hem halen.",
+    "Koos je langzamer? Dat geldt bij afkoelen. Daarom bewaar je eten in de koelkast: dan bederft het langzamer.",
+    "Koos je meer product? De hoeveelheid product hangt af van de hoeveelheid beginstof. Temperatuur bepaalt vooral hoe snel je er bent.",
+    "Klopt: bij een hogere temperatuur bewegen deeltjes sneller. Ze botsen vaker en een groter deel van de botsingen heeft genoeg energie."
+   ],
+   "uh": "Warmer = sneller."
+  },
+  {
+   "v": "Waarom bederft melk in de koelkast langzamer dan op het aanrecht?",
+   "o": [
+    "Kou doodt alle bacteriën",
+    "In de koelkast is geen zuurstof",
+    "Bij lage temperatuur verlopen de afbraakreacties trager",
+    "Licht versnelt het bederf en in een dichte koelkast is het altijd donker"
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 2,
+   "u": "Lage temperatuur: minder effectieve botsingen, dus tragere reacties (ook in bacteriën).",
+   "uo": [
+    "Koos je bacteriën doden? Kou doodt de meeste bacteriën niet; ze werken alleen langzamer. Haal je de melk eruit, dan gaan ze weer sneller.",
+    "Koos je geen zuurstof? In een koelkast zit gewoon lucht. Het verschil zit in de temperatuur.",
+    "Klopt: bij 4 °C bewegen deeltjes langzamer en hebben minder botsingen genoeg energie. De reacties die melk zuur maken, gaan veel langzamer.",
+    "Koos je licht? Licht kan sommige stoffen aantasten, maar het belangrijkste effect van een koelkast is de lage temperatuur."
+   ],
+   "uh": "Koelen vertraagt, verwarmen versnelt."
+  },
+  {
+   "v": "Welke conclusie trek je uit de meting?",
+   "o": [
+    "Bij 40 °C ontstaat meer gas, omdat de deeltjes harder botsen",
+    "Bij 40 °C verloopt de reactie sneller; er ontstaat evenveel gas",
+    "Bij 20 °C ontstaat meer gas, omdat de reactie langer duurt",
+    "De temperatuur heeft geen invloed op deze reactie"
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 2,
+   "u": "Hogere temperatuur: steilere lijn (sneller), maar dezelfde eindwaarde (zelfde hoeveelheid beginstof).",
+   "uo": [
+    "Koos je meer gas bij 40 °C? De eindwaarde is in beide proeven 60 mL. Harder botsen maakt de reactie sneller, niet groter.",
+    "Klopt: bij 40 °C is de lijn in het begin steiler, dus de reactie gaat sneller. Beide proeven eindigen op 60 mL, omdat er evenveel marmer en zuur in zat.",
+    "Koos je meer gas bij 20 °C? Ook daar eindigt het op 60 mL. Langer duren betekent niet meer product.",
+    "Koos je geen invloed? De lijnen hebben duidelijk een andere helling. Bij 40 °C is na 2 minuten al veel meer gas ontstaan."
+   ],
+   "uh": "Helling = snelheid. Eindwaarde = hoeveelheid beginstof.",
+   "ctx": "Twee proeven met evenveel marmerkorrels in evenveel zoutzuur. Bij 20 °C ontstaat na 2 minuten 21 mL CO₂, bij 40 °C al 45 mL. Na 15 minuten is in beide proeven 60 mL gas ontstaan en neemt het volume niet meer toe."
+  },
+  {
+   "v": "Welke uitspraak over een katalysator klopt?",
+   "o": [
+    "Hij versnelt de reactie en wordt zelf niet verbruikt",
+    "Hij wordt bij de reactie opgebruikt",
+    "Hij levert de energie voor de reactie",
+    "Hij verandert welke producten er bij de reactie ontstaan"
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 3,
+   "u": "Een katalysator versnelt een reactie en is na afloop onveranderd aanwezig.",
+   "uo": [
+    "Klopt: een katalysator doet tijdelijk mee, maar komt aan het eind weer vrij. Daarom is er maar weinig van nodig.",
+    "Koos je opgebruikt? Dan zou het een beginstof zijn. Een katalysator kun je na afloop terugwinnen; daarom staat hij niet in de vergelijking.",
+    "Koos je energie leveren? Een katalysator levert geen energie. Hij biedt een route met een lagere activeringsenergie.",
+    "Koos je eindproduct? De producten blijven dezelfde. Ze ontstaan alleen sneller."
+   ],
+   "uh": "Katalysator: sneller, niet verbruikt, zelfde producten."
+  },
+  {
+   "v": "Hoe versnelt een katalysator een reactie?",
+   "o": [
+    "Hij maakt de reactie exotherm",
+    "Hij verhoogt de temperatuur",
+    "Hij verhoogt de concentratie van de beginstoffen",
+    "Hij verlaagt de activeringsenergie"
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 3,
+   "u": "Via een andere route met een lagere drempel; meer botsingen zijn dan effectief.",
+   "uo": [
+    "Koos je exotherm maken? Het energie-effect ΔE blijft gelijk. Alleen de drempel wordt lager.",
+    "Koos je temperatuur? Een katalysator werkt juist zonder dat je hoeft te verwarmen. Dat is precies zijn voordeel.",
+    "Koos je concentratie? Er komen geen extra deeltjes beginstof bij. Een katalysator maakt de botsingen die er zijn vaker effectief.",
+    "Klopt: met een katalysator verloopt de reactie via tussenstappen met een lagere drempel. Daardoor zijn bij dezelfde temperatuur meer botsingen effectief."
+   ],
+   "uh": "Katalysator = lagere berg."
+  },
+  {
+   "v": "Welke waarneming toont aan dat bruinsteen een katalysator is?",
+   "o": [
+    "De oplossing wordt warm",
+    "Er ontstaat zuurstof die een gloeiende houtspaander laat opvlammen",
+    "Na afloop weegt het bruinsteen nog steeds 0,50 g",
+    "De reactie stopt als al het waterstofperoxide op is"
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 3,
+   "u": "Een katalysator wordt niet verbruikt: de massa bruinsteen is na afloop gelijk.",
+   "uo": [
+    "Koos je warm? Dat laat zien dat de reactie exotherm is. Het zegt niets over de rol van het bruinsteen.",
+    "Koos je zuurstof? Dat laat zien welk product er ontstaat, niet dat bruinsteen een katalysator is. Zuurstof ontstaat ook zonder bruinsteen, alleen heel langzaam.",
+    "Klopt: het bruinsteen versnelde de reactie, maar na afloop is er nog precies evenveel van. Het is dus niet verbruikt: een katalysator.",
+    "Koos je \"stopt als het op is\"? Dat geldt voor elke reactie: zonder beginstof geen reactie. Het bewijst niet dat bruinsteen niet verbruikt is."
+   ],
+   "uh": "Bewijs voor een katalysator: hij is er na afloop nog onveranderd.",
+   "ctx": "Waterstofperoxide ontleedt heel langzaam in water en zuurstof: 2 H₂O₂ → 2 H₂O + O₂. Een leerling doet 0,50 g bruinsteen (MnO₂) in de oplossing: er ontstaan meteen veel belletjes en de oplossing wordt warm. Na afloop filtreert, droogt en weegt ze het bruinsteen."
+  },
+  {
+   "v": "Waarom zit er in de uitlaat van een auto een katalysator van platina?",
+   "o": [
+    "Om de motor meer vermogen te geven door de uitlaatgassen sneller af te voeren",
+    "Om giftige gassen snel om te zetten in minder schadelijke stoffen",
+    "Om de uitlaatgassen af te koelen",
+    "Om het platina te laten verbranden"
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 3,
+   "u": "De driewegkatalysator versnelt de omzetting van CO, NOₓ en onverbrande brandstof in CO₂, N₂ en H₂O.",
+   "uo": [
+    "Koos je meer vermogen? De katalysator zit achter de motor in de uitlaat. Hij verandert niets aan de verbranding in de cilinders.",
+    "Klopt: zonder katalysator verlopen die reacties te langzaam in de korte tijd dat het gas door de uitlaat stroomt. Platina versnelt ze, zonder zelf te verdwijnen.",
+    "Koos je afkoelen? Een katalysator werkt juist het best als hij heet is. Hij is er om reacties te versnellen.",
+    "Koos je platina verbranden? Een katalysator wordt niet verbruikt. Daarom gaat de katalysator in een auto jarenlang mee."
+   ],
+   "uh": "Katalysator in de auto: schadelijke gassen sneller omzetten.",
+   "ctx": "In de uitlaat van een benzineauto zit een honingraat bedekt met een dun laagje platina en rodium. Het hete uitlaatgas stroomt er in een fractie van een seconde doorheen. Er komen koolstofmono-oxide, stikstofoxiden en onverbrande benzine in, en er komen vooral CO₂, N₂ en waterdamp uit."
+  },
+  {
+   "v": "Hoe kun je de snelheid van marmer met zoutzuur meten?",
+   "o": [
+    "Het gevormde gasvolume per minuut meten",
+    "De kleur van de oplossing meten",
+    "Kijken of er een neerslag ontstaat",
+    "De pH één keer aan het eind meten"
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 4,
+   "u": "Bij deze reactie ontstaat CO₂: meet het gasvolume (of de massa-afname) per tijdseenheid.",
+   "uo": [
+    "Klopt: elke minuut lees je af hoeveel mL CO₂ er is ontstaan, bijvoorbeeld in een gasspuit. Hoe meer gas per minuut, hoe sneller de reactie.",
+    "Koos je kleur? Bij deze reactie verandert de kleur niet merkbaar. Je moet iets meten dat verandert, zoals het gas dat ontstaat.",
+    "Koos je neerslag? Er ontstaat geen neerslag; calciumchloride blijft opgelost. Het gas is hier het meetbare product.",
+    "Koos je pH aan het eind? Eén meting aan het eind zegt niets over de snelheid. Daarvoor moet je meten hoe iets verandert in de tijd."
+   ],
+   "uh": "Snelheid meten = een verandering per tijdseenheid meten."
+  },
+  {
+   "v": "Wat zegt de helling van een grafiek van gasvolume tegen de tijd?",
+   "o": [
+    "Hoeveel katalysator er is",
+    "Hoeveel gas er in totaal ontstaat",
+    "Welke temperatuur er is",
+    "Hoe snel de reactie op dat moment verloopt"
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 4,
+   "u": "Steile lijn = snelle reactie; vlakke lijn = de reactie is (bijna) klaar.",
+   "uo": [
+    "Koos je katalysator? Die kun je niet uit de grafiek aflezen. Een katalysator maakt de lijn steiler, maar de helling zelf is de snelheid.",
+    "Koos je totaal? De totale hoeveelheid lees je af aan de eindwaarde, waar de lijn horizontaal wordt. De helling zegt hoe snel je daar komt.",
+    "Koos je temperatuur? Die lees je niet af uit deze grafiek. Wel kan een hogere temperatuur de helling steiler maken.",
+    "Klopt: een steile helling betekent veel gas per minuut, dus een snelle reactie. Wordt de lijn horizontaal, dan is een beginstof op."
+   ],
+   "uh": "Helling = snelheid, eindwaarde = totale opbrengst."
+  },
+  {
+   "v": "Waarom wordt de lijn na een tijdje horizontaal?",
+   "o": [
+    "De temperatuur is gedaald tot 0 °C",
+    "De katalysator is verbruikt",
+    "Een van de beginstoffen is op",
+    "Het gas lost weer op in de vloeistof"
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 4,
+   "u": "Horizontaal = er ontstaat geen gas meer: de beperkende beginstof is op.",
+   "uo": [
+    "Koos je temperatuur? De proef gebeurt bij kamertemperatuur. Die daalt niet zomaar tot 0 °C.",
+    "Koos je katalysator? In deze proef zit geen katalysator, en een katalysator wordt bovendien niet verbruikt.",
+    "Klopt: als het zuur of het marmer op is, ontstaat er geen gas meer. Het volume blijft dan gelijk en de lijn wordt horizontaal.",
+    "Koos je gas lost op? Een klein beetje CO₂ lost op, maar dat verklaart niet dat het volume precies blijft staan. Er ontstaat simpelweg geen nieuw gas meer."
+   ],
+   "uh": "Horizontaal = klaar: beperkende stof op.",
+   "ctx": "Een leerling meet elke minuut het volume CO₂ dat ontstaat als 1,0 g marmerkorrels reageert met 50 mL zoutzuur. Na 8 minuten staat de gasspuit op 60 mL en daarna verandert de stand niet meer, ook niet na een kwartier."
+  },
+  {
+   "v": "Wat gebeurt er met de grafiek als je dezelfde proef doet met marmerpoeder in plaats van korrels?",
+   "o": [
+    "De lijn eindigt op een hoger volume",
+    "De lijn is in het begin steiler en eindigt op hetzelfde volume",
+    "De lijn is minder steil",
+    "De lijn is in het begin steiler, maar eindigt op een lager volume"
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 4,
+   "u": "Poeder: sneller (steiler), maar evenveel stof dus dezelfde eindwaarde.",
+   "uo": [
+    "Koos je hoger volume? De hoeveelheid gas hangt af van de hoeveelheid beginstof. Die is gelijk, dus het eindvolume ook.",
+    "Klopt: poeder heeft een groter oppervlak, dus de reactie gaat sneller en de lijn is steiler. Er is evenveel marmer en zuur, dus er ontstaat evenveel gas.",
+    "Koos je minder steil? Poeder reageert juist sneller door het grotere oppervlak. De lijn wordt steiler.",
+    "Koos je lager volume? Steiler klopt, maar het eindvolume blijft gelijk. Er is evenveel marmer om te reageren."
+   ],
+   "uh": "Verdelingsgraad verandert de helling, niet de eindwaarde.",
+   "ctx": "In de eerste proef reageert 1,0 g marmerkorrels met 50 mL zoutzuur; er ontstaat na 8 minuten 60 mL CO₂. In de tweede proef gebruikt de leerling 1,0 g fijn marmerpoeder en verder alles hetzelfde."
+  },
+  {
+   "v": "Waarom snijd je aardappels in kleine stukjes als je ze sneller gaar wilt hebben?",
+   "o": [
+    "Samen hebben ze meer oppervlak, dus de warmte is sneller overal",
+    "Kleine stukjes bevatten minder zetmeel per gram",
+    "Het water kookt met kleine stukjes erin bij een hogere temperatuur",
+    "Kleine stukjes zijn een katalysator"
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 5,
+   "u": "Groter oppervlak: warmte bereikt het binnenste sneller, dus de reacties bij het garen verlopen eerder overal.",
+   "uo": [
+    "Klopt: in kleine stukjes zit het binnenste dichter bij het kookwater. De warmte komt sneller overal en de veranderingen in de aardappel verlopen eerder.",
+    "Koos je minder zetmeel per gram? Het is dezelfde aardappel, dus per gram is de samenstelling gelijk.",
+    "Koos je hogere kooktemperatuur? Water kookt bij 100 °C, of je nu grote of kleine stukken gebruikt.",
+    "Koos je katalysator? De aardappel verandert zelf; hij versnelt niets anders. Het verschil zit in het oppervlak."
+   ],
+   "uh": "Klein snijden = meer oppervlak = sneller."
+  },
+  {
+   "v": "Waarom werkt een enzym in je maag niet meer als het eiwit gekookt is geweest?",
+   "o": [
+    "Koken maakt het enzym tot een andere katalysator",
+    "Het enzym is opgebruikt door eerdere reacties",
+    "Het enzym werkt alleen bij lage temperatuur",
+    "Door hitte verandert de vorm van het enzym blijvend"
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 5,
+   "u": "Enzymen zijn eiwitten; door hitte denatureren ze en verliezen ze hun werking.",
+   "uo": [
+    "Koos je andere katalysator? Een gedenatureerd enzym is geen katalysator meer. Het verliest zijn werking volledig.",
+    "Koos je opgebruikt? Een enzym is een katalysator en wordt niet verbruikt. Het stopt omdat de vorm kapot is.",
+    "Koos je alleen bij lage temperatuur? Enzymen hebben een optimumtemperatuur, rond 37 °C bij mensen. Ze werken prima bij lichaamstemperatuur, maar niet na koken.",
+    "Klopt: een enzym is een eiwit met een precieze vorm. Bij hoge temperatuur verandert die vorm blijvend (denaturatie) en past het substraat er niet meer in."
+   ],
+   "uh": "Enzym = katalysator die kapot gaat door hitte."
+  },
+  {
+   "v": "Welke maatregel maakt de reactie in de fabriek sneller zonder dat er meer grondstof nodig is?",
+   "o": [
+    "De reactor vergroten zonder iets anders te veranderen",
+    "Meer reactieproduct toevoegen",
+    "De temperatuur verhogen en een katalysator gebruiken",
+    "Het reactiemengsel verdunnen met water"
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 5,
+   "u": "Temperatuur en katalysator versnellen de reactie; de hoeveelheid grondstof blijft gelijk.",
+   "uo": [
+    "Koos je een grotere reactor? Bij dezelfde hoeveelheden wordt de concentratie dan lager, en dat maakt de reactie juist langzamer.",
+    "Koos je meer product? Een reactieproduct toevoegen versnelt de omzetting van de beginstoffen niet. Bij een evenwicht werkt het zelfs tegen.",
+    "Klopt: bij een hogere temperatuur en met een katalysator zijn meer botsingen effectief. Je krijgt hetzelfde product uit dezelfde grondstof, alleen sneller.",
+    "Koos je verdunnen? Een lagere concentratie betekent minder botsingen per seconde. De reactie wordt langzamer."
+   ],
+   "uh": "Sneller: warmer, geconcentreerder, fijner verdeeld of met katalysator.",
+   "ctx": "Een fabriek maakt een geurstof uit twee vloeistoffen. De reactie gaat bij kamertemperatuur zo langzaam dat een partij dagen duurt. De fabriek wil sneller produceren, maar wil niet meer van de dure grondstoffen gebruiken."
+  },
+  {
+   "v": "Wat is de activeringsenergie?",
+   "o": [
+    "De energie die vrijkomt als de reactie klaar is",
+    "De minimale energie die een botsing nodig heeft voor een reactie",
+    "De warmte die je moet toevoegen om een vaste stof te laten smelten",
+    "De energie die een katalysator levert"
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 0,
+   "u": "Activeringsenergie = de drempel die deeltjes bij een botsing moeten halen.",
+   "uo": [
+    "Koos je vrijkomende energie? Dat is het energie-effect ΔE. De activeringsenergie is de drempel aan het begin.",
+    "Klopt: alleen botsingen met minstens deze energie kunnen bindingen breken en tot een reactie leiden.",
+    "Koos je smelten? Smelten is een faseovergang. De activeringsenergie hoort bij een chemische reactie.",
+    "Koos je katalysator? Een katalysator levert geen energie; hij verlaagt de drempel."
+   ],
+   "uh": "Activeringsenergie = drempel."
+  },
+  {
+   "v": "Twee gassen worden in een kleiner vat geperst bij dezelfde temperatuur. Wat gebeurt er met de reactiesnelheid?",
+   "o": [
+    "Die neemt toe, omdat de deeltjes dichter op elkaar zitten en vaker botsen",
+    "Die neemt af, omdat de deeltjes minder ruimte hebben om te bewegen",
+    "Die blijft gelijk, omdat de temperatuur niet verandert",
+    "Die neemt af, omdat de druk de botsingen afremt"
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 0,
+   "u": "Kleiner volume = hogere concentratie van de gassen = vaker botsen.",
+   "uo": [
+    "Klopt: hetzelfde aantal deeltjes in minder ruimte betekent een hogere concentratie. Ze botsen vaker en de reactie gaat sneller.",
+    "Koos je minder ruimte? De deeltjes bewegen even snel, maar raken elkaar vaker. Dat maakt de reactie sneller.",
+    "Koos je gelijk? De temperatuur bepaalt hoe hard de deeltjes botsen. Hoe vaak ze botsen hangt ook af van de concentratie, en die stijgt.",
+    "Koos je afremmen? Druk remt niets af. Hogere druk betekent juist dat de deeltjes dichter op elkaar zitten."
+   ],
+   "uh": "Gas samenpersen = hogere concentratie."
+  },
+  {
+   "v": "Waarom heeft een kleine temperatuurstijging vaak een groot effect op de reactiesnelheid?",
+   "o": [
+    "De producten worden sneller afgevoerd",
+    "De activeringsenergie daalt bij elke graad",
+    "Het aantal deeltjes in het mengsel verdubbelt",
+    "Het aantal deeltjes boven de activeringsenergie stijgt sterk"
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 2,
+   "u": "Bij hogere temperatuur verschuift de energieverdeling; het deel boven de drempel groeit sterk.",
+   "uo": [
+    "Koos je afvoeren? Waar de producten blijven, verklaart niet waarom de botsingen vaker effectief zijn.",
+    "Koos je drempel daalt? De activeringsenergie hoort bij de reactie en blijft gelijk. Alleen een katalysator verlaagt hem.",
+    "Koos je meer deeltjes? Door verwarmen komen er geen deeltjes bij. Ze krijgen alleen meer energie.",
+    "Klopt: de meeste deeltjes zitten ver onder de drempel. Een beetje warmer maakt het staartje boven de activeringsenergie veel groter. Vuistregel: 10 °C warmer is ongeveer twee keer zo snel."
+   ],
+   "uh": "Warmer: veel meer deeltjes boven de drempel."
+  },
+  {
+   "v": "Hoe lang duurt de reactie ongeveer bij 40 °C, als je de vuistregel gebruikt?",
+   "o": [
+    "Ongeveer 4 minuten",
+    "Ongeveer 16 minuten",
+    "Ongeveer 8 minuten",
+    "Ongeveer 32 minuten"
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 2,
+   "u": "Elke 10 °C warmer ongeveer twee keer zo snel: 20 → 30 °C halveert naar 16 min, 30 → 40 °C naar 8 min.",
+   "uo": [
+    "Koos je 4 minuten? Dan heb je drie keer gehalveerd. Van 20 naar 40 °C zijn het twee stappen van 10 °C.",
+    "Koos je 16 minuten? Dat hoort bij 30 °C. Bij 40 °C komt er nog een verdubbeling van de snelheid bij.",
+    "Klopt: van 20 naar 40 °C is twee keer 10 °C erbij. De reactie gaat dan ongeveer 2 × 2 = 4 keer zo snel: 32 / 4 = 8 minuten.",
+    "Koos je 32 minuten? Dat is de tijd bij 20 °C. Warmer maakt de reactie sneller, dus de tijd wordt korter."
+   ],
+   "uh": "Vuistregel: +10 °C ≈ twee keer zo snel.",
+   "ctx": "Een leerling lost een bruistablet op in water van 20 °C. Hij laat een zwakkere tablet, die heel langzaam reageert, 32 minuten bruisen voordat hij helemaal op is. Zijn docent noemt de vuistregel: elke 10 °C warmer gaat een reactie ongeveer twee keer zo snel. Hij herhaalt de proef in water van 40 °C."
+  },
+  {
+   "v": "Waarom vriezen we vlees in als we het lang willen bewaren?",
+   "o": [
+    "Bevroren vlees bevat geen water meer",
+    "Bij lage temperatuur verlopen de reacties van bederf heel langzaam",
+    "Kou is een katalysator voor het bewaren",
+    "In een dichte vriezer is geen zuurstof, dus kan het vlees niet oxideren"
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 5,
+   "u": "Bij −18 °C verlopen bederfreacties en de groei van bacteriën heel traag.",
+   "uo": [
+    "Koos je geen water? Het water is nog steeds aanwezig, alleen bevroren. Het belangrijkste effect is de lage temperatuur.",
+    "Klopt: in de vriezer bewegen deeltjes zo langzaam dat er bijna geen effectieve botsingen zijn. Bederf gaat dan maanden duren in plaats van dagen.",
+    "Koos je katalysator? Een katalysator versnelt een reactie. Kou vertraagt juist.",
+    "Koos je geen zuurstof? In een vriezer zit gewone lucht. Het verschil zit in de temperatuur."
+   ],
+   "uh": "Kou vertraagt bederf."
+  },
+  {
+   "v": "Welke verklaring past bij het advies van de fabrikant?",
+   "o": [
+    "In warm water verlopen de reacties sneller, dus de vlekken gaan eerder weg",
+    "In warm water ontstaat er meer middel",
+    "Koud water vernietigt de enzymen in het middel",
+    "Warm water verlaagt de activeringsenergie van de reacties die vlekken afbreken"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 5,
+   "u": "Hogere temperatuur versnelt de reacties, maar boven het optimum gaan enzymen kapot.",
+   "uo": [
+    "Klopt: bij 40 °C botsen de deeltjes vaker en harder, en enzymen werken bij die temperatuur goed. Daarboven raken de enzymen hun vorm kwijt, daarom geen 90 °C.",
+    "Koos je meer middel? De hoeveelheid middel hangt af van hoeveel je erin doet, niet van de temperatuur.",
+    "Koos je koud water vernietigt? Kou maakt enzymen trager, maar niet kapot. Hitte is het gevaar.",
+    "Koos je activeringsenergie? Warm water verlaagt de drempel niet; het geeft meer deeltjes genoeg energie om erover te komen. De enzymen verlagen de drempel."
+   ],
+   "uh": "Warmer = sneller, tot de enzymen stuk gaan.",
+   "ctx": "Op een pak wasmiddel met enzymen staat: \"Het beste resultaat bij 30 tot 40 °C. Niet wassen boven 60 °C.\" Een leerling vraagt zich af waarom warm water beter werkt, maar heel heet water niet."
+  },
+  {
+   "v": "Welke proef met zink en zoutzuur verloopt het snelst?",
+   "o": [
+    "Zinkkorrels in 0,5 M zoutzuur",
+    "Zinkkorrels in 2 M zoutzuur",
+    "Zinkpoeder in 0,5 M zoutzuur",
+    "Zinkpoeder in 2 M zoutzuur"
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 1,
+   "u": "Grootste verdelingsgraad én hoogste concentratie geeft de meeste botsingen per seconde.",
+   "uo": [
+    "Koos je korrels in 0,5 M? Dat is juist de langzaamste combinatie: weinig oppervlak en een lage concentratie.",
+    "Koos je korrels in 2 M? De concentratie is goed, maar korrels hebben minder oppervlak dan poeder.",
+    "Koos je poeder in 0,5 M? Het oppervlak is goed, maar er zitten minder zuurdeeltjes per liter.",
+    "Klopt: poeder geeft het grootste oppervlak en 2 M zoutzuur de meeste H⁺-ionen per liter. Beide factoren zorgen voor meer botsingen."
+   ],
+   "uh": "Combineer: fijn verdeeld + geconcentreerd = snelst."
+  }
+ ],
+ "oe": [
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een leerling laat 1,0 g marmerkorrels reageren met 50 mL 1,0 M zoutzuur en meet het volume CO₂: na 2 minuten 21 mL, na 10 minuten 53 mL en uiteindelijk 60 mL. Daarna herhaalt ze de proef met 1,0 g marmerpoeder.",
+   "v": "Leg met het botsende-deeltjesmodel uit hoe de grafiek van de tweede proef verschilt van die van de eerste.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Poeder heeft een groter oppervlak (grotere verdelingsgraad), dus er botsen per seconde meer H⁺-ionen met het marmer: meer effectieve botsingen (1p). De lijn is daardoor in het begin steiler (1p). Er is evenveel marmer en zuur, dus de eindwaarde blijft 60 mL (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Waterstofperoxide ontleedt: 2 H₂O₂ → 2 H₂O + O₂. Zonder hulpstof gaat dat heel langzaam. Met 0,50 g bruinsteen ontstaan direct veel gasbelletjes. Na afloop is er nog 0,50 g bruinsteen.",
+   "v": "Leg uit dat bruinsteen hier een katalysator is en beschrijf wat bruinsteen doet met de activeringsenergie.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Bruinsteen versnelt de reactie en is na afloop onveranderd aanwezig (0,50 g), dus het is niet verbruikt: een katalysator (1p). Het zorgt voor een route met een lagere activeringsenergie, zodat meer botsingen effectief zijn (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een reactie in een fabriek duurt bij 30 °C 12 uur. De fabriek wil de temperatuur verhogen naar 60 °C. Gebruik de vuistregel dat een reactie bij elke 10 °C temperatuurstijging ongeveer twee keer zo snel gaat.",
+   "v": "Bereken hoe lang de reactie bij 60 °C ongeveer duurt en leg uit waarom een hogere temperatuur de reactie versnelt.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "30 °C erbij = 3 verdubbelingen: 2³ = 8 keer zo snel, dus 12 / 8 = 1,5 uur (1p). Bij hogere temperatuur bewegen de deeltjes sneller: ze botsen vaker en een groter deel van de botsingen heeft minstens de activeringsenergie (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "In een meelfabriek hangt boven de maalinstallatie soms een wolk fijn meelstof. Er geldt een streng verbod op open vuur en er zijn speciale lampen die geen vonken geven. Een zak meel kun je met een aansteker nauwelijks laten branden.",
+   "v": "Leg uit waarom een wolk meelstof kan ontploffen terwijl een zak meel dat niet doet.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "In de wolk is het meel heel fijn verdeeld: groot oppervlak en elk korreltje is omringd door zuurstof (1p). Daardoor zijn er enorm veel effectieve botsingen tegelijk en verbrandt alles in een fractie van een seconde; de warmte en het gas komen ineens vrij: een explosie (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Op een pak wasmiddel staat: \"Bevat enzymen. Beste resultaat bij 30 tot 40 °C. Niet boven 60 °C.\" Enzymen zijn eiwitten die vlekken van eiwit en vet afbreken.",
+   "v": "Leg uit waarom het wasmiddel bij 40 °C beter werkt dan bij 15 °C, en waarom het boven 60 °C slechter werkt.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Bij 40 °C bewegen de deeltjes sneller en zijn meer botsingen effectief, dus de afbraak gaat sneller dan bij 15 °C (1p). Boven 60 °C denatureren de enzymen: hun vorm verandert blijvend en ze werken niet meer als katalysator (1p)."
+  }
+ ]
+}

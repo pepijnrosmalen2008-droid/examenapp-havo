@@ -1739,6 +1739,28 @@ var VAKKEN = [
       "nOe": 5,
       "nBeg": 11,
       "hasSam": true
+     },
+     {
+      "id": "C6",
+      "lo": "sk.C.6",
+      "gs": 2,
+      "naam": "Reactiesnelheid en katalyse",
+      "beschrijving": "Je verklaart met het botsende-deeltjesmodel hoe concentratie, verdelingsgraad, temperatuur en een katalysator de reactiesnelheid beïnvloeden, en je leest snelheid af uit een grafiek van gasvolume tegen de tijd.",
+      "ceStatus": "CE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Het botsende-deeltjesmodel",
+       "Concentratie en verdelingsgraad",
+       "Temperatuur",
+       "Katalysator",
+       "Snelheid meten en grafieken lezen",
+       "Toepassingen in huis en industrie"
+      ],
+      "nSv": 28,
+      "nOe": 5,
+      "nBeg": 11,
+      "hasSam": true
      }
     ]
    },
