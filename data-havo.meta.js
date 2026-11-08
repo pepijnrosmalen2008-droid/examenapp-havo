@@ -2576,7 +2576,31 @@ var VAKKEN = [
     "nSv": 178,
     "nOe": 11,
     "nBeg": 38,
-    "hasSam": true
+    "hasSam": true,
+    "leerdoelen": [
+     {
+      "id": "E1",
+      "lo": "na.E.1",
+      "gs": 2,
+      "naam": "Soorten ioniserende straling",
+      "beschrijving": "Je beschrijft de bouw van een atoomkern met massagetal en atoomnummer, legt uit wat ioniserende straling is, onderscheidt alfa-, bèta- en gammastraling naar aard, lading, ioniserend en doordringend vermogen, en bepaalt met een absorptieproef welke straling een bron uitzendt.",
+      "ceStatus": "CE",
+      "binas": "25",
+      "val": "",
+      "onderwerpen": [
+       "Bouw van de atoomkern",
+       "Wat ioniserende straling is",
+       "Alfa, bèta en gamma",
+       "Doordringend vermogen",
+       "Ioniserend vermogen en schade",
+       "Straling herkennen met metingen"
+      ],
+      "nSv": 28,
+      "nOe": 5,
+      "nBeg": 11,
+      "hasSam": true
+     }
+    ]
    }
   ]
  },

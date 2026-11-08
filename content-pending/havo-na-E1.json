@@ -1,0 +1,689 @@
+{
+ "id": "E1",
+ "lo": "na.E.1",
+ "gs": 2,
+ "naam": "Soorten ioniserende straling",
+ "beschrijving": "Je beschrijft de bouw van een atoomkern met massagetal en atoomnummer, legt uit wat ioniserende straling is, onderscheidt alfa-, bèta- en gammastraling naar aard, lading, ioniserend en doordringend vermogen, en bepaalt met een absorptieproef welke straling een bron uitzendt.",
+ "ceStatus": "CE",
+ "binas": "25",
+ "val": "",
+ "onderwerpen": [
+  "Bouw van de atoomkern",
+  "Wat ioniserende straling is",
+  "Alfa, bèta en gamma",
+  "Doordringend vermogen",
+  "Ioniserend vermogen en schade",
+  "Straling herkennen met metingen"
+ ],
+ "sam": "Een kern bestaat uit protonen (Z) en neutronen (A − Z); isotopen hebben dezelfde Z en een andere A. Instabiele kernen zenden ioniserende straling uit: die slaat elektronen los. Alfa = heliumkern (+2), stopt bij papier, ioniseert het sterkst. Bèta = elektron uit de kern (−1), stopt bij een paar mm aluminium. Gamma = foton zonder lading, wordt door lood alleen zwakker. Groot ioniserend vermogen hoort bij klein doordringend vermogen. Met een geigerteller en een absorptieproef (achtergrond aftrekken) bepaal je de soort straling.",
+ "begrippen": [
+  {
+   "t": "Atoomkern",
+   "d": "Kern van een atoom, opgebouwd uit protonen en neutronen."
+  },
+  {
+   "t": "Isotoop",
+   "d": "Atoomsoort met hetzelfde aantal protonen maar een ander aantal neutronen."
+  },
+  {
+   "t": "Radioactief",
+   "d": "Een stof met instabiele kernen die vanzelf vervallen en daarbij straling uitzenden."
+  },
+  {
+   "t": "Ioniserende straling",
+   "d": "Straling met genoeg energie om elektronen uit atomen los te slaan."
+  },
+  {
+   "t": "Alfastraling",
+   "d": "Straling van heliumkernen (2 protonen, 2 neutronen, lading +2); papier houdt haar tegen."
+  },
+  {
+   "t": "Bètastraling",
+   "d": "Straling van snelle elektronen uit de kern (lading −1); een paar mm aluminium houdt haar tegen."
+  },
+  {
+   "t": "Gammastraling",
+   "d": "Elektromagnetische straling met veel energie, zonder lading of massa; lood maakt haar zwakker."
+  },
+  {
+   "t": "Doordringend vermogen",
+   "d": "Hoe ver straling door een stof komt."
+  },
+  {
+   "t": "Ioniserend vermogen",
+   "d": "Hoeveel ionen straling per afstand maakt; groot bij alfa, klein bij gamma."
+  },
+  {
+   "t": "Achtergrondstraling",
+   "d": "Straling die er altijd is, vooral van radon, gesteenten, kosmische straling en voedsel."
+  },
+  {
+   "t": "Geigerteller",
+   "d": "Meetapparaat dat ioniserende straling telt; elke ionisatie in de buis geeft een tik."
+  }
+ ],
+ "sv": [
+  {
+   "v": "Waaruit bestaat een atoomkern?",
+   "o": [
+    "Alleen protonen",
+    "Protonen en elektronen",
+    "Protonen en neutronen",
+    "Neutronen en elektronen"
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 0,
+   "u": "Kern = protonen + neutronen (nucleonen); elektronen eromheen.",
+   "uo": [
+    "Koos je alleen protonen? Alleen waterstof-1 heeft een kern van één proton. Alle andere kernen bevatten ook neutronen, die de kern bij elkaar helpen houden.",
+    "Koos je protonen en elektronen? De elektronen zitten niet in de kern, maar in de wolk eromheen. In de kern zitten naast protonen ook neutronen.",
+    "Klopt: de kern bestaat uit positieve protonen en neutrale neutronen. Samen heten ze nucleonen. De elektronen bewegen in de elektronenwolk om de kern heen.",
+    "Koos je neutronen en elektronen? Zonder protonen heeft een kern geen positieve lading, en dan is het geen element. Elektronen horen buiten de kern."
+   ],
+   "uh": "Kern: p + n."
+  },
+  {
+   "v": "Hoeveel neutronen heeft een kern van uraan-238 (Z = 92)?",
+   "o": [
+    "92",
+    "146",
+    "238",
+    "330"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 0,
+   "u": "N = A - Z = 238 - 92.",
+   "uo": [
+    "Koos je 92? Dat is het aantal protonen, het atoomnummer. Het aantal neutronen is het massagetal min het atoomnummer.",
+    "Klopt: het massagetal 238 is het totaal aantal protonen en neutronen. Uraan heeft 92 protonen, dus 238 - 92 = 146 neutronen.",
+    "Koos je 238? Dat is het massagetal: protonen en neutronen samen. Trek het aantal protonen er nog af.",
+    "Koos je 330? Dan heb je opgeteld in plaats van afgetrokken. Het massagetal is al de som van protonen en neutronen."
+   ],
+   "uh": "N = A - Z."
+  },
+  {
+   "v": "Wat is het verschil tussen koolstof-12 en koolstof-14?",
+   "o": [
+    "Koolstof-14 heeft twee neutronen meer",
+    "Koolstof-14 heeft twee protonen meer",
+    "Koolstof-14 heeft twee elektronen meer",
+    "Het zijn verschillende elementen"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 0,
+   "u": "Isotopen: zelfde Z, ander aantal neutronen.",
+   "uo": [
+    "Klopt: beide hebben 6 protonen, anders waren het geen koolstofatomen. Koolstof-12 heeft 6 neutronen, koolstof-14 heeft er 8. Zulke varianten heten isotopen.",
+    "Koos je twee protonen meer? Met 8 protonen zou het zuurstof zijn. Het aantal protonen bepaalt het element en is bij isotopen gelijk.",
+    "Koos je elektronen? Een neutraal atoom heeft evenveel elektronen als protonen, dus bij beide 6. Het massagetal gaat over de kern.",
+    "Koos je verschillende elementen? Ze hebben hetzelfde atoomnummer, 6, en zijn dus allebei koolstof. Ze verschillen alleen in massa."
+   ],
+   "uh": "Isotopen: andere N, zelfde Z.",
+   "ctx": "In de atmosfeer ontstaat voortdurend een kleine hoeveelheid koolstof-14. Planten nemen het op via CO₂, samen met het veel vaker voorkomende koolstof-12. Archeologen gebruiken de verhouding tussen die twee om de ouderdom van hout en botten te bepalen."
+  },
+  {
+   "v": "Hoe noteer je een kern met 6 protonen en 8 neutronen?",
+   "o": [
+    "¹⁴₈O",
+    "⁶₁₄C",
+    "⁸₆C",
+    "¹⁴₆C"
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 0,
+   "u": "Boven: A = 14, onder: Z = 6.",
+   "uo": [
+    "Koos je ¹⁴₈O? Het element hangt af van het aantal protonen. Met 6 protonen is het koolstof, niet zuurstof.",
+    "Koos je ⁶₁₄C? Dan staan de getallen omgedraaid. Het massagetal, het grootste getal, staat altijd boven.",
+    "Koos je ⁸₆C? Dan heb je alleen de neutronen boven gezet. Boven staat het totaal aantal nucleonen: protonen plus neutronen.",
+    "Klopt: linksboven staat het massagetal A = 6 + 8 = 14, linksonder het atoomnummer Z = 6. Bij Z = 6 hoort het symbool C."
+   ],
+   "uh": "Massagetal boven, atoomnummer onder."
+  },
+  {
+   "v": "Wat doet ioniserende straling met een atoom dat ze raakt?",
+   "o": [
+    "Ze splitst de kern van het atoom",
+    "Ze maakt het atoom radioactief",
+    "Ze maakt een elektron los",
+    "Ze maakt het atoom warm en verder niets"
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 1,
+   "u": "Ioniseren = elektron losmaken → ion.",
+   "uo": [
+    "Koos je de kern splitsen? Daar is veel meer nodig. Ioniserende straling werkt op de elektronen van een atoom, niet op de kern.",
+    "Koos je radioactief maken? Bestraling met alfa, bèta of gamma maakt stoffen niet radioactief. Alleen neutronenstraling kan dat, en dat valt hier buiten.",
+    "Klopt: de straling heeft genoeg energie om een elektron uit een atoom of molecuul te slaan. Er blijft een geladen deeltje over, een ion. In een cel kan dat DNA beschadigen.",
+    "Koos je alleen warm? Er komt wel wat warmte vrij, maar het gevaarlijke is dat er elektronen worden losgemaakt en moleculen kapotgaan."
+   ],
+   "uh": "Ioniseren = elektron los."
+  },
+  {
+   "v": "Waar komt ioniserende straling vandaan bij een radioactieve stof?",
+   "o": [
+    "Uit de elektronen die om de kern draaien",
+    "Uit instabiele kernen",
+    "Uit warmte in de stof",
+    "Uit licht dat op de stof valt"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 1,
+   "u": "Instabiele kern → verval → straling.",
+   "uo": [
+    "Koos je de elektronen? Röntgenstraling kan uit de elektronenwolk komen, maar radioactieve straling komt uit de kern.",
+    "Klopt: een radioactieve stof bevat instabiele kernen. Zo'n kern valt vanzelf uit elkaar of verandert, en zendt daarbij alfa-, bèta- of gammastraling uit.",
+    "Koos je warmte? Een warme stof zendt infrarood uit, en dat is niet ioniserend. Radioactiviteit hangt niet van de temperatuur af.",
+    "Koos je licht? Een radioactieve stof straalt ook in het donker. De straling komt uit de kernen zelf, zonder dat er energie van buiten nodig is."
+   ],
+   "uh": "Radioactiviteit = instabiele kernen."
+  },
+  {
+   "v": "Welke van deze straling is ioniserend?",
+   "o": [
+    "Röntgenstraling",
+    "Radiogolven van wifi",
+    "Zichtbaar licht",
+    "Infrarood"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 1,
+   "u": "Ioniserend: hoge energie per foton (UV-hoog, röntgen, gamma) of α/β.",
+   "uo": [
+    "Klopt: röntgenfotonen hebben genoeg energie om elektronen uit atomen los te maken. Daarom wordt het aantal röntgenfoto's beperkt en draagt een laborant een loodschort.",
+    "Koos je radiogolven? Die hebben een heel lage energie per foton. Ze kunnen een stof een beetje opwarmen, maar geen elektronen losmaken.",
+    "Koos je zichtbaar licht? De energie per foton is daarvoor te klein. Pas vanaf het ultraviolet wordt licht ioniserend.",
+    "Koos je infrarood? Dat voel je als warmte, maar het kan geen elektronen losmaken. Het is niet ioniserend."
+   ],
+   "uh": "Röntgen, gamma = ioniserend.",
+   "ctx": "Een tandarts maakt een foto van je kies. Ze gaat de kamer uit en jij krijgt een loodschort om. Haar collega legt uit dat sommige soorten straling gevaarlijk zijn en andere niet, ook al heten ze allemaal straling, zoals de wifi in de wachtkamer en de warmte van de verwarming."
+  },
+  {
+   "v": "Waar komt het grootste deel van de achtergrondstraling in Nederland vandaan?",
+   "o": [
+    "Alleen van medische röntgenfoto's",
+    "Kerncentrales in Nederland en België",
+    "Mobiele telefoons en wifi",
+    "Natuurlijke bronnen, zoals radon"
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 1,
+   "u": "Achtergrond: vooral natuurlijk (radon, bodem, kosmisch, voedsel).",
+   "uo": [
+    "Koos je alleen röntgenfoto's? Medische straling telt wel mee, maar de natuurlijke achtergrond is er altijd, ook als je nooit naar het ziekenhuis gaat.",
+    "Koos je kerncentrales? Bij normaal bedrijf geven die maar een heel klein deel van de straling die je krijgt. De natuur levert veel meer.",
+    "Koos je telefoons en wifi? Die zenden radiogolven uit, en dat is geen ioniserende straling. Ze tellen niet mee in de achtergrondstraling.",
+    "Klopt: het grootste deel komt uit de natuur: radongas uit de bodem en bouwmaterialen, straling uit gesteenten, kosmische straling en radioactieve stoffen in voedsel. Medische toepassingen zijn de grootste kunstmatige bron."
+   ],
+   "uh": "Achtergrond = vooral natuur.",
+   "ctx": "Een gezin laat in de kelder van hun huis de straling meten. Het meetbureau vindt een verhoogde hoeveelheid radon, een radioactief gas dat uit de bodem en uit beton en baksteen kan komen. Het advies is om de kelder goed te ventileren."
+  },
+  {
+   "v": "Wat is een alfadeeltje?",
+   "o": [
+    "Een foton met veel energie",
+    "Een snel elektron",
+    "Een heliumkern (2p + 2n)",
+    "Een los neutron"
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 2,
+   "u": "Een alfadeeltje is een heliumkern: ⁴₂He.",
+   "uo": [
+    "Koos je een foton? Dat is gammastraling, zonder massa en zonder lading. Alfa bestaat uit deeltjes uit de kern.",
+    "Koos je een elektron? Dat is een bètadeeltje (β⁻). Een alfadeeltje is veel zwaarder en positief geladen.",
+    "Klopt: een alfadeeltje bestaat uit 2 protonen en 2 neutronen, net als een heliumkern. Het is relatief zwaar en heeft een lading van +2.",
+    "Koos je een neutron? Neutronenstraling bestaat ook, maar een alfadeeltje is een pakketje van vier nucleonen: 2 protonen en 2 neutronen."
+   ],
+   "uh": "α = heliumkern."
+  },
+  {
+   "v": "Welke straling heeft geen lading en geen massa?",
+   "o": [
+    "Alfa",
+    "Gamma",
+    "Bèta",
+    "Alfa en bèta allebei"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 2,
+   "u": "γ = foton (EM-straling).",
+   "uo": [
+    "Koos je alfa? Een alfadeeltje is een heliumkern met massa en een lading van +2. Het is juist het zwaarste van de drie.",
+    "Klopt: gammastraling is elektromagnetische straling, net als licht maar met veel meer energie. Een foton heeft geen lading en geen rustmassa.",
+    "Koos je bèta? Een bètadeeltje is een elektron, met een lading van -1 en een kleine massa.",
+    "Koos je alfa en bèta? Dat zijn allebei geladen deeltjes met massa. Alleen gamma bestaat uit fotonen."
+   ],
+   "uh": "γ: geen lading, geen massa."
+  },
+  {
+   "v": "Wat voor deeltje komt vrij bij β⁻-verval, en waar komt het vandaan?",
+   "o": [
+    "Een elektron, ontstaan in de kern",
+    "Een elektron uit de elektronenwolk",
+    "Een proton dat de kern verlaat",
+    "Een heliumkern uit de kern"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 2,
+   "u": "In de kern: n → p + e⁻.",
+   "uo": [
+    "Klopt: bij β⁻-verval verandert in de kern een neutron in een proton en een elektron. Het elektron wordt met grote snelheid uitgeschoten. Het komt dus uit de kern, niet uit de wolk.",
+    "Koos je de elektronenwolk? Dan zou het atoom alleen een ion worden. Bij bètaverval verandert de kern zelf: er komt een proton bij.",
+    "Koos je een proton? Het proton blijft juist in de kern achter. Daardoor stijgt het atoomnummer met één.",
+    "Koos je een heliumkern? Dat is alfaverval. Bij bètaverval komt er een elektron vrij."
+   ],
+   "uh": "β⁻: neutron → proton + elektron.",
+   "ctx": "De isotoop strontium-90 komt vrij bij kernongelukken en zendt β⁻-straling uit. Na het verval is er van het strontiumatoom een yttriumatoom over, met één proton meer. Een leerling vraagt zich af waar het elektron vandaan komt, want een kern bevat toch geen elektronen."
+  },
+  {
+   "v": "Welke lading heeft een alfadeeltje?",
+   "o": [
+    "0 (neutraal)",
+    "+4",
+    "-1",
+    "+2"
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 2,
+   "u": "2 protonen → +2.",
+   "uo": [
+    "Koos je 0? Dat is gamma, of een neutron. Een alfadeeltje bevat protonen en is dus geladen.",
+    "Koos je +4? Dan heb je de neutronen ook meegeteld. Neutronen zijn neutraal; alleen de 2 protonen zijn geladen.",
+    "Koos je -1? Dat is de lading van een bètadeeltje (elektron). Alfa is positief.",
+    "Klopt: een alfadeeltje heeft 2 protonen, elk met lading +1, en 2 neutronen zonder lading. Samen +2."
+   ],
+   "uh": "Alfa: twee protonen, dus +2."
+  },
+  {
+   "v": "Welke straling gaat rechtdoor tussen twee geladen platen?",
+   "o": [
+    "Bèta",
+    "Alfa",
+    "Gamma",
+    "Alfa en bèta allebei"
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 2,
+   "u": "Geen lading → geen kracht in een elektrisch veld.",
+   "uo": [
+    "Koos je bèta? Bètadeeltjes zijn negatief en buigen sterk af naar de positieve plaat, omdat ze zo licht zijn.",
+    "Koos je alfa? Alfadeeltjes zijn positief (+2) en buigen af naar de negatieve plaat. Ze buigen wel minder dan bèta, omdat ze veel zwaarder zijn.",
+    "Klopt: gammafotonen hebben geen lading. Een elektrisch veld oefent er geen kracht op uit, dus ze gaan rechtdoor.",
+    "Koos je alfa en bèta? Die zijn juist allebei geladen en buigen dus allebei af, alleen in tegengestelde richting."
+   ],
+   "uh": "Gamma: geen lading, rechtdoor."
+  },
+  {
+   "v": "Welke straling wordt al tegengehouden door een vel papier?",
+   "o": [
+    "Bèta",
+    "Alfa",
+    "Gamma",
+    "Röntgen"
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 3,
+   "u": "α: papier of een paar cm lucht.",
+   "uo": [
+    "Koos je bèta? Bètadeeltjes gaan door papier heen. Er is een paar millimeter aluminium nodig om ze tegen te houden.",
+    "Klopt: alfadeeltjes zijn groot en zwaar geladen. Ze botsen heel vaak en verliezen hun energie snel. Een vel papier of een paar centimeter lucht houdt ze al tegen.",
+    "Koos je gamma? Gamma gaat gemakkelijk door papier en zelfs door aluminium. Alleen een dikke laag lood of beton maakt het veel zwakker.",
+    "Koos je röntgen? Röntgenstraling gaat dwars door je lichaam heen, dus zeker door papier. Daarom kun je er botten mee fotograferen."
+   ],
+   "uh": "Papier stopt α."
+  },
+  {
+   "v": "Welke afscherming heb je minimaal nodig voor bètastraling?",
+   "o": [
+    "Een paar mm aluminium",
+    "Een vel papier",
+    "Een meter beton",
+    "Niets, bèta gaat overal doorheen"
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 3,
+   "u": "β: enkele mm aluminium.",
+   "uo": [
+    "Klopt: bètadeeltjes zijn kleiner en lichter dan alfadeeltjes en dringen daardoor dieper door. Een plaatje aluminium van een paar millimeter houdt ze tegen.",
+    "Koos je papier? Dat is genoeg voor alfa, maar bètadeeltjes gaan er gewoon doorheen.",
+    "Koos je een meter beton? Dat zou wel werken, maar het is veel meer dan nodig. Zo dik schermt men af tegen sterke gammabronnen.",
+    "Koos je niets? Bèta heeft een beperkte dracht: in lucht een paar meter en in aluminium een paar millimeter."
+   ],
+   "uh": "Aluminium stopt β."
+  },
+  {
+   "v": "Waarom kan gammastraling nooit helemaal worden tegengehouden, maar alfastraling wel?",
+   "o": [
+    "Lood laat gammastraling juist versterkt door",
+    "Gamma is sneller dan alfa",
+    "Gamma heeft meer lading",
+    "Gamma wordt per laag zwakker, nooit nul"
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 3,
+   "u": "Gamma neemt exponentieel af; α heeft een vaste dracht.",
+   "uo": [
+    "Koos je versterkt? Lood schermt gamma juist goed af. Het maakt de straling zwakker, alleen niet helemaal nul.",
+    "Koos je sneller? Snelheid alleen bepaalt het niet. Het gaat erom hoe vaak de straling met atomen wisselwerkt; gamma doet dat weinig.",
+    "Koos je meer lading? Gamma heeft juist geen lading. Daardoor wisselwerkt het weinig met de stof en dringt het diep door.",
+    "Klopt: een alfadeeltje verliest bij elke botsing energie en komt na een vaste afstand tot stilstand. Gammafotonen worden af en toe geabsorbeerd: elke laag houdt een deel tegen, maar er komt altijd een klein deel door."
+   ],
+   "uh": "γ: zwakker per laag, nooit nul.",
+   "ctx": "In een ziekenhuis wordt een kamer gebouwd voor bestraling met een sterke gammabron. De muren zijn van dik beton met een laag lood. Een bouwkundige zegt dat ook deze muur een heel klein beetje gamma doorlaat, terwijl een vel papier al alle alfastraling tegenhoudt."
+  },
+  {
+   "v": "Hoe ver komt alfastraling ongeveer in lucht?",
+   "o": [
+    "Een paar meter",
+    "Een paar millimeter",
+    "Zo'n 4 cm",
+    "Een paar kilometer"
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 3,
+   "u": "Dracht α in lucht: 3-5 cm.",
+   "uo": [
+    "Koos je meters? Dat geldt voor bètastraling. Alfadeeltjes worden veel sneller afgeremd.",
+    "Koos je millimeters? Dat is ongeveer de dracht in vaste stoffen of in je huid. In lucht komt alfa iets verder.",
+    "Klopt: alfadeeltjes botsen in lucht zo vaak dat ze na een paar centimeter al hun energie kwijt zijn. Op een halve meter van een alfabron meet je er niets meer van.",
+    "Koos je kilometers? Zelfs gamma raakt in lucht na een flink stuk zijn sterkte grotendeels kwijt. Alfa haalt maar een paar centimeter."
+   ],
+   "uh": "α in lucht: cm."
+  },
+  {
+   "v": "Waarom is de americiumbron in een rookmelder aan het plafond geen gevaar voor de bewoners?",
+   "o": [
+    "Americium zendt alleen gamma uit, en dat is onschuldig",
+    "Alfa komt maar een paar cm ver door lucht",
+    "De bron is zo zwak dat hij geen straling uitzendt",
+    "Rook houdt alle straling tegen"
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 3,
+   "u": "Alfa: dracht enkele cm in lucht; de bron zit dicht in de behuizing.",
+   "uo": [
+    "Koos je alleen gamma? Americium-241 is juist een alfastraler; er komt maar een beetje zwakke gamma bij. En gamma is niet onschuldig, het dringt ver door.",
+    "Klopt: americium-241 zendt vooral alfastraling uit. Die komt in lucht maar een paar centimeter ver en wordt door de behuizing tegengehouden. Zolang je de melder niet openbreekt of de bron inslikt, krijg je er niets van.",
+    "Koos je geen straling? De bron zendt wel straling uit, anders zou de melder niet werken. Het punt is dat die straling niet ver komt.",
+    "Koos je rook? Rook stopt de alfastraling een beetje, en zo werkt de melder juist. De bewoners worden beschermd door de korte dracht van alfa."
+   ],
+   "uh": "Rookmelder: α komt niet ver.",
+   "ctx": "In veel oudere rookmelders zit een klein bronnetje americium-241. De alfastraling ioniseert de lucht in een kamertje, zodat er een klein stroompje loopt. Komt er rook in het kamertje, dan daalt het stroompje en gaat het alarm af. De melder hangt aan het plafond, meer dan een meter boven je hoofd."
+  },
+  {
+   "v": "Welke straling heeft het grootste ioniserend vermogen?",
+   "o": [
+    "Alfa",
+    "Bèta",
+    "Gamma",
+    "Alle drie evenveel"
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 4,
+   "u": "α: groot en +2 → veel ionisaties per mm.",
+   "uo": [
+    "Klopt: alfadeeltjes zijn zwaar en hebben een lading van +2. Ze maken op een korte afstand heel veel ionen. Daardoor raken ze ook snel hun energie kwijt.",
+    "Koos je bèta? Bètadeeltjes ioniseren minder per millimeter dan alfa, maar komen verder.",
+    "Koos je gamma? Gamma ioniseert het minst per millimeter. Daarom dringt het zo diep door.",
+    "Koos je evenveel? Er is juist een groot verschil, en dat hangt samen met het doordringend vermogen: hoe meer ionisatie, hoe minder ver."
+   ],
+   "uh": "α ioniseert het sterkst."
+  },
+  {
+   "v": "Wat is het verband tussen ioniserend en doordringend vermogen?",
+   "o": [
+    "Ze zijn altijd precies gelijk",
+    "Groot ioniserend vermogen, groot doordringend vermogen",
+    "Er is geen verband tussen de twee",
+    "Veel ioniseren, weinig doordringen"
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 4,
+   "u": "Veel ioniseren = snel energie kwijt = korte dracht.",
+   "uo": [
+    "Koos je precies gelijk? Het is een omgekeerd verband: als het ene groot is, is het andere klein.",
+    "Koos je allebei groot? Dat kan niet tegelijk: de energie die gebruikt wordt voor ionisatie, is weg. Daarom is het verband omgekeerd.",
+    "Koos je geen verband? Het verband is juist heel duidelijk: alfa ioniseert het meest en komt het minst ver, gamma andersom.",
+    "Klopt: elke ionisatie kost energie. Straling die veel ioniseert, zoals alfa, is snel uitgeput en komt dus niet ver. Gamma ioniseert weinig en komt daardoor ver."
+   ],
+   "uh": "Omgekeerd verband."
+  },
+  {
+   "v": "Waarom is een alfabron buiten je lichaam vrij onschuldig, maar binnen je lichaam heel gevaarlijk?",
+   "o": [
+    "Alfa is alleen in de buitenlucht onschuldig door de zuurstof",
+    "Binnen het lichaam wordt alfa omgezet in gamma",
+    "Buiten stopt je huid alfa; binnen ioniseert het je cellen",
+    "Binnen het lichaam vervalt de bron sneller"
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 4,
+   "u": "Korte dracht + groot ioniserend vermogen.",
+   "uo": [
+    "Koos je zuurstof? Lucht houdt alfa tegen door botsingen met allerlei moleculen, niet speciaal door zuurstof. In het lichaam staan levende cellen direct naast de bron.",
+    "Koos je omzetten in gamma? Alfa blijft alfa. Het verschil zit in waar de straling zijn energie afgeeft.",
+    "Klopt: van buitenaf houdt de dode buitenlaag van je huid alfastraling al tegen. Heb je de stof ingeslikt of ingeademd, dan zit de bron naast levende cellen en geeft alfa al zijn energie daar af. Dat geeft veel schade.",
+    "Koos je sneller verval? De halveringstijd verandert niet door de omgeving. Het gevaar komt doordat de straling vlak bij gevoelige cellen ontstaat."
+   ],
+   "uh": "α binnen = gevaarlijk.",
+   "ctx": "In 2006 werd de Russische oud-spion Litvinenko in Londen vergiftigd met polonium-210, een stof die alfastraling uitzendt. Het polonium zat in zijn thee. Een onderzoeker merkte op dat je een flesje polonium zonder veel risico in je hand kunt houden, zolang het dicht blijft."
+  },
+  {
+   "v": "Waarom kan ioniserende straling kanker veroorzaken?",
+   "o": [
+    "Ze maakt het lichaam radioactief",
+    "Ze kan het DNA in een cel beschadigen",
+    "Ze warmt de cellen op tot ze sterven",
+    "Ze voegt nieuwe cellen toe aan het lichaam"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 4,
+   "u": "Ionisatie → DNA-schade → mutatie.",
+   "uo": [
+    "Koos je radioactief maken? Bestraling met alfa, bèta of gamma maakt je lichaam niet radioactief. De schade zit in kapotte moleculen.",
+    "Klopt: als straling moleculen in een cel ioniseert, kan het DNA beschadigd raken. Wordt dat verkeerd hersteld, dan kan een cel ongeremd gaan delen: kanker.",
+    "Koos je opwarmen? De warmte van een gewone dosis is verwaarloosbaar. Het gevaar zit in de ionisatie van belangrijke moleculen.",
+    "Koos je nieuwe cellen? Straling voegt niets toe. Ze beschadigt het DNA, waardoor bestaande cellen kunnen ontsporen."
+   ],
+   "uh": "Straling → DNA-schade."
+  },
+  {
+   "v": "Waarom mag je in een lab met open radioactieve bronnen niet eten of drinken?",
+   "o": [
+    "Je kunt radioactieve stof binnenkrijgen",
+    "Het eten wordt radioactief door de straling",
+    "De straling bederft het eten",
+    "Eten houdt de straling tegen en verstoort metingen"
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 4,
+   "u": "Besmetting via inname: bron in je lichaam.",
+   "uo": [
+    "Klopt: kruimels van een open bron kunnen op je handen of je eten komen. Krijg je de stof binnen, dan zit de bron in je lichaam en geeft hij daar zijn straling af. Vooral bij alfastralers is dat gevaarlijk.",
+    "Koos je eten wordt radioactief? Bestraling met alfa, bèta of gamma maakt eten niet radioactief. Het gevaar is dat er radioactieve stof zelf op of in het eten komt.",
+    "Koos je bederven? Het eten gaat niet sneller rotten. Het risico is dat je radioactieve deeltjes inslikt.",
+    "Koos je metingen verstoren? Dat is niet de reden. Het gaat om je eigen veiligheid: radioactieve stof mag niet in je lichaam komen."
+   ],
+   "uh": "Inname = bron in je lijf."
+  },
+  {
+   "v": "Met welk apparaat kun je ioniserende straling tellen?",
+   "o": [
+    "Een lichtmeter",
+    "Een thermometer",
+    "Een microfoon",
+    "Een geigerteller"
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 5,
+   "u": "GM-buis telt ionisaties.",
+   "uo": [
+    "Koos je een lichtmeter? Die meet zichtbaar licht. Alfa en bèta zijn deeltjes, en gamma valt ver buiten het bereik van een lichtmeter.",
+    "Koos je een thermometer? Ioniserende straling geeft bij normale doses veel te weinig warmte om te meten.",
+    "Koos je een microfoon? Straling maakt geen geluid. Het getik van een geigerteller is een geluid dat het apparaat zelf maakt bij elke meting.",
+    "Klopt: in een geiger-müllerbuis maakt elk binnenkomend deeltje of foton een kleine stroomstoot door ionisatie van het gas. De teller telt die stootjes, vaak met een tik."
+   ],
+   "uh": "Geigerteller."
+  },
+  {
+   "v": "Welke straling zendt de bron uit volgens deze metingen?",
+   "o": [
+    "Alfa en bèta",
+    "Alleen alfastraling",
+    "Alfa en gamma",
+    "Alleen gamma"
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 5,
+   "u": "Papier verlaagt veel (α), aluminium niets extra (geen β), lood verlaagt (γ).",
+   "uo": [
+    "Koos je alfa en bèta? Dan zou het aluminium de telsnelheid verder verlagen. Dat gebeurt niet: het aluminium maakt geen verschil.",
+    "Koos je alleen alfa? Dan zou er na het papier niets meer over zijn dan de achtergrond. Er komt nog veel door, en dat stopt pas bij lood.",
+    "Klopt: met papier daalt de telsnelheid sterk, dus er is alfa. Aluminium verandert daarna niets, dus er is geen bèta. Er blijft straling over die pas door lood afneemt: gamma.",
+    "Koos je alleen gamma? Dan zou het papier niets uitmaken. De sterke daling na het papier laat zien dat er ook alfa is."
+   ],
+   "uh": "Absorptieproef: papier, aluminium, lood.",
+   "ctx": "Een leerling meet met een geigerteller vlak voor een onbekende bron. Zonder scherm: 900 tikken per minuut. Met een vel papier: 420. Met papier plus 5 mm aluminium: 415. Met 5 cm lood: 30 tikken per minuut, gelijk aan de achtergrondstraling."
+  },
+  {
+   "v": "Waarom meet de leerling ook zonder bron eerst een paar minuten?",
+   "o": [
+    "Om de geigerteller op te warmen",
+    "Om de achtergrondstraling te bepalen",
+    "Om te zien of de bron al vervallen is",
+    "Om de luchtvochtigheid te meten"
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 5,
+   "u": "Achtergrondstraling aftrekken van elke meting.",
+   "uo": [
+    "Koos je opwarmen? Een geigerteller hoeft niet op te warmen. De meting zonder bron dient om de achtergrond te kennen.",
+    "Klopt: er is overal een beetje straling, van gesteenten, kosmische straling en radon. Die achtergrond moet je aftrekken om de straling van de bron zelf te kennen.",
+    "Koos je vervallen? Zonder bron kun je niets zeggen over de bron. Je meet dan alleen wat er van nature is.",
+    "Koos je luchtvochtigheid? Een geigerteller meet ionisaties, geen vocht. Zonder bron telt hij alleen de natuurlijke achtergrond."
+   ],
+   "uh": "Achtergrond meten en aftrekken.",
+   "ctx": "Voordat een leerling metingen doet aan een radioactieve bron, legt ze de bron in een loden kluisje en meet ze vijf minuten met de geigerteller in het lokaal. Ze telt 150 tikken. Daarna haalt ze de bron eruit en begint ze met de echte metingen."
+  },
+  {
+   "v": "Een bron geeft 600 tikken/min, de achtergrond is 30 tikken/min. Hoeveel komen er van de bron?",
+   "o": [
+    "570",
+    "600",
+    "630",
+    "20"
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 5,
+   "u": "Bron = gemeten totaal min achtergrond: 600 - 30.",
+   "uo": [
+    "Klopt: de geigerteller telt de bron en de achtergrond samen. De bron zelf geeft 600 - 30 = 570 tikken per minuut.",
+    "Koos je 600? Dat is wat de teller in totaal meet, inclusief de achtergrond. Trek de achtergrond eraf.",
+    "Koos je 630? Dan heb je de achtergrond opgeteld. Die zit al in de 600; hij moet er juist af.",
+    "Koos je 20? Dan heb je 600 door 30 gedeeld. Bron en achtergrond tellen op, dus je trekt af."
+   ],
+   "uh": "Bron = totaal - achtergrond."
+  },
+  {
+   "v": "Welke straling is het meest geschikt om de dikte van het papier te controleren?",
+   "o": [
+    "Alle drie even goed",
+    "Alfa",
+    "Gamma",
+    "Bèta"
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 5,
+   "u": "β: deels tegengehouden door papier → gevoelig voor dikteverschil.",
+   "uo": [
+    "Koos je alle drie? Alleen straling die door papier gedeeltelijk wordt tegengehouden, is gevoelig voor de dikte. Dat is alleen bèta.",
+    "Koos je alfa? Een vel papier houdt alfa helemaal tegen, of het nu dun of dik is. De teller zou steeds nul meten.",
+    "Koos je gamma? Gamma gaat bijna ongehinderd door papier. Een klein verschil in dikte geeft dan nauwelijks verschil in telsnelheid.",
+    "Klopt: bètastraling wordt door papier gedeeltelijk tegengehouden. Is het papier iets dikker, dan komt er merkbaar minder door. Zo zie je kleine verschillen in dikte."
+   ],
+   "uh": "Diktemeting papier: bèta.",
+   "ctx": "In een papierfabriek loopt een brede baan papier tussen een radioactieve bron en een geigerteller door. Wordt het papier te dik, dan meet de teller minder straling en stelt een computer de walsen bij. De ingenieur moet kiezen tussen een alfa-, een bèta- en een gammabron."
+  }
+ ],
+ "oe": [
+  {
+   "bron": "Examenstijl",
+   "ctx": "Radon-222 is een radioactief gas dat uit de bodem komt. Het heeft atoomnummer 86. Radon zendt alfastraling uit. In slecht geventileerde kelders kan de concentratie radon flink oplopen, en mensen ademen het gas in.",
+   "v": "Bepaal het aantal protonen en neutronen in een radon-222-kern en leg uit waarom radon in de kelder gevaarlijk is, terwijl alfastraling van buitenaf weinig kwaad doet.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "86 protonen en 222 − 86 = 136 neutronen (1p). Van buitenaf houdt de huid alfa tegen (1p). Ingeademd radon vervalt in de longen; de alfastraling heeft een groot ioniserend vermogen en geeft al zijn energie af aan longcellen (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een leerling onderzoekt een onbekende bron met een geigerteller. De achtergrond is 25 tikken per minuut. Zonder scherm meet ze 640, met een vel papier 635, met 3 mm aluminium 160 en met 3 mm aluminium plus 5 cm lood 26 tikken per minuut.",
+   "v": "Leg met de metingen uit welke soorten straling de bron uitzendt.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Papier verandert bijna niets: geen alfa (1p). Aluminium haalt een groot deel weg (van 635 naar 160): er is bèta (1p). Na het aluminium blijft er straling over die pas door lood tot de achtergrond daalt: er is ook gamma (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Bij de controle van de vulhoogte van blikjes frisdrank gebruikt een fabriek een radioactieve bron aan de ene kant van de lopende band en een detector aan de andere kant. Is het blikje te leeg, dan gaat er meer straling door het lege bovenstuk en wordt het blikje van de band geduwd.",
+   "v": "Leg uit welke soort straling hiervoor het meest geschikt is en waarom de andere twee niet geschikt zijn.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Gamma: die gaat door het blikje heen en wordt door de vloeistof merkbaar zwakker (1p). Alfa wordt al door het blik tegengehouden (1p). Bèta wordt door blik plus vloeistof vrijwel helemaal tegengehouden, zodat het verschil tussen vol en leeg slecht te meten is (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Strontium-90 (Z = 38) zendt β⁻-straling uit. Na het verval is er een kern van yttrium (Z = 39) over. Een leerling schrijft in haar verslag: \"Bij bètaverval verliest het atoom een elektron uit de elektronenwolk, daarom wordt het een ander element.\"",
+   "v": "Leg uit wat er bij β⁻-verval in de kern gebeurt en beoordeel de uitspraak van de leerling.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "In de kern verandert een neutron in een proton en een elektron; het elektron wordt uitgezonden (1p). Het aantal protonen stijgt van 38 naar 39, dus het wordt yttrium; het massagetal blijft 90 (1p). De uitspraak klopt niet: het elektron komt uit de kern, en een elektron uit de wolk verliezen maakt alleen een ion, geen ander element (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een bron zendt een smalle bundel straling uit tussen twee horizontale metalen platen. De bovenste plaat is positief, de onderste negatief geladen. Op een scherm achter de platen ontstaan drie vlekken: één recht tegenover de bron, één iets lager en één veel hoger.",
+   "v": "Leg uit welke vlek bij welke straling hoort en waarom de ene geladen soort veel sterker afbuigt dan de andere.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Recht tegenover: gamma, zonder lading (1p). Iets lager: alfa, positief, naar de negatieve plaat; veel hoger: bèta, negatief, naar de positieve plaat (1p). Bètadeeltjes zijn duizenden keren lichter dan alfadeeltjes en buigen daardoor veel sterker af (1p)."
+  }
+ ]
+}
