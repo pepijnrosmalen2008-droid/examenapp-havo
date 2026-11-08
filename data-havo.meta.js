@@ -2168,6 +2168,28 @@ var VAKKEN = [
       "nOe": 5,
       "nBeg": 11,
       "hasSam": true
+     },
+     {
+      "id": "A3",
+      "lo": "na.A.3",
+      "gs": 2,
+      "naam": "Evenredige verbanden",
+      "beschrijving": "Je herkent recht evenredige, lineaire, omgekeerd evenredige, kwadratische en wortelverbanden in formules, tabellen en grafieken, rekent met factoren (\"hoeveel keer zo groot\") en maakt van een kromme grafiek een rechte lijn om een verband te controleren en een constante te bepalen.",
+      "ceStatus": "CE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Recht evenredig",
+       "Lineair maar niet evenredig",
+       "Omgekeerd evenredig",
+       "Kwadratisch en wortelverband",
+       "Verbanden herkennen in een tabel",
+       "Een rechte lijn maken"
+      ],
+      "nSv": 28,
+      "nOe": 5,
+      "nBeg": 11,
+      "hasSam": true
      }
     ]
    },

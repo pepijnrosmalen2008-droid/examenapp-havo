@@ -1,0 +1,688 @@
+{
+ "id": "A3",
+ "lo": "na.A.3",
+ "gs": 2,
+ "naam": "Evenredige verbanden",
+ "beschrijving": "Je herkent recht evenredige, lineaire, omgekeerd evenredige, kwadratische en wortelverbanden in formules, tabellen en grafieken, rekent met factoren (\"hoeveel keer zo groot\") en maakt van een kromme grafiek een rechte lijn om een verband te controleren en een constante te bepalen.",
+ "ceStatus": "CE",
+ "binas": "",
+ "val": "",
+ "onderwerpen": [
+  "Recht evenredig",
+  "Lineair maar niet evenredig",
+  "Omgekeerd evenredig",
+  "Kwadratisch en wortelverband",
+  "Verbanden herkennen in een tabel",
+  "Een rechte lijn maken"
+ ],
+ "sam": "Recht evenredig: y = c · x, y / x constant, rechte lijn door de oorsprong. Lineair: y = a · x + b, rechte lijn niet door 0; helling Δy / Δx. Omgekeerd evenredig: y = c / x, x · y constant, hyperbool. Kwadratisch: y = c · x², factor 2 geeft factor 4. Wortel: y = c · √x, factor 4 geeft factor 2. In een tabel test je y / x, x · y of y / x². Zet y uit tegen 1/x, x² of √x voor een rechte lijn; de helling is de constante.",
+ "begrippen": [
+  {
+   "t": "Recht evenredig",
+   "d": "Verband y = c · x: de verhouding y / x is constant; de grafiek is een rechte lijn door de oorsprong."
+  },
+  {
+   "t": "Omgekeerd evenredig",
+   "d": "Verband y = c / x: het product x · y is constant; de grafiek is een hyperbool."
+  },
+  {
+   "t": "Evenredigheidsconstante",
+   "d": "De vaste factor c in een evenredig verband, zoals de veerconstante in F = C · u."
+  },
+  {
+   "t": "Lineair verband",
+   "d": "Verband y = a · x + b; de grafiek is een rechte lijn, die alleen bij b = 0 door de oorsprong gaat."
+  },
+  {
+   "t": "Helling",
+   "d": "Steilheid van een lijn: Δy / Δx, hoeveel y verandert per eenheid x."
+  },
+  {
+   "t": "Kwadratisch verband",
+   "d": "Verband y = c · x²: twee keer zo grote x geeft vier keer zo grote y."
+  },
+  {
+   "t": "Wortelverband",
+   "d": "Verband y = c · √x: vier keer zo grote x geeft twee keer zo grote y."
+  },
+  {
+   "t": "Hyperbool",
+   "d": "Grafiek van een omgekeerd evenredig verband; komt steeds dichter bij de assen maar raakt ze nooit."
+  },
+  {
+   "t": "Oorsprong",
+   "d": "Het punt (0,0) van een grafiek."
+  },
+  {
+   "t": "Rechte lijn maken",
+   "d": "Een grootheid uitzetten tegen 1/x, x² of √x, zodat een kromme grafiek een rechte lijn wordt."
+  },
+  {
+   "t": "Quotiënt",
+   "d": "De uitkomst van een deling, zoals y / x; constant bij recht evenredig."
+  }
+ ],
+ "sv": [
+  {
+   "v": "Hoe ziet de grafiek van een recht evenredig verband eruit?",
+   "o": [
+    "Een kromme die steeds steiler wordt",
+    "Een rechte lijn die de y-as boven nul snijdt",
+    "Een rechte lijn door de oorsprong",
+    "Een kromme die naar de assen toe loopt"
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 0,
+   "u": "y = c · x: rechte lijn door (0,0).",
+   "uo": [
+    "Koos je steeds steiler? Dat hoort bij een kwadratisch verband, zoals y = c · x². Bij recht evenredig is de helling overal gelijk.",
+    "Koos je een lijn die de y-as boven nul snijdt? Dat is lineair, maar niet evenredig: y = a · x + b met b ≠ 0. Bij x = 0 is y dan niet nul.",
+    "Klopt: bij een recht evenredig verband is y = c · x. De grafiek is een rechte lijn die door de oorsprong gaat: als x nul is, is y ook nul.",
+    "Koos je naar de assen toe? Dat is de vorm van een omgekeerd evenredig verband, een hyperbool. Bij recht evenredig stijgt y juist gelijkmatig mee met x."
+   ],
+   "uh": "Recht evenredig: rechte lijn door 0."
+  },
+  {
+   "v": "De uitrekking van een veer is recht evenredig met de kracht. Wat gebeurt er bij drie keer zoveel kracht?",
+   "o": [
+    "De uitrekking wordt negen keer zo groot",
+    "De uitrekking wordt drie keer zo groot",
+    "De uitrekking wordt drie keer zo klein",
+    "De uitrekking neemt met drie centimeter toe"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 0,
+   "u": "Recht evenredig: × 3 → × 3.",
+   "uo": [
+    "Koos je negen keer? Dat zou bij een kwadratisch verband horen. Bij een veer is het verband recht evenredig: F = C · u.",
+    "Klopt: bij een recht evenredig verband geldt: wordt de ene grootheid een aantal keer zo groot, dan wordt de andere evenveel keer zo groot. Drie keer de kracht geeft drie keer de uitrekking.",
+    "Koos je drie keer zo klein? Dat hoort bij een omgekeerd evenredig verband. Meer kracht geeft juist meer uitrekking.",
+    "Koos je drie centimeter erbij? Bij evenredigheid gaat het om keer zo groot, niet om er een vaste hoeveelheid bij tellen."
+   ],
+   "uh": "Recht evenredig: zelfde factor."
+  },
+  {
+   "v": "Welke evenredigheidsconstante hoort bij deze metingen?",
+   "o": [
+    "C = 25 N/m",
+    "C = 0,040 m/N",
+    "C = 4,0 N/m",
+    "C = 2,5 N/m"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 0,
+   "u": "C = F / u = 1,0 / 0,040.",
+   "uo": [
+    "Klopt: F / u is voor elke meting gelijk: 1,0 / 0,040 = 2,0 / 0,080 = 25 N/m. Die vaste verhouding is de evenredigheidsconstante, hier de veerconstante.",
+    "Koos je 0,040 m/N? Dat is u / F, het omgekeerde. De veerconstante is kracht per meter uitrekking: F / u.",
+    "Koos je 4,0 N/m? Dan heb je de uitrekking in centimeter gebruikt: 1,0 / 4,0 cm. Zet eerst om naar meter.",
+    "Koos je 2,5 N/m? Dan heb je een factor tien gemist bij het omrekenen. 4,0 cm = 0,040 m, en 1,0 / 0,040 = 25."
+   ],
+   "uh": "Constante = verhouding y/x.",
+   "ctx": "Een leerling hangt gewichtjes aan een veer en meet de uitrekking. Bij 1,0 N rekt de veer 4,0 cm uit, bij 2,0 N 8,0 cm en bij 3,0 N 12,0 cm. Ze ziet dat de grafiek van F tegen u een rechte lijn door de oorsprong is."
+  },
+  {
+   "v": "Hoe controleer je in een tabel of twee grootheden recht evenredig zijn?",
+   "o": [
+    "De getallen in de tabel stijgen allebei",
+    "Het product x · y is steeds gelijk",
+    "Het verschil y − x is steeds gelijk",
+    "Het quotiënt y / x is steeds gelijk"
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 0,
+   "u": "Recht evenredig: y/x constant.",
+   "uo": [
+    "Koos je allebei stijgen? Bij een kwadratisch verband of een lineair verband met een beginwaarde stijgen ze ook allebei. Alleen een constant quotiënt bewijst recht evenredig.",
+    "Koos je product? Een constant product x · y hoort bij omgekeerd evenredig. Bij recht evenredig is het quotiënt constant.",
+    "Koos je verschil? Een constant verschil zegt niets over evenredigheid: bij y = x + 3 is het verschil steeds 3, maar dat is niet evenredig. Het gaat om de verhouding.",
+    "Klopt: bij een recht evenredig verband is de verhouding y / x voor elk meetpunt gelijk. Die verhouding is de evenredigheidsconstante."
+   ],
+   "uh": "Test: y/x constant."
+  },
+  {
+   "v": "Welk verband heeft een rechte lijn die de verticale as snijdt bij y = 5?",
+   "o": [
+    "Omgekeerd evenredig",
+    "Recht evenredig",
+    "Lineair",
+    "Kwadratisch"
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 1,
+   "u": "y = a · x + b met b ≠ 0: lineair maar niet evenredig.",
+   "uo": [
+    "Koos je omgekeerd evenredig? Dat geeft een gebogen grafiek, een hyperbool die daalt. Hier is het een rechte lijn.",
+    "Koos je recht evenredig? Dan zou de lijn door de oorsprong gaan. Hier is y = 5 als x = 0, dus twee keer zo grote x geeft niet twee keer zo grote y.",
+    "Klopt: een rechte lijn is lineair: y = a · x + b. Omdat de lijn niet door de oorsprong gaat (b = 5), is het verband niet recht evenredig.",
+    "Koos je kwadratisch? Een kwadratisch verband is een parabool die steeds steiler wordt, geen rechte lijn met overal dezelfde helling."
+   ],
+   "uh": "Rechte lijn niet door 0: lineair."
+  },
+  {
+   "v": "Een taxi rekent € 4,00 instaptarief en € 2,50 per km. Is de prijs recht evenredig met de afstand?",
+   "o": [
+    "Ja, want per km betaal je steeds hetzelfde",
+    "Nee, want bij 0 km betaal je al € 4,00",
+    "Ja, want de grafiek is een rechte lijn",
+    "Nee, want de prijs stijgt steeds sneller"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 1,
+   "u": "Lineair met beginwaarde → niet evenredig.",
+   "uo": [
+    "Koos je per km hetzelfde? Dat klopt voor het stuk per kilometer, maar door het instaptarief is de totale prijs niet evenredig. 10 km kost € 29, 20 km € 54: niet het dubbele.",
+    "Klopt: de prijs is € 4,00 + € 2,50 × de afstand. De grafiek is een rechte lijn, maar niet door de oorsprong. Twee keer zo ver rijden kost niet twee keer zoveel.",
+    "Koos je rechte lijn? Een rechte lijn is lineair, maar pas recht evenredig als hij door de oorsprong gaat.",
+    "Koos je steeds sneller? De prijs stijgt met een vaste € 2,50 per km, dus gelijkmatig. Het probleem is het instaptarief."
+   ],
+   "uh": "Instaptarief: niet evenredig."
+  },
+  {
+   "v": "Is de lengte van de veer recht evenredig met de kracht?",
+   "o": [
+    "Nee, alleen de uitrekking is evenredig",
+    "Ja, de lengte wordt steeds groter",
+    "Ja, want de grafiek is een rechte lijn",
+    "Nee, de lengte is omgekeerd evenredig met de kracht"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 1,
+   "u": "L = L₀ + u: lineair met beginwaarde L₀.",
+   "uo": [
+    "Klopt: de totale lengte is de beginlengte plus de uitrekking: L = 10,0 + u. De grafiek van L tegen F is een rechte lijn die bij 10,0 cm begint, dus niet door de oorsprong. Alleen de uitrekking u is recht evenredig met F.",
+    "Koos je steeds groter? Dat geldt bij elk stijgend verband. Recht evenredig betekent dat twee keer de kracht ook twee keer de lengte geeft, en dat is niet zo.",
+    "Koos je rechte lijn? De lijn gaat niet door de oorsprong, want zonder kracht is de veer al 10,0 cm lang.",
+    "Koos je omgekeerd evenredig? Dan zou de lengte kleiner worden bij meer kracht. Hij wordt juist groter."
+   ],
+   "uh": "Lengte = beginlengte + uitrekking.",
+   "ctx": "Een veer is zonder gewicht 10,0 cm lang. Met 1,0 N eraan is hij 14,0 cm, met 2,0 N 18,0 cm en met 3,0 N 22,0 cm. Een leerling tekent de lengte tegen de kracht en zegt dat de lengte recht evenredig is met de kracht, omdat er een rechte lijn uitkomt."
+  },
+  {
+   "v": "Wat stelt de helling van een lineaire grafiek voor?",
+   "o": [
+    "De grootste waarde die y bereikt",
+    "De waarde van y als x nul is",
+    "Het product van x en y",
+    "De toename van y per eenheid x"
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 1,
+   "u": "Helling = Δy / Δx.",
+   "uo": [
+    "Koos je grootste waarde? De helling zegt hoe steil de lijn loopt, niet hoe hoog hij komt. Een steile lijn kan bij kleine x nog laag liggen.",
+    "Koos je y bij x = 0? Dat is het snijpunt met de verticale as, het beginpunt b. De helling gaat over hoe snel y stijgt.",
+    "Koos je product? Dat heeft niets met de helling te maken. De helling is een verhouding van veranderingen.",
+    "Klopt: de helling (richtingscoëfficiënt) is Δy / Δx: hoeveel y verandert als x één eenheid groter wordt. Bij de taxi is dat € 2,50 per km."
+   ],
+   "uh": "Helling = Δy/Δx."
+  },
+  {
+   "v": "Wat geldt bij een omgekeerd evenredig verband?",
+   "o": [
+    "Het verschil y − x is steeds gelijk",
+    "Het quotiënt y / x is steeds gelijk",
+    "Het product x · y is steeds gelijk",
+    "x en y stijgen samen"
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 2,
+   "u": "y = c / x ↔ x · y = c.",
+   "uo": [
+    "Koos je verschil? Een constant verschil past bij geen van beide evenredige verbanden; het hoort bij een rechte lijn met helling 1.",
+    "Koos je quotiënt? Dat hoort bij recht evenredig. Bij omgekeerd evenredig is het product constant: als x verdubbelt, halveert y.",
+    "Klopt: bij een omgekeerd evenredig verband is y = c / x, dus x · y = c. Wordt x twee keer zo groot, dan wordt y twee keer zo klein.",
+    "Koos je samen stijgen? Bij omgekeerd evenredig daalt y juist als x stijgt, zoals de reistijd daalt als je sneller rijdt."
+   ],
+   "uh": "Omgekeerd: x · y constant."
+  },
+  {
+   "v": "Een afstand van 120 km wordt met verschillende snelheden afgelegd. Hoe hangen tijd en snelheid samen?",
+   "o": [
+    "Recht evenredig",
+    "Omgekeerd evenredig",
+    "Kwadratisch",
+    "Er is geen verband tussen tijd en snelheid"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 2,
+   "u": "t = s / v met s vast.",
+   "uo": [
+    "Koos je recht evenredig? Sneller rijden kost juist minder tijd, niet meer. Recht evenredig zou betekenen dat de tijd met de snelheid meegroeit.",
+    "Klopt: t = s / v met s = 120 km vast. v · t = 120 is constant: omgekeerd evenredig. Met 60 km/h duurt het 2 h, met 120 km/h 1 h.",
+    "Koos je kwadratisch? In t = s / v staat geen kwadraat. Twee keer zo snel geeft precies de helft van de tijd.",
+    "Koos je geen verband? Er is wel een duidelijk verband: hoe sneller, hoe korter de reistijd, en het product v · t blijft 120 km."
+   ],
+   "uh": "Vaste afstand: t omgekeerd evenredig met v."
+  },
+  {
+   "v": "Hoeveel tijd heeft de pomp van 4,0 kW nodig om de vijver leeg te pompen?",
+   "o": [
+    "1,5 uur",
+    "6,0 uur",
+    "24 uur",
+    "3,0 uur, net als eerst"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 2,
+   "u": "P · t constant: 2,0 kW × 3,0 h = 4,0 kW × t.",
+   "uo": [
+    "Klopt: het werk is steeds hetzelfde, dus P · t is constant. 2,0 kW × 3,0 h = 6,0 kWh = 4,0 kW × t, dus t = 1,5 h. Twee keer zo veel vermogen, half zo lang.",
+    "Koos je 6,0 uur? Dan heb je gedacht dat een sterkere pomp langer nodig heeft. Meer vermogen doet hetzelfde werk sneller.",
+    "Koos je 24 uur? Dan heb je alle getallen vermenigvuldigd: 2,0 × 3,0 × 4,0. Gebruik dat het werk, P · t, voor beide pompen gelijk blijft.",
+    "Koos je 3,0 uur? Dan verandert er niets. Een pomp met twee keer zoveel vermogen is in de helft van de tijd klaar."
+   ],
+   "uh": "Omgekeerd evenredig: P · t = constant.",
+   "ctx": "Een tuinman pompt een vijver leeg met een pomp van 2,0 kW; dat duurt 3,0 uur. Bij een volgende vijver van dezelfde grootte gebruikt hij een pomp van 4,0 kW. We nemen aan dat het pompen per kWh evenveel water verplaatst."
+  },
+  {
+   "v": "Je zet y = c / x uit in een diagram. Welke vorm krijg je?",
+   "o": [
+    "Een parabool met een laagste punt",
+    "Een rechte lijn door de oorsprong",
+    "Een dalende rechte lijn",
+    "Een kromme langs de assen"
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 2,
+   "u": "Hyperbool: y = c/x.",
+   "uo": [
+    "Koos je parabool? Dat is een kwadratisch verband. Een hyperbool heeft geen laagste punt, hij loopt steeds verder naar de as toe.",
+    "Koos je een lijn door de oorsprong? Dat is recht evenredig. Bij omgekeerd evenredig daalt y juist als x stijgt.",
+    "Koos je dalende rechte lijn? Die raakt de x-as wel, bij een bepaalde waarde wordt y nul. Bij omgekeerd evenredig wordt y nooit nul, en de grafiek is gebogen.",
+    "Klopt: de grafiek van y = c / x heet een hyperbool. Bij kleine x is y heel groot, bij grote x heel klein, maar nooit nul."
+   ],
+   "uh": "Omgekeerd: hyperbool."
+  },
+  {
+   "v": "Bij een kwadratisch verband y = c · x²: wat gebeurt er met y als x twee keer zo groot wordt?",
+   "o": [
+    "y wordt twee keer zo klein",
+    "y wordt twee keer zo groot",
+    "y wordt vier keer zo groot",
+    "y wordt acht keer zo groot als eerst"
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 3,
+   "u": "(2x)² = 4x².",
+   "uo": [
+    "Koos je twee keer zo klein? Dat hoort bij omgekeerd evenredig. Bij y = c · x² groeit y juist sterk als x groter wordt.",
+    "Koos je twee keer? Dat zou recht evenredig zijn. Bij een kwadraat wordt de factor zelf gekwadrateerd: 2 × 2 = 4.",
+    "Klopt: als x verdubbelt, wordt x² vier keer zo groot, want 2² = 4. Zo wordt de remweg van een auto bij twee keer zo hoge snelheid vier keer zo lang.",
+    "Koos je acht keer? Dat is 2³, en dat zou bij y = c · x³ horen, zoals bij het volume van een kubus. Bij een kwadraat is het 2² = 4."
+   ],
+   "uh": "Kwadratisch: × 2 → × 4."
+  },
+  {
+   "v": "De kinetische energie is Ek = ½ m v². Hoeveel keer zo groot wordt Ek als de snelheid drie keer zo groot wordt?",
+   "o": [
+    "3 keer",
+    "9 keer",
+    "6 keer",
+    "27 keer"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 3,
+   "u": "Kwadratisch: 3² = 9.",
+   "uo": [
+    "Koos je 3 keer? Dan behandel je het verband alsof het recht evenredig is. Door het kwadraat telt de factor 3 twee keer.",
+    "Klopt: Ek is kwadratisch afhankelijk van v. Drie keer de snelheid geeft 3² = 9 keer de kinetische energie. Daarom is een botsing met 90 km/h zo veel erger dan met 30 km/h.",
+    "Koos je 6 keer? Dat is 3 × 2: je hebt de exponent als factor gebruikt. Het kwadraat betekent 3 × 3 = 9.",
+    "Koos je 27 keer? Dat is 3³. In de formule staat v², niet v³, dus de factor 3 telt maar twee keer mee."
+   ],
+   "uh": "Ek ~ v²: × 3 → × 9."
+  },
+  {
+   "v": "Hoeveel keer zo lang moet de slinger worden om een twee keer zo grote trillingstijd te krijgen?",
+   "o": [
+    "4 keer zo lang",
+    "2 keer zo lang",
+    "√2 keer zo lang",
+    "8 keer zo lang"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 3,
+   "u": "T ~ √l → T × 2 vraagt l × 4.",
+   "uo": [
+    "Klopt: de trillingstijd is evenredig met de wortel uit de lengte. Om T twee keer zo groot te maken, moet √l twee keer zo groot worden, dus l vier keer zo groot.",
+    "Koos je 2 keer? Dan zou T maar √2 = 1,4 keer zo groot worden. Door de wortel moet de lengte meer toenemen.",
+    "Koos je √2? Dat is precies andersom: √2 keer de lengte geeft maar ongeveer 1,19 keer de trillingstijd. De lengte moet juist meer veranderen dan T.",
+    "Koos je 8 keer? Dat zou bij een derdemachtswortel passen. Bij een gewone wortel kwadrateer je de factor: 2² = 4."
+   ],
+   "uh": "Wortelverband: factor kwadrateren.",
+   "ctx": "Een slinger van 0,50 m heeft een trillingstijd van 1,4 s. Voor de trillingstijd van een slinger geldt T = 2π√(l/g). Een leerling wil een slinger maken met een trillingstijd van 2,8 s, twee keer zo groot."
+  },
+  {
+   "v": "Met welk verband passen deze metingen van de remweg?",
+   "o": [
+    "Lineair met een beginwaarde",
+    "Recht evenredig met de snelheid",
+    "Omgekeerd evenredig met de snelheid",
+    "Kwadratisch met de snelheid"
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 3,
+   "u": "10 → 20 m/s: 8 → 32 m (× 4).",
+   "uo": [
+    "Koos je lineair? Bij een lineair verband nemen de remwegen met een vaste stap toe. Hier zijn de stappen 24 en 40 m: steeds groter.",
+    "Koos je recht evenredig? Dan zou de remweg bij 20 m/s 16 m zijn, niet 32 m. De remweg groeit sneller dan de snelheid.",
+    "Koos je omgekeerd evenredig? Dan zou de remweg korter worden bij hogere snelheid. Hij wordt juist langer.",
+    "Klopt: bij twee keer de snelheid (10 → 20 m/s) wordt de remweg vier keer zo lang (8 → 32 m), en bij drie keer (30 m/s) negen keer (72 m). Dat is kwadratisch: s ~ v²."
+   ],
+   "uh": "Factor 2 → factor 4: kwadratisch.",
+   "ctx": "Bij een remproef op droog asfalt meet de ANWB de remweg van een auto bij verschillende snelheden: bij 10 m/s 8 m, bij 20 m/s 32 m en bij 30 m/s 72 m. De remweg is gemeten vanaf het moment dat de rem wordt ingetrapt."
+  },
+  {
+   "v": "In een tabel wordt x steeds twee keer zo groot en y steeds twee keer zo klein. Welk verband is dit?",
+   "o": [
+    "Kwadratisch",
+    "Recht evenredig",
+    "Omgekeerd evenredig",
+    "Lineair met een beginwaarde"
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 4,
+   "u": "x × 2, y ÷ 2 → x·y constant.",
+   "uo": [
+    "Koos je kwadratisch? Dan zou y vier keer zo groot worden als x verdubbelt, niet twee keer zo klein.",
+    "Koos je recht evenredig? Dan zou y ook verdubbelen als x verdubbelt. Hier halveert y juist.",
+    "Klopt: als x verdubbelt en y halveert, blijft het product x · y gelijk. Dat is een omgekeerd evenredig verband.",
+    "Koos je lineair? Bij een lineair verband verandert y met een vaste stap, niet met een vaste factor. Halveren is een factor."
+   ],
+   "uh": "Verdubbelen-halveren: omgekeerd."
+  },
+  {
+   "v": "Welk verband hoort bij deze tabel: x = 1, 2, 3, 4 en y = 3, 12, 27, 48?",
+   "o": [
+    "y = 3 · x",
+    "y = 3 · x²",
+    "y = 12 / x",
+    "y = 9 · x − 6"
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 4,
+   "u": "y/x² = 3 constant.",
+   "uo": [
+    "Koos je 3 · x? Dat geeft 3, 6, 9, 12. De gemeten y-waarden groeien veel sneller: bij x = 2 al 12 in plaats van 6.",
+    "Klopt: y / x² = 3/1 = 12/4 = 27/9 = 48/16 = 3. Dus y = 3 · x², een kwadratisch verband.",
+    "Koos je 12 / x? Dan zou y dalen als x stijgt: 12, 6, 4, 3. In de tabel stijgt y juist.",
+    "Koos je 9x − 6? Dat geeft 3, 12, 21, 30. Bij x = 3 en 4 klopt het niet meer: de stappen worden steeds groter."
+   ],
+   "uh": "Test y/x²: constant → kwadratisch.",
+   "ctx": "Een leerling laat een kogel van verschillende hoogtes vallen en maakt een tabel met de valtijd x (in tienden van een seconde) en de valafstand y (in centimeter): x = 1, 2, 3, 4 en y = 3, 12, 27, 48. Ze zoekt een formule die bij alle meetpunten past."
+  },
+  {
+   "v": "In een tabel is y / x steeds gelijk aan 0,50. Welk verband is dat en hoe ziet de formule eruit?",
+   "o": [
+    "Recht evenredig: y = 0,50 · x",
+    "Omgekeerd evenredig: y = 0,50 / x",
+    "Kwadratisch: y = 0,50 · x²",
+    "Lineair: y = x + 0,50"
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 4,
+   "u": "y/x = c → y = c · x.",
+   "uo": [
+    "Klopt: een constant quotiënt y / x betekent recht evenredig, met de evenredigheidsconstante als factor: y = 0,50 · x.",
+    "Koos je omgekeerd? Dan zou x · y constant zijn en zou y dalen als x stijgt. Hier is het quotiënt constant.",
+    "Koos je kwadratisch? Dan zou y / x² constant zijn, niet y / x. Een constant y / x betekent een rechte lijn door de oorsprong.",
+    "Koos je y = x + 0,50? Dan zou het verschil y − x constant zijn. Een constant quotiënt geeft een vermenigvuldiging."
+   ],
+   "uh": "y/x constant: y = c·x."
+  },
+  {
+   "v": "Je vermoedt dat y omgekeerd evenredig is met x. Waartegen zet je y uit voor een rechte lijn?",
+   "o": [
+    "Tegen x zelf",
+    "Tegen x²",
+    "Tegen √x",
+    "Tegen 1/x"
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 5,
+   "u": "y = c · (1/x) → rechte lijn tegen 1/x.",
+   "uo": [
+    "Koos je x zelf? Dan krijg je een hyperbool, en aan een kromme lijn kun je moeilijk zien of het echt omgekeerd evenredig is.",
+    "Koos je x²? Dat helpt bij een kwadratisch verband zoals y = c · x². Bij omgekeerd evenredig moet je 1/x nemen.",
+    "Koos je √x? Dat past bij een verband met een wortel, zoals bij een slinger. Voor y = c / x neem je 1/x.",
+    "Klopt: als y = c / x, dan is y = c · (1/x). Zet je y uit tegen 1/x, dan krijg je een rechte lijn door de oorsprong met helling c."
+   ],
+   "uh": "Omgekeerd: y tegen 1/x."
+  },
+  {
+   "v": "Waarom zet een leerling de trillingstijd T uit tegen √l en niet tegen l?",
+   "o": [
+    "Omdat de grafiek tegen l altijd recht is",
+    "Dan worden de getallen kleiner",
+    "Dan wordt de grafiek een rechte lijn",
+    "Omdat je √l makkelijker kunt meten dan l"
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 5,
+   "u": "T = c · √l → rechte lijn tegen √l.",
+   "uo": [
+    "Koos je tegen l recht? Tegen l is de grafiek juist gebogen, omdat T met de wortel uit l groeit en dus steeds minder snel stijgt.",
+    "Koos je kleiner? Kleinere getallen zijn niet het doel. Het gaat erom dat de grafiek een rechte lijn wordt.",
+    "Klopt: omdat T = 2π√(l/g) evenredig is met √l, geeft T uitgezet tegen √l een rechte lijn door de oorsprong. Aan een rechte lijn zie je veel beter of het verband klopt, en uit de helling haal je g.",
+    "Koos je makkelijker meten? Je meet gewoon l en rekent √l uit. Het doel is een rechte lijn, waaraan je het verband controleert."
+   ],
+   "uh": "Linealiseren: rechte lijn maken.",
+   "ctx": "Bij een practicum meet een leerling de trillingstijd van een slinger bij vijf verschillende lengtes. Uitgezet tegen de lengte l krijgt ze een kromme lijn. Haar docent zegt: \"Zet T eens uit tegen √l, dan kun je met de helling de valversnelling bepalen.\""
+  },
+  {
+   "v": "Je zet de valafstand s uit tegen t² en krijgt een rechte lijn door de oorsprong. Wat betekent dat?",
+   "o": [
+    "s is recht evenredig met t",
+    "s is recht evenredig met t²",
+    "s is omgekeerd evenredig met t",
+    "Er is geen verband tussen s en t"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 5,
+   "u": "Rechte lijn door 0 tegen t² → s = c · t².",
+   "uo": [
+    "Koos je evenredig met t? Dan zou je een rechte lijn krijgen als je s tegen t uitzet. Tegen t² zou de grafiek dan juist gebogen zijn.",
+    "Klopt: een rechte lijn door de oorsprong in een grafiek van s tegen t² betekent s = c · t². De valafstand is dus kwadratisch afhankelijk van de tijd.",
+    "Koos je omgekeerd evenredig? Dan zou s kleiner worden als t groter wordt, en een grafiek tegen t² zou dalen. Hier stijgt s.",
+    "Koos je geen verband? Een rechte lijn door de oorsprong laat juist een heel duidelijk verband zien: s = c · t²."
+   ],
+   "uh": "Rechte lijn tegen t²: s ~ t²."
+  },
+  {
+   "v": "Welke helling verwacht je in de grafiek van T² tegen l?",
+   "o": [
+    "4π²/g ≈ 4,0 s²/m",
+    "2π/g ≈ 0,640 s²/m",
+    "g ≈ 9,8 s²/m",
+    "√g ≈ 3,1 s²/m"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 5,
+   "u": "T² = (4π²/g) · l.",
+   "uo": [
+    "Klopt: kwadrateer T = 2π√(l/g): T² = (4π²/g) · l. De grafiek van T² tegen l is een rechte lijn door de oorsprong met helling 4π²/9,81 ≈ 4,0 s²/m.",
+    "Koos je 2π/g? Dan ben je vergeten het 2π-deel te kwadrateren. (2π)² = 4π², dus de helling is 4π²/g.",
+    "Koos je g? De helling heeft de eenheid s²/m; g heeft de eenheid m/s². Ze zijn elkaars omgekeerde, met een factor 4π².",
+    "Koos je √g? Kwadrateren haalt de wortel uit T = 2π√(l/g) weg, er blijft geen wortel over. De helling is 4π²/g."
+   ],
+   "uh": "T² tegen l: helling 4π²/g.",
+   "ctx": "Een leerling wil de valversnelling bepalen met een slinger. In plaats van T tegen √l zet ze T² uit tegen l. Ze vindt een rechte lijn door de oorsprong en wil uit de helling g berekenen. Ze gebruikt T = 2π√(l/g)."
+  },
+  {
+   "v": "Welke formule hoort bij een recht evenredig verband?",
+   "o": [
+    "y = c · x + b",
+    "y = c / x",
+    "y = c · x²",
+    "y = c · x"
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 0,
+   "u": "Recht evenredig: y = c · x.",
+   "uo": [
+    "Koos je y = c · x + b? Dat is lineair met een beginwaarde b. Alleen als b nul is, is het recht evenredig.",
+    "Koos je y = c / x? Dat is omgekeerd evenredig: als x groter wordt, wordt y kleiner. Bij recht evenredig groeien ze samen.",
+    "Koos je y = c · x²? Dat is kwadratisch: twee keer zo grote x geeft vier keer zo grote y, geen twee keer.",
+    "Klopt: bij een recht evenredig verband is y gelijk aan een constante maal x. De grafiek is een rechte lijn door de oorsprong met helling c."
+   ],
+   "uh": "Recht evenredig: y = c·x."
+  },
+  {
+   "v": "Bij een gas zijn volume en druk omgekeerd evenredig. Wat gebeurt er met de druk als het volume halveert?",
+   "o": [
+    "De druk blijft gelijk",
+    "De druk halveert",
+    "De druk verdubbelt",
+    "De druk wordt vier keer zo groot"
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 2,
+   "u": "p · V constant → V ÷ 2 → p × 2.",
+   "uo": [
+    "Koos je gelijk? Als je een gas samenperst, merk je dat het steeds harder terugduwt. De druk stijgt.",
+    "Koos je halveren? Dat zou bij een recht evenredig verband horen. Bij omgekeerd evenredig gaan ze juist de andere kant op.",
+    "Klopt: bij een omgekeerd evenredig verband blijft p · V gelijk. Wordt het volume twee keer zo klein, dan wordt de druk twee keer zo groot.",
+    "Koos je vier keer? Dat zou bij een kwadratisch verband passen. Omgekeerd evenredig geeft precies het omgekeerde van de factor: × 2."
+   ],
+   "uh": "Omgekeerd: V ÷ 2 → p × 2."
+  },
+  {
+   "v": "Hoe ziet de grafiek van y = c · x² eruit voor positieve x?",
+   "o": [
+    "Een rechte lijn door de oorsprong",
+    "Een kromme die steeds steiler stijgt",
+    "Een kromme die steeds minder steil stijgt",
+    "Een dalende kromme"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 3,
+   "u": "Parabool: helling neemt toe.",
+   "uo": [
+    "Koos je rechte lijn? Die hoort bij y = c · x. Bij een kwadraat neemt de helling toe.",
+    "Klopt: bij y = c · x² stijgt de grafiek steeds steiler, want elke stap in x levert een grotere stap in y op. Het is een halve parabool vanuit de oorsprong.",
+    "Koos je minder steil? Dat is de vorm van een wortelverband, zoals T = c · √l. Bij een kwadraat wordt hij juist steiler.",
+    "Koos je dalend? Voor positieve c en x stijgt y = c · x² altijd. Dalend hoort bij omgekeerd evenredig."
+   ],
+   "uh": "Kwadratisch: steeds steiler."
+  },
+  {
+   "v": "Welk verband past bij deze metingen?",
+   "o": [
+    "Omgekeerd evenredig",
+    "Recht evenredig: I / R = 0,4",
+    "Kwadratisch: I = 0,05 · R²",
+    "Lineair: I = 2,6 − 0,04 · R"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 4,
+   "u": "I · R: 4,0 × 3,0 = 6,0 × 2,0 = 12,0 × 1,0 = 12.",
+   "uo": [
+    "Klopt: R × I = 4,0 × 3,0 = 6,0 × 2,0 = 12 × 1,0 = 12. Het product is constant, dus de stroom is omgekeerd evenredig met de weerstand. Het product is de spanning: 12 V.",
+    "Koos je recht evenredig? Dan zou I groter worden als R groter wordt. In de tabel wordt I juist kleiner.",
+    "Koos je kwadratisch? Dan zou I steeds sneller stijgen als R groter wordt. In de tabel daalt I juist bij grotere R.",
+    "Koos je lineair? Dan zouden gelijke stappen in R gelijke stappen in I geven. Van 4 naar 6 Ω daalt I met 1,0 A, van 6 naar 12 Ω maar met 1,0 A over een twee keer zo grote stap."
+   ],
+   "uh": "Product constant → omgekeerd.",
+   "ctx": "Een leerling sluit een batterij aan op verschillende weerstanden en meet de stroom. Bij 4,0 Ω meet ze 3,0 A, bij 6,0 Ω 2,0 A en bij 12 Ω 1,0 A. Ze wil weten welk verband er is tussen stroom en weerstand."
+  },
+  {
+   "v": "Waarom maken natuurkundigen graag een rechte lijn van hun grafiek?",
+   "o": [
+    "Bij een rechte lijn hoef je geen eenheden te gebruiken",
+    "Een rechte lijn heeft altijd meer meetpunten",
+    "Een rechte lijn is mooier om te tekenen",
+    "Je ziet direct of het verband klopt"
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 5,
+   "u": "Rechte lijn: makkelijk te controleren en helling te bepalen.",
+   "uo": [
+    "Koos je geen eenheden? Ook bij een rechte lijn horen eenheden langs de assen en bij de helling.",
+    "Koos je meer meetpunten? Het aantal meetpunten verandert niet als je anders uitzet. Je gebruikt dezelfde metingen.",
+    "Koos je mooier? Het gaat niet om de vorm, maar om wat je eruit kunt halen: een controle van het verband en een constante uit de helling.",
+    "Klopt: een kromme lijn kan bij veel verbanden horen, maar of punten op een rechte lijn liggen, zie je meteen. Bovendien kun je de helling eenvoudig bepalen en daaruit een constante berekenen."
+   ],
+   "uh": "Rechte lijn: controleren en helling."
+  }
+ ],
+ "oe": [
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een leerling meet de stroomsterkte door een lampje bij verschillende spanningen: 1,0 V: 0,10 A; 2,0 V: 0,18 A; 4,0 V: 0,30 A; 6,0 V: 0,39 A. Ze beweert dat de stroom recht evenredig is met de spanning, \"want hij wordt groter als de spanning groter wordt\".",
+   "v": "Onderzoek met de tabel of de stroom recht evenredig is met de spanning en beoordeel haar redenering.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "I / U: 0,10; 0,090; 0,075; 0,065 A/V: niet constant (1p). Dus niet recht evenredig: bij hogere spanning stijgt de stroom steeds minder (1p). Dat de stroom groter wordt, bewijst geen evenredigheid; daarvoor moet het quotiënt constant zijn (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "De remweg van een auto op droog asfalt is bij 50 km/h ongeveer 14 m. Een folder van de verkeersveiligheid zegt: \"Rij je 100 km/h, dan is je remweg twee keer zo lang.\" Voor de remweg geldt dat hij kwadratisch toeneemt met de snelheid.",
+   "v": "Bereken de remweg bij 100 km/h en bij 75 km/h en beoordeel de uitspraak in de folder.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "100 km/h is twee keer zo snel: 2² × 14 = 56 m (1p). 75 km/h is 1,5 keer zo snel: 1,5² × 14 = 32 m (1p). De folder heeft ongelijk: de remweg wordt vier keer zo lang, niet twee keer (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een groep van 6 leerlingen kan het lokaal in 20 minuten opruimen. De docent neemt aan dat het opruimen omgekeerd evenredig is met het aantal leerlingen. Een leerling zegt dat het met 12 leerlingen dan in 40 minuten gaat.",
+   "v": "Bereken hoe lang het met 12 en met 4 leerlingen duurt en beoordeel de uitspraak.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Product: 6 × 20 = 120 leerlingminuten (1p). 12 leerlingen: 120 / 12 = 10 min; 4 leerlingen: 120 / 4 = 30 min (1p). De uitspraak klopt niet: met meer leerlingen gaat het sneller, niet langzamer (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een leerling meet de trillingstijd van een slinger bij verschillende lengtes: l = 0,20 m: T = 0,90 s; 0,40 m: 1,27 s; 0,60 m: 1,55 s; 0,80 m: 1,79 s. Ze zet T² uit tegen l en vindt een rechte lijn door de oorsprong. Er geldt T = 2π√(l/g).",
+   "v": "Leg uit waarom T² tegen l een rechte lijn geeft en bepaal met de meting bij 0,80 m de waarde van g.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "T² = (4π²/g) · l, dus T² is recht evenredig met l (1p). Helling: T²/l = 1,79² / 0,80 = 4,0 s²/m (1p). g = 4π² / 4,0 = 9,9 m/s² (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een zonnepaneel levert bij een lichtsterkte van 200 W/m² een vermogen van 30 W en bij 600 W/m² een vermogen van 90 W. De fabrikant zegt dat het vermogen recht evenredig is met de lichtsterkte. Op een zonnige zomerdag is de lichtsterkte 950 W/m².",
+   "v": "Laat zien dat de gegevens passen bij een recht evenredig verband en bereken het vermogen op de zonnige dag.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "P / lichtsterkte: 30 / 200 = 0,15 en 90 / 600 = 0,15 m²: constant (1p). Dus P = 0,15 × lichtsterkte (1p). Bij 950 W/m²: P = 0,15 × 950 = 1,4·10² W (1p)."
+  }
+ ]
+}
