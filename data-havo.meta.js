@@ -1857,6 +1857,28 @@ var VAKKEN = [
       "nOe": 5,
       "nBeg": 11,
       "hasSam": true
+     },
+     {
+      "id": "D3",
+      "lo": "sk.D.3",
+      "gs": 2,
+      "naam": "Esters en estervorming",
+      "beschrijving": "Je herkent de estergroep, beschrijft de vorming van een ester uit een alcohol en een carbonzuur als evenwicht, geeft esters een naam zonder zuur- en alcoholdeel te verwisselen, en legt hydrolyse en de bouw van vetten uit.",
+      "ceStatus": "CE",
+      "binas": "66D",
+      "val": "",
+      "onderwerpen": [
+       "De estergroep",
+       "Estervorming uit alcohol en zuur",
+       "Naamgeving van esters",
+       "Een ester tekenen in stappen",
+       "Hydrolyse en vetten",
+       "Geuren en toepassingen"
+      ],
+      "nSv": 28,
+      "nOe": 5,
+      "nBeg": 11,
+      "hasSam": true
      }
     ]
    },

@@ -75177,6 +75177,696 @@ var VAKKEN = [
         "u": "Beide hebben één OH-groep die waterstofbruggen met water kan vormen (1p). Hexaan-1-ol heeft een lange hydrofobe koolstofketen die geen waterstofbruggen vormt; bij methanol overheerst het hydrofiele deel (1p)."
        }
       ]
+     },
+     {
+      "id": "D3",
+      "lo": "sk.D.3",
+      "gs": 2,
+      "naam": "Esters en estervorming",
+      "beschrijving": "Je herkent de estergroep, beschrijft de vorming van een ester uit een alcohol en een carbonzuur als evenwicht, geeft esters een naam zonder zuur- en alcoholdeel te verwisselen, en legt hydrolyse en de bouw van vetten uit.",
+      "ceStatus": "CE",
+      "binas": "66D",
+      "val": "",
+      "onderwerpen": [
+       "De estergroep",
+       "Estervorming uit alcohol en zuur",
+       "Naamgeving van esters",
+       "Een ester tekenen in stappen",
+       "Hydrolyse en vetten",
+       "Geuren en toepassingen"
+      ],
+      "sam": "Een ester heeft de groep −COO− tussen twee ketens. Alcohol + carbonzuur ⇄ ester + water (condensatie, zwavelzuur als katalysator, evenwicht). Naam: alcoholdeel op -yl vooraan, zuurdeel op -oaat achteraan; de C=O zit aan de zuurkant. Formule: zuur + alcohol − H₂O. Hydrolyse splitst een ester weer. Vet = glycerol + drie vetzuren. Kleine esters ruiken naar fruit.",
+      "begrippen": [
+       {
+        "t": "Ester",
+        "d": "Stof met de groep −COO− tussen twee koolstofketens; ontstaat uit een alcohol en een carbonzuur."
+       },
+       {
+        "t": "Estergroep",
+        "d": "De groep −COO−: een C met een dubbel gebonden O en een O die naar een tweede keten gaat."
+       },
+       {
+        "t": "Verestering",
+        "d": "Reactie van een alcohol met een carbonzuur tot een ester en water; een evenwichtsreactie."
+       },
+       {
+        "t": "Condensatiereactie",
+        "d": "Reactie waarbij twee moleculen samengaan onder afsplitsing van water."
+       },
+       {
+        "t": "Hydrolyse",
+        "d": "Splitsing van een ester met water in een carbonzuur en een alcohol."
+       },
+       {
+        "t": "Zuurdeel",
+        "d": "Het deel van een ester met de C=O; krijgt in de naam de uitgang -oaat."
+       },
+       {
+        "t": "Alcoholdeel",
+        "d": "Het deel van een ester aan de enkel gebonden O; krijgt in de naam de uitgang -yl."
+       },
+       {
+        "t": "Glycerol",
+        "d": "Alcohol met drie OH-groepen (propaan-1,2,3-triol); vormt met drie vetzuren een vet."
+       },
+       {
+        "t": "Vet",
+        "d": "Ester van glycerol met drie vetzuren (triglyceride)."
+       },
+       {
+        "t": "Vetzuur",
+        "d": "Carbonzuur met een lange koolstofketen, bouwsteen van vetten."
+       },
+       {
+        "t": "Lipase",
+        "d": "Enzym dat de hydrolyse van vetten in de darmen versnelt."
+       }
+      ],
+      "sv": [
+       {
+        "v": "Welke groep is kenmerkend voor een ester?",
+        "o": [
+         "−OH aan een koolstofatoom",
+         "−COOH aan het uiteinde van een keten",
+         "−COO− tussen twee koolstofketens",
+         "−NH₂ aan een koolstofatoom"
+        ],
+        "c": 2,
+        "d": 1,
+        "s": 0,
+        "u": "Estergroep: C met dubbel gebonden O en een O die naar een tweede keten gaat.",
+        "uo": [
+         "Koos je −OH? Dat is de hydroxylgroep van een alcohol. Bij estervorming verdwijnt die OH juist in de ester.",
+         "Koos je −COOH? Dat is de carboxylgroep van een carbonzuur. In een ester is de H van die groep vervangen door een koolstofketen.",
+         "Klopt: in een ester zit een C=O met daarnaast een O-atoom dat aan een tweede koolstofketen vastzit. Die −COO−-groep verbindt het zuurdeel met het alcoholdeel.",
+         "Koos je −NH₂? Dat is de aminogroep van een amine. Een ester bevat geen stikstof, alleen C, H en O."
+        ],
+        "uh": "Ester = −COO− in het midden."
+       },
+       {
+        "v": "Waarom lost ethylethanoaat slecht op in water, terwijl ethaanzuur en ethanol wel goed oplossen?",
+        "o": [
+         "Ethylethanoaat is een zout, en zouten met grote ionen lossen slecht op in water",
+         "Een ester heeft geen OH-groep meer en vormt dus nauwelijks waterstofbruggen",
+         "Ethylethanoaat reageert met water tot een neerslag",
+         "Een ester heeft een lange keten van twintig koolstofatomen"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 0,
+        "u": "Bij estervorming verdwijnen de OH-groepen van zuur en alcohol; de ester is veel minder hydrofiel.",
+        "uo": [
+         "Koos je zout? Een ester is een moleculaire stof, geen zout. Zouten bestaan uit ionen.",
+         "Klopt: zowel ethaanzuur als ethanol hebben een OH-groep. In de ester zijn die OH-groepen verdwenen, zodat het molecuul veel minder waterstofbruggen met water kan vormen.",
+         "Koos je neerslag? Er ontstaat geen neerslag. De ester vormt gewoon een aparte laag bovenop het water.",
+         "Koos je lange keten? Ethylethanoaat heeft maar vier C-atomen. Het slecht oplossen komt door het ontbreken van OH-groepen."
+        ],
+        "uh": "Geen OH = minder hydrofiel."
+       },
+       {
+        "v": "Waarom kookt ethylethanoaat zoveel lager dan butaanzuur?",
+        "o": [
+         "Butaanzuur vormt waterstofbruggen tussen de moleculen, de ester niet",
+         "De ester heeft een grotere molecuulmassa en dus sterkere vanderwaalskrachten",
+         "De ester bevat een dubbele C=C-binding",
+         "Butaanzuur is een zout met ionbindingen"
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 0,
+        "u": "Zelfde formule (isomeren), maar alleen het zuur heeft een OH die waterstofbruggen vormt.",
+        "uo": [
+         "Klopt: butaanzuur heeft een COOH-groep met een OH en vormt sterke waterstofbruggen. In de ester zit geen OH meer, dus de moleculen trekken elkaar alleen met vanderwaalskrachten aan.",
+         "Koos je grotere massa? Beide stoffen hebben dezelfde formule en dus dezelfde massa. Het verschil zit in de bindingen tussen de moleculen.",
+         "Koos je C=C? Ethylethanoaat heeft een C=O, geen C=C. En een dubbele binding verklaart het lage kookpunt niet.",
+         "Koos je zout? Butaanzuur is een moleculaire stof. Het hoge kookpunt komt door waterstofbruggen, niet door ionen."
+        ],
+        "uh": "Geen OH-groep = geen waterstofbruggen = lager kookpunt.",
+        "ctx": "Ethylethanoaat en butaanzuur hebben allebei de molecuulformule C₄H₈O₂ en een molecuulmassa van 88 u. Toch is het verschil groot: ethylethanoaat kookt bij 77 °C en ruikt fris en fruitig, butaanzuur kookt bij 164 °C en ruikt naar ranzige boter en zweetvoeten."
+       },
+       {
+        "v": "Uit welke twee soorten stoffen ontstaat een ester?",
+        "o": [
+         "Twee carbonzuren",
+         "Een alkaan en een alkeen",
+         "Een amine en een alcohol met een korte keten",
+         "Een alcohol en een carbonzuur"
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 1,
+        "u": "Alcohol + carbonzuur ⇄ ester + water.",
+        "uo": [
+         "Koos je twee carbonzuren? Je hebt wel een COOH-groep nodig, maar de andere stof moet een alcohol zijn met een OH-groep.",
+         "Koos je alkaan en alkeen? Die hebben geen functionele groepen met zuurstof. Voor een ester heb je een OH-groep en een COOH-groep nodig.",
+         "Koos je amine en alcohol? Een amine heeft stikstof. Een ester ontstaat uit een carbonzuur en een alcohol, zonder stikstof.",
+         "Klopt: een alcohol reageert met een carbonzuur tot een ester en water. Dit heet verestering."
+        ],
+        "uh": "Zuur + alcohol = ester + water."
+       },
+       {
+        "v": "Welke stof ontstaat naast de ester bij een verestering?",
+        "o": [
+         "Koolstofdioxide",
+         "Waterstofgas",
+         "Water",
+         "Zuurstof"
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 1,
+        "u": "De OH van het zuur en de H van de alcohol vormen samen H₂O.",
+        "uo": [
+         "Koos je CO₂? CO₂ ontstaat als een zuur met kalk reageert of bij verbranding. Bij verestering blijven alle C-atomen in de ester.",
+         "Koos je waterstofgas? Er komt geen H₂ vrij. De H van de alcohol vormt samen met de OH van het zuur een watermolecuul.",
+         "Klopt: bij verestering komt er een watermolecuul vrij. Een reactie waarbij twee moleculen samengaan en water afsplitsen, heet een condensatiereactie.",
+         "Koos je zuurstof? Er komt geen O₂ vrij. Het zuurstofatoom dat vrijkomt, zit in het watermolecuul."
+        ],
+        "uh": "Verestering = condensatie: water komt vrij."
+       },
+       {
+        "v": "Waarom doe je een paar druppels geconcentreerd zwavelzuur bij een verestering?",
+        "o": [
+         "Om de ester een zure geur te geven",
+         "Als katalysator, zodat het evenwicht sneller wordt bereikt",
+         "Omdat zwavelzuur zelf de alcohol levert",
+         "Om de ester op te lossen in water, zodat je hem kunt ruiken"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 1,
+        "u": "Zwavelzuur is een katalysator; zonder duurt het dagen voordat het evenwicht is ingesteld.",
+        "uo": [
+         "Koos je zure geur? De ester ruikt juist fruitig. Het zwavelzuur doet niet mee aan de geur, het versnelt de reactie.",
+         "Klopt: zonder katalysator verloopt verestering heel langzaam. Zwavelzuur versnelt de reactie, zodat het evenwicht binnen een kwartier of zo bereikt is.",
+         "Koos je alcohol leveren? Zwavelzuur bevat geen koolstofketen en kan dus geen alcohol leveren. Het is een katalysator.",
+         "Koos je oplossen? Esters lossen slecht op in water; daar verandert zwavelzuur niets aan. Het versnelt alleen de reactie."
+        ],
+        "uh": "Zwavelzuur = katalysator."
+       },
+       {
+        "v": "Waarom ontstaat er geen 1 mol ester, hoewel de leerling 1 mol van elke beginstof gebruikte?",
+        "o": [
+         "Verestering is een evenwichtsreactie; een deel van de ester reageert terug",
+         "Er is te weinig zwavelzuur gebruikt, waardoor de katalysator halverwege opraakte",
+         "De ester verdampt tijdens de reactie helemaal",
+         "Er ontstaat ook veel waterstofgas dat ontsnapt"
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 1,
+        "u": "Verestering ⇄ hydrolyse: in evenwicht is maar ongeveer twee derde omgezet (K ≈ 4).",
+        "uo": [
+         "Klopt: verestering is een evenwicht. De ester en het water reageren ook terug tot zuur en alcohol. Bij K ≈ 4 is in evenwicht ongeveer 0,67 mol ester gevormd.",
+         "Koos je katalysator op? Een katalysator wordt niet verbruikt. Meer zwavelzuur zou het evenwicht sneller instellen, maar niet meer ester geven.",
+         "Koos je verdampt? De proef gebeurt in een afgesloten kolf met een koeler. Het verschil komt door de teruggaande reactie.",
+         "Koos je waterstofgas? Bij verestering ontstaat alleen ester en water, geen waterstofgas."
+        ],
+        "uh": "Verestering is een evenwicht.",
+        "ctx": "Een leerling verwarmt 1,0 mol ethaanzuur en 1,0 mol ethanol met een paar druppels zwavelzuur in een kolf met een terugvloeikoeler. Na een uur stopt hij en bepaalt hoeveel ester er is. Hij vindt 0,67 mol ethylethanoaat, ook als hij nog een uur langer verwarmt."
+       },
+       {
+        "v": "Welke maatregel levert meer ester op?",
+        "o": [
+         "Een kleinere kolf gebruiken",
+         "Meer zwavelzuur toevoegen",
+         "Extra ester toevoegen aan het begin",
+         "Het gevormde water steeds verwijderen"
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 1,
+        "u": "Product (water) weghalen verschuift het evenwicht naar de kant van de ester.",
+        "uo": [
+         "Koos je kleinere kolf? De grootte van het vat verandert niets aan de ligging van dit evenwicht in een vloeistofmengsel.",
+         "Koos je meer zwavelzuur? Een katalysator laat het evenwicht sneller instellen, maar verandert de hoeveelheid ester in evenwicht niet.",
+         "Koos je extra ester? Dat verschuift het evenwicht juist naar links: een deel van de extra ester reageert terug tot zuur en alcohol.",
+         "Klopt: als je het water steeds weghaalt, kan de ester niet terugreageren. Het evenwicht verschuift naar rechts en er ontstaat meer ester."
+        ],
+        "uh": "Water weghalen = meer ester.",
+        "ctx": "In een fabriek wordt ethylethanoaat gemaakt als oplosmiddel voor lijm en verf. Ethaanzuur en ethanol reageren met zwavelzuur als katalysator in een evenwicht. De fabriek wil zo veel mogelijk ethaanzuur omzetten en heeft een installatie waarmee ze een van de stoffen tijdens de reactie uit het mengsel kan halen."
+       },
+       {
+        "v": "Welke ester ontstaat uit ethanol en ethaanzuur?",
+        "o": [
+         "Ethylethaan",
+         "Ethaanzuurethanol",
+         "Ethylethanoaat",
+         "Ethanolethanoaat"
+        ],
+        "c": 2,
+        "d": 1,
+        "s": 2,
+        "u": "Alcoholdeel -yl, zuurdeel -oaat: ethyl + ethanoaat.",
+        "uo": [
+         "Koos je ethylethaan? Dan mis je het zuurdeel met de COO-groep. Het zuur wordt in de naam ethanoaat.",
+         "Koos je ethaanzuurethanol? Je plakt de namen van de beginstoffen niet aan elkaar. Esters hebben een eigen naam: alkyl + alkanoaat.",
+         "Klopt: het alcoholdeel krijgt de uitgang -yl (ethanol → ethyl) en het zuurdeel de uitgang -oaat (ethaanzuur → ethanoaat).",
+         "Koos je ethanolethanoaat? Het alcoholdeel krijgt de uitgang -yl, niet -ol. In de ester is de OH-groep immers verdwenen."
+        ],
+        "uh": "Alcohol → -yl, zuur → -oaat."
+       },
+       {
+        "v": "Welke ester ontstaat uit methanol en butaanzuur?",
+        "o": [
+         "Butylmethanoaat",
+         "Methylbutanoaat",
+         "Methylbutaanzuur",
+         "Butaanmethanoaat"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 2,
+        "u": "Alcohol methanol → methyl; zuur butaanzuur → butanoaat.",
+        "uo": [
+         "Koos je butylmethanoaat? Dan heb je het alcohol- en zuurdeel verwisseld. Die ester ontstaat uit butanol en methaanzuur.",
+         "Klopt: methanol levert het methyl-deel, butaanzuur het butanoaat-deel. Methylbutanoaat ruikt naar appel.",
+         "Koos je methylbutaanzuur? Na de reactie is er geen zuur meer. Het zuurdeel krijgt in de ester de uitgang -oaat.",
+         "Koos je butaanmethanoaat? Het alcoholdeel komt vooraan met -yl. Hier is dat methyl, van methanol."
+        ],
+        "uh": "Eerst het alcoholdeel (-yl), dan het zuurdeel (-oaat)."
+       },
+       {
+        "v": "Uit welke alcohol en welk zuur is propylethanoaat gemaakt?",
+        "o": [
+         "Propaan-1-ol en ethaanzuur",
+         "Ethanol en propaanzuur",
+         "Propaanzuur en ethaanzuur",
+         "Propaan en ethanol"
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 2,
+        "u": "Propyl = alcoholdeel (propanol); ethanoaat = zuurdeel (ethaanzuur).",
+        "uo": [
+         "Klopt: het deel met -yl komt van de alcohol (propaan-1-ol), het deel met -oaat van het zuur (ethaanzuur).",
+         "Koos je ethanol en propaanzuur? Dan heb je de delen omgedraaid. Die stoffen geven ethylpropanoaat, een andere ester.",
+         "Koos je twee zuren? Voor een ester heb je één zuur en één alcohol nodig.",
+         "Koos je propaan en ethanol? Propaan is een alkaan zonder OH-groep. Het propyl-deel komt van een alcohol, propaan-1-ol."
+        ],
+        "uh": "Terugrekenen: -yl → alcohol, -oaat → zuur.",
+        "ctx": "Peren ruiken zoals ze ruiken door een mengsel van esters. Een belangrijke daarvan is propylethanoaat. Een snoepfabrikant wil de stof zelf maken voor peersnoepjes en moet weten welke twee grondstoffen hij moet bestellen."
+       },
+       {
+        "v": "Welke naam hoort bij CH₃−COO−CH₂−CH₂−CH₂−CH₃?",
+        "o": [
+         "Pentylethanoaat",
+         "Ethylbutanoaat",
+         "Butylmethanoaat",
+         "Butylethanoaat"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 2,
+        "u": "CH₃−CO(O) is het ethanoaatdeel (2 C), aan de O zit een butylgroep (4 C).",
+        "uo": [
+         "Koos je pentylethanoaat? Tel de C-atomen na de O: CH₂, CH₂, CH₂, CH₃. Dat zijn er vier, dus butyl.",
+         "Koos je ethylbutanoaat? Dan heb je de delen verwisseld. Het zuurdeel is het deel met de C=O, en dat heeft hier maar twee C-atomen.",
+         "Koos je butylmethanoaat? Methanoaat heeft maar één C-atoom (HCOO−). Hier zit er nog een CH₃ aan de C=O, dus twee C.",
+         "Klopt: het deel met de C=O is CH₃−CO, samen twee C-atomen: ethanoaat. Aan de andere O zit een keten van vier C-atomen: butyl."
+        ],
+        "uh": "C=O-kant = zuurdeel, O-kant = alcoholdeel."
+       },
+       {
+        "v": "Welke atomen vormen samen het watermolecuul bij verestering?",
+        "o": [
+         "Twee H-atomen uit de koolstofketens van zowel het zuur als de alcohol",
+         "De H van het carbonzuur en de OH van de alcohol",
+         "De OH van het carbonzuur en de H van de OH-groep van de alcohol",
+         "De O van de C=O en twee H-atomen van de alcohol"
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 3,
+        "u": "Afspraak in de les: het zuur levert de OH, de alcohol de H.",
+        "uo": [
+         "Koos je H uit de ketens? De C-H-bindingen in de ketens blijven heel. Het water komt uit de functionele groepen.",
+         "Koos je H van het zuur en OH van de alcohol? Dan zou de O van het zuur de brug worden. Proeven met gemerkte zuurstof laten zien dat de brug-O van de alcohol komt.",
+         "Klopt: de OH van de COOH-groep en de H van de OH-groep van de alcohol vormen samen water. De O van de alcohol blijft over en verbindt de twee delen.",
+         "Koos je O van de C=O? De C=O blijft in de ester. Die herken je terug in de estergroep −COO−."
+        ],
+        "uh": "Zuur levert OH, alcohol levert H."
+       },
+       {
+        "v": "Welke molecuulformule heeft de ester uit ethanol (C₂H₆O) en propaanzuur (C₃H₆O₂)?",
+        "o": [
+         "C₅H₁₂O₃",
+         "C₅H₁₀O₂",
+         "C₅H₈O₂",
+         "C₅H₁₂O₂"
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 3,
+        "u": "Optellen en H₂O aftrekken: C₅H₁₂O₃ − H₂O = C₅H₁₀O₂.",
+        "uo": [
+         "Koos je C₅H₁₂O₃? Dan heb je alleen opgeteld. Bij verestering gaat er een watermolecuul af.",
+         "Klopt: samen hebben ethanol en propaanzuur C₅H₁₂O₃. Er gaat één H₂O af, dus de ester is C₅H₁₀O₂ (ethylpropanoaat).",
+         "Koos je C₅H₈O₂? Dan heb je vier H afgetrokken. Er gaat één watermolecuul af: twee H en één O.",
+         "Koos je C₅H₁₂O₂? Dan heb je alleen een O afgetrokken. Het watermolecuul neemt ook twee H-atomen mee."
+        ],
+        "uh": "Ester = zuur + alcohol − H₂O.",
+        "ctx": "Een leerling moet de formule opschrijven van de ester die ontstaat uit ethanol en propaanzuur. Ze weet de molecuulformules van de beginstoffen al: ethanol is C₂H₆O en propaanzuur is C₃H₆O₂. Ze vraagt zich af of ze de structuurformule echt moet tekenen, of dat het ook met tellen kan."
+       },
+       {
+        "v": "Hoeveel C-atomen heeft methylpropanoaat?",
+        "o": [
+         "4",
+         "3",
+         "5",
+         "2"
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 3,
+        "u": "Methyl (1 C) + propanoaat (3 C) = 4 C.",
+        "uo": [
+         "Klopt: het methyl-deel heeft één C-atoom en het propanoaat-deel drie, inclusief het C-atoom van de estergroep. Samen vier.",
+         "Koos je 3? Dan heb je alleen het zuurdeel geteld. Het methyl-deel aan de andere kant heeft er nog één.",
+         "Koos je 5? Dan heb je het C-atoom van de COO-groep dubbel geteld. Dat hoort al bij propanoaat.",
+         "Koos je 2? Tel beide delen: methyl is 1, propanoaat is 3. Samen zijn dat er vier."
+        ],
+        "uh": "C-atomen van beide delen optellen."
+       },
+       {
+        "v": "Welke fout heeft de leerling gemaakt in haar structuurformule?",
+        "o": [
+         "Ze heeft het afgesplitste watermolecuul niet in de ester opgenomen",
+         "Ze heeft te veel C-atomen getekend",
+         "Ze heeft een OH-groep vergeten in de ester",
+         "Ze heeft de C=O aan de kant van het alcoholdeel getekend"
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 3,
+        "u": "Bij methylethanoaat hoort de C=O bij het ethanoaatdeel; de methylgroep zit aan de enkel gebonden O.",
+        "uo": [
+         "Koos je water opnemen? Het watermolecuul gaat er juist af. Het hoort niet in de ester.",
+         "Koos je te veel C-atomen? Tel na: haar formule heeft er vier, methylethanoaat heeft er drie. Maar de kern van de fout is de plaats van de C=O.",
+         "Koos je een OH vergeten? Een ester heeft geen OH-groep. Die zijn bij het afsplitsen van water verdwenen.",
+         "Klopt: in CH₃−O−CO−CH₂−CH₃ zit de C=O bij een deel van drie C-atomen. Dat is methylpropanoaat. Voor methylethanoaat moet het CH₃−CO−O−CH₃ zijn: de C=O bij het deel van twee C-atomen."
+        ],
+        "uh": "C=O zit altijd aan de zuurkant.",
+        "ctx": "Een leerling moet de structuurformule van methylethanoaat tekenen. Ze schrijft: CH₃−O−CO−CH₂−CH₃. Haar buurman zegt dat dit een andere ester is. Ze telt het aantal C-atomen in elk deel en kijkt aan welke kant de C=O staat."
+       },
+       {
+        "v": "Wat is hydrolyse van een ester?",
+        "o": [
+         "De ester lost op in water zonder dat er een binding breekt of ontstaat",
+         "De ester verbrandt tot CO₂ en water",
+         "De ester reageert met water tot een carbonzuur en een alcohol",
+         "Twee esters reageren tot een polymeer"
+        ],
+        "c": 2,
+        "d": 1,
+        "s": 4,
+        "u": "Hydrolyse = splitsen met water, het omgekeerde van verestering.",
+        "uo": [
+         "Koos je oplossen? Bij hydrolyse reageert de ester echt: de estergroep breekt. Oplossen is iets anders.",
+         "Koos je verbranden? Verbranding gebeurt met zuurstof en geeft CO₂ en water. Hydrolyse gebeurt met water en geeft zuur en alcohol.",
+         "Klopt: bij hydrolyse breekt de estergroep met behulp van water. Er ontstaan weer een carbonzuur en een alcohol: de omgekeerde reactie van verestering.",
+         "Koos je polymeer? Bij hydrolyse wordt een molecuul juist gesplitst in kleinere stukken."
+        ],
+        "uh": "Hydrolyse: ester + water → zuur + alcohol."
+       },
+       {
+        "v": "Wat is een vet, chemisch gezien?",
+        "o": [
+         "Een lang alkaan zonder functionele groep",
+         "Een ester van glycerol met drie vetzuren",
+         "Een carbonzuur met een heel korte keten",
+         "Een polymeer van etheen"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 4,
+        "u": "Vet = triglyceride: glycerol (drie OH-groepen) veresterd met drie vetzuren.",
+        "uo": [
+         "Koos je alkaan? Vet heeft lange koolstofketens, maar ook drie estergroepen. Het is dus geen alkaan.",
+         "Klopt: glycerol heeft drie OH-groepen. Elke OH-groep vormt een ester met een vetzuur. Zo ontstaat een groot molecuul met drie estergroepen.",
+         "Koos je kort carbonzuur? Vetzuren zijn juist carbonzuren met een lange keten, en in vet zijn ze aan glycerol gebonden.",
+         "Koos je polymeer van etheen? Dat is polyetheen, een plastic. Vet is een ester van glycerol."
+        ],
+        "uh": "Vet = glycerol + 3 vetzuren, via estergroepen."
+       },
+       {
+        "v": "Welke stoffen ontstaan als het vet volledig gehydrolyseerd wordt?",
+        "o": [
+         "Glycerol en drie vetzuren",
+         "Glycerol en drie esters",
+         "Drie alkanen en water",
+         "Koolstofdioxide en water"
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 4,
+        "u": "Hydrolyse breekt de drie estergroepen: glycerol en drie vetzuren.",
+        "uo": [
+         "Klopt: bij hydrolyse breekt water elk van de drie esterbindingen. Er ontstaan glycerol en drie vetzuurmoleculen. Daarvoor zijn drie watermoleculen nodig.",
+         "Koos je glycerol en esters? Bij volledige hydrolyse blijft er geen estergroep over. De vetzuren komen vrij als carbonzuren.",
+         "Koos je alkanen? De koolstofketens blijven aan een COOH-groep zitten: vetzuren, geen alkanen.",
+         "Koos je CO₂ en water? Dat ontstaat bij verbranding met zuurstof. Hydrolyse met water geeft glycerol en vetzuren."
+        ],
+        "uh": "Vet + 3 H₂O → glycerol + 3 vetzuren.",
+        "ctx": "In je darmen wordt vet uit je eten verteerd door het enzym lipase. Lipase versnelt de hydrolyse van de esterbindingen in vetmoleculen. Een vetmolecuul uit olijfolie bestaat uit glycerol waaraan drie vetzuurketens via estergroepen vastzitten."
+       },
+       {
+        "v": "Waarom ruikt boter na een paar weken buiten de koelkast ranzig?",
+        "o": [
+         "De esters in boter worden omgezet in alkanen",
+         "Het vet verestert met zuurstof uit de lucht tot een geurstof",
+         "De boter verdampt en alleen het water blijft over",
+         "Door hydrolyse van het vet komt boterzuur (butaanzuur) vrij"
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 4,
+        "u": "Langzame hydrolyse geeft vrije vetzuren; kleine zoals butaanzuur ruiken sterk.",
+        "uo": [
+         "Koos je alkanen? Bij hydrolyse ontstaan carbonzuren en glycerol, geen alkanen. De ranzige geur komt van een zuur.",
+         "Koos je veresteren met zuurstof? Verestering gebeurt tussen een zuur en een alcohol, niet met zuurstof. De geur komt juist door het splitsen van esters.",
+         "Koos je verdampen? Boter verdampt niet zomaar. De geur komt van een stof die bij de afbraak ontstaat.",
+         "Klopt: vocht en enzymen van bacteriën hydrolyseren langzaam de esterbindingen in het botervet. Daarbij komt onder andere butaanzuur vrij, dat sterk naar ranzige boter ruikt."
+        ],
+        "uh": "Ranzig = vrije vetzuren door hydrolyse.",
+        "ctx": "Roomboter bestaat voor een groot deel uit vetten waarin onder andere butaanzuur als ester gebonden is. Ligt de boter wekenlang in een warme keuken, dan gaat hij scherp en zurig ruiken. Butaanzuur heet niet voor niets ook boterzuur."
+       },
+       {
+        "v": "Waarvoor worden veel kleine esters gebruikt?",
+        "o": [
+         "Als zuur om kalk op te lossen",
+         "Als brandstof voor auto's, omdat ze schoner verbranden dan benzine",
+         "Als geur- en smaakstoffen met een fruitige geur",
+         "Als vervanger van keukenzout"
+        ],
+        "c": 2,
+        "d": 1,
+        "s": 5,
+        "u": "Kleine esters ruiken vaak naar fruit en worden gebruikt in snoep, frisdrank en parfum.",
+        "uo": [
+         "Koos je zuur? Een ester is geen zuur meer: de COOH-groep is omgezet. Voor kalk oplossen gebruik je azijn of een ander zuur.",
+         "Koos je brandstof? Esters kunnen branden, maar ze worden vooral gebruikt om hun geur en als oplosmiddel. Benzine bestaat uit alkanen.",
+         "Klopt: veel kleine esters ruiken naar fruit. Methylbutanoaat ruikt naar appel, ethylbutanoaat naar ananas. Ze worden gebruikt in snoep, limonade en parfum.",
+         "Koos je keukenzout? Keukenzout is natriumchloride, een zout. Esters zijn moleculaire stoffen met een geur."
+        ],
+        "uh": "Kleine esters = fruitgeuren."
+       },
+       {
+        "v": "Waarom gebruik je ethylethanoaat als nagellakremover?",
+        "o": [
+         "Het reageert met het keratine van de nagel tot een stof die de lak loslaat",
+         "Het is een goed oplosmiddel voor de apolaire lak en verdampt snel",
+         "Het is een sterk zuur dat de lak afbreekt",
+         "Het mengt goed met water en spoelt de lak weg"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 5,
+        "u": "Ethylethanoaat lost de lakmoleculen op en verdampt snel door het lage kookpunt (77 °C).",
+        "uo": [
+         "Koos je reageren met de nagel? De remover reageert niet met je nagel. Hij lost alleen de lak op.",
+         "Klopt: ethylethanoaat lost de lak op omdat beide weinig polair zijn. Door het lage kookpunt verdampt het snel van je nagels.",
+         "Koos je sterk zuur? Een ester is geen zuur. De lak verdwijnt doordat hij oplost, niet doordat hij wordt afgebroken.",
+         "Koos je mengen met water? Ethylethanoaat lost juist slecht op in water. Daarom is het goed voor stoffen die niet in water oplossen."
+        ],
+        "uh": "Ester = oplosmiddel voor apolaire stoffen."
+       },
+       {
+        "v": "Hoe kan de leerling ruiken of er een ester is ontstaan?",
+        "o": [
+         "In koud water gieten: de ester drijft als laagje en ruikt fruitig",
+         "Een gloeiende houtspaan in de buis houden",
+         "Broomwater toevoegen en kijken of de kleur binnen een minuut verdwijnt",
+         "Kalkwater toevoegen en kijken of het troebel wordt"
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 5,
+        "u": "De ester lost slecht op in water en drijft; de zure geur van azijnzuur verdwijnt grotendeels in het water.",
+        "uo": [
+         "Klopt: in koud water lossen het overgebleven zuur, de alcohol en het zwavelzuur op. De ester lost slecht op en vormt een laagje dat je kunt ruiken door voorzichtig te wuiven.",
+         "Koos je houtspaan? Daarmee toon je zuurstof aan. Bij verestering ontstaat geen zuurstof.",
+         "Koos je broomwater? Broomwater test op een C=C-binding. Een ester heeft een C=O, en die geeft met broomwater geen snelle reactie.",
+         "Koos je kalkwater? Kalkwater test op CO₂. Bij verestering ontstaat geen CO₂, alleen ester en water."
+        ],
+        "uh": "Ester: laag op water + fruitgeur.",
+        "ctx": "Een leerling verwarmt in een reageerbuis wat pentaan-1-ol en ethaanzuur met twee druppels zwavelzuur in een waterbad. Het mengsel ruikt eerst sterk naar azijn. Na tien minuten wil ze weten of er een ester is ontstaan, maar de azijngeur overheerst nog steeds in de buis."
+       },
+       {
+        "v": "Welke ester ruikt naar ananas, als je weet dat hij uit ethanol en butaanzuur ontstaat?",
+        "o": [
+         "Butanoylethanol",
+         "Butylethanoaat",
+         "Ethylbutaanzuur",
+         "Ethylbutanoaat"
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 5,
+        "u": "Alcohol ethanol → ethyl, zuur butaanzuur → butanoaat.",
+        "uo": [
+         "Koos je butanoylethanol? Die naam volgt de regels niet. De ester heet alkyl + alkanoaat: ethylbutanoaat.",
+         "Koos je butylethanoaat? Die ester heeft dezelfde molecuulformule, maar komt uit butanol en ethaanzuur. Het alcoholdeel staat vooraan.",
+         "Koos je ethylbutaanzuur? In de ester is het zuur omgezet. Het zuurdeel krijgt de uitgang -oaat.",
+         "Klopt: ethanol levert de ethylgroep, butaanzuur het butanoaatdeel. Ethylbutanoaat is een van de belangrijkste geurstoffen van ananas."
+        ],
+        "uh": "Ethanol + butaanzuur = ethylbutanoaat.",
+        "ctx": "Een frisdrankfabrikant wil een ananassmaak namaken. De belangrijkste geurstof in ananas is een ester die ontstaat uit ethanol en butaanzuur. Op het etiket moet de systematische naam van die stof komen, en de fabrikant vraagt een scheikundige om die naam."
+       },
+       {
+        "v": "Welk deel van de esternaam ethylethanoaat komt van het carbonzuur?",
+        "o": [
+         "Eth",
+         "Ethyl",
+         "Ethanoaat",
+         "Oaat zonder stam"
+        ],
+        "c": 2,
+        "d": 1,
+        "s": 2,
+        "u": "Het deel op -oaat komt van het zuur.",
+        "uo": [
+         "Koos je eth? Eth is alleen de stam voor twee C-atomen. Die zit in beide delen van de naam.",
+         "Koos je ethyl? De uitgang -yl hoort bij het alcoholdeel. Ethyl komt van ethanol.",
+         "Klopt: ethanoaat is het zuurdeel, afgeleid van ethaanzuur. Het deel op -yl, ethyl, komt van de alcohol.",
+         "Koos je oaat zonder stam? De uitgang -oaat hoort bij het zuurdeel, maar het hele deel heet ethanoaat, met de stam ervoor."
+        ],
+        "uh": "-oaat = zuurdeel."
+       },
+       {
+        "v": "Welke stof uit de lijst is een ester?",
+        "o": [
+         "CH₃−COOH",
+         "CH₃−COO−CH₃",
+         "CH₃−CH₂−OH",
+         "CH₃−O−CH₃"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 0,
+        "u": "Ester: C=O én O naar een tweede keten.",
+        "uo": [
+         "Koos je CH₃−COOH? Daar zit aan de COO nog een H: dat is de carboxylgroep van ethaanzuur, een carbonzuur.",
+         "Klopt: in CH₃−COO−CH₃ zit een C=O met daarnaast een O die naar een tweede CH₃ gaat. Dat is methylethanoaat.",
+         "Koos je CH₃−CH₂−OH? Dat is ethanol, een alcohol met een OH-groep. Er zit geen C=O in.",
+         "Koos je CH₃−O−CH₃? Hier zit een O tussen twee ketens, maar zonder C=O. Dat is een ether, geen ester."
+        ],
+        "uh": "Ester: −COO− met aan beide kanten C."
+       },
+       {
+        "v": "Wat is het verband tussen verestering en hydrolyse?",
+        "o": [
+         "Het zijn elkaars omgekeerde reacties in hetzelfde evenwicht",
+         "Hydrolyse is een snellere vorm van verestering",
+         "Bij beide ontstaat een ester",
+         "Hydrolyse gebeurt alleen in levende wezens, verestering alleen in fabrieken"
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 4,
+        "u": "Zuur + alcohol ⇄ ester + water: naar rechts verestering, naar links hydrolyse.",
+        "uo": [
+         "Klopt: verestering is de heengaande en hydrolyse de teruggaande reactie van hetzelfde evenwicht. Welke kant wint, hangt af van de hoeveelheden, bijvoorbeeld hoeveel water er is.",
+         "Koos je snellere vorm? Hydrolyse is niet sneller of langzamer, het is de omgekeerde richting: de ester wordt gesplitst.",
+         "Koos je bij beide een ester? Bij hydrolyse verdwijnt de ester juist: er ontstaan een zuur en een alcohol.",
+         "Koos je levende wezens en fabrieken? Beide reacties kunnen overal verlopen. In je darmen gebeurt hydrolyse, in een lab kun je beide doen."
+        ],
+        "uh": "Verestering ⇄ hydrolyse."
+       },
+       {
+        "v": "Hoeveel watermoleculen ontstaan er als glycerol met drie vetzuren een vet vormt?",
+        "o": [
+         "0",
+         "1",
+         "6",
+         "3"
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 3,
+        "u": "Drie estergroepen, en bij elke estergroep komt één H₂O vrij.",
+        "uo": [
+         "Koos je 0? Vetvorming is een verestering, dus een condensatiereactie. Daarbij komt altijd water vrij.",
+         "Koos je 1? Dat geldt voor één estergroep. Een vet heeft er drie, en bij elk ontstaat een watermolecuul.",
+         "Koos je 6? Per estergroep gaat er één OH van het zuur en één H van de alcohol af. Samen is dat één watermolecuul, niet twee.",
+         "Klopt: elke OH-groep van glycerol vormt een ester met één vetzuur. Bij elke estergroep komt één watermolecuul vrij, dus drie in totaal."
+        ],
+        "uh": "Eén estergroep = één H₂O.",
+        "ctx": "Glycerol (propaan-1,2,3-triol) heeft drie OH-groepen. In planten en dieren worden die drie OH-groepen veresterd met vetzuren, bijvoorbeeld stearinezuur (C₁₇H₃₅COOH). Zo ontstaat een vetmolecuul met drie estergroepen, dat in het lichaam als energievoorraad dient."
+       }
+      ],
+      "oe": [
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een snoepfabrikant maakt een peergeur met de ester propylethanoaat. Hij laat propaan-1-ol reageren met ethaanzuur, met een paar druppels geconcentreerd zwavelzuur. Na afloop giet hij het mengsel in koud water.",
+        "v": "Geef de reactievergelijking in structuurformules (of beknopte formules) en leg uit waarom het zwavelzuur wordt toegevoegd.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "CH₃COOH + CH₃CH₂CH₂OH ⇄ CH₃COOCH₂CH₂CH₃ + H₂O: juiste beginstoffen en producten (1p), water als tweede product en kloppend (1p). Zwavelzuur is een katalysator: de reactie verloopt anders heel langzaam (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een leerling krijgt de structuurformule CH₃−CH₂−CH₂−COO−CH₂−CH₃ en moet zeggen welke ester dit is. Ze schrijft: \"butylethanoaat, gemaakt uit butanol en ethaanzuur.\"",
+        "v": "Geef de juiste naam en leg uit welke fout de leerling maakt.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Ethylbutanoaat (1p). Het deel met de C=O heeft vier C-atomen en komt van butaanzuur; de ethylgroep aan de O komt van ethanol. De leerling heeft zuurdeel en alcoholdeel verwisseld (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Bij de verestering van 1,0 mol ethaanzuur met 1,0 mol ethanol ontstaat in evenwicht 0,67 mol ethylethanoaat. Een fabriek wil per mol ethaanzuur meer ester maken. Ethanol is goedkoper dan ethaanzuur.",
+        "v": "Geef twee manieren om meer ester per mol ethaanzuur te krijgen en leg er één uit.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Ethanol in overmaat toevoegen; het gevormde water (of de ester) steeds verwijderen (1p). Uitleg: door het weghalen van een product of het toevoegen van een beginstof verschuift het evenwicht naar rechts, zodat meer ethaanzuur wordt omgezet (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Olijfolie bestaat grotendeels uit triglyceriden: esters van glycerol (propaan-1,2,3-triol) met drie vetzuren, vooral oliezuur. In de dunne darm worden ze door het enzym lipase afgebroken voordat ze opgenomen worden in het bloed.",
+        "v": "Leg uit welk type reactie lipase versnelt, welke stoffen er ontstaan en hoeveel watermoleculen er per triglyceride nodig zijn.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Hydrolyse van de estergroepen (1p). Er ontstaan glycerol en drie vetzuren (1p). Per triglyceride zijn drie watermoleculen nodig, één per estergroep (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Ethylethanoaat (C₄H₈O₂) kookt bij 77 °C en lost slecht op in water. Butaanzuur heeft dezelfde molecuulformule, kookt bij 164 °C en mengt goed met water.",
+        "v": "Verklaar beide verschillen met de bouw van de moleculen.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Butaanzuur heeft een COOH-groep met een OH die waterstofbruggen vormt, tussen de moleculen en met water; de ester heeft geen OH-groep (1p). Daardoor kookt butaanzuur hoger en mengt het goed met water, terwijl de ester laag kookt en slecht oplost (1p)."
+       }
+      ]
      }
     ]
    },
