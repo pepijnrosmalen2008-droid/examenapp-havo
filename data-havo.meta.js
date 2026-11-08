@@ -2599,6 +2599,28 @@ var VAKKEN = [
       "nOe": 5,
       "nBeg": 11,
       "hasSam": true
+     },
+     {
+      "id": "E2",
+      "lo": "na.E.2",
+      "gs": 2,
+      "naam": "Radioactief verval en halveringstijd",
+      "beschrijving": "Je schrijft vervalvergelijkingen voor alfa- en bètaverval, bepaalt het aantal vervallen in een vervalreeks, legt uit wat halveringstijd betekent en rekent ermee, en past dat toe bij koolstofdatering en de keuze van een isotoop in het ziekenhuis.",
+      "ceStatus": "CE",
+      "binas": "25",
+      "val": "",
+      "onderwerpen": [
+       "Alfaverval in een vervalvergelijking",
+       "Bètaverval en gammastraling",
+       "Vervalreeksen",
+       "Wat halveringstijd betekent",
+       "Rekenen met halveringstijd",
+       "Ouderdom bepalen en isotopen kiezen"
+      ],
+      "nSv": 28,
+      "nOe": 5,
+      "nBeg": 11,
+      "hasSam": true
      }
     ]
    }

@@ -1,0 +1,690 @@
+{
+ "id": "E2",
+ "lo": "na.E.2",
+ "gs": 2,
+ "naam": "Radioactief verval en halveringstijd",
+ "beschrijving": "Je schrijft vervalvergelijkingen voor alfa- en bètaverval, bepaalt het aantal vervallen in een vervalreeks, legt uit wat halveringstijd betekent en rekent ermee, en past dat toe bij koolstofdatering en de keuze van een isotoop in het ziekenhuis.",
+ "ceStatus": "CE",
+ "binas": "25",
+ "val": "",
+ "onderwerpen": [
+  "Alfaverval in een vervalvergelijking",
+  "Bètaverval en gammastraling",
+  "Vervalreeksen",
+  "Wat halveringstijd betekent",
+  "Rekenen met halveringstijd",
+  "Ouderdom bepalen en isotopen kiezen"
+ ],
+ "sam": "Alfaverval: A − 4, Z − 2; bètaverval (β⁻): een neutron wordt een proton en een elektron, A gelijk, Z + 1; gamma: alleen energie. In een vervalvergelijking zijn massagetallen en atoomnummers links en rechts gelijk. Vervalreeks: aantal α = ΔA / 4, daarna aantal β uit Z. Halveringstijd: tijd waarin de helft vervalt; na n halveringstijden is (½)ⁿ over. Koolstofdatering met t½ = 5730 jaar; medisch onderzoek met een korte halveringstijd.",
+ "begrippen": [
+  {
+   "t": "Alfaverval",
+   "d": "Verval waarbij een kern een heliumkern uitzendt; massagetal − 4, atoomnummer − 2."
+  },
+  {
+   "t": "Bètaverval",
+   "d": "Verval waarbij in de kern een neutron een proton en een elektron wordt; massagetal gelijk, atoomnummer + 1."
+  },
+  {
+   "t": "Gammastraling",
+   "d": "Foton dat een kern uitzendt om overtollige energie kwijt te raken; A en Z blijven gelijk."
+  },
+  {
+   "t": "Vervalvergelijking",
+   "d": "Reactievergelijking van een kernverval; massagetallen en atoomnummers zijn links en rechts gelijk."
+  },
+  {
+   "t": "Dochterkern",
+   "d": "Kern die ontstaat bij het verval van een moederkern."
+  },
+  {
+   "t": "Vervalreeks",
+   "d": "Rij van vervallen waarbij elke dochterkern weer vervalt, tot er een stabiele kern overblijft."
+  },
+  {
+   "t": "Halveringstijd",
+   "d": "Tijd waarin de helft van de instabiele kernen van een isotoop vervalt (t½)."
+  },
+  {
+   "t": "Activiteit",
+   "d": "Aantal kernen dat per seconde vervalt, in becquerel (Bq); halveert ook elke halveringstijd."
+  },
+  {
+   "t": "Isotoop",
+   "d": "Atoomsoort met hetzelfde aantal protonen maar een ander aantal neutronen."
+  },
+  {
+   "t": "Koolstofdatering",
+   "d": "Ouderdom bepalen met het koolstof-14 dat na de dood vervalt (t½ = 5730 jaar)."
+  },
+  {
+   "t": "Kernreactie",
+   "d": "Verandering van een atoomkern, zoals verval; het element kan daarbij veranderen."
+  }
+ ],
+ "sv": [
+  {
+   "v": "Wat gebeurt er met het massagetal en het atoomnummer bij alfaverval?",
+   "o": [
+    "A blijft gelijk, Z stijgt met 1",
+    "A daalt met 2, Z daalt met 4",
+    "A daalt met 4, Z daalt met 2",
+    "A daalt met 4, Z blijft gelijk"
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 0,
+   "u": "Er gaat een ⁴₂He af: A − 4, Z − 2.",
+   "uo": [
+    "Koos je A gelijk en Z + 1? Dat hoort bij bètaverval, waarbij een neutron in een proton verandert. Bij alfa verliest de kern deeltjes.",
+    "Koos je andersom? Een alfadeeltje heeft 4 nucleonen, waarvan 2 protonen. Het massagetal daalt dus met 4, het atoomnummer met 2.",
+    "Klopt: de kern verliest een alfadeeltje van 2 protonen en 2 neutronen. Het massagetal daalt dus met 4 en het atoomnummer met 2. Er ontstaat een ander element.",
+    "Koos je Z gelijk? Er gaan ook 2 protonen weg, en dan verandert het atoomnummer wel. Daardoor wordt het een ander element."
+   ],
+   "uh": "α: A − 4, Z − 2."
+  },
+  {
+   "v": "Welke kern ontstaat bij alfaverval van ²²⁶₈₈Ra?",
+   "o": [
+    "²²⁶₈₉Ac",
+    "²²²₈₆Rn",
+    "²²²₈₈Ra",
+    "²³⁰₉₀Th"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 0,
+   "u": "226 − 4 = 222, 88 − 2 = 86 → radon.",
+   "uo": [
+    "Koos je ²²⁶₈₉Ac? Dat zou het product van bètaverval zijn: A gelijk, Z + 1. Bij alfaverval daalt A met 4.",
+    "Klopt: A = 226 − 4 = 222 en Z = 88 − 2 = 86. Element 86 is radon, dus ²²²₈₆Rn.",
+    "Koos je ²²²₈₈Ra? Het massagetal klopt, maar het atoomnummer moet ook dalen. Met 2 protonen minder is het geen radium meer.",
+    "Koos je ²³⁰₉₀Th? Dan heb je het alfadeeltje opgeteld in plaats van afgetrokken. De kern verliest juist 4 nucleonen."
+   ],
+   "uh": "Ra → Rn + α."
+  },
+  {
+   "v": "Welke vervalvergelijking klopt voor alfaverval van uraan-238 (Z = 92)?",
+   "o": [
+    "²³⁸₉₂U → ²³⁴₉₀Th + ⁴₂He",
+    "²³⁸₉₂U → ²³⁴₉₂U + ⁴₂He",
+    "²³⁸₉₂U → ²³⁸₉₃Np + ⁰₋₁e",
+    "²³⁸₉₂U → ²³⁴₉₀Th + ⁴₂He + ⁰₋₁e"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 0,
+   "u": "Links en rechts gelijke A en Z: 238 = 234 + 4, 92 = 90 + 2.",
+   "uo": [
+    "Klopt: links staat 238 en 92, rechts 234 + 4 = 238 en 90 + 2 = 92. Massagetal en lading kloppen aan beide kanten. Element 90 is thorium.",
+    "Koos je ²³⁴₉₂U? Dan klopt het atoomnummer niet: 92 + 2 = 94, niet 92. Een kern die 2 protonen verliest, wordt een ander element.",
+    "Koos je neptunium met een elektron? Dat is bètaverval. De vraag gaat over alfaverval, waarbij een heliumkern vrijkomt.",
+    "Koos je met een extra elektron? Dan klopt de lading niet meer: rechts zou 90 + 2 − 1 = 91 staan. Bij alfaverval komt alleen een heliumkern vrij."
+   ],
+   "uh": "Controleer A en Z links en rechts.",
+   "ctx": "Uraan-238 is de meest voorkomende uraanisotoop in de aardkorst. Het vervalt door alfastraling, met een halveringstijd van 4,5 miljard jaar. Een leerling moet de vervalvergelijking opschrijven en controleert of massagetal en atoomnummer aan beide kanten gelijk zijn."
+  },
+  {
+   "v": "Welke kern ontstaat er uit het polonium?",
+   "o": [
+    "²¹⁴₈₆Rn",
+    "²¹⁰₈₅At",
+    "²⁰⁶₈₄Po",
+    "²⁰⁶₈₂Pb"
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 0,
+   "u": "210 − 4 = 206, 84 − 2 = 82 → lood.",
+   "uo": [
+    "Koos je ²¹⁴₈₆Rn? Dan heb je het alfadeeltje opgeteld. De kern verliest 2 protonen en 2 neutronen.",
+    "Koos je ²¹⁰₈₅At? Dat zou ontstaan bij bètaverval. Polonium-210 zendt alfastraling uit.",
+    "Koos je ²⁰⁶₈₄Po? Het massagetal klopt, maar met 2 protonen minder is het geen polonium meer.",
+    "Klopt: bij alfaverval daalt A met 4 tot 206 en Z met 2 tot 82. Element 82 is lood, dus ²⁰⁶₈₂Pb, en dat is stabiel."
+   ],
+   "uh": "Po-210 → Pb-206 + α.",
+   "ctx": "Polonium-210 (Z = 84) is een alfastraler met een halveringstijd van 138 dagen. Het komt in kleine hoeveelheden voor in tabaksrook. Na het verval blijft er een stabiele kern over die niet meer straalt."
+  },
+  {
+   "v": "Wat gebeurt er met A en Z bij β⁻-verval?",
+   "o": [
+    "A blijft gelijk, Z daalt juist met 1",
+    "A daalt met 1, Z blijft gelijk",
+    "A blijft gelijk, Z stijgt met 1",
+    "A daalt met 4, Z daalt met 2"
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 1,
+   "u": "n → p + e⁻: zelfde A, Z + 1.",
+   "uo": [
+    "Koos je Z − 1? Dan zou er een proton in een neutron veranderen. Bij β⁻ is het andersom: er komt een proton bij.",
+    "Koos je A − 1? Er verdwijnt geen nucleon uit de kern; een neutron wordt een proton. Het massagetal blijft gelijk.",
+    "Klopt: in de kern verandert een neutron in een proton en een elektron. Het aantal nucleonen blijft gelijk, maar er is een proton bij. Het atoomnummer stijgt met 1.",
+    "Koos je A − 4, Z − 2? Dat hoort bij alfaverval. Bij bètaverval komt er een elektron vrij, dat bijna geen massa heeft."
+   ],
+   "uh": "β⁻: Z + 1."
+  },
+  {
+   "v": "Welke kern ontstaat bij β⁻-verval van ¹³¹₅₃I?",
+   "o": [
+    "¹³¹₅₂Te",
+    "¹³¹₅₄Xe",
+    "¹³⁰₅₃I",
+    "¹²⁷₅₁Sb"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 1,
+   "u": "A = 131, Z = 54 → xenon.",
+   "uo": [
+    "Koos je ¹³¹₅₂Te? Dan is het atoomnummer gedaald. Bij β⁻ verandert een neutron in een proton, dus Z stijgt.",
+    "Klopt: het massagetal blijft 131 en het atoomnummer wordt 53 + 1 = 54. Element 54 is xenon.",
+    "Koos je ¹³⁰₅₃I? Het elektron heeft bijna geen massa, dus het massagetal verandert niet. En Z moet met 1 stijgen.",
+    "Koos je ¹²⁷₅₁Sb? Dat is het product van alfaverval. Jodium-131 is juist een bètastraler."
+   ],
+   "uh": "I → Xe + e⁻."
+  },
+  {
+   "v": "Wat verandert er aan een kern als hij alleen gammastraling uitzendt?",
+   "o": [
+    "Alleen de energie",
+    "Het atoomnummer stijgt met 1",
+    "Het massagetal daalt met 1",
+    "De kern wordt een ander element"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 1,
+   "u": "γ: foton, kern gaat naar lagere energietoestand.",
+   "uo": [
+    "Klopt: een gammafoton heeft geen lading en geen massa. De kern raakt alleen overtollige energie kwijt en blijft hetzelfde element met hetzelfde massagetal.",
+    "Koos je Z + 1? Dat gebeurt bij bètaverval. Een gammafoton neemt geen lading mee.",
+    "Koos je A − 1? Een foton bevat geen protonen of neutronen. Het massagetal blijft dus gelijk; alleen de energie van de kern daalt.",
+    "Koos je ander element? Het element hangt af van het aantal protonen, en dat verandert niet als er alleen een foton vrijkomt."
+   ],
+   "uh": "γ: alleen energie.",
+   "ctx": "Technetium-99m is een kern in een aangeslagen toestand: hij heeft te veel energie. Hij zendt een gammafoton uit en wordt dan gewoon technetium-99. Artsen gebruiken dit om organen zichtbaar te maken, omdat de gammastraling makkelijk uit het lichaam komt."
+  },
+  {
+   "v": "Welk deeltje hoort op de plek van X in: ⁶⁰₂₇Co → ⁶⁰₂₈Ni + X?",
+   "o": [
+    "¹₁p",
+    "⁴₂He",
+    "¹₀n",
+    "⁰₋₁e"
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 1,
+   "u": "A gelijk, Z + 1 → elektron.",
+   "uo": [
+    "Koos je een proton? Dan zou rechts Z = 29 en A = 61 zijn. Het deeltje moet lading −1 en massagetal 0 hebben.",
+    "Koos je ⁴₂He? Dan zou rechts A = 64 en Z = 30 staan. Dat klopt niet met links, waar 60 en 27 staan.",
+    "Koos je een neutron? Dan zou het massagetal rechts 61 worden. De lading klopt dan ook niet.",
+    "Klopt: links A = 60 en Z = 27, rechts 60 en 28. X moet dus A = 0 en lading −1 hebben: een elektron. Het is bètaverval."
+   ],
+   "uh": "Ontbrekend deeltje: A en Z kloppend maken."
+  },
+  {
+   "v": "Welke kern ontstaat er bij het verval van kalium-40 in de banaan?",
+   "o": [
+    "³⁶₁₇Cl",
+    "⁴⁰₁₈Ar",
+    "⁴⁰₂₀Ca",
+    "⁴¹₁₉K"
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 1,
+   "u": "β⁻: A = 40, Z = 19 + 1 = 20 → calcium.",
+   "uo": [
+    "Koos je ³⁶₁₇Cl? Dat zou alfaverval zijn. Kalium-40 is in dit geval een bètastraler.",
+    "Koos je ⁴⁰₁₈Ar? Dan is het atoomnummer gedaald. Dat gebeurt bij een ander soort verval dan β⁻; bij β⁻ komt er een proton bij.",
+    "Klopt: bij β⁻-verval blijft het massagetal 40 en stijgt het atoomnummer van 19 naar 20. Element 20 is calcium.",
+    "Koos je ⁴¹₁₉K? Er komt geen neutron bij, en het element verandert wel. Het massagetal blijft 40."
+   ],
+   "uh": "K-40 → Ca-40 + e⁻.",
+   "ctx": "In een banaan zit kalium, en een heel klein deel daarvan is de radioactieve isotoop kalium-40 (Z = 19). Die vervalt meestal door β⁻-straling. Daardoor is een banaan een beetje radioactief, net als je eigen lichaam."
+  },
+  {
+   "v": "Wat is een vervalreeks?",
+   "o": [
+    "Een lijst van alle stabiele isotopen",
+    "Een rij vervallen tot een stabiele kern",
+    "Het aantal kernen dat per seconde vervalt",
+    "Een grafiek van de halveringstijd"
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 2,
+   "u": "Moeder → dochter → kleindochter ... tot stabiel.",
+   "uo": [
+    "Koos je stabiele isotopen? Een vervalreeks gaat juist over instabiele kernen die na elkaar vervallen, tot er een stabiele overblijft.",
+    "Klopt: de kern die ontstaat, de dochterkern, is vaak zelf ook instabiel en vervalt weer. Zo ontstaat een reeks van vervallen tot er een stabiele kern overblijft, bij uraan-238 lood-206.",
+    "Koos je per seconde? Dat is de activiteit van een bron. Een vervalreeks is de volgorde van kernen die na elkaar uit elkaar ontstaan.",
+    "Koos je een grafiek? Een vervalreeks is geen grafiek, maar een rij vervalvergelijkingen achter elkaar."
+   ],
+   "uh": "Reeks van vervallen tot stabiel."
+  },
+  {
+   "v": "Hoeveel alfa- en bètavervallen zitten er in de reeks van ²³⁸₉₂U naar ²⁰⁶₈₂Pb?",
+   "o": [
+    "8 alfa en 6 bèta",
+    "6 alfa en 8 bèta",
+    "8 alfa en 0 bèta",
+    "10 alfa en 2 bèta"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 2,
+   "u": "ΔA = 32 → 8 α (Z − 16 = 76); 82 − 76 = 6 β.",
+   "uo": [
+    "Klopt: alleen alfa verandert het massagetal: (238 − 206) / 4 = 8 alfavervallen. Die verlagen Z met 16 tot 76. Om op 82 te komen zijn er 6 bètavervallen nodig, die Z elk met 1 verhogen.",
+    "Koos je 6 alfa en 8 bèta? Met 6 alfa daalt A maar met 24, tot 214. Er zijn 32 nucleonen kwijt, dus 8 alfa.",
+    "Koos je 0 bèta? Met 8 alfa kom je op Z = 76, maar lood heeft Z = 82. Er moeten nog 6 protonen bij, via bètaverval.",
+    "Koos je 10 alfa? Dan daalt A met 40, tot 198. Dat is minder dan 206, dus je bent voorbij lood geschoten. Reken (238 − 206) / 4."
+   ],
+   "uh": "Eerst alfa uit ΔA, dan bèta uit Z.",
+   "ctx": "Uraan-238 vervalt via een lange reeks tot het stabiele lood-206. Onderweg ontstaan onder andere thorium, radium en radon. Alleen alfaverval verandert het massagetal, met stappen van 4. Bètaverval verandert alleen het atoomnummer."
+  },
+  {
+   "v": "Thorium-234 (Z = 90) vervalt door β⁻. Wat is de dochterkern?",
+   "o": [
+    "²³³₉₀Th",
+    "²³⁰₈₈Ra",
+    "²³⁴₈₉Ac",
+    "²³⁴₉₁Pa"
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 2,
+   "u": "A = 234, Z = 91 → protactinium.",
+   "uo": [
+    "Koos je ²³³₉₀Th? Er verdwijnt geen neutron; het verandert in een proton. A blijft 234.",
+    "Koos je ²³⁰₈₈Ra? Dat is het product van alfaverval. Thorium-234 is een bètastraler.",
+    "Koos je ²³⁴₈₉Ac? Dan is Z gedaald, maar bij β⁻ verandert een neutron in een proton. Er komt dus een proton bij en Z wordt 91.",
+    "Klopt: bij bètaverval blijft A gelijk en stijgt Z met 1, tot 91. Element 91 is protactinium."
+   ],
+   "uh": "β⁻: Z + 1."
+  },
+  {
+   "v": "Hoeveel alfa- en bètavervallen liggen er tussen ²²⁶₈₈Ra en ²¹⁰₈₂Pb?",
+   "o": [
+    "4 alfa en 0 bèta",
+    "2 alfa en 4 bèta",
+    "4 alfa en 2 bèta",
+    "3 alfa en 3 bèta"
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 2,
+   "u": "ΔA = 16 → 4 α (Z − 8 = 80); 82 − 80 = 2 β.",
+   "uo": [
+    "Koos je 0 bèta? Met 4 alfa kom je op Z = 80, maar lood heeft Z = 82. Er zijn nog 2 bètavervallen nodig.",
+    "Koos je 2 alfa en 4 bèta? Met 2 alfa daalt A maar met 8, tot 218. Het verschil in massagetal is 16, dus 4 alfa.",
+    "Klopt: (226 − 210) / 4 = 4 alfavervallen. Die verlagen Z met 8, van 88 naar 80. Om op 82 te komen zijn 2 bètavervallen nodig.",
+    "Koos je 3 alfa? Dan daalt A met 12, niet met 16. Alleen alfa verandert het massagetal."
+   ],
+   "uh": "ΔA/4 = aantal α."
+  },
+  {
+   "v": "Wat is de halveringstijd van een radioactieve isotoop?",
+   "o": [
+    "De helft van de tijd tot alle kernen vervallen zijn",
+    "De tijd waarin de helft van de kernen vervalt",
+    "De tijd waarin de straling twee keer zo sterk wordt",
+    "De tijd tot de stof helemaal veilig is"
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 3,
+   "u": "t½: na t½ is de helft over.",
+   "uo": [
+    "Koos je de helft van de tijd tot alles vervallen is? Er komt geen moment waarop alles vervallen is: er blijft steeds de helft over. Daarom gebruik je de halveringstijd.",
+    "Klopt: na één halveringstijd is de helft van de instabiele kernen vervallen. Na nog een halveringstijd is de helft van de rest vervallen, enzovoort.",
+    "Koos je twee keer zo sterk? De straling wordt juist zwakker, omdat er steeds minder kernen over zijn.",
+    "Koos je helemaal veilig? Na één halveringstijd is er nog de helft over. Hoe lang het duurt tot een stof veilig is, hangt van de hoeveelheid af."
+   ],
+   "uh": "t½: helft vervallen."
+  },
+  {
+   "v": "Kun je voorspellen wanneer één bepaalde kern vervalt?",
+   "o": [
+    "Nee, verval is toeval",
+    "Ja, na precies één halveringstijd",
+    "Ja, als je de temperatuur kent",
+    "Ja, de oudste kernen vervallen het eerst"
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 3,
+   "u": "Verval is willekeurig; t½ is statistisch.",
+   "uo": [
+    "Klopt: of een kern de volgende seconde vervalt, is puur toeval. Bij heel veel kernen middelt dat uit, en dan vervalt in elke halveringstijd precies de helft.",
+    "Koos je na precies één halveringstijd? Dan zouden alle kernen tegelijk vervallen. In werkelijkheid vervalt in die tijd maar de helft, en welke is toeval.",
+    "Koos je temperatuur? Radioactief verval hangt niet af van temperatuur, druk of chemische binding.",
+    "Koos je de oudste eerst? Een kern veroudert niet. Een kern van een miljard jaar oud heeft dezelfde kans om te vervallen als een nieuwe."
+   ],
+   "uh": "Verval = toeval."
+  },
+  {
+   "v": "Welk deel van een radioactieve stof is na drie halveringstijden nog over?",
+   "o": [
+    "1/9",
+    "1/3",
+    "1/16",
+    "1/8"
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 3,
+   "u": "Drie keer halveren: (½)³ = 1/8.",
+   "uo": [
+    "Koos je 1/9? Dat is (⅓)², alsof er per stap een derde overblijft. De hoeveelheid halveert, dus het is (½)³ = 1/8.",
+    "Koos je 1/3? Dan heb je gedacht dat er per halveringstijd een vast deel afgaat. Het halveert steeds: ½ × ½ × ½.",
+    "Koos je 1/16? Dat is (½)⁴, na vier halveringstijden. Na drie halveringstijden is er twee keer zoveel over: 1/8.",
+    "Klopt: na elke halveringstijd halveert de hoeveelheid: ½, ¼, ⅛. Na drie halveringstijden is 1/8 deel over."
+   ],
+   "uh": "n halveringstijden: (½)ⁿ.",
+   "ctx": "Een ziekenhuis bewaart een bronnetje met radioactief iridium voor bestraling. Na een tijd is de bron zo zwak geworden dat hij vervangen moet worden. De technicus rekent uit hoeveel er nog over is nadat er drie halveringstijden verstreken zijn."
+  },
+  {
+   "v": "Een isotoop heeft een halveringstijd van 8 dagen. Na 8 dagen is de helft vervallen. Wat geldt na 16 dagen?",
+   "o": [
+    "Er is nog de helft over",
+    "Alles is vervallen",
+    "Er is nog een kwart over",
+    "Er is nog een achtste over"
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 3,
+   "u": "Na 2 × t½: ¼ over.",
+   "uo": [
+    "Koos je nog de helft? Dat geldt na één halveringstijd. Na twee is het de helft van de helft.",
+    "Koos je alles vervallen? Dat is een veelgemaakte fout: twee keer de helft is niet het geheel. Elke halveringstijd vervalt de helft van wat er nog over is.",
+    "Klopt: na 8 dagen is de helft over, na nog eens 8 dagen de helft daarvan: een kwart.",
+    "Koos je een achtste? Dat is na drie halveringstijden, dus na 24 dagen. Na 16 dagen is er twee keer gehalveerd: een kwart."
+   ],
+   "uh": "Twee keer halveren = kwart."
+  },
+  {
+   "v": "Een leerling verwarmt een radioactief preparaat. Wat gebeurt er met de halveringstijd?",
+   "o": [
+    "Die wordt korter",
+    "Die blijft gelijk",
+    "Die wordt langer",
+    "Die wordt nul"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 3,
+   "u": "Kernverval hangt niet af van temperatuur.",
+   "uo": [
+    "Koos je korter? Chemische reacties gaan sneller bij hogere temperatuur, maar kernverval niet. De halveringstijd blijft gelijk.",
+    "Klopt: radioactief verval gebeurt in de kern, en die merkt niets van temperatuur, druk of chemische reacties. De halveringstijd is een vaste eigenschap van de isotoop.",
+    "Koos je langer? Afkoelen of verwarmen verandert niets aan de kans dat een kern vervalt.",
+    "Koos je nul? De stof blijft gewoon in hetzelfde tempo vervallen. Je kunt radioactiviteit niet wegstoken."
+   ],
+   "uh": "t½: vaste eigenschap."
+  },
+  {
+   "v": "Een bron bevat 800 instabiele kernen met t½ = 2,0 dagen. Hoeveel zijn er na 6,0 dagen nog over?",
+   "o": [
+    "100",
+    "200",
+    "400",
+    "0"
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 4,
+   "u": "6/2 = 3 halveringstijden: 800 → 400 → 200 → 100.",
+   "uo": [
+    "Klopt: 6,0 dagen is drie halveringstijden. 800 → 400 → 200 → 100 kernen.",
+    "Koos je 200? Dat is na twee halveringstijden, na 4,0 dagen. Er is nog één keer halveren nodig.",
+    "Koos je 400? Dat is na één halveringstijd, na 2,0 dagen. In 6,0 dagen passen er drie, dus halveer nog twee keer.",
+    "Koos je 0? Er blijft altijd een deel over. Na drie halveringstijden is het een achtste."
+   ],
+   "uh": "Tel het aantal halveringstijden."
+  },
+  {
+   "v": "Hoeveel jodium-131 is er na 24 dagen nog in de schildklier van de patiënt?",
+   "o": [
+    "0 MBq",
+    "400 MBq",
+    "133 MBq",
+    "50 MBq"
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 4,
+   "u": "24/8 = 3 → 400/8.",
+   "uo": [
+    "Koos je 0 MBq? Na een paar halveringstijden is er nog steeds iets over. Het duurt veel langer tot het onmeetbaar is.",
+    "Koos je 400 MBq? Dat is de begintoestand. Na 24 dagen is er duidelijk minder over.",
+    "Koos je 133 MBq? Dan heb je 400 door 3 gedeeld. De hoeveelheid halveert per halveringstijd: 400 / 2³.",
+    "Klopt: 24 dagen is drie halveringstijden van 8 dagen. De activiteit halveert drie keer: 400 → 200 → 100 → 50 MBq."
+   ],
+   "uh": "A = A₀ · (½)^(t/t½).",
+   "ctx": "Een patiënt met een te snel werkende schildklier krijgt een capsule met jodium-131, een bètastraler met een halveringstijd van 8,0 dagen. De activiteit in de schildklier is direct na de behandeling 400 MBq. We nemen aan dat het lichaam het jodium niet uitscheidt."
+  },
+  {
+   "v": "Na 15 uur is van een bron nog 1/8 deel over. Hoe groot is de halveringstijd?",
+   "o": [
+    "7,5 uur",
+    "1,88 uur",
+    "5,0 uur",
+    "45 uur"
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 4,
+   "u": "1/8 = (½)³ → 3 t½ = 15 h.",
+   "uo": [
+    "Koos je 7,5 uur? Dan passen er twee halveringstijden in 15 uur en is er een kwart over, niet een achtste. Je hebt er drie nodig.",
+    "Koos je 1,88 uur? Dan heb je 15 door 8 gedeeld. Het gaat om het aantal halveringen, en 1/8 is drie keer halveren.",
+    "Klopt: 1/8 = (½)³, dus er zijn drie halveringstijden verstreken. 15 / 3 = 5,0 uur.",
+    "Koos je 45 uur? Dan heb je vermenigvuldigd. De halveringstijd is korter dan de totale tijd: 15 uur gedeeld door 3."
+   ],
+   "uh": "1/8 = drie halveringen.",
+   "ctx": "Een leerling meet de activiteit van een kortlevende bron. Aan het begin meet ze 1600 tikken per minuut (na aftrek van de achtergrond). Na 15 uur meet ze nog 200 tikken per minuut. Ze wil weten hoe groot de halveringstijd van deze isotoop is."
+  },
+  {
+   "v": "Hoe lees je de halveringstijd af in een grafiek van het aantal kernen tegen de tijd?",
+   "o": [
+    "Lees af waar de grafiek de tijdas raakt",
+    "Zoek de tijd waarop N de helft van N₀ is",
+    "Deel de eindtijd van de grafiek door twee",
+    "Zoek waar de grafiek het steilst loopt"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 4,
+   "u": "N = ½N₀ → t = t½.",
+   "uo": [
+    "Koos je de tijdas raken? De grafiek komt nooit op nul: er blijft steeds de helft over. Daar kun je de halveringstijd dus niet aflezen.",
+    "Klopt: zoek op de verticale as de helft van de beginwaarde, ga horizontaal naar de grafiek en lees de tijd af. Controleer met een tweede halvering: van ½N₀ naar ¼N₀ duurt even lang.",
+    "Koos je eindtijd delen door twee? De eindtijd van een grafiek is willekeurig gekozen. De halveringstijd volgt uit waar N halveert.",
+    "Koos je het steilste punt? De grafiek is in het begin het steilst, maar daar lees je de halveringstijd niet af. Je zoekt waar N gehalveerd is."
+   ],
+   "uh": "Grafiek: zoek ½N₀."
+  },
+  {
+   "v": "Hoeveel procent van een radioactieve stof is na 10 halveringstijden nog over?",
+   "o": [
+    "Ongeveer 0,1%",
+    "Ongeveer 10%",
+    "Ongeveer 5%",
+    "0%, alles is weg"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 4,
+   "u": "(½)¹⁰ = 1/1024 ≈ 0,1%.",
+   "uo": [
+    "Klopt: (½)¹⁰ = 1/1024, ongeveer een duizendste deel, dus 0,1%. Daarom zegt men vaak dat een stof na 10 halveringstijden praktisch vervallen is.",
+    "Koos je 10%? Dan heb je gerekend alsof er per halveringstijd 10% afgaat. Het halveert elke keer.",
+    "Koos je 5%? Dat zou betekenen dat je 100% gedeeld hebt door 2 × 10. Halveren gaat met machten: 2¹⁰ = 1024.",
+    "Koos je 0%? Er blijft altijd een klein deel over. Na 10 halveringstijden is het ongeveer een duizendste."
+   ],
+   "uh": "10 t½ → 1/1024."
+  },
+  {
+   "v": "Hoe groot is de activiteit na 12 uur?",
+   "o": [
+    "0 Bq",
+    "150 Bq",
+    "300 Bq",
+    "75 Bq"
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 4,
+   "u": "t½ = 3,0 h; 12 h = 4 t½ → 1200/16.",
+   "uo": [
+    "Koos je 0 Bq? Ook na vier halveringstijden is er nog een zestiende over. De activiteit nadert nul, maar wordt het nooit precies.",
+    "Koos je 150 Bq? Dat is na drie halveringstijden, na 9 uur. Er moet nog één keer gehalveerd worden.",
+    "Koos je 300 Bq? Dat is de waarde na 6,0 uur uit de tabel. Na 12 uur zijn er twee halveringen meer.",
+    "Klopt: uit de tabel volgt t½ = 3,0 uur (1200 → 600 → 300). 12 uur is vier halveringstijden: 1200 / 2⁴ = 1200 / 16 = 75 Bq."
+   ],
+   "uh": "Eerst t½ uit de tabel, dan halveren.",
+   "ctx": "Een leerling meet de activiteit van een bron (na aftrek van de achtergrond). Op t = 0 h is die 1200 Bq, op t = 3,0 h 600 Bq en op t = 6,0 h 300 Bq. Ze wil voorspellen hoeveel het is op t = 12 h."
+  },
+  {
+   "v": "Waarom gebruikt een ziekenhuis voor onderzoek in het lichaam liefst een isotoop met een korte halveringstijd?",
+   "o": [
+    "Dan is de stof goedkoper om te maken",
+    "Dan straalt de stof minder sterk tijdens het onderzoek",
+    "Dan is de straling snel weg uit de patiënt",
+    "Dan blijft de stof langer in het lichaam"
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 5,
+   "u": "Korte t½: straalt even, daarna snel weg.",
+   "uo": [
+    "Koos je goedkoper? Kortlevende isotopen zijn juist lastig, omdat je ze snel moet gebruiken. De reden is de veiligheid van de patiënt.",
+    "Koos je minder sterk? Een korte halveringstijd betekent bij dezelfde hoeveelheid juist een hoge activiteit. Het voordeel is dat het snel voorbij is.",
+    "Klopt: een isotoop met een korte halveringstijd, zoals technetium-99m (6 uur), geeft genoeg straling voor een scan, maar is na een paar dagen vrijwel vervallen. Zo krijgt de patiënt zo weinig mogelijk dosis.",
+    "Koos je langer in het lichaam? Hoe lang een stof in het lichaam blijft, hangt ook af van uitscheiding. Een korte halveringstijd zorgt er juist voor dat de straling snel weg is."
+   ],
+   "uh": "Medisch: korte t½."
+  },
+  {
+   "v": "Hoe oud is het stuk hout volgens de koolstofdatering?",
+   "o": [
+    "2865 jaar",
+    "11 460 jaar",
+    "17 190 jaar",
+    "22 920 jaar"
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 5,
+   "u": "25% = ¼ = 2 t½ → 2 × 5730.",
+   "uo": [
+    "Koos je 2865 jaar? Dat is een halve halveringstijd. In die tijd daalt het koolstof-14 maar tot ongeveer 71%.",
+    "Klopt: 25% is een kwart, dus er zijn twee halveringstijden verstreken. 2 × 5730 = 11 460 jaar.",
+    "Koos je 17 190 jaar? Dat is drie halveringstijden; dan zou er nog 12,5% over zijn.",
+    "Koos je 22 920 jaar? Dan heb je vier keer gehalveerd, alsof 25% een zestiende deel is. Een kwart krijg je al na twee keer halveren."
+   ],
+   "uh": "¼ over = 2 t½.",
+   "ctx": "Archeologen vinden in een grot een stuk houtskool van een kampvuur. Levend hout bevat een vaste hoeveelheid koolstof-14. In de houtskool is nog 25% van die hoeveelheid over. De halveringstijd van koolstof-14 is 5730 jaar."
+  },
+  {
+   "v": "Waarom kun je met koolstof-14 niet de ouderdom van een dinosaurusbot van 66 miljoen jaar bepalen?",
+   "o": [
+    "Het koolstof-14 is allang weg",
+    "Dinosaurussen bevatten geen koolstof",
+    "Koolstof-14 vervalt in botten niet",
+    "De halveringstijd is te lang"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 5,
+   "u": "66 miljoen jaar ≈ 11 500 t½: niets meetbaars over.",
+   "uo": [
+    "Klopt: 66 miljoen jaar is meer dan 11 000 halveringstijden van koolstof-14. Er is dan niets meetbaars meer over. Voor zulke oude stenen gebruiken geologen isotopen met een veel langere halveringstijd, zoals uraan of kalium.",
+    "Koos je geen koolstof? Dinosaurussen waren, net als wij, gemaakt van koolstofverbindingen. Het probleem is dat het koolstof-14 allang vervallen is.",
+    "Koos je vervalt niet? Radioactief verval hangt niet af van de omgeving. In een bot vervalt koolstof-14 net zo snel als overal.",
+    "Koos je te lang? Juist andersom: 5730 jaar is veel te kort vergeleken met 66 miljoen jaar."
+   ],
+   "uh": "C-14: tot ongeveer 50 000 jaar.",
+   "ctx": "Een museum wil de ouderdom van een fossiel dinosaurusbot laten bepalen. Een bezoeker stelt voor om koolstofdatering te gebruiken, zoals bij oude houten voorwerpen. Koolstof-14 heeft een halveringstijd van 5730 jaar; de dinosaurussen stierven 66 miljoen jaar geleden uit."
+  },
+  {
+   "v": "Kobalt-60 (t½ = 5,3 jaar) wordt gebruikt voor bestraling. Na hoeveel jaar is de activiteit gehalveerd?",
+   "o": [
+    "Dat hangt af van de hoeveelheid",
+    "2,7 jaar",
+    "10,6 jaar",
+    "5,3 jaar"
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 5,
+   "u": "Halveringstijd is onafhankelijk van de hoeveelheid.",
+   "uo": [
+    "Koos je hangt af van de hoeveelheid? De halveringstijd is een vaste eigenschap van de isotoop. Een grotere bron heeft wel een hogere activiteit, maar halveert even snel.",
+    "Koos je 2,7 jaar? Dat is de helft van de halveringstijd; daarna is er nog ongeveer 71% over.",
+    "Koos je 10,6 jaar? Dat zijn twee halveringstijden; dan is er nog een kwart over. Gehalveerd is de activiteit al na één.",
+    "Klopt: per definitie halveert de activiteit in één halveringstijd, 5,3 jaar. Dat geldt voor een grote en een kleine bron precies even goed."
+   ],
+   "uh": "t½ hangt niet van de hoeveelheid af."
+  }
+ ],
+ "oe": [
+  {
+   "bron": "Examenstijl",
+   "ctx": "Thorium-232 (Z = 90) is het begin van een natuurlijke vervalreeks die eindigt bij het stabiele lood-208 (Z = 82). In deze reeks komen alleen alfa- en β⁻-vervallen voor. De eerste stap is een alfaverval.",
+   "v": "Geef de vervalvergelijking van de eerste stap en bereken hoeveel alfa- en bètavervallen de hele reeks bevat.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "²³²₉₀Th → ²²⁸₈₈Ra + ⁴₂He (1p). Aantal α: (232 − 208) / 4 = 6, waardoor Z daalt tot 90 − 12 = 78 (1p). Aantal β: 82 − 78 = 4 (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een patiënt krijgt voor een scan technetium-99m ingespoten met een activiteit van 600 MBq. De halveringstijd van technetium-99m is 6,0 uur. De scan wordt 3 uur later gemaakt. Een verpleegkundige zegt dat de patiënt na een dag \"nog maar een klein beetje straalt\".",
+   "v": "Bereken de activiteit van het technetium na 24 uur en leg uit waarom een korte halveringstijd hier handig is.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "24 / 6,0 = 4 halveringstijden (1p). 600 / 2⁴ = 37,5 MBq, ongeveer 38 MBq (1p). Een korte halveringstijd geeft genoeg straling voor de scan, terwijl de patiënt daarna maar kort straling ontvangt (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een leerling meet de activiteit van een bron elke 10 minuten. Na aftrek van de achtergrond vindt ze: 0 min: 960 Bq, 10 min: 680 Bq, 20 min: 480 Bq, 30 min: 340 Bq, 40 min: 240 Bq. Ze zegt: \"Elke 10 minuten gaat er 280 Bq af, dus na ruim 30 minuten is alles op.\"",
+   "v": "Bepaal de halveringstijd van de bron en beoordeel de uitspraak van de leerling.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "960 → 480 in 20 min, 480 → 240 in nog eens 20 min: t½ = 20 min (2p). De uitspraak klopt niet: de afname per 10 minuten wordt steeds kleiner, er gaat steeds een vast deel af in plaats van een vaste hoeveelheid, dus de activiteit wordt nooit nul (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "In een Egyptisch graf vinden archeologen een houten kistje. In het hout is nog 68% van het koolstof-14 over dat levend hout bevat. Een gids zegt dat het kistje \"zeker ouder dan 5000 jaar\" is. De halveringstijd van koolstof-14 is 5730 jaar.",
+   "v": "Leg uit of het kistje jonger of ouder is dan één halveringstijd en beoordeel de bewering van de gids.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Na één halveringstijd (5730 jaar) is er 50% over (1p). Er is nog 68% over, meer dan 50%, dus het kistje is jonger dan 5730 jaar (1p). De bewering \"zeker ouder dan 5000 jaar\" volgt hier niet uit; 68% hoort bij ongeveer 3200 jaar, dus de gids heeft ongelijk (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Kalium-40 (Z = 19) zit in het menselijk lichaam en heeft een halveringstijd van 1,3 miljard jaar. Het vervalt meestal door β⁻-straling. Een leerling denkt dat de hoeveelheid kalium-40 in de aarde sinds het ontstaan van de aarde, 4,5 miljard jaar geleden, ongeveer gehalveerd is.",
+   "v": "Geef de vervalvergelijking en bereken welk deel van het oorspronkelijke kalium-40 er nu nog over is.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "⁴⁰₁₉K → ⁴⁰₂₀Ca + ⁰₋₁e (1p). 4,5 / 1,3 = 3,5 halveringstijden (1p). Over: (½)^3,5 ≈ 0,09, dus ongeveer 9%: veel minder dan de helft (1p)."
+  }
+ ]
+}
