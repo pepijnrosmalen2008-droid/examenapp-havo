@@ -1,0 +1,689 @@
+{
+ "id": "D6",
+ "lo": "sk.D.6",
+ "gs": 2,
+ "naam": "Polymeren",
+ "beschrijving": "Je beschrijft de vorming van polymeren uit monomeren door additie- en condensatiepolymerisatie, leidt de repeterende eenheid en het monomeer uit elkaar af, verklaart het verschil tussen thermoplasten en thermoharders en beoordeelt recycling en afbreekbaarheid.",
+ "ceStatus": "CE",
+ "binas": "67",
+ "val": "",
+ "onderwerpen": [
+  "Monomeer en polymeer",
+  "Additiepolymerisatie",
+  "Van monomeer naar repeterende eenheid",
+  "Condensatiepolymerisatie",
+  "Thermoplasten en thermoharders",
+  "Plastic, recycling en bioplastic"
+ ],
+ "sam": "Een polymeer is een keten van duizenden monomeren. Additiepolymerisatie: monomeren met C=C, geen bijproduct; de C=C-atomen worden de keten, de rest een zijgroep. Condensatiepolymerisatie: monomeren met twee groepen, water komt vrij; diol + dizuur = polyester. Thermoplast: losse ketens, smelt en is recyclebaar. Thermoharder: netwerk, smelt niet. PLA is een afbreekbare polyester.",
+ "begrippen": [
+  {
+   "t": "Monomeer",
+   "d": "Klein molecuul dat de bouwsteen is van een polymeer."
+  },
+  {
+   "t": "Polymeer",
+   "d": "Reuzenmolecuul dat bestaat uit duizenden aan elkaar gekoppelde monomeren."
+  },
+  {
+   "t": "Additiepolymerisatie",
+   "d": "Polymerisatie van monomeren met een C=C-binding, waarbij geen bijproduct ontstaat."
+  },
+  {
+   "t": "Condensatiepolymerisatie",
+   "d": "Polymerisatie van monomeren met twee reactieve groepen, waarbij water vrijkomt."
+  },
+  {
+   "t": "Repeterende eenheid",
+   "d": "Het stukje dat in een polymeerketen steeds terugkomt."
+  },
+  {
+   "t": "Polyester",
+   "d": "Condensatiepolymeer met estergroepen in de keten, bijvoorbeeld uit een diol en een dicarbonzuur."
+  },
+  {
+   "t": "Polyamide",
+   "d": "Condensatiepolymeer uit een diamine en een dicarbonzuur, zoals nylon."
+  },
+  {
+   "t": "Thermoplast",
+   "d": "Kunststof met losse ketens die bij verwarmen zacht wordt en smelt."
+  },
+  {
+   "t": "Thermoharder",
+   "d": "Kunststof met dwarsverbindingen tussen de ketens die bij verwarmen niet smelt."
+  },
+  {
+   "t": "Dwarsverbinding",
+   "d": "Atoombinding tussen twee polymeerketens, waardoor een netwerk ontstaat."
+  },
+  {
+   "t": "PLA",
+   "d": "Polymelkzuur: een composteerbare polyester gemaakt uit melkzuur."
+  }
+ ],
+ "sv": [
+  {
+   "v": "Wat is een polymeer?",
+   "o": [
+    "Een molecuul met precies twee dubbele bindingen",
+    "Een mengsel van verschillende kleine moleculen",
+    "Een heel groot molecuul van veel gekoppelde kleine eenheden",
+    "Een stof die alleen in levende wezens voorkomt, zoals eiwit en zetmeel"
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 0,
+   "u": "Polymeer = veel (poly) delen (meer): een lange keten van gekoppelde monomeren.",
+   "uo": [
+    "Koos je twee dubbele bindingen? Het monomeer heeft vaak één dubbele binding. In het polymeer zijn die juist verdwenen.",
+    "Koos je mengsel? Een polymeer is één groot molecuul, geen mengsel. Plastic bestaat wel uit polymeermoleculen van verschillende lengte.",
+    "Klopt: een polymeer ontstaat als duizenden kleine moleculen, monomeren, aan elkaar worden gekoppeld tot één lange keten.",
+    "Koos je alleen levende wezens? Er zijn natuurlijke polymeren zoals eiwitten en zetmeel, maar ook kunstmatige zoals plastic."
+   ],
+   "uh": "Polymeer = keten van monomeren."
+  },
+  {
+   "v": "Uit welk monomeer wordt polyetheen gemaakt?",
+   "o": [
+    "Ethaan",
+    "Etheen",
+    "Ethanol",
+    "Polyetheen zelf"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 0,
+   "u": "Poly + naam van het monomeer: polyetheen uit etheen.",
+   "uo": [
+    "Koos je ethaan? Ethaan heeft geen dubbele binding en kan zich niet aan andere moleculen koppelen tot een keten.",
+    "Klopt: polyetheen ontstaat uit etheen, CH₂=CH₂. De naam van het polymeer is poly plus de naam van het monomeer.",
+    "Koos je ethanol? Ethanol heeft een OH-groep en geen dubbele binding. Het monomeer van polyetheen is etheen.",
+    "Koos je polyetheen? Het monomeer is de kleine bouwsteen. Polyetheen is het grote molecuul dat eruit ontstaat."
+   ],
+   "uh": "Polyetheen ← etheen."
+  },
+  {
+   "v": "Hoeveel etheenmoleculen zijn er ongeveer gekoppeld in één molecuul van dit polyetheen?",
+   "o": [
+    "10 000",
+    "280 000",
+    "1000",
+    "28"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 0,
+   "u": "Massa repeterende eenheid C₂H₄ = 28 u: 280 000 / 28 = 10 000.",
+   "uo": [
+    "Klopt: elke etheeneenheid heeft een massa van 28 u. 280 000 u gedeeld door 28 u geeft 10 000 eenheden per molecuul.",
+    "Koos je 280 000? Dat is de molecuulmassa in u. Om het aantal eenheden te vinden, deel je door de massa van één eenheid.",
+    "Koos je 1000? Dan is er een factor tien misgegaan. Reken na: 280 000 / 28 = 10 000.",
+    "Koos je 28? Dat is geen aantal, maar de massa van één eenheid in u. Hoe vaak past 28 in 280 000? Dat is het aantal eenheden."
+   ],
+   "uh": "Aantal eenheden = molecuulmassa / massa eenheid.",
+   "ctx": "Een plastic tasje is gemaakt van polyetheen. Een fabrikant geeft op dat de gemiddelde molecuulmassa van zijn polyetheen 280 000 u is. Elke repeterende eenheid in de keten is −CH₂−CH₂−, met een massa van 28 u."
+  },
+  {
+   "v": "Welke eigenschap moet een monomeer hebben voor additiepolymerisatie?",
+   "o": [
+    "Een stikstofatoom",
+    "Een OH-groep en een COOH-groep",
+    "Alleen enkele bindingen",
+    "Een dubbele C=C-binding"
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 1,
+   "u": "Bij additiepolymerisatie klappen de dubbele bindingen open en koppelen de monomeren.",
+   "uo": [
+    "Koos je stikstof? Stikstof zit in bijvoorbeeld nylon, maar dat is een condensatiepolymeer. Voor additie gaat het om de C=C.",
+    "Koos je OH en COOH? Die groepen horen bij condensatiepolymerisatie, waarbij water vrijkomt. Voor additie is een C=C nodig.",
+    "Koos je alleen enkele bindingen? Dan zijn er geen vrije bindingen om te koppelen. Alkanen polymeriseren niet.",
+    "Klopt: de dubbele binding klapt open, zodat elk C-atoom één binding over heeft om aan het volgende monomeer te koppelen."
+   ],
+   "uh": "Additiepolymerisatie: monomeer met C=C."
+  },
+  {
+   "v": "Wat gebeurt er met de dubbele binding van het monomeer bij additiepolymerisatie?",
+   "o": [
+    "Die breekt helemaal, waarna de C-atomen los van elkaar komen te liggen",
+    "Die blijft bestaan in het polymeer",
+    "Die wordt enkel; de vrije bindingen koppelen aan de buren",
+    "Die wordt een drievoudige binding"
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 1,
+   "u": "In het polymeer zitten alleen enkele bindingen in de hoofdketen.",
+   "uo": [
+    "Koos je helemaal breken? De C-atomen blijven aan elkaar vast met een enkele binding. Alleen de tweede binding wordt gebruikt voor de koppeling.",
+    "Koos je blijft bestaan? Dan zou er niets koppelen. Polyetheen heeft alleen enkele bindingen, net als een heel lang alkaan.",
+    "Klopt: van de dubbele binding blijft een enkele binding over. Elk C-atoom gebruikt de vrijgekomen binding om aan het buurmonomeer te koppelen. Zo ontstaat een lange keten.",
+    "Koos je drievoudig? Er komen geen bindingen bij tussen de twee C-atomen; er gaat er juist een af."
+   ],
+   "uh": "C=C → C−C, koppelen aan de buren."
+  },
+  {
+   "v": "Uit welk monomeer wordt pvc (polyvinylchloride) gemaakt?",
+   "o": [
+    "Chloorethaan, CH₃−CH₂Cl",
+    "Chlooretheen, CH₂=CHCl",
+    "Etheen en chloor",
+    "Dichloormethaan, CH₂Cl₂"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 1,
+   "u": "Pvc ontstaat uit chlooretheen (vinylchloride).",
+   "uo": [
+    "Koos je chloorethaan? Dat heeft geen dubbele binding en kan dus geen additiepolymeer vormen.",
+    "Klopt: het monomeer van pvc is chlooretheen, ook wel vinylchloride. Het heeft een dubbele binding en een Cl-atoom. In de keten zit aan elke tweede C een Cl.",
+    "Koos je etheen en chloor? Het monomeer is één stof: chlooretheen, met het Cl al aan het molecuul vast.",
+    "Koos je dichloormethaan? Dat heeft maar één C-atoom en geen dubbele binding. Het kan geen keten vormen."
+   ],
+   "uh": "Pvc ← chlooretheen."
+  },
+  {
+   "v": "Waarom ontstaat er bij de productie van polypropeen geen afvalstof?",
+   "o": [
+    "Alle atomen van het monomeer komen in het polymeer",
+    "Omdat propeen een katalysator is",
+    "Omdat het bijproduct meteen verdampt en via de schoorsteen weggaat",
+    "Omdat polypropeen biologisch afbreekbaar is"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 1,
+   "u": "Additie: niets gaat eraf, alle atomen komen in het product.",
+   "uo": [
+    "Klopt: bij additiepolymerisatie worden de monomeren alleen aan elkaar gekoppeld. Er gaat niets af, dus er ontstaat geen bijproduct.",
+    "Koos je katalysator? Propeen is het monomeer, het wordt verbruikt. Er is wel een katalysator nodig, maar dat verklaart het ontbreken van afval niet.",
+    "Koos je verdampt? Er is geen bijproduct dat kan verdampen. Bij additie komen alle atomen in het polymeer.",
+    "Koos je afbreekbaar? Polypropeen is juist niet biologisch afbreekbaar. Het gaat hier om de reactie waarbij het ontstaat."
+   ],
+   "uh": "Additiepolymerisatie = geen bijproduct.",
+   "ctx": "Polypropeen wordt gebruikt voor bakjes, flessendoppen en tapijt. In de fabriek wordt propeengas met een speciale katalysator omgezet in lange ketens. De fabrikant schrijft in zijn milieuverslag dat er bij deze stap geen enkele afvalstof ontstaat."
+  },
+  {
+   "v": "Welke repeterende eenheid hoort bij polypropeen?",
+   "o": [
+    "−CH₂−CH₂−",
+    "−CH₂−CH₂−CH₂−",
+    "−CH=CH−CH₃−",
+    "−CH₂−CH(CH₃)−"
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 2,
+   "u": "Propeen CH₂=CH−CH₃ geeft −CH₂−CH(CH₃)−: de CH₃ wordt een zijgroep.",
+   "uo": [
+    "Koos je −CH₂−CH₂−? Dat is de eenheid van polyetheen. Polypropeen heeft aan elke tweede C een CH₃.",
+    "Koos je −CH₂−CH₂−CH₂−? Dan zou de CH₃ in de hoofdketen zitten. Alleen de twee C-atomen van de dubbele binding vormen de keten.",
+    "Koos je −CH=CH−CH₃−? In het polymeer is de dubbele binding verdwenen. Bovendien kan CH₃ niet aan twee kanten binden.",
+    "Klopt: de dubbele binding zit tussen de eerste twee C-atomen. Die worden de keten; de CH₃ hangt als zijgroep aan de keten."
+   ],
+   "uh": "Alleen de C=C-atomen vormen de keten."
+  },
+  {
+   "v": "Welk monomeer hoort bij dit polymeer?",
+   "o": [
+    "CH₂=C=CN",
+    "CH₃−CH₂−CN",
+    "CH₂=CHCN",
+    "CH≡C−CN"
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 2,
+   "u": "Repeterende eenheid −CH₂−CH(CN)− terug: zet een dubbele binding tussen de twee ketenatomen.",
+   "uo": [
+    "Koos je CH₂=C=CN? Dan heeft het tweede C-atoom te veel bindingen en mist het een H. Het monomeer heeft één dubbele binding.",
+    "Koos je CH₃−CH₂−CN? Die heeft geen dubbele binding en kan dus niet polymeriseren.",
+    "Klopt: de repeterende eenheid is −CH₂−CH(CN)−. Zet tussen de twee C-atomen van de keten een dubbele binding en haal de koppelstreepjes weg: CH₂=CH−CN (acrylonitril).",
+    "Koos je CH≡C−CN? Met een drievoudige binding zou het polymeer nog een dubbele binding in de keten hebben. Hier zijn alle ketenbindingen enkel."
+   ],
+   "uh": "Polymeer → monomeer: dubbele binding terug tussen de ketenatomen.",
+   "ctx": "Acrylvezels in truien bestaan uit een polymeer met de repeterende eenheid −CH₂−CH(CN)−. Elke tweede koolstof in de keten draagt dus een CN-groep. Een leerling moet het monomeer geven waaruit dit polymeer door additiepolymerisatie is gemaakt."
+  },
+  {
+   "v": "Hoe ziet een stukje polystyreen eruit van drie eenheden, als het monomeer CH₂=CH−C₆H₅ is?",
+   "o": [
+    "−CH₂−CH₂−C₆H₅−CH₂−CH₂−C₆H₅−",
+    "−CH₂−CH(C₆H₅)−CH₂−CH(C₆H₅)−CH₂−CH(C₆H₅)−",
+    "−CH=CH(C₆H₅)−CH=CH(C₆H₅)−CH=CH(C₆H₅)−",
+    "−C₆H₅−C₆H₅−C₆H₅−"
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 2,
+   "u": "Elke tweede C draagt een C₆H₅-zijgroep; de keten bestaat uit de ketenatomen van de C=C.",
+   "uo": [
+    "Koos je de keten met C₆H₅ erin? De ring hoort niet in de hoofdketen, maar hangt eraan als zijgroep.",
+    "Klopt: elke styreeneenheid levert twee C-atomen aan de keten, en de C₆H₅-ring hangt als zijgroep aan elke tweede C. Drie eenheden geven zes ketenatomen met drie ringen.",
+    "Koos je de keten met dubbele bindingen? Na polymerisatie zijn de dubbele bindingen verdwenen; de keten heeft alleen enkele bindingen.",
+    "Koos je alleen ringen? De keten bestaat uit de C-atomen van de dubbele binding, niet uit de ringen."
+   ],
+   "uh": "Zijgroep hangt aan elke tweede ketenatoom.",
+   "ctx": "Piepschuim is gemaakt van polystyreen. Het monomeer is styreen, CH₂=CH−C₆H₅: een etheenmolecuul waarin één H is vervangen door een benzeenring. Een leerling moet een stukje van de polymeerketen van drie monomeereenheden lang opschrijven."
+  },
+  {
+   "v": "Hoe vind je het monomeer als je de repeterende eenheid van een additiepolymeer kent?",
+   "o": [
+    "Zet een dubbele binding tussen de twee ketenatomen van de eenheid",
+    "Voeg een watermolecuul toe aan de eenheid",
+    "Haal alle zijgroepen weg",
+    "Tel het aantal eenheden in de keten"
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 2,
+   "u": "Additiepolymerisatie omkeren: enkele binding in de keten wordt weer dubbel.",
+   "uo": [
+    "Klopt: bij polymerisatie werd de dubbele binding enkel. Andersom zet je tussen de twee ketenatomen weer een dubbele binding en laat je de koppelstreepjes weg.",
+    "Koos je water toevoegen? Dat hoort bij hydrolyse van een condensatiepolymeer. Bij een additiepolymeer is er geen water afgesplitst.",
+    "Koos je zijgroepen weghalen? De zijgroepen horen bij het monomeer. Zonder Cl is pvc ineens polyetheen.",
+    "Koos je eenheden tellen? Het aantal eenheden zegt iets over de lengte van de keten, niet over welk monomeer het is."
+   ],
+   "uh": "Terug: enkele binding → dubbele binding."
+  },
+  {
+   "v": "Waaraan herken je een condensatiepolymerisatie?",
+   "o": [
+    "Monomeren reageren met zuurstof tot een keten",
+    "Monomeren met een dubbele binding koppelen zonder bijproduct",
+    "Een polymeer valt uiteen in monomeren",
+    "Monomeren met twee functionele groepen koppelen en er komt water vrij"
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 3,
+   "u": "Condensatie: bij elke koppeling komt een klein molecuul, meestal water, vrij.",
+   "uo": [
+    "Koos je zuurstof? Reageren met zuurstof is verbranding of oxidatie. Daarbij ontstaat geen polymeer.",
+    "Koos je dubbele binding zonder bijproduct? Dat is additiepolymerisatie, zoals bij polyetheen.",
+    "Koos je uiteenvallen? Dat is hydrolyse of afbraak, de omgekeerde richting.",
+    "Klopt: bij condensatiepolymerisatie heeft elk monomeer twee groepen die kunnen reageren. Bij elke koppeling komt een watermolecuul vrij, zo groeit de keten aan twee kanten."
+   ],
+   "uh": "Condensatiepolymerisatie: twee groepen per monomeer, water vrij."
+  },
+  {
+   "v": "Waarom moet een monomeer voor condensatiepolymerisatie twee reactieve groepen hebben?",
+   "o": [
+    "Twee groepen maken het molecuul zuur, en alleen zuren polymeriseren",
+    "Met twee groepen lost het beter op in water",
+    "Met één groep stopt de keten na één koppeling",
+    "Anders komt er geen water vrij"
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 3,
+   "u": "Twee groepen = aan beide kanten koppelen = keten kan doorgroeien.",
+   "uo": [
+    "Koos je zuur? Niet alle monomeren zijn zuur; een diol is dat bijvoorbeeld niet. Het gaat om het koppelen aan twee kanten.",
+    "Koos je beter oplossen? Oplosbaarheid heeft niets te maken met het kunnen vormen van een keten.",
+    "Klopt: een molecuul met één groep koppelt aan één kant en sluit de keten daar af. Met een groep aan elk uiteinde kan aan beide kanten een volgend monomeer vastzitten.",
+    "Koos je geen water? Ook met één groep komt er bij een koppeling water vrij. Maar daarna stopt de keten."
+   ],
+   "uh": "Twee groepen = keten."
+  },
+  {
+   "v": "Welk soort polymeer ontstaat uit een dicarbonzuur en een diol?",
+   "o": [
+    "Een polyalkeen",
+    "Een polyester",
+    "Een polyamide",
+    "Een polyetheen"
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 3,
+   "u": "COOH + OH → estergroep; met twee groepen per monomeer ontstaat een polyester.",
+   "uo": [
+    "Koos je polyalkeen? Dat ontstaat door additiepolymerisatie van alkenen. Hier koppelen zuren en alcoholen onder afsplitsing van water.",
+    "Klopt: elke COOH-groep van het zuur vormt met een OH-groep van het diol een estergroep. Doordat beide monomeren twee groepen hebben, ontstaat een lange keten: een polyester, zoals PET.",
+    "Koos je polyamide? Een polyamide ontstaat uit een dizuur en een diamine (NH₂-groepen), zoals nylon. Hier is het een diol.",
+    "Koos je polyetheen? Dat is een additiepolymeer van etheen, zonder estergroepen."
+   ],
+   "uh": "Dizuur + diol → polyester.",
+   "ctx": "PET-flessen bestaan uit polyethyleentereftalaat. Het ontstaat uit tereftaalzuur, een molecuul met aan twee kanten een COOH-groep, en ethaan-1,2-diol, een molecuul met aan elk uiteinde een OH-groep. Bij de productie wordt voortdurend water afgevoerd."
+  },
+  {
+   "v": "Waarom kun je een polyester met loog of zuur weer afbreken tot monomeren, en polyetheen niet?",
+   "o": [
+    "Polyester heeft estergroepen die hydrolyseren, polyetheen niet",
+    "Polyetheen is te groot om nog met water of loog te kunnen reageren",
+    "Polyester bevat geen koolstof",
+    "Polyetheen lost op in water en verdwijnt"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 3,
+   "u": "Estergroepen hydrolyseren; een koolstofketen niet.",
+   "uo": [
+    "Klopt: de estergroepen in een polyester kunnen met water reageren (hydrolyse), versneld door zuur of loog. Polyetheen heeft alleen C−C- en C−H-bindingen en die reageren niet met water.",
+    "Koos je te groot? Polyesters zijn ook heel groot. Het verschil zit in de soort bindingen in de keten.",
+    "Koos je geen koolstof? Polyesters bestaan grotendeels uit koolstof. Het verschil is dat er estergroepen in de keten zitten.",
+    "Koos je oplossen? Polyetheen lost niet op in water; daarom zwerft plastic zo lang rond in de natuur."
+   ],
+   "uh": "Estergroep = zwakke plek voor hydrolyse.",
+   "ctx": "Bij chemische recycling van PET-flessen worden de ketens weer afgebroken tot monomeren, die opnieuw tot zuivere PET worden gemaakt. Bij plastic tasjes van polyetheen lukt dat niet op die manier. Een leerling zoekt de verklaring in de bindingen in de polymeerketens."
+  },
+  {
+   "v": "Welk natuurlijk polymeer ontstaat door condensatie van aminozuren?",
+   "o": [
+    "Vet",
+    "Zetmeel",
+    "Polyetheen",
+    "Eiwit"
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 3,
+   "u": "Aminozuren koppelen onder afsplitsing van water tot eiwitten.",
+   "uo": [
+    "Koos je vet? Een vet is een ester van glycerol met drie vetzuren, geen lange keten van aminozuren.",
+    "Koos je zetmeel? Zetmeel is ook een condensatiepolymeer, maar dan van glucose, niet van aminozuren.",
+    "Koos je polyetheen? Dat is een kunstmatig additiepolymeer van etheen, zonder aminozuren en zonder afsplitsing van water.",
+    "Klopt: de COOH van het ene aminozuur koppelt met de NH₂ van het volgende, onder afsplitsing van water. Zo ontstaan eiwitten."
+   ],
+   "uh": "Aminozuren → eiwit."
+  },
+  {
+   "v": "Wat gebeurt er met een thermoplast als je hem verwarmt?",
+   "o": [
+    "Hij ontleedt direct zonder te smelten",
+    "Hij wordt harder en blijft vast",
+    "Hij wordt zacht en smelt",
+    "Hij lost op in de lucht"
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 4,
+   "u": "Thermoplast: losse ketens, bij verwarmen glijden ze langs elkaar.",
+   "uo": [
+    "Koos je ontleden zonder smelten? Dat doet een thermoharder, omdat zijn ketens met dwarsverbindingen vastzitten.",
+    "Koos je harder? Dat past niet bij een thermoplast. Thermoplasten worden juist zacht.",
+    "Klopt: bij een thermoplast liggen de ketens los naast elkaar. Bij verwarmen gaan ze langs elkaar glijden en wordt het plastic zacht. Daarom kun je thermoplasten omsmelten en recyclen.",
+    "Koos je oplossen in lucht? Plastic lost niet op in lucht. Een thermoplast smelt bij verwarmen."
+   ],
+   "uh": "Thermoplast: verwarmen = zacht."
+  },
+  {
+   "v": "Waarom smelt een thermoharder niet bij verwarmen?",
+   "o": [
+    "De ketens zijn heel kort",
+    "De ketens zijn met dwarsverbindingen aan elkaar vast in een netwerk",
+    "Een thermoharder bevat geen koolstof",
+    "Een thermoharder is een mengsel van zouten"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 4,
+   "u": "Dwarsverbindingen (crosslinks): de ketens kunnen niet langs elkaar glijden.",
+   "uo": [
+    "Koos je korte ketens? Korte ketens zouden juist makkelijker smelten. Het verschil zit in de dwarsverbindingen.",
+    "Klopt: in een thermoharder zitten de ketens met atoombindingen aan elkaar vast. Ze kunnen niet langs elkaar glijden. Bij sterk verwarmen breken bindingen en verkoolt de stof, maar hij smelt niet.",
+    "Koos je geen koolstof? Thermoharders zijn net als andere plastics koolstofverbindingen.",
+    "Koos je zouten? Plastics bestaan uit moleculen, niet uit ionen. Het verschil met een thermoplast zit in de dwarsverbindingen tussen de ketens."
+   ],
+   "uh": "Netwerk = niet smelten."
+  },
+  {
+   "v": "Waarom is het handvat van de pan van een thermoharder gemaakt?",
+   "o": [
+    "Een thermoharder wordt bij hitte niet zacht",
+    "Een thermoharder is goedkoper om te recyclen",
+    "Een thermoharder geleidt warmte beter, zodat de pan sneller opwarmt",
+    "Een thermoharder smelt bij een lagere temperatuur"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 4,
+   "u": "Dicht bij het vuur moet het materiaal zijn vorm houden.",
+   "uo": [
+    "Klopt: een pannenhandvat wordt warm. Een thermoplast zou zacht worden en vervormen. Een thermoharder houdt door zijn netwerk zijn vorm.",
+    "Koos je recyclen? Thermoharders zijn juist moeilijk te recyclen, want je kunt ze niet omsmelten.",
+    "Koos je warmte geleiden? Een handvat moet juist slecht warmte geleiden. Dat doen beide soorten plastic slecht.",
+    "Koos je lager smeltpunt? Een thermoharder smelt helemaal niet; daarom is hij hier geschikt."
+   ],
+   "uh": "Hittebestendig = thermoharder.",
+   "ctx": "De handvatten van pannen en de knoppen van een fornuis zijn vaak van bakeliet of melamine gemaakt. Een tuinstoel of een boterhamzakje is van polyetheen of polypropeen. Een leerling vraagt zich af waarom de fabrikant voor het pannenhandvat niet het goedkopere polypropeen gebruikt."
+  },
+  {
+   "v": "Welke conclusie trekt de leerling over de twee stukjes plastic?",
+   "o": [
+    "Beide zijn thermoharders",
+    "A is een thermoharder, B een thermoplast",
+    "Beide zijn thermoplasten",
+    "A is een thermoplast, B een thermoharder"
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 4,
+   "u": "A wordt zacht en vervormt (thermoplast); B blijft hard en verkoolt (thermoharder).",
+   "uo": [
+    "Koos je beide thermoharders? Dan zou A niet zacht worden. A vervormt in de hete lucht.",
+    "Koos je andersom? Een thermoharder smelt juist niet. B blijft hard en verkoolt, dat past bij een thermoharder.",
+    "Koos je beide thermoplasten? Dan zouden ze allebei zacht worden. B blijft hard.",
+    "Klopt: stukje A wordt zacht en buigt: de ketens glijden langs elkaar, dus een thermoplast. Stukje B blijft hard en wordt alleen zwart: een netwerk dat niet smelt, dus een thermoharder."
+   ],
+   "uh": "Zacht worden = thermoplast. Verkolen = thermoharder.",
+   "ctx": "Een leerling houdt twee stukjes plastic met een tang in de warme lucht boven een brander. Stukje A wordt na een tijdje zacht, buigt door en smelt aan de randen. Stukje B blijft hard; als ze het te lang laat hangen, wordt het zwart en gaat het een beetje roken."
+  },
+  {
+   "v": "Waarom zijn thermoplasten beter te recyclen dan thermoharders?",
+   "o": [
+    "Thermoharders bestaan niet uit polymeren",
+    "Thermoplasten zijn biologisch afbreekbaar door bacteriën in de grond",
+    "Je kunt ze omsmelten en opnieuw vormen",
+    "Thermoplasten lossen op in water"
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 5,
+   "u": "Losse ketens: smelten en opnieuw vormen. Netwerk: niet te smelten.",
+   "uo": [
+    "Koos je geen polymeren? Thermoharders zijn ook polymeren, maar met dwarsverbindingen.",
+    "Koos je biologisch afbreekbaar? De meeste thermoplasten, zoals polyetheen, breken juist nauwelijks af in de natuur.",
+    "Klopt: een thermoplast kun je fijnmaken, smelten en er iets nieuws van maken. Een thermoharder smelt niet, dus dat lukt niet.",
+    "Koos je oplossen in water? De gewone thermoplasten lossen niet op in water. Recyclen gebeurt door smelten."
+   ],
+   "uh": "Recyclen = omsmelten = thermoplast."
+  },
+  {
+   "v": "Waarom blijft plastic afval zo lang in het milieu?",
+   "o": [
+    "Plastic lost op in water en verspreidt zich",
+    "Bacteriën breken lange C−C-ketens nauwelijks af",
+    "Plastic reageert in de zon met zuurstof tot steeds nieuw plastic",
+    "Plastic bestaat uit zouten die niet vergaan"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 5,
+   "u": "De meeste plastics hebben geen groepen waar enzymen kunnen aangrijpen.",
+   "uo": [
+    "Koos je oplossen? Plastic lost niet op in water; het valt hooguit uiteen in kleine stukjes, microplastics.",
+    "Klopt: ketens van alleen C en H, zoals in polyetheen, hebben geen zwakke plekken voor de enzymen van bacteriën. Daarom vergaat een plastic tasje pas na tientallen tot honderden jaren.",
+    "Koos je nieuw plastic? Zuurstof en zonlicht maken plastic juist bros. Er ontstaat geen nieuw plastic.",
+    "Koos je zouten? Plastic bestaat uit moleculen, niet uit zouten. Het blijft liggen omdat bacteriën de koolstofketens niet kunnen afbreken."
+   ],
+   "uh": "C−C-keten = moeilijk afbreekbaar."
+  },
+  {
+   "v": "Waarom is PLA (polymelkzuur) wel composteerbaar?",
+   "o": [
+    "Het is een polyester: estergroepen hydrolyseren",
+    "PLA bestaat uit korte ketens van etheen",
+    "PLA bevat geen koolstof",
+    "PLA lost op in regenwater"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 5,
+   "u": "Melkzuur (OH + COOH) vormt een polyester; estergroepen zijn afbreekbaar.",
+   "uo": [
+    "Klopt: melkzuur heeft een OH- en een COOH-groep, dus het vormt via condensatie een polyester. De estergroepen kunnen in een composteerinstallatie hydrolyseren, waarna micro-organismen de brokstukken verder afbreken.",
+    "Koos je etheen? PLA wordt gemaakt van melkzuur, niet van etheen. Ketens van etheen zijn juist slecht afbreekbaar.",
+    "Koos je geen koolstof? PLA bestaat juist grotendeels uit koolstof, uit plantaardige grondstoffen.",
+    "Koos je oplossen? PLA lost niet op in regenwater. Afbraak gebeurt door hydrolyse bij hoge temperatuur en vocht in een composteerinstallatie."
+   ],
+   "uh": "Polyester = estergroepen = afbreekbaar.",
+   "ctx": "Sommige bekertjes op festivals zijn van PLA, polymelkzuur. Het monomeer is melkzuur, CH₃−CH(OH)−COOH, dat uit maïs wordt gemaakt. Op de bekertjes staat dat ze composteerbaar zijn, maar alleen in een industriële composteerinstallatie bij ongeveer 60 °C."
+  },
+  {
+   "v": "Uit welk type polymerisatie ontstaat PLA, en waarom?",
+   "o": [
+    "Condensatiepolymerisatie, want melkzuur heeft twee dubbele bindingen",
+    "Additiepolymerisatie, want melkzuur heeft een dubbele binding",
+    "Additiepolymerisatie, want er ontstaat geen water",
+    "Condensatiepolymerisatie, want melkzuur heeft een OH- en een COOH-groep"
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 5,
+   "u": "OH + COOH in één molecuul: koppelen onder afsplitsing van water.",
+   "uo": [
+    "Koos je twee dubbele bindingen? Melkzuur heeft één C=O en geen C=C. Het type polymerisatie volgt uit de OH- en COOH-groep.",
+    "Koos je dubbele binding? Melkzuur heeft geen C=C. De C=O in de COOH-groep gaat niet open bij polymerisatie.",
+    "Koos je geen water? Bij de koppeling van een OH en een COOH ontstaat juist water.",
+    "Klopt: de OH-groep van het ene melkzuurmolecuul reageert met de COOH-groep van het volgende. Daarbij komt water vrij: condensatiepolymerisatie tot een polyester."
+   ],
+   "uh": "OH + COOH = condensatie.",
+   "ctx": "Melkzuur, CH₃−CH(OH)−COOH, heeft aan het ene uiteinde een carboxylgroep en aan het middelste koolstofatoom een hydroxylgroep. In de fabriek worden duizenden melkzuurmoleculen aan elkaar gekoppeld tot PLA. Daarbij wordt voortdurend waterdamp afgevoerd."
+  },
+  {
+   "v": "Welk plastic is het meest gebruikt voor plastic tasjes en folie?",
+   "o": [
+    "PLA",
+    "Bakeliet",
+    "Polyetheen",
+    "Nylon"
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 5,
+   "u": "Polyetheen (PE) is goedkoop, buigzaam en waterdicht.",
+   "uo": [
+    "Koos je PLA? PLA wordt wel voor sommige bekertjes en folies gebruikt, maar is veel minder gangbaar dan polyetheen.",
+    "Koos je bakeliet? Bakeliet is een harde thermoharder voor handvatten en stekkers, niet geschikt voor buigzame folie.",
+    "Klopt: polyetheen is het meest gebruikte plastic ter wereld. Het is buigzaam, waterdicht en goedkoop, ideaal voor tasjes en folie.",
+    "Koos je nylon? Nylon wordt gebruikt voor vezels en touw, niet voor tasjes."
+   ],
+   "uh": "Tasjes = polyetheen."
+  },
+  {
+   "v": "Welk monomeer hoort bij teflon, met de repeterende eenheid −CF₂−CF₂−?",
+   "o": [
+    "Tetrafluorethaan, CHF₂−CHF₂",
+    "Tetrafluoretheen, CF₂=CF₂",
+    "Fluoretheen, CH₂=CHF",
+    "Difluormethaan, CH₂F₂"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 2,
+   "u": "Eenheid −CF₂−CF₂− → monomeer CF₂=CF₂.",
+   "uo": [
+    "Koos je tetrafluorethaan? Dat heeft geen dubbele binding en ook H-atomen. De eenheid bevat alleen C en F.",
+    "Klopt: zet tussen de twee C-atomen van de eenheid een dubbele binding: CF₂=CF₂, tetrafluoretheen. Alle H-atomen van etheen zijn vervangen door F.",
+    "Koos je fluoretheen? Dat heeft maar één F. In de repeterende eenheid zitten vier F-atomen.",
+    "Koos je difluormethaan? Dat heeft maar één C-atoom en geen dubbele binding, dus het kan geen additiepolymeer vormen."
+   ],
+   "uh": "Eenheid → monomeer: C−C wordt C=C."
+  },
+  {
+   "v": "Wat is een monomeer?",
+   "o": [
+    "Een klein molecuul dat de bouwsteen van een polymeer is",
+    "Een lange keten van duizenden gekoppelde eenheden",
+    "Een plastic dat bij verwarmen niet smelt",
+    "Een katalysator die de polymerisatie versnelt"
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 0,
+   "u": "Monomeer = één (mono) deel: de bouwsteen.",
+   "uo": [
+    "Klopt: een monomeer is het kleine molecuul waaruit een polymeer wordt opgebouwd, zoals etheen voor polyetheen.",
+    "Koos je lange keten? Dat is het polymeer zelf. Het monomeer is de losse bouwsteen.",
+    "Koos je niet smelten? Dat is een thermoharder. Het woord monomeer zegt niets over smelten.",
+    "Koos je katalysator? Een katalysator versnelt de reactie, maar wordt niet in de keten opgenomen. Een monomeer wel."
+   ],
+   "uh": "Monomeer = bouwsteen."
+  },
+  {
+   "v": "Waarom wordt een thermoplast bij verwarmen zacht?",
+   "o": [
+    "De ketens vormen extra dwarsverbindingen",
+    "De atoombindingen in de ketens breken allemaal",
+    "Het plastic neemt water op uit de lucht",
+    "De losse ketens krijgen genoeg energie om langs elkaar te glijden"
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 4,
+   "u": "Bij verwarmen worden de vanderwaalskrachten tussen de losse ketens overwonnen.",
+   "uo": [
+    "Koos je extra dwarsverbindingen? Dat zou het plastic juist harder maken. Een thermoplast heeft geen dwarsverbindingen.",
+    "Koos je bindingen breken? Dan zou het plastic ontleden. Bij zacht worden blijven de ketens heel; ze schuiven alleen langs elkaar.",
+    "Koos je water opnemen? Plastic als polyetheen neemt geen water op. Het wordt zacht door de warmte.",
+    "Klopt: tussen de ketens van een thermoplast werken alleen vanderwaalskrachten. Bij verwarmen bewegen de ketens meer en glijden ze langs elkaar: het plastic wordt zacht."
+   ],
+   "uh": "Thermoplast: ketens glijden."
+  }
+ ],
+ "oe": [
+  {
+   "bron": "Examenstijl",
+   "ctx": "Polypropeen wordt gemaakt uit propeen (CH₂=CH−CH₃). Het wordt gebruikt voor bakjes, flessendoppen en tapijtvezels. In de fabriek wordt propeengas onder druk met een katalysator omgezet.",
+   "v": "Geef een stukje van de polymeerketen van drie monomeereenheden en leg uit waarom er bij deze polymerisatie geen bijproduct ontstaat.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "−CH₂−CH(CH₃)−CH₂−CH(CH₃)−CH₂−CH(CH₃)−, met open bindingen aan de uiteinden (1p) en de CH₃-groepen als zijgroep aan elke tweede C (1p). Het is additiepolymerisatie: alle atomen van de monomeren komen in het polymeer (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Teflon is een polymeer met de repeterende eenheid −CF₂−CF₂−. Het wordt als antiaanbaklaag op pannen gebruikt. Een stukje teflonketen heeft een molecuulmassa van 1,0 · 10⁶ u (massa repeterende eenheid 100 u).",
+   "v": "Geef het monomeer van teflon en bereken hoeveel monomeereenheden er in deze keten zitten.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "CF₂=CF₂ (tetrafluoretheen) (1p). 1,0 · 10⁶ / 100 = 1,0 · 10⁴ eenheden (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Nylon-6,6 ontstaat uit hexaandizuur (HOOC−(CH₂)₄−COOH) en 1,6-diaminohexaan (H₂N−(CH₂)₆−NH₂). Bij de reactie ontstaan lange ketens en wordt een kleine stof afgevoerd.",
+   "v": "Leg uit welk type polymerisatie dit is, welke kleine stof er ontstaat en waarom beide monomeren twee reactieve groepen moeten hebben.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Condensatiepolymerisatie; er ontstaat water (1p). Met twee groepen per monomeer kan elk monomeer aan twee kanten koppelen, zodat de keten kan doorgroeien; met één groep zou de keten stoppen (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een leerling heeft twee stukjes kunststof: het deksel van een pannenhandvat en een stukje van een boterhamzakje. Ze houdt beide met een tang in een warme luchtstroom. Het stukje zakje wordt zacht en vervormt, het stukje handvat blijft hard.",
+   "v": "Leg met de bouw van de polymeren uit welk materiaal een thermoplast en welk een thermoharder is.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Het zakje is een thermoplast: losse ketens die bij verwarmen langs elkaar glijden (1p). Het handvat is een thermoharder: ketens met dwarsverbindingen in een netwerk die niet langs elkaar kunnen glijden, dus het smelt niet (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Op festivals worden bekers van PLA gebruikt. PLA wordt gemaakt uit melkzuur, CH₃−CH(OH)−COOH. Volgens de fabrikant is PLA in een industriële composteerinstallatie binnen enkele maanden afgebroken, terwijl een beker van polypropeen honderden jaren blijft liggen.",
+   "v": "Leg uit welk type polymerisatie bij PLA hoort en waarom PLA wel en polypropeen niet afbreekbaar is.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Condensatiepolymerisatie: melkzuur heeft een OH- en een COOH-groep die onder afsplitsing van water koppelen tot een polyester (1p). De estergroepen in PLA kunnen hydrolyseren; polypropeen heeft alleen C−C- en C−H-bindingen die niet hydrolyseren (1p)."
+  }
+ ]
+}

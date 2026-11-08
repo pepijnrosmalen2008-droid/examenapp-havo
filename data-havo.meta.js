@@ -1923,6 +1923,28 @@ var VAKKEN = [
       "nOe": 5,
       "nBeg": 11,
       "hasSam": true
+     },
+     {
+      "id": "D6",
+      "lo": "sk.D.6",
+      "gs": 2,
+      "naam": "Polymeren",
+      "beschrijving": "Je beschrijft de vorming van polymeren uit monomeren door additie- en condensatiepolymerisatie, leidt de repeterende eenheid en het monomeer uit elkaar af, verklaart het verschil tussen thermoplasten en thermoharders en beoordeelt recycling en afbreekbaarheid.",
+      "ceStatus": "CE",
+      "binas": "67",
+      "val": "",
+      "onderwerpen": [
+       "Monomeer en polymeer",
+       "Additiepolymerisatie",
+       "Van monomeer naar repeterende eenheid",
+       "Condensatiepolymerisatie",
+       "Thermoplasten en thermoharders",
+       "Plastic, recycling en bioplastic"
+      ],
+      "nSv": 28,
+      "nOe": 5,
+      "nBeg": 11,
+      "hasSam": true
      }
     ]
    },
