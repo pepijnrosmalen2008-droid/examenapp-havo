@@ -1673,6 +1673,28 @@ var VAKKEN = [
       "nOe": 5,
       "nBeg": 11,
       "hasSam": true
+     },
+     {
+      "id": "C3",
+      "lo": "sk.C.3",
+      "gs": 2,
+      "naam": "Zuren, basen en pH",
+      "beschrijving": "Je herkent zuren en basen aan het doorgeven van H⁺, berekent de pH van sterke zuren en basen, voorspelt wat verdunnen en neutraliseren doen en kiest een passende indicator.",
+      "ceStatus": "CE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Zuur en base: H⁺ overdragen",
+       "De pH-schaal",
+       "pH berekenen en verdunnen",
+       "Sterke en zwakke zuren",
+       "Neutraliseren en titreren",
+       "Indicatoren"
+      ],
+      "nSv": 28,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
      }
     ]
    },

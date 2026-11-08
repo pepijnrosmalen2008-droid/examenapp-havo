@@ -68071,6 +68071,699 @@ var VAKKEN = [
         "u": "De coëfficiënten geven een verhouding in mol (of deeltjes), niet in gram (1p). 2 mol H₂ = 4,0 g en 1 mol O₂ = 32,0 g, dus de massaverhouding is 4,0 : 32,0 = 1 : 8 (1p)."
        }
       ]
+     },
+     {
+      "id": "C3",
+      "lo": "sk.C.3",
+      "gs": 2,
+      "naam": "Zuren, basen en pH",
+      "beschrijving": "Je herkent zuren en basen aan het doorgeven van H⁺, berekent de pH van sterke zuren en basen, voorspelt wat verdunnen en neutraliseren doen en kiest een passende indicator.",
+      "ceStatus": "CE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Zuur en base: H⁺ overdragen",
+       "De pH-schaal",
+       "pH berekenen en verdunnen",
+       "Sterke en zwakke zuren",
+       "Neutraliseren en titreren",
+       "Indicatoren"
+      ],
+      "sam": "Een zuur staat H⁺ af, een base neemt H⁺ op. pH = −log [H₃O⁺]; één eenheid lager is tien keer zuurder. Bij een sterk zuur is [H₃O⁺] gelijk aan de concentratie van het zuur; bij een sterke base reken je eerst de pOH uit en daarna pH = 14 − pOH. Zwakke zuren splitsen maar voor een klein deel (evenwicht). Bij neutraliseren reageren H₃O⁺ en OH⁻ tot water. Kies een indicator met het omslagtraject rond de pH die je wilt herkennen.",
+      "begrippen": [
+       {
+        "t": "Zuur",
+        "d": "Deeltje dat een H⁺-ion afstaat (Brønsted)."
+       },
+       {
+        "t": "Base",
+        "d": "Deeltje dat een H⁺-ion opneemt (Brønsted)."
+       },
+       {
+        "t": "Oxoniumion",
+        "d": "H₃O⁺: ontstaat als water een H⁺ opneemt; maakt een oplossing zuur."
+       },
+       {
+        "t": "pH",
+        "d": "Maat voor de zuurgraad: pH = −log [H₃O⁺]. Bij 25 °C is pH 7 neutraal."
+       },
+       {
+        "t": "pOH",
+        "d": "pOH = −log [OH⁻]; bij 25 °C geldt pH + pOH = 14,00."
+       },
+       {
+        "t": "Sterk zuur",
+        "d": "Zuur dat in water volledig splitst in ionen, zoals HCl, HNO₃ en H₂SO₄."
+       },
+       {
+        "t": "Zwak zuur",
+        "d": "Zuur dat maar voor een klein deel splitst; er ontstaat een evenwicht, zoals bij azijnzuur."
+       },
+       {
+        "t": "Neutraliseren",
+        "d": "Reactie van H₃O⁺ met OH⁻ tot water: H₃O⁺ + OH⁻ → 2 H₂O."
+       },
+       {
+        "t": "Titratie",
+        "d": "Bepaling van een onbekende concentratie door druppelsgewijs een oplossing met bekende concentratie toe te voegen tot het equivalentiepunt."
+       },
+       {
+        "t": "Equivalentiepunt",
+        "d": "Punt in een titratie waarop precies evenveel mol zuur als base heeft gereageerd."
+       },
+       {
+        "t": "Indicator",
+        "d": "Stof die van kleur verandert in een bepaald pH-gebied."
+       },
+       {
+        "t": "Omslagtraject",
+        "d": "Het pH-gebied waarin een indicator van kleur verandert (Binas tabel 52)."
+       }
+      ],
+      "sv": [
+       {
+        "v": "Wat doet een zuur volgens de definitie van Brønsted?",
+        "o": [
+         "Het staat een H⁺-ion af",
+         "Het neemt een H⁺-ion op",
+         "Het staat een OH⁻-ion af",
+         "Het neemt elektronen op"
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 0,
+        "u": "Een zuur is een deeltje dat H⁺ afstaat; een base neemt H⁺ op.",
+        "uo": [
+         "Klopt: een zuur geeft een H⁺-ion (proton) af aan een ander deeltje. HCl geeft zijn H⁺ af aan water, en dan ontstaat H₃O⁺.",
+         "Koos je opnemen? Dat doet een base. Zuur en base horen bij elkaar: het zuur staat H⁺ af, de base neemt het op.",
+         "Koos je OH⁻ afstaan? Veel basen bevatten OH⁻, maar de definitie gaat over H⁺. Een zuur herken je aan het H⁺ dat het kan afgeven.",
+         "Koos je elektronen? Elektronenoverdracht hoort bij redoxreacties. Bij zuur-base gaat het om het doorgeven van een H⁺-ion."
+        ],
+        "uh": "Zuur geeft H⁺, base pakt H⁺."
+       },
+       {
+        "v": "Wat ontstaat er als waterstofchloride oplost in water?",
+        "o": [
+         "H₃O⁺ en Cl⁻",
+         "H₂ en Cl₂",
+         "HCl-moleculen tussen watermoleculen",
+         "OH⁻ en H₂Cl⁺"
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 0,
+        "u": "HCl + H₂O → H₃O⁺ + Cl⁻: HCl geeft zijn H⁺ af aan water.",
+        "uo": [
+         "Klopt: HCl is een sterk zuur en staat zijn H⁺ af aan een watermolecuul. Er ontstaan oxonium-ionen H₃O⁺ en chloride-ionen Cl⁻.",
+         "Koos je H₂ en Cl₂? Dan zou HCl ontleden in de elementen. Bij oplossen in water gaat alleen een H⁺ over naar water; er ontstaan ionen, geen gassen.",
+         "Koos je losse HCl-moleculen? Dat geldt voor een stof die gewoon oplost zonder te reageren, zoals suiker. HCl reageert met water tot ionen.",
+         "Koos je OH⁻? Dan zou water H⁺ aan HCl geven. Het is andersom: HCl is het zuur en geeft H⁺ af, water neemt het op."
+        ],
+        "uh": "Zuur in water: H⁺ naar water, er ontstaat H₃O⁺."
+       },
+       {
+        "v": "Welke stof gedraagt zich in deze reactie als base?",
+        "o": [
+         "NH₄⁺",
+         "NH₃",
+         "OH⁻",
+         "H₂O wordt hier niet gebruikt"
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 0,
+        "u": "NH₃ neemt een H⁺ op van water en wordt NH₄⁺: NH₃ is de base.",
+        "uo": [
+         "Koos je NH₄⁺? Dat is het deeltje dat ontstaat nadat de base een H⁺ heeft opgenomen. De base zelf is het deeltje vóór de pijl dat H⁺ opneemt: NH₃.",
+         "Klopt: ammoniak neemt een H⁺-ion over van een watermolecuul. Daardoor wordt het NH₄⁺. Wie H⁺ opneemt, is de base.",
+         "Koos je OH⁻? OH⁻ ontstaat hier pas, uit het watermolecuul dat zijn H⁺ kwijtraakt. Het staat rechts van de pijl en is dus geen beginstof.",
+         "Koos je dit? Water doet juist mee: het geeft het H⁺-ion af aan ammoniak. In deze reactie gedraagt water zich als zuur."
+        ],
+        "uh": "Zoek wie vóór de pijl H⁺ opneemt.",
+        "ctx": "Als je ammoniak (NH₃) in water leidt, wordt de oplossing basisch: NH₃ + H₂O ⇄ NH₄⁺ + OH⁻. Een leerling zegt dat NH₄⁺ de base is, omdat er \"meer H\" in zit. Een ander zegt dat OH⁻ de base is."
+       },
+       {
+        "v": "Welke pH heeft een neutrale oplossing bij 25 °C?",
+        "o": [
+         "0",
+         "7",
+         "14",
+         "1"
+        ],
+        "c": 1,
+        "d": 1,
+        "s": 1,
+        "u": "Bij 25 °C is een oplossing neutraal bij pH = 7; lager is zuur, hoger is basisch.",
+        "uo": [
+         "Koos je 0? Een pH van 0 hoort bij een zeer sterk zuur. Neutraal ligt in het midden van de schaal, bij 7.",
+         "Klopt: bij 25 °C is zuiver water neutraal met pH 7. Een lagere pH is zuur, een hogere basisch.",
+         "Koos je 14? Dat is het basische uiteinde van de schaal, zoals sterke natronloog. Neutraal is 7.",
+         "Koos je 1? Dat is een sterk zure oplossing, zoals maagzuur. Neutraal water heeft pH 7."
+        ],
+        "uh": "Onder 7 zuur, 7 neutraal, boven 7 basisch."
+       },
+       {
+        "v": "Welke oplossing is het meest zuur?",
+        "o": [
+         "pH 6",
+         "pH 4",
+         "pH 9",
+         "pH 2"
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 1,
+        "u": "Hoe lager de pH, hoe zuurder de oplossing.",
+        "uo": [
+         "Koos je pH 6? Die is maar licht zuur, dicht bij neutraal. Hoe lager de pH, hoe meer H₃O⁺ en hoe zuurder.",
+         "Koos je pH 4? Die is zuurder dan pH 6, maar er staat een nog lagere pH bij. pH 2 heeft honderd keer zoveel H₃O⁺ als pH 4.",
+         "Koos je pH 9? Een pH boven 7 is basisch, niet zuur. Dan denk je misschien dat een hoger getal \"sterker\" betekent.",
+         "Klopt: pH 2 is de laagste waarde, dus de meeste H₃O⁺. Die oplossing is het meest zuur."
+        ],
+        "uh": "Laag getal = zuur. Elke stap omlaag = tien keer zuurder."
+       },
+       {
+        "v": "Welk deeltje gedraagt zich als base?",
+        "o": [
+         "H₃O⁺",
+         "HCl",
+         "NH₄⁺",
+         "OH⁻"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 0,
+        "u": "OH⁻ kan een H⁺ opnemen en wordt dan H₂O: OH⁻ is een base.",
+        "uo": [
+         "Koos je H₃O⁺? Dat deeltje kan juist een H⁺ afstaan; het is het zure deeltje in elke zure oplossing.",
+         "Koos je HCl? Waterstofchloride staat zijn H⁺ juist af aan water. Wie H⁺ afstaat, is een zuur, geen base.",
+         "Koos je NH₄⁺? Dat is ammoniak die al een H⁺ heeft opgenomen. NH₄⁺ kan die H⁺ weer afstaan en gedraagt zich als (zwak) zuur.",
+         "Klopt: OH⁻ neemt een H⁺ op en wordt water. Daarom is OH⁻ een base, de base in natronloog."
+        ],
+        "uh": "Base = deeltje dat H⁺ kan opnemen."
+       },
+       {
+        "v": "Je verdunt natronloog met pH 13,0 tien keer. Wat is de nieuwe pH?",
+        "o": [
+         "14,0",
+         "13,0",
+         "10,0",
+         "12,0"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 2,
+        "u": "Sterke base 10× verdunnen: [OH⁻] tien keer kleiner, pH één eenheid lager.",
+        "uo": [
+         "Koos je 14,0? Dan zou de base sterker worden. Door water toe te voegen wordt een base minder basisch, dus de pH gaat omlaag.",
+         "Koos je 13,0? Dan denk je dat verdunnen de pH niet verandert. De concentratie OH⁻ wordt tien keer kleiner, dus de pH verandert wel.",
+         "Koos je 10,0? Dan heb je drie eenheden afgetrokken. Tien keer verdunnen is één factor tien, dus één pH-eenheid.",
+         "Klopt: de pOH stijgt van 1,0 naar 2,0, dus de pH daalt van 13,0 naar 12,0. Een base verdunnen brengt de pH dichter bij 7."
+        ],
+        "uh": "Verdunnen brengt de pH altijd richting 7."
+       },
+       {
+        "v": "Wat ontstaat er als zoutzuur reageert met natronloog?",
+        "o": [
+         "Waterstofgas en opgelost natriumoxide",
+         "Chloorgas en water in een zure oplossing",
+         "Natrium en waterstof als losse elementen",
+         "Water, met Na⁺ en Cl⁻ opgelost"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 4,
+        "u": "H₃O⁺ + OH⁻ → 2 H₂O; Na⁺ en Cl⁻ blijven opgelost (keukenzout in water).",
+        "uo": [
+         "Koos je waterstofgas? Dat ontstaat als een metaal in zuur reageert. Bij zuur met base ontstaat water.",
+         "Koos je chloorgas? Chloride-ionen doen bij neutraliseren niet mee; ze blijven gewoon opgelost.",
+         "Koos je losse elementen? Natrium als metaal en waterstofgas ontstaan niet. Bij neutraliseren reageren alleen H₃O⁺ en OH⁻ tot water.",
+         "Klopt: de H₃O⁺- en OH⁻-ionen vormen water. De natrium- en chloride-ionen blijven opgelost: je hebt nu zout water."
+        ],
+        "uh": "Zuur + base → water + opgelost zout."
+       },
+       {
+        "v": "Welke kleur heeft fenolftaleïne in een zure oplossing?",
+        "o": [
+         "Roze",
+         "Geel",
+         "Blauw",
+         "Kleurloos"
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 5,
+        "u": "Fenolftaleïne is kleurloos onder pH 8,2 en roze boven pH 10,0.",
+        "uo": [
+         "Koos je roze? Roze is de basische kleur, boven pH 10. In een zure oplossing is fenolftaleïne kleurloos.",
+         "Koos je geel? Geel hoort bij broomthymolblauw of methyloranje. Fenolftaleïne heeft geen gele vorm.",
+         "Koos je blauw? Dat is de basische kleur van broomthymolblauw. Fenolftaleïne wordt nooit blauw.",
+         "Klopt: in een zure en neutrale oplossing is fenolftaleïne kleurloos. Pas boven pH 8,2 kleurt hij roze."
+        ],
+        "uh": "Fenolftaleïne: kleurloos in zuur, roze in base."
+       },
+       {
+        "v": "Een oplossing heeft pH 3,0. Hoe groot is [H₃O⁺]?",
+        "o": [
+         "3,0 mol/L",
+         "0,0010 mol/L",
+         "1,0 · 10³ mol/L",
+         "0,30 mol/L"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 1,
+        "u": "[H₃O⁺] = 10⁻ᵖᴴ = 10⁻³ = 1,0 · 10⁻³ mol/L.",
+        "uo": [
+         "Koos je 3,0 mol/L? Dan neem je de pH over als concentratie. De pH is een exponent: [H₃O⁺] = 10 tot de macht min pH.",
+         "Klopt: [H₃O⁺] = 10^−pH. Bij pH 3,0 is dat 10⁻³ = 0,0010 mol/L.",
+         "Koos je 10³? Dan ben je het minteken vergeten. Een zure oplossing heeft een kleine concentratie H₃O⁺, zoals 10⁻³ mol/L.",
+         "Koos je 0,30? Dan heb je de pH door 10 gedeeld. De pH werkt met machten van tien, niet met delen door tien."
+        ],
+        "uh": "[H₃O⁺] = 10 tot de macht −pH."
+       },
+       {
+        "v": "De pH daalt van 5 naar 3. Wat gebeurt er met [H₃O⁺]?",
+        "o": [
+         "Die wordt 2 keer zo groot",
+         "Die wordt 100 keer zo groot",
+         "Die wordt honderd keer zo klein",
+         "Die wordt 2 keer zo klein"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 1,
+        "u": "Elke pH-eenheid lager is 10 keer zoveel H₃O⁺; twee eenheden is 100 keer.",
+        "uo": [
+         "Koos je 2 keer? De pH-schaal is logaritmisch. Een verschil van 2 pH-eenheden is een factor 10 × 10 = 100.",
+         "Klopt: één eenheid lager betekent tien keer zoveel H₃O⁺. Van 5 naar 3 is twee eenheden, dus 100 keer zoveel.",
+         "Koos je kleiner? Een lagere pH betekent juist meer zuur, dus meer H₃O⁺. De concentratie wordt groter.",
+         "Koos je 2 keer zo klein? Dan klopt zowel de richting als de factor niet. Lagere pH is meer H₃O⁺, met een factor 10 per eenheid."
+        ],
+        "uh": "Eén pH-stap = factor 10."
+       },
+       {
+        "v": "Hoeveel keer zo groot is [H₃O⁺] in het meer dan in de bron?",
+        "o": [
+         "1,5 keer",
+         "15 keer",
+         "32 keer",
+         "150 keer"
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 1,
+        "u": "Verschil 6,0 − 4,5 = 1,5 pH-eenheden: 10^1,5 ≈ 32 keer.",
+        "uo": [
+         "Koos je 1,5 keer? Dat is het verschil in pH-eenheden. Elke eenheid is een factor 10, dus het verschil in concentratie is 10^1,5.",
+         "Koos je 15 keer? Dan heb je 1,5 met 10 vermenigvuldigd. Het moet 10 tot de macht 1,5 zijn: ongeveer 32.",
+         "Klopt: het pH-verschil is 1,5. Tien tot de macht 1,5 is ongeveer 32, dus er zit 32 keer zoveel H₃O⁺ in het meer.",
+         "Koos je 150 keer? Dan ging je uit van 100 per eenheid. Eén pH-eenheid is een factor 10; anderhalve eenheid geeft ongeveer 32."
+        ],
+        "uh": "Concentratieverschil = 10 tot de macht (pH-verschil).",
+        "ctx": "Een onderzoeker meet de pH van een bergmeer: 4,5. Het water van de bron die het meer voedt, heeft pH 6,0. Hij wil uitrekenen hoeveel zuurder het meer is dan de bron, gemeten aan de concentratie H₃O⁺."
+       },
+       {
+        "v": "Welke pH heeft 0,010 M zoutzuur?",
+        "o": [
+         "0,010",
+         "1,0",
+         "2,0",
+         "12,0"
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 2,
+        "u": "Sterk zuur: [H₃O⁺] = 0,010 M → pH = −log 0,010 = 2,0.",
+        "uo": [
+         "Koos je 0,010? Dat is de concentratie zoutzuur, niet de pH. De pH is −log [H₃O⁺] = −log 0,010 = 2,0.",
+         "Koos je 1,0? Dan rekende je met 0,10 M. −log 0,010 = 2,0, want 0,010 = 10⁻².",
+         "Klopt: zoutzuur is een sterk zuur, dus [H₃O⁺] = 0,010 mol/L. −log 0,010 = 2,0.",
+         "Koos je 12,0? Dat zou de pH van 0,010 M natronloog zijn. Zoutzuur is zuur, dus de pH ligt onder 7."
+        ],
+        "uh": "Sterk zuur: pH = −log [zuur]."
+       },
+       {
+        "v": "Welke pH heeft 0,020 M natronloog bij 25 °C?",
+        "o": [
+         "1,70",
+         "12,30",
+         "2,30",
+         "0,020"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 2,
+        "u": "[OH⁻] = 0,020 → pOH = 1,70 → pH = 14,00 − 1,70 = 12,30.",
+        "uo": [
+         "Koos je 1,70? Dat is de pOH. Voor de pH gebruik je pH + pOH = 14,00 bij 25 °C.",
+         "Klopt: natronloog is een sterke base, dus [OH⁻] = 0,020 mol/L. pOH = 1,70 en pH = 14,00 − 1,70 = 12,30.",
+         "Koos je 2,30? Dan heb je met H₃O⁺ gerekend alsof het een zuur is, en ook nog met 0,0050 M. Bij een base begin je met [OH⁻].",
+         "Koos je 0,020? Dat is de concentratie OH⁻, geen pH. Reken eerst de pOH uit en dan de pH."
+        ],
+        "uh": "Base: eerst pOH, dan pH = 14 − pOH."
+       },
+       {
+        "v": "Welke pH meet ze na het verdunnen?",
+        "o": [
+         "1,0",
+         "2,0",
+         "3,0",
+         "10"
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 2,
+        "u": "10 × verdunnen: [H₃O⁺] van 0,010 naar 0,0010 M, pH van 2,0 naar 3,0.",
+        "uo": [
+         "Koos je 1,0? Dan zou de oplossing zuurder worden. Verdunnen maakt een zuur minder zuur, dus de pH gaat omhoog.",
+         "Koos je 2,0? Dan denk je dat de pH bij verdunnen niet verandert omdat het zuur niet weg is. De concentratie daalt wel, en daarmee stijgt de pH.",
+         "Klopt: 10 mL aanvullen tot 100 mL is 10 keer verdunnen. [H₃O⁺] wordt 0,0010 M en de pH stijgt één eenheid, naar 3,0.",
+         "Koos je 10? Dan heb je de pH met de verdunningsfactor vermenigvuldigd. Bij tien keer verdunnen stijgt de pH van een sterk zuur met precies één eenheid."
+        ],
+        "uh": "Sterk zuur 10× verdunnen: pH + 1.",
+        "ctx": "Een leerling pipetteert 10,0 mL zoutzuur met pH 2,0 in een maatkolf en vult aan met gedestilleerd water tot 100,0 mL. Ze schudt goed en meet de pH opnieuw."
+       },
+       {
+        "v": "Welke pH heeft deze bariumhydroxide-oplossing bij 25 °C?",
+        "o": [
+         "12,00",
+         "2,00",
+         "12,30",
+         "1,70"
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 2,
+        "u": "Ba(OH)₂ geeft 2 OH⁻: [OH⁻] = 0,020 M, pOH = 1,70, pH = 12,30.",
+        "uo": [
+         "Koos je 12,00? Dan rekende je met [OH⁻] = 0,010 M. Elke Ba(OH)₂ levert twee OH⁻-ionen, dus [OH⁻] = 0,020 M.",
+         "Koos je 2,00? Dat is de pOH als je de 2 OH⁻ vergeet. Bovendien vraagt de opgave de pH, die bij een base boven 7 ligt.",
+         "Klopt: Ba(OH)₂ → Ba²⁺ + 2 OH⁻. [OH⁻] = 2 × 0,010 = 0,020 M, pOH = 1,70 en pH = 14,00 − 1,70 = 12,30.",
+         "Koos je 1,70? Dat is de pOH van deze oplossing. Een base heeft een pH boven 7: trek de pOH af van 14,00."
+        ],
+        "uh": "Tel hoeveel OH⁻ (of H⁺) één formule-eenheid levert.",
+        "ctx": "Een practicum gebruikt barietwater: een oplossing van bariumhydroxide, Ba(OH)₂, met een concentratie van 0,010 mol/L. Bariumhydroxide is een sterke base die volledig splitst in ionen."
+       },
+       {
+        "v": "Wat is het verschil tussen een sterk en een zwak zuur?",
+        "o": [
+         "Een sterk zuur splitst volledig in ionen, een zwak zuur maar voor een klein deel",
+         "Een sterk zuur is altijd veel geconcentreerder dan een zwak zuur",
+         "Een zwak zuur heeft helemaal geen H⁺ om af te staan aan water",
+         "Een sterk zuur is gevaarlijk en een zwak zuur is dat nooit"
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 3,
+        "u": "Sterk = volledig geïoniseerd; zwak = maar een klein deel staat H⁺ af (evenwicht).",
+        "uo": [
+         "Klopt: een sterk zuur zoals HCl geeft al zijn H⁺ af aan water. Een zwak zuur zoals azijnzuur doet dat maar voor een klein deel; de rest blijft als molecuul.",
+         "Koos je geconcentreerder? Sterk en zwak gaan over hoe ver het zuur splitst, niet over de hoeveelheid. Er bestaat ook verdund zoutzuur (sterk) en geconcentreerd azijnzuur (zwak).",
+         "Koos je \"geen H⁺\"? Een zwak zuur heeft wel H⁺ om af te staan, alleen staat maar een klein deel van de moleculen dat ook echt af.",
+         "Koos je gevaarlijk? Geconcentreerd azijnzuur is ook bijtend. Het verschil zit in het splitsen in ionen, niet in hoe gevaarlijk het is."
+        ],
+        "uh": "Sterk/zwak = hoe ver het zuur splitst. Geconcentreerd/verdund = hoeveel."
+       },
+       {
+        "v": "Welk zuur is een zwak zuur?",
+        "o": [
+         "Zoutzuur, HCl (in maagzuur)",
+         "Salpeterzuur, HNO₃",
+         "Azijnzuur, CH₃COOH",
+         "Zwavelzuur, H₂SO₄"
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 3,
+        "u": "Azijnzuur is een zwak zuur; HCl, HNO₃ en H₂SO₄ zijn sterk (Binas 49).",
+        "uo": [
+         "Koos je zoutzuur? HCl is een sterk zuur: het splitst in water volledig in H₃O⁺ en Cl⁻.",
+         "Koos je salpeterzuur? HNO₃ is ook een sterk zuur. In Binas staat het bij de sterke zuren.",
+         "Klopt: azijnzuur staat maar een klein deel van zijn H⁺ af. In een azijnzuuroplossing zitten vooral moleculen CH₃COOH.",
+         "Koos je zwavelzuur? Dat is een sterk zuur (in elk geval voor de eerste H⁺). Azijnzuur is het zwakke zuur in dit rijtje."
+        ],
+        "uh": "Sterke zuren om te kennen: HCl, HNO₃, H₂SO₄. Azijnzuur is zwak."
+       },
+       {
+        "v": "Welke verklaring past bij de meting?",
+        "o": [
+         "Azijnzuur is minder geconcentreerd dan zoutzuur",
+         "Azijnzuur splitst maar voor een klein deel in ionen",
+         "Azijnzuur reageert helemaal niet met water",
+         "De pH-meter geeft bij azijnzuur een verkeerde waarde"
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 3,
+        "u": "Bij gelijke concentratie geeft een zwak zuur minder H₃O⁺, dus een hogere pH.",
+        "uo": [
+         "Koos je concentratie? Die is in beide bekers gelijk, 0,10 M. Het verschil moet dus komen van hoe ver het zuur splitst.",
+         "Klopt: zoutzuur splitst volledig, dus [H₃O⁺] = 0,10 M en pH 1,0. Azijnzuur staat maar weinig H⁺ af, dus er is veel minder H₃O⁺ en de pH is hoger.",
+         "Koos je \"reageert niet\"? Dan zou de pH 7 zijn. Azijnzuur reageert wel met water, maar maar voor een klein deel: pH 2,9.",
+         "Koos je meetfout? Een pH van ongeveer 2,9 voor 0,10 M azijnzuur is precies wat je verwacht bij een zwak zuur."
+        ],
+        "uh": "Zelfde concentratie, hogere pH? Dan is het zuur zwak.",
+        "ctx": "Een leerling maakt twee oplossingen van precies 0,10 mol/L: zoutzuur en azijnzuur. De pH-meter geeft bij zoutzuur 1,0 en bij azijnzuur 2,9. Ze dacht dat beide oplossingen dezelfde pH zouden hebben."
+       },
+       {
+        "v": "Welke vergelijking hoort bij azijnzuur in water?",
+        "o": [
+         "CH₃COOH + H₂O → CH₃COO⁻ + H₃O⁺",
+         "CH₃COOH + H₂O ⇄ CH₃COO⁻ + H₃O⁺",
+         "CH₃COOH → CH₃COO⁻ + OH⁻",
+         "CH₃COOH + H₂O ⇄ CH₃COOH₂⁺ + OH⁻"
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 3,
+        "u": "Zwak zuur: evenwichtspijl, want maar een klein deel splitst.",
+        "uo": [
+         "Koos je de enkele pijl? Die past bij een sterk zuur dat volledig splitst. Bij een zwak zuur stelt zich een evenwicht in, dus een dubbele pijl.",
+         "Klopt: azijnzuur geeft zijn H⁺ af aan water, maar maar voor een klein deel. Daarom staat er een evenwichtspijl.",
+         "Koos je OH⁻? Een zuur staat H⁺ af en maakt de oplossing zuur. OH⁻ hoort bij een base.",
+         "Koos je deze? Hier neemt azijnzuur juist H⁺ op van water. Dan zou het zich als base gedragen, en dat doet azijnzuur niet."
+        ],
+        "uh": "Zwak zuur of zwakke base: ⇄. Sterk zuur: →.",
+        "ctx": "In schoonmaakazijn zit azijnzuur, CH₃COOH. Het is een zwak zuur. Op het examen moet je bij een zwak zuur laten zien dat maar een deel van de moleculen reageert. Een leerling twijfelt tussen vier vergelijkingen."
+       },
+       {
+        "v": "Welke reactie vindt plaats bij het neutraliseren van een sterk zuur met een sterke base?",
+        "o": [
+         "H₃O⁺ + OH⁻ → 2 H₂O",
+         "H⁺ + H⁺ → H₂",
+         "Na⁺ + Cl⁻ → NaCl (vast zout)",
+         "OH⁻ + OH⁻ → H₂O₂"
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 4,
+        "u": "Neutraliseren: H₃O⁺ en OH⁻ reageren tot water.",
+        "uo": [
+         "Klopt: de oxonium-ionen van het zuur reageren met de hydroxide-ionen van de base. Er ontstaat water.",
+         "Koos je H₂? Waterstofgas ontstaat bij een metaal in zuur, niet bij neutraliseren. Bij neutraliseren reageren zuur en base met elkaar.",
+         "Koos je NaCl? Die ionen blijven gewoon opgelost; ze doen niet mee. Pas na indampen krijg je vast zout.",
+         "Koos je H₂O₂? Twee OH⁻-ionen reageren niet met elkaar. Het gaat om zuur (H₃O⁺) met base (OH⁻)."
+        ],
+        "uh": "Neutraliseren = H₃O⁺ + OH⁻ → 2 H₂O."
+       },
+       {
+        "v": "Je voegt 50 mL 0,10 M zoutzuur bij 50 mL 0,10 M natronloog. Hoe is de oplossing daarna?",
+        "o": [
+         "Zuur",
+         "Neutraal",
+         "Basisch",
+         "Dat hangt af van de temperatuur"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 4,
+        "u": "Evenveel mol H₃O⁺ als OH⁻: alles reageert tot water, de oplossing is neutraal.",
+        "uo": [
+         "Koos je zuur? Dan denk je dat zuur \"sterker\" is dan base. Hier is er precies evenveel mol van beide (0,0050 mol), dus ze heffen elkaar op.",
+         "Klopt: in beide oplossingen zit 0,050 L × 0,10 M = 0,0050 mol. H₃O⁺ en OH⁻ reageren 1 : 1, dus er blijft niets over.",
+         "Koos je basisch? Er is niet meer OH⁻ dan H₃O⁺. Bij gelijke volumes en concentraties heffen ze elkaar precies op.",
+         "Koos je temperatuur? Die beïnvloedt de exacte pH van neutraal iets, maar bij 25 °C geeft dit mengsel een neutrale oplossing."
+        ],
+        "uh": "Gelijke mol zuur en base (1 : 1): neutraal."
+       },
+       {
+        "v": "Hoeveel mL zoutzuur is nodig om de natronloog te neutraliseren?",
+        "o": [
+         "25,0 mL",
+         "31,3 mL",
+         "20,0 mL",
+         "12,5 mL"
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 4,
+        "u": "25,0 mL × 0,100 M = 2,50 mmol OH⁻ → 2,50 mmol / 0,125 M = 20,0 mL.",
+        "uo": [
+         "Koos je 25,0 mL? Dan ga je uit van gelijke volumes, maar het zoutzuur is sterker geconcentreerd. Er is minder volume nodig voor hetzelfde aantal mol.",
+         "Koos je 31,3 mL? Dan heb je de concentraties omgedraaid (25,0 × 0,125 / 0,100). Het zoutzuur is geconcentreerder, dus er is juist minder van nodig.",
+         "Klopt: in de natronloog zit 25,0 × 0,100 = 2,50 mmol OH⁻. Daarvoor is 2,50 mmol H₃O⁺ nodig, en dat zit in 2,50 / 0,125 = 20,0 mL zoutzuur.",
+         "Koos je 12,5 mL? Dan heb je met een verhouding 2 : 1 gerekend. H₃O⁺ en OH⁻ reageren 1 : 1."
+        ],
+        "uh": "Titratie: mol base = mol zuur (bij 1 : 1), daarna V = n / c.",
+        "ctx": "Bij een titratie zit 25,0 mL natronloog van 0,100 mol/L in een erlenmeyer. Uit een buret laat je zoutzuur van 0,125 mol/L druppelen tot de indicator omslaat. Je wilt vooraf weten waar ongeveer het omslagpunt ligt."
+       },
+       {
+        "v": "Welke pH heeft het mengsel (25 °C)?",
+        "o": [
+         "7,00",
+         "1,00",
+         "12,00",
+         "12,70"
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 4,
+        "u": "Overmaat OH⁻: 0,0030 − 0,0020 = 0,0010 mol in 0,100 L → 0,010 M → pOH 2,00 → pH 12,00.",
+        "uo": [
+         "Koos je 7,00? Dan neem je aan dat zuur en base elkaar opheffen. Er is meer mol OH⁻ (0,0030) dan H₃O⁺ (0,0020), dus er blijft base over.",
+         "Koos je 1,00? Dan rekende je met een overmaat zuur. Het zuur is als eerste op; de base is in overmaat, dus de pH ligt boven 7.",
+         "Klopt: na de reactie blijft 0,0010 mol OH⁻ over in 100 mL. [OH⁻] = 0,010 M, pOH = 2,00 en pH = 12,00.",
+         "Koos je 12,70? Dan rekende je met alle 0,0030 mol OH⁻ in 60 mL. Een deel van de base reageert met het zuur en het totale volume is 100 mL."
+        ],
+        "uh": "Eerst de overmaat zoeken, dan het totale volume, dan pas de pH.",
+        "ctx": "Je mengt 40,0 mL zoutzuur van 0,050 mol/L (0,0020 mol H₃O⁺) met 60,0 mL natronloog van 0,050 mol/L (0,0030 mol OH⁻). Het totale volume is 100,0 mL. Je wilt de pH van het mengsel berekenen."
+       },
+       {
+        "v": "Wat doet een zuur-base-indicator?",
+        "o": [
+         "Hij krijgt een andere kleur boven of onder een bepaalde pH",
+         "Hij maakt een zure of basische oplossing neutraal",
+         "Hij meet de pH nauwkeurig tot op twee decimalen",
+         "Hij versnelt de neutralisatie als katalysator"
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 5,
+        "u": "Een indicator verandert van kleur in een bepaald pH-gebied: het omslagtraject.",
+        "uo": [
+         "Klopt: een indicator is zelf een zwak zuur of een zwakke base met een andere kleur in zure en basische vorm. Rond het omslagtraject verandert de kleur.",
+         "Koos je neutraal maken? Een indicator gebruik je in kleine hoeveelheid; hij verandert de pH niet merkbaar. Hij laat alleen zien hoe zuur het is.",
+         "Koos je twee decimalen? Daarvoor gebruik je een pH-meter. Een indicator geeft alleen aan of de pH boven of onder zijn omslagtraject ligt.",
+         "Koos je versnellen? Dat doet een katalysator. Een indicator neemt niet merkbaar deel aan de reactie, hij verkleurt alleen."
+        ],
+        "uh": "Indicator = kleurwisselaar in een vast pH-gebied."
+       },
+       {
+        "v": "Broomthymolblauw is geel onder pH 6,0 en blauw boven pH 7,6. Welke kleur heeft het in een oplossing met pH 9?",
+        "o": [
+         "Geel",
+         "Groen",
+         "Blauw",
+         "Kleurloos"
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 5,
+        "u": "pH 9 ligt boven het omslagtraject (6,0-7,6): de basische kleur blauw.",
+        "uo": [
+         "Koos je geel? Dat is de kleur onder pH 6,0. Bij pH 9 is de oplossing basisch en boven het omslagtraject.",
+         "Koos je groen? Groen zie je in het omslagtraject zelf, tussen 6,0 en 7,6, waar geel en blauw mengen. pH 9 ligt daarboven.",
+         "Klopt: boven pH 7,6 heeft broomthymolblauw zijn basische kleur, blauw. pH 9 ligt daar ruim boven.",
+         "Koos je kleurloos? Dat geldt voor fenolftaleïne in een zure oplossing. Broomthymolblauw is altijd gekleurd."
+        ],
+        "uh": "Onder het traject: zure kleur. Erboven: basische kleur. Ertussen: mengkleur."
+       },
+       {
+        "v": "Welke indicator kan de leerling het best gebruiken?",
+        "o": [
+         "Methyloranje (omslag 3,1-4,4)",
+         "Broomthymolblauw (omslag 6,0-7,6)",
+         "Fenolftaleïne (omslag 8,2-10,0)",
+         "Elke indicator geeft hier hetzelfde"
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 5,
+        "u": "Kies een indicator met het omslagtraject rond de pH die je wilt herkennen: 6,5 ligt in 6,0-7,6.",
+        "uo": [
+         "Koos je methyloranje? Die verkleurt tussen 3,1 en 4,4. Bij pH 5 en bij pH 7 heeft hij dezelfde kleur, dus je ziet het verschil niet.",
+         "Klopt: broomthymolblauw verkleurt tussen 6,0 en 7,6. Onder pH 6 is het geel, rond 6,5 groen. Zo zie je of de grond zuurder is dan 6.",
+         "Koos je fenolftaleïne? Die verkleurt pas boven 8,2. Bij pH 5 en pH 7 is hij allebei kleurloos.",
+         "Koos je \"elke indicator\"? Elke indicator heeft een eigen omslagtraject. Alleen een traject rond pH 6-7 laat het verschil zien."
+        ],
+        "uh": "Kies het omslagtraject rond de pH die je wilt herkennen.",
+        "ctx": "Een tuinder wil weten of de bodem zuurder is dan pH 6. Een leerling schudt wat aarde met water en wil met één indicator laten zien of de pH van het extract onder of boven 6 ligt. Ze verwacht een waarde rond 6,5."
+       },
+       {
+        "v": "Wat zie je in de erlenmeyer na toevoegen van 20 mL zoutzuur?",
+        "o": [
+         "Roze, want de base is nog in overmaat",
+         "Kleurloos, want de oplossing is nu zuur",
+         "Roze, want fenolftaleïne verkleurt pas bij pH 7",
+         "Kleurloos, want fenolftaleïne verkleurt nooit in zuur"
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 5,
+        "u": "Het zuur is nu in overmaat (0,0020 > 0,0015 mol): pH onder 8,2, dus kleurloos.",
+        "uo": [
+         "Koos je base in overmaat? Reken het na: 0,0020 mol H₃O⁺ tegen 0,0015 mol OH⁻. Het zuur is in overmaat, dus de oplossing is zuur.",
+         "Klopt: er is meer zuur dan base toegevoegd, dus de oplossing is zuur. Onder pH 8,2 is fenolftaleïne kleurloos.",
+         "Koos je \"verkleurt bij pH 7\"? Fenolftaleïne heeft een omslagtraject van 8,2 tot 10,0. Het wordt al kleurloos zodra de pH onder 8,2 zakt.",
+         "Koos je \"nooit in zuur\"? Het eindantwoord kleurloos klopt, maar de reden niet. Fenolftaleïne is in zuur altijd kleurloos; aan het begin was hij roze omdat er base in zat."
+        ],
+        "uh": "Eerst uitrekenen wat in overmaat is, dan de kleur van de indicator opzoeken.",
+        "ctx": "In een erlenmeyer zit 15,0 mL natronloog van 0,10 mol/L (0,0015 mol OH⁻) met een paar druppels fenolftaleïne: de oplossing is roze. Je voegt 20,0 mL zoutzuur van 0,10 mol/L toe (0,0020 mol H₃O⁺)."
+       }
+      ],
+      "oe": [
+       {
+        "bron": "Examenstijl",
+        "ctx": "Maagzuur bevat zoutzuur. Bij een gezond persoon heeft de maaginhoud na een maaltijd een pH van ongeveer 2,0. Een maagtablet bevat magnesiumhydroxide, Mg(OH)₂, een base.",
+        "v": "Bereken [H₃O⁺] in de maag en geef de ionvergelijking van de reactie van H₃O⁺ met de hydroxide-ionen uit de tablet.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "[H₃O⁺] = 10⁻²·⁰ = 1,0 · 10⁻² mol/L (1p). H₃O⁺ + OH⁻ → 2 H₂O (1p). Wie Mg(OH)₂ als vaste stof met 2 H₃O⁺ laat reageren (Mg(OH)₂ + 2 H₃O⁺ → Mg²⁺ + 4 H₂O) krijgt ook het punt."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een schoonmaakmiddel voor ovens bevat natriumhydroxide. Een leerling lost een monster op en meet bij 25 °C een pH van 12,70. Natriumhydroxide is een sterke base.",
+        "v": "Bereken de concentratie natriumhydroxide in de oplossing.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "pOH = 14,00 − 12,70 = 1,30 (1p). [OH⁻] = 10⁻¹·³⁰ = 0,050 mol/L, dus de concentratie NaOH is 0,050 mol/L (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Om het gehalte azijnzuur in schoonmaakazijn te bepalen, titreert een leerling 10,0 mL verdunde azijn met natronloog van 0,100 mol/L. Het omslagpunt wordt bereikt na 12,6 mL natronloog. Azijnzuur en OH⁻ reageren in de verhouding 1 : 1.",
+        "v": "Bereken de concentratie azijnzuur in de verdunde azijn.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "n(OH⁻) = 12,6 · 10⁻³ L × 0,100 mol/L = 1,26 · 10⁻³ mol (1p). n(azijnzuur) = 1,26 · 10⁻³ mol (1p). c = 1,26 · 10⁻³ / 10,0 · 10⁻³ = 0,126 mol/L (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Bij de titratie van azijnzuur met natronloog ligt het equivalentiepunt niet bij pH 7, maar rond pH 8,7, omdat het ontstane acetaation een zwakke base is. Een leerling twijfelt tussen methyloranje (omslag 3,1-4,4) en fenolftaleïne (omslag 8,2-10,0).",
+        "v": "Leg uit welke indicator de leerling moet kiezen.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Fenolftaleïne (1p), omdat zijn omslagtraject (8,2-10,0) rond de pH van het equivalentiepunt (8,7) ligt; methyloranje zou al lang voor het equivalentiepunt omslaan (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een leerling heeft 50,0 mL zoutzuur met pH 1,00. Ze wil er een oplossing met pH 3,00 van maken door water toe te voegen.",
+        "v": "Bereken tot welk volume ze de oplossing moet aanvullen.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Van pH 1,00 naar 3,00 is [H₃O⁺] 100 keer zo klein, dus 100 keer verdunnen (1p). Aanvullen tot 100 × 50,0 mL = 5,00 L (1p)."
+       }
+      ]
      }
     ]
    },
