@@ -4189,5 +4189,135 @@ Object.assign(SAM_RICH,{
 <p>Heb je meer boeken gelezen, vergelijk ze dan met <em>both</em> en <em>but</em>: <em>Both books are about a secret, but the thriller is fast and the family story is calm.</em> Noem wat ze gemeen hebben en waarin ze verschillen. Sluit je verslag af met een oordeel met reden en een <strong>aanbeveling</strong>: <em>I give it four stars because the characters feel real.</em> Een eerlijk advies noemt een sterk en een zwak punt: <em>I liked the adventure, but the ending is too fast.</em> Alleen <em>The end.</em> is geen afsluiting.</p>
 <div class="sam-figure"><svg viewBox="0 0 320 200" role="img" aria-label="Vier stappen om je verslag te vergelijken en af te sluiten"><g font-family="inherit"><g stroke="var(--or)" stroke-width="1.5"><line x1="8" y1="44" x2="312" y2="44"/><line x1="8" y1="92" x2="312" y2="92"/><line x1="8" y1="140" x2="312" y2="140"/></g><g fill="var(--or)"><circle cx="26" cy="20" r="12"/><circle cx="26" cy="68" r="12"/><circle cx="26" cy="116" r="12"/><circle cx="26" cy="164" r="12"/></g><g font-size="12" font-weight="700" text-anchor="middle" fill="var(--bg)"><text x="26" y="24">1</text><text x="26" y="72">2</text><text x="26" y="120">3</text><text x="26" y="168">4</text></g><g font-size="12" font-weight="700" fill="var(--dk)"><text x="50" y="18">wat hebben ze gemeen</text><text x="50" y="66">waarin verschillen ze</text><text x="50" y="114">jouw oordeel</text><text x="50" y="162">je aanbeveling</text></g><g font-size="11" fill="var(--mu)"><text x="50" y="34">both books are about ...</text><text x="50" y="82">but the first is funny</text><text x="50" y="130">four stars because ...</text><text x="50" y="178">een sterk en een zwak punt</text></g></g></svg><div class="sam-figcap">Vergelijk eerst, geef dan je oordeel en een eerlijke aanbeveling.</div></div>
 <div class="sam-tip"><strong>Tip:</strong> noem in je aanbeveling een sterk en een zwak punt van het boek.</div>
+</div>`,
+'havo_sk_C1':`<div class="sam-intro">Een reactievergelijking is de korte schrijfwijze van een reactie. Je leert wat elk getal en teken betekent, hoe je een vergelijking <strong>kloppend</strong> maakt met <strong>coëfficiënten</strong>, en hoe je hem zelf opstelt uit een beschrijving, ook bij <strong>verbrandingen</strong> en <strong>ionen</strong>.</div>
+<div class="sam-head">Begrippenlijst</div>
+<table class="sam-table"><thead><tr><th>Begrip</th><th>Betekenis</th></tr></thead><tbody>
+<tr><td>Coëfficiënt</td><td>getal vóór de formule: hoeveel deeltjes</td></tr>
+<tr><td>Index</td><td>getal rechtsonder een atoom: hoort bij de formule</td></tr>
+<tr><td>Kloppend</td><td>van elke atoomsoort links even veel als rechts</td></tr>
+<tr><td>Toestandsaanduiding</td><td>(s) vast, (l) vloeibaar, (g) gas, (aq) opgelost</td></tr>
+<tr><td>Volledige verbranding</td><td>genoeg zuurstof: CO₂ en H₂O</td></tr>
+<tr><td>Onvolledige verbranding</td><td>te weinig zuurstof: ook CO of roet</td></tr>
+<tr><td>Ionvergelijking</td><td>alleen de deeltjes die reageren; ook de lading klopt</td></tr>
+</tbody></table>
+
+<div class="sam-chapter"><div class="sam-ch-title"><span class="sam-ch-n">1</span>Wat een reactievergelijking vertelt</div>
+<p>Bij een reactie verdwijnen stoffen en ontstaan nieuwe stoffen. De stoffen waarmee je begint, de <strong>beginstoffen</strong>, staan links van de pijl. De stoffen die ontstaan, de <strong>reactieproducten</strong>, staan rechts. De pijl lees je als "wordt omgezet in". Het is dus geen is-teken: links en rechts staan andere stoffen.</p>
+<p>Achter elke formule kan een <strong>toestandsaanduiding</strong> staan: (s) vast, (l) vloeibaar, (g) gas en (aq) opgelost in water. Het getal vóór een formule is de <strong>coëfficiënt</strong>: zoveel deeltjes doen mee. Het kleine getal rechtsonder een atoom is de <strong>index</strong>: zoveel atomen zitten er in één deeltje. Staat er geen getal, dan is het 1.</p>
+<div class="sam-figure"><svg viewBox="0 0 320 175" role="img" aria-label="Reactievergelijking van waterstof en zuurstof tot water met coëfficiënt, index, pijl, beginstoffen, reactieproduct en toestandsaanduiding aangewezen">
+<g font-family="inherit">
+<g font-size="21" font-weight="700" fill="var(--dk)">
+<text x="16" y="92">2</text><text x="32" y="92">H₂</text><text x="92" y="92">+</text><text x="110" y="92">O₂</text><text x="166" y="92">→</text><text x="200" y="92">2</text><text x="216" y="92">H₂O</text>
+</g>
+<g font-size="12" fill="var(--mu)"><text x="58" y="92">(g)</text><text x="136" y="92">(g)</text><text x="262" y="92">(l)</text></g>
+<g stroke="var(--or)" stroke-width="1.5" fill="none">
+<path d="M22 46V72"/><path d="M131 46V96"/><path d="M178 46V74"/>
+<path d="M16 108v6h126v-6"/><path d="M200 108v6h56v-6"/><path d="M268 98V140"/>
+</g>
+<g fill="var(--or)"><circle cx="22" cy="74" r="2.5"/><circle cx="131" cy="98" r="2.5"/><circle cx="178" cy="76" r="2.5"/><circle cx="268" cy="96" r="2.5"/></g>
+<g font-size="11.5" font-weight="700" fill="var(--dk)">
+<text x="8" y="40">coëfficiënt</text><text x="112" y="40">index</text><text x="176" y="26">pijl</text>
+<text x="40" y="132">beginstoffen</text><text x="228" y="132" text-anchor="middle">reactieproduct</text><text x="314" y="160" text-anchor="end">toestandsaanduiding</text>
+</g>
+<g font-size="10.5" fill="var(--mu)"><text x="8" y="26">aantal deeltjes</text><text x="112" y="26">per deeltje</text><text x="176" y="40">wordt omgezet in</text></g>
+</g></svg><div class="sam-figcap">Lees een vergelijking van links naar rechts. Het grote getal vooraan telt <strong>deeltjes</strong>, het kleine getal rechtsonder telt <strong>atomen in één deeltje</strong>.</div></div>
+<div class="sam-onthoud"><strong>Onthoud:</strong> 3 CO₂ bevat 3 × 2 = 6 zuurstofatomen. Coëfficiënt maal index geeft het aantal atomen.</div>
+</div>
+
+<div class="sam-chapter"><div class="sam-ch-title"><span class="sam-ch-n">2</span>Coëfficiënt of index: wat mag je veranderen?</div>
+<p>Bij een reactie verdwijnen geen atomen en er komen er ook geen bij. Ze gaan alleen anders aan elkaar vast zitten. Dit heet de <strong>wet van behoud van massa</strong>. Daarom moet een vergelijking <strong>kloppend</strong> zijn: van elke atoomsoort staan links even veel atomen als rechts. Het aantal moleculen mag wel veranderen. Bij waterstof en zuurstof worden drie moleculen er twee.</p>
+<p>De grootste valkuil: een index veranderen om het te laten kloppen. Wie van H₂O het molecuul H₂O₂ maakt, schrijft een andere stof op (waterstofperoxide). De formule van een stof ligt vast. Je mag alleen <strong>coëfficiënten</strong> aanpassen, en die moeten de kleinste hele getallen zijn.</p>
+<div class="sam-figure"><svg viewBox="0 0 320 190" role="img" aria-label="Deeltjesmodel van 2 H2 plus O2 wordt 2 H2O: links en rechts vier waterstofatomen en twee zuurstofatomen, dus de reactievergelijking is kloppend">
+<g font-family="inherit">
+<g fill="rgba(var(--or-rgb),.25)"><circle cx="26" cy="58" r="10"/><circle cx="44" cy="58" r="10"/><circle cx="26" cy="104" r="10"/><circle cx="44" cy="104" r="10"/></g>
+<g fill="var(--or)"><circle cx="96" cy="81" r="13"/><circle cx="120" cy="81" r="13"/></g>
+<g fill="rgba(var(--or-rgb),.25)"><circle cx="203" cy="70" r="9"/><circle cx="235" cy="70" r="9"/><circle cx="255" cy="116" r="9"/><circle cx="287" cy="116" r="9"/></g>
+<g fill="var(--or)"><circle cx="219" cy="58" r="13"/><circle cx="271" cy="104" r="13"/></g>
+<g font-size="11" font-weight="700" text-anchor="middle" fill="var(--dk)">
+<text x="26" y="62">H</text><text x="44" y="62">H</text><text x="26" y="108">H</text><text x="44" y="108">H</text>
+<text x="203" y="74">H</text><text x="235" y="74">H</text><text x="255" y="120">H</text><text x="287" y="120">H</text>
+</g>
+<g font-size="12" font-weight="700" text-anchor="middle" fill="#fff"><text x="96" y="85">O</text><text x="120" y="85">O</text><text x="219" y="62">O</text><text x="271" y="108">O</text></g>
+<path d="M146 81h26" stroke="var(--dk)" stroke-width="2"/><polygon points="178,81 170,76 170,86" fill="var(--dk)"/>
+<g font-size="13" font-weight="700" text-anchor="middle" fill="var(--dk)"><text x="74" y="146">2 H₂ + O₂</text><text x="246" y="146">2 H₂O</text></g>
+<path d="M14 156h120M186 156h120" stroke="var(--bo)" stroke-width="1.5"/>
+<g font-size="12" text-anchor="middle" fill="var(--mu)"><text x="74" y="174">4 H en 2 O</text><text x="246" y="174">4 H en 2 O</text></g>
+<text x="160" y="174" text-anchor="middle" font-size="14" font-weight="700" fill="var(--or)">=</text>
+</g></svg><div class="sam-figcap">Tel de bolletjes per soort. Links en rechts staan <strong>4 waterstofatomen en 2 zuurstofatomen</strong>: de vergelijking klopt, ook al worden drie moleculen er twee.</div></div>
+<div class="sam-warn"><strong>Veelgemaakte fout:</strong> H₂ + O₂ → H₂O₂ "kloppend maken". Dan heb je water vervangen door een andere stof. Goed is 2 H₂ + O₂ → 2 H₂O.</div>
+</div>
+
+<div class="sam-chapter"><div class="sam-ch-title"><span class="sam-ch-n">3</span>Kloppend maken, stap voor stap</div>
+<p>Werk vast in deze volgorde. Schrijf eerst de juiste formules op, ook die van de <strong>twee-atomige elementen</strong>: H₂, N₂, O₂, F₂, Cl₂, Br₂ en I₂. Metalen en koolstof schrijf je met alleen het symbool (Na, Fe, C). Kies dan een atoomsoort die maar in één stof links en één stof rechts voorkomt en maak die kloppend. Bewaar een element dat als losse stof voorkomt, zoals O₂, voor het laatst: daar pas je één getal aan zonder de rest te verstoren.</p>
+<div class="sam-worked"><div class="sam-worked-h">Uitgewerkt: propaan verbrandt</div>
+<div class="sam-worked-q">C₃H₈ + O₂ → CO₂ + H₂O</div>
+<ol class="sam-worked-steps">
+<li>Koolstof: links 3 C, dus 3 CO₂.</li>
+<li>Waterstof: links 8 H, dus 4 H₂O.</li>
+<li>Zuurstof tellen rechts: 3 × 2 + 4 × 1 = 10 O.</li>
+<li>Tien O-atomen komen uit 5 O₂.</li>
+</ol>
+<div class="sam-worked-ans">C₃H₈ + 5 O₂ → 3 CO₂ + 4 H₂O</div></div>
+<div class="sam-figure"><svg viewBox="0 0 320 200" role="img" aria-label="Staafdiagram van het aantal koolstof-, waterstof- en zuurstofatomen links en rechts bij de verbranding van propaan, eerst niet kloppend en daarna kloppend">
+<g font-family="inherit">
+<g font-size="12" font-weight="700" fill="var(--dk)" text-anchor="middle"><text x="84" y="16">eerst</text><text x="240" y="16">kloppend</text></g>
+<g stroke="var(--bo)" stroke-width="1"><path d="M30 152H150M186 152H306"/><path d="M30 92H150M186 92H306M30 32H150M186 32H306" stroke-dasharray="2 3"/></g>
+<g font-size="10" fill="var(--mu)" text-anchor="end"><text x="26" y="155">0</text><text x="26" y="95">5</text><text x="26" y="35">10</text></g>
+<g fill="var(--or)">
+<rect x="38" y="116" width="12" height="36"/><rect x="74" y="56" width="12" height="96"/><rect x="110" y="128" width="12" height="24"/>
+<rect x="194" y="116" width="12" height="36"/><rect x="230" y="56" width="12" height="96"/><rect x="266" y="32" width="12" height="120"/>
+</g>
+<g fill="rgba(var(--or-rgb),.3)">
+<rect x="52" y="140" width="12" height="12"/><rect x="88" y="128" width="12" height="24"/><rect x="124" y="116" width="12" height="36"/>
+<rect x="208" y="116" width="12" height="36"/><rect x="244" y="56" width="12" height="96"/><rect x="280" y="32" width="12" height="120"/>
+</g>
+<g font-size="12" font-weight="700" fill="var(--dk)" text-anchor="middle">
+<text x="51" y="168">C</text><text x="87" y="168">H</text><text x="123" y="168">O</text><text x="207" y="168">C</text><text x="243" y="168">H</text><text x="279" y="168">O</text>
+</g>
+<rect x="72" y="182" width="10" height="10" fill="var(--or)"/><text x="86" y="191" font-size="11" fill="var(--mu)">links van de pijl</text>
+<rect x="186" y="182" width="10" height="10" fill="rgba(var(--or-rgb),.3)"/><text x="200" y="191" font-size="11" fill="var(--mu)">rechts van de pijl</text>
+</g></svg><div class="sam-figcap">Zonder coëfficiënten zijn de staven per atoomsoort ongelijk. Na C, H en daarna O zijn ze <strong>per soort even hoog</strong>: 3 C, 8 H en 10 O aan beide kanten.</div></div>
+<div class="sam-tip"><strong>Examentip:</strong> kom je op een halve coëfficiënt uit, zoals 6½ O₂ bij butaan, vermenigvuldig dan alles met 2. Op het examen telt alleen de vorm met de kleinste hele getallen.</div>
+</div>
+
+<div class="sam-chapter"><div class="sam-ch-title"><span class="sam-ch-n">4</span>Verbranden: volledig en onvolledig</div>
+<p>Verbranden is reageren met zuurstof. De reactieproducten zijn daarom oxiden. Een koolwaterstof (zoals methaan, propaan of butaan) geeft bij <strong>volledige verbranding</strong> koolstofdioxide en water: CH₄ + 2 O₂ → CO₂ + 2 H₂O. Bij te weinig zuurstof is de verbranding <strong>onvolledig</strong>. Dan ontstaat ook koolstofmono-oxide (CO) of roet (C). Waterstof wordt altijd water.</p>
+<p>Onvolledige verbranding is gevaarlijk: CO is giftig, je ruikt en ziet het niet. Een slecht geventileerde geiser of kachel geeft 2 CH₄ + 3 O₂ → 2 CO + 4 H₂O. Daarom hangt er in veel huizen een CO-melder.</p>
+<div class="sam-figure"><svg viewBox="0 0 320 210" role="img" aria-label="Twee gasbranders: met open luchtgat een kleine ruisende vlam met volledige verbranding, met dicht luchtgat een grote lichtgevende vlam met onvolledige verbranding en roet">
+<g font-family="inherit">
+<g fill="var(--mu)" opacity=".55"><rect x="62" y="110" width="16" height="64" rx="2"/><rect x="202" y="110" width="16" height="64" rx="2"/></g>
+<g fill="var(--dk)" opacity=".75"><rect x="44" y="174" width="52" height="10" rx="3"/><rect x="184" y="174" width="52" height="10" rx="3"/></g>
+<circle cx="70" cy="156" r="4.5" fill="var(--bg2)" stroke="var(--dk)" stroke-width="1.5"/><circle cx="210" cy="156" r="4.5" fill="var(--dk)"/>
+<path d="M70 50C58 72 60 96 64 110H76C80 96 82 72 70 50Z" fill="rgba(var(--or-rgb),.35)"/>
+<path d="M70 74C65 88 66 100 67 110H73C74 100 75 88 70 74Z" fill="var(--or)"/>
+<path d="M210 22C185 50 190 76 194 92C188 100 194 108 202 110H218C226 108 232 100 226 92C230 76 235 50 210 22Z" fill="#f59e0b"/>
+<path d="M210 56C200 76 202 92 206 110H214C218 92 220 76 210 56Z" fill="#fde68a"/>
+<g fill="var(--dk)" opacity=".7"><circle cx="206" cy="14" r="2.5"/><circle cx="216" cy="8" r="2"/><circle cx="211" cy="3" r="1.6"/></g>
+<g stroke="var(--mu)" stroke-width="1" fill="none"><path d="M74 156H112"/><path d="M214 156H250"/><path d="M80 66H112"/><path d="M228 40H252"/><path d="M220 10H252"/></g>
+<g font-size="11.5" font-weight="700" fill="var(--dk)"><text x="116" y="160">luchtgat open</text><text x="254" y="160">dicht</text><text x="116" y="70">kleine vlam</text><text x="256" y="44">grote vlam</text><text x="256" y="14">roet</text></g>
+<g font-size="12" font-weight="700" text-anchor="middle" fill="var(--dk)"><text x="70" y="202">CO₂ + H₂O</text><text x="210" y="202">ook CO en C</text></g>
+</g></svg><div class="sam-figcap">Met het luchtgat open komt er genoeg zuurstof bij het gas: een kleine, ruisende vlam en <strong>volledige verbranding</strong>. Dicht luchtgat: een grote, lichtgevende vlam met roet en CO, dus <strong>onvolledige verbranding</strong>.</div></div>
+<div class="sam-onthoud"><strong>Onthoud:</strong> verbranding van een koolwaterstof maak je kloppend in de volgorde C, H, O.</div>
+</div>
+
+<div class="sam-chapter"><div class="sam-ch-title"><span class="sam-ch-n">5</span>Massa en lading blijven gelijk</div>
+<p>Omdat atomen behouden blijven, verandert de totale massa niet. In een gesloten fles weegt alles na de reactie precies even veel als ervoor. In een open bak lijkt het soms anders. Verbrand je 2,4 g magnesium in een open kroes, dan weeg je na afloop 4,0 g magnesiumoxide. De extra 1,6 g is zuurstof uit de lucht: die woog je vooraf niet mee. Andersom wordt een open bak lichter als er een gas ontsnapt, zoals CO₂ bij het verhitten van kalk.</p>
+<p>Bij reacties met ionen schrijf je vaak een <strong>ionvergelijking</strong>. Daarin staan alleen de deeltjes die echt reageren. Ionen die niets doen, zoals Na⁺ of NO₃⁻ in een oplossing, laat je weg. Dan moet niet alleen het aantal atomen kloppen, maar ook de <strong>lading</strong>. Bij Fe³⁺ + 3 OH⁻ → Fe(OH)₃ is de lading links +3 − 3 = 0, en het neerslag rechts is neutraal. Bij zink in zoutzuur geldt Zn + 2 H⁺ → Zn²⁺ + H₂: links +2, rechts +2.</p>
+<div class="sam-figure"><svg viewBox="0 0 320 200" role="img" aria-label="Weegschaal met magnesium in een open kroes: 2,4 gram voor de verbranding en 4,0 gram na de verbranding, omdat 1,6 gram zuurstof uit de lucht is opgenomen">
+<g font-family="inherit">
+<g fill="var(--bg2)" stroke="var(--bo)" stroke-width="1.5"><rect x="20" y="120" width="110" height="44" rx="10"/><rect x="190" y="120" width="110" height="44" rx="10"/></g>
+<g fill="var(--dk)"><rect x="40" y="138" width="70" height="18" rx="4"/><rect x="210" y="138" width="70" height="18" rx="4"/></g>
+<g font-size="13" font-weight="700" text-anchor="middle" fill="#fff"><text x="75" y="152">2,4 g</text><text x="245" y="152">4,0 g</text></g>
+<path d="M48 96h54l-8 24H56z" fill="var(--mu)" opacity=".55"/><path d="M218 96h54l-8 24h-38z" fill="var(--mu)" opacity=".55"/>
+<path d="M58 92c6-6 12 4 18-2s12 4 18-2" stroke="var(--dk)" stroke-width="3" fill="none" stroke-linecap="round"/>
+<ellipse cx="245" cy="98" rx="22" ry="5" fill="#fff" stroke="var(--bo)"/>
+<g fill="var(--or)"><circle cx="196" cy="40" r="7"/><circle cx="208" cy="40" r="7"/><circle cx="232" cy="26" r="7"/><circle cx="244" cy="26" r="7"/><circle cx="268" cy="44" r="7"/><circle cx="280" cy="44" r="7"/></g>
+<g stroke="var(--or)" stroke-width="1.5" fill="none"><path d="M202 52L232 86M238 38L242 82M274 56L254 86"/></g>
+<path d="M142 142h34" stroke="var(--dk)" stroke-width="2"/><polygon points="182,142 174,137 174,147" fill="var(--dk)"/>
+<g font-size="11.5" font-weight="700" fill="var(--dk)" text-anchor="middle"><text x="75" y="184">magnesium</text><text x="245" y="184">magnesiumoxide</text></g>
+<text x="24" y="40" font-size="12" font-weight="700" fill="var(--or)">+1,6 g O₂</text><text x="24" y="56" font-size="11.5" fill="var(--mu)">uit de lucht</text>
+</g></svg><div class="sam-figcap">De kroes wordt zwaarder, maar de wet klopt: <strong>2,4 g magnesium + 1,6 g zuurstof = 4,0 g magnesiumoxide</strong>. De zuurstof kwam uit de lucht en woog je vooraf niet mee.</div></div>
+<div class="sam-tip"><strong>Examentip:</strong> controleer bij een ionvergelijking als laatste stap de lading. Klopt het aantal atomen maar niet de lading, dan staat er een fout in de coëfficiënten of in een ionlading.</div>
 </div>`
 });

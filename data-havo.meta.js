@@ -1628,7 +1628,31 @@ var VAKKEN = [
     "nSv": 146,
     "nOe": 8,
     "nBeg": 31,
-    "hasSam": true
+    "hasSam": true,
+    "leerdoelen": [
+     {
+      "id": "C1",
+      "lo": "sk.C.1",
+      "gs": 2,
+      "naam": "Reactievergelijkingen kloppend maken",
+      "beschrijving": "Je leest wat een reactievergelijking vertelt, maakt hem kloppend met coëfficiënten en stelt hem op uit een beschrijving, ook bij verbrandingen en ionen.",
+      "ceStatus": "CE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Wat een reactievergelijking laat zien",
+       "Coëfficiënt of index",
+       "Atomen tellen en kloppend maken",
+       "Verbrandingsreacties",
+       "Een vergelijking opstellen uit een beschrijving",
+       "Behoud van massa en lading"
+      ],
+      "nSv": 28,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
+     }
+    ]
    },
    {
     "id": "D",

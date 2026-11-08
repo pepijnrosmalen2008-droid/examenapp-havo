@@ -1,0 +1,694 @@
+{
+ "id": "C1",
+ "lo": "sk.C.1",
+ "gs": 2,
+ "naam": "Reactievergelijkingen kloppend maken",
+ "beschrijving": "Je leest wat een reactievergelijking vertelt, maakt hem kloppend met coëfficiënten en stelt hem op uit een beschrijving, ook bij verbrandingen en ionen.",
+ "ceStatus": "CE",
+ "binas": "",
+ "val": "",
+ "onderwerpen": [
+  "Wat een reactievergelijking laat zien",
+  "Coëfficiënt of index",
+  "Atomen tellen en kloppend maken",
+  "Verbrandingsreacties",
+  "Een vergelijking opstellen uit een beschrijving",
+  "Behoud van massa en lading"
+ ],
+ "sam": "Een reactievergelijking geeft met formules weer welke stoffen reageren en welke ontstaan. Atomen verdwijnen niet en ontstaan niet, daarom maak je de vergelijking kloppend: van elke atoomsoort links even veel als rechts. Dat doe je alleen met coëfficiënten, nooit met indices. Bij verbranding van een koolwaterstof doe je eerst C, dan H, dan O. Bij ionen moet ook de lading kloppen.",
+ "begrippen": [
+  {
+   "t": "Reactievergelijking",
+   "d": "Korte schrijfwijze van een reactie met formules: beginstoffen links, reactieproducten rechts, een pijl ertussen."
+  },
+  {
+   "t": "Beginstof",
+   "d": "Stof die bij een reactie verdwijnt; staat links van de pijl."
+  },
+  {
+   "t": "Reactieproduct",
+   "d": "Stof die bij een reactie ontstaat; staat rechts van de pijl."
+  },
+  {
+   "t": "Coëfficiënt",
+   "d": "Getal vóór een formule: het aantal moleculen of formule-eenheden. Dit getal pas je aan bij het kloppend maken."
+  },
+  {
+   "t": "Index",
+   "d": "Klein getal rechtsonder een atoomsymbool: hoeveel van die atomen in één deeltje zitten. Hoort bij de formule en verander je nooit."
+  },
+  {
+   "t": "Kloppend",
+   "d": "Van elke atoomsoort staan links en rechts evenveel atomen (en bij ionen is ook de lading gelijk)."
+  },
+  {
+   "t": "Wet van behoud van massa",
+   "d": "Bij een reactie verdwijnen en ontstaan geen atomen, dus de totale massa voor en na de reactie is gelijk."
+  },
+  {
+   "t": "Toestandsaanduiding",
+   "d": "(s) vast, (l) vloeibaar, (g) gas, (aq) opgelost in water; staat achter de formule."
+  },
+  {
+   "t": "Volledige verbranding",
+   "d": "Verbranding met genoeg zuurstof; een koolwaterstof geeft dan koolstofdioxide en water."
+  },
+  {
+   "t": "Onvolledige verbranding",
+   "d": "Verbranding met te weinig zuurstof; er ontstaat ook koolstofmono-oxide (CO) of roet (C)."
+  },
+  {
+   "t": "Twee-atomige elementen",
+   "d": "H₂, N₂, O₂, F₂, Cl₂, Br₂ en I₂: deze elementen schrijf je als stof altijd met index 2."
+  },
+  {
+   "t": "Ionvergelijking",
+   "d": "Reactievergelijking met alleen de deeltjes die echt reageren; atomen en lading moeten links en rechts gelijk zijn."
+  }
+ ],
+ "sv": [
+  {
+   "v": "Wat betekent (l) achter H₂O in 2 H₂(g) + O₂(g) → 2 H₂O(l)?",
+   "o": [
+    "Vloeibaar",
+    "Opgelost in water",
+    "Vast",
+    "Gasvormig"
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 0,
+   "u": "De toestandsaanduiding (l) staat voor vloeibaar (liquid).",
+   "uo": [
+    "Klopt: (l) komt van liquid. Water ontstaat hier als vloeistof. De andere aanduidingen zijn (s) vast, (g) gas en (aq) opgelost in water.",
+    "Koos je opgelost? Dat is (aq), van aqua. Water kan niet in zichzelf opgelost zijn: zuiver water is gewoon een vloeistof, dus (l).",
+    "Koos je vast? Vast is (s), van solid. Ijs zou H₂O(s) zijn. Hier staat (l), en dat is de vloeibare toestand.",
+    "Koos je gasvormig? Gas is (g), zoals bij H₂(g) en O₂(g) links. Waterdamp zou H₂O(g) zijn; (l) betekent vloeibaar."
+   ],
+   "uh": "s = solid (vast), l = liquid (vloeibaar), g = gas, aq = aqua (opgelost)."
+  },
+  {
+   "v": "Wat is de beginstof bij de ontleding CaCO₃(s) → CaO(s) + CO₂(g)?",
+   "o": [
+    "Alleen CaCO₃",
+    "CaO en CO₂",
+    "CaCO₃ en CaO",
+    "CaCO₃, CaO en CO₂"
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 0,
+   "u": "Beginstoffen staan links van de pijl, reactieproducten rechts.",
+   "uo": [
+    "Klopt: links van de pijl staat alleen calciumcarbonaat. Bij een ontleding valt één beginstof uiteen in twee of meer reactieproducten.",
+    "Koos je CaO en CO₂? Die staan rechts van de pijl: dat zijn de reactieproducten. De pijl lees je als \"wordt omgezet in\", dus links begint het.",
+    "Koos je CaCO₃ en CaO? Dan denk je dat calciumoxide al aanwezig was omdat er \"Ca\" in beide zit. CaO ontstaat pas; het staat rechts van de pijl.",
+    "Koos je alle drie? Na de reactie is er wel van alles in de buis, maar beginstoffen zijn alleen de stoffen links van de pijl. Hier is dat één stof."
+   ],
+   "uh": "Links = waarmee je begint, rechts = wat er ontstaat."
+  },
+  {
+   "v": "Wat zegt de pijl in een reactievergelijking?",
+   "o": [
+    "Wordt omgezet in",
+    "Is gelijk aan",
+    "Lost op in",
+    "Is in evenwicht met"
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 0,
+   "u": "De pijl betekent \"reageert tot\" of \"wordt omgezet in\"; het is geen is-teken.",
+   "uo": [
+    "Klopt: de pijl betekent dat de beginstoffen verdwijnen en de reactieproducten ontstaan. Links en rechts zijn andere stoffen, alleen de atomen zijn dezelfde.",
+    "Koos je \"is gelijk aan\"? Dan lees je de vergelijking als een wiskundige som. De stoffen links en rechts zijn juist verschillend. Alleen het aantal atomen van elke soort is gelijk.",
+    "Koos je \"lost op in\"? Oplossen is geen reactie: de stof blijft dezelfde. In een reactievergelijking ontstaan nieuwe stoffen, en dat geeft de pijl aan.",
+    "Koos je evenwicht? Een evenwicht schrijf je met een dubbele pijl ⇄. Een enkele pijl betekent dat de reactie één kant op verloopt."
+   ],
+   "uh": "Enkele pijl = wordt omgezet in. Dubbele pijl = evenwicht."
+  },
+  {
+   "v": "Hoeveel zuurstofatomen staan er in 3 CO₂?",
+   "o": [
+    "3",
+    "5",
+    "6",
+    "2"
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 1,
+   "u": "Vermenigvuldig de index met de coëfficiënt: 3 × 2 = 6.",
+   "uo": [
+    "Koos je 3? Dan telde je alleen de coëfficiënt. Die zegt hoeveel moleculen er zijn: drie. Elk CO₂-molecuul heeft twee O-atomen, dus samen zes.",
+    "Koos je 5? Dan heb je coëfficiënt en index opgeteld (3 + 2). Ze moeten vermenigvuldigd worden: drie moleculen met elk twee O-atomen geeft zes.",
+    "Klopt: de coëfficiënt 3 betekent drie moleculen CO₂, de index 2 twee O-atomen per molecuul. Samen 3 × 2 = 6 zuurstofatomen.",
+    "Koos je 2? Dat is het aantal O-atomen in één molecuul. De 3 ervoor zegt dat er drie van die moleculen zijn, dus zes O-atomen in totaal."
+   ],
+   "uh": "Coëfficiënt × index = aantal atomen."
+  },
+  {
+   "v": "Hoeveel atomen bevat 2 C₂H₆O in totaal?",
+   "o": [
+    "9",
+    "11",
+    "16",
+    "18"
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 1,
+   "u": "Eén molecuul C₂H₆O heeft 2 + 6 + 1 = 9 atomen; twee moleculen hebben er 18.",
+   "uo": [
+    "Koos je 9? Dat is het aantal atomen in één molecuul ethanol. De coëfficiënt 2 verdubbelt alles: 18 atomen.",
+    "Koos je 11? Dan heb je de 2 ervoor bij de 9 atomen opgeteld. De coëfficiënt is een vermenigvuldiger: twee keer negen.",
+    "Koos je 16? Dan vergat je het O-atoom (index 1, niet geschreven). Een index van 1 schrijf je niet op, maar het atoom telt wel mee: 2 × 9 = 18.",
+    "Klopt: één molecuul heeft 2 C, 6 H en 1 O, samen 9 atomen. De coëfficiënt 2 maakt er 18 van. Let op de O zonder getal: dat is index 1."
+   ],
+   "uh": "Geen getal achter een atoom = index 1, en die telt mee."
+  },
+  {
+   "v": "Een leerling maakt H₂ + O₂ → H₂O kloppend door H₂O te veranderen in H₂O₂. Wat is er mis?",
+   "o": [
+    "De index is veranderd: een andere stof",
+    "De coëfficiënt voor H₂ moet altijd 1 blijven",
+    "Zuurstof moet hier als losse O geschreven worden",
+    "Er staat nergens een toestandsaanduiding bij"
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 1,
+   "u": "Kloppend maken doe je alleen met coëfficiënten; een index veranderen maakt een andere stof.",
+   "uo": [
+    "Klopt: H₂O₂ is waterstofperoxide, niet water. Met een andere index schrijf je een andere stof op. Je mag alleen getallen vóór de formules zetten: 2 H₂ + O₂ → 2 H₂O.",
+    "Koos je dit? Coëfficiënten mag je juist aanpassen; dat is de hele methode. Het probleem is dat hij de index van het product veranderde, waardoor er een andere stof staat.",
+    "Koos je losse O? Zuurstof komt als stof voor als O₂-moleculen, dus je schrijft O₂. Een losse O als beginstof bestaat niet in deze reactie.",
+    "Koos je de toestandsaanduiding? Die ontbreekt inderdaad, maar dat maakt de vergelijking niet ongeldig. De echte fout: de formule van water is veranderd."
+   ],
+   "uh": "Index = welke stof. Coëfficiënt = hoeveel. Alleen de coëfficiënt mag je veranderen."
+  },
+  {
+   "v": "Welke vergelijking is juist?",
+   "o": [
+    "2 Al + O₃ → Al₂O₃",
+    "2 Al + 1½ O₂ → Al₂O₃",
+    "4 Al + 3 O₂ → Al₄O₆",
+    "4 Al + 3 O₂ → 2 Al₂O₃"
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 1,
+   "u": "Kloppend maken met de kleinste hele coëfficiënten, zonder formules te veranderen: 4 Al + 3 O₂ → 2 Al₂O₃.",
+   "uo": [
+    "Koos je O₃? Dan heb je de index van zuurstof veranderd zodat het klopt. O₃ is ozon, een andere stof. Zuurstof is O₂; je past alleen de getallen ervoor aan.",
+    "Koos je 1½ O₂? Dat klopt in atomen, maar coëfficiënten moeten de kleinste hele getallen zijn. Vermenigvuldig alles met 2: 4 Al + 3 O₂ → 2 Al₂O₃.",
+    "Koos je Al₄O₆? Hier is de formule van het product veranderd. Aluminiumoxide is Al₂O₃; twee van die eenheden schrijf je als 2 Al₂O₃, niet als Al₄O₆.",
+    "Klopt: links 4 Al en 3 × 2 = 6 O, rechts 2 × 2 = 4 Al en 2 × 3 = 6 O. Formules blijven gelijk en de coëfficiënten zijn de kleinste hele getallen."
+   ],
+   "uh": "Breuk als coëfficiënt? Alles × 2.",
+   "ctx": "Aluminium reageert met zuurstof uit de lucht tot een dun laagje aluminiumoxide, Al₂O₃. Dat laagje beschermt het metaal tegen verdere aantasting. Een leerling wil de vergelijking van deze reactie opschrijven en probeert vier versies."
+  },
+  {
+   "v": "Wanneer is een reactievergelijking kloppend?",
+   "o": [
+    "Als links en rechts precies evenveel moleculen staan",
+    "Als elke atoomsoort links en rechts even vaak voorkomt",
+    "Als links en rechts precies evenveel stoffen staan",
+    "Als de coëfficiënten links en rechts samen even groot zijn"
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 2,
+   "u": "Kloppend betekent: van elke atoomsoort links even veel als rechts.",
+   "uo": [
+    "Koos je evenveel moleculen? Het aantal moleculen mag veranderen: bij 2 H₂ + O₂ → 2 H₂O worden drie moleculen er twee. Wat gelijk blijft, zijn de atomen.",
+    "Klopt: atomen verdwijnen niet en ontstaan niet bij een reactie. Ze gaan alleen anders aan elkaar vast zitten. Daarom tel je per atoomsoort links en rechts.",
+    "Koos je evenveel stoffen? Bij een ontleding wordt één stof er twee, bij een synthese juist andersom. Het aantal stoffen zegt niets over kloppend.",
+    "Koos je de som van de coëfficiënten? Die is links vaak anders dan rechts (bij methaan 3 links, 3 rechts, maar bij waterstof 3 tegen 2). Je telt atomen, geen coëfficiënten."
+   ],
+   "uh": "Tel atomen, geen moleculen."
+  },
+  {
+   "v": "Welke coëfficiënten maken N₂ + H₂ → NH₃ kloppend?",
+   "o": [
+    "1, 3, 1",
+    "1, 1, 2",
+    "2, 6, 4",
+    "1, 3, 2"
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 2,
+   "u": "N₂ + 3 H₂ → 2 NH₃: links 2 N en 6 H, rechts 2 N en 6 H.",
+   "uo": [
+    "Koos je 1, 3, 1? Dan klopt waterstof links (6) niet met rechts (3). Er staan rechts ook maar 1 N terwijl links 2 N staan. Je hebt 2 NH₃ nodig.",
+    "Koos je 1, 1, 2? Stikstof klopt dan (2 en 2), maar waterstof niet: links 2 H, rechts 6 H. Zet daarom 3 voor H₂.",
+    "Koos je 2, 6, 4? Die klopt wel in atomen, maar alle getallen zijn deelbaar door 2. Je gebruikt altijd de kleinste hele coëfficiënten: 1, 3, 2.",
+    "Klopt: met 2 NH₃ heb je rechts 2 N en 6 H. Links geeft 1 N₂ twee N en 3 H₂ zes H. De coëfficiënt 1 schrijf je niet op."
+   ],
+   "uh": "Klopt hij, controleer dan of je nog kunt delen."
+  },
+  {
+   "v": "IJzer reageert met chloor tot ijzer(III)chloride, FeCl₃. Welke vergelijking is juist?",
+   "o": [
+    "Fe + 3 Cl → FeCl₃",
+    "Fe + Cl₂ → FeCl₂",
+    "2 Fe + 3 Cl₂ → 2 FeCl₃",
+    "Fe + 1½ Cl₂ → FeCl₃"
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 2,
+   "u": "Chloor is Cl₂; om op een even aantal Cl te komen heb je 2 FeCl₃ nodig: 2 Fe + 3 Cl₂ → 2 FeCl₃.",
+   "uo": [
+    "Koos je 3 Cl? Chloor komt als stof voor als Cl₂-moleculen, niet als losse atomen. Je moet dus met Cl₂ werken en dan kloppend maken.",
+    "Koos je FeCl₂? Die vergelijking klopt in atomen, maar FeCl₂ is ijzer(II)chloride, een andere stof dan gevraagd. Je mag het product niet aanpassen om het makkelijker te maken.",
+    "Klopt: links 2 Fe en 6 Cl, rechts 2 Fe en 2 × 3 = 6 Cl. Je begon met FeCl₃ en Cl₂ en zocht het kleinste gemeenschappelijke veelvoud van 2 en 3: zes.",
+    "Koos je 1½ Cl₂? In atomen klopt het, maar een coëfficiënt is altijd een heel getal. Vermenigvuldig alles met 2 en je krijgt 2 Fe + 3 Cl₂ → 2 FeCl₃."
+   ],
+   "uh": "Cl₂ en een oneven aantal Cl rechts? Zoek het kleinste gemeenschappelijke veelvoud."
+  },
+  {
+   "v": "Welk element maak je bij de verbranding van een koolwaterstof het handigst als laatste kloppend?",
+   "o": [
+    "Koolstof",
+    "Waterstof",
+    "Zuurstof",
+    "Het maakt niet uit"
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 2,
+   "u": "Zuurstof komt links alleen als O₂ voor, dus die pas je als laatste aan met één coëfficiënt.",
+   "uo": [
+    "Koos je koolstof? Koolstof zit links alleen in de brandstof en rechts alleen in CO₂. Dat doe je juist als eerste, omdat het simpel is.",
+    "Koos je waterstof? Ook waterstof zit maar in één stof links en één rechts (H₂O). Die doe je als tweede. Zuurstof zit rechts in twee stoffen, dus die tel je pas op het eind.",
+    "Klopt: zuurstof zit rechts in zowel CO₂ als H₂O. Als C en H kloppen, tel je de O-atomen rechts en zet je het juiste getal voor O₂, de enige stof met O links.",
+    "Koos je \"maakt niet uit\"? In principe kom je er altijd, maar als je met zuurstof begint, moet je steeds opnieuw beginnen. Volgorde C, H, O werkt het snelst."
+   ],
+   "uh": "Verbranding: eerst C, dan H, als laatste O."
+  },
+  {
+   "v": "Klopt de vergelijking van de leerling?",
+   "o": [
+    "Ja: elke atoomsoort klopt",
+    "Nee: rechts staan meer moleculen dan links",
+    "Nee: zuurstof had 1½ O₂ moeten zijn",
+    "Nee: kaliumchloride moet 2 KCl₂ zijn"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 2,
+   "u": "Tel per atoomsoort: K 2-2, Cl 2-2, O 6-6. De vergelijking klopt.",
+   "uo": [
+    "Klopt: links 2 K, 2 Cl en 2 × 3 = 6 O. Rechts 2 K, 2 Cl en 3 × 2 = 6 O. Het aantal moleculen (2 links, 5 rechts) mag verschillen.",
+    "Koos je \"meer moleculen rechts\"? Dan denk je dat moleculen behouden blijven. Alleen atomen blijven behouden; bij een ontleding komen er juist meer moleculen bij.",
+    "Koos je 1½ O₂? Dat zou horen bij KClO₃ → KCl + 1½ O₂, met een breuk als coëfficiënt. De leerling heeft alles al met 2 vermenigvuldigd, en dat is juist de nette vorm.",
+    "Koos je KCl₂? Dan verander je de formule van kaliumchloride. Kalium vormt K⁺ en chloor Cl⁻, dus de formule is KCl. Formules pas je nooit aan om te kloppen."
+   ],
+   "uh": "Tel atomen per soort, niet het aantal moleculen.",
+   "ctx": "Bij verwarmen ontleedt kaliumchloraat (KClO₃) in kaliumchloride (KCl) en zuurstof. Een leerling schrijft: 2 KClO₃(s) → 2 KCl(s) + 3 O₂(g). Zijn buurman zegt dat het niet kan kloppen, want links staan 2 moleculen en rechts 5."
+  },
+  {
+   "v": "Wat zijn de kleinste hele coëfficiënten voor Fe₂O₃ + Al → Fe + Al₂O₃?",
+   "o": [
+    "1, 2, 2, 1",
+    "2, 4, 4, 2",
+    "1, 1, 2, 1",
+    "1, 2, 1, 1"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 2,
+   "u": "Fe₂O₃ + 2 Al → 2 Fe + Al₂O₃: Fe 2-2, O 3-3, Al 2-2.",
+   "uo": [
+    "Klopt: links 2 Fe, 3 O en 2 Al; rechts 2 Fe, 2 Al en 3 O. De coëfficiënt 1 schrijf je in de echte vergelijking niet op.",
+    "Koos je 2, 4, 4, 2? Die klopt ook in atomen, maar alles is deelbaar door 2. Op het examen geef je de kleinste hele getallen.",
+    "Koos je 1, 1, 2, 1? IJzer en zuurstof kloppen dan, maar aluminium niet: links 1 Al, rechts 2 Al in Al₂O₃. Je hebt 2 Al nodig.",
+    "Koos je 1, 2, 1, 1? Aluminium klopt, maar ijzer niet: links 2 Fe in Fe₂O₃, rechts maar 1 Fe. Zet een 2 voor Fe."
+   ],
+   "uh": "Controleer elke atoomsoort apart, ook als het er al goed uitziet.",
+   "ctx": "Bij de thermietreactie, die gebruikt wordt om treinrails aan elkaar te lassen, reageert ijzer(III)oxide met aluminiumpoeder. Er ontstaat vloeibaar ijzer en aluminiumoxide. De reactie geeft zoveel warmte dat het ijzer smelt."
+  },
+  {
+   "v": "Welke stoffen ontstaan bij de volledige verbranding van een koolwaterstof?",
+   "o": [
+    "Koolstofdioxide en water",
+    "Koolstofmono-oxide en water",
+    "Koolstof en waterstof",
+    "Koolstofdioxide en waterstof"
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 3,
+   "u": "Volledige verbranding van een koolwaterstof geeft CO₂ en H₂O.",
+   "uo": [
+    "Klopt: bij genoeg zuurstof reageert alle koolstof tot CO₂ en alle waterstof tot H₂O.",
+    "Koos je koolstofmono-oxide? Dat ontstaat bij onvolledige verbranding, als er te weinig zuurstof is. Bij volledige verbranding is er genoeg zuurstof voor CO₂.",
+    "Koos je koolstof en waterstof? Dan beschrijf je een ontleding. Bij verbranding reageert de stof met zuurstof, dus de producten bevatten zuurstof: oxiden.",
+    "Koos je waterstof? Waterstof is zelf een brandstof en verbrandt meteen mee tot water. Bij een verbranding komt waterstof terecht in H₂O."
+   ],
+   "uh": "Verbranden = reageren met zuurstof, dus de producten zijn oxiden."
+  },
+  {
+   "v": "Welke vergelijking voor de volledige verbranding van methaan is goed?",
+   "o": [
+    "CH₄ + O₂ → CO₂ + H₂O",
+    "2 CH₄ + 3 O₂ → 2 CO + 4 H₂O",
+    "CH₄ + 2 O₂ → CO₂ + 2 H₂O",
+    "CH₄ + 2 O₂ → CO₂ + H₄O₂"
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 3,
+   "u": "CH₄ + 2 O₂ → CO₂ + 2 H₂O: C 1-1, H 4-4, O 4-4.",
+   "uo": [
+    "Koos je deze? Hier staan de juiste stoffen, maar hij is niet kloppend: links 4 H, rechts 2 H. Begin met C, dan H (2 H₂O), dan O (2 O₂).",
+    "Koos je de versie met CO? Die klopt in atomen, maar CO ontstaat bij onvolledige verbranding. Gevraagd is de volledige verbranding, met CO₂.",
+    "Klopt: één C geeft één CO₂, vier H geeft twee H₂O, en rechts staan dan 2 + 2 = 4 O-atomen. Die komen uit 2 O₂.",
+    "Koos je H₄O₂? Dan heb je de formule van water aangepast. Water is altijd H₂O; twee watermoleculen schrijf je als 2 H₂O."
+   ],
+   "uh": "Verbranding: C → CO₂, H → H₂O, en tel daarna de O."
+  },
+  {
+   "v": "Welke coëfficiënt staat voor O₂ in de kloppende vergelijking?",
+   "o": [
+    "3",
+    "5",
+    "7",
+    "10"
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 3,
+   "u": "C₃H₈ + 5 O₂ → 3 CO₂ + 4 H₂O: rechts 6 + 4 = 10 O-atomen, dus 5 O₂.",
+   "uo": [
+    "Koos je 3? Dat is de coëfficiënt voor CO₂ (drie C-atomen). Voor zuurstof tel je alle O rechts: 3 × 2 + 4 × 1 = 10.",
+    "Klopt: drie C geeft 3 CO₂, acht H geeft 4 H₂O. Rechts staan 6 + 4 = 10 O-atomen. Elk O₂-molecuul levert er 2, dus 5 O₂.",
+    "Koos je 7? Dan heb je de coëfficiënten 3 en 4 opgeteld. Je moet atomen tellen: in 3 CO₂ zitten 6 O-atomen, in 4 H₂O zitten er 4.",
+    "Koos je 10? Dat is het aantal O-atomen. Zuurstof komt per twee (O₂), dus het aantal moleculen is de helft: 5."
+   ],
+   "uh": "Aantal O-atomen rechts gedeeld door 2 = coëfficiënt voor O₂.",
+   "ctx": "In een gasbrander op de camping verbrandt propaan, C₃H₈. Als de luchttoevoer goed staat, is de verbranding volledig. Een leerling heeft al opgeschreven: C₃H₈ + … O₂ → 3 CO₂ + 4 H₂O."
+  },
+  {
+   "v": "Waarom staat er een 2 voor butaan in de vergelijking?",
+   "o": [
+    "Omdat butaan een gas is",
+    "Omdat er twee soorten atomen in butaan zitten",
+    "Omdat er anders 6½ O₂ nodig is",
+    "Omdat er twee moleculen nodig zijn voor een vlam"
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 3,
+   "u": "Met één butaan heb je 13 O-atomen rechts, dus 6½ O₂; om hele getallen te krijgen verdubbel je alles.",
+   "uo": [
+    "Koos je \"omdat het een gas is\"? De toestand zegt niets over coëfficiënten. Gassen kunnen met elke coëfficiënt in een vergelijking staan.",
+    "Koos je twee soorten atomen? Het aantal atoomsoorten bepaalt geen coëfficiënt. Methaan heeft ook C en H en krijgt coëfficiënt 1.",
+    "Klopt: C₄H₁₀ + 6½ O₂ → 4 CO₂ + 5 H₂O klopt, maar 6½ is geen heel getal. Alles × 2 geeft 2 C₄H₁₀ + 13 O₂ → 8 CO₂ + 10 H₂O.",
+    "Koos je \"twee moleculen voor een vlam\"? Een reactievergelijking zegt niets over hoe een vlam ontstaat, alleen in welke verhouding stoffen reageren."
+   ],
+   "uh": "Uitkomst met een halve? Verdubbel de hele vergelijking.",
+   "ctx": "Een aansteker bevat butaan, C₄H₁₀. Bij volledige verbranding geldt: 2 C₄H₁₀ + 13 O₂ → 8 CO₂ + 10 H₂O. Een leerling vraagt zich af waarom er een 2 voor butaan staat, terwijl er toch maar één stof verbrandt."
+  },
+  {
+   "v": "Welke vergelijking hoort bij deze onvolledige verbranding?",
+   "o": [
+    "CH₄ + O₂ → CO + 2 H₂O",
+    "2 CH₄ + 3 O₂ → 2 CO + 4 H₂O",
+    "CH₄ + 2 O₂ → CO₂ + 2 H₂O",
+    "2 CH₄ + O₂ → 2 CO + 4 H₂"
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 3,
+   "u": "2 CH₄ + 3 O₂ → 2 CO + 4 H₂O: C 2-2, H 8-8, O 6-6.",
+   "uo": [
+    "Koos je deze? De stoffen kloppen, maar de atomen niet: links 2 O, rechts 1 + 2 = 3 O. Met 1½ O₂ zou het kloppen; maal 2 geeft de juiste versie.",
+    "Klopt: links 2 C, 8 H en 6 O; rechts 2 C, 8 H en 2 + 4 = 6 O. Er ontstaat CO, het giftige gas waar een CO-melder op reageert.",
+    "Koos je CO₂? Dat is de volledige verbranding. Bij te weinig lucht ontstaat koolstofmono-oxide, CO, en dat geeft de melder aan.",
+    "Koos je H₂ als product? Die vergelijking klopt in atomen, maar bij een verbranding reageert waterstof altijd tot water. Losse H₂ ontstaat hier niet."
+   ],
+   "uh": "Weinig lucht: C → CO. Waterstof wordt altijd H₂O.",
+   "ctx": "In een slecht geventileerde badkamer brandt een geiser op aardgas (methaan, CH₄). Door te weinig zuurstof is de verbranding onvolledig: er ontstaat koolstofmono-oxide en water, maar geen koolstofdioxide. De CO-melder gaat af."
+  },
+  {
+   "v": "Welk element komt als losse stof voor als twee-atomig molecuul?",
+   "o": [
+    "Natrium",
+    "Chloor",
+    "Koolstof",
+    "Neon"
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 4,
+   "u": "H₂, N₂, O₂, F₂, Cl₂, Br₂ en I₂ zijn als stof twee-atomig.",
+   "uo": [
+    "Koos je natrium? Natrium is een metaal. Metalen schrijf je in een vergelijking met alleen hun symbool, zoals Na, niet als Na₂.",
+    "Klopt: chloor bestaat uit Cl₂-moleculen. Samen met H₂, N₂, O₂, F₂, Br₂ en I₂ hoort het bij de zeven elementen die je als twee-atomig molecuul schrijft.",
+    "Koos je koolstof? Koolstof vormt een groot rooster (zoals grafiet of diamant). In een vergelijking schrijf je het als C.",
+    "Koos je neon? Neon is een edelgas en komt juist als losse atomen voor. Je schrijft het als Ne."
+   ],
+   "uh": "Twee-atomig: H, N, O, F, Cl, Br, I."
+  },
+  {
+   "v": "Natrium reageert met chloor tot natriumchloride. Welke vergelijking klopt?",
+   "o": [
+    "Na + Cl → NaCl",
+    "Na + Cl₂ → NaCl₂",
+    "Na₂ + Cl₂ → 2 NaCl",
+    "2 Na + Cl₂ → 2 NaCl"
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 4,
+   "u": "2 Na + Cl₂ → 2 NaCl: chloor is Cl₂ en natrium als metaal Na.",
+   "uo": [
+    "Koos je Na + Cl? Die klopt in atomen, maar chloor komt als stof voor als Cl₂. Je moet dus met Cl₂ beginnen en dan kloppend maken.",
+    "Koos je NaCl₂? Dan heb je de formule van natriumchloride aangepast. Na⁺ en Cl⁻ verhouden zich 1 : 1, dus het blijft NaCl.",
+    "Koos je Na₂? Natrium is een metaal en geen twee-atomig molecuul. Een metaal schrijf je met alleen het symbool: Na.",
+    "Klopt: Cl₂ levert 2 Cl-atomen, dus je hebt 2 NaCl nodig en daarvoor 2 Na. Links 2 Na en 2 Cl, rechts ook."
+   ],
+   "uh": "Eerst de juiste formules, dan pas getallen ervoor."
+  },
+  {
+   "v": "Magnesium verbrandt tot magnesiumoxide, MgO. Welke vergelijking klopt?",
+   "o": [
+    "2 Mg + O₂ → 2 MgO",
+    "Mg + O → MgO",
+    "Mg + O₂ → MgO₂",
+    "2 Mg + O₂ → Mg₂O₂"
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 4,
+   "u": "2 Mg + O₂ → 2 MgO.",
+   "uo": [
+    "Klopt: O₂ levert twee O-atomen, dus 2 MgO en daarvoor 2 Mg. Elke atoomsoort staat links en rechts twee keer.",
+    "Koos je Mg + O? Zuurstof is als stof O₂. Een losse O schrijf je niet als beginstof. Met O₂ moet je wel kloppend maken: 2 Mg + O₂ → 2 MgO.",
+    "Koos je MgO₂? Die formule bestaat niet voor magnesiumoxide: Mg²⁺ en O²⁻ verhouden zich 1 : 1. Je mag de formule niet aanpassen om het te laten kloppen.",
+    "Koos je Mg₂O₂? Twee eenheden MgO schrijf je als 2 MgO. Met indices verander je de formule; de coëfficiënt geeft het aantal."
+   ],
+   "uh": "Twee keer een stof = coëfficiënt 2, niet de indices verdubbelen."
+  },
+  {
+   "v": "Welke vergelijking past bij de beschrijving?",
+   "o": [
+    "6 CO₂ + 6 H₂O → C₆H₁₂O₆ + 6 O₂",
+    "CO₂ + H₂O → C₆H₁₂O₆ + O₂",
+    "6 CO₂ + 6 H₂O → C₆H₁₂O₆ + 12 O",
+    "6 CO₂ + 12 H₂ → C₆H₁₂O₆ + 6 H₂O"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 4,
+   "u": "Fotosynthese: 6 CO₂ + 6 H₂O → C₆H₁₂O₆ + 6 O₂.",
+   "uo": [
+    "Klopt: links 6 C, 12 H en 12 + 6 = 18 O. Rechts 6 C, 12 H en 6 + 12 = 18 O. De stoffen kloppen met de beschrijving.",
+    "Koos je deze? De stoffen staan goed, maar de getallen ontbreken: links 1 C, rechts 6 C. Begin met koolstof (6 CO₂) en werk dan H en O af.",
+    "Koos je 12 O? In atomen klopt het, maar zuurstof komt als stof voor als O₂. Twaalf losse O-atomen zijn zes O₂-moleculen: 6 O₂.",
+    "Koos je H₂ als beginstof? Deze vergelijking klopt wel in atomen, maar de beschrijving noemt water, niet waterstof. Lees eerst welke stoffen reageren."
+   ],
+   "uh": "Eerst de stoffen uit de tekst halen, dan pas kloppend maken.",
+   "ctx": "Planten maken in hun bladgroenkorrels glucose (C₆H₁₂O₆). Daarvoor gebruiken ze koolstofdioxide uit de lucht en water uit de bodem. Behalve glucose ontstaat er zuurstof, die de plant afgeeft aan de lucht."
+  },
+  {
+   "v": "Waarom moet een reactievergelijking kloppend zijn?",
+   "o": [
+    "Omdat het aantal moleculen gelijk blijft",
+    "Omdat atomen behouden blijven",
+    "Omdat het volume van de stoffen gelijk blijft",
+    "Omdat er bij een reactie geen energie vrijkomt"
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 5,
+   "u": "Bij een reactie blijven alle atomen behouden: wet van behoud van massa.",
+   "uo": [
+    "Koos je moleculen? Moleculen worden juist afgebroken en nieuw gevormd; het aantal kan veranderen. Alleen de atomen blijven dezelfde.",
+    "Klopt: atomen worden bij een reactie anders gegroepeerd, maar ze verdwijnen niet en ontstaan niet. Daarom blijft ook de totale massa gelijk.",
+    "Koos je volume? Volume kan bij een reactie sterk veranderen, bijvoorbeeld als er gas ontstaat. Dat is geen reden voor kloppend maken.",
+    "Koos je energie? Bij veel reacties komt juist wel energie vrij. Dat staat los van het tellen van atomen."
+   ],
+   "uh": "Atomen blijven, dus de massa blijft."
+  },
+  {
+   "v": "Hoe groot is de totale lading links en rechts in Ag⁺(aq) + Cl⁻(aq) → AgCl(s)?",
+   "o": [
+    "Links +1, rechts −1",
+    "Links 0, rechts 0",
+    "Links +1, rechts 0",
+    "Links +2, rechts 0"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 5,
+   "u": "Links +1 + (−1) = 0, rechts is AgCl neutraal: de lading klopt.",
+   "uo": [
+    "Koos je +1 en −1? Dan heb je de ionen apart gezet. Links staan beide ionen: +1 en −1 samen is 0. Rechts staat een neutraal zout.",
+    "Klopt: Ag⁺ en Cl⁻ heffen elkaar op tot 0. Het neerslag AgCl is neutraal. Bij een ionvergelijking moet ook de lading links en rechts gelijk zijn.",
+    "Koos je links +1? Dan vergat je dat Cl⁻ een negatieve lading heeft. Tel alle ladingen links op: +1 − 1 = 0.",
+    "Koos je +2? Dan heb je de getallen opgeteld zonder het teken. Cl⁻ is negatief, dus links is het +1 − 1 = 0."
+   ],
+   "uh": "Ionvergelijking: tel atomen én lading."
+  },
+  {
+   "v": "Wat weegt de fles na afloop?",
+   "o": [
+    "Meer dan 152,4 g, want MgO is zwaarder dan Mg",
+    "Minder dan 152,4 g, want er is zuurstof verbruikt",
+    "Precies 152,4 g",
+    "Meer dan 152,4 g, want er komt warmte vrij"
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 5,
+   "u": "In een gesloten systeem blijft de massa gelijk: alle atomen blijven in de fles.",
+   "uo": [
+    "Koos je \"meer, want MgO is zwaarder\"? Het vaste stofje wordt wel zwaarder, maar die extra massa komt uit de zuurstof in dezelfde fles. In totaal verandert er niets.",
+    "Koos je \"minder, zuurstof verbruikt\"? De zuurstof verdwijnt niet: de O-atomen zitten nu in het magnesiumoxide. Ze zijn nog steeds in de fles.",
+    "Klopt: de fles is dicht, dus er gaat niets in of uit. Alle atomen van magnesium en zuurstof zitten na afloop in magnesiumoxide. De massa blijft 152,4 g.",
+    "Koos je warmte? Warmte heeft geen meetbare massa en kan bovendien door het glas naar buiten. De weegschaal geeft dezelfde massa."
+   ],
+   "uh": "Gesloten systeem: massa blijft gelijk.",
+   "ctx": "Je weegt een afgesloten erlenmeyer met daarin een stukje magnesiumlint en lucht: samen 152,4 g. Door de fles van buitenaf te verwarmen laat je het magnesium met de zuurstof in de fles reageren tot wit magnesiumoxide. De fles blijft dicht."
+  },
+  {
+   "v": "Wie heeft gelijk?",
+   "o": [
+    "De leerling: in een open kroes geldt de wet niet",
+    "Niemand: de weegschaal is vast niet goed afgesteld",
+    "De leerling: magnesium neemt water op uit de lucht",
+    "De docent: zuurstof uit de lucht reageerde mee"
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 5,
+   "u": "2,4 g Mg + 1,6 g O₂ → 4,0 g MgO: de massa klopt als je de zuurstof meetelt.",
+   "uo": [
+    "Koos je de leerling? De wet geldt altijd; in een open kroes kan alleen stof in of uit. Hier komt zuurstof uit de lucht erbij. Die weeg je voor de reactie niet mee.",
+    "Koos je \"weegschaal fout\"? De toename van 1,6 g past precies bij de zuurstof die nodig is voor 2,4 g magnesium. Het is geen meetfout maar scheikunde.",
+    "Koos je water? Bij verbranden van magnesium ontstaat magnesiumoxide, MgO, niet een stof met water. De extra massa komt van zuurstof.",
+    "Klopt: magnesium reageert met zuurstof uit de lucht. Die zuurstof weeg je vooraf niet, maar zit na afloop wel in het MgO. 4,0 − 2,4 = 1,6 g zuurstof."
+   ],
+   "uh": "Massa erbij in een open bak? Zoek welke stof uit de lucht meedeed.",
+   "ctx": "In een open porseleinen kroes verbrand je 2,4 g magnesiumlint. Na afloop weeg je het witte poeder: 4,0 g. Een leerling zegt: \"De wet van behoud van massa klopt hier niet, want het is zwaarder geworden.\" De docent zegt dat de wet wel klopt."
+  },
+  {
+   "v": "Welke ionvergelijking klopt in atomen en lading?",
+   "o": [
+    "Zn(s) + H⁺(aq) → Zn²⁺(aq) + H₂(g)",
+    "Zn(s) + 2 H⁺(aq) → Zn²⁺(aq) + 2 H(g)",
+    "Zn(s) + 2 H⁺(aq) → Zn²⁺(aq) + H₂(g)",
+    "Zn(s) + 2 H⁺(aq) → Zn⁺(aq) + H₂(g)"
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 5,
+   "u": "Zn + 2 H⁺ → Zn²⁺ + H₂: atomen 1 Zn en 2 H aan beide kanten, lading +2 links en rechts.",
+   "uo": [
+    "Koos je deze? Waterstof klopt niet (1 H links, 2 H rechts) en de lading ook niet: links +1, rechts +2. Zet een 2 voor H⁺.",
+    "Koos je 2 H? Atomen en lading kloppen, maar waterstofgas bestaat uit H₂-moleculen. Twee losse H-atomen schrijf je als één H₂.",
+    "Klopt: links 1 Zn en 2 H met lading 2 × (+1) = +2. Rechts 1 Zn met lading +2 en een neutraal H₂-molecuul. Atomen en lading kloppen.",
+    "Koos je Zn⁺? Dan klopt de lading niet: links +2, rechts +1. Zink vormt Zn²⁺-ionen, dat staat in Binas."
+   ],
+   "uh": "Bij ionen: eerst atomen, dan lading controleren.",
+   "ctx": "Je doet een korrel zink in verdund zoutzuur. Er ontstaan belletjes waterstofgas en het zink lost langzaam op. In de oplossing komen zinkionen, Zn²⁺. De chloride-ionen doen niet mee en laat je weg uit de vergelijking."
+  },
+  {
+   "v": "Welke coëfficiënt hoort voor OH⁻ in deze neerslagreactie?",
+   "o": [
+    "1",
+    "2",
+    "3",
+    "6"
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 5,
+   "u": "Fe³⁺ + 3 OH⁻ → Fe(OH)₃: 3 OH-groepen en lading +3 − 3 = 0.",
+   "uo": [
+    "Koos je 1? Dan kloppen de OH-groepen niet (1 links, 3 rechts) en ook de lading niet: +3 − 1 = +2 links, rechts 0.",
+    "Koos je 2? Dan staat er links +3 − 2 = +1 en 2 OH, rechts 0 en 3 OH. Zowel atomen als lading kloppen niet.",
+    "Klopt: in Fe(OH)₃ zitten drie OH-groepen, dus 3 OH⁻. De lading links is +3 − 3 = 0, gelijk aan het neutrale neerslag rechts.",
+    "Koos je 6? Dan heb je de index 3 van de haakjes met de 2 atomen in OH vermenigvuldigd. Je telt hier OH-groepen als geheel: drie."
+   ],
+   "uh": "Lading van het neerslag is 0, dus de ionen links moeten samen ook 0 zijn.",
+   "ctx": "Je voegt natronloog (met OH⁻-ionen) toe aan een oplossing met ijzer(III)ionen, Fe³⁺. Er ontstaat een bruin neerslag van ijzer(III)hydroxide, Fe(OH)₃. Je schrijft de ionvergelijking: Fe³⁺(aq) + … OH⁻(aq) → Fe(OH)₃(s)."
+  }
+ ],
+ "oe": [
+  {
+   "bron": "Examenstijl",
+   "ctx": "Ammoniak (NH₃) is de grondstof voor kunstmest. In de fabriek laat men stikstof uit de lucht reageren met waterstof bij hoge druk en een temperatuur van ongeveer 450 °C. Er ontstaat alleen ammoniak.",
+   "v": "Geef de vergelijking van de vorming van ammoniak.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "N₂ + 3 H₂ → 2 NH₃. Formules N₂ en H₂ voor de pijl en NH₃ na de pijl (1p). Juiste coëfficiënten (1p). Wie N en H als losse atomen schrijft, krijgt het eerste punt niet."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Brandpasta voor een fonduestel bevat ethanol, C₂H₅OH. Bij het branden onder het pannetje is de verbranding volledig. Er ontstaan alleen koolstofdioxide en waterdamp.",
+   "v": "Geef de vergelijking van de volledige verbranding van ethanol.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "C₂H₅OH + 3 O₂ → 2 CO₂ + 3 H₂O. C₂H₅OH en O₂ voor de pijl (1p). CO₂ en H₂O na de pijl (1p). Juiste coëfficiënten (1p). Let op: het O-atoom in ethanol telt mee bij het tellen van zuurstof."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "In een caravan wordt gekookt op propaan, C₃H₈. De ventilatieroosters zijn dichtgeplakt. Daardoor is de verbranding onvolledig: er ontstaat koolstofmono-oxide en water, maar geen koolstofdioxide. Koolstofmono-oxide is giftig en je ruikt het niet.",
+   "v": "Geef de vergelijking van deze onvolledige verbranding van propaan.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "2 C₃H₈ + 7 O₂ → 6 CO + 8 H₂O. Juiste formules voor en na de pijl (1p). Juiste coëfficiënten, kleinste hele getallen (1p). C₃H₈ + 3½ O₂ → 3 CO + 4 H₂O levert het tweede punt niet op."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Je mengt een oplossing van lood(II)nitraat met een oplossing van kaliumjodide. Er ontstaat een geel neerslag van lood(II)jodide, PbI₂. De kalium- en nitraationen blijven opgelost en doen niet mee aan de reactie.",
+   "v": "Geef de ionvergelijking van deze neerslagreactie en laat zien dat de lading klopt.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Pb²⁺(aq) + 2 I⁻(aq) → PbI₂(s). Juiste ionen voor de pijl en PbI₂ na de pijl (1p). Coëfficiënt 2 voor I⁻ (1p). Lading links +2 + 2 × (−1) = 0, gelijk aan het neutrale neerslag (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een leerling verbrandt 2,4 g magnesium in een open kroes. Het witte poeder dat overblijft, weegt 4,0 g. Er ontstaat alleen magnesiumoxide, MgO.",
+   "v": "Leg uit waarom de massa toeneemt en bereken hoeveel gram zuurstof heeft gereageerd.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Magnesium reageert met zuurstof uit de lucht; de zuurstofatomen komen in het magnesiumoxide terecht en die massa weeg je voor de reactie niet mee (1p). Massa zuurstof: 4,0 − 2,4 = 1,6 g (1p). Vergelijking 2 Mg + O₂ → 2 MgO mag als onderbouwing, maar is niet vereist."
+  }
+ ]
+}
