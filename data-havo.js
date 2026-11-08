@@ -89968,6 +89968,696 @@ var VAKKEN = [
         "u": "Het tegengeluid heeft dezelfde frequentie en amplitude als het motorgeluid, maar is in tegenfase; in het oor vallen toppen op dalen en dooft het geluid uit (2p). Lage tonen hebben een grote golflengte (bij 100 Hz 3,4 m), dus een kleine vertraging of afstand tot het oor bederft de tegenfase nauwelijks; bij hoge tonen met een korte golflengte lukt dat veel minder goed (1p)."
        }
       ]
+     },
+     {
+      "id": "B5",
+      "lo": "na.B.5",
+      "gs": 2,
+      "naam": "Dopplereffect",
+      "beschrijving": "Je verklaart met golffronten waarom een naderende bron hoger en een wegrijdende bron lager klinkt, rekent met de dopplerformule, bepaalt een snelheid uit een gemeten frequentie en past het dopplereffect toe op licht (roodverschuiving), radar, echo-doppler en vleermuizen.",
+      "ceStatus": "CE",
+      "binas": "35",
+      "val": "",
+      "onderwerpen": [
+       "Wat je hoort bij een bewegende bron",
+       "Verklaring met golffronten",
+       "Rekenen met de dopplerformule",
+       "Snelheid bepalen uit de toonhoogte",
+       "Dopplereffect bij licht",
+       "Toepassingen van het dopplereffect"
+      ],
+      "sam": "Bij het dopplereffect hoor je een andere frequentie doordat bron en waarnemer ten opzichte van elkaar bewegen: naderen = hoger, verwijderen = lager. Vóór een bewegende bron liggen de golftoppen dichter op elkaar. Dopplerformule: f_w = f_b · v / (v - v_b) bij naderen, met v + v_b bij wegrijden. Licht: roodverschuiving bij verwijderen, Δλ / λ = v / c; bijna alle stelsels zijn roodverschoven, het heelal dijt uit. Toepassingen: radar, echo-doppler, vleermuis.",
+      "begrippen": [
+       {
+        "t": "Dopplereffect",
+        "d": "Verandering van de waargenomen frequentie doordat bron en waarnemer ten opzichte van elkaar bewegen."
+       },
+       {
+        "t": "Bronfrequentie",
+        "d": "Frequentie die de bron werkelijk uitzendt (f_b)."
+       },
+       {
+        "t": "Waargenomen frequentie",
+        "d": "Frequentie die de waarnemer ontvangt (f_w); hoger bij naderen, lager bij verwijderen."
+       },
+       {
+        "t": "Dopplerformule",
+        "d": "f_w = f_b · v / (v - v_b) voor een naderende bron, met v + v_b voor een bron die wegrijdt."
+       },
+       {
+        "t": "Golffront",
+        "d": "Lijn of cirkel die een golftop voorstelt; bij een bewegende bron liggen de golffronten vóór de bron dichter op elkaar."
+       },
+       {
+        "t": "Roodverschuiving",
+        "d": "Verschuiving van spectraallijnen naar langere golflengte doordat de bron van ons af beweegt."
+       },
+       {
+        "t": "Blauwverschuiving",
+        "d": "Verschuiving van spectraallijnen naar kortere golflengte doordat de bron naar ons toe beweegt."
+       },
+       {
+        "t": "Uitdijend heelal",
+        "d": "Bijna alle verre sterrenstelsels zijn roodverschoven en bewegen dus van ons af."
+       },
+       {
+        "t": "Radar",
+        "d": "Apparaat dat radiogolven uitzendt en uit de verschoven frequentie van de echo de snelheid bepaalt."
+       },
+       {
+        "t": "Echo-doppler",
+        "d": "Medisch onderzoek dat met de dopplerverschuiving van ultrageluid de snelheid van bloed meet."
+       },
+       {
+        "t": "Drukgolf",
+        "d": "Opgestapelde golftoppen als een bron net zo snel of sneller gaat dan het geluid; je hoort een knal."
+       }
+      ],
+      "sv": [
+       {
+        "v": "Een ambulance met sirene rijdt naar je toe. Hoe klinkt de sirene vergeleken met een stilstaande ambulance?",
+        "o": [
+         "Even hoog, maar harder",
+         "Lager",
+         "Hoger",
+         "Even hoog, maar zachter"
+        ],
+        "c": 2,
+        "d": 1,
+        "s": 0,
+        "u": "Naderen = hogere frequentie.",
+        "uo": [
+         "Koos je even hoog en harder? Dichterbij klinkt de sirene wel harder, maar ook de toonhoogte verandert. Dat is het dopplereffect.",
+         "Koos je lager? Dat hoor je pas als de ambulance van je af rijdt. Bij naderen worden de golven juist samengedrukt.",
+         "Klopt: als de bron naar je toe beweegt, komen de golftoppen dichter op elkaar bij je aan. Je hoort een hogere frequentie, dus een hogere toon.",
+         "Koos je zachter? Een naderende ambulance wordt juist luider. En de toon is hoger dan bij stilstand, niet gelijk."
+        ],
+        "uh": "Nadert = hoger."
+       },
+       {
+        "v": "Wat hoor je precies op het moment dat een toeterende trein langs je perron raast?",
+        "o": [
+         "De toon stijgt van laag naar hoog",
+         "De toon zakt van hoog naar laag",
+         "De toon blijft gelijk, alleen de sterkte verandert",
+         "De toon valt even helemaal weg"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 0,
+        "u": "Eerst nadert hij (hoog), dan verwijdert hij (laag).",
+        "uo": [
+         "Koos je van laag naar hoog? Dat is precies andersom. Bij naderen is de toon hoog, bij wegrijden laag.",
+         "Klopt: zolang de trein nadert, hoor je een hogere toon dan hij echt maakt. Zodra hij voorbij is en wegrijdt, hoor je een lagere toon. Daardoor zakt de toon precies bij het passeren.",
+         "Koos je alleen sterkte? De luidheid verandert ook, maar de bekende \"iiieeee-oooow\" laat horen dat vooral de toonhoogte zakt.",
+         "Koos je wegvallen? Het geluid gaat gewoon door. Wat verandert is de frequentie die bij je oor aankomt."
+        ],
+        "uh": "Langsrijden = toon zakt.",
+        "ctx": "Op een klein station staat een leerling op het perron als er een intercity zonder te stoppen langs raast. De machinist toetert lang en houdt de toeter ingedrukt. De leerling hoort een bekend geluid, dat je ook kent van raceauto's op televisie."
+       },
+       {
+        "v": "Hoort de chauffeur van de ambulance zelf ook een andere toon?",
+        "o": [
+         "Nee, hij beweegt mee met de sirene",
+         "Ja, de toon is voor hem hoger",
+         "Ja, de toon is voor hem lager",
+         "Ja, de toon wisselt steeds van hoog naar laag"
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 0,
+        "u": "Geen beweging tussen bron en waarnemer = geen dopplereffect.",
+        "uo": [
+         "Klopt: het dopplereffect ontstaat door beweging van de bron ten opzichte van de waarnemer. De chauffeur zit in dezelfde auto als de sirene en hoort dus de echte toon.",
+         "Koos je hoger? Hoger hoor je alleen als de bron naar je toe beweegt. De sirene en de chauffeur bewegen samen.",
+         "Koos je lager? Lager hoor je als de bron van je af beweegt. De afstand tussen sirene en chauffeur blijft gelijk.",
+         "Koos je wisselen? Dat hoort iemand langs de weg bij het passeren. Voor de chauffeur verandert de afstand tot de sirene niet."
+        ],
+        "uh": "Meebewegen = echte toon."
+       },
+       {
+        "v": "Je fietst hard naar een stilstaande, loeiende sirene toe. Wat hoor je?",
+        "o": [
+         "Een toon die steeds sneller van hoogte wisselt",
+         "Een lagere toon, want de bron beweegt niet",
+         "Dezelfde toon, want alleen een bewegende bron geeft dopplereffect",
+         "Een hogere toon dan als je stilstaat"
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 0,
+        "u": "Ook een bewegende waarnemer geeft dopplereffect.",
+        "uo": [
+         "Koos je steeds sneller wisselen? De sirene maakt een vaste toon. Zolang je met constante snelheid nadert, hoor je een vaste, hogere toon.",
+         "Koos je lager? Lager hoor je als de afstand groter wordt. Jij rijdt naar de sirene toe, dus de afstand wordt kleiner.",
+         "Koos je dezelfde toon? Het gaat om de beweging van bron en waarnemer ten opzichte van elkaar. Ook als alleen jij beweegt, verandert de ontvangen frequentie.",
+         "Klopt: als je naar de bron toe beweegt, kom je de golftoppen sneller tegen dan wanneer je stilstaat. Je ontvangt meer toppen per seconde en hoort dus een hogere toon."
+        ],
+        "uh": "Waarnemer nadert = ook hoger.",
+        "ctx": "Bij een brandweerkazerne wordt elke eerste maandag van de maand om 12 uur het luchtalarm getest: een vaste, loeiende toon. Een leerling fietst op dat moment met 8 m/s over een rechte weg naar de kazerne toe. Een vriend staat stil op de stoep ernaast."
+       },
+       {
+        "v": "De ambulance is voorbij en rijdt van je weg. Hoe klinkt de sirene nu?",
+        "o": [
+         "Precies als de echte toon",
+         "Hoger dan de echte toon",
+         "Lager dan de echte toon",
+         "Eerst lager, dan weer hoger"
+        ],
+        "c": 2,
+        "d": 1,
+        "s": 0,
+        "u": "Verwijderen = lagere frequentie.",
+        "uo": [
+         "Koos je de echte toon? Die hoor je alleen als de afstand niet verandert. De ambulance rijdt weg, dus de toon is lager.",
+         "Koos je hoger? Dat hoorde je toen de ambulance naar je toe kwam. Nu de afstand groter wordt, worden de golven uitgerekt.",
+         "Klopt: als de bron van je af beweegt, komen de golftoppen verder uit elkaar bij je aan. Je ontvangt minder toppen per seconde en hoort een lagere toon.",
+         "Koos je weer hoger? Zolang de ambulance met dezelfde snelheid wegrijdt, blijft de toon even laag. Hij wordt alleen zachter."
+        ],
+        "uh": "Weg = lager."
+       },
+       {
+        "v": "Waarom liggen de golftoppen vóór een rijdende ambulance dichter op elkaar?",
+        "o": [
+         "Het geluid gaat vóór de auto sneller",
+         "De bron rijdt achter zijn eigen golven aan",
+         "De sirene maakt vooruit een hogere toon",
+         "De lucht wordt voor de rijdende auto samengeperst"
+        ],
+        "c": 1,
+        "d": 1,
+        "s": 1,
+        "u": "Elke nieuwe top wordt dichter bij de vorige uitgezonden.",
+        "uo": [
+         "Koos je sneller? De geluidssnelheid hangt af van de lucht, niet van de bron. Vóór en achter de auto gaat het geluid even snel.",
+         "Klopt: tussen twee toppen schuift de ambulance een stukje op in de richting van de vorige top. Elke nieuwe top begint dus dichter bij de vorige, en de golflengte voor de auto wordt kleiner.",
+         "Koos je een hogere toon vooruit? De sirene maakt in alle richtingen dezelfde toon. Het verschil ontstaat doordat de bron beweegt.",
+         "Koos je lucht samenpersen? Bij normale snelheden duwt de auto de lucht nauwelijks samen. Het gaat om de plek waar elke nieuwe golftop begint."
+        ],
+        "uh": "Bron haalt eigen golven in."
+       },
+       {
+        "v": "Wat gebeurt er met de golflengte achter een wegrijdende bron?",
+        "o": [
+         "Die wordt groter",
+         "Die wordt kleiner",
+         "Die blijft gelijk",
+         "Die wordt nul"
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 1,
+        "u": "Achter de bron: toppen verder uit elkaar.",
+        "uo": [
+         "Klopt: tussen twee toppen beweegt de bron weg van de vorige top. Daardoor liggen de toppen achter de bron verder uit elkaar, de golflengte is groter en de toon lager.",
+         "Koos je kleiner? Dat geldt vóór de bron, in de richting waarin hij rijdt. Achter de bron worden de golven juist uitgerekt.",
+         "Koos je gelijk? Alleen loodrecht op de rijrichting merk je bijna niets. Recht achter de bron is de golflengte duidelijk groter.",
+         "Koos je nul? De golven bestaan nog gewoon. Nul zou betekenen dat alle toppen samenvallen, en dat gebeurt nergens achter de bron."
+        ],
+        "uh": "Achter = langere golven."
+       },
+       {
+        "v": "Hoe groot is de golflengte vóór de ambulance?",
+        "o": [
+         "0,0357 m",
+         "0,490 m",
+         "0,526 m",
+         "0,454 m"
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 1,
+        "u": "λ_voor = (v - v_b) / f_b = 318 / 700.",
+        "uo": [
+         "Koos je 0,0357 m? Dan heb je alleen 25 / 700 gerekend: hoe ver de ambulance in één trillingstijd rijdt. Dat stuk gaat van de golflengte af.",
+         "Koos je 0,490 m? Dat is de golflengte bij een stilstaande ambulance: 343 / 700. Vóór een rijdende bron is hij kleiner.",
+         "Koos je 0,526 m? Dat is (343 + 25) / 700: de golflengte achter de ambulance. Vóór de auto trek je de snelheid van de bron af.",
+         "Klopt: in één trillingstijd schuift de golftop 343 m/s × T op en de ambulance 25 m/s × T. Vóór de auto is λ = (343 - 25) / 700 = 0,454 m."
+        ],
+        "uh": "λ_voor = (v - v_b)/f.",
+        "ctx": "Een ambulance met een sirene van 700 Hz rijdt met 25 m/s over een rechte snelweg. Bij een stilstaande ambulance is de golflengte van de sirene 343 / 700 = 0,490 m. Een student wil weten hoe groot de golflengte is in de lucht vóór de rijdende ambulance."
+       },
+       {
+        "v": "Een bron beweegt met de geluidssnelheid. Wat gebeurt er vóór de bron?",
+        "o": [
+         "Er komt geen geluid meer uit de bron",
+         "De golflengte wordt twee keer zo groot",
+         "De toppen stapelen zich op tot een drukgolf",
+         "De frequentie wordt precies twee keer zo hoog"
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 1,
+        "u": "v_b = v → λ_voor = 0: alle toppen op één plek.",
+        "uo": [
+         "Koos je geen geluid? De bron blijft gewoon geluid maken. Het geluid kan alleen niet vóór de bron uit komen en hoopt zich op.",
+         "Koos je twee keer zo groot? Vóór de bron worden de golven juist korter. Bij de geluidssnelheid zou λ = (v - v) / f = 0 zijn.",
+         "Klopt: als de bron net zo snel gaat als zijn eigen golven, worden alle toppen op dezelfde plek uitgezonden. Ze stapelen zich op tot één sterke drukgolf. Gaat een vliegtuig nog sneller, dan hoor je die als een harde knal.",
+         "Koos je twee keer zo hoog? Met de formule wordt v - v_b = 0, en dan gaat de frequentie niet naar het dubbele maar oneindig hoog. Er ontstaat een drukgolf."
+        ],
+        "uh": "v_b = v → geluidsbarrière."
+       },
+       {
+        "v": "Waar meet de microfoon de kleinste golflengte?",
+        "o": [
+         "Recht achter de speelgoedauto",
+         "Recht vóór de speelgoedauto",
+         "Naast de auto, loodrecht op de rijrichting",
+         "Overal even groot"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 1,
+        "u": "In de bewegingsrichting worden de golven samengedrukt.",
+        "uo": [
+         "Koos je achter? Daar worden de golven juist uitgerekt: de grootste golflengte en de laagste toon.",
+         "Klopt: in de richting waarin de auto rijdt, worden de golftoppen het dichtst op elkaar uitgezonden. Daar is de golflengte het kleinst en de frequentie het hoogst.",
+         "Koos je naast de auto? Loodrecht op de rijrichting verandert de afstand op dat moment nauwelijks, dus daar is de golflengte bijna gelijk aan die van een stilstaande bron.",
+         "Koos je overal even groot? Dat geldt alleen voor een stilstaande bron. Bij een bewegende bron verschilt de golflengte per richting."
+        ],
+        "uh": "Vóór de bron: kleinste λ.",
+        "ctx": "Bij een practicum rijdt een speelgoedauto met een zoemer in een rechte lijn over de vloer. Rondom staan vier microfoons: één recht vóór de auto, één recht erachter en twee opzij. Met een computer meet een leerling bij elke microfoon de golflengte van het geluid."
+       },
+       {
+        "v": "Welke formule geeft de waargenomen frequentie als de bron met snelheid v_b naar je toe komt?",
+        "o": [
+         "f_w = f_b·v / (v - v_b)",
+         "f_w = f_b · v / (v + v_b)",
+         "f_w = f_b · (v - v_b) / v",
+         "f_w = f_b + v_b"
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 2,
+        "u": "Naderen: min in de noemer → f_w > f_b.",
+        "uo": [
+         "Klopt: vóór de bron is de golflengte (v - v_b) / f_b. De waargenomen frequentie is v gedeeld door die golflengte: f_w = f_b · v / (v - v_b). Die is groter dan f_b.",
+         "Koos je plus in de noemer? Dan wordt f_w kleiner dan f_b. Die formule hoort bij een bron die van je af rijdt.",
+         "Koos je (v - v_b) / v? Dan zou je bij naderen een lagere toon horen. Controleer altijd: naderen moet hoger uitkomen.",
+         "Koos je f_b + v_b? Je kunt geen snelheid bij een frequentie optellen; de eenheden kloppen niet. De snelheden staan in een breuk."
+        ],
+        "uh": "Naderen: v / (v - v_b)."
+       },
+       {
+        "v": "Een ambulance (700 Hz) rijdt met 25 m/s naar je toe. Welke frequentie hoor je? (v = 343 m/s)",
+        "o": [
+         "700 Hz",
+         "652,4 Hz",
+         "725 Hz",
+         "755 Hz"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 2,
+        "u": "f = 700 × 343 / 318.",
+        "uo": [
+         "Koos je 700 Hz? Dat is de toon die de sirene echt maakt. Omdat de ambulance nadert, hoor je een hogere frequentie.",
+         "Koos je 652 Hz? Dan heb je de formule voor wegrijden gebruikt, met + in de noemer. Bij naderen moet de toon hoger uitkomen.",
+         "Koos je 725 Hz? Dan heb je de snelheid van 25 m/s bij de frequentie opgeteld. Dat kan niet: gebruik de dopplerformule.",
+         "Klopt: f_w = f_b · v / (v - v_b) = 700 × 343 / (343 - 25) = 700 × 343 / 318 = 755 Hz."
+        ],
+        "uh": "Naderen: 755 Hz."
+       },
+       {
+        "v": "Welke frequentie hoort de toeschouwer als de raceauto van hem wegrijdt?",
+        "o": [
+         "700 Hz",
+         "1129 Hz",
+         "619 Hz",
+         "800 Hz"
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 2,
+        "u": "Wegrijden: f = 800 × 343 / (343 + 100).",
+        "uo": [
+         "Koos je 700 Hz? Dan heb je de snelheid van de auto van de frequentie afgetrokken. De snelheden horen in de breuk met v.",
+         "Koos je 1129 Hz? Dat is de frequentie bij naderen: 800 × 343 / 243. Bij wegrijden worden de golven langer en de toon lager.",
+         "Klopt: bij wegrijden staat er een plus in de noemer: f_w = 800 × 343 / 443 = 619 Hz. Dat is lager dan de echte 800 Hz.",
+         "Koos je 800 Hz? Dat is de toon van de motor zelf. De auto rijdt hard weg, dus de toeschouwer hoort een duidelijk lagere toon."
+        ],
+        "uh": "Wegrijden: v / (v + v_b).",
+        "ctx": "Een raceauto rijdt met 100 m/s (360 km/h) over het rechte stuk van een circuit. De motor maakt een toon van 800 Hz. Een toeschouwer staat langs de baan. Als de auto nadert, hoort hij 1129 Hz. De geluidssnelheid is 343 m/s."
+       },
+       {
+        "v": "Een treinhoorn van 500 Hz nadert met 40 m/s. Welke frequentie hoor je op het perron?",
+        "o": [
+         "447,8 Hz",
+         "566 Hz",
+         "540 Hz",
+         "583 Hz"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 2,
+        "u": "f = 500 × 343 / 303.",
+        "uo": [
+         "Koos je 448 Hz? Dat is de frequentie als de trein wegrijdt: 500 × 343 / 383. Bij naderen is de toon hoger.",
+         "Klopt: f_w = 500 × 343 / (343 - 40) = 500 × 343 / 303 = 566 Hz.",
+         "Koos je 540 Hz? Dan heb je de snelheid bij de frequentie opgeteld. Gebruik de breuk v / (v - v_b).",
+         "Koos je 583 Hz? Dan heb je 500 × (343 + 40) / 343 gerekend. De snelheid van de bron hoort in de noemer: v - v_b."
+        ],
+        "uh": "f = f_b · v/(v - v_b)."
+       },
+       {
+        "v": "Hoe groot is het verschil tussen de toon bij naderen en bij wegrijden?",
+        "o": [
+         "103 Hz",
+         "50 Hz",
+         "0 Hz",
+         "755,0 Hz"
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 2,
+        "u": "755 - 652 = 103 Hz.",
+        "uo": [
+         "Klopt: naderen 700 × 343 / 318 = 755 Hz, wegrijden 700 × 343 / 368 = 652 Hz. Het verschil is 755 - 652 = 103 Hz. Daarom hoor je bij het passeren zo'n duidelijke sprong.",
+         "Koos je 50 Hz? Dan heb je gedacht dat de verschuiving gelijk is aan de snelheid, 25 Hz omhoog en 25 Hz omlaag. De verschuiving volgt uit de dopplerformule.",
+         "Koos je 0 Hz? Dat zou betekenen dat er geen dopplereffect is. De ambulance rijdt, dus de toon verschilt bij naderen en wegrijden.",
+         "Koos je 755 Hz? Dat is de frequentie bij naderen, niet het verschil. Trek de frequentie bij wegrijden daar nog van af."
+        ],
+        "uh": "Sprong = f_naderen - f_weg.",
+        "ctx": "Een ambulance met een sirene van 700 Hz rijdt met 25 m/s langs een fietser die stilstaat bij een stoplicht. De fietser hoort de toon zakken op het moment dat de ambulance passeert. De geluidssnelheid is 343 m/s."
+       },
+       {
+        "v": "Een sirene maakt 600 Hz. Een leerling hoort 640 Hz. Wat weet je zeker?",
+        "o": [
+         "De sirene maakt eigenlijk 640 Hz",
+         "De sirene rijdt weg",
+         "De sirene staat stil",
+         "De sirene nadert"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 3,
+        "u": "Hoger dan f_b → bron en waarnemer naderen elkaar.",
+        "uo": [
+         "Koos je eigenlijk 640 Hz? De frequentie van de bron is gegeven als 600 Hz. Het verschil komt door de beweging.",
+         "Koos je wegrijden? Dan zou de leerling een lagere toon horen dan 600 Hz. 640 Hz is hoger.",
+         "Koos je stilstaan? Bij een stilstaande sirene en een stilstaande leerling hoor je precies 600 Hz.",
+         "Klopt: de leerling hoort een hogere toon dan de sirene maakt. Dat gebeurt alleen als de afstand tussen sirene en leerling kleiner wordt."
+        ],
+        "uh": "Hoger gehoord = nadert."
+       },
+       {
+        "v": "Hoe snel rijdt de auto met de sirene?",
+        "o": [
+         "23 m/s",
+         "40 m/s",
+         "21 m/s",
+         "343 m/s"
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 3,
+        "u": "640 = 600 · 343 / (343 - v_b) → v_b = 21,4 m/s.",
+        "uo": [
+         "Koos je 23 m/s? Dan heb je 343 × 40 / 600 gerekend. Dat is een benadering; reken met de echte formule: 343 - 600 × 343 / 640.",
+         "Koos je 40 m/s? Dan heb je het frequentieverschil van 40 Hz als snelheid genomen. Je moet de dopplerformule omwerken.",
+         "Klopt: 343 - v_b = 600 × 343 / 640 = 321,6, dus v_b = 343 - 321,6 = 21 m/s, ongeveer 77 km/h.",
+         "Koos je 343 m/s? Dat is de geluidssnelheid. De auto rijdt veel langzamer; anders zou er een knal ontstaan."
+        ],
+        "uh": "Werk de formule om naar v_b.",
+        "ctx": "Een leerling staat langs een rechte weg met een telefoonapp die de frequentie meet. Een politieauto met een sirene van 600 Hz komt aanrijden. De app meet 640 Hz. Hij wil de snelheid van de politieauto uitrekenen. De geluidssnelheid is 343 m/s."
+       },
+       {
+        "v": "De toon die je hoort bij een naderende brommer is 5% hoger dan de echte toon. Hoe snel rijdt hij ongeveer?",
+        "o": [
+         "17 m/s",
+         "16 m/s",
+         "5,0 m/s",
+         "34 m/s"
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 3,
+        "u": "f_w/f_b = 1,05 = 343 / (343 - v_b) → v_b = 16 m/s.",
+        "uo": [
+         "Koos je 17 m/s? Dan heb je 5% van 343 m/s genomen. Dat is een benadering die net te groot uitkomt; reken met 343 / 1,05.",
+         "Klopt: 1,05 = 343 / (343 - v_b), dus 343 - v_b = 343 / 1,05 = 327, en v_b = 16 m/s, ongeveer 59 km/h.",
+         "Koos je 5,0 m/s? Dan heb je de 5% als snelheid gelezen. De procentuele verschuiving hangt samen met de verhouding v_b / v.",
+         "Koos je 34 m/s? Dan zou de toon ongeveer 11% hoger zijn. Reken terug met 343 / 1,05."
+        ],
+        "uh": "Verhouding f_w/f_b gebruiken."
+       },
+       {
+        "v": "Waarom hoor je bij een langzaam rijdende auto bijna geen dopplereffect?",
+        "o": [
+         "v_b is klein vergeleken met v",
+         "De motor maakt te weinig geluid",
+         "Langzame bronnen maken geen golven",
+         "Het dopplereffect werkt alleen boven 100 km/h"
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 3,
+        "u": "Verschuiving hangt af van v_b / v.",
+        "uo": [
+         "Klopt: hoeveel de toon verschuift, hangt af van de verhouding tussen de snelheid van de bron en de geluidssnelheid. Bij 5 m/s is dat maar 1,5%, en dat valt nauwelijks op.",
+         "Koos je te weinig geluid? Ook een harde toon van een langzame bron verschuift maar weinig. Het gaat om de snelheid, niet om de luidheid.",
+         "Koos je geen golven? Elke trillende bron maakt golven, ook als hij langzaam rijdt. Ze worden alleen nauwelijks samengedrukt.",
+         "Koos je alleen boven 100 km/h? Het effect is er bij elke snelheid, alleen klein bij lage snelheid. Er is geen grens."
+        ],
+        "uh": "Klein v_b/v = kleine verschuiving."
+       },
+       {
+        "v": "Een ster beweegt van de aarde af. Wat gebeurt er met de golflengte van zijn licht?",
+        "o": [
+         "Die wordt groter, maar alleen bij geluid",
+         "Die wordt kleiner: blauwverschuiving",
+         "Die blijft gelijk, licht heeft geen dopplereffect",
+         "Die wordt groter: roodverschuiving"
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 4,
+        "u": "Verwijderen → λ groter → naar rood.",
+        "uo": [
+         "Koos je alleen bij geluid? Het dopplereffect geldt voor alle golven, ook voor licht. Bij licht heet het rood- of blauwverschuiving.",
+         "Koos je blauwverschuiving? Dat zie je bij een ster die naar ons toe komt. Bij verwijderen worden de golven langer.",
+         "Koos je geen dopplereffect? Licht is ook een golf en heeft dus ook een dopplereffect. Astronomen meten daarmee de snelheid van sterren.",
+         "Klopt: ook bij licht worden de golven achter een wegbewegende bron uitgerekt. De golflengte wordt groter en verschuift naar de rode kant van het spectrum: roodverschuiving."
+        ],
+        "uh": "Weg = rood."
+       },
+       {
+        "v": "Hoe snel beweegt dit sterrenstelsel van ons af?",
+        "o": [
+         "6,6 · 10⁻⁹ m/s",
+         "3,0 · 10⁸ m/s",
+         "3,0 · 10⁶ m/s",
+         "1,0 · 10⁶ m/s"
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 4,
+        "u": "Δλ/λ = v/c → v = 6,6/656,3 × 3,00·10⁸.",
+        "uo": [
+         "Koos je 6,6 · 10⁻⁹ m/s? Dat is het verschil in golflengte in meter. Deel het door λ en vermenigvuldig met c.",
+         "Koos je 3,0 · 10⁸ m/s? Dat is de lichtsnelheid zelf. De verschuiving is maar 1% van de golflengte, dus de snelheid is 1% van c.",
+         "Klopt: Δλ = 662,9 - 656,3 = 6,6 nm. v = c · Δλ / λ = 3,00·10⁸ × 6,6 / 656,3 = 3,0·10⁶ m/s: één procent van de lichtsnelheid.",
+         "Koos je 1,0 · 10⁶ m/s? Controleer je deling: 6,6 / 656,3 = 0,010. Keer 3,00·10⁸ geeft 3,0·10⁶ m/s."
+        ],
+        "uh": "v = c · Δλ/λ.",
+        "ctx": "Waterstof zendt in het laboratorium een rode spectraallijn uit met een golflengte van 656,3 nm. In het licht van een ver sterrenstelsel meten astronomen dezelfde lijn bij 662,9 nm. Voor snelheden die klein zijn vergeleken met de lichtsnelheid geldt Δλ / λ = v / c."
+       },
+       {
+        "v": "Wat leidden astronomen af uit het feit dat bijna alle verre sterrenstelsels roodverschoven zijn?",
+        "o": [
+         "De sterren worden kouder",
+         "Het heelal dijt uit",
+         "Het heelal krimpt",
+         "Het licht wordt onderweg rood geverfd door stof"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 4,
+        "u": "Roodverschuiving = van ons af bewegen = uitdijing.",
+        "uo": [
+         "Koos je kouder? De kleur van een ster hangt wel samen met de temperatuur, maar roodverschuiving gaat over verschoven spectraallijnen door beweging.",
+         "Klopt: roodverschuiving betekent dat de stelsels van ons af bewegen. Omdat bijna alle verre stelsels dat doen, en verder weg zelfs sneller, concludeerde men dat het heelal uitdijt.",
+         "Koos je krimpen? Dan zouden de stelsels naar ons toe komen en zagen we blauwverschuiving. We zien juist overal roodverschuiving.",
+         "Koos je stof? Stof kan licht wat roder laten lijken, maar het verschuift de spectraallijnen niet. Die verschuiving komt door beweging."
+        ],
+        "uh": "Overal roodverschuiving = uitdijing."
+       },
+       {
+        "v": "Het licht van het Andromedastelsel is blauwverschoven. Wat betekent dat?",
+        "o": [
+         "Het stelsel komt naar ons toe",
+         "Het stelsel beweegt van ons af",
+         "Het stelsel is erg heet",
+         "Het stelsel staat stil ten opzichte van ons"
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 4,
+        "u": "Blauwverschuiving = kleinere λ = naderen.",
+        "uo": [
+         "Klopt: bij blauwverschuiving zijn de golflengtes kleiner dan in het laboratorium. Dat gebeurt als de bron naar ons toe beweegt. Andromeda nadert de Melkweg met ongeveer 110 km/s.",
+         "Koos je van ons af? Dan zouden de lijnen naar langere golflengtes schuiven: roodverschuiving. Blauw betekent korter, dus naderen.",
+         "Koos je heet? Een hete ster ziet er blauwer uit, maar dat is de kleur van het licht, geen verschuiving van spectraallijnen.",
+         "Koos je stil? Dan zouden de spectraallijnen precies op dezelfde plek liggen als in het laboratorium. Ze zijn verschoven, dus er is beweging."
+        ],
+        "uh": "Blauw = nadert."
+       },
+       {
+        "v": "Hoe meet een politieradar de snelheid van een auto?",
+        "o": [
+         "Door twee foto's na elkaar te vergelijken",
+         "Via de tijd die de golven nodig hebben om terug te komen",
+         "Door de geluidssterkte van de motor te meten",
+         "Via de frequentieverschuiving van de echo"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 5,
+        "u": "Teruggekaatste golf is doppler-verschoven.",
+        "uo": [
+         "Koos je twee foto's? Dat doet een trajectcontrole met camera's. Een radar meet direct de snelheid via het dopplereffect.",
+         "Koos je de looptijd? Daarmee meet je een afstand, zoals bij een echo. Voor de snelheid gebruikt de radar de verandering van frequentie.",
+         "Koos je geluidssterkte? Een radar luistert niet naar de motor. Hij gebruikt radiogolven die door de auto worden teruggekaatst.",
+         "Klopt: de radar zendt radiogolven met een bekende frequentie uit. De auto kaatst ze terug, en doordat de auto beweegt, komt er een andere frequentie terug. Uit dat verschil volgt de snelheid."
+        ],
+        "uh": "Radar = dopplerverschuiving."
+       },
+       {
+        "v": "Hoe kan een arts met ultrageluid zien hoe snel bloed door een ader stroomt?",
+        "o": [
+         "De echo komt sneller terug bij snel stromend bloed",
+         "Bloed absorbeert meer ultrageluid als het sneller stroomt",
+         "Bewegende bloedcellen verschuiven de echo",
+         "Ultrageluid maakt het bloed zichtbaar als een film"
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 5,
+        "u": "Echo-doppler: frequentieverschuiving door bewegende bloedcellen.",
+        "uo": [
+         "Koos je sneller terug? De looptijd hangt af van de afstand, niet van hoe snel het bloed stroomt. De snelheid zit in de verschoven frequentie.",
+         "Koos je absorptie? Hoe sterk bloed geluid opneemt, hangt nauwelijks van de stroomsnelheid af. Het apparaat meet de verandering van de frequentie.",
+         "Klopt: het ultrageluid kaatst terug op de bloedcellen. Stromen die naar de sensor toe, dan is de echo hoger; stromen ze weg, dan lager. Uit de verschuiving volgen snelheid en richting.",
+         "Koos je film? Ultrageluid kan wel een beeld maken, maar de snelheid van de stroming haal je uit het dopplereffect van de echo."
+        ],
+        "uh": "Echo-doppler = bloedstroom.",
+        "ctx": "Bij een onderzoek naar een vernauwing in de halsslagader gebruikt een arts een echo-dopplerapparaat. Het apparaat zendt ultrageluid van 5,0 MHz het lichaam in. Op het scherm ziet de arts rood voor bloed dat naar de sensor stroomt en blauw voor bloed dat ervan wegstroomt."
+       },
+       {
+        "v": "Hoe merkt een vleermuis of een mot naar hem toe vliegt?",
+        "o": [
+         "De echo is lager dan zijn eigen roep",
+         "De echo klinkt hoger dan zijn roep",
+         "De echo komt later terug",
+         "De echo is zachter dan zijn roep"
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 5,
+        "u": "Naderende prooi geeft een hogere echo.",
+        "uo": [
+         "Koos je lager? Een lagere echo betekent dat de afstand groter wordt: de mot vliegt weg. Bij naderen is de echo hoger.",
+         "Klopt: als de afstand tussen vleermuis en mot kleiner wordt, komt de echo met een hogere frequentie terug. Zo hoort de vleermuis niet alleen waar de mot is, maar ook of hij nadert.",
+         "Koos je later? Een latere echo betekent dat de mot verder weg is. Of hij nadert, hoort de vleermuis aan de toonhoogte.",
+         "Koos je zachter? Hoe hard de echo is, zegt vooral iets over afstand en grootte. De richting van de beweging zit in de frequentie."
+        ],
+        "uh": "Hogere echo = prooi nadert.",
+        "ctx": "Een vleermuis jaagt in het donker op motten. Hij roept met ultrageluid van ongeveer 50 kHz en luistert naar de echo's. Uit de tijd tot de echo weet hij hoe ver een mot weg is. Hij hoort ook of de mot naar hem toe of van hem af vliegt."
+       },
+       {
+        "v": "Een sirene staat stil en jij ook, maar er waait een harde wind. Hoor je een andere toon?",
+        "o": [
+         "Nee, de afstand tussen jou en de bron verandert niet",
+         "Ja, met de wind mee hoor je een hogere toon",
+         "Ja, tegen de wind in hoor je een lagere toon",
+         "Ja, de wind maakt elke toon lager"
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 5,
+        "u": "Doppler vraagt beweging tussen bron en waarnemer.",
+        "uo": [
+         "Klopt: de wind verandert de snelheid van het geluid, maar elke top die de sirene uitzendt, komt bij jou aan. Er komen dus even veel toppen per seconde aan als er worden gemaakt: dezelfde frequentie.",
+         "Koos je hoger met de wind mee? Het geluid komt dan sneller aan, maar de toppen blijven even snel na elkaar komen. De toonhoogte verandert niet.",
+         "Koos je lager tegen de wind in? Het geluid komt langzamer aan, maar niet minder vaak per seconde. Zonder beweging van bron of waarnemer geen dopplereffect.",
+         "Koos je elke toon lager? Wind kan geluid wel zachter of harder laten klinken, maar zolang bron en waarnemer stilstaan, blijft de frequentie gelijk."
+        ],
+        "uh": "Wind alleen: geen dopplereffect."
+       },
+       {
+        "v": "Hoe snel rijdt de brandweerauto van de leerling weg?",
+        "o": [
+         "23 m/s",
+         "40 m/s",
+         "26 m/s",
+         "24 m/s"
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 3,
+        "u": "560 = 600 · 343 / (343 + v_b) → v_b = 24,5 m/s.",
+        "uo": [
+         "Koos je 23 m/s? Dan heb je 343 × 40 / 600 gerekend: een benadering. Reken nauwkeurig met 600 × 343 / 560 - 343.",
+         "Koos je 40 m/s? Dan heb je het frequentieverschil van 40 Hz als snelheid gebruikt. Werk de dopplerformule om.",
+         "Koos je 26 m/s? Dan heb je de formule voor naderen gebruikt, met een min. Bij wegrijden staat er v + v_b in de noemer.",
+         "Klopt: bij wegrijden geldt 343 + v_b = 600 × 343 / 560 = 367,5, dus v_b = 24,5 m/s, ongeveer 24 m/s (88 km/h)."
+        ],
+        "uh": "Wegrijden: v + v_b = f_b·v / f_w.",
+        "ctx": "Een brandweerauto met een sirene van 600 Hz rijdt over een rechte weg van een leerling af. Met een app op haar telefoon meet de leerling een frequentie van 560 Hz. De geluidssnelheid is 343 m/s. Ze wil de snelheid van de brandweerauto weten."
+       }
+      ],
+      "oe": [
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een treinhoorn maakt een toon van 440 Hz. Een leerling op het perron hoort de naderende trein met een toon van 470 Hz. De geluidssnelheid is 343 m/s. Daarna rijdt de trein met dezelfde snelheid van haar weg.",
+        "v": "Bereken de snelheid van de trein en bereken welke frequentie de leerling hoort als de trein wegrijdt.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "343 - v_b = 440 × 343 / 470 = 321,1 → v_b = 21,9 m/s (2p). Wegrijden: f_w = 440 × 343 / (343 + 21,9) = 414 Hz (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een leerling zegt: \"Als een ambulance naar je toe rijdt, wordt de toon steeds hoger, en als hij wegrijdt steeds lager.\" De ambulance rijdt met een constante snelheid van 20 m/s over een rechte weg en de sirene maakt een vaste toon.",
+        "v": "Beoordeel de uitspraak van de leerling en leg uit wat je in werkelijkheid hoort.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "De uitspraak klopt niet: bij constante snelheid is de toon tijdens het naderen constant hoger dan de echte toon (1p) en tijdens het wegrijden constant lager (1p). De toon zakt alleen rond het moment van passeren; wel wordt het geluid harder bij naderen en zachter bij wegrijden (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "In het spectrum van een quasar meten astronomen een waterstoflijn bij 516 nm. In het laboratorium heeft die lijn een golflengte van 486 nm. Voor kleine snelheden geldt Δλ / λ = v / c, met c = 3,00·10⁸ m/s.",
+        "v": "Leg uit of de quasar naar ons toe of van ons af beweegt en bereken zijn snelheid.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "De golflengte is groter dan in het lab: roodverschuiving, dus de quasar beweegt van ons af (1p). Δλ = 30 nm (1p). v = 3,00·10⁸ × 30 / 486 = 1,9·10⁷ m/s (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een vleermuis vliegt met 5,0 m/s recht op een muur af en roept met een frequentie van 40,0 kHz. Hij hoort de echo van de muur. Een leerling denkt dat de vleermuis zijn eigen roep precies terughoort, omdat de muur stilstaat. De geluidssnelheid is 343 m/s.",
+        "v": "Leg uit waarom de vleermuis een hogere echo hoort en bereken met welke frequentie de geluidsgolf de muur bereikt.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "De vleermuis beweegt naar de muur toe, dus als bron nadert hij de muur, en bij het terugkomen beweegt hij als waarnemer naar de echo toe; beide maken de toon hoger (1p). Bij de muur: f = 40,0 × 343 / (343 - 5,0) = 40,6 kHz (2p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een straaljager vliegt met 400 m/s laag over een vliegbasis. Toeschouwers horen het vliegtuig pas als het al voorbij is, en dan met een harde knal. De geluidssnelheid is 343 m/s. Een leerling probeert met de dopplerformule de frequentie te berekenen die de toeschouwers horen terwijl het vliegtuig nadert.",
+        "v": "Leg met de golffronten uit waarom je een knal hoort en waarom de dopplerformule voor het naderen hier geen zinnig antwoord geeft.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Het vliegtuig gaat sneller dan zijn eigen geluid; de golftoppen stapelen zich op tot een drukgolf (kegel) die achter het vliegtuig aan loopt: dat is de knal (2p). In de formule wordt v - v_b negatief: vóór het vliegtuig komt geen geluid aan, dus er is geen frequentie om te berekenen (1p)."
+       }
+      ]
      }
     ]
    },

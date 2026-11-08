@@ -2236,6 +2236,28 @@ var VAKKEN = [
       "nOe": 5,
       "nBeg": 11,
       "hasSam": true
+     },
+     {
+      "id": "B5",
+      "lo": "na.B.5",
+      "gs": 2,
+      "naam": "Dopplereffect",
+      "beschrijving": "Je verklaart met golffronten waarom een naderende bron hoger en een wegrijdende bron lager klinkt, rekent met de dopplerformule, bepaalt een snelheid uit een gemeten frequentie en past het dopplereffect toe op licht (roodverschuiving), radar, echo-doppler en vleermuizen.",
+      "ceStatus": "CE",
+      "binas": "35",
+      "val": "",
+      "onderwerpen": [
+       "Wat je hoort bij een bewegende bron",
+       "Verklaring met golffronten",
+       "Rekenen met de dopplerformule",
+       "Snelheid bepalen uit de toonhoogte",
+       "Dopplereffect bij licht",
+       "Toepassingen van het dopplereffect"
+      ],
+      "nSv": 28,
+      "nOe": 5,
+      "nBeg": 11,
+      "hasSam": true
      }
     ]
    },
