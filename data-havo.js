@@ -107578,6 +107578,696 @@ var VAKKEN = [
         "u": "De ribben (bot) absorberen veel straling, dus daar komt weinig op de detector: licht (1p). De longen bevatten vooral lucht en absorberen weinig, dus daar komt veel straling door: donker (1p). De uitspraak klopt niet: bij röntgen gaat de straling door het lichaam heen naar de detector; er wordt niets teruggekaatst (1p)."
        }
       ]
+     },
+     {
+      "id": "E5",
+      "lo": "na.E.5",
+      "gs": 2,
+      "naam": "Elektromagnetisch spectrum",
+      "beschrijving": "Je beschrijft elektromagnetische straling als golf die geen stof nodig heeft, zet het spectrum van radiogolven tot gammastraling op volgorde, rekent met c = f · λ en met de energie van een foton (E = h · f), koppelt toepassingen aan de gebieden van het spectrum en legt uit waarom uv ioniserend is en de ozonlaag beschermt.",
+      "ceStatus": "CE",
+      "binas": "7, 19",
+      "val": "",
+      "onderwerpen": [
+       "Wat elektromagnetische straling is",
+       "Het spectrum op volgorde",
+       "Rekenen met c = f · λ",
+       "Energie van een foton",
+       "Toepassingen per gebied",
+       "Ioniserend of niet: uv en de zon"
+      ],
+      "sam": "Elektromagnetische straling is een golf van elektrische en magnetische velden; geen stof nodig, in vacuüm c = 3,00·10⁸ m/s. Spectrum van lange naar korte golflengte: radio, microgolven, infrarood, zichtbaar licht (750-380 nm), ultraviolet, röntgen, gamma. c = f · λ: hogere frequentie, kortere golf. Foton: E = h · f, h = 6,63·10⁻³⁴ J·s; feller = meer fotonen. Vanaf uv ioniserend; de ozonlaag absorbeert het meeste uv.",
+      "begrippen": [
+       {
+        "t": "Elektromagnetische straling",
+        "d": "Golf van een trillend elektrisch en magnetisch veld; heeft geen stof nodig en gaat in vacuüm met c = 3,00·10⁸ m/s."
+       },
+       {
+        "t": "Elektromagnetisch spectrum",
+        "d": "Alle soorten elektromagnetische straling op volgorde van golflengte: van radiogolven tot gammastraling."
+       },
+       {
+        "t": "Radiogolven",
+        "d": "Elektromagnetische straling met de langste golflengte; gebruikt voor radio, telefoon en wifi."
+       },
+       {
+        "t": "Microgolven",
+        "d": "Straling met een golflengte van millimeters tot decimeters; gebruikt in de magnetron en voor radar."
+       },
+       {
+        "t": "Infrarood",
+        "d": "Warmtestraling met een golflengte net boven die van rood licht."
+       },
+       {
+        "t": "Zichtbaar licht",
+        "d": "Het smalle deel van het spectrum dat je ogen zien, van ongeveer 750 nm (rood) tot 380 nm (violet)."
+       },
+       {
+        "t": "Ultraviolet",
+        "d": "Straling met een golflengte net onder die van violet licht; veroorzaakt zonnebrand en is ioniserend."
+       },
+       {
+        "t": "Foton",
+        "d": "Pakketje elektromagnetische energie, zonder lading en massa; E = h · f."
+       },
+       {
+        "t": "Constante van Planck",
+        "d": "Natuurconstante h = 6,63·10⁻³⁴ J·s in de formule E = h · f."
+       },
+       {
+        "t": "Lichtsnelheid",
+        "d": "Snelheid van alle elektromagnetische straling in vacuüm: c = 3,00·10⁸ m/s; c = f · λ."
+       },
+       {
+        "t": "Ozonlaag",
+        "d": "Laag ozon hoog in de dampkring die het grootste deel van de uv-straling van de zon absorbeert."
+       }
+      ],
+      "sv": [
+       {
+        "v": "Wat hebben radiogolven, licht en röntgenstraling gemeen?",
+        "o": [
+         "Ze zijn allemaal ioniserend",
+         "Ze hebben dezelfde golflengte",
+         "Ze gaan in vacuüm allemaal met 3,00 · 10⁸ m/s",
+         "Ze hebben allemaal lucht nodig om zich voort te planten"
+        ],
+        "c": 2,
+        "d": 1,
+        "s": 0,
+        "u": "Alle EM-straling: c = 3,00·10⁸ m/s in vacuüm.",
+        "uo": [
+         "Koos je ioniserend? Radiogolven en licht kunnen geen elektronen losslaan. Pas vanaf het ultraviolet wordt straling ioniserend.",
+         "Koos je dezelfde golflengte? Juist daarin verschillen ze: radiogolven kunnen kilometers lang zijn, röntgenstraling kleiner dan een atoom.",
+         "Klopt: het zijn allemaal elektromagnetische golven. In vacuüm gaan ze allemaal even snel, met de lichtsnelheid c = 3,00·10⁸ m/s. Ze verschillen in frequentie en golflengte.",
+         "Koos je lucht nodig? Elektromagnetische straling gaat ook door vacuüm. Zonlicht reist door de lege ruimte naar de aarde."
+        ],
+        "uh": "EM-straling: allemaal c."
+       },
+       {
+        "v": "Waarom kan zonlicht de aarde bereiken, maar het geluid van een zonne-uitbarsting niet?",
+        "o": [
+         "Licht is veel harder dan geluid",
+         "Licht heeft geen stof nodig, geluid wel",
+         "Geluid is te langzaam en dooft onderweg uit",
+         "De dampkring houdt geluid tegen"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 0,
+        "u": "EM-golf door vacuüm; geluid heeft deeltjes nodig.",
+        "uo": [
+         "Koos je harder? Ook het hardste geluid komt niet door vacuüm. Het gaat om het soort golf, niet om de sterkte.",
+         "Klopt: licht is een elektromagnetische golf en gaat door de lege ruimte tussen zon en aarde. Geluid is een trilling van deeltjes en kan zich in vacuüm niet voortplanten.",
+         "Koos je te langzaam? Geluid zou er weliswaar lang over doen, maar het komt helemaal niet aan: er zijn geen deeltjes om de trilling door te geven.",
+         "Koos je dampkring? Het geluid komt niet eens tot aan de dampkring, omdat het lege heelal ertussen ligt."
+        ],
+        "uh": "Licht door vacuüm, geluid niet."
+       },
+       {
+        "v": "Licht van de zon doet ongeveer 8 minuten over de reis naar de aarde. Hoe ver weg is de zon?",
+        "o": [
+         "1,4 · 10¹¹ m",
+         "2,40 · 10⁹ m",
+         "1,4 · 10⁸ m",
+         "4,0 · 10⁶ m"
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 0,
+        "u": "s = c · t = 3,00·10⁸ × 480 s.",
+        "uo": [
+         "Klopt: 8 minuten = 480 s. s = c · t = 3,00·10⁸ × 480 = 1,4·10¹¹ m, ongeveer 150 miljoen kilometer.",
+         "Koos je 2,40 · 10⁹ m? Dan heb je met 8 seconden gerekend. Zet minuten eerst om naar seconden: 8 × 60 = 480 s.",
+         "Koos je 1,4 · 10⁸ m? Dan ben je een factor 1000 kwijt, waarschijnlijk door km en m te verwarren. 1,4·10¹¹ m is 1,4·10⁸ km.",
+         "Koos je 4,0 · 10⁶ m? Dan heb je de tijd door de lichtsnelheid gedeeld. Afstand is snelheid maal tijd."
+        ],
+        "uh": "s = c · t.",
+        "ctx": "Als de zon nu ineens zou doven, zouden wij dat pas ongeveer 8 minuten later merken. Zo lang doet het licht over de reis door de lege ruimte. Een leerling wil met de lichtsnelheid uitrekenen hoe ver de zon van de aarde af staat."
+       },
+       {
+        "v": "Welke volgorde is goed, van lange naar korte golflengte?",
+        "o": [
+         "Infrarood, radio, ultraviolet, zichtbaar",
+         "Ultraviolet, zichtbaar, infrarood, radio",
+         "Zichtbaar, radio, ultraviolet, infrarood",
+         "Radio, infrarood, licht, uv"
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 1,
+        "u": "Radio > micro > IR > zichtbaar > UV > röntgen > gamma.",
+        "uo": [
+         "Koos je infrarood eerst? Radiogolven zijn veel langer dan infrarood. En ultraviolet heeft een kleinere golflengte dan zichtbaar licht.",
+         "Koos je van uv naar radio? Dat is precies omgekeerd: van korte naar lange golflengte.",
+         "Koos je zichtbaar eerst? Zichtbaar licht ligt in het midden, tussen infrarood en ultraviolet.",
+         "Klopt: radiogolven hebben de langste golflengte, dan komen microgolven, infrarood, zichtbaar licht, ultraviolet, röntgen en gamma."
+        ],
+        "uh": "Radio → IR → licht → UV."
+       },
+       {
+        "v": "Welke kleur zichtbaar licht heeft de grootste golflengte?",
+        "o": [
+         "Groen",
+         "Violet",
+         "Rood",
+         "Blauw"
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 1,
+        "u": "Rood ~700 nm, violet ~400 nm.",
+        "uo": [
+         "Koos je groen? Groen ligt in het midden van het zichtbare spectrum, rond 530 nm. Rood zit aan de lange kant, rond 700 nm.",
+         "Koos je violet? Dat heeft juist de kleinste golflengte van het zichtbare licht. Daarnaast ligt het ultraviolet.",
+         "Klopt: rood licht heeft een golflengte van ongeveer 700 nm, violet ongeveer 400 nm. Net voorbij rood begint het infrarood, net voorbij violet het ultraviolet.",
+         "Koos je blauw? Blauw zit rond 450 nm, aan de korte kant van het spectrum."
+        ],
+        "uh": "Rood = langste λ."
+       },
+       {
+        "v": "Welke straling heeft een frequentie die hoger is dan van zichtbaar licht, maar lager dan van röntgenstraling?",
+        "o": [
+         "Infrarood",
+         "Ultraviolet",
+         "Microgolven",
+         "Gammastraling"
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 1,
+        "u": "Volgorde naar frequentie: ... zichtbaar < UV < röntgen < gamma.",
+        "uo": [
+         "Koos je infrarood? Dat heeft juist een lagere frequentie dan zichtbaar licht. Het ligt aan de rode kant.",
+         "Klopt: ultraviolet ligt direct naast violet licht, aan de kant van hogere frequentie, en vóór röntgenstraling.",
+         "Koos je microgolven? Die hebben een nog lagere frequentie dan infrarood.",
+         "Koos je gamma? Gammastraling heeft de hoogste frequentie, nog hoger dan röntgen."
+        ],
+        "uh": "Tussen licht en röntgen: UV.",
+        "ctx": "Een poster in het natuurkundelokaal toont het elektromagnetisch spectrum als een lange strook, met links de laagste frequentie en rechts de hoogste. Een leerling zoekt het gebied dat net voorbij het violette licht ligt, maar nog niet zo energierijk is als de straling die de tandarts gebruikt."
+       },
+       {
+        "v": "Hoe hangen frequentie en golflengte samen in het spectrum?",
+        "o": [
+         "Hogere f, kleinere golflengte",
+         "Hoe hoger de frequentie, hoe groter de golflengte wordt",
+         "Ze zijn onafhankelijk van elkaar",
+         "Ze zijn voor alle straling gelijk"
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 1,
+        "u": "c = f · λ met vaste c → omgekeerd evenredig.",
+        "uo": [
+         "Klopt: c = f · λ en c is voor alle elektromagnetische straling gelijk. Als f groter wordt, moet λ kleiner worden.",
+         "Koos je groter? Dan zou f · λ niet constant blijven. Hoge frequentie hoort bij korte golven.",
+         "Koos je onafhankelijk? Ze zijn juist strak gekoppeld via c = f · λ: ken je de ene, dan ligt de andere vast.",
+         "Koos je gelijk? Frequentie en golflengte verschillen enorm per soort straling. Alleen de snelheid is gelijk."
+        ],
+        "uh": "f omhoog, λ omlaag."
+       },
+       {
+        "v": "Welk deel van het spectrum gebruikt een satelliet die door wolken heen het aardoppervlak in kaart brengt?",
+        "o": [
+         "Gammastraling",
+         "Ultraviolet",
+         "Zichtbaar licht",
+         "Microgolven (radar)"
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 1,
+        "u": "Lange golven gaan door wolken; radar met microgolven.",
+        "uo": [
+         "Koos je gamma? Gammastraling wordt door de dampkring tegengehouden en kan niet vanuit een satelliet naar de grond en terug.",
+         "Koos je ultraviolet? Uv wordt door de dampkring en door wolken juist sterk tegengehouden.",
+         "Koos je zichtbaar licht? Dat wordt door wolken verstrooid; daarom zijn wolken wit en zie je de grond niet.",
+         "Klopt: wolkendruppels zijn veel kleiner dan de golflengte van microgolven (centimeters). Daardoor gaan microgolven er ongehinderd doorheen, en kan een radarsatelliet dag en nacht en door wolken heen kijken."
+        ],
+        "uh": "Door wolken: microgolven.",
+        "ctx": "Het Nederlandse KNMI gebruikt gegevens van satellieten om de bodem en de zeespiegel te meten. Een gewone camera ziet op een bewolkte dag alleen witte wolken. Een radarsatelliet zendt zelf straling uit en meet de echo van het aardoppervlak, ook als het helemaal bewolkt is."
+       },
+       {
+        "v": "Welke formule gebruik je om de golflengte van elektromagnetische straling uit te rekenen?",
+        "o": [
+         "λ = f / c",
+         "λ = c · f",
+         "λ = c / f",
+         "λ = c + f (optellen)"
+        ],
+        "c": 2,
+        "d": 1,
+        "s": 2,
+        "u": "c = f · λ → λ = c/f.",
+        "uo": [
+         "Koos je f / c? Dat geeft 1/λ, het omgekeerde van wat je zoekt. Zet c boven de deelstreep: λ = c / f.",
+         "Koos je c · f? Dan krijg je een enorm getal met de verkeerde eenheid. Deel de snelheid door de frequentie.",
+         "Klopt: uit c = f · λ volgt λ = c / f. Hoe hoger de frequentie, hoe kleiner de golflengte.",
+         "Koos je c + f? Je kunt geen snelheid en frequentie optellen. Gebruik c = f · λ."
+        ],
+        "uh": "λ = c/f."
+       },
+       {
+        "v": "Welke golflengte heeft wifi van 2,4 GHz?",
+        "o": [
+         "1,25 m",
+         "0,125 m",
+         "8,0 m",
+         "7,2 · 10¹⁷ m"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 2,
+        "u": "λ = 3,00·10⁸ / 2,4·10⁹.",
+        "uo": [
+         "Koos je 1,25 m? Dan heb je giga als 10⁸ gebruikt. Giga is 10⁹, dus 2,4 GHz = 2,4·10⁹ Hz.",
+         "Klopt: 2,4 GHz = 2,4·10⁹ Hz. λ = c / f = 3,00·10⁸ / 2,4·10⁹ = 0,125 m, ongeveer 12 cm.",
+         "Koos je 8,0 m? Dan heb je f door c gedeeld en de machten verkeerd gezet. λ = c / f.",
+         "Koos je 7,2 · 10¹⁷ m? Dan heb je c en f vermenigvuldigd. Voor de golflengte deel je."
+        ],
+        "uh": "Giga = 10⁹."
+       },
+       {
+        "v": "Welke frequentie hoort bij het rode licht van deze laser?",
+        "o": [
+         "4,7 · 10¹⁴ Hz",
+         "2,1 · 10⁻¹⁵ Hz",
+         "4,7 · 10⁵ Hz",
+         "1,9 · 10² Hz"
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 2,
+        "u": "f = c / λ = 3,00·10⁸ / 6,4·10⁻⁷.",
+        "uo": [
+         "Klopt: 640 nm = 6,4·10⁻⁷ m. f = c / λ = 3,00·10⁸ / 6,4·10⁻⁷ = 4,7·10¹⁴ Hz.",
+         "Koos je 2,1 · 10⁻¹⁵ Hz? Dan heb je λ door c gedeeld. Frequentie is c gedeeld door golflengte.",
+         "Koos je 4,7 · 10⁵ Hz? Dan heb je nanometer als 10⁻³ m gelezen. Nano is 10⁻⁹.",
+         "Koos je 1,9 · 10² Hz? Dan heb je 640 niet omgerekend naar meter. Zet eerst nm om naar m."
+        ],
+        "uh": "Nano = 10⁻⁹.",
+        "ctx": "Een leerling gebruikt een rode laserpointer bij een practicum. Op de verpakking staat dat de golflengte 640 nm is. Hij wil de frequentie van het licht uitrekenen, met c = 3,00·10⁸ m/s."
+       },
+       {
+        "v": "Hoe groot is de golflengte van een magnetron die werkt op 2,45 GHz?",
+        "o": [
+         "0,122 cm",
+         "1,22 cm",
+         "122 cm",
+         "12,2 cm"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 2,
+        "u": "λ = 3,00·10⁸ / 2,45·10⁹ = 0,122 m.",
+        "uo": [
+         "Koos je 0,122 cm? Dat is 0,122 m, maar dan in de verkeerde eenheid. Vermenigvuldig met 100 voor centimeter.",
+         "Koos je 1,22 cm? Dan heb je bij het omrekenen naar centimeter een factor tien gemist. 0,122 m is 12,2 cm.",
+         "Koos je 122 cm? Dan heb je met 10⁸ Hz gerekend. Giga is 10⁹, dus de golflengte is tien keer zo klein.",
+         "Klopt: λ = 3,00·10⁸ / 2,45·10⁹ = 0,122 m = 12,2 cm. Daarom zit er in de deur een gaatjesplaat met gaatjes van een paar millimeter: die laat zichtbaar licht door, maar geen microgolven van 12 cm."
+        ],
+        "uh": "Magnetron: λ ≈ 12 cm."
+       },
+       {
+        "v": "Welke frequentie gebruikt deze radiozender?",
+        "o": [
+         "0,98 MHz",
+         "9,8 MHz",
+         "98 MHz",
+         "980 MHz"
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 2,
+        "u": "f = c / λ = 3,00·10⁸ / 3,06.",
+        "uo": [
+         "Koos je 0,98 MHz? Dat is ruim honderd keer te laag. Controleer de machten: 3,00·10⁸ / 3,06 ≈ 10⁸.",
+         "Koos je 9,8 MHz? Dan heb je een macht van tien gemist. 9,8·10⁷ Hz is 98·10⁶ Hz = 98 MHz.",
+         "Klopt: f = c / λ = 3,00·10⁸ / 3,06 = 9,8·10⁷ Hz = 98 MHz. Dat is een frequentie op de FM-band.",
+         "Koos je 980 MHz? Dan is de golflengte 0,31 m, tien keer korter dan de antenne aangeeft."
+        ],
+        "uh": "f = c / λ, mega = 10⁶.",
+        "ctx": "Een leerling ziet op een schoolexcursie een zendmast van een radiozender. De gids vertelt dat de golflengte van deze zender 3,06 m is. De leerling wil weten op welke frequentie hij zijn radio moet zetten, met c = 3,00·10⁸ m/s."
+       },
+       {
+        "v": "Wat is een foton?",
+        "o": [
+         "Een elektron dat licht uitzendt",
+         "Een pakketje stralingsenergie",
+         "Een deeltje met lading uit de atoomkern",
+         "Een golf in een vaste stof"
+        ],
+        "c": 1,
+        "d": 1,
+        "s": 3,
+        "u": "EM-straling komt in pakketjes: fotonen.",
+        "uo": [
+         "Koos je een elektron? Een elektron kan een foton uitzenden, maar het foton zelf is geen elektron. Het heeft geen lading.",
+         "Klopt: elektromagnetische straling wordt in kleine pakketjes uitgezonden en opgenomen. Zo'n pakketje heet een foton. Het heeft geen lading en geen massa.",
+         "Koos je geladen deeltje uit de kern? Een foton heeft geen lading. Gammastraling bestaat wel uit fotonen die uit een kern komen.",
+         "Koos je golf in een vaste stof? Dat is bijvoorbeeld geluid. Een foton is een pakketje elektromagnetische straling, en dat kan ook door vacuüm."
+        ],
+        "uh": "Foton = energiepakketje."
+       },
+       {
+        "v": "Hoe hangt de energie van één foton af van de frequentie?",
+        "o": [
+         "E = h · f: hoe hoger f, hoe meer energie",
+         "E = h / f: hoe hoger f, hoe minder energie",
+         "De energie is voor alle fotonen gelijk",
+         "De energie hangt alleen van de felheid af"
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 3,
+        "u": "E_f = h · f, h = 6,63·10⁻³⁴ J s.",
+        "uo": [
+         "Klopt: de energie van een foton is evenredig met de frequentie: E = h · f, met de constante van Planck h = 6,63·10⁻³⁴ J·s. Een uv-foton heeft dus meer energie dan een foton rood licht.",
+         "Koos je h / f? Dan zouden gammafotonen bijna geen energie hebben. Het is andersom: energie neemt toe met de frequentie.",
+         "Koos je gelijk? De energie verschilt enorm: een gammafoton heeft miljoenen keren meer energie dan een radiofoton.",
+         "Koos je felheid? Fellere straling betekent méér fotonen, niet dat elk foton meer energie heeft. De energie per foton hangt van f af."
+        ],
+        "uh": "E = h · f."
+       },
+       {
+        "v": "Hoeveel energie heeft één foton van dit uv-licht?",
+        "o": [
+         "1,0 · 10¹⁵ J",
+         "2,0 · 10⁻²⁵ J",
+         "6,63 · 10⁻³⁴ J",
+         "6,6 · 10⁻¹⁹ J"
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 3,
+        "u": "f = c/λ = 1,0·10¹⁵ Hz; E = h · f.",
+        "uo": [
+         "Koos je 1,0 · 10¹⁵ J? Dat is de frequentie in Hz, geen energie. Vermenigvuldig met h.",
+         "Koos je 2,0 · 10⁻²⁵ J? Dan heb je h met λ vermenigvuldigd en door iets anders gedeeld. Reken eerst f uit met f = c / λ.",
+         "Koos je 6,63 · 10⁻³⁴ J? Dat is de constante van Planck zelf. Vermenigvuldig nog met de frequentie.",
+         "Klopt: f = c / λ = 3,00·10⁸ / 3,00·10⁻⁷ = 1,0·10¹⁵ Hz. E = h · f = 6,63·10⁻³⁴ × 1,0·10¹⁵ = 6,6·10⁻¹⁹ J."
+        ],
+        "uh": "Eerst f = c/λ, dan E = h·f.",
+        "ctx": "Een zonnebank zendt uv-straling uit met een golflengte van 300 nm. Een leerling wil weten hoeveel energie één foton van die straling heeft. Ze gebruikt c = 3,00·10⁸ m/s en de constante van Planck h = 6,63·10⁻³⁴ J·s."
+       },
+       {
+        "v": "Waarom beschadigt zwak uv-licht het weefsel wel en fel rood licht niet?",
+        "o": [
+         "Rood licht wordt door de huid helemaal teruggekaatst",
+         "Fel rood licht heeft fotonen met meer energie",
+         "Een uv-foton heeft meer energie",
+         "Uv-straling bestaat uit elektronen"
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 3,
+        "u": "Ionisatie per foton: E = hf moet groot genoeg zijn.",
+        "uo": [
+         "Koos je teruggekaatst? Rood licht dringt juist een stukje de huid in; daarom zie je je vingers rood oplichten bij een zaklamp. Het heeft alleen te weinig energie per foton.",
+         "Koos je feller = meer energie per foton? Feller licht betekent meer fotonen per seconde. De energie per foton hangt alleen van de frequentie af.",
+         "Klopt: een elektron losmaken gebeurt door één foton tegelijk. Een uv-foton heeft genoeg energie, een foton rood licht te weinig. Feller rood licht geeft meer fotonen, maar elk afzonderlijk is nog steeds te zwak.",
+         "Koos je elektronen? Uv-straling bestaat uit fotonen, niet uit elektronen. Een foton kan wel een elektron losslaan."
+        ],
+        "uh": "Per foton genoeg energie nodig.",
+        "ctx": "In een lab schijnt een felle rode lamp van 100 W op een stukje huidweefsel, en een zwakke uv-lamp van 5 W op een ander stukje. Alleen in het weefsel onder de uv-lamp ontstaat schade aan moleculen. De onderzoeker zegt dat het niet om de totale energie gaat, maar om de energie per foton."
+       },
+       {
+        "v": "Welk foton heeft de meeste energie?",
+        "o": [
+         "Een radiofoton",
+         "Een gammafoton",
+         "Een foton infrarood",
+         "Een foton rood licht"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 3,
+        "u": "Hoogste f → hoogste E = hf.",
+        "uo": [
+         "Koos je radio? Radiogolven hebben juist de laagste frequentie en dus de minste energie per foton.",
+         "Klopt: gammastraling heeft de hoogste frequentie van het hele spectrum, en met E = h · f dus ook de meeste energie per foton. Daarom is gamma zo sterk ioniserend.",
+         "Koos je infrarood? Infrarood heeft een lagere frequentie dan zichtbaar licht en dus minder energie per foton.",
+         "Koos je rood licht? Rood heeft de laagste frequentie van het zichtbare licht. Gamma heeft een miljoen keer zoveel energie per foton."
+        ],
+        "uh": "Gamma: meeste energie per foton."
+       },
+       {
+        "v": "Welke straling gebruikt een afstandsbediening van de televisie?",
+        "o": [
+         "Infrarood",
+         "Ultraviolet",
+         "Röntgen",
+         "Gamma"
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 4,
+        "u": "Afstandsbediening: IR-led.",
+        "uo": [
+         "Klopt: een afstandsbediening heeft een led die infrarood uitzendt. Je ziet het niet, maar met de camera van je telefoon kun je het lampje soms zien knipperen.",
+         "Koos je ultraviolet? Uv zou schadelijk zijn voor je ogen en huid. Een afstandsbediening gebruikt infrarood.",
+         "Koos je röntgen? Röntgenstraling is ioniserend en wordt in een huiskamer nergens voor gebruikt.",
+         "Koos je gamma? Gammastraling komt uit radioactieve kernen en wordt niet in apparaten in huis gebruikt."
+        ],
+        "uh": "Afstandsbediening = IR."
+       },
+       {
+        "v": "Hoe ziet een warmtebeeldcamera mensen in het donker?",
+        "o": [
+         "De camera vangt radiogolven van telefoons op",
+         "De camera zendt röntgenstraling uit en vangt de echo op",
+         "Mensen kaatsen het maanlicht terug als uv",
+         "Mensen zenden zelf infrarood uit"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 4,
+        "u": "Warm lichaam straalt IR uit.",
+        "uo": [
+         "Koos je radiogolven? Die gebruikt een telefoon wel, maar daar ziet een warmtebeeldcamera niets van. Hij meet infrarood.",
+         "Koos je röntgen? Een warmtebeeldcamera zendt niets uit. Hij vangt straling op die het lichaam zelf uitzendt.",
+         "Koos je uv? In het donker is er nauwelijks uv. De camera meet de warmtestraling van het lichaam zelf.",
+         "Klopt: elk warm voorwerp zendt infrarood uit; een mens van 37 °C vooral rond een golflengte van 10 µm. Een warmtebeeldcamera vangt dat op, ook in volledig donker."
+        ],
+        "uh": "Warmtebeeld = IR van het lichaam."
+       },
+       {
+        "v": "Waarom komen microgolven niet door de deur van de magnetron, en licht wel?",
+        "o": [
+         "Microgolven gaan niet rechtdoor",
+         "Het glas houdt microgolven tegen, metaal niet",
+         "De gaatjes zijn kleiner dan hun golflengte",
+         "De deur zendt zelf tegenstraling uit"
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 4,
+        "u": "Gaatjes van mm ≪ 12 cm: microgolven komen niet door; licht (nm) wel.",
+        "uo": [
+         "Koos je niet rechtdoor? Microgolven gaan wel rechtdoor. Ze worden tegengehouden doordat de gaatjes te klein zijn voor hun golflengte.",
+         "Koos je glas? Gewoon glas laat microgolven grotendeels door; daarom kun je een glazen schaal in de magnetron zetten. Het werkt door de metalen gaatjesplaat.",
+         "Klopt: de golflengte van de microgolven is ongeveer 12 cm. Gaatjes van een paar millimeter zijn veel kleiner dan die golflengte, dus de microgolven komen er niet door. Zichtbaar licht, met een golflengte van een halve micrometer, gaat er gemakkelijk doorheen.",
+         "Koos je tegenstraling? De deur zendt niets uit. Het metalen rooster met kleine gaatjes werkt als afscherming."
+        ],
+        "uh": "Gaatjes ≪ λ: geen doorgang.",
+        "ctx": "In de deur van een magnetron zit een metalen plaat met kleine gaatjes van ongeveer 2 mm. Je kunt er goed doorheen kijken naar je eten. De magnetron werkt met microgolven van 2,45 GHz, met een golflengte van ongeveer 12 cm."
+       },
+       {
+        "v": "Welke straling gebruikt een mobiele telefoon om met de zendmast te communiceren?",
+        "o": [
+         "Röntgenstraling",
+         "Radiogolven",
+         "Gammastraling",
+         "Ultraviolet"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 4,
+        "u": "Mobiel: radiogolven (rond 1-3 GHz, ook microgolven genoemd).",
+        "uo": [
+         "Koos je röntgen? Röntgenstraling is ioniserend en wordt alleen in ziekenhuizen en bij controles gebruikt.",
+         "Klopt: een telefoon praat met de zendmast via radiogolven met een frequentie van ongeveer 1 tot 3 GHz. Die gaan door muren en zijn niet ioniserend.",
+         "Koos je gamma? Gammastraling komt uit radioactieve kernen. Een telefoon bevat geen radioactieve bron.",
+         "Koos je ultraviolet? Uv gaat niet door muren en zou je huid beschadigen. Telefoons gebruiken radiogolven."
+        ],
+        "uh": "Telefoon = radiogolven."
+       },
+       {
+        "v": "Waarom gebruikt men bij een röntgenfoto röntgenstraling en geen zichtbaar licht?",
+        "o": [
+         "Röntgenfotonen gaan door zacht weefsel heen, licht niet",
+         "Zichtbaar licht is te gevaarlijk voor het lichaam",
+         "Röntgenstraling is goedkoper dan licht",
+         "Zichtbaar licht gaat te snel om te meten"
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 4,
+        "u": "Hoge fotonenergie: dringt door weefsel, bot absorbeert meer.",
+        "uo": [
+         "Klopt: zichtbaar licht wordt door de huid al tegengehouden of verstrooid. Röntgenfotonen hebben veel meer energie en gaan door zacht weefsel heen, terwijl bot ze meer tegenhoudt. Zo ontstaat een schaduwbeeld van de botten.",
+         "Koos je te gevaarlijk? Zichtbaar licht is juist niet ioniserend en dus veiliger. Het probleem is dat het niet door het lichaam gaat.",
+         "Koos je goedkoper? Een röntgenapparaat is duur. De keuze heeft te maken met wat de straling doet in het lichaam.",
+         "Koos je te snel? Licht en röntgenstraling gaan even snel. Het verschil zit in de energie per foton."
+        ],
+        "uh": "Röntgen dringt door weefsel.",
+        "ctx": "Als je een felle zaklamp tegen je vingers houdt, zie je ze rood oplichten, maar je ziet geen botten. Op een röntgenfoto van je hand zie je de botten scherp. Röntgenstraling heeft een golflengte van ongeveer 0,1 nm, zichtbaar licht van ongeveer 500 nm."
+       },
+       {
+        "v": "Vanaf welk deel van het spectrum is straling ioniserend?",
+        "o": [
+         "Alleen gammastraling",
+         "Vanaf het infrarood",
+         "Vanaf de radiogolven al",
+         "Vanaf het ultraviolet"
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 5,
+        "u": "Ioniserend: (hoog) UV, röntgen, gamma.",
+        "uo": [
+         "Koos je alleen gamma? Ook röntgenstraling en uv kunnen ioniseren. Gamma is alleen het sterkst.",
+         "Koos je infrarood? Infrarood voel je als warmte, maar de fotonen hebben te weinig energie om te ioniseren.",
+         "Koos je radiogolven? Radiofotonen hebben de minste energie van het hele spectrum. Ze kunnen geen elektronen losmaken.",
+         "Klopt: vanaf het ultraviolet hebben fotonen genoeg energie om elektronen los te slaan. Röntgen- en gammastraling zijn nog sterker ioniserend. Radio, microgolven, infrarood en zichtbaar licht zijn niet ioniserend."
+        ],
+        "uh": "Ioniserend vanaf UV."
+       },
+       {
+        "v": "Waarom verbrand je wel in de zon, maar niet voor een warme verwarming?",
+        "o": [
+         "De zon is warmer dan de verwarming op je huid",
+         "De verwarming geeft alleen geluid af",
+         "Zonlicht bevat uv",
+         "Verwarmingen zenden helemaal geen straling uit"
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 5,
+        "u": "Verbranden door UV (energierijke fotonen), niet door warmte.",
+        "uo": [
+         "Koos je warmer? Het gaat niet om hoe warm je huid voelt, maar om de energie per foton. Uv heeft die, infrarood niet.",
+         "Koos je geluid? Een verwarming zendt infrarood uit, warmtestraling. Die maakt je warm, maar laat je niet verbranden.",
+         "Klopt: zonnebrand ontstaat door de uv-straling in zonlicht. Elk uv-foton heeft genoeg energie om moleculen in huidcellen te beschadigen. De verwarming geeft infrarood, dat warm voelt maar niet zo'n schade doet.",
+         "Koos je geen straling? Een verwarming zendt wel infrarood uit; dat voel je als warmte. Het is alleen niet ioniserend."
+        ],
+        "uh": "Zonnebrand = UV."
+       },
+       {
+        "v": "Waarom is de ozonlaag belangrijk voor het leven op aarde?",
+        "o": [
+         "Hij houdt de warmte van de aarde vast",
+         "Hij absorbeert uv-straling",
+         "Hij laat radiogolven niet door",
+         "Hij kaatst zichtbaar licht terug naar de ruimte"
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 5,
+        "u": "Ozon absorbeert schadelijk UV.",
+        "uo": [
+         "Koos je warmte vasthouden? Dat doen broeikasgassen zoals CO₂ met infrarood. De ozonlaag beschermt tegen uv.",
+         "Klopt: ozon hoog in de dampkring absorbeert het grootste deel van de energierijke uv-straling. Zonder ozonlaag zou veel meer uv het aardoppervlak bereiken en zouden huidkanker en schade aan planten en dieren veel vaker voorkomen.",
+         "Koos je radiogolven? Radiogolven gaan gewoon door de dampkring; daarmee werken satellieten. De ozonlaag gaat over uv.",
+         "Koos je zichtbaar licht? Zichtbaar licht komt grotendeels door de dampkring heen; anders zou het hier donker zijn. Ozon absorbeert vooral uv."
+        ],
+        "uh": "Ozon: schild tegen UV.",
+        "ctx": "In de jaren tachtig ontdekten onderzoekers boven Antarctica een gat in de ozonlaag, veroorzaakt door cfk's uit spuitbussen en koelkasten. Landen spraken af om cfk's te verbieden. In Australië en Nieuw-Zeeland, onder het gat, adviseren artsen kinderen altijd een zonnehoed te dragen."
+       },
+       {
+        "v": "Welk van deze apparaten gebruikt ioniserende straling?",
+        "o": [
+         "Een bagagescanner",
+         "Een wifi-router",
+         "Een afstandsbediening",
+         "Een magnetron"
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 5,
+        "u": "Bagagescanner: röntgen.",
+        "uo": [
+         "Klopt: een bagagescanner kijkt met röntgenstraling door koffers heen. Röntgenstraling is ioniserend, daarom is de scanner afgeschermd en loop je er niet zelf doorheen.",
+         "Koos je wifi? Wifi gebruikt radiogolven van 2,4 of 5 GHz, en die zijn niet ioniserend.",
+         "Koos je afstandsbediening? Die gebruikt infrarood, dat niet ioniserend is.",
+         "Koos je magnetron? Microgolven verwarmen water in je eten, maar kunnen geen elektronen losslaan."
+        ],
+        "uh": "Röntgen in de bagagescanner."
+       },
+       {
+        "v": "Waarom kun je achter een glazen raam niet bruin worden, maar wel warm?",
+        "o": [
+         "Glas zet uv om in röntgenstraling",
+         "Glas houdt alle straling van de zon tegen",
+         "Achter glas is het zonlicht te zwak om warm te worden",
+         "Glas houdt het meeste uv tegen, maar laat licht en warmte door"
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 5,
+        "u": "Gewoon glas absorbeert uv-B; zichtbaar licht en (kortgolvig) IR gaan door.",
+        "uo": [
+         "Koos je röntgen? Glas zet niets om in straling met meer energie. Het absorbeert de uv-straling.",
+         "Koos je alle straling? Dan zou het achter een raam donker zijn. Licht gaat gewoon door glas; alleen uv wordt grotendeels tegengehouden.",
+         "Koos je te zwak? Achter een raam kun je het juist heel warm krijgen. Het verschil zit in welk deel van het spectrum door het glas gaat.",
+         "Klopt: gewoon glas absorbeert het grootste deel van de uv-straling, die nodig is om bruin te worden of te verbranden. Zichtbaar licht en een deel van het infrarood gaan wel door, dus je wordt warm."
+        ],
+        "uh": "Glas: geen uv, wel licht en warmte.",
+        "ctx": "Een leerling zit de hele middag in de zon achter het raam van de veranda. Het wordt er warm, maar ze wordt niet bruin en verbrandt ook niet. Haar broertje, die buiten in de tuin speelt, heeft na een uur een rode neus."
+       }
+      ],
+      "oe": [
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een smartphone communiceert met wifi op 5,0 GHz en met een 4G-zendmast op 800 MHz. Een leerling leest dat de antenne van een apparaat ongeveer een kwart golflengte lang moet zijn. Hij vergelijkt de antennes die nodig zijn.",
+        "v": "Bereken de golflengte van beide signalen en de bijbehorende kwartgolf-antennelengte.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Wifi: λ = 3,00·10⁸ / 5,0·10⁹ = 0,060 m; antenne 1,5 cm (1p). 4G: λ = 3,00·10⁸ / 8,0·10⁸ = 0,375 m; antenne 9,4 cm (1p). Correct omrekenen van GHz en MHz naar Hz (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een zonnebank zendt uv-straling uit met een golflengte van 320 nm. Een rode warmtelamp zendt straling uit met een golflengte van 750 nm. Een leerling zegt: \"De warmtelamp geeft 100 W en de zonnebank maar 30 W, dus de warmtelamp is gevaarlijker voor de huid.\"",
+        "v": "Bereken de energie van één foton van beide lampen en beoordeel de uitspraak van de leerling.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Uv: f = 3,00·10⁸ / 3,2·10⁻⁷ = 9,4·10¹⁴ Hz, E = 6,63·10⁻³⁴ × 9,4·10¹⁴ = 6,2·10⁻¹⁹ J (1p). Rood: f = 4,0·10¹⁴ Hz, E = 2,7·10⁻¹⁹ J (1p). De uitspraak klopt niet: schade aan moleculen hangt af van de energie per foton, niet van het totale vermogen; uv-fotonen kunnen moleculen beschadigen, rode niet (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een warmtebeeldcamera vangt infrarood op met een golflengte rond 10 µm. Röntgenstraling bij de tandarts heeft een golflengte van ongeveer 0,05 nm. Beide zijn elektromagnetische straling.",
+        "v": "Bereken voor beide de frequentie en leg uit welke van de twee ioniserend is en waarom.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Infrarood: f = 3,00·10⁸ / 1,0·10⁻⁵ = 3,0·10¹³ Hz (1p). Röntgen: f = 3,00·10⁸ / 5·10⁻¹¹ = 6·10¹⁸ Hz (1p). Röntgen is ioniserend: de frequentie en dus de energie per foton (E = h · f) is zo groot dat één foton een elektron kan losslaan (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een astronaut op de maan stuurt een radiobericht naar de aarde. De afstand aarde-maan is 3,84·10⁸ m. Een journalist schrijft: \"Het geluid van de astronaut doet er bijna 13 dagen over om de aarde te bereiken, want geluid gaat 343 m/s.\"",
+        "v": "Bereken hoe lang het radiosignaal onderweg is en leg uit wat er niet klopt aan de bewering van de journalist.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "t = s / c = 3,84·10⁸ / 3,00·10⁸ = 1,28 s (1p). Het bericht reist als radiogolf, een elektromagnetische golf met de lichtsnelheid (1p). Geluid kan helemaal niet door het vacuüm tussen maan en aarde, dus de berekening met 343 m/s is zinloos (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "In Australië is de uv-index in de zomer vaak 12 of hoger, in Nederland zelden meer dan 7. Boven Antarctica is de ozonlaag in het voorjaar veel dunner dan normaal. Australische scholen hebben de regel \"geen hoed, geen buitenspelen\".",
+        "v": "Leg uit wat de ozonlaag met uv-straling doet en waarom meer uv op de grond schadelijk is voor de huid.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Ozon absorbeert het grootste deel van de uv-straling van de zon; een dunnere ozonlaag laat meer uv door (1p). Uv-fotonen hebben genoeg energie om moleculen, zoals DNA in huidcellen, te beschadigen (1p). Daardoor neemt de kans op verbranding en huidkanker toe (1p)."
+       }
+      ]
      }
     ]
    }

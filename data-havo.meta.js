@@ -2665,6 +2665,28 @@ var VAKKEN = [
       "nOe": 5,
       "nBeg": 11,
       "hasSam": true
+     },
+     {
+      "id": "E5",
+      "lo": "na.E.5",
+      "gs": 2,
+      "naam": "Elektromagnetisch spectrum",
+      "beschrijving": "Je beschrijft elektromagnetische straling als golf die geen stof nodig heeft, zet het spectrum van radiogolven tot gammastraling op volgorde, rekent met c = f · λ en met de energie van een foton (E = h · f), koppelt toepassingen aan de gebieden van het spectrum en legt uit waarom uv ioniserend is en de ozonlaag beschermt.",
+      "ceStatus": "CE",
+      "binas": "7, 19",
+      "val": "",
+      "onderwerpen": [
+       "Wat elektromagnetische straling is",
+       "Het spectrum op volgorde",
+       "Rekenen met c = f · λ",
+       "Energie van een foton",
+       "Toepassingen per gebied",
+       "Ioniserend of niet: uv en de zon"
+      ],
+      "nSv": 28,
+      "nOe": 5,
+      "nBeg": 11,
+      "hasSam": true
      }
     ]
    }
