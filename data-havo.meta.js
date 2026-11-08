@@ -1835,6 +1835,28 @@ var VAKKEN = [
       "nOe": 5,
       "nBeg": 11,
       "hasSam": true
+     },
+     {
+      "id": "D2",
+      "lo": "sk.D.2",
+      "gs": 2,
+      "naam": "Functionele groepen herkennen",
+      "beschrijving": "Je herkent de hydroxyl-, carboxyl- en aminogroep en halogeenatomen in structuurformules, koppelt ze aan de naam van de stof, en verklaart met de groep of een stof zuur, basisch of goed oplosbaar is en waarom hij hoog kookt.",
+      "ceStatus": "CE",
+      "binas": "42, 66D",
+      "val": "",
+      "onderwerpen": [
+       "Wat een functionele groep is",
+       "Alcoholen: de OH-groep",
+       "Carbonzuren: de COOH-groep",
+       "Amines en halogeenverbindingen",
+       "Groepen herkennen in grotere moleculen",
+       "Kookpunt en oplosbaarheid"
+      ],
+      "nSv": 28,
+      "nOe": 5,
+      "nBeg": 11,
+      "hasSam": true
      }
     ]
    },

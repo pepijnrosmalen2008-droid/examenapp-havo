@@ -74489,6 +74489,694 @@ var VAKKEN = [
         "u": "5,0 · 10³ g / 44,1 g/mol = 113 mol propaan (1p). Dat geeft 3 × 113 = 340 mol CO₂ (1p). 340 mol × 44,01 g/mol = 1,5 · 10⁴ g = 15 kg CO₂ (1p)."
        }
       ]
+     },
+     {
+      "id": "D2",
+      "lo": "sk.D.2",
+      "gs": 2,
+      "naam": "Functionele groepen herkennen",
+      "beschrijving": "Je herkent de hydroxyl-, carboxyl- en aminogroep en halogeenatomen in structuurformules, koppelt ze aan de naam van de stof, en verklaart met de groep of een stof zuur, basisch of goed oplosbaar is en waarom hij hoog kookt.",
+      "ceStatus": "CE",
+      "binas": "42, 66D",
+      "val": "",
+      "onderwerpen": [
+       "Wat een functionele groep is",
+       "Alcoholen: de OH-groep",
+       "Carbonzuren: de COOH-groep",
+       "Amines en halogeenverbindingen",
+       "Groepen herkennen in grotere moleculen",
+       "Kookpunt en oplosbaarheid"
+      ],
+      "sam": "Een functionele groep bepaalt de eigenschappen van een stof. Alcohol: −OH, naam op -ol, neutraal en hydrofiel. Carbonzuur: −COOH, naam op -zuur, zwak zuur. Amine: −NH₂, naam op -amine, zwakke base. Halogeen: voorvoegsel chloor-, broom-. Groepen met OH of NH vormen waterstofbruggen: hoger kookpunt en beter oplosbaar; een lange keten is hydrofoob. NH₂ + COOH = aminozuur.",
+      "begrippen": [
+       {
+        "t": "Functionele groep",
+        "d": "Atoomgroep in een molecuul die de karakteristieke eigenschappen en reacties van de stof bepaalt."
+       },
+       {
+        "t": "Hydroxylgroep",
+        "d": "De groep −OH; kenmerk van de alcoholen."
+       },
+       {
+        "t": "Alcohol",
+        "d": "Stof met een OH-groep aan een koolstofatoom; de naam eindigt op -ol."
+       },
+       {
+        "t": "Carboxylgroep",
+        "d": "De groep −COOH: een C met een dubbel gebonden O en een OH; kenmerk van carbonzuren."
+       },
+       {
+        "t": "Carbonzuur",
+        "d": "Stof met een carboxylgroep; zwak zuur, de naam eindigt op -zuur."
+       },
+       {
+        "t": "Aminogroep",
+        "d": "De groep −NH₂; kenmerk van de amines."
+       },
+       {
+        "t": "Amine",
+        "d": "Stof met een aminogroep; zwakke base, de naam eindigt op -amine."
+       },
+       {
+        "t": "Halogeenalkaan",
+        "d": "Alkaan met een F-, Cl-, Br- of I-atoom; naam met voorvoegsel zoals chloor-."
+       },
+       {
+        "t": "Aminozuur",
+        "d": "Stof met zowel een aminogroep als een carboxylgroep; bouwsteen van eiwitten."
+       },
+       {
+        "t": "Hydrofiel",
+        "d": "Watervriendelijk: kan waterstofbruggen vormen met water, zoals een OH-groep."
+       },
+       {
+        "t": "Hydrofoob",
+        "d": "Waterafstotend: kan geen waterstofbruggen vormen, zoals een lange koolstofketen."
+       }
+      ],
+      "sv": [
+       {
+        "v": "Waarom is een functionele groep zo belangrijk in een molecuul?",
+        "o": [
+         "Die groep komt alleen voor in stoffen uit levende wezens",
+         "Die groep bepaalt hoe lang de koolstofketen is",
+         "Die groep bepaalt grotendeels de eigenschappen en reacties van de stof",
+         "Die groep maakt het molecuul altijd zwaarder dan water"
+        ],
+        "c": 2,
+        "d": 1,
+        "s": 0,
+        "u": "Een functionele groep is een atoomgroep die de karakteristieke eigenschappen en reacties van een stof bepaalt.",
+        "uo": [
+         "Koos je levende wezens? Functionele groepen zitten in alle soorten organische stoffen, ook in stoffen die in een fabriek worden gemaakt.",
+         "Koos je ketenlengte? De keten is het koolstofskelet. De functionele groep zit eraan vast en bepaalt vooral hoe de stof reageert en oplost.",
+         "Klopt: stoffen met dezelfde functionele groep gedragen zich chemisch vergelijkbaar. Alle alcoholen hebben een OH-groep en lijken daardoor op elkaar.",
+         "Koos je zwaarder dan water? De dichtheid hangt van veel dingen af. Een functionele groep gaat over het gedrag en de reacties van de stof."
+        ],
+        "uh": "Functionele groep = het actieve deel van het molecuul."
+       },
+       {
+        "v": "Welke functionele groep hoort bij de uitgang -ol in een naam?",
+        "o": [
+         "De carboxylgroep, −COOH",
+         "De hydroxylgroep, −OH",
+         "De aminogroep, −NH₂",
+         "Een dubbele binding, C=C"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 0,
+        "u": "Uitgang -ol = alcohol = hydroxylgroep.",
+        "uo": [
+         "Koos je carboxylgroep? Carbonzuren krijgen de uitgang -zuur, zoals ethaanzuur. Bij -ol hoort de OH-groep.",
+         "Klopt: ethanol, methanol en propanol eindigen op -ol. Dat wijst op een OH-groep aan de keten: het zijn alcoholen.",
+         "Koos je aminogroep? Stoffen met een NH₂-groep krijgen de uitgang -amine, zoals methaanamine. De uitgang -ol hoort bij alcoholen.",
+         "Koos je dubbele binding? Een C=C geeft de uitgang -een, zoals in etheen. De uitgang -ol staat voor de OH-groep."
+        ],
+        "uh": "-ol → OH, -zuur → COOH, -amine → NH₂, -een → C=C."
+       },
+       {
+        "v": "Welke functionele groep heeft de stof van de leerling zeker?",
+        "o": [
+         "Een carboxylgroep, −COOH",
+         "Een hydroxylgroep, −OH, zonder andere groep",
+         "Een aminogroep, −NH₂",
+         "Een dubbele C=C-binding"
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 0,
+        "u": "Zure oplossing + reactie met kalk (CO₂) + naam op -zuur: carbonzuur.",
+        "uo": [
+         "Klopt: de oplossing is zuur, er ontstaat een gas met kalk (CO₂) en de naam eindigt op -zuur. Dat past alleen bij een carbonzuur met een COOH-groep.",
+         "Koos je alleen een OH-groep? Alcoholen zijn neutraal in water en reageren niet met kalk. Het zure karakter wijst op de COOH-groep.",
+         "Koos je aminogroep? Amines zijn juist basisch: ze maken de pH hoger dan 7. Deze oplossing heeft een pH van 3.",
+         "Koos je C=C? Een dubbele binding toon je aan met broomwater. Ze maakt een oplossing niet zuur en geeft geen gas met kalk."
+        ],
+        "uh": "Zuur in water = carboxylgroep.",
+        "ctx": "Een leerling lost wat van een witte, vaste stof op in water en meet een pH van 3. Daarna doet hij er een stukje marmer (CaCO₃) in: er ontstaan belletjes gas. Op het potje stond alleen een naam die eindigde op -zuur, de rest van het etiket was weg."
+       },
+       {
+        "v": "Welke formule hoort bij ethanol?",
+        "o": [
+         "CH₃−CH₂−NH₂",
+         "CH₃−COOH",
+         "CH₃−CH₃",
+         "CH₃−CH₂−OH"
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 1,
+        "u": "Eth = 2 C, -ol = OH-groep: CH₃CH₂OH.",
+        "uo": [
+         "Koos je CH₃−CH₂−NH₂? Dat is ethaanamine, met een aminogroep. De uitgang -ol vraagt om een OH-groep.",
+         "Koos je CH₃−COOH? Dat is ethaanzuur (azijnzuur), met een COOH-groep. Ethanol heeft een OH-groep.",
+         "Koos je CH₃−CH₃? Dat is ethaan, een alkaan zonder functionele groep. Ethanol heeft er een OH-groep aan.",
+         "Klopt: twee C-atomen (eth) en een OH-groep (-ol). Ethanol is de alcohol in bier en wijn."
+        ],
+        "uh": "Stam + -ol: OH aan de keten."
+       },
+       {
+        "v": "Waarom mengt ethanol goed met water en ethaan niet?",
+        "o": [
+         "Ethanol reageert met water tot een nieuwe stof",
+         "Ethanol is zwaarder dan ethaan",
+         "De OH-groep van ethanol vormt waterstofbruggen met water",
+         "Ethaan heeft een dubbele binding die water afstoot"
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 1,
+        "u": "De OH-groep is hydrofiel: waterstofbruggen met watermoleculen.",
+        "uo": [
+         "Koos je reageert? Ethanol en water mengen alleen; er ontstaat geen nieuwe stof. Je kunt ze door destilleren weer scheiden.",
+         "Koos je zwaarder? Massa verklaart niet waarom een stof met water mengt. Het gaat om de krachten tussen de moleculen.",
+         "Klopt: de OH-groep kan waterstofbruggen vormen met watermoleculen. Daardoor mengen ethanol en water in elke verhouding. Ethaan heeft geen OH-groep.",
+         "Koos je dubbele binding? Ethaan is een alkaan met alleen enkele bindingen. Het mengt niet met water omdat het geen waterstofbruggen kan vormen."
+        ],
+        "uh": "OH = hydrofiel."
+       },
+       {
+        "v": "Waarom lost butaan-1-ol veel slechter op in water dan ethanol?",
+        "o": [
+         "Butaan-1-ol heeft geen OH-groep meer",
+         "De lange koolstofketen is hydrofoob en weegt zwaarder dan de ene OH-groep",
+         "Butaan-1-ol is een carbonzuur",
+         "Butaan-1-ol vormt sterkere waterstofbruggen met zichzelf dan ethanol"
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 1,
+        "u": "Eén OH-groep, maar een langere hydrofobe staart: hoe langer de keten, hoe slechter de oplosbaarheid.",
+        "uo": [
+         "Koos je geen OH-groep? De uitgang -ol laat zien dat er wel een OH-groep is. Het verschil zit in de lengte van de keten.",
+         "Klopt: beide stoffen hebben één OH-groep, maar butaan-1-ol heeft een keten van vier C-atomen. Dat apolaire deel kan geen waterstofbruggen vormen en duwt het molecuul uit het water.",
+         "Koos je carbonzuur? Een carbonzuur heeft een COOH-groep en de uitgang -zuur. Butaan-1-ol is een alcohol.",
+         "Koos je sterkere bruggen met zichzelf? Beide stoffen hebben één OH-groep. Het grote verschil is het lange hydrofobe deel van butaan-1-ol."
+        ],
+        "uh": "Lange keten = meer hydrofoob.",
+        "ctx": "Een leerling schudt 10 mL ethanol met 10 mL water: er ontstaat één heldere vloeistof. Met 10 mL butaan-1-ol (CH₃CH₂CH₂CH₂OH) en 10 mL water ziet ze na het schudden twee lagen. Uit Binas blijkt dat er maar ongeveer 7 gram butaan-1-ol oplost in 100 mL water."
+       },
+       {
+        "v": "Hoe heet de alcohol CH₃−OH?",
+        "o": [
+         "Methanol",
+         "Ethanol",
+         "Methaanzuur",
+         "Methaan"
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 1,
+        "u": "Meth = 1 C, -ol = OH.",
+        "uo": [
+         "Klopt: één koolstofatoom (meth) met een OH-groep (-ol). Methanol is giftig en wordt gebruikt als brandstof en oplosmiddel.",
+         "Koos je ethanol? Eth staat voor twee C-atomen: CH₃CH₂OH. Deze stof heeft er maar één, dus de stam is meth.",
+         "Koos je methaanzuur? Dat heeft een COOH-groep: HCOOH. Bij een OH-groep hoort de uitgang -ol.",
+         "Koos je methaan? Dat is CH₄, zonder OH-groep. Door de OH-groep op de plek van een H-atoom wordt het methanol."
+        ],
+        "uh": "Meth + ol = methanol."
+       },
+       {
+        "v": "Welke groep is de carboxylgroep?",
+        "o": [
+         "−CHO",
+         "−OH",
+         "−NH₂",
+         "−COOH"
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 2,
+        "u": "Carboxylgroep: een C met een dubbel gebonden O en een OH, −COOH.",
+        "uo": [
+         "Koos je −CHO? Die groep heeft maar één O-atoom. De carboxylgroep heeft er twee: COOH.",
+         "Koos je −OH? Dat is de hydroxylgroep van een alcohol. De carboxylgroep heeft daarnaast nog een C=O.",
+         "Koos je −NH₂? Dat is de aminogroep, met stikstof. De carboxylgroep bestaat uit C, O en H.",
+         "Klopt: de carboxylgroep bestaat uit een C-atoom met een dubbel gebonden O-atoom en een OH-groep. Stoffen met deze groep zijn carbonzuren."
+        ],
+        "uh": "COOH = C=O plus OH."
+       },
+       {
+        "v": "Waarom is een oplossing van azijnzuur zuur?",
+        "o": [
+         "Azijnzuur bevat veel zuurstofatomen",
+         "De OH-groep neemt H⁺-ionen op uit het water",
+         "De COOH-groep kan een H⁺-ion afstaan aan water",
+         "De koolstofketen reageert met water tot koolzuur"
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 2,
+        "u": "CH₃COOH + H₂O ⇄ CH₃COO⁻ + H₃O⁺: de carboxylgroep is een zwak zuur.",
+        "uo": [
+         "Koos je veel zuurstof? Het aantal O-atomen maakt een stof niet zuur. Alcoholen hebben ook zuurstof en zijn neutraal.",
+         "Koos je H⁺ opnemen? Een stof die H⁺ opneemt is een base. Azijnzuur staat juist een H⁺ af.",
+         "Klopt: de H van de COOH-groep kan als H⁺ overgaan naar een watermolecuul. Er ontstaat H₃O⁺ en de pH daalt. Azijnzuur is een zwak zuur: maar een klein deel splitst.",
+         "Koos je koolzuur? De koolstofketen reageert niet met water. Het zure deel is de COOH-groep."
+        ],
+        "uh": "Carbonzuur = zwak zuur door de COOH-groep."
+       },
+       {
+        "v": "Welke stof zit er in de mieren?",
+        "o": [
+         "Methanol, CH₃OH",
+         "Methaanzuur, HCOOH",
+         "Ethaanzuur, CH₃COOH",
+         "Methaan, CH₄"
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 2,
+        "u": "Eén C-atoom, carboxylgroep: methaanzuur (mierenzuur).",
+        "uo": [
+         "Koos je methanol? Methanol heeft één C, maar een OH-groep. Die maakt water niet zuur.",
+         "Klopt: het zuur heeft één C-atoom en een carboxylgroep. Dat is methaanzuur, HCOOH, ook wel mierenzuur genoemd.",
+         "Koos je ethaanzuur? Dat heeft twee C-atomen. Het zuur uit de mieren heeft er maar één.",
+         "Koos je methaan? Methaan is een gas zonder functionele groep en kan geen zure oplossing geven."
+        ],
+        "uh": "Tel C voor de stam, groep voor de uitgang.",
+        "ctx": "Rode bosmieren spuiten bij gevaar een zuur naar hun belager. Onderzoekers vingen het op en vonden een carbonzuur met één koolstofatoom per molecuul. Een prikkende jeuk na een mierenbeet komt door dit zuur. In de oude naam van de stof zit het woord mier."
+       },
+       {
+        "v": "Hoe heet CH₃−CH₂−COOH?",
+        "o": [
+         "Propaanzuur",
+         "Ethaanzuur",
+         "Propanol",
+         "Butaanzuur"
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 2,
+        "u": "Het C-atoom van de COOH-groep telt mee: 3 C → propaanzuur.",
+        "uo": [
+         "Klopt: tel alle C-atomen, ook die in de COOH-groep. Dat zijn er drie, dus prop + aan + zuur.",
+         "Koos je ethaanzuur? Dan heb je het C-atoom van de carboxylgroep niet meegeteld. Dat hoort bij de keten.",
+         "Koos je propanol? Die heeft een OH-groep, geen COOH. Bij een carboxylgroep hoort de uitgang -zuur.",
+         "Koos je butaanzuur? Dan heb je één C te veel geteld. Er staan er drie: CH₃, CH₂ en de C van COOH."
+        ],
+        "uh": "C van COOH telt mee in de stam."
+       },
+       {
+        "v": "Welke groep heeft een amine?",
+        "o": [
+         "−Cl",
+         "−OH",
+         "−COOH",
+         "−NH₂"
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 3,
+        "u": "Amine: aminogroep met stikstof.",
+        "uo": [
+         "Koos je −Cl? Een chlooratoom aan een keten maakt een chlooralkaan, geen amine. Kenmerk van een amine is het stikstofatoom in de NH₂-groep.",
+         "Koos je −OH? Dat is de hydroxylgroep van een alcohol. Een amine heeft een stikstofatoom.",
+         "Koos je −COOH? Dat is de groep van een carbonzuur, die juist zuur is. Amines hebben een NH₂-groep met een stikstofatoom en zijn basisch.",
+         "Klopt: een amine heeft een NH₂-groep. Amines ruiken vaak naar vis en zijn in water basisch."
+        ],
+        "uh": "Amine = NH₂."
+       },
+       {
+        "v": "Waarom is een oplossing van methaanamine basisch?",
+        "o": [
+         "Methaanamine bevat een OH-groep",
+         "De NH₂-groep staat een H⁺-ion af aan water",
+         "De NH₂-groep neemt een H⁺-ion op van water, zodat er OH⁻ ontstaat",
+         "Stikstof maakt elke oplossing basisch omdat het een gas is"
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 3,
+        "u": "CH₃NH₂ + H₂O ⇄ CH₃NH₃⁺ + OH⁻: de aminogroep is een zwakke base.",
+        "uo": [
+         "Koos je OH-groep? Methaanamine heeft geen OH-groep. Het OH⁻ ontstaat pas als het amine een H⁺ uit water haalt.",
+         "Koos je H⁺ afstaan? Dat doet een zuur, zoals een carbonzuur. Een amine neemt juist H⁺ op.",
+         "Klopt: het N-atoom kan een H⁺ opnemen van een watermolecuul. Daarbij blijft OH⁻ over en stijgt de pH. Net als ammoniak is een amine een zwakke base.",
+         "Koos je stikstof als gas? Dat stikstof in de lucht een gas is, zegt niets over dit molecuul. Het gaat om de NH₂-groep die H⁺ opneemt."
+        ],
+        "uh": "Amine = zwakke base, zoals ammoniak."
+       },
+       {
+        "v": "Hoe heet CH₃−CH₂−Cl?",
+        "o": [
+         "Ethaanchloride",
+         "Chloorethaan",
+         "Chloormethaan",
+         "Ethanol"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 3,
+        "u": "Halogeen als voorvoegsel: chloor + ethaan.",
+        "uo": [
+         "Koos je ethaanchloride? Een chloride is een ion in een zout, zoals natriumchloride. In een molecuul met een C-Cl-binding gebruik je het voorvoegsel chloor.",
+         "Klopt: een halogeenatoom krijg je als voorvoegsel voor de naam van het alkaan. Twee C-atomen met een Cl: chloorethaan.",
+         "Koos je chloormethaan? Dat heeft maar één C-atoom: CH₃Cl. Hier staan er twee (CH₃ en CH₂), dus de stam is ethaan.",
+         "Koos je ethanol? Die heeft een OH-groep op de plek waar hier een Cl zit. Een halogeenatoom geeft geen uitgang -ol, maar het voorvoegsel chloor."
+        ],
+        "uh": "Halogeen = voorvoegsel: fluor, chloor, broom, jood."
+       },
+       {
+        "v": "Welke stof veroorzaakt de visgeur, en wat helpt ertegen?",
+        "o": [
+         "Een amine; citroensap zet het om in een geurloos ion",
+         "Een carbonzuur; citroensap maakt het vluchtiger",
+         "Een alcohol; citroensap verdunt het",
+         "Een halogeenverbinding; citroensap breekt de C-Cl-binding"
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 3,
+        "u": "Amines zijn basen. Zuur (citroensap) maakt er een ion van, dat niet vervliegt en dus niet ruikt.",
+        "uo": [
+         "Klopt: de visgeur komt van amines. Het zuur in citroensap geeft een H⁺ aan de NH₂-groep. Het amine wordt een ion dat in het water blijft en niet meer naar je neus vervliegt.",
+         "Koos je carbonzuur? Een carbonzuur reageert niet met citroensap, want dat is zelf een zuur. De visgeur komt van een base.",
+         "Koos je alcohol? Alcoholen ruiken niet naar vis en reageren niet met zuur. Verdunnen verklaart niet waarom de geur echt weg is.",
+         "Koos je halogeenverbinding? Citroensap is een zwak zuur en breekt geen C-Cl-bindingen. Het reageert met de basische aminogroep."
+        ],
+        "uh": "Amine + zuur → ion → geen geur.",
+        "ctx": "Oude vis ruikt sterk doordat eiwitten afbreken tot kleine stoffen met een stikstofatoom, zoals trimethylamine. Koks druppelen er vaak citroensap over, en na het schoonmaken wassen ze hun handen met een beetje azijn. Daarna is de visgeur grotendeels verdwenen."
+       },
+       {
+        "v": "Welke functionele groepen zitten in melkzuur, CH₃−CH(OH)−COOH?",
+        "o": [
+         "Twee hydroxylgroepen",
+         "Alleen een carboxylgroep",
+         "Een aminogroep en een carboxylgroep",
+         "Een hydroxylgroep en een carboxylgroep"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 4,
+        "u": "OH aan het middelste C (hydroxyl) en COOH aan het uiteinde (carboxyl).",
+        "uo": [
+         "Koos je twee hydroxylgroepen? De OH in COOH hoort bij de carboxylgroep. Je telt hem niet nog eens als losse alcoholgroep.",
+         "Koos je alleen carboxyl? Kijk naar het middelste C-atoom: daar staat (OH). Dat is een aparte hydroxylgroep.",
+         "Koos je aminogroep? Er staat geen N in de formule. Een aminogroep heeft altijd een stikstofatoom.",
+         "Klopt: aan het middelste C-atoom zit een OH-groep en aan het uiteinde een COOH-groep. Melkzuur is dus tegelijk een alcohol en een carbonzuur."
+        ],
+        "uh": "OH in COOH hoort bij de carboxylgroep."
+       },
+       {
+        "v": "Welke twee functionele groepen heeft glycine?",
+        "o": [
+         "Twee carboxylgroepen",
+         "Een hydroxylgroep en een aminogroep",
+         "Een aminogroep en een carboxylgroep",
+         "Een aminogroep en een dubbele C=C-binding"
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 4,
+        "u": "H₂N−CH₂−COOH: aminogroep en carboxylgroep, daarom heet het een aminozuur.",
+        "uo": [
+         "Koos je twee carboxylgroepen? Er staat maar één COOH in de formule. Aan het andere uiteinde zit een NH₂-groep.",
+         "Koos je hydroxyl en amino? De OH in de formule hoort bij COOH, de carboxylgroep. Een losse alcoholgroep heeft glycine niet.",
+         "Klopt: glycine heeft aan de ene kant een NH₂-groep en aan de andere kant een COOH-groep. Die combinatie geeft de naam aminozuur.",
+         "Koos je C=C? Glycine heeft alleen enkele C-C-bindingen. Het tweede kenmerk is de aminogroep."
+        ],
+        "uh": "Aminozuur = NH₂ + COOH.",
+        "ctx": "Eiwitten in je voedsel worden in je darmen afgebroken tot aminozuren. Het kleinste aminozuur is glycine, met de formule H₂N−CH₂−COOH. Het zit veel in gelatine, de stof die pudding en snoepjes stevig maakt."
+       },
+       {
+        "v": "Welke groepen herken je in ethanolamine, HO−CH₂−CH₂−NH₂?",
+        "o": [
+         "Een carboxylgroep en een aminogroep",
+         "Een hydroxylgroep en een aminogroep",
+         "Alleen een aminogroep",
+         "Een hydroxylgroep en een carboxylgroep"
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 4,
+        "u": "HO aan het ene uiteinde, NH₂ aan het andere: alcohol én amine.",
+        "uo": [
+         "Koos je carboxyl? Daarvoor moet er een C met een dubbel gebonden O en een OH zijn. Hier zit de OH direct aan een CH₂.",
+         "Klopt: de OH aan het ene uiteinde is een hydroxylgroep, de NH₂ aan het andere een aminogroep. De naam zegt het ook: ethanol + amine.",
+         "Koos je alleen amino? De HO aan het begin van de formule is een aparte groep: een hydroxylgroep.",
+         "Koos je hydroxyl en carboxyl? Er is geen COOH in deze formule. Het stikstofatoom hoort bij een aminogroep."
+        ],
+        "uh": "Lees de formule van begin tot eind en zoek elke groep.",
+        "ctx": "In gaswassers van energiecentrales wordt CO₂ uit het rookgas gehaald met een oplossing van ethanolamine, HO−CH₂−CH₂−NH₂. De stof bindt CO₂ doordat hij basisch is. Bij verwarmen komt het CO₂ weer vrij en kan de oplossing opnieuw gebruikt worden."
+       },
+       {
+        "v": "Bij welke stofklasse hoort CH₃−CH₂−CH₂−OH?",
+        "o": [
+         "Alcohol",
+         "Carbonzuur",
+         "Amine",
+         "Alkeen"
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 4,
+        "u": "Alleen een OH-groep aan een C-keten: alcohol (propaan-1-ol).",
+        "uo": [
+         "Klopt: de enige functionele groep is een OH aan het laatste C-atoom. Het is een alcohol: propaan-1-ol.",
+         "Koos je carbonzuur? Daarvoor moet aan hetzelfde C-atoom ook nog een dubbel gebonden O zitten: COOH.",
+         "Koos je amine? Een amine heeft een stikstofatoom. Deze formule bevat alleen C, H en O.",
+         "Koos je alkeen? Een alkeen heeft een dubbele C=C-binding en geen zuurstof. Hier zijn alle bindingen enkel."
+        ],
+        "uh": "Zoek de groep, kies de stofklasse."
+       },
+       {
+        "v": "Welke stof heeft het hoogste kookpunt?",
+        "o": [
+         "Chloorethaan",
+         "Ethanol",
+         "Ethaan",
+         "Ethaanzuur"
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 5,
+        "u": "Ethaanzuur (118 °C) > ethanol (78 °C) > chloorethaan (12 °C) > ethaan (−89 °C).",
+        "uo": [
+         "Koos je chloorethaan? De C-Cl-binding maakt het molecuul wel iets polair, maar er zijn geen waterstofbruggen: kookpunt 12 °C.",
+         "Koos je ethanol? Ethanol kookt bij 78 °C door de waterstofbruggen van de OH-groep. Ethaanzuur heeft er nog meer en kookt hoger.",
+         "Koos je ethaan? Ethaan heeft geen functionele groep en alleen zwakke vanderwaalskrachten: kookpunt −89 °C.",
+         "Klopt: ethaanzuur kookt bij 118 °C. De COOH-groep vormt sterke waterstofbruggen; de moleculen vormen zelfs paren."
+        ],
+        "uh": "Waterstofbruggen geven een hoog kookpunt."
+       },
+       {
+        "v": "Waarom kookt ethanol (78 °C) veel hoger dan ethaan (−89 °C)?",
+        "o": [
+         "In ethanol zijn de C-H-bindingen sterker",
+         "Ethanol heeft meer koolstofatomen",
+         "Ethanolmoleculen vormen onderling waterstofbruggen",
+         "Ethaan heeft een dubbele binding die makkelijk breekt"
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 5,
+        "u": "Bij koken moeten de waterstofbruggen tussen de ethanolmoleculen verbroken worden.",
+        "uo": [
+         "Koos je sterkere C-H-bindingen? Bij koken breken de atoombindingen niet. Het gaat om de krachten tussen de moleculen.",
+         "Koos je meer koolstofatomen? Beide stoffen hebben twee C-atomen. Het verschil zit in de OH-groep van ethanol.",
+         "Klopt: de OH-groepen vormen waterstofbruggen tussen de moleculen. Die zijn veel sterker dan alleen vanderwaalskrachten, dus er is meer energie nodig om ethanol te laten koken.",
+         "Koos je dubbele binding? Ethaan is een alkaan met alleen enkele bindingen. Het kookt laag omdat het geen waterstofbruggen heeft."
+        ],
+        "uh": "OH-groep = waterstofbruggen = hoger kookpunt."
+       },
+       {
+        "v": "Welke conclusie trek je uit de kookpunten?",
+        "o": [
+         "Een langere keten verhoogt het kookpunt meer dan een OH-groep",
+         "Een OH-groep verhoogt het kookpunt veel meer dan één extra CH₂-groep",
+         "Alcoholen hebben een lager kookpunt dan alkanen",
+         "De OH-groep heeft geen invloed op het kookpunt"
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 5,
+        "u": "Propaan (−42) → butaan (−0,5): +41 °C door een CH₂. Propaan → propaan-1-ol (97): +139 °C door de OH.",
+        "uo": [
+         "Koos je langere keten meer? Reken het na: de keten verlengen geeft ongeveer 41 °C, de OH-groep 139 °C.",
+         "Klopt: een CH₂ erbij (propaan → butaan) geeft ongeveer 41 °C erbij. Een OH-groep erbij (propaan → propaan-1-ol) geeft 139 °C erbij. De waterstofbruggen hebben een veel groter effect.",
+         "Koos je alcoholen lager? Propaan-1-ol kookt bij 97 °C, propaan bij −42 °C. Alcoholen koken juist veel hoger.",
+         "Koos je geen invloed? Propaan en propaan-1-ol hebben dezelfde keten. Het verschil van 139 °C komt helemaal door de OH-groep."
+        ],
+        "uh": "Waterstofbruggen wegen zwaarder dan ketenlengte.",
+        "ctx": "Uit Binas: propaan kookt bij −42 °C, butaan bij −0,5 °C en propaan-1-ol bij 97 °C. Propaan-1-ol heeft dezelfde keten van drie C-atomen als propaan, maar met een OH-groep aan het uiteinde. Butaan heeft één CH₂-groep meer dan propaan."
+       },
+       {
+        "v": "Waarom lost azijnzuur goed op in water, maar zit vet uit dezelfde keuken als een laag op de soep?",
+        "o": [
+         "Azijnzuur is klein en heeft een COOH-groep; vetmoleculen hebben vooral lange hydrofobe ketens",
+         "Azijnzuur is zwaarder dan vet",
+         "Vet reageert met water tot een laag",
+         "Azijnzuur heeft geen koolstofketen"
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 5,
+        "u": "Klein molecuul met hydrofiele COOH: oplosbaar. Vet: lange koolstofketens, hydrofoob.",
+        "uo": [
+         "Klopt: azijnzuur is een klein molecuul met een COOH-groep die waterstofbruggen vormt met water. Vetmoleculen bestaan grotendeels uit lange koolstofketens die geen waterstofbruggen kunnen vormen.",
+         "Koos je zwaarder? Massa bepaalt niet of iets oplost. Het gaat om hydrofiele en hydrofobe delen.",
+         "Koos je reageert? Vet reageert niet met water in de soep. Het blijft apart omdat het hydrofoob is.",
+         "Koos je geen koolstofketen? Azijnzuur heeft een korte keten: CH₃COOH. Juist omdat die kort is, wint de COOH-groep."
+        ],
+        "uh": "Klein met groep: lost op. Lange keten: drijft.",
+        "ctx": "In een zuurkool-soep zit azijnzuur (CH₃COOH) uit de zuurkool en vet uit een stuk spek. De soep smaakt overal even zuur, maar het vet drijft als oogjes bovenop. Vetmoleculen bevatten drie lange koolstofketens van zo'n 16 tot 18 C-atomen."
+       },
+       {
+        "v": "Welke stof lost het best op in water?",
+        "o": [
+         "Octaan",
+         "Hexaan",
+         "Hexaan-1-ol",
+         "Methanol"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 5,
+        "u": "Korte keten met OH: hydrofiel deel overheerst.",
+        "uo": [
+         "Koos je octaan? Octaan is een alkaan uit benzine zonder functionele groep. Het kan geen waterstofbruggen vormen en mengt dus niet met water.",
+         "Koos je hexaan? Hexaan heeft geen functionele groep en is volledig hydrofoob. Het lost nauwelijks op in water.",
+         "Koos je hexaan-1-ol? Die heeft wel een OH-groep, maar ook een keten van zes C-atomen. Het hydrofobe deel overheerst.",
+         "Klopt: methanol heeft maar één C-atoom en een OH-groep. Het mengt in elke verhouding met water."
+        ],
+        "uh": "Korte keten + OH = goed oplosbaar."
+       },
+       {
+        "v": "Wat gebruik je als ontsmettingsmiddel op een wondje?",
+        "o": [
+         "Een oplossing van methaanamine",
+         "Zuiver ethaan",
+         "Een oplossing van ethanol of propaan-2-ol",
+         "Chloorethaan in water"
+        ],
+        "c": 2,
+        "d": 1,
+        "s": 1,
+        "u": "Alcoholen zoals ethanol en isopropanol worden gebruikt om te ontsmetten.",
+        "uo": [
+         "Koos je methaanamine? Dat is een basische, stinkende stof. Die gebruik je niet op de huid.",
+         "Koos je ethaan? Ethaan is een gas zonder functionele groep. Het lost niet op in water en ontsmet niet.",
+         "Klopt: ontsmettingsalcohol bevat ethanol of propaan-2-ol. Die alcoholen doden bacteriën en verdampen snel.",
+         "Koos je chloorethaan? Dat werd vroeger als koudespray gebruikt om pijn te verdoven, niet als ontsmettingsmiddel."
+        ],
+        "uh": "Alcohol op de huid = ontsmetten."
+       },
+       {
+        "v": "Welke vergelijking geeft weer wat er gebeurt als ethaanzuur in water oplost?",
+        "o": [
+         "CH₃COOH + H₂O → CH₃CH₂OH + O₂",
+         "CH₃COOH + H₂O ⇄ CH₃COO⁻ + H₃O⁺",
+         "CH₃COOH ⇄ CH₃CO⁺ + OH⁻",
+         "CH₃COOH + H₂O ⇄ CH₃COOH₂⁺ + OH⁻"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 2,
+        "u": "Een carbonzuur staat H⁺ af: ethanoaat en H₃O⁺. Zwak zuur, dus ⇄.",
+        "uo": [
+         "Koos je ethanol en zuurstof? Bij oplossen ontstaat geen ethanol. Het zuur staat alleen een H⁺ af.",
+         "Klopt: de H van de COOH-groep gaat naar water. Er ontstaan ethanoaat-ionen en H₃O⁺. Omdat het een zwak zuur is, schrijf je een evenwichtspijl.",
+         "Koos je CH₃CO⁺ en OH⁻? Dan zou het zuur OH⁻ afgeven, maar dan is het een base. Een zuur geeft H⁺ af.",
+         "Koos je CH₃COOH₂⁺ en OH⁻? Dan neemt azijnzuur een H⁺ op en gedraagt het zich als base. Het is andersom."
+        ],
+        "uh": "Carbonzuur in water: H⁺ naar water, evenwicht."
+       },
+       {
+        "v": "Wat hebben methanol, ethanol en propaan-1-ol gemeen?",
+        "o": [
+         "Ze hebben allemaal een OH-groep en horen bij de alcoholen",
+         "Ze hebben allemaal evenveel koolstofatomen",
+         "Ze zijn allemaal carbonzuren",
+         "Ze hebben allemaal een dubbele binding"
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 0,
+        "u": "Zelfde functionele groep = zelfde stofklasse.",
+        "uo": [
+         "Klopt: alle drie hebben een OH-groep aan een koolstofketen. Ze vormen samen een homologe reeks van alcoholen en lijken in hun gedrag op elkaar.",
+         "Koos je evenveel koolstofatomen? Meth, eth en prop staan voor 1, 2 en 3 C-atomen. Wat ze gemeen hebben is de OH-groep.",
+         "Koos je carbonzuren? Carbonzuren hebben een COOH-groep en de uitgang -zuur. Deze stoffen eindigen op -ol en zijn alcoholen.",
+         "Koos je dubbele binding? Een dubbele binding geeft de uitgang -een. Deze stoffen hebben alleen enkele bindingen en een OH-groep."
+        ],
+        "uh": "Zelfde groep, zelfde familie."
+       },
+       {
+        "v": "Welke stof is X?",
+        "o": [
+         "Een alkaan",
+         "Een carbonzuur",
+         "Een alcohol",
+         "Een amine"
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 3,
+        "u": "Basisch in water, ammoniakachtige geur, bevat N: amine.",
+        "uo": [
+         "Koos je alkaan? Een alkaan lost nauwelijks op in water en verandert de pH niet. Bovendien bevat stof X stikstof.",
+         "Koos je carbonzuur? Een carbonzuur maakt water zuur, met een pH onder 7. Deze oplossing heeft een pH van 11 en is dus basisch.",
+         "Koos je alcohol? Een alcohol is neutraal in water en bevat geen stikstof. De hoge pH en de geur wijzen op een amine.",
+         "Klopt: de stof bevat stikstof, ruikt naar ammoniak en maakt de oplossing basisch. Dat zijn precies de kenmerken van een amine met een NH₂-groep."
+        ],
+        "uh": "Basisch + stikstof = amine.",
+        "ctx": "In een lab staat een fles met vloeistof X. Een leerling ruikt er voorzichtig aan door te wuiven: het ruikt scherp, een beetje naar ammoniak en vis. Een paar druppels in water geven een pH van 11. Uit een analyse blijkt dat X bestaat uit koolstof, waterstof en stikstof."
+       }
+      ],
+      "oe": [
+       {
+        "bron": "Examenstijl",
+        "ctx": "Citroenzuur zit in citroenen en wordt in limonade gebruikt. De structuurformule laat een keten van drie C-atomen zien. Aan elk van de twee buitenste C-atomen zit een CH₂ met daaraan een COOH-groep, en aan het middelste C-atoom zitten een OH-groep en nog een COOH-groep.",
+        "v": "Noem de functionele groepen in citroenzuur met het aantal van elk, en leg uit waarom een oplossing van citroenzuur zuur is.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Drie carboxylgroepen en één hydroxylgroep (1p). De carboxylgroepen kunnen een H⁺ afstaan aan water, waardoor H₃O⁺ ontstaat en de pH daalt (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Uit Binas: ethaan kookt bij −89 °C, ethanol bij 78 °C. Beide stoffen hebben twee koolstofatomen en ongeveer dezelfde molecuulmassa (30 en 46 u). Een leerling denkt dat het verschil komt doordat ethanol zwaarder is.",
+        "v": "Leg uit wat de belangrijkste oorzaak is van het verschil in kookpunt.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Ethanol heeft een OH-groep en kan waterstofbruggen vormen tussen de moleculen; ethaan niet (1p). Om ethanol te laten koken moeten die bruggen verbroken worden, daarvoor is veel meer energie nodig dan voor de vanderwaalskrachten bij ethaan (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een leerling heeft drie flesjes met de formules CH₃CH₂OH, CH₃COOH en CH₃CH₂NH₂, maar de etiketten met de namen zijn eraf. Ze heeft universeel indicatorpapier en water.",
+        "v": "Geef de namen van de drie stoffen en beschrijf hoe ze met indicatorpapier kan bepalen welk flesje welke stof bevat.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Ethanol, ethaanzuur en ethaanamine (1p). Los een beetje van elk op in water en meet de pH: ethaanzuur geeft een pH onder 7, ethaanamine boven 7 en ethanol ongeveer 7 (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Glycine (H₂N−CH₂−COOH) is het kleinste aminozuur. In het lichaam worden aminozuren aan elkaar gekoppeld tot eiwitten. Een leerling zegt: \"Glycine is een zuur, dus een oplossing ervan is altijd zuur.\"",
+        "v": "Leg uit welke twee functionele groepen glycine heeft en waarom de uitspraak van de leerling te kort door de bocht is.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Glycine heeft een aminogroep en een carboxylgroep (1p). De carboxylgroep is zuur maar de aminogroep is basisch; het molecuul heeft dus zowel een zure als een basische groep, en de oplossing is niet zomaar zuur (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Hexaan-1-ol (C₆H₁₃OH) en methanol (CH₃OH) zijn allebei alcoholen. Methanol mengt in elke verhouding met water. Van hexaan-1-ol lost maar ongeveer 0,6 gram op in 100 mL water.",
+        "v": "Leg met de bouw van de moleculen uit waarom methanol veel beter oplost in water dan hexaan-1-ol.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Beide hebben één OH-groep die waterstofbruggen met water kan vormen (1p). Hexaan-1-ol heeft een lange hydrofobe koolstofketen die geen waterstofbruggen vormt; bij methanol overheerst het hydrofiele deel (1p)."
+       }
+      ]
      }
     ]
    },
