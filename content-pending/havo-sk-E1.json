@@ -1,0 +1,688 @@
+{
+ "id": "E1",
+ "lo": "sk.E.1",
+ "gs": 2,
+ "naam": "Grondstoffen, materialen en industrie",
+ "beschrijving": "Je beschrijft de weg van grondstof via tussenproducten naar eindproduct, leest en tekent blokschema's met recirculatie, legt fractionele destillatie en kraken van aardolie uit, berekent het rendement en kiest tussen batch- en continuprocessen.",
+ "ceStatus": "CE",
+ "binas": "",
+ "val": "",
+ "onderwerpen": [
+  "Grondstof, tussenproduct en eindproduct",
+  "Blokschema lezen en tekenen",
+  "Aardolie scheiden: fractionele destillatie",
+  "Kraken: grote moleculen kleiner maken",
+  "Rendement berekenen",
+  "Batch- en continuprocessen"
+ ],
+ "sam": "Een productieketen gaat van grondstof via tussenproducten naar eindproduct. Een blokschema heeft blokken (bewerkingen) en pijlen (stofstromen); een terugpijl is recirculatie. Aardolie wordt op kookpunt gescheiden in fracties: klein bovenin, groot onderin. Kraken splitst lange ketens in een korter alkaan en een alkeen. Rendement = werkelijk / theoretisch × 100%. Batch = porties, continu = doorstromen.",
+ "begrippen": [
+  {
+   "t": "Grondstof",
+   "d": "Stof uit de natuur waarmee een productieketen begint, zoals aardolie of steenzout."
+  },
+  {
+   "t": "Tussenproduct",
+   "d": "Stof die in een fabriek gemaakt wordt om verder te verwerken tot een ander product."
+  },
+  {
+   "t": "Eindproduct",
+   "d": "Het product aan het eind van de keten dat de klant gebruikt."
+  },
+  {
+   "t": "Blokschema",
+   "d": "Schema van een proces met blokken voor bewerkingen en pijlen voor stofstromen."
+  },
+  {
+   "t": "Recirculatie",
+   "d": "Het terugvoeren van stoffen die niet hebben gereageerd naar de reactor."
+  },
+  {
+   "t": "Fractionele destillatie",
+   "d": "Scheiding van aardolie in fracties met verschillende kookpunttrajecten in een destillatietoren."
+  },
+  {
+   "t": "Fractie",
+   "d": "Deel van aardolie met moleculen van ongeveer dezelfde grootte en hetzelfde kookpunttraject."
+  },
+  {
+   "t": "Kraken",
+   "d": "Splitsen van grote koolwaterstofmoleculen in kleinere alkanen en alkenen bij hoge temperatuur."
+  },
+  {
+   "t": "Rendement",
+   "d": "Werkelijke opbrengst gedeeld door theoretische opbrengst, keer 100%."
+  },
+  {
+   "t": "Batchproces",
+   "d": "Productieproces dat in porties wordt uitgevoerd: vullen, reageren, legen."
+  },
+  {
+   "t": "Continuproces",
+   "d": "Productieproces waarbij voortdurend grondstoffen erin en producten eruit gaan."
+  }
+ ],
+ "sv": [
+  {
+   "v": "Wat is een grondstof in de chemische industrie?",
+   "o": [
+    "Een katalysator die steeds opnieuw wordt gebruikt",
+    "Het eindproduct dat in de winkel ligt",
+    "Een stof uit de natuur waarmee het proces begint",
+    "Het afval dat aan het eind van het proces overblijft"
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 0,
+   "u": "Grondstof = beginmateriaal uit de natuur, zoals aardolie, aardgas, zout of hout.",
+   "uo": [
+    "Koos je katalysator? Een katalysator versnelt een reactie en wordt niet verbruikt. Een grondstof wordt juist omgezet in producten.",
+    "Koos je eindproduct? Dat staat aan het eind van de keten, zoals een plastic tasje. De grondstof staat aan het begin.",
+    "Klopt: een grondstof haal je uit de natuur, zoals aardolie, aardgas, steenzout of hout. Daar begint de productieketen mee.",
+    "Koos je afval? Afval is wat overblijft na het proces. Een grondstof is wat je erin stopt. Aardolie, zout en hout zijn voorbeelden van grondstoffen."
+   ],
+   "uh": "Grondstof = begin van de keten, uit de natuur."
+  },
+  {
+   "v": "Wat is etheen in de keten aardolie → nafta → etheen → polyetheen → plastic tasje?",
+   "o": [
+    "Een grondstof",
+    "Een tussenproduct",
+    "Een eindproduct",
+    "Een bijproduct zonder waarde"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 0,
+   "u": "Etheen wordt gemaakt en daarna weer verder verwerkt: tussenproduct.",
+   "uo": [
+    "Koos je grondstof? De grondstof is aardolie, die uit de natuur komt. Etheen wordt in een fabriek gemaakt.",
+    "Klopt: etheen wordt uit nafta gemaakt en daarna verder verwerkt tot polyetheen. Een stof die gemaakt wordt om er iets anders van te maken, is een tussenproduct.",
+    "Koos je eindproduct? Het eindproduct is het tasje dat de consument gebruikt. Etheen wordt nog verder verwerkt.",
+    "Koos je afvalstof? Etheen is juist een waardevolle stof die bewust wordt gemaakt als bouwsteen voor plastic."
+   ],
+   "uh": "Gemaakt én weer verwerkt = tussenproduct."
+  },
+  {
+   "v": "Welke stof in deze keten is de grondstof en welke het eindproduct?",
+   "o": [
+    "Grondstof: steenzout; eindproduct: de pvc-buis",
+    "Grondstof: chloor; eindproduct: chlooretheen",
+    "Grondstof: etheen; eindproduct: pvc-korrels",
+    "Grondstof: de pvc-buis; eindproduct: steenzout"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 0,
+   "u": "Steenzout komt uit de grond; de buis wordt verkocht en gebruikt.",
+   "uo": [
+    "Klopt: steenzout wordt uit de bodem gewonnen en is dus de grondstof. De pvc-buis is het product dat de klant koopt. Chloor, chlooretheen en pvc-korrels zijn tussenproducten.",
+    "Koos je chloor? Chloor wordt in een fabriek gemaakt uit zout. Het is een tussenproduct, net als chlooretheen.",
+    "Koos je etheen? Etheen wordt ook gemaakt, uit aardolie. De korrels worden daarna nog tot een buis gevormd.",
+    "Koos je de buis als grondstof? Het is andersom: de keten begint bij het zout uit de grond en eindigt bij de buis."
+   ],
+   "uh": "Uit de natuur = grondstof; bij de klant = eindproduct.",
+   "ctx": "Voor pvc-buizen begint de keten bij steenzout uit de bodem in Twente. Uit zout wordt via elektrolyse chloor gemaakt. Chloor reageert met etheen tot chlooretheen. Chlooretheen wordt gepolymeriseerd tot pvc-korrels, en die worden in een andere fabriek gesmolten en tot buizen geperst."
+  },
+  {
+   "v": "Wat stelt een rechthoek in een blokschema voor?",
+   "o": [
+    "De prijs van het product",
+    "Een stof die het proces in gaat",
+    "De temperatuur van het proces",
+    "Een ruimte waarin een bewerking plaatsvindt"
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 1,
+   "u": "Blokken = ruimtes/bewerkingen; pijlen = stofstromen.",
+   "uo": [
+    "Koos je prijs? Een blokschema laat de stofstromen zien, niet de kosten. Kosten komen er niet in voor; het gaat om wat waarheen stroomt.",
+    "Koos je stof? Stoffen staan bij de pijlen, niet in de blokken. Een blok is een bewerking. Bij de pijl schrijf je welke stoffen erin zitten.",
+    "Koos je temperatuur? Die kan erbij geschreven staan, maar het blok zelf stelt de ruimte voor.",
+    "Klopt: in een blokschema is elke rechthoek een ruimte waar iets gebeurt, zoals een reactor of een scheidingsruimte. De pijlen laten zien welke stoffen erin en eruit gaan."
+   ],
+   "uh": "Blok = bewerking, pijl = stofstroom."
+  },
+  {
+   "v": "Waarom loopt er in het blokschema van een ammoniakfabriek een pijl terug naar de reactor?",
+   "o": [
+    "De pijl laat zien dat de reactor afkoelt",
+    "Ammoniak moet nog een keer reageren",
+    "Stikstof en waterstof die niet reageerden, gaan terug",
+    "Afval wordt teruggestort in de reactor"
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 1,
+   "u": "Recirculatie: niet-omgezette beginstoffen gaan terug naar de reactor.",
+   "uo": [
+    "Koos je afkoelen? Een pijl in een blokschema is een stofstroom, geen temperatuurverandering. Een terugpijl betekent dat er stof opnieuw gebruikt wordt.",
+    "Koos je ammoniak nog een keer? Ammoniak is het product en wordt juist afgetapt. Wat teruggaat zijn de beginstoffen.",
+    "Klopt: in de reactor wordt maar een deel van stikstof en waterstof omgezet. Na het afscheiden van ammoniak gaat de rest terug: recirculatie. Zo gaat er geen grondstof verloren.",
+    "Koos je afval? Wat teruggaat is geen afval, maar bruikbare beginstof die nog niet gereageerd heeft."
+   ],
+   "uh": "Terugpijl = recirculatie van beginstoffen."
+  },
+  {
+   "v": "Welke stoffen gaan door stroom 3?",
+   "o": [
+    "Glucose en gist",
+    "Ethanol en water",
+    "Alleen ethanol",
+    "Ethanol, water en koolstofdioxide"
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 1,
+   "u": "Na vergisting (reactor) gaat het mengsel ethanol + water naar de destillatie.",
+   "uo": [
+    "Koos je glucose en gist? Die gaan via stroom 1 de vergistingstank in. Na de vergisting is de glucose omgezet.",
+    "Klopt: in de vergistingstank ontstaat een mengsel van ethanol en water; het CO₂ ontsnapt via stroom 2. Dat mengsel gaat naar de destillatiekolom, waar het gescheiden wordt.",
+    "Koos je alleen ethanol? Zuivere ethanol komt pas uit de destillatiekolom (stroom 4). Ervoor zit er nog water bij.",
+    "Koos je ook koolstofdioxide? Het gas verlaat de vergistingstank al via stroom 2 en gaat dus niet mee naar de destillatie."
+   ],
+   "uh": "Volg de pijlen: wat gaat erin, wat komt eruit.",
+   "ctx": "Blokschema van een bio-ethanolfabriek: stroom 1 (glucose-oplossing en gist) gaat de vergistingstank in. Uit de tank gaat stroom 2 (koolstofdioxide) naar buiten en stroom 3 naar de destillatiekolom. Uit de kolom komen stroom 4 (ethanol) en stroom 5 (water met resten gist)."
+  },
+  {
+   "v": "Wat moet er bij de pijl van S terug naar R staan?",
+   "o": [
+    "De stoffen die niet hebben gereageerd",
+    "Het eindproduct dat verkocht wordt",
+    "De katalysator die in de reactor zit",
+    "Alle stoffen die in de reactor zijn gegaan"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 1,
+   "u": "Recirculatiestroom = niet-omgezette beginstof.",
+   "uo": [
+    "Klopt: de terugpijl bevat de beginstoffen die in de reactor niet zijn omgezet. Die worden in S van het product gescheiden en gaan terug naar R.",
+    "Koos je eindproduct? Het product verlaat S via een andere pijl naar buiten. Het gaat niet terug naar de reactor.",
+    "Koos je katalysator? Een vaste katalysator blijft in de reactor zitten en hoeft niet rond te gaan.",
+    "Koos je alle stoffen? Het product is er juist uit gehaald. Alleen wat niet heeft gereageerd, gaat terug."
+   ],
+   "uh": "Terugpijl: wat niet reageerde.",
+   "ctx": "Bij de productie van methanol uit CO en H₂ wordt in de reactor maar ongeveer een kwart van de gassen omgezet. Het mengsel gaat naar een koeler, waar methanol vloeibaar wordt en wordt afgetapt. Een leerling moet het blokschema tekenen met reactor R en scheidingsruimte S en alle stofstromen benoemen."
+  },
+  {
+   "v": "Op welk verschil berust fractionele destillatie van aardolie?",
+   "o": [
+    "Verschil in deeltjesgrootte zoals bij filtreren",
+    "Verschil in kleur",
+    "Verschil in oplosbaarheid in water",
+    "Verschil in kookpunt"
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 2,
+   "u": "Fracties met verschillende kookpunttrajecten condenseren op verschillende hoogten.",
+   "uo": [
+    "Koos je deeltjesgrootte? Dat is filtreren, voor vaste stof in vloeistof. Aardolie is een mengsel van vloeistoffen en opgeloste gassen.",
+    "Koos je kleur? De meeste fracties zijn kleurloos tot geel. Scheiden gebeurt op kookpunt. Kleur zegt niets over hoe hoog een stof in de toren komt.",
+    "Koos je oplosbaarheid in water? Alkanen lossen geen van alle op in water. Dat helpt dus niet bij scheiden.",
+    "Klopt: aardolie is een mengsel van stoffen met verschillende kookpunten. In de destillatietoren condenseren ze op verschillende hoogtes, afhankelijk van hun kookpunt."
+   ],
+   "uh": "Destilleren = scheiden op kookpunt."
+  },
+  {
+   "v": "Waar in de destillatietoren komen de fracties met het laagste kookpunt eruit?",
+   "o": [
+    "In het midden",
+    "Onderin",
+    "Bovenin",
+    "Overal evenveel"
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 2,
+   "u": "Bovenin is het het koelst; alleen stoffen met een laag kookpunt komen zo hoog.",
+   "uo": [
+    "Koos je midden? Daar komen fracties met een gemiddeld kookpunt, zoals kerosine en diesel.",
+    "Koos je onderin? Daar is het het heetst. Daar blijft het residu met het hoogste kookpunt over, zoals bitumen.",
+    "Klopt: de toren is onderin het heetst en bovenin het koelst. Stoffen met een laag kookpunt, zoals gassen en benzine, blijven damp tot ze bovenin komen.",
+    "Koos je overal? Dan zou er niets gescheiden worden. Elke fractie condenseert op een eigen hoogte."
+   ],
+   "uh": "Laag kookpunt = hoog in de toren."
+  },
+  {
+   "v": "Welke fractie bevat vooral moleculen met 10 tot 14 koolstofatomen?",
+   "o": [
+    "Gas",
+    "Kerosine",
+    "Bitumen",
+    "Stookolie"
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 2,
+   "u": "Gas C1–C4, benzine/nafta C5–C10, kerosine C10–C14, diesel C14–C20, residu daarboven.",
+   "uo": [
+    "Koos je gas? Dat zijn de kleinste moleculen, met 1 tot 4 C-atomen, zoals propaan en butaan. Kerosine zit hoger in de keten, met 10 tot 14 C-atomen.",
+    "Klopt: kerosine (vliegtuigbrandstof) bestaat vooral uit alkanen met 10 tot 14 C-atomen en kookt tussen ongeveer 180 en 250 °C.",
+    "Koos je bitumen? Dat is het zware residu onderin, met moleculen van ruim 30 C-atomen. Het wordt gebruikt voor asfalt.",
+    "Koos je stookolie? Die bestaat uit grotere moleculen, meer dan 20 C-atomen, en kookt veel hoger."
+   ],
+   "uh": "Hoe meer C, hoe lager in de toren.",
+   "ctx": "Een raffinaderij in Rotterdam scheidt ruwe aardolie in een destillatietoren. Van boven naar beneden komen eruit: gas, benzine en nafta, kerosine, diesel, stookolie en onderin bitumen. Een leerling wil weten welke fractie gebruikt wordt als vliegtuigbrandstof."
+  },
+  {
+   "v": "Waarom moet aardolie eerst verhit worden voordat het de destillatietoren in gaat?",
+   "o": [
+    "Zodat de meeste stoffen verdampen",
+    "Om alle stoffen te laten verbranden",
+    "Om het water eruit te laten bevriezen",
+    "Zodat de stoffen met elkaar reageren tot nieuwe stoffen"
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 2,
+   "u": "Verdampen, dan op verschillende hoogten condenseren.",
+   "uo": [
+    "Klopt: de aardolie wordt verhit tot ongeveer 400 °C. De meeste stoffen verdampen en stijgen in de toren. Hoe hoger ze komen, hoe koeler het wordt, en daar condenseren ze.",
+    "Koos je verbranden? Er komt geen zuurstof bij; de stoffen moeten juist heel blijven om ze te kunnen gebruiken.",
+    "Koos je bevriezen? Bij verhitten bevriest niets. Water wordt vooraf apart gehaald. Verhitten is bedoeld om de stoffen te laten verdampen.",
+    "Koos je reageren? Bij destillatie veranderen de stoffen niet. Het is een scheidingsmethode, geen reactie."
+   ],
+   "uh": "Verdampen → stijgen → condenseren."
+  },
+  {
+   "v": "Welke verandering ondergaan de moleculen bij het kraken van aardolie?",
+   "o": [
+    "Water wordt uit de aardolie verwijderd",
+    "Kleine moleculen worden aan elkaar gekoppeld",
+    "De aardolie wordt verbrand voor energie",
+    "Grote moleculen worden gesplitst"
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 3,
+   "u": "Kraken: lange alkanen → kortere alkanen + alkenen.",
+   "uo": [
+    "Koos je water verwijderen? Dat gebeurt voor de destillatie. Kraken is een chemische reactie die ketens breekt.",
+    "Koos je koppelen? Dat is polymerisatie, het omgekeerde. Kraken maakt moleculen juist kleiner. Bij kraken breken lange ketens in kortere stukken.",
+    "Koos je verbranden? Bij kraken komt geen zuurstof te pas; de moleculen worden alleen gesplitst.",
+    "Klopt: bij kraken worden lange koolstofketens bij hoge temperatuur (en vaak met een katalysator) in kortere stukken gebroken. Zo maak je meer benzine en alkenen zoals etheen."
+   ],
+   "uh": "Kraken = grote moleculen breken."
+  },
+  {
+   "v": "Waarom kraakt een raffinaderij zware fracties?",
+   "o": [
+    "Zware fracties verdampen te snel",
+    "Zware fracties zijn giftiger dan de lichte fracties uit de toren",
+    "De vraag naar benzine en etheen is groter dan het aanbod",
+    "Kraken maakt de aardolie zuiverder van zwavel"
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 3,
+   "u": "Vraag naar lichte fracties > aanbod; zware fracties zijn minder waard.",
+   "uo": [
+    "Koos je te snel verdampen? Zware fracties verdampen juist moeilijk door hun hoge kookpunt.",
+    "Koos je giftig? Ook lichte fracties zijn schadelijk. De reden om te kraken is economisch: vraag en aanbod.",
+    "Klopt: aardolie bevat veel zware fracties, terwijl er vooral vraag is naar benzine en naar alkenen als grondstof voor plastic. Door te kraken maak je van minder waardevolle zware fracties lichtere, waardevollere stoffen.",
+    "Koos je zwavel? Zwavel wordt in een apart proces verwijderd (ontzwavelen). Kraken gaat over ketenlengte."
+   ],
+   "uh": "Kraken: zwaar en goedkoop → licht en waardevol."
+  },
+  {
+   "v": "Welke vergelijking geeft het kraken van decaan tot octaan en etheen goed weer?",
+   "o": [
+    "C₁₀H₂₂ → C₈H₁₆ + C₂H₆",
+    "C₁₀H₂₂ → C₈H₁₈ + C₂H₄",
+    "C₁₀H₂₀ → C₈H₁₈ + C₂H₂",
+    "C₁₀H₂₂ + O₂ → C₈H₁₈ + C₂H₄"
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 3,
+   "u": "Atomen tellen: C 10 = 8 + 2; H 22 = 18 + 4.",
+   "uo": [
+    "Koos je C₈H₁₆ + C₂H₆? De atomen kloppen, maar dan ontstaat octeen en ethaan. De vraag noemt octaan en etheen.",
+    "Klopt: links 10 C en 22 H. Rechts octaan (C₈H₁₈) en etheen (C₂H₄): samen 10 C en 22 H. Bij kraken ontstaan een kleiner alkaan en een alkeen.",
+    "Koos je C₁₀H₂₀? Decaan is een alkaan: C₁₀H₂₂. C₁₀H₂₀ is deceen. Begin dus met de juiste formule van het alkaan dat gekraakt wordt.",
+    "Koos je met O₂? Kraken gebeurt zonder zuurstof. Met zuurstof zou de stof verbranden. Kraken is splitsen door hitte, niet reageren met lucht."
+   ],
+   "uh": "Kraken: alkaan → kleiner alkaan + alkeen, atomen tellen.",
+   "ctx": "Bij het katalytisch kraken van een zware fractie worden onder andere decaanmoleculen (C₁₀H₂₂) gesplitst. In een bepaald geval ontstaan uit één molecuul decaan één molecuul octaan en één molecuul etheen. Een leerling moet de kloppende reactievergelijking geven."
+  },
+  {
+   "v": "Hoe toon je aan dat er bij het kraken van paraffine alkenen zijn ontstaan?",
+   "o": [
+    "Leid het gas door broomwater; het ontkleurt",
+    "Leid het gas door kalkwater; het wordt troebel",
+    "Houd een gloeiende spaan in het gas; die vlamt op",
+    "Meet de pH van het gas met droog papier"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 3,
+   "u": "Alkenen (C=C) ontkleuren broomwater door additie.",
+   "uo": [
+    "Klopt: bij kraken ontstaan alkenen met een dubbele binding. Die reageren snel met broom door additie, zodat het broomwater ontkleurt. Paraffine zelf (alkanen) doet dat niet.",
+    "Koos je kalkwater? Kalkwater toont CO₂ aan. Bij kraken zonder zuurstof ontstaat geen CO₂. Kalkwater zegt dus niets over alkenen in het gas.",
+    "Koos je gloeiende spaan? Daarmee toon je zuurstof aan. Bij kraken ontstaat geen zuurstof. Een spaan zegt dus niets over dubbele bindingen.",
+    "Koos je pH met droog papier? Alkenen zijn niet zuur of basisch, en droog papier reageert niet op gassen."
+   ],
+   "uh": "Alkeen aantonen = broomwater ontkleurt.",
+   "ctx": "In het lab verhit een leerling paraffine (een mengsel van lange alkanen) over gloeiende porseleinscherven. Er ontstaat een gas dat ze opvangt. Ze wil bewijzen dat in dat gas alkenen zitten en heeft broomwater, kalkwater, een houtspaan en indicatorpapier."
+  },
+  {
+   "v": "Hoe bereken je het rendement van een productieproces?",
+   "o": [
+    "Aantal mol product keer de molaire massa",
+    "Theoretische gedeeld door werkelijke opbrengst, keer 100% plus verlies",
+    "Massa van het product min massa van de grondstof",
+    "Werkelijke gedeeld door theoretische opbrengst, keer 100%"
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 4,
+   "u": "Rendement = (werkelijke / theoretische opbrengst) × 100%.",
+   "uo": [
+    "Koos je mol keer molaire massa? Zo reken je een massa uit, niet een rendement. Voor een rendement vergelijk je twee opbrengsten met elkaar.",
+    "Koos je theoretisch gedeeld door werkelijk? Dan krijg je meer dan 100%. De werkelijke opbrengst staat boven de streep.",
+    "Koos je massa min massa? Dat geeft geen percentage en zegt niets over hoe goed het proces werkt.",
+    "Klopt: je vergelijkt hoeveel product je echt krijgt met hoeveel je maximaal zou kunnen krijgen volgens de reactievergelijking."
+   ],
+   "uh": "Rendement = echt / maximaal × 100%."
+  },
+  {
+   "v": "Een fabriek kan volgens de berekening 500 kg product maken, maar haalt 420 kg. Wat is het rendement?",
+   "o": [
+    "80%",
+    "119%",
+    "84%",
+    "16%"
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 4,
+   "u": "420 / 500 × 100% = 84%.",
+   "uo": [
+    "Koos je 80%? Reken na: 420 / 500 = 0,84. Dat is 84%, niet 80%. Een kleine rekenfout geeft hier al een ander antwoord.",
+    "Koos je 119%? Dan heb je 500 / 420 gedeeld. Een rendement kan niet boven 100% liggen. De werkelijke opbrengst hoort boven de breukstreep.",
+    "Klopt: deel de werkelijke opbrengst door de theoretische: 420 / 500 = 0,84, dus 84%.",
+    "Koos je 16%? Dat is het deel dat verloren gaat: 100% − 84%. Het rendement is wat je wel haalt."
+   ],
+   "uh": "Werkelijk / theoretisch."
+  },
+  {
+   "v": "Bereken het rendement van deze bereiding.",
+   "o": [
+    "67%",
+    "75%",
+    "133%",
+    "88%"
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 4,
+   "u": "10,0 g CaCO₃ = 0,0999 mol → max 0,0999 mol CO₂ = 4,40 g; 3,30 / 4,40 = 75%.",
+   "uo": [
+    "Koos je 67%? Reken de theoretische opbrengst na: 0,0999 mol × 44,01 g/mol = 4,40 g, niet 4,95 g.",
+    "Klopt: 10,0 / 100,1 = 0,0999 mol CaCO₃, dus maximaal 0,0999 mol CO₂ = 0,0999 × 44,01 = 4,40 g. Rendement: 3,30 / 4,40 × 100% = 75%.",
+    "Koos je 133%? Dan heb je de breuk omgedraaid: 4,40 / 3,30. Werkelijke opbrengst staat boven.",
+    "Koos je 88%? Controleer de molaire massa van CO₂: 44,01 g/mol. Met een verkeerde massa krijg je een verkeerde theoretische opbrengst."
+   ],
+   "uh": "Eerst de theoretische opbrengst uitrekenen met de molverhouding.",
+   "ctx": "Een leerling verhit 10,0 g kalk (CaCO₃, M = 100,1 g/mol) tot het volledig ontleedt: CaCO₃ → CaO + CO₂. Ze vangt het gas op en meet 3,30 g CO₂ (M = 44,01 g/mol). Een deel van het gas is ontsnapt langs de stop."
+  },
+  {
+   "v": "Waarom is het rendement in de praktijk bijna altijd lager dan 100%?",
+   "o": [
+    "Verlies bij scheiden, nevenreacties en evenwichten",
+    "De wet van behoud van massa geldt niet in een grote fabriek",
+    "Katalysatoren verbruiken een deel van het product",
+    "De theoretische opbrengst is altijd te laag berekend"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 4,
+   "u": "Verliezen bij scheiden, nevenreacties, onvolledige omzetting (evenwicht).",
+   "uo": [
+    "Klopt: een deel van het product blijft achter in apparatuur of filters, er kunnen nevenreacties optreden en bij een evenwicht wordt niet alles omgezet. Daardoor haal je minder dan het maximum.",
+    "Koos je behoud van massa? Die wet geldt altijd. De massa verdwijnt niet, maar komt deels in andere stoffen of verliezen terecht.",
+    "Koos je katalysatoren? Een katalysator wordt niet verbruikt en verbruikt ook geen product.",
+    "Koos je te laag berekend? De theoretische opbrengst is juist het maximum. De werkelijke opbrengst valt lager uit."
+   ],
+   "uh": "Verlies, nevenreacties, evenwicht.",
+   "ctx": "Bij de productie van ethylethanoaat haalt een fabriek een rendement van 64%. Het proces bestaat uit een reactor waarin een evenwicht ontstaat, een scheidingsstap waarbij wat ester achterblijft in het waswater, en een droogstap. Een stagiair vraagt waarom het rendement niet 100% kan zijn."
+  },
+  {
+   "v": "Hoe werkt een continuproces?",
+   "o": [
+    "Een proces zonder reactor",
+    "Een proces dat in porties wordt uitgevoerd, telkens opnieuw vanaf het begin",
+    "Een proces dat alleen overdag draait",
+    "Grondstoffen gaan er steeds in, producten komen er steeds uit"
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 5,
+   "u": "Continu: aanvoer en afvoer gaan steeds door.",
+   "uo": [
+    "Koos je zonder reactor? Ook continuprocessen hebben reactoren. Het verschil zit in de manier van aanvoeren.",
+    "Koos je porties? Dat is een batchproces: vullen, laten reageren, leegmaken en opnieuw beginnen.",
+    "Koos je alleen overdag? Continuprocessen draaien juist dag en nacht door, vaak jarenlang.",
+    "Klopt: bij een continuproces stromen de grondstoffen zonder onderbreking erin en komen de producten er steeds uit. Zo werken grote fabrieken, zoals raffinaderijen."
+   ],
+   "uh": "Continu = steeds stroom erin en eruit."
+  },
+  {
+   "v": "Waarom wordt een medicijn vaak in een batchproces gemaakt?",
+   "o": [
+    "Een batchproces gebruikt geen energie",
+    "Batchprocessen leveren altijd een hoger rendement dan continuprocessen",
+    "Kleine hoeveelheden, en elke portie apart te controleren",
+    "Medicijnen mogen niet in een reactor gemaakt worden"
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 5,
+   "u": "Kleine volumes, hoge zuiverheid, controle per partij.",
+   "uo": [
+    "Koos je geen energie? Ook een batchproces kost energie, bijvoorbeeld om te verwarmen en te roeren.",
+    "Koos je hoger rendement? Het rendement hangt af van de reactie, niet van batch of continu.",
+    "Klopt: van een medicijn heb je relatief weinig nodig, en elke partij moet streng gecontroleerd worden. Bij een batchproces kun je per portie testen en eventueel afkeuren.",
+    "Koos je geen reactor? Medicijnen worden wel in reactoren gemaakt, meestal in roerketels die per portie worden gevuld."
+   ],
+   "uh": "Klein en streng gecontroleerd = batch."
+  },
+  {
+   "v": "Welk proces past het best bij de raffinaderij en welk bij de parfumfabriek?",
+   "o": [
+    "Raffinaderij batch, parfumfabriek continu",
+    "Raffinaderij continu, parfumfabriek batch",
+    "Beide continu, want dat is goedkoper",
+    "Beide batch, want dat is veiliger"
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 5,
+   "u": "Grote, constante stroom → continu. Kleine wisselende partijen → batch.",
+   "uo": [
+    "Koos je andersom? Een raffinaderij kan niet steeds stoppen en opnieuw beginnen; daar is de stroom veel te groot voor.",
+    "Klopt: een raffinaderij verwerkt elke dag enorme hoeveelheden van hetzelfde: continu. De parfumfabriek maakt kleine partijen van steeds wisselende geuren: batch.",
+    "Koos je beide continu? Voor kleine, steeds wisselende geuren is een continuproces onhandig: je zou de hele installatie steeds moeten omzetten.",
+    "Koos je beide batch? Voor tienduizenden tonnen per dag is werken in porties veel te traag en duur."
+   ],
+   "uh": "Groot en gelijk = continu; klein en wisselend = batch.",
+   "ctx": "Een raffinaderij in de Botlek verwerkt elke dag ongeveer 60 000 ton ruwe olie tot steeds dezelfde fracties. Een kleine parfumfabriek in Brabant maakt per week een paar honderd liter geurstof, elke keer een andere geur voor een andere klant."
+  },
+  {
+   "v": "Welke fractie komt helemaal onderin de destillatietoren terecht?",
+   "o": [
+    "Het residu, zoals bitumen",
+    "Het gas voor aanstekers",
+    "De benzine voor auto's",
+    "De kerosine voor vliegtuigen"
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 2,
+   "u": "Onderin: hoogste kookpunt, grootste moleculen.",
+   "uo": [
+    "Klopt: de stoffen met het hoogste kookpunt verdampen niet eens bij 400 °C en blijven onderin achter. Daaruit maak je onder andere bitumen voor asfalt en dakbedekking.",
+    "Koos je gas? Gas heeft het laagste kookpunt en komt helemaal bovenin. Onderin blijven juist de stoffen met het hoogste kookpunt over.",
+    "Koos je benzine? Benzine heeft een laag kookpunt en komt hoog in de toren. Onderin blijven de zwaarste stoffen achter, zoals bitumen.",
+    "Koos je kerosine? Kerosine komt ongeveer halverwege, met moleculen van 10 tot 14 C-atomen."
+   ],
+   "uh": "Onderin = zwaarst = bitumen."
+  },
+  {
+   "v": "Wat stellen de pijlen in een blokschema voor?",
+   "o": [
+    "Welke medewerker de bewerking uitvoert",
+    "De richting waarin de fabriek op het terrein gebouwd is",
+    "Hoe snel de reactie verloopt",
+    "Stofstromen tussen de ruimtes"
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 1,
+   "u": "Pijlen = stofstromen; erbij staat welke stoffen.",
+   "uo": [
+    "Koos je medewerker? Een blokschema gaat alleen over stoffen en bewerkingen. Wie het werk doet, staat er niet in.",
+    "Koos je bouwrichting? Een blokschema is een schematische weergave van het proces, geen plattegrond.",
+    "Koos je snelheid? De snelheid staat niet in een blokschema. De pijlen geven aan waar stoffen naartoe gaan.",
+    "Klopt: elke pijl is een stofstroom. Bij de pijl schrijf je welke stoffen erin zitten, zodat je kunt volgen wat er waarheen gaat."
+   ],
+   "uh": "Pijl = stofstroom."
+  },
+  {
+   "v": "Waarom zoekt de chemische industrie naar andere grondstoffen dan aardolie?",
+   "o": [
+    "Uit aardolie kun je geen plastic maken",
+    "Aardolie bevat geen koolstof",
+    "Aardolie raakt op en het gebruik ervan geeft extra CO₂ in de atmosfeer",
+    "Aardolie is te zuiver om mee te werken"
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 0,
+   "u": "Aardolie is fossiel: eindig en bij gebruik komt fossiel CO₂ vrij.",
+   "uo": [
+    "Koos je geen plastic? Het meeste plastic wordt nu juist uit aardolie gemaakt, via nafta en etheen.",
+    "Koos je geen koolstof? Aardolie bestaat juist vooral uit koolwaterstoffen. Daarom is het zo geschikt als grondstof.",
+    "Klopt: aardolie is in miljoenen jaren ontstaan en raakt op. Als producten uit aardolie uiteindelijk verbranden, komt er CO₂ bij dat lang opgeslagen zat. Daarom zoekt de industrie naar grondstoffen zoals biomassa of gerecycled plastic.",
+    "Koos je te zuiver? Aardolie is een mengsel van duizenden stoffen en moet juist eerst gescheiden worden."
+   ],
+   "uh": "Fossiel = eindig + extra CO₂."
+  },
+  {
+   "v": "Wat is een voordeel van een continuproces ten opzichte van een batchproces?",
+   "o": [
+    "Je kunt elke dag een ander product maken",
+    "Je kunt grote hoeveelheden produceren zonder steeds te stoppen en op te starten",
+    "Er is geen controle op de kwaliteit nodig",
+    "Er zijn geen reactoren nodig"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 5,
+   "u": "Continu = efficiënt voor grote, gelijkblijvende productie.",
+   "uo": [
+    "Koos je elke dag een ander product? Dat is juist een voordeel van een batchproces. Een continu-installatie is gebouwd voor één product.",
+    "Klopt: bij een continuproces hoef je de installatie niet steeds te vullen, op te warmen en leeg te maken. Dat scheelt tijd en energie bij grote hoeveelheden van hetzelfde product.",
+    "Koos je geen controle? Ook bij een continuproces wordt de kwaliteit voortdurend gemeten.",
+    "Koos je geen reactoren? Een continuproces heeft wel reactoren, waar de stoffen doorheen stromen."
+   ],
+   "uh": "Continu: groot en zonder onderbreking."
+  },
+  {
+   "v": "Welke stoffen ontstaan er bij het kraken van een lang alkaan?",
+   "o": [
+    "Kortere alkanen en alkenen",
+    "Alleen kortere alkanen",
+    "Koolstofdioxide en water",
+    "Een polymeer"
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 3,
+   "u": "Bij het breken van een keten ontstaat een alkaan en een alkeen (er is te weinig H voor twee alkanen).",
+   "uo": [
+    "Klopt: als een lange keten breekt, is er niet genoeg waterstof om twee alkanen te maken. Er ontstaan daarom een korter alkaan en een alkeen, zoals etheen of propeen.",
+    "Koos je alleen alkanen? Tel de H-atomen: C₁₀H₂₂ kan niet splitsen in twee alkanen, daarvoor zou je 24 H nodig hebben. Er ontstaat ook een alkeen.",
+    "Koos je CO₂ en water? Die ontstaan bij verbranding met zuurstof. Kraken gebeurt zonder zuurstof.",
+    "Koos je polymeer? Bij kraken worden moleculen juist kleiner, niet groter."
+   ],
+   "uh": "Kraken geeft alkaan + alkeen."
+  },
+  {
+   "v": "Bij 90% rendement maakt een fabriek 2000 kg product. Wat was de theoretische opbrengst?",
+   "o": [
+    "2200 kg",
+    "1800 kg",
+    "2000 kg",
+    "2222 kg"
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 4,
+   "u": "Theoretisch = werkelijk / rendement = 2000 / 0,90 = 2222 kg.",
+   "uo": [
+    "Koos je 2200 kg? Dan heb je 10% bij 2000 opgeteld. Reken met delen: 2000 / 0,90 = 2222 kg.",
+    "Koos je 1800 kg? Dan heb je 90% van 2000 genomen. Maar 2000 kg is de werkelijke opbrengst; de theoretische is groter.",
+    "Koos je 2000 kg? Dat is de werkelijke opbrengst. Bij een rendement onder 100% is de theoretische opbrengst hoger.",
+    "Klopt: rendement = werkelijk / theoretisch, dus theoretisch = 2000 / 0,90 = 2222 kg."
+   ],
+   "uh": "Theoretisch = werkelijk / rendement."
+  }
+ ],
+ "oe": [
+  {
+   "bron": "Examenstijl",
+   "ctx": "Methanol wordt gemaakt uit koolstofmonoxide en waterstof: CO + 2 H₂ ⇄ CH₃OH. In de reactor wordt maar een deel van de gassen omgezet. Het gasmengsel gaat naar een koeler, waar methanol vloeibaar wordt en wordt afgetapt. De overgebleven gassen gaan terug naar de reactor.",
+   "v": "Teken het blokschema met een reactor R en een scheidingsruimte S en zet bij elke stofstroom de stoffen.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Blokken R en S met invoer CO en H₂ naar R (1p). Stroom van R naar S met CO, H₂ en CH₃OH, en CH₃OH als uitvoer van S (1p). Terugstroom van S naar R met CO en H₂ (recirculatie) (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "In een raffinaderij wordt een zware fractie gekraakt. Daarbij wordt onder andere hexadecaan (C₁₆H₃₄) gesplitst. In één geval ontstaan uit één molecuul hexadecaan één molecuul octaan (C₈H₁₈) en twee moleculen van één ander product.",
+   "v": "Leid af welk product dat is en geef de kloppende reactievergelijking.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Rest: C₁₆H₃₄ − C₈H₁₈ = C₈H₁₆, verdeeld over twee moleculen: C₄H₈ (buteen) (1p). C₁₆H₃₄ → C₈H₁₈ + 2 C₄H₈ (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een leerling ontleedt 25,0 g kalk (CaCO₃, M = 100,1 g/mol) door verhitten: CaCO₃ → CaO + CO₂. Na afloop weegt ze 12,9 g calciumoxide (CaO, M = 56,08 g/mol).",
+   "v": "Bereken het rendement van deze proef.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "25,0 / 100,1 = 0,250 mol CaCO₃, dus maximaal 0,250 mol CaO (1p). 0,250 × 56,08 = 14,0 g theoretisch (1p). Rendement = 12,9 / 14,0 × 100% = 92% (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Van boven naar beneden komen uit een destillatietoren: gas, benzine/nafta, kerosine, diesel, stookolie en residu. Een leerling beweert dat in de fractie kerosine maar één stof zit.",
+   "v": "Leg uit waarom de fracties in deze volgorde uit de toren komen en waarom de bewering van de leerling niet klopt.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "De toren is onderin heet en bovenin koel; stoffen met een laag kookpunt (kleine moleculen) condenseren pas hoog, stoffen met een hoog kookpunt (grote moleculen) al laag (1p). Een fractie bevat stoffen met kookpunten binnen een traject, dus kerosine is een mengsel van verschillende alkanen (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een farmaceutisch bedrijf maakt per jaar 500 kg van een nieuw medicijn. Een kunstmestfabriek maakt per jaar 1,2 miljoen ton ammoniak. Beide bedrijven moeten kiezen tussen een batchproces en een continuproces.",
+   "v": "Geef voor beide bedrijven aan welk proces het meest geschikt is en geef een argument.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Medicijn: batch, want kleine hoeveelheid en elke partij moet apart gecontroleerd worden (1p). Ammoniak: continu, want enorme hoeveelheden van één product; niet steeds stoppen en opstarten scheelt tijd en energie (1p)."
+  }
+ ]
+}

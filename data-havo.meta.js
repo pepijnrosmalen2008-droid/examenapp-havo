@@ -1973,7 +1973,31 @@ var VAKKEN = [
     "nSv": 147,
     "nOe": 3,
     "nBeg": 33,
-    "hasSam": true
+    "hasSam": true,
+    "leerdoelen": [
+     {
+      "id": "E1",
+      "lo": "sk.E.1",
+      "gs": 2,
+      "naam": "Grondstoffen, materialen en industrie",
+      "beschrijving": "Je beschrijft de weg van grondstof via tussenproducten naar eindproduct, leest en tekent blokschema's met recirculatie, legt fractionele destillatie en kraken van aardolie uit, berekent het rendement en kiest tussen batch- en continuprocessen.",
+      "ceStatus": "CE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Grondstof, tussenproduct en eindproduct",
+       "Blokschema lezen en tekenen",
+       "Aardolie scheiden: fractionele destillatie",
+       "Kraken: grote moleculen kleiner maken",
+       "Rendement berekenen",
+       "Batch- en continuprocessen"
+      ],
+      "nSv": 28,
+      "nOe": 5,
+      "nBeg": 11,
+      "hasSam": true
+     }
+    ]
    }
   ]
  },
