@@ -2170,6 +2170,28 @@ var VAKKEN = [
       "nOe": 5,
       "nBeg": 11,
       "hasSam": true
+     },
+     {
+      "id": "B2",
+      "lo": "na.B.2",
+      "gs": 2,
+      "naam": "Golven en golfgrootheden",
+      "beschrijving": "Je legt uit wat een lopende golf is, onderscheidt transversale en longitudinale golven, leest de golflengte af uit een (u,x)-diagram en rekent met v = f · λ. Je gebruikt de geluidssnelheid in verschillende stoffen om afstanden te bepalen met een echo.",
+      "ceStatus": "CE",
+      "binas": "7, 15",
+      "val": "",
+      "onderwerpen": [
+       "Wat een golf is",
+       "Transversaal en longitudinaal",
+       "Golflengte en het (u,x)-diagram",
+       "Rekenen met v = f·λ",
+       "Golfsnelheid in verschillende stoffen",
+       "Afstanden meten met golven"
+      ],
+      "nSv": 28,
+      "nOe": 5,
+      "nBeg": 11,
+      "hasSam": true
      }
     ]
    },

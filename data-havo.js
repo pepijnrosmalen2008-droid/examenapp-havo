@@ -87896,6 +87896,698 @@ var VAKKEN = [
         "u": "T = 2π√(0,994 / 9,81) = 2,00 s (1p). Een langere slinger heeft een grotere trillingstijd (1p). De klok tikt dus langzamer en loopt achter (1p)."
        }
       ]
+     },
+     {
+      "id": "B2",
+      "lo": "na.B.2",
+      "gs": 2,
+      "naam": "Golven en golfgrootheden",
+      "beschrijving": "Je legt uit wat een lopende golf is, onderscheidt transversale en longitudinale golven, leest de golflengte af uit een (u,x)-diagram en rekent met v = f · λ. Je gebruikt de geluidssnelheid in verschillende stoffen om afstanden te bepalen met een echo.",
+      "ceStatus": "CE",
+      "binas": "7, 15",
+      "val": "",
+      "onderwerpen": [
+       "Wat een golf is",
+       "Transversaal en longitudinaal",
+       "Golflengte en het (u,x)-diagram",
+       "Rekenen met v = f·λ",
+       "Golfsnelheid in verschillende stoffen",
+       "Afstanden meten met golven"
+      ],
+      "sam": "Een lopende golf verplaatst energie, geen materiaal. Transversaal: trillen dwars op de looprichting (touw, licht). Longitudinaal: trillen in de looprichting met verdichtingen en verdunningen (geluid). Golflengte λ: van top tot top, af te lezen in een (u,x)-diagram. v = f · λ; de snelheid hangt af van de stof (lucht 343 m/s, water 1480 m/s, staal 5900 m/s, licht 3,00·10⁸ m/s). Bij een overgang blijft f gelijk. Echo: afstand = v · t / 2.",
+      "begrippen": [
+       {
+        "t": "Lopende golf",
+        "d": "Trilling die zich door een stof voortplant; energie reist, het materiaal blijft op zijn plaats."
+       },
+       {
+        "t": "Transversale golf",
+        "d": "Golf waarbij de deeltjes dwars op de looprichting trillen, met toppen en dalen."
+       },
+       {
+        "t": "Longitudinale golf",
+        "d": "Golf waarbij de deeltjes in de looprichting trillen, met verdichtingen en verdunningen."
+       },
+       {
+        "t": "Verdichting",
+        "d": "Plek in een longitudinale golf waar de deeltjes dicht op elkaar zitten; daartussen ligt een verdunning."
+       },
+       {
+        "t": "Golflengte",
+        "d": "Afstand van een top tot de volgende top (λ), in meter."
+       },
+       {
+        "t": "Golfsnelheid",
+        "d": "Snelheid waarmee een golf zich voortplant: v = f · λ; hangt af van de stof."
+       },
+       {
+        "t": "Geluidssnelheid",
+        "d": "Snelheid van geluid: in lucht 343 m/s, in water 1480 m/s, in staal ongeveer 5900 m/s."
+       },
+       {
+        "t": "Lichtsnelheid",
+        "d": "Snelheid van licht in vacuüm: c = 3,00·10⁸ m/s."
+       },
+       {
+        "t": "(u,x)-diagram",
+        "d": "Foto van een golf: uitwijking tegen plaats; hieruit lees je de golflengte af."
+       },
+       {
+        "t": "Echo",
+        "d": "Weerkaatst geluid; afstand tot het voorwerp = v · t / 2."
+       },
+       {
+        "t": "Ultrageluid",
+        "d": "Geluid met een frequentie boven 20 kHz, gebruikt bij sonar en echoscopie."
+       }
+      ],
+      "sv": [
+       {
+        "v": "Wat wordt er door een lopende golf verplaatst?",
+        "o": [
+         "Lucht of water in de richting van de golf",
+         "Het materiaal waar de golf door gaat",
+         "Energie",
+         "Niets, een golf staat stil"
+        ],
+        "c": 2,
+        "d": 1,
+        "s": 0,
+        "u": "Een golf vervoert energie; de deeltjes trillen alleen op hun plaats.",
+        "uo": [
+         "Koos je lucht of water dat meestroomt? Dan zou geluid een windvlaag zijn. De luchtdeeltjes trillen heen en weer om hun plaats en geven alleen de trilling door.",
+         "Koos je het materiaal? Een eend op het water dobbert op en neer als er een golf langskomt, maar drijft niet mee. Het water blijft op zijn plaats, alleen de energie gaat verder.",
+         "Klopt: elk deeltje trilt om zijn eigen evenwichtsstand en geeft de trilling door aan het volgende. Zo reist de energie verder, maar het materiaal zelf blijft waar het is.",
+         "Koos je niets? Een lopende golf beweegt wel degelijk: de vorm en de energie verplaatsen zich met de golfsnelheid. Alleen de deeltjes zelf blijven ter plaatse."
+        ],
+        "uh": "Golf = energie reist, materiaal blijft."
+       },
+       {
+        "v": "Een eend dobbert in een vijver. Er komt een golf langs. Wat doet de eend?",
+        "o": [
+         "Hij wordt met de golf naar de kant gedragen",
+         "Hij gaat op en neer en blijft op zijn plek",
+         "Hij blijft volkomen stil liggen",
+         "Hij beweegt alleen horizontaal heen en weer met de golf mee"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 0,
+        "u": "Het water trilt op en neer, de golf trekt verder.",
+        "uo": [
+         "Koos je meegedragen naar de kant? Dat zou gebeuren als het water zelf meestroomde. Bij een golf trillen de waterdeeltjes alleen om hun plaats.",
+         "Klopt: het water onder de eend trilt op en neer en de eend doet mee. Na het passeren van de golf ligt hij weer ongeveer op dezelfde plek.",
+         "Koos je stil liggen? De golf brengt energie mee en die zet het water onder de eend in beweging. De eend gaat dus mee op en neer.",
+         "Koos je alleen horizontaal? Watergolven bewegen het oppervlak vooral op en neer. Een kleine heen-en-weerbeweging is er ook, maar de eend reist niet mee."
+        ],
+        "uh": "Dobberen, niet meereizen.",
+        "ctx": "Bij een vijver gooit een kind een steen in het water. Vanaf de plek waar de steen valt, lopen ringvormige golven naar buiten. Een paar meter verderop ligt een eend rustig te dobberen. Na een paar seconden bereiken de golven de eend."
+       },
+       {
+        "v": "Waarom is het een golf als de mensen in een stadion een \"wave\" maken?",
+        "o": [
+         "De beweging gaat door, de mensen blijven zitten",
+         "Alle mensen staan tegelijk op en gaan tegelijk zitten",
+         "De mensen lopen in een rondje door het stadion",
+         "Er wordt lucht verplaatst door het opstaan"
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 0,
+        "u": "Ieder trilt op zijn plek; de beweging wordt doorgegeven.",
+        "uo": [
+         "Klopt: iedere toeschouwer staat op en gaat zitten, net iets later dan zijn buurman. Zo loopt de beweging rond het stadion, terwijl iedereen op zijn eigen stoel blijft.",
+         "Koos je allemaal tegelijk? Dan zou het hele stadion tegelijk opstaan en zie je geen beweging rondgaan. Juist het kleine tijdsverschil tussen buren maakt er een golf van.",
+         "Koos je rondlopen? De mensen verlaten hun stoel niet. Alleen het patroon van opstaan en zitten reist rond, net als bij een golf in een touw.",
+         "Koos je lucht verplaatsen? Dat gebeurt een beetje, maar dat is niet de golf. De golf is het doorgeven van de beweging van stoel naar stoel."
+        ],
+        "uh": "Wave: beweging reist, mensen blijven.",
+        "ctx": "In een voetbalstadion begint een groep supporters met een wave. Elke supporter staat op met de armen omhoog en gaat weer zitten, telkens net na zijn buurman. Vanaf de overkant zie je een bult van mensen met zo'n 12 m/s rond het stadion gaan."
+       },
+       {
+        "v": "Waarom kun je in de ruimte geen geluid horen, maar wel licht zien?",
+        "o": [
+         "In de ruimte is het te koud voor geluid",
+         "Geluid is te zwak om de afstand te overbruggen",
+         "Licht gaat sneller, dus geluid komt te laat aan",
+         "Geluid heeft een stof nodig, licht niet"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 0,
+        "u": "Geluid = trilling van deeltjes; licht = elektromagnetische golf.",
+        "uo": [
+         "Koos je te koud? Temperatuur verandert de geluidssnelheid een beetje, maar het echte probleem is het vacuüm: er is geen stof om in te trillen.",
+         "Koos je te zwak? Ook een harde knal vlak naast een astronaut is niet te horen. Er zijn simpelweg geen deeltjes die de trilling kunnen doorgeven.",
+         "Koos je te laat? Geluid komt dan nooit aan, ook niet later. Zonder stof om te trillen kan geluid zich helemaal niet voortplanten.",
+         "Klopt: geluid is een trilling die van deeltje naar deeltje wordt doorgegeven. In het lege heelal zijn geen deeltjes. Licht is een elektromagnetische golf en gaat ook door vacuüm."
+        ],
+        "uh": "Geluid: stof nodig. Licht: niet."
+       },
+       {
+        "v": "Bij welke golf trillen de deeltjes loodrecht op de richting waarin de golf loopt?",
+        "o": [
+         "Een geluidsgolf in lucht",
+         "Een longitudinale golf",
+         "Een transversale golf",
+         "Een staande golf in een buis"
+        ],
+        "c": 2,
+        "d": 1,
+        "s": 1,
+        "u": "Transversaal = dwars, longitudinaal = in de lengte.",
+        "uo": [
+         "Koos je geluid in lucht? Luchtdeeltjes trillen in de richting waarin het geluid zich voortplant. Geluid in lucht is dus longitudinaal.",
+         "Koos je longitudinaal? Daar trillen de deeltjes juist in dezelfde richting als de golf loopt, zodat verdichtingen en verdunningen ontstaan.",
+         "Klopt: bij een transversale golf trillen de deeltjes dwars op de looprichting, zoals bij een golf in een touw dat je op en neer beweegt.",
+         "Koos je een staande golf in een buis? In een buis gaat het om geluid in lucht, en dat is longitudinaal. Staand of lopend verandert de trilrichting niet."
+        ],
+        "uh": "Transversaal = dwars."
+       },
+       {
+        "v": "Je duwt het uiteinde van een gespannen slinky een paar keer kort naar voren. Wat voor golf ontstaat er?",
+        "o": [
+         "Transversaal, met toppen en dalen",
+         "Longitudinaal, met verdichtingen",
+         "Transversaal, met verdichtingen en verdunningen",
+         "Geen golf, de slinky schuift als geheel op"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 1,
+        "u": "Duwen in de lengterichting geeft verdichtingen en verdunningen.",
+        "uo": [
+         "Koos je transversaal met toppen en dalen? Die krijg je als je het uiteinde zijwaarts beweegt. Bij duwen in de lengterichting trillen de windingen in die richting.",
+         "Klopt: de windingen trillen heen en weer in de richting van de slinky. Er lopen verdichtingen (windingen dicht op elkaar) en verdunningen langs: een longitudinale golf.",
+         "Koos je transversaal met verdichtingen? Verdichtingen en verdunningen horen juist bij een longitudinale golf. Bij een transversale golf zie je toppen en dalen.",
+         "Koos je opschuiven als geheel? De slinky blijft liggen; alleen de windingen bewegen even heen en weer. De verdichting loopt door, de slinky zelf niet."
+        ],
+        "uh": "Duwen = longitudinaal.",
+        "ctx": "Twee leerlingen leggen een slinky gespannen over een lange tafel, elk houdt een uiteinde vast. De ene leerling duwt zijn uiteinde een paar keer kort naar voren en trekt het terug, in de richting van de slinky. Op een film zie je stukjes waar de windingen dicht op elkaar zitten naar de andere kant lopen."
+       },
+       {
+        "v": "Welke golven kunnen door de vloeibare buitenkern van de aarde?",
+        "o": [
+         "Alleen de P-golven",
+         "Alleen de S-golven",
+         "Beide soorten golven",
+         "Geen van beide"
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 1,
+        "u": "Een vloeistof kan geen dwarsbeweging doorgeven.",
+        "uo": [
+         "Klopt: een vloeistof kan wel samengedrukt worden, dus longitudinale P-golven gaan erdoor. Dwars op elkaar schuiven geeft een vloeistof niet door, dus transversale S-golven stoppen.",
+         "Koos je alleen de S-golven? Juist die stoppen bij een vloeistof, omdat de lagen langs elkaar glijden en de dwarsbeweging niet doorgeven. Daaruit weten we dat de buitenkern vloeibaar is.",
+         "Koos je beide? Dan zouden seismometers aan de andere kant van de aarde ook S-golven meten. Die ontbreken daar: in een vloeistof kan een transversale golf niet lopen.",
+         "Koos je geen van beide? P-golven worden wel aan de overkant van de aarde gemeten. Samendrukken en uitzetten gaat ook in een vloeistof, dus longitudinale golven komen erdoor."
+        ],
+        "uh": "Vloeistof: wel longitudinaal, niet transversaal.",
+        "ctx": "Bij een zware aardbeving in Japan meten seismometers over de hele wereld de trillingen. Aan de andere kant van de aarde komen wel P-golven aan, maar geen S-golven. P-golven zijn longitudinaal, S-golven transversaal. Geologen gebruiken dit om iets te zeggen over de binnenkant van de aarde."
+       },
+       {
+        "v": "Welke combinatie klopt?",
+        "o": [
+         "Geluid en licht allebei longitudinaal golvend door lucht",
+         "Geluid en licht allebei transversaal",
+         "Geluid transversaal, licht longitudinaal",
+         "Geluid in lucht longitudinaal, licht transversaal"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 1,
+        "u": "Geluid: drukgolf (longitudinaal). Licht: elektromagnetisch (transversaal).",
+        "uo": [
+         "Koos je allebei longitudinaal? Voor geluid klopt dat, maar licht trilt dwars op de looprichting. Bovendien heeft licht geen lucht nodig om te bewegen.",
+         "Koos je allebei transversaal? Lucht kan geen dwarsbeweging doorgeven, alleen samendrukken. Geluid in lucht is daarom altijd longitudinaal.",
+         "Koos je precies andersom? Geluid bestaat uit drukverschillen in de looprichting, dat is longitudinaal. Licht trilt dwars en is dus transversaal.",
+         "Klopt: in lucht is geluid een reeks verdichtingen en verdunningen, dus longitudinaal. Licht is een elektromagnetische golf waarbij de velden dwars op de looprichting trillen: transversaal."
+        ],
+        "uh": "Geluid longitudinaal, licht transversaal."
+       },
+       {
+        "v": "Waar meet je de golflengte λ in een (u,x)-diagram van een lopende golf?",
+        "o": [
+         "Van de tijdas tot een top",
+         "Van top tot dal",
+         "Van top tot top",
+         "Over de hele lengte van het touw"
+        ],
+        "c": 2,
+        "d": 1,
+        "s": 2,
+        "u": "Golflengte = afstand van een top tot de volgende top.",
+        "uo": [
+         "Koos je van de as tot een top? Dat is de amplitude: hoe hoog de golf is. De golflengte is een afstand langs de x-as.",
+         "Koos je van top tot dal? Dat is maar een halve golflengte. Pas bij de volgende top begint de vorm opnieuw.",
+         "Klopt: de golflengte is de afstand tussen twee naast elkaar liggende toppen, of twee dalen. Op die afstand herhaalt de golfvorm zich.",
+         "Koos je de hele lengte van het touw? Op een touw passen vaak meerdere golflengtes. Eén golflengte is de lengte van één herhaling."
+        ],
+        "uh": "λ: top tot top."
+       },
+       {
+        "v": "Op een foto van een touw passen precies drie golflengtes in 4,5 m. Hoe groot is λ?",
+        "o": [
+         "4,5 m",
+         "1,5 m",
+         "13,5 m",
+         "0,67 m"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 2,
+        "u": "λ = 4,5 / 3.",
+        "uo": [
+         "Koos je 4,5 m? Dat is de lengte van drie golflengtes samen. Deel door het aantal golven om er één te krijgen.",
+         "Klopt: drie golflengtes passen in 4,5 m, dus één golflengte is 4,5 / 3 = 1,5 m.",
+         "Koos je 13,5 m? Dan heb je vermenigvuldigd in plaats van gedeeld. Eén golflengte is kleiner dan het stuk waarop er drie passen.",
+         "Koos je 0,67 m? Dan heb je 3 gedeeld door 4,5. Andersom klopt het: afstand gedeeld door het aantal golflengtes."
+        ],
+        "uh": "λ = afstand / aantal golven."
+       },
+       {
+        "v": "Hoe groot is de afstand tussen een top en het dichtstbijzijnde dal als λ = 80 cm?",
+        "o": [
+         "40 cm",
+         "80 cm",
+         "20 cm",
+         "160 cm"
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 2,
+        "u": "Top tot dal = halve golflengte.",
+        "uo": [
+         "Klopt: van top naar dal is een halve golflengte, dus 80 / 2 = 40 cm. Van dat dal naar de volgende top is weer 40 cm.",
+         "Koos je 80 cm? Dat is de afstand tot de volgende top. Het dal ligt precies halverwege.",
+         "Koos je 20 cm? Dat is een kwart golflengte: van een top naar het punt waar de golf door de evenwichtsstand gaat.",
+         "Koos je 160 cm? Dat zijn twee golflengtes. Het dichtstbijzijnde dal ligt binnen één golflengte, op de helft."
+        ],
+        "uh": "Top-dal = λ/2.",
+        "ctx": "Een leerling maakt met een golfmachine een golf in een lang elastiek. Op de foto staan de toppen telkens 80 cm uit elkaar. Ze wil een rood lintje precies op een plek hangen waar het elastiek op dat moment het laagst is, zo dicht mogelijk bij een top."
+       },
+       {
+        "v": "Wat is het verschil tussen een (u,t)-diagram en een (u,x)-diagram van een golf?",
+        "o": [
+         "(u,t) is voor transversale golven en (u,x) is voor longitudinale golven",
+         "(u,t) toont de golflengte, (u,x) de trillingstijd",
+         "Er is geen verschil, het zijn twee namen",
+         "(u,t): één punt in de tijd; (u,x): de hele golf op één moment"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 2,
+        "u": "Uit (u,t) haal je T, uit (u,x) haal je λ.",
+        "uo": [
+         "Koos je transversaal tegen longitudinaal? Beide soorten golven kun je in allebei de diagrammen tekenen. Het verschil zit in de as: tijd of plaats.",
+         "Koos je andersom? Op een tijdas lees je een tijd af: de trillingstijd. Op een plaatsas lees je een afstand af: de golflengte.",
+         "Koos je geen verschil? De diagrammen lijken op elkaar, maar de horizontale as is anders. Daardoor lees je er verschillende grootheden uit af.",
+         "Klopt: een (u,t)-diagram volgt één punt van het touw door de tijd; daaruit lees je T af. Een (u,x)-diagram is een foto van de hele golf; daaruit lees je λ af."
+        ],
+        "uh": "(u,t) → T, (u,x) → λ."
+       },
+       {
+        "v": "Een golf in een touw wordt hoger gemaakt, met dezelfde frequentie. Wat verandert er?",
+        "o": [
+         "De golfsnelheid wordt groter",
+         "De golflengte wordt groter",
+         "Alleen de amplitude",
+         "De frequentie wordt vanzelf ook groter"
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 2,
+        "u": "Hoogte = amplitude; λ, v en f veranderen niet.",
+        "uo": [
+         "Koos je golfsnelheid groter? De snelheid wordt bepaald door het touw en de spanning. Een hogere golf loopt even snel als een lage.",
+         "Koos je golflengte groter? Dat is de bekende verwarring tussen golflengte en amplitude. De golflengte is de afstand langs het touw, de amplitude de hoogte.",
+         "Klopt: hoger betekent een grotere uitwijking, dus een grotere amplitude. De golfsnelheid hangt van het touw af en de frequentie van je hand, dus λ = v/f blijft gelijk.",
+         "Koos je frequentie groter? De frequentie bepaal je zelf met het tempo van je hand. Als je even vaak beweegt maar verder uitslaat, blijft f gelijk."
+        ],
+        "uh": "Hoger = grotere amplitude, niet grotere λ.",
+        "ctx": "Een leerling beweegt het uiteinde van een gespannen touw twee keer per seconde op en neer, eerst met kleine bewegingen van 5 cm. Daarna maakt ze in hetzelfde tempo grote bewegingen van 20 cm. Haar buurman zegt: \"Nu worden de golven langer.\""
+       },
+       {
+        "v": "Welke formule verbindt golfsnelheid, frequentie en golflengte?",
+        "o": [
+         "v = f / λ",
+         "v = f · λ",
+         "v = λ / f",
+         "v = f + λ"
+        ],
+        "c": 1,
+        "d": 1,
+        "s": 3,
+        "u": "In één trillingstijd schuift de golf één golflengte op.",
+        "uo": [
+         "Koos je v = f/λ? Controleer de eenheden: Hz gedeeld door m geeft geen m/s. Frequentie maal golflengte geeft wel 1/s × m = m/s.",
+         "Klopt: in één trillingstijd T schuift de golf precies één golflengte op, dus v = λ/T = f · λ.",
+         "Koos je v = λ/f? Dat zou kloppen met T in plaats van f: v = λ/T. Omdat f = 1/T wordt het v = f · λ.",
+         "Koos je optellen? Je kunt geen hertz en meters bij elkaar optellen. De grootheden worden vermenigvuldigd: v = f · λ."
+        ],
+        "uh": "v = f · λ."
+       },
+       {
+        "v": "Een golf in een touw heeft λ = 1,2 m en f = 2,5 Hz. Hoe groot is de golfsnelheid?",
+        "o": [
+         "3,0 m/s",
+         "0,48 m/s",
+         "2,1 m/s",
+         "1,2 m/s"
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 3,
+        "u": "v = 2,5 × 1,2.",
+        "uo": [
+         "Klopt: v = f · λ = 2,5 × 1,2 = 3,0 m/s. Elke seconde komen er 2,5 golven langs van elk 1,2 m.",
+         "Koos je 0,48 m/s? Dan heb je λ gedeeld door f. Dat geeft de trillingstijd keer iets, geen snelheid. Vermenigvuldig f en λ.",
+         "Koos je 2,1 m/s? Dan heb je f gedeeld door λ. Controleer met de eenheden: alleen Hz × m geeft m/s.",
+         "Koos je 1,2 m/s? Dat is de golflengte zelf, alleen met een andere eenheid. Je moet nog met de frequentie vermenigvuldigen."
+        ],
+        "uh": "v = f·λ = 3,0 m/s."
+       },
+       {
+        "v": "Welke golflengte heeft deze stemvork in lucht?",
+        "o": [
+         "0,0128 m",
+         "1,28 m",
+         "151 km",
+         "0,780 m"
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 3,
+        "u": "λ = v/f = 343/440.",
+        "uo": [
+         "Koos je 0,0128 m? Dat is ongeveer f/v, het omgekeerde van de goede uitkomst. Zet v boven de deelstreep.",
+         "Koos je 1,28 m? Dan heb je f gedeeld door v en de komma verschoven. De golflengte is snelheid gedeeld door frequentie.",
+         "Koos je 151 km? Dan heb je v en f vermenigvuldigd. Dat geeft geen lengte maar m²/s. Deel v door f.",
+         "Klopt: λ = v / f = 343 / 440 = 0,780 m. De golflengte van deze toon is dus ongeveer 78 cm."
+        ],
+        "uh": "λ = v/f.",
+        "ctx": "Een muziekleraar slaat een stemvork aan die een toon van 440 Hz geeft: de A waarop het orkest stemt. Het is 20 °C in het lokaal, de geluidssnelheid in lucht is dan 343 m/s. Een leerling wil weten hoe groot de golflengte van deze toon is."
+       },
+       {
+        "v": "De frequentie van een golf in hetzelfde touw wordt twee keer zo groot. Wat gebeurt er met de golflengte?",
+        "o": [
+         "Die blijft gelijk",
+         "Die wordt twee keer zo groot",
+         "Die wordt twee keer zo klein",
+         "Die wordt vier keer zo klein"
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 3,
+        "u": "v hangt af van het touw; f · λ blijft gelijk.",
+        "uo": [
+         "Koos je gelijk? Dan zou de golf twee keer zo snel worden. In hetzelfde touw blijft v gelijk, dus λ moet kleiner worden.",
+         "Koos je twee keer zo groot? Dan zou v vier keer zo groot worden. Maar de snelheid wordt bepaald door het touw, niet door hoe snel je beweegt.",
+         "Klopt: de golfsnelheid hangt af van het touw en de spanning, niet van de frequentie. Als f verdubbelt en v gelijk blijft, moet λ halveren.",
+         "Koos je vier keer zo klein? Er is geen kwadraat in v = f · λ. Twee keer zo grote f geeft twee keer zo kleine λ."
+        ],
+        "uh": "Zelfde stof: f omhoog, λ omlaag.",
+        "ctx": "Een leerling beweegt het uiteinde van een lang gespannen touw regelmatig op en neer. Eerst doet ze dat twee keer per seconde. Daarna beweegt ze haar hand vier keer per seconde, met dezelfde spanning in het touw. Haar buurman kijkt hoe ver de toppen uit elkaar liggen."
+       },
+       {
+        "v": "Een radiozender zendt uit op 100 MHz. Welke golflengte heeft deze radiogolf? (c = 3,00·10⁸ m/s)",
+        "o": [
+         "0,333 m",
+         "3,00 m",
+         "30,0 m",
+         "3,00 · 10¹⁶ m"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 3,
+        "u": "λ = 3,00·10⁸ / 1,00·10⁸.",
+        "uo": [
+         "Koos je 0,333 m? Dan heb je f gedeeld door c. Zet de snelheid boven de deelstreep: λ = c / f.",
+         "Klopt: 100 MHz = 1,00·10⁸ Hz. λ = c / f = 3,00·10⁸ / 1,00·10⁸ = 3,00 m.",
+         "Koos je 30,0 m? Dan heb je mega als 10⁷ gebruikt. Mega is 10⁶, dus 100 MHz = 10⁸ Hz.",
+         "Koos je 3,00 · 10¹⁶ m? Dan heb je c en f vermenigvuldigd. Voor de golflengte deel je de snelheid door de frequentie."
+        ],
+        "uh": "λ = c/f, mega = 10⁶."
+       },
+       {
+        "v": "Hoe groot is de golfsnelheid van deze zeegolven?",
+        "o": [
+         "3,0 m/s",
+         "75 m/s",
+         "0,20 m/s",
+         "0,33 m/s"
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 3,
+        "u": "f = 6/30 = 0,20 Hz; v = 0,20 × 15.",
+        "uo": [
+         "Klopt: f = 6 / 30 = 0,20 Hz. Dan is v = f · λ = 0,20 × 15 = 3,0 m/s.",
+         "Koos je 75 m/s? Dan heb je de trillingstijd van 5 s keer 15 m gedaan. Gebruik de frequentie, of deel λ door T: 15 / 5 = 3,0 m/s.",
+         "Koos je 0,20 m/s? Dat is de frequentie in Hz, niet de snelheid. Vermenigvuldig nog met de golflengte van 15 m.",
+         "Koos je 0,33 m/s? Dan heb je T gedeeld door λ. Snelheid is afstand gedeeld door tijd: 15 m in 5 s."
+        ],
+        "uh": "v = λ/T.",
+        "ctx": "Een surfer ligt op zijn plank voorbij de branding te wachten. Hij telt dat er in 30 seconden precies 6 golftoppen onder hem door gaan. Vanaf het strand schat een vriend dat de toppen ongeveer 15 meter uit elkaar liggen."
+       },
+       {
+        "v": "Waarom heeft een vleermuis met geluid van 50 kHz een kleine golflengte nodig?",
+        "o": [
+         "Een kleine golflengte is stiller",
+         "Korte golven gaan sneller door de lucht dan lange golven",
+         "Lage tonen kan een vleermuis niet maken",
+         "Alleen golven kleiner dan een insect weerkaatsen er goed op"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 3,
+        "u": "λ = 343/50 000 = 6,9 mm: klein genoeg voor een mug.",
+        "uo": [
+         "Koos je stiller? De golflengte zegt niets over hoe hard een geluid is; dat hangt van de amplitude af. Vleermuizen roepen zelfs erg hard.",
+         "Koos je sneller? In lucht gaan alle geluidsgolven even snel, ongeveer 343 m/s, wat de frequentie ook is. Het voordeel zit in de kleine golflengte.",
+         "Koos je lage tonen? Ook als dat zo was, verklaart het niet waarom het voordelig is. Het gaat erom dat de golflengte kleiner is dan de prooi.",
+         "Klopt: λ = 343 / 50 000 = 6,9 mm. Een golf weerkaatst goed op een voorwerp dat minstens zo groot is als de golflengte, zodat de vleermuis kleine insecten kan vinden."
+        ],
+        "uh": "Kleine λ → kleine dingen zien."
+       },
+       {
+        "v": "Wanneer is de geluidssnelheid in een stof het grootst?",
+        "o": [
+         "In water",
+         "In lucht",
+         "In een vaste stof als staal",
+         "In vacuüm"
+        ],
+        "c": 2,
+        "d": 1,
+        "s": 4,
+        "u": "Hoe stijver de stof, hoe sneller het geluid.",
+        "uo": [
+         "Koos je water? Water is sneller dan lucht, met ongeveer 1480 m/s, maar een vaste stof als staal is nog veel sneller.",
+         "Koos je lucht? Daar gaat geluid juist het langzaamst van de drie, ongeveer 343 m/s. De deeltjes zitten ver uit elkaar.",
+         "Klopt: in staal gaat geluid ongeveer 5900 m/s, in water 1480 m/s en in lucht 343 m/s. In een stijve vaste stof geven de deeltjes de trilling het snelst door.",
+         "Koos je vacuüm? Daar kan geluid helemaal niet komen. Zonder deeltjes is er niets dat de trilling kan doorgeven."
+        ],
+        "uh": "Staal > water > lucht."
+       },
+       {
+        "v": "Een geluidsgolf gaat van lucht naar water. Wat blijft gelijk en wat verandert?",
+        "o": [
+         "f wordt groter, λ blijft gelijk",
+         "f blijft gelijk, λ wordt groter",
+         "v blijft gelijk, f wordt kleiner",
+         "Alles blijft gelijk, alleen de amplitude neemt een beetje af"
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 4,
+        "u": "De bron bepaalt f; de stof bepaalt v; dus λ past zich aan.",
+        "uo": [
+         "Koos je f groter? De trillingen komen in hetzelfde tempo aan bij het grensvlak en gaan in dat tempo verder. De frequentie blijft dus gelijk.",
+         "Klopt: de frequentie wordt bepaald door de bron en verandert niet bij een overgang. In water is v ruim vier keer zo groot, dus λ = v / f wordt ook ruim vier keer zo groot.",
+         "Koos je v gelijk? De snelheid hangt af van de stof. In water is die ongeveer 1480 m/s tegen 343 m/s in lucht.",
+         "Koos je alles gelijk? De snelheid verandert wel, en met v = f · λ dan ook de golflengte. Alleen de frequentie blijft gelijk."
+        ],
+        "uh": "Andere stof: f blijft, v en λ veranderen.",
+        "ctx": "Een duiker zwemt onder water bij een steiger. Een vriend op de steiger blaast op een fluitje met een toon van 2000 Hz. Het geluid gaat eerst door de lucht (343 m/s) en dan het water in (1480 m/s), waar de duiker het hoort."
+       },
+       {
+        "v": "Hoe snel gaat licht in vacuüm?",
+        "o": [
+         "3,00 · 10⁸ m/s",
+         "343 m/s",
+         "3,00 · 10⁵ m/s",
+         "1480 m/s"
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 4,
+        "u": "Binas: c = 2,998·10⁸ m/s.",
+        "uo": [
+         "Klopt: licht en andere elektromagnetische golven gaan in vacuüm met 3,00·10⁸ m/s. Dat is bijna een miljoen keer zo snel als geluid in lucht.",
+         "Koos je 343 m/s? Dat is de geluidssnelheid in lucht bij 20 °C. Licht is veel sneller.",
+         "Koos je 3,00 · 10⁵ m/s? Dat is 300 km/s, duizend keer te weinig. Licht legt 300 000 km per seconde af, niet per milliseconde.",
+         "Koos je 1480 m/s? Dat is de geluidssnelheid in water. Licht heeft geen stof nodig en is miljoenen keren sneller."
+        ],
+        "uh": "c = 3,00·10⁸ m/s."
+       },
+       {
+        "v": "Wat hoort de leerling met zijn oor tegen de reling?",
+        "o": [
+         "Alleen de tik via de lucht, staal geleidt geen geluid",
+         "Twee tikken: eerst via de lucht, dan via het staal",
+         "Eén tik, want geluid gaat overal even snel",
+         "Twee tikken: eerst via het staal, dan via de lucht"
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 4,
+        "u": "Staal ≈ 17× sneller dan lucht.",
+        "uo": [
+         "Koos je staal geleidt niet? Vaste stoffen geleiden geluid juist erg goed. Daarom hoor je ook de buren door een muur.",
+         "Koos je eerst via de lucht? Lucht is de langzaamste van de twee. Juist omdat staal zo stijf is, geeft het de trilling veel sneller door.",
+         "Koos je één tik? De geluidssnelheid hangt sterk van de stof af. Over 100 m is het verschil bijna 0,3 s, dat hoor je goed.",
+         "Klopt: in staal gaat geluid ongeveer 5900 m/s, in lucht 343 m/s. Over 100 m komt de tik via het staal na 0,017 s aan en via de lucht pas na 0,29 s."
+        ],
+        "uh": "Eerst staal, dan lucht.",
+        "ctx": "Langs een kade staat een stalen reling van 100 m lang. Een leerling legt zijn oor tegen het ene uiteinde. Zijn vriend slaat aan het andere uiteinde één keer hard met een steen op de reling. De geluidssnelheid is in staal 5900 m/s en in lucht 343 m/s."
+       },
+       {
+        "v": "Je ziet een bliksemflits en hoort 3,0 s later de donder. Hoe ver weg is het onweer ongeveer?",
+        "o": [
+         "3,0 km",
+         "343 m",
+         "1,0 km",
+         "0,51 km"
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 5,
+        "u": "s = v · t = 343 × 3,0.",
+        "uo": [
+         "Koos je 3,0 km? Dan reken je met 1000 m/s. Geluid gaat ongeveer 343 m/s: per drie seconden ongeveer één kilometer.",
+         "Koos je 343 m? Dat is de afstand die geluid in één seconde aflegt. Je hebt 3,0 seconden gewacht, dus het is drie keer zo ver.",
+         "Klopt: het licht komt vrijwel meteen aan. Het geluid doet 3,0 s over de afstand: s = 343 × 3,0 = 1,0·10³ m, ongeveer 1 km.",
+         "Koos je 0,51 km? Dan heb je gedeeld door twee, alsof het een echo is. De donder gaat maar één keer van het onweer naar jou."
+        ],
+        "uh": "Onweer: 3 s ≈ 1 km."
+       },
+       {
+        "v": "Hoe ver staat de leerling van de muur af?",
+        "o": [
+         "137 m",
+         "69 m",
+         "34 m",
+         "857 m"
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 5,
+        "u": "Heen en terug: s = 343 × 0,40 / 2.",
+        "uo": [
+         "Koos je 137 m? Dat is de totale weg die het geluid aflegt, heen en terug. De muur staat op de helft daarvan.",
+         "Klopt: het geluid gaat heen en terug in 0,40 s, dus in totaal 343 × 0,40 = 137 m. De afstand tot de muur is de helft: 69 m.",
+         "Koos je 34 m? Dan heb je twee keer gehalveerd. Eén keer halveren is genoeg, want het geluid gaat één keer heen en één keer terug.",
+         "Koos je 857 m? Dan heb je 343 gedeeld door 0,40. Een afstand is snelheid keer tijd, niet gedeeld door tijd."
+        ],
+        "uh": "Echo: afstand = v·t/2.",
+        "ctx": "Een leerling staat op een plein tegenover een hoge kerkmuur. Hij klapt één keer hard in zijn handen en meet met een app op zijn telefoon dat de echo 0,40 s later terugkomt. De geluidssnelheid is 343 m/s."
+       },
+       {
+        "v": "Hoe diep is de zee op deze plek?",
+        "o": [
+         "1,5 km",
+         "3,0 km",
+         "0,34 km",
+         "0,74 km"
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 5,
+        "u": "In water: s = 1480 × 2,0 / 2.",
+        "uo": [
+         "Klopt: in zeewater gaat geluid ongeveer 1480 m/s. Heen en terug in 2,0 s is 2960 m, dus de diepte is 1480 m: ongeveer 1,5 km.",
+         "Koos je 3,0 km? Dat is de weg heen en terug samen. De bodem ligt op de helft van die afstand.",
+         "Koos je 0,34 km? Dan heb je met de geluidssnelheid in lucht gerekend. Een sonar werkt onder water, waar geluid ruim vier keer zo snel gaat.",
+         "Koos je 0,74 km? Dan heb je twee keer door twee gedeeld. Halveer alleen voor het heen-en-terug: 1480 × 2,0 / 2."
+        ],
+        "uh": "Sonar: water 1480 m/s, delen door 2.",
+        "ctx": "Een onderzoeksschip meet de diepte van de zee met sonar. Een geluidspuls gaat recht naar beneden, weerkaatst op de bodem en wordt 2,0 s na het uitzenden weer opgevangen. De geluidssnelheid in zeewater is 1480 m/s."
+       },
+       {
+        "v": "Waarom gebruikt een echoscopie bij een zwangerschap geluid met een heel hoge frequentie?",
+        "o": [
+         "Alleen hoge tonen kunnen door vloeistof heen",
+         "Hoge tonen gaan sneller door het lichaam",
+         "Hoge frequenties doen minder pijn bij de moeder",
+         "Hoge f geeft kleine λ, dus kleine details"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 5,
+        "u": "Kleine golflengte → scherp beeld.",
+        "uo": [
+         "Koos je alleen hoge tonen door vloeistof? Ook lage tonen gaan goed door water en weefsel. Het voordeel van hoge frequentie is de kleine golflengte.",
+         "Koos je sneller? De geluidssnelheid hangt van het weefsel af, niet van de frequentie. Hoge en lage tonen gaan in het lichaam even snel.",
+         "Koos je minder pijn? Ultrageluid is niet te horen of te voelen, maar dat geldt ook voor lagere frequenties in die sterkte. De reden is de scherpte van het beeld.",
+         "Klopt: bij een vaste geluidssnelheid in weefsel hoort bij een hoge frequentie een kleine golflengte. Kleinere golven weerkaatsen op kleinere details, dus het beeld wordt scherper."
+        ],
+        "uh": "Hoge f → kleine λ → scherp."
+       }
+      ],
+      "oe": [
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een leerling maakt met een golfmachine een golf in een lang touw. Op een foto staan vijf toppen; de eerste en de vijfde top liggen 3,20 m uit elkaar. Met een stroboscoop meet ze dat er 6,0 golven per seconde langs een vast punt gaan.",
+        "v": "Bepaal de golflengte en bereken de golfsnelheid in het touw.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Tussen de eerste en de vijfde top liggen vier golflengtes: λ = 3,20 / 4 = 0,800 m (1p). f = 6,0 Hz (1p). v = f · λ = 6,0 × 0,800 = 4,8 m/s (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Bij een onweersbui ziet een wandelaar een bliksemflits en telt hij 7 seconden tot hij de donder hoort. Een minuut later is het tussen flits en donder nog maar 4 seconden. De geluidssnelheid is 343 m/s. Het licht komt vrijwel meteen aan.",
+        "v": "Bereken hoeveel de afstand tot de bui in die minuut is afgenomen en bereken met welke gemiddelde snelheid de bui nadert.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Eerst: 343 × 7 = 2,4·10³ m; daarna: 343 × 4 = 1,4·10³ m (1p). Afname: 1,0·10³ m (1p). Snelheid: 1029 / 60 = 17 m/s (ongeveer 62 km/h) (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een vissersboot gebruikt een fishfinder die pulsen ultrageluid van 200 kHz naar beneden stuurt. Een school vissen geeft een echo na 0,060 s, de zeebodem na 0,15 s. De geluidssnelheid in zeewater is 1480 m/s.",
+        "v": "Bereken op welke diepte de vissen zwemmen, hoe diep de zee hier is, en bereken de golflengte van het ultrageluid in water.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Vissen: 1480 × 0,060 / 2 = 44 m (1p). Bodem: 1480 × 0,15 / 2 = 1,1·10² m (1p). λ = v / f = 1480 / 2,00·10⁵ = 7,4·10⁻³ m = 7,4 mm (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een duiker hoort onder water een fluitje van een badmeester aan de kant. Het fluitje geeft een toon van 2,5 kHz. Het geluid gaat eerst door de lucht (343 m/s) en daarna door het water (1480 m/s). Een leerling beweert: \"Onder water klinkt het fluitje hoger, omdat het geluid daar sneller gaat.\"",
+        "v": "Bereken de golflengte van het geluid in lucht en in water en beoordeel de bewering van de leerling.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Lucht: λ = 343 / 2500 = 0,137 m; water: λ = 1480 / 2500 = 0,592 m (2p). De toonhoogte hangt af van de frequentie, en die blijft bij de overgang gelijk; de bewering klopt dus niet (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Bij een aardbeving staat een meetstation op 900 km van het epicentrum. De longitudinale P-golven gaan ongeveer 6,0 km/s, de transversale S-golven 3,5 km/s. Seismologen bepalen de afstand tot een aardbeving uit het tijdsverschil tussen de aankomst van beide golven.",
+        "v": "Bereken het tijdsverschil tussen de aankomst van de P- en de S-golven en leg uit waarom de S-golven niet aan de overkant van de aarde aankomen.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "P: 900 / 6,0 = 150 s; S: 900 / 3,5 = 257 s (1p). Verschil: 1,1·10² s (1p). De aarde heeft een vloeibare buitenkern; een vloeistof geeft geen dwarsbeweging door, dus transversale S-golven komen er niet door (1p)."
+       }
+      ]
      }
     ]
    },
