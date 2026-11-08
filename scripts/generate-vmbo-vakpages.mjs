@@ -17,6 +17,8 @@ const EMOJI = { nl: '📖', en: '🇬🇧', du: '🇩🇪', fa: '🇫🇷', wi: 
 const esc = s => String(s == null ? '' : s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 const jesc = s => String(s == null ? '' : s).replace(/\\/g, '\\\\').replace(/"/g, '\\"');
 
+const MAAND=['januari','februari','maart','april','mei','juni','juli','augustus','september','oktober','november','december'];
+const datumNL = d => { const m = /^(\d{4})-(\d{2})-(\d{2})$/.exec(d || ''); return m ? `${+m[3]} ${MAAND[+m[2]-1]} ${m[1]}` : d; };
 function page(v) {
   const slug = SLUG[v.id] || v.id;
   const file = `vmbo-${slug}`;
@@ -29,12 +31,12 @@ function page(v) {
   const emoji = EMOJI[v.id] || '📘';
 
   const domList = doms.map(d => {
-    const tag = (d.ceStatus || '').includes('CE') ? '<span style="color:' + accent + ';font-weight:700">CE</span>' : '<span style="color:var(--text-muted)">SE</span>';
+    const tag = (d.ceStatus || '').includes('CE') ? '<span style="font-weight:700">CE</span>' : '<span style="color:var(--text-muted)">SE</span>';
     return `      <li><strong>${esc(d.naam)}</strong> <span style="opacity:.7">(${esc(d.code || d.id)})</span> · ${tag}<br><span style="font-size:.9em">${esc(d.beschrijving || '')}</span></li>`;
   }).join('\n');
 
   const ceNamen = ceDoms.map(d => `${d.naam} (${d.code || d.id})`).join(', ') || 'zie het examenprogramma';
-  const examZin = `1e tijdvak ${v.exDatum ? 'op ' + esc(v.exDatum) : 'in 2027'}${v.exTijd ? ', ' + esc(v.exTijd) : ''}${v.exDuur ? ' (' + esc(v.exDuur) + ')' : ''}.`;
+  const examZin = `Eerste tijdvak ${v.exDatum ? 'op ' + esc(datumNL(v.exDatum)) : 'in 2027'}${v.exTijd ? ', ' + esc(v.exTijd) : ''}${v.exDuur ? ' (' + esc(v.exDuur) + ')' : ''}.`;
 
   const faqs = [
     [`Wat zijn de CE-domeinen voor ${naam} VMBO?`, `De centraal-examendomeinen voor ${naam} VMBO GL/TL zijn: ${ceNamen}. De overige domeinen zijn schoolexamen (SE).`],
@@ -132,23 +134,23 @@ ${JSON.stringify(faqJson, null, 2)}
   <div class="header">
     <a href="https://slagio.nl"><img src="/icon-192.png" alt="Slagio logo"></a>
     <h1><span>${esc(naam)}</span> VMBO Eindexamen 2027</h1>
-    <p>Alle examendomeinen, data en hulpmiddelen op een rij ${emoji}</p>
+    <p>Wat er in het examen komt, wanneer het is en wat je mag gebruiken.</p>
   </div>
 
   <div class="stats">
-    <div class="stat"><div class="stat-number">${doms.length}</div><div class="stat-label">Examendomeinen</div></div>
-    <div class="stat"><div class="stat-number">${ceDoms.length}</div><div class="stat-label">CE-domeinen</div></div>
+    <div class="stat"><div class="stat-number">${doms.length}</div><div class="stat-label">domeinen</div></div>
+    <div class="stat"><div class="stat-number">${ceDoms.length}</div><div class="stat-label">in het CE</div></div>
     ${nQ > 0
-      ? `<div class="stat"><div class="stat-number">${nQ}+</div><div class="stat-label">Oefenvragen</div></div>`
-      : `<div class="stat"><div class="stat-number">Gratis</div><div class="stat-label">Geen account</div></div>`}
+      ? `<div class="stat"><div class="stat-number">${nQ}+</div><div class="stat-label">oefenvragen</div></div>`
+      : `<div class="stat"><div class="stat-number">Gratis</div><div class="stat-label">zonder account</div></div>`}
   </div>
 
   <div style="text-align:center">
-    <a href="https://slagio.nl/?niveau=vmbo&amp;vak=${v.id}" class="cta">Open ${esc(naam)} in Slagio →</a>
+    <a href="https://slagio.nl/?niveau=vmbo&amp;vak=${v.id}" class="cta">Oefen ${esc(naam)}</a>
   </div>
 
   <div class="card">
-    <h2>Examendomeinen ${esc(naam)} VMBO GL/TL</h2>
+    <h2>Wat komt er in het examen?</h2>
     <ul class="domain-list">
 ${domList}
     </ul>
@@ -156,36 +158,36 @@ ${domList}
   </div>
 
   <div class="card exam-info">
-    <h2>📅 Examen ${esc(naam)} VMBO 2027</h2>
+    <h2>Examen ${esc(naam)} vmbo 2027</h2>
     <p>${examZin}</p>
     ${v.hulpmiddelen ? `<p>Hulpmiddelen: <strong>${esc(v.hulpmiddelen)}</strong></p>` : ''}
   </div>
 
   <div class="card">
-    <h2>Hoe werkt Slagio?</h2>
+    <h2>Zo oefen je</h2>
     <div class="features">
-      <div class="feature"><div class="feature-icon">📝</div><div class="feature-title">Snelle quiz</div><p>Korte oefensessies per domein</p></div>
-      <div class="feature"><div class="feature-icon">🃏</div><div class="feature-title">Flashcards</div><p>Begrippen met herhaling</p></div>
-      <div class="feature"><div class="feature-icon">📊</div><div class="feature-title">Voortgang</div><p>Zie per domein hoe je ervoor staat</p></div>
-      <div class="feature"><div class="feature-icon">📄</div><div class="feature-title">Examenstof</div><p>Alle CE- en SE-domeinen</p></div>
+      <div class="feature"><div class="feature-title">Snelle quiz</div><p>Korte rondjes per onderwerp, met uitleg</p></div>
+      <div class="feature"><div class="feature-title">Kaartjes</div><p>Begrippen komen terug tot je ze kent</p></div>
+      <div class="feature"><div class="feature-title">Voortgang</div><p>Per onderwerp zie je hoe je ervoor staat</p></div>
+      <div class="feature"><div class="feature-title">CE en SE</div><p>Je ziet wat in het centraal examen komt</p></div>
     </div>
     ${nQ > 0
-      ? `<div class="note">${nQ}+ oefenvragen met per-optie-uitleg en flashcards staan klaar in de app. Meer vragen en oude examens komen er doorlopend bij.</div>`
-      : `<div class="note">De oefenvragen voor VMBO GL/TL worden op dit moment toegevoegd. De examenstructuur, domeinen en data hierboven zijn al volledig beschikbaar in de app.</div>`}
+      ? `<div class="note">In de app staan ${nQ}+ oefenvragen met uitleg bij elk antwoord, en kaartjes met de begrippen. Er komen elke week vragen bij.</div>`
+      : `<div class="note">De oefenvragen voor dit vak komen er nu bij. Wat er in het examen komt en wanneer het is, staat al in de app.</div>`}
   </div>
 
   <div style="text-align:center;margin-top:1rem">
-    <a href="https://slagio.nl/?niveau=vmbo&amp;vak=${v.id}" class="cta">Gratis beginnen →</a>
-    <p style="color:var(--text-muted);margin-top:.5rem">Geen account nodig &middot; 100% gratis &middot; Offline beschikbaar</p>
+    <a href="https://slagio.nl/?niveau=vmbo&amp;vak=${v.id}" class="cta">Begin met oefenen</a>
+    <p style="color:var(--text-muted);margin-top:.5rem">Gratis, zonder account en ook offline</p>
   </div>
 
   <div class="card" style="margin-top:1.5rem">
-    <h2>Andere VMBO-vakken op Slagio</h2>
+    <h2>Andere vakken</h2>
     <p style="color:var(--text-muted);font-size:.95rem;line-height:2">${cross}</p>
   </div>
 
   <div class="footer">
-    <p>&copy; 2027 Slagio &middot; <a href="https://slagio.nl">slagio.nl</a> &middot; <a href="https://www.examenblad.nl">examenblad.nl</a></p>
+    <p>Slagio &middot; <a href="https://slagio.nl">slagio.nl</a> &middot; <a href="https://www.examenblad.nl">examenblad.nl</a></p>
     <p style="margin-top:.5rem"><a href="/vakken/">Alle vakpagina's</a></p>
   </div>
 </div>

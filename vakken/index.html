@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="nl" class="level-havo">
+<html lang="nl">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,13 +13,11 @@
   <meta property="og:type" content="website">
   <meta property="og:image" content="https://slagio.nl/icon-512.png">
   <link rel="icon" href="/icon-192.png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,700;12..96,800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/styles.css">
-  <script>
-  (function(){try{var t=localStorage.getItem('theme');if(t==='dark'||(!t&&matchMedia('(prefers-color-scheme:dark)').matches))document.documentElement.classList.add('dark');}catch(e){}})();
-  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/lp-menu.css">
+  <script src="/lp-menu.js"></script>
   <script type="application/ld+json">
   [
     {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[
@@ -29,150 +27,51 @@
     {"@context":"https://schema.org","@type":"CollectionPage","name":"Alle examenvakken HAVO, VWO en VMBO","url":"https://slagio.nl/vakken/","description":"Overzicht van alle examenvakken voor HAVO, VWO en VMBO GL/TL met oefenvragen, samenvattingen en (HAVO/VWO) oude examens.","isPartOf":{"@type":"WebSite","name":"Slagio","url":"https://slagio.nl"}}
   ]
   </script>
-  <style>
-    .up-wrap{max-width:900px;margin:0 auto;padding:0 24px 64px}
-    .up-hero{text-align:center;padding:48px 0 8px}
-    .up-badge{display:inline-block;background:var(--orl);color:var(--or);border:1.5px solid rgba(var(--or-rgb),.35);border-radius:999px;font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:5px 14px;margin-bottom:16px;font-family:var(--font)}
-    .up-hero h1{font-family:var(--font-head);font-size:clamp(28px,5vw,40px);font-weight:800;line-height:1.15;letter-spacing:-.5px;margin:0 0 12px;text-wrap:balance}
-    .up-hero h1 em{font-style:normal;color:var(--or)}
-    .up-sub{color:var(--mu);font-size:16px;max-width:580px;margin:0 auto 18px}
-    .up-chips{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin-bottom:8px}
-    .up-chip{background:var(--s);border:1px solid var(--bo);border-radius:999px;padding:5px 14px;font-size:12.5px;color:var(--mu);font-weight:600;box-shadow:var(--rd-shadow-1)}
-    .up-chip strong{color:var(--dk)}
-    .up-lvl{font-family:var(--font-head);font-size:20px;font-weight:800;letter-spacing:-.3px;margin:38px 0 4px;display:flex;align-items:center;gap:10px}
-    .up-lvl .pill{font-family:var(--font);font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:var(--or);background:var(--orl);border:1px solid rgba(var(--or-rgb),.3);border-radius:999px;padding:2px 9px}
-    .up-lvl-sub{color:var(--mu);font-size:13.5px;margin:0 0 16px}
-    .vk-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:12px}
-    .vk{display:flex;align-items:center;gap:13px;background:var(--s);border:1px solid var(--bo);border-radius:14px;padding:14px 16px;text-decoration:none;box-shadow:var(--rd-shadow-1);transition:transform .18s var(--ease-out),border-color .18s,box-shadow .18s}
-    .vk:hover{transform:translateY(-2px);border-color:rgba(var(--or-rgb),.45);box-shadow:var(--rd-shadow-2)}
-    .vk-badge{flex-shrink:0;width:40px;height:40px;border-radius:11px;background:rgba(var(--or-rgb),.12);color:var(--or);display:flex;align-items:center;justify-content:center;font-family:var(--font-head);font-weight:800;font-size:15px;letter-spacing:-.5px}
-    .vk-body{display:flex;flex-direction:column;min-width:0;flex:1}
-    .vk-name{font-weight:700;font-size:15px;color:var(--dk);line-height:1.2}
-    .vk-desc{font-size:11.5px;color:var(--mu);margin-top:2px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-    .vk-arr{color:var(--mu);font-weight:700;font-size:16px;flex-shrink:0;transition:transform .18s,color .18s}
-    .vk:hover .vk-arr{color:var(--or);transform:translateX(3px)}
-    .up-tools{background:var(--s);border:1px solid var(--bo);border-radius:16px;padding:22px 24px;box-shadow:var(--rd-shadow-1);margin-top:40px}
-    .up-tools h2{font-family:var(--font-head);font-size:18px;font-weight:800;margin:0 0 4px}
-    .up-tools p{color:var(--mu);font-size:13.5px;margin:0 0 14px}
-    .up-rel{display:flex;flex-wrap:wrap;gap:10px}
-    .up-rel a{font-size:13.5px;color:var(--dk);font-weight:600;text-decoration:none;background:var(--bg);border:1px solid var(--bo);border-radius:999px;padding:8px 16px;transition:border-color .2s,transform .2s}
-    .up-rel a:hover{border-color:rgba(var(--or-rgb),.5);transform:translateY(-1px)}
-    .up-cta{background:linear-gradient(135deg,rgba(var(--or-rgb),.10),rgba(var(--or-rgb),.03));border:1.5px solid rgba(var(--or-rgb),.35);border-radius:18px;padding:30px;text-align:center;margin:40px 0 8px}
-    .up-cta h2{font-family:var(--font-head);font-size:21px;font-weight:800;margin:0 0 8px}
-    .up-cta p{color:var(--mu);font-size:14.5px;max-width:540px;margin:0 auto 18px}
-    .up-cta-btn{display:inline-block;background:var(--or);color:#fff;font-weight:700;font-size:15px;padding:13px 30px;border-radius:14px;text-decoration:none;box-shadow:var(--rd-glow);transition:transform .2s,filter .2s}
-    .up-cta-btn:hover{transform:translateY(-1px);filter:brightness(1.06)}
-    .up-cta-sub{display:block;margin-top:12px;font-size:12.5px;color:var(--mu)}
-    .up-foot{border-top:1px solid var(--bo);margin-top:50px;padding:22px 24px;text-align:center;font-size:13px;color:var(--mu)}
-    .up-foot a{color:var(--or);text-decoration:none;font-weight:600}
-    .up-nav-cta{margin-left:auto;background:var(--or);color:#fff!important;font-weight:700;font-size:13.5px;padding:9px 18px;border-radius:12px;text-decoration:none;box-shadow:0 2px 10px rgba(var(--or-rgb),.3)}
-    .up-nav-cta:hover{filter:brightness(1.06)}
-    .up-nav-home{color:var(--mu);text-decoration:none;font-size:14px;font-weight:600}
-    .up-nav-home:hover{color:var(--dk)}
-  </style>
-</head>
-<body>
+  </head>
+<body class="lp2">
+<header class="lp-top"><div class="lp-top-in">
+  <a class="lp-logo" href="/"><img src="/icon-192.png" alt="">Slagio</a>
+  <button class="lp-terug" type="button" aria-label="Terug" onclick="lpTerug()"><svg viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7"/></svg></button>
+  <a class="lp-knop" href="/">Oefenen</a>
+</div></header>
 
-<nav class="nav"><div class="nav-inner">
-  <a class="logo" href="https://slagio.nl" style="text-decoration:none"><img src="/icon-192.png" alt="Slagio" style="width:26px;height:26px;border-radius:7px;object-fit:cover;flex-shrink:0">Slagio</a>
-  <a class="up-nav-home" href="/vakken/examenrooster-2027.html">Examenrooster</a>
-  <a class="up-nav-cta" href="https://slagio.nl/?utm_source=vakkenhub">Gratis oefenen</a>
-</div></nav>
-
-<div class="up-wrap">
-  <div class="up-hero">
-    <h1>Oefen voor <em>elk examenvak</em> - HAVO, VWO &amp; VMBO</h1>
-    <p class="up-sub">Kies je vak. Per vak vind je oefenvragen per domein, een samenvatting en - voor HAVO en VWO - echte oude examens. Gratis, geen account nodig.</p>
-    <div class="up-chips">
-      <span class="up-chip"><strong>43</strong> vak-niveaus</span>
-      <span class="up-chip"><strong>10.000+</strong> oefenvragen</span>
-      <span class="up-chip"><strong>220</strong> examendomeinen</span>
-    </div>
+<main class="lp-wrap">
+  <div class="lp-kop">
+    <img class="lp-vonk" src="/img/vonk-lp.svg" alt="" width="92" height="92">
+    <span class="lp-kop-label">Alle vakken</span>
+    <h1>Kies je vak</h1>
+    <p>Per vak oefen je per onderwerp, lees je de samenvatting en maak je oude examens. Gratis en zonder account.</p><div class="lp-chips"><span>43 <em>vakken</em></span><span>26.000+ <em>oefenvragen</em></span><span>3 <em>niveaus</em></span></div>
   </div>
+  <section class="lp-groep" style="--t1:#1d4ed8">
+    <h2 class="lp-groep-kop">Havo · 14 vakken</h2>
+    <p class="lp-groep-uitleg">Oefenvragen per onderwerp, oude examens en samenvattingen.</p>
+    <div class="lp-raster" style="--lp-or:#1d4ed8;--lp-or-rgb:29,78,216"><a class="lp-tegel " href="/vakken/havo-nederlands.html"><span class="lp-art">Nl</span><span class="lp-tt"><b>Nederlands</b></span><svg class="lp-pijl" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></svg></a><a class="lp-tegel " href="/vakken/havo-wiskunde-a.html"><span class="lp-art">wA</span><span class="lp-tt"><b>Wiskunde A</b></span><svg class="lp-pijl" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></svg></a><a class="lp-tegel " href="/vakken/havo-wiskunde-b.html"><span class="lp-art">wB</span><span class="lp-tt"><b>Wiskunde B</b></span><svg class="lp-pijl" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></svg></a><a class="lp-tegel " href="/vakken/havo-biologie.html"><span class="lp-art">Bi</span><span class="lp-tt"><b>Biologie</b></span><svg class="lp-pijl" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></svg></a><a class="lp-tegel " href="/vakken/havo-scheikunde.html"><span class="lp-art">Sk</span><span class="lp-tt"><b>Scheikunde</b></span><svg class="lp-pijl" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></svg></a><a class="lp-tegel " href="/vakken/havo-natuurkunde.html"><span class="lp-art">Na</span><span class="lp-tt"><b>Natuurkunde</b></span><svg class="lp-pijl" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></svg></a><a class="lp-tegel " href="/vakken/havo-engels.html"><span class="lp-art">En</span><span class="lp-tt"><b>Engels</b></span><svg class="lp-pijl" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></svg></a><a class="lp-tegel " href="/vakken/havo-economie.html"><span class="lp-art">Ec</span><span class="lp-tt"><b>Economie</b></span><svg class="lp-pijl" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></svg></a><a class="lp-tegel " href="/vakken/havo-bedrijfseconomie.html"><span class="lp-art">Be</span><span class="lp-tt"><b>Bedrijfseconomie</b></span><svg class="lp-pijl" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></svg></a><a class="lp-tegel " href="/vakken/havo-geschiedenis.html"><span class="lp-art">Gs</span><span class="lp-tt"><b>Geschiedenis</b></span><svg class="lp-pijl" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></svg></a><a class="lp-tegel " href="/vakken/havo-aardrijkskunde.html"><span class="lp-art">Ak</span><span class="lp-tt"><b>Aardrijkskunde</b></span><svg class="lp-pijl" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></svg></a><a class="lp-tegel " href="/vakken/havo-maatschappijwetenschappen.html"><span class="lp-art">Mw</span><span class="lp-tt"><b>Maatschappijwetenschappen</b></span><svg class="lp-pijl" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></svg></a><a class="lp-tegel " href="/vakken/havo-duits.html"><span class="lp-art">Du</span><span class="lp-tt"><b>Duits</b></span><svg class="lp-pijl" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></svg></a><a class="lp-tegel " href="/vakken/havo-frans.html"><span class="lp-art">Fr</span><span class="lp-tt"><b>Frans</b></span><svg class="lp-pijl" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></svg></a></div>
+  </section>
+  <section class="lp-groep" style="--t1:#6d28d9">
+    <h2 class="lp-groep-kop">Vwo · 17 vakken</h2>
+    <p class="lp-groep-uitleg">Ook Latijn, Grieks en informatica.</p>
+    <div class="lp-raster" style="--lp-or:#6d28d9;--lp-or-rgb:109,40,217"><a class="lp-tegel " href="/vakken/vwo-nederlands.html"><span class="lp-art">Nl</span><span class="lp-tt"><b>Nederlands</b></span><svg class="lp-pijl" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></svg></a><a class="lp-tegel " href="/vakken/vwo-wiskunde-a.html"><span class="lp-art">wA</span><span class="lp-tt"><b>Wiskunde A</b></span><svg class="lp-pijl" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></svg></a><a class="lp-tegel " href="/vakken/vwo-wiskunde-b.html"><span class="lp-art">wB</span><span class="lp-tt"><b>Wiskunde B</b></span><svg class="lp-pijl" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></svg></a><a class="lp-tegel " href="/vakken/vwo-biologie.html"><span class="lp-art">Bi</span><span class="lp-tt"><b>Biologie</b></span><svg class="lp-pijl" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></svg></a><a class="lp-tegel " href="/vakken/vwo-scheikunde.html"><span class="lp-art">Sk</span><span class="lp-tt"><b>Scheikunde</b></span><svg class="lp-pijl" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></svg></a><a class="lp-tegel " href="/vakken/vwo-natuurkunde.html"><span class="lp-art">Na</span><span class="lp-tt"><b>Natuurkunde</b></span><svg class="lp-pijl" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></svg></a><a class="lp-tegel " href="/vakken/vwo-engels.html"><span class="lp-art">En</span><span class="lp-tt"><b>Engels</b></span><svg class="lp-pijl" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></svg></a><a class="lp-tegel " href="/vakken/vwo-economie.html"><span class="lp-art">Ec</span><span class="lp-tt"><b>Economie</b></span><svg class="lp-pijl" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></svg></a><a class="lp-tegel " href="/vakken/vwo-bedrijfseconomie.html"><span class="lp-art">Be</span><span class="lp-tt"><b>Bedrijfseconomie</b></span><svg class="lp-pijl" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></svg></a><a class="lp-tegel " href="/vakken/vwo-geschiedenis.html"><span class="lp-art">Gs</span><span class="lp-tt"><b>Geschiedenis</b></span><svg class="lp-pijl" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></svg></a><a class="lp-tegel " href="/vakken/vwo-aardrijkskunde.html"><span class="lp-art">Ak</span><span class="lp-tt"><b>Aardrijkskunde</b></span><svg class="lp-pijl" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></svg></a><a class="lp-tegel " href="/vakken/vwo-maatschappijwetenschappen.html"><span class="lp-art">Mw</span><span class="lp-tt"><b>Maatschappijwetenschappen</b></span><svg class="lp-pijl" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></svg></a><a class="lp-tegel " href="/vakken/vwo-duits.html"><span class="lp-art">Du</span><span class="lp-tt"><b>Duits</b></span><svg class="lp-pijl" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></svg></a><a class="lp-tegel " href="/vakken/vwo-frans.html"><span class="lp-art">Fr</span><span class="lp-tt"><b>Frans</b></span><svg class="lp-pijl" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></svg></a><a class="lp-tegel " href="/vakken/vwo-informatica.html"><span class="lp-art">In</span><span class="lp-tt"><b>Informatica</b></span><svg class="lp-pijl" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></svg></a><a class="lp-tegel " href="/vakken/vwo-latijn.html"><span class="lp-art">La</span><span class="lp-tt"><b>Latijn</b></span><svg class="lp-pijl" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></svg></a><a class="lp-tegel " href="/vakken/vwo-grieks.html"><span class="lp-art">Gr</span><span class="lp-tt"><b>Grieks</b></span><svg class="lp-pijl" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></svg></a></div>
+  </section>
+  <section class="lp-groep" style="--t1:#0d9488">
+    <h2 class="lp-groep-kop">Vmbo gl/tl · 12 vakken</h2>
+    <p class="lp-groep-uitleg">Oefenvragen per onderwerp, kaartjes en samenvattingen.</p>
+    <div class="lp-raster" style="--lp-or:#0d9488;--lp-or-rgb:13,148,136"><a class="lp-tegel " href="/vakken/vmbo-nederlands.html"><span class="lp-art">Nl</span><span class="lp-tt"><b>Nederlands</b></span><svg class="lp-pijl" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></svg></a><a class="lp-tegel " href="/vakken/vmbo-engels.html"><span class="lp-art">En</span><span class="lp-tt"><b>Engels</b></span><svg class="lp-pijl" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></svg></a><a class="lp-tegel " href="/vakken/vmbo-duits.html"><span class="lp-art">Du</span><span class="lp-tt"><b>Duits</b></span><svg class="lp-pijl" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></svg></a><a class="lp-tegel " href="/vakken/vmbo-frans.html"><span class="lp-art">Fr</span><span class="lp-tt"><b>Frans</b></span><svg class="lp-pijl" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></svg></a><a class="lp-tegel " href="/vakken/vmbo-wiskunde.html"><span class="lp-art">Wi</span><span class="lp-tt"><b>Wiskunde</b></span><svg class="lp-pijl" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></svg></a><a class="lp-tegel " href="/vakken/vmbo-natuur-scheikunde-1.html"><span class="lp-art">N1</span><span class="lp-tt"><b>Natuur- en scheikunde 1</b></span><svg class="lp-pijl" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></svg></a><a class="lp-tegel " href="/vakken/vmbo-natuur-scheikunde-2.html"><span class="lp-art">N2</span><span class="lp-tt"><b>Natuur- en scheikunde 2</b></span><svg class="lp-pijl" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></svg></a><a class="lp-tegel " href="/vakken/vmbo-biologie.html"><span class="lp-art">Bi</span><span class="lp-tt"><b>Biologie</b></span><svg class="lp-pijl" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></svg></a><a class="lp-tegel " href="/vakken/vmbo-economie.html"><span class="lp-art">Ec</span><span class="lp-tt"><b>Economie</b></span><svg class="lp-pijl" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></svg></a><a class="lp-tegel " href="/vakken/vmbo-geschiedenis.html"><span class="lp-art">Gs</span><span class="lp-tt"><b>Geschiedenis &amp; staatsinrichting</b></span><svg class="lp-pijl" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></svg></a><a class="lp-tegel " href="/vakken/vmbo-aardrijkskunde.html"><span class="lp-art">Ak</span><span class="lp-tt"><b>Aardrijkskunde</b></span><svg class="lp-pijl" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></svg></a><a class="lp-tegel " href="/vakken/vmbo-maatschappijkunde.html"><span class="lp-art">Mk</span><span class="lp-tt"><b>Maatschappijkunde</b></span><svg class="lp-pijl" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></svg></a></div>
+  </section>
+  <section class="lp-groep" style="--t1:var(--lp-plan)">
+    <h2 class="lp-groep-kop">Rond je examen</h2>
+    <div class="lp-lijst"><a class="lp-tegel lp-plan" href="/vakken/examenrooster-2027.html"><span class="lp-art"><svg viewBox="0 0 48 48" aria-hidden="true"><rect x="20.5" y="3.5" width="7" height="5" rx="2" fill="var(--t1)"/><circle cx="24" cy="26" r="17" fill="var(--t1)"/><circle cx="24" cy="26" r="12.5" fill="#fff"/><path d="M24 26v-8M24 26l5.5 3.4" stroke="var(--t1)" stroke-width="3.2" stroke-linecap="round"/><circle cx="24" cy="26" r="2.4" fill="var(--t1)"/></svg></span><span class="lp-tt"><b>Examenrooster 2027</b><small>Wanneer je examens zijn</small></span><svg class="lp-pijl" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></svg></a><a class="lp-tegel lp-plan" href="/vakken/eindcijfer-calculator.html"><span class="lp-art"><svg viewBox="0 0 48 48" aria-hidden="true"><rect x="10" y="4" width="28" height="40" rx="6" fill="var(--t1)"/><rect x="14.5" y="8.5" width="19" height="9" rx="2.5" fill="var(--t2)"/><g fill="#fff"><circle cx="17.5" cy="24.5" r="2.5"/><circle cx="24" cy="24.5" r="2.5"/><circle cx="30.5" cy="24.5" r="2.5"/><circle cx="17.5" cy="31" r="2.5"/><circle cx="24" cy="31" r="2.5"/><circle cx="30.5" cy="31" r="2.5"/><circle cx="17.5" cy="37.5" r="2.5"/><circle cx="24" cy="37.5" r="2.5"/></g><rect x="28" y="34.5" width="5" height="6" rx="2.5" fill="var(--t2)"/></svg></span><span class="lp-tt"><b>Eindcijfer berekenen</b><small>Wat je op het CE nodig hebt</small></span><svg class="lp-pijl" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></svg></a><a class="lp-tegel lp-plan" href="/vakken/slaagkans-calculator.html"><span class="lp-art"><svg viewBox="0 0 48 48" aria-hidden="true"><rect x="7" y="27" width="9" height="13" rx="2.5" fill="var(--t2)"/><rect x="19.5" y="19" width="9" height="21" rx="2.5" fill="var(--t2)"/><rect x="32" y="9" width="9" height="31" rx="2.5" fill="var(--t1)"/><path d="M9 20l9-7 7 4 11-10" stroke="var(--t1)" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round" opacity=".55"/></svg></span><span class="lp-tt"><b>Slaag ik?</b><small>Check de slaag-zakregeling</small></span><svg class="lp-pijl" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></svg></a><a class="lp-tegel lp-plan" href="/vakken/n-term-calculator.html"><span class="lp-art"><svg viewBox="0 0 48 48" aria-hidden="true"><rect x="9" y="5" width="25" height="33" rx="4" fill="var(--t2)"/><rect x="14" y="12" width="14" height="3.2" rx="1.6" fill="var(--t1)"/><rect x="14" y="18.5" width="10" height="3.2" rx="1.6" fill="var(--t1)"/><rect x="14" y="25" width="12" height="3.2" rx="1.6" fill="var(--t1)" opacity=".55"/><circle cx="34" cy="35" r="9" fill="var(--t1)"/><path d="M30 35.2l2.8 2.8 5-5.6" stroke="#fff" stroke-width="2.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="lp-tt"><b>N-term</b><small>Van punten naar cijfer</small></span><svg class="lp-pijl" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></svg></a><a class="lp-tegel lp-plan" href="/vakken/examenuitslag-2027.html"><span class="lp-art"><svg viewBox="0 0 48 48" aria-hidden="true"><rect x="7" y="10" width="34" height="30" rx="5" fill="var(--t2)"/><path d="M7 15a5 5 0 0 1 5-5h24a5 5 0 0 1 5 5v4H7z" fill="var(--t1)"/><rect x="14" y="6" width="3.6" height="9" rx="1.8" fill="var(--t1)"/><rect x="30.4" y="6" width="3.6" height="9" rx="1.8" fill="var(--t1)"/><path d="M17 29.5l4.2 4.2 9-9.6" stroke="var(--t1)" stroke-width="3.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="lp-tt"><b>Uitslag 2027</b><small>Wanneer je het hoort</small></span><svg class="lp-pijl" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></svg></a><a class="lp-tegel " href="/leren/"><span class="lp-art"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M8 6.5A3.5 3.5 0 0 1 11.5 3H33l7 7v29.5a3.5 3.5 0 0 1-3.5 3.5h-25A3.5 3.5 0 0 1 8 39.5z" fill="var(--t2)"/><path d="M33 3v5.5a1.5 1.5 0 0 0 1.5 1.5H40z" fill="var(--t1)"/><rect x="14" y="16" width="16" height="3.2" rx="1.6" fill="var(--t1)"/><rect x="14" y="22.5" width="12" height="3.2" rx="1.6" fill="var(--t1)"/><path d="M27 41l2-7.5 12.5-12.5a2.8 2.8 0 0 1 4 4L33 37.5z" fill="var(--t1)"/><path d="M29 33.5l3.5 3.5" stroke="#fff" stroke-width="1.6" opacity=".7"/></svg></span><span class="lp-tt"><b>Uitleg per onderwerp</b><small>Lees en oefen per leerdoel</small></span><svg class="lp-pijl" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></svg></a><a class="lp-tegel lp-spel" href="/vakken/docenten.html"><span class="lp-art"><svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="31.5" cy="16" r="6.5" fill="var(--t2)"/><path d="M20 38a11.5 11.5 0 0 1 23 0z" fill="var(--t2)"/><circle cx="18.5" cy="18.5" r="7.5" fill="var(--t1)"/><path d="M5 41a13.5 13.5 0 0 1 27 0z" fill="var(--t1)"/></svg></span><span class="lp-tt"><b>Voor docenten</b><small>Slagio in je les</small></span><svg class="lp-pijl" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></svg></a><a class="lp-tegel lp-spel" href="/faq.html"><span class="lp-art"><svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="19" fill="var(--t2)"/><circle cx="24" cy="19.5" r="7" fill="var(--t1)"/><path d="M11.5 37.5a13 13 0 0 1 25 0A18.8 18.8 0 0 1 24 43a18.8 18.8 0 0 1-12.5-5.5z" fill="var(--t1)"/></svg></span><span class="lp-tt"><b>Vragen over Slagio</b><small>Gratis, account, privacy</small></span><svg class="lp-pijl" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></svg></a></div>
+  </section>
 
-  <div class="up-lvl"><span class="pill">HAVO</span> Examenvakken</div>
-  <p class="up-lvl-sub">14 vakken met oefenvragen, oude examens en samenvattingen.</p>
-  <div class="vk-grid">
-        <a class="vk" href="/vakken/havo-nederlands.html"><span class="vk-badge">Nl</span><span class="vk-body"><span class="vk-name">Nederlands</span><span class="vk-desc">Oefenvragen · oude examens · samenvatting</span></span><span class="vk-arr">→</span></a>
-        <a class="vk" href="/vakken/havo-wiskunde-a.html"><span class="vk-badge">wA</span><span class="vk-body"><span class="vk-name">Wiskunde A</span><span class="vk-desc">Oefenvragen · oude examens · samenvatting</span></span><span class="vk-arr">→</span></a>
-        <a class="vk" href="/vakken/havo-wiskunde-b.html"><span class="vk-badge">wB</span><span class="vk-body"><span class="vk-name">Wiskunde B</span><span class="vk-desc">Oefenvragen · oude examens · samenvatting</span></span><span class="vk-arr">→</span></a>
-        <a class="vk" href="/vakken/havo-biologie.html"><span class="vk-badge">Bi</span><span class="vk-body"><span class="vk-name">Biologie</span><span class="vk-desc">Oefenvragen · oude examens · samenvatting</span></span><span class="vk-arr">→</span></a>
-        <a class="vk" href="/vakken/havo-scheikunde.html"><span class="vk-badge">Sk</span><span class="vk-body"><span class="vk-name">Scheikunde</span><span class="vk-desc">Oefenvragen · oude examens · samenvatting</span></span><span class="vk-arr">→</span></a>
-        <a class="vk" href="/vakken/havo-natuurkunde.html"><span class="vk-badge">Na</span><span class="vk-body"><span class="vk-name">Natuurkunde</span><span class="vk-desc">Oefenvragen · oude examens · samenvatting</span></span><span class="vk-arr">→</span></a>
-        <a class="vk" href="/vakken/havo-engels.html"><span class="vk-badge">En</span><span class="vk-body"><span class="vk-name">Engels</span><span class="vk-desc">Oefenvragen · oude examens · samenvatting</span></span><span class="vk-arr">→</span></a>
-        <a class="vk" href="/vakken/havo-economie.html"><span class="vk-badge">Ec</span><span class="vk-body"><span class="vk-name">Economie</span><span class="vk-desc">Oefenvragen · oude examens · samenvatting</span></span><span class="vk-arr">→</span></a>
-        <a class="vk" href="/vakken/havo-bedrijfseconomie.html"><span class="vk-badge">Be</span><span class="vk-body"><span class="vk-name">Bedrijfseconomie</span><span class="vk-desc">Oefenvragen · oude examens · samenvatting</span></span><span class="vk-arr">→</span></a>
-        <a class="vk" href="/vakken/havo-geschiedenis.html"><span class="vk-badge">Gs</span><span class="vk-body"><span class="vk-name">Geschiedenis</span><span class="vk-desc">Oefenvragen · oude examens · samenvatting</span></span><span class="vk-arr">→</span></a>
-        <a class="vk" href="/vakken/havo-aardrijkskunde.html"><span class="vk-badge">Ak</span><span class="vk-body"><span class="vk-name">Aardrijkskunde</span><span class="vk-desc">Oefenvragen · oude examens · samenvatting</span></span><span class="vk-arr">→</span></a>
-        <a class="vk" href="/vakken/havo-maatschappijwetenschappen.html"><span class="vk-badge">Mw</span><span class="vk-body"><span class="vk-name">Maatschappijwetenschappen</span><span class="vk-desc">Oefenvragen · oude examens · samenvatting</span></span><span class="vk-arr">→</span></a>
-        <a class="vk" href="/vakken/havo-duits.html"><span class="vk-badge">Du</span><span class="vk-body"><span class="vk-name">Duits</span><span class="vk-desc">Oefenvragen · oude examens · samenvatting</span></span><span class="vk-arr">→</span></a>
-        <a class="vk" href="/vakken/havo-frans.html"><span class="vk-badge">Fr</span><span class="vk-body"><span class="vk-name">Frans</span><span class="vk-desc">Oefenvragen · oude examens · samenvatting</span></span><span class="vk-arr">→</span></a>
+  <div class="lp-eind">
+    <h2>Meteen beginnen?</h2>
+    <p>Open Slagio, kies je niveau en je eerste vak. Zet de app op je beginscherm, dan werkt hij ook zonder internet.</p>
+    <div class="lp-knoppen"><a class="lp-knop" href="https://slagio.nl/?utm_source=vakkenhub">Open Slagio</a></div>
   </div>
+</main>
 
-  <div class="up-lvl"><span class="pill">VWO</span> Examenvakken</div>
-  <p class="up-lvl-sub">17 vakken, inclusief Latijn, Grieks en Informatica.</p>
-  <div class="vk-grid">
-        <a class="vk" href="/vakken/vwo-nederlands.html"><span class="vk-badge">Nl</span><span class="vk-body"><span class="vk-name">Nederlands</span><span class="vk-desc">Oefenvragen · oude examens · samenvatting</span></span><span class="vk-arr">→</span></a>
-        <a class="vk" href="/vakken/vwo-wiskunde-a.html"><span class="vk-badge">wA</span><span class="vk-body"><span class="vk-name">Wiskunde A</span><span class="vk-desc">Oefenvragen · oude examens · samenvatting</span></span><span class="vk-arr">→</span></a>
-        <a class="vk" href="/vakken/vwo-wiskunde-b.html"><span class="vk-badge">wB</span><span class="vk-body"><span class="vk-name">Wiskunde B</span><span class="vk-desc">Oefenvragen · oude examens · samenvatting</span></span><span class="vk-arr">→</span></a>
-        <a class="vk" href="/vakken/vwo-biologie.html"><span class="vk-badge">Bi</span><span class="vk-body"><span class="vk-name">Biologie</span><span class="vk-desc">Oefenvragen · oude examens · samenvatting</span></span><span class="vk-arr">→</span></a>
-        <a class="vk" href="/vakken/vwo-scheikunde.html"><span class="vk-badge">Sk</span><span class="vk-body"><span class="vk-name">Scheikunde</span><span class="vk-desc">Oefenvragen · oude examens · samenvatting</span></span><span class="vk-arr">→</span></a>
-        <a class="vk" href="/vakken/vwo-natuurkunde.html"><span class="vk-badge">Na</span><span class="vk-body"><span class="vk-name">Natuurkunde</span><span class="vk-desc">Oefenvragen · oude examens · samenvatting</span></span><span class="vk-arr">→</span></a>
-        <a class="vk" href="/vakken/vwo-engels.html"><span class="vk-badge">En</span><span class="vk-body"><span class="vk-name">Engels</span><span class="vk-desc">Oefenvragen · oude examens · samenvatting</span></span><span class="vk-arr">→</span></a>
-        <a class="vk" href="/vakken/vwo-economie.html"><span class="vk-badge">Ec</span><span class="vk-body"><span class="vk-name">Economie</span><span class="vk-desc">Oefenvragen · oude examens · samenvatting</span></span><span class="vk-arr">→</span></a>
-        <a class="vk" href="/vakken/vwo-bedrijfseconomie.html"><span class="vk-badge">Be</span><span class="vk-body"><span class="vk-name">Bedrijfseconomie</span><span class="vk-desc">Oefenvragen · oude examens · samenvatting</span></span><span class="vk-arr">→</span></a>
-        <a class="vk" href="/vakken/vwo-geschiedenis.html"><span class="vk-badge">Gs</span><span class="vk-body"><span class="vk-name">Geschiedenis</span><span class="vk-desc">Oefenvragen · oude examens · samenvatting</span></span><span class="vk-arr">→</span></a>
-        <a class="vk" href="/vakken/vwo-aardrijkskunde.html"><span class="vk-badge">Ak</span><span class="vk-body"><span class="vk-name">Aardrijkskunde</span><span class="vk-desc">Oefenvragen · oude examens · samenvatting</span></span><span class="vk-arr">→</span></a>
-        <a class="vk" href="/vakken/vwo-maatschappijwetenschappen.html"><span class="vk-badge">Mw</span><span class="vk-body"><span class="vk-name">Maatschappijwetenschappen</span><span class="vk-desc">Oefenvragen · oude examens · samenvatting</span></span><span class="vk-arr">→</span></a>
-        <a class="vk" href="/vakken/vwo-duits.html"><span class="vk-badge">Du</span><span class="vk-body"><span class="vk-name">Duits</span><span class="vk-desc">Oefenvragen · oude examens · samenvatting</span></span><span class="vk-arr">→</span></a>
-        <a class="vk" href="/vakken/vwo-frans.html"><span class="vk-badge">Fr</span><span class="vk-body"><span class="vk-name">Frans</span><span class="vk-desc">Oefenvragen · oude examens · samenvatting</span></span><span class="vk-arr">→</span></a>
-        <a class="vk" href="/vakken/vwo-informatica.html"><span class="vk-badge">In</span><span class="vk-body"><span class="vk-name">Informatica</span><span class="vk-desc">Oefenvragen · oude examens · samenvatting</span></span><span class="vk-arr">→</span></a>
-        <a class="vk" href="/vakken/vwo-latijn.html"><span class="vk-badge">La</span><span class="vk-body"><span class="vk-name">Latijn</span><span class="vk-desc">Oefenvragen · oude examens · samenvatting</span></span><span class="vk-arr">→</span></a>
-        <a class="vk" href="/vakken/vwo-grieks.html"><span class="vk-badge">Gr</span><span class="vk-body"><span class="vk-name">Grieks</span><span class="vk-desc">Oefenvragen · oude examens · samenvatting</span></span><span class="vk-arr">→</span></a>
-  </div>
-
-  <div class="up-lvl"><span class="pill">VMBO GL/TL</span> Examenvakken</div>
-  <p class="up-lvl-sub">12 vakken met oefenvragen per domein, flashcards en samenvattingen.</p>
-  <div class="vk-grid">
-        <a class="vk" href="/vakken/vmbo-nederlands.html"><span class="vk-badge">Nl</span><span class="vk-body"><span class="vk-name">Nederlands</span><span class="vk-desc">Oefenvragen · flashcards · samenvatting</span></span><span class="vk-arr">→</span></a>
-        <a class="vk" href="/vakken/vmbo-engels.html"><span class="vk-badge">En</span><span class="vk-body"><span class="vk-name">Engels</span><span class="vk-desc">Oefenvragen · flashcards · samenvatting</span></span><span class="vk-arr">→</span></a>
-        <a class="vk" href="/vakken/vmbo-duits.html"><span class="vk-badge">Du</span><span class="vk-body"><span class="vk-name">Duits</span><span class="vk-desc">Oefenvragen · flashcards · samenvatting</span></span><span class="vk-arr">→</span></a>
-        <a class="vk" href="/vakken/vmbo-frans.html"><span class="vk-badge">Fr</span><span class="vk-body"><span class="vk-name">Frans</span><span class="vk-desc">Oefenvragen · flashcards · samenvatting</span></span><span class="vk-arr">→</span></a>
-        <a class="vk" href="/vakken/vmbo-wiskunde.html"><span class="vk-badge">Wi</span><span class="vk-body"><span class="vk-name">Wiskunde</span><span class="vk-desc">Oefenvragen · flashcards · samenvatting</span></span><span class="vk-arr">→</span></a>
-        <a class="vk" href="/vakken/vmbo-natuur-scheikunde-1.html"><span class="vk-badge">N1</span><span class="vk-body"><span class="vk-name">Natuur- en scheikunde 1</span><span class="vk-desc">Oefenvragen · flashcards · samenvatting</span></span><span class="vk-arr">→</span></a>
-        <a class="vk" href="/vakken/vmbo-natuur-scheikunde-2.html"><span class="vk-badge">N2</span><span class="vk-body"><span class="vk-name">Natuur- en scheikunde 2</span><span class="vk-desc">Oefenvragen · flashcards · samenvatting</span></span><span class="vk-arr">→</span></a>
-        <a class="vk" href="/vakken/vmbo-biologie.html"><span class="vk-badge">Bi</span><span class="vk-body"><span class="vk-name">Biologie</span><span class="vk-desc">Oefenvragen · flashcards · samenvatting</span></span><span class="vk-arr">→</span></a>
-        <a class="vk" href="/vakken/vmbo-economie.html"><span class="vk-badge">Ec</span><span class="vk-body"><span class="vk-name">Economie</span><span class="vk-desc">Oefenvragen · flashcards · samenvatting</span></span><span class="vk-arr">→</span></a>
-        <a class="vk" href="/vakken/vmbo-geschiedenis.html"><span class="vk-badge">Gs</span><span class="vk-body"><span class="vk-name">Geschiedenis &amp; staatsinrichting</span><span class="vk-desc">Oefenvragen · flashcards · samenvatting</span></span><span class="vk-arr">→</span></a>
-        <a class="vk" href="/vakken/vmbo-aardrijkskunde.html"><span class="vk-badge">Ak</span><span class="vk-body"><span class="vk-name">Aardrijkskunde</span><span class="vk-desc">Oefenvragen · flashcards · samenvatting</span></span><span class="vk-arr">→</span></a>
-        <a class="vk" href="/vakken/vmbo-maatschappijkunde.html"><span class="vk-badge">Mk</span><span class="vk-body"><span class="vk-name">Maatschappijkunde</span><span class="vk-desc">Oefenvragen · flashcards · samenvatting</span></span><span class="vk-arr">→</span></a>
-  </div>
-
-  <div class="up-tools">
-    <h2>Handige examentools</h2>
-    <p>Reken je cijfers uit en bekijk wanneer je examens zijn.</p>
-    <div class="up-rel">
-      <a href="/leren/">📘 Uitleg en oefenvragen per onderwerp</a>
-      <a href="/vakken/examenrooster-2027.html">📅 Examenrooster 2027</a>
-      <a href="/vakken/examenuitslag-2027.html">🎓 Examenuitslag 2027</a>
-      <a href="/vakken/n-term-calculator.html">🧮 N-term-calculator</a>
-      <a href="/vakken/slaagkans-calculator.html">🎯 Slaagkans-calculator</a>
-      <a href="/vakken/eindcijfer-calculator.html">📊 Eindcijfer-calculator</a>
-      <a href="/vakken/docenten.html">🍎 Voor docenten &amp; scholen</a>
-    </div>
-  </div>
-
-  <div class="up-cta">
-    <h2>Alles op één plek, helemaal gratis</h2>
-    <p>Oefen adaptief per domein, maak een simulatietoets, leer met flashcards en volg een studieplan tot aan je examen. Werkt ook offline als app.</p>
-    <a class="up-cta-btn" href="https://slagio.nl/?utm_source=vakkenhub">Open Slagio gratis →</a>
-    <span class="up-cta-sub">Geen account nodig · installeerbaar op je telefoon</span>
-  </div>
-</div>
-
-<footer class="up-foot">
-  <a href="https://slagio.nl">Slagio</a> · gratis examenvoorbereiding voor HAVO, VWO &amp; VMBO<br>
-  <a href="/over-ons.html">Over ons</a> · <a href="/faq.html">Veelgestelde vragen</a> · <a href="/privacy.html">Privacy</a> · <a href="mailto:slagiocompany@gmail.com">Contact</a>
+<footer class="lp-voet">
+  <span class="lp-voet-merk">Slagio, gratis oefenen voor havo, vwo en vmbo</span>
+  <a href="/vakken/">Alle vakken</a><a href="/faq.html">Vragen</a><a href="/over-ons.html">Over ons</a><a href="/privacy.html">Privacy</a><a href="/voorwaarden.html">Voorwaarden</a><a href="mailto:slagiocompany@gmail.com">Contact</a>
 </footer>
 </body>
 </html>
