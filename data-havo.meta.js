@@ -2040,6 +2040,28 @@ var VAKKEN = [
       "nOe": 5,
       "nBeg": 11,
       "hasSam": true
+     },
+     {
+      "id": "E4",
+      "lo": "sk.E.4",
+      "gs": 2,
+      "naam": "Levenscyclusanalyse",
+      "beschrijving": "Je beoordeelt met een levenscyclusanalyse de milieubelasting van een product over alle fasen, kiest een functionele eenheid, werkt met CO₂-equivalent en andere milieu-indicatoren, leest gestapelde staafgrafieken en herkent de invloed van aannames.",
+      "ceStatus": "CE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Wat een levenscyclusanalyse is",
+       "De fasen van de levenscyclus",
+       "De functionele eenheid",
+       "Milieu-indicatoren",
+       "Resultaten lezen en vergelijken",
+       "Aannames en beperkingen"
+      ],
+      "nSv": 28,
+      "nOe": 5,
+      "nBeg": 11,
+      "hasSam": true
      }
     ]
    }

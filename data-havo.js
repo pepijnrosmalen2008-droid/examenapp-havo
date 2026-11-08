@@ -82112,6 +82112,696 @@ var VAKKEN = [
         "u": "Bijvoorbeeld: de batterij vervangbaar maken, zodat de borstel langer meegaat (hergebruik, hoger op de ladder) (1p); de behuizing van één soort plastic maken of onderdelen makkelijk scheidbaar, zodat het materiaal gerecycled kan worden (1p)."
        }
       ]
+     },
+     {
+      "id": "E4",
+      "lo": "sk.E.4",
+      "gs": 2,
+      "naam": "Levenscyclusanalyse",
+      "beschrijving": "Je beoordeelt met een levenscyclusanalyse de milieubelasting van een product over alle fasen, kiest een functionele eenheid, werkt met CO₂-equivalent en andere milieu-indicatoren, leest gestapelde staafgrafieken en herkent de invloed van aannames.",
+      "ceStatus": "CE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Wat een levenscyclusanalyse is",
+       "De fasen van de levenscyclus",
+       "De functionele eenheid",
+       "Milieu-indicatoren",
+       "Resultaten lezen en vergelijken",
+       "Aannames en beperkingen"
+      ],
+      "sam": "Een LCA telt de milieubelasting op van grondstof, productie, transport, gebruik en afval: van wieg tot graf. Welke fase het grootst is, verschilt per product. Vergelijk op een functionele eenheid (dezelfde dienst), niet per stuk. CO₂-equivalent maakt broeikasgassen optelbaar; er zijn meer indicatoren. Lees gestapelde staven per fase en vergelijk totalen. De uitkomst hangt af van aannames zoals levensduur en stroommix.",
+      "begrippen": [
+       {
+        "t": "Levenscyclusanalyse",
+        "d": "Methode om de milieubelasting van een product over alle fasen van zijn leven op te tellen (LCA)."
+       },
+       {
+        "t": "Van wieg tot graf",
+        "d": "De hele levensloop van een product, van grondstofwinning tot afvalverwerking."
+       },
+       {
+        "t": "Gebruiksfase",
+        "d": "De fase waarin het product gebruikt wordt, bijvoorbeeld met stroom- of brandstofverbruik."
+       },
+       {
+        "t": "Afvalfase",
+        "d": "De verwerking van het product na gebruik: hergebruik, recycling, verbranden of storten."
+       },
+       {
+        "t": "Functionele eenheid",
+        "d": "De dienst waarop je producten vergelijkt, zoals 100 keer drinken of 1000 liter verpakte melk."
+       },
+       {
+        "t": "CO₂-equivalent",
+        "d": "Hoeveelheid broeikasgassen omgerekend naar de hoeveelheid CO₂ met hetzelfde opwarmend effect."
+       },
+       {
+        "t": "Milieu-indicator",
+        "d": "Maat voor één soort milieuschade, zoals klimaat, watergebruik of fossiele grondstoffen."
+       },
+       {
+        "t": "Gestapelde staafgrafiek",
+        "d": "Grafiek waarin elke staaf is opgebouwd uit de bijdragen van de verschillende fasen."
+       },
+       {
+        "t": "Aanname",
+        "d": "Keuze in een LCA-berekening, zoals de levensduur, het aantal keer hergebruik of de stroommix."
+       },
+       {
+        "t": "Stroommix",
+        "d": "De verdeling van de bronnen waaruit elektriciteit wordt opgewekt, zoals kolen, gas, wind en zon."
+       },
+       {
+        "t": "Milieubelasting",
+        "d": "De totale schade die een product veroorzaakt aan klimaat, water, bodem en grondstoffen."
+       }
+      ],
+      "sv": [
+       {
+        "v": "Wat onderzoek je met een levenscyclusanalyse (LCA)?",
+        "o": [
+         "Hoe lang een product meegaat",
+         "Alleen hoeveel afval een product aan het eind van zijn leven oplevert",
+         "Milieubelasting over alle fasen, van grondstof tot afval",
+         "Hoeveel een product kost in de winkel"
+        ],
+        "c": 2,
+        "d": 1,
+        "s": 0,
+        "u": "LCA = van wieg tot graf: alle fasen meetellen.",
+        "uo": [
+         "Koos je hoe lang het meegaat? Dat is een belangrijk gegeven in een LCA, maar niet het doel. Het gaat om de totale milieubelasting.",
+         "Koos je alleen afval? De afvalfase is één van de fasen. Een LCA kijkt ook naar grondstof, productie, transport en gebruik.",
+         "Klopt: in een LCA tel je de milieubelasting op van grondstofwinning, productie, transport, gebruik en afvalverwerking. Zo zie je het hele plaatje, van wieg tot graf.",
+         "Koos je prijs? Een LCA gaat over milieu, niet over kosten. Wat een product kost, zegt niets over de milieubelasting."
+        ],
+        "uh": "LCA = alle fasen."
+       },
+       {
+        "v": "Waarom is het misleidend om alleen naar de productiefase van een product te kijken?",
+        "o": [
+         "De productiefase heeft nooit milieubelasting",
+         "Een andere fase kan veel groter zijn",
+         "Andere fasen zijn altijd te verwaarlozen",
+         "Alleen de afvalfase telt mee in een LCA"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 0,
+        "u": "Bij een auto is de gebruiksfase (brandstof) vaak het grootst.",
+        "uo": [
+         "Koos je nooit milieubelasting? Productie kost wel degelijk grondstoffen en energie. Maar het is niet altijd de grootste post.",
+         "Klopt: bij een auto komt bijvoorbeeld het grootste deel van de CO₂-uitstoot uit de brandstof tijdens het rijden. Wie alleen naar de fabriek kijkt, mist het belangrijkste deel.",
+         "Koos je te verwaarlozen? Juist niet: soms is een andere fase de grootste. Daarom kijk je naar alle fasen.",
+         "Koos je alleen afval? Ook de afvalfase is maar één van de fasen. Dan maak je dezelfde fout als de fabrikant, alleen omgekeerd."
+        ],
+        "uh": "Kijk naar alle fasen, niet één."
+       },
+       {
+        "v": "Wat is het belangrijkste bezwaar tegen de conclusie van de fabrikant?",
+        "o": [
+         "Hij kijkt alleen naar de productiefase",
+         "Hij had naar de prijs moeten kijken",
+         "Een glazen fles heeft geen productiefase",
+         "Hij had alleen de afvalfase moeten bekijken"
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 0,
+        "u": "Een conclusie over \"milieuvriendelijk\" vraagt een vergelijking over de hele levenscyclus.",
+        "uo": [
+         "Klopt: de fabrikant vergelijkt alleen de productie van één fles. Een glazen fles kan vaak opnieuw gevuld worden, en transport en afval tellen ook mee. Pas met alle fasen kun je zeggen welke verpakking beter is.",
+         "Koos je prijs? Een LCA gaat over milieubelasting, niet over geld. De staven laten de uitstoot per fase zien.",
+         "Koos je geen productiefase? Glas maken kost juist veel energie. Dat is een van de redenen om ook naar hergebruik te kijken.",
+         "Koos je alleen afval? Dan maak je dezelfde fout de andere kant op: ook dan kijk je naar één fase."
+        ],
+        "uh": "Eén fase is geen LCA.",
+        "ctx": "Een frisdrankfabrikant meldt: \"Een PET-fles kost bij de productie minder energie dan een glazen fles. Daarom is PET de milieuvriendelijkste verpakking.\" Glazen flessen van dit merk worden ingezameld, gewassen en gemiddeld 25 keer opnieuw gevuld. PET-flessen worden na één keer gebruik ingezameld voor recycling."
+       },
+       {
+        "v": "Welke fase hoort niet bij de levenscyclus van een product?",
+        "o": [
+         "De afvalverwerking",
+         "De winning van grondstoffen",
+         "Het transport naar de winkel",
+         "De reclamecampagne op tv"
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 1,
+        "u": "Fasen: grondstof, productie, transport, gebruik, afval.",
+        "uo": [
+         "Koos je afvalverwerking? Dat is de laatste fase, het graf van de levenscyclus. Ook die telt dus mee.",
+         "Koos je grondstofwinning? Dat is juist de eerste fase van de levenscyclus: de wieg. Daar begint de LCA.",
+         "Koos je transport? Transport tussen de fasen telt mee, bijvoorbeeld van fabriek naar winkel.",
+         "Klopt: een LCA gaat over de materiële levensloop: grondstof, productie, transport, gebruik en afval. De reclame valt daarbuiten."
+        ],
+        "uh": "Wieg tot graf: grondstof → afval."
+       },
+       {
+        "v": "In welke fase heeft een wasmachine waarschijnlijk de grootste milieubelasting?",
+        "o": [
+         "Het transport van de fabriek naar de winkel",
+         "De productie van de verpakking",
+         "De gebruiksfase, door stroom en water",
+         "Het slopen aan het eind"
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 1,
+        "u": "Apparaten die jaren energie gebruiken: gebruiksfase domineert.",
+        "uo": [
+         "Koos je transport? Eén keer vervoeren is weinig in vergelijking met duizenden wasbeurten.",
+         "Koos je de verpakking? Een doos karton is klein vergeleken met vijftien jaar stroom en water.",
+         "Klopt: een wasmachine draait vijftien jaar lang en gebruikt bij elke was stroom en water, en vaak warm water. Over de hele levensduur is dat meestal de grootste post.",
+         "Koos je slopen? De afvalfase telt mee, maar is bij een apparaat dat veel energie gebruikt meestal klein."
+        ],
+        "uh": "Energieslurpers: gebruiksfase."
+       },
+       {
+        "v": "In welke fase zit bij de elektrische auto de grootste uitstoot, en wat betekent dat?",
+        "o": [
+         "Gebruik, door het opladen; hij scoort altijd slechter",
+         "Productie (batterij); meer kilometers maakt hem gunstiger",
+         "Afval, door de batterij; daardoor kan hij nooit beter zijn",
+         "Transport naar de dealer; dat bepaalt alles"
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 1,
+        "u": "Grote productie-uitstoot, kleine gebruiksuitstoot: na genoeg kilometers wint de EV.",
+        "uo": [
+         "Koos je gebruik? In dit voorbeeld is de gebruiksfase van de elektrische auto juist kleiner dan die van de benzineauto.",
+         "Klopt: de batterij zorgt voor een hoge uitstoot bij de productie. Maar per kilometer stoot de elektrische auto minder uit. Hoe meer kilometers, hoe meer de lagere gebruiksuitstoot die voorsprong inhaalt.",
+         "Koos je afval? De afvalfase is in dit voorbeeld klein, en batterijen kunnen deels gerecycled worden.",
+         "Koos je transport? Transport naar de dealer is in een LCA meestal een kleine post."
+        ],
+        "uh": "Hoge productie, lage gebruiksuitstoot.",
+        "ctx": "Een vereenvoudigde LCA vergelijkt over 200 000 km een benzineauto en een elektrische auto, in ton CO₂-equivalent. Benzineauto: productie 7, gebruik 35, afval 1. Elektrische auto: productie 12 (vooral de batterij), gebruik 10, afval 1. Het gebruik van de elektrische auto is berekend met de gemiddelde Nederlandse stroom."
+       },
+       {
+        "v": "Waarom telt transport mee in een LCA?",
+        "o": [
+         "Vervoer kost brandstof en geeft uitstoot",
+         "Transport maakt het product duurder",
+         "Transport bepaalt de kleur van het product",
+         "Transport komt alleen voor bij voedsel"
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 1,
+        "u": "Elke vervoersstap verbruikt energie.",
+        "uo": [
+         "Klopt: vrachtwagens, schepen en vliegtuigen verbruiken brandstof en stoten CO₂ en andere stoffen uit. Daarom telt het transport tussen alle fasen mee.",
+         "Koos je duurder? Een LCA gaat over milieubelasting, niet over kosten. Transport telt mee vanwege de brandstof die het kost.",
+         "Koos je kleur? Transport heeft niets met de kleur van een product te maken. Het telt mee vanwege brandstof en uitstoot.",
+         "Koos je alleen voedsel? Bijna elk product wordt vervoerd: grondstoffen naar de fabriek, producten naar de winkel, afval naar de verwerker."
+        ],
+        "uh": "Transport = brandstof = uitstoot."
+       },
+       {
+        "v": "Waarvoor dient een functionele eenheid in een LCA?",
+        "o": [
+         "De prijs per stuk",
+         "Het gewicht van één product",
+         "De fabriek waar het product gemaakt wordt en de grondstof vandaan komt",
+         "De dienst waarop je vergelijkt, zoals 100 keer koffie"
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 2,
+        "u": "Vergelijk producten op dezelfde dienst, niet per stuk.",
+        "uo": [
+         "Koos je prijs? Een LCA gaat over milieu, niet over geld. Een functionele eenheid beschrijft wat het product doet.",
+         "Koos je gewicht? Twee producten met hetzelfde gewicht kunnen heel verschillend vaak gebruikt worden. Het gaat om de functie.",
+         "Koos je fabriek? De plaats van productie speelt mee in de LCA, maar is geen functionele eenheid.",
+         "Klopt: een glazen beker en een papieren bekertje doen niet hetzelfde: de glazen beker gaat honderden keren mee. Daarom vergelijk je ze op dezelfde functie, bijvoorbeeld 100 keer koffie drinken."
+        ],
+        "uh": "Functionele eenheid = zelfde dienst."
+       },
+       {
+        "v": "Waarom vergelijk je een herbruikbare beker niet per stuk met een wegwerpbeker?",
+        "o": [
+         "Wegwerpbekers hebben geen milieubelasting",
+         "Een herbruikbare beker is altijd zwaarder",
+         "Hij gaat veel vaker mee, dus ongelijke diensten",
+         "Per stuk is altijd de eerlijkste vergelijking tussen twee soorten bekers"
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 2,
+        "u": "Eén herbruikbare beker vervangt honderden wegwerpbekers.",
+        "uo": [
+         "Koos je geen milieubelasting? Ook een wegwerpbeker kost grondstof, energie en geeft afval.",
+         "Koos je zwaarder? Dat klopt vaak wel, maar het gewicht is niet het punt. Het gaat om hoe vaak hij gebruikt wordt.",
+         "Klopt: één herbruikbare beker doet hetzelfde werk als honderden wegwerpbekers. Daarom vergelijk je per functie, bijvoorbeeld per 100 keer drinken, en niet per beker.",
+         "Koos je per stuk eerlijk? Per stuk zou de herbruikbare beker slechter lijken, terwijl hij veel vaker meegaat."
+        ],
+        "uh": "Vergelijk per gebruik, niet per stuk."
+       },
+       {
+        "v": "Hoe vaak moet de herbruikbare beker minstens gebruikt worden om minder uit te stoten dan wegwerpbekers?",
+        "o": [
+         "Ongeveer 31 keer",
+         "Ongeveer 63 keer",
+         "1 keer",
+         "Ongeveer 125 keer"
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 2,
+        "u": "1,25 + 0,02n = 0,04n → n = 1,25 / 0,02 = 62,5.",
+        "uo": [
+         "Koos je 31 keer? Dan heb je 1,25 / 0,04 gedeeld. Maar de herbruikbare beker heeft ook bij elk gebruik 0,02 kg door afwassen.",
+         "Klopt: bij n keer drinken is de herbruikbare beker 1,25 + 0,02n en zijn de wegwerpbekers 0,04n kg. Gelijk bij 1,25 = 0,02n, dus n = 62,5. Vanaf ongeveer 63 keer wint de herbruikbare beker.",
+         "Koos je 1 keer? Na één keer drinken heeft de herbruikbare beker 1,27 kg uitgestoten en de wegwerpbeker 0,04 kg.",
+         "Koos je 125 keer? Dan heb je 1,25 / 0,01 gedeeld. Het verschil per gebruik is 0,04 − 0,02 = 0,02 kg."
+        ],
+        "uh": "Gelijkstellen en oplossen.",
+        "ctx": "Een vereenvoudigde LCA geeft: een herbruikbare beker kost 1,25 kg CO₂-equivalent om te maken, en elke afwasbeurt kost 0,02 kg. Een wegwerpbeker kost per keer 0,04 kg, inclusief productie en afval. Een kantine wil weten na hoeveel keer gebruiken de herbruikbare beker beter is."
+       },
+       {
+        "v": "Welke functionele eenheid is het meest geschikt om melkverpakkingen te vergelijken?",
+        "o": [
+         "Per 1000 liter verpakte melk",
+         "Per verpakking",
+         "Per kilogram verpakkingsmateriaal",
+         "Per vrachtwagen"
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 2,
+        "u": "Kies een eenheid die de functie beschrijft: melk verpakken.",
+        "uo": [
+         "Klopt: de functie van een verpakking is melk bevatten. Een glazen fles van 1 liter die 20 keer meegaat en een pak van 1 liter dat één keer gebruikt wordt, vergelijk je eerlijk per hoeveelheid verpakte melk.",
+         "Koos je per verpakking? Een glazen fles gaat vaker mee dan een pak. Per stuk vergelijk je dus ongelijke diensten.",
+         "Koos je per kilogram materiaal? Glas weegt veel meer dan karton. Per kilo zegt niets over hoeveel melk je ermee verpakt.",
+         "Koos je per vrachtwagen? Dat is een transporteenheid, geen functie van de verpakking."
+        ],
+        "uh": "Functie = hoeveelheid verpakte melk.",
+        "ctx": "Een zuivelbedrijf twijfelt tussen een glazen fles van 1 liter die gemiddeld 20 keer gewassen en opnieuw gevuld wordt, en een kartonnen pak van 1 liter dat na gebruik bij het oud papier gaat. Een milieuadviseur gaat een LCA maken en moet eerst de functionele eenheid kiezen."
+       },
+       {
+        "v": "Hoe werkt het rekenen in CO₂-equivalent in een LCA?",
+        "o": [
+         "De massa van het product in kilogram",
+         "Alleen het CO₂ dat bij verbranding vrijkomt",
+         "De hoeveelheid zuurstof die nodig is",
+         "Alle broeikasgassen omgerekend naar CO₂"
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 3,
+        "u": "Methaan, lachgas enzovoort worden omgerekend naar CO₂ voor één getal.",
+        "uo": [
+         "Koos je massa van het product? Die staat los van de uitstoot. CO₂-equivalent meet het effect op het klimaat.",
+         "Koos je alleen CO₂? Dan zou je methaan van koeien of lachgas van kunstmest missen. Die worden juist omgerekend.",
+         "Koos je zuurstof? CO₂-equivalent gaat over het broeikaseffect, niet over het zuurstofverbruik.",
+         "Klopt: methaan en lachgas warmen de aarde per kilo veel sterker op dan CO₂. Door ze om te rekenen naar CO₂-equivalent kun je alle broeikasgassen in één getal optellen."
+        ],
+        "uh": "CO₂-eq = alle broeikasgassen in één getal."
+       },
+       {
+        "v": "Waarom kijkt een LCA naar meer dan alleen de CO₂-uitstoot?",
+        "o": [
+         "Andere stoffen zijn makkelijker te meten dan CO₂ in de lucht",
+         "CO₂ is niet schadelijk",
+         "Een product kan op andere punten slecht scoren",
+         "Een LCA mag maar één getal geven"
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 3,
+        "u": "Meerdere indicatoren: klimaat, energie, water, verzuring, toxiciteit, land.",
+        "uo": [
+         "Koos je makkelijker te meten? Dat is niet de reden. Het gaat erom dat je verschillende soorten schade ziet.",
+         "Koos je CO₂ niet schadelijk? CO₂ versterkt het broeikaseffect. Het is wel een belangrijke indicator, maar niet de enige.",
+         "Klopt: een product kan weinig CO₂ uitstoten maar veel water gebruiken, veel land vragen of giftige stoffen opleveren. Daarom gebruikt een LCA meerdere milieu-indicatoren.",
+         "Koos je één getal? Een LCA geeft juist meerdere uitkomsten, per indicator, zodat je ook water en grondgebruik ziet."
+        ],
+        "uh": "Meer indicatoren = vollediger beeld."
+       },
+       {
+        "v": "Welke conclusie past bij de resultaten?",
+        "o": [
+         "Katoen is op alle punten beter",
+         "Katoen slechter op water, polyester op fossiel",
+         "Polyester is op alle punten beter",
+         "De twee shirts zijn gelijk, want ze wegen evenveel"
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 3,
+        "u": "Verschillende indicatoren geven verschillende winnaars.",
+        "uo": [
+         "Koos je katoen overal beter? Katoen gebruikt in dit voorbeeld veel meer water.",
+         "Klopt: katoen vraagt veel water voor de teelt, polyester wordt uit aardolie gemaakt. Welk shirt beter is, hangt af van welke indicator je het zwaarst laat wegen.",
+         "Koos je polyester overal beter? Polyester gebruikt fossiele grondstof en scoort daar slechter.",
+         "Koos je gelijk door gewicht? Hetzelfde gewicht zegt niets over de milieubelasting. De indicatoren verschillen."
+        ],
+        "uh": "Weeg indicatoren tegen elkaar af.",
+        "ctx": "Een vereenvoudigde LCA van twee T-shirts van 200 gram. Katoenen shirt: 2700 liter water, 0,1 kg fossiele grondstof, 2,1 kg CO₂-equivalent. Polyester shirt: 20 liter water, 0,5 kg fossiele grondstof, 2,3 kg CO₂-equivalent. De onderzoekers geven geen eindoordeel."
+       },
+       {
+        "v": "Waarom heeft rundvlees een hoge CO₂-equivalent per kilo?",
+        "o": [
+         "Koeien stoten methaan uit en eten veel voer",
+         "Rundvlees wordt altijd per vliegtuig vervoerd",
+         "Rundvlees bevat veel CO₂",
+         "Koeien ademen geen zuurstof in"
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 3,
+        "u": "Methaan uit de pens telt zwaar mee in CO₂-equivalent.",
+        "uo": [
+         "Klopt: koeien maken bij de vertering methaan, dat per kilo veel sterker opwarmt dan CO₂. Daarnaast is er veel voer, land en mest nodig.",
+         "Koos je vliegtuig? Het meeste rundvlees wordt niet per vliegtuig vervoerd. De grootste bijdrage komt uit de veehouderij zelf.",
+         "Koos je bevat CO₂? Vlees bevat geen opgeslagen CO₂. Het gaat om de uitstoot bij het houden van de koeien.",
+         "Koos je geen zuurstof? Koeien ademen gewoon zuurstof in. Het probleem is methaan uit de vertering."
+        ],
+        "uh": "Methaan telt zwaar mee."
+       },
+       {
+        "v": "Welke fase moet je volgens deze resultaten als eerste verbeteren?",
+        "o": [
+         "Het transport, want dat is altijd het belangrijkst",
+         "De afvalfase, want die is het kleinst",
+         "De productiefase, want daar begint het",
+         "De gebruiksfase, want die is het grootst"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 4,
+        "u": "Grootste post aanpakken levert het meeste op.",
+        "uo": [
+         "Koos je transport altijd? Transport is vaak juist een kleine post. Het hangt van het product af.",
+         "Koos je de kleinste? Een kleine post verbeteren levert weinig op. Begin bij de grootste.",
+         "Koos je waar het begint? De volgorde in de keten zegt niets over de grootte. Kijk naar de getallen.",
+         "Klopt: als het gebruik het grootste deel van de milieubelasting veroorzaakt, levert verbeteren daar het meeste winst op, bijvoorbeeld door een zuiniger apparaat."
+        ],
+        "uh": "Begin bij de grootste post.",
+        "ctx": "Een LCA van een koffiezetapparaat met een levensduur van 8 jaar geeft in kg CO₂-equivalent: grondstof en productie 25, transport 3, gebruik (stroom en koffie zetten) 180, afvalverwerking 2. De fabrikant wil zijn product verbeteren en vraagt waar hij moet beginnen."
+       },
+       {
+        "v": "Hoeveel ton CO₂-equivalent stoot de elektrische auto in totaal uit, en wat is het verschil met de benzineauto?",
+        "o": [
+         "43 ton; 20 ton meer",
+         "23 ton; 20 ton meer",
+         "23 ton; 20 ton minder",
+         "12 ton; 31 ton minder"
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 4,
+        "u": "EV: 12 + 10 + 1 = 23; benzine: 7 + 35 + 1 = 43; verschil 20.",
+        "uo": [
+         "Koos je 43 ton? Dat is het totaal van de benzineauto, niet van de elektrische.",
+         "Koos je 20 ton meer? De totale uitstoot van de elektrische auto (23) is lager dan die van de benzineauto (43).",
+         "Klopt: elektrische auto 12 + 10 + 1 = 23 ton, benzineauto 7 + 35 + 1 = 43 ton. Over 200 000 km stoot de elektrische auto 20 ton minder uit.",
+         "Koos je 12 ton? Dat is alleen de productie. Tel ook gebruik (10) en afval (1) op: samen 23 ton."
+        ],
+        "uh": "Alle fasen optellen.",
+        "ctx": "Vereenvoudigde LCA over 200 000 km in ton CO₂-equivalent. Benzineauto: productie 7, gebruik 35, afval 1. Elektrische auto: productie 12, gebruik 10, afval 1. Een leerling moet het totaal per auto berekenen en vergelijken."
+       },
+       {
+        "v": "Wat lees je af in een gestapelde staafgrafiek van een LCA?",
+        "o": [
+         "Alleen het totaal, zonder fasen",
+         "Elke fase apart en het totaal",
+         "De prijs per fase",
+         "Hoeveel producten er verkocht zijn"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 4,
+        "u": "Elk stukje = een fase; de hele staaf = het totaal.",
+        "uo": [
+         "Koos je alleen het totaal? Dan zou je geen gestapelde staaf nodig hebben. De stukjes laten juist de fasen zien.",
+         "Klopt: in een gestapelde staaf is elk gekleurd stukje een fase, en de hoogte van de hele staaf is het totaal. Zo zie je in één oogopslag welke fase het grootst is.",
+         "Koos je prijs? Een LCA gaat over milieubelasting, niet over geld. Kosten staan los van de uitstoot.",
+         "Koos je verkochte producten? Een LCA gaat over één functionele eenheid, niet over verkoopaantallen."
+        ],
+        "uh": "Stapel = fasen, hoogte = totaal."
+       },
+       {
+        "v": "Welke conclusie volgt uit deze resultaten?",
+        "o": [
+         "De kastomaat stoot het meest uit",
+         "Lokaal is altijd beter, dus de Nederlandse tomaat wint",
+         "De Spaanse tomaat is slechter door het lange transport",
+         "Ze zijn gelijk, want het zijn allebei tomaten"
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 4,
+        "u": "NL: 1,8 + 0,1 = 1,9; Spanje: 0,3 + 0,5 = 0,8 kg CO₂-eq per kg.",
+        "uo": [
+         "Klopt: Nederland 1,8 + 0,1 = 1,9 kg, Spanje 0,3 + 0,5 = 0,8 kg. Het verwarmen van de kas weegt in dit voorbeeld zwaarder dan het transport per vrachtwagen.",
+         "Koos je lokaal altijd beter? Dat is precies de denkfout die een LCA laat zien. Hier is de teelt in een verwarmde kas de grootste post.",
+         "Koos je Spaans slechter? Het transport is groter, maar de teelt in de zon kost veel minder energie. Opgeteld wint de Spaanse tomaat.",
+         "Koos je gelijk? De uitstoot verschilt per teeltwijze en transport. Reken het na."
+        ],
+        "uh": "Tel alle fasen op; lokaal is niet vanzelf beter.",
+        "ctx": "Een vereenvoudigde LCA van tomaten in de winter, in kg CO₂-equivalent per kg tomaten. Nederlandse tomaat uit een verwarmde kas: teelt 1,8, transport 0,1. Spaanse tomaat uit een onverwarmde kas: teelt 0,3, transport per vrachtwagen naar Nederland 0,5."
+       },
+       {
+        "v": "Waarom kunnen twee LCA's van hetzelfde product verschillende uitkomsten hebben?",
+        "o": [
+         "Het product verandert van samenstelling tussen de twee onderzoeken in",
+         "Een LCA is altijd fout",
+         "De wet van behoud van massa geldt niet",
+         "Andere aannames, zoals levensduur en stroommix"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 5,
+        "u": "Aannames over levensduur, transport, recycling en energie bepalen de uitkomst.",
+        "uo": [
+         "Koos je samenstelling? Het product is hetzelfde. De onderzoekers maken andere keuzes in hun berekening.",
+         "Koos je altijd fout? Een LCA is een goed hulpmiddel, maar de uitkomst hangt af van de keuzes. Dat maakt hem niet fout.",
+         "Koos je behoud van massa? Die wet geldt altijd. Het verschil zit in de aannames.",
+         "Klopt: hoe lang gaat het product mee, hoe vaak wordt het hergebruikt, waar komt de stroom vandaan? Andere aannames geven andere uitkomsten. Daarom moet een LCA zijn aannames vermelden."
+        ],
+        "uh": "Aannames bepalen de uitkomst."
+       },
+       {
+        "v": "Wat gebeurt er met de gebruiksfase van de elektrische auto bij volledig groene stroom?",
+        "o": [
+         "Die blijft gelijk, want een auto blijft een auto",
+         "Die wordt groter, want windmolens kosten energie",
+         "Die wordt veel kleiner",
+         "Die verdwijnt en de productie-uitstoot ook"
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 5,
+        "u": "Gebruiksfase hangt af van de stroommix; productie blijft.",
+        "uo": [
+         "Koos je gelijk? De gebruiksfase van een elektrische auto hangt juist sterk af van hoe de stroom wordt opgewekt.",
+         "Koos je groter? Windmolens kosten bij de bouw wel energie, maar per kWh is de uitstoot veel lager dan bij stroom uit kolen of gas.",
+         "Klopt: met stroom uit wind en zon is de uitstoot per kilometer heel laag. De gebruiksfase wordt veel kleiner. De uitstoot van de productie, vooral van de batterij, blijft wel bestaan.",
+         "Koos je productie verdwijnt ook? De stroommix tijdens het rijden verandert niets aan de uitstoot die al bij de productie is ontstaan."
+        ],
+        "uh": "Stroommix bepaalt de gebruiksfase.",
+        "ctx": "In de vereenvoudigde LCA was de gebruiksfase van de elektrische auto 10 ton CO₂-equivalent over 200 000 km, berekend met de gemiddelde Nederlandse stroommix met nog veel gas en kolen. De productie was 12 ton. Een leerling vraagt wat er verandert als de eigenaar alleen groene stroom gebruikt."
+       },
+       {
+        "v": "Welke aanname heeft de grootste invloed op de LCA van een herbruikbare drinkfles?",
+        "o": [
+         "De kleur van de fles",
+         "Hoe vaak de fles gebruikt wordt",
+         "De naam van het merk",
+         "De dag waarop de fles gekocht is"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 5,
+        "u": "Hoe vaker gebruikt, hoe meer de productie-uitstoot gespreid wordt.",
+        "uo": [
+         "Koos je kleur? De kleur heeft nauwelijks invloed op de milieubelasting. Hoe vaak je de fles gebruikt, wel.",
+         "Klopt: de productie van een herbruikbare fles kost relatief veel. Hoe vaker je hem gebruikt, hoe lager de uitstoot per keer drinken. Wordt hij maar een paar keer gebruikt, dan valt de LCA slecht uit.",
+         "Koos je merk? De naam doet er niet toe. Het gaat om materiaal, gebruik en afval.",
+         "Koos je dag van aankoop? Dat heeft geen invloed op de milieubelasting. Het aantal keer gebruiken bepaalt de uitkomst."
+        ],
+        "uh": "Aantal keer gebruik = sleutel."
+       },
+       {
+        "v": "Waarom is de conclusie \"het papieren rietje is groen\" te kort door de bocht?",
+        "o": [
+         "Papier kost ook water en energie; tel alle fasen",
+         "Papier is altijd slechter dan plastic",
+         "Papieren rietjes zijn niet recyclebaar, dus altijd slechter",
+         "Een LCA kijkt alleen naar zwerfafval"
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 5,
+        "u": "Minder zwerfafval is één aspect; productie en andere indicatoren tellen ook.",
+        "uo": [
+         "Klopt: papier breekt wel sneller af als zwerfafval, maar de productie kost water, energie en bomen. Een LCA weegt alle fasen en indicatoren, zodat je niet op één voordeel blind vaart.",
+         "Koos je altijd slechter? Dat is ook te kort door de bocht. Het hangt van de aannames en indicatoren af.",
+         "Koos je niet recyclebaar? Ook dat is één aspect. Het gaat erom dat je alle fasen bekijkt.",
+         "Koos je alleen zwerfafval? Een LCA kijkt juist naar alle fasen en meerdere indicatoren."
+        ],
+        "uh": "Eén voordeel is geen LCA.",
+        "ctx": "Een fastfoodketen vervangt plastic rietjes door papieren en meldt: \"Onze rietjes zijn nu groen.\" Papieren rietjes zijn dikker en worden van nieuw papier gemaakt. Plastic rietjes zijn licht, maar komen vaak als zwerfafval in zee terecht."
+       },
+       {
+        "v": "Welke vergelijking is eerlijk?",
+        "o": [
+         "Een volle glazen fles tegen een lege PET-fles van dezelfde inhoud",
+         "Eén glazen fles tegen één PET-fles",
+         "Eén kilogram glas tegen één kilogram PET",
+         "Eén glazen fles (25 keer gevuld) tegen 25 PET-flessen"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 2,
+        "u": "Gelijke dienst: 25 keer een fles frisdrank.",
+        "uo": [
+         "Koos je vol tegen leeg? Dan vergelijk je niet dezelfde situatie. Beide moeten dezelfde functie vervullen.",
+         "Koos je één tegen één? De glazen fles gaat 25 keer mee, de PET-fles één keer. Dan vergelijk je ongelijke diensten.",
+         "Koos je per kilogram? Glas is veel zwaarder. Per kilo zegt niets over hoeveel frisdrank je ermee verpakt.",
+         "Klopt: als de glazen fles 25 keer gevuld wordt, levert hij dezelfde dienst als 25 PET-flessen. Dan vergelijk je eerlijk op dezelfde functionele eenheid."
+        ],
+        "uh": "Zelfde dienst vergelijken."
+       },
+       {
+        "v": "Welke fasen omvat \"van wieg tot graf\" in een LCA?",
+        "o": [
+         "Van het ontwerp tot de verkoop",
+         "Van de geboorte tot de dood van de consument",
+         "Van grondstofwinning tot afvalverwerking",
+         "Van de fabriek tot de winkel"
+        ],
+        "c": 2,
+        "d": 1,
+        "s": 0,
+        "u": "De hele levensloop van het product.",
+        "uo": [
+         "Koos je ontwerp tot verkoop? Dan mis je het gebruik en de afvalfase, en die kunnen juist het grootst zijn.",
+         "Koos je consument? Het gaat om het leven van het product, niet van de persoon die het koopt.",
+         "Klopt: de wieg is de winning van grondstoffen, het graf is de afvalverwerking. Alles daartussen telt mee.",
+         "Koos je fabriek tot winkel? Dan mis je de grondstoffen, het gebruik en het afval."
+        ],
+        "uh": "Wieg = grondstof, graf = afval."
+       },
+       {
+        "v": "Waarom is de afvalfase van een glazen fles die ingezameld wordt vaak klein?",
+        "o": [
+         "Glas verdwijnt vanzelf in de natuur",
+         "De fles wordt hergebruikt of gerecycled tot nieuw glas",
+         "Glas weegt niets",
+         "Bij glas telt de afvalfase niet mee"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 1,
+        "u": "Inzameling en hergebruik of recycling verkleinen de afvalfase.",
+        "uo": [
+         "Koos je verdwijnt vanzelf? Glas breekt in de natuur juist bijna niet af. Een weggegooide fles blijft eeuwen liggen.",
+         "Klopt: een ingezamelde glazen fles wordt gewassen en opnieuw gevuld, of omgesmolten tot nieuw glas. Er hoeft dan weinig gestort of verbrand te worden.",
+         "Koos je weegt niets? Glas is juist zwaar. Dat telt mee in het transport, maar maakt de afvalfase niet klein.",
+         "Koos je telt niet mee? In een LCA telt de afvalfase altijd mee, ook bij glas. Hij is alleen klein door hergebruik."
+        ],
+        "uh": "Hergebruik en recycling maken de afvalfase klein."
+       },
+       {
+        "v": "Wat is een voordeel van een getal in CO₂-equivalent?",
+        "o": [
+         "Je kunt het klimaateffect van verschillende gassen bij elkaar optellen",
+         "Je ziet direct hoeveel water er gebruikt is",
+         "Het geeft de prijs van het product",
+         "Het meet alleen het CO₂ uit de schoorsteen"
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 3,
+        "u": "Eén klimaatgetal voor CO₂, CH₄, N₂O samen.",
+        "uo": [
+         "Klopt: door methaan en lachgas om te rekenen naar CO₂-equivalent, kun je alle broeikasgassen in één getal optellen en producten op klimaat vergelijken.",
+         "Koos je water? Watergebruik is een aparte indicator in een LCA, los van CO₂-equivalent.",
+         "Koos je prijs? CO₂-equivalent zegt iets over het klimaateffect, niet over geld.",
+         "Koos je alleen schoorsteen? Juist niet: ook methaan uit koeien en lachgas uit kunstmest tellen mee."
+        ],
+        "uh": "CO₂-eq = optelbaar klimaatgetal."
+       },
+       {
+        "v": "Hoeveel procent van de totale uitstoot van het koffiezetapparaat komt uit de gebruiksfase?",
+        "o": [
+         "100%",
+         "68%",
+         "14%",
+         "86%"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 4,
+        "u": "180 / (25 + 3 + 180 + 2) = 180 / 210 = 86%.",
+        "uo": [
+         "Koos je 100%? De andere fasen zijn klein, maar niet nul. Samen zijn ze 30 kg, dus het gebruik is minder dan alles.",
+         "Koos je 68%? Reken het totaal na: 25 + 3 + 180 + 2 = 210. Dan is 180 / 210 = 0,86, dus 86%.",
+         "Koos je 14%? Dat is het deel van alle andere fasen samen: 30 / 210. De gebruiksfase is het grootste deel.",
+         "Klopt: het totaal is 25 + 3 + 180 + 2 = 210 kg. Het gebruik is 180 / 210 × 100% = 86%."
+        ],
+        "uh": "Deel door het totaal.",
+        "ctx": "Een LCA van een koffiezetapparaat met een levensduur van 8 jaar geeft in kg CO₂-equivalent: grondstof en productie 25, transport 3, gebruik 180 en afvalverwerking 2. Een leerling wil het aandeel van de gebruiksfase in procenten uitdrukken voor een presentatie."
+       }
+      ],
+      "oe": [
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een kantine vergelijkt een herbruikbare beker met wegwerpbekers. Een herbruikbare beker kost 1,25 kg CO₂-equivalent om te maken en 0,02 kg per afwasbeurt. Een wegwerpbeker kost 0,04 kg per keer, inclusief productie en afval.",
+        "v": "Geef een geschikte functionele eenheid en bereken vanaf hoeveel keer drinken de herbruikbare beker minder uitstoot geeft.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Functionele eenheid: bijvoorbeeld een aantal keer koffie drinken (1p). 1,25 + 0,02n = 0,04n geeft n = 62,5 (1p), dus vanaf 63 keer drinken (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een fabrikant zegt: \"Onze elektrische auto stoot bij de productie 12 ton CO₂-equivalent uit, een benzineauto maar 7 ton. Elektrisch rijden is dus slechter voor het klimaat.\" Over 200 000 km is het gebruik 10 ton voor de elektrische auto en 35 ton voor de benzineauto; afval is voor beide 1 ton.",
+        "v": "Leg uit welke fout de redenering bevat en bereken het verschil in totale uitstoot.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Hij kijkt alleen naar de productiefase; een LCA telt alle fasen op (1p). Elektrisch 12 + 10 + 1 = 23 ton, benzine 7 + 35 + 1 = 43 ton: de elektrische auto stoot 20 ton minder uit (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een LCA van een koffiezetapparaat met een levensduur van 8 jaar geeft in kg CO₂-equivalent: grondstof en productie 25, transport 3, gebruik 180, afval 2. De fabrikant overweegt een lichtere verpakking om het transport te verminderen.",
+        "v": "Bereken het aandeel van de gebruiksfase en leg uit of een lichtere verpakking een zinvolle maatregel is.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Totaal 210 kg; gebruik 180 / 210 × 100% = 86% (1p). Een lichtere verpakking verkleint alleen het transport (3 kg, ongeveer 1%); een zuiniger apparaat levert veel meer op (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een vereenvoudigde LCA van twee T-shirts: katoen 2700 liter water, 0,1 kg fossiele grondstof en 2,1 kg CO₂-equivalent; polyester 20 liter water, 0,5 kg fossiele grondstof en 2,3 kg CO₂-equivalent. Een kledingmerk wil op zijn website zetten welk shirt het milieuvriendelijkst is.",
+        "v": "Leg uit waarom je op basis van deze gegevens niet zomaar kunt zeggen welk shirt het milieuvriendelijkst is.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Katoen scoort beter op fossiele grondstof en iets beter op klimaat, polyester veel beter op water (1p). Welk shirt beter is, hangt af van hoe zwaar je de verschillende indicatoren laat wegen (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een supermarkt plaatst bij Nederlandse kastomaten in de winter het bordje \"Lokaal = duurzaam\". Een LCA geeft in kg CO₂-equivalent per kg: Nederlandse kastomaat teelt 1,8 en transport 0,1; Spaanse tomaat teelt 0,3 en transport 0,5.",
+        "v": "Bereken de totale uitstoot per kg voor beide tomaten en beoordeel het bordje van de supermarkt.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Nederland 1,8 + 0,1 = 1,9 kg; Spanje 0,3 + 0,5 = 0,8 kg (1p). Het bordje klopt hier niet: de verwarmde kas weegt zwaarder dan het transport, dus de Spaanse tomaat heeft in de winter een lagere uitstoot (1p)."
+       }
+      ]
      }
     ]
    }
