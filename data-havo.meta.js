@@ -1717,6 +1717,28 @@ var VAKKEN = [
       "nOe": 5,
       "nBeg": 12,
       "hasSam": true
+     },
+     {
+      "id": "C5",
+      "lo": "sk.C.5",
+      "gs": 2,
+      "naam": "Energie-effect: endotherm en exotherm",
+      "beschrijving": "Je herkent exotherme en endotherme processen, leest een energiediagram met activeringsenergie, rekent de reactiewarmte uit met vormingswarmten en vergelijkt brandstoffen per mol en per gram.",
+      "ceStatus": "CE",
+      "binas": "57, 58",
+      "val": "",
+      "onderwerpen": [
+       "Exotherm en endotherm herkennen",
+       "Energiediagram en activeringsenergie",
+       "Reactiewarmte met vormingswarmten (Binas 57)",
+       "Bindingen verbreken en vormen",
+       "Brandstoffen: energie per mol en per gram",
+       "Energie bij oplossen en in het dagelijks leven"
+      ],
+      "nSv": 25,
+      "nOe": 5,
+      "nBeg": 11,
+      "hasSam": true
      }
     ]
    },

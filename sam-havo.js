@@ -4659,5 +4659,112 @@ Object.assign(SAM_RICH,{
 <g font-size="10.5" fill="var(--mu)" text-anchor="middle"><text x="140" y="12">e⁻</text><text x="40" y="104">Zn²⁺</text><text x="280" y="104">Cu²⁺</text></g>
 </g></svg><div class="sam-figcap">Zink staat elektronen af (<strong>negatieve pool</strong>), die lopen door de draad en het lampje naar de koperelektrode (<strong>positieve pool</strong>). Door de zoutbrug bewegen ionen.</div></div>
 <div class="sam-tip"><strong>Examentip:</strong> bepaal eerst welke stof de reductor is. Die elektrode is negatief, en daar lopen de elektronen de draad in.</div>
+</div>`,
+'havo_sk_C5':`<div class="sam-intro">Bij elke reactie verandert de chemische energie van de stoffen. Je leert <strong>exotherm</strong> en <strong>endotherm</strong> herkennen, een <strong>energiediagram</strong> lezen met de <strong>activeringsenergie</strong>, de reactiewarmte uitrekenen met <strong>vormingswarmten</strong> en brandstoffen vergelijken per mol en per gram.</div>
+<div class="sam-head">Begrippenlijst</div>
+<table class="sam-table"><thead><tr><th>Begrip</th><th>Betekenis</th></tr></thead><tbody>
+<tr><td>Exotherm</td><td>energie komt vrij, ΔE negatief</td></tr>
+<tr><td>Endotherm</td><td>energie is nodig, ΔE positief</td></tr>
+<tr><td>Activeringsenergie</td><td>drempel om de reactie op gang te brengen</td></tr>
+<tr><td>Vormingswarmte</td><td>energie-effect bij het maken van 1 mol stof uit de elementen (Binas 57)</td></tr>
+<tr><td>Reactiewarmte ΔE</td><td>som vormingswarmten producten − beginstoffen</td></tr>
+<tr><td>Bindingsenergie</td><td>energie om een binding te verbreken (Binas 58)</td></tr>
+<tr><td>Verbrandingswarmte</td><td>energie die vrijkomt bij verbranding van 1 mol of 1 g brandstof</td></tr>
+</tbody></table>
+
+<div class="sam-chapter"><div class="sam-ch-title"><span class="sam-ch-n">1</span>Exotherm en endotherm</div>
+<p>Bij een <strong>exotherme</strong> reactie komt energie vrij, meestal als warmte: de omgeving wordt warmer. Verbranden, roesten en een metaal in zuur zijn exotherm. Bij een <strong>endotherme</strong> reactie is energie nodig: de reactie neemt warmte op of moet blijven verwarmd worden. Kalksteen ontleden, fotosynthese en het oplossen van ammoniumnitraat in een koud kompres zijn endotherm.</p>
+<p>Het energie-effect noteer je als ΔE = E(producten) − E(beginstoffen). Bij exotherm is ΔE negatief, bij endotherm positief. In een proef zie je het aan de temperatuur: warmer betekent exotherm, kouder endotherm.</p>
+<div class="sam-figure"><svg viewBox="0 0 320 210" role="img" aria-label="Grafiek van de temperatuur tegen de tijd bij twee proeven: bij magnesium in zoutzuur stijgt de temperatuur (exotherm), bij bakpoeder in citroensap daalt hij (endotherm)"><g font-family="inherit"><line x1="42" y1="172" x2="304" y2="172" stroke="var(--bo)" stroke-width="0"/><text x="36" y="175.5" text-anchor="end" font-size="10" fill="var(--mu)">10</text><line x1="42" y1="141.6" x2="304" y2="141.6" stroke="var(--bo)" stroke-width="1"/><text x="36" y="145.1" text-anchor="end" font-size="10" fill="var(--mu)">15</text><line x1="42" y1="111.2" x2="304" y2="111.2" stroke="var(--bo)" stroke-width="1"/><text x="36" y="114.7" text-anchor="end" font-size="10" fill="var(--mu)">20</text><line x1="42" y1="80.8" x2="304" y2="80.8" stroke="var(--bo)" stroke-width="1"/><text x="36" y="84.3" text-anchor="end" font-size="10" fill="var(--mu)">25</text><line x1="42" y1="50.5" x2="304" y2="50.5" stroke="var(--bo)" stroke-width="1"/><text x="36" y="54" text-anchor="end" font-size="10" fill="var(--mu)">30</text><line x1="42" y1="20.1" x2="304" y2="20.1" stroke="var(--bo)" stroke-width="1"/><text x="36" y="23.6" text-anchor="end" font-size="10" fill="var(--mu)">35</text><line x1="42" y1="172" x2="42" y2="176" stroke="var(--dk)" stroke-width="1"/><text x="42" y="187" text-anchor="middle" font-size="10" fill="var(--mu)">0</text><line x1="94.4" y1="172" x2="94.4" y2="176" stroke="var(--dk)" stroke-width="1"/><text x="94.4" y="187" text-anchor="middle" font-size="10" fill="var(--mu)">2</text><line x1="146.8" y1="172" x2="146.8" y2="176" stroke="var(--dk)" stroke-width="1"/><text x="146.8" y="187" text-anchor="middle" font-size="10" fill="var(--mu)">4</text><line x1="199.2" y1="172" x2="199.2" y2="176" stroke="var(--dk)" stroke-width="1"/><text x="199.2" y="187" text-anchor="middle" font-size="10" fill="var(--mu)">6</text><line x1="251.6" y1="172" x2="251.6" y2="176" stroke="var(--dk)" stroke-width="1"/><text x="251.6" y="187" text-anchor="middle" font-size="10" fill="var(--mu)">8</text><line x1="304" y1="172" x2="304" y2="176" stroke="var(--dk)" stroke-width="1"/><text x="304" y="187" text-anchor="middle" font-size="10" fill="var(--mu)">10</text><path d="M42 14V172H304" fill="none" stroke="var(--dk)" stroke-width="1.3"/><text x="173" y="204" text-anchor="middle" font-size="11" font-weight="700" fill="var(--dk)">tijd (min)</text><text transform="translate(11 93) rotate(-90)" text-anchor="middle" font-size="11" font-weight="700" fill="var(--dk)">temperatuur (°C)</text><path d="M42 111.2L68.2 111.2L81.3 86.9L94.4 62.6L107.5 44.4L120.6 32.2L133.7 27.4L146.8 26.2L199.2 32.2L251.6 38.3L304 44.4" fill="none" stroke="var(--or)" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/><text x="300" y="36.4" text-anchor="end" font-size="11" font-weight="700" fill="var(--or)">exotherm</text><path d="M42 111.2L68.2 111.2L81.3 126.4L94.4 135.5L107.5 141.6L120.6 144.7L146.8 147.7L199.2 141.6L251.6 135.5L304 129.5" fill="none" stroke="rgba(var(--or-rgb),.45)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><text x="300" y="144.5" text-anchor="end" font-size="11" font-weight="700" fill="var(--mu)">endotherm</text></g></svg><div class="sam-figcap">Bij een <strong>exotherme</strong> reactie stijgt de temperatuur van de oplossing, bij een <strong>endotherme</strong> reactie daalt hij. Daarna gaat de temperatuur langzaam terug naar die van de kamer.</div></div>
+<div class="sam-onthoud"><strong>Onthoud:</strong> exotherm = energie eruit = ΔE negatief. Endotherm = energie erin = ΔE positief.</div>
+</div>
+
+<div class="sam-chapter"><div class="sam-ch-title"><span class="sam-ch-n">2</span>Het energiediagram</div>
+<p>Een <strong>energiediagram</strong> laat de energie zien tijdens het verloop van een reactie. Links staan de beginstoffen, rechts de producten. Liggen de producten lager, dan is de reactie exotherm; liggen ze hoger, dan is hij endotherm. Daartussen zit altijd een bergje: de <strong>activeringsenergie</strong>. Die drempel moeten de deeltjes eerst nemen, daarom moet je een gasbrander aansteken. Een exotherme reactie levert daarna zelf genoeg warmte om door te gaan.</p>
+<p>Een <strong>katalysator</strong> zorgt voor een route met een lagere drempel. Begin- en eindniveau blijven gelijk, dus ΔE verandert niet; de reactie gaat alleen sneller.</p>
+<div class="sam-figure"><svg viewBox="0 0 320 200" role="img" aria-label="Twee energiediagrammen naast elkaar: exotherm met de producten lager dan de beginstoffen en endotherm met de producten hoger, elk met de activeringsenergie en ΔE aangegeven">
+<g font-family="inherit">
+<g stroke="var(--dk)" stroke-width="1.3" fill="none"><path d="M18 14V168H150"/><path d="M174 14V168H306"/></g>
+<path d="M22 96H48C70 96 72 40 84 40S104 130 124 130H148" stroke="var(--or)" stroke-width="2.5" fill="none"/>
+<path d="M178 130H202C224 130 226 30 240 30S256 80 278 80H302" stroke="var(--or)" stroke-width="2.5" fill="none"/>
+<g stroke="var(--mu)" stroke-dasharray="3 3"><path d="M48 96H138"/><path d="M202 130H292"/></g>
+<g stroke="var(--dk)" stroke-width="1.5"><path d="M60 92V46"/><path d="M134 100V126"/><path d="M214 126V36"/><path d="M290 126V84"/></g>
+<g fill="var(--dk)"><polygon points="60,42 56,50 64,50"/><polygon points="134,130 130,122 138,122"/><polygon points="214,32 210,40 218,40"/><polygon points="290,80 286,88 294,88"/></g>
+<g font-size="10.5" fill="var(--dk)" font-weight="700"><text x="64" y="70">Eₐ</text><text x="114" y="118">ΔE</text><text x="218" y="84">Eₐ</text><text x="270" y="108">ΔE</text></g>
+<g font-size="12" font-weight="800" text-anchor="middle" fill="var(--dk)"><text x="84" y="188">exotherm</text><text x="240" y="188">endotherm</text></g>
+<g font-size="10" fill="var(--mu)"><text x="22" y="90">begin</text><text x="112" y="146">product</text></g>
+<text x="8" y="12" font-size="10" fill="var(--mu)">energie</text>
+</g></svg><div class="sam-figcap">Links liggen de producten <strong>lager</strong>: er komt energie vrij (exotherm, ΔE negatief). Rechts liggen ze <strong>hoger</strong>: er moet energie in (endotherm). In beide gevallen zit er een drempel Eₐ.</div></div>
+</div>
+
+<div class="sam-chapter"><div class="sam-ch-title"><span class="sam-ch-n">3</span>Reactiewarmte uitrekenen met Binas 57</div>
+<p>In Binas 57 staan <strong>vormingswarmten</strong>: het energie-effect als je 1 mol van een stof maakt uit de elementen. Elementen zoals O₂, H₂ en C hebben per afspraak vormingswarmte 0. De reactiewarmte reken je uit als ΔE = Σ vormingswarmten producten − Σ vormingswarmten beginstoffen, elke waarde keer de coëfficiënt. Let op de fase: H₂O(l) is −2,86 · 10⁵ J/mol, H₂O(g) −2,42 · 10⁵ J/mol.</p>
+<div class="sam-worked"><div class="sam-worked-h">Uitgewerkt: methaan verbrandt</div>
+<div class="sam-worked-q">CH₄(g) + 2 O₂(g) → CO₂(g) + 2 H₂O(l)</div>
+<ol class="sam-worked-steps">
+<li>Producten: −3,935 + 2 × −2,86 = −9,655 · 10⁵ J.</li>
+<li>Beginstoffen: −0,75 + 2 × 0 = −0,75 · 10⁵ J.</li>
+<li>ΔE = −9,655 − (−0,75) = −8,91 · 10⁵ J per mol methaan.</li>
+</ol>
+<div class="sam-worked-ans">Negatief: de verbranding is exotherm.</div></div>
+<div class="sam-figure"><svg viewBox="0 0 320 210" role="img" aria-label="Niveaudiagram voor de vormingswarmte van methaan: elementen op nul, methaan en zuurstof op min 0,75, koolstofdioxide en water op min 9,66, het verschil is de reactiewarmte min 8,91">
+<g font-family="inherit">
+<path d="M40 14V196" stroke="var(--dk)" stroke-width="1.3"/>
+<g stroke="var(--dk)" stroke-width="3"><path d="M60 26H160"/><path d="M60 44H160"/><path d="M60 186H160"/></g>
+
+<path d="M110 48V176" stroke="var(--or)" stroke-width="2.5"/><polygon points="110,184 105,174 115,174" fill="var(--or)"/>
+<g font-size="11" font-weight="700" fill="var(--dk)"><text x="166" y="30">0: elementen C, H₂, O₂</text><text x="166" y="48">−0,75: CH₄ + 2 O₂</text><text x="166" y="190">−9,66: CO₂ + 2 H₂O</text></g>
+<text x="120" y="112" font-size="12" font-weight="800" fill="var(--or)">ΔE = −8,91</text>
+<g font-size="10" fill="var(--mu)"><text x="8" y="30">0</text><text x="4" y="190">−10</text><text x="120" y="128">· 10⁵ J/mol</text></g>
+<text x="20" y="112" font-size="10" fill="var(--mu)" transform="rotate(-90 20 112)" text-anchor="middle">energie (10⁵ J/mol)</text>
+</g></svg><div class="sam-figcap">Elementen staan op <strong>nul</strong>. De beginstoffen liggen op −0,75 en de producten op −9,66 · 10⁵ J. De pijl ertussen is de reactiewarmte: <strong>−8,91 · 10⁵ J</strong>.</div></div>
+<div class="sam-tip"><strong>Examentip:</strong> schrijf de vormingswarmten met hun teken in een rijtje onder de vergelijking. Bij "min een negatief getal" gaan de meeste fouten mis: − (−0,75) = + 0,75.</div>
+</div>
+
+<div class="sam-chapter"><div class="sam-ch-title"><span class="sam-ch-n">4</span>Bindingen verbreken en vormen</div>
+<p>Waar komt de energie vandaan? Tijdens een reactie worden bindingen in de beginstoffen <strong>verbroken</strong>: dat kost energie. Daarna worden nieuwe bindingen <strong>gevormd</strong>: dat levert energie op. Levert het vormen meer op dan het verbreken kost, dan is de reactie exotherm. Bindingsenergieën staan in Binas 58.</p>
+<div class="sam-figure"><svg viewBox="0 0 320 200" role="img" aria-label="Trappendiagram van waterstof en chloor tot waterstofchloride: bindingen verbreken kost 6,79 en bindingen vormen levert 8,64, netto komt 1,85 vrij, exotherm">
+<g font-family="inherit">
+<g stroke="var(--dk)" stroke-width="3"><path d="M20 120H90"/><path d="M110 24H210"/><path d="M230 146H300"/></g>
+<path d="M60 116V32" stroke="var(--dk)" stroke-width="1.8"/><polygon points="60,28 55,38 65,38" fill="var(--dk)"/>
+<path d="M260 28V138" stroke="var(--or)" stroke-width="2.2"/><polygon points="260,144 255,134 265,134" fill="var(--or)"/>
+<path d="M90 120H300" stroke="var(--mu)" stroke-dasharray="3 3"/>
+<path d="M290 122V138" stroke="var(--dk)" stroke-width="1.5"/><polygon points="290,144 286,136 294,136" fill="var(--dk)"/>
+<g font-size="11.5" font-weight="700" fill="var(--dk)"><text x="20" y="138">H₂ + Cl₂</text><text x="114" y="18">H + H + Cl + Cl</text><text x="232" y="164">2 HCl</text></g>
+<g font-size="11" fill="var(--dk)"><text x="66" y="70">breken</text><text x="66" y="84">+6,79</text><text x="212" y="80" text-anchor="end">vormen</text><text x="212" y="94" text-anchor="end">−8,64</text></g>
+<text x="300" y="184" font-size="11" font-weight="800" text-anchor="end" fill="var(--or)">netto −1,85 · 10⁵ J</text>
+</g></svg><div class="sam-figcap">Eerst omhoog: de bindingen H-H en Cl-Cl breken (<strong>+6,79</strong>). Dan omlaag: twee H-Cl-bindingen vormen (<strong>−8,64</strong>). Het eind ligt lager dan het begin: exotherm.</div></div>
+</div>
+
+<div class="sam-chapter"><div class="sam-ch-title"><span class="sam-ch-n">5</span>Brandstoffen vergelijken</div>
+<p>De energie van een brandstof kun je per mol of per gram uitdrukken. Van per mol naar per gram deel je door de molaire massa. Per mol levert methaan (8,9 · 10⁵ J) meer dan waterstof (2,86 · 10⁵ J). Maar een mol waterstof weegt maar 2 g, dus per gram levert waterstof bijna drie keer zoveel. Voor een raket of een auto telt vooral de energie per kilo die je meeneemt.</p>
+<p>Ontstaat er bij verbranding vloeibaar water in plaats van waterdamp, dan komt er nog wat meer energie vrij: bij condenseren komt de verdampingswarmte terug.</p>
+<div class="sam-figure"><svg viewBox="0 0 320 180" role="img" aria-label="Staafdiagram van de verbrandingswarmte per gram van vier brandstoffen: waterstof 142, methaan 55,5, propaan 50,4 en ethanol 29,7 kilojoule per gram">
+<g font-family="inherit">
+<path d="M90 14V150" stroke="var(--dk)" stroke-width="1.3"/>
+<g fill="var(--or)"><rect x="90" y="22" width="200" height="22"/></g>
+<g fill="rgba(var(--or-rgb),.45)"><rect x="90" y="56" width="78" height="22"/><rect x="90" y="90" width="71" height="22"/><rect x="90" y="124" width="42" height="22"/></g>
+<g font-size="11.5" font-weight="700" fill="var(--dk)" text-anchor="end"><text x="84" y="37">waterstof</text><text x="84" y="71">methaan</text><text x="84" y="105">propaan</text><text x="84" y="139">ethanol</text></g>
+<g font-size="11.5" font-weight="800" fill="var(--dk)"><text x="174" y="71">55,5</text><text x="167" y="105">50,4</text><text x="138" y="139">29,7</text></g>
+<text x="284" y="37" font-size="11.5" font-weight="800" fill="#fff" text-anchor="end">142</text>
+<text x="300" y="170" font-size="10.5" fill="var(--mu)" text-anchor="end">kJ per gram, water als vloeistof</text>
+</g></svg><div class="sam-figcap">Per gram levert <strong>waterstof</strong> veruit de meeste energie. Ethanol levert per gram het minst, omdat er al zuurstof in het molecuul zit.</div></div>
+</div>
+
+<div class="sam-chapter"><div class="sam-ch-title"><span class="sam-ch-n">6</span>Energie bij oplossen en in huis</div>
+<p>Ook bij oplossen kan energie vrijkomen of nodig zijn. In een <strong>koud kompres</strong> zit ammoniumnitraat en een zakje water. Knijp je het zakje kapot, dan lost het zout op en neemt het warmte op uit je huid: endotherm. In een <strong>handwarmer</strong> lost calciumchloride op en komt warmte vrij: exotherm. Bij faseovergangen geldt hetzelfde: smelten en verdampen kosten energie, bevriezen en condenseren leveren energie.</p>
+<div class="sam-figure"><svg viewBox="0 0 320 196" role="img" aria-label="Koud kompres met ammoniumnitraat (endotherm, thermometer daalt naar 5 graden) naast een handwarmer met calciumchloride (exotherm, thermometer stijgt naar 45 graden)">
+<g font-family="inherit">
+<rect x="20" y="40" width="100" height="120" rx="18" fill="rgba(var(--or-rgb),.15)" stroke="var(--or)" stroke-width="1.5"/>
+<rect x="200" y="40" width="100" height="120" rx="18" fill="#f59e0b" opacity=".25" stroke="#f59e0b" stroke-width="1.5"/>
+<g fill="var(--bg)" stroke="var(--mu)" stroke-width="1.5"><rect x="139" y="30" width="12" height="120" rx="6"/><rect x="169" y="30" width="12" height="120" rx="6"/></g>
+<circle cx="145" cy="156" r="10" fill="var(--or)"/><circle cx="175" cy="156" r="10" fill="#e8590c"/>
+<rect x="142" y="126" width="6" height="26" fill="var(--or)"/><rect x="172" y="48" width="6" height="104" fill="#e8590c"/>
+<g stroke="var(--mu)"><path d="M151 126h6M163 48h6"/></g>
+<g font-size="11.5" font-weight="700" fill="var(--dk)" text-anchor="middle"><text x="70" y="96">NH₄NO₃</text><text x="250" y="96">CaCl₂</text><text x="70" y="186">koud kompres</text><text x="250" y="186">handwarmer</text></g>
+<g font-size="11" fill="var(--mu)" text-anchor="middle"><text x="70" y="114">endotherm</text><text x="250" y="114">exotherm</text></g>
+<g font-size="11" font-weight="800" fill="var(--dk)"><text x="134" y="142" text-anchor="end">5 °C</text><text x="200" y="44">45 °C</text></g>
+</g></svg><div class="sam-figcap">Het koude kompres <strong>neemt warmte op</strong> bij het oplossen van ammoniumnitraat; de handwarmer <strong>geeft warmte af</strong> bij het oplossen van calciumchloride.</div></div>
+<div class="sam-tip"><strong>Examentip:</strong> wordt in een vraag iets kouder of moet het blijven verwarmd worden, dan is het proces endotherm. Komt er warmte of licht vrij, dan is het exotherm.</div>
 </div>`
 });

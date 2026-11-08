@@ -69397,6 +69397,634 @@ var VAKKEN = [
         "u": "Halfreactie van ijzer vermenigvuldigd met 2 (1p). Cl₂ + 2 Fe²⁺ → 2 Cl⁻ + 2 Fe³⁺ (1p)."
        }
       ]
+     },
+     {
+      "id": "C5",
+      "lo": "sk.C.5",
+      "gs": 2,
+      "naam": "Energie-effect: endotherm en exotherm",
+      "beschrijving": "Je herkent exotherme en endotherme processen, leest een energiediagram met activeringsenergie, rekent de reactiewarmte uit met vormingswarmten en vergelijkt brandstoffen per mol en per gram.",
+      "ceStatus": "CE",
+      "binas": "57, 58",
+      "val": "",
+      "onderwerpen": [
+       "Exotherm en endotherm herkennen",
+       "Energiediagram en activeringsenergie",
+       "Reactiewarmte met vormingswarmten (Binas 57)",
+       "Bindingen verbreken en vormen",
+       "Brandstoffen: energie per mol en per gram",
+       "Energie bij oplossen en in het dagelijks leven"
+      ],
+      "sam": "Exotherm: energie komt vrij, ΔE negatief. Endotherm: energie is nodig, ΔE positief. In een energiediagram liggen bij exotherm de producten lager; elke reactie heeft een activeringsenergie. Reactiewarmte = som vormingswarmten producten − beginstoffen (Binas 57), elementen hebben vormingswarmte 0. Bindingen verbreken kost energie, vormen levert energie. Per gram levert waterstof de meeste energie.",
+      "begrippen": [
+       {
+        "t": "Exotherm",
+        "d": "Proces waarbij energie vrijkomt, meestal als warmte; ΔE is negatief."
+       },
+       {
+        "t": "Endotherm",
+        "d": "Proces waarbij energie nodig is; ΔE is positief."
+       },
+       {
+        "t": "Energie-effect",
+        "d": "ΔE = energie van de producten − energie van de beginstoffen."
+       },
+       {
+        "t": "Energiediagram",
+        "d": "Diagram met de energie van beginstoffen, overgangstoestand en producten tijdens het reactieverloop."
+       },
+       {
+        "t": "Activeringsenergie",
+        "d": "De minimale energie die nodig is om een reactie op gang te brengen."
+       },
+       {
+        "t": "Katalysator",
+        "d": "Stof die een reactie versnelt door de activeringsenergie te verlagen, zonder zelf verbruikt te worden."
+       },
+       {
+        "t": "Vormingswarmte",
+        "d": "Energie-effect bij het vormen van 1 mol stof uit de elementen (Binas 57); voor elementen 0."
+       },
+       {
+        "t": "Reactiewarmte",
+        "d": "Het energie-effect van een reactie: som vormingswarmten producten min som vormingswarmten beginstoffen."
+       },
+       {
+        "t": "Bindingsenergie",
+        "d": "Energie die nodig is om een binding te verbreken; bij het vormen komt dezelfde energie vrij (Binas 58)."
+       },
+       {
+        "t": "Verbrandingswarmte",
+        "d": "Energie die vrijkomt bij de volledige verbranding van 1 mol of 1 gram brandstof."
+       },
+       {
+        "t": "Koud kompres",
+        "d": "Zakje waarin een zout endotherm oplost, zodat het warmte opneemt en koud aanvoelt."
+       }
+      ],
+      "sv": [
+       {
+        "v": "Wat is een exotherme reactie?",
+        "o": [
+         "Een reactie zonder activeringsenergie",
+         "Een reactie die alleen verloopt als je blijft verwarmen",
+         "Een reactie waarbij energie vrijkomt",
+         "Een reactie waarbij de temperatuur van de omgeving daalt"
+        ],
+        "c": 2,
+        "d": 1,
+        "s": 0,
+        "u": "Exotherm: er komt energie vrij (vaak als warmte); de omgeving wordt warmer.",
+        "uo": [
+         "Koos je \"geen activeringsenergie\"? Ook exotherme reacties hebben een duwtje nodig; een gasfornuis steek je eerst aan. Exotherm zegt iets over het eindresultaat, niet over het begin.",
+         "Koos je blijven verwarmen? Dat past bij een endotherme reactie, zoals het ontleden van kalksteen. Een exotherme reactie geeft zelf warmte af.",
+         "Klopt: bij een exotherme reactie hebben de reactieproducten minder chemische energie dan de beginstoffen. Het verschil komt vrij, meestal als warmte.",
+         "Koos je temperatuur van de omgeving daalt? Dan neemt de reactie warmte op uit de omgeving: dat is endotherm, zoals bij een koud kompres."
+        ],
+        "uh": "EXOtherm: warmte gaat eruit (exit)."
+       },
+       {
+        "v": "Welk teken heeft ΔE bij een endotherme reactie?",
+        "o": [
+         "Negatief",
+         "Positief",
+         "Nul",
+         "Dat hangt van de temperatuur af"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 0,
+        "u": "Endotherm: de producten hebben meer energie, dus ΔE = E(producten) − E(beginstoffen) > 0.",
+        "uo": [
+         "Koos je negatief? Een negatieve ΔE hoort bij exotherm: de producten hebben minder energie en het verschil komt vrij.",
+         "Klopt: bij een endotherme reactie moet er energie in. De producten zitten hoger dan de beginstoffen, dus ΔE is positief.",
+         "Koos je nul? Dan zou er geen energie-effect zijn. Bij een endotherme reactie neemt het systeem juist energie op.",
+         "Koos je temperatuur? Het teken van ΔE volgt uit de energie van beginstoffen en producten. Een endotherme reactie heeft altijd een positieve ΔE."
+        ],
+        "uh": "ΔE = producten − beginstoffen. Energie erin = positief."
+       },
+       {
+        "v": "Welke conclusie trekt de leerling terecht?",
+        "o": [
+         "Reactie 1 is exotherm, reactie 2 endotherm",
+         "Beide reacties zijn exotherm",
+         "Reactie 1 is endotherm, reactie 2 exotherm",
+         "Beide reacties zijn endotherm, want je moet ze mengen"
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 0,
+        "u": "Temperatuur stijgt: energie komt vrij (exotherm). Temperatuur daalt: energie wordt opgenomen (endotherm).",
+        "uo": [
+         "Klopt: bij reactie 1 stijgt de temperatuur, er komt energie vrij. Bij reactie 2 daalt de temperatuur, de reactie neemt warmte op uit het water.",
+         "Koos je beide exotherm? Bij reactie 2 daalt de temperatuur. De reactie haalt warmte uit het water; dat is endotherm.",
+         "Koos je reactie 1 endotherm? Dan verwar je oorzaak en gevolg. Als de oplossing warmer wordt, geeft de reactie warmte af aan het water: exotherm.",
+         "Koos je \"mengen\"? Mengen is geen energiebron. Of een reactie endo- of exotherm is, zie je aan wat de temperatuur doet."
+        ],
+        "uh": "Warmer = exotherm. Kouder = endotherm.",
+        "ctx": "Een leerling meet de temperatuur in twee bekerglazen. In beker 1 doet ze magnesium in zoutzuur: de temperatuur stijgt van 20 naar 34 °C. In beker 2 lost ze bakpoeder op in citroensap: de temperatuur daalt van 20 naar 14 °C."
+       },
+       {
+        "v": "Welke verandering is endotherm?",
+        "o": [
+         "Stoom die condenseert",
+         "Water dat bevriest",
+         "Een kaars die brandt",
+         "IJs dat smelt"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 0,
+        "u": "Smelten kost energie (warmte wordt opgenomen): endotherm.",
+        "uo": [
+         "Koos je condenseren? Bij condenseren komt warmte vrij. Daarom verbrand je je zo erg aan stoom.",
+         "Koos je bevriezen? Bij bevriezen staat water juist warmte af aan de omgeving. Dat is het omgekeerde van smelten en dus exotherm.",
+         "Koos je kaars? Een brandende kaars geeft warmte en licht af. Verbranden is exotherm.",
+         "Klopt: om ijs te laten smelten, moet je warmte toevoegen. Daarom koelt ijs je drankje af: het neemt warmte op."
+        ],
+        "uh": "Smelten en verdampen kosten energie; bevriezen en condenseren leveren energie."
+       },
+       {
+        "v": "Wat gebeurt er met energie als twee atomen een binding vormen?",
+        "o": [
+         "Er verandert niets aan de energie",
+         "Er is energie nodig",
+         "Er komt energie vrij",
+         "De energie wordt omgezet in massa"
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 3,
+        "u": "Bij het vormen van een binding komt energie vrij; het verbreken kost evenveel.",
+        "uo": [
+         "Koos je \"niets\"? Elke binding heeft een bindingsenergie. Bij vormen komt die vrij, bij verbreken moet je hem leveren.",
+         "Koos je \"energie nodig\"? Dat geldt voor het verbreken. Vormen en verbreken zijn elkaars omgekeerde: wat het een kost, levert het ander op.",
+         "Klopt: twee atomen die een binding vormen, komen samen in een lagere energietoestand. Het verschil komt vrij, bijvoorbeeld als warmte.",
+         "Koos je massa? Bij gewone chemische reacties is de massaverandering niet te meten. Er komt energie vrij als warmte of licht."
+        ],
+        "uh": "Vormen levert, breken kost, en evenveel per binding."
+       },
+       {
+        "v": "Waarom kan een brandstof energie leveren?",
+        "o": [
+         "De brandstof neemt energie op uit de vlam",
+         "De producten bevatten minder chemische energie",
+         "Zuurstof bevat zelf warmte",
+         "De brandstof wordt bij verbranden zwaarder"
+        ],
+        "c": 1,
+        "d": 1,
+        "s": 4,
+        "u": "Brandstof + zuurstof liggen hoger in energie dan CO₂ en water; het verschil komt vrij.",
+        "uo": [
+         "Koos je energie opnemen uit de vlam? Een vlam heeft alleen een kleine startwarmte nodig. Daarna levert de brandstof netto veel meer energie dan hij opneemt.",
+         "Klopt: na de verbranding zit er minder chemische energie in de stoffen dan ervoor. Dat verschil komt vrij als warmte en licht.",
+         "Koos je zuurstof bevat warmte? Zuurstof bevat geen opgeslagen warmte. De energie komt vrij doordat er sterkere bindingen in CO₂ en water gevormd worden.",
+         "Koos je zwaarder? Massa zegt niets over energie. Bovendien weegt de brandstof zelf niet meer; er komt alleen zuurstof bij."
+        ],
+        "uh": "Energie zit opgeslagen in bindingen; na verbranden is er minder over."
+       },
+       {
+        "v": "Wat is de activeringsenergie?",
+        "o": [
+         "De minimale energie om een reactie op gang te brengen",
+         "De energie die vrijkomt bij een reactie",
+         "De energie in de reactieproducten",
+         "De energie die een katalysator levert"
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 1,
+        "u": "Activeringsenergie is de energiedrempel die de deeltjes moeten nemen voordat de reactie verloopt.",
+        "uo": [
+         "Klopt: om bindingen te laten breken, moeten de deeltjes eerst een drempel over. Daarom moet je een kaars of gasbrander eerst aansteken.",
+         "Koos je de energie die vrijkomt? Dat is het energie-effect ΔE. De activeringsenergie is het \"bergje\" ervoor.",
+         "Koos je de energie in de producten? Dat is het eindniveau in het diagram. De activeringsenergie is het hoogste punt min het beginniveau.",
+         "Koos je katalysator? Een katalysator levert geen energie; hij verlaagt de drempel juist. De activeringsenergie is de hoogte van die drempel."
+        ],
+        "uh": "Activeringsenergie = de berg over vóór het bergafwaarts gaat."
+       },
+       {
+        "v": "In een energiediagram liggen de producten lager dan de beginstoffen. Wat weet je?",
+        "o": [
+         "De reactie verloopt nooit vanzelf",
+         "De reactie is endotherm",
+         "De reactie heeft geen activeringsenergie",
+         "De reactie is exotherm"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 1,
+        "u": "Producten lager = energie komt vrij = exotherm.",
+        "uo": [
+         "Koos je \"nooit vanzelf\"? Een exotherme reactie gaat na het aansteken vaak vanzelf door, omdat de vrijkomende energie de volgende deeltjes over de drempel helpt.",
+         "Koos je endotherm? Dan liggen de producten juist hoger, omdat er energie in is gestopt.",
+         "Koos je geen activeringsenergie? De hoogte van het eindniveau zegt niets over de drempel. Ook exotherme reacties hebben een bergje in het diagram.",
+         "Klopt: als de producten lager liggen, hebben ze minder chemische energie. Het verschil is vrijgekomen: exotherm."
+        ],
+        "uh": "Eindniveau lager dan begin: exotherm."
+       },
+       {
+        "v": "Waarom blijft de lucifer niet vanzelf branden in het doosje, maar wel na het strijken?",
+        "o": [
+         "In het doosje is helemaal geen zuurstof aanwezig",
+         "De verbranding is endotherm, dus hij heeft steeds wrijving nodig",
+         "Strijken geeft de activeringsenergie, daarna gaat het vanzelf",
+         "Strijken verandert het energie-effect van de reactie"
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 1,
+        "u": "De reactie is exotherm maar heeft een drempel; door strijken komt die er, daarna levert de reactie zelf genoeg warmte.",
+        "uo": [
+         "Koos je geen zuurstof? In een doosje zit gewoon lucht. Toch gaat de lucifer niet vanzelf branden, omdat de drempel niet wordt gehaald.",
+         "Koos je endotherm? Een brandende lucifer geeft juist warmte en licht af: exotherm. Na het strijken brandt hij door zonder verdere wrijving.",
+         "Klopt: lucifers bewaren kan omdat er een activeringsenergie is. Strijken geeft de eerste warmte; de exotherme verbranding levert daarna zelf genoeg om door te gaan.",
+         "Koos je energie-effect veranderen? Het energieverschil tussen beginstoffen en producten blijft gelijk. Strijken helpt alleen over de drempel heen."
+        ],
+        "uh": "Aansteken = activeringsenergie geven. Doorbranden = exotherm.",
+        "ctx": "Een lucifer bevat stoffen die met zuurstof uit de lucht verbranden. Toch kun je een doosje lucifers jaren bewaren zonder dat er iets gebeurt. Strijk je een lucifer langs het doosje, dan vat hij vlam en brandt hij uit zichzelf door tot het hout op is."
+       },
+       {
+        "v": "Wat doet een katalysator met het energiediagram?",
+        "o": [
+         "Hij verlaagt het niveau van de beginstoffen",
+         "Hij verlaagt de top van de berg",
+         "Hij maakt ΔE kleiner",
+         "Hij verhoogt het niveau van de producten"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 1,
+        "u": "Een katalysator verlaagt de activeringsenergie; begin- en eindniveau en ΔE blijven gelijk.",
+        "uo": [
+         "Koos je beginniveau? De beginstoffen blijven dezelfde, dus hun energie ook. Alleen de route ertussen verandert.",
+         "Klopt: met een katalysator loopt de reactie via een andere route met een lagere drempel. Daardoor verloopt de reactie sneller.",
+         "Koos je ΔE kleiner? Begin- en eindniveau veranderen niet, dus het energie-effect blijft precies gelijk.",
+         "Koos je eindniveau? De producten zijn dezelfde stoffen als zonder katalysator. Hun energie verandert niet."
+        ],
+        "uh": "Katalysator: lagere berg, zelfde begin en eind."
+       },
+       {
+        "v": "Welke vormingswarmte hebben elementen zoals O₂ en H₂ in Binas 57?",
+        "o": [
+         "Nul",
+         "Altijd positief",
+         "Altijd negatief",
+         "Die staan er niet in omdat ze niet bestaan"
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 2,
+        "u": "De vormingswarmte van een element in zijn standaardtoestand is per afspraak 0.",
+        "uo": [
+         "Klopt: elementen zijn het nulpunt. Vormingswarmte is de energie die vrijkomt of nodig is als je een stof uit de elementen maakt; een element hoef je niet te maken.",
+         "Koos je positief? Er zijn stoffen met een positieve vormingswarmte, maar elementen zelf staan per afspraak op 0.",
+         "Koos je negatief? Veel verbindingen, zoals water en CO₂, hebben een negatieve vormingswarmte. Elementen zijn het vergelijkingspunt: 0.",
+         "Koos je \"niet bestaan\"? Zuurstof en waterstof bestaan natuurlijk wel. Ze staan niet in de tabel omdat hun waarde per afspraak 0 is."
+        ],
+        "uh": "Elementen: vormingswarmte = 0."
+       },
+       {
+        "v": "Hoe bereken je ΔE van een reactie met vormingswarmten?",
+        "o": [
+         "Vormingswarmten beginstoffen − vormingswarmten producten",
+         "Alleen de vormingswarmte van het product nemen",
+         "Alle vormingswarmten bij elkaar optellen",
+         "Vormingswarmten producten − vormingswarmten beginstoffen"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 2,
+        "u": "ΔE = Σ vormingswarmten producten − Σ vormingswarmten beginstoffen (elk keer de coëfficiënt).",
+        "uo": [
+         "Koos je beginstoffen min producten? Dan krijg je het juiste getal met het verkeerde teken. ΔE is altijd eindtoestand min begintoestand.",
+         "Koos je alleen het product? Dat werkt alleen als alle beginstoffen elementen zijn (vormingswarmte 0). In het algemeen moet je de beginstoffen aftrekken.",
+         "Koos je alles optellen? Dan tel je beginstoffen en producten bij elkaar op. Je wilt juist het verschil tussen begin en eind.",
+         "Klopt: ΔE = eind − begin. Vermenigvuldig elke vormingswarmte met de coëfficiënt uit de vergelijking."
+        ],
+        "uh": "ΔE = eind − begin, met de coëfficiënten."
+       },
+       {
+        "v": "Hoe groot is ΔE voor de volledige verbranding van 1 mol methaan?",
+        "o": [
+         "+8,91 · 10⁵ J",
+         "−3,19 · 10⁵ J",
+         "−8,91 · 10⁵ J",
+         "−9,66 · 10⁵ J"
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 2,
+        "u": "ΔE = (−3,935 + 2 × −2,86) − (−0,75) = −8,91 · 10⁵ J per mol CH₄.",
+        "uo": [
+         "Koos je de positieve waarde? Dan heb je beginstoffen min producten gedaan. Verbranden levert energie op, dus ΔE is negatief.",
+         "Koos je −3,19? Dan heb je de 2 voor water niet meegenomen: −3,935 − 2,86 + 0,75. Water heeft coëfficiënt 2.",
+         "Klopt: producten −3,935 + 2 × −2,86 = −9,655; beginstoffen −0,75 (zuurstof 0). ΔE = −9,655 + 0,75 = −8,91 · 10⁵ J.",
+         "Koos je −9,66? Dat is alleen de som van de producten. Je moet de vormingswarmte van methaan (−0,75) er nog van aftrekken."
+        ],
+        "uh": "Coëfficiënten meenemen, dan eind − begin.",
+        "ctx": "Aardgas is vooral methaan: CH₄(g) + 2 O₂(g) → CO₂(g) + 2 H₂O(l). Vormingswarmten (Binas 57, in 10⁵ J/mol): CH₄(g) −0,75; CO₂(g) −3,935; H₂O(l) −2,86; O₂(g) 0."
+       },
+       {
+        "v": "Hoe groot is ΔE voor het ontleden van 1 mol kalksteen?",
+        "o": [
+         "−1,79 · 10⁵ J",
+         "+1,79 · 10⁵ J",
+         "+22,4 · 10⁵ J",
+         "−22,4 · 10⁵ J"
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 2,
+        "u": "ΔE = (−6,35 + −3,935) − (−12,07) = +1,79 · 10⁵ J: endotherm.",
+        "uo": [
+         "Koos je −1,79? Dan heb je begin min eind gedaan. Je ziet ook in de beschrijving dat de oven steeds verwarmd moet worden: endotherm, dus positief.",
+         "Klopt: producten samen −10,285; beginstof −12,07. ΔE = −10,285 + 12,07 = +1,79 · 10⁵ J. Er moet energie in: endotherm.",
+         "Koos je +22,4? Dan heb je de vormingswarmten van producten en beginstof opgeteld in plaats van afgetrokken.",
+         "Koos je −22,4? Dan heb je alle waarden opgeteld. Reken eind (−10,285) min begin (−12,07)."
+        ],
+        "uh": "Een min-teken aftrekken wordt optellen: − (−12,07) = + 12,07.",
+        "ctx": "In een kalkoven wordt kalksteen sterk verhit: CaCO₃(s) → CaO(s) + CO₂(g). Zodra de verwarming uitgaat, stopt de reactie. Vormingswarmten (Binas 57, in 10⁵ J/mol): CaCO₃(s) −12,07; CaO(s) −6,35; CO₂(g) −3,935."
+       },
+       {
+        "v": "Wat kost energie bij een reactie?",
+        "o": [
+         "Bindingen verbreken",
+         "Bindingen vormen",
+         "Moleculen laten botsen",
+         "Producten afkoelen"
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 3,
+        "u": "Bindingen verbreken kost energie; bindingen vormen levert energie op.",
+        "uo": [
+         "Klopt: om atomen uit elkaar te halen, moet je energie toevoegen. Daarom heeft elke reactie een activeringsenergie.",
+         "Koos je vormen? Bij het vormen van een binding komt juist energie vrij. Atomen die aan elkaar gaan zitten, komen in een lagere energietoestand.",
+         "Koos je botsen? Botsingen zijn nodig, maar ze kosten zelf geen energie. Het is het verbreken van bindingen tijdens de botsing dat energie vraagt.",
+         "Koos je afkoelen? Afkoelen geeft juist warmte af aan de omgeving. Dat is geen energie die de reactie kost."
+        ],
+        "uh": "Breken kost, maken levert."
+       },
+       {
+        "v": "Wanneer is een reactie exotherm, als je naar de bindingen kijkt?",
+        "o": [
+         "Als het verbreken meer energie kost dan er vrijkomt",
+         "Als er meer bindingen verbroken worden dan gevormd",
+         "Als er bij de reactie geen bindingen verbroken worden",
+         "Als vormen meer oplevert dan breken kost"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 3,
+        "u": "Exotherm: energie uit gevormde bindingen > energie voor verbroken bindingen.",
+        "uo": [
+         "Koos je verbreken kost meer? Dan moet er netto energie in en is de reactie endotherm.",
+         "Koos je meer verbroken dan gevormd? Het gaat niet om het aantal bindingen, maar om hoe sterk ze zijn. Eén sterke binding kan meer opleveren dan twee zwakke kosten.",
+         "Koos je geen verbreken? Bij elke reactie worden bindingen verbroken; anders kunnen de atomen niet anders gegroepeerd worden.",
+         "Klopt: het vormen van de nieuwe bindingen levert meer op dan het breken van de oude kostte. Het verschil komt vrij als warmte."
+        ],
+        "uh": "Netto energie uit de nieuwe bindingen = exotherm."
+       },
+       {
+        "v": "Welke uitspraak over deze reactie klopt?",
+        "o": [
+         "Er komt 8,64 · 10⁵ J vrij, want dat levert het vormen op",
+         "Er is netto 1,85 · 10⁵ J nodig: de reactie is endotherm",
+         "Er komt netto 1,85 · 10⁵ J vrij: de reactie is exotherm",
+         "Er is 6,79 · 10⁵ J nodig, want dat kost het verbreken"
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 3,
+        "u": "Verbreken kost 4,36 + 2,43 = 6,79; vormen levert 2 × 4,32 = 8,64; netto 1,85 · 10⁵ J vrij (exotherm).",
+        "uo": [
+         "Koos je 8,64? Dat is alleen wat het vormen oplevert. Een deel daarvan is nodig om de oude bindingen te breken; netto komt er minder vrij.",
+         "Koos je endotherm? Dan heb je het teken omgedraaid. Het vormen van twee H-Cl-bindingen levert meer op dan het breken van H-H en Cl-Cl kost.",
+         "Klopt: breken kost 6,79 · 10⁵ J, vormen levert 8,64 · 10⁵ J op. Er komt dus netto 1,85 · 10⁵ J vrij en de reactie is exotherm.",
+         "Koos je 6,79? Dat is alleen wat het breken kost. Je moet het vergelijken met wat het vormen oplevert."
+        ],
+        "uh": "Netto = wat vormen oplevert − wat breken kost.",
+        "ctx": "H₂ + Cl₂ → 2 HCl. Bindingsenergieën (Binas 58, in 10⁵ J/mol): H-H 4,36; Cl-Cl 2,43; H-Cl 4,32. Een leerling rekent uit hoeveel energie het verbreken kost en hoeveel het vormen oplevert per mol H₂."
+       },
+       {
+        "v": "Waarom geeft de verbranding van methaan meer energie als water als vloeistof ontstaat dan als gas?",
+        "o": [
+         "Vloeibaar water bevat meer atomen",
+         "Bij condenseren komt nog extra energie vrij",
+         "Bij een vloeistof is er geen activeringsenergie",
+         "Waterdamp neemt energie op uit de vlam"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 4,
+        "u": "Condenseren is exotherm; H₂O(l) heeft een lagere (negatievere) vormingswarmte dan H₂O(g).",
+        "uo": [
+         "Koos je meer atomen? H₂O is in beide gevallen hetzelfde molecuul. Het verschil zit in de aantrekking tussen de moleculen in de vloeistof.",
+         "Klopt: vloeibaar water ligt lager in energie dan waterdamp (−2,86 tegen −2,42 · 10⁵ J/mol). Bij condenseren komt de verdampingswarmte nog vrij.",
+         "Koos je geen activeringsenergie? De activeringsenergie zegt niets over hoeveel energie er uiteindelijk vrijkomt.",
+         "Koos je waterdamp neemt energie op? Dat klopt in de zin dat verdampen energie kost, maar het juiste antwoord is de omgekeerde stap: bij condenseren komt die energie vrij."
+        ],
+        "uh": "Condenseren levert energie, verdampen kost energie."
+       },
+       {
+        "v": "Hoeveel energie levert 1,0 gram methaan bij volledige verbranding?",
+        "o": [
+         "5,6 · 10⁴ J",
+         "1,4 · 10⁷ J",
+         "8,9 · 10⁵ J",
+         "5,6 · 10¹ J"
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 4,
+        "u": "8,9 · 10⁵ J/mol ÷ 16,04 g/mol = 5,6 · 10⁴ J/g.",
+        "uo": [
+         "Klopt: per mol komt 8,9 · 10⁵ J vrij. Eén gram is 1/16,04 mol, dus 8,9 · 10⁵ / 16,04 = 5,6 · 10⁴ J.",
+         "Koos je 1,4 · 10⁷ J? Dan heb je met de molaire massa vermenigvuldigd in plaats van gedeeld. Een gram is veel minder dan een mol.",
+         "Koos je 8,9 · 10⁵ J? Dat is de energie per mol, niet per gram. Een mol methaan weegt 16 g, dus per gram is het zestien keer minder.",
+         "Koos je 56 J? Dan ben je drie machten van tien kwijt. Reken 8,9 · 10⁵ / 16 na: ongeveer 0,56 · 10⁵ = 5,6 · 10⁴."
+        ],
+        "uh": "Van per mol naar per gram: delen door M.",
+        "ctx": "Bij de verbranding van methaan tot CO₂ en vloeibaar water komt 8,9 · 10⁵ J per mol methaan vrij. Methaan heeft M = 16,04 g/mol. Een energiebedrijf wil weten hoeveel energie één gram aardgas levert."
+       },
+       {
+        "v": "Welke conclusie past bij de gegevens over de twee brandstoffen?",
+        "o": [
+         "Je kunt brandstoffen alleen per mol vergelijken",
+         "Methaan levert per gram meer, want per mol levert het meer",
+         "Waterstof en methaan leveren per gram precies evenveel energie",
+         "Per gram levert waterstof veel meer"
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 4,
+        "u": "H₂: 2,86 · 10⁵ / 2,016 ≈ 1,4 · 10⁵ J/g; CH₄: ≈ 5,6 · 10⁴ J/g: waterstof ongeveer 2,5 keer zoveel.",
+        "uo": [
+         "Koos je alleen per mol? Voor een auto of raket telt juist hoeveel energie je per kilo meeneemt. Dan vergelijk je per gram.",
+         "Koos je methaan? Dat klopt per mol, maar per gram niet. Een mol methaan weegt acht keer zoveel als een mol waterstof.",
+         "Koos je evenveel? Reken het na: 2,86 · 10⁵ / 2,0 en 8,9 · 10⁵ / 16 zijn heel verschillend.",
+         "Klopt: per mol levert methaan meer, maar een mol waterstof weegt maar 2 g. Per gram levert waterstof 1,4 · 10⁵ J tegen 5,6 · 10⁴ J voor methaan."
+        ],
+        "uh": "Per mol en per gram kunnen een andere winnaar geven.",
+        "ctx": "Gegevens: bij verbranding van 1 mol waterstof (M = 2,016 g/mol) komt 2,86 · 10⁵ J vrij; bij 1 mol methaan (M = 16,04 g/mol) 8,9 · 10⁵ J. Een leerling wil weten welke brandstof per kilogram de meeste energie geeft."
+       },
+       {
+        "v": "Een koud kompres wordt koud als je erin knijpt. Wat gebeurt er?",
+        "o": [
+         "Er komt ijs vrij uit een zakje in het kompres",
+         "Er verloopt een exotherm proces dat kou afgeeft",
+         "Een endotherm proces neemt warmte op",
+         "Er verdampt water dat warmte afgeeft"
+        ],
+        "c": 2,
+        "d": 1,
+        "s": 5,
+        "u": "Bij het oplossen van ammoniumnitraat wordt warmte opgenomen uit de omgeving: endotherm.",
+        "uo": [
+         "Koos je ijs? Er zit geen ijs in het kompres. Het is een zout dat bij oplossen warmte opneemt.",
+         "Koos je \"kou afgeven\"? Kou is geen energie die je kunt afgeven. Iets wordt koud doordat er warmte uit wordt opgenomen.",
+         "Klopt: het zout lost op in water en neemt daarbij warmte op uit het kompres en je huid. Daardoor voelt het koud.",
+         "Koos je verdampen dat warmte afgeeft? Verdampen kost juist warmte. Bovendien verdampt er in een gesloten kompres niets."
+        ],
+        "uh": "Iets wordt koud = er wordt warmte opgenomen = endotherm."
+       },
+       {
+        "v": "Welk teken heeft ΔE bij het oplossen van calciumchloride in een handwarmer?",
+        "o": [
+         "Positief, want je moet knijpen",
+         "Negatief, want er komt warmte vrij",
+         "Nul, want oplossen is geen reactie",
+         "Positief, want het zout verdwijnt"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 5,
+        "u": "De handwarmer wordt warm: exotherm, dus ΔE is negatief.",
+        "uo": [
+         "Koos je knijpen? Knijpen breekt alleen het zakje met water open. Daarna loopt het oplossen vanzelf en komt er warmte vrij.",
+         "Klopt: bij het oplossen van CaCl₂ komt warmte vrij. De oplossing heeft minder energie dan zout plus water: ΔE is negatief.",
+         "Koos je nul? Ook bij oplossen kan er energie vrijkomen of nodig zijn. De handwarmer wordt duidelijk warm.",
+         "Koos je \"het zout verdwijnt\"? Het zout lost op, maar dat zegt niets over het teken. De warmte die je voelt, bepaalt het: exotherm."
+        ],
+        "uh": "Warm voelen = exotherm = ΔE negatief."
+       },
+       {
+        "v": "Welke verklaring past het best bij de proef?",
+        "o": [
+         "NH₄NO₃ lost endotherm op, NaOH exotherm",
+         "Beide processen zijn exotherm, maar bij ammoniumnitraat minder",
+         "Het temperatuurverschil komt door een verschil in de massa van de stoffen",
+         "Ammoniumnitraat lost niet op, natriumhydroxide wel"
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 5,
+        "u": "NH₄NO₃: temperatuur daalt (endotherm); NaOH: temperatuur stijgt (exotherm).",
+        "uo": [
+         "Klopt: bij ammoniumnitraat daalt de temperatuur; het oplossen neemt warmte op uit het water. Bij natriumhydroxide stijgt de temperatuur; daar komt warmte vrij.",
+         "Koos je beide exotherm? Bij een exotherm proces stijgt de temperatuur. Bij ammoniumnitraat daalt hij juist, dus dat oplossen is endotherm.",
+         "Koos je massa? De leerling gebruikt van beide stoffen 5,0 g in 50 mL water. Het verschil zit in het soort stof, niet in de hoeveelheid.",
+         "Koos je \"lost niet op\"? Als niets zou oplossen, zou de temperatuur gelijk blijven. De daling laat zien dat er wel iets gebeurt."
+        ],
+        "uh": "Temperatuur omhoog of omlaag zegt welk energie-effect er is.",
+        "ctx": "Een leerling lost 5,0 g ammoniumnitraat op in 50 mL water van 20 °C: de temperatuur daalt tot 13 °C. Daarna lost ze 5,0 g natriumhydroxide op in 50 mL water van 20 °C: de temperatuur stijgt tot 44 °C."
+       },
+       {
+        "v": "Waarom is fotosynthese een endotherm proces?",
+        "o": [
+         "Omdat er water wordt verbruikt",
+         "Omdat er zuurstof vrijkomt",
+         "Omdat planten koud aanvoelen",
+         "Omdat er zonlicht als energie in moet"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 5,
+        "u": "Glucose en zuurstof bevatten meer energie dan CO₂ en water; die energie komt uit licht.",
+        "uo": [
+         "Koos je water verbruiken? Ook dat zegt niets over endo of exo. Het is de energie uit licht die fotosynthese endotherm maakt.",
+         "Koos je zuurstof? Dat er zuurstof ontstaat, zegt niets over het energie-effect. Het gaat erom dat er energie (licht) in moet.",
+         "Koos je koud aanvoelen? Een plant voelt niet merkbaar koud aan. Bij fotosynthese komt de energie uit licht, niet uit warmte van de omgeving.",
+         "Klopt: de plant zet koolstofdioxide en water om in glucose en zuurstof. De producten hebben meer energie; die komt uit het zonlicht."
+        ],
+        "uh": "Energie erin (licht, warmte, stroom) = endotherm."
+       },
+       {
+        "v": "Welke energieomzetting hoort bij de verbranding in deze gasbrander?",
+        "o": [
+         "Elektrische energie wordt omgezet in chemische energie",
+         "Warmte wordt omgezet in chemische energie",
+         "Chemische energie wordt omgezet in warmte en licht",
+         "Lichtenergie wordt omgezet in warmte"
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 5,
+        "u": "Bij verbranding wordt chemische energie van de brandstof omgezet in warmte en licht (exotherm).",
+        "uo": [
+         "Koos je elektrische energie? Er gaat geen stroom in een gasbrander. Bij elektrolyse wordt stroom omgezet in chemische energie.",
+         "Koos je warmte naar chemische energie? Dat gebeurt bij een endotherme reactie, zoals kalk branden. Een gasbrander levert juist warmte.",
+         "Klopt: propaan en zuurstof hebben samen meer chemische energie dan CO₂ en water. Dat verschil komt vrij als warmte en een beetje licht.",
+         "Koos je licht naar warmte? Licht is een product van de vlam, geen bron. De energie komt uit de brandstof."
+        ],
+        "uh": "Verbranden: chemische energie → warmte en licht.",
+        "ctx": "Op de camping kook je water op een gasbrander met propaan. De vlam wordt aangestoken met een vonkje en brandt daarna door zolang er gas is. Het water warmt in een paar minuten op tot het kookt."
+       }
+      ],
+      "oe": [
+       {
+        "bron": "Examenstijl",
+        "ctx": "Propaan (C₃H₈) wordt gebruikt als brandstof in campingbranders. Bij volledige verbranding ontstaan CO₂ en waterdamp: C₃H₈(g) + 5 O₂(g) → 3 CO₂(g) + 4 H₂O(g). Vormingswarmten (Binas 57, in 10⁵ J/mol): C₃H₈(g) −1,04; CO₂(g) −3,935; H₂O(g) −2,42.",
+        "v": "Bereken de reactiewarmte per mol propaan.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Producten: 3 × −3,935 + 4 × −2,42 = −21,485 · 10⁵ J (1p). Beginstoffen: −1,04 · 10⁵ J, zuurstof 0 (1p). ΔE = −21,485 − (−1,04) = −20,4 · 10⁵ J per mol propaan (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Bij de productie van ammoniak (N₂ + 3 H₂ → 2 NH₃) komt warmte vrij. De vormingswarmte van NH₃(g) is −0,46 · 10⁵ J/mol. Een leerling zegt dat de fabriek de reactor dus niet hoeft te verwarmen.",
+        "v": "Bereken ΔE voor de reactie zoals hij staat en leg uit waarom de reactor toch eerst verwarmd moet worden.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "ΔE = 2 × −0,46 − 0 = −0,92 · 10⁵ J (1p). De reactie heeft een (hoge) activeringsenergie; zonder verwarmen en katalysator komen de deeltjes niet over de drempel en verloopt de reactie te langzaam (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een leerling lost 4,0 g natriumhydroxide op in 100 mL water. De temperatuur stijgt van 19,5 °C naar 29,8 °C. Daarna doet ze een proef waarbij ijs in water smelt en de temperatuur daalt.",
+        "v": "Geef aan of het oplossen van natriumhydroxide en het smelten van ijs exotherm of endotherm zijn, en licht toe.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Oplossen van NaOH is exotherm: de temperatuur stijgt, er komt warmte vrij (1p). Smelten van ijs is endotherm: het ijs neemt warmte op uit het water, de temperatuur daalt (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Waterstof wordt genoemd als brandstof voor vrachtwagens. Bij verbranding van 1 mol waterstof tot vloeibaar water komt 2,86 · 10⁵ J vrij (M = 2,016 g/mol). Bij diesel komt per gram ongeveer 4,5 · 10⁴ J vrij.",
+        "v": "Bereken hoeveel energie 1 gram waterstof levert en vergelijk dat met diesel.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "2,86 · 10⁵ / 2,016 = 1,42 · 10⁵ J per gram (1p). Dat is ruim drie keer zoveel per gram als diesel (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Bij de reactie H₂ + Cl₂ → 2 HCl worden een H-H- en een Cl-Cl-binding verbroken en twee H-Cl-bindingen gevormd. Bindingsenergieën (Binas 58, in 10⁵ J/mol): H-H 4,36; Cl-Cl 2,43; H-Cl 4,32.",
+        "v": "Bereken het energie-effect per mol H₂ en leg uit of de reactie exotherm of endotherm is.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Verbreken kost 4,36 + 2,43 = 6,79 · 10⁵ J; vormen levert 2 × 4,32 = 8,64 · 10⁵ J (1p). ΔE = 6,79 − 8,64 = −1,85 · 10⁵ J, negatief dus exotherm (1p)."
+       }
+      ]
      }
     ]
    },
