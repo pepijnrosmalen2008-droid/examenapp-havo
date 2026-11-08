@@ -1901,6 +1901,28 @@ var VAKKEN = [
       "nOe": 5,
       "nBeg": 11,
       "hasSam": true
+     },
+     {
+      "id": "D5",
+      "lo": "sk.D.5",
+      "gs": 2,
+      "naam": "Reactietypen in de koolstofchemie",
+      "beschrijving": "Je onderscheidt additie, substitutie, volledige en onvolledige verbranding, condensatie en hydrolyse, herkent het type aan de reactievergelijking en past dit toe op het harden van olie, de productie van ethanol en de vertering.",
+      "ceStatus": "CE",
+      "binas": "66D",
+      "val": "",
+      "onderwerpen": [
+       "Additie aan een dubbele binding",
+       "Substitutie: een atoom vervangen",
+       "Verbranding: volledig en onvolledig",
+       "Condensatie en hydrolyse",
+       "Het reactietype herkennen",
+       "Toepassingen: harden, ethanol en roet"
+      ],
+      "nSv": 28,
+      "nOe": 5,
+      "nBeg": 11,
+      "hasSam": true
      }
     ]
    },

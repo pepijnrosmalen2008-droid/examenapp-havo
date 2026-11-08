@@ -1,0 +1,690 @@
+{
+ "id": "D5",
+ "lo": "sk.D.5",
+ "gs": 2,
+ "naam": "Reactietypen in de koolstofchemie",
+ "beschrijving": "Je onderscheidt additie, substitutie, volledige en onvolledige verbranding, condensatie en hydrolyse, herkent het type aan de reactievergelijking en past dit toe op het harden van olie, de productie van ethanol en de vertering.",
+ "ceStatus": "CE",
+ "binas": "66D",
+ "val": "",
+ "onderwerpen": [
+  "Additie aan een dubbele binding",
+  "Substitutie: een atoom vervangen",
+  "Verbranding: volledig en onvolledig",
+  "Condensatie en hydrolyse",
+  "Het reactietype herkennen",
+  "Toepassingen: harden, ethanol en roet"
+ ],
+ "sam": "Additie: een molecuul koppelt aan een C=C, één product. Substitutie: een H wordt vervangen door een halogeen (alkaan in licht), HX ontstaat. Volledige verbranding geeft CO₂ en H₂O; onvolledige ook CO en roet (gele vlam). Condensatie koppelt moleculen en geeft water af; hydrolyse splitst met water. Harden van olie = additie van H₂ met nikkel.",
+ "begrippen": [
+  {
+   "t": "Additiereactie",
+   "d": "Reactie waarbij een molecuul aan een dubbele binding wordt gekoppeld; er ontstaat één product."
+  },
+  {
+   "t": "Substitutiereactie",
+   "d": "Reactie waarbij een atoom in een molecuul wordt vervangen door een ander atoom; er ontstaat ook HX."
+  },
+  {
+   "t": "Volledige verbranding",
+   "d": "Verbranding met genoeg zuurstof, waarbij alleen CO₂ en H₂O ontstaan."
+  },
+  {
+   "t": "Onvolledige verbranding",
+   "d": "Verbranding met te weinig zuurstof, waarbij ook CO en roet ontstaan."
+  },
+  {
+   "t": "Koolstofmonoxide",
+   "d": "CO: giftig, kleurloos en reukloos gas dat ontstaat bij onvolledige verbranding."
+  },
+  {
+   "t": "Roet",
+   "d": "Koolstofdeeltjes die ontstaan bij onvolledige verbranding en een vlam geel laten gloeien."
+  },
+  {
+   "t": "Condensatiereactie",
+   "d": "Reactie waarbij twee moleculen koppelen onder afsplitsing van een klein molecuul, meestal water."
+  },
+  {
+   "t": "Hydrolyse",
+   "d": "Reactie waarbij water een molecuul splitst; het omgekeerde van condensatie."
+  },
+  {
+   "t": "Harden van olie",
+   "d": "Additie van waterstof aan de dubbele bindingen in plantaardige olie, met nikkel als katalysator."
+  },
+  {
+   "t": "Halogeenalkaan",
+   "d": "Alkaan waarin een H-atoom is vervangen door een F-, Cl-, Br- of I-atoom."
+  },
+  {
+   "t": "Reactietype",
+   "d": "Soort reactie, herkenbaar aan wat er bijkomt, afgaat of wisselt."
+  }
+ ],
+ "sv": [
+  {
+   "v": "Wat gebeurt er bij een additiereactie?",
+   "o": [
+    "Een molecuul valt uiteen in kleinere stukken",
+    "Een atoom wordt vervangen door een ander atoom",
+    "Een molecuul koppelt aan een dubbele binding: één product",
+    "Er komt water vrij bij het koppelen van twee moleculen tot één groter molecuul"
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 0,
+   "u": "Additie: de dubbele binding klapt open en beide delen van het andere molecuul komen erbij.",
+   "uo": [
+    "Koos je uiteenvallen? Dat is een ontleding, zoals kraken. Bij additie worden twee moleculen juist één.",
+    "Koos je vervangen? Dat is substitutie: een H-atoom wordt vervangen en er ontstaan twee producten. Bij additie wordt alleen iets toegevoegd.",
+    "Klopt: bij additie wordt de C=C een enkele binding. Aan elk van de twee C-atomen komt een atoom of groep bij. Er gaat niets af, dus er ontstaat één product.",
+    "Koos je water vrij? Dat is condensatie. Bij additie gaat er niets af, ook geen water."
+   ],
+   "uh": "Additie: erbij, niets eraf, één product."
+  },
+  {
+   "v": "Welk product ontstaat bij de additie van waterstof aan propeen?",
+   "o": [
+    "Propanol",
+    "Propaan",
+    "Propyn",
+    "Waterstofpropeen"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 0,
+   "u": "CH₂=CH−CH₃ + H₂ → CH₃−CH₂−CH₃.",
+   "uo": [
+    "Koos je propanol? Een OH-groep ontstaat bij additie van water, niet van waterstof. Met H₂ komen er alleen twee H-atomen bij.",
+    "Klopt: aan elk C-atoom van de dubbele binding komt een H. De dubbele binding wordt enkel en het alkeen wordt een alkaan: propaan.",
+    "Koos je propyn? Propyn heeft een drievoudige binding en juist minder H-atomen. Bij additie van H₂ komen er H-atomen bij.",
+    "Koos je waterstofpropeen? Die naam bestaat niet. Na de additie is er geen dubbele binding meer, dus geen -een maar -aan."
+   ],
+   "uh": "Alkeen + H₂ → alkaan."
+  },
+  {
+   "v": "Welke stof ontstaat bij de additie van waterstofchloride (HCl) aan etheen?",
+   "o": [
+    "Chloorethaan",
+    "1,2-dichloorethaan",
+    "Ethaan en chloor",
+    "Chlooretheen"
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 0,
+   "u": "CH₂=CH₂ + HCl → CH₃−CH₂Cl: aan het ene C-atoom een H, aan het andere een Cl.",
+   "uo": [
+    "Klopt: de H gaat naar het ene C-atoom en de Cl naar het andere. Er ontstaat CH₃−CH₂Cl: chloorethaan.",
+    "Koos je 1,2-dichloorethaan? Dat ontstaat bij additie van Cl₂, met aan beide C-atomen een Cl. HCl levert maar één Cl.",
+    "Koos je ethaan en chloor? Bij additie ontstaat één product, en het chlooratoom komt in het molecuul terecht.",
+    "Koos je chlooretheen? Dan zou de dubbele binding blijven. Bij additie wordt die juist enkel."
+   ],
+   "uh": "HCl splitst in H en Cl over de twee C-atomen."
+  },
+  {
+   "v": "Welk reactietype gebruikt de fabriek, en waarom ontstaat er geen afval?",
+   "o": [
+    "Verbranding: etheen reageert met zuurstof",
+    "Substitutie: een H van etheen wordt vervangen door een OH-groep",
+    "Condensatie: er komt water vrij",
+    "Additie: alle atomen komen in het ethanol terecht"
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 0,
+   "u": "CH₂=CH₂ + H₂O → CH₃−CH₂OH: één product, atoomefficiëntie 100%.",
+   "uo": [
+    "Koos je verbranding? Bij verbranding ontstaan CO₂ en water. Hier reageert etheen met water tot ethanol.",
+    "Koos je substitutie? Bij substitutie gaat er iets af en ontstaat een tweede product. Hier ontstaat alleen ethanol.",
+    "Koos je condensatie? Bij condensatie komt water vrij. Hier wordt water juist opgenomen.",
+    "Klopt: water wordt aan de dubbele binding gekoppeld, H aan het ene C-atoom en OH aan het andere. Alle atomen komen in het ethanol terecht, dus er ontstaat geen bijproduct."
+   ],
+   "uh": "Additie = geen bijproduct.",
+   "ctx": "In de chemische industrie wordt ethanol voor oplosmiddelen niet alleen door vergisting gemaakt, maar ook uit etheen en waterdamp, met fosforzuur als katalysator. De fabriek meldt trots dat bij dit proces geen enkel bijproduct ontstaat. De vergelijking is: CH₂=CH₂ + H₂O → CH₃−CH₂−OH."
+  },
+  {
+   "v": "Hoeveel gram broom kan maximaal reageren met 1,0 mol but-2-een?",
+   "o": [
+    "320 g",
+    "80 g",
+    "160 g",
+    "56 g"
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 0,
+   "u": "Eén C=C neemt één Br₂ op: 1,0 mol Br₂ = 159,8 g.",
+   "uo": [
+    "Koos je 320 g? Dat zou nodig zijn bij twee dubbele bindingen per molecuul. But-2-een heeft er maar één.",
+    "Koos je 80 g? Dat is de massa van 1 mol Br-atomen. Broom komt voor als Br₂, en per dubbele binding reageert één Br₂-molecuul.",
+    "Klopt: but-2-een heeft één dubbele binding, dus 1 mol neemt 1 mol Br₂ op. De molaire massa van Br₂ is 2 × 79,90 = 159,8 g/mol, afgerond 160 g.",
+    "Koos je 56 g? Dat is de massa van 1 mol but-2-een (C₄H₈). De vraag gaat over de massa broom die reageert."
+   ],
+   "uh": "Eén C=C = één Br₂.",
+   "ctx": "Met broomwater kun je bepalen hoeveel dubbele bindingen er in een stof zitten. Een leerling laat 1,0 mol but-2-een (C₄H₈) reageren met een overmaat broom. Ze wil weten hoeveel broom er maximaal wordt opgenomen. Gebruik Br = 79,90 u."
+  },
+  {
+   "v": "Wat gebeurt er bij een substitutiereactie?",
+   "o": [
+    "Een molecuul wordt aan een dubbele binding gekoppeld",
+    "Een atoom in een molecuul wordt vervangen door een ander atoom",
+    "Twee kleine moleculen koppelen aan elkaar onder afsplitsing van water",
+    "Een stof reageert met zuurstof tot CO₂ en water"
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 1,
+   "u": "Substitutie = vervanging: bijvoorbeeld een H wordt Cl.",
+   "uo": [
+    "Koos je koppelen aan een dubbele binding? Dat is additie. Substitutie gebeurt juist vaak bij alkanen, die geen dubbele binding hebben.",
+    "Klopt: bij substitutie wordt bijvoorbeeld een H-atoom van een alkaan vervangen door een halogeenatoom. Het vervangen H-atoom komt in een tweede product terecht.",
+    "Koos je water afsplitsen? Dat is condensatie. Bij substitutie wordt een atoom omgeruild.",
+    "Koos je reageren met zuurstof? Dat is verbranding. Bij substitutie wordt een atoom in het molecuul vervangen."
+   ],
+   "uh": "Substitutie: ruilen."
+  },
+  {
+   "v": "Welke producten ontstaan bij de substitutie van methaan met chloor?",
+   "o": [
+    "Chloormethaan en waterstofchloride",
+    "Alleen chloormethaan",
+    "Methanol en chloor",
+    "Koolstofdioxide en water"
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 1,
+   "u": "CH₄ + Cl₂ → CH₃Cl + HCl (onder invloed van licht).",
+   "uo": [
+    "Klopt: één Cl-atoom vervangt een H-atoom van methaan. Het vervangen H-atoom vormt met het andere Cl-atoom waterstofchloride.",
+    "Koos je alleen chloormethaan? Cl₂ heeft twee Cl-atomen. Er komt er maar één in het molecuul, de andere vormt met de losse H waterstofchloride.",
+    "Koos je methanol? Methanol heeft een OH-groep. Bij een reactie met chloor komt er een Cl in het molecuul, geen OH.",
+    "Koos je CO₂ en water? Dat zijn de producten van verbranding met zuurstof, niet van een reactie met chloor."
+   ],
+   "uh": "Substitutie: twee producten, één met HX."
+  },
+  {
+   "v": "Waarom heeft de substitutie van een alkaan met broom licht nodig?",
+   "o": [
+    "Licht maakt van het alkaan een alkeen",
+    "Licht verwarmt het broom tot het kookt",
+    "In het donker is broom een vaste stof die niet kan reageren",
+    "Licht levert de energie om de Br−Br-binding te verbreken"
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 1,
+   "u": "UV-licht splitst Br₂; zonder licht reageert een alkaan bijna niet met broom.",
+   "uo": [
+    "Koos je alkeen? Licht maakt geen dubbele binding. Het alkaan blijft verzadigd en ondergaat substitutie.",
+    "Koos je kookt? Broom kookt bij 59 °C; licht van een lamp verwarmt het mengsel nauwelijks. Het gaat om de energie van het licht zelf.",
+    "Koos je vaste stof? Broom is bij kamertemperatuur een vloeistof, licht of geen licht.",
+    "Klopt: een alkaan is weinig reactief. Licht levert genoeg energie om broommoleculen te splitsen, waarna de reactie op gang komt. In het donker gebeurt er bijna niets."
+   ],
+   "uh": "Alkaan + halogeen: alleen met licht."
+  },
+  {
+   "v": "Hoe toont de leerling aan dat er een substitutie heeft plaatsgevonden en geen additie?",
+   "o": [
+    "De vloeistof wordt warm",
+    "De kleur van het broom verdwijnt binnen een paar minuten volledig",
+    "Er ontstaat een zure damp die indicatorpapier rood kleurt",
+    "Er ontstaat een vaste stof op de bodem"
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 1,
+   "u": "Bij substitutie ontstaat HBr; bij additie niet. Ontkleuren gebeurt bij beide.",
+   "uo": [
+    "Koos je warm worden? Beide reacties kunnen warmte geven. Dat zegt niets over het type.",
+    "Koos je ontkleuren? Het broom verdwijnt bij additie én bij substitutie. Daarmee kun je ze dus niet onderscheiden.",
+    "Klopt: bij substitutie komt er HBr vrij, een zuur gas dat vochtig indicatorpapier rood kleurt. Bij additie ontstaat geen HBr, want daar gaan beide Br-atomen in het molecuul.",
+    "Koos je vaste stof? Er ontstaat geen neerslag. Het bewijs voor substitutie is het zure gas HBr."
+   ],
+   "uh": "HX als tweede product = substitutie.",
+   "ctx": "Een leerling doet een paar druppels broom bij hexaan en zet de buis in fel zonlicht. Na een paar minuten is de kleur verdwenen. Ze wil bewijzen dat dit een substitutie was en geen additie. Ze heeft vochtig universeel indicatorpapier bij de hand."
+  },
+  {
+   "v": "Hoeveel verschillende producten met één chlooratoom kunnen ontstaan bij de substitutie van propaan met chloor?",
+   "o": [
+    "1",
+    "2",
+    "3",
+    "8"
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 1,
+   "u": "Cl aan het uiteinde (1-chloorpropaan) of in het midden (2-chloorpropaan).",
+   "uo": [
+    "Koos je 1? Er zijn twee soorten H-atomen in propaan: aan de uiteinden en in het midden. Die geven twee verschillende producten.",
+    "Klopt: het Cl-atoom kan een H aan het uiteinde vervangen (1-chloorpropaan) of een H aan het middelste C-atoom (2-chloorpropaan). Beide uiteinden geven dezelfde stof.",
+    "Koos je 3? De twee uiteinden van propaan zijn gelijk. Een Cl links of rechts geeft dezelfde stof: 1-chloorpropaan.",
+    "Koos je 8? Propaan heeft acht H-atomen, maar veel daarvan zijn gelijkwaardig. Er zijn maar twee verschillende plekken."
+   ],
+   "uh": "Tel verschillende plekken, niet alle H-atomen.",
+   "ctx": "Bij de substitutie van propaan (CH₃−CH₂−CH₃) met chloor onder invloed van licht vervangt één Cl-atoom één H-atoom. Een leerling vraagt zich af of daarbij steeds dezelfde stof ontstaat, of dat er meer verschillende stoffen kunnen ontstaan."
+  },
+  {
+   "v": "Welke producten ontstaan bij de volledige verbranding van een koolwaterstof?",
+   "o": [
+    "Koolstofdioxide en water",
+    "Koolstofmonoxide en water",
+    "Koolstof en waterstof",
+    "Koolstofdioxide en waterstof"
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 2,
+   "u": "Volledig: alle C wordt CO₂, alle H wordt H₂O.",
+   "uo": [
+    "Klopt: bij genoeg zuurstof wordt al het koolstof CO₂ en al het waterstof H₂O.",
+    "Koos je CO en water? Koolstofmonoxide ontstaat bij onvolledige verbranding, als er te weinig zuurstof is.",
+    "Koos je koolstof en waterstof? Dan is de stof alleen ontleed. Bij verbranding reageren de atomen met zuurstof.",
+    "Koos je CO₂ en waterstof? Waterstof verbrandt zelf ook. Bij volledige verbranding wordt het water."
+   ],
+   "uh": "Volledig = CO₂ + H₂O."
+  },
+  {
+   "v": "Waarom is onvolledige verbranding in een slecht geventileerde ruimte gevaarlijk?",
+   "o": [
+    "De vlam wordt blauw en daardoor heter",
+    "Er ontstaat te veel waterdamp",
+    "Er ontstaat zuurstof die explosief is",
+    "Er ontstaat CO: giftig en je ruikt het niet"
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 2,
+   "u": "CO is kleurloos, reukloos en giftig: het bindt aan je hemoglobine.",
+   "uo": [
+    "Koos je blauwe vlam? Een blauwe vlam hoort bij volledige verbranding. Bij te weinig zuurstof wordt de vlam juist geel.",
+    "Koos je waterdamp? Waterdamp ontstaat bij elke verbranding en is niet giftig. Het gevaar is koolstofmonoxide.",
+    "Koos je zuurstof? Bij verbranding wordt zuurstof juist verbruikt. Er ontstaat geen extra zuurstof.",
+    "Klopt: bij te weinig zuurstof ontstaat koolstofmonoxide. Dat gas is kleurloos en reukloos en bindt veel sterker aan je bloed dan zuurstof. Daarom horen geisers en kachels een goede afvoer te hebben."
+   ],
+   "uh": "Te weinig O₂ → CO: giftig en reukloos."
+  },
+  {
+   "v": "Waarom geeft een kaarsvlam roet op een koude schaal?",
+   "o": [
+    "De schaal reageert met de vlam tot roet",
+    "Kaarsvet bevat roet dat bij verwarmen vrijkomt",
+    "Onvolledige verbranding geeft roetdeeltjes",
+    "Roet is het product van volledige verbranding"
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 2,
+   "u": "In de gele vlam is te weinig zuurstof; er ontstaat koolstof (roet).",
+   "uo": [
+    "Koos je schaal reageert? De schaal doet niet mee aan de reactie. Hij koelt de vlam af, zodat het roet erop neerslaat.",
+    "Koos je kaarsvet bevat roet? Kaarsvet bestaat uit alkanen. Het roet ontstaat pas tijdens de onvolledige verbranding.",
+    "Klopt: in een kaarsvlam komt niet overal genoeg zuurstof. Een deel van het koolstof verbrandt niet en vormt kleine koolstofdeeltjes. Die gloeien geel en slaan neer op een koude schaal.",
+    "Koos je volledige verbranding? Bij volledige verbranding wordt alle koolstof CO₂, en ontstaat er geen roet."
+   ],
+   "uh": "Gele vlam = roet = onvolledig."
+  },
+  {
+   "v": "Welke vergelijking hoort bij de onvolledige verbranding van methaan tot koolstofmonoxide?",
+   "o": [
+    "CH₄ + 2 O₂ → CO₂ + 2 H₂O",
+    "2 CH₄ + 3 O₂ → 2 CO + 4 H₂O",
+    "CH₄ + O₂ → CO + 2 H₂",
+    "2 CH₄ + O₂ → 2 CO + 4 H₂O"
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 2,
+   "u": "C: 2 = 2; H: 8 = 8; O: 6 = 2 + 4.",
+   "uo": [
+    "Koos je CH₄ + 2 O₂ → CO₂ + 2 H₂O? Die vergelijking klopt, maar is van de volledige verbranding tot CO₂.",
+    "Klopt: links 2 C, 8 H en 6 O. Rechts 2 C in CO, 8 H in 4 H₂O en 2 + 4 = 6 O. Kloppend.",
+    "Koos je CO + 2 H₂? Bij verbranding wordt waterstof water, niet H₂. Bovendien klopt de zuurstof niet.",
+    "Koos je 2 CH₄ + O₂? Tel de O: links 2, rechts 2 + 4 = 6. Er is meer zuurstof nodig: 3 O₂."
+   ],
+   "uh": "Eerst C en H, dan O kloppend maken.",
+   "ctx": "In een slecht afgestelde geiser verbrandt aardgas (methaan) onvolledig. Een deel van het koolstof wordt dan koolstofmonoxide in plaats van koolstofdioxide. Een leerling wil de reactievergelijking geven voor het geval dat alle koolstof CO wordt en alle waterstof water."
+  },
+  {
+   "v": "Wat kenmerkt een condensatiereactie?",
+   "o": [
+    "Twee moleculen koppelen en er komt water vrij",
+    "Een molecuul neemt water op en valt uiteen",
+    "Een stof gaat van gas naar vloeistof, zoals waterdamp op een spiegel",
+    "Een atoom wordt vervangen door een halogeen"
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 3,
+   "u": "Condensatie = koppelen onder afsplitsing van water.",
+   "uo": [
+    "Klopt: bij condensatie worden twee moleculen aan elkaar gekoppeld. Daarbij komt een klein molecuul vrij, meestal water. Verestering is een voorbeeld.",
+    "Koos je water opnemen en uiteenvallen? Dat is hydrolyse, de omgekeerde reactie van condensatie.",
+    "Koos je gas naar vloeistof? Dat heet ook condenseren, maar dat is een faseovergang. Een condensatiereactie is een chemische reactie.",
+    "Koos je vervangen door een halogeen? Dat is substitutie. Bij condensatie worden twee moleculen gekoppeld."
+   ],
+   "uh": "Condensatie: koppelen + H₂O eraf."
+  },
+  {
+   "v": "Wat is het verschil tussen condensatie en hydrolyse?",
+   "o": [
+    "Condensatie gebeurt alleen bij gassen, hydrolyse alleen bij vloeistoffen",
+    "Bij condensatie wordt water verbruikt, bij hydrolyse komt water vrij",
+    "Bij beide komt water vrij",
+    "Bij condensatie komt water vrij, bij hydrolyse wordt water verbruikt"
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 3,
+   "u": "Hydrolyse is de omgekeerde reactie van condensatie.",
+   "uo": [
+    "Koos je gassen en vloeistoffen? De fase heeft er niets mee te maken. Het verschil is of water vrijkomt of verbruikt wordt.",
+    "Koos je andersom? Hydro betekent water en lyse splitsen: bij hydrolyse splits je met water, dus wordt water verbruikt.",
+    "Koos je bij beide water vrij? Ze zijn elkaars omgekeerde. Bij de ene komt water vrij, bij de andere wordt het opgenomen.",
+    "Klopt: bij condensatie koppelen moleculen en komt water vrij. Bij hydrolyse breekt water zo'n koppeling weer open."
+   ],
+   "uh": "Condensatie: H₂O eruit. Hydrolyse: H₂O erin."
+  },
+  {
+   "v": "Welk reactietype vindt plaats bij het koppelen van de twee aminozuren?",
+   "o": [
+    "Hydrolyse, want er is water bij de reactie betrokken",
+    "Additie, want twee moleculen worden één",
+    "Condensatie, want er komt een watermolecuul vrij",
+    "Substitutie, want een OH wordt vervangen"
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 3,
+   "u": "Koppelen met afsplitsing van water: condensatie.",
+   "uo": [
+    "Koos je hydrolyse? Bij hydrolyse wordt water verbruikt om een binding te breken. Hier ontstaat juist een binding en komt water vrij.",
+    "Koos je additie? Bij additie ontstaat één product zonder dat er iets afgaat. Hier komt water vrij.",
+    "Klopt: de COOH van het ene aminozuur en de NH₂ van het andere koppelen, en daarbij komt een watermolecuul vrij. Dat is een condensatiereactie.",
+    "Koos je substitutie? Er wordt niet één atoom omgeruild; twee moleculen worden gekoppeld en er gaat water af."
+   ],
+   "uh": "Koppeling + water vrij = condensatie.",
+   "ctx": "In je cellen worden aminozuren aan elkaar gekoppeld tot eiwitten. Bij het koppelen van twee glycinemoleculen (H₂N−CH₂−COOH) reageert de COOH-groep van het ene molecuul met de NH₂-groep van het andere. Er ontstaat een groter molecuul en daarnaast H₂O."
+  },
+  {
+   "v": "Welk reactietype is C₂H₄ + Br₂ → C₂H₄Br₂?",
+   "o": [
+    "Substitutie",
+    "Additie",
+    "Condensatie",
+    "Verbranding"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 4,
+   "u": "Twee stoffen worden één product, niets gaat eraf.",
+   "uo": [
+    "Koos je substitutie? Dan zou er een tweede product zijn, zoals HBr. Hier ontstaat maar één stof.",
+    "Klopt: er ontstaat één product waarin alle atomen van beide beginstoffen zitten. Bij etheen gaat de dubbele binding open.",
+    "Koos je condensatie? Bij condensatie komt water vrij. Hier ontstaat geen water.",
+    "Koos je verbranding? Daarvoor is zuurstof nodig en ontstaan CO₂ en water. Hier reageert etheen met broom."
+   ],
+   "uh": "Eén product, alles erbij = additie."
+  },
+  {
+   "v": "Welk reactietype is C₂H₆ + Cl₂ → C₂H₅Cl + HCl?",
+   "o": [
+    "Substitutie",
+    "Additie",
+    "Hydrolyse",
+    "Condensatie"
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 4,
+   "u": "Een H is vervangen door een Cl; HCl is het tweede product.",
+   "uo": [
+    "Klopt: in ethaan wordt een H vervangen door een Cl. De vervangen H vormt met het andere Cl-atoom HCl.",
+    "Koos je additie? Ethaan heeft geen dubbele binding en er ontstaan twee producten. Dat past niet bij additie.",
+    "Koos je hydrolyse? Bij hydrolyse reageert een stof met water. Hier doet geen water mee.",
+    "Koos je condensatie? Daarbij koppelen twee moleculen en komt water vrij. Hier wordt een atoom omgeruild."
+   ],
+   "uh": "Ruilen + HX = substitutie."
+  },
+  {
+   "v": "Welk reactietype is CH₃COOCH₃ + H₂O → CH₃COOH + CH₃OH?",
+   "o": [
+    "Substitutie",
+    "Condensatie",
+    "Additie",
+    "Hydrolyse"
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 4,
+   "u": "Een ester wordt met water gesplitst in een zuur en een alcohol.",
+   "uo": [
+    "Koos je substitutie? Hier wordt geen atoom omgeruild; de estergroep wordt opengebroken.",
+    "Koos je condensatie? Dat is de omgekeerde reactie: zuur en alcohol koppelen onder afsplitsing van water. Hier wordt water verbruikt.",
+    "Koos je additie? Bij additie wordt een molecuul aan een dubbele binding gekoppeld tot één product. Hier ontstaan twee producten.",
+    "Klopt: methylethanoaat reageert met water en valt uiteen in ethaanzuur en methanol. Splitsen met water is hydrolyse."
+   ],
+   "uh": "Water erin, molecuul uit elkaar = hydrolyse.",
+   "ctx": "Een leerling krijgt vier reactievergelijkingen en moet bij elk het reactietype noemen. Bij deze vergelijking staan links een ester (methylethanoaat) en water, en rechts een carbonzuur en een alcohol. Ze kijkt eerst of er water verdwijnt of ontstaat."
+  },
+  {
+   "v": "Bij welke reactie ontstaan er twee producten waarvan één HBr is?",
+   "o": [
+    "Etheen met waterstof",
+    "Hexeen met broom in het donker",
+    "Hexaan met broom in fel licht",
+    "Ethanol met ethaanzuur"
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 4,
+   "u": "Alkaan + Br₂ (licht) = substitutie: halogeenalkaan + HBr.",
+   "uo": [
+    "Koos je etheen met waterstof? Dat is additie tot ethaan. Er ontstaat één product en er is geen broom bij.",
+    "Koos je hexeen met broom? Hexeen heeft een dubbele binding en reageert met broom door additie: beide Br-atomen komen in het molecuul, er ontstaat geen HBr.",
+    "Klopt: hexaan heeft geen dubbele binding en reageert in licht met broom door substitutie. Een H wordt vervangen door een Br, en HBr komt vrij.",
+    "Koos je ethanol met ethaanzuur? Dat is een condensatie tot een ester en water. Er is geen broom bij betrokken."
+   ],
+   "uh": "Alkaan + halogeen = substitutie.",
+   "ctx": "Een docent zet vier proeven klaar. Een leerling moet voorspellen bij welke proef er een gas vrijkomt dat vochtig indicatorpapier rood kleurt. Ze weet dat dit gas HBr is en dat het alleen ontstaat als een H-atoom in een molecuul wordt vervangen door een broomatoom."
+  },
+  {
+   "v": "Waarom wordt plantaardige olie hard als je er waterstof aan addeert?",
+   "o": [
+    "Waterstof is een vaste stof en maakt de olie stevig",
+    "Rechte verzadigde ketens liggen dichter op elkaar",
+    "De olie verbrandt tot een vaste stof",
+    "Er ontstaat een zout met een hoog smeltpunt"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 5,
+   "u": "Harden: additie van H₂ aan C=C; verzadigde ketens passen beter tegen elkaar → hoger smeltpunt.",
+   "uo": [
+    "Koos je waterstof is vast? Waterstof is een gas. De olie wordt hard doordat de vorm van de moleculen verandert.",
+    "Klopt: de dubbele bindingen geven knikken in de ketens. Na additie van waterstof zijn de ketens recht en verzadigd. Ze liggen dichter tegen elkaar, de vanderwaalskrachten zijn sterker en het smeltpunt stijgt.",
+    "Koos je verbranden? Bij harden reageert de olie met waterstof, niet met zuurstof. Er ontstaat geen CO₂ of water.",
+    "Koos je zout? Bij harden ontstaan geen ionen. Het product is nog steeds een vet, maar met verzadigde ketens."
+   ],
+   "uh": "Harden = additie van H₂ = hoger smeltpunt."
+  },
+  {
+   "v": "Waarom gebruikt de fabriek nikkel bij het harden van olie?",
+   "o": [
+    "Als katalysator die de additie van waterstof versnelt",
+    "Omdat nikkel de dubbele bindingen vervangt",
+    "Om de margarine zijn kleur te geven",
+    "Omdat nikkel met waterstof reageert tot het eindproduct"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 5,
+   "u": "Nikkel versnelt de additie en wordt niet verbruikt.",
+   "uo": [
+    "Klopt: zonder katalysator reageert waterstof bijna niet met de dubbele bindingen. Fijn verdeeld nikkel versnelt de additie en wordt na afloop weer afgefilterd.",
+    "Koos je vervangt dubbele bindingen? Nikkel komt niet in het product terecht. Het versnelt de reactie en wordt teruggewonnen.",
+    "Koos je kleur? De kleur van margarine komt van toegevoegde stoffen zoals bètacaroteen. Nikkel wordt juist volledig verwijderd.",
+    "Koos je reageert tot eindproduct? Het eindproduct is gehard vet. Nikkel wordt niet verbruikt: het is een katalysator."
+   ],
+   "uh": "Katalysator: sneller, niet verbruikt.",
+   "ctx": "Bij het maken van margarine wordt plantaardige olie bij ongeveer 180 °C door waterstofgas geleid. In de olie zit fijn verdeeld nikkel. Na afloop wordt het nikkel afgefilterd en opnieuw gebruikt. In het product mag geen nikkel meer zitten."
+  },
+  {
+   "v": "Waarom is de vlam van een gasbrander met dicht luchtgat geel?",
+   "o": [
+    "Er komt extra waterstof vrij die met een gele vlam verbrandt",
+    "Het gas verbrandt dan volledig en heter",
+    "Het luchtgat filtert het blauwe licht weg",
+    "Te weinig zuurstof: er ontstaan gloeiende roetdeeltjes"
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 5,
+   "u": "Dicht luchtgat: onvolledige verbranding, roet gloeit geel.",
+   "uo": [
+    "Koos je waterstof? Er komt geen extra waterstof vrij. De gele kleur komt van gloeiende roetdeeltjes.",
+    "Koos je volledig en heter? Het is andersom: met het luchtgat open is de verbranding volledig, de vlam blauw en heter.",
+    "Koos je filtert? Het luchtgat laat lucht binnen; het filtert geen licht. De kleur komt van de verbranding zelf.",
+    "Klopt: met het luchtgat dicht komt er te weinig zuurstof bij het gas. De verbranding is onvolledig en er ontstaan kleine koolstofdeeltjes die geel gloeien."
+   ],
+   "uh": "Geel = te weinig zuurstof = roet."
+  },
+  {
+   "v": "Welke stof ontstaat bij de additie van waterstofbromide aan propeen, als de H aan het eerste C-atoom gaat?",
+   "o": [
+    "1,2-dibroompropaan",
+    "1-broompropaan",
+    "2-broompropaan",
+    "2-broompropeen"
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 5,
+   "u": "CH₂=CH−CH₃ + HBr: H naar C1, Br naar C2 → CH₃−CHBr−CH₃.",
+   "uo": [
+    "Koos je 1,2-dibroompropaan? Dat ontstaat bij additie van Br₂. HBr levert maar één Br-atoom.",
+    "Koos je 1-broompropaan? Dan zou de Br aan het eerste C-atoom zitten. In de vraag gaat de H daarheen, dus de Br gaat naar C2.",
+    "Klopt: de H gaat naar het eerste C-atoom en de Br naar het tweede. Er ontstaat CH₃−CHBr−CH₃: 2-broompropaan.",
+    "Koos je 2-broompropeen? Na additie is de dubbele binding verdwenen. Het product is een alkaan met een Br: broompropaan."
+   ],
+   "uh": "HBr: H op het ene C, Br op het andere.",
+   "ctx": "Propeen (CH₂=CH−CH₃) reageert met waterstofbromide. Daarbij gaat het H-atoom van HBr vrijwel altijd naar het C-atoom dat al de meeste H-atomen heeft, in dit geval het eerste C-atoom. Het Br-atoom komt aan het andere C-atoom van de dubbele binding."
+  },
+  {
+   "v": "Welk reactietype vindt plaats als je maag eiwitten afbreekt tot aminozuren?",
+   "o": [
+    "Condensatie",
+    "Hydrolyse",
+    "Additie",
+    "Verbranding met zuurstof uit je bloed"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 3,
+   "u": "Eiwitten worden met water gesplitst in aminozuren: hydrolyse.",
+   "uo": [
+    "Koos je condensatie? Bij condensatie worden aminozuren juist gekoppeld tot een eiwit. Afbreken is de omgekeerde reactie.",
+    "Klopt: de bindingen tussen de aminozuren worden met water opengebroken. Enzymen in je maag en darmen versnellen deze hydrolyse.",
+    "Koos je additie? Bij additie wordt een molecuul aan een dubbele binding gekoppeld. Bij vertering worden grote moleculen gesplitst.",
+    "Koos je verbranding? Verbranding geeft CO₂ en water. Bij vertering ontstaan eerst aminozuren, door reactie met water."
+   ],
+   "uh": "Afbreken met water = hydrolyse."
+  },
+  {
+   "v": "Hoeveel watermoleculen komen vrij als vier glucosemoleculen via condensatie een rechte keten vormen?",
+   "o": [
+    "3",
+    "4",
+    "2",
+    "8"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 3,
+   "u": "Vier moleculen in een rij hebben drie koppelingen; per koppeling één H₂O.",
+   "uo": [
+    "Klopt: tussen vier moleculen op een rij zitten drie koppelingen. Bij elke koppeling komt één watermolecuul vrij, dus drie in totaal.",
+    "Koos je 4? Dan tel je een koppeling per molecuul. Een keten van vier heeft maar drie verbindingen tussen de moleculen.",
+    "Koos je 2? Tel de koppelingen na: tussen 1 en 2, tussen 2 en 3 en tussen 3 en 4. Dat zijn er drie, dus drie watermoleculen.",
+    "Koos je 8? Bij één koppeling komt één watermolecuul vrij, niet twee. Drie koppelingen geven dus drie watermoleculen."
+   ],
+   "uh": "Aantal koppelingen = aantal moleculen − 1.",
+   "ctx": "Planten maken zetmeel door glucosemoleculen aan elkaar te koppelen. Bij elke koppeling tussen twee glucosemoleculen komt één watermolecuul vrij. Een leerling tekent een klein stukje van een zetmeelketen met vier glucose-eenheden op een rij."
+  },
+  {
+   "v": "Wat zie je aan de vlam als de verbranding volledig is?",
+   "o": [
+    "Een vlam die knettert en vonkt",
+    "Een gele, walmende vlam",
+    "Een vlam met zwarte rook",
+    "Een blauwe vlam zonder roet"
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 2,
+   "u": "Volledige verbranding: genoeg zuurstof, blauwe vlam, geen roet.",
+   "uo": [
+    "Koos je knetteren? Knetteren komt door vocht of luchtbellen in de brandstof. Het zegt niets over volledig of onvolledig.",
+    "Koos je geel en walmend? Een gele vlam ontstaat door gloeiende roetdeeltjes: de verbranding is dan onvolledig.",
+    "Koos je zwarte rook? Zwarte rook bestaat uit roet en hoort bij een zeer onvolledige verbranding.",
+    "Klopt: bij genoeg zuurstof verbrandt alles tot CO₂ en water. De vlam is blauw en er ontstaat geen roet."
+   ],
+   "uh": "Blauw = volledig. Geel = onvolledig."
+  }
+ ],
+ "oe": [
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een leerling doet twee proeven met broom. Bij proef 1 voegt ze broom toe aan cyclohexeen in het donker: de kleur verdwijnt direct. Bij proef 2 voegt ze broom toe aan cyclohexaan en zet de buis in zonlicht: de kleur verdwijnt na een paar minuten en er ontstaat een gas dat vochtig indicatorpapier rood kleurt.",
+   "v": "Geef bij elke proef het reactietype en leg uit waarom alleen bij proef 2 een zuur gas ontstaat.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Proef 1: additie aan de dubbele binding; proef 2: substitutie (1p). Bij substitutie wordt een H vervangen door een Br; de losse H vormt met het andere Br-atoom HBr, een zuur gas. Bij additie komen beide Br-atomen in het molecuul (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "In een slecht geventileerde badkamer staat een oude geiser die op aardgas (methaan) werkt. Een bewoner merkt dat de vlam geel is in plaats van blauw. Op het plafond boven de geiser zit een zwarte aanslag.",
+   "v": "Leg uit wat de gele vlam en de zwarte aanslag zeggen over de verbranding, en geef de vergelijking van de onvolledige verbranding van methaan tot koolstofmonoxide.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "De verbranding is onvolledig door te weinig zuurstof; de zwarte aanslag is roet en de gele kleur komt van gloeiende roetdeeltjes (1p). 2 CH₄ + 3 O₂ → 2 CO + 4 H₂O: juiste stoffen (1p), kloppend (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Ethanol kan op twee manieren worden gemaakt: door vergisting van suiker (C₆H₁₂O₆ → 2 C₂H₅OH + 2 CO₂) of door de reactie van etheen met water (C₂H₄ + H₂O → C₂H₅OH). Een fabriek kiest de tweede route omdat daarbij geen bijproduct ontstaat.",
+   "v": "Geef het reactietype van de tweede route en leg uit waarom daarbij geen bijproduct ontstaat.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Additie (van water aan de dubbele binding van etheen) (1p). Bij additie komen alle atomen van beide beginstoffen in één product terecht; er gaat niets af (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Zonnebloemolie is bij kamertemperatuur vloeibaar. Na een behandeling met waterstofgas en fijn verdeeld nikkel bij 180 °C ontstaat een vast vet dat in margarine wordt gebruikt. Het nikkel wordt na afloop afgefilterd.",
+   "v": "Leg uit welke reactie er plaatsvindt, wat de rol van nikkel is en waarom het product een hoger smeltpunt heeft.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Additie van waterstof aan de dubbele C=C-bindingen in de vetzuurketens (1p). Nikkel is een katalysator (1p). De ketens worden verzadigd en recht, liggen dichter op elkaar en hebben sterkere vanderwaalskrachten: hoger smeltpunt (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Bij de vertering in de dunne darm wordt een stukje zetmeel van vijf glucose-eenheden afgebroken tot losse glucosemoleculen. In de plant was dat stukje zetmeel ontstaan door glucosemoleculen aan elkaar te koppelen.",
+   "v": "Geef het reactietype bij de vorming in de plant en bij de vertering, en bereken hoeveel watermoleculen bij de vertering van dit stukje nodig zijn.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Vorming: condensatie; vertering: hydrolyse (1p). Vijf eenheden hebben vier koppelingen, dus zijn er vier watermoleculen nodig (1p)."
+  }
+ ]
+}
