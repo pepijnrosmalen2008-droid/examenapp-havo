@@ -1,0 +1,633 @@
+{
+ "id": "C4",
+ "lo": "sk.C.4",
+ "gs": 2,
+ "naam": "Redoxreacties",
+ "beschrijving": "Je herkent oxidator en reductor, stelt halfreacties op en combineert ze, voorspelt met Binas 48 of een reactie verloopt en past dat toe op metalen in zuur, roesten en de batterij.",
+ "ceStatus": "CE",
+ "binas": "48",
+ "val": "",
+ "onderwerpen": [
+  "Elektronen overdragen: oxidator en reductor",
+  "Halfreacties opstellen en combineren",
+  "Sterkte van oxidatoren en reductoren",
+  "Metalen, metaalionen en zuren",
+  "Roesten en beschermen",
+  "De batterij: een elektrochemische cel"
+ ],
+ "sam": "Bij een redoxreactie staat de reductor elektronen af aan de oxidator. In een halfreactie staan de elektronen bij een reductor rechts en bij een oxidator links. Voor de totaalreactie maak je het aantal elektronen gelijk en tel je op. In Binas 48 verloopt een reactie als de oxidator hoger staat dan de reductor. Onedele metalen reageren met zuur tot waterstof. Roesten vraagt zuurstof en water; zink beschermt ijzer als opofferingsmetaal. In een batterij is de reductor de negatieve pool.",
+ "begrippen": [
+  {
+   "t": "Redoxreactie",
+   "d": "Reactie waarbij elektronen van een reductor naar een oxidator gaan."
+  },
+  {
+   "t": "Reductor",
+   "d": "Deeltje dat elektronen afstaat, zoals een metaalatoom."
+  },
+  {
+   "t": "Oxidator",
+   "d": "Deeltje dat elektronen opneemt, zoals een metaalion of een halogeen."
+  },
+  {
+   "t": "Halfreactie",
+   "d": "Vergelijking van wat één deeltje doet, met de elektronen erbij; bij een reductor staan ze rechts, bij een oxidator links."
+  },
+  {
+   "t": "Totaalreactie",
+   "d": "Optelsom van de halfreacties nadat het aantal elektronen gelijk is gemaakt; elektronen vallen weg."
+  },
+  {
+   "t": "Binas tabel 48",
+   "d": "Tabel met redoxkoppels: oxidatoren links met de sterkste boven, reductoren rechts met de sterkste onder."
+  },
+  {
+   "t": "Onedel metaal",
+   "d": "Metaal dat lager staat dan H₂ in Binas 48 en met H⁺ reageert tot waterstofgas."
+  },
+  {
+   "t": "Edel metaal",
+   "d": "Metaal dat hoger staat dan H₂, zoals koper, zilver en goud; een zwakke reductor."
+  },
+  {
+   "t": "Roesten",
+   "d": "Redoxreactie van ijzer met zuurstof waarbij water nodig is."
+  },
+  {
+   "t": "Opofferingsmetaal",
+   "d": "Sterkere reductor, zoals zink, die in plaats van ijzer elektronen afstaat."
+  },
+  {
+   "t": "Elektrochemische cel",
+   "d": "Opstelling waarin een redoxreactie stroom levert doordat de elektronen via een draad gaan."
+  },
+  {
+   "t": "Zoutbrug",
+   "d": "Verbinding tussen twee halfcellen waardoor ionen kunnen bewegen, zodat er geen lading ophoopt."
+  }
+ ],
+ "sv": [
+  {
+   "v": "Wat doet een reductor bij een redoxreactie?",
+   "o": [
+    "Hij neemt elektronen op",
+    "Hij staat elektronen af",
+    "Hij staat H⁺ af",
+    "Hij neemt zuurstof op"
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 0,
+   "u": "Een reductor staat elektronen af; een oxidator neemt elektronen op.",
+   "uo": [
+    "Koos je opnemen? Dat doet de oxidator. Bij een redoxreactie gaan elektronen van de reductor naar de oxidator.",
+    "Klopt: een reductor geeft elektronen af aan de oxidator. Een metaal als zink is een typische reductor: Zn → Zn²⁺ + 2 e⁻.",
+    "Koos je H⁺ afstaan? Dat doet een zuur. Bij redox draait het om elektronen, bij zuur-base om H⁺.",
+    "Koos je zuurstof opnemen? Bij verbranding neemt een stof wel zuurstof op, maar de algemene regel gaat over elektronen. Een reductor staat elektronen af."
+   ],
+   "uh": "Reductor = elektronenGever. Oxidator = elektronenNemer."
+  },
+  {
+   "v": "In Zn + Cu²⁺ → Zn²⁺ + Cu: welk deeltje is de oxidator?",
+   "o": [
+    "Cu²⁺",
+    "Zn",
+    "Zn²⁺",
+    "Cu"
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 0,
+   "u": "Cu²⁺ neemt 2 elektronen op van Zn en wordt Cu: Cu²⁺ is de oxidator.",
+   "uo": [
+    "Klopt: het koperion neemt de twee elektronen van zink op en wordt een koperatoom. Wie elektronen opneemt, is de oxidator.",
+    "Koos je Zn? Zink staat juist twee elektronen af en wordt Zn²⁺. Wie elektronen afstaat, is de reductor.",
+    "Koos je Zn²⁺? Dat deeltje ontstaat pas na de reactie. Oxidator en reductor zijn altijd beginstoffen, links van de pijl.",
+    "Koos je Cu? Koper is het product dat ontstaat nadat Cu²⁺ elektronen heeft opgenomen. Kijk naar de deeltjes vóór de pijl."
+   ],
+   "uh": "Oxidator en reductor staan altijd vóór de pijl."
+  },
+  {
+   "v": "Welke uitspraak over deze reactie klopt?",
+   "o": [
+    "Magnesium is de oxidator, want het reageert met zuurstof",
+    "Zuurstof is de reductor, want het verdwijnt",
+    "Er is geen elektronenoverdracht, want er zijn geen ionen in de beginstoffen",
+    "Magnesium staat elektronen af aan zuurstof"
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 0,
+   "u": "Mg → Mg²⁺ + 2 e⁻ en O₂ + 4 e⁻ → 2 O²⁻: magnesium is de reductor, zuurstof de oxidator.",
+   "uo": [
+    "Koos je magnesium als oxidator? Magnesium wordt Mg²⁺ en raakt dus elektronen kwijt. Wie elektronen afstaat, is de reductor, niet de oxidator.",
+    "Koos je zuurstof als reductor? Zuurstof wordt O²⁻ in magnesiumoxide en neemt dus elektronen op. Dat maakt zuurstof de oxidator.",
+    "Koos je \"geen overdracht\"? De beginstoffen zijn neutraal, maar het product MgO bestaat uit ionen. Die lading kan alleen ontstaan doordat elektronen van magnesium naar zuurstof zijn gegaan.",
+    "Klopt: in MgO zitten Mg²⁺- en O²⁻-ionen. Magnesium heeft dus twee elektronen afgestaan, en zuurstof heeft ze opgenomen. Verbranden van een metaal is een redoxreactie."
+   ],
+   "uh": "Ontstaan er ionen uit neutrale stoffen? Dan zijn er elektronen overgegaan.",
+   "ctx": "Een magnesiumlint verbrandt met een fel licht: 2 Mg + O₂ → 2 MgO. Magnesiumoxide is een zout dat bestaat uit Mg²⁺- en O²⁻-ionen. Een leerling vraagt zich af of dit een redoxreactie is, want er doet geen zuur of oplossing mee."
+  },
+  {
+   "v": "Welk deeltje kan alleen als reductor optreden?",
+   "o": [
+    "Cl₂",
+    "Cu²⁺",
+    "Na",
+    "Fe³⁺"
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 0,
+   "u": "Een metaalatoom kan alleen elektronen afstaan: Na → Na⁺ + e⁻.",
+   "uo": [
+    "Koos je Cl₂? Chloor neemt elektronen op en wordt Cl⁻: Cl₂ + 2 e⁻ → 2 Cl⁻. Chloor is een oxidator.",
+    "Koos je Cu²⁺? Een positief metaalion kan elektronen opnemen en wordt dan een metaalatoom. Dat is gedrag van een oxidator.",
+    "Klopt: een natriumatoom kan zijn ene buitenste elektron afstaan en wordt Na⁺. Metalen zijn reductoren.",
+    "Koos je Fe³⁺? Fe³⁺ kan een elektron opnemen en wordt Fe²⁺. Ook dat is een oxidator."
+   ],
+   "uh": "Metaal = reductor. Metaalion en halogeen = oxidator."
+  },
+  {
+   "v": "Hoe ziet de halfreactie van zink als reductor eruit?",
+   "o": [
+    "Zn + 2 e⁻ → Zn²⁺",
+    "Zn → Zn²⁺ + 2 e⁻",
+    "Zn²⁺ → Zn + 2 e⁻",
+    "Zn → Zn²⁺"
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 1,
+   "u": "Een reductor staat elektronen af: de elektronen staan rechts van de pijl.",
+   "uo": [
+    "Koos je elektronen links? Dan zou zink elektronen opnemen en negatief worden, maar er staat Zn²⁺. Bij een reductor komen de elektronen vrij: rechts.",
+    "Klopt: zink staat twee elektronen af en wordt Zn²⁺. Bij een reductor staan de elektronen achter de pijl.",
+    "Koos je Zn²⁺ → Zn? Dat is omgekeerd: zo zou het zinkion iets worden. Bovendien klopt de lading niet: links +2, rechts −2.",
+    "Koos je zonder elektronen? Dan klopt de lading niet: links 0, rechts +2. In een halfreactie moeten ook de elektronen staan."
+   ],
+   "uh": "Reductor: elektronen rechts. Oxidator: elektronen links."
+  },
+  {
+   "v": "Welke halfreactie hoort bij chloor als oxidator?",
+   "o": [
+    "Cl₂ + 2 e⁻ → 2 Cl⁻",
+    "Cl₂ → 2 Cl⁻ + 2 e⁻",
+    "Cl + e⁻ → Cl⁻",
+    "2 Cl⁻ → Cl₂ + 2 e⁻"
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 1,
+   "u": "Cl₂ + 2 e⁻ → 2 Cl⁻: de oxidator neemt elektronen op (links).",
+   "uo": [
+    "Klopt: één Cl₂-molecuul neemt twee elektronen op en wordt twee chloride-ionen. De lading klopt: links 2 elektronen (−2), rechts 2 × −1 = −2.",
+    "Koos je elektronen rechts? Dan zou chloor elektronen afstaan en toch negatief worden. Dat kan niet: om Cl⁻ te worden moet chloor elektronen opnemen.",
+    "Koos je losse Cl? Chloor komt als stof voor als Cl₂. Gebruik de formule van de stof en maak dan kloppend.",
+    "Koos je 2 Cl⁻ → Cl₂? Dat is chloride als reductor, de omgekeerde reactie. Gevraagd is chloor als oxidator."
+   ],
+   "uh": "Een oxidator wordt negatiever: elektronen erbij, links."
+  },
+  {
+   "v": "Hoe combineer je Cu → Cu²⁺ + 2 e⁻ met Ag⁺ + e⁻ → Ag tot een totaalreactie?",
+   "o": [
+    "Cu + Ag⁺ → Cu²⁺ + Ag",
+    "Cu + 2 Ag → Cu²⁺ + 2 Ag⁺",
+    "2 Cu + Ag⁺ → 2 Cu²⁺ + Ag",
+    "Cu + 2 Ag⁺ → Cu²⁺ + 2 Ag"
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 1,
+   "u": "Zilverhalfreactie × 2, zodat de elektronen wegvallen: Cu + 2 Ag⁺ → Cu²⁺ + 2 Ag.",
+   "uo": [
+    "Koos je deze? Dan staat koper 2 elektronen af en neemt zilver er maar 1 op. De lading klopt niet: links +1, rechts +2. Vermenigvuldig de zilverhalfreactie met 2.",
+    "Koos je deze? Hier zijn zilver en zilverion van plaats gewisseld. Ag⁺ is de oxidator en staat dus links.",
+    "Koos je 2 Cu? Dan heb je de verkeerde halfreactie vermenigvuldigd: koper levert al 2 elektronen, zilver heeft er per ion maar 1 nodig.",
+    "Klopt: koper levert twee elektronen, elk zilverion neemt er één op. Daarom twee zilverionen. Links lading +2, rechts +2."
+   ],
+   "uh": "Maak het aantal elektronen gelijk, tel op, streep de elektronen weg."
+  },
+  {
+   "v": "Welke totaalreactie hoort bij deze twee halfreacties?",
+   "o": [
+    "Fe²⁺ + Cl₂ → Fe³⁺ + 2 Cl⁻",
+    "2 Fe³⁺ + 2 Cl⁻ → 2 Fe²⁺ + Cl₂",
+    "2 Fe²⁺ + Cl₂ → 2 Fe³⁺ + 2 Cl⁻",
+    "Fe²⁺ + Cl → Fe³⁺ + Cl⁻"
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 1,
+   "u": "IJzerhalfreactie × 2 (2 elektronen), dan optellen: 2 Fe²⁺ + Cl₂ → 2 Fe³⁺ + 2 Cl⁻.",
+   "uo": [
+    "Koos je deze? Dan geeft ijzer één elektron af en neemt chloor er twee op. Lading links +2, rechts +3 − 2 = +1: niet kloppend.",
+    "Koos je deze omgekeerde reactie? Dan zouden chloride-ionen de reductor zijn. Volgens de beschrijving is chloor de oxidator en Fe²⁺ de reductor.",
+    "Klopt: chloor neemt twee elektronen op, elk Fe²⁺ geeft er één af. Dus twee Fe²⁺. Lading links +4, rechts 2 × 3 − 2 = +4.",
+    "Koos je losse Cl? Chloor komt als Cl₂ voor. Met één Cl-atoom klopt ook de halfreactie van chloor niet meer."
+   ],
+   "uh": "Controleer na het optellen de lading links en rechts.",
+   "ctx": "Bij de zuivering van afvalwater wordt chloorgas door een oplossing met ijzer(II)ionen geleid. Daarbij gelden de halfreacties: Cl₂ + 2 e⁻ → 2 Cl⁻ en Fe²⁺ → Fe³⁺ + e⁻. Er ontstaan ijzer(III)ionen en chloride-ionen."
+  },
+  {
+   "v": "Waarom moet de leerling de halfreacties eerst vermenigvuldigen?",
+   "o": [
+    "Om zoveel mogelijk koper in de beker te krijgen",
+    "Omdat afgestane en opgenomen elektronen gelijk zijn",
+    "Omdat aluminium een sterkere reductor is",
+    "Omdat alle coëfficiënten even getallen moeten zijn"
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 1,
+   "u": "Al levert 3 e⁻, Cu²⁺ neemt 2 e⁻ op: × 2 en × 3 geeft 6 e⁻ aan beide kanten.",
+   "uo": [
+    "Koos je meer product? De coëfficiënten zeggen niets over hoeveel je in een bekerglas krijgt. Ze geven alleen de verhouding waarin de deeltjes reageren.",
+    "Klopt: elektronen verdwijnen niet. Wat aluminium afstaat (3 per atoom) moet koper opnemen (2 per ion). Het kleinste gemene veelvoud is 6: 2 Al + 3 Cu²⁺ → 2 Al³⁺ + 3 Cu.",
+    "Koos je \"sterkere reductor\"? Dat verklaart waarom de reactie verloopt, maar niet waarom je vermenigvuldigt. Je vermenigvuldigt om de elektronen gelijk te krijgen.",
+    "Koos je \"even getallen\"? Coëfficiënten mogen ook oneven zijn, zoals de 3 voor Cu²⁺ hier. Het gaat om gelijke aantallen elektronen."
+   ],
+   "uh": "Elektronen afgestaan = elektronen opgenomen.",
+   "ctx": "Een stukje aluminiumfolie in een oplossing van koper(II)sulfaat wordt bruin van koper. Halfreacties: Al → Al³⁺ + 3 e⁻ en Cu²⁺ + 2 e⁻ → Cu. Een leerling ziet dat ze eerst moet vermenigvuldigen en vraagt waarom."
+  },
+  {
+   "v": "Waar staan in Binas tabel 48 de sterkste oxidatoren?",
+   "o": [
+    "Linksboven",
+    "Linksonder",
+    "Rechtsboven",
+    "Rechtsonder"
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 2,
+   "u": "Oxidatoren staan links, de sterkste bovenaan; de sterkste reductoren staan rechtsonder.",
+   "uo": [
+    "Klopt: in de linkerkolom staan de oxidatoren, met de sterkste (zoals F₂) bovenaan. Daarom reageert een oxidator met een reductor die lager in de tabel staat.",
+    "Koos je linksonder? Daar staan de zwakste oxidatoren, zoals Li⁺ en K⁺. Die nemen bijna nooit elektronen op.",
+    "Koos je rechtsboven? Rechts staan de reductoren; bovenaan staan de zwakste, zoals F⁻.",
+    "Koos je rechtsonder? Daar staan de sterkste reductoren, zoals Li en K. De sterkste oxidatoren staan juist tegenover: linksboven."
+   ],
+   "uh": "Oxidator links, reductor rechts. Sterk: oxidator boven, reductor onder."
+  },
+  {
+   "v": "Wanneer verloopt een redoxreactie volgens Binas 48?",
+   "o": [
+    "Als de oxidator lager staat dan de reductor",
+    "Als er een zuur aanwezig is",
+    "Als oxidator en reductor op dezelfde regel staan",
+    "Als de oxidator hoger staat dan de reductor"
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 2,
+   "u": "Een reactie verloopt als de oxidator in de tabel hoger staat dan de reductor.",
+   "uo": [
+    "Koos je lager? Dan is de oxidator te zwak voor die reductor en gebeurt er niets. Zink en koperionen reageren wel, omdat Cu²⁺ hoger staat dan Zn.",
+    "Koos je zuur? Sommige halfreacties hebben H⁺ nodig, maar de regel voor of een reactie verloopt gaat over de plaats in de tabel.",
+    "Koos je dezelfde regel? Dat zijn een oxidator en de reductor die er bij hoort (een koppel, zoals Cu²⁺/Cu). Die reageren niet met elkaar.",
+    "Klopt: een oxidator die hoger staat, is sterk genoeg om elektronen af te pakken van een reductor die lager staat."
+   ],
+   "uh": "Oxidator hoger dan reductor: reactie."
+  },
+  {
+   "v": "In welke buis vindt een reactie plaats?",
+   "o": [
+    "Alleen in buis 1 (koper in zinksulfaat)",
+    "In beide buizen",
+    "Alleen in buis 2 (zink in kopersulfaat)",
+    "In geen van beide buizen"
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 2,
+   "u": "Cu²⁺ staat hoger dan Zn, dus zink reageert met koperionen; Zn²⁺ staat lager dan Cu, dus geen reactie in buis 1.",
+   "uo": [
+    "Koos je buis 1? Zinkionen zijn een zwakke oxidator en staan lager dan koper. Ze kunnen geen elektronen afpakken van koper, dus er gebeurt niets.",
+    "Koos je beide? Als zink met koperionen reageert, kan het omgekeerde niet ook vanzelf gebeuren. Eén richting verloopt, de andere niet.",
+    "Klopt: koperionen zijn een sterkere oxidator dan zinkionen, en zink is een sterkere reductor dan koper. Alleen in buis 2 slaat koper neer op het zink.",
+    "Koos je geen van beide? Koper(II)ionen staan in Binas 48 hoger dan zink. Die combinatie reageert wel: het zink wordt bruin van koper."
+   ],
+   "uh": "Van twee omgekeerde combinaties verloopt er hooguit één.",
+   "ctx": "Een leerling zet twee reageerbuizen klaar. In buis 1 legt ze een koperen munt in een zinksulfaatoplossing. In buis 2 legt ze een zinkkorrel in een kopersulfaatoplossing. Ze kijkt na tien minuten of er iets veranderd is. In Binas 48 staat Cu²⁺/Cu boven Zn²⁺/Zn."
+  },
+  {
+   "v": "Welke conclusie past bij de waarnemingen?",
+   "o": [
+    "Fe²⁺ is de sterkste oxidator van de drie",
+    "Oxidatoren: Ag⁺ sterker dan Cu²⁺, sterker dan Fe²⁺",
+    "Koper is een sterkere reductor dan ijzer",
+    "Zilver is van de drie metalen de sterkste reductor"
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 2,
+   "u": "Cu reageert met Ag⁺, Fe reageert met Cu²⁺: volgorde oxidatoren Ag⁺ > Cu²⁺ > Fe²⁺.",
+   "uo": [
+    "Koos je Fe²⁺ als sterkste? IJzerionen pakken geen elektronen af van koper (proef 3). Fe²⁺ is dus juist de zwakste oxidator van de drie.",
+    "Klopt: koper wordt door zilverionen geoxideerd, dus Ag⁺ is sterker dan Cu²⁺. IJzer wordt door koperionen geoxideerd, dus Cu²⁺ is sterker dan Fe²⁺.",
+    "Koos je koper als sterkere reductor? In proef 2 reageert ijzer met koperionen: ijzer staat elektronen af aan Cu²⁺. IJzer is dus de sterkere reductor.",
+    "Koos je zilver als sterkste reductor? Zilver als metaal reageert met geen van de ionen. Het is juist de zwakste reductor in deze reeks."
+   ],
+   "uh": "Wie reageert met wie? Zet de koppels op volgorde.",
+   "ctx": "Drie proeven: (1) een koperdraad in zilvernitraatoplossing wordt grijs van zilver; (2) een ijzeren spijker in kopersulfaatoplossing wordt bruin van koper; (3) een koperdraad in een oplossing met Fe²⁺ blijft onveranderd."
+  },
+  {
+   "v": "Welk gas ontstaat als magnesium reageert met zoutzuur?",
+   "o": [
+    "Waterstof",
+    "Zuurstof",
+    "Chloor",
+    "Koolstofdioxide"
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 3,
+   "u": "Mg + 2 H⁺ → Mg²⁺ + H₂: H⁺ is de oxidator, er ontstaat waterstofgas.",
+   "uo": [
+    "Klopt: magnesium staat elektronen af aan H⁺-ionen. Twee H⁺ worden samen één molecuul waterstofgas.",
+    "Koos je zuurstof? Zuurstof zit niet in zoutzuur als losse stof. De H⁺-ionen nemen elektronen op van magnesium en worden H₂.",
+    "Koos je chloor? Chloride-ionen doen niet mee; om chloor te worden zouden ze elektronen moeten afstaan, en magnesium neemt geen elektronen op.",
+    "Koos je CO₂? Koolstofdioxide ontstaat als een zuur met een carbonaat reageert, zoals kalk. Magnesium bevat geen koolstof."
+   ],
+   "uh": "Onedel metaal + zuur → metaalion + waterstofgas."
+  },
+  {
+   "v": "Waarom reageert koper niet met zoutzuur?",
+   "o": [
+    "Koper is een edelgas en reageert met niets",
+    "Koper is een te sterke oxidator",
+    "Zoutzuur is een zwak zuur",
+    "Koper is als reductor te zwak voor H⁺"
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 3,
+   "u": "Cu staat in Binas 48 boven H₂: H⁺ is te zwak als oxidator om koper aan te tasten.",
+   "uo": [
+    "Koos je edelgas? Koper is een metaal, geen edelgas. Het heet wel een \"edel\" metaal, juist omdat het moeilijk reageert.",
+    "Koos je oxidator? Koper als metaal is een reductor, geen oxidator. De vraag is of H⁺ sterk genoeg is om koper te oxideren, en dat is niet zo.",
+    "Koos je zwak zuur? Zoutzuur is juist een sterk zuur. Ook met veel H⁺ reageert koper niet, omdat H⁺ een te zwakke oxidator is voor koper.",
+    "Klopt: H⁺/H₂ staat lager in de tabel dan Cu²⁺/Cu. H⁺ is te zwak om elektronen van koper af te pakken. Daarom kun je koperen leidingen voor drinkwater gebruiken."
+   ],
+   "uh": "Edel metaal (Cu, Ag, Au) + zoutzuur: geen reactie."
+  },
+  {
+   "v": "Welke vergelijking hoort bij de belletjes?",
+   "o": [
+    "2 H₂O → 2 H₂ + O₂",
+    "Fe + 2 Cl⁻ → FeCl₂ + 2 e⁻",
+    "Fe + 2 H⁺ → Fe²⁺ + H₂",
+    "Fe + H⁺ → Fe⁺ + H"
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 3,
+   "u": "IJzer is onedel genoeg: Fe + 2 H⁺ → Fe²⁺ + H₂.",
+   "uo": [
+    "Koos je water dat ontleedt? Water ontleden kost veel energie en gebeurt niet vanzelf. De belletjes komen van H⁺ dat met ijzer reageert.",
+    "Koos je chloride? Chloride-ionen doen niet mee. Bovendien staan er elektronen in een totaalreactie: die moeten juist wegvallen.",
+    "Klopt: ijzer staat elektronen af aan H⁺-ionen. Er ontstaan Fe²⁺ en waterstofgas, de belletjes.",
+    "Koos je Fe⁺ en H? IJzer vormt hier Fe²⁺, en waterstof komt als H₂ vrij. Losse H-atomen bestaan niet als gas."
+   ],
+   "uh": "Belletjes bij een metaal in zuur: waterstofgas.",
+   "ctx": "Een leerling legt een ijzeren spijker in verdund zoutzuur. Langzaam ontstaan er kleine belletjes aan de spijker en de oplossing wordt lichtgroen door Fe²⁺-ionen. In Binas 48 staat H⁺/H₂ hoger dan Fe²⁺/Fe."
+  },
+  {
+   "v": "Een zinken staaf staat in een oplossing van zilvernitraat. Wat zie je?",
+   "o": [
+    "Er ontstaan belletjes zuurstof",
+    "Er slaat zilver neer op de staaf",
+    "Er gebeurt niets, zilver is edel",
+    "De oplossing wordt rood van koper"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 3,
+   "u": "Ag⁺ is een sterke oxidator en zink een sterke reductor: Zn + 2 Ag⁺ → Zn²⁺ + 2 Ag.",
+   "uo": [
+    "Koos je zuurstof? In de oplossing ontstaat geen zuurstof. De zilverionen pakken elektronen van zink en worden zilver.",
+    "Klopt: zilverionen nemen elektronen op van zink en slaan neer als zilver. Het zink lost als Zn²⁺ op.",
+    "Koos je \"niets\"? Zilver als metaal is edel en reageert moeilijk, maar hier gaat het om zilverionen: die zijn juist een sterke oxidator.",
+    "Koos je koper? Er zit geen koper in deze proef. Er slaat zilver neer, het metaal van de ionen in de oplossing."
+   ],
+   "uh": "Edel metaal = zwakke reductor. Zijn ion = sterke oxidator."
+  },
+  {
+   "v": "Welke stoffen zijn samen nodig om ijzer te laten roesten?",
+   "o": [
+    "Zuurstof en water",
+    "Alleen zuurstof",
+    "Alleen water",
+    "Koolstofdioxide en zout"
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 4,
+   "u": "Roesten is een redoxreactie van ijzer met zuurstof, waarbij water nodig is.",
+   "uo": [
+    "Klopt: ijzer roest alleen als er zuurstof én water bij kan. In droge lucht of in zuurstofvrij water roest ijzer nauwelijks.",
+    "Koos je alleen zuurstof? In droge lucht blijft ijzer jarenlang blank. Water is nodig voor de halfreactie van zuurstof en om de ionen te laten bewegen.",
+    "Koos je alleen water? In gekookt water zonder opgeloste zuurstof roest ijzer bijna niet. Zuurstof is de oxidator.",
+    "Koos je CO₂ en zout? Zout versnelt het roesten wel, maar is niet nodig. De twee stoffen die altijd nodig zijn: zuurstof en water."
+   ],
+   "uh": "Roest = ijzer + zuurstof + water."
+  },
+  {
+   "v": "Welke halfreactie hoort bij zuurstof als oxidator in neutraal water?",
+   "o": [
+    "2 H₂O → O₂ + 4 H⁺ + 4 e⁻",
+    "O₂ → 2 O²⁻ + 4 e⁻",
+    "O₂ + 4 e⁻ → 2 O",
+    "O₂ + 2 H₂O + 4 e⁻ → 4 OH⁻"
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 4,
+   "u": "Binas 48: O₂ + 2 H₂O + 4 e⁻ → 4 OH⁻ (neutraal of basisch milieu).",
+   "uo": [
+    "Koos je deze? Dat is water als reductor, waarbij zuurstof ontstaat. Gevraagd is zuurstof als oxidator.",
+    "Koos je elektronen rechts? Een oxidator neemt elektronen op, dus die staan links. Bovendien ontstaan in water geen losse O²⁻-ionen.",
+    "Koos je 2 O? Losse zuurstofatomen ontstaan niet, en de lading klopt niet: links −4, rechts 0.",
+    "Klopt: zuurstof neemt vier elektronen op en reageert met water tot hydroxide-ionen. Deze halfreactie hoort bij roesten in gewoon water."
+   ],
+   "uh": "Zuurstof in neutraal water: wordt OH⁻."
+  },
+  {
+   "v": "Waarom roest de scheepsromp niet zolang het zinkblok er zit?",
+   "o": [
+    "Zink maakt het zeewater rond de romp minder zout",
+    "Zink is een sterkere oxidator dan zuurstof",
+    "Zink is een sterkere reductor dan ijzer",
+    "Zink vormt een laagje dat geen elektronen doorlaat"
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 4,
+   "u": "Zink staat lager in Binas 48 (sterkere reductor) en geeft zijn elektronen af in plaats van ijzer: opofferingsanode.",
+   "uo": [
+    "Koos je zout? Zink verandert niets aan het zout in de zee. Het beschermt het ijzer doordat het zelf eerder elektronen afstaat.",
+    "Koos je oxidator? Zink is een metaal en dus een reductor. Het neemt geen elektronen op, het staat ze af, in plaats van het ijzer.",
+    "Klopt: zink is een sterkere reductor dan ijzer. De zuurstof pakt elektronen van zink in plaats van ijzer. Het zink lost langzaam op en moet af en toe vervangen worden.",
+    "Koos je beschermend laagje? Dat geldt voor verven of voor aluminium. Een zinkblok werkt anders: het staat zelf elektronen af aan zuurstof."
+   ],
+   "uh": "Opofferingsmetaal = sterkere reductor die in plaats van ijzer reageert.",
+   "ctx": "Aan de stalen romp van een vissersboot zijn zinkblokken vastgeschroefd. Na een jaar in zee zijn de zinkblokken voor een deel verdwenen, maar de romp eromheen is nog niet aangetast. Buiten de zinkblokken om is er niets aan de romp gedaan."
+  },
+  {
+   "v": "Welke verklaring past bij de proef met drie spijkers?",
+   "o": [
+    "Spijker B roest niet omdat het water koud is",
+    "A heeft zuurstof én water; B mist zuurstof, C water",
+    "Spijker C roest het hardst, omdat droge lucht ijzer aantast",
+    "Alle spijkers roesten even hard; het verschil is toeval"
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 4,
+   "u": "A: lucht + water → roest. B: water zonder zuurstof → nauwelijks. C: zuurstof zonder water → niet.",
+   "uo": [
+    "Koos je koud water? Alle buizen staan bij dezelfde temperatuur. Het verschil zit in de stoffen: in B is de zuurstof uit het water gekookt.",
+    "Klopt: alleen in buis A zijn zuurstof en water allebei aanwezig. In buis B is de zuurstof eruit gekookt en houdt een laagje olie nieuwe zuurstof tegen. In buis C haalt het droogmiddel het water weg.",
+    "Koos je C? In droge lucht ontbreekt het water dat nodig is om te roesten. Spijker C blijft dus juist blank.",
+    "Koos je toeval? De spijkers zijn gelijk en de omstandigheden verschillen precies in één stof per buis. Dan is het verschil geen toeval."
+   ],
+   "uh": "Vergelijk de buizen: welke stof ontbreekt er?",
+   "ctx": "Drie gelijke ijzeren spijkers in afgesloten buizen: A in kraanwater met lucht erboven, B in gekookt water met een laagje olie erop, C in droge lucht met een droogmiddel. Na een week is A bruin van roest, B bijna blank en C helemaal blank."
+  },
+  {
+   "v": "Welke elektrode is in een batterij de negatieve pool?",
+   "o": [
+    "De elektrode met de reductor",
+    "De elektrode met de oxidator",
+    "Altijd de koperen elektrode",
+    "De elektrode die het zwaarst is"
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 5,
+   "u": "Aan de negatieve elektrode staat de reductor elektronen af; die stromen via de draad naar de positieve elektrode.",
+   "uo": [
+    "Klopt: de reductor staat elektronen af. Daardoor ontstaat aan die elektrode een overschot aan elektronen: de negatieve pool.",
+    "Koos je de oxidator? De oxidator neemt elektronen op. Daar komen de elektronen aan; dat is de positieve pool.",
+    "Koos je koper? In de Daniell-cel is koper de positieve pool, omdat Cu²⁺ daar de oxidator is. Het materiaal zelf bepaalt niet de pool; de reactie doet dat.",
+    "Koos je het zwaarst? Massa zegt niets over de pool. Het gaat om welke elektrode elektronen afstaat."
+   ],
+   "uh": "Negatief = reductor = elektronen eruit."
+  },
+  {
+   "v": "Hoe lopen de elektronen in een zink-kopercel door de draad?",
+   "o": [
+    "Door de zoutbrug van zink naar koper",
+    "Van koper naar zink",
+    "Heen en weer",
+    "Van zink naar koper"
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 5,
+   "u": "Zink staat elektronen af (negatief), Cu²⁺ neemt ze op bij de koperelektrode (positief).",
+   "uo": [
+    "Koos je de zoutbrug? Door de zoutbrug bewegen ionen, geen elektronen. Elektronen gaan alleen door de draad.",
+    "Koos je van koper naar zink? Dan zou koper de reductor zijn. Koper is zwakker dan zink als reductor, dus de elektronen gaan andersom.",
+    "Koos je heen en weer? Dat is wisselstroom, zoals uit het stopcontact. Een batterij geeft gelijkstroom: de elektronen gaan één kant op.",
+    "Klopt: zink is de reductor en staat elektronen af. Die gaan via de draad naar de koperelektrode, waar Cu²⁺ ze opneemt."
+   ],
+   "uh": "Elektronen door de draad, ionen door de zoutbrug."
+  },
+  {
+   "v": "Wat gebeurt er met de zinkelektrode als de cel een uur stroom levert?",
+   "o": [
+    "Hij wordt dikker door neergeslagen zink",
+    "Hij blijft precies even zwaar",
+    "Hij wordt lichter: zink lost op als Zn²⁺",
+    "Hij wordt bedekt met een laagje koper uit de oplossing"
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 5,
+   "u": "Aan de negatieve elektrode: Zn → Zn²⁺ + 2 e⁻. Zink lost op, de elektrode wordt lichter.",
+   "uo": [
+    "Koos je dikker? Dat gebeurt aan de koperelektrode, waar Cu²⁺ neerslaat als koper. Aan de zinkelektrode gaat zink juist in oplossing.",
+    "Koos je even zwaar? Er vindt aan beide elektroden een reactie plaats. Aan de zinkkant verdwijnen zinkatomen in de oplossing.",
+    "Klopt: zink staat elektronen af en lost op als Zn²⁺. De zinkelektrode verliest massa; de koperelektrode wordt zwaarder.",
+    "Koos je koper? De koperionen zitten in de andere beker. Door de zoutbrug komen geen koperionen bij het zink."
+   ],
+   "uh": "Negatieve elektrode van metaal lost op; positieve elektrode krijgt metaal erbij.",
+   "ctx": "In een Daniell-cel staat een zinkstaaf in zinksulfaatoplossing en een koperstaaf in kopersulfaatoplossing. Een zoutbrug verbindt de bekers, een draad met een lampje de staven. De leerling weegt beide staven voor en na een uur."
+  },
+  {
+   "v": "Wat is de functie van de zoutbrug?",
+   "o": [
+    "Elektronen van de ene naar de andere beker vervoeren",
+    "Ionen laten bewegen, zodat er geen lading ophoopt",
+    "De oxidator van de ene beker naar de andere brengen",
+    "Voorkomen dat er tussen de bekers een reactie plaatsvindt"
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 5,
+   "u": "De zoutbrug laat ionen bewegen; zonder zoutbrug stopt de stroom omdat er lading ophoopt.",
+   "uo": [
+    "Koos je elektronen? Elektronen gaan door de draad. In een oplossing en in de zoutbrug bewegen alleen ionen.",
+    "Klopt: bij zink komen positieve ionen bij, bij koper verdwijnen ze. Ionen uit de zoutbrug vullen dat aan. Zonder zoutbrug houdt de stroom meteen op.",
+    "Koos je de oxidator? De oxidator Cu²⁺ moet juist in zijn eigen beker blijven. Als hij naar het zink zou gaan, reageert hij direct zonder dat er stroom door de draad gaat.",
+    "Koos je reactie voorkomen? De zoutbrug maakt de reactie juist mogelijk. Haal je hem weg, dan stopt de stroom."
+   ],
+   "uh": "Zoutbrug = ionen, draad = elektronen.",
+   "ctx": "Een leerling bouwt een cel met een zinkstaaf in zinksulfaat en een koperstaaf in kopersulfaat. Het lampje brandt pas als ze een strook filtreerpapier gedrenkt in kaliumnitraatoplossing tussen de twee bekers legt. Haalt ze de strook weg, dan gaat het lampje meteen uit."
+  }
+ ],
+ "oe": [
+  {
+   "bron": "Examenstijl",
+   "ctx": "Om zilverkleurige sieraden te maken, legt een edelsmid een koperen ring in een oplossing van zilvernitraat. Na een paar minuten is de ring bedekt met een dun laagje zilver en wordt de oplossing licht blauw door koperionen.",
+   "v": "Geef de halfreacties en de totaalreactie van deze redoxreactie.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Cu → Cu²⁺ + 2 e⁻ (1p). Ag⁺ + e⁻ → Ag (1p). Totaal: Cu + 2 Ag⁺ → Cu²⁺ + 2 Ag (1p), met de zilverhalfreactie vermenigvuldigd met 2."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een leerling wil weten of lood (Pb) reageert met zoutzuur. In Binas 48 staat het koppel Pb²⁺/Pb lager dan H⁺/H₂. Daarnaast wil ze weten of lood reageert met een oplossing van magnesiumchloride; Mg²⁺/Mg staat lager dan Pb²⁺/Pb.",
+   "v": "Leg met Binas 48 uit of lood reageert met zoutzuur en of het reageert met magnesiumchloride-oplossing.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Met zoutzuur wel: de oxidator H⁺ staat hoger dan de reductor Pb (1p). Met magnesiumchloride niet: de oxidator Mg²⁺ staat lager dan de reductor Pb, Mg²⁺ is te zwak (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Vangrails langs de snelweg zijn van staal (vooral ijzer) en gedompeld in vloeibaar zink, zodat er een laagje zink op zit. Na een aanrijding zit er een kras tot op het ijzer. Toch gaat het ijzer in de kras niet roesten zolang er zink in de buurt zit.",
+   "v": "Leg uit waarom het ijzer in de kras niet roest. Gebruik de begrippen oxidator en reductor.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Zink is een sterkere reductor dan ijzer (1p). Zuurstof (de oxidator) neemt daardoor elektronen op van zink in plaats van ijzer; het zink wordt geoxideerd en het ijzer blijft gespaard (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een batterij bestaat uit een magnesiumelektrode in een oplossing van magnesiumchloride en een ijzerelektrode in een oplossing van ijzer(II)sulfaat. Een zoutbrug verbindt de oplossingen en een draad met een lampje verbindt de elektroden.",
+   "v": "Geef aan welke elektrode de negatieve pool is, geef de halfreactie aan die elektrode en geef de richting van de elektronen in de draad.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Magnesium is de negatieve pool, omdat magnesium de sterkste reductor is (1p). Mg → Mg²⁺ + 2 e⁻ (1p). De elektronen lopen door de draad van de magnesiumelektrode naar de ijzerelektrode (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Bij het maken van papier wordt pulp gebleekt met chloordioxide. In een eenvoudiger proef bleekt een leerling een kleurstof met chloorbleekmiddel. Daarbij treedt chloor als oxidator op: Cl₂ + 2 e⁻ → 2 Cl⁻. In een andere stap reageert chloor met ijzer(II)ionen.",
+   "v": "Geef de totaalreactie van chloor met ijzer(II)ionen. Gebruik de halfreactie Fe²⁺ → Fe³⁺ + e⁻.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Halfreactie van ijzer vermenigvuldigd met 2 (1p). Cl₂ + 2 Fe²⁺ → 2 Cl⁻ + 2 Fe³⁺ (1p)."
+  }
+ ]
+}

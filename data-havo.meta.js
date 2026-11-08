@@ -1695,6 +1695,28 @@ var VAKKEN = [
       "nOe": 5,
       "nBeg": 12,
       "hasSam": true
+     },
+     {
+      "id": "C4",
+      "lo": "sk.C.4",
+      "gs": 2,
+      "naam": "Redoxreacties",
+      "beschrijving": "Je herkent oxidator en reductor, stelt halfreacties op en combineert ze, voorspelt met Binas 48 of een reactie verloopt en past dat toe op metalen in zuur, roesten en de batterij.",
+      "ceStatus": "CE",
+      "binas": "48",
+      "val": "",
+      "onderwerpen": [
+       "Elektronen overdragen: oxidator en reductor",
+       "Halfreacties opstellen en combineren",
+       "Sterkte van oxidatoren en reductoren",
+       "Metalen, metaalionen en zuren",
+       "Roesten en beschermen",
+       "De batterij: een elektrochemische cel"
+      ],
+      "nSv": 25,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
      }
     ]
    },

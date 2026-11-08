@@ -4534,5 +4534,130 @@ Object.assign(SAM_RICH,{
 <g font-size="10.5" fill="var(--mu)" text-anchor="end"><text x="300" y="24">omslag 3,1-4,4</text><text x="300" y="64">omslag 6,0-7,6</text><text x="300" y="104">omslag 8,2-10,0</text></g>
 </g></svg><div class="sam-figcap">Elke balk laat de kleur van de indicator zien bij elke pH. Het smalle middenstuk is het <strong>omslagtraject</strong>; alleen daar zie je of de pH net onder of boven die grens ligt.</div></div>
 <div class="sam-tip"><strong>Examentip:</strong> wil je weten welke kleur een indicator heeft, reken dan eerst uit wat in overmaat is (zuur of base) en zoek daarna pas de kleur op.</div>
+</div>`,
+'havo_sk_C4':`<div class="sam-intro">Bij een redoxreactie gaan <strong>elektronen</strong> van het ene deeltje naar het andere. Je leert de <strong>oxidator</strong> en de <strong>reductor</strong> herkennen, <strong>halfreacties</strong> opstellen en combineren, met Binas 48 voorspellen of een reactie verloopt, en je past dat toe op metalen in zuur, op <strong>roesten</strong> en op de <strong>batterij</strong>.</div>
+<div class="sam-head">Begrippenlijst</div>
+<table class="sam-table"><thead><tr><th>Begrip</th><th>Betekenis</th></tr></thead><tbody>
+<tr><td>Redoxreactie</td><td>reactie met elektronenoverdracht</td></tr>
+<tr><td>Reductor</td><td>staat elektronen af</td></tr>
+<tr><td>Oxidator</td><td>neemt elektronen op</td></tr>
+<tr><td>Halfreactie</td><td>wat één deeltje doet, met de elektronen erbij</td></tr>
+<tr><td>Binas 48</td><td>oxidatoren links (sterkst boven), reductoren rechts (sterkst onder)</td></tr>
+<tr><td>Opofferingsmetaal</td><td>sterkere reductor die in plaats van ijzer reageert</td></tr>
+<tr><td>Elektrochemische cel</td><td>redoxreactie die stroom levert via een draad</td></tr>
+</tbody></table>
+
+<div class="sam-chapter"><div class="sam-ch-title"><span class="sam-ch-n">1</span>Elektronen overdragen</div>
+<p>Bij een <strong>redoxreactie</strong> geeft een deeltje elektronen af aan een ander deeltje. Het deeltje dat elektronen afstaat, is de <strong>reductor</strong>. Het deeltje dat ze opneemt, is de <strong>oxidator</strong>. Leg je een zinkkorrel in een oplossing van koper(II)sulfaat, dan staat zink twee elektronen af aan een koperion: Zn + Cu²⁺ → Zn²⁺ + Cu. Het zink lost op, er slaat bruin koper neer.</p>
+<p>Metalen zijn reductoren: ze kunnen alleen elektronen afstaan. Metaalionen en halogenen zoals Cl₂ zijn oxidatoren. Oxidator en reductor zijn altijd beginstoffen; ze staan links van de pijl. Ook de verbranding van een metaal is een redoxreactie: in MgO zitten Mg²⁺- en O²⁻-ionen, dus magnesium heeft elektronen aan zuurstof gegeven.</p>
+<div class="sam-figure"><svg viewBox="0 0 320 180" role="img" aria-label="Redoxreactie tussen zink en een koperion: het zinkatoom geeft twee elektronen aan het koperion, zink is de reductor en het koperion de oxidator">
+<g font-family="inherit">
+<circle cx="56" cy="80" r="24" fill="var(--mu)" opacity=".55"/><circle cx="160" cy="80" r="20" fill="var(--or)"/>
+<g fill="var(--dk)"><circle cx="86" cy="62" r="5"/><circle cx="90" cy="96" r="5"/></g>
+<path d="M94 60C112 44 128 46 138 60" stroke="var(--or)" stroke-width="2" fill="none" stroke-dasharray="4 3"/><polygon points="141,64 132,60 139,54" fill="var(--or)"/>
+<path d="M98 98C114 112 128 110 138 98" stroke="var(--or)" stroke-width="2" fill="none" stroke-dasharray="4 3"/><polygon points="141,94 132,98 139,104" fill="var(--or)"/>
+<g font-size="13" font-weight="800" text-anchor="middle"><text x="56" y="85" fill="#fff">Zn</text><text x="160" y="80" fill="#fff">Cu</text></g>
+<text x="160" y="94" text-anchor="middle" font-size="10" font-weight="700" fill="#fff">2+</text>
+<text x="114" y="38" font-size="11" font-weight="700" text-anchor="middle" fill="var(--or)">2 e⁻</text>
+<path d="M196 80h22" stroke="var(--dk)" stroke-width="2"/><polygon points="224,80 216,75 216,85" fill="var(--dk)"/>
+<circle cx="244" cy="66" r="18" fill="var(--mu)" opacity=".55"/><circle cx="292" cy="98" r="20" fill="var(--or)" opacity=".75"/>
+<g font-size="12" font-weight="800" text-anchor="middle" fill="#fff"><text x="244" y="66">Zn</text><text x="292" y="103">Cu</text></g>
+<text x="244" y="79" text-anchor="middle" font-size="10" font-weight="700" fill="#fff">2+</text>
+<g font-size="12" font-weight="700" text-anchor="middle" fill="var(--dk)"><text x="56" y="132">Zn</text><text x="160" y="132">Cu²⁺</text><text x="244" y="132">Zn²⁺</text><text x="292" y="140">Cu</text></g>
+<g font-size="11" text-anchor="middle" fill="var(--mu)"><text x="56" y="150">reductor</text><text x="160" y="150">oxidator</text><text x="244" y="150">opgelost</text><text x="290" y="172">neerslag</text></g>
+</g></svg><div class="sam-figcap">Zink geeft twee elektronen aan het koperion. Wie elektronen <strong>afstaat</strong>, is de reductor; wie ze <strong>opneemt</strong>, is de oxidator.</div></div>
+<div class="sam-onthoud"><strong>Onthoud:</strong> reductor = elektronen eruit, oxidator = elektronen erin.</div>
+</div>
+
+<div class="sam-chapter"><div class="sam-ch-title"><span class="sam-ch-n">2</span>Halfreacties opstellen en combineren</div>
+<p>Een <strong>halfreactie</strong> laat zien wat één deeltje doet, met de elektronen erbij. Bij een reductor staan de elektronen rechts van de pijl (Zn → Zn²⁺ + 2 e⁻), bij een oxidator links (Cu²⁺ + 2 e⁻ → Cu). In een halfreactie moeten atomen én lading kloppen. Veel halfreacties vind je in Binas 48.</p>
+<p>De totaalreactie maak je in drie stappen. Vermenigvuldig de halfreacties zodat het aantal afgestane elektronen gelijk is aan het aantal opgenomen elektronen. Tel ze op. Streep de elektronen weg. Bij aluminium (3 e⁻) en koperionen (2 e⁻) is het kleinste gemene veelvoud 6: 2 Al + 3 Cu²⁺ → 2 Al³⁺ + 3 Cu.</p>
+<div class="sam-figure"><svg viewBox="0 0 320 196" role="img" aria-label="Twee halfreacties van koper en zilverionen onder elkaar: de zilverhalfreactie wordt met twee vermenigvuldigd zodat de elektronen wegvallen in de totaalreactie">
+<g font-family="inherit">
+<g font-size="15" font-weight="700" fill="var(--dk)">
+<text x="40" y="44">Cu → Cu²⁺ + 2 e⁻</text>
+<text x="40" y="92">2 Ag⁺ + 2 e⁻ → 2 Ag</text>
+<text x="40" y="164">Cu + 2 Ag⁺ → Cu²⁺ + 2 Ag</text>
+</g>
+<g font-size="12" font-weight="800" fill="var(--or)"><text x="14" y="44">× 1</text><text x="14" y="92">× 2</text></g>
+<path d="M30 116H290" stroke="var(--dk)" stroke-width="1.5"/><text x="14" y="122" font-size="14" font-weight="800" fill="var(--dk)">+</text>
+<g stroke="var(--or)" stroke-width="2"><path d="M143 33L176 50"/><path d="M106 81L141 98"/></g>
+<g font-size="11" fill="var(--mu)"><text x="196" y="44">reductor: staat 2 e⁻ af</text><text x="216" y="70">oxidator: neemt</text><text x="216" y="84">per ion 1 e⁻ op</text><text x="40" y="186">elektronen vallen weg, lading links +2 = rechts +2</text></g>
+</g></svg><div class="sam-figcap">Eerst het aantal elektronen gelijk maken (zilver <strong>× 2</strong>), dan optellen. De doorgestreepte elektronen vallen tegen elkaar weg.</div></div>
+</div>
+
+<div class="sam-chapter"><div class="sam-ch-title"><span class="sam-ch-n">3</span>Voorspellen met Binas 48</div>
+<p>In Binas 48 staan koppels van een oxidator en de reductor die erbij hoort, zoals Cu²⁺/Cu. Links staan de oxidatoren, met de sterkste bovenaan. Rechts staan de reductoren, met de sterkste onderaan. Een redoxreactie verloopt als de <strong>oxidator hoger staat dan de reductor</strong>. Daarom reageert zink met koperionen, maar koper niet met zinkionen. Van twee omgekeerde combinaties verloopt er hooguit één.</p>
+<div class="sam-figure"><svg viewBox="0 0 320 210" role="img" aria-label="Uittreksel van Binas 48 als ladder met oxidatoren links en reductoren rechts: een oxidator hoger in de tabel reageert met een reductor lager in de tabel, zoals koperionen met zink">
+<g font-family="inherit">
+<g fill="var(--bg2)" stroke="var(--bo)"><rect x="40" y="20" width="240" height="160" rx="10"/></g>
+<path d="M160 24V176" stroke="var(--bo)"/>
+<g font-size="12.5" font-weight="700" fill="var(--dk)">
+<text x="96" y="46" text-anchor="middle">Ag⁺</text><text x="224" y="46" text-anchor="middle">Ag</text>
+<text x="96" y="78" text-anchor="middle">Cu²⁺</text><text x="224" y="78" text-anchor="middle">Cu</text>
+<text x="96" y="110" text-anchor="middle">H⁺</text><text x="224" y="110" text-anchor="middle">H₂</text>
+<text x="96" y="142" text-anchor="middle">Fe²⁺</text><text x="224" y="142" text-anchor="middle">Fe</text>
+<text x="96" y="170" text-anchor="middle">Zn²⁺</text><text x="224" y="170" text-anchor="middle">Zn</text>
+</g>
+<path d="M116 74L204 162" stroke="var(--or)" stroke-width="2.5"/><polygon points="208,166 198,163 205,156" fill="var(--or)"/>
+<g font-size="11" font-weight="700" fill="var(--mu)" text-anchor="middle"><text x="96" y="14">oxidatoren</text><text x="224" y="14">reductoren</text></g>
+<g stroke="var(--mu)" stroke-width="1.5"><path d="M24 172V30"/><path d="M296 32V174"/></g>
+<polygon points="24,24 19,34 29,34" fill="var(--mu)"/><polygon points="296,180 291,170 301,170" fill="var(--mu)"/>
+<g font-size="10.5" fill="var(--mu)"><text x="16" y="200">sterker</text><text x="248" y="200">sterker</text></g>
+<text x="174" y="100" font-size="11" font-weight="700" fill="var(--or)">reageert</text>
+</g></svg><div class="sam-figcap">De schuine pijl loopt van een oxidator <strong>linksboven</strong> naar een reductor <strong>rechtsonder</strong>: die combinatie reageert. Cu²⁺ en Zn wel, Zn²⁺ en Cu niet.</div></div>
+<div class="sam-tip"><strong>Examentip:</strong> schrijf bij een vraag "verloopt de reactie?" altijd de twee koppels op met hun plaats in Binas 48, en zeg welke oxidator hoger staat.</div>
+</div>
+
+<div class="sam-chapter"><div class="sam-ch-title"><span class="sam-ch-n">4</span>Metalen in zuur en in zoutoplossingen</div>
+<p>Een metaal dat lager staat dan H₂ in Binas 48 (een <strong>onedel metaal</strong>, zoals magnesium, zink of ijzer) reageert met H⁺-ionen uit een zuur: Mg + 2 H⁺ → Mg²⁺ + H₂. Je ziet belletjes waterstofgas. Een <strong>edel metaal</strong> zoals koper, zilver of goud staat hoger dan H₂ en reageert niet met zoutzuur. Edel metaal betekent: een zwakke reductor. Het ion van dat metaal is juist een sterke oxidator, daarom slaat zilver neer als je zink in zilvernitraat zet.</p>
+<div class="sam-figure"><svg viewBox="0 0 320 200" role="img" aria-label="Onedel metaal zink als reductor in een oplossing van koper(II)sulfaat: koper slaat als laagje neer op het zink, zinkionen gaan in oplossing en de oplossing wordt lichter van kleur">
+<g font-family="inherit">
+<path d="M80 50v130h160V50" fill="none" stroke="var(--mu)" stroke-width="2"/>
+<rect x="82" y="86" width="156" height="92" fill="rgba(var(--or-rgb),.2)"/>
+<rect x="148" y="20" width="24" height="140" rx="3" fill="var(--mu)" opacity=".6"/>
+<g fill="#b45309"><rect x="144" y="100" width="6" height="58" rx="2"/><rect x="170" y="96" width="6" height="62" rx="2"/></g>
+<g fill="var(--or)"><circle cx="110" cy="112" r="6"/><circle cx="124" cy="150" r="6"/><circle cx="208" cy="128" r="6"/><circle cx="216" cy="160" r="6"/></g>
+<g fill="var(--mu)" opacity=".7"><circle cx="194" cy="104" r="6"/><circle cx="104" cy="138" r="6"/></g>
+<g stroke="var(--mu)" stroke-width="1"><path d="M144 130H70"/><path d="M200 104H262"/><path d="M216 128H262"/><path d="M172 40H262"/></g>
+<g font-size="11.5" font-weight="700" fill="var(--dk)"><text x="8" y="126">laagje koper</text><text x="266" y="108">Zn²⁺</text><text x="266" y="132">Cu²⁺</text><text x="266" y="44">zink</text></g>
+<text x="160" y="196" text-anchor="middle" font-size="11" fill="var(--mu)">Zn + Cu²⁺ → Zn²⁺ + Cu</text>
+</g></svg><div class="sam-figcap">Na een tijdje zit er een <strong>laagje koper</strong> op de zinkstaaf. Zinkatomen gaan als Zn²⁺ in oplossing, Cu²⁺-ionen worden koper. De oplossing verliest langzaam haar kleur.</div></div>
+</div>
+
+<div class="sam-chapter"><div class="sam-ch-title"><span class="sam-ch-n">5</span>Roesten en beschermen</div>
+<p>Roesten is een redoxreactie van ijzer met zuurstof, waarbij water nodig is. Onder een waterdruppel staat ijzer elektronen af: Fe → Fe²⁺ + 2 e⁻. Aan de rand van de druppel, waar veel zuurstof bij kan, neemt zuurstof die elektronen op: O₂ + 2 H₂O + 4 e⁻ → 4 OH⁻. De Fe²⁺- en OH⁻-ionen vormen samen met nog meer zuurstof bruine roest. Zout water geleidt beter en versnelt het roesten.</p>
+<p>Je beschermt ijzer door zuurstof en water weg te houden (verf, olie, een laagje plastic) of door het te verbinden met een <strong>sterkere reductor</strong>. Een zinkblok op een scheepsromp of een laagje zink op een vangrail (verzinken) staat zelf elektronen af aan zuurstof. Zolang er zink is, roest het ijzer niet: het zink is een <strong>opofferingsmetaal</strong>.</p>
+<div class="sam-figure"><svg viewBox="0 0 320 190" role="img" aria-label="Doorsnede van een waterdruppel op ijzer bij roesten: in het midden lost ijzer op als Fe2+, aan de rand neemt zuurstof elektronen op tot OH-, elektronen lopen door het ijzer">
+<g font-family="inherit">
+<rect x="10" y="120" width="300" height="44" fill="var(--mu)" opacity=".45"/>
+<path d="M50 120C60 60 260 60 270 120Z" fill="rgba(var(--or-rgb),.18)" stroke="var(--or)" stroke-width="1.5"/>
+<path d="M150 120q4 10 0 16q-4 6 0 12" stroke="var(--dk)" stroke-width="1.5" fill="none"/>
+
+<path d="M90 154H230" stroke="var(--or)" stroke-width="2" stroke-dasharray="5 3"/><polygon points="80,154 90,149 90,159" fill="var(--or)"/><polygon points="240,154 230,149 230,159" fill="var(--or)"/>
+<g fill="var(--or)"><circle cx="58" cy="44" r="6"/><circle cx="70" cy="44" r="6"/><circle cx="250" cy="44" r="6"/><circle cx="262" cy="44" r="6"/></g>
+<g stroke="var(--or)" stroke-width="1.5"><path d="M64 52L74 104"/><path d="M256 52L246 104"/></g>
+<g fill="var(--dk)" font-size="11.5" font-weight="700"><text x="122" y="100">Fe → Fe²⁺</text><text x="20" y="112">OH⁻</text><text x="276" y="112">OH⁻</text><text x="146" y="180" text-anchor="middle">e⁻ door het ijzer</text><text x="86" y="40">O₂ uit de lucht</text></g>
+<text x="30" y="140" font-size="11" fill="var(--dk)">ijzer</text>
+</g></svg><div class="sam-figcap">Onder het midden van de druppel <strong>lost ijzer op</strong>; aan de rand, waar zuurstof makkelijk bij kan, neemt zuurstof de elektronen op. De elektronen lopen door het metaal zelf.</div></div>
+</div>
+
+<div class="sam-chapter"><div class="sam-ch-title"><span class="sam-ch-n">6</span>De batterij: een elektrochemische cel</div>
+<p>Laat je oxidator en reductor niet direct contact maken, maar via een draad, dan lopen de elektronen door die draad: je hebt stroom. Dat is een <strong>elektrochemische cel</strong>. In de Daniell-cel staat zink in zinksulfaat en koper in kopersulfaat. Zink is de reductor en vormt de <strong>negatieve elektrode</strong>; de zinkstaaf wordt lichter. Bij de koperelektrode neemt Cu²⁺ de elektronen op en slaat koper neer: dat is de <strong>positieve elektrode</strong>.</p>
+<p>Een <strong>zoutbrug</strong> verbindt de twee oplossingen. Daardoor kunnen ionen bewegen, zodat er geen lading ophoopt. Haal je de zoutbrug weg, dan stopt de stroom meteen. Elektronen gaan door de draad, ionen door de oplossing en de zoutbrug.</p>
+<div class="sam-figure"><svg viewBox="0 0 320 200" role="img" aria-label="Daniell-cel als batterij: zinkelektrode in zinksulfaat als negatieve pool, koperelektrode in kopersulfaat als positieve pool, een draad met lampje en een zoutbrug, elektronen lopen van zink naar koper">
+<g font-family="inherit">
+<g fill="none" stroke="var(--mu)" stroke-width="2"><path d="M20 90v96h110V90"/><path d="M190 90v96h110V90"/></g>
+<rect x="22" y="112" width="106" height="72" fill="rgba(var(--or-rgb),.12)"/><rect x="192" y="112" width="106" height="72" fill="rgba(var(--or-rgb),.3)"/>
+<rect x="66" y="56" width="16" height="116" rx="2" fill="var(--mu)" opacity=".7"/><rect x="238" y="56" width="16" height="116" rx="2" fill="#b45309" opacity=".8"/>
+<path d="M100 132V104h120v28" fill="none" stroke="var(--dk)" stroke-width="7" stroke-linejoin="round" opacity=".25"/>
+<path d="M74 56V24h86M160 24h86v32" fill="none" stroke="var(--dk)" stroke-width="1.8"/>
+<circle cx="160" cy="24" r="10" fill="#fde68a" stroke="var(--dk)" stroke-width="1.5"/>
+<g fill="var(--or)"><polygon points="128,24 120,19 120,29"/><polygon points="206,24 198,19 198,29"/></g>
+<g font-size="12" font-weight="800" text-anchor="middle" fill="var(--dk)"><text x="74" y="48" text-anchor="end" dx="-12">−</text><text x="246" y="48" dx="14">+</text></g>
+<g font-size="11.5" font-weight="700" fill="var(--dk)" text-anchor="middle"><text x="74" y="198">zink</text><text x="246" y="198">koper</text><text x="160" y="96">zoutbrug</text></g>
+<g font-size="10.5" fill="var(--mu)" text-anchor="middle"><text x="140" y="12">e⁻</text><text x="40" y="104">Zn²⁺</text><text x="280" y="104">Cu²⁺</text></g>
+</g></svg><div class="sam-figcap">Zink staat elektronen af (<strong>negatieve pool</strong>), die lopen door de draad en het lampje naar de koperelektrode (<strong>positieve pool</strong>). Door de zoutbrug bewegen ionen.</div></div>
+<div class="sam-tip"><strong>Examentip:</strong> bepaal eerst welke stof de reductor is. Die elektrode is negatief, en daar lopen de elektronen de draad in.</div>
 </div>`
 });
