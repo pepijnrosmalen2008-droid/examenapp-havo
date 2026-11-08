@@ -1761,6 +1761,28 @@ var VAKKEN = [
       "nOe": 5,
       "nBeg": 11,
       "hasSam": true
+     },
+     {
+      "id": "C7",
+      "lo": "sk.C.7",
+      "gs": 2,
+      "naam": "Chemisch evenwicht",
+      "beschrijving": "Je beschrijft een chemisch evenwicht als dynamische toestand, leest grafieken van concentratie en snelheid, stelt de evenwichtsvoorwaarde op en rekent K uit, en je legt uit hoe toevoegen, weghalen, temperatuur en een katalysator de ligging beïnvloeden.",
+      "ceStatus": "CE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Omkeerbare reacties",
+       "Dynamisch evenwicht",
+       "Grafieken van concentratie en snelheid",
+       "Evenwichtsvoorwaarde en K",
+       "De ligging van een evenwicht",
+       "Toepassingen: open en gesloten systemen"
+      ],
+      "nSv": 28,
+      "nOe": 5,
+      "nBeg": 11,
+      "hasSam": true
      }
     ]
    },

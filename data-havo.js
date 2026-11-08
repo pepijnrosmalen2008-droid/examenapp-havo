@@ -70715,6 +70715,695 @@ var VAKKEN = [
         "u": "Bij 40 °C bewegen de deeltjes sneller en zijn meer botsingen effectief, dus de afbraak gaat sneller dan bij 15 °C (1p). Boven 60 °C denatureren de enzymen: hun vorm verandert blijvend en ze werken niet meer als katalysator (1p)."
        }
       ]
+     },
+     {
+      "id": "C7",
+      "lo": "sk.C.7",
+      "gs": 2,
+      "naam": "Chemisch evenwicht",
+      "beschrijving": "Je beschrijft een chemisch evenwicht als dynamische toestand, leest grafieken van concentratie en snelheid, stelt de evenwichtsvoorwaarde op en rekent K uit, en je legt uit hoe toevoegen, weghalen, temperatuur en een katalysator de ligging beïnvloeden.",
+      "ceStatus": "CE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Omkeerbare reacties",
+       "Dynamisch evenwicht",
+       "Grafieken van concentratie en snelheid",
+       "Evenwichtsvoorwaarde en K",
+       "De ligging van een evenwicht",
+       "Toepassingen: open en gesloten systemen"
+      ],
+      "sam": "Bij een omkeerbare reactie (⇄) stelt zich in een gesloten systeem een evenwicht in: heen en terug even snel, concentraties constant maar niet gelijk (dynamisch evenwicht). Evenwichtsvoorwaarde: producten boven, beginstoffen onder, coëfficiënten als macht; de waarde in evenwicht is K en hangt alleen af van de temperatuur. Breuk kleiner dan K: netto naar rechts. Toevoegen of weghalen verschuift de ligging, een katalysator niet.",
+      "begrippen": [
+       {
+        "t": "Omkeerbare reactie",
+        "d": "Reactie die zowel naar rechts als naar links kan verlopen; genoteerd met ⇄."
+       },
+       {
+        "t": "Heengaande reactie",
+        "d": "De reactie van links naar rechts in een evenwichtsvergelijking."
+       },
+       {
+        "t": "Teruggaande reactie",
+        "d": "De reactie van rechts naar links in een evenwichtsvergelijking."
+       },
+       {
+        "t": "Chemisch evenwicht",
+        "d": "Toestand waarin heengaande en teruggaande reactie even snel verlopen en de concentraties constant zijn."
+       },
+       {
+        "t": "Dynamisch evenwicht",
+        "d": "Evenwicht waarin de reacties op deeltjesniveau doorgaan, terwijl je van buiten geen verandering ziet."
+       },
+       {
+        "t": "Gesloten systeem",
+        "d": "Ruimte waar geen stoffen in of uit kunnen; alleen daar stelt een evenwicht zich in."
+       },
+       {
+        "t": "Open systeem",
+        "d": "Ruimte waar stoffen in en uit kunnen, zoals een gas dat ontsnapt; de reactie kan dan aflopen."
+       },
+       {
+        "t": "Evenwichtsvoorwaarde",
+        "d": "Concentratiebreuk met de producten boven en de beginstoffen onder, coëfficiënten als exponent."
+       },
+       {
+        "t": "Evenwichtsconstante",
+        "d": "K: de waarde van de concentratiebreuk in evenwicht; hangt alleen af van de temperatuur."
+       },
+       {
+        "t": "Ligging van een evenwicht",
+        "d": "Of er in evenwicht vooral beginstof (links) of vooral product (rechts) aanwezig is."
+       },
+       {
+        "t": "Concentratiebreuk",
+        "d": "De breuk uit de evenwichtsvoorwaarde, ingevuld met de concentraties van dat moment."
+       }
+      ],
+      "sv": [
+       {
+        "v": "Wat betekent de dubbele pijl ⇄ in een reactievergelijking?",
+        "o": [
+         "Er ontstaan twee verschillende producten",
+         "De reactie verloopt twee keer zo snel als met een enkele pijl",
+         "De reactie kan zowel naar rechts als naar links verlopen",
+         "De beginstoffen worden twee keer gebruikt"
+        ],
+        "c": 2,
+        "d": 1,
+        "s": 0,
+        "u": "Een dubbele pijl geeft een omkeerbare reactie aan: heengaande en teruggaande reactie.",
+        "uo": [
+         "Koos je twee producten? Hoeveel producten er zijn, zie je aan de formules rechts van de pijl, niet aan de vorm van de pijl.",
+         "Koos je twee keer zo snel? De pijl zegt niets over de snelheid. Hij laat zien dat de reactie ook terug kan lopen.",
+         "Klopt: bij een omkeerbare reactie reageren de producten ook weer terug tot de beginstoffen. De dubbele pijl laat beide richtingen zien.",
+         "Koos je twee keer gebruikt? De dubbele pijl betekent dat de reactie in twee richtingen kan gaan, niet dat er meer beginstof nodig is."
+        ],
+        "uh": "⇄ = omkeerbaar: heen en terug."
+       },
+       {
+        "v": "Welke reactie verloopt van rechts naar links bij N₂ + 3 H₂ ⇄ 2 NH₃?",
+        "o": [
+         "N₂ + 3 H₂ → 2 NH₃",
+         "2 NH₃ → N₂ + 3 H₂",
+         "NH₃ → N + 3 H",
+         "2 NH₃ + N₂ → 3 H₂"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 0,
+        "u": "De teruggaande reactie loopt van rechts naar links: ammoniak ontleedt in stikstof en waterstof.",
+        "uo": [
+         "Koos je N₂ + 3 H₂ → 2 NH₃? Dat is de heengaande reactie, van links naar rechts.",
+         "Klopt: de teruggaande reactie is de reactie van rechts naar links. Ammoniak valt uiteen in stikstof en waterstof.",
+         "Koos je NH₃ → N + 3 H? Stikstof en waterstof komen voor als moleculen N₂ en H₂, en de coëfficiënten moeten kloppen.",
+         "Koos je 2 NH₃ + N₂ → 3 H₂? Stikstof is een product van de teruggaande reactie, geen beginstof."
+        ],
+        "uh": "Teruggaand = van rechts naar links."
+       },
+       {
+        "v": "Waarom blijft er in de afgesloten fles kalk liggen, terwijl het in de open bak helemaal verdwijnt?",
+        "o": [
+         "In de fles blijft het CO₂ aanwezig en reageert het deels terug",
+         "In de fles zit te weinig azijn voor de reactie",
+         "In de open bak is de temperatuur hoger, dus verloopt de reactie daar sneller",
+         "Kalk lost in een afgesloten fles niet op in water"
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 0,
+        "u": "Gesloten systeem: product blijft aanwezig en kan terugreageren, er stelt zich een evenwicht in. Open systeem: CO₂ ontsnapt, de reactie loopt af.",
+        "uo": [
+         "Klopt: in de afgesloten fles blijft het CO₂ aanwezig. Het reageert gedeeltelijk terug, zodat er een evenwicht ontstaat en niet al het kalk verdwijnt. In de open bak ontsnapt het gas en kan het niet terugreageren.",
+         "Koos je te weinig azijn? In beide proeven zit evenveel azijn. Het verschil is of het gas kan ontsnappen.",
+         "Koos je temperatuur? Beide staan in hetzelfde lokaal. Het verschil zit in open tegen gesloten.",
+         "Koos je kalk lost niet op? Het gaat hier om een reactie met zuur, niet om oplossen in water. In de fles stopt de reactie doordat er een evenwicht ontstaat."
+        ],
+        "uh": "Open systeem: reactie loopt af. Gesloten: evenwicht.",
+        "ctx": "Een leerling doet een schepje kalk (CaCO₃) met wat azijn in een fles en draait de dop er stevig op. Een tweede schepje met evenveel azijn zet ze in een open bak. Na een dag is het kalk in de open bak helemaal weg, maar in de fles ligt nog wat kalk en is de druk hoger geworden."
+       },
+       {
+        "v": "Wat is een gesloten systeem?",
+        "o": [
+         "Een reactie zonder katalysator",
+         "Een ruimte waar geen warmte in of uit kan",
+         "Een reactie die niet meer verloopt",
+         "Een ruimte waar geen stoffen in of uit kunnen"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 0,
+        "u": "Gesloten systeem: er gaan geen stoffen in of uit; alleen dan kan zich een evenwicht instellen.",
+        "uo": [
+         "Koos je katalysator? Of er een katalysator bij is, heeft niets te maken met open of gesloten.",
+         "Koos je warmte? Een gesloten systeem houdt stoffen binnen. Warmte mag in of uit, anders heet het een geïsoleerd systeem.",
+         "Koos je reactie die niet verloopt? In een gesloten systeem kunnen reacties prima verlopen. Er stelt zich alleen een evenwicht in.",
+         "Klopt: in een gesloten systeem blijven alle stoffen bij elkaar, ook gassen. Daardoor kunnen de producten weer terugreageren."
+        ],
+        "uh": "Gesloten = geen stoffen in of uit."
+       },
+       {
+        "v": "Wat geldt voor de snelheden in een chemisch evenwicht?",
+        "o": [
+         "De heengaande reactie is sneller",
+         "Beide reacties zijn gestopt, omdat alle botsingen ophouden",
+         "De heengaande en teruggaande reactie zijn even snel",
+         "De teruggaande reactie is sneller"
+        ],
+        "c": 2,
+        "d": 1,
+        "s": 1,
+        "u": "Evenwicht: s(heen) = s(terug); per seconde ontstaat evenveel als er verdwijnt.",
+        "uo": [
+         "Koos je heen sneller? Dan zou er steeds meer product bijkomen en verandert de samenstelling nog. Dat is vóór het evenwicht zo.",
+         "Koos je gestopt? Dat lijkt zo, omdat je niets meer ziet veranderen. Maar op deeltjesniveau reageren er voortdurend moleculen heen en terug.",
+         "Klopt: in evenwicht verlopen beide reacties nog steeds, maar even snel. Daardoor veranderen de concentraties niet meer.",
+         "Koos je terug sneller? Dan zou er steeds meer beginstof bijkomen. In evenwicht zijn de snelheden gelijk."
+        ],
+        "uh": "Evenwicht = even snel heen als terug."
+       },
+       {
+        "v": "Waarom heet een chemisch evenwicht dynamisch?",
+        "o": [
+         "De concentraties schommelen steeds op en neer",
+         "Beide reacties gaan door, alleen even snel",
+         "Het evenwicht verschuift steeds naar de andere kant",
+         "De temperatuur verandert voortdurend"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 1,
+        "u": "Dynamisch = in beweging: op deeltjesniveau gaan de reacties door.",
+        "uo": [
+         "Koos je schommelen? In evenwicht zijn de concentraties constant. Ze schommelen niet; ze blijven gelijk.",
+         "Klopt: de reacties stoppen niet. Elke seconde reageren deeltjes heen en evenveel deeltjes terug. Van buiten zie je niets veranderen.",
+         "Koos je verschuiven? Een evenwicht verschuift alleen als je iets verandert, zoals de concentratie of de temperatuur.",
+         "Koos je temperatuur? Dynamisch slaat op de deeltjes die blijven reageren, niet op de temperatuur."
+        ],
+        "uh": "Dynamisch: blijft reageren, netto geen verandering."
+       },
+       {
+        "v": "Welke conclusie is juist?",
+        "o": [
+         "Het mengsel is in evenwicht, omdat de concentraties niet meer veranderen",
+         "Het mengsel is niet in evenwicht, omdat de concentraties niet gelijk zijn",
+         "Het mengsel is niet in evenwicht, omdat er nog zuur over is",
+         "Het mengsel is in evenwicht, omdat er evenveel ester als water is"
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 1,
+        "u": "Evenwicht herken je aan constante concentraties, niet aan gelijke concentraties.",
+        "uo": [
+         "Klopt: na 8 uur blijven de concentraties gelijk. Dat betekent dat heen en terug even snel gaan: evenwicht. Dat er meer ester dan zuur is, maakt niet uit.",
+         "Koos je \"niet gelijk\"? Dit is de bekendste denkfout. In evenwicht zijn de concentraties constant, maar ze hoeven niet gelijk aan elkaar te zijn.",
+         "Koos je \"nog zuur over\"? Bij een evenwicht blijft er altijd wat van alle stoffen over. Juist daardoor kan de teruggaande reactie doorgaan.",
+         "Koos je \"evenveel ester als water\"? Ester en water ontstaan in de verhouding 1 : 1, dus die zijn altijd gelijk. Dat zegt niets over evenwicht."
+        ],
+        "uh": "Evenwicht = constant, niet gelijk.",
+        "ctx": "Een leerling mengt 1,0 mol ethaanzuur en 1,0 mol ethanol met een paar druppels zwavelzuur. Ze meet elk uur de concentraties. Na 8 uur, na 10 uur en na 24 uur vindt ze steeds 0,33 mol zuur, 0,33 mol ethanol, 0,67 mol ester en 0,67 mol water."
+       },
+       {
+        "v": "Wat bewijst deze waarneming?",
+        "o": [
+         "Dat het evenwicht nog niet was ingesteld",
+         "Dat het evenwicht naar links verschoven is",
+         "Dat radioactief jood een katalysator is",
+         "Dat de reacties in evenwicht blijven doorgaan"
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 1,
+        "u": "Het gemerkte jood komt in HI terecht: de heengaande en teruggaande reactie verlopen nog steeds.",
+        "uo": [
+         "Koos je nog niet ingesteld? Het evenwicht was al ingesteld. Juist dan laat deze proef zien dat de reacties niet stoppen.",
+         "Koos je verschoven? Een klein beetje jood toevoegen kan de ligging iets veranderen, maar dat verklaart niet waarom gemerkt jood in HI zit. Daarvoor moet de reactie doorgaan.",
+         "Koos je katalysator? Het radioactieve jood doet gewoon mee als beginstof. Het is dezelfde stof als gewoon jood.",
+         "Klopt: als de reacties gestopt waren, kon het gemerkte jood nooit in HI terechtkomen. Het bewijst dat het evenwicht dynamisch is."
+        ],
+        "uh": "Gemerkte atomen bewijzen: evenwicht is dynamisch.",
+        "ctx": "In een gesloten vat heeft het evenwicht 2 HI ⇄ H₂ + I₂ zich ingesteld; de kleur en de druk veranderen niet meer. Een onderzoeker voegt een heel klein beetje radioactief jood (I₂) toe. Na een tijd meet hij dat er ook radioactieve jodiumatomen in de HI-moleculen zitten."
+       },
+       {
+        "v": "Wat gebeurt er in het begin met de snelheid van de heengaande reactie als je alleen beginstoffen mengt?",
+        "o": [
+         "Die blijft vanaf het begin gelijk",
+         "Die neemt toe, omdat er product ontstaat",
+         "Die neemt af, omdat de beginstoffen opraken",
+         "Die is in het begin nul"
+        ],
+        "c": 2,
+        "d": 1,
+        "s": 2,
+        "u": "Concentratie beginstoffen daalt, dus s(heen) daalt; s(terug) stijgt vanaf nul.",
+        "uo": [
+         "Koos je gelijk? De snelheid hangt af van de concentratie, en die verandert totdat het evenwicht is ingesteld.",
+         "Koos je toenemen? Dat geldt voor de teruggaande reactie: hoe meer product, hoe sneller die gaat.",
+         "Klopt: de concentratie van de beginstoffen daalt, dus ze botsen minder vaak. De heengaande reactie wordt langzamer tot hij even snel is als de teruggaande.",
+         "Koos je nul? Nul is de snelheid van de teruggaande reactie in het begin, omdat er nog geen product is."
+        ],
+        "uh": "Heen: van hoog naar lager. Terug: van nul naar hoger."
+       },
+       {
+        "v": "Hoe herken je in een grafiek van concentratie tegen de tijd het moment dat het evenwicht is ingesteld?",
+        "o": [
+         "De lijnen van beginstof en product snijden elkaar",
+         "Alle lijnen lopen vanaf dat moment horizontaal",
+         "De lijn van het product bereikt de bovenkant",
+         "Alle lijnen gaan door nul"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 2,
+        "u": "Evenwicht = concentraties constant = horizontale lijnen.",
+        "uo": [
+         "Koos je snijpunt? Op dat moment zijn twee concentraties even groot, maar ze kunnen nog steeds veranderen. Gelijk is niet hetzelfde als constant.",
+         "Klopt: vanaf het evenwicht veranderen de concentraties niet meer. Alle lijnen worden dan horizontaal.",
+         "Koos je bovenkant? Hoe hoog het product komt, hangt af van de ligging. De lijn hoeft geen bepaalde waarde te halen.",
+         "Koos je door nul? In evenwicht is er van alle stoffen iets aanwezig. Geen enkele concentratie is nul."
+        ],
+        "uh": "Evenwicht in de grafiek = horizontaal."
+       },
+       {
+        "v": "Wat lees je af in een grafiek van de snelheden tegen de tijd op het moment dat het evenwicht is ingesteld?",
+        "o": [
+         "De lijnen van s(heen) en s(terug) vallen samen, boven nul",
+         "De lijn van s(heen) daalt tot nul",
+         "De lijn van s(terug) stijgt door tot boven die van s(heen)",
+         "Beide lijnen dalen samen tot nul"
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 2,
+        "u": "In evenwicht zijn de snelheden gelijk en constant: de lijnen vallen samen, boven nul.",
+        "uo": [
+         "Klopt: s(heen) daalt en s(terug) stijgt tot ze gelijk zijn. Daarna blijven ze gelijk en constant, maar niet nul.",
+         "Koos je s(heen) naar nul? Dan zou de heengaande reactie stoppen. In evenwicht gaan beide reacties door.",
+         "Koos je s(terug) hoger? Dan zou er netto beginstof bij komen. Dat gebeurt alleen als je het evenwicht verstoort.",
+         "Koos je beide naar nul? Dat is de denkfout dat een evenwicht stilstand is. De lijnen komen samen op een waarde boven nul."
+        ],
+        "uh": "Snelheden: samen, constant, niet nul."
+       },
+       {
+        "v": "Welke grafiek past bij de proef van de leerling?",
+        "o": [
+         "[zuur] daalt tot 0,33 en [ester] stijgt tot 0,33",
+         "[zuur] daalt tot 0 en [ester] stijgt tot 1,0",
+         "[zuur] en [ester] eindigen allebei horizontaal op dezelfde waarde 0,50",
+         "[zuur] van 1,0 naar 0,33, [ester] van 0 naar 0,67, dan horizontaal"
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 2,
+        "u": "Bij K = 4 eindigt de ester op 0,67 mol/L en het zuur op 0,33 mol/L: constant maar niet gelijk.",
+        "uo": [
+         "Koos je allebei 0,33? Als het zuur van 1,0 naar 0,33 gaat, is er 0,67 mol/L omgezet. Er moet dus ook 0,67 mol/L ester zijn ontstaan.",
+         "Koos je zuur tot 0? Dan zou de reactie aflopen. Bij een evenwicht blijft er altijd zuur over.",
+         "Koos je allebei 0,50? Dat is de denkfout dat evenwicht gelijke concentraties betekent. Hier is de ester op 0,67 en het zuur op 0,33.",
+         "Klopt: elke mol ester die ontstaat, kost een mol zuur. 1,0 − 0,67 = 0,33 mol/L zuur. Daarna veranderen de concentraties niet meer."
+        ],
+        "uh": "Wat verdwijnt aan de ene kant, verschijnt aan de andere.",
+        "ctx": "Een leerling start met 1,0 mol/L ethaanzuur en 1,0 mol/L ethanol (V blijft gelijk). Er stelt zich een evenwicht in: ethaanzuur + ethanol ⇄ ethylethanoaat + water. In evenwicht is er 0,67 mol/L ethylethanoaat."
+       },
+       {
+        "v": "Waarvan hangt de waarde van K voor een bepaald evenwicht af?",
+        "o": [
+         "Van de katalysator die je gebruikt",
+         "Van de hoeveelheid beginstof die je erin doet",
+         "Alleen van de temperatuur",
+         "Van de grootte van het reactievat"
+        ],
+        "c": 2,
+        "d": 1,
+        "s": 3,
+        "u": "K is bij een bepaalde temperatuur een vast getal; alleen een andere temperatuur geeft een andere K.",
+        "uo": [
+         "Koos je katalysator? Een katalysator versnelt heen en terug evenveel. Het evenwicht stelt zich sneller in, met dezelfde K.",
+         "Koos je hoeveelheid beginstof? Meer beginstof geeft andere concentraties in evenwicht, maar de breuk komt weer op dezelfde K uit.",
+         "Klopt: hoeveel stof je ook mengt, in evenwicht heeft de breuk steeds dezelfde waarde. Alleen als de temperatuur verandert, verandert K.",
+         "Koos je reactievat? Een ander volume verandert de concentraties, maar het mengsel reageert tot de breuk weer gelijk is aan dezelfde K."
+        ],
+        "uh": "K hangt alleen af van de temperatuur."
+       },
+       {
+        "v": "Welke evenwichtsvoorwaarde hoort bij N₂ + 3 H₂ ⇄ 2 NH₃?",
+        "o": [
+         "K = 2[NH₃] / ([N₂] · 3[H₂])",
+         "K = [NH₃]² / ([N₂][H₂]³)",
+         "K = [N₂][H₂]³ / [NH₃]²",
+         "K = [NH₃] / ([N₂][H₂])"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 3,
+        "u": "De coëfficiënten worden exponenten in de concentratiebreuk.",
+        "uo": [
+         "Koos je 2[NH₃]? De coëfficiënten worden machten, geen factoren ervoor.",
+         "Klopt: ammoniak heeft coëfficiënt 2, dus [NH₃]². Waterstof heeft 3, dus [H₂]³. Stikstof heeft 1.",
+         "Koos je de omgekeerde breuk? Ammoniak is het product en staat dus in de teller.",
+         "Koos je zonder machten? Dan vergeet je de coëfficiënten. Die moeten als exponent in de breuk."
+        ],
+        "uh": "Coëfficiënt → exponent."
+       },
+       {
+        "v": "Een evenwicht heeft bij kamertemperatuur K = 10⁸. Hoe ziet het mengsel in evenwicht eruit?",
+        "o": [
+         "In evenwicht is er veel meer product dan beginstof",
+         "De reactie verloopt heel snel, want er botsen veel deeltjes",
+         "Er is veel meer beginstof dan product",
+         "Het evenwicht is nog niet ingesteld"
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 3,
+        "u": "Grote K: teller groot, dus het evenwicht ligt ver naar rechts.",
+        "uo": [
+         "Klopt: bij een grote K is de teller veel groter dan de noemer. Er is in evenwicht dus vooral product: de ligging is rechts.",
+         "Koos je snel? K zegt niets over de snelheid. Een reactie met een grote K kan heel langzaam verlopen.",
+         "Koos je meer beginstof? Dat hoort bij een heel kleine K, dan is de noemer groot.",
+         "Koos je niet ingesteld? K is juist de waarde van de concentratiebreuk ín evenwicht."
+        ],
+        "uh": "Grote K = ligging rechts. Kleine K = ligging links."
+       },
+       {
+        "v": "Bereken K bij deze temperatuur.",
+        "o": [
+         "98",
+         "7,0",
+         "0,020",
+         "49"
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 3,
+        "u": "K = [HI]² / ([H₂][I₂]) = 0,70² / (0,10 × 0,10) = 0,49 / 0,010 = 49.",
+        "uo": [
+         "Koos je 98? Dan heb je de coëfficiënt 2 als factor gebruikt: 2 × 0,49 / 0,010. Een coëfficiënt wordt in de breuk een macht, geen factor ervoor.",
+         "Koos je 7,0? Dan vergeet je het kwadraat: 0,70 / 0,10 = 7,0. Door de coëfficiënt 2 staat [HI] in het kwadraat.",
+         "Koos je 0,020? Dan heb je de breuk omgedraaid: 0,010 / 0,49. De producten staan in de teller.",
+         "Klopt: K = [HI]² / ([H₂][I₂]) = 0,49 / 0,010 = 49."
+        ],
+        "uh": "Eerst de breuk opstellen, dan invullen.",
+        "ctx": "Waterstof en jood reageren bij 450 °C in een gesloten vat: H₂(g) + I₂(g) ⇄ 2 HI(g). In evenwicht meet men: [H₂] = 0,10 mol/L, [I₂] = 0,10 mol/L en [HI] = 0,70 mol/L."
+       },
+       {
+        "v": "Bereken K voor het estermengsel.",
+        "o": [
+         "0,25",
+         "2,0",
+         "4,0",
+         "1,0"
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 3,
+        "u": "K = [ester][water] / ([zuur][alcohol]) = 0,60 × 0,60 / (0,30 × 0,30) = 0,36 / 0,090 = 4,0.",
+        "uo": [
+         "Koos je 0,25? Dan heb je de breuk omgedraaid. Ester en water zijn de producten en staan boven de streep.",
+         "Koos je 2,0? Dan heb je 0,60 / 0,30 gedaan. Ester én water staan in de teller, zuur én alcohol in de noemer.",
+         "Klopt: K = (0,60 × 0,60) / (0,30 × 0,30) = 0,36 / 0,090 = 4,0.",
+         "Koos je 1,0? Dat zou betekenen dat teller en noemer even groot zijn. Hier is de teller vier keer zo groot."
+        ],
+        "uh": "Alle stoffen die meedoen, ook water.",
+        "ctx": "Bij de vorming van ethylethanoaat uit ethaanzuur en ethanol (zonder oplosmiddel) is in evenwicht: [ethaanzuur] = 0,30 mol/L, [ethanol] = 0,30 mol/L, [ethylethanoaat] = 0,60 mol/L en [water] = 0,60 mol/L."
+       },
+       {
+        "v": "Wat doet een katalysator met de ligging van een evenwicht?",
+        "o": [
+         "Hij verschuift het evenwicht naar rechts",
+         "Niets: het evenwicht stelt zich alleen sneller in",
+         "Hij verschuift het evenwicht naar links",
+         "Hij maakt de reactie aflopend"
+        ],
+        "c": 1,
+        "d": 1,
+        "s": 4,
+        "u": "Een katalysator versnelt heen en terug evenveel: de ligging en K blijven gelijk.",
+        "uo": [
+         "Koos je naar rechts? Dan zou alleen de heengaande reactie versneld worden. Een katalysator versnelt beide richtingen evenveel.",
+         "Klopt: een katalysator verlaagt de drempel voor beide richtingen. Je bereikt het evenwicht sneller, maar de samenstelling blijft dezelfde.",
+         "Koos je naar links? Ook dat gebeurt niet. De ligging hangt af van de concentraties en de temperatuur.",
+         "Koos je aflopend? Een katalysator verandert niets aan het feit dat de reactie terug kan. Het blijft een evenwicht."
+        ],
+        "uh": "Katalysator: sneller evenwicht, zelfde ligging."
+       },
+       {
+        "v": "Je voegt extra ethanol toe aan het ester-evenwicht. Wat gebeurt er?",
+        "o": [
+         "Er ontstaat extra ester, het evenwicht verschuift naar rechts",
+         "Er ontstaat extra zuur, het evenwicht verschuift naar links",
+         "Er gebeurt niets, want K blijft gelijk",
+         "De ethanol reageert met de ester tot water"
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 4,
+        "u": "Meer beginstof → noemer groter → breuk kleiner dan K → heengaande reactie wint tot de breuk weer K is.",
+        "uo": [
+         "Klopt: door de extra ethanol is de breuk kleiner dan K. De heengaande reactie gaat even sneller dan de teruggaande, tot de breuk weer gelijk is aan K. Er is dan meer ester.",
+         "Koos je naar links? Extra beginstof wordt juist verbruikt. De reactie loopt even extra naar rechts.",
+         "Koos je er gebeurt niets? K blijft wel gelijk, maar de concentratiebreuk niet. Die moet terug naar K, en daarvoor verschuift het evenwicht.",
+         "Koos je ethanol met ester? Ethanol reageert met het zuur, niet met de ester. Er ontstaat dus juist meer ester."
+        ],
+        "uh": "Iets toevoegen: het evenwicht verbruikt het weer gedeeltelijk."
+       },
+       {
+        "v": "Hoe kun je zorgen dat er bij een evenwicht zo veel mogelijk product ontstaat?",
+        "o": [
+         "Een kleiner reactievat gebruiken zonder iets anders te doen",
+         "Een katalysator toevoegen",
+         "Het product juist laten zitten",
+         "Het product steeds uit het mengsel halen"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 4,
+        "u": "Product weghalen: de teruggaande reactie kan niet bijhouden, er wordt steeds nieuw product gevormd.",
+        "uo": [
+         "Koos je kleiner vat? Dat maakt het effect afhankelijk van het aantal gasdeeltjes links en rechts. Zonder die informatie kun je niet zeggen dat er meer product ontstaat.",
+         "Koos je katalysator? Die laat je sneller bij het evenwicht komen, maar verandert de hoeveelheid product in evenwicht niet.",
+         "Koos je laten zitten? Dan stelt het evenwicht zich gewoon in en ontstaat er niet meer product.",
+         "Klopt: als je het product weghaalt, is de breuk steeds kleiner dan K. De heengaande reactie blijft winnen en er ontstaat steeds meer product."
+        ],
+        "uh": "Product weghalen = evenwicht naar rechts trekken."
+       },
+       {
+        "v": "Wat gebeurt er als de leerling het mengsel van ester, water, zuur en alcohol maakt?",
+        "o": [
+         "Er gebeurt niets, want alle concentraties zijn gelijk",
+         "Er ontstaat zuur en alcohol tot de breuk gelijk is aan 4",
+         "Er ontstaat ester tot de breuk gelijk is aan 4",
+         "De reactie loopt af tot alle zuur op is"
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 4,
+        "u": "Q = 0,50 × 0,50 / (0,50 × 0,50) = 1 < K = 4, dus de reactie loopt netto naar rechts.",
+        "uo": [
+         "Koos je er gebeurt niets? Gelijke concentraties zijn geen evenwicht. Alleen als de breuk gelijk is aan K is het mengsel in evenwicht.",
+         "Koos je zuur en alcohol? Dat zou gebeuren als de breuk groter was dan K. Hier is hij kleiner.",
+         "Klopt: de breuk is 1,0 en dat is kleiner dan K = 4. Er moet meer ester en water komen: het mengsel reageert netto naar rechts tot de breuk 4 is.",
+         "Koos je aflopen? Het blijft een evenwicht: de reactie loopt naar rechts tot de breuk 4 is, er blijft zuur over."
+        ],
+        "uh": "Breuk < K: naar rechts. Breuk > K: naar links.",
+        "ctx": "Bij het ester-evenwicht ethaanzuur + ethanol ⇄ ethylethanoaat + water is K = 4,0. Een leerling maakt een mengsel met van alle vier de stoffen 0,50 mol/L en laat het staan."
+       },
+       {
+        "v": "Wat kun je concluderen uit de waarneming?",
+        "o": [
+         "De vorming van N₂O₄ is endotherm",
+         "De vorming van N₂O₄ is exotherm",
+         "Afkoelen verschuift een evenwicht altijd naar rechts",
+         "In ijswater stopt de reactie"
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 4,
+        "u": "Afkoelen verschuift het evenwicht naar de exotherme kant. Het mengsel wordt lichter, dus er ontstaat N₂O₄: de heengaande reactie is exotherm.",
+        "uo": [
+         "Koos je endotherm? Dan zou afkoelen juist meer NO₂ geven en wordt het mengsel donkerder. Het wordt lichter.",
+         "Klopt: bij afkoelen verschuift een evenwicht naar de kant die warmte levert. Er ontstaat meer kleurloos N₂O₄, dus de vorming van N₂O₄ is exotherm.",
+         "Koos je altijd naar rechts? Dat hangt af van welke kant exotherm is. Hier toevallig rechts, maar dat geldt niet voor elk evenwicht.",
+         "Koos je stopt? Een evenwicht blijft dynamisch, ook in ijswater. Alleen de ligging verandert."
+        ],
+        "uh": "Afkoelen: naar de exotherme kant. Verwarmen: naar de endotherme kant.",
+        "ctx": "Bruin stikstofdioxide en kleurloos distikstoftetraoxide vormen een evenwicht: 2 NO₂(g) ⇄ N₂O₄(g). Een leerling zet een afgesloten buisje met het mengsel in ijswater. Het gas wordt duidelijk lichter van kleur. Haalt ze het buisje eruit, dan wordt het weer donkerbruin."
+       },
+       {
+        "v": "Waarom bruist frisdrank pas als je de fles opendraait?",
+        "o": [
+         "In de dichte fles is CO₂ in evenwicht; open ontsnapt het gas",
+         "Door het opendraaien ontstaat er nieuw CO₂ uit de suiker in de frisdrank",
+         "De fles warmt op bij het opendraaien",
+         "Lucht van buiten reageert met de frisdrank"
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 5,
+        "u": "Dicht: CO₂(g) ⇄ CO₂(aq) in evenwicht. Open: gas ontsnapt, opgelost CO₂ komt eruit.",
+        "uo": [
+         "Klopt: in de dichte fles is er een evenwicht tussen CO₂ in het gas en CO₂ in de vloeistof. Open je de fles, dan ontsnapt het gas en komt opgelost CO₂ vrij als belletjes.",
+         "Koos je nieuw CO₂ uit suiker? Er ontstaat geen nieuw CO₂. Het zat al opgelost en komt vrij omdat het evenwicht verstoord wordt.",
+         "Koos je opwarmen? De temperatuur verandert niet door het opendraaien. Het verschil is dat de fles nu een open systeem is.",
+         "Koos je lucht reageert? Lucht reageert niet met de frisdrank. Het opgeloste gas ontsnapt."
+        ],
+        "uh": "Open fles = open systeem: evenwicht verstoord."
+       },
+       {
+        "v": "Waarom haalt de fabriek de ammoniak steeds uit het gasmengsel?",
+        "o": [
+         "Zonder ammoniak is de reactie aflopend en ontstaat er niets terug",
+         "Ammoniak is een katalysator die anders de reactie stopt",
+         "Ammoniak verlaagt de temperatuur van de reactor",
+         "Zo blijft de heengaande reactie winnen en ontstaat er steeds nieuwe ammoniak"
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 5,
+        "u": "Product weghalen houdt de concentratiebreuk kleiner dan K: de reactie blijft netto naar rechts lopen.",
+        "uo": [
+         "Koos je aflopend? Het blijft een evenwicht. Maar omdat het product steeds weg is, loopt de reactie netto bijna helemaal naar rechts.",
+         "Koos je katalysator? De katalysator is ijzer. Ammoniak is het product dat je wilt hebben.",
+         "Koos je temperatuur? Ammoniak afvoeren gebeurt door koelen, maar het doel is het evenwicht naar rechts te trekken, niet de reactor af te koelen.",
+         "Klopt: door ammoniak af te voeren blijft de breuk onder K. De heengaande reactie blijft sneller dan de teruggaande, en het teruggevoerde stikstof en waterstof krijgt een nieuwe kans."
+        ],
+        "uh": "Product afvoeren + beginstoffen terugvoeren = hoog rendement.",
+        "ctx": "In een ammoniakfabriek reageren stikstof en waterstof bij 450 °C met ijzer als katalysator: N₂ + 3 H₂ ⇄ 2 NH₃. Het gasmengsel uit de reactor gaat door een koeler waar ammoniak vloeibaar wordt en wordt afgetapt. Het overgebleven stikstof en waterstof gaat terug de reactor in."
+       },
+       {
+        "v": "Waarom verdwijnt kalk helemaal als je het in een open bak met zoutzuur laat reageren?",
+        "o": [
+         "In een open bak is de concentratie van het zuur hoger",
+         "Zoutzuur is een katalysator die het oplossen van kalk in water versnelt",
+         "Het CO₂ ontsnapt, zodat de teruggaande reactie niet kan verlopen",
+         "Kalk verdampt als het met zuur in contact komt"
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 5,
+        "u": "Open systeem: een gasvormig product ontsnapt, de reactie loopt af.",
+        "uo": [
+         "Koos je hogere concentratie? Of de bak open of dicht is, verandert de concentratie van het zuur niet.",
+         "Koos je katalysator? Zoutzuur reageert zelf mee en wordt verbruikt. Het is een beginstof.",
+         "Klopt: het CO₂ verdwijnt de lucht in. Zonder product kan er niets terugreageren, dus de reactie loopt af tot het kalk (of het zuur) op is.",
+         "Koos je verdampen? Kalk verdampt niet. Het reageert tot calciumchloride, water en CO₂."
+        ],
+        "uh": "Gas ontsnapt = reactie loopt af."
+       },
+       {
+        "v": "Welke maatregel levert meer ester op zonder dat er meer azijnzuur nodig is?",
+        "o": [
+         "Meer zwavelzuur toevoegen als katalysator",
+         "Extra ethanol toevoegen en het water steeds verwijderen",
+         "Het mengsel twee keer zo lang laten staan",
+         "Extra ester toevoegen aan het begin"
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 5,
+        "u": "Overmaat goedkope beginstof en product weghalen verschuiven het evenwicht naar rechts.",
+        "uo": [
+         "Koos je meer zwavelzuur? Als katalysator zorgt het dat het evenwicht sneller ingesteld is, maar de hoeveelheid ester in evenwicht blijft gelijk.",
+         "Klopt: extra ethanol maakt de breuk kleiner dan K, en water weghalen ook. Beide trekken het evenwicht naar rechts, zodat meer van het azijnzuur ester wordt.",
+         "Koos je langer laten staan? Als het evenwicht al is ingesteld, verandert er door wachten niets meer.",
+         "Koos je extra ester? Extra product aan het begin schuift het evenwicht juist naar links. Er wordt dan minder azijnzuur omgezet."
+        ],
+        "uh": "Goedkope beginstof in overmaat, product afvoeren.",
+        "ctx": "Een fabriek maakt ethylethanoaat (een oplosmiddel voor lijm) uit azijnzuur en ethanol met zwavelzuur als katalysator. Azijnzuur is duur, ethanol is goedkoop. Bij K = 4 wordt van 1 mol azijnzuur en 1 mol ethanol maar 0,67 mol omgezet."
+       },
+       {
+        "v": "Welke uitspraak over een evenwichtsmengsel klopt?",
+        "o": [
+         "De concentraties blijven constant, maar zijn meestal niet gelijk",
+         "Alle stoffen hebben dezelfde concentratie",
+         "Er is alleen nog product aanwezig",
+         "Er vinden geen reacties meer plaats, omdat de beginstoffen op zijn"
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 1,
+        "u": "Constant, niet gelijk: dat is het verschil dat het examen vaak toetst.",
+        "uo": [
+         "Klopt: in evenwicht veranderen de concentraties niet meer, maar ze kunnen heel verschillend zijn. Bij het ester-evenwicht is er twee keer zoveel ester als zuur.",
+         "Koos je dezelfde concentratie? Dat is de bekendste denkfout. Evenwicht betekent even snel heen als terug, niet even veel van elke stof.",
+         "Koos je alleen product? Dan is de reactie afgelopen. In een evenwicht is er altijd van alle stoffen iets aanwezig.",
+         "Koos je geen reacties? De reacties gaan door, alleen heen en terug even snel. Daarom heet het een dynamisch evenwicht."
+        ],
+        "uh": "Evenwicht: constant, niet gelijk."
+       },
+       {
+        "v": "Waarom wordt de teruggaande reactie na het mengen steeds sneller?",
+        "o": [
+         "De beginstoffen worden steeds geconcentreerder",
+         "De temperatuur stijgt doordat de heengaande reactie warmte levert",
+         "De katalysator raakt op",
+         "Er komt steeds meer product, dus de productdeeltjes botsen vaker"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 2,
+        "u": "Snelheid hangt af van de concentratie: meer product = vaker botsen voor de teruggaande reactie.",
+        "uo": [
+         "Koos je beginstoffen geconcentreerder? De beginstoffen worden juist verbruikt, dus hun concentratie daalt.",
+         "Koos je temperatuur? Die kan iets veranderen, maar de hoofdreden is dat er steeds meer product is om terug te reageren.",
+         "Koos je katalysator? Een katalysator raakt niet op. Bovendien zou dat beide reacties langzamer maken.",
+         "Klopt: in het begin is er geen product, dus de teruggaande reactie staat stil. Hoe meer product er ontstaat, hoe vaker de productdeeltjes botsen en hoe sneller ze terugreageren."
+        ],
+        "uh": "Terug wordt sneller omdat er meer product is."
+       }
+      ],
+      "oe": [
+       {
+        "bron": "Examenstijl",
+        "ctx": "Bij de bereiding van methanol stelt zich een evenwicht in: CO(g) + 2 H₂(g) ⇄ CH₃OH(g). In een gesloten vat meet men bij een bepaalde temperatuur in evenwicht: [CO] = 0,20 mol/L, [H₂] = 0,50 mol/L en [CH₃OH] = 0,30 mol/L.",
+        "v": "Geef de evenwichtsvoorwaarde en bereken K.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "K = [CH₃OH] / ([CO][H₂]²) (1p). K = 0,30 / (0,20 × 0,50²) = 0,30 / 0,050 = 6,0 (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een leerling stelt het ester-evenwicht in: ethaanzuur + ethanol ⇄ ethylethanoaat + water. Ze meet na 6 uur, na 12 uur en na 24 uur dezelfde samenstelling: 0,33 mol/L zuur en ethanol, 0,67 mol/L ester en water. Haar buurman zegt: \"Dit is geen evenwicht, want de concentraties zijn niet gelijk, en de reactie is gestopt.\"",
+        "v": "Leg uit wat er aan beide uitspraken van de buurman niet klopt.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "In evenwicht zijn de concentraties constant, maar niet per se gelijk; constant is hier het geval (1p). De reactie is niet gestopt: heengaande en teruggaande reactie verlopen even snel, het evenwicht is dynamisch (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Bij het ester-evenwicht is K = 4,0. Een leerling maakt een mengsel met 0,40 mol/L ethaanzuur, 0,40 mol/L ethanol, 0,80 mol/L ethylethanoaat en 0,80 mol/L water.",
+        "v": "Bereken de concentratiebreuk en leg uit naar welke kant de reactie netto zal verlopen.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Breuk = (0,80 × 0,80) / (0,40 × 0,40) = 0,64 / 0,16 = 4,0 (1p). De breuk is gelijk aan K, dus het mengsel is al in evenwicht; netto verandert er niets (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "In een ammoniakfabriek reageren stikstof en waterstof met ijzer als katalysator: N₂ + 3 H₂ ⇄ 2 NH₃. Het gas uit de reactor gaat door een koeler waar de ammoniak vloeibaar wordt en wordt afgetapt. De rest gaat terug naar de reactor.",
+        "v": "Leg met de concentratiebreuk uit waarom het aftappen van ammoniak de opbrengst verhoogt, en geef aan wat de katalysator doet.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Door ammoniak af te tappen wordt de teller kleiner, de breuk kleiner dan K, zodat de heengaande reactie sneller verloopt dan de teruggaande en er nieuwe ammoniak ontstaat (1p). De katalysator zorgt dat het evenwicht sneller ingesteld is, maar verandert de ligging niet (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Bruin NO₂ en kleurloos N₂O₄ vormen een evenwicht: 2 NO₂(g) ⇄ N₂O₄(g). Een afgesloten buis met het mengsel wordt in kokend water gezet; het gas wordt donkerder bruin. In ijswater wordt het lichter.",
+        "v": "Leg uit of de vorming van N₂O₄ exotherm of endotherm is.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Bij verwarmen ontstaat meer bruin NO₂: het evenwicht verschuift naar links, de endotherme kant (1p). De teruggaande reactie is dus endotherm en de vorming van N₂O₄ exotherm (1p)."
+       }
+      ]
      }
     ]
    },
