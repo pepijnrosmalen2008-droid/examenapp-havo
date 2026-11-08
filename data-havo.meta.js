@@ -2459,9 +2459,13 @@ var VAKKEN = [
      },
      {
       "id": "C3",
+      "lo": "na.C.3",
+      "gs": 2,
       "naam": "Krachten samenstellen en ontbinden",
-      "beschrijving": "Krachten die op één lijn, loodrecht of onder een willekeurige hoek staan samenstellen tot een resulterende kracht, en een kracht ontbinden in componenten.",
+      "beschrijving": "Je stelt krachten samen tot een resulterende kracht: op één lijn door optellen en aftrekken, loodrecht met de stelling van Pythagoras en onder een willekeurige hoek met de parallellogrammethode. Je ontbindt een kracht in componenten met sinus en cosinus, ook de zwaartekracht op een helling.",
       "ceStatus": "CE",
+      "binas": "35A",
+      "val": "",
       "onderwerpen": [
        "Samenstellen tot een resulterende kracht",
        "Krachten op één lijn: optellen of aftrekken",
@@ -2470,9 +2474,9 @@ var VAKKEN = [
        "Ontbinden in componenten",
        "Ontbinden op een helling"
       ],
-      "nSv": 25,
+      "nSv": 26,
       "nOe": 5,
-      "nBeg": 12,
+      "nBeg": 11,
       "hasSam": true
      },
      {

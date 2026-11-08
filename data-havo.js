@@ -95507,9 +95507,13 @@ var VAKKEN = [
      },
      {
       "id": "C3",
+      "lo": "na.C.3",
+      "gs": 2,
       "naam": "Krachten samenstellen en ontbinden",
-      "beschrijving": "Krachten die op één lijn, loodrecht of onder een willekeurige hoek staan samenstellen tot een resulterende kracht, en een kracht ontbinden in componenten.",
+      "beschrijving": "Je stelt krachten samen tot een resulterende kracht: op één lijn door optellen en aftrekken, loodrecht met de stelling van Pythagoras en onder een willekeurige hoek met de parallellogrammethode. Je ontbindt een kracht in componenten met sinus en cosinus, ook de zwaartekracht op een helling.",
       "ceStatus": "CE",
+      "binas": "35A",
+      "val": "",
       "onderwerpen": [
        "Samenstellen tot een resulterende kracht",
        "Krachten op één lijn: optellen of aftrekken",
@@ -95518,554 +95522,636 @@ var VAKKEN = [
        "Ontbinden in componenten",
        "Ontbinden op een helling"
       ],
-      "sam": "Meerdere krachten op een voorwerp kun je vervangen door één resulterende kracht: dat heet samenstellen. Staan de krachten op één lijn, dan tel je krachten in dezelfde richting op en trek je tegengestelde krachten van elkaar af. Staan twee krachten loodrecht op elkaar, dan vind je de resulterende kracht met de stelling van Pythagoras. Staan de krachten onder een willekeurige hoek, dan gebruik je de parallellogrammethode: je tekent een parallellogram met de twee krachten als zijden, en de diagonaal is de resulterende kracht. Het omgekeerde heet ontbinden: je splitst één kracht in twee componenten in gekozen richtingen. Een klassiek voorbeeld is een voorwerp op een helling: je ontbindt de zwaartekracht in een component langs de helling (die het voorwerp laat glijden) en een component loodrecht op de helling (die op het oppervlak drukt). Let goed op de richtingen waarin je ontbindt, anders krijg je de verkeerde componenten.",
+      "sam": "Samenstellen: krachten vervangen door Fres. Op één lijn: positieve richting kiezen, optellen met tekens. Loodrecht: Fres = √(F₁² + F₂²), tan α = F₂ / F₁. Willekeurige hoek: parallellogrammethode, diagonaal = resultante; grotere hoek = kleinere resultante. Ontbinden: Fx = F · cos α, Fy = F · sin α. Helling: langs Fz · sin α, loodrecht Fz · cos α = Fn.",
       "begrippen": [
        {
+        "t": "Resulterende kracht",
+        "d": "De ene kracht die hetzelfde effect heeft als alle krachten samen."
+       },
+       {
         "t": "Samenstellen",
-        "d": "meerdere krachten vervangen door één resulterende kracht"
+        "d": "Meerdere krachten vervangen door hun resulterende kracht."
        },
        {
         "t": "Ontbinden",
-        "d": "één kracht splitsen in twee componenten in gekozen richtingen"
-       },
-       {
-        "t": "Resulterende kracht",
-        "d": "de ene kracht die alle krachten samen vervangt"
+        "d": "Eén kracht splitsen in twee componenten met samen hetzelfde effect."
        },
        {
         "t": "Component",
-        "d": "een deel van een kracht in een bepaalde richting"
+        "d": "Deel van een kracht in een gekozen richting, zoals Fx = F · cos α."
        },
        {
-        "t": "Parallellogrammethode",
-        "d": "twee krachten samenstellen via een parallellogram; de diagonaal is de resultante"
-       },
-       {
-        "t": "Op één lijn",
-        "d": "krachten met dezelfde of tegengestelde richting"
-       },
-       {
-        "t": "Loodrecht",
-        "d": "onder een hoek van 90 graden"
-       },
-       {
-        "t": "Diagonaal",
-        "d": "de lijn dwars door het parallellogram; de resulterende kracht"
+        "t": "Positieve richting",
+        "d": "De richting die je kiest als plus bij krachten op één lijn."
        },
        {
         "t": "Stelling van Pythagoras",
-        "d": "voor loodrechte krachten: de resultante is de wortel van de som van de kwadraten"
+        "d": "Bij loodrechte krachten: Fres = √(F₁² + F₂²)."
        },
        {
-        "t": "Helling",
-        "d": "een schuin vlak waarop krachten worden ontbonden"
+        "t": "Parallellogrammethode",
+        "d": "Tekenmethode: de diagonaal van het parallellogram van twee krachten is de resultante."
        },
        {
-        "t": "Kop-staartmethode",
-        "d": "krachten samenstellen door de pijlen achter elkaar te tekenen"
+        "t": "Krachtenschaal",
+        "d": "Afspraak hoeveel newton één centimeter pijllengte voorstelt."
        },
        {
-        "t": "Vectorpijl",
-        "d": "de pijl waarmee je een kracht met grootte en richting tekent"
+        "t": "Hellingshoek",
+        "d": "Hoek α tussen de helling en de horizontaal."
+       },
+       {
+        "t": "Normaalkracht",
+        "d": "Kracht van de ondergrond loodrecht op het vlak; op een helling Fn = Fz · cos α."
+       },
+       {
+        "t": "Evenwicht",
+        "d": "Toestand waarin de resulterende kracht nul is."
        }
       ],
       "sv": [
        {
-        "v": "Wat is krachten samenstellen?",
+        "v": "Wat doe je als je krachten samenstelt?",
         "o": [
-         "Meerdere krachten vervangen door één resulterende kracht",
-         "Een kracht splitsen in twee delen",
-         "Een kracht in newton omzetten bij dit voorwerp op de helling",
-         "De massa van een voorwerp bepalen"
+         "je telt alleen de groottes van alle krachten op",
+         "je splitst één kracht op in twee delen",
+         "ze vervangen door één kracht met gelijk effect",
+         "je kiest de grootste kracht en negeert de rest"
         ],
-        "c": 0,
-        "d": 2,
-        "u": "Samenstellen is meerdere krachten vervangen door één kracht die hetzelfde effect heeft: de resulterende kracht.",
+        "c": 2,
+        "d": 1,
+        "s": 0,
+        "u": "Samenstellen = vervangen door de resulterende kracht.",
         "uo": [
-         "Klopt: vervangen door één resulterende kracht.",
-         "Dat is juist ontbinden.",
-         "Dat is geen samenstellen.",
-         "Dat is massa bepalen."
+         "Koos je de groottes optellen? Dat klopt alleen als alle krachten dezelfde kant op werken. Bij andere richtingen moet je de richting meerekenen.",
+         "Koos je opsplitsen in twee delen? Dat is ontbinden, precies het omgekeerde. Bij samenstellen ga je van meerdere krachten naar één.",
+         "Klopt: bij samenstellen zoek je de ene kracht die hetzelfde doet als alle krachten samen: de resulterende kracht. Richting en grootte tellen allebei mee.",
+         "Koos je de grootste kracht kiezen? Ook kleinere krachten veranderen het effect. De resulterende kracht houdt rekening met alle krachten tegelijk."
         ],
-        "uh": "Samenstellen = alle krachten samen als één."
+        "uh": "Eén kracht met hetzelfde effect."
        },
        {
-        "v": "Wat is krachten ontbinden?",
+        "v": "Twee krachten van 30 N en 40 N werken op hetzelfde punt. Welke resulterende kracht is onmogelijk?",
         "o": [
-         "Meerdere krachten optellen tot één",
-         "Eén kracht splitsen in twee componenten",
-         "Een kracht in kilogram omzetten",
-         "De snelheid berekenen bij dit voorwerp op de helling"
+         "10 N",
+         "80 N",
+         "50 N",
+         "70 N"
         ],
         "c": 1,
         "d": 2,
-        "u": "Ontbinden is het omgekeerde van samenstellen: je splitst één kracht in twee componenten.",
+        "s": 0,
+        "u": "Fres ligt tussen 40 − 30 en 40 + 30.",
         "uo": [
-         "Dat is juist samenstellen.",
-         "Klopt: één kracht splitsen in componenten.",
-         "Dat is geen ontbinden.",
-         "Dat is een snelheidsberekening."
+         "Koos je 10 N? Dat is de resultante als de krachten precies tegengesteld werken: 40 − 30 = 10 N. Dat kan dus wel.",
+         "Klopt: de grootste resultante krijg je als ze dezelfde kant op werken, 70 N; de kleinste als ze tegengesteld zijn, 10 N. Meer dan 70 N kan dus nooit, en 80 N valt erbuiten.",
+         "Koos je 50 N? Dat krijg je als ze loodrecht op elkaar staan: √(30² + 40²) = 50 N. Een heel gewone uitkomst.",
+         "Koos je 70 N? Dat is de resultante als ze dezelfde kant op werken. Dat is het maximum, maar het kan wel."
         ],
-        "uh": "Ontbinden = één kracht splitsen in componenten."
+        "uh": "Tussen verschil en som."
        },
        {
-        "v": "Twee krachten van 3 N en 4 N wijzen dezelfde kant op. Wat is de resulterende kracht?",
+        "v": "Waarom komt de boot niet recht naar de overkant, ook al roeit Fatima loodrecht op de oever?",
         "o": [
-         "1 N",
-         "12 N",
-         "7 N",
-         "5 N"
-        ],
-        "c": 2,
-        "d": 2,
-        "u": "Krachten in dezelfde richting tel je op: 3 plus 4 is 7 N.",
-        "uo": [
-         "1 N is het verschil, bij tegengestelde richting.",
-         "12 is de vermenigvuldiging.",
-         "Klopt: 3 plus 4 is 7 N.",
-         "5 hoort bij loodrechte krachten."
-        ],
-        "uh": "Zelfde richting: optellen."
-       },
-       {
-        "v": "Twee krachten van 7 N en 4 N wijzen tegengesteld. Wat is de resulterende kracht?",
-        "o": [
-         "11 N",
-         "28 N",
-         "0 N",
-         "3 N"
-        ],
-        "c": 3,
-        "d": 2,
-        "u": "Tegengestelde krachten trek je af: 7 min 4 is 3 N.",
-        "uo": [
-         "11 is de optelling, bij dezelfde richting.",
-         "28 is de vermenigvuldiging.",
-         "0 zou alleen bij gelijke krachten.",
-         "Klopt: 7 min 4 is 3 N."
-        ],
-        "uh": "Tegengesteld: aftrekken."
-       },
-       {
-        "v": "Twee krachten van 3 N en 4 N staan loodrecht op elkaar. Wat is de resulterende kracht?",
-        "o": [
-         "5 N",
-         "7 N",
-         "1 N",
-         "12 N"
+         "de stroming en de roeikracht samen geven een schuine resultante",
+         "de roeikracht verdwijnt zodra er stroming is",
+         "de stroming duwt de boot alleen tegen de oever",
+         "zonder wind in de rug kan een roeiboot nooit rechtdoor varen"
         ],
         "c": 0,
         "d": 3,
-        "u": "Bij loodrechte krachten gebruik je Pythagoras: de wortel van 3 kwadraat plus 4 kwadraat is 5 N.",
+        "s": 0,
+        "u": "Resultante van roeien en stroming.",
         "uo": [
-         "Klopt: wortel van 9 plus 16 is wortel 25 is 5 N.",
-         "7 zou optellen zijn, maar dat mag niet bij loodrecht.",
-         "1 zou aftrekken zijn.",
-         "12 is de vermenigvuldiging."
+         "Klopt: op de boot werken de roeikracht loodrecht op de oever en de kracht van de stroming langs de oever. Samen geven ze een resulterende kracht die schuin stroomafwaarts wijst, dus de boot drijft af.",
+         "Koos je dat de roeikracht verdwijnt? Die blijft gewoon bestaan. Er komt een tweede kracht bij, en de twee samen bepalen de richting.",
+         "Koos je dat de stroming tegen de oever duwt? De stroming werkt langs de oever, in de richting waarin het water stroomt. Daardoor schuift de boot stroomafwaarts op.",
+         "Koos je dat er wind nodig is? Wind speelt hier geen rol. De afwijking komt door de stroming van het water, die samen met de roeikracht een schuine resultante geeft."
         ],
-        "uh": "Loodrecht: Pythagoras (hier 5 N)."
+        "uh": "Twee krachten, schuine resultante.",
+        "ctx": "Fatima roeit een bootje over een rivier die van links naar rechts stroomt. Ze richt de boot precies loodrecht op de oever en roeit met constante kracht. Toch komt ze een flink stuk stroomafwaarts aan op de overkant. Haar vriend zegt dat ze dus scheef moet hebben geroeid."
        },
        {
-        "v": "Welke methode gebruik je bij krachten onder een willekeurige hoek?",
+        "v": "Hoe groot is de resulterende kracht op de ring als drie touwen in evenwicht zijn?",
         "o": [
-         "Gewoon optellen",
-         "De parallellogrammethode",
-         "De massa vermenigvuldigen",
-         "De snelheid delen"
-        ],
-        "c": 1,
-        "d": 2,
-        "u": "Bij een willekeurige hoek teken je een parallellogram; de diagonaal is de resulterende kracht.",
-        "uo": [
-         "Zomaar optellen mag niet bij een hoek.",
-         "Klopt: de parallellogrammethode.",
-         "Massa hoort hier niet bij.",
-         "Snelheid hoort hier niet bij."
-        ],
-        "uh": "Willekeurige hoek: parallellogrammethode."
-       },
-       {
-        "v": "Wat is de diagonaal in de parallellogrammethode?",
-        "o": [
-         "De grootste van de twee krachten",
-         "De massa",
-         "De resulterende kracht",
-         "De snelheid"
-        ],
-        "c": 2,
-        "d": 2,
-        "u": "In de parallellogrammethode is de diagonaal de resulterende kracht van de twee krachten.",
-        "uo": [
-         "Het is niet zomaar de grootste kracht.",
-         "Massa hoort hier niet bij.",
-         "Klopt: de diagonaal is de resultante.",
-         "Snelheid hoort hier niet bij."
-        ],
-        "uh": "Diagonaal = resulterende kracht."
-       },
-       {
-        "v": "Wat is een component van een kracht?",
-        "o": [
-         "De hele resulterende kracht",
-         "De massa van het voorwerp",
-         "De tijd van de beweging bij dit voorwerp op de helling",
-         "Een deel van de kracht in een bepaalde richting"
-        ],
-        "c": 3,
-        "d": 2,
-        "u": "Een component is het deel van een kracht dat in een bepaalde richting werkt.",
-        "uo": [
-         "De component is een deel, niet het geheel.",
-         "Massa is geen component.",
-         "Tijd is geen component.",
-         "Klopt: een deel in een bepaalde richting."
-        ],
-        "uh": "Component = deel van een kracht in een richting."
-       },
-       {
-        "v": "Waarin ontbind je de zwaartekracht bij een voorwerp op een helling?",
-        "o": [
-         "Langs de helling en loodrecht op de helling",
-         "Alleen naar beneden bij dit voorwerp op de helling",
-         "In snelheid en tijd",
-         "In massa en gewicht"
-        ],
-        "c": 0,
-        "d": 3,
-        "u": "Op een helling splits je de zwaartekracht in een component langs de helling en een loodrecht op de helling.",
-        "uo": [
-         "Klopt: langs en loodrecht op de helling.",
-         "Alleen naar beneden is niet ontbinden.",
-         "Snelheid en tijd zijn geen componenten.",
-         "Massa en gewicht zijn geen componenten."
-        ],
-        "uh": "Op een helling: langs en loodrecht ontbinden."
-       },
-       {
-        "v": "Welke component laat een voorwerp langs de helling glijden?",
-        "o": [
-         "De component loodrecht op de helling",
-         "De component langs de helling",
-         "De normaalkracht",
-         "De spankracht"
-        ],
-        "c": 1,
-        "d": 3,
-        "u": "De component van de zwaartekracht langs de helling trekt het voorwerp naar beneden langs het vlak.",
-        "uo": [
-         "De loodrechte component drukt op het vlak.",
-         "Klopt: de component langs de helling.",
-         "De normaalkracht drukt loodrecht, niet langs.",
-         "Er is geen touw in het spel."
-        ],
-        "uh": "Langs-de-helling-component laat glijden."
-       },
-       {
-        "v": "Welke component drukt op het hellingsoppervlak?",
-        "o": [
-         "De component langs de helling",
-         "De wrijvingskracht",
-         "De component loodrecht op de helling",
-         "De spankracht bij dit voorwerp op de helling"
-        ],
-        "c": 2,
-        "d": 3,
-        "u": "De component van de zwaartekracht loodrecht op de helling drukt het voorwerp tegen het oppervlak.",
-        "uo": [
-         "De component langs de helling laat juist glijden.",
-         "Wrijving is een aparte kracht.",
-         "Klopt: de loodrechte component drukt op het vlak.",
-         "Er is geen touw in het spel."
-        ],
-        "uh": "Loodrechte component drukt op het vlak."
-       },
-       {
-        "v": "Wat mag je NIET doen bij twee krachten onder een hoek?",
-        "o": [
-         "Een parallellogram tekenen",
-         "De diagonaal bepalen bij dit voorwerp op de helling",
-         "De richtingen goed tekenen",
-         "De grootten zomaar bij elkaar optellen"
+         "het verschil tussen de grootste en de kleinste",
+         "de som van de drie spankrachten",
+         "de grootste van de drie spankrachten",
+         "0 N"
         ],
         "c": 3,
         "d": 3,
-        "u": "Bij een hoek mag je de grootten niet zomaar optellen; je moet de parallellogrammethode gebruiken.",
+        "s": 0,
+        "u": "Evenwicht: Fres = 0.",
         "uo": [
-         "Een parallellogram tekenen is juist goed.",
-         "De diagonaal bepalen is juist goed.",
-         "Richtingen goed tekenen is juist goed.",
-         "Klopt: zomaar optellen mag niet bij een hoek."
+         "Koos je het verschil? Dat geldt alleen bij twee krachten op één lijn. Bij drie krachten in evenwicht is de resulterende kracht altijd nul.",
+         "Koos je de som? Die optelling klopt alleen als alle touwen dezelfde kant op trekken. Hier trekken ze in verschillende richtingen en heffen ze elkaar op.",
+         "Koos je de grootste spankracht? Die wordt juist opgeheven door de twee andere touwen samen. Netto blijft er niets over.",
+         "Klopt: de ring hangt stil, dus er is evenwicht en de resulterende kracht is nul. Elke kracht is dan even groot als, en tegengesteld aan, de resultante van de andere twee."
         ],
-        "uh": "Bij een hoek niet zomaar optellen."
+        "uh": "Stilstand = Fres nul.",
+        "ctx": "Bij een practicum hangt een metalen ring aan drie touwen die in verschillende richtingen aan krachtmeters trekken. De krachtmeters wijzen 4,0 N, 3,0 N en 5,0 N aan. De ring hangt stil in het midden van het bord. Een leerling vraagt zich af hoe groot de resulterende kracht op de ring is."
        },
        {
-        "v": "Wat is de resulterende kracht van twee even grote tegengestelde krachten?",
+        "v": "Twee mensen duwen een auto dezelfde kant op, met 250 N en 300 N. Hoe groot is de resulterende kracht?",
         "o": [
-         "Nul",
-         "Twee keer zo groot",
-         "De helft",
-         "Gelijk aan één kracht"
+         "275 N",
+         "50 N",
+         "550 N",
+         "390 N"
         ],
-        "c": 0,
-        "d": 2,
-        "u": "Twee even grote krachten in tegengestelde richting heffen elkaar op: de resultante is nul.",
+        "c": 2,
+        "d": 1,
+        "s": 1,
+        "u": "Zelfde richting: optellen.",
         "uo": [
-         "Klopt: ze heffen elkaar op, resultante nul.",
-         "Ze tellen niet op.",
-         "De helft klopt niet.",
-         "Er blijft niets over."
+         "Koos je 275 N? Dat is het gemiddelde. De krachten werken allebei mee, dus ze versterken elkaar en je telt ze op.",
+         "Koos je 50 N? Dan heb je afgetrokken. Aftrekken doe je alleen als de krachten tegengesteld werken; hier duwen ze samen.",
+         "Klopt: krachten in dezelfde richting tel je gewoon op: 250 + 300 = 550 N, in de richting waarin ze duwen.",
+         "Koos je 390 N? Dat is √(250² + 300²), Pythagoras. Die gebruik je alleen bij loodrechte krachten, niet bij krachten in dezelfde richting."
         ],
-        "uh": "Gelijk en tegengesteld = resultante nul."
+        "uh": "Optellen."
        },
        {
-        "v": "Hoe teken je krachten samen met de kop-staartmethode?",
+        "v": "Trekkracht 12 kN vooruit, waterweerstand 9 kN en wind 2 kN achteruit. Hoe groot is Fres?",
         "o": [
-         "De pijlen over elkaar heen",
-         "De pijlen achter elkaar tekenen",
-         "Alleen de grootste pijl",
-         "De pijlen weglaten van het voorwerp"
+         "23 kN vooruit",
+         "1 kN vooruit",
+         "5 kN vooruit",
+         "1 kN achteruit"
         ],
         "c": 1,
         "d": 2,
-        "u": "Bij de kop-staartmethode zet je de staart van de tweede pijl aan de kop van de eerste; de resultante loopt van begin tot eind.",
+        "s": 1,
+        "u": "12 − 9 − 2 = 1 kN.",
         "uo": [
-         "Over elkaar heen is niet de methode.",
-         "Klopt: de pijlen achter elkaar.",
-         "Alleen de grootste is fout.",
-         "Zonder pijlen kun je niet samenstellen."
+         "Koos je 23 kN vooruit? Dan heb je alles opgeteld. De waterweerstand en de wind werken tegen de trekkracht in, dus die trek je af.",
+         "Klopt: kies vooruit als positief. 12 − 9 − 2 = +1 kN, dus de resulterende kracht is 1 kN vooruit en het schip versnelt een beetje.",
+         "Koos je 5 kN vooruit? Dan heb je de wind met de trekkracht meegeteld. De wind duwt achteruit, dus die trek je af: 12 − 9 − 2.",
+         "Koos je 1 kN achteruit? De grootte klopt, maar de trekkracht van 12 kN is groter dan de tegenwerkende 11 kN samen, dus Fres wijst vooruit."
         ],
-        "uh": "Kop-staart: pijlen achter elkaar."
+        "uh": "Kies een positieve richting."
        },
        {
-        "v": "Waarom moet je bij ontbinden goed op de richtingen letten?",
+        "v": "Een lamp van 2,0 kg hangt aan een veer; een kind trekt er met 5,0 N aan omlaag. Hoe groot is de veerkracht?",
         "o": [
-         "Anders verandert de massa van het voorwerp",
-         "Anders wordt het voorwerp warmer",
-         "Anders krijg je de verkeerde componenten",
-         "Anders verdwijnt de zwaartekracht"
-        ],
-        "c": 2,
-        "d": 3,
-        "u": "De componenten hangen af van de gekozen richtingen; kies je die verkeerd, dan kloppen de componenten niet.",
-        "uo": [
-         "De massa verandert niet.",
-         "De temperatuur verandert niet.",
-         "Klopt: verkeerde richtingen geven verkeerde componenten.",
-         "De zwaartekracht blijft."
-        ],
-        "uh": "Verkeerde richting = verkeerde componenten."
-       },
-       {
-        "v": "Twee krachten van 5 N en 5 N wijzen dezelfde kant op. Wat is de resultante?",
-        "o": [
-         "0 N van het voorwerp",
-         "5 N",
          "25 N",
-         "10 N"
+         "15 N",
+         "5,0 N",
+         "20 N"
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 1,
+        "u": "Fv = Fz + Ftrek = 19,6 + 5,0.",
+        "uo": [
+         "Klopt: de lamp hangt stil. Omlaag werken Fz = 2,0 × 9,81 = 19,6 N en de trekkracht 5,0 N, samen 24,6 N ≈ 25 N. De veer moet dat omhoog compenseren.",
+         "Koos je 15 N? Dan heb je de trekkracht van de zwaartekracht afgetrokken. Beide krachten werken omlaag en versterken elkaar.",
+         "Koos je 5,0 N? Dat is alleen de trekkracht van het kind. De veer draagt ook nog de zwaartekracht op de lamp.",
+         "Koos je 20 N? Dat is ongeveer alleen de zwaartekracht. De extra trekkracht omlaag komt daar nog bij, dus de veer moet harder trekken."
+        ],
+        "uh": "Alle krachten omlaag optellen."
+       },
+       {
+        "v": "Hoe groot moet de remkracht van de fiets worden om met constante snelheid de helling af te rijden?",
+        "o": [
+         "0 N, constante snelheid vraagt geen kracht",
+         "64 N",
+         "90 N",
+         "26 N"
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 1,
+        "u": "Evenwicht langs de helling: 90 − 64 = 26 N.",
+        "uo": [
+         "Koos je 0 N? Constante snelheid betekent Fres = 0, niet \"geen krachten\". Zonder remmen is er 26 N over en versnelt de fiets.",
+         "Koos je 64 N? Dat is de weerstand die er al is. Die is kleiner dan de 90 N die de fiets omlaag trekt, dus de rem moet het verschil bijleggen.",
+         "Koos je 90 N? Dan vergeet je dat wrijving en luchtweerstand al 64 N tegenwerken. De rem hoeft alleen het verschil te leveren.",
+         "Klopt: langs de helling werkt 90 N omlaag (component van de zwaartekracht) en 64 N aan wrijving en luchtweerstand omhoog. Voor Fres = 0 moet de rem de rest leveren: 90 − 64 = 26 N omhoog langs de helling."
+        ],
+        "uh": "Fres = 0 langs de helling.",
+        "ctx": "Een fietser rijdt een lange afdaling af. De component van de zwaartekracht langs de helling is 90 N. Rolwrijving en luchtweerstand samen zijn bij zijn snelheid 64 N. Hij wil met dezelfde snelheid naar beneden blijven rijden en knijpt daarom een beetje in zijn remmen."
+       },
+       {
+        "v": "Twee krachten staan loodrecht op elkaar. Welke regel gebruik je om de resulterende kracht te berekenen?",
+        "o": [
+         "de grootste min de kleinste",
+         "de krachten gewoon optellen",
+         "de stelling van Pythagoras",
+         "de krachten met elkaar vermenigvuldigen"
+        ],
+        "c": 2,
+        "d": 1,
+        "s": 2,
+        "u": "Loodrecht: Fres = √(F1² + F2²).",
+        "uo": [
+         "Koos je de grootste min de kleinste? Dat geldt bij tegengestelde krachten. Loodrechte krachten werken deels samen, dus de resultante is groter dan het verschil.",
+         "Koos je optellen? Dat mag alleen als de krachten dezelfde kant op werken. Bij een hoek van 90° is de resultante kleiner dan de som.",
+         "Klopt: twee loodrechte krachten vormen met de resultante een rechthoekige driehoek. De resultante is de schuine zijde: Fres = √(F1² + F2²).",
+         "Koos je vermenigvuldigen? Dan krijg je N² als eenheid, en dat is geen kracht. Bij loodrechte krachten kwadrateer je, tel je op en trek je de wortel."
+        ],
+        "uh": "Pythagoras."
+       },
+       {
+        "v": "Twee krachten van 6,0 N en 8,0 N werken loodrecht op elkaar. Hoe groot is de resulterende kracht?",
+        "o": [
+         "14 N",
+         "10 N",
+         "2,0 N",
+         "48 N"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 2,
+        "u": "√(36 + 64) = 10 N.",
+        "uo": [
+         "Koos je 14 N? Dat is de som, die alleen geldt bij krachten in dezelfde richting. Loodrecht is de resultante kleiner.",
+         "Klopt: Fres = √(6,0² + 8,0²) = √(36 + 64) = √100 = 10 N. Dat is meer dan elk van de twee, maar minder dan hun som.",
+         "Koos je 2,0 N? Dat is het verschil, voor tegengestelde krachten. Loodrechte krachten heffen elkaar niet op.",
+         "Koos je 48 N? Dan heb je 6,0 en 8,0 vermenigvuldigd. Kwadrateer elk, tel op en neem de wortel."
+        ],
+        "uh": "Fres = √(F1² + F2²)."
+       },
+       {
+        "v": "Onder welke hoek met de 8,0 N-kracht wijst de resultante van 6,0 N en 8,0 N die loodrecht op elkaar staan?",
+        "o": [
+         "37°",
+         "53°",
+         "45°",
+         "90°"
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 2,
+        "u": "tan α = 6,0 / 8,0.",
+        "uo": [
+         "Klopt: de resultante ligt dichter bij de grootste kracht. tan α = 6,0 / 8,0 = 0,75, dus α = 37° met de 8,0 N-kracht.",
+         "Koos je 53°? Dat is de hoek met de 6,0 N-kracht. Ten opzichte van de 8,0 N-kracht is het 90° − 53° = 37°.",
+         "Koos je 45°? Dat geldt alleen als beide krachten even groot zijn. Hier trekt de grotere kracht de resultante naar zich toe.",
+         "Koos je 90°? Dan zou de resultante loodrecht op de 8,0 N-kracht staan, langs de 6,0 N-kracht. Beide krachten tellen mee, dus de hoek ligt ertussen."
+        ],
+        "uh": "tan α = overstaand / aanliggend."
+       },
+       {
+        "v": "Met welke kracht moet de drone trekken om het pakketje stil in de wind te laten hangen?",
+        "o": [
+         "5 N",
+         "35 N",
+         "20 N",
+         "25 N"
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 2,
+        "u": "Evenwicht: drone heft de resultante van Fz en wind op.",
+        "uo": [
+         "Koos je 5 N? Dat is het verschil tussen 20 en 15. Loodrechte krachten heffen elkaar niet op; je hebt Pythagoras nodig.",
+         "Koos je 35 N? Dat is 20 + 15, de som. Zwaartekracht en wind staan loodrecht op elkaar, dus gebruik Pythagoras.",
+         "Koos je 20 N? Dat is alleen de zwaartekracht. De drone moet ook de wind compenseren, dus hij trekt harder en schuin.",
+         "Klopt: op het pakketje werken Fz = 2,0 × 9,81 = 19,6 ≈ 20 N omlaag en 15 N wind opzij. Die staan loodrecht: √(20² + 15²) = 25 N. De drone moet even groot en tegengesteld trekken."
+        ],
+        "uh": "Pythagoras met Fz en wind.",
+        "ctx": "Een bezorgdrone laat een pakketje van 2,0 kg aan een kabel stil boven een tuin hangen. Er staat een zijwind die horizontaal met 15 N tegen het pakketje duwt. De kabel staat daardoor schuin. De drone hangt op zijn plek en het pakketje beweegt niet."
+       },
+       {
+        "v": "Hoe groot is de resulterende kracht van de twee sleepboten op het schip?",
+        "o": [
+         "14 kN",
+         "100 kN",
+         "72 kN",
+         "5,0 kN"
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 2,
+        "u": "√(60² + 40²) = 72 kN.",
+        "uo": [
+         "Koos je 14 kN? Dan heb je √(60 + 40) genomen zonder te kwadrateren. Kwadrateer eerst elke kracht.",
+         "Koos je 100 kN? Dat is de som. Die krijg je alleen als beide boten in dezelfde richting trekken.",
+         "Klopt: de sleepboten trekken loodrecht op elkaar. Fres = √(60² + 40²) = √(3600 + 1600) = √5200 = 72 kN, schuin tussen de twee kabels in.",
+         "Koos je 5,0 kN? Dan heb je iets met het verschil gedaan. Loodrechte krachten heffen elkaar niet op; de resultante is groter dan elk van de twee."
+        ],
+        "uh": "Loodrecht: Pythagoras.",
+        "ctx": "Een groot containerschip wordt in de haven van Rotterdam gedraaid door twee sleepboten. De ene trekt met 60 kN naar het noorden, de andere met 40 kN naar het oosten. De kabels zitten aan dezelfde boeg vast. De loods wil weten hoe groot de totale kracht op de boeg is."
+       },
+       {
+        "v": "Wat is de parallellogrammethode?",
+        "o": [
+         "een manier om de massa van een voorwerp te bepalen",
+         "een tekenmethode voor twee krachten onder een hoek",
+         "een formule voor het optellen van krachten in dezelfde richting",
+         "een methode om wrijving te meten"
+        ],
+        "c": 1,
+        "d": 1,
+        "s": 3,
+        "u": "Tekenen: de diagonaal is de resultante.",
+        "uo": [
+         "Koos je massa bepalen? De methode gaat over krachten, niet over massa. Je vindt er de grootte en richting van de resultante mee.",
+         "Klopt: je tekent de twee krachten vanuit hetzelfde punt op schaal en maakt er een parallellogram van. De diagonaal vanuit het aangrijpingspunt is de resulterende kracht.",
+         "Koos je krachten in dezelfde richting? Die tel je gewoon op. De parallellogrammethode heb je juist nodig bij krachten onder een hoek.",
+         "Koos je wrijving meten? Daarvoor gebruik je een krachtmeter. Het parallellogram is een tekenmethode voor het samenstellen van krachten."
+        ],
+        "uh": "Diagonaal = resultante."
+       },
+       {
+        "v": "Twee even grote krachten van 50 N maken een hoek van 120° met elkaar. Hoe groot is de resultante?",
+        "o": [
+         "50 N",
+         "100 N",
+         "87 N",
+         "0 N"
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 3,
+        "u": "Bij 120° tussen gelijke krachten: Fres = F.",
+        "uo": [
+         "Klopt: het parallellogram van twee gelijke krachten onder 120° bestaat uit twee gelijkzijdige driehoeken. De diagonaal is dan precies even lang als elke kracht: 50 N.",
+         "Koos je 100 N? Dat krijg je alleen als de krachten dezelfde kant op werken. Hoe groter de hoek, hoe kleiner de resultante.",
+         "Koos je 87 N? Dat hoort bij een hoek van 60° tussen de krachten. Bij 120° werken ze veel meer tegen elkaar in.",
+         "Koos je 0 N? Dat geldt alleen bij 180°, precies tegengesteld. Bij 120° blijft er nog een resultante van 50 N over."
+        ],
+        "uh": "Gelijkzijdige driehoeken."
+       },
+       {
+        "v": "Wat gebeurt er met de resultante van twee krachten als de hoek ertussen groter wordt?",
+        "o": [
+         "de resultante wordt altijd nul",
+         "de resultante wordt groter",
+         "de resultante blijft gelijk",
+         "de resultante wordt kleiner"
         ],
         "c": 3,
         "d": 2,
-        "u": "Zelfde richting: 5 plus 5 is 10 N.",
+        "s": 3,
+        "u": "Grotere hoek: krachten werken meer tegen elkaar in.",
         "uo": [
-         "0 zou bij tegengesteld zijn.",
-         "5 is maar één kracht.",
-         "25 is de vermenigvuldiging.",
-         "Klopt: 5 plus 5 is 10 N."
+         "Koos je altijd nul? Nul krijg je alleen bij twee even grote, precies tegengestelde krachten. Bij andere hoeken blijft er iets over.",
+         "Koos je groter? Het is andersom: de grootste resultante krijg je bij 0°, als de krachten precies samenwerken.",
+         "Koos je gelijk? De richting van de krachten telt mee. Verander je de hoek, dan verandert de lengte van de diagonaal.",
+         "Klopt: bij 0° tel je ze op, bij 180° trek je ze af. Hoe groter de hoek, hoe meer de krachten elkaar tegenwerken en hoe kleiner de diagonaal van het parallellogram."
         ],
-        "uh": "Zelfde richting: optellen."
+        "uh": "Grote hoek, kleine resultante."
        },
        {
-        "v": "Wat is de resulterende kracht?",
+        "v": "Waarom breekt de waslijn sneller als je hem heel strak spant?",
         "o": [
-         "De ene kracht die alle krachten samen vervangt",
-         "De kleinste kracht",
-         "De massa maal g van het voorwerp in deze situatie hier",
-         "De snelheid maal de tijd"
+         "de zwaartekracht op de was wordt groter bij een strakke lijn",
+         "een strakke lijn heeft minder massa per meter en is daardoor veel zwakker",
+         "de touwdelen staan dan bijna horizontaal en moeten veel harder trekken",
+         "een strakke lijn kan geen spankracht leveren"
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 3,
+        "u": "Kleine hoek met horizontaal: grote spankracht.",
+        "uo": [
+         "Koos je grotere zwaartekracht? De zwaartekracht hangt alleen af van de massa van de was en g. Die verandert niet door het touw strakker te spannen.",
+         "Koos je minder massa? Strak of slap, het touw is hetzelfde. Het verschil zit in de hoek waaronder de touwdelen trekken.",
+         "Klopt: de twee touwdelen moeten samen de zwaartekracht omhoog opvangen. Staan ze bijna horizontaal, dan levert elk touw maar een klein verticaal deel; de spankracht moet dan veel groter zijn dan het gewicht van de was.",
+         "Koos je geen spankracht? Een strak touw levert juist een heel grote spankracht. Dat is precies waarom het kan breken."
+        ],
+        "uh": "Platte hoek = grote spankracht.",
+        "ctx": "Een gezin hangt een natte deken van 6,0 kg midden op een waslijn tussen twee palen. Vader spant de lijn zo strak mogelijk, zodat de deken bijna niet doorzakt. De lijn knapt. Bij de buren, waar de lijn flink doorhangt met dezelfde deken, gebeurt niets."
+       },
+       {
+        "v": "Hoe groot is de spankracht in elk van de twee touwdelen van de lamp?",
+        "o": [
+         "15 N",
+         "17 N",
+         "30 N",
+         "60 N"
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 3,
+        "u": "2 · F · cos 30° = 30 N.",
+        "uo": [
+         "Koos je 15 N? Dat klopt alleen als beide touwen recht omhoog hangen. Omdat ze schuin staan, moet elk touw iets harder trekken.",
+         "Klopt: elk touwdeel maakt 30° met de verticaal. Samen moeten de verticale delen 30 N leveren: 2 · F · cos 30° = 30, dus F = 30 / (2 × 0,866) = 17 N.",
+         "Koos je 30 N? Dan draagt elk touw de hele lamp. Twee touwen delen de last, dus elk touw trekt minder dan 30 N.",
+         "Koos je 60 N? Dan heb je met twee vermenigvuldigd. Bij een hoek van 60° tussen de touwen is de spankracht maar iets meer dan de helft van het gewicht."
+        ],
+        "uh": "Verticale componenten samen = Fz.",
+        "ctx": "Een hanglamp met een zwaartekracht van 30 N hangt aan twee even lange touwen die aan het plafond vastzitten. De touwen maken een hoek van 60° met elkaar, symmetrisch rond de verticaal. De lamp hangt stil. Een elektricien wil weten hoe sterk de touwen moeten zijn."
+       },
+       {
+        "v": "Wat bedoel je met het ontbinden van een kracht?",
+        "o": [
+         "één kracht vervangen door twee krachten met samen hetzelfde effect",
+         "twee of meer krachten vervangen door één enkele resulterende kracht",
+         "een kracht wegnemen uit een tekening",
+         "een kracht omrekenen naar kilogram"
         ],
         "c": 0,
         "d": 1,
-        "u": "De resulterende kracht is de enkele kracht die het effect van alle krachten samen weergeeft.",
+        "s": 4,
+        "u": "Ontbinden = splitsen in componenten.",
         "uo": [
-         "Klopt: de kracht die alle krachten vervangt.",
-         "Het is niet de kleinste kracht.",
-         "Dat is de zwaartekracht.",
-         "Dat is een afstand."
+         "Klopt: bij ontbinden splits je één kracht in twee componenten, meestal loodrecht op elkaar. Samen hebben die precies hetzelfde effect als de oorspronkelijke kracht.",
+         "Koos je twee krachten naar één? Dat is samenstellen, het omgekeerde van ontbinden.",
+         "Koos je een kracht wegnemen? Bij ontbinden verdwijnt er niets. Je tekent de oorspronkelijke kracht als twee delen die samen hetzelfde doen.",
+         "Koos je omrekenen naar kilogram? Kracht en massa zijn verschillende grootheden. Ontbinden gaat over richtingen, niet over eenheden."
         ],
-        "uh": "Resulterende kracht = alle krachten samen als één."
+        "uh": "Splitsen in componenten."
        },
        {
-        "v": "Op een steilere helling wordt de component langs de helling:",
+        "v": "Een kracht van 100 N trekt schuin onder 30° met de grond. Hoe groot is de horizontale component?",
         "o": [
-         "Kleiner",
-         "Groter",
-         "Nul",
-         "Precies de zwaartekracht"
+         "58 N",
+         "50 N",
+         "100 N",
+         "87 N"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 4,
+        "u": "Fx = F · cos 30°.",
+        "uo": [
+         "Koos je 58 N? Dan heb je 100 × tan 30° genomen. Voor een component gebruik je sinus of cosinus, niet de tangens.",
+         "Koos je 50 N? Dat is de verticale component, F · sin 30°. De horizontale component hoort bij de cosinus van de hoek met de grond.",
+         "Koos je 100 N? Dan neem je de hele kracht als horizontaal. Omdat de kracht schuin staat, is de horizontale component kleiner.",
+         "Klopt: de horizontale component ligt aan de hoek van 30°, dus Fx = F · cos 30° = 100 × 0,866 = 87 N. De verticale component is 100 × sin 30° = 50 N."
+        ],
+        "uh": "Aanliggend: cosinus."
+       },
+       {
+        "v": "Waarom is het slimmer om de slee schuin omhoog te trekken dan horizontaal, bij dezelfde trekkracht?",
+        "o": [
+         "de zwaartekracht op de slee wordt kleiner",
+         "de horizontale component wordt bij schuin trekken juist groter dan de trekkracht",
+         "de verticale component maakt de normaalkracht en dus de wrijving kleiner",
+         "schuin trekken levert een extra kracht op"
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 4,
+        "u": "Verticale component tilt een beetje: minder Fn, minder wrijving.",
+        "uo": [
+         "Koos je kleinere zwaartekracht? De zwaartekracht blijft m · g. Wel duwt de sneeuw minder hard terug, omdat je een deel van het gewicht optilt.",
+         "Koos je dat de horizontale component groter wordt? Die wordt juist iets kleiner, F · cos α. Het voordeel komt van de kleinere wrijving.",
+         "Klopt: een deel van de trekkracht wijst omhoog en tilt de slee een beetje. Daardoor drukt de slee minder hard op de sneeuw, is de normaalkracht kleiner en dus ook de wrijving.",
+         "Koos je een extra kracht? Er komt geen kracht bij. Je verdeelt dezelfde trekkracht anders over horizontaal en verticaal."
+        ],
+        "uh": "Minder normaalkracht.",
+        "ctx": "Twee kinderen trekken om beurten een slee met een vriendje erop over vlakke sneeuw. Het ene kind trekt met een kort touw bijna horizontaal, het andere met een lang touw schuin omhoog onder 30°. Ze trekken allebei met dezelfde kracht van 80 N. Het tweede kind krijgt de slee makkelijker in beweging."
+       },
+       {
+        "v": "Hoe groot is de verticale component van de kracht waarmee de kabel aan de skilift-stoeltjes trekt?",
+        "o": [
+         "2,0 kN",
+         "1,7 kN",
+         "3,5 kN",
+         "1,0 kN"
         ],
         "c": 1,
         "d": 3,
-        "u": "Hoe steiler de helling, hoe groter de component van de zwaartekracht langs de helling, dus hoe sterker het glijdt.",
+        "s": 4,
+        "u": "Fy = F · sin 60°.",
         "uo": [
-         "Steiler maakt hem juist groter, niet kleiner.",
-         "Klopt: steiler geeft een grotere component langs de helling.",
-         "Nul zou een vlakke ondergrond zijn.",
-         "Alleen bij een verticale wand is hij gelijk aan Fz."
+         "Koos je 2,0 kN? Dat is de hele kracht in de kabel. Omdat de kabel schuin staat, is het verticale deel kleiner.",
+         "Klopt: de kabel maakt 60° met de horizontaal. De verticale component is F · sin 60° = 2,0 × 0,866 = 1,7 kN; die compenseert de zwaartekracht op stoeltje en skiërs.",
+         "Koos je 3,5 kN? Dan heb je door cos 60° gedeeld of iets dergelijks. Een component is altijd kleiner dan de kracht zelf.",
+         "Koos je 1,0 kN? Dat is F · cos 60°, de horizontale component. De verticale component hoort bij de sinus van de hoek met de horizontaal."
         ],
-        "uh": "Steiler = grotere component langs de helling."
+        "uh": "Overstaand: sinus.",
+        "ctx": "Bij een skilift hangt een stoeltje aan een stang die onder een hoek van 60° met de horizontaal aan de kabel vastzit. Een sensor meet dat de kracht in de stang 2,0 kN is. De technicus wil weten welk deel daarvan de stoel met de skiërs omhoog houdt."
        },
        {
-        "v": "Waarvoor gebruik je de stelling van Pythagoras bij krachten?",
+        "v": "In welke twee richtingen ontbind je de zwaartekracht op een voorwerp op een helling?",
         "o": [
-         "Voor krachten op één lijn",
-         "Voor het meten van massa bij dit voorwerp op de helling",
-         "Voor de resultante van twee loodrechte krachten",
-         "Voor het berekenen van tijd"
-        ],
-        "c": 2,
-        "d": 2,
-        "u": "Bij twee loodrechte krachten vind je de resultante met Pythagoras: wortel van de som van de kwadraten.",
-        "uo": [
-         "Op één lijn tel je gewoon op of af.",
-         "Massa meet je niet zo.",
-         "Klopt: voor loodrechte krachten.",
-         "Tijd bereken je niet zo."
-        ],
-        "uh": "Pythagoras: resultante van loodrechte krachten."
-       },
-       {
-        "v": "Wat is het verschil tussen samenstellen en ontbinden?",
-        "o": [
-         "Ze zijn precies hetzelfde bij dit voorwerp op de helling",
-         "Samenstellen splitst, ontbinden voegt samen",
-         "Beide veranderen de massa",
-         "Samenstellen voegt samen, ontbinden splitst"
-        ],
-        "c": 3,
-        "d": 3,
-        "u": "Samenstellen maakt van meerdere krachten één; ontbinden maakt van één kracht meerdere componenten.",
-        "uo": [
-         "Ze zijn juist elkaars omgekeerde.",
-         "Dit is precies omgedraaid.",
-         "De massa verandert niet.",
-         "Klopt: samenstellen voegt samen, ontbinden splitst."
-        ],
-        "uh": "Samenstellen voegt samen, ontbinden splitst."
-       },
-       {
-        "v": "Drie krachten op een voorwerp geven samen resultante nul. Wat geldt er?",
-        "o": [
-         "Het voorwerp is in evenwicht",
-         "Het voorwerp versnelt sterk",
-         "De massa is nul van het voorwerp",
-         "Er werkt geen zwaartekracht"
+         "langs de helling en loodrecht op de helling",
+         "horizontaal en verticaal",
+         "naar links en naar rechts",
+         "langs de helling en recht omlaag naar het midden van de aarde"
         ],
         "c": 0,
-        "d": 3,
-        "u": "Als alle krachten samen nul opleveren, is het voorwerp in evenwicht.",
+        "d": 1,
+        "s": 5,
+        "u": "Langs en loodrecht op de helling.",
         "uo": [
-         "Klopt: resultante nul betekent evenwicht.",
-         "Zonder resultante versnelt het niet.",
-         "De massa staat hier los van.",
-         "De zwaartekracht kan gewoon werken, maar wordt opgeheven."
+         "Klopt: bij een helling kies je de assen langs het vlak en loodrecht erop. De component langs de helling trekt het voorwerp omlaag, de component loodrecht wordt opgevangen door de normaalkracht.",
+         "Koos je horizontaal en verticaal? De zwaartekracht is al verticaal, dus dat levert niets op. Op een helling werk je handiger met assen langs en loodrecht op het vlak.",
+         "Koos je links en rechts? Dat zijn geen richtingen die bij de helling horen. De belangrijke richtingen zijn langs het vlak en loodrecht erop.",
+         "Koos je langs de helling en recht omlaag? Die staan niet loodrecht op elkaar. Componenten kies je loodrecht, zodat je met sinus en cosinus kunt rekenen."
         ],
-        "uh": "Resultante nul = evenwicht."
+        "uh": "Langs en loodrecht."
        },
        {
-        "v": "Hoe teken je de resultante in een parallellogram?",
+        "v": "Een blok van 10 kg ligt op een helling van 30°. Hoe groot is de zwaartekrachtcomponent langs de helling?",
         "o": [
-         "Als een van de twee zijden",
-         "Als de diagonaal vanuit het gezamenlijke beginpunt",
-         "Als een cirkel van het voorwerp in deze situatie hier",
-         "Als een horizontale lijn"
+         "57 N",
+         "85 N",
+         "98 N",
+         "49 N"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 5,
+        "u": "F// = m · g · sin 30°.",
+        "uo": [
+         "Koos je 57 N? Dan heb je met tan 30° gerekend. Voor de component langs de helling gebruik je sin α.",
+         "Koos je 85 N? Dat is de component loodrecht op de helling, Fz · cos 30°. Langs de helling hoort de sinus van de hellingshoek.",
+         "Koos je 98 N? Dat is de hele zwaartekracht. Op een helling werkt maar een deel daarvan langs het vlak.",
+         "Klopt: Fz = 10 × 9,81 = 98 N. Langs de helling werkt Fz · sin 30° = 98 × 0,50 = 49 N. Loodrecht op de helling is het Fz · cos 30° = 85 N."
+        ],
+        "uh": "Langs helling: sinus."
+       },
+       {
+        "v": "Hoe groot is de normaalkracht van de weg op de auto die geparkeerd staat?",
+        "o": [
+         "5,1 kN",
+         "15 kN",
+         "14 kN",
+         "4,9 kN"
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 5,
+        "u": "Fn = Fz · cos 20°.",
+        "uo": [
+         "Koos je 5,1 kN? Dat is de component langs de helling, Fz · sin 20°. Die wordt opgevangen door de handrem, niet door de normaalkracht.",
+         "Koos je 15 kN? Dat is ongeveer de hele zwaartekracht. Op een helling drukt de auto minder hard op de weg, omdat een deel van Fz langs de helling werkt.",
+         "Klopt: Fz = 1500 × 9,81 = 14,7 kN. De normaalkracht compenseert de component loodrecht op de weg: Fn = 14,7 × cos 20° = 13,8 ≈ 14 kN.",
+         "Koos je 4,9 kN? Dan heb je een andere hoek of de verkeerde functie gebruikt. Loodrecht op de helling hoort cos α, en cos 20° is bijna 1."
+        ],
+        "uh": "Loodrecht: cosinus.",
+        "ctx": "In een steile straat in Valkenburg staat een auto van 1500 kg geparkeerd met de handrem erop. De straat maakt een hoek van 20° met de horizontaal. De auto staat stil. Een leerling wil weten met welke kracht de weg de auto loodrecht omhoog duwt en hoeveel de handrem moet tegenhouden."
+       },
+       {
+        "v": "Wat gebeurt er met de kracht langs de helling als de helling steiler wordt?",
+        "o": [
+         "die wordt kleiner, en de normaalkracht groter",
+         "die wordt groter, en de normaalkracht kleiner",
+         "die blijft gelijk, alleen de richting verandert",
+         "die wordt groter, en de normaalkracht ook"
         ],
         "c": 1,
-        "d": 2,
-        "u": "De resultante is de diagonaal van het parallellogram, getekend vanuit het gemeenschappelijke aangrijpingspunt.",
-        "uo": [
-         "Een zijde is een van de oorspronkelijke krachten.",
-         "Klopt: de diagonaal vanuit het beginpunt.",
-         "Een cirkel is geen kracht.",
-         "Niet per se horizontaal."
-        ],
-        "uh": "Resultante = diagonaal vanuit het beginpunt."
-       },
-       {
-        "v": "Een kracht recht omhoog en een kracht recht omlaag zijn even groot. Resultante?",
-        "o": [
-         "Twee keer omhoog",
-         "Twee keer omlaag",
-         "Nul",
-         "Loodrecht opzij"
-        ],
-        "c": 2,
-        "d": 2,
-        "u": "Even grote krachten omhoog en omlaag zijn tegengesteld en heffen elkaar op: resultante nul.",
-        "uo": [
-         "Ze tellen niet op tot omhoog.",
-         "Ze tellen niet op tot omlaag.",
-         "Klopt: ze heffen elkaar op.",
-         "De resultante gaat niet opzij."
-        ],
-        "uh": "Even groot en tegengesteld = nul."
-       },
-       {
-        "v": "Wat gebeurt er met de component loodrecht op de helling als de helling steiler wordt?",
-        "o": [
-         "Die wordt groter",
-         "Die blijft de hele zwaartekracht",
-         "Die wordt oneindig groot",
-         "Die wordt kleiner"
-        ],
-        "c": 3,
         "d": 3,
-        "u": "Hoe steiler de helling, hoe kleiner de loodrechte component wordt (en hoe groter de component langs de helling).",
+        "s": 5,
+        "u": "sin α groeit, cos α krimpt.",
         "uo": [
-         "Hij wordt juist kleiner, niet groter.",
-         "Alleen bij een vlakke ondergrond is hij gelijk aan Fz.",
-         "Hij wordt niet oneindig.",
-         "Klopt: steiler geeft een kleinere loodrechte component."
+         "Koos je kleiner? Het is andersom: op een vlakke weg is de kracht langs het vlak nul, op een verticale wand is hij de hele zwaartekracht.",
+         "Klopt: langs de helling werkt Fz · sin α, loodrecht Fz · cos α. Bij een steilere helling wordt sin α groter en cos α kleiner, dus het voorwerp glijdt makkelijker en drukt minder hard op het vlak.",
+         "Koos je gelijk? De grootte hangt af van de hellingshoek. Een steilere helling trekt harder, dat merk je op de fiets.",
+         "Koos je beide groter? Samen kunnen de componenten niet groeien; ze vormen altijd de zwaartekracht. Als de ene groter wordt, wordt de andere kleiner."
         ],
-        "uh": "Steiler = kleinere loodrechte component."
-       },
-       {
-        "v": "Waarom vervang je meerdere krachten door één resulterende kracht?",
-        "o": [
-         "Om het effect van alle krachten in één keer te bekijken",
-         "Om de massa te verhogen van het voorwerp in deze situatie hier",
-         "Om de tijd te verkorten",
-         "Om de temperatuur te meten"
-        ],
-        "c": 0,
-        "d": 2,
-        "u": "Met de resulterende kracht kun je in één keer zien of en hoe een voorwerp versnelt.",
-        "uo": [
-         "Klopt: het totale effect in één kracht.",
-         "De massa verandert niet.",
-         "Tijd verandert niet.",
-         "Temperatuur hoort hier niet bij."
-        ],
-        "uh": "Resulterende kracht toont het totale effect."
+        "uh": "Steiler: meer langs, minder loodrecht.",
+        "ctx": "Een skateboarder staat stil bovenaan verschillende schansen in een skatepark. De eerste schans is 10° steil, de tweede 25° en de derde 40°. Zijn massa is steeds dezelfde. Hij merkt dat hij op de steilste schans het hardst moet remmen om niet weg te rollen."
        }
       ],
       "oe": [
        {
-        "vraag": "Leg uit hoe je twee krachten samenstelt die op één lijn liggen.",
-        "antwoord": "Als twee krachten op één lijn liggen, kijk je naar hun richting. Wijzen ze dezelfde kant op, dan tel je hun grootten op. Wijzen ze tegengesteld, dan trek je de kleinste van de grootste af. De resulterende kracht wijst in de richting van de grootste kracht."
+        "bron": "Examenstijl",
+        "ctx": "Een veerpont steekt het IJ over, dat 400 m breed is. De pont vaart ten opzichte van het water met 3,0 m/s loodrecht op de oever. Het water stroomt met 1,0 m/s. De kapitein merkt dat hij zonder bijsturen een stuk stroomafwaarts aankomt.",
+        "v": "Bereken de snelheid van de pont ten opzichte van de oever en hoe ver stroomafwaarts hij aankomt.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "v = √(3,0² + 1,0²) = 3,2 m/s (1p). Oversteektijd t = 400 / 3,0 = 133 s (1p). Afdrijven: 1,0 × 133 = 133 m stroomafwaarts (1p)."
        },
        {
-        "vraag": "Twee krachten van 6 N en 8 N staan loodrecht op elkaar. Bereken de resulterende kracht.",
-        "antwoord": "Bij loodrechte krachten gebruik je de stelling van Pythagoras. De resultante is de wortel van 6 kwadraat plus 8 kwadraat, dus de wortel van 36 plus 64 is de wortel van 100, wat 10 N is."
+        "bron": "Examenstijl",
+        "ctx": "Een verlichtingsbord van 12 kg hangt boven een straat aan twee kabels die elk 15° met de horizontaal maken. De kabels zitten aan twee gevels vast. De gemeente wil de kabels vervangen door kabels die maximaal 150 N mogen dragen.",
+        "v": "Bereken de spankracht in elke kabel en leg uit of de nieuwe kabels geschikt zijn.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Fz = 12 × 9,81 = 118 N (1p). Verticaal evenwicht: 2 · F · sin 15° = 118, dus F = 118 / (2 × 0,259) = 228 N (1p). Dat is meer dan 150 N, dus de nieuwe kabels zijn niet geschikt, tenzij ze steiler hangen (1p)."
        },
        {
-        "vraag": "Leg uit hoe je met de parallellogrammethode de resulterende kracht van twee krachten onder een hoek vindt.",
-        "antwoord": "Je tekent de twee krachten vanuit hetzelfde beginpunt, elk met hun eigen grootte en richting. Daarna maak je het parallellogram af door bij elke pijl een evenwijdige lijn te tekenen. De diagonaal van het parallellogram, vanuit het beginpunt, is de resulterende kracht."
+        "bron": "Examenstijl",
+        "ctx": "Een leerling trekt een koffer van 18 kg met een handvat dat een hoek van 40° met de vloer maakt. Hij trekt met 60 N. De koffer rolt met constante snelheid over de vloer van het station.",
+        "v": "Bereken de horizontale en verticale component van de trekkracht, en de normaalkracht van de vloer op de koffer.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Fx = 60 × cos 40° = 46 N; Fy = 60 × sin 40° = 39 N (1p). Fz = 18 × 9,81 = 177 N (1p). Verticaal evenwicht: Fn = Fz − Fy = 177 − 39 = 138 N (1p)."
        },
        {
-        "vraag": "Leg uit in welke twee componenten je de zwaartekracht ontbindt bij een voorwerp op een helling en wat elke component doet.",
-        "antwoord": "Je ontbindt de zwaartekracht in een component langs de helling en een component loodrecht op de helling. De component langs de helling trekt het voorwerp naar beneden langs het vlak en laat het glijden. De component loodrecht op de helling drukt het voorwerp tegen het oppervlak."
+        "bron": "Examenstijl",
+        "ctx": "Een skiër van 70 kg staat stil op een helling van 25°. Volgens zijn skileraar kunnen zijn ski's op deze sneeuw een wrijvingskracht van maximaal 300 N leveren. Daarna wil hij een steilere helling van 35° op.",
+        "v": "Bereken de component van de zwaartekracht langs de helling van 25° en van 35°, en leg uit of hij op beide hellingen kan blijven stilstaan.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Fz = 70 × 9,81 = 687 N. Langs 25°: 687 × sin 25° = 290 N (1p). Langs 35°: 687 × sin 35° = 394 N (1p). Op 25° is 290 N kleiner dan 300 N, dus hij blijft staan; op 35° is 394 N meer dan 300 N, dus hij glijdt weg (1p). (Op de steilere helling is de normaalkracht en dus ook de maximale wrijving bovendien iets kleiner.)"
        },
        {
-        "vraag": "Leg uit waarom een voorwerp op een steilere helling sneller gaat glijden.",
-        "antwoord": "Als de helling steiler wordt, wordt de component van de zwaartekracht langs de helling groter. Deze component trekt het voorwerp naar beneden langs het vlak. Hoe groter die component, hoe sterker het voorwerp naar beneden wordt getrokken en hoe sneller het gaat glijden. Tegelijk wordt de loodrechte component juist kleiner."
+        "bron": "Examenstijl",
+        "ctx": "Bij een practicum trekken twee krachtmeters aan een ring: de ene met 4,0 N naar rechts, de andere met 3,0 N schuin omhoog onder een hoek van 90° met de eerste. Een derde krachtmeter houdt de ring op zijn plek. De leerlingen moeten voorspellen wat de derde krachtmeter aanwijst en in welke richting hij trekt.",
+        "v": "Bereken de grootte van de kracht van de derde krachtmeter en beschrijf zijn richting.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Resultante van de eerste twee: √(4,0² + 3,0²) = 5,0 N (1p), onder tan α = 3,0 / 4,0, dus 37° boven de 4,0 N-kracht (1p). De derde krachtmeter trekt met 5,0 N precies de andere kant op: 37° onder de horizontaal naar links, zodat Fres = 0 (1p)."
        }
       ]
      },

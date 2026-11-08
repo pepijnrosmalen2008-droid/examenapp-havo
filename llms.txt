@@ -5,7 +5,7 @@
 Volledige beschrijving (functies, inhoud per niveau, prijs, wat Slagio niet is): https://slagio.nl/llms-full.txt
 
 ## In het kort
-- 12 vakken havo, 16 vakken vwo, 12 vakken vmbo; 26.457 oefenvragen en 4.346 begrippen.
+- 12 vakken havo, 16 vakken vwo, 12 vakken vmbo; 26.458 oefenvragen en 4.346 begrippen.
 - Adaptief oefenen: na een fout een vraag over hetzelfde onderwerp, een niveau makkelijker; uitleg bij elk fout antwoord.
 - Foutenboek en herhalen met gespreide herhaling, beheersing per leerdoel, studieplan tot het examen.
 - Examens met klok, proefexamens in examenstijl met modelantwoord en puntenverdeling, archief met officiële oude examens.
@@ -98,7 +98,7 @@ Volledige beschrijving (functies, inhoud per niveau, prijs, wat Slagio niet is):
 - [Dopplereffect (Natuurkunde HAVO)](https://slagio.nl/leren/havo/natuurkunde/dopplereffect.html): Je verklaart met golffronten waarom een naderende bron hoger en een wegrijdende bron lager klinkt, rekent met de dopplerformule, bepaalt een snelheid uit een…
 - [Snelheid en versnelling (Natuurkunde HAVO)](https://slagio.nl/leren/havo/natuurkunde/snelheid-en-versnelling.html): Je rekent met snelheid (v = s / t) en versnelling (a = Δv / Δt), onderscheidt gemiddelde en momentane snelheid, eenparige en eenparig versnelde bewegingen,…
 - [Krachten herkennen (Natuurkunde HAVO)](https://slagio.nl/leren/havo/natuurkunde/krachten-herkennen.html): Je tekent een kracht als vector met grootte, richting en aangrijpingspunt, rekent de zwaartekracht uit met Fz = m · g, onderscheidt massa en gewicht, herkent…
-- [Krachten samenstellen en ontbinden (Natuurkunde HAVO)](https://slagio.nl/leren/havo/natuurkunde/krachten-samenstellen-en-ontbinden.html): Krachten die op één lijn, loodrecht of onder een willekeurige hoek staan samenstellen tot een resulterende kracht, en een kracht ontbinden in componenten.
+- [Krachten samenstellen en ontbinden (Natuurkunde HAVO)](https://slagio.nl/leren/havo/natuurkunde/krachten-samenstellen-en-ontbinden.html): Je stelt krachten samen tot een resulterende kracht: op één lijn door optellen en aftrekken, loodrecht met de stelling van Pythagoras en onder een…
 - [De wetten van Newton (Natuurkunde HAVO)](https://slagio.nl/leren/havo/natuurkunde/de-wetten-van-newton.html): De drie wetten van Newton toepassen, inclusief traagheid (eerste wet), F = m maal a (tweede wet) en actie = reactie (derde wet), met de nadruk dat actie en…
 - [Arbeid, energie en vermogen (Natuurkunde HAVO)](https://slagio.nl/leren/havo/natuurkunde/arbeid-energie-en-vermogen.html): Arbeid, energie en vermogen berekenen, werken met de wet van behoud van energie, en het verschil tussen arbeid en vermogen.
 - [Warmtetransport (Natuurkunde HAVO)](https://slagio.nl/leren/havo/natuurkunde/warmtetransport.html): De drie vormen van warmtetransport (geleiding, stroming en straling) onderscheiden en herkennen, en weten hoe isolatie werkt.
