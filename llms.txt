@@ -5,7 +5,7 @@
 Volledige beschrijving (functies, inhoud per niveau, prijs, wat Slagio niet is): https://slagio.nl/llms-full.txt
 
 ## In het kort
-- 12 vakken havo, 16 vakken vwo, 12 vakken vmbo; 26.030 oefenvragen en 4.346 begrippen.
+- 12 vakken havo, 16 vakken vwo, 12 vakken vmbo; 26.058 oefenvragen en 4.346 begrippen.
 - Adaptief oefenen: na een fout een vraag over hetzelfde onderwerp, een niveau makkelijker; uitleg bij elk fout antwoord.
 - Foutenboek en herhalen met gespreide herhaling, beheersing per leerdoel, studieplan tot het examen.
 - Examens met klok, proefexamens in examenstijl met modelantwoord en puntenverdeling, archief met officiële oude examens.
@@ -86,6 +86,7 @@ Volledige beschrijving (functies, inhoud per niveau, prijs, wat Slagio niet is):
 - [Duurzaamheid en groene chemie (Scheikunde HAVO)](https://slagio.nl/leren/havo/scheikunde/duurzaamheid-en-groene-chemie.html): Je beoordeelt processen met de principes van groene chemie, berekent de atoomeconomie en onderscheidt die van het rendement, legt de grenzen van recycling…
 - [Levenscyclusanalyse (Scheikunde HAVO)](https://slagio.nl/leren/havo/scheikunde/levenscyclusanalyse.html): Je beoordeelt met een levenscyclusanalyse de milieubelasting van een product over alle fasen, kiest een functionele eenheid, werkt met CO₂-equivalent en…
 - [Chemie in voeding en energie (Scheikunde HAVO)](https://slagio.nl/leren/havo/scheikunde/chemie-in-voeding-en-energie.html): Je beschrijft de bouw van koolhydraten, vetten en eiwitten, rekent de energie van voedsel uit met een etiket, legt de werking van additieven en E-nummers en…
+- [Trillingen (Natuurkunde HAVO)](https://slagio.nl/leren/havo/natuurkunde/trillingen.html): Je beschrijft een trilling met uitwijking, amplitude, trillingstijd en frequentie, leest een (u,t)-diagram af en rekent de trillingstijd uit van een…
 - [Snelheid en versnelling (Natuurkunde HAVO)](https://slagio.nl/leren/havo/natuurkunde/snelheid-en-versnelling.html): Snelheid en versnelling berekenen en het verschil ertussen begrijpen, inclusief de vrije val met valversnelling g.
 - [Krachten herkennen (Natuurkunde HAVO)](https://slagio.nl/leren/havo/natuurkunde/krachten-herkennen.html): De zwaartekracht, normaalkracht, wrijvingskracht en spankracht herkennen en tekenen, de resulterende kracht bepalen, en het verschil tussen gewicht (kracht)…
 - [Krachten samenstellen en ontbinden (Natuurkunde HAVO)](https://slagio.nl/leren/havo/natuurkunde/krachten-samenstellen-en-ontbinden.html): Krachten die op één lijn, loodrecht of onder een willekeurige hoek staan samenstellen tot een resulterende kracht, en een kracht ontbinden in componenten.

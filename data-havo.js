@@ -87206,6 +87206,697 @@ var VAKKEN = [
       "t": "Boventonen",
       "d": "meer knopen en buiken en een kleinere golflengte (hogere frequentie)."
      }
+    ],
+    "leerdoelen": [
+     {
+      "id": "B1",
+      "lo": "na.B.1",
+      "gs": 2,
+      "naam": "Trillingen",
+      "beschrijving": "Je beschrijft een trilling met uitwijking, amplitude, trillingstijd en frequentie, leest een (u,t)-diagram af en rekent de trillingstijd uit van een massa-veersysteem en een slinger. Je legt uit wat demping is en waar je die tegenkomt.",
+      "ceStatus": "CE",
+      "binas": "35",
+      "val": "",
+      "onderwerpen": [
+       "Evenwichtsstand, uitwijking en amplitude",
+       "Trillingstijd en frequentie",
+       "Het (u,t)-diagram lezen",
+       "Massa-veersysteem",
+       "De slinger",
+       "Demping en toepassingen"
+      ],
+      "sam": "Een trilling is een herhaalde beweging om een evenwichtsstand. De uitwijking u verandert steeds; de amplitude A is de grootste uitwijking. Trillingstijd T is de tijd van één trilling, frequentie f = 1/T in Hz. In een (u,t)-diagram is A de hoogte van een top en T de tijd van top tot top. Massa-veersysteem: T = 2π√(m/C). Slinger: T = 2π√(l/g), de massa doet niet mee. Demping maakt de amplitude kleiner, de trillingstijd blijft gelijk.",
+      "begrippen": [
+       {
+        "t": "Trilling",
+        "d": "Beweging die zich steeds herhaalt rond een evenwichtsstand."
+       },
+       {
+        "t": "Evenwichtsstand",
+        "d": "Stand waarin een voorwerp in rust blijft hangen of liggen; de trilling gaat hier omheen."
+       },
+       {
+        "t": "Uitwijking",
+        "d": "Afstand tot de evenwichtsstand op een bepaald moment (u), positief of negatief."
+       },
+       {
+        "t": "Amplitude",
+        "d": "Grootste uitwijking (A), gemeten vanaf de evenwichtsstand."
+       },
+       {
+        "t": "Trillingstijd",
+        "d": "Tijd die één volledige trilling duurt (T), in seconden."
+       },
+       {
+        "t": "Frequentie",
+        "d": "Aantal trillingen per seconde (f), in hertz; f = 1/T."
+       },
+       {
+        "t": "Harmonische trilling",
+        "d": "Trilling waarvan het (u,t)-diagram de vorm van een sinus heeft."
+       },
+       {
+        "t": "Veerconstante",
+        "d": "Maat voor de stugheid van een veer (C), in N/m: de kracht per meter uitrekking."
+       },
+       {
+        "t": "Massa-veersysteem",
+        "d": "Blok aan een veer; trillingstijd T = 2π√(m/C)."
+       },
+       {
+        "t": "Slinger",
+        "d": "Gewichtje aan een touw dat heen en weer zwaait; T = 2π√(l/g), onafhankelijk van de massa."
+       },
+       {
+        "t": "Demping",
+        "d": "Afname van de amplitude doordat er bij elke trilling energie verloren gaat door wrijving."
+       }
+      ],
+      "sv": [
+       {
+        "v": "Wat is de amplitude van een trilling?",
+        "o": [
+         "De tijd van één trilling",
+         "De uitwijking op elk moment",
+         "De grootste uitwijking",
+         "Het aantal trillingen per seconde"
+        ],
+        "c": 2,
+        "d": 1,
+        "s": 0,
+        "u": "Amplitude A = maximale uitwijking vanuit de evenwichtsstand.",
+        "uo": [
+         "Koos je de tijd van één trilling? Dat is de trillingstijd T, gemeten in seconden. De amplitude is een afstand.",
+         "Koos je de uitwijking op elk moment? Dat is de uitwijking u, die steeds verandert. De amplitude is de grootste waarde daarvan.",
+         "Klopt: de amplitude is de grootste afstand tot de evenwichtsstand die het voorwerp bereikt. Die blijft bij een ongedempte trilling steeds gelijk.",
+         "Koos je trillingen per seconde? Dat is de frequentie f, in hertz. De amplitude zegt hoe ver het voorwerp uitwijkt."
+        ],
+        "uh": "Amplitude = grootste uitwijking."
+       },
+       {
+        "v": "Een gewichtje gaat tussen 4 cm boven en 4 cm onder de evenwichtsstand. Hoe groot is de amplitude?",
+        "o": [
+         "8,0 cm",
+         "4 cm",
+         "2 cm",
+         "0 cm"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 0,
+        "u": "Amplitude is gemeten vanaf de evenwichtsstand, niet van uiterste tot uiterste.",
+        "uo": [
+         "Koos je 8 cm? Dat is de afstand tussen de twee uiterste standen. De amplitude meet je vanaf het midden, dus de helft.",
+         "Klopt: de amplitude is de afstand van de evenwichtsstand tot een uiterste stand: 4 cm.",
+         "Koos je 2 cm? Dan heb je nog eens gehalveerd. Vanaf de evenwichtsstand tot de uiterste stand is 4 cm.",
+         "Koos je 0 cm? Dat is de uitwijking op het moment dat het gewichtje door de evenwichtsstand gaat. De amplitude is de grootste uitwijking."
+        ],
+        "uh": "Amplitude: vanaf de evenwichtsstand."
+       },
+       {
+        "v": "Welke uitspraak over de beweging van het gewichtje klopt?",
+        "o": [
+         "Snelst in de evenwichtsstand, stil in de uiterste stand",
+         "In de uiterste stand is de snelheid het grootst",
+         "De snelheid is overal even groot",
+         "In de evenwichtsstand staat het gewichtje heel even stil voordat het omkeert"
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 0,
+        "u": "Omkeerpunten: snelheid nul; door de evenwichtsstand: snelst.",
+        "uo": [
+         "Klopt: in de uiterste stand keert het gewichtje om en staat het heel even stil. Door de evenwichtsstand gaat het het snelst, want daar is alle veerenergie omgezet in bewegingsenergie.",
+         "Koos je uiterste stand het snelst? Daar keert het gewichtje juist om. Op dat moment is de snelheid nul.",
+         "Koos je overal even groot? Het gewichtje versnelt naar het midden toe en remt af naar de uitersten. De snelheid verandert steeds.",
+         "Koos je stil in de evenwichtsstand? Daar komt het voorbij met de grootste snelheid. Het staat stil in de uiterste standen."
+        ],
+        "uh": "Snel in het midden, stil in de uitersten.",
+        "ctx": "Een leerling filmt een gewichtje dat aan een veer op en neer trilt. Op de film ziet ze dat het gewichtje in de bovenste en onderste stand heel even lijkt stil te hangen. Midden tussen die standen, in de evenwichtsstand, is het gewichtje op de beelden wazig."
+       },
+       {
+        "v": "Hoe hangen trillingstijd en frequentie samen?",
+        "o": [
+         "f = 1/T²",
+         "f = T",
+         "f = 2T",
+         "f = 1/T"
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 1,
+        "u": "Frequentie = aantal trillingen per seconde = 1 gedeeld door de trillingstijd.",
+        "uo": [
+         "Koos je f = 1/T²? Er is geen kwadraat. Twee keer zo lange trillingstijd geeft twee keer zo weinig trillingen per seconde: f = 1/T.",
+         "Koos je f = T? Dan zou een langzame trilling (grote T) ook een hoge frequentie hebben. Het is juist omgekeerd evenredig.",
+         "Koos je f = 2T? Er zit geen factor 2 in het verband. f en T zijn elkaars omgekeerde.",
+         "Klopt: als één trilling T seconden duurt, passen er in één seconde 1/T trillingen. Dus f = 1/T (Binas 35)."
+        ],
+        "uh": "f = 1/T."
+       },
+       {
+        "v": "Een trilling heeft een trillingstijd van 0,25 s. Wat is de frequentie?",
+        "o": [
+         "25 Hz",
+         "0,25 Hz",
+         "4,0 Hz",
+         "2,5 Hz"
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 1,
+        "u": "f = 1/T = 1/0,25 = 4,0 Hz.",
+        "uo": [
+         "Koos je 25 Hz? Dan is er een komma verschoven. 1 / 0,25 = 4, dus er passen vier trillingen in een seconde.",
+         "Koos je 0,25 Hz? Dat is de trillingstijd in seconden, niet de frequentie. Neem het omgekeerde.",
+         "Klopt: f = 1/T = 1 / 0,25 s = 4,0 Hz. Er passen vier trillingen in één seconde.",
+         "Koos je 2,5 Hz? Reken na: 1 / 0,25 = 4,0, niet 2,5. Vier keer 0,25 s is precies één seconde."
+        ],
+        "uh": "f = 1/T."
+       },
+       {
+        "v": "Welke frequentie hoort bij de schommel?",
+        "o": [
+         "2,4 Hz",
+         "0,42 Hz",
+         "24 Hz",
+         "0,042 Hz"
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 1,
+        "u": "T = 24 s / 10 = 2,4 s; f = 1/2,4 = 0,42 Hz.",
+        "uo": [
+         "Koos je 2,4 Hz? Dat is de trillingstijd in seconden. De frequentie is het omgekeerde: 1/2,4.",
+         "Klopt: tien heen-en-weer-bewegingen duren 24 s, dus één trilling duurt T = 2,4 s. f = 1 / 2,4 = 0,42 Hz.",
+         "Koos je 24 Hz? Dan heb je de totale tijd als frequentie genomen. Deel eerst door 10 voor T, neem dan 1/T.",
+         "Koos je 0,042 Hz? Dan heb je 1/24 genomen, met de tijd van tien trillingen. Deel die eerst door tien: T = 2,4 s, dus f = 0,42 Hz."
+        ],
+        "uh": "Eerst T uit meerdere trillingen, dan f = 1/T.",
+        "ctx": "Een leerling meet de trilling van een schommel. Ze start de stopwatch als de schommel helemaal achteraan is en stopt na tien volledige keren heen en terug. De stopwatch geeft 24,0 s. Ze meet tien trillingen tegelijk omdat één trilling te kort is om nauwkeurig te meten."
+       },
+       {
+        "v": "Waarom meet de leerling tien trillingen en niet één?",
+        "o": [
+         "De reactietijd weegt dan minder zwaar",
+         "Eén trilling bestaat niet",
+         "Bij tien trillingen is de amplitude groter",
+         "Tien trillingen geven een hogere frequentie"
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 1,
+        "u": "Relatieve meetonzekerheid wordt kleiner bij een langere meettijd.",
+        "uo": [
+         "Klopt: de fout door het indrukken van de stopwatch (zo'n 0,2 s) is bij één trilling van 2,4 s groot, maar bij 24 s relatief tien keer kleiner. Door te delen door tien krijg je een nauwkeurigere T.",
+         "Koos je bestaat niet? Eén trilling bestaat wel, maar is moeilijk nauwkeurig met de hand te timen.",
+         "Koos je grotere amplitude? Het aantal getelde trillingen verandert niets aan hoe ver de schommel uitwijkt.",
+         "Koos je hogere frequentie? De frequentie hangt af van de schommel zelf, niet van hoeveel trillingen je telt."
+        ],
+        "uh": "Meer trillingen meten = kleinere relatieve fout.",
+        "ctx": "Bij het meten van de trillingstijd van een schommel start en stopt een leerling een stopwatch met de hand. Haar reactietijd is ongeveer 0,2 s. Eén trilling duurt ongeveer 2,4 s. Ze kiest ervoor om tien trillingen achter elkaar te timen en de tijd daarna door tien te delen."
+       },
+       {
+        "v": "Wat staat er op de assen van een (u,t)-diagram?",
+        "o": [
+         "Frequentie tegen tijd",
+         "Snelheid tegen tijd",
+         "Uitwijking tegen afstand",
+         "Uitwijking tegen tijd"
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 2,
+        "u": "u verticaal, t horizontaal.",
+        "uo": [
+         "Koos je frequentie? De frequentie is bij een trilling meestal constant. Je leest hem af uit het (u,t)-diagram, maar hij staat niet op een as.",
+         "Koos je snelheid? Dat is een (v,t)-diagram. In een (u,t)-diagram staat de uitwijking.",
+         "Koos je afstand? Een grafiek van uitwijking tegen plaats hoort bij een golf, niet bij één trillend voorwerp.",
+         "Klopt: in een (u,t)-diagram staat de uitwijking u verticaal en de tijd t horizontaal. Je ziet hoe de uitwijking in de loop van de tijd verandert."
+        ],
+        "uh": "(u,t): uitwijking tegen tijd."
+       },
+       {
+        "v": "Hoe lees je de trillingstijd af in een (u,t)-diagram?",
+        "o": [
+         "De tijd tussen een top en het volgende dal",
+         "De hoogte van een top",
+         "De tijd tussen twee opeenvolgende toppen",
+         "De tijd tot de eerste nuldoorgang"
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 2,
+        "u": "Eén volledige trilling: van top tot top (of dal tot dal).",
+        "uo": [
+         "Koos je top tot dal? Dat is maar een halve trilling. Van top tot top is een hele. Lees dus altijd van top naar top af.",
+         "Koos je hoogte van een top? Die hoogte is de amplitude, een afstand. De trillingstijd lees je af op de tijdas.",
+         "Klopt: tussen twee opeenvolgende toppen zit precies één volledige trilling. Lees liever meerdere trillingen af en deel door het aantal, dat is nauwkeuriger.",
+         "Koos je eerste nuldoorgang? Vanaf de start tot de eerste nuldoorgang is meestal een kwart of een halve trilling."
+        ],
+        "uh": "T = tijd van top tot top."
+       },
+       {
+        "v": "Welke amplitude en frequentie lees je af in dit diagram?",
+        "o": [
+         "A = 6,0 cm; f = 2,5 Hz",
+         "A = 3,0 cm; f = 2,5 Hz",
+         "A = 3,0 cm; f = 0,40 Hz",
+         "A = 6,0 cm; f = 0,40 Hz"
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 2,
+        "u": "A = 3,0 cm (top tot evenwicht); T = 1,2/3 = 0,40 s; f = 2,5 Hz.",
+        "uo": [
+         "Koos je A = 6,0 cm? Dat is van top tot dal. De amplitude meet je vanaf de evenwichtsstand (u = 0).",
+         "Klopt: de toppen liggen op 3,0 cm, dus A = 3,0 cm. Drie trillingen duren 1,2 s, dus T = 0,40 s en f = 1/0,40 = 2,5 Hz.",
+         "Koos je f = 0,40 Hz? Dat is de trillingstijd in seconden. De frequentie is het omgekeerde: 2,5 Hz.",
+         "Koos je 6,0 cm en 0,40 Hz? Dan heb je twee fouten: de amplitude is de helft van top tot dal, en de frequentie is 1/T."
+        ],
+        "uh": "A vanaf u = 0; f = 1/T.",
+        "ctx": "In een (u,t)-diagram van een trillend gewichtje gaat de grafiek tussen u = +3,0 cm en u = −3,0 cm heen en weer. De grafiek begint bij t = 0 in een top. Bij t = 1,2 s is de grafiek precies voor de derde keer weer in een top na de start."
+       },
+       {
+        "v": "Hoe groot is de uitwijking in een (u,t)-diagram op een moment dat de grafiek door de tijdas gaat?",
+        "o": [
+         "Nul: het voorwerp gaat door de evenwichtsstand",
+         "Gelijk aan de amplitude, want dan is u het grootst",
+         "Negatief en maximaal",
+         "Dat kun je niet aflezen"
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 2,
+        "u": "Snijpunt met de t-as: u = 0.",
+        "uo": [
+         "Klopt: op de tijdas is u = 0. Het voorwerp gaat op dat moment door de evenwichtsstand, met de grootste snelheid.",
+         "Koos je amplitude? De amplitude zit bij de toppen en dalen, het verst van de tijdas af.",
+         "Koos je negatief en maximaal? Dat is een dal, het laagste punt van de grafiek. Op de tijdas zelf is de uitwijking nul.",
+         "Koos je niet af te lezen? De tijdas hoort bij u = 0, dus dat lees je juist heel makkelijk af."
+        ],
+        "uh": "Op de t-as: u = 0."
+       },
+       {
+        "v": "Wat gebeurt er met de trillingstijd van een massa-veersysteem als je de massa vier keer zo groot maakt?",
+        "o": [
+         "Die blijft gelijk",
+         "Die wordt vier keer zo groot",
+         "Die wordt twee keer zo klein als eerst",
+         "Die wordt twee keer zo groot"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 3,
+        "u": "T = 2π√(m/C): T ∝ √m; ×4 onder de wortel geeft ×2.",
+        "uo": [
+         "Koos je gelijk? Bij een slinger hangt T niet af van de massa, maar bij een veer wel.",
+         "Koos je vier keer? Dan vergeet je de wortel. T is evenredig met √m, niet met m. √4 = 2.",
+         "Koos je kleiner? Een zwaarder gewicht trilt juist langzamer: de trillingstijd wordt groter.",
+         "Klopt: volgens T = 2π√(m/C) is T evenredig met de wortel van m. Vier keer zoveel massa geeft √4 = 2 keer zo grote trillingstijd."
+        ],
+        "uh": "T ∝ √m bij een veer."
+       },
+       {
+        "v": "Bereken de trillingstijd van dit massa-veersysteem.",
+        "o": [
+         "2,5 s",
+         "0,13 s",
+         "0,40 s",
+         "0,063 s"
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 3,
+        "u": "T = 2π√(0,20/50) = 2π × 0,063 = 0,40 s.",
+        "uo": [
+         "Koos je 2,5 s? Dat is 1/0,40, de frequentie in hertz. De trillingstijd is 0,40 s. Let op de eenheid: seconde of hertz.",
+         "Koos je 0,13 s? Dan heb je √(m/C) met π vermenigvuldigd in plaats van met 2π, of de wortel verkeerd genomen. Reken: 2π × 0,0632 = 0,397.",
+         "Klopt: T = 2π√(m/C) = 2π√(0,20 / 50) = 2π × 0,0632 = 0,40 s.",
+         "Koos je 0,063 s? Dat is alleen √(m/C). Vermenigvuldig nog met 2π: 2π × 0,063 = 0,40 s."
+        ],
+        "uh": "T = 2π√(m/C) invullen.",
+        "ctx": "Aan een veer met veerconstante C = 50 N/m hangt een blokje van 200 g. Het blokje wordt een stukje omlaag getrokken en losgelaten, waarna het harmonisch op en neer trilt. Gebruik T = 2π√(m/C) uit Binas tabel 35."
+       },
+       {
+        "v": "Waar staat de veerconstante C van een veer voor?",
+        "o": [
+         "Hoe lang de veer is",
+         "De kracht per meter uitrekking",
+         "Hoeveel de veer weegt",
+         "Hoe vaak de veer per seconde trilt"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 3,
+        "u": "C in N/m: stugheid van de veer.",
+        "uo": [
+         "Koos je lengte? De lengte van de veer is iets anders; C gaat over hoe stug hij is. Een korte stugge veer kan een grote C hebben.",
+         "Klopt: de veerconstante zegt hoeveel newton nodig is om de veer één meter uit te rekken. Een stugge veer heeft een grote C en trilt sneller.",
+         "Koos je gewicht? De massa van de veer zelf verwaarloos je meestal. C is een maat voor stugheid.",
+         "Koos je trillingen per seconde? Dat is de frequentie, die van C én de massa afhangt."
+        ],
+        "uh": "C = stugheid (N/m)."
+       },
+       {
+        "v": "Welke veer moet de leerling kiezen om met hetzelfde blokje een twee keer zo kleine trillingstijd te krijgen?",
+        "o": [
+         "Een veer met een vier keer zo grote veerconstante",
+         "Een veer met een twee keer zo grote veerconstante",
+         "Een veer met een vier keer zo kleine veerconstante",
+         "Een twee keer zo lange veer"
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 3,
+        "u": "T ∝ 1/√C: T halveren vraagt C × 4.",
+        "uo": [
+         "Klopt: T = 2π√(m/C), dus T is omgekeerd evenredig met √C. Om T te halveren moet √C verdubbelen, dus C vier keer zo groot.",
+         "Koos je twee keer zo grote C? Dan wordt T maar √2 keer kleiner, niet twee keer. Let op de wortel.",
+         "Koos je kleinere C? Een slappere veer geeft juist een grotere trillingstijd. Je wilt juist een kleinere trillingstijd.",
+         "Koos je langere veer? Een langere veer is meestal juist slapper, met een kleinere C. Dan wordt T groter."
+        ],
+        "uh": "T ∝ 1/√C.",
+        "ctx": "Een leerling heeft een blokje aan een veer dat trilt met een trillingstijd van 0,80 s. Ze wil een trillingstijd van 0,40 s, maar moet hetzelfde blokje blijven gebruiken. Ze heeft verschillende veren tot haar beschikking met andere veerconstanten."
+       },
+       {
+        "v": "Waarvan hangt de trillingstijd van een slinger af (bij kleine uitwijking)?",
+        "o": [
+         "De kleur van het touw",
+         "De massa van het gewicht aan het touw",
+         "De amplitude",
+         "De lengte en de valversnelling"
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 4,
+        "u": "T = 2π√(l/g): onafhankelijk van massa en (kleine) amplitude.",
+        "uo": [
+         "Koos je kleur? Die heeft geen invloed op de beweging. Alleen de lengte en de valversnelling staan in de formule.",
+         "Koos je massa? Een zwaarder gewicht aan dezelfde slinger trilt even snel. De massa staat niet in de formule.",
+         "Koos je amplitude? Bij kleine uitwijkingen maakt de amplitude niet uit; daarom kun je een slinger als klok gebruiken.",
+         "Klopt: voor een slinger geldt T = 2π√(l/g). Alleen de lengte en de valversnelling doen ertoe."
+        ],
+        "uh": "Slinger: T = 2π√(l/g)."
+       },
+       {
+        "v": "Een slinger is 1,00 m lang. Wat is de trillingstijd?",
+        "o": [
+         "6,3 s",
+         "1,0 s",
+         "2,0 s",
+         "0,32 s"
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 4,
+        "u": "T = 2π√(1,00/9,81) = 2,0 s.",
+        "uo": [
+         "Koos je 6,3 s? Dat is 2π zonder de wortel. √(1,00/9,81) = 0,319, en dat moet er nog bij.",
+         "Koos je 1,0 s? Dan ben je de factor 2π of de wortel vergeten. Reken het hele recept uit.",
+         "Klopt: T = 2π√(l/g) = 2π√(1,00 / 9,81) = 2π × 0,319 = 2,0 s.",
+         "Koos je 0,32 s? Dat is alleen √(l/g). Vermenigvuldig nog met 2π: 2π × 0,319 = 2,0 s."
+        ],
+        "uh": "T = 2π√(l/g)."
+       },
+       {
+        "v": "Hoe verandert de trillingstijd van de slinger op de maan?",
+        "o": [
+         "Die wordt ongeveer 6 keer zo groot",
+         "Die wordt ongeveer 2,5 keer zo groot",
+         "Die blijft gelijk",
+         "Die wordt kleiner, want het gewicht is lichter"
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 4,
+        "u": "T ∝ 1/√g: √(9,81/1,62) = 2,46.",
+        "uo": [
+         "Koos je 6 keer? Dan vergeet je de wortel. T is evenredig met 1/√g, dus zes keer kleinere g geeft √6 keer grotere T.",
+         "Klopt: T = 2π√(l/g). Op de maan is g zes keer zo klein, dus T wordt √6 ≈ 2,5 keer zo groot.",
+         "Koos je gelijk? De lengte blijft gelijk, maar g is op de maan veel kleiner. Daardoor verandert T.",
+         "Koos je kleiner? Met minder zwaartekracht trekt niets het gewicht zo hard terug. De slinger gaat juist langzamer."
+        ],
+        "uh": "Kleinere g = grotere T.",
+        "ctx": "Een astronaut neemt een slinger van 1,00 m mee naar de maan. Op aarde is de valversnelling 9,81 m/s², op de maan 1,62 m/s². Hij neemt ook een blokje aan een veer mee en vergelijkt de trillingstijden op de maan met die op aarde."
+       },
+       {
+        "v": "Hoe lang moet een slinger zijn om een trillingstijd van precies 1,00 s te hebben?",
+        "o": [
+         "0,25 m",
+         "1,0 m",
+         "0,50 m",
+         "0,16 m"
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 4,
+        "u": "l = g·T²/(4π²) = 9,81 × 1 / 39,5 = 0,248 m.",
+        "uo": [
+         "Klopt: uit T = 2π√(l/g) volgt l = g·T² / (4π²) = 9,81 × 1,00² / 39,5 = 0,248 m.",
+         "Koos je 1,0 m? Een slinger van 1 m heeft een trillingstijd van 2,0 s. Voor 1,00 s moet hij vier keer zo kort.",
+         "Koos je 0,50 m? Halveren van de lengte maakt T maar √2 keer kleiner. Voor T halveren moet l vier keer zo klein.",
+         "Koos je 0,16 m? Reken de formule na: l = g·T²/(4π²) = 9,81 / 39,5 = 0,248 m. Gebruik T = 1,00 s in het kwadraat."
+        ],
+        "uh": "Formule omwerken naar l.",
+        "ctx": "Een klokkenmaker wil een slinger maken die elke trilling precies één seconde duurt, zodat de klok bij elke volle zwaai één tik geeft. Hij rekent met g = 9,81 m/s² en T = 2π√(l/g)."
+       },
+       {
+        "v": "Hoe herken je een gedempte trilling in een (u,t)-diagram?",
+        "o": [
+         "De toppen worden steeds hoger",
+         "De toppen komen steeds dichter bij elkaar",
+         "De grafiek ligt helemaal boven de tijdas",
+         "De toppen worden steeds lager"
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 5,
+        "u": "Door wrijving gaat energie verloren; amplitude neemt af.",
+        "uo": [
+         "Koos je steeds groter? Dat gebeurt alleen als je energie toevoegt, zoals bij resonantie. Demping maakt de trilling kleiner.",
+         "Koos je hogere frequentie? Bij demping blijft de frequentie ongeveer gelijk. Het is de amplitude die afneemt.",
+         "Koos je zonder evenwichtsstand? Ook een gedempte trilling gaat om een evenwichtsstand heen, en eindigt daar.",
+         "Klopt: door wrijving en luchtweerstand gaat er bij elke trilling wat energie verloren. De amplitude wordt steeds kleiner tot het voorwerp stilstaat."
+        ],
+        "uh": "Demping = amplitude neemt af."
+       },
+       {
+        "v": "Waarom heeft een auto schokdempers?",
+        "o": [
+         "Om de banden harder te maken",
+         "Om de auto zwaarder en stabieler op de weg te maken",
+         "Om de trilling snel te laten uitdoven",
+         "Om de motor stiller te maken"
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 5,
+        "u": "Demping zet trillingsenergie om in warmte.",
+        "uo": [
+         "Koos je harder? De banden zijn een ander onderdeel. Schokdempers werken op de vering.",
+         "Koos je zwaarder? Schokdempers zijn juist zo licht mogelijk. Ze dempen de trilling.",
+         "Klopt: na een hobbel blijft de auto zonder demping lang op zijn veren op en neer gaan. Schokdempers zetten die trillingsenergie om in warmte, zodat de trilling snel uitdooft.",
+         "Koos je stiller? Dat doet de uitlaat. Schokdempers zorgen voor comfort en grip na een hobbel."
+        ],
+        "uh": "Schokdemper = trilling snel uitdoven."
+       },
+       {
+        "v": "Hoe verandert de energie van de trilling als de amplitude halveert?",
+        "o": [
+         "De energie is verdubbeld",
+         "Er is energie verloren gegaan",
+         "De energie is gelijk gebleven",
+         "De frequentie is gehalveerd, net als de amplitude"
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 5,
+        "u": "Kleinere amplitude = minder trillingsenergie; verlies door demping.",
+        "uo": [
+         "Koos je verdubbeld? Een kleinere amplitude hoort bij minder energie, niet meer. Er gaat energie verloren, er komt niets bij.",
+         "Klopt: een kleinere amplitude betekent dat het voorwerp minder hoog komt en minder snel gaat. Er zit minder energie in de trilling; die is door wrijving omgezet in warmte.",
+         "Koos je gelijk? Als de energie gelijk bleef, bleef ook de amplitude gelijk. Een kleinere amplitude betekent minder energie.",
+         "Koos je frequentie gehalveerd? Bij demping blijft de frequentie ongeveer gelijk; alleen de amplitude neemt af."
+        ],
+        "uh": "Amplitude omlaag = energie verloren.",
+        "ctx": "Een leerling laat een gewichtje aan een veer trillen en neemt het (u,t)-diagram op met een sensor. Na tien trillingen is de amplitude van 6,0 cm gedaald naar 3,0 cm. De trillingstijd is in die tijd 0,50 s gebleven."
+       },
+       {
+        "v": "Een hart klopt 72 keer per minuut. Wat is de frequentie?",
+        "o": [
+         "1,2 Hz",
+         "72 Hz",
+         "0,83 Hz",
+         "4320 Hz"
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 1,
+        "u": "72 / 60 s = 1,2 Hz.",
+        "uo": [
+         "Klopt: 72 slagen per 60 seconden is 72 / 60 = 1,2 slagen per seconde, dus 1,2 Hz.",
+         "Koos je 72 Hz? Dan reken je per minuut. Hertz betekent per seconde: deel door 60. 72 / 60 = 1,2.",
+         "Koos je 0,83 Hz? Dat is de tijd tussen twee slagen in seconden (T = 0,83 s). De frequentie is 1,2 Hz.",
+         "Koos je 4320 Hz? Dan heb je met 60 vermenigvuldigd in plaats van gedeeld. Een hart klopt nooit duizenden keren per seconde."
+        ],
+        "uh": "Hertz = per seconde."
+       },
+       {
+        "v": "Wat is het verschil tussen uitwijking en amplitude?",
+        "o": [
+         "De uitwijking meet je in seconden",
+         "Ze betekenen hetzelfde",
+         "De amplitude verandert steeds, de uitwijking is constant",
+         "De uitwijking verandert, de amplitude is het maximum"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 0,
+        "u": "u(t) varieert; A = maximum van |u|.",
+        "uo": [
+         "Koos je seconden? Uitwijking is een afstand, in meter of centimeter. In seconden meet je de trillingstijd.",
+         "Koos je hetzelfde? Dat is precies de bekende verwarring. Alleen in de uiterste stand is de uitwijking gelijk aan de amplitude.",
+         "Koos je andersom? Bij een ongedempte trilling is juist de amplitude constant en verandert de uitwijking.",
+         "Klopt: de uitwijking u is op elk moment de afstand tot de evenwichtsstand en verandert dus steeds. De amplitude A is de grootste uitwijking die bereikt wordt."
+        ],
+        "uh": "u verandert, A is het maximum."
+       },
+       {
+        "v": "Welk onderdeel hoort niet in de formule voor de trillingstijd van een massa-veersysteem?",
+        "o": [
+         "De veerconstante C",
+         "De massa m",
+         "De valversnelling g",
+         "Het getal 2π voor de wortel"
+        ],
+        "c": 2,
+        "d": 1,
+        "s": 3,
+        "u": "T = 2π√(m/C): g staat er niet in.",
+        "uo": [
+         "Koos je veerconstante? Die staat onder de wortel in de noemer: een stuggere veer trilt sneller.",
+         "Koos je massa? De massa staat wel in de formule: T = 2π√(m/C). Een zwaarder blokje trilt langzamer.",
+         "Klopt: T = 2π√(m/C). De valversnelling komt er niet in voor; een veer trilt op de maan net zo snel als op aarde.",
+         "Koos je 2π? Dat getal staat wel voor de wortel in de formule. De valversnelling ontbreekt."
+        ],
+        "uh": "Massa-veer: geen g."
+       },
+       {
+        "v": "Hoe groot is de trillingstijd volgens dit (u,t)-diagram?",
+        "o": [
+         "0,30 s",
+         "0,15 s",
+         "0,60 s",
+         "0,075 s"
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 2,
+        "u": "Van de top bij t = 0 tot de derde top bij t = 0,45 s zijn drie trillingen: T = 0,15 s.",
+        "uo": [
+         "Koos je 0,30 s? Dan heb je maar anderhalve trilling geteld. Tel de toppen na: tussen 0 en 0,45 s zitten er drie trillingen.",
+         "Klopt: de grafiek is bij t = 0 en t = 0,45 s in een top, en daartussen zitten drie volledige trillingen. T = 0,45 / 3 = 0,15 s.",
+         "Koos je 0,60 s? Dat is langer dan de hele meting. Eén trilling kan nooit langer duren dan de tijd waarin er drie passen.",
+         "Koos je 0,075 s? Dat is de tijd van top naar dal: een halve trilling. Een hele trilling gaat van top tot top."
+        ],
+        "uh": "Tel het aantal trillingen en deel de tijd erdoor.",
+        "ctx": "Een sensor meet de trilling van een stemvorkpootje, sterk vertraagd weergegeven. In het (u,t)-diagram is de grafiek bij t = 0 in een top. Daarna volgen nog drie toppen; de derde daarvan ligt precies bij t = 0,45 s. Het eerste dal ligt bij t = 0,075 s."
+       },
+       {
+        "v": "Waarom komt een schommel uiteindelijk tot stilstand als je niet meer duwt?",
+        "o": [
+         "Er gaat energie verloren door wrijving",
+         "De zwaartekracht verdwijnt",
+         "De trillingstijd wordt oneindig groot, totdat hij niet meer beweegt",
+         "De massa van het kind neemt af"
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 5,
+        "u": "Gedempte trilling: energie wordt warmte.",
+        "uo": [
+         "Klopt: bij elke slingering wordt een beetje energie door luchtweerstand en wrijving in de ophanging omgezet in warmte. De amplitude neemt af tot de schommel stilhangt.",
+         "Koos je zwaartekracht verdwijnt? De zwaartekracht blijft gewoon werken; die trekt de schommel juist steeds terug naar de evenwichtsstand.",
+         "Koos je oneindige trillingstijd? De trillingstijd van een slinger hangt af van de lengte en blijft ongeveer gelijk. Alleen de amplitude neemt af.",
+         "Koos je massa neemt af? De massa van het kind verandert niet, en bij een slinger doet de massa er voor de trillingstijd niet toe."
+        ],
+        "uh": "Zonder duwen: demping."
+       },
+       {
+        "v": "Een blokje aan een veer trilt met een frequentie van 2,0 Hz. Wat is de trillingstijd?",
+        "o": [
+         "0,25 s",
+         "2,0 s",
+         "4,0 s",
+         "0,50 s"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 3,
+        "u": "T = 1/f = 0,50 s.",
+        "uo": [
+         "Koos je 0,25 s? Dan heb je nog een keer gehalveerd. 1 / 2,0 = 0,50 s: een halve seconde per trilling.",
+         "Koos je 2,0 s? Dat is de frequentie, niet de trillingstijd. Neem het omgekeerde: 1/2,0.",
+         "Koos je 4,0 s? Dan heb je met 2 vermenigvuldigd. T is 1 gedeeld door f. Hoe hoger de frequentie, hoe korter één trilling.",
+         "Klopt: T = 1/f = 1 / 2,0 Hz = 0,50 s. Twee trillingen per seconde betekent een halve seconde per trilling."
+        ],
+        "uh": "T = 1/f."
+       }
+      ],
+      "oe": [
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een leerling hangt een blokje van 250 g aan een veer en laat het trillen. Met een stopwatch meet ze dat het blokje in 8,4 s precies 12 keer op en neer gaat. Daarna wil ze uitrekenen hoe stug de veer is.",
+        "v": "Bereken de trillingstijd en de veerconstante van de veer, en leg uit waarom ze twaalf trillingen meet en niet één.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "T = 8,4 / 12 = 0,70 s (1p). C = 4π²m/T² = 4π² × 0,250 / 0,70² = 20 N/m (2p). Bij één trilling is de reactietijd bij starten en stoppen groot vergeleken met T; over twaalf trillingen weegt die fout twaalf keer minder (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een bewegingssensor meet de uitwijking van een trillende veer. In het (u,t)-diagram liggen de toppen op u = +5,0 cm en de dalen op u = −5,0 cm. Tussen de eerste top op t = 0,10 s en de vijfde top op t = 1,30 s liggen vier volledige trillingen.",
+        "v": "Bepaal de amplitude, de trillingstijd en de frequentie van deze trilling.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "A = 5,0 cm (de hoogte van een top boven de evenwichtsstand, niet 10 cm) (1p). T = (1,30 − 0,10) / 4 = 0,30 s (1p). f = 1/T = 3,3 Hz (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "In de Foucaultslinger van een museum hangt een koperen bol van 28 kg aan een staaldraad. Bezoekers zien dat de slinger in 3 minuten precies 18 keer heen en weer gaat. De museumgids zegt dat een lichtere bol aan dezelfde draad sneller zou zwaaien.",
+        "v": "Bereken de lengte van de slingerdraad en beoordeel de bewering van de gids.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "T = 180 / 18 = 10 s (1p). l = gT²/(4π²) = 9,81 × 10² / (4π²) = 25 m (1p). De gids heeft ongelijk: in T = 2π√(l/g) staat geen massa, dus een lichtere bol zwaait even snel (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een auto van 1200 kg rust op vier gelijke veren. Na een verkeersdrempel veert de auto op en neer met een trillingstijd van 0,80 s. Daarna laadt de bestuurder 400 kg bagage in. Zonder werkende schokdempers zou de auto na elke drempel lang blijven na-wippen.",
+        "v": "Bereken de nieuwe trillingstijd met bagage en leg uit wat een schokdemper met de amplitude en de trillingstijd doet.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "T is evenredig met √m: T₂ = 0,80 × √(1600/1200) = 0,92 s (2p). Een schokdemper haalt energie uit de trilling, zodat de amplitude snel kleiner wordt (1p); de trillingstijd blijft vrijwel gelijk (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een slingerklok loopt goed bij een slingerlengte van 0,994 m. In een warme zomer zet de metalen slingerstaaf een klein beetje uit, waardoor hij 1 mm langer wordt. De eigenaar merkt dat de klok na een tijd niet meer gelijk loopt.",
+        "v": "Bereken de trillingstijd van de goed lopende klok en leg uit of de klok in de zomer voor- of achterloopt.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "T = 2π√(0,994 / 9,81) = 2,00 s (1p). Een langere slinger heeft een grotere trillingstijd (1p). De klok tikt dus langzamer en loopt achter (1p)."
+       }
+      ]
+     }
     ]
    },
    {

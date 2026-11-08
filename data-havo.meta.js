@@ -2147,7 +2147,31 @@ var VAKKEN = [
     "nSv": 154,
     "nOe": 9,
     "nBeg": 32,
-    "hasSam": true
+    "hasSam": true,
+    "leerdoelen": [
+     {
+      "id": "B1",
+      "lo": "na.B.1",
+      "gs": 2,
+      "naam": "Trillingen",
+      "beschrijving": "Je beschrijft een trilling met uitwijking, amplitude, trillingstijd en frequentie, leest een (u,t)-diagram af en rekent de trillingstijd uit van een massa-veersysteem en een slinger. Je legt uit wat demping is en waar je die tegenkomt.",
+      "ceStatus": "CE",
+      "binas": "35",
+      "val": "",
+      "onderwerpen": [
+       "Evenwichtsstand, uitwijking en amplitude",
+       "Trillingstijd en frequentie",
+       "Het (u,t)-diagram lezen",
+       "Massa-veersysteem",
+       "De slinger",
+       "Demping en toepassingen"
+      ],
+      "nSv": 28,
+      "nOe": 5,
+      "nBeg": 11,
+      "hasSam": true
+     }
+    ]
    },
    {
     "id": "C",
