@@ -1996,6 +1996,28 @@ var VAKKEN = [
       "nOe": 5,
       "nBeg": 11,
       "hasSam": true
+     },
+     {
+      "id": "E2",
+      "lo": "sk.E.2",
+      "gs": 2,
+      "naam": "Milieuproblemen: broeikaseffect, ozon en zure regen",
+      "beschrijving": "Je verklaart het natuurlijke en het versterkte broeikaseffect, de afbraak van de ozonlaag door CFK's en het ontstaan en de gevolgen van zure regen, en je koppelt de juiste maatregel aan elk probleem zonder ze door elkaar te halen.",
+      "ceStatus": "CE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Het natuurlijke broeikaseffect",
+       "Het versterkte broeikaseffect",
+       "De ozonlaag en CFK's",
+       "Zure regen",
+       "Maatregelen",
+       "Broeikaseffect en ozongat uit elkaar houden"
+      ],
+      "nSv": 28,
+      "nOe": 5,
+      "nBeg": 11,
+      "hasSam": true
      }
     ]
    }

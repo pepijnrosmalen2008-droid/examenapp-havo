@@ -1,0 +1,687 @@
+{
+ "id": "E2",
+ "lo": "sk.E.2",
+ "gs": 2,
+ "naam": "Milieuproblemen: broeikaseffect, ozon en zure regen",
+ "beschrijving": "Je verklaart het natuurlijke en het versterkte broeikaseffect, de afbraak van de ozonlaag door CFK's en het ontstaan en de gevolgen van zure regen, en je koppelt de juiste maatregel aan elk probleem zonder ze door elkaar te halen.",
+ "ceStatus": "CE",
+ "binas": "",
+ "val": "",
+ "onderwerpen": [
+  "Het natuurlijke broeikaseffect",
+  "Het versterkte broeikaseffect",
+  "De ozonlaag en CFK's",
+  "Zure regen",
+  "Maatregelen",
+  "Broeikaseffect en ozongat uit elkaar houden"
+ ],
+ "sam": "Broeikasgassen (CO₂, CH₄, H₂O) houden warmtestraling vast; extra fossiel CO₂ versterkt dat: opwarming en zeespiegelstijging. De ozonlaag houdt UV tegen; chloor uit CFK's breekt ozon katalytisch af. Zure regen komt door SO₂ en NOₓ, die zwavelzuur en salpeterzuur vormen en kalksteen, bossen en meren aantasten. Maatregelen: ontzwavelen en katalysator tegen zure regen, minder fossiel tegen het broeikaseffect, CFK-verbod voor de ozonlaag.",
+ "begrippen": [
+  {
+   "t": "Broeikaseffect",
+   "d": "Opwarming doordat broeikasgassen een deel van de warmtestraling van de aarde vasthouden."
+  },
+  {
+   "t": "Broeikasgas",
+   "d": "Gas dat infraroodstraling opneemt, zoals CO₂, methaan en waterdamp."
+  },
+  {
+   "t": "Versterkt broeikaseffect",
+   "d": "Extra opwarming door broeikasgassen die door de mens worden uitgestoten."
+  },
+  {
+   "t": "Infraroodstraling",
+   "d": "Warmtestraling die het aardoppervlak uitzendt."
+  },
+  {
+   "t": "Ozonlaag",
+   "d": "Laag met ozon (O₃) in de stratosfeer die UV-straling van de zon tegenhoudt."
+  },
+  {
+   "t": "CFK",
+   "d": "Chloorfluorkoolwaterstof: stabiele stof die in de stratosfeer chlooratomen levert die ozon afbreken."
+  },
+  {
+   "t": "UV-straling",
+   "d": "Ultraviolette straling van de zon, schadelijk voor huid, ogen en planten."
+  },
+  {
+   "t": "Zure regen",
+   "d": "Regen met een pH lager dan 5,6 door zwavelzuur en salpeterzuur uit SO₂ en NOₓ."
+  },
+  {
+   "t": "Stikstofoxiden",
+   "d": "NO en NO₂ (NOₓ), ontstaan bij hoge temperatuur uit stikstof en zuurstof uit de lucht."
+  },
+  {
+   "t": "Rookgasontzwaveling",
+   "d": "Verwijderen van SO₂ uit rookgas door het te binden aan kalk."
+  },
+  {
+   "t": "CO₂-opslag",
+   "d": "CO₂ afvangen bij een bron en onder de grond opslaan, bijvoorbeeld in lege gasvelden."
+  }
+ ],
+ "sv": [
+  {
+   "v": "Welke straling houden broeikasgassen vast?",
+   "o": [
+    "Zichtbaar licht van de zon",
+    "Ultraviolette straling die rechtstreeks van de zon komt",
+    "Infraroodstraling die de aarde uitzendt",
+    "Radioactieve straling uit de bodem"
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 0,
+   "u": "Broeikasgassen absorberen de IR-straling die het aardoppervlak uitzendt.",
+   "uo": [
+    "Koos je zichtbaar licht? Zichtbaar licht gaat grotendeels door de atmosfeer heen en verwarmt het aardoppervlak. Pas de terugkerende warmtestraling wordt vastgehouden.",
+    "Koos je UV? Ultraviolette straling wordt vooral door de ozonlaag tegengehouden. Dat is een ander verschijnsel dan het broeikaseffect.",
+    "Klopt: zonlicht verwarmt het aardoppervlak, dat daarna warmtestraling (infrarood) uitzendt. Broeikasgassen nemen een deel daarvan op en zenden het weer alle kanten op, ook terug naar de aarde.",
+    "Koos je radioactieve straling? Die heeft niets met het broeikaseffect te maken. Het gaat om de warmtestraling van de aarde."
+   ],
+   "uh": "Broeikasgas = vangt IR."
+  },
+  {
+   "v": "Welke van deze gassen is een broeikasgas?",
+   "o": [
+    "Stikstof",
+    "Methaan",
+    "Zuurstof",
+    "Argon"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 0,
+   "u": "Broeikasgassen: CO₂, CH₄, H₂O, N₂O. N₂, O₂ en Ar absorberen geen IR.",
+   "uo": [
+    "Koos je stikstof? N₂ maakt 78% van de lucht uit, maar neemt geen warmtestraling op. Het is geen broeikasgas.",
+    "Klopt: methaan (CH₄) is een sterk broeikasgas. Per molecuul houdt het veel meer warmte vast dan CO₂. Het komt vrij uit koeien, rijstvelden, vuilnisbelten en lekkende gasleidingen.",
+    "Koos je zuurstof? Ook O₂ absorbeert geen infrarood. Daardoor draagt het niet bij aan het broeikaseffect.",
+    "Koos je argon? Argon is een edelgas dat geen warmtestraling opneemt. Het is geen broeikasgas."
+   ],
+   "uh": "CO₂, CH₄, H₂O, N₂O: wel. N₂, O₂: niet."
+  },
+  {
+   "v": "Wat zou de gemiddelde temperatuur op aarde zijn zonder natuurlijk broeikaseffect?",
+   "o": [
+    "Ongeveer −18 °C in plaats van +15 °C",
+    "Ongeveer +40 °C in plaats van +15 °C",
+    "Precies hetzelfde, want de zon blijft schijnen",
+    "Ongeveer +15 °C, want het broeikaseffect is altijd schadelijk"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 0,
+   "u": "Het natuurlijke broeikaseffect houdt de aarde ongeveer 33 °C warmer.",
+   "uo": [
+    "Klopt: zonder broeikasgassen zou de warmtestraling direct de ruimte in gaan en zou de aarde gemiddeld rond −18 °C zijn. Door het natuurlijke broeikaseffect is het gemiddeld +15 °C: leefbaar.",
+    "Koos je +40 °C? Het is andersom: broeikasgassen houden warmte vast. Zonder broeikasgassen wordt het juist kouder.",
+    "Koos je precies hetzelfde? De zon verwarmt het oppervlak, maar zonder broeikasgassen gaat die warmte veel sneller weer weg.",
+    "Koos je altijd schadelijk? Het natuurlijke broeikaseffect is juist nodig voor leven. Alleen de versterking door de mens is een probleem."
+   ],
+   "uh": "Natuurlijk broeikaseffect = nodig.",
+   "ctx": "Klimaatwetenschappers vergelijken de aarde met de maan, die ongeveer even ver van de zon staat maar geen atmosfeer heeft. De aarde heeft een dampkring met waterdamp, CO₂ en methaan. Gemiddeld is het op het aardoppervlak +15 °C."
+  },
+  {
+   "v": "Waarom gaat zonlicht wel door de atmosfeer heen, maar wordt de warmtestraling van de aarde deels vastgehouden?",
+   "o": [
+    "Warmtestraling is zwaarder dan zonlicht",
+    "Zonlicht is sneller dan warmtestraling",
+    "De atmosfeer is overdag doorzichtig en 's nachts ondoorzichtig voor straling",
+    "Broeikasgassen absorberen alleen infrarood, geen zichtbaar licht"
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 0,
+   "u": "Zonlicht = vooral zichtbaar licht; aardstraling = infrarood, dat broeikasgassen opnemen.",
+   "uo": [
+    "Koos je zwaarder? Straling heeft geen gewicht dat hier een rol speelt. Het verschil zit in de golflengte.",
+    "Koos je sneller? Alle straling gaat even snel: met de lichtsnelheid. Het verschil zit in de golflengte.",
+    "Koos je dag en nacht? Broeikasgassen werken dag en nacht. Het gaat om het soort straling, niet het tijdstip.",
+    "Klopt: zonlicht bestaat vooral uit zichtbaar licht, waar broeikasgassen doorzichtig voor zijn. Het warme aardoppervlak zendt infrarood uit, en dat absorberen broeikasgassen wel."
+   ],
+   "uh": "Licht erin, infrarood blijft hangen."
+  },
+  {
+   "v": "Wat is de belangrijkste oorzaak van het versterkte broeikaseffect?",
+   "o": [
+    "Meer waterdamp uit zeeën door getijden",
+    "Meer zonlicht door een gat in de ozonlaag",
+    "Extra CO₂ uit fossiele brandstoffen",
+    "Stikstof uit kunstmest"
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 1,
+   "u": "Fossiele brandstoffen → extra CO₂ → meer IR vastgehouden.",
+   "uo": [
+    "Koos je getijden? Getijden veranderen de hoeveelheid waterdamp in de lucht niet structureel. De hoofdoorzaak is CO₂ van fossiele brandstoffen.",
+    "Koos je ozonlaag? Het gat in de ozonlaag laat meer UV door, maar dat is niet de oorzaak van de opwarming. Dat is een ander probleem.",
+    "Klopt: bij de verbranding van steenkool, aardolie en aardgas komt CO₂ vrij dat miljoenen jaren in de grond zat. Daardoor stijgt de CO₂-concentratie en wordt meer warmte vastgehouden.",
+    "Koos je stikstof? N₂ is geen broeikasgas. Uit kunstmest kan wel lachgas (N₂O) ontstaan, maar CO₂ is veruit de belangrijkste oorzaak."
+   ],
+   "uh": "Versterkt broeikaseffect: vooral fossiel CO₂."
+  },
+  {
+   "v": "Waarom draagt hout uit een duurzaam bos minder bij aan het broeikaseffect dan steenkool?",
+   "o": [
+    "Hout bevat geen koolstof",
+    "Het CO₂ uit hout wordt door nieuwe bomen weer opgenomen",
+    "Bij het verbranden van hout ontstaat helemaal geen CO₂, alleen water",
+    "Steenkool verbrandt altijd onvolledig"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 1,
+   "u": "Kortcyclisch koolstof: wat vrijkomt, is recent vastgelegd en wordt weer vastgelegd.",
+   "uo": [
+    "Koos je geen koolstof? Hout bestaat grotendeels uit koolstofverbindingen zoals cellulose.",
+    "Klopt: een boom heeft het CO₂ uit de lucht gehaald tijdens zijn groei. Als je hem verbrandt en er groeit een nieuwe boom voor terug, blijft de hoeveelheid CO₂ in de lucht ongeveer gelijk. Steenkool voegt koolstof toe die miljoenen jaren opgeslagen zat.",
+    "Koos je geen CO₂? Bij verbranding van hout ontstaat wel degelijk CO₂. Het verschil is waar die koolstof vandaan komt.",
+    "Koos je onvolledig? Steenkool kan prima volledig verbranden. Het probleem is dat het fossiel koolstof is."
+   ],
+   "uh": "Kort geleden opgenomen = kortcyclisch."
+  },
+  {
+   "v": "Welke conclusie past bij deze meetgegevens?",
+   "o": [
+    "Met ongeveer de helft gestegen sinds de industrialisatie",
+    "De CO₂-concentratie is in 60 jaar verdubbeld",
+    "De CO₂-concentratie is ongeveer gelijk gebleven sinds 1800",
+    "De CO₂-concentratie daalt sinds 2000"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 1,
+   "u": "280 → 420 ppm is een stijging van 140 ppm = 50%.",
+   "uo": [
+    "Klopt: van ongeveer 280 ppm voor de industrialisatie naar ongeveer 420 ppm nu is een stijging van 140 ppm, de helft van 280.",
+    "Koos je verdubbeld? In 1960 was het 317 ppm; nu ongeveer 420. Dat is ruim 30% meer, geen verdubbeling.",
+    "Koos je gelijk gebleven? De metingen laten een duidelijke stijging zien, van 280 naar 420 ppm.",
+    "Koos je daalt? Elk jaar komt er nog ongeveer 2 ppm bij. De concentratie stijgt nog steeds."
+   ],
+   "uh": "Rekenen: (420 − 280) / 280.",
+   "ctx": "Op de vulkaan Mauna Loa op Hawaï wordt sinds 1958 de CO₂-concentratie in de lucht gemeten. In 1960 was die 317 ppm, in 1990 354 ppm en in 2023 ongeveer 420 ppm. Uit luchtbelletjes in oud poolijs blijkt dat het vóór 1800 ongeveer 280 ppm was."
+  },
+  {
+   "v": "Welk gevolg van het versterkte broeikaseffect is er voor Nederland vooral belangrijk?",
+   "o": [
+    "Een dikkere ozonlaag",
+    "Meer UV-straling op de huid",
+    "Zure regen op bossen",
+    "Stijging van de zeespiegel"
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 1,
+   "u": "Opwarming → smeltend landijs en uitzettend zeewater → zeespiegelstijging.",
+   "uo": [
+    "Koos je dikkere ozonlaag? Het broeikaseffect maakt de ozonlaag niet dikker. Het zijn twee verschillende verschijnselen.",
+    "Koos je UV? Meer UV komt door het gat in de ozonlaag, een ander probleem. Het broeikaseffect gaat over warmte.",
+    "Koos je zure regen? Zure regen komt door SO₂ en NOₓ, niet door het broeikaseffect. Het broeikaseffect zorgt voor opwarming.",
+    "Klopt: door opwarming smelt landijs en zet zeewater uit. De zeespiegel stijgt, en dat is voor een laag land als Nederland een groot risico."
+   ],
+   "uh": "Opwarming → zeespiegel stijgt."
+  },
+  {
+   "v": "Wat doet de ozonlaag?",
+   "o": [
+    "Hij maakt zuurstof voor planten",
+    "Hij houdt warmte vast bij de aarde, zoals een deken",
+    "Hij houdt veel schadelijke UV-straling tegen",
+    "Hij beschermt de aarde tegen meteorieten"
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 2,
+   "u": "Ozon (O₃) in de stratosfeer absorbeert UV-straling.",
+   "uo": [
+    "Koos je zuurstof maken? Zuurstof ontstaat door fotosynthese in planten. De ozonlaag filtert straling.",
+    "Koos je warmte vasthouden? Dat doen broeikasgassen zoals CO₂. De ozonlaag gaat over UV-straling.",
+    "Klopt: ozonmoleculen in de stratosfeer, op 15 tot 35 km hoogte, nemen UV-straling op. Zonder ozonlaag zou er veel meer huidkanker en schade aan planten zijn.",
+    "Koos je meteorieten? Meteorieten verbranden in de atmosfeer door wrijving. Dat heeft niets met ozon te maken."
+   ],
+   "uh": "Ozonlaag = UV-filter."
+  },
+  {
+   "v": "Welke stoffen hebben de ozonlaag vooral aangetast?",
+   "o": [
+    "CO₂ uit auto's en fabrieken",
+    "CFK's uit oude koelkasten en spuitbussen",
+    "Methaan uit koeien",
+    "SO₂ uit kolencentrales"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 2,
+   "u": "CFK's (chloorfluorkoolwaterstoffen) leveren chlooratomen die ozon afbreken.",
+   "uo": [
+    "Koos je CO₂? CO₂ is een broeikasgas dat warmte vasthoudt. Het breekt de ozonlaag niet af; dat doen chlooratomen.",
+    "Klopt: CFK's zijn stabiele stoffen die vroeger in koelkasten en spuitbussen zaten. Hoog in de atmosfeer splitst UV-straling er chlooratomen af, en die breken ozon af.",
+    "Koos je methaan? Methaan is ook een broeikasgas. De afbraak van ozon komt door chloor uit CFK's.",
+    "Koos je SO₂? SO₂ veroorzaakt zure regen, niet de afbraak van de ozonlaag. De afbraak van ozon komt door chloor uit CFK's."
+   ],
+   "uh": "Ozongat = CFK's = chloor."
+  },
+  {
+   "v": "Waarom kan één chlooratoom duizenden ozonmoleculen afbreken?",
+   "o": [
+    "Cl komt na elke cyclus weer vrij: een katalysator",
+    "Een chlooratoom is heel groot en botst met veel moleculen tegelijk",
+    "Chloor reageert met ozon tot nieuwe CFK's",
+    "Het chlooratoom splitst in duizenden kleinere deeltjes"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 2,
+   "u": "Cl + O₃ → ClO + O₂; ClO + O → Cl + O₂: Cl komt terug.",
+   "uo": [
+    "Klopt: in de eerste stap reageert Cl met O₃ tot ClO en O₂. In de tweede stap reageert ClO met een losse O tot O₂, en komt Cl weer vrij. Het chlooratoom wordt niet verbruikt en kan opnieuw beginnen.",
+    "Koos je heel groot? De grootte doet er niet toe. Het geheim is dat het chlooratoom na elke cyclus weer vrijkomt.",
+    "Koos je nieuwe CFK's? Er ontstaan geen nieuwe CFK's. Het chlooratoom blijft gewoon rondgaan als katalysator.",
+    "Koos je splitsen? Een atoom kan niet in duizenden deeltjes splitsen bij een chemische reactie."
+   ],
+   "uh": "Cl = katalysator voor ozonafbraak.",
+   "ctx": "Hoog in de stratosfeer splitst UV-straling een chlooratoom af van een CFK-molecuul. Daarna verlopen twee reacties: Cl + O₃ → ClO + O₂ en daarna ClO + O → Cl + O₂. Onderzoekers schatten dat één chlooratoom zo tot honderdduizend ozonmoleculen kan afbreken."
+  },
+  {
+   "v": "Waarom herstelt de ozonlaag pas tientallen jaren na het verbod op CFK's?",
+   "o": [
+    "Ozon ontstaat alleen bij onweer",
+    "Ozon moet uit de ruimte worden aangevoerd",
+    "Er worden nog steeds in bijna alle landen CFK's gebruikt",
+    "CFK's zijn zeer stabiel en blijven lang in de lucht"
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 2,
+   "u": "CFK's zijn stabiel: ze blijven lang in de lucht en blijven chloor leveren.",
+   "uo": [
+    "Koos je onweer? Bij onweer ontstaat wat ozon dicht bij de grond, maar de ozonlaag wordt hoog in de atmosfeer door UV gevormd.",
+    "Koos je uit de ruimte? Ozon ontstaat in de stratosfeer zelf, als UV-straling O₂ splitst en O-atomen met O₂ reageren.",
+    "Koos je nog steeds overal? Sinds het Montreal-protocol van 1987 is het gebruik bijna overal gestopt. Het probleem is de stoffen die al in de lucht zitten.",
+    "Klopt: CFK's breken in de lagere atmosfeer nauwelijks af en blijven 50 tot 100 jaar in de lucht. Al die tijd kunnen ze hoog in de atmosfeer chloor leveren. Daarom gaat het herstel langzaam."
+   ],
+   "uh": "Stabiele stof = lang probleem.",
+   "ctx": "In 1987 spraken bijna alle landen in het Montreal-protocol af om te stoppen met CFK's. De productie daalde daarna snel. Toch verwachten wetenschappers dat het ozongat boven Antarctica pas rond 2065 helemaal hersteld is."
+  },
+  {
+   "v": "Welke gassen veroorzaken vooral zure regen?",
+   "o": [
+    "Zuurstof en stikstof",
+    "Koolstofdioxide en methaan",
+    "Zwaveldioxide en stikstofoxiden",
+    "CFK's en ozon"
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 3,
+   "u": "SO₂ en NOₓ vormen met water zwavelzuur en salpeterzuur.",
+   "uo": [
+    "Koos je zuurstof en stikstof? Dat zijn de gewone bestanddelen van lucht en die maken regen niet zuur.",
+    "Koos je CO₂ en methaan? Dat zijn broeikasgassen. CO₂ maakt regen een klein beetje zuur, maar de echte zure regen komt door SO₂ en NOₓ.",
+    "Klopt: SO₂ en NOₓ reageren in de lucht met water en zuurstof tot zwavelzuur en salpeterzuur. Die maken de regen zuur.",
+    "Koos je CFK's en ozon? Die horen bij het ozonprobleem, niet bij zure regen. Zure regen komt door SO₂ en NOₓ."
+   ],
+   "uh": "Zure regen = SO₂ + NOₓ."
+  },
+  {
+   "v": "Waarom heeft schone regen een pH van ongeveer 5,6 en niet 7?",
+   "o": [
+    "Er zit zwavelzuur in alle regen",
+    "Opgelost CO₂ vormt een zwak zuur",
+    "Regenwater bevat altijd zout uit de zee",
+    "Water heeft van zichzelf een pH van 5,6"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 3,
+   "u": "CO₂ + H₂O ⇄ H₂CO₃ (koolzuur): licht zuur.",
+   "uo": [
+    "Koos je zwavelzuur? Zwavelzuur zit alleen in regen als er SO₂ in de lucht is. Schone regen heeft dat niet.",
+    "Klopt: koolstofdioxide uit de lucht lost een beetje op in regendruppels en vormt koolzuur, een zwak zuur. Daardoor is ook schone regen licht zuur. Pas onder 5,6 spreek je van zure regen.",
+    "Koos je zeezout? Zout maakt water niet zuur. De lage pH komt door opgelost CO₂. Zeezout verandert de pH van regen nauwelijks.",
+    "Koos je water zelf? Zuiver water heeft bij 25 °C een pH van 7. Het verschil komt door het opgeloste CO₂."
+   ],
+   "uh": "Schone regen pH 5,6 door CO₂."
+  },
+  {
+   "v": "Waar komt het zwaveldioxide in de lucht vooral vandaan?",
+   "o": [
+    "Van zwavelhoudende brandstof zoals steenkool",
+    "Van planten die zwavel uitademen",
+    "Van het verbranden van aardgas, dat veel zwavel bevat",
+    "Van zonlicht dat stikstof omzet"
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 3,
+   "u": "S in brandstof + O₂ → SO₂.",
+   "uo": [
+    "Klopt: steenkool en stookolie bevatten zwavelverbindingen. Bij verbranding reageert de zwavel met zuurstof tot SO₂.",
+    "Koos je planten? Planten nemen juist stoffen op. De grote bron van SO₂ is de verbranding van zwavelhoudende brandstoffen.",
+    "Koos je aardgas? Aardgas bevat juist bijna geen zwavel. Het is daarom een schonere brandstof voor zure regen.",
+    "Koos je zonlicht? Zonlicht zet geen stikstof om in zwaveldioxide. SO₂ bevat zwavel, en dat komt uit de brandstof."
+   ],
+   "uh": "SO₂ uit zwavelhoudende brandstof."
+  },
+  {
+   "v": "Hoe ontstaat stikstofmonoxide in een automotor, terwijl benzine geen stikstof bevat?",
+   "o": [
+    "De katalysator maakt stikstofmonoxide",
+    "De benzine bevat stiekem toch veel stikstof",
+    "Stikstof ontstaat uit koolstof bij hoge druk",
+    "N₂ en O₂ uit de lucht reageren door de hitte"
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 3,
+   "u": "N₂ + O₂ → 2 NO bij hoge temperatuur in de cilinder.",
+   "uo": [
+    "Koos je katalysator? De katalysator zet NO juist om in N₂. Hij maakt het niet. De stikstof komt uit de lucht in de cilinder.",
+    "Koos je benzine bevat stikstof? Benzine bestaat vooral uit koolwaterstoffen. De stikstof komt uit de lucht, die voor 78% uit N₂ bestaat.",
+    "Koos je uit koolstof? Een element kan bij een chemische reactie niet in een ander element veranderen.",
+    "Klopt: in de cilinder wordt het erg heet. Dan reageren stikstof en zuurstof uit de aangezogen lucht met elkaar: N₂ + O₂ → 2 NO. De stikstof komt dus uit de lucht, niet uit de benzine."
+   ],
+   "uh": "NOₓ: stikstof uit de lucht + hitte.",
+   "ctx": "Een leerling leest dat auto's stikstofoxiden uitstoten en een van de oorzaken van zure regen zijn. Ze snapt het niet: benzine bestaat uit koolwaterstoffen zonder stikstof. In een draaiende motor wordt het mengsel van benzine en lucht samengeperst en ontstoken, waarbij temperaturen van meer dan 2000 °C ontstaan."
+  },
+  {
+   "v": "Waarom worden kalkstenen beelden en gebouwen aangetast door zure regen?",
+   "o": [
+    "Het zuur maakt de steen zwaarder, zodat hij afbrokkelt",
+    "Kalksteen lost vanzelf op in elk soort water",
+    "Het zuur reageert met calciumcarbonaat",
+    "Zure regen bevat zand dat de steen wegschuurt"
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 3,
+   "u": "CaCO₃ + 2 H⁺ → Ca²⁺ + H₂O + CO₂.",
+   "uo": [
+    "Koos je zwaarder? De steen wordt juist lichter, omdat er materiaal wordt omgezet en weggespoeld.",
+    "Koos je vanzelf in water? Kalksteen lost nauwelijks op in zuiver water. Het zuur zorgt voor de reactie.",
+    "Klopt: de H⁺-ionen in zure regen reageren met calciumcarbonaat. Er ontstaan opgeloste Ca²⁺-ionen, water en koolstofdioxide. Zo verdwijnt de steen laagje voor laagje.",
+    "Koos je zand? Het gaat om een chemische reactie met H⁺-ionen, niet om schuren. De steen verdwijnt doordat hij chemisch wordt omgezet."
+   ],
+   "uh": "Zuur + kalk → CO₂ + opgeloste ionen.",
+   "ctx": "In veel oude steden zijn standbeelden van marmer en kalksteen in honderd jaar onherkenbaar geworden: neuzen en vingers zijn weggesleten en het oppervlak is ruw. Beelden die binnen staan, zijn veel beter bewaard. Marmer en kalksteen bestaan grotendeels uit calciumcarbonaat (CaCO₃)."
+  },
+  {
+   "v": "Hoe verwijdert een kolencentrale zwaveldioxide uit het rookgas?",
+   "o": [
+    "Het rookgas wordt nog verder verhit, tot het SO₂ vanzelf ontleedt",
+    "Het rookgas gaat door een kalkmengsel dat SO₂ bindt",
+    "Er wordt extra zuurstof toegevoegd",
+    "Het SO₂ wordt met een katalysator omgezet in CO₂"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 4,
+   "u": "Rookgasontzwaveling: kalk reageert met SO₂ tot gips.",
+   "uo": [
+    "Koos je verder verhitten? SO₂ ontleedt niet zomaar bij hogere temperatuur. Het moet chemisch gebonden worden.",
+    "Klopt: in een rookgasontzwaveling wordt het rookgas door een nevel met kalk geleid. Kalk reageert met SO₂, en uiteindelijk ontstaat gips dat in de bouw wordt gebruikt.",
+    "Koos je extra zuurstof? Daarmee zou SO₂ eerder SO₃ worden, wat ook zuur is. Het probleem verdwijnt dan niet.",
+    "Koos je omzetten in CO₂? Een zwavelatoom kan niet in koolstof veranderen. Het SO₂ moet gebonden worden."
+   ],
+   "uh": "SO₂ wegvangen met kalk."
+  },
+  {
+   "v": "Hoe vermindert een autokatalysator de uitstoot van stikstofoxiden?",
+   "o": [
+    "Hij zet NOₓ om in stikstof en zuurstof of water",
+    "Hij filtert de stikstofoxiden uit het gas als een zeef",
+    "Hij zet NOₓ om in zwaveldioxide",
+    "Hij koelt de uitlaatgassen af tot ze vloeibaar worden"
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 4,
+   "u": "De katalysator versnelt de omzetting van NO in N₂.",
+   "uo": [
+    "Klopt: de katalysator versnelt reacties waarbij stikstofoxiden worden omgezet in stikstof, terwijl CO en onverbrande benzine worden omgezet in CO₂ en water.",
+    "Koos je zeef? Een katalysator filtert niets weg; hij versnelt chemische reacties. De schadelijke stoffen worden omgezet in onschuldige.",
+    "Koos je zwaveldioxide? Stikstof kan niet in zwavel veranderen. NOₓ wordt omgezet in N₂.",
+    "Koos je afkoelen? Een katalysator werkt juist het best als hij heet is. Hij zet de gassen om, hij maakt ze niet vloeibaar."
+   ],
+   "uh": "Katalysator: NOₓ → N₂."
+  },
+  {
+   "v": "Welke maatregel helpt het meest tegen het versterkte broeikaseffect?",
+   "o": [
+    "Een verbod op CFK's in spuitbussen",
+    "Een katalysator verplicht stellen op elke auto in de gemeente",
+    "Rookgasontzwaveling in elke kolencentrale",
+    "Minder fossiele brandstof, meer zon en wind"
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 4,
+   "u": "Het broeikaseffect wordt vooral versterkt door fossiel CO₂.",
+   "uo": [
+    "Koos je CFK-verbod? Dat beschermt de ozonlaag. CFK's zijn wel broeikasgassen, maar de grote bron is CO₂.",
+    "Koos je katalysator? Die vermindert CO, NOₓ en onverbrande brandstof, maar zet die juist om in CO₂. Tegen het broeikaseffect helpt hij niet.",
+    "Koos je rookgasontzwaveling? Die haalt SO₂ weg tegen zure regen. Het CO₂ blijft gewoon in het rookgas.",
+    "Klopt: de grootste bron van extra broeikasgassen is CO₂ uit fossiele brandstoffen. Minder steenkool, olie en gas verbranden en meer zonne- en windenergie gebruiken, pakt de oorzaak aan."
+   ],
+   "uh": "Tegen broeikaseffect: minder fossiel CO₂.",
+   "ctx": "Een gemeente wil iets doen aan het milieu en heeft geld voor één grote maatregel. Ambtenaren stellen vier opties voor: katalysatoren verplichten, rookgasontzwaveling bij de centrale, een verbod op CFK's of zonnepanelen en windmolens in plaats van de kolencentrale. Het doel is het versterkte broeikaseffect te beperken."
+  },
+  {
+   "v": "Wat is CO₂-opslag?",
+   "o": [
+    "CO₂ in flessen doen voor frisdrank",
+    "CO₂ omzetten in zuurstof in een fabriek",
+    "CO₂ afvangen en onder de grond opslaan",
+    "CO₂ laten opnemen door de ozonlaag"
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 4,
+   "u": "Afvangen en ondergronds opslaan, zodat het niet in de atmosfeer komt.",
+   "uo": [
+    "Koos je frisdrank? Dat is een kleine toepassing. Het CO₂ komt bij het openen van de fles weer vrij.",
+    "Koos je omzetten in zuurstof? Dat doen planten met fotosynthese. Een fabriek die CO₂ in zuurstof omzet, zou veel energie kosten.",
+    "Klopt: bij CO₂-opslag wordt CO₂ uit het rookgas van een fabriek gehaald en onder de grond geperst, bijvoorbeeld in lege gasvelden onder de Noordzee. Zo komt het niet in de atmosfeer.",
+    "Koos je ozonlaag? De ozonlaag neemt geen CO₂ op. Ozon heeft niets met CO₂ te maken. CO₂ verdwijnt alleen als je het opslaat of planten het opnemen."
+   ],
+   "uh": "Afvangen + ondergronds opslaan."
+  },
+  {
+   "v": "Welke uitspraak haalt het broeikaseffect en het gat in de ozonlaag door elkaar?",
+   "o": [
+    "\"CO₂ houdt warmtestraling vast.\"",
+    "\"Door het ozongat komt meer warmte binnen.\"",
+    "\"CFK's breken ozon af.\"",
+    "\"De ozonlaag houdt een groot deel van de UV-straling tegen.\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 5,
+   "u": "Het ozongat gaat over UV, niet over de opwarming van de aarde.",
+   "uo": [
+    "Koos je \"CO₂ houdt warmtestraling vast\"? Dat klopt: zo werkt het broeikaseffect. Die uitspraak haalt dus niets door elkaar.",
+    "Klopt: dat is de klassieke verwarring. Door het ozongat komt meer UV-straling door, wat slecht is voor huid en ogen. De opwarming komt door broeikasgassen die warmtestraling vasthouden.",
+    "Koos je \"CFK's breken ozon af\"? Dat klopt: de chlooratomen uit CFK's breken ozon af.",
+    "Koos je \"de ozonlaag houdt UV tegen\"? Dat klopt ook. Ozon absorbeert UV-straling. Ook deze uitspraak klopt dus."
+   ],
+   "uh": "Ozongat = UV, broeikaseffect = warmte."
+  },
+  {
+   "v": "Welk probleem hoort bij welke stof?",
+   "o": [
+    "CO₂: broeikaseffect; CFK: ozongat; SO₂: zure regen",
+    "CO₂: ozongat; CFK: zure regen; SO₂: broeikaseffect",
+    "CO₂: zure regen; CFK: broeikaseffect; SO₂: ozongat",
+    "Alle drie veroorzaken vooral het broeikaseffect"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 5,
+   "u": "Elk probleem heeft zijn eigen hoofdstof.",
+   "uo": [
+    "Klopt: CO₂ versterkt het broeikaseffect, CFK's breken de ozonlaag af en SO₂ veroorzaakt zure regen. Wie dat uit elkaar houdt, kan bij elk probleem de juiste maatregel kiezen.",
+    "Koos je CO₂ en ozongat? CO₂ breekt geen ozon af. Het houdt warmtestraling vast. De ozonlaag wordt aangetast door CFK's.",
+    "Koos je CO₂ en zure regen? CO₂ maakt regen een beetje zuur (pH 5,6), maar echte zure regen komt door SO₂ en NOₓ.",
+    "Koos je alle drie broeikaseffect? CFK's zijn ook broeikasgassen, maar SO₂ niet. En elk heeft een eigen hoofdprobleem."
+   ],
+   "uh": "CO₂-broeikas, CFK-ozon, SO₂-zuur.",
+   "ctx": "Op een milieuposter staan drie stoffen die vroeger of nu in grote hoeveelheden vrijkwamen: koolstofdioxide uit schoorstenen en uitlaten, CFK's uit spuitbussen en koelkasten, en zwaveldioxide uit kolencentrales. Leerlingen moeten bij elke stof het milieuprobleem noemen dat er het meest bij hoort."
+  },
+  {
+   "v": "Waarom helpt zonnebrandcrème wel tegen de gevolgen van het ozongat, maar niet tegen de opwarming van de aarde?",
+   "o": [
+    "De crème koelt de aarde af",
+    "Zonnebrandcrème maakt de ozonlaag boven je hoofd weer dikker",
+    "Zonnebrandcrème neemt CO₂ op",
+    "Crème houdt UV tegen; opwarming komt door broeikasgassen"
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 5,
+   "u": "Ozongat → meer UV op de huid; opwarming is een ander proces.",
+   "uo": [
+    "Koos je koelen? Crème beschermt alleen je eigen huid tegen UV. Het heeft geen effect op de temperatuur van de aarde.",
+    "Koos je ozonlaag dik? Crème op je huid heeft geen invloed op ozon hoog in de atmosfeer.",
+    "Koos je CO₂ opnemen? Zonnebrandcrème neemt geen CO₂ uit de lucht op; het werkt alleen op je eigen huid tegen UV.",
+    "Klopt: door het ozongat komt meer UV-straling op je huid, en daar beschermt zonnebrandcrème tegen. De opwarming van de aarde is een ander proces met andere stoffen, waar crème niets aan doet."
+   ],
+   "uh": "Crème = UV-bescherming, geen klimaatmaatregel."
+  },
+  {
+   "v": "Op welke hoogte bevindt zich de ozonlaag ongeveer?",
+   "o": [
+    "Op 400 km hoogte, waar satellieten vliegen",
+    "Op de grond, in de lucht die we inademen",
+    "Tussen 15 en 35 km hoogte, in de stratosfeer",
+    "In de wolken, op ongeveer 2 km"
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 5,
+   "u": "De ozonlaag ligt in de stratosfeer.",
+   "uo": [
+    "Koos je 400 km? Daar is de atmosfeer bijna leeg. De ozonlaag zit veel lager. Satellieten vliegen ver boven de ozonlaag.",
+    "Koos je op de grond? Ozon bij de grond ontstaat bij smog en is schadelijk voor je longen. Dat is niet de beschermende ozonlaag.",
+    "Klopt: het meeste ozon zit in de stratosfeer, tussen ongeveer 15 en 35 km hoogte. Daar wordt het voortdurend gevormd en afgebroken door UV-straling.",
+    "Koos je in de wolken? De meeste wolken zitten in de troposfeer, onder de ozonlaag. Wolken en ozon zitten op verschillende hoogtes."
+   ],
+   "uh": "Ozonlaag = stratosfeer."
+  },
+  {
+   "v": "Welk zuur ontstaat uiteindelijk uit zwaveldioxide in de atmosfeer?",
+   "o": [
+    "Salpeterzuur",
+    "Zwavelzuur",
+    "Koolzuur",
+    "Zoutzuur"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 3,
+   "u": "SO₂ → SO₃ → H₂SO₄.",
+   "uo": [
+    "Koos je salpeterzuur? Salpeterzuur ontstaat uit stikstofoxiden, niet uit zwaveldioxide.",
+    "Klopt: SO₂ wordt in de lucht verder geoxideerd tot SO₃, dat met water zwavelzuur (H₂SO₄) vormt. Zwavelzuur is een sterk zuur.",
+    "Koos je koolzuur? Koolzuur ontstaat uit CO₂ en is maar zwak. Het zwavelatoom wijst op zwavelzuur.",
+    "Koos je zoutzuur? Zoutzuur is HCl en bevat chloor. Uit SO₂ kan geen chloorverbinding ontstaan."
+   ],
+   "uh": "SO₂ → zwavelzuur, NOₓ → salpeterzuur."
+  },
+  {
+   "v": "Welk gas draagt het meest bij aan het natuurlijke broeikaseffect?",
+   "o": [
+    "Waterdamp",
+    "Zuurstof",
+    "Stikstof",
+    "Helium uit de ruimte"
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 0,
+   "u": "Waterdamp is het belangrijkste natuurlijke broeikasgas, daarna CO₂.",
+   "uo": [
+    "Klopt: waterdamp neemt van nature het meeste warmtestraling op. De mens verandert de hoeveelheid waterdamp niet direct, maar wel die van CO₂ en methaan.",
+    "Koos je zuurstof? O₂ neemt geen warmtestraling op en is dus geen broeikasgas. Waterdamp en CO₂ doen dat wel.",
+    "Koos je stikstof? N₂ is het meest voorkomende gas in de lucht, maar het absorbeert geen infrarood.",
+    "Koos je helium? Helium komt nauwelijks in de atmosfeer voor en neemt geen warmtestraling op."
+   ],
+   "uh": "Waterdamp en CO₂: de grootste natuurlijke broeikasgassen."
+  },
+  {
+   "v": "Wat is een gevolg van zure regen voor meren?",
+   "o": [
+    "Het meer krijgt een ozonlaag",
+    "Het water wordt warmer door de zure regen",
+    "Er groeien meer vissen door de extra zwavel",
+    "Het water verzuurt, waardoor vissen en andere dieren kunnen sterven"
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 3,
+   "u": "Verzuring: lagere pH, schadelijk voor waterleven.",
+   "uo": [
+    "Koos je ozonlaag? Een meer heeft geen ozonlaag. De ozonlaag zit hoog in de atmosfeer.",
+    "Koos je warmer? Zure regen verandert de temperatuur van het water niet. Het probleem is de lagere pH.",
+    "Koos je meer vissen? Zwavel in de vorm van zwavelzuur is juist schadelijk. Het water verzuurt.",
+    "Klopt: zure regen verlaagt de pH van meren. Veel vissen, kikkers en insectenlarven kunnen daar niet tegen. In Scandinavië zijn zo vroeger hele meren vrijwel leeg geraakt."
+   ],
+   "uh": "Zure regen → verzuurde meren."
+  }
+ ],
+ "oe": [
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een leerling schrijft in een werkstuk: \"Door het gat in de ozonlaag komt meer zonnewarmte binnen. Daardoor warmt de aarde op en stijgt de zeespiegel. Het verbod op CFK's is dus de beste maatregel tegen klimaatverandering.\"",
+   "v": "Leg uit welke twee milieuproblemen de leerling door elkaar haalt en wat de oorzaak van de opwarming wel is.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Ze haalt het ozongat en het (versterkte) broeikaseffect door elkaar; door het ozongat komt meer UV-straling door, geen extra warmte (1p). De opwarming komt doordat broeikasgassen, vooral CO₂ uit fossiele brandstoffen, warmtestraling vasthouden (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "In de stratosfeer splitst UV-straling chlooratomen af van CFK-moleculen. Daarna verlopen twee reacties: Cl + O₃ → ClO + O₂ en ClO + O → Cl + O₂.",
+   "v": "Geef de totale reactievergelijking van deze twee stappen en leg uit waarom chloor als katalysator werkt.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Optellen en wegstrepen van Cl en ClO: O₃ + O → 2 O₂ (1p). Chloor reageert in de eerste stap en komt in de tweede stap weer vrij; het wordt niet verbruikt en kan opnieuw ozon afbreken (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Steenkool bevat ongeveer 1% zwavel. Een kolencentrale verbrandt per dag 10 000 ton steenkool. De zwavel verbrandt tot zwaveldioxide: S + O₂ → SO₂. (S = 32,1 u; SO₂ = 64,1 u)",
+   "v": "Bereken hoeveel ton SO₂ er per dag ontstaat als alle zwavel verbrandt, en leg uit hoe de centrale dit kan beperken.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "1% van 10 000 ton = 100 ton zwavel (1p). 100 × 64,1 / 32,1 = 200 ton SO₂ (1p). Rookgasontzwaveling: het SO₂ binden aan kalk, of zwavelarme steenkool gebruiken (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een marmeren grafsteen van 1900 is na honderd jaar op een begraafplaats in een industriestad ruw en de letters zijn bijna onleesbaar. Marmer bestaat uit calciumcarbonaat.",
+   "v": "Geef de reactievergelijking van het aantasten van marmer door zure regen en leg uit waarom het in een industriestad sneller gaat.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "CaCO₃ + 2 H⁺ → Ca²⁺ + H₂O + CO₂ (1p). In een industriestad komt meer SO₂ en NOₓ in de lucht, waardoor de regen zuurder is en de reactie sneller verloopt (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een energiebedrijf stelt voor een nieuwe biomassacentrale te bouwen die houtsnippers uit duurzaam beheerde bossen verbrandt. Tegenstanders zeggen dat er bij het verbranden van hout net zoveel CO₂ vrijkomt als bij steenkool.",
+   "v": "Leg uit waarom de biomassacentrale toch minder bijdraagt aan het versterkte broeikaseffect.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Het CO₂ uit hout is kort geleden door de bomen uit de lucht opgenomen (1p). Als er nieuwe bomen voor terug groeien, nemen die het CO₂ weer op; bij steenkool komt koolstof vrij die miljoenen jaren opgeslagen zat, dus extra CO₂ in de atmosfeer (1p)."
+  }
+ ]
+}
