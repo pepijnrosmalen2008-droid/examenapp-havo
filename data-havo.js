@@ -86982,6 +86982,694 @@ var VAKKEN = [
         "u": "P / lichtsterkte: 30 / 200 = 0,15 en 90 / 600 = 0,15 m²: constant (1p). Dus P = 0,15 × lichtsterkte (1p). Bij 950 W/m²: P = 0,15 × 950 = 1,4·10² W (1p)."
        }
       ]
+     },
+     {
+      "id": "A4",
+      "lo": "na.A.4",
+      "gs": 2,
+      "naam": "Meetonzekerheid en ijken",
+      "beschrijving": "Je schrijft een meetwaarde op met meetonzekerheid, onderscheidt toevallige en systematische fouten, bepaalt een gemiddelde en een onzekerheid uit herhaalde metingen, ijkt een meetinstrument met een ijkgrafiek, vergroot de nauwkeurigheid van een meting en beoordeelt of een resultaat klopt met de theorie.",
+      "ceStatus": "CE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Meetonzekerheid en aflezen",
+       "Toevallige en systematische fouten",
+       "Herhalen en middelen",
+       "IJken van een meetinstrument",
+       "De nauwkeurigheid vergroten",
+       "Een resultaat beoordelen"
+      ],
+      "sam": "Een meetwaarde schrijf je met onzekerheid: 24,5 ± 0,1 cm; afleesonzekerheid ≈ halve schaaldeling. Toevallige fouten wisselen en worden kleiner door herhalen en middelen; systematische fouten (nulpuntsfout, reactietijd) verschuiven elke meting dezelfde kant op en vragen om correctie of ijken. Gemiddelde = som / aantal, onzekerheid ≈ halve spreiding. IJken met bekende waarden geeft een ijkgrafiek. Meet veel tegelijk om nauwkeuriger te worden. Tabelwaarde binnen de marge = in overeenstemming; afwijking in % = verschil / tabelwaarde × 100 %.",
+      "begrippen": [
+       {
+        "t": "Meetonzekerheid",
+        "d": "Marge rond een meetwaarde waarbinnen de echte waarde waarschijnlijk ligt, geschreven met ±."
+       },
+       {
+        "t": "Afleesonzekerheid",
+        "d": "Onzekerheid door het aflezen van een schaal; ongeveer de helft van de kleinste schaaldeling."
+       },
+       {
+        "t": "Relatieve onzekerheid",
+        "d": "De onzekerheid gedeeld door de meetwaarde, vaak in procenten."
+       },
+       {
+        "t": "Toevallige fout",
+        "d": "Fout die per meting willekeurig iets te hoog of te laag uitvalt; wordt kleiner door herhalen en middelen."
+       },
+       {
+        "t": "Systematische fout",
+        "d": "Fout die elke meting dezelfde kant op verschuift, zoals een nulpuntsfout; herhalen helpt niet."
+       },
+       {
+        "t": "Nulpuntsfout",
+        "d": "Systematische fout doordat een instrument zonder meting niet op nul staat."
+       },
+       {
+        "t": "Parallaxfout",
+        "d": "Afleesfout doordat je schuin naar een wijzer kijkt die niet in hetzelfde vlak als de schaal ligt."
+       },
+       {
+        "t": "Spreiding",
+        "d": "Hoeveel herhaalde metingen onderling verschillen; maat voor de toevallige fout."
+       },
+       {
+        "t": "IJken",
+        "d": "De schaal van een meetinstrument vastleggen of controleren met bekende waarden."
+       },
+       {
+        "t": "IJkgrafiek",
+        "d": "Grafiek waarmee je de aflezing van een instrument omzet in de echte waarde."
+       },
+       {
+        "t": "Procentuele afwijking",
+        "d": "Het verschil tussen meting en tabelwaarde, gedeeld door de tabelwaarde, maal 100 %."
+       }
+      ],
+      "sv": [
+       {
+        "v": "Hoe lees je \"l = 24,5 ± 0,1 cm\"?",
+        "o": [
+         "De lengte is 24,6 cm",
+         "De lengte is precies 24,5 cm",
+         "Tussen 24,4 en 24,6 cm",
+         "Er zijn 0,1 cm metingen gedaan"
+        ],
+        "c": 2,
+        "d": 1,
+        "s": 0,
+        "u": "± geeft de meetonzekerheid.",
+        "uo": [
+         "Koos je 24,6 cm? Dat is de bovengrens. De beste schatting is 24,5 cm, met een marge van 0,1 cm naar boven en naar beneden.",
+         "Koos je precies 24,5 cm? Geen enkele meting is precies. Met ± 0,1 cm geef je aan hoeveel de echte waarde kan afwijken.",
+         "Klopt: de waarde na ± is de meetonzekerheid. De echte waarde ligt waarschijnlijk tussen 24,5 − 0,1 = 24,4 cm en 24,5 + 0,1 = 24,6 cm.",
+         "Koos je het aantal metingen? Het getal na ± zegt niets over hoe vaak je gemeten hebt, maar over de onzekerheid in de waarde."
+        ],
+        "uh": "± = meetonzekerheid."
+       },
+       {
+        "v": "Je meet met een liniaal met millimeterstreepjes. Welke afleesonzekerheid hoort daarbij ongeveer?",
+        "o": [
+         "± 5 mm",
+         "± 0,5 mm",
+         "± 1 cm",
+         "± 0,05 mm"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 0,
+        "u": "Afleesonzekerheid ≈ helft kleinste schaaldeling.",
+        "uo": [
+         "Koos je ± 5 mm? Dat is een halve centimeter, veel te ruim. Met millimeterstreepjes kun je beter aflezen.",
+         "Klopt: de afleesonzekerheid is ongeveer de helft van de kleinste schaaldeling. Met millimeterstreepjes is dat ± 0,5 mm.",
+         "Koos je ± 1 cm? Dan zou je de millimeterstreepjes helemaal niet gebruiken.",
+         "Koos je ± 0,05 mm? Zo nauwkeurig kan alleen een schuifmaat of micrometer. Met het blote oog op een liniaal haal je dat niet."
+        ],
+        "uh": "Halve schaaldeling."
+       },
+       {
+        "v": "Waarom moet de leerling recht van voren naar de wijzer kijken?",
+        "o": [
+         "Anders krijg je een parallaxfout",
+         "Recht kijken maakt de wijzer scherper",
+         "Van opzij kun je de cijfers niet lezen",
+         "Recht kijken voorkomt toevallige fouten in de stroom"
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 0,
+        "u": "Parallax: wijzer en schaal niet in hetzelfde vlak.",
+        "uo": [
+         "Klopt: de wijzer zit een klein stukje vóór de schaal. Kijk je schuin, dan lijkt hij boven een andere streep te staan. Dat heet een parallaxfout. Daarom zit er bij sommige meters een spiegeltje: als je de wijzer en zijn spiegelbeeld samen ziet, kijk je recht.",
+         "Koos je scherper? Scherpte verandert niet door de kijkrichting. Het gaat om waar de wijzer ten opzichte van de streepjes lijkt te staan.",
+         "Koos je cijfers lezen? Die kun je van opzij meestal nog lezen. Het probleem is dat de wijzer op een verkeerde plek lijkt te staan.",
+         "Koos je fouten in de stroom? De kijkrichting verandert niets aan de stroom zelf, alleen aan je aflezing."
+        ],
+        "uh": "Parallaxfout vermijden.",
+        "ctx": "Bij een practicum leest een leerling een analoge stroommeter af. De wijzer staat een paar millimeter boven de schaal. Haar buurman kijkt van opzij mee en leest een andere waarde af dan zij. Onder de schaal zit een spiegelende strook."
+       },
+       {
+        "v": "Een digitale weegschaal geeft 152,4 g aan. Welke afleesonzekerheid hoort hier waarschijnlijk bij?",
+        "o": [
+         "± 10 g",
+         "± 1 g",
+         "± 0,01 g",
+         "± 0,1 g"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 0,
+        "u": "Digitaal: onzekerheid ≈ laatste cijfer.",
+        "uo": [
+         "Koos je ± 10 g? Dat is veel te ruim. Een weegschaal die tienden aangeeft, is veel nauwkeuriger.",
+         "Koos je ± 1 g? Dan gebruik je het tiende cijfer niet, terwijl de weegschaal het wel laat zien.",
+         "Koos je ± 0,01 g? Dat honderdste toont de weegschaal niet. Je kunt geen kleinere onzekerheid opgeven dan het display laat zien.",
+         "Klopt: bij een digitaal display is de onzekerheid ongeveer één eenheid van het laatste cijfer. Hier is dat 0,1 g."
+        ],
+        "uh": "Digitaal: laatste cijfer."
+       },
+       {
+        "v": "Bij welke meting is de relatieve onzekerheid het grootst?",
+        "o": [
+         "De breedte van de tafel: 80,0 ± 0,05 cm",
+         "De lengte van de gang: 12,00 ± 0,05 m",
+         "De dikte van het boek: 3,0 ± 0,05 cm",
+         "Ze zijn even groot, want de onzekerheid is overal 0,05"
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 0,
+        "u": "Relatief: onzekerheid / waarde.",
+        "uo": [
+         "Koos je de tafel? 0,05 cm op 80 cm is relatief klein, veel kleiner dan op 3,0 cm.",
+         "Koos je de gang? Die onzekerheid is 0,05 m, maar op 12 m is dat maar een heel klein deel. Relatief is het de nauwkeurigste meting.",
+         "Klopt: relatief is 0,05 / 3,0 = 1,7 % bij het boek, 0,05 / 80,0 = 0,06 % bij de tafel en 0,05 / 1200 = 0,004 % bij de gang. Een kleine lengte meten met dezelfde liniaal is relatief het minst nauwkeurig.",
+         "Koos je even groot? Het getal na ± is bij alle drie 0,05, maar in verschillende eenheden en op heel verschillende lengtes. Wat telt, is de onzekerheid gedeeld door de waarde."
+        ],
+        "uh": "Relatieve onzekerheid = ± / waarde.",
+        "ctx": "Een leerling meet met een rolmaat en een liniaal drie lengtes: de dikte van een boek (3,0 ± 0,05 cm), de breedte van een tafel (80,0 ± 0,05 cm) en de lengte van de gang (12,00 ± 0,05 m). Ze vraagt zich af welke meting het minst nauwkeurig is, vergeleken met de grootte van wat ze meet."
+       },
+       {
+        "v": "Hoe herken je een systematische fout?",
+        "o": [
+         "Een fout die soms te hoog en soms te laag uitvalt",
+         "Elke meting wijkt dezelfde kant op af",
+         "Een rekenfout in het verslag",
+         "Een fout die alleen bij de eerste meting optreedt"
+        ],
+        "c": 1,
+        "d": 1,
+        "s": 1,
+        "u": "Systematisch: steeds dezelfde richting.",
+        "uo": [
+         "Koos je soms hoog en soms laag? Dat is een toevallige fout. Die middelt uit als je vaker meet.",
+         "Klopt: een systematische fout maakt elke meting te hoog of elke meting te laag, bijvoorbeeld een weegschaal die op 0,3 g staat zonder iets erop. Herhalen helpt daar niet tegen.",
+         "Koos je rekenfout? Een rekenfout is een vergissing, geen meetfout. Een systematische fout zit in de meting zelf.",
+         "Koos je alleen de eerste meting? Een systematische fout zit juist in elke meting, op dezelfde manier."
+        ],
+        "uh": "Systematisch = steeds dezelfde kant."
+       },
+       {
+        "v": "Een weegschaal geeft 0,3 g aan als er niets op ligt. Wat voor fout is dat en wat doe je eraan?",
+        "o": [
+         "Nulpuntsfout: tarra drukken",
+         "Een toevallige fout: vaker meten en middelen",
+         "Een parallaxfout: recht van voren kijken",
+         "Geen fout: de weegschaal is gewoon nauwkeurig"
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 1,
+        "u": "Nulpuntsfout = systematisch; corrigeren.",
+        "uo": [
+         "Klopt: dit is een nulpuntsfout, een systematische fout. Elke meting is 0,3 g te hoog. Zet de weegschaal op nul (tarra) of trek 0,3 g van elke meting af.",
+         "Koos je toevallig? Vaker meten helpt niet: elke meting is opnieuw 0,3 g te hoog. Het gemiddelde blijft dus ook te hoog.",
+         "Koos je parallax? Bij een digitale weegschaal is er geen wijzer en dus geen parallax. Het probleem is het nulpunt.",
+         "Koos je geen fout? Zonder iets erop zou de weegschaal 0,0 g moeten geven. Alle metingen zijn nu te hoog."
+        ],
+        "uh": "Nulpuntsfout: corrigeren."
+       },
+       {
+        "v": "Welke fout maakt de leerling vooral, en waarom helpt het gemiddelde van tien metingen daar niet tegen?",
+        "o": [
+         "Geen fout; met tien metingen is het altijd nauwkeurig",
+         "Een toevallige fout; het gemiddelde is altijd goed",
+         "Een parallaxfout; ze kijkt schuin naar de stopwatch",
+         "Systematisch: elke tijd is te lang"
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 1,
+        "u": "Altijd te laat stoppen → systematisch te lang.",
+        "uo": [
+         "Koos je geen fout? Meer metingen maken het resultaat niet nauwkeuriger als elke meting dezelfde kant op afwijkt.",
+         "Koos je toevallig? De spreiding tussen de metingen is wel toevallig, maar alle tijden zijn ook te lang. Dat deel verdwijnt niet door te middelen.",
+         "Koos je parallax? Een digitale stopwatch heeft geen wijzer. Het probleem zit in het moment van stoppen.",
+         "Klopt: ze start op het geluid en stopt pas als ze de bal ziet landen en reageert. Dat maakt elke tijd ongeveer even veel te lang: een systematische fout. Middelen haalt toevallige schommelingen weg, maar het gemiddelde blijft te lang."
+        ],
+        "uh": "Systematisch: middelen helpt niet.",
+        "ctx": "Een leerling meet tien keer de valtijd van een bal vanaf 2,0 m met een stopwatch. Ze start bij het loslaten en stopt als ze de bal de grond ziet raken. Haar gemiddelde is 0,82 s, terwijl volgens de theorie 0,64 s hoort. Ze denkt dat tien metingen genoeg zijn voor een nauwkeurig antwoord."
+       },
+       {
+        "v": "Wanneer noem je een meetfout toevallig?",
+        "o": [
+         "Een fout door een kapot of verkeerd meetinstrument",
+         "Een fout die altijd even groot is",
+         "Een willekeurige afwijking per meting",
+         "Een fout die je pas na afloop ontdekt"
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 1,
+        "u": "Toevallig: willekeurig, middelt uit.",
+        "uo": [
+         "Koos je kapot instrument? Een kapot of verkeerd afgesteld instrument geeft meestal een systematische fout.",
+         "Koos je altijd even groot? Dat is juist een systematische fout. Een toevallige fout wisselt van grootte en richting.",
+         "Klopt: een toevallige fout ontstaat bijvoorbeeld door kleine verschillen in je reactietijd of in het aflezen. De ene keer is de meting iets te hoog, de andere keer iets te laag. Door vaker te meten en te middelen worden die fouten kleiner.",
+         "Koos je pas na afloop? Wanneer je een fout ontdekt, maakt niet uit voor het soort fout. Het gaat om of hij steeds dezelfde kant op gaat of niet."
+        ],
+        "uh": "Toevallig = willekeurig."
+       },
+       {
+        "v": "Wat voor fout zit in deze thermometer en hoe ontdek je die?",
+        "o": [
+         "Een toevallige fout; ontdekken door vaker te meten",
+         "Systematisch; ijken in smeltend ijs",
+         "Een parallaxfout; ontdekken door recht te kijken",
+         "Geen fout; 2 °C verschil valt binnen elke meetonzekerheid"
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 1,
+        "u": "Altijd 2 °C te hoog = systematisch; ijken toont het.",
+        "uo": [
+         "Koos je toevallig? Vaker meten geeft steeds dezelfde 2 °C te veel. Het gemiddelde blijft dus fout; je ontdekt het alleen door te vergelijken met een bekende temperatuur.",
+         "Klopt: als de thermometer bij elke temperatuur 2 °C te veel aangeeft, is dat een systematische fout. Je ontdekt het door te ijken: in smeltend ijs geeft hij dan 2 °C in plaats van 0 °C.",
+         "Koos je parallax? Bij een digitale thermometer is er geen wijzer. De fout zit in het instrument zelf.",
+         "Koos je binnen de onzekerheid? Deze thermometer leest af op een tiende graad. Een afwijking van 2 °C is veel groter dan dat."
+        ],
+        "uh": "IJken ontdekt systematische fouten.",
+        "ctx": "Een leerling gebruikt een digitale thermometer die op 0,1 °C afleest. Ze meet de temperatuur van water op verschillende momenten en vergelijkt met de thermometer van haar docent. Haar thermometer geeft telkens precies 2,0 °C meer aan dan die van de docent."
+       },
+       {
+        "v": "Waarom herhaal je een meting een paar keer?",
+        "o": [
+         "Om toevallige fouten uit te middelen",
+         "Om systematische fouten te verwijderen",
+         "Omdat een eerste meting altijd fout is",
+         "Om meer significante cijfers te krijgen"
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 2,
+        "u": "Middelen verkleint toevallige fouten.",
+        "uo": [
+         "Klopt: bij herhaalde metingen vallen toevallige fouten soms naar boven en soms naar beneden uit. Het gemiddelde ligt daardoor dichter bij de echte waarde, en aan de spreiding zie je hoe nauwkeurig je meet.",
+         "Koos je systematische fouten? Die zitten in elke meting even groot. Herhalen helpt daar niet tegen; daarvoor moet je je meetmethode aanpassen.",
+         "Koos je eerste meting altijd fout? De eerste meting is niet slechter dan de rest. Het gaat erom dat één meting toevallig kan afwijken.",
+         "Koos je meer cijfers? Het gemiddelde kan nauwkeuriger zijn, maar je mag niet zomaar extra cijfers opschrijven. Het gaat om het verkleinen van de toevallige fout."
+        ],
+        "uh": "Herhalen: toevallige fout kleiner."
+       },
+       {
+        "v": "Vier metingen van een tijd zijn 2,31 s, 2,28 s, 2,35 s en 2,30 s. Wat is het gemiddelde?",
+        "o": [
+         "9,24 s",
+         "2,30 s",
+         "2,35 s",
+         "2,31 s"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 2,
+        "u": "(2,31+2,28+2,35+2,30)/4 = 9,24/4.",
+        "uo": [
+         "Koos je 9,24 s? Dat is de som van de vier metingen. Deel nog door het aantal metingen, 4, om het gemiddelde te krijgen.",
+         "Koos je 2,30 s? Dat is de laatste meting of de middelste waarde, niet het gemiddelde. Tel alles op en deel door het aantal.",
+         "Koos je 2,35 s? Dat is de grootste meting. Het gemiddelde ligt tussen de kleinste en de grootste in.",
+         "Klopt: tel op: 2,31 + 2,28 + 2,35 + 2,30 = 9,24 s. Deel door 4: 2,31 s."
+        ],
+        "uh": "Gemiddelde = som / aantal."
+       },
+       {
+        "v": "Hoe groot is de meetonzekerheid ongeveer, als je die schat uit de spreiding?",
+        "o": [
+         "± 0,07 s",
+         "± 0,01 s",
+         "± 0,04 s",
+         "± 2,31 s"
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 2,
+        "u": "Spreiding: 2,28-2,35 → ± halve breedte ≈ 0,035.",
+        "uo": [
+         "Koos je ± 0,07 s? Dat is de hele breedte van de spreiding. De onzekerheid rond het gemiddelde is ongeveer de helft daarvan.",
+         "Koos je ± 0,01 s? Dat is de afleesonzekerheid van de stopwatch. De metingen verschillen onderling veel meer, en dat moet in de onzekerheid terugkomen.",
+         "Klopt: de metingen liggen tussen 2,28 en 2,35 s, een breedte van 0,07 s. Een eenvoudige schatting van de onzekerheid is de helft daarvan: ± 0,04 s. Resultaat: t = 2,31 ± 0,04 s.",
+         "Koos je ± 2,31 s? Dat is het gemiddelde zelf. De onzekerheid is veel kleiner: hoeveel de metingen rond het gemiddelde schommelen."
+        ],
+        "uh": "Onzekerheid ≈ halve spreiding.",
+        "ctx": "Een leerling meet vier keer de tijd die een karretje nodig heeft om een helling af te rijden: 2,31 s, 2,28 s, 2,35 s en 2,30 s. Het gemiddelde is 2,31 s. Haar stopwatch toont honderdsten. Ze wil haar resultaat opschrijven met een meetonzekerheid."
+       },
+       {
+        "v": "Bij herhaalde metingen springt er één meting uit: 2,31 – 2,29 – 3,10 – 2,33 s. Wat doe je?",
+        "o": [
+         "Altijd alle metingen meenemen in het gemiddelde",
+         "Uitzoeken wat er misging",
+         "De hoogste meting als uitkomst nemen",
+         "Alleen de afwijkende meting gebruiken"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 2,
+        "u": "Uitschieter: controleren, eventueel weglaten met reden.",
+        "uo": [
+         "Koos je altijd meenemen? Een duidelijke vergissing trekt het gemiddelde scheef. Je mag een uitschieter weglaten, als je uitlegt waarom.",
+         "Klopt: 3,10 s wijkt sterk af van de rest. Waarschijnlijk ging er iets mis, zoals te laat drukken. Ga na wat er gebeurde; meestal laat je zo'n uitschieter weg en vermeld je dat in je verslag.",
+         "Koos je de hoogste? De hoogste is juist de verdachte meting. De andere drie liggen dicht bij elkaar.",
+         "Koos je alleen de afwijkende? Juist die meting is het minst betrouwbaar. De drie metingen die op elkaar lijken, zeggen meer."
+        ],
+        "uh": "Uitschieter: controleren."
+       },
+       {
+        "v": "Wat zegt een grote spreiding tussen herhaalde metingen?",
+        "o": [
+         "De toevallige fouten zijn groot",
+         "Er is zeker een systematische fout",
+         "De gemiddelde waarde is precies goed",
+         "Er zijn te veel metingen gedaan"
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 2,
+        "u": "Spreiding ↔ toevallige fouten.",
+        "uo": [
+         "Klopt: een grote spreiding betekent dat de metingen onderling veel verschillen. De toevallige fouten zijn dan groot en de meetonzekerheid ook.",
+         "Koos je systematische fout? Die maakt alle metingen dezelfde kant op fout, maar de spreiding hoeft daardoor niet groot te worden. Spreiding gaat over toevallige fouten.",
+         "Koos je precies goed? Bij een grote spreiding is het gemiddelde juist minder zeker. Hoe groter de spreiding, hoe groter de onzekerheid in het gemiddelde.",
+         "Koos je te veel metingen? Meer metingen maken de spreiding niet groter; ze laten haar alleen beter zien en maken het gemiddelde betrouwbaarder."
+        ],
+        "uh": "Grote spreiding = grote toevallige fout."
+       },
+       {
+        "v": "Wat doe je als je een meetinstrument ijkt?",
+        "o": [
+         "De batterij van het instrument vervangen",
+         "Het instrument schoonmaken",
+         "Het instrument kapot maken en opnieuw bouwen",
+         "De schaal vastleggen met bekende waarden"
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 3,
+        "u": "IJken = schaal maken/controleren met referentiewaarden.",
+        "uo": [
+         "Koos je batterij? Een lege batterij kan meetfouten geven, maar het vervangen ervan is geen ijken.",
+         "Koos je schoonmaken? Een schoon instrument is handig, maar dat is geen ijken. IJken gaat over de juistheid van de schaal.",
+         "Koos je opnieuw bouwen? Bij ijken verander je het instrument niet; je legt vast welke aflezing bij welke waarde hoort.",
+         "Klopt: bij ijken vergelijk je de aflezing van het instrument met bekende waarden. Zo maak je een schaal of controleer je of de schaal klopt, bijvoorbeeld een thermometer in smeltend ijs (0 °C) en kokend water (100 °C)."
+        ],
+        "uh": "IJken = met bekende waarden."
+       },
+       {
+        "v": "Welke twee vaste punten gebruik je om een vloeistofthermometer in graden Celsius te ijken?",
+        "o": [
+         "Het absolute nulpunt en kokend water",
+         "Kamertemperatuur en lichaamstemperatuur",
+         "Smeltend ijs en kokend water",
+         "Kraanwater en heet kraanwater"
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 3,
+        "u": "Celsius: smeltpunt en kookpunt van water.",
+        "uo": [
+         "Koos je het absolute nulpunt? Dat is −273 °C en in een schoollab niet te bereiken. Je gebruikt smeltend ijs.",
+         "Koos je kamer- en lichaamstemperatuur? Die liggen niet vast: een kamer kan 18 of 23 °C zijn. Voor ijken heb je punten nodig die altijd hetzelfde zijn.",
+         "Klopt: smeltend ijs is altijd 0 °C en kokend water (bij normale luchtdruk) 100 °C. Markeer de stand van de vloeistof bij beide en verdeel het stuk ertussen in honderd gelijke delen.",
+         "Koos je kraanwater? De temperatuur van kraanwater wisselt. Vaste punten moeten precies bekend en altijd gelijk zijn."
+        ],
+        "uh": "Vaste punten: 0 en 100 °C."
+       },
+       {
+        "v": "Welke temperatuur hoort bij een vloeistofkolom van 9,0 cm?",
+        "o": [
+         "45 °C",
+         "35 °C",
+         "9,0 °C",
+         "41 °C"
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 3,
+        "u": "0,20 cm/°C; (9,0−2,0)/0,20 = 35.",
+        "uo": [
+         "Koos je 45 °C? Dan heb je gedeeld door 0,20 zonder eerst de 2,0 cm bij 0 °C af te trekken. Het nulpunt ligt niet bij 0 cm.",
+         "Klopt: tussen 0 en 100 °C stijgt de kolom van 2,0 naar 22,0 cm: 20,0 cm per 100 °C, dus 0,20 cm per °C. Bij 9,0 cm is de kolom 7,0 cm boven het nulpunt: 7,0 / 0,20 = 35 °C.",
+         "Koos je 9,0 °C? Dan heb je de lengte in centimeter als temperatuur gelezen. Je moet de ijking gebruiken.",
+         "Koos je 41 °C? Dan heb je met 0,22 cm per °C gerekend. Het stuk tussen de vaste punten is 22,0 − 2,0 = 20,0 cm."
+        ],
+        "uh": "IJkgrafiek: eerst nulpunt aftrekken.",
+        "ctx": "Een leerling maakt zelf een thermometer met een glazen buisje met gekleurde alcohol. In smeltend ijs is de vloeistofkolom 2,0 cm lang, in kokend water 22,0 cm. Ze neemt aan dat de kolom gelijkmatig langer wordt. Daarna houdt ze het buisje in een bak warm water."
+       },
+       {
+        "v": "Waarvoor gebruik je een ijkgrafiek?",
+        "o": [
+         "Aflezing omzetten in echte waarde",
+         "Een grafiek van alle meetfouten",
+         "Een grafiek van de temperatuur tegen de tijd",
+         "Een grafiek die je pas na het examen maakt"
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 3,
+        "u": "IJkgrafiek: aflezing → echte grootheid.",
+        "uo": [
+         "Klopt: een ijkgrafiek zet de aflezing van een instrument uit tegen de bekende waarden. Daarna kun je bij elke nieuwe aflezing de echte waarde aflezen, zoals bij de zelfgemaakte thermometer of een veer als krachtmeter.",
+         "Koos je meetfouten? Een ijkgrafiek gaat niet over fouten, maar over het verband tussen aflezing en echte waarde.",
+         "Koos je temperatuur tegen tijd? Dat is een gewone meetgrafiek, bijvoorbeeld van het afkoelen. Een ijkgrafiek koppelt de aflezing aan de waarde.",
+         "Koos je na het examen? Je maakt een ijkgrafiek juist vóór je ermee gaat meten."
+        ],
+        "uh": "IJkgrafiek: aflezing → waarde."
+       },
+       {
+        "v": "Hoe ijk je een veer zodat je hem als krachtmeter kunt gebruiken?",
+        "o": [
+         "Vergelijk de kleur van de veer met een tabel",
+         "Meet de lengte van de veer zonder gewicht",
+         "Trek de veer zo ver mogelijk uit",
+         "Bekende gewichten eraan hangen"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 3,
+        "u": "Bekende krachten → schaal.",
+        "uo": [
+         "Koos je kleur? De kleur zegt niets over hoe stug een veer is. Je moet meten met bekende krachten.",
+         "Koos je de lengte zonder gewicht? Dat is alleen het nulpunt. Voor een schaal heb je ook metingen met bekende krachten nodig.",
+         "Koos je zo ver mogelijk uittrekken? Dan rek je de veer misschien blijvend uit en klopt de schaal daarna niet meer.",
+         "Klopt: hang er gewichten aan waarvan je de zwaartekracht kent, bijvoorbeeld 0,50 N, 1,0 N en 1,5 N, en noteer telkens de uitrekking. Met die ijkgrafiek kun je daarna een onbekende kracht aflezen."
+        ],
+        "uh": "IJken met bekende gewichten."
+       },
+       {
+        "v": "Hoe meet je de dikte van één vel papier zo nauwkeurig mogelijk met een liniaal?",
+        "o": [
+         "Vouw het vel dubbel en meet de vouw",
+         "Meet één vel heel goed met de liniaal",
+         "Een stapel meten en delen",
+         "Schat de dikte op het oog"
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 4,
+        "u": "Veel tegelijk meten: onzekerheid per vel klein.",
+        "uo": [
+         "Koos je dubbelvouwen? Dan meet je twee vellen, nog steeds veel te dun voor een liniaal.",
+         "Koos je één vel meten? Een vel is ongeveer 0,1 mm dik, kleiner dan de kleinste schaaldeling van een liniaal. Je meet dan eigenlijk niets.",
+         "Klopt: één vel is dunner dan een millimeter en met een liniaal niet te meten. Een stapel van 200 vellen is bijvoorbeeld 20 mm ± 0,5 mm. Per vel is dat 0,100 mm ± 0,0025 mm.",
+         "Koos je schatten? Op het oog kun je dit niet betrouwbaar doen. Door een stapel te meten wordt de meting veel beter."
+        ],
+        "uh": "Stapel meten, delen."
+       },
+       {
+        "v": "Waarom meet de leerling liever de tijd van 20 trillingen dan van 1?",
+        "o": [
+         "Na 20 trillingen is de slinger rustiger",
+         "De reactietijd wordt over 20 trillingen verdeeld",
+         "Bij 1 trilling kun je de stopwatch niet starten",
+         "20 is een rond getal en makkelijker om mee te rekenen"
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 4,
+        "u": "Onzekerheid door reactietijd ÷ 20.",
+        "uo": [
+         "Koos je rustiger? De slinger zwaait steeds ongeveer even regelmatig. Het voordeel zit in hoe de reactietijd wordt verdeeld.",
+         "Klopt: je reactietijd van ongeveer 0,2 s bij starten en stoppen geldt maar één keer. Over 20 trillingen is dat per trilling maar 0,01 s, terwijl het bij één trilling de hele 0,2 s is.",
+         "Koos je niet kunnen starten? Dat kan wel, maar de onzekerheid is dan groot vergeleken met de korte tijd van één trilling.",
+         "Koos je rond getal? Het aantal maakt het rekenen niet moeilijker. Het gaat om het verkleinen van de onzekerheid per trilling."
+        ],
+        "uh": "Meer trillingen: kleinere onzekerheid per trilling.",
+        "ctx": "Een leerling meet de trillingstijd van een slinger die ongeveer 1,5 s duurt. Ze start en stopt de stopwatch met de hand en schat dat starten en stoppen samen een onzekerheid van ongeveer 0,2 s geven. Ze twijfelt tussen één trilling meten of twintig."
+       },
+       {
+        "v": "Welke maatregel verkleint een toevallige fout?",
+        "o": [
+         "De meting vaker herhalen en middelen",
+         "De nulpuntsfout corrigeren",
+         "Een ander instrument met dezelfde fout nemen",
+         "De uitkomst afronden op minder cijfers"
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 4,
+        "u": "Toevallig ↔ herhalen.",
+        "uo": [
+         "Klopt: toevallige fouten vallen willekeurig uit. Door vaak te meten en te middelen worden ze kleiner.",
+         "Koos je nulpuntsfout? Dat is een systematische fout. Corrigeren helpt tegen die fout, niet tegen toevallige schommelingen.",
+         "Koos je een ander instrument met dezelfde fout? Dan verandert er niets. Een toevallige fout verklein je door herhalen.",
+         "Koos je afronden? Afronden verbergt de fout alleen, het maakt de meting niet beter."
+        ],
+        "uh": "Herhalen tegen toevallige fouten."
+       },
+       {
+        "v": "Een leerling meet g = 9,6 ± 0,3 m/s². De tabelwaarde is 9,81 m/s². Klopt de meting?",
+        "o": [
+         "Ja, want het verschil is minder dan 1",
+         "Nee, 9,6 is niet gelijk aan 9,81",
+         "Nee, de onzekerheid is te groot",
+         "Ja, 9,81 ligt binnen 9,3 tot 9,9"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 5,
+        "u": "Binnen de onzekerheidsmarge = in overeenstemming.",
+        "uo": [
+         "Koos je verschil minder dan 1? Of een verschil klein genoeg is, hangt af van de onzekerheid. Bij ± 0,1 zou 9,6 niet kloppen met 9,81.",
+         "Koos je niet gelijk? Een meting is nooit precies gelijk. Het gaat erom of de tabelwaarde binnen de onzekerheidsmarge valt.",
+         "Koos je onzekerheid te groot? ± 0,3 is voor een schoolproef redelijk. De vraag is of 9,81 binnen de marge valt, en dat is zo.",
+         "Klopt: met de onzekerheid ligt de echte waarde waarschijnlijk tussen 9,3 en 9,9 m/s². De tabelwaarde 9,81 ligt daarbinnen, dus de meting is in overeenstemming met de theorie."
+        ],
+        "uh": "Vergelijk met de marge."
+       },
+       {
+        "v": "Hoe groot is de procentuele afwijking van de gemeten waarde?",
+        "o": [
+         "21 %",
+         "0,21 %",
+         "2,1 %",
+         "98 %"
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 5,
+        "u": "|9,60 − 9,81| / 9,81 × 100 %.",
+        "uo": [
+         "Koos je 21 %? Dan heb je een factor tien te veel genomen. 0,21 / 9,81 is ongeveer 0,02, dus 2 %.",
+         "Koos je 0,21 %? Dat is het verschil in m/s², niet in procenten. Deel door de tabelwaarde en vermenigvuldig met 100 %.",
+         "Klopt: de afwijking is 9,81 − 9,60 = 0,21 m/s². Gedeeld door de tabelwaarde: 0,21 / 9,81 = 0,021 = 2,1 %.",
+         "Koos je 98 %? Dat is 9,60 / 9,81 × 100 %: hoeveel procent de meting van de tabelwaarde is. De afwijking is het verschil: ongeveer 2 %."
+        ],
+        "uh": "Afwijking % = verschil / tabelwaarde × 100 %.",
+        "ctx": "Bij een slingerproef bepaalt een leerling de valversnelling: g = 9,60 m/s². In Binas staat voor Nederland g = 9,81 m/s². Haar docent vraagt haar de procentuele afwijking uit te rekenen en te bespreken in haar verslag."
+       },
+       {
+        "v": "Twee groepen meten dezelfde massa: groep A vindt 52,1 ± 0,2 g, groep B 52,9 ± 0,3 g. Wat kun je zeggen?",
+        "o": [
+         "De metingen zijn in overeenstemming",
+         "Ze spreken elkaar tegen",
+         "Groep B heeft gelijk omdat de onzekerheid groter is",
+         "Het gemiddelde 52,5 g is zeker de echte waarde"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 5,
+        "u": "A: 51,9–52,3; B: 52,6–53,2 → geen overlap.",
+        "uo": [
+         "Koos je in overeenstemming? Dan zouden de onzekerheidsgebieden moeten overlappen. Hier zit er 0,3 g tussen.",
+         "Klopt: A ligt tussen 51,9 en 52,3 g, B tussen 52,6 en 53,2 g. Die gebieden overlappen niet. Er is dus waarschijnlijk bij een van beide groepen een systematische fout.",
+         "Koos je B heeft gelijk? Een grotere onzekerheid maakt een meting niet juister. Het betekent juist dat B minder nauwkeurig is.",
+         "Koos je het gemiddelde? Als de metingen elkaar tegenspreken, heeft middelen weinig zin. Eerst moet je uitzoeken waar het verschil vandaan komt."
+        ],
+        "uh": "Geen overlap = tegenspraak."
+       },
+       {
+        "v": "Hoe verklein je de systematische fout bij het meten van een valtijd met de hand?",
+        "o": [
+         "Lichtsluizen gebruiken",
+         "Meet de valtijd vaker met de hand",
+         "Gebruik een stopwatch die duizendsten toont",
+         "Laat de bal van een lagere hoogte vallen"
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 4,
+        "u": "Reactietijd vermijden → automatische meting.",
+        "uo": [
+         "Klopt: lichtsluizen of een sensor starten en stoppen automatisch, zonder reactietijd. Daarmee verdwijnt de systematische fout die ontstaat doordat je steeds te laat drukt.",
+         "Koos je vaker met de hand? Elke meting heeft dan dezelfde vertraging. Middelen verkleint alleen de toevallige fout.",
+         "Koos je duizendsten? Een fijner display helpt niet als jij een tiende seconde te laat drukt. De fout zit in het drukken, niet in de stopwatch.",
+         "Koos je lagere hoogte? Dan wordt de valtijd korter en weegt je reactietijd relatief nog zwaarder."
+        ],
+        "uh": "Automatisch meten tegen reactietijd."
+       },
+       {
+        "v": "Van welk metaal is het blokje waarschijnlijk gemaakt?",
+        "o": [
+         "Lood (11,3 g/cm³)",
+         "Ijzer (7,87 g/cm³)",
+         "Koper (8,96 g/cm³)",
+         "Aluminium (2,70 g/cm³)"
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 5,
+        "u": "2,6 ± 0,2 → 2,4 tot 2,8; aluminium (2,70) valt binnen de marge.",
+        "uo": [
+         "Koos je lood? Lood is ruim vier keer zo dicht. Een blokje lood van dit formaat zou veel zwaarder zijn.",
+         "Koos je ijzer? 7,87 g/cm³ ligt ver buiten de marge van 2,4 tot 2,8. Zelfs met een grote meetfout kom je daar niet.",
+         "Koos je koper? Koper is meer dan drie keer zo dicht als de meting. Dat valt ruim buiten de onzekerheid.",
+         "Klopt: de meting ligt tussen 2,4 en 2,8 g/cm³. Alleen de dichtheid van aluminium, 2,70 g/cm³, valt binnen die marge."
+        ],
+        "uh": "Welke tabelwaarde valt binnen de marge?",
+        "ctx": "Een leerling bepaalt de dichtheid van een onbekend metalen blokje en vindt 2,6 ± 0,2 g/cm³. In Binas zoekt ze de dichtheden op van een paar metalen: aluminium 2,70, ijzer 7,87, koper 8,96 en lood 11,3 g/cm³."
+       }
+      ],
+      "oe": [
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een leerling meet vijf keer de tijd die een knikker nodig heeft om een goot af te rollen: 1,82 s; 1,79 s; 1,85 s; 2,40 s; 1,80 s. Bij de vierde meting zag ze de knikker even haperen. Haar stopwatch toont honderdsten.",
+        "v": "Bepaal de gemiddelde tijd met een meetonzekerheid en leg uit wat je met de vierde meting doet.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "De vierde meting is een uitschieter met een bekende oorzaak (haperen) en laat je weg (1p). Gemiddelde van de andere vier: (1,82 + 1,79 + 1,85 + 1,80) / 4 = 1,82 s (1p). Spreiding 1,79-1,85: onzekerheid ongeveer ± 0,03 s, dus t = 1,82 ± 0,03 s (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een leerling maakt een thermometer van een buisje met alcohol. In smeltend ijs is de kolom 3,0 cm, in kokend water 18,0 cm. Ze neemt aan dat de kolom gelijkmatig langer wordt. Op een zomerdag is de kolom buiten 7,5 cm.",
+        "v": "Bereken hoeveel cm de kolom per graad stijgt en welke temperatuur het buiten is.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Per 100 °C: 18,0 − 3,0 = 15,0 cm, dus 0,150 cm per °C (1p). Boven het nulpunt: 7,5 − 3,0 = 4,5 cm (1p). Temperatuur: 4,5 / 0,150 = 30 °C (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Bij een slingerproef meet een groep de trillingstijd door met de hand de tijd van 1 trilling te meten: 1,6 ± 0,2 s. Een andere groep meet de tijd van 25 trillingen: 39,6 ± 0,2 s. Volgens de theorie is de trillingstijd 1,59 s.",
+        "v": "Bereken de trillingstijd met onzekerheid voor de tweede groep en leg uit welke meting het nauwkeurigst is.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "T = 39,6 / 25 = 1,584 s; onzekerheid 0,2 / 25 = 0,008 s, dus T = 1,584 ± 0,008 s (2p). De tweede groep is veel nauwkeuriger: de reactietijd wordt over 25 trillingen verdeeld; beide metingen kloppen binnen hun marge met 1,59 s (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Twee leerlingen wegen hetzelfde steentje. Leerling A gebruikt een weegschaal die zonder iets erop 0,0 g aangeeft en vindt 24,3 g. Leerling B vindt op een andere weegschaal 25,1 g; zonder iets erop geeft die weegschaal 0,8 g aan. Ze herhalen elk hun meting vijf keer en vinden steeds hetzelfde.",
+        "v": "Leg uit wat voor fout leerling B maakt, waarom herhalen niet helpt en wat de gecorrigeerde massa is.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Een nulpuntsfout, een systematische fout: elke meting is 0,8 g te hoog (1p). Herhalen helpt niet, want de fout zit in elke meting even groot (1p). Gecorrigeerd: 25,1 − 0,8 = 24,3 g, gelijk aan leerling A (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een leerling bepaalt de geluidssnelheid met een echo tegen een muur op 85 m afstand. Ze meet een echotijd van 0,52 ± 0,04 s met een stopwatch. Volgens Binas is de geluidssnelheid bij de temperatuur van die dag 343 m/s.",
+        "v": "Bereken de geluidssnelheid uit haar meting, de procentuele afwijking, en beoordeel of de meting in overeenstemming is met Binas.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "v = 2 × 85 / 0,52 = 327 m/s (1p). Afwijking: (343 − 327) / 343 × 100 % = 4,7 % (1p). Met de onzekerheid ligt t tussen 0,48 en 0,56 s, dus v tussen 304 en 354 m/s; 343 m/s valt daarbinnen: in overeenstemming (1p)."
+       }
+      ]
      }
     ]
    },

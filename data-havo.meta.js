@@ -2190,6 +2190,28 @@ var VAKKEN = [
       "nOe": 5,
       "nBeg": 11,
       "hasSam": true
+     },
+     {
+      "id": "A4",
+      "lo": "na.A.4",
+      "gs": 2,
+      "naam": "Meetonzekerheid en ijken",
+      "beschrijving": "Je schrijft een meetwaarde op met meetonzekerheid, onderscheidt toevallige en systematische fouten, bepaalt een gemiddelde en een onzekerheid uit herhaalde metingen, ijkt een meetinstrument met een ijkgrafiek, vergroot de nauwkeurigheid van een meting en beoordeelt of een resultaat klopt met de theorie.",
+      "ceStatus": "CE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Meetonzekerheid en aflezen",
+       "Toevallige en systematische fouten",
+       "Herhalen en middelen",
+       "IJken van een meetinstrument",
+       "De nauwkeurigheid vergroten",
+       "Een resultaat beoordelen"
+      ],
+      "nSv": 28,
+      "nOe": 5,
+      "nBeg": 11,
+      "hasSam": true
      }
     ]
    },
