@@ -2062,6 +2062,28 @@ var VAKKEN = [
       "nOe": 5,
       "nBeg": 11,
       "hasSam": true
+     },
+     {
+      "id": "E5",
+      "lo": "sk.E.5",
+      "gs": 2,
+      "naam": "Chemie in voeding en energie",
+      "beschrijving": "Je beschrijft de bouw van koolhydraten, vetten en eiwitten, rekent de energie van voedsel uit met een etiket, legt de werking van additieven en E-nummers en de ADI uit, beschrijft hoe biobrandstoffen gemaakt worden en beoordeelt of ze CO₂-neutraal zijn.",
+      "ceStatus": "CE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Voedingsstoffen en hun bouw",
+       "Energie uit voedsel",
+       "Additieven en E-nummers",
+       "Biobrandstoffen maken",
+       "Is biobrandstof CO₂-neutraal?",
+       "Brandstoffen en voedsel vergelijken"
+      ],
+      "nSv": 28,
+      "nOe": 5,
+      "nBeg": 11,
+      "hasSam": true
      }
     ]
    }

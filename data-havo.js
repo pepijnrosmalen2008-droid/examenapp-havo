@@ -82802,6 +82802,695 @@ var VAKKEN = [
         "u": "Nederland 1,8 + 0,1 = 1,9 kg; Spanje 0,3 + 0,5 = 0,8 kg (1p). Het bordje klopt hier niet: de verwarmde kas weegt zwaarder dan het transport, dus de Spaanse tomaat heeft in de winter een lagere uitstoot (1p)."
        }
       ]
+     },
+     {
+      "id": "E5",
+      "lo": "sk.E.5",
+      "gs": 2,
+      "naam": "Chemie in voeding en energie",
+      "beschrijving": "Je beschrijft de bouw van koolhydraten, vetten en eiwitten, rekent de energie van voedsel uit met een etiket, legt de werking van additieven en E-nummers en de ADI uit, beschrijft hoe biobrandstoffen gemaakt worden en beoordeelt of ze CO₂-neutraal zijn.",
+      "ceStatus": "CE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Voedingsstoffen en hun bouw",
+       "Energie uit voedsel",
+       "Additieven en E-nummers",
+       "Biobrandstoffen maken",
+       "Is biobrandstof CO₂-neutraal?",
+       "Brandstoffen en voedsel vergelijken"
+      ],
+      "sam": "Koolhydraten (glucose, zetmeel), vetten (glycerol + vetzuren) en eiwitten (aminozuren, met stikstof) leveren energie: vet 37 kJ/g, koolhydraat en eiwit 17 kJ/g. Additieven met een E-nummer zijn toegestaan binnen de ADI (per kg lichaamsgewicht). Bio-ethanol ontstaat door vergisting, biodiesel uit olie en methanol, biogas uit mest. Biobrandstof is kortcyclisch, maar niet volledig CO₂-vrij door teelt en transport.",
+      "begrippen": [
+       {
+        "t": "Koolhydraat",
+        "d": "Voedingsstof als suiker of zetmeel, opgebouwd uit C, H en O; zetmeel is een keten van glucose."
+       },
+       {
+        "t": "Vet",
+        "d": "Ester van glycerol met drie vetzuren; levert ongeveer 37 kJ per gram."
+       },
+       {
+        "t": "Eiwit",
+        "d": "Keten van aminozuren; de enige grote voedingsstof met stikstof."
+       },
+       {
+        "t": "Energie-inhoud",
+        "d": "Energie die een voedingsstof per gram levert: vet 37 kJ, koolhydraat en eiwit 17 kJ."
+       },
+       {
+        "t": "Additief",
+        "d": "Stof die aan voedsel wordt toegevoegd, zoals een conserveermiddel of kleurstof."
+       },
+       {
+        "t": "E-nummer",
+        "d": "Code voor een additief dat in de EU is beoordeeld en toegestaan."
+       },
+       {
+        "t": "Antioxidant",
+        "d": "Stof die eerder met zuurstof reageert dan het voedsel, zoals vitamine C (E300)."
+       },
+       {
+        "t": "ADI",
+        "d": "Aanvaardbare dagelijkse inname: de hoeveelheid per kg lichaamsgewicht die je elke dag veilig kunt binnenkrijgen."
+       },
+       {
+        "t": "Bio-ethanol",
+        "d": "Ethanol gemaakt door vergisting van suikers uit planten."
+       },
+       {
+        "t": "Biodiesel",
+        "d": "Brandstof gemaakt uit plantaardige olie en methanol, met glycerol als bijproduct."
+       },
+       {
+        "t": "Biogas",
+        "d": "Gas, vooral methaan, dat ontstaat als bacteriën zonder zuurstof mest en afval afbreken."
+       }
+      ],
+      "sv": [
+       {
+        "v": "Uit welke bouwstenen bestaan eiwitten?",
+        "o": [
+         "Glycerol en vetzuren",
+         "Glucose",
+         "Aminozuren",
+         "Nucleotiden en zouten"
+        ],
+        "c": 2,
+        "d": 1,
+        "s": 0,
+        "u": "Eiwitten = ketens van aminozuren.",
+        "uo": [
+         "Koos je glycerol en vetzuren? Dat zijn de bouwstenen van vetten. Eiwitten bestaan uit aminozuren.",
+         "Koos je glucose? Glucose is de bouwsteen van zetmeel en andere koolhydraten, niet van eiwitten.",
+         "Klopt: eiwitten zijn lange ketens van aminozuren, gekoppeld door condensatie. Je lichaam breekt ze bij de vertering weer af tot aminozuren.",
+         "Koos je nucleotiden? Die vormen DNA en RNA, niet de eiwitten in je voedsel. Eiwitten zijn ketens van aminozuren."
+        ],
+        "uh": "Eiwit = aminozuren."
+       },
+       {
+        "v": "Welke stof ontstaat als zetmeel in je darmen volledig wordt verteerd?",
+        "o": [
+         "Aminozuren",
+         "Glucose",
+         "Glycerol",
+         "Ethanol"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 0,
+        "u": "Zetmeel = keten van glucose; hydrolyse geeft glucose.",
+        "uo": [
+         "Koos je aminozuren? Die ontstaan bij de vertering van eiwitten. Zetmeel is een koolhydraat. Bij zetmeel komen dus geen aminozuren vrij.",
+         "Klopt: zetmeel is een lange keten van glucose-eenheden. Bij de vertering hydrolyseren enzymen die keten tot losse glucosemoleculen.",
+         "Koos je glycerol? Glycerol komt vrij bij de vertering van vetten, samen met vetzuren. Zetmeel levert alleen glucose op.",
+         "Koos je ethanol? Ethanol ontstaat bij vergisting door gist, niet bij de vertering in je darmen."
+        ],
+        "uh": "Zetmeel → glucose."
+       },
+       {
+        "v": "Welke conclusie past bij deze waarneming?",
+        "o": [
+         "Zetmeel wordt in de mond afgebroken tot suikers",
+         "Het brood bevat veel vet",
+         "Speeksel bevat suiker die aan het brood wordt toegevoegd",
+         "Het brood bevat eiwitten die zoet smaken"
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 0,
+        "u": "Amylase in speeksel hydrolyseert zetmeel tot zoete suikers.",
+        "uo": [
+         "Klopt: speeksel bevat het enzym amylase, dat zetmeel hydrolyseert tot kleinere suikers zoals maltose. Die smaken zoet. Daarom wordt brood zoeter als je lang kauwt.",
+         "Koos je vet? Vet smaakt niet zoet en wordt niet in de mond afgebroken. De zoete smaak komt van suikers uit zetmeel.",
+         "Koos je speeksel bevat suiker? Speeksel bevat een enzym, geen suiker. Het enzym maakt de suiker uit het zetmeel.",
+         "Koos je eiwitten? Eiwitten worden pas in de maag afgebroken en smaken niet zoet. De zoete smaak komt van suikers uit zetmeel."
+        ],
+        "uh": "Zetmeel + amylase → zoete suikers.",
+        "ctx": "Een leerling kauwt een stuk wit brood zonder beleg twee minuten lang zonder te slikken. Na een tijdje begint het brood zoet te smaken, terwijl er geen suiker in zat volgens het etiket. Wit brood bestaat voor een groot deel uit zetmeel."
+       },
+       {
+        "v": "Wat hebben koolhydraten, vetten en eiwitten gemeen?",
+        "o": [
+         "Ze bevatten alle drie stikstof in hun moleculen",
+         "Ze bestaan alle drie uit aminozuren",
+         "Ze lossen alle drie goed op in water",
+         "Koolstofverbindingen die energie leveren"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 0,
+        "u": "Alle drie zijn organische stoffen en leveren energie bij verbranding in je lichaam.",
+        "uo": [
+         "Koos je stikstof? Alleen eiwitten bevatten stikstof, in hun aminogroepen. Koolhydraten en vetten bevatten alleen C, H en O.",
+         "Koos je aminozuren? Alleen eiwitten bestaan uit aminozuren. Koolhydraten en vetten hebben andere bouwstenen.",
+         "Koos je goed oplosbaar? Vetten zijn juist hydrofoob en lossen slecht op in water. Dat hebben ze dus niet gemeen.",
+         "Klopt: koolhydraten, vetten en eiwitten zijn organische stoffen. Je lichaam kan ze alle drie verbranden tot CO₂ en water en daarbij energie vrijmaken."
+        ],
+        "uh": "Drie energieleveranciers."
+       },
+       {
+        "v": "Hoeveel energie levert 1 gram vet ongeveer?",
+        "o": [
+         "4 kJ",
+         "17 kJ",
+         "37 kJ",
+         "100 kJ"
+        ],
+        "c": 2,
+        "d": 1,
+        "s": 1,
+        "u": "Vet 37 kJ/g; koolhydraat en eiwit 17 kJ/g.",
+        "uo": [
+         "Koos je 4 kJ? Dat lijkt op 4 kcal (kilocalorie) per gram voor koolhydraten. In kJ is het 17, en voor vet 37.",
+         "Koos je 17 kJ? Dat geldt voor koolhydraten en eiwitten. Vet levert per gram ruim twee keer zoveel.",
+         "Klopt: vet levert ongeveer 37 kJ per gram, ruim twee keer zoveel als koolhydraten of eiwitten.",
+         "Koos je 100 kJ? Dat is veel te hoog. Geen enkele voedingsstof levert zoveel per gram. Ook vet, de rijkste bron, levert maar 37 kJ per gram."
+        ],
+        "uh": "Vet 37, koolhydraat 17, eiwit 17 kJ/g."
+       },
+       {
+        "v": "Waarom levert vet per gram meer energie dan suiker?",
+        "o": [
+         "Vet weegt meer dan suiker",
+         "Vet bevat minder zuurstof, dus meer te verbranden",
+         "Vet bevat stikstof die extra energie geeft bij de verbranding in je cellen",
+         "Suiker verbrandt niet in je lichaam"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 1,
+        "u": "Suiker is al deels geoxideerd (veel O); vet nauwelijks.",
+        "uo": [
+         "Koos je weegt meer? Het gaat om energie per gram, dus gewicht is al gelijk. Het verschil zit in de samenstelling.",
+         "Klopt: een suikermolecuul bevat al veel zuurstof, het is als het ware al half verbrand. Vet bestaat vooral uit lange koolwaterstofketens met weinig zuurstof. Daardoor komt er bij verbranding per gram meer energie vrij.",
+         "Koos je stikstof? Vet bevat geen stikstof. Alleen eiwitten hebben stikstof. Het verschil zit in de hoeveelheid zuurstof in het molecuul.",
+         "Koos je suiker verbrandt niet? Suiker is juist de snelste energiebron van je lichaam. Ze levert alleen minder energie per gram dan vet."
+        ],
+        "uh": "Minder O = meer te verbranden."
+       },
+       {
+        "v": "Hoeveel energie levert 100 g van dit product?",
+        "o": [
+         "1896 kJ",
+         "1200 kJ",
+         "2220 kJ",
+         "88 kJ"
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 1,
+        "u": "20 × 37 + 60 × 17 + 8 × 17 = 740 + 1020 + 136 = 1896 kJ.",
+        "uo": [
+         "Klopt: vet 20 × 37 = 740 kJ, koolhydraten 60 × 17 = 1020 kJ, eiwit 8 × 17 = 136 kJ. Samen 1896 kJ.",
+         "Koos je 1200 kJ? Dan heb je alles met 17 kJ/g gerekend. Vet levert 37 kJ per gram. Reken het vet dus apart uit: 20 × 37 = 740 kJ.",
+         "Koos je 2220 kJ? Dan heb je de koolhydraten met 37 gerekend in plaats van het vet. Let op welke waarde bij welke stof hoort.",
+         "Koos je 88 kJ? Dat is alleen het aantal grammen opgeteld: 20 + 60 + 8. Vermenigvuldig elk met de energie per gram."
+        ],
+        "uh": "Per stof grammen × kJ/g, dan optellen.",
+        "ctx": "Op het etiket van een koekje staat per 100 gram: vet 20 g, koolhydraten 60 g (waarvan suikers 30 g), eiwit 8 g, voedingsvezel 3 g. Een leerling rekent zelf de energie uit met vet 37 kJ/g en koolhydraten en eiwit 17 kJ/g. Vezels tellen niet mee."
+       },
+       {
+        "v": "Hoeveel minuten moet de leerling fietsen om de energie van één koekje (20 g) te verbruiken?",
+        "o": [
+         "Ongeveer 38 minuten",
+         "Ongeveer 64 minuten",
+         "Ongeveer 1 minuut",
+         "Ongeveer 13 minuten"
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 1,
+        "u": "20 g = 0,20 × 1896 = 379 kJ; 379 / 30 kJ per min = 12,6 min.",
+        "uo": [
+         "Koos je 38 minuten? Controleer of je de energie van één koekje (379 kJ) hebt gedeeld door 30 kJ per minuut.",
+         "Koos je 64 minuten? Dan heb je met 100 g gerekend: 1896 / 30. Eén koekje weegt maar 20 g. Neem eerst een vijfde van de energie per 100 g.",
+         "Koos je 1 minuut? Reken de energie van het koekje na: 379 kJ is ruim twaalf keer zoveel als 30 kJ.",
+         "Klopt: één koekje van 20 g levert 0,20 × 1896 = 379 kJ. Bij 30 kJ per minuut is dat 379 / 30 ≈ 13 minuten fietsen."
+        ],
+        "uh": "Eerst energie per koekje, dan delen door verbruik per minuut.",
+        "ctx": "Het koekje van het etiket levert 1896 kJ per 100 g. Eén koekje weegt 20 gram. Een leerling verbruikt bij rustig fietsen ongeveer 30 kJ per minuut extra. Ze wil weten hoe lang ze moet fietsen om één koekje te verbranden."
+       },
+       {
+        "v": "Wat gebeurt er in je cellen met glucose om energie vrij te maken?",
+        "o": [
+         "Het wordt omgezet in aminozuren",
+         "Het wordt omgezet in vet en opgeslagen",
+         "Met zuurstof omgezet in CO₂ en water",
+         "Het lost op in je bloed zonder te reageren"
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 1,
+        "u": "Verbranding (dissimilatie): C₆H₁₂O₆ + 6 O₂ → 6 CO₂ + 6 H₂O.",
+        "uo": [
+         "Koos je aminozuren? Glucose heeft geen stikstof en wordt niet omgezet in aminozuren om energie te maken.",
+         "Koos je vet? Bij een overschot kan glucose wel in vet worden omgezet, maar dan komt er geen energie vrij om te gebruiken.",
+         "Klopt: in je cellen reageert glucose met zuurstof tot koolstofdioxide en water. Daarbij komt energie vrij, net als bij een verbranding, maar langzaam en stapsgewijs.",
+         "Koos je oplossen zonder reactie? Glucose lost wel op in je bloed, maar levert pas energie als het reageert met zuurstof."
+        ],
+        "uh": "Glucose + zuurstof → CO₂ + water + energie."
+       },
+       {
+        "v": "Waarvoor wordt een conserveermiddel aan voedsel toegevoegd?",
+        "o": [
+         "Om het voedsel zoeter te maken",
+         "Om bederf te vertragen",
+         "Om er meer vitamines in te krijgen",
+         "Om de kleur feller te maken"
+        ],
+        "c": 1,
+        "d": 1,
+        "s": 2,
+        "u": "Conserveermiddelen remmen micro-organismen of reacties die bederf veroorzaken.",
+        "uo": [
+         "Koos je zoeter? Daar zijn zoetstoffen voor. Een conserveermiddel gaat over houdbaarheid. Zoetheid verlengt de houdbaarheid niet.",
+         "Klopt: een conserveermiddel remt de groei van bacteriën en schimmels of vertraagt reacties, zodat het voedsel langer goed blijft.",
+         "Koos je vitamines? Sommige toevoegingen zijn vitamines, maar een conserveermiddel is bedoeld tegen bederf.",
+         "Koos je kleur? Daar zijn kleurstoffen voor, met eigen E-nummers. Kleur zegt niets over hoe lang het product goed blijft."
+        ],
+        "uh": "Conserveermiddel = langer houdbaar."
+       },
+       {
+        "v": "Waarom wordt vitamine C (ascorbinezuur, E300) aan vruchtensap toegevoegd?",
+        "o": [
+         "Als antioxidant tegen zuurstof",
+         "Om het sap zoeter te maken",
+         "Om het sap dikker en romiger te maken",
+         "Om het sap te laten bruisen"
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 2,
+        "u": "Antioxidant reageert zelf met zuurstof, zodat het sap beschermd blijft.",
+        "uo": [
+         "Klopt: vitamine C reageert makkelijker met zuurstof dan de stoffen in het sap. Zo beschermt het de kleur en smaak tegen oxidatie.",
+         "Koos je zoeter? Vitamine C is juist een beetje zuur. Zoetheid komt van suiker of zoetstoffen.",
+         "Koos je dikker? Daar zijn verdikkingsmiddelen voor, zoals pectine. Vitamine C maakt het sap niet dikker.",
+         "Koos je bruisen? Bruisen komt door opgelost CO₂, niet door vitamine C. Vitamine C beschermt tegen zuurstof."
+        ],
+        "uh": "Antioxidant = beschermt tegen zuurstof."
+       },
+       {
+        "v": "Wat betekent het als een stof een E-nummer heeft?",
+        "o": [
+         "Hij bevat veel energie",
+         "Hij is altijd kunstmatig gemaakt",
+         "Hij is schadelijk voor de gezondheid als je er veel van binnenkrijgt",
+         "Hij is in de EU toegestaan als additief"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 2,
+        "u": "E-nummer = Europees goedgekeurd additief, met een maximale hoeveelheid.",
+        "uo": [
+         "Koos je veel energie? Het E-nummer zegt niets over de energie. Het gaat om een toegestane toevoeging.",
+         "Koos je kunstmatig? Veel E-nummers zijn natuurlijke stoffen, zoals vitamine C of bietenrood. Het nummer zegt alleen dat de stof is toegestaan.",
+         "Koos je schadelijk? Een E-nummer betekent juist dat de stof veilig is bevonden in de toegestane hoeveelheden.",
+         "Klopt: een E-nummer betekent dat de stof in de Europese Unie is beoordeeld en toegestaan als toevoeging, binnen vastgestelde grenzen. Ook natuurlijke stoffen zoals vitamine C (E300) hebben een E-nummer."
+        ],
+        "uh": "E-nummer = toegestaan additief."
+       },
+       {
+        "v": "Hoeveel milligram van de stof mag een leerling van 50 kg per dag maximaal binnenkrijgen?",
+        "o": [
+         "55 mg",
+         "5 mg",
+         "250 mg",
+         "2500 mg"
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 2,
+        "u": "ADI × lichaamsgewicht = 5 mg/kg × 50 kg = 250 mg.",
+        "uo": [
+         "Koos je 55 mg? Dan heb je opgeteld in plaats van vermenigvuldigd: 5 + 50. De ADI geldt per kilogram, dus vermenigvuldig je.",
+         "Koos je 5 mg? Dat is de ADI per kilogram. Vermenigvuldig met het gewicht van de leerling.",
+         "Klopt: de ADI geldt per kilogram lichaamsgewicht. 5 mg/kg × 50 kg = 250 mg per dag.",
+         "Koos je 2500 mg? Dan heb je een factor tien te veel. 5 × 50 = 250. Reken het rustig na: 5 × 50 is 250."
+        ],
+        "uh": "ADI × lichaamsgewicht.",
+        "ctx": "Voor het conserveermiddel natriumbenzoaat (E211) geldt een aanvaardbare dagelijkse inname (ADI) van 5 mg per kilogram lichaamsgewicht. Dat is de hoeveelheid die je elke dag je hele leven kunt binnenkrijgen zonder merkbaar risico. Een leerling weegt 50 kg en drinkt veel frisdrank met E211."
+       },
+       {
+        "v": "Hoeveel liter van de frisdrank kan de leerling per dag drinken zonder boven de ADI te komen?",
+        "o": [
+         "0,6 liter",
+         "1,7 liter",
+         "17 liter",
+         "250 liter"
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 2,
+        "u": "250 mg / 150 mg/L = 1,7 L.",
+        "uo": [
+         "Koos je 0,6 liter? Dan heb je 150 / 250 gedeeld. Deel de toegestane hoeveelheid door de concentratie.",
+         "Klopt: de leerling mag 250 mg per dag binnenkrijgen. De frisdrank bevat 150 mg per liter. 250 / 150 = 1,7 liter.",
+         "Koos je 17 liter? Dan is er een factor tien misgegaan. 250 / 150 = 1,67. Reken met de eenheden: mg gedeeld door mg/L geeft liter.",
+         "Koos je 250 liter? Dat is de toegestane hoeveelheid in mg, niet in liters. Deel door 150 mg per liter."
+        ],
+        "uh": "Toegestane hoeveelheid / concentratie.",
+        "ctx": "De leerling van 50 kg mag per dag maximaal 250 mg natriumbenzoaat (E211) binnenkrijgen. Op de website van de fabrikant staat dat de frisdrank 150 mg E211 per liter bevat. Ze vraagt zich af hoeveel van de frisdrank ze per dag kan drinken voordat ze de ADI bereikt."
+       },
+       {
+        "v": "Hoe wordt bio-ethanol meestal gemaakt?",
+        "o": [
+         "Door vergisting van plantensuikers",
+         "Door destillatie van aardolie in een raffinaderij",
+         "Door elektrolyse van water",
+         "Door kraken van nafta"
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 3,
+        "u": "Gist zet suiker om in ethanol en CO₂.",
+        "uo": [
+         "Klopt: gist zet suikers uit bijvoorbeeld suikerriet of maïs om in ethanol en CO₂. Daarna wordt de ethanol door destillatie gezuiverd.",
+         "Koos je aardolie? Ethanol uit aardolie (via etheen) is juist geen biobrandstof. Bio-ethanol komt uit plantensuikers.",
+         "Koos je elektrolyse van water? Daarmee maak je waterstof en zuurstof, geen ethanol. Bio-ethanol maak je met gist uit suiker.",
+         "Koos je kraken? Kraken van nafta levert alkenen, en dat is een fossiele route. Biobrandstof komt juist uit planten."
+        ],
+        "uh": "Bio-ethanol = vergisting."
+       },
+       {
+        "v": "Welke stoffen gebruik je om biodiesel te maken?",
+        "o": [
+         "Mest en water",
+         "Aardolie en waterstof",
+         "Suiker en gist in een warme tank",
+         "Plantaardige olie en methanol"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 3,
+        "u": "Omestering: vet/olie + methanol → biodiesel (methylesters) + glycerol.",
+        "uo": [
+         "Koos je mest en water? Uit mest maak je in een vergister biogas (methaan), geen biodiesel.",
+         "Koos je aardolie? Gewone diesel komt uit aardolie. Biodiesel maak je juist van plantaardige olie.",
+         "Koos je suiker en gist? Daarmee maak je bio-ethanol door vergisting, geen biodiesel. Biodiesel komt uit olie of vet.",
+         "Klopt: bij het maken van biodiesel reageert plantaardige olie (een vet) met methanol. Er ontstaan methylesters van de vetzuren (biodiesel) en glycerol als bijproduct."
+        ],
+        "uh": "Biodiesel uit plantaardige olie."
+       },
+       {
+        "v": "Welk gas maakt een vergister uit mest en groenteafval?",
+        "o": [
+         "Zuurstof",
+         "Waterstof en zuurstof",
+         "Methaan (biogas)",
+         "Stikstof"
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 3,
+        "u": "Bacteriën zonder zuurstof breken biomassa af tot methaan en CO₂.",
+        "uo": [
+         "Koos je zuurstof? Vergisting gebeurt juist zonder zuurstof. Er ontstaat geen zuurstof.",
+         "Koos je waterstof? Bij gewone vergisting ontstaat vooral methaan, niet waterstof. Waterstof is hier niet het hoofdproduct.",
+         "Klopt: in een vergister breken bacteriën zonder zuurstof de mest en het afval af. Er ontstaat biogas, dat vooral uit methaan en CO₂ bestaat.",
+         "Koos je stikstof? Stikstof wordt niet gevormd in een mestvergister. Het brandbare gas is methaan."
+        ],
+        "uh": "Mestvergister = biogas = methaan."
+       },
+       {
+        "v": "Hoeveel kg ethanol ontstaat maximaal uit 1000 kg glucose?",
+        "o": [
+         "1000 kg",
+         "511 kg",
+         "256 kg",
+         "489 kg"
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 3,
+        "u": "1000 kg × 2 × 46,07 / 180,16 = 511 kg.",
+        "uo": [
+         "Koos je 1000 kg? Een deel van de massa gaat in CO₂. Er kan nooit evenveel ethanol ontstaan als er glucose in gaat.",
+         "Klopt: per 180,16 kg glucose ontstaat 2 × 46,07 = 92,14 kg ethanol. Uit 1000 kg dus 1000 × 92,14 / 180,16 = 511 kg. De rest wordt CO₂.",
+         "Koos je 256 kg? Dan heb je maar 1 mol ethanol per mol glucose gerekend. Het zijn er twee.",
+         "Koos je 489 kg? Dat is de massa CO₂ die ontstaat. De vraag gaat over ethanol. Ethanol is het andere product: 511 kg."
+        ],
+        "uh": "Massaverhouding uit de vergelijking.",
+        "ctx": "Bij de productie van bio-ethanol wordt glucose vergist: C₆H₁₂O₆ → 2 C₂H₅OH + 2 CO₂. Een fabriek vergist per uur 1000 kg glucose. Molaire massa's: glucose 180,16 g/mol, ethanol 46,07 g/mol, CO₂ 44,01 g/mol. Ga uit van volledige omzetting."
+       },
+       {
+        "v": "Waarom wordt bij verbranding van bio-ethanol netto weinig extra CO₂ aan de atmosfeer toegevoegd?",
+        "o": [
+         "Het CO₂ is kort geleden door planten opgenomen",
+         "Bij het verbranden van bio-ethanol ontstaat geen CO₂",
+         "Bio-ethanol bevat geen koolstof",
+         "Het CO₂ wordt door de motor opgevangen"
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 4,
+        "u": "Kortcyclisch koolstof: opgenomen door fotosynthese, weer vrij bij verbranding.",
+        "uo": [
+         "Klopt: de planten hebben het CO₂ tijdens hun groei uit de lucht gehaald. Bij verbranding komt hetzelfde CO₂ weer vrij. Netto voeg je dan weinig toe, anders dan bij fossiele brandstof.",
+         "Koos je geen CO₂? Bij verbranding van ethanol ontstaat wel CO₂: C₂H₅OH + 3 O₂ → 2 CO₂ + 3 H₂O.",
+         "Koos je geen koolstof? Ethanol bevat twee koolstofatomen per molecuul. Daarom ontstaat er bij verbranding wel CO₂.",
+         "Koos je motor vangt op? Een automotor vangt geen CO₂ op. Het gaat de uitlaat uit. Het CO₂ is wel kort geleden door planten opgenomen."
+        ],
+        "uh": "Kortcyclisch: opgenomen en weer vrij."
+       },
+       {
+        "v": "Waarom is biobrandstof in de praktijk niet helemaal CO₂-neutraal?",
+        "o": [
+         "Biobrandstof bevat fossiel koolstof",
+         "Planten nemen geen CO₂ op",
+         "Bij verbranding ontstaat meer CO₂ dan bij benzine",
+         "Teelt, kunstmest en transport kosten energie"
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 4,
+        "u": "De keten kost energie en geeft uitstoot (lachgas, diesel voor tractoren).",
+        "uo": [
+         "Koos je fossiel koolstof? Het koolstof in biobrandstof komt uit planten. De fossiele uitstoot zit in de productieketen.",
+         "Koos je planten nemen geen CO₂ op? Planten nemen juist CO₂ op via fotosynthese. Het probleem zit in de rest van de keten.",
+         "Koos je meer CO₂ dan benzine? Het probleem is niet de verbranding zelf, maar de energie die nodig is om de brandstof te maken.",
+         "Klopt: voor de teelt zijn tractoren, kunstmest en irrigatie nodig, en de oogst moet vervoerd en verwerkt worden. Daarvoor wordt vaak fossiele energie gebruikt, en uit kunstmest komt lachgas vrij. Daardoor is biobrandstof niet volledig CO₂-neutraal."
+        ],
+        "uh": "Kortcyclisch ≠ volledig CO₂-vrij.",
+        "ctx": "Een oliemaatschappij adverteert: \"Rijden op bio-ethanol is 100% CO₂-neutraal, want de suikerriet heeft het CO₂ eerst opgenomen.\" Voor de teelt van suikerriet worden kunstmest, tractoren op diesel en vrachtwagens gebruikt. In de fabriek wordt de ethanol gedestilleerd, wat veel warmte kost."
+       },
+       {
+        "v": "Wat is een bezwaar van biobrandstof uit maïs?",
+        "o": [
+         "Maïs bevat geen suiker of zetmeel",
+         "Maïs groeit maar één keer per honderd jaar",
+         "Die grond levert dan geen voedsel meer",
+         "Biobrandstof uit maïs verbrandt niet"
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 4,
+        "u": "Concurrentie tussen voedsel en brandstof.",
+        "uo": [
+         "Koos je geen suiker of zetmeel? Maïs bevat juist veel zetmeel, dat tot suiker en ethanol wordt omgezet.",
+         "Koos je één keer per honderd jaar? Maïs groeit elk jaar opnieuw; het is juist een snelgroeiend gewas.",
+         "Klopt: grond die gebruikt wordt voor brandstofgewassen, kan niet tegelijk voedsel opleveren. Dat kan voedselprijzen opdrijven of leiden tot het kappen van bos voor nieuwe landbouwgrond.",
+         "Koos je verbrandt niet? Bio-ethanol uit maïs verbrandt prima; het wordt in benzine bijgemengd."
+        ],
+        "uh": "Voedsel tegen brandstof.",
+        "ctx": "In de Verenigde Staten gaat ongeveer een derde van de maïsoogst naar de productie van bio-ethanol. Voorstanders wijzen op minder afhankelijkheid van aardolie. Tegenstanders wijzen op de gevolgen voor de voedselprijzen in andere landen en op het omzetten van natuur in akkers."
+       },
+       {
+        "v": "Welke biobrandstof heeft het minste bezwaar van concurrentie met voedsel?",
+        "o": [
+         "Bio-ethanol uit maïs",
+         "Biogas uit mest en groenteafval",
+         "Biodiesel uit palmolie van nieuwe plantages",
+         "Bio-ethanol uit suikerriet op voormalige bosgrond"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 4,
+        "u": "Afvalstromen gebruiken geen extra landbouwgrond.",
+        "uo": [
+         "Koos je maïs? Maïs is ook voedsel en veevoer; de grond kan maar één keer gebruikt worden.",
+         "Klopt: biogas uit mest en afval gebruikt stoffen die al bestaan. Er is geen extra landbouwgrond nodig, dus geen concurrentie met voedsel.",
+         "Koos je palmolie van nieuwe plantages? Daarvoor wordt vaak regenwoud gekapt, met veel CO₂-uitstoot en verlies van natuur.",
+         "Koos je suikerriet op bosgrond? Het kappen van bos zet veel CO₂ vrij en vernietigt natuur."
+        ],
+        "uh": "Afval als grondstof = minste concurrentie."
+       },
+       {
+        "v": "Welke brandstof levert per gram de meeste energie?",
+        "o": [
+         "Waterstof",
+         "Ethanol",
+         "Methaan",
+         "Glucose uit zetmeel"
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 5,
+        "u": "Waterstof 142, methaan 55,5, ethanol 29,7, glucose ~16 kJ/g.",
+        "uo": [
+         "Klopt: waterstof levert ongeveer 142 kJ per gram, veel meer dan methaan (55,5 kJ/g) of ethanol (29,7 kJ/g). Waterstofmoleculen zijn heel licht.",
+         "Koos je ethanol? Ethanol levert ongeveer 29,7 kJ per gram. Het bevat al een zuurstofatoom en is dus al deels geoxideerd.",
+         "Koos je methaan? Methaan levert veel, 55,5 kJ per gram, maar waterstof levert per gram nog meer.",
+         "Koos je glucose? Glucose bevat veel zuurstof en levert ongeveer 16 kJ per gram, het minst van deze stoffen."
+        ],
+        "uh": "Waterstof: meeste energie per gram."
+       },
+       {
+        "v": "Waarom levert ethanol per gram minder energie dan benzine?",
+        "o": [
+         "Ethanol verbrandt niet volledig",
+         "Ethanol is een vloeistof en benzine niet",
+         "Ethanol bevat meer koolstofatomen",
+         "Ethanol bevat al zuurstof"
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 5,
+        "u": "Hoe meer O al in het molecuul, hoe minder energie bij verbranding.",
+        "uo": [
+         "Koos je onvolledig? Ethanol verbrandt in een motor prima volledig. Het verschil zit in de zuurstof die al in het molecuul zit.",
+         "Koos je vloeistof? Ethanol en benzine zijn allebei vloeistoffen. Het verschil zit in de bouw van de moleculen.",
+         "Koos je meer koolstof? Ethanol heeft maar twee C-atomen per molecuul; benzine bestaat uit grotere moleculen.",
+         "Klopt: ethanol heeft een OH-groep, er zit al zuurstof in het molecuul. Benzine bestaat uit koolwaterstoffen zonder zuurstof. Per gram valt er bij ethanol dus minder te verbranden."
+        ],
+        "uh": "Al zuurstof in het molecuul = minder energie.",
+        "ctx": "Een auto die op E85 rijdt (85% ethanol, 15% benzine), verbruikt per kilometer ongeveer een derde meer liters brandstof dan op gewone benzine. Ethanol levert ongeveer 30 kJ per gram, benzine ongeveer 46 kJ per gram. De structuur van ethanol is CH₃−CH₂−OH."
+       },
+       {
+        "v": "Waarom slaat je lichaam energie liever op als vet dan als glycogeen (koolhydraat)?",
+        "o": [
+         "Vet bevat stikstof",
+         "Vet lost goed op in bloed",
+         "Vet levert per gram meer energie",
+         "Glycogeen kan je lichaam niet gebruiken"
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 5,
+        "u": "Vet 37 kJ/g tegen koolhydraat 17 kJ/g: compacte opslag.",
+        "uo": [
+         "Koos je stikstof? Vet bevat geen stikstof; alleen eiwitten hebben stikstof. Dat is dus niet de reden.",
+         "Koos je lost goed op? Vet is juist hydrofoob en lost slecht op in bloed. Het voordeel van vet is de hoge energie per gram.",
+         "Klopt: per gram levert vet ongeveer 37 kJ, koolhydraten ongeveer 17 kJ. Voor dezelfde energievoorraad heb je dus maar half zoveel vet nodig. Dat scheelt gewicht.",
+         "Koos je kan niet gebruiken? Glycogeen is juist een snelle energievoorraad in lever en spieren."
+        ],
+        "uh": "Vet = compacte energieopslag."
+       },
+       {
+        "v": "Waarom bederft vers vlees zonder koeling of conserveermiddel snel?",
+        "o": [
+         "Het vlees reageert met stikstof uit de lucht",
+         "Bacteriën groeien snel en breken het eiwit af",
+         "Het water in het vlees verdampt helemaal",
+         "Het vlees wordt zwaarder door vocht uit de lucht"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 2,
+        "u": "Micro-organismen en enzymen breken eiwitten en vetten af.",
+        "uo": [
+         "Koos je stikstof? Stikstof uit de lucht is erg stabiel en reageert niet met vlees. Bederf komt door bacteriën en zuurstof.",
+         "Klopt: bij kamertemperatuur groeien bacteriën snel. Ze breken eiwitten en vetten af, waarbij stinkende stoffen ontstaan. Koelen en conserveermiddelen vertragen dat.",
+         "Koos je water verdampt? Uitdrogen kan wel, maar dat is niet de oorzaak van bederf. Gedroogd vlees blijft juist langer goed.",
+         "Koos je zwaarder? Vlees wordt niet zwaarder door bederf. Het gaat om afbraak door micro-organismen."
+        ],
+        "uh": "Bederf = bacteriën + afbraak."
+       },
+       {
+        "v": "Hoeveel gram ethanol levert evenveel energie als 10 gram waterstof?",
+        "o": [
+         "Ongeveer 48 gram",
+         "Ongeveer 2 gram",
+         "Ongeveer 10 gram",
+         "Ongeveer 142 gram"
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 5,
+        "u": "10 × 142 = 1420 kJ; 1420 / 29,7 = 48 g.",
+        "uo": [
+         "Klopt: 10 g waterstof levert 10 × 142 = 1420 kJ. Ethanol levert 29,7 kJ per gram, dus je hebt 1420 / 29,7 ≈ 48 g ethanol nodig.",
+         "Koos je 2 gram? Dan heb je de verhouding omgedraaid. Ethanol levert per gram juist minder, dus je hebt méér gram nodig.",
+         "Koos je 10 gram? Evenveel gram geeft niet evenveel energie, omdat waterstof per gram veel meer levert.",
+         "Koos je 142 gram? Dat is de energie van 1 g waterstof in kJ. Reken 1420 kJ / 29,7 kJ per gram."
+        ],
+        "uh": "Eerst energie uitrekenen, dan delen door kJ per gram.",
+        "ctx": "Een leerling vergelijkt brandstoffen voor een raketauto in een wedstrijd. Waterstof levert ongeveer 142 kJ per gram, ethanol ongeveer 29,7 kJ per gram. Ze wil weten hoeveel gram ethanol ze moet meenemen om evenveel energie te hebben als met 10 gram waterstof."
+       },
+       {
+        "v": "Welke voedingsstof bevat stikstof?",
+        "o": [
+         "Suiker",
+         "Zetmeel",
+         "Vet",
+         "Eiwit"
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 5,
+        "u": "Aminozuren hebben een aminogroep (NH₂).",
+        "uo": [
+         "Koos je suiker? Suikers zijn koolhydraten zonder stikstof: alleen C, H en O.",
+         "Koos je zetmeel? Zetmeel is een koolhydraat van glucose en bevat alleen C, H en O.",
+         "Koos je vet? Vet is een ester van glycerol en vetzuren, met alleen C, H en O.",
+         "Klopt: eiwitten bestaan uit aminozuren, en elk aminozuur heeft een aminogroep met stikstof."
+        ],
+        "uh": "Stikstof = eiwit."
+       }
+      ],
+      "oe": [
+       {
+        "bron": "Examenstijl",
+        "ctx": "Op een zak chips staat per 100 gram: vet 30 g, koolhydraten 52 g, eiwit 6 g, zout 1,4 g. Een zak bevat 40 gram. Gebruik vet 37 kJ/g en koolhydraten en eiwit 17 kJ/g.",
+        "v": "Bereken de energie in één zak chips.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Per 100 g: 30 × 37 + 52 × 17 + 6 × 17 = 1110 + 884 + 102 = 2096 kJ (2p). Per zak: 0,40 × 2096 = 838 kJ (ongeveer 8,4 · 10² kJ) (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Bio-ethanol wordt gemaakt door vergisting van glucose: C₆H₁₂O₆ → 2 C₂H₅OH + 2 CO₂. Een fabriek vergist per dag 5,0 ton glucose (M = 180,16 g/mol; ethanol 46,07 g/mol).",
+        "v": "Bereken hoeveel ton ethanol er maximaal per dag ontstaat en leg uit waarom het CO₂ uit deze vergisting kortcyclisch heet.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "5,0 · 10⁶ g / 180,16 = 2,78 · 10⁴ mol glucose → 5,55 · 10⁴ mol ethanol (1p). × 46,07 = 2,6 · 10⁶ g = 2,6 ton ethanol (1p). Het koolstof in de glucose is kort geleden door planten uit de lucht opgenomen via fotosynthese (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een oliemaatschappij zegt in een reclame: \"Onze biodiesel is 100% CO₂-neutraal, want de koolzaadplant heeft al het CO₂ eerst opgenomen.\" Voor de teelt van koolzaad worden kunstmest en tractoren op diesel gebruikt, en de olie wordt in een fabriek met methanol omgezet.",
+        "v": "Leg uit waarom de claim van de oliemaatschappij niet klopt.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Het CO₂ uit de verbranding is wel kortcyclisch (1p). Maar voor de teelt (kunstmest, tractoren), het transport en de omzetting in de fabriek is fossiele energie nodig, waarbij extra CO₂ vrijkomt; de biodiesel is dus niet volledig CO₂-neutraal (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Voor het zoetmiddel aspartaam (E951) geldt een ADI van 40 mg per kg lichaamsgewicht. Een blikje light-frisdrank van 330 mL bevat ongeveer 180 mg aspartaam. Een leerling weegt 55 kg.",
+        "v": "Bereken hoeveel blikjes de leerling per dag zou kunnen drinken zonder boven de ADI te komen.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "ADI: 40 × 55 = 2200 mg per dag (1p). 2200 / 180 = 12 blikjes (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een sporter wil een energievoorraad van 2000 kJ meenemen voor een lange tocht. Hij twijfelt tussen een reep met vooral suiker en een zakje noten met vooral vet. Gebruik vet 37 kJ/g en koolhydraten 17 kJ/g.",
+        "v": "Bereken hoeveel gram zuivere suiker en hoeveel gram zuiver vet nodig is voor 2000 kJ, en leg het verschil uit met de bouw van de moleculen.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Suiker: 2000 / 17 = 118 g; vet: 2000 / 37 = 54 g (1p). Vet bevat veel minder zuurstof dan suiker en is dus minder ver geoxideerd, waardoor er per gram meer energie vrijkomt bij verbranding (1p)."
+       }
+      ]
      }
     ]
    }
