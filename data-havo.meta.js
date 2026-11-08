@@ -2212,6 +2212,28 @@ var VAKKEN = [
       "nOe": 5,
       "nBeg": 11,
       "hasSam": true
+     },
+     {
+      "id": "A5",
+      "lo": "na.A.5",
+      "gs": 2,
+      "naam": "Onderzoek doen en grafieken analyseren",
+      "beschrijving": "Je stelt een onderzoeksvraag en een toetsbare hypothese op, kiest onafhankelijke, afhankelijke en constante variabelen voor een eerlijke proef met een controle-experiment, tekent een goede grafiek en bepaalt daaruit de helling (ook met een raaklijn), de oppervlakte onder de grafiek en waarden door te interpoleren of te extrapoleren.",
+      "ceStatus": "CE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Onderzoeksvraag en hypothese",
+       "Variabelen en een eerlijke proef",
+       "Een goede grafiek maken",
+       "Helling en raaklijn",
+       "Oppervlakte onder de grafiek",
+       "Interpoleren en extrapoleren"
+      ],
+      "nSv": 28,
+      "nOe": 5,
+      "nBeg": 11,
+      "hasSam": true
      }
     ]
    },

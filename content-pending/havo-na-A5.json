@@ -1,0 +1,688 @@
+{
+ "id": "A5",
+ "lo": "na.A.5",
+ "gs": 2,
+ "naam": "Onderzoek doen en grafieken analyseren",
+ "beschrijving": "Je stelt een onderzoeksvraag en een toetsbare hypothese op, kiest onafhankelijke, afhankelijke en constante variabelen voor een eerlijke proef met een controle-experiment, tekent een goede grafiek en bepaalt daaruit de helling (ook met een raaklijn), de oppervlakte onder de grafiek en waarden door te interpoleren of te extrapoleren.",
+ "ceStatus": "CE",
+ "binas": "",
+ "val": "",
+ "onderwerpen": [
+  "Onderzoeksvraag en hypothese",
+  "Variabelen en een eerlijke proef",
+  "Een goede grafiek maken",
+  "Helling en raaklijn",
+  "Oppervlakte onder de grafiek",
+  "Interpoleren en extrapoleren"
+ ],
+ "sam": "Een onderzoeksvraag noemt wat je verandert en wat je meet; een hypothese is een toetsbare verwachting vooraf. Onafhankelijke variabele: verander je; afhankelijke: meet je; constante: houd je gelijk. Verander één ding tegelijk en vergelijk met een controle-experiment. Grafiek: onafhankelijke variabele horizontaal, assen met grootheid en eenheid, vloeiende trendlijn. Helling = Δy / Δx, bij een kromme via de raaklijn; (x,t) → snelheid, (v,t) → versnelling. Oppervlakte onder (v,t) = afstand. Interpoleren is betrouwbaar, extrapoleren riskant.",
+ "begrippen": [
+  {
+   "t": "Onderzoeksvraag",
+   "d": "Vraag die je met een proef kunt beantwoorden, met wat je verandert en wat je meet."
+  },
+  {
+   "t": "Hypothese",
+   "d": "Toetsbare verwachting die je vóór de proef opschrijft."
+  },
+  {
+   "t": "Onafhankelijke variabele",
+   "d": "Grootheid die je zelf verandert; komt op de horizontale as."
+  },
+  {
+   "t": "Afhankelijke variabele",
+   "d": "Grootheid die je meet en die afhangt van de onafhankelijke variabele."
+  },
+  {
+   "t": "Constante variabele",
+   "d": "Grootheid die je gelijk houdt, zodat hij de uitkomst niet beïnvloedt."
+  },
+  {
+   "t": "Controle-experiment",
+   "d": "Proef zonder de factor die je onderzoekt, om mee te vergelijken."
+  },
+  {
+   "t": "Trendlijn",
+   "d": "Eén vloeiende lijn die zo goed mogelijk tussen de meetpunten door loopt."
+  },
+  {
+   "t": "Raaklijn",
+   "d": "Rechte lijn die een kromme op één punt raakt; de helling ervan is de helling op dat moment."
+  },
+  {
+   "t": "Helling",
+   "d": "Δy / Δx van een grafiek; in een (x,t)-diagram de snelheid, in een (v,t)-diagram de versnelling."
+  },
+  {
+   "t": "Interpoleren",
+   "d": "Een waarde aflezen tussen je meetpunten in."
+  },
+  {
+   "t": "Extrapoleren",
+   "d": "Een waarde voorspellen door de lijn door te trekken buiten je meetgebied."
+  }
+ ],
+ "sv": [
+  {
+   "v": "Welke vraag is een goede onderzoeksvraag voor een natuurkundeproef?",
+   "o": [
+    "Wat is een slinger precies voor ding?",
+    "Zijn slingers leuk?",
+    "Hoe hangt T af van de lengte?",
+    "Waarom bestaan er slingers?"
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 0,
+   "u": "Goede onderzoeksvraag: meetbaar verband tussen variabelen.",
+   "uo": [
+    "Koos je \"wat is een slinger\"? Dat zoek je op in een boek, daar is geen proef voor nodig. Een onderzoeksvraag gaat over een verband dat je meet.",
+    "Koos je \"leuk\"? Dat is een mening en niet te meten. Een onderzoeksvraag moet je met metingen kunnen beantwoorden.",
+    "Klopt: een goede onderzoeksvraag noemt wat je verandert (de lengte) en wat je meet (de trillingstijd). Je kunt hem met een proef beantwoorden.",
+    "Koos je \"waarom bestaan ze\"? Die vraag is te breed en niet met één meting te beantwoorden. Een goede vraag noemt twee grootheden."
+   ],
+   "uh": "Onderzoeksvraag: verband tussen grootheden."
+  },
+  {
+   "v": "Waarvoor dient een hypothese bij een onderzoek?",
+   "o": [
+    "Het resultaat van de proef",
+    "Een toetsbare verwachting vooraf",
+    "Een lijst van benodigde materialen",
+    "De conclusie aan het eind van het verslag"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 0,
+   "u": "Hypothese = toetsbare verwachting vooraf.",
+   "uo": [
+    "Koos je het resultaat? Het resultaat komt pas na de proef. De hypothese is wat je van tevoren verwacht.",
+    "Klopt: een hypothese is een verwachting die je vóór de proef opschrijft, zo dat je hem met metingen kunt bevestigen of verwerpen. Bijvoorbeeld: \"Als de slinger langer wordt, wordt de trillingstijd groter.\"",
+    "Koos je materialen? Die horen in de werkwijze. Een hypothese gaat over wat je verwacht te vinden.",
+    "Koos je conclusie? In de conclusie kijk je of de hypothese klopte. De hypothese zelf schrijf je aan het begin."
+   ],
+   "uh": "Hypothese: verwachting vooraf."
+  },
+  {
+   "v": "Welke hypothese is het best toetsbaar?",
+   "o": [
+    "Bij dubbele massa blijft T gelijk",
+    "Slingers werken beter met zware gewichten",
+    "Er is waarschijnlijk wel een verband met de massa",
+    "De massa doet er misschien een beetje toe, of niet"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 0,
+   "u": "Toetsbaar: concreet, meetbaar, kan fout blijken.",
+   "uo": [
+    "Klopt: deze hypothese noemt precies wat je verandert en wat je verwacht te meten. Met een paar metingen kun je zien of hij klopt of niet.",
+    "Koos je \"werken beter\"? Wat is \"beter\"? Zonder meetbare grootheid kun je deze hypothese niet toetsen.",
+    "Koos je \"waarschijnlijk wel een verband\"? Dat is te vaag: welk verband? Je kunt hem bijna niet fout bewijzen.",
+    "Koos je \"misschien een beetje, of niet\"? Die hypothese klopt altijd, wat je ook meet. Daardoor zegt hij niets."
+   ],
+   "uh": "Toetsbaar = concreet en weerlegbaar.",
+   "ctx": "Een groep leerlingen onderzoekt of de massa van het gewichtje invloed heeft op de trillingstijd van een slinger. Ze willen eerst een hypothese opschrijven die ze met hun metingen kunnen controleren. Elk groepslid stelt een andere zin voor."
+  },
+  {
+   "v": "De metingen laten zien dat de hypothese niet klopt. Wat doe je?",
+   "o": [
+    "Je zegt dat de proef mislukt is",
+    "Je past de metingen aan zodat ze kloppen",
+    "Je laat de hypothese weg uit het verslag",
+    "Eerlijk opschrijven: verworpen"
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 0,
+   "u": "Verworpen hypothese is ook een resultaat.",
+   "uo": [
+    "Koos je mislukt? Een proef is niet mislukt als de uitkomst anders is dan je dacht. Hij is pas mislukt als je niet goed hebt gemeten.",
+    "Koos je metingen aanpassen? Dat is fraude. Metingen schrijf je op zoals ze zijn.",
+    "Koos je weglaten? Dan verberg je informatie. Juist de vergelijking tussen verwachting en resultaat is interessant.",
+    "Klopt: een hypothese die niet klopt, is ook een waardevol resultaat. Je schrijft op dat hij is verworpen en bespreekt wat dat betekent."
+   ],
+   "uh": "Verwerpen = ook een uitkomst."
+  },
+  {
+   "v": "Welke variabele verander je zelf bij een proef?",
+   "o": [
+    "De constante variabele",
+    "De afhankelijke variabele",
+    "De onafhankelijke variabele",
+    "De variabele die je meet en noteert"
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 1,
+   "u": "Onafhankelijk: jij kiest; afhankelijk: meet je.",
+   "uo": [
+    "Koos je constant? Die houd je juist gelijk, zodat hij de proef niet beïnvloedt.",
+    "Koos je afhankelijk? Die verander je niet zelf; die meet je, omdat hij afhangt van wat je verandert. Bijvoorbeeld de trillingstijd.",
+    "Klopt: de onafhankelijke variabele kies en verander je zelf, zoals de lengte van de slinger. Die zet je op de horizontale as.",
+    "Koos je gemeten? De gemeten variabele is de afhankelijke variabele. Die verander je niet zelf."
+   ],
+   "uh": "Onafhankelijk = zelf veranderen."
+  },
+  {
+   "v": "Je verandert de lengte van een slinger en meet de trillingstijd. Wat houd je constant?",
+   "o": [
+    "De trillingstijd",
+    "De beginuitwijking",
+    "De lengte",
+    "Het aantal metingen per dag"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 1,
+   "u": "Constante variabelen: alles wat ook invloed kan hebben.",
+   "uo": [
+    "Koos je de trillingstijd? Die meet je juist: dat is de afhankelijke variabele.",
+    "Klopt: de uitwijking kan ook invloed hebben op de trillingstijd. Houd die steeds gelijk, bijvoorbeeld 10°, zodat alleen de lengte verschilt.",
+    "Koos je de lengte? Die verander je juist: dat is de onafhankelijke variabele.",
+    "Koos je het aantal metingen per dag? Dat heeft geen invloed op de slinger zelf. Het gaat om grootheden die de uitkomst kunnen beïnvloeden."
+   ],
+   "uh": "Constant: andere invloeden gelijk houden."
+  },
+  {
+   "v": "Waarom is deze proef niet eerlijk opgezet?",
+   "o": [
+    "Er veranderen twee dingen tegelijk",
+    "Er zijn te weinig metingen gedaan",
+    "De temperatuur van het water is niet gemeten",
+    "Er is geen hypothese opgeschreven"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 1,
+   "u": "Eerlijke proef: één variabele tegelijk.",
+   "uo": [
+    "Klopt: hij verandert de soort bal én de hoogte tegelijk. Stuitert de tennisbal hoger, dan weet je niet of dat door de bal of door de hoogte komt. Verander steeds maar één variabele.",
+    "Koos je te weinig metingen? Ook met meer metingen blijft het probleem dat twee dingen tegelijk veranderen.",
+    "Koos je temperatuur van water? Er zit geen water in deze proef. Het probleem is dat bal en hoogte allebei veranderen.",
+    "Koos je hypothese? Een hypothese is handig, maar het grootste probleem is dat de proef niet eerlijk is opgezet."
+   ],
+   "uh": "Eén variabele tegelijk.",
+   "ctx": "Een leerling wil weten welke bal het hoogst stuitert. Hij laat een tennisbal vallen van 2,0 m en een pingpongbal van 1,0 m. De tennisbal stuitert 1,1 m hoog, de pingpongbal 0,7 m. Hij concludeert dat de tennisbal het best stuitert."
+  },
+  {
+   "v": "Waarom doe je bij een onderzoek soms een controle-experiment?",
+   "o": [
+    "Om een proef zonder metingen te hebben",
+    "Omdat de docent dan kan controleren",
+    "Om een mislukte proef over te doen",
+    "Om te vergelijken zonder de onderzochte factor"
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 1,
+   "u": "Controle: vergelijkingsbasis zonder de onderzochte factor.",
+   "uo": [
+    "Koos je zonder metingen? Ook in een controle-experiment meet je; je verandert alleen de onderzochte factor niet.",
+    "Koos je door de docent gecontroleerd? Het woord \"controle\" betekent hier vergelijken, niet nakijken.",
+    "Koos je herhalen? Herhalen maakt een meting betrouwbaarder, maar dat is geen controle-experiment.",
+    "Klopt: in een controle-experiment laat je de factor die je onderzoekt weg of onveranderd. Zo zie je of het effect echt door die factor komt, en niet door iets anders."
+   ],
+   "uh": "Controle-experiment: vergelijken."
+  },
+  {
+   "v": "Welke grootheid zet je in een grafiek op de horizontale as?",
+   "o": [
+    "De grootheid met de grootste getallen",
+    "De afhankelijke variabele",
+    "De onafhankelijke variabele",
+    "Altijd de tijd"
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 2,
+   "u": "x-as: onafhankelijk; y-as: afhankelijk.",
+   "uo": [
+    "Koos je grootste getallen? De grootte van de getallen bepaalt niet waar een grootheid komt. Het gaat om wat je verandert en wat je meet.",
+    "Koos je afhankelijk? Die komt op de verticale as, omdat hij afhangt van wat op de horizontale as staat.",
+    "Klopt: op de horizontale as zet je de grootheid die je zelf verandert. De grootheid die je meet, komt op de verticale as.",
+    "Koos je altijd de tijd? Vaak staat de tijd horizontaal, omdat je die \"kiest\", maar bij een slingerproef staat de lengte horizontaal."
+   ],
+   "uh": "Horizontaal: onafhankelijk."
+  },
+  {
+   "v": "Hoe teken je de lijn door je meetpunten als ze bijna op een rechte lijn liggen?",
+   "o": [
+    "Verbind elk punt met het volgende met een recht stukje",
+    "Eén vloeiende lijn tussen de punten",
+    "Een lijn door het eerste en het laatste punt",
+    "Teken geen lijn, alleen de punten"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 2,
+   "u": "Trendlijn: vloeiend, punten aan beide kanten.",
+   "uo": [
+    "Koos je punt voor punt verbinden? Dan volg je elke toevallige meetfout. Het verband is één vloeiende lijn.",
+    "Klopt: meetpunten hebben onzekerheid, dus ze liggen nooit precies op een lijn. Teken één vloeiende lijn met ongeveer evenveel punten erboven als eronder.",
+    "Koos je eerste en laatste punt? Ook die twee punten hebben onzekerheid. Gebruik alle punten om de beste lijn te tekenen.",
+    "Koos je geen lijn? Zonder lijn zie je het verband minder goed en kun je geen helling bepalen."
+   ],
+   "uh": "Trendlijn: vloeiend tussen de punten."
+  },
+  {
+   "v": "Wat moet de leerling verbeteren aan haar grafiek?",
+   "o": [
+    "Asbijschriften en een vloeiende lijn",
+    "De punten groter tekenen",
+    "Een andere kleur pen gebruiken",
+    "De horizontale as weglaten"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 2,
+   "u": "Grafiek-eisen: grootheid + eenheid, schaal, trendlijn.",
+   "uo": [
+    "Klopt: zonder grootheid en eenheid bij de assen weet niemand wat de grafiek laat zien. En een zigzaglijn van punt naar punt volgt meetfouten; teken één vloeiende lijn.",
+    "Koos je grotere punten? Duidelijke punten zijn goed, maar het grootste probleem zijn de ontbrekende asbijschriften en de zigzaglijn.",
+    "Koos je andere kleur? De kleur maakt voor de inhoud niets uit. Het gaat erom dat een lezer kan zien wat er op de assen staat.",
+    "Koos je horizontale as weglaten? Een grafiek heeft altijd twee assen met elk een grootheid en eenheid."
+   ],
+   "uh": "Assen met grootheid en eenheid.",
+   "ctx": "Een leerling tekent een grafiek van haar metingen. Langs de assen staan alleen getallen, zonder woorden. De schaal op de horizontale as loopt van 0 tot 10 in gelijke stappen. Ze verbindt de meetpunten met rechte stukjes, zodat er een zigzaglijn ontstaat."
+  },
+  {
+   "v": "Waarom kies je de schaal van de assen zo dat de meetpunten het grootste deel van het papier vullen?",
+   "o": [
+    "Omdat de docent dat altijd vraagt",
+    "Dan lijkt de grafiek mooier",
+    "Omdat de oorsprong anders niet zichtbaar is",
+    "Dan kun je nauwkeuriger aflezen en tekenen"
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 2,
+   "u": "Grote grafiek = nauwkeurige aflezing.",
+   "uo": [
+    "Koos je docent? De reden is dat je nauwkeuriger kunt werken, niet dat het een regel is.",
+    "Koos je mooier? Het gaat om nauwkeurigheid, niet om uiterlijk: op een grote schaal kun je tot op een kleiner stukje aflezen.",
+    "Koos je oorsprong? Die kun je ook in een kleine grafiek zien. Het voordeel van een grote grafiek is nauwkeuriger aflezen.",
+    "Klopt: hoe groter de grafiek, hoe nauwkeuriger je punten zet en waarden afleest, bijvoorbeeld bij het bepalen van een helling."
+   ],
+   "uh": "Grote schaal: nauwkeuriger."
+  },
+  {
+   "v": "Wat geeft de helling van een (x,t)-diagram?",
+   "o": [
+    "De afgelegde afstand",
+    "De versnelling",
+    "De snelheid",
+    "De tijd"
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 3,
+   "u": "Helling (x,t) = Δx/Δt = v.",
+   "uo": [
+    "Koos je afstand? Die lees je af op de verticale as. De helling vertelt hoe snel de afstand verandert.",
+    "Koos je versnelling? Die is de helling van een (v,t)-diagram, niet van een (x,t)-diagram.",
+    "Klopt: de helling van een plaats-tijdgrafiek is Δx / Δt, en dat is de snelheid. Hoe steiler, hoe sneller.",
+    "Koos je tijd? Die staat op de horizontale as. De helling is een verhouding: hoeveel meter er per seconde bij komt."
+   ],
+   "uh": "(x,t): helling = snelheid."
+  },
+  {
+   "v": "Hoe bepaal je de helling van een kromme grafiek op één tijdstip?",
+   "o": [
+    "Deel de y-waarde door de x-waarde van dat punt",
+    "Met de raaklijn op dat punt",
+    "Lees de y-waarde af",
+    "Neem het gemiddelde van alle meetpunten"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 3,
+   "u": "Raaklijn: helling op één moment.",
+   "uo": [
+    "Koos je y / x? Dat geeft de gemiddelde helling vanaf de oorsprong, niet de helling op dat punt.",
+    "Klopt: bij een kromme verandert de helling steeds. Op één punt teken je de raaklijn, de rechte lijn die de kromme daar net raakt. De helling van die raaklijn is de helling op dat moment.",
+    "Koos je y-waarde aflezen? Dat is de waarde zelf, niet hoe snel hij verandert.",
+    "Koos je gemiddelde van de punten? Dat zegt niets over de helling op één moment."
+   ],
+   "uh": "Raaklijn voor helling op één punt."
+  },
+  {
+   "v": "Hoe groot is de snelheid volgens de raaklijn op t = 4,0 s?",
+   "o": [
+    "6,0 m/s",
+    "4,5 m/s",
+    "30 m/s",
+    "0,17 m/s"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 3,
+   "u": "Helling raaklijn: Δx/Δt = (30 − 0)/(6,0 − 1,0).",
+   "uo": [
+    "Klopt: de raaklijn gaat door (1,0 s; 0 m) en (6,0 s; 30 m). Helling = Δx / Δt = (30 − 0) / (6,0 − 1,0) = 30 / 5,0 = 6,0 m/s.",
+    "Koos je 4,5 m/s? Dan heb je de plaats op t = 4,0 s gedeeld door de tijd: 18 / 4,0. Dat is de gemiddelde snelheid vanaf t = 0, niet de snelheid op dat moment.",
+    "Koos je 30 m/s? Dan heb je alleen Δx genomen en vergeten te delen door Δt. Een snelheid is afstand per tijd: 30 m in 5,0 s.",
+    "Koos je 0,17 m/s? Dan heb je Δt gedeeld door Δx. Snelheid is afstand gedeeld door tijd."
+   ],
+   "uh": "Helling = Δy/Δx van de raaklijn.",
+   "ctx": "Een auto trekt op. In het (x,t)-diagram wordt de grafiek steeds steiler. Op t = 4,0 s staat de auto op x = 18 m. Een leerling tekent op dat punt een raaklijn; die gaat door de punten (1,0 s; 0 m) en (6,0 s; 30 m)."
+  },
+  {
+   "v": "Waarom kies je bij het bepalen van een helling twee punten die ver uit elkaar liggen?",
+   "o": [
+    "Dan hoef je minder te rekenen",
+    "Dan is de helling groter",
+    "Omdat dichtbij geen punten liggen",
+    "Afleesfouten tellen dan minder"
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 3,
+   "u": "Grote Δx en Δy: kleinere relatieve afleesfout.",
+   "uo": [
+    "Koos je minder rekenen? Je rekent evenveel. Het voordeel is een nauwkeuriger uitkomst.",
+    "Koos je groter? De helling van een rechte lijn is overal gelijk. De keuze van punten verandert alleen hoe nauwkeurig je hem bepaalt.",
+    "Koos je geen punten dichtbij? Op een lijn liggen overal punten. Het gaat om nauwkeurigheid.",
+    "Klopt: elke aflezing heeft een kleine onzekerheid. Als Δx en Δy groot zijn, valt die onzekerheid relatief weinig op en wordt de helling nauwkeuriger."
+   ],
+   "uh": "Punten ver uit elkaar."
+  },
+  {
+   "v": "Wat geeft de oppervlakte onder een (v,t)-diagram?",
+   "o": [
+    "De gemiddelde snelheid",
+    "De versnelling",
+    "De afgelegde afstand",
+    "De eindsnelheid"
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 4,
+   "u": "Oppervlakte (v,t) = v · t = afstand.",
+   "uo": [
+    "Koos je gemiddelde snelheid? Die vind je door de afstand (de oppervlakte) te delen door de tijd.",
+    "Koos je versnelling? Die is de helling van het (v,t)-diagram, niet de oppervlakte.",
+    "Klopt: snelheid maal tijd is afstand. De oppervlakte tussen de grafiek en de tijdas is daarom de afgelegde afstand.",
+    "Koos je eindsnelheid? Die lees je af op de verticale as aan het eind van de grafiek."
+   ],
+   "uh": "(v,t): oppervlakte = afstand."
+  },
+  {
+   "v": "Een fietser rijdt 10 s met 6,0 m/s. Welke oppervlakte heeft het (v,t)-diagram en wat stelt die voor?",
+   "o": [
+    "60 m/s, de snelheid",
+    "60 m, de afgelegde afstand",
+    "0,6 m, de afgelegde afstand",
+    "16 m, de afgelegde afstand"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 4,
+   "u": "Rechthoek: 6,0 × 10 = 60 m.",
+   "uo": [
+    "Koos je 60 m/s? Het getal klopt, maar de eenheid niet. m/s maal s geeft m: het is een afstand, geen snelheid.",
+    "Klopt: bij een constante snelheid is de oppervlakte een rechthoek: 6,0 m/s × 10 s = 60 m. Dat is de afstand die de fietser aflegt.",
+    "Koos je 0,6 m? Dan heb je gedeeld in plaats van vermenigvuldigd. Oppervlakte is breedte maal hoogte.",
+    "Koos je 16 m? Dan heb je 6,0 en 10 opgeteld. De oppervlakte van een rechthoek is een product."
+   ],
+   "uh": "Rechthoek: v × t."
+  },
+  {
+   "v": "Hoe ver rijdt de auto tijdens het remmen?",
+   "o": [
+    "50 m",
+    "100 m",
+    "10 m",
+    "25 m"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 4,
+   "u": "Driehoek: ½ × 20 × 5,0.",
+   "uo": [
+    "Klopt: tijdens het remmen daalt de snelheid gelijkmatig van 20 m/s naar 0 in 5,0 s. De oppervlakte onder de grafiek is een driehoek: ½ × 5,0 × 20 = 50 m.",
+    "Koos je 100 m? Dan heb je de rechthoek 20 × 5,0 genomen. De snelheid is niet de hele tijd 20 m/s; de oppervlakte is een driehoek, de helft.",
+    "Koos je 10 m? Dan heb je de versnelling uitgerekend en die als afstand gelezen, of door 2 en nog eens door 5 gedeeld. Neem de oppervlakte van de driehoek.",
+    "Koos je 25 m? Dan heb je nog eens door twee gedeeld. Eén keer ½ is genoeg voor een driehoek."
+   ],
+   "uh": "Driehoek: ½ × basis × hoogte.",
+   "ctx": "Een auto rijdt met 20 m/s en remt dan gelijkmatig tot stilstand. Het remmen duurt 5,0 s. In het (v,t)-diagram is de grafiek tijdens het remmen een rechte lijn van 20 m/s naar 0 m/s."
+  },
+  {
+   "v": "Hoe bepaal je de oppervlakte onder een kromme (v,t)-grafiek?",
+   "o": [
+    "De eindwaarde vermenigvuldigen met twee",
+    "De hoogte van het hoogste punt aflezen",
+    "De helling op het midden bepalen",
+    "Hokjes tellen"
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 4,
+   "u": "Kromme: hokjes tellen of benaderen met rechthoeken/driehoeken.",
+   "uo": [
+    "Koos je eindwaarde maal twee? Dat heeft geen verband met de oppervlakte; de afstand hangt af van de hele grafiek, niet alleen van het eindpunt.",
+    "Koos je hoogste punt? Dat geeft alleen de maximale snelheid, niet de afstand.",
+    "Koos je helling? De helling geeft de versnelling. Voor de afstand heb je de oppervlakte nodig.",
+    "Klopt: tel de hokjes onder de grafiek en vermenigvuldig met de waarde van één hokje, of verdeel het gebied in rechthoeken en driehoeken die er zo goed mogelijk op lijken."
+   ],
+   "uh": "Kromme: hokjes tellen."
+  },
+  {
+   "v": "Wanneer ben je aan het interpoleren?",
+   "o": [
+    "Als je een meetpunt weglaat",
+    "Bij voorspellen buiten je meetgebied",
+    "Bij aflezen tussen meetpunten",
+    "Als je de grafiek opnieuw tekent"
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 5,
+   "u": "Interpoleren: binnen; extrapoleren: buiten.",
+   "uo": [
+    "Koos je weglaten? Een meetpunt weglaten heeft niets met interpoleren te maken; dat doe je alleen bij een duidelijke uitschieter.",
+    "Koos je buiten het meetgebied? Dat is extrapoleren. Dat is riskanter, omdat je niet weet of het verband daar nog geldt.",
+    "Klopt: interpoleren is een waarde aflezen tussen twee meetpunten in, op de lijn die je getekend hebt. Dat is meestal betrouwbaar.",
+    "Koos je opnieuw tekenen? Interpoleren doe je in de grafiek die je al hebt, op de lijn tussen twee meetpunten."
+   ],
+   "uh": "Interpoleren = tussen de punten."
+  },
+  {
+   "v": "Waarom is extrapoleren riskanter dan interpoleren?",
+   "o": [
+    "Extrapoleren kan alleen met een computer",
+    "Het verband kan daar anders zijn",
+    "Bij extrapoleren gebruik je minder meetpunten",
+    "Extrapoleren is altijd fout"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 5,
+   "u": "Buiten het meetgebied kan het verband veranderen.",
+   "uo": [
+    "Koos je computer? Extrapoleren kun je gewoon met een liniaal in een grafiek doen, door de lijn door te trekken.",
+    "Klopt: binnen je meetgebied heb je gezien hoe het verband loopt. Daarbuiten kan het veranderen: een veer rekt bijvoorbeeld bij grote kracht niet meer evenredig uit.",
+    "Koos je minder punten? Je gebruikt dezelfde lijn. Het probleem is dat er op die plek geen metingen zijn om te controleren.",
+    "Koos je altijd fout? Extrapoleren kan nuttig zijn, als je er voorzichtig mee bent en het verband goed kent."
+   ],
+   "uh": "Extrapoleren: verband kan veranderen."
+  },
+  {
+   "v": "Hoe ver rekt de veer volgens de leerling uit bij 12 N, en waarom is dat onbetrouwbaar?",
+   "o": [
+    "24 cm, maar dat is onzeker",
+    "24 cm, en dat is zeker juist",
+    "6,0 cm, want de veer wordt stugger",
+    "Dat kun je niet uitrekenen, want 12 N is niet gemeten"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 5,
+   "u": "Extrapolatie: 2,0 cm/N × 12 = 24 cm, maar buiten meetgebied.",
+   "uo": [
+    "Klopt: tussen 0 en 4,0 N rekt de veer 2,0 cm per newton uit, dus volgens de lijn zou 12 N 24 cm geven. Maar 12 N ligt ver buiten het meetgebied: daar kan de veer blijvend vervormen en geldt het evenredige verband niet meer.",
+    "Koos je zeker juist? De uitkomst volgt uit de lijn, maar er is bij 12 N niet gemeten. Veren rekken bij grote kracht vaak niet meer evenredig uit.",
+    "Koos je 6,0 cm? Dat is minder dan bij 4,0 N, terwijl meer kracht de veer verder uitrekt. Doortrekken van de lijn geeft 24 cm.",
+    "Koos je niet uitrekenen? Je kunt het wel schatten door te extrapoleren, maar je moet erbij zeggen dat het onzeker is."
+   ],
+   "uh": "Extrapoleren: onzeker buiten meetgebied.",
+   "ctx": "Een leerling meet de uitrekking van een veer bij krachten van 1,0 N tot 4,0 N. De punten liggen op een rechte lijn door de oorsprong: bij 4,0 N rekt de veer 8,0 cm uit. Ze verlengt de lijn in haar grafiek om de uitrekking bij 12 N te voorspellen."
+  },
+  {
+   "v": "Thee wordt elke 2 minuten gemeten. Hoe bepaal je de temperatuur na 5 minuten?",
+   "o": [
+    "Raden op basis van de begintemperatuur",
+    "Extrapoleren vanaf de laatste meting",
+    "De meting van 4 minuten nemen",
+    "Interpoleren tussen 4 en 6 min"
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 5,
+   "u": "Tussen twee meetpunten: interpoleren.",
+   "uo": [
+    "Koos je raden? Met de grafiek kun je het veel beter bepalen dan op basis van alleen de begintemperatuur.",
+    "Koos je extrapoleren? Dat doe je buiten het meetgebied. 5 minuten ligt er juist binnen.",
+    "Koos je de meting van 4 minuten? Dan negeer je dat de thee in die minuut verder afkoelt. Lees af op de lijn.",
+    "Klopt: 5 minuten ligt tussen de metingen bij 4 en 6 minuten. In de grafiek lees je de temperatuur op de lijn bij 5 minuten af: interpoleren."
+   ],
+   "uh": "Tussen metingen: interpoleren."
+  },
+  {
+   "v": "Welke variabele is hier de afhankelijke en welke moet constant blijven?",
+   "o": [
+    "Afhankelijk: de snelheid; constant: het type band",
+    "Afhankelijk: het type band; constant: de remweg",
+    "Afhankelijk: de remweg; constant: de snelheid",
+    "Afhankelijk: het wegdek; constant: de remweg"
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 1,
+   "u": "Onafhankelijk = band; afhankelijk = remweg; constant = snelheid, wegdek.",
+   "uo": [
+    "Koos je snelheid als afhankelijk? De snelheid stellen ze zelf in en houden ze gelijk. Als die verschilt, kun je de banden niet eerlijk vergelijken.",
+    "Koos je band als afhankelijk? Het type band kiezen de onderzoekers zelf: dat is de onafhankelijke variabele. De remweg meten ze.",
+    "Klopt: de onderzoekers veranderen het type band (onafhankelijk) en meten de remweg (afhankelijk). De snelheid en het wegdek moeten gelijk blijven, anders weet je niet waar een verschil vandaan komt.",
+    "Koos je wegdek als afhankelijk? Het wegdek moet juist constant blijven. Je meet de remweg."
+   ],
+   "uh": "Afhankelijk = wat je meet.",
+   "ctx": "De ANWB test zomer- en winterbanden. Een auto rijdt met 80 km/h over een nat proefcircuit en maakt een noodstop. De onderzoekers meten de remweg met beide soorten banden, telkens met dezelfde auto, dezelfde snelheid en op hetzelfde stuk weg."
+  },
+  {
+   "v": "Hoe groot is de versnelling van de sprinter in de eerste 2,0 s?",
+   "o": [
+    "9,0 m/s²",
+    "4,5 m/s²",
+    "0,22 m/s²",
+    "18 m/s²"
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 3,
+   "u": "a = helling (v,t) = Δv/Δt = 9,0/2,0.",
+   "uo": [
+    "Koos je 9,0 m/s²? Dat is de snelheid na 2,0 s, in m/s. Deel nog door de tijd om de versnelling te krijgen.",
+    "Klopt: in een (v,t)-diagram is de helling de versnelling. De snelheid stijgt van 0 naar 9,0 m/s in 2,0 s: a = 9,0 / 2,0 = 4,5 m/s².",
+    "Koos je 0,22 m/s²? Dan heb je de tijd door de snelheid gedeeld. Versnelling is Δv gedeeld door Δt.",
+    "Koos je 18 m/s²? Dan heb je met de tijd vermenigvuldigd. De helling is een deling: Δv / Δt."
+   ],
+   "uh": "(v,t): helling = versnelling.",
+   "ctx": "Een sprinter start vanuit stilstand. In het (v,t)-diagram loopt de grafiek de eerste 2,0 s als een rechte lijn omhoog tot 9,0 m/s; daarna blijft de snelheid ongeveer constant. Een leerling wil de versnelling in de startfase bepalen."
+  },
+  {
+   "v": "Hoeveel meter legt de sprinter af in de eerste 4,0 s?",
+   "o": [
+    "27 m",
+    "36 m",
+    "18 m",
+    "9,0 m"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 4,
+   "u": "Driehoek ½×2,0×9,0 = 9 m + rechthoek 2,0×9,0 = 18 m.",
+   "uo": [
+    "Klopt: de oppervlakte bestaat uit een driehoek (0-2 s): ½ × 2,0 × 9,0 = 9,0 m en een rechthoek (2-4 s): 2,0 × 9,0 = 18 m. Samen 27 m.",
+    "Koos je 36 m? Dan heb je gedaan alsof hij de hele 4,0 s met 9,0 m/s liep. In de eerste 2,0 s versnelde hij nog; daar is de oppervlakte een driehoek.",
+    "Koos je 18 m? Dat is alleen de rechthoek van 2,0 tot 4,0 s. Tel de driehoek van de startfase erbij.",
+    "Koos je 9,0 m? Dat is alleen de driehoek van de startfase. Daarna loopt hij nog 2,0 s met 9,0 m/s."
+   ],
+   "uh": "Oppervlakte opdelen in driehoek en rechthoek.",
+   "ctx": "Dezelfde sprinter versnelt in 2,0 s gelijkmatig van 0 tot 9,0 m/s en loopt daarna met constant 9,0 m/s door. Een leerling wil met het (v,t)-diagram uitrekenen hoeveel meter hij na 4,0 s heeft afgelegd."
+  },
+  {
+   "v": "Wat schrijf je bij elke as van een grafiek?",
+   "o": [
+    "De naam van je groep",
+    "Alleen de eenheid",
+    "Alleen de getallen",
+    "De grootheid met de eenheid"
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 2,
+   "u": "As: grootheid (eenheid), bijvoorbeeld t (s).",
+   "uo": [
+    "Koos je naam van je groep? Die hoort boven je verslag, niet bij een as.",
+    "Koos je alleen de eenheid? Dan weet de lezer niet welke grootheid het is: s kan seconde zijn, maar ook bij een afstand horen.",
+    "Koos je alleen getallen? Zonder grootheid en eenheid weet niemand wat er langs de as staat.",
+    "Klopt: bij elke as hoort de grootheid met de eenheid, bijvoorbeeld \"t (s)\" of \"afstand (m)\", en een schaal met gelijke stappen."
+   ],
+   "uh": "As: grootheid + eenheid."
+  }
+ ],
+ "oe": [
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een leerling wil onderzoeken of de temperatuur van een rubberen bal invloed heeft op hoe hoog hij stuitert. Ze heeft een vriezer, een bak warm water, een meetlat en een thermometer. Ze laat de bal steeds van dezelfde hoogte vallen.",
+   "v": "Formuleer een onderzoeksvraag en een toetsbare hypothese, en noem de onafhankelijke, de afhankelijke en twee constante variabelen.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Onderzoeksvraag: hoe hangt de stuithoogte van de bal af van de temperatuur van de bal? Hypothese bijvoorbeeld: hoe warmer de bal, hoe hoger hij stuitert (1p). Onafhankelijk: temperatuur van de bal; afhankelijk: stuithoogte (1p). Constant: valhoogte, ondergrond, soort bal (twee noemen) (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een fietser trekt op vanuit stilstand. In het (v,t)-diagram stijgt de snelheid de eerste 4,0 s gelijkmatig tot 6,0 m/s; daarna fietst hij 10 s met constant 6,0 m/s.",
+   "v": "Bepaal de versnelling in de eerste 4,0 s en bereken de totale afstand in de 14 s met de oppervlakte onder de grafiek.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "a = Δv / Δt = 6,0 / 4,0 = 1,5 m/s² (1p). Driehoek: ½ × 4,0 × 6,0 = 12 m; rechthoek: 10 × 6,0 = 60 m (1p). Totaal 72 m (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "In een (x,t)-diagram van een vallende steen wordt de grafiek steeds steiler. Een leerling tekent op t = 1,0 s een raaklijn. Die gaat door de punten (0,50 s; 0 m) en (1,50 s; 9,8 m). Op t = 1,0 s is de steen 4,9 m gevallen.",
+   "v": "Bepaal de snelheid van de steen op t = 1,0 s en leg uit waarom 4,9 / 1,0 = 4,9 m/s niet de snelheid op dat moment is.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Helling raaklijn: (9,8 − 0) / (1,50 − 0,50) = 9,8 m/s (2p). 4,9 / 1,0 is de gemiddelde snelheid over de eerste seconde; de steen versnelt, dus op t = 1,0 s is hij sneller dan gemiddeld (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een leerling meet de temperatuur van een afkoelende kop thee: 0 min 80 °C, 4 min 62 °C, 8 min 50 °C, 12 min 42 °C. Ze tekent een vloeiende kromme door de punten en wil de temperatuur na 6 minuten en na 60 minuten weten. De kamertemperatuur is 20 °C.",
+   "v": "Leg uit welke van de twee bepalingen interpoleren en welke extrapoleren is, en waarom de bepaling bij 60 minuten minder betrouwbaar is.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "6 minuten ligt tussen de metingen: interpoleren (1p). 60 minuten ligt ver buiten het meetgebied: extrapoleren (1p). Het verloop buiten de metingen is onbekend; als je de kromme doortrekt, kan hij bijvoorbeeld onder de kamertemperatuur uitkomen, wat niet kan (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een groep onderzoekt of meststof planten sneller laat groeien. Ze geven tien plantjes meststof en meten na twee weken de lengte. De plantjes zijn gemiddeld 12 cm gegroeid. Ze concluderen dat de meststof werkt.",
+   "v": "Leg uit waarom deze conclusie niet goed onderbouwd is en hoe een controle-experiment de proef verbetert.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Zonder vergelijking weet je niet of de plantjes zonder meststof ook 12 cm waren gegroeid (1p). Controle-experiment: een tweede groep van tien gelijke plantjes zonder meststof, verder in precies dezelfde omstandigheden (licht, water, temperatuur) (1p). Alleen als de groep met meststof duidelijk meer groeit, werkt de meststof (1p)."
+  }
+ ]
+}
