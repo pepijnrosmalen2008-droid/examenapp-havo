@@ -1,0 +1,688 @@
+{
+ "id": "D1",
+ "lo": "sk.D.1",
+ "gs": 2,
+ "naam": "Koolwaterstoffen: alkanen en alkenen",
+ "beschrijving": "Je onderscheidt alkanen en alkenen, herkent de homologe reeks, telt molecuulformules uit structuurformules, toont een dubbele binding aan met broomwater en verklaart het kookpunt met de lengte van de keten.",
+ "ceStatus": "CE",
+ "binas": "42, 99",
+ "val": "",
+ "onderwerpen": [
+  "Koolstof en zijn vier bindingen",
+  "Alkanen en de homologe reeks",
+  "Alkenen: de dubbele binding",
+  "Formules lezen en tellen",
+  "Broomwater en verbranding",
+  "Kookpunt en eigenschappen"
+ ],
+ "sam": "Koolstof vormt vier bindingen en daardoor ketens. Alkanen zijn verzadigd (alleen enkele bindingen, CₙH₂ₙ₊₂), alkenen hebben één C=C (CₙH₂ₙ, onverzadigd). Een homologe reeks verschilt steeds één CH₂. Broomwater ontkleurt snel bij een C=C (additie). Volledige verbranding geeft CO₂ en H₂O. Hoe langer de keten, hoe hoger het kookpunt door sterkere vanderwaalskrachten.",
+ "begrippen": [
+  {
+   "t": "Koolwaterstof",
+   "d": "Stof waarvan de moleculen alleen uit koolstof- en waterstofatomen bestaan."
+  },
+  {
+   "t": "Alkaan",
+   "d": "Verzadigde koolwaterstof met alleen enkele bindingen; algemene formule CₙH₂ₙ₊₂."
+  },
+  {
+   "t": "Alkeen",
+   "d": "Onverzadigde koolwaterstof met één dubbele C=C-binding; algemene formule CₙH₂ₙ."
+  },
+  {
+   "t": "Verzadigd",
+   "d": "Met alleen enkele bindingen tussen de C-atomen; er kan geen waterstof meer bij."
+  },
+  {
+   "t": "Onverzadigd",
+   "d": "Met één of meer dubbele C=C-bindingen; aan de dubbele binding kan nog iets vast."
+  },
+  {
+   "t": "Homologe reeks",
+   "d": "Reeks verbindingen waarin elk volgend lid één CH₂-groep meer heeft."
+  },
+  {
+   "t": "Structuurformule",
+   "d": "Weergave van een molecuul waarin je ziet welk atoom aan welk atoom vastzit."
+  },
+  {
+   "t": "Molecuulformule",
+   "d": "Formule die aangeeft welke atomen en hoeveel van elk in een molecuul zitten, zoals C₃H₈."
+  },
+  {
+   "t": "Broomwatertest",
+   "d": "Test op een C=C-binding: broomwater ontkleurt snel door additie van broom."
+  },
+  {
+   "t": "Vanderwaalskrachten",
+   "d": "Aantrekking tussen moleculen; sterker naarmate de moleculen groter zijn."
+  },
+  {
+   "t": "Covalentie",
+   "d": "Het aantal atoombindingen dat een atoom vormt: C 4, N 3, O 2, H 1."
+  }
+ ],
+ "sv": [
+  {
+   "v": "Hoeveel atoombindingen vormt een koolstofatoom in een molecuul?",
+   "o": [
+    "Drie",
+    "Twee",
+    "Vier",
+    "Dat verschilt per molecuul"
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 0,
+   "u": "Koolstof heeft covalentie 4: elk C-atoom heeft vier bindingen.",
+   "uo": [
+    "Koos je drie? Drie bindingen horen bij stikstof, zoals in ammoniak NH₃. Koolstof heeft er één meer: denk aan methaan, CH₄.",
+    "Koos je twee? Twee bindingen horen bij zuurstof, zoals in water: H-O-H. Koolstof heeft er twee meer, daarom zit methaan vol met vier H-atomen.",
+    "Klopt: een koolstofatoom vormt altijd vier bindingen. Een dubbele binding telt daarbij als twee.",
+    "Koos je verschilt per molecuul? Koolstof heeft in elk molecuul vier bindingen. Een dubbele binding telt daarbij als twee."
+   ],
+   "uh": "C 4, N 3, O 2, H 1."
+  },
+  {
+   "v": "Waarom kan koolstof zulke lange ketens vormen?",
+   "o": [
+    "Koolstof is het lichtste element en past daardoor tussen alle andere atomen in",
+    "C-atomen binden sterk aan elkaar en houden bindingen over voor andere atomen",
+    "Koolstofatomen hebben geen elektronen nodig om te binden",
+    "Koolstof komt alleen voor in levende wezens"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 0,
+   "u": "C-C-bindingen zijn sterk, en met vier bindingen per atoom kan een keten doorlopen en vertakken.",
+   "uo": [
+    "Koos je lichtste element? Waterstof is het lichtste element, niet koolstof. Ketenvorming komt door de vier bindingen.",
+    "Klopt: een C-atoom bindt aan twee buren in de keten en houdt nog twee bindingen over voor waterstof of een vertakking. Zo kunnen ketens van duizenden atomen ontstaan.",
+    "Koos je geen elektronen? Een atoombinding is juist een gedeeld elektronenpaar. Zonder elektronen geen binding.",
+    "Koos je levende wezens? Koolstofverbindingen zitten ook in aardolie, plastic en medicijnen. De keten komt door de bindingen, niet door het leven."
+   ],
+   "uh": "Vier bindingen + sterke C-C-binding = ketens."
+  },
+  {
+   "v": "Wat klopt er niet aan de structuurformule van de leerling?",
+   "o": [
+    "Het middelste C-atoom heeft vijf bindingen in plaats van vier",
+    "Het molecuul heeft te weinig waterstofatomen",
+    "Een C-atoom mag niet aan twee andere C-atomen vast zitten",
+    "Waterstof mag alleen aan de uiteinden van een koolstofketen vastzitten"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 0,
+   "u": "Tel per C-atoom de bindingen: het moeten er precies vier zijn.",
+   "uo": [
+    "Klopt: het middelste C-atoom zit vast aan twee C-atomen en aan drie H-atomen. Dat zijn vijf bindingen, terwijl koolstof er vier heeft. Er moet een H weg: CH₃-CH₂-CH₃.",
+    "Koos je te weinig waterstof? Er zijn er juist te veel: propaan heeft 8 H-atomen, de leerling tekende er 9.",
+    "Koos je twee C-atomen? Een C-atoom in het midden van een keten zit altijd aan twee andere C-atomen. Dat is juist hoe een keten werkt.",
+    "Koos je alleen aan het uiteinde? Waterstof zit aan elk C-atoom van de keten, ook in het midden. Een middelste C heeft er twee, omdat het al twee C-buren heeft."
+   ],
+   "uh": "Controleer altijd: C 4 bindingen, H 1 binding.",
+   "ctx": "Een leerling tekent de structuurformule van propaan. Ze zet drie C-atomen op een rij. Aan beide buitenste C-atomen tekent ze drie H-atomen. Aan het middelste C-atoom tekent ze er ook drie, één erboven, één eronder en één schuin. Haar docent zet er een rood kruis bij."
+  },
+  {
+   "v": "Welke algemene formule hoort bij de alkanen?",
+   "o": [
+    "CₙH₂ₙ₊₂O",
+    "CₙH₂ₙ",
+    "CₙH₂ₙ₋₂",
+    "CₙH₂ₙ₊₂"
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 1,
+   "u": "Alkanen zijn verzadigd: alleen enkele bindingen, en dus 2n+2 H-atomen.",
+   "uo": [
+    "Koos je CₙH₂ₙ₊₂O? Dat is de formule van een alcohol, met een zuurstofatoom. Alkanen bevatten alleen C en H.",
+    "Koos je CₙH₂ₙ? Dat is de formule van de alkenen. Door de dubbele binding missen er twee H-atomen; een alkaan heeft er 2n + 2.",
+    "Koos je CₙH₂ₙ₋₂? Dat hoort bij stoffen met een drievoudige binding of twee dubbele bindingen, geen alkanen.",
+    "Klopt: bij een alkaan zitten er twee H-atomen aan elk C-atoom en nog één extra aan beide uiteinden. Dat geeft 2n + 2."
+   ],
+   "uh": "Alkaan: CₙH₂ₙ₊₂."
+  },
+  {
+   "v": "Welke molecuulformule hoort bij hexaan?",
+   "o": [
+    "C₆H₁₄O",
+    "C₆H₁₂",
+    "C₆H₁₄",
+    "C₅H₁₂"
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 1,
+   "u": "Hex = 6 C; alkaan: 2 × 6 + 2 = 14 H.",
+   "uo": [
+    "Koos je C₆H₁₄O? Dat is een alcohol (hexanol) met een zuurstofatoom. Hexaan is een koolwaterstof en bestaat alleen uit C en H.",
+    "Koos je C₆H₁₂? Dat is hexeen, het alkeen met zes C-atomen. Hexaan heeft alleen enkele bindingen en dus twee H meer.",
+    "Klopt: hex betekent zes koolstofatomen. Met CₙH₂ₙ₊₂ krijg je 2 × 6 + 2 = 14 waterstofatomen.",
+    "Koos je C₅H₁₂? Dat is pentaan, met vijf C-atomen. Hex staat voor zes, dus je hebt één CH₂-groep te weinig."
+   ],
+   "uh": "Tel C uit de naam, reken H met 2n+2."
+  },
+  {
+   "v": "Welke van deze stoffen is geen alkaan?",
+   "o": [
+    "C₅H₁₂",
+    "C₄H₈",
+    "C₇H₁₆",
+    "C₉H₂₀"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 1,
+   "u": "Controleer met 2n+2: C₄ zou H₁₀ moeten hebben.",
+   "uo": [
+    "Koos je C₅H₁₂? Reken na met 2n + 2: 2 × 5 + 2 = 12. Het H-aantal klopt precies, dus dit is gewoon pentaan, een alkaan.",
+    "Klopt: een alkaan met 4 C heeft 2 × 4 + 2 = 10 H-atomen. C₄H₈ heeft er twee minder: het is een alkeen (buteen).",
+    "Koos je C₇H₁₆? Bij zeven C-atomen hoort 2 × 7 + 2 = 16 H. Dat is heptaan: verzadigd, alleen enkele bindingen.",
+    "Koos je C₉H₂₀? Een langere keten maakt het niet anders: 2 × 9 + 2 = 20. Dit is nonaan, ook een alkaan."
+   ],
+   "uh": "H-aantal vergelijken met 2n+2."
+  },
+  {
+   "v": "Wat hebben twee opeenvolgende leden van een homologe reeks met elkaar te maken?",
+   "o": [
+    "Ze verschillen precies één CH₂-groep",
+    "Ze hebben dezelfde molecuulformule",
+    "Ze hebben hetzelfde kookpunt",
+    "Ze verschillen precies één C-atoom en geen H"
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 1,
+   "u": "Homologe reeks: elk volgend lid heeft er één CH₂ bij.",
+   "uo": [
+    "Klopt: van methaan CH₄ naar ethaan C₂H₆ komt er één C en twee H bij, dus één CH₂-groep. Zo gaat het de hele reeks door.",
+    "Koos je dezelfde formule? Dan zijn het isomeren. Leden van een homologe reeks hebben steeds één CH₂ meer.",
+    "Koos je hetzelfde kookpunt? Het kookpunt stijgt juist met elk volgend lid, omdat de moleculen groter worden.",
+    "Koos je alleen een C erbij? Een extra C-atoom heeft ook twee extra H-atomen nodig om aan vier bindingen te komen."
+   ],
+   "uh": "Homologe reeks: steeds + CH₂."
+  },
+  {
+   "v": "Hoe heet het alkaan C₇H₁₆?",
+   "o": [
+    "Heptanol",
+    "Hexaan",
+    "Octaan",
+    "Heptaan"
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 1,
+   "u": "Meth 1, eth 2, prop 3, but 4, pent 5, hex 6, hept 7, oct 8, non 9, dec 10.",
+   "uo": [
+    "Koos je heptanol? De uitgang -ol hoort bij een alcohol met een OH-groep. Een alkaan eindigt op -aan.",
+    "Koos je hexaan? Hex staat voor zes C-atomen: C₆H₁₄. Bij zeven C-atomen hoort de stam hept, dus heptaan.",
+    "Koos je octaan? Oct staat voor acht, zoals in een octopus met acht armen: C₈H₁₈. Tel de C-atomen in C₇H₁₆: dat zijn er zeven.",
+    "Klopt: hept staat voor zeven koolstofatomen. Een alkaan krijgt de uitgang -aan."
+   ],
+   "uh": "Stamnaam = aantal C."
+  },
+  {
+   "v": "Waaraan herken je een alkeen in een structuurformule?",
+   "o": [
+    "Het molecuul bevat een zuurstofatoom",
+    "Het molecuul heeft alleen enkele bindingen",
+    "Het molecuul heeft één dubbele binding tussen twee C-atomen",
+    "Het molecuul heeft een ring van zes C-atomen met afwisselende bindingen"
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 2,
+   "u": "Alkeen: één C=C. Daardoor CₙH₂ₙ.",
+   "uo": [
+    "Koos je zuurstof? Alkenen zijn koolwaterstoffen: ze bestaan alleen uit C en H. Stoffen met zuurstof, zoals alcoholen, horen bij een andere groep.",
+    "Koos je alleen enkele bindingen? Dat zijn de alkanen, met de uitgang -aan. De uitgang -een wijst juist op een dubbele binding.",
+    "Klopt: een alkeen heeft één dubbele binding tussen twee koolstofatomen. Daardoor heeft het twee H-atomen minder dan het alkaan.",
+    "Koos je een ring? Een ring kan in een molecuul voorkomen, maar dat maakt het nog geen alkeen. Het kenmerk van een alkeen is de dubbele C=C-binding."
+   ],
+   "uh": "Alkeen = C=C."
+  },
+  {
+   "v": "Welke molecuulformule heeft propeen?",
+   "o": [
+    "C₃H₈",
+    "C₃H₆",
+    "C₃H₄",
+    "C₃H₆O"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 2,
+   "u": "Prop = 3 C; alkeen CₙH₂ₙ: 6 H.",
+   "uo": [
+    "Koos je C₃H₈? Dat is propaan, met alleen enkele bindingen. De dubbele binding in propeen kost twee H-atomen: C₃H₆.",
+    "Klopt: propeen heeft drie C-atomen en één dubbele binding. Met CₙH₂ₙ krijg je 6 H-atomen.",
+    "Koos je C₃H₄? Dan zijn er nog twee H te weinig. Dat hoort bij een stof met twee dubbele bindingen of een drievoudige binding.",
+    "Koos je C₃H₆O? Daar zit een zuurstofatoom in, en dan is het geen koolwaterstof meer. Propeen bestaat alleen uit C en H."
+   ],
+   "uh": "Alkeen: CₙH₂ₙ."
+  },
+  {
+   "v": "Waarom bestaat er geen alkeen met maar één koolstofatoom?",
+   "o": [
+    "Voor een dubbele C=C-binding zijn minstens twee C-atomen nodig",
+    "Een C-atoom kan maar één binding vormen",
+    "Metheen is te instabiel en valt meteen uiteen",
+    "Eén C-atoom heeft te weinig elektronen voor een dubbele binding"
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 2,
+   "u": "De dubbele binding zit tussen twee C-atomen. Etheen is het kleinste alkeen.",
+   "uo": [
+    "Klopt: de dubbele binding van een alkeen zit tussen twee koolstofatomen. Met één C-atoom kan dat niet, dus etheen (C₂H₄) is het kleinste alkeen.",
+    "Koos je één binding? Koolstof vormt er juist vier. Het probleem bij één C-atoom is dat er geen tweede C is om de dubbele binding mee te maken.",
+    "Koos je instabiel? Het probleem is niet dat het snel uiteenvalt. Er is gewoon geen tweede C-atoom om de dubbele binding mee te maken.",
+    "Koos je te weinig elektronen? Koolstof heeft genoeg elektronen voor vier bindingen. Het probleem is dat er geen tweede C-atoom is om de dubbele binding mee te maken."
+   ],
+   "uh": "C=C vraagt twee C-atomen: etheen is de kleinste."
+  },
+  {
+   "v": "Welke bouw hebben vetzuren die op dit etiket onverzadigd heten?",
+   "o": [
+    "De vetzuren hebben de maximale hoeveelheid waterstof aan elk C-atoom",
+    "De olie bevat geen water",
+    "De olie is nog niet verhit",
+    "De vetzuren bevatten één of meer dubbele C=C-bindingen"
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 2,
+   "u": "Onverzadigd = er zijn C=C-bindingen, er kan nog waterstof bij.",
+   "uo": [
+    "Koos je maximale hoeveelheid waterstof? Dat is juist verzadigd: alleen enkele bindingen, er kan geen H meer bij.",
+    "Koos je geen water? Verzadigd en onverzadigd gaan over de bindingen in de koolstofketen, niet over water.",
+    "Koos je niet verhit? Het woord zegt niets over de bewerking. Het beschrijft de bouw van de moleculen.",
+    "Klopt: onverzadigd betekent dat er dubbele bindingen tussen C-atomen zitten. Er \"past\" nog waterstof bij, net als bij een alkeen."
+   ],
+   "uh": "Verzadigd: alleen enkele bindingen. Onverzadigd: ook C=C.",
+   "ctx": "Op een fles zonnebloemolie staat: \"Rijk aan onverzadigde vetzuren.\" Op een pakje roomboter staat juist \"bevat veel verzadigd vet\". Een vetzuur is een lange koolstofketen met aan het uiteinde een zuurgroep. In de les over alkanen en alkenen heeft de docent het woord verzadigd al genoemd."
+  },
+  {
+   "v": "Hoeveel waterstofatomen heeft een alkaan met acht koolstofatomen?",
+   "o": [
+    "20",
+    "16",
+    "18",
+    "8"
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 3,
+   "u": "2 × 8 + 2 = 18: octaan C₈H₁₈.",
+   "uo": [
+    "Koos je 20? Dan heb je 2n + 4 gerekend. Reken na: 2 × 8 = 16, plus 2 voor de uiteinden is 18.",
+    "Koos je 16? Dan heb je 2n gerekend. Dat hoort bij een alkeen met een dubbele binding. Alkanen hebben er twee meer: 18.",
+    "Klopt: met CₙH₂ₙ₊₂ krijg je 2 × 8 + 2 = 18. Octaan, een belangrijk deel van benzine, is C₈H₁₈.",
+    "Koos je 8? Dan heb je één H per C geteld. Elk C-atoom in de keten heeft er minstens twee, en de uiteinden drie."
+   ],
+   "uh": "Alkaan: 2n + 2."
+  },
+  {
+   "v": "Welke molecuulformule heeft deze stof?",
+   "o": [
+    "C₅H₁₂",
+    "C₅H₁₀",
+    "C₅H₈",
+    "C₄H₁₀"
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 3,
+   "u": "Vijf C met één C=C: alkeen, CₙH₂ₙ = C₅H₁₀.",
+   "uo": [
+    "Koos je C₅H₁₂? Dat hoort bij pentaan, zonder dubbele binding. De dubbele binding kost twee H-atomen.",
+    "Klopt: vijf C-atomen met één dubbele binding is een alkeen. Tel per C-atoom de vrije bindingen voor H: samen 10. Het is penteen, C₅H₁₀.",
+    "Koos je C₅H₈? Dan heb je vier H te weinig geteld. Dat zou passen bij twee dubbele bindingen, terwijl deze stof er maar één heeft.",
+    "Koos je C₄H₁₀? Er zijn vijf C-atomen in de keten, niet vier. Tel eerst de C-atomen en bepaal dan pas het aantal H."
+   ],
+   "uh": "Tel C, kijk naar C=C, bepaal H.",
+   "ctx": "In een structuurformule staan vijf koolstofatomen in een rechte keten. Tussen het eerste en het tweede C-atoom staat een dubbele streep. Alle andere bindingen tussen de C-atomen zijn enkel. De overige bindingen gaan naar H-atomen, die je zelf moet tellen."
+  },
+  {
+   "v": "Bereken de molaire massa van propaan (C₃H₈).",
+   "o": [
+    "44,1 g/mol",
+    "42,1 g/mol",
+    "36,0 g/mol",
+    "29,1 g/mol"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 3,
+   "u": "3 × 12,01 + 8 × 1,008 = 36,03 + 8,06 = 44,1 g/mol.",
+   "uo": [
+    "Klopt: 3 × 12,01 = 36,03 en 8 × 1,008 = 8,06. Samen 44,1 g/mol.",
+    "Koos je 42,1? Dat is de molaire massa van propeen, C₃H₆. Propaan heeft twee H-atomen meer, dus 2 × 1,008 erbij.",
+    "Koos je 36,0? Dan heb je alleen de koolstofatomen geteld (3 × 12,01) en de acht waterstofatomen vergeten.",
+    "Koos je 29,1? Dan heb je 3 × 12,01 + 8 × 1,008 verward met één C weinig: 2 × 12,01 + 5 × 1,008. Gebruik alle atomen uit de formule."
+   ],
+   "uh": "Massa = som van alle atoommassa's (Binas 99).",
+   "ctx": "Propaan wordt als brandstof verkocht in gasflessen voor de barbecue. Om te rekenen hoeveel mol gas er in een fles van 5,0 kg zit, heb je eerst de molaire massa nodig. Gebruik de atoommassa's C = 12,01 u en H = 1,008 u."
+  },
+  {
+   "v": "Wat laat een structuurformule zien dat een molecuulformule niet laat zien?",
+   "o": [
+    "Hoe zwaar het molecuul is",
+    "Hoeveel atomen van elke soort er zijn",
+    "Of de stof bij kamertemperatuur een gas of een vloeistof is",
+    "Hoe de atomen aan elkaar gebonden zijn"
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 3,
+   "u": "Molecuulformule = welke en hoeveel atomen; structuurformule = ook de bindingen.",
+   "uo": [
+    "Koos je hoe zwaar? De massa reken je uit met de molecuulformule. Daar heb je geen structuurformule voor nodig.",
+    "Koos je hoeveel atomen? Dat zie je ook al aan de molecuulformule, zoals C₃H₈. De structuurformule voegt toe hoe ze verbonden zijn.",
+    "Koos je gas of vloeistof? Dat lees je af uit het kookpunt in Binas, niet uit een formule. Een tekening van het molecuul laat de bindingen zien.",
+    "Klopt: in een structuurformule zie je welk atoom aan welk atoom zit, en of een binding enkel of dubbel is."
+   ],
+   "uh": "Structuurformule toont de bindingen."
+  },
+  {
+   "v": "Hoe toon je aan dat een koolwaterstof een dubbele C=C-binding heeft?",
+   "o": [
+    "De stof geleidt stroom",
+    "Kalkwater wordt troebel",
+    "Broomwater ontkleurt snel als je het toevoegt",
+    "De stof lost goed op in water, omdat de dubbele binding polair is"
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 4,
+   "u": "Broom reageert snel met een C=C (additie); de kleur verdwijnt.",
+   "uo": [
+    "Koos je stroom geleiden? Koolwaterstoffen geleiden geen stroom, of er nu een dubbele binding in zit of niet.",
+    "Koos je kalkwater? Kalkwater is een test op CO₂: het wordt troebel. Dat zegt niets over een dubbele binding in een koolwaterstof.",
+    "Klopt: broom gaat aan de dubbele binding vastzitten. Het gekleurde broom wordt verbruikt, dus het mengsel ontkleurt.",
+    "Koos je oplossen in water? Alkanen en alkenen lossen allebei slecht op in water, dus daarmee zie je geen verschil. Broomwater laat het wel zien."
+   ],
+   "uh": "Broomwater ontkleurt = C=C aanwezig."
+  },
+  {
+   "v": "Wat ontstaat er als etheen reageert met broom?",
+   "o": [
+    "Ethaan en waterstofbromide",
+    "1,2-dibroomethaan",
+    "Broometheen en waterstof",
+    "Koolstofdioxide en water"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 4,
+   "u": "Additie: C₂H₄ + Br₂ → C₂H₄Br₂. De dubbele binding wordt enkel.",
+   "uo": [
+    "Koos je ethaan en HBr? Dan zou er waterstof bij komen en broom eraf. Bij deze reactie komt het hele Br₂-molecuul aan het etheen vast.",
+    "Klopt: bij een additie klapt de dubbele binding open en komt er aan elk C-atoom een Br-atoom. Er ontstaat één product: 1,2-dibroomethaan.",
+    "Koos je broometheen en waterstof? Dat zou een vervanging zijn. Bij een dubbele binding is het een additie: er gaat niets af.",
+    "Koos je CO₂ en water? Dat ontstaat bij verbranding met zuurstof, niet bij een reactie met broom. Broom gaat aan de dubbele binding vastzitten."
+   ],
+   "uh": "Additie aan C=C: alles komt erbij, niets gaat eraf."
+  },
+  {
+   "v": "Welke conclusie trekt de leerling?",
+   "o": [
+    "Fles A bevat hexeen, fles B hexaan",
+    "Fles A bevat hexaan, fles B hexeen",
+    "Beide flessen bevatten hexeen",
+    "Met broomwater kun je het niet onderscheiden"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 4,
+   "u": "Ontkleuren = C=C = alkeen; blijft gekleurd = alkaan.",
+   "uo": [
+    "Klopt: in fles A reageert het broom met de dubbele binding, dus daar zit hexeen. In fles B blijft de kleur, dus daar zit hexaan zonder dubbele binding.",
+    "Koos je A hexaan? Het is andersom: een alkaan reageert in het donker niet met broomwater, dus de kleur blijft.",
+    "Koos je beide hexeen? Dan zou het broomwater in beide buizen ontkleuren. In buis B bleef de kleur, dus daar zit geen dubbele binding.",
+    "Koos je niet te onderscheiden? Juist deze test laat het verschil zien: alleen de stof met C=C laat broom snel reageren."
+   ],
+   "uh": "Broomwatertest: alkeen ontkleurt, alkaan niet.",
+   "ctx": "Een leerling heeft twee flessen zonder etiket. Ze weet dat de ene hexaan bevat en de andere hexeen. Ze doet in twee reageerbuizen wat van elke vloeistof en voegt een paar druppels bruin broomwater toe. In buis A is de kleur binnen een paar seconden weg, in buis B blijft hij."
+  },
+  {
+   "v": "Welke reactievergelijking geeft de volledige verbranding van methaan goed weer?",
+   "o": [
+    "2 CH₄ + 3 O₂ → 2 CO + 4 H₂O",
+    "CH₄ + O₂ → CO₂ + H₂O",
+    "CH₄ + 2 O₂ → C + 2 H₂O",
+    "CH₄ + 2 O₂ → CO₂ + 2 H₂O"
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 4,
+   "u": "Volledige verbranding: CO₂ en H₂O. Kloppend maken: 1 C, 4 H, 4 O.",
+   "uo": [
+    "Koos je de vergelijking met CO? Die klopt wel, maar hoort bij onvolledige verbranding: er ontstaat koolstofmonoxide. Bij volledige verbranding ontstaat CO₂.",
+    "Koos je zonder coëfficiënten? Tel na: links 4 H, rechts maar 2, en ook de O klopt niet. Zonder coëfficiënten is de vergelijking niet kloppend.",
+    "Koos je C als product? Roet ontstaat bij onvolledige verbranding, als er te weinig zuurstof is. Volledige verbranding geeft CO₂.",
+    "Klopt: links 1 C, 4 H en 4 O; rechts ook 1 C, 4 H (in 2 H₂O) en 2 + 2 = 4 O."
+   ],
+   "uh": "Koolwaterstof + O₂ → CO₂ + H₂O."
+  },
+  {
+   "v": "Hoeveel mol zuurstof is nodig voor de volledige verbranding van 1 mol propaan?",
+   "o": [
+    "4 mol",
+    "3 mol",
+    "5 mol",
+    "10 mol"
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 4,
+   "u": "C₃H₈ + 5 O₂ → 3 CO₂ + 4 H₂O.",
+   "uo": [
+    "Koos je 4 mol? Dat is het aantal mol water. Tel alle O-atomen rechts: 6 in CO₂ en 4 in water is 10, dus 5 O₂.",
+    "Koos je 3 mol? Dat is het aantal mol CO₂ dat ontstaat. Voor het water dat ontstaat is ook zuurstof nodig, dus het zijn er meer.",
+    "Klopt: 3 CO₂ bevat 6 O en 4 H₂O bevat 4 O. Samen 10 O-atomen, dus 5 O₂-moleculen.",
+    "Koos je 10 mol? Dat is het aantal O-atomen dat nodig is. Zuurstof komt voor als O₂-moleculen, dus het zijn 5 mol O₂."
+   ],
+   "uh": "Eerst C en H kloppend, dan O tellen en door 2 delen.",
+   "ctx": "Een barbecue op propaangas brandt met een blauwe vlam: de verbranding is volledig. Er ontstaan alleen koolstofdioxide en waterdamp. Een leerling wil weten hoeveel zuurstof er per mol propaan (C₃H₈) nodig is en maakt eerst de reactievergelijking kloppend."
+  },
+  {
+   "v": "Wat gebeurt er met het kookpunt van de alkanen als de keten langer wordt?",
+   "o": [
+    "Het daalt",
+    "Het stijgt",
+    "Het blijft gelijk",
+    "Het wordt eerst lager en dan hoger"
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 5,
+   "u": "Langere keten: grotere moleculen, sterkere vanderwaalskrachten, hoger kookpunt.",
+   "uo": [
+    "Koos je daalt? Het is andersom. Grotere moleculen trekken elkaar sterker aan en zijn moeilijker los te krijgen.",
+    "Klopt: methaan kookt bij −162 °C, decaan bij 174 °C. Hoe langer de keten, hoe hoger het kookpunt.",
+    "Koos je gelijk? Kijk naar het verschil tussen aardgas (gas) en kaarsvet (vast): allebei alkanen, heel ander kookpunt.",
+    "Koos je eerst lager? Bij de onvertakte alkanen stijgt het kookpunt bij elk volgend lid, zonder dip. Elke CH₂ erbij maakt de aantrekking sterker."
+   ],
+   "uh": "Langer = hoger kookpunt."
+  },
+  {
+   "v": "Waarom heeft octaan een hoger kookpunt dan propaan?",
+   "o": [
+    "Octaanmoleculen zijn groter, dus de vanderwaalskrachten zijn sterker",
+    "Octaan heeft waterstofbruggen en propaan niet",
+    "Octaan heeft een dubbele binding",
+    "De atoombindingen in octaan zijn sterker en breken bij koken pas later"
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 5,
+   "u": "Bij koken gaan de moleculen uit elkaar; grotere moleculen hebben meer contact en sterkere vanderwaalskrachten.",
+   "uo": [
+    "Klopt: bij koken moeten de moleculen van elkaar los. Grotere moleculen hebben meer contactoppervlak en trekken elkaar sterker aan.",
+    "Koos je waterstofbruggen? Daarvoor heb je OH- of NH-groepen nodig. Alkanen hebben alleen C en H, dus geen waterstofbruggen.",
+    "Koos je dubbele binding? Octaan is een alkaan en heeft alleen enkele bindingen. Een dubbele binding verklaart het hogere kookpunt dus niet.",
+    "Koos je atoombindingen? Bij koken breken de atoombindingen niet. Alleen de krachten tussen de moleculen worden overwonnen."
+   ],
+   "uh": "Koken = moleculen los van elkaar, niet bindingen breken."
+  },
+  {
+   "v": "Welke van deze alkanen is bij 20 °C een vloeistof?",
+   "o": [
+    "Methaan",
+    "Butaan",
+    "Propaan",
+    "Pentaan"
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 5,
+   "u": "Vloeistof bij 20 °C: smeltpunt onder 20 °C en kookpunt boven 20 °C. Alleen pentaan (36 °C).",
+   "uo": [
+    "Koos je methaan? Kookpunt −162 °C: ver onder kamertemperatuur, dus een gas. Het is de hoofdstof van aardgas.",
+    "Koos je butaan? Butaan kookt bij −0,5 °C. Bij 20 °C is het dus een gas. In een aansteker is het vloeibaar door de druk.",
+    "Koos je propaan? Kookpunt −42 °C: bij 20 °C is het al lang gekookt en dus een gas. Alleen in een drukfles is het vloeibaar.",
+    "Klopt: pentaan kookt bij 36 °C. Bij 20 °C is dat nog niet bereikt, dus pentaan is vloeibaar."
+   ],
+   "uh": "Kookpunt boven 20 °C = vloeistof (bij lage smeltpunten).",
+   "ctx": "Uit Binas tabel 42: kookpunten van de eerste alkanen. Methaan −162 °C, ethaan −89 °C, propaan −42 °C, butaan −0,5 °C, pentaan 36 °C, hexaan 69 °C. De smeltpunten van al deze stoffen liggen ver onder 0 °C."
+  },
+  {
+   "v": "Waarom mengt benzine niet met water?",
+   "o": [
+    "Benzine reageert met water tot een laagje",
+    "Benzine is zwaarder dan water",
+    "Alkanen zijn apolair en kunnen geen waterstofbruggen met water vormen",
+    "Water kookt bij een hogere temperatuur dan benzine, dus ze blijven gescheiden"
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 5,
+   "u": "Alkanen zijn hydrofoob: watermoleculen houden elkaar vast met waterstofbruggen en laten de alkanen niet tussen zich.",
+   "uo": [
+    "Koos je reageert? Benzine en water reageren niet met elkaar. Ze mengen alleen niet, omdat alkanen niet met watermoleculen kunnen binden.",
+    "Koos je zwaarder? Benzine is juist lichter dan water en drijft erop. Bovendien verklaart dichtheid niet waarom ze niet mengen.",
+    "Klopt: watermoleculen trekken elkaar sterk aan via waterstofbruggen. Alkaanmoleculen kunnen daar niet aan meedoen, dus ze blijven apart.",
+    "Koos je kookpunt? Het kookpunt zegt niets over mengen. Het gaat om de krachten tussen de moleculen: water houdt zichzelf vast met waterstofbruggen."
+   ],
+   "uh": "Alkanen = hydrofoob."
+  },
+  {
+   "v": "Waarom gebruiken ze in Canada in de winter propaan en geen butaan?",
+   "o": [
+    "Propaan levert per molecuul meer energie dan butaan bij verbranding",
+    "Butaan verdampt niet onder −0,5 °C, propaan wel tot −42 °C",
+    "Butaan bevriest al bij 0 °C",
+    "Propaan is een alkeen en brandt daardoor beter"
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 5,
+   "u": "Het gas moet uit de fles verdampen; butaan kookt bij −0,5 °C en blijft bij strenge vorst vloeibaar.",
+   "uo": [
+    "Koos je meer energie per molecuul? Butaan heeft een C meer en levert per molecuul juist meer energie. Het gaat om het kookpunt.",
+    "Klopt: een gasfles werkt alleen als de vloeistof verdampt. Bij −20 °C blijft butaan (kookpunt −0,5 °C) vloeibaar en komt er geen gas uit. Propaan kookt pas bij −42 °C en verdampt nog wel.",
+    "Koos je bevriest bij 0 °C? Het smeltpunt van butaan ligt rond −138 °C. Het bevriest niet, maar het verdampt niet meer.",
+    "Koos je alkeen? Propaan is C₃H₈, een alkaan met alleen enkele bindingen. Het verschil met butaan is het kookpunt, niet het soort binding."
+   ],
+   "uh": "Kookpunt bepaalt of een gas bruikbaar is in de kou.",
+   "ctx": "Campinggas in Nederland is vaak butaan of een mengsel met butaan. In Canada, waar het in de winter −20 °C kan worden, verkopen ze vooral flessen met zuiver propaan. In de fles staat de brandstof onder druk en is hij vloeibaar; bij het opendraaien moet de vloeistof verdampen."
+  },
+  {
+   "v": "Waarom drijft de olie op het water?",
+   "o": [
+    "De alkanen hebben een kleinere dichtheid dan water en mengen er niet mee",
+    "Olie is lichter omdat er lucht in zit",
+    "De alkanen reageren met het zoute zeewater tot een licht, drijvend laagje",
+    "Olie heeft een hoger kookpunt dan water"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 5,
+   "u": "Niet mengbaar (hydrofoob) en dichtheid kleiner dan 1 g/cm³: de olie vormt een laag bovenop.",
+   "uo": [
+    "Klopt: de alkanen mengen niet met water en hebben een dichtheid van ongeveer 0,7 tot 0,9 g/cm³. Daardoor blijft de olie als een laag boven op het water.",
+    "Koos je lucht? Er zit geen lucht in de olie. Het komt door de dichtheid van de alkaanmoleculen zelf, die kleiner is dan die van water.",
+    "Koos je reageren? Er vindt geen reactie plaats. De olie blijft apart liggen omdat alkanen niet met water mengen.",
+    "Koos je kookpunt? Het kookpunt zegt niets over drijven. Of iets drijft, hangt af van de dichtheid ten opzichte van water."
+   ],
+   "uh": "Hydrofoob + lichter dan water = drijven.",
+   "ctx": "Na een ongeluk met een tanker komt er ruwe olie in zee. De olie bestaat vooral uit alkanen met 5 tot 40 koolstofatomen. Op luchtfoto's zie je een glimmende laag op het water die met de wind meedrijft. Schepen proberen de laag met drijvende schermen bij elkaar te houden."
+  },
+  {
+   "v": "Waaruit bestaat aardgas vooral?",
+   "o": [
+    "Octaan",
+    "Butaan",
+    "Waterstofgas",
+    "Methaan"
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 5,
+   "u": "Aardgas = vooral methaan, CH₄, het kleinste alkaan.",
+   "uo": [
+    "Koos je octaan? Octaan is bij kamertemperatuur een vloeistof en zit in benzine. Aardgas bestaat uit het kleinste alkaan, methaan.",
+    "Koos je butaan? Butaan zit in aanstekers en campinggas, niet in het aardgas van je cv-ketel. Aardgas is vooral methaan.",
+    "Koos je waterstofgas? Waterstof wordt soms als vervanger van aardgas genoemd, maar aardgas zelf bestaat vooral uit methaan.",
+    "Klopt: aardgas bestaat grotendeels uit methaan, CH₄. Het kookt bij −162 °C en is dus altijd een gas."
+   ],
+   "uh": "Aardgas = methaan."
+  }
+ ],
+ "oe": [
+  {
+   "bron": "Examenstijl",
+   "ctx": "Butaan (C₄H₁₀) is de brandstof in veel aanstekers. In de aansteker is butaan vloeibaar doordat het onder druk staat. Bij het indrukken van de knop ontsnapt gasvormig butaan, dat met een vonk wordt aangestoken.",
+   "v": "Teken de structuurformule van butaan en geef de reactievergelijking van de volledige verbranding.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Structuurformule: rechte keten van vier C-atomen, elk C met vier bindingen, in totaal tien H-atomen (1p). 2 C₄H₁₀ + 13 O₂ → 8 CO₂ + 10 H₂O: juiste stoffen (1p), kloppend (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een leerling krijgt twee reageerbuizen met een kleurloze vloeistof. In de ene zit hexaan (C₆H₁₄), in de andere hex-1-een (C₆H₁₂). Ze heeft broomwater tot haar beschikking.",
+   "v": "Beschrijf hoe de leerling met broomwater vaststelt welke vloeistof hexeen is, en leg uit wat er in die buis met het broom gebeurt.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Voeg aan beide buizen wat broomwater toe; de buis waarin de kleur snel verdwijnt, bevat hexeen (1p). Broom reageert met de dubbele C=C-binding: additie, waarbij aan elk van de twee C-atomen een Br-atoom komt (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Aardgas (vooral methaan) komt als gas uit de leiding, benzine (onder andere octaan) is een vloeistof en kaarsvet (alkanen met 20 tot 30 C-atomen) is vast. Uit Binas: methaan kookt bij −162 °C, propaan bij −42 °C, hexaan bij 69 °C en decaan bij 174 °C.",
+   "v": "Leg met de bouw van de moleculen uit waarom het kookpunt in deze reeks stijgt.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "De moleculen worden groter (langere keten, grotere massa) (1p). Daardoor zijn de vanderwaalskrachten tussen de moleculen sterker en is er meer energie nodig om ze los te maken: hoger kookpunt (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een laborant vindt een fles met het opschrift C₅H₁₀. Het is een koolwaterstof met een onvertakte keten. Ze twijfelt of de stof bij de alkanen of bij de alkenen hoort en wil dat eerst met de formule controleren voordat ze een broomwatertest doet.",
+   "v": "Leg uit of deze stof een alkaan of een alkeen is en teken een mogelijke structuurformule.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Een alkaan met 5 C zou C₅H₁₂ zijn (2n+2); C₅H₁₀ heeft er twee minder, dus het is een alkeen (2n) (1p). Juiste structuurformule: keten van 5 C met één C=C, elk C vier bindingen, 10 H (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een gasfles bevat 5,0 kg propaan (C₃H₈, M = 44,1 g/mol). Bij volledige verbranding geldt: C₃H₈ + 5 O₂ → 3 CO₂ + 4 H₂O.",
+   "v": "Bereken hoeveel kg CO₂ er ontstaat als alle propaan uit de fles volledig verbrandt.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "5,0 · 10³ g / 44,1 g/mol = 113 mol propaan (1p). Dat geeft 3 × 113 = 340 mol CO₂ (1p). 340 mol × 44,01 g/mol = 1,5 · 10⁴ g = 15 kg CO₂ (1p)."
+  }
+ ]
+}

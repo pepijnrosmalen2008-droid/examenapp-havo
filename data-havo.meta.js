@@ -1812,7 +1812,31 @@ var VAKKEN = [
     "nSv": 164,
     "nOe": 6,
     "nBeg": 35,
-    "hasSam": true
+    "hasSam": true,
+    "leerdoelen": [
+     {
+      "id": "D1",
+      "lo": "sk.D.1",
+      "gs": 2,
+      "naam": "Koolwaterstoffen: alkanen en alkenen",
+      "beschrijving": "Je onderscheidt alkanen en alkenen, herkent de homologe reeks, telt molecuulformules uit structuurformules, toont een dubbele binding aan met broomwater en verklaart het kookpunt met de lengte van de keten.",
+      "ceStatus": "CE",
+      "binas": "42, 99",
+      "val": "",
+      "onderwerpen": [
+       "Koolstof en zijn vier bindingen",
+       "Alkanen en de homologe reeks",
+       "Alkenen: de dubbele binding",
+       "Formules lezen en tellen",
+       "Broomwater en verbranding",
+       "Kookpunt en eigenschappen"
+      ],
+      "nSv": 28,
+      "nOe": 5,
+      "nBeg": 11,
+      "hasSam": true
+     }
+    ]
    },
    {
     "id": "E",
