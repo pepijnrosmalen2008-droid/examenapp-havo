@@ -75867,6 +75867,696 @@ var VAKKEN = [
         "u": "Butaanzuur heeft een COOH-groep met een OH die waterstofbruggen vormt, tussen de moleculen en met water; de ester heeft geen OH-groep (1p). Daardoor kookt butaanzuur hoger en mengt het goed met water, terwijl de ester laag kookt en slecht oplost (1p)."
        }
       ]
+     },
+     {
+      "id": "D4",
+      "lo": "sk.D.4",
+      "gs": 2,
+      "naam": "Isomerie en naamgeving",
+      "beschrijving": "Je herkent isomeren en onderscheidt ze van dezelfde stof anders getekend, geeft vertakte alkanen, alkenen en alcoholen een systematische naam met plaatsnummers, tekent isomeren systematisch en verklaart verschillen in kookpunt.",
+      "ceStatus": "CE",
+      "binas": "66D",
+      "val": "",
+      "onderwerpen": [
+       "Wat isomeren zijn",
+       "Dezelfde stof of een isomeer?",
+       "Naamgeving: langste keten en zijtakken",
+       "Nummeren: plaats van groepen en dubbele bindingen",
+       "Isomeren systematisch tekenen",
+       "Eigenschappen van isomeren"
+      ],
+      "sam": "Isomeren hebben dezelfde molecuulformule en een andere structuur; het zijn verschillende stoffen. Zelfde volgorde van atomen is dezelfde stof, hoe je hem ook tekent. Naam: langste keten = stam, zijtakken met -yl, laagste nummers, di/tri bij meer gelijke. Een dubbele binding of OH krijgt het laagste nummer. Isomeren teken je van lang naar kort. Meer vertakt = compacter = lager kookpunt.",
+      "begrippen": [
+       {
+        "t": "Isomeren",
+        "d": "Stoffen met dezelfde molecuulformule maar een andere structuurformule."
+       },
+       {
+        "t": "Structuurisomerie",
+        "d": "Isomerie waarbij de atomen in een andere volgorde aan elkaar vastzitten."
+       },
+       {
+        "t": "Plaatsisomeren",
+        "d": "Isomeren die alleen verschillen in de plaats van een functionele groep of dubbele binding."
+       },
+       {
+        "t": "Hoofdketen",
+        "d": "De langste ononderbroken koolstofketen in een molecuul; bepaalt de stam van de naam."
+       },
+       {
+        "t": "Zijtak",
+        "d": "Koolstofgroep die aan de hoofdketen vastzit, zoals een methyl- of ethylgroep."
+       },
+       {
+        "t": "Methylgroep",
+        "d": "De zijtak −CH₃."
+       },
+       {
+        "t": "Ethylgroep",
+        "d": "De zijtak −CH₂−CH₃."
+       },
+       {
+        "t": "Plaatsnummer",
+        "d": "Getal in de naam dat aangeeft aan welk C-atoom een zijtak, groep of dubbele binding zit."
+       },
+       {
+        "t": "Systematische naam",
+        "d": "Naam volgens vaste regels: stam van de langste keten, zijtakken met plaatsnummers, uitgang voor de groep."
+       },
+       {
+        "t": "Koolstofskelet",
+        "d": "Weergave van alleen de C-atomen en hun bindingen; de H-atomen vul je zelf aan."
+       },
+       {
+        "t": "Vertakt",
+        "d": "Met één of meer zijtakken; een vertakt molecuul is compacter dan een rechte keten."
+       }
+      ],
+      "sv": [
+       {
+        "v": "Wat hebben isomeren met elkaar gemeen?",
+        "o": [
+         "Hetzelfde kookpunt en dezelfde naam",
+         "Dezelfde structuurformule, maar een andere molecuulformule",
+         "Dezelfde molecuulformule, maar een andere structuurformule",
+         "Evenveel C-atomen, maar een ander aantal H-atomen in het molecuul"
+        ],
+        "c": 2,
+        "d": 1,
+        "s": 0,
+        "u": "Isomeren: zelfde molecuulformule, andere bouw.",
+        "uo": [
+         "Koos je zelfde kookpunt en naam? Isomeren zijn verschillende stoffen: ze hebben elk een eigen naam en meestal een ander kookpunt.",
+         "Koos je zelfde structuurformule? Als de structuurformule gelijk is, is het dezelfde stof. Isomeren verschillen juist in hun structuur.",
+         "Klopt: isomeren hebben precies dezelfde atomen, maar die zitten anders aan elkaar vast. Daardoor zijn het verschillende stoffen met een eigen naam en eigen eigenschappen.",
+         "Koos je ander aantal H? Dan is de molecuulformule anders en zijn het geen isomeren. Isomeren hebben precies dezelfde atomen."
+        ],
+        "uh": "Isomeren: zelfde formule, andere bouw."
+       },
+       {
+        "v": "Zijn butaan en methylpropaan isomeren?",
+        "o": [
+         "Nee, want methylpropaan heeft maar drie C-atomen",
+         "Ja, beide zijn C₄H₁₀, maar met een andere bouw",
+         "Nee, want ze hebben een ander aantal H-atomen",
+         "Ja, want het zijn allebei gassen bij kamertemperatuur"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 0,
+        "u": "Methylpropaan: propaan-keten (3 C) + methylgroep (1 C) = 4 C, C₄H₁₀.",
+        "uo": [
+         "Koos je drie C-atomen? Tel de methylgroep mee: propaan (3 C) plus methyl (1 C) is vier C-atomen.",
+         "Klopt: butaan heeft een rechte keten van vier C-atomen, methylpropaan een keten van drie met één zijtak. Beide hebben de formule C₄H₁₀, dus het zijn isomeren.",
+         "Koos je ander aantal H? Reken na: methylpropaan heeft ook 10 H-atomen. Beide zijn alkanen met 4 C: C₄H₁₀.",
+         "Koos je allebei gassen? Dat klopt wel, maar het is niet de reden. Isomeren zijn ze omdat ze dezelfde molecuulformule hebben."
+        ],
+        "uh": "Tel alle C-atomen, ook in de zijtakken."
+       },
+       {
+        "v": "Welke conclusie is juist?",
+        "o": [
+         "Twee stoffen met dezelfde formule: isomeren",
+         "Het is dezelfde stof, want de molecuulformule is gelijk",
+         "De meting van het kookpunt moet fout zijn",
+         "Het zijn geen isomeren, want ze hebben een ander kookpunt"
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 0,
+        "u": "Gelijke formule, verschillende eigenschappen: verschillende stoffen, dus isomeren.",
+        "uo": [
+         "Klopt: dezelfde molecuulformule maar een ander kookpunt betekent dat de moleculen anders gebouwd zijn. Het zijn verschillende stoffen: isomeren.",
+         "Koos je dezelfde stof? Dezelfde molecuulformule is niet genoeg. Een andere bouw geeft een andere stof met andere eigenschappen.",
+         "Koos je meting fout? Een verschil in kookpunt is precies wat je bij isomeren verwacht. Er is geen reden om aan de meting te twijfelen.",
+         "Koos je geen isomeren? Isomeren hebben juist vaak een ander kookpunt. Het criterium is: zelfde molecuulformule, andere structuur."
+        ],
+        "uh": "Zelfde formule + andere eigenschappen = isomeren.",
+        "ctx": "Twee leerlingen onderzoeken elk een vloeistof met de molecuulformule C₅H₁₂. De vloeistof van de eerste leerling kookt bij 36 °C, die van de tweede al bij 28 °C. Ze hebben allebei zuivere stoffen gekregen en hun thermometers zijn net gecontroleerd."
+       },
+       {
+        "v": "Een leerling tekent butaan één keer als rechte keten en één keer met een knik erin. Zijn het isomeren?",
+        "o": [
+         "Nee, want een geknikte keten bestaat niet",
+         "Ja, want de tekeningen zien er verschillend uit",
+         "Ja, want een geknikte keten telt in de naamgeving als een vertakking",
+         "Nee, het is dezelfde stof: de atomen zitten in dezelfde volgorde"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 1,
+        "u": "Een keten kan buigen en draaien; de volgorde van de atomen bepaalt de stof.",
+        "uo": [
+         "Koos je bestaat niet? Een keten is in werkelijkheid altijd een beetje zigzag. Hoe je hem tekent, is een keuze.",
+         "Koos je ja? Hoe je een molecuul op papier zet, maakt niet uit. Volg de keten van begin tot eind: als die gelijk is, is het dezelfde stof.",
+         "Koos je vertakking? Een vertakking is een C-atoom dat aan drie of vier andere C-atomen vastzit. Een knik in de tekening is geen vertakking.",
+         "Klopt: een molecuul kan om zijn enkele bindingen draaien en buigen. Zolang elk C-atoom aan dezelfde buren vastzit, is het hetzelfde molecuul."
+        ],
+        "uh": "Volg de keten: zelfde volgorde = zelfde stof."
+       },
+       {
+        "v": "Welke twee tekeningen stellen dezelfde stof voor?",
+        "o": [
+         "B en C",
+         "A en C",
+         "A en B",
+         "Geen van de drie"
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 1,
+        "u": "Volg in elke tekening de langste keten en kijk waar de zijtak zit.",
+        "uo": [
+         "Koos je B en C? B heeft een zijtak aan het tweede C-atoom, C heeft geen zijtak. Het zijn isomeren, niet dezelfde stof.",
+         "Koos je A en C? In C zit geen zijtak; de langste keten is vijf C-atomen lang. Dat is pentaan, een isomeer van A.",
+         "Klopt: A en B hebben allebei een keten van vier C-atomen met een CH₃ aan het tweede C-atoom. Het is twee keer 2-methylbutaan, alleen anders getekend. C is pentaan: een rechte keten van vijf zonder zijtak.",
+         "Koos je geen van de drie? A en B lijken anders, maar als je de langste keten volgt, vind je in beide 2-methylbutaan."
+        ],
+        "uh": "Langste keten zoeken, dan pas vergelijken.",
+        "ctx": "Op het bord staan drie tekeningen van C₅H₁₂. A: CH₃−CH(CH₃)−CH₂−CH₃. B: CH₃−CH₂−CH(CH₃)−CH₃, van rechts naar links geschreven. C: een rechte keten CH₃−CH₂−CH₂−CH₂−CH₃ die met een bocht omhoog is getekend."
+       },
+       {
+        "v": "Waarom is \"1-methylbutaan\" geen goede naam?",
+        "o": [
+         "Methylgroepen mogen alleen aan het middelste C-atoom van een keten zitten",
+         "Een CH₃ aan het eerste C-atoom verlengt de keten: dit is pentaan",
+         "Butaan kan geen zijtakken hebben",
+         "De naam moet 4-methylbutaan zijn"
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 1,
+        "u": "Langste keten = vijf C-atomen. Er is geen zijtak.",
+        "uo": [
+         "Koos je alleen midden? Een zijtak mag op elk C-atoom behalve het eerste en het laatste, want daar verlengt hij de keten.",
+         "Klopt: als je een CH₃ aan het uiteinde zet, wordt de keten gewoon één langer. De langste keten heeft dan vijf C-atomen zonder zijtak: pentaan.",
+         "Koos je geen zijtakken? Butaan kan wel een zijtak hebben, bijvoorbeeld in 2-methylbutaan. Alleen niet aan het uiteinde.",
+         "Koos je 4-methylbutaan? Ook dat is het uiteinde van de keten. De langste keten is dan nog steeds vijf C-atomen: pentaan."
+        ],
+        "uh": "Zijtak aan het eind = langere keten.",
+        "ctx": "Een leerling tekent een keten van vier C-atomen en zet aan het eerste C-atoom nog een CH₃-groep. Ze noemt de stof 1-methylbutaan. Haar docent zet er een vraagteken bij en vraagt haar de langste keten te tellen."
+       },
+       {
+        "v": "Zijn propaan-1-ol en propaan-2-ol isomeren?",
+        "o": [
+         "Ja, beide zijn C₃H₈O, maar de OH-groep zit op een andere plek",
+         "Nee, het is dezelfde stof, alleen met een andere naam op het etiket",
+         "Nee, propaan-2-ol heeft een C-atoom meer",
+         "Ja, want ze hebben allebei een OH-groep"
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 1,
+        "u": "Plaatsisomeren: zelfde keten, groep op een andere plek.",
+        "uo": [
+         "Klopt: in propaan-1-ol zit de OH aan het uiteinde, in propaan-2-ol aan het middelste C-atoom. Zelfde formule, andere bouw: isomeren.",
+         "Koos je dezelfde stof? De OH zit op een andere plek, dus de moleculen zijn anders gebouwd. Propaan-2-ol kookt ook lager (82 °C tegen 97 °C).",
+         "Koos je een C meer? Het getal 2 geeft de plaats van de OH aan, niet een extra C-atoom. Beide hebben drie C-atomen.",
+         "Koos je allebei OH? Dat klopt, maar dat maakt ze geen isomeren. De reden is dat de molecuulformule gelijk is en de bouw anders."
+        ],
+        "uh": "Groep op een andere plek = plaatsisomeer."
+       },
+       {
+        "v": "Wat is de eerste stap bij het geven van een naam aan een vertakt alkaan?",
+        "o": [
+         "De keten van links naar rechts nummeren, beginnend bij 1",
+         "De zijtakken alfabetisch opschrijven",
+         "Het aantal H-atomen tellen",
+         "De langste ononderbroken koolstofketen zoeken"
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 2,
+        "u": "De langste keten bepaalt de stamnaam.",
+        "uo": [
+         "Koos je links naar rechts nummeren? Nummeren doe je pas na het kiezen van de keten, en dan vanaf de kant die de laagste nummers geeft.",
+         "Koos je alfabetisch? Dat doe je pas als er verschillende zijtakken zijn. Eerst moet je weten wat de hoofdketen is.",
+         "Koos je H tellen? Het aantal H-atomen speelt geen rol in de naam van een alkaan.",
+         "Klopt: eerst zoek je de langste keten die je zonder op te tillen kunt volgen. Die geeft de stam van de naam, zoals butaan of pentaan."
+        ],
+        "uh": "Stap 1: langste keten = stam."
+       },
+       {
+        "v": "Hoe heet een CH₃-groep als zijtak?",
+        "o": [
+         "Methanol",
+         "Methaan",
+         "Methyl",
+         "Ethyl"
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 2,
+        "u": "Zijtak: stam + -yl.",
+        "uo": [
+         "Koos je methanol? Dat is een alcohol met een OH-groep. Een zijtak zonder O heet methyl.",
+         "Koos je methaan? Methaan is een losse stof, CH₄. Als zijtak mist hij één H en heet hij methyl.",
+         "Klopt: een zijtak krijgt de uitgang -yl. Een CH₃-groep heet methyl, een CH₂−CH₃-groep ethyl.",
+         "Koos je ethyl? Ethyl heeft twee C-atomen: CH₂−CH₃. Een CH₃-groep heeft er één."
+        ],
+        "uh": "Zijtak = alkyl: methyl, ethyl, propyl."
+       },
+       {
+        "v": "Welke naam hoort bij CH₃−CH(CH₃)−CH₂−CH₃?",
+        "o": [
+         "3-methylbutaan",
+         "2-methylbutaan",
+         "Pentaan",
+         "1,1-dimethylpropaan"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 2,
+        "u": "Langste keten 4 C (butaan), methyl aan C2 vanaf de kant die het laagste nummer geeft.",
+        "uo": [
+         "Koos je 3-methylbutaan? Dan heb je vanaf de verkeerde kant genummerd. Je kiest de kant die de laagste nummers geeft: 2.",
+         "Klopt: de langste keten heeft vier C-atomen, dus butaan. De methylgroep zit aan het tweede C-atoom als je vanaf de dichtstbijzijnde kant telt: 2-methylbutaan.",
+         "Koos je pentaan? Pentaan heeft een rechte keten zonder zijtak. Hier zit een CH₃ als zijtak aan het tweede C-atoom.",
+         "Koos je 1,1-dimethylpropaan? Dan heb je de langste keten gemist: via een methylgroep vind je een keten van vier. Een zijtak aan C1 verlengt de keten gewoon."
+        ],
+        "uh": "Langste keten, laagste nummer."
+       },
+       {
+        "v": "Wat is de systematische naam van iso-octaan?",
+        "o": [
+         "2,2,4-trimethylpentaan",
+         "2,4,4-trimethylpentaan",
+         "Trimethylpentaan",
+         "2,2,4,4-tetramethylpentaan"
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 2,
+        "u": "Keten 5 C (pentaan), drie methylgroepen: tri, laagste nummers 2,2,4.",
+        "uo": [
+         "Klopt: de langste keten heeft vijf C-atomen. Er zitten drie methylgroepen aan, dus tri. Van links genummerd krijg je 2,2,4; van rechts 2,4,4. De laagste nummers winnen: 2,2,4.",
+         "Koos je 2,4,4? Dan heb je vanaf de andere kant genummerd. Vergelijk de eerste plek waar ze verschillen: 2,2 is lager dan 2,4.",
+         "Koos je zonder nummers? Er zijn meerdere plekken mogelijk voor de methylgroepen. De nummers zijn nodig om precies te zeggen welke stof het is.",
+         "Koos je tetramethyl? Tel de methylgroepen: twee aan C2 en één aan C4, samen drie. Dat is tri, en er zijn dus ook maar drie getallen."
+        ],
+        "uh": "Meer gelijke zijtakken: di, tri. Laagste nummers.",
+        "ctx": "Benzine wordt beoordeeld op het octaangetal. De stof iso-octaan krijgt per definitie octaangetal 100. De structuur is: (CH₃)₃C−CH₂−CH(CH₃)−CH₃. Dat is een keten van vijf C-atomen, met twee methylgroepen aan het tweede C-atoom en één methylgroep aan het vierde."
+       },
+       {
+        "v": "Welke structuur hoort bij 2,3-dimethylbutaan?",
+        "o": [
+         "CH₃−CH₂−CH(CH₃)−CH₂−CH₃",
+         "CH₃−C(CH₃)₂−CH₂−CH₃",
+         "CH₃−CH(CH₃)−CH₂−CH₂−CH₃",
+         "CH₃−CH(CH₃)−CH(CH₃)−CH₃"
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 2,
+        "u": "Butaan (4 C) met één methyl aan C2 en één aan C3.",
+        "uo": [
+         "Koos je CH₃−CH₂−CH(CH₃)−CH₂−CH₃? Die heeft een keten van vijf met maar één zijtak: 3-methylpentaan. Di betekent twee zijtakken aan de butaanketen.",
+         "Koos je C(CH₃)₂? Daar zitten beide methylgroepen aan hetzelfde C-atoom. Dat is 2,2-dimethylbutaan.",
+         "Koos je de keten van vijf? Die heeft een hoofdketen van vijf C-atomen en maar één zijtak: 2-methylpentaan.",
+         "Klopt: een keten van vier C-atomen met aan het tweede én het derde C-atoom een CH₃-groep."
+        ],
+        "uh": "Naam → structuur: eerst de keten, dan de zijtakken op hun plek.",
+        "ctx": "Een leerling krijgt de naam 2,3-dimethylbutaan en moet de structuur kiezen uit vier beknopte formules. Ze begint met het tekenen van de hoofdketen en zet daarna de zijtakken op de plekken die de nummers aangeven."
+       },
+       {
+        "v": "Waar verwijst het getal 1 in de naam but-1-een naar?",
+        "o": [
+         "Hoeveel zijtakken er aan de hoofdketen zitten",
+         "Hoeveel dubbele bindingen er zijn",
+         "Op welk C-atoom de dubbele binding begint",
+         "Hoeveel H-atomen er ontbreken"
+        ],
+        "c": 2,
+        "d": 1,
+        "s": 3,
+        "u": "Het getal is de plaats: de dubbele binding zit tussen C1 en C2.",
+        "uo": [
+         "Koos je aantal zijtakken? But-1-een heeft geen zijtakken. Het getal hoort bij de uitgang -een.",
+         "Koos je aantal dubbele bindingen? Het aantal geef je aan met di of tri, zoals in butadieen. Het getal ervoor is de plaats.",
+         "Klopt: but-1-een heeft de dubbele binding tussen het eerste en het tweede C-atoom. Je noemt het laagste nummer van de twee.",
+         "Koos je ontbrekende H? Het getal zegt niets over H-atomen. Het geeft de plaats van de dubbele binding aan."
+        ],
+        "uh": "Getal = plaats."
+       },
+       {
+        "v": "Waarin verschillen but-1-een en but-2-een van elkaar?",
+        "o": [
+         "Het aantal C-atomen",
+         "De plaats van de dubbele binding in de keten",
+         "But-2-een heeft twee dubbele bindingen in de keten",
+         "But-2-een heeft een zijtak"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 3,
+        "u": "Plaatsisomeren: C=C tussen C1-C2 of tussen C2-C3.",
+        "uo": [
+         "Koos je aantal C-atomen? Beide namen beginnen met but: vier C-atomen. Het getal geeft alleen aan waar de dubbele binding zit.",
+         "Klopt: bij but-1-een zit de dubbele binding aan het uiteinde, bij but-2-een in het midden. Beide zijn C₄H₈ en dus isomeren.",
+         "Koos je twee dubbele bindingen? Het getal 2 geeft de plaats aan. Twee dubbele bindingen zou butadieen zijn.",
+         "Koos je zijtak? Geen van beide heeft een zijtak. Ze verschillen alleen in de plaats van de dubbele binding."
+        ],
+        "uh": "Zelfde keten, C=C op een andere plek."
+       },
+       {
+        "v": "Waarom heet CH₃−CH₂−CH=CH₂ but-1-een en niet but-3-een?",
+        "o": [
+         "Je nummert vanaf de kant met het laagste nummer voor de C=C",
+         "Een dubbele binding krijgt altijd nummer 1",
+         "But-3-een is een andere stof",
+         "Je nummert altijd van links naar rechts, zoals je de formule leest"
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 3,
+        "u": "Laagste nummer voor de functionele groep of dubbele binding.",
+        "uo": [
+         "Klopt: je kunt van twee kanten nummeren. Van rechts krijgt de dubbele binding nummer 1, van links nummer 3. Je kiest het laagste: but-1-een.",
+         "Koos je altijd 1? Bij but-2-een zit de dubbele binding in het midden en krijgt hij nummer 2. Het gaat om het laagst mogelijke nummer.",
+         "Koos je andere stof? But-3-een zou precies dezelfde stof zijn, alleen vanaf de verkeerde kant genummerd. Daarom bestaat die naam niet.",
+         "Koos je links naar rechts? Hoe je de formule toevallig opschrijft, doet er niet toe. Je kiest de kant met het laagste nummer."
+        ],
+        "uh": "Nummer vanaf de kant met het laagste nummer."
+       },
+       {
+        "v": "Welke naam hoort bij CH₃−CH(OH)−CH₂−CH₃?",
+        "o": [
+         "2-methylpropaan-1-ol",
+         "Butaan-3-ol",
+         "Butaan-1-ol",
+         "Butaan-2-ol"
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 3,
+        "u": "Keten 4 C, OH aan C2 (laagste nummer).",
+        "uo": [
+         "Koos je 2-methylpropaan-1-ol? Dat is een isomeer met een vertakte keten. Deze stof heeft een rechte keten van vier.",
+         "Koos je butaan-3-ol? Dan heb je vanaf de verkeerde kant geteld. De OH-groep moet het laagste nummer krijgen.",
+         "Koos je butaan-1-ol? Dan zou de OH aan het uiteinde zitten. Hier zit hij aan een C-atoom met twee C-buren.",
+         "Klopt: de keten heeft vier C-atomen en de OH zit aan het tweede C-atoom als je vanaf links telt. Van rechts zou het 3 zijn, dus butaan-2-ol."
+        ],
+        "uh": "Laagste nummer voor de OH-groep.",
+        "ctx": "Een leerling vindt in een kast een fles met de formule CH₃−CH(OH)−CH₂−CH₃ op het etiket. De naam is onleesbaar geworden. Ze weet dat het een alcohol is met een rechte keten en wil de systematische naam weer op de fles schrijven."
+       },
+       {
+        "v": "Welke fout zit in de naam \"3-methylbut-1-een\" voor CH₂=CH−CH(CH₃)−CH₃?",
+        "o": [
+         "Het moet 2-methylbut-3-een zijn",
+         "De methylgroep moet nummer 2 krijgen",
+         "Er zit geen fout in",
+         "Het moet pent-1-een zijn"
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 3,
+        "u": "De dubbele binding gaat voor bij het nummeren: C1=C2, methyl aan C3.",
+        "uo": [
+         "Koos je 2-methylbut-3-een? Dan geef je de zijtak voorrang boven de dubbele binding. Bij het nummeren gaat de dubbele binding voor.",
+         "Koos je methyl nummer 2? Dan nummer je vanaf de andere kant, en krijgt de dubbele binding nummer 3. De dubbele binding gaat voor.",
+         "Klopt: je nummert zo dat de dubbele binding het laagste nummer krijgt. Dan zit de C=C tussen C1 en C2 en de methylgroep aan C3. De naam 3-methylbut-1-een is goed.",
+         "Koos je pent-1-een? De langste keten mét de dubbele binding heeft vier C-atomen. De CH₃ is een zijtak."
+        ],
+        "uh": "Dubbele binding of OH krijgt voorrang bij nummeren.",
+        "ctx": "Een leerling geeft de stof CH₂=CH−CH(CH₃)−CH₃ de naam 3-methylbut-1-een. Haar buurman vindt dat de methylgroep een zo laag mogelijk nummer moet krijgen en stelt 2-methylbut-3-een voor. Ze vragen de docent wie gelijk heeft."
+       },
+       {
+        "v": "Hoeveel isomeren heeft C₄H₁₀?",
+        "o": [
+         "1",
+         "2",
+         "3",
+         "4"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 4,
+        "u": "Butaan en methylpropaan.",
+        "uo": [
+         "Koos je 1? Naast de rechte keten kun je ook een keten van drie met een methylgroep in het midden maken.",
+         "Klopt: met vier C-atomen kun je een rechte keten maken (butaan) of een keten van drie met een zijtak (methylpropaan). Meer mogelijkheden zijn er niet.",
+         "Koos je 3? Probeer een derde te tekenen: elke andere tekening blijkt butaan of methylpropaan te zijn, alleen anders gedraaid.",
+         "Koos je 4? Met vier C-atomen zijn er maar twee verschillende skeletten. De rest zijn dezelfde stoffen anders getekend."
+        ],
+        "uh": "C₄H₁₀: 2 isomeren."
+       },
+       {
+        "v": "Hoeveel isomeren heeft C₅H₁₂?",
+        "o": [
+         "3",
+         "2",
+         "4",
+         "5"
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 4,
+        "u": "Pentaan, 2-methylbutaan en 2,2-dimethylpropaan.",
+        "uo": [
+         "Klopt: een rechte keten van vijf (pentaan), een keten van vier met een methyl (2-methylbutaan) en een keten van drie met twee methylgroepen aan het middelste C-atoom (2,2-dimethylpropaan).",
+         "Koos je 2? Vergeet de bolvormige variant niet: een middelste C-atoom met vier CH₃-groepen, 2,2-dimethylpropaan.",
+         "Koos je 4? Een vierde tekening, zoals 3-methylbutaan, blijkt bij nummeren gewoon 2-methylbutaan te zijn.",
+         "Koos je 5? Vijf isomeren hoort bij C₆H₁₄. Bij vijf C-atomen zijn er drie mogelijke skeletten."
+        ],
+        "uh": "Systematisch: keten 5, keten 4 + 1, keten 3 + 2.",
+        "ctx": "In aardgascondensaat zitten verschillende stoffen met de formule C₅H₁₂. Een onderzoeker wil ze allemaal scheiden met destillatie en wil vooraf weten hoeveel verschillende stoffen hij kan verwachten. Hij tekent systematisch alle mogelijke koolstofskeletten."
+       },
+       {
+        "v": "Hoeveel stoffen met de formule C₃H₈O bestaan er?",
+        "o": [
+         "4",
+         "2",
+         "1",
+         "3"
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 4,
+        "u": "Propaan-1-ol, propaan-2-ol en methoxyethaan (een ether).",
+        "uo": [
+         "Koos je 4? Probeer een vierde te tekenen: die blijkt steeds gelijk aan een van de drie, alleen gespiegeld of gedraaid.",
+         "Koos je 2? Je hebt waarschijnlijk alleen de alcoholen geteld. De O kan ook tussen twee C-atomen zitten: dat geeft een ether.",
+         "Koos je 1? Met drie C-atomen en een O zijn er al twee alcoholen mogelijk, plus een ether.",
+         "Klopt: de O kan aan het uiteinde (propaan-1-ol), in het midden als OH (propaan-2-ol) of tussen twee C-atomen als ether (methoxyethaan, CH₃−O−CH₂−CH₃)."
+        ],
+        "uh": "Denk ook aan O in de keten (ether).",
+        "ctx": "Een leerling krijgt de opdracht om alle structuurformules te tekenen die passen bij C₃H₈O. Elk C-atoom moet vier bindingen hebben, het O-atoom twee en elk H-atoom één. Ze begint met de alcoholen en kijkt daarna waar het O-atoom nog meer kan zitten."
+       },
+       {
+        "v": "Welk isomeer van C₄H₈ heeft een dubbele binding aan het uiteinde van een rechte keten?",
+        "o": [
+         "Methylpropeen",
+         "But-2-een",
+         "But-1-een",
+         "Butaan"
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 4,
+        "u": "C=C tussen C1 en C2 van een rechte keten: but-1-een.",
+        "uo": [
+         "Koos je methylpropeen? Die heeft een vertakte keten: drie C-atomen met een methylgroep. Geen rechte keten.",
+         "Koos je but-2-een? Daar zit de dubbele binding in het midden, tussen C2 en C3.",
+         "Klopt: but-1-een heeft een rechte keten van vier met de dubbele binding tussen het eerste en tweede C-atoom.",
+         "Koos je butaan? Butaan is C₄H₁₀ en heeft geen dubbele binding. Het is dus geen isomeer van C₄H₈."
+        ],
+        "uh": "Rechte keten + C=C aan het eind = but-1-een."
+       },
+       {
+        "v": "Hebben isomeren dezelfde eigenschappen?",
+        "o": [
+         "Ja, want ze hebben dezelfde molecuulformule",
+         "Nee, het zijn verschillende stoffen met een ander kookpunt",
+         "Ja, alleen de naam verschilt",
+         "Alleen als ze evenveel H-atomen hebben en dezelfde zijtakken"
+        ],
+        "c": 1,
+        "d": 1,
+        "s": 5,
+        "u": "Andere bouw = andere stof = andere eigenschappen.",
+        "uo": [
+         "Koos je zelfde formule? De formule is gelijk, maar de bouw niet. Eigenschappen hangen af van de bouw.",
+         "Klopt: isomeren zijn verschillende stoffen. Ze verschillen in kookpunt, smeltpunt en soms ook in reacties, omdat de moleculen anders gebouwd zijn.",
+         "Koos je alleen de naam? Een andere naam hoort bij een andere stof. Isomeren hebben echt andere eigenschappen.",
+         "Koos je evenveel H? Isomeren hebben altijd evenveel H-atomen; dat volgt uit de gelijke formule. Toch verschillen ze in eigenschappen."
+        ],
+        "uh": "Isomeren = andere stoffen."
+       },
+       {
+        "v": "Waarom kookt methylpropaan (−12 °C) lager dan butaan (−0,5 °C)?",
+        "o": [
+         "Vertakt is compacter: minder contact tussen de moleculen",
+         "Methylpropaan heeft minder atomen",
+         "Methylpropaan heeft een dubbele binding die makkelijk breekt",
+         "Butaan vormt waterstofbruggen"
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 5,
+        "u": "Compacter = kleiner contactoppervlak = zwakkere vanderwaalskrachten.",
+        "uo": [
+         "Klopt: een vertakt molecuul is bolvormiger. Moleculen raken elkaar dan op minder plaatsen, de vanderwaalskrachten zijn zwakker en het kookpunt is lager.",
+         "Koos je minder atomen? Beide zijn C₄H₁₀ en hebben precies evenveel atomen en dezelfde massa.",
+         "Koos je dubbele binding? Methylpropaan is een alkaan met alleen enkele bindingen.",
+         "Koos je waterstofbruggen? Alkanen hebben geen OH- of NH-groepen en vormen dus geen waterstofbruggen."
+        ],
+        "uh": "Vertakt = compact = lager kookpunt."
+       },
+       {
+        "v": "Welke volgorde van kookpunten verwacht je, van laag naar hoog?",
+        "o": [
+         "2-methylbutaan, pentaan, 2,2-dimethylpropaan",
+         "Pentaan, 2-methylbutaan, 2,2-dimethylpropaan",
+         "Ze hebben alle drie hetzelfde kookpunt, want dezelfde massa",
+         "2,2-dimethylpropaan, 2-methylbutaan, pentaan"
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 5,
+        "u": "Meer vertakt = compacter = lager kookpunt: 10 °C, 28 °C, 36 °C.",
+        "uo": [
+         "Koos je 2-methylbutaan laagst? 2,2-dimethylpropaan is nog compacter en kookt dus nog lager.",
+         "Koos je pentaan laagst? Het is andersom: de rechte keten heeft het meeste contact met buurmoleculen en kookt het hoogst.",
+         "Koos je allemaal gelijk? Ze hebben dezelfde massa, maar een andere vorm. De vorm bepaalt hoeveel contact er is.",
+         "Klopt: 2,2-dimethylpropaan is bijna een bolletje en kookt bij 10 °C, 2-methylbutaan bij 28 °C en de lange pentaan bij 36 °C."
+        ],
+        "uh": "Hoe bolvormiger, hoe lager het kookpunt.",
+        "ctx": "De drie isomeren van C₅H₁₂ zijn pentaan (een rechte keten), 2-methylbutaan (één zijtak) en 2,2-dimethylpropaan (een centraal C-atoom met vier CH₃-groepen eromheen). Een leerling moet voorspellen welke het eerst kookt als ze het mengsel langzaam verwarmt."
+       },
+       {
+        "v": "Waarom kookt propaan-2-ol (82 °C) lager dan propaan-1-ol (97 °C)?",
+        "o": [
+         "Propaan-2-ol heeft minder H-atomen",
+         "Propaan-2-ol heeft geen OH-groep, want het getal vervangt die",
+         "Propaan-2-ol is compacter: minder contact tussen moleculen",
+         "Propaan-1-ol heeft een dubbele binding"
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 5,
+        "u": "Beide vormen waterstofbruggen; het compactere molecuul heeft minder vanderwaalscontact.",
+        "uo": [
+         "Koos je minder H? Beide zijn C₃H₈O: isomeren hebben altijd evenveel H-atomen. Het verschil zit in de plaats van de OH.",
+         "Koos je geen OH? Het -ol in de naam laat zien dat er wel een OH-groep is. Die zit alleen op het middelste C-atoom.",
+         "Klopt: beide hebben één OH-groep en vormen waterstofbruggen. Propaan-2-ol is compacter, waardoor de vanderwaalskrachten iets zwakker zijn en het kookpunt lager.",
+         "Koos je dubbele binding? Beide zijn alcoholen met alleen enkele bindingen."
+        ],
+        "uh": "Ook bij alcoholen: compacter = lager kookpunt."
+       },
+       {
+        "v": "Waarom zet je getallen in de naam van een organische stof?",
+        "o": [
+         "Om aan te geven hoeveel moleculen er in een mol van de stof zitten",
+         "Om precies aan te geven op welk C-atoom een zijtak of groep zit",
+         "Om de molecuulmassa aan te geven",
+         "Om aan te geven hoe oud de stof is"
+        ],
+        "c": 1,
+        "d": 1,
+        "s": 2,
+        "u": "Getallen = plaatsaanduiding, zodat de naam bij precies één structuur hoort.",
+        "uo": [
+         "Koos je aantal moleculen? Het aantal moleculen geef je aan met een coëfficiënt in een reactievergelijking, niet in de naam.",
+         "Klopt: zonder getallen zou een naam als methylpentaan bij meer dan één stof kunnen horen. Het getal zegt precies waar de zijtak of groep zit.",
+         "Koos je molecuulmassa? De massa staat nooit in de naam. Die reken je uit met de formule.",
+         "Koos je hoe oud? Een systematische naam beschrijft alleen de bouw van het molecuul."
+        ],
+        "uh": "Getal in de naam = plaats."
+       },
+       {
+        "v": "Welke van deze stoffen is geen isomeer van hexaan (C₆H₁₄)?",
+        "o": [
+         "Cyclohexaan",
+         "2-methylpentaan",
+         "3-methylpentaan",
+         "2,2-dimethylbutaan"
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 4,
+        "u": "Cyclohexaan is een ring: C₆H₁₂, twee H minder.",
+        "uo": [
+         "Klopt: cyclohexaan is een ring van zes C-atomen. Door de ring heeft elk C-atoom twee C-buren en twee H-atomen: C₆H₁₂. Dat is een andere molecuulformule.",
+         "Koos je 2-methylpentaan? Pentaan (5 C) plus methyl (1 C) is 6 C, met 14 H. Dat is een isomeer van hexaan.",
+         "Koos je 3-methylpentaan? Ook 6 C en 14 H, met de zijtak in het midden. Een isomeer.",
+         "Koos je 2,2-dimethylbutaan? Butaan (4) plus twee methyl (2) is 6 C. Ook C₆H₁₄, dus een isomeer."
+        ],
+        "uh": "Een ring kost twee H-atomen.",
+        "ctx": "Een leerling zoekt in Binas naar stoffen met zes koolstofatomen om te vergelijken met hexaan. Ze vindt 2-methylpentaan, 3-methylpentaan, 2,2-dimethylbutaan en cyclohexaan. Ze moet aangeven welke van deze stoffen geen isomeer van hexaan is."
+       },
+       {
+        "v": "Welke twee stoffen zijn isomeren van elkaar?",
+        "o": [
+         "Ethanol en ethaanzuur",
+         "Pentaan en penteen",
+         "Butaan en pentaan uit dezelfde homologe reeks",
+         "Pentaan en 2-methylbutaan"
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 0,
+        "u": "Pentaan en 2-methylbutaan zijn allebei C₅H₁₂.",
+        "uo": [
+         "Koos je ethanol en ethaanzuur? Ethanol is C₂H₆O en ethaanzuur C₂H₄O₂. Andere formules, dus geen isomeren.",
+         "Koos je pentaan en penteen? Penteen heeft een dubbele binding en daardoor twee H-atomen minder: C₅H₁₀ tegen C₅H₁₂.",
+         "Koos je butaan en pentaan? Die verschillen één CH₂-groep. Ze horen bij dezelfde homologe reeks, maar hebben een andere formule.",
+         "Klopt: pentaan is een rechte keten van vijf, 2-methylbutaan een keten van vier met een zijtak. Beide zijn C₅H₁₂, dus isomeren."
+        ],
+        "uh": "Isomeren: tel C, H en O na."
+       }
+      ],
+      "oe": [
+       {
+        "bron": "Examenstijl",
+        "ctx": "Hexaan (C₆H₁₄) heeft vijf isomeren. Een leerling heeft er al drie getekend: hexaan, 2-methylpentaan en 2,2-dimethylbutaan. Ze zoekt de andere twee en moet erop letten dat ze geen stof tekent die ze al heeft.",
+        "v": "Geef de namen van de twee ontbrekende isomeren en teken van één ervan het koolstofskelet.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "3-methylpentaan en 2,3-dimethylbutaan (1p per juiste naam, 2p). Juist koolstofskelet van een van beide (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een leerling geeft de stof CH₃−CH₂−CH(CH₃)−CH₂−CH₂−CH₃ de naam 4-methylhexaan. Haar buurman noemt dezelfde stof 2-ethylpentaan.",
+        "v": "Geef de juiste naam en leg uit welke fout elk van beide leerlingen maakt.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "3-methylhexaan (1p). De leerling nummert vanaf de verkeerde kant: de zijtak moet het laagste nummer krijgen (1p). De buurman kiest niet de langste keten; via de ethylgroep is er een keten van zes C-atomen (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Uit Binas: pentaan kookt bij 36 °C, 2-methylbutaan bij 28 °C en 2,2-dimethylpropaan bij 10 °C. Alle drie zijn alkanen met de formule C₅H₁₂ en een molecuulmassa van 72 u.",
+        "v": "Leg uit waarom de kookpunten verschillen, hoewel de molecuulmassa gelijk is.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Hoe meer vertakt, hoe compacter (bolvormiger) het molecuul; het contactoppervlak tussen de moleculen is kleiner (1p). Daardoor zijn de vanderwaalskrachten zwakker en is er minder energie nodig om de stof te laten koken (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een leerling krijgt de formule C₃H₈O en moet alle mogelijke structuurformules tekenen. Elk C-atoom heeft vier bindingen, het O-atoom twee en elk H-atoom één. Ze vindt eerst twee alcoholen.",
+        "v": "Geef de namen van de twee alcoholen en geef de structuur van het derde isomeer dat geen alcohol is.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Propaan-1-ol en propaan-2-ol (1p). Het derde isomeer heeft de O tussen twee C-atomen: CH₃−O−CH₂−CH₃ (methoxyethaan, een ether) (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Bij het kraken van aardolie ontstaan onder andere stoffen met de formule C₄H₈. Een leerling noemt de stof CH₃−CH=CH−CH₃ but-2-een en de stof CH₂=CH−CH₂−CH₃ but-3-een.",
+        "v": "Leg uit of beide namen goed zijn en geef aan wat voor soort isomeren deze stoffen zijn.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "But-2-een klopt; de tweede naam moet but-1-een zijn, omdat je nummert vanaf de kant die de dubbele binding het laagste nummer geeft (1p). Ze zijn plaatsisomeren: zelfde keten, dubbele binding op een andere plek (1p)."
+       }
+      ]
      }
     ]
    },

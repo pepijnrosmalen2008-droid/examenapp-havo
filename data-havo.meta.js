@@ -1879,6 +1879,28 @@ var VAKKEN = [
       "nOe": 5,
       "nBeg": 11,
       "hasSam": true
+     },
+     {
+      "id": "D4",
+      "lo": "sk.D.4",
+      "gs": 2,
+      "naam": "Isomerie en naamgeving",
+      "beschrijving": "Je herkent isomeren en onderscheidt ze van dezelfde stof anders getekend, geeft vertakte alkanen, alkenen en alcoholen een systematische naam met plaatsnummers, tekent isomeren systematisch en verklaart verschillen in kookpunt.",
+      "ceStatus": "CE",
+      "binas": "66D",
+      "val": "",
+      "onderwerpen": [
+       "Wat isomeren zijn",
+       "Dezelfde stof of een isomeer?",
+       "Naamgeving: langste keten en zijtakken",
+       "Nummeren: plaats van groepen en dubbele bindingen",
+       "Isomeren systematisch tekenen",
+       "Eigenschappen van isomeren"
+      ],
+      "nSv": 28,
+      "nOe": 5,
+      "nBeg": 11,
+      "hasSam": true
      }
     ]
    },
