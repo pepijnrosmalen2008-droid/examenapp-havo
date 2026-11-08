@@ -94797,565 +94797,711 @@ var VAKKEN = [
      },
      {
       "id": "C2",
+      "lo": "na.C.2",
+      "gs": 2,
       "naam": "Krachten herkennen",
-      "beschrijving": "De zwaartekracht, normaalkracht, wrijvingskracht en spankracht herkennen en tekenen, de resulterende kracht bepalen, en het verschil tussen gewicht (kracht) en massa.",
+      "beschrijving": "Je tekent een kracht als vector met grootte, richting en aangrijpingspunt, rekent de zwaartekracht uit met Fz = m · g, onderscheidt massa en gewicht, herkent normaalkracht, wrijvingskracht, spankracht en veerkracht (Fv = C · u) en bepaalt de resulterende kracht en wanneer er evenwicht is.",
       "ceStatus": "CE",
+      "binas": "35A",
+      "val": "",
       "onderwerpen": [
        "Kracht als vector (grootte, richting, aangrijpingspunt)",
        "Zwaartekracht: Fz = m maal g",
        "Verschil gewicht (kracht) en massa",
        "Normaalkracht en wrijvingskracht",
-       "Spankracht",
+       "Spankracht en veerkracht",
        "Resulterende kracht en evenwicht"
       ],
-      "sam": "Een kracht kan de vorm of de beweging van een voorwerp veranderen. Je meet een kracht in newton (N) en tekent hem als een pijl met een grootte, een richting en een aangrijpingspunt. De zwaartekracht trekt een voorwerp naar beneden en is gelijk aan de massa maal de valversnelling: Fz = m maal g. Let op het verschil tussen gewicht en massa. De massa is de hoeveelheid materie in kilogram en is overal gelijk. Het gewicht is een kracht in newton waarmee een voorwerp op zijn steun of ophanging drukt, en hangt af van g. Naast de zwaartekracht ken je de normaalkracht (de steunkracht loodrecht op een oppervlak), de wrijvingskracht (die tegen de beweging in werkt) en de spankracht (in een gespannen touw). De resulterende kracht is de som van alle krachten samen. Is de resulterende kracht nul, dan is het voorwerp in evenwicht: het blijft in rust of beweegt met een constante snelheid.",
+      "sam": "Kracht = vector: grootte (N, op schaal), richting, aangrijpingspunt. Zwaartekracht Fz = m · g, g = 9,81 N/kg, recht omlaag uit het zwaartepunt. Massa (kg) = hoeveelheid materie, overal gelijk; gewicht (N) = kracht op de ondersteuning. Normaalkracht loodrecht op het contactvlak; wrijving langs het vlak tegen de beweging in, bij stilstand even groot als de duw tot een maximum. Spankracht langs een touw; veerkracht Fv = C · u. Resulterende kracht: zelfde richting optellen, tegengesteld aftrekken. Fres = 0: stilstand of constante snelheid.",
       "begrippen": [
        {
         "t": "Kracht",
-        "d": "een invloed die vorm of beweging verandert; eenheid newton (N)"
+        "d": "Vector met een grootte in newton, een richting en een aangrijpingspunt."
        },
        {
-        "t": "Newton",
-        "d": "de eenheid van kracht (N)"
+        "t": "Aangrijpingspunt",
+        "d": "De plek waar een kracht op een voorwerp werkt; het beginpunt van de krachtpijl."
        },
        {
         "t": "Zwaartekracht",
-        "d": "de kracht die een voorwerp naar beneden trekt; Fz = m maal g"
+        "d": "Kracht waarmee de aarde aan een voorwerp trekt: Fz = m · g, recht omlaag."
        },
        {
         "t": "Massa",
-        "d": "de hoeveelheid materie in kilogram; overal gelijk"
+        "d": "Hoeveelheid materie van een voorwerp, in kilogram; overal dezelfde."
        },
        {
         "t": "Gewicht",
-        "d": "de kracht waarmee een voorwerp op zijn steun drukt; in newton"
+        "d": "Kracht waarmee een voorwerp op zijn ondersteuning drukt of aan zijn ophanging trekt, in newton."
        },
        {
         "t": "Normaalkracht",
-        "d": "de steunkracht loodrecht op een oppervlak"
+        "d": "Kracht van een ondergrond op een voorwerp, loodrecht op het contactvlak."
        },
        {
         "t": "Wrijvingskracht",
-        "d": "een kracht die tegen de beweging in werkt"
+        "d": "Kracht langs het contactvlak, tegen de (dreigende) beweging in."
        },
        {
         "t": "Spankracht",
-        "d": "de kracht in een gespannen touw of kabel"
+        "d": "Trekkracht in een strak touw, kabel of ketting, langs het touw."
+       },
+       {
+        "t": "Veerconstante",
+        "d": "Stugheid van een veer: C = F / u, in N/m."
        },
        {
         "t": "Resulterende kracht",
-        "d": "de som van alle krachten op een voorwerp"
+        "d": "Alle krachten op een voorwerp samen, met hun richting meegerekend."
        },
        {
-        "t": "Zwaartepunt",
-        "d": "het punt waarin de zwaartekracht aangrijpt"
-       },
-       {
-        "t": "Vector",
-        "d": "een grootheid met een grootte en een richting, getekend als pijl"
-       },
-       {
-        "t": "Evenwicht",
-        "d": "de toestand waarbij de resulterende kracht nul is"
+        "t": "Krachtenevenwicht",
+        "d": "Toestand waarin de resulterende kracht nul is: stilstand of constante snelheid."
        }
       ],
       "sv": [
        {
-        "v": "Wat is de eenheid van kracht?",
+        "v": "Welke drie dingen leg je vast als je een kracht als pijl tekent?",
         "o": [
-         "Newton",
-         "Kilogram",
-         "Meter",
-         "Seconde"
-        ],
-        "c": 0,
-        "d": 1,
-        "u": "Kracht meet je in newton (N).",
-        "uo": [
-         "Klopt: newton.",
-         "Kilogram is massa.",
-         "Meter is afstand.",
-         "Seconde is tijd."
-        ],
-        "uh": "Kracht in newton (N)."
-       },
-       {
-        "v": "Wat doet een kracht met een voorwerp?",
-        "o": [
-         "Ze meet altijd de massa",
-         "Ze kan de vorm of beweging veranderen",
-         "Ze verlaagt de temperatuur",
-         "Ze verandert de kleur van het voorwerp"
-        ],
-        "c": 1,
-        "d": 1,
-        "u": "Een kracht kan de vorm of de beweging van een voorwerp veranderen.",
-        "uo": [
-         "Massa meten is geen kracht.",
-         "Klopt: vorm of beweging veranderen.",
-         "Een kracht verlaagt geen temperatuur.",
-         "Kleur verandert niet door een kracht."
-        ],
-        "uh": "Kracht verandert vorm of beweging."
-       },
-       {
-        "v": "Hoe bereken je de zwaartekracht?",
-        "o": [
-         "Massa gedeeld door g",
-         "Massa plus g",
-         "Massa maal g",
-         "g gedeeld door massa"
-        ],
-        "c": 2,
-        "d": 2,
-        "u": "De zwaartekracht is Fz = m maal g, de massa maal de valversnelling.",
-        "uo": [
-         "Delen klopt niet.",
-         "Optellen klopt niet.",
-         "Klopt: Fz = m maal g.",
-         "Verkeerd om gedeeld."
-        ],
-        "uh": "Fz = m maal g."
-       },
-       {
-        "v": "Wat is het verschil tussen massa en gewicht?",
-        "o": [
-         "De twee begrippen betekenen precies hetzelfde",
-         "Massa is een kracht, gewicht is materie",
-         "Beide zijn een kracht in newton",
-         "Massa is materie in kg, gewicht is een kracht in N"
-        ],
-        "c": 3,
-        "d": 3,
-        "u": "Massa is de hoeveelheid materie in kilogram; gewicht is een kracht in newton.",
-        "uo": [
-         "Ze verschillen juist.",
-         "Dit is precies omgekeerd.",
-         "Massa is geen kracht.",
-         "Klopt: massa in kg, gewicht in N."
-        ],
-        "uh": "Massa = kg (materie), gewicht = N (kracht)."
-       },
-       {
-        "v": "In welke eenheid geef je massa?",
-        "o": [
-         "Kilogram",
-         "Newton",
-         "Meter per seconde",
-         "Joule"
-        ],
-        "c": 0,
-        "d": 1,
-        "u": "Massa geef je in kilogram (kg).",
-        "uo": [
-         "Klopt: kilogram.",
-         "Newton is een kracht.",
-         "Dat is snelheid.",
-         "Joule is energie."
-        ],
-        "uh": "Massa in kilogram."
-       },
-       {
-        "v": "In welke eenheid geef je gewicht?",
-        "o": [
-         "Kilogram",
-         "Newton",
-         "Meter",
-         "Seconde"
-        ],
-        "c": 1,
-        "d": 2,
-        "u": "Gewicht is een kracht en geef je dus in newton.",
-        "uo": [
-         "Kilogram is massa, niet gewicht.",
-         "Klopt: gewicht is een kracht, in newton.",
-         "Meter is afstand.",
-         "Seconde is tijd."
-        ],
-        "uh": "Gewicht is een kracht, in newton."
-       },
-       {
-        "v": "Wat is de normaalkracht?",
-        "o": [
-         "De kracht die in een gespannen touw zit",
-         "De kracht die tegen de beweging in werkt",
-         "De steunkracht loodrecht op een oppervlak",
-         "De kracht die naar beneden trekt"
-        ],
-        "c": 2,
-        "d": 2,
-        "u": "De normaalkracht is de steunkracht die loodrecht op het steunoppervlak staat.",
-        "uo": [
-         "Dat is de spankracht.",
-         "Dat is de wrijvingskracht.",
-         "Klopt: steunkracht loodrecht op het oppervlak.",
-         "Dat is de zwaartekracht."
-        ],
-        "uh": "Normaalkracht = steunkracht loodrecht op het oppervlak."
-       },
-       {
-        "v": "Wat is de wrijvingskracht?",
-        "o": [
-         "De kracht naar beneden",
-         "De steunkracht van een tafel",
-         "De kracht die in een gespannen touw zit",
-         "Een kracht die tegen de beweging in werkt"
-        ],
-        "c": 3,
-        "d": 2,
-        "u": "De wrijvingskracht werkt altijd tegen de bewegingsrichting in.",
-        "uo": [
-         "Dat is de zwaartekracht.",
-         "Dat is de normaalkracht.",
-         "Dat is de spankracht.",
-         "Klopt: tegen de beweging in."
-        ],
-        "uh": "Wrijvingskracht werkt tegen de beweging in."
-       },
-       {
-        "v": "Wat is de spankracht?",
-        "o": [
-         "De kracht in een gespannen touw",
-         "De steunkracht van de grond",
-         "De kracht die naar beneden trekt",
-         "De wrijving tegen de beweging"
-        ],
-        "c": 0,
-        "d": 1,
-        "u": "De spankracht is de kracht die in een gespannen touw of kabel zit.",
-        "uo": [
-         "Klopt: de kracht in een gespannen touw.",
-         "Dat is de normaalkracht.",
-         "Dat is de zwaartekracht.",
-         "Dat is de wrijvingskracht."
-        ],
-        "uh": "Spankracht = de kracht in een gespannen touw."
-       },
-       {
-        "v": "Wat is de resulterende kracht?",
-        "o": [
-         "Alleen de zwaartekracht op het voorwerp",
-         "De som van alle krachten op een voorwerp",
-         "De grootste kracht van allemaal",
-         "De massa maal de snelheid"
-        ],
-        "c": 1,
-        "d": 2,
-        "u": "De resulterende kracht is de optelsom (als vectoren) van alle krachten samen.",
-        "uo": [
-         "Het is meer dan alleen de zwaartekracht.",
-         "Klopt: de som van alle krachten.",
-         "Het is de som, niet alleen de grootste.",
-         "Dat is impuls, geen kracht."
-        ],
-        "uh": "Resulterende kracht = som van alle krachten."
-       },
-       {
-        "v": "Wat betekent het als de resulterende kracht nul is?",
-        "o": [
-         "Het voorwerp versnelt sterk",
-         "Er werkt geen enkele kracht",
-         "Het voorwerp is in evenwicht",
-         "De massa van het voorwerp is precies nul"
-        ],
-        "c": 2,
-        "d": 3,
-        "u": "Bij een resulterende kracht van nul is het voorwerp in evenwicht: in rust of met constante snelheid.",
-        "uo": [
-         "Zonder resulterende kracht versnelt het juist niet.",
-         "Er kunnen wel krachten werken, die elkaar opheffen.",
-         "Klopt: evenwicht (rust of constante snelheid).",
-         "De massa staat hier los van."
-        ],
-        "uh": "Resulterende kracht nul = evenwicht."
-       },
-       {
-        "v": "Waarmee teken je een kracht?",
-        "o": [
-         "Met een getal zonder richting",
-         "Met een rondje",
-         "Met een tabel",
-         "Met een pijl (vector)"
-        ],
-        "c": 3,
-        "d": 1,
-        "u": "Een kracht is een vector: je tekent hem als een pijl met grootte, richting en aangrijpingspunt.",
-        "uo": [
-         "Een kracht heeft ook een richting.",
-         "Een rondje toont geen richting.",
-         "Een tabel is geen krachtpijl.",
-         "Klopt: een pijl met grootte en richting."
-        ],
-        "uh": "Kracht = pijl (vector) met grootte en richting."
-       },
-       {
-        "v": "Waar grijpt de zwaartekracht aan?",
-        "o": [
-         "In het zwaartepunt",
-         "In een hoek van het voorwerp",
-         "Op het oppervlak eronder",
-         "In het touw"
-        ],
-        "c": 0,
-        "d": 2,
-        "u": "De zwaartekracht grijpt aan in het zwaartepunt van het voorwerp.",
-        "uo": [
-         "Klopt: in het zwaartepunt.",
-         "Niet in een willekeurige hoek.",
-         "Dat is waar de normaalkracht werkt.",
-         "Dat is de spankracht."
-        ],
-        "uh": "Zwaartekracht grijpt aan in het zwaartepunt."
-       },
-       {
-        "v": "Een blok van 2 kg ligt stil. Hoe groot is de zwaartekracht ongeveer? (g is 9,8)",
-        "o": [
-         "Ongeveer 2 N",
-         "Ongeveer 20 N",
-         "Ongeveer 200 N",
-         "Ongeveer 0,2 N"
-        ],
-        "c": 1,
-        "d": 3,
-        "u": "Fz = m maal g = 2 maal 9,8 is ongeveer 20 N.",
-        "uo": [
-         "2 is de massa, niet de kracht.",
-         "Klopt: 2 maal 9,8 is ongeveer 20 N.",
-         "200 is tien keer te groot.",
-         "0,2 is veel te klein."
-        ],
-        "uh": "Fz = m maal g, hier 2 maal 9,8 is ongeveer 20 N."
-       },
-       {
-        "v": "Waarom is je gewicht op de maan kleiner dan op aarde, maar je massa niet?",
-        "o": [
-         "Omdat je op de maan minder materie hebt",
-         "Omdat gewicht en massa precies hetzelfde zijn",
-         "Omdat de valversnelling g op de maan kleiner is",
-         "Omdat er op de maan geen zwaartekracht is"
-        ],
-        "c": 2,
-        "d": 3,
-        "u": "Gewicht hangt af van g, en g is op de maan kleiner. Je massa (hoeveelheid materie) blijft gelijk.",
-        "uo": [
-         "Je hoeveelheid materie verandert niet.",
-         "Gewicht en massa zijn juist verschillend.",
-         "Klopt: op de maan is g kleiner, dus je gewicht ook.",
-         "Er is wel zwaartekracht op de maan, alleen kleiner."
-        ],
-        "uh": "Gewicht hangt af van g; massa blijft gelijk."
-       },
-       {
-        "v": "Welke kracht houdt een boek tegen dat op een tafel ligt?",
-        "o": [
-         "De spankracht van een gespannen touw",
-         "De wrijvingskracht",
-         "De luchtdruk van boven",
-         "De normaalkracht van de tafel"
-        ],
-        "c": 3,
-        "d": 2,
-        "u": "De tafel duwt met de normaalkracht omhoog en houdt zo de zwaartekracht in evenwicht.",
-        "uo": [
-         "Er is geen touw, dus geen spankracht.",
-         "Wrijving werkt bij beweging, niet hier verticaal.",
-         "Luchtdruk is niet de steunkracht hier.",
-         "Klopt: de normaalkracht van de tafel."
-        ],
-        "uh": "De tafel duwt terug met de normaalkracht."
-       },
-       {
-        "v": "Twee mensen trekken even hard tegengesteld aan een touw. Wat is de resulterende kracht?",
-        "o": [
-         "Nul",
-         "Twee keer zo groot",
-         "Gelijk aan één trek",
-         "Gelijk aan de massa"
-        ],
-        "c": 0,
-        "d": 3,
-        "u": "Twee even grote, tegengestelde krachten heffen elkaar op, dus de resulterende kracht is nul.",
-        "uo": [
-         "Klopt: gelijke tegengestelde krachten geven nul.",
-         "Ze tellen niet op maar heffen elkaar op.",
-         "Eén trek blijft niet over.",
-         "Massa is geen kracht."
-        ],
-        "uh": "Gelijke tegengestelde krachten = resulterende nul."
-       },
-       {
-        "v": "Welke kracht werkt tegen een schuivend blok in?",
-        "o": [
-         "De normaalkracht",
-         "De wrijvingskracht",
-         "De spankracht van een gespannen touw",
-         "De zwaartekracht"
-        ],
-        "c": 1,
-        "d": 2,
-        "u": "De wrijvingskracht werkt tegen de bewegingsrichting van het schuivende blok in.",
-        "uo": [
-         "De normaalkracht staat loodrecht, niet tegen de beweging.",
-         "Klopt: de wrijvingskracht.",
-         "Er is geen touw, dus geen spankracht.",
-         "De zwaartekracht werkt naar beneden."
-        ],
-        "uh": "Wrijving werkt tegen de beweging in."
-       },
-       {
-        "v": "Iemand zegt: mijn gewicht is 70 kilogram. Wat klopt er niet?",
-        "o": [
-         "Gewicht bestaat niet",
-         "Het getal 70 is veel te groot",
-         "Kilogram is de eenheid van massa, niet gewicht",
-         "Gewicht meet je in meter"
-        ],
-        "c": 2,
-        "d": 3,
-        "u": "Gewicht is een kracht in newton; kilogram is de eenheid van massa. De persoon bedoelt eigenlijk zijn massa.",
-        "uo": [
-         "Gewicht bestaat wel degelijk.",
-         "Het getal is niet het probleem.",
-         "Klopt: kilogram hoort bij massa, gewicht is in newton.",
-         "Gewicht meet je niet in meter."
-        ],
-        "uh": "Kilogram = massa; gewicht = newton."
-       },
-       {
-        "v": "Wat is een vector?",
-        "o": [
-         "Een gewoon getal helemaal zonder richting",
-         "De massa van een voorwerp",
-         "De temperatuur van een stof",
-         "Een grootheid met grootte en richting"
-        ],
-        "c": 3,
-        "d": 1,
-        "u": "Een vector heeft een grootte en een richting; een kracht is een vector.",
-        "uo": [
-         "Dat is een gewoon getal (scalair).",
-         "Massa is een scalair.",
-         "Temperatuur is een scalair.",
-         "Klopt: grootte en richting."
-        ],
-        "uh": "Vector = grootte plus richting (zoals een kracht)."
-       },
-       {
-        "v": "Een lamp hangt stil aan een touw. Welke twee krachten zijn in evenwicht?",
-        "o": [
-         "Zwaartekracht en spankracht",
-         "Normaalkracht en wrijvingskracht",
-         "Twee wrijvingskrachten",
-         "Zwaartekracht en normaalkracht"
-        ],
-        "c": 0,
-        "d": 3,
-        "u": "De zwaartekracht trekt de lamp omlaag, de spankracht van het touw trekt even hard omhoog; samen nul.",
-        "uo": [
-         "Klopt: zwaartekracht omlaag, spankracht omhoog.",
-         "Er is geen steunoppervlak, dus geen normaalkracht.",
-         "Er is geen wrijving in het spel.",
-         "Er is geen tafel, dus geen normaalkracht."
-        ],
-        "uh": "Hangende lamp: zwaartekracht en spankracht in evenwicht."
-       },
-       {
-        "v": "Waarom is de resulterende kracht op een voorwerp met constante snelheid nul?",
-        "o": [
-         "Omdat er geen snelheid is",
-         "Omdat de krachten elkaar opheffen",
-         "Omdat de massa van het voorwerp nul is",
-         "Omdat er geen zwaartekracht is"
-        ],
-        "c": 1,
-        "d": 3,
-        "u": "Bij een constante snelheid is er geen versnelling, dus heffen de krachten elkaar precies op.",
-        "uo": [
-         "Er is juist wel snelheid, alleen constant.",
-         "Klopt: de krachten heffen elkaar op.",
-         "De massa is niet nul.",
-         "De zwaartekracht werkt gewoon."
-        ],
-        "uh": "Constante snelheid = resulterende kracht nul."
-       },
-       {
-        "v": "Welke kracht wijst altijd naar beneden, naar het middelpunt van de aarde?",
-        "o": [
-         "De normaalkracht",
-         "De spankracht",
-         "De zwaartekracht",
-         "De wrijvingskracht"
+         "grootte, eenheid en tijdsduur",
+         "massa, snelheid en richting",
+         "grootte, richting en aangrijpingspunt",
+         "lengte, dikte en kleur van de pijl"
         ],
         "c": 2,
         "d": 1,
-        "u": "De zwaartekracht wijst altijd naar beneden, richting het middelpunt van de aarde.",
+        "s": 0,
+        "u": "Een kracht is een vector met een grootte, richting en aangrijpingspunt.",
         "uo": [
-         "De normaalkracht staat loodrecht op het oppervlak.",
-         "De spankracht zit in een touw.",
-         "Klopt: de zwaartekracht wijst omlaag.",
-         "De wrijvingskracht werkt tegen de beweging."
+         "Koos je grootte, eenheid en tijdsduur? De eenheid (newton) zet je erbij, maar de pijl toont geen tijdsduur. Het aangrijpingspunt ontbreekt in dit rijtje juist.",
+         "Koos je massa, snelheid en richting? Massa en snelheid zijn eigenschappen van het voorwerp zelf. Een krachtpijl zegt niets over hoe zwaar of hoe snel iets is.",
+         "Klopt: de lengte van de pijl is de grootte (op schaal), de pijlpunt geeft de richting en het beginpunt is het aangrijpingspunt, de plek waar de kracht op het voorwerp werkt.",
+         "Koos je lengte, dikte en kleur? Alleen de lengte betekent iets: die geeft de grootte op schaal. Dikte en kleur zijn opmaak en geven geen natuurkundige informatie."
         ],
-        "uh": "Zwaartekracht wijst altijd naar beneden."
+        "uh": "Grootte, richting, aangrijpingspunt."
        },
        {
-        "v": "Wat gebeurt er als de resulterende kracht niet nul is?",
+        "v": "Bij een schaal van 1,0 cm ≙ 50 N teken je een kracht van 175 N. Hoe lang wordt de pijl?",
         "o": [
-         "Het voorwerp blijft altijd stil",
-         "De massa verandert",
-         "Er verandert niets",
-         "Het voorwerp versnelt"
+         "1,75 cm",
+         "3,5 cm",
+         "8,75 cm",
+         "35 cm"
         ],
-        "c": 3,
+        "c": 1,
         "d": 2,
-        "u": "Een resulterende kracht die niet nul is, geeft het voorwerp een versnelling.",
+        "s": 0,
+        "u": "175 / 50 = 3,5 cm.",
         "uo": [
-         "Bij een kracht blijft het niet stil.",
-         "De massa verandert niet.",
-         "Er verandert juist wel iets: het versnelt.",
-         "Klopt: het voorwerp versnelt."
+         "Koos je 1,75 cm? Dan heb je 175 door 100 gedeeld, alsof 1 cm voor 100 N staat. Met deze schaal hoort bij elke centimeter maar 50 N.",
+         "Klopt: elke centimeter staat voor 50 N, dus 175 N / 50 N per cm = 3,5 cm. Schrijf de krachtenschaal er altijd bij, anders kan niemand de pijl teruglezen.",
+         "Koos je 8,75 cm? Dan heb je vermenigvuldigd in plaats van gedeeld: 175 × 0,05. Dat geeft het goede getal toevallig niet; deel de kracht door de waarde van 1 cm.",
+         "Koos je 35 cm? Dan heb je de komma verkeerd gezet. Een pijl van 35 cm past niet op je blad; reken na: 3,5 × 50 N = 175 N."
         ],
-        "uh": "Resulterende kracht niet nul = versnelling."
+        "uh": "Lengte = kracht / schaal."
        },
        {
-        "v": "Waarom teken je een kracht met een aangrijpingspunt?",
+        "v": "Waar teken je het aangrijpingspunt van de zwaartekracht op een homogeen blok?",
         "o": [
-         "Om te tonen waar de kracht op het voorwerp werkt",
-         "Om de massa aan te geven",
-         "Om de temperatuur te tonen",
-         "Om de tijd van de beweging aan te geven"
+         "in het midden van het blok, het zwaartepunt",
+         "op de onderkant, waar het blok de grond raakt",
+         "op de bovenkant, omdat de aarde trekt",
+         "aan de zijkant waar je het blok zou duwen"
         ],
         "c": 0,
         "d": 2,
-        "u": "Het aangrijpingspunt laat zien op welk punt van het voorwerp de kracht werkt.",
+        "s": 0,
+        "u": "Zwaartekracht grijpt aan in het zwaartepunt.",
         "uo": [
-         "Klopt: waar de kracht aangrijpt.",
-         "De massa toon je niet met een pijl.",
-         "Temperatuur hoort niet bij een krachtpijl.",
-         "Tijd hoort niet bij een krachtpijl."
+         "Klopt: de zwaartekracht werkt op elk deeltje van het blok. Samen werkt dat alsof alles in één punt aangrijpt: het zwaartepunt, bij een homogeen blok precies in het midden.",
+         "Koos je de onderkant? Daar grijpt de normaalkracht van de grond aan. De zwaartekracht werkt op het hele blok en teken je vanuit het zwaartepunt.",
+         "Koos je de bovenkant? De aarde trekt aan alle deeltjes, niet alleen aan de bovenkant. Daarom komt de pijl uit het midden en wijst hij recht omlaag.",
+         "Koos je de zijkant? Daar zou een duwkracht van een hand aangrijpen. Elke kracht heeft zijn eigen aangrijpingspunt; voor de zwaartekracht is dat het zwaartepunt."
         ],
-        "uh": "Aangrijpingspunt = waar de kracht werkt."
+        "uh": "Zwaartepunt."
+       },
+       {
+        "v": "Welke van deze pijlen in het krachtendiagram van de kist is fout getekend?",
+        "o": [
+         "de trekkracht van 200 N, schuin naar rechts",
+         "de zwaartekracht, die recht omlaag wijst",
+         "de normaalkracht, omhoog vanuit de onderkant",
+         "de wrijvingskracht, die naar rechts wijst"
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 0,
+        "u": "Wrijving werkt tegen de beweging in, dus naar links.",
+        "uo": [
+         "Koos je de trekkracht? Het touw trekt schuin omhoog naar rechts, in de richting van het touw. Een trekkracht wijst altijd langs het touw van het voorwerp af.",
+         "Koos je de zwaartekracht? Die wijst altijd recht omlaag, naar het midden van de aarde, en grijpt aan in het zwaartepunt. Die pijl is dus goed getekend.",
+         "Koos je de normaalkracht? De vloer duwt loodrecht op het contactvlak terug, dus omhoog, met het aangrijpingspunt aan de onderkant. Ook die klopt.",
+         "Klopt: de kist schuift naar rechts, dus de wrijvingskracht werkt naar links, tegen de beweging in. Een wrijvingspijl in de bewegingsrichting zou de kist juist helpen."
+        ],
+        "uh": "Wrijving tegen de beweging in.",
+        "ctx": "Een leerling tekent het krachtendiagram van een kist die met een touw over een vloer naar rechts wordt getrokken. Hij tekent vier pijlen: de zwaartekracht recht omlaag vanuit het midden, de normaalkracht omhoog vanuit de onderkant, de trekkracht van 200 N schuin omhoog naar rechts langs het touw en de wrijvingskracht naar rechts langs de vloer."
+       },
+       {
+        "v": "Waarom kun je deze twee krachten van 80 N niet zomaar optellen tot 160 N?",
+        "o": [
+         "krachten mag je nooit bij elkaar optellen",
+         "ze hebben verschillende aangrijpingspunten",
+         "ze werken in verschillende richtingen",
+         "80 N is te klein om mee te rekenen"
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 0,
+        "u": "Krachten zijn vectoren: richting telt mee.",
+        "uo": [
+         "Koos je dat je krachten nooit mag optellen? Dat mag wel, maar als vectoren: rekening houdend met de richting. In dezelfde richting is gewoon optellen zelfs juist.",
+         "Koos je verschillende aangrijpingspunten? Beide touwen zitten aan dezelfde ring vast, dus het aangrijpingspunt is gelijk. Het probleem zit in de richtingen.",
+         "Klopt: kracht is een vector. Alleen krachten in dezelfde richting tel je gewoon op. Onder een hoek van 90° geeft Pythagoras √(80² + 80²) = 113 N, niet 160 N.",
+         "Koos je dat 80 N te klein is? De grootte doet er niet toe voor de rekenregel. Ook twee krachten van 1 N onder een hoek tel je als vectoren op, niet als getallen."
+        ],
+        "uh": "Vectoren, geen getallen.",
+        "ctx": "Twee kinderen trekken met een touw aan dezelfde ring op het schoolplein. Het ene kind trekt met 80 N naar het noorden, het andere met 80 N naar het oosten. Een klasgenoot zegt dat de ring dus met 160 N wordt getrokken."
+       },
+       {
+        "v": "Hoe groot is de zwaartekracht op een tas van 4,0 kg?",
+        "o": [
+         "4,0 N",
+         "39 N",
+         "0,41 N",
+         "2,5 N"
+        ],
+        "c": 1,
+        "d": 1,
+        "s": 1,
+        "u": "Fz = 4,0 × 9,81 = 39 N.",
+        "uo": [
+         "Koos je 4,0 N? Dan heb je de massa als kracht genomen. Massa in kg en kracht in N zijn verschillende grootheden; vermenigvuldig met g.",
+         "Klopt: Fz = m · g = 4,0 kg × 9,81 N/kg = 39 N. Elke kilogram massa geeft op aarde een zwaartekracht van bijna 10 N.",
+         "Koos je 0,41 N? Dan heb je 4,0 door 9,81 gedeeld. Fz = m · g, dus met g vermenigvuldigen, niet erdoor delen.",
+         "Koos je 2,5 N? Dan heb je 9,81 door 4,0 gedeeld. Een zwaardere tas hoort bij een grotere kracht, dus de massa staat niet in de noemer."
+        ],
+        "uh": "Fz = m · g."
+       },
+       {
+        "v": "Een appel ondervindt een zwaartekracht van 1,5 N. Wat is ongeveer zijn massa?",
+        "o": [
+         "0,15 kg",
+         "15 kg",
+         "1,5 kg",
+         "0,015 kg"
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 1,
+        "u": "m = Fz / g = 1,5 / 9,81.",
+        "uo": [
+         "Klopt: m = Fz / g = 1,5 / 9,81 = 0,15 kg, oftewel 150 gram. Dat past bij een flinke appel.",
+         "Koos je 15 kg? Dan heb je 1,5 met 9,81 vermenigvuldigd. Om van kracht naar massa te gaan deel je juist door g; een appel van 15 kg bestaat niet.",
+         "Koos je 1,5 kg? Dan heb je kracht en massa gelijkgesteld. Op aarde hoort bij 1 kg zo'n 10 N, dus 1,5 N is maar een tiende daarvan.",
+         "Koos je 0,015 kg? Dan heb je door 100 gedeeld in plaats van door ongeveer 10. Vijftien gram is een druif, geen appel."
+        ],
+        "uh": "m = Fz / g."
+       },
+       {
+        "v": "Een astronaut van 75 kg staat op de maan, waar g = 1,62 N/kg. Hoe groot is daar zijn zwaartekracht?",
+        "o": [
+         "75 N",
+         "736 N",
+         "46 N",
+         "122 N"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 1,
+        "u": "Fz = 75 × 1,62.",
+        "uo": [
+         "Koos je 75 N? Dan heb je de massa als kracht genomen. Ook op de maan moet je met g vermenigvuldigen om newton te krijgen.",
+         "Koos je 736 N? Dat is zijn zwaartekracht op aarde. Op de maan is g veel kleiner, dus moet je met 1,62 N/kg rekenen.",
+         "Koos je 46 N? Dan heb je 75 door 1,62 gedeeld. Fz = m · g, dus vermenigvuldig de massa met de valversnelling van de maan.",
+         "Klopt: Fz = m · g_maan = 75 × 1,62 = 122 N. Op aarde zou het 75 × 9,81 = 736 N zijn, ruim zes keer zo veel."
+        ],
+        "uh": "Fz = m · g_maan."
+       },
+       {
+        "v": "Hoeveel vrachtwagens mag de kraan in één keer optillen?",
+        "o": [
+         "1",
+         "3",
+         "2",
+         "20"
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 1,
+        "u": "Fz per wagen = 12 000 × 9,81 = 118 kN; 300 / 118 = 2,5.",
+        "uo": [
+         "Koos je 1? Dan heb je misschien met 12 ton als 120 kN en een te ruime veiligheid gerekend. Twee wagens geven 236 kN, onder de grens.",
+         "Koos je 3? Dan heb je 2,5 afgerond naar boven. Met drie wagens wordt de kracht 353 kN, meer dan de 300 kN die de kraan aankan.",
+         "Klopt: één vrachtwagen heeft Fz = 12 000 × 9,81 = 1,18 · 10⁵ N = 118 kN. 300 / 118 = 2,5, dus twee wagens kan, drie niet: dan is het 353 kN.",
+         "Koos je 20? Dan heb je 300 kN gedeeld door 12 ton zonder om te rekenen naar newton. Zet eerst de massa om naar een zwaartekracht met g."
+        ],
+        "uh": "Reken eerst de zwaartekracht per wagen uit.",
+        "ctx": "Een havenkraan in Rotterdam heeft een plaatje met de maximale belasting: de trekkracht in de kabel mag niet groter worden dan 300 kN. Er moeten lege vrachtwagens van elk 12 ton (12 000 kg) op een schip worden gezet. De kraanmachinist wil zo min mogelijk keer heen en weer."
+       },
+       {
+        "v": "Hoe groot is de valversnelling op Mars volgens de meting van de rover?",
+        "o": [
+         "9,8 N/kg",
+         "3,7 N/kg",
+         "0,27 N/kg",
+         "1,9 N/kg"
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 1,
+        "u": "g = Fz / m = 666 / 180.",
+        "uo": [
+         "Koos je 9,8 N/kg? Dat is de waarde op aarde. De rover meet op Mars een veel kleinere kracht dan op aarde, dus g is daar kleiner.",
+         "Klopt: g = Fz / m = 666 N / 180 kg = 3,7 N/kg. Dat is ongeveer 38% van de waarde op aarde, dus op Mars voel je je bijna drie keer zo licht.",
+         "Koos je 0,27 N/kg? Dan heb je 180 door 666 gedeeld: m / Fz. De valversnelling is kracht per kilogram, dus Fz / m.",
+         "Koos je 1,9 N/kg? Dan heb je het gemiddelde van iets genomen of een rekenfout gemaakt. Deel gewoon 666 door 180, dat is 3,7."
+        ],
+        "uh": "g = Fz / m.",
+        "ctx": "Een Mars-rover heeft een massa van 180 kg. Op aarde wegen technici de rover en vinden een zwaartekracht van 1766 N. Na de landing op Mars meet een krachtsensor in de wielophanging dat de rover daar met in totaal 666 N op de bodem drukt. De rover staat stil op een vlakke ondergrond."
+       },
+       {
+        "v": "Iemand zegt: \"Ik weeg 60 kilo.\" Wat bedoelt de natuurkundige daarmee?",
+        "o": [
+         "een massa van 60 kg",
+         "een gewicht van 60 N",
+         "een zwaartekracht van 60 kg",
+         "een volume van 60 liter"
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 2,
+        "u": "Kilogram is de eenheid van massa.",
+        "uo": [
+         "Klopt: in het dagelijks leven zeg je \"wegen\", maar kilogram is de eenheid van massa. Het gewicht, de kracht op de weegschaal, is ongeveer 60 × 9,81 = 589 N.",
+         "Koos je een gewicht van 60 N? Gewicht is een kracht in newton. Bij 60 kg hoort een gewicht van 589 N, niet van 60 N.",
+         "Koos je een zwaartekracht van 60 kg? Een kracht druk je nooit uit in kilogram. Zwaartekracht meet je in newton, massa in kilogram.",
+         "Koos je een volume van 60 liter? Volume gaat over hoeveel ruimte iets inneemt. Een mens van 60 kg heeft toevallig ongeveer dat volume, maar dat is niet wat \"wegen\" betekent."
+        ],
+        "uh": "kg = massa."
+       },
+       {
+        "v": "Wat verandert er als een astronaut van de aarde naar de maan reist?",
+        "o": [
+         "er verandert niets, want hij blijft dezelfde persoon",
+         "zijn massa wordt kleiner, zijn gewicht blijft gelijk",
+         "zijn massa en zijn gewicht worden allebei kleiner",
+         "zijn gewicht wordt kleiner, zijn massa blijft gelijk"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 2,
+        "u": "Massa is een eigenschap, gewicht hangt van g af.",
+        "uo": [
+         "Koos je dat er niets verandert? Hij blijft dezelfde persoon met dezelfde massa, maar op de maan drukt hij veel minder hard op de grond: zijn gewicht is kleiner.",
+         "Koos je dat zijn massa kleiner wordt? Hij raakt onderweg geen materie kwijt. Juist het gewicht verandert, omdat de maan minder hard trekt.",
+         "Koos je dat beide kleiner worden? Alleen het gewicht hangt af van waar je bent. De massa is overal in het heelal dezelfde.",
+         "Klopt: de hoeveelheid materie, de massa, neemt hij gewoon mee. Het gewicht is de kracht waarmee hij op de ondergrond drukt, en die hangt af van g, die op de maan zes keer kleiner is."
+        ],
+        "uh": "Gewicht hangt af van g."
+       },
+       {
+        "v": "Wat geeft de personenweegschaal aan op het moment dat de lift begint te stijgen?",
+        "o": [
+         "minder dan 50 kg, je gaat omhoog",
+         "precies 50 kg, je massa verandert niet",
+         "meer dan 50 kg, je drukt harder op de schaal",
+         "0 kg, omdat je samen met de lift beweegt"
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 2,
+        "u": "Bij omhoog versnellen drukt je gewicht harder.",
+        "uo": [
+         "Koos je minder dan 50 kg? Dat gebeurt als de lift omlaag versnelt of bij het afremmen tijdens het stijgen. Bij het optrekken naar boven druk je juist harder.",
+         "Koos je precies 50 kg? Je massa verandert inderdaad niet, maar de weegschaal meet de kracht waarmee je erop drukt. Die is bij het optrekken groter.",
+         "Klopt: om je omhoog te versnellen moet de vloer harder duwen dan je zwaartekracht. Jij drukt dan even hard terug op de weegschaal: je gewicht is groter en de schaal wijst meer aan.",
+         "Koos je 0 kg? Dat gebeurt alleen bij een vrije val van de lift, als je samen valt. Een gewone lift die optrekt laat je juist zwaarder voelen."
+        ],
+        "uh": "Weegschaal meet de kracht, niet de massa.",
+        "ctx": "Lotte heeft een massa van 50 kg. Ze neemt voor een proefje haar personenweegschaal mee de lift in van een kantoorgebouw. Ze gaat erop staan en drukt op de knop voor de tiende verdieping. Ze let vooral op de wijzer op het moment dat de lift begint te bewegen."
+       },
+       {
+        "v": "Waarom drukken de boeken harder op de plank als het schip omhoog versnelt?",
+        "o": [
+         "de massa van de boeken neemt even toe",
+         "de plank moet ook de versnelling leveren",
+         "de zwaartekracht verdwijnt op zee",
+         "het gewicht is altijd gelijk aan de zwaartekracht"
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 2,
+        "u": "Gewicht = kracht op de ondersteuning; die is groter bij omhoog versnellen.",
+        "uo": [
+         "Koos je dat de massa toeneemt? De massa van de boeken blijft altijd gelijk. Alleen de kracht waarmee ze op de plank drukken verandert.",
+         "Klopt: het gewicht is de kracht op de ondersteuning. Versnelt het schip omhoog op een golf, dan moet de plank naast de zwaartekracht ook een extra kracht leveren voor de versnelling, dus drukken de boeken harder.",
+         "Koos je dat de zwaartekracht verdwijnt? De aarde trekt op zee net zo hard aan de boeken als op het land. Die kracht blijft m · g.",
+         "Koos je dat gewicht altijd gelijk is aan de zwaartekracht? Dat geldt alleen als de ondersteuning stilstaat of eenparig beweegt. Bij versnellen zijn ze verschillend."
+        ],
+        "uh": "Gewicht ≠ zwaartekracht bij versnellen.",
+        "ctx": "In de kajuit van een zeilschip liggen boeken op een plank. Op een golf wordt het schip met een versnelling van 2,0 m/s² omhoog getild. De schipper merkt dat de plank daarbij doorbuigt, alsof de boeken zwaarder worden. Hij vraagt zich af of de boeken echt zwaarder zijn geworden."
+       },
+       {
+        "v": "In welke richting werkt de normaalkracht van een vloer op een kast?",
+        "o": [
+         "loodrecht op de vloer, omhoog",
+         "evenwijdig aan de vloer",
+         "recht omlaag, naar de aarde",
+         "in de richting waarin je duwt"
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 3,
+        "u": "Normaal betekent loodrecht.",
+        "uo": [
+         "Klopt: \"normaal\" betekent in de natuurkunde loodrecht. De vloer duwt loodrecht op het contactvlak terug, bij een vlakke vloer dus recht omhoog.",
+         "Koos je evenwijdig aan de vloer? Een kracht langs het contactvlak is de wrijvingskracht. De normaalkracht staat daar juist loodrecht op.",
+         "Koos je recht omlaag? Dat is de zwaartekracht op de kast, of de kracht van de kast op de vloer. De vloer duwt de kast omhoog.",
+         "Koos je in de richting waarin je duwt? Je duwkracht is een aparte kracht. De normaalkracht hangt alleen af van het contact met de vloer."
+        ],
+        "uh": "Loodrecht op het contactvlak."
+       },
+       {
+        "v": "In welke richting werkt de wrijvingskracht op een slee die van een heuvel glijdt?",
+        "o": [
+         "recht omlaag, naar de aarde",
+         "omlaag langs de helling, met de beweging mee",
+         "loodrecht op de helling",
+         "omhoog langs de helling, tegen de beweging in"
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 3,
+        "u": "Wrijving werkt tegen de beweging in.",
+        "uo": [
+         "Koos je recht omlaag? Dat is de richting van de zwaartekracht. De wrijvingskracht ligt langs de helling, tegen de glijrichting in.",
+         "Koos je omlaag langs de helling? Dan zou wrijving de slee versnellen. Wrijving remt altijd af en wijst dus tegen de bewegingsrichting in.",
+         "Koos je loodrecht op de helling? Die richting hoort bij de normaalkracht. Wrijving werkt langs het oppervlak, niet erop.",
+         "Klopt: wrijving werkt langs het contactvlak, tegen de beweging in. De slee glijdt omlaag, dus de wrijving wijst omhoog langs de helling."
+        ],
+        "uh": "Tegen de beweging in."
+       },
+       {
+        "v": "Een boek van 1,2 kg ligt op een tafel. Hoe groot is de normaalkracht?",
+        "o": [
+         "0 N",
+         "1,2 N",
+         "12 N",
+         "24 N"
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 3,
+        "u": "Evenwicht: Fn = Fz = 1,2 × 9,81.",
+        "uo": [
+         "Koos je 0 N? Dan zou er niets zijn dat de zwaartekracht tegenwerkt en zou het boek door de tafel vallen. De tafel duwt wel degelijk terug.",
+         "Koos je 1,2 N? Dan heb je de massa als kracht gelezen. Reken eerst de zwaartekracht uit met Fz = m · g; die moet de tafel tegenhouden.",
+         "Klopt: het boek ligt stil, dus de krachten zijn in evenwicht. De normaalkracht is even groot als de zwaartekracht: 1,2 × 9,81 = 11,8 N, afgerond 12 N.",
+         "Koos je 24 N? Dan heb je zwaartekracht en normaalkracht opgeteld. Ze zijn even groot en tegengesteld; de normaalkracht alleen is 12 N."
+        ],
+        "uh": "Fn = Fz bij stilliggen."
+       },
+       {
+        "v": "Waarom komt een hockeypuck op ijs veel verder dan op een stoeptegel?",
+        "o": [
+         "op ijs is de zwaartekracht kleiner",
+         "op ijs is de wrijvingskracht veel kleiner",
+         "op ijs is de normaalkracht groter",
+         "op ijs werkt er een extra duwkracht"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 3,
+        "u": "Glad oppervlak, kleine wrijving.",
+        "uo": [
+         "Koos je dat de zwaartekracht kleiner is? De zwaartekracht hangt alleen af van massa en g, en die zijn op ijs en op tegels hetzelfde.",
+         "Klopt: ijs is glad, dus de wrijvingskracht is klein en de puck remt nauwelijks af. Op een stoeptegel werkt een veel grotere wrijving tegen de beweging in.",
+         "Koos je dat de normaalkracht groter is? Op een vlakke ondergrond is de normaalkracht gelijk aan de zwaartekracht, dus op ijs en tegel even groot.",
+         "Koos je een extra duwkracht? Na de slag duwt niemand meer. De puck schuift door op zijn traagheid en remt af door wrijving, die op ijs klein is."
+        ],
+        "uh": "Minder wrijving."
+       },
+       {
+        "v": "Hoe groot is de wrijvingskracht op de kast terwijl Sem met 150 N duwt en de kast stil blijft staan?",
+        "o": [
+         "150 N",
+         "0 N",
+         "300 N",
+         "minder dan 150 N, de kast blijft liggen"
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 3,
+        "u": "Stilstand: Fw = Fduw.",
+        "uo": [
+         "Klopt: de kast blijft stilstaan, dus de horizontale krachten zijn in evenwicht. De vloer levert precies zoveel wrijving als nodig is: 150 N tegen de duw in.",
+         "Koos je 0 N? Dan zou de duw van 150 N niet tegengewerkt worden en zou de kast gaan schuiven. Er moet dus een wrijvingskracht zijn.",
+         "Koos je 300 N? Dat is de maximale wrijving die de vloer kan leveren. Zolang je minder hard duwt, is de wrijving even groot als je duw, niet groter.",
+         "Koos je minder dan 150 N? Dan zou er een resulterende kracht overblijven en zou de kast versnellen. Bij stilstand is de wrijving precies 150 N."
+        ],
+        "uh": "Statische wrijving past zich aan.",
+        "ctx": "Sem wil een zware boekenkast verschuiven. De vloer kan een wrijvingskracht van maximaal 300 N leveren voordat de kast gaat schuiven. Sem duwt eerst met 150 N horizontaal tegen de kast, maar die beweegt niet. Zijn zus zegt dat de wrijvingskracht dus 300 N moet zijn."
+       },
+       {
+        "v": "Waarom staat de fiets op de droge weg wel snel stil zonder te slippen?",
+        "o": [
+         "wrijving speelt bij remmen geen rol",
+         "de normaalkracht wordt dan kleiner",
+         "de massa van de fiets neemt af bij droog weer",
+         "de maximale wrijving tussen band en weg is dan groter"
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 3,
+        "u": "Grip is de maximale wrijving.",
+        "uo": [
+         "Koos je dat wrijving geen rol speelt? Zonder wrijving tussen band en weg kun je helemaal niet remmen: de fiets zou gewoon doorglijden, zoals op ijzel.",
+         "Koos je dat de normaalkracht kleiner wordt? Die blijft ongeveer gelijk aan de zwaartekracht. Een kleinere normaalkracht zou juist minder grip geven.",
+         "Koos je dat de massa afneemt? Het weer verandert niets aan de massa van fiets en fietser. Het verschil zit in het contact tussen band en weg.",
+         "Klopt: op een droge weg is de maximale wrijving tussen band en asfalt groot. De remmen kunnen het wiel dan hard afremmen zonder dat de band gaat slippen, dus de remweg wordt kort."
+        ],
+        "uh": "Grip = maximale wrijving.",
+        "ctx": "Een fietser remt twee keer vanaf 20 km/h met dezelfde kracht in de remhendel. De eerste keer is de weg nat en bladderig, de tweede keer droog. Op de natte weg slipt het achterwiel en glijdt de fiets door; op de droge weg staat hij na een paar meter stil zonder te slippen."
+       },
+       {
+        "v": "Welke kracht werkt in een strak gespannen touw waaraan een lamp hangt?",
+        "o": [
+         "wrijvingskracht",
+         "normaalkracht",
+         "spankracht",
+         "veerkracht"
+        ],
+        "c": 2,
+        "d": 1,
+        "s": 4,
+        "u": "Kracht in een touw of kabel = spankracht.",
+        "uo": [
+         "Koos je wrijvingskracht? Die werkt langs een contactvlak tegen het schuiven in. In een stilhangend touw schuift er niets langs elkaar.",
+         "Koos je normaalkracht? Die komt van een ondergrond die loodrecht terugduwt, zoals een tafel of vloer. Een touw kan niet duwen, alleen trekken.",
+         "Klopt: een touw, kabel of ketting dat strak staat, trekt aan beide uiteinden. Die trekkracht heet de spankracht en werkt altijd langs het touw.",
+         "Koos je veerkracht? Die hoort bij een veer die uitrekt of indrukt volgens F = C · u. Een touw rekt nauwelijks uit; daarin heet de kracht spankracht."
+        ],
+        "uh": "Touw = spankracht."
+       },
+       {
+        "v": "Een veer met veerconstante 40 N/m wordt 0,15 m uitgerekt. Hoe groot is de veerkracht?",
+        "o": [
+         "267 N",
+         "6,0 N",
+         "0,0038 N",
+         "40 N"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 4,
+        "u": "Fv = C · u = 40 × 0,15.",
+        "uo": [
+         "Koos je 267 N? Dan heb je 40 door 0,15 gedeeld. De veerkracht is veerconstante maal uitrekking, niet gedeeld door de uitrekking.",
+         "Klopt: Fv = C · u = 40 N/m × 0,15 m = 6,0 N. Hoe verder je de veer uitrekt, hoe groter de kracht, in een rechte evenredigheid.",
+         "Koos je 0,0038 N? Dan heb je 0,15 door 40 gedeeld. Dat is u / C; voor de kracht vermenigvuldig je C met u.",
+         "Koos je 40 N? Dat is de kracht bij een uitrekking van precies 1 m. Bij 0,15 m is de kracht maar 15% daarvan."
+        ],
+        "uh": "Fv = C · u."
+       },
+       {
+        "v": "Een veer rekt 4,0 cm uit als je er 2,0 N aan hangt. Wat is de veerconstante?",
+        "o": [
+         "50 N/m",
+         "0,50 N/m",
+         "8,0 N/m",
+         "2,0 N/m"
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 4,
+        "u": "C = F / u = 2,0 / 0,040.",
+        "uo": [
+         "Klopt: C = F / u = 2,0 N / 0,040 m = 50 N/m. Zet de uitrekking eerst om naar meter, anders klopt de eenheid N/m niet.",
+         "Koos je 0,50 N/m? Dan heb je 2,0 door 4,0 gedeeld zonder om te rekenen. Dat is N/cm; in N/m is het honderd keer zo veel.",
+         "Koos je 8,0 N/m? Dan heb je 2,0 en 4,0 vermenigvuldigd. De veerconstante is kracht gedeeld door uitrekking.",
+         "Koos je 2,0 N/m? Dan heb je de kracht als veerconstante genomen. De veerconstante zegt hoeveel newton je per meter uitrekking nodig hebt."
+        ],
+        "uh": "C = F / u, u in meter."
+       },
+       {
+        "v": "Hoeveel rekt de veer van de weegschaal uit als je de vis van 1,5 kg eraan hangt?",
+        "o": [
+         "61 cm",
+         "1,5 cm",
+         "0,61 cm",
+         "6,1 cm"
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 4,
+        "u": "u = Fz / C = 14,7 / 240.",
+        "uo": [
+         "Koos je 61 cm? Dan heb je 0,061 m naar cm omgerekend met een factor 1000. Een meter is 100 cm, dus 0,061 m = 6,1 cm.",
+         "Koos je 1,5 cm? Dan heb je de massa in kg direct als uitrekking genomen. Reken eerst de zwaartekracht uit en deel die door de veerconstante.",
+         "Koos je 0,61 cm? Dan heb je een factor 10 verkeerd gezet bij het omrekenen naar centimeters. 0,061 m is 6,1 cm.",
+         "Klopt: de vis hangt stil, dus Fv = Fz = 1,5 × 9,81 = 14,7 N. u = F / C = 14,7 / 240 = 0,061 m = 6,1 cm."
+        ],
+        "uh": "Fv = Fz, dan u = F / C.",
+        "ctx": "Een visser heeft een eenvoudige hengelweegschaal met een veer. Op de verpakking staat dat de veerconstante 240 N/m is. Hij hangt een gevangen snoek van 1,5 kg aan de haak. De vis hangt stil aan de veer, die netjes verticaal hangt."
+       },
+       {
+        "v": "Wanneer is de resulterende kracht op een voorwerp nul?",
+        "o": [
+         "als het afremt tot stilstand",
+         "alleen als het stilstaat",
+         "als het stilstaat of eenparig rechtdoor beweegt",
+         "als er maar één kracht op werkt"
+        ],
+        "c": 2,
+        "d": 1,
+        "s": 5,
+        "u": "Fres = 0 ↔ geen versnelling.",
+        "uo": [
+         "Koos je bij afremmen? Afremmen is een verandering van snelheid. Daarvoor is juist een resulterende kracht tegen de beweging in nodig.",
+         "Koos je alleen bij stilstand? Ook een auto die eenparig op de snelweg rijdt heeft Fres = 0: motorkracht en wrijving heffen elkaar dan op.",
+         "Klopt: bij een resulterende kracht van nul verandert de snelheid niet. Dat geldt bij stilstand, maar ook bij een constante snelheid in een rechte lijn.",
+         "Koos je bij één kracht? Eén kracht kan door niets worden opgeheven en is dus zelf de resulterende kracht. Die is dan juist niet nul."
+        ],
+        "uh": "Stil of eenparig."
+       },
+       {
+        "v": "Team A trekt met 1200 N naar links, team B met 1050 N naar rechts. Wat is de resulterende kracht?",
+        "o": [
+         "2250 N naar links",
+         "150 N naar links",
+         "150 N naar rechts",
+         "0 N, ze trekken allebei"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 5,
+        "u": "Tegengesteld: aftrekken, richting van de grootste.",
+        "uo": [
+         "Koos je 2250 N naar links? Dan heb je de krachten opgeteld. Dat mag alleen als ze dezelfde kant op werken; hier trekken de teams tegengesteld.",
+         "Klopt: tegengestelde krachten op één lijn trek je van elkaar af: 1200 − 1050 = 150 N, in de richting van de grootste kracht, dus naar links.",
+         "Koos je 150 N naar rechts? De grootte klopt, maar de richting niet. De resulterende kracht wijst naar de kant van het sterkste team, team A.",
+         "Koos je 0 N? Dat geldt alleen als beide teams precies even hard trekken. Met 1200 N tegen 1050 N blijft er 150 N over."
+        ],
+        "uh": "Aftrekken, richting van de grootste."
+       },
+       {
+        "v": "Een parachutist valt met een constante snelheid van 5 m/s. Wat weet je dan over de krachten?",
+        "o": [
+         "luchtweerstand en zwaartekracht zijn even groot",
+         "de luchtweerstand is groter dan de zwaartekracht",
+         "de zwaartekracht is groter dan de luchtweerstand",
+         "er werken op dat moment geen krachten meer"
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 5,
+        "u": "Constante snelheid: Fres = 0.",
+        "uo": [
+         "Klopt: bij een constante snelheid is de resulterende kracht nul. De luchtweerstand omhoog is dan precies even groot als de zwaartekracht omlaag.",
+         "Koos je dat de luchtweerstand groter is? Dan zou er een resulterende kracht omhoog zijn en zou de parachutist afremmen. Dat gebeurt vlak nadat de parachute opengaat.",
+         "Koos je dat de zwaartekracht groter is? Dan zou hij steeds sneller gaan vallen. Bij een constante snelheid zijn de krachten in evenwicht.",
+         "Koos je dat er geen krachten werken? De aarde trekt nog steeds aan hem en de lucht remt hem af. De krachten zijn er wel, ze heffen elkaar alleen op."
+        ],
+        "uh": "Evenwicht: Fw = Fz."
+       },
+       {
+        "v": "Hoe groot is de spankracht in elk van de twee touwen van de schommel?",
+        "o": [
+         "706 N",
+         "353 N",
+         "36 N",
+         "177 N"
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 5,
+        "u": "Fz = 36 × 9,81 = 353 N; verdeeld over twee touwen.",
+        "uo": [
+         "Koos je 706 N? Dan heb je met twee vermenigvuldigd in plaats van gedeeld. Twee touwen delen de last; elk touw draagt minder, niet meer.",
+         "Koos je 353 N? Dat is de totale zwaartekracht. Die wordt verdeeld over twee touwen, dus elk touw hoeft maar de helft te dragen.",
+         "Koos je 36 N? Dan heb je de massa als kracht genomen. Reken eerst Fz = m · g uit en verdeel die over de touwen.",
+         "Klopt: Fz = 36 × 9,81 = 353 N. De schommel hangt stil, dus de twee verticale touwen samen leveren 353 N: elk touw 353 / 2 = 177 N."
+        ],
+        "uh": "Fz verdeeld over twee touwen.",
+        "ctx": "Een kind van 30 kg zit op een schommel met een plankje van 6,0 kg. De schommel hangt stil aan twee verticale touwen die aan een balk vastzitten. De touwen zijn even lang en het kind zit precies in het midden van het plankje."
+       },
+       {
+        "v": "Wat is de resulterende kracht op de auto op het moment dat hij met 90 km/h eenparig rijdt?",
+        "o": [
+         "2400 N achteruit",
+         "2400 N vooruit",
+         "0 N",
+         "het hangt af van de massa van de auto"
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 5,
+        "u": "Eenparig: Fres = 0.",
+        "uo": [
+         "Koos je 2400 N achteruit? Dat is de som van de weerstanden. Die wordt opgeheven door de motorkracht, dus netto blijft er niets over.",
+         "Koos je 2400 N vooruit? Dat is alleen de motorkracht. Luchtweerstand en rolweerstand werken samen even hard terug, anders zou de auto versnellen.",
+         "Klopt: de auto rijdt met constante snelheid rechtdoor, dus de resulterende kracht is nul. De motorkracht van 2400 N is dan precies even groot als luchtweerstand plus rolweerstand samen.",
+         "Koos je dat het van de massa afhangt? Bij een constante snelheid is Fres altijd nul, wat de massa ook is. De massa speelt pas een rol bij versnellen."
+        ],
+        "uh": "Constante snelheid = evenwicht.",
+        "ctx": "Een auto rijdt op de snelweg met een constante snelheid van 90 km/h rechtdoor. De motor levert via de wielen een voorwaartse kracht van 2400 N. Een leerling wil weten hoe groot de luchtweerstand en de rolweerstand samen zijn, en wat de resulterende kracht op de auto is."
        }
       ],
       "oe": [
        {
-        "vraag": "Leg het verschil uit tussen massa en gewicht, met van elk de eenheid.",
-        "antwoord": "Massa is de hoeveelheid materie in een voorwerp, met eenheid kilogram (kg). De massa is overal in het heelal gelijk. Gewicht is een kracht, namelijk de kracht waarmee een voorwerp op zijn steun of ophanging drukt, met eenheid newton (N). Het gewicht hangt af van de valversnelling g en is daarom op de maan kleiner dan op aarde, terwijl de massa gelijk blijft."
+        "bron": "Examenstijl",
+        "ctx": "Een verhuizer trekt een kist van 40 kg met een touw over een vlakke vloer. Hij trekt horizontaal met 160 N en de kist schuift met een constante snelheid. Daarna zet zijn collega een doos van 20 kg op de kist, en de verhuizer merkt dat hij nu harder moet trekken om dezelfde constante snelheid te houden.",
+        "v": "Bereken de normaalkracht en de wrijvingskracht op de kist zonder doos, en leg uit waarom hij met de doos erop harder moet trekken.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Fn = Fz = 40 × 9,81 = 392 N (1p). Constante snelheid, dus Fres = 0: Fw = Ftrek = 160 N (1p). Met de doos is de normaalkracht groter (589 N), daardoor is de wrijvingskracht groter; voor evenwicht moet de trekkracht even groot zijn als die grotere wrijving (1p)."
        },
        {
-        "vraag": "Een voorwerp heeft een massa van 5 kg. Bereken de zwaartekracht (g = 9,8 m/s2).",
-        "antwoord": "De zwaartekracht is Fz = m maal g. Dus Fz = 5 maal 9,8 = 49 N. De zwaartekracht op het voorwerp is 49 newton en werkt naar beneden, aangrijpend in het zwaartepunt."
+        "bron": "Examenstijl",
+        "ctx": "Een leerling hangt verschillende massa's aan een veer en meet de uitrekking. Bij 100 g is de uitrekking 2,5 cm, bij 200 g 5,0 cm en bij 300 g 7,4 cm. Daarna hangt ze een onbekend voorwerp aan dezelfde veer en meet ze een uitrekking van 6,2 cm.",
+        "v": "Bepaal de veerconstante en bereken de massa van het onbekende voorwerp.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Bij 200 g: F = 0,200 × 9,81 = 1,96 N, u = 0,050 m; C = 1,96 / 0,050 = 39 N/m (1p). Onbekend: F = 39 × 0,062 = 2,4 N (1p). m = 2,4 / 9,81 = 0,25 kg (1p)."
        },
        {
-        "vraag": "Noem vier soorten krachten en beschrijf van elk kort de richting of werking.",
-        "antwoord": "De zwaartekracht werkt naar beneden, richting het middelpunt van de aarde. De normaalkracht is de steunkracht die loodrecht op het steunoppervlak staat. De wrijvingskracht werkt tegen de bewegingsrichting in. De spankracht is de kracht in een gespannen touw of kabel."
+        "bron": "Examenstijl",
+        "ctx": "Een bergbeklimmer van 72 kg hangt stil aan een touw tegen een rotswand. In zijn uitrusting zit een krachtmeter in het touw. Een week later doet hij dezelfde klim in een klimhal op de maan van een sciencefictionfilm, waar g = 1,62 N/kg is.",
+        "v": "Bereken de spankracht in het touw op aarde en op de maan, en leg uit wat er met zijn massa gebeurt.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Op aarde hangt hij stil: Fspan = Fz = 72 × 9,81 = 706 N (1p). Op de maan: Fspan = 72 × 1,62 = 117 N (1p). Zijn massa blijft 72 kg; alleen de zwaartekracht en dus de spankracht worden kleiner (1p)."
        },
        {
-        "vraag": "Leg uit wat de resulterende kracht is en wat er geldt als die nul is.",
-        "antwoord": "De resulterende kracht is de som van alle krachten op een voorwerp, opgeteld als vectoren met hun richting. Is de resulterende kracht nul, dan heffen de krachten elkaar op en is het voorwerp in evenwicht: het blijft in rust of beweegt met een constante snelheid."
+        "bron": "Examenstijl",
+        "ctx": "Een parachutist van 80 kg (met uitrusting) springt uit een vliegtuig. Na een tijdje valt hij met een constante snelheid van 55 m/s. Dan opent hij zijn parachute. Even later valt hij weer met een constante snelheid, nu van 5,0 m/s.",
+        "v": "Bereken de luchtweerstand bij 55 m/s en bij 5,0 m/s, en beschrijf de resulterende kracht vlak nadat de parachute opengaat.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Bij constante snelheid is Fres = 0, dus Fw = Fz = 80 × 9,81 = 785 N, bij 55 m/s (1p) én bij 5,0 m/s, want ook dan is de snelheid constant (1p). Vlak na het openen is de luchtweerstand veel groter dan 785 N, dus de resulterende kracht wijst omhoog en de parachutist remt af (1p)."
        },
        {
-        "vraag": "Een lamp hangt stil aan een touw. Leg uit welke krachten er werken en waarom de lamp niet beweegt.",
-        "antwoord": "Op de lamp werkt de zwaartekracht naar beneden en de spankracht van het touw naar boven. Omdat de lamp stilhangt, zijn deze twee krachten even groot en tegengesteld. De resulterende kracht is daardoor nul, dus is de lamp in evenwicht en beweegt hij niet."
+        "bron": "Examenstijl",
+        "ctx": "Een kunstwerk in een stationshal hangt aan twee verticale staalkabels. Het kunstwerk heeft een massa van 250 kg. Elke kabel mag volgens de fabrikant een spankracht van maximaal 2,0 kN dragen. Een ingenieur wil een tweede, even zwaar kunstwerk onder het eerste hangen, aan dezelfde twee kabels.",
+        "v": "Bereken de spankracht per kabel nu en met het tweede kunstwerk erbij, en leg uit of dat veilig is.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Nu: Fz = 250 × 9,81 = 2453 N; per kabel 2453 / 2 = 1,2 kN (1p). Met twee kunstwerken: 4905 / 2 = 2,5 kN per kabel (1p). Dat is meer dan 2,0 kN, dus niet veilig: de ingenieur moet sterkere of extra kabels gebruiken (1p)."
        }
       ]
      },

@@ -2437,20 +2437,24 @@ var VAKKEN = [
      },
      {
       "id": "C2",
+      "lo": "na.C.2",
+      "gs": 2,
       "naam": "Krachten herkennen",
-      "beschrijving": "De zwaartekracht, normaalkracht, wrijvingskracht en spankracht herkennen en tekenen, de resulterende kracht bepalen, en het verschil tussen gewicht (kracht) en massa.",
+      "beschrijving": "Je tekent een kracht als vector met grootte, richting en aangrijpingspunt, rekent de zwaartekracht uit met Fz = m · g, onderscheidt massa en gewicht, herkent normaalkracht, wrijvingskracht, spankracht en veerkracht (Fv = C · u) en bepaalt de resulterende kracht en wanneer er evenwicht is.",
       "ceStatus": "CE",
+      "binas": "35A",
+      "val": "",
       "onderwerpen": [
        "Kracht als vector (grootte, richting, aangrijpingspunt)",
        "Zwaartekracht: Fz = m maal g",
        "Verschil gewicht (kracht) en massa",
        "Normaalkracht en wrijvingskracht",
-       "Spankracht",
+       "Spankracht en veerkracht",
        "Resulterende kracht en evenwicht"
       ],
-      "nSv": 25,
+      "nSv": 29,
       "nOe": 5,
-      "nBeg": 12,
+      "nBeg": 11,
       "hasSam": true
      },
      {
