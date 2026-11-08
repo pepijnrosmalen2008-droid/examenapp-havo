@@ -88588,6 +88588,696 @@ var VAKKEN = [
         "u": "P: 900 / 6,0 = 150 s; S: 900 / 3,5 = 257 s (1p). Verschil: 1,1·10² s (1p). De aarde heeft een vloeibare buitenkern; een vloeistof geeft geen dwarsbeweging door, dus transversale S-golven komen er niet door (1p)."
        }
       ]
+     },
+     {
+      "id": "B3",
+      "lo": "na.B.3",
+      "gs": 2,
+      "naam": "Geluid: grondtoon, boventonen en resonantie",
+      "beschrijving": "Je koppelt toonhoogte aan frequentie en luidheid aan amplitude, legt uit hoe staande golven met knopen en buiken ontstaan, berekent grondtoon en boventonen van een snaar, een open en een gesloten pijp, en verklaart resonantie en klankkleur.",
+      "ceStatus": "CE",
+      "binas": "15",
+      "val": "",
+      "onderwerpen": [
+       "Toonhoogte, luidheid en gehoor",
+       "Staande golven: knopen en buiken",
+       "De snaar: grondtoon en boventonen",
+       "Luchtkolommen: open en gesloten pijp",
+       "Resonantie en eigenfrequentie",
+       "Klankkleur en muziekinstrumenten"
+      ],
+      "sam": "Toonhoogte hangt af van de frequentie, luidheid van de amplitude; een mens hoort 20 Hz tot 20 kHz. Een staande golf heeft knopen (stil) en buiken; knoop tot knoop = ½λ. Snaar en open pijp: grondtoon L = ½λ, boventonen 2f₁, 3f₁. Gesloten pijp: L = ¼λ, alleen 3f₁, 5f₁. Resonantie: aandrijven met de eigenfrequentie laat de amplitude groeien. Klankkleur ontstaat door het mengsel van boventonen.",
+      "begrippen": [
+       {
+        "t": "Staande golf",
+        "d": "Patroon dat ontstaat als een golf en zijn weerkaatsing optellen; knopen en buiken liggen vast."
+       },
+       {
+        "t": "Knoop",
+        "d": "Punt van een staande golf dat stilstaat; twee knopen liggen een halve golflengte uit elkaar."
+       },
+       {
+        "t": "Buik",
+        "d": "Punt van een staande golf met de grootste uitwijking, halverwege twee knopen."
+       },
+       {
+        "t": "Grondtoon",
+        "d": "Laagste toon van een snaar of luchtkolom; snaar en open pijp L = ½λ, gesloten pijp L = ¼λ."
+       },
+       {
+        "t": "Boventoon",
+        "d": "Hogere toon die mee klinkt met de grondtoon; bij een snaar 2f₁, 3f₁, bij een gesloten pijp 3f₁, 5f₁."
+       },
+       {
+        "t": "Eigenfrequentie",
+        "d": "Frequentie waarmee een voorwerp uit zichzelf trilt na een tik."
+       },
+       {
+        "t": "Resonantie",
+        "d": "Meetrillen met steeds grotere amplitude doordat een voorwerp met zijn eigenfrequentie wordt aangedreven."
+       },
+       {
+        "t": "Klankkleur",
+        "d": "Eigen geluid van een instrument door het mengsel van boventonen bij de grondtoon."
+       },
+       {
+        "t": "Klankkast",
+        "d": "Holle kast van een instrument die meeresoneert en het geluid luider maakt."
+       },
+       {
+        "t": "Octaaf",
+        "d": "Toonsprong waarbij de frequentie twee keer zo groot wordt."
+       },
+       {
+        "t": "Gehoorbereik",
+        "d": "Frequenties die een mens kan horen: ongeveer 20 Hz tot 20 kHz, met de leeftijd zakt de bovengrens."
+       }
+      ],
+      "sv": [
+       {
+        "v": "Welke eigenschap van een geluidsgolf bepaalt de toonhoogte?",
+        "o": [
+         "De geluidssnelheid",
+         "De amplitude",
+         "De frequentie",
+         "De afstand tot de bron"
+        ],
+        "c": 2,
+        "d": 1,
+        "s": 0,
+        "u": "Hoge frequentie = hoge toon; amplitude = luidheid.",
+        "uo": [
+         "Koos je de geluidssnelheid? Die is in lucht voor alle tonen gelijk, ongeveer 343 m/s. Daarom kan hij de toonhoogte niet bepalen.",
+         "Koos je de amplitude? Die bepaalt hoe hard je een geluid hoort, niet hoe hoog. Een harde lage toon blijft een lage toon.",
+         "Klopt: hoe vaker de luchtdeeltjes per seconde trillen, hoe hoger de toon die je hoort. Een fluittoon heeft een hoge frequentie, een bromtoon een lage.",
+         "Koos je de afstand? Verder weg klinkt een toon zachter, maar niet lager. De toonhoogte hangt alleen van de frequentie af."
+        ],
+        "uh": "Toonhoogte = frequentie."
+       },
+       {
+        "v": "Een gitarist slaat dezelfde snaar eerst zacht en dan hard aan. Wat verandert er aan de golf?",
+        "o": [
+         "De frequentie wordt groter",
+         "De amplitude wordt groter",
+         "De golflengte wordt groter",
+         "De geluidssnelheid wordt groter door de harde aanslag"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 0,
+        "u": "Harder = grotere amplitude, zelfde toon.",
+        "uo": [
+         "Koos je hogere frequentie? Dan zou de toon hoger klinken. Dezelfde snaar met dezelfde lengte en spanning geeft dezelfde toon, hard of zacht.",
+         "Klopt: bij een harde aanslag trilt de snaar met een grotere uitwijking, dus de amplitude van de geluidsgolf is groter. De toon blijft even hoog.",
+         "Koos je grotere golflengte? De golflengte hangt af van frequentie en snelheid, en die veranderen allebei niet. Alleen de amplitude groeit.",
+         "Koos je hogere geluidssnelheid? Die hangt af van de lucht, niet van hoe hard je speelt. Hard en zacht geluid gaan even snel."
+        ],
+        "uh": "Harder = grotere amplitude."
+       },
+       {
+        "v": "Waarom hoort de grootvader de toon van 16 kHz niet, terwijl zijn kleindochter hem wel hoort?",
+        "o": [
+         "Met de leeftijd neemt het gehoor voor hoge tonen af",
+         "De toon is te zacht voor volwassenen",
+         "Geluid van 16 kHz is ultrageluid",
+         "Hoge tonen gaan langzamer door de lucht dan lage tonen"
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 0,
+        "u": "Gehoorbereik jong 20 Hz-20 kHz; bovengrens zakt met de leeftijd.",
+        "uo": [
+         "Klopt: een jong gehoor hoort ongeveer van 20 Hz tot 20 kHz. Met de leeftijd gaan de haarcellen voor hoge tonen achteruit en zakt de bovengrens, vaak tot ruim onder 16 kHz.",
+         "Koos je te zacht? Ze staan even ver van de luidspreker en het geluid is voor allebei even hard. Het verschil zit in het oor, niet in het geluid.",
+         "Koos je ultrageluid? Ultrageluid begint pas boven 20 kHz. Een toon van 16 kHz is voor jonge mensen nog gewoon hoorbaar.",
+         "Koos je langzamer? In lucht gaan alle tonen even snel. En ook als dat niet zo was, zou de toon later aankomen, niet onhoorbaar zijn."
+        ],
+        "uh": "Ouder → bovengrens van het gehoor zakt.",
+        "ctx": "Een leerling laat op haar telefoon een toon van 16 kHz afspelen voor haar opa van 70. Zij hoort een hoge piep, maar haar opa hoort helemaal niets, ook niet als ze dichterbij komt. Haar moeder van 45 hoort de toon nog net."
+       },
+       {
+        "v": "Hoe heten de punten van een staande golf die niet bewegen?",
+        "o": [
+         "Dalen",
+         "Buiken",
+         "Toppen",
+         "Knopen"
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 1,
+        "u": "Knoop = stilstaand punt, buik = punt met grootste uitwijking.",
+        "uo": [
+         "Koos je dalen? Ook een dal is een moment in de beweging van een buik. De punten die altijd stilstaan heten knopen.",
+         "Koos je buiken? Daar trilt het touw juist het sterkst. Buiken en knopen wisselen elkaar af.",
+         "Koos je toppen? Bij een lopende golf schuiven toppen op. Bij een staande golf beweegt een buik op en neer, terwijl de knopen stilstaan.",
+         "Klopt: in een knoop heffen de heengaande en de teruggekaatste golf elkaar steeds op. Dat punt staat stil."
+        ],
+        "uh": "Knoop = stil."
+       },
+       {
+        "v": "Hoe groot is de afstand tussen twee naast elkaar liggende knopen van een staande golf?",
+        "o": [
+         "Een kwart golflengte",
+         "Een hele golflengte",
+         "Een halve golflengte",
+         "Precies twee golflengtes"
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 1,
+        "u": "Knoop - knoop = λ/2.",
+        "uo": [
+         "Koos je een kwart golflengte? Dat is de afstand van een knoop naar de buik ernaast. Tot de volgende knoop is het twee keer zo ver.",
+         "Koos je een hele golflengte? Dan sla je een knoop over. Binnen één golflengte liggen twee buiken en twee knopen.",
+         "Klopt: tussen twee knopen ligt precies één buik, en die afstand is een halve golflengte. Van knoop naar buik is een kwart golflengte.",
+         "Koos je twee golflengtes? Dat is veel te ver: daar passen vier buiken tussen. Naast elkaar liggende knopen liggen λ/2 uit elkaar."
+        ],
+        "uh": "Knoop-knoop = λ/2."
+       },
+       {
+        "v": "Hoe ontstaat een staande golf in een snaar die aan twee kanten vastzit?",
+        "o": [
+         "De snaar trilt alleen in het midden",
+         "Heengaande en teruggekaatste golf vallen samen",
+         "De golf blijft stilstaan omdat de snaar vast zit",
+         "De luchtdeeltjes rond de snaar duwen de golf terug"
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 1,
+        "u": "Weerkaatsing aan de uiteinden + interferentie.",
+        "uo": [
+         "Koos je alleen het midden? Bij de grondtoon trilt het midden het sterkst, maar de hele snaar doet mee. En bij boventonen trillen meerdere stukken.",
+         "Klopt: de golf weerkaatst steeds aan de vaste uiteinden. De heengaande en de teruggekaatste golf tellen op: op sommige plekken versterken ze elkaar (buiken), op andere doven ze uit (knopen).",
+         "Koos je stilstaan omdat de snaar vastzit? De vaste punten zorgen voor knopen aan de uiteinden, maar de snaar trilt wel. Stil is alleen het patroon.",
+         "Koos je luchtdeeltjes? De lucht neemt de trilling over, maar maakt de staande golf niet. Die ontstaat door weerkaatsing in de snaar zelf."
+        ],
+        "uh": "Staande golf = heen + terug.",
+        "ctx": "Een gitarist tokkelt een snaar. Op een film met hoge snelheid zie je dat de snaar aan de uiteinden stil blijft en in het midden het verst uitwijkt. Toch beweegt er geen bult naar links of rechts zoals bij een golf in een lang touw."
+       },
+       {
+        "v": "Hoe groot is de golflengte van de staande golf in het touw?",
+        "o": [
+         "1,2 m",
+         "2,4 m",
+         "0,60 m",
+         "4,8 m"
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 1,
+        "u": "Vier buiken: L = 4 · ½λ = 2λ → λ = 1,2 m.",
+        "uo": [
+         "Klopt: elke buik is een halve golflengte lang. Vier buiken passen in 2,4 m, dus ½λ = 0,60 m en λ = 1,2 m.",
+         "Koos je 2,4 m? Dat is de lengte van het hele touw. Daarop staan vier buiken, dus meerdere golflengtes.",
+         "Koos je 0,60 m? Dat is de lengte van één buik, een halve golflengte. Een hele golflengte bestaat uit twee buiken.",
+         "Koos je 4,8 m? Dan heb je de lengte verdubbeld alsof er één buik op stond. Bij vier buiken is de golflengte juist kleiner dan het touw."
+        ],
+        "uh": "Eén buik = ½λ.",
+        "ctx": "Een leerling spant een touw van 2,4 m tussen een trilmachine en een vaste haak. Bij een bepaalde frequentie ontstaat een stilstaand patroon met vier buiken; de knopen liggen even ver uit elkaar en aan beide uiteinden zit een knoop."
+       },
+       {
+        "v": "Welk verband geldt voor de grondtoon van een snaar met lengte L?",
+        "o": [
+         "L = 2λ",
+         "L = λ",
+         "L = ¼λ",
+         "L = ½λ"
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 2,
+        "u": "Grondtoon: knoop - buik - knoop.",
+        "uo": [
+         "Koos je L = 2λ? Dan zouden er vier buiken op de snaar staan. De grondtoon is het eenvoudigste patroon, met één buik.",
+         "Koos je L = λ? Dan passen er twee buiken op de snaar. Dat is de eerste boventoon, niet de grondtoon.",
+         "Koos je L = ¼λ? Dat hoort bij een pijp die aan één kant dicht is, met een knoop en een buik aan de uiteinden. Een snaar heeft aan beide kanten een knoop.",
+         "Klopt: bij de grondtoon zitten er knopen aan beide uiteinden en één buik in het midden. Dat is een halve golflengte, dus L = ½λ."
+        ],
+        "uh": "Snaar grondtoon: L = λ/2."
+       },
+       {
+        "v": "Een snaar heeft een grondtoon van 110 Hz. Welke frequentie heeft de eerste boventoon?",
+        "o": [
+         "330 Hz",
+         "165 Hz",
+         "220 Hz",
+         "55 Hz"
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 2,
+        "u": "Snaar: f_n = n · f₁.",
+        "uo": [
+         "Koos je 330 Hz? Dat is 3 × 110, de tweede boventoon. De eerste boventoon is de eerstvolgende: 2 × f₁.",
+         "Koos je 165 Hz? Dat is 1,5 keer de grondtoon. Boventonen van een snaar zijn hele veelvouden: 2, 3, 4 keer de grondtoon.",
+         "Klopt: bij een snaar zijn de boventonen veelvouden van de grondtoon. De eerste boventoon (twee buiken) is 2 × 110 = 220 Hz.",
+         "Koos je 55 Hz? Boventonen zijn hoger dan de grondtoon, niet lager. De grondtoon is de laagste toon die de snaar kan maken."
+        ],
+        "uh": "Eerste boventoon snaar = 2f₁."
+       },
+       {
+        "v": "Hoe groot is de golfsnelheid in deze gitaarsnaar?",
+        "o": [
+         "71,3 m/s",
+         "143 m/s",
+         "170 m/s",
+         "343 m/s"
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 2,
+        "u": "λ = 2L = 1,30 m; v = f · λ = 110 × 1,30.",
+        "uo": [
+         "Koos je 71 m/s? Dan heb je λ = L genomen. Bij de grondtoon past maar een halve golflengte op de snaar, dus λ = 2L.",
+         "Klopt: bij de grondtoon is λ = 2L = 2 × 0,648 = 1,30 m. Dan is v = f · λ = 110 × 1,30 = 143 m/s.",
+         "Koos je 170 m/s? Dan heb je de golflengte geschat in plaats van uitgerekend. Reken eerst λ = 2L uit en gebruik dan v = f · λ.",
+         "Koos je 343 m/s? Dat is de geluidssnelheid in lucht. De golf in de snaar zelf heeft een andere snelheid, die afhangt van spanning en dikte."
+        ],
+        "uh": "Snaar: λ = 2L, dan v = f·λ.",
+        "ctx": "De A-snaar van een gitaar is tussen de kam en de brug 64,8 cm lang. Als je de snaar aanslaat zonder hem in te drukken, klinkt de grondtoon van 110 Hz. Een leerling wil weten hoe snel de golf door de snaar zelf loopt."
+       },
+       {
+        "v": "De gitarist drukt de snaar precies halverwege in. Wat gebeurt er met de toon?",
+        "o": [
+         "De frequentie verdubbelt",
+         "De frequentie halveert",
+         "De toon blijft gelijk, maar klinkt zachter",
+         "De toon wordt vier keer zo hoog"
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 2,
+        "u": "Halve L → halve λ → dubbele f (zelfde v).",
+        "uo": [
+         "Klopt: de trillende snaar is half zo lang, dus de golflengte van de grondtoon halveert. De golfsnelheid in de snaar blijft gelijk, dus de frequentie verdubbelt: een octaaf hoger.",
+         "Koos je halveren? Een kortere snaar trilt juist sneller. Daarom zitten de hoge tonen dichter bij de klankkast.",
+         "Koos je gelijk en zachter? Het trillende stuk is korter, dus de grondtoon verandert wel. Een octaaf hoger is goed te horen.",
+         "Koos je vier keer zo hoog? Frequentie en lengte zijn omgekeerd evenredig, zonder kwadraat. Half zo lang geeft twee keer zo hoog."
+        ],
+        "uh": "Halve snaar = octaaf hoger.",
+        "ctx": "Een gitarist laat eerst de lege A-snaar klinken (110 Hz). Daarna drukt hij de snaar precies halverwege tegen de hals, bij het twaalfde fret, en slaat hem opnieuw aan. Spanning en dikte van de snaar veranderen daarbij niet."
+       },
+       {
+        "v": "Hoeveel buiken zie je op een snaar die in de tweede boventoon trilt?",
+        "o": [
+         "1",
+         "2",
+         "4",
+         "3"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 2,
+        "u": "Grondtoon 1 buik, 1e boventoon 2, 2e boventoon 3.",
+        "uo": [
+         "Koos je 1? Eén buik is de grondtoon. Een boventoon heeft altijd meer dan één buik.",
+         "Koos je 2? Dat is de eerste boventoon. De telling van boventonen begint na de grondtoon, dus de tweede boventoon heeft er één meer.",
+         "Koos je 4? Dat hoort bij de derde boventoon. Tel de grondtoon mee als eerste patroon: 1, 2, 3 buiken.",
+         "Klopt: de grondtoon heeft één buik, de eerste boventoon twee en de tweede boventoon drie. Dan is L = 3 · ½λ."
+        ],
+        "uh": "n-de boventoon snaar: n+1 buiken."
+       },
+       {
+        "v": "Een gitarist draait de stemknop aan zodat de snaar strakker komt te staan. Wat gebeurt er?",
+        "o": [
+         "v blijft gelijk, alleen de amplitude van de snaar groeit",
+         "λ wordt kleiner, dus f wordt kleiner",
+         "v in de snaar wordt groter, dus f wordt groter",
+         "De snaar wordt korter, daardoor stijgt de toon"
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 2,
+        "u": "Meer spanning → hogere v; λ = 2L blijft → hogere f.",
+        "uo": [
+         "Koos je v gelijk? De golfsnelheid in een snaar hangt juist af van de spanning. Daarom kun je een gitaar stemmen door aan de knoppen te draaien.",
+         "Koos je λ kleiner? De golflengte van de grondtoon ligt vast door de lengte van de snaar. Die verandert niet door aan te draaien.",
+         "Klopt: een strakkere snaar geeft de trilling sneller door, dus v wordt groter. De lengte blijft gelijk, dus λ = 2L ook. Met f = v / λ stijgt de frequentie.",
+         "Koos je korter? Het trillende stuk tussen kam en brug blijft even lang. De toon stijgt omdat de golf sneller loopt."
+        ],
+        "uh": "Strakker = sneller = hoger."
+       },
+       {
+        "v": "Wat zit er aan een open uiteinde van een luchtkolom?",
+        "o": [
+         "Een knoop",
+         "Een buik",
+         "Afwisselend een knoop en een buik",
+         "Geen van beide"
+        ],
+        "c": 1,
+        "d": 1,
+        "s": 3,
+        "u": "Open eind: lucht kan vrij bewegen → buik. Dicht eind: knoop.",
+        "uo": [
+         "Koos je een knoop? Die zit bij een gesloten uiteinde, waar de lucht tegen de wand stopt. Bij een open uiteinde beweegt de lucht juist het meest.",
+         "Klopt: bij een open uiteinde kunnen de luchtdeeltjes vrij heen en weer bewegen, dus daar zit een buik. Bij een gesloten uiteinde kunnen ze dat niet en zit een knoop.",
+         "Koos je afwisselend? Het patroon is een staande golf, dus de plaats van knopen en buiken ligt vast. Aan een open eind zit altijd een buik.",
+         "Koos je geen van beide? Elk uiteinde van een luchtkolom bepaalt het patroon. Open geeft een buik, dicht geeft een knoop."
+        ],
+        "uh": "Open = buik, dicht = knoop."
+       },
+       {
+        "v": "Een buis is aan beide kanten open en 0,50 m lang. Welke grondtoon heeft de buis? (v = 343 m/s)",
+        "o": [
+         "343 Hz",
+         "172 Hz",
+         "686 Hz",
+         "0,50 Hz"
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 3,
+        "u": "Open-open: L = ½λ → λ = 1,00 m.",
+        "uo": [
+         "Klopt: aan beide kanten zit een buik, met één knoop in het midden: L = ½λ, dus λ = 1,00 m. f = v / λ = 343 / 1,00 = 343 Hz.",
+         "Koos je 172 Hz? Dat geldt voor een buis die aan één kant dicht is, met L = ¼λ. Bij twee open uiteinden is L = ½λ.",
+         "Koos je 686 Hz? Dan heb je λ = 0,50 m genomen. Bij de grondtoon past maar een halve golflengte in de buis.",
+         "Koos je 0,50 Hz? Dat is de lengte van de buis, geen frequentie. Reken eerst λ uit en gebruik dan f = v / λ."
+        ],
+        "uh": "Open-open: λ = 2L."
+       },
+       {
+        "v": "Wat is de grondtoon van deze luchtkolom in de fles?",
+        "o": [
+         "1715 Hz",
+         "858 Hz",
+         "214 Hz",
+         "429 Hz"
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 3,
+        "u": "Open-dicht: L = ¼λ → λ = 0,80 m.",
+        "uo": [
+         "Koos je 1715 Hz? Dan heb je λ gelijk gesteld aan L. Bij de grondtoon past maar een kwart golflengte in de luchtkolom.",
+         "Koos je 858 Hz? Dan heb je gerekend alsof de fles aan beide kanten open is, met λ = 2L. De bodem is dicht, dus λ = 4L.",
+         "Koos je 214 Hz? Dan heb je λ = 8L gebruikt. Bij een aan één kant gesloten buis past bij de grondtoon een kwart golflengte.",
+         "Klopt: de fles is aan één kant dicht (de bodem of het water). Dan is L = ¼λ, dus λ = 4 × 0,20 = 0,80 m en f = 343 / 0,80 = 429 Hz."
+        ],
+        "uh": "Open-dicht: λ = 4L.",
+        "ctx": "Een leerling blaast over de hals van een fles en hoort een toon. Hij giet er water in tot de luchtkolom boven het water 20 cm hoog is. Het wateroppervlak gedraagt zich als een dicht uiteinde. De geluidssnelheid is 343 m/s."
+       },
+       {
+        "v": "Een gesloten buis heeft een grondtoon van 150 Hz. Welke frequentie heeft de eerste boventoon?",
+        "o": [
+         "225 Hz",
+         "300 Hz",
+         "450 Hz",
+         "600 Hz"
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 3,
+        "u": "Open-dicht: alleen oneven veelvouden 1 : 3 : 5.",
+        "uo": [
+         "Koos je 225 Hz? Dat is 1,5 keer de grondtoon. Boventonen zijn altijd hele veelvouden, bij een gesloten buis alleen de oneven.",
+         "Koos je 300 Hz? Dat geldt voor een snaar of een open buis, waar alle veelvouden voorkomen. Bij een gesloten buis valt 2 × f₁ weg.",
+         "Klopt: bij een buis met één dicht uiteinde passen alleen ¼λ, ¾λ, 5/4λ in de buis. De boventonen zijn oneven veelvouden van de grondtoon: 3 × 150 = 450 Hz.",
+         "Koos je 600 Hz? Dat is 4 × f₁, een even veelvoud, en dat past niet in een buis met één dicht uiteinde."
+        ],
+        "uh": "Gesloten buis: f₁, 3f₁, 5f₁."
+       },
+       {
+        "v": "De leerling giet nog wat water in de fles. Wat gebeurt er met de toon als hij opnieuw blaast?",
+        "o": [
+         "Die wordt lager",
+         "Die wordt hoger",
+         "Die blijft gelijk",
+         "Die verdwijnt helemaal omdat er te weinig lucht is"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 3,
+        "u": "Kortere luchtkolom → kleinere λ → hogere f.",
+        "uo": [
+         "Koos je lager? Dat gebeurt als je water uit de fles laat lopen: dan wordt de luchtkolom langer. Meer water betekent een korter stuk lucht.",
+         "Klopt: met meer water wordt de luchtkolom korter. De golflengte λ = 4L wordt kleiner, en bij dezelfde geluidssnelheid hoort daar een hogere frequentie bij.",
+         "Koos je gelijk? De toon hangt af van de lengte van de luchtkolom, en die verandert. Daarom kun je met flessen en water een toonladder maken.",
+         "Koos je verdwijnen? Ook een korte luchtkolom kan resoneren. De toon wordt alleen hoger, en pas bij een heel korte kolom moeilijk te horen."
+        ],
+        "uh": "Meer water = korter = hoger."
+       },
+       {
+        "v": "Hoe lang moet deze open orgelpijp zijn?",
+        "o": [
+         "2,64 m",
+         "5,28 m",
+         "1,32 m",
+         "0,19 m"
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 3,
+        "u": "Open-open: λ = v/f = 5,28 m; L = ½λ.",
+        "uo": [
+         "Klopt: λ = 343 / 65 = 5,28 m. Bij een pijp die aan beide kanten open is, past bij de grondtoon een halve golflengte, dus L = 2,64 m.",
+         "Koos je 5,28 m? Dat is de hele golflengte. In een open pijp past bij de grondtoon maar een halve golflengte.",
+         "Koos je 1,32 m? Dat is een kwart golflengte en hoort bij een pijp die aan één kant dicht is. Deze pijp is aan beide kanten open.",
+         "Koos je 0,19 m? Dan heb je f door v gedeeld. De golflengte is v / f: 343 / 65."
+        ],
+        "uh": "Open pijp: L = λ/2.",
+        "ctx": "Een orgelbouwer maakt een nieuwe pijp voor een kerkorgel. De pijp is aan beide kanten open en moet een lage grondtoon van 65 Hz geven. In de kerk is het 20 °C, de geluidssnelheid is 343 m/s."
+       },
+       {
+        "v": "Wanneer treedt resonantie op?",
+        "o": [
+         "Als geluid tegen een muur weerkaatst",
+         "Als een voorwerp heel hard wordt aangeslagen",
+         "Als twee geluidsgolven elkaar uitdoven",
+         "Als je aandrijft met de eigenfrequentie"
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 4,
+        "u": "Aandrijven met de eigenfrequentie → amplitude groeit.",
+        "uo": [
+         "Koos je weerkaatsing? Dat is een echo. Resonantie ontstaat als een trilling in hetzelfde ritme wordt aangedreven als de eigenfrequentie.",
+         "Koos je hard aanslaan? Dan trilt het voorwerp met een grote amplitude, maar dat is gewoon een harde klap. Resonantie gaat over het ritme van de aandrijving.",
+         "Koos je uitdoven? Dat is destructieve interferentie, iets heel anders. Bij resonantie wordt de trilling juist sterker.",
+         "Klopt: elk voorwerp heeft een eigenfrequentie waarmee het het liefst trilt. Duw je in precies dat ritme, dan komt er bij elke trilling energie bij en wordt de amplitude steeds groter."
+        ],
+        "uh": "Resonantie: aandrijven met f_eigen."
+       },
+       {
+        "v": "Waarom moet je een kind op een schommel steeds op het juiste moment duwen om het hoger te krijgen?",
+        "o": [
+         "Dan wordt de trillingstijd korter",
+         "Dan verander je de lengte van de schommel",
+         "Dan duw je met de eigenfrequentie mee",
+         "Dan heeft het kind minder wrijving van de lucht"
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 4,
+        "u": "Duwen in het ritme van de schommel = resonantie.",
+        "uo": [
+         "Koos je kortere trillingstijd? De trillingstijd van een schommel hangt van de lengte af, niet van het duwen. Alleen de amplitude wordt groter.",
+         "Koos je de lengte veranderen? De touwen blijven even lang, dus de eigenfrequentie blijft gelijk. Je past alleen je duwen aan dat ritme aan.",
+         "Klopt: een schommel heeft een eigen trillingstijd. Duw je telkens in de uiterste stand, in hetzelfde ritme, dan voeg je bij elke zwaai energie toe en groeit de amplitude.",
+         "Koos je minder wrijving? De luchtweerstand verandert niet door je timing. Duw je op het verkeerde moment, dan rem je de schommel zelfs af."
+        ],
+        "uh": "Schommel duwen = resonantie."
+       },
+       {
+        "v": "Een zanger zingt een glas kapot. Welke uitleg klopt?",
+        "o": [
+         "Zijn stem is zo hard dat het glas door de drukgolf breekt",
+         "Hij raakt de eigenfrequentie van het glas",
+         "Hij zingt een hogere toon dan het glas aankan",
+         "Het geluid verwarmt het glas tot het barst"
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 4,
+        "u": "Resonantie: amplitude groeit tot het glas breekt.",
+        "uo": [
+         "Koos je zo hard? Ook een harde toon die net iets naast de eigenfrequentie ligt, breekt het glas niet. De toon moet precies goed zijn.",
+         "Klopt: een wijnglas heeft een eigenfrequentie, die je hoort als je ertegen tikt. Zingt iemand precies die toon, dan gaat het glas meetrillen met een steeds grotere amplitude, tot het breekt.",
+         "Koos je een te hoge toon? Een toon hoger of lager dan de eigenfrequentie doet weinig. Het gaat om precies dezelfde frequentie.",
+         "Koos je verwarmen? Geluid brengt maar heel weinig warmte over. Het glas breekt door de mechanische trilling die steeds groter wordt."
+        ],
+        "uh": "Glas zingen = resonantie.",
+        "ctx": "In een televisieprogramma tikt een zanger tegen een kristallen wijnglas en luistert naar de toon. Daarna zingt hij precies die toon, hard en lang, vlak voor het glas. Op een film met hoge snelheid zie je de rand van het glas steeds verder heen en weer buigen, tot het glas breekt."
+       },
+       {
+        "v": "Waarom moeten soldaten op een brug uit de pas lopen?",
+        "o": [
+         "Hun pas kan de eigenfrequentie van de brug raken",
+         "Samen marcheren is te zwaar voor de brug",
+         "Uit de pas lopen ze sneller over de brug",
+         "Het geluid van het marcheren kan de brug beschadigen"
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 4,
+        "u": "Ritmisch stappen kan de brug in resonantie brengen.",
+        "uo": [
+         "Klopt: als het tempo van de stappen gelijk is aan de eigenfrequentie van de brug, krijgt de brug bij elke stap een duwtje in hetzelfde ritme. De trilling groeit dan door resonantie.",
+         "Koos je te zwaar? Het gewicht van de soldaten is gelijk, of ze nu in de pas lopen of niet. Het gevaar zit in het ritme, niet in de massa.",
+         "Koos je sneller? Uit de pas lopen ze ongeveer even snel. Het doel is dat de stappen geen vast ritme meer hebben.",
+         "Koos je het geluid? Het gaat niet om de geluidsgolven, maar om de stappen zelf die de brug in een vast ritme aanduwen."
+        ],
+        "uh": "In de pas = mogelijk resonantie.",
+        "ctx": "In 1831 stortte in Engeland een hangbrug in toen er een groep soldaten in de pas overheen marcheerde. Sindsdien krijgen militairen het bevel om op bruggen uit de pas te lopen. Ook de Millennium Bridge in Londen begon in 2000 te zwaaien toen veel voetgangers tegelijk overstaken."
+       },
+       {
+        "v": "Waarom heeft een gitaar een holle klankkast?",
+        "o": [
+         "De klankkast houdt de snaren op spanning",
+         "De klankkast maakt de toon hoger",
+         "Een holle kast is lichter, dus de snaar trilt sneller",
+         "Hout en lucht resoneren mee: meer geluid"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 4,
+        "u": "Meeresoneren: een grotere oppervlakte zet de lucht in beweging.",
+        "uo": [
+         "Koos je spanning houden? Dat doen de stemknoppen en de brug. De holte in de kast is er om het geluid te versterken door meeresoneren.",
+         "Koos je hoger? De toonhoogte wordt bepaald door de snaar: lengte, spanning en dikte. De klankkast maakt het geluid luider en geeft het zijn klankkleur.",
+         "Koos je lichter? Het gewicht van de kast verandert de trilling van de snaar niet. De frequentie blijft gelijk, alleen het volume groeit.",
+         "Klopt: een snaar alleen zet maar weinig lucht in beweging. De trilling gaat via de brug naar het hout en de lucht in de kast, die meeresoneren. Zo wordt het geluid veel luider."
+        ],
+        "uh": "Klankkast = meeresoneren = luider."
+       },
+       {
+        "v": "Waardoor klinkt dezelfde toon op een fluit anders dan op een viool?",
+        "o": [
+         "Door een andere geluidssnelheid",
+         "Door een andere grondtoon",
+         "Door verschillende boventonen",
+         "Door een andere amplitude"
+        ],
+        "c": 2,
+        "d": 1,
+        "s": 5,
+        "u": "Klankkleur = mengsel van boventonen.",
+        "uo": [
+         "Koos je geluidssnelheid? Het geluid van beide instrumenten gaat met 343 m/s door dezelfde lucht. Daar zit het verschil niet.",
+         "Koos je een andere grondtoon? Dan zou het een andere toon zijn. Bij dezelfde toon is de grondtoon gelijk; de boventonen verschillen.",
+         "Klopt: beide instrumenten spelen dezelfde grondtoon, maar ze geven een ander mengsel van boventonen mee. Dat mengsel noemen we de klankkleur.",
+         "Koos je amplitude? Die bepaalt hoe hard het klinkt. Een zachte viool blijft als een viool klinken door zijn boventonen."
+        ],
+        "uh": "Klankkleur = boventonen."
+       },
+       {
+        "v": "Beide (p,t)-diagrammen hebben dezelfde trillingstijd, maar een andere vorm. Wat klopt?",
+        "o": [
+         "Andere toonhoogte, zelfde klankkleur",
+         "Zelfde toonhoogte, andere klankkleur",
+         "De grillige toon is harder",
+         "De grillige toon heeft een lagere grondtoon"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 5,
+        "u": "Zelfde T = zelfde grondtoon; vorm = boventonen.",
+        "uo": [
+         "Koos je andere toonhoogte? De toonhoogte hangt af van de trillingstijd van het patroon, en die is gelijk. Alleen de vorm verschilt.",
+         "Klopt: dezelfde trillingstijd betekent dezelfde grondfrequentie, dus dezelfde toonhoogte. De grillige vorm ontstaat doordat er boventonen bij komen: een andere klankkleur.",
+         "Koos je harder? Hoe hard een toon is, hangt af van de amplitude. Een grillige vorm zegt iets over de boventonen, niet over de luidheid.",
+         "Koos je lagere grondtoon? De grondtoon volgt uit de tijd waarna het patroon zich herhaalt. Die is in beide diagrammen gelijk."
+        ],
+        "uh": "Zelfde T, andere vorm = andere klankkleur.",
+        "ctx": "Een leerling neemt met een microfoon en een computer de toon van een stemvork en van een trompet op, allebei 440 Hz. Op het scherm herhaalt het patroon zich bij beide na 2,27 ms. Bij de stemvork is het een gladde sinus, bij de trompet een grillige vorm met kleine pieken."
+       },
+       {
+        "v": "Een panfluit heeft buisjes die aan de onderkant dicht zijn. Welk buisje geeft de laagste toon?",
+        "o": [
+         "Het langste buisje",
+         "Het kortste buisje",
+         "Het dikste buisje",
+         "Alle buisjes geven dezelfde toon"
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 5,
+        "u": "Langere luchtkolom → grotere λ → lagere f.",
+        "uo": [
+         "Klopt: elk buisje is een gesloten pijp met λ = 4L. Hoe langer het buisje, hoe groter de golflengte en hoe lager de frequentie.",
+         "Koos je het kortste? Een korte luchtkolom heeft een kleine golflengte en dus een hoge toon. De lage tonen zitten aan de lange kant.",
+         "Koos je het dikste? Bij deze buisjes bepaalt vooral de lengte de toon. De doorsnede verandert de toonhoogte maar heel weinig.",
+         "Koos je allemaal gelijk? Dan zou je er geen melodie op kunnen spelen. Elk buisje heeft een andere lengte en daarmee een andere grondtoon."
+        ],
+        "uh": "Lang buisje = lage toon.",
+        "ctx": "Een panfluit bestaat uit een rij bamboebuisjes die aan de onderkant dicht zijn. Het langste buisje is 25 cm, het kortste 6 cm. De speler blaast over de bovenkant van een buisje, net als over een fles."
+       },
+       {
+        "v": "De A van een orkest is 440 Hz. Welke frequentie heeft de A een octaaf hoger?",
+        "o": [
+         "220 Hz",
+         "660 Hz",
+         "1320 Hz",
+         "880 Hz"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 5,
+        "u": "Octaaf hoger = frequentie × 2.",
+        "uo": [
+         "Koos je 220 Hz? Dat is de A een octaaf lager. Lager betekent halveren, hoger betekent verdubbelen.",
+         "Koos je 660 Hz? Dat is 1,5 keer 440 Hz, een kwint hoger. Een octaaf is een verdubbeling van de frequentie.",
+         "Koos je 1320 Hz? Dat is drie keer 440 Hz: een octaaf plus een kwint. Voor één octaaf vermenigvuldig je met twee.",
+         "Klopt: een toon die een octaaf hoger klinkt, heeft precies twee keer zo grote frequentie: 2 × 440 = 880 Hz. Daarom klinken die tonen zo goed samen."
+        ],
+        "uh": "Octaaf = × 2."
+       }
+      ],
+      "oe": [
+       {
+        "bron": "Examenstijl",
+        "ctx": "De hoogste snaar van een viool is 32,5 cm lang en geeft als grondtoon de E van 659 Hz. Een violist laat de snaar ook flageolet klinken: hij raakt de snaar heel licht aan op een derde van de lengte, zodat daar een knoop ontstaat terwijl de hele snaar blijft trillen.",
+        "v": "Bereken de golfsnelheid in de snaar en bereken de frequentie van de flageolettoon.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Grondtoon: λ = 2L = 0,650 m (1p); v = f · λ = 659 × 0,650 = 428 m/s (1p). Een knoop op een derde van de lengte geeft drie buiken: de tweede boventoon, f = 3 × 659 = 1,98·10³ Hz (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een klarinet gedraagt zich als een buis die aan de kant van het mondstuk dicht is en aan de andere kant open. De luchtkolom van een klarinet is ongeveer 60 cm lang. Een dwarsfluit van dezelfde lengte is aan beide kanten open. De geluidssnelheid is 343 m/s.",
+        "v": "Bereken de grondtoon van de klarinet en van de dwarsfluit, en leg uit waarom de klarinet alleen oneven boventonen heeft.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Klarinet: L = ¼λ → λ = 2,40 m, f₁ = 343 / 2,40 = 143 Hz (1p). Fluit: L = ½λ → λ = 1,20 m, f₁ = 286 Hz (1p). Met een knoop aan het dichte en een buik aan het open uiteinde passen alleen ¼λ, ¾λ, 5/4λ in de buis, dus alleen 3f₁, 5f₁ (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een leerling houdt een trillende stemvork van 512 Hz boven een maatcilinder die hij langzaam met water vult. Bij een luchtkolom van 16,5 cm boven het water klinkt de toon ineens veel harder. Hij noemt dit resonantie.",
+        "v": "Leg uit waarom de toon bij 16,5 cm harder klinkt en bereken met deze meting de geluidssnelheid.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Bij deze lengte is de eigenfrequentie van de luchtkolom gelijk aan 512 Hz, zodat de lucht meeresoneert (1p). Gesloten pijp: L = ¼λ → λ = 0,660 m (1p). v = f · λ = 512 × 0,660 = 338 m/s (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "In een fabriek staat een machine die draait met 1500 omwentelingen per minuut. Een metalen afdekplaat op de machine rammelt hard bij dat toerental. Een monteur meet dat de eigenfrequentie van de plaat 25 Hz is.",
+        "v": "Laat met een berekening zien dat hier resonantie optreedt en geef twee manieren om het rammelen te verhelpen.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "1500 / 60 = 25 Hz, gelijk aan de eigenfrequentie van de plaat (1p). Bijvoorbeeld: de plaat stijver of zwaarder maken zodat de eigenfrequentie verandert, of de plaat dempen met rubber (2p, 1p per manier)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een gitarist stemt zijn lage E-snaar (grondtoon 82,4 Hz). De snaar staat iets te laag gestemd. Hij vergelijkt met een stemapparaat dat 80,0 Hz aangeeft. Zijn vriend zegt: \"Draai de snaar losser, dan wordt hij langer en klinkt hij hoger.\"",
+        "v": "Leg uit wat de gitarist moet doen om de snaar op 82,4 Hz te krijgen en beoordeel de uitspraak van de vriend.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "De snaar moet strakker: dan wordt de golfsnelheid in de snaar groter (1p); λ = 2L blijft gelijk, dus f = v / λ stijgt (1p). De vriend heeft ongelijk: de trillende lengte tussen kam en brug verandert niet, en losser draaien verlaagt juist de toon (1p)."
+       }
+      ]
      }
     ]
    },

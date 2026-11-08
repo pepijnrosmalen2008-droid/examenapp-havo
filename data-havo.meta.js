@@ -2192,6 +2192,28 @@ var VAKKEN = [
       "nOe": 5,
       "nBeg": 11,
       "hasSam": true
+     },
+     {
+      "id": "B3",
+      "lo": "na.B.3",
+      "gs": 2,
+      "naam": "Geluid: grondtoon, boventonen en resonantie",
+      "beschrijving": "Je koppelt toonhoogte aan frequentie en luidheid aan amplitude, legt uit hoe staande golven met knopen en buiken ontstaan, berekent grondtoon en boventonen van een snaar, een open en een gesloten pijp, en verklaart resonantie en klankkleur.",
+      "ceStatus": "CE",
+      "binas": "15",
+      "val": "",
+      "onderwerpen": [
+       "Toonhoogte, luidheid en gehoor",
+       "Staande golven: knopen en buiken",
+       "De snaar: grondtoon en boventonen",
+       "Luchtkolommen: open en gesloten pijp",
+       "Resonantie en eigenfrequentie",
+       "Klankkleur en muziekinstrumenten"
+      ],
+      "nSv": 28,
+      "nOe": 5,
+      "nBeg": 11,
+      "hasSam": true
      }
     ]
    },
