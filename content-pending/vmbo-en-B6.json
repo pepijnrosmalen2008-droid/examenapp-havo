@@ -1,0 +1,682 @@
+{
+ "id": "B6",
+ "lo": "en.B.6",
+ "gs": 2,
+ "naam": "Aantekeningen maken bij het luisteren",
+ "beschrijving": "Je leert bij een Engelse gesproken tekst bruikbare aantekeningen te maken: je noteert kernwoorden, tijden, getallen en hoeveelheden met afkortingen, nummert stappen in een volgorde en vult je notities bij de tweede keer luisteren aan.",
+ "ceStatus": "CE",
+ "binas": "",
+ "val": "",
+ "onderwerpen": [
+  "Wat noteer je?",
+  "Afkortingen en symbolen",
+  "Volgorde en stappen",
+  "Cijfers en eenheden",
+  "Aantekeningen gebruiken"
+ ],
+ "sam": "Bij het luisteren noteer je kernwoorden: tijd, plaats, aantal en prijs. Gebruik afkortingen zoals km, g en l en schrijf getallen als cijfers. Let op half past eight is 8.30. Nummer stappen met first, then en finally. Vul je aantekeningen aan bij de tweede keer luisteren en controleer je getallen. Een symbool zoals een pijl, een hoeveelheid als 200 g, een deadline als before 1 March, een tijdstip en spaties tussen onderdelen houden je aantekeningen leesbaar. Nummeren van stappen en invullen van gaten bij de tweede keer horen er ook bij.",
+ "begrippen": [
+  {
+   "t": "Aantekening",
+   "d": "Een korte notitie tijdens het luisteren."
+  },
+  {
+   "t": "Kernwoord",
+   "d": "Een woord met de belangrijkste informatie, zoals een tijd of een aantal."
+  },
+  {
+   "t": "Afkorting",
+   "d": "Een korte schrijfwijze, zoals km, g of l."
+  },
+  {
+   "t": "Symbool",
+   "d": "Een teken zoals een pijl, nummer of streepje."
+  },
+  {
+   "t": "Volgorde",
+   "d": "De stappen in de juiste reeks, bijvoorbeeld bij een recept."
+  },
+  {
+   "t": "Nummeren",
+   "d": "Cijfers bij stappen zetten om de volgorde te laten zien."
+  },
+  {
+   "t": "Tijdstip",
+   "d": "Een uur, zoals half past eight is 8.30."
+  },
+  {
+   "t": "Hoeveelheid",
+   "d": "Een aantal of maat, zoals 200 g of 0.5 l."
+  },
+  {
+   "t": "Deadline",
+   "d": "De uiterste datum, bijvoorbeeld before 1 March."
+  },
+  {
+   "t": "Invullen",
+   "d": "Bij de tweede keer luisteren een gat in je notities aanvullen."
+  },
+  {
+   "t": "Spaties",
+   "d": "Ruimte laten tussen onderdelen zodat je aantekeningen leesbaar blijven."
+  },
+  {
+   "t": "Controleren",
+   "d": "Je aantekeningen met de tekst vergelijken."
+  }
+ ],
+ "sv": [
+  {
+   "v": "Je hoort een lange tekst met veel details. Wat schrijf je op?",
+   "o": [
+    "\"elk woord letterlijk\"",
+    "\"alleen de kernwoorden, zoals tijd, plaats en aantal\"",
+    "\"alleen de eerste zin\"",
+    "\"niets, je onthoudt het toch, I think, I suppose, really\""
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 0,
+   "u": "Noteer alleen de kern. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"elk woord letterlijk\"\"? Dan denk je dat alles opschrijven veilig is. Je loopt dan achter, en mist de volgende informatie.",
+    "Klopt: kernwoorden zijn kort en bevatten precies wat de vraag nodig heeft.",
+    "Koos je \"\"alleen de eerste zin\"\"? Dan denk je dat de eerste zin genoeg is. De gegevens komen vaak later, en je mist ze.",
+    "Koos je \"\"niets, je onthoudt het toch, I think, I suppose, really\"\"? Dan denk je dat je geheugen genoeg is. Cijfers en tijden vergeet je snel, dus aantekeningen zijn nodig."
+   ],
+   "uh": "Je hoort een lange tekst met veel details. Wat schrijf je op?"
+  },
+  {
+   "v": "Je hoort 'half past eight'. Hoe noteer je dat kort?",
+   "o": [
+    "\"7.30\"",
+    "\"8.15\"",
+    "\"8.50\"",
+    "\"8.30\""
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 3,
+   "u": "Noteer alleen de kern. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"7.30\"\"? Dan verwar je het met het Nederlandse half acht. In het Engels is half past eight 8.30, dus 7.30 is fout.",
+    "Koos je \"\"8.15\"\"? Dan denk je dat dit half past is. Dat is a quarter past, en een kwartier is 15 minuten.",
+    "Koos je \"\"8.50\"\"? Dan denk je dat half past veel later is. Het gaat om dertig minuten, en niet om vijftig.",
+    "Klopt: half past betekent dertig minuten na het uur, dus 8.30."
+   ],
+   "uh": "Je hoort 'half past eight'. Hoe noteer je dat kort?"
+  },
+  {
+   "v": "Welke afkorting gebruik je in je aantekeningen voor 'kilometre'?",
+   "o": [
+    "\"km\"",
+    "\"kg\"",
+    "\"kl\"",
+    "\"m\""
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 1,
+   "u": "Noteer alleen de kern. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: km is de standaard afkorting voor kilometer.",
+    "Koos je \"\"kg\"\"? Dan denk je dat dit kilometer is. kg is kilogram, en dat is een gewicht.",
+    "Koos je \"\"kl\"\"? Dan denk je dat dit een afkorting is. Een afkorting met kl bestaat niet voor kilometer, dus je verzint iets.",
+    "Koos je \"\"m\"\"? Dan denk je dat m kilometer is. m is meter, en de afkorting is dus te klein."
+   ],
+   "uh": "Welke afkorting gebruik je in je aantekeningen voor 'kilometre'?"
+  },
+  {
+   "v": "Je noteert de stappen van een recept. Hoe doe je dat?",
+   "o": [
+    "\"je schrijft ze in één lange zin\"",
+    "\"je schrijft alleen de laatste stap\"",
+    "\"je nummert ze: 1, 2, 3\"",
+    "\"je schrijft ze in willekeurige volgorde\""
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 2,
+   "u": "Noteer alleen de kern. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"je schrijft ze in één lange zin\"\"? Dan denk je dat één zin handig is. Je ziet de volgorde dan niet meer, en je raakt een stap kwijt.",
+    "Koos je \"\"je schrijft alleen de laatste stap\"\"? Dan denk je dat de laatste stap voldoende is. De eerdere stappen horen erbij, anders klopt de volgorde niet.",
+    "Klopt: nummers laten de volgorde in één oogopslag zien.",
+    "Koos je \"\"je schrijft ze in willekeurige volgorde\"\"? Dan denk je dat de volgorde niet uitmaakt. Bij een recept is de volgorde juist belangrijk, dus je moet nummeren."
+   ],
+   "uh": "Je noteert de stappen van een recept. Hoe doe je dat?"
+  },
+  {
+   "v": "Welke woorden helpen je de volgorde te noteren?",
+   "o": [
+    "\"but, so en because, gewoon, volgens mij\"",
+    "\"first, then, after that en finally\"",
+    "\"who, what en where\"",
+    "\"yes, no en maybe\""
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 2,
+   "u": "Noteer alleen de kern. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"but, so en because, gewoon, volgens mij\"\"? Dan denk je dat deze woorden de stappen ordenen. Ze geven tegenstelling en reden aan, en niet de volgorde.",
+    "Klopt: deze woorden geven de volgorde van de stappen aan.",
+    "Koos je \"\"who, what en where\"\"? Dan denk je dat vraagwoorden de volgorde noemen. Ze vragen naar gegevens, en zeggen niets over volgorde.",
+    "Koos je \"\"yes, no en maybe\"\"? Dan denk je dat antwoordwoorden de volgorde noemen. Ze beantwoorden alleen een vraag, en geven geen volgorde."
+   ],
+   "uh": "Welke woorden helpen je de volgorde te noteren?"
+  },
+  {
+   "v": "Je hoort 'thirteen'. Wat noteer je?",
+   "o": [
+    "\"30\"",
+    "\"3\"",
+    "\"31\"",
+    "\"13\""
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 3,
+   "u": "Noteer alleen de kern. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"30\"\"? Dan verwar je het met thirty. Thirty heeft de klemtoon vooraan, en eindigt op -ty.",
+    "Koos je \"\"3\"\"? Dan denk je dat het om één cijfer gaat. Thirteen heeft twee cijfers, dus het is 13 en niet 3.",
+    "Koos je \"\"31\"\"? Dan draai je de cijfers om. Thirteen is 13 en geen 31, dus je schrijft de cijfers in de verkeerde volgorde.",
+    "Klopt: thirteen is dertien en eindigt op -teen."
+   ],
+   "uh": "Je hoort 'thirteen'. Wat noteer je?"
+  },
+  {
+   "v": "Wat doe je met je aantekeningen na de tekst?",
+   "o": [
+    "\"je gebruikt ze om de vragen te beantwoorden\"",
+    "\"je gooit ze weg\"",
+    "\"je leest ze niet meer\"",
+    "\"je schrijft ze over in nette zinnen, volgens mij\""
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 4,
+   "u": "Noteer alleen de kern. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: je aantekeningen bevatten de gegevens waarmee je antwoorden kiest.",
+    "Koos je \"\"je gooit ze weg\"\"? Dan denk je dat de tekst alles zegt. De tekst is al voorbij, dus alleen je aantekeningen helpen.",
+    "Koos je \"\"je leest ze niet meer\"\"? Dan denk je dat je alles onthouden hebt. Je vergeet snel, en dus heb je de aantekeningen nodig.",
+    "Koos je \"\"je schrijft ze over in nette zinnen, volgens mij\"\"? Dan denk je dat netjes belangrijk is. Dat kost tijd, en tijd heb je niet."
+   ],
+   "uh": "Wat doe je met je aantekeningen na de tekst?"
+  },
+  {
+   "v": "How long does the tour take?",
+   "o": [
+    "\"about ten minutes\"",
+    "\"about four hours\"",
+    "\"about an hour\"",
+    "\"about thirty minutes\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 0,
+   "u": "Noteer alleen de kern. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"about ten minutes\"\"? Dan denk je dat tien minuten de duur is. Dat is de pauze in het café, en niet de hele rondleiding.",
+    "Koos je \"\"about four hours\"\"? Dan denk je dat vier uur de duur is. Er zijn vier stops, en geen vier uur.",
+    "Klopt: de gids zegt dat de rondleiding ongeveer een uur duurt.",
+    "Koos je \"\"about thirty minutes\"\"? Dan denk je dat dertig minuten de duur is. Het getal 30 komt uit de starttijd, en niet uit de duur."
+   ],
+   "uh": "How long does the tour take?",
+   "ctx": "You hear a guide in a museum (read the transcript): \"Welcome to the City Museum. My name is Helen and I will be your guide today. The tour takes about an hour and has four stops. First, we visit the Roman room on the ground floor. Then we go upstairs to the art gallery, which has paintings from the seventeenth century. After that, we have a ten-minute break in the café. The last stop is the garden, where you can see the old windmill. Please keep your tickets with you, because you need them for the garden. Photos are allowed, but please do not use a flash. The tour starts at ten thirty.\""
+  },
+  {
+   "v": "Which is the third stop on the tour?",
+   "o": [
+    "\"the garden\"",
+    "\"the café\"",
+    "\"the Roman room\"",
+    "\"the art gallery\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 2,
+   "u": "Noteer alleen de kern. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"the garden\"\"? Dan denk je dat de tuin derde is. De tuin is de laatste stop, en dus de vierde.",
+    "Klopt: de volgorde is Romeinse zaal, kunstgalerij, café en tuin.",
+    "Koos je \"\"the Roman room\"\"? Dan denk je dat de Romeinse zaal derde is. Dat is de eerste stop, en staat op de begane grond.",
+    "Koos je \"\"the art gallery\"\"? Dan denk je dat de kunstgalerij derde is. Dat is de tweede stop, en ligt boven."
+   ],
+   "uh": "Which is the third stop on the tour?",
+   "ctx": "You hear a guide in a museum (read the transcript): \"Welcome to the City Museum. My name is Helen and I will be your guide today. The tour takes about an hour and has four stops. First, we visit the Roman room on the ground floor. Then we go upstairs to the art gallery, which has paintings from the seventeenth century. After that, we have a ten-minute break in the café. The last stop is the garden, where you can see the old windmill. Please keep your tickets with you, because you need them for the garden. Photos are allowed, but please do not use a flash. The tour starts at ten thirty.\""
+  },
+  {
+   "v": "What time does the tour start?",
+   "o": [
+    "\"10.15\"",
+    "\"9.30\"",
+    "\"11.30\"",
+    "\"10.30\""
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 3,
+   "u": "Noteer alleen de kern. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"10.15\"\"? Dan denk je dat de rondleiding om kwart over tien begint. Dat staat niet in de tekst, en je verwart met a quarter past.",
+    "Koos je \"\"9.30\"\"? Dan denk je dat de rondleiding eerder begint. Er wordt tien uur dertig genoemd, en niet half tien.",
+    "Koos je \"\"11.30\"\"? Dan denk je dat de rondleiding later begint. De tijd is tien uur dertig, en niet elf uur dertig.",
+    "Klopt: de gids zegt ten thirty op het einde, dus de rondleiding begint om 10.30."
+   ],
+   "uh": "What time does the tour start?",
+   "ctx": "You hear a guide in a museum (read the transcript): \"Welcome to the City Museum. My name is Helen and I will be your guide today. The tour takes about an hour and has four stops. First, we visit the Roman room on the ground floor. Then we go upstairs to the art gallery, which has paintings from the seventeenth century. After that, we have a ten-minute break in the café. The last stop is the garden, where you can see the old windmill. Please keep your tickets with you, because you need them for the garden. Photos are allowed, but please do not use a flash. The tour starts at ten thirty.\""
+  },
+  {
+   "v": "Why must visitors keep their tickets?",
+   "o": [
+    "\"they need them for the garden\"",
+    "\"they need them for the café\"",
+    "\"they must show them to take photos\"",
+    "\"they get a free gift\""
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 0,
+   "u": "Noteer alleen de kern. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: de gids zegt dat je de kaartjes nodig hebt om de tuin in te gaan.",
+    "Koos je \"\"they need them for the café\"\"? Dan denk je dat de kaartjes voor het café zijn. Er staat garden, en niet café.",
+    "Koos je \"\"they must show them to take photos\"\"? Dan denk je dat je ze nodig hebt voor foto's. Foto's mogen gewoon, behalve met flits.",
+    "Koos je \"\"they get a free gift\"\"? Dan denk je dat er een cadeau is. Er wordt geen cadeau genoemd, dus je verzint iets."
+   ],
+   "uh": "Why must visitors keep their tickets?",
+   "ctx": "You hear a guide in a museum (read the transcript): \"Welcome to the City Museum. My name is Helen and I will be your guide today. The tour takes about an hour and has four stops. First, we visit the Roman room on the ground floor. Then we go upstairs to the art gallery, which has paintings from the seventeenth century. After that, we have a ten-minute break in the café. The last stop is the garden, where you can see the old windmill. Please keep your tickets with you, because you need them for the garden. Photos are allowed, but please do not use a flash. The tour starts at ten thirty.\""
+  },
+  {
+   "v": "How much flour do you need?",
+   "o": [
+    "\"300 grams\"",
+    "\"20 grams\"",
+    "\"200 grams\"",
+    "\"half a litre\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 3,
+   "u": "Noteer alleen de kern. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"300 grams\"\"? Dan denk je dat het driehonderd gram is. De drie hoort bij de eieren, en niet bij de bloem.",
+    "Koos je \"\"20 grams\"\"? Dan denk je dat het twintig gram is. Twenty hoort bij de rusttijd van het beslag, en niet bij de bloem.",
+    "Klopt: de kok noemt tweehonderd gram bloem, dus je noteert 200 g.",
+    "Koos je \"\"half a litre\"\"? Dan denk je dat een halve liter bloem nodig is. Een halve liter is de hoeveelheid melk, en geen bloem."
+   ],
+   "uh": "How much flour do you need?",
+   "ctx": "You hear a cooking programme (read the transcript): \"Today we are making pancakes. You need two hundred grams of flour, three eggs, half a litre of milk and a pinch of salt. First, mix the flour and the salt in a big bowl. Then add the eggs and stir well. Slowly add the milk and keep stirring until there are no lumps. Let the batter rest for twenty minutes. Heat a little butter in a pan and pour in a thin layer of batter. Bake it for about two minutes on each side. Serve the pancakes with sugar, syrup or fruit. This makes about eight pancakes.\""
+  },
+  {
+   "v": "What do you do after mixing the flour and the salt?",
+   "o": [
+    "\"add the milk\"",
+    "\"add the eggs and stir\"",
+    "\"heat the butter\"",
+    "\"bake the pancakes, I suppose\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 2,
+   "u": "Noteer alleen de kern. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"add the milk\"\"? Dan denk je dat de melk als volgende komt. De melk komt na de eieren, en niet erna.",
+    "Klopt: first mix, then add the eggs, dus de eieren komen als tweede stap.",
+    "Koos je \"\"heat the butter\"\"? Dan denk je dat de boter de volgende stap is. Dat komt aan het einde, na de rusttijd.",
+    "Koos je \"\"bake the pancakes, I suppose\"\"? Dan denk je dat het meteen bakken is. Eerst moet je het beslag maken, en laten rusten."
+   ],
+   "uh": "What do you do after mixing the flour and the salt?",
+   "ctx": "You hear a cooking programme (read the transcript): \"Today we are making pancakes. You need two hundred grams of flour, three eggs, half a litre of milk and a pinch of salt. First, mix the flour and the salt in a big bowl. Then add the eggs and stir well. Slowly add the milk and keep stirring until there are no lumps. Let the batter rest for twenty minutes. Heat a little butter in a pan and pour in a thin layer of batter. Bake it for about two minutes on each side. Serve the pancakes with sugar, syrup or fruit. This makes about eight pancakes.\""
+  },
+  {
+   "v": "How long do you bake a pancake on each side?",
+   "o": [
+    "\"about twenty minutes\"",
+    "\"about eight minutes\"",
+    "\"about half an hour\"",
+    "\"about two minutes\""
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 3,
+   "u": "Noteer alleen de kern. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"about twenty minutes\"\"? Dan denk je dat het twintig minuten is. Dat is de rusttijd van het beslag, en niet de baktijd.",
+    "Koos je \"\"about eight minutes\"\"? Dan denk je dat het acht minuten is. Het getal acht gaat over het aantal pannenkoeken, en niet over minuten.",
+    "Koos je \"\"about half an hour\"\"? Dan denk je dat het een halfuur is. Dat is veel te lang voor een pannenkoek, en niet genoemd.",
+    "Klopt: de kok zegt dat je elke kant ongeveer twee minuten bakt."
+   ],
+   "uh": "How long do you bake a pancake on each side?",
+   "ctx": "You hear a cooking programme (read the transcript): \"Today we are making pancakes. You need two hundred grams of flour, three eggs, half a litre of milk and a pinch of salt. First, mix the flour and the salt in a big bowl. Then add the eggs and stir well. Slowly add the milk and keep stirring until there are no lumps. Let the batter rest for twenty minutes. Heat a little butter in a pan and pour in a thin layer of batter. Bake it for about two minutes on each side. Serve the pancakes with sugar, syrup or fruit. This makes about eight pancakes.\""
+  },
+  {
+   "v": "When does the bus leave?",
+   "o": [
+    "\"8.15 on Friday 14 March\"",
+    "\"8.50\"",
+    "\"4.00\"",
+    "\"8.00\""
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 0,
+   "u": "Noteer alleen de kern. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: de bus vertrekt om acht uur vijftien op vrijdag 14 maart.",
+    "Koos je \"\"8.50\"\"? Dan denk je dat het tien voor negen is. Er staat eight fifteen, dus kwart over acht.",
+    "Koos je \"\"4.00\"\"? Dan denk je dat dit het vertrek is. Dat is de terugkomst, en niet het vertrek.",
+    "Koos je \"\"8.00\"\"? Dan denk je dat het acht uur precies is. Er staat eight fifteen, dus er is vijftien minuten bij."
+   ],
+   "uh": "When does the bus leave?",
+   "ctx": "You hear a school message (read the transcript): \"This is a message for the parents of year 2. On Friday 14 March, we are going on a trip to the science centre in Delft. The bus leaves at eight fifteen from the school gate, and we will be back at four o'clock. Children should wear comfortable shoes and bring a packed lunch and a bottle of water. The price is twelve euros, which you can pay by bank transfer before the first of March. Please sign the permission form and give it to the teacher by Wednesday. For questions, call Mr Dekker on 020 555 0166.\""
+  },
+  {
+   "v": "How much does the trip cost?",
+   "o": [
+    "\"20 euros\"",
+    "\"2 euros\"",
+    "\"12 euros\"",
+    "\"120 euros, I think\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 3,
+   "u": "Noteer alleen de kern. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"20 euros\"\"? Dan denk je dat het twintig euro is. Twelve en twenty klinken lijkt, maar de tekst zegt twelve.",
+    "Koos je \"\"2 euros\"\"? Dan denk je dat het twee euro is. Twee is te weinig, en klopt niet met twelve.",
+    "Klopt: de school noemt twaalf euro, dus je noteert 12 euro.",
+    "Koos je \"\"120 euros, I think\"\"? Dan denk je dat het honderdtwintig euro is. Dat is te hoog, en niet genoemd."
+   ],
+   "uh": "How much does the trip cost?",
+   "ctx": "You hear a school message (read the transcript): \"This is a message for the parents of year 2. On Friday 14 March, we are going on a trip to the science centre in Delft. The bus leaves at eight fifteen from the school gate, and we will be back at four o'clock. Children should wear comfortable shoes and bring a packed lunch and a bottle of water. The price is twelve euros, which you can pay by bank transfer before the first of March. Please sign the permission form and give it to the teacher by Wednesday. For questions, call Mr Dekker on 020 555 0166.\""
+  },
+  {
+   "v": "By when must the permission form be given to the teacher?",
+   "o": [
+    "\"by the first of March\"",
+    "\"by Wednesday\"",
+    "\"on Friday\"",
+    "\"by Thursday\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 0,
+   "u": "Noteer alleen de kern. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"by the first of March\"\"? Dan denk je dat het formulier dan klaar moet zijn. Dat is de betaaldatum, en niet de datum voor het formulier.",
+    "Klopt: het toestemmingsformulier moet voor woensdag bij de leraar zijn.",
+    "Koos je \"\"on Friday\"\"? Dan denk je dat het vrijdag moet. Vrijdag is de dag van de reis, en niet de uiterste datum.",
+    "Koos je \"\"by Thursday\"\"? Dan denk je dat het donderdag moet. Dat wordt niet genoemd, dus je verzint iets."
+   ],
+   "uh": "By when must the permission form be given to the teacher?",
+   "ctx": "You hear a school message (read the transcript): \"This is a message for the parents of year 2. On Friday 14 March, we are going on a trip to the science centre in Delft. The bus leaves at eight fifteen from the school gate, and we will be back at four o'clock. Children should wear comfortable shoes and bring a packed lunch and a bottle of water. The price is twelve euros, which you can pay by bank transfer before the first of March. Please sign the permission form and give it to the teacher by Wednesday. For questions, call Mr Dekker on 020 555 0166.\""
+  },
+  {
+   "v": "Which note is the best for the tour?",
+   "o": [
+    "\"The museum is nice and the guide is Helen, I suppose, really, to be honest.\"",
+    "\"Roman room, windmill, café\"",
+    "\"Tour of 4 hours, ticket 10 euros\"",
+    "\"10.30 start; 1 Roman, 2 art, 3 café (10 min), 4 garden; keep ticket\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 2,
+   "u": "Noteer alleen de kern. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"The museum is nice and the guide is Helen, I suppose, really, to be honest.\"\"? Dan denk je dat gewone bijzaken genoeg zijn. Het zegt niets over de vragen, dus het is geen goede aantekening.",
+    "Koos je \"\"Roman room, windmill, café\"\"? Dan denk je dat je de stops willekeurig noteert. De molen staat bij de tuin, en de volgorde ontbreekt.",
+    "Koos je \"\"Tour of 4 hours, ticket 10 euros\"\"? Dan denk je dat de tijd en prijs kloppen. Er staan geen vier uur of tien euro in de tekst, dus dit is verzonnen.",
+    "Klopt: dit bevat de starttijd, de volgorde, de pauze en de ticketregel."
+   ],
+   "uh": "Which note is the best for the tour?",
+   "ctx": "You hear a guide in a museum (read the transcript): \"Welcome to the City Museum. My name is Helen and I will be your guide today. The tour takes about an hour and has four stops. First, we visit the Roman room on the ground floor. Then we go upstairs to the art gallery, which has paintings from the seventeenth century. After that, we have a ten-minute break in the café. The last stop is the garden, where you can see the old windmill. Please keep your tickets with you, because you need them for the garden. Photos are allowed, but please do not use a flash. The tour starts at ten thirty.\""
+  },
+  {
+   "v": "The guide says the tour takes about an hour and has four stops. Which two numbers do you note?",
+   "o": [
+    "\"1 hour and 4 stops\"",
+    "\"10 minutes and 4 hours\"",
+    "\"17 and 10\"",
+    "\"30 and 4\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 0,
+   "u": "Noteer alleen de kern. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: één uur en vier stops zijn de twee kerngegevens.",
+    "Koos je \"\"10 minutes and 4 hours\"\"? Dan denk je dat deze getallen horen bij de rondleiding. Tien minuten is de pauze, en vier uur wordt niet genoemd.",
+    "Koos je \"\"17 and 10\"\"? Dan denk je dat dit de getallen zijn. Zeventiende eeuw en tien minuten pauze zijn bijzaken, en niet de kern.",
+    "Koos je \"\"30 and 4\"\"? Dan denk je dat dertig de duur is. Dat is de starttijd, en niet de duur."
+   ],
+   "uh": "The guide says the tour takes about an hour and has four stops. Which two numbers do you note?",
+   "ctx": "You hear a guide in a museum (read the transcript): \"Welcome to the City Museum. My name is Helen and I will be your guide today. The tour takes about an hour and has four stops. First, we visit the Roman room on the ground floor. Then we go upstairs to the art gallery, which has paintings from the seventeenth century. After that, we have a ten-minute break in the café. The last stop is the garden, where you can see the old windmill. Please keep your tickets with you, because you need them for the garden. Photos are allowed, but please do not use a flash. The tour starts at ten thirty.\""
+  },
+  {
+   "v": "A visitor wrote: 'break 10 min; garden: ticket'. Which part of the text is this?",
+   "o": [
+    "\"the Roman room and the flash rule\"",
+    "\"the start time and the guide's name, really, to be honest\"",
+    "\"the café break and the ticket rule for the garden\"",
+    "\"the art gallery and the windmill\""
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 4,
+   "u": "Noteer alleen de kern. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"the Roman room and the flash rule\"\"? Dan denk je dat de Romeinse zaal en de flits in de notitie staan. Daar staat niets over pauze of ticket, dus dit klopt niet.",
+    "Koos je \"\"the start time and the guide's name, really, to be honest\"\"? Dan denk je dat de starttijd en naam erin staan. De notitie noemt pauze en ticket, en niet tijd en naam.",
+    "Klopt: een pauze van tien minuten en de ticketregel staan daarin.",
+    "Koos je \"\"the art gallery and the windmill\"\"? Dan denk je dat de kunst en de molen genoemd zijn. De notitie gaat over pauze en ticket, en niet over kunst."
+   ],
+   "uh": "A visitor wrote: 'break 10 min; garden: ticket'. Which part of the text is this?",
+   "ctx": "You hear a guide in a museum (read the transcript): \"Welcome to the City Museum. My name is Helen and I will be your guide today. The tour takes about an hour and has four stops. First, we visit the Roman room on the ground floor. Then we go upstairs to the art gallery, which has paintings from the seventeenth century. After that, we have a ten-minute break in the café. The last stop is the garden, where you can see the old windmill. Please keep your tickets with you, because you need them for the garden. Photos are allowed, but please do not use a flash. The tour starts at ten thirty.\""
+  },
+  {
+   "v": "Which note shows the right order of the first three steps?",
+   "o": [
+    "\"1 milk, 2 eggs, 3 flour + salt, I think\"",
+    "\"1 flour + salt, 2 eggs, 3 milk\"",
+    "\"1 eggs, 2 flour, 3 butter\"",
+    "\"1 butter, 2 pan, 3 flour\""
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 2,
+   "u": "Noteer alleen de kern. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"1 milk, 2 eggs, 3 flour + salt, I think\"\"? Dan denk je dat de volgorde omgekeerd is. De kok begint met het meel, en eindigt met de melk.",
+    "Klopt: dit is de volgorde van de tekst: meel en zout, eieren en melk.",
+    "Koos je \"\"1 eggs, 2 flour, 3 butter\"\"? Dan denk je dat de eieren eerst komen. Eerst gaan meel en zout in de kom, en de boter komt veel later.",
+    "Koos je \"\"1 butter, 2 pan, 3 flour\"\"? Dan denk je dat het bakken eerst komt. Het beslag moet eerst klaar, dus de boter komt aan het einde."
+   ],
+   "uh": "Which note shows the right order of the first three steps?",
+   "ctx": "You hear a cooking programme (read the transcript): \"Today we are making pancakes. You need two hundred grams of flour, three eggs, half a litre of milk and a pinch of salt. First, mix the flour and the salt in a big bowl. Then add the eggs and stir well. Slowly add the milk and keep stirring until there are no lumps. Let the batter rest for twenty minutes. Heat a little butter in a pan and pour in a thin layer of batter. Bake it for about two minutes on each side. Serve the pancakes with sugar, syrup or fruit. This makes about eight pancakes.\""
+  },
+  {
+   "v": "Which note is best for the amounts?",
+   "o": [
+    "\"200 kg flour, 3 eggs, 0.5 l milk, to be honest\"",
+    "\"20 g flour, 3 eggs, 5 l milk\"",
+    "\"200 g flour, 8 eggs, 0.5 l milk\"",
+    "\"200 g flour, 3 eggs, 0.5 l milk, pinch salt\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 1,
+   "u": "Noteer alleen de kern. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"200 kg flour, 3 eggs, 0.5 l milk, to be honest\"\"? Dan denk je dat kg gram is. Kg is kilogram, dus de hoeveelheid is veel te groot.",
+    "Koos je \"\"20 g flour, 3 eggs, 5 l milk\"\"? Dan draai je de getallen om. De kok zegt twee honderd gram en een halve liter, en niet twintig gram en vijf liter.",
+    "Koos je \"\"200 g flour, 8 eggs, 0.5 l milk\"\"? Dan denk je dat acht eieren nodig zijn. Acht is het aantal pannenkoeken, en er zijn drie eieren.",
+    "Klopt: de hoeveelheden komen overeen met de tekst en de afkortingen zijn juist."
+   ],
+   "uh": "Which note is best for the amounts?",
+   "ctx": "You hear a cooking programme (read the transcript): \"Today we are making pancakes. You need two hundred grams of flour, three eggs, half a litre of milk and a pinch of salt. First, mix the flour and the salt in a big bowl. Then add the eggs and stir well. Slowly add the milk and keep stirring until there are no lumps. Let the batter rest for twenty minutes. Heat a little butter in a pan and pour in a thin layer of batter. Bake it for about two minutes on each side. Serve the pancakes with sugar, syrup or fruit. This makes about eight pancakes.\""
+  },
+  {
+   "v": "'Half a litre of milk': how do you note this?",
+   "o": [
+    "\"0.5 l milk\"",
+    "\"0.5 g milk\"",
+    "\"5 l milk\"",
+    "\"half kg milk\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 1,
+   "u": "Noteer alleen de kern. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: een halve liter is 0,5 liter en l is de afkorting.",
+    "Koos je \"\"0.5 g milk\"\"? Dan denk je dat g liter is. G is gram, en dat gaat over gewicht.",
+    "Koos je \"\"5 l milk\"\"? Dan denk je dat half vijf liter is. Half is 0,5, en niet 5.",
+    "Koos je \"\"half kg milk\"\"? Dan denk je dat kg een afkorting voor liter is. Kg is kilogram, en dat past niet bij melk."
+   ],
+   "uh": "'Half a litre of milk': how do you note this?",
+   "ctx": "You hear a cooking programme (read the transcript): \"Today we are making pancakes. You need two hundred grams of flour, three eggs, half a litre of milk and a pinch of salt. First, mix the flour and the salt in a big bowl. Then add the eggs and stir well. Slowly add the milk and keep stirring until there are no lumps. Let the batter rest for twenty minutes. Heat a little butter in a pan and pour in a thin layer of batter. Bake it for about two minutes on each side. Serve the pancakes with sugar, syrup or fruit. This makes about eight pancakes.\""
+  },
+  {
+   "v": "What is the main information to note about the trip?",
+   "o": [
+    "\"only the name of the science centre, you know, I think, I suppose\"",
+    "\"only the price\"",
+    "\"date, bus time, price, what to bring and the deadline\"",
+    "\"what the teacher wears\""
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 0,
+   "u": "Noteer alleen de kern. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"only the name of the science centre, you know, I think, I suppose\"\"? Dan denk je dat de naam genoeg is. Je mist dan tijd en prijs, en kunt de vragen niet beantwoorden.",
+    "Koos je \"\"only the price\"\"? Dan denk je dat het bedrag genoeg is. Er zijn meer gegevens, zoals tijd en spullen.",
+    "Klopt: dit zijn de kerngegevens waar vragen over gaan.",
+    "Koos je \"\"what the teacher wears\"\"? Dan denk je dat dit belangrijk is. Dit wordt niet genoemd, en is ook geen kerngegeven."
+   ],
+   "uh": "What is the main information to note about the trip?",
+   "ctx": "You hear a school message (read the transcript): \"This is a message for the parents of year 2. On Friday 14 March, we are going on a trip to the science centre in Delft. The bus leaves at eight fifteen from the school gate, and we will be back at four o'clock. Children should wear comfortable shoes and bring a packed lunch and a bottle of water. The price is twelve euros, which you can pay by bank transfer before the first of March. Please sign the permission form and give it to the teacher by Wednesday. For questions, call Mr Dekker on 020 555 0166.\""
+  },
+  {
+   "v": "The text says 'before the first of March'. How do you note this?",
+   "o": [
+    "\"pay after 1 March, really\"",
+    "\"pay before 1 March\"",
+    "\"pay on 14 March\"",
+    "\"pay by Wednesday\""
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 1,
+   "u": "Noteer alleen de kern. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"pay after 1 March, really\"\"? Dan denk je dat before after is. Before is voor, dus het is precies omgekeerd.",
+    "Klopt: before betekent voor die datum en het is een deadline.",
+    "Koos je \"\"pay on 14 March\"\"? Dan denk je dat dit de betaaldatum is. 14 maart is de dag van de reis, en niet de betaaldatum.",
+    "Koos je \"\"pay by Wednesday\"\"? Dan denk je dat woensdag de betaaldatum is. Woensdag is voor het formulier, en niet voor het geld."
+   ],
+   "uh": "The text says 'before the first of March'. How do you note this?",
+   "ctx": "You hear a school message (read the transcript): \"This is a message for the parents of year 2. On Friday 14 March, we are going on a trip to the science centre in Delft. The bus leaves at eight fifteen from the school gate, and we will be back at four o'clock. Children should wear comfortable shoes and bring a packed lunch and a bottle of water. The price is twelve euros, which you can pay by bank transfer before the first of March. Please sign the permission form and give it to the teacher by Wednesday. For questions, call Mr Dekker on 020 555 0166.\""
+  },
+  {
+   "v": "Which items must the children bring?",
+   "o": [
+    "\"money for lunch\"",
+    "\"swimming clothes, I think, I suppose, really\"",
+    "\"a laptop\"",
+    "\"comfortable shoes, a packed lunch and water\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 0,
+   "u": "Noteer alleen de kern. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"money for lunch\"\"? Dan denk je dat ze geld meenemen. Ze nemen een lunchpakket mee, dus geld is niet nodig.",
+    "Koos je \"\"swimming clothes, I think, I suppose, really\"\"? Dan denk je dat ze zwemkleding meenemen. Er is geen zwemmen genoemd, dus je verzint iets.",
+    "Koos je \"\"a laptop\"\"? Dan denk je dat ze een laptop meenemen. De tekst noemt alleen schoenen, lunch en water, dus dit klopt niet.",
+    "Klopt: dit staat in de tekst en is wat kinderen moeten meenemen."
+   ],
+   "uh": "Which items must the children bring?",
+   "ctx": "You hear a school message (read the transcript): \"This is a message for the parents of year 2. On Friday 14 March, we are going on a trip to the science centre in Delft. The bus leaves at eight fifteen from the school gate, and we will be back at four o'clock. Children should wear comfortable shoes and bring a packed lunch and a bottle of water. The price is twelve euros, which you can pay by bank transfer before the first of March. Please sign the permission form and give it to the teacher by Wednesday. For questions, call Mr Dekker on 020 555 0166.\""
+  },
+  {
+   "v": "Your notes have a gap at the return time. What do you do the second time?",
+   "o": [
+    "\"listen especially for the return time and add it\"",
+    "\"leave the gap\"",
+    "\"guess five o'clock, to be honest, you know, I think\"",
+    "\"start a new page\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 4,
+   "u": "Noteer alleen de kern. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: je gebruikt de tweede keer om gaten in je aantekeningen te vullen.",
+    "Koos je \"\"leave the gap\"\"? Dan denk je dat een leeg vak hoort bij een slecht antwoord. Het gat kost punten, en dat kun je vermijden.",
+    "Koos je \"\"guess five o'clock, to be honest, you know, I think\"\"? Dan denk je dat gokken beter is. Je kunt het juiste antwoord horen, dus gokken is onnodig.",
+    "Koos je \"\"start a new page\"\"? Dan denk je dat een nieuwe bladzijde helpt. Je verliest dan je eerdere aantekeningen, en je hoeft alleen aan te vullen."
+   ],
+   "uh": "Your notes have a gap at the return time. What do you do the second time?",
+   "ctx": "You hear a school message (read the transcript): \"This is a message for the parents of year 2. On Friday 14 March, we are going on a trip to the science centre in Delft. The bus leaves at eight fifteen from the school gate, and we will be back at four o'clock. Children should wear comfortable shoes and bring a packed lunch and a bottle of water. The price is twelve euros, which you can pay by bank transfer before the first of March. Please sign the permission form and give it to the teacher by Wednesday. For questions, call Mr Dekker on 020 555 0166.\""
+  }
+ ],
+ "oe": [
+  {
+   "bron": "Examenstijl",
+   "ctx": "You hear a station announcement: \"The train to Leeds leaves from platform 6 at 11.40. It will stop at Derby and Sheffield. Tickets cost 24 euros for adults and 12 euros for children. Please buy your ticket before you get on the train.\" (read the transcript)",
+   "v": "Write down your notes for this announcement in short form, with at least four pieces of information.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Platform 6 (1p). Vertrek 11.40 (1p). Stops: Derby en Sheffield (1p). Prijs 24 en 12 euro, of kaartje van tevoren (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "You hear a teacher: \"First, open your books at page ten. Then read the text silently for five minutes. After that, answer questions one to six. Finally, check your answers with your partner. Your homework is exercise four on page twelve.\" (read the transcript)",
+   "v": "Write notes with numbers for the order of the activities and the homework.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "1 open boek p. 10 (1p). 2 lezen 5 min (1p). 3 vragen 1 tot 6 (1p). 4 controleren met partner, huiswerk oefening 4 p. 12 (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "You hear a voicemail: \"Hi, this is Lara. The party is on Saturday 12 July at seven thirty at my house, 8 Elm Street. Please bring a drink or a snack. Call me before Thursday if you cannot come.\" (read the transcript)",
+   "v": "Write short notes with the date, the time, the address and the deadline.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Za 12 juli (1p). 7.30 (1p). 8 Elm Street (1p). Bellen vóór donderdag, drankje of snack meenemen (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "You hear a radio advertisement: \"Big sale at Sports Plus! All shoes are thirty per cent cheaper this weekend. A pair that usually costs sixty euros now costs forty-two. The shop is open from nine to six on Saturday and from twelve to five on Sunday.\" (read the transcript)",
+   "v": "Write notes with the percentage, the new price and the opening times.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "30 procent korting (1p). 60 wordt 42 euro (1p). Za 9 tot 6 (1p). Zo 12 tot 5 (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "A classmate says: \"I will write down every word I hear.\" You do not agree.",
+   "v": "Write two sentences in English that explain why short notes with numbers and abbreviations are better.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Alles opschrijven kost te veel tijd (1p). Kernwoorden, getallen en afkortingen zijn genoeg (1p). Een duidelijke uitleg met voorbeeld (1p)."
+  }
+ ]
+}

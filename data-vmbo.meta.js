@@ -945,6 +945,27 @@ var VAKKEN_VMBO = [
       "nOe": 5,
       "nBeg": 12,
       "hasSam": true
+     },
+     {
+      "id": "B6",
+      "lo": "en.B.6",
+      "gs": 2,
+      "naam": "Aantekeningen maken bij het luisteren",
+      "beschrijving": "Je leert bij een Engelse gesproken tekst bruikbare aantekeningen te maken: je noteert kernwoorden, tijden, getallen en hoeveelheden met afkortingen, nummert stappen in een volgorde en vult je notities bij de tweede keer luisteren aan.",
+      "ceStatus": "CE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Wat noteer je?",
+       "Afkortingen en symbolen",
+       "Volgorde en stappen",
+       "Cijfers en eenheden",
+       "Aantekeningen gebruiken"
+      ],
+      "nSv": 27,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
      }
     ]
    },
