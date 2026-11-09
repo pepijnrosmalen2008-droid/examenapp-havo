@@ -1,0 +1,682 @@
+{
+ "id": "B2",
+ "lo": "en.B.2",
+ "gs": 2,
+ "naam": "De hoofdgedachte van een luistertekst bepalen",
+ "beschrijving": "Je leert de hoofdgedachte van een Engelse gesproken tekst te vinden: je onderscheidt hoofdzaak en bijzaak, herkent het doel van de spreker, gebruikt signaalwoorden zoals but en so en controleert je antwoord met de hele tekst.",
+ "ceStatus": "CE",
+ "binas": "",
+ "val": "",
+ "onderwerpen": [
+  "Wat is de hoofdgedachte?",
+  "Het doel van de spreker",
+  "Hoofdzaak en bijzaak",
+  "Signaalwoorden",
+  "Je hoofdgedachte controleren"
+ ],
+ "sam": "De hoofdgedachte is de belangrijkste boodschap van een gesproken tekst in één zin. Bepaal eerst het doel van de spreker: informeren, overtuigen of waarschuwen. Een prijs, tijd of naam is meestal een bijzaak. Signaalwoorden zoals but en so wijzen naar de kern. Controleer of je zin bij alle delen van de tekst past.",
+ "begrippen": [
+  {
+   "t": "Hoofdgedachte",
+   "d": "De belangrijkste boodschap van de hele tekst."
+  },
+  {
+   "t": "Bijzaak",
+   "d": "Een detail dat de kern niet verandert."
+  },
+  {
+   "t": "Hoofdzaak",
+   "d": "Wat de spreker vooral wil zeggen."
+  },
+  {
+   "t": "Doel",
+   "d": "Wat de spreker wil bereiken: informeren, overtuigen of waarschuwen."
+  },
+  {
+   "t": "Informeren",
+   "d": "Feiten vertellen zonder iets te willen verkopen."
+  },
+  {
+   "t": "Overtuigen",
+   "d": "Je laten kiezen voor iets, zoals in een reclame."
+  },
+  {
+   "t": "Waarschuwen",
+   "d": "Zeggen dat er gevaar of overlast komt."
+  },
+  {
+   "t": "Signaalwoord",
+   "d": "Een woord zoals but of so dat de opbouw aangeeft."
+  },
+  {
+   "t": "Tegenstelling",
+   "d": "Iets wat anders is dan eerst gezegd, na but."
+  },
+  {
+   "t": "Gevolg",
+   "d": "Wat volgt uit een reden, na so."
+  },
+  {
+   "t": "Samenvatting",
+   "d": "De kern in één zin."
+  },
+  {
+   "t": "Titel",
+   "d": "Een korte naam die de hele tekst dekt."
+  }
+ ],
+ "sv": [
+  {
+   "v": "Je moet de hoofdgedachte van een luistertekst opschrijven. Wat schrijf je?",
+   "o": [
+    "\"een detail uit de eerste zin\"",
+    "\"de belangrijkste boodschap van de hele tekst\"",
+    "\"het langste woord dat je hoort, I think, I suppose\"",
+    "\"de naam van de spreker\""
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 0,
+   "u": "Zoek de kern van de tekst. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"een detail uit de eerste zin\"\"? Dan denk je dat het eerste detail de kern is. Een eerste detail is vaak maar een begin, en niet de boodschap.",
+    "Klopt: de hoofdgedachte is wat de spreker je vooral wil laten weten, in één zin.",
+    "Koos je \"\"het langste woord dat je hoort, I think, I suppose\"\"? Dan denk je dat een lang woord belangrijk is. De lengte van een woord zegt niets, over de inhoud van de tekst.",
+    "Koos je \"\"de naam van de spreker\"\"? Dan denk je dat de spreker zelf de kern is. Een naam hoort bij het begin, en is geen boodschap."
+   ],
+   "uh": "Je moet de hoofdgedachte van een luistertekst opschrijven. Wat schrijf je?"
+  },
+  {
+   "v": "Een radioreclame zegt: Buy now, only this week! Wat wil de spreker?",
+   "o": [
+    "\"je laten lachen om een grap\"",
+    "\"je een nieuwsbericht vertellen, to be honest\"",
+    "\"je leren hoe je iets maakt\"",
+    "\"je overtuigen om iets te kopen\""
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 1,
+   "u": "Zoek de kern van de tekst. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"je laten lachen om een grap\"\"? Dan denk je dat een reclame vooral grappig is. Een grap kan erin zitten, maar het doel is verkopen.",
+    "Koos je \"\"je een nieuwsbericht vertellen, to be honest\"\"? Dan denk je dat een reclame nieuws brengt. Nieuws informeert alleen, en een reclame wil iets verkopen.",
+    "Koos je \"\"je leren hoe je iets maakt\"\"? Dan denk je dat een reclame een instructie is. Een instructie legt uit, en een reclame wil overtuigen.",
+    "Klopt: een reclame wil dat je een product of dienst kiest."
+   ],
+   "uh": "Een radioreclame zegt: Buy now, only this week! Wat wil de spreker?"
+  },
+  {
+   "v": "De radio meldt: Stay inside, a storm is coming. Wat wil de spreker?",
+   "o": [
+    "\"je waarschuwen voor gevaar of overlast\"",
+    "\"je iets verkopen\"",
+    "\"je laten lachen\"",
+    "\"je een verhaal vertellen, I suppose, really\""
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 1,
+   "u": "Zoek de kern van de tekst. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: de waarschuwing zegt wat er komt en wat je moet doen.",
+    "Koos je \"\"je iets verkopen\"\"? Dan denk je dat de spreker iets wil kwijt. Een waarschuwing vraagt niets te kopen, maar vraagt om voorzichtigheid.",
+    "Koos je \"\"je laten lachen\"\"? Dan denk je dat de spreker leuk wil zijn. Een waarschuwing is serieus, en geeft advies.",
+    "Koos je \"\"je een verhaal vertellen, I suppose, really\"\"? Dan denk je dat er een verhaal komt. Een waarschuwing noemt feiten, en geen verhaal met een plot."
+   ],
+   "uh": "De radio meldt: Stay inside, a storm is coming. Wat wil de spreker?"
+  },
+  {
+   "v": "Je hoort een prijs die maar één keer wordt genoemd. Wat is die prijs meestal?",
+   "o": [
+    "\"de belangrijkste zin van de tekst, you know, I think, I suppose\"",
+    "\"de conclusie aan het einde\"",
+    "\"een bijzaak: een detail dat de hoofdgedachte niet verandert\"",
+    "\"de vraag waar de tekst over gaat\""
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 2,
+   "u": "Zoek de kern van de tekst. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"de belangrijkste zin van de tekst, you know, I think, I suppose\"\"? Dan denk je dat de kern een bijzaak is. De belangrijkste zin hoort bij de hoofdzaak, en niet bij de details.",
+    "Koos je \"\"de conclusie aan het einde\"\"? Dan denk je dat een conclusie bijzaak is. Een conclusie vat de kern juist samen, en is dus hoofdzaak.",
+    "Klopt: een bijzaak is een extra gegeven dat je mag missen zonder de kern te verliezen.",
+    "Koos je \"\"de vraag waar de tekst over gaat\"\"? Dan denk je dat het onderwerp bijzaak is. Het onderwerp bepaalt de kern, en dat is hoofdzaak."
+   ],
+   "uh": "Je hoort een prijs die maar één keer wordt genoemd. Wat is die prijs meestal?"
+  },
+  {
+   "v": "Wat laat het woord 'but' vaak horen in een luistertekst?",
+   "o": [
+    "\"dat de spreker klaar is\"",
+    "\"dat er een tegenstelling komt, vaak met een belangrijk punt\"",
+    "\"dat er een voorbeeld volgt\"",
+    "\"dat de spreker iedereen groet, gewoon, volgens mij, eigenlijk\""
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 3,
+   "u": "Zoek de kern van de tekst. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"dat de spreker klaar is\"\"? Dan denk je dat but het einde aankondigt. Het woord opent juist een nieuw stuk, en sluit niets af.",
+    "Klopt: na but volgt meestal iets wat anders is dan eerst gezegd en vaak de kern is.",
+    "Koos je \"\"dat er een voorbeeld volgt\"\"? Dan denk je dat but een voorbeeld noemt. Een voorbeeld begint met for example, en but toont een tegenstelling.",
+    "Koos je \"\"dat de spreker iedereen groet, gewoon, volgens mij, eigenlijk\"\"? Dan denk je dat but een groet is. Een groet is hello of goodbye, en but heeft een andere functie."
+   ],
+   "uh": "Wat laat het woord 'but' vaak horen in een luistertekst?"
+  },
+  {
+   "v": "Waar staat de hoofdgedachte vaak?",
+   "o": [
+    "\"alleen midden in het langste voorbeeld, denk ik\"",
+    "\"nooit in de tekst zelf\"",
+    "\"alleen in de titel van de tekst\"",
+    "\"aan het begin of aan het einde van de tekst\""
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 3,
+   "u": "Zoek de kern van de tekst. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"alleen midden in het langste voorbeeld, denk ik\"\"? Dan denk je dat de kern verstopt zit in een voorbeeld. Een voorbeeld ondersteunt de kern, en is hem niet zelf.",
+    "Koos je \"\"nooit in de tekst zelf\"\"? Dan denk je dat je de hoofdgedachte altijd zelf verzint. De spreker geeft hem meestal wel, in zijn woorden.",
+    "Koos je \"\"alleen in de titel van de tekst\"\"? Dan denk je dat een luistertekst altijd een titel heeft. De meeste hebben dat niet, dus de kern zit in de gesproken woorden.",
+    "Klopt: sprekers noemen de kern vaak vooraf of vatten hem aan het einde samen."
+   ],
+   "uh": "Waar staat de hoofdgedachte vaak?"
+  },
+  {
+   "v": "Hoe controleer je je hoofdgedachte?",
+   "o": [
+    "\"je kijkt of hij bij alle delen van de tekst past\"",
+    "\"je kijkt alleen naar de eerste zin\"",
+    "\"je kiest het antwoord dat je het mooist vindt\"",
+    "\"je kiest het antwoord met de meeste woorden uit de tekst\""
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 4,
+   "u": "Zoek de kern van de tekst. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: een goede hoofdgedachte dekt de hele tekst, niet maar één stukje.",
+    "Koos je \"\"je kijkt alleen naar de eerste zin\"\"? Dan denk je dat de eerste zin genoeg is. Hij kan een inleiding zijn, en de kern komt later.",
+    "Koos je \"\"je kiest het antwoord dat je het mooist vindt\"\"? Dan denk je dat smaak telt. Het gaat om wat er gezegd wordt, en niet om wat jij mooi vindt.",
+    "Koos je \"\"je kiest het antwoord met de meeste woorden uit de tekst\"\"? Dan denk je dat veel dezelfde woorden genoeg zijn. Losse woorden kunnen uit een detail komen, terwijl de kern ontbreekt."
+   ],
+   "uh": "Hoe controleer je je hoofdgedachte?"
+  },
+  {
+   "v": "What is the announcement about?",
+   "o": [
+    "\"a visit to the canteen\"",
+    "\"a competition for pupils\"",
+    "\"a new rule about plastic bottles\"",
+    "\"a new water company in the town, I suppose\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 0,
+   "u": "Zoek de kern van de tekst. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"a visit to the canteen\"\"? Dan denk je dat de kantine het onderwerp is. De kantine komt alleen voor als plek, en is het onderwerp niet.",
+    "Koos je \"\"a competition for pupils\"\"? Dan denk je dat er een wedstrijd is. Er wordt geen prijs genoemd, en niemand hoeft te winnen.",
+    "Klopt: de directeur kondigt een nieuwe regel aan: geen plastic flessen meer.",
+    "Koos je \"\"a new water company in the town, I suppose\"\"? Dan denk je dat het over een bedrijf gaat. De waterpunten staan in de school, en een bedrijf wordt niet genoemd."
+   ],
+   "uh": "What is the announcement about?",
+   "ctx": "You hear an announcement at school: \"Good morning, everybody. This is an announcement from the head teacher. From Monday, our school will have a new rule: no more plastic bottles. Every year, our canteen sells about ten thousand plastic bottles, and most of them end up in the bin. That is a lot of waste for one school. So we ask all pupils to bring their own bottle and fill it with tap water at one of the new water points in the hall. Pupils who forget a bottle can buy a reusable one in the canteen for two euros. We hope that everybody will help. Thank you very much for listening.\""
+  },
+  {
+   "v": "Why does the head teacher give this announcement?",
+   "o": [
+    "\"to sell more drinks in the canteen\"",
+    "\"to ask pupils to use their own bottle\"",
+    "\"to thank the pupils for a good year\"",
+    "\"to tell the pupils that the school will close\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 1,
+   "u": "Zoek de kern van de tekst. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"to sell more drinks in the canteen\"\"? Dan denk je dat de school meer wil verkopen. De regel stopt juist de verkoop van flessen, dus dat is het tegenovergestelde.",
+    "Klopt: na so vraagt hij alle leerlingen een eigen fles mee te nemen.",
+    "Koos je \"\"to thank the pupils for a good year\"\"? Dan denk je dat de directeur bedankt. Hij bedankt alleen aan het einde voor het luisteren, en dat is niet het doel.",
+    "Koos je \"\"to tell the pupils that the school will close\"\"? Dan denk je dat de school sluit. Alleen een nieuwe regel wordt genoemd, en geen sluiting."
+   ],
+   "uh": "Why does the head teacher give this announcement?",
+   "ctx": "You hear an announcement at school: \"Good morning, everybody. This is an announcement from the head teacher. From Monday, our school will have a new rule: no more plastic bottles. Every year, our canteen sells about ten thousand plastic bottles, and most of them end up in the bin. That is a lot of waste for one school. So we ask all pupils to bring their own bottle and fill it with tap water at one of the new water points in the hall. Pupils who forget a bottle can buy a reusable one in the canteen for two euros. We hope that everybody will help. Thank you very much for listening.\""
+  },
+  {
+   "v": "Which piece of information is a side issue?",
+   "o": [
+    "\"the school gets a new rule\"",
+    "\"the canteen sells a lot of plastic bottles\"",
+    "\"pupils must bring their own bottle\"",
+    "\"a reusable bottle costs two euros\""
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 2,
+   "u": "Zoek de kern van de tekst. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"the school gets a new rule\"\"? Dan denk je dat de regel een detail is. De regel is juist de kern, en dus hoofdzaak.",
+    "Koos je \"\"the canteen sells a lot of plastic bottles\"\"? Dan denk je dat dit een bijzaak is. Het is de reden voor de regel, en hoort bij de kern.",
+    "Koos je \"\"pupils must bring their own bottle\"\"? Dan denk je dat dit een extraatje is. Het is de oproep zelf, en dus hoofdzaak.",
+    "Klopt: de prijs is een detail; de kern is dat leerlingen een eigen fles meenemen."
+   ],
+   "uh": "Which piece of information is a side issue?",
+   "ctx": "You hear an announcement at school: \"Good morning, everybody. This is an announcement from the head teacher. From Monday, our school will have a new rule: no more plastic bottles. Every year, our canteen sells about ten thousand plastic bottles, and most of them end up in the bin. That is a lot of waste for one school. So we ask all pupils to bring their own bottle and fill it with tap water at one of the new water points in the hall. Pupils who forget a bottle can buy a reusable one in the canteen for two euros. We hope that everybody will help. Thank you very much for listening.\""
+  },
+  {
+   "v": "Which sentence gives the main idea?",
+   "o": [
+    "\"So we ask all pupils to bring their own bottle.\"",
+    "\"That is a lot of waste for one school.\"",
+    "\"Every year, our canteen sells about ten thousand plastic bottles.\"",
+    "\"Pupils who forget a bottle can buy a reusable one.\""
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 3,
+   "u": "Zoek de kern van de tekst. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: de zin met so noemt het gevolg en de oproep, dus de kern.",
+    "Koos je \"\"That is a lot of waste for one school.\"\"? Dan denk je dat deze zin de kern is. Hij beoordeelt alleen het probleem, maar de oproep ontbreekt.",
+    "Koos je \"\"Every year, our canteen sells about ten thousand plastic bottles.\"\"? Dan denk je dat dit getal de kern is. Het is een feit dat de regel onderbouwt, en hoort bij de bijzaken.",
+    "Koos je \"\"Pupils who forget a bottle can buy a reusable one.\"\"? Dan denk je dat deze zin de kern is. Hij geeft een uitzondering, en dat is een detail."
+   ],
+   "uh": "Which sentence gives the main idea?",
+   "ctx": "You hear an announcement at school: \"Good morning, everybody. This is an announcement from the head teacher. From Monday, our school will have a new rule: no more plastic bottles. Every year, our canteen sells about ten thousand plastic bottles, and most of them end up in the bin. That is a lot of waste for one school. So we ask all pupils to bring their own bottle and fill it with tap water at one of the new water points in the hall. Pupils who forget a bottle can buy a reusable one in the canteen for two euros. We hope that everybody will help. Thank you very much for listening.\""
+  },
+  {
+   "v": "What is the main idea of the message?",
+   "o": [
+    "\"Noah wants to go to the beach in the rain, to be honest\"",
+    "\"Noah cannot come on Saturday\"",
+    "\"Noah wants to do something else on Saturday\"",
+    "\"Noah wants to buy a comedy film\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 0,
+   "u": "Zoek de kern van de tekst. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"Noah wants to go to the beach in the rain, to be honest\"\"? Dan denk je dat het beachplan blijft. Noah zegt dat het regent, en stelt iets anders voor.",
+    "Koos je \"\"Noah cannot come on Saturday\"\"? Dan denk je dat Noah afzegt. Hij komt wel, en wil alleen een ander plan.",
+    "Klopt: de beachplannen gaan niet door en Noah doet een nieuw voorstel.",
+    "Koos je \"\"Noah wants to buy a comedy film\"\"? Dan denk je dat het om een aankoop gaat. De film is een voorstel voor uitgaan, en geen koop."
+   ],
+   "uh": "What is the main idea of the message?",
+   "ctx": "You hear a voicemail message (read the transcript): \"Hi Lisa, it is Noah. I am calling about Saturday. I know we wanted to go to the beach, but the weather forecast is terrible. It is going to rain all day and it will be very windy. So I think we should do something else. Maybe we can go to the cinema in the afternoon? There is a new comedy film at three o'clock. My mum says she can drive us there and pick us up afterwards, so that is no problem. After the film we could eat pizza at my house. I have already asked Emma and she would like to join us. Please call me back tonight and tell me what you think. Bye!\""
+  },
+  {
+   "v": "Why is Noah calling Lisa?",
+   "o": [
+    "\"to ask for her homework\"",
+    "\"to suggest a new plan for Saturday\"",
+    "\"to thank her for a present\"",
+    "\"to complain about the cinema, I suppose\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 1,
+   "u": "Zoek de kern van de tekst. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"to ask for her homework\"\"? Dan denk je dat Noah huiswerk wil. Er wordt geen huiswerk genoemd, dus je verzint iets.",
+    "Klopt: hij belt omdat het strand niet kan en hij een andere activiteit voorstelt.",
+    "Koos je \"\"to thank her for a present\"\"? Dan denk je dat hij haar bedankt. Er is geen cadeau genoemd, dus dat hoort er niet bij.",
+    "Koos je \"\"to complain about the cinema, I suppose\"\"? Dan denk je dat hij klaagt over de bioscoop. Hij noemt de bioscoop als goed idee, en klaagt dus niet."
+   ],
+   "uh": "Why is Noah calling Lisa?",
+   "ctx": "You hear a voicemail message (read the transcript): \"Hi Lisa, it is Noah. I am calling about Saturday. I know we wanted to go to the beach, but the weather forecast is terrible. It is going to rain all day and it will be very windy. So I think we should do something else. Maybe we can go to the cinema in the afternoon? There is a new comedy film at three o'clock. My mum says she can drive us there and pick us up afterwards, so that is no problem. After the film we could eat pizza at my house. I have already asked Emma and she would like to join us. Please call me back tonight and tell me what you think. Bye!\""
+  },
+  {
+   "v": "Which piece of information is a side issue?",
+   "o": [
+    "\"the weather forecast is terrible, you know\"",
+    "\"Noah suggests the cinema\"",
+    "\"Noah asks Lisa to call back\"",
+    "\"his mum can drive them to the cinema\""
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 2,
+   "u": "Zoek de kern van de tekst. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"the weather forecast is terrible, you know\"\"? Dan denk je dat het weer een detail is. Het is de reden voor het nieuwe plan, dus het hoort bij de kern.",
+    "Koos je \"\"Noah suggests the cinema\"\"? Dan denk je dat het voorstel een bijzaak is. Het voorstel is juist de kern, en dus hoofdzaak.",
+    "Koos je \"\"Noah asks Lisa to call back\"\"? Dan denk je dat dit een extraatje is. Het is een directe vraag, en hoort bij de kern.",
+    "Klopt: het vervoer is een extra detail; de kern is het nieuwe plan voor zaterdag."
+   ],
+   "uh": "Which piece of information is a side issue?",
+   "ctx": "You hear a voicemail message (read the transcript): \"Hi Lisa, it is Noah. I am calling about Saturday. I know we wanted to go to the beach, but the weather forecast is terrible. It is going to rain all day and it will be very windy. So I think we should do something else. Maybe we can go to the cinema in the afternoon? There is a new comedy film at three o'clock. My mum says she can drive us there and pick us up afterwards, so that is no problem. After the film we could eat pizza at my house. I have already asked Emma and she would like to join us. Please call me back tonight and tell me what you think. Bye!\""
+  },
+  {
+   "v": "What is the main idea of the news item?",
+   "o": [
+    "\"a heat warning for the south, with advice\"",
+    "\"the weather will be cold and rainy, really, to be honest\"",
+    "\"a holiday for schools in the south\"",
+    "\"a new doctor in the south\""
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 0,
+   "u": "Zoek de kern van de tekst. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: het bericht waarschuwt voor hitte en geeft advies om veilig te blijven.",
+    "Koos je \"\"the weather will be cold and rainy, really, to be honest\"\"? Dan denk je dat het weer koud wordt. Het gaat om dertig graden, dus het is juist heet.",
+    "Koos je \"\"a holiday for schools in the south\"\"? Dan denk je dat scholen vrij krijgen. Alleen sommige scholen gaan eerder dicht, en dat is een detail.",
+    "Koos je \"\"a new doctor in the south\"\"? Dan denk je dat een dokter het onderwerp is. De dokters worden maar even genoemd, en niet als kern."
+   ],
+   "uh": "What is the main idea of the news item?",
+   "ctx": "You hear a news item on the radio (read the transcript): \"This is the news at noon. The weather service has issued a warning for tomorrow. Temperatures will rise to thirty-five degrees in the south of the country, and it will stay hot for three days. People should drink a lot of water, stay in the shade and avoid hard exercise in the afternoon. Older people and small children are most at risk, so neighbours are asked to check on them. Some schools in the south will close early. Doctors say that it is not dangerous if you take care. The warning will end on Friday evening. That was the news. Stay tuned for the weather report at one o'clock.\""
+  },
+  {
+   "v": "What is the aim of the news item?",
+   "o": [
+    "\"to make people laugh\"",
+    "\"to sell water to people, I think\"",
+    "\"to warn people and give advice\"",
+    "\"to report an accident\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 1,
+   "u": "Zoek de kern van de tekst. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"to make people laugh\"\"? Dan denk je dat het bericht grappig is. Het onderwerp is hitte, en dat is serieus.",
+    "Koos je \"\"to sell water to people, I think\"\"? Dan denk je dat de radio water verkoopt. Er wordt geen merk of prijs genoemd, dus het is geen reclame.",
+    "Klopt: het bericht waarschuwt voor hitte en zegt wat mensen kunnen doen.",
+    "Koos je \"\"to report an accident\"\"? Dan denk je dat er iets gebeurd is. Het gaat om een waarschuwing voor morgen, en niet om een ongeluk."
+   ],
+   "uh": "What is the aim of the news item?",
+   "ctx": "You hear a news item on the radio (read the transcript): \"This is the news at noon. The weather service has issued a warning for tomorrow. Temperatures will rise to thirty-five degrees in the south of the country, and it will stay hot for three days. People should drink a lot of water, stay in the shade and avoid hard exercise in the afternoon. Older people and small children are most at risk, so neighbours are asked to check on them. Some schools in the south will close early. Doctors say that it is not dangerous if you take care. The warning will end on Friday evening. That was the news. Stay tuned for the weather report at one o'clock.\""
+  },
+  {
+   "v": "Which advice fits the main idea of the news item?",
+   "o": [
+    "\"wear warm clothes\"",
+    "\"drink a lot of water and stay in the shade\"",
+    "\"go for a long run at two o'clock, to be honest\"",
+    "\"stay outside all afternoon\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 4,
+   "u": "Zoek de kern van de tekst. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"wear warm clothes\"\"? Dan denk je dat het koud wordt. Er is hitte voorspeld, en warme kleren passen daar niet bij.",
+    "Klopt: bij hitte hoort water drinken en schaduw zoeken.",
+    "Koos je \"\"go for a long run at two o'clock, to be honest\"\"? Dan denk je dat hardlopen kan. De radio zegt hard sporten in de middag te vermijden, dus dit is juist verkeerd.",
+    "Koos je \"\"stay outside all afternoon\"\"? Dan denk je dat buiten blijven oké is. In de heetste uren is dat riskant, en de radio raadt het niet aan."
+   ],
+   "uh": "Which advice fits the main idea of the news item?",
+   "ctx": "You hear a news item on the radio (read the transcript): \"This is the news at noon. The weather service has issued a warning for tomorrow. Temperatures will rise to thirty-five degrees in the south of the country, and it will stay hot for three days. People should drink a lot of water, stay in the shade and avoid hard exercise in the afternoon. Older people and small children are most at risk, so neighbours are asked to check on them. Some schools in the south will close early. Doctors say that it is not dangerous if you take care. The warning will end on Friday evening. That was the news. Stay tuned for the weather report at one o'clock.\""
+  },
+  {
+   "v": "Which statement is the best summary of the announcement?",
+   "o": [
+    "\"The school sells reusable bottles for two euros, I suppose, really, to be honest.\"",
+    "\"The canteen sold a lot of bottles last year.\"",
+    "\"There are new water points in the hall.\"",
+    "\"The school wants less plastic waste, so pupils must bring a bottle.\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 2,
+   "u": "Zoek de kern van de tekst. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"The school sells reusable bottles for two euros, I suppose, really, to be honest.\"\"? Dan denk je dat de prijs de kern is. Het is een bijzaak, en de oproep ontbreekt.",
+    "Koos je \"\"The canteen sold a lot of bottles last year.\"\"? Dan denk je dat dit getal de samenvatting is. Het is alleen de reden, en niet de regel zelf.",
+    "Koos je \"\"There are new water points in the hall.\"\"? Dan denk je dat de waterpunten de kern zijn. Ze zijn een hulpmiddel, en niet de boodschap.",
+    "Klopt: deze zin bevat zowel het probleem als de oproep en dekt de hele tekst."
+   ],
+   "uh": "Which statement is the best summary of the announcement?",
+   "ctx": "You hear an announcement at school: \"Good morning, everybody. This is an announcement from the head teacher. From Monday, our school will have a new rule: no more plastic bottles. Every year, our canteen sells about ten thousand plastic bottles, and most of them end up in the bin. That is a lot of waste for one school. So we ask all pupils to bring their own bottle and fill it with tap water at one of the new water points in the hall. Pupils who forget a bottle can buy a reusable one in the canteen for two euros. We hope that everybody will help. Thank you very much for listening.\""
+  },
+  {
+   "v": "What does 'So' in 'So we ask all pupils' show?",
+   "o": [
+    "\"that a request follows because of the problem\"",
+    "\"that the head teacher is finishing, you know, I think\"",
+    "\"that something surprising happens\"",
+    "\"that the problem is not important\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 3,
+   "u": "Zoek de kern van de tekst. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: so geeft een gevolg aan: omdat er veel afval is, volgt de oproep.",
+    "Koos je \"\"that the head teacher is finishing, you know, I think\"\"? Dan denk je dat so een einde aangeeft. Na so volgt nog de hele oproep, dus de tekst gaat door.",
+    "Koos je \"\"that something surprising happens\"\"? Dan denk je dat so verbaasd is. Het woord geeft een reden-gevolg aan, en geen verrassing.",
+    "Koos je \"\"that the problem is not important\"\"? Dan denk je dat so het probleem klein maakt. De spreker noemt het juist veel afval, en dat is serieus."
+   ],
+   "uh": "What does 'So' in 'So we ask all pupils' show?",
+   "ctx": "You hear an announcement at school: \"Good morning, everybody. This is an announcement from the head teacher. From Monday, our school will have a new rule: no more plastic bottles. Every year, our canteen sells about ten thousand plastic bottles, and most of them end up in the bin. That is a lot of waste for one school. So we ask all pupils to bring their own bottle and fill it with tap water at one of the new water points in the hall. Pupils who forget a bottle can buy a reusable one in the canteen for two euros. We hope that everybody will help. Thank you very much for listening.\""
+  },
+  {
+   "v": "A pupil says: 'The announcement is about the price of bottles.' Is that the main idea?",
+   "o": [
+    "\"Yes, because two euros is mentioned.\"",
+    "\"Yes, because the canteen is mentioned.\"",
+    "\"No, the price is only a detail.\"",
+    "\"No, because there is no price at all.\""
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 4,
+   "u": "Zoek de kern van de tekst. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"Yes, because two euros is mentioned.\"\"? Dan denk je dat één genoemd bedrag de kern maakt. Eén getal maakt het nog geen hoofdzaak, want de tekst gaat over de regel.",
+    "Koos je \"\"Yes, because the canteen is mentioned.\"\"? Dan denk je dat de kantine het onderwerp is. De kantine is alleen een plek, en niet de kern.",
+    "Klopt: de prijs wordt kort genoemd; de kern is de regel en de oproep.",
+    "Koos je \"\"No, because there is no price at all.\"\"? Dan denk je dat er geen prijs is. Er is wel een prijs genoemd, maar het is slechts een detail."
+   ],
+   "uh": "A pupil says: 'The announcement is about the price of bottles.' Is that the main idea?",
+   "ctx": "You hear an announcement at school: \"Good morning, everybody. This is an announcement from the head teacher. From Monday, our school will have a new rule: no more plastic bottles. Every year, our canteen sells about ten thousand plastic bottles, and most of them end up in the bin. That is a lot of waste for one school. So we ask all pupils to bring their own bottle and fill it with tap water at one of the new water points in the hall. Pupils who forget a bottle can buy a reusable one in the canteen for two euros. We hope that everybody will help. Thank you very much for listening.\""
+  },
+  {
+   "v": "Which word introduces the problem with the beach plan?",
+   "o": [
+    "\"maybe\"",
+    "\"but\"",
+    "\"after\"",
+    "\"please\""
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 3,
+   "u": "Zoek de kern van de tekst. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"maybe\"\"? Dan denk je dat maybe het probleem noemt. Maybe leidt een voorstel in, en geen probleem.",
+    "Klopt: na but noemt Noah het probleem: het weer is slecht.",
+    "Koos je \"\"after\"\"? Dan denk je dat after het probleem noemt. After geeft een volgorde aan, en geen probleem.",
+    "Koos je \"\"please\"\"? Dan denk je dat please het probleem noemt. Het hoort bij een verzoek, en niet bij een probleem."
+   ],
+   "uh": "Which word introduces the problem with the beach plan?",
+   "ctx": "You hear a voicemail message (read the transcript): \"Hi Lisa, it is Noah. I am calling about Saturday. I know we wanted to go to the beach, but the weather forecast is terrible. It is going to rain all day and it will be very windy. So I think we should do something else. Maybe we can go to the cinema in the afternoon? There is a new comedy film at three o'clock. My mum says she can drive us there and pick us up afterwards, so that is no problem. After the film we could eat pizza at my house. I have already asked Emma and she would like to join us. Please call me back tonight and tell me what you think. Bye!\""
+  },
+  {
+   "v": "What does Noah want Lisa to do?",
+   "o": [
+    "\"meet him at the beach on Saturday, to be honest\"",
+    "\"bring pizza on Saturday\"",
+    "\"ask Emma to call him\"",
+    "\"call him back tonight and say what she thinks\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 1,
+   "u": "Zoek de kern van de tekst. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"meet him at the beach on Saturday, to be honest\"\"? Dan denk je dat het strand nog doorgaat. Hij noemt de regen, dus dat plan vervalt.",
+    "Koos je \"\"bring pizza on Saturday\"\"? Dan denk je dat Lisa pizza moet meenemen. De pizza eten ze bij Noah thuis, en zij hoeft niets mee te nemen.",
+    "Koos je \"\"ask Emma to call him\"\"? Dan denk je dat Emma moet bellen. Emma is al gevraagd, en Lisa moet bellen.",
+    "Klopt: de laatste zin vraagt haar vanavond terug te bellen."
+   ],
+   "uh": "What does Noah want Lisa to do?",
+   "ctx": "You hear a voicemail message (read the transcript): \"Hi Lisa, it is Noah. I am calling about Saturday. I know we wanted to go to the beach, but the weather forecast is terrible. It is going to rain all day and it will be very windy. So I think we should do something else. Maybe we can go to the cinema in the afternoon? There is a new comedy film at three o'clock. My mum says she can drive us there and pick us up afterwards, so that is no problem. After the film we could eat pizza at my house. I have already asked Emma and she would like to join us. Please call me back tonight and tell me what you think. Bye!\""
+  },
+  {
+   "v": "Which title fits the whole message best?",
+   "o": [
+    "\"A new plan for a rainy Saturday\"",
+    "\"A day at the beach\"",
+    "\"The best pizza in town\"",
+    "\"A film at three o'clock, I suppose\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 4,
+   "u": "Zoek de kern van de tekst. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: de titel noemt zowel het weer als het nieuwe plan, dus de hele boodschap.",
+    "Koos je \"\"A day at the beach\"\"? Dan denk je dat het strand de kern is. Dat plan wordt juist afgeblazen, dus de titel past niet.",
+    "Koos je \"\"The best pizza in town\"\"? Dan denk je dat pizza de kern is. Pizza is maar een deel van het voorstel, en niet de boodschap.",
+    "Koos je \"\"A film at three o'clock, I suppose\"\"? Dan denk je dat de film de kern is. Het is één onderdeel van het plan, en dekt niet de hele boodschap."
+   ],
+   "uh": "Which title fits the whole message best?",
+   "ctx": "You hear a voicemail message (read the transcript): \"Hi Lisa, it is Noah. I am calling about Saturday. I know we wanted to go to the beach, but the weather forecast is terrible. It is going to rain all day and it will be very windy. So I think we should do something else. Maybe we can go to the cinema in the afternoon? There is a new comedy film at three o'clock. My mum says she can drive us there and pick us up afterwards, so that is no problem. After the film we could eat pizza at my house. I have already asked Emma and she would like to join us. Please call me back tonight and tell me what you think. Bye!\""
+  },
+  {
+   "v": "Which sentence best gives the main idea?",
+   "o": [
+    "\"The warning will end on Friday evening.\"",
+    "\"Some schools in the south will close early, you know, I think.\"",
+    "\"It will be very hot in the south, so people must take care.\"",
+    "\"Doctors say that it is not dangerous.\""
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 0,
+   "u": "Zoek de kern van de tekst. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"The warning will end on Friday evening.\"\"? Dan denk je dat de einddatum de kern is. Het is een detail over de duur, en niet de boodschap.",
+    "Koos je \"\"Some schools in the south will close early, you know, I think.\"\"? Dan denk je dat schoolsluiting de kern is. Het is één gevolg, en niet de hele boodschap.",
+    "Klopt: de zin noemt zowel de hitte als de oproep om voorzichtig te zijn.",
+    "Koos je \"\"Doctors say that it is not dangerous.\"\"? Dan denk je dat dit de kern is. De zin kalmeert maar noemt de hitte niet, dus de waarschuwing mist."
+   ],
+   "uh": "Which sentence best gives the main idea?",
+   "ctx": "You hear a news item on the radio (read the transcript): \"This is the news at noon. The weather service has issued a warning for tomorrow. Temperatures will rise to thirty-five degrees in the south of the country, and it will stay hot for three days. People should drink a lot of water, stay in the shade and avoid hard exercise in the afternoon. Older people and small children are most at risk, so neighbours are asked to check on them. Some schools in the south will close early. Doctors say that it is not dangerous if you take care. The warning will end on Friday evening. That was the news. Stay tuned for the weather report at one o'clock.\""
+  },
+  {
+   "v": "Why are neighbours asked to check on others?",
+   "o": [
+    "\"because the schools are closed\"",
+    "\"because older people and small children are most at risk\"",
+    "\"because the water has run out\"",
+    "\"because the weather service asked children to stay in, really\""
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 2,
+   "u": "Zoek de kern van de tekst. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"because the schools are closed\"\"? Dan denk je dat dit de reden is. Sluiting is een gevolg van de hitte, en niet de reden voor de buren.",
+    "Klopt: de reden staat voor so: zij lopen het grootste risico bij hitte.",
+    "Koos je \"\"because the water has run out\"\"? Dan denk je dat het water op is. Er wordt juist aangeraden veel water te drinken, dus het is er wel.",
+    "Koos je \"\"because the weather service asked children to stay in, really\"\"? Dan denk je dat kinderen binnen moeten blijven. De dienst zegt dat niet, en vraagt alleen aan buren om te kijken."
+   ],
+   "uh": "Why are neighbours asked to check on others?",
+   "ctx": "You hear a news item on the radio (read the transcript): \"This is the news at noon. The weather service has issued a warning for tomorrow. Temperatures will rise to thirty-five degrees in the south of the country, and it will stay hot for three days. People should drink a lot of water, stay in the shade and avoid hard exercise in the afternoon. Older people and small children are most at risk, so neighbours are asked to check on them. Some schools in the south will close early. Doctors say that it is not dangerous if you take care. The warning will end on Friday evening. That was the news. Stay tuned for the weather report at one o'clock.\""
+  },
+  {
+   "v": "What does 'so' show in 'so neighbours are asked to check on them'?",
+   "o": [
+    "\"a contrast with what was said before, I think, I suppose, really\"",
+    "\"an example of hard exercise\"",
+    "\"the end of the news item\"",
+    "\"a result of the risk for older people and small children\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 3,
+   "u": "Zoek de kern van de tekst. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"a contrast with what was said before, I think, I suppose, really\"\"? Dan denk je dat so een tegenstelling is. Een tegenstelling begint met but, en so geeft een gevolg.",
+    "Koos je \"\"an example of hard exercise\"\"? Dan denk je dat so een voorbeeld inleidt. Een voorbeeld begint met for example, en dit gaat over een gevolg.",
+    "Koos je \"\"the end of the news item\"\"? Dan denk je dat so het einde aangeeft. Na so volgt nog een stuk van het bericht, dus het is geen slot.",
+    "Klopt: so geeft aan dat het verzoek volgt uit het risico."
+   ],
+   "uh": "What does 'so' show in 'so neighbours are asked to check on them'?",
+   "ctx": "You hear a news item on the radio (read the transcript): \"This is the news at noon. The weather service has issued a warning for tomorrow. Temperatures will rise to thirty-five degrees in the south of the country, and it will stay hot for three days. People should drink a lot of water, stay in the shade and avoid hard exercise in the afternoon. Older people and small children are most at risk, so neighbours are asked to check on them. Some schools in the south will close early. Doctors say that it is not dangerous if you take care. The warning will end on Friday evening. That was the news. Stay tuned for the weather report at one o'clock.\""
+  },
+  {
+   "v": "Doctors say it is not dangerous if you take care. How does that fit the main idea?",
+   "o": [
+    "\"it supports the advice to take care\"",
+    "\"it shows the warning is a mistake\"",
+    "\"it changes the main idea into good news\"",
+    "\"it is the only important sentence of the text\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 4,
+   "u": "Zoek de kern van de tekst. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: de uitspraak ondersteunt het advies uit de kern, namelijk voorzichtig zijn.",
+    "Koos je \"\"it shows the warning is a mistake\"\"? Dan denk je dat de waarschuwing onjuist is. De dokters bevestigen juist dat voorzichtigheid helpt, dus er is geen fout.",
+    "Koos je \"\"it changes the main idea into good news\"\"? Dan denk je dat het goed nieuws wordt. De kern blijft de hitte-waarschuwing, en dit is slechts een geruststelling.",
+    "Koos je \"\"it is the only important sentence of the text\"\"? Dan denk je dat dit de enige belangrijke zin is. De waarschuwing en het advies zijn belangrijker, en dit is slechts een toelichting."
+   ],
+   "uh": "Doctors say it is not dangerous if you take care. How does that fit the main idea?",
+   "ctx": "You hear a news item on the radio (read the transcript): \"This is the news at noon. The weather service has issued a warning for tomorrow. Temperatures will rise to thirty-five degrees in the south of the country, and it will stay hot for three days. People should drink a lot of water, stay in the shade and avoid hard exercise in the afternoon. Older people and small children are most at risk, so neighbours are asked to check on them. Some schools in the south will close early. Doctors say that it is not dangerous if you take care. The warning will end on Friday evening. That was the news. Stay tuned for the weather report at one o'clock.\""
+  }
+ ],
+ "oe": [
+  {
+   "bron": "Examenstijl",
+   "ctx": "You hear a message on a school phone: \"Good afternoon. This is a message for all pupils of class 2. The football match on Friday is cancelled because the pitch is too wet. Instead, we will play a game in the gym at one o'clock. Please bring your sports shoes. If you cannot come, please tell your teacher.\" (read the transcript)",
+   "v": "Write the main idea of the message in one sentence in Dutch.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "De wedstrijd gaat niet door vanwege een natte grasmat (1p). In plaats daarvan is er een spel in de gymzaal (1p). Een duidelijke samenvatting in één zin (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "You hear a radio advertisement: \"Are you tired of slow internet? Try Fastnet! This week only, you pay half the price for six months. Call us now on 020 555 0188 and you will get a free router.\" (read the transcript)",
+   "v": "Write what the aim of this text is and which words show this.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Doel: overtuigen om Fastnet te nemen (1p). Woorden: this week only of free router (1p). Een duidelijke koppeling van doel en woorden (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "You hear a news item: \"Heavy snow is expected tonight. Trains will run less often and some roads will be closed. People are asked to stay at home if possible. The snow will stop tomorrow afternoon.\" (read the transcript)",
+   "v": "Write the main idea and name one piece of advice.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Zware sneeuw met overlast (1p). Advies: thuisblijven (1p). Hoofdgedachte en advies correct (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "You hear a voicemail: \"Hi Sam, it is Eva. I cannot come to the party on Saturday, because I am ill. I am sorry. But I would like to see you next week. Are you free on Wednesday?\" (read the transcript)",
+   "v": "Write which word introduces the tegenstelling and what Eva wants to say in the end.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "But (1p). Eva wil Sam volgende week zien (1p). Zij zegt eerst af, daarna doet ze een voorstel (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Your classmate says: \"The main idea of a text is always the first sentence.\" You disagree.",
+   "v": "Write two sentences in English that explain why he is wrong.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "De eerste zin kan een inleiding zijn (1p). De hoofdgedachte moet bij de hele tekst passen (1p). Een duidelijke uitleg (1p)."
+  }
+ ]
+}

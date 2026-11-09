@@ -861,6 +861,27 @@ var VAKKEN_VMBO = [
       "nOe": 5,
       "nBeg": 12,
       "hasSam": true
+     },
+     {
+      "id": "B2",
+      "lo": "en.B.2",
+      "gs": 2,
+      "naam": "De hoofdgedachte van een luistertekst bepalen",
+      "beschrijving": "Je leert de hoofdgedachte van een Engelse gesproken tekst te vinden: je onderscheidt hoofdzaak en bijzaak, herkent het doel van de spreker, gebruikt signaalwoorden zoals but en so en controleert je antwoord met de hele tekst.",
+      "ceStatus": "CE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Wat is de hoofdgedachte?",
+       "Het doel van de spreker",
+       "Hoofdzaak en bijzaak",
+       "Signaalwoorden",
+       "Je hoofdgedachte controleren"
+      ],
+      "nSv": 27,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
      }
     ]
    },
