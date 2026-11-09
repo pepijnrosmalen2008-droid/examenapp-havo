@@ -839,7 +839,30 @@ var VAKKEN_VMBO = [
     "nSv": 32,
     "nOe": 0,
     "nBeg": 11,
-    "hasSam": true
+    "hasSam": true,
+    "leerdoelen": [
+     {
+      "id": "B1",
+      "lo": "en.B.1",
+      "gs": 2,
+      "naam": "Informatie vinden in een gesproken tekst",
+      "beschrijving": "Je leert in een Engelse gesproken tekst gericht informatie te vinden: je bereidt je voor met de vragen, verstaat tijden, getallen en bedragen, noteert namen, plaatsen en voorwaarden en controleert je aantekeningen bij de tweede keer luisteren.",
+      "ceStatus": "CE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Voorbereiden op het luisteren",
+       "Tijden, getallen en bedragen",
+       "Namen, plaatsen en voorwaarden",
+       "Afleiders herkennen",
+       "Controleren en aanvullen"
+      ],
+      "nSv": 27,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
+     }
+    ]
    },
    {
     "id": "C",

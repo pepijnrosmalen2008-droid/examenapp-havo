@@ -1,0 +1,682 @@
+{
+ "id": "B1",
+ "lo": "en.B.1",
+ "gs": 2,
+ "naam": "Informatie vinden in een gesproken tekst",
+ "beschrijving": "Je leert in een Engelse gesproken tekst gericht informatie te vinden: je bereidt je voor met de vragen, verstaat tijden, getallen en bedragen, noteert namen, plaatsen en voorwaarden en controleert je aantekeningen bij de tweede keer luisteren.",
+ "ceStatus": "CE",
+ "binas": "",
+ "val": "",
+ "onderwerpen": [
+  "Voorbereiden op het luisteren",
+  "Tijden, getallen en bedragen",
+  "Namen, plaatsen en voorwaarden",
+  "Afleiders herkennen",
+  "Controleren en aanvullen"
+ ],
+ "sam": "Bij een gesproken tekst lees je eerst de vragen en bepaal je je luisterdoel. Let op tijden zoals a quarter past, getallen zoals thirteen en thirty en bedragen met euros of per cent. Noteer namen, plaatsen en voorwaarden. Een afleider lijkt op het antwoord maar hoort bij iets anders. Controleer je aantekeningen bij de tweede keer luisteren.",
+ "begrippen": [
+  {
+   "t": "Luisterdoel",
+   "d": "Waar je op moet letten, bepaald door de vragen."
+  },
+  {
+   "t": "Gegeven",
+   "d": "Een stukje informatie zoals een tijd, plaats of prijs."
+  },
+  {
+   "t": "Aantekening",
+   "d": "Een korte notitie tijdens het luisteren."
+  },
+  {
+   "t": "Tijd",
+   "d": "Een uur, zoals a quarter past three."
+  },
+  {
+   "t": "Getal",
+   "d": "Een aantal of bedrag, zoals thirteen of thirty."
+  },
+  {
+   "t": "Afleider",
+   "d": "Een woord of getal dat lijkt op het antwoord maar niet klopt."
+  },
+  {
+   "t": "Omroep",
+   "d": "Een gesproken mededeling in een station of winkel."
+  },
+  {
+   "t": "Voicemail",
+   "d": "Een ingesproken boodschap."
+  },
+  {
+   "t": "Reclame",
+   "d": "Een gesproken advertentie op de radio."
+  },
+  {
+   "t": "Voorwaarde",
+   "d": "Iets wat moet gebeuren, zoals kopen vóór zaterdag."
+  },
+  {
+   "t": "Controleren",
+   "d": "Je antwoord bij de tweede keer luisteren nakijken."
+  },
+  {
+   "t": "Herhaling",
+   "d": "Een tweede keer luisteren naar dezelfde tekst."
+  }
+ ],
+ "sv": [
+  {
+   "v": "Wat doe je vóór het luisteren?",
+   "o": [
+    "\"alleen rustig wachten tot het begint\"",
+    "\"de vragen lezen en bedenken waar je op moet letten\"",
+    "\"je antwoorden alvast invullen zonder te luisteren, denk ik\"",
+    "\"de tekst proberen uit je hoofd te leren\""
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 0,
+   "u": "Eerst de vragen lezen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"alleen rustig wachten tot het begint\"\"? Dan denk je dat voorbereiden niets toevoegt. Je mist dan wat je moet horen, en luistert niet gericht.",
+    "Klopt: met de vragen weet je welk gegeven je moet horen, zoals een tijd of een prijs.",
+    "Koos je \"\"je antwoorden alvast invullen zonder te luisteren, denk ik\"\"? Dan denk je dat gokken sneller is. Je antwoorden hoeven niet te kloppen, en je mist de aanwijzingen.",
+    "Koos je \"\"de tekst proberen uit je hoofd te leren\"\"? Dan denk je dat onthouden vooraf kan. Je kent de tekst nog niet, en kunt hem dus niet leren."
+   ],
+   "uh": "Wat doe je vóór het luisteren?"
+  },
+  {
+   "v": "Hoe onthoud je gegevens bij het luisteren het best?",
+   "o": [
+    "\"je probeert alles letterlijk op te schrijven\"",
+    "\"je schrijft niets op en vertrouwt op je geheugen, volgens mij\"",
+    "\"je schrijft alleen de eerste zin op\"",
+    "\"je noteert kort wat je hoort, zoals tijd, plaats en bedrag\""
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 0,
+   "u": "Noteer kort. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"je probeert alles letterlijk op te schrijven\"\"? Dan denk je dat alles opschrijven werkt. Je loopt dan achter, en mist het volgende gegeven.",
+    "Koos je \"\"je schrijft niets op en vertrouwt op je geheugen, volgens mij\"\"? Dan denk je dat je alles onthoudt. Cijfers en tijden vergeet je snel, en je vergist je.",
+    "Koos je \"\"je schrijft alleen de eerste zin op\"\"? Dan denk je dat de eerste zin genoeg is. De gegevens komen vaak later, en je mist ze.",
+    "Klopt: korte aantekeningen helpen je gegevens vast te houden."
+   ],
+   "uh": "Hoe onthoud je gegevens?"
+  },
+  {
+   "v": "Op welke woorden let je als je een tijd hoort?",
+   "o": [
+    "\"o'clock, half past, a quarter past en am of pm\"",
+    "\"good morning en goodbye, I suppose, really, to be honest\"",
+    "\"please en thank you\"",
+    "\"the en and\""
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 1,
+   "u": "Let op o'clock, past en to. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: dit zijn de woorden waarmee een tijd wordt genoemd in het Engels.",
+    "Koos je \"\"good morning en goodbye, I suppose, really, to be honest\"\"? Dan denk je dat groetwoorden een tijd noemen. Ze openen of sluiten alleen, en geven geen uur.",
+    "Koos je \"\"please en thank you\"\"? Dan denk je dat beleefdheidswoorden een tijd geven. Ze noemen geen gegeven, en helpen niet bij een tijd.",
+    "Koos je \"\"the en and\"\"? Dan denk je dat kleine woorden de tijd tonen. Ze noemen niets, en komen overal voor."
+   ],
+   "uh": "Op welke woorden let je bij een tijd?"
+  },
+  {
+   "v": "Wat betekent 'a quarter past three'?",
+   "o": [
+    "\"kwart voor drie, dus 2.45, eigenlijk\"",
+    "\"half drie, dus 2.30\"",
+    "\"kwart over drie, dus 3.15\"",
+    "\"drie uur precies\""
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 1,
+   "u": "A quarter past = 15 over. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"kwart voor drie, dus 2.45, eigenlijk\"\"? Dan denk je dat past voor betekent. Dat is to, en past is over.",
+    "Koos je \"\"half drie, dus 2.30\"\"? Dan denk je dat een kwartier half is. Half past three is 3.30, en dat is half over drie.",
+    "Klopt: a quarter is een kwartier en past betekent over.",
+    "Koos je \"\"drie uur precies\"\"? Dan denk je dat het drie uur is. Het is een kwartier later, dus 3.15."
+   ],
+   "uh": "Wat betekent a quarter past three?"
+  },
+  {
+   "v": "Wat doe je als je een woord niet verstaat?",
+   "o": [
+    "\"je stopt met luisteren\"",
+    "\"je luistert door en gebruikt de rest van de zin\"",
+    "\"je blijft piekeren over dat ene woord\"",
+    "\"je raadt een antwoord zonder te luisteren, gewoon\""
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 4,
+   "u": "Luister door. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"je stopt met luisteren\"\"? Dan denk je dat één gemist woord alles mislukt. Je mist dan de rest, en kunt niets meer invullen.",
+    "Klopt: de woorden eromheen geven vaak genoeg aanwijzingen om verder te kunnen.",
+    "Koos je \"\"je blijft piekeren over dat ene woord\"\"? Dan denk je dat het woord belangrijk genoeg is. Je mist dan de volgende zin, en dat kost punten.",
+    "Koos je \"\"je raadt een antwoord zonder te luisteren, gewoon\"\"? Dan denk je dat gokken beter is. Je geeft dan elke aanwijzing op, en kiest vaak fout."
+   ],
+   "uh": "Wat doe je met een onbekend woord?"
+  },
+  {
+   "v": "Welke getallen kun je gemakkelijk verwarren?",
+   "o": [
+    "\"one en two\"",
+    "\"six en eight\"",
+    "\"ten en hundred, denk ik\"",
+    "\"thirteen en thirty\""
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 3,
+   "u": "Thirteen = 13, thirty = 30. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"one en two\"\"? Dan denk je dat deze twee bijna gelijk klinken. Ze klinken heel verschillend, en zijn niet te verwarren.",
+    "Koos je \"\"six en eight\"\"? Dan denk je dat deze getallen op elkaar lijken. Ze klinken verschillend, en zijn goed te herkennen.",
+    "Koos je \"\"ten en hundred, denk ik\"\"? Dan denk je dat deze getallen op elkaar lijken. Ze klinken heel anders, en zijn niet te verwarren.",
+    "Klopt: in het Engels klinken -teen en -ty bijna gelijk, maar de klemtoon verschilt."
+   ],
+   "uh": "Welke getallen verwar je makkelijk?"
+  },
+  {
+   "v": "Wat doe je bij de tweede keer luisteren?",
+   "o": [
+    "\"je controleert je antwoorden en vult aan wat nog open is\"",
+    "\"je begint helemaal opnieuw, volgens mij, eigenlijk, denk ik\"",
+    "\"je wist je antwoorden\"",
+    "\"je let niet meer op\""
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 4,
+   "u": "Controleer en vul aan. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: de tweede keer gebruik je om te controleren en gaten in te vullen.",
+    "Koos je \"\"je begint helemaal opnieuw, volgens mij, eigenlijk, denk ik\"\"? Dan denk je dat je alles weer moet noteren. Je hebt al antwoorden, en die controleer je.",
+    "Koos je \"\"je wist je antwoorden\"\"? Dan denk je dat het eerste antwoord altijd fout is. Het kan juist goed zijn, en wissen kost je punten.",
+    "Koos je \"\"je let niet meer op\"\"? Dan denk je dat het niet meer nodig is. Je kunt je antwoorden nog verbeteren, en vult gaten aan."
+   ],
+   "uh": "Wat doe je de tweede keer?"
+  },
+  {
+   "v": "How long is the delay?",
+   "o": [
+    "\"nine thirty-five\"",
+    "\"fifteen minutes\"",
+    "\"twenty minutes\"",
+    "\"four minutes\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 1,
+   "u": "Zoek delayed by. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"nine thirty-five\"\"? Dan denk je dat 9.35 de duur is. Dat is de nieuwe vertrektijd, en geen aantal minuten.",
+    "Koos je \"\"fifteen minutes\"\"? Dan denk je dat 15 de vertraging is. Dat staat bij 9.15, en is de oorspronkelijke tijd.",
+    "Klopt: de omroeper zegt dat de trein twintig minuten vertraging heeft.",
+    "Koos je \"\"four minutes\"\"? Dan denk je dat 4 de vertraging is. Dat is het perron, en geen tijd."
+   ],
+   "uh": "Hoe lang is de vertraging?",
+   "ctx": "You hear an announcement at a station: \"Good morning, ladies and gentlemen. This is an announcement for passengers travelling to Manchester. The 9.15 train from platform 4 has been delayed by twenty minutes because of a technical problem. The new departure time is 9.35. Passengers with a reservation can get free tea or coffee at the information desk. Please note that platform 4 is also used for the train to Leeds at 9.40, so listen carefully for further announcements. We apologise for the delay and thank you for your patience.\""
+  },
+  {
+   "v": "What is the new departure time of the train to Manchester?",
+   "o": [
+    "\"9.15\"",
+    "\"9.35\"",
+    "\"9.40\"",
+    "\"9.55\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 1,
+   "u": "New departure time. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"9.15\"\"? Dan denk je dat 9.15 de nieuwe tijd is. Dat is de oude tijd, voor de vertraging.",
+    "Klopt: de omroeper zegt letterlijk dat the new departure time 9.35 is.",
+    "Koos je \"\"9.40\"\"? Dan denk je dat 9.40 de nieuwe tijd is. Dat is de trein naar Leeds, en een andere trein.",
+    "Koos je \"\"9.55\"\"? Dan denk je dat 9.55 de nieuwe tijd is. Je telt twintig minuten bij 9.35 op, maar het eerste getal is al aangepast."
+   ],
+   "uh": "Wat is de nieuwe vertrektijd?",
+   "ctx": "You hear an announcement at a station: \"Good morning, ladies and gentlemen. This is an announcement for passengers travelling to Manchester. The 9.15 train from platform 4 has been delayed by twenty minutes because of a technical problem. The new departure time is 9.35. Passengers with a reservation can get free tea or coffee at the information desk. Please note that platform 4 is also used for the train to Leeds at 9.40, so listen carefully for further announcements. We apologise for the delay and thank you for your patience.\""
+  },
+  {
+   "v": "Where can passengers with a reservation get free tea or coffee?",
+   "o": [
+    "\"on platform 4\"",
+    "\"on the train to Leeds, really\"",
+    "\"at the ticket machine\"",
+    "\"at the information desk\""
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 2,
+   "u": "Plaats noteren. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"on platform 4\"\"? Dan denk je dat het op perron 4 is. Perron 4 is voor de trein, en de balie is een andere plek.",
+    "Koos je \"\"on the train to Leeds, really\"\"? Dan denk je dat het in de trein naar Leeds is. Die trein vertrekt later, en is niet de plek.",
+    "Koos je \"\"at the ticket machine\"\"? Dan denk je dat het bij het kaartjesautomaat is. Daar staat niets over, en je verzint iets.",
+    "Klopt: de omroeper noemt de informatiebalie als plek voor gratis thee of koffie."
+   ],
+   "uh": "Waar krijg je gratis koffie?",
+   "ctx": "You hear an announcement at a station: \"Good morning, ladies and gentlemen. This is an announcement for passengers travelling to Manchester. The 9.15 train from platform 4 has been delayed by twenty minutes because of a technical problem. The new departure time is 9.35. Passengers with a reservation can get free tea or coffee at the information desk. Please note that platform 4 is also used for the train to Leeds at 9.40, so listen carefully for further announcements. We apologise for the delay and thank you for your patience.\""
+  },
+  {
+   "v": "When was the original appointment?",
+   "o": [
+    "\"Thursday 12 June at a quarter past three\"",
+    "\"Friday 13 June at ten o'clock\"",
+    "\"Thursday 12 June at ten o'clock\"",
+    "\"Wednesday at a quarter past three, I think\""
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 1,
+   "u": "Oude en nieuwe afspraak. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: het eerste tijdstip wordt in de derde zin genoemd.",
+    "Koos je \"\"Friday 13 June at ten o'clock\"\"? Dan denk je dat dit de oorspronkelijke afspraak is. Dat is de nieuwe afspraak, en komt later.",
+    "Koos je \"\"Thursday 12 June at ten o'clock\"\"? Dan denk je dat de tijd van de nieuwe afspraak bij de oude dag hoort. De tijden zijn verschillend, en horen bij verschillende dagen.",
+    "Koos je \"\"Wednesday at a quarter past three, I think\"\"? Dan denk je dat woensdag de dag is. Woensdag is de uiterste belldag, en geen afspraak."
+   ],
+   "uh": "Wanneer was de oorspronkelijke afspraak?",
+   "ctx": "You hear a voicemail message (read the transcript): \"Hello, this is a message for Mr Jansen. My name is Sara Clark from the Riverside Dental Practice. I am calling about your appointment on Thursday 12 June at a quarter past three. Unfortunately, the dentist is ill, so we have to move your appointment to Friday 13 June at ten o'clock. If that is a problem, please call us back on 020 555 0147 before Wednesday. Our office is open from eight until five, Monday to Friday. Please remember to bring your insurance card. Thank you, and goodbye.\""
+  },
+  {
+   "v": "Why must the appointment be moved?",
+   "o": [
+    "\"Mr Jansen is ill\"",
+    "\"the office is closed\"",
+    "\"the dentist is ill\"",
+    "\"the insurance card is lost\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 0,
+   "u": "Zoek de reden: because, so. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"Mr Jansen is ill\"\"? Dan denk je dat de patiënt ziek is. De tandarts is ziek, en de patiënt niet.",
+    "Koos je \"\"the office is closed\"\"? Dan denk je dat het kantoor dicht is. Het kantoor is open van acht tot vijf, dus dat klopt niet.",
+    "Klopt: unfortunately, the dentist is ill geeft de reden.",
+    "Koos je \"\"the insurance card is lost\"\"? Dan denk je dat de verzekeringskaart weg is. Er staat dat je hem moet meenemen, en niet dat hij weg is."
+   ],
+   "uh": "Waarom wordt de afspraak verzet?",
+   "ctx": "You hear a voicemail message (read the transcript): \"Hello, this is a message for Mr Jansen. My name is Sara Clark from the Riverside Dental Practice. I am calling about your appointment on Thursday 12 June at a quarter past three. Unfortunately, the dentist is ill, so we have to move your appointment to Friday 13 June at ten o'clock. If that is a problem, please call us back on 020 555 0147 before Wednesday. Our office is open from eight until five, Monday to Friday. Please remember to bring your insurance card. Thank you, and goodbye.\""
+  },
+  {
+   "v": "What is the new appointment time?",
+   "o": [
+    "\"Thursday 12 June at a quarter past three\"",
+    "\"Friday 13 June at ten o'clock\"",
+    "\"Friday 13 June at eight o'clock\"",
+    "\"Friday 13 June at five o'clock\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 1,
+   "u": "Nieuwe afspraak. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"Thursday 12 June at a quarter past three\"\"? Dan denk je dat dit de nieuwe afspraak is. Dat is de oude, en die vervalt.",
+    "Klopt: de nieuwe afspraak is op vrijdag 13 juni om tien uur.",
+    "Koos je \"\"Friday 13 June at eight o'clock\"\"? Dan denk je dat het acht uur is. Acht uur is de openingstijd van het kantoor, en niet de afspraak.",
+    "Koos je \"\"Friday 13 June at five o'clock\"\"? Dan denk je dat het vijf uur is. Vijf uur is de sluitingstijd, en niet de afspraak."
+   ],
+   "uh": "Wat is de nieuwe afspraak?",
+   "ctx": "You hear a voicemail message (read the transcript): \"Hello, this is a message for Mr Jansen. My name is Sara Clark from the Riverside Dental Practice. I am calling about your appointment on Thursday 12 June at a quarter past three. Unfortunately, the dentist is ill, so we have to move your appointment to Friday 13 June at ten o'clock. If that is a problem, please call us back on 020 555 0147 before Wednesday. Our office is open from eight until five, Monday to Friday. Please remember to bring your insurance card. Thank you, and goodbye.\""
+  },
+  {
+   "v": "What must Mr Jansen bring to the appointment?",
+   "o": [
+    "\"a letter from the dentist\"",
+    "\"a photo of his teeth\"",
+    "\"his phone\"",
+    "\"his insurance card\""
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 2,
+   "u": "Please remember to bring. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"a letter from the dentist\"\"? Dan denk je dat hij een brief mee moet nemen. Er staat niets over een brief, dus je verzint iets.",
+    "Koos je \"\"a photo of his teeth\"\"? Dan denk je dat hij een foto mee moet nemen. Dat staat niet in de boodschap, en je verzint iets.",
+    "Koos je \"\"his phone\"\"? Dan denk je dat hij zijn telefoon mee moet nemen. Hij moet terugbellen, maar de telefoon hoeft niet mee.",
+    "Klopt: please remember to bring your insurance card."
+   ],
+   "uh": "Wat moet hij meenemen?",
+   "ctx": "You hear a voicemail message (read the transcript): \"Hello, this is a message for Mr Jansen. My name is Sara Clark from the Riverside Dental Practice. I am calling about your appointment on Thursday 12 June at a quarter past three. Unfortunately, the dentist is ill, so we have to move your appointment to Friday 13 June at ten o'clock. If that is a problem, please call us back on 020 555 0147 before Wednesday. Our office is open from eight until five, Monday to Friday. Please remember to bring your insurance card. Thank you, and goodbye.\""
+  },
+  {
+   "v": "How much does a city bike cost this week?",
+   "o": [
+    "\"240 euros\"",
+    "\"300 euros, really\"",
+    "\"450 euros\"",
+    "\"120 euros\""
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 1,
+   "u": "Normaal en nu. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: de gewone prijs is 300 euro, maar nu 240 euro.",
+    "Koos je \"\"300 euros, really\"\"? Dan denk je dat het eerste bedrag dat je hoort de actieprijs is. 300 euros is de prijs vóór de korting, dus de oude prijs.",
+    "Koos je \"\"450 euros\"\"? Dan let je niet op het soort fiets. 450 euros is de beginprijs van een mountainbike en geen stadsfiets.",
+    "Koos je \"\"120 euros\"\"? Dan verwar je de stadsfiets met de kinderfiets. 120 euros is de laagste prijs en hoort bij kinderfietsen."
+   ],
+   "uh": "Wat kost een stadsfiets nu?",
+   "ctx": "You hear a radio advertisement (read the transcript): \"Are you looking for a new bike? Come to Pedal Power, the biggest bike shop in the city! This week only, all city bikes are 20 per cent cheaper. A bike that normally costs 300 euros now costs only 240. Mountain bikes start at 450 euros, and children's bikes cost from 120 euros. Free helmets are given to everybody who buys a bike before Saturday. The shop is in Park Street, next to the library, and it is open from nine to six every day except Sunday. Visit our website or call 020 555 0123 for more information. Pedal Power, your bike, your freedom!\""
+  },
+  {
+   "v": "Where is the shop?",
+   "o": [
+    "\"in the city centre, next to the station\"",
+    "\"on the main road, near the school\"",
+    "\"in Park Street, next to the library\"",
+    "\"in the park, next to the lake\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 2,
+   "u": "Plaats noteren. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"in the city centre, next to the station\"\"? Dan denk je dat de winkel naast het station zit. Er staat de bibliotheek, en geen station.",
+    "Koos je \"\"on the main road, near the school\"\"? Dan denk je dat de winkel bij de school zit. Er staat geen school, maar een bibliotheek.",
+    "Klopt: de winkel zit in Park Street, naast de bibliotheek.",
+    "Koos je \"\"in the park, next to the lake\"\"? Dan denk je dat de winkel in een park zit. Het gaat om een straat, en niet om een park."
+   ],
+   "uh": "Waar is de winkel?",
+   "ctx": "You hear a radio advertisement (read the transcript): \"Are you looking for a new bike? Come to Pedal Power, the biggest bike shop in the city! This week only, all city bikes are 20 per cent cheaper. A bike that normally costs 300 euros now costs only 240. Mountain bikes start at 450 euros, and children's bikes cost from 120 euros. Free helmets are given to everybody who buys a bike before Saturday. The shop is in Park Street, next to the library, and it is open from nine to six every day except Sunday. Visit our website or call 020 555 0123 for more information. Pedal Power, your bike, your freedom!\""
+  },
+  {
+   "v": "Who gets a free helmet?",
+   "o": [
+    "\"everybody who visits the shop, to be honest\"",
+    "\"everybody who buys a bike before Saturday\"",
+    "\"only children who buy a bike\"",
+    "\"everybody who calls the shop\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 2,
+   "u": "Voorwaarde noteren. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"everybody who visits the shop, to be honest\"\"? Dan kies je een voorwaarde die te makkelijk is. Er staat dat je een fiets moet kopen, kijken is niet genoeg.",
+    "Klopt: free helmets are given to everybody who buys a bike before Saturday.",
+    "Koos je \"\"only children who buy a bike\"\"? Dan denk je dat het alleen voor kinderen is. Er staat everybody, dus iedereen die een fiets koopt.",
+    "Koos je \"\"everybody who calls the shop\"\"? Dan denk je dat bellen genoeg is voor een helm. Je krijgt hem pas na het kopen van een fiets."
+   ],
+   "uh": "Wie krijgt een gratis helm?",
+   "ctx": "You hear a radio advertisement (read the transcript): \"Are you looking for a new bike? Come to Pedal Power, the biggest bike shop in the city! This week only, all city bikes are 20 per cent cheaper. A bike that normally costs 300 euros now costs only 240. Mountain bikes start at 450 euros, and children's bikes cost from 120 euros. Free helmets are given to everybody who buys a bike before Saturday. The shop is in Park Street, next to the library, and it is open from nine to six every day except Sunday. Visit our website or call 020 555 0123 for more information. Pedal Power, your bike, your freedom!\""
+  },
+  {
+   "v": "Why should passengers listen carefully for further announcements?",
+   "o": [
+    "\"the train to Manchester has left already, I suppose\"",
+    "\"the tea is finished\"",
+    "\"the tickets are free\"",
+    "\"platform 4 is also used for another train at 9.40\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 3,
+   "u": "Let op waarschuwingen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"the train to Manchester has left already, I suppose\"\"? Dan denk je dat de trein al weg is. De trein heeft vertraging, en vertrekt nog.",
+    "Koos je \"\"the tea is finished\"\"? Dan denk je dat de thee op is. Er staat niets over op, dus je verzint iets.",
+    "Koos je \"\"the tickets are free\"\"? Dan denk je dat de kaartjes gratis zijn. Er staat dat de thee gratis is, en niet de kaartjes.",
+    "Klopt: de omroeper waarschuwt omdat perron 4 ook voor de trein naar Leeds wordt gebruikt."
+   ],
+   "uh": "Waarom goed luisteren?",
+   "ctx": "You hear an announcement at a station: \"Good morning, ladies and gentlemen. This is an announcement for passengers travelling to Manchester. The 9.15 train from platform 4 has been delayed by twenty minutes because of a technical problem. The new departure time is 9.35. Passengers with a reservation can get free tea or coffee at the information desk. Please note that platform 4 is also used for the train to Leeds at 9.40, so listen carefully for further announcements. We apologise for the delay and thank you for your patience.\""
+  },
+  {
+   "v": "Which train goes to Leeds, and when does it leave?",
+   "o": [
+    "\"the 9.40 train, also from platform 4\"",
+    "\"the 9.35 train from platform 4, you know\"",
+    "\"the 9.15 train from platform 4\"",
+    "\"the 9.40 train from platform 9\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 3,
+   "u": "Twee treinen, één perron. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: de trein naar Leeds vertrekt om 9.40 en gebruikt ook perron 4.",
+    "Koos je \"\"the 9.35 train from platform 4, you know\"\"? Dan denk je dat de nieuwe tijd van de Manchester-trein bij Leeds hoort. 9.35 is de vertraagde trein naar Manchester.",
+    "Koos je \"\"the 9.15 train from platform 4\"\"? Dan verwar je de oude tijd van Manchester met Leeds. 9.15 was de oorspronkelijke tijd van de Manchester-trein.",
+    "Koos je \"\"the 9.40 train from platform 9\"\"? Dan pak je het getal 9 uit de tijd als perronnummer. Het perron is 4 en niet 9."
+   ],
+   "uh": "Welke trein gaat naar Leeds?",
+   "ctx": "You hear an announcement at a station: \"Good morning, ladies and gentlemen. This is an announcement for passengers travelling to Manchester. The 9.15 train from platform 4 has been delayed by twenty minutes because of a technical problem. The new departure time is 9.35. Passengers with a reservation can get free tea or coffee at the information desk. Please note that platform 4 is also used for the train to Leeds at 9.40, so listen carefully for further announcements. We apologise for the delay and thank you for your patience.\""
+  },
+  {
+   "v": "A passenger arrives at 9.15 for the Manchester train. How long must she wait?",
+   "o": [
+    "\"no time at all\"",
+    "\"twenty-five minutes\"",
+    "\"twenty minutes\"",
+    "\"an hour\""
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 1,
+   "u": "9.35 min 9.15. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"no time at all\"\"? Dan denk je dat de trein om 9.15 vertrekt. Dat was de oude tijd, en de trein heeft nu vertraging.",
+    "Koos je \"\"twenty-five minutes\"\"? Dan denk je dat 9.40 de nieuwe tijd is. Dat is de trein naar Leeds, en niet naar Manchester.",
+    "Klopt: de trein vertrekt nu om 9.35, dat is twintig minuten later.",
+    "Koos je \"\"an hour\"\"? Dan denk je dat de vertraging een uur is. Er staat twenty minutes, en niet een uur."
+   ],
+   "uh": "Hoe lang wacht zij?",
+   "ctx": "You hear an announcement at a station: \"Good morning, ladies and gentlemen. This is an announcement for passengers travelling to Manchester. The 9.15 train from platform 4 has been delayed by twenty minutes because of a technical problem. The new departure time is 9.35. Passengers with a reservation can get free tea or coffee at the information desk. Please note that platform 4 is also used for the train to Leeds at 9.40, so listen carefully for further announcements. We apologise for the delay and thank you for your patience.\""
+  },
+  {
+   "v": "What telephone number must Mr Jansen call if there is a problem?",
+   "o": [
+    "\"020 555 0123, I think\"",
+    "\"020 555 0147\"",
+    "\"020 555 0174\"",
+    "\"020 555 0417\""
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 2,
+   "u": "Cijfers één voor één. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"020 555 0123, I think\"\"? Dan denk je dat dit het nummer is. Dat is het nummer uit de fietsreclame, en niet van de tandarts.",
+    "Klopt: de boodschap noemt 020 555 0147, de advertentie noemt een ander nummer.",
+    "Koos je \"\"020 555 0174\"\"? Dan denk je dat de laatste cijfers verwisseld zijn. Het nummer eindigt op 0147, en niet op 0174.",
+    "Koos je \"\"020 555 0417\"\"? Dan denk je dat de laatste cijfers anders zijn. De boodschap noemt 0147, en geen 0417."
+   ],
+   "uh": "Welk nummer moet hij bellen?",
+   "ctx": "You hear a voicemail message (read the transcript): \"Hello, this is a message for Mr Jansen. My name is Sara Clark from the Riverside Dental Practice. I am calling about your appointment on Thursday 12 June at a quarter past three. Unfortunately, the dentist is ill, so we have to move your appointment to Friday 13 June at ten o'clock. If that is a problem, please call us back on 020 555 0147 before Wednesday. Our office is open from eight until five, Monday to Friday. Please remember to bring your insurance card. Thank you, and goodbye.\""
+  },
+  {
+   "v": "Until when can Mr Jansen call back if he has a problem?",
+   "o": [
+    "\"until Friday\"",
+    "\"until Thursday\"",
+    "\"until five o'clock\"",
+    "\"before Wednesday\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 4,
+   "u": "Before = vóór. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"until Friday\"\"? Dan denk je dat de uiterste dag gelijk is aan de nieuwe afspraak. Vrijdag is de dag van de nieuwe afspraak en geen uiterste datum.",
+    "Koos je \"\"until Thursday\"\"? Dan kies je de dag van de oude afspraak. Donderdag was de oorspronkelijke afspraak en geen belgrens.",
+    "Koos je \"\"until five o'clock\"\"? Dan verwar je een uur met een dag. Vijf uur is de sluitingstijd van het kantoor, terwijl de vraag naar een dag vraagt.",
+    "Klopt: de boodschap zegt dat je vóór woensdag moet terugbellen."
+   ],
+   "uh": "Tot wanneer kan hij bellen?",
+   "ctx": "You hear a voicemail message (read the transcript): \"Hello, this is a message for Mr Jansen. My name is Sara Clark from the Riverside Dental Practice. I am calling about your appointment on Thursday 12 June at a quarter past three. Unfortunately, the dentist is ill, so we have to move your appointment to Friday 13 June at ten o'clock. If that is a problem, please call us back on 020 555 0147 before Wednesday. Our office is open from eight until five, Monday to Friday. Please remember to bring your insurance card. Thank you, and goodbye.\""
+  },
+  {
+   "v": "What time does the dental office close?",
+   "o": [
+    "\"at five o'clock\"",
+    "\"at eight o'clock\"",
+    "\"at ten o'clock\"",
+    "\"at a quarter past three\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 1,
+   "u": "Open van ... tot ... Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: de praktijk is open van acht tot vijf uur.",
+    "Koos je \"\"at eight o'clock\"\"? Dan denk je dat acht de sluitingstijd is. Acht uur is de opening, en niet de sluiting.",
+    "Koos je \"\"at ten o'clock\"\"? Dan denk je dat tien de sluitingstijd is. Tien uur is de nieuwe afspraak, en niet de sluiting.",
+    "Koos je \"\"at a quarter past three\"\"? Dan denk je dat kwart over drie de sluitingstijd is. Dat is de oude afspraak, en niet de sluiting."
+   ],
+   "uh": "Wanneer sluit de praktijk?",
+   "ctx": "You hear a voicemail message (read the transcript): \"Hello, this is a message for Mr Jansen. My name is Sara Clark from the Riverside Dental Practice. I am calling about your appointment on Thursday 12 June at a quarter past three. Unfortunately, the dentist is ill, so we have to move your appointment to Friday 13 June at ten o'clock. If that is a problem, please call us back on 020 555 0147 before Wednesday. Our office is open from eight until five, Monday to Friday. Please remember to bring your insurance card. Thank you, and goodbye.\""
+  },
+  {
+   "v": "How much cheaper are the city bikes this week?",
+   "o": [
+    "\"240 per cent, you know\"",
+    "\"30 per cent\"",
+    "\"20 per cent\"",
+    "\"2 per cent\""
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 1,
+   "u": "Twenty = 20. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"240 per cent, you know\"\"? Dan denk je dat 240 het percentage is. Dat is de nieuwe prijs in euro, en geen procent.",
+    "Koos je \"\"30 per cent\"\"? Dan denk je dat het 30 procent is. 300 is de oude prijs, en niet het percentage.",
+    "Klopt: de reclame zegt dat alle stadsfietsen 20 procent goedkoper zijn.",
+    "Koos je \"\"2 per cent\"\"? Dan denk je dat het 2 procent is. Er staat twenty, en niet two."
+   ],
+   "uh": "Hoeveel goedkoper zijn de stadsfietsen?",
+   "ctx": "You hear a radio advertisement (read the transcript): \"Are you looking for a new bike? Come to Pedal Power, the biggest bike shop in the city! This week only, all city bikes are 20 per cent cheaper. A bike that normally costs 300 euros now costs only 240. Mountain bikes start at 450 euros, and children's bikes cost from 120 euros. Free helmets are given to everybody who buys a bike before Saturday. The shop is in Park Street, next to the library, and it is open from nine to six every day except Sunday. Visit our website or call 020 555 0123 for more information. Pedal Power, your bike, your freedom!\""
+  },
+  {
+   "v": "Which bikes cost the least?",
+   "o": [
+    "\"city bikes, 240 euros\"",
+    "\"children's bikes, from 120 euros\"",
+    "\"mountain bikes, from 450 euros, really\"",
+    "\"city bikes, 300 euros\""
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 3,
+   "u": "Vergelijk de bedragen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"city bikes, 240 euros\"\"? Dan denk je dat de stadsfiets de goedkoopste is. 240 is hoger dan 120, dus er is een goedkopere groep.",
+    "Klopt: kinderfietsen beginnen bij 120 euro, de goedkoopste groep.",
+    "Koos je \"\"mountain bikes, from 450 euros, really\"\"? Dan denk je dat een mountainbike het goedkoopst is. 450 is het hoogste bedrag, en dus het duurst.",
+    "Koos je \"\"city bikes, 300 euros\"\"? Dan denk je dat 300 de actieprijs is. Dat is de oude prijs, en niet de goedkoopste."
+   ],
+   "uh": "Welke fietsen zijn het goedkoopst?",
+   "ctx": "You hear a radio advertisement (read the transcript): \"Are you looking for a new bike? Come to Pedal Power, the biggest bike shop in the city! This week only, all city bikes are 20 per cent cheaper. A bike that normally costs 300 euros now costs only 240. Mountain bikes start at 450 euros, and children's bikes cost from 120 euros. Free helmets are given to everybody who buys a bike before Saturday. The shop is in Park Street, next to the library, and it is open from nine to six every day except Sunday. Visit our website or call 020 555 0123 for more information. Pedal Power, your bike, your freedom!\""
+  },
+  {
+   "v": "Which words show that the offer will end soon?",
+   "o": [
+    "\"the biggest bike shop\"",
+    "\"your freedom\"",
+    "\"more information\"",
+    "\"this week only\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 3,
+   "u": "This week only = tijdelijk. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"the biggest bike shop\"\"? Dan denk je dat the biggest iets over de tijd zegt. Het zegt iets over de grootte, en niet over de tijd.",
+    "Koos je \"\"your freedom\"\"? Dan denk je dat your freedom een einde noemt. Het is een slogan, en geen tijdsaanduiding.",
+    "Koos je \"\"more information\"\"? Dan denk je dat more information een tijd noemt. Het verwijst naar de website, en niet naar een einde.",
+    "Klopt: this week only zegt dat de aanbieding maar kort duurt."
+   ],
+   "uh": "Welke woorden tonen dat het kort duurt?",
+   "ctx": "You hear a radio advertisement (read the transcript): \"Are you looking for a new bike? Come to Pedal Power, the biggest bike shop in the city! This week only, all city bikes are 20 per cent cheaper. A bike that normally costs 300 euros now costs only 240. Mountain bikes start at 450 euros, and children's bikes cost from 120 euros. Free helmets are given to everybody who buys a bike before Saturday. The shop is in Park Street, next to the library, and it is open from nine to six every day except Sunday. Visit our website or call 020 555 0123 for more information. Pedal Power, your bike, your freedom!\""
+  },
+  {
+   "v": "On which day is the shop closed?",
+   "o": [
+    "\"on Sunday\"",
+    "\"on Saturday\"",
+    "\"on Monday\"",
+    "\"every day\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 4,
+   "u": "Except Sunday. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: de winkel is elke dag open behalve zondag.",
+    "Koos je \"\"on Saturday\"\"? Dan denk je dat zaterdag de sluitingsdag is omdat de helm daar eindigt. Zaterdag is de laatste dag voor de helm, niet de sluitingsdag.",
+    "Koos je \"\"on Monday\"\"? Dan let je niet op het woord except. Er staat every day except Sunday, dus maandag is open.",
+    "Koos je \"\"every day\"\"? Dan denk je dat de winkel altijd dicht is. Alleen op zondag is de winkel dicht, de rest van de week open."
+   ],
+   "uh": "Wanneer is de winkel dicht?",
+   "ctx": "You hear a radio advertisement (read the transcript): \"Are you looking for a new bike? Come to Pedal Power, the biggest bike shop in the city! This week only, all city bikes are 20 per cent cheaper. A bike that normally costs 300 euros now costs only 240. Mountain bikes start at 450 euros, and children's bikes cost from 120 euros. Free helmets are given to everybody who buys a bike before Saturday. The shop is in Park Street, next to the library, and it is open from nine to six every day except Sunday. Visit our website or call 020 555 0123 for more information. Pedal Power, your bike, your freedom!\""
+  }
+ ],
+ "oe": [
+  {
+   "bron": "Examenstijl",
+   "ctx": "You hear a message on a school phone: \"Good afternoon. This is a message for the parents of class 3B. The school trip to the zoo is on Wednesday 4 June. The bus leaves at 8.30 from the school gate and returns at 4.00 pm. Please bring a packed lunch and 5 euros for the entrance ticket. If your child is ill, please call the school before 8.00 am.\" (read the transcript)",
+   "v": "Write down when the bus leaves and returns, and what the pupils must bring.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "De bus vertrekt om 8.30 (1p). De bus is terug om 16.00 (1p). Lunchpakket en 5 euro meenemen (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "You hear a radio advertisement: \"Visit the Sunny Day Pool! Open every day from 9 am to 8 pm. Tickets cost 6 euros for adults and 3 euros for children under 12. This month only, children under 5 swim for free. Call 020 555 0100.\" (read the transcript) You want to take your sister of 4 and your friend of 14.",
+   "v": "Write how much you pay in total and which words show the offer is temporary.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Jij betaalt 6 euro (1p). Je zusje betaalt niets (1p). This month only toont de beperkte tijd (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "You hear a station announcement: \"The 14.10 train to Rotterdam from platform 2 has been cancelled. Passengers should take the 14.25 train from platform 5. Tickets remain valid. We apologise for the delay.\" (read the transcript) A friend must go to Rotterdam.",
+   "v": "Write which train your friend must take and from which platform.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "De trein van 14.25 (1p). Vanaf perron 5 (1p). De oude trein is afgelast (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "You hear a voicemail: \"Hello Mia, this is Tom. The party starts at 7.30 on Saturday at my house, 15 Oak Street. Take bus 6 and get off at the library. Please bring a drink. If you are vegetarian, tell me before Thursday.\" (read the transcript)",
+   "v": "Write the time, the address and what Mia must do before Thursday.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Het feest begint om 7.30 (1p). Het adres is 15 Oak Street (1p). Zeggen of ze vegetarisch is vóór donderdag (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Your teacher says: \"When you listen, you must read the questions first.\" A classmate does not understand why. You want to explain it with the words key information and notes.",
+   "v": "Write two sentences in English that explain why you read the questions first.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Je weet waar je op moet letten (1p). Je kunt gerichte aantekeningen maken, zoals key information (1p). Een duidelijke uitleg (1p)."
+  }
+ ]
+}
