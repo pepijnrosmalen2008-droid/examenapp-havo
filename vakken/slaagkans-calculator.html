@@ -17,6 +17,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,700;12..96,800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/styles.css">
+  <link rel="stylesheet" href="/lp-menu.css">
+  <script src="/lp-menu.js"></script>
   <script>
   (function(){try{var t=localStorage.getItem('theme');if(t==='dark'||(!t&&matchMedia('(prefers-color-scheme:dark)').matches))document.documentElement.classList.add('dark');}catch(e){}})();
   </script>
@@ -104,18 +106,19 @@
     .up-nav-home:hover{color:var(--dk)}
   </style>
 </head>
-<body>
+<body class="lp2">
 
-<nav class="nav"><div class="nav-inner">
-  <a class="logo" href="https://slagio.nl" style="text-decoration:none"><img src="/icon-192.png" alt="Slagio" style="width:26px;height:26px;border-radius:7px;object-fit:cover;flex-shrink:0">Slagio</a>
-  <a class="up-nav-home" href="/vakken/">Alle vakken</a>
-  <a class="up-nav-cta" href="https://slagio.nl/?utm_source=slaagkans">Gratis oefenen</a>
-</div></nav>
+<header class="lp-top"><div class="lp-top-in">
+  <a class="lp-logo" href="/"><img src="/icon-192.png" alt="">Slagio</a>
+  <button class="lp-terug" type="button" aria-label="Terug" onclick="lpTerug()"><svg viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7"/></svg></button>
+  <a class="lp-knop" href="https://slagio.nl/?utm_source=slaagkans">Oefenen</a>
+</div></header>
 
 <div class="up-wrap">
-  <div class="up-hero">
-    <h1>Slaagkans calculator: <em>welk CE-cijfer heb je nodig?</em></h1>
-    <p class="up-sub">Schuif je SE-cijfer en zie direct welk CE-cijfer je minimaal nodig hebt om te slagen voor een vak.</p>
+  <div class="lp-kop">
+    <img class="lp-vonk" src="/img/vonk-lp.svg" alt="" width="92" height="92">
+    <h1>Welk CE-cijfer heb je nodig?</h1>
+    <p class="up-sub">Schuif je SE-cijfer en zie welk CE-cijfer je minimaal nodig hebt voor een voldoende.</p>
   </div>
 
   <div class="calc">
@@ -130,7 +133,7 @@
     <div class="result-box">
       <div class="result-label">Minimaal CE-cijfer nodig</div>
       <div class="result-value" id="result-value">-</div>
-      <div class="result-message neutral" id="result-message">Beweeg de slider om je slaagkans te zien.</div>
+      <div class="result-message neutral" id="result-message">Schuif om te zien wat je nodig hebt.</div>
       <div class="bar-section" id="bar-section" style="display:none">
         <div class="bar-title">Overzicht</div>
         <div class="bar-row">
@@ -154,7 +157,7 @@
 
   <h2 class="up-h2">Hoe werkt het slaagregelsysteem?</h2>
   <div class="up-card">
-    <p>Om te slagen voor je HAVO- of VWO-eindexamen moet je aan een combinatie van regels voldoen. De basis: je eindcijfer per vak is minimaal een 5,5, en dat eindcijfer is het gemiddelde van je SE en je CE.</p>
+    <p>Je eindcijfer per vak is het gemiddelde van je SE en je CE, afgerond op een heel cijfer. Een gemiddelde van 5,5 wordt een 6. Daarom heb je voor een voldoende minstens 11 min je SE-cijfer nodig op het CE.</p>
     <div class="formula-box">eindcijfer = (SE-cijfer + CE-cijfer) ÷ 2<br>minimaal CE nodig = 11 − SE-cijfer</div>
     <h3 class="up-h3">De slaagregels stap voor stap</h3>
     <ul>
@@ -173,33 +176,34 @@
 
   <h2 class="up-h2">Tips om je CE-cijfer te verhogen</h2>
   <div class="tips-grid">
-    <div class="tip-card"><div class="tip-ico">📝</div><div class="tip-title">Oefen met oude examens</div><div class="tip-desc">Werk de examens van de afgelopen jaren door. Je leert de vraagstijl kennen en ontdekt vaste patronen.</div></div>
-    <div class="tip-card"><div class="tip-ico">🎯</div><div class="tip-title">Focus op je zwakke punten</div><div class="tip-desc">Kijk welke onderdelen je steeds fout hebt en besteed daar extra tijd aan, in plaats van te herhalen wat je al kunt.</div></div>
-    <div class="tip-card"><div class="tip-ico">🧩</div><div class="tip-title">Ken de opbouw van het examen</div><div class="tip-desc">Elk vak heeft een vaste structuur en puntenverdeling. Weet waar de meeste punten te halen zijn.</div></div>
-    <div class="tip-card"><div class="tip-ico">📅</div><div class="tip-title">Plan slim en begin op tijd</div><div class="tip-desc">Gespreide herhaling over meerdere dagen werkt beter dan één lange avond blokken voor het examen.</div></div>
-    <div class="tip-card"><div class="tip-ico">🔢</div><div class="tip-title">Begrijp de puntentelling</div><div class="tip-desc">Weet hoeveel elke vraag oplevert. Geef een vraag van 1 punt niet te veel tijd.</div></div>
-    <div class="tip-card"><div class="tip-ico">⚡</div><div class="tip-title">Oefen gericht op Slagio</div><div class="tip-desc">Slagio biedt oefenvragen per vak en per domein, afgestemd op de HAVO- en VWO-exameneisen.</div></div>
+    <div class="tip-card"><div class="tip-ico"></div><div class="tip-title">Oefen met oude examens</div><div class="tip-desc">Werk de examens van de afgelopen jaren door. Je leert de vraagstijl kennen en ontdekt vaste patronen.</div></div>
+    <div class="tip-card"><div class="tip-ico"></div><div class="tip-title">Focus op je zwakke punten</div><div class="tip-desc">Kijk welke onderdelen je steeds fout hebt en besteed daar extra tijd aan, in plaats van te herhalen wat je al kunt.</div></div>
+    <div class="tip-card"><div class="tip-ico"></div><div class="tip-title">Ken de opbouw van het examen</div><div class="tip-desc">Elk vak heeft een vaste structuur en puntenverdeling. Weet waar de meeste punten te halen zijn.</div></div>
+    <div class="tip-card"><div class="tip-ico"></div><div class="tip-title">Plan slim en begin op tijd</div><div class="tip-desc">Gespreide herhaling over meerdere dagen werkt beter dan één lange avond blokken voor het examen.</div></div>
+    <div class="tip-card"><div class="tip-ico"></div><div class="tip-title">Begrijp de puntentelling</div><div class="tip-desc">Weet hoeveel elke vraag oplevert. Geef een vraag van 1 punt niet te veel tijd.</div></div>
+    <div class="tip-card"><div class="tip-ico"></div><div class="tip-title">Oefen gericht op Slagio</div><div class="tip-desc">In Slagio oefen je per vak en per onderwerp, op het niveau van het examen.</div></div>
   </div>
 
   <div class="up-cta">
-    <h2>Haal het CE-cijfer dat jij nodig hebt</h2>
-    <p>Nu je weet welk cijfer je nodig hebt, kun je er gericht naartoe werken. Oefen gratis met 2.400+ examenvragen per domein en echte oude examens op Slagio.</p>
-    <a class="up-cta-btn" href="https://slagio.nl/?utm_source=slaagkans">Start gratis met oefenen →</a>
-    <span class="up-cta-sub">Geen account nodig · werkt ook als app op je telefoon</span>
+    <h2>Haal het cijfer dat je nodig hebt</h2>
+    <p>Nu weet je waar je naartoe werkt. Oefen gratis per onderwerp en met oude examens.</p>
+    <a class="up-cta-btn" href="https://slagio.nl/?utm_source=slaagkans">Begin met oefenen</a>
+    <span class="up-cta-sub">Gratis en zonder account, ook als app op je telefoon</span>
   </div>
 
-  <h2 class="up-h2" style="margin-top:40px">Andere handige tools</h2>
+  <h2 class="up-h2" style="margin-top:40px">Meer handige pagina's</h2>
   <div class="up-rel">
-    <a href="/vakken/eindcijfer-calculator.html">📊 Eindcijfer-calculator</a>
-    <a href="/vakken/n-term-calculator.html">🧮 N-term-calculator</a>
-    <a href="/vakken/examenrooster-2027.html">📅 Examenrooster 2027</a>
-    <a href="/vakken/examenuitslag-2027.html">🎓 Examenuitslag 2027</a>
-    <a href="https://slagio.nl/vakken/">📚 Alle vakken</a>
+    <a href="/vakken/eindcijfer-calculator.html">Eindcijfer-calculator</a>
+    <a href="/vakken/n-term-calculator.html">N-term-calculator</a>
+    <a href="/vakken/examenrooster-2027.html">Examenrooster 2027</a>
+    <a href="/vakken/examenuitslag-2027.html">Examenuitslag 2027</a>
+    <a href="https://slagio.nl/vakken/">Alle vakken</a>
   </div>
 </div>
 
-<footer class="up-foot">
-  <a href="https://slagio.nl">Slagio</a> · gratis examenvoorbereiding voor HAVO, VWO &amp; VMBO · Slaagregels: <a href="https://www.examenblad.nl" rel="noopener">Examenblad.nl</a>
+<footer class="lp-voet">
+  <span class="lp-voet-merk">Slagio, gratis oefenen voor havo, vwo en vmbo</span>
+  <a href="/vakken/">Alle vakken</a><a href="/faq.html">Vragen</a><a href="/over-ons.html">Over ons</a><a href="/privacy.html">Privacy</a><a href="/voorwaarden.html">Voorwaarden</a><a href="mailto:slagiocompany@gmail.com">Contact</a>
 </footer>
 
 <script>

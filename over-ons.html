@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Over Slagio - gratis examentraining, gemaakt door leerlingen</title>
-  <meta name="description" content="Wie zit er achter Slagio, waarom is het gratis en hoe borgen we de kwaliteit? Slagio is gemaakt door leerlingen, voor leerlingen: 20.000+ oefenvragen, syllabus-gegronde samenvattingen en echte CE-examens, zonder betaalmuur.">
+  <meta name="description" content="Wie zit er achter Slagio, waarom is het gratis en hoe borgen we de kwaliteit? Slagio is gemaakt door leerlingen, voor leerlingen: 26.000+ oefenvragen, syllabus-gegronde samenvattingen en echte CE-examens, zonder betaalmuur.">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://slagio.nl/over-ons.html">
   <meta property="og:title" content="Over Slagio - gemaakt door leerlingen, voor leerlingen">
@@ -17,6 +17,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,700;12..96,800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/styles.css">
+  <link rel="stylesheet" href="/lp-menu.css">
+  <script src="/lp-menu.js"></script>
   <script>
   (function(){try{var d=document.documentElement,t=localStorage.getItem('theme');if(t==='dark'||(!t&&matchMedia('(prefers-color-scheme:dark)').matches))d.classList.add('dark');d.classList.add(localStorage.getItem('examenapp_level')==='vwo'?'level-vwo':'level-havo');d.style.setProperty('--or','#E85C0D');d.style.setProperty('--or-rgb','232,92,13');d.style.setProperty('--orl','rgba(232,92,13,.12)');}catch(e){document.documentElement.classList.add('level-havo');}})();
   </script>
@@ -73,87 +75,88 @@
     .num span{font-size:12.5px;color:var(--mu)}
   </style>
 </head>
-<body class="lp">
-<div class="lp-hero-bg" aria-hidden="true"></div>
+<body class="lp2">
 
-<nav class="nav"><div class="nav-inner">
-  <a class="logo" href="/" style="text-decoration:none"><img src="/icon-192.png" alt="Slagio" style="width:26px;height:26px;border-radius:7px;object-fit:cover;flex-shrink:0">Slagio</a>
-  <button class="bk" style="margin-left:auto" onclick="if(document.referrer&&document.referrer.indexOf(location.host)>-1){history.back()}else{location.href='/'}">← Terug</button>
-  <a class="up-nav-cta" href="/">Gratis oefenen</a>
-</div></nav>
+<header class="lp-top"><div class="lp-top-in">
+  <a class="lp-logo" href="/"><img src="/icon-192.png" alt="">Slagio</a>
+  <button class="lp-terug" type="button" aria-label="Terug" onclick="lpTerug()"><svg viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7"/></svg></button>
+  <a class="lp-knop" href="/">Oefenen</a>
+</div></header>
 
 <div class="up-wrap">
-  <div class="up-hero">
-    <span class="lp-eyebrow">Ons verhaal</span>
-    <h1>Gemaakt <em>door leerlingen</em>, voor leerlingen</h1>
-    <p class="up-sub">Slagio is een Nederlands examenplatform voor HAVO, VWO en VMBO GL/TL, gebouwd door mensen die zelf net examen deden. Onze overtuiging: goede voorbereiding hoort niet af te hangen van je portemonnee. Daarom is alles gratis.</p>
+  <div class="lp-kop">
+    <img class="lp-vonk" src="/img/vonk-lp.svg" alt="" width="92" height="92">
+    <span class="lp-kop-label">Ons verhaal</span>
+    <h1>Gemaakt door leerlingen, voor leerlingen</h1>
+    <p class="up-sub">Slagio is gemaakt door leerlingen die net zelf examen hadden gedaan. Je oefent er voor havo, vwo en vmbo gl/tl. Goed oefenen hoort niet af te hangen van wat je ouders kunnen betalen. Daarom is het gratis.</p>
     <div class="up-hero-btns">
-      <a class="btn-primary" href="/">Start met oefenen →</a>
-      <a class="btn-ghost" href="/faq.html">Veelgestelde vragen</a>
+      <a class="btn-primary" href="/">Begin met oefenen</a>
+      <a class="btn-ghost" href="/faq.html">Vragen over Slagio</a>
     </div>
     <div class="numstrip">
-      <div class="num"><b>20.000+</b><span>oefenvragen</span></div>
+      <div class="num"><b>26.000+</b><span>oefenvragen</span></div>
       <div class="num"><b>40</b><span>vakken</span></div>
-      <div class="num"><b>2019–25</b><span>echte CE-examens</span></div>
-      <div class="num"><b>€0</b><span>voor iedereen</span></div>
+      <div class="num"><b>2019–25</b><span>oude examens</span></div>
+      <div class="num"><b>Gratis</b><span>voor leerlingen</span></div>
     </div>
   </div>
 
   <div class="prose">
-    <h2 class="sec-h">Onze missie</h2>
-    <p>Examenstress is voor bijna elke leerling al zwaar genoeg. De kosten van bijlessen, examenbundels en trainingsdagen maken het er niet eerlijker op. Juist de leerlingen die de steun het hardst nodig hebben, kunnen die het minst betalen. Slagio bestaat om dat gat te dichten.</p>
-    <p>We bouwen het gereedschap waarmee je <span class="hl">actief oefent</span> in plaats van passief leest: korte quizzen per domein, echte oude examens, een simulatietoets die je cijfer voorspelt, flashcards met slimme herhaling en een studieplan dat met je aftelt naar de examendag. En omdat leren makkelijker gaat als het leuk is, zit er een laag gamification omheen: XP, streaks, badges en zelfs een klassenquiz.</p>
+    <h2 class="sec-h">Waarom Slagio er is</h2>
+    <p>Examens zijn al spannend genoeg. Bijles, examenbundels en trainingsdagen kosten veel geld. Juist wie de hulp het hardst nodig heeft, kan die vaak het minst betalen. Dat willen we anders.</p>
+    <p>In Slagio leer je door te doen, niet door alleen te lezen. Je maakt korte quizzen per onderwerp, oude examens en proefexamens. Begrippen herhaal je met kaartjes, en een studieplan telt met je af naar het examen. Omdat oefenen makkelijker gaat als het leuk is, verdien je XP, houd je een streak bij en kun je met je klas een quiz doen.</p>
 
     <div class="entree">
       <h3>Waarom is het gratis?</h3>
-      <p>Een terechte vraag, want "gratis" roept soms wantrouwen op. Daarom zijn we er open over. Slagio toont <strong>geen advertenties</strong> en draait op bewust goedkope, statische techniek. De kosten worden gedragen door een optionele docentenlaag voor scholen (Slagio School) en aangevuld met donaties. Er is geen betaalmuur, geen proefperiode die stiekem afloopt en geen "premium" dat de kern achter slot zet.</p>
-      <p>Je kunt de app <strong>volledig anoniem</strong> gebruiken, zonder account en zonder tracking-cookies. Hoe we met gegevens omgaan lees je in ons <a href="/privacy.html">privacybeleid</a>.</p>
+      <p>Slagio toont geen reclame en draait op goedkope techniek. Scholen kunnen een docentenomgeving afnemen, <a href="/vakken/slagio-school.html">Slagio School</a>, en daarmee betalen we de app. Daarnaast krijgen we soms een donatie. Voor leerlingen is er geen abonnement en geen proefperiode die afloopt.</p>
+      <p>Je kunt Slagio gebruiken zonder account en zonder volgcookies. Hoe we met gegevens omgaan lees je in ons <a href="/privacy.html">privacybeleid</a>.</p>
     </div>
 
     <h2 class="sec-h">Hoe we de kwaliteit bewaken</h2>
-    <p>Gratis mag nooit "slordig" betekenen. Onze content rust op drie principes.</p>
+    <p>Gratis mag niet slordig zijn. Daarom houden we ons aan drie afspraken.</p>
   </div>
 
   <div class="feat-grid" style="margin-top:18px">
     <div class="feat">
-      <div class="feat-ico">🎯</div>
-      <h3>Gegrond in de syllabus</h3>
-      <p>De stof is gebaseerd op het officiële examenprogramma van CvTE en SLO. Per domein zie je of iets centraal examen (CE) of schoolexamen (SE) is, zodat je geen tijd verspilt aan wat níet getoetst wordt.</p>
+      <div class="feat-ico"></div>
+      <h3>Volgens het examenprogramma</h3>
+      <p>De stof volgt het examenprogramma en de syllabus van het CvTE. Per onderdeel zie je of het in het centraal examen komt of in het schoolexamen. Zo steek je je tijd in wat echt getoetst wordt.</p>
     </div>
     <div class="feat">
-      <div class="feat-ico">✍️</div>
-      <h3>Origineel &amp; rechtenvrij</h3>
-      <p>We nemen nooit examenvragen letterlijk over. We analyseren wélke vaardigheden getoetst worden en schrijven daar nieuwe, originele oefenvragen bij: juridisch schoon en toch examengericht.</p>
+      <div class="feat-ico"></div>
+      <h3>Zelf geschreven</h3>
+      <p>We nemen geen examenvragen over. We kijken wat het examen toetst en schrijven daar zelf nieuwe vragen bij, in dezelfde stijl.</p>
     </div>
     <div class="feat">
-      <div class="feat-ico">🔁</div>
-      <h3>Continu verbeterd</h3>
-      <p>De samenvattingen groeien richting een vaste standaard: volledige dekking van elk subdomein, duidelijke diagrammen en uitgewerkte voorbeeldopgaven. Feedback sturen we direct terug de content in.</p>
+      <div class="feat-ico"></div>
+      <h3>Steeds beter</h3>
+      <p>Elke week werken we onderwerpen bij naar een vaste lat: alle stof, figuren die het uitleggen en uitgewerkte opgaven. Meldt iemand een fout, dan passen we die aan.</p>
     </div>
   </div>
 
   <div class="prose">
-    <h2 class="sec-h">Waar we voor staan</h2>
+    <h2 class="sec-h">Waar je op kunt rekenen</h2>
   </div>
   <div class="feat-grid">
-    <div class="feat"><div class="feat-ico">🌍</div><h3>Toegankelijk voor iedereen</h3><p>Gratis, zonder account-verplichting, installeerbaar als app en volledig offline te gebruiken.</p></div>
-    <div class="feat"><div class="feat-ico">✅</div><h3>Correct boven volledig</h3><p>Liever iets weglaten dan iets verkeerds aanleren. We houden de stof binnen de examenscope.</p></div>
-    <div class="feat"><div class="feat-ico">🔒</div><h3>Eerlijk over data</h3><p>Anoniem tenzij je zelf kiest voor een account. Geen verkoop van gegevens, EU-servers voor opslag.</p></div>
-    <div class="feat"><div class="feat-ico">⚡</div><h3>Oefenen boven lezen</h3><p>Actief toetsen werkt beter dan herlezen. Alles is erop gericht je dingen te láten dóen.</p></div>
+    <div class="feat"><div class="feat-ico"></div><h3>Voor iedereen</h3><p>Gratis, zonder account, op je beginscherm te zetten en ook zonder internet te gebruiken.</p></div>
+    <div class="feat"><div class="feat-ico"></div><h3>Liever goed dan veel</h3><p>We laten liever iets weg dan dat we iets fout uitleggen. En we blijven binnen de examenstof.</p></div>
+    <div class="feat"><div class="feat-ico"></div><h3>Eerlijk over gegevens</h3><p>Zonder account weten we niet wie je bent. We verkopen niets en bewaren alles in de EU.</p></div>
+    <div class="feat"><div class="feat-ico"></div><h3>Doen werkt beter dan lezen</h3><p>Jezelf overhoren werkt beter dan herlezen. Daarom laat Slagio je vooral oefenen.</p></div>
   </div>
 
   <div class="up-cta">
-    <h2>Klaar om te oefenen?</h2>
-    <p>Kies je niveau, pak een vak en begin. Geen account nodig, geen kosten.</p>
+    <h2>Meteen beginnen?</h2>
+    <p>Kies je niveau en een vak. Je hebt geen account nodig.</p>
     <div class="up-hero-btns">
-      <a class="btn-primary" href="/">Start met oefenen →</a>
-      <a class="btn-ghost" href="/faq.html">Bekijk de FAQ</a>
+      <a class="btn-primary" href="/">Begin met oefenen</a>
+      <a class="btn-ghost" href="/faq.html">Vragen over Slagio</a>
     </div>
   </div>
 </div>
 
-<footer class="up-foot">
-  <a href="/">Slagio</a> · gemaakt door leerlingen, voor leerlingen · <a href="/vakken/">Alle vakken</a> · <a href="/faq.html">FAQ</a> · <a href="/privacy.html">Privacy</a> · <a href="mailto:slagiocompany@gmail.com">Contact</a>
+<footer class="lp-voet">
+  <span class="lp-voet-merk">Slagio, gratis oefenen voor havo, vwo en vmbo</span>
+  <a href="/vakken/">Alle vakken</a><a href="/faq.html">Vragen</a><a href="/over-ons.html">Over ons</a><a href="/privacy.html">Privacy</a><a href="/voorwaarden.html">Voorwaarden</a><a href="mailto:slagiocompany@gmail.com">Contact</a>
 </footer>
 <script src="/ico-swap.js"></script>
 </body>

@@ -17,6 +17,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,700;12..96,800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/styles.css">
+  <link rel="stylesheet" href="/lp-menu.css">
+  <script src="/lp-menu.js"></script>
   <script>
   (function(){try{var d=document.documentElement,t=localStorage.getItem('theme');if(t==='dark'||(!t&&matchMedia('(prefers-color-scheme:dark)').matches))d.classList.add('dark');d.style.setProperty('--or','#E85C0D');d.style.setProperty('--or-rgb','232,92,13');d.style.setProperty('--orl','rgba(232,92,13,.12)');}catch(e){}})();
 </script>
@@ -132,29 +134,29 @@
     .up-nav-home:hover{color:var(--dk)}
   </style>
 </head>
-<body class="lp">
-<div class="lp-hero-bg" aria-hidden="true"></div>
+<body class="lp2">
 
-<nav class="nav"><div class="nav-inner">
-  <a class="logo" href="https://slagio.nl" style="text-decoration:none"><img src="/icon-192.png" alt="Slagio" style="width:26px;height:26px;border-radius:7px;object-fit:cover;flex-shrink:0">Slagio</a>
-  <a class="up-nav-home" href="/vakken/">Alle vakken</a>
-  <a class="up-nav-cta" href="https://slagio.nl/?utm_source=docenten">Gratis oefenen</a>
-</div></nav>
+<header class="lp-top"><div class="lp-top-in">
+  <a class="lp-logo" href="/"><img src="/icon-192.png" alt="">Slagio</a>
+  <button class="lp-terug" type="button" aria-label="Terug" onclick="lpTerug()"><svg viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7"/></svg></button>
+  <a class="lp-knop" href="https://slagio.nl/?utm_source=docenten">Oefenen</a>
+</div></header>
 
 <div class="up-wrap">
-  <div class="up-hero">
-    <span class="up-badge">Voor docenten &amp; scholen</span>
+  <div class="lp-kop">
+    <img class="lp-vonk" src="/img/vonk-lp.svg" alt="" width="92" height="92">
+    <span class="lp-kop-label">Voor docenten &amp; scholen</span>
     <h1>Slagio voor scholen</h1>
-    <p class="up-lead">Voor leerlingen gratis. Voor scholen <em>inzicht en regie</em>.</p>
-    <p class="up-sub">Elke leerling oefent gratis op Slagio, zonder account en zonder advertenties. Scholen kunnen daarbovenop een docentenlaag nemen met per-leerling voortgang, examen-gereedheid per klas en een sectie-rapport. De leerling betaalt nooit; de school kiest zelf.</p>
+    <p class="up-lead">Gratis voor leerlingen. Voor docenten zicht op de klas.</p>
+    <p class="up-sub">Leerlingen oefenen gratis, zonder account en zonder reclame. Een school kan er Slagio School bij nemen. Dan zie je als docent per leerling hoe het gaat, hoe ver je klas is richting het examen en krijg je een rapport voor de sectie. De leerling betaalt nooit.</p>
     <div class="up-hero-btns">
-      <a class="btn-primary" href="/docent.html">Open het docentenportaal →</a>
+      <a class="btn-primary" href="/docent.html">Open het docentenportaal</a>
       <a class="btn-ghost" href="mailto:slagiocompany@gmail.com?subject=Slagio%20School%20-%20interesse&body=Hoi%20Slagio%2C%0A%0AWij%20zijn%20ge%C3%AFnteresseerd%20in%20de%20docentenlaag%20(Slagio%20School).%0A%0ASchool%3A%20%0APlaats%3A%20%0AVak(ken)%3A%20%0AAantal%20klassen%2Fleerlingen%3A%20%0A">Neem contact op</a>
     </div>
   </div>
 
-  <h2 class="up-h2">Twee lagen, één principe</h2>
-  <p class="up-h2-sub">Slagio verkoopt geen toegang tot leerlingen. Een school betaalt alleen voor de docentenlaag: inzicht en regie.</p>
+  <h2 class="up-h2">Wat gratis is en wat niet</h2>
+  <p class="up-h2-sub">Oefenen is gratis. Een school betaalt alleen voor het dashboard van de docent.</p>
   <div class="tiers">
     <div class="tier free">
       <span class="tier-tag">Altijd gratis</span>
@@ -162,12 +164,12 @@
       <p class="who">Voor elke leerling, individueel of in de klas</p>
       <p class="price">€0<span> / voor altijd</span></p>
       <ul>
-        <li>Alle 20.000+ oefenvragen, per domein CE/SE-gemarkeerd</li>
-        <li>Flashcards, oude examens, CE-simulatietoets, studieplan</li>
-        <li>Gratis klas aanmaken met code + klas-ranglijst</li>
-        <li>Geen account nodig, geen advertenties</li>
+        <li>Alle 26.000+ oefenvragen, per onderdeel met CE of SE erbij</li>
+        <li>Kaartjes, oude examens, proefexamens en een studieplan</li>
+        <li>Gratis een klas aanmaken met een code, met een ranglijst voor de klas</li>
+        <li>Geen account nodig, geen reclame</li>
       </ul>
-      <div class="tier-foot">Dit verandert nooit. De leerling betaalt niets.</div>
+      <div class="tier-foot">Dit blijft zo. De leerling betaalt niets.</div>
     </div>
     <div class="tier school">
       <span class="tier-tag">In ontwikkeling · pilot</span>
@@ -181,13 +183,13 @@
         <li>Exporteerbaar sectie- en mentorrapport</li>
         <li>Inloggen via Entree (schoolaccount, SSO)</li>
       </ul>
-      <div class="tier-foot">Geeft de school regie en inzicht, nooit een muur voor de leerling. <a href="/vakken/slagio-school.html" style="color:var(--or);font-weight:700;text-decoration:none;white-space:nowrap">Bekijk het dashboard →</a></div>
+      <div class="tier-foot">De docent krijgt overzicht. De leerling merkt er niets van. <a href="/vakken/slagio-school.html" style="color:var(--or);font-weight:700;text-decoration:none;white-space:nowrap">Bekijk het dashboard</a></div>
     </div>
   </div>
-  <p class="model-note">Zo blijft de kern gratis: geen betaalmuur voor leerlingen, geen advertenties, geen verkoop van gegevens. De docentenlaag, aangevuld met donaties en onderwijsfondsen, draagt de kosten.</p>
+  <p class="model-note">Zo blijft oefenen gratis, zonder reclame en zonder dat we gegevens verkopen. Slagio School betaalt de kosten, samen met donaties en onderwijsfondsen.</p>
 
   <h2 class="up-h2">Wat kost het?</h2>
-  <p class="up-h2-sub">De leerling betaalt niets. Een school betaalt alleen voor de docentenlaag, en dat is een fractie van een lesmethode.</p>
+  <p class="up-h2-sub">De leerling betaalt niets. Een school betaalt alleen voor Slagio School, en dat kost veel minder dan een lesmethode.</p>
   <div class="kost-compare">
     <div class="kost-anchor"><div class="lbl">Reguliere digitale lesmethode</div><div class="val">± €30 per leerling, per vak</div></div>
     <div class="kost-anchor slagio"><div class="lbl">Slagio School</div><div class="val">Schoolbreed · leerling €0</div></div>
@@ -222,35 +224,36 @@
     </div>
   </section>
 
-  <h2 class="up-h2">In drie stappen aan de slag</h2>
-  <p class="up-h2-sub">Je hoeft niets te installeren of te beheren.</p>
+  <h2 class="up-h2">Zo begin je</h2>
+  <p class="up-h2-sub">Je hoeft niets te installeren.</p>
   <div class="steps">
-    <div class="step"><h3>Meld je school aan</h3><p>Stuur ons een bericht met je school en vak. Je hoort snel hoe je Slagio klassikaal inzet en (straks) via Entree koppelt.</p></div>
+    <div class="step"><h3>Meld je school aan</h3><p>Mail ons je school en vak. We laten je weten hoe je Slagio in de klas gebruikt en straks koppelt via Entree.</p></div>
     <div class="step"><h3>Start een sessie</h3><p>Open een klassen-quiz of deel een domein-oefening. Leerlingen doen mee met een code of hun schoolaccount.</p></div>
-    <div class="step"><h3>Volg de voortgang</h3><p>Zie live de resultaten en stuur je les bij op de domeinen waar de klas de meeste winst kan halen.</p></div>
+    <div class="step"><h3>Volg de voortgang</h3><p>Je ziet de resultaten meteen en weet welke onderwerpen je in de les nog eens moet doen.</p></div>
   </div>
 
-  <h2 class="up-h2">Veelgestelde vragen</h2>
+  <h2 class="up-h2">Vragen van docenten</h2>
   <div class="faq">
-    <details open><summary>Is Slagio gratis voor leerlingen?</summary><div class="a">Ja, altijd en volledig. Oefenen, quizzen, flashcards en oude examens zijn voor leerlingen gratis, zonder account en zonder advertenties. Een klas aanmaken en de klas-ranglijst zijn ook gratis. Dit blijft zo; de leerling betaalt nooit.</div></details>
-    <details><summary>Hoe blijft Slagio dan gratis? Wat is het verdienmodel?</summary><div class="a">Slagio verkoopt geen toegang tot leerlingen en toont geen advertenties. De kosten worden gedragen door een optionele docentenlaag (Slagio School) die scholen inzicht en regie geeft, aangevuld met donaties en onderwijsfondsen. Zo kan de kern gratis blijven zonder betaalmuur voor de leerling.</div></details>
+    <details open><summary>Is Slagio gratis voor leerlingen?</summary><div class="a">Ja, altijd. Oefenen, quizzen, flashcards en oude examens zijn voor leerlingen gratis, zonder account en zonder advertenties. Een klas aanmaken en de klas-ranglijst zijn ook gratis. Dit blijft zo; de leerling betaalt nooit.</div></details>
+    <details><summary>Hoe blijft Slagio dan gratis?</summary><div class="a">Slagio toont geen reclame en verkoopt geen gegevens. Scholen die Slagio School nemen, betalen de kosten, samen met donaties en onderwijsfondsen. Zo blijft oefenen gratis voor leerlingen.</div></details>
     <details><summary>Wat kost Slagio School voor een school?</summary><div class="a">Één schoolbrede jaarlicentie, geen kosten per leerling: gratis tijdens de pilot dit schooljaar, daarna vanaf €500 per jaar voor een kleine school, €1.000 voor een gemiddelde VO-school en €1.500 voor een grote scholengemeenschap. Onbeperkt docenten en leerlingen, per schooljaar opzegbaar, geen opstartkosten. Leerlingen oefenen altijd gratis. Ter vergelijking: een reguliere digitale lesmethode kost al snel €30 per leerling per vak.</div></details>
     <details><summary>Hoe werkt inloggen via Entree?</summary><div class="a">Via de Kennisnet Entree Federatie loggen leerlingen en docenten in met hun bestaande schoolaccount (single sign-on), zonder apart wachtwoord. Deze koppeling is in voorbereiding; je school kan zich nu al aanmelden zodat je er als eerste bij bent.</div></details>
-    <details><summary>Moet de ICT-afdeling iets installeren?</summary><div class="a">Nee. Slagio draait in de browser en als installeerbare webapp (PWA). Er is geen installatie of beheer nodig; je kunt het vandaag nog gebruiken.</div></details>
+    <details><summary>Moet de ICT-afdeling iets installeren?</summary><div class="a">Nee. Slagio werkt in de browser en kan op het beginscherm van een telefoon. Er valt niets te installeren of te beheren.</div></details>
     <details><summary>Hoe zit het met privacy en de AVG?</summary><div class="a">Oefenen kan volledig anoniem, zonder persoonsgegevens. Bij inloggen via Entree worden pseudonieme leerling-ID's (ECK iD) gebruikt, zodat de school geen extra persoonsgegevens hoeft te delen.</div></details>
     <details><summary>Voor welke niveaus en vakken?</summary><div class="a">HAVO, VWO en VMBO GL/TL, alle examenvakken met een centraal examen. Bekijk het <a href="/vakken/" style="color:var(--or);font-weight:600">volledige vakkenoverzicht</a>.</div></details>
   </div>
 
   <div class="up-cta">
-    <h2>Interesse in de docentenlaag?</h2>
-    <p>Leerlingen kunnen vandaag al gratis oefenen. Wil je als docent of sectie inzicht en regie, dan denken we graag mee over een pilot op je school.</p>
+    <h2>Interesse in Slagio School?</h2>
+    <p>Leerlingen kunnen nu al gratis oefenen. Wil je als docent of sectie de voortgang volgen, dan kijken we graag samen naar een pilot op je school.</p>
     <a class="btn-primary" href="mailto:slagiocompany@gmail.com?subject=Slagio%20School%20-%20pilotschool">Neem contact op</a>
-    <span class="up-cta-sub">Gratis voor leerlingen · docentenlaag optioneel · geen installatie</span>
+    <span class="up-cta-sub">Gratis voor leerlingen, niets te installeren</span>
   </div>
 </div>
 
-<footer class="up-foot">
-  <a href="https://slagio.nl">Slagio</a> · gratis examenvoorbereiding voor HAVO, VWO &amp; VMBO · <a href="/vakken/">Alle vakken</a>
+<footer class="lp-voet">
+  <span class="lp-voet-merk">Slagio, gratis oefenen voor havo, vwo en vmbo</span>
+  <a href="/vakken/">Alle vakken</a><a href="/faq.html">Vragen</a><a href="/over-ons.html">Over ons</a><a href="/privacy.html">Privacy</a><a href="/voorwaarden.html">Voorwaarden</a><a href="mailto:slagiocompany@gmail.com">Contact</a>
 </footer>
 </body>
 </html>

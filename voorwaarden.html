@@ -8,7 +8,7 @@
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://slagio.nl/voorwaarden.html">
   <meta property="og:title" content="Algemene voorwaarden - Slagio">
-  <meta property="og:description" content="De spelregels voor het gebruik van Slagio, in gewone taal.">
+  <meta property="og:description" content="Afspraken voor het gebruik van Slagio, in gewone taal.">
   <meta property="og:url" content="https://slagio.nl/voorwaarden.html">
   <meta property="og:type" content="website">
   <meta property="og:image" content="https://slagio.nl/icon-512.png">
@@ -17,6 +17,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,700;12..96,800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/styles.css">
+  <link rel="stylesheet" href="/lp-menu.css">
+  <script src="/lp-menu.js"></script>
   <script>
   (function(){try{var d=document.documentElement,t=localStorage.getItem('theme');if(t==='dark'||(!t&&matchMedia('(prefers-color-scheme:dark)').matches))d.classList.add('dark');d.classList.add(localStorage.getItem('examenapp_level')==='vwo'?'level-vwo':'level-havo');d.style.setProperty('--or','#E85C0D');d.style.setProperty('--or-rgb','232,92,13');d.style.setProperty('--orl','rgba(232,92,13,.12)');}catch(e){document.documentElement.classList.add('level-havo');}})();
   </script>
@@ -48,18 +50,19 @@
     .up-foot a{color:var(--or);text-decoration:none;font-weight:600}
   </style>
 </head>
-<body class="lp">
-<div class="lp-hero-bg" aria-hidden="true"></div>
+<body class="lp2">
 
-<nav class="nav"><div class="nav-inner">
-  <a class="logo" href="/" style="text-decoration:none"><img src="/icon-192.png" alt="Slagio" style="width:26px;height:26px;border-radius:7px;object-fit:cover;flex-shrink:0">Slagio</a>
-  <button class="bk" style="margin-left:auto" onclick="if(document.referrer&&document.referrer.indexOf(location.host)>-1){history.back()}else{location.href='/'}">← Terug</button>
-</div></nav>
+<header class="lp-top"><div class="lp-top-in">
+  <a class="lp-logo" href="/"><img src="/icon-192.png" alt="">Slagio</a>
+  <button class="lp-terug" type="button" aria-label="Terug" onclick="lpTerug()"><svg viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7"/></svg></button>
+  <a class="lp-knop" href="/">Oefenen</a>
+</div></header>
 
 <div class="up-wrap">
-  <div class="pv-head">
-    <span class="up-badge">Algemene voorwaarden</span>
-    <h1>De spelregels voor het gebruik van Slagio</h1>
+  <div class="lp-kop">
+    <img class="lp-vonk" src="/img/vonk-lp.svg" alt="" width="92" height="92">
+    <span class="lp-kop-label">Algemene voorwaarden</span>
+    <h1>Afspraken voor het gebruik van Slagio</h1>
     <p class="pv-updated">Laatst bijgewerkt: 6 september 2026</p>
   </div>
 
@@ -106,7 +109,7 @@
     <p>De kern van Slagio blijft gratis. Als er in de toekomst optionele betaalde functies (bijvoorbeeld Slagio Plus of een schoollicentie) worden aangeboden, gelden daarvoor aanvullende voorwaarden die vóór aankoop duidelijk worden gemaakt. Op dit moment worden er geen betalingen gevraagd.</p>
 
     <h2>9. Jouw gegevens</h2>
-    <p>Hoe we met je gegevens omgaan staat in ons <a href="/privacy.html">privacybeleid</a>. Je kunt je lokale gegevens wissen of je account verwijderen via <em>Profiel → Gegevens → Privacy &amp; gegevens</em>, of door te mailen naar <a href="mailto:slagiocompany@gmail.com">slagiocompany@gmail.com</a>.</p>
+    <p>Hoe we met je gegevens omgaan staat in ons <a href="/privacy.html">privacybeleid</a>. Je kunt je lokale gegevens wissen of je account verwijderen via <em>Profiel Gegevens Privacy &amp; gegevens</em>, of door te mailen naar <a href="mailto:slagiocompany@gmail.com">slagiocompany@gmail.com</a>.</p>
 
     <h2>10. Wijzigingen</h2>
     <p>Wij kunnen deze voorwaarden bijwerken. De datum bovenaan geeft de laatste wijziging aan. Bij ingrijpende wijzigingen plaatsen we een melding in de app.</p>
@@ -119,8 +122,9 @@
   </div>
 </div>
 
-<footer class="up-foot">
-  <a href="/">Slagio</a> · gratis examenvoorbereiding · <a href="/privacy.html">Privacybeleid</a> · <a href="/over-ons.html">Over ons</a> · <a href="mailto:slagiocompany@gmail.com">Contact</a>
+<footer class="lp-voet">
+  <span class="lp-voet-merk">Slagio, gratis oefenen voor havo, vwo en vmbo</span>
+  <a href="/vakken/">Alle vakken</a><a href="/faq.html">Vragen</a><a href="/over-ons.html">Over ons</a><a href="/privacy.html">Privacy</a><a href="/voorwaarden.html">Voorwaarden</a><a href="mailto:slagiocompany@gmail.com">Contact</a>
 </footer>
 <script src="/ico-swap.js"></script>
 </body>

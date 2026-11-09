@@ -17,6 +17,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,700;12..96,800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/styles.css">
+  <link rel="stylesheet" href="/lp-menu.css">
+  <script src="/lp-menu.js"></script>
   <script>
   (function(){try{var t=localStorage.getItem('theme');if(t==='dark'||(!t&&matchMedia('(prefers-color-scheme:dark)').matches))document.documentElement.classList.add('dark');}catch(e){}})();
   </script>
@@ -116,18 +118,19 @@
     .up-nav-home:hover{color:var(--dk)}
   </style>
 </head>
-<body>
+<body class="lp2">
 
-<nav class="nav"><div class="nav-inner">
-  <a class="logo" href="https://slagio.nl" style="text-decoration:none"><img src="/icon-192.png" alt="Slagio" style="width:26px;height:26px;border-radius:7px;object-fit:cover;flex-shrink:0">Slagio</a>
-  <a class="up-nav-home" href="/vakken/">Alle vakken</a>
-  <a class="up-nav-cta" href="https://slagio.nl/?utm_source=nterm">Gratis oefenen</a>
-</div></nav>
+<header class="lp-top"><div class="lp-top-in">
+  <a class="lp-logo" href="/"><img src="/icon-192.png" alt="">Slagio</a>
+  <button class="lp-terug" type="button" aria-label="Terug" onclick="lpTerug()"><svg viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7"/></svg></button>
+  <a class="lp-knop" href="https://slagio.nl/?utm_source=nterm">Oefenen</a>
+</div></header>
 
 <div class="up-wrap">
-  <div class="up-hero">
-    <h1>N-term calculator: <em>bereken je CE-cijfer</em></h1>
-    <p class="up-sub">Vul je behaalde punten, het maximum en de n-term in. Je cijfer verschijnt direct.</p>
+  <div class="lp-kop">
+    <img class="lp-vonk" src="/img/vonk-lp.svg" alt="" width="92" height="92">
+    <h1>Van punten naar cijfer</h1>
+    <p class="up-sub">Vul je punten, het maximum en de n-term in. Je CE-cijfer staat er meteen.</p>
   </div>
 
   <div class="calc">
@@ -206,24 +209,25 @@
   </div>
 
   <div class="up-cta">
-    <h2>Minder afhankelijk van de n-term? Scoor hoger op je CE</h2>
-    <p>Hoe hoger je punten, hoe minder een lage n-term uitmaakt. Oefen gratis met 2.400+ examenvragen per domein en echte oude examens op Slagio.</p>
-    <a class="up-cta-btn" href="https://slagio.nl/?utm_source=nterm">Start gratis met oefenen →</a>
-    <span class="up-cta-sub">Geen account nodig · werkt ook als app op je telefoon</span>
+    <h2>Minder last van een lage n-term?</h2>
+    <p>Hoe meer punten je haalt, hoe minder een lage n-term uitmaakt. Oefen gratis per onderwerp en met oude examens.</p>
+    <a class="up-cta-btn" href="https://slagio.nl/?utm_source=nterm">Begin met oefenen</a>
+    <span class="up-cta-sub">Gratis en zonder account, ook als app op je telefoon</span>
   </div>
 
-  <h2 class="up-h2" style="margin-top:40px">Andere handige tools</h2>
+  <h2 class="up-h2" style="margin-top:40px">Meer handige pagina's</h2>
   <div class="up-rel">
-    <a href="/vakken/slaagkans-calculator.html">🎯 Slaagkans-calculator</a>
-    <a href="/vakken/eindcijfer-calculator.html">📊 Eindcijfer-calculator</a>
-    <a href="/vakken/examenrooster-2027.html">📅 Examenrooster 2027</a>
-    <a href="/vakken/examenuitslag-2027.html">🎓 Examenuitslag 2027</a>
-    <a href="https://slagio.nl/vakken/">📚 Alle vakken</a>
+    <a href="/vakken/slaagkans-calculator.html">Slaagkans-calculator</a>
+    <a href="/vakken/eindcijfer-calculator.html">Eindcijfer-calculator</a>
+    <a href="/vakken/examenrooster-2027.html">Examenrooster 2027</a>
+    <a href="/vakken/examenuitslag-2027.html">Examenuitslag 2027</a>
+    <a href="https://slagio.nl/vakken/">Alle vakken</a>
   </div>
 </div>
 
-<footer class="up-foot">
-  <a href="https://slagio.nl">Slagio</a> · gratis examenvoorbereiding voor HAVO, VWO &amp; VMBO · Normering: <a href="https://www.examenblad.nl" rel="noopener">Examenblad.nl</a>
+<footer class="lp-voet">
+  <span class="lp-voet-merk">Slagio, gratis oefenen voor havo, vwo en vmbo</span>
+  <a href="/vakken/">Alle vakken</a><a href="/faq.html">Vragen</a><a href="/over-ons.html">Over ons</a><a href="/privacy.html">Privacy</a><a href="/voorwaarden.html">Voorwaarden</a><a href="mailto:slagiocompany@gmail.com">Contact</a>
 </footer>
 
 <script>
