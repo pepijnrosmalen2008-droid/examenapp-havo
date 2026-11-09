@@ -1,0 +1,682 @@
+{
+ "id": "B3",
+ "lo": "en.B.3",
+ "gs": 2,
+ "naam": "De betekenis van woorden en zinnen in gesproken tekst",
+ "beschrijving": "Je leert de betekenis van onbekende woorden en zinnen in Engelse gesproken tekst af te leiden: je gebruikt de context, herkent vaste combinaties zoals set off en hold on, begrijpt beleefde zinnen als I am afraid en let op valse vrienden.",
+ "ceStatus": "CE",
+ "binas": "",
+ "val": "",
+ "onderwerpen": [
+  "Raden met de context",
+  "Vaste combinaties",
+  "Beleefde zinnen",
+  "Valse vrienden",
+  "Doorluisteren bij onbekende woorden"
+ ],
+ "sam": "Een onbekend woord raden doe je met de context (Context): de zin, de situatie en de toon. Vaste combinaties als set off, hold on en pick up vertaal je als geheel. I am afraid is een beleefde inleiding voor slecht nieuws. Pas op voor valse vrienden zoals actually en ID. Blijf doorluisteren en controleer je gok bij de tweede keer. Voorbeelden: Receipt is een bon, ID is een identiteitsbewijs, refund is geld terug, een receipt is een bon, pouring with rain is heel hard regenen en raden doe je met de zinnen eromheen.",
+ "begrippen": [
+  {
+   "t": "Context",
+   "d": "De woorden en zinnen rond een woord die de betekenis verraden."
+  },
+  {
+   "t": "Set off (vertrekken)",
+   "d": "Vertrekken of op reis gaan, bijvoorbeeld om vijf uur."
+  },
+  {
+   "t": "Hold on",
+   "d": "Wacht even, vaak aan de telefoon voordat iemand iets opzoekt."
+  },
+  {
+   "t": "Pick up",
+   "d": "Iets ophalen of afhalen op een plek, bijvoorbeeld een rugzak of een pakket."
+  },
+  {
+   "t": "I am afraid",
+   "d": "Een beleefde manier om slecht nieuws te geven."
+  },
+  {
+   "t": "Refund",
+   "d": "Geld terug na een aankoop."
+  },
+  {
+   "t": "Receipt",
+   "d": "Een bon die laat zien dat je iets kocht."
+  },
+  {
+   "t": "Actually",
+   "d": "Eigenlijk of in feite, niet actueel."
+  },
+  {
+   "t": "Valse vriend",
+   "d": "Een Engels woord dat lijkt op een Nederlands woord maar iets anders betekent."
+  },
+  {
+   "t": "Pouring with rain",
+   "d": "Heel hard regenen."
+  },
+  {
+   "t": "ID (identiteitsbewijs)",
+   "d": "Een identiteitsbewijs, geen idee."
+  },
+  {
+   "t": "Raden",
+   "d": "Een betekenis afleiden uit wat je al weet, met de zin eromheen."
+  }
+ ],
+ "sv": [
+  {
+   "v": "Je hoort een woord dat je niet kent. Wat doe je eerst?",
+   "o": [
+    "\"je stopt met luisteren\"",
+    "\"je let op de zin eromheen\"",
+    "\"je zegt het woord hardop na\"",
+    "\"je vult het eerste Nederlandse woord in dat erop lijkt\""
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 0,
+   "u": "Gebruik de context. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"je stopt met luisteren\"\"? Dan denk je dat één woord alles onmogelijk maakt. Je mist dan de rest, en kunt geen vraag meer beantwoorden.",
+    "Klopt: de woorden ervoor en erna geven vaak genoeg aanwijzingen voor de betekenis.",
+    "Koos je \"\"je zegt het woord hardop na\"\"? Dan denk je dat nazeggen de betekenis geeft. Een woord herhalen verklaart niets, en kost tijd tijdens de tekst.",
+    "Koos je \"\"je vult het eerste Nederlandse woord in dat erop lijkt\"\"? Dan denk je dat gelijkend altijd hetzelfde betekent. Veel Engelse woorden lijken op Nederlandse, maar betekenen iets anders."
+   ],
+   "uh": "Je hoort een woord dat je niet kent. Wat doe je eerst?"
+  },
+  {
+   "v": "Welke aanwijzing helpt je om een onbekend woord te raden?",
+   "o": [
+    "\"het eerste woord van de tekst\"",
+    "\"het laatste woord van een andere zin, volgens mij\"",
+    "\"de stem van de spreker alleen\"",
+    "\"een woord uit dezelfde zin dat erbij past\""
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 0,
+   "u": "Gebruik de context. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"het eerste woord van de tekst\"\"? Dan denk je dat het begin altijd helpt. Het eerste woord staat vaak ver weg, en gaat over iets anders.",
+    "Koos je \"\"het laatste woord van een andere zin, volgens mij\"\"? Dan denk je dat elk woord uit de tekst helpt. De aanwijzing moet in de buurt staan, anders is er geen verband.",
+    "Koos je \"\"de stem van de spreker alleen\"\"? Dan denk je dat de toon genoeg is. Een toon zegt wel iets over de stemming, maar niet over de betekenis van het woord.",
+    "Klopt: de zin heeft een samenhang, dus passende woorden verraden de betekenis."
+   ],
+   "uh": "Welke aanwijzing helpt je om een onbekend woord te raden?"
+  },
+  {
+   "v": "Iemand zegt: 'We set off at five o'clock.' Wat doen ze om vijf uur?",
+   "o": [
+    "\"ze vertrekken\"",
+    "\"ze zetten iets uit\"",
+    "\"ze komen aan\"",
+    "\"ze gaan eten\""
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 1,
+   "u": "Gebruik de context. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: set off betekent op weg gaan, dus vertrekken.",
+    "Koos je \"\"ze zetten iets uit\"\"? Dan denk je dat set off uitzetten is. Je koppelt het aan een apparaat, terwijl het hier over een reis gaat.",
+    "Koos je \"\"ze komen aan\"\"? Dan denk je dat het om aankomst gaat. Aankomen is arrive, en set off is het begin van de reis.",
+    "Koos je \"\"ze gaan eten\"\"? Dan denk je dat het een maaltijd is. Er wordt geen eten genoemd, dus het gaat om vertrekken."
+   ],
+   "uh": "Iemand zegt: 'We set off at five o'clock.' Wat doen ze om vijf uur?"
+  },
+  {
+   "v": "Een medewerker zegt aan de telefoon: 'Hold on.' Wat moet jij doen?",
+   "o": [
+    "\"de telefoon neerleggen\"",
+    "\"harder praten\"",
+    "\"even wachten\"",
+    "\"je naam herhalen\""
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 1,
+   "u": "Gebruik de context. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"de telefoon neerleggen\"\"? Dan denk je dat hold on ophangen is. Neerleggen zou je zeggen met put down, en het gesprek gaat nog door.",
+    "Koos je \"\"harder praten\"\"? Dan denk je dat je beter verstaan wilt worden. Er is geen reden om je stem te verheffen, en hold on gaat over tijd.",
+    "Klopt: hold on betekent wacht even, vaak voordat iemand iets opzoekt.",
+    "Koos je \"\"je naam herhalen\"\"? Dan denk je dat de medewerker je naam vraagt. Dat zou ze zeggen met your name, en niet met hold on."
+   ],
+   "uh": "Een medewerker zegt aan de telefoon: 'Hold on.' Wat moet jij doen?"
+  },
+  {
+   "v": "Een winkelier zegt: 'I am afraid we are closed.' Wat bedoelt hij?",
+   "o": [
+    "\"ik ben bang van jullie\"",
+    "\"helaas, we zijn dicht\"",
+    "\"de winkel is gevaarlijk\"",
+    "\"wij zijn bang om te sluiten\""
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 2,
+   "u": "Gebruik de context. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"ik ben bang van jullie\"\"? Dan denk je dat de winkelier schrikt. De zin is beleefd bedoeld, en niet als angst.",
+    "Klopt: I am afraid is een beleefde manier om slecht nieuws te geven.",
+    "Koos je \"\"de winkel is gevaarlijk\"\"? Dan denk je dat er gevaar is. De zin zegt alleen dat de winkel dicht is, dus er is geen risico.",
+    "Koos je \"\"wij zijn bang om te sluiten\"\"? Dan denk je dat de winkelier iets vreest. Hij meldt gewoon dat het dicht is, zonder angst."
+   ],
+   "uh": "Een winkelier zegt: 'I am afraid we are closed.' Wat bedoelt hij?"
+  },
+  {
+   "v": "Een vriend zegt: 'Actually, I like it.' Wat zegt hij?",
+   "o": [
+    "\"op dit moment vind ik het leuk\"",
+    "\"ik vind het meteen leuk\"",
+    "\"ik vind het ondertussen leuk\"",
+    "\"eigenlijk vind ik het leuk\""
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 3,
+   "u": "Gebruik de context. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"op dit moment vind ik het leuk\"\"? Dan denk je dat actually op nu slaat. Dat is de valse vriend van actueel, terwijl het eigenlijk betekent.",
+    "Koos je \"\"ik vind het meteen leuk\"\"? Dan denk je dat het om snelheid gaat. Meteen is immediately, en actually is iets anders.",
+    "Koos je \"\"ik vind het ondertussen leuk\"\"? Dan denk je dat het om tijd gaat. Ondertussen is meanwhile, en actually niet.",
+    "Klopt: actually betekent eigenlijk of in feite en niet actueel."
+   ],
+   "uh": "Een vriend zegt: 'Actually, I like it.' Wat zegt hij?"
+  },
+  {
+   "v": "Je verstaat een woord niet, maar de rest van de zin wel. Wat doe je?",
+   "o": [
+    "\"je gebruikt de rest van de zin om de betekenis te raden\"",
+    "\"je laat de vraag blanco\"",
+    "\"je geeft op en luistert niet meer\"",
+    "\"je schrijft het eerste Nederlandse woord dat erop lijkt, to be honest\""
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 4,
+   "u": "Gebruik de context. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: met de rest van de zin kun je vaak genoeg begrijpen om de vraag te beantwoorden.",
+    "Koos je \"\"je laat de vraag blanco\"\"? Dan denk je dat een leeg antwoord veilig is. Een blanco antwoord levert niets op, en een gok kan wel punten geven.",
+    "Koos je \"\"je geeft op en luistert niet meer\"\"? Dan denk je dat het mislukt is. Je hebt nog de rest van de tekst, en daarmee kun je veel.",
+    "Koos je \"\"je schrijft het eerste Nederlandse woord dat erop lijkt, to be honest\"\"? Dan denk je dat dit werkt. Valse vrienden brengen je in de war, en leiden tot een fout antwoord."
+   ],
+   "uh": "Je verstaat een woord niet, maar de rest van de zin wel. Wat doe je?"
+  },
+  {
+   "v": "What is the problem with the jacket?",
+   "o": [
+    "\"it is too long\"",
+    "\"it has a hole in it\"",
+    "\"it is too tight around the shoulders\"",
+    "\"it is the wrong colour, I suppose, really\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 0,
+   "u": "Gebruik de context. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"it is too long\"\"? Dan denk je dat de jas te lang is. Er wordt niets over de lengte gezegd, dus je verzint iets.",
+    "Koos je \"\"it has a hole in it\"\"? Dan denk je dat er een gat in zit. De klant noemt geen schade, maar een maatprobleem.",
+    "Klopt: de klant zegt dat de jas te strak zit om de schouders.",
+    "Koos je \"\"it is the wrong colour, I suppose, really\"\"? Dan denk je dat de kleur het probleem is. Kleur wordt niet genoemd, en de klant vraagt om een grotere maat."
+   ],
+   "uh": "What is the problem with the jacket?",
+   "ctx": "You hear a conversation in a shop (read the transcript): \"Customer: Excuse me, I bought this jacket yesterday, but it is too tight around the shoulders. Can I change it for a bigger size? Assistant: Of course. Do you have the receipt? Customer: Yes, here it is. Assistant: Thank you. I am afraid we do not have this jacket in a larger size, but I can give you your money back, or you can choose something else from the shop. Customer: I think I will have a refund, please. Assistant: No problem. It will take about three days before the money is on your account. Customer: That is fine. Thank you very much for your help.\""
+  },
+  {
+   "v": "What does 'refund' mean in this conversation?",
+   "o": [
+    "\"a bigger size\"",
+    "\"money back\"",
+    "\"a receipt\"",
+    "\"a new jacket\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 0,
+   "u": "Gebruik de context. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"a bigger size\"\"? Dan denk je dat refund een andere maat is. Een andere maat is niet beschikbaar, dus dit is het alternatief.",
+    "Klopt: de verkoopster biedt geld terug aan, en dat is wat refund betekent.",
+    "Koos je \"\"a receipt\"\"? Dan denk je dat refund een bon is. Een bon heet receipt, en is iets anders dan het terugbetalen.",
+    "Koos je \"\"a new jacket\"\"? Dan denk je dat refund een nieuwe jas is. De klant krijgt juist geen jas, maar het geld terug."
+   ],
+   "uh": "What does 'refund' mean in this conversation?",
+   "ctx": "You hear a conversation in a shop (read the transcript): \"Customer: Excuse me, I bought this jacket yesterday, but it is too tight around the shoulders. Can I change it for a bigger size? Assistant: Of course. Do you have the receipt? Customer: Yes, here it is. Assistant: Thank you. I am afraid we do not have this jacket in a larger size, but I can give you your money back, or you can choose something else from the shop. Customer: I think I will have a refund, please. Assistant: No problem. It will take about three days before the money is on your account. Customer: That is fine. Thank you very much for your help.\""
+  },
+  {
+   "v": "Why does the assistant say 'I am afraid'?",
+   "o": [
+    "\"because she is scared of the customer, really\"",
+    "\"because the shop is closing\"",
+    "\"because the jacket is dangerous\"",
+    "\"to say politely that she has bad news\""
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 2,
+   "u": "Gebruik de context. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"because she is scared of the customer, really\"\"? Dan denk je dat de verkoopster bang is. Het is een vaste beleefdheidszin, en geen gevoel van angst.",
+    "Koos je \"\"because the shop is closing\"\"? Dan denk je dat de winkel dichtgaat. Dat wordt niet gezegd, en de klant krijgt gewoon hulp.",
+    "Koos je \"\"because the jacket is dangerous\"\"? Dan denk je dat de jas gevaar oplevert. Er is alleen geen grotere maat, en dat is het slechte nieuws.",
+    "Klopt: I am afraid leidt slecht nieuws beleefd in, hier dat de maat er niet is."
+   ],
+   "uh": "Why does the assistant say 'I am afraid'?",
+   "ctx": "You hear a conversation in a shop (read the transcript): \"Customer: Excuse me, I bought this jacket yesterday, but it is too tight around the shoulders. Can I change it for a bigger size? Assistant: Of course. Do you have the receipt? Customer: Yes, here it is. Assistant: Thank you. I am afraid we do not have this jacket in a larger size, but I can give you your money back, or you can choose something else from the shop. Customer: I think I will have a refund, please. Assistant: No problem. It will take about three days before the money is on your account. Customer: That is fine. Thank you very much for your help.\""
+  },
+  {
+   "v": "What does the customer choose?",
+   "o": [
+    "\"to get her money back\"",
+    "\"to take a bigger jacket\"",
+    "\"to choose another jacket\"",
+    "\"to come back next week\""
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 4,
+   "u": "Gebruik de context. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: ze zegt dat ze graag het geld terug wil.",
+    "Koos je \"\"to take a bigger jacket\"\"? Dan denk je dat ze een grotere maat kiest. Die is er niet, dus dat kan niet.",
+    "Koos je \"\"to choose another jacket\"\"? Dan denk je dat ze iets anders kiest. Ze wil een refund, en geen nieuwe jas.",
+    "Koos je \"\"to come back next week\"\"? Dan denk je dat ze later terugkomt. Er wordt geen afspraak gemaakt, maar ze kiest een refund."
+   ],
+   "uh": "What does the customer choose?",
+   "ctx": "You hear a conversation in a shop (read the transcript): \"Customer: Excuse me, I bought this jacket yesterday, but it is too tight around the shoulders. Can I change it for a bigger size? Assistant: Of course. Do you have the receipt? Customer: Yes, here it is. Assistant: Thank you. I am afraid we do not have this jacket in a larger size, but I can give you your money back, or you can choose something else from the shop. Customer: I think I will have a refund, please. Assistant: No problem. It will take about three days before the money is on your account. Customer: That is fine. Thank you very much for your help.\""
+  },
+  {
+   "v": "What does 'set off' mean in 'We set off very early'?",
+   "o": [
+    "\"we stopped\"",
+    "\"we woke up\"",
+    "\"we left\"",
+    "\"we arrived\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 1,
+   "u": "Gebruik de context. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"we stopped\"\"? Dan denk je dat ze stoppen. Ze beginnen juist aan de reis, dus dat is het tegenovergestelde.",
+    "Koos je \"\"we woke up\"\"? Dan denk je dat het om wakker worden gaat. Daar zou wake up staan, en set off is vertrekken.",
+    "Klopt: set off betekent op reis gaan, en dat past bij de lange reis.",
+    "Koos je \"\"we arrived\"\"? Dan denk je dat ze aankomen. Dat is arrive, en de reis is nog aan het begin."
+   ],
+   "uh": "What does 'set off' mean in 'We set off very early'?",
+   "ctx": "You hear a vlogger (read the transcript): \"Hello everybody, welcome back to my channel. Today I am going to tell you about my trip to Scotland. We set off very early, around five o'clock, because the journey was long. The weather was awful: it was pouring with rain all day, and we were soaked after ten minutes. But the next day the sun came out, and the view of the mountains was breathtaking. The people in the small village were very friendly and the food was delicious, especially the soup. I can honestly say it was the best holiday of my life. If you ever get the chance, do not miss it!\""
+  },
+  {
+   "v": "What does 'soaked' mean in 'we were soaked after ten minutes'?",
+   "o": [
+    "\"very tired\"",
+    "\"very wet\"",
+    "\"very hungry\"",
+    "\"very happy\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 0,
+   "u": "Gebruik de context. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"very tired\"\"? Dan denk je dat soaked moe betekent. De zin gaat over regen, dus het gaat om nat zijn.",
+    "Klopt: na regen die met bakken uit de lucht komt, zijn ze doornat.",
+    "Koos je \"\"very hungry\"\"? Dan denk je dat het om honger gaat. Er wordt over het weer gesproken, en niet over eten.",
+    "Koos je \"\"very happy\"\"? Dan denk je dat soaked blij betekent. Na een regenbui ben je niet blij, maar nat."
+   ],
+   "uh": "What does 'soaked' mean in 'we were soaked after ten minutes'?",
+   "ctx": "You hear a vlogger (read the transcript): \"Hello everybody, welcome back to my channel. Today I am going to tell you about my trip to Scotland. We set off very early, around five o'clock, because the journey was long. The weather was awful: it was pouring with rain all day, and we were soaked after ten minutes. But the next day the sun came out, and the view of the mountains was breathtaking. The people in the small village were very friendly and the food was delicious, especially the soup. I can honestly say it was the best holiday of my life. If you ever get the chance, do not miss it!\""
+  },
+  {
+   "v": "What does 'especially' mean in 'especially the soup'?",
+   "o": [
+    "\"almost\"",
+    "\"only\"",
+    "\"never\"",
+    "\"most of all\""
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 3,
+   "u": "Gebruik de context. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"almost\"\"? Dan denk je dat especially bijna betekent. Dat is almost, en especially legt de nadruk.",
+    "Koos je \"\"only\"\"? Dan denk je dat het alleen de soep was. Het eten was in het algemeen lekker, en de soep in het bijzonder.",
+    "Koos je \"\"never\"\"? Dan denk je dat het om nooit gaat. De spreker is enthousiast, dus dat past niet.",
+    "Klopt: especially betekent vooral, dus de soep was het lekkerst."
+   ],
+   "uh": "What does 'especially' mean in 'especially the soup'?",
+   "ctx": "You hear a vlogger (read the transcript): \"Hello everybody, welcome back to my channel. Today I am going to tell you about my trip to Scotland. We set off very early, around five o'clock, because the journey was long. The weather was awful: it was pouring with rain all day, and we were soaked after ten minutes. But the next day the sun came out, and the view of the mountains was breathtaking. The people in the small village were very friendly and the food was delicious, especially the soup. I can honestly say it was the best holiday of my life. If you ever get the chance, do not miss it!\""
+  },
+  {
+   "v": "What does 'Hold on' mean in the call?",
+   "o": [
+    "\"wait a moment\"",
+    "\"speak louder\"",
+    "\"call back later\"",
+    "\"put your hand up\""
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 1,
+   "u": "Gebruik de context. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: de medewerker gaat kijken en vraagt de beller even te wachten.",
+    "Koos je \"\"speak louder\"\"? Dan denk je dat de beller moet roepen. De medewerker verstaat hem prima, en vraagt alleen om geduld.",
+    "Koos je \"\"call back later\"\"? Dan denk je dat de beller opnieuw moet bellen. De medewerker gaat het meteen uitzoeken, dus dat hoeft niet.",
+    "Koos je \"\"put your hand up\"\"? Dan denk je dat hold on een handbeweging is. Aan de telefoon kan niemand dat zien, dus het gaat om wachten."
+   ],
+   "uh": "What does 'Hold on' mean in the call?",
+   "ctx": "You hear a phone call (read the transcript): \"Employee: Hello, lost property office, how can I help you? Caller: Hi, I think I left my backpack on the bus this morning. It is dark blue and has a white label on the front. Employee: What time did you get on? Caller: At about ten past eight, on the number twelve to the city centre. Employee: Hold on, I will check. Yes, we have found a blue backpack. Can you tell me what is inside? Caller: There is a laptop, a lunch box and a green notebook. Employee: That is right. You can pick it up until six o'clock today, but do not forget to bring your ID.\""
+  },
+  {
+   "v": "What is a 'lost property office'?",
+   "o": [
+    "\"a shop that sells new bags, I think, I suppose\"",
+    "\"a bus company\"",
+    "\"a place where lost things are kept\"",
+    "\"a police station\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 0,
+   "u": "Gebruik de context. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"a shop that sells new bags, I think, I suppose\"\"? Dan denk je dat het een winkel is. De medewerker zoekt een rugzak op, en verkoopt niets.",
+    "Koos je \"\"a bus company\"\"? Dan denk je dat het de busmaatschappij is. Het bureau staat los van de bus, en bewaart alleen spullen.",
+    "Klopt: de beller denkt zijn rugzak verloren te hebben, dus hij belt de plek voor gevonden spullen.",
+    "Koos je \"\"a police station\"\"? Dan denk je dat het een politiebureau is. Het gaat om het terugvinden van spullen, zonder aangifte."
+   ],
+   "uh": "What is a 'lost property office'?",
+   "ctx": "You hear a phone call (read the transcript): \"Employee: Hello, lost property office, how can I help you? Caller: Hi, I think I left my backpack on the bus this morning. It is dark blue and has a white label on the front. Employee: What time did you get on? Caller: At about ten past eight, on the number twelve to the city centre. Employee: Hold on, I will check. Yes, we have found a blue backpack. Can you tell me what is inside? Caller: There is a laptop, a lunch box and a green notebook. Employee: That is right. You can pick it up until six o'clock today, but do not forget to bring your ID.\""
+  },
+  {
+   "v": "What does 'pick it up' mean here?",
+   "o": [
+    "\"throw it away\"",
+    "\"collect it\"",
+    "\"lift it from the floor\"",
+    "\"pay for it\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 1,
+   "u": "Gebruik de context. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"throw it away\"\"? Dan denk je dat het om weggooien gaat. De rugzak is juist teruggevonden, en blijft van de beller.",
+    "Klopt: de beller kan de rugzak tot zes uur komen ophalen.",
+    "Koos je \"\"lift it from the floor\"\"? Dan denk je dat het om optillen gaat. Het gaat om afhalen op het bureau, en niet om een beweging.",
+    "Koos je \"\"pay for it\"\"? Dan denk je dat de beller moet betalen. Er wordt niets over geld gezegd, dus het gaat om ophalen."
+   ],
+   "uh": "What does 'pick it up' mean here?",
+   "ctx": "You hear a phone call (read the transcript): \"Employee: Hello, lost property office, how can I help you? Caller: Hi, I think I left my backpack on the bus this morning. It is dark blue and has a white label on the front. Employee: What time did you get on? Caller: At about ten past eight, on the number twelve to the city centre. Employee: Hold on, I will check. Yes, we have found a blue backpack. Can you tell me what is inside? Caller: There is a laptop, a lunch box and a green notebook. Employee: That is right. You can pick it up until six o'clock today, but do not forget to bring your ID.\""
+  },
+  {
+   "v": "What does the assistant mean with 'I am afraid we do not have this jacket in a larger size'?",
+   "o": [
+    "\"She is scared of the customer.\"",
+    "\"She thinks the customer is afraid, I suppose.\"",
+    "\"The jacket is dangerous.\"",
+    "\"Unfortunately, there is no larger size.\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 2,
+   "u": "Gebruik de context. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"She is scared of the customer.\"\"? Dan denk je dat de verkoopster bang is. Het is een beleefdheidszin, en geen angstgevoel.",
+    "Koos je \"\"She thinks the customer is afraid, I suppose.\"\"? Dan denk je dat de klant bang is. Er is geen reden voor angst, want het gaat om de maat.",
+    "Koos je \"\"The jacket is dangerous.\"\"? Dan denk je dat de jas riskant is. De zin gaat over de beschikbare maten, en niet over gevaar.",
+    "Klopt: I am afraid is een beleefde inleiding en het gaat om het ontbreken van een maat."
+   ],
+   "uh": "What does the assistant mean with 'I am afraid we do not have this jacket in a larger size'?",
+   "ctx": "You hear a conversation in a shop (read the transcript): \"Customer: Excuse me, I bought this jacket yesterday, but it is too tight around the shoulders. Can I change it for a bigger size? Assistant: Of course. Do you have the receipt? Customer: Yes, here it is. Assistant: Thank you. I am afraid we do not have this jacket in a larger size, but I can give you your money back, or you can choose something else from the shop. Customer: I think I will have a refund, please. Assistant: No problem. It will take about three days before the money is on your account. Customer: That is fine. Thank you very much for your help.\""
+  },
+  {
+   "v": "The assistant asks for the receipt and the customer says 'here it is'. What is a receipt?",
+   "o": [
+    "\"a paper that shows you bought something\"",
+    "\"a kind of jacket\"",
+    "\"a kind of money\"",
+    "\"a card for the shop, you know, I think, I suppose\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 0,
+   "u": "Gebruik de context. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: de klant moet bewijzen dat ze de jas kocht en geeft daarom de bon.",
+    "Koos je \"\"a kind of jacket\"\"? Dan denk je dat receipt een jas is. Het woord hoort bij betalen, en niet bij kleding.",
+    "Koos je \"\"a kind of money\"\"? Dan denk je dat receipt geld is. Het is een bewijs van betaling, maar niet het geld zelf.",
+    "Koos je \"\"a card for the shop, you know, I think, I suppose\"\"? Dan denk je dat receipt een klantenkaart is. Dit is een bon van één aankoop, en geen lidmaatschap."
+   ],
+   "uh": "The assistant asks for the receipt and the customer says 'here it is'. What is a receipt?",
+   "ctx": "You hear a conversation in a shop (read the transcript): \"Customer: Excuse me, I bought this jacket yesterday, but it is too tight around the shoulders. Can I change it for a bigger size? Assistant: Of course. Do you have the receipt? Customer: Yes, here it is. Assistant: Thank you. I am afraid we do not have this jacket in a larger size, but I can give you your money back, or you can choose something else from the shop. Customer: I think I will have a refund, please. Assistant: No problem. It will take about three days before the money is on your account. Customer: That is fine. Thank you very much for your help.\""
+  },
+  {
+   "v": "The customer says 'I will have a refund'. What can you conclude?",
+   "o": [
+    "\"She wants a bigger jacket.\"",
+    "\"She wants to pay more.\"",
+    "\"She wants her money back, so she does not want another jacket.\"",
+    "\"She will come back tomorrow, really, to be honest, you know.\""
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 4,
+   "u": "Gebruik de context. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"She wants a bigger jacket.\"\"? Dan denk je dat ze nog een grotere maat wil. Die is er niet, en ze kiest voor geld terug.",
+    "Koos je \"\"She wants to pay more.\"\"? Dan denk je dat ze extra betaalt. Een refund is juist een terugbetaling, dus zij krijgt geld.",
+    "Klopt: een refund is geld terug, en daarmee kiest ze niet voor een andere jas.",
+    "Koos je \"\"She will come back tomorrow, really, to be honest, you know.\"\"? Dan denk je dat ze terugkomt. Er wordt geen terugkomst genoemd, dus je verzint iets."
+   ],
+   "uh": "The customer says 'I will have a refund'. What can you conclude?",
+   "ctx": "You hear a conversation in a shop (read the transcript): \"Customer: Excuse me, I bought this jacket yesterday, but it is too tight around the shoulders. Can I change it for a bigger size? Assistant: Of course. Do you have the receipt? Customer: Yes, here it is. Assistant: Thank you. I am afraid we do not have this jacket in a larger size, but I can give you your money back, or you can choose something else from the shop. Customer: I think I will have a refund, please. Assistant: No problem. It will take about three days before the money is on your account. Customer: That is fine. Thank you very much for your help.\""
+  },
+  {
+   "v": "What does 'breathtaking' probably mean, judging from the context?",
+   "o": [
+    "\"very cold\"",
+    "\"very beautiful\"",
+    "\"very difficult to climb\"",
+    "\"very loud\""
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 0,
+   "u": "Gebruik de context. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"very cold\"\"? Dan denk je dat breathtaking kou betekent. Het gaat over het uitzicht, en niet over temperatuur.",
+    "Klopt: het uitzicht na de regen was zo mooi dat de spreker er stil van werd.",
+    "Koos je \"\"very difficult to climb\"\"? Dan denk je dat het om klimmen gaat. De spreker spreekt over het uitzicht, en niet over de moeilijkheid.",
+    "Koos je \"\"very loud\"\"? Dan denk je dat het om geluid gaat. Over een uitzicht gaat het om kijken, en niet om horen."
+   ],
+   "uh": "What does 'breathtaking' probably mean, judging from the context?",
+   "ctx": "You hear a vlogger (read the transcript): \"Hello everybody, welcome back to my channel. Today I am going to tell you about my trip to Scotland. We set off very early, around five o'clock, because the journey was long. The weather was awful: it was pouring with rain all day, and we were soaked after ten minutes. But the next day the sun came out, and the view of the mountains was breathtaking. The people in the small village were very friendly and the food was delicious, especially the soup. I can honestly say it was the best holiday of my life. If you ever get the chance, do not miss it!\""
+  },
+  {
+   "v": "What does 'pouring with rain' mean?",
+   "o": [
+    "\"raining a little\"",
+    "\"raining only in the morning\"",
+    "\"not raining at all\"",
+    "\"raining very hard\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 1,
+   "u": "Gebruik de context. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"raining a little\"\"? Dan denk je dat het lichte regen is. Ze waren na tien minuten doornat, dus het regende hard.",
+    "Koos je \"\"raining only in the morning\"\"? Dan denk je dat het alleen ochtend was. De spreker zegt all day, dus de hele dag.",
+    "Koos je \"\"not raining at all\"\"? Dan denk je dat het droog was. De spreker noemt het weer awful, dus het was nat.",
+    "Klopt: het stond in contrast met de zon de volgende dag en men was snel doornat."
+   ],
+   "uh": "What does 'pouring with rain' mean?",
+   "ctx": "You hear a vlogger (read the transcript): \"Hello everybody, welcome back to my channel. Today I am going to tell you about my trip to Scotland. We set off very early, around five o'clock, because the journey was long. The weather was awful: it was pouring with rain all day, and we were soaked after ten minutes. But the next day the sun came out, and the view of the mountains was breathtaking. The people in the small village were very friendly and the food was delicious, especially the soup. I can honestly say it was the best holiday of my life. If you ever get the chance, do not miss it!\""
+  },
+  {
+   "v": "What does the speaker mean with 'do not miss it'?",
+   "o": [
+    "\"you should really go there\"",
+    "\"you should not go there\"",
+    "\"you must not forget the date\"",
+    "\"you should not take the bus\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 2,
+   "u": "Gebruik de context. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: de spreker raadt de reis sterk aan na een positief verhaal.",
+    "Koos je \"\"you should not go there\"\"? Dan denk je dat de spreker afraadt. Het hele verhaal is positief, dus hij raadt het aan.",
+    "Koos je \"\"you must not forget the date\"\"? Dan denk je dat het om een datum gaat. De spreker noemt geen datum, maar geeft een tip.",
+    "Koos je \"\"you should not take the bus\"\"? Dan denk je dat miss het vervoer is. Het gaat om een kans, en niet om een bus."
+   ],
+   "uh": "What does the speaker mean with 'do not miss it'?",
+   "ctx": "You hear a vlogger (read the transcript): \"Hello everybody, welcome back to my channel. Today I am going to tell you about my trip to Scotland. We set off very early, around five o'clock, because the journey was long. The weather was awful: it was pouring with rain all day, and we were soaked after ten minutes. But the next day the sun came out, and the view of the mountains was breathtaking. The people in the small village were very friendly and the food was delicious, especially the soup. I can honestly say it was the best holiday of my life. If you ever get the chance, do not miss it!\""
+  },
+  {
+   "v": "What does 'I left my backpack on the bus' mean?",
+   "o": [
+    "\"she threw it away\"",
+    "\"she gave it to the driver\"",
+    "\"she forgot it and it stayed there\"",
+    "\"she took it to the bus on purpose, you know\""
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 1,
+   "u": "Gebruik de context. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"she threw it away\"\"? Dan denk je dat ze het weggooide. Ze zoekt de rugzak juist terug, dus dat is niet de bedoeling.",
+    "Koos je \"\"she gave it to the driver\"\"? Dan denk je dat ze het aan de chauffeur gaf. Ze noemt dat niet, en ze belt om de rugzak te vinden.",
+    "Klopt: left betekent hier achtergelaten, dus ze is de rugzak vergeten.",
+    "Koos je \"\"she took it to the bus on purpose, you know\"\"? Dan denk je dat ze het bewust achterliet. Ze belt om het terug te krijgen, dus het was een vergissing."
+   ],
+   "uh": "What does 'I left my backpack on the bus' mean?",
+   "ctx": "You hear a phone call (read the transcript): \"Employee: Hello, lost property office, how can I help you? Caller: Hi, I think I left my backpack on the bus this morning. It is dark blue and has a white label on the front. Employee: What time did you get on? Caller: At about ten past eight, on the number twelve to the city centre. Employee: Hold on, I will check. Yes, we have found a blue backpack. Can you tell me what is inside? Caller: There is a laptop, a lunch box and a green notebook. Employee: That is right. You can pick it up until six o'clock today, but do not forget to bring your ID.\""
+  },
+  {
+   "v": "What does the employee mean with 'I will check'?",
+   "o": [
+    "\"I will pay for it\"",
+    "\"I will look to see if it is there\"",
+    "\"I will stop the bus\"",
+    "\"I will write a cheque, really, to be honest\""
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 3,
+   "u": "Gebruik de context. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"I will pay for it\"\"? Dan denk je dat check betaling is. De medewerker koopt niets, en kijkt alleen na.",
+    "Klopt: check betekent hier nakijken of de rugzak is gevonden.",
+    "Koos je \"\"I will stop the bus\"\"? Dan denk je dat de bus stopt. De medewerker zoekt in het kantoor, en niet buiten.",
+    "Koos je \"\"I will write a cheque, really, to be honest\"\"? Dan denk je dat check een cheque is. Dat woord wordt anders geschreven, en dat past niet bij zoeken."
+   ],
+   "uh": "What does the employee mean with 'I will check'?",
+   "ctx": "You hear a phone call (read the transcript): \"Employee: Hello, lost property office, how can I help you? Caller: Hi, I think I left my backpack on the bus this morning. It is dark blue and has a white label on the front. Employee: What time did you get on? Caller: At about ten past eight, on the number twelve to the city centre. Employee: Hold on, I will check. Yes, we have found a blue backpack. Can you tell me what is inside? Caller: There is a laptop, a lunch box and a green notebook. Employee: That is right. You can pick it up until six o'clock today, but do not forget to bring your ID.\""
+  },
+  {
+   "v": "Why does the employee ask 'Can you tell me what is inside?'",
+   "o": [
+    "\"because she wants to buy the laptop\"",
+    "\"because she is curious about the lunch box, I think\"",
+    "\"because she does not know the way\"",
+    "\"to check that the backpack belongs to the caller\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 4,
+   "u": "Gebruik de context. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"because she wants to buy the laptop\"\"? Dan denk je dat de medewerker de laptop wil. Ze zoekt alleen een eigenaar, en wil niets kopen.",
+    "Koos je \"\"because she is curious about the lunch box, I think\"\"? Dan denk je dat ze nieuwsgierig is. Het gaat om een controle, en niet om een gesprek.",
+    "Koos je \"\"because she does not know the way\"\"? Dan denk je dat ze de weg kwijt is. De vraag gaat over de inhoud, en niet over een route.",
+    "Klopt: wie de inhoud kent, is waarschijnlijk de echte eigenaar."
+   ],
+   "uh": "Why does the employee ask 'Can you tell me what is inside?'",
+   "ctx": "You hear a phone call (read the transcript): \"Employee: Hello, lost property office, how can I help you? Caller: Hi, I think I left my backpack on the bus this morning. It is dark blue and has a white label on the front. Employee: What time did you get on? Caller: At about ten past eight, on the number twelve to the city centre. Employee: Hold on, I will check. Yes, we have found a blue backpack. Can you tell me what is inside? Caller: There is a laptop, a lunch box and a green notebook. Employee: That is right. You can pick it up until six o'clock today, but do not forget to bring your ID.\""
+  },
+  {
+   "v": "What does 'do not forget to bring your ID' mean?",
+   "o": [
+    "\"you must have a card that shows who you are\"",
+    "\"you must bring an idea\"",
+    "\"you must bring your laptop\"",
+    "\"you must bring a packed lunch, to be honest, you know\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 3,
+   "u": "Gebruik de context. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: ID is een afkorting van identity en is hier een identiteitsbewijs.",
+    "Koos je \"\"you must bring an idea\"\"? Dan denk je dat ID een idee is. Dat woord lijkt erop, maar het gaat om een bewijs.",
+    "Koos je \"\"you must bring your laptop\"\"? Dan denk je dat je de laptop mee moet. De laptop zit al in de rugzak, dus dat hoeft niet.",
+    "Koos je \"\"you must bring a packed lunch, to be honest, you know\"\"? Dan denk je dat er een picknick nodig is. Een lunchtrommel zit al in de tas, en het bureau vraagt er niet om."
+   ],
+   "uh": "What does 'do not forget to bring your ID' mean?",
+   "ctx": "You hear a phone call (read the transcript): \"Employee: Hello, lost property office, how can I help you? Caller: Hi, I think I left my backpack on the bus this morning. It is dark blue and has a white label on the front. Employee: What time did you get on? Caller: At about ten past eight, on the number twelve to the city centre. Employee: Hold on, I will check. Yes, we have found a blue backpack. Can you tell me what is inside? Caller: There is a laptop, a lunch box and a green notebook. Employee: That is right. You can pick it up until six o'clock today, but do not forget to bring your ID.\""
+  }
+ ],
+ "oe": [
+  {
+   "bron": "Examenstijl",
+   "ctx": "You hear a shop assistant: \"Good morning. I am afraid the red shoes are sold out, but we have the same model in blue. You can pick them up on Thursday.\" (read the transcript)",
+   "v": "Write what the customer can do and what 'I am afraid' means here.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Ze kan de blauwe schoenen kiezen (1p). Op donderdag ophalen (1p). I am afraid = helaas, een beleefde manier voor slecht nieuws (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "You hear a teacher: \"Please hold on a moment while I check the list. Yes, your name is on it, so you can go in. Do not forget to bring your ID tomorrow.\" (read the transcript)",
+   "v": "Write what hold on, check and ID mean in this text.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Hold on = wacht even (1p). Check = nakijken (1p). ID = identiteitsbewijs (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "You hear a friend: \"Actually, I do not like football very much. Last week I set off early to watch a match, but it was pouring with rain.\" (read the transcript)",
+   "v": "Write what actually, set off and pouring with rain mean.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Actually = eigenlijk (1p). Set off = vertrekken (1p). Pouring with rain = heel hard regenen (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "You hear a station announcement: \"Good afternoon. The train to Utrecht will not leave from platform 3 today. It will leave from platform 6. I am afraid it will be a few minutes late, because of a technical problem. We are sorry for the delay.\" (read the transcript)",
+   "v": "Write what the speaker wants to say in Dutch and name the polite phrase.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "De trein vertrekt niet van spoor 3 (1p). Hij heeft helaas een paar minuten vertraging (1p). De beleefde zin is I am afraid (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "A classmate says during a listening test: \"If I do not know a word, I will just write the Dutch word that looks like the English word, because that is faster than thinking.\" You think this is risky.",
+   "v": "Write two sentences in English that explain why this can be wrong and give one example.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Valse vrienden kunnen iets anders betekenen (1p). Een voorbeeld zoals actually of ID (1p). Een duidelijke uitleg (1p)."
+  }
+ ]
+}

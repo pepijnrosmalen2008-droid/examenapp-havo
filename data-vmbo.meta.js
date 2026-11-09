@@ -882,6 +882,27 @@ var VAKKEN_VMBO = [
       "nOe": 5,
       "nBeg": 12,
       "hasSam": true
+     },
+     {
+      "id": "B3",
+      "lo": "en.B.3",
+      "gs": 2,
+      "naam": "De betekenis van woorden en zinnen in gesproken tekst",
+      "beschrijving": "Je leert de betekenis van onbekende woorden en zinnen in Engelse gesproken tekst af te leiden: je gebruikt de context, herkent vaste combinaties zoals set off en hold on, begrijpt beleefde zinnen als I am afraid en let op valse vrienden.",
+      "ceStatus": "CE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Raden met de context",
+       "Vaste combinaties",
+       "Beleefde zinnen",
+       "Valse vrienden",
+       "Doorluisteren bij onbekende woorden"
+      ],
+      "nSv": 27,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
      }
     ]
    },
