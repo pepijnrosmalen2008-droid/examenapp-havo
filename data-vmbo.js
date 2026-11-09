@@ -28733,6 +28733,688 @@ var VAKKEN_VMBO = [
         "u": "Valse vrienden kunnen iets anders betekenen (1p). Een voorbeeld zoals actually of ID (1p). Een duidelijke uitleg (1p)."
        }
       ]
+     },
+     {
+      "id": "B4",
+      "lo": "en.B.4",
+      "gs": 2,
+      "naam": "Gevoel, mening en bedoeling van een spreker herkennen",
+      "beschrijving": "Je leert in een Engelse gesproken tekst te herkennen wat een spreker voelt, vindt en wil: je onderscheidt feit en mening, herkent woorden als in my opinion en honestly, hoort de bedoeling in een verzoek, klacht of advies en let op de toon.",
+      "ceStatus": "CE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Gevoel herkennen",
+       "Feit en mening",
+       "De bedoeling van de spreker",
+       "Woorden die een mening aankondigen",
+       "Toon en controleren"
+      ],
+      "sam": "Een spreker laat gevoel, mening en bedoeling horen. Een feit kun je controleren, een mening is een oordeel dat je hoort na woorden als I think en in my opinion. De bedoeling is vaak een verzoek, een klacht of een advies. De toon laat het gevoel horen. Controleer of woorden en toon samen bij je antwoord passen.",
+      "begrippen": [
+       {
+        "t": "Gevoel",
+        "d": "Wat een spreker voelt, zoals blij, boos of bezorgd."
+       },
+       {
+        "t": "Mening",
+        "d": "Wat een spreker vindt: een oordeel dat niet te meten is."
+       },
+       {
+        "t": "Feit",
+        "d": "Iets wat je kunt controleren, zoals een tijd of een aantal."
+       },
+       {
+        "t": "Bedoeling",
+        "d": "Wat de spreker wil bereiken: vragen, klagen of adviseren."
+       },
+       {
+        "t": "Toon",
+        "d": "Hoe iets klinkt: warm, boos, beleefd of zorgzaam."
+       },
+       {
+        "t": "In my opinion",
+        "d": "Een zin die een persoonlijke mening aankondigt."
+       },
+       {
+        "t": "Honestly",
+        "d": "Een woord dat laat horen dat de spreker zijn echte gevoel zegt."
+       },
+       {
+        "t": "Verzoek",
+        "d": "Een beleefde vraag om iets te doen, zoals could you please."
+       },
+       {
+        "t": "Klacht",
+        "d": "Een uiting van ontevredenheid over iets."
+       },
+       {
+        "t": "Advies",
+        "d": "Een raad om iets te doen of te laten."
+       },
+       {
+        "t": "Teleurgesteld",
+        "d": "Een gevoel dat iets minder goed was dan je hoopte."
+       },
+       {
+        "t": "Bezorgd",
+        "d": "Een gevoel van zorg over iets of iemand."
+       }
+      ],
+      "sv": [
+       {
+        "v": "Een spreker praat zacht en langzaam en zegt 'I am so sorry.' Welk gevoel past hierbij?",
+        "o": [
+         "\"boosheid\"",
+         "\"verdriet of spijt\"",
+         "\"blijdschap\"",
+         "\"verbazing\""
+        ],
+        "c": 1,
+        "d": 1,
+        "s": 0,
+        "u": "Luister naar woorden en toon. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"boosheid\"\"? Dan denk je dat zacht praten boos is. Een boze spreker praat hard en kort, en zegt geen sorry.",
+         "Klopt: een zachte stem en sorry horen bij spijt of verdriet.",
+         "Koos je \"\"blijdschap\"\"? Dan denk je dat sorry vrolijk is. Een vrolijke stem klinkt hoog en snel, en niet zacht en langzaam.",
+         "Koos je \"\"verbazing\"\"? Dan denk je dat de spreker verrast is. Verbazing hoor je aan een korte uitroep, en niet aan een verontschuldiging."
+        ],
+        "uh": "Een spreker praat zacht en langzaam en zegt 'I am so sorry.' Welk gevoel past hierbij?"
+       },
+       {
+        "v": "Welke woorden laten een positief gevoel horen?",
+        "o": [
+         "\"awful, boring en terrible\"",
+         "\"table, window en bus\"",
+         "\"yesterday, today en tomorrow\"",
+         "\"great, wonderful en lovely\""
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 0,
+        "u": "Luister naar woorden en toon. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"awful, boring en terrible\"\"? Dan denk je dat dit prettige woorden zijn. Ze drukken juist een negatief gevoel uit, en horen bij afkeuring.",
+         "Koos je \"\"table, window en bus\"\"? Dan denk je dat elk woord een gevoel toont. Dit zijn gewone zelfstandige naamwoorden, zonder waardering.",
+         "Koos je \"\"yesterday, today en tomorrow\"\"? Dan denk je dat tijdwoorden een gevoel tonen. Ze noemen alleen wanneer iets gebeurt, en zeggen niets over gevoel.",
+         "Klopt: deze woorden zeggen dat de spreker iets goed of mooi vindt."
+        ],
+        "uh": "Welke woorden laten een positief gevoel horen?"
+       },
+       {
+        "v": "Welke zin is een mening?",
+        "o": [
+         "\"In my opinion, the film is too long.\"",
+         "\"The film starts at eight o'clock, zeg maar.\"",
+         "\"The film is two hours long.\"",
+         "\"The cinema is in Park Street.\""
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 1,
+        "u": "Luister naar woorden en toon. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: in my opinion kondigt een oordeel aan dat niet te meten is.",
+         "Koos je \"\"The film starts at eight o'clock, zeg maar.\"\"? Dan denk je dat een tijd een mening is. Een tijd is te controleren, en dus een feit.",
+         "Koos je \"\"The film is two hours long.\"\"? Dan denk je dat de duur een oordeel is. Je kunt de lengte meten, dus het is een feit.",
+         "Koos je \"\"The cinema is in Park Street.\"\"? Dan denk je dat een adres een mening is. Een plek is aan te wijzen, dus het is een feit."
+        ],
+        "uh": "Welke zin is een mening?"
+       },
+       {
+        "v": "Welke zin is een feit?",
+        "o": [
+         "\"I think the train is too slow.\"",
+         "\"The train is awful.\"",
+         "\"The train leaves at 9.35.\"",
+         "\"In my opinion, the train is great.\""
+        ],
+        "c": 2,
+        "d": 1,
+        "s": 1,
+        "u": "Luister naar woorden en toon. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"I think the train is too slow.\"\"? Dan denk je dat I think een feit inleidt. Het begin laat al zien dat het een oordeel is, en geen feit.",
+         "Koos je \"\"The train is awful.\"\"? Dan denk je dat awful iets meetbaars zegt. Het woord geeft een waardering, en dus een mening.",
+         "Klopt: een vertrektijd kun je controleren, dus het is een feit.",
+         "Koos je \"\"In my opinion, the train is great.\"\"? Dan denk je dat een goede mening een feit is. Het blijft een persoonlijke indruk, en geen controleerbaar gegeven."
+        ],
+        "uh": "Welke zin is een feit?"
+       },
+       {
+        "v": "Een klant zegt: 'Could you please send me a new pair?' Wat wil hij?",
+        "o": [
+         "\"dat iemand zich verontschuldigt\"",
+         "\"dat iemand iets voor hem doet\"",
+         "\"dat iemand zijn mening geeft\"",
+         "\"dat iemand het nieuws hoort\""
+        ],
+        "c": 1,
+        "d": 1,
+        "s": 2,
+        "u": "Luister naar woorden en toon. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"dat iemand zich verontschuldigt\"\"? Dan denk je dat could you please sorry betekent. Het woord please vraagt om hulp, en niet om een excuus.",
+         "Klopt: could you please is een beleefd verzoek.",
+         "Koos je \"\"dat iemand zijn mening geeft\"\"? Dan denk je dat de klant iets vraagt over een oordeel. Hij vraagt om een actie, en niet om een mening.",
+         "Koos je \"\"dat iemand het nieuws hoort\"\"? Dan denk je dat hij iets meldt. De zin is een vraag, en hij vraagt om een nieuw paar."
+        ],
+        "uh": "Een klant zegt: 'Could you please send me a new pair?' Wat wil hij?"
+       },
+       {
+        "v": "Welke woorden kondigen vaak een mening aan?",
+        "o": [
+         "\"yesterday en last week, denk ik\"",
+         "\"first en then\"",
+         "\"please en thank you\"",
+         "\"I think en in my opinion\""
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 3,
+        "u": "Luister naar woorden en toon. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"yesterday en last week, denk ik\"\"? Dan denk je dat tijdwoorden een mening aankondigen. Ze noemen een moment, en geen oordeel.",
+         "Koos je \"\"first en then\"\"? Dan denk je dat volgordewoorden een mening tonen. Ze ordenen alleen, en geven geen oordeel.",
+         "Koos je \"\"please en thank you\"\"? Dan denk je dat beleefdheid een mening is. Het zijn woorden voor een verzoek en bedanken, en geen oordeel.",
+         "Klopt: met deze woorden geeft een spreker aan dat het zijn eigen oordeel is."
+        ],
+        "uh": "Welke woorden kondigen vaak een mening aan?"
+       },
+       {
+        "v": "Hoe controleer je het gevoel van een spreker?",
+        "o": [
+         "\"je luistert naar woorden en toon samen\"",
+         "\"je let alleen op de eerste zin\"",
+         "\"je let alleen op wie de spreker is\"",
+         "\"je kiest altijd het positieve gevoel, volgens mij\""
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 4,
+        "u": "Luister naar woorden en toon. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: woorden en toon samen laten het gevoel betrouwbaar horen.",
+         "Koos je \"\"je let alleen op de eerste zin\"\"? Dan denk je dat het gevoel meteen duidelijk is. Het kan later veranderen, en je mist dan de rest.",
+         "Koos je \"\"je let alleen op wie de spreker is\"\"? Dan denk je dat de persoon bepaalt wat hij voelt. Hetzelfde persoon kan blij of boos zijn, dus het hangt van de tekst af.",
+         "Koos je \"\"je kiest altijd het positieve gevoel, volgens mij\"\"? Dan denk je dat positief altijd veilig is. Veel sprekers zijn juist negatief, en je moet luisteren naar wat er wordt gezegd."
+        ],
+        "uh": "Hoe controleer je het gevoel van een spreker?"
+       },
+       {
+        "v": "How does the speaker feel about the film?",
+        "o": [
+         "\"excited\"",
+         "\"scared\"",
+         "\"disappointed\"",
+         "\"angry with the cinema\""
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 0,
+        "u": "Luister naar woorden en toon. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"excited\"\"? Dan denk je dat ze opgewonden was. Ze zegt dat ze op haar telefoon keek, dus ze was niet enthousiast.",
+         "Koos je \"\"scared\"\"? Dan denk je dat de film eng was. Er wordt niets over angst gezegd, en het was juist saai.",
+         "Klopt: ze zegt dat ze teleurgesteld was en noemt het verhaal saai.",
+         "Koos je \"\"angry with the cinema\"\"? Dan denk je dat ze boos is op de bioscoop. Ze klaagt over de film, en niet over het gebouw."
+        ],
+        "uh": "How does the speaker feel about the film?",
+        "ctx": "You hear a film review (read the transcript): \"I went to see the new science fiction film last night, and honestly, I was disappointed. The special effects were great, I have to admit that, but the story was boring and far too long. After an hour I looked at my phone twice. My friend loved it, though, and she says I am too critical. I do not agree. In my opinion, a good film needs a good story, not just nice pictures. I would not recommend it, but if you like action, you might enjoy it more than I did.\""
+       },
+       {
+        "v": "Which sentence is a fact?",
+        "o": [
+         "\"The story was boring.\"",
+         "\"I went to see the new film last night.\"",
+         "\"I would not recommend it.\"",
+         "\"A good film needs a good story, you know.\""
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 1,
+        "u": "Luister naar woorden en toon. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"The story was boring.\"\"? Dan denk je dat saai een feit is. Het is een oordeel van de spreker, en iemand anders kan het leuk vinden.",
+         "Klopt: dat ze naar de film ging, kun je controleren, dus het is een feit.",
+         "Koos je \"\"I would not recommend it.\"\"? Dan denk je dat aanraden een feit is. Het is een persoonlijk oordeel, en dus een mening.",
+         "Koos je \"\"A good film needs a good story, you know.\"\"? Dan denk je dat dit een regel is. Het is haar overtuiging, en niet iets wat je kunt meten."
+        ],
+        "uh": "Which sentence is a fact?",
+        "ctx": "You hear a film review (read the transcript): \"I went to see the new science fiction film last night, and honestly, I was disappointed. The special effects were great, I have to admit that, but the story was boring and far too long. After an hour I looked at my phone twice. My friend loved it, though, and she says I am too critical. I do not agree. In my opinion, a good film needs a good story, not just nice pictures. I would not recommend it, but if you like action, you might enjoy it more than I did.\""
+       },
+       {
+        "v": "Which words show that the speaker gives her own opinion?",
+        "o": [
+         "\"last night\"",
+         "\"after an hour, really\"",
+         "\"my friend\"",
+         "\"in my opinion\""
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 3,
+        "u": "Luister naar woorden en toon. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"last night\"\"? Dan denk je dat last night een mening aankondigt. Het noemt een tijdstip, en dat is een feit.",
+         "Koos je \"\"after an hour, really\"\"? Dan denk je dat after an hour iets over oordeel zegt. Het noemt hoe lang het duurde, en dat is een tijdsaanduiding.",
+         "Koos je \"\"my friend\"\"? Dan denk je dat my friend een oordeel is. Het noemt een persoon, en geeft geen mening.",
+         "Klopt: in my opinion kondigt aan dat ze haar eigen oordeel geeft."
+        ],
+        "uh": "Which words show that the speaker gives her own opinion?",
+        "ctx": "You hear a film review (read the transcript): \"I went to see the new science fiction film last night, and honestly, I was disappointed. The special effects were great, I have to admit that, but the story was boring and far too long. After an hour I looked at my phone twice. My friend loved it, though, and she says I am too critical. I do not agree. In my opinion, a good film needs a good story, not just nice pictures. I would not recommend it, but if you like action, you might enjoy it more than I did.\""
+       },
+       {
+        "v": "Does the speaker recommend the film?",
+        "o": [
+         "\"No, but action fans might like it\"",
+         "\"Yes, to everybody\"",
+         "\"Yes, but only to her friend, I think\"",
+         "\"She says nothing about it\""
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 2,
+        "u": "Luister naar woorden en toon. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: ze raadt het niet aan, maar zegt dat actiefans het misschien leuk vinden.",
+         "Koos je \"\"Yes, to everybody\"\"? Dan denk je dat ze het aan iedereen aanraadt. Ze zegt het tegenovergestelde, dus nee.",
+         "Koos je \"\"Yes, but only to her friend, I think\"\"? Dan denk je dat het alleen voor haar vriendin is. De vriendin vond het goed, maar zij raadt het niet aan.",
+         "Koos je \"\"She says nothing about it\"\"? Dan denk je dat ze er niets over zegt. Ze zegt duidelijk dat ze het niet aanraadt, en geeft zelfs een uitzondering."
+        ],
+        "uh": "Does the speaker recommend the film?",
+        "ctx": "You hear a film review (read the transcript): \"I went to see the new science fiction film last night, and honestly, I was disappointed. The special effects were great, I have to admit that, but the story was boring and far too long. After an hour I looked at my phone twice. My friend loved it, though, and she says I am too critical. I do not agree. In my opinion, a good film needs a good story, not just nice pictures. I would not recommend it, but if you like action, you might enjoy it more than I did.\""
+       },
+       {
+        "v": "How does the mother feel?",
+        "o": [
+         "\"angry\"",
+         "\"happy\"",
+         "\"worried\"",
+         "\"surprised and pleased\""
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 0,
+        "u": "Luister naar woorden en toon. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"angry\"\"? Dan denk je dat ze boos is. Ze zegt letterlijk dat ze niet boos is, maar bezorgd.",
+         "Koos je \"\"happy\"\"? Dan denk je dat ze blij is. Ze maakt zich zorgen, en dat is het tegenovergestelde.",
+         "Klopt: ze zegt dat ze zich een beetje zorgen maakt.",
+         "Koos je \"\"surprised and pleased\"\"? Dan denk je dat ze tevreden is. Ze is juist bezorgd, en niet tevreden."
+        ],
+        "uh": "How does the mother feel?",
+        "ctx": "You hear a message from a mother (read the transcript): \"Anna, I need to talk to you about your room. It has been a mess for two weeks. Yesterday I found a plate with old food under your bed! I am not angry, but I am a bit worried, because you usually keep your things tidy. Is something wrong at school? Please clean your room this weekend, and if you want to talk, I am here. Maybe we can go for a walk afterwards. I really would like that, because we have not done anything together for a long time.\""
+       },
+       {
+        "v": "What does the mother want Anna to do?",
+        "o": [
+         "\"go to school earlier, I suppose\"",
+         "\"clean her room this weekend\"",
+         "\"buy new furniture\"",
+         "\"go for a walk alone\""
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 2,
+        "u": "Luister naar woorden en toon. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"go to school earlier, I suppose\"\"? Dan denk je dat Anna eerder moet vertrekken. Er wordt alleen naar school gevraagd, en niet naar vroeger vertrekken.",
+         "Klopt: de moeder vraagt Anna haar kamer dit weekend op te ruimen.",
+         "Koos je \"\"buy new furniture\"\"? Dan denk je dat Anna meubels moet kopen. Er wordt niets over meubels gezegd, dus je verzint iets.",
+         "Koos je \"\"go for a walk alone\"\"? Dan denk je dat Anna alleen gaat. De moeder stelt voor samen te wandelen, en niet alleen."
+        ],
+        "uh": "What does the mother want Anna to do?",
+        "ctx": "You hear a message from a mother (read the transcript): \"Anna, I need to talk to you about your room. It has been a mess for two weeks. Yesterday I found a plate with old food under your bed! I am not angry, but I am a bit worried, because you usually keep your things tidy. Is something wrong at school? Please clean your room this weekend, and if you want to talk, I am here. Maybe we can go for a walk afterwards. I really would like that, because we have not done anything together for a long time.\""
+       },
+       {
+        "v": "What is the tone of the message?",
+        "o": [
+         "\"furious\"",
+         "\"bored\"",
+         "\"cold\"",
+         "\"caring\""
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 4,
+        "u": "Luister naar woorden en toon. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"furious\"\"? Dan denk je dat de moeder woedend is. Ze zegt dat ze niet boos is, dus de toon is zacht.",
+         "Koos je \"\"bored\"\"? Dan denk je dat ze verveeld klinkt. Ze toont juist veel betrokkenheid, dus dat past niet.",
+         "Koos je \"\"cold\"\"? Dan denk je dat ze afstandelijk is. Ze biedt aan om te praten, dus ze is warm.",
+         "Klopt: de moeder noemt haar zorgen en biedt een gesprek en een wandeling aan."
+        ],
+        "uh": "What is the tone of the message?",
+        "ctx": "You hear a message from a mother (read the transcript): \"Anna, I need to talk to you about your room. It has been a mess for two weeks. Yesterday I found a plate with old food under your bed! I am not angry, but I am a bit worried, because you usually keep your things tidy. Is something wrong at school? Please clean your room this weekend, and if you want to talk, I am here. Maybe we can go for a walk afterwards. I really would like that, because we have not done anything together for a long time.\""
+       },
+       {
+        "v": "How does the caller feel?",
+        "o": [
+         "\"annoyed\"",
+         "\"pleased\"",
+         "\"afraid\"",
+         "\"sad\""
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 0,
+        "u": "Luister naar woorden en toon. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: de beller zegt dat ze echt geïrriteerd is.",
+         "Koos je \"\"pleased\"\"? Dan denk je dat de beller tevreden is. Ze klaagt over te late levering, en een kapotte oortelefoon.",
+         "Koos je \"\"afraid\"\"? Dan denk je dat ze bang is. Ze noemt geen angst, maar irritatie.",
+         "Koos je \"\"sad\"\"? Dan denk je dat ze verdrietig is. Ze noemt irritatie, en niet verdriet."
+        ],
+        "uh": "How does the caller feel?",
+        "ctx": "You hear a phone call (read the transcript): \"Hello, I am calling about the headphones I bought on your website. They arrived three days late, and now the left side does not work. I am really annoyed, because I needed them for my trip last weekend. I have already sent two e-mails, but nobody replied. Could you please send me a new pair this week? If not, I would like my money back. Thank you for your help, and I hope you can solve this quickly. My customer number is 4417, and you can reach me on this number all day.\""
+       },
+       {
+        "v": "What does the caller want?",
+        "o": [
+         "\"a discount on her next order, I think, I suppose\"",
+         "\"an apology only\"",
+         "\"a new pair of headphones or her money back\"",
+         "\"a visit from the shop\""
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 2,
+        "u": "Luister naar woorden en toon. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"a discount on her next order, I think, I suppose\"\"? Dan denk je dat ze korting wil. Ze vraagt om een oplossing, en niet om korting.",
+         "Koos je \"\"an apology only\"\"? Dan denk je dat ze genoeg heeft aan een excuus. Ze wil een nieuw paar of geld terug, dus alleen een excuus is niet genoeg.",
+         "Klopt: ze vraagt eerst een nieuw paar, en anders haar geld terug.",
+         "Koos je \"\"a visit from the shop\"\"? Dan denk je dat ze bezoek wil. Ze belt en vraagt een nieuw paar, en geen bezoek."
+        ],
+        "uh": "What does the caller want?",
+        "ctx": "You hear a phone call (read the transcript): \"Hello, I am calling about the headphones I bought on your website. They arrived three days late, and now the left side does not work. I am really annoyed, because I needed them for my trip last weekend. I have already sent two e-mails, but nobody replied. Could you please send me a new pair this week? If not, I would like my money back. Thank you for your help, and I hope you can solve this quickly. My customer number is 4417, and you can reach me on this number all day.\""
+       },
+       {
+        "v": "Which sentence is a feeling, not a fact?",
+        "o": [
+         "\"They arrived three days late.\"",
+         "\"I am really annoyed.\"",
+         "\"I have already sent two e-mails.\"",
+         "\"The left side does not work.\""
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 1,
+        "u": "Luister naar woorden en toon. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"They arrived three days late.\"\"? Dan denk je dat te laat een gevoel is. Je kunt het controleren met de datum, dus het is een feit.",
+         "Klopt: een gevoel zoals annoyed is een innerlijke toestand, geen controleerbaar gegeven.",
+         "Koos je \"\"I have already sent two e-mails.\"\"? Dan denk je dat dit een gevoel is. Je kunt het tellen, dus het is een feit.",
+         "Koos je \"\"The left side does not work.\"\"? Dan denk je dat dit een gevoel is. Je kunt het testen, dus het is een feit."
+        ],
+        "uh": "Which sentence is a feeling, not a fact?",
+        "ctx": "You hear a phone call (read the transcript): \"Hello, I am calling about the headphones I bought on your website. They arrived three days late, and now the left side does not work. I am really annoyed, because I needed them for my trip last weekend. I have already sent two e-mails, but nobody replied. Could you please send me a new pair this week? If not, I would like my money back. Thank you for your help, and I hope you can solve this quickly. My customer number is 4417, and you can reach me on this number all day.\""
+       },
+       {
+        "v": "What does 'honestly' do in 'honestly, I was disappointed'?",
+        "o": [
+         "\"it shows that she is lying\"",
+         "\"it shows that she is joking, I suppose, really\"",
+         "\"it introduces a fact\"",
+         "\"it stresses that she gives her true feeling\""
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 3,
+        "u": "Luister naar woorden en toon. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"it shows that she is lying\"\"? Dan denk je dat honestly liegen betekent. Het woord betekent juist eerlijk, dus het is het tegenovergestelde.",
+         "Koos je \"\"it shows that she is joking, I suppose, really\"\"? Dan denk je dat ze een grapje maakt. Honestly maakt een zin serieuzer, en niet grappiger.",
+         "Koos je \"\"it introduces a fact\"\"? Dan denk je dat honestly een feit inleidt. Het kondigt een eigen gevoel aan, en geen feit.",
+         "Klopt: honestly benadrukt dat de spreker haar echte gevoel zegt."
+        ],
+        "uh": "What does 'honestly' do in 'honestly, I was disappointed'?",
+        "ctx": "You hear a film review (read the transcript): \"I went to see the new science fiction film last night, and honestly, I was disappointed. The special effects were great, I have to admit that, but the story was boring and far too long. After an hour I looked at my phone twice. My friend loved it, though, and she says I am too critical. I do not agree. In my opinion, a good film needs a good story, not just nice pictures. I would not recommend it, but if you like action, you might enjoy it more than I did.\""
+       },
+       {
+        "v": "'The special effects were great, I have to admit that.' What does the speaker mean?",
+        "o": [
+         "\"she is positive about this part, but not about the whole film\"",
+         "\"she loved the film\"",
+         "\"she thinks the effects were bad\"",
+         "\"she does not know what she thinks, you know, I think, I suppose\""
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 1,
+        "u": "Luister naar woorden en toon. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: ze geeft toe dat de effecten goed waren, maar blijft kritisch op het geheel.",
+         "Koos je \"\"she loved the film\"\"? Dan denk je dat ze enthousiast is. Ze zegt dat ze teleurgesteld was, dus dat past niet.",
+         "Koos je \"\"she thinks the effects were bad\"\"? Dan denk je dat ze de effecten slecht vindt. Ze noemt ze great, en geeft het toe.",
+         "Koos je \"\"she does not know what she thinks, you know, I think, I suppose\"\"? Dan denk je dat ze geen mening heeft. Ze geeft een duidelijk oordeel, met een uitzondering."
+        ],
+        "uh": "'The special effects were great, I have to admit that.' What does the speaker mean?",
+        "ctx": "You hear a film review (read the transcript): \"I went to see the new science fiction film last night, and honestly, I was disappointed. The special effects were great, I have to admit that, but the story was boring and far too long. After an hour I looked at my phone twice. My friend loved it, though, and she says I am too critical. I do not agree. In my opinion, a good film needs a good story, not just nice pictures. I would not recommend it, but if you like action, you might enjoy it more than I did.\""
+       },
+       {
+        "v": "What is the speaker's overall opinion of the film?",
+        "o": [
+         "\"positive, because the effects were great, really, to be honest, you know\"",
+         "\"neutral, she has no opinion\"",
+         "\"negative: the story was not good enough, although the effects were good\"",
+         "\"negative because of the actors\""
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 4,
+        "u": "Luister naar woorden en toon. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"positive, because the effects were great, really, to be honest, you know\"\"? Dan denk je dat alleen de effecten tellen. Ze zegt dat het verhaal saai was, en raadt de film niet aan.",
+         "Koos je \"\"neutral, she has no opinion\"\"? Dan denk je dat ze geen mening geeft. Ze noemt in my opinion en zegt wat ze vindt, dus ze heeft er een.",
+         "Klopt: de kritiek op het verhaal weegt zwaarder dan de goede effecten.",
+         "Koos je \"\"negative because of the actors\"\"? Dan denk je dat de acteurs het probleem zijn. Er wordt niets over acteurs gezegd, en het gaat om het verhaal."
+        ],
+        "uh": "What is the speaker's overall opinion of the film?",
+        "ctx": "You hear a film review (read the transcript): \"I went to see the new science fiction film last night, and honestly, I was disappointed. The special effects were great, I have to admit that, but the story was boring and far too long. After an hour I looked at my phone twice. My friend loved it, though, and she says I am too critical. I do not agree. In my opinion, a good film needs a good story, not just nice pictures. I would not recommend it, but if you like action, you might enjoy it more than I did.\""
+       },
+       {
+        "v": "'I am not angry, but I am a bit worried.' What does the mother feel?",
+        "o": [
+         "\"angry and worried\"",
+         "\"worried, not angry\"",
+         "\"neither angry nor worried\"",
+         "\"angry, not worried\""
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 0,
+        "u": "Luister naar woorden en toon. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"angry and worried\"\"? Dan denk je dat ze beide voelt. Ze zegt letterlijk dat ze niet boos is, dus er is geen boosheid.",
+         "Klopt: zij ontkent boos te zijn en zegt bezorgd te zijn.",
+         "Koos je \"\"neither angry nor worried\"\"? Dan denk je dat ze niets voelt. Ze noemt zorgen, dus er is wel een gevoel.",
+         "Koos je \"\"angry, not worried\"\"? Dan denk je dat het andersom is. Ze zegt niet boos maar bezorgd, dus je draait het om."
+        ],
+        "uh": "'I am not angry, but I am a bit worried.' What does the mother feel?",
+        "ctx": "You hear a message from a mother (read the transcript): \"Anna, I need to talk to you about your room. It has been a mess for two weeks. Yesterday I found a plate with old food under your bed! I am not angry, but I am a bit worried, because you usually keep your things tidy. Is something wrong at school? Please clean your room this weekend, and if you want to talk, I am here. Maybe we can go for a walk afterwards. I really would like that, because we have not done anything together for a long time.\""
+       },
+       {
+        "v": "Why does the mother ask 'Is something wrong at school?'",
+        "o": [
+         "\"she wants to punish Anna\"",
+         "\"she wants to check Anna's homework, to be honest\"",
+         "\"she wants to know Anna's marks\"",
+         "\"she thinks the messy room may have a cause\""
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 2,
+        "u": "Luister naar woorden en toon. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"she wants to punish Anna\"\"? Dan denk je dat het een straf is. Ze biedt juist een gesprek aan, dus ze wil helpen.",
+         "Koos je \"\"she wants to check Anna's homework, to be honest\"\"? Dan denk je dat het om huiswerk gaat. Ze vraagt of er iets mis is, en niet naar huiswerk.",
+         "Koos je \"\"she wants to know Anna's marks\"\"? Dan denk je dat ze cijfers wil weten. Ze vraagt naar problemen, en niet naar cijfers.",
+         "Klopt: ze zoekt een verklaring voor het veranderde gedrag van Anna."
+        ],
+        "uh": "Why does the mother ask 'Is something wrong at school?'",
+        "ctx": "You hear a message from a mother (read the transcript): \"Anna, I need to talk to you about your room. It has been a mess for two weeks. Yesterday I found a plate with old food under your bed! I am not angry, but I am a bit worried, because you usually keep your things tidy. Is something wrong at school? Please clean your room this weekend, and if you want to talk, I am here. Maybe we can go for a walk afterwards. I really would like that, because we have not done anything together for a long time.\""
+       },
+       {
+        "v": "Which sentence shows that the mother also wants to be friendly?",
+        "o": [
+         "\"Maybe we can go for a walk afterwards.\"",
+         "\"It has been a mess for two weeks.\"",
+         "\"Yesterday I found a plate with old food under your bed!\"",
+         "\"Please clean your room this weekend.\""
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 4,
+        "u": "Luister naar woorden en toon. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: een wandeling voorstellen laat zien dat ze iets leuks samen wil.",
+         "Koos je \"\"It has been a mess for two weeks.\"\"? Dan denk je dat dit vriendelijk is. De zin klaagt over de kamer, en is geen aanbod.",
+         "Koos je \"\"Yesterday I found a plate with old food under your bed!\"\"? Dan denk je dat dit vriendelijk is. Het is een kritiek, en geen vriendelijkheid.",
+         "Koos je \"\"Please clean your room this weekend.\"\"? Dan denk je dat dit vriendelijk is. Het is een verzoek met een taak, en geen uitnodiging."
+        ],
+        "uh": "Which sentence shows that the mother also wants to be friendly?",
+        "ctx": "You hear a message from a mother (read the transcript): \"Anna, I need to talk to you about your room. It has been a mess for two weeks. Yesterday I found a plate with old food under your bed! I am not angry, but I am a bit worried, because you usually keep your things tidy. Is something wrong at school? Please clean your room this weekend, and if you want to talk, I am here. Maybe we can go for a walk afterwards. I really would like that, because we have not done anything together for a long time.\""
+       },
+       {
+        "v": "How does the caller sound at the end of the call?",
+        "o": [
+         "\"very angry and rude\"",
+         "\"pleased and relaxed\"",
+         "\"polite but firm\"",
+         "\"sad and afraid\""
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 4,
+        "u": "Luister naar woorden en toon. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"very angry and rude\"\"? Dan denk je dat ze schreeuwt. Ze bedankt en blijft beleefd, dus er is geen grofheid.",
+         "Koos je \"\"pleased and relaxed\"\"? Dan denk je dat ze tevreden is. Ze zegt nog steeds dat ze het snel opgelost wil, dus ze is niet ontspannen.",
+         "Klopt: ze bedankt en blijft duidelijk over wat ze wil.",
+         "Koos je \"\"sad and afraid\"\"? Dan denk je dat ze bang is. Ze noemt haar wens duidelijk, dus ze is niet bang."
+        ],
+        "uh": "How does the caller sound at the end of the call?",
+        "ctx": "You hear a phone call (read the transcript): \"Hello, I am calling about the headphones I bought on your website. They arrived three days late, and now the left side does not work. I am really annoyed, because I needed them for my trip last weekend. I have already sent two e-mails, but nobody replied. Could you please send me a new pair this week? If not, I would like my money back. Thank you for your help, and I hope you can solve this quickly. My customer number is 4417, and you can reach me on this number all day.\""
+       },
+       {
+        "v": "Why does the caller say 'If not, I would like my money back'?",
+        "o": [
+         "\"to threaten the shop\"",
+         "\"to say what she wants if there is no new pair\"",
+         "\"to thank the shop\"",
+         "\"to ask for a discount, really, to be honest, you know\""
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 2,
+        "u": "Luister naar woorden en toon. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"to threaten the shop\"\"? Dan denk je dat ze dreigt. Ze zegt het beleefd met would like, en zonder dreiging.",
+         "Klopt: ze geeft een tweede keuze voor het geval er geen nieuw paar is.",
+         "Koos je \"\"to thank the shop\"\"? Dan denk je dat ze bedankt. Het bedanken komt later in de tekst, en dit is een wens.",
+         "Koos je \"\"to ask for a discount, really, to be honest, you know\"\"? Dan denk je dat ze korting vraagt. Ze vraagt haar geld terug, en geen korting."
+        ],
+        "uh": "Why does the caller say 'If not, I would like my money back'?",
+        "ctx": "You hear a phone call (read the transcript): \"Hello, I am calling about the headphones I bought on your website. They arrived three days late, and now the left side does not work. I am really annoyed, because I needed them for my trip last weekend. I have already sent two e-mails, but nobody replied. Could you please send me a new pair this week? If not, I would like my money back. Thank you for your help, and I hope you can solve this quickly. My customer number is 4417, and you can reach me on this number all day.\""
+       },
+       {
+        "v": "Which words make the caller's request polite?",
+        "o": [
+         "\"I have already sent\"",
+         "\"three days late\"",
+         "\"the left side\"",
+         "\"Could you please\""
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 3,
+        "u": "Luister naar woorden en toon. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"I have already sent\"\"? Dan denk je dat dit beleefd is. Het is een mededeling over iets wat gebeurd is, en geen verzoek.",
+         "Koos je \"\"three days late\"\"? Dan denk je dat dit beleefd is. Het is een feit over de levering, en geen vraagvorm.",
+         "Koos je \"\"the left side\"\"? Dan denk je dat dit beleefd is. Het noemt een kant van het product, en heeft niets met beleefdheid te maken.",
+         "Klopt: could you please is een beleefde vraagvorm."
+        ],
+        "uh": "Which words make the caller's request polite?",
+        "ctx": "You hear a phone call (read the transcript): \"Hello, I am calling about the headphones I bought on your website. They arrived three days late, and now the left side does not work. I am really annoyed, because I needed them for my trip last weekend. I have already sent two e-mails, but nobody replied. Could you please send me a new pair this week? If not, I would like my money back. Thank you for your help, and I hope you can solve this quickly. My customer number is 4417, and you can reach me on this number all day.\""
+       },
+       {
+        "v": "Which statement is a fact about the headphones?",
+        "o": [
+         "\"The left side does not work.\"",
+         "\"They are very bad.\"",
+         "\"They look ugly.\"",
+         "\"They are too expensive, to be honest.\""
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 1,
+        "u": "Luister naar woorden en toon. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: je kunt testen of de linkerkant werkt, dus het is een feit.",
+         "Koos je \"\"They are very bad.\"\"? Dan denk je dat dit een feit is. Het is een oordeel over de kwaliteit, en wordt niet gezegd.",
+         "Koos je \"\"They look ugly.\"\"? Dan denk je dat dit een feit is. Uiterlijk is een smaak, en het wordt niet genoemd.",
+         "Koos je \"\"They are too expensive, to be honest.\"\"? Dan denk je dat dit een feit is. De beller noemt de prijs niet, en prijs oordelen is een mening."
+        ],
+        "uh": "Which statement is a fact about the headphones?",
+        "ctx": "You hear a phone call (read the transcript): \"Hello, I am calling about the headphones I bought on your website. They arrived three days late, and now the left side does not work. I am really annoyed, because I needed them for my trip last weekend. I have already sent two e-mails, but nobody replied. Could you please send me a new pair this week? If not, I would like my money back. Thank you for your help, and I hope you can solve this quickly. My customer number is 4417, and you can reach me on this number all day.\""
+       }
+      ],
+      "oe": [
+       {
+        "bron": "Examenstijl",
+        "ctx": "You hear a girl: \"My brother thinks the new game is amazing. I do not agree. In my opinion, it is boring, because you only walk around and nothing happens. But I have to admit that the music is good. I would not buy it.\" (read the transcript)",
+        "v": "Write what the girl's opinion is and give one reason and one positive point.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Ze vindt het spel saai (1p). Reden: je loopt alleen rond en er gebeurt niets (1p). De muziek is goed (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "You hear a man in a shop: \"Excuse me, I am really upset. This shirt shrank after one wash. I bought it last week for forty euros. Could you please give me my money back?\" (read the transcript)",
+        "v": "Write which feeling the man has and what he wants.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Hij is boos of ontevreden (1p). Zijn geld terug (1p). Could you please = een beleefd verzoek (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "You hear a teacher: \"I am a bit worried about your marks. You were doing well, but your last test was much lower. Is everything alright? Please come and see me after class so that we can talk.\" (read the transcript)",
+        "v": "Write what the teacher feels and what he wants the pupil to do.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Hij is bezorgd (1p). Hij wil dat de leerling na de les komt (1p). Om te praten (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "You hear a friend: \"Honestly, I did not like the concert. The sound was too loud and the tickets cost sixty euros, which is far too much. But the band was great, I must say.\" (read the transcript)",
+        "v": "Write which sentence is a fact and which words show an opinion.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Feit: de tickets kosten zestig euro (1p). Mening: too loud, far too much of great (1p). Honestly kondigt een eigen oordeel aan (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "A classmate says: \"I do not need to listen to the voice of the speaker, only to the words.\" You do not agree.",
+        "v": "Write two sentences in English that explain why tone also matters, with an example.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Toon laat gevoel horen (1p). Voorbeeld: zacht en langzaam bij sorry (1p). Een duidelijke uitleg (1p)."
+       }
+      ]
      }
     ]
    },

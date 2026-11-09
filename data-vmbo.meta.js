@@ -903,6 +903,27 @@ var VAKKEN_VMBO = [
       "nOe": 5,
       "nBeg": 12,
       "hasSam": true
+     },
+     {
+      "id": "B4",
+      "lo": "en.B.4",
+      "gs": 2,
+      "naam": "Gevoel, mening en bedoeling van een spreker herkennen",
+      "beschrijving": "Je leert in een Engelse gesproken tekst te herkennen wat een spreker voelt, vindt en wil: je onderscheidt feit en mening, herkent woorden als in my opinion en honestly, hoort de bedoeling in een verzoek, klacht of advies en let op de toon.",
+      "ceStatus": "CE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Gevoel herkennen",
+       "Feit en mening",
+       "De bedoeling van de spreker",
+       "Woorden die een mening aankondigen",
+       "Toon en controleren"
+      ],
+      "nSv": 27,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
      }
     ]
    },
