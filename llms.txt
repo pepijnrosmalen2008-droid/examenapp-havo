@@ -5,7 +5,7 @@
 Volledige beschrijving (functies, inhoud per niveau, prijs, wat Slagio niet is): https://slagio.nl/llms-full.txt
 
 ## In het kort
-- 12 vakken havo, 16 vakken vwo, 12 vakken vmbo; 26.566 oefenvragen en 4.346 begrippen.
+- 12 vakken havo, 16 vakken vwo, 12 vakken vmbo; 26.593 oefenvragen en 4.346 begrippen.
 - Adaptief oefenen: na een fout een vraag over hetzelfde onderwerp, een niveau makkelijker; uitleg bij elk fout antwoord.
 - Foutenboek en herhalen met gespreide herhaling, beheersing per leerdoel, studieplan tot het examen.
 - Examens met klok, proefexamens in examenstijl met modelantwoord en puntenverdeling, archief met officiële oude examens.
@@ -257,6 +257,7 @@ Volledige beschrijving (functies, inhoud per niveau, prijs, wat Slagio niet is):
 - [De hoofdgedachte van een luistertekst bepalen (Engels VMBO)](https://slagio.nl/leren/vmbo/engels/de-hoofdgedachte-van-een-luistertekst-bepalen.html): Je leert de hoofdgedachte van een Engelse gesproken tekst te vinden: je onderscheidt hoofdzaak en bijzaak, herkent het doel van de spreker, gebruikt…
 - [De betekenis van woorden en zinnen in gesproken tekst (Engels VMBO)](https://slagio.nl/leren/vmbo/engels/de-betekenis-van-woorden-en-zinnen-in-gesproken-tekst.html): Je leert de betekenis van onbekende woorden en zinnen in Engelse gesproken tekst af te leiden: je gebruikt de context, herkent vaste combinaties zoals set off…
 - [Gevoel, mening en bedoeling van een spreker herkennen (Engels VMBO)](https://slagio.nl/leren/vmbo/engels/gevoel-mening-en-bedoeling-van-een-spreker-herkennen.html): Je leert in een Engelse gesproken tekst te herkennen wat een spreker voelt, vindt en wil: je onderscheidt feit en mening, herkent woorden als in my opinion en…
+- [Het vervolg van een gesprek voorspellen (Engels VMBO)](https://slagio.nl/leren/vmbo/engels/het-vervolg-van-een-gesprek-voorspellen.html): Je leert in een Engels gesprek te voorspellen wat er volgt: je kent vaste paren zoals thank you en you are welcome, herkent probleem en oplossing, let op…
 
 ## Examenvragen in examenstijl (met modelantwoord en puntenverdeling)
 - [Examenvragen Nederlands HAVO](https://slagio.nl/leren/havo/nederlands/examenvragen.html): 11 vragen uit een Slagio-proefexamen

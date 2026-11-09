@@ -924,6 +924,27 @@ var VAKKEN_VMBO = [
       "nOe": 5,
       "nBeg": 12,
       "hasSam": true
+     },
+     {
+      "id": "B5",
+      "lo": "en.B.5",
+      "gs": 2,
+      "naam": "Het vervolg van een gesprek voorspellen",
+      "beschrijving": "Je leert in een Engels gesprek te voorspellen wat er volgt: je kent vaste paren zoals thank you en you are welcome, herkent probleem en oplossing, let op signaalwoorden zoals but en controleert je voorspelling bij het doorluisteren.",
+      "ceStatus": "CE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Vaste paren",
+       "Probleem en oplossing",
+       "Aanbod en uitnodiging",
+       "Signaalwoorden voor het vervolg",
+       "Voorspellen en controleren"
+      ],
+      "nSv": 27,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
      }
     ]
    },

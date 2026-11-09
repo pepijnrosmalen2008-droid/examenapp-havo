@@ -29415,6 +29415,688 @@ var VAKKEN_VMBO = [
         "u": "Toon laat gevoel horen (1p). Voorbeeld: zacht en langzaam bij sorry (1p). Een duidelijke uitleg (1p)."
        }
       ]
+     },
+     {
+      "id": "B5",
+      "lo": "en.B.5",
+      "gs": 2,
+      "naam": "Het vervolg van een gesprek voorspellen",
+      "beschrijving": "Je leert in een Engels gesprek te voorspellen wat er volgt: je kent vaste paren zoals thank you en you are welcome, herkent probleem en oplossing, let op signaalwoorden zoals but en controleert je voorspelling bij het doorluisteren.",
+      "ceStatus": "CE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Vaste paren",
+       "Probleem en oplossing",
+       "Aanbod en uitnodiging",
+       "Signaalwoorden voor het vervolg",
+       "Voorspellen en controleren"
+      ],
+      "sam": "In een gesprek volgt na een zin vaak een vast antwoord: na thank you komt you are welcome en na een aanbod komt yes, please. Na een probleem volgt een oplossing. Signaalwoorden zoals but kondigen een bezwaar aan. Voorspel op basis van de laatste zin en controleer je voorspelling bij het doorluisteren.",
+      "begrippen": [
+       {
+        "t": "Voorspellen",
+        "d": "Bedenken wat er in het gesprek waarschijnlijk volgt."
+       },
+       {
+        "t": "Reactie",
+        "d": "Het antwoord van de ander op wat iemand net zei."
+       },
+       {
+        "t": "Aanbod",
+        "d": "Iets wat iemand aanbiedt, zoals Would you like some tea?"
+       },
+       {
+        "t": "Uitnodiging",
+        "d": "Een vraag om ergens naartoe te komen, zoals Would you like to come?"
+       },
+       {
+        "t": "Probleem",
+        "d": "Iets wat niet lukt of niet kan, vaak na but."
+       },
+       {
+        "t": "Oplossing",
+        "d": "Een manier om het probleem op te lossen."
+       },
+       {
+        "t": "Bedankje",
+        "d": "Thank you; het antwoord is you are welcome."
+       },
+       {
+        "t": "Verontschuldiging",
+        "d": "I am sorry; het antwoord is vaak that is okay."
+       },
+       {
+        "t": "Voorwaarde",
+        "d": "Iets wat eerst moet gebeuren, zoals only if."
+       },
+       {
+        "t": "Signaalwoord",
+        "d": "Een woord zoals but of so dat een tegenstelling of gevolg aankondigt."
+       },
+       {
+        "t": "Controleren",
+        "d": "Bij het luisteren nagaan of je voorspelling klopt."
+       },
+       {
+        "t": "Afscheid",
+        "d": "Een slotzin zoals see you on Saturday."
+       }
+      ],
+      "sv": [
+       {
+        "v": "Iemand zegt: 'Thank you very much.' Wat antwoordt de ander meestal?",
+        "o": [
+         "\"Good morning.\"",
+         "\"You are welcome.\"",
+         "\"I am afraid not, I think.\"",
+         "\"Excuse me.\""
+        ],
+        "c": 1,
+        "d": 1,
+        "s": 0,
+        "u": "Denk na over wat er logisch volgt. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"Good morning.\"\"? Dan denk je dat dit een groet is die past. Het is een begroeting voor de ochtend, en geen reactie op bedanken.",
+         "Klopt: you are welcome is het vaste antwoord op een bedankje.",
+         "Koos je \"\"I am afraid not, I think.\"\"? Dan denk je dat dit een antwoord is. Het is een beleefd nee, en past niet bij een bedankje.",
+         "Koos je \"\"Excuse me.\"\"? Dan denk je dat dit een antwoord is. Het is een manier om aandacht te vragen, en geen reactie op bedanken."
+        ],
+        "uh": "Iemand zegt: 'Thank you very much.' Wat antwoordt de ander meestal?"
+       },
+       {
+        "v": "Iemand vraagt: 'Would you like some tea?' Welk antwoord past?",
+        "o": [
+         "\"Yes, it is.\"",
+         "\"No, I am Tom.\"",
+         "\"At five o'clock.\"",
+         "\"Yes, please.\""
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 0,
+        "u": "Denk na over wat er logisch volgt. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"Yes, it is.\"\"? Dan denk je dat yes it is werkt. Het antwoordt op een vraag met is, en niet op een aanbod.",
+         "Koos je \"\"No, I am Tom.\"\"? Dan kies je een naam als antwoord. Bij een aanbod hoort een ja of nee, en geen voorstelling.",
+         "Koos je \"\"At five o'clock.\"\"? Dan verwar je het aanbod met een vraag naar de tijd. Een tijd beantwoordt when, en past niet bij would you like.",
+         "Klopt: bij een aanbod hoort een antwoord als yes, please of no, thank you."
+        ],
+        "uh": "Iemand vraagt: 'Would you like some tea?' Welk antwoord past?"
+       },
+       {
+        "v": "Een speler zegt: 'My phone is broken.' Wat zegt de ander waarschijnlijk?",
+        "o": [
+         "\"Shall I help you fix it?\"",
+         "\"Happy birthday!\"",
+         "\"It is half past two, I suppose.\"",
+         "\"I am a teacher.\""
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 1,
+        "u": "Denk na over wat er logisch volgt. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: na een probleem volgt vaak een aanbod om te helpen.",
+         "Koos je \"\"Happy birthday!\"\"? Dan denk je dat een felicitatie past. Dat hoort bij een feestdag, en niet bij een probleem.",
+         "Koos je \"\"It is half past two, I suppose.\"\"? Dan denk je dat een tijd past. De ander vraagt niet naar de tijd, dus het antwoord klopt niet.",
+         "Koos je \"\"I am a teacher.\"\"? Dan denk je dat een beroep past. Het gaat over een telefoon, dus dit zegt iets anders."
+        ],
+        "uh": "Een speler zegt: 'My phone is broken.' Wat zegt de ander waarschijnlijk?"
+       },
+       {
+        "v": "Iemand zegt: 'Would you like to come to my party?' Welk antwoord past bij een uitnodiging?",
+        "o": [
+         "\"You are welcome.\"",
+         "\"It is on the table, you know.\"",
+         "\"Thanks, I would love to.\"",
+         "\"Yes, he is.\""
+        ],
+        "c": 2,
+        "d": 1,
+        "s": 2,
+        "u": "Denk na over wat er logisch volgt. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"You are welcome.\"\"? Dan denk je dat je moet bedanken voor een bedankje. Dit antwoordt op thank you, en niet op een uitnodiging.",
+         "Koos je \"\"It is on the table, you know.\"\"? Dan denk je dat het over een voorwerp gaat. De vraag gaat over een feest, dus het antwoord is niet relevant.",
+         "Klopt: bij een uitnodiging hoort een bedankje met ja of nee.",
+         "Koos je \"\"Yes, he is.\"\"? Dan denk je dat het over een man gaat. De vraag is gericht aan jou, dus dit past niet."
+        ],
+        "uh": "Iemand zegt: 'Would you like to come to my party?' Welk antwoord past bij een uitnodiging?"
+       },
+       {
+        "v": "Een verkoper zegt: 'Can I help you?' Wat zegt de klant vaak?",
+        "o": [
+         "\"I am twenty years old, really, to be honest.\"",
+         "\"Yes, I am looking for a jacket.\"",
+         "\"It is raining outside.\"",
+         "\"Good night.\""
+        ],
+        "c": 1,
+        "d": 1,
+        "s": 2,
+        "u": "Denk na over wat er logisch volgt. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"I am twenty years old, really, to be honest.\"\"? Dan denk je dat leeftijd past. De verkoper vraagt niet naar leeftijd, dus dit klopt niet.",
+         "Klopt: de klant legt uit wat hij zoekt, zodat de verkoper hem kan helpen.",
+         "Koos je \"\"It is raining outside.\"\"? Dan denk je dat het weer past. De vraag gaat over hulp, en niet over weer.",
+         "Koos je \"\"Good night.\"\"? Dan denk je dat een afscheid past. Het gesprek begint net, dus een afscheid is te vroeg."
+        ],
+        "uh": "Een verkoper zegt: 'Can I help you?' Wat zegt de klant vaak?"
+       },
+       {
+        "v": "Op welk deel van het gesprek let je het meest om het vervolg te voorspellen?",
+        "o": [
+         "\"op de eerste groet\"",
+         "\"op de naam van de sprekers, I think\"",
+         "\"op het langste woord\"",
+         "\"op de laatste zin of vraag\""
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 3,
+        "u": "Denk na over wat er logisch volgt. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"op de eerste groet\"\"? Dan denk je dat het begin het vervolg bepaalt. Een groet zegt weinig, en ligt ver van het einde.",
+         "Koos je \"\"op de naam van de sprekers, I think\"\"? Dan denk je dat de namen belangrijk zijn. Namen veranderen het vervolg niet, en geven weinig informatie.",
+         "Koos je \"\"op het langste woord\"\"? Dan denk je dat lengte telt. Een lang woord kan overal staan, en zegt niets over het vervolg.",
+         "Klopt: de laatste zin bepaalt meestal wat het antwoord of de volgende stap wordt."
+        ],
+        "uh": "Op welk deel van het gesprek let je het meest om het vervolg te voorspellen?"
+       },
+       {
+        "v": "Je hebt een voorspelling gedaan. Wat doe je daarna?",
+        "o": [
+         "\"je luistert of het vervolg echt zo klinkt\"",
+         "\"je vult het antwoord meteen in zonder te luisteren\"",
+         "\"je vergeet de rest van de tekst\"",
+         "\"je kiest het antwoord dat het langst is\""
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 4,
+        "u": "Denk na over wat er logisch volgt. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: je controleert je voorspelling met wat er daarna echt gezegd wordt.",
+         "Koos je \"\"je vult het antwoord meteen in zonder te luisteren\"\"? Dan denk je dat je zeker bent. Een voorspelling kan fout zijn, dus je moet controleren.",
+         "Koos je \"\"je vergeet de rest van de tekst\"\"? Dan denk je dat de rest er niet meer toe doet. De rest bevestigt of verandert je voorspelling, dus je moet blijven luisteren.",
+         "Koos je \"\"je kiest het antwoord dat het langst is\"\"? Dan denk je dat lengte bewijst dat het klopt. De lengte zegt niets, en de inhoud telt."
+        ],
+        "uh": "Je hebt een voorspelling gedaan. Wat doe je daarna?"
+       },
+       {
+        "v": "What does the man answer when the waiter asks about a reservation?",
+        "o": [
+         "\"that he has booked a table for two\"",
+         "\"that he wants to leave at once\"",
+         "\"that he has no reservation\"",
+         "\"that he is very rich\""
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 0,
+        "u": "Denk na over wat er logisch volgt. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"that he has booked a table for two\"\"? Dan denk je dat hij gereserveerd heeft. Hij zegt I am afraid not, dus hij heeft niet gereserveerd.",
+         "Koos je \"\"that he wants to leave at once\"\"? Dan denk je dat hij meteen weggaat. Hij vraagt juist om een tafel, dus hij wil blijven.",
+         "Klopt: hij zegt dat hij helaas geen reservering heeft.",
+         "Koos je \"\"that he is very rich\"\"? Dan denk je dat hij iets over geld zegt. Dit wordt niet genoemd, en hij vraagt gewoon om een tafel."
+        ],
+        "uh": "What does the man answer when the waiter asks about a reservation?",
+        "ctx": "You hear a conversation in a restaurant (read the transcript): \"Waiter: Good evening. Do you have a reservation? Man: No, I am afraid not. Is there a table for two? Waiter: Let me see. Everything is full at the moment, but there will be a table free in about fifteen minutes. Man: That is a pity. We are quite hungry. Waiter: You can wait at the bar if you like. I can bring you something to drink while you wait. Man: That sounds good. We will have two lemonades, please. Waiter: Certainly. I will call you as soon as the table is ready.\""
+       },
+       {
+        "v": "What is the problem at the restaurant?",
+        "o": [
+         "\"the food is finished\"",
+         "\"there is no free table at the moment\"",
+         "\"the waiter is ill\"",
+         "\"the lemonade is too expensive, you know\""
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 1,
+        "u": "Denk na over wat er logisch volgt. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"the food is finished\"\"? Dan denk je dat het eten op is. Er wordt over een tafel gesproken, en niet over eten.",
+         "Klopt: de ober zegt dat alles vol is, dus de man kan niet meteen zitten.",
+         "Koos je \"\"the waiter is ill\"\"? Dan denk je dat de ober ziek is. Hij werkt gewoon door, dus dit klopt niet.",
+         "Koos je \"\"the lemonade is too expensive, you know\"\"? Dan denk je dat de prijs het probleem is. De prijs wordt niet genoemd, en de man bestelt het wel."
+        ],
+        "uh": "What is the problem at the restaurant?",
+        "ctx": "You hear a conversation in a restaurant (read the transcript): \"Waiter: Good evening. Do you have a reservation? Man: No, I am afraid not. Is there a table for two? Waiter: Let me see. Everything is full at the moment, but there will be a table free in about fifteen minutes. Man: That is a pity. We are quite hungry. Waiter: You can wait at the bar if you like. I can bring you something to drink while you wait. Man: That sounds good. We will have two lemonades, please. Waiter: Certainly. I will call you as soon as the table is ready.\""
+       },
+       {
+        "v": "What is the solution that the waiter suggests?",
+        "o": [
+         "\"come back tomorrow\"",
+         "\"sit at a table outside, really, to be honest\"",
+         "\"try another restaurant\"",
+         "\"wait at the bar and have a drink\""
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 1,
+        "u": "Denk na over wat er logisch volgt. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"come back tomorrow\"\"? Dan denk je dat de man morgen terug moet komen. De ober noemt vijftien minuten, dus hij kan blijven.",
+         "Koos je \"\"sit at a table outside, really, to be honest\"\"? Dan denk je dat er een terras is. Dit wordt niet genoemd, dus je verzint iets.",
+         "Koos je \"\"try another restaurant\"\"? Dan denk je dat de ober doorverwijst. Hij biedt zelf een oplossing, dus dit is niet nodig.",
+         "Klopt: de ober stelt voor aan de bar te wachten met iets te drinken."
+        ],
+        "uh": "What is the solution that the waiter suggests?",
+        "ctx": "You hear a conversation in a restaurant (read the transcript): \"Waiter: Good evening. Do you have a reservation? Man: No, I am afraid not. Is there a table for two? Waiter: Let me see. Everything is full at the moment, but there will be a table free in about fifteen minutes. Man: That is a pity. We are quite hungry. Waiter: You can wait at the bar if you like. I can bring you something to drink while you wait. Man: That sounds good. We will have two lemonades, please. Waiter: Certainly. I will call you as soon as the table is ready.\""
+       },
+       {
+        "v": "What will probably happen next?",
+        "o": [
+         "\"the waiter brings two lemonades and later calls the couple\"",
+         "\"the man orders pizza at the table, I think, I suppose, really\"",
+         "\"the man pays for the meal\"",
+         "\"the couple leaves angry\""
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 3,
+        "u": "Denk na over wat er logisch volgt. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: ze bestellen limonade en de ober belooft te roepen als de tafel klaar is.",
+         "Koos je \"\"the man orders pizza at the table, I think, I suppose, really\"\"? Dan denk je dat ze al zitten. Er is nog geen tafel, dus ze eten nog niet.",
+         "Koos je \"\"the man pays for the meal\"\"? Dan denk je dat ze al betalen. Ze hebben nog niets gegeten, dus dat komt later.",
+         "Koos je \"\"the couple leaves angry\"\"? Dan denk je dat ze boos weggaan. Ze zeggen that sounds good, dus ze accepteren het aanbod."
+        ],
+        "uh": "What will probably happen next?",
+        "ctx": "You hear a conversation in a restaurant (read the transcript): \"Waiter: Good evening. Do you have a reservation? Man: No, I am afraid not. Is there a table for two? Waiter: Let me see. Everything is full at the moment, but there will be a table free in about fifteen minutes. Man: That is a pity. We are quite hungry. Waiter: You can wait at the bar if you like. I can bring you something to drink while you wait. Man: That sounds good. We will have two lemonades, please. Waiter: Certainly. I will call you as soon as the table is ready.\""
+       },
+       {
+        "v": "How does Eva react to Tom's invitation?",
+        "o": [
+         "\"she says no at once\"",
+         "\"she says yes without any problem, to be honest\"",
+         "\"she would love to come, but has a problem\"",
+         "\"she does not answer\""
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 2,
+        "u": "Denk na over wat er logisch volgt. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"she says no at once\"\"? Dan denk je dat ze direct weigert. Ze zegt dat ze graag wil, en noemt alleen een probleem.",
+         "Koos je \"\"she says yes without any problem, to be honest\"\"? Dan denk je dat het meteen goed is. Ze noemt een kapotte fiets, dus er is een probleem.",
+         "Klopt: ze zegt dat ze graag komt, maar noemt een probleem met haar fiets.",
+         "Koos je \"\"she does not answer\"\"? Dan denk je dat ze niets zegt. Ze reageert direct, en legt het uit."
+        ],
+        "uh": "How does Eva react to Tom's invitation?",
+        "ctx": "You hear two friends talking (read the transcript): \"Tom: Are you coming to the football match on Saturday? Eva: I would love to, but I have a problem. My bike is broken and the stadium is too far to walk. Tom: No problem. My dad is going by car, and there is room for one more. Eva: Really? That would be great! What time are you leaving? Tom: At half past one. The match starts at three, but my dad wants to be early to find a parking space. Eva: Perfect. I will be ready at your house at half past one. Should I bring anything? Tom: Just some money for a drink.\""
+       },
+       {
+        "v": "How does Tom solve the problem?",
+        "o": [
+         "\"he lends her his bike, I suppose\"",
+         "\"his dad can take her by car\"",
+         "\"he pays for a taxi\"",
+         "\"he stays at home\""
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 1,
+        "u": "Denk na over wat er logisch volgt. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"he lends her his bike, I suppose\"\"? Dan denk je dat hij een fiets uitleent. Dit wordt niet genoemd, dus je verzint iets.",
+         "Klopt: er is nog plaats in de auto van zijn vader.",
+         "Koos je \"\"he pays for a taxi\"\"? Dan denk je dat hij een taxi betaalt. Er wordt niets over een taxi gezegd, dus dat klopt niet.",
+         "Koos je \"\"he stays at home\"\"? Dan denk je dat Tom thuisblijft. Hij gaat juist naar de wedstrijd, en Eva mag mee."
+        ],
+        "uh": "How does Tom solve the problem?",
+        "ctx": "You hear two friends talking (read the transcript): \"Tom: Are you coming to the football match on Saturday? Eva: I would love to, but I have a problem. My bike is broken and the stadium is too far to walk. Tom: No problem. My dad is going by car, and there is room for one more. Eva: Really? That would be great! What time are you leaving? Tom: At half past one. The match starts at three, but my dad wants to be early to find a parking space. Eva: Perfect. I will be ready at your house at half past one. Should I bring anything? Tom: Just some money for a drink.\""
+       },
+       {
+        "v": "After 'Just some money for a drink', what will Eva probably say?",
+        "o": [
+         "\"I do not want to come, you know.\"",
+         "\"My bike is broken.\"",
+         "\"Where is the station?\"",
+         "\"Okay, see you on Saturday.\""
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 3,
+        "u": "Denk na over wat er logisch volgt. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"I do not want to come, you know.\"\"? Dan denk je dat ze toch niet komt. Ze zei al perfect, dus dit past niet.",
+         "Koos je \"\"My bike is broken.\"\"? Dan denk je dat het probleem terugkomt. Dat is al opgelost, dus het wordt niet herhaald.",
+         "Koos je \"\"Where is the station?\"\"? Dan denk je dat ze naar het station vraagt. Ze gaan met de auto, dus er is geen station nodig.",
+         "Klopt: na de laatste regel is het gesprek rond en past een afscheid."
+        ],
+        "uh": "After 'Just some money for a drink', what will Eva probably say?",
+        "ctx": "You hear two friends talking (read the transcript): \"Tom: Are you coming to the football match on Saturday? Eva: I would love to, but I have a problem. My bike is broken and the stadium is too far to walk. Tom: No problem. My dad is going by car, and there is room for one more. Eva: Really? That would be great! What time are you leaving? Tom: At half past one. The match starts at three, but my dad wants to be early to find a parking space. Eva: Perfect. I will be ready at your house at half past one. Should I bring anything? Tom: Just some money for a drink.\""
+       },
+       {
+        "v": "What does Mark say after the teacher mentions the homework?",
+        "o": [
+         "\"he apologises\"",
+         "\"he blames the teacher\"",
+         "\"he says he did it\"",
+         "\"he does not answer\""
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 0,
+        "u": "Denk na over wat er logisch volgt. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: Mark zegt I am sorry en geeft een reden.",
+         "Koos je \"\"he blames the teacher\"\"? Dan denk je dat hij de leraar de schuld geeft. Hij zegt sorry, dus hij neemt zelf verantwoordelijkheid.",
+         "Koos je \"\"he says he did it\"\"? Dan denk je dat hij het huiswerk had gemaakt. Hij zegt dat hij het vergeten is, dus dat klopt niet.",
+         "Koos je \"\"he does not answer\"\"? Dan denk je dat hij zwijgt. Hij reageert direct, en legt het uit."
+        ],
+        "uh": "What does Mark say after the teacher mentions the homework?",
+        "ctx": "You hear a teacher and a pupil (read the transcript): \"Teacher: Mark, I see you did not hand in your homework again. Mark: I am sorry, Mrs Evans. I was ill last week and I forgot about it. Teacher: I understand, but this is the third time this month. Mark: I know, and I promise it will not happen again. Can I bring it tomorrow? Teacher: Tomorrow is fine, but only if it is on my desk before the first lesson. If not, I will have to give you a lower mark. Mark: Okay, I will do it tonight. Thank you for giving me another chance.\""
+       },
+       {
+        "v": "What is Mark's solution?",
+        "o": [
+         "\"to do it next week\"",
+         "\"to ask a friend to hand it in, I think\"",
+         "\"to bring the homework tomorrow\"",
+         "\"to do it in the first lesson\""
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 1,
+        "u": "Denk na over wat er logisch volgt. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"to do it next week\"\"? Dan denk je dat hij meer tijd vraagt. Hij vraagt om morgen, en niet om volgende week.",
+         "Koos je \"\"to ask a friend to hand it in, I think\"\"? Dan denk je dat een vriend het inlevert. Dit wordt niet genoemd, dus je verzint iets.",
+         "Klopt: hij vraagt of hij het morgen mag inleveren.",
+         "Koos je \"\"to do it in the first lesson\"\"? Dan denk je dat hij het tijdens de les maakt. De lerares eist het vóór de les, dus dat is te laat."
+        ],
+        "uh": "What is Mark's solution?",
+        "ctx": "You hear a teacher and a pupil (read the transcript): \"Teacher: Mark, I see you did not hand in your homework again. Mark: I am sorry, Mrs Evans. I was ill last week and I forgot about it. Teacher: I understand, but this is the third time this month. Mark: I know, and I promise it will not happen again. Can I bring it tomorrow? Teacher: Tomorrow is fine, but only if it is on my desk before the first lesson. If not, I will have to give you a lower mark. Mark: Okay, I will do it tonight. Thank you for giving me another chance.\""
+       },
+       {
+        "v": "What will Mark probably do after the conversation?",
+        "o": [
+         "\"forget about it again, to be honest\"",
+         "\"do his homework tonight\"",
+         "\"ask for a lower mark\"",
+         "\"go to another teacher\""
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 4,
+        "u": "Denk na over wat er logisch volgt. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"forget about it again, to be honest\"\"? Dan denk je dat hij het opnieuw vergeet. Hij belooft het te doen, dus dat is onwaarschijnlijk.",
+         "Klopt: hij zegt I will do it tonight, dus hij gaat het vanavond maken.",
+         "Koos je \"\"ask for a lower mark\"\"? Dan denk je dat hij een lager cijfer wil. Dat is juist een straf, en hij wil dat voorkomen.",
+         "Koos je \"\"go to another teacher\"\"? Dan denk je dat hij een andere leraar zoekt. Er wordt geen andere leraar genoemd, dus dat klopt niet."
+        ],
+        "uh": "What will Mark probably do after the conversation?",
+        "ctx": "You hear a teacher and a pupil (read the transcript): \"Teacher: Mark, I see you did not hand in your homework again. Mark: I am sorry, Mrs Evans. I was ill last week and I forgot about it. Teacher: I understand, but this is the third time this month. Mark: I know, and I promise it will not happen again. Can I bring it tomorrow? Teacher: Tomorrow is fine, but only if it is on my desk before the first lesson. If not, I will have to give you a lower mark. Mark: Okay, I will do it tonight. Thank you for giving me another chance.\""
+       },
+       {
+        "v": "What does 'Let me see' tell you about the waiter's next sentence?",
+        "o": [
+         "\"he will say goodbye\"",
+         "\"he will take the order\"",
+         "\"he will go to the kitchen, I suppose, really, to be honest\"",
+         "\"he will check the tables and then give an answer\""
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 3,
+        "u": "Denk na over wat er logisch volgt. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"he will say goodbye\"\"? Dan denk je dat hij afscheid neemt. Let me see leidt een antwoord in, en niet een afscheid.",
+         "Koos je \"\"he will take the order\"\"? Dan denk je dat hij de bestelling opneemt. Er is nog geen tafel, dus bestellen komt later.",
+         "Koos je \"\"he will go to the kitchen, I suppose, really, to be honest\"\"? Dan denk je dat hij naar de keuken gaat. Het gaat om tafels, en niet om eten.",
+         "Klopt: let me see betekent dat hij iets gaat nakijken voordat hij antwoordt."
+        ],
+        "uh": "What does 'Let me see' tell you about the waiter's next sentence?",
+        "ctx": "You hear a conversation in a restaurant (read the transcript): \"Waiter: Good evening. Do you have a reservation? Man: No, I am afraid not. Is there a table for two? Waiter: Let me see. Everything is full at the moment, but there will be a table free in about fifteen minutes. Man: That is a pity. We are quite hungry. Waiter: You can wait at the bar if you like. I can bring you something to drink while you wait. Man: That sounds good. We will have two lemonades, please. Waiter: Certainly. I will call you as soon as the table is ready.\""
+       },
+       {
+        "v": "The man says 'That is a pity.' What will the waiter probably do?",
+        "o": [
+         "\"offer another way to help\"",
+         "\"get angry\"",
+         "\"close the restaurant, you know\"",
+         "\"ignore the man\""
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 0,
+        "u": "Denk na over wat er logisch volgt. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: na teleurstelling volgt vaak een voorstel.",
+         "Koos je \"\"get angry\"\"? Dan denk je dat de ober boos wordt. Hij is vriendelijk, en biedt iets aan.",
+         "Koos je \"\"close the restaurant, you know\"\"? Dan denk je dat het restaurant sluit. Er is geen reden, en er komt een tafel vrij.",
+         "Koos je \"\"ignore the man\"\"? Dan denk je dat de ober niet reageert. Hij reageert juist met een aanbod, dus dat past niet."
+        ],
+        "uh": "The man says 'That is a pity.' What will the waiter probably do?",
+        "ctx": "You hear a conversation in a restaurant (read the transcript): \"Waiter: Good evening. Do you have a reservation? Man: No, I am afraid not. Is there a table for two? Waiter: Let me see. Everything is full at the moment, but there will be a table free in about fifteen minutes. Man: That is a pity. We are quite hungry. Waiter: You can wait at the bar if you like. I can bring you something to drink while you wait. Man: That sounds good. We will have two lemonades, please. Waiter: Certainly. I will call you as soon as the table is ready.\""
+       },
+       {
+        "v": "A pupil predicts: 'The couple will leave the restaurant.' Why is this unlikely?",
+        "o": [
+         "\"they are angry with the waiter, really, to be honest\"",
+         "\"the waiter sends them away\"",
+         "\"they accept the offer and order drinks\"",
+         "\"they do not want to eat\""
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 4,
+        "u": "Denk na over wat er logisch volgt. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"they are angry with the waiter, really, to be honest\"\"? Dan denk je dat ze boos zijn. Ze reageren positief, dus dat klopt niet.",
+         "Koos je \"\"the waiter sends them away\"\"? Dan denk je dat de ober ze wegstuurt. Hij biedt een plek bij de bar aan, dus ze mogen blijven.",
+         "Klopt: ze zeggen that sounds good en bestellen twee limonades, dus ze blijven.",
+         "Koos je \"\"they do not want to eat\"\"? Dan denk je dat ze geen honger hebben. Ze zeggen we are quite hungry, dus ze willen eten."
+        ],
+        "uh": "A pupil predicts: 'The couple will leave the restaurant.' Why is this unlikely?",
+        "ctx": "You hear a conversation in a restaurant (read the transcript): \"Waiter: Good evening. Do you have a reservation? Man: No, I am afraid not. Is there a table for two? Waiter: Let me see. Everything is full at the moment, but there will be a table free in about fifteen minutes. Man: That is a pity. We are quite hungry. Waiter: You can wait at the bar if you like. I can bring you something to drink while you wait. Man: That sounds good. We will have two lemonades, please. Waiter: Certainly. I will call you as soon as the table is ready.\""
+       },
+       {
+        "v": "Eva says 'I would love to, but...' What do you expect after 'but'?",
+        "o": [
+         "\"another invitation, I think, I suppose, really\"",
+         "\"a problem or reason that makes it difficult\"",
+         "\"a joke\"",
+         "\"a thank-you\""
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 3,
+        "u": "Denk na over wat er logisch volgt. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"another invitation, I think, I suppose, really\"\"? Dan denk je dat ze een nieuwe uitnodiging doet. Ze reageert op een uitnodiging, en na but komt een bezwaar.",
+         "Klopt: na but volgt vaak een bezwaar of probleem.",
+         "Koos je \"\"a joke\"\"? Dan denk je dat er een grap volgt. Na but volgt meestal iets serieus, zoals een probleem.",
+         "Koos je \"\"a thank-you\"\"? Dan denk je dat ze bedankt. Een bedankje past niet bij but, dat een tegenstelling aankondigt."
+        ],
+        "uh": "Eva says 'I would love to, but...' What do you expect after 'but'?",
+        "ctx": "You hear two friends talking (read the transcript): \"Tom: Are you coming to the football match on Saturday? Eva: I would love to, but I have a problem. My bike is broken and the stadium is too far to walk. Tom: No problem. My dad is going by car, and there is room for one more. Eva: Really? That would be great! What time are you leaving? Tom: At half past one. The match starts at three, but my dad wants to be early to find a parking space. Eva: Perfect. I will be ready at your house at half past one. Should I bring anything? Tom: Just some money for a drink.\""
+       },
+       {
+        "v": "What does Eva say when Tom offers a lift?",
+        "o": [
+         "\"she refuses\"",
+         "\"she is annoyed\"",
+         "\"she asks for a different match, to be honest\"",
+         "\"she is happy and asks what time they leave\""
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 2,
+        "u": "Denk na over wat er logisch volgt. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"she refuses\"\"? Dan denk je dat ze weigert. Ze zegt that would be great, dus ze neemt het aan.",
+         "Koos je \"\"she is annoyed\"\"? Dan denk je dat ze geïrriteerd is. Ze zegt really en great, dus ze is blij.",
+         "Koos je \"\"she asks for a different match, to be honest\"\"? Dan denk je dat ze een andere wedstrijd wil. Er wordt niets over een andere wedstrijd gezegd, dus dat klopt niet.",
+         "Klopt: ze reageert enthousiast en vraagt de tijd."
+        ],
+        "uh": "What does Eva say when Tom offers a lift?",
+        "ctx": "You hear two friends talking (read the transcript): \"Tom: Are you coming to the football match on Saturday? Eva: I would love to, but I have a problem. My bike is broken and the stadium is too far to walk. Tom: No problem. My dad is going by car, and there is room for one more. Eva: Really? That would be great! What time are you leaving? Tom: At half past one. The match starts at three, but my dad wants to be early to find a parking space. Eva: Perfect. I will be ready at your house at half past one. Should I bring anything? Tom: Just some money for a drink.\""
+       },
+       {
+        "v": "What will probably happen on Saturday?",
+        "o": [
+         "\"Eva comes to Tom's house at half past one and goes with his dad\"",
+         "\"Eva goes by bike\"",
+         "\"Tom's dad forgets her\"",
+         "\"the match is cancelled, I suppose, really, to be honest\""
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 4,
+        "u": "Denk na over wat er logisch volgt. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: dat spreken ze af en alles is geregeld.",
+         "Koos je \"\"Eva goes by bike\"\"? Dan denk je dat ze fietst. Haar fiets is kapot, dus ze gaat met de auto.",
+         "Koos je \"\"Tom's dad forgets her\"\"? Dan denk je dat ze vergeten wordt. Er is niets dat daarop wijst, dus je verzint iets.",
+         "Koos je \"\"the match is cancelled, I suppose, really, to be honest\"\"? Dan denk je dat de wedstrijd niet doorgaat. Er wordt een aanvangstijd genoemd, dus hij gaat door."
+        ],
+        "uh": "What will probably happen on Saturday?",
+        "ctx": "You hear two friends talking (read the transcript): \"Tom: Are you coming to the football match on Saturday? Eva: I would love to, but I have a problem. My bike is broken and the stadium is too far to walk. Tom: No problem. My dad is going by car, and there is room for one more. Eva: Really? That would be great! What time are you leaving? Tom: At half past one. The match starts at three, but my dad wants to be early to find a parking space. Eva: Perfect. I will be ready at your house at half past one. Should I bring anything? Tom: Just some money for a drink.\""
+       },
+       {
+        "v": "Mark says 'I promise it will not happen again.' What will the teacher probably do?",
+        "o": [
+         "\"send him home\"",
+         "\"give him an extra test, you know, I think, I suppose\"",
+         "\"give him another chance with a condition\"",
+         "\"call his parents\""
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 3,
+        "u": "Denk na over wat er logisch volgt. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"send him home\"\"? Dan denk je dat ze hem wegstuurt. Ze geeft juist een nieuwe kans, dus dat past niet.",
+         "Koos je \"\"give him an extra test, you know, I think, I suppose\"\"? Dan denk je dat ze een toets geeft. Er is geen toets genoemd, dus je verzint iets.",
+         "Klopt: ze zegt tomorrow is fine, but only if het op tijd ligt.",
+         "Koos je \"\"call his parents\"\"? Dan denk je dat ze zijn ouders belt. Dat wordt niet genoemd, en ze lost het met Mark op."
+        ],
+        "uh": "Mark says 'I promise it will not happen again.' What will the teacher probably do?",
+        "ctx": "You hear a teacher and a pupil (read the transcript): \"Teacher: Mark, I see you did not hand in your homework again. Mark: I am sorry, Mrs Evans. I was ill last week and I forgot about it. Teacher: I understand, but this is the third time this month. Mark: I know, and I promise it will not happen again. Can I bring it tomorrow? Teacher: Tomorrow is fine, but only if it is on my desk before the first lesson. If not, I will have to give you a lower mark. Mark: Okay, I will do it tonight. Thank you for giving me another chance.\""
+       },
+       {
+        "v": "The teacher says 'I understand, but this is the third time.' What does 'but' predict?",
+        "o": [
+         "\"a compliment\"",
+         "\"a criticism or a warning\"",
+         "\"an invitation, really, to be honest\"",
+         "\"a joke\""
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 3,
+        "u": "Denk na over wat er logisch volgt. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"a compliment\"\"? Dan denk je dat er een compliment volgt. Het gaat om herhaald te laat inleveren, en dat is een kritiek.",
+         "Klopt: na but volgt vaak wat minder prettig is, hier een waarschuwing.",
+         "Koos je \"\"an invitation, really, to be honest\"\"? Dan denk je dat er een uitnodiging volgt. De situatie is te serieus, en past niet bij een uitnodiging.",
+         "Koos je \"\"a joke\"\"? Dan denk je dat er een grap volgt. De lerares is serieus, dus een grap past niet."
+        ],
+        "uh": "The teacher says 'I understand, but this is the third time.' What does 'but' predict?",
+        "ctx": "You hear a teacher and a pupil (read the transcript): \"Teacher: Mark, I see you did not hand in your homework again. Mark: I am sorry, Mrs Evans. I was ill last week and I forgot about it. Teacher: I understand, but this is the third time this month. Mark: I know, and I promise it will not happen again. Can I bring it tomorrow? Teacher: Tomorrow is fine, but only if it is on my desk before the first lesson. If not, I will have to give you a lower mark. Mark: Okay, I will do it tonight. Thank you for giving me another chance.\""
+       },
+       {
+        "v": "After 'Can I bring it tomorrow?', which answer is most likely?",
+        "o": [
+         "\"No, it is Saturday.\"",
+         "\"Good evening, Mark.\"",
+         "\"I am sorry I forgot, I think, I suppose.\"",
+         "\"Yes, but only before the first lesson.\""
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 1,
+        "u": "Denk na over wat er logisch volgt. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"No, it is Saturday.\"\"? Dan denk je dat het weekend is. Er wordt een schooldag bedoeld, dus dit klopt niet.",
+         "Koos je \"\"Good evening, Mark.\"\"? Dan denk je dat het avond is. Het gesprek gaat over huiswerk, en een groet past niet.",
+         "Koos je \"\"I am sorry I forgot, I think, I suppose.\"\"? Dan denk je dat de lerares zich verontschuldigt. Zij is niet degene die iets vergat, dus dit zegt Mark.",
+         "Klopt: de lerares stemt in met een voorwaarde."
+        ],
+        "uh": "After 'Can I bring it tomorrow?', which answer is most likely?",
+        "ctx": "You hear a teacher and a pupil (read the transcript): \"Teacher: Mark, I see you did not hand in your homework again. Mark: I am sorry, Mrs Evans. I was ill last week and I forgot about it. Teacher: I understand, but this is the third time this month. Mark: I know, and I promise it will not happen again. Can I bring it tomorrow? Teacher: Tomorrow is fine, but only if it is on my desk before the first lesson. If not, I will have to give you a lower mark. Mark: Okay, I will do it tonight. Thank you for giving me another chance.\""
+       },
+       {
+        "v": "At the end Mark says 'Thank you for giving me another chance.' What is the best reply?",
+        "o": [
+         "\"You are welcome. Do not forget again.\"",
+         "\"Good morning, Mark.\"",
+         "\"I am sorry to hear that, to be honest, you know.\"",
+         "\"That is too late.\""
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 0,
+        "u": "Denk na over wat er logisch volgt. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: you are welcome is het vaste antwoord op een bedankje.",
+         "Koos je \"\"Good morning, Mark.\"\"? Dan denk je dat een groet past. Het gesprek loopt af, en een begroeting is niet nodig.",
+         "Koos je \"\"I am sorry to hear that, to be honest, you know.\"\"? Dan denk je dat een medeleven past. Mark brengt geen slecht nieuws, dus dit past niet.",
+         "Koos je \"\"That is too late.\"\"? Dan denk je dat ze hem afwijst. Ze gaf hem net een nieuwe kans, dus dit zou haar eigen woorden tegenspreken."
+        ],
+        "uh": "At the end Mark says 'Thank you for giving me another chance.' What is the best reply?",
+        "ctx": "You hear a teacher and a pupil (read the transcript): \"Teacher: Mark, I see you did not hand in your homework again. Mark: I am sorry, Mrs Evans. I was ill last week and I forgot about it. Teacher: I understand, but this is the third time this month. Mark: I know, and I promise it will not happen again. Can I bring it tomorrow? Teacher: Tomorrow is fine, but only if it is on my desk before the first lesson. If not, I will have to give you a lower mark. Mark: Okay, I will do it tonight. Thank you for giving me another chance.\""
+       }
+      ],
+      "oe": [
+       {
+        "bron": "Examenstijl",
+        "ctx": "You hear two friends: \"Anna: Would you like to come to the cinema on Friday? Ben: I would love to, but I have to look after my little brother. Anna: That is a pity. Maybe he can come too? Ben: That is a great idea. I will ask my mum.\" (read the transcript)",
+        "v": "Write what Ben says to the invitation, what the problem is and what the solution is.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Ben wil graag komen (1p). Probleem: hij moet op zijn broertje passen (1p). Oplossing: zijn broertje gaat mee (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "You hear a shop assistant: \"Can I help you? Customer: Yes, I am looking for a pair of black shoes in size forty. Assistant: I am afraid we only have brown ones in that size. Customer: Oh. Do you have black shoes in size thirty-nine?\" (read the transcript)",
+        "v": "Write what the assistant will probably say next and why you think so.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Ze kijkt of ze zwarte schoenen in maat 39 heeft of zegt dat ze die niet heeft (1p). De klant stelde een vraag over de voorraad (1p). Na een vraag volgt een antwoord (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "You hear a mother: \"Anna, I am sorry I am late. The bus was stuck in traffic. I will cook dinner as soon as I get home.\" Anna says: \"That is okay, mum. I already made some pasta.\" (read the transcript)",
+        "v": "Write what the mother will probably say next and give a reason.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Ze bedankt haar dochter (1p). Ze is blij of opgelucht (1p). Het vervolg bij een gunst of hulp is een bedankje (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "You hear a teacher: \"Please open your books at page twenty. Your homework is on the board. I would like to see all your answers tomorrow, but if you have a question, please ask me now.\" (read the transcript)",
+        "v": "Write what a pupil will probably say or do next and why.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Een leerling stelt een vraag of pakt zijn boek (1p). De lerares nodigde uit om een vraag te stellen (1p). Een uitnodiging of vraag krijgt een reactie (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "A classmate says: \"I do not need to listen to the last sentence, because I already know what will happen.\" You do not agree.",
+        "v": "Write two sentences in English that explain why you must keep listening, with an example.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "De voorspelling kan fout zijn (1p). Het slot of een but kan het vervolg veranderen (1p). Een duidelijke uitleg met voorbeeld (1p)."
+       }
+      ]
      }
     ]
    },
