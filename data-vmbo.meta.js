@@ -1046,6 +1046,27 @@ var VAKKEN_VMBO = [
       "nOe": 5,
       "nBeg": 12,
       "hasSam": true
+     },
+     {
+      "id": "C4",
+      "lo": "en.C.4",
+      "gs": 2,
+      "naam": "Personen en dingen beschrijven",
+      "beschrijving": "Je leert in het Engels personen, kleding en plaatsen te beschrijven: je noemt uiterlijk, haar, kleding en karakter, gebruikt bijvoeglijke naamwoorden in de goede volgorde, beschrijft een woning en zwakt een eigenschap af of versterkt hem.",
+      "ceStatus": "SE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Uiterlijk beschrijven",
+       "Karakter beschrijven",
+       "Kleding en dingen",
+       "Plaatsen beschrijven",
+       "Afzwakken, versterken en tegenstellen"
+      ],
+      "nSv": 27,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
      }
     ]
    },

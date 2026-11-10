@@ -1,0 +1,682 @@
+{
+ "id": "C4",
+ "lo": "en.C.4",
+ "gs": 2,
+ "naam": "Personen en dingen beschrijven",
+ "beschrijving": "Je leert in het Engels personen, kleding en plaatsen te beschrijven: je noemt uiterlijk, haar, kleding en karakter, gebruikt bijvoeglijke naamwoorden in de goede volgorde, beschrijft een woning en zwakt een eigenschap af of versterkt hem.",
+ "ceStatus": "SE",
+ "binas": "",
+ "val": "",
+ "onderwerpen": [
+  "Uiterlijk beschrijven",
+  "Karakter beschrijven",
+  "Kleding en dingen",
+  "Plaatsen beschrijven",
+  "Afzwakken, versterken en tegenstellen"
+ ],
+ "sam": "Een persoon beschrijf je met uiterlijk, haar, kleding en karakter. Het bijvoeglijk naamwoord staat vóór het zelfstandig naamwoord. Een plaats beschrijf je met verdieping, kamers en ligging. Met quite en a bit zwak je een eigenschap af, met very versterk je hem, en but toont een tegenstelling.",
+ "begrippen": [
+  {
+   "t": "Uiterlijk",
+   "d": "Hoe iemand eruitziet, zoals tall, blond of curly hair."
+  },
+  {
+   "t": "Karakter",
+   "d": "Hoe iemand is, zoals kind, shy of cheerful."
+  },
+  {
+   "t": "Kenmerk",
+   "d": "Iets opvallends, zoals een litteken, dat iemand herkenbaar maakt."
+  },
+  {
+   "t": "Kleding",
+   "d": "Wat iemand draagt, bijvoorbeeld a red jacket."
+  },
+  {
+   "t": "Haar",
+   "d": "Haarlengte, haarkleur en haarvorm, zoals long blond hair."
+  },
+  {
+   "t": "Verdieping",
+   "d": "Een etage van een gebouw, bijvoorbeeld the third floor."
+  },
+  {
+   "t": "Plaats",
+   "d": "Waar iets is, bijvoorbeeld at the back of the flat."
+  },
+  {
+   "t": "Bijvoeglijk naamwoord",
+   "d": "Een woord dat zegt hoe iets is, zoals small of modern."
+  },
+  {
+   "t": "Afzwakken",
+   "d": "Een eigenschap zwakker maken met quite of a bit."
+  },
+  {
+   "t": "Versterken",
+   "d": "Een eigenschap sterker maken met very."
+  },
+  {
+   "t": "Tegenstelling",
+   "d": "Een woord als but dat een nadeel en een voordeel verbindt."
+  },
+  {
+   "t": "Omschrijven",
+   "d": "Met andere woorden beschrijven wat iemand of iets is."
+  }
+ ],
+ "sv": [
+  {
+   "v": "Welke zin beschrijft het haar van iemand?",
+   "o": [
+    "\"She wears a blue jacket.\"",
+    "\"She has long, blond hair.\"",
+    "\"She is eight years old.\"",
+    "\"She lives on the third floor.\""
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 0,
+   "u": "Let op de bijvoeglijke naamwoorden. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"She wears a blue jacket.\"\"? Dan denk je dat een jas haar is. Een jas beschrijft kleding, en niet het haar.",
+    "Klopt: long en blond zijn bijvoeglijke naamwoorden bij hair, dus ze beschrijven het haar.",
+    "Koos je \"\"She is eight years old.\"\"? Dan pak je een leeftijd. Dit zegt hoe oud iemand is, en niets over haar haar.",
+    "Koos je \"\"She lives on the third floor.\"\"? Dan kies je een woonplaats. Dit zegt waar ze woont, en niets over haar haar."
+   ],
+   "uh": "Welke zin beschrijft het haar van iemand?"
+  },
+  {
+   "v": "Hoe zeg je in het Engels dat iemand kort, krullend haar heeft?",
+   "o": [
+    "\"long, straight hair\"",
+    "\"short, straight hair\"",
+    "\"long, curly hair\"",
+    "\"short, curly hair\""
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 0,
+   "u": "Let op de bijvoeglijke naamwoorden. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"long, straight hair\"\"? Dan denk je dat long kort is. Long is lang en straight is steil, dus het is het tegenovergestelde.",
+    "Koos je \"\"short, straight hair\"\"? Dan denk je dat straight krullend is. Straight is steil, en curly is krullend.",
+    "Koos je \"\"long, curly hair\"\"? Dan denk je dat long kort is. Long is lang, en dus past alleen curly.",
+    "Klopt: short is kort en curly is krullend, dus samen een kort en krullend kapsel."
+   ],
+   "uh": "Hoe zeg je in het Engels dat iemand kort, krullend haar heeft?"
+  },
+  {
+   "v": "Een jongen durft nauwelijks met nieuwe mensen te praten. Welk woord past?",
+   "o": [
+    "\"shy\"",
+    "\"cheerful\"",
+    "\"sporty\"",
+    "\"tall\""
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 1,
+   "u": "Let op de bijvoeglijke naamwoorden. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: shy betekent verlegen, dus iemand die weinig durft te zeggen.",
+    "Koos je \"\"cheerful\"\"? Dan denk je dat dit past. Cheerful is vrolijk, en dat is iets anders dan verlegen.",
+    "Koos je \"\"sporty\"\"? Dan denk je dat sporty past. Sporty is sportief, en zegt niets over durven praten.",
+    "Koos je \"\"tall\"\"? Dan denk je dat tall past. Tall is lang, en beschrijft uiterlijk."
+   ],
+   "uh": "Een jongen durft nauwelijks met nieuwe mensen te praten. Welk woord past?"
+  },
+  {
+   "v": "Welk woord beschrijft een karakter in plaats van het uiterlijk?",
+   "o": [
+    "\"tall\"",
+    "\"blond\"",
+    "\"kind\"",
+    "\"curly\""
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 1,
+   "u": "Let op de bijvoeglijke naamwoorden. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"tall\"\"? Dan denk je dat tall een karakter is. Tall is lang, en dat is uiterlijk.",
+    "Koos je \"\"blond\"\"? Dan denk je dat blond een karakter is. Blond is een haarkleur, en dus uiterlijk.",
+    "Klopt: kind is aardig, een eigenschap van iemands karakter.",
+    "Koos je \"\"curly\"\"? Dan denk je dat curly een karakter is. Curly is krullend, en dat beschrijft haar."
+   ],
+   "uh": "Welk woord beschrijft een karakter in plaats van het uiterlijk?"
+  },
+  {
+   "v": "Je beschrijft je jas als 'a red jacket'. Wat vertelt het woord 'red'?",
+   "o": [
+    "\"de maat\"",
+    "\"de kleur\"",
+    "\"het materiaal\"",
+    "\"de prijs\""
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 2,
+   "u": "Let op de bijvoeglijke naamwoorden. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"de maat\"\"? Dan denk je dat red een maat is. Een maat is small of large, en red is een kleur.",
+    "Klopt: red is rood, dus het noemt de kleur van de jas.",
+    "Koos je \"\"het materiaal\"\"? Dan denk je dat red een stof is. Een materiaal is bijvoorbeeld cotton, en red is een kleur.",
+    "Koos je \"\"de prijs\"\"? Dan denk je dat red een prijs is. Een prijs noem je in euro's, en red beschrijft de kleur."
+   ],
+   "uh": "Je beschrijft je jas als 'a red jacket'. Wat vertelt het woord 'red'?"
+  },
+  {
+   "v": "Iemand zegt: 'My room is on the third floor.' Waar woont hij?",
+   "o": [
+    "\"op de begane grond\"",
+    "\"op de tweede verdieping, I think\"",
+    "\"in de kelder\"",
+    "\"op de derde verdieping\""
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 3,
+   "u": "Let op de bijvoeglijke naamwoorden. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"op de begane grond\"\"? Dan denk je dat floor de begane grond is. Daarvoor is ground floor, en third floor is hoger.",
+    "Koos je \"\"op de tweede verdieping, I think\"\"? Dan verwar je third met second. Third is de derde, en second is de tweede.",
+    "Koos je \"\"in de kelder\"\"? Dan denk je dat floor de kelder is. Een kelder is basement, en third floor ligt boven.",
+    "Klopt: third is derde en floor is verdieping."
+   ],
+   "uh": "Iemand zegt: 'My room is on the third floor.' Waar woont hij?"
+  },
+  {
+   "v": "Iemand zegt: 'The room is quite small.' Wat bedoelt hij?",
+   "o": [
+    "\"de kamer is nogal klein\"",
+    "\"de kamer is enorm\"",
+    "\"de kamer is niet klein, to be honest\"",
+    "\"de kamer is te groot\""
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 4,
+   "u": "Let op de bijvoeglijke naamwoorden. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: quite betekent nogal, dus de kamer is behoorlijk klein.",
+    "Koos je \"\"de kamer is enorm\"\"? Dan denk je dat quite groot maakt. Small is klein, en quite verandert dat niet in groot.",
+    "Koos je \"\"de kamer is niet klein, to be honest\"\"? Dan denk je dat quite het ontkent. Het zwakt small niet af tot niet klein, maar bevestigt dat het klein is.",
+    "Koos je \"\"de kamer is te groot\"\"? Dan denk je dat small groot betekent. Small is klein, en quite past daar niet bij."
+   ],
+   "uh": "Iemand zegt: 'The room is quite small.' Wat bedoelt hij?"
+  },
+  {
+   "v": "How old is the boy?",
+   "o": [
+    "\"eighteen\"",
+    "\"six\"",
+    "\"eight\"",
+    "\"ten\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 0,
+   "u": "Let op de bijvoeglijke naamwoorden. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"eighteen\"\"? Dan denk je dat het achttien is. Eight is acht, en eighteen is achttien.",
+    "Koos je \"\"six\"\"? Dan kies je een lagere leeftijd. De moeder noemt een kleiner kind niet, en zegt eight.",
+    "Klopt: de moeder zegt dat hij acht jaar oud is.",
+    "Koos je \"\"ten\"\"? Dan rond je de leeftijd naar boven af. Ze noemt een precieze leeftijd, namelijk acht."
+   ],
+   "uh": "How old is the boy?",
+   "ctx": "You hear a conversation at a police station (read the transcript): \"Officer: Can you describe the boy you are looking for? Mother: Yes, he is eight years old and quite small for his age. He has short, curly brown hair and green eyes. Officer: What was he wearing? Mother: A red jacket, blue jeans and white trainers. He was also carrying a yellow backpack. Officer: Does he have any special features? Mother: He has a small scar above his left eyebrow. Officer: Thank you. We will start looking right away.\""
+  },
+  {
+   "v": "What does the boy's hair look like?",
+   "o": [
+    "\"long, straight and blond\"",
+    "\"short, curly and brown\"",
+    "\"short, straight and black\"",
+    "\"long, curly and brown\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 0,
+   "u": "Let op de bijvoeglijke naamwoorden. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"long, straight and blond\"\"? Dan draai je alle eigenschappen om. De moeder noemt kort, krullend en bruin, en niet lang, steil en blond.",
+    "Klopt: de moeder zegt short, curly brown hair.",
+    "Koos je \"\"short, straight and black\"\"? Dan denk je dat het haar steil en zwart is. Ze zegt curly en brown, dus krullend en bruin.",
+    "Koos je \"\"long, curly and brown\"\"? Dan denk je dat het haar lang is. Ze zegt short, dus kort."
+   ],
+   "uh": "What does the boy's hair look like?",
+   "ctx": "You hear a conversation at a police station (read the transcript): \"Officer: Can you describe the boy you are looking for? Mother: Yes, he is eight years old and quite small for his age. He has short, curly brown hair and green eyes. Officer: What was he wearing? Mother: A red jacket, blue jeans and white trainers. He was also carrying a yellow backpack. Officer: Does he have any special features? Mother: He has a small scar above his left eyebrow. Officer: Thank you. We will start looking right away.\""
+  },
+  {
+   "v": "What was the boy wearing?",
+   "o": [
+    "\"a blue jacket, red jeans and white trainers\"",
+    "\"a yellow jacket, blue jeans and black shoes\"",
+    "\"a red jacket, black jeans and white trainers, really\"",
+    "\"a red jacket, blue jeans and white trainers\""
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 2,
+   "u": "Let op de bijvoeglijke naamwoorden. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"a blue jacket, red jeans and white trainers\"\"? Dan wissel je de kleuren van jas en broek. De jas is rood en de broek blauw, en niet andersom.",
+    "Koos je \"\"a yellow jacket, blue jeans and black shoes\"\"? Dan pak je de kleur van de rugzak voor de jas. Geel hoort bij de rugzak, en de schoenen zijn wit.",
+    "Koos je \"\"a red jacket, black jeans and white trainers, really\"\"? Dan denk je dat de broek zwart is. De moeder zegt blue jeans, dus een blauwe spijkerbroek.",
+    "Klopt: dit is de kleding die de moeder noemt."
+   ],
+   "uh": "What was the boy wearing?",
+   "ctx": "You hear a conversation at a police station (read the transcript): \"Officer: Can you describe the boy you are looking for? Mother: Yes, he is eight years old and quite small for his age. He has short, curly brown hair and green eyes. Officer: What was he wearing? Mother: A red jacket, blue jeans and white trainers. He was also carrying a yellow backpack. Officer: Does he have any special features? Mother: He has a small scar above his left eyebrow. Officer: Thank you. We will start looking right away.\""
+  },
+  {
+   "v": "What is the boy's special feature?",
+   "o": [
+    "\"a small scar above his left eyebrow\"",
+    "\"a scar above his right eyebrow, I think\"",
+    "\"a big scar on his arm\"",
+    "\"a tattoo on his hand\""
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 0,
+   "u": "Let op de bijvoeglijke naamwoorden. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: de moeder noemt een klein litteken boven zijn linkeroogbrauw.",
+    "Koos je \"\"a scar above his right eyebrow, I think\"\"? Dan verwar je left met right. Ze zegt left, dus links.",
+    "Koos je \"\"a big scar on his arm\"\"? Dan denk je dat het litteken op de arm zit. Ze zegt above his left eyebrow, dus boven het oog.",
+    "Koos je \"\"a tattoo on his hand\"\"? Dan denk je dat het een tatoeage is. Er wordt een litteken genoemd, en geen tatoeage."
+   ],
+   "uh": "What is the boy's special feature?",
+   "ctx": "You hear a conversation at a police station (read the transcript): \"Officer: Can you describe the boy you are looking for? Mother: Yes, he is eight years old and quite small for his age. He has short, curly brown hair and green eyes. Officer: What was he wearing? Mother: A red jacket, blue jeans and white trainers. He was also carrying a yellow backpack. Officer: Does he have any special features? Mother: He has a small scar above his left eyebrow. Officer: Thank you. We will start looking right away.\""
+  },
+  {
+   "v": "On which floor is the flat?",
+   "o": [
+    "\"the first floor\"",
+    "\"the second floor, to be honest\"",
+    "\"the third floor\"",
+    "\"the fourth floor\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 3,
+   "u": "Let op de bijvoeglijke naamwoorden. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"the first floor\"\"? Dan denk je dat het laag in het gebouw ligt. Het uitzicht over het park past bij een hogere verdieping, en ben zegt third.",
+    "Koos je \"\"the second floor, to be honest\"\"? Dan verwar je third met second. Third is de derde, en second is de tweede.",
+    "Klopt: ben zegt dat het op de derde verdieping is.",
+    "Koos je \"\"the fourth floor\"\"? Dan tel je een verdieping te veel. Ben zegt third, en dat is een lagere verdieping."
+   ],
+   "uh": "On which floor is the flat?",
+   "ctx": "You hear two friends talking about a flat (read the transcript): \"Lisa: How do you like your new flat, Ben? Ben: I love it! It is on the third floor, so we have a great view of the park. The living room is big and bright, and the kitchen is modern. Lisa: How many bedrooms are there? Ben: Two, but they are quite small. My bedroom is at the back, so it is very quiet. Lisa: Is there a garden? Ben: No, but there is a small balcony where we can sit in the evening.\""
+  },
+  {
+   "v": "How many bedrooms does the flat have?",
+   "o": [
+    "\"three\"",
+    "\"two\"",
+    "\"one\"",
+    "\"four\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 3,
+   "u": "Let op de bijvoeglijke naamwoorden. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"three\"\"? Dan tel je de slaapkamers en de woonkamer mee. Ben noemt alleen de slaapkamers, en dat zijn er twee.",
+    "Klopt: ben zegt two, maar ze zijn nogal klein.",
+    "Koos je \"\"one\"\"? Dan denk je dat zijn eigen kamer de enige is. Hij noemt zijn kamer apart, maar er is er nog één.",
+    "Koos je \"\"four\"\"? Dan verdubbel je het aantal. Ben zegt two, en geen vier."
+   ],
+   "uh": "How many bedrooms does the flat have?",
+   "ctx": "You hear two friends talking about a flat (read the transcript): \"Lisa: How do you like your new flat, Ben? Ben: I love it! It is on the third floor, so we have a great view of the park. The living room is big and bright, and the kitchen is modern. Lisa: How many bedrooms are there? Ben: Two, but they are quite small. My bedroom is at the back, so it is very quiet. Lisa: Is there a garden? Ben: No, but there is a small balcony where we can sit in the evening.\""
+  },
+  {
+   "v": "What does Ben say about the kitchen?",
+   "o": [
+    "\"it is old\"",
+    "\"it is small, you know\"",
+    "\"it is dark\"",
+    "\"it is modern\""
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 3,
+   "u": "Let op de bijvoeglijke naamwoorden. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"it is old\"\"? Dan denk je dat de keuken oud is. Modern is het tegenovergestelde, dus nieuw en eigentijds.",
+    "Koos je \"\"it is small, you know\"\"? Dan denk je dat de keuken klein is. Small gaat over de slaapkamers, en niet over de keuken.",
+    "Koos je \"\"it is dark\"\"? Dan denk je dat de keuken donker is. Bright gaat over de woonkamer, en dark wordt niet genoemd.",
+    "Klopt: ben zegt dat de keuken modern is, dus eigentijds en niet oud."
+   ],
+   "uh": "What does Ben say about the kitchen?",
+   "ctx": "You hear two friends talking about a flat (read the transcript): \"Lisa: How do you like your new flat, Ben? Ben: I love it! It is on the third floor, so we have a great view of the park. The living room is big and bright, and the kitchen is modern. Lisa: How many bedrooms are there? Ben: Two, but they are quite small. My bedroom is at the back, so it is very quiet. Lisa: Is there a garden? Ben: No, but there is a small balcony where we can sit in the evening.\""
+  },
+  {
+   "v": "What does Zoe look like?",
+   "o": [
+    "\"tall, with long blond hair\"",
+    "\"short, with brown hair\"",
+    "\"tall, with short black hair, really\"",
+    "\"small, with red hair\""
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 0,
+   "u": "Let op de bijvoeglijke naamwoorden. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: sophie zegt dat Zoe lang is en lang blond haar heeft.",
+    "Koos je \"\"short, with brown hair\"\"? Dan denk je dat Zoe klein is. Sophie noemt haar juist tall, en ook niet bruinharig.",
+    "Koos je \"\"tall, with short black hair, really\"\"? Dan denk je dat haar haar kort en zwart is. Sophie zegt long blond hair, dus lang en blond.",
+    "Koos je \"\"small, with red hair\"\"? Dan pak je een geheel andere beschrijving. Rood haar en klein komen niet voor, want ze is lang en blond."
+   ],
+   "uh": "What does Zoe look like?",
+   "ctx": "You hear a teacher and a pupil talking (read the transcript): \"Teacher: Tell me about your best friend. Sophie: Her name is Zoe. She is tall and sporty, and she is always cheerful. She has long blond hair, which she usually wears in a ponytail. Teacher: What is she like as a person? Sophie: She is very kind and funny, but sometimes she is a bit shy with new people. We have been friends for six years, and we love playing tennis together.\""
+  },
+  {
+   "v": "Which word describes Zoe's character?",
+   "o": [
+    "\"bored\"",
+    "\"angry\"",
+    "\"cheerful\"",
+    "\"lazy\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 1,
+   "u": "Let op de bijvoeglijke naamwoorden. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"bored\"\"? Dan denk je dat Zoe zich verveelt. Sophie noemt haar juist vrolijk, een tegenstelling van verveeld.",
+    "Koos je \"\"angry\"\"? Dan kies je een negatief gevoel. Boos past niet bij haar altijd vrolijke aard, en wordt niet genoemd.",
+    "Klopt: sophie zegt dat Zoe altijd vrolijk is.",
+    "Koos je \"\"lazy\"\"? Dan denk je dat Zoe lui is. Ze speelt tennis, dus ze is actief."
+   ],
+   "uh": "Which word describes Zoe's character?",
+   "ctx": "You hear a teacher and a pupil talking (read the transcript): \"Teacher: Tell me about your best friend. Sophie: Her name is Zoe. She is tall and sporty, and she is always cheerful. She has long blond hair, which she usually wears in a ponytail. Teacher: What is she like as a person? Sophie: She is very kind and funny, but sometimes she is a bit shy with new people. We have been friends for six years, and we love playing tennis together.\""
+  },
+  {
+   "v": "What does Sophie say about Zoe and new people?",
+   "o": [
+    "\"she is always loud, to be honest\"",
+    "\"she is sometimes shy\"",
+    "\"she hates them\"",
+    "\"she is never shy\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 1,
+   "u": "Let op de bijvoeglijke naamwoorden. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"she is always loud, to be honest\"\"? Dan denk je dat Zoe luidruchtig is. Sophie zegt dat ze soms verlegen is, dus niet luid.",
+    "Klopt: sophie zegt dat Zoe soms een beetje verlegen is met nieuwe mensen.",
+    "Koos je \"\"she hates them\"\"? Dan denk je dat Zoe nieuwe mensen haat. Sophie zegt shy, en dat is geen haat.",
+    "Koos je \"\"she is never shy\"\"? Dan denk je dat Zoe nooit verlegen is. Sophie zegt sometimes shy, dus soms wel."
+   ],
+   "uh": "What does Sophie say about Zoe and new people?",
+   "ctx": "You hear a teacher and a pupil talking (read the transcript): \"Teacher: Tell me about your best friend. Sophie: Her name is Zoe. She is tall and sporty, and she is always cheerful. She has long blond hair, which she usually wears in a ponytail. Teacher: What is she like as a person? Sophie: She is very kind and funny, but sometimes she is a bit shy with new people. We have been friends for six years, and we love playing tennis together.\""
+  },
+  {
+   "v": "Which question asks the mother for the boy's clothes?",
+   "o": [
+    "\"How old is he?\"",
+    "\"What is his name?\"",
+    "\"Where does he live, I suppose?\"",
+    "\"What was he wearing?\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 2,
+   "u": "Let op de bijvoeglijke naamwoorden. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"How old is he?\"\"? Dan denk je dat de leeftijd een kledingvraag is. How old gaat over jaren, terwijl de vraag over kleding gaat.",
+    "Koos je \"\"What is his name?\"\"? Dan kies je een vraag over identiteit. Een naam zegt niets over wat hij draagt, dus het past niet.",
+    "Koos je \"\"Where does he live, I suppose?\"\"? Dan pak je een vraag over een plaats. Where gaat over een locatie, en niet over een kledingstuk.",
+    "Klopt: wearing betekent dragen, dus de vraag gaat over kleding."
+   ],
+   "uh": "Which question asks the mother for the boy's clothes?",
+   "ctx": "You hear a conversation at a police station (read the transcript): \"Officer: Can you describe the boy you are looking for? Mother: Yes, he is eight years old and quite small for his age. He has short, curly brown hair and green eyes. Officer: What was he wearing? Mother: A red jacket, blue jeans and white trainers. He was also carrying a yellow backpack. Officer: Does he have any special features? Mother: He has a small scar above his left eyebrow. Officer: Thank you. We will start looking right away.\""
+  },
+  {
+   "v": "'He is quite small for his age.' What does the mother mean?",
+   "o": [
+    "\"he is smaller than most children of eight\"",
+    "\"he is taller than most children, you know, I think\"",
+    "\"he is exactly average\"",
+    "\"he is too big for his jacket\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 4,
+   "u": "Let op de bijvoeglijke naamwoorden. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: small for his age betekent kleiner dan andere kinderen van dezelfde leeftijd.",
+    "Koos je \"\"he is taller than most children, you know, I think\"\"? Dan denk je dat small groot is. Small is klein, dus hij is kleiner.",
+    "Koos je \"\"he is exactly average\"\"? Dan denk je dat quite gemiddeld betekent. Small for his age betekent kleiner dan gemiddeld, en dat is niet gemiddeld.",
+    "Koos je \"\"he is too big for his jacket\"\"? Dan denk je dat het over zijn jas gaat. De zin gaat over zijn lengte, en niet over kleding."
+   ],
+   "uh": "'He is quite small for his age.' What does the mother mean?",
+   "ctx": "You hear a conversation at a police station (read the transcript): \"Officer: Can you describe the boy you are looking for? Mother: Yes, he is eight years old and quite small for his age. He has short, curly brown hair and green eyes. Officer: What was he wearing? Mother: A red jacket, blue jeans and white trainers. He was also carrying a yellow backpack. Officer: Does he have any special features? Mother: He has a small scar above his left eyebrow. Officer: Thank you. We will start looking right away.\""
+  },
+  {
+   "v": "Why does the officer ask about special features?",
+   "o": [
+    "\"to take a photo\"",
+    "\"to know the mother's name, really\"",
+    "\"to find the boy more easily\"",
+    "\"to decide on a punishment\""
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 0,
+   "u": "Let op de bijvoeglijke naamwoorden. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"to take a photo\"\"? Dan denk je dat de agent een foto neemt. Hij vraagt alleen, en een foto wordt niet genoemd.",
+    "Koos je \"\"to know the mother's name, really\"\"? Dan denk je dat hij haar naam wil. Hij vraagt naar het kind, en niet naar haar.",
+    "Klopt: een opvallend kenmerk zoals een litteken helpt om het kind te herkennen.",
+    "Koos je \"\"to decide on a punishment\"\"? Dan denk je dat er straf nodig is. Het kind is zoek, en niemand wordt gestraft."
+   ],
+   "uh": "Why does the officer ask about special features?",
+   "ctx": "You hear a conversation at a police station (read the transcript): \"Officer: Can you describe the boy you are looking for? Mother: Yes, he is eight years old and quite small for his age. He has short, curly brown hair and green eyes. Officer: What was he wearing? Mother: A red jacket, blue jeans and white trainers. He was also carrying a yellow backpack. Officer: Does he have any special features? Mother: He has a small scar above his left eyebrow. Officer: Thank you. We will start looking right away.\""
+  },
+  {
+   "v": "Why is Ben's bedroom very quiet?",
+   "o": [
+    "\"it is on the third floor, I think\"",
+    "\"it is at the back of the flat\"",
+    "\"it is next to the park\"",
+    "\"it is very small\""
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 3,
+   "u": "Let op de bijvoeglijke naamwoorden. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"it is on the third floor, I think\"\"? Dan denk je dat de verdieping de reden is. Ben noemt de verdieping voor het uitzicht, en niet voor de rust.",
+    "Klopt: ben zegt dat zijn kamer aan de achterkant ligt, dus het is er stil.",
+    "Koos je \"\"it is next to the park\"\"? Dan denk je dat het park de reden is. Het park wordt genoemd voor het uitzicht, en niet voor de rust.",
+    "Koos je \"\"it is very small\"\"? Dan denk je dat de grootte de reden is. Hij noemt dat de kamers klein zijn, maar de reden voor rust is de achterkant."
+   ],
+   "uh": "Why is Ben's bedroom very quiet?",
+   "ctx": "You hear two friends talking about a flat (read the transcript): \"Lisa: How do you like your new flat, Ben? Ben: I love it! It is on the third floor, so we have a great view of the park. The living room is big and bright, and the kitchen is modern. Lisa: How many bedrooms are there? Ben: Two, but they are quite small. My bedroom is at the back, so it is very quiet. Lisa: Is there a garden? Ben: No, but there is a small balcony where we can sit in the evening.\""
+  },
+  {
+   "v": "Ben says: 'The bedrooms are quite small, but there is a balcony.' What does 'but' show?",
+   "o": [
+    "\"a second negative point\"",
+    "\"a question\"",
+    "\"a repeat of the first point, to be honest\"",
+    "\"a positive point after a negative one\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 4,
+   "u": "Let op de bijvoeglijke naamwoorden. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"a second negative point\"\"? Dan denk je dat but nog een nadeel noemt. Het balkon is een voordeel, dus het is positief.",
+    "Koos je \"\"a question\"\"? Dan denk je dat but een vraag inleidt. Het leidt een voordeel in, en geen vraag.",
+    "Koos je \"\"a repeat of the first point, to be honest\"\"? Dan denk je dat but herhaalt. Het introduceert iets nieuws, namelijk het balkon.",
+    "Klopt: na but noemt hij iets positiefs na een nadeel."
+   ],
+   "uh": "Ben says: 'The bedrooms are quite small, but there is a balcony.' What does 'but' show?",
+   "ctx": "You hear two friends talking about a flat (read the transcript): \"Lisa: How do you like your new flat, Ben? Ben: I love it! It is on the third floor, so we have a great view of the park. The living room is big and bright, and the kitchen is modern. Lisa: How many bedrooms are there? Ben: Two, but they are quite small. My bedroom is at the back, so it is very quiet. Lisa: Is there a garden? Ben: No, but there is a small balcony where we can sit in the evening.\""
+  },
+  {
+   "v": "Where can Ben and his flatmates sit in the evening?",
+   "o": [
+    "\"on the balcony\"",
+    "\"in the garden\"",
+    "\"in the park\"",
+    "\"in the kitchen, I suppose\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 3,
+   "u": "Let op de bijvoeglijke naamwoorden. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: ben zegt dat er een klein balkon is waar ze 's avonds kunnen zitten.",
+    "Koos je \"\"in the garden\"\"? Dan denk je dat er een tuin is. Ben zegt no, er is geen tuin, dus dat klopt niet.",
+    "Koos je \"\"in the park\"\"? Dan denk je dat ze in het park zitten. Het park is alleen het uitzicht, en niet hun zitplek.",
+    "Koos je \"\"in the kitchen, I suppose\"\"? Dan denk je dat ze in de keuken zitten. De keuken wordt alleen beschreven, en niet als zitplek."
+   ],
+   "uh": "Where can Ben and his flatmates sit in the evening?",
+   "ctx": "You hear two friends talking about a flat (read the transcript): \"Lisa: How do you like your new flat, Ben? Ben: I love it! It is on the third floor, so we have a great view of the park. The living room is big and bright, and the kitchen is modern. Lisa: How many bedrooms are there? Ben: Two, but they are quite small. My bedroom is at the back, so it is very quiet. Lisa: Is there a garden? Ben: No, but there is a small balcony where we can sit in the evening.\""
+  },
+  {
+   "v": "Which of these describes appearance, not character?",
+   "o": [
+    "\"kind\"",
+    "\"funny\"",
+    "\"tall\"",
+    "\"cheerful\""
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 0,
+   "u": "Let op de bijvoeglijke naamwoorden. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"kind\"\"? Dan denk je dat kind uiterlijk is. Kind is aardig, en dat is karakter.",
+    "Koos je \"\"funny\"\"? Dan denk je dat funny uiterlijk is. Funny is grappig, en dat is karakter.",
+    "Klopt: tall is lang en dat zie je aan iemand.",
+    "Koos je \"\"cheerful\"\"? Dan denk je dat cheerful uiterlijk is. Cheerful is vrolijk, en dat is karakter."
+   ],
+   "uh": "Which of these describes appearance, not character?",
+   "ctx": "You hear a teacher and a pupil talking (read the transcript): \"Teacher: Tell me about your best friend. Sophie: Her name is Zoe. She is tall and sporty, and she is always cheerful. She has long blond hair, which she usually wears in a ponytail. Teacher: What is she like as a person? Sophie: She is very kind and funny, but sometimes she is a bit shy with new people. We have been friends for six years, and we love playing tennis together.\""
+  },
+  {
+   "v": "What does 'a bit' do in 'a bit shy'?",
+   "o": [
+    "\"it makes shy stronger\"",
+    "\"it makes the word shy weaker\"",
+    "\"it makes shy a positive word\"",
+    "\"it turns the sentence into a question\""
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 4,
+   "u": "Let op de bijvoeglijke naamwoorden. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"it makes shy stronger\"\"? Dan denk je dat a bit versterkt. Het zwakt af, en versterkt niet.",
+    "Klopt: a bit zwakt af, dus ze is niet heel verlegen.",
+    "Koos je \"\"it makes shy a positive word\"\"? Dan denk je dat a bit positief maakt. Het verandert alleen de sterkte, en niet het soort.",
+    "Koos je \"\"it turns the sentence into a question\"\"? Dan denk je dat a bit een vraag maakt. Het blijft een mededeling, en geen vraag."
+   ],
+   "uh": "What does 'a bit' do in 'a bit shy'?",
+   "ctx": "You hear a teacher and a pupil talking (read the transcript): \"Teacher: Tell me about your best friend. Sophie: Her name is Zoe. She is tall and sporty, and she is always cheerful. She has long blond hair, which she usually wears in a ponytail. Teacher: What is she like as a person? Sophie: She is very kind and funny, but sometimes she is a bit shy with new people. We have been friends for six years, and we love playing tennis together.\""
+  },
+  {
+   "v": "Which two characteristics show that Zoe is a nice person?",
+   "o": [
+    "\"tall and sporty, I think\"",
+    "\"blond and tall\"",
+    "\"sporty and shy\"",
+    "\"kind and funny\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 1,
+   "u": "Let op de bijvoeglijke naamwoorden. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"tall and sporty, I think\"\"? Dan denk je dat dit karakter is. Tall is lengte en sporty is sportief, en dat is geen karakter.",
+    "Koos je \"\"blond and tall\"\"? Dan denk je dat dit karakter is. Het beschrijft haar uiterlijk, en niet haar karakter.",
+    "Koos je \"\"sporty and shy\"\"? Dan denk je dat dit prettig karakter laat zien. Shy is geen nadeel, maar sporty beschrijft geen karakter.",
+    "Klopt: kind en funny zijn eigenschappen van een prettig karakter."
+   ],
+   "uh": "Which two characteristics show that Zoe is a nice person?",
+   "ctx": "You hear a teacher and a pupil talking (read the transcript): \"Teacher: Tell me about your best friend. Sophie: Her name is Zoe. She is tall and sporty, and she is always cheerful. She has long blond hair, which she usually wears in a ponytail. Teacher: What is she like as a person? Sophie: She is very kind and funny, but sometimes she is a bit shy with new people. We have been friends for six years, and we love playing tennis together.\""
+  },
+  {
+   "v": "How long have Sophie and Zoe been friends?",
+   "o": [
+    "\"six years\"",
+    "\"sixteen years\"",
+    "\"two years\"",
+    "\"six months\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 2,
+   "u": "Let op de bijvoeglijke naamwoorden. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: sophie zegt dat ze al zes jaar vriendinnen zijn.",
+    "Koos je \"\"sixteen years\"\"? Dan verwar je six met sixteen. Six is zes, en sixteen heeft de uitgang -teen.",
+    "Koos je \"\"two years\"\"? Dan denk je dat de vriendschap korter is. Ze zegt dat het al lang zo is, dus meer dan twee jaar.",
+    "Koos je \"\"six months\"\"? Dan pak je de verkeerde eenheid. Sophie zegt years, en dat zijn jaren en geen maanden."
+   ],
+   "uh": "How long have Sophie and Zoe been friends?",
+   "ctx": "You hear a teacher and a pupil talking (read the transcript): \"Teacher: Tell me about your best friend. Sophie: Her name is Zoe. She is tall and sporty, and she is always cheerful. She has long blond hair, which she usually wears in a ponytail. Teacher: What is she like as a person? Sophie: She is very kind and funny, but sometimes she is a bit shy with new people. We have been friends for six years, and we love playing tennis together.\""
+  }
+ ],
+ "oe": [
+  {
+   "bron": "Examenstijl",
+   "ctx": "A lost-property officer in a train station asks you to describe the bag that you lost on the train. It is a green sports bag, quite big, with a white stripe on the side and a small black label with your name. You forgot it on the seat.",
+   "v": "Write three sentences in English that describe the bag.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "It is a green sports bag (1p). It is quite big with a white stripe on the side (1p). It has a small black label with my name (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "You are at the airport and you are waiting for your cousin, who you have not seen for years. You send her a message in which you describe yourself, so that she can find you in the crowd. You are tall, you have short dark hair and glasses.",
+   "v": "Write three sentences in English in which you describe what you look like and what you wear.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "I am tall (1p). I have short dark hair and glasses (1p). I am wearing (kleding, bijvoorbeeld a blue jacket) (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Your English teacher asks you to describe your best friend to a new pupil. Your friend is sporty and funny, but a bit shy at first, and she loves music and drawing.",
+   "v": "Write three sentences in English that describe your friend's character.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "She is sporty and funny (1p). She is a bit shy at first (1p). She loves music and drawing (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "You are describing your bedroom in a letter to your pen friend. It is on the second floor, it is small but cosy, and there is a window with a view of the garden.",
+   "v": "Write three sentences in English that describe the room and where it is.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "My bedroom is on the second floor (1p). It is small but cosy (1p). There is a window with a view of the garden (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Your classmate says: \"I only say that my friend is nice. That is enough to describe him.\" You do not agree.",
+   "v": "Write two sentences in English that explain why a good description needs more details, with an example.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Nice is te algemeen (1p). Een voorbeeld: tall, curly hair, kind (1p). Een duidelijke uitleg (1p)."
+  }
+ ]
+}

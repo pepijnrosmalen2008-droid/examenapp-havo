@@ -5,7 +5,7 @@
 Volledige beschrijving (functies, inhoud per niveau, prijs, wat Slagio niet is): https://slagio.nl/llms-full.txt
 
 ## In het kort
-- 12 vakken havo, 16 vakken vwo, 12 vakken vmbo; 26.701 oefenvragen en 4.346 begrippen.
+- 12 vakken havo, 16 vakken vwo, 12 vakken vmbo; 26.728 oefenvragen en 4.346 begrippen.
 - Adaptief oefenen: na een fout een vraag over hetzelfde onderwerp, een niveau makkelijker; uitleg bij elk fout antwoord.
 - Foutenboek en herhalen met gespreide herhaling, beheersing per leerdoel, studieplan tot het examen.
 - Examens met klok, proefexamens in examenstijl met modelantwoord en puntenverdeling, archief met officiële oude examens.
@@ -262,6 +262,7 @@ Volledige beschrijving (functies, inhoud per niveau, prijs, wat Slagio niet is):
 - [Reageren in sociale situaties: begroeten, bedanken, excuses en uitnodigen (Engels VMBO)](https://slagio.nl/leren/vmbo/engels/reageren-in-sociale-situaties-begroeten-bedanken-excuses-en-uitnodigen.html): Je leert in het Engels passend te reageren in sociale situaties: je begroet en maakt kennis, bedankt en maakt excuses, nodigt uit en accepteert of weigert…
 - [Informatie vragen en geven (Engels VMBO)](https://slagio.nl/leren/vmbo/engels/informatie-vragen-en-geven.html): Je leert in het Engels informatie te vragen en te geven: je gebruikt vraagwoorden als what, where en how much, vraagt beleefd naar de weg, tijd en prijs,…
 - [Gevoelens uitdrukken (Engels VMBO)](https://slagio.nl/leren/vmbo/engels/gevoelens-uitdrukken.html): Je leert in het Engels gevoelens uit te drukken en erop te reageren: je gebruikt gevoelswoorden als happy, nervous en disappointed, versterkt of zwakt gevoel…
+- [Personen en dingen beschrijven (Engels VMBO)](https://slagio.nl/leren/vmbo/engels/personen-en-dingen-beschrijven.html): Je leert in het Engels personen, kleding en plaatsen te beschrijven: je noemt uiterlijk, haar, kleding en karakter, gebruikt bijvoeglijke naamwoorden in de…
 
 ## Examenvragen in examenstijl (met modelantwoord en puntenverdeling)
 - [Examenvragen Nederlands HAVO](https://slagio.nl/leren/havo/nederlands/examenvragen.html): 11 vragen uit een Slagio-proefexamen
