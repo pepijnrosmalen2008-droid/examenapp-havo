@@ -982,7 +982,30 @@ var VAKKEN_VMBO = [
     "nSv": 30,
     "nOe": 0,
     "nBeg": 10,
-    "hasSam": true
+    "hasSam": true,
+    "leerdoelen": [
+     {
+      "id": "C1",
+      "lo": "en.C.1",
+      "gs": 2,
+      "naam": "Reageren in sociale situaties: begroeten, bedanken, excuses en uitnodigen",
+      "beschrijving": "Je leert in het Engels passend te reageren in sociale situaties: je begroet en maakt kennis, bedankt en maakt excuses, nodigt uit en accepteert of weigert beleefd en kiest formeel of informeel taalgebruik.",
+      "ceStatus": "SE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Begroeten en kennismaken",
+       "Bedanken en reageren",
+       "Excuses en reactie",
+       "Uitnodigen, accepteren en weigeren",
+       "Formeel en informeel"
+      ],
+      "nSv": 27,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
+     }
+    ]
    },
    {
     "id": "D",

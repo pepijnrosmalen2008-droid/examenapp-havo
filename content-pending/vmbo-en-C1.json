@@ -1,0 +1,682 @@
+{
+ "id": "C1",
+ "lo": "en.C.1",
+ "gs": 2,
+ "naam": "Reageren in sociale situaties: begroeten, bedanken, excuses en uitnodigen",
+ "beschrijving": "Je leert in het Engels passend te reageren in sociale situaties: je begroet en maakt kennis, bedankt en maakt excuses, nodigt uit en accepteert of weigert beleefd en kiest formeel of informeel taalgebruik.",
+ "ceStatus": "SE",
+ "binas": "",
+ "val": "",
+ "onderwerpen": [
+  "Begroeten en kennismaken",
+  "Bedanken en reageren",
+  "Excuses en reactie",
+  "Uitnodigen, accepteren en weigeren",
+  "Formeel en informeel"
+ ],
+ "sam": "In een gesprek begin je met een begroeting zoals good morning en nice to meet you. Je beantwoordt een bedankje met you are welcome en excuses met that is okay. Je kunt een uitnodiging beleefd accepteren met I would love to of weigeren met I would love to, but I cannot. Kies formeel of informeel taalgebruik naar de persoon.",
+ "begrippen": [
+  {
+   "t": "Begroeting",
+   "d": "Een zin waarmee je iemand tegemoet treedt, zoals good morning."
+  },
+  {
+   "t": "Kennismaken",
+   "d": "Voor het eerst kennismaken met iemand, bijvoorbeeld met nice to meet you."
+  },
+  {
+   "t": "Bedankje",
+   "d": "Thank you; je antwoordt met you are welcome."
+  },
+  {
+   "t": "Excuses",
+   "d": "I am sorry; je antwoordt met that is okay of do not worry."
+  },
+  {
+   "t": "Uitnodiging",
+   "d": "Een vraag om ergens naartoe te komen, zoals would you like to come?"
+  },
+  {
+   "t": "Accepteren",
+   "d": "Ja zeggen op een uitnodiging, bijvoorbeeld met I would love to."
+  },
+  {
+   "t": "Weigeren",
+   "d": "Beleefd nee zeggen, bijvoorbeeld met I would love to, but I cannot."
+  },
+  {
+   "t": "Beleefd",
+   "d": "Vriendelijk en netjes spreken, bijvoorbeeld met please en would you like."
+  },
+  {
+   "t": "Formeel",
+   "d": "Netjes taalgebruik tegen een volwassene of onbekende, zoals Mr Smith."
+  },
+  {
+   "t": "Informeel",
+   "d": "Los taalgebruik tegen een vriend, zoals hi en mate."
+  },
+  {
+   "t": "Reactie",
+   "d": "Het antwoord van de ander op wat iemand net zei."
+  },
+  {
+   "t": "Register",
+   "d": "De mate van netheid van je taal: formeel of informeel."
+  }
+ ],
+ "sv": [
+  {
+   "v": "Je ontmoet iemand voor het eerst. Welke zin past?",
+   "o": [
+    "\"See you later.\"",
+    "\"Nice to meet you.\"",
+    "\"You are welcome, I think.\"",
+    "\"Happy birthday!\""
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 0,
+   "u": "Kies de zin die bij de situatie past. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"See you later.\"\"? Dan denk je dat dit een kennismaking is. Het is een afscheid, en past dus niet bij een eerste ontmoeting.",
+    "Klopt: nice to meet you zeg je bij een kennismaking met iemand nieuw.",
+    "Koos je \"\"You are welcome, I think.\"\"? Dan denk je dat dit een groet is. Het is het antwoord op een bedankje, en niemand heeft je net bedankt.",
+    "Koos je \"\"Happy birthday!\"\"? Dan denk je dat dit een kennismaking is. Het is een felicitatie, en hoort bij een verjaardag."
+   ],
+   "uh": "Je ontmoet iemand voor het eerst. Welke zin past?"
+  },
+  {
+   "v": "Welke begroeting gebruik je 's ochtends op school?",
+   "o": [
+    "\"Good night.\"",
+    "\"Good evening, volgens mij.\"",
+    "\"Goodbye.\"",
+    "\"Good morning.\""
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 0,
+   "u": "Kies de zin die bij de situatie past. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"Good night.\"\"? Dan denk je dat dit een ochtendgroet is. Het zeg je voor het slapen, en niet bij het begin van de dag.",
+    "Koos je \"\"Good evening, volgens mij.\"\"? Dan denk je dat dit past op school. Het is een avondgroet, en je zegt het pas na zes uur.",
+    "Koos je \"\"Goodbye.\"\"? Dan denk je dat dit een begroeting is. Het is een afscheid, en je zegt het aan het eind.",
+    "Klopt: good morning is de begroeting voor het begin van de dag."
+   ],
+   "uh": "Welke begroeting gebruik je 's ochtends op school?"
+  },
+  {
+   "v": "Iemand zegt: 'Thank you for your help.' Welk antwoord past?",
+   "o": [
+    "\"You are welcome.\"",
+    "\"Nice to meet you, I suppose.\"",
+    "\"I am sorry.\"",
+    "\"Good luck.\""
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 1,
+   "u": "Kies de zin die bij de situatie past. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: you are welcome is het vaste antwoord op een bedankje.",
+    "Koos je \"\"Nice to meet you, I suppose.\"\"? Dan denk je dat een kennismaking past. Er is net geholpen, en je reageert op een bedankje.",
+    "Koos je \"\"I am sorry.\"\"? Dan denk je dat je excuses moet maken. Je hebt niets fout gedaan, dus dit is een vreemd antwoord.",
+    "Koos je \"\"Good luck.\"\"? Dan denk je dat een wens past. Dit zeg je voor een toets, en niet na een bedankje."
+   ],
+   "uh": "Iemand zegt: 'Thank you for your help.' Welk antwoord past?"
+  },
+  {
+   "v": "Je botst per ongeluk tegen iemand aan. Wat zeg je?",
+   "o": [
+    "\"You are welcome.\"",
+    "\"Nice to meet you.\"",
+    "\"Oh, I am sorry.\"",
+    "\"Happy birthday!\""
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 2,
+   "u": "Kies de zin die bij de situatie past. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"You are welcome.\"\"? Dan denk je dat dit past. Het is een reactie op een bedankje, en je bedankt niemand.",
+    "Koos je \"\"Nice to meet you.\"\"? Dan denk je dat een kennismaking past. Je kent de persoon niet en hebt iets verkeerd gedaan, dus je maakt excuses.",
+    "Klopt: I am sorry is een beleefde manier om excuses aan te bieden.",
+    "Koos je \"\"Happy birthday!\"\"? Dan denk je dat een felicitatie past. Dit hoort bij een verjaardag, en niet bij een ongelukje."
+   ],
+   "uh": "Je botst per ongeluk tegen iemand aan. Wat zeg je?"
+  },
+  {
+   "v": "Iemand zegt: 'I am sorry I am late.' Welk antwoord past?",
+   "o": [
+    "\"You are welcome.\"",
+    "\"That is okay, do not worry.\"",
+    "\"Yes, you are very late.\"",
+    "\"Good morning, nice to meet you.\""
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 2,
+   "u": "Kies de zin die bij de situatie past. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"You are welcome.\"\"? Dan denk je dat dit het goede antwoord is. Dit is het antwoord op thank you, en niet op sorry.",
+    "Klopt: bij excuses stel je de ander gerust met that is okay.",
+    "Koos je \"\"Yes, you are very late.\"\"? Dan denk je dat eerlijk antwoorden goed is. Het klinkt onbeleefd, en past niet bij excuses.",
+    "Koos je \"\"Good morning, nice to meet you.\"\"? Dan denk je dat een groet past. De ander maakt excuses, en je reageert daarop."
+   ],
+   "uh": "Iemand zegt: 'I am sorry I am late.' Welk antwoord past?"
+  },
+  {
+   "v": "Je wilt een vriend uitnodigen voor je feest. Welke zin past?",
+   "o": [
+    "\"Do you know the way to the party, I think?\"",
+    "\"What time is it?\"",
+    "\"Thank you for the party.\"",
+    "\"Would you like to come to my party?\""
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 3,
+   "u": "Kies de zin die bij de situatie past. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"Do you know the way to the party, I think?\"\"? Dan denk je dat dit een uitnodiging is. Het vraagt naar de route, en nodigt niemand uit.",
+    "Koos je \"\"What time is it?\"\"? Dan denk je dat dit een uitnodiging is. Het vraagt alleen naar de tijd, en nodigt niemand uit.",
+    "Koos je \"\"Thank you for the party.\"\"? Dan denk je dat dit een uitnodiging is. Het is een bedankje voor een feest dat al geweest is, en dus geen uitnodiging.",
+    "Klopt: would you like to is een beleefde vorm voor een uitnodiging."
+   ],
+   "uh": "Je wilt een vriend uitnodigen voor je feest. Welke zin past?"
+  },
+  {
+   "v": "Je praat met je directeur. Welke zin is passend?",
+   "o": [
+    "\"Good morning, Mr Smith. How are you?\"",
+    "\"Hey, mate, what is up, to be honest, you know?\"",
+    "\"Yo, Smith!\"",
+    "\"Hi there, buddy!\""
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 4,
+   "u": "Kies de zin die bij de situatie past. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: bij een directeur gebruik je een nette begroeting met zijn naam.",
+    "Koos je \"\"Hey, mate, what is up, to be honest, you know?\"\"? Dan denk je dat een vriendelijke straattaal past. Dit is informeel, en bij een directeur gebruik je netter taalgebruik.",
+    "Koos je \"\"Yo, Smith!\"\"? Dan denk je dat een korte groet past. Dit is te los, en klinkt respectloos.",
+    "Koos je \"\"Hi there, buddy!\"\"? Dan denk je dat buddy past. Dit zeg je tegen een vriend, en niet tegen een directeur."
+   ],
+   "uh": "Je praat met je directeur. Welke zin is passend?"
+  },
+  {
+   "v": "How does Anna react to the present?",
+   "o": [
+    "\"she refuses it\"",
+    "\"she is angry\"",
+    "\"she thanks Jake warmly\"",
+    "\"she says nothing, I suppose\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 1,
+   "u": "Kies de zin die bij de situatie past. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"she refuses it\"\"? Dan denk je dat Anna het cadeau weigert. Ze zegt that is so kind of you, dus ze neemt het blij aan.",
+    "Koos je \"\"she is angry\"\"? Dan denk je dat Anna boos is. Ze bedankt hem en lijkt blij, dus er is geen boosheid.",
+    "Klopt: ze zegt dat het erg aardig is en bedankt hem hartelijk.",
+    "Koos je \"\"she says nothing, I suppose\"\"? Dan denk je dat ze niets zegt. Ze reageert direct met thank you very much, dus ze zwijgt niet."
+   ],
+   "uh": "How does Anna react to the present?",
+   "ctx": "You hear a conversation at a party (read the transcript): \"Anna: Hi, Jake! Thanks for coming to my birthday party. Jake: Happy birthday, Anna! This is a present for you. Anna: Oh, that is so kind of you. Thank you very much! Jake: You are welcome. I hope you like it. Anna: I am sure I will. Would you like something to drink? Jake: Yes, please. Some orange juice, if you have it. Anna: Of course. Oh, I am sorry, I have just spilled some on your shirt! Jake: Do not worry, it does not matter. It will dry quickly.\""
+  },
+  {
+   "v": "What does Jake say after 'Thank you very much'?",
+   "o": [
+    "\"Nice to meet you, you know.\"",
+    "\"You are welcome.\"",
+    "\"I am sorry.\"",
+    "\"Good morning.\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 1,
+   "u": "Kies de zin die bij de situatie past. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"Nice to meet you, you know.\"\"? Dan denk je dat jake zich voorstelt. Ze kennen elkaar al, dus dit zegt hij niet.",
+    "Klopt: jake gebruikt het vaste antwoord op een bedankje.",
+    "Koos je \"\"I am sorry.\"\"? Dan denk je dat jake excuses maakt. Hij bedankt of bevestigt alleen, en maakt geen excuses.",
+    "Koos je \"\"Good morning.\"\"? Dan denk je dat jake groet. Ze hebben elkaar al begroet, dus dit komt niet nog eens."
+   ],
+   "uh": "What does Jake say after 'Thank you very much'?",
+   "ctx": "You hear a conversation at a party (read the transcript): \"Anna: Hi, Jake! Thanks for coming to my birthday party. Jake: Happy birthday, Anna! This is a present for you. Anna: Oh, that is so kind of you. Thank you very much! Jake: You are welcome. I hope you like it. Anna: I am sure I will. Would you like something to drink? Jake: Yes, please. Some orange juice, if you have it. Anna: Of course. Oh, I am sorry, I have just spilled some on your shirt! Jake: Do not worry, it does not matter. It will dry quickly.\""
+  },
+  {
+   "v": "Why does Anna say 'I am sorry'?",
+   "o": [
+    "\"she forgot his present\"",
+    "\"she is late for the party, really, to be honest\"",
+    "\"she has no orange juice\"",
+    "\"she spilled juice on Jake's shirt\""
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 2,
+   "u": "Kies de zin die bij de situatie past. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"she forgot his present\"\"? Dan denk je dat Anna zijn cadeau vergat. Hij gaf juist een cadeau, dus dat klopt niet.",
+    "Koos je \"\"she is late for the party, really, to be honest\"\"? Dan denk je dat Anna te laat is. Het is haar eigen feest, dus ze is er al.",
+    "Koos je \"\"she has no orange juice\"\"? Dan denk je dat er geen sinaasappelsap is. Ze heeft juist sap gemorst, dus er is wel sap.",
+    "Klopt: ze zegt dat ze net sap op zijn shirt heeft gemorst."
+   ],
+   "uh": "Why does Anna say 'I am sorry'?",
+   "ctx": "You hear a conversation at a party (read the transcript): \"Anna: Hi, Jake! Thanks for coming to my birthday party. Jake: Happy birthday, Anna! This is a present for you. Anna: Oh, that is so kind of you. Thank you very much! Jake: You are welcome. I hope you like it. Anna: I am sure I will. Would you like something to drink? Jake: Yes, please. Some orange juice, if you have it. Anna: Of course. Oh, I am sorry, I have just spilled some on your shirt! Jake: Do not worry, it does not matter. It will dry quickly.\""
+  },
+  {
+   "v": "How does Jake react to the accident?",
+   "o": [
+    "\"he says it does not matter\"",
+    "\"he gets angry\"",
+    "\"he leaves the party\"",
+    "\"he asks for a new shirt, I think\""
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 2,
+   "u": "Kies de zin die bij de situatie past. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: hij zegt do not worry en stelt haar gerust.",
+    "Koos je \"\"he gets angry\"\"? Dan denk je dat Jake boos wordt. Hij zegt it does not matter, dus hij blijft vriendelijk.",
+    "Koos je \"\"he leaves the party\"\"? Dan denk je dat Jake weggaat. Hij blijft juist praten, dus dat klopt niet.",
+    "Koos je \"\"he asks for a new shirt, I think\"\"? Dan denk je dat Jake een nieuw shirt wil. Hij zegt dat het snel droogt, dus hij vraagt niets."
+   ],
+   "uh": "How does Jake react to the accident?",
+   "ctx": "You hear a conversation at a party (read the transcript): \"Anna: Hi, Jake! Thanks for coming to my birthday party. Jake: Happy birthday, Anna! This is a present for you. Anna: Oh, that is so kind of you. Thank you very much! Jake: You are welcome. I hope you like it. Anna: I am sure I will. Would you like something to drink? Jake: Yes, please. Some orange juice, if you have it. Anna: Of course. Oh, I am sorry, I have just spilled some on your shirt! Jake: Do not worry, it does not matter. It will dry quickly.\""
+  },
+  {
+   "v": "What does Sam ask Mia?",
+   "o": [
+    "\"if she can lend him money\"",
+    "\"if she knows the way to the park, to be honest\"",
+    "\"if she wants to go to a concert with him\"",
+    "\"if she has two tickets\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 3,
+   "u": "Kies de zin die bij de situatie past. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"if she can lend him money\"\"? Dan denk je dat hij geld vraagt. Hij heeft al kaartjes, dus hij vraagt geen geld.",
+    "Koos je \"\"if she knows the way to the park, to be honest\"\"? Dan denk je dat hij naar de route vraagt. Hij nodigt haar uit, en vraagt niet naar de weg.",
+    "Klopt: hij vraagt of ze met hem naar het concert wil.",
+    "Koos je \"\"if she has two tickets\"\"? Dan denk je dat zij de kaartjes heeft. Sam heeft de kaartjes, dus hij vraagt iets anders."
+   ],
+   "uh": "What does Sam ask Mia?",
+   "ctx": "You hear two friends talking (read the transcript): \"Sam: Hello, Mia. Are you free on Saturday evening? Mia: I think so. Why do you ask? Sam: There is a concert in the park, and I have two tickets. Would you like to come with me? Mia: That sounds great, but I have to ask my parents first. Sam: No problem. Could you text me tonight? Mia: Sure. I will let you know as soon as I can. Sam: Great. Then I will pick you up at seven if it is okay. Mia: Perfect. Thanks for inviting me!\""
+  },
+  {
+   "v": "How does Mia react to the invitation?",
+   "o": [
+    "\"she refuses at once\"",
+    "\"she likes the idea but must ask her parents\"",
+    "\"she accepts without any condition, I suppose, really\"",
+    "\"she gets angry\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 3,
+   "u": "Kies de zin die bij de situatie past. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"she refuses at once\"\"? Dan denk je dat Mia meteen weigert. Ze zegt dat het geweldig klinkt, dus ze wil wel.",
+    "Klopt: ze zegt that sounds great, but ze moet eerst vragen.",
+    "Koos je \"\"she accepts without any condition, I suppose, really\"\"? Dan denk je dat ze direct ja zegt. Ze moet eerst haar ouders vragen, dus er is een voorwaarde.",
+    "Koos je \"\"she gets angry\"\"? Dan denk je dat Mia boos wordt. Ze reageert enthousiast, dus er is geen boosheid."
+   ],
+   "uh": "How does Mia react to the invitation?",
+   "ctx": "You hear two friends talking (read the transcript): \"Sam: Hello, Mia. Are you free on Saturday evening? Mia: I think so. Why do you ask? Sam: There is a concert in the park, and I have two tickets. Would you like to come with me? Mia: That sounds great, but I have to ask my parents first. Sam: No problem. Could you text me tonight? Mia: Sure. I will let you know as soon as I can. Sam: Great. Then I will pick you up at seven if it is okay. Mia: Perfect. Thanks for inviting me!\""
+  },
+  {
+   "v": "What time will Sam pick Mia up, if her parents agree?",
+   "o": [
+    "\"at six\"",
+    "\"at eight\"",
+    "\"at half past seven\"",
+    "\"at seven\""
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 3,
+   "u": "Kies de zin die bij de situatie past. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"at six\"\"? Dan denk je dat het zes uur is. Zes wordt niet genoemd, dus je verzint een tijd.",
+    "Koos je \"\"at eight\"\"? Dan denk je dat het acht uur is. De tekst noemt zeven, dus acht klopt niet.",
+    "Koos je \"\"at half past seven\"\"? Dan denk je dat het half acht is. Er staat seven, dus precies zeven uur.",
+    "Klopt: sam zegt dat hij haar om zeven uur ophaalt als het goed is."
+   ],
+   "uh": "What time will Sam pick Mia up, if her parents agree?",
+   "ctx": "You hear two friends talking (read the transcript): \"Sam: Hello, Mia. Are you free on Saturday evening? Mia: I think so. Why do you ask? Sam: There is a concert in the park, and I have two tickets. Would you like to come with me? Mia: That sounds great, but I have to ask my parents first. Sam: No problem. Could you text me tonight? Mia: Sure. I will let you know as soon as I can. Sam: Great. Then I will pick you up at seven if it is okay. Mia: Perfect. Thanks for inviting me!\""
+  },
+  {
+   "v": "What does Lucas say to welcome Emma?",
+   "o": [
+    "\"Welcome to our class!\"",
+    "\"See you tomorrow!\"",
+    "\"Good night, Emma.\"",
+    "\"Thank you for coming, really.\""
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 0,
+   "u": "Kies de zin die bij de situatie past. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: lucas begroet Emma met welcome to our class.",
+    "Koos je \"\"See you tomorrow!\"\"? Dan denk je dat dit een welkom is. Het is een afscheid, en Emma komt net binnen.",
+    "Koos je \"\"Good night, Emma.\"\"? Dan denk je dat dit een groet is. Het is een avondgroet, en het gesprek is op school overdag.",
+    "Koos je \"\"Thank you for coming, really.\"\"? Dan denk je dat dit past. Het is een bedankje voor bezoek, en Emma is een nieuwe leerling."
+   ],
+   "uh": "What does Lucas say to welcome Emma?",
+   "ctx": "You hear a conversation at school (read the transcript): \"Teacher: Good morning, everybody. This is Emma, our new classmate. Emma: Hello. Nice to meet you all. Lucas: Hi, Emma. Welcome to our class! Where do you come from? Emma: I come from Manchester, but I live here now. Lucas: Oh, that is far away. How are you finding your new school? Emma: It is fine so far, although I still get lost in the building. Lucas: Do not worry, I will show you around at break. Emma: That is really kind. Thank you.\""
+  },
+  {
+   "v": "Where does Emma come from?",
+   "o": [
+    "\"London\"",
+    "\"Leeds\"",
+    "\"Manchester\"",
+    "\"the school, I think\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 0,
+   "u": "Kies de zin die bij de situatie past. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"London\"\"? Dan denk je dat Emma uit Londen komt. Dat staat niet in de tekst, dus je verzint iets.",
+    "Koos je \"\"Leeds\"\"? Dan denk je dat Emma uit Leeds komt. Dat wordt niet genoemd, en past niet bij de tekst.",
+    "Klopt: emma zegt I come from Manchester, dus ze komt uit Manchester.",
+    "Koos je \"\"the school, I think\"\"? Dan denk je dat de school haar herkomst is. De school is haar nieuwe plek, en niet waar ze vandaan komt."
+   ],
+   "uh": "Where does Emma come from?",
+   "ctx": "You hear a conversation at school (read the transcript): \"Teacher: Good morning, everybody. This is Emma, our new classmate. Emma: Hello. Nice to meet you all. Lucas: Hi, Emma. Welcome to our class! Where do you come from? Emma: I come from Manchester, but I live here now. Lucas: Oh, that is far away. How are you finding your new school? Emma: It is fine so far, although I still get lost in the building. Lucas: Do not worry, I will show you around at break. Emma: That is really kind. Thank you.\""
+  },
+  {
+   "v": "How does Emma react to Lucas's offer to show her around?",
+   "o": [
+    "\"she refuses\"",
+    "\"she thanks him\"",
+    "\"she asks for a map\"",
+    "\"she says sorry\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 1,
+   "u": "Kies de zin die bij de situatie past. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"she refuses\"\"? Dan denk je dat Emma weigert. Ze zegt that is really kind, dus ze is blij.",
+    "Klopt: ze zegt dat het aardig is en bedankt hem.",
+    "Koos je \"\"she asks for a map\"\"? Dan denk je dat Emma een plattegrond wil. Ze neemt het hulpaanbod aan, en vraagt niet om een kaart.",
+    "Koos je \"\"she says sorry\"\"? Dan denk je dat Emma excuses maakt. Ze heeft niets fout gedaan, dus dat past niet."
+   ],
+   "uh": "How does Emma react to Lucas's offer to show her around?",
+   "ctx": "You hear a conversation at school (read the transcript): \"Teacher: Good morning, everybody. This is Emma, our new classmate. Emma: Hello. Nice to meet you all. Lucas: Hi, Emma. Welcome to our class! Where do you come from? Emma: I come from Manchester, but I live here now. Lucas: Oh, that is far away. How are you finding your new school? Emma: It is fine so far, although I still get lost in the building. Lucas: Do not worry, I will show you around at break. Emma: That is really kind. Thank you.\""
+  },
+  {
+   "v": "Anna says: 'Oh, that is so kind of you.' What does this show?",
+   "o": [
+    "\"that she is angry\"",
+    "\"that she does not like the present\"",
+    "\"that she wants Jake to leave\"",
+    "\"that she is very grateful\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 1,
+   "u": "Kies de zin die bij de situatie past. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"that she is angry\"\"? Dan denk je dat de zin boos is. De woorden kind en thank you zijn vriendelijk, dus ze is niet boos.",
+    "Koos je \"\"that she does not like the present\"\"? Dan denk je dat ze het cadeau niet mooi vindt. Ze bedankt hartelijk, dus ze is blij.",
+    "Koos je \"\"that she wants Jake to leave\"\"? Dan denk je dat ze hem wegstuurt. Ze biedt hem later iets te drinken aan, dus ze wil dat hij blijft.",
+    "Klopt: so kind of you is een warme manier om dankbaarheid te tonen."
+   ],
+   "uh": "Anna says: 'Oh, that is so kind of you.' What does this show?",
+   "ctx": "You hear a conversation at a party (read the transcript): \"Anna: Hi, Jake! Thanks for coming to my birthday party. Jake: Happy birthday, Anna! This is a present for you. Anna: Oh, that is so kind of you. Thank you very much! Jake: You are welcome. I hope you like it. Anna: I am sure I will. Would you like something to drink? Jake: Yes, please. Some orange juice, if you have it. Anna: Of course. Oh, I am sorry, I have just spilled some on your shirt! Jake: Do not worry, it does not matter. It will dry quickly.\""
+  },
+  {
+   "v": "What is the best reaction to 'I am sorry, I have just spilled some on your shirt'?",
+   "o": [
+    "\"Do not worry, it does not matter.\"",
+    "\"You are welcome.\"",
+    "\"Yes, you must buy me a new one, you know.\"",
+    "\"That is a lot of money.\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 2,
+   "u": "Kies de zin die bij de situatie past. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: do not worry stelt de ander gerust na een ongelukje.",
+    "Koos je \"\"You are welcome.\"\"? Dan denk je dat dit past. Het is een antwoord op een bedankje, en hier gaat het om excuses.",
+    "Koos je \"\"Yes, you must buy me a new one, you know.\"\"? Dan denk je dat een eis past. Een vriendelijke reactie ontbreekt, en het klinkt boos.",
+    "Koos je \"\"That is a lot of money.\"\"? Dan denk je dat dit past. Het gaat niet over geld, dus de reactie klopt niet."
+   ],
+   "uh": "What is the best reaction to 'I am sorry, I have just spilled some on your shirt'?",
+   "ctx": "You hear a conversation at a party (read the transcript): \"Anna: Hi, Jake! Thanks for coming to my birthday party. Jake: Happy birthday, Anna! This is a present for you. Anna: Oh, that is so kind of you. Thank you very much! Jake: You are welcome. I hope you like it. Anna: I am sure I will. Would you like something to drink? Jake: Yes, please. Some orange juice, if you have it. Anna: Of course. Oh, I am sorry, I have just spilled some on your shirt! Jake: Do not worry, it does not matter. It will dry quickly.\""
+  },
+  {
+   "v": "Jake says 'I hope you like it.' What is he doing?",
+   "o": [
+    "\"complaining about the party, really\"",
+    "\"asking for juice\"",
+    "\"being polite about his present\"",
+    "\"saying goodbye\""
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 1,
+   "u": "Kies de zin die bij de situatie past. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"complaining about the party, really\"\"? Dan denk je dat hij klaagt. Zijn woorden zijn vriendelijk, dus hij klaagt niet.",
+    "Koos je \"\"asking for juice\"\"? Dan denk je dat hij om drinken vraagt. Dat doet hij pas later, en niet met deze zin.",
+    "Klopt: hij hoopt dat ze het leuk vindt en is zo beleefd over zijn cadeau.",
+    "Koos je \"\"saying goodbye\"\"? Dan denk je dat hij afscheid neemt. Het feest begint net, dus hij is niet aan het vertrekken."
+   ],
+   "uh": "Jake says 'I hope you like it.' What is he doing?",
+   "ctx": "You hear a conversation at a party (read the transcript): \"Anna: Hi, Jake! Thanks for coming to my birthday party. Jake: Happy birthday, Anna! This is a present for you. Anna: Oh, that is so kind of you. Thank you very much! Jake: You are welcome. I hope you like it. Anna: I am sure I will. Would you like something to drink? Jake: Yes, please. Some orange juice, if you have it. Anna: Of course. Oh, I am sorry, I have just spilled some on your shirt! Jake: Do not worry, it does not matter. It will dry quickly.\""
+  },
+  {
+   "v": "Mia says 'That sounds great, but...' What does 'but' show?",
+   "o": [
+    "\"she changes the subject, I think, I suppose, really\"",
+    "\"she likes the idea, but there is a problem\"",
+    "\"she refuses\"",
+    "\"she asks a question\""
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 3,
+   "u": "Kies de zin die bij de situatie past. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"she changes the subject, I think, I suppose, really\"\"? Dan denk je dat ze van onderwerp wisselt. Ze blijft bij de uitnodiging, en noemt een voorwaarde.",
+    "Klopt: na but volgt een bezwaar; ze wil wel, maar ze moet het eerst vragen.",
+    "Koos je \"\"she refuses\"\"? Dan denk je dat ze weigert. Ze zegt dat het geweldig klinkt, en wil wel komen.",
+    "Koos je \"\"she asks a question\"\"? Dan denk je dat but een vraag inleidt. Het leidt een bezwaar in, en ze vraagt niets."
+   ],
+   "uh": "Mia says 'That sounds great, but...' What does 'but' show?",
+   "ctx": "You hear two friends talking (read the transcript): \"Sam: Hello, Mia. Are you free on Saturday evening? Mia: I think so. Why do you ask? Sam: There is a concert in the park, and I have two tickets. Would you like to come with me? Mia: That sounds great, but I have to ask my parents first. Sam: No problem. Could you text me tonight? Mia: Sure. I will let you know as soon as I can. Sam: Great. Then I will pick you up at seven if it is okay. Mia: Perfect. Thanks for inviting me!\""
+  },
+  {
+   "v": "Which word shows that Mia likes the idea of the concert?",
+   "o": [
+    "\"parents\"",
+    "\"first\"",
+    "\"evening\"",
+    "\"great\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 3,
+   "u": "Kies de zin die bij de situatie past. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"parents\"\"? Dan kies je het woord dat het bezwaar noemt. Haar ouders zijn de reden voor een voorwaarde, en geen teken van enthousiasme.",
+    "Koos je \"\"first\"\"? Dan kies je een ordeningswoord. First regelt de volgorde van haar stappen, en laat geen waardering horen.",
+    "Koos je \"\"evening\"\"? Dan pak je een tijdsaanduiding. Evening noemt het moment van het concert, en zegt niets over wat ze ervan vindt.",
+    "Klopt: that sounds great laat horen dat ze het een goed idee vindt."
+   ],
+   "uh": "Which word shows that Mia likes the idea of the concert?",
+   "ctx": "You hear two friends talking (read the transcript): \"Sam: Hello, Mia. Are you free on Saturday evening? Mia: I think so. Why do you ask? Sam: There is a concert in the park, and I have two tickets. Would you like to come with me? Mia: That sounds great, but I have to ask my parents first. Sam: No problem. Could you text me tonight? Mia: Sure. I will let you know as soon as I can. Sam: Great. Then I will pick you up at seven if it is okay. Mia: Perfect. Thanks for inviting me!\""
+  },
+  {
+   "v": "Which reply is a polite way to refuse the invitation?",
+   "o": [
+    "\"I would love to, but I am afraid I cannot.\"",
+    "\"No.\"",
+    "\"I do not want to, I suppose, really, to be honest.\"",
+    "\"That is boring.\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 3,
+   "u": "Kies de zin die bij de situatie past. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: je bedankt en geeft aan dat het helaas niet kan, zodat de ander zich niet gekwetst voelt.",
+    "Koos je \"\"No.\"\"? Dan denk je dat een kort nee voldoende is. Het is te kaal, en klinkt onbeleefd.",
+    "Koos je \"\"I do not want to, I suppose, really, to be honest.\"\"? Dan denk je dat eerlijk zijn goed is. Het klinkt bot, en is niet beleefd.",
+    "Koos je \"\"That is boring.\"\"? Dan denk je dat een mening goed is. Het beledigt de ander, en is geen beleefde weigering."
+   ],
+   "uh": "Which reply is a polite way to refuse the invitation?",
+   "ctx": "You hear two friends talking (read the transcript): \"Sam: Hello, Mia. Are you free on Saturday evening? Mia: I think so. Why do you ask? Sam: There is a concert in the park, and I have two tickets. Would you like to come with me? Mia: That sounds great, but I have to ask my parents first. Sam: No problem. Could you text me tonight? Mia: Sure. I will let you know as soon as I can. Sam: Great. Then I will pick you up at seven if it is okay. Mia: Perfect. Thanks for inviting me!\""
+  },
+  {
+   "v": "How does Emma introduce herself?",
+   "o": [
+    "\"she says good night to everybody\"",
+    "\"she says see you later to everybody\"",
+    "\"she says hello and that it is nice to meet everybody\"",
+    "\"she thanks everybody for the present, you know, I think\""
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 0,
+   "u": "Kies de zin die bij de situatie past. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"she says good night to everybody\"\"? Dan denk je dat ze goedenacht zegt. Dat zeg je voor het slapen, en niet bij een kennismaking.",
+    "Koos je \"\"she says see you later to everybody\"\"? Dan denk je dat ze afscheid neemt. Ze is net binnengekomen, dus dat past niet.",
+    "Klopt: ze zegt hello en nice to meet you all, een beleefde kennismaking.",
+    "Koos je \"\"she thanks everybody for the present, you know, I think\"\"? Dan denk je dat ze een cadeau krijgt. Er wordt geen cadeau genoemd, dus je verzint iets."
+   ],
+   "uh": "How does Emma introduce herself?",
+   "ctx": "You hear a conversation at school (read the transcript): \"Teacher: Good morning, everybody. This is Emma, our new classmate. Emma: Hello. Nice to meet you all. Lucas: Hi, Emma. Welcome to our class! Where do you come from? Emma: I come from Manchester, but I live here now. Lucas: Oh, that is far away. How are you finding your new school? Emma: It is fine so far, although I still get lost in the building. Lucas: Do not worry, I will show you around at break. Emma: That is really kind. Thank you.\""
+  },
+  {
+   "v": "Lucas asks 'How are you finding your new school?' What does he want to know?",
+   "o": [
+    "\"where the school is\"",
+    "\"what Emma thinks of the school\"",
+    "\"who the teacher is\"",
+    "\"how she came to school, really, to be honest\""
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 0,
+   "u": "Kies de zin die bij de situatie past. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"where the school is\"\"? Dan denk je dat hij de locatie vraagt. Emma zit al op school, dus dat is niet de vraag.",
+    "Klopt: how are you finding betekent hoe vind je het, dus hij vraagt naar haar indruk.",
+    "Koos je \"\"who the teacher is\"\"? Dan denk je dat hij naar de leraar vraagt. De leraar is er al, en de vraag gaat over haar mening.",
+    "Koos je \"\"how she came to school, really, to be honest\"\"? Dan denk je dat hij naar vervoer vraagt. Hij vraagt naar haar indruk, en niet naar de reis."
+   ],
+   "uh": "Lucas asks 'How are you finding your new school?' What does he want to know?",
+   "ctx": "You hear a conversation at school (read the transcript): \"Teacher: Good morning, everybody. This is Emma, our new classmate. Emma: Hello. Nice to meet you all. Lucas: Hi, Emma. Welcome to our class! Where do you come from? Emma: I come from Manchester, but I live here now. Lucas: Oh, that is far away. How are you finding your new school? Emma: It is fine so far, although I still get lost in the building. Lucas: Do not worry, I will show you around at break. Emma: That is really kind. Thank you.\""
+  },
+  {
+   "v": "Why is 'Do not worry, I will show you around at break' a good reaction?",
+   "o": [
+    "\"it is a formal greeting, I think\"",
+    "\"it is rude to Emma\"",
+    "\"it asks Emma for money\"",
+    "\"it is friendly and offers help\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 4,
+   "u": "Kies de zin die bij de situatie past. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"it is a formal greeting, I think\"\"? Dan denk je dat het een nette groet is. Het is geen groet, maar een aanbod.",
+    "Koos je \"\"it is rude to Emma\"\"? Dan denk je dat het onbeleefd is. De woorden zijn juist vriendelijk, en Emma bedankt hem.",
+    "Koos je \"\"it asks Emma for money\"\"? Dan denk je dat het om geld gaat. Er wordt niets over geld gezegd, dus dat klopt niet.",
+    "Klopt: lucas stelt haar gerust en biedt aan om haar te helpen."
+   ],
+   "uh": "Why is 'Do not worry, I will show you around at break' a good reaction?",
+   "ctx": "You hear a conversation at school (read the transcript): \"Teacher: Good morning, everybody. This is Emma, our new classmate. Emma: Hello. Nice to meet you all. Lucas: Hi, Emma. Welcome to our class! Where do you come from? Emma: I come from Manchester, but I live here now. Lucas: Oh, that is far away. How are you finding your new school? Emma: It is fine so far, although I still get lost in the building. Lucas: Do not worry, I will show you around at break. Emma: That is really kind. Thank you.\""
+  },
+  {
+   "v": "The teacher says 'Good morning, everybody.' What is the best reply of the class?",
+   "o": [
+    "\"Good morning, Miss.\"",
+    "\"Good night, Miss.\"",
+    "\"See you later, Miss.\"",
+    "\"Nice to meet you, Miss.\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 4,
+   "u": "Kies de zin die bij de situatie past. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: een leerling beantwoordt de ochtendgroet netjes met dezelfde groet.",
+    "Koos je \"\"Good night, Miss.\"\"? Dan denk je dat een nachtgroet past. Het is ochtend, en dit zeg je voor het slapen.",
+    "Koos je \"\"See you later, Miss.\"\"? Dan denk je dat een afscheid past. De les begint net, en een afscheid is dan te vroeg.",
+    "Koos je \"\"Nice to meet you, Miss.\"\"? Dan denk je dat een kennismaking past. De klas kent de lerares al, dus dit is niet nodig."
+   ],
+   "uh": "The teacher says 'Good morning, everybody.' What is the best reply of the class?",
+   "ctx": "You hear a conversation at school (read the transcript): \"Teacher: Good morning, everybody. This is Emma, our new classmate. Emma: Hello. Nice to meet you all. Lucas: Hi, Emma. Welcome to our class! Where do you come from? Emma: I come from Manchester, but I live here now. Lucas: Oh, that is far away. How are you finding your new school? Emma: It is fine so far, although I still get lost in the building. Lucas: Do not worry, I will show you around at break. Emma: That is really kind. Thank you.\""
+  }
+ ],
+ "oe": [
+  {
+   "bron": "Examenstijl",
+   "ctx": "You are at a birthday party of a friend. You arrive with a small present. The host opens the door and says: \"Hello! Thank you for coming! Would you like something to drink? We have lemonade and orange juice.\" You want a lemonade.",
+   "v": "Write a polite reply in English and say what a friendly bedankje looks like.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Yes, please. A lemonade, if you have it (1p). Thank you for inviting me of thanks (1p). Beleefd met please of thank you (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "It is two days after your birthday. A good friend meets you at school and says: \"Hi! I am so sorry I forgot your birthday. I was very busy with my football match last week.\" You are not angry at all.",
+   "v": "Write two sentences in English that react to the excuses in a friendly way.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "That is okay (1p). Do not worry (1p). Een vriendelijke en passende reactie (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Your classmate asks you in the break: \"Hi! I have two tickets for a new film. Would you like to come to the cinema with me on Friday evening?\" You cannot come, because you have a football match that evening.",
+   "v": "Write a polite refusal in English with a reason.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "I would love to (1p). But I cannot because I have football (1p). Een beleefde weigering met reden (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "You go to your friend's house for the first time. His grandfather opens the door, looks at you and says in a friendly voice: \"Good afternoon. You must be Tim. Please come in.\"",
+   "v": "Write what you say in English and explain whether this is formal or informal.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Good afternoon, nice to meet you (1p). Formeel: je gebruikt een nette begroeting (1p). Geen straattaal (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "During a lesson about polite English a classmate says: \"I always say hey to everybody, also to the headmaster and to my teachers. It is faster.\" You think this is a bad idea.",
+   "v": "Write two sentences in English that explain why a different greeting fits better.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Hey is informeel (1p). Bij een directeur gebruik je formeel taalgebruik zoals good morning (1p). Een duidelijke uitleg (1p)."
+  }
+ ]
+}
