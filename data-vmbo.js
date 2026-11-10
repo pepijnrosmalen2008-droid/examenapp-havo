@@ -34820,6 +34820,688 @@ var VAKKEN_VMBO = [
         "u": "Een reden maakt de mening duidelijk (1p). Voorbeeld: I think it is good, because... (1p). Een duidelijke uitleg (1p)."
        }
       ]
+     },
+     {
+      "id": "C6",
+      "lo": "en.C.6",
+      "gs": 2,
+      "naam": "Een gesprek op gang houden",
+      "beschrijving": "Je leert in het Engels een gesprek gaande te houden: je vraagt om herhaling of uitleg, omschrijft een woord dat je niet kent, stelt vervolgvragen, wint tijd met well, let me think en controleert of je de ander goed begrepen hebt.",
+      "ceStatus": "SE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Om herhaling vragen",
+       "Om uitleg vragen",
+       "Omschrijven",
+       "Doorvragen en interesse tonen",
+       "Tijd winnen en controleren"
+      ],
+      "sam": "Verstaan je iets niet, vraag dan om herhaling met could you repeat that of om uitleg met what do you mean. Weet je een woord niet, omschrijf het dan. Houd het gesprek gaande met vervolgvragen en interesse. Win tijd met well, let me think en controleer wat je begrepen hebt door het te herhalen.",
+      "begrippen": [
+       {
+        "t": "Herhaling",
+        "d": "Vragen of iemand iets nog eens zegt, bijvoorbeeld could you repeat that."
+       },
+       {
+        "t": "Langzamer",
+        "d": "Vragen of iemand rustiger spreekt, bijvoorbeeld more slowly."
+       },
+       {
+        "t": "Verduidelijking",
+        "d": "Vragen wat iemand bedoelt, bijvoorbeeld what do you mean."
+       },
+       {
+        "t": "Omschrijven",
+        "d": "Met andere woorden zeggen wat je bedoelt als je een woord niet weet."
+       },
+       {
+        "t": "Vervolgvraag",
+        "d": "Een vraag die het gesprek gaande houdt, bijvoorbeeld and what did you do there."
+       },
+       {
+        "t": "Tijd winnen",
+        "d": "Even nadenken met well, let me think."
+       },
+       {
+        "t": "Controleren",
+        "d": "Herhalen wat je dacht te horen, bijvoorbeeld so you mean."
+       },
+       {
+        "t": "Bevestigen",
+        "d": "Laten weten dat iets klopt, bijvoorbeeld yes, exactly."
+       },
+       {
+        "t": "Beleefd",
+        "d": "Netjes vragen met could you en please."
+       },
+       {
+        "t": "Interesse",
+        "d": "Laten merken dat je het leuk vindt om te horen, bijvoorbeeld that sounds great."
+       },
+       {
+        "t": "Strategie",
+        "d": "Een slimme manier om een probleem in een gesprek op te lossen."
+       },
+       {
+        "t": "Voortgang",
+        "d": "Het gesprek laten doorgaan, ook als je iets niet verstaat."
+       }
+      ],
+      "sv": [
+       {
+        "v": "Je verstaat iets niet. Wat zeg je beleefd?",
+        "o": [
+         "\"Be quiet, please, I think, I suppose, really.\"",
+         "\"Sorry, could you repeat that, please?\"",
+         "\"I know that.\"",
+         "\"No, thank you.\""
+        ],
+        "c": 1,
+        "d": 1,
+        "s": 0,
+        "u": "Kies de zin die het gesprek helpt. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"Be quiet, please, I think, I suppose, really.\"\"? Dan denk je dat dit een verzoek om herhaling is. Het vraagt de ander te zwijgen, en dat is onbeleefd.",
+         "Klopt: could you repeat that, please is een beleefd verzoek om herhaling.",
+         "Koos je \"\"I know that.\"\"? Dan denk je dat dit een goede reactie is. Het zegt dat je het al weet, en dat is niet zo.",
+         "Koos je \"\"No, thank you.\"\"? Dan denk je dat dit een vraag om herhaling is. Het is een weigering, en past niet bij niet verstaan."
+        ],
+        "uh": "Je verstaat iets niet. Wat zeg je beleefd?"
+       },
+       {
+        "v": "Welke zin gebruik je om te vragen of iemand langzamer wil praten?",
+        "o": [
+         "\"Could you speak more loudly, please, volgens mij?\"",
+         "\"Could you speak English, please?\"",
+         "\"Can you stop speaking, please?\"",
+         "\"Could you speak more slowly, please?\""
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 0,
+        "u": "Kies de zin die het gesprek helpt. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"Could you speak more loudly, please, volgens mij?\"\"? Dan denk je dat loudly langzamer is. Loudly betekent luider, en dat vraagt om volume.",
+         "Koos je \"\"Could you speak English, please?\"\"? Dan denk je dat dit om langzamer praten vraagt. Het vraagt om een andere taal, en dat is niet wat je wilt.",
+         "Koos je \"\"Can you stop speaking, please?\"\"? Dan denk je dat dit een verzoek om langzamer is. Het vraagt de ander helemaal te stoppen, en dat helpt niet.",
+         "Klopt: more slowly betekent langzamer en could you maakt het beleefd."
+        ],
+        "uh": "Welke zin gebruik je om te vragen of iemand langzamer wil praten?"
+       },
+       {
+        "v": "Iemand zegt iets wat je niet snapt. Welke vraag helpt?",
+        "o": [
+         "\"What do you mean?\"",
+         "\"Where are you?\"",
+         "\"How old are you, I suppose?\"",
+         "\"Who are you?\""
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 1,
+        "u": "Kies de zin die het gesprek helpt. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: what do you mean vraagt om een uitleg van wat de ander bedoelt.",
+         "Koos je \"\"Where are you?\"\"? Dan denk je dat dit om uitleg vraagt. Where are you vraagt naar jouw locatie, terwijl je de zin niet snapt.",
+         "Koos je \"\"How old are you, I suppose?\"\"? Dan pak je een persoonlijke vraag. Een leeftijd verklaart de moeilijke zin niet, en lost niets op.",
+         "Koos je \"\"Who are you?\"\"? Dan stel je een vraag over de persoon. Je wilt de zin begrijpen, en niet de spreker leren kennen."
+        ],
+        "uh": "Iemand zegt iets wat je niet snapt. Welke vraag helpt?"
+       },
+       {
+        "v": "Je weet het Engelse woord voor 'föhn' niet. Wat doe je?",
+        "o": [
+         "\"je zwijgt\"",
+         "\"je zegt het Nederlandse woord harder, you know, I think\"",
+         "\"je omschrijft het: 'a thing to dry your hair'\"",
+         "\"je loopt weg\""
+        ],
+        "c": 2,
+        "d": 1,
+        "s": 2,
+        "u": "Kies de zin die het gesprek helpt. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"je zwijgt\"\"? Dan denk je dat zwijgen veilig is. Je krijgt dan niet wat je zoekt, en het gesprek stopt.",
+         "Koos je \"\"je zegt het Nederlandse woord harder, you know, I think\"\"? Dan denk je dat luider helpt. Een Nederlands woord blijft onbekend, en harder maakt het niet duidelijker.",
+         "Klopt: met een omschrijving maak je duidelijk wat je bedoelt zonder het woord te kennen.",
+         "Koos je \"\"je loopt weg\"\"? Dan denk je dat weglopen een oplossing is. Je lost je vraag niet op, en je gesprek eindigt."
+        ],
+        "uh": "Je weet het Engelse woord voor 'föhn' niet. Wat doe je?"
+       },
+       {
+        "v": "Een vriend vertelt over zijn vakantie. Welke vraag houdt het gesprek gaande?",
+        "o": [
+         "\"Is it Tuesday?\"",
+         "\"And what did you do there?\"",
+         "\"Do you have a pen, really, to be honest?\"",
+         "\"Goodbye.\""
+        ],
+        "c": 1,
+        "d": 1,
+        "s": 3,
+        "u": "Kies de zin die het gesprek helpt. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"Is it Tuesday?\"\"? Dan denk je dat dit past. Het gaat over een dag van de week, en niet over zijn vakantie.",
+         "Klopt: een open vervolgvraag laat de ander meer vertellen.",
+         "Koos je \"\"Do you have a pen, really, to be honest?\"\"? Dan denk je dat dit past. Het gaat over een pen, en niet over zijn verhaal.",
+         "Koos je \"\"Goodbye.\"\"? Dan denk je dat dit past. Het is een afscheid, en beëindigt het gesprek."
+        ],
+        "uh": "Een vriend vertelt over zijn vakantie. Welke vraag houdt het gesprek gaande?"
+       },
+       {
+        "v": "Je wilt even nadenken voordat je antwoordt. Welke zin past?",
+        "o": [
+         "\"Goodbye.\"",
+         "\"I am sorry.\"",
+         "\"Thank you very much, I think.\"",
+         "\"Well, let me think.\""
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 4,
+        "u": "Kies de zin die het gesprek helpt. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"Goodbye.\"\"? Dan denk je dat dit tijd geeft. Het is een afscheid, en sluit het gesprek af.",
+         "Koos je \"\"I am sorry.\"\"? Dan denk je dat dit tijd geeft. Het is een excuus, en je hebt niets fout gedaan.",
+         "Koos je \"\"Thank you very much, I think.\"\"? Dan denk je dat dit tijd geeft. Het is een bedankje, en past niet bij nadenken.",
+         "Klopt: well, let me think geeft je tijd en laat horen dat je nadenkt."
+        ],
+        "uh": "Je wilt even nadenken voordat je antwoordt. Welke zin past?"
+       },
+       {
+        "v": "Hoe controleer je of je iemand goed begrepen hebt?",
+        "o": [
+         "\"je herhaalt wat je hoorde: 'So you mean...?'\"",
+         "\"je zegt niets\"",
+         "\"je zegt altijd yes, volgens mij, eigenlijk, denk ik\"",
+         "\"je loopt weg\""
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 4,
+        "u": "Kies de zin die het gesprek helpt. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: door te herhalen laat je de ander bevestigen of je het goed hebt.",
+         "Koos je \"\"je zegt niets\"\"? Dan denk je dat zwijgen genoeg is. Je weet dan niet of je het goed hebt, en kunt een fout maken.",
+         "Koos je \"\"je zegt altijd yes, volgens mij, eigenlijk, denk ik\"\"? Dan denk je dat yes altijd past. Je zegt dan ja op iets wat je niet begrijpt, en dat kan fout zijn.",
+         "Koos je \"\"je loopt weg\"\"? Dan denk je dat weglopen helpt. Je controleert niets, en lost niets op."
+        ],
+        "uh": "Hoe controleer je of je iemand goed begrepen hebt?"
+       },
+       {
+        "v": "What does the guest want to do?",
+        "o": [
+         "\"book a table for two, I suppose\"",
+         "\"cancel a room\"",
+         "\"book a room for two nights\"",
+         "\"pay a bill\""
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 0,
+        "u": "Kies de zin die het gesprek helpt. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"book a table for two, I suppose\"\"? Dan denk je dat het om een tafel gaat. De gast vraagt om een kamer, en niet om een tafel.",
+         "Koos je \"\"cancel a room\"\"? Dan denk je dat de gast annuleert. Hij wil juist boeken, dus het is het tegenovergestelde.",
+         "Klopt: de gast zegt I would like to book a room for two nights.",
+         "Koos je \"\"pay a bill\"\"? Dan denk je dat de gast een rekening betaalt. Hij boekt een kamer, dus er wordt nog niet betaald."
+        ],
+        "uh": "What does the guest want to do?",
+        "ctx": "You hear a conversation at a hotel (read the transcript): \"Receptionist: Good morning. How can I help you? Guest: Hello. I would like to book a room for two nights. Receptionist: Certainly. Do you prefer a room with a sea view or a garden view? Guest: Sorry, could you repeat that, please? I did not understand the last word. Receptionist: Of course. Do you want a room with a view of the sea or of the garden? Guest: Oh, I see. The sea, please. Receptionist: Lovely. That will be one hundred and twenty euros per night.\""
+       },
+       {
+        "v": "Why does the guest say 'Could you repeat that, please?'",
+        "o": [
+         "\"he is angry\"",
+         "\"he did not understand the last word\"",
+         "\"he wants a cheaper room, you know, I think\"",
+         "\"he wants to leave\""
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 0,
+        "u": "Kies de zin die het gesprek helpt. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"he is angry\"\"? Dan denk je dat hij boos is. Hij vraagt beleefd, dus hij is niet boos.",
+         "Klopt: hij zegt dat hij het laatste woord niet verstond.",
+         "Koos je \"\"he wants a cheaper room, you know, I think\"\"? Dan denk je dat hij de prijs wil weten. Dit wordt niet gevraagd, dus je verzint iets.",
+         "Koos je \"\"he wants to leave\"\"? Dan denk je dat de gast vertrekt. Hij blijft praten en kiest een kamer, dus hij gaat niet weg."
+        ],
+        "uh": "Why does the guest say 'Could you repeat that, please?'",
+        "ctx": "You hear a conversation at a hotel (read the transcript): \"Receptionist: Good morning. How can I help you? Guest: Hello. I would like to book a room for two nights. Receptionist: Certainly. Do you prefer a room with a sea view or a garden view? Guest: Sorry, could you repeat that, please? I did not understand the last word. Receptionist: Of course. Do you want a room with a view of the sea or of the garden? Guest: Oh, I see. The sea, please. Receptionist: Lovely. That will be one hundred and twenty euros per night.\""
+       },
+       {
+        "v": "What does the receptionist do after the guest's question?",
+        "o": [
+         "\"she gets angry\"",
+         "\"she ends the conversation, really, to be honest\"",
+         "\"she gives the price\"",
+         "\"she repeats the question in simpler words\""
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 3,
+        "u": "Kies de zin die het gesprek helpt. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"she gets angry\"\"? Dan denk je dat de receptioniste boos wordt van de vraag. Ze begint met of course, en blijft vriendelijk.",
+         "Koos je \"\"she ends the conversation, really, to be honest\"\"? Dan kies je een afsluiting. Het gesprek gaat nog door over de kamer, dus ze stopt niet.",
+         "Koos je \"\"she gives the price\"\"? Dan denk je dat de prijs eerst komt. Die noemt ze pas aan het eind, na de keuze van de kamer.",
+         "Klopt: ze herhaalt de vraag met eenvoudiger woorden, zodat de gast het snapt."
+        ],
+        "uh": "What does the receptionist do after the guest's question?",
+        "ctx": "You hear a conversation at a hotel (read the transcript): \"Receptionist: Good morning. How can I help you? Guest: Hello. I would like to book a room for two nights. Receptionist: Certainly. Do you prefer a room with a sea view or a garden view? Guest: Sorry, could you repeat that, please? I did not understand the last word. Receptionist: Of course. Do you want a room with a view of the sea or of the garden? Guest: Oh, I see. The sea, please. Receptionist: Lovely. That will be one hundred and twenty euros per night.\""
+       },
+       {
+        "v": "How much does a night cost?",
+        "o": [
+         "\"120 euros\"",
+         "\"20 euros\"",
+         "\"210 euros, I think\"",
+         "\"100 euros\""
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 0,
+        "u": "Kies de zin die het gesprek helpt. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: de receptioniste zegt one hundred and twenty euros per night.",
+         "Koos je \"\"20 euros\"\"? Dan denk je dat het twintig is. De tekst zegt hundred and twenty, dus 120.",
+         "Koos je \"\"210 euros, I think\"\"? Dan draai je de cijfers om. De tekst zegt hundred and twenty, dus 120 en geen 210.",
+         "Koos je \"\"100 euros\"\"? Dan denk je dat het honderd is. Er staat nog twenty bij, dus het is 120."
+        ],
+        "uh": "How much does a night cost?",
+        "ctx": "You hear a conversation at a hotel (read the transcript): \"Receptionist: Good morning. How can I help you? Guest: Hello. I would like to book a room for two nights. Receptionist: Certainly. Do you prefer a room with a sea view or a garden view? Guest: Sorry, could you repeat that, please? I did not understand the last word. Receptionist: Of course. Do you want a room with a view of the sea or of the garden? Guest: Oh, I see. The sea, please. Receptionist: Lovely. That will be one hundred and twenty euros per night.\""
+       },
+       {
+        "v": "What does the customer want?",
+        "o": [
+         "\"a towel\"",
+         "\"a hairbrush\"",
+         "\"a hairdryer\"",
+         "\"a toothbrush, to be honest\""
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 2,
+        "u": "Kies de zin die het gesprek helpt. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"a towel\"\"? Dan denk je dat het een handdoek is. De klant omschrijft iets om haar te drogen, maar niet een handdoek.",
+         "Koos je \"\"a hairbrush\"\"? Dan denk je dat het een haarborstel is. Een borstel droogt niet, dus dit klopt niet.",
+         "Klopt: de verkoper vraagt do you mean a hairdryer en de klant bevestigt dat.",
+         "Koos je \"\"a toothbrush, to be honest\"\"? Dan denk je dat het een tandenborstel is. Dit heeft niets met haar te maken, dus dit klopt niet."
+        ],
+        "uh": "What does the customer want?",
+        "ctx": "You hear a conversation in a shop (read the transcript): \"Customer: Excuse me, I am looking for a... how do you say it... a thing to dry your hair after a shower. Assistant: Do you mean a hairdryer? Customer: Yes, exactly! A hairdryer. Thank you. Assistant: They are over there, on the second shelf. Do you need one with a cable? Customer: What do you mean, with a cable? Assistant: I mean one that you plug into the wall. The others work on batteries. Customer: Ah, I understand. Then the one with a cable, please.\""
+       },
+       {
+        "v": "How does the customer explain the word?",
+        "o": [
+         "\"a thing to wash your hair, I suppose, really\"",
+         "\"a thing to dry your hair after a shower\"",
+         "\"a thing to cut hair\"",
+         "\"a thing to comb hair\""
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 2,
+        "u": "Kies de zin die het gesprek helpt. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"a thing to wash your hair, I suppose, really\"\"? Dan verwar je drogen met wassen. Hij noemt het drogen na het douchen, en niet het shampoeën.",
+         "Klopt: de klant omschrijft het woord zonder het te kennen, met het woord dry.",
+         "Koos je \"\"a thing to cut hair\"\"? Dan denk je dat het om een kapperstool gaat. Een schaar is niet wat hij omschrijft, want hij noemt dry.",
+         "Koos je \"\"a thing to comb hair\"\"? Dan kies je een borstel of kam. Daarmee maak je haar netjes, maar hij omschrijft het drogen."
+        ],
+        "uh": "How does the customer explain the word?",
+        "ctx": "You hear a conversation in a shop (read the transcript): \"Customer: Excuse me, I am looking for a... how do you say it... a thing to dry your hair after a shower. Assistant: Do you mean a hairdryer? Customer: Yes, exactly! A hairdryer. Thank you. Assistant: They are over there, on the second shelf. Do you need one with a cable? Customer: What do you mean, with a cable? Assistant: I mean one that you plug into the wall. The others work on batteries. Customer: Ah, I understand. Then the one with a cable, please.\""
+       },
+       {
+        "v": "What does 'a cable' mean here?",
+        "o": [
+         "\"a battery, you know, I think, I suppose\"",
+         "\"a box\"",
+         "\"a switch\"",
+         "\"a wire that you plug into the wall\""
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 1,
+        "u": "Kies de zin die het gesprek helpt. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"a battery, you know, I think, I suppose\"\"? Dan denk je dat een kabel een batterij is. De verkoper zegt dat de andere op batterijen werken, dus het is juist het tegenovergestelde.",
+         "Koos je \"\"a box\"\"? Dan denk je dat een kabel een doos is. Dit past niet bij plug into the wall, dus dit klopt niet.",
+         "Koos je \"\"a switch\"\"? Dan denk je dat een kabel een schakelaar is. Het gaat om iets wat je in het stopcontact doet, en dus een snoer.",
+         "Klopt: de verkoper legt zelf uit: one that you plug into the wall."
+        ],
+        "uh": "What does 'a cable' mean here?",
+        "ctx": "You hear a conversation in a shop (read the transcript): \"Customer: Excuse me, I am looking for a... how do you say it... a thing to dry your hair after a shower. Assistant: Do you mean a hairdryer? Customer: Yes, exactly! A hairdryer. Thank you. Assistant: They are over there, on the second shelf. Do you need one with a cable? Customer: What do you mean, with a cable? Assistant: I mean one that you plug into the wall. The others work on batteries. Customer: Ah, I understand. Then the one with a cable, please.\""
+       },
+       {
+        "v": "What does Ben ask after 'I went to Scotland'?",
+        "o": [
+         "\"Where did you stay?\"",
+         "\"How old are you?\"",
+         "\"Who is your teacher, really?\"",
+         "\"What is your name?\""
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 3,
+        "u": "Kies de zin die het gesprek helpt. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: ben stelt een vervolgvraag om meer te weten.",
+         "Koos je \"\"How old are you?\"\"? Dan denk je dat de vraag past. Een leeftijdsvraag past niet bij een vakantieverhaal, dus het gesprek stopt.",
+         "Koos je \"\"Who is your teacher, really?\"\"? Dan denk je dat de vraag past. Een vraag over een leraar past niet bij een vakantie, dus het is een ander onderwerp.",
+         "Koos je \"\"What is your name?\"\"? Dan denk je dat de vraag past. Ze kennen elkaar al, dus dit klopt niet."
+        ],
+        "uh": "What does Ben ask after 'I went to Scotland'?",
+        "ctx": "You hear two friends talking about a holiday (read the transcript): \"Anna: I went to Scotland last summer. Ben: Oh, nice! Where did you stay? Anna: In a small village near the mountains. Ben: And what did you do there? Anna: We went hiking every day. Ben: That sounds great. Was the weather good? Anna: Not always. It rained a lot, but the views were amazing. Ben: Would you go back? Anna: Well, let me think. Yes, definitely. Next time I want to visit the islands too.\""
+       },
+       {
+        "v": "What did Anna do every day?",
+        "o": [
+         "\"she went swimming\"",
+         "\"she visited museums\"",
+         "\"she went hiking\"",
+         "\"she stayed at home\""
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 3,
+        "u": "Kies de zin die het gesprek helpt. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"she went swimming\"\"? Dan denk je dat ze zwom. Er staat hiking, dus wandelen.",
+         "Koos je \"\"she visited museums\"\"? Dan denk je dat ze musea bezocht. Dit wordt niet genoemd, dus je verzint iets.",
+         "Klopt: anna zegt we went hiking every day, dus ze ging elke dag wandelen.",
+         "Koos je \"\"she stayed at home\"\"? Dan denk je dat ze thuisbleef. Ze ging juist elke dag wandelen, dus dit klopt niet."
+        ],
+        "uh": "What did Anna do every day?",
+        "ctx": "You hear two friends talking about a holiday (read the transcript): \"Anna: I went to Scotland last summer. Ben: Oh, nice! Where did you stay? Anna: In a small village near the mountains. Ben: And what did you do there? Anna: We went hiking every day. Ben: That sounds great. Was the weather good? Anna: Not always. It rained a lot, but the views were amazing. Ben: Would you go back? Anna: Well, let me think. Yes, definitely. Next time I want to visit the islands too.\""
+       },
+       {
+        "v": "What does Anna say when Ben asks 'Would you go back?'",
+        "o": [
+         "\"she says no, never\"",
+         "\"she says yes, definitely\"",
+         "\"she does not know\"",
+         "\"she changes the subject, to be honest\""
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 4,
+        "u": "Kies de zin die het gesprek helpt. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"she says no, never\"\"? Dan denk je dat ze nooit meer gaat. Ze zegt definitely, dus zeker wel.",
+         "Klopt: na even nadenken zegt ze yes, definitely.",
+         "Koos je \"\"she does not know\"\"? Dan denk je dat ze twijfelt. Ze denkt even na en zegt dan yes, dus ze weet het wel.",
+         "Koos je \"\"she changes the subject, to be honest\"\"? Dan denk je dat ze iets anders bespreekt. Ze beantwoordt de vraag, dus ze wisselt niet."
+        ],
+        "uh": "What does Anna say when Ben asks 'Would you go back?'",
+        "ctx": "You hear two friends talking about a holiday (read the transcript): \"Anna: I went to Scotland last summer. Ben: Oh, nice! Where did you stay? Anna: In a small village near the mountains. Ben: And what did you do there? Anna: We went hiking every day. Ben: That sounds great. Was the weather good? Anna: Not always. It rained a lot, but the views were amazing. Ben: Would you go back? Anna: Well, let me think. Yes, definitely. Next time I want to visit the islands too.\""
+       },
+       {
+        "v": "Which phrase asks for repetition?",
+        "o": [
+         "\"Do you prefer the sea?\"",
+         "\"Of course.\"",
+         "\"That will be 120 euros, I suppose.\"",
+         "\"Could you repeat that, please?\""
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 0,
+        "u": "Kies de zin die het gesprek helpt. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"Do you prefer the sea?\"\"? Dan denk je dat dit om herhaling vraagt. Het is een nieuwe vraag, en geen verzoek om herhaling.",
+         "Koos je \"\"Of course.\"\"? Dan denk je dat dit om herhaling vraagt. Het is een instemming, en geen verzoek.",
+         "Koos je \"\"That will be 120 euros, I suppose.\"\"? Dan denk je dat dit om herhaling vraagt. Het noemt de prijs, en vraagt niets.",
+         "Klopt: could you repeat that vraagt om herhaling."
+        ],
+        "uh": "Which phrase asks for repetition?",
+        "ctx": "You hear a conversation at a hotel (read the transcript): \"Receptionist: Good morning. How can I help you? Guest: Hello. I would like to book a room for two nights. Receptionist: Certainly. Do you prefer a room with a sea view or a garden view? Guest: Sorry, could you repeat that, please? I did not understand the last word. Receptionist: Of course. Do you want a room with a view of the sea or of the garden? Guest: Oh, I see. The sea, please. Receptionist: Lovely. That will be one hundred and twenty euros per night.\""
+       },
+       {
+        "v": "'Oh, I see.' What does the guest show?",
+        "o": [
+         "\"that he understands now\"",
+         "\"that he is angry\"",
+         "\"that he cannot see\"",
+         "\"that he wants to leave, you know\""
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 0,
+        "u": "Kies de zin die het gesprek helpt. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: oh, I see betekent dat het kwartje gevallen is.",
+         "Koos je \"\"that he is angry\"\"? Dan denk je dat oh I see boos is. Het is juist een kalme reactie, en geen boosheid.",
+         "Koos je \"\"that he cannot see\"\"? Dan denk je dat see zien betekent. Hier betekent het begrijpen, en niet kijken.",
+         "Koos je \"\"that he wants to leave, you know\"\"? Dan denk je dat hij weggaat. Hij kiest daarna de kamer, dus hij blijft."
+        ],
+        "uh": "'Oh, I see.' What does the guest show?",
+        "ctx": "You hear a conversation at a hotel (read the transcript): \"Receptionist: Good morning. How can I help you? Guest: Hello. I would like to book a room for two nights. Receptionist: Certainly. Do you prefer a room with a sea view or a garden view? Guest: Sorry, could you repeat that, please? I did not understand the last word. Receptionist: Of course. Do you want a room with a view of the sea or of the garden? Guest: Oh, I see. The sea, please. Receptionist: Lovely. That will be one hundred and twenty euros per night.\""
+       },
+       {
+        "v": "The receptionist asks the question again with simpler words. What does she do?",
+        "o": [
+         "\"she uses more difficult words, really, to be honest\"",
+         "\"she asks a different question\"",
+         "\"she uses simpler words so he understands it\"",
+         "\"she gives him the answer\""
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 1,
+        "u": "Kies de zin die het gesprek helpt. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"she uses more difficult words, really, to be honest\"\"? Dan denk je dat moeilijker helpt. Ze maakt de zin juist makkelijker, dus dit klopt niet.",
+         "Koos je \"\"she asks a different question\"\"? Dan denk je dat ze iets anders vraagt. De vraag blijft dezelfde, alleen de woorden verschillen.",
+         "Klopt: ze past haar zin aan zodat de gast het begrijpt.",
+         "Koos je \"\"she gives him the answer\"\"? Dan denk je dat ze antwoordt voor hem. Ze vraagt het alleen opnieuw, en laat hem kiezen."
+        ],
+        "uh": "The receptionist asks the question again with simpler words. What does she do?",
+        "ctx": "You hear a conversation at a hotel (read the transcript): \"Receptionist: Good morning. How can I help you? Guest: Hello. I would like to book a room for two nights. Receptionist: Certainly. Do you prefer a room with a sea view or a garden view? Guest: Sorry, could you repeat that, please? I did not understand the last word. Receptionist: Of course. Do you want a room with a view of the sea or of the garden? Guest: Oh, I see. The sea, please. Receptionist: Lovely. That will be one hundred and twenty euros per night.\""
+       },
+       {
+        "v": "'How do you say it...' What is the customer doing?",
+        "o": [
+         "\"asking for the price, I think, I suppose\"",
+         "\"looking for a word and gaining time\"",
+         "\"saying goodbye\"",
+         "\"refusing to answer\""
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 2,
+        "u": "Kies de zin die het gesprek helpt. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"asking for the price, I think, I suppose\"\"? Dan denk je dat de klant de prijs vraagt. Hij zoekt een woord, en niet een prijs.",
+         "Klopt: de klant zoekt een woord en houdt het gesprek gaande.",
+         "Koos je \"\"saying goodbye\"\"? Dan denk je dat hij afscheid neemt. Hij begint net aan zijn vraag, dus het gesprek duurt.",
+         "Koos je \"\"refusing to answer\"\"? Dan denk je dat hij niet antwoordt. Hij probeert juist antwoord te geven, dus hij weigert niet."
+        ],
+        "uh": "'How do you say it...' What is the customer doing?",
+        "ctx": "You hear a conversation in a shop (read the transcript): \"Customer: Excuse me, I am looking for a... how do you say it... a thing to dry your hair after a shower. Assistant: Do you mean a hairdryer? Customer: Yes, exactly! A hairdryer. Thank you. Assistant: They are over there, on the second shelf. Do you need one with a cable? Customer: What do you mean, with a cable? Assistant: I mean one that you plug into the wall. The others work on batteries. Customer: Ah, I understand. Then the one with a cable, please.\""
+       },
+       {
+        "v": "'What do you mean, with a cable?' What does the customer want?",
+        "o": [
+         "\"a lower price\"",
+         "\"a different shop, to be honest\"",
+         "\"a free gift\"",
+         "\"a clearer explanation\""
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 1,
+        "u": "Kies de zin die het gesprek helpt. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"a lower price\"\"? Dan denk je dat hij een lagere prijs wil. Hij vraagt naar het woord, en niet naar geld.",
+         "Koos je \"\"a different shop, to be honest\"\"? Dan denk je dat hij weggaat. Hij blijft vragen, dus hij blijft in de winkel.",
+         "Koos je \"\"a free gift\"\"? Dan denk je dat hij een cadeau wil. Dit wordt niet genoemd, dus je verzint iets.",
+         "Klopt: what do you mean vraagt om meer uitleg."
+        ],
+        "uh": "'What do you mean, with a cable?' What does the customer want?",
+        "ctx": "You hear a conversation in a shop (read the transcript): \"Customer: Excuse me, I am looking for a... how do you say it... a thing to dry your hair after a shower. Assistant: Do you mean a hairdryer? Customer: Yes, exactly! A hairdryer. Thank you. Assistant: They are over there, on the second shelf. Do you need one with a cable? Customer: What do you mean, with a cable? Assistant: I mean one that you plug into the wall. The others work on batteries. Customer: Ah, I understand. Then the one with a cable, please.\""
+       },
+       {
+        "v": "Why does the assistant say 'I mean one that you plug into the wall'?",
+        "o": [
+         "\"to make the question clearer\"",
+         "\"to sell more\"",
+         "\"to end the conversation, I suppose\"",
+         "\"to change the subject\""
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 1,
+        "u": "Kies de zin die het gesprek helpt. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: ze legt haar eigen woorden uit zodat de klant het begrijpt.",
+         "Koos je \"\"to sell more\"\"? Dan denk je dat ze meer wil verkopen. Ze legt alleen uit, en verkoopt niets extra.",
+         "Koos je \"\"to end the conversation, I suppose\"\"? Dan denk je dat ze het gesprek afsluit. Ze gaat verder met uitleg, dus ze stopt niet.",
+         "Koos je \"\"to change the subject\"\"? Dan denk je dat ze van onderwerp wisselt. Ze blijft bij haar vraag, dus dit klopt niet."
+        ],
+        "uh": "Why does the assistant say 'I mean one that you plug into the wall'?",
+        "ctx": "You hear a conversation in a shop (read the transcript): \"Customer: Excuse me, I am looking for a... how do you say it... a thing to dry your hair after a shower. Assistant: Do you mean a hairdryer? Customer: Yes, exactly! A hairdryer. Thank you. Assistant: They are over there, on the second shelf. Do you need one with a cable? Customer: What do you mean, with a cable? Assistant: I mean one that you plug into the wall. The others work on batteries. Customer: Ah, I understand. Then the one with a cable, please.\""
+       },
+       {
+        "v": "Which question shows that Ben wants Anna to say more?",
+        "o": [
+         "\"That sounds great, you know.\"",
+         "\"Oh, nice!\"",
+         "\"And what did you do there?\"",
+         "\"Definitely.\""
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 3,
+        "u": "Kies de zin die het gesprek helpt. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"That sounds great, you know.\"\"? Dan denk je dat dit een vraag is. Het is een reactie, en nodigt niet uit om meer te zeggen.",
+         "Koos je \"\"Oh, nice!\"\"? Dan denk je dat dit een vraag is. Het is een uitroep, en vraagt niets.",
+         "Klopt: een open vraag met what nodigt uit om meer te vertellen.",
+         "Koos je \"\"Definitely.\"\"? Dan denk je dat dit een vraag is. Het is een antwoord van Anna, en niet van Ben."
+        ],
+        "uh": "Which question shows that Ben wants Anna to say more?",
+        "ctx": "You hear two friends talking about a holiday (read the transcript): \"Anna: I went to Scotland last summer. Ben: Oh, nice! Where did you stay? Anna: In a small village near the mountains. Ben: And what did you do there? Anna: We went hiking every day. Ben: That sounds great. Was the weather good? Anna: Not always. It rained a lot, but the views were amazing. Ben: Would you go back? Anna: Well, let me think. Yes, definitely. Next time I want to visit the islands too.\""
+       },
+       {
+        "v": "'That sounds great.' What does Ben do?",
+        "o": [
+         "\"ends the conversation\"",
+         "\"shows interest\"",
+         "\"disagrees\"",
+         "\"asks for repetition\""
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 3,
+        "u": "Kies de zin die het gesprek helpt. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"ends the conversation\"\"? Dan denk je dat hij stopt. Hij gaat verder met een nieuwe vraag, dus hij stopt niet.",
+         "Klopt: that sounds great laat horen dat hij het leuk vindt om te horen.",
+         "Koos je \"\"disagrees\"\"? Dan denk je dat hij het oneens is. Sounds great is positief, dus hij stemt in.",
+         "Koos je \"\"asks for repetition\"\"? Dan denk je dat hij om herhaling vraagt. Hij reageert alleen, en vraagt niets."
+        ],
+        "uh": "'That sounds great.' What does Ben do?",
+        "ctx": "You hear two friends talking about a holiday (read the transcript): \"Anna: I went to Scotland last summer. Ben: Oh, nice! Where did you stay? Anna: In a small village near the mountains. Ben: And what did you do there? Anna: We went hiking every day. Ben: That sounds great. Was the weather good? Anna: Not always. It rained a lot, but the views were amazing. Ben: Would you go back? Anna: Well, let me think. Yes, definitely. Next time I want to visit the islands too.\""
+       },
+       {
+        "v": "'Well, let me think.' Why does Anna say this?",
+        "o": [
+         "\"to end the conversation\"",
+         "\"because she does not understand\"",
+         "\"because she is angry\"",
+         "\"to have some time to think\""
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 4,
+        "u": "Kies de zin die het gesprek helpt. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"to end the conversation\"\"? Dan denk je dat ze stopt. Ze antwoordt daarna gewoon, dus ze stopt niet.",
+         "Koos je \"\"because she does not understand\"\"? Dan denk je dat ze het niet begrijpt. Ze denkt na over haar antwoord, en vraagt niet om herhaling.",
+         "Koos je \"\"because she is angry\"\"? Dan denk je dat ze boos is. Haar toon is rustig, dus dit klopt niet.",
+         "Klopt: met well, let me think win je tijd voordat je antwoordt."
+        ],
+        "uh": "'Well, let me think.' Why does Anna say this?",
+        "ctx": "You hear two friends talking about a holiday (read the transcript): \"Anna: I went to Scotland last summer. Ben: Oh, nice! Where did you stay? Anna: In a small village near the mountains. Ben: And what did you do there? Anna: We went hiking every day. Ben: That sounds great. Was the weather good? Anna: Not always. It rained a lot, but the views were amazing. Ben: Would you go back? Anna: Well, let me think. Yes, definitely. Next time I want to visit the islands too.\""
+       },
+       {
+        "v": "Which sentence shows that Anna keeps the conversation going?",
+        "o": [
+         "\"Next time I want to visit the islands too.\"",
+         "\"Not always.\"",
+         "\"Definitely.\"",
+         "\"In a small village near the mountains, to be honest.\""
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 4,
+        "u": "Kies de zin die het gesprek helpt. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: ze voegt nieuwe informatie toe, zodat Ben verder kan vragen.",
+         "Koos je \"\"Not always.\"\"? Dan denk je dat dit het gesprek gaande houdt. Het is een kort antwoord, en geeft geen nieuwe informatie.",
+         "Koos je \"\"Definitely.\"\"? Dan denk je dat dit het gesprek verder helpt. Het is alleen een bevestiging, en voegt niets toe.",
+         "Koos je \"\"In a small village near the mountains, to be honest.\"\"? Dan denk je dat dit het gesprek verder helpt. Het beantwoordt alleen een vraag, en voegt geen nieuwe vraag toe."
+        ],
+        "uh": "Which sentence shows that Anna keeps the conversation going?",
+        "ctx": "You hear two friends talking about a holiday (read the transcript): \"Anna: I went to Scotland last summer. Ben: Oh, nice! Where did you stay? Anna: In a small village near the mountains. Ben: And what did you do there? Anna: We went hiking every day. Ben: That sounds great. Was the weather good? Anna: Not always. It rained a lot, but the views were amazing. Ben: Would you go back? Anna: Well, let me think. Yes, definitely. Next time I want to visit the islands too.\""
+       }
+      ],
+      "oe": [
+       {
+        "bron": "Examenstijl",
+        "ctx": "You are at a train station abroad and you want to buy a ticket. The man at the counter speaks very fast and you do not understand the price he says. You want to stay polite and you do not want to guess.",
+        "v": "Write two sentences in English in which you ask for repetition and for a slower speed.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Sorry, could you repeat that, please (1p). Could you speak more slowly, please (1p). Een beleefde en juiste vraag (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "In a shop you want to buy a thing to open bottles, but you do not know the English word. The shop assistant does not understand what you want. You decide to explain with other words.",
+        "v": "Write two sentences in English in which you describe what you want without the word itself.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "I am looking for a thing (1p). To open a bottle of lemonade (1p). Een duidelijke omschrijving (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Your friend tells you: \"Last weekend I went to a music festival with my cousin.\" You want to keep the conversation going and show interest, and you ask her about the festival.",
+        "v": "Write two questions in English that you can ask your friend.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "And who did you see / What was the music like (1p). Did you have a good time (1p). Open vragen die het gesprek gaande houden (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "A shop assistant says: \"Do you want a bag?\" You do not understand the word \"bag\" because the assistant has a heavy accent. You want to check what you understood.",
+        "v": "Write one sentence in English in which you check your understanding and explain how.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "So you mean a bag for my things (1p). Ik herhaal wat ik denk te horen (1p). De ander kan bevestigen (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "A classmate says: \"I just stop talking when I do not understand something, and then I wait until the other person walks away.\" You do not agree.",
+        "v": "Write two sentences in English that explain why asking questions is better, with an example.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Je blijft in het gesprek (1p). Voorbeeld: What do you mean / Could you repeat that (1p). Een duidelijke uitleg (1p)."
+       }
+      ]
      }
     ]
    },

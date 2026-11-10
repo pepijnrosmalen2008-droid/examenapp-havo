@@ -1088,6 +1088,27 @@ var VAKKEN_VMBO = [
       "nOe": 5,
       "nBeg": 12,
       "hasSam": true
+     },
+     {
+      "id": "C6",
+      "lo": "en.C.6",
+      "gs": 2,
+      "naam": "Een gesprek op gang houden",
+      "beschrijving": "Je leert in het Engels een gesprek gaande te houden: je vraagt om herhaling of uitleg, omschrijft een woord dat je niet kent, stelt vervolgvragen, wint tijd met well, let me think en controleert of je de ander goed begrepen hebt.",
+      "ceStatus": "SE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Om herhaling vragen",
+       "Om uitleg vragen",
+       "Omschrijven",
+       "Doorvragen en interesse tonen",
+       "Tijd winnen en controleren"
+      ],
+      "nSv": 27,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
      }
     ]
    },
