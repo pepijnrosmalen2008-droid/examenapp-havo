@@ -1004,6 +1004,27 @@ var VAKKEN_VMBO = [
       "nOe": 5,
       "nBeg": 12,
       "hasSam": true
+     },
+     {
+      "id": "C2",
+      "lo": "en.C.2",
+      "gs": 2,
+      "naam": "Informatie vragen en geven",
+      "beschrijving": "Je leert in het Engels informatie te vragen en te geven: je gebruikt vraagwoorden als what, where en how much, vraagt beleefd naar de weg, tijd en prijs, begrijpt een wegbeschrijving en controleert wat je gehoord hebt.",
+      "ceStatus": "SE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Vragen stellen met vraagwoorden",
+       "Beleefd informatie vragen",
+       "Informatie geven",
+       "Een wegbeschrijving",
+       "Controleren en doorvragen"
+      ],
+      "nSv": 27,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
      }
     ]
    },

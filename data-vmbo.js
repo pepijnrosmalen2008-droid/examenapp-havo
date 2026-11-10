@@ -32092,6 +32092,688 @@ var VAKKEN_VMBO = [
         "u": "Hey is informeel (1p). Bij een directeur gebruik je formeel taalgebruik zoals good morning (1p). Een duidelijke uitleg (1p)."
        }
       ]
+     },
+     {
+      "id": "C2",
+      "lo": "en.C.2",
+      "gs": 2,
+      "naam": "Informatie vragen en geven",
+      "beschrijving": "Je leert in het Engels informatie te vragen en te geven: je gebruikt vraagwoorden als what, where en how much, vraagt beleefd naar de weg, tijd en prijs, begrijpt een wegbeschrijving en controleert wat je gehoord hebt.",
+      "ceStatus": "SE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Vragen stellen met vraagwoorden",
+       "Beleefd informatie vragen",
+       "Informatie geven",
+       "Een wegbeschrijving",
+       "Controleren en doorvragen"
+      ],
+      "sam": "Met een vraagwoord als what, where en how much vraag je gericht naar informatie. Wees beleefd met excuse me en could you tell me. Een wegbeschrijving bevat richtingen en voorzetsels zoals next to en opposite. Geef antwoorden die bij het vraagwoord passen. Herhaal de informatie om te controleren.",
+      "begrippen": [
+       {
+        "t": "Vraagwoord",
+        "d": "Een woord als what, where, when en how much waarmee je een vraag begint."
+       },
+       {
+        "t": "Informatie",
+        "d": "Gegevens die je wilt weten, zoals een tijd, plaats of prijs."
+       },
+       {
+        "t": "Beleefd",
+        "d": "Netjes vragen met excuse me, could you en please."
+       },
+       {
+        "t": "Wegbeschrijving",
+        "d": "Uitleg over de route, bijvoorbeeld straight ahead en on the left."
+       },
+       {
+        "t": "Voorzetsel",
+        "d": "Een woord als next to, behind of opposite dat een plek aangeeft."
+       },
+       {
+        "t": "Prijs",
+        "d": "Wat iets kost, bijvoorbeeld how much is it."
+       },
+       {
+        "t": "Tijdstip",
+        "d": "Het uur waarop iets begint, bijvoorbeeld at four fifteen."
+       },
+       {
+        "t": "Herhalen",
+        "d": "Vragen om iets nog eens te zeggen, bijvoorbeeld could you repeat that."
+       },
+       {
+        "t": "Controleren",
+        "d": "Nagaan of je iets goed begrepen hebt, door het te herhalen."
+       },
+       {
+        "t": "Antwoord",
+        "d": "De reactie op een vraag met de gevraagde informatie."
+       },
+       {
+        "t": "Bevestigen",
+        "d": "Laten weten dat iets klopt, bijvoorbeeld that is right."
+       },
+       {
+        "t": "Verduidelijken",
+        "d": "Een uitleg preciezer maken door door te vragen."
+       }
+      ],
+      "sv": [
+       {
+        "v": "Je wilt de prijs weten. Welke vraag stel je?",
+        "o": [
+         "\"How old is it?\"",
+         "\"How much is it?\"",
+         "\"Where is it?\"",
+         "\"What time is it, I think?\""
+        ],
+        "c": 1,
+        "d": 1,
+        "s": 0,
+        "u": "Kies de vraag of het antwoord dat past. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"How old is it?\"\"? Dan denk je dat old naar de prijs vraagt. Old gaat over leeftijd, en niet over geld.",
+         "Klopt: how much vraagt naar een prijs of hoeveelheid.",
+         "Koos je \"\"Where is it?\"\"? Dan kies je een plaatsvraag. Where vraagt naar een plek, en niet naar een bedrag.",
+         "Koos je \"\"What time is it, I think?\"\"? Dan pak je een tijdvraag. What time vraagt naar de klok, en niet naar de prijs."
+        ],
+        "uh": "Je wilt de prijs weten. Welke vraag stel je?"
+       },
+       {
+        "v": "Je wilt weten hoe laat de film begint. Welke vraag past?",
+        "o": [
+         "\"Where does the film start?\"",
+         "\"How much does the film start, to be honest?\"",
+         "\"Who is the film?\"",
+         "\"What time does the film start?\""
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 0,
+        "u": "Kies de vraag of het antwoord dat past. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"Where does the film start?\"\"? Dan denk je dat where een tijd geeft. Where vraagt naar een plek, en niet naar een tijdstip.",
+         "Koos je \"\"How much does the film start, to be honest?\"\"? Dan denk je dat how much een tijd is. How much vraagt naar prijs of hoeveelheid, en past niet bij beginnen.",
+         "Koos je \"\"Who is the film?\"\"? Dan denk je dat who een tijdvraag is. Who vraagt naar een persoon, en een film is geen persoon.",
+         "Klopt: what time vraagt naar het uur waarop iets begint."
+        ],
+        "uh": "Je wilt weten hoe laat de film begint. Welke vraag past?"
+       },
+       {
+        "v": "Je vraagt de weg aan een onbekende. Welke zin is het meest beleefd?",
+        "o": [
+         "\"Excuse me, could you tell me the way to the station?\"",
+         "\"Where is the station, I suppose, really, to be honest?\"",
+         "\"Tell me the way!\"",
+         "\"Station! Where?\""
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 1,
+        "u": "Kies de vraag of het antwoord dat past. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: excuse me en could you tell me maken de vraag beleefd.",
+         "Koos je \"\"Where is the station, I suppose, really, to be honest?\"\"? Dan denk je dat een kale vraag genoeg is. Dit is te kort, en klinkt onbeleefd tegen een onbekende.",
+         "Koos je \"\"Tell me the way!\"\"? Dan denk je dat een bevel past. Dit klinkt bot, en is niet beleefd.",
+         "Koos je \"\"Station! Where?\"\"? Dan denk je dat losse woorden voldoende zijn. Dit is geen goede zin, en klinkt onbeleefd."
+        ],
+        "uh": "Je vraagt de weg aan een onbekende. Welke zin is het meest beleefd?"
+       },
+       {
+        "v": "Een vrouw zegt: 'Take the second street on the left.' Wat doe je?",
+        "o": [
+         "\"je neemt de tweede straat rechts, you know\"",
+         "\"je loopt rechtdoor tot het einde\"",
+         "\"je neemt de tweede straat links\"",
+         "\"je neemt de eerste straat links\""
+        ],
+        "c": 2,
+        "d": 1,
+        "s": 3,
+        "u": "Kies de vraag of het antwoord dat past. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"je neemt de tweede straat rechts, you know\"\"? Dan verwar je left met right. Left is links, en right is rechts.",
+         "Koos je \"\"je loopt rechtdoor tot het einde\"\"? Dan denk je dat het een rechte weg is. Er staat take the street on the left, dus je moet afslaan.",
+         "Klopt: second is tweede en left is links, dus je slaat bij de tweede straat linksaf.",
+         "Koos je \"\"je neemt de eerste straat links\"\"? Dan verwar je second met first. Second is de tweede, dus je slaat de eerste over."
+        ],
+        "uh": "Een vrouw zegt: 'Take the second street on the left.' Wat doe je?"
+       },
+       {
+        "v": "Iemand zegt: 'The bank is next to the post office.' Waar is de bank?",
+        "o": [
+         "\"tegenover het postkantoor\"",
+         "\"naast het postkantoor\"",
+         "\"achter het postkantoor\"",
+         "\"in het postkantoor\""
+        ],
+        "c": 1,
+        "d": 1,
+        "s": 3,
+        "u": "Kies de vraag of het antwoord dat past. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"tegenover het postkantoor\"\"? Dan denk je dat de bank aan de overkant ligt. Opposite is tegenover, terwijl next to naast betekent.",
+         "Klopt: next to betekent naast of vlak bij, dus de bank staat naast het postkantoor.",
+         "Koos je \"\"achter het postkantoor\"\"? Dan kies je een plek erachter. Behind is een andere plek, en next to staat gewoon naast het gebouw.",
+         "Koos je \"\"in het postkantoor\"\"? Dan denk je dat de bank binnen het gebouw zit. Next to zegt niets over binnen, en het gaat om twee losse gebouwen."
+        ],
+        "uh": "Iemand zegt: 'The bank is next to the post office.' Waar is de bank?"
+       },
+       {
+        "v": "Je wordt gevraagd: 'How far is the station?' Welk antwoord past?",
+        "o": [
+         "\"Yes, it is.\"",
+         "\"At six o'clock.\"",
+         "\"Thirty-five euros, I think, I suppose.\"",
+         "\"About ten minutes on foot.\""
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 2,
+        "u": "Kies de vraag of het antwoord dat past. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"Yes, it is.\"\"? Dan denk je dat dit een ja-nee-vraag is. How far vraagt naar afstand, en een ja of nee past niet.",
+         "Koos je \"\"At six o'clock.\"\"? Dan pak je een tijd als antwoord. Dat past bij what time, en niet bij how far.",
+         "Koos je \"\"Thirty-five euros, I think, I suppose.\"\"? Dan pak je een bedrag als antwoord. Dat past bij how much, en niet bij how far.",
+         "Klopt: de vraag gaat over afstand en je antwoordt met een tijd of afstand."
+        ],
+        "uh": "Je wordt gevraagd: 'How far is the station?' Welk antwoord past?"
+       },
+       {
+        "v": "Je verstaat de uitleg niet goed. Wat vraag je beleefd?",
+        "o": [
+         "\"Could you repeat that, please?\"",
+         "\"What are you saying, to be honest?\"",
+         "\"Say it again!\"",
+         "\"I do not care.\""
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 4,
+        "u": "Kies de vraag of het antwoord dat past. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: could you en please maken het een beleefd verzoek om herhaling.",
+         "Koos je \"\"What are you saying, to be honest?\"\"? Dan denk je dat dit beleefd is. Het klinkt geïrriteerd, en is geen verzoek.",
+         "Koos je \"\"Say it again!\"\"? Dan denk je dat een bevel past. Het klinkt bot, en is niet beleefd.",
+         "Koos je \"\"I do not care.\"\"? Dan denk je dat dit een reactie is. Het betekent dat het je niet kan schelen, en lost niets op."
+        ],
+        "uh": "Je verstaat de uitleg niet goed. Wat vraag je beleefd?"
+       },
+       {
+        "v": "How does the tourist ask for the way?",
+        "o": [
+         "\"he shouts at the woman, I suppose\"",
+         "\"he shows a map\"",
+         "\"he uses 'could you tell me'\"",
+         "\"he asks for a taxi\""
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 1,
+        "u": "Kies de vraag of het antwoord dat past. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"he shouts at the woman, I suppose\"\"? Dan denk je dat hij luid is. Hij bedankt en blijft vriendelijk, dus dat klopt niet.",
+         "Koos je \"\"he shows a map\"\"? Dan denk je dat hij een kaart toont. Er wordt geen kaart genoemd, dus je verzint iets.",
+         "Klopt: hij begint met excuse me en could you tell me, een beleefde vraag.",
+         "Koos je \"\"he asks for a taxi\"\"? Dan denk je dat hij een taxi wil. Hij vraagt de weg te voet, dus een taxi is niet nodig."
+        ],
+        "uh": "How does the tourist ask for the way?",
+        "ctx": "You hear a conversation in the street (read the transcript): \"Tourist: Excuse me, could you tell me the way to the station? Woman: Of course. Go straight ahead and take the second street on the left. Tourist: The second on the left. And then? Woman: Then you walk past the post office and the station is on your right, next to the bank. Tourist: Is it far from here? Woman: No, it is about ten minutes on foot. Tourist: Thank you very much. Woman: You are welcome. Oh, one more thing: the ticket office closes at six o'clock, so you must hurry.\""
+       },
+       {
+        "v": "Where must the tourist turn?",
+        "o": [
+         "\"into the first street on the left\"",
+         "\"into the second street on the left\"",
+         "\"into the second street on the right, you know\"",
+         "\"he does not have to turn\""
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 3,
+        "u": "Kies de vraag of het antwoord dat past. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"into the first street on the left\"\"? Dan verwar je second met first. Ze zegt de tweede straat, dus je slaat een straat over.",
+         "Klopt: de vrouw zegt take the second street on the left.",
+         "Koos je \"\"into the second street on the right, you know\"\"? Dan verwar je left met right. Ze zegt links, en niet rechts.",
+         "Koos je \"\"he does not have to turn\"\"? Dan denk je dat rechtdoor genoeg is. Ze zegt eerst rechtdoor en dan links, dus hij moet afslaan."
+        ],
+        "uh": "Where must the tourist turn?",
+        "ctx": "You hear a conversation in the street (read the transcript): \"Tourist: Excuse me, could you tell me the way to the station? Woman: Of course. Go straight ahead and take the second street on the left. Tourist: The second on the left. And then? Woman: Then you walk past the post office and the station is on your right, next to the bank. Tourist: Is it far from here? Woman: No, it is about ten minutes on foot. Tourist: Thank you very much. Woman: You are welcome. Oh, one more thing: the ticket office closes at six o'clock, so you must hurry.\""
+       },
+       {
+        "v": "Where is the station?",
+        "o": [
+         "\"on the left, next to the post office\"",
+         "\"opposite the bank\"",
+         "\"behind the post office\"",
+         "\"on the right, next to the bank\""
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 3,
+        "u": "Kies de vraag of het antwoord dat past. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"on the left, next to the post office\"\"? Dan verwar je links en rechts. Ze zegt rechts, en de bank staat ernaast.",
+         "Koos je \"\"opposite the bank\"\"? Dan verwar je next to met opposite. Ze zegt naast, dus niet tegenover.",
+         "Koos je \"\"behind the post office\"\"? Dan denk je dat het station achter het postkantoor ligt. Ze zegt dat je langs het postkantoor loopt, dus het ligt verder.",
+         "Klopt: de vrouw zegt dat het station rechts ligt, naast de bank."
+        ],
+        "uh": "Where is the station?",
+        "ctx": "You hear a conversation in the street (read the transcript): \"Tourist: Excuse me, could you tell me the way to the station? Woman: Of course. Go straight ahead and take the second street on the left. Tourist: The second on the left. And then? Woman: Then you walk past the post office and the station is on your right, next to the bank. Tourist: Is it far from here? Woman: No, it is about ten minutes on foot. Tourist: Thank you very much. Woman: You are welcome. Oh, one more thing: the ticket office closes at six o'clock, so you must hurry.\""
+       },
+       {
+        "v": "How far is the station?",
+        "o": [
+         "\"about ten minutes on foot\"",
+         "\"about ten minutes by bus, I think\"",
+         "\"about six kilometres\"",
+         "\"just round the corner\""
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 2,
+        "u": "Kies de vraag of het antwoord dat past. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: de vrouw zegt dat het ongeveer tien minuten lopen is.",
+         "Koos je \"\"about ten minutes by bus, I think\"\"? Dan denk je dat het met de bus is. Ze zegt on foot, dus je loopt.",
+         "Koos je \"\"about six kilometres\"\"? Dan denk je dat het een afstand in kilometers is. Ze noemt een tijd, en geen kilometers.",
+         "Koos je \"\"just round the corner\"\"? Dan denk je dat het vlakbij is. Tien minuten lopen is niet om de hoek, dus dit past niet."
+        ],
+        "uh": "How far is the station?",
+        "ctx": "You hear a conversation in the street (read the transcript): \"Tourist: Excuse me, could you tell me the way to the station? Woman: Of course. Go straight ahead and take the second street on the left. Tourist: The second on the left. And then? Woman: Then you walk past the post office and the station is on your right, next to the bank. Tourist: Is it far from here? Woman: No, it is about ten minutes on foot. Tourist: Thank you very much. Woman: You are welcome. Oh, one more thing: the ticket office closes at six o'clock, so you must hurry.\""
+       },
+       {
+        "v": "How much is the first backpack?",
+        "o": [
+         "\"40 euros, to be honest\"",
+         "\"30 euros\"",
+         "\"35 euros\"",
+         "\"53 euros\""
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 2,
+        "u": "Kies de vraag of het antwoord dat past. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"40 euros, to be honest\"\"? Dan denk je dat de eerste tas veertig kost. Veertig is de prijs van de blauwe tas, en niet van de eerste.",
+         "Koos je \"\"30 euros\"\"? Dan denk je dat het dertig is. Er staat thirty-five, dus dertig klopt niet.",
+         "Klopt: de verkoper zegt dat die tas vijfendertig euro kost.",
+         "Koos je \"\"53 euros\"\"? Dan draai je de cijfers om. Thirty-five is 35, en niet 53."
+        ],
+        "uh": "How much is the first backpack?",
+        "ctx": "You hear a conversation in a shop (read the transcript): \"Customer: Good morning. How much is this backpack? Assistant: That one costs thirty-five euros. Customer: Do you have it in another colour? Assistant: Yes, we have it in blue, black and red. Customer: Can I try the blue one? Assistant: Of course. Here you are. It is a bit more expensive, because it is waterproof. It costs forty euros. Customer: Hmm, that is more than I wanted to pay. Do you accept cards? Assistant: Yes, but not credit cards. Only debit cards and cash.\""
+       },
+       {
+        "v": "Why is the blue backpack more expensive?",
+        "o": [
+         "\"it is bigger\"",
+         "\"it is waterproof\"",
+         "\"it is new\"",
+         "\"it is a famous brand\""
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 2,
+        "u": "Kies de vraag of het antwoord dat past. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"it is bigger\"\"? Dan denk je dat de maat het prijsverschil maakt. De verkoper noemt geen grootte, maar de eigenschap waterproof.",
+         "Klopt: de verkoper noemt waterproof als reden voor de hogere prijs.",
+         "Koos je \"\"it is new\"\"? Dan pak je een verzonnen reden. Nieuw wordt niet genoemd, en is dus niet de verklaring.",
+         "Koos je \"\"it is a famous brand\"\"? Dan vermoed je dat een bekend merk duurder is. Er valt geen merknaam, dus de reden is waterproof."
+        ],
+        "uh": "Why is the blue backpack more expensive?",
+        "ctx": "You hear a conversation in a shop (read the transcript): \"Customer: Good morning. How much is this backpack? Assistant: That one costs thirty-five euros. Customer: Do you have it in another colour? Assistant: Yes, we have it in blue, black and red. Customer: Can I try the blue one? Assistant: Of course. Here you are. It is a bit more expensive, because it is waterproof. It costs forty euros. Customer: Hmm, that is more than I wanted to pay. Do you accept cards? Assistant: Yes, but not credit cards. Only debit cards and cash.\""
+       },
+       {
+        "v": "Which question does the customer ask about payment?",
+        "o": [
+         "\"How much is it?\"",
+         "\"Can I try it?\"",
+         "\"Is it waterproof, you know?\"",
+         "\"Do you accept cards?\""
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 1,
+        "u": "Kies de vraag of het antwoord dat past. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"How much is it?\"\"? Dan denk je dat dit over betaling gaat. Dit vraagt naar een prijs, en niet naar betaalmiddelen.",
+         "Koos je \"\"Can I try it?\"\"? Dan denk je dat dit over betalen gaat. Dit vraagt naar uitproberen, en niet naar betalen.",
+         "Koos je \"\"Is it waterproof, you know?\"\"? Dan denk je dat dit over betalen gaat. Dit vraagt naar een eigenschap, en niet naar betaalmiddelen.",
+         "Klopt: de klant vraagt of ze pinpassen accepteren."
+        ],
+        "uh": "Which question does the customer ask about payment?",
+        "ctx": "You hear a conversation in a shop (read the transcript): \"Customer: Good morning. How much is this backpack? Assistant: That one costs thirty-five euros. Customer: Do you have it in another colour? Assistant: Yes, we have it in blue, black and red. Customer: Can I try the blue one? Assistant: Of course. Here you are. It is a bit more expensive, because it is waterproof. It costs forty euros. Customer: Hmm, that is more than I wanted to pay. Do you accept cards? Assistant: Yes, but not credit cards. Only debit cards and cash.\""
+       },
+       {
+        "v": "What time are the screenings?",
+        "o": [
+         "\"at 4.15 and 8.00\"",
+         "\"at 4.00 and 8.15, really\"",
+         "\"at 2.00 and 6.00\"",
+         "\"at 4.15 and 6.00\""
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 2,
+        "u": "Kies de vraag of het antwoord dat past. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: de medewerker noemt vier uur vijftien en acht uur.",
+         "Koos je \"\"at 4.00 and 8.15, really\"\"? Dan denk je dat de minuten bij de verkeerde tijd horen. Het is 4.15 en 8.00, en je verwisselt ze.",
+         "Koos je \"\"at 2.00 and 6.00\"\"? Dan denk je dat de tijden vroeger zijn. Er staat four fifteen en eight, dus 2 en 6 kloppen niet.",
+         "Koos je \"\"at 4.15 and 6.00\"\"? Dan denk je dat de tweede voorstelling om zes begint. De avondvoorstelling is om acht, en niet om zes."
+        ],
+        "uh": "What time are the screenings?",
+        "ctx": "You hear a phone call to a cinema (read the transcript): \"Caller: Hello, I would like some information about tomorrow's film. What time does it start? Employee: There are two screenings: at four fifteen and at eight o'clock. Caller: How long does the film last? Employee: About two hours. Caller: And how much are the tickets? Employee: Adults pay nine euros and children under twelve pay six euros. Caller: Do I have to book in advance? Employee: It is not necessary, but I advise you to book online, because the evening screening is often full. Caller: Thanks, that is very helpful.\""
+       },
+       {
+        "v": "How much do children under twelve pay?",
+        "o": [
+         "\"9 euros\"",
+         "\"nothing\"",
+         "\"6 euros\"",
+         "\"12 euros, I think\""
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 2,
+        "u": "Kies de vraag of het antwoord dat past. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"9 euros\"\"? Dan denk je dat kinderen negen betalen. Negen is de prijs voor volwassenen, en niet voor kinderen.",
+         "Koos je \"\"nothing\"\"? Dan denk je dat kinderen gratis zijn. Er staat dat zij zes euro betalen, dus ze zijn niet gratis.",
+         "Klopt: de medewerker zegt dat kinderen onder de twaalf zes euro betalen.",
+         "Koos je \"\"12 euros, I think\"\"? Dan denk je dat de leeftijd de prijs is. Twaalf is de leeftijdsgrens, en niet het bedrag."
+        ],
+        "uh": "How much do children under twelve pay?",
+        "ctx": "You hear a phone call to a cinema (read the transcript): \"Caller: Hello, I would like some information about tomorrow's film. What time does it start? Employee: There are two screenings: at four fifteen and at eight o'clock. Caller: How long does the film last? Employee: About two hours. Caller: And how much are the tickets? Employee: Adults pay nine euros and children under twelve pay six euros. Caller: Do I have to book in advance? Employee: It is not necessary, but I advise you to book online, because the evening screening is often full. Caller: Thanks, that is very helpful.\""
+       },
+       {
+        "v": "What does the employee advise?",
+        "o": [
+         "\"to come without a ticket\"",
+         "\"to book online\"",
+         "\"to call again later\"",
+         "\"to take a child\""
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 4,
+        "u": "Kies de vraag of het antwoord dat past. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"to come without a ticket\"\"? Dan denk je dat je zonder kaartje kunt komen. Ze raadt juist aan te boeken, omdat het vol kan zijn.",
+         "Klopt: ze zegt I advise you to book online omdat de avondvoorstelling vaak vol is.",
+         "Koos je \"\"to call again later\"\"? Dan denk je dat je later moet bellen. Er wordt geen later bellen genoemd, dus dat klopt niet.",
+         "Koos je \"\"to take a child\"\"? Dan denk je dat je een kind mee moet nemen. Dit wordt niet geadviseerd, dus het is verzonnen."
+        ],
+        "uh": "What does the employee advise?",
+        "ctx": "You hear a phone call to a cinema (read the transcript): \"Caller: Hello, I would like some information about tomorrow's film. What time does it start? Employee: There are two screenings: at four fifteen and at eight o'clock. Caller: How long does the film last? Employee: About two hours. Caller: And how much are the tickets? Employee: Adults pay nine euros and children under twelve pay six euros. Caller: Do I have to book in advance? Employee: It is not necessary, but I advise you to book online, because the evening screening is often full. Caller: Thanks, that is very helpful.\""
+       },
+       {
+        "v": "Which question is the most polite way to ask about the ticket office?",
+        "o": [
+         "\"When closes the ticket office, I suppose, really, to be honest?\"",
+         "\"Tell me when it closes.\"",
+         "\"Ticket office closes?\"",
+         "\"Could you tell me when the ticket office closes?\""
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 1,
+        "u": "Kies de vraag of het antwoord dat past. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"When closes the ticket office, I suppose, really, to be honest?\"\"? Dan denk je dat dit een goede vraag is. De woordvolgorde klopt niet, en het is niet beleefd.",
+         "Koos je \"\"Tell me when it closes.\"\"? Dan denk je dat een bevel past. Het klinkt bot, en is geen beleefde vraag.",
+         "Koos je \"\"Ticket office closes?\"\"? Dan denk je dat een half zinnetje genoeg is. Het is te kort, en onbeleefd.",
+         "Klopt: could you tell me is beleefd en de zin is goed opgebouwd."
+        ],
+        "uh": "Which question is the most polite way to ask about the ticket office?",
+        "ctx": "You hear a conversation in the street (read the transcript): \"Tourist: Excuse me, could you tell me the way to the station? Woman: Of course. Go straight ahead and take the second street on the left. Tourist: The second on the left. And then? Woman: Then you walk past the post office and the station is on your right, next to the bank. Tourist: Is it far from here? Woman: No, it is about ten minutes on foot. Tourist: Thank you very much. Woman: You are welcome. Oh, one more thing: the ticket office closes at six o'clock, so you must hurry.\""
+       },
+       {
+        "v": "The woman says: 'Go straight ahead.' What must the tourist do?",
+        "o": [
+         "\"keep walking without turning\"",
+         "\"turn around\"",
+         "\"turn left at once, you know, I think\"",
+         "\"stop and wait\""
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 3,
+        "u": "Kies de vraag of het antwoord dat past. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: straight ahead betekent rechtdoor, dus je blijft in dezelfde richting lopen.",
+         "Koos je \"\"turn around\"\"? Dan denk je dat je moet omdraaien. Straight ahead is vooruit, en niet terug.",
+         "Koos je \"\"turn left at once, you know, I think\"\"? Dan denk je dat je meteen links moet. Eerst loop je rechtdoor, en pas daarna ga je links.",
+         "Koos je \"\"stop and wait\"\"? Dan denk je dat je moet stoppen. Je moet juist doorlopen, dus stilstaan klopt niet."
+        ],
+        "uh": "The woman says: 'Go straight ahead.' What must the tourist do?",
+        "ctx": "You hear a conversation in the street (read the transcript): \"Tourist: Excuse me, could you tell me the way to the station? Woman: Of course. Go straight ahead and take the second street on the left. Tourist: The second on the left. And then? Woman: Then you walk past the post office and the station is on your right, next to the bank. Tourist: Is it far from here? Woman: No, it is about ten minutes on foot. Tourist: Thank you very much. Woman: You are welcome. Oh, one more thing: the ticket office closes at six o'clock, so you must hurry.\""
+       },
+       {
+        "v": "The tourist says: 'The second on the left. And then?' What does he do?",
+        "o": [
+         "\"he refuses to go\"",
+         "\"he changes the subject\"",
+         "\"he repeats the information and asks for more\"",
+         "\"he thanks the woman and leaves, really, to be honest\""
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 4,
+        "u": "Kies de vraag of het antwoord dat past. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"he refuses to go\"\"? Dan denk je dat hij niet wil gaan. Hij vraagt juist verder, dus hij wil door.",
+         "Koos je \"\"he changes the subject\"\"? Dan denk je dat hij het over iets anders heeft. Hij blijft bij de route, dus er is geen ander onderwerp.",
+         "Klopt: hij herhaalt om te controleren en vraagt naar de volgende stap.",
+         "Koos je \"\"he thanks the woman and leaves, really, to be honest\"\"? Dan denk je dat het gesprek al klaar is. Hij vraagt nog and then, dus hij is nog niet klaar."
+        ],
+        "uh": "The tourist says: 'The second on the left. And then?' What does he do?",
+        "ctx": "You hear a conversation in the street (read the transcript): \"Tourist: Excuse me, could you tell me the way to the station? Woman: Of course. Go straight ahead and take the second street on the left. Tourist: The second on the left. And then? Woman: Then you walk past the post office and the station is on your right, next to the bank. Tourist: Is it far from here? Woman: No, it is about ten minutes on foot. Tourist: Thank you very much. Woman: You are welcome. Oh, one more thing: the ticket office closes at six o'clock, so you must hurry.\""
+       },
+       {
+        "v": "Which question asks for another colour?",
+        "o": [
+         "\"How much is it?\"",
+         "\"Do you have it in another colour?\"",
+         "\"Do you accept cards, I think, I suppose?\"",
+         "\"Can I pay later?\""
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 0,
+        "u": "Kies de vraag of het antwoord dat past. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"How much is it?\"\"? Dan denk je dat dit naar de kleur vraagt. Dit vraagt naar de prijs, en niet naar kleuren.",
+         "Klopt: another colour vraagt om een andere kleur.",
+         "Koos je \"\"Do you accept cards, I think, I suppose?\"\"? Dan denk je dat dit naar de kleur vraagt. Dit gaat over betalen, en niet over kleur.",
+         "Koos je \"\"Can I pay later?\"\"? Dan denk je dat dit naar de kleur vraagt. Dit gaat over later betalen, en niet over kleur."
+        ],
+        "uh": "Which question asks for another colour?",
+        "ctx": "You hear a conversation in a shop (read the transcript): \"Customer: Good morning. How much is this backpack? Assistant: That one costs thirty-five euros. Customer: Do you have it in another colour? Assistant: Yes, we have it in blue, black and red. Customer: Can I try the blue one? Assistant: Of course. Here you are. It is a bit more expensive, because it is waterproof. It costs forty euros. Customer: Hmm, that is more than I wanted to pay. Do you accept cards? Assistant: Yes, but not credit cards. Only debit cards and cash.\""
+       },
+       {
+        "v": "The assistant says: 'It is a bit more expensive, because it is waterproof.' What does 'because' introduce?",
+        "o": [
+         "\"a question\"",
+         "\"a greeting\"",
+         "\"the colour of the bag, to be honest\"",
+         "\"the reason for the price\""
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 2,
+        "u": "Kies de vraag of het antwoord dat past. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"a question\"\"? Dan denk je dat because een vraag inleidt. Het begint een reden, en geen vraag.",
+         "Koos je \"\"a greeting\"\"? Dan denk je dat because een groet is. Het geeft een reden, en geen begroeting.",
+         "Koos je \"\"the colour of the bag, to be honest\"\"? Dan denk je dat because een kleur noemt. Het noemt een reden, en geen kleur.",
+         "Klopt: because leidt een reden in, hier de reden van de hogere prijs."
+        ],
+        "uh": "The assistant says: 'It is a bit more expensive, because it is waterproof.' What does 'because' introduce?",
+        "ctx": "You hear a conversation in a shop (read the transcript): \"Customer: Good morning. How much is this backpack? Assistant: That one costs thirty-five euros. Customer: Do you have it in another colour? Assistant: Yes, we have it in blue, black and red. Customer: Can I try the blue one? Assistant: Of course. Here you are. It is a bit more expensive, because it is waterproof. It costs forty euros. Customer: Hmm, that is more than I wanted to pay. Do you accept cards? Assistant: Yes, but not credit cards. Only debit cards and cash.\""
+       },
+       {
+        "v": "How does the customer feel about the price of the blue backpack?",
+        "o": [
+         "\"it is more than the customer wanted to pay\"",
+         "\"it is a bargain\"",
+         "\"it is exactly right, I suppose, really, to be honest\"",
+         "\"it is very cheap\""
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 4,
+        "u": "Kies de vraag of het antwoord dat past. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: de klant zegt that is more than I wanted to pay.",
+         "Koos je \"\"it is a bargain\"\"? Dan denk je dat de klant blij is. Hij zegt juist dat het te veel is, dus het is geen koopje.",
+         "Koos je \"\"it is exactly right, I suppose, really, to be honest\"\"? Dan denk je dat het precies goed is. De klant noemt het te duur, dus het past niet.",
+         "Koos je \"\"it is very cheap\"\"? Dan denk je dat het goedkoop is. De klant zegt het is meer dan gewenst, dus het is duurder."
+        ],
+        "uh": "How does the customer feel about the price of the blue backpack?",
+        "ctx": "You hear a conversation in a shop (read the transcript): \"Customer: Good morning. How much is this backpack? Assistant: That one costs thirty-five euros. Customer: Do you have it in another colour? Assistant: Yes, we have it in blue, black and red. Customer: Can I try the blue one? Assistant: Of course. Here you are. It is a bit more expensive, because it is waterproof. It costs forty euros. Customer: Hmm, that is more than I wanted to pay. Do you accept cards? Assistant: Yes, but not credit cards. Only debit cards and cash.\""
+       },
+       {
+        "v": "Which question asks about the length of the film?",
+        "o": [
+         "\"What time does it start?\"",
+         "\"How much are the tickets, you know?\"",
+         "\"How long does the film last?\"",
+         "\"Where is the cinema?\""
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 0,
+        "u": "Kies de vraag of het antwoord dat past. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"What time does it start?\"\"? Dan denk je dat dit naar de duur vraagt. Dit vraagt naar het beginuur, en niet naar de duur.",
+         "Koos je \"\"How much are the tickets, you know?\"\"? Dan denk je dat dit naar de duur vraagt. Dit vraagt naar de prijs, en niet naar de duur.",
+         "Klopt: how long vraagt naar de duur van iets.",
+         "Koos je \"\"Where is the cinema?\"\"? Dan denk je dat dit naar de duur vraagt. Dit vraagt naar de plaats, en niet naar de duur."
+        ],
+        "uh": "Which question asks about the length of the film?",
+        "ctx": "You hear a phone call to a cinema (read the transcript): \"Caller: Hello, I would like some information about tomorrow's film. What time does it start? Employee: There are two screenings: at four fifteen and at eight o'clock. Caller: How long does the film last? Employee: About two hours. Caller: And how much are the tickets? Employee: Adults pay nine euros and children under twelve pay six euros. Caller: Do I have to book in advance? Employee: It is not necessary, but I advise you to book online, because the evening screening is often full. Caller: Thanks, that is very helpful.\""
+       },
+       {
+        "v": "How much do two adults and one child of seven pay?",
+        "o": [
+         "\"18 euros, really\"",
+         "\"24 euros\"",
+         "\"21 euros\"",
+         "\"30 euros\""
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 2,
+        "u": "Kies de vraag of het antwoord dat past. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"18 euros, really\"\"? Dan denk je dat het kind gratis is. Een kind onder twaalf betaalt zes euro, dus je telt het niet mee.",
+         "Klopt: twee volwassenen betalen 9 + 9 en het kind 6, samen 24 euro.",
+         "Koos je \"\"21 euros\"\"? Dan tel je een volwassene en twee kinderen. Er zijn twee volwassenen en één kind, dus 9 + 9 + 6.",
+         "Koos je \"\"30 euros\"\"? Dan tel je alle drie als volwassenen. Het kind betaalt zes en niet negen, dus het totaal is lager."
+        ],
+        "uh": "How much do two adults and one child of seven pay?",
+        "ctx": "You hear a phone call to a cinema (read the transcript): \"Caller: Hello, I would like some information about tomorrow's film. What time does it start? Employee: There are two screenings: at four fifteen and at eight o'clock. Caller: How long does the film last? Employee: About two hours. Caller: And how much are the tickets? Employee: Adults pay nine euros and children under twelve pay six euros. Caller: Do I have to book in advance? Employee: It is not necessary, but I advise you to book online, because the evening screening is often full. Caller: Thanks, that is very helpful.\""
+       },
+       {
+        "v": "'Do I have to book in advance?' What does the caller want to know?",
+        "o": [
+         "\"whether the film is long\"",
+         "\"whether the cinema is far, I think, I suppose\"",
+         "\"whether children can come\"",
+         "\"whether booking before is necessary\""
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 0,
+        "u": "Kies de vraag of het antwoord dat past. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"whether the film is long\"\"? Dan denk je dat de beller de duur vraagt. Hij vraagt of je moet reserveren, en dat is iets anders.",
+         "Koos je \"\"whether the cinema is far, I think, I suppose\"\"? Dan denk je dat het om afstand gaat. De vraag gaat over reserveren, en niet over afstand.",
+         "Koos je \"\"whether children can come\"\"? Dan denk je dat het om kinderen gaat. De vraag gaat over reserveren, en niet over kinderen.",
+         "Klopt: in advance betekent van tevoren, en have to betekent moeten."
+        ],
+        "uh": "'Do I have to book in advance?' What does the caller want to know?",
+        "ctx": "You hear a phone call to a cinema (read the transcript): \"Caller: Hello, I would like some information about tomorrow's film. What time does it start? Employee: There are two screenings: at four fifteen and at eight o'clock. Caller: How long does the film last? Employee: About two hours. Caller: And how much are the tickets? Employee: Adults pay nine euros and children under twelve pay six euros. Caller: Do I have to book in advance? Employee: It is not necessary, but I advise you to book online, because the evening screening is often full. Caller: Thanks, that is very helpful.\""
+       },
+       {
+        "v": "The caller says: 'Thanks, that is very helpful.' What does this show?",
+        "o": [
+         "\"the caller has the information he or she needed\"",
+         "\"the caller is angry\"",
+         "\"the caller wants to ask more\"",
+         "\"the caller does not understand, to be honest, you know\""
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 4,
+        "u": "Kies de vraag of het antwoord dat past. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: helpful betekent behulpzaam, dus de beller heeft wat hij of zij wilde weten.",
+         "Koos je \"\"the caller is angry\"\"? Dan denk je dat de beller boos is. Hij bedankt vriendelijk, dus er is geen boosheid.",
+         "Koos je \"\"the caller wants to ask more\"\"? Dan denk je dat er meer vragen komen. De woorden sluiten het gesprek af, dus de beller is klaar.",
+         "Koos je \"\"the caller does not understand, to be honest, you know\"\"? Dan denk je dat de beller het niet snapt. Helpful laat juist zien dat het duidelijk was, dus er is geen verwarring."
+        ],
+        "uh": "The caller says: 'Thanks, that is very helpful.' What does this show?",
+        "ctx": "You hear a phone call to a cinema (read the transcript): \"Caller: Hello, I would like some information about tomorrow's film. What time does it start? Employee: There are two screenings: at four fifteen and at eight o'clock. Caller: How long does the film last? Employee: About two hours. Caller: And how much are the tickets? Employee: Adults pay nine euros and children under twelve pay six euros. Caller: Do I have to book in advance? Employee: It is not necessary, but I advise you to book online, because the evening screening is often full. Caller: Thanks, that is very helpful.\""
+       }
+      ],
+      "oe": [
+       {
+        "bron": "Examenstijl",
+        "ctx": "You are on holiday in a new town and you want to find the library. You see a friendly woman standing at a bus stop. You do not know where the library is, but you do know that it is somewhere near the market square.",
+        "v": "Write a polite question in English to ask the way to the library.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Excuse me (1p). Could you tell me the way to the library (1p). Een beleefde en juiste vraag (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "You are in a clothes shop and you really like a black jacket, but you cannot find a price tag and the jacket seems a bit too big for you. The shop assistant is standing next to you and you want to know what the jacket costs and if there is a smaller size.",
+        "v": "Write two questions in English that you ask the shop assistant.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "How much is this jacket (1p). Do you have it in a smaller size (1p). Beleefd geformuleerd (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "You want to go swimming with your little brother, who is ten years old, next Saturday. You phone the swimming pool and a friendly employee answers the phone. You want to know the opening time on Saturday and the price for a child of ten.",
+        "v": "Write two questions in English that you ask on the phone.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "What time does the pool open on Saturday (1p). How much is a ticket for a child (1p). Duidelijke vraagwoorden (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "A man says: \"Go straight ahead, take the first street on the right and then the shop is on your left, next to the baker.\" You are not sure that you understood him.",
+        "v": "Write a sentence in English to check the information and explain how you do that.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "So the first street on the right, and then the shop is on my left? (1p). Ik herhaal om te controleren (1p). Eventueel could you repeat that (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Your friend says: \"When I do not understand the answer, I just say thanks and walk away.\" You do not agree.",
+        "v": "Write two sentences in English that explain why asking again is better, with an example.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Je mist anders informatie (1p). Voorbeeld: Could you repeat that, please (1p). Een duidelijke uitleg (1p)."
+       }
+      ]
      }
     ]
    },
