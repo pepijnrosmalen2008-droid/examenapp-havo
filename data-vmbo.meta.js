@@ -1067,6 +1067,27 @@ var VAKKEN_VMBO = [
       "nOe": 5,
       "nBeg": 12,
       "hasSam": true
+     },
+     {
+      "id": "C5",
+      "lo": "en.C.5",
+      "gs": 2,
+      "naam": "Je mening geven en onderbouwen",
+      "beschrijving": "Je leert in het Engels je mening te geven en te onderbouwen: je gebruikt I think en because, geeft een extra argument met besides, erkent een tegenargument beleefd, bent het eens of oneens en zoekt een compromis.",
+      "ceStatus": "SE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Een mening geven",
+       "Een reden geven",
+       "Eens of oneens",
+       "Een argument erkennen",
+       "Een compromis zoeken"
+      ],
+      "nSv": 27,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
      }
     ]
    },

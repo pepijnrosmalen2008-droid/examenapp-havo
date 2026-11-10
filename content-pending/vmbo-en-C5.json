@@ -1,0 +1,682 @@
+{
+ "id": "C5",
+ "lo": "en.C.5",
+ "gs": 2,
+ "naam": "Je mening geven en onderbouwen",
+ "beschrijving": "Je leert in het Engels je mening te geven en te onderbouwen: je gebruikt I think en because, geeft een extra argument met besides, erkent een tegenargument beleefd, bent het eens of oneens en zoekt een compromis.",
+ "ceStatus": "SE",
+ "binas": "",
+ "val": "",
+ "onderwerpen": [
+  "Een mening geven",
+  "Een reden geven",
+  "Eens of oneens",
+  "Een argument erkennen",
+  "Een compromis zoeken"
+ ],
+ "sam": "Een mening geef je met I think of in my opinion en je onderbouwt hem met because. Een extra argument voeg je toe met besides. Je kunt het eens of oneens zijn en beleefd zeggen: I see your point, but. Een compromis zoek je met maybe we can en een voorwaarde met as long as.",
+ "begrippen": [
+  {
+   "t": "Mening",
+   "d": "Wat je vindt, bijvoorbeeld I think of in my opinion."
+  },
+  {
+   "t": "Reden",
+   "d": "Waarom je dat vindt, na because."
+  },
+  {
+   "t": "Argument",
+   "d": "Een reden die je mening ondersteunt."
+  },
+  {
+   "t": "Eens zijn",
+   "d": "Instemmen, bijvoorbeeld I agree."
+  },
+  {
+   "t": "Oneens zijn",
+   "d": "Het er niet mee eens zijn, bijvoorbeeld I disagree of not really."
+  },
+  {
+   "t": "Erkennen",
+   "d": "Zeggen dat iets klopt, bijvoorbeeld that is a good point."
+  },
+  {
+   "t": "Tegenargument",
+   "d": "Een argument tegen wat de ander zegt, na but."
+  },
+  {
+   "t": "Bovendien",
+   "d": "Een extra argument met besides of also."
+  },
+  {
+   "t": "Compromis",
+   "d": "Een middenweg waarmee beide partijen tevreden zijn."
+  },
+  {
+   "t": "Voorwaarde",
+   "d": "Iets wat eerst moet gebeuren, na as long as."
+  },
+  {
+   "t": "Beleefd",
+   "d": "Netjes oneens zijn, bijvoorbeeld I see your point, but."
+  },
+  {
+   "t": "Overtuigen",
+   "d": "Iemand van je mening laten veranderen met argumenten."
+  }
+ ],
+ "sv": [
+  {
+   "v": "Welke zin geeft een mening?",
+   "o": [
+    "\"The shop opens at nine.\"",
+    "\"In my opinion, it is a good idea.\"",
+    "\"I bought a new phone.\"",
+    "\"There are twenty pupils in the class.\""
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 0,
+   "u": "Let op de mening en de reden. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"The shop opens at nine.\"\"? Dan denk je dat een openingstijd een mening is. Dit kun je controleren, dus het is een feit.",
+    "Klopt: in my opinion kondigt een eigen oordeel aan.",
+    "Koos je \"\"I bought a new phone.\"\"? Dan denk je dat dit een mening is. Dit vertelt wat er gebeurd is, en dat is een feit.",
+    "Koos je \"\"There are twenty pupils in the class.\"\"? Dan pak je een aantal als mening. Je kunt tellen hoeveel leerlingen er zijn, dus het is een feit."
+   ],
+   "uh": "Welke zin geeft een mening?"
+  },
+  {
+   "v": "Hoe begin je een zin waarin je je mening geeft?",
+   "o": [
+    "\"Yesterday I...\"",
+    "\"Please give me...\"",
+    "\"Excuse me, where...\"",
+    "\"I think that...\""
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 0,
+   "u": "Let op de mening en de reden. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"Yesterday I...\"\"? Dan denk je dat yesterday een mening begint. Het begint een verhaal over gisteren, en geen oordeel.",
+    "Koos je \"\"Please give me...\"\"? Dan denk je dat please een mening inleidt. Het begint een verzoek, en geen oordeel.",
+    "Koos je \"\"Excuse me, where...\"\"? Dan denk je dat excuse me een mening inleidt. Het begint een vraag naar informatie, en geen oordeel.",
+    "Klopt: i think that is een vaste manier om je mening te openen."
+   ],
+   "uh": "Hoe begin je een zin waarin je je mening geeft?"
+  },
+  {
+   "v": "Welk woord leidt een reden in?",
+   "o": [
+    "\"because\"",
+    "\"but\"",
+    "\"then\"",
+    "\"also\""
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 1,
+   "u": "Let op de mening en de reden. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: because betekent omdat en noemt de reden van je mening.",
+    "Koos je \"\"but\"\"? Dan denk je dat but een reden inleidt. But toont een tegenstelling, en geen reden.",
+    "Koos je \"\"then\"\"? Dan denk je dat then een reden is. Then geeft een volgorde aan, en geen oorzaak.",
+    "Koos je \"\"also\"\"? Dan denk je dat also een reden inleidt. Also voegt iets toe, maar geeft geen oorzaak."
+   ],
+   "uh": "Welk woord leidt een reden in?"
+  },
+  {
+   "v": "Iemand zegt: 'I think school uniforms are boring.' Jij vindt dat ook. Wat zeg je?",
+   "o": [
+    "\"I disagree.\"",
+    "\"Not at all.\"",
+    "\"I agree with you.\"",
+    "\"That is wrong, you know.\""
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 2,
+   "u": "Let op de mening en de reden. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"I disagree.\"\"? Dan draai je het om. I disagree betekent dat je het oneens bent, en dat is niet wat je vindt.",
+    "Koos je \"\"Not at all.\"\"? Dan denk je dat not at all instemming is. Het betekent helemaal niet, en klinkt als een ontkenning.",
+    "Klopt: i agree with you is de vaste zin om het eens te zijn.",
+    "Koos je \"\"That is wrong, you know.\"\"? Dan denk je dat dit past. Het zegt dat de ander ongelijk heeft, terwijl je het eens bent."
+   ],
+   "uh": "Iemand zegt: 'I think school uniforms are boring.' Jij vindt dat ook. Wat zeg je?"
+  },
+  {
+   "v": "Je bent het er niet mee eens, maar je wilt beleefd blijven. Welke zin past?",
+   "o": [
+    "\"You are stupid.\"",
+    "\"I see your point, but I do not agree.\"",
+    "\"That is nonsense, really, to be honest!\"",
+    "\"Nobody asked you.\""
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 2,
+   "u": "Let op de mening en de reden. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"You are stupid.\"\"? Dan denk je dat een scheldwoord een mening is. Dit beledigt de ander, en is niet beleefd.",
+    "Klopt: je erkent het argument en zegt dan beleefd dat je het anders ziet.",
+    "Koos je \"\"That is nonsense, really, to be honest!\"\"? Dan denk je dat een uitroep voldoende is. Dit klinkt agressief, en geeft geen reden.",
+    "Koos je \"\"Nobody asked you.\"\"? Dan denk je dat afwijzen mag. Dit sluit de ander buiten, en is onbeleefd."
+   ],
+   "uh": "Je bent het er niet mee eens, maar je wilt beleefd blijven. Welke zin past?"
+  },
+  {
+   "v": "Een klasgenoot zegt: 'That is a good point.' Wat vindt hij?",
+   "o": [
+    "\"dat het argument onzin is\"",
+    "\"dat hij het gesprek wil stoppen, I think\"",
+    "\"dat hij boos is\"",
+    "\"dat het argument van de ander klopt\""
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 3,
+   "u": "Let op de mening en de reden. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"dat het argument onzin is\"\"? Dan denk je dat good point sarcastisch is. Het betekent echt dat het argument goed is, en niet dat het onzin is.",
+    "Koos je \"\"dat hij het gesprek wil stoppen, I think\"\"? Dan denk je dat good point een afsluiting is. Hij reageert op het argument, en wil verder praten.",
+    "Koos je \"\"dat hij boos is\"\"? Dan denk je dat good point boosheid is. De woorden zijn positief, en niet boos.",
+    "Klopt: a good point is een goed argument dat je erkent."
+   ],
+   "uh": "Een klasgenoot zegt: 'That is a good point.' Wat vindt hij?"
+  },
+  {
+   "v": "Twee vrienden willen iets anders. Welke zin zoekt een compromis?",
+   "o": [
+    "\"Maybe we can do both.\"",
+    "\"I always get my way.\"",
+    "\"You are wrong.\"",
+    "\"I will not change my mind.\""
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 4,
+   "u": "Let op de mening en de reden. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: maybe we can zoekt een oplossing waarin beide partijen iets krijgen.",
+    "Koos je \"\"I always get my way.\"\"? Dan denk je dat dit een compromis is. Het zegt dat jij altijd wint, en dat is geen compromis.",
+    "Koos je \"\"You are wrong.\"\"? Dan denk je dat dit een compromis is. Het geeft de ander ongelijk, en zoekt geen midden.",
+    "Koos je \"\"I will not change my mind.\"\"? Dan denk je dat dit een compromis is. Het sluit elke verandering uit, en zoekt geen midden."
+   ],
+   "uh": "Twee vrienden willen iets anders. Welke zin zoekt een compromis?"
+  },
+  {
+   "v": "What is Ali's opinion about school uniforms?",
+   "o": [
+    "\"he thinks they are boring\"",
+    "\"he does not care\"",
+    "\"he thinks they are a good idea\"",
+    "\"he thinks they are too expensive\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 0,
+   "u": "Let op de mening en de reden. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"he thinks they are boring\"\"? Dan verwar je Ali met Nina. Nina vindt ze saai, en Ali vindt ze goed.",
+    "Koos je \"\"he does not care\"\"? Dan denk je dat Ali geen mening heeft. Hij zegt in my opinion, dus hij heeft er een.",
+    "Klopt: ali zegt in my opinion, school uniforms are a good idea.",
+    "Koos je \"\"he thinks they are too expensive\"\"? Dan verwar je Ali met Nina. Nina noemt de prijs, en Ali ziet voordelen."
+   ],
+   "uh": "What is Ali's opinion about school uniforms?",
+   "ctx": "You hear a class discussion (read the transcript): \"Teacher: Today we are talking about school uniforms. What do you think, Ali? Ali: In my opinion, school uniforms are a good idea, because everybody looks the same and nobody is bullied about clothes. Teacher: Do you agree, Nina? Nina: Not really. I think uniforms are boring, and I like to show my own style. Besides, they are expensive. Ali: That is true, but most schools have second-hand uniforms. Nina: I see your point, but I still prefer my own clothes. Teacher: Thank you both. Both opinions are interesting.\""
+  },
+  {
+   "v": "Why does Ali like uniforms?",
+   "o": [
+    "\"they are cheap\"",
+    "\"everybody looks the same and nobody is bullied about clothes\"",
+    "\"they are fashionable, you know, I think, I suppose\"",
+    "\"they are warm\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 1,
+   "u": "Let op de mening en de reden. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"they are cheap\"\"? Dan denk je dat Ali de prijs noemt. De prijs is een argument van Nina, en Ali noemt andere redenen.",
+    "Klopt: dit zijn de twee redenen die Ali na because noemt voor uniformen.",
+    "Koos je \"\"they are fashionable, you know, I think, I suppose\"\"? Dan denk je dat Ali mode noemt. Hij zegt dat iedereen er hetzelfde uitziet, en niet dat het modern is.",
+    "Koos je \"\"they are warm\"\"? Dan denk je dat Ali de warmte noemt. Dit wordt niet genoemd, dus je verzint iets."
+   ],
+   "uh": "Why does Ali like uniforms?",
+   "ctx": "You hear a class discussion (read the transcript): \"Teacher: Today we are talking about school uniforms. What do you think, Ali? Ali: In my opinion, school uniforms are a good idea, because everybody looks the same and nobody is bullied about clothes. Teacher: Do you agree, Nina? Nina: Not really. I think uniforms are boring, and I like to show my own style. Besides, they are expensive. Ali: That is true, but most schools have second-hand uniforms. Nina: I see your point, but I still prefer my own clothes. Teacher: Thank you both. Both opinions are interesting.\""
+  },
+  {
+   "v": "Which reasons does Nina give against uniforms?",
+   "o": [
+    "\"they are ugly and old\"",
+    "\"they are warm and heavy\"",
+    "\"they are uncomfortable and dirty\"",
+    "\"they are boring and expensive\""
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 1,
+   "u": "Let op de mening en de reden. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"they are ugly and old\"\"? Dan pak je woorden die Nina niet gebruikt. Ugly en old komen niet voor, en zij noemt boring.",
+    "Koos je \"\"they are warm and heavy\"\"? Dan kies je eigenschappen van de stof. Nina heeft het over stijl en prijs, en niet over gewicht.",
+    "Koos je \"\"they are uncomfortable and dirty\"\"? Dan denk je dat ze over comfort of vuil klaagt. Ze noemt alleen smaak en geld, dus dit komt niet in haar betoog voor.",
+    "Klopt: nina noemt twee bezwaren: ze zijn saai en ze zijn duur."
+   ],
+   "uh": "Which reasons does Nina give against uniforms?",
+   "ctx": "You hear a class discussion (read the transcript): \"Teacher: Today we are talking about school uniforms. What do you think, Ali? Ali: In my opinion, school uniforms are a good idea, because everybody looks the same and nobody is bullied about clothes. Teacher: Do you agree, Nina? Nina: Not really. I think uniforms are boring, and I like to show my own style. Besides, they are expensive. Ali: That is true, but most schools have second-hand uniforms. Nina: I see your point, but I still prefer my own clothes. Teacher: Thank you both. Both opinions are interesting.\""
+  },
+  {
+   "v": "How does Ali react to the price argument?",
+   "o": [
+    "\"he says that second-hand uniforms exist\"",
+    "\"he says uniforms are free, I think, I suppose\"",
+    "\"he agrees completely\"",
+    "\"he does not react\""
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 3,
+   "u": "Let op de mening en de reden. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: ali erkent het punt en zegt dat de meeste scholen tweedehands uniformen hebben.",
+    "Koos je \"\"he says uniforms are free, I think, I suppose\"\"? Dan denk je dat Ali zegt dat het gratis is. Hij noemt tweedehands, dus goedkoper maar niet gratis.",
+    "Koos je \"\"he agrees completely\"\"? Dan denk je dat Ali volledig instemt. Hij zegt that is true, but, dus hij heeft een tegenargument.",
+    "Koos je \"\"he does not react\"\"? Dan denk je dat Ali zwijgt. Hij reageert direct, en geeft een antwoord."
+   ],
+   "uh": "How does Ali react to the price argument?",
+   "ctx": "You hear a class discussion (read the transcript): \"Teacher: Today we are talking about school uniforms. What do you think, Ali? Ali: In my opinion, school uniforms are a good idea, because everybody looks the same and nobody is bullied about clothes. Teacher: Do you agree, Nina? Nina: Not really. I think uniforms are boring, and I like to show my own style. Besides, they are expensive. Ali: That is true, but most schools have second-hand uniforms. Nina: I see your point, but I still prefer my own clothes. Teacher: Thank you both. Both opinions are interesting.\""
+  },
+  {
+   "v": "What does Mia think about phones in lessons?",
+   "o": [
+    "\"she is in favour\"",
+    "\"she has no opinion\"",
+    "\"she is against it\"",
+    "\"she wants them every day\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 0,
+   "u": "Let op de mening en de reden. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"she is in favour\"\"? Dan denk je dat Mia voor is. Ze zegt that phones are distracting, dus ze is tegen.",
+    "Koos je \"\"she has no opinion\"\"? Dan denk je dat Mia geen mening heeft. Ze geeft een duidelijke mening, dus ze heeft er een.",
+    "Klopt: mia zegt i do not think so en noemt dat het afleidt.",
+    "Koos je \"\"she wants them every day\"\"? Dan denk je dat Mia ze elke dag wil. Ze zegt dat ze afleiden, dus ze wil dat niet."
+   ],
+   "uh": "What does Mia think about phones in lessons?",
+   "ctx": "You hear two pupils talking about phones (read the transcript): \"Jake: Do you think we should be allowed to use our phones during lessons? Mia: I do not think so. Phones are very distracting, and we will not listen to the teacher. Jake: I disagree. We can use them to look up information quickly. Mia: That is a good point, but only if the teacher says it is okay. Jake: Fair enough. Maybe we can use them for certain lessons only. Mia: I agree with that. That seems a good compromise.\""
+  },
+  {
+   "v": "Why is Jake in favour of phones?",
+   "o": [
+    "\"you can play games\"",
+    "\"you can look up information quickly\"",
+    "\"you can talk to friends, I suppose, really\"",
+    "\"they are fashionable\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 1,
+   "u": "Let op de mening en de reden. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"you can play games\"\"? Dan denk je dat Jake games noemt. Dit wordt niet genoemd, en past niet bij een goed argument.",
+    "Klopt: jake zegt dat je er snel informatie mee kunt opzoeken.",
+    "Koos je \"\"you can talk to friends, I suppose, really\"\"? Dan denk je dat Jake praten met vrienden noemt. Dit wordt niet genoemd, dus het is verzonnen.",
+    "Koos je \"\"they are fashionable\"\"? Dan denk je dat Jake mode noemt. Dit wordt niet genoemd, dus het klopt niet."
+   ],
+   "uh": "Why is Jake in favour of phones?",
+   "ctx": "You hear two pupils talking about phones (read the transcript): \"Jake: Do you think we should be allowed to use our phones during lessons? Mia: I do not think so. Phones are very distracting, and we will not listen to the teacher. Jake: I disagree. We can use them to look up information quickly. Mia: That is a good point, but only if the teacher says it is okay. Jake: Fair enough. Maybe we can use them for certain lessons only. Mia: I agree with that. That seems a good compromise.\""
+  },
+  {
+   "v": "Do Jake and Mia agree at the start?",
+   "o": [
+    "\"yes, completely\"",
+    "\"yes, partly\"",
+    "\"they do not talk about it\"",
+    "\"no, they disagree\""
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 2,
+   "u": "Let op de mening en de reden. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"yes, completely\"\"? Dan denk je dat ze het eens zijn. Jake zegt i disagree, dus ze zijn het oneens.",
+    "Koos je \"\"yes, partly\"\"? Dan denk je dat ze deels instemmen. Aan het begin zijn ze het oneens, en pas later volgt een compromis.",
+    "Koos je \"\"they do not talk about it\"\"? Dan denk je dat ze er niet over praten. Het hele gesprek gaat erover, dus dit klopt niet.",
+    "Klopt: mia zegt i do not think so en jake zegt i disagree."
+   ],
+   "uh": "Do Jake and Mia agree at the start?",
+   "ctx": "You hear two pupils talking about phones (read the transcript): \"Jake: Do you think we should be allowed to use our phones during lessons? Mia: I do not think so. Phones are very distracting, and we will not listen to the teacher. Jake: I disagree. We can use them to look up information quickly. Mia: That is a good point, but only if the teacher says it is okay. Jake: Fair enough. Maybe we can use them for certain lessons only. Mia: I agree with that. That seems a good compromise.\""
+  },
+  {
+   "v": "Why does Emma want to go to Spain?",
+   "o": [
+    "\"the weather is warm and she loves swimming\"",
+    "\"it is cheap\"",
+    "\"her friends live there, really, to be honest\"",
+    "\"the food is good\""
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 0,
+   "u": "Let op de mening en de reden. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: emma noemt het warme weer en dat ze van zwemmen houdt.",
+    "Koos je \"\"it is cheap\"\"? Dan denk je dat Spanje goedkoop is. Papa zegt dat het duur is, dus dat klopt niet.",
+    "Koos je \"\"her friends live there, really, to be honest\"\"? Dan denk je dat haar vrienden er wonen. Dit wordt niet genoemd, dus je verzint iets.",
+    "Koos je \"\"the food is good\"\"? Dan denk je dat het eten de reden is. Dit wordt niet genoemd, dus het klopt niet."
+   ],
+   "uh": "Why does Emma want to go to Spain?",
+   "ctx": "You hear a father and a daughter talking (read the transcript): \"Dad: Where shall we go on holiday this summer? Emma: I would like to go to Spain, because the weather is always warm and I love swimming. Dad: That sounds nice, but it is quite expensive. What about camping in France? Emma: Hmm, I am not sure. Camping is cheap, but I think it is uncomfortable. Dad: I understand, but we can bring a big tent, and it is much cheaper. Emma: Okay, you have convinced me. As long as there is a swimming pool.\""
+  },
+  {
+   "v": "What is Dad's argument against Spain?",
+   "o": [
+    "\"it is too far\"",
+    "\"the weather is bad, I think\"",
+    "\"it is quite expensive\"",
+    "\"there is no pool\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 3,
+   "u": "Let op de mening en de reden. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"it is too far\"\"? Dan denk je dat Spanje te ver is. Dit wordt niet genoemd, dus je verzint iets.",
+    "Koos je \"\"the weather is bad, I think\"\"? Dan denk je dat het weer slecht is. Emma zegt dat het warm is, dus dit klopt niet.",
+    "Klopt: papa zegt it is quite expensive, dus de prijs is zijn bezwaar.",
+    "Koos je \"\"there is no pool\"\"? Dan denk je dat er geen zwembad is. Dit komt van Emma als voorwaarde, en niet als bezwaar van papa."
+   ],
+   "uh": "What is Dad's argument against Spain?",
+   "ctx": "You hear a father and a daughter talking (read the transcript): \"Dad: Where shall we go on holiday this summer? Emma: I would like to go to Spain, because the weather is always warm and I love swimming. Dad: That sounds nice, but it is quite expensive. What about camping in France? Emma: Hmm, I am not sure. Camping is cheap, but I think it is uncomfortable. Dad: I understand, but we can bring a big tent, and it is much cheaper. Emma: Okay, you have convinced me. As long as there is a swimming pool.\""
+  },
+  {
+   "v": "How does the conversation end?",
+   "o": [
+    "\"they go to Spain\"",
+    "\"Emma agrees to camping if there is a pool\"",
+    "\"they stay at home\"",
+    "\"Dad changes his mind, to be honest, you know\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 4,
+   "u": "Let op de mening en de reden. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"they go to Spain\"\"? Dan denk je dat ze naar Spanje gaan. Emma stemt in met Frankrijk, dus niet Spanje.",
+    "Klopt: emma stemt in met kamperen op voorwaarde dat er een zwembad is.",
+    "Koos je \"\"they stay at home\"\"? Dan denk je dat ze thuisblijven. Ze kiezen een bestemming, dus ze blijven niet thuis.",
+    "Koos je \"\"Dad changes his mind, to be honest, you know\"\"? Dan denk je dat papa van gedachten verandert. Emma verandert van mening, en papa niet."
+   ],
+   "uh": "How does the conversation end?",
+   "ctx": "You hear a father and a daughter talking (read the transcript): \"Dad: Where shall we go on holiday this summer? Emma: I would like to go to Spain, because the weather is always warm and I love swimming. Dad: That sounds nice, but it is quite expensive. What about camping in France? Emma: Hmm, I am not sure. Camping is cheap, but I think it is uncomfortable. Dad: I understand, but we can bring a big tent, and it is much cheaper. Emma: Okay, you have convinced me. As long as there is a swimming pool.\""
+  },
+  {
+   "v": "'Not really. I think uniforms are boring.' What is Nina doing?",
+   "o": [
+    "\"agreeing\"",
+    "\"changing the subject, I suppose\"",
+    "\"asking a question\"",
+    "\"politely disagreeing\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 2,
+   "u": "Let op de mening en de reden. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"agreeing\"\"? Dan denk je dat not really instemming is. Het is een zachte ontkenning, dus ze is het oneens.",
+    "Koos je \"\"changing the subject, I suppose\"\"? Dan denk je dat ze iets anders bespreekt. Ze blijft bij uniformen, en geeft haar mening.",
+    "Koos je \"\"asking a question\"\"? Dan denk je dat ze een vraag stelt. Het is een mededeling, en geen vraag.",
+    "Klopt: not really is een beleefde manier om het oneens te zijn."
+   ],
+   "uh": "'Not really. I think uniforms are boring.' What is Nina doing?",
+   "ctx": "You hear a class discussion (read the transcript): \"Teacher: Today we are talking about school uniforms. What do you think, Ali? Ali: In my opinion, school uniforms are a good idea, because everybody looks the same and nobody is bullied about clothes. Teacher: Do you agree, Nina? Nina: Not really. I think uniforms are boring, and I like to show my own style. Besides, they are expensive. Ali: That is true, but most schools have second-hand uniforms. Nina: I see your point, but I still prefer my own clothes. Teacher: Thank you both. Both opinions are interesting.\""
+  },
+  {
+   "v": "Ali says: 'That is true, but most schools have second-hand uniforms.' What does he do?",
+   "o": [
+    "\"admits that Nina is partly right and gives a counter-argument\"",
+    "\"refuses to listen, you know, I think, I suppose\"",
+    "\"agrees completely\"",
+    "\"changes the topic\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 3,
+   "u": "Let op de mening en de reden. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: that is true erkent het punt en but introduceert het tegenargument.",
+    "Koos je \"\"refuses to listen, you know, I think, I suppose\"\"? Dan denk je dat Ali niet luistert. Hij reageert op haar punt, dus hij luistert.",
+    "Koos je \"\"agrees completely\"\"? Dan denk je dat Ali helemaal instemt. Na but volgt een tegenargument, dus hij stemt niet volledig in.",
+    "Koos je \"\"changes the topic\"\"? Dan denk je dat hij van onderwerp wisselt. Hij blijft bij de prijs, dus hij wisselt niet."
+   ],
+   "uh": "Ali says: 'That is true, but most schools have second-hand uniforms.' What does he do?",
+   "ctx": "You hear a class discussion (read the transcript): \"Teacher: Today we are talking about school uniforms. What do you think, Ali? Ali: In my opinion, school uniforms are a good idea, because everybody looks the same and nobody is bullied about clothes. Teacher: Do you agree, Nina? Nina: Not really. I think uniforms are boring, and I like to show my own style. Besides, they are expensive. Ali: That is true, but most schools have second-hand uniforms. Nina: I see your point, but I still prefer my own clothes. Teacher: Thank you both. Both opinions are interesting.\""
+  },
+  {
+   "v": "What does 'Besides' do in 'Besides, they are expensive'?",
+   "o": [
+    "\"it gives a conclusion\"",
+    "\"it asks a question\"",
+    "\"it adds another argument\"",
+    "\"it weakens the argument, really\""
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 1,
+   "u": "Let op de mening en de reden. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"it gives a conclusion\"\"? Dan denk je dat besides een slot is. Het voegt iets toe, en sluit niets af.",
+    "Koos je \"\"it asks a question\"\"? Dan denk je dat besides een vraag inleidt. Het is geen vraagwoord, maar een toevoeging.",
+    "Klopt: besides betekent bovendien en voegt een extra argument toe.",
+    "Koos je \"\"it weakens the argument, really\"\"? Dan denk je dat besides afzwakt. Het geeft juist extra kracht, en zwakt niet af."
+   ],
+   "uh": "What does 'Besides' do in 'Besides, they are expensive'?",
+   "ctx": "You hear a class discussion (read the transcript): \"Teacher: Today we are talking about school uniforms. What do you think, Ali? Ali: In my opinion, school uniforms are a good idea, because everybody looks the same and nobody is bullied about clothes. Teacher: Do you agree, Nina? Nina: Not really. I think uniforms are boring, and I like to show my own style. Besides, they are expensive. Ali: That is true, but most schools have second-hand uniforms. Nina: I see your point, but I still prefer my own clothes. Teacher: Thank you both. Both opinions are interesting.\""
+  },
+  {
+   "v": "'I disagree.' What does Jake do?",
+   "o": [
+    "\"he agrees with Mia\"",
+    "\"he says that he has another opinion\"",
+    "\"he asks Mia for help\"",
+    "\"he ends the conversation, I think, I suppose\""
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 2,
+   "u": "Let op de mening en de reden. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"he agrees with Mia\"\"? Dan denk je dat disagree instemmen is. Het is het tegenovergestelde, en betekent oneens.",
+    "Klopt: i disagree betekent dat hij het oneens is met Mia.",
+    "Koos je \"\"he asks Mia for help\"\"? Dan denk je dat hij hulp vraagt. Hij geeft zijn mening, en vraagt geen hulp.",
+    "Koos je \"\"he ends the conversation, I think, I suppose\"\"? Dan denk je dat hij stopt. Hij geeft zijn argument, en praat verder."
+   ],
+   "uh": "'I disagree.' What does Jake do?",
+   "ctx": "You hear two pupils talking about phones (read the transcript): \"Jake: Do you think we should be allowed to use our phones during lessons? Mia: I do not think so. Phones are very distracting, and we will not listen to the teacher. Jake: I disagree. We can use them to look up information quickly. Mia: That is a good point, but only if the teacher says it is okay. Jake: Fair enough. Maybe we can use them for certain lessons only. Mia: I agree with that. That seems a good compromise.\""
+  },
+  {
+   "v": "Which phrase shows that they find a compromise?",
+   "o": [
+    "\"I do not think so.\"",
+    "\"I disagree.\"",
+    "\"Phones are very distracting, to be honest, you know.\"",
+    "\"Maybe we can use them for certain lessons only.\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 4,
+   "u": "Let op de mening en de reden. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"I do not think so.\"\"? Dan denk je dat dit een compromis is. Het is een afwijzing, en geeft geen oplossing.",
+    "Koos je \"\"I disagree.\"\"? Dan denk je dat dit een compromis is. Het geeft alleen aan dat je het oneens bent, en zoekt geen midden.",
+    "Koos je \"\"Phones are very distracting, to be honest, you know.\"\"? Dan denk je dat dit een compromis is. Het is een argument tegen, en zoekt geen midden.",
+    "Klopt: dit stelt een middenweg voor waarin beide partijen iets krijgen."
+   ],
+   "uh": "Which phrase shows that they find a compromise?",
+   "ctx": "You hear two pupils talking about phones (read the transcript): \"Jake: Do you think we should be allowed to use our phones during lessons? Mia: I do not think so. Phones are very distracting, and we will not listen to the teacher. Jake: I disagree. We can use them to look up information quickly. Mia: That is a good point, but only if the teacher says it is okay. Jake: Fair enough. Maybe we can use them for certain lessons only. Mia: I agree with that. That seems a good compromise.\""
+  },
+  {
+   "v": "'Fair enough.' What does Jake mean?",
+   "o": [
+    "\"he accepts Mia's point\"",
+    "\"he is angry\"",
+    "\"he does not understand, I suppose\"",
+    "\"he wants to leave\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 3,
+   "u": "Let op de mening en de reden. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: fair enough betekent dat hij het redelijk vindt.",
+    "Koos je \"\"he is angry\"\"? Dan denk je dat fair enough boos is. Het is juist een vriendelijke reactie, en geen boosheid.",
+    "Koos je \"\"he does not understand, I suppose\"\"? Dan denk je dat hij het niet begrijpt. Hij reageert op haar punt, dus hij begrijpt het.",
+    "Koos je \"\"he wants to leave\"\"? Dan denk je dat hij weg wil. Hij stelt daarna een compromis voor, dus hij gaat door."
+   ],
+   "uh": "'Fair enough.' What does Jake mean?",
+   "ctx": "You hear two pupils talking about phones (read the transcript): \"Jake: Do you think we should be allowed to use our phones during lessons? Mia: I do not think so. Phones are very distracting, and we will not listen to the teacher. Jake: I disagree. We can use them to look up information quickly. Mia: That is a good point, but only if the teacher says it is okay. Jake: Fair enough. Maybe we can use them for certain lessons only. Mia: I agree with that. That seems a good compromise.\""
+  },
+  {
+   "v": "Which sentence from Emma gives her opinion?",
+   "o": [
+    "\"Camping is cheap.\"",
+    "\"We can bring a big tent, you know.\"",
+    "\"I think it is uncomfortable.\"",
+    "\"It is in France.\""
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 0,
+   "u": "Let op de mening en de reden. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"Camping is cheap.\"\"? Dan denk je dat cheap een oordeel is. Het is een vergelijking van prijzen, en die kun je nagaan.",
+    "Koos je \"\"We can bring a big tent, you know.\"\"? Dan denk je dat dit Emma is. Dit zegt Dad, en het is een voorstel.",
+    "Klopt: i think kondigt aan dat het haar mening is.",
+    "Koos je \"\"It is in France.\"\"? Dan pak je een plaats als mening. Waar iets ligt is geen smaak, dus het is een gegeven."
+   ],
+   "uh": "Which sentence from Emma gives her opinion?",
+   "ctx": "You hear a father and a daughter talking (read the transcript): \"Dad: Where shall we go on holiday this summer? Emma: I would like to go to Spain, because the weather is always warm and I love swimming. Dad: That sounds nice, but it is quite expensive. What about camping in France? Emma: Hmm, I am not sure. Camping is cheap, but I think it is uncomfortable. Dad: I understand, but we can bring a big tent, and it is much cheaper. Emma: Okay, you have convinced me. As long as there is a swimming pool.\""
+  },
+  {
+   "v": "'Because the weather is always warm' is...",
+   "o": [
+    "\"a question\"",
+    "\"a reason\"",
+    "\"a greeting\"",
+    "\"a conclusion\""
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 1,
+   "u": "Let op de mening en de reden. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"a question\"\"? Dan denk je dat dit een vraag is. Het is een mededeling, en geen vraag.",
+    "Klopt: because leidt een reden in, hier waarom Emma naar Spanje wil.",
+    "Koos je \"\"a greeting\"\"? Dan denk je dat dit een groet is. Het geeft een reden, en geen begroeting.",
+    "Koos je \"\"a conclusion\"\"? Dan denk je dat dit een slot is. Het ondersteunt haar wens, en sluit niets af."
+   ],
+   "uh": "'Because the weather is always warm' is...",
+   "ctx": "You hear a father and a daughter talking (read the transcript): \"Dad: Where shall we go on holiday this summer? Emma: I would like to go to Spain, because the weather is always warm and I love swimming. Dad: That sounds nice, but it is quite expensive. What about camping in France? Emma: Hmm, I am not sure. Camping is cheap, but I think it is uncomfortable. Dad: I understand, but we can bring a big tent, and it is much cheaper. Emma: Okay, you have convinced me. As long as there is a swimming pool.\""
+  },
+  {
+   "v": "What does 'I understand, but...' show in Dad's reaction?",
+   "o": [
+    "\"he is angry\"",
+    "\"he agrees entirely, I think, I suppose, really\"",
+    "\"he stops talking\"",
+    "\"he accepts her worry but gives a counter-argument\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 3,
+   "u": "Let op de mening en de reden. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"he is angry\"\"? Dan denk je dat papa boos is. Hij blijft vriendelijk, dus dit klopt niet.",
+    "Koos je \"\"he agrees entirely, I think, I suppose, really\"\"? Dan denk je dat papa helemaal instemt. Na but geeft hij een tegenargument, dus niet helemaal.",
+    "Koos je \"\"he stops talking\"\"? Dan denk je dat papa zwijgt. Hij gaat verder met een argument, dus hij stopt niet.",
+    "Klopt: i understand erkent haar zorg en but voegt een tegenargument toe."
+   ],
+   "uh": "What does 'I understand, but...' show in Dad's reaction?",
+   "ctx": "You hear a father and a daughter talking (read the transcript): \"Dad: Where shall we go on holiday this summer? Emma: I would like to go to Spain, because the weather is always warm and I love swimming. Dad: That sounds nice, but it is quite expensive. What about camping in France? Emma: Hmm, I am not sure. Camping is cheap, but I think it is uncomfortable. Dad: I understand, but we can bring a big tent, and it is much cheaper. Emma: Okay, you have convinced me. As long as there is a swimming pool.\""
+  },
+  {
+   "v": "Emma says: 'You have convinced me. As long as there is a swimming pool.' What does 'as long as' show?",
+   "o": [
+    "\"a condition\"",
+    "\"a question\"",
+    "\"a reason against camping\"",
+    "\"a greeting\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 4,
+   "u": "Let op de mening en de reden. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: as long as betekent mits, dus er is een voorwaarde.",
+    "Koos je \"\"a question\"\"? Dan denk je dat as long as een vraag is. Het is een mededeling, en geen vraag.",
+    "Koos je \"\"a reason against camping\"\"? Dan denk je dat het een nieuw bezwaar is. Ze stemt in, en stelt alleen een voorwaarde.",
+    "Koos je \"\"a greeting\"\"? Dan denk je dat as long as een groet is. Het heeft niets met groeten te maken, en is een voorwaarde."
+   ],
+   "uh": "Emma says: 'You have convinced me. As long as there is a swimming pool.' What does 'as long as' show?",
+   "ctx": "You hear a father and a daughter talking (read the transcript): \"Dad: Where shall we go on holiday this summer? Emma: I would like to go to Spain, because the weather is always warm and I love swimming. Dad: That sounds nice, but it is quite expensive. What about camping in France? Emma: Hmm, I am not sure. Camping is cheap, but I think it is uncomfortable. Dad: I understand, but we can bring a big tent, and it is much cheaper. Emma: Okay, you have convinced me. As long as there is a swimming pool.\""
+  }
+ ],
+ "oe": [
+  {
+   "bron": "Examenstijl",
+   "ctx": "In your English lesson the teacher asks the class: \"Do you think pupils should have homework every day?\" You think that homework is useful, because it helps you to remember things, but you do not think it should be every single day, because you also need time to relax and to see your friends.",
+   "v": "Write three sentences in English in which you give your opinion and give two reasons.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "I think that homework is useful (1p). Because it helps me to remember things (1p). But not every day / a second reason (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "A classmate says in a class discussion: \"In my opinion, the school day should start at ten o'clock, because teenagers need more sleep.\" You agree with him, but you also see one problem: the lessons would end much later, and then you cannot go to your sports club in the afternoon.",
+   "v": "Write three sentences in English in which you agree, add a reason and mention the problem politely.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "I agree with you (1p). Teenagers need more sleep, besides... (1p). I see your point, but the lessons would end later (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Your friend says: \"We should go to the cinema tonight.\" You would prefer to go bowling, because you do not like the film that is playing this week. Your friend does not want to bowl, because it is expensive and he has little money left this month.",
+   "v": "Write two sentences in English in which you propose a compromise.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Maybe we can go to the cinema and bowling next week (1p). Or: as long as we choose a cheaper film (1p). Een compromis dat beide wensen noemt (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "A girl in your class says: \"Vegetarian food is boring and has no taste.\" You disagree because you eat vegetarian food every day and you love it. You want to stay polite and not offend her.",
+   "v": "Write three sentences in English in which you politely disagree and give a reason.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "I see your point, but I do not agree (1p). I eat vegetarian food every day (1p). Because I love it / a polite reason (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "A classmate says: \"I do not have to give reasons for my opinion. It is just my opinion.\" You do not agree.",
+   "v": "Write two sentences in English that explain why a reason with because makes an opinion stronger.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Een reden maakt de mening duidelijk (1p). Voorbeeld: I think it is good, because... (1p). Een duidelijke uitleg (1p)."
+  }
+ ]
+}
