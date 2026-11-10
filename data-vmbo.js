@@ -32774,6 +32774,688 @@ var VAKKEN_VMBO = [
         "u": "Je mist anders informatie (1p). Voorbeeld: Could you repeat that, please (1p). Een duidelijke uitleg (1p)."
        }
       ]
+     },
+     {
+      "id": "C3",
+      "lo": "en.C.3",
+      "gs": 2,
+      "naam": "Gevoelens uitdrukken",
+      "beschrijving": "Je leert in het Engels gevoelens uit te drukken en erop te reageren: je gebruikt gevoelswoorden als happy, nervous en disappointed, versterkt of zwakt gevoel af met very en a bit en reageert met medeleven of een felicitatie.",
+      "ceStatus": "SE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Gevoelswoorden",
+       "Een gevoel zeggen",
+       "Reageren op gevoel",
+       "Versterken en afzwakken",
+       "Passend reageren"
+      ],
+      "sam": "Een gevoel noem je met woorden als happy, nervous en disappointed. Je zegt het met I am of I feel. Met very en really versterk je het gevoel en met a bit zwak je het af. Op goed nieuws reageer je met congratulations en op slecht nieuws met I am sorry to hear that.",
+      "begrippen": [
+       {
+        "t": "Gevoel",
+        "d": "Wat je voelt, zoals blij, boos of bezorgd."
+       },
+       {
+        "t": "Teleurgesteld",
+        "d": "Een gevoel dat iets tegenviel, bijvoorbeeld disappointed."
+       },
+       {
+        "t": "Blij",
+        "d": "Een positief gevoel, bijvoorbeeld happy of delighted."
+       },
+       {
+        "t": "Bezorgd",
+        "d": "Een gevoel van zorg, bijvoorbeeld worried."
+       },
+       {
+        "t": "Zenuwachtig",
+        "d": "Een gespannen gevoel, bijvoorbeeld nervous."
+       },
+       {
+        "t": "Opgewonden",
+        "d": "Een gevoel van spanning en vreugde, bijvoorbeeld excited."
+       },
+       {
+        "t": "Boos",
+        "d": "Een negatief gevoel, bijvoorbeeld angry of annoyed."
+       },
+       {
+        "t": "Medeleven",
+        "d": "Laten merken dat je met iemand meeleeft, bijvoorbeeld I am sorry to hear that."
+       },
+       {
+        "t": "Felicitatie",
+        "d": "Iemand feliciteren, bijvoorbeeld congratulations."
+       },
+       {
+        "t": "Versterken",
+        "d": "Een gevoel sterker maken met very of really."
+       },
+       {
+        "t": "Afzwakken",
+        "d": "Een gevoel zwakker maken met a bit of a little."
+       },
+       {
+        "t": "Excuses",
+        "d": "Zeggen dat je het jammer vindt, bijvoorbeeld I am very sorry."
+       }
+      ],
+      "sv": [
+       {
+        "v": "Je hoort: 'I got a five. I am really disappointed.' Hoe voelt de spreker zich?",
+        "o": [
+         "\"trots\"",
+         "\"teleurgesteld\"",
+         "\"blij\"",
+         "\"verbaasd en opgewonden\""
+        ],
+        "c": 1,
+        "d": 1,
+        "s": 0,
+        "u": "Let op het gevoel in de zin. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"trots\"\"? Dan denk je dat een vijf iets is om trots op te zijn. Het woord disappointed laat het tegenovergestelde horen, en dat is teleurstelling.",
+         "Klopt: disappointed betekent teleurgesteld omdat het resultaat tegenviel.",
+         "Koos je \"\"blij\"\"? Dan denk je dat de spreker vrolijk is. Ze zegt dat ze teleurgesteld is, en dat is geen blij gevoel.",
+         "Koos je \"\"verbaasd en opgewonden\"\"? Dan denk je dat de spreker opgewonden is. Disappointed is een teleurgesteld gevoel, en geen opwinding."
+        ],
+        "uh": "Je hoort: 'I got a five. I am really disappointed.' Hoe voelt de spreker zich?"
+       },
+       {
+        "v": "Welke woorden horen bij een blij gevoel?",
+        "o": [
+         "\"angry, upset en annoyed\"",
+         "\"table, chair en lamp\"",
+         "\"Monday, Tuesday en Friday, volgens mij\"",
+         "\"happy, delighted en excited\""
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 0,
+        "u": "Let op het gevoel in de zin. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"angry, upset en annoyed\"\"? Dan denk je dat deze woorden blij zijn. Het zijn negatieve gevoelens, zoals boosheid en irritatie.",
+         "Koos je \"\"table, chair en lamp\"\"? Dan denk je dat elk Engels woord een gevoel is. Dit zijn meubels, en meubels hebben geen gevoel.",
+         "Koos je \"\"Monday, Tuesday en Friday, volgens mij\"\"? Dan denk je dat deze woorden gevoelens zijn. Dit zijn dagen, en dagen zijn geen gevoel.",
+         "Klopt: deze drie woorden drukken blijdschap en opwinding uit."
+        ],
+        "uh": "Welke woorden horen bij een blij gevoel?"
+       },
+       {
+        "v": "Je wilt zeggen dat je je zorgen maakt. Welke zin past?",
+        "o": [
+         "\"I am worried about my test.\"",
+         "\"I am happy about my test.\"",
+         "\"I am proud of my test.\"",
+         "\"I am hungry after my test, I suppose.\""
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 1,
+        "u": "Let op het gevoel in de zin. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: worried is bezorgd, dus je zegt dat je je zorgen maakt.",
+         "Koos je \"\"I am happy about my test.\"\"? Dan denk je dat happy zorgen uitdrukt. Happy is blij, en je maakt je juist geen zorgen.",
+         "Koos je \"\"I am proud of my test.\"\"? Dan denk je dat proud past. Proud is trots, en trots is geen zorg.",
+         "Koos je \"\"I am hungry after my test, I suppose.\"\"? Dan pak je een lichamelijk gevoel. Hungry is honger, en geen zorg."
+        ],
+        "uh": "Je wilt zeggen dat je je zorgen maakt. Welke zin past?"
+       },
+       {
+        "v": "Welke zin laat een positieve verwachting horen?",
+        "o": [
+         "\"I am afraid of the party.\"",
+         "\"I am sorry about the party, eigenlijk, denk ik.\"",
+         "\"I am really looking forward to the party.\"",
+         "\"I am tired after the party.\""
+        ],
+        "c": 2,
+        "d": 1,
+        "s": 1,
+        "u": "Let op het gevoel in de zin. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"I am afraid of the party.\"\"? Dan denk je dat afraid positief is. Afraid is bang, en dat is negatief.",
+         "Koos je \"\"I am sorry about the party, eigenlijk, denk ik.\"\"? Dan denk je dat sorry een verwachting uitdrukt. Sorry is spijt of excuses, en geen vooruitblik.",
+         "Klopt: looking forward to betekent je erop verheugen, een positief gevoel.",
+         "Koos je \"\"I am tired after the party.\"\"? Dan denk je dat tired een verwachting is. Tired is moe en het feest is al geweest, dus het is geen vooruitblik."
+        ],
+        "uh": "Welke zin laat een positieve verwachting horen?"
+       },
+       {
+        "v": "Een vriend zegt: 'I failed my test.' Wat zeg je?",
+        "o": [
+         "\"Congratulations!\"",
+         "\"I am sorry to hear that.\"",
+         "\"That is fantastic, really!\"",
+         "\"You are welcome.\""
+        ],
+        "c": 1,
+        "d": 1,
+        "s": 2,
+        "u": "Let op het gevoel in de zin. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"Congratulations!\"\"? Dan denk je dat een felicitatie past. Dat zeg je bij goed nieuws, en zakken is slecht nieuws.",
+         "Klopt: bij slecht nieuws toon je medeleven met I am sorry to hear that.",
+         "Koos je \"\"That is fantastic, really!\"\"? Dan denk je dat dit past. Fantastic is geweldig, en zakken is niet geweldig.",
+         "Koos je \"\"You are welcome.\"\"? Dan denk je dat dit een reactie is. Het is het antwoord op een bedankje, en niemand bedankt je."
+        ],
+        "uh": "Een vriend zegt: 'I failed my test.' Wat zeg je?"
+       },
+       {
+        "v": "Een vriend zegt: 'I passed my exam!' Wat zeg je?",
+        "o": [
+         "\"I am sorry to hear that.\"",
+         "\"That is a pity.\"",
+         "\"Oh no!\"",
+         "\"Congratulations!\""
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 2,
+        "u": "Let op het gevoel in de zin. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"I am sorry to hear that.\"\"? Dan denk je dat medeleven past. Dat zeg je bij slecht nieuws, en slagen is goed nieuws.",
+         "Koos je \"\"That is a pity.\"\"? Dan denk je dat pity past. Dat betekent jammer, en slagen is niet jammer.",
+         "Koos je \"\"Oh no!\"\"? Dan denk je dat dit past. Oh no is een schrikreactie, en past niet bij goed nieuws.",
+         "Klopt: bij goed nieuws feliciteer je met congratulations."
+        ],
+        "uh": "Een vriend zegt: 'I passed my exam!' Wat zeg je?"
+       },
+       {
+        "v": "Wat is het verschil tussen 'I am a bit nervous' en 'I am very nervous'?",
+        "o": [
+         "\"very is sterker dan a bit\"",
+         "\"er is geen verschil\"",
+         "\"a bit is sterker dan very, volgens mij\"",
+         "\"very is een tegenstelling\""
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 3,
+        "u": "Let op het gevoel in de zin. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: very versterkt het gevoel en a bit zwakt het af.",
+         "Koos je \"\"er is geen verschil\"\"? Dan denk je dat beide gelijk zijn. A bit en very geven een andere sterkte, dus het verschilt wel.",
+         "Koos je \"\"a bit is sterker dan very, volgens mij\"\"? Dan draai je de woorden om. A bit is een beetje, en very is erg.",
+         "Koos je \"\"very is een tegenstelling\"\"? Dan denk je dat very het gevoel omdraait. Very maakt het alleen sterker, en verandert het gevoel niet."
+        ],
+        "uh": "Wat is het verschil tussen 'I am a bit nervous' en 'I am very nervous'?"
+       },
+       {
+        "v": "How does Lena feel about her test?",
+        "o": [
+         "\"proud\"",
+         "\"nervous\"",
+         "\"disappointed\"",
+         "\"surprised\""
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 0,
+        "u": "Let op het gevoel in de zin. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"proud\"\"? Dan denk je dat ze trots is. Ze zegt het tegenovergestelde, namelijk dat ze teleurgesteld is.",
+         "Koos je \"\"nervous\"\"? Dan denk je dat ze nog zenuwachtig is. De test is al geweest, en ze is teleurgesteld.",
+         "Klopt: lena zegt dat ze echt teleurgesteld is over haar vijf.",
+         "Koos je \"\"surprised\"\"? Dan denk je dat ze verrast is. Ze zegt not so well, dus ze verwachtte een betere uitslag."
+        ],
+        "uh": "How does Lena feel about her test?",
+        "ctx": "You hear two friends talking about a test (read the transcript): \"Jim: Hi Lena, how did your English test go? Lena: Not so well, I am afraid. I studied for hours, but I got a five. I am really disappointed. Jim: Oh no, I am sorry to hear that. Do not be too hard on yourself. Lena: Thanks. And you? Jim: I got an eight! I am so happy and a bit surprised, because I was very nervous before the test. Lena: That is fantastic, congratulations! Jim: Thanks. Maybe we can study together for the next test? Lena: That would be great. I would really like that.\""
+       },
+       {
+        "v": "How does Jim react to Lena's result?",
+        "o": [
+         "\"he laughs at her\"",
+         "\"he says he is sorry to hear that\"",
+         "\"he congratulates her, you know, I think\"",
+         "\"he does not react\""
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 2,
+        "u": "Let op het gevoel in de zin. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"he laughs at her\"\"? Dan denk je dat hij haar uitlacht. Hij zegt do not be too hard on yourself, dus hij troost haar.",
+         "Klopt: jim toont medeleven met I am sorry to hear that.",
+         "Koos je \"\"he congratulates her, you know, I think\"\"? Dan denk je dat hij haar feliciteert. Haar cijfer is slecht, en dus kan dat niet.",
+         "Koos je \"\"he does not react\"\"? Dan denk je dat hij niets zegt. Hij reageert direct vriendelijk, dus hij zwijgt niet."
+        ],
+        "uh": "How does Jim react to Lena's result?",
+        "ctx": "You hear two friends talking about a test (read the transcript): \"Jim: Hi Lena, how did your English test go? Lena: Not so well, I am afraid. I studied for hours, but I got a five. I am really disappointed. Jim: Oh no, I am sorry to hear that. Do not be too hard on yourself. Lena: Thanks. And you? Jim: I got an eight! I am so happy and a bit surprised, because I was very nervous before the test. Lena: That is fantastic, congratulations! Jim: Thanks. Maybe we can study together for the next test? Lena: That would be great. I would really like that.\""
+       },
+       {
+        "v": "Why is Jim surprised?",
+        "o": [
+         "\"he got a five\"",
+         "\"he did not study\"",
+         "\"he failed the test, really, to be honest, you know\"",
+         "\"he got an eight although he was nervous\""
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 0,
+        "u": "Let op het gevoel in de zin. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"he got a five\"\"? Dan denk je dat Jim een vijf haalde. Dat is het cijfer van Lena, en niet van Jim.",
+         "Koos je \"\"he did not study\"\"? Dan denk je dat hij niet leerde. Daar wordt niets over gezegd, dus je verzint een reden.",
+         "Koos je \"\"he failed the test, really, to be honest, you know\"\"? Dan denk je dat hij zakte. Hij zegt dat hij een acht kreeg, dus hij is geslaagd.",
+         "Klopt: hij was zenuwachtig maar kreeg toch een acht."
+        ],
+        "uh": "Why is Jim surprised?",
+        "ctx": "You hear two friends talking about a test (read the transcript): \"Jim: Hi Lena, how did your English test go? Lena: Not so well, I am afraid. I studied for hours, but I got a five. I am really disappointed. Jim: Oh no, I am sorry to hear that. Do not be too hard on yourself. Lena: Thanks. And you? Jim: I got an eight! I am so happy and a bit surprised, because I was very nervous before the test. Lena: That is fantastic, congratulations! Jim: Thanks. Maybe we can study together for the next test? Lena: That would be great. I would really like that.\""
+       },
+       {
+        "v": "Which word does Lena use to congratulate Jim?",
+        "o": [
+         "\"congratulations\"",
+         "\"sorry\"",
+         "\"please\"",
+         "\"welcome\""
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 2,
+        "u": "Let op het gevoel in de zin. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: lena zegt that is fantastic, congratulations, een felicitatie voor het goede cijfer.",
+         "Koos je \"\"sorry\"\"? Dan denk je dat sorry past. Sorry gebruik je bij slecht nieuws, en Jim heeft goed nieuws.",
+         "Koos je \"\"please\"\"? Dan denk je dat please een felicitatie is. Please is een beleefdheidswoord, en geen felicitatie.",
+         "Koos je \"\"welcome\"\"? Dan denk je dat welcome past. Welcome gebruik je als iemand binnenkomt, en niet bij een goed cijfer."
+        ],
+        "uh": "Which word does Lena use to congratulate Jim?",
+        "ctx": "You hear two friends talking about a test (read the transcript): \"Jim: Hi Lena, how did your English test go? Lena: Not so well, I am afraid. I studied for hours, but I got a five. I am really disappointed. Jim: Oh no, I am sorry to hear that. Do not be too hard on yourself. Lena: Thanks. And you? Jim: I got an eight! I am so happy and a bit surprised, because I was very nervous before the test. Lena: That is fantastic, congratulations! Jim: Thanks. Maybe we can study together for the next test? Lena: That would be great. I would really like that.\""
+       },
+       {
+        "v": "Which sentence shows that Tom is excited?",
+        "o": [
+         "\"I am worried about one thing.\"",
+         "\"I am afraid that I will get lost.\"",
+         "\"I cannot wait!\"",
+         "\"That is normal.\""
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 1,
+        "u": "Let op het gevoel in de zin. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"I am worried about one thing.\"\"? Dan denk je dat dit opwinding is. Worried is bezorgd, en geen opwinding.",
+         "Koos je \"\"I am afraid that I will get lost.\"\"? Dan denk je dat dit enthousiast is. Het is een zorg, en geen opwinding.",
+         "Klopt: I cannot wait laat horen dat hij zich erg verheugt.",
+         "Koos je \"\"That is normal.\"\"? Dan denk je dat dit Tom is. Het zegt zijn moeder, en gaat over geruststellen."
+        ],
+        "uh": "Which sentence shows that Tom is excited?",
+        "ctx": "You hear a boy and his mother (read the transcript): \"Mum: Are you looking forward to the school trip to London? Tom: Yes, I cannot wait! I have never been abroad before, so I am very excited. But I am also a little bit nervous, because I will be away from home for four days. Mum: That is normal. I will miss you too, but I am sure you will have a great time. Tom: I hope so. I am worried about one thing, though. I am afraid that I will get lost in the big city. Mum: Do not worry. You will be with your teacher and your classmates all the time.\""
+       },
+       {
+        "v": "Why is Tom a little nervous?",
+        "o": [
+         "\"he does not like London\"",
+         "\"he will be away from home for four days\"",
+         "\"he has lost his passport\"",
+         "\"his classmates are not coming, I suppose, really\""
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 0,
+        "u": "Let op het gevoel in de zin. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"he does not like London\"\"? Dan denk je dat hij Londen niet leuk vindt. Hij verheugt zich juist, dus dit klopt niet.",
+         "Klopt: hij zegt dat hij vier dagen van huis weg is.",
+         "Koos je \"\"he has lost his passport\"\"? Dan denk je dat zijn paspoort weg is. Daar wordt niets over gezegd, dus dit is verzonnen.",
+         "Koos je \"\"his classmates are not coming, I suppose, really\"\"? Dan denk je dat zijn klasgenoten niet meegaan. Zijn moeder zegt dat hij bij hen is, dus dit klopt niet."
+        ],
+        "uh": "Why is Tom a little nervous?",
+        "ctx": "You hear a boy and his mother (read the transcript): \"Mum: Are you looking forward to the school trip to London? Tom: Yes, I cannot wait! I have never been abroad before, so I am very excited. But I am also a little bit nervous, because I will be away from home for four days. Mum: That is normal. I will miss you too, but I am sure you will have a great time. Tom: I hope so. I am worried about one thing, though. I am afraid that I will get lost in the big city. Mum: Do not worry. You will be with your teacher and your classmates all the time.\""
+       },
+       {
+        "v": "How does Mum comfort Tom?",
+        "o": [
+         "\"she says he can stay at home\"",
+         "\"she says he will not go abroad, you know, I think, I suppose\"",
+         "\"she gives him a map\"",
+         "\"she says he will be with his teacher and classmates\""
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 2,
+        "u": "Let op het gevoel in de zin. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"she says he can stay at home\"\"? Dan denk je dat hij thuis kan blijven. Ze moedigt de reis juist aan, dus dit klopt niet.",
+         "Koos je \"\"she says he will not go abroad, you know, I think, I suppose\"\"? Dan denk je dat de reis binnenlands is. Hij gaat naar Londen, dus naar het buitenland.",
+         "Koos je \"\"she gives him a map\"\"? Dan denk je dat ze een plattegrond geeft. Dit wordt niet genoemd, dus je verzint iets.",
+         "Klopt: zijn moeder zegt dat hij steeds bij leraar en klasgenoten is."
+        ],
+        "uh": "How does Mum comfort Tom?",
+        "ctx": "You hear a boy and his mother (read the transcript): \"Mum: Are you looking forward to the school trip to London? Tom: Yes, I cannot wait! I have never been abroad before, so I am very excited. But I am also a little bit nervous, because I will be away from home for four days. Mum: That is normal. I will miss you too, but I am sure you will have a great time. Tom: I hope so. I am worried about one thing, though. I am afraid that I will get lost in the big city. Mum: Do not worry. You will be with your teacher and your classmates all the time.\""
+       },
+       {
+        "v": "How does the guest feel at the beginning?",
+        "o": [
+         "\"annoyed\"",
+         "\"pleased\"",
+         "\"sad\"",
+         "\"afraid\""
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 0,
+        "u": "Let op het gevoel in de zin. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: de gast zegt dat hij een beetje geïrriteerd is.",
+         "Koos je \"\"pleased\"\"? Dan denk je dat de gast tevreden is. Hij klaagt, dus tevreden klopt niet.",
+         "Koos je \"\"sad\"\"? Dan denk je dat de gast verdrietig is. Hij is geïrriteerd, en dat is iets anders dan verdriet.",
+         "Koos je \"\"afraid\"\"? Dan denk je dat de gast bang is. Er is geen reden voor angst, dus dit klopt niet."
+        ],
+        "uh": "How does the guest feel at the beginning?",
+        "ctx": "You hear a conversation in a restaurant (read the transcript): \"Waiter: Is everything all right with your meal? Guest: Honestly, I am a bit annoyed. I ordered the soup twenty minutes ago and it is still not here. Waiter: I am very sorry about that. We are very busy tonight. Guest: I understand, but I am hungry and I have to leave in half an hour. Waiter: I will go to the kitchen right now. And I will bring you a drink, free of charge. Guest: That is kind of you. I feel better now, thank you.\""
+       },
+       {
+        "v": "How does the waiter react?",
+        "o": [
+         "\"he gets angry\"",
+         "\"he ignores the guest, I think, I suppose\"",
+         "\"he apologises and offers help\"",
+         "\"he blames the guest\""
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 2,
+        "u": "Let op het gevoel in de zin. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"he gets angry\"\"? Dan denk je dat de ober boos is. Hij blijft vriendelijk, dus dit klopt niet.",
+         "Koos je \"\"he ignores the guest, I think, I suppose\"\"? Dan denk je dat hij niets doet. Hij reageert direct en biedt een oplossing, dus hij negeert niet.",
+         "Klopt: hij zegt sorry en gaat naar de keuken en biedt een drankje aan.",
+         "Koos je \"\"he blames the guest\"\"? Dan denk je dat de ober de gast de schuld geeft. Hij verontschuldigt zich, dus dit is omgekeerd."
+        ],
+        "uh": "How does the waiter react?",
+        "ctx": "You hear a conversation in a restaurant (read the transcript): \"Waiter: Is everything all right with your meal? Guest: Honestly, I am a bit annoyed. I ordered the soup twenty minutes ago and it is still not here. Waiter: I am very sorry about that. We are very busy tonight. Guest: I understand, but I am hungry and I have to leave in half an hour. Waiter: I will go to the kitchen right now. And I will bring you a drink, free of charge. Guest: That is kind of you. I feel better now, thank you.\""
+       },
+       {
+        "v": "What does the waiter offer to the guest?",
+        "o": [
+         "\"a free meal\"",
+         "\"a free drink\"",
+         "\"a discount on the bill\"",
+         "\"a table outside\""
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 2,
+        "u": "Let op het gevoel in de zin. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"a free meal\"\"? Dan denk je dat de hele maaltijd gratis is. Alleen het drankje is gratis, en het eten niet.",
+         "Klopt: de ober zegt dat hij een drankje brengt, free of charge, dus gratis.",
+         "Koos je \"\"a discount on the bill\"\"? Dan denk je dat er korting is. Er wordt een gratis drankje aangeboden, en geen korting.",
+         "Koos je \"\"a table outside\"\"? Dan denk je dat er een terras is. Dit wordt niet genoemd, dus je verzint iets."
+        ],
+        "uh": "What does the waiter offer to the guest?",
+        "ctx": "You hear a conversation in a restaurant (read the transcript): \"Waiter: Is everything all right with your meal? Guest: Honestly, I am a bit annoyed. I ordered the soup twenty minutes ago and it is still not here. Waiter: I am very sorry about that. We are very busy tonight. Guest: I understand, but I am hungry and I have to leave in half an hour. Waiter: I will go to the kitchen right now. And I will bring you a drink, free of charge. Guest: That is kind of you. I feel better now, thank you.\""
+       },
+       {
+        "v": "Lena says 'Not so well, I am afraid.' What does 'I am afraid' mean here?",
+        "o": [
+         "\"she is scared, I suppose\"",
+         "\"she is angry\"",
+         "\"she is proud\"",
+         "\"unfortunately\""
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 1,
+        "u": "Let op het gevoel in de zin. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"she is scared, I suppose\"\"? Dan denk je dat Lena bang is. Het is een beleefdheidszin, en geen angst.",
+         "Koos je \"\"she is angry\"\"? Dan denk je dat Lena boos is. De zin drukt helaas uit, en niet boosheid.",
+         "Koos je \"\"she is proud\"\"? Dan denk je dat Lena trots is. Ze heeft een slecht cijfer, dus trots past niet.",
+         "Klopt: I am afraid is hier een beleefde manier voor helaas."
+        ],
+        "uh": "Lena says 'Not so well, I am afraid.' What does 'I am afraid' mean here?",
+        "ctx": "You hear two friends talking about a test (read the transcript): \"Jim: Hi Lena, how did your English test go? Lena: Not so well, I am afraid. I studied for hours, but I got a five. I am really disappointed. Jim: Oh no, I am sorry to hear that. Do not be too hard on yourself. Lena: Thanks. And you? Jim: I got an eight! I am so happy and a bit surprised, because I was very nervous before the test. Lena: That is fantastic, congratulations! Jim: Thanks. Maybe we can study together for the next test? Lena: That would be great. I would really like that.\""
+       },
+       {
+        "v": "Which reply fits best when Jim says 'I got an eight!'?",
+        "o": [
+         "\"That is fantastic, congratulations!\"",
+         "\"I am sorry to hear that, you know, I think.\"",
+         "\"Do not worry about it.\"",
+         "\"That is a pity.\""
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 2,
+        "u": "Let op het gevoel in de zin. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: bij goed nieuws feliciteer je en toon je enthousiasme.",
+         "Koos je \"\"I am sorry to hear that, you know, I think.\"\"? Dan denk je dat medeleven past. Een acht is goed nieuws, dus dit klopt niet.",
+         "Koos je \"\"Do not worry about it.\"\"? Dan denk je dat geruststellen past. Er is niets om je zorgen over te maken, want het is goed nieuws.",
+         "Koos je \"\"That is a pity.\"\"? Dan denk je dat jammer past. Een acht is goed, dus dit is onjuist."
+        ],
+        "uh": "Which reply fits best when Jim says 'I got an eight!'?",
+        "ctx": "You hear two friends talking about a test (read the transcript): \"Jim: Hi Lena, how did your English test go? Lena: Not so well, I am afraid. I studied for hours, but I got a five. I am really disappointed. Jim: Oh no, I am sorry to hear that. Do not be too hard on yourself. Lena: Thanks. And you? Jim: I got an eight! I am so happy and a bit surprised, because I was very nervous before the test. Lena: That is fantastic, congratulations! Jim: Thanks. Maybe we can study together for the next test? Lena: That would be great. I would really like that.\""
+       },
+       {
+        "v": "What does 'really' do in 'I am really disappointed'?",
+        "o": [
+         "\"it makes the feeling weaker\"",
+         "\"it changes the feeling into happiness\"",
+         "\"it makes the feeling stronger\"",
+         "\"it asks a question\""
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 3,
+        "u": "Let op het gevoel in de zin. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"it makes the feeling weaker\"\"? Dan denk je dat really afzwakt. Het woord versterkt, en zwakt niet af.",
+         "Koos je \"\"it changes the feeling into happiness\"\"? Dan denk je dat really het gevoel omdraait. Het verandert niets aan het gevoel, maar maakt het sterker.",
+         "Klopt: really versterkt het woord disappointed.",
+         "Koos je \"\"it asks a question\"\"? Dan denk je dat really een vraag stelt. In deze zin is het een versterking, en geen vraag."
+        ],
+        "uh": "What does 'really' do in 'I am really disappointed'?",
+        "ctx": "You hear two friends talking about a test (read the transcript): \"Jim: Hi Lena, how did your English test go? Lena: Not so well, I am afraid. I studied for hours, but I got a five. I am really disappointed. Jim: Oh no, I am sorry to hear that. Do not be too hard on yourself. Lena: Thanks. And you? Jim: I got an eight! I am so happy and a bit surprised, because I was very nervous before the test. Lena: That is fantastic, congratulations! Jim: Thanks. Maybe we can study together for the next test? Lena: That would be great. I would really like that.\""
+       },
+       {
+        "v": "What is the difference between 'a little bit nervous' and 'very excited'?",
+        "o": [
+         "\"the first feeling is stronger than the second\"",
+         "\"the first feeling is weaker than the second\"",
+         "\"they are the same feeling\"",
+         "\"both feelings are negative\""
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 3,
+        "u": "Let op het gevoel in de zin. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"the first feeling is stronger than the second\"\"? Dan draai je de sterkte om. A little bit is een klein beetje, en very is erg.",
+         "Klopt: a little bit zwakt af en very versterkt.",
+         "Koos je \"\"they are the same feeling\"\"? Dan denk je dat beide hetzelfde zijn. Nervous en excited zijn verschillende gevoelens, en de sterkte verschilt ook.",
+         "Koos je \"\"both feelings are negative\"\"? Dan denk je dat beide negatief zijn. Excited is positief, en nervous is neutraal tot negatief."
+        ],
+        "uh": "What is the difference between 'a little bit nervous' and 'very excited'?",
+        "ctx": "You hear a boy and his mother (read the transcript): \"Mum: Are you looking forward to the school trip to London? Tom: Yes, I cannot wait! I have never been abroad before, so I am very excited. But I am also a little bit nervous, because I will be away from home for four days. Mum: That is normal. I will miss you too, but I am sure you will have a great time. Tom: I hope so. I am worried about one thing, though. I am afraid that I will get lost in the big city. Mum: Do not worry. You will be with your teacher and your classmates all the time.\""
+       },
+       {
+        "v": "Mum says 'That is normal.' What does she mean?",
+        "o": [
+         "\"he must be afraid\"",
+         "\"it is a big problem\"",
+         "\"she is angry with him, to be honest, you know, I think\"",
+         "\"many people feel that way, so he need not worry\""
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 4,
+        "u": "Let op het gevoel in de zin. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"he must be afraid\"\"? Dan denk je dat ze hem bang wil maken. Ze stelt hem juist gerust, en dat is het tegenovergestelde.",
+         "Koos je \"\"it is a big problem\"\"? Dan denk je dat ze het een probleem vindt. Normal betekent gewoon, en dus geen probleem.",
+         "Koos je \"\"she is angry with him, to be honest, you know, I think\"\"? Dan denk je dat ze boos is. Haar toon is vriendelijk, dus dat klopt niet.",
+         "Klopt: that is normal stelt hem gerust; het gevoel is gewoon."
+        ],
+        "uh": "Mum says 'That is normal.' What does she mean?",
+        "ctx": "You hear a boy and his mother (read the transcript): \"Mum: Are you looking forward to the school trip to London? Tom: Yes, I cannot wait! I have never been abroad before, so I am very excited. But I am also a little bit nervous, because I will be away from home for four days. Mum: That is normal. I will miss you too, but I am sure you will have a great time. Tom: I hope so. I am worried about one thing, though. I am afraid that I will get lost in the big city. Mum: Do not worry. You will be with your teacher and your classmates all the time.\""
+       },
+       {
+        "v": "Which sentence expresses a worry?",
+        "o": [
+         "\"I am afraid that I will get lost in the big city.\"",
+         "\"I have never been abroad before, I suppose, really.\"",
+         "\"I cannot wait!\"",
+         "\"You will have a great time.\""
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 1,
+        "u": "Let op het gevoel in de zin. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: I am afraid that is hier een zorg over iets wat kan gebeuren.",
+         "Koos je \"\"I have never been abroad before, I suppose, really.\"\"? Dan denk je dat dit een zorg is. Het is een feit, en geen gevoel.",
+         "Koos je \"\"I cannot wait!\"\"? Dan denk je dat dit een zorg is. Dit is juist opwinding, en dus positief.",
+         "Koos je \"\"You will have a great time.\"\"? Dan denk je dat dit een zorg is. Dit is een positieve verwachting van Mum, en geen zorg van Tom."
+        ],
+        "uh": "Which sentence expresses a worry?",
+        "ctx": "You hear a boy and his mother (read the transcript): \"Mum: Are you looking forward to the school trip to London? Tom: Yes, I cannot wait! I have never been abroad before, so I am very excited. But I am also a little bit nervous, because I will be away from home for four days. Mum: That is normal. I will miss you too, but I am sure you will have a great time. Tom: I hope so. I am worried about one thing, though. I am afraid that I will get lost in the big city. Mum: Do not worry. You will be with your teacher and your classmates all the time.\""
+       },
+       {
+        "v": "'I am a bit annoyed.' What does 'a bit' do?",
+        "o": [
+         "\"it makes the feeling very strong\"",
+         "\"it turns the feeling into a positive one\"",
+         "\"it makes the feeling a little weaker\"",
+         "\"it has no effect\""
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 3,
+        "u": "Let op het gevoel in de zin. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"it makes the feeling very strong\"\"? Dan denk je dat a bit sterker maakt. Het zwakt af, en versterkt niet.",
+         "Koos je \"\"it turns the feeling into a positive one\"\"? Dan denk je dat het gevoel positief wordt. Annoyed blijft negatief, en a bit verandert alleen de sterkte.",
+         "Klopt: a bit zwakt het gevoel af, dus de gast is niet heel erg boos.",
+         "Koos je \"\"it has no effect\"\"? Dan denk je dat a bit niets doet. Het verandert de sterkte, dus het heeft wel effect."
+        ],
+        "uh": "'I am a bit annoyed.' What does 'a bit' do?",
+        "ctx": "You hear a conversation in a restaurant (read the transcript): \"Waiter: Is everything all right with your meal? Guest: Honestly, I am a bit annoyed. I ordered the soup twenty minutes ago and it is still not here. Waiter: I am very sorry about that. We are very busy tonight. Guest: I understand, but I am hungry and I have to leave in half an hour. Waiter: I will go to the kitchen right now. And I will bring you a drink, free of charge. Guest: That is kind of you. I feel better now, thank you.\""
+       },
+       {
+        "v": "'I am very sorry about that.' What is the waiter doing?",
+        "o": [
+         "\"complaining\"",
+         "\"apologising politely\"",
+         "\"asking a question, really\"",
+         "\"saying goodbye\""
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 2,
+        "u": "Let op het gevoel in de zin. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"complaining\"\"? Dan denk je dat de ober klaagt. Hij maakt excuses, en klaagt niet.",
+         "Klopt: very sorry is een beleefde en sterke verontschuldiging.",
+         "Koos je \"\"asking a question, really\"\"? Dan denk je dat de ober iets vraagt. De zin is een mededeling, en geen vraag.",
+         "Koos je \"\"saying goodbye\"\"? Dan denk je dat de ober afscheid neemt. Hij blijft het probleem oplossen, dus dit is geen afscheid."
+        ],
+        "uh": "'I am very sorry about that.' What is the waiter doing?",
+        "ctx": "You hear a conversation in a restaurant (read the transcript): \"Waiter: Is everything all right with your meal? Guest: Honestly, I am a bit annoyed. I ordered the soup twenty minutes ago and it is still not here. Waiter: I am very sorry about that. We are very busy tonight. Guest: I understand, but I am hungry and I have to leave in half an hour. Waiter: I will go to the kitchen right now. And I will bring you a drink, free of charge. Guest: That is kind of you. I feel better now, thank you.\""
+       },
+       {
+        "v": "What does 'I understand, but...' show?",
+        "o": [
+         "\"the guest is no longer annoyed, I think, I suppose, really\"",
+         "\"the guest wants to leave\"",
+         "\"the guest is not listening\"",
+         "\"the guest accepts the reason but still wants a solution\""
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 4,
+        "u": "Let op het gevoel in de zin. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"the guest is no longer annoyed, I think, I suppose, really\"\"? Dan denk je dat de gast niet meer geïrriteerd is. Hij noemt na but nog zijn probleem, dus hij is het nog.",
+         "Koos je \"\"the guest wants to leave\"\"? Dan denk je dat de gast weggaat. Hij zegt dat hij over een half uur weg moet, en dat is geen vertrek nu.",
+         "Koos je \"\"the guest is not listening\"\"? Dan denk je dat de gast niet luistert. Hij reageert op de uitleg, dus hij luistert wel.",
+         "Klopt: het eerste deel erkent de reden en na but volgt de wens."
+        ],
+        "uh": "What does 'I understand, but...' show?",
+        "ctx": "You hear a conversation in a restaurant (read the transcript): \"Waiter: Is everything all right with your meal? Guest: Honestly, I am a bit annoyed. I ordered the soup twenty minutes ago and it is still not here. Waiter: I am very sorry about that. We are very busy tonight. Guest: I understand, but I am hungry and I have to leave in half an hour. Waiter: I will go to the kitchen right now. And I will bring you a drink, free of charge. Guest: That is kind of you. I feel better now, thank you.\""
+       },
+       {
+        "v": "Which sentence from the end shows that the guest feels better?",
+        "o": [
+         "\"I feel better now, thank you.\"",
+         "\"I am hungry.\"",
+         "\"I have to leave in half an hour.\"",
+         "\"I ordered the soup twenty minutes ago.\""
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 4,
+        "u": "Let op het gevoel in de zin. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: I feel better now zegt het letterlijk.",
+         "Koos je \"\"I am hungry.\"\"? Dan denk je dat dit een beter gevoel is. Het is een lichamelijk gevoel, en niet een stemming.",
+         "Koos je \"\"I have to leave in half an hour.\"\"? Dan denk je dat dit een gevoel is. Het is een feit, en geen gevoel.",
+         "Koos je \"\"I ordered the soup twenty minutes ago.\"\"? Dan denk je dat dit een gevoel is. Het is een feit, en komt uit het begin van het gesprek."
+        ],
+        "uh": "Which sentence from the end shows that the guest feels better?",
+        "ctx": "You hear a conversation in a restaurant (read the transcript): \"Waiter: Is everything all right with your meal? Guest: Honestly, I am a bit annoyed. I ordered the soup twenty minutes ago and it is still not here. Waiter: I am very sorry about that. We are very busy tonight. Guest: I understand, but I am hungry and I have to leave in half an hour. Waiter: I will go to the kitchen right now. And I will bring you a drink, free of charge. Guest: That is kind of you. I feel better now, thank you.\""
+       }
+      ],
+      "oe": [
+       {
+        "bron": "Examenstijl",
+        "ctx": "Your best friend has been in a bad mood all week. She tells you: \"My grandfather is in hospital. I am very worried about him, and I cannot concentrate at school.\" You want to show that you care about her.",
+        "v": "Write two sentences in English that show medeleven and offer help.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "I am sorry to hear that (1p). Can I help you / I am here for you (1p). Een vriendelijke en passende reactie (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Your classmate runs to you after school and says: \"I won the football match for our team! I scored three goals and the coach said I was fantastic!\" You are very happy for him.",
+        "v": "Write two sentences in English in which you congratulate him and show you are happy.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Congratulations (1p). That is fantastic / I am so happy for you (1p). Een enthousiaste en passende reactie (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Next week you have a big exam, the first one of your school career. You tell your English teacher how you feel: you are afraid you will fail, but you also want to do your best.",
+        "v": "Write two sentences in English in which you tell how you feel, one with a bit and one with very.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "I am a bit nervous (1p). I am very worried about the exam (1p). Gebruik van a bit en very (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Your friend says: \"I am a bit disappointed, but not angry.\" Another friend says: \"I am very disappointed and really angry.\" You hear both of them, and you want to compare their feelings.",
+        "v": "Write in Dutch which friend feels worse and give a reason.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "De tweede vriend voelt zich slechter (1p). Very en really versterken het gevoel (1p). Het eerste gevoel is afgezwakt met a bit (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "A classmate says: \"I always say the same thing, whatever my friend tells me: that is great!\" You do not agree.",
+        "v": "Write two sentences in English that explain why you must react in a way that fits the feeling, with an example.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Bij slecht nieuws past medeleven (1p). Bijvoorbeeld I am sorry to hear that (1p). Een duidelijke uitleg (1p)."
+       }
+      ]
      }
     ]
    },

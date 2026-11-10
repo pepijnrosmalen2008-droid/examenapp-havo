@@ -1025,6 +1025,27 @@ var VAKKEN_VMBO = [
       "nOe": 5,
       "nBeg": 12,
       "hasSam": true
+     },
+     {
+      "id": "C3",
+      "lo": "en.C.3",
+      "gs": 2,
+      "naam": "Gevoelens uitdrukken",
+      "beschrijving": "Je leert in het Engels gevoelens uit te drukken en erop te reageren: je gebruikt gevoelswoorden als happy, nervous en disappointed, versterkt of zwakt gevoel af met very en a bit en reageert met medeleven of een felicitatie.",
+      "ceStatus": "SE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Gevoelswoorden",
+       "Een gevoel zeggen",
+       "Reageren op gevoel",
+       "Versterken en afzwakken",
+       "Passend reageren"
+      ],
+      "nSv": 27,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
      }
     ]
    },
