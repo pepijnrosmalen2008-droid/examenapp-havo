@@ -502,7 +502,7 @@ vragen zijn grondstof, niet heilig.
   - [x] M5 · bi.M.5 DNA en eiwitsynthese
   - [x] M6 · bi.M.6 Celdeling: mitose en meiose
   - [x] M7 · bi.M.7 Erfelijkheid: allelen en overerving
-- [ ] **HAVO · Biologie** (`bi`) · domein O (opwaarderen)
+- [x] **HAVO · Biologie** (`bi`) · domein O (opwaarderen)  (alle leerdoelen op v2)
   - [x] O1 · bi.O.1 Zenuwstelsel en prikkelgeleiding
   - [x] O2 · bi.O.2 Hormonale regulatie
   - [x] O3 · bi.O.3 Homeostase en antagonisme
