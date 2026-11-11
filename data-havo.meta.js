@@ -1335,21 +1335,24 @@ var VAKKEN = [
      },
      {
       "id": "O4",
+      "lo": "bi.O.4",
+      "gs": 2,
       "naam": "Afweer en immuniteit",
-      "beschrijving": "Aspecifieke en specifieke afweer, antigeen en antilichaam, fagocyten en lymfocyten, geheugencellen en vaccinatie, actieve en passieve immuniteit.",
-      "ceStatus": "CE",
+      "beschrijving": "Je beschrijft de barrières en de aspecifieke afweer tegen ziekteverwekkers, legt uit hoe antilichamen specifiek op antigenen werken, verklaart de primaire en secundaire reactie met geheugencellen, legt vaccinatie en groepsimmuniteit uit en onderscheidt actieve en passieve immuniteit en de werking van antibiotica.",
+      "ceStatus": "CE+SE",
+      "binas": "",
+      "val": "",
       "onderwerpen": [
-       "Afweer tegen ziekteverwekkers",
-       "Aspecifieke afweer (huid, slijmvlies, fagocyten, koorts)",
-       "Specifieke afweer (lymfocyten, antilichamen)",
-       "Antigeen en antilichaam",
+       "Ziekteverwekkers en eerste barrières",
+       "Aspecifieke afweer",
+       "Antigenen en antilichamen",
        "Geheugencellen en de tweede reactie",
        "Vaccinatie",
-       "Actieve en passieve immuniteit"
+       "Passieve immuniteit en antibiotica"
       ],
-      "nSv": 25,
+      "nSv": 27,
       "nOe": 5,
-      "nBeg": 12,
+      "nBeg": 16,
       "hasSam": true
      },
      {
