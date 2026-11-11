@@ -36826,6 +36826,688 @@ var VAKKEN_VMBO = [
         "u": "Hi + voornaam of Love (1p). Uitroeptekens of thanks (1p). Een duidelijke uitleg (1p)."
        }
       ]
+     },
+     {
+      "id": "D2",
+      "lo": "en.D.2",
+      "gs": 2,
+      "naam": "Een formele brief of e-mail schrijven",
+      "beschrijving": "Je leert in het Engels een formele brief of e-mail te schrijven: je kiest de juiste aanhef en afsluiting, noemt je doel, doet een beleefd verzoek, geeft informatie en gebruikt netjes formeel taalgebruik.",
+      "ceStatus": "SE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Aanhef",
+       "Afsluiting",
+       "Formeel taalgebruik",
+       "Doel en opbouw",
+       "Beleefd verzoek en bijlage"
+      ],
+      "sam": "Een formele brief begint met Dear Sir or Madam of Dear Mrs Clark. Sluit af met Yours faithfully bij een onbekende naam en Yours sincerely bij een bekende naam. Noem in de eerste zin je doel, doe een beleefd verzoek met would like of could you en gebruik geen straattaal of bevelen.",
+      "begrippen": [
+       {
+        "t": "Formeel",
+        "d": "Netjes en zakelijk taalgebruik, zoals dear sir or madam."
+       },
+       {
+        "t": "Aanhef",
+        "d": "De begroeting bovenaan de brief, zoals Dear Mrs Clark."
+       },
+       {
+        "t": "Afsluiting",
+        "d": "Het slot van de brief, zoals Yours faithfully."
+       },
+       {
+        "t": "Yours faithfully",
+        "d": "Slot als je de naam van de ontvanger niet kent."
+       },
+       {
+        "t": "Yours sincerely",
+        "d": "Slot als je de naam van de ontvanger wel kent."
+       },
+       {
+        "t": "Doel",
+        "d": "De reden waarom je schrijft, bijvoorbeeld I am writing to complain."
+       },
+       {
+        "t": "Verzoek",
+        "d": "Een beleefde vraag, bijvoorbeeld I would like to ask you of could you tell me."
+       },
+       {
+        "t": "Bijlage",
+        "d": "Een document dat je meestuurt, zoals een foto of bon."
+       },
+       {
+        "t": "Klacht",
+        "d": "Een brief waarin je ontevreden bent over iets."
+       },
+       {
+        "t": "Sollicitatie",
+        "d": "Een brief om een baan aan te vragen."
+       },
+       {
+        "t": "Beleefd",
+        "d": "Netjes en vriendelijk schrijven, zonder bevelen."
+       },
+       {
+        "t": "Informatie",
+        "d": "Gegevens die je vraagt, zoals prijs en startdatum."
+       }
+      ],
+      "sv": [
+       {
+        "v": "Je schrijft een formele brief aan een bedrijf. Hoe begin je?",
+        "o": [
+         "\"Hi guys,\"",
+         "\"Dear Sir or Madam,\"",
+         "\"Hello mate,, I think\"",
+         "\"Hey there!\""
+        ],
+        "c": 1,
+        "d": 1,
+        "s": 0,
+        "u": "Kies de zin die in een formele brief past. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"Hi guys,\"\"? Dan denk je dat hi guys beleefd genoeg is. Het is een groet voor vrienden, en te los voor een bedrijf.",
+         "Klopt: dear sir or madam is de nette aanhef als je de naam niet kent.",
+         "Koos je \"\"Hello mate,, I think\"\"? Dan pak je een straattaalgroet. Mate gebruik je tegen een vriend, en niet tegen een bedrijf.",
+         "Koos je \"\"Hey there!\"\"? Dan kies je een luchtige begroeting. Dit klinkt informeel, en past niet bij een officiële brief."
+        ],
+        "uh": "Je schrijft een formele brief aan een bedrijf. Hoe begin je?"
+       },
+       {
+        "v": "Je kent de naam van de ontvanger: Mrs Clark. Hoe begin je?",
+        "o": [
+         "\"Dear Sir or Madam,\"",
+         "\"Hi Clark,\"",
+         "\"Dear friend,\"",
+         "\"Dear Mrs Clark,\""
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 0,
+        "u": "Kies de zin die in een formele brief past. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"Dear Sir or Madam,\"\"? Dan denk je dat je altijd deze aanhef gebruikt. Die gebruik je alleen als je de naam niet weet, en hier ken je hem wel.",
+         "Koos je \"\"Hi Clark,\"\"? Dan pak je een informele aanhef met alleen de achternaam. Dit klinkt onbeleefd, en is niet formeel.",
+         "Koos je \"\"Dear friend,\"\"? Dan kies je een aanhef voor een vriend. Mrs Clark is geen vriendin, dus het past niet.",
+         "Klopt: met de naam spreek je de ontvanger persoonlijk en netjes aan."
+        ],
+        "uh": "Je kent de naam van de ontvanger: Mrs Clark. Hoe begin je?"
+       },
+       {
+        "v": "Hoe sluit je een formele brief af als je de naam van de ontvanger niet kent?",
+        "o": [
+         "\"Yours faithfully,\"",
+         "\"Yours sincerely,, zeg maar\"",
+         "\"Love,\"",
+         "\"See you!\""
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 1,
+        "u": "Kies de zin die in een formele brief past. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: yours faithfully hoort bij de aanhef dear sir or madam.",
+         "Koos je \"\"Yours sincerely,, zeg maar\"\"? Dan denk je dat sincerely altijd past. Dat slot gebruik je bij een bekende naam, en hier is de naam onbekend.",
+         "Koos je \"\"Love,\"\"? Dan pak je een slot voor vrienden. Dit is te warm, en klinkt niet formeel.",
+         "Koos je \"\"See you!\"\"? Dan kies je een groet voor vrienden. Dit is een gewone afscheidsgroet, en past niet bij een formele brief."
+        ],
+        "uh": "Hoe sluit je een formele brief af als je de naam van de ontvanger niet kent?"
+       },
+       {
+        "v": "Bovenaan je brief staat 'Dear Mrs Clark,'. Welk slot hoort daarbij?",
+        "o": [
+         "\"Yours faithfully,, you know\"",
+         "\"Hugs,\"",
+         "\"Yours sincerely,\"",
+         "\"Cheers,\""
+        ],
+        "c": 2,
+        "d": 1,
+        "s": 1,
+        "u": "Kies de zin die in een formele brief past. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"Yours faithfully,, you know\"\"? Dan denk je dat faithfully altijd past. Dat gebruik je als je de naam niet weet, en hier weet je hem wel.",
+         "Koos je \"\"Hugs,\"\"? Dan pak je een groet voor vrienden. Dit is te intiem, en past niet bij een officiële brief.",
+         "Klopt: yours sincerely hoort bij een aanhef met een naam, zoals dear Mrs Clark.",
+         "Koos je \"\"Cheers,\"\"? Dan kies je een losse groet. Dit klinkt te informeel, en is niet beleefd genoeg."
+        ],
+        "uh": "Bovenaan je brief staat 'Dear Mrs Clark,'. Welk slot hoort daarbij?"
+       },
+       {
+        "v": "Welke zin past in een formele brief?",
+        "o": [
+         "\"Hey, I want some info!\"",
+         "\"I am writing to ask for some information.\"",
+         "\"Give me the info now.\"",
+         "\"What's up with the prices, gewoon, volgens mij?\""
+        ],
+        "c": 1,
+        "d": 1,
+        "s": 2,
+        "u": "Kies de zin die in een formele brief past. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"Hey, I want some info!\"\"? Dan denk je dat deze zin duidelijk genoeg is. Hij klinkt los en eisend, en past niet in een formele brief.",
+         "Klopt: i am writing to noemt netjes het doel van de brief.",
+         "Koos je \"\"Give me the info now.\"\"? Dan pak je een bevel. Dit is onbeleefd, en een bedrijf voelt zich aangevallen.",
+         "Koos je \"\"What's up with the prices, gewoon, volgens mij?\"\"? Dan kies je een zin met straattaal. Het klinkt informeel, en de samentrekking past niet in een formele brief."
+        ],
+        "uh": "Welke zin past in een formele brief?"
+       },
+       {
+        "v": "Wat is het eerste wat je in een formele brief uitlegt?",
+        "o": [
+         "\"je favoriete hobby, denk ik\"",
+         "\"je lievelingskleur\"",
+         "\"wat je gisteren at\"",
+         "\"waarom je schrijft\""
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 3,
+        "u": "Kies de zin die in een formele brief past. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"je favoriete hobby, denk ik\"\"? Dan denk je dat een hobby ter zake doet. Dit hoort niet in een zakelijke brief, tenzij het over een baan gaat.",
+         "Koos je \"\"je lievelingskleur\"\"? Dan pak je een persoonlijk detail. Dit is niet nodig, en leidt af van het doel.",
+         "Koos je \"\"wat je gisteren at\"\"? Dan kies je een dagelijks detail. Dit is niet relevant, en maakt de brief onduidelijk.",
+         "Klopt: het doel van je brief noem je meteen in de eerste zin."
+        ],
+        "uh": "Wat is het eerste wat je in een formele brief uitlegt?"
+       },
+       {
+        "v": "Welke zin sluit een formele brief beleefd af?",
+        "o": [
+         "\"I look forward to hearing from you.\"",
+         "\"Write back soon!\"",
+         "\"Bye for now!\"",
+         "\"Answer me quickly, volgens mij, eigenlijk.\""
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 4,
+        "u": "Kies de zin die in een formele brief past. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: i look forward to hearing from you is een beleefde vraag om antwoord.",
+         "Koos je \"\"Write back soon!\"\"? Dan denk je dat dit een goed slot is. Het is informeel, en past bij vrienden.",
+         "Koos je \"\"Bye for now!\"\"? Dan pak je een luchtig afscheid. Dit is te los, en niet formeel.",
+         "Koos je \"\"Answer me quickly, volgens mij, eigenlijk.\"\"? Dan kies je een bevel. Dit is onbeleefd, en een bedrijf zal het niet waarderen."
+        ],
+        "uh": "Welke zin sluit een formele brief beleefd af?"
+       },
+       {
+        "v": "How does the e-mail start?",
+        "o": [
+         "\"Hi shop,\"",
+         "\"Dear friend,, I suppose\"",
+         "\"Dear Sir or Madam,\"",
+         "\"Hello Jan,\""
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 0,
+        "u": "Kies de zin die in een formele brief past. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"Hi shop,\"\"? Dan denk je dat hi shop past. Dit is een informele groet, en past niet bij een klacht.",
+         "Koos je \"\"Dear friend,, I suppose\"\"? Dan pak je een vriendelijke aanhef. De ontvanger is geen vriend, dus het past niet.",
+         "Klopt: jan kent de naam van de ontvanger niet en gebruikt dear sir or madam.",
+         "Koos je \"\"Hello Jan,\"\"? Dan kies je zijn eigen naam. Jan schrijft zelf, en spreekt de winkel aan."
+        ],
+        "uh": "How does the e-mail start?",
+        "ctx": "You read this e-mail from Jan to a webshop: \"Dear Sir or Madam, I am writing to complain about the pair of trainers I bought from your website on 3 March. When they arrived, the left shoe had a hole in it. I would like to ask you to send me a new pair or to give me my money back. I have attached a photo and the receipt. I look forward to hearing from you. Yours faithfully, Jan de Vries\""
+       },
+       {
+        "v": "Why is Jan writing?",
+        "o": [
+         "\"to buy new trainers\"",
+         "\"to complain about a pair of trainers\"",
+         "\"to thank the shop\"",
+         "\"to ask about opening hours, you know, I think\""
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 3,
+        "u": "Kies de zin die in een formele brief past. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"to buy new trainers\"\"? Dan denk je dat hij schoenen koopt. Hij heeft ze al gekocht, en klaagt erover.",
+         "Klopt: hij schrijft om te klagen over de gymschoenen die kapot aankwamen.",
+         "Koos je \"\"to thank the shop\"\"? Dan pak je een bedankje. Hij klaagt juist, dus het is het tegenovergestelde.",
+         "Koos je \"\"to ask about opening hours, you know, I think\"\"? Dan kies je een vraag over tijden. Hij schrijft over een kapotte schoen, en niet over openingstijden."
+        ],
+        "uh": "Why is Jan writing?",
+        "ctx": "You read this e-mail from Jan to a webshop: \"Dear Sir or Madam, I am writing to complain about the pair of trainers I bought from your website on 3 March. When they arrived, the left shoe had a hole in it. I would like to ask you to send me a new pair or to give me my money back. I have attached a photo and the receipt. I look forward to hearing from you. Yours faithfully, Jan de Vries\""
+       },
+       {
+        "v": "What is wrong with the trainers?",
+        "o": [
+         "\"they are too small\"",
+         "\"they are the wrong colour, really\"",
+         "\"they arrived a month late\"",
+         "\"the left shoe has a hole in it\""
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 3,
+        "u": "Kies de zin die in een formele brief past. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"they are too small\"\"? Dan denk je dat de maat het probleem is. De maat wordt niet genoemd, dus je verzint iets.",
+         "Koos je \"\"they are the wrong colour, really\"\"? Dan pak je een kleurprobleem. Dit wordt niet genoemd, dus het klopt niet.",
+         "Koos je \"\"they arrived a month late\"\"? Dan kies je een late bezorging. Dit wordt niet genoemd, dus het klopt niet.",
+         "Klopt: de schoen is kapot, want er zit een gat in de linkerschoen."
+        ],
+        "uh": "What is wrong with the trainers?",
+        "ctx": "You read this e-mail from Jan to a webshop: \"Dear Sir or Madam, I am writing to complain about the pair of trainers I bought from your website on 3 March. When they arrived, the left shoe had a hole in it. I would like to ask you to send me a new pair or to give me my money back. I have attached a photo and the receipt. I look forward to hearing from you. Yours faithfully, Jan de Vries\""
+       },
+       {
+        "v": "What does Jan ask for?",
+        "o": [
+         "\"a new pair or his money back\"",
+         "\"a discount on the next order, I think\"",
+         "\"a free bag\"",
+         "\"a phone call only\""
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 4,
+        "u": "Kies de zin die in een formele brief past. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: hij vraagt om nieuwe schoenen of zijn geld terug.",
+         "Koos je \"\"a discount on the next order, I think\"\"? Dan denk je dat hij korting wil. Hij wil een oplossing voor dit probleem, en niet korting.",
+         "Koos je \"\"a free bag\"\"? Dan pak je een gratis cadeau. Dit wordt niet genoemd, dus je verzint iets.",
+         "Koos je \"\"a phone call only\"\"? Dan kies je een telefoontje. Hij vraagt om schoenen of geld, en een telefoontje lost het niet op."
+        ],
+        "uh": "What does Jan ask for?",
+        "ctx": "You read this e-mail from Jan to a webshop: \"Dear Sir or Madam, I am writing to complain about the pair of trainers I bought from your website on 3 March. When they arrived, the left shoe had a hole in it. I would like to ask you to send me a new pair or to give me my money back. I have attached a photo and the receipt. I look forward to hearing from you. Yours faithfully, Jan de Vries\""
+       },
+       {
+        "v": "What job does Lisa apply for?",
+        "o": [
+         "\"a job at a shop\"",
+         "\"a weekend job at a school\"",
+         "\"a summer job at a café\"",
+         "\"a job at a library\""
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 3,
+        "u": "Kies de zin die in een formele brief past. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"a job at a shop\"\"? Dan denk je dat het om een winkel gaat. Ze noemt winkelervaring, maar solliciteert bij het café.",
+         "Koos je \"\"a weekend job at a school\"\"? Dan pak je een baan op school. Dit wordt niet genoemd, dus je verzint iets.",
+         "Klopt: ze schrijft dat ze solliciteert naar de zomerbaan in het café.",
+         "Koos je \"\"a job at a library\"\"? Dan kies je een bibliotheek. Dit wordt niet genoemd, dus het klopt niet."
+        ],
+        "uh": "What job does Lisa apply for?",
+        "ctx": "You read this e-mail from Lisa to a café: \"Dear Mrs Clark, I am writing to apply for the summer job at your café, which I saw on your website. I am sixteen years old and I live near your café. I am hardworking and friendly, and I have experience with working in a shop. I am available from 1 July until 31 August. I would be happy to come for an interview. Thank you for your time. Yours sincerely, Lisa Bakker\""
+       },
+       {
+        "v": "How does Lisa describe herself?",
+        "o": [
+         "\"lazy and shy\"",
+         "\"hardworking and friendly\"",
+         "\"loud and funny\"",
+         "\"tall and strong, I suppose\""
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 3,
+        "u": "Kies de zin die in een formele brief past. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"lazy and shy\"\"? Dan denk je dat ze negatief beschrijft. Ze wil de baan, dus ze noemt positieve eigenschappen.",
+         "Klopt: ze noemt zichzelf hardworking and friendly.",
+         "Koos je \"\"loud and funny\"\"? Dan pak je woorden die niet genoemd worden. Ze zegt hardworking and friendly, dus niet loud en funny.",
+         "Koos je \"\"tall and strong, I suppose\"\"? Dan kies je uiterlijk. Ze beschrijft haar karakter, en niet haar lengte."
+        ],
+        "uh": "How does Lisa describe herself?",
+        "ctx": "You read this e-mail from Lisa to a café: \"Dear Mrs Clark, I am writing to apply for the summer job at your café, which I saw on your website. I am sixteen years old and I live near your café. I am hardworking and friendly, and I have experience with working in a shop. I am available from 1 July until 31 August. I would be happy to come for an interview. Thank you for your time. Yours sincerely, Lisa Bakker\""
+       },
+       {
+        "v": "How does the e-mail end?",
+        "o": [
+         "\"Yours faithfully, Lisa Bakker, you know\"",
+         "\"Love, Lisa\"",
+         "\"Cheers, Lisa\"",
+         "\"Yours sincerely, Lisa Bakker\""
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 1,
+        "u": "Kies de zin die in een formele brief past. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"Yours faithfully, Lisa Bakker, you know\"\"? Dan denk je dat faithfully past. Dat gebruik je bij onbekende namen, en Lisa kent mevrouw Clark.",
+         "Koos je \"\"Love, Lisa\"\"? Dan pak je een warm slot. Dit past niet bij een sollicitatie, omdat het te informeel is.",
+         "Koos je \"\"Cheers, Lisa\"\"? Dan kies je een los slot. Dit klinkt niet serieus, en past niet bij een sollicitatie.",
+         "Klopt: ze kent de naam van de ontvanger en gebruikt daarom yours sincerely."
+        ],
+        "uh": "How does the e-mail end?",
+        "ctx": "You read this e-mail from Lisa to a café: \"Dear Mrs Clark, I am writing to apply for the summer job at your café, which I saw on your website. I am sixteen years old and I live near your café. I am hardworking and friendly, and I have experience with working in a shop. I am available from 1 July until 31 August. I would be happy to come for an interview. Thank you for your time. Yours sincerely, Lisa Bakker\""
+       },
+       {
+        "v": "How does Emma start her e-mail?",
+        "o": [
+         "\"Dear Sir or Madam,\"",
+         "\"Dear Mrs Visser,, really\"",
+         "\"Hi,\"",
+         "\"Dear Emma,\""
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 0,
+        "u": "Kies de zin die in een formele brief past. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: emma kent de naam van de ontvanger niet.",
+         "Koos je \"\"Dear Mrs Visser,, really\"\"? Dan denk je dat Visser de ontvanger is. Visser is haar eigen achternaam, en niet die van de school.",
+         "Koos je \"\"Hi,\"\"? Dan pak je een korte groet. Dit is te informeel, en past niet bij een school.",
+         "Koos je \"\"Dear Emma,\"\"? Dan kies je haar eigen naam. Zij is de schrijver, en niet de ontvanger."
+        ],
+        "uh": "How does Emma start her e-mail?",
+        "ctx": "You read this e-mail from Emma to a language school: \"Dear Sir or Madam, I would like to ask for some information about your English summer course. Could you tell me how much the course costs and when it starts? I would also like to know if lunch is included. Thank you in advance for your help. I look forward to your reply. Yours faithfully, Emma Visser\""
+       },
+       {
+        "v": "What does Emma want to know?",
+        "o": [
+         "\"the teacher's name\"",
+         "\"the weather\"",
+         "\"the price, the start date and if lunch is included\"",
+         "\"the address of the school, I think, I suppose, really\""
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 3,
+        "u": "Kies de zin die in een formele brief past. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"the teacher's name\"\"? Dan denk je dat ze de leraar wil weten. Dit wordt niet gevraagd, dus je verzint iets.",
+         "Koos je \"\"the weather\"\"? Dan pak je het weer. Dit wordt niet gevraagd, dus het klopt niet.",
+         "Klopt: ze vraagt naar kosten, startdatum en lunch.",
+         "Koos je \"\"the address of the school, I think, I suppose, really\"\"? Dan kies je een adres. Dit wordt niet gevraagd, dus het klopt niet."
+        ],
+        "uh": "What does Emma want to know?",
+        "ctx": "You read this e-mail from Emma to a language school: \"Dear Sir or Madam, I would like to ask for some information about your English summer course. Could you tell me how much the course costs and when it starts? I would also like to know if lunch is included. Thank you in advance for your help. I look forward to your reply. Yours faithfully, Emma Visser\""
+       },
+       {
+        "v": "Which ending does Emma use?",
+        "o": [
+         "\"Yours sincerely, Emma Visser, to be honest\"",
+         "\"Yours faithfully, Emma Visser\"",
+         "\"Love, Emma\"",
+         "\"See you, Emma\""
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 1,
+        "u": "Kies de zin die in een formele brief past. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"Yours sincerely, Emma Visser, to be honest\"\"? Dan denk je dat sincerely past. Dat gebruik je bij een bekende naam, en hier is de naam onbekend.",
+         "Klopt: ze kent de naam van de ontvanger niet en gebruikt faithfully.",
+         "Koos je \"\"Love, Emma\"\"? Dan pak je een warm slot. Dit past niet bij een school, omdat het te informeel is.",
+         "Koos je \"\"See you, Emma\"\"? Dan kies je een los slot. Dit past niet bij een brief, omdat het te informeel is."
+        ],
+        "uh": "Which ending does Emma use?",
+        "ctx": "You read this e-mail from Emma to a language school: \"Dear Sir or Madam, I would like to ask for some information about your English summer course. Could you tell me how much the course costs and when it starts? I would also like to know if lunch is included. Thank you in advance for your help. I look forward to your reply. Yours faithfully, Emma Visser\""
+       },
+       {
+        "v": "'I am writing to complain about...' What does this sentence do?",
+        "o": [
+         "\"it ends the letter\"",
+         "\"it thanks the reader, I suppose, really\"",
+         "\"it asks for a photo\"",
+         "\"it explains the reason for writing\""
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 2,
+        "u": "Kies de zin die in een formele brief past. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"it ends the letter\"\"? Dan denk je dat de zin afsluit. Hij staat aan het begin, en het doel volgt daarna.",
+         "Koos je \"\"it thanks the reader, I suppose, really\"\"? Dan pak je een bedankje. De zin klaagt juist, en bedankt niet.",
+         "Koos je \"\"it asks for a photo\"\"? Dan kies je een verzoek om een foto. Hij stuurt zelf een foto mee, en vraagt er niet om.",
+         "Klopt: de zin noemt het doel van de mail, zoals in een formele brief hoort."
+        ],
+        "uh": "'I am writing to complain about...' What does this sentence do?",
+        "ctx": "You read this e-mail from Jan to a webshop: \"Dear Sir or Madam, I am writing to complain about the pair of trainers I bought from your website on 3 March. When they arrived, the left shoe had a hole in it. I would like to ask you to send me a new pair or to give me my money back. I have attached a photo and the receipt. I look forward to hearing from you. Yours faithfully, Jan de Vries\""
+       },
+       {
+        "v": "'I have attached a photo and the receipt.' Why does Jan write this?",
+        "o": [
+         "\"to give proof\"",
+         "\"to end the letter\"",
+         "\"to ask a question\"",
+         "\"to be funny\""
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 4,
+        "u": "Kies de zin die in een formele brief past. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: een foto en een bon bewijzen zijn klacht.",
+         "Koos je \"\"to end the letter\"\"? Dan denk je dat het een afsluiting is. Het staat in het midden, en de brief gaat daarna door.",
+         "Koos je \"\"to ask a question\"\"? Dan pak je een vraag. Het is een mededeling, en vraagt niets.",
+         "Koos je \"\"to be funny\"\"? Dan kies je een grap. De toon is zakelijk, en niet grappig."
+        ],
+        "uh": "'I have attached a photo and the receipt.' Why does Jan write this?",
+        "ctx": "You read this e-mail from Jan to a webshop: \"Dear Sir or Madam, I am writing to complain about the pair of trainers I bought from your website on 3 March. When they arrived, the left shoe had a hole in it. I would like to ask you to send me a new pair or to give me my money back. I have attached a photo and the receipt. I look forward to hearing from you. Yours faithfully, Jan de Vries\""
+       },
+       {
+        "v": "Which sentence is the most formal?",
+        "o": [
+         "\"Send me a new pair now!\"",
+         "\"Give me a new pair, okay, really, to be honest, you know?\"",
+         "\"I would like to ask you to send me a new pair.\"",
+         "\"I want new shoes!\""
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 2,
+        "u": "Kies de zin die in een formele brief past. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"Send me a new pair now!\"\"? Dan denk je dat dit formeel is. Het is een bevel, en klinkt onbeleefd.",
+         "Koos je \"\"Give me a new pair, okay, really, to be honest, you know?\"\"? Dan pak je een losse vraag. Okay is informeel, en past niet in een formele brief.",
+         "Klopt: i would like to ask you is een beleefde formele verzoekvorm.",
+         "Koos je \"\"I want new shoes!\"\"? Dan kies je een eis. Het is bot, en niet beleefd."
+        ],
+        "uh": "Which sentence is the most formal?",
+        "ctx": "You read this e-mail from Jan to a webshop: \"Dear Sir or Madam, I am writing to complain about the pair of trainers I bought from your website on 3 March. When they arrived, the left shoe had a hole in it. I would like to ask you to send me a new pair or to give me my money back. I have attached a photo and the receipt. I look forward to hearing from you. Yours faithfully, Jan de Vries\""
+       },
+       {
+        "v": "'I would be happy to come for an interview.' What does Lisa do?",
+        "o": [
+         "\"she demands a job\"",
+         "\"she politely offers to meet\"",
+         "\"she refuses an interview, I think\"",
+         "\"she asks for money\""
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 4,
+        "u": "Kies de zin die in een formele brief past. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"she demands a job\"\"? Dan denk je dat ze de baan eist. Would be happy to is beleefd, en geen eis.",
+         "Klopt: would be happy to is beleefd, dus ze biedt een gesprek aan.",
+         "Koos je \"\"she refuses an interview, I think\"\"? Dan pak je een weigering. Ze wil juist komen, dus ze weigert niet.",
+         "Koos je \"\"she asks for money\"\"? Dan kies je geld. Er wordt niets over geld gezegd, dus je verzint iets."
+        ],
+        "uh": "'I would be happy to come for an interview.' What does Lisa do?",
+        "ctx": "You read this e-mail from Lisa to a café: \"Dear Mrs Clark, I am writing to apply for the summer job at your café, which I saw on your website. I am sixteen years old and I live near your café. I am hardworking and friendly, and I have experience with working in a shop. I am available from 1 July until 31 August. I would be happy to come for an interview. Thank you for your time. Yours sincerely, Lisa Bakker\""
+       },
+       {
+        "v": "Why does Lisa write 'Yours sincerely'?",
+        "o": [
+         "\"she does not know the name, to be honest\"",
+         "\"she writes to a friend\"",
+         "\"she is angry\"",
+         "\"she knows the name of the reader\""
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 1,
+        "u": "Kies de zin die in een formele brief past. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"she does not know the name, to be honest\"\"? Dan denk je dat de naam onbekend is. Ze schrijft dear Mrs Clark, dus de naam is bekend.",
+         "Koos je \"\"she writes to a friend\"\"? Dan pak je een vriendin. Mrs Clark is haar mogelijke werkgever, en geen vriendin.",
+         "Koos je \"\"she is angry\"\"? Dan kies je boosheid. Het slot is neutraal en beleefd, en zegt niets over boosheid.",
+         "Klopt: ze schrijft aan Mrs Clark, een bekende naam."
+        ],
+        "uh": "Why does Lisa write 'Yours sincerely'?",
+        "ctx": "You read this e-mail from Lisa to a café: \"Dear Mrs Clark, I am writing to apply for the summer job at your café, which I saw on your website. I am sixteen years old and I live near your café. I am hardworking and friendly, and I have experience with working in a shop. I am available from 1 July until 31 August. I would be happy to come for an interview. Thank you for your time. Yours sincerely, Lisa Bakker\""
+       },
+       {
+        "v": "Which sentence gives information about Lisa's availability?",
+        "o": [
+         "\"I am available from 1 July until 31 August.\"",
+         "\"I am sixteen years old.\"",
+         "\"I live near your café.\"",
+         "\"I am hardworking and friendly, I suppose, really.\""
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 3,
+        "u": "Kies de zin die in een formele brief past. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: available betekent beschikbaar en de data noemen de periode.",
+         "Koos je \"\"I am sixteen years old.\"\"? Dan denk je dat dit beschikbaarheid is. Het is haar leeftijd, en geen periode.",
+         "Koos je \"\"I live near your café.\"\"? Dan pak je een woonplaats. Dit is een plaats, en geen periode.",
+         "Koos je \"\"I am hardworking and friendly, I suppose, really.\"\"? Dan kies je een eigenschap. Dit is karakter, en geen beschikbaarheid."
+        ],
+        "uh": "Which sentence gives information about Lisa's availability?",
+        "ctx": "You read this e-mail from Lisa to a café: \"Dear Mrs Clark, I am writing to apply for the summer job at your café, which I saw on your website. I am sixteen years old and I live near your café. I am hardworking and friendly, and I have experience with working in a shop. I am available from 1 July until 31 August. I would be happy to come for an interview. Thank you for your time. Yours sincerely, Lisa Bakker\""
+       },
+       {
+        "v": "Which phrase is a polite request?",
+        "o": [
+         "\"Tell me the price.\"",
+         "\"The price is high.\"",
+         "\"Could you tell me how much the course costs?\"",
+         "\"I want the price now, you know, I think, I suppose.\""
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 2,
+        "u": "Kies de zin die in een formele brief past. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"Tell me the price.\"\"? Dan denk je dat dit beleefd is. Het is een bevel, en klinkt bot.",
+         "Koos je \"\"The price is high.\"\"? Dan pak je een mening. Dit is geen verzoek, en vraagt niets.",
+         "Klopt: could you tell me is een beleefde vraag.",
+         "Koos je \"\"I want the price now, you know, I think, I suppose.\"\"? Dan kies je een eis. Het is onbeleefd, en past niet in een formele brief."
+        ],
+        "uh": "Which phrase is a polite request?",
+        "ctx": "You read this e-mail from Emma to a language school: \"Dear Sir or Madam, I would like to ask for some information about your English summer course. Could you tell me how much the course costs and when it starts? I would also like to know if lunch is included. Thank you in advance for your help. I look forward to your reply. Yours faithfully, Emma Visser\""
+       },
+       {
+        "v": "'Thank you in advance for your help.' What does this show?",
+        "o": [
+         "\"she is angry\"",
+         "\"she thanks the reader before the answer\"",
+         "\"she has already received the answer, really\"",
+         "\"she is ending the course\""
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 4,
+        "u": "Kies de zin die in een formele brief past. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"she is angry\"\"? Dan denk je dat de zin boos klinkt. Het is een vriendelijke zin, en geen klacht.",
+         "Klopt: in advance betekent vooraf, dus ze bedankt voordat ze antwoord heeft.",
+         "Koos je \"\"she has already received the answer, really\"\"? Dan pak je een antwoord dat er al is. Ze wacht nog, en bedankt vooraf.",
+         "Koos je \"\"she is ending the course\"\"? Dan kies je het einde van de cursus. Dit gaat over haar vraag, en niet over de cursus zelf."
+        ],
+        "uh": "'Thank you in advance for your help.' What does this show?",
+        "ctx": "You read this e-mail from Emma to a language school: \"Dear Sir or Madam, I would like to ask for some information about your English summer course. Could you tell me how much the course costs and when it starts? I would also like to know if lunch is included. Thank you in advance for your help. I look forward to your reply. Yours faithfully, Emma Visser\""
+       },
+       {
+        "v": "Why does Emma use 'Dear Sir or Madam'?",
+        "o": [
+         "\"she knows the reader well, I think, I suppose\"",
+         "\"she wants to be funny\"",
+         "\"she writes to a friend\"",
+         "\"she does not know the name of the reader\""
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 0,
+        "u": "Kies de zin die in een formele brief past. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"she knows the reader well, I think, I suppose\"\"? Dan denk je dat ze de ontvanger kent. Dan gebruikte ze een naam, en geen algemene aanhef.",
+         "Koos je \"\"she wants to be funny\"\"? Dan pak je een grap. De aanhef is serieus, en niet grappig.",
+         "Koos je \"\"she writes to a friend\"\"? Dan kies je een vriend. Voor een vriend gebruik je hi, en niet dear sir or madam.",
+         "Klopt: dear sir or madam gebruik je als je de ontvanger niet kent."
+        ],
+        "uh": "Why does Emma use 'Dear Sir or Madam'?",
+        "ctx": "You read this e-mail from Emma to a language school: \"Dear Sir or Madam, I would like to ask for some information about your English summer course. Could you tell me how much the course costs and when it starts? I would also like to know if lunch is included. Thank you in advance for your help. I look forward to your reply. Yours faithfully, Emma Visser\""
+       },
+       {
+        "v": "Which paragraph order is correct for Emma's e-mail?",
+        "o": [
+         "\"reason for writing, questions, thanks and ending\"",
+         "\"ending, questions, reason, to be honest, you know, I think\"",
+         "\"thanks, ending, reason\"",
+         "\"questions, ending, reason\""
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 3,
+        "u": "Kies de zin die in een formele brief past. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: eerst het doel, dan de vragen en tot slot bedanken en afsluiten.",
+         "Koos je \"\"ending, questions, reason, to be honest, you know, I think\"\"? Dan denk je dat het einde eerst komt. Een afsluiting komt altijd aan het slot, dus de volgorde is omgekeerd.",
+         "Koos je \"\"thanks, ending, reason\"\"? Dan pak je het bedankje vooraan. Eerst leg je uit waarom je schrijft, en dan pas bedank je.",
+         "Koos je \"\"questions, ending, reason\"\"? Dan kies je een willekeurige volgorde. Het doel hoort bovenaan, en de afsluiting onderaan."
+        ],
+        "uh": "Which paragraph order is correct for Emma's e-mail?",
+        "ctx": "You read this e-mail from Emma to a language school: \"Dear Sir or Madam, I would like to ask for some information about your English summer course. Could you tell me how much the course costs and when it starts? I would also like to know if lunch is included. Thank you in advance for your help. I look forward to your reply. Yours faithfully, Emma Visser\""
+       }
+      ],
+      "oe": [
+       {
+        "bron": "Examenstijl",
+        "ctx": "You bought a concert ticket on a website, but the concert was cancelled and you have not received your money back after three weeks. You want to write a formal e-mail to the ticket website. You do not know the name of the employee who will read your message.",
+        "v": "Write a formal e-mail in English with an opening, the reason for writing, a polite request and a closing.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Dear Sir or Madam (1p). I am writing to complain about the cancelled concert (1p). I would like to ask you to give me my money back (1p). Yours faithfully, naam (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "You want a Saturday job at a supermarket. You saw an advertisement on the website: the manager is Mr Brown. You are fifteen, you are friendly and you can work every Saturday from nine to five.",
+        "v": "Write a formal e-mail in English to apply for the job, with an opening, an introduction, your availability and a closing.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Dear Mr Brown (1p). I am writing to apply for the Saturday job (1p). I am available every Saturday from nine to five (1p). Yours sincerely, naam (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "You want to take part in a summer camp in England next July and you need some information. You would like to know the price, the dates and what you must take with you. You do not know the name of the person who answers the e-mails of the organiser.",
+        "v": "Write three formal sentences in English in which you ask for this information.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "I would like to ask for some information (1p). Could you tell me the price and the dates (1p). Could you also tell me what I must bring (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Your friend Max wants to ask a bank for information about a youth account. He ends his e-mail to the bank with the words \"Cheers, Max\" and the e-mail begins with \"Dear Sir or Madam\". You think the ending is wrong.",
+        "v": "Write two sentences in English that explain why this is wrong and give a better ending.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Cheers is informeel (1p). Beter: Yours faithfully (de naam is onbekend) (1p). Een duidelijke uitleg (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "A classmate says during a writing lesson: \"A formal e-mail does not need an opening or a closing, because the message is the most important thing and the reader has little time.\" You do not agree.",
+        "v": "Write two sentences in English that explain why an opening and closing are important in a formal e-mail.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Ze tonen respect (1p). De lezer ziet meteen dat het zakelijk is, bijvoorbeeld met Dear Sir or Madam (1p). Een duidelijke uitleg (1p)."
+       }
+      ]
      }
     ]
    }

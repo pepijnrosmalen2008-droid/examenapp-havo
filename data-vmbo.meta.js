@@ -1147,6 +1147,27 @@ var VAKKEN_VMBO = [
       "nOe": 5,
       "nBeg": 12,
       "hasSam": true
+     },
+     {
+      "id": "D2",
+      "lo": "en.D.2",
+      "gs": 2,
+      "naam": "Een formele brief of e-mail schrijven",
+      "beschrijving": "Je leert in het Engels een formele brief of e-mail te schrijven: je kiest de juiste aanhef en afsluiting, noemt je doel, doet een beleefd verzoek, geeft informatie en gebruikt netjes formeel taalgebruik.",
+      "ceStatus": "SE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Aanhef",
+       "Afsluiting",
+       "Formeel taalgebruik",
+       "Doel en opbouw",
+       "Beleefd verzoek en bijlage"
+      ],
+      "nSv": 27,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
      }
     ]
    }
