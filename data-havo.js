@@ -42022,9 +42022,13 @@ var VAKKEN = [
      },
      {
       "id": "A4",
+      "lo": "bi.A.4",
+      "gs": 2,
       "naam": "Correlatie versus causaliteit",
-      "beschrijving": "Het verschil tussen een verband (correlatie) en een oorzaak-gevolgrelatie (causaliteit), en waarom een correlatie geen oorzaak bewijst.",
-      "ceStatus": "CE",
+      "beschrijving": "Je herkent positieve en negatieve correlaties, legt uit waarom een correlatie geen oorzakelijk verband bewijst, herkent een derde factor, een schijnverband en een omgekeerd verband, en beschrijft een experiment waarmee je wel een oorzaak kunt aantonen.",
+      "ceStatus": "CE+SE",
+      "binas": "",
+      "val": "",
       "onderwerpen": [
        "Correlatie: twee dingen veranderen samen",
        "Causaliteit: oorzaak en gevolg",
@@ -42033,554 +42037,615 @@ var VAKKEN = [
        "Experiment om oorzaak aan te tonen",
        "Valkuil: oorzaak uit één correlatie"
       ],
-      "sam": "Een correlatie is een verband: twee dingen veranderen samen. Causaliteit is een oorzaak-gevolgrelatie: het ene ding veroorzaakt het andere. Het is een veelgemaakte fout om uit een correlatie meteen een oorzaak te concluderen. Twee dingen kunnen namelijk samen veranderen zonder dat het ene het andere veroorzaakt. Vaak is er een derde factor die beide beïnvloedt; dan is er een schijnverband. Een bekend voorbeeld: de verkoop van ijs en het aantal verdrinkingen stijgen samen, maar de een veroorzaakt de ander niet. De derde factor is warm weer. Om echt aan te tonen dat het ene het andere veroorzaakt, heb je een experiment nodig met een controlegroep, waarin je maar één variabele verandert.",
+      "sam": "Correlatie = samenhang; positief samen omhoog, negatief tegengesteld; spreidingsdiagram. Causaliteit = oorzaak en gevolg; aanwijzingen: oorzaak eerst, mechanisme, experiment. Correlatie bewijst geen causaliteit: toeval, derde factor, omgekeerd verband. Derde factor → schijnverband (temperatuur: ijs en verdrinkingen; leeftijd: schoenmaat en lezen); test door die factor gelijk te houden. Experiment: zelf één factor veranderen, loting, rest gelijk. Valkuil: oorzaak uit één correlatie (chocolade en Nobelprijzen, ooievaars en geboortes).",
       "begrippen": [
        {
         "t": "Correlatie",
-        "d": "een verband waarbij twee dingen samen veranderen"
+        "d": "Samenhang tussen twee variabelen: ze veranderen samen."
+       },
+       {
+        "t": "Positieve correlatie",
+        "d": "Als de ene variabele stijgt, stijgt de andere ook."
+       },
+       {
+        "t": "Negatieve correlatie",
+        "d": "Als de ene variabele stijgt, daalt de andere."
+       },
+       {
+        "t": "Spreidingsdiagram",
+        "d": "Diagram waarin elk punt een meting met twee waarden is, om een correlatie te laten zien."
        },
        {
         "t": "Causaliteit",
-        "d": "een oorzaak-gevolgrelatie tussen twee dingen"
+        "d": "Oorzakelijk verband: de ene variabele veroorzaakt de verandering in de andere."
        },
        {
-        "t": "Oorzaak",
-        "d": "datgene wat een gevolg teweegbrengt"
-       },
-       {
-        "t": "Gevolg",
-        "d": "datgene wat door een oorzaak wordt veroorzaakt"
-       },
-       {
-        "t": "Verband",
-        "d": "een samenhang tussen twee grootheden"
+        "t": "Mechanisme",
+        "d": "De manier waarop een oorzaak tot een gevolg leidt."
        },
        {
         "t": "Derde factor",
-        "d": "een verborgen factor die twee dingen samen beïnvloedt"
+        "d": "Variabele die twee andere variabelen beïnvloedt, waardoor die lijken samen te hangen."
        },
        {
         "t": "Schijnverband",
-        "d": "een verband dat geen oorzaak-gevolg is"
+        "d": "Correlatie die niet door oorzaak en gevolg komt, maar door een derde factor."
        },
        {
-        "t": "Toeval",
-        "d": "een samenhang die door kans ontstaat, zonder oorzaak"
+        "t": "Omgekeerd oorzakelijk verband",
+        "d": "Het vermeende gevolg is eigenlijk de oorzaak."
        },
        {
         "t": "Experiment",
-        "d": "een proef waarmee je een oorzaak kunt aantonen"
+        "d": "Onderzoek waarin je zelf één factor verandert en de rest gelijk houdt."
        },
        {
-        "t": "Controlegroep",
-        "d": "de vergelijkingsgroep zonder de behandeling"
-       },
-       {
-        "t": "Aanwijzing",
-        "d": "een gegeven dat een verband suggereert maar niet bewijst"
-       },
-       {
-        "t": "Voorspelling",
-        "d": "een verwachting over wat er zal gebeuren"
+        "t": "Loting",
+        "d": "Willekeurig indelen van proefpersonen in groepen, zodat de groepen gelijk zijn."
        }
       ],
       "sv": [
        {
-        "v": "Wat is een correlatie?",
+        "v": "Wanneer is er een correlatie tussen twee variabelen?",
         "o": [
-         "Een verband waarbij twee dingen samen veranderen",
-         "Een bewijs dat het ene het andere veroorzaakt",
-         "Een proef met een controlegroep erbij",
-         "De verwachting die je van tevoren opstelt in het onderzoek"
+         "als ze altijd precies gelijk zijn",
+         "als de ene de andere veroorzaakt",
+         "als ze samen veranderen",
+         "als ze in dezelfde eenheid worden gemeten"
         ],
-        "c": 0,
-        "d": 2,
-        "u": "Een correlatie is een verband: twee dingen veranderen samen, zonder dat dit een oorzaak bewijst.",
+        "c": 2,
+        "d": 1,
+        "s": 0,
+        "u": "Correlatie = samenhang: als de ene verandert, verandert de andere mee.",
         "uo": [
-         "Klopt: twee dingen veranderen samen.",
-         "Een correlatie bewijst juist geen oorzaak.",
-         "Dat is een experiment.",
-         "Dat is de hypothese."
+         "Koos je precies gelijk? Variabelen hoeven niet gelijk te zijn. Het gaat erom dat ze samen stijgen of dalen.",
+         "Koos je veroorzaken? Dat is causaliteit. Een correlatie laat alleen zien dat twee dingen samen veranderen, niet dat het ene het andere veroorzaakt.",
+         "Klopt: er is een correlatie als twee variabelen samen veranderen. Als de ene hoger is, is de andere vaak ook hoger (of juist lager). Dat zegt nog niets over oorzaak en gevolg.",
+         "Koos je dezelfde eenheid? Lengte in cm en gewicht in kg kunnen prima correleren. De eenheid maakt niet uit."
         ],
-        "uh": "Correlatie = samen veranderen (nog geen oorzaak)."
+        "uh": "Veranderen ze samen?"
        },
        {
-        "v": "Wat is causaliteit?",
+        "v": "Hoe noem je het als de ene variabele daalt terwijl de andere stijgt?",
         "o": [
-         "Twee dingen die toevallig samen veranderen",
-         "Een oorzaak-gevolgrelatie",
-         "De grootte van de steekproef",
-         "Een verband zonder betekenis"
+         "een positieve correlatie",
+         "een negatieve correlatie",
+         "geen correlatie",
+         "een causaal verband"
         ],
         "c": 1,
         "d": 2,
-        "u": "Causaliteit betekent dat het ene ding het andere echt veroorzaakt: oorzaak en gevolg.",
+        "s": 0,
+        "u": "Negatief: hoe meer van het een, hoe minder van het ander.",
         "uo": [
-         "Samen veranderen is correlatie, niet per se oorzaak.",
-         "Klopt: een oorzaak-gevolgrelatie.",
-         "Dat is de steekproefgrootte.",
-         "Causaliteit is juist een betekenisvol verband."
+         "Koos je positief? Bij een positieve correlatie stijgen beide variabelen samen. Hier gaan ze in tegengestelde richting.",
+         "Klopt: bij een negatieve correlatie gaat de ene variabele omhoog als de andere omlaag gaat. Bijvoorbeeld: hoe meer uren sport, hoe lager de rusthartslag.",
+         "Koos je geen correlatie? Er is wel een verband: de variabelen bewegen tegengesteld. Dat is een negatieve correlatie.",
+         "Koos je causaal? Of de ene de andere veroorzaakt, weet je hiermee niet. Je ziet alleen een samenhang."
         ],
-        "uh": "Causaliteit = oorzaak en gevolg."
+        "uh": "Tegengestelde richting."
        },
        {
-        "v": "Bewijst een correlatie een oorzaak?",
+        "v": "Welke correlatie laat het spreidingsdiagram zien?",
         "o": [
-         "Ja, een correlatie bewijst altijd meteen de oorzaak",
-         "Ja, als de steekproef klein is",
-         "Nee, een correlatie bewijst geen oorzaak",
-         "Ja, want alles hangt samen"
-        ],
-        "c": 2,
-        "d": 3,
-        "u": "Twee dingen kunnen samen veranderen zonder dat het ene het andere veroorzaakt, dus een correlatie bewijst geen oorzaak.",
-        "uo": [
-         "Een correlatie bewijst juist niet meteen een oorzaak.",
-         "Een kleine steekproef bewijst al helemaal niets.",
-         "Klopt: correlatie is geen bewijs van oorzaak.",
-         "Samenhang is nog geen oorzaak."
-        ],
-        "uh": "Correlatie bewijst geen causaliteit."
-       },
-       {
-        "v": "Wat is een derde factor?",
-        "o": [
-         "Het gemeten getal aan het eind",
-         "De titel van het onderzoek in dit onderzoek",
-         "De verwachting die je van tevoren opstelt",
-         "Een verborgen factor die beide beïnvloedt"
-        ],
-        "c": 3,
-        "d": 2,
-        "u": "Een derde factor is een verborgen oorzaak die twee dingen tegelijk beïnvloedt, waardoor ze samen lijken te veranderen.",
-        "uo": [
-         "Dat is een meetwaarde.",
-         "Dat is de titel.",
-         "Dat is de hypothese.",
-         "Klopt: een verborgen factor die beide beïnvloedt."
-        ],
-        "uh": "Derde factor = verborgen oorzaak achter een schijnverband."
-       },
-       {
-        "v": "Ijsverkoop en verdrinkingen stijgen samen. Wat is de beste verklaring?",
-        "o": [
-         "Warm weer beïnvloedt allebei",
-         "IJs eten laat mensen verdrinken",
-         "Verdrinken zorgt voor meer ijsverkoop",
-         "Er is geen enkel verband"
+         "een negatieve correlatie",
+         "een positieve correlatie",
+         "geen correlatie",
+         "een correlatie die alleen geldt voor zware mensen"
         ],
         "c": 0,
         "d": 3,
-        "u": "Warm weer is de derde factor: het verhoogt zowel de ijsverkoop als het zwemmen (en dus verdrinkingen).",
+        "s": 0,
+        "u": "Meer stappen per dag gaat samen met een lagere rusthartslag.",
         "uo": [
-         "Klopt: warm weer beïnvloedt beide (derde factor).",
-         "IJs eten veroorzaakt geen verdrinking.",
-         "Verdrinken verkoopt geen ijs.",
-         "Er is wel een verband, maar via een derde factor."
+         "Klopt: hoe meer stappen per dag, hoe lager de rusthartslag. De punten lopen van linksboven naar rechtsonder: een negatieve correlatie.",
+         "Koos je positief? Dan zouden de punten van linksonder naar rechtsboven lopen. Hier daalt de hartslag juist bij meer stappen.",
+         "Koos je geen correlatie? De punten liggen niet zomaar verspreid, maar volgen een dalende lijn. Er is dus wel een verband.",
+         "Koos je alleen voor zware mensen? Het gewicht van de deelnemers is niet gemeten. Het diagram laat een verband zien voor de hele groep."
         ],
-        "uh": "Zoek de derde factor bij een schijnverband."
+        "uh": "Van linksboven naar rechtsonder?",
+        "ctx": "Bij 200 volwassenen meten onderzoekers het gemiddelde aantal stappen per dag en de hartslag in rust. In het spreidingsdiagram lopen de punten van linksboven (weinig stappen, hoge hartslag) naar rechtsonder (veel stappen, lage hartslag). De punten liggen redelijk dicht bij een rechte lijn."
+       },
+       {
+        "v": "Wat laat een spreidingsdiagram met punten die willekeurig verspreid liggen zien?",
+        "o": [
+         "dat er een oorzakelijk verband is",
+         "dat er een sterke positieve correlatie is",
+         "dat de meting fout is gegaan",
+         "dat er geen correlatie is"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 0,
+        "u": "Geen patroon = geen samenhang.",
+        "uo": [
+         "Koos je oorzakelijk verband? Zonder correlatie is er zeker geen aanwijzing voor oorzaak en gevolg.",
+         "Koos je sterke positieve correlatie? Dan zouden de punten dicht langs een stijgende lijn liggen. Bij willekeurige spreiding is er geen verband.",
+         "Koos je meetfout? Geen verband vinden kan prima een juiste uitkomst zijn. Het betekent dat de variabelen niet samenhangen.",
+         "Klopt: als de punten geen richting volgen, veranderen de variabelen niet samen. Er is dan geen correlatie."
+        ],
+        "uh": "Zie je een richting?"
+       },
+       {
+        "v": "Wat betekent causaliteit?",
+        "o": [
+         "twee variabelen hebben dezelfde eenheid",
+         "twee variabelen veranderen toevallig samen",
+         "de ene variabele veroorzaakt de andere",
+         "een variabele blijft altijd constant"
+        ],
+        "c": 2,
+        "d": 1,
+        "s": 1,
+        "u": "Causaal = oorzaak en gevolg.",
+        "uo": [
+         "Koos je dezelfde eenheid? De eenheid heeft niets met oorzaak en gevolg te maken.",
+         "Koos je toevallig samen? Dat is een correlatie zonder oorzaak. Causaliteit betekent dat het ene het andere echt veroorzaakt.",
+         "Klopt: bij causaliteit is de verandering in de ene variabele de oorzaak van de verandering in de andere. Roken veroorzaakt bijvoorbeeld longkanker.",
+         "Koos je constant? Een constante variabele verandert niet. Bij causaliteit verandert het gevolg juist door de oorzaak."
+        ],
+        "uh": "Oorzaak en gevolg."
+       },
+       {
+        "v": "Welk voorbeeld is een causaal verband?",
+        "o": [
+         "mensen met grotere schoenmaten hebben meer woordenschat",
+         "meer zout in de grond geeft minder kiemende zaden",
+         "in maanden met meer ijsverkoop zijn er meer zonnebrandcrèmes verkocht",
+         "steden met meer kerken hebben meer cafés"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 1,
+        "u": "Zout belemmert direct de wateropname door het zaad.",
+        "uo": [
+         "Koos je schoenmaat en woordenschat? Beide hangen samen met leeftijd: oudere kinderen hebben grotere voeten en kennen meer woorden. Schoenmaat veroorzaakt geen woordenschat.",
+         "Klopt: zout trekt water uit het zaad (osmose), waardoor het niet kan kiemen. Er is een mechanisme en het is met een experiment aan te tonen: oorzaak en gevolg.",
+         "Koos je ijs en zonnebrand? Die worden allebei meer verkocht als het zonnig en warm is. Het een veroorzaakt het ander niet.",
+         "Koos je kerken en cafés? Grote steden hebben van allebei meer. De grootte van de stad is de derde factor."
+        ],
+        "uh": "Bij welke is er een mechanisme?"
+       },
+       {
+        "v": "Welke waarneming maakt het meest aannemelijk dat roken longkanker veroorzaakt?",
+        "o": [
+         "rookstoffen beschadigen DNA in proeven",
+         "rokers zijn vaker man dan vrouw",
+         "longkanker komt ook bij niet-rokers voor",
+         "rokers drinken vaker koffie"
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 1,
+        "u": "Een bekend mechanisme maakt een causaal verband aannemelijk.",
+        "uo": [
+         "Klopt: als je weet hoe de oorzaak het gevolg kan veroorzaken (een mechanisme), wordt een causaal verband veel aannemelijker. Stoffen in tabaksrook beschadigen DNA in longcellen, wat tot kanker kan leiden.",
+         "Koos je vaker man? Dat is een mogelijke derde factor, geen bewijs voor oorzaak. Het zou juist een andere verklaring kunnen zijn.",
+         "Koos je ook bij niet-rokers? Dat laat zien dat roken niet de enige oorzaak is. Het maakt een causaal verband niet aannemelijker.",
+         "Koos je koffie? Als rokers vaker koffie drinken, is koffie juist een mogelijke derde factor. Dat ondersteunt de oorzaak roken niet."
+        ],
+        "uh": "Welke waarneming laat zien hoe het werkt?",
+        "ctx": "Al in de jaren vijftig bleek uit onderzoek bij duizenden mensen dat rokers veel vaker longkanker krijgen dan niet-rokers. Critici zeiden dat dit alleen een correlatie was. Later werd meer onderzoek gedaan naar de manier waarop roken longkanker zou kunnen veroorzaken."
+       },
+       {
+        "v": "Wat hoort bij een oorzaak en gevolg in de goede volgorde?",
+        "o": [
+         "de volgorde maakt bij causaliteit niet uit",
+         "het gevolg komt vóór de oorzaak",
+         "ze gebeuren altijd op precies hetzelfde moment",
+         "de oorzaak komt vóór het gevolg"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 1,
+        "u": "Een oorzaak moet in tijd voorafgaan aan het gevolg.",
+        "uo": [
+         "Koos je maakt niet uit? De volgorde is juist een belangrijke aanwijzing. Een gevolg kan niet vóór zijn oorzaak komen.",
+         "Koos je gevolg eerst? Dan kan de oorzaak het gevolg niet hebben veroorzaakt. De oorzaak moet altijd eerst komen.",
+         "Koos je hetzelfde moment? Vaak zit er tijd tussen, zoals jaren tussen roken en longkanker. Maar de oorzaak komt nooit later.",
+         "Klopt: een oorzaak moet eerst optreden, het gevolg daarna. Als iets al vóór de vermeende oorzaak aanwezig was, kan het daar niet door komen."
+        ],
+        "uh": "Wat moet er eerst zijn?"
+       },
+       {
+        "v": "Waarom bewijst een correlatie geen oorzakelijk verband?",
+        "o": [
+         "oorzaken kun je nooit onderzoeken",
+         "een correlatie is altijd een meetfout",
+         "er kan een andere verklaring zijn",
+         "een correlatie komt alleen bij mensen voor"
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 2,
+        "u": "Toeval, een derde factor of omgekeerde oorzaak zijn ook mogelijk.",
+        "uo": [
+         "Koos je nooit onderzoeken? Met een goed experiment kun je wel een oorzaak aantonen. Een correlatie alleen is daarvoor niet genoeg.",
+         "Koos je meetfout? Een correlatie kan heel echt zijn. Het punt is dat je niet weet waardoor de samenhang komt.",
+         "Klopt: als twee dingen samen veranderen, kan dat ook door toeval komen, door een derde factor die beide beïnvloedt, of omdat de oorzaak andersom werkt. Een correlatie is een aanwijzing, geen bewijs.",
+         "Koos je alleen bij mensen? Correlaties vind je overal: bij planten, dieren en in het weer. Dat heeft er niets mee te maken."
+        ],
+        "uh": "Welke verklaringen zijn er nog meer?"
+       },
+       {
+        "v": "Welke verklaring voor de correlatie is het meest waarschijnlijk?",
+        "o": [
+         "weinig bewegen veroorzaakt altijd een ziekte",
+         "zieke mensen bewegen minder",
+         "het verband is zeker toeval",
+         "ziekenhuizen vragen alleen inactieve mensen"
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 2,
+        "u": "Omgekeerde oorzaak: ziekte leidt tot minder bewegen.",
+        "uo": [
+         "Koos je altijd een ziekte? Dat is een oorzaak afleiden uit een correlatie. De onderzoekers weten niet wat eerst kwam.",
+         "Klopt: de onderzoekers vroegen hoeveel mensen nu bewegen. Mensen die al ziek zijn, bewegen vaak minder omdat ze zich slecht voelen. De oorzaak kan dus andersom werken: ziekte leidt tot weinig bewegen.",
+         "Koos je zeker toeval? Bij 3000 mensen is een duidelijk verband niet zomaar toeval. Er is waarschijnlijk een echte verklaring.",
+         "Koos je alleen inactieve mensen? In de beschrijving deden alle bezoekers van de poli mee. Er is geen sprake van zo’n selectie."
+        ],
+        "uh": "Wat kwam er eerst?",
+        "ctx": "Onderzoekers vragen 3000 patiënten van een ziekenhuis hoeveel uur ze per week bewegen. Patiënten met een chronische ziekte bewegen gemiddeld 2 uur per week, patiënten zonder chronische ziekte 5 uur. De krant kopt: \"Weinig bewegen maakt ziek.\""
+       },
+       {
+        "v": "Waarom mag de onderzoeker niet concluderen dat ontbijten tot hogere cijfers leidt?",
+        "o": [
+         "ontbijters verschillen ook op andere punten",
+         "de leerlingen hebben verschillende docenten",
+         "ontbijt heeft geen enkele invloed op het lichaam",
+         "cijfers kun je niet meten"
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 2,
+        "u": "Ontbijters kunnen bijvoorbeeld ook beter slapen of meer steun thuis hebben.",
+        "uo": [
+         "Klopt: leerlingen die ontbijten, verschillen mogelijk ook op andere punten: ze slapen misschien beter of hebben een vaster ritme thuis. Die factoren kunnen de cijfers verklaren. Een correlatie toont geen oorzaak aan.",
+         "Koos je verschillende docenten? Dat kan meespelen, maar de kern is dat er allerlei verschillen tussen ontbijters en niet-ontbijters kunnen zijn.",
+         "Koos je geen invloed? Dat is niet bekend. Ontbijt kan wel invloed hebben, maar deze correlatie bewijst het niet.",
+         "Koos je cijfers niet meetbaar? Cijfers zijn juist een duidelijke meting. Het probleem is de conclusie over oorzaak en gevolg."
+        ],
+        "uh": "Waarin verschillen ontbijters nog meer?",
+        "ctx": "Een onderzoeker vraagt 800 leerlingen of ze elke ochtend ontbijten en vergelijkt dat met hun gemiddelde cijfer. Leerlingen die elke dag ontbijten, hebben gemiddeld een 6,9; leerlingen die nooit ontbijten een 6,2. De onderzoeker concludeert dat ontbijten tot hogere cijfers leidt."
+       },
+       {
+        "v": "Wat is een omgekeerd oorzakelijk verband?",
+        "o": [
+         "het verband verdwijnt na een tijd vanzelf",
+         "twee oorzaken hebben samen één gevolg",
+         "een oorzaak heeft geen enkel gevolg",
+         "het vermeende gevolg is eigenlijk de oorzaak"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 2,
+        "u": "Bijvoorbeeld: ziekte veroorzaakt weinig bewegen, niet andersom.",
+        "uo": [
+         "Koos je verdwijnen? Dat heeft niets met de richting te maken. Omgekeerd betekent dat oorzaak en gevolg verwisseld zijn.",
+         "Koos je twee oorzaken? Dat noem je meerdere oorzaken. Een omgekeerd verband gaat over de richting van oorzaak en gevolg.",
+         "Koos je geen gevolg? Dan is er geen verband. Bij een omgekeerd verband is er wel een verband, maar in de andere richting.",
+         "Klopt: bij een omgekeerd verband denk je dat A tot B leidt, maar eigenlijk leidt B tot A. Mensen die ziek zijn, gaan minder bewegen, in plaats van dat weinig bewegen hen ziek maakt."
+        ],
+        "uh": "Welke kant op werkt het?"
        },
        {
         "v": "Wat is een schijnverband?",
         "o": [
-         "Een bewezen oorzaak-gevolgrelatie",
-         "Een verband dat geen oorzaak-gevolg is",
-         "Een grote steekproef van veel mensen",
-         "Een nepbehandeling zonder stof in dit onderzoek"
-        ],
-        "c": 1,
-        "d": 2,
-        "u": "Bij een schijnverband lijken twee dingen samen te hangen, maar veroorzaakt het ene het andere niet.",
-        "uo": [
-         "Dat is juist causaliteit.",
-         "Klopt: een verband zonder oorzaak-gevolg.",
-         "Dat is de steekproefgrootte.",
-         "Dat is een placebo."
-        ],
-        "uh": "Schijnverband = samen veranderen, geen oorzaak."
-       },
-       {
-        "v": "Hoe kun je wel een oorzaak-gevolgrelatie aantonen?",
-        "o": [
-         "Door alleen een correlatie te meten",
-         "Door de steekproef te verkleinen",
-         "Door een experiment met een controlegroep",
-         "Door de opgestelde hypothese helemaal weg te laten"
+         "een verband tussen twee constante variabelen",
+         "een verband dat je met een experiment hebt aangetoond",
+         "een correlatie die door een derde factor komt",
+         "een correlatie die alleen in tabellen voorkomt"
         ],
         "c": 2,
-        "d": 3,
-        "u": "In een experiment verander je één variabele en vergelijk je met een controlegroep, zodat je oorzaak en gevolg kunt vaststellen.",
+        "d": 2,
+        "s": 3,
+        "u": "De twee variabelen hangen samen omdat iets anders ze allebei beïnvloedt.",
         "uo": [
-         "Een correlatie alleen bewijst geen oorzaak.",
-         "Verkleinen helpt niet.",
-         "Klopt: een experiment met controlegroep toont oorzaak.",
-         "De hypothese blijft nodig."
+         "Koos je constante variabelen? Constante variabelen veranderen niet en kunnen dus geen correlatie vertonen.",
+         "Koos je aangetoond met een experiment? Dat is juist een echt oorzakelijk verband. Een schijnverband is er alleen ogenschijnlijk.",
+         "Klopt: bij een schijnverband hangen twee variabelen samen, maar niet omdat de ene de andere veroorzaakt. Een derde factor beïnvloedt ze allebei.",
+         "Koos je alleen in tabellen? Een schijnverband kun je in een tabel of in een grafiek zien. Waar je het ziet, maakt niet uit."
         ],
-        "uh": "Oorzaak aantonen = experiment met controlegroep."
+        "uh": "Wie zit er achter beide variabelen?"
        },
        {
-        "v": "Wat is de valkuil bij correlatie?",
+        "v": "Welke derde factor verklaart het verband tussen ijsverkoop en verdrinkingen?",
         "o": [
-         "Eerst de assen van de grafiek lezen",
-         "Een controlegroep gebruiken",
-         "Meerdere keren meten",
-         "Meteen een oorzaak concluderen"
+         "het aantal ijswinkels",
+         "de temperatuur",
+         "de prijs van een ijsje",
+         "het aantal zwembaden in Nederland"
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 3,
+        "u": "Warm weer: meer ijs én meer zwemmen.",
+        "uo": [
+         "Koos je het aantal ijswinkels? Dat verandert niet per maand. Het verklaart niet waarom er in de zomer meer verdrinkingen zijn.",
+         "Klopt: als het warm is, eten mensen meer ijs en gaan ze vaker zwemmen. Door het zwemmen verdrinken er ook meer mensen. De temperatuur beïnvloedt beide.",
+         "Koos je de prijs? De prijs van een ijsje heeft niets met zwemmen te maken. Het verklaart het verband niet.",
+         "Koos je het aantal zwembaden? Dat blijft het hele jaar ongeveer gelijk. Het verklaart niet waarom beide in de zomer pieken."
+        ],
+        "uh": "Wat verandert er per seizoen?",
+        "ctx": "In een land wordt per maand bijgehouden hoeveel ijs er wordt verkocht en hoeveel mensen verdrinken. In juli en augustus zijn beide het hoogst, in januari en februari het laagst. Een journalist schrijft dat ijs eten gevaarlijk is voor zwemmers."
+       },
+       {
+        "v": "Welke derde factor kan het verband tussen schoenmaat en leesvaardigheid verklaren?",
+        "o": [
+         "de leeftijd van de kinderen",
+         "het merk van de schoenen",
+         "de kleur van de boeken",
+         "het aantal broers en zussen"
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 3,
+        "u": "Oudere kinderen: grotere voeten en betere leesvaardigheid.",
+        "uo": [
+         "Klopt: oudere kinderen hebben grotere voeten en lezen ook beter, omdat ze langer naar school gaan. Leeftijd beïnvloedt beide. Schoenmaat veroorzaakt geen leesvaardigheid.",
+         "Koos je het merk? Het merk verandert de schoenmaat niet en heeft niets met lezen te maken.",
+         "Koos je de kleur van de boeken? Die is voor alle kinderen hetzelfde soort boeken. Het verklaart geen samenhang met schoenmaat.",
+         "Koos je broers en zussen? Dat heeft geen duidelijk verband met schoenmaat. Leeftijd beïnvloedt juist beide variabelen."
+        ],
+        "uh": "Wat verschilt er tussen groep 3 en groep 8?",
+        "ctx": "Op een basisschool meten onderzoekers bij alle 240 kinderen van groep 3 tot en met groep 8 de schoenmaat en de score op een leestoets. Kinderen met een grotere schoenmaat scoren gemiddeld veel hoger op de leestoets."
+       },
+       {
+        "v": "Hoe kun je onderzoeken of een derde factor een verband verklaart?",
+        "o": [
+         "de correlatie twee keer zo vaak meten",
+         "de derde factor gewoon negeren",
+         "alleen naar het gemiddelde kijken",
+         "de derde factor gelijk houden"
         ],
         "c": 3,
         "d": 2,
-        "u": "De valkuil is uit een correlatie meteen concluderen dat het ene het andere veroorzaakt.",
+        "s": 3,
+        "u": "Vergelijk bijvoorbeeld alleen kinderen van dezelfde leeftijd.",
         "uo": [
-         "Assen lezen is juist goed.",
-         "Een controlegroep is juist goed.",
-         "Herhalen is juist goed.",
-         "Klopt: meteen een oorzaak concluderen is de valkuil."
+         "Koos je vaker meten? Vaker meten maakt de correlatie betrouwbaarder, maar laat niet zien of een derde factor hem veroorzaakt.",
+         "Koos je negeren? Juist als je de derde factor negeert, trek je een verkeerde conclusie. Je moet hem gelijk houden of meten.",
+         "Koos je het gemiddelde? Het gemiddelde laat de derde factor niet zien. Je moet de groepen opsplitsen.",
+         "Klopt: als je groepen vergelijkt waarin de derde factor gelijk is, bijvoorbeeld alleen kinderen van dezelfde leeftijd, kan die factor het verband niet meer verklaren. Blijft het verband bestaan, dan speelt er iets anders."
         ],
-        "uh": "Valkuil: van correlatie meteen naar oorzaak springen."
+        "uh": "Houd de derde factor gelijk."
        },
        {
-        "v": "Wat is een oorzaak?",
+        "v": "Welke naam past bij een variabele die twee andere variabelen tegelijk beïnvloedt?",
         "o": [
-         "Datgene wat een gevolg teweegbrengt",
-         "Het getal dat je aan het eind meet",
-         "De verwachting vooraf in dit onderzoek",
-         "De grootte van de groep"
+         "een constante variabele",
+         "een afhankelijke variabele",
+         "een derde factor",
+         "een mechanisme"
         ],
-        "c": 0,
+        "c": 2,
         "d": 1,
-        "u": "Een oorzaak is datgene wat een gevolg teweegbrengt.",
+        "s": 3,
+        "u": "Een derde factor zit achter beide variabelen en veroorzaakt zo een schijnverband.",
         "uo": [
-         "Klopt: brengt het gevolg teweeg.",
-         "Dat is een meetwaarde.",
-         "Dat is de hypothese.",
-         "Dat is de steekproefgrootte."
+         "Koos je constante variabele? Die houd je gelijk en verandert dus niet. Een derde factor verandert wel en beïnvloedt zo beide variabelen.",
+         "Koos je afhankelijke variabele? Dat is wat je in een experiment meet. Een derde factor is een variabele die je juist niet hebt meegenomen en die beide beïnvloedt.",
+         "Klopt: een derde factor beïnvloedt twee andere variabelen tegelijk. Daardoor lijken die samen te hangen, ook als ze elkaar niet beïnvloeden.",
+         "Koos je mechanisme? Een mechanisme legt uit hoe een oorzaak tot een gevolg leidt. Het is geen variabele die twee andere beïnvloedt."
         ],
-        "uh": "Oorzaak = brengt het gevolg teweeg."
+        "uh": "Denk aan de temperatuur bij ijs en verdrinkingen."
        },
        {
-        "v": "Wat is een gevolg?",
+        "v": "Waarom kun je met een experiment wel een oorzaak aantonen?",
         "o": [
-         "De onafhankelijke variabele",
-         "Datgene wat door een oorzaak ontstaat",
-         "De titel die boven de grafiek staat",
-         "De naam van de onderzoeker in dit onderzoek"
+         "je kijkt alleen naar mensen die al ziek zijn",
+         "je verandert één factor en houdt de rest gelijk",
+         "je verzamelt zoveel mogelijk correlaties",
+         "je laat de proefpersonen zelf hun groep kiezen"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 4,
+        "u": "Bij een experiment is de onafhankelijke variabele het enige verschil.",
+        "uo": [
+         "Koos je alleen zieke mensen? Dan kun je niet vergelijken met gezonde mensen. Een experiment heeft een controlegroep nodig.",
+         "Klopt: in een experiment verander je bewust één factor en houd je alle andere gelijk. Verandert dan de afhankelijke variabele, dan moet dat door die ene factor komen.",
+         "Koos je veel correlaties? Hoeveel correlaties je ook verzamelt, ze bewijzen samen nog geen oorzaak. Je moet zelf iets veranderen.",
+         "Koos je zelf kiezen? Dan kunnen de groepen op andere punten verschillen. Bij een goed experiment wijs je de groepen willekeurig toe."
+        ],
+        "uh": "Wat doet de onderzoeker zelf?"
+       },
+       {
+        "v": "Hoe kan de onderzoeker aantonen dat ontbijt de cijfers beïnvloedt?",
+        "o": [
+         "loten wie wel en niet ontbijt",
+         "meer leerlingen vragen of ze ontbijten",
+         "alleen leerlingen die ontbijten onderzoeken",
+         "de leerlingen zelf laten kiezen of ze ontbijten"
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 4,
+        "u": "Willekeurige indeling maakt de groepen gelijk op alle andere punten.",
+        "uo": [
+         "Klopt: door te loten wie wel en wie niet ontbijt, worden andere verschillen zoals slaap en thuissituatie gelijk verdeeld over de groepen. Is er dan een verschil in cijfers, dan komt dat door het ontbijt.",
+         "Koos je meer leerlingen vragen? Dan blijft het een correlatie. Ontbijters kunnen dan nog steeds op andere punten verschillen.",
+         "Koos je alleen ontbijters? Zonder vergelijkingsgroep kun je niets zeggen over het effect van ontbijt.",
+         "Koos je zelf laten kiezen? Dan kiezen leerlingen met een vast ritme vaker voor ontbijt. De groepen verschillen dan op meer punten."
+        ],
+        "uh": "Hoe maak je de groepen gelijk?",
+        "ctx": "Na zijn onderzoek met 800 leerlingen wil de onderzoeker weten of ontbijten echt tot hogere cijfers leidt. Hij heeft toestemming van school en ouders om een experiment te doen. Hij wil vier weken lang twee groepen vergelijken die zoveel mogelijk op elkaar lijken."
+       },
+       {
+        "v": "Welke conclusie past bij het experiment met de muizen?",
+        "o": [
+         "het verschil komt door de leeftijd van de muizen",
+         "de stof heeft geen effect op het gewicht",
+         "het verschil komt door het voer",
+         "de stof veroorzaakt de gewichtstoename"
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 4,
+        "u": "Willekeurig ingedeeld, alles gelijk behalve de stof: het verschil komt door de stof.",
+        "uo": [
+         "Koos je de leeftijd? Alle muizen waren even oud en willekeurig verdeeld. Leeftijd verschilt niet tussen de groepen.",
+         "Koos je geen effect? De proefgroep nam 6 g toe en de controlegroep 2 g. Er is dus wel een duidelijk verschil.",
+         "Koos je het voer? Beide groepen kregen hetzelfde voer. Het voer kan het verschil dus niet verklaren.",
+         "Klopt: de muizen zijn willekeurig ingedeeld en kregen hetzelfde voer en dezelfde huisvesting. Het enige verschil is de stof. Omdat de proefgroep duidelijk zwaarder werd, veroorzaakt de stof de gewichtstoename."
+        ],
+        "uh": "Wat is het enige verschil?",
+        "ctx": "Veertig muizen van dezelfde leeftijd worden door loting in twee groepen verdeeld. De proefgroep krijgt zes weken lang een stof door het drinkwater, de controlegroep niet. Beide groepen krijgen hetzelfde voer en wonen in dezelfde soort kooi. De proefgroep neemt gemiddeld 6 g toe, de controlegroep 2 g."
+       },
+       {
+        "v": "Waarom wijs je proefpersonen bij een experiment willekeurig toe aan een groep?",
+        "o": [
+         "zodat de proefpersonen zelf kunnen kiezen",
+         "zodat de groepen kleiner worden",
+         "zodat andere verschillen gelijk verdeeld zijn",
+         "zodat de onderzoeker de beste groep kan maken"
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 4,
+        "u": "Loting voorkomt dat de groepen op andere punten verschillen.",
+        "uo": [
+         "Koos je zelf kiezen? Dat is juist het tegenovergestelde van willekeurig toewijzen. Zelf kiezen geeft scheve groepen.",
+         "Koos je kleinere groepen? Loting verandert de grootte van de groepen niet. Het verdeelt de mensen eerlijk.",
+         "Klopt: door te loten komen mensen met allerlei eigenschappen ongeveer gelijk verdeeld in beide groepen. Een verschil in uitkomst komt dan door de behandeling en niet door andere verschillen.",
+         "Koos je de beste groep maken? Als de onderzoeker zelf kiest, kan hij onbewust de groepen beïnvloeden. Loting voorkomt dat."
+        ],
+        "uh": "Waarom niet zelf kiezen?"
+       },
+       {
+        "v": "Een journalist noemt een samenhang meteen oorzaak en gevolg. Welke fout maakt hij?",
+        "o": [
+         "hij gebruikt de verkeerde eenheden",
+         "hij leidt een oorzaak af uit een correlatie",
+         "hij heeft te veel metingen gebruikt",
+         "hij heeft een experiment gedaan"
         ],
         "c": 1,
         "d": 1,
-        "u": "Een gevolg is datgene wat door een oorzaak wordt veroorzaakt.",
+        "s": 5,
+        "u": "Correlatie ≠ causaliteit.",
         "uo": [
-         "De onafhankelijke variabele is eerder de oorzaak.",
-         "Klopt: ontstaat door de oorzaak.",
-         "Dat is de titel.",
-         "Dat is de naam."
+         "Koos je de verkeerde eenheden? Daar staat niets over in de beschrijving. De fout zit in de conclusie over oorzaak en gevolg.",
+         "Klopt: hij ziet een samenhang en noemt dat meteen oorzaak en gevolg. Maar een correlatie kan ook door toeval, een derde factor of een omgekeerd verband komen.",
+         "Koos je te veel metingen? Meer metingen maken een correlatie juist betrouwbaarder. De fout zit in de redenering.",
+         "Koos je een experiment? Dan had hij juist wel een oorzaak kunnen aantonen. Hij keek alleen naar een samenhang."
         ],
-        "uh": "Gevolg = ontstaat door de oorzaak."
+        "uh": "Samenhang of oorzaak?"
        },
        {
-        "v": "Twee grootheden hangen samen door puur toeval. Wat is dat?",
+        "v": "Waarom is de conclusie over ooievaars en geboortes onjuist?",
         "o": [
-         "Een bewezen oorzaak",
-         "Een controlegroep in het onderzoek",
-         "Een schijnverband door toeval",
-         "Een nauwkeurige meting"
-        ],
-        "c": 2,
-        "d": 3,
-        "u": "Soms hangen twee dingen door louter kans samen; dat is een schijnverband dat door toeval ontstaat.",
-        "uo": [
-         "Toeval bewijst geen oorzaak.",
-         "Dat is geen controlegroep.",
-         "Klopt: een toevallig schijnverband.",
-         "Toeval zegt niets over nauwkeurigheid."
-        ],
-        "uh": "Toeval kan een schijnverband geven."
-       },
-       {
-        "v": "Waarom heb je een controlegroep nodig om een oorzaak aan te tonen?",
-        "o": [
-         "Om de steekproef kleiner te maken",
-         "Om de hypothese te vervangen",
-         "Om zo snel mogelijk klaar te zijn met de proef",
-         "Om te vergelijken met en zonder de behandeling"
-        ],
-        "c": 3,
-        "d": 3,
-        "u": "Alleen door te vergelijken met een groep zonder behandeling weet je of het effect echt door de behandeling komt.",
-        "uo": [
-         "De steekproef wordt niet kleiner.",
-         "De hypothese blijft.",
-         "Snelheid is niet de reden.",
-         "Klopt: vergelijken met en zonder behandeling."
-        ],
-        "uh": "Controlegroep = vergelijken om oorzaak vast te stellen."
-       },
-       {
-        "v": "Wat mag je NIET zonder meer concluderen uit een correlatie?",
-        "o": [
-         "Dat het ene het andere veroorzaakt",
-         "Dat er tussen de twee een verband is",
-         "Dat de grootheden samen veranderen",
-         "Dat er een grafiek van te maken is"
+         "beide dalen door verstedelijking",
+         "ooievaars brengen inderdaad baby’s",
+         "het aantal geboortes is niet goed geteld",
+         "ooievaars leven alleen in de stad"
         ],
         "c": 0,
         "d": 3,
-        "u": "Een correlatie laat een verband zien, maar je mag daar niet zomaar een oorzaak uit afleiden.",
+        "s": 5,
+        "u": "Schijnverband: minder platteland gaf minder ooievaars én kleinere gezinnen.",
         "uo": [
-         "Klopt: een oorzaak mag je er niet zomaar uit afleiden.",
-         "Een verband mag je wel vaststellen.",
-         "Samen veranderen zie je juist in een correlatie.",
-         "Een grafiek kun je gewoon maken."
+         "Klopt: na 1960 trokken veel mensen naar de stad. Er kwam minder platteland met nestplaatsen voor ooievaars, en in de stad kregen gezinnen minder kinderen. Verstedelijking beïnvloedt beide.",
+         "Koos je dat ooievaars baby’s brengen? Dat is een sprookje. Het verband komt door een derde factor.",
+         "Koos je slecht geteld? Het aantal geboortes wordt nauwkeurig bijgehouden. Het probleem is de conclusie, niet de telling.",
+         "Koos je alleen in de stad? Ooievaars broeden juist op het platteland, bij weilanden en sloten. Ze verdwenen doordat het platteland kleiner werd."
         ],
-        "uh": "Uit correlatie geen oorzaak concluderen."
+        "uh": "Wat veranderde er in die jaren nog meer?",
+        "ctx": "In een Europees land daalde tussen 1960 en 1985 het aantal broedparen ooievaars van 900 naar 300. In dezelfde periode daalde het aantal geboortes per jaar van 250.000 naar 180.000. Een leerling concludeert grappend dat ooievaars dus toch de baby’s brengen."
        },
        {
-        "v": "Wat is het verschil tussen correlatie en causaliteit?",
+        "v": "Welke conclusie mag de onderzoeker trekken uit dit onderzoek naar chocolade?",
         "o": [
-         "Ze betekenen precies hetzelfde",
-         "Correlatie is samen veranderen, causaliteit is oorzaak-gevolg",
-         "Beide begrippen bewijzen samen een oorzaak",
-         "Beide gaan over de steekproef"
-        ],
-        "c": 1,
-        "d": 3,
-        "u": "Correlatie is een verband; causaliteit is een oorzaak-gevolgrelatie. Een correlatie hoeft geen causaliteit te zijn.",
-        "uo": [
-         "Ze verschillen juist.",
-         "Klopt: samen veranderen versus oorzaak-gevolg.",
-         "Alleen causaliteit gaat over oorzaak.",
-         "Ze gaan niet over de steekproef."
-        ],
-        "uh": "Correlatie = verband, causaliteit = oorzaak-gevolg."
-       },
-       {
-        "v": "Meer studeren hangt samen met hogere cijfers. Wat toont dit direct aan?",
-        "o": [
-         "Zeker een oorzaak",
-         "Een controlegroep",
-         "Een correlatie",
-         "Een meetfout"
-        ],
-        "c": 2,
-        "d": 3,
-        "u": "Je ziet dat twee dingen samen veranderen: een correlatie. Voor een oorzaak is meer bewijs nodig.",
-        "uo": [
-         "Een oorzaak is hiermee nog niet bewezen.",
-         "Dat is geen controlegroep.",
-         "Klopt: het toont een correlatie.",
-         "Dat is geen meetfout."
-        ],
-        "uh": "Samen veranderen toont een correlatie, geen oorzaak."
-       },
-       {
-        "v": "Wat kan een correlatie veroorzaken zonder dat A B veroorzaakt?",
-        "o": [
-         "Een grote controlegroep",
-         "Een nauwkeurige meting",
-         "Een tweede hypothese naast de eerste",
-         "Een derde factor die beide beïnvloedt"
+         "er is helemaal geen verband",
+         "chocolade maakt mensen slimmer",
+         "slimme mensen eten meer chocolade",
+         "alleen dat er een correlatie is"
         ],
         "c": 3,
         "d": 3,
-        "u": "Een derde factor kan zowel A als B beïnvloeden, waardoor A en B samen veranderen zonder onderling oorzaak-gevolg.",
+        "s": 5,
+        "u": "Landen verschillen op veel punten, zoals welvaart en onderwijs.",
         "uo": [
-         "Een controlegroep veroorzaakt geen schijnverband.",
-         "Nauwkeurigheid is niet de oorzaak.",
-         "Een hypothese veroorzaakt geen verband.",
-         "Klopt: een derde factor kan beide beïnvloeden."
+         "Koos je geen verband? Er is wel een duidelijke correlatie. Je mag alleen niet concluderen dat het een het ander veroorzaakt.",
+         "Koos je slimmer? Dat is een oorzaak afleiden uit een correlatie tussen landen. Welvaart kan beide verklaren.",
+         "Koos je slimme mensen eten meer? Ook dit is een oorzaak, maar dan omgekeerd. De gegevens bewijzen geen van beide richtingen.",
+         "Klopt: de gegevens laten een correlatie zien tussen chocoladegebruik en het aantal Nobelprijzen per land. Rijke landen hebben meer geld voor chocolade én voor onderzoek. Over oorzaak en gevolg zegt dit niets."
         ],
-        "uh": "Een derde factor kan A en B samen bewegen."
+        "uh": "Wat verschilt er nog meer tussen landen?",
+        "ctx": "Een onderzoeker zet voor 23 landen het chocoladegebruik per inwoner uit tegen het aantal Nobelprijswinnaars per tien miljoen inwoners. Landen waar meer chocolade wordt gegeten, hebben meer Nobelprijswinnaars. Zwitserland staat bovenaan in beide lijsten."
        },
        {
-        "v": "Wat is een verband?",
+        "v": "Welke vraag stel je het best als je een opvallende correlatie ziet?",
         "o": [
-         "Een samenhang tussen twee grootheden",
-         "De titel van de grafiek",
-         "Een nepbehandeling zonder werkzame stof",
-         "De naam van de x-as"
-        ],
-        "c": 0,
-        "d": 1,
-        "u": "Een verband is een samenhang tussen twee grootheden, zoals je in een correlatie ziet.",
-        "uo": [
-         "Klopt: een samenhang tussen twee grootheden.",
-         "Dat is de titel.",
-         "Dat is een placebo.",
-         "Dat is een as-naam."
-        ],
-        "uh": "Verband = samenhang tussen twee grootheden."
-       },
-       {
-        "v": "Waarom is één correlatie te weinig voor een oorzaakclaim?",
-        "o": [
-         "Omdat correlaties in het echt niet bestaan",
-         "Omdat er een derde factor of toeval kan spelen",
-         "Omdat een grafiek altijd klopt",
-         "Omdat de steekproef altijd groot is"
-        ],
-        "c": 1,
-        "d": 3,
-        "u": "Achter een correlatie kan een derde factor of toeval zitten, dus één correlatie bewijst geen oorzaak.",
-        "uo": [
-         "Correlaties bestaan wel.",
-         "Klopt: derde factor of toeval kan meespelen.",
-         "Een grafiek klopt niet altijd.",
-         "De steekproef is niet altijd groot."
-        ],
-        "uh": "Achter een correlatie kan toeval of een derde factor zitten."
-       },
-       {
-        "v": "Welke uitspraak klopt?",
-        "o": [
-         "Correlatie is hetzelfde als causaliteit",
-         "Causaliteit is zwakker dan correlatie",
-         "Correlatie bewijst geen causaliteit",
-         "Correlatie betekent geen verband"
+         "welke variabele heeft de mooiste grafiek?",
+         "hoe kan ik dit zo snel mogelijk delen?",
+         "is er een derde factor die beide verklaart?",
+         "waarom zou ik dit nog verder onderzoeken?"
         ],
         "c": 2,
         "d": 2,
-        "u": "Een correlatie laat een verband zien, maar bewijst geen oorzaak-gevolgrelatie.",
+        "s": 5,
+        "u": "Kritisch kijken: toeval, derde factor, omgekeerde richting?",
         "uo": [
-         "Ze zijn niet hetzelfde.",
-         "Causaliteit is juist een sterker soort uitspraak.",
-         "Klopt: correlatie bewijst geen causaliteit.",
-         "Correlatie is juist wel een verband."
+         "Koos je de mooiste grafiek? Hoe een grafiek eruitziet, zegt niets over oorzaak en gevolg.",
+         "Koos je snel delen? Een opvallende correlatie zonder kritisch nadenken verspreiden, leidt vaak tot onjuiste krantenkoppen.",
+         "Klopt: bij een correlatie vraag je je af of een derde factor beide variabelen verklaart, of het toeval kan zijn en of de oorzaak misschien andersom werkt. Pas met een experiment weet je het zeker.",
+         "Koos je niet verder onderzoeken? Juist bij een opvallende correlatie is verder onderzoek nodig om te weten of er een oorzaak achter zit."
         ],
-        "uh": "Correlatie bewijst geen causaliteit."
-       },
-       {
-        "v": "Hoe kun je een derde factor uitsluiten?",
-        "o": [
-         "Door de correlatie sterker te maken",
-         "Door minder te meten",
-         "Door de hypothese te schrappen",
-         "Met een goed opgezet experiment"
-        ],
-        "c": 3,
-        "d": 3,
-        "u": "In een experiment houd je andere factoren constant en gebruik je een controlegroep, zodat een derde factor het resultaat niet vertekent.",
-        "uo": [
-         "Een sterkere correlatie blijft een correlatie.",
-         "Minder meten helpt niet.",
-         "De hypothese blijft nodig.",
-         "Klopt: een experiment sluit een derde factor uit."
-        ],
-        "uh": "Experiment sluit een derde factor uit."
-       },
-       {
-        "v": "Twee dingen dalen samen. Wat weet je zeker?",
-        "o": [
-         "Er is een correlatie",
-         "Het ene veroorzaakt het andere",
-         "Er is een controlegroep",
-         "De meting is fout"
-        ],
-        "c": 0,
-        "d": 2,
-        "u": "Samen dalen is ook een correlatie; over oorzaak weet je nog niets zeker.",
-        "uo": [
-         "Klopt: er is een correlatie.",
-         "Een oorzaak is niet zeker.",
-         "Dat is geen controlegroep.",
-         "De meting hoeft niet fout te zijn."
-        ],
-        "uh": "Samen bewegen (op of neer) = correlatie."
-       },
-       {
-        "v": "Wat is een aanwijzing in onderzoek?",
-        "o": [
-         "Een bewezen oorzaak-gevolgrelatie",
-         "Een gegeven dat een verband suggereert maar niet bewijst",
-         "De grootte van de steekproef",
-         "De titel die boven de grafiek staat"
-        ],
-        "c": 1,
-        "d": 2,
-        "u": "Een aanwijzing wijst op een mogelijk verband, maar is nog geen bewijs van een oorzaak.",
-        "uo": [
-         "Een aanwijzing is nog geen bewijs.",
-         "Klopt: suggereert een verband, bewijst niets.",
-         "Dat is de steekproefgrootte.",
-         "Dat is de titel."
-        ],
-        "uh": "Aanwijzing = suggestie, geen bewijs."
-       },
-       {
-        "v": "Waarom is de stap van correlatie naar oorzaak zo verleidelijk maar fout?",
-        "o": [
-         "Omdat correlaties in het echt niet bestaan",
-         "Omdat een grafiek altijd een oorzaak toont",
-         "Omdat samen veranderen lijkt op oorzaak, maar het niet is",
-         "Omdat oorzaak en gevolg hetzelfde zijn"
-        ],
-        "c": 2,
-        "d": 3,
-        "u": "Twee dingen die samen veranderen lijken op oorzaak en gevolg, maar er kan een derde factor of toeval achter zitten.",
-        "uo": [
-         "Correlaties bestaan wel.",
-         "Een grafiek toont niet vanzelf een oorzaak.",
-         "Klopt: het lijkt erop, maar het is geen bewijs.",
-         "Oorzaak en gevolg zijn niet hetzelfde."
-        ],
-        "uh": "Samen veranderen lijkt op oorzaak, maar bewijst het niet."
-       },
-       {
-        "v": "Wat heb je nodig om van correlatie naar causaliteit te gaan?",
-        "o": [
-         "Alleen een grotere grafiek",
-         "Alleen een mooiere tabel met de gegevens",
-         "Alleen een tweede correlatie",
-         "Een experiment met controlegroep"
-        ],
-        "c": 3,
-        "d": 3,
-        "u": "Om oorzaak-gevolg vast te stellen heb je een experiment nodig waarin je één variabele verandert en met een controlegroep vergelijkt.",
-        "uo": [
-         "Een grotere grafiek bewijst niets.",
-         "Een mooiere tabel bewijst niets.",
-         "Nog een correlatie blijft correlatie.",
-         "Klopt: een experiment met controlegroep."
-        ],
-        "uh": "Causaliteit vraagt een experiment met controlegroep."
-       },
-       {
-        "v": "Welke uitspraak over een derde factor klopt?",
-        "o": [
-         "Hij kan twee dingen samen laten veranderen",
-         "Hij is altijd de gemeten variabele",
-         "Hij bewijst de oorzaak-gevolgrelatie",
-         "Hij is gelijk aan de titel van de grafiek"
-        ],
-        "c": 0,
-        "d": 2,
-        "u": "Een derde factor beïnvloedt twee grootheden tegelijk, waardoor ze samen veranderen zonder onderling oorzaak-gevolg.",
-        "uo": [
-         "Klopt: hij beweegt twee dingen tegelijk.",
-         "Hij is juist vaak verborgen.",
-         "Hij bewijst geen oorzaak, hij verklaart het schijnverband.",
-         "Hij is niet de titel."
-        ],
-        "uh": "Derde factor beweegt twee grootheden tegelijk."
+        "uh": "Denk aan andere verklaringen."
        }
       ],
       "oe": [
        {
-        "vraag": "Leg het verschil uit tussen correlatie en causaliteit.",
-        "antwoord": "Een correlatie is een verband waarbij twee dingen samen veranderen. Causaliteit is een oorzaak-gevolgrelatie: het ene ding veroorzaakt het andere. Bij een correlatie veranderen twee dingen samen, maar dat betekent nog niet dat het ene het andere veroorzaakt."
+        "bron": "Examenstijl",
+        "ctx": "In een onderzoek onder 5000 volwassenen bleek dat mensen die veel koffie drinken vaker longkanker krijgen. Uit dezelfde gegevens blijkt dat koffiedrinkers ook vaker roken dan mensen die geen koffie drinken.",
+        "v": "Leg uit waarom je uit dit onderzoek niet mag concluderen dat koffie longkanker veroorzaakt. Gebruik het begrip derde factor.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Er is alleen een correlatie gemeten, geen experiment (1p). Roken is een derde factor: koffiedrinkers roken vaker, en roken veroorzaakt longkanker (1p). Het verband tussen koffie en longkanker kan dus een schijnverband zijn dat door roken komt (1p)."
        },
        {
-        "vraag": "Leg uit waarom je uit een correlatie niet zomaar een oorzaak mag concluderen.",
-        "antwoord": "Twee dingen kunnen samen veranderen zonder dat het ene het andere veroorzaakt. Vaak is er een derde factor die beide beïnvloedt, of het is toeval. Daarom is een correlatie alleen geen bewijs van een oorzaak-gevolgrelatie; je zou een verkeerde conclusie kunnen trekken."
+        "bron": "Examenstijl",
+        "ctx": "Uit een groot onderzoek blijkt dat kinderen die veel tijd achter een scherm doorbrengen, slechter slapen. Een onderzoeker wil weten of schermgebruik in de avond de slaap echt verslechtert.",
+        "v": "Beschrijf een experiment waarmee de onderzoeker kan aantonen of schermgebruik in de avond de slaap verslechtert. Noem de groepen, wat je meet en hoe je zorgt dat de groepen vergelijkbaar zijn.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Twee groepen kinderen: een groep zonder scherm in het uur voor het slapen en een groep met scherm (1p). Meet bijvoorbeeld hoe lang het duurt tot ze in slaap vallen of hoe lang ze slapen, met een slaapmeter (1p). Kinderen door loting indelen, met gelijke bedtijd en verder gelijke omstandigheden, zodat alleen het schermgebruik verschilt (1p)."
        },
        {
-        "vraag": "Leg met het voorbeeld van ijsverkoop en verdrinkingen uit wat een derde factor is.",
-        "antwoord": "De verkoop van ijs en het aantal verdrinkingen stijgen in de zomer allebei. Toch veroorzaakt ijs eten geen verdrinkingen. De derde factor is warm weer: bij warm weer wordt er meer ijs verkocht en gaan meer mensen zwemmen, waardoor er ook meer verdrinkingen zijn. De derde factor beïnvloedt dus beide."
+        "bron": "Examenstijl",
+        "ctx": "Een gemeente ziet dat in wijken met meer groen minder mensen met depressie zijn. De wethouder wil daarom in alle wijken extra bomen planten om depressie te verminderen. In de wijken met veel groen wonen gemiddeld mensen met een hoger inkomen.",
+        "v": "Geef twee andere verklaringen voor de gevonden correlatie dan \"groen vermindert depressie\".",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Derde factor: inkomen; mensen met een hoger inkomen wonen vaker in groene wijken en hebben ook minder vaak depressie (bijvoorbeeld door minder geldzorgen) (1p). Omgekeerd verband: mensen met depressie verhuizen misschien vaker naar goedkopere, minder groene wijken (1p). Ook toeval of een andere derde factor (leeftijd, gezondheid) is mogelijk; elke juiste tweede verklaring met uitleg (1p)."
        },
        {
-        "vraag": "Leg uit hoe je wel een oorzaak-gevolgrelatie kunt aantonen.",
-        "antwoord": "Om een oorzaak aan te tonen doe je een experiment. Je verandert maar één variabele, houdt de rest constant en vergelijkt met een controlegroep die de behandeling niet krijgt. Als alleen de behandelde groep het effect vertoont, kun je concluderen dat de behandeling de oorzaak is."
+        "bron": "Examenstijl",
+        "ctx": "Onderzoekers geven 60 mensen met lichte slaapproblemen door loting vier weken lang elke avond een capsule met magnesium of een capsule die er hetzelfde uitziet zonder magnesium. Niemand weet wat hij krijgt. In de magnesiumgroep slaapt 55% beter, in de andere groep 30%.",
+        "v": "Leg uit waarom je uit dit onderzoek wel een oorzakelijke conclusie mag trekken, en welk deel van de verbetering je aan het magnesium kunt toeschrijven.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Het is een experiment: de onderzoekers veranderen zelf één factor (magnesium) en de groepen zijn door loting gelijk gemaakt (1p). Door de placebo is de verwachting in beide groepen gelijk, dus het verschil komt door het magnesium (1p). Toe te schrijven aan magnesium: 55 − 30 = 25 procentpunt (1p)."
        },
        {
-        "vraag": "Iemand ziet dat mensen die meer koffie drinken vaker slecht slapen, en concludeert dat koffie slecht slapen veroorzaakt. Leg uit wat er mis is met deze redenering.",
-        "antwoord": "De persoon ziet een correlatie: koffie drinken en slecht slapen komen samen voor. Maar dat bewijst nog geen oorzaak. Er kan een derde factor zijn, bijvoorbeeld stress, die zowel meer koffie drinken als slechter slapen veroorzaakt. Om te bewijzen dat koffie de oorzaak is, is een experiment met een controlegroep nodig."
+        "bron": "Examenstijl",
+        "ctx": "In een tijdschrift staat: \"Mensen die een hond hebben, leven langer. Uit onderzoek onder 10.000 ouderen blijkt dat hondenbezitters gemiddeld twee jaar langer leven. Neem dus een hond!\" Hondenbezitters wandelen gemiddeld een uur per dag.",
+        "v": "Leg uit waarom de conclusie \"neem dus een hond\" niet zomaar volgt uit dit onderzoek. Betrek in je antwoord zowel de wandeltijd als een mogelijk omgekeerd verband.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Het is een correlatie, geen experiment; oorzaak is niet aangetoond (1p). Mogelijk komt het langere leven door het wandelen; dat kan ook zonder hond (1p). Omgekeerd verband: gezondere ouderen nemen eerder een hond, omdat ze de zorg voor een hond aankunnen; dan is gezondheid de oorzaak van hondenbezit en niet andersom (1p)."
        }
       ]
      },

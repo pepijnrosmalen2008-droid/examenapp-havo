@@ -1030,9 +1030,13 @@ var VAKKEN = [
      },
      {
       "id": "A4",
+      "lo": "bi.A.4",
+      "gs": 2,
       "naam": "Correlatie versus causaliteit",
-      "beschrijving": "Het verschil tussen een verband (correlatie) en een oorzaak-gevolgrelatie (causaliteit), en waarom een correlatie geen oorzaak bewijst.",
-      "ceStatus": "CE",
+      "beschrijving": "Je herkent positieve en negatieve correlaties, legt uit waarom een correlatie geen oorzakelijk verband bewijst, herkent een derde factor, een schijnverband en een omgekeerd verband, en beschrijft een experiment waarmee je wel een oorzaak kunt aantonen.",
+      "ceStatus": "CE+SE",
+      "binas": "",
+      "val": "",
       "onderwerpen": [
        "Correlatie: twee dingen veranderen samen",
        "Causaliteit: oorzaak en gevolg",
@@ -1043,7 +1047,7 @@ var VAKKEN = [
       ],
       "nSv": 25,
       "nOe": 5,
-      "nBeg": 12,
+      "nBeg": 11,
       "hasSam": true
      },
      {
