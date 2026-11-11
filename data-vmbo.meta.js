@@ -1125,7 +1125,30 @@ var VAKKEN_VMBO = [
     "nSv": 31,
     "nOe": 0,
     "nBeg": 8,
-    "hasSam": true
+    "hasSam": true,
+    "leerdoelen": [
+     {
+      "id": "D1",
+      "lo": "en.D.1",
+      "gs": 2,
+      "naam": "Een informele e-mail of brief schrijven",
+      "beschrijving": "Je leert in het Engels een informele e-mail of brief te schrijven: je kiest een passende opening en afsluiting, reageert op een bericht, vertelt nieuws, stelt een vraag, gebruikt verbindingswoorden en houdt de toon vriendelijk.",
+      "ceStatus": "SE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Opening en afsluiting",
+       "Informeel taalgebruik",
+       "Inhoud ordenen",
+       "Reageren en vragen stellen",
+       "Zinnen verbinden en controleren"
+      ],
+      "nSv": 27,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
+     }
+    ]
    }
   ]
  },
