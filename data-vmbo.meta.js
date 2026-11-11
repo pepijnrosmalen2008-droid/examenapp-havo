@@ -1168,6 +1168,27 @@ var VAKKEN_VMBO = [
       "nOe": 5,
       "nBeg": 12,
       "hasSam": true
+     },
+     {
+      "id": "D3",
+      "lo": "en.D.3",
+      "gs": 2,
+      "naam": "Een bericht of uitnodiging schrijven: afspreken, uitnodigen en bedanken",
+      "beschrijving": "Je leert in het Engels korte berichten te schrijven: je nodigt uit met wat, wanneer en waar, accepteert of weigert beleefd, maakt een afspraak met een voorstel en een alternatief en bedankt vriendelijk.",
+      "ceStatus": "SE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Uitnodigen",
+       "Reageren op een uitnodiging",
+       "Een afspraak maken",
+       "Bedanken en afsluiten",
+       "Praktische informatie"
+      ],
+      "nSv": 27,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
      }
     ]
    }

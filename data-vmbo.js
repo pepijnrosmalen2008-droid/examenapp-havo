@@ -37508,6 +37508,688 @@ var VAKKEN_VMBO = [
         "u": "Ze tonen respect (1p). De lezer ziet meteen dat het zakelijk is, bijvoorbeeld met Dear Sir or Madam (1p). Een duidelijke uitleg (1p)."
        }
       ]
+     },
+     {
+      "id": "D3",
+      "lo": "en.D.3",
+      "gs": 2,
+      "naam": "Een bericht of uitnodiging schrijven: afspreken, uitnodigen en bedanken",
+      "beschrijving": "Je leert in het Engels korte berichten te schrijven: je nodigt uit met wat, wanneer en waar, accepteert of weigert beleefd, maakt een afspraak met een voorstel en een alternatief en bedankt vriendelijk.",
+      "ceStatus": "SE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Uitnodigen",
+       "Reageren op een uitnodiging",
+       "Een afspraak maken",
+       "Bedanken en afsluiten",
+       "Praktische informatie"
+      ],
+      "sam": "In een uitnodiging noem je wat, wanneer, waar en wat gasten meenemen, met een deadline om te antwoorden. Accepteer met I would love to come of weiger beleefd met een reden. Maak een afspraak met een vraag, een voorstel en een alternatief en bedank vriendelijk.",
+      "begrippen": [
+       {
+        "t": "Uitnodiging",
+        "d": "Een bericht waarin je iemand vraagt om te komen."
+       },
+       {
+        "t": "Antwoorden",
+        "d": "Laten weten of je komt, vóór een deadline."
+       },
+       {
+        "t": "Accepteren",
+        "d": "Ja zeggen op een uitnodiging, bijvoorbeeld I would love to come."
+       },
+       {
+        "t": "Weigeren",
+        "d": "Beleefd nee zeggen, bijvoorbeeld I am afraid I cannot come."
+       },
+       {
+        "t": "Afspraak",
+        "d": "Een moment en een plaats om elkaar te zien."
+       },
+       {
+        "t": "Voorstel",
+        "d": "Een suggestie, bijvoorbeeld Shall we meet at the station?"
+       },
+       {
+        "t": "Alternatief",
+        "d": "Een tweede mogelijkheid, bijvoorbeeld we can also meet on Saturday."
+       },
+       {
+        "t": "Bedankje",
+        "d": "Thank you for the lovely party."
+       },
+       {
+        "t": "Deadline",
+        "d": "De dag vóór wanneer je moet antwoorden."
+       },
+       {
+        "t": "Praktisch",
+        "d": "Wat de gast moet meenemen of weten, zoals a swimsuit."
+       },
+       {
+        "t": "Bevestigen",
+        "d": "Laten weten dat iets doorgaat, bijvoorbeeld See you on Saturday."
+       },
+       {
+        "t": "Vriendelijk",
+        "d": "Warm en beleefd schrijven, met please en thanks."
+       }
+      ],
+      "sv": [
+       {
+        "v": "Welke gegevens horen in een uitnodiging?",
+        "o": [
+         "\"alleen je naam\"",
+         "\"wat, wanneer en waar\"",
+         "\"alleen het cadeau dat je wilt\"",
+         "\"wat je gisteren deed\""
+        ],
+        "c": 1,
+        "d": 1,
+        "s": 0,
+        "u": "Let op wat, wanneer, waar en wat je moet doen. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"alleen je naam\"\"? Dan denk je dat een naam genoeg is. De gast weet dan niet wanneer of waar, en kan niet komen.",
+         "Klopt: de gast moet weten wat het is, op welke dag en tijd en waar.",
+         "Koos je \"\"alleen het cadeau dat je wilt\"\"? Dan pak je iets wat niet hoort. Een uitnodiging vraagt niet om cadeaus, en noemt geen plaats of tijd.",
+         "Koos je \"\"wat je gisteren deed\"\"? Dan kies je nieuws van gisteren. Dat zegt niets over het feest, en helpt de gast niet."
+        ],
+        "uh": "Welke gegevens horen in een uitnodiging?"
+       },
+       {
+        "v": "Welke zin nodigt iemand uit?",
+        "o": [
+         "\"Thank you for the party, volgens mij.\"",
+         "\"I am sorry I am late.\"",
+         "\"What time is it?\"",
+         "\"Would you like to come to my party?\""
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 0,
+        "u": "Let op wat, wanneer, waar en wat je moet doen. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"Thank you for the party, volgens mij.\"\"? Dan denk je dat dit uitnodigt. Het bedankt voor een feest dat al geweest is, en nodigt niet uit.",
+         "Koos je \"\"I am sorry I am late.\"\"? Dan pak je excuses. Dit is geen uitnodiging, en past niet bij uitnodigen.",
+         "Koos je \"\"What time is it?\"\"? Dan kies je een vraag over tijd. Dit nodigt niemand uit, en vraagt alleen naar de klok.",
+         "Klopt: would you like to come is een beleefde uitnodiging."
+        ],
+        "uh": "Welke zin nodigt iemand uit?"
+       },
+       {
+        "v": "Hoe accepteer je een uitnodiging in een bericht?",
+        "o": [
+         "\"Thank you, I would love to come!\"",
+         "\"No, I hate parties.\"",
+         "\"I am not interested, zeg maar, gewoon.\"",
+         "\"Who invited you?\""
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 1,
+        "u": "Let op wat, wanneer, waar en wat je moet doen. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: je bedankt voor de uitnodiging en zegt blij dat je komt.",
+         "Koos je \"\"No, I hate parties.\"\"? Dan denk je dat dit accepteert. Het is een onbeleefde weigering, en geen ja.",
+         "Koos je \"\"I am not interested, zeg maar, gewoon.\"\"? Dan pak je een afwijzing. Je zegt dat je geen zin hebt, en dat is geen acceptatie.",
+         "Koos je \"\"Who invited you?\"\"? Dan kies je een vraag. Dit accepteert niets, en klinkt onvriendelijk."
+        ],
+        "uh": "Hoe accepteer je een uitnodiging in een bericht?"
+       },
+       {
+        "v": "Hoe weiger je een uitnodiging beleefd?",
+        "o": [
+         "\"No.\"",
+         "\"I will not come.\"",
+         "\"Thank you, but I am afraid I cannot come.\"",
+         "\"That sounds boring, eigenlijk, denk ik, zeg maar.\""
+        ],
+        "c": 2,
+        "d": 1,
+        "s": 1,
+        "u": "Let op wat, wanneer, waar en wat je moet doen. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"No.\"\"? Dan denk je dat een kort nee genoeg is. Het is te bot, en klinkt onbeleefd.",
+         "Koos je \"\"I will not come.\"\"? Dan pak je een harde weigering. Het mist een bedankje, en klinkt onvriendelijk.",
+         "Klopt: je bedankt en legt vriendelijk uit dat het helaas niet kan.",
+         "Koos je \"\"That sounds boring, eigenlijk, denk ik, zeg maar.\"\"? Dan kies je een mening. Dit beledigt de ander, en is geen beleefde weigering."
+        ],
+        "uh": "Hoe weiger je een uitnodiging beleefd?"
+       },
+       {
+        "v": "Je wilt een afspraak maken. Welke vraag past?",
+        "o": [
+         "\"What is your favourite colour, really?\"",
+         "\"Are you free on Friday afternoon?\"",
+         "\"Where do you live?\"",
+         "\"How old are you?\""
+        ],
+        "c": 1,
+        "d": 1,
+        "s": 2,
+        "u": "Let op wat, wanneer, waar en wat je moet doen. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"What is your favourite colour, really?\"\"? Dan denk je dat dit een afspraak plant. Het vraagt naar een kleur, en niet naar een moment.",
+         "Klopt: are you free vraagt of de ander tijd heeft.",
+         "Koos je \"\"Where do you live?\"\"? Dan pak je een adresvraag. Dit plant geen afspraak, en vraagt naar een plaats.",
+         "Koos je \"\"How old are you?\"\"? Dan kies je een leeftijdsvraag. Dit plant niets, en vraagt naar jaren."
+        ],
+        "uh": "Je wilt een afspraak maken. Welke vraag past?"
+       },
+       {
+        "v": "Hoe bedank je na een feestje?",
+        "o": [
+         "\"Please give me a present.\"",
+         "\"I am angry about the party, denk ik.\"",
+         "\"I will come tomorrow.\"",
+         "\"Thank you for the lovely party!\""
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 3,
+        "u": "Let op wat, wanneer, waar en wat je moet doen. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"Please give me a present.\"\"? Dan denk je dat dit bedankt. Het vraagt iets, en bedankt niet.",
+         "Koos je \"\"I am angry about the party, denk ik.\"\"? Dan pak je een klacht. Dit bedankt niet, en is onvriendelijk.",
+         "Koos je \"\"I will come tomorrow.\"\"? Dan kies je een plan. Dit zegt niet dat je dankbaar bent, en bedankt niet.",
+         "Klopt: je zegt wat je bedankt en voegt een positief woord toe."
+        ],
+        "uh": "Hoe bedank je na een feestje?"
+       },
+       {
+        "v": "Waarom schrijf je 'Please let me know before Wednesday'?",
+        "o": [
+         "\"zodat de ander weet tot wanneer hij moet antwoorden\"",
+         "\"om de ander te bedanken\"",
+         "\"om te zeggen dat je weggaat, volgens mij, eigenlijk, denk ik\"",
+         "\"om een cadeau te vragen\""
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 4,
+        "u": "Let op wat, wanneer, waar en wat je moet doen. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: een deadline helpt je te plannen en de ander weet wanneer hij moet reageren.",
+         "Koos je \"\"om de ander te bedanken\"\"? Dan denk je dat de zin bedankt. Hij vraagt een antwoord, en bedankt niet.",
+         "Koos je \"\"om te zeggen dat je weggaat, volgens mij, eigenlijk, denk ik\"\"? Dan pak je een afscheid. De zin vraagt een antwoord, en zegt niets over weggaan.",
+         "Koos je \"\"om een cadeau te vragen\"\"? Dan kies je een cadeau. Er wordt niets gevraagd behalve een antwoord, en geen cadeau."
+        ],
+        "uh": "Waarom schrijf je 'Please let me know before Wednesday'?"
+       },
+       {
+        "v": "What is Noor inviting people to?",
+        "o": [
+         "\"a school trip\"",
+         "\"a football match, I suppose, really\"",
+         "\"her fifteenth birthday party\"",
+         "\"a wedding\""
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 0,
+        "u": "Let op wat, wanneer, waar en wat je moet doen. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"a school trip\"\"? Dan denk je dat het een schoolreis is. Er staat birthday party, dus een feest.",
+         "Koos je \"\"a football match, I suppose, really\"\"? Dan pak je een wedstrijd. Dit wordt niet genoemd, dus je verzint iets.",
+         "Klopt: ze noemt it is a party for my fifteenth birthday.",
+         "Koos je \"\"a wedding\"\"? Dan kies je een bruiloft. Het gaat om een verjaardag, en niet om een bruiloft."
+        ],
+        "uh": "What is Noor inviting people to?",
+        "ctx": "You read this invitation from Noor: \"Hi everyone, I am having a party for my fifteenth birthday! It is on Saturday 14 June at 7 pm at my house, 12 Oak Street. We are going to eat pizza and play games. Please bring a swimsuit, because we will use the pool. Can you let me know before Wednesday if you are coming? You can send me a message or call me. I hope you can all come! Love, Noor\""
+       },
+       {
+        "v": "When and where is the party?",
+        "o": [
+         "\"Sunday 14 June at 7 pm at the school\"",
+         "\"Saturday 14 June at 7 pm at 12 Oak Street\"",
+         "\"Saturday 4 June at 7 am at 12 Oak Street, you know\"",
+         "\"Saturday 14 June at 9 pm at the park\""
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 0,
+        "u": "Let op wat, wanneer, waar en wat je moet doen. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"Sunday 14 June at 7 pm at the school\"\"? Dan denk je dat het zondag is. De dag is zaterdag, en het feest is bij haar thuis.",
+         "Klopt: de uitnodiging noemt dag, datum, tijd en adres.",
+         "Koos je \"\"Saturday 4 June at 7 am at 12 Oak Street, you know\"\"? Dan verwar je de datum en de tijd. Het is 14 juni en 7 pm, en niet 4 juni en 7 am.",
+         "Koos je \"\"Saturday 14 June at 9 pm at the park\"\"? Dan kies je een andere tijd en plek. Het is 7 pm en bij haar thuis, en niet in het park."
+        ],
+        "uh": "When and where is the party?",
+        "ctx": "You read this invitation from Noor: \"Hi everyone, I am having a party for my fifteenth birthday! It is on Saturday 14 June at 7 pm at my house, 12 Oak Street. We are going to eat pizza and play games. Please bring a swimsuit, because we will use the pool. Can you let me know before Wednesday if you are coming? You can send me a message or call me. I hope you can all come! Love, Noor\""
+       },
+       {
+        "v": "What must the guests bring?",
+        "o": [
+         "\"a present only\"",
+         "\"a pizza\"",
+         "\"a towel and a game\"",
+         "\"a swimsuit\""
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 4,
+        "u": "Let op wat, wanneer, waar en wat je moet doen. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"a present only\"\"? Dan denk je dat alleen een cadeau nodig is. Ze vraagt om een zwembroek, en geen cadeau.",
+         "Koos je \"\"a pizza\"\"? Dan pak je eten. De pizza wordt al geserveerd, dus je hoeft niets mee te nemen.",
+         "Koos je \"\"a towel and a game\"\"? Dan kies je een handdoek en spel. Dit wordt niet gevraagd, en je verzint iets.",
+         "Klopt: ze gebruiken het zwembad, dus een zwembroek of badpak is nodig."
+        ],
+        "uh": "What must the guests bring?",
+        "ctx": "You read this invitation from Noor: \"Hi everyone, I am having a party for my fifteenth birthday! It is on Saturday 14 June at 7 pm at my house, 12 Oak Street. We are going to eat pizza and play games. Please bring a swimsuit, because we will use the pool. Can you let me know before Wednesday if you are coming? You can send me a message or call me. I hope you can all come! Love, Noor\""
+       },
+       {
+        "v": "Before when must the guests answer?",
+        "o": [
+         "\"before Wednesday\"",
+         "\"before Saturday\"",
+         "\"before Monday\"",
+         "\"before the party starts at 7\""
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 4,
+        "u": "Let op wat, wanneer, waar en wat je moet doen. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: ze vraagt om vóór woensdag te antwoorden.",
+         "Koos je \"\"before Saturday\"\"? Dan denk je dat het voor zaterdag is. Zaterdag is de feestdag, en niet de antwoorddag.",
+         "Koos je \"\"before Monday\"\"? Dan pak je een andere dag. Er staat Wednesday, dus woensdag.",
+         "Koos je \"\"before the party starts at 7\"\"? Dan kies je het begin van het feest. Ze wil al eerder antwoord, namelijk vóór woensdag."
+        ],
+        "uh": "Before when must the guests answer?",
+        "ctx": "You read this invitation from Noor: \"Hi everyone, I am having a party for my fifteenth birthday! It is on Saturday 14 June at 7 pm at my house, 12 Oak Street. We are going to eat pizza and play games. Please bring a swimsuit, because we will use the pool. Can you let me know before Wednesday if you are coming? You can send me a message or call me. I hope you can all come! Love, Noor\""
+       },
+       {
+        "v": "How does Mike react to the invitation?",
+        "o": [
+         "\"he refuses\"",
+         "\"he does not answer\"",
+         "\"he says he would love to come\"",
+         "\"he asks for a different date, to be honest\""
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 1,
+        "u": "Let op wat, wanneer, waar en wat je moet doen. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"he refuses\"\"? Dan denk je dat hij weigert. Hij zegt dat hij graag komt, dus hij accepteert.",
+         "Koos je \"\"he does not answer\"\"? Dan pak je een zwijgen. Hij antwoordt direct, en accepteert.",
+         "Klopt: mike schrijft i would love to come, dus hij accepteert.",
+         "Koos je \"\"he asks for a different date, to be honest\"\"? Dan kies je een nieuwe datum. Hij blijft bij zaterdag, en wil alleen later komen."
+        ],
+        "uh": "How does Mike react to the invitation?",
+        "ctx": "You read this reply from Mike: \"Hi Noor, Thank you for the invitation! I would love to come to your party. Unfortunately, I have a football match until six o'clock, so I will be a bit late. Is that okay? Can I bring my cousin Daan? He is visiting from Spain. Let me know. See you on Saturday! Mike\""
+       },
+       {
+        "v": "Why will Mike be a bit late?",
+        "o": [
+         "\"he has to work\"",
+         "\"he has a football match until six\"",
+         "\"he has a dentist appointment, I suppose\"",
+         "\"he must study\""
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 1,
+        "u": "Let op wat, wanneer, waar en wat je moet doen. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"he has to work\"\"? Dan denk je dat hij werkt. Er staat een football match, dus voetbal.",
+         "Klopt: hij schrijft dat zijn wedstrijd tot zes uur duurt.",
+         "Koos je \"\"he has a dentist appointment, I suppose\"\"? Dan pak je een afspraak bij de tandarts. Dit wordt niet genoemd, dus je verzint iets.",
+         "Koos je \"\"he must study\"\"? Dan kies je leren. Dit wordt niet genoemd, dus het klopt niet."
+        ],
+        "uh": "Why will Mike be a bit late?",
+        "ctx": "You read this reply from Mike: \"Hi Noor, Thank you for the invitation! I would love to come to your party. Unfortunately, I have a football match until six o'clock, so I will be a bit late. Is that okay? Can I bring my cousin Daan? He is visiting from Spain. Let me know. See you on Saturday! Mike\""
+       },
+       {
+        "v": "What does Mike ask?",
+        "o": [
+         "\"if he can bring a dog\"",
+         "\"if he can sleep over\"",
+         "\"if he can bring a cake, you know, I think\"",
+         "\"if he can bring his cousin Daan\""
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 4,
+        "u": "Let op wat, wanneer, waar en wat je moet doen. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"if he can bring a dog\"\"? Dan denk je dat hij een hond meebrengt. Dit wordt niet genoemd, dus je verzint iets.",
+         "Koos je \"\"if he can sleep over\"\"? Dan pak je blijven slapen. Dit wordt niet gevraagd, dus het klopt niet.",
+         "Koos je \"\"if he can bring a cake, you know, I think\"\"? Dan kies je een taart. Dit wordt niet gevraagd, dus het klopt niet.",
+         "Klopt: hij vraagt of zijn neef Daan mee mag naar het feest."
+        ],
+        "uh": "What does Mike ask?",
+        "ctx": "You read this reply from Mike: \"Hi Noor, Thank you for the invitation! I would love to come to your party. Unfortunately, I have a football match until six o'clock, so I will be a bit late. Is that okay? Can I bring my cousin Daan? He is visiting from Spain. Let me know. See you on Saturday! Mike\""
+       },
+       {
+        "v": "What does Sara want to do on Friday afternoon?",
+        "o": [
+         "\"go to the library to study\"",
+         "\"go shopping\"",
+         "\"watch a film\"",
+         "\"play football, really, to be honest\""
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 2,
+        "u": "Let op wat, wanneer, waar en wat je moet doen. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: ze wil naar de bibliotheek om voor de toets te leren.",
+         "Koos je \"\"go shopping\"\"? Dan denk je dat ze gaat winkelen. Dit wordt niet genoemd, dus je verzint iets.",
+         "Koos je \"\"watch a film\"\"? Dan pak je een film. Dit wordt niet genoemd, dus het klopt niet.",
+         "Koos je \"\"play football, really, to be honest\"\"? Dan kies je voetbal. Dit wordt niet genoemd, dus het klopt niet."
+        ],
+        "uh": "What does Sara want to do on Friday afternoon?",
+        "ctx": "You read this text message from Sara: \"Hi Lisa, are you free on Friday afternoon? I would like to go to the library to study for our English test. Shall we meet at the station at half past three? If you cannot make it, we can also meet on Saturday morning. Just let me know what works best for you. Thanks! Sara\""
+       },
+       {
+        "v": "Where and when does Sara suggest meeting?",
+        "o": [
+         "\"at the library at three\"",
+         "\"at school at half past two, I think\"",
+         "\"at the station at half past three\"",
+         "\"at the station at four\""
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 2,
+        "u": "Let op wat, wanneer, waar en wat je moet doen. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"at the library at three\"\"? Dan denk je dat het om drie uur in de bibliotheek is. Het station en half vier worden genoemd, dus dit klopt niet.",
+         "Koos je \"\"at school at half past two, I think\"\"? Dan pak je school. Dit wordt niet genoemd, dus het klopt niet.",
+         "Klopt: ze noemt het station als plek en half vier als tijd.",
+         "Koos je \"\"at the station at four\"\"? Dan kies je vier uur. Er staat half past three, dus half vier."
+        ],
+        "uh": "Where and when does Sara suggest meeting?",
+        "ctx": "You read this text message from Sara: \"Hi Lisa, are you free on Friday afternoon? I would like to go to the library to study for our English test. Shall we meet at the station at half past three? If you cannot make it, we can also meet on Saturday morning. Just let me know what works best for you. Thanks! Sara\""
+       },
+       {
+        "v": "What is the alternative if Lisa cannot come?",
+        "o": [
+         "\"meeting on Sunday evening, to be honest\"",
+         "\"meeting on Saturday morning\"",
+         "\"studying alone\"",
+         "\"meeting on Thursday\""
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 2,
+        "u": "Let op wat, wanneer, waar en wat je moet doen. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"meeting on Sunday evening, to be honest\"\"? Dan denk je dat het zondagavond is. Er staat Saturday morning, dus zaterdagochtend.",
+         "Klopt: sara noemt zaterdagochtend als alternatief.",
+         "Koos je \"\"studying alone\"\"? Dan pak je alleen leren. Dit wordt niet genoemd, dus het klopt niet.",
+         "Koos je \"\"meeting on Thursday\"\"? Dan kies je donderdag. Dit wordt niet genoemd, dus je verzint iets."
+        ],
+        "uh": "What is the alternative if Lisa cannot come?",
+        "ctx": "You read this text message from Sara: \"Hi Lisa, are you free on Friday afternoon? I would like to go to the library to study for our English test. Shall we meet at the station at half past three? If you cannot make it, we can also meet on Saturday morning. Just let me know what works best for you. Thanks! Sara\""
+       },
+       {
+        "v": "Why does Noor write 'Can you let me know before Wednesday?'",
+        "o": [
+         "\"she wants presents\"",
+         "\"she wants to cancel, I suppose, really, to be honest\"",
+         "\"she is angry\"",
+         "\"she needs to know how many guests are coming\""
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 4,
+        "u": "Let op wat, wanneer, waar en wat je moet doen. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"she wants presents\"\"? Dan denk je dat ze cadeaus wil. Er wordt om antwoord gevraagd, en niet om cadeaus.",
+         "Koos je \"\"she wants to cancel, I suppose, really, to be honest\"\"? Dan pak je een afzegging. Ze wil juist een feest geven, en niet afzeggen.",
+         "Koos je \"\"she is angry\"\"? Dan kies je boosheid. De zin is vriendelijk, en niet boos.",
+         "Klopt: zo kan ze eten en ruimte plannen voor het aantal gasten."
+        ],
+        "uh": "Why does Noor write 'Can you let me know before Wednesday?'",
+        "ctx": "You read this invitation from Noor: \"Hi everyone, I am having a party for my fifteenth birthday! It is on Saturday 14 June at 7 pm at my house, 12 Oak Street. We are going to eat pizza and play games. Please bring a swimsuit, because we will use the pool. Can you let me know before Wednesday if you are coming? You can send me a message or call me. I hope you can all come! Love, Noor\""
+       },
+       {
+        "v": "Which part of the invitation tells you what will happen at the party?",
+        "o": [
+         "\"We are going to eat pizza and play games.\"",
+         "\"I hope you can all come, you know, I think!\"",
+         "\"Love, Noor\"",
+         "\"Hi everyone,\""
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 0,
+        "u": "Let op wat, wanneer, waar en wat je moet doen. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: deze zin vertelt wat er gaat gebeuren.",
+         "Koos je \"\"I hope you can all come, you know, I think!\"\"? Dan denk je dat dit het programma is. Het is een wens, en geen programma.",
+         "Koos je \"\"Love, Noor\"\"? Dan pak je het slot. Dit is een groet, en geen programma.",
+         "Koos je \"\"Hi everyone,\"\"? Dan kies je de opening. Dit is een groet, en geen programma."
+        ],
+        "uh": "Which part of the invitation tells you what will happen at the party?",
+        "ctx": "You read this invitation from Noor: \"Hi everyone, I am having a party for my fifteenth birthday! It is on Saturday 14 June at 7 pm at my house, 12 Oak Street. We are going to eat pizza and play games. Please bring a swimsuit, because we will use the pool. Can you let me know before Wednesday if you are coming? You can send me a message or call me. I hope you can all come! Love, Noor\""
+       },
+       {
+        "v": "How does Noor end her invitation?",
+        "o": [
+         "\"with a complaint\"",
+         "\"with a formal ending, really, to be honest\"",
+         "\"with a friendly hope and a warm greeting\"",
+         "\"with a threat\""
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 3,
+        "u": "Let op wat, wanneer, waar en wat je moet doen. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"with a complaint\"\"? Dan denk je dat ze klaagt. De toon is positief, dus er is geen klacht.",
+         "Koos je \"\"with a formal ending, really, to be honest\"\"? Dan pak je een formeel slot. Ze schrijft love, en dat is informeel.",
+         "Klopt: i hope you can all come en love zijn vriendelijk.",
+         "Koos je \"\"with a threat\"\"? Dan kies je een dreigement. Dit staat er niet, dus het klopt niet."
+        ],
+        "uh": "How does Noor end her invitation?",
+        "ctx": "You read this invitation from Noor: \"Hi everyone, I am having a party for my fifteenth birthday! It is on Saturday 14 June at 7 pm at my house, 12 Oak Street. We are going to eat pizza and play games. Please bring a swimsuit, because we will use the pool. Can you let me know before Wednesday if you are coming? You can send me a message or call me. I hope you can all come! Love, Noor\""
+       },
+       {
+        "v": "'Unfortunately, I have a football match.' What does 'unfortunately' show?",
+        "o": [
+         "\"that he refuses to come, I think\"",
+         "\"that there is a small problem\"",
+         "\"that he is happy\"",
+         "\"that he is angry\""
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 1,
+        "u": "Let op wat, wanneer, waar en wat je moet doen. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"that he refuses to come, I think\"\"? Dan denk je dat hij weigert. Hij komt wel, maar iets later.",
+         "Klopt: unfortunately betekent helaas en leidt een probleempje in.",
+         "Koos je \"\"that he is happy\"\"? Dan pak je blijdschap. Unfortunately is negatief, en betekent helaas.",
+         "Koos je \"\"that he is angry\"\"? Dan kies je boosheid. Het woord toont spijt, en geen boosheid."
+        ],
+        "uh": "'Unfortunately, I have a football match.' What does 'unfortunately' show?",
+        "ctx": "You read this reply from Mike: \"Hi Noor, Thank you for the invitation! I would love to come to your party. Unfortunately, I have a football match until six o'clock, so I will be a bit late. Is that okay? Can I bring my cousin Daan? He is visiting from Spain. Let me know. See you on Saturday! Mike\""
+       },
+       {
+        "v": "Which sentence accepts the invitation?",
+        "o": [
+         "\"Unfortunately I cannot come, to be honest.\"",
+         "\"I am not sure.\"",
+         "\"Is that okay?\"",
+         "\"I would love to come to your party.\""
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 1,
+        "u": "Let op wat, wanneer, waar en wat je moet doen. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"Unfortunately I cannot come, to be honest.\"\"? Dan denk je dat dit accepteert. Het is een weigering, en dus het tegenovergestelde.",
+         "Koos je \"\"I am not sure.\"\"? Dan pak je een twijfel. Dit accepteert niet, en geeft geen antwoord.",
+         "Koos je \"\"Is that okay?\"\"? Dan kies je een vraag. Dit accepteert niets, maar vraagt toestemming.",
+         "Klopt: i would love to come is een duidelijke, enthousiaste acceptatie."
+        ],
+        "uh": "Which sentence accepts the invitation?",
+        "ctx": "You read this reply from Mike: \"Hi Noor, Thank you for the invitation! I would love to come to your party. Unfortunately, I have a football match until six o'clock, so I will be a bit late. Is that okay? Can I bring my cousin Daan? He is visiting from Spain. Let me know. See you on Saturday! Mike\""
+       },
+       {
+        "v": "Why does Mike write 'See you on Saturday!'?",
+        "o": [
+         "\"to end friendly and confirm he is coming\"",
+         "\"to cancel\"",
+         "\"to ask for a different day, I suppose, really\"",
+         "\"to complain\""
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 3,
+        "u": "Let op wat, wanneer, waar en wat je moet doen. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: zo bevestigt hij dat hij komt en sluit hij vriendelijk af.",
+         "Koos je \"\"to cancel\"\"? Dan denk je dat hij afzegt. Hij bevestigt juist dat hij komt, dus het is geen afzegging.",
+         "Koos je \"\"to ask for a different day, I suppose, really\"\"? Dan pak je een nieuwe dag. Hij noemt Saturday, en dat is de afgesproken dag.",
+         "Koos je \"\"to complain\"\"? Dan kies je een klacht. De toon is blij, en niet klagend."
+        ],
+        "uh": "Why does Mike write 'See you on Saturday!'?",
+        "ctx": "You read this reply from Mike: \"Hi Noor, Thank you for the invitation! I would love to come to your party. Unfortunately, I have a football match until six o'clock, so I will be a bit late. Is that okay? Can I bring my cousin Daan? He is visiting from Spain. Let me know. See you on Saturday! Mike\""
+       },
+       {
+        "v": "'Shall we meet at the station?' What kind of sentence is this?",
+        "o": [
+         "\"an order\"",
+         "\"a complaint, you know\"",
+         "\"a suggestion\"",
+         "\"a thank-you\""
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 2,
+        "u": "Let op wat, wanneer, waar en wat je moet doen. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"an order\"\"? Dan denk je dat het een bevel is. Shall we vraagt de mening van de ander, en beveelt niet.",
+         "Koos je \"\"a complaint, you know\"\"? Dan pak je een klacht. De zin is positief, en klaagt niet.",
+         "Klopt: shall we is een vriendelijke manier om iets voor te stellen.",
+         "Koos je \"\"a thank-you\"\"? Dan kies je een bedankje. De zin doet een voorstel, en bedankt niet."
+        ],
+        "uh": "'Shall we meet at the station?' What kind of sentence is this?",
+        "ctx": "You read this text message from Sara: \"Hi Lisa, are you free on Friday afternoon? I would like to go to the library to study for our English test. Shall we meet at the station at half past three? If you cannot make it, we can also meet on Saturday morning. Just let me know what works best for you. Thanks! Sara\""
+       },
+       {
+        "v": "Which phrase gives Lisa a choice?",
+        "o": [
+         "\"Hi Lisa\"",
+         "\"we can also meet on Saturday morning\"",
+         "\"I would like to go to the library, really\"",
+         "\"Thanks!\""
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 2,
+        "u": "Let op wat, wanneer, waar en wat je moet doen. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"Hi Lisa\"\"? Dan denk je dat dit een keuze geeft. Het is een groet, en geen alternatief.",
+         "Klopt: sara biedt een tweede mogelijkheid aan.",
+         "Koos je \"\"I would like to go to the library, really\"\"? Dan pak je een wens. Dit is haar plan, en geen keuze voor Lisa.",
+         "Koos je \"\"Thanks!\"\"? Dan kies je een bedankje. Dit biedt geen alternatief, en geeft geen keuze."
+        ],
+        "uh": "Which phrase gives Lisa a choice?",
+        "ctx": "You read this text message from Sara: \"Hi Lisa, are you free on Friday afternoon? I would like to go to the library to study for our English test. Shall we meet at the station at half past three? If you cannot make it, we can also meet on Saturday morning. Just let me know what works best for you. Thanks! Sara\""
+       },
+       {
+        "v": "'Just let me know what works best for you.' What does Sara do?",
+        "o": [
+         "\"she gives an order\"",
+         "\"she cancels the plan, I think\"",
+         "\"she complains\"",
+         "\"she asks Lisa to decide\""
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 3,
+        "u": "Let op wat, wanneer, waar en wat je moet doen. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"she gives an order\"\"? Dan denk je dat het een bevel is. Just let me know is vriendelijk, en geen bevel.",
+         "Koos je \"\"she cancels the plan, I think\"\"? Dan pak je een afzegging. Ze doet juist een voorstel, en zegt niet af.",
+         "Koos je \"\"she complains\"\"? Dan kies je een klacht. De toon is vriendelijk, en niet klagend.",
+         "Klopt: ze laat de keuze aan Lisa, en dat is een vriendelijk verzoek."
+        ],
+        "uh": "'Just let me know what works best for you.' What does Sara do?",
+        "ctx": "You read this text message from Sara: \"Hi Lisa, are you free on Friday afternoon? I would like to go to the library to study for our English test. Shall we meet at the station at half past three? If you cannot make it, we can also meet on Saturday morning. Just let me know what works best for you. Thanks! Sara\""
+       },
+       {
+        "v": "Why does Sara write 'Thanks!' at the end?",
+        "o": [
+         "\"to be friendly and thank Lisa in advance\"",
+         "\"to say sorry\"",
+         "\"to refuse\"",
+         "\"to end the plan, to be honest, you know, I think\""
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 4,
+        "u": "Let op wat, wanneer, waar en wat je moet doen. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: ze bedankt Lisa alvast en sluit vriendelijk af.",
+         "Koos je \"\"to say sorry\"\"? Dan denk je dat thanks sorry betekent. Het is een bedankje, en geen excuus.",
+         "Koos je \"\"to refuse\"\"? Dan pak je een weigering. Thanks is vriendelijk, en weigert niet.",
+         "Koos je \"\"to end the plan, to be honest, you know, I think\"\"? Dan kies je het einde van het plan. Ze wil juist afspreken, en stopt niet."
+        ],
+        "uh": "Why does Sara write 'Thanks!' at the end?",
+        "ctx": "You read this text message from Sara: \"Hi Lisa, are you free on Friday afternoon? I would like to go to the library to study for our English test. Shall we meet at the station at half past three? If you cannot make it, we can also meet on Saturday morning. Just let me know what works best for you. Thanks! Sara\""
+       }
+      ],
+      "oe": [
+       {
+        "bron": "Examenstijl",
+        "ctx": "You are going to have a barbecue in your garden next Sunday to celebrate that you passed an exam. It starts at four o'clock and you live at 5 Park Road. Your friends must bring a chair, and you want to know by Friday who is coming.",
+        "v": "Write a short invitation in English with what, when, where, what to bring and a deadline.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Barbecue next Sunday at 4 (1p). 5 Park Road (1p). Please bring a chair (1p). Let me know before Friday (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "A friend invited you to a concert next Friday evening and asked you to tell her before Wednesday. You would like to go, but you have to go to your grandmother's birthday that night. You do not want to hurt your friend.",
+        "v": "Write a short reply in English in which you thank your friend, refuse politely and give a reason.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Thank you for the invitation (1p). I am afraid I cannot come (1p). Because it is my grandmother's birthday (1p). Een vriendelijke toon (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "You want to ask a classmate to meet you at the school library on Thursday after the last lesson to work on a project together. You also want to give her a second possibility, in case she cannot come on Thursday.",
+        "v": "Write three sentences in English for your text message: a question, a suggestion and a second option.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Are you free on Thursday after school (1p). Shall we meet at the library (1p). We can also meet on Friday (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Your friend Emily invited you to a sleepover last Saturday and you had a great time: you played games until midnight and her mother made delicious pancakes. You want to thank her the next day and mention one thing that you liked.",
+        "v": "Write two sentences in English to thank your friend.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Thank you for the sleepover (1p). I really liked the games / the pizza (1p). Een vriendelijke bedankzin (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "A classmate says while you write invitations in class: \"In an invitation I only need to write the date. The rest is not important, because friends will find out the details.\" You do not agree.",
+        "v": "Write two sentences in English that explain why time, place and a deadline are important in an invitation.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Zonder tijd en plaats weet de gast niet wanneer en waar (1p). Met een deadline kan je plannen (1p). Een duidelijke uitleg (1p)."
+       }
+      ]
      }
     ]
    }
