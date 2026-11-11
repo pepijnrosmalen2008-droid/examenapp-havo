@@ -2578,9 +2578,13 @@ var VAKKEN = [
     "leerdoelen": [
      {
       "id": "D1",
+      "lo": "na.D.1",
+      "gs": 2,
       "naam": "Stroom, spanning en lading",
-      "beschrijving": "Begrijpen wat elektrische stroom, spanning en lading zijn, in welke eenheden je ze meet en hoe je ze meet met een ampèremeter en voltmeter.",
-      "ceStatus": "ce",
+      "beschrijving": "Je beschrijft stroom als bewegende lading en rekent met I = Q / t en de lading van een elektron, legt spanning uit als energie per lading (U = E / Q), sluit een ampèremeter en een voltmeter goed aan, verklaart geleiders en isolatoren met vrije ladingen en onderscheidt gelijkstroom en wisselstroom.",
+      "ceStatus": "CE",
+      "binas": "35D",
+      "val": "",
       "onderwerpen": [
        "Stroom als bewegende lading",
        "Stroomsterkte in ampère",
@@ -2589,9 +2593,9 @@ var VAKKEN = [
        "Geleiders en isolatoren",
        "Gelijkstroom en wisselstroom"
       ],
-      "nSv": 25,
+      "nSv": 28,
       "nOe": 5,
-      "nBeg": 12,
+      "nBeg": 11,
       "hasSam": true
      },
      {
