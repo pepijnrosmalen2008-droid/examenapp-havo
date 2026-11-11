@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="nl"><head><meta charset="utf-8"><title>Slagio · Reel · Successie in 150 jaar</title>
+<link rel="stylesheet" href="../basis.css">
+<style>
+.mo-canvas{width:1080px;height:1920px;background:var(--room)}
+.bg{inset:0;background:radial-gradient(120% 70% at 50% 20%,#fffaf3,var(--room) 55%,var(--room2))}
+.donker{inset:0;background:radial-gradient(110% 70% at 50% 30%,#23234a,var(--inkt) 70%)}
+.korrel{inset:0;opacity:.06;mix-blend-mode:multiply}
+.scene{position:absolute;inset:0}
+.midden{left:0;right:0;text-align:center}
+.w{display:inline-block}
+.haak{top:262px;font:800 92px/1.03 var(--kop);color:var(--inkt);letter-spacing:-.035em;word-spacing:.06em}
+.haak .or{color:var(--oranje2)}
+.jaar{top:500px;height:150px;display:flex;justify-content:center;align-items:baseline;gap:22px}
+.jaar small{font:800 40px/1 var(--tekst);letter-spacing:.16em;text-transform:uppercase;color:#8a8aa0}
+.jaar b{font:800 150px/1 var(--kop);color:var(--inkt);letter-spacing:-.05em;min-width:250px;text-align:left;font-variant-numeric:tabular-nums}
+.stadium{top:668px;height:84px}
+.stadium span{display:inline-block;padding:14px 34px 18px;border-radius:999px;background:var(--inkt);color:#fff;font:800 50px/1 var(--kop);letter-spacing:-.02em}
+.raam{left:50px;top:790px;width:980px;height:690px;border-radius:60px;overflow:hidden;background:linear-gradient(180deg,#8fd0ff,#cfeeff 62%,#eaf8ff);box-shadow:0 40px 80px -30px rgba(120,60,0,.4),0 0 0 4px rgba(13,13,26,.07)}
+.raam svg{position:absolute;left:0;top:0;width:980px;height:690px}
+.meter{left:30px;top:28px;padding:16px 26px 18px 20px;border-radius:30px;background:rgba(255,255,255,.92);display:flex;align-items:center;gap:16px}
+.meter svg{position:static;width:58px;height:58px}
+.meter small{display:block;font:800 22px/1 var(--tekst);letter-spacing:.1em;text-transform:uppercase;color:#6b6b80}
+.meter b{display:block;margin-top:6px;font:800 48px/1 var(--kop);color:var(--inkt);letter-spacing:-.03em;font-variant-numeric:tabular-nums}
+.climax{right:30px;top:36px;padding:16px 28px 20px;border-radius:999px;background:linear-gradient(135deg,#ffd76a,#ff8a1f);font:800 40px/1 var(--kop);color:#3a1600;letter-spacing:-.02em;box-shadow:0 8px 0 #c95f00}
+/* slot */
+.mascotte{left:50%;width:560px;height:560px;margin-left:-280px;top:340px}
+.mascotte svg{width:100%;height:100%;overflow:visible}
+.slotkop{font:800 120px/1.02 var(--kop);color:#fff;letter-spacing:-.035em;word-spacing:.08em}
+.merk{display:inline-flex;align-items:center;gap:26px;font:800 76px/1 var(--kop);color:#fff;letter-spacing:-.02em}
+.merk img{width:118px;height:118px;border-radius:30px}
+.tags{font:600 40px/1 var(--tekst);color:rgba(255,255,255,.72)}
+.flits{inset:0;background:#fff;pointer-events:none}
+</style></head>
+<body>
+<div class="mo-canvas" id="c">
+  <div class="abs bg"></div><div class="abs donker" id="donker"></div>
+  <canvas class="abs korrel" id="korrel" width="540" height="960"></canvas>
+  <div id="wereld" class="scene">
+  <div class="scene" id="S1">
+    <div class="abs midden haak" id="hk1"><span class="w">Laat</span> <span class="w">een</span> <span class="w">stuk</span> <span class="w">grond</span><br><span class="w or">150</span> <span class="w or">jaar</span> <span class="w">met</span> <span class="w">rust.</span></div>
+    <div class="abs midden haak" id="hk2"><span class="w">Dit</span> <span class="w">heet</span><br><span class="w or">successie.</span></div>
+    <div class="abs midden jaar" id="jaar"><small>jaar</small><b id="jn">0</b></div>
+    <div class="abs midden stadium" id="stadium"><span id="stn">Kale grond</span></div>
+    <div class="abs raam" id="raam"><svg viewBox="0 0 980 690" id="land"></svg>
+      <div class="abs meter" id="meter"><svg viewBox="-30 -30 60 60"><g stroke="#ffab1a" stroke-width="5" stroke-linecap="round">${''}</g><circle r="13" fill="#ffc247"/></svg><span><small>licht op de bodem</small><b id="licht">100%</b></span></div>
+      <div class="abs climax" id="climax">eindstadium: climax</div>
+    </div>
+  </div>
+  <div class="scene" id="S2">
+    <div class="abs mascotte" id="vonk"></div>
+    <div class="abs midden slotkop" style="top:960px"><span class="w">Oefen</span> <span class="w">dit</span><br><span class="w">voor</span> <span class="w">je</span> <span class="w" style="color:var(--oranje)">examen.</span></div>
+    <div class="abs midden" id="merk" style="top:1270px"><span class="merk"><img src="../../icon-512.png" alt="">slagio.nl</span></div>
+    <div class="abs midden tags" id="tags" style="top:1432px">Gratis. Geen account nodig.</div>
+  </div>
+  </div>
+  <div class="abs flits" id="flits"></div>
+</div>
+<script src="../../mascotte.js"></script>
+<script src="../engine.js"></script>
+<script src="../geluid.js"></script>
+<script>
+// Successie als timelapse: kale grond → mos → gras → struiken → berken → beuken (havo biologie, ecologie).
+// De lichtwaarden volgen de figuur bij het leerdoel in de app (grasland 98%, struweel 40%, berkenbos 18%, beukenbos 3%).
+const {p,E,lerp,zet,rnd,clamp,$}=Motion;
+(()=>{const c=$('#korrel'),g=c.getContext('2d'),d=g.createImageData(c.width,c.height),r=rnd(5);for(let i=0;i<d.data.length;i+=4){const v=r()*255;d.data[i]=d.data[i+1]=d.data[i+2]=v;d.data[i+3]=255;}g.putImageData(d,0,0);c.style.width='1080px';c.style.height='1920px';})();
+$('#vonk').innerHTML=mascotSVG('blij',560);
+$('#meter svg g').innerHTML=[...Array(8)].map((_,i)=>`<path d="M0 -20V-27" transform="rotate(${i*45})"/>`).join('');
+const GY=470;                       // grondlijn in het raam
+const r=rnd(77);const NS='http://www.w3.org/2000/svg';
+const land=$('#land');
+land.innerHTML=`
+  <g id="zon"><circle r="46" fill="#ffd76a"/><circle r="34" fill="#ffc247"/></g>
+  <g id="wolk1" fill="#fff" opacity=".9"><ellipse cx="0" cy="0" rx="70" ry="24"/><ellipse cx="-30" cy="-16" rx="36" ry="24"/><ellipse cx="24" cy="-22" rx="44" ry="30"/></g>
+  <g id="wolk2" fill="#fff" opacity=".8"><ellipse cx="0" cy="0" rx="54" ry="18"/><ellipse cx="14" cy="-14" rx="34" ry="22"/></g>
+  <path d="M0 ${GY-70}C160 ${GY-120} 300 ${GY-60} 470 ${GY-96}S800 ${GY-130} 980 ${GY-80}V${GY}H0Z" fill="#bfe3c8" opacity=".75"/>
+  <g id="achter"></g><g id="beuken"></g><g id="berken"></g><g id="struiken"></g>
+  <defs><linearGradient id="sg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0d2b16" stop-opacity="0"/><stop offset=".55" stop-color="#0d2b16" stop-opacity=".8"/><stop offset="1" stop-color="#0d2b16"/></linearGradient></defs><rect id="schaduw" x="0" y="${GY-230}" width="980" height="230" fill="url(#sg)" opacity="0"/>
+  <g id="voor"></g>
+  <rect x="0" y="${GY}" width="980" height="${690-GY}" fill="#d9bf8a"/>
+  <path d="M0 ${GY+90}C200 ${GY+70} 420 ${GY+120} 640 ${GY+96}S900 ${GY+84} 980 ${GY+104}V690H0Z" fill="#cdb078"/>
+  <rect id="humus" x="0" y="${GY}" width="980" height="0" fill="#6b4423"/><rect id="humus2" x="0" y="${GY}" width="980" height="0" fill="#553417"/>
+  <g id="kiezels"></g>
+  <text id="humlab" x="490" y="${GY+52}" text-anchor="middle" font-family="Inter" font-weight="800" font-size="30" fill="#fff" letter-spacing="3" opacity="0">HUMUS</text>
+  <rect x="0" y="${GY-5}" width="980" height="10" rx="5" fill="#b89a5e" id="rand"/>`;
+const mk=(ouder,html)=>{const g=document.createElementNS(NS,'g');g.innerHTML=html;$(ouder).appendChild(g);return g;};
+for(let i=0;i<26;i++){const x=20+r()*940,y=GY+112+r()*100;mk('#kiezels',`<ellipse cx="${x}" cy="${y}" rx="${5+r()*9}" ry="${4+r()*5}" fill="#b89a5e" opacity=".7"/>`);}
+// Planten: elk met een eigen plek, startjaar en groeiduur. s(Y) = hoe ver hij is (0..1), d(Y) = hoeveel er nog van over is.
+const P=[];
+const plant=(ouder,html,x,o)=>{const g=mk(ouder,html);P.push(Object.assign({g,x},o));};
+for(let i=0;i<16;i++){const x=30+i*60+r()*30;plant('#voor',`<ellipse cx="0" cy="-5" rx="${22+r()*16}" ry="${8+r()*5}" fill="#8aa83f"/><ellipse cx="6" cy="-7" rx="12" ry="5" fill="#a4c25a"/>`,x,{a:2+r()*8,b:8,weg:[30,50]});}
+for(let i=0;i<46;i++){const x=10+i*21+r()*14,h=26+r()*26,k=r()<.5?'#5fb04a':'#4c9a3c';
+  plant(r()<.35?'#achter':'#voor',`<path d="M0 0q-8 -${h*.6} -14 -${h}M0 0q1 -${h*.7} 0 -${h*1.15}M0 0q8 -${h*.6} 13 -${h*.9}" fill="none" stroke="${k}" stroke-width="5" stroke-linecap="round"/>`,x,{a:12+r()*16,b:10,krimp:[92,125,.5]});}
+for(let i=0;i<12;i++){const x=40+r()*900,h=44+r()*20,k=['#ffc247','#ff8fb3','#ffffff','#b08cff'][i%4];
+  plant('#voor',`<path d="M0 0V-${h}" stroke="#4c9a3c" stroke-width="4"/><circle cx="0" cy="-${h}" r="9" fill="${k}"/><circle cx="0" cy="-${h}" r="3.5" fill="#f59e0b"/>`,x,{a:22+r()*10,b:6,weg:[52,70]});}
+for(let i=0;i<9;i++){const x=60+i*105+r()*40,s=.8+r()*.5;
+  plant('#struiken',`<g transform="scale(${s})"><circle cx="-26" cy="-30" r="34" fill="#4fa24a"/><circle cx="24" cy="-34" r="38" fill="#4fa24a"/><circle cx="0" cy="-58" r="34" fill="#5db257"/><path d="M-8 -54a26 26 0 0 1 22 -22" stroke="#7cc873" stroke-width="7" stroke-linecap="round" fill="none"/></g>`,x,{a:34+r()*12,b:16,krimp:[98,130,.45]});}
+for(let i=0;i<7;i++){const x=70+i*135+r()*50,s=.85+r()*.35;
+  plant('#berken',`<g transform="scale(${s})"><rect x="-8" y="-250" width="16" height="250" rx="6" fill="#f3f0e6"/><rect x="0" y="-250" width="8" height="250" rx="4" fill="#dedacb"/>
+    <path d="M-8 -60h10M-2 -110h10M-8 -160h9M-1 -205h9" stroke="#3a3a3a" stroke-width="4" stroke-linecap="round"/>
+    <g class="kr"><ellipse cx="0" cy="-262" rx="58" ry="86" fill="#8fce6a"/><ellipse cx="22" cy="-250" rx="36" ry="70" fill="#78bb55"/><path d="M-30 -300a40 50 0 0 1 24 -34" stroke="#b4e294" stroke-width="8" stroke-linecap="round" fill="none"/></g></g>`,x,{a:52+r()*14,b:26,weg:[112+r()*10,142],boom:1});}
+for(let i=0;i<5;i++){const x=110+i*190+r()*40,s=.95+r()*.25;
+  plant('#beuken',`<g transform="scale(${s})"><path d="M-17 0C-12 -90 -14 -160 -10 -250H10C14 -160 12 -90 17 0Z" fill="#7a5230"/><path d="M0 0V-250H10C14 -160 12 -90 17 0Z" fill="#63411f"/>
+    <g class="kr"><circle cx="-70" cy="-250" r="78" fill="#2f7d3b"/><circle cx="70" cy="-256" r="84" fill="#2a7235"/><circle cx="0" cy="-330" r="96" fill="#35873f"/><circle cx="0" cy="-236" r="80" fill="#2f7d3b"/>
+    <path d="M-52 -356a70 70 0 0 1 46 -50" stroke="#55a85e" stroke-width="10" stroke-linecap="round" fill="none"/></g></g>`,x,{a:82+r()*12,b:52,boom:1});}
+
+const JAAR=t=>150*p(t,3.0,11.4,x=>x<.5?2*x*x:1-Math.pow(-2*x+2,2)/2);
+const LICHT=[[0,100],[10,98],[30,70],[50,40],[75,22],[90,18],[120,6],[150,3]];
+const licht=Y=>{for(let i=1;i<LICHT.length;i++)if(Y<=LICHT[i][0]){const [a,va]=LICHT[i-1],[b,vb]=LICHT[i];return lerp(va,vb,(Y-a)/(b-a));}return 3;};
+const STAD=[[0,'Kale grond'],[3,'Mos en korstmos'],[14,'Gras en kruiden'],[36,'Struiken'],[60,'Berkenbos'],[100,'Beukenbos']];
+const stadT=STAD.map(([y])=>{if(!y)return 0;for(let t=3;t<11.5;t+=1/120)if(JAAR(t)>=y)return t;return 99;});
+const w1=[...$('#hk1').querySelectorAll('.w')],w2=[...$('#hk2').querySelectorAll('.w')],w5=[...$('#S2').querySelectorAll('.w')];
+const pop=(els,t,t0,stap,dy=60)=>els.forEach((el,i)=>{const x=p(t,t0+i*stap,t0+i*stap+.4,E.terug);zet(el,{opacity:String(Math.min(1,x*1.6)),transform:`translateY(${lerp(dy,0,x)}px) scale(${lerp(.85,1,x)})`});});
+const op=(sel,t,a,d=.4,dy=40)=>{const x=p(t,a,a+d,E.uit);zet($(sel),{opacity:String(x),transform:`translateY(${lerp(dy,0,x)}px)`});return x;};
+const TS=13.4;       // wissel naar het slot
+window.__COVER=12.6;
+
+function render(t){
+  let schud=0;const Y=JAAR(t);
+  const s1=t<TS,uit=p(t,TS-.2,TS,E.in),inn=p(t,TS,TS+.3,E.uit5);
+  zet($('#S1'),{display:s1?'block':'none',opacity:String(1-uit),transform:`translateX(${-uit*220}px) scale(${1-uit*.05})`});
+  zet($('#S2'),{display:s1?'none':'block',opacity:String(inn),transform:`translateX(${lerp(220,0,inn)}px) scale(${lerp(1.06,1,inn)})`});
+  zet($('#flits'),{opacity:String((t>=TS?1-clamp((t-TS)/.14):0)*.2)});
+  zet($('#donker'),{opacity:String(p(t,TS-.2,TS+.1))});zet($('#korrel'),{mixBlendMode:t>TS?'overlay':'multiply'});
+
+  if(s1){
+    // haak, dan aan het eind de naam van het begrip
+    const weg=p(t,11.5,11.8,E.in);zet($('#hk1'),{opacity:String(1-weg),transform:`translateY(${-weg*40}px)`});pop(w1,t,.15,.09);
+    zet($('#hk2'),{opacity:t>11.8?'1':'0'});pop(w2.slice(0,2),t,11.85,.1);
+    const su=p(t,12.1,12.5,E.veer);zet(w2[2],{opacity:String(Math.min(1,su*2)),transform:`scale(${lerp(2.2,1,Math.min(1,su))})`});if(t>12.1&&t<12.4)schud=(12.4-t)*50;
+    const rm=p(t,.1,.7,E.uit5);zet($('#raam'),{opacity:String(rm),transform:`translateY(${lerp(160,0,rm)}px) scale(${lerp(.94,1,rm)})`});
+    op('#jaar',t,2.2);$('#jn').textContent=String(Math.round(Y));
+    const jb=t>3&&t<11.4?1+Math.sin(t*40)*.006:1;zet($('#jn'),{transform:`scale(${jb})`});
+    // stadium: de naam plopt bij elke wissel
+    let si=0;STAD.forEach((s,i)=>{if(t>=stadT[i])si=i;});$('#stn').textContent=STAD[si][1];
+    const sp=si===0?p(t,2.4,2.8,E.terug):p(t,stadT[si],stadT[si]+.35,E.terug);
+    zet($('#stadium'),{opacity:String(Math.min(1,sp*2)),transform:`scale(${lerp(.7,1,sp)})`});
+    // lucht: zon trekt een boog, wolken drijven
+    const za=(t*.16)%1;$('#zon').setAttribute('transform',`translate(${lerp(120,860,za)} ${170-Math.sin(za*Math.PI)*90})`);
+    $('#wolk1').setAttribute('transform',`translate(${(t*26+500)%1200-110} 250)`);$('#wolk2').setAttribute('transform',`translate(${(t*17+120)%1200-110} 330)`);
+    // planten
+    for(const q of P){let s=E.uit(clamp((Y-q.a)/q.b)),o=1;
+      if(q.weg){const w=clamp((Y-q.weg[0])/(q.weg[1]-q.weg[0]));o=1-w;s*=1-w*.35;}
+      if(q.krimp){const w=clamp((Y-q.krimp[0])/(q.krimp[1]-q.krimp[0]));s*=lerp(1,q.krimp[2],w);}
+      const wind=q.boom?Math.sin(t*1.7+q.x*.01)*1.2:Math.sin(t*2.6+q.x*.03)*3;
+      q.g.setAttribute('transform',`translate(${q.x} ${GY}) rotate(${wind}) scale(${Math.max(.0001,s)})`);q.g.setAttribute('opacity',String(s>0?o:0));}
+    // bodem: humus wordt dikker; onder het bladerdak wordt het donker
+    const hu=clamp(Y/150);const hh=lerp(0,96,E.uit(hu));$('#humus').setAttribute('height',String(hh));$('#humus2').setAttribute('y',String(GY+hh*.62));$('#humus2').setAttribute('height',String(hh*.38));
+    $('#humlab').setAttribute('opacity',String(p(Y,60,85)));$('#humlab').setAttribute('y',String(GY+hh*.5+11));
+    $('#rand').setAttribute('fill',Y>20?'#55793a':'#b89a5e');
+    const L=licht(Y);$('#schaduw').setAttribute('opacity',String(Math.pow(1-L/100,1.6)*.6));$('#licht').textContent=Math.round(L)+'%';
+    op('#meter',t,2.5,.4,-30);
+    const cl=p(t,10.9,11.3,E.veer);zet($('#climax'),{opacity:String(Math.min(1,cl*2)),transform:`scale(${lerp(.4,1,cl)}) rotate(${lerp(8,0,Math.min(1,cl))}deg)`});
+  } else {
+    const m=p(t,TS+.2,TS+.9,E.veer);const bob=t>TS+.9?Math.sin((t-TS-.9)*3)*10:0;
+    zet($('#vonk'),{opacity:String(Math.min(1,m*2)),transform:`translateY(${lerp(240,0,Math.min(1,m))+bob}px) scale(${lerp(.4,1,m)}) rotate(${Math.sin(t*2)*2}deg)`});
+    pop(w5,t,TS+.5,.1,70);op('#merk',t,TS+1.2,.4,50);op('#tags',t,TS+1.45);
+  }
+  const rr=rnd(Math.floor(t*30)+1);zet($('#wereld'),{transform:schud>0?`translate(${(rr()-.5)*schud}px,${(rr()-.5)*schud}px)`:'none'});
+}
+const G=[],g=(t,n,v,x)=>G.push([t,n,v,x]);
+g(.1,'whoosh',.5,.4);w1.forEach((_,i)=>g(.15+i*.09,'pop',i===4?.8:.5));g(2.2,'tap',.5);g(2.4,'pop',.6);
+g(3.0,'riser',1,8.4);g(3.0,'nacht',1.2,8.4);
+for(let t=3.05;t<11.4;t+=1/30){const y=JAAR(t),y0=JAAR(t-1/30);if(Math.floor(y/5)>Math.floor(y0/5))g(t,'tick',.28,620+y*5);}
+STAD.forEach((s,i)=>{if(i){g(stadT[i],'pop',.75);g(stadT[i]+.03,'xp',.35);}});
+g(10.9,'badge',.8);g(11.82,'pop',.6);g(11.92,'pop',.6);g(12.08,'boem',1);g(12.12,'fanfare',.85);
+g(TS-.08,'whoosh',.8);g(TS+.25,'evolve',.9);g(TS+.5,'pop',.45);g(TS+1.2,'start',.7);g(TS+1.45,'coin',.45);
+Motion.maak({duur:16,render,geluid:G});
+</script>
+</body></html>

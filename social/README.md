@@ -16,7 +16,25 @@ Niet onderdeel van de app (staat niet in de service worker).
 | `posts/fout.html` | Reel 1080×1920 | 16 s | Leren van een fout: echte enzymvraag (bi M3), fout antwoord, Vonk typt de uitleg uit de app, het mechanisme als animatie (enzym zet drie keer substraat om en blijft heel), vervolgvraag over hetzelfde onderwerp goed. |
 | `posts/vraag.html` | Reel 1080×1920 | 15,5 s | Vraag het Slagio: "wat is osmose?" typen, antwoordkaart met het begrip uit de app, osmose als bewegende figuur (water door het membraan naar de kant met meer opgeloste stof), daarna Oefen dit met een echte vraag. |
 | `posts/mijnstof.html` | Reel 1080×1920 | 15,5 s | Mijn stof: eigen notities kopiëren en plakken, Slagio vindt 4 kaartjes, kaartjes omdraaien, quiz uit je eigen stof. Laat bewust geen foto zien: die functie vraagt een account. |
+| `posts/moment-level.html` | 1080×1080 of Reel | 5 s | Moment: level omhoog. Ring loopt vol, cijfer wisselt, Vonk juicht. `?level=5&naam=Prime&niveau=havo`. Met `?f=reel` staand, met haak bovenin en merk onderin. Gedeelde basis in `moment.js` en `moment.css`. |
+| `posts/moment-promotie.html` | 1080×1080 of Reel | 5,4 s | Moment: promotie in de weekwedstrijd. Schild springt, draait en landt in de nieuwe divisie. `?van=Brons&naar=Zilver` (alle zes divisies uit `league.js`). |
+| `posts/moment-streak.html` | 1080×1080 of Reel | 5 s | Moment: streak. Vandaag wordt afgevinkt, een vonkje vliegt naar de vlam, de vlam laait op en de teller springt. `?dagen=7`. |
+| `posts/correlatie.html` | Reel 1080×1920 | 18,6 s | Uitleg: correlatie is geen oorzaak. IJsverkoop en verdrinkingen stijgen samen, het warme weer is de derde factor (bi A4). |
+| `posts/successie.html` | Reel 1080×1920 | 16 s | Uitleg als timelapse: kale grond wordt in 150 jaar een beukenbos, met jaarteller, stadium, licht op de bodem en humuslaag (bi P5). |
 | `posts/quiz.html` | Feed 1080×1350 | 11 s | Echte oefenvraag met 5 s bedenktijd, onthulling, uitleg, reactievraag en CTA. Kies de vraag met `?vraag=econ-maxprijs` (zie `VRAGEN` in het bestand). |
+
+## Momenten (ook voor in de app)
+
+De drie momenten zijn zo gemaakt dat ze ook in de app passen: vierkant, donkere achtergrond in de stijl van het menu, vijf seconden, geluid uit dezelfde klanken als `playSound()`.
+
+```bash
+node social/render.mjs moment-level "level=5" moment-level          # vierkant
+node social/render.mjs moment-level "f=reel&level=5" reel-level     # staand voor TikTok en Instagram
+node social/render.mjs moment-promotie "van=Zilver&naar=Goud" promotie-goud
+```
+
+Een kleinere versie voor in de app (720×720, ongeveer 300 kB) maak je met
+`ffmpeg -i social/out/moment-level.mp4 -vf scale=720:720 -crf 26 -preset slow -c:a aac -b:a 96k -movflags +faststart uit.mp4`.
 
 ## Bekijken
 

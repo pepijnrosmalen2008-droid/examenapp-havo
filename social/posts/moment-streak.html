@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="nl"><head><meta charset="utf-8"><title>Slagio · Moment · Streak</title>
+<link rel="stylesheet" href="../basis.css"><link rel="stylesheet" href="../moment.css">
+<style>
+.halo{left:190px;top:-40px;width:700px;height:700px;border-radius:50%;background:radial-gradient(circle,rgba(255,150,40,.6),rgba(255,106,19,.18) 45%,rgba(255,106,19,0) 68%)}
+.schok{left:540px;top:330px;width:380px;height:380px;margin:-190px 0 0 -190px;border-radius:50%;border:10px solid #ffd76a}
+.vlam{left:390px;top:110px;width:300px;height:375px}
+.vlam svg{width:100%;height:100%;overflow:visible}
+.cijfer{top:478px;height:250px;overflow:hidden}
+.cijfer b{position:absolute;left:0;right:0;top:0;font:800 250px/250px var(--kop);letter-spacing:-.05em;color:#fff}
+.cijfer b.nieuw{background:linear-gradient(180deg,#fff3c4,#ffc247 48%,#ff7a1a);-webkit-background-clip:text;background-clip:text;color:transparent}
+.onder{top:738px;font:800 58px/1 var(--kop);color:#ffd9a0;letter-spacing:-.02em}
+.dag{width:92px;height:92px;margin:-46px 0 0 -46px;border-radius:50%;background:rgba(255,255,255,.07);border:4px solid rgba(255,255,255,.14);display:grid;place-items:center}
+.dag i{position:absolute;inset:-4px;border-radius:50%;background:linear-gradient(135deg,#ffd76a,#ff8a1f);box-shadow:0 6px 0 #c95f00}
+.dag svg{position:relative;width:46px;height:46px;fill:none;stroke:#3a1600;stroke-width:5;stroke-linecap:round;stroke-linejoin:round}
+.vandaag{top:968px;font:800 26px/1 var(--tekst);letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.6);width:200px;margin-left:-100px;text-align:center}
+.vuurtje{width:26px;height:26px;margin:-13px 0 0 -13px;border-radius:50%;background:#fff;box-shadow:0 0 30px 14px rgba(255,190,90,.95)}
+</style></head>
+<body>
+<div class="mo-canvas"></div>
+<script src="../engine.js"></script>
+<script src="../geluid.js"></script>
+<script src="../moment.js"></script>
+<script>
+// Streak. ?dagen=7 (de nieuwe stand), ?f=reel
+const {p,E,lerp,zet,rnd,clamp,$}=Motion;
+const N=Math.max(2,+(Moment.q.get('dagen')||7));
+const VOL=Math.min(N,7);            // zoveel bolletjes zijn na vandaag gevuld
+const DX=i=>540+(i-3)*128,DY=900;
+Moment.bouw(`
+  <div class="abs halo" id="halo"></div>
+  <div class="abs schok" id="schok"></div><div class="abs schok" id="schok2"></div>
+  <div class="abs vlam" id="vlam"><svg viewBox="0 0 120 150">
+    <defs><linearGradient id="fl" x1="0" y1="1" x2="0" y2="0"><stop offset="0" stop-color="#ff3d00"/><stop offset=".55" stop-color="#ff8a1f"/><stop offset="1" stop-color="#ffd76a"/></linearGradient>
+    <linearGradient id="fl2" x1="0" y1="1" x2="0" y2="0"><stop offset="0" stop-color="#ffd76a"/><stop offset="1" stop-color="#fff6d0"/></linearGradient></defs>
+    <path id="fb" d="M60 4C74 34 104 52 104 92c0 30-20 52-44 52S16 122 16 92c0-22 12-34 20-44 2 14 8 22 16 24-4-24 0-44 8-68z" fill="url(#fl)"/>
+    <path id="fk" d="M60 64c10 16 24 24 24 44 0 16-10 28-24 28s-24-12-24-28c0-12 8-20 12-26 2 8 6 12 10 12-2-12-2-20 2-30z" fill="url(#fl2)"/></svg></div>
+  <div class="abs mm-midden cijfer"><b id="oud">${N-1}</b><b id="nieuw" class="nieuw">${N}</b></div>
+  <div class="abs mm-midden onder" id="onder">dagen op rij</div>
+  <div id="dagen"></div>
+  <div class="abs vandaag" id="vandaag" style="left:${DX(VOL-1)}px">vandaag</div>
+  <div class="abs vuurtje" id="vuurtje"></div>
+  <div id="sterren"></div>
+`,{haak:'Elke dag even. Dat telt op.',onder:'Elke dag dat je oefent telt mee'});
+const TD=1.45;            // vandaag wordt afgevinkt
+const TF=TD+.42;          // het vonkje bereikt de vlam: vlam laait op, cijfer wisselt
+const DAG=[...Array(7)].map((_,i)=>{const el=document.createElement('div');el.className='abs dag';el.style.left=DX(i)+'px';el.style.top=DY+'px';
+  el.innerHTML='<i></i><svg viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>';$('#dagen').appendChild(el);
+  return {el,vul:el.firstChild,vink:el.lastChild,t:i<VOL-1?.45+i*.11:(i===VOL-1?TD:99)};});
+const ST=[[250,200,1],[830,170,1.15],[880,420,.8],[200,440,.9]].map(([x,y,s],i)=>{const el=document.createElement('div');el.className='abs mm-ster';el.style.left=x+'px';el.style.top=y+'px';el.innerHTML=Moment.ster(i%2?'#fff':'#ffe08a');$('#sterren').appendChild(el);return {el,s,t:TF+.15+i*.1};});
+Moment.vonken({t0:TD,x:DX(VOL-1),y:DY,n:18,kracht:520,seed:51,leven:.5,grootte:6});
+Moment.vonken({t0:TF,x:540,y:360,n:60,kleur:'#ffd76a',kracht:1500,seed:52,leven:.9,grootte:9});
+Moment.vonken({t0:TF,x:540,y:360,n:30,kleur:'#ff8a1f',kracht:1000,seed:53,leven:1.1,grootte:8});
+Moment.sintels({t0:.3,t1:TF,x:540,y:430,breed:120,n:14,seed:54});
+Moment.sintels({t0:TF,t1:5,x:540,y:440,breed:230,n:90,seed:55});
+Moment.sintels({t0:TF,t1:5,x:540,y:440,breed:200,n:40,seed:56,kleur:'#fff0c0'});
+window.__COVER=3.1;
+
+function render(t){
+  let schud=0;
+  // 1. kleine vlam, het cijfer van gisteren, de dagen tot nu toe
+  const op=p(t,.05,.5,E.terug);const laai=p(t,TF,TF+.5,E.veer);const kracht=lerp(.62,1,Math.min(1.25,laai));
+  const flik=1+Math.sin(t*9)*.03+Math.sin(t*23)*.015;const klap=t>=TF?Math.exp(-(t-TF)*5)*.3:0;
+  zet($('#vlam'),{opacity:String(Math.min(1,op*2)),transform:`translateY(${(1-kracht)*90}px) scale(${lerp(.3,1,op)*kracht*flik*(1+klap)},${lerp(.3,1,op)*kracht*(1+Math.sin(t*13)*.035)*(1+klap*1.4)}) rotate(${Math.sin(t*6)*2.4}deg)`,filter:`saturate(${lerp(.55,1,Math.min(1,laai))}) brightness(${lerp(.8,1,Math.min(1,laai))})`,transformOrigin:'50% 92%'});
+  zet($('#fk'),{transform:`translateY(${Math.sin(t*11)*2.5}px) scale(${1+Math.sin(t*17)*.04})`,transformOrigin:'60px 130px'});
+  zet($('#halo'),{opacity:String(lerp(.25,.95,Math.min(1,laai))*op),transform:`scale(${lerp(.7,1,Math.min(1,laai))*(1+Math.sin(t*7)*.03)+klap})`});
+  const cf=p(t,.15,.55,E.uit);const wis=p(t,TF-.02,TF+.5,E.veer);
+  zet($('#oud'),{opacity:String(cf*(1-p(t,TF,TF+.14))),transform:`translateY(${lerp(40,0,cf)-wis*270}px)`});
+  zet($('#nieuw'),{opacity:t>=TF-.02?'1':'0',transform:`translateY(${lerp(270,0,wis)}px) scale(${1+(t>=TF?Math.exp(-(t-TF)*6)*.22:0)})`});
+  const on=p(t,.3,.7,E.uit);zet($('#onder'),{opacity:String(on),transform:`translateY(${lerp(30,0,on)}px)`});
+  DAG.forEach((d,i)=>{const inn=p(t,.2+i*.04,.55+i*.04,E.terug);const v=p(t,d.t,d.t+.3,E.terug);const pu=i===VOL-1&&t<TD?1+Math.sin(t*6)*.06:1;
+    zet(d.el,{opacity:String(Math.min(1,inn*2)),transform:`scale(${inn*pu*(1+Math.max(0,1-Math.abs(t-d.t-.08)*9)*.25)})`});
+    zet(d.vul,{opacity:String(Math.min(1,v*2)),transform:`scale(${v})`});zet(d.vink,{opacity:String(Math.min(1,v*2)),transform:`scale(${v})`});});
+  const vd=p(t,.5,.8,E.uit);zet($('#vandaag'),{opacity:String(vd*(.6+.4*Math.sin(t*6)**2))});
+  // 2. vandaag afgevinkt: een vonkje vliegt in een boog naar de vlam
+  const vl=p(t,TD+.06,TF,E.inUit);const x0=DX(VOL-1),bx=lerp(x0,540,vl),by=lerp(DY,400,vl)-Math.sin(vl*Math.PI)*170;
+  zet($('#vuurtje'),{left:bx+'px',top:by+'px',opacity:vl>0&&vl<1?'1':'0',transform:`scale(${1+Math.sin(t*50)*.2})`});
+  // 3. de vlam laait op
+  [['#schok',0],['#schok2',.16]].forEach(([s,d])=>{const x=p(t,TF+d,TF+d+.7,E.uit);zet($(s),{opacity:String(x>0?(1-x)*.9:0),transform:`scale(${lerp(.8,2.8,x)})`,borderWidth:lerp(12,2,x)+'px'});});
+  if(t>=TF&&t<TF+.3)schud=(TF+.3-t)*60;
+  ST.forEach(s=>{const x=p(t,s.t,s.t+.35,E.terug);const tw=.75+Math.sin(t*5+s.t*9)*.25;zet(s.el,{opacity:String(Math.min(1,x*2)*(1-p(t,4.5,5))),transform:`scale(${x*s.s*tw}) rotate(${t*40+s.t*90}deg)`});});
+  Moment.kader(t,{flitsT:[TF],schud,merkT:TF+1});
+}
+const G=[];const g=(t,n,v,x)=>G.push([t,n,v,x]);
+g(.05,'ontbrand',.5);DAG.forEach((d,i)=>{if(i<VOL-1)g(d.t,'tick',.4,800+i*90);});
+g(TD-.02,'tap',.8);g(TD,'correct',.7);g(TD+.08,'whoosh',.6,.34);g(TF-.02,'impact',.8);g(TF,'ontbrand',1);g(TF+.02,'streak',1);
+ST.forEach((s,i)=>g(s.t,'tick',.22,1500+i*120));
+Motion.maak({duur:5,render,geluid:G});
+</script>
+</body></html>

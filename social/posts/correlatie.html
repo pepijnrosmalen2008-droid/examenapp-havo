@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="nl"><head><meta charset="utf-8"><title>Slagio · Reel · Correlatie is geen oorzaak</title>
+<link rel="stylesheet" href="../basis.css">
+<style>
+.mo-canvas{width:1080px;height:1920px;background:var(--room)}
+.bg{inset:0;background:radial-gradient(120% 70% at 50% 20%,#fffaf3,var(--room) 55%,var(--room2))}
+.donker{inset:0;background:radial-gradient(110% 70% at 50% 30%,#23234a,var(--inkt) 70%)}
+.korrel{inset:0;opacity:.06;mix-blend-mode:multiply}
+.scene{position:absolute;inset:0}
+.midden{left:0;right:0;text-align:center}
+.w{display:inline-block}
+.label{font:800 32px/1 var(--tekst);letter-spacing:.16em;text-transform:uppercase;color:var(--oranje2)}
+.h1{font:800 128px/1 var(--kop);color:var(--inkt);letter-spacing:-.04em;word-spacing:.06em}
+.h1 .rood{color:#e11d48}
+.h2{font:800 84px/1.04 var(--kop);color:var(--inkt);letter-spacing:-.035em;word-spacing:.06em}
+.zegt{font:700 44px/1 var(--tekst);color:#6b6b80}
+.ijs{left:350px;top:270px;width:380px;height:520px}
+.ijs svg,.knoop svg,.zon svg{width:100%;height:100%;overflow:visible}
+/* grafiek */
+.kaart{left:60px;top:470px;width:960px;height:800px;border-radius:52px;background:#fff;box-shadow:0 40px 80px -30px rgba(120,60,0,.35),0 0 0 3px rgba(13,13,26,.06)}
+.kaart svg{position:absolute;left:0;top:0;width:960px;height:800px;overflow:visible}
+.chip{display:inline-flex;align-items:center;gap:14px;padding:16px 28px 18px;border-radius:999px;font:800 38px/1 var(--tekst);color:#fff;white-space:nowrap}
+.stempel{left:250px;top:770px;width:580px;text-align:center;padding:22px 0 28px;border-radius:28px;border:9px solid #e11d48;color:#e11d48;font:800 96px/1 var(--kop);letter-spacing:-.03em;background:rgba(255,255,255,.88)}
+.zin{font:700 54px/1.15 var(--kop);color:var(--inkt);letter-spacing:-.02em}
+/* derde factor */
+.zon{left:390px;top:410px;width:300px;height:300px}
+.knoop{width:260px;height:260px;margin:-130px 0 0 -130px}
+.kn-lab{width:420px;margin-left:-210px;text-align:center;font:800 50px/1.05 var(--kop);color:var(--inkt);letter-spacing:-.02em}
+.kn-lab small{display:block;font:700 34px/1.2 var(--tekst);color:#6b6b80;letter-spacing:0;margin-top:8px}
+.s3 svg.lijnen{position:absolute;left:0;top:0;width:1080px;height:1920px;overflow:visible}
+.schijn{left:340px;top:1214px;width:400px;text-align:center;font:800 40px/1 var(--tekst);color:#e11d48}
+/* regel */
+.regel{font:800 150px/1 var(--kop);color:#fff;letter-spacing:-.045em}
+.regel .or{background:linear-gradient(180deg,#ffd08a,var(--oranje) 50%,var(--oranje2));-webkit-background-clip:text;background-clip:text;color:transparent}
+.term{left:90px;right:90px;top:1080px;border-radius:44px;background:rgba(255,255,255,.07);border:2px solid rgba(255,255,255,.12);padding:40px 46px;color:#fff}
+.term small{display:block;font:800 30px/1 var(--tekst);letter-spacing:.16em;text-transform:uppercase;color:var(--oranje-l)}
+.term b{display:block;margin-top:18px;font:800 62px/1.08 var(--kop);letter-spacing:-.025em}
+.tip{font:700 44px/1.2 var(--tekst);color:rgba(255,255,255,.85)}
+.tip em{font-style:normal;color:var(--goud)}
+/* slot */
+.mascotte{left:50%;width:560px;height:560px;margin-left:-280px;top:340px}
+.mascotte svg{width:100%;height:100%;overflow:visible}
+.slotkop{font:800 120px/1.02 var(--kop);color:#fff;letter-spacing:-.035em;word-spacing:.08em}
+.merk{display:inline-flex;align-items:center;gap:26px;font:800 76px/1 var(--kop);color:#fff;letter-spacing:-.02em}
+.merk img{width:118px;height:118px;border-radius:30px}
+.tags{font:600 40px/1 var(--tekst);color:rgba(255,255,255,.72)}
+.flits{inset:0;background:#fff;pointer-events:none}
+</style></head>
+<body>
+<div class="mo-canvas" id="c">
+  <div class="abs bg"></div><div class="abs donker" id="donker"></div>
+  <canvas class="abs korrel" id="korrel" width="540" height="960"></canvas>
+  <div id="wereld" class="scene">
+
+  <!-- S1: haak -->
+  <div class="scene" id="S1">
+    <div class="abs ijs" id="ijs1"></div>
+    <div class="abs midden h1" style="top:860px"><span class="w" style="letter-spacing:.015em">IJs</span> <span class="w">eten</span> <span class="w">is</span></div>
+    <div class="abs midden h1" style="top:1010px"><span class="w rood" id="gev">levensgevaarlijk.</span></div>
+    <div class="abs midden zegt" id="zegt" style="top:1230px">Dat zegt deze grafiek tenminste.</div>
+  </div>
+
+  <!-- S2: de grafiek -->
+  <div class="scene" id="S2">
+    <div class="abs midden label" style="top:270px" id="s2l">Per maand, een heel jaar</div>
+    <div class="abs midden h2" style="top:326px" id="s2k">Kijk maar.</div>
+    <div class="abs kaart" id="kaart"><svg viewBox="0 0 960 800" id="gsvg"></svg></div>
+    <div class="abs" id="chipA" style="left:120px;top:1320px"><span class="chip" style="background:var(--oranje2)">ijsverkoop</span></div>
+    <div class="abs" id="chipB" style="left:480px;top:1320px"><span class="chip" style="background:var(--havo)">verdrinkingen</span></div>
+    <div class="abs midden zin" id="s2z" style="top:1436px">Ze stijgen en dalen precies samen.</div>
+    <div class="abs stempel" id="stempel">correlatie</div>
+  </div>
+
+  <!-- S3: de derde factor -->
+  <div class="scene s3" id="S3">
+    <div class="abs midden h2" style="top:280px" id="s3k"><span class="w">Maar</span> <span class="w">wacht.</span></div>
+    <svg class="lijnen" viewBox="0 0 1080 1920"><g fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <path id="pl1" d="M440 812L292 1000" stroke="#ff6a13" stroke-width="14"/><path id="pk1" d="M292 1000l10 -60M292 1000l56 -26" stroke="#ff6a13" stroke-width="14"/>
+      <path id="pl2" d="M640 812L788 1000" stroke="#ff6a13" stroke-width="14"/><path id="pk2" d="M788 1000l-10 -60M788 1000l-56 -26" stroke="#ff6a13" stroke-width="14"/>
+      <path id="streep" d="M410 1150H670" stroke="#9a9aae" stroke-width="10" stroke-dasharray="4 26"/>
+      <path id="kruis1" d="M500 1110l80 80" stroke="#e11d48" stroke-width="18"/><path id="kruis2" d="M580 1110l-80 80" stroke="#e11d48" stroke-width="18"/>
+    </g></svg>
+    <div class="abs zon" id="zon"></div>
+    <div class="abs midden kn-lab" id="zonlab" style="left:540px;top:722px;width:500px;margin-left:-250px">warm weer</div>
+    <div class="abs knoop" id="knA" style="left:250px;top:1150px"></div>
+    <div class="abs knoop" id="knB" style="left:830px;top:1150px"></div>
+    <div class="abs kn-lab" id="labA" style="left:250px;top:1300px">meer ijs</div>
+    <div class="abs kn-lab" id="labB" style="left:830px;top:1300px">meer zwemmen<small>dus meer verdrinkingen</small></div>
+    <div class="abs schijn" id="schijn">geen oorzaak</div>
+    <div class="abs midden zin" id="s3z" style="top:1452px">Het weer zit achter allebei.</div>
+  </div>
+
+  <!-- S4: de regel -->
+  <div class="scene" id="S4">
+    <div class="abs midden regel" style="top:330px"><span class="w">Samen</span></div>
+    <div class="abs midden regel" style="top:490px"><span class="w">stijgen</span></div>
+    <div class="abs midden regel" style="top:650px"><span class="w">is</span> <span class="w">geen</span></div>
+    <div class="abs midden regel" style="top:810px"><span class="w or">oorzaak.</span></div>
+    <div class="abs term" id="term"><small>Zo heet dit</small><b>Correlatie is geen causaliteit.</b></div>
+    <div class="abs midden tip" id="tip" style="top:1380px">Op je examen? Zoek de <em>derde factor</em>.</div>
+  </div>
+
+  <!-- S5: slot -->
+  <div class="scene" id="S5">
+    <div class="abs mascotte" id="vonk"></div>
+    <div class="abs midden slotkop" style="top:960px"><span class="w">Oefen</span> <span class="w">dit</span><br><span class="w">voor</span> <span class="w">je</span> <span class="w" style="color:var(--oranje)">examen.</span></div>
+    <div class="abs midden" id="merk" style="top:1270px"><span class="merk"><img src="../../icon-512.png" alt="">slagio.nl</span></div>
+    <div class="abs midden tags" id="tags" style="top:1432px">Gratis. Geen account nodig.</div>
+  </div>
+  </div>
+  <div class="abs flits" id="flits"></div>
+</div>
+<script src="../../mascotte.js"></script>
+<script src="../engine.js"></script>
+<script src="../geluid.js"></script>
+<script>
+// Correlatie is geen oorzaak: het voorbeeld van ijs en verdrinkingen (havo biologie, onderzoek doen).
+const {p,E,lerp,zet,rnd,clamp,$}=Motion;
+(()=>{const c=$('#korrel'),g=c.getContext('2d'),d=g.createImageData(c.width,c.height),r=rnd(5);for(let i=0;i<d.data.length;i+=4){const v=r()*255;d.data[i]=d.data[i+1]=d.data[i+2]=v;d.data[i+3]=255;}g.putImageData(d,0,0);c.style.width='1080px';c.style.height='1920px';})();
+$('#vonk').innerHTML=mascotSVG('knipoog',560);
+// Tekeningen in Vonk-stijl: vlak, twee tinten per vorm.
+const IJS=`<svg viewBox="0 0 190 260"><path d="M52 118L95 250L138 118Z" fill="#e2a55e"/><path d="M95 118V250L138 118Z" fill="#c98842"/>
+  <path d="M62 150L128 150M70 176L120 176M80 202L110 202" stroke="#b8752f" stroke-width="5" stroke-linecap="round"/>
+  <path d="M30 98a65 65 0 0 1 130 0c0 14 -10 24 -22 24c-8 0 -12 -6 -18 -6s-10 8 -20 8s-12 -8 -20 -8s-12 6 -22 6c-14 0 -28 -8 -28 -24z" fill="#ff8fb3"/>
+  <path d="M95 33a65 65 0 0 1 65 65c0 14 -10 24 -22 24c-8 0 -12 -6 -18 -6s-10 8 -20 8z" fill="#f56f9b"/>
+  <path d="M52 70a44 44 0 0 1 30 -26" stroke="#ffc4d8" stroke-width="9" stroke-linecap="round" fill="none"/>
+  <path id="drup" d="M118 122c0 14 -8 18 -8 26a8 8 0 0 0 16 0c0 -8 -8 -12 -8 -26z" fill="#f56f9b"/></svg>`;
+const ZWEM=`<svg viewBox="0 0 200 200"><circle cx="100" cy="100" r="96" fill="#dbe8ff"/><path d="M100 4a96 96 0 0 1 0 192z" fill="#c9dcff"/>
+  <circle cx="100" cy="86" r="24" fill="#f2c9a0"/><path d="M100 62a24 24 0 0 1 0 48z" fill="#e3b287"/>
+  <path d="M70 96L46 62M130 96L154 62" stroke="#0d0d1a" stroke-width="9" stroke-linecap="round"/>
+  <path d="M30 126c14 -10 26 10 40 0s26 10 40 0s26 10 40 0s14 6 22 2" fill="none" stroke="#2f6bff" stroke-width="10" stroke-linecap="round"/>
+  <path d="M40 152c14 -10 26 10 40 0s26 10 40 0s26 10 40 0" fill="none" stroke="#2f6bff" stroke-width="10" stroke-linecap="round" opacity=".6"/></svg>`;
+const IJSK=`<svg viewBox="0 0 200 200"><circle cx="100" cy="100" r="96" fill="#ffe3ec"/><path d="M100 4a96 96 0 0 1 0 192z" fill="#ffd3e0"/><g transform="translate(34 24) scale(.7)">${IJS.replace(/<svg[^>]*>|<\/svg>/g,'').replace('id="drup"','')}</g></svg>`;
+const ZON=`<svg viewBox="-150 -150 300 300"><g id="zstr">${[...Array(12)].map((_,i)=>`<path d="M0 -104V-140" stroke="#ffb020" stroke-width="16" stroke-linecap="round" transform="rotate(${i*30})"/>`).join('')}</g>
+  <circle r="84" fill="#ffc247"/><path d="M0 -84a84 84 0 0 1 0 168z" fill="#ffab1a"/><path d="M-50 -30a56 56 0 0 1 34 -34" stroke="#ffe39a" stroke-width="12" stroke-linecap="round" fill="none"/></svg>`;
+$('#ijs1').innerHTML=IJS;$('#knA').innerHTML=IJSK;$('#knB').innerHTML=ZWEM;$('#zon').innerHTML=ZON;
+
+// ── Grafiek: twaalf maanden, twee lijnen (dezelfde waarden als figuur 3 bij het leerdoel in de app) ──
+const A=[10,12,20,35,55,78,96,92,60,30,15,12],B=[8,8,14,26,48,70,90,86,52,24,12,9],MND='JFMAMJJASOND';
+const GX=i=>96+i*70,GY=v=>690-v*5.6;
+const glad=pts=>{let d=`M${pts[0][0]} ${pts[0][1]}`;for(let i=0;i<pts.length-1;i++){const p0=pts[Math.max(0,i-1)],p1=pts[i],p2=pts[i+1],p3=pts[Math.min(pts.length-1,i+2)];
+  d+=`C${p1[0]+(p2[0]-p0[0])/6} ${p1[1]+(p2[1]-p0[1])/6} ${p2[0]-(p3[0]-p1[0])/6} ${p2[1]-(p3[1]-p1[1])/6} ${p2[0]} ${p2[1]}`;}return d;};
+const dA=glad(A.map((v,i)=>[GX(i),GY(v)])),dB=glad(B.map((v,i)=>[GX(i),GY(v)]));
+$('#gsvg').innerHTML=`<g font-family="Inter" font-weight="700" font-size="30" fill="#9a9aae">
+  ${[0,25,50,75,100].map(v=>`<path d="M80 ${GY(v)}H890" stroke="#efe9e2" stroke-width="3"/>`).join('')}
+  ${[...MND].map((m,i)=>`<text x="${GX(i)}" y="750" text-anchor="middle">${m}</text>`).join('')}
+  <text x="80" y="92" fill="#6b6b80" font-size="28">hoog</text><text x="80" y="${GY(0)-14}" fill="#6b6b80" font-size="28">laag</text></g>
+  <path id="areaA" d="${dA}L${GX(11)} ${GY(0)}L${GX(0)} ${GY(0)}Z" fill="rgba(255,106,19,.10)"/>
+  <path id="lijnB" d="${dB}" fill="none" stroke="#2f6bff" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="lijnA" d="${dA}" fill="none" stroke="#ff4500" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle id="kopB" r="17" fill="#2f6bff" stroke="#fff" stroke-width="7"/><circle id="kopA" r="17" fill="#ff4500" stroke="#fff" stroke-width="7"/>
+  <g id="zomer"><rect x="${GX(5)-36}" y="74" width="${GX(7)-GX(5)+72}" height="${GY(0)-74}" rx="24" fill="rgba(255,194,71,.22)"/><text x="${GX(6)}" y="124" text-anchor="middle" font-family="Inter" font-weight="800" font-size="30" fill="#b45309" letter-spacing="3">ZOMER</text></g>`;
+const LA=$('#lijnA'),LB=$('#lijnB'),lenA=LA.getTotalLength(),lenB=LB.getTotalLength();
+[[LA,lenA],[LB,lenB]].forEach(([l,n])=>{l.setAttribute('stroke-dasharray',n);});
+const lijnOp=(el,len,f)=>{el.setAttribute('stroke-dashoffset',String(len*(1-f)));return el.getPointAtLength(len*f);};
+// pijlen en kruis in S3: tekenen met dash
+const teken=(id,f)=>{const el=$(id);if(!el._l){el._l=el.getTotalLength();el.setAttribute('stroke-dasharray',el._l);}el.setAttribute('stroke-dashoffset',String(el._l*(1-f)));el.style.opacity=f>0?'1':'0';};
+
+const scene=['#S1','#S2','#S3','#S4','#S5'].map(s=>$(s));
+const GRENS=[0,2.9,7.7,12.9,16,18.6];
+const woorden=sel=>[...$(sel).querySelectorAll('.w')];
+const w1=woorden('#S1'),w3=woorden('#s3k'),w4=woorden('#S4'),w5=woorden('#S5');
+const pop=(els,t,t0,stap,dy=60)=>els.forEach((el,i)=>{const x=p(t,t0+i*stap,t0+i*stap+.4,E.terug);zet(el,{opacity:String(Math.min(1,x*1.6)),transform:`translateY(${lerp(dy,0,x)}px) scale(${lerp(.85,1,x)})`});});
+const op=(sel,t,a,d=.4,dy=40)=>{const x=p(t,a,a+d,E.uit);zet($(sel),{opacity:String(x),transform:`translateY(${lerp(dy,0,x)}px)`});return x;};
+window.__COVER=10.9;
+
+function render(t){
+  let schud=0;
+  scene.forEach((s,i)=>{const a=GRENS[i],b=GRENS[i+1];const aan=t>=a&&t<b;zet(s,{display:aan?'block':'none'});if(!aan)return;
+    const inn=i===0?1:p(t,a,a+.3,E.uit5),uit=i===4?0:p(t,b-.2,b,E.in);
+    zet(s,{opacity:String(Math.min(inn,1-uit)),transform:`translateX(${lerp(220,0,inn)-uit*220}px) scale(${lerp(1.06,1,inn)*(1-uit*.05)})`});});
+  const fl=Math.max(...GRENS.slice(1,5).map(g=>t>=g?1-clamp((t-g)/.14):0));zet($('#flits'),{opacity:String(fl*.2)});
+  zet($('#donker'),{opacity:String(p(t,GRENS[3]-.2,GRENS[3]+.1))});
+  zet($('#korrel'),{mixBlendMode:t>GRENS[3]?'overlay':'multiply'});
+
+  // ── S1: haak ──
+  if(t<3.1){const ij=p(t,.05,.6,E.veer);zet($('#ijs1'),{opacity:String(Math.min(1,ij*2)),transform:`translateY(${lerp(-200,0,Math.min(1.05,ij))}px) rotate(${lerp(-18,0,Math.min(1,ij))+Math.sin(t*2.4)*3}deg) scale(${lerp(.5,1,ij)})`});
+    const dr=$('#drup');if(dr)dr.setAttribute('transform',`translate(0 ${p(t,.8,2.6,E.in)*46})`);
+    pop(w1.slice(0,3),t,.45,.12);
+    const g=p(t,1.05,1.45,E.veer);zet($('#gev'),{opacity:String(Math.min(1,g*2)),transform:`scale(${lerp(2.4,1,Math.min(1,g))}) rotate(${lerp(-8,-2,Math.min(1,g))}deg)`});
+    if(t>1.05&&t<1.45)schud=(1.45-t)*46;
+    op('#zegt',t,1.9);}
+
+  // ── S2: grafiek ──
+  if(t>2.6&&t<8){op('#s2l',t,3.0,.35,-20);op('#s2k',t,3.1);
+    const k=p(t,3.0,3.5,E.uit5);zet($('#kaart'),{opacity:String(k),transform:`translateY(${lerp(120,0,k)}px) scale(${lerp(.94,1,k)})`});
+    const fa=p(t,3.6,5.4,E.inUit),fb=p(t,3.85,5.65,E.inUit);
+    const pa=lijnOp(LA,lenA,fa),pb=lijnOp(LB,lenB,fb);
+    [['#kopA',pa,fa],['#kopB',pb,fb]].forEach(([s,pt,f])=>{const el=$(s);el.setAttribute('cx',pt.x);el.setAttribute('cy',pt.y);el.setAttribute('opacity',f>0?'1':'0');el.setAttribute('r',String(17+(f<1&&f>0?Math.sin(t*30)*3:0)));});
+    $('#areaA').setAttribute('opacity',String(p(t,5.4,5.9)));
+    const zm=p(t,5.75,6.15,E.uit);$('#zomer').setAttribute('opacity',String(zm));
+    [['#chipA',3.6],['#chipB',3.85]].forEach(([s,a])=>{const x=p(t,a,a+.4,E.terug);zet($(s),{opacity:String(Math.min(1,x*2)),transform:`scale(${lerp(.5,1,x)})`,transformOrigin:'0 50%'});});
+    op('#s2z',t,5.9);
+    const st=p(t,6.6,6.95,E.veer);zet($('#stempel'),{opacity:String(Math.min(1,st*2.5)),transform:`rotate(-9deg) scale(${lerp(2.6,1,Math.min(1,st))})`});
+    if(t>6.6&&t<6.9)schud=(6.9-t)*60;}
+
+  // ── S3: derde factor ──
+  if(t>7.4&&t<13.2){pop(w3,t,7.95,.14);
+    const z=p(t,8.55,9.2,E.veer);zet($('#zon'),{opacity:String(Math.min(1,z*2)),transform:`translateY(${lerp(240,0,Math.min(1.06,z))}px) scale(${lerp(.4,1,z)*(1+Math.sin(t*3)*.02)})`});
+    const zs=$('#zstr');if(zs)zs.setAttribute('transform',`rotate(${t*22})`);
+    op('#zonlab',t,9.0,.35,20);
+    [['#knA','#labA',8.2],['#knB','#labB',8.34]].forEach(([k,l,a])=>{const x=p(t,a,a+.45,E.terug);zet($(k),{opacity:String(Math.min(1,x*2)),transform:`scale(${x*(1+(t>10?Math.max(0,1-Math.abs(t-(k==='#knA'?10.05:10.65))*5)*.14:0))})`});op(l,t,a+.2,.35,20);});
+    teken('#pl1',p(t,9.6,10.0,E.uit));teken('#pk1',p(t,9.95,10.1));teken('#pl2',p(t,10.2,10.6,E.uit));teken('#pk2',p(t,10.55,10.7));
+    const sp=p(t,8.7,9.1);$('#streep').style.opacity=String(sp*(1-p(t,11.3,11.6)*.6));
+    teken('#kruis1',p(t,11.2,11.36,E.uit));teken('#kruis2',p(t,11.36,11.52,E.uit));
+    if(t>11.2&&t<11.6)schud=(11.6-t)*40;
+    const sc=p(t,11.55,11.9,E.terug);zet($('#schijn'),{opacity:String(Math.min(1,sc*2)),transform:`scale(${lerp(.6,1,sc)})`});
+    op('#s3z',t,11.95);}
+
+  // ── S4: de regel ──
+  if(t>12.6&&t<16.3){pop(w4.slice(0,4),t,13.05,.13,70);
+    const o=p(t,13.75,14.15,E.veer);zet(w4[4],{opacity:String(Math.min(1,o*2)),transform:`scale(${lerp(2.2,1,Math.min(1,o))})`});
+    if(t>13.75&&t<14.1)schud=(14.1-t)*46;
+    const tm=p(t,14.35,14.8,E.uit5);zet($('#term'),{opacity:String(tm),transform:`translateY(${lerp(90,0,tm)}px)`});
+    op('#tip',t,14.9);}
+
+  // ── S5: slot ──
+  if(t>15.7){const m=p(t,16.1,16.8,E.veer);const bob=t>16.8?Math.sin((t-16.8)*3)*10:0;
+    zet($('#vonk'),{opacity:String(Math.min(1,m*2)),transform:`translateY(${lerp(240,0,Math.min(1,m))+bob}px) scale(${lerp(.4,1,m)}) rotate(${Math.sin(t*2)*2}deg)`});
+    pop(w5,t,16.4,.1,70);op('#merk',t,17.1,.4,50);op('#tags',t,17.35);}
+
+  const r=rnd(Math.floor(t*30)+1);zet($('#wereld'),{transform:schud>0?`translate(${(r()-.5)*schud}px,${(r()-.5)*schud}px)`:'none'});
+}
+const G=[],g=(t,n,v,x)=>G.push([t,n,v,x]);
+g(.05,'whoosh',.5,.3);g(.45,'pop',.7);g(.57,'pop',.6);g(.69,'pop',.6);g(1.03,'boem',1);g(1.9,'tap',.5);
+g(2.82,'whoosh',.8);g(3.0,'open',.6);g(3.6,'riser',1.2,1.9);for(let i=0;i<12;i++)g(3.65+i*.15,'tick',.3,600+A[i]*9);
+g(5.75,'pop',.6);g(5.9,'tap',.5);g(6.58,'impact',.9);g(6.6,'badge',.7);
+g(7.62,'whoosh',.8);g(7.95,'pop',.7);g(8.09,'pop',.7);g(8.2,'pop',.5);g(8.34,'pop',.5);g(8.55,'evolve',.7);
+g(9.6,'whoosh',.5,.35);g(10.0,'tap',.7);g(10.05,'coin',.5);g(10.2,'whoosh',.5,.35);g(10.6,'tap',.7);g(10.65,'coin',.5);
+g(11.2,'fout',.9);g(11.36,'impact',.7);g(11.95,'tap',.5);
+g(12.82,'whoosh',.8);[0,1,2,3].forEach(i=>g(13.05+i*.13,'pop',.6));g(13.73,'boem',1);g(13.77,'fanfare',.8);g(14.35,'open',.6);g(14.9,'tap',.5);
+g(15.92,'whoosh',.8);g(16.15,'evolve',.9);g(16.4,'pop',.45);g(17.1,'start',.7);g(17.35,'coin',.45);
+Motion.maak({duur:18.6,render,geluid:G});
+</script>
+</body></html>
