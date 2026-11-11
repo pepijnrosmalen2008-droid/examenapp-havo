@@ -1404,7 +1404,7 @@ document.addEventListener('click', function (e) {
 // de Arcade daarna meteen. Niet op een zuinige verbinding.
 (function(){
   const c=navigator.connection;if(c&&(c.saveData||/2g/.test(c.effectiveType||'')))return;
-  const zet=()=>['/arcade2d.js','/arcade.js','/clash.js','/kingdom.js'].forEach(h=>{const l=document.createElement('link');l.rel='prefetch';l.as='script';l.href=h;document.head.appendChild(l);});
+  const zet=()=>['/arcade2d.js','/arcade.js','/clash.js','/kingdom.js','/momenten.js','/social/geluid.js'].forEach(h=>{const l=document.createElement('link');l.rel='prefetch';l.as='script';l.href=h;document.head.appendChild(l);});
   const later=()=>('requestIdleCallback' in window)?requestIdleCallback(zet,{timeout:8000}):setTimeout(zet,4000);
   if(document.readyState==='complete')setTimeout(later,6000);else addEventListener('load',()=>setTimeout(later,6000),{once:true});
 })();

@@ -28,7 +28,12 @@
     for (let ch = 0; ch < 2; ch++) { const d = ir.getChannelData(ch); for (let i = 0; i < len; i++) d[i] = (r() * 2 - 1) * Math.pow(1 - i / len, 3.2); }
     const cv = ac.createConvolver(); cv.buffer = ir; const rev = ac.createGain(); const rw = ac.createGain(); rw.gain.value = .22;
     rev.connect(cv); cv.connect(rw); rw.connect(mg);
-    return { mg, rev };
+    // Zaal: lange, zachte galm voor de momenten (level, promotie, streak).
+    const zl = Math.floor(ac.sampleRate * 2.6), zir = ac.createBuffer(2, zl, ac.sampleRate), zr = rnd(41);
+    for (let ch = 0; ch < 2; ch++) { const d = zir.getChannelData(ch); let v = 0; for (let i = 0; i < zl; i++) { v = v * .72 + (zr() * 2 - 1) * .28; d[i] = v * Math.pow(1 - i / zl, 2.4) * (i < 600 ? i / 600 : 1); } }
+    const zcv = ac.createConvolver(); zcv.buffer = zir; const zaal = ac.createGain(); const zw = ac.createGain(); zw.gain.value = .5;
+    zaal.connect(zcv); zcv.connect(zw); zw.connect(mg);
+    return { mg, rev, zaal };
   }
 
   // Toon (port van _slTone): f1→f2 glide, lowpass, detune-laag, octaaf.
@@ -75,6 +80,54 @@
     n.connect(bp); bp.connect(g); g.connect(uit); if (opt.rev) g.connect(M.rev);
     n.start(start); n.stop(start + dur + .02);
   }
+
+  // ── Bouwstenen voor de momenten: voller en muzikaler dan de losse app-klanken ──
+  const NOOT = n => 440 * Math.pow(2, n / 12);                    // halve tonen vanaf A4
+  const env = (g, t, att, piek, dur) => { g.gain.setValueAtTime(.0001, t); g.gain.exponentialRampToValueAtTime(piek, t + att); g.gain.exponentialRampToValueAtTime(.0001, t + dur); };
+  const pan = (ac, x) => { if (!ac.createStereoPanner) return null; const pn = ac.createStereoPanner(); pn.pan.value = x; return pn; };
+  const naar = (ac, M, bron, uit, zaal, px) => { const pn = px ? pan(ac, px) : null; if (pn) { bron.connect(pn); pn.connect(uit); } else bron.connect(uit);
+    if (zaal) { const z = ac.createGain(); z.gain.value = zaal; bron.connect(z); z.connect(M.zaal); } };
+  // Klokje: grondtoon met twee onharmonische boventonen die snel wegsterven (celesta-achtig).
+  function bel(ac, M, uit, f, t, dur, vol, px) {
+    const g = ac.createGain(); g.gain.value = 1; naar(ac, M, g, uit, .55, px);
+    [[1, 1, 1], [2.76, .34, .45], [5.4, .14, .22], [.5, .3, 1]].forEach(([m, v, d]) => { const o = ac.createOscillator(), e = ac.createGain(); o.type = 'sine'; o.frequency.value = f * m;
+      env(e, t, .004, vol * v, dur * d); o.connect(e); e.connect(g); o.start(t); o.stop(t + dur * d + .05); });
+  }
+  // Pluk: korte, ronde toon waarvan het filter dichtvalt (marimba-achtig).
+  function pluk(ac, M, uit, f, t, dur, vol, px) {
+    const lp = ac.createBiquadFilter(); lp.type = 'lowpass'; lp.Q.value = 1.2; lp.frequency.setValueAtTime(Math.min(5200, f * 6), t); lp.frequency.exponentialRampToValueAtTime(Math.max(300, f * 1.2), t + dur);
+    const g = ac.createGain(); env(g, t, .005, vol, dur); lp.connect(g); naar(ac, M, g, uit, .3, px);
+    [['triangle', 1, 0], ['sine', .5, 0], ['triangle', .35, 7]].forEach(([ty, v, det]) => { const o = ac.createOscillator(), e = ac.createGain(); o.type = ty; o.frequency.value = f; o.detune.value = det; e.gain.value = v; o.connect(e); e.connect(lp); o.start(t); o.stop(t + dur + .05); });
+  }
+  // Vlak akkoord: per noot twee ontstemde zaagtanden door een filter dat opengaat.
+  function vlak(ac, M, uit, freqs, t, dur, vol, o) {
+    o = o || {}; const lp = ac.createBiquadFilter(); lp.type = 'lowpass'; lp.Q.value = .8;
+    lp.frequency.setValueAtTime(o.c1 || 500, t); lp.frequency.exponentialRampToValueAtTime(o.c2 || 2200, t + (o.open || dur * .4)); lp.frequency.exponentialRampToValueAtTime(o.c3 || 700, t + dur);
+    const g = ac.createGain(); g.gain.setValueAtTime(.0001, t); g.gain.exponentialRampToValueAtTime(vol, t + (o.att || .04)); g.gain.setValueAtTime(vol, t + dur * (o.houd || .45)); g.gain.exponentialRampToValueAtTime(.0001, t + dur);
+    lp.connect(g); naar(ac, M, g, uit, o.zaal == null ? .45 : o.zaal);
+    freqs.forEach((f, i) => [-9, 8].forEach((det, k) => { const os = ac.createOscillator(), e = ac.createGain(), pn = pan(ac, (k ? 1 : -1) * .45); os.type = o.type || 'sawtooth'; os.frequency.value = f; os.detune.value = det + i * 2; e.gain.value = 1 / freqs.length;
+      os.connect(e); if (pn) { e.connect(pn); pn.connect(lp); } else e.connect(lp); os.start(t); os.stop(t + dur + .05); }));
+  }
+  // Dreun: diepe klap met een tik erbovenop.
+  function dreun(ac, M, uit, t, vol, laag) {
+    const o = ac.createOscillator(), g = ac.createGain(); o.type = 'sine'; o.frequency.setValueAtTime(laag ? 110 : 150, t); o.frequency.exponentialRampToValueAtTime(laag ? 34 : 42, t + .32);
+    env(g, t, .003, vol, laag ? .9 : .6); o.connect(g); g.connect(uit); o.start(t); o.stop(t + 1);
+    ruis(ac, M, uit, t, .1, { f1: 1800, f2: 300, vol: vol * .35, soort: 'lowpass' });
+  }
+  // Ruis met vrije filterbaan (tot 6 kHz): lucht, bekken, vuur.
+  function ruis(ac, M, uit, t, dur, o) {
+    o = o || {}; const len = Math.max(1, Math.floor(ac.sampleRate * dur)), buf = ac.createBuffer(1, len, ac.sampleRate), d = buf.getChannelData(0), r = rnd(_seed++ * 7919);
+    for (let i = 0; i < len; i++) d[i] = r() * 2 - 1;
+    const n = ac.createBufferSource(); n.buffer = buf; const f = ac.createBiquadFilter(); f.type = o.soort || 'bandpass'; f.Q.value = o.q || .9;
+    f.frequency.setValueAtTime(o.f1 || 1000, t); if (o.f2) f.frequency.exponentialRampToValueAtTime(o.f2, t + dur * (o.baan || 1));
+    const g = ac.createGain(), v = o.vol || .05; if (o.zwel) { g.gain.setValueAtTime(.0001, t); g.gain.exponentialRampToValueAtTime(v, t + dur * o.zwel); g.gain.exponentialRampToValueAtTime(.0001, t + dur); } else env(g, t, o.att || .004, v, dur);
+    n.connect(f); f.connect(g); naar(ac, M, g, uit, o.zaal || 0, o.px); n.start(t); n.stop(t + dur + .02);
+  }
+  // Glinstering: losse hoge klokjes uit de toonladder, links en rechts.
+  function glinster(ac, M, uit, t0, t1, noten, n, vol, seed) {
+    const r = rnd(seed); for (let i = 0; i < n; i++) bel(ac, M, uit, NOOT(noten[Math.floor(r() * noten.length)] + 12), lerp(t0, t1, (i + r() * .6) / n), .9, vol * (.5 + r() * .5), (r() - .5) * 1.4);
+  }
+  const lerp = (a, b, x) => a + (b - a) * x;
 
   // Recepten. (t = starttijd, x = extra parameter uit de cue)
   const R = {
@@ -127,6 +180,60 @@
         T(a, M, u, ar2 * 2, null, tt + sp / 2, sp * .4, { type: 'triangle', vol: .03, cut: 1800, rev: true });
       }
     },
+    // ── Momenten: één compositie per moment, op de tel van het beeld ──
+    // Level omhoog (D-groot). x = { hit }: het moment waarop het cijfer wisselt.
+    mLevel: (a, M, u, t, x) => {
+      const H = t + ((x && x.hit) || 1.62), D = [-19, -12, -7, -3, 0, 5, 9, 12, 17];           // D3 A3 D4 F#4 A4 D5 F#5 A5 D6
+      bel(a, M, u, NOOT(5), t + .05, .7, .05);
+      vlak(a, M, u, [NOOT(-19), NOOT(-12)], t + .4, H - t - .35, .05, { c1: 300, c2: 1500, open: H - t - .5, c3: 1500, att: .5, houd: .95, zaal: .3 });
+      const n = 11; for (let i = 0; i < n; i++) { const q = i / (n - 1), tt = lerp(t + .52, H - .09, Math.pow(q, .82)); pluk(a, M, u, NOOT([-7, -3, 0, 5, 9, 12, 5, 9, 12, 17, 21][i]), tt, .22, .05 + q * .06, (q - .5) * .8); }
+      ruis(a, M, u, H - .75, .75, { f1: 500, f2: 5200, vol: .07, zwel: .93, q: .7, zaal: .2 });
+      dreun(a, M, u, H, .5, true);
+      ruis(a, M, u, H, 1.5, { f1: 3600, f2: 1400, vol: .06, q: .5, att: .01, zaal: .5 });
+      vlak(a, M, u, [NOOT(-19), NOOT(-12), NOOT(-7), NOOT(-3), NOOT(0)], H, 2.6, .16, { c1: 900, c2: 3200, open: .12, c3: 500, att: .012, houd: .3 });
+      [5, 9, 12, 17].forEach((nt, i) => bel(a, M, u, NOOT(nt), H + i * .045, 1.6, .11 - i * .012, (i - 1.5) * .35));
+      bel(a, M, u, NOOT(12), H + .42, 1.2, .1, -.3); bel(a, M, u, NOOT(17), H + .6, 2.2, .13, .3); bel(a, M, u, NOOT(5), H + .6, 2.2, .07);
+      glinster(a, M, u, H + .9, H + 2.9, [5, 9, 12, 17, 21], 9, .035, 7);
+    },
+    // Promotie (E-groot). x = { start, land }: het schild springt op start en landt op land.
+    mPromotie: (a, M, u, t, x) => {
+      const S0 = t + ((x && x.start) || 1.7), L = t + ((x && x.land) || 2.12), E = n => NOOT(n + 7);   // E5 = NOOT(7)
+      bel(a, M, u, E(-12), t + .1, .7, .05);
+      const n = 12; for (let i = 0; i < n; i++) { const q = i / (n - 1), tt = lerp(t + .7, S0 - .05, Math.pow(q, .7));       // roffel die versnelt
+        const o = a.createOscillator(), g = a.createGain(); o.type = 'sine'; o.frequency.setValueAtTime(130 + q * 50, tt); o.frequency.exponentialRampToValueAtTime(70, tt + .12); env(g, tt, .003, .12 + q * .16, .16); o.connect(g); g.connect(u); o.start(tt); o.stop(tt + .2);
+        if (i % 2) pluk(a, M, u, E([-24, -20, -17, -12, -8, -5][Math.floor(i / 2)]), tt, .2, .05 + q * .04, (q - .5)); }
+      vlak(a, M, u, [E(-24), E(-17)], t + .7, S0 - t - .65, .05, { c1: 250, c2: 1300, open: S0 - t - .8, c3: 1300, att: .5, houd: .95, zaal: .3 });
+      ruis(a, M, u, S0, L - S0, { f1: 400, f2: 4800, vol: .1, zwel: .55, q: 1.1, zaal: .2, px: -.4 });                    // het schild draait door de lucht
+      ruis(a, M, u, S0 + .1, L - S0 - .1, { f1: 4200, f2: 700, vol: .07, zwel: .5, q: 1.1, px: .4 });
+      { const o = a.createOscillator(), g = a.createGain(); o.type = 'triangle'; o.frequency.setValueAtTime(220, S0); o.frequency.exponentialRampToValueAtTime(880, L - .03); env(g, S0, .05, .05, L - S0); o.connect(g); g.connect(u); o.start(S0); o.stop(L + .05); }
+      dreun(a, M, u, L, .55, true);
+      ruis(a, M, u, L, 1.7, { f1: 3800, f2: 1300, vol: .07, q: .5, att: .01, zaal: .5 });
+      // koper: ta-ta-taaa
+      vlak(a, M, u, [E(-17), E(-12), E(-8)], L, .16, .15, { c1: 700, c2: 2600, open: .03, c3: 900, att: .008, houd: .6, zaal: .3 });
+      vlak(a, M, u, [E(-17), E(-12), E(-8)], L + .17, .14, .15, { c1: 700, c2: 2600, open: .03, c3: 900, att: .008, houd: .6, zaal: .3 });
+      vlak(a, M, u, [E(-24), E(-12), E(-5), E(0), E(4)], L + .34, 2.4, .2, { c1: 800, c2: 3400, open: .1, c3: 500, att: .012, houd: .35 });
+      [0, 4, 7, 12].forEach((nt, i) => bel(a, M, u, E(nt), L + .34 + i * .05, 1.8, .1 - i * .012, (i - 1.5) * .35));
+      bel(a, M, u, E(12), L + 1.0, 2.2, .1, .25); bel(a, M, u, E(7), L + 1.0, 2.2, .06, -.25);
+      glinster(a, M, u, L + 1.2, L + 3, [0, 4, 7, 11, 12], 8, .035, 9);
+    },
+    // Streak (A-groot). x = { dagen: [tijden], vink, vlam }: bolletjes, vandaag afgevinkt, vlam laait op.
+    mStreak: (a, M, u, t, x) => {
+      x = x || {}; const V = t + (x.vink || 1.45), F = t + (x.vlam || 1.87), eind = t + (x.duur || 5), A = [0, 2, 4, 5, 7, 9, 11, 12];
+      // vuur: zacht geraas met knetters, harder na het oplaaien
+      ruis(a, M, u, t, F - t, { soort: 'lowpass', f1: 420, f2: 520, vol: .035, zwel: .3, q: .4 });
+      ruis(a, M, u, F, eind - F, { soort: 'lowpass', f1: 1500, f2: 600, vol: .07, att: .05, q: .4 });
+      const r = rnd(123); for (let i = 0; i < 46; i++) { const tt = lerp(t + .2, eind - .2, r()); ruis(a, M, u, tt, .02 + r() * .03, { f1: 1500 + r() * 2500, vol: (tt > F ? .05 : .022) * (.4 + r()), q: 2, px: (r() - .5) * 1.2 }); }
+      (x.dagen || []).forEach((d, i) => pluk(a, M, u, NOOT(A[i % 8]), t + d, .26, .08, (i - 3) * .2));
+      pluk(a, M, u, NOOT(A[(x.dagen || []).length % 8] + 0), V, .3, .12); bel(a, M, u, NOOT(12), V + .02, .8, .07);
+      { const o = a.createOscillator(), g = a.createGain(); o.type = 'sine'; o.frequency.setValueAtTime(520, V + .06); o.frequency.exponentialRampToValueAtTime(1500, F); env(g, V + .06, .04, .045, F - V - .04); o.connect(g); naar(a, M, g, u, .3); o.start(V + .06); o.stop(F + .05); }
+      ruis(a, M, u, V + .06, F - V - .06, { f1: 900, f2: 4200, vol: .04, zwel: .8, q: 1.4 });
+      dreun(a, M, u, F, .45, true);
+      ruis(a, M, u, F, .9, { soort: 'lowpass', f1: 300, f2: 3800, vol: .16, zwel: .12, q: .5, baan: .25, zaal: .3 });          // woesj van de vlam
+      vlak(a, M, u, [NOOT(-24), NOOT(-12), NOOT(-5), NOOT(0), NOOT(4)], F, 2.4, .15, { c1: 800, c2: 3000, open: .12, c3: 500, att: .012, houd: .3 });
+      [0, 4, 7, 12].forEach((nt, i) => bel(a, M, u, NOOT(nt), F + i * .05, 1.7, .1 - i * .012, (i - 1.5) * .35));
+      bel(a, M, u, NOOT(7), F + .45, 1.2, .09, -.3); bel(a, M, u, NOOT(12), F + .62, 2.2, .12, .3);
+      glinster(a, M, u, F + .9, F + 2.8, [0, 4, 7, 9, 12], 7, .03, 5);
+    },
     typ: (a, M, u, t, x) => { const r = rnd(Math.floor(t * 1000) + 3); N(a, M, u, t, .018, { freq: 1800 + r() * 500, vol: .03 * (x || 1), q: 1.6 }); },
     scan: (a, M, u, t, x) => { const d = x || .8; N(a, M, u, t, d, { freq: 600, freq2: 2200, q: 3, vol: .05, swell: .5, sweep: 1 }); T(a, M, u, 520, 1040, t, d, { vol: .03, glide: 1, cut: 1800 }); },
     snurk: (a, M, u, t) => N(a, M, u, t, .6, { filter: 'lowpass', freq: 180, freq2: 520, vol: .07, swell: .6 }),
@@ -169,5 +276,14 @@
     try { if (!live) { const ac = new AudioContext(); live = { ac, M: tafel(ac) }; } if (live.ac.state === 'suspended') live.ac.resume();
       plan(live.ac, live.M, [[live.ac.currentTime + .01, naam, vol, x]]); } catch (e) {}
   }
-  window.Geluid = { wav, speel, recepten: Object.keys(R) };
+  // Speelt een hele cue-lijst vanaf nu (voor de momenten in de app). Geeft een functie terug die het geluid uitfadet.
+  function speelAlles(cues, vol) {
+    try { if (!live) { const ac = new AudioContext(); live = { ac, M: tafel(ac) }; } if (live.ac.state === 'suspended') live.ac.resume();
+      const ac = live.ac, groep = ac.createGain(); groep.gain.value = vol == null ? 1 : vol; groep.connect(live.M.mg);
+      const t0 = ac.currentTime + .06; _seed = 1;
+      plan(ac, { mg: groep, rev: live.M.rev, zaal: live.M.zaal }, cues.map(c => [t0 + c[0], c[1], c[2], c[3]]));
+      return () => { try { groep.gain.setTargetAtTime(.0001, ac.currentTime, .08); setTimeout(() => { try { groep.disconnect(); } catch (e) {} }, 600); } catch (e) {} };
+    } catch (e) { return () => {}; }
+  }
+  window.Geluid = { wav, speel, speelAlles, recepten: Object.keys(R) };
 })();

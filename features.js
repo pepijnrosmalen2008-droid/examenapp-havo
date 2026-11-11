@@ -609,7 +609,14 @@ function addXP(amount){
 // ═══════ GEORKESTREERD LEVEL-UP-MOMENT (Duolingo-stijl succesbeleving) ═══════
 // Timing-choreografie: scherm dimt → Vonk springt → confetti + geluid + haptic →
 // levelnummer groeit → XP telt op → pas daarná de "Verder"-knop. Voelt als winst.
+// Level omhoog is een eigen scherm met de animatie uit momenten.js en een knop Verder.
+// Laadt de animatie niet (geen verbinding), dan valt hij terug op het oude venster.
 function showLevelUp(lvl, lvlName, xpAdded){
+  if(document.getElementById('levelup-overlay')||document.getElementById('mm-ov'))return;
+  momentToon('level',{level:lvl},{titel:'Level omhoog',regel:xpAdded?('<b>+'+xpAdded+' XP</b> in deze ronde'):'',
+    klaar:function(){try{pqNotifyClose();}catch(e){}},anders:function(){_showLevelUpOud(lvl,lvlName,xpAdded);}});
+}
+function _showLevelUpOud(lvl, lvlName, xpAdded){
   if(document.getElementById('levelup-overlay'))return;
   const vonk=(typeof vonkHolder==='function')?vonkHolder('feest',132,'levelup'):((typeof mascotSVG==='function')?mascotSVG('feest',132):'');
   const el=document.createElement('div');
@@ -638,6 +645,34 @@ function showLevelUp(lvl, lvlName, xpAdded){
     const tick=function(now){const p=Math.max(0,Math.min(1,(now-t0)/dur));sp.textContent=Math.round(target*(1-Math.pow(1-p,3)));if(p<1)requestAnimationFrame(tick);else sp.textContent=target;};
     requestAnimationFrame(tick);
   },820);
+}
+// ═══════ MOMENTEN (level, promotie, streak als eigen scherm) ═══════
+// De animaties staan in /momenten.js, het geluid in /social/geluid.js. Beide worden pas
+// geladen als er een moment komt. ui: {regel, knop, titel, klaar, anders}. klaar() loopt
+// na Verder; anders() als het laden mislukt (dan toont de aanroeper zijn oude venster).
+function momentToon(soort,opts,ui){
+  ui=ui||{};
+  const start=function(){try{Momenten.toon(soort,opts,ui);try{if(typeof trackEvent==='function')trackEvent('moment',{soort:soort});}catch(e){}}catch(e){try{console.warn('moment',e&&e.stack||e);}catch(_){}mis();}};
+  const mis=function(){try{(ui.anders||ui.klaar||function(){})();}catch(e){}};
+  if(window.Momenten){start();return;}
+  if(window._mmWacht){window._mmWacht.push([start,mis]);return;}
+  window._mmWacht=[[start,mis]];
+  let af=false;
+  const rond=function(ok){if(af)return;af=true;const w=window._mmWacht||[];window._mmWacht=null;w.forEach(function(x){(ok&&window.Momenten?x[0]:x[1])();});};
+  const laad=function(src,na){const el=document.createElement('script');el.src=src;el.onload=function(){na(false);};el.onerror=function(){na(true);};document.head.appendChild(el);};
+  // Geluid eerst (mag mislukken: dan speelt het moment stil), daarna de animatie zelf.
+  laad('/social/geluid.js',function(){laad('/momenten.js',function(fout){rond(!fout);});});
+  setTimeout(function(){rond(false);},5000);
+}
+// Streak-moment: op dag 2, 3, 5 en 7, daarna elke volle week en op de mijlpalen.
+// Zo is het een beloning en geen dagelijks scherm.
+const STREAK_MOMENT=[2,3,5,30,50,100,150,200,250,300,365];
+function streakMomentDag(n){return n>=2&&(STREAK_MOMENT.indexOf(n)>=0||n%7===0);}
+function showStreakMoment(dagen){
+  let regel='';
+  try{const nx=(typeof getNextStreakMilestone==='function')?getNextStreakMilestone(dagen):null;
+    if(nx&&nx-dagen>0)regel='Nog <b>'+(nx-dagen)+' '+(nx-dagen===1?'dag':'dagen')+'</b> tot '+nx+' dagen op rij';}catch(e){}
+  momentToon('streak',{dagen:dagen},{titel:dagen+' dagen op rij',regel:regel,klaar:function(){try{pqNotifyClose();}catch(e){}}});
 }
 function _lvlupClose(){const el=document.getElementById('levelup-overlay');if(el){el.classList.remove('show');setTimeout(function(){el.remove();},300);}try{pqNotifyClose();}catch(e){}}
 

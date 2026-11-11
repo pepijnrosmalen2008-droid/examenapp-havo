@@ -468,8 +468,16 @@ function _lgMaybeCeremony(){
 }
 // Weekafsluiting-recap: toont prominent hoeveelste je bent geworden + de uitkomst
 // (gepromoveerd / gebleven / gedegradeerd), voor élke week (niet enkel promo/demote).
-function showLeagueCeremony(r){
-  if(document.getElementById('lg-ceremony'))return;
+function showLeagueCeremony(r,_naMoment){
+  if(document.getElementById('lg-ceremony')||(!_naMoment&&document.getElementById('mm-ov')))return;
+  // Promotie: eerst het moment als eigen scherm (schild springt naar de nieuwe divisie),
+  // na Verder de uitslag met plek, munten en kist. Deze functie loopt alleen op de home
+  // van het niveau (zie _lgMaybeCeremony), dus nooit op het scherm waar je een niveau kiest.
+  if(r.promoted&&!_naMoment&&typeof momentToon==='function'){
+    const terug=function(){try{if(_lgOpHome())showLeagueCeremony(r,true);else _lgCeremonyDone=false;}catch(e){}};
+    momentToon('promotie',{van:r.oldDiv,naar:r.newDiv},{titel:'Promotie',regel:'Je eindigde op <b>plek '+r.rank+'</b> van '+(r.total||LEAGUE_COHORT),klaar:terug,anders:terug});
+    return;
+  }
   const up=!!r.promoted, dn=!!r.relegated;
   const lastDiv=LEAGUE_DIVISIONS[r.oldDiv]||LEAGUE_DIVISIONS[0];
   const newDiv=LEAGUE_DIVISIONS[r.newDiv]||lastDiv;
@@ -511,7 +519,8 @@ function showLeagueCeremony(r){
   </div>`;
   document.body.appendChild(el);
   requestAnimationFrame(()=>el.classList.add('show'));
-  if(up){try{playSound('levelup');}catch(e){}try{if(typeof launchConfetti==='function')launchConfetti('gold');}catch(e){}try{haptic&&haptic([50,30,80,30,120]);}catch(e){}}
+  if(up&&_naMoment){try{playSound('complete');}catch(e){}}
+  else if(up){try{playSound('levelup');}catch(e){}try{if(typeof launchConfetti==='function')launchConfetti('gold');}catch(e){}try{haptic&&haptic([50,30,80,30,120]);}catch(e){}}
   else if(dn){try{playSound('complete');}catch(e){}}
   else{try{playSound('complete');}catch(e){}try{haptic&&haptic([30,20,50]);}catch(e){}}
 }

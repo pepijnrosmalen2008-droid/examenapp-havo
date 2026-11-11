@@ -1479,6 +1479,8 @@ function toonRes(){
   // Save progress & streak
   let _recordResult=null;
   try{_recordResult=saveProgress(ST.vak.id,ST.domein.id,ST.mode,sc,tot);}catch(e){}
+  // Eerste quiz van vandaag? Dan groeit de streak: onthoud de stand van ervoor.
+  let _strVoor=-1;try{const _sd=(getStreak().days||[]);if(!_sd.includes(new Date().toISOString().slice(0,10)))_strVoor=calcStreak().current||0;}catch(e){}
   try{recordPractice();}catch(e){}
   // Docent-snapshot (slice 4): stuur de leerdoel-beheersing naar het klas-dashboard.
   try{if(typeof emitMasterySnapshot==='function')emitMasterySnapshot(ST.vak.id);}catch(e){}
@@ -1521,6 +1523,8 @@ function toonRes(){
   // via de pop-up-wachtrij afgespeeld (geen overlap meer).
   const _RC={};
   if(isPerfect){try{earnAch('perfect');}catch(e){}_RC.perfect=true;}
+  // Streak-moment: alleen op dagen die ertoe doen (zie STREAK_MOMENT), anders blijft het rustig.
+  try{if(_strVoor>=0&&!ST.isFoutenboek){const _sn=calcStreak().current||0;if(_sn>_strVoor&&streakMomentDag(_sn))_RC.streak={dagen:_sn};}}catch(e){}
   if(isPerfect)checkPerfectCountAch();
   // Vonk-stemming + kleurtint per resultaat (voor de intro-sweep én de staande Vonk).
   const _vMood=isPerfect?'feest':(pct>=0.9?'feest':(pct>=0.7?'blij':(pct>=0.5?'goed':'blij')));
@@ -1785,6 +1789,7 @@ function _runResultChain(rc){
   if(rc.evo)L.push(['evo',fin=>pqButton(fin,()=>showEvoReveal(rc.evo.newStage,rc.evo.animalId))]);
   if(rc.reg!=null&&regEerst)L.push(['reg',fin=>pqButton(fin,()=>_showRegPrompt(rc.reg))]);
   if(rc.level)L.push(['level',fin=>pqButton(fin,()=>{try{showLevelUp(rc.level.lvl,rc.level.name,rc.level.xp);}catch(e){try{slagioVlagUit('levelup');}catch(_){}pqNotifyClose();}})]);
+  if(rc.streak)L.push(['streak',fin=>pqButton(fin,()=>showStreakMoment(rc.streak.dagen))]);
   if(rc.chest)L.push(['chest',fin=>showChest(fin,rc.chest)]);
   if(rc.naam)L.push(['naam',fin=>pqButton(fin,()=>_naamVraag())]);
   if(rc.reg!=null&&!regEerst)L.push(['reg',fin=>pqButton(fin,()=>_showRegPrompt(rc.reg))]);

@@ -1,109 +1,20 @@
 <!doctype html>
 <html lang="nl"><head><meta charset="utf-8"><title>Slagio · Moment · Promotie</title>
-<link rel="stylesheet" href="../basis.css"><link rel="stylesheet" href="../moment.css">
-<style>
-.label{top:120px;font:800 32px/1 var(--tekst);letter-spacing:.24em;text-transform:uppercase;color:rgba(255,255,255,.62)}
-.stralen{left:40px;top:-60px;width:1000px;height:1000px;border-radius:50%;
-  background:repeating-conic-gradient(var(--str,rgba(226,232,240,.4)) 0 9deg,transparent 9deg 22.5deg);
-  -webkit-mask:radial-gradient(circle,#000 24%,transparent 66%);mask:radial-gradient(circle,#000 24%,transparent 66%)}
-.schok{left:540px;top:440px;width:460px;height:460px;margin:-230px 0 0 -230px;border-radius:50%;border:10px solid #fff}
-.streep{width:8px;border-radius:8px;background:linear-gradient(180deg,rgba(255,255,255,0),rgba(255,255,255,.75),rgba(255,255,255,0))}
-.vonk{left:380px;top:0;width:320px;height:320px}
-.vonk svg{width:100%;height:100%;overflow:visible}
-.schild{left:330px;top:200px;width:420px;height:480px}
-.schild #sv{position:absolute;inset:0}
-.schild svg{position:absolute;inset:0;width:100%;height:100%;overflow:visible}
-.pijl{width:90px;height:60px;margin-left:-45px}
-.pijl svg{width:100%;height:100%;overflow:visible}
-.divnaam{top:722px;height:100px;overflow:hidden}
-.divnaam b{position:absolute;left:0;right:0;top:0;font:800 84px/100px var(--kop);color:#fff;letter-spacing:-.035em}
-</style></head>
+<link rel="stylesheet" href="../basis.css">
+</head>
 <body>
 <div class="mo-canvas"></div>
 <script src="../../mascotte.js"></script>
 <script src="../engine.js"></script>
 <script src="../geluid.js"></script>
-<script src="../moment.js"></script>
+<script src="../../momenten.js"></script>
 <script>
-// Promotie in de weekwedstrijd. ?van=Brons&naar=Zilver (namen uit LEAGUE_DIVISIONS in league.js), ?f=reel
-const {p,E,lerp,zet,rnd,clamp,$}=Motion;
-const DIV=[['Brons','#c17a3f'],['Zilver','#9aa4b2'],['Goud','#e8a91d'],['Platina','#3fb8c4'],['Diamant','#5b8def'],['Legende','#a855f7']];
-const zoek=n=>Math.max(0,DIV.findIndex(d=>d[0].toLowerCase()===String(n||'').toLowerCase()));
-const iN=Moment.q.has('naar')?zoek(Moment.q.get('naar')):1,iV=Moment.q.has('van')?zoek(Moment.q.get('van')):Math.max(0,iN-1);
-const mix=(k,w,pc)=>`color-mix(in srgb,${k} ${100-pc}%,${w} ${pc}%)`;
-// Schild: twee tinten per vlak, rand donkerder, embleem per divisie.
-const EMBLEEM=[
-  '<path d="M-44 20L0 -18L44 20" />',
-  '<path d="M-44 0L0 -38L44 0M-44 42L0 4L44 42" />',
-  '<path d="M-44 -18L0 -56L44 -18M-44 22L0 -16L44 22M-44 62L0 24L44 62" />',
-  '<path class="vol" d="M0 -58L16 -18L58 -14L26 14L36 56L0 34L-36 56L-26 14L-58 -14L-16 -18Z" />',
-  '<path class="vol" d="M0 -62L52 -8L0 66L-52 -8Z" /><path d="M-52 -8H52M-20 -8L0 -62L20 -8L0 66Z" style="stroke-width:5;opacity:.45;stroke:#000" />',
-  '<path class="vol" d="M-56 44L-64 -30L-28 2L0 -52L28 2L64 -30L56 44Z" />',
-];
-const schild=i=>{const k=DIV[i][1];return `<svg viewBox="-105 -125 210 250">
-  <path d="M0 -118L94 -84V8C94 74 48 110 0 130C-48 110 -94 74 -94 8V-84Z" fill="${mix(k,'#000',42)}"/>
-  <path d="M0 -104L82 -74V8C82 64 42 96 0 114C-42 96 -82 64 -82 8V-74Z" fill="${k}"/>
-  <path d="M0 -104L82 -74V8C82 64 42 96 0 114Z" fill="${mix(k,'#000',16)}"/>
-  <path d="M0 -104L-82 -74V-30L0 -62Z" fill="${mix(k,'#fff',34)}"/><path d="M0 -104L82 -74V-30L0 -62Z" fill="${mix(k,'#fff',14)}"/>
-  <g fill="none" stroke="#fff" stroke-width="15" stroke-linecap="round" stroke-linejoin="round" transform="translate(0 18) scale(.82)" style="--e:#fff">${EMBLEEM[i].replace(/class="vol"/g,'fill="#fff" stroke="none"')}</g>
-</svg>`;};
-Moment.bouw(`
-  <div class="abs mm-midden label" id="label">Weekwedstrijd</div>
-  <div class="abs stralen" id="stralen" style="--str:${mix(DIV[iN][1],'#fff',45).replace('color-mix','color-mix')}"></div>
-  <div id="strepen"></div>
-  <div class="abs schok" id="schok"></div><div class="abs schok" id="schok2"></div>
-  <div class="abs vonk" id="vonk"></div>
-  <div class="abs schild" id="schild"><div id="sv">${schild(iV)}</div></div>
-  <div id="pijlen"></div>
-  <div class="abs mm-midden divnaam"><b id="dOud">${DIV[iV][0]}-divisie</b><b id="dNieuw">${DIV[iN][0]}-divisie</b></div>
-  <div id="sterren"></div>
-  <div class="abs mm-midden" id="pil" style="top:856px"><span class="mm-pil">Promotie</span></div>
-`,{haak:'Deze week in de top 7.',onder:'Elke week een nieuwe wedstrijd'});
-$('#stralen').style.opacity='0';
-const T0=1.7;
-const rs=rnd(21);const STR=[...Array(16)].map((_,i)=>{const el=document.createElement('div');el.className='abs streep';$('#strepen').appendChild(el);return {el,x:90+i*60+(rs()-.5)*30,h:160+rs()*260,v:1500+rs()*1300,f:rs()};});
-const PIJ=[[190,0],[190,.18],[190,.36],[890,.09],[890,.27],[890,.45]].map(([x,d])=>{const el=document.createElement('div');el.className='abs pijl';el.style.left=x+'px';el.innerHTML='<svg viewBox="-45 -30 90 60"><path d="M-34 16L0 -16L34 16" fill="none" stroke="#4ade80" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/></svg>';$('#pijlen').appendChild(el);return {el,d};});
-const ST=[[230,250,1],[850,230,1.2],[910,560,.8],[170,590,1.05],[320,110,.7],[770,120,.8]].map(([x,y,s],i)=>{const el=document.createElement('div');el.className='abs mm-ster';el.style.left=x+'px';el.style.top=y+'px';el.innerHTML=Moment.ster(i%2?'#fff':mix(DIV[iN][1],'#fff',55));$('#sterren').appendChild(el);return {el,s,t:T0+.5+i*.09};});
-const KL=[DIV[iN][1],'#ffffff','#ffd76a','#ffb020',mix(DIV[iN][1],'#fff',50),'#4ade80'].map(k=>{const d=document.createElement('i');d.style.color=k;document.body.appendChild(d);const c=getComputedStyle(d).color;d.remove();return c;});
-Moment.confetti({t0:T0+.42,x:540,y:440,n:120,kleuren:KL,kracht:2000,spreid:6.283,seed:31,leven:3});
-Moment.confetti({t0:T0+.8,x:110,y:1010,n:44,kleuren:KL,kracht:2100,hoek:-1.15,spreid:.7,seed:32,leven:2.8});
-Moment.confetti({t0:T0+.88,x:970,y:1010,n:44,kleuren:KL,kracht:2100,hoek:-1.99,spreid:.7,seed:33,leven:2.8});
-Moment.vonken({t0:T0+.42,x:540,y:440,n:50,kleur:'#ffffff',kracht:1500,seed:34,leven:.8,grootte:9});
-let stemming='',gezicht=-1;const vonkZet=m=>{if(m!==stemming){stemming=m;$('#vonk').innerHTML=mascotSVG(m,320);}};
-window.__COVER=3.2;
-
-function render(t){
-  let schud=0;
-  const lb=p(t,.05,.45,E.uit);zet($('#label'),{opacity:String(lb*(1-p(t,T0+.3,T0+.5))),transform:`translateY(${lerp(-30,0,lb)}px)`});
-  // 1. schild komt op, laadt op (trilt, strepen omhoog, pijlen klimmen)
-  const op=p(t,.1,.6,E.veer);const laad=p(t,.7,T0,E.in);
-  // 2. sprong: omhoog, drie halve slagen, landt met een klap op T0+.42
-  const TL=T0+.42;const spr=p(t,T0,TL);const hoogte=Math.sin(spr*Math.PI)*-150;
-  const draai=p(t,T0,TL,E.inUit)*540;const land=t>=TL?1+Math.exp(-(t-TL)*7)*Math.cos((t-TL)*20)*.16:1;
-  const face=draai>=270?iN:iV;if(face!==gezicht){gezicht=face;$('#sv').innerHTML=schild(face);}
-  const tril=t<T0?laad*10:0;const r=rnd(Math.floor(t*30)+7);
-  zet($('#schild'),{opacity:String(Math.min(1,op*2)),transform:`translate(${(r()-.5)*tril}px,${hoogte+(r()-.5)*tril+(t>TL+.5?Math.sin((t-TL)*2.2)*8:0)}px) perspective(1400px) rotateY(${draai}deg) scale(${lerp(.4,1,Math.min(1.1,op))*(1+laad*.06)*(1+Math.sin(spr*Math.PI)*.22)*land})`});
-  STR.forEach(s=>{const y=1150-((t*s.v+s.f*1400)%1500);zet(s.el,{left:s.x+'px',top:y+'px',height:s.h+'px',opacity:String(laad*.55*(1-p(t,TL,TL+.3)))});});
-  PIJ.forEach(a=>{const c=((t-.7-a.d)%0.9+0.9)%0.9/0.9;const aan=t>.7+a.d&&t<TL;zet(a.el,{top:(700-c*420)+'px',opacity:String(aan?Math.sin(c*Math.PI)*.95*(1-p(t,T0,TL)):0),transform:`scale(${.7+c*.5})`});});
-  if(t>1.2&&t<T0)schud=laad*8;if(t>=TL&&t<TL+.3)schud=(TL+.3-t)*80;
-  // 3. klap: stralen, schokgolf, naam wisselt
-  const str=p(t,TL,TL+.45,E.uit5);zet($('#stralen'),{opacity:String(str*(.9-p(t,4.4,5.4)*.35)),transform:`rotate(${t*24}deg) scale(${lerp(.45,1.08,str)})`});
-  [['#schok',0],['#schok2',.16]].forEach(([s,d])=>{const x=p(t,TL+d,TL+d+.7,E.uit);zet($(s),{opacity:String(x>0?(1-x)*.9:0),transform:`scale(${lerp(.9,2.6,x)})`,borderWidth:lerp(12,2,x)+'px'});});
-  const nm=p(t,.3,.7,E.uit);const wis=p(t,TL-.05,TL+.45,E.veer);
-  zet($('#dOud'),{opacity:String(nm*(1-p(t,TL,TL+.12))),transform:`translateY(${lerp(40,0,nm)-wis*110}px)`});
-  zet($('#dNieuw'),{opacity:t>=TL-.05?'1':'0',transform:`translateY(${lerp(110,0,wis)}px)`,color:t>=TL?'#fff':'#fff'});
-  // 4. Vonk trots boven het schild, knop, glinsteringen
-  vonkZet(t<TL+.9?'wow':'trots');
-  const vk=p(t,TL+.15,TL+.75,E.veer);const dans=t>TL+.75?Math.sin((t-TL-.75)*4.6):0;
-  zet($('#vonk'),{opacity:t>TL+.12?'1':'0',transform:`translateY(${lerp(260,-50,Math.min(1.08,vk))+Math.abs(dans)*-14}px) rotate(${dans*4}deg)`});
-  const pl=p(t,TL+.3,TL+.8,E.veer);zet($('#pil'),{opacity:String(Math.min(1,pl*2.2)),transform:`scale(${lerp(.3,1,pl)}) rotate(${lerp(6,0,Math.min(1,pl))}deg)`});
-  ST.forEach(s=>{const x=p(t,s.t,s.t+.35,E.terug);const tw=.75+Math.sin(t*5+s.t*9)*.25;zet(s.el,{opacity:String(Math.min(1,x*2)*(1-p(t,4.9,5.4))),transform:`scale(${x*s.s*tw}) rotate(${t*40+s.t*90}deg)`});});
-  Moment.kader(t,{flitsT:[TL],schud,merkT:TL+1.1});
-}
-const G=[];const g=(t,n,v,x)=>G.push([t,n,v,x]);
-g(.1,'pop',.6);g(.7,'riser',1.5,1.0);for(let i=0;i<6;i++)g(.75+i*.15,'tick',.35,800+i*110);
-g(T0,'whoosh',.9,.42);g(T0+.21,'flip',.7);g(T0+.4,'impact',1);g(T0+.42,'fanfare',1);g(T0+.75,'pop',.7);g(T0+.9,'coin',.4);
-ST.forEach((s,i)=>g(s.t,'tick',.22,1500+i*120));
-Motion.maak({duur:5.4,render,geluid:G});
+// Promotie. Het moment zelf staat in /momenten.js (dezelfde code draait in de app).
+// ?van=Brons&naar=Zilver (namen uit LEAGUE_DIVISIONS in league.js), ?f=reel voor staand formaat met haak en merk.
+const q=new URLSearchParams(location.search),reel=q.get('f')==='reel';
+const m=Momenten.maak('promotie',document.querySelector('.mo-canvas'),Object.assign({ van: q.get('van'), naar: q.get('naar'), niveau:q.get('niveau')||'havo', icoon:'../../icon-512.png' },
+  reel?{H:1920,S:.84,CY:910,video:true}:{H:1080}));
+window.__COVER=m.cover;
+Motion.maak({duur:m.duur,render:m.render,geluid:m.geluid});
 </script>
 </body></html>

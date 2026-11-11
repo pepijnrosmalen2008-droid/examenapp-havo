@@ -1,97 +1,20 @@
 <!doctype html>
 <html lang="nl"><head><meta charset="utf-8"><title>Slagio · Moment · Level omhoog</title>
-<link rel="stylesheet" href="../basis.css"><link rel="stylesheet" href="../moment.css">
-<style>
-.stralen{left:40px;top:-30px;width:1000px;height:1000px;border-radius:50%;
-  background:repeating-conic-gradient(rgba(255,214,120,.42) 0 9deg,rgba(255,214,120,0) 9deg 22.5deg);
-  -webkit-mask:radial-gradient(circle,#000 24%,transparent 66%);mask:radial-gradient(circle,#000 24%,transparent 66%)}
-.schok{left:540px;top:470px;width:470px;height:470px;margin:-235px 0 0 -235px;border-radius:50%;border:10px solid #ffd76a}
-.vonk{left:370px;top:0;width:340px;height:340px}
-.vonk svg{width:100%;height:100%;overflow:visible}
-.ring{left:260px;top:190px;width:560px;height:560px}
-.ring svg{width:100%;height:100%;overflow:visible}
-.kern{left:540px;top:470px;width:0;height:0}
-.kern small{position:absolute;left:-200px;width:400px;top:-150px;text-align:center;font:800 32px/1 var(--tekst);letter-spacing:.24em;text-transform:uppercase;color:rgba(255,255,255,.62)}
-.cijfer{position:absolute;left:-200px;width:400px;top:-108px;height:240px;overflow:hidden;text-align:center}
-.cijfer b{position:absolute;left:0;right:0;top:0;font:800 250px/240px var(--kop);letter-spacing:-.05em;color:#fff}
-.cijfer b.nieuw{background:linear-gradient(180deg,#fff3c4,#ffc247 48%,#ff8a1f);-webkit-background-clip:text;background-clip:text;color:transparent}
-.kop{left:545px;top:232px;width:0;height:0}
-.kop i{position:absolute;left:-17px;top:-17px;width:34px;height:34px;border-radius:50%;background:#fff;box-shadow:0 0 30px 12px rgba(255,214,120,.9)}
-</style></head>
+<link rel="stylesheet" href="../basis.css">
+</head>
 <body>
 <div class="mo-canvas"></div>
 <script src="../../mascotte.js"></script>
 <script src="../engine.js"></script>
 <script src="../geluid.js"></script>
-<script src="../moment.js"></script>
+<script src="../../momenten.js"></script>
 <script>
-// Level omhoog. ?level=5 (het nieuwe level), ?naam=Prime (regel onder de knop), ?niveau=havo|vwo|vmbo, ?f=reel
-const {p,E,lerp,zet,rnd,clamp,$}=Motion;
-const LV=Math.max(2,+(Moment.q.get('level')||5)),NAAM=Moment.q.get('naam')||'';
-const R=215,OM=2*Math.PI*R;
-Moment.bouw(`
-  <div class="abs stralen" id="stralen"></div>
-  <div class="abs schok" id="schok"></div><div class="abs schok" id="schok2"></div>
-  <div class="abs vonk" id="vonk"></div>
-  <div class="abs ring" id="ring"><svg viewBox="-280 -280 560 560">
-    <defs><linearGradient id="rg" x1="0" y1="1" x2="1" y2="0"><stop offset="0" stop-color="#ff7a1a"/><stop offset=".55" stop-color="#ffb020"/><stop offset="1" stop-color="#ffe08a"/></linearGradient>
-    <radialGradient id="kg" cx=".5" cy=".38" r=".7"><stop offset="0" stop-color="#262c52"/><stop offset="1" stop-color="#12152a"/></radialGradient></defs>
-    <circle r="${R+22}" fill="url(#kg)"/>
-    <circle r="${R}" fill="none" stroke="rgba(255,255,255,.09)" stroke-width="40"/>
-    <circle id="boog" r="${R}" fill="none" stroke="url(#rg)" stroke-width="40" stroke-linecap="round" stroke-dasharray="${OM}" stroke-dashoffset="${OM}" transform="rotate(-90)"/>
-    <circle r="${R-34}" fill="none" stroke="rgba(255,255,255,.06)" stroke-width="2"/>
-  </svg></div>
-  <div class="abs kop" id="kop"><i></i></div>
-  <div class="abs kern" id="kern"><small>Level</small><div class="cijfer"><b id="oud">${LV-1}</b><b id="nieuw" class="nieuw">${LV}</b></div></div>
-  <div id="sterren"></div>
-  <div class="abs mm-midden" id="pil" style="top:800px"><span class="mm-pil">Level omhoog</span></div>
-  <div class="abs mm-midden mm-sub" id="sub" style="top:968px">${NAAM?'Je bent nu '+NAAM:''}</div>
-`,{haak:'Zo voelt een level omhoog.',onder:'Elke goede vraag levert XP op'});
-const T0=1.62;   // het moment zelf
-const ST=[[250,300,.9],[840,250,1.2],[900,560,.8],[190,600,1.1],[300,130,.7],[800,720,.75]].map(([x,y,s],i)=>{const el=document.createElement('div');el.className='abs mm-ster';el.style.left=x+'px';el.style.top=y+'px';el.innerHTML=Moment.ster(i%2?'#fff':'#ffe08a');$('#sterren').appendChild(el);return {el,s,t:T0+.12+i*.09};});
-const GOUD=['#ffd76a','#ffb020','#ff8a1f','#ffffff',Moment.niv[0],'#fff3c4'];
-Moment.confetti({t0:T0,x:540,y:470,n:110,kleuren:GOUD,kracht:1900,spreid:6.283,seed:11,leven:3});
-Moment.confetti({t0:T0+.42,x:120,y:1000,n:46,kleuren:GOUD,kracht:2100,hoek:-1.15,spreid:.7,seed:12,leven:2.8});
-Moment.confetti({t0:T0+.5,x:960,y:1000,n:46,kleuren:GOUD,kracht:2100,hoek:-1.99,spreid:.7,seed:13,leven:2.8});
-Moment.vonken({t0:T0,x:540,y:470,n:46,kracht:1500,seed:14,leven:.8,grootte:9});
-// vonkjes die van de kop van de boog spatten terwijl hij volloopt
-for(let i=0;i<22;i++){const tt=.55+i*.047,f=lerp(.62,1,Motion.p(tt,.5,T0,E.inUit)),a=-Math.PI/2+f*6.283;Moment.vonken({t0:tt,x:540+Math.cos(a)*R,y:470+Math.sin(a)*R,n:3,kracht:260,seed:40+i,leven:.45,grootte:5});}
-let stemming='';const vonkZet=m=>{if(m!==stemming){stemming=m;$('#vonk').innerHTML=mascotSVG(m,340);}};
-window.__COVER=2.9;
-
-function render(t){
-  let schud=0;
-  // 1. ring komt op en loopt vol
-  const op=p(t,.05,.5,E.terug);
-  const puls=t>=T0?1+Math.exp(-(t-T0)*7)*Math.cos((t-T0)*22)*.13:1+p(t,1.2,T0,E.in)*.03;
-  zet($('#ring'),{opacity:String(Math.min(1,op*1.8)),transform:`scale(${lerp(.6,1,op)*puls})`});
-  zet($('#kern'),{opacity:String(Math.min(1,op*1.8)),transform:`scale(${lerp(.6,1,op)*puls})`});
-  const vol=t<T0?lerp(.62,1,p(t,.5,T0,E.inUit)):lerp(0,.12,p(t,T0+.5,T0+1.3,E.uit5));
-  $('#boog').setAttribute('stroke-dashoffset',String(OM*(1-vol)));
-  const a=-Math.PI/2+vol*6.283;const kopAan=t>.5&&t<T0;
-  zet($('#kop'),{left:(540+Math.cos(a)*R)+'px',top:(470+Math.sin(a)*R)+'px',opacity:kopAan?'1':'0',transform:`scale(${1+Math.sin(t*40)*.15})`});
-  if(t>1.15&&t<T0)schud=p(t,1.15,T0)*9;
-  // 2. het moment: cijfer wisselt, stralen, schokgolf
-  const wis=p(t,T0-.02,T0+.5,E.veer);
-  zet($('#oud'),{transform:`translateY(${-wis*260}px)`,opacity:String(1-p(t,T0,T0+.14))});
-  zet($('#nieuw'),{transform:`translateY(${lerp(260,0,wis)}px) scale(${1+Math.exp(-Math.max(0,t-T0)*6)*.25*(t>=T0?1:0)})`,opacity:t>=T0-.02?'1':'0'});
-  const str=p(t,T0,T0+.45,E.uit5);zet($('#stralen'),{opacity:String(str*(.85-p(t,3.9,5)*.35)),transform:`rotate(${t*26}deg) scale(${lerp(.45,1.08,str)})`});
-  [['#schok',0],['#schok2',.16]].forEach(([s,d])=>{const x=p(t,T0+d,T0+d+.7,E.uit);zet($(s),{opacity:String(x>0?(1-x)*.9:0),transform:`scale(${lerp(.9,2.5,x)})`,borderWidth:lerp(12,2,x)+'px'});});
-  if(t>=T0&&t<T0+.3)schud=(T0+.3-t)*70;
-  // 3. Vonk komt juichend boven de ring uit
-  vonkZet(t<T0+.75?'wow':'feest');
-  const vk=p(t,T0+.12,T0+.7,E.veer);const dans=t>T0+.7?Math.sin((t-T0-.7)*5.2):0;
-  zet($('#vonk'),{opacity:t>T0+.1?'1':'0',transform:`translateY(${lerp(250,-36,Math.min(1.08,vk))+Math.abs(dans)*-16}px) rotate(${dans*5}deg)`});
-  // 4. knop met tekst, regel eronder, glinsteringen
-  const pl=p(t,T0+.38,T0+.85,E.veer);zet($('#pil'),{opacity:String(Math.min(1,pl*2.2)),transform:`scale(${lerp(.3,1,pl)}) rotate(${lerp(-6,0,Math.min(1,pl))}deg)`});
-  const sb=p(t,T0+.8,T0+1.2,E.uit);zet($('#sub'),{opacity:String(sb),transform:`translateY(${lerp(30,0,sb)}px)`});
-  ST.forEach(s=>{const x=p(t,s.t,s.t+.35,E.terug);const tw=.75+Math.sin(t*5+s.t*9)*.25;zet(s.el,{opacity:String(Math.min(1,x*2)*(1-p(t,4.5,5))),transform:`scale(${x*s.s*tw}) rotate(${t*40+s.t*90}deg)`});});
-  Moment.kader(t,{flitsT:[T0],schud,merkT:T0+1.2});
-}
-const G=[];const g=(t,n,v,x)=>G.push([t,n,v,x]);
-g(.05,'pop',.6);g(.5,'riser',1.4,1.1);for(let i=0;i<10;i++)g(.55+i*.1,'tick',.35,700+i*70);
-g(T0-.02,'impact',.9);g(T0,'levelup',1);g(T0+.14,'whoosh',.5,.3);g(T0+.4,'pop',.7);g(T0+.42,'coin',.4);g(T0+.5,'coin',.4);
-ST.forEach((s,i)=>g(s.t,'tick',.25,1500+i*120));g(T0+.75,'evolve',.5);
-Motion.maak({duur:5,render,geluid:G});
+// Level omhoog. Het moment zelf staat in /momenten.js (dezelfde code draait in de app).
+// ?level=5 (het nieuwe level), ?naam=Prime, ?niveau=havo|vwo|vmbo, ?f=reel voor staand formaat met haak en merk.
+const q=new URLSearchParams(location.search),reel=q.get('f')==='reel';
+const m=Momenten.maak('level',document.querySelector('.mo-canvas'),Object.assign({ level: +(q.get('level')||5), naam: q.get('naam')||'', niveau:q.get('niveau')||'havo', icoon:'../../icon-512.png' },
+  reel?{H:1920,S:.84,CY:910,video:true}:{H:1080}));
+window.__COVER=m.cover;
+Motion.maak({duur:m.duur,render:m.render,geluid:m.geluid});
 </script>
 </body></html>
