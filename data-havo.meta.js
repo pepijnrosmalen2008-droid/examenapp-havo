@@ -2666,20 +2666,24 @@ var VAKKEN = [
      },
      {
       "id": "D5",
+      "lo": "na.D.5",
+      "gs": 2,
       "naam": "Geleiders, isolatoren en sensoren",
-      "beschrijving": "Geleiders en isolatoren herkennen en verklaren, en begrijpen hoe niet-ohmse onderdelen werken: gloeilamp, LDR, NTC en diode.",
-      "ceStatus": "ce",
+      "beschrijving": "Je verklaart geleiden met vrije ladingdragers (elektronen en ionen), onderscheidt geleiders, isolatoren en halfgeleiders, herkent ohmse en niet-ohmse onderdelen, gebruikt een LDR en een NTC als sensor in een spanningsdeler en legt uit hoe een diode en een led werken, met drempelspanning en voorschakelweerstand.",
+      "ceStatus": "CE",
+      "binas": "35D",
+      "val": "",
       "onderwerpen": [
-       "Geleiders en isolatoren",
-       "Vrije elektronen",
+       "Geleiders, isolatoren en halfgeleiders",
+       "Vrije ladingdragers",
        "Ohms versus niet-ohms",
        "LDR: lichtsensor",
        "NTC: temperatuursensor",
-       "Diode en stroomrichting"
+       "Diode en led"
       ],
-      "nSv": 25,
+      "nSv": 28,
       "nOe": 5,
-      "nBeg": 12,
+      "nBeg": 11,
       "hasSam": true
      },
      {

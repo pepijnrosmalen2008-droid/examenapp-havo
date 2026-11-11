@@ -103482,565 +103482,688 @@ var VAKKEN = [
      },
      {
       "id": "D5",
+      "lo": "na.D.5",
+      "gs": 2,
       "naam": "Geleiders, isolatoren en sensoren",
-      "beschrijving": "Geleiders en isolatoren herkennen en verklaren, en begrijpen hoe niet-ohmse onderdelen werken: gloeilamp, LDR, NTC en diode.",
-      "ceStatus": "ce",
+      "beschrijving": "Je verklaart geleiden met vrije ladingdragers (elektronen en ionen), onderscheidt geleiders, isolatoren en halfgeleiders, herkent ohmse en niet-ohmse onderdelen, gebruikt een LDR en een NTC als sensor in een spanningsdeler en legt uit hoe een diode en een led werken, met drempelspanning en voorschakelweerstand.",
+      "ceStatus": "CE",
+      "binas": "35D",
+      "val": "",
       "onderwerpen": [
-       "Geleiders en isolatoren",
-       "Vrije elektronen",
+       "Geleiders, isolatoren en halfgeleiders",
+       "Vrije ladingdragers",
        "Ohms versus niet-ohms",
        "LDR: lichtsensor",
        "NTC: temperatuursensor",
-       "Diode en stroomrichting"
+       "Diode en led"
       ],
-      "sam": "Stoffen verschillen in hoe goed ze stroom doorlaten. Een geleider laat stroom goed door; metalen zoals koper en ijzer zijn goede geleiders doordat ze veel vrije elektronen hebben die kunnen bewegen. Een isolator laat stroom bijna niet door; glas, rubber en droog hout hebben nauwelijks vrije elektronen. Water met opgeloste zouten geleidt wel, want de ionen dragen de lading. Sommige onderdelen hebben een vaste weerstand: die heten ohms, en hun (U,I)-grafiek is een rechte lijn door de oorsprong. Andere onderdelen zijn niet-ohms: hun weerstand verandert. Bij een gloeilamp stijgt de weerstand als de gloeidraad heter wordt, dus de grafiek buigt. Een LDR is een lichtafhankelijke weerstand: meer licht geeft minder weerstand, handig als lichtsensor voor bijvoorbeeld straatverlichting. Een NTC is een temperatuurafhankelijke weerstand: warmer geeft minder weerstand, handig als temperatuursensor. Een diode laat de stroom maar in één richting door (de doorlaatrichting) en blokkeert de andere richting (de sperrichting); daarmee kun je de stroomrichting sturen.",
+      "sam": "Geleider: veel vrije ladingdragers (metaal: elektronen, vloeistof: ionen); isolator: geen; halfgeleider (silicium) ertussen, reageert op licht en warmte. Metaal warmer: meer R. Ohms: rechte lijn door 0; niet ohms: krom. LDR: meer licht, kleinere R; NTC: warmer, kleinere R; in een spanningsdeler krijgt de grootste R de meeste spanning. Diode: één richting (doorlaat/sper); led: diode met licht, drempelspanning ~2 V, voorschakelweerstand nodig.",
       "begrippen": [
        {
         "t": "Geleider",
-        "d": "een stof die elektrische stroom goed doorlaat, zoals metaal"
+        "d": "Stof met veel vrije ladingdragers, zoals een metaal."
        },
        {
         "t": "Isolator",
-        "d": "een stof die stroom bijna niet doorlaat, zoals glas, rubber en droog hout"
+        "d": "Stof zonder vrije ladingdragers, zoals kunststof of glas."
        },
        {
-        "t": "Vrije elektronen",
-        "d": "losse elektronen in een metaal die de stroom kunnen dragen"
+        "t": "Halfgeleider",
+        "d": "Stof tussen geleider en isolator in, zoals silicium; de weerstand reageert sterk op licht en warmte."
        },
        {
-        "t": "Ohmse weerstand",
-        "d": "een onderdeel met een vaste weerstand; U en I zijn recht evenredig"
+        "t": "Vrije ladingdragers",
+        "d": "Geladen deeltjes die kunnen bewegen: vrije elektronen in metalen, ionen in vloeistoffen."
        },
        {
-        "t": "Niet-ohmse weerstand",
-        "d": "een onderdeel waarvan de weerstand verandert, zoals een gloeilamp"
-       },
-       {
-        "t": "LDR",
-        "d": "lichtafhankelijke weerstand; meer licht geeft minder weerstand"
-       },
-       {
-        "t": "NTC",
-        "d": "temperatuurafhankelijke weerstand; hogere temperatuur geeft minder weerstand"
-       },
-       {
-        "t": "Diode",
-        "d": "onderdeel dat de stroom maar één richting doorlaat en de andere blokkeert"
-       },
-       {
-        "t": "Sperrichting",
-        "d": "de richting waarin een diode de stroom tegenhoudt"
-       },
-       {
-        "t": "Doorlaatrichting",
-        "d": "de richting waarin een diode de stroom wel doorlaat"
-       },
-       {
-        "t": "Gloeidraad",
-        "d": "de dunne draad in een gloeilamp die heet wordt; de weerstand stijgt daarbij"
+        "t": "Ionen",
+        "d": "Geladen deeltjes die in zout water de stroom vormen."
        },
        {
         "t": "Sensor",
-        "d": "een onderdeel zoals een LDR of NTC dat op licht of warmte reageert"
+        "d": "Onderdeel dat een grootheid zoals licht of temperatuur omzet in een meetbare verandering."
+       },
+       {
+        "t": "LDR-weerstand",
+        "d": "Lichtgevoelige weerstand: meer licht geeft een kleinere weerstand."
+       },
+       {
+        "t": "NTC-weerstand",
+        "d": "Temperatuurgevoelige weerstand: warmer geeft een kleinere weerstand."
+       },
+       {
+        "t": "Diode",
+        "d": "Onderdeel dat stroom maar in één richting doorlaat."
+       },
+       {
+        "t": "Doorlaatrichting",
+        "d": "Richting waarin een diode de stroom doorlaat; tegengesteld is de sperrichting."
+       },
+       {
+        "t": "Drempelspanning",
+        "d": "Spanning waarboven een diode of led pas stroom doorlaat."
        }
       ],
       "sv": [
        {
-        "v": "Wat is een geleider?",
+        "v": "Wat is een halfgeleider?",
         "o": [
-         "Een stof die stroom goed doorlaat",
-         "Een stof die de stroom vrijwel volledig tegenhoudt en isoleert",
-         "Een stof waarin nooit enige lading aanwezig kan zijn",
-         "Een stof die alleen warmte maar geen stroom kan doorlaten"
-        ],
-        "c": 0,
-        "d": 1,
-        "u": "Een geleider laat stroom goed door; in een metaal door de vrije elektronen.",
-        "uo": [
-         "Klopt: een geleider laat stroom goed door.",
-         "Stroom tegenhouden hoort bij een isolator.",
-         "Ook geleiders bevatten lading.",
-         "Geleiders laten juist stroom door."
-        ],
-        "uh": "Geleider = laat stroom goed door."
-       },
-       {
-        "v": "Wat is een isolator?",
-        "o": [
-         "Een stof die de stroom juist heel goed doorlaat, zoals metaal",
-         "Een stof die stroom bijna niet doorlaat",
-         "Een stof die de stroom versnelt op weg naar het apparaat",
-         "Een stof die de spanning van de bron flink verhoogt"
-        ],
-        "c": 1,
-        "d": 1,
-        "u": "Een isolator laat stroom bijna niet door; er zijn nauwelijks vrije elektronen.",
-        "uo": [
-         "Goed doorlaten hoort bij een geleider.",
-         "Klopt: een isolator houdt de stroom tegen.",
-         "Een isolator versnelt niets.",
-         "Een isolator verhoogt de spanning niet."
-        ],
-        "uh": "Isolator = houdt stroom tegen."
-       },
-       {
-        "v": "Welke stof is een goede geleider?",
-        "o": [
-         "Glas, dat je juist gebruikt om iets goed te isoleren",
-         "Rubber, waarmee draden aan de buitenkant worden bekleed",
-         "IJzer",
-         "Droge lucht, die de stroom vrijwel niet doorlaat"
+         "een metaal dat de helft van de stroom tegenhoudt",
+         "een draad die maar half zo dik is",
+         "een stof die tussen geleider en isolator in zit",
+         "een isolator die alleen bij wisselstroom geleidt"
         ],
         "c": 2,
         "d": 1,
-        "u": "Metalen zoals ijzer en koper geleiden goed; glas, rubber en lucht isoleren.",
+        "s": 0,
+        "u": "Halfgeleider: geleidt matig, afhankelijk van omstandigheden.",
         "uo": [
-         "Glas is een isolator.",
-         "Rubber isoleert.",
-         "Klopt: ijzer is een metaal en geleidt goed.",
-         "Droge lucht geleidt bijna niet."
+         "Koos je een metaal dat de helft tegenhoudt? Metalen zijn goede geleiders. Halfgeleiders zijn andere stoffen, zoals silicium en germanium.",
+         "Koos je een halve draad? Dikte heeft niets met het begrip halfgeleider te maken. Het gaat om het materiaal en hoeveel vrije ladingen het heeft.",
+         "Klopt: een halfgeleider, zoals silicium, geleidt slechter dan een metaal maar beter dan een isolator. Hoe goed hij geleidt, hangt sterk af van temperatuur, licht en toegevoegde stoffen. Daarom worden sensoren en chips ervan gemaakt.",
+         "Koos je alleen bij wisselstroom? Een halfgeleider geleidt bij gelijkstroom en wisselstroom. Hoe goed hangt af van temperatuur, licht en de samenstelling."
         ],
-        "uh": "Metalen (ijzer, koper) geleiden goed."
+        "uh": "Tussen geleider en isolator."
        },
        {
-        "v": "Waarom geleiden metalen zo goed?",
+        "v": "Waarom worden sensoren van halfgeleiders gemaakt en niet van koper?",
         "o": [
-         "Ze hebben helemaal geen deeltjes die kunnen bewegen",
-         "Ze bestaan volledig uit positieve lading zonder elektronen",
-         "Ze houden alle lading stevig op één vaste plaats vast",
-         "Ze hebben vrije elektronen"
+         "koper geleidt helemaal geen stroom",
+         "de weerstand reageert sterk op licht of warmte",
+         "halfgeleiders zijn altijd veel goedkoper dan koper",
+         "een halfgeleider levert zelf spanning"
         ],
-        "c": 3,
+        "c": 1,
         "d": 2,
-        "u": "In een metaal kunnen de vrije elektronen makkelijk bewegen; die dragen de stroom.",
+        "s": 0,
+        "u": "Sterke reactie op de omgeving.",
         "uo": [
-         "Er zijn juist wel bewegende deeltjes.",
-         "Metalen hebben ook elektronen.",
-         "De vrije elektronen zitten juist niet vast.",
-         "Klopt: vrije elektronen maken geleiding mogelijk."
+         "Koos je dat koper niet geleidt? Koper geleidt juist heel goed. Het probleem is dat zijn weerstand bijna niet reageert op licht of temperatuur.",
+         "Klopt: bij een halfgeleider maakt licht of warmte extra ladingen vrij, waardoor de weerstand sterk verandert. Die verandering kun je meten. De weerstand van koper verandert nauwelijks, dus koper is geen goede sensor.",
+         "Koos je altijd goedkoper? De prijs is niet de reden. Het gaat erom dat de weerstand duidelijk verandert, zodat je er iets mee kunt meten.",
+         "Koos je zelf spanning leveren? Een LDR of NTC levert geen spanning; je moet er een spanning op zetten en de stroom of spanning meten."
         ],
-        "uh": "Metaal geleidt door vrije elektronen."
+        "uh": "Weerstand reageert sterk."
        },
        {
-        "v": "Wat is een niet-ohmse weerstand?",
+        "v": "Wat zijn in een metaal de vrije ladingdragers?",
         "o": [
-         "Een onderdeel waarvan R verandert",
-         "Een onderdeel met een weerstand die altijd precies gelijk blijft",
-         "Een onderdeel dat helemaal geen stroom kan doorlaten",
-         "Een onderdeel zonder enige weerstand, dus altijd nul ohm"
+         "elektronen",
+         "protonen",
+         "neutronen",
+         "atoomkernen"
         ],
         "c": 0,
         "d": 1,
-        "u": "Bij een niet-ohmse weerstand is R niet constant; die hangt af van bijvoorbeeld temperatuur of licht.",
+        "s": 1,
+        "u": "Metaal: vrije elektronen.",
         "uo": [
-         "Klopt: bij niet-ohms verandert de weerstand.",
-         "Een gelijkblijvende R hoort juist bij ohms.",
-         "Het onderdeel laat wel stroom door.",
-         "De weerstand is niet altijd nul."
+         "Klopt: in een metaal zitten de buitenste elektronen niet vast aan één atoom. Die vrije elektronen kunnen door het metaal bewegen en vormen de stroom.",
+         "Koos je protonen? Die zitten vast in de atoomkernen en kunnen niet door het metaal bewegen. In een metaal bewegen alleen de elektronen.",
+         "Koos je neutronen? Neutronen hebben geen lading, dus ze kunnen nooit een elektrische stroom vormen. Ze zitten bovendien vast in de kern.",
+         "Koos je atoomkernen? De atoomresten zitten vast in het metaalrooster en trillen alleen. Wat beweegt, zijn de vrije elektronen."
         ],
-        "uh": "Niet-ohms = R verandert."
+        "uh": "Vrije elektronen."
        },
        {
-        "v": "Wat gebeurt met de weerstand van een gloeilampje als het heter wordt?",
+        "v": "Waarom geleidt zout water wel en gedestilleerd water bijna niet?",
         "o": [
-         "De weerstand wordt juist kleiner naarmate het lampje heter wordt",
-         "De weerstand wordt groter",
-         "De weerstand blijft precies gelijk, de temperatuur doet niets",
-         "De weerstand wordt onmiddellijk nul zodra het lampje opwarmt"
+         "gedestilleerd water bevat geen moleculen",
+         "zout water bevat meer elektronen dan zuiver water",
+         "zout maakt het water warmer, en warm water geleidt",
+         "zout water bevat vrije ionen"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 1,
+        "u": "Ionen als ladingdragers.",
+        "uo": [
+         "Koos je geen moleculen? Gedestilleerd water bestaat gewoon uit watermoleculen. Die hebben geen netto lading en vormen daarom geen stroom.",
+         "Koos je meer elektronen? In een vloeistof bewegen geen losse elektronen. De ladingdragers zijn de ionen van het opgeloste zout.",
+         "Koos je warmer water? Zout maakt water niet warmer. Het verschil komt door de ionen die het zout oplevert.",
+         "Klopt: opgelost zout valt uiteen in positieve en negatieve ionen. Die kunnen door het water bewegen en een stroom vormen. In zuiver water zijn er bijna geen ionen."
+        ],
+        "uh": "Ionen bewegen."
+       },
+       {
+        "v": "Waarom neemt de weerstand van een metalen draad toe als hij warmer wordt?",
+        "o": [
+         "warmte maakt de draad dunner",
+         "er komen minder vrije elektronen in het metaal",
+         "de atomen trillen harder, dus meer botsingen",
+         "de spanning over de draad wordt kleiner"
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 1,
+        "u": "Meer botsingen bij hogere temperatuur.",
+        "uo": [
+         "Koos je dunner? Een draad zet juist een heel klein beetje uit bij verwarmen. Dat effect is veel te klein om de weerstandstoename te verklaren.",
+         "Koos je minder vrije elektronen? In een metaal blijft het aantal vrije elektronen vrijwel gelijk. Ze worden alleen vaker afgeremd.",
+         "Klopt: bij een hogere temperatuur trillen de atoomresten in het metaal harder. De vrije elektronen botsen er vaker tegenaan en worden meer afgeremd. Daardoor neemt de weerstand toe.",
+         "Koos je kleinere spanning? De spanning bepaal je zelf met de bron. De weerstand verandert door wat er in het metaal gebeurt."
+        ],
+        "uh": "Harder trillende atomen.",
+        "ctx": "Een leerling meet de weerstand van een gloeidraad. Koud, bij kamertemperatuur, is die 35 Ω. Als de lamp brandt en de draad 2500 °C is, berekent hij uit spanning en stroom een weerstand van ongeveer 480 Ω. Hij vraagt zich af waar dat grote verschil vandaan komt."
+       },
+       {
+        "v": "Welk onderdeel heeft een constante weerstand bij verschillende spanningen?",
+        "o": [
+         "een LDR in wisselend licht",
+         "een ohmse weerstand",
+         "een gloeilamp",
+         "een diode"
         ],
         "c": 1,
-        "d": 2,
-        "u": "Bij een gloeidraad neemt de weerstand toe met de temperatuur: het is niet-ohms.",
+        "d": 1,
+        "s": 2,
+        "u": "Ohms = constante R.",
         "uo": [
-         "De weerstand daalt niet bij een gloeilamp.",
-         "Klopt: heter geeft meer weerstand.",
-         "De temperatuur heeft wel effect.",
-         "De weerstand wordt niet nul."
+         "Koos je een LDR in wisselend licht? De weerstand van een LDR hangt sterk af van de hoeveelheid licht. Die is dus niet constant.",
+         "Klopt: een ohmse weerstand heeft bij elke spanning dezelfde weerstand. De stroom is dan recht evenredig met de spanning.",
+         "Koos je een gloeilamp? Die wordt heter bij een grotere spanning en krijgt dan meer weerstand. Een gloeilamp is niet ohms.",
+         "Koos je een diode? Een diode laat in de ene richting bijna geen stroom door en in de andere richting heel veel. Dat is zeker niet ohms."
         ],
-        "uh": "Gloeidraad heter -> grotere R."
+        "uh": "Ohmse weerstand."
        },
        {
-        "v": "Wat is een LDR?",
+        "v": "Hoe zie je in een (I,U)-grafiek dat een onderdeel niet ohms is?",
         "o": [
-         "Een weerstand die alleen van de temperatuur afhangt en niets anders",
-         "Een bron die zelf spanning levert zoals een batterij dat doet",
-         "Een weerstand die afhangt van licht",
-         "Een schakelaar die je met de hand open en dicht zet"
+         "geen rechte lijn door de oorsprong",
+         "de lijn begint niet bij nul volt maar ergens hoger",
+         "de lijn is heel steil",
+         "de lijn loopt van links naar rechts"
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 2,
+        "u": "Geen rechte lijn door 0.",
+        "uo": [
+         "Klopt: bij een ohms onderdeel is de stroom recht evenredig met de spanning, dus een rechte lijn door de oorsprong. Is de lijn krom, of gaat hij niet door de oorsprong, dan verandert de weerstand.",
+         "Koos je niet bij nul volt? Elke grafiek van een passief onderdeel begint bij U = 0 en I = 0. Het gaat om de vorm daarna.",
+         "Koos je heel steil? Een steile rechte lijn hoort bij een kleine, maar wel constante weerstand. Steilheid zegt niets over ohms of niet.",
+         "Koos je van links naar rechts? Elke grafiek loopt van links naar rechts. Kijk of het een rechte lijn door de oorsprong is."
+        ],
+        "uh": "Krom = niet ohms."
+       },
+       {
+        "v": "Wat gebeurt er met de weerstand van een LDR als er meer licht op valt?",
+        "o": [
+         "die wordt oneindig groot",
+         "die neemt toe",
+         "die blijft gelijk",
+         "die neemt af"
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 3,
+        "u": "LDR: meer licht, minder weerstand.",
+        "uo": [
+         "Koos je oneindig groot? In het donker is de weerstand groot, maar niet oneindig. In licht wordt hij juist klein.",
+         "Koos je toenemen? Het is andersom: in het donker is de weerstand groot, in fel licht klein.",
+         "Koos je gelijk? Dan zou het geen lichtsensor zijn. De weerstand van een LDR verandert juist sterk met het licht.",
+         "Klopt: LDR staat voor light dependent resistor. Licht maakt in de halfgeleider extra ladingen vrij, dus hoe meer licht, hoe kleiner de weerstand."
+        ],
+        "uh": "Licht: kleinere R."
+       },
+       {
+        "v": "Een LDR heeft in het donker 100 kΩ en in fel licht 200 Ω. Hoe groot is de stroom bij fel licht op 5,0 V?",
+        "o": [
+         "1,0 A",
+         "50 μA",
+         "25 mA",
+         "0,40 mA"
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 3,
+        "u": "I = U / R = 5,0 / 200.",
+        "uo": [
+         "Koos je 1,0 A? Dan heb je met 5 Ω gerekend. De weerstand bij fel licht is 200 Ω.",
+         "Koos je 50 μA? Dat is de stroom in het donker, bij 100 kΩ. Bij fel licht is de weerstand veel kleiner, dus de stroom veel groter.",
+         "Klopt: I = U / R = 5,0 / 200 = 0,025 A = 25 mA. In het donker zou het maar 5,0 / 100 000 = 50 μA zijn.",
+         "Koos je 0,40 mA? Dan heb je 200 door 5,0 gedeeld en de eenheid verkeerd gezet. I = U / R = 5,0 / 200."
+        ],
+        "uh": "I = U / R."
+       },
+       {
+        "v": "Wat gebeurt er met de spanning over de LDR in de lichtschakeling als het donker wordt?",
+        "o": [
+         "die wordt kleiner",
+         "die wordt groter",
+         "die blijft 2,5 V",
+         "die wordt nul"
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 3,
+        "u": "Spanningsdeler: grotere R krijgt meer spanning.",
+        "uo": [
+         "Koos je kleiner? Dat gebeurt als het lichter wordt: dan neemt de weerstand van de LDR af en krijgt hij een kleiner deel van de spanning.",
+         "Klopt: de LDR staat in serie met een vaste weerstand. In het donker wordt de weerstand van de LDR veel groter, en in een spanningsdeler krijgt de grootste weerstand het grootste deel van de spanning. Die stijgende spanning zet de straatlamp aan.",
+         "Koos je 2,5 V? Dat zou alleen gelden als de LDR precies even groot is als de vaste weerstand. In het donker is hij veel groter.",
+         "Koos je nul? De LDR wordt in het donker juist een grote weerstand. Dan staat er bijna de hele spanning over."
+        ],
+        "uh": "Grotere R, meer spanning.",
+        "ctx": "In een automatische straatlamp staat een LDR in serie met een vaste weerstand van 10 kΩ op een spanning van 5,0 V. Een schakeling meet de spanning over de LDR en zet de lamp aan zodra die spanning boven de 3,0 V komt. Overdag heeft de LDR een weerstand van ongeveer 1 kΩ."
+       },
+       {
+        "v": "Waarvoor gebruik je een NTC?",
+        "o": [
+         "als temperatuursensor",
+         "als lichtsensor",
+         "om de stroom één richting te laten gaan",
+         "om een spanning op te wekken"
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 4,
+        "u": "NTC reageert op temperatuur.",
+        "uo": [
+         "Klopt: de weerstand van een NTC wordt kleiner als hij warmer wordt. Door die weerstand te meten, weet je de temperatuur. Je vindt NTC's in thermostaten, koortsthermometers en accu's.",
+         "Koos je lichtsensor? Daarvoor gebruik je een LDR. Een NTC reageert op temperatuur, niet op licht.",
+         "Koos je één richting? Dat doet een diode. Een NTC laat in beide richtingen stroom door.",
+         "Koos je spanning opwekken? Een NTC wekt geen spanning op. Je zet er spanning op en meet hoe de weerstand verandert."
+        ],
+        "uh": "Temperatuursensor."
+       },
+       {
+        "v": "Een NTC staat in serie met een lampje op een batterij. Wat gebeurt er als je de NTC opwarmt?",
+        "o": [
+         "er verandert niets",
+         "het lampje gaat minder fel branden",
+         "het lampje gaat uit",
+         "het lampje gaat feller branden"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 4,
+        "u": "Warmer: kleinere R, meer stroom.",
+        "uo": [
+         "Koos je niets? De weerstand van een NTC hangt duidelijk af van de temperatuur. Opwarmen verandert de stroom dus wel.",
+         "Koos je minder fel? Dat zou gebeuren bij een metalen draad, die warmer meer weerstand krijgt. Een NTC doet het omgekeerde.",
+         "Koos je uit? Een NTC wordt bij verwarmen juist beter geleidend. Het lampje gaat niet uit maar brandt feller.",
+         "Klopt: als de NTC warmer wordt, neemt zijn weerstand af. De totale weerstand in de kring wordt kleiner, er gaat meer stroom en het lampje brandt feller."
+        ],
+        "uh": "NTC warm: meer stroom."
+       },
+       {
+        "v": "Welke temperatuur heeft de vloeistof volgens de meting met de NTC?",
+        "o": [
+         "ongeveer 60 °C",
+         "ongeveer 20 °C",
+         "ongeveer 40 °C",
+         "ongeveer 80 °C"
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 4,
+        "u": "R = U / I = 6,0 / 0,0012 = 5,0 kΩ; aflezen in de tabel.",
+        "uo": [
+         "Koos je 60 °C? Bij 60 °C hoort 2,4 kΩ. De gemeten weerstand is groter, dus de temperatuur is lager.",
+         "Koos je 20 °C? Bij 20 °C is de weerstand 12 kΩ. De gemeten weerstand van 5,0 kΩ is kleiner, dus de vloeistof is warmer.",
+         "Klopt: R = U / I = 6,0 V / 1,2 mA = 6,0 / 0,0012 = 5000 Ω = 5,0 kΩ. Volgens de ijkgegevens hoort 5,0 kΩ bij ongeveer 40 °C.",
+         "Koos je 80 °C? Bij 80 °C is de weerstand nog maar 1,3 kΩ. Reken eerst R = U / I uit en zoek die waarde op."
+        ],
+        "uh": "Eerst R, dan aflezen.",
+        "ctx": "Een leerling gebruikt een NTC als thermometer. De ijkgegevens zijn: 20 °C: 12 kΩ, 40 °C: 5,0 kΩ, 60 °C: 2,4 kΩ, 80 °C: 1,3 kΩ. Ze zet 6,0 V over de NTC in een bekerglas met vloeistof en meet een stroom van 1,2 mA."
+       },
+       {
+        "v": "Wat doet een diode in een schakeling?",
+        "o": [
+         "hij versterkt de stroom",
+         "hij laat de stroom maar in één richting door",
+         "hij slaat lading op zoals een accu",
+         "hij maakt van gelijkstroom wisselstroom"
+        ],
+        "c": 1,
+        "d": 1,
+        "s": 5,
+        "u": "Diode: eenrichtingsverkeer.",
+        "uo": [
+         "Koos je versterken? Een diode versterkt niets. Hij bepaalt alleen in welke richting de stroom mag lopen.",
+         "Klopt: een diode laat stroom in de doorlaatrichting bijna ongehinderd door en houdt stroom in de andere richting, de sperrichting, tegen.",
+         "Koos je lading opslaan? Dat doet een condensator of accu. Een diode laat stroom door of houdt hem tegen.",
+         "Koos je gelijk naar wissel? Een diode doet eerder het omgekeerde: hij kan van wisselstroom een stroom in één richting maken."
+        ],
+        "uh": "Eén richting."
+       },
+       {
+        "v": "Waarom gaat een led niet branden als je hem andersom op de batterij aansluit?",
+        "o": [
+         "een led is een diode en spert in die richting",
+         "de batterij levert dan wisselstroom",
+         "een led werkt alleen op hoge spanning",
+         "de led raakt dan meteen kapot"
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 5,
+        "u": "Led = lichtgevende diode.",
+        "uo": [
+         "Klopt: een led is een light emitting diode. Net als een gewone diode laat hij de stroom maar in één richting door. Andersom aangesloten staat hij in de sperrichting: er loopt geen stroom en hij geeft geen licht.",
+         "Koos je wisselstroom? Een batterij levert altijd gelijkstroom, hoe je hem ook aansluit. Het gaat om de richting door de led.",
+         "Koos je hoge spanning? Een led werkt op een paar volt. Het probleem is de richting, niet de grootte van de spanning.",
+         "Koos je meteen kapot? Bij een lage spanning in de sperrichting gebeurt er niets; draai je hem om, dan brandt hij gewoon."
+        ],
+        "uh": "Led spert."
+       },
+       {
+        "v": "Waarom moet er een voorschakelweerstand bij de led, en hoe groot moet die zijn?",
+        "o": [
+         "om de led te laten knipperen; 170 Ω",
+         "om de spanning te verhogen; 120 Ω",
+         "om de stroom te beperken; 50 Ω",
+         "om de stroom te beperken; 120 Ω"
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 5,
+        "u": "Over de weerstand staat 12 − 2,4 = 9,6 V; R = 9,6 / 0,080.",
+        "uo": [
+         "Koos je knipperen en 170 Ω? Een gewone weerstand laat een led niet knipperen. En 170 Ω geeft een te kleine stroom; de juiste waarde is 120 Ω.",
+         "Koos je spanning verhogen? Een weerstand in serie verhoogt de spanning niet; hij neemt juist een deel van de spanning over, zodat de stroom beperkt blijft.",
+         "Koos je 50 Ω? Dan heb je met een andere stroom of spanning gerekend. Over de weerstand staat 9,6 V en de stroom is 0,080 A.",
+         "Klopt: een led heeft boven zijn drempelspanning nauwelijks weerstand, dus zonder weerstand wordt de stroom veel te groot. Over de weerstand moet 12 − 2,4 = 9,6 V staan bij 80 mA: R = 9,6 / 0,080 = 120 Ω."
+        ],
+        "uh": "Stroom beperken.",
+        "ctx": "In een fietslamp zit een witte led die werkt bij 2,4 V en een stroom van 80 mA. De lamp wordt gevoed door een accu van 12 V. In serie met de led zit een voorschakelweerstand."
+       },
+       {
+        "v": "Welke stof is een halfgeleider?",
+        "o": [
+         "natuurrubber",
+         "koper",
+         "silicium",
+         "zilver"
         ],
         "c": 2,
         "d": 1,
-        "u": "Een LDR is een lichtgevoelige weerstand: meer licht geeft minder weerstand.",
+        "s": 0,
+        "u": "Silicium: basis van chips en sensoren.",
         "uo": [
-         "Op temperatuur reageert juist de NTC.",
-         "Een LDR levert zelf geen spanning.",
-         "Klopt: een LDR reageert op licht.",
-         "Een LDR is geen handschakelaar."
+         "Koos je rubber? Rubber is een isolator: het heeft geen vrije ladingen. Daarom wordt het gebruikt om draden af te schermen.",
+         "Koos je koper? Koper is een metaal en een heel goede geleider. Het heeft veel vrije elektronen, ook bij lage temperatuur.",
+         "Klopt: silicium is de bekendste halfgeleider. Chips, zonnecellen, diodes en veel sensoren zijn ervan gemaakt.",
+         "Koos je zilver? Zilver is zelfs de beste metalen geleider die er is. Een halfgeleider geleidt veel slechter dan een metaal."
         ],
-        "uh": "LDR = lichtafhankelijke weerstand."
+        "uh": "Silicium."
        },
        {
-        "v": "Wat gebeurt met de weerstand van een LDR als er meer licht op valt?",
+        "v": "Welk materiaal kies je voor de ophanging van hoogspanningsdraden aan een mast?",
         "o": [
-         "De weerstand wordt juist groter naarmate er meer licht op valt",
-         "De weerstand blijft precies gelijk, licht heeft geen invloed",
-         "De weerstand wordt oneindig groot zodra er licht op valt",
-         "De weerstand wordt kleiner"
-        ],
-        "c": 3,
-        "d": 2,
-        "u": "Bij een LDR geldt: meer licht geeft minder weerstand.",
-        "uo": [
-         "Meer licht geeft juist minder weerstand.",
-         "Licht heeft wel invloed op een LDR.",
-         "De weerstand wordt niet oneindig.",
-         "Klopt: meer licht -> kleinere weerstand."
-        ],
-        "uh": "LDR: meer licht -> minder R."
-       },
-       {
-        "v": "Wat is een NTC?",
-        "o": [
-         "Een weerstand die afhangt van temperatuur",
-         "Een weerstand die alleen op licht reageert en niet op warmte",
-         "Een lamp die alleen bij een lage temperatuur licht geeft",
-         "Een meter waarmee je de spanning van de bron afleest"
-        ],
-        "c": 0,
-        "d": 1,
-        "u": "Een NTC is een temperatuurgevoelige weerstand: warmer geeft minder weerstand.",
-        "uo": [
-         "Klopt: een NTC reageert op temperatuur.",
-         "Op licht reageert juist de LDR.",
-         "Een NTC is geen lamp.",
-         "Een NTC is geen spanningsmeter."
-        ],
-        "uh": "NTC = temperatuurafhankelijke weerstand."
-       },
-       {
-        "v": "Wat gebeurt met de weerstand van een NTC als het warmer wordt?",
-        "o": [
-         "De weerstand wordt juist groter naarmate het warmer wordt",
-         "De weerstand wordt kleiner",
-         "De weerstand blijft precies gelijk, warmte doet er niets toe",
-         "De weerstand wordt onmiddellijk oneindig groot bij warmte"
+         "koper",
+         "glas of porselein",
+         "aluminium",
+         "zout water in een buis"
         ],
         "c": 1,
         "d": 2,
-        "u": "Bij een NTC geldt: hogere temperatuur geeft lagere weerstand.",
+        "s": 0,
+        "u": "Isolator tussen draad en mast.",
         "uo": [
-         "Warmer geeft juist minder weerstand bij een NTC.",
-         "Klopt: warmer -> kleinere weerstand.",
-         "Warmte heeft wel invloed.",
-         "De weerstand wordt niet oneindig."
+         "Koos je koper? Koper geleidt heel goed. Dan zou de stroom via de mast naar de grond lopen, met kortsluiting en gevaar tot gevolg.",
+         "Klopt: tussen de draad en de metalen mast mag geen stroom lopen. Glas en porselein zijn goede isolatoren die ook tegen weer en hoge spanning kunnen. Daarom hangen de draden aan lange kettingen van glazen of porseleinen schijven.",
+         "Koos je aluminium? Aluminium is een geleider; de draden zelf zijn er vaak van gemaakt. Voor de ophanging heb je juist een isolator nodig.",
+         "Koos je zout water? Zout water geleidt door de vrije ionen. Dat is precies wat je bij een ophanging niet wilt."
         ],
-        "uh": "NTC: warmer -> minder R."
+        "uh": "Isolator nodig."
        },
        {
-        "v": "Wat is een diode?",
+        "v": "Waarom kun je met een potloodstreep op papier een lampje laten branden?",
         "o": [
-         "Een onderdeel dat stroom altijd twee kanten op laat gaan",
-         "Een bron die zelf spanning opwekt zoals een accu",
-         "Een onderdeel dat stroom maar één kant op laat",
-         "Een weerstand die precies gelijk blijft bij elke spanning"
-        ],
-        "c": 2,
-        "d": 1,
-        "u": "Een diode laat de stroom maar één richting door en blokkeert de andere richting.",
-        "uo": [
-         "Twee kanten op hoort bij een gewone draad.",
-         "Een diode levert geen spanning.",
-         "Klopt: een diode laat stroom maar één kant op.",
-         "Een diode is geen gewone ohmse weerstand."
-        ],
-        "uh": "Diode = stroom maar één richting."
-       },
-       {
-        "v": "Een diode is verkeerd om aangesloten. Wat gebeurt er met de stroom?",
-        "o": [
-         "Er loopt juist een extra grote stroom door de diode heen",
-         "Er loopt gewoon dezelfde stroom als bij de goede richting",
-         "De diode verhoogt de spanning van de bron flink",
-         "Er loopt (bijna) geen stroom"
-        ],
-        "c": 3,
-        "d": 2,
-        "u": "In de sperrichting blokkeert de diode: er loopt vrijwel geen stroom.",
-        "uo": [
-         "Er loopt juist geen grote stroom.",
-         "De stroom is niet hetzelfde als in de goede richting.",
-         "Een diode verhoogt de spanning niet.",
-         "Klopt: in de sperrichting geen stroom."
-        ],
-        "uh": "Diode verkeerd om = geen stroom."
-       },
-       {
-        "v": "Waarom is de (U,I)-grafiek van een gloeilamp geen rechte lijn?",
-        "o": [
-         "De weerstand verandert bij opwarmen",
-         "Omdat er nooit stroom door een lampje heen loopt",
-         "Omdat de spanning van de bron voortdurend verspringt",
-         "Omdat een lampje altijd een vaste, constante weerstand heeft"
-        ],
-        "c": 0,
-        "d": 3,
-        "u": "De weerstand van de gloeidraad stijgt bij opwarmen, dus U en I zijn niet recht evenredig.",
-        "uo": [
-         "Klopt: de veranderende R buigt de grafiek.",
-         "Er loopt wel stroom door het lampje.",
-         "De bronspanning verspringt niet zomaar.",
-         "De weerstand is juist niet constant."
-        ],
-        "uh": "Veranderende R -> kromme (U,I)-lijn."
-       },
-       {
-        "v": "Waar gebruik je een LDR handig voor?",
-        "o": [
-         "Een verwarming die alleen op de watertemperatuur reageert",
-         "Een lamp die vanzelf aangaat in het donker",
-         "Een klok die de tijd bijhoudt zonder naar het licht te kijken",
-         "Een zekering die smelt bij een veel te grote stroom"
-        ],
-        "c": 1,
-        "d": 3,
-        "u": "Een LDR meet licht; daarmee kun je een lamp bij donker automatisch laten aangaan.",
-        "uo": [
-         "Op temperatuur reageren doet een NTC.",
-         "Klopt: een LDR schakelt op licht, bijvoorbeeld straatverlichting.",
-         "Een klok gebruikt geen LDR.",
-         "Smelten bij grote stroom doet een zekering."
-        ],
-        "uh": "LDR -> lichtsensor (donkerschakeling)."
-       },
-       {
-        "v": "Waar gebruik je een NTC handig voor?",
-        "o": [
-         "Een lichtsensor die de straatlamp bij donker aanzet",
-         "Een diode die de stroom maar één kant op laat gaan",
-         "Een thermometer of temperatuurschakeling",
-         "Een schakelaar die je met de hand bedient"
-        ],
-        "c": 2,
-        "d": 3,
-        "u": "Een NTC reageert op temperatuur; zo meet of schakel je op warmte.",
-        "uo": [
-         "Op licht reageren doet een LDR.",
-         "Een diode heeft een andere functie.",
-         "Klopt: een NTC werkt als temperatuursensor.",
-         "Een NTC is geen handschakelaar."
-        ],
-        "uh": "NTC -> temperatuursensor."
-       },
-       {
-        "v": "Waarom kun je met een diode wisselstroom deels \"gelijkrichten\"?",
-        "o": [
-         "Omdat hij de stroom in beide richtingen even sterk doorlaat",
-         "Omdat hij zelf extra spanning aan de kring toevoegt",
-         "Omdat hij de stroom in het lampje volledig opslaat",
-         "Hij laat maar één richting door"
-        ],
-        "c": 3,
-        "d": 3,
-        "u": "Een diode blokkeert één richting, dus van wisselstroom blijft één kant over.",
-        "uo": [
-         "Hij laat juist niet beide richtingen door.",
-         "Een diode voegt geen spanning toe.",
-         "Een diode slaat geen stroom op.",
-         "Klopt: hij laat maar één richting door."
-        ],
-        "uh": "Diode richt gelijk: één richting door."
-       },
-       {
-        "v": "Een leerling denkt dat een NTC en een LDR hetzelfde zijn. Wat is het verschil?",
-        "o": [
-         "NTC reageert op warmte, LDR op licht",
-         "Er is geen verschil, het zijn twee namen voor precies hetzelfde",
-         "NTC reageert op licht en de LDR juist op de temperatuur",
-         "Beide reageren alleen op de spanning van de bron"
-        ],
-        "c": 0,
-        "d": 3,
-        "u": "Een NTC verandert met temperatuur, een LDR met licht; ze meten iets anders.",
-        "uo": [
-         "Klopt: NTC = warmte, LDR = licht.",
-         "Ze zijn niet hetzelfde.",
-         "Het is precies andersom verwisseld.",
-         "Ze reageren niet op de spanning."
-        ],
-        "uh": "NTC = warmte, LDR = licht."
-       },
-       {
-        "v": "Waarom werkt een aanraakbare metalen behuizing gevaarlijk als er een draad losraakt?",
-        "o": [
-         "Omdat metaal een isolator is die alle stroom tegenhoudt",
-         "Metaal geleidt de spanning naar je hand",
-         "Omdat metaal de spanning van het net automatisch verlaagt",
-         "Omdat metaal geen enkele lading kan doorlaten naar buiten"
-        ],
-        "c": 1,
-        "d": 3,
-        "u": "Metaal geleidt goed; een losse fasedraad kan de behuizing onder spanning zetten.",
-        "uo": [
-         "Metaal is juist een geleider, geen isolator.",
-         "Klopt: metaal geleidt de spanning naar buiten.",
-         "Metaal verlaagt de netspanning niet.",
-         "Metaal laat lading juist wel door."
-        ],
-        "uh": "Metaal geleidt -> behuizing kan onder spanning staan."
-       },
-       {
-        "v": "Waarom laat droog hout nauwelijks stroom door?",
-        "o": [
-         "Het zit boordevol vrije elektronen die makkelijk bewegen",
-         "Het verhoogt de spanning van de bron tot een gevaarlijk niveau",
-         "Het heeft weinig vrije elektronen",
-         "Het slaat alle stroom op in plaats van die door te laten"
-        ],
-        "c": 2,
-        "d": 3,
-        "u": "In droog hout zijn nauwelijks vrije elektronen, dus het isoleert.",
-        "uo": [
-         "Hout heeft juist weinig vrije elektronen.",
-         "Hout verhoogt geen spanning.",
-         "Klopt: weinig vrije elektronen, dus isolator.",
-         "Hout slaat geen stroom op."
-        ],
-        "uh": "Weinig vrije elektronen = isolator."
-       },
-       {
-        "v": "Waarom kan nat of vuil water wel stroom geleiden terwijl zuiver water dat slecht doet?",
-        "o": [
-         "Omdat water altijd een perfecte geleider is, ook heel zuiver",
-         "Omdat water de spanning van het net vanzelf flink verhoogt",
-         "Omdat water helemaal geen enkele lading kan bevatten",
-         "Er zitten opgeloste geladen deeltjes in"
-        ],
-        "c": 3,
-        "d": 3,
-        "u": "Opgeloste zouten (ionen) geleiden de stroom; puur water bevat daar weinig van.",
-        "uo": [
-         "Heel zuiver water geleidt juist slecht.",
-         "Water verhoogt de spanning niet.",
-         "Water met zout bevat wel lading.",
-         "Klopt: opgeloste ionen geleiden."
-        ],
-        "uh": "Ionen in water geleiden de stroom."
-       },
-       {
-        "v": "Een sensor-schakeling met een LDR zet de straatlamp aan. Wanneer gaat de lamp branden?",
-        "o": [
-         "Als het donker wordt",
-         "Als het juist heel fel licht buiten wordt",
-         "Alleen als de temperatuur flink oploopt",
-         "Alleen als je de schakelaar met de hand omzet"
-        ],
-        "c": 0,
-        "d": 3,
-        "u": "Bij donker stijgt de weerstand van de LDR; de schakeling reageert en zet de lamp aan.",
-        "uo": [
-         "Klopt: de lamp gaat aan als het donker wordt.",
-         "Bij fel licht gaat hij juist uit.",
-         "De temperatuur stuurt de LDR niet.",
-         "Het gaat automatisch, niet met de hand."
-        ],
-        "uh": "LDR-straatlamp: aan bij donker."
-       },
-       {
-        "v": "Waarom kies je koper in plaats van ijzer voor lange stroomkabels?",
-        "o": [
-         "IJzer geleidt beter en verliest minder energie dan koper",
-         "Koper heeft een lagere weerstand",
-         "Koper en ijzer geleiden precies even goed per meter kabel",
-         "IJzer heeft helemaal geen weerstand en is dus ideaal"
-        ],
-        "c": 1,
-        "d": 3,
-        "u": "Koper geleidt beter dan ijzer, dus minder energieverlies als warmte in de kabel.",
-        "uo": [
-         "IJzer geleidt juist slechter.",
-         "Klopt: koper heeft de laagste weerstand.",
-         "Ze geleiden niet even goed.",
-         "IJzer heeft wel weerstand."
-        ],
-        "uh": "Koper geleidt beter dan ijzer."
-       },
-       {
-        "v": "Wat hebben een LDR, een NTC en een gloeilamp gemeen?",
-        "o": [
-         "Ze hebben allemaal precies dezelfde vaste weerstand",
-         "Ze laten alle drie helemaal geen stroom door zich heen",
-         "Hun weerstand is niet constant",
-         "Ze wekken alle drie zelf spanning op zoals een batterij"
-        ],
-        "c": 2,
-        "d": 3,
-        "u": "Alle drie zijn niet-ohms: hun weerstand hangt af van licht, warmte of temperatuur.",
-        "uo": [
-         "Hun weerstand is juist niet vast.",
-         "Ze laten wel stroom door.",
-         "Klopt: alle drie hebben een veranderlijke weerstand.",
-         "Ze wekken zelf geen spanning op."
-        ],
-        "uh": "LDR, NTC, gloeilamp = niet-ohms."
-       },
-       {
-        "v": "Waarom is een gewone metaaldraad wel bijna ohms en een gloeidraad niet?",
-        "o": [
-         "Omdat de metaaldraad juist heel heet wordt en de gloeidraad koud blijft",
-         "Omdat de gloeidraad geen enkele weerstand heeft",
-         "Omdat de metaaldraad helemaal geen stroom doorlaat",
-         "De gloeidraad wordt veel heter"
-        ],
-        "c": 3,
-        "d": 3,
-        "u": "Een gewone draad blijft koel (R vrijwel constant); een gloeidraad wordt gloeiend heet, dus R stijgt.",
-        "uo": [
-         "De metaaldraad blijft juist koeler.",
-         "De gloeidraad heeft wel weerstand.",
-         "De metaaldraad laat wel stroom door.",
-         "Klopt: de hete gloeidraad krijgt een hogere R."
-        ],
-        "uh": "Heet worden maakt niet-ohms."
-       },
-       {
-        "v": "Waarom zit er rubber of kunststof om een stroomdraad heen?",
-        "o": [
-         "Om de stroom binnenin te houden",
-         "Om de koperdraad sneller stroom te laten geleiden",
-         "Om de spanning van de bron flink te verhogen",
-         "Om extra lading in de mantel op te slaan voor later"
+         "grafiet geleidt",
+         "papier wordt geleidend als je erop tekent",
+         "het potlood bevat een batterijtje",
+         "koolstof is altijd een isolator"
         ],
         "c": 0,
         "d": 2,
-        "u": "Rubber en kunststof isoleren, zodat de stroom in de koperkern blijft en je de draad veilig aanraakt.",
+        "s": 1,
+        "u": "Grafiet geleidt.",
         "uo": [
-         "Klopt: de isolatie houdt de stroom binnenin.",
-         "De mantel versnelt de geleiding niet.",
-         "De mantel verhoogt de spanning niet.",
-         "De mantel slaat geen lading op."
+         "Klopt: potloodstift is grafiet, een vorm van koolstof met vrije elektronen. Een dikke streep vormt een smal geleidend spoor, met een vrij grote weerstand, maar genoeg voor een kleine stroom.",
+         "Koos je geleidend papier? Papier zelf is en blijft een isolator. Het grafiet op het papier geleidt.",
+         "Koos je een batterijtje? In een potlood zit geen energiebron. De energie komt van de batterij in de schakeling; het grafiet geleidt alleen.",
+         "Koos je altijd een isolator? Diamant, ook koolstof, is wel een isolator. Grafiet heeft een andere bouw met vrije elektronen en geleidt."
         ],
-        "uh": "Isolatiemantel = veilig, stroom blijft in de kern."
+        "uh": "Grafiet = geleider."
+       },
+       {
+        "v": "Hoe ziet de (I,U)-grafiek van een diode eruit?",
+        "o": [
+         "een horizontale lijn",
+         "een rechte lijn door de oorsprong",
+         "in beide richtingen precies dezelfde kromme lijn",
+         "sperrichting nul, doorlaat steil omhoog"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 2,
+        "u": "Diode: eenrichtingsverkeer zichtbaar in de grafiek.",
+        "uo": [
+         "Koos je een horizontale lijn? Dan zou de stroom nooit veranderen. In de doorlaatrichting stijgt de stroom juist sterk.",
+         "Koos je een rechte lijn door de oorsprong? Dat hoort bij een ohmse weerstand. Een diode is sterk niet ohms.",
+         "Koos je in beide richtingen dezelfde kromme? Dan zou de richting niet uitmaken. Het hele punt van een diode is dat de richting wel uitmaakt.",
+         "Klopt: bij een negatieve spanning, de sperrichting, loopt er vrijwel geen stroom. In de doorlaatrichting gebeurt er eerst weinig, maar boven de drempelspanning stijgt de stroom heel steil."
+        ],
+        "uh": "Eén kant nul, andere kant steil."
+       },
+       {
+        "v": "Wat concludeer je uit de meting aan de led?",
+        "o": [
+         "de weerstand neemt toe zoals bij een gloeilamp",
+         "de weerstand blijft gelijk: de led is ohms",
+         "de weerstand neemt sterk af: de led is niet ohms",
+         "de led is kapot, want bij 1,5 V loopt er geen stroom"
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 2,
+        "u": "R per punt: oneindig, 2,2 kΩ, 100 Ω.",
+        "uo": [
+         "Koos je toenemen? Bij een gloeilamp groeit de stroom steeds minder hard. Hier groeit hij juist explosief, dus de weerstand neemt af.",
+         "Koos je gelijk? Dan zou de stroom recht evenredig met de spanning groeien. De stroom springt omhoog boven 2,0 V; de weerstand is dus zeker niet gelijk.",
+         "Klopt: bij 1,5 V loopt er geen stroom, de weerstand is enorm. Bij 2,0 V is R = 2,0 / 0,0009 = 2,2 kΩ en bij 2,2 V is R = 2,2 / 0,022 = 100 Ω. De weerstand neemt sterk af: de led is niet ohms.",
+         "Koos je kapot? Onder de drempelspanning laat een led nog geen stroom door. Dat is normaal gedrag, geen defect."
+        ],
+        "uh": "Reken R per meetpunt.",
+        "ctx": "Een leerling meet aan een rode led in de doorlaatrichting. Bij 1,5 V meet ze 0 mA, bij 2,0 V 0,9 mA en bij 2,2 V 22 mA. Ze moet bepalen of de led een ohms onderdeel is."
+       },
+       {
+        "v": "In welk apparaat zit waarschijnlijk een LDR?",
+        "o": [
+         "een waterkoker",
+         "een schemerschakelaar die buitenlampen aanzet",
+         "een föhn",
+         "een verlengsnoer"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 3,
+        "u": "LDR reageert op licht.",
+        "uo": [
+         "Koos je een waterkoker? Die moet stoppen als het water kookt. Daarvoor gebruikt hij een temperatuurschakelaar, geen lichtsensor.",
+         "Klopt: een schemerschakelaar meet met een LDR hoeveel licht er is. Wordt het donker, dan wordt de weerstand groot en schakelt de elektronica de buitenlamp in.",
+         "Koos je een föhn? In een föhn kan een beveiliging tegen oververhitting zitten, maar die reageert op temperatuur, niet op licht.",
+         "Koos je een verlengsnoer? Dat bevat alleen draden en stekkers. Er zit geen sensor in."
+        ],
+        "uh": "Licht meten."
+       },
+       {
+        "v": "Hoe groot is de spanning over de LDR overdag in de straatlampschakeling?",
+        "o": [
+         "0,45 V",
+         "4,5 V",
+         "2,5 V",
+         "0,50 V"
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 3,
+        "u": "I = 5,0 / 11 kΩ; U = I · 1 kΩ.",
+        "uo": [
+         "Klopt: overdag is R_LDR = 1 kΩ, met 10 kΩ in serie samen 11 kΩ. I = 5,0 / 11 000 = 0,45 mA. U_LDR = 0,45 mA × 1 kΩ = 0,45 V. Dat is onder de 3,0 V, dus de lamp blijft uit.",
+         "Koos je 4,5 V? Dat is de spanning over de vaste weerstand van 10 kΩ. Over de LDR met 1 kΩ staat maar een klein deel.",
+         "Koos je 2,5 V? Dat zou gelden als beide weerstanden even groot waren. Overdag is de LDR tien keer kleiner dan de vaste weerstand.",
+         "Koos je 0,50 V? Dan heb je de vaste weerstand vergeten in de totale weerstand. Reken met 11 kΩ samen, niet met 10 kΩ."
+        ],
+        "uh": "Spanningsdeler doorrekenen.",
+        "ctx": "In een automatische straatlamp staat een LDR in serie met een vaste weerstand van 10 kΩ op 5,0 V. De lamp gaat aan als de spanning over de LDR boven 3,0 V komt. Overdag heeft de LDR een weerstand van 1 kΩ, 's nachts van 50 kΩ."
+       },
+       {
+        "v": "Wat meet een digitale koortsthermometer met een NTC eigenlijk direct?",
+        "o": [
+         "de massa van het kwik in de punt",
+         "de warmte die je lichaam afgeeft, in joule",
+         "de hoeveelheid licht die je huid uitstraalt",
+         "de weerstand van de NTC, die hij omrekent naar temperatuur"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 4,
+        "u": "Weerstand meten, temperatuur aflezen.",
+        "uo": [
+         "Koos je kwik? In een digitale thermometer zit geen kwik. Daar zit een NTC, een halfgeleider waarvan de weerstand verandert.",
+         "Koos je warmte in joule? De thermometer meet geen hoeveelheid warmte. Hij meet de weerstand van de NTC, die afhangt van de temperatuur.",
+         "Koos je licht van je huid? Dat doet een infraroodthermometer. Een thermometer met een NTC moet contact maken en meet weerstand.",
+         "Klopt: de thermometer stuurt een kleine stroom door de NTC en meet zo de weerstand. Met een ijktabel rekent de chip die weerstand om naar een temperatuur op het scherm."
+        ],
+        "uh": "Weerstand → temperatuur."
+       },
+       {
+        "v": "Wat gebeurt er met de spanning over de vaste weerstand in het brandalarm als het warmer wordt?",
+        "o": [
+         "die blijft gelijk",
+         "die neemt af",
+         "die neemt toe",
+         "die wordt negatief"
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 4,
+        "u": "NTC warmer: kleinere R, meer spanning over de vaste weerstand.",
+        "uo": [
+         "Koos je gelijk? De verdeling van de spanning hangt af van de verhouding tussen de weerstanden. Verandert de NTC, dan verandert die verdeling.",
+         "Koos je afnemen? Dat geldt voor de spanning over de NTC zelf. Over de vaste weerstand neemt de spanning juist toe.",
+         "Klopt: als het warmer wordt, daalt de weerstand van de NTC. In de spanningsdeler krijgt de NTC dan een kleiner deel van de 9,0 V en de vaste weerstand een groter deel. Die stijgende spanning zet het alarm aan.",
+         "Koos je negatief? De richting van de spanning verandert niet. Alleen de verdeling over de twee weerstanden schuift."
+        ],
+        "uh": "Spanning schuift naar de vaste weerstand.",
+        "ctx": "Een eenvoudig brandalarm bestaat uit een NTC in serie met een vaste weerstand op een batterij van 9,0 V. Een chip meet de spanning over de vaste weerstand en laat een zoemer afgaan zodra die spanning boven 6,0 V komt."
+       },
+       {
+        "v": "Een diode staat in de sperrichting in serie met een lampje op een batterij. Wat zie je?",
+        "o": [
+         "het lampje brandt fel",
+         "het lampje brandt niet",
+         "het lampje knippert",
+         "het lampje brandt zwak"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 5,
+        "u": "Sperrichting: geen stroom.",
+        "uo": [
+         "Koos je fel? Dat gebeurt als je de diode omdraait, in de doorlaatrichting. Dan laat hij de stroom bijna ongehinderd door.",
+         "Klopt: in de sperrichting laat de diode vrijwel geen stroom door. Omdat het lampje in serie staat, gaat er ook door het lampje geen stroom en blijft het uit.",
+         "Koos je knipperen? Bij gelijkstroom uit een batterij is er geen reden om te knipperen. De diode laat in deze richting gewoon niets door.",
+         "Koos je zwak? De stroom in de sperrichting is zo klein dat je het lampje niet ziet gloeien. Het blijft helemaal uit."
+        ],
+        "uh": "Geen stroom, geen licht."
+       },
+       {
+        "v": "Wat gebeurt er als je een diode in een wisselstroomkring zet?",
+        "o": [
+         "de stroom loopt alleen tijdens de halve periodes in één richting",
+         "de wisselstroom wordt twee keer zo sterk",
+         "de frequentie wordt verdubbeld",
+         "de diode houdt alle stroom tegen"
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 5,
+        "u": "Gelijkrichten: één helft gaat door.",
+        "uo": [
+         "Klopt: een diode laat alleen de helften van de wisselspanning door waarin de stroom in de doorlaatrichting zou lopen. Er blijft een stroom in één richting over, met tussenpozen. Zo begint gelijkrichten in een adapter.",
+         "Koos je twee keer zo sterk? Een diode versterkt niets; hij houdt de helft van de tijd juist de stroom tegen.",
+         "Koos je verdubbelde frequentie? De frequentie van de spanning verandert niet. Alleen de helft in de sperrichting valt weg.",
+         "Koos je alle stroom tegen? Dat zou alleen gelden bij gelijkstroom in de sperrichting. Bij wisselstroom staat de diode de helft van de tijd in de doorlaatrichting."
+        ],
+        "uh": "Halve periodes door."
+       },
+       {
+        "v": "Waarom brandt de led niet op één penlite van 1,5 V, maar wel op twee in serie?",
+        "o": [
+         "twee batterijen geven meer lading per coulomb",
+         "één penlite levert wisselstroom",
+         "een led brandt alleen op een even aantal batterijen",
+         "de led heeft een drempelspanning van ongeveer 2 V"
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 5,
+        "u": "Onder de drempelspanning geen stroom.",
+        "uo": [
+         "Koos je meer lading per coulomb? Een coulomb is zelf een hoeveelheid lading. Twee batterijen in serie geven elke coulomb meer energie: meer spanning.",
+         "Koos je wisselstroom? Een penlite levert altijd gelijkstroom. Het probleem is dat 1,5 V te weinig is.",
+         "Koos je een even aantal? Het aantal maakt niet uit, de spanning wel. Boven ongeveer 2 V gaat de led branden.",
+         "Klopt: een led laat pas stroom door boven zijn drempelspanning, bij een rode led ongeveer 2 V. Met 1,5 V komt hij daar niet aan. Twee penlites in serie geven 3,0 V, ruim genoeg; dan is wel een voorschakelweerstand nodig."
+        ],
+        "uh": "Drempelspanning.",
+        "ctx": "Een leerling wil een rode led laten branden. Op één penlite van 1,5 V gebeurt er niets, ook niet als ze de led omdraait. Met twee penlites in serie en een kleine weerstand brandt de led wel. In Binas staat dat een rode led pas geleidt boven ongeveer 2 V."
        }
       ],
       "oe": [
        {
-        "vraag": "Leg het verschil uit tussen een geleider en een isolator en verklaar dat verschil met de bouw van de stof.",
-        "antwoord": "Een geleider laat elektrische stroom goed door en een isolator bijna niet. Het verschil zit in de vrije elektronen: in een geleider zoals een metaal zijn er veel vrije elektronen die kunnen bewegen en zo de stroom dragen. In een isolator zoals glas of droog hout zijn er nauwelijks vrije elektronen, dus kan er bijna geen stroom lopen."
+        "bron": "Examenstijl",
+        "ctx": "Een schemerschakelaar bevat een LDR in serie met een vaste weerstand van 4,7 kΩ op 6,0 V. Overdag heeft de LDR 500 Ω, bij schemer 4,7 kΩ en 's nachts 80 kΩ. De lamp gaat aan als de spanning over de LDR groter is dan 3,0 V.",
+        "v": "Bereken de spanning over de LDR overdag en bij schemer, en leg uit wanneer de lamp aangaat.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Overdag: I = 6,0 / 5200 = 1,15 mA, U_LDR = 1,15 mA × 500 = 0,58 V (1p). Bij schemer zijn beide weerstanden gelijk: U_LDR = 3,0 V (1p). Wordt het donkerder dan schemer, dan stijgt de weerstand en de spanning boven 3,0 V en gaat de lamp aan (1p)."
        },
        {
-        "vraag": "Leg uit wat een LDR is en beschrijf een handige toepassing ervan.",
-        "antwoord": "Een LDR is een lichtafhankelijke weerstand: de weerstand hangt af van hoeveel licht erop valt. Bij veel licht is de weerstand klein en bij weinig licht groot. Een handige toepassing is straatverlichting: als het donker wordt, stijgt de weerstand van de LDR, en de schakeling laat de lamp dan automatisch aangaan."
+        "bron": "Examenstijl",
+        "ctx": "Een NTC wordt geijkt: 0 °C: 27 kΩ, 25 °C: 10 kΩ, 50 °C: 4,0 kΩ, 75 °C: 1,8 kΩ. Een leerling zet 3,0 V over de NTC in een kop thee en meet 0,75 mA.",
+        "v": "Bereken de weerstand van de NTC, bepaal de temperatuur van de thee en leg uit waarom een NTC beter werkt als thermometer dan een koperdraad.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "R = 3,0 / 0,00075 = 4,0 kΩ (1p). Dat hoort bij ongeveer 50 °C (1p). De weerstand van een NTC verandert sterk met de temperatuur; die van koper nauwelijks, dus met koper zou je bijna niets meten (1p)."
        },
        {
-        "vraag": "Leg uit waarom de (U,I)-grafiek van een gloeilamp geen rechte lijn is.",
-        "antwoord": "Bij een rechte lijn zou de weerstand constant zijn (ohms). Een gloeilamp is echter niet-ohms: als er meer stroom doorheen loopt, wordt de gloeidraad heter, en bij een gloeidraad neemt de weerstand toe met de temperatuur. Doordat de weerstand tijdens het meten verandert, zijn spanning en stroom niet recht evenredig en krijg je een gebogen grafiek in plaats van een rechte lijn."
+        "bron": "Examenstijl",
+        "ctx": "Een gele led brandt bij 2,1 V en een stroom van 15 mA. Hij moet op een accu van 9,0 V worden aangesloten. Een leerling sluit hem eerst direct op de accu aan, zonder weerstand.",
+        "v": "Leg uit wat er gebeurt zonder voorschakelweerstand en bereken de weerstand die nodig is.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Boven de drempelspanning heeft de led nauwelijks weerstand, dus de stroom wordt veel te groot en de led brandt door (1p). Over de weerstand moet 9,0 − 2,1 = 6,9 V staan (1p). R = 6,9 / 0,015 = 460 Ω (1p)."
        },
        {
-        "vraag": "Wat doet een diode en wat gebeurt er als je hem omgekeerd aansluit?",
-        "antwoord": "Een diode laat de stroom maar in één richting door, de doorlaatrichting, en houdt de stroom in de andere richting tegen, de sperrichting. Als je een diode omgekeerd aansluit, staat hij in de sperrichting en loopt er vrijwel geen stroom. Daardoor kun je met een diode bijvoorbeeld voorkomen dat de stroom de verkeerde kant op gaat."
+        "bron": "Examenstijl",
+        "ctx": "Een leerling meet aan een diode. Bij −2,0 V meet ze 0 mA, bij 0,4 V 0 mA, bij 0,6 V 5 mA en bij 0,7 V 40 mA. Daarna zet ze de diode in serie met een lampje op een wisselspanning.",
+        "v": "Leg uit wat de meting zegt over de diode en beschrijf wat er met de stroom door het lampje gebeurt bij wisselspanning.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "In de sperrichting (−2,0 V) en onder de drempel laat de diode geen stroom door (1p); boven ongeveer 0,6 V stijgt de stroom heel steil, de diode is niet ohms (1p). Bij wisselspanning gaat er alleen stroom tijdens de halve periodes in de doorlaatrichting; het lampje krijgt een stroom in één richting met tussenpozen (1p)."
        },
        {
-        "vraag": "Noem het verschil tussen een NTC en een LDR en geef van elk waar hij op reageert.",
-        "antwoord": "Een NTC en een LDR zijn allebei niet-ohmse weerstanden, maar ze reageren op iets anders. Een NTC reageert op temperatuur: bij een hogere temperatuur wordt de weerstand kleiner. Een LDR reageert op licht: bij meer licht wordt de weerstand kleiner. Je gebruikt een NTC dus als temperatuursensor en een LDR als lichtsensor."
+        "bron": "Examenstijl",
+        "ctx": "Een gloeilamp heeft koud een weerstand van 30 Ω. Als hij brandt op 230 V, is het vermogen 100 W. Een leerling zegt dat de stroom bij het inschakelen dus ook 230 / 30 = 7,7 A moet zijn.",
+        "v": "Bereken de weerstand van de brandende lamp, verklaar het verschil met de koude weerstand en beoordeel de uitspraak.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Brandend: R = U² / P = 230² / 100 = 529 Ω (1p). Een hete metalen draad heeft meer weerstand doordat de atomen harder trillen en de elektronen vaker botsen (1p). De uitspraak klopt alleen vlak na het inschakelen, als de draad nog koud is; daarna daalt de stroom snel naar 0,43 A (1p)."
        }
       ]
      },
