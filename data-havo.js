@@ -49914,595 +49914,689 @@ var VAKKEN = [
      },
      {
       "id": "M6",
+      "lo": "bi.M.6",
+      "gs": 2,
       "naam": "Celdeling: mitose en meiose",
-      "beschrijving": "Hoe cellen zich delen via mitose (twee identieke cellen voor groei en herstel) en meiose (vier geslachtscellen met het halve aantal chromosomen voor variatie).",
-      "ceStatus": "CE",
+      "beschrijving": "Je beschrijft de celcyclus en de DNA-verdubbeling, herkent de fasen van de mitose, rekent met diploïde en haploïde aantallen, legt de twee delingen van de meiose uit en verklaart hoe meiose en bevruchting zorgen voor variatie.",
+      "ceStatus": "CE+SE",
+      "binas": "",
+      "val": "",
       "onderwerpen": [
-       "DNA-verdubbeling voor de deling",
-       "Mitose (gewone celdeling)",
-       "Meiose (reductiedeling)",
-       "Diploid (2n) en haploid (n)",
-       "Bevruchting herstelt 2n",
-       "Variatie tussen nakomelingen"
+       "De celcyclus en DNA-verdubbeling",
+       "Mitose",
+       "Diploïd en haploïd",
+       "Meiose",
+       "Bevruchting en variatie",
+       "Mitose en meiose vergelijken"
       ],
-      "sam": "Voor elke celdeling wordt het DNA eerst verdubbeld, zodat er genoeg voor beide cellen is. Bij mitose (de gewone celdeling) ontstaan uit een cel twee identieke dochtercellen met hetzelfde aantal chromosomen als de moedercel; dit dient voor groei, herstel en ongeslachtelijke voortplanting. Bij meiose (de reductiedeling) ontstaan vier geslachtscellen met het halve aantal chromosomen: van diploid (2n) naar haploid (n). Bij de bevruchting versmelten twee geslachtscellen, waardoor het aantal weer 2n wordt. Meiose zorgt bovendien voor variatie tussen de nakomelingen.",
+      "sam": "Interfase: groei en DNA-verdubbeling; verdubbeld chromosoom = twee chromatiden. Mitose: profase, metafase (midden), anafase (chromatiden uiteen), telofase; twee identieke cellen (2n), voor groei en herstel. Lichaamscel diploïd 2n = 46, geslachtscel haploïd n = 23; homologe chromosomen = paar, één van elke ouder. Meiose (reductiedeling): 1 verdubbeling, 2 delingen, 4 verschillende haploïde cellen. Bevruchting n + n = 2n. Variatie: 2²³ combinaties en crossing-over.",
       "begrippen": [
        {
-        "t": "Celdeling",
-        "d": "Het proces waarbij uit een moedercel nieuwe dochtercellen ontstaan."
+        "t": "Celcyclus",
+        "d": "De vaste opeenvolging van interfase en deling die een delende cel steeds doorloopt."
        },
        {
-        "t": "DNA-verdubbeling",
-        "d": "Het kopieren van al het DNA voordat de cel gaat delen, zodat beide dochtercellen genoeg krijgen."
+        "t": "Interfase",
+        "d": "Fase tussen twee delingen waarin de cel groeit en zijn DNA verdubbelt."
        },
        {
-        "t": "Chromosoom",
-        "d": "Een sterk opgerold pakketje DNA in de celkern dat de erfelijke informatie draagt."
+        "t": "Chromatide",
+        "d": "Eén van de twee identieke kopieën van een verdubbeld chromosoom."
+       },
+       {
+        "t": "Centromeer",
+        "d": "Plek waar de twee chromatiden van een verdubbeld chromosoom aan elkaar vastzitten."
        },
        {
         "t": "Mitose",
-        "d": "De gewone celdeling: uit een cel ontstaan twee identieke dochtercellen met hetzelfde aantal chromosomen."
+        "d": "Kerndeling waarbij twee dochtercellen ontstaan met hetzelfde DNA als de moedercel."
+       },
+       {
+        "t": "Metafase",
+        "d": "Fase waarin de chromosomen op een rij in het midden van de cel liggen."
+       },
+       {
+        "t": "Anafase",
+        "d": "Fase waarin de chromatiden (bij mitose) naar de polen worden getrokken."
+       },
+       {
+        "t": "Spoelfiguur",
+        "d": "Draden die de chromosomen tijdens de deling naar de polen trekken."
+       },
+       {
+        "t": "Diploïd",
+        "d": "Met twee sets chromosomen (2n), zoals lichaamscellen."
+       },
+       {
+        "t": "Haploïd",
+        "d": "Met één set chromosomen (n), zoals geslachtscellen."
+       },
+       {
+        "t": "Homologe chromosomen",
+        "d": "Paar chromosomen met dezelfde genen op dezelfde plek, één van elke ouder."
        },
        {
         "t": "Meiose",
-        "d": "De reductiedeling: uit een cel ontstaan vier geslachtscellen met het halve aantal chromosomen."
+        "d": "Reductiedeling waarbij uit één diploïde cel vier haploïde geslachtscellen ontstaan."
        },
        {
-        "t": "Diploid (2n)",
-        "d": "Een cel met een dubbel stel chromosomen; dit hebben de gewone lichaamscellen."
+        "t": "Reductiedeling",
+        "d": "Deling waarbij het aantal chromosomen halveert van 2n naar n."
        },
        {
-        "t": "Haploid (n)",
-        "d": "Een cel met een enkel stel chromosomen; dit hebben de geslachtscellen."
+        "t": "Zygote",
+        "d": "Bevruchte eicel; diploïd, ontstaan uit een zaadcel en een eicel."
        },
        {
-        "t": "Moedercel",
-        "d": "De cel die zich deelt en waaruit de dochtercellen ontstaan."
-       },
-       {
-        "t": "Dochtercel",
-        "d": "Een nieuwe cel die bij een celdeling uit de moedercel is ontstaan."
-       },
-       {
-        "t": "Geslachtscel (gameet)",
-        "d": "Een haploide voortplantingscel (eicel of zaadcel) die door meiose is gevormd."
-       },
-       {
-        "t": "Bevruchting",
-        "d": "Het versmelten van een eicel en een zaadcel, waardoor het aantal chromosomen weer 2n wordt."
-       },
-       {
-        "t": "Variatie",
-        "d": "De verschillen tussen nakomelingen; meiose zorgt hiervoor bij de geslachtelijke voortplanting."
+        "t": "Crossing-over",
+        "d": "Uitwisseling van stukken tussen homologe chromosomen tijdens de meiose."
        }
       ],
       "sv": [
        {
-        "v": "Wat gebeurt er vlak voor een celdeling met het DNA?",
+        "v": "Wat gebeurt er met het DNA voordat een cel zich deelt?",
         "o": [
-         "Het DNA wordt eerst verdubbeld",
-         "Het DNA wordt meteen gehalveerd",
-         "Het DNA lost helemaal op in de cel",
-         "Er komt DNA van een andere cel bij"
-        ],
-        "c": 0,
-        "d": 1,
-        "u": "Onthoud: voor elke deling verdubbelt het DNA eerst, zodat er genoeg voor beide cellen is.",
-        "uo": [
-         "Klopt: het DNA wordt eerst gekopieerd, zodat beide cellen een volledige set krijgen.",
-         "Het DNA halveert niet vooraf; halvering hoort pas bij de meiose zelf.",
-         "Het DNA lost niet op; het wordt juist netjes verdubbeld en verdeeld.",
-         "Er komt geen DNA van buiten bij; de cel kopieert haar eigen DNA."
-        ],
-        "uh": "Eerst kopieren, dan pas delen."
-       },
-       {
-        "v": "Wat is mitose?",
-        "o": [
-         "Een deling tot vier ongelijke geslachtscellen",
-         "De gewone celdeling tot twee identieke cellen",
-         "Het verdubbelen van het DNA in de kern",
-         "Het samensmelten van twee cellen"
-        ],
-        "c": 1,
-        "d": 1,
-        "u": "Onthoud: mitose is de gewone celdeling die twee identieke dochtercellen oplevert.",
-        "uo": [
-         "Vier geslachtscellen horen bij de meiose, niet bij de mitose.",
-         "Klopt: bij mitose ontstaan twee dochtercellen die identiek zijn aan de moedercel.",
-         "DNA-verdubbeling gaat aan de deling vooraf, maar is de deling zelf niet.",
-         "Samensmelten van cellen is bevruchting, geen celdeling."
-        ],
-        "uh": "Mitose = twee identieke cellen."
-       },
-       {
-        "v": "Wat is meiose (reductiedeling)?",
-        "o": [
-         "De gewone lichaamsdeling voor groei en herstel van weefsel",
-         "Het kopieren van het DNA voor de deling",
-         "De deling tot vier cellen met het halve aantal chromosomen",
-         "Het herstellen van beschadigd weefsel"
+         "het wordt afgebroken en na de deling opnieuw gemaakt",
+         "het wordt gehalveerd, zodat elke dochtercel de helft krijgt",
+         "het wordt verdubbeld, zodat elk chromosoom uit twee chromatiden bestaat",
+         "het blijft precies gelijk en wordt daarna alleen over de dochtercellen verdeeld"
         ],
         "c": 2,
         "d": 1,
-        "u": "Onthoud: meiose levert vier geslachtscellen op met het halve aantal chromosomen.",
+        "s": 0,
+        "u": "In de interfase wordt het DNA verdubbeld: elk chromosoom krijgt twee chromatiden.",
         "uo": [
-         "Groei en herstel horen bij de mitose, niet bij de reductiedeling.",
-         "DNA-kopieren gaat vooraf aan de deling, maar is de meiose zelf niet.",
-         "Klopt: bij meiose ontstaan vier cellen met het halve aantal chromosomen.",
-         "Weefselherstel gebeurt via mitose, niet via meiose."
+         "Koos je afgebroken? Dan zou de informatie verloren gaan. Het DNA wordt juist zorgvuldig gekopieerd voordat de deling begint.",
+         "Koos je gehalveerd? Bij een gewone deling krijgt elke dochtercel juist al het DNA. Daarom moet het eerst verdubbeld worden, niet gehalveerd.",
+         "Klopt: in de interfase maakt de cel een kopie van al het DNA. Elk chromosoom bestaat dan uit twee identieke chromatiden, één voor elke dochtercel.",
+         "Koos je gelijk blijven? Dan zou elke dochtercel maar de helft van het DNA krijgen. Daarom wordt het DNA eerst verdubbeld."
         ],
-        "uh": "Meiose = vier cellen, half aantal."
+        "uh": "Kopie maken voor de deling."
        },
        {
-        "v": "Hoeveel dochtercellen ontstaan er bij mitose uit een cel?",
+        "v": "Hoeveel DNA heeft elke dochtercel na de volgende mitose?",
         "o": [
-         "Vier dochtercellen",
-         "Drie",
-         "Een",
-         "Twee"
-        ],
-        "c": 3,
-        "d": 1,
-        "u": "Onthoud: mitose levert uit een moedercel twee dochtercellen op.",
-        "uo": [
-         "Vier cellen horen bij de meiose, niet bij de mitose.",
-         "Drie klopt niet; bij mitose deelt de cel in tweeen.",
-         "Een enkele cel is de moedercel zelf, geen resultaat van de deling.",
-         "Klopt: uit een moedercel ontstaan bij mitose twee dochtercellen."
-        ],
-        "uh": "Mitose: 1 wordt 2."
-       },
-       {
-        "v": "Hoeveel cellen ontstaan er bij meiose uit een cel?",
-        "o": [
-         "Vier cellen",
-         "Twee cellen",
-         "Zes verschillende cellen",
-         "Maar een cel"
-        ],
-        "c": 0,
-        "d": 1,
-        "u": "Onthoud: meiose levert uit een cel vier geslachtscellen op.",
-        "uo": [
-         "Klopt: bij meiose ontstaan vier geslachtscellen uit een cel.",
-         "Twee cellen horen bij de mitose, niet bij de meiose.",
-         "Zes is te veel; de meiose eindigt bij vier cellen.",
-         "Een enkele cel is de startcel, geen eindresultaat van de meiose."
-        ],
-        "uh": "Meiose: 1 wordt 4."
-       },
-       {
-        "v": "Wat betekent 'diploid'?",
-        "o": [
-         "Een geslachtscel met een enkel stel chromosomen",
-         "Een cel met een dubbel stel chromosomen",
-         "Een cel zonder chromosomen",
-         "Een cel die zich nooit meer kan delen"
+         "32 eenheden",
+         "16 eenheden",
+         "8 eenheden",
+         "64 eenheden"
         ],
         "c": 1,
-        "d": 1,
-        "u": "Onthoud: diploid (2n) betekent een dubbel stel chromosomen, zoals in lichaamscellen.",
-        "uo": [
-         "Een enkel stel hoort bij haploid; dat zijn juist de geslachtscellen.",
-         "Klopt: diploid betekent een dubbel stel chromosomen (2n).",
-         "Een cel zonder chromosomen bestaat niet als gewone lichaamscel.",
-         "Diploid zegt iets over het aantal stellen, niet over delen."
-        ],
-        "uh": "Diploid = dubbel stel (2n)."
-       },
-       {
-        "v": "Wat betekent 'haploid'?",
-        "o": [
-         "Een dubbel stel chromosomen, zoals in een lichaamscel",
-         "Twee identieke dochtercellen",
-         "Een enkel stel chromosomen",
-         "Het verdubbelde DNA voor de deling"
-        ],
-        "c": 2,
-        "d": 1,
-        "u": "Onthoud: haploid (n) betekent een enkel stel chromosomen, zoals in geslachtscellen.",
-        "uo": [
-         "Een dubbel stel hoort bij diploid; dat zijn juist de lichaamscellen.",
-         "Twee dochtercellen zegt iets over aantal cellen, niet over chromosoomstel.",
-         "Klopt: haploid betekent een enkel stel chromosomen (n).",
-         "Het verdubbelde DNA gaat aan de deling vooraf; dat is geen haploid."
-        ],
-        "uh": "Haploid = enkel stel (n)."
-       },
-       {
-        "v": "Waarvoor dient mitose in het lichaam?",
-        "o": [
-         "Voor het maken van geslachtscellen",
-         "Voor het halveren van het chromosoomaantal",
-         "Voor variatie tussen nakomelingen",
-         "Voor groei en herstel van weefsel"
-        ],
-        "c": 3,
-        "d": 1,
-        "u": "Onthoud: mitose zorgt voor groei, herstel en ongeslachtelijke voortplanting.",
-        "uo": [
-         "Geslachtscellen maken gebeurt via meiose, niet via mitose.",
-         "Halveren van het chromosoomaantal hoort bij de meiose.",
-         "Variatie tussen nakomelingen komt juist door de meiose.",
-         "Klopt: mitose zorgt voor groei en herstel van weefsel."
-        ],
-        "uh": "Mitose = groei en herstel."
-       },
-       {
-        "v": "Waarvoor dient meiose?",
-        "o": [
-         "Voor het maken van geslachtscellen (gameten)",
-         "Voor groei van het lichaam",
-         "Voor het herstellen van beschadigd spierweefsel",
-         "Voor het kopieren van het DNA"
-        ],
-        "c": 0,
-        "d": 1,
-        "u": "Onthoud: meiose maakt geslachtscellen en zorgt voor variatie.",
-        "uo": [
-         "Klopt: meiose vormt de geslachtscellen (gameten).",
-         "Groei van het lichaam gebeurt via mitose, niet via meiose.",
-         "Weefselherstel gebeurt via mitose, niet via meiose.",
-         "DNA-kopieren gaat aan elke deling vooraf; dat is niet het doel van meiose."
-        ],
-        "uh": "Meiose = geslachtscellen maken."
-       },
-       {
-        "v": "Hoe verhouden de dochtercellen bij mitose zich tot de moedercel?",
-        "o": [
-         "Ze hebben elk het halve aantal chromosomen",
-         "Ze zijn genetisch identiek aan de moedercel",
-         "Ze zijn allemaal verschillend",
-         "Ze hebben helemaal geen kern en geen chromosomen"
-        ],
-        "c": 1,
-        "d": 1,
-        "u": "Onthoud: bij mitose zijn de dochtercellen identiek aan de moedercel.",
-        "uo": [
-         "Het halve aantal hoort bij meiose, niet bij mitose.",
-         "Klopt: de dochtercellen zijn genetisch identiek aan de moedercel.",
-         "Verschillende cellen krijg je juist bij de meiose, door variatie.",
-         "De dochtercellen hebben wel degelijk een kern met chromosomen."
-        ],
-        "uh": "Mitose: dochters = kopie van moeder."
-       },
-       {
-        "v": "Bij meiose gaat het chromosoomaantal van diploid (2n) naar...",
-        "o": [
-         "hetzelfde aantal, 2n",
-         "het dubbele aantal chromosomen, 4n",
-         "het halve aantal, haploid (n)",
-         "nul chromosomen"
-        ],
-        "c": 2,
-        "d": 1,
-        "u": "Onthoud: meiose gaat van diploid (2n) naar haploid (n), dus het aantal halveert.",
-        "uo": [
-         "Hetzelfde aantal (2n) hoort bij mitose, niet bij meiose.",
-         "Het aantal verdubbelt niet; het wordt juist gehalveerd.",
-         "Klopt: van diploid (2n) naar haploid (n), het halve aantal.",
-         "Nul chromosomen zou geen werkende geslachtscel opleveren."
-        ],
-        "uh": "Meiose: 2n wordt n."
-       },
-       {
-        "v": "Een huidcel deelt zich om een wondje te dichten. Welke deling is dit?",
-        "o": [
-         "Meiose, want er ontstaan geslachtscellen",
-         "Meiose, want het aantal chromosomen wordt gehalveerd",
-         "Geen van beide, cellen delen niet",
-         "Mitose, want er ontstaan twee identieke cellen"
-        ],
-        "c": 3,
         "d": 2,
-        "u": "Onthoud: herstel van weefsel gebeurt via mitose met identieke dochtercellen.",
+        "s": 0,
+        "u": "Na verdubbeling (32) krijgt elke dochtercel de helft: 16, evenveel als de moedercel begon.",
         "uo": [
-         "Bij wondherstel ontstaan geen geslachtscellen; dat is geen meiose.",
-         "Het aantal chromosomen halveert niet bij herstel; dat hoort bij meiose.",
-         "Cellen delen wel degelijk; anders zou de wond niet dichtgroeien.",
-         "Klopt: herstel gaat via mitose, met twee identieke dochtercellen."
+         "Koos je 32? Dat is de hoeveelheid vlak voor de deling, in de moedercel. Die wordt over twee dochtercellen verdeeld.",
+         "Klopt: het DNA is verdubbeld van 16 naar 32. Bij de mitose krijgt elke dochtercel de helft daarvan: 16, precies evenveel als de moedercel eerst had.",
+         "Koos je 8? Dan heb je 16 nog eens gehalveerd. Elke dochtercel krijgt de helft van 32, en dat is 16.",
+         "Koos je 64? Het DNA verdubbelt maar één keer per cyclus. Na de deling is er per cel weer 16."
         ],
-        "uh": "Herstel = mitose."
+        "uh": "Verdubbelen, dan delen door twee.",
+        "ctx": "Een onderzoeker meet de hoeveelheid DNA in een cel uit de wortelpunt van een ui. Direct na een deling is dat 16 eenheden. Daarna groeit de cel een tijd, en vlak voor de volgende deling meet hij 32 eenheden in diezelfde cel."
        },
        {
-        "v": "In de eierstok ontstaan eicellen. Welke deling hoort daarbij?",
+        "v": "Uit hoeveel chromatiden bestaat een verdubbeld chromosoom?",
         "o": [
-         "Meiose, want geslachtscellen krijgen het halve aantal chromosomen",
-         "Mitose, want de dochtercellen blijven volledig identiek aan elkaar",
-         "Mitose, want dit is voor groei",
-         "Geen deling, eicellen bestaan al vanaf de geboorte"
+         "twee, die bij het centromeer aan elkaar vastzitten",
+         "één, want het DNA is nog niet gedeeld",
+         "vier, want elk chromosoom heeft ook nog een homologe partner",
+         "zesenveertig, één voor elk chromosoom"
         ],
         "c": 0,
         "d": 2,
-        "u": "Onthoud: geslachtscellen zoals eicellen ontstaan via meiose met het halve aantal.",
+        "s": 0,
+        "u": "Een verdubbeld chromosoom = twee identieke chromatiden, vast bij het centromeer.",
         "uo": [
-         "Klopt: eicellen zijn geslachtscellen en ontstaan door meiose (n).",
-         "Mitose maakt identieke lichaamscellen, geen haploide eicellen.",
-         "Groei van weefsel gaat via mitose, maar eicellen komen uit meiose.",
-         "Eicellen worden wel degelijk door celdeling gevormd."
+         "Klopt: na de verdubbeling bestaat elk chromosoom uit twee identieke chromatiden. Ze zitten vast bij het centromeer, tot ze in de anafase uit elkaar gaan.",
+         "Koos je één? Voor de verdubbeling is een chromosoom één chromatide. Na de verdubbeling zijn het er twee, die nog aan elkaar vastzitten.",
+         "Koos je vier? De homologe partner is een apart chromosoom. Eén verdubbeld chromosoom bestaat uit twee chromatiden.",
+         "Koos je zesenveertig? Dat is het aantal chromosomen in een lichaamscel. Elk chromosoom afzonderlijk heeft na verdubbeling twee chromatiden."
         ],
-        "uh": "Eicel maken = meiose."
+        "uh": "Twee kopieën, vast in het midden."
        },
        {
-        "v": "Een lichaamscel heeft 46 chromosomen. Hoeveel heeft een dochtercel na mitose?",
+        "v": "Hoe lang duurt de interfase in deze wortel ongeveer?",
         "o": [
-         "23",
+         "20 uur",
+         "2 uur",
+         "10 uur",
+         "18 uur"
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 0,
+        "u": "Het aandeel cellen in een fase is het aandeel van de tijd: 180 / 200 × 20 uur = 18 uur.",
+        "uo": [
+         "Koos je 20 uur? Dat is de hele celcyclus, inclusief de mitose. De interfase is 90% daarvan.",
+         "Koos je 2 uur? Dat is de duur van de mitose: 20 cellen van de 200 (10%) zijn aan het delen. De interfase is de rest.",
+         "Koos je 10 uur? Dan ga je ervan uit dat de helft van de cellen in de interfase is. Het zijn er 180 van de 200, dus 90%.",
+         "Klopt: 180 van de 200 cellen zijn in de interfase, dat is 90%. Dan duurt de interfase 90% van 20 uur, dus 18 uur."
+        ],
+        "uh": "Aandeel cellen = aandeel tijd.",
+        "ctx": "In een preparaat van een wortelpunt telt een leerling 200 cellen: 180 in de interfase, 12 in de profase, 3 in de metafase, 2 in de anafase en 3 in de telofase. Een hele celcyclus duurt in deze wortel 20 uur. Hoe langer een fase duurt, hoe meer cellen je erin aantreft."
+       },
+       {
+        "v": "Welk resultaat levert een mitose op?",
+        "o": [
+         "twee dochtercellen die elk de helft van de chromosomen krijgen",
+         "vier dochtercellen die elk maar de helft van het DNA hebben gekregen",
+         "twee dochtercellen met precies hetzelfde DNA als de moedercel",
+         "één grote cel met twee keer zoveel DNA"
+        ],
+        "c": 2,
+        "d": 1,
+        "s": 1,
+        "u": "Mitose geeft twee genetisch identieke dochtercellen.",
+        "uo": [
+         "Koos je de helft van de chromosomen? Bij mitose blijft het aantal chromosomen gelijk: van 46 naar 2 × 46. Halveren gebeurt bij meiose.",
+         "Koos je vier cellen met de helft? Dat is het resultaat van meiose, de deling die geslachtscellen maakt. Mitose geeft twee cellen.",
+         "Klopt: bij mitose krijgt elke dochtercel van elk chromosoom één chromatide. Daardoor hebben beide cellen precies hetzelfde DNA als de moedercel.",
+         "Koos je één grote cel? Dan is het DNA wel verdubbeld, maar heeft er geen deling plaatsgevonden. Mitose eindigt met twee cellen."
+        ],
+        "uh": "Twee identieke cellen."
+       },
+       {
+        "v": "In welke fase van de mitose liggen de chromosomen in één vlak in het midden van de cel?",
+        "o": [
+         "profase",
+         "metafase",
+         "anafase",
+         "telofase"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 1,
+        "u": "In de metafase liggen de chromosomen in het evenaarsvlak.",
+        "uo": [
+         "Koos je profase? In de profase worden de chromosomen zichtbaar en verdwijnt het kernmembraan. Ze liggen dan nog verspreid.",
+         "Klopt: in de metafase liggen alle chromosomen op een rij in het midden van de cel, vastgehaakt aan de spoeldraden. Dan zijn ze het best te tellen.",
+         "Koos je anafase? In de anafase worden de chromatiden juist uit elkaar getrokken, naar de polen. Ze liggen dan niet meer in het midden.",
+         "Koos je telofase? Dan liggen de chromosomen al bij de polen en ontstaan er nieuwe kernen. Het midden is dan leeg."
+        ],
+        "uh": "Meta = midden."
+       },
+       {
+        "v": "Wat gebeurt er in de anafase van de mitose?",
+        "o": [
+         "de chromatiden van elk chromosoom worden naar de polen getrokken",
+         "de chromosomen worden zichtbaar doordat ze oprollen, en het kernmembraan verdwijnt",
+         "de chromosomen liggen op een rij in het midden van de cel",
+         "er ontstaan twee nieuwe kernmembranen om de chromosomen"
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 1,
+        "u": "In de anafase gaan de chromatiden uit elkaar, naar tegenovergestelde polen.",
+        "uo": [
+         "Klopt: in de anafase trekken de spoeldraden de twee chromatiden van elk chromosoom uit elkaar. Elke pool krijgt van elk chromosoom één exemplaar.",
+         "Koos je zichtbaar worden? Dat gebeurt in de profase, aan het begin. De anafase komt na de metafase.",
+         "Koos je op een rij in het midden? Dat is de metafase, de fase vlak voor de anafase.",
+         "Koos je nieuwe kernmembranen? Dat gebeurt in de telofase, de laatste fase. In de anafase bewegen de chromatiden nog."
+        ],
+        "uh": "Ana = uit elkaar."
+       },
+       {
+        "v": "Welk soort celdeling zorgt voor de nieuwe huid?",
+        "o": [
+         "meiose, want huidcellen moeten haploïd zijn om te kunnen groeien",
+         "meiose, want daarbij ontstaan veel nieuwe cellen tegelijk",
+         "bevruchting, want daarbij ontstaat een cel met 46 chromosomen",
+         "mitose, want daarbij krijgen de dochtercellen hetzelfde DNA"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 1,
+        "u": "Groei en herstel gaan via mitose: identieke dochtercellen.",
+        "uo": [
+         "Koos je haploïde huidcellen? Huidcellen zijn diploïd, met 46 chromosomen. Alleen geslachtscellen zijn haploïd.",
+         "Koos je meiose vanwege veel cellen? Meiose maakt geslachtscellen met de helft van de chromosomen. Huidcellen hebben er 46, dus ze ontstaan door mitose.",
+         "Koos je bevruchting? Bij bevruchting versmelten een eicel en een zaadcel tot een nieuw individu. Een wond herstel je zonder bevruchting.",
+         "Klopt: de nieuwe huidcellen moeten hetzelfde DNA hebben als de oude. Dat levert mitose: elke dochtercel krijgt een volledige, gelijke set chromosomen."
+        ],
+        "uh": "Herstel met gelijke cellen.",
+        "ctx": "Na een schaafwond op je knie groeit er binnen een week nieuwe huid. De nieuwe huidcellen hebben precies dezelfde eigenschappen als de oude huidcellen eromheen en ook dezelfde 46 chromosomen. Ze ontstaan uit cellen in de onderste laag van de opperhuid."
+       },
+       {
+        "v": "Waarom treft dit medicijn vooral kankercellen en minder de meeste gewone cellen?",
+        "o": [
+         "gewone cellen delen alleen door meiose en hebben geen spoelfiguur nodig",
+         "kankercellen hebben geen DNA meer en zijn daardoor kwetsbaarder",
+         "kankercellen delen veel vaker, dus worden ze vaker in de deling geremd",
+         "het medicijn komt alleen in kankercellen terecht en niet in gewone cellen"
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 1,
+        "u": "Een remmer van de deling treft vooral cellen die vaak delen.",
+        "uo": [
+         "Koos je meiose bij gewone cellen? Gewone lichaamscellen delen door mitose en gebruiken ook een spoelfiguur. Ze delen alleen veel minder vaak.",
+         "Koos je geen DNA? Kankercellen hebben wel DNA, vaak zelfs met extra fouten. Het medicijn grijpt aan op de deling, niet op het DNA.",
+         "Klopt: het medicijn werkt alleen op cellen die aan het delen zijn. Kankercellen delen veel vaker dan de meeste gewone cellen, dus zij worden het hardst geraakt.",
+         "Koos je alleen in kankercellen? Het medicijn komt via het bloed overal. Daarom hebben patiënten ook bijwerkingen in snel delende gewone cellen, zoals haarwortels."
+        ],
+        "uh": "Welke cellen zijn het vaakst aan het delen?",
+        "ctx": "Bij kanker delen cellen zich ongeremd door mitose. Een medicijn tegen kanker verhindert dat de spoelfiguur wordt opgebouwd, de draden die de chromosomen uit elkaar trekken. Delende cellen blijven daardoor hangen in de metafase en gaan dood. Patiënten verliezen vaak hun haar."
+       },
+       {
+        "v": "Hoeveel chromosomen heeft een zaadcel van de mens?",
+        "o": [
          "46",
+         "23",
          "92",
-         "Wisselend, soms meer soms minder"
+         "22"
         ],
         "c": 1,
-        "d": 2,
-        "u": "Onthoud: na mitose houden de dochtercellen hetzelfde aantal chromosomen (46).",
+        "d": 1,
+        "s": 2,
+        "u": "Een geslachtscel is haploïd: n = 23.",
         "uo": [
-         "23 is het halve aantal; dat krijg je juist na meiose.",
-         "Klopt: na mitose blijft het aantal gelijk, dus 46 chromosomen.",
-         "92 zou een verdubbeling zijn; dat gebeurt niet als eindresultaat.",
-         "Het aantal is niet wisselend; mitose houdt het aantal netjes gelijk."
+         "Koos je 46? Dat is het aantal in een lichaamscel (diploïd). Een zaadcel heeft de helft, zodat de bevruchte eicel weer 46 krijgt.",
+         "Klopt: een zaadcel is haploïd en heeft van elk chromosomenpaar maar één exemplaar: 23 chromosomen.",
+         "Koos je 92? Dat zou een cel zijn met vier exemplaren van elk chromosoom. Een zaadcel heeft juist de helft van 46.",
+         "Koos je 22? Dat zijn de gewone chromosomen zonder het geslachtschromosoom. Een zaadcel heeft ook een X of een Y: samen 23."
         ],
-        "uh": "Mitose houdt het aantal gelijk."
+        "uh": "De helft van 46."
        },
        {
-        "v": "Een lichaamscel heeft 46 chromosomen. Hoeveel heeft een geslachtscel na meiose?",
+        "v": "Welke beschrijving past bij homologe chromosomen?",
         "o": [
-         "46, evenveel als de moedercel",
-         "92, het dubbele",
-         "23, het halve aantal",
-         "0, geen chromosomen"
-        ],
-        "c": 2,
-        "d": 2,
-        "u": "Onthoud: na meiose heeft een geslachtscel het halve aantal, dus 23 chromosomen.",
-        "uo": [
-         "Evenveel (46) hoort bij mitose, niet bij de meiose.",
-         "92 zou een verdubbeling zijn; meiose halveert juist.",
-         "Klopt: meiose halveert het aantal van 46 naar 23 chromosomen.",
-         "Nul chromosomen zou geen werkende geslachtscel opleveren."
-        ],
-        "uh": "Meiose halveert: 46 wordt 23."
-       },
-       {
-        "v": "Waardoor lijken twee dochtercellen na mitose op elkaar?",
-        "o": [
-         "Doordat het DNA na de deling helemaal gehalveerd is",
-         "Doordat ze uit verschillende cellen komen",
-         "Doordat ze geslachtscellen zijn",
-         "Doordat het verdubbelde DNA gelijk verdeeld wordt"
-        ],
-        "c": 3,
-        "d": 2,
-        "u": "Onthoud: bij mitose wordt het gekopieerde DNA gelijk verdeeld, dus de cellen zijn identiek.",
-        "uo": [
-         "Het DNA wordt bij mitose niet gehalveerd; dat hoort bij meiose.",
-         "Beide dochtercellen komen uit dezelfde moedercel, niet uit verschillende.",
-         "Het zijn gewone lichaamscellen, geen geslachtscellen.",
-         "Klopt: het verdubbelde DNA wordt gelijk verdeeld, dus de cellen zijn gelijk."
-        ],
-        "uh": "Gelijk verdeeld DNA = gelijke cellen."
-       },
-       {
-        "v": "Waarom verschillen de kinderen uit een gezin van elkaar?",
-        "o": [
-         "Doordat meiose zorgt voor variatie in geslachtscellen",
-         "Doordat mitose telkens nieuwe combinaties chromosomen maakt",
-         "Doordat lichaamscellen zich anders delen",
-         "Doordat het DNA niet verdubbeld wordt"
+         "een paar chromosomen met dezelfde genen, één van vader en één van moeder",
+         "de twee chromatiden die samen één verdubbeld chromosoom vormen na de verdubbeling",
+         "twee chromosomen met precies dezelfde allelen",
+         "de X- en Y-chromosomen van een man"
         ],
         "c": 0,
         "d": 2,
-        "u": "Onthoud: meiose zorgt voor variatie, waardoor nakomelingen van elkaar verschillen.",
+        "s": 2,
+        "u": "Homologe chromosomen: een paar met dezelfde genen op dezelfde plek, één van elke ouder.",
         "uo": [
-         "Klopt: de meiose brengt variatie aan in de geslachtscellen.",
-         "Mitose maakt juist identieke cellen, geen nieuwe combinaties.",
-         "Lichaamscellen delen niet anders; de variatie zit in de geslachtscellen.",
-         "Het DNA wordt wel verdubbeld; dat is niet de reden voor verschillen."
+         "Klopt: homologe chromosomen dragen dezelfde genen op dezelfde plaats. Je krijgt er één van je vader en één van je moeder; de allelen kunnen verschillen.",
+         "Koos je twee chromatiden? Die zijn identieke kopieën van één chromosoom, ontstaan door verdubbeling. Homologe chromosomen komen van twee verschillende ouders.",
+         "Koos je dezelfde allelen? Homologe chromosomen hebben dezelfde genen, maar vaak verschillende allelen. Bijvoorbeeld een allel voor bruine en een voor blauwe ogen.",
+         "Koos je X en Y? Die vormen wel een paar, maar zijn niet echt homoloog: de Y is veel kleiner en heeft andere genen."
         ],
-        "uh": "Variatie komt door meiose."
+        "uh": "Zelfde genen, twee ouders."
        },
        {
-        "v": "Bij de bevruchting versmelten een eicel (n) en een zaadcel (n). Wat is het resultaat?",
+        "v": "Wat is 2n bij de hond en hoeveel chromosomen heeft de eicel?",
         "o": [
-         "Een haploide cel met slechts een enkel half stel",
-         "Een diploide cel (2n): het aantal is weer compleet",
-         "Een cel met maar liefst vier volledige stel chromosomen",
-         "Een cel zonder DNA"
-        ],
-        "c": 1,
-        "d": 2,
-        "u": "Onthoud: bij de bevruchting worden twee haploide cellen samen weer diploid (2n).",
-        "uo": [
-         "Het resultaat blijft niet haploid; n plus n wordt samen 2n.",
-         "Klopt: eicel (n) en zaadcel (n) vormen samen een diploide cel (2n).",
-         "Er ontstaan geen vier stel; twee enkele stellen worden een dubbel stel.",
-         "De cel heeft juist het DNA van beide ouders, dus zeker niet zonder DNA."
-        ],
-        "uh": "Bevruchting: n + n = 2n."
-       },
-       {
-        "v": "Waarom moet het chromosoomaantal in geslachtscellen gehalveerd zijn?",
-        "o": [
-         "Omdat geslachtscellen zich niet kunnen delen zonder dit",
-         "Omdat ze anders te klein worden",
-         "Zodat het aantal na de bevruchting weer 2n is",
-         "Zodat er meer variatie ontstaat"
-        ],
-        "c": 2,
-        "d": 2,
-        "u": "Onthoud: de halvering zorgt dat na de bevruchting (n + n) het aantal weer 2n wordt.",
-        "uo": [
-         "Delen is niet de reden; het gaat om het aantal na de bevruchting.",
-         "De grootte is niet de reden; het draait om het chromosoomaantal.",
-         "Klopt: doordat elk n bijdraagt, wordt het samen weer diploid (2n).",
-         "Variatie is een gevolg van meiose, maar niet de reden voor de halvering."
-        ],
-        "uh": "Halveren zodat n + n weer 2n wordt."
-       },
-       {
-        "v": "Een cel verdubbelt haar DNA en deelt daarna in vier cellen met half zoveel chromosomen. Welke deling?",
-        "o": [
-         "Mitose",
-         "DNA-verdubbeling",
-         "Bevruchting",
-         "Meiose"
+         "2n = 156; de eicel heeft 78 chromosomen",
+         "2n = 39; de eicel heeft 78 chromosomen",
+         "2n = 78; de eicel heeft ook 78 chromosomen",
+         "2n = 78; de eicel heeft 39 chromosomen"
         ],
         "c": 3,
         "d": 2,
-        "u": "Onthoud: vier cellen met het halve aantal chromosomen wijzen op meiose.",
+        "s": 2,
+        "u": "Lichaamscel = 2n = 78; geslachtscel = n = 39.",
         "uo": [
-         "Mitose geeft twee cellen met hetzelfde aantal, niet vier met de helft.",
-         "DNA-verdubbeling is een voorbereiding, geen deling in vier cellen.",
-         "Bevruchting is versmelten, geen deling in vier cellen.",
-         "Klopt: vier cellen met het halve aantal chromosomen is meiose."
+         "Koos je 2n = 156? 2n is het aantal in een lichaamscel, en dat is 78. Je hoeft het niet nog eens te verdubbelen.",
+         "Koos je 2n = 39? Een lichaamscel heeft het diploïde aantal, dus 2n is het aantal in de spiercel: 78.",
+         "Koos je 78 in de eicel? Dan zou de puppy na bevruchting 156 chromosomen krijgen. Een eicel heeft de helft.",
+         "Klopt: een lichaamscel is diploïd, dus 2n = 78. Een eicel is haploïd: n = 39, van elk paar één chromosoom."
         ],
-        "uh": "Vier cellen, half aantal = meiose."
+        "uh": "Lichaamscel = 2n.",
+        "ctx": "Een lichaamscel van een hond bevat 78 chromosomen. Een onderzoeker bekijkt een eicel en een spiercel van dezelfde teef onder de microscoop en telt in beide de chromosomen. Hij schrijft zijn uitkomst op met de letters n en 2n."
        },
        {
-        "v": "Bij ongeslachtelijke voortplanting ontstaan identieke nakomelingen. Welke deling hoort daarbij?",
+        "v": "Hoeveel chromosomen heeft een lichaamscel van een muildier?",
         "o": [
-         "Mitose, de nakomelingen zijn genetisch identiek",
-         "Meiose, want er ontstaan geslachtscellen",
-         "Meiose, met veel onderlinge variatie tussen de nakomelingen",
-         "Bevruchting van twee geslachtscellen"
-        ],
-        "c": 0,
-        "d": 2,
-        "u": "Onthoud: ongeslachtelijke voortplanting gaat via mitose en geeft identieke nakomelingen.",
-        "uo": [
-         "Klopt: mitose geeft identieke cellen, dus identieke nakomelingen.",
-         "Geslachtscellen en meiose horen bij de geslachtelijke voortplanting.",
-         "Variatie via meiose past bij geslachtelijke, niet ongeslachtelijke voortplanting.",
-         "Bevruchting hoort bij geslachtelijke voortplanting, niet bij deze vorm."
-        ],
-        "uh": "Ongeslachtelijk = mitose = identiek."
-       },
-       {
-        "v": "Een bioloog telt in een dochtercel evenveel chromosomen als in de moedercel. Wat concludeert hij?",
-        "o": [
-         "De cel is hoogstwaarschijnlijk door meiose ontstaan",
-         "De cel is door mitose ontstaan",
-         "De cel is een geslachtscel",
-         "Het DNA is niet verdubbeld"
-        ],
-        "c": 1,
-        "d": 3,
-        "u": "Onthoud: gelijk chromosoomaantal wijst op mitose; meiose zou halvering geven.",
-        "uo": [
-         "Meiose zou juist een halvering geven, geen gelijk aantal.",
-         "Klopt: een gelijk aantal chromosomen wijst op mitose.",
-         "Een geslachtscel is haploid; die heeft juist het halve aantal.",
-         "Zonder DNA-verdubbeling zouden de dochtercellen te weinig DNA krijgen."
-        ],
-        "uh": "Gelijk aantal = mitose."
-       },
-       {
-        "v": "In een geslachtscel worden 23 chromosomen geteld, in een lichaamscel 46. Wat toont dit over meiose?",
-        "o": [
-         "Meiose verdubbelt telkens het volledige chromosoomaantal",
-         "Meiose houdt het aantal gelijk",
-         "Meiose halveert het chromosoomaantal van 2n naar n",
-         "Meiose maakt twee identieke cellen"
+         "64",
+         "126",
+         "63",
+         "31"
         ],
         "c": 2,
         "d": 3,
-        "u": "Onthoud: 23 tegenover 46 laat zien dat meiose het aantal halveert (2n naar n).",
+        "s": 2,
+        "u": "Eicel paard n = 32, zaadcel ezel n = 31: samen 63.",
         "uo": [
-         "Verdubbelen klopt niet; 23 is juist minder dan 46.",
-         "Gelijk houden past bij mitose, niet bij deze halvering.",
-         "Klopt: van 46 (2n) naar 23 (n) is een halvering door meiose.",
-         "Twee identieke cellen horen bij mitose, niet bij deze meiose."
+         "Koos je 64? Dat is 2n van het paard. Het muildier krijgt maar de helft van het paard en de helft van de ezel.",
+         "Koos je 126? Dan heb je de lichaamscellen van paard en ezel opgeteld. Bij bevruchting versmelten twee haploïde cellen, niet twee diploïde.",
+         "Klopt: de eicel van het paard heeft n = 32, de zaadcel van de ezel n = 31. De bevruchte eicel, en dus elke lichaamscel van het muildier, heeft 32 + 31 = 63.",
+         "Koos je 31? Dat is n van de ezel, wat de zaadcel meebrengt. Daar komt nog n = 32 van de eicel bij."
         ],
-        "uh": "23 vs 46 = meiose halveert."
+        "uh": "Tel twee haploïde cellen op.",
+        "ctx": "Een paard heeft 2n = 64 en een ezel 2n = 62. Een muildier is een kruising van een paardenmerrie en een ezelhengst: een eicel van het paard wordt bevrucht door een zaadcel van de ezel. Muildieren zijn bijna altijd onvruchtbaar."
        },
        {
-        "v": "Waarom is variatie door meiose gunstig voor een soort?",
+        "v": "Waar in het lichaam van een man vindt meiose plaats?",
         "o": [
-         "Doordat alle nakomelingen dan volkomen identiek aan elkaar blijven",
-         "Doordat het lichaam sneller groeit",
-         "Doordat wonden sneller helen",
-         "Doordat verschillen de kans vergroten dat sommige zich aanpassen"
+         "in de huid",
+         "in de testes (zaadballen)",
+         "in het beenmerg van de botten",
+         "in de lever"
+        ],
+        "c": 1,
+        "d": 1,
+        "s": 3,
+        "u": "Meiose gebeurt alleen in de geslachtsorganen: bij de man in de testes.",
+        "uo": [
+         "Koos je de huid? Huidcellen delen door mitose, voor groei en herstel. Meiose gebeurt alleen bij het maken van geslachtscellen.",
+         "Klopt: meiose maakt geslachtscellen. Bij een man gebeurt dat in de testes, waar zaadcellen worden gemaakt.",
+         "Koos je het beenmerg? Daar ontstaan bloedcellen door mitose. Meiose vindt alleen plaats in de geslachtsorganen.",
+         "Koos je de lever? Levercellen delen door mitose, bijvoorbeeld na beschadiging. Meiose hoort bij de vorming van zaadcellen en eicellen."
+        ],
+        "uh": "Waar worden zaadcellen gemaakt?"
+       },
+       {
+        "v": "Hoeveel cellen ontstaan er uit één cel na een volledige meiose?",
+        "o": [
+         "vier haploïde cellen",
+         "twee diploïde cellen",
+         "twee haploïde cellen",
+         "vier diploïde cellen"
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 3,
+        "u": "Meiose bestaat uit twee delingen en levert vier haploïde cellen.",
+        "uo": [
+         "Klopt: meiose bestaat uit twee delingen na elkaar. Uit één diploïde cel ontstaan zo vier haploïde cellen.",
+         "Koos je twee diploïde? Dat is het resultaat van mitose. Meiose halveert het aantal chromosomen en heeft twee delingen.",
+         "Koos je twee haploïde? Dat is de situatie na de eerste meiotische deling. Daarna volgt nog een tweede deling: samen vier.",
+         "Koos je vier diploïde? Bij meiose wordt het aantal chromosomen gehalveerd. De vier cellen zijn dus haploïd."
+        ],
+        "uh": "Twee delingen, halvering."
+       },
+       {
+        "v": "Waarom noem je meiose een reductiedeling?",
+        "o": [
+         "er ontstaan minder cellen dan bij mitose",
+         "de cellen worden bij elke deling kleiner, tot ze niet meer kunnen delen",
+         "het DNA wordt bij meiose niet verdubbeld",
+         "het aantal chromosomen wordt gehalveerd van 2n naar n"
         ],
         "c": 3,
-        "d": 3,
-        "u": "Onthoud: variatie vergroot de kans dat een deel van de soort zich aanpast aan veranderingen.",
+        "d": 2,
+        "s": 3,
+        "u": "Reductie = vermindering: het aantal chromosomen gaat van 2n naar n.",
         "uo": [
-         "Meiose geeft juist verschillen, geen volkomen identieke nakomelingen.",
-         "Sneller groeien hoort bij mitose en is niet het voordeel van variatie.",
-         "Wondheling gaat via mitose en heeft niets met variatie te maken.",
-         "Klopt: door verschillen kunnen sommige nakomelingen beter tegen veranderingen."
+         "Koos je minder cellen? Meiose levert juist meer cellen op dan mitose: vier in plaats van twee.",
+         "Koos je kleinere cellen? De naam gaat over het aantal chromosomen, niet over de grootte van de cellen.",
+         "Koos je geen verdubbeling? Ook voor de meiose wordt het DNA één keer verdubbeld. Daarna volgen twee delingen, en zo halveert het aantal.",
+         "Klopt: bij meiose gaat het aantal chromosomen van diploïd (2n) naar haploïd (n). Die halvering heet reductie."
         ],
-        "uh": "Variatie helpt de soort zich aanpassen."
+        "uh": "Reductie = minder chromosomen."
        },
        {
-        "v": "Een cel deelt zonder dat het DNA eerst verdubbeld is. Wat gaat er mis?",
+        "v": "Hoeveel chromosomen en chromatiden heeft deze cel?",
         "o": [
-         "De dochtercellen krijgen te weinig DNA",
-         "De dochtercellen krijgen juist te veel DNA",
-         "Er ontstaan vier gezonde geslachtscellen",
-         "Er verandert niets, dit is normaal"
+         "4 chromosomen, elk uit 1 chromatide",
+         "8 chromosomen, elk uit 1 chromatide",
+         "4 chromosomen, elk uit 2 chromatiden",
+         "8 chromosomen, elk uit 2 chromatiden"
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 3,
+        "u": "Na meiose I: de homologen zijn gescheiden (n = 4), maar elk chromosoom heeft nog twee chromatiden.",
+        "uo": [
+         "Koos je 4 met 1 chromatide? Zo ziet een cel eruit na de tweede meiotische deling. Na de eerste zijn de chromatiden nog niet gescheiden.",
+         "Koos je 8 chromosomen met 1 chromatide? Zo ziet een cel eruit na een mitose. Na meiose I is het aantal chromosomen al gehalveerd.",
+         "Klopt: na de eerste deling zijn de homologe paren uit elkaar, dus 4 chromosomen. De chromatiden gaan pas in de tweede deling uit elkaar, dus elk heeft er nog 2.",
+         "Koos je 8 met 2 chromatiden? Zo ziet de cel eruit vóór de meiose, na de verdubbeling. Bij de eerste deling gaan de paren uit elkaar."
+        ],
+        "uh": "Wat gaat uit elkaar in deling 1, wat in deling 2?",
+        "ctx": "Bij de meiose gaan in de eerste deling de homologe chromosomen uit elkaar, en in de tweede deling de chromatiden. Een onderzoeker telt bij een fruitvlieg met 2n = 8 de chromosomen in een cel die net de eerste meiotische deling heeft afgemaakt."
+       },
+       {
+        "v": "Hoeveel chromosomen heeft een lichaamscel van iemand met het syndroom van Down?",
+        "o": [
+         "46",
+         "47",
+         "69",
+         "24"
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 3,
+        "u": "Eicel met 24 (twee keer chromosoom 21) + zaadcel met 23 = 47.",
+        "uo": [
+         "Koos je 46? Dat is het normale aantal. Met een extra chromosoom 21 komt er één bij: 47.",
+         "Klopt: de eicel had 24 chromosomen (twee chromosomen 21), de zaadcel 23. De bevruchte eicel en alle lichaamscellen hebben er dus 47.",
+         "Koos je 69? Dan zou er een hele extra set van 23 zijn. Bij Down gaat het om één extra chromosoom.",
+         "Koos je 24? Dat is het aantal in de afwijkende eicel. Na de bevruchting komen de 23 van de zaadcel erbij."
+        ],
+        "uh": "Tel eicel en zaadcel op.",
+        "ctx": "Bij het syndroom van Down heeft iemand drie exemplaren van chromosoom 21 in alle lichaamscellen. Dit ontstaat meestal doordat bij de meiose in de moeder de twee chromosomen 21 niet uit elkaar gaan, zodat een eicel er twee krijgt. Die eicel wordt bevrucht door een normale zaadcel."
+       },
+       {
+        "v": "Wat gebeurt er bij de bevruchting met het aantal chromosomen?",
+        "o": [
+         "n + n = 2n: het diploïde aantal wordt hersteld",
+         "2n + 2n = 4n: het aantal verdubbelt",
+         "2n wordt n: het aantal halveert",
+         "het aantal blijft n, want alleen de kern van de zaadcel telt"
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 4,
+        "u": "Eicel (n) + zaadcel (n) = zygote (2n).",
+        "uo": [
+         "Klopt: een haploïde eicel en een haploïde zaadcel versmelten. De bevruchte eicel (zygote) heeft weer het diploïde aantal: n + n = 2n.",
+         "Koos je 4n? Eicel en zaadcel zijn haploïd, niet diploïd. Daardoor komt het aantal niet op 4n uit.",
+         "Koos je halveren? Halveren gebeurt bij de meiose, vóór de bevruchting. Bij de bevruchting komt het aantal juist weer op 2n.",
+         "Koos je alleen de zaadcel? Ook de kern van de eicel telt mee; het kind krijgt van beide ouders een set chromosomen."
+        ],
+        "uh": "Twee keer n."
+       },
+       {
+        "v": "Waarom lijken broers en zussen niet precies op elkaar?",
+        "o": [
+         "broers en zussen hebben steeds andere ouders",
+         "bij de mitose na de bevruchting ontstaan steeds weer andere, nieuwe genen",
+         "de chromosomen van vader en moeder worden bij de bevruchting niet echt gemengd en blijven apart",
+         "elke zaadcel en eicel krijgt bij de meiose een andere combinatie van chromosomen"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 4,
+        "u": "Door de meiose is elke geslachtscel uniek; elk kind krijgt een andere combinatie.",
+        "uo": [
+         "Koos je andere ouders? Broers en zussen hebben dezelfde ouders. Ze krijgen alleen elk een andere combinatie van hun chromosomen.",
+         "Koos je nieuwe genen bij de mitose? Mitose kopieert het DNA precies. Het verschil tussen broers en zussen ontstaat bij de meiose en de bevruchting.",
+         "Koos je niet gemengd? In de bevruchte eicel liggen de chromosomen van vader en moeder samen in één kern. Het gaat erom welke chromosomen elk kind krijgt.",
+         "Klopt: bij de meiose komt van elk paar willekeurig het vaderlijke of moederlijke chromosoom in een geslachtscel. Elke eicel en zaadcel is daardoor anders."
+        ],
+        "uh": "Elke geslachtscel is anders."
+       },
+       {
+        "v": "Hoeveel combinaties zijn er bij de mens mogelijk, zonder crossing-over?",
+        "o": [
+         "23² = 529",
+         "2 × 23 = 46",
+         "2²³, ongeveer 8 miljoen",
+         "4 × 23 = 92"
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 4,
+        "u": "Bij n paren zijn er 2ⁿ combinaties: 2²³ ≈ 8,4 miljoen.",
+        "uo": [
+         "Koos je 23²? Dan vermenigvuldig je 23 met zichzelf. Het gaat om 2 keuzes per paar, 23 keer: 2²³.",
+         "Koos je 46? Dan heb je 23 × 2 gedaan. Bij twee paren zijn het 2 × 2 = 4 combinaties, bij drie 2 × 2 × 2 = 8: je moet vermenigvuldigen per paar.",
+         "Klopt: elk van de 23 paren kan op twee manieren verdeeld worden. Dat geeft 2 × 2 × ... = 2²³, ongeveer 8,4 miljoen verschillende geslachtscellen.",
+         "Koos je 4 × 23? De 4 combinaties uit het voorbeeld horen bij 2 paren samen, niet bij één paar. Per paar zijn er 2 keuzes, en die vermenigvuldig je: 2²³."
+        ],
+        "uh": "Twee keuzes per paar.",
+        "ctx": "Een mens heeft 23 paren chromosomen. Bij de meiose komt van elk paar willekeurig het chromosoom van de vader of dat van de moeder in een geslachtscel terecht. Bij een organisme met 2 paren zijn er dus 2 × 2 = 4 combinaties mogelijk, bij 3 paren 2 × 2 × 2 = 8."
+       },
+       {
+        "v": "Wat is het gevolg van deze uitwisseling voor de geslachtscellen?",
+        "o": [
+         "het aantal chromosomen in de geslachtscel verdubbelt daardoor ook nog",
+         "er ontstaan nieuwe combinaties van allelen op één chromosoom",
+         "alle geslachtscellen worden precies gelijk aan elkaar",
+         "er ontstaan nieuwe genen die de ouders niet hadden"
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 4,
+        "u": "Crossing-over mengt allelen van vader en moeder op één chromosoom: meer variatie.",
+        "uo": [
+         "Koos je verdubbeling? Er worden alleen stukken uitgewisseld, er komen geen chromosomen bij. Het aantal blijft n.",
+         "Klopt: na de uitwisseling ligt op één chromosoom een mix van vaderlijke en moederlijke allelen. Zo ontstaan nog meer verschillende geslachtscellen.",
+         "Koos je allemaal gelijk? Het effect is juist omgekeerd: door de uitwisseling worden de geslachtscellen nog verschillender.",
+         "Koos je nieuwe genen? Er ontstaan nieuwe combinaties van bestaande allelen, geen nieuwe genen. Nieuwe allelen ontstaan alleen door mutatie."
+        ],
+        "uh": "Mengen, niet maken.",
+        "ctx": "Tijdens de eerste meiotische deling liggen homologe chromosomen vlak tegen elkaar. Daarbij kunnen ze stukken uitwisselen: crossing-over. Na de meiose bevat een chromosoom dan een stuk van het vaderlijke en een stuk van het moederlijke chromosoom, met de allelen die daarop lagen."
+       },
+       {
+        "v": "Waarom hebben eeneiige tweelingen precies hetzelfde DNA en twee-eiige niet?",
+        "o": [
+         "mitose geeft twee keer hetzelfde DNA; twee eicellen zijn door meiose verschillend",
+         "eeneiige tweelingen hebben van elk paar maar één chromosoom, dus minder variatie",
+         "twee-eiige tweelingen hebben elk maar 23 chromosomen, omdat de eicel gedeeld is",
+         "eeneiige tweelingen ontstaan zonder bevruchting, dus helemaal zonder DNA van de vader"
         ],
         "c": 0,
         "d": 3,
-        "u": "Onthoud: zonder verdubbeling is er te weinig DNA om over twee cellen te verdelen.",
+        "s": 4,
+        "u": "Eeneiig: één zygote, gedeeld door mitose. Twee-eiig: twee verschillende eicellen en zaadcellen.",
         "uo": [
-         "Klopt: zonder verdubbeling is er te weinig DNA voor beide dochtercellen.",
-         "Te veel DNA klopt niet; er is juist een tekort zonder de kopie.",
-         "Vier gezonde geslachtscellen ontstaan niet zomaar; er ontbreekt DNA.",
-         "Er verandert wel iets: de verdeling gaat mis zonder de verdubbeling."
+         "Klopt: een eeneiige tweeling komt uit één zygote die door mitose deelt, dus beide helften hebben hetzelfde DNA. Twee-eiige komen uit twee eicellen en twee zaadcellen, die door de meiose elk anders zijn.",
+         "Koos je één chromosoom van elk paar? Eeneiige tweelingen zijn gewoon diploïd met 46 chromosomen. Ze hebben alleen allebei hetzelfde DNA.",
+         "Koos je 23 chromosomen? Twee-eiige tweelingen hebben elk 46 chromosomen. Ze verschillen omdat ze uit verschillende eicellen en zaadcellen komen.",
+         "Koos je zonder bevruchting? Ook een eeneiige tweeling ontstaat uit een bevruchte eicel, met DNA van vader en moeder."
         ],
-        "uh": "Geen verdubbeling = te weinig DNA."
+        "uh": "Eén zygote of twee?",
+        "ctx": "Een eeneiige tweeling ontstaat als een bevruchte eicel zich deelt door mitose en de twee cellen uit elkaar gaan; elk groeit uit tot een kind. Een twee-eiige tweeling ontstaat uit twee verschillende eicellen, die door twee verschillende zaadcellen worden bevrucht."
+       },
+       {
+        "v": "Welke uitspraak over mitose en meiose klopt?",
+        "o": [
+         "beide komen alleen voor in de geslachtsorganen",
+         "mitose geeft geslachtscellen, meiose geeft lichaamscellen",
+         "beide geven vier cellen met de helft van het DNA",
+         "mitose geeft lichaamscellen, meiose geeft geslachtscellen"
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 5,
+        "u": "Mitose: groei, herstel, lichaamscellen. Meiose: geslachtscellen.",
+        "uo": [
+         "Koos je beide in de geslachtsorganen? Mitose gebeurt in het hele lichaam, overal waar cellen groeien of herstellen.",
+         "Koos je het omgekeerde? Geslachtscellen moeten de helft van de chromosomen hebben; dat levert meiose. Mitose houdt het aantal gelijk.",
+         "Koos je beide vier cellen? Alleen meiose geeft vier haploïde cellen. Mitose geeft twee cellen met evenveel DNA als de moedercel.",
+         "Klopt: mitose maakt identieke lichaamscellen voor groei en herstel. Meiose maakt haploïde geslachtscellen voor de voortplanting."
+        ],
+        "uh": "Lichaam of voortplanting?"
+       },
+       {
+        "v": "Waarom is de nieuwe plant erfelijk gelijk aan de moederplant?",
+        "o": [
+         "bij het stekken vindt meiose plaats, die gelijke cellen geeft",
+         "de stek is bevrucht door stuifmeel van dezelfde moederplant, dus gelijk",
+         "alle cellen ontstaan door mitose uit cellen van de moederplant",
+         "de wortels nemen DNA op uit het water waarin de stek staat"
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 5,
+        "u": "Stekken is ongeslachtelijke voortplanting: alleen mitose, dus hetzelfde DNA.",
+        "uo": [
+         "Koos je meiose? Meiose geeft juist verschillende, haploïde cellen. Een stek groeit door mitose.",
+         "Koos je bevrucht door stuifmeel? Er is bij stekken geen bloem en geen bevruchting. Bovendien geeft zelfbestuiving door de meiose wel variatie.",
+         "Klopt: bij stekken is er geen meiose en geen bevruchting. Alle nieuwe cellen ontstaan door mitose uit de stek en hebben hetzelfde DNA als de moederplant.",
+         "Koos je DNA uit het water? Een plant neemt geen DNA op uit water. Al het DNA komt uit de cellen van de stek zelf."
+        ],
+        "uh": "Geen meiose, geen bevruchting.",
+        "ctx": "Een tuinder knipt een tak van een geranium af en zet die in water. Na een paar weken heeft de stek wortels en groeit hij uit tot een nieuwe plant. Alle bloemen en bladeren van de nieuwe plant zijn precies gelijk aan die van de moederplant, ook de vlekjes op de bladeren."
+       },
+       {
+        "v": "Welke deling wordt in deze grafiek getoond?",
+        "o": [
+         "mitose, want het DNA verdubbelt eerst en halveert daarna een keer",
+         "meiose, want het DNA halveert twee keer na één verdubbeling",
+         "meiose, want het DNA verdubbelt twee keer achter elkaar",
+         "mitose, want het DNA eindigt op de helft van het begin"
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 5,
+        "u": "Eén verdubbeling en twee halveringen (eindigt op de helft): meiose.",
+        "uo": [
+         "Koos je mitose? Bij mitose halveert het DNA maar één keer, van 4 terug naar 2. Hier daalt het nog een keer, naar 1.",
+         "Klopt: na één verdubbeling (2 → 4) halveert het DNA twee keer (4 → 2 → 1). De cellen eindigen met de helft van het begin: dat is meiose.",
+         "Koos je twee keer verdubbelen? De grafiek stijgt maar één keer, van 2 naar 4. Daarna daalt hij twee keer.",
+         "Koos je mitose die op de helft eindigt? Juist bij mitose eindig je weer op het beginniveau. Eindigen op de helft past bij meiose."
+        ],
+        "uh": "Tel de dalingen.",
+        "ctx": "Een grafiek toont de hoeveelheid DNA in één cel tijdens een celdeling. De hoeveelheid begint op 2 eenheden, stijgt in de interfase naar 4, daalt daarna naar 2 en een tijdje later nog een keer naar 1. Bij elke daling ontstaan twee nieuwe cellen."
+       },
+       {
+        "v": "Waarom is meiose nodig voor geslachtelijke voortplanting?",
+        "o": [
+         "zonder halvering zou het aantal chromosomen elke generatie verdubbelen",
+         "zonder meiose zouden er geen lichaamscellen kunnen ontstaan",
+         "meiose zorgt ervoor dat het kind precies op één ouder lijkt",
+         "meiose zorgt dat geslachtscellen meer DNA hebben dan gewone lichaamscellen"
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 5,
+        "u": "Meiose voorkomt dat het aantal chromosomen bij elke bevruchting verdubbelt.",
+        "uo": [
+         "Klopt: bij bevruchting versmelten twee cellen. Zonder halvering vooraf zou het kind 92 chromosomen hebben, en de volgende generatie 184.",
+         "Koos je lichaamscellen? Lichaamscellen ontstaan door mitose. Meiose is nodig voor geslachtscellen.",
+         "Koos je op één ouder lijken? Door meiose en bevruchting krijgt het kind juist een mix van beide ouders.",
+         "Koos je meer DNA? Geslachtscellen hebben juist de helft van het DNA van lichaamscellen."
+        ],
+        "uh": "Denk aan n + n."
        }
       ],
       "oe": [
        {
-        "bron": "Wondheling op de huid",
-        "ctx": "Een leerling schaaft zijn knie. Na een paar dagen is de wond dichtgegroeid met nieuwe huidcellen. Onder de microscoop blijkt dat de nieuwe cellen precies hetzelfde aantal chromosomen hebben als de omringende huidcellen.",
-        "v": "Leg uit welke celdeling voor het dichtgroeien van de wond zorgt en waarom de nieuwe cellen hetzelfde aantal chromosomen hebben.",
+        "bron": "Examenstijl",
+        "ctx": "Een leerling bekijkt een preparaat van een uienwortelpunt en telt 400 cellen: 340 in de interfase, 32 in de profase, 12 in de metafase, 6 in de anafase en 10 in de telofase. De celcyclus duurt 24 uur.",
+        "v": "Bereken hoe lang de mitose in totaal duurt en leg uit waarom de leerling de wortelpunt gebruikt en geen cellen uit een blad.",
         "o": [
          ""
         ],
         "c": 0,
-        "u": "Het dichtgroeien gebeurt door mitose, de gewone celdeling voor groei en herstel. Bij mitose wordt het DNA eerst verdubbeld en daarna gelijk over twee dochtercellen verdeeld, waardoor elke dochtercel evenveel chromosomen krijgt als de moedercel. Daarom hebben de nieuwe huidcellen hetzelfde aantal chromosomen als de cellen eromheen. (Kernpunten: [1] wondherstel gaat via mitose; [2] het verdubbelde DNA wordt gelijk verdeeld, dus het aantal chromosomen blijft gelijk.)"
+        "u": "In de mitose: 32 + 12 + 6 + 10 = 60 cellen van de 400 = 15% (1p). 0,15 × 24 = 3,6 uur (1p). In de wortelpunt delen cellen voortdurend (groeipunt), terwijl cellen in een volgroeid blad nauwelijks delen; alleen in de wortelpunt zie je dus veel delingsfasen (1p)."
        },
        {
-        "bron": "Chromosomen tellen in cellen",
-        "ctx": "In een practicum bekijkt een leerling twee soorten menselijke cellen onder de microscoop. In een gewone lichaamscel telt zij 46 chromosomen. In een zaadcel telt zij er 23.",
-        "v": "Verklaar met het begrip meiose waarom een zaadcel maar de helft van het aantal chromosomen van een lichaamscel heeft.",
+        "bron": "Examenstijl",
+        "ctx": "Een cel van een fruitvlieg heeft 2n = 8. Een onderzoeker meet in een cel uit de testes de hoeveelheid DNA op vier momenten: P (begin) 2 eenheden, Q 4 eenheden, R 2 eenheden en S 1 eenheid.",
+        "v": "Leg uit welke deling hier plaatsvindt, en geef het aantal chromosomen en het aantal chromatiden per chromosoom in een cel op moment R.",
         "o": [
          ""
         ],
         "c": 0,
-        "u": "Zaadcellen zijn geslachtscellen die door meiose (de reductiedeling) worden gevormd. Bij meiose gaat het chromosoomaantal van diploid (2n) naar haploid (n): het aantal wordt gehalveerd. Daarom bevat een zaadcel 23 chromosomen tegenover 46 in een lichaamscel. (Kernpunten: [1] zaadcellen ontstaan door meiose; [2] meiose halveert het aantal van 2n naar n, dus 46 wordt 23.)"
+        "u": "Meiose: na één verdubbeling halveert het DNA twee keer en eindigt het op de helft, en het gebeurt in de testes (1p). Op R is de eerste deling voorbij: 4 chromosomen (1p), elk met 2 chromatiden, want de chromatiden gaan pas in de tweede deling uit elkaar (1p)."
        },
        {
-        "bron": "Van bevruchting tot baby",
-        "ctx": "Bij de bevruchting versmelt een menselijke eicel met 23 chromosomen met een zaadcel met 23 chromosomen. Uit de bevruchte eicel groeit door talloze delingen een compleet kind, waarvan alle lichaamscellen 46 chromosomen bevatten.",
-        "v": "Leg uit hoe het aantal chromosomen bij de bevruchting weer op 46 komt en welke deling daarna voor de groei van het kind zorgt.",
+        "bron": "Examenstijl",
+        "ctx": "Aardbeien kunnen zich voortplanten met zaden en met uitlopers: horizontale stengels waaraan nieuwe planten groeien. Een kweker heeft een aardbeiplant met grote, zoete vruchten en wil veel planten met precies dezelfde eigenschappen.",
+        "v": "Leg uit welke manier van voortplanting de kweker moet gebruiken en waarom planten uit zaad kunnen verschillen.",
         "o": [
          ""
         ],
         "c": 0,
-        "u": "Bij de bevruchting versmelten een eicel (n = 23) en een zaadcel (n = 23), waardoor de bevruchte eicel weer diploid wordt met 23 plus 23 is 46 chromosomen. Daarna groeit het kind door mitose: bij die gewone celdeling ontstaan steeds identieke dochtercellen met hetzelfde aantal chromosomen (46). (Kernpunten: [1] bevruchting telt n en n samen tot 2n, dus 46; [2] de groei daarna verloopt via mitose met behoud van 46 chromosomen.)"
+        "u": "Hij moet uitlopers gebruiken: die ontstaan door mitose, dus de nieuwe planten hebben precies hetzelfde DNA (1p). Zaden ontstaan na meiose en bevruchting (1p). Door de willekeurige verdeling van de chromosomen bij de meiose (en crossing-over) heeft elke geslachtscel een andere combinatie van allelen, dus de nakomelingen verschillen (1p)."
        },
        {
-        "bron": "Aardbeienplant met uitlopers",
-        "ctx": "Een aardbeienplant maakt uitlopers waaraan nieuwe plantjes groeien. Deze plantjes zijn genetisch precies gelijk aan de moederplant. Een tuinder gebruikt daarnaast ook zaden, die ontstaan na bestuiving en bevruchting en waaruit onderling verschillende plantjes groeien.",
-        "v": "Leg uit welke celdeling bij de uitlopers hoort en waarom de plantjes uit zaad wel van elkaar verschillen.",
+        "bron": "Examenstijl",
+        "ctx": "Bij het syndroom van Klinefelter heeft een man de geslachtschromosomen XXY. Dat kan ontstaan doordat bij de meiose in de vader de X en de Y niet uit elkaar gaan, zodat een zaadcel zowel een X als een Y krijgt.",
+        "v": "Geef het aantal chromosomen in deze zaadcel en in de lichaamscellen van de zoon, en leg uit in welke meiotische deling de fout is ontstaan.",
         "o": [
          ""
         ],
         "c": 0,
-        "u": "De plantjes aan de uitlopers ontstaan door ongeslachtelijke voortplanting via mitose; daarbij zijn de dochtercellen identiek, dus de nieuwe plantjes zijn genetisch gelijk aan de moederplant. De plantjes uit zaad ontstaan na bevruchting van geslachtscellen die door meiose zijn gevormd; meiose zorgt voor variatie, waardoor deze plantjes onderling en van de moederplant verschillen. (Kernpunten: [1] uitlopers gaan via mitose en geven identieke nakomelingen; [2] zaad ontstaat via meiose en bevruchting, wat variatie geeft.)"
+        "u": "De zaadcel heeft 22 + X + Y = 24 chromosomen (1p). De zoon heeft na bevruchting met een eicel (23, met X) 47 chromosomen (1p). X en Y zijn een homoloog paar; die gaan normaal in de eerste meiotische deling uit elkaar, dus daar is de fout ontstaan (1p)."
        },
        {
-        "bron": "Deling met gemarkeerd DNA",
-        "ctx": "In een proef markeren onderzoekers al het DNA in een moedercel met een fluorescerende kleurstof. De cel verdubbelt eerst haar DNA en deelt zich daarna een keer. Beide dochtercellen blijken evenveel gemarkeerd DNA te bevatten als de oorspronkelijke moedercel.",
-        "v": "Leg uit waarom het DNA eerst verdubbeld wordt en waarom beide dochtercellen daardoor evenveel DNA hebben als de moedercel.",
+        "bron": "Examenstijl",
+        "ctx": "Het medicijn colchicine verhindert de vorming van de spoelfiguur. Kwekers behandelen kiemende zaden ermee: de chromosomen verdubbelen wel, maar de cel deelt niet. Zo ontstaan planten met vier sets chromosomen (4n), die vaak grotere vruchten hebben.",
+        "v": "Leg uit waarom de behandelde cellen 4n worden en in welke fase van de mitose de deling stopt.",
         "o": [
          ""
         ],
         "c": 0,
-        "u": "Voor de deling verdubbelt de cel al haar DNA, zodat er een dubbele hoeveelheid is om te verdelen. Bij deze mitose wordt die dubbele hoeveelheid gelijk over de twee dochtercellen verdeeld, waardoor elke dochtercel evenveel DNA (en evenveel chromosomen) krijgt als de moedercel had. (Kernpunten: [1] DNA-verdubbeling levert genoeg DNA voor twee cellen; [2] het verdubbelde DNA wordt gelijk verdeeld, dus elke dochtercel heeft evenveel als de moedercel.)"
+        "u": "In de interfase wordt het DNA verdubbeld, zodat elk chromosoom twee chromatiden heeft (1p). Zonder spoelfiguur kunnen de chromatiden niet naar de polen worden getrokken; de cel komt niet verder dan de metafase (1p). De chromatiden worden losse chromosomen in één kern: de cel heeft dan twee keer zoveel chromosomen, 4n (1p)."
        }
       ]
      },

@@ -1195,20 +1195,24 @@ var VAKKEN = [
      },
      {
       "id": "M6",
+      "lo": "bi.M.6",
+      "gs": 2,
       "naam": "Celdeling: mitose en meiose",
-      "beschrijving": "Hoe cellen zich delen via mitose (twee identieke cellen voor groei en herstel) en meiose (vier geslachtscellen met het halve aantal chromosomen voor variatie).",
-      "ceStatus": "CE",
+      "beschrijving": "Je beschrijft de celcyclus en de DNA-verdubbeling, herkent de fasen van de mitose, rekent met diploïde en haploïde aantallen, legt de twee delingen van de meiose uit en verklaart hoe meiose en bevruchting zorgen voor variatie.",
+      "ceStatus": "CE+SE",
+      "binas": "",
+      "val": "",
       "onderwerpen": [
-       "DNA-verdubbeling voor de deling",
-       "Mitose (gewone celdeling)",
-       "Meiose (reductiedeling)",
-       "Diploid (2n) en haploid (n)",
-       "Bevruchting herstelt 2n",
-       "Variatie tussen nakomelingen"
+       "De celcyclus en DNA-verdubbeling",
+       "Mitose",
+       "Diploïd en haploïd",
+       "Meiose",
+       "Bevruchting en variatie",
+       "Mitose en meiose vergelijken"
       ],
-      "nSv": 25,
+      "nSv": 27,
       "nOe": 5,
-      "nBeg": 12,
+      "nBeg": 15,
       "hasSam": true
      },
      {
