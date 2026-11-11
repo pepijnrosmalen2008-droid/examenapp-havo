@@ -2622,9 +2622,13 @@ var VAKKEN = [
      },
      {
       "id": "D3",
+      "lo": "na.D.3",
+      "gs": 2,
       "naam": "Serie- en parallelschakeling",
-      "beschrijving": "Het verschil begrijpen tussen serie- en parallelschakelingen en weten hoe stroom, spanning en weerstand zich in elke schakeling gedragen.",
-      "ceStatus": "ce",
+      "beschrijving": "Je herkent serie- en parallelschakelingen, past de regels voor stroom, spanning en totale weerstand toe (ook bij gemengde schakelingen), voorspelt wat er gebeurt als een onderdeel kapotgaat of erbij komt, en plaatst schakelaars zodat ze doen wat de opdracht vraagt.",
+      "ceStatus": "CE",
+      "binas": "35D",
+      "val": "",
       "onderwerpen": [
        "Serie versus parallel",
        "Stroom in serie en parallel",
@@ -2633,9 +2637,9 @@ var VAKKEN = [
        "Eén onderdeel kapot",
        "Schakelaars plaatsen"
       ],
-      "nSv": 25,
+      "nSv": 28,
       "nOe": 5,
-      "nBeg": 12,
+      "nBeg": 11,
       "hasSam": true
      },
      {
