@@ -5,7 +5,7 @@
 Volledige beschrijving (functies, inhoud per niveau, prijs, wat Slagio niet is): https://slagio.nl/llms-full.txt
 
 ## In het kort
-- 12 vakken havo, 16 vakken vwo, 12 vakken vmbo; 26.998 oefenvragen en 4.346 begrippen.
+- 12 vakken havo, 16 vakken vwo, 12 vakken vmbo; 27.000 oefenvragen en 4.346 begrippen.
 - Adaptief oefenen: na een fout een vraag over hetzelfde onderwerp, een niveau makkelijker; uitleg bij elk fout antwoord.
 - Foutenboek en herhalen met gespreide herhaling, beheersing per leerdoel, studieplan tot het examen.
 - Examens met klok, proefexamens in examenstijl met modelantwoord en puntenverdeling, archief met officiële oude examens.
@@ -66,7 +66,7 @@ Volledige beschrijving (functies, inhoud per niveau, prijs, wat Slagio niet is):
 - [Voedselrelaties en energiedoorgifte (Biologie HAVO)](https://slagio.nl/leren/havo/biologie/voedselrelaties-en-energiedoorgifte.html): Je beschrijft voedselketens en voedselwebben, onderscheidt producenten, consumenten en reducenten, rekent met de energiestroom van ongeveer 10% per stap,…
 - [Populatiedynamiek en draagkracht (Biologie HAVO)](https://slagio.nl/leren/havo/biologie/populatiedynamiek-en-draagkracht.html): Je berekent populatiedichtheid en schat populaties met vangen en terugvangen, rekent met geboorte, sterfte, immigratie en emigratie, herkent exponentiële…
 - [Relaties tussen soorten (Biologie HAVO)](https://slagio.nl/leren/havo/biologie/relaties-tussen-soorten.html): Je herkent en verklaart mutualisme, commensalisme, parasitisme, predatie en concurrentie tussen soorten, beschrijft de levenscyclus van een parasiet met…
-- [Successie en biodiversiteit (Biologie HAVO)](https://slagio.nl/leren/havo/biologie/successie-en-biodiversiteit.html): Successie als reeks opeenvolgende levensgemeenschappen van pioniers tot climaxstadium, en de betekenis van biodiversiteit en duurzaamheid.
+- [Successie en biodiversiteit (Biologie HAVO)](https://slagio.nl/leren/havo/biologie/successie-en-biodiversiteit.html): Je beschrijft successie als een reeks stadia van pioniers tot climax, legt uit hoe elk stadium de omstandigheden verandert, onderscheidt primaire en…
 - [Evolutie en natuurlijke selectie (Biologie HAVO)](https://slagio.nl/leren/havo/biologie/evolutie-en-natuurlijke-selectie.html): Variatie en mutatie, natuurlijke selectie, evolutie als verandering van een populatie over generaties, en soortvorming. Nadruk op: populaties evolueren (niet…
 - [Reactievergelijkingen kloppend maken (Scheikunde HAVO)](https://slagio.nl/leren/havo/scheikunde/reactievergelijkingen-kloppend-maken.html): Je leest wat een reactievergelijking vertelt, maakt hem kloppend met coëfficiënten en stelt hem op uit een beschrijving, ook bij verbrandingen en ionen.
 - [Rekenen aan reacties (Scheikunde HAVO)](https://slagio.nl/leren/havo/scheikunde/rekenen-aan-reacties.html): Je rekent uit hoeveel stof er reageert en ontstaat met de molverhouding, je vindt de beperkende stof, berekent het rendement en rekent met gasvolumes.

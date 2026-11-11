@@ -1540,9 +1540,13 @@ var VAKKEN = [
      },
      {
       "id": "P5",
+      "lo": "bi.P.5",
+      "gs": 2,
       "naam": "Successie en biodiversiteit",
-      "beschrijving": "Successie als reeks opeenvolgende levensgemeenschappen van pioniers tot climaxstadium, en de betekenis van biodiversiteit en duurzaamheid.",
-      "ceStatus": "CE",
+      "beschrijving": "Je beschrijft successie als een reeks stadia van pioniers tot climax, legt uit hoe elk stadium de omstandigheden verandert, onderscheidt primaire en secundaire successie, verklaart waarom biodiversiteit een ecosysteem stabieler maakt en past het begrip duurzaamheid toe op visserij, stikstof en natuurbeheer.",
+      "ceStatus": "CE+SE",
+      "binas": "",
+      "val": "",
       "onderwerpen": [
        "Successie als reeks, geen eenmalige gebeurtenis",
        "Pioniersoorten op kale grond",
@@ -1551,7 +1555,7 @@ var VAKKEN = [
        "Biodiversiteit en stabiliteit",
        "Duurzaamheid"
       ],
-      "nSv": 25,
+      "nSv": 27,
       "nOe": 5,
       "nBeg": 12,
       "hasSam": true

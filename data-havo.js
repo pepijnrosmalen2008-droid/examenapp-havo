@@ -60645,9 +60645,13 @@ var VAKKEN = [
      },
      {
       "id": "P5",
+      "lo": "bi.P.5",
+      "gs": 2,
       "naam": "Successie en biodiversiteit",
-      "beschrijving": "Successie als reeks opeenvolgende levensgemeenschappen van pioniers tot climaxstadium, en de betekenis van biodiversiteit en duurzaamheid.",
-      "ceStatus": "CE",
+      "beschrijving": "Je beschrijft successie als een reeks stadia van pioniers tot climax, legt uit hoe elk stadium de omstandigheden verandert, onderscheidt primaire en secundaire successie, verklaart waarom biodiversiteit een ecosysteem stabieler maakt en past het begrip duurzaamheid toe op visserij, stikstof en natuurbeheer.",
+      "ceStatus": "CE+SE",
+      "binas": "",
+      "val": "",
       "onderwerpen": [
        "Successie als reeks, geen eenmalige gebeurtenis",
        "Pioniersoorten op kale grond",
@@ -60656,554 +60660,659 @@ var VAKKEN = [
        "Biodiversiteit en stabiliteit",
        "Duurzaamheid"
       ],
-      "sam": "Successie is de geleidelijke opeenvolging van levensgemeenschappen in een gebied. Het is een reeks stappen, geen eenmalige gebeurtenis. Op kale grond vestigen zich eerst pioniersoorten, zoals mossen en grassen. Die veranderen de bodem, waardoor er langzaam andere soorten bij kunnen komen: eerst kruiden en struiken, later bomen. Uiteindelijk ontstaat een stabiel eindstadium, het climaxstadium. Tijdens de successie neemt de biodiversiteit meestal toe. Biodiversiteit is de verscheidenheid aan soorten in een gebied. Een hoge biodiversiteit maakt een ecosysteem stabieler. Duurzaamheid betekent dat we de natuur zo gebruiken dat ze niet uitput en ook voor de toekomst behouden blijft.",
+      "sam": "Successie = reeks levensgemeenschappen; elk stadium verandert bodem, licht en vocht. Primair: zonder bodem (lava, zandplaat). Secundair: na verstoring, bodem blijft (akker, brand). Pioniers: korstmos, mos, helmgras; verdragen extreme omstandigheden, veel lichte zaden, vormen humus; duindoorn bindt stikstof. Gras → struiken → berken → beuken: steeds minder licht op de bodem. Climax: stabiel eindstadium, bepaald door klimaat en bodem; aanmaak = afbraak. Biodiversiteit: soorten, genen, ecosystemen; veel soorten = stabieler; monocultuur kwetsbaar. Duurzaam: niet meer oogsten dan aangroei; stikstof en versnippering bedreigen biodiversiteit; ecoducten verbinden.",
       "begrippen": [
        {
         "t": "Successie",
-        "d": "de geleidelijke opeenvolging van levensgemeenschappen in een gebied"
+        "d": "Geleidelijke opeenvolging van levensgemeenschappen in hetzelfde gebied."
+       },
+       {
+        "t": "Primaire successie",
+        "d": "Successie op grond waar nog geen bodem is, zoals kale rots, lava of een nieuwe zandplaat."
+       },
+       {
+        "t": "Secundaire successie",
+        "d": "Successie na een verstoring waarbij de bodem is blijven liggen, zoals na brand of op een verlaten akker."
        },
        {
         "t": "Pioniersoort",
-        "d": "een soort die zich als eerste op kale grond vestigt"
+        "d": "Soort die als eerste op kale grond groeit en extreme omstandigheden verdraagt."
+       },
+       {
+        "t": "Humus",
+        "d": "Donkere, organische laag in de bodem, ontstaan uit afgebroken dode resten."
        },
        {
         "t": "Climaxstadium",
-        "d": "het stabiele eindstadium van een successiereeks"
+        "d": "Stabiel eindstadium van de successie, dat nauwelijks nog verandert zolang klimaat en bodem gelijk blijven."
+       },
+       {
+        "t": "Verstoring",
+        "d": "Gebeurtenis zoals storm, brand of kap die een levensgemeenschap (deels) wegvaagt."
        },
        {
         "t": "Biodiversiteit",
-        "d": "de verscheidenheid aan soorten in een gebied"
+        "d": "Verscheidenheid aan leven: aantal soorten, genetische variatie binnen soorten en verschillende ecosystemen."
        },
        {
-        "t": "Soortenrijkdom",
-        "d": "het aantal verschillende soorten in een gebied"
+        "t": "Stabiliteit",
+        "d": "Vermogen van een ecosysteem om na een verandering in evenwicht te blijven of terug te keren."
+       },
+       {
+        "t": "Monocultuur",
+        "d": "Teelt van één gewas of één ras op een groot oppervlak."
        },
        {
         "t": "Duurzaamheid",
-        "d": "gebruik van de natuur zonder haar uit te putten"
+        "d": "Gebruik van de natuur zonder dat er voor latere generaties minder overblijft."
        },
        {
-        "t": "Levensgemeenschap",
-        "d": "alle organismen van alle soorten samen in een gebied"
-       },
-       {
-        "t": "Kolonisatie",
-        "d": "het zich vestigen van soorten in een nieuw gebied"
-       },
-       {
-        "t": "Kale grond",
-        "d": "grond zonder planten waar successie kan beginnen"
-       },
-       {
-        "t": "Stabiel ecosysteem",
-        "d": "een ecosysteem dat weinig verandert en verstoring goed opvangt"
-       },
-       {
-        "t": "Uitsterven",
-        "d": "het volledig verdwijnen van een soort"
-       },
-       {
-        "t": "Natuurbeheer",
-        "d": "het beheren van de natuur om soorten en gebieden te behouden"
+        "t": "Ecoduct",
+        "d": "Natuurbrug over een weg, waarmee dieren van het ene natuurgebied naar het andere kunnen."
        }
       ],
       "sv": [
        {
         "v": "Wat is successie?",
         "o": [
-         "De opeenvolging van levensgemeenschappen in een gebied",
-         "Een eenmalige verandering die maar één keer gebeurt",
-         "De niet-levende omgeving van een ecosysteem",
-         "Het totale aantal individuen van één enkele soort samen"
-        ],
-        "c": 0,
-        "d": 2,
-        "u": "Successie is de geleidelijke opeenvolging van levensgemeenschappen: een reeks stappen in de tijd.",
-        "uo": [
-         "Klopt: een opeenvolging van levensgemeenschappen.",
-         "Successie is een reeks, geen eenmalige gebeurtenis.",
-         "Dat is de biotoop.",
-         "Dat is de populatiegrootte."
-        ],
-        "uh": "Successie = opeenvolging van levensgemeenschappen (een reeks)."
-       },
-       {
-        "v": "Is successie een eenmalige gebeurtenis of een reeks?",
-        "o": [
-         "Een eenmalige momentopname",
-         "Een reeks opeenvolgende stappen",
-         "Iets wat helemaal niet verandert",
-         "Een enkele plant die groeit"
-        ],
-        "c": 1,
-        "d": 2,
-        "u": "Successie is een reeks stappen waarin de ene levensgemeenschap de andere opvolgt.",
-        "uo": [
-         "Successie is geen momentopname.",
-         "Klopt: een reeks opeenvolgende stappen.",
-         "Er verandert juist veel.",
-         "Het gaat om hele levensgemeenschappen, niet één plant."
-        ],
-        "uh": "Successie = een reeks, niet eenmalig."
-       },
-       {
-        "v": "Wat is een pioniersoort?",
-        "o": [
-         "De allerlaatste soort die in het climaxstadium overblijft",
-         "Een roofdier boven in de voedselketen",
-         "Een soort die zich als eerste op kale grond vestigt",
-         "Een soort die alleen in een bos leeft"
+         "de groei van één populatie tot aan de draagkracht",
+         "het plotseling uitsterven van één soort in een gebied",
+         "een reeks levensgemeenschappen na elkaar",
+         "het jaarlijks terugkeren van dezelfde planten in de lente"
         ],
         "c": 2,
         "d": 1,
-        "u": "Een pioniersoort vestigt zich als eerste op kale grond, zoals mos of gras.",
+        "s": 0,
+        "u": "Successie: geleidelijke opeenvolging van levensgemeenschappen in één gebied.",
         "uo": [
-         "Pioniers komen juist aan het begin, niet aan het eind.",
-         "Een pionier is niet per se een roofdier.",
-         "Klopt: als eerste op kale grond.",
-         "Pioniers komen juist op kale grond, niet in een bos."
+         "Koos je groei tot de draagkracht? Dat is populatiegroei van één soort, de S-kromme. Successie gaat over een opeenvolging van veel soorten samen.",
+         "Koos je het uitsterven van één soort? Successie gaat over de hele levensgemeenschap die langzaam verandert, niet over één soort die plotseling verdwijnt.",
+         "Klopt: bij successie volgen levensgemeenschappen elkaar geleidelijk op in hetzelfde gebied, bijvoorbeeld van kale grond via gras en struiken naar bos.",
+         "Koos je het jaarlijks terugkeren van planten? Dat is een seizoenscyclus. Bij successie verandert de levensgemeenschap blijvend over tientallen jaren."
         ],
-        "uh": "Pioniersoort = komt als eerste op kale grond."
+        "uh": "Denk aan een reeks over vele jaren."
        },
        {
-        "v": "Wat is het climaxstadium?",
+        "v": "Wat is het verschil tussen primaire en secundaire successie?",
         "o": [
-         "De kale grond helemaal aan het begin van de reeks",
-         "De eerste mossen op de rots",
-         "Een gebied zonder enig leven",
-         "Het stabiele eindstadium van de reeks"
+         "primair gaat over planten, secundair alleen over dieren",
+         "primair begint zonder bodem, secundair met bodem",
+         "primair duurt kort, secundair duurt honderden jaren langer",
+         "primair gebeurt alleen in zee, secundair alleen op het land"
         ],
-        "c": 3,
+        "c": 1,
         "d": 2,
-        "u": "Het climaxstadium is het stabiele eindstadium van een successiereeks, bijvoorbeeld een volgroeid bos.",
+        "s": 0,
+        "u": "Primaire successie op kale grond zonder bodem; secundaire na een verstoring, de bodem blijft.",
         "uo": [
-         "Kale grond is juist het begin.",
-         "Mossen horen bij het begin.",
-         "In het climaxstadium is juist veel leven.",
-         "Klopt: het stabiele eindstadium."
+         "Koos je planten tegen dieren? Bij beide vormen van successie veranderen planten én dieren. Het verschil zit in de bodem waarmee het begint.",
+         "Klopt: primaire successie begint op grond zonder bodem, zoals een nieuwe zandplaat of gestolde lava. Secundaire successie begint na een verstoring waarbij de bodem blijft liggen, zoals na een bosbrand.",
+         "Koos je primair kort? Het is andersom: primaire successie duurt juist langer, omdat er eerst een bodem moet ontstaan.",
+         "Koos je zee tegen land? Beide vormen komen op het land en in het water voor. Het verschil is of er al een bodem ligt."
         ],
-        "uh": "Climaxstadium = stabiel eindstadium."
+        "uh": "Ligt er al een bodem?"
        },
        {
-        "v": "Wat gebeurt er meestal met de biodiversiteit tijdens successie?",
+        "v": "Welk voorbeeld is secundaire successie?",
         "o": [
-         "Die neemt toe",
-         "Die verdwijnt helemaal",
-         "Die blijft precies gelijk",
-         "Die daalt steeds verder"
+         "een akker die niet meer wordt bewerkt",
+         "een nieuwe zandplaat die in zee opduikt",
+         "gestolde lava na een vulkaanuitbarsting",
+         "kale rots die vrijkomt als een gletsjer smelt"
         ],
         "c": 0,
         "d": 2,
-        "u": "Tijdens successie komen er steeds meer soorten bij, dus neemt de biodiversiteit meestal toe.",
+        "s": 0,
+        "u": "Op de akker ligt al een bodem met zaden en humus.",
         "uo": [
-         "Klopt: de biodiversiteit neemt meestal toe.",
-         "De biodiversiteit verdwijnt niet.",
-         "Ze blijft juist niet gelijk.",
-         "Ze daalt juist meestal niet."
+         "Klopt: op een verlaten akker ligt al een vruchtbare bodem met zaden en wortels. De successie begint daar meteen met kruiden en grassen: secundaire successie.",
+         "Koos je de nieuwe zandplaat? Daar ligt nog geen bodem met humus, dus de successie begint helemaal vooraan: dat is primaire successie.",
+         "Koos je gestolde lava? Lava is kaal gesteente zonder bodem en zonder zaden. Daar begint primaire successie met korstmossen.",
+         "Koos je kale rots bij een gletsjer? Ook daar ligt geen bodem. Pioniers moeten de bodem eerst vormen, dus het is primaire successie."
         ],
-        "uh": "Tijdens successie neemt de biodiversiteit meestal toe."
+        "uh": "Waar ligt al een bodem?"
        },
        {
-        "v": "Wat is biodiversiteit?",
+        "v": "Waarom verloopt de successie op Surtsey zo langzaam?",
         "o": [
-         "De niet-levende omgeving van een gebied",
-         "De verscheidenheid aan soorten in een gebied",
-         "Het aantal individuen van één soort",
-         "De hoeveelheid regen die er jaarlijks in het gebied valt"
+         "er is te veel stikstof in het zeewater",
+         "er zijn te veel roofdieren op het eiland",
+         "het eiland ligt te ver van de zon af",
+         "er is nog geen bodem"
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 0,
+        "u": "Zonder bodem houdt de grond geen water en voedingsstoffen vast.",
+        "uo": [
+         "Koos je te veel stikstof? Op kale lava is juist te weinig stikstof. Een gebrek aan voedingsstoffen remt de groei, geen overschot.",
+         "Koos je roofdieren? Op een nieuw vulkaaneiland zijn juist bijna geen dieren. Roofdieren zijn niet de reden dat planten langzaam komen.",
+         "Koos je afstand tot de zon? Surtsey krijgt net zoveel zonlicht als IJsland. Licht is er genoeg, het probleem is de kale lava zonder bodem.",
+         "Klopt: op de lava ligt nog geen bodem. Die houdt water en voedingsstoffen vast. Pas als pioniers een dunne bodem hebben gevormd, kunnen grotere planten groeien. Dat duurt lang."
+        ],
+        "uh": "Wat ontbreekt er op kale lava?",
+        "ctx": "Het eiland Surtsey bij IJsland is in 1963 ontstaan door een vulkaanuitbarsting. Biologen volgen sindsdien welke soorten er komen. Na tien jaar groeiden er een paar soorten mos en korstmos op de lava. Pas na dertig jaar kwamen er grassen en kruiden, vooral op plekken waar zeevogels broedden."
+       },
+       {
+        "v": "Waarom volgen de stadia van successie elkaar op?",
+        "o": [
+         "elk jaar waait er een nieuwe soort zaad binnen",
+         "de dieren eten alle planten van het vorige stadium op",
+         "elk stadium verandert de omstandigheden",
+         "de mens plant in elk stadium nieuwe bomen aan"
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 0,
+        "u": "Organismen veranderen bodem, licht en vocht; dan krijgen andere soorten een voordeel.",
+        "uo": [
+         "Koos je nieuwe zaden? Zaden waaien steeds binnen, maar ze groeien pas als de omstandigheden passen. Die omstandigheden verandert het vorige stadium.",
+         "Koos je dieren die alles opeten? Begrazing kan successie juist tegenhouden. De opvolging komt doordat planten de bodem en het licht veranderen.",
+         "Klopt: elk stadium verandert de abiotische factoren. Er komt meer bodem, meer humus en meer schaduw. Daardoor krijgen andere soorten een voordeel en verdringen ze de vorige.",
+         "Koos je de mens? Successie gaat vanzelf, zonder dat iemand iets plant. De mens houdt successie juist vaak tegen door te maaien of te laten grazen."
+        ],
+        "uh": "Wat doet elk stadium met de bodem?"
+       },
+       {
+        "v": "Welke organismen zijn typische pioniers op kale rots?",
+        "o": [
+         "beuken en eiken",
+         "korstmossen",
+         "varens in de schaduw",
+         "paddenstoelen op dood hout"
         ],
         "c": 1,
         "d": 1,
-        "u": "Biodiversiteit is de verscheidenheid aan soorten (en variatie aan leven) in een gebied.",
+        "s": 1,
+        "u": "Korstmossen verdragen droogte en hebben geen bodem nodig.",
         "uo": [
-         "Dat is de biotoop.",
-         "Klopt: de verscheidenheid aan soorten.",
-         "Dat is de populatiegrootte.",
-         "Neerslag is geen biodiversiteit."
+         "Koos je beuken en eiken? Dat zijn bomen van het eindstadium. Ze hebben een dikke, vochtige bodem nodig en kunnen niet op kale rots groeien.",
+         "Klopt: korstmossen kunnen op kale rots groeien. Ze verdragen droogte en hitte en hebben geen bodem nodig. Ze zijn een samenwerking van een schimmel en een alg.",
+         "Koos je varens in de schaduw? Varens hebben een vochtige bodem en schaduw nodig. Op kale rots in de volle zon drogen ze uit.",
+         "Koos je paddenstoelen op dood hout? Die breken dode resten af en hebben dus al organisch materiaal nodig. Op kale rots is dat er nog niet."
         ],
-        "uh": "Biodiversiteit = verscheidenheid aan soorten."
+        "uh": "Wie heeft geen bodem nodig?"
        },
        {
-        "v": "Waarom is een hoge biodiversiteit gunstig voor een ecosysteem?",
+        "v": "Hoe maken pioniers het mogelijk dat er later andere planten komen?",
         "o": [
-         "Omdat het ecosysteem dan instabieler wordt",
-         "Omdat er dan maar één soort overblijft",
-         "Omdat het ecosysteem dan stabieler is",
-         "Omdat er dan geen voedselketens meer zijn"
-        ],
-        "c": 2,
-        "d": 3,
-        "u": "Met veel soorten kan een ecosysteem een verstoring beter opvangen, dus is het stabieler.",
-        "uo": [
-         "Meer biodiversiteit maakt het juist stabieler.",
-         "Bij hoge biodiversiteit zijn er juist veel soorten.",
-         "Klopt: veel soorten maken het ecosysteem stabieler.",
-         "Er zijn juist meer voedselketens."
-        ],
-        "uh": "Hoge biodiversiteit = stabieler ecosysteem."
-       },
-       {
-        "v": "Wat betekent duurzaamheid?",
-        "o": [
-         "De natuur zo snel mogelijk opmaken",
-         "Alle bomen in het gebied in één keer tegelijk omkappen",
-         "Alleen naar de winst van vandaag kijken",
-         "De natuur gebruiken zonder haar uit te putten"
-        ],
-        "c": 3,
-        "d": 2,
-        "u": "Duurzaamheid betekent de natuur zo gebruiken dat ze niet uitput en ook voor de toekomst blijft bestaan.",
-        "uo": [
-         "Dat is juist het tegenovergestelde van duurzaam.",
-         "Alles kappen is niet duurzaam.",
-         "Duurzaamheid kijkt juist naar de toekomst.",
-         "Klopt: gebruiken zonder uitputten."
-        ],
-        "uh": "Duurzaamheid = gebruiken zonder uitputten, ook voor later."
-       },
-       {
-        "v": "Wat vestigt zich als eerste op een kale rots?",
-        "o": [
-         "Mossen en korstmossen",
-         "Grote eiken en beuken",
-         "Roofdieren van de savanne",
-         "Volgroeide struiken met bessen"
+         "ze vormen een dunne bodem",
+         "ze geven gif af dat andere soorten tegenhoudt",
+         "ze blijven altijd staan en geven schaduw voor de rest",
+         "ze eten de zaden van andere planten op"
         ],
         "c": 0,
         "d": 2,
-        "u": "Op kale rots komen eerst pioniersoorten zoals mossen en korstmossen.",
+        "s": 1,
+        "u": "Verwering en dode resten (humus) vormen de eerste bodem.",
         "uo": [
-         "Klopt: mossen en korstmossen zijn pioniers.",
-         "Grote bomen komen pas veel later.",
-         "Roofdieren komen niet als eerste.",
-         "Struiken komen pas na de pioniers."
+         "Klopt: pioniers laten het gesteente verweren, vangen stof op en sterven af. Hun resten worden humus. Zo ontstaat een dunne bodem waarin grotere planten kunnen wortelen.",
+         "Koos je gif? Dan zouden ze de successie juist tegenhouden. Pioniers maken de weg vrij voor andere soorten door de bodem te verbeteren.",
+         "Koos je altijd blijven staan? Pioniers verdwijnen juist als grotere planten komen. Ze verdragen geen schaduw en geen concurrentie.",
+         "Koos je zaden opeten? Planten eten geen zaden. Pioniers helpen latere soorten op weg door bodem te maken, niet door ze op te eten."
         ],
-        "uh": "Eerste op kale rots = mossen (pioniers)."
+        "uh": "Wat blijft er achter als ze afsterven?"
        },
        {
-        "v": "Waarom kunnen na de pioniersoorten andere soorten zich vestigen?",
+        "v": "Welke eigenschap past het best bij een pioniersoort?",
         "o": [
-         "Omdat de pioniers alle ruimte innemen",
-         "Omdat de pioniers de bodem veranderen",
-         "Omdat de zon dan opeens veel minder gaat schijnen",
-         "Omdat er geen bodem meer nodig is"
+         "weinig zware zaden die vlak bij de plant vallen",
+         "een diep wortelstelsel dat honderden jaren groeit",
+         "groeit alleen goed in diepe schaduw",
+         "veel lichte zaden die ver komen"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 1,
+        "u": "Pioniers verspreiden zich snel naar nieuwe kale plekken.",
+        "uo": [
+         "Koos je weinig zware zaden? Die komen niet ver. Zo bereikt een soort geen nieuwe kale plekken. Dat past bij beuken en eiken, niet bij pioniers.",
+         "Koos je het diepe wortelstelsel? Dat past bij grote bomen uit het eindstadium. Pioniers leven vaak kort en groeien snel.",
+         "Koos je groeien in schaduw? Pioniers groeien juist in de volle zon. Als het schaduwrijk wordt, verdwijnen ze.",
+         "Klopt: pioniers maken veel kleine, lichte zaden die met de wind ver komen. Zo bereiken ze snel nieuwe kale plekken, waar ze weinig concurrentie hebben."
+        ],
+        "uh": "Hoe bereiken ze nieuwe kale grond?"
+       },
+       {
+        "v": "Welke rol speelt helmgras in de successie van de duinen?",
+        "o": [
+         "het houdt alle andere planten weg",
+         "het maakt het zand zouter",
+         "het legt het zand vast",
+         "het eet de wortels van andere planten"
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 1,
+        "u": "Helmgras vangt en bindt stuivend zand; zo ontstaat een duin waarop andere soorten komen.",
+        "uo": [
+         "Koos je alle andere planten weghouden? Helmgras maakt het juist mogelijk dat andere planten op het duin komen. Daarna wordt het zelf verdrongen.",
+         "Koos je zouter zand? Regen spoelt het zout juist uit het zand van een duin. Helmgras maakt het zand niet zouter, maar legt het vast.",
+         "Klopt: helmgras groeit door het zand heen en houdt het met zijn wortels vast. Zo ontstaat een duin. Daarop kan humus ontstaan en komen later andere planten.",
+         "Koos je wortels opeten? Planten eten geen wortels. Helmgras houdt met zijn eigen wortels het zand vast."
+        ],
+        "uh": "Wat doen de wortels met het stuivende zand?",
+        "ctx": "Op het strand waait het zand voortdurend weg. Helmgras is een pionier die goed tegen stuivend zand kan. Als hij onder het zand raakt, groeit hij er gewoon doorheen. Zijn lange wortels vormen een netwerk in het zand. Waar veel helmgras staat, groeit een duin steeds hoger."
+       },
+       {
+        "v": "Waarom komen er na duindoorn meer andere plantensoorten?",
+        "o": [
+         "duindoorn maakt de bodem zuurder voor iedereen",
+         "de bodem krijgt meer stikstof",
+         "de doorns houden konijnen weg van de grassen",
+         "duindoorn houdt het zonlicht volledig tegen"
         ],
         "c": 1,
         "d": 3,
-        "u": "Pioniersoorten veranderen de bodem, bijvoorbeeld door humusvorming, waardoor andere soorten een kans krijgen.",
+        "s": 1,
+        "u": "Bacteriën in de wortelknolletjes binden stikstof; die komt via afgevallen blad in de bodem.",
         "uo": [
-         "Ze nemen niet alle ruimte in.",
-         "Klopt: pioniers veranderen de bodem voor anderen.",
-         "De zon is niet de reden.",
-         "Bodem blijft juist nodig."
+         "Koos je zuurder? Zuurgraad is niet de reden. Het verschil zit in de stikstof die de duindoorn via zijn bacteriën en blad in de bodem brengt.",
+         "Klopt: duindoorn heeft bacteriën in wortelknolletjes die stikstof uit de lucht binden. Via afgevallen blad komt die stikstof in de bodem. Daardoor kunnen veeleisende planten groeien.",
+         "Koos je konijnen weghouden? Doorns kunnen grazers afschrikken, maar dat verklaart niet waarom andere plantensoorten beter groeien. Kijk naar de bodem.",
+         "Koos je al het licht tegenhouden? Dan zouden er juist minder planten komen. Andere planten groeien beter door de rijkere bodem."
         ],
-        "uh": "Pioniers veranderen de bodem, dan komen andere soorten."
+        "uh": "Wat zit er in de wortelknolletjes?",
+        "ctx": "In de zeereep groeit veel duindoorn. Aan de wortels zitten knolletjes met bacteriën die stikstof uit de lucht kunnen binden. Onderzoekers meten het stikstofgehalte van de bodem onder duindoornstruiken en op open zand ernaast. Onder de struiken is het gehalte drie keer zo hoog en groeien meer soorten planten."
        },
        {
-        "v": "Welke volgorde klopt voor een successiereeks op kale grond?",
+        "v": "Welke volgorde past bij successie op droge zandgrond?",
         "o": [
-         "Eerst het volgroeide bos, dan struiken, dan pas mossen",
-         "Struiken, bos, mossen",
-         "Mossen, struiken, bos",
-         "Bos, mossen, struiken"
+         "grassen → struiken → berken → beuken",
+         "beuken → berken → struiken → grassen",
+         "struiken → beuken → grassen → berken",
+         "berken → grassen → beuken → struiken"
         ],
-        "c": 2,
-        "d": 2,
-        "u": "Eerst pioniers (mossen en grassen), dan kruiden en struiken, ten slotte bos.",
-        "uo": [
-         "Bos komt juist als laatste.",
-         "Mossen komen eerst, niet als laatste.",
-         "Klopt: mossen, dan struiken, dan bos.",
-         "Struiken komen na de mossen, niet na het bos."
-        ],
-        "uh": "Reeks: mossen, struiken, bos."
-       },
-       {
-        "v": "Wat is soortenrijkdom?",
-        "o": [
-         "Het aantal individuen van één soort",
-         "De hoeveelheid biomassa in een gebied",
-         "De niet-levende factoren van het gebied bij elkaar",
-         "Het aantal verschillende soorten in een gebied"
-        ],
-        "c": 3,
+        "c": 0,
         "d": 1,
-        "u": "Soortenrijkdom is het aantal verschillende soorten dat in een gebied leeft.",
+        "s": 2,
+        "u": "Eerst lage pioniers, dan struiken, pionierbomen en ten slotte schaduwbomen.",
         "uo": [
-         "Dat is de populatiegrootte.",
-         "Dat is de biomassa.",
-         "Dat zijn abiotische factoren.",
-         "Klopt: het aantal verschillende soorten."
+         "Klopt: eerst komen lage planten zoals grassen, dan struiken, daarna lichtminnende bomen zoals berken en ten slotte schaduwverdragende bomen zoals beuken.",
+         "Koos je de omgekeerde volgorde? Beuken staan aan het eind. Hun zaailingen kunnen alleen groeien als er al een bodem en schaduw is.",
+         "Koos je struiken eerst en grassen later? Struiken hebben meer bodem nodig dan grassen. Grassen komen dus eerder, en beuken komen na berken.",
+         "Koos je berken voor grassen? Berken hebben al een bodem nodig. Op kale zandgrond komen eerst grassen en kruiden."
         ],
-        "uh": "Soortenrijkdom = aantal verschillende soorten."
+        "uh": "Van laag en lichtminnend naar hoog en schaduwrijk."
        },
        {
-        "v": "Waarom is een monocultuur (één gewas) kwetsbaar?",
+        "v": "Waarom verdwijnen berken uit een bos waar beuken opgroeien?",
         "o": [
-         "Omdat de lage biodiversiteit hem instabiel maakt",
-         "Omdat er te veel verschillende soorten zijn",
-         "Omdat er dan veel te veel roofdieren aanwezig zijn",
-         "Omdat er geen abiotische factoren zijn"
+         "beuken geven een gif af waar alle berken direct aan doodgaan",
+         "berken worden door beuken opgegeten",
+         "berken kunnen niet tegen een dikke bodem met humus",
+         "jonge berken krijgen te weinig licht"
         ],
-        "c": 0,
-        "d": 3,
-        "u": "Met maar één soort is de biodiversiteit laag, dus een ziekte of plaag kan het hele veld treffen.",
-        "uo": [
-         "Klopt: lage biodiversiteit maakt het instabiel.",
-         "Er is juist maar één soort.",
-         "Roofdieren zijn niet de kern van het probleem.",
-         "Er zijn altijd abiotische factoren."
-        ],
-        "uh": "Weinig soorten = laag en kwetsbaar (monocultuur)."
-       },
-       {
-        "v": "Wat is een stabiel ecosysteem?",
-        "o": [
-         "Een ecosysteem met maar één soort",
-         "Een ecosysteem dat verstoring goed opvangt",
-         "Een ecosysteem zonder enig leven",
-         "Een ecosysteem dat elke dag totaal verandert"
-        ],
-        "c": 1,
+        "c": 3,
         "d": 2,
-        "u": "Een stabiel ecosysteem verandert weinig en kan een verstoring goed opvangen, vaak door hoge biodiversiteit.",
+        "s": 2,
+        "u": "Beuken geven diepe schaduw; berkenzaailingen hebben veel licht nodig.",
         "uo": [
-         "Eén soort maakt het juist kwetsbaar.",
-         "Klopt: het vangt verstoring goed op.",
-         "Een stabiel ecosysteem zit vol leven.",
-         "Een stabiel ecosysteem verandert juist weinig."
+         "Koos je gif? Beuken doden berken niet direct. De berken verdwijnen langzaam, doordat er geen nieuwe berken bij komen in de schaduw.",
+         "Koos je opeten? Bomen eten elkaar niet op. Het is concurrentie om licht, waarin de beuk het wint.",
+         "Koos je de dikke bodem? Berken groeien prima op een bodem met humus. Ze verdwijnen omdat hun zaailingen geen licht krijgen.",
+         "Klopt: berken zijn lichtminnend. Onder de dichte kroon van beuken komt weinig licht op de bodem. Jonge beuken groeien daar wel, jonge berken niet. Oude berken sterven en worden niet vervangen."
         ],
-        "uh": "Stabiel ecosysteem = vangt verstoring goed op."
+        "uh": "Wie verdraagt schaduw?"
        },
        {
-        "v": "Een bos wordt gekapt en het gebied wordt kaal. Wat gebeurt er daarna meestal?",
+        "v": "Waarom groeien er in het beukenbos de minste kruiden?",
         "o": [
-         "Er blijft voorgoed kale grond over",
-         "Het bos staat de volgende dag weer terug",
-         "Er begint opnieuw een successiereeks",
-         "Er komt nooit meer een plant terug"
+         "er zijn de meeste konijnen die alles opeten",
+         "de bodem bevat de minste humus",
+         "er komt weinig licht op de bodem",
+         "het is daar te warm voor de meeste kruiden"
         ],
         "c": 2,
         "d": 3,
-        "u": "Op de kale grond vestigen zich weer pioniers, waarna de successie opnieuw begint richting bos.",
+        "s": 2,
+        "u": "Licht is de remmende factor voor kruiden onder een dicht bladerdak.",
         "uo": [
-         "De grond blijft niet voorgoed kaal.",
-         "Een bos groeit niet in één dag terug.",
-         "Klopt: de successie begint opnieuw.",
-         "Er komen juist weer planten."
+         "Koos je konijnen? Konijnen leven vooral in open gebieden. In een dicht beukenbos zijn er weinig. Het gebrek aan licht verklaart de metingen.",
+         "Koos je de minste humus? In een oud bos is juist de meeste humus. De bodem is rijk, maar het licht ontbreekt.",
+         "Klopt: in het beukenbos komt maar 3% van het licht op de bodem. Voor de meeste kruiden is dat te weinig om genoeg te fotosynthetiseren. Licht is hier de remmende factor.",
+         "Koos je te warm? Onder een bladerdak is het juist koeler dan in open grasland. Het verschil zit in het licht."
         ],
-        "uh": "Na verstoring begint de successie opnieuw."
-       },
-       {
-        "v": "Waarom is successie een reeks en geen momentopname?",
-        "o": [
-         "Omdat er helemaal niets verandert in het gebied",
-         "Omdat alle soorten tegelijk verschijnen",
-         "Omdat een gebied altijd hetzelfde blijft",
-         "Omdat het gebied stap voor stap verandert"
-        ],
-        "c": 3,
-        "d": 3,
-        "u": "Bij successie volgen levensgemeenschappen elkaar stap voor stap op; dat kost tijd en verloopt in fasen.",
-        "uo": [
-         "Er verandert juist veel.",
-         "De soorten verschijnen juist niet allemaal tegelijk.",
-         "Een gebied verandert juist tijdens successie.",
-         "Klopt: het gebied verandert stap voor stap."
-        ],
-        "uh": "Successie verloopt stap voor stap over de tijd."
+        "uh": "Kijk naar de lichtmeting.",
+        "ctx": "Onderzoekers meten in een gebied met verschillende stadia van successie het licht op de bodem en tellen de soorten kruiden. Grasland: 100% licht, 32 soorten kruiden. Struweel: 40% licht, 18 soorten. Berkenbos: 20% licht, 12 soorten. Beukenbos: 3% licht, 4 soorten."
        },
        {
         "v": "Wat gebeurt er met de bodem tijdens de successie?",
         "o": [
-         "De bodem wordt rijker en voedzamer",
-         "De bodem verdwijnt tijdens de successie helemaal",
-         "De bodem blijft altijd kale rots",
-         "De bodem wordt steeds armer"
-        ],
-        "c": 0,
-        "d": 2,
-        "u": "Door dode plantenresten ontstaat humus, waardoor de bodem rijker en voedzamer wordt.",
-        "uo": [
-         "Klopt: de bodem wordt rijker (humusvorming).",
-         "De bodem verdwijnt niet.",
-         "De bodem blijft niet kaal.",
-         "De bodem wordt juist rijker, niet armer."
-        ],
-        "uh": "Tijdens successie wordt de bodem rijker (humus)."
-       },
-       {
-        "v": "Waarom is het beschermen van biodiversiteit belangrijk?",
-        "o": [
-         "Omdat één soort genoeg is voor een ecosysteem",
-         "Omdat veel soorten een ecosysteem stabieler maken",
-         "Omdat de soorten helemaal geen enkele rol spelen",
-         "Omdat biodiversiteit alleen mooi oogt"
+         "hij wordt dunner, omdat planten hem opeten",
+         "hij wordt dikker en rijker aan humus",
+         "hij blijft precies gelijk, alleen de planten veranderen",
+         "hij verliest alle voedingsstoffen aan de bomen"
         ],
         "c": 1,
-        "d": 3,
-        "u": "Veel verschillende soorten maken een ecosysteem stabieler en veerkrachtiger tegen verstoring.",
-        "uo": [
-         "Eén soort maakt het juist kwetsbaar.",
-         "Klopt: veel soorten maken het stabieler.",
-         "Soorten spelen juist belangrijke rollen.",
-         "Biodiversiteit doet meer dan mooi ogen."
-        ],
-        "uh": "Biodiversiteit beschermen = stabieler ecosysteem."
-       },
-       {
-        "v": "Wat is kolonisatie in een successie?",
-        "o": [
-         "Het verdwijnen van alle soorten",
-         "Het in één keer kappen van een heel volgroeid bos",
-         "Het vestigen van soorten in een nieuw gebied",
-         "Het opdrogen van een gebied"
-        ],
-        "c": 2,
         "d": 2,
-        "u": "Kolonisatie is het zich vestigen van soorten in een nieuw of kaal gebied, het begin van successie.",
+        "s": 2,
+        "u": "Dode resten worden humus; de bodem groeit en houdt meer water vast.",
         "uo": [
-         "Kolonisatie is juist het komen van soorten.",
-         "Dat is verstoring, geen kolonisatie.",
-         "Klopt: soorten vestigen zich in een nieuw gebied.",
-         "Opdrogen is geen kolonisatie."
+         "Koos je dunner? Planten eten de bodem niet op. Ze nemen voedingsstoffen op, maar via hun dode resten komt er meer materiaal bij dan er verdwijnt.",
+         "Klopt: elk jaar vallen bladeren en sterven planten af. Reducenten maken er humus van. Zo wordt de bodem dikker, vruchtbaarder en houdt hij meer water vast.",
+         "Koos je gelijk blijven? De bodem verandert juist sterk. Die verandering is een belangrijke reden dat de stadia elkaar opvolgen.",
+         "Koos je alle voedingsstoffen kwijt? Voedingsstoffen gaan rond in een kringloop. Via afgevallen blad en reducenten komen ze terug in de bodem."
         ],
-        "uh": "Kolonisatie = soorten vestigen zich in een gebied."
+        "uh": "Wat gebeurt er met afgevallen blad?"
        },
        {
-        "v": "Welke uitspraak over duurzaamheid klopt?",
+        "v": "Wat moet de beheerder doen om de heide te behouden?",
         "o": [
-         "Duurzaam betekent alles nu zo snel mogelijk opmaken",
-         "Duurzaam betekent de natuur negeren",
-         "Duurzaam is zoveel mogelijk vervuilen",
-         "Duurzaam houdt rekening met de toekomst"
+         "schapen laten grazen of plaggen",
+         "alle berken laten staan en niets doen",
+         "extra stikstof als mest op de heide strooien",
+         "beuken aanplanten tussen de heidestruiken"
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 2,
+        "u": "Successie tegenhouden: begrazing, maaien of plaggen verwijdert bomen en voedingsstoffen.",
+        "uo": [
+         "Klopt: heide blijft alleen heide als de successie wordt tegengehouden. Schapen eten jonge boompjes op. Bij plaggen haal je de bovenste laag met humus en stikstof weg, zodat bomen minder kans krijgen.",
+         "Koos je niets doen? Dan gaat de successie door: berken en later eiken nemen het over en de heide verdwijnt binnen een paar tientallen jaren.",
+         "Koos je stikstof strooien? Meer stikstof helpt juist grassen en bomen. Heide groeit op arme grond en verliest dan de concurrentie.",
+         "Koos je beuken aanplanten? Daarmee versnel je de successie naar bos. De heide verdwijnt dan juist sneller."
+        ],
+        "uh": "Hoe houd je successie tegen?",
+        "ctx": "Heide is ontstaan doordat boeren eeuwenlang schapen lieten grazen en plaggen staken: ze haalden de bovenste laag met de heide weg om als strooisel te gebruiken. Nu doen boeren dat niet meer. Op veel heidevelden komen jonge berken en grassen op. Natuurbeheerders willen de heide behouden."
+       },
+       {
+        "v": "Wat is het climaxstadium?",
+        "o": [
+         "het stadium met de meeste pioniersoorten",
+         "het eerste stadium op kale grond",
+         "een stadium dat elk jaar weer verandert",
+         "het stabiele eindstadium"
         ],
         "c": 3,
-        "d": 2,
-        "u": "Duurzaamheid betekent zo met de natuur omgaan dat ze ook in de toekomst behouden blijft.",
-        "uo": [
-         "Alles opmaken is niet duurzaam.",
-         "Duurzaam negeert de natuur juist niet.",
-         "Vervuilen is niet duurzaam.",
-         "Klopt: duurzaam houdt rekening met de toekomst."
-        ],
-        "uh": "Duurzaam = rekening houden met de toekomst."
-       },
-       {
-        "v": "Waarom neemt het aantal soorten toe naarmate de successie vordert?",
-        "o": [
-         "Omdat de leefomgeving gevarieerder wordt",
-         "Omdat er steeds minder voedsel is",
-         "Omdat de zon boven het gebied helemaal uitgaat",
-         "Omdat alle pioniers doodgaan"
-        ],
-        "c": 0,
-        "d": 3,
-        "u": "Naarmate er meer planten en structuur bijkomen, ontstaan meer leefplekken en dus meer soorten.",
-        "uo": [
-         "Klopt: een gevarieerdere omgeving biedt meer soorten een plek.",
-         "Er komt juist meer voedsel bij.",
-         "De zon gaat niet uit.",
-         "Niet alle pioniers gaan dood."
-        ],
-        "uh": "Meer variatie in leefplekken = meer soorten."
-       },
-       {
-        "v": "Wat is uitsterven van een soort?",
-        "o": [
-         "Het tijdelijk vertrekken uit een gebied",
-         "Het volledig verdwijnen van de soort",
-         "Het aanpassen aan een nieuwe omgeving",
-         "Het toenemen van de populatie"
-        ],
-        "c": 1,
         "d": 1,
-        "u": "Uitsterven betekent dat een soort helemaal verdwijnt en nergens meer voorkomt.",
+        "s": 3,
+        "u": "Climax: levensgemeenschap die nauwelijks nog verandert zolang de omstandigheden gelijk blijven.",
         "uo": [
-         "Uitsterven is meer dan tijdelijk vertrekken.",
-         "Klopt: de soort verdwijnt volledig.",
-         "Dat is aanpassing, geen uitsterven.",
-         "Dat is toename, geen uitsterven."
+         "Koos je de meeste pioniersoorten? Pioniers zijn in het climaxstadium bijna verdwenen. Ze kunnen niet tegen de schaduw en concurrentie.",
+         "Koos je het eerste stadium? Dat is het pionierstadium. Het climaxstadium staat juist aan het eind van de reeks.",
+         "Koos je elk jaar veranderen? Het climaxstadium is juist stabiel. Er komen wel jonge bomen bij, maar dezelfde soorten blijven.",
+         "Klopt: het climaxstadium is het eindstadium van de successie. De levensgemeenschap verandert nauwelijks nog, zolang klimaat en bodem gelijk blijven."
         ],
-        "uh": "Uitsterven = de soort verdwijnt helemaal."
+        "uh": "Het eind van de reeks."
        },
        {
-        "v": "Waarom is een gevarieerd bos vaak stabieler dan een akker met één gewas?",
+        "v": "Wat bepaalt vooral welk climaxstadium in een gebied ontstaat?",
         "o": [
-         "Omdat het bos minder soorten heeft",
-         "Omdat het bos geen bodem nodig heeft",
-         "Omdat het bos een hogere biodiversiteit heeft",
-         "Omdat het bos zelf helemaal geen zonlicht gebruikt"
+         "welke pionier toevallig als eerste kwam",
+         "het aantal dieren dat het gebied bezoekt",
+         "het klimaat en de bodem",
+         "hoe lang de successie al bezig is"
         ],
         "c": 2,
-        "d": 3,
-        "u": "Een bos met veel soorten kan een plaag of ziekte beter opvangen dan een akker met maar één gewas.",
+        "d": 2,
+        "s": 3,
+        "u": "Abiotische factoren: in Nederland meestal loofbos, in droge gebieden grasland.",
         "uo": [
-         "Het bos heeft juist meer soorten.",
-         "Ook een bos heeft bodem nodig.",
-         "Klopt: hogere biodiversiteit maakt het stabieler.",
-         "Een bos gebruikt juist veel licht."
+         "Koos je de eerste pionier? Welke pionier eerst kwam, heeft weinig invloed op het eindstadium. Na lange tijd kom je op dezelfde climax uit.",
+         "Koos je het aantal dieren? Grazers kunnen successie tegenhouden, maar het klimaat en de bodem bepalen welk eindstadium er bij natuurlijke omstandigheden komt.",
+         "Klopt: het klimaat en de bodem bepalen welk eindstadium mogelijk is. In Nederland is dat meestal loofbos. In een droog klimaat blijft het grasland, in het hoge noorden naaldbos.",
+         "Koos je de tijdsduur? Tijd bepaalt hoe ver de successie is, maar niet welk eindstadium er uiteindelijk ontstaat. Dat doen klimaat en bodem."
         ],
-        "uh": "Meer soorten (bos) = stabieler dan monocultuur."
+        "uh": "Denk aan abiotische factoren."
        },
        {
-        "v": "Wat is natuurbeheer?",
+        "v": "Wat gebeurt er in de open plek in het beukenbos?",
         "o": [
-         "De natuur volledig aan haar lot overlaten",
-         "Het weghalen van alle inheemse soorten",
-         "Het helemaal volbouwen van elk bestaand natuurgebied",
-         "Het beheren van natuur om soorten te behouden"
+         "primaire successie, want de bodem is weggewaaid",
+         "secundaire successie met eerst lichtminnende soorten",
+         "er groeit meteen weer een volwassen beuk terug",
+         "er gebeurt niets meer, het blijft een open plek"
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 3,
+        "u": "De bodem blijft; door het licht komen eerst pioniers, later weer beuken.",
+        "uo": [
+         "Koos je primaire successie? Bij een storm waait de bodem niet weg. De humus en zaden liggen er nog, dus het is secundaire successie.",
+         "Klopt: de bodem is er nog, dus het is secundaire successie. Door het licht groeien eerst kruiden, bramen en berken. Na tientallen jaren nemen jonge beuken het weer over.",
+         "Koos je meteen een volwassen beuk? Een beuk heeft tientallen jaren nodig om volwassen te worden. Intussen groeien eerst snellere, lichtminnende soorten.",
+         "Koos je niets? Op een open plek met licht komen juist snel nieuwe planten. Een open plek blijft niet leeg."
+        ],
+        "uh": "Wat verandert er aan licht? En de bodem?",
+        "ctx": "Tijdens een zware storm waaien in een oud beukenbos twaalf grote beuken om. Er ontstaat een open plek van ongeveer een halve hectare. De wortelkluiten liggen omhoog, maar de bosbodem met strooisel en humus is grotendeels intact. Er valt nu veel zonlicht op de bodem."
+       },
+       {
+        "v": "Waarom groeit de totale biomassa in een climaxbos nauwelijks nog?",
+        "o": [
+         "aanmaak en afbraak zijn in evenwicht",
+         "de bomen doen geen fotosynthese meer",
+         "er leven geen reducenten in een oud bos",
+         "alle energie gaat verloren als warmte uit de zon"
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 3,
+        "u": "Wat de planten aanmaken, wordt even snel verbruikt en afgebroken.",
+        "uo": [
+         "Klopt: in een climaxbos maken de planten veel biomassa aan, maar evenveel wordt verbruikt door ademhaling, consumenten en reducenten. De netto groei is bijna nul.",
+         "Koos je geen fotosynthese? Oude bomen doen nog volop fotosynthese. Het verschil is dat er evenveel wordt afgebroken als er wordt aangemaakt.",
+         "Koos je geen reducenten? In een oud bos leven juist heel veel reducenten in het dikke strooisel. Ze breken de dode resten af.",
+         "Koos je warmte uit de zon? De zon levert energie voor de fotosynthese. De groei stopt doordat aanmaak en afbraak elkaar opheffen."
+        ],
+        "uh": "Vergelijk aanmaak met afbraak."
+       },
+       {
+        "v": "Hoe meet je de biodiversiteit van een gebied het eenvoudigst?",
+        "o": [
+         "de grootte van de grootste populatie bepalen",
+         "het aantal bomen per hectare tellen",
+         "de totale massa van alle planten wegen",
+         "het aantal soorten tellen"
         ],
         "c": 3,
-        "d": 2,
-        "u": "Natuurbeheer is het bewust beheren van natuurgebieden om soorten en biodiversiteit te behouden.",
+        "d": 1,
+        "s": 4,
+        "u": "Biodiversiteit = verscheidenheid aan soorten (en genen en ecosystemen).",
         "uo": [
-         "Aan het lot overlaten is geen beheer.",
-         "Inheemse soorten weghalen is geen natuurbeheer.",
-         "Volbouwen beschermt de natuur niet.",
-         "Klopt: beheren om soorten te behouden."
+         "Koos je de grootste populatie? Eén grote populatie zegt niets over hoeveel verschillende soorten er leven.",
+         "Koos je het aantal bomen? Een bos met duizend bomen van één soort heeft weinig biodiversiteit. Het gaat om het aantal verschillende soorten.",
+         "Koos je de totale massa? Dat is biomassa. Een maïsveld kan veel biomassa hebben en toch heel weinig soorten.",
+         "Klopt: biodiversiteit is de verscheidenheid aan leven. De eenvoudigste maat is het aantal verschillende soorten in een gebied."
         ],
-        "uh": "Natuurbeheer = beheren om soorten te behouden."
+        "uh": "Het gaat om verscheidenheid."
        },
        {
-        "v": "Na een bosbrand groeit er weer mos op de kale grond. Wat begint er dan?",
+        "v": "Waarom is een ecosysteem met veel soorten meestal stabieler?",
         "o": [
-         "Een nieuwe successie",
-         "Het climaxstadium meteen",
-         "Het uitsterven van alle soorten",
-         "Een blijvend kale vlakte"
+         "alle soorten eten dan precies hetzelfde voedsel",
+         "er zijn dan geen roofdieren meer",
+         "bij uitval van één soort zijn er alternatieven",
+         "veel soorten hebben samen geen voedsel nodig"
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 4,
+        "u": "In een complex voedselweb kunnen consumenten overstappen op ander voedsel.",
+        "uo": [
+         "Koos je hetzelfde voedsel? Dan zou er sterke concurrentie zijn. Stabiliteit komt juist doordat soorten verschillende voedselbronnen gebruiken.",
+         "Koos je geen roofdieren? Ook in een rijk ecosysteem zijn roofdieren. Ze helpen het evenwicht juist te bewaren.",
+         "Klopt: in een voedselweb met veel soorten heeft een roofdier meerdere prooien. Valt er één weg, dan stapt hij over op een andere. Het web blijft overeind.",
+         "Koos je geen voedsel nodig? Elke soort heeft voedsel nodig. Het voordeel van veel soorten is dat er meerdere voedselroutes zijn."
+        ],
+        "uh": "Denk aan een voedselweb."
+       },
+       {
+        "v": "Waarom was de aardappelteelt in Ierland zo kwetsbaar voor de ziekte?",
+        "o": [
+         "aardappels groeien niet in een nat klimaat",
+         "er was bijna geen genetische variatie",
+         "er waren te veel verschillende rassen geplant",
+         "de boeren gebruikten te veel bestrijdingsmiddelen"
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 4,
+        "u": "Eén ras: als de ziekte het ene ras treft, treft ze alle planten.",
+        "uo": [
+         "Koos je het natte klimaat? Aardappels groeiden er al tientallen jaren goed. Het natte weer hielp de schimmel wel, maar de kwetsbaarheid kwam door het ene ras.",
+         "Klopt: bijna alle Ierse boeren plantten hetzelfde ras. Alle planten waren genetisch bijna gelijk. Was één plant vatbaar, dan waren ze het allemaal. Er was geen variatie om op terug te vallen.",
+         "Koos je te veel rassen? Het was juist omgekeerd. Met veel rassen zouden sommige planten de ziekte hebben overleefd.",
+         "Koos je bestrijdingsmiddelen? Die bestonden in die tijd nog niet. De oorzaak was het gebrek aan variatie."
+        ],
+        "uh": "Hoeveel rassen werden er geteeld?",
+        "ctx": "Rond 1845 aten veel Ieren vooral aardappelen. Bijna alle boeren teelden hetzelfde ras, dat goed groeide. Toen een schimmelziekte het land bereikte, mislukte in een paar jaar bijna de hele oogst. Ongeveer een miljoen mensen stierven van de honger. In Zuid-Amerika, waar honderden rassen werden geteeld, ging nooit de hele oogst verloren."
+       },
+       {
+        "v": "Waarom is het aantal soorten het hoogst in het struweelstadium?",
+        "o": [
+         "er leven zowel soorten van open als van beschut terrein",
+         "struiken maken het meeste voedsel van alle stadia",
+         "alle pioniers en climaxsoorten zijn daar dood",
+         "er zijn daar geen roofdieren die prooien vangen"
         ],
         "c": 0,
         "d": 3,
-        "u": "Op de kale grond na de brand vestigen zich pioniers, dus begint de successie opnieuw.",
+        "s": 4,
+        "u": "Een mengsel van open plekken en struiken: veel verschillende niches.",
         "uo": [
-         "Klopt: de successie begint opnieuw met pioniers.",
-         "Het climaxstadium komt pas veel later.",
-         "Er beginnen juist weer soorten te groeien.",
-         "De grond blijft niet kaal, er groeit weer mos."
+         "Klopt: in het struweel zijn open plekken met licht én beschutte plekken onder struiken. Soorten van grasland en van bos kunnen er samen leven. Er zijn veel niches, dus veel soorten.",
+         "Koos je het meeste voedsel? De totale aanmaak is in een volwassen bos hoger. Het hoge soortenaantal komt door de variatie aan plekken.",
+         "Koos je dat de rest dood is? Dan zouden er juist minder soorten zijn. In het struweel leven soorten van verschillende stadia tegelijk.",
+         "Koos je geen roofdieren? Ook in struweel leven roofdieren, zoals wezels en roofvogels. Dat verklaart het soortenaantal niet."
         ],
-        "uh": "Kale grond met pioniers = start van een nieuwe successie."
+        "uh": "Wat voor plekken zijn er in een struweel?",
+        "ctx": "In een duingebied tellen biologen het aantal plantensoorten en vogelsoorten in vier stadia van successie. Open zand: 8 plantensoorten, 3 vogelsoorten. Grasland: 30 en 9. Struweel met open plekken: 45 en 24. Oud bos: 25 en 18."
+       },
+       {
+        "v": "Wanneer is visserij duurzaam?",
+        "o": [
+         "als er alleen in de winter wordt gevist",
+         "als er zoveel mogelijk vis wordt gevangen",
+         "als alleen de grootste vissen overblijven",
+         "als de vangst niet groter is dan de aangroei"
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 5,
+        "u": "Duurzaam: de voorraad blijft op peil, ook voor de toekomst.",
+        "uo": [
+         "Koos je alleen in de winter? Het seizoen zegt niets over de hoeveelheid. Ook in de winter kan je te veel vangen.",
+         "Koos je zoveel mogelijk vangen? Dan raakt de visstand uitgeput en is er straks niets meer. Dat is roofbouw, niet duurzaam.",
+         "Koos je alleen grote vissen overhouden? Grote vissen planten zich het meest voort, maar dat alleen maakt de visserij niet duurzaam. Het gaat om vangst tegenover aangroei.",
+         "Klopt: visserij is duurzaam als er per jaar niet meer vis wordt gevangen dan er bijkomt door geboorte en groei. Dan blijft de visstand op peil voor volgende generaties."
+        ],
+        "uh": "Vangst tegenover aangroei."
+       },
+       {
+        "v": "Waarom legt de overheid ecoducten en verbindingszones aan?",
+        "o": [
+         "zodat exoten zich makkelijker kunnen verspreiden",
+         "zodat dieren sneller de snelweg oversteken naar de stad",
+         "zodat populaties niet geïsoleerd raken",
+         "zodat er minder soorten in elk natuurgebied leven"
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 5,
+        "u": "Grotere leefgebieden; uitwisseling tussen populaties houdt de genetische variatie op peil.",
+        "uo": [
+         "Koos je exoten verspreiden? Dat is niet het doel. Verbindingszones zijn er om inheemse populaties te helpen.",
+         "Koos je naar de stad? Ecoducten verbinden natuurgebieden met elkaar, niet met de stad. Ze voorkomen ook dat dieren worden aangereden.",
+         "Klopt: een ecoduct verbindt natuurgebieden die door wegen zijn gescheiden. Dieren kunnen zich verplaatsen, populaties wisselen individuen uit en blijven groot genoeg en genetisch gevarieerd.",
+         "Koos je minder soorten? Het doel is juist meer biodiversiteit: kleine, geïsoleerde populaties sterven makkelijker uit."
+        ],
+        "uh": "Wat gebeurt er met kleine, losse populaties?"
+       },
+       {
+        "v": "Hoe verandert de visstand als de vangst zo blijft?",
+        "o": [
+         "hij stijgt met 15.000 ton per jaar",
+         "hij daalt met 15.000 ton per jaar",
+         "hij blijft precies gelijk, want vis groeit vanzelf aan",
+         "hij daalt met 45.000 ton per jaar"
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 5,
+        "u": "Aangroei 30.000 − vangst 45.000 = −15.000 ton per jaar.",
+        "uo": [
+         "Koos je een stijging? Je hebt aangroei en vangst omgedraaid. Er wordt meer gevangen dan er bijkomt, dus de voorraad daalt.",
+         "Klopt: er komt 30.000 ton bij en er gaat 45.000 ton uit. Netto daalt de voorraad met 15.000 ton per jaar. Dat is niet duurzaam.",
+         "Koos je gelijk blijven? Dat zou alleen kloppen als de vangst gelijk is aan de aangroei van 30.000 ton. Nu is de vangst hoger.",
+         "Koos je 45.000 ton daling? Dan vergeet je de aangroei. Er komt ook 30.000 ton vis bij, dus het verschil is 15.000 ton."
+        ],
+        "uh": "Aangroei min vangst.",
+        "ctx": "In een zeegebied groeit de kabeljauwvoorraad elk jaar aan met ongeveer 30.000 ton door geboorte en groei. De vissers vangen de laatste jaren 45.000 ton per jaar. Biologen adviseren de overheid over een maximale vangst per jaar."
+       },
+       {
+        "v": "Waarom neemt de biodiversiteit op de heide af door de stikstof?",
+        "o": [
+         "grassen gaan de heideplanten verdringen",
+         "stikstof is giftig voor alle dieren op de heide",
+         "de heide groeit zo hard dat er geen ruimte meer is",
+         "stikstof maakt de bodem armer aan voedingsstoffen"
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 5,
+        "u": "Heideplanten groeien op arme grond; extra stikstof bevoordeelt snelle grassen.",
+        "uo": [
+         "Klopt: heideplanten zijn aangepast aan arme grond. Met extra stikstof groeien grassen zoals pijpenstrootje sneller en verdringen ze de heide en de soorten die daarvan afhangen.",
+         "Koos je giftig voor alle dieren? Bij deze hoeveelheden is stikstof geen direct gif. Het verandert de concurrentie tussen planten.",
+         "Koos je dat de heide te hard groeit? Juist de grassen profiteren, niet de heide. De heide verliest de concurrentie om licht.",
+         "Koos je armer? Stikstof is een voedingsstof. De bodem wordt juist rijker, en daar hebben snelle grassen het meeste voordeel van."
+        ],
+        "uh": "Wie profiteert van een rijkere bodem?",
+        "ctx": "Op veel Nederlandse heidevelden komt via de lucht veel stikstof terecht, afkomstig van landbouw en verkeer. Op een heideveld nam het aandeel pijpenstrootje, een snelgroeiend gras, in twintig jaar toe van 10% naar 70%. Het aantal soorten heideplanten, vlinders en sprinkhanen nam in die tijd sterk af."
        }
       ],
       "oe": [
        {
-        "vraag": "Leg uit waarom successie een reeks is en geen eenmalige gebeurtenis.",
-        "antwoord": "Bij successie volgen verschillende levensgemeenschappen elkaar in de tijd op. Eerst komen pioniersoorten op kale grond, daarna kruiden en struiken en ten slotte bomen. Elke fase verandert het gebied zodat de volgende fase mogelijk wordt. Het is dus een reeks van opeenvolgende stappen, geen momentopname."
+        "bron": "Examenstijl",
+        "ctx": "Op een nieuwe zandplaat in de Waddenzee groeit eerst zeekraal, op plekken die bij vloed nog onderlopen. Later, als de plaat hoger is opgeslibd, komen grassen. Op de hoogste delen vormt helmgras kleine duinen. Na enkele tientallen jaren groeien daar duindoorn en vlier. Onderzoekers meten dat het humusgehalte van de bodem in deze reeks steeds hoger wordt.",
+        "v": "Leg uit of hier sprake is van primaire of secundaire successie, en verklaar met de humusmeting waarom duindoorn en vlier pas later kunnen groeien.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Primaire successie: de zandplaat is nieuw en heeft nog geen bodem (1p). De pioniers vormen met hun dode resten humus, waardoor de bodem meer water en voedingsstoffen vasthoudt (1p). Duindoorn en vlier hebben zo’n rijkere bodem nodig en kunnen daarom pas groeien als er genoeg humus is (1p)."
        },
        {
-        "vraag": "Beschrijf de successie van kale grond tot een bos.",
-        "antwoord": "Op de kale grond vestigen zich eerst pioniersoorten zoals mossen en grassen. Zij vormen humus, waardoor de bodem rijker wordt. Daarna komen er kruiden en struiken, en later bomen. Uiteindelijk ontstaat een stabiel eindstadium, het climaxstadium, bijvoorbeeld een volgroeid bos."
+        "bron": "Examenstijl",
+        "ctx": "Een natuurbeheerder wil een heideveld behouden. Op het veld komen steeds meer jonge berken en het gras pijpenstrootje op. Hij twijfelt tussen twee maatregelen: (1) alle jonge berken eens per vijf jaar omzagen, of (2) het veld plaggen, waarbij de bovenste laag met humus wordt afgegraven.",
+        "v": "Leg uit waarom de heide zonder ingrijpen verdwijnt, en beargumenteer welke maatregel beter helpt tegen zowel de berken als het pijpenstrootje.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Zonder ingrijpen gaat de successie verder: berken en later eiken groeien op en de heide verliest de concurrentie om licht (1p). Omzagen haalt de berken weg, maar de rijke bodem blijft, zodat pijpenstrootje blijft groeien (1p). Plaggen haalt de humus met stikstof weg; de grond wordt arm, waar heide in het voordeel is tegenover grassen en bomen, dus maatregel 2 helpt beter (1p)."
        },
        {
-        "vraag": "Leg uit waarom een hoge biodiversiteit een ecosysteem stabieler maakt.",
-        "antwoord": "In een ecosysteem met veel verschillende soorten zijn er veel voedselrelaties. Als één soort wegvalt of een ziekte optreedt, kunnen andere soorten de rol overnemen of de klap opvangen. Daardoor herstelt het ecosysteem sneller en is het stabieler dan een ecosysteem met weinig soorten."
+        "bron": "Examenstijl",
+        "ctx": "In 1988 brandde in een groot natuurpark een groot deel van het naaldbos af. Al in het jaar na de brand groeiden op de verbrande grond veel kruiden en grassen. Na tien jaar stonden er overal jonge dennen van een paar meter hoog. Op een lavaveld vlakbij, dat in dezelfde periode ontstond, groeiden na tien jaar alleen wat korstmossen.",
+        "v": "Benoem het type successie na de brand en op het lavaveld, en verklaar het verschil in snelheid.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Na de brand: secundaire successie; op het lavaveld: primaire successie (1p). Na de brand bleef de bodem met humus, zaden en wortels achter (1p). Op lava moet eerst door pioniers een bodem worden gevormd, wat veel tijd kost; daarom gaat de successie daar veel langzamer (1p)."
        },
        {
-        "vraag": "Leg uit wat duurzaamheid betekent en geef een voorbeeld.",
-        "antwoord": "Duurzaamheid betekent dat je de natuur zo gebruikt dat ze niet uitput en ook voor toekomstige generaties behouden blijft. Een voorbeeld is een bos zo beheren dat je niet meer bomen kapt dan er aangroeien, zodat het bos blijft bestaan."
+        "bron": "Examenstijl",
+        "ctx": "De Noordzee-kabeljauw groeit bij de huidige voorraad elk jaar aan met ongeveer 40.000 ton. In de jaren negentig vingen vissers gemiddeld 90.000 ton per jaar. De voorraad daalde in tien jaar van 250.000 naar 50.000 ton. De overheid stelde daarna een maximale vangst per jaar in.",
+        "v": "Bereken met hoeveel ton de voorraad per jaar zou dalen bij een vangst van 90.000 ton, en leg uit welke maximale vangst duurzaam is.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Daling per jaar: 90.000 − 40.000 = 50.000 ton (1p). Duurzaam is een vangst die niet groter is dan de aangroei (1p), dus maximaal 40.000 ton per jaar (of minder, zodat de voorraad kan herstellen) (1p)."
        },
        {
-        "vraag": "Leg uit waarom een akker met één gewas kwetsbaarder is dan een gevarieerd natuurgebied.",
-        "antwoord": "Een akker met één gewas heeft een lage biodiversiteit. Als er een ziekte of plaag komt die dat gewas treft, kan het hele veld worden aangetast. In een gevarieerd natuurgebied met veel soorten treft een ziekte meestal maar een deel van de soorten, zodat het geheel stabieler blijft."
+        "bron": "Examenstijl",
+        "ctx": "Boomkikkers leven in een paar kleine poelen in Zuid-Limburg. De poelen liggen tussen akkers en wegen, enkele kilometers van elkaar. Onderzoekers zien dat de populaties in de afzonderlijke poelen klein zijn en weinig genetische variatie hebben. De provincie wil de poelen verbinden met een strook natuur langs een beek.",
+        "v": "Leg uit waarom een kleine populatie met weinig genetische variatie een groter risico op uitsterven heeft, en hoe de verbindingszone dit risico verkleint.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Bij weinig genetische variatie zijn alle dieren ongeveer even gevoelig voor een ziekte of verandering; dan kan de hele populatie tegelijk uitsterven (1p). Een kleine populatie kan bovendien door toeval verdwijnen (1p). Via de verbindingszone kunnen kikkers tussen de poelen trekken: populaties worden samen groter en wisselen genen uit, zodat de genetische variatie toeneemt (1p)."
        }
       ]
      },
