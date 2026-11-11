@@ -104169,9 +104169,13 @@ var VAKKEN = [
      },
      {
       "id": "D6",
+      "lo": "na.D.6",
+      "gs": 2,
       "naam": "Elektrische veiligheid",
-      "beschrijving": "Begrijpen wat kortsluiting en overbelasting zijn en hoe zekeringen, aarding en de aardlekschakelaar mensen en huizen beschermen tegen schokken en brand.",
-      "ceStatus": "ce",
+      "beschrijving": "Je legt uit wat kortsluiting en overbelasting zijn en rekent de stromen uit, beschrijft hoe een zekering of automaat, de randaarde en de aardlekschakelaar beveiligen, verklaart het gevaar van stroom door het lichaam met I = U / R en past veiligheidsregels toe bij het werken met het lichtnet.",
+      "ceStatus": "CE",
+      "binas": "35D",
+      "val": "",
       "onderwerpen": [
        "Kortsluiting en overbelasting",
        "De zekering en automaat",
@@ -104180,554 +104184,673 @@ var VAKKEN = [
        "Gevaar van stroom door het lichaam",
        "Veilig omgaan met het lichtnet"
       ],
-      "sam": "Elektriciteit is handig maar kan gevaarlijk zijn, dus een installatie heeft beveiligingen. Bij kortsluiting raken twee draden elkaar met bijna geen weerstand ertussen; volgens I = U / R loopt er dan een enorme stroom, die de draden heet maakt en brand kan veroorzaken. Ook overbelasting, te veel apparaten op één groep, laat de stroom te ver oplopen. Een zekering of automaat onderbreekt daarom de groep zodra de stroom boven een grenswaarde komt, bijvoorbeeld 16 A. Aarding beschermt tegen schokken: raakt een spanningvoerende draad de metalen behuizing van een apparaat, dan voert de aardleiding de stroom veilig weg naar de aarde in plaats van via jou, en springt vaak de beveiliging. Een aardlekschakelaar merkt al een kleine weglekkende stroom, bijvoorbeeld via een mens, en schakelt binnen milliseconden uit; daarom beschermt hij mensen sneller dan een zekering alleen. Stroom door het lichaam is gevaarlijk omdat het spieren en het hart kan verstoren. Met natte handen is je weerstand lager en loopt er een grotere stroom, dus wees dan extra voorzichtig. De netspanning in huis is 230 V; het lichtnet is veel gevaarlijker dan een batterij van enkele volt.",
+      "sam": "Kortsluiting: fase en nul raken elkaar, R bijna 0, I enorm (230 / 0,10 = 2300 A). Overbelasting: te veel apparaten op één groep, stromen tellen op. Zekering/automaat in de fasedraad, schakelt af boven 16 A, beschermt de draden. Randaarde: metalen behuizing via geel-groene draad naar aarde. Aardlekschakelaar: verschil fase/nul > 30 mA, schakelt binnen 0,03 s af, beschermt mensen. Lichaam: gevaarlijk vanaf ~30 mA; natte huid 1 kΩ, droog 100 kΩ. Fase bruin, nul blauw, aarde geel-groen; eerst de groep uit.",
       "begrippen": [
        {
         "t": "Kortsluiting",
-        "d": "een verbinding met bijna geen weerstand, waardoor een enorme stroom loopt"
-       },
-       {
-        "t": "Zekering",
-        "d": "beveiliging die de kring onderbreekt als de stroom te groot wordt"
-       },
-       {
-        "t": "Automaat",
-        "d": "herstelbare zekering die bij te veel stroom de groep uitschakelt"
-       },
-       {
-        "t": "Aarding",
-        "d": "verbinding met de aarde die een gevaarlijke stroom veilig wegvoert"
-       },
-       {
-        "t": "Randaarde",
-        "d": "het aardcontact in een stopcontact voor metalen apparaten"
-       },
-       {
-        "t": "Aardlekschakelaar",
-        "d": "schakelaar die supersnel uitschakelt als er stroom weglekt"
-       },
-       {
-        "t": "Lekstroom",
-        "d": "stroom die op een verkeerde plek wegvloeit, bijvoorbeeld door een mens"
+        "d": "Fase en nul raken elkaar zonder apparaat ertussen; de weerstand is bijna nul en de stroom enorm."
        },
        {
         "t": "Overbelasting",
-        "d": "te veel apparaten of vermogen, waardoor de stroom te groot wordt"
+        "d": "Te veel apparaten tegelijk op één groep, waardoor de totale stroom te groot wordt."
        },
        {
-        "t": "Netspanning",
-        "d": "de spanning van het lichtnet in huis, in Nederland 230 volt"
+        "t": "Zekering",
+        "d": "Beveiliging die de kring onderbreekt bij een te grote stroom."
        },
        {
-        "t": "Dubbele isolatie",
-        "d": "extra isolatie die aanraking van spanning voorkomt, zodat aarding niet nodig is"
-       },
-       {
-        "t": "Schok",
-        "d": "stroom die door je lichaam loopt en spieren en hart kan verstoren"
+        "t": "Installatieautomaat",
+        "d": "Zekering die je na het afschakelen weer kunt omzetten, meestal 16 A."
        },
        {
         "t": "Groep",
-        "d": "een deel van de huisinstallatie met een eigen zekering of automaat"
+        "d": "Deel van de huisinstallatie met een eigen automaat."
+       },
+       {
+        "t": "Randaarde",
+        "d": "Aardcontact in stopcontact en stekker dat een metalen behuizing met de aarde verbindt."
+       },
+       {
+        "t": "Aarddraad",
+        "d": "Geel-groene draad die lekstroom veilig naar de aarde afvoert."
+       },
+       {
+        "t": "Aardlekschakelaar",
+        "d": "Beveiliging die afschakelt als de stroom in fase en nul meer dan 30 mA verschilt."
+       },
+       {
+        "t": "Lekstroom",
+        "d": "Stroom die buiten de nuldraad om naar de aarde wegloopt."
+       },
+       {
+        "t": "Fasedraad",
+        "d": "Bruine draad die ten opzichte van de aarde onder 230 V staat."
+       },
+       {
+        "t": "Dubbel geïsoleerd",
+        "d": "Apparaat zonder aanraakbare metalen delen onder spanning; heeft geen aarde nodig."
        }
       ],
       "sv": [
        {
-        "v": "Wat is kortsluiting?",
+        "v": "Wanneer is er sprake van kortsluiting?",
         "o": [
-         "Een verbinding met heel weinig weerstand",
-         "Een verbinding met juist een heel grote weerstand ertussen",
-         "Een kring waar helemaal geen stroom doorheen kan lopen",
-         "Een draad die netjes en veilig is aangesloten op het apparaat"
-        ],
-        "c": 0,
-        "d": 1,
-        "u": "Bij kortsluiting is er een weg met bijna geen weerstand, dus loopt er een enorme stroom.",
-        "uo": [
-         "Klopt: kortsluiting = weinig weerstand, grote stroom.",
-         "Grote weerstand geeft juist weinig stroom.",
-         "Bij kortsluiting loopt juist heel veel stroom.",
-         "Kortsluiting is juist onveilig."
-        ],
-        "uh": "Kortsluiting = bijna geen weerstand -> enorme stroom."
-       },
-       {
-        "v": "Wat doet een zekering?",
-        "o": [
-         "De stroom juist groter maken zodra er gevaar dreigt",
-         "De stroom onderbreken bij te veel stroom",
-         "De spanning van het net flink verhogen bij overbelasting",
-         "Extra lading toevoegen als de kring bijna leeg raakt"
-        ],
-        "c": 1,
-        "d": 1,
-        "u": "Een zekering onderbreekt de kring als de stroom te groot wordt, tegen brand.",
-        "uo": [
-         "Een zekering vergroot de stroom niet.",
-         "Klopt: een zekering breekt bij te veel stroom.",
-         "Een zekering verhoogt de spanning niet.",
-         "Een zekering voegt geen lading toe."
-        ],
-        "uh": "Zekering = onderbreekt bij te grote stroom."
-       },
-       {
-        "v": "Waarom is aarding belangrijk bij metalen apparaten?",
-        "o": [
-         "Het zorgt dat het apparaat juist meer spanning krijgt",
-         "Het maakt het apparaat lichter zodat je het beter draagt",
-         "Het voert een gevaarlijke stroom veilig weg",
-         "Het slaat elektrische energie op voor een later moment"
+         "de spanning van het lichtnet valt weg",
+         "er staan te veel apparaten tegelijk aan op één groep",
+         "de stroom gaat buiten het apparaat om",
+         "een lamp is doorgebrand"
         ],
         "c": 2,
         "d": 1,
-        "u": "De aardleiding voert bij een defect de stroom veilig weg naar de aarde.",
+        "s": 0,
+        "u": "Kortsluiting: bijna geen weerstand, enorme stroom.",
         "uo": [
-         "Aarding verhoogt de spanning niet.",
-         "Aarding heeft niets met gewicht te maken.",
-         "Klopt: aarding voert gevaarlijke stroom af.",
-         "Aarding slaat geen energie op."
+         "Koos je spanning die wegvalt? Dat is een stroomstoring. Bij kortsluiting is de spanning er wel; de stroom wordt juist veel te groot.",
+         "Koos je te veel apparaten? Dat heet overbelasting. Dan is de stroom ook te groot, maar loopt hij gewoon door de apparaten.",
+         "Klopt: bij kortsluiting raken de fasedraad en de nuldraad elkaar direct, of via iets met heel weinig weerstand. Dan wordt de stroom enorm groot, omdat I = U / R en R bijna nul is.",
+         "Koos je een doorgebrande lamp? Dan is de kring onderbroken en loopt er juist geen stroom. Kortsluiting is het tegenovergestelde."
         ],
-        "uh": "Aarding = gevaarlijke stroom veilig weg."
+        "uh": "Weerstand bijna nul."
        },
        {
-        "v": "Waarom is stroom door je lichaam gevaarlijk?",
+        "v": "Waarom is overbelasting van een groep gevaarlijk?",
         "o": [
-         "Het maakt je lichaam juist een betere isolator dan eerst",
-         "Het levert je lichaam extra energie die je goed kunt gebruiken",
-         "Het verhoogt de spanning van het stopcontact ineens",
-         "Het kan je spieren en hart verstoren"
+         "de spanning in het stopcontact wordt te hoog",
+         "de draden in de muur worden te warm",
+         "de apparaten krijgen te weinig stroom",
+         "de aardlekschakelaar gaat stuk"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 0,
+        "u": "Te grote stroom: draden warm.",
+        "uo": [
+         "Koos je te hoge spanning? De spanning blijft 230 V, hoeveel je ook aansluit. Wat toeneemt, is de stroom.",
+         "Klopt: hoe meer apparaten parallel aanstaan, hoe groter de stroom door de draden van die groep. Bij een te grote stroom worden de draden in de muur zo warm dat de isolatie kan smelten en er brand kan ontstaan.",
+         "Koos je te weinig stroom? Elk apparaat krijgt de stroom die het nodig heeft. Samen worden die stromen te groot voor de draden.",
+         "Koos je de aardlekschakelaar? Die reageert op een lekstroom, niet op overbelasting. Het gevaar van overbelasting is warmte in de draden."
+        ],
+        "uh": "Draden worden heet."
+       },
+       {
+        "v": "Hoe groot wordt de stroom bij de kortsluiting in de kapotte snoer?",
+        "o": [
+         "2300 A",
+         "23 A",
+         "230 A",
+         "0,10 A"
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 0,
+        "u": "I = U / R = 230 / 0,10.",
+        "uo": [
+         "Klopt: de weerstand van de draden tot aan de kortsluiting is maar 0,10 Ω. I = U / R = 230 / 0,10 = 2300 A. Zo'n stroom maakt de draden in een fractie van een seconde gloeiend heet, als de zekering niet ingrijpt.",
+         "Koos je 23 A? Dan heb je met 10 Ω gerekend. De weerstand bij kortsluiting is maar 0,10 Ω.",
+         "Koos je 230 A? Dan heb je met 1,0 Ω gerekend in plaats van met 0,10 Ω. Deel 230 door 0,10, dan wordt het tien keer zoveel.",
+         "Koos je 0,10 A? Dan heb je de weerstand als stroom genomen. I = U / R = 230 / 0,10."
+        ],
+        "uh": "Kleine R, enorme I.",
+        "ctx": "Een stofzuigersnoer is beschadigd geraakt doordat er een deur op dichtviel. De koperdraden van de fase en de nul raken elkaar nu direct. De weerstand van de draden vanaf de meterkast tot aan de beschadiging is samen 0,10 Ω. Het lichtnet heeft 230 V."
+       },
+       {
+        "v": "Wat doet een zekering of installatieautomaat?",
+        "o": [
+         "hij meet hoeveel energie je gebruikt",
+         "hij verhoogt de spanning als die te laag is",
+         "hij beschermt je tegen elke elektrische schok",
+         "hij schakelt af bij een te grote stroom"
         ],
         "c": 3,
         "d": 1,
-        "u": "Stroom door het lichaam kan spieren verkrampen en het hartritme verstoren.",
+        "s": 1,
+        "u": "Beveiliging tegen te grote stroom.",
         "uo": [
-         "Je lichaam wordt geen betere isolator.",
-         "Het is schadelijk, geen nuttige energie.",
-         "Je lichaam verhoogt de netspanning niet.",
-         "Klopt: stroom verstoort spieren en hart."
+         "Koos je energie meten? Dat doet de kWh-meter. De zekering is een beveiliging, geen meter.",
+         "Koos je spanning verhogen? Een zekering verandert de spanning niet. Hij onderbreekt alleen de kring bij een te grote stroom.",
+         "Koos je elke schok? Een zekering reageert pas bij een stroom van 16 A of meer. Al 30 mA door je lichaam is gevaarlijk; daartegen beschermt de aardlekschakelaar.",
+         "Klopt: een zekering of automaat schakelt de groep af als de stroom groter wordt dan toegestaan, bijvoorbeeld 16 A. Zo beschermt hij de draden tegen oververhitting bij overbelasting of kortsluiting."
         ],
-        "uh": "Stroom door lichaam = gevaar voor spieren/hart."
+        "uh": "Onderbreekt bij te grote stroom."
        },
        {
-        "v": "Waarom loopt er een grote stroom bij kortsluiting?",
+        "v": "Waarom zit de zekering in de fasedraad en niet in de nuldraad?",
         "o": [
-         "Omdat de weerstand bijna nul is",
-         "Omdat de weerstand juist heel groot wordt op dat moment",
-         "Omdat de spanning van het net vanzelf enorm toeneemt",
-         "Omdat er ineens veel extra lading uit het niets ontstaat"
-        ],
-        "c": 0,
-        "d": 2,
-        "u": "I = U / R: bij bijna geen weerstand wordt de stroom heel groot.",
-        "uo": [
-         "Klopt: kleine R geeft een grote stroom.",
-         "De weerstand wordt juist heel klein.",
-         "De netspanning verandert nauwelijks.",
-         "Er ontstaat geen nieuwe lading."
-        ],
-        "uh": "Kleine R -> grote stroom (I = U/R)."
-       },
-       {
-        "v": "Wat gebeurt er als je te veel apparaten op één groep aansluit?",
-        "o": [
-         "De spanning van het net daalt tot precies de helft",
-         "De stroom wordt te groot en de zekering springt",
-         "De apparaten gaan juist allemaal veel zuiniger werken",
-         "Er gebeurt helemaal niets, een groep kan alles aan"
-        ],
-        "c": 1,
-        "d": 2,
-        "u": "Elk apparaat trekt stroom; samen te veel, dan onderbreekt de zekering de groep.",
-        "uo": [
-         "De netspanning halveert niet.",
-         "Klopt: te veel stroom -> zekering springt.",
-         "De apparaten worden niet zuiniger.",
-         "Een groep kan niet onbeperkt stroom leveren."
-        ],
-        "uh": "Te veel apparaten -> te grote stroom -> zekering."
-       },
-       {
-        "v": "Wat is de functie van de randaarde in een stopcontact?",
-        "o": [
-         "Een extra bron die zelf meer spanning gaat leveren",
-         "Een schakelaar waarmee je het stopcontact aanzet",
-         "Een veilige weg naar de aarde",
-         "Een opslagplek voor de energie die je later gebruikt"
+         "de fasedraad is dikker",
+         "in de nuldraad loopt geen stroom",
+         "dan is het apparaat spanningsloos",
+         "dat maakt niet uit, het is een gewoonte"
         ],
         "c": 2,
         "d": 2,
-        "u": "De randaarde verbindt de metalen behuizing met de aarde; bij een defect vloeit de stroom veilig weg.",
+        "s": 1,
+        "u": "Fasedraad uitschakelen: geen spanning meer.",
         "uo": [
-         "De randaarde levert geen spanning.",
-         "De randaarde is geen schakelaar.",
-         "Klopt: de randaarde is de veilige weg naar de aarde.",
-         "De randaarde slaat geen energie op."
+         "Koos je dikker? Fase- en nuldraad zijn even dik. Het gaat om de spanning ten opzichte van de aarde.",
+         "Koos je geen stroom in de nuldraad? Door de nuldraad loopt dezelfde stroom terug als door de fase. Het verschil is dat de nuldraad geen spanning ten opzichte van de aarde heeft.",
+         "Klopt: de fasedraad staat ten opzichte van de aarde onder 230 V. Schakelt de zekering de fase uit, dan staat er in het apparaat geen gevaarlijke spanning meer. Zat hij in de nuldraad, dan bleef het apparaat via de fase onder spanning.",
+         "Koos je dat het niet uitmaakt? Het maakt wel uit voor de veiligheid: alleen het onderbreken van de fase maakt het apparaat spanningsloos."
         ],
-        "uh": "Randaarde = veilige weg naar de aarde."
+        "uh": "Fase uit = veilig."
        },
        {
-        "v": "Waarom is een aardlekschakelaar handig?",
+        "v": "Welke apparaten kan de bewoner tegelijk op de groep van 16 A aanzetten zonder dat de automaat uitschakelt?",
         "o": [
-         "Hij verhoogt de spanning zodra er iets misgaat in huis",
-         "Hij zorgt dat er juist meer stroom naar je lichaam gaat",
-         "Hij slaat de weggelekte stroom op voor later gebruik",
-         "Hij schakelt supersnel uit bij weglekkende stroom"
-        ],
-        "c": 3,
-        "d": 2,
-        "u": "Een aardlekschakelaar merkt dat er stroom weglekt (bijvoorbeeld door een mens) en schakelt razendsnel uit.",
-        "uo": [
-         "Hij verhoogt de spanning niet.",
-         "Hij stuurt juist geen stroom naar je lichaam.",
-         "Hij slaat geen stroom op.",
-         "Klopt: hij schakelt snel uit bij lekstroom."
-        ],
-        "uh": "Aardlekschakelaar = snel uit bij lekstroom."
-       },
-       {
-        "v": "Waarom mag je geen apparaten met natte handen aanraken?",
-        "o": [
-         "Water verlaagt je weerstand",
-         "Water verhoogt je weerstand zodat er minder stroom loopt",
-         "Water zorgt dat het apparaat vanzelf minder spanning krijgt",
-         "Water maakt je huid tot een perfecte isolator tegen stroom"
-        ],
-        "c": 0,
-        "d": 2,
-        "u": "Nat maakt je weerstand kleiner, dus er kan een grotere, gevaarlijke stroom door je lopen.",
-        "uo": [
-         "Klopt: water verlaagt je weerstand.",
-         "Water verhoogt je weerstand juist niet.",
-         "Het apparaat krijgt niet minder spanning.",
-         "Natte huid isoleert juist slechter."
-        ],
-        "uh": "Nat = lagere weerstand = grotere stroom = gevaar."
-       },
-       {
-        "v": "Een snoer is beschadigd en de koperdraad ligt bloot. Waarom is dat gevaarlijk?",
-        "o": [
-         "De isolatie eromheen maakt het juist extra veilig",
-         "Je kunt de stroom direct aanraken",
-         "Het apparaat krijgt dan minder spanning dan normaal",
-         "Er kan geen stroom meer door zo een snoer lopen"
-        ],
-        "c": 1,
-        "d": 2,
-        "u": "Zonder isolatie kun je de spanningvoerende draad aanraken en krijg je een schok.",
-        "uo": [
-         "De isolatie is juist beschadigd, dus niet veilig.",
-         "Klopt: bloot koper kun je direct aanraken.",
-         "Het apparaat krijgt gewoon spanning.",
-         "Er loopt nog steeds stroom."
-        ],
-        "uh": "Bloot koper = aanraakgevaar."
-       },
-       {
-        "v": "Waarom worden de draden van een zwaar apparaat warm bij overbelasting?",
-        "o": [
-         "Een grote stroom geeft juist minder warmte dan een kleine",
-         "De spanning van het net wordt dan automatisch veel hoger",
-         "Een grote stroom geeft veel warmte",
-         "De draden slaan de energie op in plaats van die af te geven"
-        ],
-        "c": 2,
-        "d": 2,
-        "u": "Hoe groter de stroom, hoe meer warmte in de draad; bij overbelasting te veel.",
-        "uo": [
-         "Meer stroom geeft juist meer warmte.",
-         "De netspanning stijgt niet vanzelf.",
-         "Klopt: grote stroom geeft veel warmte.",
-         "De draden slaan geen energie op."
-        ],
-        "uh": "Grote stroom -> veel warmte in de draad."
-       },
-       {
-        "v": "Waarom staat op een verlengsnoer een maximaal aantal watt?",
-        "o": [
-         "Omdat het snoer boven die grens juist te koud wordt",
-         "Omdat het snoer boven die grens meer spanning gaat leveren",
-         "Omdat het snoer dan minder lading kan opslaan dan gewenst",
-         "Boven die grens wordt het snoer te heet"
-        ],
-        "c": 3,
-        "d": 3,
-        "u": "Meer vermogen betekent meer stroom; boven de grens wordt het snoer gevaarlijk heet.",
-        "uo": [
-         "Het snoer wordt juist te heet, niet te koud.",
-         "Een snoer levert geen spanning.",
-         "Het gaat niet om opgeslagen lading.",
-         "Klopt: boven de grens wordt het snoer te heet."
-        ],
-        "uh": "Maximaal wattage = tegen oververhitting."
-       },
-       {
-        "v": "Een zekering van 16 A zit in een groep. Wat betekent dat?",
-        "o": [
-         "Bij meer dan 16 A onderbreekt hij",
-         "De groep levert altijd precies 16 volt aan de apparaten",
-         "De apparaten mogen samen niet meer dan 16 watt gebruiken",
-         "De zekering laat pas stroom door boven de 16 ampère"
-        ],
-        "c": 0,
-        "d": 3,
-        "u": "De 16 A is de grensstroom: wordt de stroom groter, dan breekt de zekering de kring.",
-        "uo": [
-         "Klopt: boven 16 A onderbreekt de zekering.",
-         "16 A is stroom, geen spanning.",
-         "Het gaat om ampère, niet watt.",
-         "De zekering laat juist onder de grens door."
-        ],
-        "uh": "Zekering 16 A = breekt boven 16 ampère."
-       },
-       {
-        "v": "Waarom is een aardlekschakelaar sneller dan een gewone zekering bij een schok?",
-        "o": [
-         "Hij wacht juist tot er een heel grote stroom door je loopt",
-         "Hij reageert al op een kleine lekstroom",
-         "Hij verhoogt eerst de spanning voordat hij iets doet",
-         "Hij laat de stroom eerst een tijdje ongehinderd doorlopen"
+         "waterkoker en wasmachine",
+         "waterkoker en koelkast",
+         "waterkoker, magnetron en koelkast",
+         "alle vier tegelijk"
         ],
         "c": 1,
         "d": 3,
-        "u": "Een aardlekschakelaar merkt al een kleine weglekkende stroom en schakelt binnen milliseconden uit.",
+        "s": 1,
+        "u": "Som van de stromen onder 16 A.",
         "uo": [
-         "Hij wacht juist niet op een grote stroom.",
-         "Klopt: hij reageert al op een kleine lekstroom.",
-         "Hij verhoogt geen spanning.",
-         "Hij laat de stroom juist niet doorlopen."
+         "Koos je waterkoker en wasmachine? Samen 9,6 + 8,7 = 18,3 A. Dat is meer dan 16 A, dus de automaat schakelt uit.",
+         "Klopt: waterkoker 2200 / 230 = 9,6 A en koelkast 300 / 230 = 1,3 A: samen 10,9 A, onder 16 A. Waterkoker en wasmachine samen zijn 9,6 + 8,7 = 18,3 A: te veel.",
+         "Koos je waterkoker, magnetron en koelkast? Samen 9,6 + 5,7 + 1,3 = 16,6 A. Dat is net iets meer dan 16 A, dus de automaat schakelt na een tijdje uit.",
+         "Koos je alle vier? Samen is dat 9,6 + 8,7 + 5,7 + 1,3 = 25 A. Veel meer dan 16 A."
         ],
-        "uh": "Aardlek = snel bij kleine lekstroom."
+        "uh": "Tel de stromen op.",
+        "ctx": "Op één groep van 230 V met een automaat van 16 A zijn aangesloten: een waterkoker van 2200 W, een wasmachine van 2000 W, een magnetron van 1300 W en een koelkast van 300 W. De bewoner wil weten wat hij tegelijk kan gebruiken."
        },
        {
-        "v": "Waarom mag metaal in een badkamer extra streng geaard zijn?",
+        "v": "Waarvoor dient de randaarde van een stopcontact?",
         "o": [
-         "Omdat metaal in een droge kamer juist gevaarlijker is",
-         "Omdat er in een badkamer helemaal geen stroom aanwezig is",
-         "Water en vocht maken schokken gevaarlijker",
-         "Omdat vocht de stroom volledig tegenhoudt en isoleert"
-        ],
-        "c": 2,
-        "d": 3,
-        "u": "Vocht verlaagt je weerstand; een goede aarding voert een defecte stroom veilig weg.",
-        "uo": [
-         "Vocht maakt het juist gevaarlijker, niet droogte.",
-         "Er is wel stroom in een badkamer.",
-         "Klopt: vocht maakt schokken gevaarlijker, dus goed aarden.",
-         "Vocht geleidt juist, het isoleert niet."
-        ],
-        "uh": "Vocht -> gevaarlijker -> goed aarden."
-       },
-       {
-        "v": "Wat is het gevaar als je een zekering vervangt door een dikker koperdraadje?",
-        "o": [
-         "De groep krijgt dan juist een veel te lage spanning",
-         "De apparaten gaan langzamer en zuiniger werken dan eerst",
-         "Er kan helemaal geen stroom meer door de groep lopen",
-         "Hij breekt niet meer bij te veel stroom"
-        ],
-        "c": 3,
-        "d": 3,
-        "u": "Een dik draadje smelt niet; de te grote stroom wordt niet onderbroken en er ontstaat brandgevaar.",
-        "uo": [
-         "De spanning daalt hierdoor niet.",
-         "De apparaten worden niet zuiniger.",
-         "De stroom loopt juist ongehinderd door.",
-         "Klopt: hij onderbreekt niet meer bij overbelasting."
-        ],
-        "uh": "Zekering overbruggen = brandgevaar."
-       },
-       {
-        "v": "Waarom trek je een stekker uit het stopcontact voordat je een lamp vervangt?",
-        "o": [
-         "Zo staat de fitting niet meer onder spanning",
-         "Zo krijgt de lamp juist meer spanning om beter te branden",
-         "Zo laad je de lamp op met extra lading voor later",
-         "Zo wordt het snoer korter en makkelijker te hanteren"
+         "lekstroom veilig naar de aarde afvoeren",
+         "de spanning verdubbelen voor zware apparaten",
+         "stroom besparen als het apparaat uit staat",
+         "het stopcontact steviger in de muur vastzetten"
         ],
         "c": 0,
-        "d": 3,
-        "u": "Zonder stekker in het stopcontact staat er geen spanning meer, dus geen schokgevaar.",
+        "d": 1,
+        "s": 2,
+        "u": "Aarde: veilige weg voor lekstroom.",
         "uo": [
-         "Klopt: geen spanning op de fitting is veilig.",
-         "De lamp krijgt geen spanning meer, dat is de bedoeling.",
-         "Je laadt de lamp niet op.",
-         "De lengte van het snoer verandert niet."
+         "Klopt: de randaarde is verbonden met de metalen behuizing van een apparaat. Raakt een fasedraad de behuizing, dan loopt de stroom via de aarddraad weg in plaats van door jou. Zo blijft de behuizing veilig.",
+         "Koos je spanning verdubbelen? De aarde verandert de spanning niet. Hij biedt een veilige weg voor stroom die weglekt.",
+         "Koos je stroom besparen? Door de aarddraad loopt normaal geen stroom. Hij is er alleen voor als er iets misgaat.",
+         "Koos je vastzetten? De metalen klemmen aan de zijkant zijn de aardcontacten. Ze zijn er voor de veiligheid, niet voor de bevestiging."
         ],
-        "uh": "Stekker eruit = geen spanning = veilig."
+        "uh": "Lekstroom veilig wegleiden."
        },
        {
-        "v": "Waarom zijn dubbelgeisoleerde apparaten vaak niet geaard?",
+        "v": "Welke apparaten moeten een stekker met randaarde hebben?",
         "o": [
-         "Omdat ze zoveel spanning leveren dat aarding niet kan",
-         "De extra isolatie beschermt al tegen aanraking",
-         "Omdat ze helemaal geen stroom gebruiken tijdens gebruik",
-         "Omdat ze de weggelekte stroom zelf weer opslaan"
-        ],
-        "c": 1,
-        "d": 3,
-        "u": "Dubbele isolatie voorkomt dat je spanningvoerende delen kunt aanraken; aarding is dan niet nodig.",
-        "uo": [
-         "Het gaat niet om te veel spanning.",
-         "Klopt: de dubbele isolatie beschermt al.",
-         "Ze gebruiken wel stroom.",
-         "Ze slaan geen stroom op."
-        ],
-        "uh": "Dubbele isolatie vervangt aarding."
-       },
-       {
-        "v": "Waarom is een schok van het lichtnet gevaarlijker dan van een gewone batterij?",
-        "o": [
-         "De batterij heeft juist een veel hogere spanning dan het net",
-         "De netspanning is precies gelijk aan die van een batterij",
-         "De netspanning is veel hoger",
-         "Een batterij levert helemaal geen stroom aan een lampje"
-        ],
-        "c": 2,
-        "d": 3,
-        "u": "Het lichtnet heeft 230 V; dat drijft een veel grotere en gevaarlijkere stroom door je lichaam dan een batterij van enkele volt.",
-        "uo": [
-         "Een batterij heeft juist een lagere spanning.",
-         "De spanningen zijn niet gelijk.",
-         "Klopt: de netspanning is veel hoger dan van een batterij.",
-         "Een batterij levert wel stroom."
-        ],
-        "uh": "Hogere spanning -> grotere, gevaarlijker stroom."
-       },
-       {
-        "v": "Wat is de eerste stap als iemand een schok krijgt en aan de stroom vastzit?",
-        "o": [
-         "De persoon meteen met blote handen lostrekken van de draad",
-         "Wat water over de persoon en de draad heen gooien",
-         "Rustig afwachten tot de stroom vanzelf ophoudt te lopen",
-         "De stroom uitschakelen"
-        ],
-        "c": 3,
-        "d": 3,
-        "u": "Schakel eerst de stroom uit (schakelaar/stekker); anders krijg jij ook een schok.",
-        "uo": [
-         "Met blote handen pakken geeft jou ook een schok.",
-         "Water geleidt en maakt het erger.",
-         "Afwachten helpt niet en is gevaarlijk.",
-         "Klopt: eerst de stroom uitschakelen."
-        ],
-        "uh": "Eerst stroom uit, dan pas helpen."
-       },
-       {
-        "v": "Waarom worden hoogspanningskabels ver van mensen en op masten gehangen?",
-        "o": [
-         "De hoge spanning is levensgevaarlijk",
-         "De hoge spanning is juist volkomen ongevaarlijk voor mensen",
-         "De kabels hebben veel zonlicht nodig om te kunnen werken",
-         "De kabels slaan energie op die je niet mag aanraken"
-        ],
-        "c": 0,
-        "d": 3,
-        "u": "Hoogspanning kan een enorme stroom door je lichaam jagen; afstand houdt mensen veilig.",
-        "uo": [
-         "Klopt: de hoge spanning is levensgevaarlijk.",
-         "Hoogspanning is juist heel gevaarlijk.",
-         "De kabels hebben geen zonlicht nodig.",
-         "De kabels slaan geen energie op."
-        ],
-        "uh": "Hoogspanning = groot gevaar, dus afstand."
-       },
-       {
-        "v": "Wat gebeurt er bij kortsluiting in een goed beveiligde installatie?",
-        "o": [
-         "De spanning van het net stijgt tot een gevaarlijk niveau",
-         "De zekering onderbreekt meteen de stroom",
-         "De apparaten gaan feller en sneller dan normaal werken",
-         "Er verandert niets en de grote stroom blijft doorlopen"
-        ],
-        "c": 1,
-        "d": 3,
-        "u": "De plotselinge zeer grote stroom laat de zekering of automaat direct de kring onderbreken.",
-        "uo": [
-         "De netspanning stijgt niet.",
-         "Klopt: de zekering breekt de kring meteen.",
-         "De apparaten werken niet feller.",
-         "Een beveiliging laat de stroom juist niet doorlopen."
-        ],
-        "uh": "Kortsluiting -> zekering onderbreekt direct."
-       },
-       {
-        "v": "Waarom is een geaard apparaat veiliger als er binnenin een draad losraakt?",
-        "o": [
-         "De losse draad zorgt dat het apparaat meer spanning krijgt",
-         "De aarding maakt dat er helemaal geen stroom meer loopt",
-         "De stroom loopt via de aarde weg, niet via jou",
-         "De aarding slaat de losse stroom op tot je hem nodig hebt"
-        ],
-        "c": 2,
-        "d": 3,
-        "u": "Raakt een fasedraad de behuizing, dan voert de aardleiding de stroom weg en springt de beveiliging, in plaats van via jou.",
-        "uo": [
-         "Het apparaat krijgt niet meer spanning.",
-         "Er loopt juist wel stroom, maar veilig weg.",
-         "Klopt: de stroom kiest de aarde in plaats van jou.",
-         "De aarding slaat geen stroom op."
-        ],
-        "uh": "Aarding leidt de stroom weg van jou."
-       },
-       {
-        "v": "Wat betekent de aanduiding 230 V op het lichtnet?",
-        "o": [
-         "De stroom die elk apparaat maximaal mag gebruiken",
-         "De weerstand van de leidingen in de muur van het huis",
-         "Het vermogen dat een apparaat samen mag verbruiken",
-         "De spanning van het stopcontact"
+         "alleen lampen",
+         "alle apparaten die op batterijen werken",
+         "apparaten met een kleine stroom, zoals een telefoonlader",
+         "apparaten met een metalen behuizing"
         ],
         "c": 3,
         "d": 2,
-        "u": "230 V is de netspanning: de duw die het stopcontact op de lading geeft.",
+        "s": 2,
+        "u": "Metalen behuizing: aarding.",
         "uo": [
-         "230 V is spanning, geen stroom.",
-         "Het is geen weerstand.",
-         "Het is geen vermogen.",
-         "Klopt: 230 V is de netspanning."
+         "Koos je alleen lampen? Veel lampen hebben juist geen aarde nodig. Het gaat om apparaten met een metalen behuizing.",
+         "Koos je batterijen? Die werken op een lage, veilige spanning en zitten niet aan het lichtnet. Aarding is daar niet nodig.",
+         "Koos je een telefoonlader? Die is dubbel geïsoleerd met een kunststof behuizing. Daarom heeft hij een platte stekker zonder aarde.",
+         "Klopt: bij een metalen behuizing kan een losgeraakte fasedraad de buitenkant onder spanning zetten. Via de randaarde loopt die stroom weg. Apparaten met een kunststof behuizing zijn vaak dubbel geïsoleerd en hebben geen aarde nodig."
         ],
-        "uh": "230 V = netspanning (volt)."
+        "uh": "Metaal buitenkant."
        },
        {
-        "v": "Waarom is het gevaarlijk om veel stekkerdozen op elkaar te stapelen?",
+        "v": "Wat gebeurt er als de fasedraad los raakt tegen de metalen behuizing van een geaarde wasmachine?",
         "o": [
-         "De totale stroom kan te groot worden",
-         "De spanning van elk apparaat wordt dan veel te laag",
-         "De apparaten gaan er juist een stuk zuiniger van werken",
-         "Er kan door zoveel dozen helemaal geen stroom lopen"
+         "de behuizing komt onder 230 V te staan en blijft zo",
+         "de wasmachine blijft gewoon werken, er gebeurt niets",
+         "de beveiliging schakelt af",
+         "de stroom loopt via de nuldraad terug"
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 2,
+        "u": "Aardfout: grote stroom, afschakelen.",
+        "uo": [
+         "Koos je dat hij onder 230 V blijft? Dat zou gebeuren zonder aarding. Juist de aarding voorkomt dat, omdat de stroom wegloopt en de beveiliging afschakelt.",
+         "Koos je dat er niets gebeurt? Er loopt een grote stroom via de aarde, en de beveiliging grijpt in. De wasmachine valt uit.",
+         "Klopt: de behuizing is via de randaarde met de aarde verbonden, met heel weinig weerstand. Er loopt dan direct een grote stroom via de aarddraad. De aardlekschakelaar en vaak ook de automaat schakelen af. Zo komt niemand met een behuizing onder spanning in aanraking.",
+         "Koos je via de nuldraad? De stroom neemt de weg met de minste weerstand: via de behuizing en de aarddraad. Daardoor ontstaat een verschil dat de aardlekschakelaar meet."
+        ],
+        "uh": "Via aarde, dan afschakelen.",
+        "ctx": "In een oude wasmachine is door trillingen de fasedraad losgeschoten en raakt nu de metalen behuizing. De wasmachine heeft een stekker met randaarde en zit in een stopcontact dat goed geaard is. De groep heeft een automaat van 16 A en de meterkast een aardlekschakelaar."
+       },
+       {
+        "v": "Wat meet een aardlekschakelaar?",
+        "o": [
+         "de totale stroom door alle groepen in huis samen",
+         "het verschil tussen fase- en nulstroom",
+         "de spanning tussen fase en nul",
+         "de temperatuur van de draden"
+        ],
+        "c": 1,
+        "d": 1,
+        "s": 3,
+        "u": "Verschil fase en nul.",
+        "uo": [
+         "Koos je de totale stroom? Dat bewaakt de hoofdzekering. De aardlekschakelaar kijkt naar een verschil tussen heen en terug.",
+         "Klopt: normaal loopt door de fasedraad precies evenveel stroom heen als door de nuldraad terug. Lekt er stroom weg, bijvoorbeeld via iemands lichaam naar de aarde, dan ontstaat er een verschil. Bij 30 mA verschil schakelt de aardlekschakelaar af.",
+         "Koos je de spanning? De spanning blijft 230 V. De aardlekschakelaar meet stromen, geen spanning.",
+         "Koos je temperatuur? Een aardlekschakelaar heeft geen thermometer. Hij reageert op een verschil in stroom."
+        ],
+        "uh": "Heen ≠ terug."
+       },
+       {
+        "v": "Bij welk verschil in stroom schakelt een gewone aardlekschakelaar in huis af?",
+        "o": [
+         "30 mA",
+         "16 A",
+         "230 V",
+         "300 mA"
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 3,
+        "u": "30 mA: onder de gevaarlijke grens.",
+        "uo": [
+         "Klopt: een aardlekschakelaar in huis schakelt af bij een lekstroom van 30 mA, binnen ongeveer 0,03 s. Zo is de stroom door een lichaam te klein en te kort om het hart te verstoren.",
+         "Koos je 16 A? Dat is de grens van een automaat voor een groep. Een aardlekschakelaar reageert al bij een veel kleinere lekstroom.",
+         "Koos je 230 V? Dat is de spanning van het lichtnet, geen stroomverschil.",
+         "Koos je 300 mA? Dat is tien keer te veel: zo'n stroom door je lichaam kan al dodelijk zijn. De grens van een aardlekschakelaar in huis ligt bij 30 mA."
+        ],
+        "uh": "Grens: 30 mA lekstroom."
+       },
+       {
+        "v": "Waarom beschermt de automaat de klusser niet, maar de aardlekschakelaar wel?",
+        "o": [
+         "de automaat werkt alleen bij gelijkstroom",
+         "de automaat zit in de nuldraad",
+         "de aardlekschakelaar schakelt bij een hogere stroom",
+         "de lichaamsstroom is te klein voor 16 A"
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 3,
+        "u": "Lichaamsstroom: te klein voor de automaat.",
+        "uo": [
+         "Koos je alleen bij gelijkstroom? Automaten werken bij wisselstroom; dat is wat er in huis is. Ze zijn alleen niet gevoelig genoeg voor een lichaamsstroom.",
+         "Koos je de nuldraad? Een automaat zit in de fasedraad. Het probleem is dat de lichaamsstroom veel te klein is om hem te laten afschakelen.",
+         "Koos je een hogere stroom? Het is andersom: de aardlekschakelaar reageert juist bij een heel kleine lekstroom van 30 mA, de automaat pas bij 16 A.",
+         "Klopt: door zijn lichaam loopt 230 / 2000 = 0,12 A. Dat is levensgevaarlijk, maar veel kleiner dan 16 A, dus de automaat merkt niets. De aardlekschakelaar ziet een verschil van 120 mA tussen fase en nul en schakelt al af bij 30 mA."
+        ],
+        "uh": "Klein voor 16 A, groot voor 30 mA.",
+        "ctx": "Een klusser boort per ongeluk in een leiding en raakt met zijn hand een fasedraad aan, terwijl hij met zijn andere hand een geaarde waterleiding vasthoudt. De weerstand van zijn lichaam tussen beide handen is ongeveer 2000 Ω. De groep heeft een automaat van 16 A en de meterkast een aardlekschakelaar van 30 mA."
+       },
+       {
+        "v": "Wat bepaalt vooral hoe gevaarlijk een elektrische schok is?",
+        "o": [
+         "de lengte van het snoer tussen stopcontact en apparaat",
+         "alleen de kleur van de draad",
+         "de stroom door je lichaam en de duur",
+         "het merk van het apparaat"
+        ],
+        "c": 2,
+        "d": 1,
+        "s": 4,
+        "u": "Stroom en duur.",
+        "uo": [
+         "Koos je de lengte van het snoer? Die heeft nauwelijks invloed. Wat telt, is hoeveel stroom er door jou gaat en hoe lang.",
+         "Koos je de kleur van de draad? De kleur geeft aan welke draad het is, maar bepaalt niet het gevaar. Het gaat om de stroom door je lichaam.",
+         "Klopt: het gevaar zit in de stroom die door je lichaam gaat, vooral door je hart, en in hoe lang die duurt. Al vanaf ongeveer 30 mA kan je hart op hol slaan.",
+         "Koos je het merk? Elk apparaat op 230 V kan gevaarlijk zijn als je de fase aanraakt. Het merk maakt geen verschil."
+        ],
+        "uh": "Stroom en tijd."
+       },
+       {
+        "v": "Waarom is het gevaarlijker om met natte handen aan een stopcontact te komen?",
+        "o": [
+         "water verhoogt de spanning van het stopcontact",
+         "natte huid heeft een kleinere weerstand",
+         "natte handen trekken meer elektronen aan",
+         "water maakt van wisselstroom gelijkstroom"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 4,
+        "u": "Kleinere R, grotere I.",
+        "uo": [
+         "Koos je hogere spanning? De spanning blijft 230 V. Wat verandert, is de weerstand van je huid.",
+         "Klopt: droge huid heeft een grote weerstand, zo'n 100 kΩ. Nat en met zout zweet zakt dat naar ongeveer 1 kΩ. Met I = U / R wordt de stroom bij 230 V dan honderd keer zo groot.",
+         "Koos je elektronen aantrekken? Handen trekken geen elektronen aan. De spanning duwt een stroom door je lichaam, en die wordt groter als je weerstand kleiner is.",
+         "Koos je gelijkstroom? Water verandert niets aan het soort stroom. Het verlaagt alleen de weerstand van je huid."
+        ],
+        "uh": "Natte huid geleidt."
+       },
+       {
+        "v": "Waarom krijgt een vogel op een hoogspanningsdraad geen schok en iemand met een ladder wel?",
+        "o": [
+         "over de vogel staat geen spanningsverschil",
+         "de vogel heeft een veel grotere weerstand dan een mens",
+         "hoogspanning is alleen gevaarlijk voor mensen",
+         "de draad is geïsoleerd waar vogels zitten"
         ],
         "c": 0,
         "d": 3,
-        "u": "Alle apparaten samen trekken één grote stroom door dezelfde stekkerdoos; die kan oververhit raken.",
+        "s": 4,
+        "u": "Gevaar zit in een spanningsverschil.",
         "uo": [
-         "Klopt: de totale stroom wordt te groot.",
-         "De spanning per apparaat blijft ongeveer gelijk.",
-         "De apparaten worden niet zuiniger.",
-         "Er loopt juist veel stroom."
+         "Klopt: de vogel raakt maar één draad, met beide poten op bijna hetzelfde punt. Over zijn lichaam staat dan bijna geen spanning, dus er loopt geen stroom. Iemand op de grond die de draad raakt, heeft de volle spanning tussen draad en aarde over zijn lichaam.",
+         "Koos je een grotere weerstand? Een vogel geleidt net zo goed als ander levend weefsel. Het verschil zit in de spanning over zijn lichaam, die bijna nul is.",
+         "Koos je alleen voor mensen? Raakt een vogel met zijn vleugels twee draden tegelijk, dan krijgt hij wel een dodelijke schok.",
+         "Koos je geïsoleerd? Hoogspanningsdraden zijn meestal kaal metaal. De vogel is veilig omdat er geen spanningsverschil over hem staat."
         ],
-        "uh": "Gestapelde stekkerdozen -> te grote stroom -> oververhitting."
+        "uh": "Geen spanningsverschil, geen stroom.",
+        "ctx": "Op een hoogspanningslijn van 150 000 V zit een spreeuw rustig op een kale draad. Een week eerder raakte een man met een aluminium ladder dezelfde soort draad, terwijl hij met zijn voeten op de grond stond. Hij overleefde het niet."
+       },
+       {
+        "v": "Welke kleur heeft de aarddraad in een Nederlandse installatie?",
+        "o": [
+         "zwart-wit gestreept",
+         "bruin",
+         "blauw",
+         "geel-groen"
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 5,
+        "u": "Aarde: geel-groen.",
+        "uo": [
+         "Koos je zwart-wit gestreept? Die kleur wordt in de huisinstallatie niet gebruikt. De aarddraad herken je altijd aan geel-groene strepen.",
+         "Koos je bruin? Dat is de fasedraad, de draad die onder spanning staat ten opzichte van de aarde.",
+         "Koos je blauw? Dat is de nuldraad, waarlangs de stroom terugloopt. Hij staat ten opzichte van de aarde vrijwel niet onder spanning.",
+         "Klopt: de aarddraad is altijd geel-groen gestreept. Zo kun je hem nooit verwarren met de fasedraad (bruin) of de nuldraad (blauw)."
+        ],
+        "uh": "Geel-groen."
+       },
+       {
+        "v": "Wat moet je eerst doen voordat je een lamp aan het plafond vervangt?",
+        "o": [
+         "de aardlekschakelaar indrukken om te testen",
+         "de lamp een uur laten afkoelen",
+         "de groep in de meterkast uitschakelen",
+         "de schakelaar aan laten staan zodat je ziet of het werkt"
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 5,
+        "u": "Spanningsloos werken.",
+        "uo": [
+         "Koos je de aardlekschakelaar testen? Dat is goed om af en toe te doen, maar het maakt de lamp niet betrouwbaar spanningsloos voor het klussen.",
+         "Koos je laten afkoelen? Een hete lamp is onprettig, maar het echte gevaar is de spanning. Schakel eerst de groep uit.",
+         "Klopt: met alleen de lichtschakelaar uit kan er nog steeds spanning op de draden staan, bijvoorbeeld als de schakelaar in de nuldraad zit. Schakel daarom de groep in de meterkast uit, dan is de lamp zeker spanningsloos.",
+         "Koos je aan laten staan? Dan werk je aan draden onder spanning. Dat is levensgevaarlijk."
+        ],
+        "uh": "Groep uit."
+       },
+       {
+        "v": "Waarom is het gevaarlijk om kachel, föhn en waterkoker via stekkerdozen op één stopcontact aan te sluiten?",
+        "o": [
+         "de spanning wordt na elke stekkerdoos hoger",
+         "het eerste snoer krijgt alle stroom",
+         "elke stekkerdoos maakt de stroom kleiner",
+         "stekkerdozen achter elkaar geven kortsluiting"
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 5,
+        "u": "Alles gaat door één stopcontact.",
+        "uo": [
+         "Koos je hogere spanning? Parallel blijft de spanning overal 230 V. Het probleem is de optelsom van de stromen.",
+         "Klopt: alle apparaten staan parallel, maar hun stroom gaat samen door het eerste snoer en het stopcontact. Een kachel (2000 W), föhn (1800 W) en waterkoker (2200 W) trekken samen 26 A. Daar zijn het snoer en het stopcontact niet op gemaakt: ze worden heet en kunnen in brand vliegen.",
+         "Koos je kleinere stroom? Elk apparaat neemt zijn eigen stroom, en die tellen op in het eerste snoer. De stroom wordt dus juist groter.",
+         "Koos je kortsluiting? Achter elkaar inpluggen geeft op zich geen kortsluiting, maar wel overbelasting van het eerste snoer en stopcontact."
+        ],
+        "uh": "Stromen tellen op.",
+        "ctx": "In een studentenkamer zit maar één stopcontact. Een student steekt er een stekkerdoos in, daarin een tweede, en sluit een elektrische kachel van 2000 W, een föhn van 1800 W en een waterkoker van 2200 W aan. Op het snoer van de eerste stekkerdoos staat: max. 16 A."
+       },
+       {
+        "v": "In een keuken valt de groep uit als de oven en de waterkoker tegelijk aanstaan. Wat is hier aan de hand?",
+        "o": [
+         "overbelasting",
+         "kortsluiting",
+         "een aardlek",
+         "een stroomstoring van de netbeheerder"
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 0,
+        "u": "Te veel apparaten tegelijk: overbelasting.",
+        "uo": [
+         "Klopt: elk apparaat werkt gewoon, maar samen trekken ze meer stroom dan de groep aankan. De automaat schakelt af om de draden tegen oververhitting te beschermen. Dat heet overbelasting.",
+         "Koos je kortsluiting? Bij kortsluiting raken fase en nul elkaar ergens direct. Hier is niets kapot; er staat alleen te veel tegelijk aan.",
+         "Koos je een aardlek? Dan zou er stroom naar de aarde weglekken en springt de aardlekschakelaar. Hier gaat het om de grootte van de totale stroom.",
+         "Koos je een storing van de netbeheerder? Dan valt het hele huis of de hele straat uit, niet alleen de groep als twee apparaten tegelijk aanstaan."
+        ],
+        "uh": "Overbelasting: te veel tegelijk."
+       },
+       {
+        "v": "Hoe werkt een ouderwetse smeltzekering?",
+        "o": [
+         "een lampje gaat branden en verbruikt de extra stroom",
+         "een veer drukt de stroom terug",
+         "een magneet trekt de spanning omlaag",
+         "een dun draadje smelt door als de stroom te groot wordt"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 1,
+        "u": "Smeltdraad warmt op en smelt.",
+        "uo": [
+         "Koos je een lampje? Een zekering verbruikt geen extra stroom. Hij breekt de kring open, zodat er helemaal geen stroom meer loopt.",
+         "Koos je een veer? Een veer kan geen stroom terugdrukken. In een smeltzekering doet de warmte het werk: het draadje smelt.",
+         "Koos je een magneet die de spanning verlaagt? Een zekering verandert de spanning niet. Hij onderbreekt de kring als de stroom te groot is.",
+         "Klopt: in een smeltzekering zit een dun draadje. Bij een te grote stroom wordt het zo heet dat het smelt, en dan is de kring onderbroken. Daarna moet je de zekering vervangen."
+        ],
+        "uh": "Draadje smelt door."
+       },
+       {
+        "v": "Waarom mag de bewoner de automaat van 16 A niet vervangen door een van 25 A?",
+        "o": [
+         "dan werkt de aardlekschakelaar niet meer",
+         "dan wordt de spanning in huis hoger",
+         "de draden kunnen dan te heet worden voordat hij afschakelt",
+         "een automaat van 25 A is altijd trager bij kortsluiting"
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 1,
+        "u": "Automaat hoort bij de dikte van de draden.",
+        "uo": [
+         "Koos je de aardlekschakelaar? Die werkt los van de automaat en blijft gewoon werken. Het gevaar zit in de draden die te heet worden.",
+         "Koos je hogere spanning? Een andere automaat verandert de spanning niet. Hij laat alleen een grotere stroom toe voordat hij uitschakelt.",
+         "Klopt: de automaat is afgestemd op de draden in de muur. Die mogen bij 16 A niet te warm worden. Met een automaat van 25 A kan er veel meer stroom lopen voordat hij afschakelt, en dan kunnen de draden oververhit raken en brand veroorzaken.",
+         "Koos je trager bij kortsluiting? Bij kortsluiting is de stroom zo groot dat ook 25 A meteen afschakelt. Het probleem is langdurige overbelasting tussen 16 en 25 A."
+        ],
+        "uh": "Draden beschermen.",
+        "ctx": "De automaat van een groep schakelt steeds uit als de bewoner de waterkoker en de vaatwasser tegelijk gebruikt. Hij overweegt de automaat van 16 A te vervangen door een van 25 A. De draden in de muur hebben een doorsnede die geschikt is voor maximaal 16 A."
+       },
+       {
+        "v": "Waarom heeft een telefoonlader met kunststof behuizing geen aarde nodig?",
+        "o": [
+         "telefoons gebruiken geen stroom",
+         "hij is dubbel geïsoleerd",
+         "kunststof geleidt beter dan metaal",
+         "de lader werkt alleen op gelijkstroom"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 2,
+        "u": "Dubbele isolatie: geen aanraakbaar metaal.",
+        "uo": [
+         "Koos je geen stroom? Een telefoon laadt wel degelijk met stroom. De lader is veilig door de isolatie, niet doordat er geen stroom loopt.",
+         "Klopt: een dubbel geïsoleerd apparaat heeft geen metalen delen die je kunt aanraken en die onder spanning kunnen komen. Je herkent het aan het symbool van een vierkant in een vierkant. Een aarddraad is dan niet nodig.",
+         "Koos je kunststof geleidt beter? Het is andersom: kunststof is een isolator. Juist daarom kan de buitenkant niet onder spanning komen.",
+         "Koos je alleen gelijkstroom? De lader zelf zit aan de wisselspanning van 230 V. Hij is veilig omdat de behuizing dubbel geïsoleerd is."
+        ],
+        "uh": "Dubbele isolatie."
+       },
+       {
+        "v": "Wat gebeurt er als je op de testknop van een aardlekschakelaar drukt?",
+        "o": [
+         "hij maakt een kleine lekstroom na en moet dan afschakelen",
+         "hij meet hoeveel energie je deze maand gebruikt",
+         "hij zet de spanning in huis tijdelijk hoger",
+         "hij schakelt alleen de verlichting uit"
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 3,
+        "u": "Kunstmatige lekstroom.",
+        "uo": [
+         "Klopt: de testknop laat een klein beetje stroom buiten de nuldraad om lopen. Dan ontstaat er een verschil tussen fase en nul, net als bij een echte lekstroom. Schakelt de aardlekschakelaar af, dan werkt hij goed.",
+         "Koos je energie meten? Dat doet de kWh-meter. De testknop controleert of de aardlekschakelaar een lekstroom opmerkt.",
+         "Koos je hogere spanning? De testknop verandert de spanning niet. Hij maakt een klein stroomverschil om de beveiliging te testen.",
+         "Koos je alleen de verlichting? Een aardlekschakelaar beschermt meestal meerdere groepen tegelijk, en die vallen allemaal uit bij de test."
+        ],
+        "uh": "Test met nep-lekstroom."
+       },
+       {
+        "v": "Schakelt de aardlekschakelaar af bij deze meting?",
+        "o": [
+         "ja, omdat de fasestroom groter is dan 4 A",
+         "nee, het verschil is maar 0,04 A, dat is te weinig",
+         "nee, beide stromen zijn kleiner dan 16 A",
+         "ja, het verschil is 40 mA"
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 3,
+        "u": "Verschil = 4,24 − 4,20 = 0,040 A = 40 mA.",
+        "uo": [
+         "Koos je groter dan 4 A? De grootte van de fasestroom maakt voor de aardlekschakelaar niet uit. Het gaat om het verschil met de nulstroom.",
+         "Koos je te weinig? 0,04 A lijkt klein, maar het is 40 mA, en de aardlekschakelaar reageert al bij 30 mA.",
+         "Koos je kleiner dan 16 A? Dat is de grens van de automaat. De aardlekschakelaar kijkt naar het verschil tussen fase en nul, niet naar de grootte van de stroom.",
+         "Klopt: het verschil tussen fase en nul is 4,24 − 4,20 = 0,040 A = 40 mA. Die stroom lekt ergens weg naar de aarde. Dat is meer dan 30 mA, dus de aardlekschakelaar schakelt af."
+        ],
+        "uh": "Verschil vergelijken met 30 mA.",
+        "ctx": "Een elektricien meet met een stroomtang aan een groep met een oude boiler. Door de fasedraad loopt 4,24 A, door de nuldraad 4,20 A. De meterkast heeft een aardlekschakelaar van 30 mA. Hij vermoedt dat er ergens stroom weglekt via de metalen ketel."
+       },
+       {
+        "v": "Waarom is een spanning van 12 V voor je lichaam niet gevaarlijk en 230 V wel?",
+        "o": [
+         "je lichaam heeft bij 12 V een grotere massa",
+         "bij 12 V loopt er helemaal geen stroom",
+         "bij 12 V is de stroom door je lichaam heel klein",
+         "12 V is gelijkspanning en die is nooit gevaarlijk"
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 4,
+        "u": "I = U / R: lage spanning, kleine stroom.",
+        "uo": [
+         "Koos je massa? Je massa verandert niet met de spanning. Het gaat om de stroom die door je lichaam gaat, I = U / R.",
+         "Koos je geen stroom? Er loopt wel een kleine stroom, maar die is te klein om gevaarlijk te zijn. De grootte van de stroom hangt af van de spanning.",
+         "Klopt: met een lichaamsweerstand van ongeveer 1000 Ω geeft 12 V een stroom van 12 mA, onder de gevaarlijke grens. Bij 230 V is dat 230 mA, levensgevaarlijk.",
+         "Koos je gelijkspanning? Ook gelijkspanning is gevaarlijk als hij hoog genoeg is, zoals de accu van een elektrische auto. Het gaat om de grootte van de spanning."
+        ],
+        "uh": "Kleine U, kleine I."
+       },
+       {
+        "v": "Welke weg van de stroom door het lichaam is het gevaarlijkst?",
+        "o": [
+         "van de duim naar de wijsvinger van dezelfde hand",
+         "van de ene hand naar de andere, langs het hart",
+         "alleen door de huid van een vinger",
+         "van de knie naar de enkel"
+        ],
+        "c": 1,
+        "d": 1,
+        "s": 4,
+        "u": "Langs het hart.",
+        "uo": [
+         "Koos je van duim naar wijsvinger? Dat geeft een pijnlijke brandwond, maar de stroom komt niet bij het hart. Daarom is het minder gevaarlijk.",
+         "Klopt: het grootste gevaar is een stroom die langs je hart gaat, zoals van hand naar hand of van hand naar voet. Het hart kan dan uit zijn ritme raken.",
+         "Koos je alleen door de huid? Ook dat kan verbranden, maar de stroom raakt het hart niet. Het gevaar is het grootst als de stroom door de borst gaat.",
+         "Koos je van knie naar enkel? Die weg blijft ver van het hart. Een stroom van hand naar hand of hand naar voet is veel gevaarlijker."
+        ],
+        "uh": "Langs het hart."
+       },
+       {
+        "v": "Welke kleur heeft de fasedraad in een Nederlandse installatie?",
+        "o": [
+         "bruin",
+         "blauw",
+         "geel-groen",
+         "helemaal wit"
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 5,
+        "u": "Fase: bruin.",
+        "uo": [
+         "Klopt: de fasedraad is bruin. Die staat ten opzichte van de aarde onder 230 V en is dus de gevaarlijke draad.",
+         "Koos je blauw? Dat is de nuldraad, waarlangs de stroom teruggaat. Hij staat vrijwel niet onder spanning ten opzichte van de aarde.",
+         "Koos je geel-groen? Dat is de aarddraad, die alleen stroom voert als er iets misgaat.",
+         "Koos je wit? Dat is in Nederland geen kleur voor een draad in de huisinstallatie. De fase is bruin."
+        ],
+        "uh": "De fasedraad is bruin."
+       },
+       {
+        "v": "Iemand blijft na het aanraken van een kapotte lamp aan de draad vastzitten. Wat doe je eerst?",
+        "o": [
+         "wachten tot de zekering vanzelf afslaat",
+         "de persoon met je handen lostrekken",
+         "water over de persoon gooien",
+         "de stroom uitschakelen in de meterkast"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 5,
+        "u": "Eerst de stroom eraf.",
+        "uo": [
+         "Koos je wachten op de zekering? De stroom door een lichaam is veel te klein om een zekering van 16 A te laten afslaan. Wachten kan dodelijk zijn.",
+         "Koos je lostrekken? Dan loopt de stroom ook door jou en raak je zelf vast. Raak de persoon pas aan als de stroom eraf is.",
+         "Koos je water? Water geleidt en maakt het alleen maar gevaarlijker, voor de persoon en voor jou.",
+         "Klopt: zolang er stroom door de persoon loopt, krijg je zelf ook een schok als je hem aanraakt. Schakel daarom eerst de groep of de hoofdschakelaar uit. Bel daarna 112."
+        ],
+        "uh": "Stroom eraf, dan pas helpen."
        }
       ],
       "oe": [
        {
-        "vraag": "Leg uit wat kortsluiting is en waarom er dan een grote stroom loopt.",
-        "antwoord": "Kortsluiting is een verbinding met bijna geen weerstand, bijvoorbeeld als twee blote draden elkaar raken. Volgens de wet van Ohm (I = U / R) hoort bij een heel kleine weerstand een heel grote stroom. Die grote stroom zorgt voor veel warmte in de draden en kan brand veroorzaken. Daarom onderbreekt een zekering de kring als de stroom te groot wordt."
+        "bron": "Examenstijl",
+        "ctx": "Op een groep van 230 V met een automaat van 16 A staan een vaatwasser van 2100 W, een koffiezetapparaat van 1000 W en een koelkast van 150 W aan. De bewoner zet er ook nog een waterkoker van 2200 W bij aan.",
+        "v": "Bereken de stroom door de groep voor en na het aanzetten van de waterkoker en leg uit wat er gebeurt.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Voor: (2100 + 1000 + 150) / 230 = 14,1 A (1p). Na: (3250 + 2200) / 230 = 23,7 A (1p). Dat is meer dan 16 A: overbelasting, de automaat schakelt de groep af om de draden te beschermen (1p)."
        },
        {
-        "vraag": "Leg uit hoe een zekering brand voorkomt.",
-        "antwoord": "Een zekering zit in de groep en laat de stroom door zolang die onder een grenswaarde blijft, bijvoorbeeld 16 A. Wordt de stroom groter, door overbelasting of kortsluiting, dan smelt de zekering (of schakelt de automaat uit) en wordt de kring onderbroken. Zo kan de stroom niet zo groot worden dat de draden oververhit raken en er brand ontstaat."
+        "bron": "Examenstijl",
+        "ctx": "In een badkamer raakt iemand met natte handen een kapotte lamp aan waarvan de fasedraad bloot ligt. Met zijn voeten staat hij op een natte, geaarde tegelvloer. Zijn lichaamsweerstand is dan ongeveer 1,2 kΩ. Het huis heeft een automaat van 16 A en een aardlekschakelaar van 30 mA.",
+        "v": "Bereken de stroom door zijn lichaam en leg uit welke beveiliging hem kan redden en waarom de andere niet.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "I = 230 / 1200 = 0,19 A = 190 mA (1p). De automaat schakelt pas af boven 16 A en merkt deze stroom niet op (1p). De aardlekschakelaar ziet een verschil van 190 mA tussen fase en nul, meer dan 30 mA, en schakelt binnen 0,03 s af (1p)."
        },
        {
-        "vraag": "Leg uit waarom aarding van een metalen apparaat belangrijk is en hoe het je beschermt.",
-        "antwoord": "Als er binnen een apparaat een spanningvoerende draad losraakt en de metalen behuizing raakt, komt die behuizing onder spanning te staan. Zonder aarding zou je een schok krijgen als je het apparaat aanraakt. Met aarding is de behuizing verbonden met de aarde, zodat de stroom via de aardleiding wegvloeit in plaats van via jou. Vaak springt daarbij ook de zekering of de aardlekschakelaar, zodat de stroom helemaal wordt onderbroken."
+        "bron": "Examenstijl",
+        "ctx": "Een verlengsnoer is beschadigd: de fase- en nuldraad raken elkaar. De weerstand van de bedrading vanaf de meterkast tot de beschadiging is 0,25 Ω. De groep heeft een automaat van 16 A.",
+        "v": "Bereken de kortsluitstroom en leg uit waarom de automaat dan bijna meteen afschakelt, terwijl hij bij overbelasting soms pas na minuten reageert.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "I = U / R = 230 / 0,25 = 920 A (1p). Dat is vele malen meer dan 16 A, dus de automaat schakelt direct af (1p). Bij overbelasting is de stroom maar iets groter dan 16 A; dan schakelt de automaat pas af als de stroom een tijd te groot blijft en de draden warm worden (1p)."
        },
        {
-        "vraag": "Leg uit waarom een aardlekschakelaar je beter beschermt tegen een schok dan alleen een zekering.",
-        "antwoord": "Een gewone zekering reageert pas als de stroom heel groot wordt. Een schok door een mens hoeft geen enorme stroom te zijn, maar kan toch dodelijk zijn. Een aardlekschakelaar merkt al een kleine hoeveelheid weglekkende stroom, bijvoorbeeld stroom die via een mens naar de aarde loopt, en schakelt dan binnen milliseconden uit. Daardoor beschermt hij mensen veel sneller en beter tegen een schok dan een zekering alleen."
+        "bron": "Examenstijl",
+        "ctx": "Een oude wasmachine heeft een metalen behuizing maar is aangesloten met een stekker zonder randaarde. Door een defect raakt de fasedraad de behuizing. Iemand pakt met één hand de wasmachine vast en met de andere de geaarde kraan.",
+        "v": "Leg uit wat er met deze persoon gebeurt en hoe randaarde dit had voorkomen.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "De behuizing staat onder 230 V; via de persoon naar de kraan loopt een stroom door zijn lichaam, langs het hart (1p). Met randaarde was de behuizing via de aarddraad met de aarde verbonden (1p); de stroom was via de aarddraad weggelopen en de beveiliging had afgeschakeld voordat iemand de machine aanraakte (1p)."
        },
        {
-        "vraag": "Leg uit waarom je met natte handen extra voorzichtig moet zijn bij elektrische apparaten.",
-        "antwoord": "Water geleidt de stroom en verlaagt je weerstand. Volgens I = U / R kan er bij dezelfde netspanning met natte handen een veel grotere stroom door je lichaam lopen dan met droge handen. Een grotere stroom door het lichaam is gevaarlijker: hij kan je spieren laten verkrampen en je hartritme verstoren. Daarom moet je apparaten en stopcontacten nooit met natte handen aanraken."
+        "bron": "Examenstijl",
+        "ctx": "Een elektricien meet met een stroomtang aan de groep van een buitenlamp: door de fasedraad 0,450 A en door de nuldraad 0,425 A. Na een regenbui meet hij 0,450 A en 0,410 A. De meterkast heeft een aardlekschakelaar van 30 mA.",
+        "v": "Bereken in beide gevallen de lekstroom en leg uit wanneer de aardlekschakelaar afschakelt en wat de oorzaak kan zijn.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Eerst: 0,450 − 0,425 = 25 mA, onder 30 mA, dus geen afschakeling (1p). Na de regen: 0,450 − 0,410 = 40 mA, boven 30 mA, dus de aardlekschakelaar schakelt af (1p). Waarschijnlijk komt er water in de lamp, waardoor stroom via het natte armatuur naar de aarde lekt (1p)."
        }
       ]
      }

@@ -2688,9 +2688,13 @@ var VAKKEN = [
      },
      {
       "id": "D6",
+      "lo": "na.D.6",
+      "gs": 2,
       "naam": "Elektrische veiligheid",
-      "beschrijving": "Begrijpen wat kortsluiting en overbelasting zijn en hoe zekeringen, aarding en de aardlekschakelaar mensen en huizen beschermen tegen schokken en brand.",
-      "ceStatus": "ce",
+      "beschrijving": "Je legt uit wat kortsluiting en overbelasting zijn en rekent de stromen uit, beschrijft hoe een zekering of automaat, de randaarde en de aardlekschakelaar beveiligen, verklaart het gevaar van stroom door het lichaam met I = U / R en past veiligheidsregels toe bij het werken met het lichtnet.",
+      "ceStatus": "CE",
+      "binas": "35D",
+      "val": "",
       "onderwerpen": [
        "Kortsluiting en overbelasting",
        "De zekering en automaat",
@@ -2699,9 +2703,9 @@ var VAKKEN = [
        "Gevaar van stroom door het lichaam",
        "Veilig omgaan met het lichtnet"
       ],
-      "nSv": 25,
+      "nSv": 28,
       "nOe": 5,
-      "nBeg": 12,
+      "nBeg": 11,
       "hasSam": true
      }
     ]
