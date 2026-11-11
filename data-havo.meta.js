@@ -1084,20 +1084,24 @@ var VAKKEN = [
     "leerdoelen": [
      {
       "id": "M1",
+      "lo": "bi.M.1",
+      "gs": 2,
       "naam": "Bouw en functie van de cel",
-      "beschrijving": "De celorganellen en hun functies, plus het verschil tussen een plantencel, een dierlijke cel en een bacteriecel (eukaryoot versus prokaryoot).",
-      "ceStatus": "CE",
+      "beschrijving": "Je beschrijft de bouw en functie van de organellen van een cel, rekent met vergroting en echte grootte, volgt de route van een eiwit van ribosoom via ER en golgisysteem naar buiten, en herkent plantencellen, diercellen en bacteriecellen aan hun kenmerken.",
+      "ceStatus": "CE+SE",
+      "binas": "",
+      "val": "",
       "onderwerpen": [
-       "Celorganellen en hun functies",
+       "De cel als bouwsteen",
        "Celmembraan en celkern",
-       "Mitochondrion en bladgroenkorrel",
-       "Ribosoom, vacuole en celwand",
-       "Endoplasmatisch reticulum en golgi-systeem",
+       "Mitochondriën en bladgroenkorrels",
+       "Ribosomen, ER en golgisysteem",
+       "Vacuole, celwand en lysosomen",
        "Plantencel, diercel en bacteriecel"
       ],
-      "nSv": 25,
+      "nSv": 28,
       "nOe": 5,
-      "nBeg": 12,
+      "nBeg": 15,
       "hasSam": true
      },
      {

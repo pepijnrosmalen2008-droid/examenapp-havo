@@ -5,7 +5,7 @@
 Volledige beschrijving (functies, inhoud per niveau, prijs, wat Slagio niet is): https://slagio.nl/llms-full.txt
 
 ## In het kort
-- 12 vakken havo, 16 vakken vwo, 12 vakken vmbo; 26.808 oefenvragen en 4.346 begrippen.
+- 12 vakken havo, 16 vakken vwo, 12 vakken vmbo; 26.811 oefenvragen en 4.346 begrippen.
 - Adaptief oefenen: na een fout een vraag over hetzelfde onderwerp, een niveau makkelijker; uitleg bij elk fout antwoord.
 - Foutenboek en herhalen met gespreide herhaling, beheersing per leerdoel, studieplan tot het examen.
 - Examens met klok, proefexamens in examenstijl met modelantwoord en puntenverdeling, archief met officiële oude examens.
@@ -48,7 +48,7 @@ Volledige beschrijving (functies, inhoud per niveau, prijs, wat Slagio niet is):
 - [Data verwerken en grafieken lezen (Biologie HAVO)](https://slagio.nl/leren/havo/biologie/data-verwerken-en-grafieken-lezen.html): Gegevens uit tabellen en grafieken aflezen, as-eenheden juist lezen, spreiding (standaarddeviatie) interpreteren en niet concluderen buiten het meetbereik.
 - [Correlatie versus causaliteit (Biologie HAVO)](https://slagio.nl/leren/havo/biologie/correlatie-versus-causaliteit.html): Het verschil tussen een verband (correlatie) en een oorzaak-gevolgrelatie (causaliteit), en waarom een correlatie geen oorzaak bewijst.
 - [Biologisch onderzoeksgereedschap (Biologie HAVO)](https://slagio.nl/leren/havo/biologie/biologisch-onderzoeksgereedschap.html): Het gebruik van een determineertabel om een soort op naam te brengen, en de functie van een preparaat bij microscopisch onderzoek.
-- [Bouw en functie van de cel (Biologie HAVO)](https://slagio.nl/leren/havo/biologie/bouw-en-functie-van-de-cel.html): De celorganellen en hun functies, plus het verschil tussen een plantencel, een dierlijke cel en een bacteriecel (eukaryoot versus prokaryoot).
+- [Bouw en functie van de cel (Biologie HAVO)](https://slagio.nl/leren/havo/biologie/bouw-en-functie-van-de-cel.html): Je beschrijft de bouw en functie van de organellen van een cel, rekent met vergroting en echte grootte, volgt de route van een eiwit van ribosoom via ER en…
 - [Transport door het celmembraan (Biologie HAVO)](https://slagio.nl/leren/havo/biologie/transport-door-het-celmembraan.html): Hoe stoffen door het selectief doorlaatbare celmembraan bewegen via diffusie, osmose, passief en actief transport, met hypertoon/hypotoon/isotoon, plasmolyse…
 - [Enzymwerking (Biologie HAVO)](https://slagio.nl/leren/havo/biologie/enzymwerking.html): Je weet wat een enzym is en hoe het een reactie versnelt, en je kunt grafieken van enzymactiviteit bij verschillende temperaturen en pH verklaren met optimum…
 - [Fotosynthese & celademhaling (Biologie HAVO)](https://slagio.nl/leren/havo/biologie/fotosynthese-en-celademhaling.html): Hoe planten glucose opbouwen met licht (fotosynthese) en hoe cellen glucose met zuurstof afbreken voor energie (celademhaling), incl. assimilatie/dissimilatie…

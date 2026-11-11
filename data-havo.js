@@ -46407,595 +46407,710 @@ var VAKKEN = [
     "leerdoelen": [
      {
       "id": "M1",
+      "lo": "bi.M.1",
+      "gs": 2,
       "naam": "Bouw en functie van de cel",
-      "beschrijving": "De celorganellen en hun functies, plus het verschil tussen een plantencel, een dierlijke cel en een bacteriecel (eukaryoot versus prokaryoot).",
-      "ceStatus": "CE",
+      "beschrijving": "Je beschrijft de bouw en functie van de organellen van een cel, rekent met vergroting en echte grootte, volgt de route van een eiwit van ribosoom via ER en golgisysteem naar buiten, en herkent plantencellen, diercellen en bacteriecellen aan hun kenmerken.",
+      "ceStatus": "CE+SE",
+      "binas": "",
+      "val": "",
       "onderwerpen": [
-       "Celorganellen en hun functies",
+       "De cel als bouwsteen",
        "Celmembraan en celkern",
-       "Mitochondrion en bladgroenkorrel",
-       "Ribosoom, vacuole en celwand",
-       "Endoplasmatisch reticulum en golgi-systeem",
+       "Mitochondriën en bladgroenkorrels",
+       "Ribosomen, ER en golgisysteem",
+       "Vacuole, celwand en lysosomen",
        "Plantencel, diercel en bacteriecel"
       ],
-      "sam": "Een cel bestaat uit organellen die elk hun eigen taak hebben. Het celmembraan is de selectief doorlaatbare grens, de celkern bevat het DNA en stuurt de cel aan, het mitochondrion levert energie via de celademhaling en de bladgroenkorrel doet de fotosynthese. Ribosomen maken eiwitten, de vacuole slaat op en de celwand geeft stevigheid; het endoplasmatisch reticulum en golgi-systeem verzorgen transport en bewerking. Een plantencel heeft extra een celwand, bladgroenkorrels en een grote vacuole, terwijl een bacteriecel geen celkern heeft (prokaryoot) en plant- en diercellen wel (eukaryoot).",
+      "sam": "Alle organismen bestaan uit cellen. Totale vergroting = oculair × objectief; echte grootte = beeld / vergroting. Celmembraan: selectief doorlaatbaar. Celkern: DNA, kernporiën voor mRNA. Mitochondrium: glucose + zuurstof → CO2 + water + energie. Bladgroenkorrel: fotosynthese, alleen in planten en alleen waar licht is. Ribosoom maakt eiwit; exportroute ruw ER → golgisysteem → blaasje → celmembraan. Plantencel: celwand, bladgroenkorrels, grote vacuole. Bacterie (prokaryoot): geen kern, DNA los, wel celwand en ribosomen.",
       "begrippen": [
        {
+        "t": "Organel",
+        "d": "Onderdeel van een cel met een eigen taak, zoals de kern of een mitochondrium."
+       },
+       {
         "t": "Celmembraan",
-        "d": "De selectief doorlaatbare grens van de cel die regelt welke stoffen erin en eruit gaan."
+        "d": "Dun, selectief doorlaatbaar vlies om de cel dat bepaalt welke stoffen erin en eruit gaan."
+       },
+       {
+        "t": "Cytoplasma",
+        "d": "Geleiachtige vloeistof binnen het celmembraan waarin de organellen liggen."
        },
        {
         "t": "Celkern",
-        "d": "Het organel dat het DNA bevat en de cel aanstuurt."
+        "d": "Organel met het DNA in chromosomen; stuurt via mRNA de eiwitproductie aan."
        },
        {
-        "t": "DNA",
-        "d": "Het erfelijke materiaal in de celkern met de instructies voor de cel."
+        "t": "Kernporie",
+        "d": "Opening in het dubbele kernmembraan waardoor mRNA naar het cytoplasma gaat."
        },
        {
-        "t": "Mitochondrion",
-        "d": "Het organel waarin de celademhaling plaatsvindt en energie vrijkomt."
+        "t": "Mitochondrium",
+        "d": "Organel dat glucose met zuurstof afbreekt en daarbij energie vrijmaakt (dissimilatie)."
        },
        {
         "t": "Bladgroenkorrel",
-        "d": "Het organel met bladgroen waarin de fotosynthese plaatsvindt; alleen in plantencellen."
+        "d": "Organel in planten dat met lichtenergie glucose maakt uit koolstofdioxide en water."
        },
        {
         "t": "Ribosoom",
-        "d": "Het organel dat de eiwitten van de cel maakt."
-       },
-       {
-        "t": "Vacuole",
-        "d": "Blaasje voor opslag van vocht en stoffen; groot en centraal in de plantencel."
-       },
-       {
-        "t": "Celwand",
-        "d": "Stevige laag rondom de plantencel die stevigheid geeft; ontbreekt bij dierlijke cellen."
+        "d": "Korreltje dat aminozuren aan elkaar zet tot een eiwit, los of op het ER."
        },
        {
         "t": "Endoplasmatisch reticulum",
-        "d": "Netwerk van kanalen dat stoffen door de cel transporteert."
+        "d": "Netwerk van membranen in het cytoplasma; ruw ER heeft ribosomen en maakt eiwitten voor export."
        },
        {
-        "t": "Golgi-systeem",
-        "d": "Organel dat stoffen bewerkt en verpakt voor het transport."
+        "t": "Golgisysteem",
+        "d": "Stapel platte zakjes die eiwitten afwerkt, in blaasjes verpakt en verstuurt."
+       },
+       {
+        "t": "Vacuole",
+        "d": "Met membraan omgeven ruimte vol water en stoffen; geeft een plantencel waterdruk."
+       },
+       {
+        "t": "Celwand",
+        "d": "Stevige laag om het celmembraan van planten (cellulose), bacteriën en schimmels."
+       },
+       {
+        "t": "Lysosoom",
+        "d": "Blaasje met verteringsenzymen dat versleten organellen en opgenomen deeltjes afbreekt."
        },
        {
         "t": "Eukaryoot",
-        "d": "Cel met een echte celkern, zoals een planten- of dierlijke cel."
+        "d": "Cel met een kern en organellen met een membraan, zoals planten- en diercellen."
        },
        {
         "t": "Prokaryoot",
-        "d": "Cel zonder celkern, zoals een bacterie; het DNA ligt los in de cel."
+        "d": "Cel zonder kern, met het DNA los in het cytoplasma, zoals een bacterie."
        }
       ],
       "sv": [
        {
-        "v": "Wat is de functie van het celmembraan?",
+        "v": "Welke uitspraak past bij de celtheorie?",
         "o": [
-         "Het levert energie voor de cel via de celademhaling in het mitochondrion",
-         "Het vormt de grens en regelt welke stoffen de cel in en uit gaan",
-         "Het bevat het DNA van de cel",
-         "Het geeft de plantencel stevigheid"
-        ],
-        "c": 1,
-        "d": 1,
-        "u": "Onthoud: het celmembraan is de grens die selectief doorlaat wat er in en uit gaat.",
-        "uo": [
-         "De celademhaling en energie horen bij het mitochondrion, niet bij het membraan.",
-         "Klopt: het celmembraan is de grens en laat selectief stoffen door.",
-         "Het DNA zit in de celkern, niet in het celmembraan.",
-         "Stevigheid komt van de celwand (bij planten), niet van het celmembraan."
-        ],
-        "uh": "Celmembraan = selectief doorlaatbare grens."
-       },
-       {
-        "v": "Welk celonderdeel stuurt de cel aan en bevat het erfelijk materiaal?",
-        "o": [
-         "Het mitochondrion",
-         "Het ribosoom",
-         "De celkern",
-         "De vacuole"
+         "een cel kan vanzelf ontstaan uit levenloos materiaal in een plas",
+         "alleen dieren en planten bestaan uit cellen, bacteriën niet",
+         "alle organismen zijn opgebouwd uit een of meer cellen",
+         "organellen zijn de kleinste delen die zelfstandig kunnen leven"
         ],
         "c": 2,
-        "d": 2,
-        "u": "Onthoud: de celkern bevat het DNA en stuurt de cel aan.",
+        "d": 1,
+        "s": 0,
+        "u": "De cel is de kleinste eenheid van leven; elk organisme bestaat uit cellen.",
         "uo": [
-         "Het mitochondrion levert energie, maar bevat niet het DNA dat de cel aanstuurt.",
-         "Het ribosoom maakt eiwitten en stuurt de cel niet aan.",
-         "Klopt: de celkern bevat het DNA en geeft de cel zijn instructies.",
-         "De vacuole is voor opslag en vocht, niet voor de aansturing."
+         "Koos je cellen die vanzelf ontstaan? Volgens de celtheorie komt elke cel voort uit een andere cel, door deling. Uit levenloos materiaal ontstaat geen cel.",
+         "Koos je dat bacteriën geen cellen zijn? Een bacterie is juist een complete cel, alleen zonder celkern. Ook eencelligen vallen onder de celtheorie.",
+         "Klopt: elk organisme, van bacterie tot eik, bestaat uit een of meer cellen. Een bacterie is zelf één cel.",
+         "Koos je organellen als kleinste levende delen? Een los mitochondrium of een losse kern kan niet zelfstandig leven. De kleinste eenheid die leeft is de hele cel."
         ],
-        "uh": "Celkern = DNA + aansturing van de cel."
+        "uh": "Alles wat leeft bestaat uit cellen."
        },
        {
-        "v": "Wat gebeurt er in het mitochondrion?",
+        "v": "Hoe groot is de totale vergroting waarmee ze de cellen ziet?",
         "o": [
-         "Celademhaling: glucose wordt met zuurstof afgebroken en levert energie",
-         "Fotosynthese: glucose wordt met licht en water opgebouwd uit koolstofdioxide",
-         "Opslag van vocht en afvalstoffen",
-         "Het opvangen van zonlicht met bladgroen"
+         "50×",
+         "400×",
+         "40×",
+         "4000×"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 0,
+        "u": "Totale vergroting = vergroting oculair × vergroting objectief = 10 × 40.",
+        "uo": [
+         "Koos je 50×? Dan heb je de vergrotingen opgeteld (10 + 40). De twee lenzen vergroten na elkaar, dus je moet ze vermenigvuldigen: 10 × 40 = 400.",
+         "Klopt: je vermenigvuldigt de twee lenzen. 10 × 40 = 400, dus de cellen lijken 400 keer zo groot als in het echt.",
+         "Koos je 40×? Dat is alleen de vergroting van het objectief. Het oculair vergroot het beeld daarna nog eens 10 keer, dus samen 400 keer.",
+         "Koos je 4000×? Dan staat er een nul te veel. 10 × 40 = 400. Een vergroting van 4000 keer haal je met een lichtmicroscoop niet scherp."
+        ],
+        "uh": "Vermenigvuldig oculair en objectief.",
+        "ctx": "Een leerling bekijkt een preparaat van rode-uiencellen met een lichtmicroscoop. Op het oculair staat 10× en ze draait het objectief van 40× ervoor. In het beeld ziet ze de celwanden, een grote gekleurde vacuole en hier en daar een celkern."
+       },
+       {
+        "v": "Hoe lang is dit mitochondrium in werkelijkheid?",
+        "o": [
+         "2 µm",
+         "0,2 µm",
+         "20 µm",
+         "4,5 · 10⁵ mm"
         ],
         "c": 0,
-        "d": 1,
-        "u": "Onthoud: het mitochondrion doet de celademhaling en levert de energie.",
-        "uo": [
-         "Klopt: in het mitochondrion wordt glucose met zuurstof afgebroken en komt energie vrij.",
-         "Fotosynthese hoort bij de bladgroenkorrel, niet bij het mitochondrion.",
-         "Opslag hoort bij de vacuole, niet bij het mitochondrion.",
-         "Licht opvangen met bladgroen gebeurt in de bladgroenkorrel."
-        ],
-        "uh": "Mitochondrion = celademhaling = energie."
-       },
-       {
-        "v": "Wat is de functie van de bladgroenkorrel?",
-        "o": [
-         "De cel aansturen met behulp van het DNA in de kern",
-         "Eiwitten maken volgens het recept van de celkern",
-         "Energie leveren door de celademhaling",
-         "Fotosynthese: glucose maken met licht"
-        ],
-        "c": 3,
-        "d": 1,
-        "u": "Onthoud: de bladgroenkorrel doet de fotosynthese en zit alleen in plantencellen.",
-        "uo": [
-         "Aansturen met DNA hoort bij de celkern.",
-         "Eiwitten maken hoort bij de ribosomen.",
-         "Energie leveren via celademhaling hoort bij het mitochondrion.",
-         "Klopt: in de bladgroenkorrel maakt de plant glucose met licht (fotosynthese)."
-        ],
-        "uh": "Bladgroenkorrel = fotosynthese, alleen in plantencellen."
-       },
-       {
-        "v": "Welk celonderdeel maakt de eiwitten?",
-        "o": [
-         "De celwand",
-         "De bladgroenkorrel",
-         "Het ribosoom",
-         "Het celmembraan"
-        ],
-        "c": 2,
-        "d": 1,
-        "u": "Onthoud: ribosomen maken de eiwitten van de cel.",
-        "uo": [
-         "De celwand geeft stevigheid, maar maakt geen eiwitten.",
-         "De bladgroenkorrel doet fotosynthese, geen eiwitproductie.",
-         "Klopt: ribosomen maken de eiwitten.",
-         "Het celmembraan is de grens, geen eiwitfabriek."
-        ],
-        "uh": "Ribosoom = eiwitfabriek."
-       },
-       {
-        "v": "Wat is de functie van de vacuole, vooral in een plantencel?",
-        "o": [
-         "Het maken van eiwitten voor de groei",
-         "Opslag van vocht en stoffen; houdt de cel stevig",
-         "Het afbreken van glucose met zuurstof",
-         "Het opvangen van zonlicht met bladgroen voor de fotosynthese"
-        ],
-        "c": 1,
-        "d": 1,
-        "u": "Onthoud: de vacuole slaat vocht en stoffen op en is groot in plantencellen.",
-        "uo": [
-         "Eiwitten maken hoort bij de ribosomen, niet bij de vacuole.",
-         "Klopt: de vacuole slaat vocht en stoffen op en houdt de plantencel stevig.",
-         "Glucose afbreken hoort bij het mitochondrion.",
-         "Licht opvangen hoort bij de bladgroenkorrel."
-        ],
-        "uh": "Vacuole = opslag/vocht, groot bij planten."
-       },
-       {
-        "v": "Waarvoor dient de celwand?",
-        "o": [
-         "Voor de opslag van vocht in de cel",
-         "Voor het opvangen van zonlicht met behulp van bladgroen",
-         "Voor het aansturen van de cel met DNA",
-         "Voor stevigheid; hij zit alleen om plantencellen"
-        ],
-        "c": 3,
-        "d": 1,
-        "u": "Onthoud: de celwand geeft stevigheid en zit alleen om plantencellen.",
-        "uo": [
-         "Opslag van vocht hoort bij de vacuole.",
-         "Licht opvangen hoort bij de bladgroenkorrel.",
-         "Aansturen met DNA hoort bij de celkern.",
-         "Klopt: de celwand geeft stevigheid en zit alleen om plantencellen."
-        ],
-        "uh": "Celwand = stevigheid, alleen bij planten."
-       },
-       {
-        "v": "Welk deel zorgt voor transport en bewerking van stoffen in de cel?",
-        "o": [
-         "Het endoplasmatisch reticulum en het golgi-systeem",
-         "De celwand rondom en het selectief doorlaatbare celmembraan",
-         "De celkern en het DNA",
-         "Het ribosoom en de vacuole"
-        ],
-        "c": 0,
-        "d": 2,
-        "u": "Onthoud: het ER en het golgi-systeem vervoeren en bewerken stoffen in de cel.",
-        "uo": [
-         "Klopt: het endoplasmatisch reticulum en golgi-systeem transporteren en bewerken stoffen.",
-         "Celwand en celmembraan vormen grenzen; ze verzorgen niet het interne transport.",
-         "De celkern met DNA stuurt aan, maar doet niet het transport van stoffen.",
-         "Ribosomen maken eiwitten en de vacuole slaat op; dat is geen transportsysteem."
-        ],
-        "uh": "ER + golgi = transport en bewerking van stoffen."
-       },
-       {
-        "v": "Welke onderdelen vind je wel in een plantencel maar niet in een diercel?",
-        "o": [
-         "Celkern, mitochondriën, ribosomen en celmembraan",
-         "Celmembraan en celkern",
-         "Mitochondriën en celmembraan",
-         "Celwand, bladgroenkorrels en een grote vacuole"
-        ],
-        "c": 3,
-        "d": 2,
-        "u": "Onthoud: alleen plantencellen hebben een celwand, bladgroenkorrels en een grote vacuole.",
-        "uo": [
-         "Celkern, mitochondriën en ribosomen zitten ook in een diercel.",
-         "Celmembraan en celkern heeft een diercel ook.",
-         "Mitochondriën en celmembraan zitten ook in dierlijke cellen.",
-         "Klopt: celwand, bladgroenkorrels en een grote vacuole horen bij de plantencel."
-        ],
-        "uh": "Extra bij planten: celwand, bladgroen, grote vacuole."
-       },
-       {
-        "v": "Wat is een belangrijk verschil tussen een plantencel en een diercel?",
-        "o": [
-         "Alleen de diercel heeft een celkern met daarin het DNA",
-         "Alleen de diercel heeft mitochondriën en levert daarmee energie",
-         "Alleen de plantencel heeft een celwand en bladgroenkorrels",
-         "Alleen de plantencel heeft een celmembraan"
-        ],
-        "c": 2,
-        "d": 2,
-        "u": "Onthoud: de plantencel heeft extra een celwand, bladgroenkorrels en een grote vacuole.",
-        "uo": [
-         "Onjuist: zowel plant- als diercel hebben een celkern.",
-         "Onjuist: beide celtypen hebben mitochondriën.",
-         "Klopt: de plantencel heeft er extra een celwand en bladgroenkorrels bij.",
-         "Onjuist: beide celtypen hebben een celmembraan."
-        ],
-        "uh": "Plantencel extra: celwand + bladgroen + vacuole."
-       },
-       {
-        "v": "Waarin verschilt een bacteriecel van een planten- en dierlijke cel?",
-        "o": [
-         "Een bacteriecel heeft geen celkern (prokaryoot)",
-         "Een bacteriecel heeft altijd bladgroenkorrels",
-         "Een bacteriecel heeft geen celmembraan om zich heen",
-         "Een bacteriecel heeft een veel grotere celkern"
-        ],
-        "c": 0,
-        "d": 2,
-        "u": "Onthoud: een bacteriecel is prokaryoot en heeft geen celkern; plant- en diercel wel (eukaryoot).",
-        "uo": [
-         "Klopt: een bacteriecel heeft geen celkern; het DNA ligt los in de cel (prokaryoot).",
-         "Bacteriën hebben geen bladgroenkorrels als vast kenmerk.",
-         "Een bacteriecel heeft juist wel een celmembraan.",
-         "Een bacteriecel heeft helemaal geen celkern, dus ook geen grotere kern."
-        ],
-        "uh": "Bacterie = prokaryoot: geen celkern."
-       },
-       {
-        "v": "Wat betekent het dat een cel eukaryoot is?",
-        "o": [
-         "De cel heeft geen celkern",
-         "De cel heeft een echte celkern met DNA erin",
-         "De cel heeft altijd een stevige celwand eromheen",
-         "De cel kan geen eiwitten maken"
-        ],
-        "c": 1,
-        "d": 1,
-        "u": "Onthoud: eukaryoot = met celkern (plant en dier); prokaryoot = zonder celkern (bacterie).",
-        "uo": [
-         "Geen celkern hoort juist bij een prokaryoot, zoals een bacterie.",
-         "Klopt: een eukaryote cel heeft een echte celkern met DNA.",
-         "Een celwand hoort niet bij de definitie van eukaryoot; diercellen hebben er geen.",
-         "Eukaryote cellen maken juist wel eiwitten met hun ribosomen."
-        ],
-        "uh": "Eukaryoot = mét celkern."
-       },
-       {
-        "v": "Waar in de cel ligt het DNA bij een plantencel of diercel?",
-        "o": [
-         "In het mitochondrion",
-         "In de vacuole",
-         "In de celkern",
-         "In het celmembraan"
-        ],
-        "c": 2,
-        "d": 1,
-        "u": "Onthoud: bij plant- en diercellen ligt het DNA netjes in de celkern.",
-        "uo": [
-         "Het mitochondrion levert energie; het bewaart niet het hoofd-DNA van de cel.",
-         "De vacuole is voor opslag, niet voor het DNA.",
-         "Klopt: bij eukaryote cellen ligt het DNA in de celkern.",
-         "Het celmembraan is de grens en bevat niet het DNA."
-        ],
-        "uh": "DNA zit in de celkern (bij plant en dier)."
-       },
-       {
-        "v": "Wat betekent 'selectief doorlaatbaar' bij het celmembraan?",
-        "o": [
-         "Het laat alle stoffen zonder onderscheid door",
-         "Het laat sommige stoffen wel door en andere niet",
-         "Het laat helemaal geen stoffen door",
-         "Het laat alleen licht door voor de fotosynthese"
-        ],
-        "c": 1,
-        "d": 2,
-        "u": "Onthoud: selectief doorlaatbaar betekent dat het membraan kiest wat er wel en niet doorgaat.",
-        "uo": [
-         "Als alles zomaar doorging, zou het membraan niets regelen; dat klopt niet.",
-         "Klopt: het membraan laat sommige stoffen door en houdt andere tegen.",
-         "Er gaan wel stoffen doorheen, anders zou de cel geen voeding krijgen.",
-         "Licht doorlaten hoort niet bij de functie van het celmembraan."
-        ],
-        "uh": "Selectief doorlaatbaar = kiezen wat erin en eruit mag."
-       },
-       {
-        "v": "Een spiercel gebruikt veel energie. Van welk organel heeft die cel er daardoor veel?",
-        "o": [
-         "Veel bladgroenkorrels",
-         "Veel grote vacuoles",
-         "Veel celwanden",
-         "Veel mitochondriën"
-        ],
-        "c": 3,
         "d": 3,
-        "u": "Onthoud: mitochondriën leveren energie, dus energierijke cellen hebben er veel.",
+        "s": 0,
+        "u": "Werkelijke grootte = grootte op de foto / vergroting = 30 mm / 15 000.",
         "uo": [
-         "Bladgroenkorrels doen fotosynthese en zitten niet in dierlijke spiercellen.",
-         "Vacuoles zijn voor opslag, niet voor het leveren van energie.",
-         "Een dierlijke cel heeft geen celwand.",
-         "Klopt: mitochondriën leveren energie, dus een actieve spiercel heeft er veel."
+         "Klopt: 30 mm / 15 000 = 0,002 mm. Dat is 2 µm, want 1 mm = 1000 µm. Een mitochondrium is dus ongeveer zo groot als een bacterie.",
+         "Koos je 0,2 µm? Dan ben je bij het omrekenen een factor 10 kwijtgeraakt. 30 / 15 000 = 0,002 mm, en 0,002 × 1000 = 2 µm.",
+         "Koos je 20 µm? Dat is de grootte van een hele diercel. 30 mm / 15 000 = 0,002 mm = 2 µm; reken de nullen nog eens na.",
+         "Koos je 4,5 · 10⁵ mm? Dan heb je vermenigvuldigd in plaats van gedeeld. De foto is vergroot, dus het echte organel is kleiner: delen door 15 000."
         ],
-        "uh": "Veel energie nodig = veel mitochondriën."
+        "uh": "Echte grootte = beeld / vergroting.",
+        "ctx": "Op een foto die met een elektronenmicroscoop is gemaakt, is een mitochondrium 30 mm lang. Onder de foto staat dat hij 15 000 keer is vergroot. De leerling wil weten hoe groot het organel in het echt is en schrijft het antwoord op in micrometer."
        },
        {
-        "v": "Waarom kan een menselijke spiercel geen fotosynthese uitvoeren?",
+        "v": "Waarom zie je ribosomen wel met een elektronenmicroscoop en niet met een lichtmicroscoop?",
         "o": [
-         "Omdat een dierlijke cel geen bladgroenkorrels heeft",
-         "Omdat een dierlijke cel geen mitochondriën voor energie heeft",
-         "Omdat een dierlijke cel geen celkern heeft",
-         "Omdat een dierlijke cel geen ribosomen heeft"
+         "ribosomen zitten alleen in dode cellen, en die bekijk je met elektronen",
+         "een ribosoom kleurt alleen op met elektronen en niet met gewoon licht",
+         "een lichtmicroscoop vergroot hooguit tien keer en dat is te weinig",
+         "het oplossend vermogen van de elektronenmicroscoop is veel groter"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 0,
+        "u": "Een elektronenmicroscoop onderscheidt veel kleinere details dan een lichtmicroscoop.",
+        "uo": [
+         "Koos je dode cellen? Ribosomen zitten in elke levende cel. Voor de elektronenmicroscoop moet je de cel wel doden en prepareren, maar dat is niet de reden.",
+         "Koos je kleuren met elektronen? Het gaat niet om kleur maar om detail. Met licht vallen twee punten dichter dan 0,2 µm samen tot één vlek; een ribosoom is veel kleiner.",
+         "Koos je tien keer vergroten? Een lichtmicroscoop vergroot tot ongeveer 1000 keer. Toch zie je ribosomen niet, omdat licht geen kleinere details dan 0,2 µm scheidt.",
+         "Klopt: met een elektronenmicroscoop zie je nog details van een paar nanometer los van elkaar. Ribosomen van ongeveer 25 nm zijn voor een lichtmicroscoop te klein."
+        ],
+        "uh": "Het gaat om detail, niet om vergroting."
+       },
+       {
+        "v": "Welke functie heeft het celmembraan?",
+        "o": [
+         "het bevat het erfelijk materiaal van de cel in chromosomen",
+         "het geeft de plantencel stevigheid en een vaste vorm",
+         "het regelt welke stoffen de cel in en uit gaan",
+         "het maakt de eiwitten van de cel volgens de code van het DNA"
+        ],
+        "c": 2,
+        "d": 1,
+        "s": 1,
+        "u": "Het celmembraan is de selectief doorlaatbare grens van de cel.",
+        "uo": [
+         "Koos je erfelijk materiaal? De chromosomen liggen in de celkern. Het celmembraan grenst de hele cel af, maar bevat geen DNA.",
+         "Koos je stevigheid? Dat doet de celwand van een plantencel. Het celmembraan ligt daarbinnen en is dun en buigzaam, zonder vaste vorm.",
+         "Klopt: het celmembraan laat sommige stoffen door en houdt andere tegen. Zo bepaalt de cel zelf wat erin en eruit gaat.",
+         "Koos je eiwitten maken? Dat gebeurt aan de ribosomen in het cytoplasma. Het membraan bevat wel eiwitten, maar maakt ze niet zelf."
+        ],
+        "uh": "Poortwachter van de cel."
+       },
+       {
+        "v": "Welke conclusie past het best bij dit experiment?",
+        "o": [
+         "het cytoplasma bestuurt de groei en deling van de amoebe",
+         "de kern is nodig voor groei en deling op langere termijn",
+         "de amoebe sterft door de wond die de naald heeft gemaakt",
+         "de kern levert de energie voor beweging en voedselopname"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 1,
+        "u": "Zonder kern maakt de cel geen nieuwe eiwitten meer en kan hij niet groeien of delen.",
+        "uo": [
+         "Koos je het cytoplasma? Het cytoplasma was in beide amoeben nog aanwezig. Alleen de amoebe zonder kern stopte met groeien, dus de kern is de sturende factor.",
+         "Klopt: de amoebe zonder kern leeft nog even op wat er al is, maar groeit en deelt niet meer. De kern stuurt via het DNA de cel aan.",
+         "Koos je de wond? Daarom is er een controle met een prik in het cytoplasma. Die amoebe leefde gewoon door, dus de wond verklaart het verschil niet.",
+         "Koos je energie uit de kern? De amoebe zonder kern bleef nog dagen bewegen. Energie komt uit de mitochondriën; de kern levert de informatie."
+        ],
+        "uh": "Vergelijk met de controle-amoebe.",
+        "ctx": "Een onderzoeker haalt bij een amoebe met een fijne naald de celkern weg. Die amoebe blijft nog een paar dagen bewegen en voedsel opnemen, maar groeit niet meer en deelt niet. Daarna sterft hij. Een amoebe waarbij alleen in het cytoplasma is geprikt, leeft gewoon door en deelt."
+       },
+       {
+        "v": "Waar in een diercel ligt bijna al het DNA?",
+        "o": [
+         "in de celkern, verdeeld over de chromosomen",
+         "in de ribosomen, waar de eiwitten worden gemaakt",
+         "in het celmembraan, dat de cel van buiten afgrenst",
+         "in het cytoplasma, los tussen de organellen in"
         ],
         "c": 0,
-        "d": 2,
-        "u": "Onthoud: fotosynthese vereist bladgroenkorrels, en die zitten alleen in plantencellen.",
+        "d": 1,
+        "s": 1,
+        "u": "Bij eukaryoten ligt het DNA in de kern, verdeeld over chromosomen.",
         "uo": [
-         "Klopt: dierlijke cellen missen bladgroenkorrels, dus geen fotosynthese.",
-         "Dierlijke cellen hebben juist wel mitochondriën.",
-         "Dierlijke cellen hebben wel degelijk een celkern.",
-         "Dierlijke cellen hebben wel ribosomen om eiwitten te maken."
+         "Klopt: bijna al het DNA zit in de celkern, verdeeld over chromosomen. Alleen de mitochondriën hebben nog een klein eigen stukje DNA.",
+         "Koos je de ribosomen? Ribosomen lezen een kopie van een gen af (mRNA), maar bewaren zelf geen DNA. Het origineel blijft in de kern.",
+         "Koos je het celmembraan? Het membraan is een dun vlies van vetachtige stoffen en eiwitten om de cel. Het erfelijk materiaal zit dieper, in de kern.",
+         "Koos je los in het cytoplasma? Zo is het bij een bacterie, die geen kern heeft. Een diercel heeft een kernmembraan dat het DNA omsluit."
         ],
-        "uh": "Geen bladgroenkorrels = geen fotosynthese."
+        "uh": "Eukaryoot: DNA in de kern."
        },
        {
-        "v": "Een kliercel maakt heel veel eiwitten. Welke organellen zijn daar dan opvallend veel aanwezig?",
+        "v": "Langs welke weg komt een kopie van een gen (mRNA) uit de kern?",
         "o": [
-         "Veel vacuoles",
-         "Veel celwanden",
-         "Veel ribosomen",
-         "Veel bladgroenkorrels"
+         "helemaal niet, want de ribosomen liggen in de kern",
+         "door het celmembraan naar buiten en weer naar binnen",
+         "via de vacuole, die vlak tegen de kern aan ligt",
+         "door de kernporiën in het kernmembraan"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 1,
+        "u": "Het kernmembraan heeft poriën waardoor mRNA naar het cytoplasma gaat.",
+        "uo": [
+         "Koos je ribosomen in de kern? Eiwitten worden gemaakt aan ribosomen in het cytoplasma en op het ER. Daarom moet het mRNA juist de kern uit.",
+         "Koos je via het celmembraan? Het mRNA hoeft de cel niet uit. Het gaat alleen van de kern naar het cytoplasma, en daarvoor zijn de kernporiën.",
+         "Koos je de vacuole? De vacuole is een opslagruimte voor water en stoffen, vooral in plantencellen. Er loopt geen route van de kern via de vacuole.",
+         "Klopt: het kernmembraan is dubbel en heeft kleine openingen, de kernporiën. Daardoor gaat het mRNA naar de ribosomen in het cytoplasma."
+        ],
+        "uh": "Openingen in het kernmembraan."
+       },
+       {
+        "v": "Welke verklaring past bij dit verschil in levensduur?",
+        "o": [
+         "rode bloedcellen hebben geen celmembraan meer en drogen daardoor langzaam uit",
+         "zonder kern kan de cel geen zuurstof meer binden aan hemoglobine",
+         "zonder kern kan de cel geen nieuwe eiwitten maken om zichzelf te herstellen",
+         "de kern van een witte bloedcel levert alle energie die de cel nodig heeft"
         ],
         "c": 2,
         "d": 3,
-        "u": "Onthoud: ribosomen maken eiwitten, dus een eiwitrijke cel heeft er veel.",
+        "s": 1,
+        "u": "Zonder kern geen nieuwe mRNA en dus geen nieuwe eiwitten: de cel kan zich niet herstellen.",
         "uo": [
-         "Vacuoles slaan op, ze maken geen eiwitten.",
-         "Celwanden geven stevigheid en zitten niet in dierlijke kliercellen.",
-         "Klopt: ribosomen maken eiwitten, dus die cel heeft er veel.",
-         "Bladgroenkorrels doen fotosynthese, geen eiwitproductie."
+         "Koos je geen celmembraan? Elke cel heeft een celmembraan, ook een rode bloedcel. Zonder membraan zou de cel meteen uit elkaar vallen in plaats van na 120 dagen.",
+         "Koos je zuurstof binden? Dat kunnen rode bloedcellen juist heel goed; hun hemoglobine is al gemaakt voordat de kern verdween. Het probleem is herstel op lange termijn.",
+         "Klopt: zonder kern ontstaat er geen nieuw mRNA, dus de cel kan kapotte eiwitten niet vervangen. Na ongeveer 120 dagen is hij versleten.",
+         "Koos je energie uit de kern? Energie komt uit de dissimilatie, niet uit de kern. De kern bevat de informatie om nieuwe eiwitten te maken."
         ],
-        "uh": "Veel eiwit maken = veel ribosomen."
+        "uh": "Wat kan een cel zonder DNA niet meer?",
+        "ctx": "Rijpe rode bloedcellen van de mens verliezen tijdens hun ontwikkeling hun celkern. Ze leven daarna ongeveer 120 dagen en worden dan in de lever en de milt afgebroken. Witte bloedcellen houden hun kern; sommige leven jaren en kunnen zich nog delen."
        },
        {
-        "v": "Waardoor blijft een plant stevig staan, ook zonder skelet?",
+        "v": "In welk organel wordt glucose met zuurstof afgebroken, waarbij energie vrijkomt?",
         "o": [
-         "Door de vele mitochondriën die in elke cel energie leveren",
-         "Door de celwanden en de gevulde vacuolen die de cellen stevig houden",
-         "Door de celkernen met daarin het erfelijke DNA-materiaal",
-         "Door het bladgroen in de bladeren"
+         "in de bladgroenkorrel",
+         "in het mitochondrium",
+         "in het ribosoom",
+         "in het golgisysteem"
         ],
         "c": 1,
-        "d": 2,
-        "u": "Onthoud: celwanden en volle vacuoles maken plantenweefsel stevig (turgor).",
-        "uo": [
-         "Mitochondriën leveren energie, maar geven de plant geen stevigheid.",
-         "Klopt: de celwanden en de met vocht gevulde vacuolen houden de cellen stevig.",
-         "De celkern stuurt de cel aan, maar zorgt niet voor stevigheid.",
-         "Bladgroen vangt licht op, dat geeft geen stevigheid."
-        ],
-        "uh": "Stevig plant = celwand + volle vacuole."
-       },
-       {
-        "v": "Wat doet het golgi-systeem in de cel?",
-        "o": [
-         "Het levert de energie voor de cel via de celademhaling",
-         "Het vangt licht op met bladgroen",
-         "Het bevat het DNA van de cel",
-         "Het bewerkt en verpakt stoffen voor transport"
-        ],
-        "c": 3,
         "d": 1,
-        "u": "Onthoud: het golgi-systeem bewerkt en verpakt stoffen en werkt samen met het ER.",
+        "s": 2,
+        "u": "Het mitochondrium is de plek van de aerobe dissimilatie.",
         "uo": [
-         "Energie leveren hoort bij het mitochondrion.",
-         "Licht opvangen hoort bij de bladgroenkorrel.",
-         "Het DNA zit in de celkern.",
-         "Klopt: het golgi-systeem bewerkt en verpakt stoffen voor het transport."
+         "Koos je de bladgroenkorrel? Daar gebeurt het omgekeerde: met lichtenergie wordt glucose gemaakt (fotosynthese). Afbreken gebeurt in het mitochondrium.",
+         "Klopt: in het mitochondrium wordt glucose met zuurstof afgebroken tot koolstofdioxide en water. De energie die vrijkomt gebruikt de cel.",
+         "Koos je het ribosoom? Ribosomen zetten aminozuren aan elkaar tot eiwitten. Dat kost juist energie in plaats van dat het energie oplevert.",
+         "Koos je het golgisysteem? Dat verpakt en verstuurt eiwitten in blaasjes. Met de afbraak van glucose heeft het niets te maken."
         ],
-        "uh": "Golgi = stoffen bewerken en verpakken."
+        "uh": "Energiecentrale van de cel."
        },
        {
-        "v": "Welk organel is de 'baas' van de cel en regelt wat er gebeurt?",
+        "v": "Welke verklaring past het best bij deze telling?",
         "o": [
-         "De celkern",
-         "Het ribosoom",
-         "De vacuole",
-         "Het celmembraan"
+         "cellen die veel energie gebruiken hebben meer mitochondriën",
+         "grote cellen hebben altijd meer mitochondriën dan kleine cellen",
+         "mitochondriën maken vet, dus vetcellen zouden er het meest moeten hebben",
+         "mitochondriën vangen licht op, dus cellen in de huid hebben er het meest"
         ],
         "c": 0,
-        "d": 1,
-        "u": "Onthoud: de celkern stuurt de cel aan met de informatie in het DNA.",
-        "uo": [
-         "Klopt: de celkern regelt met het DNA wat er in de cel gebeurt.",
-         "Het ribosoom maakt eiwitten, maar stuurt de cel niet aan.",
-         "De vacuole is voor opslag, niet voor de aansturing.",
-         "Het celmembraan is de grens, geen aansturend organel."
-        ],
-        "uh": "Celkern = de baas van de cel."
-       },
-       {
-        "v": "Welke uitspraak over een bacteriecel klopt?",
-        "o": [
-         "Een bacteriecel is een eukaryote cel met een celkern",
-         "Een bacteriecel heeft dezelfde grote vacuole als een plantencel",
-         "Een bacteriecel heeft geen celkern; het DNA ligt los in de cel",
-         "Een bacteriecel heeft altijd bladgroenkorrels voor fotosynthese"
-        ],
-        "c": 2,
         "d": 2,
-        "u": "Onthoud: een bacterie is prokaryoot; het DNA ligt los, zonder celkern eromheen.",
+        "s": 2,
+        "u": "Het aantal mitochondriën hangt af van hoeveel energie een cel verbruikt.",
         "uo": [
-         "Onjuist: een bacterie is juist prokaryoot, zonder celkern.",
-         "Een bacterie heeft niet zo'n grote centrale vacuole als een plantencel.",
-         "Klopt: een bacteriecel heeft geen celkern; het DNA ligt los in de cel.",
-         "Bacteriën hebben niet standaard bladgroenkorrels."
+         "Klopt: een hartspiercel trekt je hele leven samen en verbruikt veel energie. Daarom heeft hij veel mitochondriën, een vetcel veel minder.",
+         "Koos je grote cellen? Een vetcel is juist een van de grootste cellen in de tabel, maar heeft de minste mitochondriën. Grootte verklaart de telling dus niet.",
+         "Koos je vet maken? Mitochondriën breken stoffen af om energie vrij te maken. Een vetcel slaat vooral vet op en heeft daar weinig energie voor nodig.",
+         "Koos je licht opvangen? Dat doen bladgroenkorrels in planten. Een muis heeft geen bladgroenkorrels, en de huidcellen hebben juist weinig mitochondriën."
         ],
-        "uh": "Bacterie: los DNA, geen celkern (prokaryoot)."
+        "uh": "Kijk welke cel het hardst werkt.",
+        "ctx": "Een onderzoeker telt in vier soorten cellen van een muis het gemiddelde aantal mitochondriën per cel: hartspiercel 5000, levercel 2000, huidcel 300 en vetcel 100. De vetcel is de grootste van de vier. Ze wil verklaren waarom de aantallen zo verschillen."
        },
        {
-        "v": "Onder de microscoop zie je een cel zonder celkern, met het DNA los in de cel. Wat is dit?",
+        "v": "Welk organel heeft een cel uit een blad wel en een cel uit de wortel niet?",
         "o": [
-         "Een plantencel met celwand",
-         "Een bacteriecel (prokaryoot)",
-         "Een diercel met een celkern",
-         "Een bladgroenkorrel"
-        ],
-        "c": 1,
-        "d": 3,
-        "u": "Onthoud: geen celkern en los DNA is typisch voor een bacterie (prokaryoot).",
-        "uo": [
-         "Een plantencel is eukaryoot en heeft juist wel een celkern.",
-         "Klopt: geen celkern met los DNA hoort bij een bacteriecel (prokaryoot).",
-         "Een diercel is eukaryoot en heeft wel een celkern.",
-         "Een bladgroenkorrel is een organel, geen hele cel."
-        ],
-        "uh": "Geen celkern, los DNA = bacterie."
-       },
-       {
-        "v": "Waarom kan een diercel wel groeien maar geen eigen glucose maken uit licht?",
-        "o": [
-         "Omdat een diercel geen celkern en dus geen DNA heeft",
-         "Omdat een diercel geen mitochondriën heeft",
-         "Omdat een diercel geen ribosomen heeft",
-         "Omdat een diercel geen bladgroenkorrels heeft"
+         "een grote centrale vacuole",
+         "mitochondriën voor de dissimilatie",
+         "een celwand van cellulose",
+         "bladgroenkorrels"
         ],
         "c": 3,
         "d": 2,
-        "u": "Onthoud: zonder bladgroenkorrels geen fotosynthese, dus dierlijke cellen halen glucose uit voedsel.",
+        "s": 2,
+        "u": "Wortelcellen krijgen geen licht en hebben daarom geen bladgroenkorrels.",
         "uo": [
-         "Onjuist: een diercel heeft wel een celkern met DNA.",
-         "Onjuist: een diercel heeft juist wel mitochondriën.",
-         "Onjuist: een diercel heeft wel ribosomen.",
-         "Klopt: een diercel mist bladgroenkorrels, dus geen fotosynthese; glucose komt uit voedsel."
+         "Koos je de vacuole? Ook wortelcellen hebben een grote vacuole; die houdt de cel stevig door waterdruk. Alleen bladgroenkorrels ontbreken onder de grond.",
+         "Koos je mitochondriën? Die heeft elke plantencel, ook in de wortel, want elke cel moet glucose afbreken voor energie.",
+         "Koos je een celwand? Alle plantencellen hebben een celwand van cellulose, in het blad én in de wortel. Het verschil zit in de bladgroenkorrels.",
+         "Klopt: bladgroenkorrels doen aan fotosynthese en hebben licht nodig. In de wortel, onder de grond, zijn ze niet nuttig en ontbreken ze."
         ],
-        "uh": "Diercel: geen bladgroen, dus glucose uit voedsel."
+        "uh": "Wat heeft licht nodig?"
        },
        {
-        "v": "In welke cel vind je meestal één grote centrale vacuole?",
+        "v": "Waarom hebben ook plantencellen mitochondriën, terwijl ze al bladgroenkorrels hebben?",
         "o": [
-         "In een plantencel",
-         "In een bacteriecel zonder celkern",
-         "In een diercel met veel mitochondriën",
-         "In een ribosoom"
-        ],
-        "c": 0,
-        "d": 1,
-        "u": "Onthoud: de grote centrale vacuole is typisch voor de plantencel.",
-        "uo": [
-         "Klopt: een plantencel heeft meestal één grote centrale vacuole.",
-         "Een bacteriecel heeft niet zo'n grote centrale vacuole.",
-         "Een diercel heeft hooguit kleine vacuoles, geen grote centrale.",
-         "Een ribosoom is een organel, geen cel met een vacuole."
-        ],
-        "uh": "Grote centrale vacuole = plantencel."
-       },
-       {
-        "v": "Bij een proef levert een cel geen energie meer. Welk organel werkt dan waarschijnlijk niet goed?",
-        "o": [
-         "De celwand",
-         "Het celmembraan als grens",
-         "Het mitochondrion",
-         "De vacuole"
+         "mitochondriën slaan bij planten het zetmeel op dat overdag in het blad is gemaakt",
+         "planten hebben mitochondriën nodig om licht op te vangen als het donker is",
+         "ook planten moeten glucose afbreken om energie vrij te maken voor hun cellen",
+         "zonder mitochondriën kan een plantencel geen celwand van cellulose vormen"
         ],
         "c": 2,
         "d": 3,
-        "u": "Onthoud: het mitochondrion levert de energie, dus bij energiegebrek hapert dat organel.",
+        "s": 2,
+        "u": "Bladgroenkorrels maken glucose; mitochondriën breken het af om energie vrij te maken.",
         "uo": [
-         "De celwand geeft stevigheid, die levert geen energie.",
-         "Het celmembraan regelt transport over de grens, maar levert niet de energie.",
-         "Klopt: het mitochondrion levert de energie; hapert het, dan valt de energie weg.",
-         "De vacuole slaat op en levert geen energie."
+         "Koos je zetmeel opslaan? Zetmeel wordt opgeslagen in korrels in de bladgroenkorrels of in speciale opslagcellen. Mitochondriën zijn geen opslagplek.",
+         "Koos je licht in het donker? In het donker is er geen licht om op te vangen. Mitochondriën vangen nooit licht op; ze breken glucose af.",
+         "Klopt: bladgroenkorrels maken glucose, maar de energie daarin moet nog vrijkomen. Dat gebeurt in de mitochondriën, dag en nacht.",
+         "Koos je de celwand? Voor het maken van cellulose is wel energie nodig, maar mitochondriën zijn er niet alleen voor de celwand. Elk proces in de cel kost energie."
         ],
-        "uh": "Energie weg? Kijk naar het mitochondrion."
+        "uh": "Maken en afbreken zijn twee processen.",
+        "ctx": "Een leerling zet een plant in een afgesloten glazen bak met een CO2-meter. Overdag in het licht daalt de hoeveelheid koolstofdioxide in de bak. Als de lamp uitgaat, stijgt de hoeveelheid koolstofdioxide de hele nacht door, terwijl de plant geen licht meer opvangt."
+       },
+       {
+        "v": "Welke verklaring voor hun herkomst past bij deze gegevens?",
+        "o": [
+         "ze worden in de celkern gemaakt en daarna via de kernporiën naar het cytoplasma gestuurd",
+         "ze stammen af van bacteriën die lang geleden in een grotere cel gingen leven",
+         "ze ontstaan uit het golgisysteem als dat te groot is geworden",
+         "ze zijn stukjes celmembraan die naar binnen zijn afgesnoerd"
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 2,
+        "u": "Eigen DNA, eigen bacterie-achtige ribosomen en een dubbel membraan wijzen op opgenomen bacteriën.",
+        "uo": [
+         "Koos je gemaakt in de kern? Dan zouden ze geen eigen DNA nodig hebben en zouden er ook nieuwe ontstaan zonder deling. De gegevens zeggen het tegenovergestelde.",
+         "Klopt: een eigen ringvormig DNA en bacterie-achtige ribosomen lijken sterk op een bacterie. Het dubbele membraan past bij een bacterie die is opgeslokt.",
+         "Koos je het golgisysteem? Het golgisysteem heeft geen eigen DNA en geen eigen ribosomen. Een organel dat daaruit ontstaat, zou die ook niet hebben.",
+         "Koos je afgesnoerd celmembraan? Een stukje membraan bevat geen DNA en geen ribosomen. Ook ontstaan nieuwe mitochondriën alleen uit bestaande, door deling."
+        ],
+        "uh": "Op welk organisme lijken ze?",
+        "ctx": "Mitochondriën en bladgroenkorrels hebben een eigen ringvormig DNA-molecuul en eigen ribosomen die lijken op die van bacteriën. Ze zijn omgeven door een dubbel membraan. Een cel maakt ze nooit nieuw: ze ontstaan alleen door deling van een mitochondrium of bladgroenkorrel dat er al is."
+       },
+       {
+        "v": "Waar in de cel worden aminozuren aan elkaar gezet tot eiwitten?",
+        "o": [
+         "aan de ribosomen",
+         "in de vacuole",
+         "in de celkern",
+         "in het mitochondrium"
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 3,
+        "u": "Ribosomen zijn de eiwitfabriekjes van de cel.",
+        "uo": [
+         "Klopt: aan de ribosomen worden aminozuren in de volgorde van het mRNA aan elkaar gezet. Zo ontstaat een eiwit.",
+         "Koos je de vacuole? Die slaat water, zouten en kleurstoffen op, maar maakt niets. Eiwitten worden gemaakt aan de ribosomen.",
+         "Koos je de celkern? In de kern ligt de bouwtekening (DNA) en wordt het mRNA gemaakt. Het eiwit zelf wordt buiten de kern gebouwd, aan de ribosomen.",
+         "Koos je het mitochondrium? Dat levert de energie die nodig is voor het bouwen van eiwitten, maar het bouwen zelf gebeurt aan de ribosomen."
+        ],
+        "uh": "Kleine korreltjes, vaak op het ER."
+       },
+       {
+        "v": "Welke route volgt een eiwit dat de cel naar buiten afgeeft?",
+        "o": [
+         "mitochondrium → glad ER → ribosoom → blaasje → membraan",
+         "golgisysteem → ribosoom op het ER → celkern → celmembraan",
+         "celkern → vrij ribosoom → centrale vacuole → celwand",
+         "ribosoom op het ER → golgisysteem → blaasje → membraan"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 3,
+        "u": "Ruw ER, golgisysteem, blaasje, celmembraan: de exportroute.",
+        "uo": [
+         "Koos je het mitochondrium als begin? Een mitochondrium maakt geen eiwitten voor export. De route begint aan een ribosoom op het ruw ER.",
+         "Koos je eerst het golgisysteem? Het golgisysteem kan alleen verpakken wat al gemaakt is. Het eiwit moet eerst aan een ribosoom ontstaan, daarna pas komt golgi.",
+         "Koos je de route via de vacuole? De vacuole is opslag binnen de cel, geen doorgang naar buiten. Een eiwit voor export gaat in een blaasje naar het membraan.",
+         "Klopt: het eiwit wordt gemaakt aan ribosomen op het ruw ER, gaat naar het golgisysteem en daar in een blaasje dat versmelt met het celmembraan."
+        ],
+        "uh": "Eerst maken, dan verpakken, dan versturen."
+       },
+       {
+        "v": "Welke organellen zie je in deze cellen opvallend veel?",
+        "o": [
+         "celwanden en zetmeelkorrels",
+         "bladgroenkorrels en vacuolen",
+         "ruw ER en golgisystemen",
+         "zweepharen en trilharen"
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 3,
+        "u": "Cellen die veel eiwit exporteren hebben veel ruw ER en golgisystemen.",
+        "uo": [
+         "Koos je celwanden? Een diercel heeft geen celwand, en zetmeelkorrels horen bij planten. Een cel die enzymen afgeeft heeft vooral veel ER en golgi.",
+         "Koos je bladgroenkorrels? Die zitten alleen in plantencellen en algen. Een alvleeskliercel van een mens heeft er geen, en maakt geen glucose uit licht.",
+         "Klopt: verteringsenzymen zijn eiwitten die de cel uit moeten. Daarvoor zijn veel ribosomen op het ruw ER en veel golgisystemen nodig.",
+         "Koos je zweepharen? Die gebruikt een cel om te bewegen of vloeistof te verplaatsen. Voor het maken en afgeven van enzymen helpen ze niet."
+        ],
+        "uh": "Enzymen zijn eiwitten voor export.",
+        "ctx": "Cellen van de alvleesklier maken elke dag grote hoeveelheden verteringsenzymen, die via een buis naar de dunne darm gaan. Een onderzoeker bekijkt deze cellen met een elektronenmicroscoop en vergelijkt ze met spiercellen, die vooral samentrekken en weinig stoffen afgeven."
+       },
+       {
+        "v": "Wat doet het golgisysteem met de eiwitten die het ontvangt?",
+        "o": [
+         "het breekt ze af met zuurstof en maakt daarbij energie vrij voor de cel",
+         "het verpakt ze in blaasjes en stuurt ze naar hun plek",
+         "het leest ze af en maakt er een nieuwe kopie van het DNA van",
+         "het slaat ze op tot de plant ze in de winter nodig heeft"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 3,
+        "u": "Het golgisysteem werkt eiwitten af, verpakt ze in blaasjes en verstuurt ze.",
+        "uo": [
+         "Koos je afbreken met zuurstof? Dat doet het mitochondrium met glucose. Het golgisysteem breekt eiwitten niet af, maar maakt ze klaar voor verzending.",
+         "Klopt: het golgisysteem bewerkt de eiwitten uit het ER, verpakt ze in blaasjes en stuurt ze naar het celmembraan of een andere plek in de cel.",
+         "Koos je een kopie van het DNA? DNA wordt in de kern gekopieerd, voor de celdeling. Eiwitten worden nooit teruggelezen naar DNA.",
+         "Koos je opslag voor de winter? Langdurige opslag gebeurt in de vacuole of in zetmeelkorrels. Het golgisysteem houdt eiwitten maar kort vast."
+        ],
+        "uh": "Het postkantoor van de cel."
+       },
+       {
+        "v": "Wat laat dit experiment zien?",
+        "o": [
+         "eiwitten voor export reizen van het ER via het golgisysteem naar buiten",
+         "aminozuren worden pas in het golgisysteem tot lange eiwitketens aan elkaar gezet",
+         "het celmembraan maakt de eiwitten en stuurt ze terug naar het ER",
+         "de radioactiviteit verdwijnt na 90 minuten door diffusie uit de cel"
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 3,
+        "u": "De radioactiviteit volgt de route ER, golgisysteem, blaasjes, buiten.",
+        "uo": [
+         "Klopt: de merkstof zit eerst in het ER, dan in het golgisysteem, dan in blaasjes en tot slot buiten de cel. Dat is de route van een exporteiwit.",
+         "Koos je eiwitten bouwen in het golgisysteem? Na 3 minuten zit de radioactiviteit al in het ER, aan de ribosomen. Daar wordt het eiwit gemaakt; golgi komt later.",
+         "Koos je het celmembraan als maker? De radioactiviteit komt pas na 90 minuten bij het membraan, als laatste. Het membraan is het eindpunt, niet het begin.",
+         "Koos je diffusie? Dan zou de stof gelijkmatig door de cel verspreiden. Hier volgt hij een vaste volgorde van organellen, en dat is transport in blaasjes."
+        ],
+        "uh": "Volg de tijden in volgorde.",
+        "ctx": "Onderzoekers geven cellen van de alvleesklier een paar minuten aminozuren met een radioactieve merkstof. Daarna kijken ze waar de radioactiviteit zit: na 3 minuten in het ruw ER, na 20 minuten in het golgisysteem, na 90 minuten in blaasjes vlak bij het celmembraan en daarna buiten de cel."
+       },
+       {
+        "v": "Wat is het gevolg als een gif het golgisysteem van een alvleeskliercel blokkeert?",
+        "o": [
+         "de celkern kan het DNA niet meer kopiëren voor de deling",
+         "er worden helemaal geen eiwitten meer gemaakt, ook niet aan de vrije ribosomen",
+         "de cel kan geen glucose meer afbreken en stopt meteen",
+         "er worden nog enzymen gemaakt, maar ze worden niet meer afgegeven"
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 3,
+        "u": "Ribosomen werken nog, maar zonder golgisysteem komen de enzymen niet in blaasjes naar buiten.",
+        "uo": [
+         "Koos je DNA kopiëren? Dat gebeurt in de kern en hangt niet af van het golgisysteem. Het probleem zit bij het afgeven van de enzymen.",
+         "Koos je helemaal geen eiwitten? Eiwitten worden gemaakt aan de ribosomen, en die zijn niet geblokkeerd. Alleen het verpakken en versturen stopt.",
+         "Koos je glucose afbreken? Dat doen de mitochondriën, en die werken nog gewoon. Het golgisysteem heeft met de dissimilatie niets te maken.",
+         "Klopt: de ribosomen op het ER blijven enzymen maken, maar zonder golgisysteem worden ze niet verpakt en verstuurd. Ze hopen zich op in de cel."
+        ],
+        "uh": "Welke stap valt weg?",
+        "ctx": "Onderzoekers behandelen alvleeskliercellen met een gif dat alleen het golgisysteem stillegt. De ribosomen, het ER, de mitochondriën en de celkern blijven gewoon werken. Na een uur meten ze hoeveel verteringsenzym er in de cellen zit en hoeveel er in de vloeistof eromheen is terechtgekomen."
+       },
+       {
+        "v": "Welk deel geeft een plantencel stevigheid en een vaste vorm?",
+        "o": [
+         "de celkern met de chromosomen",
+         "het celmembraan van vetachtige stoffen",
+         "de celwand van cellulose",
+         "het cytoplasma met de organellen"
+        ],
+        "c": 2,
+        "d": 1,
+        "s": 4,
+        "u": "De celwand van cellulose houdt de plantencel stevig.",
+        "uo": [
+         "Koos je de celkern? De kern stuurt de cel aan via het DNA, maar geeft geen stevigheid. Hij ligt als een bolletje in het cytoplasma.",
+         "Koos je het celmembraan? Dat is dun en buigzaam, en heeft geen vaste vorm. Een diercel zonder celwand is daarom ook slap en rond van vorm.",
+         "Klopt: de celwand van cellulose ligt om het celmembraan heen. Hij is stevig en houdt de vorm van de plantencel vast, ook als de vacuole tegen hem aan duwt.",
+         "Koos je het cytoplasma? Dat is een geleiachtige vloeistof waarin de organellen liggen. Het is juist niet stevig; zonder wand loopt het uit."
+        ],
+        "uh": "Alleen planten hebben hem."
+       },
+       {
+        "v": "Hoe zorgt de vacuole ervoor dat de plant weer rechtop staat?",
+        "o": [
+         "de vacuole maakt nieuwe cellulose aan, zodat de celwand dikker en stijver wordt",
+         "de vacuole neemt water op en duwt het cytoplasma tegen de celwand",
+         "de vacuole geeft suiker af die als brandstof dient voor de groei",
+         "de vacuole trekt samen zoals een spier en trekt de stengel omhoog"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 4,
+        "u": "Een volle vacuole drukt tegen de celwand: die waterdruk maakt de cel stevig.",
+        "uo": [
+         "Koos je nieuwe cellulose? Een dikkere celwand maken duurt dagen. Binnen een uur na water geven verandert alleen de hoeveelheid water in de vacuole.",
+         "Klopt: de vacuole zuigt water op en zwelt. Ze duwt het cytoplasma tegen de stevige celwand, en die waterdruk maakt de cellen stijf.",
+         "Koos je suiker als brandstof? Groeien kost veel meer tijd dan een uur. Het rechtop staan komt door waterdruk, niet doordat de plant gegroeid is.",
+         "Koos je samentrekken als een spier? Planten hebben geen spieren. Een vacuole kan alleen water opnemen of verliezen, niet zelf samentrekken."
+        ],
+        "uh": "Denk aan een opgeblazen ballon in een doos.",
+        "ctx": "Een kamerplant die een paar dagen geen water heeft gekregen, hangt slap. Na water geven staat hij binnen een uur weer rechtop. Onder de microscoop zie je in de slappe plant cellen met een kleine vacuole en in de herstelde plant cellen met een grote, volle vacuole."
+       },
+       {
+        "v": "Welke taak heeft een lysosoom in een diercel?",
+        "o": [
+         "het breekt met enzymen versleten organellen af",
+         "het slaat water, zouten en kleurstoffen op in de cel",
+         "het maakt ATP door glucose met zuurstof te verbranden",
+         "het geeft de dierlijke cel stevigheid, net als een celwand"
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 4,
+        "u": "Een lysosoom is een blaasje met verteringsenzymen.",
+        "uo": [
+         "Klopt: een lysosoom is een blaasje vol enzymen. Het breekt versleten organellen en opgenomen deeltjes, zoals bacteriën, af tot bouwstoffen.",
+         "Koos je opslag van water? Dat is de taak van de vacuole, vooral in plantencellen. Een lysosoom slaat niets op, maar breekt juist af.",
+         "Koos je ATP maken? Dat doet het mitochondrium. Een lysosoom breekt wel stoffen af, maar met verteringsenzymen en niet met zuurstof voor energie.",
+         "Koos je stevigheid? Een diercel heeft geen celwand en een lysosoom is een klein blaasje. Stevigheid komt in een diercel van het celskelet."
+        ],
+        "uh": "Het afvalverwerkertje van de cel."
+       },
+       {
+        "v": "Welke verklaring past bij de rode kleur bij 70 °C?",
+        "o": [
+         "de kleurstof verdampt uit de cellen en lost daarna op in het water",
+         "de celwand van cellulose smelt en geeft zelf een rode kleur af",
+         "bij hoge temperatuur maakt de vacuole veel extra kleurstof, die naar buiten gaat",
+         "de hitte beschadigt de membranen, zodat de kleurstof uit de vacuole lekt"
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 4,
+        "u": "Bij hoge temperatuur gaan de membranen kapot en lekt de kleurstof uit de vacuole.",
+        "uo": [
+         "Koos je verdampen? Een kleurstof die verdampt, komt in de lucht en niet in het water terecht. Hij lost hier op omdat hij uit kapotte cellen lekt.",
+         "Koos je een smeltende celwand? Cellulose smelt niet bij 70 °C, en de celwand laat kleurstoffen toch al door. De kleurstof werd tegengehouden door de membranen.",
+         "Koos je extra kleurstof? Een cel die door hitte beschadigd raakt, maakt niets extra aan. Bovendien moet de kleurstof eerst door een membraan om buiten te komen.",
+         "Klopt: de rode kleurstof zit opgesloten in de vacuole, binnen twee membranen. Hitte beschadigt de eiwitten in die membranen, zodat de kleurstof naar buiten lekt."
+        ],
+        "uh": "Wat houdt de kleurstof normaal binnen?",
+        "ctx": "Rode bieten danken hun kleur aan een kleurstof in de vacuole van hun cellen. Een leerling legt even grote plakjes biet in water van verschillende temperatuur. Bij 20 en 40 °C blijft het water bijna kleurloos, bij 70 °C kleurt het water binnen tien minuten rood."
+       },
+       {
+        "v": "Welke combinatie van celdelen vind je alleen in een plantencel?",
+        "o": [
+         "celmembraan, cytoplasma, ribosomen en een kern",
+         "celkern, ribosomen, mitochondriën en een golgisysteem",
+         "celwand, bladgroenkorrels en een grote vacuole",
+         "golgisysteem, endoplasmatisch reticulum en een kern"
+        ],
+        "c": 2,
+        "d": 1,
+        "s": 5,
+        "u": "Celwand, bladgroenkorrels en een grote centrale vacuole zijn kenmerkend voor plantencellen.",
+        "uo": [
+         "Koos je membraan, cytoplasma en ribosomen? Die heeft zelfs een bacterie. Het zijn onderdelen van bijna elke cel, niet alleen van planten.",
+         "Koos je kern, ribosomen en mitochondriën? Die vind je in plantencellen én in diercellen. Ze zeggen dus niets over welke van de twee je ziet.",
+         "Klopt: een plantencel heeft een celwand, bladgroenkorrels en een grote centrale vacuole. Een diercel heeft ze alle drie niet.",
+         "Koos je golgisysteem en ER? Dat zijn onderdelen van elke eukaryote cel, ook van dieren en schimmels. Zoek naar iets dat alleen planten hebben."
+        ],
+        "uh": "Drie kenmerken van planten."
+       },
+       {
+        "v": "Waarin verschilt een bacteriecel het meest van een diercel?",
+        "o": [
+         "een bacterie heeft geen celmembraan, alleen een stevige celwand",
+         "een bacterie heeft geen celkern; het DNA ligt los in het cytoplasma",
+         "een bacterie heeft geen ribosomen en kan daardoor zelf geen eiwitten maken",
+         "een bacterie heeft bladgroenkorrels in plaats van mitochondriën"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 5,
+        "u": "Een bacterie is een prokaryoot: geen kern, geen organellen met een membraan.",
+        "uo": [
+         "Koos je geen celmembraan? Een bacterie heeft wel een celmembraan, met daaromheen een celwand. Zonder membraan kan geen enkele cel bestaan.",
+         "Klopt: een bacterie is een prokaryoot. Hij heeft geen kern; zijn ringvormige DNA ligt los in het cytoplasma. Ook mitochondriën en ER ontbreken.",
+         "Koos je geen ribosomen? Bacteriën hebben wel ribosomen en maken hun eigen eiwitten. Hun ribosomen zijn alleen iets kleiner dan die van ons.",
+         "Koos je bladgroenkorrels? Bacteriën hebben geen enkel organel met een membraan, dus ook geen bladgroenkorrels. Sommige doen wel aan fotosynthese, maar zonder dat organel."
+        ],
+        "uh": "Pro = voor de kern."
+       },
+       {
+        "v": "Van welk soort organisme is deze cel afkomstig?",
+        "o": [
+         "van een bacterie",
+         "van een plant uit de wortel",
+         "van een gist (schimmel)",
+         "van een dier"
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 5,
+        "u": "Ringvormig DNA los in het cytoplasma en geen kernmembraan: een prokaryoot.",
+        "uo": [
+         "Klopt: een cel zonder kernmembraan met ringvormig DNA los in het cytoplasma is een prokaryoot. Ook de grootte van 2 µm past bij een bacterie.",
+         "Koos je een wortelcel? Een plantencel heeft een celwand, maar ook een kern en mitochondriën. Bladgroenkorrels missen in de wortel, de kern niet.",
+         "Koos je een gist? Gisten zijn eukaryoten: ze hebben een kern en mitochondriën. Deze cel heeft geen kernmembraan, dus het is geen schimmel.",
+         "Koos je een dier? Een diercel heeft geen celwand en wel een kern en mitochondriën. Deze cel heeft juist een wand en geen kern."
+        ],
+        "uh": "Let op wat er ontbreekt.",
+        "ctx": "Met een elektronenmicroscoop bekijkt een leerling een onbekende cel. Ze ziet een celwand, ribosomen en een ringvormig DNA-molecuul dat los in het cytoplasma ligt. Ze ziet geen kernmembraan, geen mitochondriën en geen bladgroenkorrels. De cel is ongeveer 2 µm lang."
+       },
+       {
+        "v": "Waarom doet penicilline menselijke cellen geen kwaad?",
+        "o": [
+         "menselijke cellen breken penicilline meteen af in hun mitochondriën",
+         "menselijke cellen hebben geen ribosomen die penicilline kunnen opnemen",
+         "penicilline kan niet door het celmembraan van de mens heen",
+         "menselijke cellen hebben geen celwand die verstoord kan worden"
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 5,
+        "u": "Penicilline verstoort de celwand, en die hebben dierlijke cellen niet.",
+        "uo": [
+         "Koos je afbreken in mitochondriën? Mitochondriën breken glucose af voor energie, geen medicijnen. De reden is dat er bij ons geen celwand is.",
+         "Koos je geen ribosomen? Menselijke cellen hebben wel ribosomen, en penicilline werkt niet op ribosomen. Dat doet streptomycine, bij bacteriën.",
+         "Koos je het celmembraan als barrière? De tekst zegt dat penicilline de celwand verstoort. Of het ook door het membraan gaat maakt niet uit: er is geen wand.",
+         "Klopt: penicilline grijpt aan op de opbouw van de bacteriële celwand. Menselijke cellen hebben geen celwand, dus voor hen is er niets te verstoren."
+        ],
+        "uh": "Waar grijpt penicilline aan?",
+        "ctx": "Het antibioticum streptomycine hecht zich aan de ribosomen van bacteriën en blokkeert ze. De ribosomen van menselijke cellen zijn net anders gebouwd en worden niet geblokkeerd. Penicilline werkt anders: het verstoort de opbouw van de celwand van bacteriën, die daardoor openbarsten."
        }
       ],
       "oe": [
        {
-        "bron": "Microscooppracticum uienvlies en wangslijmvlies",
-        "ctx": "Een leerling bekijkt onder de microscoop twee preparaten. In preparaat A ziet zij rechthoekige cellen met een stevige rand eromheen, groene korrels en één grote ruimte in het midden. In preparaat B ziet zij rondere cellen zonder zo'n stevige rand, zonder groene korrels en met alleen een dunne buitengrens.",
-        "v": "Leg uit welk preparaat plantencellen bevat en welk dierlijke cellen, en noem twee onderdelen waaraan je dat ziet.",
+        "bron": "Examenstijl",
+        "ctx": "Een leerling maakt een preparaat van het vlies van een ui en bekijkt het met een lichtmicroscoop met een oculair van 10× en een objectief van 40×. Een cel is in het beeld 120 mm lang. Daarna maakt ze een preparaat van wangslijmvlies en kleurt dat met methyleenblauw.",
+        "v": "Bereken de echte lengte van de uiencel in µm en noem twee verschillen die ze tussen de uiencel en de wangslijmvliescel kan zien met deze microscoop.",
         "o": [
          ""
         ],
         "c": 0,
-        "u": "Preparaat A bevat plantencellen: de stevige rand is de celwand, de groene korrels zijn de bladgroenkorrels en de grote ruimte in het midden is de grote vacuole; deze onderdelen horen bij plantencellen. Preparaat B bevat dierlijke cellen: die hebben geen celwand, geen bladgroenkorrels en geen grote centrale vacuole, alleen een celmembraan als buitengrens. (Kernpunten: [1] A = plantencel, herkenbaar aan celwand, bladgroenkorrels en grote vacuole; [2] B = diercel, zonder celwand, bladgroen en grote vacuole.)"
+        "u": "Vergroting 10 × 40 = 400 (1p). Echte lengte 120 mm / 400 = 0,3 mm = 300 µm (1p). Verschillen: de uiencel heeft een celwand en een grote vacuole; de wangcel niet en is ronder van vorm (1p per juist verschil, max 2p; bladgroenkorrels tellen niet, want het uivlies heeft ze niet)."
        },
        {
-        "bron": "Casus spierweefsel en vetweefsel",
-        "ctx": "Een onderzoeker vergelijkt twee soorten dierlijke cellen. In actieve spiercellen telt hij veel meer mitochondriën dan in rustige vetcellen. Spiercellen moeten voortdurend samentrekken en gebruiken daarbij veel energie.",
-        "v": "Leg uit waarom juist spiercellen zoveel mitochondriën bevatten.",
+        "bron": "Examenstijl",
+        "ctx": "In een experiment worden kikkereicellen gebruikt. Bij eicel A wordt de kern verwijderd. Bij eicel B wordt de eigen kern vervangen door de kern van een darmcel van een andere kikker. Eicel A deelt een paar keer en sterft. Eicel B groeit uit tot een kikker die erfelijk gelijk is aan de kikker van de darmcel.",
+        "v": "Leg uit welke rol de celkern speelt en welke conclusie je trekt uit eicel B.",
         "o": [
          ""
         ],
         "c": 0,
-        "u": "Mitochondriën verzorgen de celademhaling, waarbij glucose met zuurstof wordt afgebroken en energie vrijkomt. Spiercellen moeten steeds samentrekken en hebben daarvoor veel energie nodig. Hoe meer mitochondriën, hoe meer energie de cel kan leveren; daarom bevatten actieve spiercellen er veel. (Kernpunten: [1] mitochondriën leveren energie via de celademhaling; [2] spiercellen gebruiken veel energie en hebben er daarom veel.)"
+        "u": "De kern bevat het DNA, de informatie voor alle eiwitten en dus voor groei en ontwikkeling (1p). Zonder kern kan eicel A geen nieuwe eiwitten maken en sterft hij (1p). Eicel B krijgt de eigenschappen van de kikker van wie de kern komt: de kern bepaalt de erfelijke eigenschappen, en ook een darmcel bevat alle informatie voor een hele kikker (1p)."
        },
        {
-        "bron": "Onderzoek aan bacteriën",
-        "ctx": "Een leerling bekijkt een kleurpreparaat van bacteriën met een sterke microscoop. Zij ziet kleine cellen met een celmembraan, maar geen apart afgescheiden celkern. Het erfelijk materiaal ligt verspreid door de cel.",
-        "v": "Leg uit waarom een bacteriecel prokaryoot wordt genoemd en waarin dit verschilt van een plant- of dierlijke cel.",
+        "bron": "Examenstijl",
+        "ctx": "Bij de ziekte MELAS werken de mitochondriën in sommige cellen niet goed. Patiënten hebben vooral klachten aan spieren en hersenen: snel moe, spierzwakte en soms aanvallen. De huid en de botten hebben bijna geen last.",
+        "v": "Leg uit waarom juist spieren en hersenen klachten geven als de mitochondriën slecht werken.",
         "o": [
          ""
         ],
         "c": 0,
-        "u": "Een bacteriecel wordt prokaryoot genoemd omdat zij geen celkern heeft: het DNA ligt los verspreid in de cel in plaats van in een aparte kern. Plant- en dierlijke cellen zijn eukaryoot: bij hen ligt het DNA netjes in een echte celkern. Dat is het belangrijkste verschil. (Kernpunten: [1] prokaryoot = zonder celkern, DNA ligt los; [2] plant- en diercel zijn eukaryoot, met het DNA in een celkern.)"
+        "u": "Mitochondriën breken glucose met zuurstof af en maken de energie vrij die cellen gebruiken (1p). Spiercellen en hersencellen verbruiken veel energie en hebben veel mitochondriën (1p). Werken die slecht, dan krijgen juist deze cellen te weinig energie, terwijl huid- en botcellen met weinig energie toekomen (1p)."
        },
        {
-        "bron": "Practicum slappe sla",
-        "ctx": "Een leerling legt slappe slabladeren in water. Na een half uur zijn de bladeren weer stevig en knapperig. Onder de microscoop ziet zij dat de vacuoles in de cellen groter en voller zijn geworden.",
-        "v": "Leg uit hoe de vacuole en de celwand er samen voor zorgen dat de sla weer stevig wordt.",
+        "bron": "Examenstijl",
+        "ctx": "Cellen in de speekselklier maken het enzym amylase en geven het af in de mond. Een onderzoeker vergelijkt op elektronenmicroscoopfoto’s een speekselkliercel met een spiercel. In de speekselkliercel ziet hij veel meer ruw ER, grote golgisystemen en veel blaasjes bij het celmembraan.",
+        "v": "Beschrijf de route van een amylasemolecuul vanaf het mRNA tot buiten de cel en verklaar waarom de speekselkliercel zoveel ruw ER en golgisystemen heeft.",
         "o": [
          ""
         ],
         "c": 0,
-        "u": "Door het opnemen van water worden de vacuoles voller en groter; ze duwen de celinhoud naar buiten tegen de celwand. De stevige celwand houdt daartegen, waardoor de cel gespannen en stevig wordt (turgor). Samen maken de volle vacuole en de celwand het slablad weer knapperig. (Kernpunten: [1] de vacuole neemt water op en duwt naar buiten; [2] de celwand houdt tegen, zodat de cel stevig wordt.)"
+        "u": "Het mRNA gaat via een kernporie naar de ribosomen op het ruw ER; daar wordt amylase gemaakt (1p). Het enzym gaat naar het golgisysteem, wordt verpakt in blaasjes en die versmelten met het celmembraan, zodat amylase buiten de cel komt (1p). De cel maakt veel eiwit voor export en heeft daarom veel ruw ER en golgisystemen (1p)."
        },
        {
-        "bron": "Casus alvleesklier",
-        "ctx": "Cellen in de alvleesklier maken grote hoeveelheden verteringsenzymen. Enzymen zijn eiwitten. Onder de microscoop blijken deze cellen opvallend veel ribosomen en een goed ontwikkeld endoplasmatisch reticulum en golgi-systeem te bevatten.",
-        "v": "Leg uit waarom deze eiwitmakende cellen veel ribosomen en een uitgebreid golgi-systeem hebben.",
+        "bron": "Examenstijl",
+        "ctx": "Op een elektronenmicroscoopfoto zijn drie cellen te zien. Cel P heeft een celwand, een kern, mitochondriën en een grote vacuole, maar geen bladgroenkorrels. Cel Q heeft geen celwand, wel een kern, veel mitochondriën en lysosomen. Cel R is ongeveer 2 µm, heeft een celwand en ribosomen, maar geen kern en geen mitochondriën.",
+        "v": "Geef van elke cel aan of het een plantencel, diercel of bacteriecel is en leg bij cel P uit waarom het ontbreken van bladgroenkorrels je conclusie niet verandert.",
         "o": [
          ""
         ],
         "c": 0,
-        "u": "Ribosomen maken de eiwitten, dus een cel die veel enzymen (eiwitten) produceert heeft veel ribosomen nodig. Het endoplasmatisch reticulum en het golgi-systeem bewerken, verpakken en transporteren die eiwitten daarna naar buiten. Omdat deze cellen veel eiwit maken en afgeven, zijn deze onderdelen sterk ontwikkeld. (Kernpunten: [1] ribosomen maken de eiwitten, dus veel eiwit = veel ribosomen; [2] ER en golgi bewerken en transporteren de gemaakte eiwitten.)"
+        "u": "P is een plantencel (celwand, kern, grote vacuole) (1p). Q is een diercel (geen celwand, wel kern en lysosomen); R is een bacterie (geen kern, klein, wel celwand en ribosomen) (1p). Cellen van planten die geen licht krijgen, zoals in de wortel, hebben geen bladgroenkorrels maar wel een celwand en vacuole (1p)."
        }
       ]
      },
