@@ -1173,20 +1173,24 @@ var VAKKEN = [
      },
      {
       "id": "M5",
+      "lo": "bi.M.5",
+      "gs": 2,
       "naam": "DNA en eiwitsynthese",
-      "beschrijving": "Hoe DNA (dubbele helix, basenparing A-T en C-G) via transcriptie en translatie eiwitten laat maken, en hoe genexpressie (gen -> eiwit -> eigenschap) de kenmerken van een organisme bepaalt.",
-      "ceStatus": "CE",
+      "beschrijving": "Je beschrijft de bouw van DNA en de basenparing, legt het verband tussen gen, chromosoom en eiwit, voert transcriptie en translatie uit met een codetabel, en voorspelt het effect van substitutie en deletie op een eiwit.",
+      "ceStatus": "CE+SE",
+      "binas": "",
+      "val": "",
       "onderwerpen": [
-       "DNA als dubbele helix",
-       "Basenparing A-T en C-G",
-       "Gen en chromosoom",
-       "Transcriptie in de celkern",
-       "Translatie bij het ribosoom",
-       "Genexpressie: gen -> eiwit -> eigenschap"
+       "Bouw van DNA",
+       "Gen, chromosoom en genoom",
+       "Transcriptie",
+       "Translatie en de genetische code",
+       "Van gen naar eigenschap",
+       "Mutaties en hun gevolgen"
       ],
-      "nSv": 25,
+      "nSv": 27,
       "nOe": 5,
-      "nBeg": 12,
+      "nBeg": 16,
       "hasSam": true
      },
      {
