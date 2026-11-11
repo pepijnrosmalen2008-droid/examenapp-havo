@@ -1217,20 +1217,24 @@ var VAKKEN = [
      },
      {
       "id": "M7",
+      "lo": "bi.M.7",
+      "gs": 2,
       "naam": "Erfelijkheid: allelen en overerving",
-      "beschrijving": "Allelen, dominant en recessief, genotype en fenotype, en het voorspellen van nakomelingen met een kruisingsschema.",
-      "ceStatus": "CE",
+      "beschrijving": "Je legt uit wat allelen, dominant en recessief, genotype en fenotype zijn, voorspelt met een kruisingsschema verhoudingen en kansen, bepaalt genotypen met een terugkruising of een stamboom en past intermediaire en X-chromosomale overerving toe.",
+      "ceStatus": "CE+SE",
+      "binas": "",
+      "val": "",
       "onderwerpen": [
-       "Allelen (varianten van een gen)",
-       "Dominant en recessief",
+       "Allelen, dominant en recessief",
        "Genotype en fenotype",
-       "Homozygoot en heterozygoot",
-       "Kruisingsschema en verhoudingen",
-       "Mutatie als bron van nieuwe allelen"
+       "Kruisingsschema monohybride",
+       "Terugkruising en stamboom",
+       "Intermediair en X-chromosomaal",
+       "Mutatie en nieuwe allelen"
       ],
-      "nSv": 25,
+      "nSv": 27,
       "nOe": 5,
-      "nBeg": 12,
+      "nBeg": 14,
       "hasSam": true
      }
     ]

@@ -50602,595 +50602,687 @@ var VAKKEN = [
      },
      {
       "id": "M7",
+      "lo": "bi.M.7",
+      "gs": 2,
       "naam": "Erfelijkheid: allelen en overerving",
-      "beschrijving": "Allelen, dominant en recessief, genotype en fenotype, en het voorspellen van nakomelingen met een kruisingsschema.",
-      "ceStatus": "CE",
+      "beschrijving": "Je legt uit wat allelen, dominant en recessief, genotype en fenotype zijn, voorspelt met een kruisingsschema verhoudingen en kansen, bepaalt genotypen met een terugkruising of een stamboom en past intermediaire en X-chromosomale overerving toe.",
+      "ceStatus": "CE+SE",
+      "binas": "",
+      "val": "",
       "onderwerpen": [
-       "Allelen (varianten van een gen)",
-       "Dominant en recessief",
+       "Allelen, dominant en recessief",
        "Genotype en fenotype",
-       "Homozygoot en heterozygoot",
-       "Kruisingsschema en verhoudingen",
-       "Mutatie als bron van nieuwe allelen"
+       "Kruisingsschema monohybride",
+       "Terugkruising en stamboom",
+       "Intermediair en X-chromosomaal",
+       "Mutatie en nieuwe allelen"
       ],
-      "sam": "Een gen kan in verschillende varianten voorkomen: allelen. Een dominant allel (hoofdletter) komt tot uiting zodra het aanwezig is; een recessief allel (kleine letter) komt alleen tot uiting bij twee recessieve allelen (aa). Het genotype is de allelcombinatie (AA, Aa of aa), het fenotype is het waarneembare kenmerk. Met een kruisingsschema voorspel je de genotypen en fenotypen van de nakomelingen en hun verhoudingen. Een mutatie is een verandering in het DNA die een nieuw allel kan opleveren.",
+      "sam": "Allel = variant van een gen; twee per gen. Dominant (A): één is genoeg; recessief (a): alleen zichtbaar bij aa. Homozygoot AA/aa, heterozygoot Aa. Fenotype = genotype + milieu. Aa × Aa: 1 AA : 2 Aa : 1 aa, fenotypen 3 : 1; Aa × aa: 1 : 1. Terugkruising met aa: recessieve jongen → Aa. Stamboom: twee gezonde ouders met ziek kind → recessief. Intermediair: heterozygoot is tussenvorm. X-chromosomaal recessief: vaker bij mannen, zoon krijgt X van moeder. Nieuwe allelen door mutatie.",
       "begrippen": [
        {
-        "t": "Gen",
-        "d": "Een stukje DNA met de code voor een erfelijke eigenschap."
-       },
-       {
         "t": "Allel",
-        "d": "Een variant van een gen; er kunnen meerdere allelen van één gen bestaan."
+        "d": "Variant van een gen; je hebt van elk gen twee allelen, op homologe chromosomen."
        },
        {
-        "t": "Dominant allel",
-        "d": "Allel dat tot uiting komt zodra het aanwezig is; je schrijft het met een hoofdletter."
+        "t": "Dominant",
+        "d": "Allel dat al tot uiting komt als het één keer aanwezig is."
        },
        {
-        "t": "Recessief allel",
-        "d": "Allel dat alleen tot uiting komt bij twee recessieve allelen; je schrijft het met een kleine letter."
+        "t": "Recessief",
+        "d": "Allel dat alleen tot uiting komt als er geen dominant allel is (aa)."
        },
        {
         "t": "Genotype",
-        "d": "De combinatie van allelen die een organisme heeft (bijvoorbeeld AA, Aa of aa)."
+        "d": "De combinatie van allelen van een organisme voor een eigenschap, zoals Aa."
        },
        {
         "t": "Fenotype",
-        "d": "Het waarneembare kenmerk van een organisme, bepaald door genotype en soms de omgeving."
+        "d": "De waarneembare eigenschap; ontstaat door genotype en milieu samen."
        },
        {
         "t": "Homozygoot",
-        "d": "Twee gelijke allelen voor een gen (AA of aa)."
+        "d": "Met twee dezelfde allelen voor een gen (AA of aa)."
        },
        {
         "t": "Heterozygoot",
-        "d": "Twee verschillende allelen voor een gen (Aa); ook drager genoemd bij een recessief kenmerk."
-       },
-       {
-        "t": "Drager",
-        "d": "Iemand die een recessief allel heeft maar het bijbehorende kenmerk niet toont (Aa)."
+        "d": "Met twee verschillende allelen voor een gen (Aa)."
        },
        {
         "t": "Kruisingsschema",
-        "d": "Een tabel waarmee je de mogelijke genotypen van nakomelingen en hun verhouding voorspelt."
+        "d": "Schema waarin je de geslachtscellen van de ouders combineert om de kans op nakomelingen te voorspellen."
+       },
+       {
+        "t": "Terugkruising",
+        "d": "Kruising met een homozygoot recessief organisme om te bepalen of een dier AA of Aa is."
+       },
+       {
+        "t": "Stamboom",
+        "d": "Schema van een familie waarin je ziet wie een eigenschap heeft; vierkant = man, rondje = vrouw."
+       },
+       {
+        "t": "Drager",
+        "d": "Persoon die heterozygoot is voor een recessief allel en de eigenschap zelf niet heeft."
+       },
+       {
+        "t": "Intermediair",
+        "d": "Overerving waarbij geen allel dominant is en de heterozygoot een tussenvorm heeft."
+       },
+       {
+        "t": "X-chromosomaal",
+        "d": "Overerving van een gen dat op het X-chromosoom ligt; mannen hebben daar maar één allel van."
        },
        {
         "t": "Mutatie",
-        "d": "Een verandering in het DNA die een nieuw allel kan opleveren."
-       },
-       {
-        "t": "Fenotypeverhouding",
-        "d": "De verhouding waarin de waarneembare kenmerken bij de nakomelingen voorkomen, bijvoorbeeld 3:1."
+        "d": "Verandering in het DNA waardoor een nieuw allel kan ontstaan."
        }
       ],
       "sv": [
        {
-        "v": "Wat is een allel?",
+        "v": "Welke beschrijving past bij allelen?",
         "o": [
-         "Een variant van een gen",
-         "Een compleet chromosoom",
-         "Een eiwit dat een kenmerk uitvoert",
-         "Een deling van de cel"
-        ],
-        "c": 0,
-        "d": 1,
-        "u": "Een allel is een variant van een gen. Koos je 'chromosoom'? Een chromosoom bevat veel genen; een allel is juist een variant van een enkel gen. Onthoud: allel = versie van een gen.",
-        "uo": [
-         "Klopt: een allel is een variant (versie) van een gen.",
-         "Een chromosoom is opgerold DNA met veel genen, niet een variant van een gen.",
-         "Het eiwit is het gevolg van een gen, niet het allel zelf.",
-         "Een celdeling is een proces, geen variant van een gen."
-        ],
-        "uh": "Allel = een variant van een gen."
-       },
-       {
-        "v": "Wat betekent het dat een allel dominant is?",
-        "o": [
-         "Het komt alleen tot uiting bij twee dezelfde allelen",
-         "Het komt nooit tot uiting",
-         "Het komt tot uiting zodra het aanwezig is",
-         "Het zit altijd op het Y-chromosoom"
+         "de twee chromatiden van een verdubbeld chromosoom",
+         "twee genen die op verschillende chromosomen liggen",
+         "verschillende varianten van hetzelfde gen",
+         "eiwitten die een eigenschap zichtbaar maken"
         ],
         "c": 2,
         "d": 1,
-        "u": "Een dominant allel komt tot uiting zodra het aanwezig is (ook als er maar één is). Onthoud: dominant = laat zich meteen zien.",
+        "s": 0,
+        "u": "Allelen zijn varianten van één gen, op dezelfde plek op homologe chromosomen.",
         "uo": [
-         "Dat geldt juist voor een recessief allel, niet voor een dominant.",
-         "Een dominant allel komt juist wél tot uiting.",
-         "Klopt: een dominant allel komt tot uiting zodra het aanwezig is.",
-         "De plek van het allel bepaalt niet of het dominant is."
+         "Koos je chromatiden? Chromatiden zijn identieke kopieën, dus met dezelfde allelen. Allelen kunnen juist van elkaar verschillen.",
+         "Koos je genen op verschillende chromosomen? Allelen zijn varianten van hetzelfde gen en liggen op dezelfde plek op homologe chromosomen.",
+         "Klopt: een gen kan in verschillende varianten voorkomen, bijvoorbeeld voor bruine of blauwe ogen. Die varianten heten allelen.",
+         "Koos je eiwitten? Een allel is een stuk DNA. Het eiwit is het product ervan, dat de eigenschap veroorzaakt."
         ],
-        "uh": "Dominant allel komt tot uiting zodra het aanwezig is."
+        "uh": "Varianten van één gen."
        },
        {
-        "v": "Wanneer komt een recessief allel tot uiting?",
+        "v": "Wanneer komt een recessief allel tot uiting in het fenotype?",
         "o": [
-         "Ook wanneer er daarnaast een dominant allel aanwezig is",
-         "Alleen als beide allelen recessief zijn",
-         "Bij een recessief kenmerk nooit",
-         "Alleen bij mannen"
+         "als het organisme één recessief allel heeft",
+         "alleen als het organisme twee recessieve allelen heeft",
+         "alleen bij mannen, nooit bij vrouwen",
+         "als het dominante allel op een heel ander chromosoom ligt dan het recessieve"
         ],
         "c": 1,
         "d": 1,
-        "u": "Een recessief allel komt alleen tot uiting als beide allelen recessief zijn (aa). Onthoud: recessief laat zich pas zien bij een dubbele portie.",
+        "s": 0,
+        "u": "Een recessief allel komt alleen tot uiting als het homozygoot aanwezig is.",
         "uo": [
-         "Naast een dominant allel wordt het recessieve juist onderdrukt.",
-         "Klopt: alleen bij genotype aa komt het recessieve kenmerk tot uiting.",
-         "Bij aa komt het recessieve kenmerk juist wél tot uiting.",
-         "Geslacht bepaalt dit niet bij een gewoon (autosomaal) kenmerk."
+         "Koos je één recessief allel? Dan is het andere allel dominant en overheerst dat. Bij Aa zie je de dominante eigenschap.",
+         "Klopt: een recessief allel wordt overheerst door een dominant allel. Je ziet het alleen als er geen dominant allel is, dus bij aa.",
+         "Koos je alleen bij mannen? Dat geldt voor sommige X-chromosomale eigenschappen, niet voor recessieve allelen in het algemeen.",
+         "Koos je een ander chromosoom? Allelen van één gen liggen op dezelfde plek op homologe chromosomen. Het gaat om de combinatie van de twee."
         ],
-        "uh": "Recessief kenmerk toont zich alleen bij genotype aa."
+        "uh": "Geen dominant allel aanwezig."
        },
        {
-        "v": "Wat is het genotype van een organisme?",
+        "v": "Welke ouder heeft zeker twee recessieve allelen voor deze eigenschap?",
         "o": [
-         "Het waarneembare uiterlijk en gedrag van het organisme",
-         "De omgeving waarin het leeft",
-         "Een geslachtscel",
-         "De combinatie van allelen die het heeft"
-        ],
-        "c": 3,
-        "d": 1,
-        "u": "Het genotype is de allelcombinatie (zoals AA, Aa of aa). Koos je 'uiterlijk'? Dat is het fenotype. Onthoud: genotype = de allelen, fenotype = wat je ziet.",
-        "uo": [
-         "Het uiterlijk is het fenotype, niet het genotype.",
-         "De omgeving is geen genotype.",
-         "Een geslachtscel is een cel, geen allelcombinatie.",
-         "Klopt: het genotype is de combinatie van allelen (AA, Aa of aa)."
-        ],
-        "uh": "Genotype = de allelcombinatie (AA/Aa/aa)."
-       },
-       {
-        "v": "Wat is het fenotype van een organisme?",
-        "o": [
-         "Het waarneembare kenmerk",
-         "De allelcombinatie",
-         "Een stukje DNA",
-         "Het aantal chromosomen"
-        ],
-        "c": 0,
-        "d": 1,
-        "u": "Het fenotype is het waarneembare kenmerk (zoals bruine ogen). Koos je 'allelcombinatie'? Dat is het genotype. Onthoud: fenotype = wat je waarneemt.",
-        "uo": [
-         "Klopt: het fenotype is het waarneembare kenmerk.",
-         "De allelcombinatie is het genotype, niet het fenotype.",
-         "Een stukje DNA is een gen, niet het fenotype.",
-         "Het aantal chromosomen is geen fenotype."
-        ],
-        "uh": "Fenotype = het waarneembare kenmerk."
-       },
-       {
-        "v": "Een organisme heeft genotype Aa. Hoe noemen we dat?",
-        "o": [
-         "Homozygoot dominant",
-         "Heterozygoot",
-         "Homozygoot recessief",
-         "Haploïd"
-        ],
-        "c": 1,
-        "d": 2,
-        "u": "Aa heeft twee verschillende allelen, dus heterozygoot. Onthoud: twee verschillende allelen = heterozygoot; twee gelijke = homozygoot.",
-        "uo": [
-         "Homozygoot dominant is AA (twee gelijke), niet Aa.",
-         "Klopt: Aa heeft twee verschillende allelen, dus heterozygoot.",
-         "Homozygoot recessief is aa, niet Aa.",
-         "Haploïd gaat over het aantal chromosoomstellen, niet over Aa."
-        ],
-        "uh": "Aa = heterozygoot (twee verschillende allelen)."
-       },
-       {
-        "v": "Wat betekent homozygoot?",
-        "o": [
-         "Twee verschillende allelen",
-         "Eén enkel allel",
-         "Twee gelijke allelen",
-         "Helemaal geen allelen"
-        ],
-        "c": 2,
-        "d": 1,
-        "u": "Homozygoot betekent twee gelijke allelen (AA of aa). Onthoud: homo = gelijk, hetero = verschillend.",
-        "uo": [
-         "Twee verschillende allelen is juist heterozygoot.",
-         "Een organisme heeft per gen twee allelen, niet één.",
-         "Klopt: homozygoot betekent twee gelijke allelen (AA of aa).",
-         "Er zijn wel degelijk allelen aanwezig, namelijk twee gelijke."
-        ],
-        "uh": "Homozygoot = twee gelijke allelen (AA of aa)."
-       },
-       {
-        "v": "Iemand heeft genotype aa voor een recessief kenmerk. Wat zie je in het fenotype?",
-        "o": [
-         "Het recessieve kenmerk is zichtbaar",
-         "Het dominante kenmerk is zichtbaar",
-         "Beide kenmerken half",
-         "Geen van beide kenmerken"
+         "de ouder met de witte bloemen",
+         "de ouder met de paarse bloemen",
+         "beide ouders, want ze hebben samen nakomelingen",
+         "geen van beide, want recessief komt pas later"
         ],
         "c": 0,
         "d": 2,
-        "u": "Bij aa zijn beide allelen recessief, dus het recessieve kenmerk komt tot uiting. Onthoud: aa laat het recessieve kenmerk zien.",
+        "s": 0,
+        "u": "Wie de recessieve eigenschap toont, is homozygoot recessief.",
         "uo": [
-         "Klopt: bij aa komt het recessieve kenmerk tot uiting.",
-         "Er is geen dominant allel aanwezig om te tonen.",
-         "Kenmerken mengen hier niet half-half.",
-         "Er is wel degelijk een kenmerk zichtbaar, namelijk het recessieve."
+         "Klopt: wit is recessief. Een plant met witte bloemen heeft geen dominant allel, dus hij is zeker aa.",
+         "Koos je de paarse ouder? Die kan AA of Aa zijn; aan het fenotype zie je dat niet. Alleen bij de witte ouder is het genotype zeker.",
+         "Koos je beide ouders? De paarse ouder heeft minstens één dominant allel, anders was hij niet paars.",
+         "Koos je geen van beide? Een recessieve eigenschap is direct zichtbaar als iemand twee recessieve allelen heeft. Dat is bij de witte plant zo."
         ],
-        "uh": "Genotype aa toont het recessieve kenmerk."
+        "uh": "Wie toont de recessieve eigenschap?",
+        "ctx": "Bij erwten is het allel voor paarse bloemen (A) dominant over het allel voor witte bloemen (a). Een tuinder kruist een plant met paarse bloemen met een plant met witte bloemen. Hij weet niet of de paarse plant homozygoot of heterozygoot is."
        },
        {
-        "v": "Waarom heet een heterozygoot (Aa) voor een recessieve ziekte een 'drager'?",
+        "v": "Welk genotype hebben beide ouders zeker?",
         "o": [
-         "Omdat hij de ziekte zelf heeft en er ook ziek van wordt",
-         "Omdat hij geen ziekte-allel bezit",
-         "Omdat hij het dominante kenmerk niet toont",
-         "Omdat hij het recessieve allel draagt maar niet toont"
-        ],
-        "c": 3,
-        "d": 2,
-        "u": "Een drager (Aa) heeft het recessieve ziekte-allel wel, maar toont de ziekte niet omdat het dominante allel overheerst. Onthoud: drager = heeft het allel, toont het niet.",
-        "uo": [
-         "Een drager toont de ziekte juist niet; hij is niet ziek.",
-         "Hij heeft wél een recessief ziekte-allel (de a).",
-         "Hij toont juist het dominante kenmerk (gezond), dat is niet de reden.",
-         "Klopt: hij draagt het recessieve allel maar toont de ziekte niet."
-        ],
-        "uh": "Drager (Aa) heeft het recessieve allel maar toont het niet."
-       },
-       {
-        "v": "Bij de kruising Aa x Aa: welke fenotypeverhouding krijg je bij de kinderen?",
-        "o": [
-         "1 op 1",
-         "4 op 0",
-         "3 op 1",
-         "Alleen tussenvormen"
-        ],
-        "c": 2,
-        "d": 2,
-        "u": "Aa x Aa geeft AA, Aa, Aa, aa: drie tonen het dominante kenmerk, één het recessieve, dus 3:1. Onthoud: Aa x Aa geeft 3:1 in fenotype.",
-        "uo": [
-         "1 op 1 hoort bij een kruising Aa x aa, niet Aa x Aa.",
-         "Er is ook een aa-kind, dus niet 4 op 0.",
-         "Klopt: drie kinderen dominant, één recessief, dus 3:1.",
-         "Bij dominant-recessief ontstaan geen tussenvormen; je krijgt 3:1."
-        ],
-        "uh": "Aa x Aa geeft fenotypeverhouding 3:1."
-       },
-       {
-        "v": "Bij de kruising Aa x Aa: welke genotypeverhouding krijg je?",
-        "o": [
-         "3 op 1",
-         "1 AA : 2 Aa : 1 aa",
-         "Alleen Aa",
-         "1 AA : 1 aa"
-        ],
-        "c": 1,
-        "d": 2,
-        "u": "Aa x Aa geeft in genotype 1 AA : 2 Aa : 1 aa. Onthoud: 3:1 is het fenotype, 1:2:1 het genotype.",
-        "uo": [
-         "3 op 1 is de fenotypeverhouding, niet de genotypeverhouding.",
-         "Klopt: de genotypen komen in de verhouding 1 AA : 2 Aa : 1 aa voor.",
-         "Er ontstaan ook AA en aa, niet alleen Aa.",
-         "De Aa-kinderen ontbreken hier; het is 1:2:1."
-        ],
-        "uh": "Aa x Aa: genotype 1 AA : 2 Aa : 1 aa."
-       },
-       {
-        "v": "Bij de kruising AA x aa: wat is het genotype van alle kinderen?",
-        "o": [
-         "Aa (heterozygoot)",
-         "AA (homozygoot dominant)",
-         "aa (homozygoot recessief)",
-         "Half AA en half aa"
-        ],
-        "c": 0,
-        "d": 2,
-        "u": "Elk kind krijgt een A van de ene ouder en een a van de andere, dus alle kinderen zijn Aa. Onthoud: AA x aa geeft alleen Aa.",
-        "uo": [
-         "Klopt: elk kind krijgt A van de ene en a van de andere ouder, dus Aa.",
-         "AA zou betekenen dat de aa-ouder een A doorgeeft, wat niet kan.",
-         "aa zou betekenen dat de AA-ouder een a doorgeeft, wat niet kan.",
-         "Beide ouders geven vast één type allel door, dus alle kinderen zijn gelijk (Aa)."
-        ],
-        "uh": "AA x aa geeft alle kinderen Aa."
-       },
-       {
-        "v": "Twee gezonde ouders krijgen een kind met een recessieve ziekte. Wat weet je van de ouders?",
-        "o": [
-         "Beide ouders zijn aa",
-         "Eén ouder is zeker AA",
-         "De ziekte is dominant",
-         "Beide ouders zijn drager (Aa)"
+         "beide homozygoot recessief (aa)",
+         "beide homozygoot dominant (AA)",
+         "de een homozygoot dominant, de ander recessief",
+         "beide heterozygoot (Aa)"
         ],
         "c": 3,
         "d": 3,
-        "u": "Het kind is aa en kreeg van elke ouder een a. De gezonde ouders moeten dus allebei drager (Aa) zijn. Onthoud: gezonde ouders + ziek kind = beide dragers.",
+        "s": 0,
+        "u": "Twee ouders met de dominante eigenschap die een kind met de recessieve eigenschap krijgen, zijn allebei heterozygoot.",
         "uo": [
-         "Als de ouders aa waren, zouden ze zelf de ziekte hebben; ze zijn gezond.",
-         "Een AA-ouder kan geen a doorgeven, terwijl het kind wel a heeft.",
-         "Bij een dominante ziekte zou minstens één ouder ziek zijn.",
-         "Klopt: beide ouders zijn drager (Aa) en gaven elk een a door."
+         "Koos je beide aa? Dan zouden de ouders zelf hun tong niet kunnen rollen. Ze kunnen het allebei wel, dus ze hebben elk een A.",
+         "Koos je beide AA? Dan konden ze alleen A doorgeven en had geen enkel kind de recessieve eigenschap kunnen krijgen.",
+         "Koos je AA en aa? Dan zou de ouder met aa de recessieve eigenschap hebben. Beide ouders hebben de dominante eigenschap.",
+         "Klopt: het kind is aa en kreeg dus van elke ouder een a. Beide ouders hebben de dominante eigenschap, dus ook een A. Ze zijn allebei Aa."
         ],
-        "uh": "Gezonde ouders met een ziek (aa) kind zijn allebei drager."
+        "uh": "Waar komen de twee a-allelen van het kind vandaan?",
+        "ctx": "Het vermogen om de tong te rollen erft dominant (A) over niet-rollen (a). Twee ouders kunnen allebei hun tong rollen. Hun dochter kan het niet. Haar twee broers kunnen het wel. Een leerling wil weten wat de genotypen van de ouders zijn."
        },
        {
-        "v": "Waar ligt de code voor de allelen opgeslagen?",
+        "v": "Welke uitspraak over een dominant allel klopt?",
         "o": [
-         "In het cytoplasma",
-         "In het celmembraan",
-         "In het DNA",
-         "In de vacuole"
-        ],
-        "c": 2,
-        "d": 1,
-        "u": "Allelen zijn varianten van een gen, en genen liggen in het DNA. Onthoud: erfelijke informatie zit in het DNA.",
-        "uo": [
-         "Het cytoplasma is de celvloeistof, niet de opslag van de code.",
-         "Het celmembraan is de celgrens, geen informatiedrager.",
-         "Klopt: allelen zijn stukjes DNA, dus de code zit in het DNA.",
-         "De vacuole is een opslagblaasje voor vocht, niet voor de erfelijke code."
-        ],
-        "uh": "De code voor allelen zit in het DNA."
-       },
-       {
-        "v": "Waarmee voorspel je de genotypen van de nakomelingen bij een kruising?",
-        "o": [
-         "Met een voedselweb van de hele populatie organismen",
-         "Met een kruisingsschema (kruistabel)",
-         "Met een groeigrafiek",
-         "Met een stamboom van cellen"
-        ],
-        "c": 1,
-        "d": 2,
-        "u": "Met een kruisingsschema (kruistabel) combineer je de allelen van beide ouders. Onthoud: kruistabel = voorspelling van genotypen en verhoudingen.",
-        "uo": [
-         "Een voedselweb toont wie wie eet, niet de overerving.",
-         "Klopt: met een kruisingsschema voorspel je de genotypen van de kinderen.",
-         "Een groeigrafiek gaat over toename in de tijd, niet over overerving.",
-         "Een celstamboom hoort bij celdeling, niet bij het voorspellen van genotypen."
-        ],
-        "uh": "Kruisingsschema voorspelt de genotypen van nakomelingen."
-       },
-       {
-        "v": "Wat is een mutatie?",
-        "o": [
-         "Een verandering in het DNA",
-         "Een gewone celdeling",
-         "Een geslachtscel",
-         "Een dominant allel"
-        ],
-        "c": 0,
-        "d": 1,
-        "u": "Een mutatie is een verandering in het DNA, die een nieuw allel kan opleveren. Onthoud: mutatie = verandering in de erfelijke code.",
-        "uo": [
-         "Klopt: een mutatie is een verandering in het DNA.",
-         "Een gewone celdeling verandert de code niet; dat is geen mutatie.",
-         "Een geslachtscel is een cel, geen verandering in het DNA.",
-         "Een dominant allel is een variant, niet de verandering zelf."
-        ],
-        "uh": "Mutatie = een verandering in het DNA."
-       },
-       {
-        "v": "Waardoor kan een geheel nieuw allel ontstaan?",
-        "o": [
-         "Door celademhaling",
-         "Door osmose",
-         "Door fotosynthese",
-         "Door een mutatie in het DNA"
-        ],
-        "c": 3,
-        "d": 2,
-        "u": "Nieuwe allelen ontstaan door mutaties: een verandering in het DNA levert een nieuwe variant op. Onthoud: mutatie is de bron van nieuwe allelen.",
-        "uo": [
-         "Celademhaling levert energie, geen nieuw allel.",
-         "Osmose is watertransport, geen bron van nieuwe allelen.",
-         "Fotosynthese maakt glucose, geen nieuwe allelen.",
-         "Klopt: een mutatie in het DNA kan een nieuw allel opleveren."
-        ],
-        "uh": "Nieuwe allelen ontstaan door mutatie."
-       },
-       {
-        "v": "Rode bloemen (RR) kruisen met witte (rr); rood is dominant. Welke bloemkleur krijgen de kinderen?",
-        "o": [
-         "Wit",
-         "Half rood, half wit",
-         "Rood",
-         "Roze"
+         "een dominant allel is altijd gunstiger voor het organisme dan een recessief",
+         "een dominant allel komt altijd vaker voor in de bevolking dan een recessief",
+         "een dominant allel komt al tot uiting als het één keer aanwezig is",
+         "een dominant allel ligt altijd op het X-chromosoom"
         ],
         "c": 2,
         "d": 2,
-        "u": "Alle kinderen zijn Rr; omdat rood dominant is, zijn ze allemaal rood. Onthoud: bij dominant-recessief overheerst het dominante kenmerk.",
+        "s": 0,
+        "u": "Dominant betekent: één allel is genoeg om de eigenschap te tonen.",
         "uo": [
-         "Wit is recessief en wordt onderdrukt door het dominante R.",
-         "De kleuren splitsen zich hier niet half-half over de kinderen.",
-         "Klopt: alle kinderen zijn Rr en dus rood, want rood is dominant.",
-         "Roze zou tussenvorm zijn, maar dominant-recessief geeft geen menging."
+         "Koos je gunstiger? Dominant gaat over welk allel je in het fenotype ziet, niet over voordeel. Er bestaan schadelijke dominante allelen.",
+         "Koos je vaker in de bevolking? Dominant zegt niets over hoe vaak een allel voorkomt. Sommige dominante allelen, zoals dat voor de ziekte van Huntington, zijn zeldzaam.",
+         "Klopt: bij AA en bij Aa zie je de dominante eigenschap. Eén dominant allel is genoeg; het overheerst het recessieve.",
+         "Koos je het X-chromosoom? Dominante allelen liggen op allerlei chromosomen. Op welk chromosoom een gen ligt, staat los van dominant of recessief."
         ],
-        "uh": "Rr met dominant rood geeft rode bloemen."
+        "uh": "Eén is genoeg."
        },
        {
-        "v": "Bij de kruising Aa x aa: welk deel van de kinderen toont het recessieve kenmerk?",
+        "v": "Welke beschrijving past bij het fenotype?",
         "o": [
-         "Niemand",
-         "De helft",
-         "Iedereen",
-         "Een kwart"
+         "de allelen die een organisme heeft",
+         "de eigenschappen die je kunt waarnemen",
+         "het aantal chromosomen in een cel",
+         "de genen die alleen in geslachtscellen zitten"
         ],
         "c": 1,
-        "d": 3,
-        "u": "Aa x aa geeft de helft Aa (dominant kenmerk) en de helft aa (recessief kenmerk). Onthoud: Aa x aa geeft 1:1, dus de helft toont recessief.",
+        "d": 1,
+        "s": 1,
+        "u": "Fenotype = waarneembare eigenschap; genotype = de allelen.",
         "uo": [
-         "Er ontstaan wel aa-kinderen, dus niet niemand.",
-         "Klopt: de helft is aa en toont het recessieve kenmerk.",
-         "Niet iedereen: de helft is Aa en toont het dominante kenmerk.",
-         "Een kwart hoort bij Aa x Aa, niet bij Aa x aa."
+         "Koos je de allelen? Dat is het genotype, bijvoorbeeld Aa. Het fenotype is wat daarvan zichtbaar of meetbaar is.",
+         "Klopt: het fenotype is wat je waarneemt, zoals bloemkleur of bloedgroep. Het ontstaat door het genotype samen met invloeden uit het milieu.",
+         "Koos je het aantal chromosomen? Dat is het karyotype. Het fenotype gaat over eigenschappen, zoals kleur, vorm of gedrag.",
+         "Koos je genen in geslachtscellen? Genen zitten in alle cellen. Het fenotype is de eigenschap die je ziet of meet."
         ],
-        "uh": "Aa x aa geeft 1:1; de helft toont het recessieve kenmerk."
+        "uh": "Wat je ziet."
        },
        {
-        "v": "Wat bepaalt in de eerste plaats een erfelijk kenmerk zoals oogkleur?",
+        "v": "Welke beschrijving past bij een heterozygoot genotype?",
         "o": [
-         "De allelen (het genotype)",
-         "Alleen de voeding",
-         "Het aantal cellen",
-         "De buitentemperatuur"
+         "twee verschillende allelen voor een gen, zoals Aa",
+         "twee dezelfde dominante allelen, zoals AA bij een raszuiver dier",
+         "twee dezelfde recessieve allelen, zoals aa",
+         "één allel voor een gen, zoals bij geslachtscellen"
         ],
         "c": 0,
-        "d": 1,
-        "u": "Een erfelijk kenmerk wordt in de eerste plaats bepaald door de allelen (het genotype). Onthoud: erfelijke kenmerken komen van je allelen.",
+        "d": 2,
+        "s": 1,
+        "u": "Heterozygoot = twee verschillende allelen; homozygoot = twee dezelfde.",
         "uo": [
-         "Klopt: de allelen (het genotype) bepalen in de eerste plaats het kenmerk.",
-         "Voeding kan invloed hebben, maar bepaalt oogkleur niet in de eerste plaats.",
-         "Het aantal cellen bepaalt een erfelijk kenmerk niet.",
-         "De buitentemperatuur bepaalt oogkleur niet."
+         "Klopt: heterozygoot betekent dat de twee allelen verschillen, zoals Aa. Een heterozygoot organisme toont de dominante eigenschap.",
+         "Koos je AA? Dat heet homozygoot dominant. Homo betekent gelijk: beide allelen zijn hetzelfde, hier allebei het dominante allel.",
+         "Koos je aa? Ook daar zijn de twee allelen gelijk, maar dan allebei recessief. Zo een plant toont de recessieve eigenschap, een heterozygote niet.",
+         "Koos je één allel? Een geslachtscel is haploïd en heeft maar één allel. Hetero- en homozygoot gaan over een diploïd organisme met twee allelen."
         ],
-        "uh": "Erfelijke kenmerken worden bepaald door de allelen (genotype)."
+        "uh": "Hetero = verschillend."
        },
        {
-        "v": "Waarom lijken kinderen vaak op allebei hun ouders?",
+        "v": "Hoe verklaar je dat deze tweelingzussen verschillend lang zijn?",
         "o": [
-         "Ze krijgen alle allelen van de moeder",
-         "Ze krijgen alle allelen van de vader",
-         "Ze kiezen als embryo zelf welke kenmerken ze willen krijgen",
-         "Ze krijgen van elke ouder een van de twee allelen per gen"
+         "bij een van de twee is een allel voor lengte uitgeschakeld door mitose",
+         "ze hebben toch verschillende allelen voor lengte",
+         "lengte is een recessieve eigenschap die niet altijd tot uiting komt",
+         "ook het milieu, zoals voeding, beïnvloedt het fenotype"
         ],
         "c": 3,
         "d": 2,
-        "u": "Per gen krijg je één allel van je moeder en één van je vader, dus je erft van allebei. Onthoud: van elk gen krijg je één allel per ouder.",
+        "s": 1,
+        "u": "Fenotype = genotype + milieu.",
         "uo": [
-         "Niet alle allelen komen van de moeder; de vader levert er ook.",
-         "Niet alle allelen komen van de vader; de moeder levert er ook.",
-         "Kinderen kiezen hun kenmerken niet zelf; die worden geerfd.",
-         "Klopt: van elk gen krijg je één allel van elke ouder, dus je lijkt op beide."
+         "Koos je uitgeschakeld door mitose? Mitose kopieert het DNA precies en schakelt geen allelen uit. Het verschil komt door het milieu.",
+         "Koos je verschillende allelen? Een eeneiige tweeling komt uit één zygote en heeft precies dezelfde allelen.",
+         "Koos je recessief? Bij hetzelfde genotype zou een recessieve eigenschap bij allebei hetzelfde uitkomen. Het verschil komt van buiten.",
+         "Klopt: de tweeling heeft hetzelfde genotype, maar groeide op met andere voeding. Het fenotype ontstaat door genotype en milieu samen."
         ],
-        "uh": "Per gen krijg je één allel van elke ouder."
+        "uh": "Zelfde genen, ander milieu.",
+        "ctx": "Een eeneiige tweeling wordt na de geboorte gescheiden. De ene zus groeit op in een gezin met veel en gevarieerd eten, de andere in een land met voedseltekort. Als volwassenen is de eerste zus 12 cm langer. Eeneiige tweelingen hebben precies hetzelfde DNA."
        },
        {
-        "v": "Hoe schrijf je meestal een dominant en een recessief allel?",
+        "v": "Welke conclusie past het best bij dit onderzoek naar hortensia’s?",
         "o": [
-         "Allebei met een cijfer",
-         "Dominant met een hoofdletter, recessief met een kleine letter",
-         "Allebei met een hoofdletter",
-         "Dominant met een kleine letter, recessief met een hoofdletter"
-        ],
-        "c": 1,
-        "d": 1,
-        "u": "Een dominant allel schrijf je met een hoofdletter (A), een recessief met een kleine letter (a). Onthoud: hoofdletter = dominant.",
-        "uo": [
-         "Allelen schrijf je met letters, niet met cijfers.",
-         "Klopt: dominant met een hoofdletter, recessief met een kleine letter.",
-         "Als beide een hoofdletter kregen, kon je dominant en recessief niet onderscheiden.",
-         "Dit draait het om: juist dominant krijgt de hoofdletter."
-        ],
-        "uh": "Dominant = hoofdletter, recessief = kleine letter."
-       },
-       {
-        "v": "Een kind heeft genotype Aa; een ouder is aa. Welk genotype kan de andere ouder NIET hebben?",
-        "o": [
-         "AA (twee dominante allelen)",
-         "Aa (een van elk)",
-         "aa (twee recessieve allelen)",
-         "AA of Aa"
+         "de kleur in zure grond is dominant over de kleur in kalkrijke grond",
+         "de stekken hebben door de grond in hun cellen andere allelen gekregen",
+         "de bloemkleur hangt hier af van het milieu, niet van het genotype",
+         "de grond veroorzaakt mutaties in de bloemkleur"
         ],
         "c": 2,
         "d": 3,
-        "u": "Het kind kreeg de a van de aa-ouder en de A van de andere ouder; die andere moet dus een A bezitten. Genotype aa (geen A) is onmogelijk. Onthoud: de andere ouder moet minstens één A hebben.",
+        "s": 1,
+        "u": "Planten met hetzelfde genotype krijgen een ander fenotype door het milieu.",
         "uo": [
-         "AA kan: die ouder geeft dan de A door.",
-         "Aa kan: die ouder kan de A doorgeven.",
-         "Klopt: aa heeft geen A om door te geven, terwijl het kind wel een A heeft.",
-         "Zowel AA als Aa kan juist wel; het onmogelijke antwoord is aa."
+         "Koos je dominant? Dominant en recessief gaan over allelen, niet over omgevingsfactoren. Hier is het genotype juist gelijk.",
+         "Koos je andere allelen? Grond verandert de allelen niet. Stekken ontstaan door mitose en hebben precies het DNA van de moederplant.",
+         "Klopt: de stekken komen van één plant en hebben hetzelfde genotype. Het verschil in kleur komt dus door de grond, het milieu.",
+         "Koos je mutaties? Dan zou de nieuwe kleur blijvend zijn. Als je de plant verplant naar andere grond, verandert de kleur terug."
         ],
-        "uh": "De andere ouder moet een A hebben, dus aa is onmogelijk."
+        "uh": "Wat verschilt er tussen de planten?",
+        "ctx": "Een kweker maakt tien stekken van één hortensia. Vijf zet hij in zure grond met veel aluminium, vijf in kalkrijke grond. In zure grond krijgen alle planten blauwe bloemen, in kalkrijke grond roze. Na verplanten van een blauwe plant naar kalkrijke grond worden de nieuwe bloemen roze."
        },
        {
-        "v": "Het fenotype hangt af van het genotype, maar soms ook van iets anders. Waarvan?",
+        "v": "Welk genotype heeft een erwt met witte bloemen als wit recessief is?",
         "o": [
-         "Alleen van het totale aantal chromosomen in de celkern",
-         "Van de kleur van het DNA",
-         "Nergens anders van",
-         "Van de omgeving, zoals voeding of licht"
+         "heterozygoot (Aa)",
+         "homozygoot recessief (aa)",
+         "homozygoot dominant (AA)",
+         "dat is aan de bloem niet te zien"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 1,
+        "u": "Wie de recessieve eigenschap toont, is altijd homozygoot recessief.",
+        "uo": [
+         "Koos je Aa? Dan zou de plant een dominant allel voor paars hebben en paarse bloemen dragen.",
+         "Klopt: een recessieve eigenschap komt alleen tot uiting als er geen dominant allel is. Een witte erwt is dus aa.",
+         "Koos je AA? Dan heeft de plant twee allelen voor paars en bloeit hij paars.",
+         "Koos je niet te zien? Bij het dominante fenotype weet je het genotype niet zeker. Bij het recessieve fenotype wel: dat is altijd aa."
+        ],
+        "uh": "Recessief zichtbaar = aa."
+       },
+       {
+        "v": "Welke geslachtscellen kan een plant met genotype Aa maken?",
+        "o": [
+         "de helft met A en de helft met a",
+         "alleen geslachtscellen met A",
+         "alleen geslachtscellen met Aa",
+         "een kwart met A en driekwart met a"
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 2,
+        "u": "Bij de meiose gaan de twee allelen uit elkaar: 50% A, 50% a.",
+        "uo": [
+         "Klopt: bij de meiose gaan de homologe chromosomen uit elkaar. De helft van de geslachtscellen krijgt A, de andere helft a.",
+         "Koos je alleen A? Dan zou het allel a verdwijnen. Beide allelen worden doorgegeven, elk aan de helft van de geslachtscellen.",
+         "Koos je Aa? Een geslachtscel is haploïd en heeft maar één allel per gen.",
+         "Koos je een kwart en driekwart? De twee allelen worden eerlijk verdeeld: de helft A en de helft a."
+        ],
+        "uh": "Eén allel per geslachtscel."
+       },
+       {
+        "v": "Welke verhouding in fenotypen verwacht je bij de nakomelingen van Aa × Aa?",
+        "o": [
+         "1 dominant : 2 recessief",
+         "1 dominant : 1 recessief",
+         "alle nakomelingen dominant",
+         "3 dominant : 1 recessief"
         ],
         "c": 3,
         "d": 2,
-        "u": "Naast het genotype kan ook de omgeving (bijvoorbeeld voeding of licht) het fenotype beinvloeden. Onthoud: fenotype = genotype plus soms omgeving.",
+        "s": 2,
+        "u": "Aa × Aa geeft AA : Aa : aa = 1 : 2 : 1, dus fenotypen 3 : 1.",
         "uo": [
-         "Het aantal chromosomen alleen verklaart het fenotype niet.",
-         "DNA heeft geen kleur die het fenotype bepaalt.",
-         "Er is wel degelijk nog een factor: de omgeving.",
-         "Klopt: de omgeving (voeding, licht) kan het fenotype mede bepalen."
+         "Koos je 1 : 2? Dan heb je de 2 van het genotype Aa bij het recessieve fenotype geteld. Aa toont de dominante eigenschap.",
+         "Koos je 1 : 1? Die verhouding hoort bij Aa × aa, een terugkruising. Bij twee heterozygote ouders is het 3 : 1.",
+         "Koos je alle dominant? Dat geldt voor AA × aa. Twee heterozygote ouders kunnen allebei een a doorgeven, dus een kwart is aa.",
+         "Klopt: het kruisingsschema geeft AA, Aa, Aa en aa. Drie van de vier hebben een dominant allel, dus 3 dominant : 1 recessief."
         ],
-        "uh": "Fenotype = genotype, soms bijgestuurd door de omgeving."
+        "uh": "Maak een schema van 2 × 2."
        },
        {
-        "v": "Hoeveel allelen heeft een organisme meestal van elk gen?",
+        "v": "Hoeveel van de nakomelingen verwacht je met witte bloemen?",
         "o": [
-         "Een allel",
-         "Drie allelen",
-         "Twee allelen",
-         "Vier allelen"
+         "ongeveer 300",
+         "ongeveer 200",
+         "ongeveer 100",
+         "geen enkele"
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 2,
+        "u": "Aa × Aa: een kwart aa, dus ¼ × 400 = 100.",
+        "uo": [
+         "Koos je 300? Dat is het aantal met paarse bloemen: driekwart van 400. Gevraagd werd naar de witte, het overgebleven kwart.",
+         "Koos je 200? Dat is de helft, de verwachting bij Aa × aa. Hier zijn beide ouders heterozygoot: een kwart is wit.",
+         "Klopt: beide ouders zijn Aa. Een kwart van de nakomelingen is aa en heeft witte bloemen: ¼ × 400 = 100.",
+         "Koos je geen? Beide ouders dragen het allel a en kunnen het doorgeven. Een kwart van de nakomelingen krijgt aa."
+        ],
+        "uh": "Een kwart van het totaal.",
+        "ctx": "Twee erwtenplanten met paarse bloemen, beide met genotype Aa, worden met elkaar gekruist. Het allel voor paars (A) is dominant over wit (a). Uit de zaden groeien 400 nieuwe planten. Een leerling wil voorspellen hoeveel daarvan witte bloemen krijgen."
+       },
+       {
+        "v": "Hoe groot is de kans dat hun volgende kind cystische fibrose (CF) krijgt?",
+        "o": [
+         "50%",
+         "25%",
+         "0%",
+         "100%"
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 2,
+        "u": "Twee dragers (Aa × Aa): kans op aa is ¼ bij elk kind opnieuw.",
+        "uo": [
+         "Koos je 50%? Dat is de kans dat een kind drager (Aa) wordt. De kans op aa, en dus op CF, is 25%.",
+         "Klopt: beide ouders zijn drager (Aa). Bij elk kind is de kans op aa een kwart, ook als er al een kind met CF is.",
+         "Koos je 0%? Een eerder kind met CF verandert de kans niet. Elke bevruchting is een nieuwe trekking.",
+         "Koos je 100%? Dan zouden beide ouders aa moeten zijn. Ze zijn zelf gezond, dus ze hebben ook een A."
+        ],
+        "uh": "Elk kind is een nieuwe trekking.",
+        "ctx": "Cystische fibrose (CF) erft recessief. Twee gezonde ouders krijgen een eerste kind met CF. Ze vragen een erfelijkheidsarts hoe groot de kans is dat hun tweede kind ook CF krijgt. Ze denken dat de kans nu kleiner is, omdat ze al een kind met CF hebben."
+       },
+       {
+        "v": "Hoe groot is de kans dat een gezond kind van deze ouders drager is?",
+        "o": [
+         "2/3",
+         "1/2",
+         "1/4",
+         "3/4"
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 2,
+        "u": "Van de gezonde kinderen (AA, Aa, Aa) zijn er 2 van de 3 drager.",
+        "uo": [
+         "Klopt: Aa × Aa geeft AA, Aa, Aa en aa. Het kind is gezond, dus aa valt af. Van de drie overgebleven mogelijkheden zijn er twee Aa: 2/3.",
+         "Koos je 1/2? Dat is de kans op Aa bij een willekeurig kind. Weet je al dat het gezond is, dan valt aa af en wordt het 2 van de 3.",
+         "Koos je 1/4? Dat is de kans op aa (ziek). Het kind is gezond, dus dat is hier juist uitgesloten.",
+         "Koos je 3/4? Dat is de kans dat een kind gezond is. Gevraagd is hoeveel van de gezonde kinderen drager is."
+        ],
+        "uh": "Kijk alleen naar de gezonde kinderen.",
+        "ctx": "In dezelfde familie met cystische fibrose zijn beide ouders drager (Aa). Hun zoon is gezond, maar hij weet niet of hij drager is. Hij wil met een vrouw die zelf drager is een gezin stichten en wil weten hoe groot de kans is dat hij het allel heeft."
+       },
+       {
+        "v": "Waarvoor gebruik je een terugkruising?",
+        "o": [
+         "om te zien hoeveel chromosomen een dier heeft",
+         "om een recessieve eigenschap dominant te maken",
+         "om nieuwe allelen te laten ontstaan door twee verschillende rassen te kruisen",
+         "om te bepalen of een dier met het dominante fenotype AA of Aa is"
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 3,
+        "u": "Terugkruising met aa laat zien of het onbekende dier AA of Aa is.",
+        "uo": [
+         "Koos je chromosomen tellen? Dat doe je met een microscoop of karyogram, niet met een kruising.",
+         "Koos je recessief dominant maken? Of een allel dominant of recessief is, verander je niet door te kruisen.",
+         "Koos je nieuwe allelen? Nieuwe allelen ontstaan alleen door mutatie. Een kruising laat bestaande allelen zien.",
+         "Klopt: je kruist het dier met een homozygoot recessief dier (aa). Komen er recessieve nakomelingen, dan is het dier Aa; zo niet, dan waarschijnlijk AA."
+        ],
+        "uh": "Kruisen met aa."
+       },
+       {
+        "v": "Wat is het genotype van de zwarte hond waarschijnlijk?",
+        "o": [
+         "homozygoot recessief (aa)",
+         "homozygoot dominant (AA)",
+         "heterozygoot (Aa)",
+         "dat kun je hier niet zeggen"
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 3,
+        "u": "Bij een terugkruising met aa geven bruine (aa) pups aan dat de ouder Aa is.",
+        "uo": [
+         "Koos je aa? Een hond met aa heeft geen allel voor zwart en is dus bruin. Deze reu is zwart, dus hij heeft minstens één A.",
+         "Koos je AA? Dan kon hij alleen A doorgeven en waren alle pups zwart. Er zijn bruine pups, dus hij heeft een a.",
+         "Klopt: de bruine pups zijn aa en kregen van elke ouder een a. De zwarte ouder heeft dus een a: hij is Aa.",
+         "Koos je niet te zeggen? Juist omdat er bruine pups zijn, is het zeker: de zwarte ouder heeft een a."
+        ],
+        "uh": "Waar komt de a van de bruine pups vandaan?",
+        "ctx": "Bij labradors is zwart (A) dominant over bruin (a). Een fokker wil weten of zijn zwarte reu homozygoot is. Hij kruist hem met een bruine teef. Er worden zes pups geboren: drie zwarte en drie bruine."
+       },
+       {
+        "v": "Wat stelt een gevuld vierkantje voor in een stamboom?",
+        "o": [
+         "een vrouw die de eigenschap heeft",
+         "een man die de eigenschap heeft",
+         "een man die de eigenschap niet heeft",
+         "een vrouw die drager is"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 3,
+        "u": "Vierkant = man, rondje = vrouw; gevuld = heeft de eigenschap.",
+        "uo": [
+         "Koos je een vrouw? Vrouwen worden met een rondje getekend. Een vierkant is een man.",
+         "Klopt: in een stamboom staat een vierkant voor een man en een rondje voor een vrouw. Een gevuld symbool betekent dat die persoon de eigenschap heeft.",
+         "Koos je zonder de eigenschap? Dan zou het vierkantje leeg zijn. Gevuld betekent dat de eigenschap aanwezig is.",
+         "Koos je drager? Een drager wordt soms half gevuld getekend, en een vrouw krijgt een rondje. Een volledig gevuld vierkant is een man met de eigenschap."
+        ],
+        "uh": "Vorm = geslacht, vulling = eigenschap."
+       },
+       {
+        "v": "Erft deze aandoening dominant of recessief, en waarom?",
+        "o": [
+         "recessief, want twee gezonde ouders hebben een kind met de aandoening",
+         "dominant, want de aandoening komt hier in elke generatie van de familie voor",
+         "dominant, want er zijn meer mannen dan vrouwen met de aandoening",
+         "recessief, want de aandoening komt alleen bij vrouwen voor"
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 3,
+        "u": "Twee ouders zonder de eigenschap met een kind met de eigenschap: recessief.",
+        "uo": [
+         "Klopt: ouders 3 en 4 zijn gezond en hebben toch een kind met de aandoening. Ze hebben allebei een verborgen allel doorgegeven: de aandoening is recessief.",
+         "Koos je elke generatie? In de beschrijving slaat de aandoening juist een generatie over: de ouders 3 en 4 hebben haar niet.",
+         "Koos je meer mannen? Uit dit deel van de stamboom blijkt dat niet, en meer mannen zegt niets over dominant of recessief.",
+         "Koos je alleen vrouwen? Ook de grootvader heeft de aandoening. Het bewijs zit in de gezonde ouders met een ziek kind."
+        ],
+        "uh": "Zoek twee gezonde ouders met een ziek kind.",
+        "ctx": "In een stamboom heeft grootvader 1 de aandoening, grootmoeder 2 niet. Hun dochter 3 is gezond en trouwt met de gezonde man 4, die niet uit deze familie komt maar wel uit hetzelfde dorp. Van hun drie kinderen heeft zoon 7 de aandoening."
+       },
+       {
+        "v": "Welke overerving past het best bij deze familie?",
+        "o": [
+         "intermediair: de kinderen hebben een mildere vorm dan hun ouders",
+         "recessief: twee gezonde ouders krijgen hier een ziek kind",
+         "X-chromosomaal: alleen de dochters krijgen de aandoening van hun vader mee",
+         "dominant: elk ziek kind heeft een zieke ouder"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 3,
+        "u": "Komt een aandoening bij elk ziek kind ook bij een ouder voor, en slaat ze geen generatie over, dan past dominant.",
+        "uo": [
+         "Koos je intermediair? Over een mildere vorm staat niets in de tekst. Intermediair gaat over een tussenvorm bij heterozygoten.",
+         "Koos je recessief? In deze familie krijgen gezonde ouders nergens een ziek kind. Juist dat zou het bewijs voor recessief zijn.",
+         "Koos je alleen dochters van de vader? Er staat niet dat alleen dochters de aandoening hebben. Bovendien heeft in de tweede generatie een kind van een zieke ouder het weer.",
+         "Klopt: elk familielid met de aandoening heeft een ouder met de aandoening, en gezonde familieleden krijgen gezonde kinderen. Dat past bij dominante overerving."
+        ],
+        "uh": "Slaat de aandoening een generatie over?",
+        "ctx": "In een familie heeft een vader een erfelijke aandoening en de moeder niet. Van hun vier kinderen hebben er twee de aandoening. Een van die kinderen trouwt met een gezonde partner en krijgt een kind met de aandoening. De gezonde familieleden hebben alleen gezonde kinderen."
+       },
+       {
+        "v": "Welke kleur hebben de nakomelingen van een rode en een witte leeuwenbek?",
+        "o": [
+         "de helft rood en de helft wit",
+         "allemaal rood",
+         "allemaal roze",
+         "drie rood op één wit"
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 4,
+        "u": "Bij intermediaire overerving is de heterozygoot een mengvorm: roze.",
+        "uo": [
+         "Koos je de helft rood en de helft wit? Alle nakomelingen krijgen een allel voor rood en een voor wit. Ze zijn dus allemaal gelijk.",
+         "Koos je allemaal rood? Dat zou zo zijn als rood dominant was. Bij intermediaire overerving zie je in de heterozygoot beide allelen terug.",
+         "Klopt: bij intermediaire overerving is geen allel dominant. Alle nakomelingen zijn heterozygoot en hebben een tussenvorm: roze.",
+         "Koos je 3 : 1? Die verhouding hoort bij Aa × Aa met dominantie. Hier zijn de ouders homozygoot en is er geen dominantie."
+        ],
+        "uh": "Geen dominantie: tussenvorm.",
+        "ctx": "Bij de leeuwenbek erft de bloemkleur intermediair: geen van de allelen is dominant. Een kweker kruist een homozygote plant met rode bloemen met een homozygote plant met witte bloemen en zaait de zaden uit."
+       },
+       {
+        "v": "Welke verhouding verwacht je als je twee roze leeuwenbekken kruist?",
+        "o": [
+         "3 roze : 1 wit",
+         "1 rood : 2 roze : 1 wit",
+         "alle nakomelingen roze",
+         "1 rood : 1 wit"
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 4,
+        "u": "RW × RW geeft RR : RW : WW = 1 : 2 : 1; bij intermediair zie je dat ook in de fenotypen.",
+        "uo": [
+         "Koos je 3 roze : 1 wit? Dat zou kloppen als roze dominant was. Maar RR geeft rood, niet roze.",
+         "Klopt: RW × RW geeft RR, RW, RW en WW. Bij intermediaire overerving heeft elk genotype een eigen fenotype: 1 rood : 2 roze : 1 wit.",
+         "Koos je alle roze? Roze planten zijn heterozygoot en geven elk de helft R en de helft W door. Er ontstaan ook RR en WW.",
+         "Koos je 1 rood : 1 wit? Dan vergeet je de heterozygote nakomelingen, die de helft van het totaal vormen."
+        ],
+        "uh": "Schrijf het schema uit met R en W.",
+        "ctx": "Een kweker kruist twee leeuwenbekken met roze bloemen met elkaar. Bij de leeuwenbek erft de bloemkleur intermediair: RR is rood, RW is roze en WW is wit. Hij oogst de zaden en kweekt 200 nieuwe planten op."
+       },
+       {
+        "v": "Waarom komt rood-groenkleurenblindheid veel vaker voor bij mannen dan bij vrouwen?",
+        "o": [
+         "een man heeft maar één X-chromosoom, dus één recessief allel is genoeg",
+         "het allel ligt op het Y-chromosoom, dat alleen mannen hebben",
+         "vrouwen hebben twee Y-chromosomen die het allel tegenhouden",
+         "mannen krijgen het allel voor kleurenblindheid altijd van hun eigen vader"
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 4,
+        "u": "X-chromosomaal recessief: een man (XY) heeft maar één allel voor dit gen.",
+        "uo": [
+         "Klopt: het gen ligt op het X-chromosoom. Een man heeft maar één X, dus één recessief allel is genoeg. Een vrouw moet er twee hebben.",
+         "Koos je het Y-chromosoom? Dan zouden alle zonen van een kleurenblinde vader kleurenblind zijn en vrouwen nooit. Het gen ligt op het X-chromosoom.",
+         "Koos je twee Y-chromosomen? Vrouwen hebben twee X-chromosomen en geen Y.",
+         "Koos je van de vader? Een zoon krijgt van zijn vader het Y-chromosoom en van zijn moeder de X. Kleurenblindheid erft hij dus van zijn moeder."
+        ],
+        "uh": "Hoeveel X-chromosomen heeft een man?",
+        "ctx": "Rood-groenkleurenblindheid erft recessief en het gen ligt op het X-chromosoom. In Nederland is ongeveer 8% van de mannen kleurenblind en maar ongeveer 0,5% van de vrouwen. Vrouwen hebben XX, mannen XY."
+       },
+       {
+        "v": "Hoe groot is de kans dat een zoon van deze ouders kleurenblind is?",
+        "o": [
+         "100%",
+         "25%",
+         "0%",
+         "50%"
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 4,
+        "u": "Moeder XᴬXᵃ geeft de helft van haar zonen Xᵃ; de vader geeft zonen een Y.",
+        "uo": [
+         "Koos je 100%? De moeder heeft ook een normaal allel. De helft van haar zonen krijgt dat.",
+         "Koos je 25%? Dat is de kans dat een willekeurig kind een kleurenblinde zoon is. Gevraagd is de kans voor een zoon: die is 50%.",
+         "Koos je 0%? De vader is niet kleurenblind, maar hij geeft zijn zoon geen X. Het allel komt van de moeder.",
+         "Klopt: een zoon krijgt de Y van zijn vader en een X van zijn moeder. De moeder is drager (XᴬXᵃ), dus de helft van haar zonen krijgt Xᵃ en is kleurenblind."
+        ],
+        "uh": "Van wie krijgt een zoon zijn X?",
+        "ctx": "Een vrouw met normale kleurenzien is draagster van het allel voor kleurenblindheid (XᴬXᵃ), want haar vader was kleurenblind. Haar man is niet kleurenblind (XᴬY). Ze verwachten een zoon en willen weten hoe groot de kans is dat hij kleurenblind wordt."
+       },
+       {
+        "v": "Waardoor ontstaat een nieuw allel?",
+        "o": [
+         "doordat een recessief allel dominant wordt",
+         "door een kruising tussen twee rassen",
+         "door een mutatie in het DNA",
+         "door een nieuwe combinatie bij de bevruchting"
         ],
         "c": 2,
         "d": 1,
-        "u": "Een organisme heeft meestal twee allelen van elk gen: een van de moeder en een van de vader. Onthoud: per gen twee allelen, een van elke ouder.",
+        "s": 5,
+        "u": "Nieuwe allelen ontstaan alleen door mutatie.",
         "uo": [
-         "Een allel is te weinig; je erft er een van elke ouder.",
-         "Drie allelen klopt niet; het zijn er meestal twee.",
-         "Klopt: meestal twee allelen per gen, een van elke ouder.",
-         "Vier allelen klopt niet; het zijn er meestal twee."
+         "Koos je recessief dat dominant wordt? Een allel verandert niet zomaar van dominant naar recessief. Een nieuw allel vraagt een verandering in het DNA.",
+         "Koos je een kruising? Bij een kruising worden bestaande allelen in nieuwe combinaties gebracht. Er ontstaan geen nieuwe allelen.",
+         "Klopt: een mutatie verandert de basenvolgorde van een gen. Zo ontstaat een nieuwe variant: een nieuw allel.",
+         "Koos je bevruchting? Bij de bevruchting ontstaan nieuwe combinaties van bestaande allelen, geen nieuwe allelen."
         ],
-        "uh": "Meestal twee allelen per gen (een van elke ouder)."
+        "uh": "Verandering in het DNA."
+       },
+       {
+        "v": "Waarom kan een recessieve mutatie lang verborgen blijven in een populatie?",
+        "o": [
+         "recessieve allelen worden bij de meiose niet doorgegeven",
+         "dragers (Aa) hebben het dominante fenotype en vallen niet op",
+         "een recessief allel verdwijnt na één generatie vanzelf",
+         "recessieve mutaties komen alleen in lichaamscellen voor"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 5,
+        "u": "Heterozygote dragers tonen de recessieve eigenschap niet, maar geven het allel wel door.",
+        "uo": [
+         "Koos je niet doorgegeven? Recessieve allelen worden bij de meiose net zo vaak doorgegeven als dominante: de helft van de geslachtscellen krijgt het.",
+         "Klopt: wie Aa is, toont de dominante eigenschap. Het recessieve allel wordt ongemerkt doorgegeven, tot twee dragers samen kinderen krijgen.",
+         "Koos je vanzelf verdwijnen? Het allel blijft generaties lang bestaan bij dragers, omdat het hen geen nadeel geeft.",
+         "Koos je alleen lichaamscellen? Recessieve mutaties kunnen ook in geslachtscellen zitten; dan zijn ze erfelijk."
+        ],
+        "uh": "Dragers zie je niet."
+       },
+       {
+        "v": "Waarom komt deze recessieve aandoening in deze gemeenschap zo vaak voor?",
+        "o": [
+         "veel mensen zijn familie van elkaar, dus twee dragers krijgen vaker samen kinderen",
+         "het allel is in deze gemeenschap dominant geworden",
+         "door het dorpsleven ontstaan er meer mutaties",
+         "de aandoening wordt hier door het milieu veroorzaakt en is niet erfelijk"
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 5,
+        "u": "In een kleine, gesloten gemeenschap trouwen vaker verwanten, die vaker hetzelfde recessieve allel dragen.",
+        "uo": [
+         "Klopt: in een kleine gemeenschap stammen veel mensen af van dezelfde voorouders. Daardoor zijn twee partners vaker allebei drager van hetzelfde allel.",
+         "Koos je dominant geworden? Een allel wordt niet dominant door waar mensen wonen. Gezonde ouders krijgen hier zieke kinderen: dat past bij recessief.",
+         "Koos je meer mutaties? Mutaties ontstaan niet vaker door een kleine gemeenschap. Het allel was er al en komt vaker samen.",
+         "Koos je het milieu? De aandoening komt voor bij kinderen van gezonde ouders die allebei drager zijn. Dat wijst op een erfelijke oorzaak."
+        ],
+        "uh": "Wat is de kans dat twee partners allebei drager zijn?",
+        "ctx": "In een kleine geloofsgemeenschap trouwen mensen al eeuwen vooral binnen de eigen groep. Een zeldzame recessieve stofwisselingsziekte komt daar twintig keer zo vaak voor als in de rest van Nederland. De meeste zieke kinderen hebben gezonde ouders."
        }
       ],
       "oe": [
        {
-        "bron": "Kruising erwtenplanten",
-        "ctx": "Bij erwten is de eigenschap 'glad zaad' dominant over 'gerimpeld zaad'. Een kweker kruist een homozygoot gladde plant (GG) met een gerimpelde plant (gg). Alle planten in de eerste generatie hebben glad zaad. Daarna kruist hij twee van die eerste-generatieplanten met elkaar.",
-        "v": "Leg uit welk genotype de eerste-generatieplanten hebben en waarom zij allemaal glad zaad geven.",
+        "bron": "Examenstijl",
+        "ctx": "Bij cavia’s is ruw haar (R) dominant over glad haar (r). Een fokker kruist twee cavia’s met ruw haar. Er worden 12 jongen geboren: 9 met ruw haar en 3 met glad haar.",
+        "v": "Geef de genotypen van de ouders, leg uit hoe je dat weet en geef de verwachte verhouding van de genotypen bij de jongen.",
         "o": [
          ""
         ],
         "c": 0,
-        "u": "De eerste-generatieplanten krijgen een G van de GG-ouder en een g van de gg-ouder, dus hun genotype is Gg. Omdat glad (G) dominant is over gerimpeld (g), komt bij Gg het gladde kenmerk tot uiting; daarom hebben alle eerste-generatieplanten glad zaad. (Kernpunten: [1] genotype van de eerste generatie is Gg; [2] het dominante allel G zorgt dat glad zaad tot uiting komt.)"
+        "u": "Beide ouders Rr (1p). Er zijn jongen met glad haar (rr); die kregen van elke ouder een r, en de ouders hebben zelf ruw haar, dus ook een R (1p). Rr × Rr geeft RR : Rr : rr = 1 : 2 : 1 (1p)."
        },
        {
-        "bron": "Kruistabel Aa x Aa",
-        "ctx": "Een leerling maakt een kruisingsschema voor de kruising Aa x Aa. Elke ouder geeft met gelijke kans een A of een a door aan een nakomeling. De leerling vult de vier vakjes van de kruistabel in.",
-        "v": "Geef de vier mogelijke genotypen van de nakomelingen en de fenotypeverhouding (dominant : recessief).",
+        "bron": "Examenstijl",
+        "ctx": "De fokker uit de vorige vraag wil weten of een van de jongen met ruw haar homozygoot is. Hij kruist dit jong met een cavia met glad haar. Er worden 8 jongen geboren, allemaal met ruw haar.",
+        "v": "Leg uit welk genotype het jong waarschijnlijk heeft en waarom je dit niet helemaal zeker weet.",
         "o": [
          ""
         ],
         "c": 0,
-        "u": "De vier vakjes geven de genotypen AA, Aa, Aa en aa. In het fenotype tonen AA, Aa en Aa het dominante kenmerk (drie stuks) en aa het recessieve kenmerk (een stuk). De fenotypeverhouding is dus 3 dominant : 1 recessief. (Kernpunten: [1] genotypen AA, Aa, Aa, aa (verhouding 1:2:1); [2] fenotypeverhouding 3:1.)"
+        "u": "Bij een terugkruising met rr geeft een Rr-ouder gemiddeld de helft jongen met glad haar (1p). Alle 8 jongen hebben ruw haar, dus het jong is waarschijnlijk RR (1p). Het is niet zeker: ook bij Rr kun je toevallig 8 keer een jong met ruw haar krijgen (kans ½⁸ ≈ 0,4%) (1p)."
        },
        {
-        "bron": "Dragerschap in een gezin",
-        "ctx": "Een bepaalde stofwisselingsziekte erft recessief over. Twee ouders hebben de ziekte allebei niet, maar hun eerste kind heeft de ziekte wel. De ouders willen weten hoe dit kan en hoe groot de kans is dat een volgend kind de ziekte ook krijgt.",
-        "v": "Leg uit welk genotype beide ouders hebben en bereken de kans dat een volgend kind de ziekte krijgt.",
+        "bron": "Examenstijl",
+        "ctx": "Fenylketonurie (PKU) erft recessief. In een familie hebben de gezonde ouders Marco en Lisa een dochter met PKU en een gezonde zoon Sem. Sem krijgt een relatie met Fleur, die drager is.",
+        "v": "Bereken de kans dat het eerste kind van Sem en Fleur PKU heeft.",
         "o": [
          ""
         ],
         "c": 0,
-        "u": "Het zieke kind heeft genotype aa en kreeg van elke ouder een a. Omdat de ouders zelf gezond zijn, moeten zij allebei heterozygoot (Aa), oftewel drager, zijn. Bij de kruising Aa x Aa is de kans op een aa-kind 1 op 4, dus 25%. (Kernpunten: [1] beide ouders zijn drager (Aa); [2] kans op een ziek kind is 1/4 = 25%.)"
+        "u": "Marco en Lisa zijn beide Aa (dochter aa) (1p). Sem is gezond, dus de kans dat hij Aa is, is 2/3 (1p). Kans op een kind met PKU: 2/3 (Sem Aa) × 1/4 (Aa × Aa geeft aa) = 1/6 (1p)."
        },
        {
-        "bron": "Bloemkleur bij een plant",
-        "ctx": "Bij een plantensoort is rood (R) dominant over wit (r). Een tuinder kruist twee rode planten met elkaar. Tussen de nakomelingen staan onverwacht ook enkele witte planten.",
-        "v": "Verklaar hoe twee rode ouderplanten toch witte nakomelingen kunnen krijgen.",
+        "bron": "Examenstijl",
+        "ctx": "Hemofilie (bloederziekte) erft X-chromosomaal recessief. Een man met hemofilie (XʰY) krijgt kinderen met een vrouw die het allel niet heeft (XᴴXᴴ).",
+        "v": "Geef met een kruisingsschema of uitleg de kans op hemofilie bij hun zonen en dochters, en leg uit waarom een grootvader met hemofilie wel een kleinzoon met hemofilie kan krijgen.",
         "o": [
          ""
         ],
         "c": 0,
-        "u": "De twee rode ouders kunnen allebei heterozygoot (Rr) zijn: ze tonen rood doordat R dominant is, maar dragen ook een recessief r. Bij de kruising Rr x Rr kan een nakomeling twee recessieve allelen (rr) krijgen; die plant is dan wit. (Kernpunten: [1] beide rode ouders zijn Rr (dragen een verborgen r); [2] een rr-nakomeling is wit.)"
+        "u": "Zonen krijgen de Y van de vader en een Xᴴ van de moeder: 0% hemofilie (1p). Dochters krijgen Xʰ van de vader en Xᴴ van de moeder: allemaal draagster, geen hemofilie (1p). Een draagster-dochter geeft Xʰ door aan de helft van haar zonen, dus de kleinzoon kan hemofilie krijgen (1p)."
        },
        {
-        "bron": "Mutatie en een nieuw allel",
-        "ctx": "In een populatie konijnen komt van oorsprong maar één allel voor de vachtkleur voor. Na verloop van tijd verschijnt er een konijn met een afwijkende vachtkleur die daarvoor nooit voorkwam. Onderzoek wijst uit dat er iets in het DNA is veranderd.",
-        "v": "Leg uit hoe een verandering in het DNA kan leiden tot een nieuwe vachtkleur in de populatie.",
+        "bron": "Examenstijl",
+        "ctx": "Bij een plant erft de bloemkleur intermediair: RR is rood, RW is roze en WW is wit. Een kweker heeft alleen roze planten en wil zoveel mogelijk roze zaad verkopen. Hij laat de roze planten onderling bestuiven.",
+        "v": "Geef de verwachte verhouding van de kleuren bij de nakomelingen en leg uit welke kruising de kweker beter kan doen om alleen roze nakomelingen te krijgen.",
         "o": [
          ""
         ],
         "c": 0,
-        "u": "Een verandering in het DNA is een mutatie. Door de mutatie ontstaat een nieuw allel van het vachtkleur-gen, met een andere code. Dat nieuwe allel kan een ander eiwit (en dus een andere vachtkleur) opleveren, en kan worden doorgegeven aan nakomelingen. (Kernpunten: [1] een mutatie is een verandering in het DNA die een nieuw allel oplevert; [2] het nieuwe allel geeft een nieuw kenmerk dat overerfbaar is.)"
+        "u": "RW × RW geeft 1 rood : 2 roze : 1 wit, dus maar de helft roze (1p). Bij intermediaire overerving is roze altijd heterozygoot (1p). Kruis rode (RR) met witte (WW) planten: alle nakomelingen zijn RW en dus roze (1p)."
        }
       ]
      }

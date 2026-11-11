@@ -5,7 +5,7 @@
 Volledige beschrijving (functies, inhoud per niveau, prijs, wat Slagio niet is): https://slagio.nl/llms-full.txt
 
 ## In het kort
-- 12 vakken havo, 16 vakken vwo, 12 vakken vmbo; 26.821 oefenvragen en 4.346 begrippen.
+- 12 vakken havo, 16 vakken vwo, 12 vakken vmbo; 26.823 oefenvragen en 4.346 begrippen.
 - Adaptief oefenen: na een fout een vraag over hetzelfde onderwerp, een niveau makkelijker; uitleg bij elk fout antwoord.
 - Foutenboek en herhalen met gespreide herhaling, beheersing per leerdoel, studieplan tot het examen.
 - Examens met klok, proefexamens in examenstijl met modelantwoord en puntenverdeling, archief met officiële oude examens.
@@ -54,7 +54,7 @@ Volledige beschrijving (functies, inhoud per niveau, prijs, wat Slagio niet is):
 - [Fotosynthese & celademhaling (Biologie HAVO)](https://slagio.nl/leren/havo/biologie/fotosynthese-en-celademhaling.html): Je beschrijft fotosynthese en aerobe en anaerobe dissimilatie met hun grondstoffen, producten en energieomzetting, leest beperkende factoren af uit grafieken,…
 - [DNA en eiwitsynthese (Biologie HAVO)](https://slagio.nl/leren/havo/biologie/dna-en-eiwitsynthese.html): Je beschrijft de bouw van DNA en de basenparing, legt het verband tussen gen, chromosoom en eiwit, voert transcriptie en translatie uit met een codetabel, en…
 - [Celdeling: mitose en meiose (Biologie HAVO)](https://slagio.nl/leren/havo/biologie/celdeling-mitose-en-meiose.html): Je beschrijft de celcyclus en de DNA-verdubbeling, herkent de fasen van de mitose, rekent met diploïde en haploïde aantallen, legt de twee delingen van de…
-- [Erfelijkheid: allelen en overerving (Biologie HAVO)](https://slagio.nl/leren/havo/biologie/erfelijkheid-allelen-en-overerving.html): Allelen, dominant en recessief, genotype en fenotype, en het voorspellen van nakomelingen met een kruisingsschema.
+- [Erfelijkheid: allelen en overerving (Biologie HAVO)](https://slagio.nl/leren/havo/biologie/erfelijkheid-allelen-en-overerving.html): Je legt uit wat allelen, dominant en recessief, genotype en fenotype zijn, voorspelt met een kruisingsschema verhoudingen en kansen, bepaalt genotypen met een…
 - [Zenuwstelsel en prikkelgeleiding (Biologie HAVO)](https://slagio.nl/leren/havo/biologie/zenuwstelsel-en-prikkelgeleiding.html): Neuronen en de impuls, de synaps, de reflexboog, en het verschil tussen regeling door zenuwen en door hormonen.
 - [Hormonale regulatie (Biologie HAVO)](https://slagio.nl/leren/havo/biologie/hormonale-regulatie.html): Hormonen als trage, langdurige regeling via het bloed, met insuline, glucagon en adrenaline en de regeling van de bloedsuiker.
 - [Homeostase en antagonisme (Biologie HAVO)](https://slagio.nl/leren/havo/biologie/homeostase-en-antagonisme.html): Homeostase als het constant houden van het inwendig milieu, negatieve terugkoppeling, antagonistische regeling en toepassingen op temperatuur- en waterregeling.
