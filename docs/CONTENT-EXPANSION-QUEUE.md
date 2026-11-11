@@ -489,7 +489,7 @@ vragen zijn grondstof, niet heilig.
   - [ ] A3 · bi.A.3 Data verwerken en grafieken lezen
   - [ ] A4 · bi.A.4 Correlatie versus causaliteit
   - [ ] A5 · bi.A.5 Biologisch onderzoeksgereedschap
-- [ ] **HAVO · Biologie** (`bi`) · domein M (opwaarderen)
+- [x] **HAVO · Biologie** (`bi`) · domein M (opwaarderen)  (alle leerdoelen op v2)
   - [x] M1 · bi.M.1 Bouw en functie van de cel
   - [x] M2 · bi.M.2 Transport door het celmembraan
   - [x] M4 · bi.M.4 Fotosynthese & celademhaling
