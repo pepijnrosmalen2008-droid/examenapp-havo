@@ -1474,20 +1474,24 @@ var VAKKEN = [
      },
      {
       "id": "P2",
+      "lo": "bi.P.2",
+      "gs": 2,
       "naam": "Voedselrelaties en energiedoorgifte",
-      "beschrijving": "Voedselketens en voedselwebben, de rol van producent, consument en reducent, en energiedoorgifte via de piramide van biomassa.",
-      "ceStatus": "CE",
+      "beschrijving": "Je beschrijft voedselketens en voedselwebben, onderscheidt producenten, consumenten en reducenten, rekent met de energiestroom van ongeveer 10% per stap, interpreteert piramides van aantallen en biomassa, beschrijft de kringlopen van koolstof en stikstof en verklaart de ophoping van gifstoffen in een voedselketen.",
+      "ceStatus": "CE+SE",
+      "binas": "",
+      "val": "",
       "onderwerpen": [
        "Voedselketen en voedselweb",
-       "Producent, consument, reducent",
-       "Herbivoor, carnivoor, omnivoor",
-       "Energiedoorgifte (ongeveer 10 procent per stap)",
-       "Piramide van biomassa",
-       "Nutriënten en de kringloop"
+       "Producenten, consumenten en reducenten",
+       "Energiestroom door een ecosysteem",
+       "Piramides van aantallen en biomassa",
+       "Kringloop van koolstof",
+       "Kringloop van stikstof en ophoping van gif"
       ],
-      "nSv": 25,
+      "nSv": 26,
       "nOe": 5,
-      "nBeg": 12,
+      "nBeg": 14,
       "hasSam": true
      },
      {

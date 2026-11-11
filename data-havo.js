@@ -58670,565 +58670,660 @@ var VAKKEN = [
      },
      {
       "id": "P2",
+      "lo": "bi.P.2",
+      "gs": 2,
       "naam": "Voedselrelaties en energiedoorgifte",
-      "beschrijving": "Voedselketens en voedselwebben, de rol van producent, consument en reducent, en energiedoorgifte via de piramide van biomassa.",
-      "ceStatus": "CE",
+      "beschrijving": "Je beschrijft voedselketens en voedselwebben, onderscheidt producenten, consumenten en reducenten, rekent met de energiestroom van ongeveer 10% per stap, interpreteert piramides van aantallen en biomassa, beschrijft de kringlopen van koolstof en stikstof en verklaart de ophoping van gifstoffen in een voedselketen.",
+      "ceStatus": "CE+SE",
+      "binas": "",
+      "val": "",
       "onderwerpen": [
        "Voedselketen en voedselweb",
-       "Producent, consument, reducent",
-       "Herbivoor, carnivoor, omnivoor",
-       "Energiedoorgifte (ongeveer 10 procent per stap)",
-       "Piramide van biomassa",
-       "Nutriënten en de kringloop"
+       "Producenten, consumenten en reducenten",
+       "Energiestroom door een ecosysteem",
+       "Piramides van aantallen en biomassa",
+       "Kringloop van koolstof",
+       "Kringloop van stikstof en ophoping van gif"
       ],
-      "sam": "In een voedselketen zie je wie wie eet. De pijl wijst naar het organisme dat eet, want de energie stroomt die kant op. Een producent maakt zelf voedsel met fotosynthese en staat aan het begin. Een consument eet andere organismen; een herbivoor eet planten, een carnivoor eet dieren. Een reducent breekt dode resten af en maakt daarbij nutriënten (voedingsstoffen) vrij die planten weer opnemen: de kringloop. Bij elke stap in de keten gaat veel energie verloren als warmte, ongeveer negentig procent, en gaat maar ongeveer tien procent door naar de volgende. Daarom is er bovenin een keten steeds minder biomassa: dat toont de piramide van biomassa.",
+      "sam": "Voedselketen: pijl van voedsel naar eter, begint bij producent. Voedselweb = verbonden ketens. Producent maakt (fotosynthese), consument eet (1e, 2e, 3e), reducent breekt dode resten af tot mineralen. Energie van de zon; per stap ~10% door, rest warmte; daarom korte ketens. Piramide van biomassa breed onderaan; van aantallen soms raar (eik). Koolstof: fotosynthese neemt CO2 op, dissimilatie en verbranding geven CO2 af; fossiele brandstoffen. Stikstof: planten nemen nitraat op; bacteriën in klaver binden N2. Niet-afbreekbaar gif (DDT) hoopt op.",
       "begrippen": [
        {
         "t": "Voedselketen",
-        "d": "een reeks organismen die elkaar opeten, van producent tot consument"
+        "d": "Reeks organismen waarin het ene het andere eet; de pijl wijst van voedsel naar eter."
        },
        {
         "t": "Voedselweb",
-        "d": "meerdere voedselketens die met elkaar verbonden zijn"
+        "d": "Netwerk van met elkaar verbonden voedselketens in een ecosysteem."
        },
        {
         "t": "Producent",
-        "d": "organisme dat zelf voedsel maakt met fotosynthese, meestal een plant"
+        "d": "Organisme dat met fotosynthese zelf organische stof maakt, zoals een plant of alg."
        },
        {
         "t": "Consument",
-        "d": "organisme dat andere organismen eet"
+        "d": "Organisme dat andere organismen eet; eerste consument eet producenten."
        },
        {
         "t": "Reducent",
-        "d": "organisme dat dode resten afbreekt, zoals een bacterie of schimmel"
+        "d": "Bacterie of schimmel die dode resten afbreekt tot mineralen en koolstofdioxide."
        },
        {
-        "t": "Herbivoor",
-        "d": "planteneter: een dier dat planten eet"
-       },
-       {
-        "t": "Carnivoor",
-        "d": "vleeseter: een dier dat andere dieren eet"
-       },
-       {
-        "t": "Energiedoorgifte",
-        "d": "de doorgave van energie van het ene organisme naar het volgende"
-       },
-       {
-        "t": "Piramide van biomassa",
-        "d": "een figuur die toont dat er bovenin een keten steeds minder biomassa is"
-       },
-       {
-        "t": "Nutriënt",
-        "d": "een voedingsstof die planten uit de bodem opnemen"
+        "t": "Energiestroom",
+        "d": "De doorgifte van energie door een voedselketen; per stap gaat ongeveer 10% door."
        },
        {
         "t": "Biomassa",
-        "d": "de totale massa aan levend materiaal"
+        "d": "De totale massa levende stof op een voedselniveau of in een gebied."
+       },
+       {
+        "t": "Piramide van biomassa",
+        "d": "Weergave van de biomassa per voedselniveau, meestal onderaan het breedst."
+       },
+       {
+        "t": "Piramide van aantallen",
+        "d": "Weergave van het aantal individuen per voedselniveau."
        },
        {
         "t": "Kringloop",
-        "d": "het rondgaan van stoffen tussen organismen en de omgeving"
+        "d": "Het steeds rondgaan van stoffen zoals koolstof en stikstof in een ecosysteem."
+       },
+       {
+        "t": "Fotosynthese",
+        "d": "Proces waarbij producenten met lichtenergie CO2 vastleggen in organische stof."
+       },
+       {
+        "t": "Fossiele brandstof",
+        "d": "Brandstof uit resten van organismen van miljoenen jaren geleden, zoals steenkool en aardolie."
+       },
+       {
+        "t": "Nitraat",
+        "d": "Stikstofzout in de bodem dat planten opnemen om eiwitten te maken."
+       },
+       {
+        "t": "Ophoping",
+        "d": "Toename van de concentratie van een niet-afbreekbare stof in elke stap van een voedselketen."
        }
       ],
       "sv": [
        {
-        "v": "Wat laat een voedselketen zien?",
+        "v": "Waarmee begint een voedselketen bijna altijd?",
         "o": [
-         "Wie wie opeet",
-         "Hoeveel water er in een gebied valt per jaar",
-         "Welke abiotische factoren er in het gebied zijn",
-         "Hoe warm het is op verschillende plekken"
-        ],
-        "c": 0,
-        "d": 1,
-        "u": "Een voedselketen laat zien welke organismen elkaar opeten.",
-        "uo": [
-         "Klopt: wie eet wie.",
-         "Neerslag hoort niet in een voedselketen.",
-         "Dat zijn abiotische factoren, geen voedselketen.",
-         "Temperatuur is geen voedselketen."
-        ],
-        "uh": "Voedselketen = wie eet wie."
-       },
-       {
-        "v": "Wat is een producent?",
-        "o": [
-         "Een dier dat andere dieren opeet in het gebied",
-         "Een plant die zelf voedsel maakt",
-         "Een organisme dat dode resten afbreekt tot nutriënten",
-         "Een dier dat alleen planten eet als voedsel"
-        ],
-        "c": 1,
-        "d": 1,
-        "u": "Een producent maakt zelf voedsel met fotosynthese en staat aan het begin van de keten.",
-        "uo": [
-         "Dat is een consument.",
-         "Klopt: een producent maakt zelf voedsel.",
-         "Dat is een reducent.",
-         "Dat is een herbivoor (consument)."
-        ],
-        "uh": "Producent = maakt zelf voedsel (plant)."
-       },
-       {
-        "v": "Wat is een consument?",
-        "o": [
-         "Een plant die met licht zijn eigen voedsel maakt",
-         "Een bacterie die dode bladeren afbreekt",
-         "Een organisme dat andere organismen eet",
-         "Een niet-levende factor in het ecosysteem"
+         "een reducent die dode resten opruimt",
+         "een roofdier dat alleen vlees eet",
+         "een producent",
+         "een planteneter die gras eet"
         ],
         "c": 2,
         "d": 1,
-        "u": "Een consument eet andere organismen; hij maakt niet zelf voedsel.",
+        "s": 0,
+        "u": "Voedselketens beginnen bij producenten: organismen die met fotosynthese hun eigen voedsel maken.",
         "uo": [
-         "Dat is een producent.",
-         "Dat is een reducent.",
-         "Klopt: een consument eet andere organismen.",
-         "Een consument is een levend organisme."
+         "Koos je een reducent? Reducenten breken dode resten af en geven stoffen terug aan de bodem. Ze staan niet aan het begin van een keten, maar ruimen alle schakels op.",
+         "Koos je een roofdier? Een roofdier staat juist aan het eind van een keten. Het eet andere dieren, die zelf weer van planten leven.",
+         "Klopt: een voedselketen begint bij een producent, meestal een groene plant of alg. Die maakt met fotosynthese zelf organische stof uit koolstofdioxide en water.",
+         "Koos je een planteneter? Een planteneter is de eerste consument. Hij eet de producent, dus de producent staat nog voor hem in de keten."
         ],
-        "uh": "Consument = eet andere organismen."
+        "uh": "Wie maakt zelf voedsel?"
        },
        {
-        "v": "Wat doet een reducent?",
+        "v": "Wat stelt een pijl in een voedselketen voor?",
         "o": [
-         "Hij maakt met licht zijn eigen voedsel aan",
-         "Hij eet levende planten en dieren op",
-         "Hij houdt de temperatuur van de bodem stabiel",
-         "Hij breekt dode resten af"
-        ],
-        "c": 3,
-        "d": 1,
-        "u": "Een reducent breekt dode resten af en maakt daarbij nutriënten vrij.",
-        "uo": [
-         "Zelf voedsel maken doet een producent.",
-         "Levende dingen eten doet een consument.",
-         "Een reducent regelt geen temperatuur.",
-         "Klopt: hij breekt dode resten af."
-        ],
-        "uh": "Reducent = breekt dode resten af."
-       },
-       {
-        "v": "Welke organismen zijn typische reducenten?",
-        "o": [
-         "Bacteriën en schimmels",
-         "Grassen en bomen die in het gebied groeien",
-         "Roofdieren die op de toppredator jagen",
-         "De grote planteneters van de savanne"
-        ],
-        "c": 0,
-        "d": 2,
-        "u": "Bacteriën en schimmels zijn reducenten: ze breken dode resten af.",
-        "uo": [
-         "Klopt: bacteriën en schimmels zijn reducenten.",
-         "Grassen en bomen zijn producenten.",
-         "Roofdieren zijn consumenten.",
-         "Grote planteneters zijn consumenten."
-        ],
-        "uh": "Reducenten = bacteriën en schimmels."
-       },
-       {
-        "v": "Waar wijst de pijl in een voedselketen naartoe?",
-        "o": [
-         "Naar het organisme dat gegeten wordt",
-         "Naar het organisme dat eet",
-         "Altijd naar de producent onderaan",
-         "Altijd naar de zon als energiebron"
+         "de richting waarin het roofdier jaagt",
+         "de richting waarin voedsel en energie gaan",
+         "welk dier het grootst is",
+         "welk organisme het langst leeft"
         ],
         "c": 1,
         "d": 2,
-        "u": "De pijl wijst naar de eter, want de energie stroomt die kant op.",
+        "s": 0,
+        "u": "Pijl wijst van het gegeten organisme naar de eter.",
         "uo": [
-         "De pijl wijst juist weg van de prooi.",
-         "Klopt: naar de eter, waar de energie heen gaat.",
-         "De pijl gaat juist weg van de producent.",
-         "De pijl wijst niet naar de zon."
+         "Koos je de jaagrichting? De pijl wijst juist naar de eter, dus van prooi naar roofdier. Hij laat zien waar het voedsel heen gaat, niet waar het dier naartoe rent.",
+         "Klopt: de pijl wijst van wat gegeten wordt naar wie eet. Zo laat de pijl zien hoe voedsel en de energie daarin door de keten gaan: gras → konijn → vos.",
+         "Koos je het grootste dier? Grootte staat niet in een voedselketen. Een kleine wesp kan een grote rups opeten; de pijl gaat over wie wie eet.",
+         "Koos je de levensduur? Over leeftijd zegt een voedselketen niets. De pijl laat alleen zien hoe het voedsel door de keten gaat."
         ],
-        "uh": "Pijl wijst naar de eter (energie stroomt mee)."
+        "uh": "Van gegeten naar eter."
        },
        {
-        "v": "Wat is een herbivoor?",
+        "v": "Waarom is een voedselweb een beter beeld van de natuur dan een voedselketen?",
         "o": [
-         "Een dier dat alleen vlees eet als voedsel",
-         "Een organisme dat dode planten afbreekt",
-         "Een planteneter",
-         "Een plant die zelf voedsel produceert met licht"
+         "de meeste dieren eten meer dan één soort",
+         "een voedselweb bevat alleen producenten",
+         "in een voedselketen staan geen dieren",
+         "een voedselweb laat zien hoe groot dieren zijn"
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 0,
+        "u": "In een voedselweb hangen veel ketens aan elkaar, omdat dieren meerdere soorten eten en door meerdere soorten worden gegeten.",
+        "uo": [
+         "Klopt: de meeste dieren eten meerdere soorten en worden zelf door meerdere soorten gegeten. Een voedselweb laat al die verbanden zien, een losse keten maar één lijn.",
+         "Koos je alleen producenten? Een voedselweb bevat producenten, consumenten en vaak ook reducenten. Het is juist een netwerk van alle voedselrelaties.",
+         "Koos je geen dieren in een keten? Een voedselketen bestaat juist meestal uit een plant en een of meer dieren. Het probleem is dat hij maar één lijn laat zien.",
+         "Koos je de grootte? Een voedselweb laat zien wie wie eet. De grootte van dieren staat er niet in; daar is een piramide beter geschikt voor."
+        ],
+        "uh": "Hoeveel soorten eet een vos?"
+       },
+       {
+        "v": "Wat gebeurt er waarschijnlijk met de rupsen als de koolmezen verdwijnen?",
+        "o": [
+         "de rupsen gaan dan zelf de eikels eten",
+         "het aantal rupsen daalt meteen sterk",
+         "het aantal rupsen blijft precies gelijk",
+         "het aantal rupsen stijgt eerst"
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 0,
+        "u": "Valt een predator weg, dan neemt de prooi eerst toe.",
+        "uo": [
+         "Koos je eikels eten? Rupsen van deze soort eten eikenbladeren. Hun voedsel verandert niet doordat de koolmezen verdwijnen.",
+         "Koos je een sterke daling? Koolmezen zijn juist een vijand van de rupsen. Zonder die vijand overleven er meer rupsen, niet minder.",
+         "Koos je gelijk blijven? In een voedselweb hangt alles samen. Als een belangrijke rover verdwijnt, verandert het aantal prooien bijna altijd.",
+         "Klopt: koolmezen eten veel rupsen. Zonder koolmezen worden er minder rupsen opgegeten, dus het aantal rupsen stijgt eerst. Later kan voedselgebrek dat weer afremmen."
+        ],
+        "uh": "Wat doen koolmezen met rupsen?",
+        "ctx": "In een eikenbos eten rupsen van de wintervlinder de jonge eikenbladeren. Koolmezen voeren hun jongen vooral met deze rupsen. Sperwers jagen op koolmezen. Door een ziekte verdwijnen in één jaar bijna alle koolmezen uit het bos."
+       },
+       {
+        "v": "Welke rol heeft een schimmel die een omgevallen boom afbreekt?",
+        "o": [
+         "eerste consument",
+         "producent",
+         "reducent",
+         "tweede consument"
         ],
         "c": 2,
         "d": 1,
-        "u": "Een herbivoor is een planteneter.",
+        "s": 1,
+        "u": "Reducenten breken dode resten af tot anorganische stoffen.",
         "uo": [
-         "Dat is een carnivoor.",
-         "Dat is een reducent.",
-         "Klopt: een herbivoor eet planten.",
-         "Dat is een producent."
+         "Koos je eerste consument? Een eerste consument eet levende planten. Een schimmel op een dode boom breekt dood materiaal af en is een reducent.",
+         "Koos je producent? Een producent maakt zelf organische stof met fotosynthese. Schimmels hebben geen bladgroen en kunnen dat niet.",
+         "Klopt: schimmels en bacteriën die dode resten afbreken heten reducenten. Ze zetten organische stof om in anorganische stoffen zoals koolstofdioxide, water en mineralen.",
+         "Koos je tweede consument? Een tweede consument eet planteneters. Een schimmel die dood hout afbreekt, eet geen dieren."
         ],
-        "uh": "Herbivoor = planteneter."
+        "uh": "Opruimer van dode resten."
        },
        {
-        "v": "Wat is een carnivoor?",
+        "v": "Welk organisme is een producent?",
         "o": [
-         "Een organisme dat alleen planten eet",
-         "Een plant die dieren vangt en verteert",
-         "Een bacterie die dode dieren afbreekt",
-         "Een vleeseter"
+         "een paddenstoel",
+         "een eikenboom",
+         "een regenworm",
+         "een konijn"
         ],
-        "c": 3,
+        "c": 1,
         "d": 1,
-        "u": "Een carnivoor is een vleeseter.",
+        "s": 1,
+        "u": "Producenten maken met fotosynthese zelf organische stof: planten en algen.",
         "uo": [
-         "Dat is een herbivoor.",
-         "De meeste carnivoren zijn dieren, geen planten.",
-         "Dat is een reducent.",
-         "Klopt: een carnivoor eet vlees."
+         "Koos je een paddenstoel? Een paddenstoel is het vruchtlichaam van een schimmel. Schimmels hebben geen bladgroen en leven van dode resten: het zijn reducenten.",
+         "Klopt: een eikenboom heeft bladgroen en maakt met fotosynthese zelf glucose uit koolstofdioxide en water. Daarmee is hij een producent.",
+         "Koos je een regenworm? Een regenworm eet dode bladeren en grond. Hij kan geen fotosynthese doen en is een consument van dood materiaal.",
+         "Koos je een konijn? Een konijn eet planten en is dus een eerste consument. Het kan zelf geen voedsel maken."
         ],
-        "uh": "Carnivoor = vleeseter."
+        "uh": "Wie heeft bladgroen?"
        },
        {
-        "v": "Hoeveel energie gaat er ongeveer door naar de volgende stap in een keten?",
+        "v": "Welk organisme is in de keten gras → sprinkhaan → kikker → reiger een tweede consument?",
         "o": [
-         "Ongeveer tien procent",
-         "Ongeveer negentig procent van het totaal",
-         "Bijna honderd procent van alle energie",
-         "Precies de helft van de energie elke keer"
+         "de kikker",
+         "de sprinkhaan",
+         "de reiger",
+         "het gras"
         ],
         "c": 0,
         "d": 2,
-        "u": "Per stap gaat ongeveer tien procent door; de rest gaat verloren als warmte.",
+        "s": 1,
+        "u": "Eerste consument eet de producent, tweede consument eet de eerste consument.",
         "uo": [
-         "Klopt: ongeveer tien procent gaat door.",
-         "Ongeveer negentig procent gaat juist verloren.",
-         "Er gaat juist veel verloren, niet bijna alles door.",
-         "Het is ongeveer tien procent, niet de helft."
+         "Klopt: het gras is de producent, de sprinkhaan eet gras (eerste consument), de kikker eet de sprinkhaan en is dus de tweede consument.",
+         "Koos je de sprinkhaan? De sprinkhaan eet het gras direct. Daarmee is hij de eerste consument, de planteneter.",
+         "Koos je de reiger? De reiger eet de kikker en staat dus een stap verder: hij is de derde consument in deze keten.",
+         "Koos je het gras? Gras maakt zelf zijn voedsel met fotosynthese. Het is de producent en geen consument."
         ],
-        "uh": "Ongeveer 10 procent gaat door, 90 procent verloren."
+        "uh": "Tel vanaf de plant."
        },
        {
-        "v": "Waarom gaat er energie verloren bij elke stap in de keten?",
+        "v": "Waarom zijn reducenten onmisbaar in een ecosysteem?",
         "o": [
-         "Omdat de zon steeds minder licht geeft",
-         "Omdat organismen energie gebruiken en warmte afgeven",
-         "Omdat de reducenten alle energie opslaan",
-         "Omdat de pijlen de verkeerde kant op wijzen"
-        ],
-        "c": 1,
-        "d": 3,
-        "u": "Organismen gebruiken energie om te leven en geven daarbij warmte af, dus gaat er per stap veel verloren.",
-        "uo": [
-         "De zon heeft hier niets mee te maken.",
-         "Klopt: leven kost energie, die als warmte verdwijnt.",
-         "Reducenten slaan de energie niet op.",
-         "De richting van de pijlen is niet de oorzaak."
-        ],
-        "uh": "Energieverlies = organismen verbruiken energie (warmte)."
-       },
-       {
-        "v": "Wat toont een piramide van biomassa?",
-        "o": [
-         "Dat er bovenin juist steeds meer biomassa is",
-         "Dat alle niveaus precies evenveel biomassa hebben",
-         "Dat er bovenin steeds minder biomassa is",
-         "Dat er alleen producenten in een gebied zijn"
-        ],
-        "c": 2,
-        "d": 2,
-        "u": "Omdat er per stap energie verloren gaat, is er bovenin de keten steeds minder biomassa.",
-        "uo": [
-         "Het is juist andersom: bovenin minder.",
-         "De niveaus verschillen juist sterk.",
-         "Klopt: bovenin steeds minder biomassa.",
-         "Er zijn ook consumenten en reducenten."
-        ],
-        "uh": "Piramide van biomassa: onderaan veel, bovenaan weinig."
-       },
-       {
-        "v": "Wat is een voedselweb?",
-        "o": [
-         "Eén enkele rechte voedselketen",
-         "De niet-levende omgeving van een gebied",
-         "Een lijst met alleen de producenten",
-         "Meerdere ketens die met elkaar verbonden zijn"
+         "ze eten alle zieke dieren op",
+         "ze leveren zuurstof aan de dieren in het water",
+         "ze vangen zonlicht op voor de andere organismen",
+         "ze maken mineralen vrij voor de planten"
         ],
         "c": 3,
         "d": 2,
-        "u": "Een voedselweb bestaat uit veel voedselketens die met elkaar zijn verbonden.",
+        "s": 1,
+        "u": "Reducenten sluiten de kringloop: zonder hen raken de mineralen op.",
         "uo": [
-         "Eén keten is nog geen web.",
-         "Dat is de biotoop.",
-         "Een web bevat veel meer dan producenten.",
-         "Klopt: veel verbonden ketens vormen een web."
+         "Koos je zieke dieren opeten? Reducenten breken vooral dode resten af. Het opeten van zieke dieren doen roofdieren of aaseters.",
+         "Koos je zuurstof leveren? Zuurstof komt van producenten die aan fotosynthese doen. Reducenten verbruiken juist zuurstof bij het afbreken.",
+         "Koos je zonlicht opvangen? Dat doen producenten met hun bladgroen. Reducenten leven van dode organische stof, niet van licht.",
+         "Klopt: reducenten breken dode resten en uitwerpselen af. Daarbij komen mineralen vrij die planten weer opnemen. Zonder reducenten zouden de voedingsstoffen in dode resten opgesloten blijven."
         ],
-        "uh": "Voedselweb = veel verbonden voedselketens."
+        "uh": "Wat komt er vrij bij het afbreken?"
        },
        {
-        "v": "Wat is een nutriënt?",
+        "v": "Waarom verdwijnen de bladeren in het bos onder de stolp na een jaar niet?",
         "o": [
-         "Een voedingsstof die planten opnemen",
-         "Een roofdier boven in de keten",
-         "De warmte die vrijkomt bij het leven",
-         "Een plant die zelf voedsel maakt"
+         "er is te veel licht onder de stolp",
+         "de bladeren doen nog steeds aan fotosynthese",
+         "er zijn geen reducenten die de bladeren afbreken",
+         "de bladeren zijn veranderd in mineralen"
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 1,
+        "u": "Zonder reducenten worden dode resten niet afgebroken.",
+        "uo": [
+         "Koos je te veel licht? Licht breekt bladeren nauwelijks af. Het verschil met de rest van het bos is dat er geen reducenten zijn.",
+         "Koos je fotosynthese? Afgevallen bladeren zijn dood en doen geen fotosynthese meer. Ze blijven liggen omdat niemand ze afbreekt.",
+         "Klopt: in de gesteriliseerde grond onder de stolp leven geen bacteriën en schimmels meer. Zonder reducenten worden de bladeren niet afgebroken en blijven ze liggen.",
+         "Koos je mineralen? Als de bladeren in mineralen veranderd waren, waren ze juist verdwenen. Dat afbreken doen reducenten, en die ontbreken hier."
+        ],
+        "uh": "Wie breekt normaal blad af?",
+        "ctx": "Een onderzoeker legt verse eikenbladeren op twee plekken op de bosbodem. Op plek A blijven ze gewoon liggen. Op plek B zet hij ze op grond die hij eerst heeft verhit tot alle organismen dood zijn, en daarna dekt hij alles af met een glazen stolp. Na een jaar zijn de bladeren op A verdwenen en op B nog bijna gaaf."
+       },
+       {
+        "v": "Waar komt de energie in bijna elk ecosysteem uiteindelijk vandaan?",
+        "o": [
+         "van de bodem",
+         "van de zon",
+         "van de reducenten",
+         "van het water"
+        ],
+        "c": 1,
+        "d": 1,
+        "s": 2,
+        "u": "Producenten leggen zonne-energie vast; die energie gaat de keten door.",
+        "uo": [
+         "Koos je de bodem? De bodem levert water en mineralen, maar geen energie. Mineralen leveren geen energie voor de stofwisseling.",
+         "Klopt: producenten vangen zonlicht op en leggen die energie vast in organische stof. Alle consumenten en reducenten leven van die vastgelegde energie.",
+         "Koos je reducenten? Reducenten gebruiken juist energie uit dode resten. Ze leveren geen nieuwe energie aan het ecosysteem.",
+         "Koos je water? Water is nodig voor fotosynthese, maar levert zelf geen energie. De energie komt uit het zonlicht."
+        ],
+        "uh": "Wat vangen planten op?"
+       },
+       {
+        "v": "Hoeveel procent van de energie gaat ongeveer door naar het volgende niveau in een voedselketen?",
+        "o": [
+         "ongeveer 10%",
+         "ongeveer 50%",
+         "ongeveer 90%",
+         "ongeveer 100%"
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 2,
+        "u": "Gemiddeld komt ongeveer 10% van de energie terecht in het volgende niveau.",
+        "uo": [
+         "Klopt: gemiddeld komt maar ongeveer 10% van de energie terecht in de biomassa van het volgende niveau. De rest gaat verloren als warmte of zit in onverteerde resten.",
+         "Koos je 50%? Dat is veel te hoog. Een groot deel van de energie wordt door elk organisme zelf verbruikt voor dissimilatie en verdwijnt als warmte.",
+         "Koos je 90%? Dat is ongeveer het deel dat juist verloren gaat. Er gaat maar een klein deel door naar het volgende niveau.",
+         "Koos je 100%? Dan zou er bij elke stap niets verloren gaan. Elk organisme gebruikt zelf energie om te leven, dus dat kan niet."
+        ],
+        "uh": "Een klein deel."
+       },
+       {
+        "v": "Waar blijft het grootste deel van de energie die een konijn met zijn voedsel opneemt?",
+        "o": [
+         "het wordt omgezet in zonlicht",
+         "het wordt opgeslagen in de botten",
+         "het gaat met de urine naar buiten",
+         "het gaat verloren als warmte"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 2,
+        "u": "Dissimilatie levert ATP voor de stofwisseling; daarbij komt veel warmte vrij.",
+        "uo": [
+         "Koos je zonlicht? Dieren kunnen geen zonlicht maken. Energie gaat de keten in als zonlicht, maar verlaat het ecosysteem als warmte.",
+         "Koos je opslag in botten? Botten bestaan vooral uit kalk en bevatten weinig energie. Opgeslagen energie zit vooral in vet en spieren, maar dat is maar een klein deel.",
+         "Koos je urine? Met de urine gaat wat ureum naar buiten, maar dat is maar een klein deel van de energie. Het meeste verdwijnt als warmte.",
+         "Klopt: een konijn gebruikt veel energie voor bewegen, lichaamstemperatuur en andere processen. Bij die dissimilatie komt de energie uiteindelijk vrij als warmte, die het ecosysteem verlaat."
+        ],
+        "uh": "Het konijn is warm."
+       },
+       {
+        "v": "Hoeveel energie komt er in de vossen terecht?",
+        "o": [
+         "ongeveer 10 kJ",
+         "ongeveer 1000 kJ",
+         "ongeveer 100 kJ",
+         "ongeveer 10 000 kJ"
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 2,
+        "u": "Planten 10 000 kJ → konijnen 1000 kJ → vossen 100 kJ: twee keer 10%.",
+        "uo": [
+         "Koos je 10 kJ? Dan heb je één stap te veel gerekend. Planten → konijnen → vossen zijn twee stappen: 10 000 × 0,1 × 0,1 = 100 kJ.",
+         "Koos je 1000 kJ? Dat is de energie in de konijnen. Er volgt nog een stap naar de vossen, waarbij weer 90% verloren gaat.",
+         "Klopt: van de 10 000 kJ in de planten komt 10% in de konijnen, dus 1000 kJ. Daarvan komt weer 10% in de vossen: 100 kJ.",
+         "Koos je 10 000 kJ? Dat is de energie in de planten. Bij elke stap gaat ongeveer 90% verloren."
+        ],
+        "uh": "Twee keer 10%.",
+        "ctx": "In een weiland leggen de planten in een jaar 10 000 kJ energie vast in hun biomassa. Konijnen eten van de planten, vossen eten de konijnen. Neem aan dat bij elke stap in de voedselketen 10% van de energie terechtkomt in het volgende niveau."
+       },
+       {
+        "v": "Waarom kan een voedselketen meestal niet langer zijn dan vier of vijf schakels?",
+        "o": [
+         "roofdieren eten nooit andere roofdieren",
+         "er blijft te weinig energie over voor nog een niveau",
+         "planten maken maar voor vier soorten voedsel",
+         "reducenten breken de vijfde schakel meteen af"
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 2,
+        "u": "Bij elke stap gaat ongeveer 90% verloren; na een paar stappen is er te weinig energie over.",
+        "uo": [
+         "Koos je roofdieren eten geen roofdieren? Dat doen ze soms wel: een havik kan een wezel vangen. Het probleem is de beschikbare energie, niet de voedselkeuze.",
+         "Klopt: bij elke stap komt maar ongeveer 10% van de energie in het volgende niveau terecht. Na vier of vijf stappen is er zo weinig energie over dat er geen populatie meer van kan leven.",
+         "Koos je voedsel voor vier soorten? Planten worden door honderden soorten gegeten. Het aantal schakels wordt beperkt door energieverlies per stap.",
+         "Koos je reducenten? Reducenten breken alleen dode resten af. Ze bepalen niet hoe lang een voedselketen kan worden."
+        ],
+        "uh": "Wat gebeurt er met de energie per stap?",
+        "ctx": "In de Noordzee is een van de langste voedselketens: algen → roeipootkreeftjes → haring → kabeljauw → zeehond. Een onderzoeker berekent dat de algen jaarlijks 1 000 000 kJ per vierkante kilometer vastleggen. Bij de zeehonden komt daar per vierkante kilometer maar een heel klein deel van aan."
+       },
+       {
+        "v": "Wat laat een piramide van biomassa zien?",
+        "o": [
+         "de massa levende stof per niveau",
+         "het aantal soorten in een ecosysteem",
+         "de leeftijd van de dieren per niveau",
+         "de grootte van één individu per niveau"
         ],
         "c": 0,
         "d": 1,
-        "u": "Een nutriënt is een voedingsstof die planten uit de bodem opnemen.",
+        "s": 3,
+        "u": "Piramide van biomassa: totale massa levend materiaal per voedselniveau.",
         "uo": [
-         "Klopt: een voedingsstof voor planten.",
-         "Dat is een consument, geen nutriënt.",
-         "Warmte is geen nutriënt.",
-         "Dat is een producent."
+         "Klopt: een piramide van biomassa laat per voedselniveau de totale massa van alle organismen zien. Meestal is die onderaan het grootst en wordt hij naar boven toe steeds kleiner.",
+         "Koos je het aantal soorten? Het aantal soorten is de biodiversiteit. Een piramide van biomassa gaat over de massa per niveau.",
+         "Koos je de leeftijd? Over leeftijd zegt een biomassapiramide niets. Hij laat de totale massa per niveau zien.",
+         "Koos je één individu? Het gaat om de massa van alle organismen samen op een niveau, niet om de grootte van één dier."
         ],
-        "uh": "Nutriënt = voedingsstof die planten opnemen."
+        "uh": "Massa per niveau."
        },
        {
-        "v": "Hoe komen nutriënten weer terug in de bodem?",
+        "v": "Waarom kan een piramide van aantallen soms een rare vorm hebben?",
         "o": [
-         "Doordat de zon ze aanmaakt in de lucht",
-         "Doordat reducenten dode resten afbreken",
-         "Doordat producenten ze uitscheiden als afval",
-         "Doordat roofdieren ze rechtstreeks maken"
-        ],
-        "c": 1,
-        "d": 3,
-        "u": "Reducenten breken dode resten af en maken daarbij de nutriënten weer vrij voor de planten.",
-        "uo": [
-         "De zon maakt geen nutriënten.",
-         "Klopt: reducenten maken nutriënten vrij.",
-         "Producenten nemen nutriënten juist op.",
-         "Roofdieren maken geen nutriënten."
-        ],
-        "uh": "Reducenten geven nutriënten terug aan de bodem."
-       },
-       {
-        "v": "Een keten is: gras, konijn, vos. Wat is het konijn?",
-        "o": [
-         "Een producent die zelf voedsel maakt",
-         "Een reducent die dood gras afbreekt",
-         "Een consument die de plant eet",
-         "Een abiotische factor van het gebied"
-        ],
-        "c": 2,
-        "d": 2,
-        "u": "Het konijn eet het gras (de producent), dus het konijn is een consument (herbivoor).",
-        "uo": [
-         "De producent is het gras, niet het konijn.",
-         "Het konijn breekt geen dode resten af.",
-         "Klopt: het konijn eet de plant, dus consument.",
-         "Het konijn is een levend organisme."
-        ],
-        "uh": "Wie een ander organisme eet, is een consument."
-       },
-       {
-        "v": "In dezelfde keten (gras, konijn, vos): wat is het gras?",
-        "o": [
-         "Een consument die dieren eet",
-         "Een reducent die afval afbreekt",
-         "Een roofdier boven in de keten",
-         "De producent"
+         "het aantal dieren verandert nooit",
+         "dieren tellen nooit mee in zo een piramide",
+         "planten hebben altijd de kleinste aantallen",
+         "één groot organisme kan veel kleine voeden"
         ],
         "c": 3,
         "d": 2,
-        "u": "Gras maakt zelf voedsel met fotosynthese en is dus de producent, het begin van de keten.",
+        "s": 3,
+        "u": "Eén eik kan duizenden rupsen voeden: dan is de basis smal.",
         "uo": [
-         "Gras eet geen dieren.",
-         "Gras breekt geen dode resten af.",
-         "Gras is geen roofdier.",
-         "Klopt: gras is de producent."
+         "Koos je verandert nooit? Aantallen veranderen voortdurend. De vorm komt door de grootte van organismen, niet doordat aantallen vast zijn.",
+         "Koos je dieren tellen niet mee? Juist dieren worden geteld per niveau. Het rare beeld komt door het grote verschil in grootte.",
+         "Koos je kleinste aantallen? Planten zijn vaak juist het talrijkst, behalve als het om een paar grote bomen gaat. Daar komt de vreemde vorm vandaan.",
+         "Klopt: één grote eik kan duizenden rupsen voeden. In een piramide van aantallen is de onderste laag dan heel smal en de laag erboven breed. Een piramide van biomassa heeft dat probleem niet."
         ],
-        "uh": "De plant die zelf voedsel maakt = producent."
+        "uh": "Denk aan één eik."
        },
        {
-        "v": "Waarom zijn er in een gebied meestal weinig toppredatoren?",
+        "v": "Waarom leven er in een gebied veel minder vossen dan konijnen?",
         "o": [
-         "Omdat er bovenin de keten weinig energie over is",
-         "Omdat ze te groot zijn om te bewegen",
-         "Omdat ze geen enkel voedsel nodig hebben",
-         "Omdat ze zelf voedsel maken met licht"
+         "vossen leven veel korter dan konijnen in het wild",
+         "vossen krijgen veel minder jongen dan konijnen per jaar",
+         "er is te weinig energie voor veel vossen",
+         "konijnen jagen op de jonge vossen in hun holen"
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 3,
+        "u": "Hoger in de keten is minder energie beschikbaar, dus kunnen er minder individuen leven.",
+        "uo": [
+         "Koos je korter leven? Vossen leven in het wild juist vaak langer dan konijnen. Het lage aantal komt door de beperkte energie.",
+         "Koos je minder jongen? Dat verklaart het niet: als er veel voedsel was, zouden vossen meer jongen grootbrengen. De beperking is de hoeveelheid energie hoger in de keten.",
+         "Klopt: van de energie in de konijnen komt maar ongeveer 10% in de vossen terecht. Met zo weinig energie kan er maar een kleine populatie vossen leven.",
+         "Koos je konijnen die jagen? Konijnen zijn planteneters en jagen niet. Het aantal vossen wordt beperkt door de hoeveelheid voedsel."
+        ],
+        "uh": "Denk aan de 10%."
+       },
+       {
+        "v": "Welke verklaring past bij de vorm van deze piramide van biomassa?",
+        "o": [
+         "dierplankton maakt zelf voedsel met fotosynthese",
+         "algen delen zo snel dat ze steeds worden bijgemaakt",
+         "er gaat bij het eten van algen geen energie verloren",
+         "algen worden niet gegeten en stapelen zich op"
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 3,
+        "u": "Algen hebben op één moment weinig biomassa, maar groeien heel snel aan.",
+        "uo": [
+         "Koos je fotosynthese door dierplankton? Dierplankton bestaat uit kleine dieren die algen eten. Ze kunnen geen fotosynthese doen.",
+         "Klopt: op één moment is er weinig algenmassa, maar algen delen zo snel dat ze voortdurend worden bijgemaakt. Over een jaar gemeten maken ze wel veel meer biomassa dan het dierplankton.",
+         "Koos je geen energieverlies? Ook bij het eten van algen gaat het meeste energie verloren. De vorm komt door de snelle aangroei van algen.",
+         "Koos je opstapelen? Als algen zich zouden opstapelen, zou hun biomassa juist groot zijn. Ze worden juist snel opgegeten en snel bijgemaakt."
+        ],
+        "uh": "Wat doen algen heel snel?",
+        "ctx": "In een meer meet een onderzoeker op één dag in juni de biomassa per kubieke meter water: algen 4 gram, dierplankton (kleine kreeftjes die algen eten) 21 gram. De piramide van biomassa staat daardoor op zijn kop. Algen kunnen zich in een paar uur delen; dierplankton plant zich in een paar weken voort."
+       },
+       {
+        "v": "Welk proces haalt koolstofdioxide uit de lucht?",
+        "o": [
+         "fotosynthese",
+         "dissimilatie",
+         "verbranding van hout",
+         "afbraak door reducenten"
         ],
         "c": 0,
-        "d": 3,
-        "u": "Bovenin de keten is er per stap veel energie verloren gegaan, dus is er voor weinig toppredatoren voedsel.",
-        "uo": [
-         "Klopt: bovenin blijft weinig energie over.",
-         "Hun grootte is niet de reden.",
-         "Ook toppredatoren hebben voedsel nodig.",
-         "Toppredatoren maken geen eigen voedsel."
-        ],
-        "uh": "Weinig energie bovenin = weinig toppredatoren."
-       },
-       {
-        "v": "Welke uitspraak over de energiestroom klopt?",
-        "o": [
-         "Energie neemt bij elke stap juist toe",
-         "Energie gaat verloren als warmte per stap",
-         "Energie blijft in de hele keten gelijk",
-         "Energie stroomt van de eter naar de prooi"
-        ],
-        "c": 1,
-        "d": 2,
-        "u": "Bij elke stap gaat energie verloren als warmte, dus stroomt er steeds minder door.",
-        "uo": [
-         "Energie neemt juist af, niet toe.",
-         "Klopt: per stap gaat energie verloren als warmte.",
-         "Energie blijft niet gelijk, er gaat veel verloren.",
-         "Energie stroomt van prooi naar eter."
-        ],
-        "uh": "Energie neemt af per stap (warmteverlies)."
-       },
-       {
-        "v": "Wat gebeurt er met een voedselweb als een soort verdwijnt?",
-        "o": [
-         "Er verandert helemaal niets in het web",
-         "Alleen de producenten worden geraakt",
-         "Andere soorten kunnen er ook door in de knel komen",
-         "Het hele web verandert direct in woestijn"
-        ],
-        "c": 2,
-        "d": 3,
-        "u": "Soorten in een web hangen samen, dus het verdwijnen van één soort raakt vaak ook andere soorten.",
-        "uo": [
-         "Een web is verbonden, dus er verandert wel iets.",
-         "Niet alleen producenten worden geraakt.",
-         "Klopt: andere soorten kunnen ook geraakt worden.",
-         "Er ontstaat niet meteen woestijn."
-        ],
-        "uh": "In een web hangt alles samen: één soort weg raakt meer soorten."
-       },
-       {
-        "v": "Wat is biomassa?",
-        "o": [
-         "De hoeveelheid warmte in een gebied",
-         "Het aantal abiotische factoren samen",
-         "De snelheid waarmee de wind waait",
-         "De totale massa aan levend materiaal"
-        ],
-        "c": 3,
         "d": 1,
-        "u": "Biomassa is de totale massa aan levend materiaal in een niveau of gebied.",
+        "s": 4,
+        "u": "Fotosynthese legt CO2 vast; dissimilatie, verbranding en afbraak geven CO2 af.",
         "uo": [
-         "Warmte is geen biomassa.",
-         "Abiotische factoren zijn geen biomassa.",
-         "Windsnelheid is geen biomassa.",
-         "Klopt: totale massa aan levend materiaal."
+         "Klopt: bij fotosynthese nemen producenten koolstofdioxide op en leggen de koolstof vast in glucose en andere organische stoffen.",
+         "Koos je dissimilatie? Bij dissimilatie wordt glucose juist afgebroken en komt koolstofdioxide vrij. Dat brengt CO2 terug in de lucht.",
+         "Koos je verbranding? Bij het verbranden van hout komt de vastgelegde koolstof weer vrij als koolstofdioxide.",
+         "Koos je reducenten? Reducenten breken dode resten af en geven daarbij koolstofdioxide af door hun dissimilatie."
         ],
-        "uh": "Biomassa = totale massa levend materiaal."
+        "uh": "Wat doen planten met CO2?"
        },
        {
-        "v": "Waarom staan producenten onderaan de piramide van biomassa?",
+        "v": "Hoe komt koolstof uit een konijn weer in de lucht?",
         "o": [
-         "Omdat ze de meeste biomassa hebben",
-         "Omdat ze de minste biomassa hebben van allemaal",
-         "Omdat ze bovenaan de keten staan",
-         "Omdat ze dode resten afbreken tot nutriënten"
+         "koolstof uit dieren komt nooit terug in de lucht",
+         "door fotosynthese in de vacht van het konijn",
+         "alleen door verbranding van fossiele brandstoffen",
+         "door dissimilatie van het konijn en van reducenten"
         ],
-        "c": 0,
-        "d": 3,
-        "u": "Producenten leveren de basis en hebben de meeste biomassa, dus staan ze onderaan de piramide.",
+        "c": 3,
+        "d": 2,
+        "s": 4,
+        "u": "Dissimilatie (ademhaling) van het dier en van reducenten na de dood geeft CO2 af.",
         "uo": [
-         "Klopt: producenten hebben de meeste biomassa.",
-         "Ze hebben juist de meeste, niet de minste.",
-         "Producenten staan onderaan, niet bovenaan.",
-         "Afbreken doen reducenten, niet producenten."
+         "Koos je nooit terug? Dan zou alle koolstof in dieren opgesloten raken. Door dissimilatie en afbraak komt het steeds weer in de lucht.",
+         "Koos je fotosynthese in de vacht? Dieren doen geen fotosynthese. Fotosynthese neemt bovendien juist CO2 op.",
+         "Koos je alleen fossiele brandstoffen? Fossiele brandstoffen zijn een aparte bron. Koolstof uit levende dieren komt vooral via dissimilatie terug.",
+         "Klopt: het konijn ademt koolstofdioxide uit bij zijn dissimilatie. Als het doodgaat, breken reducenten het lichaam af en ook die geven koolstofdioxide af."
         ],
-        "uh": "Producenten onderaan = de meeste biomassa."
+        "uh": "Ademen en afbreken."
        },
        {
-        "v": "Wat verbindt de kringloop van stoffen en de reducenten?",
+        "v": "Hoe is de koolstof in steenkool terechtgekomen?",
         "o": [
-         "Reducenten nemen alle nutriënten voorgoed op",
-         "Reducenten maken nutriënten weer vrij",
-         "Reducenten maken zelf voedsel met licht",
-         "Reducenten stoppen de kringloop volledig"
-        ],
-        "c": 1,
-        "d": 3,
-        "u": "Reducenten breken dode resten af en geven de nutriënten terug, waardoor de kringloop rond blijft gaan.",
-        "uo": [
-         "Ze houden de stoffen niet voorgoed vast.",
-         "Klopt: reducenten maken nutriënten weer vrij.",
-         "Reducenten maken geen eigen voedsel.",
-         "Ze houden de kringloop juist draaiend."
-        ],
-        "uh": "Reducenten sluiten de kringloop: nutriënten terug."
-       },
-       {
-        "v": "Welke volgorde klopt voor een voedselketen?",
-        "o": [
-         "Reducent, consument, producent",
-         "Consument, producent, reducent",
-         "Producent, consument, reducent",
-         "Reducent, producent, consument"
+         "uit zout dat op de zeebodem bezinkt",
+         "uit vulkanen die CO2 in de bodem spuiten",
+         "uit planten die niet werden afgebroken",
+         "uit regen die koolstof uit de lucht spoelt"
         ],
         "c": 2,
         "d": 2,
-        "u": "Een keten begint bij de producent, dan de consument die eet, en de reducent breekt uiteindelijk de dode resten af.",
+        "s": 4,
+        "u": "Fossiele brandstoffen zijn resten van organismen die niet door reducenten zijn afgebroken.",
         "uo": [
-         "De reducent staat niet vooraan.",
-         "De producent staat vooraan.",
-         "Klopt: producent, consument, reducent.",
-         "De producent staat vooraan, niet de reducent."
+         "Koos je zout op de zeebodem? Zout bevat geen koolstof en vormt geen steenkool. De koolstof komt uit organische stof van planten.",
+         "Koos je vulkanen? Vulkanen stoten CO2 uit naar de lucht, maar maken geen steenkool. Steenkool bestaat uit oude plantenresten.",
+         "Klopt: steenkool is ontstaan uit planten in moerassen van miljoenen jaren geleden. Omdat er weinig zuurstof was, werden ze niet afgebroken; de koolstof bleef opgeslagen in de bodem.",
+         "Koos je regen? Regen spoelt nauwelijks koolstof uit de lucht. De koolstof in steenkool werd door planten met fotosynthese vastgelegd."
         ],
-        "uh": "Producent eerst, dan consument, reducent breekt af."
+        "uh": "Waar bestaat steenkool uit?"
        },
        {
-        "v": "Waarom is een lange voedselketen zeldzamer dan een korte?",
+        "v": "Waarom stijgt het CO2-gehalte van de lucht sinds ongeveer 1850?",
         "o": [
-         "Omdat lange ketens verboden zijn in de natuur",
-         "Omdat producenten geen energie leveren",
-         "Omdat reducenten de keten steeds afkappen",
-         "Omdat er na veel stappen te weinig energie over is"
+         "planten doen steeds sneller aan fotosynthese",
+         "er wordt veel fossiele brandstof verbrand",
+         "de oceanen nemen geen CO2 meer op",
+         "dieren ademen tegenwoordig meer zuurstof in"
         ],
-        "c": 3,
+        "c": 1,
         "d": 3,
-        "u": "Doordat er per stap veel energie verloren gaat, is er na veel stappen te weinig energie voor nog een niveau.",
+        "s": 4,
+        "u": "Fossiele brandstoffen bevatten koolstof die miljoenen jaren opgeslagen was.",
         "uo": [
-         "De natuur verbiedt niets, het gaat om energie.",
-         "Producenten leveren juist de basisenergie.",
-         "Reducenten kappen de keten niet af.",
-         "Klopt: na veel stappen is er te weinig energie."
+         "Koos je snellere fotosynthese? Meer fotosynthese zou juist meer CO2 uit de lucht halen. Dat kan de stijging dus niet verklaren.",
+         "Klopt: steenkool, aardolie en aardgas zijn resten van organismen van miljoenen jaren geleden. Bij verbranding komt die opgeslagen koolstof in korte tijd vrij als CO2, meer dan planten en oceanen kunnen opnemen.",
+         "Koos je oceanen? De oceanen nemen nog steeds veel CO2 op. Ze kunnen alleen niet alles bijhouden wat er door verbranding bijkomt.",
+         "Koos je meer zuurstof inademen? Dieren ademen niet ineens meer dan vroeger. De stijging hangt samen met de start van de industriële revolutie."
         ],
-        "uh": "Energieverlies begrenst de lengte van een keten."
+        "uh": "Wat gebeurt er sinds de industriële revolutie?",
+        "ctx": "Metingen in luchtbellen in ijs op Antarctica laten zien dat het CO2-gehalte van de lucht duizenden jaren ongeveer 280 ppm was. Vanaf ongeveer 1850, het begin van de industriële revolutie met stoommachines en later auto’s, steeg het tot meer dan 420 ppm in 2024."
        },
        {
-        "v": "Een keten is: gras, konijn, vos. Wat is de vos?",
+        "v": "In welke vorm nemen planten stikstof vooral op?",
         "o": [
-         "De consument bovenaan",
-         "De producent die het voedsel maakt met licht",
-         "De reducent die het dode gras afbreekt",
-         "Een abiotische factor van het weiland"
+         "als nitraat uit de bodem",
+         "als stikstofgas uit de lucht",
+         "als eiwit uit de bodem",
+         "als ureum uit het regenwater"
         ],
         "c": 0,
-        "d": 2,
-        "u": "De vos eet het konijn en staat bovenaan deze keten, dus is de vos een consument (carnivoor).",
+        "d": 1,
+        "s": 5,
+        "u": "Planten nemen stikstof op als nitraat (of ammonium) via de wortels.",
         "uo": [
-         "Klopt: de vos eet en staat bovenaan, dus consument.",
-         "De producent is het gras, niet de vos.",
-         "De vos breekt geen dode resten af.",
-         "De vos is een levend organisme."
+         "Klopt: planten nemen stikstof op als nitraat uit het bodemwater. Daarmee maken ze aminozuren en eiwitten.",
+         "Koos je stikstofgas? De lucht bestaat voor 78% uit stikstof, maar gewone planten kunnen dat gas niet gebruiken. Alleen sommige bacteriën kunnen stikstofgas binden.",
+         "Koos je eiwit? Eiwitten zijn te groot om door wortels opgenomen te worden. Reducenten breken ze eerst af tot onder andere ammonium en nitraat.",
+         "Koos je ureum uit regenwater? Regenwater bevat nauwelijks ureum. Planten halen hun stikstof uit nitraat in de bodem."
         ],
-        "uh": "Wie bovenaan eet, is een consument (carnivoor)."
+        "uh": "Een zout in de bodem."
+       },
+       {
+        "v": "Waarom zetten boeren vlinderbloemigen zoals klaver op hun land?",
+        "o": [
+         "klaver maakt de bodem zuurder voor andere gewassen",
+         "klaver haalt zout uit de bodem",
+         "klaver verdrijft alle insecten van het veld",
+         "bacteriën in hun wortels binden stikstof uit de lucht"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 5,
+        "u": "In wortelknolletjes van vlinderbloemigen binden bacteriën stikstofgas.",
+        "uo": [
+         "Koos je zuurder maken? Klaver maakt de bodem niet zuurder voor andere gewassen. Het verrijkt de bodem met stikstofverbindingen.",
+         "Koos je zout weghalen? Klaver haalt geen zout uit de bodem. Het voordeel is dat de bodem er stikstof bij krijgt.",
+         "Koos je insecten verdrijven? Klaver trekt juist insecten aan, zoals bijen. Boeren zaaien het voor de stikstof.",
+         "Klopt: in knolletjes aan de wortels van vlinderbloemigen leven bacteriën die stikstofgas uit de lucht omzetten in stikstofverbindingen. Na het onderploegen komt die stikstof in de bodem."
+        ],
+        "uh": "Denk aan wortelknolletjes."
+       },
+       {
+        "v": "Waarom is het DDT-gehalte in de visarenden het hoogst?",
+        "o": [
+         "DDT wordt in planten afgebroken",
+         "visarenden maken zelf DDT aan",
+         "DDT hoopt op in elke stap van de voedselketen",
+         "visarenden drinken het meeste water"
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 5,
+        "u": "Stoffen die niet worden afgebroken en niet worden uitgescheiden, hopen op in de keten.",
+        "uo": [
+         "Koos je afbraak in planten? Als planten DDT zouden afbreken, zou het niet in de keten terechtkomen. DDT wordt juist nauwelijks afgebroken.",
+         "Koos je zelf aanmaken? DDT is een kunstmatig bestrijdingsmiddel. Dieren kunnen het niet zelf maken; ze krijgen het binnen via hun voedsel.",
+         "Klopt: DDT wordt niet afgebroken en blijft in het vet van organismen. Elk dier eet veel prooien en krijgt zo al hun DDT binnen. Aan het eind van de keten is de concentratie het hoogst.",
+         "Koos je meer water drinken? Het water bevat maar heel weinig DDT. De hoge concentratie komt via het voedsel, niet via drinken."
+        ],
+        "uh": "Wat gebeurt er bij elke stap?",
+        "ctx": "In een meer zit 0,00005 ppm van het bestrijdingsmiddel DDT in het water. Onderzoekers meten: in dierplankton 0,04 ppm, in kleine vissen 0,5 ppm, in grote vissen 2 ppm en in visarenden 25 ppm. DDT lost goed op in vet en wordt bijna niet afgebroken of uitgescheiden."
+       },
+       {
+        "v": "Waarom vonden vogelaars in de jaren zestig steeds minder jonge roofvogels?",
+        "o": [
+         "DDT doodde alle insecten, zodat er geen voedsel meer was",
+         "DDT maakte de eierschalen dun, zodat ze braken",
+         "DDT maakte de roofvogels doof voor hun jongen",
+         "DDT trok meer roofdieren naar de nesten"
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 5,
+        "u": "Ophoping van DDT verstoorde de kalkafzetting in eierschalen.",
+        "uo": [
+         "Koos je geen insecten? Roofvogels zoals slechtvalken eten vooral andere vogels, geen insecten. Het probleem was het DDT in hun eigen lichaam.",
+         "Klopt: roofvogels kregen via hun voedsel veel DDT binnen. DDT verstoorde de kalkhuishouding, waardoor de eierschalen dun werden en braken tijdens het broeden.",
+         "Koos je doof? Daar is geen bewijs voor. Het onderzoek liet dunne, brekende eierschalen zien.",
+         "Koos je meer roofdieren? DDT trekt geen roofdieren aan. De jongen kwamen niet uit omdat de eieren braken."
+        ],
+        "uh": "Wat gebeurde er met de eieren?",
+        "ctx": "In de jaren zestig daalde het aantal slechtvalken en zeearenden in Europa en Noord-Amerika sterk. Onderzoekers vonden in nesten veel gebroken eieren met schalen die tot 20% dunner waren dan normaal. In de vogels zat veel DDT. Na het verbod op DDT herstelden de populaties langzaam."
        }
       ],
       "oe": [
        {
-        "vraag": "Leg uit wat het verschil is tussen een producent, een consument en een reducent.",
-        "antwoord": "Een producent maakt zelf voedsel met fotosynthese, meestal een plant, en staat aan het begin van de keten. Een consument maakt niet zelf voedsel maar eet andere organismen. Een reducent breekt dode resten af en maakt daarbij nutriënten vrij die de planten weer kunnen opnemen."
+        "bron": "Examenstijl",
+        "ctx": "In een sloot leven algen, watervlooien, stekelbaarsjes en reigers. Algen worden gegeten door watervlooien, watervlooien door stekelbaarsjes en stekelbaarsjes door reigers. De algen leggen per jaar 50 000 kJ per vierkante meter vast.",
+        "v": "Teken de voedselketen met pijlen, geef aan wat de producent en de tweede consument is, en bereken hoeveel energie er ongeveer in de reigers terechtkomt.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Algen → watervlooien → stekelbaarsjes → reigers (1p). Producent: algen; tweede consument: stekelbaarsjes (1p). Energie: 50 000 × 0,1 × 0,1 × 0,1 = 50 kJ per m² (1p)."
        },
        {
-        "vraag": "Leg uit waarom er in een voedselketen per stap steeds minder energie beschikbaar is.",
-        "antwoord": "Elk organisme gebruikt energie om te leven, te bewegen en warm te blijven. Die energie gaat als warmte verloren. Daardoor gaat maar ongeveer tien procent van de energie door naar de volgende stap en gaat ongeveer negentig procent verloren. Zo blijft er bovenin de keten steeds minder energie over."
+        "bron": "Examenstijl",
+        "ctx": "In een weiland leggen planten 20 000 kJ per m² per jaar vast. Koeien eten het gras; ongeveer 10% van de energie komt in hun biomassa terecht. Een boer vraagt zich af of het efficiënter is om de mensen in de buurt tarwe te laten eten of vlees van de koeien.",
+        "v": "Leg met het begrip energiestroom uit waarom er met plantaardig voedsel meer mensen gevoed kunnen worden dan met vlees van hetzelfde stuk land.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Bij elke stap in de voedselketen komt maar ongeveer 10% van de energie in het volgende niveau terecht (1p). De rest gaat verloren als warmte door dissimilatie van de koe (1p). Als mensen direct plantaardig voedsel eten, is er een stap minder en is er ongeveer tien keer zoveel energie beschikbaar (1p)."
        },
        {
-        "vraag": "Leg uit wat de pijlen in een voedselketen betekenen.",
-        "antwoord": "De pijl in een voedselketen wijst naar het organisme dat eet, dus van de prooi naar de eter. De pijl laat zien welke kant de energie op stroomt: van het opgegeten organisme naar het organisme dat het opeet."
+        "bron": "Examenstijl",
+        "ctx": "Een onderzoeker legt dode bladeren in netjes op de bosbodem. Netje A heeft fijne mazen (alleen bacteriën en schimmels kunnen erin), netje B grove mazen (ook regenwormen en pissebedden kunnen erin). Na een jaar is in netje B 80% van de bladeren verdwenen, in netje A 30%.",
+        "v": "Leg uit waarom er ook in netje A bladeren verdwijnen, waarom het in netje B sneller gaat, en waarom dit afbreken belangrijk is voor de bomen.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "In netje A breken bacteriën en schimmels (reducenten) de bladeren af (1p). In netje B maken regenwormen en pissebedden de bladeren kleiner, waardoor het oppervlak voor reducenten groter wordt en de afbraak sneller gaat (1p). Bij de afbraak komen mineralen vrij die de bomen weer opnemen (1p)."
        },
        {
-        "vraag": "Leg uit waarom een piramide van biomassa breed is aan de onderkant en smal aan de bovenkant.",
-        "antwoord": "Onderaan staan de producenten; die hebben de meeste biomassa. Omdat er bij elke stap energie verloren gaat, is er hogerop steeds minder energie en dus minder biomassa. Daarom wordt de piramide naar boven toe steeds smaller."
+        "bron": "Examenstijl",
+        "ctx": "Een Nederlands bos legt per hectare per jaar ongeveer 10 ton CO2 vast. Een auto stoot per jaar ongeveer 2 ton CO2 uit. Een gemeente wil bomen planten om de uitstoot van de auto’s van haar inwoners te compenseren.",
+        "v": "Leg met de koolstofkringloop uit hoe bomen CO2 uit de lucht halen, waarom het verbranden van benzine het CO2-gehalte van de lucht verhoogt, en bereken hoeveel hectare bos nodig is voor 1000 auto’s.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Bomen nemen bij fotosynthese CO2 op en leggen de koolstof vast in organische stof zoals hout (1p). Benzine is een fossiele brandstof met koolstof die miljoenen jaren opgeslagen was; bij verbranding komt die extra koolstof als CO2 in de lucht (1p). 1000 × 2 ton = 2000 ton; 2000 / 10 = 200 hectare (1p)."
        },
        {
-        "vraag": "Leg uit welke rol reducenten spelen in de kringloop van stoffen.",
-        "antwoord": "Reducenten, zoals bacteriën en schimmels, breken dode planten en dieren af. Daarbij komen de nutriënten weer vrij in de bodem. Planten nemen die nutriënten op om te groeien. Zo zorgen reducenten dat de stoffen blijven rondgaan in de kringloop."
+        "bron": "Examenstijl",
+        "ctx": "In de Oostzee zit een kleine hoeveelheid van de giftige stof PCB in het water. In zeehonden wordt een concentratie gemeten die ongeveer een miljoen keer zo hoog is. PCB lost op in vet en wordt bijna niet afgebroken. Zeehonden eten vooral grote vissen, die kleine vissen eten, die op hun beurt plankton eten.",
+        "v": "Leg uit hoe de concentratie PCB in de zeehonden zo hoog kan worden.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "PCB wordt nauwelijks afgebroken en niet uitgescheiden, maar blijft opgeslagen in het vet van een organisme (1p). Elk dier eet in zijn leven heel veel prooien en krijgt zo al het PCB van die prooien binnen (1p). Bij elke stap in de keten (plankton → kleine vis → grote vis → zeehond) neemt de concentratie toe; aan het eind is hij het hoogst (1p)."
        }
       ]
      },
