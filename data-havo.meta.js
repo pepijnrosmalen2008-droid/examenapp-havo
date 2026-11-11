@@ -1269,21 +1269,24 @@ var VAKKEN = [
     "leerdoelen": [
      {
       "id": "O1",
+      "lo": "bi.O.1",
+      "gs": 2,
       "naam": "Zenuwstelsel en prikkelgeleiding",
-      "beschrijving": "Neuronen en de impuls, de synaps, de reflexboog, en het verschil tussen regeling door zenuwen en door hormonen.",
-      "ceStatus": "CE",
+      "beschrijving": "Je beschrijft de bouw van een neuron en de soorten neuronen, legt uit hoe een impuls langs een axon en via een synaps wordt doorgegeven, verklaart hoe een reflex verloopt en beschrijft de bouw van het zenuwstelsel met het autonome en animale deel.",
+      "ceStatus": "CE+SE",
+      "binas": "",
+      "val": "",
       "onderwerpen": [
-       "Neuron: dendriet, cellichaam, axon",
-       "Soorten neuronen (sensorisch/motorisch/schakel)",
-       "De impuls en de synaps",
-       "Reflex en reflexboog",
-       "Centraal zenuwstelsel",
-       "Zenuwstelsel versus hormoonstelsel",
-       "Myelineschede en animaal/autonoom zenuwstelsel"
+       "Bouw van een neuron",
+       "Soorten neuronen en de zenuwbaan",
+       "De impuls",
+       "De synaps",
+       "Reflexen",
+       "Bouw van het zenuwstelsel"
       ],
-      "nSv": 28,
+      "nSv": 27,
       "nOe": 5,
-      "nBeg": 14,
+      "nBeg": 16,
       "hasSam": true
      },
      {

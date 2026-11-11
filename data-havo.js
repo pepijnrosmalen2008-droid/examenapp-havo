@@ -51294,661 +51294,691 @@ var VAKKEN = [
     "leerdoelen": [
      {
       "id": "O1",
+      "lo": "bi.O.1",
+      "gs": 2,
       "naam": "Zenuwstelsel en prikkelgeleiding",
-      "beschrijving": "Neuronen en de impuls, de synaps, de reflexboog, en het verschil tussen regeling door zenuwen en door hormonen.",
-      "ceStatus": "CE",
+      "beschrijving": "Je beschrijft de bouw van een neuron en de soorten neuronen, legt uit hoe een impuls langs een axon en via een synaps wordt doorgegeven, verklaart hoe een reflex verloopt en beschrijft de bouw van het zenuwstelsel met het autonome en animale deel.",
+      "ceStatus": "CE+SE",
+      "binas": "",
+      "val": "",
       "onderwerpen": [
-       "Neuron: dendriet, cellichaam, axon",
-       "Soorten neuronen (sensorisch/motorisch/schakel)",
-       "De impuls en de synaps",
-       "Reflex en reflexboog",
-       "Centraal zenuwstelsel",
-       "Zenuwstelsel versus hormoonstelsel",
-       "Myelineschede en animaal/autonoom zenuwstelsel"
+       "Bouw van een neuron",
+       "Soorten neuronen en de zenuwbaan",
+       "De impuls",
+       "De synaps",
+       "Reflexen",
+       "Bouw van het zenuwstelsel"
       ],
-      "sam": "Het zenuwstelsel vangt prikkels op en regelt daar snel reacties op. Een zenuwcel (neuron) geleidt een impuls, een elektrisch signaal, via de dendrieten naar het cellichaam en via het axon weg. Tussen twee neuronen zit een synaps, waar het signaal met neurotransmitters (chemisch) in een richting wordt overgedragen. Een reflex is een snelle, onbewuste reactie via de reflexboog: receptor, sensorisch neuron, schakelcel in het ruggenmerg, motorisch neuron, effector. Het zenuwstelsel werkt snel en kort; het hormoonstelsel juist traag en langdurig.",
+      "sam": "Neuron: dendrieten (naar cellichaam), axon (ervan af), myelineschede = sneller. Sensorisch: zintuig → CZS; schakelneuron in CZS; motorisch: CZS → spier. Impuls elektrisch, alles-of-niets; sterkere prikkel = meer impulsen per seconde. Synaps: neurotransmitter door de spleet naar receptoren, één richting; giffen en medicijnen grijpen hier aan. Reflex via ruggenmerg: snel, onbewust; pijn voel je later. CZS = hersenen + ruggenmerg; autonoom (onbewust): sympathisch = actie, parasympathisch = rust.",
       "begrippen": [
        {
         "t": "Neuron",
-        "d": "Een zenuwcel die impulsen (elektrische signalen) geleidt."
+        "d": "Zenuwcel met dendrieten, een cellichaam en een axon; geeft impulsen door."
        },
        {
         "t": "Dendriet",
-        "d": "Uitloper van een neuron die signalen van andere cellen opvangt."
+        "d": "Korte, vertakte uitloper die impulsen opvangt en naar het cellichaam brengt."
        },
        {
         "t": "Axon",
-        "d": "De lange uitloper die de impuls van het cellichaam wegvoert."
-       },
-       {
-        "t": "Impuls",
-        "d": "Een elektrisch signaal dat langs een zenuwcel loopt."
-       },
-       {
-        "t": "Sensorisch neuron",
-        "d": "Gevoelszenuwcel die prikkels van een zintuig naar het centrale zenuwstelsel geleidt."
-       },
-       {
-        "t": "Motorisch neuron",
-        "d": "Beweegzenuwcel die een signaal naar een spier of klier stuurt."
-       },
-       {
-        "t": "Schakelcel",
-        "d": "Tussenneuron in het centrale zenuwstelsel dat neuronen met elkaar verbindt."
-       },
-       {
-        "t": "Synaps",
-        "d": "De contactplek tussen twee zenuwcellen waar het signaal wordt overgedragen."
-       },
-       {
-        "t": "Neurotransmitter",
-        "d": "Chemische stof die het signaal in de synaps van de ene naar de andere cel overbrengt."
-       },
-       {
-        "t": "Reflex",
-        "d": "Een snelle, onbewuste reactie op een prikkel."
-       },
-       {
-        "t": "Reflexboog",
-        "d": "De route van een reflex: receptor, sensorisch neuron, schakelcel, motorisch neuron, effector."
-       },
-       {
-        "t": "Centraal zenuwstelsel",
-        "d": "De hersenen en het ruggenmerg samen."
+        "d": "Lange uitloper die de impuls van het cellichaam wegvoert naar de volgende cel."
        },
        {
         "t": "Myelineschede",
-        "d": "Isolatielaagje om veel axonen dat de impuls sneller laat gaan."
+        "d": "Isolerende vetlaag om een axon waardoor de impuls sneller gaat."
+       },
+       {
+        "t": "Sensorisch neuron",
+        "d": "Neuron dat impulsen van een zintuig naar het centrale zenuwstelsel brengt."
+       },
+       {
+        "t": "Schakelneuron",
+        "d": "Neuron in het centrale zenuwstelsel dat andere neuronen met elkaar verbindt."
+       },
+       {
+        "t": "Motorisch neuron",
+        "d": "Neuron dat impulsen van het centrale zenuwstelsel naar een spier of klier brengt."
+       },
+       {
+        "t": "Impuls",
+        "d": "Elektrisch signaal dat langs een neuron wordt doorgegeven."
+       },
+       {
+        "t": "Alles-of-niets-principe",
+        "d": "Een impuls ontstaat boven de drempel altijd even sterk, eronder helemaal niet."
+       },
+       {
+        "t": "Synaps",
+        "d": "Overgang tussen een neuron en een volgende cel, waar de impuls chemisch wordt doorgegeven."
+       },
+       {
+        "t": "Neurotransmitter",
+        "d": "Stof die in de synaps vrijkomt en de impuls naar de volgende cel overbrengt."
+       },
+       {
+        "t": "Reflex",
+        "d": "Snelle, automatische reactie op een prikkel, vaak via het ruggenmerg."
+       },
+       {
+        "t": "Reflexboog",
+        "d": "De route van een reflex: receptor, sensorisch neuron, schakelneuron, motorisch neuron, spier."
+       },
+       {
+        "t": "Centraal zenuwstelsel",
+        "d": "De hersenen en het ruggenmerg."
        },
        {
         "t": "Autonoom zenuwstelsel",
-        "d": "Deel van het zenuwstelsel dat onbewuste processen regelt, zoals hartslag en spijsvertering."
+        "d": "Deel van het zenuwstelsel dat onbewuste processen regelt, zoals hartslag en vertering."
+       },
+       {
+        "t": "Sympathisch zenuwstelsel",
+        "d": "Deel van het autonome zenuwstelsel dat het lichaam klaarmaakt voor actie."
        }
       ],
       "sv": [
        {
-        "v": "Wat is de belangrijkste functie van het zenuwstelsel?",
+        "v": "Welk deel van een neuron geleidt de impuls van het cellichaam af?",
         "o": [
-         "Prikkels opvangen en snel reacties regelen",
-         "Voedsel verteren tot bouwstoffen",
-         "Het bloed door het lichaam pompen",
-         "Zuurstof uit de lucht opnemen en over het lichaam verdelen"
-        ],
-        "c": 0,
-        "d": 1,
-        "u": "Het zenuwstelsel vangt prikkels op en regelt daar snel reacties op. Onthoud: het zenuwstelsel is het snelle regelsysteem van het lichaam.",
-        "uo": [
-         "Klopt: het zenuwstelsel vangt prikkels op en regelt snel de reactie.",
-         "Verteren is de taak van het spijsverteringsstelsel, niet het zenuwstelsel.",
-         "Bloed rondpompen doet het hart, niet het zenuwstelsel.",
-         "Zuurstof opnemen doen de longen, niet het zenuwstelsel."
-        ],
-        "uh": "Zenuwstelsel = prikkels opvangen en snel reageren."
-       },
-       {
-        "v": "Hoe heet een zenuwcel met een ander woord?",
-        "o": [
-         "Een synaps",
-         "Een reflex",
-         "Een neuron",
-         "Een receptor"
+         "de synaps",
+         "de dendriet",
+         "het axon",
+         "de myelineschede"
         ],
         "c": 2,
         "d": 1,
-        "u": "Een zenuwcel heet ook wel een neuron. Onthoud: neuron = zenuwcel.",
+        "s": 0,
+        "u": "Dendrieten voeren impulsen naar het cellichaam, het axon voert ze ervan af.",
         "uo": [
-         "Een synaps is de contactplek tussen zenuwcellen, niet de cel zelf.",
-         "Een reflex is een snelle reactie, geen cel.",
-         "Klopt: een zenuwcel heet ook wel een neuron.",
-         "Een receptor vangt prikkels op; dat is niet hetzelfde als de zenuwcel."
+         "Koos je de synaps? Dat is de overgang tussen twee cellen aan het eind van het axon. Het transport ernaartoe gebeurt door het axon zelf.",
+         "Koos je de dendriet? Dendrieten vangen impulsen op en brengen ze naar het cellichaam toe, niet ervan af.",
+         "Klopt: het axon is de lange uitloper die de impuls van het cellichaam naar de volgende cel brengt. Aan het eind zitten de synapsen.",
+         "Koos je de myelineschede? Die ligt als een isolerende laag om het axon heen en versnelt de geleiding, maar geleidt zelf niet."
         ],
-        "uh": "Neuron = zenuwcel."
+        "uh": "Lange uitloper naar buiten."
        },
        {
-        "v": "Welk deel van een neuron voert de impuls van het cellichaam weg?",
+        "v": "Wat is de functie van de myelineschede om een axon?",
         "o": [
-         "De dendriet",
-         "Het axon (de uitloper)",
-         "De celkern",
-         "De synaps tussen twee zenuwcellen"
+         "ze maakt de neurotransmitter die aan het eind in de synaps wordt afgegeven",
+         "ze isoleert het axon, waardoor de impuls sneller gaat",
+         "ze vangt prikkels op uit de omgeving",
+         "ze levert energie aan het cellichaam"
         ],
         "c": 1,
-        "d": 1,
-        "u": "Het axon voert de impuls van het cellichaam weg naar de volgende cel. Onthoud: dendriet ontvangt, axon verstuurt.",
+        "d": 2,
+        "s": 0,
+        "u": "Myeline isoleert: de impuls springt van insnoering naar insnoering en gaat veel sneller.",
         "uo": [
-         "De dendriet vangt juist signalen op, hij voert ze niet weg.",
-         "Klopt: het axon voert de impuls van het cellichaam weg.",
-         "De celkern stuurt de cel aan, maar geleidt de impuls niet.",
-         "De synaps is de contactplek, geen deel dat de impuls wegvoert."
+         "Koos je neurotransmitter maken? Neurotransmitters worden in het neuron gemaakt en in de synaps afgegeven. De myelineschede ligt om het axon en isoleert.",
+         "Klopt: de myelineschede isoleert het axon. De impuls springt daardoor van insnoering naar insnoering en gaat tot wel 100 m/s.",
+         "Koos je prikkels opvangen? Dat doen zintuigcellen en de uiteinden van sensorische neuronen. De myelineschede ontvangt geen prikkels.",
+         "Koos je energie leveren? Energie komt uit de mitochondriën in het neuron zelf. De myelineschede is een vetachtige isolatielaag."
         ],
-        "uh": "Axon voert de impuls weg; dendriet vangt op."
+        "uh": "Denk aan het plastic om een elektriciteitsdraad."
        },
        {
-        "v": "Wat is een impuls in een zenuwcel?",
+        "v": "Hoe verklaar je de klachten van mensen met multiple sclerose (MS)?",
         "o": [
-         "Een hormoon in het bloed",
-         "Een samentrekking van een spier",
-         "Een verteringssap dat voedsel afbreekt in de darm",
-         "Een elektrisch signaal langs de zenuwcel"
-        ],
-        "c": 3,
-        "d": 1,
-        "u": "Een impuls is een elektrisch signaal dat langs de zenuwcel loopt. Onthoud: de impuls is elektrisch langs de zenuw, chemisch in de synaps.",
-        "uo": [
-         "Een hormoon gaat via het bloed; de impuls loopt juist langs de zenuwcel.",
-         "Een spiersamentrekking is het gevolg, niet de impuls zelf.",
-         "Een verteringssap hoort bij de spijsvertering, niet bij de zenuw.",
-         "Klopt: een impuls is een elektrisch signaal langs de zenuwcel."
-        ],
-        "uh": "Impuls = elektrisch signaal langs de zenuwcel."
-       },
-       {
-        "v": "Welk type neuron geleidt prikkels van een zintuig naar het centrale zenuwstelsel?",
-        "o": [
-         "Het sensorische (gevoels)neuron",
-         "Het motorische (beweeg)neuron",
-         "De schakelcel",
-         "De spiercel die de beweging uiteindelijk uitvoert"
+         "zonder myeline gaan impulsen trager of komen ze niet aan",
+         "zonder myeline maken de spieren geen ATP meer",
+         "zonder myeline ontstaan er in de synapsen veel te veel neurotransmitters",
+         "zonder myeline groeien de neuronen niet meer"
         ],
         "c": 0,
-        "d": 2,
-        "u": "Het sensorische neuron geleidt prikkels van een zintuig naar binnen. Onthoud: sensorisch = van het zintuig naar het centrale zenuwstelsel.",
+        "d": 3,
+        "s": 0,
+        "u": "Bij MS gaat myeline kapot; impulsen gaan dan trager of lekken weg.",
         "uo": [
-         "Klopt: het sensorische neuron voert prikkels van een zintuig naar binnen.",
-         "Het motorische neuron stuurt juist een signaal naar een spier of klier.",
-         "De schakelcel verbindt neuronen in het centrale zenuwstelsel.",
-         "Een spiercel voert de reactie uit, hij geleidt de prikkel niet."
+         "Klopt: zonder myelineschede is het axon niet meer goed geïsoleerd. De impuls gaat veel trager of dooft uit, waardoor spieren slecht worden aangestuurd.",
+         "Koos je ATP in de spieren? De spieren zelf zijn gezond en kunnen nog ATP maken. Ze krijgen alleen geen goede impulsen meer binnen.",
+         "Koos je te veel neurotransmitters? Myeline heeft niets te maken met de hoeveelheid neurotransmitter in de synaps. Het gaat om de geleiding in het axon.",
+         "Koos je groei? Volwassen neuronen groeien sowieso nauwelijks. De klachten komen doordat de impulsen trager of niet aankomen."
         ],
-        "uh": "Sensorisch neuron = van zintuig naar binnen."
+        "uh": "Wat doet myeline voor de snelheid?",
+        "ctx": "Bij de ziekte multiple sclerose (MS) breekt het eigen afweersysteem op plekken in de hersenen en het ruggenmerg de myelineschede om axonen af. Patiënten krijgen klachten als wazig zien, tintelingen, spierzwakte en problemen met lopen. De spieren en de zintuigen zelf zijn gezond."
        },
        {
-        "v": "Welk type neuron stuurt een signaal naar een spier of klier?",
+        "v": "Welke vezel geleidt de impuls het snelst?",
         "o": [
-         "Het sensorische neuron",
-         "Het motorische (beweeg)neuron",
-         "De receptor die de prikkel als eerste opvangt",
-         "De dendriet"
-        ],
-        "c": 1,
-        "d": 2,
-        "u": "Het motorische neuron stuurt het signaal naar een spier of klier (de effector). Onthoud: motorisch = naar de spier toe.",
-        "uo": [
-         "Het sensorische neuron voert juist prikkels naar binnen.",
-         "Klopt: het motorische neuron stuurt het signaal naar een spier of klier.",
-         "Een receptor vangt prikkels op, hij stuurt geen signaal naar een spier.",
-         "De dendriet is een deel van een neuron, geen type dat naar spieren stuurt."
-        ],
-        "uh": "Motorisch neuron = naar de spier of klier toe."
-       },
-       {
-        "v": "Wat is een synaps?",
-        "o": [
-         "Een spier die samentrekt",
-         "Het cellichaam van een neuron",
-         "De contactplek tussen twee zenuwcellen",
-         "Een bot in het skelet dat het lichaam stevigheid geeft"
-        ],
-        "c": 2,
-        "d": 1,
-        "u": "Een synaps is de contactplek tussen twee zenuwcellen. Onthoud: in de synaps wordt het signaal chemisch overgedragen.",
-        "uo": [
-         "Een spier is een effector, geen synaps.",
-         "Het cellichaam is een deel van het neuron, niet de contactplek.",
-         "Klopt: de synaps is de contactplek tussen twee zenuwcellen.",
-         "Een bot hoort bij het skelet, niet bij de zenuwoverdracht."
-        ],
-        "uh": "Synaps = contactplek tussen twee zenuwcellen."
-       },
-       {
-        "v": "Hoe wordt het signaal in de synaps naar de volgende cel overgebracht?",
-        "o": [
-         "Via een elektrische vonk die overspringt",
-         "Via het bloed",
-         "Via een bot dat het signaal doorgeeft aan de spier",
-         "Via chemische stoffen (neurotransmitters)"
-        ],
-        "c": 3,
-        "d": 2,
-        "u": "In de synaps gaat het signaal chemisch: met neurotransmitters. Onthoud: langs de zenuw elektrisch, in de synaps chemisch.",
-        "uo": [
-         "Er springt geen vonk over; de overdracht is juist chemisch.",
-         "Het bloed speelt hier geen rol; dat hoort bij hormonen.",
-         "Een bot heeft niets met signaaloverdracht te maken.",
-         "Klopt: neurotransmitters brengen het signaal chemisch over."
-        ],
-        "uh": "In de synaps: chemische overdracht via neurotransmitters."
-       },
-       {
-        "v": "Waarom gaat een signaal in een synaps maar één kant op?",
-        "o": [
-         "De neurotransmitters komen uit één cel en passen op de andere",
-         "Zenuwcellen zijn met bloedvaten verbonden",
-         "Beide cellen sturen altijd tegelijk",
-         "De impuls is te zwak om tegelijk beide kanten op te gaan door de synaps"
-        ],
-        "c": 0,
-        "d": 2,
-        "u": "Alleen de zendende cel geeft neurotransmitters af, en alleen de ontvangende cel heeft de bijbehorende plekken. Daardoor loopt het signaal in een richting. Onthoud: zender geeft af, ontvanger vangt op.",
-        "uo": [
-         "Klopt: de zender geeft neurotransmitters af en de ontvanger vangt ze op, dus een richting.",
-         "Zenuwcellen dragen het signaal over via de synaps, niet via bloedvaten.",
-         "De cellen sturen niet tegelijk; er is een duidelijke zender en ontvanger.",
-         "De sterkte van de impuls bepaalt de richting niet."
-        ],
-        "uh": "Zender geeft neurotransmitters af, ontvanger vangt op: een richting."
-       },
-       {
-        "v": "Wat is een reflex?",
-        "o": [
-         "Een langzame, bewuste beweging",
-         "Een snelle, onbewuste reactie",
-         "Het verteren van voedsel",
-         "Het aanmaken van een hormoon"
-        ],
-        "c": 1,
-        "d": 1,
-        "u": "Een reflex is een snelle, onbewuste reactie op een prikkel. Onthoud: een reflex gaat automatisch, zonder nadenken.",
-        "uo": [
-         "Een reflex is juist snel en onbewust, niet langzaam en bewust.",
-         "Klopt: een reflex is een snelle, onbewuste reactie.",
-         "Verteren is een proces in de darmen, geen reflex.",
-         "Een hormoon aanmaken is geen reflex."
-        ],
-        "uh": "Reflex = snelle, onbewuste reactie."
-       },
-       {
-        "v": "Waarom trek je je hand al terug voordat je de pijn bewust voelt?",
-        "o": [
-         "De hersenen reageren juist extra snel",
-         "Pijn bestaat niet echt en wordt alleen door de hersenen verzonnen",
-         "De spier beweegt helemaal uit zichzelf",
-         "De reflex loopt via het ruggenmerg, buiten de hersenen om"
+         "alle vezels geleiden even snel",
+         "een dunne vezel zonder myelineschede",
+         "een dikke vezel zonder myelineschede",
+         "een dikke vezel met myelineschede"
         ],
         "c": 3,
         "d": 3,
-        "u": "Bij een reflex loopt het signaal via het ruggenmerg direct naar de spier, buiten de hersenen om. Daardoor reageer je voordat je de pijn bewust voelt. Onthoud: een reflex gaat via het ruggenmerg, sneller dan de bewuste route via de hersenen.",
+        "s": 0,
+        "u": "Myeline en een grotere dikte verhogen allebei de geleidingssnelheid.",
         "uo": [
-         "Bij een reflex gaan de hersenen er juist niet aan te pas; dat maakt het sneller.",
-         "Pijn is een echte prikkel; daar gaat de vraag niet over.",
-         "De spier beweegt niet uit zichzelf; er komt een signaal via het motorische neuron.",
-         "Klopt: de reflex loopt via het ruggenmerg, buiten de hersenen om, en is daardoor sneller."
+         "Koos je even snel? De tabel laat grote verschillen zien, van ongeveer 1 tot 100 m/s.",
+         "Koos je dun zonder myeline? Dat is juist de langzaamste vezel, zoals die voor doffe pijn: ongeveer 1 m/s.",
+         "Koos je dik zonder myeline? Dikte helpt, maar zonder myeline moet de impuls het hele axon langs. Met myeline gaat het veel sneller.",
+         "Klopt: myeline laat de impuls van insnoering naar insnoering springen, en een dikkere vezel geleidt ook sneller. Samen geeft dat de hoogste snelheid."
         ],
-        "uh": "Reflex loopt via het ruggenmerg, sneller dan via de hersenen."
+        "uh": "Twee factoren samen.",
+        "ctx": "In een tabel staan vier zenuwvezels van een mens met hun dikte, wel of geen myelineschede en hun geleidingssnelheid. De snelheden lopen uiteen van ongeveer 1 m/s (pijnvezels die een doffe, zeurende pijn melden) tot ongeveer 100 m/s (vezels die de skeletspieren aansturen)."
        },
        {
-        "v": "Wat is de juiste volgorde van de reflexboog?",
+        "v": "Welk deel van een neuron vangt impulsen van andere cellen op?",
         "o": [
-         "Effector, sensorisch neuron, receptor",
-         "De hersenen, de spier en het zintuig sturen elk om de beurt een signaal terug",
-         "Receptor, sensorisch neuron, schakelcel, motorisch neuron, effector",
-         "Spier, bot, gewricht, zenuw, hersenen"
+         "de myelineschede",
+         "het axon",
+         "de dendrieten",
+         "de synapsspleet"
         ],
         "c": 2,
-        "d": 2,
-        "u": "De reflexboog gaat van receptor via sensorisch neuron en schakelcel naar motorisch neuron en effector. Onthoud: van waarnemen (receptor) naar uitvoeren (effector).",
+        "d": 1,
+        "s": 0,
+        "u": "Dendrieten ontvangen impulsen en geven ze door aan het cellichaam.",
         "uo": [
-         "Dit is de omgekeerde volgorde; de reflexboog begint bij de receptor.",
-         "De hersenen doen bij een reflex juist niet mee.",
-         "Klopt: receptor, sensorisch neuron, schakelcel, motorisch neuron, effector.",
-         "Dit is geen reflexboog; het beschrijft botten en gewrichten."
+         "Koos je de myelineschede? Die ontvangt niets; ze isoleert het axon zodat de impuls sneller gaat.",
+         "Koos je het axon? Het axon voert de impuls juist weg van het cellichaam, naar de volgende cel. Ontvangen gebeurt door de dendrieten.",
+         "Klopt: dendrieten zijn korte, vertakte uitlopers die impulsen van andere cellen of zintuigcellen ontvangen en naar het cellichaam brengen.",
+         "Koos je de synapsspleet? Dat is de ruimte tussen twee cellen. De neurotransmitter gaat erdoorheen naar de dendrieten van de volgende cel."
         ],
-        "uh": "Reflexboog: receptor -> sensorisch -> schakelcel -> motorisch -> effector."
+        "uh": "Korte, vertakte uitlopers."
+       },
+       {
+        "v": "Welk neuron brengt een impuls van een zintuig naar het centrale zenuwstelsel?",
+        "o": [
+         "een motorisch neuron",
+         "een sensorisch neuron",
+         "een schakelneuron",
+         "een spiervezel"
+        ],
+        "c": 1,
+        "d": 1,
+        "s": 1,
+        "u": "Sensorisch = van zintuig naar CZS; motorisch = van CZS naar spier of klier.",
+        "uo": [
+         "Koos je motorisch? Een motorisch neuron gaat de andere kant op: van het centrale zenuwstelsel naar een spier of klier.",
+         "Klopt: een sensorisch (gevoels)neuron brengt impulsen van een zintuig naar het ruggenmerg of de hersenen.",
+         "Koos je schakelneuron? Schakelneuronen liggen binnen het centrale zenuwstelsel en verbinden neuronen met elkaar.",
+         "Koos je spiervezel? Een spiervezel is geen neuron. Hij reageert op impulsen, maar brengt geen informatie van een zintuig weg."
+        ],
+        "uh": "Van zintuig naar binnen."
+       },
+       {
+        "v": "Waar liggen de schakelneuronen?",
+        "o": [
+         "in de hersenen en het ruggenmerg",
+         "in de zintuigen, vlak bij de zintuigcellen",
+         "in de spieren, tussen de spiervezels",
+         "in de huid, naast de pijnreceptoren"
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 1,
+        "u": "Schakelneuronen liggen in het centrale zenuwstelsel.",
+        "uo": [
+         "Klopt: schakelneuronen liggen in het centrale zenuwstelsel, de hersenen en het ruggenmerg. Ze verbinden sensorische en motorische neuronen.",
+         "Koos je de zintuigen? Daar beginnen de sensorische neuronen. De verwerking gebeurt pas in het centrale zenuwstelsel.",
+         "Koos je de spieren? Daar eindigen de motorische neuronen. Schakelneuronen zitten tussen de sensorische en motorische neuronen, in het CZS.",
+         "Koos je de huid? In de huid liggen receptoren en uiteinden van sensorische neuronen, maar geen schakelneuronen."
+        ],
+        "uh": "Centrale verwerking."
+       },
+       {
+        "v": "In welke volgorde loopt de impuls als je je hand terugtrekt van een hete pan?",
+        "o": [
+         "zintuig → schakelneuron → spier → motorisch neuron → sensorisch neuron",
+         "zintuig → motorisch neuron → schakelneuron → sensorisch neuron → spier",
+         "spier → motorisch neuron → schakelneuron → sensorisch neuron → zintuig",
+         "zintuig → sensorisch neuron → schakelneuron → motorisch neuron → spier"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 1,
+        "u": "Prikkel → zintuig → sensorisch → schakel → motorisch → effector.",
+        "uo": [
+         "Koos je de spier in het midden? De spier is de effector en komt pas helemaal aan het eind, na het motorische neuron.",
+         "Koos je eerst motorisch? Een motorisch neuron eindigt bij een spier. Na het zintuig komt eerst het sensorische neuron.",
+         "Koos je beginnen bij de spier? De impuls begint bij het zintuig, waar de prikkel binnenkomt. De spier is het eindpunt.",
+         "Klopt: het zintuig vangt de prikkel op, het sensorische neuron brengt de impuls naar het ruggenmerg, een schakelneuron geeft hem door aan het motorische neuron, en dat stuurt de spier aan."
+        ],
+        "uh": "Van zintuig naar spier."
+       },
+       {
+        "v": "Welk neuron is bij deze patiënt waarschijnlijk beschadigd?",
+        "o": [
+         "een schakelneuron in de hersenen",
+         "het sensorische neuron uit de voet",
+         "het motorische neuron naar de beenspier",
+         "de zintuigcellen in de huid van de voet"
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 1,
+        "u": "Wel voelen maar niet bewegen: het motorische deel is uitgevallen.",
+        "uo": [
+         "Koos je een schakelneuron in de hersenen? Dan zou de reflex via het ruggenmerg nog werken. Ook de reflex valt uit, dus het probleem zit verder naar de spier.",
+         "Koos je het sensorische neuron? Dan zou hij de prik niet voelen. Hij voelt hem wel, dus de route naar de hersenen werkt.",
+         "Klopt: hij voelt de prik, dus zintuig, sensorisch neuron en hersenen werken. Hij kan het been niet bewegen, ook niet als reflex: het motorische neuron naar de spier is uitgevallen.",
+         "Koos je de zintuigcellen? Dan zou hij de prik niet voelen. Hij voelt hem wel; alleen de beweging blijft uit."
+        ],
+        "uh": "Wat werkt nog wel, wat niet?",
+        "ctx": "Na een ongeluk voelt een patiënt een prik met een naald in zijn rechtervoet wel. Toch kan hij zijn rechterbeen niet bewegen, ook niet als de arts met een hamertje op de pees onder de knie tikt. Zijn beenspieren zelf zijn niet beschadigd."
+       },
+       {
+        "v": "Welk soort neuron stuurt een skeletspier aan?",
+        "o": [
+         "een sensorisch neuron",
+         "een motorisch neuron",
+         "een schakelneuron in de huid",
+         "een zintuigcel in de spier"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 1,
+        "u": "Motorische neuronen lopen van het centrale zenuwstelsel naar spieren en klieren.",
+        "uo": [
+         "Koos je een sensorisch neuron? Dat brengt informatie van een zintuig naar het centrale zenuwstelsel, de andere richting.",
+         "Klopt: een motorisch neuron brengt de impuls van het ruggenmerg of de hersenen naar een spier, die daardoor samentrekt.",
+         "Koos je een schakelneuron in de huid? Schakelneuronen liggen alleen in het centrale zenuwstelsel en sturen zelf geen spier aan.",
+         "Koos je een zintuigcel? Een zintuigcel vangt prikkels op, bijvoorbeeld rek in een spier. Aansturen doet een motorisch neuron."
+        ],
+        "uh": "Van het CZS naar de spier."
+       },
+       {
+        "v": "Hoe wordt informatie langs een axon doorgegeven?",
+        "o": [
+         "als een elektrische impuls",
+         "als een hormoon in het bloed",
+         "als een stroom van water door het axon",
+         "als een geluidsgolf door het weefsel"
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 2,
+        "u": "Langs een neuron gaat informatie als elektrische impuls; tussen neuronen chemisch.",
+        "uo": [
+         "Klopt: langs het axon loopt een elektrische impuls, een kortdurende verandering in de spanning over het membraan.",
+         "Koos je een hormoon? Hormonen gaan via het bloed en werken trager. In een axon gaat de informatie elektrisch.",
+         "Koos je een stroom water? Er stroomt geen water door het axon. De impuls is een verandering in elektrische spanning.",
+         "Koos je een geluidsgolf? Geluid speelt hierbij geen rol. Het gaat om een elektrische verandering over het membraan."
+        ],
+        "uh": "Elektrisch."
+       },
+       {
+        "v": "Wat betekent het alles-of-niets-principe van een impuls?",
+        "o": [
+         "een impuls gaat alleen naar alle spieren tegelijk",
+         "een sterke prikkel geeft een grotere en hogere impuls dan een zwakke prikkel",
+         "alle neuronen geven tegelijk een impuls of geen enkele",
+         "een impuls ontstaat volledig of helemaal niet, altijd even sterk"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 2,
+        "u": "Boven de drempel ontstaat altijd een even grote impuls; daaronder geen.",
+        "uo": [
+         "Koos je alle spieren tegelijk? Een impuls gaat langs één neuron naar zijn eigen doelcellen, niet naar alle spieren.",
+         "Koos je een grotere impuls? Een sterkere prikkel geeft niet een grotere impuls, maar meer impulsen per seconde.",
+         "Koos je alle neuronen tegelijk? Het principe gaat over één neuron. Elk neuron reageert los van de andere.",
+         "Klopt: is een prikkel sterk genoeg (boven de drempel), dan ontstaat een impuls van steeds dezelfde grootte. Is hij te zwak, dan ontstaat er niets."
+        ],
+        "uh": "Drempel: wel of niet."
+       },
+       {
+        "v": "Hoe merk je via je zenuwen het verschil tussen een lichte en een harde druk?",
+        "o": [
+         "bij harde druk gaan de impulsen langzamer",
+         "bij harde druk zijn de impulsen groter",
+         "bij harde druk ontstaan er meer impulsen per seconde",
+         "bij harde druk gaat de impuls via een ander axon terug"
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 2,
+        "u": "De sterkte van een prikkel wordt doorgegeven als de frequentie van de impulsen.",
+        "uo": [
+         "Koos je langzamere impulsen? De snelheid hangt af van de vezel (dikte, myeline), niet van de sterkte van de prikkel.",
+         "Koos je grotere impulsen? Door het alles-of-niets-principe is elke impuls even groot. Het verschil zit in het aantal per seconde.",
+         "Klopt: elke impuls is even groot, maar bij een sterkere prikkel ontstaan er meer per seconde. De hersenen lezen de sterkte af aan die frequentie.",
+         "Koos je een ander axon terug? De informatie gaat één kant op, naar de hersenen. Het verschil zit in de frequentie, niet in de route."
+        ],
+        "uh": "Alle impulsen zijn even groot.",
+        "ctx": "Een onderzoeker meet met een elektrode de impulsen in één sensorisch neuron uit de vingertop. Bij een lichte aanraking ziet hij af en toe een piek, bij harde druk een snelle reeks pieken. Alle pieken zijn even hoog. Onder een bepaalde druk ziet hij helemaal geen pieken."
+       },
+       {
+        "v": "Hoe lang duurt het ongeveer voordat de impuls de hersenen bereikt?",
+        "o": [
+         "0,2 s",
+         "0,02 s",
+         "2 s",
+         "20 s"
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 2,
+        "u": "Tijd = afstand / snelheid = 1,6 m / 80 m/s = 0,02 s.",
+        "uo": [
+         "Koos je 0,2 s? Dan heb je met 8 m/s gerekend in plaats van 80 m/s. 1,6 / 80 = 0,02 s.",
+         "Klopt: t = s / v = 1,6 / 80 = 0,02 s. Impulsen langs dikke vezels met myeline zijn dus heel snel.",
+         "Koos je 2 s? Dan heb je met 0,8 m/s gerekend: zo langzaam zijn alleen dunne vezels zonder myeline.",
+         "Koos je 20 s? Dat is veel te langzaam. Dan zou je pas na een tijd merken dat je je teen stoot."
+        ],
+        "uh": "Afstand gedeeld door snelheid.",
+        "ctx": "Je stoot je grote teen. Een sensorisch neuron met een myelineschede brengt de impuls naar je hersenen. De afstand van je teen tot je hersenen is 1,6 m en de geleidingssnelheid van deze vezel is 80 m/s."
+       },
+       {
+        "v": "Hoe gaat een impuls over een synaps naar de volgende cel?",
+        "o": [
+         "via een neurotransmitter die door de synapsspleet diffundeert",
+         "via een elektrische draad die de twee cellen verbindt",
+         "via het bloed, dat de impuls meeneemt naar de volgende cel in de keten",
+         "doordat het axon direct met de dendriet vergroeid is"
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 3,
+        "u": "In de synaps wordt de impuls chemisch doorgegeven door een neurotransmitter.",
+        "uo": [
+         "Klopt: aan het eind van het axon komt een neurotransmitter vrij. Die diffundeert door de synapsspleet en bindt aan receptoren van de volgende cel.",
+         "Koos je een elektrische draad? Tussen de cellen zit een kleine spleet; er is geen directe verbinding. De overdracht is chemisch.",
+         "Koos je het bloed? Signalen via het bloed zijn hormonen. In een synaps gaat de neurotransmitter alleen door de smalle spleet.",
+         "Koos je vergroeid? Er zit juist een synapsspleet tussen. Daardoor is een stof nodig om het signaal over te brengen."
+        ],
+        "uh": "Chemische overdracht."
+       },
+       {
+        "v": "Waarom gaat een impuls in een synaps maar één kant op?",
+        "o": [
+         "de neurotransmitter wordt meteen in de dendriet gemaakt",
+         "de synapsspleet is aan de kant van het axon veel breder dan aan de kant van de volgende cel",
+         "de impuls wordt door de myeline maar één kant op geduwd",
+         "alleen het axon geeft neurotransmitter af, en alleen de volgende cel heeft receptoren"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 3,
+        "u": "Neurotransmitter komt alleen vrij uit het axonuiteinde; receptoren zitten aan de andere kant.",
+        "uo": [
+         "Koos je gemaakt in de dendriet? De neurotransmitter wordt gemaakt in het neuron dat hem afgeeft en opgeslagen in het axonuiteinde.",
+         "Koos je een bredere spleet? De spleet is overal even smal. Het gaat erom waar de neurotransmitter zit en waar de receptoren zitten.",
+         "Koos je myeline? Myeline ligt om het axon, niet in de synaps. Het speelt geen rol bij de richting in de synaps.",
+         "Klopt: alleen het uiteinde van het axon bevat blaasjes met neurotransmitter, en alleen de volgende cel heeft er receptoren voor. Daarom gaat het signaal één kant op."
+        ],
+        "uh": "Waar zitten de blaasjes, waar de receptoren?"
+       },
+       {
+        "v": "Waarom krijgt iemand na een beet van een zwarte weduwe spierkrampen?",
+        "o": [
+         "het gif breekt de myelineschede af, waardoor impulsen niet aankomen",
+         "de receptoren op de spier zijn geblokkeerd, dus de spier kan niet meer samentrekken",
+         "er komt te veel neurotransmitter vrij, dus de spieren krijgen steeds impulsen",
+         "het gif maakt de spieren zelf kapot, los van de zenuwen"
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 3,
+        "u": "Veel acetylcholine in de synaps: de spier wordt voortdurend geprikkeld.",
+        "uo": [
+         "Koos je afbraak van myeline? Dan zouden impulsen juist slechter aankomen, met zwakte in plaats van kramp.",
+         "Koos je geblokkeerde receptoren? Dat zou juist verlamming geven, geen kramp. Zo werkt bijvoorbeeld curare.",
+         "Klopt: het gif laat alle blaasjes in één keer leeglopen. Er zit dan veel acetylcholine in de synapsspleet, waardoor de spier steeds weer samentrekt: kramp.",
+         "Koos je kapotte spieren? Het gif werkt in de synaps tussen zenuw en spier. De spier zelf is gezond, maar krijgt te veel signalen."
+        ],
+        "uh": "Te veel of te weinig signaal?",
+        "ctx": "Het gif van de zwarte weduwe-spin zorgt ervoor dat alle blaasjes met de neurotransmitter acetylcholine in de synapsen tussen zenuw en spier in één keer leeglopen. Na een beet krijgen mensen hevige spierkrampen. Het gif curare blokkeert juist de receptoren voor acetylcholine op de spier."
+       },
+       {
+        "v": "Wat gebeurt er als het enzym dat acetylcholine in de synaps afbreekt wordt geblokkeerd?",
+        "o": [
+         "de spier kan helemaal geen impuls meer ontvangen",
+         "de neurotransmitter blijft werken en de spier blijft samentrekken",
+         "er wordt geen acetylcholine meer gemaakt in het axon",
+         "de impuls gaat via de synaps weer terug naar het cellichaam van het neuron"
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 3,
+        "u": "Zonder afbraak blijft acetylcholine aan de receptoren binden: de spier blijft geprikkeld.",
+        "uo": [
+         "Koos je geen impuls meer? De receptoren werken nog. Het probleem is juist dat het signaal niet meer stopt.",
+         "Klopt: normaal breekt een enzym de acetylcholine snel af, zodat het signaal stopt. Zonder dat enzym blijft de stof binden en blijft de spier aangespannen.",
+         "Koos je geen aanmaak? Het enzym breekt de stof af in de spleet; het heeft niets met de aanmaak in het axon te maken.",
+         "Koos je terug naar het cellichaam? Een synaps werkt maar één kant op. Het signaal blijft hangen bij de spier."
+        ],
+        "uh": "Wat doet het enzym normaal?",
+        "ctx": "Sommige insectengiffen en zenuwgassen blokkeren het enzym dat de neurotransmitter acetylcholine in de synapsspleet afbreekt. Normaal is de acetylcholine binnen een paar milliseconden na afgifte weer verdwenen. Slachtoffers krijgen trillende en verkrampte spieren."
+       },
+       {
+        "v": "Wat is kenmerkend voor een reflex?",
+        "o": [
+         "een snelle, automatische reactie zonder dat je erover nadenkt",
+         "een reactie die je eerst bewust moet beslissen",
+         "een reactie die via een hormoon in het bloed verloopt en daardoor lang duurt",
+         "een reactie die alleen in de slaap voorkomt"
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 4,
+        "u": "Een reflex is snel en automatisch, vaak via het ruggenmerg.",
+        "uo": [
+         "Klopt: een reflex is een snelle, vaste reactie op een prikkel, zonder dat je erover hoeft na te denken. Vaak loopt hij via het ruggenmerg.",
+         "Koos je bewust beslissen? Dat is een bewuste reactie via de grote hersenen. Een reflex gaat juist vanzelf.",
+         "Koos je via een hormoon? Hormonen werken trager. Een reflex loopt via neuronen, binnen een fractie van een seconde.",
+         "Koos je alleen in de slaap? Reflexen werken altijd, ook als je wakker bent, zoals de kniepeesreflex of terugtrekken van je hand."
+        ],
+        "uh": "Snel en vanzelf."
+       },
+       {
+        "v": "Waarom is een reflex sneller dan een bewuste reactie?",
+        "o": [
+         "bij een reflex zijn de zenuwvezels altijd dikker",
+         "reflexen gebruiken andere, snellere neurotransmitters",
+         "bij een reflex worden de spieren door een hormoon in het bloed aangestuurd",
+         "de impuls gaat via het ruggenmerg en niet eerst naar de grote hersenen"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 4,
+        "u": "De reflexboog is korter: de impuls wordt al in het ruggenmerg omgeschakeld.",
+        "uo": [
+         "Koos je dikkere vezels? Ook een bewuste reactie gebruikt dikke motorische vezels. Het verschil is de kortere route via het ruggenmerg.",
+         "Koos je andere neurotransmitters? Het verschil zit in de lengte van de route, niet in andere stoffen.",
+         "Koos je een hormoon? Hormonen zijn veel trager. Een reflex verloopt via neuronen.",
+         "Klopt: bij een reflex wordt de impuls al in het ruggenmerg doorgegeven aan het motorische neuron. De weg is korter en er zijn minder synapsen."
+        ],
+        "uh": "Kortere weg."
+       },
+       {
+        "v": "Hoe verklaar je dat je de pijn pas voelt nadat je hand al is teruggetrokken?",
+        "o": [
+         "het motorische neuron is langzamer dan het sensorische neuron",
+         "de pijnreceptoren werken pas als de spier al samengetrokken is",
+         "de reflex loopt via het ruggenmerg; de impuls naar de grote hersenen komt later aan",
+         "de grote hersenen geven eerst bewust de opdracht en voelen daarna pas de pijn in de hand"
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 4,
+        "u": "De reflex wordt in het ruggenmerg geschakeld; het bewuste gevoel ontstaat later in de hersenen.",
+        "uo": [
+         "Koos je een langzamer motorisch neuron? Het verschil is de route: de reflex blijft in het ruggenmerg, het gevoel moet helemaal naar de hersenen.",
+         "Koos je receptoren die later werken? De pijnreceptoren reageren direct. Zonder hun impuls zou er ook geen reflex zijn.",
+         "Klopt: in het ruggenmerg wordt de impuls direct omgeschakeld naar de spier. Tegelijk gaat een impuls omhoog naar de grote hersenen; die komt pas later aan, en dan voel je de pijn.",
+         "Koos je hersenen die de opdracht geven? Bij een reflex geven de hersenen geen opdracht; het ruggenmerg doet dat al."
+        ],
+        "uh": "Twee routes vanuit het ruggenmerg.",
+        "ctx": "Je pakt per ongeluk een hete pan vast. Je trekt je hand terug en pas een fractie van een seconde later voel je dat het pijn doet. Een onderzoeker legt uit dat de impuls vanuit de hand in het ruggenmerg twee kanten op gaat."
+       },
+       {
+        "v": "Hoe kan iemand toch een hete kop thee blijven vasthouden?",
+        "o": [
+         "de pijnreceptoren in de hand worden uitgeschakeld",
+         "de grote hersenen remmen via het ruggenmerg de reflex af",
+         "het motorische neuron stuurt een andere neurotransmitter",
+         "de reflexboog loopt bij volwassenen niet meer via het ruggenmerg"
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 4,
+        "u": "De grote hersenen kunnen een reflex bewust onderdrukken.",
+        "uo": [
+         "Koos je uitgeschakelde receptoren? Je voelt de hitte gewoon. De reactie wordt alleen bewust onderdrukt.",
+         "Klopt: vanuit de grote hersenen lopen banen naar het ruggenmerg die de reflex kunnen afremmen. Zo kun je bewust iets heets vasthouden.",
+         "Koos je een andere neurotransmitter? Het motorische neuron gebruikt steeds dezelfde stof. Het verschil is de remmende invloed vanuit de hersenen.",
+         "Koos je geen ruggenmerg meer? Ook bij volwassenen loopt de terugtrekreflex via het ruggenmerg. Die kan alleen worden afgeremd."
+        ],
+        "uh": "Wie heeft het laatste woord?",
+        "ctx": "Een ober draagt een kopje met hete thee dat eigenlijk te heet is om vast te houden. Toch laat hij het niet vallen, al voelt hij duidelijk de hitte. Bij een onverwachte aanraking van iets heets zou hij zijn hand direct terugtrekken."
        },
        {
         "v": "Waaruit bestaat het centrale zenuwstelsel?",
         "o": [
-         "De hersenen en het ruggenmerg",
-         "Het hart en de bloedvaten",
-         "De longen en de luchtpijp",
-         "De maag en de darmen met de lever erbij"
+         "de hersenen en het ruggenmerg",
+         "alle zenuwen in armen en benen",
+         "de zintuigen en de spieren",
+         "het hart en de bloedvaten"
         ],
         "c": 0,
         "d": 1,
-        "u": "Het centrale zenuwstelsel bestaat uit de hersenen en het ruggenmerg. Onthoud: centraal = hersenen + ruggenmerg.",
+        "s": 5,
+        "u": "Centraal zenuwstelsel = hersenen + ruggenmerg; de rest is het perifere zenuwstelsel.",
         "uo": [
-         "Klopt: de hersenen en het ruggenmerg vormen samen het centrale zenuwstelsel.",
-         "Hart en bloedvaten horen bij de bloedsomloop.",
-         "Longen en luchtpijp horen bij de ademhaling.",
-         "Maag en darmen horen bij de spijsvertering."
+         "Klopt: het centrale zenuwstelsel bestaat uit de hersenen en het ruggenmerg. Daar worden impulsen verwerkt.",
+         "Koos je de zenuwen in armen en benen? Die horen bij het perifere zenuwstelsel, dat het centrale met de rest van het lichaam verbindt.",
+         "Koos je zintuigen en spieren? Dat zijn de receptoren en effectoren, niet het zenuwstelsel zelf.",
+         "Koos je hart en bloedvaten? Die vormen de bloedsomloop, een ander orgaanstelsel."
         ],
-        "uh": "Centraal zenuwstelsel = hersenen + ruggenmerg."
+        "uh": "Twee onderdelen in schedel en wervelkolom."
        },
        {
-        "v": "Welk orgaan speelt de hoofdrol bij een reflex zonder de hersenen?",
+        "v": "Welk deel van het zenuwstelsel regelt je hartslag zonder dat je erover nadenkt?",
         "o": [
-         "De lever",
-         "Het ruggenmerg",
-         "De nier samen met de blaas",
-         "De milt"
-        ],
-        "c": 1,
-        "d": 1,
-        "u": "Bij een reflex verwerkt het ruggenmerg het signaal, zonder de hersenen. Onthoud: de reflex loopt via het ruggenmerg.",
-        "uo": [
-         "De lever speelt geen rol bij de reflex.",
-         "Klopt: het ruggenmerg verwerkt de reflex, buiten de hersenen om.",
-         "De nier hoort bij de uitscheiding, niet bij de reflex.",
-         "De milt hoort bij de afweer, niet bij de reflex."
-        ],
-        "uh": "Een reflex verloopt via het ruggenmerg."
-       },
-       {
-        "v": "Wat is het verschil tussen regeling door het zenuwstelsel en door hormonen?",
-        "o": [
-         "Hormonen werken altijd sneller dan zenuwen",
-         "Ze doen precies hetzelfde werk maar op een ander moment van de dag",
-         "Zenuwen werken alleen wanneer je slaapt",
-         "Zenuwen werken snel en kort, hormonen traag en langdurig"
+         "de sensorische zenuwen",
+         "het animale zenuwstelsel",
+         "de grote hersenen bewust",
+         "het autonome zenuwstelsel"
         ],
         "c": 3,
-        "d": 3,
-        "u": "Het zenuwstelsel regelt snel en kortdurend; hormonen werken juist traag maar langdurig. Onthoud: zenuwen = snel en kort, hormonen = traag en lang.",
+        "d": 2,
+        "s": 5,
+        "u": "Autonoom = onbewust (hart, darmen, klieren); animaal = bewust (skeletspieren).",
         "uo": [
-         "Hormonen werken juist trager dan zenuwen, niet sneller.",
-         "Ze werken samen maar op een andere manier en tijdschaal.",
-         "Zenuwen werken de hele dag, niet alleen tijdens de slaap.",
-         "Klopt: zenuwen werken snel en kort, hormonen traag en langdurig."
+         "Koos je sensorische zenuwen? Die brengen informatie naar het CZS. De aansturing van het hart gebeurt via het autonome zenuwstelsel.",
+         "Koos je animaal? Het animale zenuwstelsel stuurt de skeletspieren aan, waarover je zelf beslist, zoals lopen en grijpen.",
+         "Koos je de grote hersenen bewust? Je kunt je hartslag niet zelf besluiten te veranderen. Dat gebeurt automatisch.",
+         "Klopt: het autonome zenuwstelsel regelt onbewuste processen, zoals hartslag, ademhaling, spijsvertering en zweten."
         ],
-        "uh": "Zenuwen: snel en kort. Hormonen: traag en lang."
+        "uh": "Vanzelf."
        },
        {
-        "v": "Hoe heet de plek of het zintuig waar een prikkel wordt opgevangen?",
+        "v": "Wat gebeurt er als het sympathische zenuwstelsel actief wordt bij schrik?",
         "o": [
-         "De effector",
-         "Het axon van de zenuwcel",
-         "De receptor",
-         "De synaps"
+         "alle spieren ontspannen en je wordt slaperig",
+         "de hartslag gaat omlaag en de spijsvertering gaat omhoog",
+         "de hartslag en ademhaling gaan omhoog en de spijsvertering gaat omlaag",
+         "de pupillen worden kleiner en de speekselproductie stijgt flink"
         ],
         "c": 2,
-        "d": 1,
-        "u": "Een receptor (zintuig) vangt de prikkel op. Onthoud: receptor vangt op, effector voert uit.",
+        "d": 2,
+        "s": 5,
+        "u": "Sympathisch = actie (vecht of vlucht); parasympathisch = rust en vertering.",
         "uo": [
-         "De effector voert juist de reactie uit, hij vangt niet op.",
-         "Het axon geleidt de impuls, het vangt de prikkel niet op.",
-         "Klopt: de receptor (het zintuig) vangt de prikkel op.",
-         "De synaps is de contactplek tussen zenuwcellen, geen ontvanger van de prikkel."
+         "Koos je ontspannen? Bij schrik word je juist alert en gespannen. Ontspanning hoort bij het parasympathische deel.",
+         "Koos je hartslag omlaag? Dat doet het parasympathische zenuwstelsel, in rust. Bij schrik is het andersom.",
+         "Klopt: het sympathische zenuwstelsel maakt je klaar voor actie: hart en ademhaling sneller, pupillen groter, spijsvertering op een laag pitje.",
+         "Koos je kleinere pupillen en meer speeksel? Dat zijn kenmerken van rust. Bij schrik worden de pupillen groter en krijg je een droge mond."
         ],
-        "uh": "Receptor vangt de prikkel op."
+        "uh": "Klaar voor actie."
        },
        {
-        "v": "Wat is een effector?",
+        "v": "Waarom is autorijden na het drinken van alcohol gevaarlijk?",
         "o": [
-         "Een spier of klier die de reactie uitvoert",
-         "Een zintuig dat prikkels opvangt",
-         "Een zenuwcel in de hersenen",
-         "Een bot in de arm dat samen met de spieren beweegt"
-        ],
-        "c": 0,
-        "d": 1,
-        "u": "Een effector is een spier of klier die de reactie uitvoert. Onthoud: de effector voert uit wat het zenuwstelsel opdraagt.",
-        "uo": [
-         "Klopt: een effector is een spier of klier die de reactie uitvoert.",
-         "Een zintuig dat opvangt is juist de receptor.",
-         "Een zenuwcel in de hersenen is geen effector.",
-         "Een bot voert geen reactie uit; een spier of klier wel."
-        ],
-        "uh": "Effector = spier of klier die de reactie uitvoert."
-       },
-       {
-        "v": "Waar zit een schakelcel (tussenneuron) vooral?",
-        "o": [
-         "In een spier",
-         "In het centrale zenuwstelsel",
-         "In de huid vlak onder het oppervlak",
-         "In een bloedvat"
+         "alcohol versnelt alle impulsen in het lichaam, waardoor je veel te heftig reageert",
+         "de impulsen worden in de synapsen trager doorgegeven, dus je reageert later",
+         "alcohol breekt de myelineschede in één avond helemaal af",
+         "alcohol zorgt dat je ogen geen licht meer kunnen opvangen"
         ],
         "c": 1,
         "d": 2,
-        "u": "Een schakelcel zit in het centrale zenuwstelsel en verbindt daar neuronen. Onthoud: de schakelcel schakelt binnen het ruggenmerg of de hersenen.",
+        "s": 5,
+        "u": "Alcohol remt de overdracht in synapsen: reacties worden trager en minder nauwkeurig.",
         "uo": [
-         "In een spier zitten geen schakelcellen; daar zit de effector.",
-         "Klopt: de schakelcel zit in het centrale zenuwstelsel en verbindt neuronen.",
-         "In de huid zitten receptoren, geen schakelcellen.",
-         "In een bloedvat zitten geen schakelcellen."
+         "Koos je versnellen? Alcohol werkt juist remmend. Daarom wordt je reactietijd langer en niet korter.",
+         "Klopt: alcohol remt de werking van synapsen in de hersenen. Impulsen worden trager verwerkt, dus je reageert later en minder precies.",
+         "Koos je afbraak van myeline? Alcohol werkt op de synapsen, niet op de myelineschede. Na een nacht is het effect weer weg.",
+         "Koos je geen licht opvangen? Je ogen werken nog, maar de verwerking van wat je ziet in de hersenen gaat trager."
         ],
-        "uh": "Schakelcel = tussenneuron in het centrale zenuwstelsel."
+        "uh": "Remmend op de synapsen.",
+        "ctx": "Na een paar glazen alcohol lopen mensen wankeler en is hun reactietijd in een test langer. Alcohol remt de overdracht in synapsen in de hersenen, vooral in de kleine hersenen, die bewegingen coördineren. Na een nacht slapen is het effect verdwenen."
        },
        {
-        "v": "Iemand voelt niets meer in zijn benen na beschadiging van het ruggenmerg. Hoe komt dat?",
+        "v": "Welke combinatie past bij het zenuwstelsel en welke bij het hormoonstelsel?",
         "o": [
-         "De spieren in de benen zijn opgebruikt",
-         "De benen krijgen geen bloed meer",
-         "De prikkels bereiken de hersenen niet meer via het ruggenmerg",
-         "De hormonen in de benen zijn op en worden niet meer aangemaakt"
-        ],
-        "c": 2,
-        "d": 3,
-        "u": "Het gevoel ontstaat pas als prikkels via het ruggenmerg de hersenen bereiken. Is het ruggenmerg beschadigd, dan komen die prikkels niet meer aan en voel je niets. Onthoud: geen doorgang in het ruggenmerg betekent geen gevoel.",
-        "uo": [
-         "Spieren raken niet op; het probleem zit in de prikkelgeleiding.",
-         "De bloedtoevoer is niet de oorzaak van het verdwenen gevoel.",
-         "Klopt: de prikkels bereiken de hersenen niet meer door de beschadiging van het ruggenmerg.",
-         "Hormonen zijn hier niet de oorzaak; het gaat om de zenuwbaan."
-        ],
-        "uh": "Beschadigd ruggenmerg: prikkels bereiken de hersenen niet, dus geen gevoel."
-       },
-       {
-        "v": "Welk deel van het neuron vangt signalen van andere cellen op?",
-        "o": [
-         "Het axon van de cel",
-         "De celkern",
-         "De synaps",
-         "De dendrieten"
-        ],
-        "c": 3,
-        "d": 1,
-        "u": "De dendrieten vangen signalen van andere cellen op. Onthoud: dendriet ontvangt, axon verstuurt.",
-        "uo": [
-         "Het axon verstuurt de impuls juist, het vangt hem niet op.",
-         "De celkern stuurt de cel aan, maar vangt geen signalen op.",
-         "De synaps is de contactplek, geen deel dat opvangt.",
-         "Klopt: de dendrieten vangen signalen van andere cellen op."
-        ],
-        "uh": "Dendrieten ontvangen; het axon verstuurt."
-       },
-       {
-        "v": "Waarom is een reflex nuttig voor je lichaam?",
-        "o": [
-         "Je reageert heel snel op gevaar zonder na te denken",
-         "Je onthoudt er dingen beter door en leert er sneller van",
-         "Je voedsel wordt er sneller door verteerd",
-         "Je maakt er meer hormonen door aan"
-        ],
-        "c": 0,
-        "d": 2,
-        "u": "Een reflex laat je razendsnel reageren op gevaar, zonder eerst na te denken. Dat voorkomt schade. Onthoud: een reflex beschermt je door snelheid.",
-        "uo": [
-         "Klopt: je reageert razendsnel op gevaar, zonder na te denken.",
-         "Onthouden hoort bij de hersenen, niet bij een reflex.",
-         "Een reflex heeft niets met de vertering van voedsel te maken.",
-         "Een reflex maakt geen hormonen aan."
-        ],
-        "uh": "Een reflex beschermt je door heel snel te reageren."
-       },
-       {
-        "v": "Welke route legt een prikkel af als je iets heets aanraakt (reflex)?",
-        "o": [
-         "Van de hersenen naar de spier en terug",
-         "Van de huid via het ruggenmerg naar de spier",
-         "Van het hart via het bloed naar de longen",
-         "Van de maag via de lever naar de nier en de blaas"
-        ],
-        "c": 1,
-        "d": 2,
-        "u": "Bij deze reflex gaat de prikkel van de huid (receptor) via het ruggenmerg naar de spier (effector). Onthoud: de reflex loopt via het ruggenmerg, niet via de hersenen.",
-        "uo": [
-         "De hersenen doen bij deze reflex niet mee; het gaat via het ruggenmerg.",
-         "Klopt: van de huid via het ruggenmerg naar de spier die je hand terugtrekt.",
-         "Hart, bloed en longen horen bij de bloedsomloop, niet bij deze reflex.",
-         "Maag, lever en nier horen bij spijsvertering en uitscheiding."
-        ],
-        "uh": "Hete pan: huid -> ruggenmerg -> spier (reflex)."
-       },
-       {
-        "v": "Hoe heten de chemische stoffen die in de synaps het signaal overdragen?",
-        "o": [
-         "Enzymen uit de alvleesklier",
-         "Hormonen",
-         "Vitaminen",
-         "Neurotransmitters"
-        ],
-        "c": 3,
-        "d": 1,
-        "u": "Neurotransmitters dragen het signaal in de synaps over. Onthoud: neuro = zenuw, transmitter = overdrager.",
-        "uo": [
-         "Enzymen versnellen reacties; ze dragen geen zenuwsignaal over.",
-         "Hormonen gaan via het bloed, niet via de synaps.",
-         "Vitaminen zijn voedingsstoffen, geen signaaloverdragers.",
-         "Klopt: neurotransmitters dragen het signaal in de synaps over."
-        ],
-        "uh": "Neurotransmitters dragen het signaal in de synaps over."
-       },
-       {
-        "v": "Bij schrik gaat je hart meteen sneller kloppen, maar je blijft ook lang gespannen. Hoe komt dat?",
-        "o": [
-         "Het zenuwstelsel regelt de snelle reactie, hormonen de langdurige",
-         "Alleen hormonen regelen dit allemaal, van de eerste tel tot het einde",
-         "Alleen het zenuwstelsel regelt dit allemaal",
-         "De spieren regelen dit helemaal zelf"
+         "zenuwstelsel: snel en kortdurend; hormoonstelsel: trager en langdurig",
+         "zenuwstelsel: trager en langdurig; hormoonstelsel: snel en kortdurend",
+         "beide werken even snel, maar via een andere weg",
+         "zenuwstelsel via het bloed; hormoonstelsel via de neuronen en de synapsen"
         ],
         "c": 0,
         "d": 3,
-        "u": "De snelle reactie (hart sneller) komt van het zenuwstelsel; het langdurige gespannen gevoel komt van hormonen zoals adrenaline. Onthoud: zenuwstelsel snel en kort, hormonen traag en lang, samen.",
+        "s": 5,
+        "u": "Zenuwen: snel, gericht, kort. Hormonen: via het bloed, trager, langer en breder.",
         "uo": [
-         "Klopt: het zenuwstelsel doet het snelle deel, hormonen het langdurige.",
-         "Niet alleen hormonen: de eerste, snelle reactie komt van het zenuwstelsel.",
-         "Niet alleen het zenuwstelsel: het langdurige deel komt van hormonen.",
-         "De spieren regelen dit niet zelf; zenuwen en hormonen sturen ze aan."
+         "Klopt: impulsen bereiken in milliseconden één doel. Hormonen gaan via het bloed, doen er langer over, maar werken langer en vaak op veel organen.",
+         "Koos je het omgekeerde? Een reflex duurt een fractie van een seconde, terwijl groeihormoon jaren werkt. Het zenuwstelsel is het snelle systeem.",
+         "Koos je even snel? Een impuls gaat tot 100 m/s; een hormoon moet met het bloed mee en doet er seconden tot uren over.",
+         "Koos je de wegen omgedraaid? Hormonen gaan via het bloed, impulsen via neuronen."
         ],
-        "uh": "Snel = zenuwstelsel, langdurig = hormonen. Ze werken samen."
-       },
-       {
-        "v": "Waarom kan het zenuwstelsel sneller reageren dan het hormoonstelsel?",
-        "o": [
-         "Hormonen reizen door de zenuwen",
-         "Zenuwen maken veel meer energie aan en werken daarom altijd sneller in het lichaam",
-         "Een impuls gaat als elektrisch signaal langs de zenuw, hormonen gaan trager via het bloed",
-         "Zenuwen zijn gewoon dikker"
-        ],
-        "c": 2,
-        "d": 2,
-        "u": "Een impuls gaat razendsnel als elektrisch signaal langs de zenuw, terwijl hormonen langzamer met het bloed worden meegevoerd. Onthoud: elektrisch langs de zenuw is sneller dan meestromen met het bloed.",
-        "uo": [
-         "Hormonen reizen via het bloed, niet door de zenuwen.",
-         "Meer energie is niet de reden; het gaat om de manier van transport.",
-         "Klopt: de impuls is een snel elektrisch signaal, hormonen gaan trager via het bloed.",
-         "De dikte van de zenuw is niet de reden dat het zenuwstelsel sneller is."
-        ],
-        "uh": "Impuls = snel elektrisch; hormonen = traag via het bloed."
-       },
-       {
-        "v": "Wat doet de myelineschede, het isolatielaagje om veel axonen?",
-        "o": [
-         "Ze maakt de neurotransmitters aan die in de synaps nodig zijn",
-         "Ze versnelt de impuls door het axon te isoleren",
-         "Ze verandert het axon in een dendriet die signalen opvangt",
-         "Ze verbindt de spier rechtstreeks met het centrale zenuwstelsel"
-        ],
-        "c": 1,
-        "d": 2,
-        "u": "De myelineschede isoleert het axon, waardoor de impuls er sneller doorheen gaat. Onthoud: myeline = isolatie = snellere impuls.",
-        "uo": [
-         "Neurotransmitters horen bij de synaps, niet bij de functie van de myelineschede.",
-         "Klopt: de myelineschede isoleert het axon, zodat de impuls sneller gaat.",
-         "De myelineschede verandert een axon niet in een dendriet.",
-         "De myelineschede verbindt geen spier met het zenuwstelsel."
-        ],
-        "uh": "Myelineschede isoleert het axon: snellere impuls."
-       },
-       {
-        "v": "Wat regelt het autonome (onwillekeurige) deel van het zenuwstelsel?",
-        "o": [
-         "De bewuste, willekeurige bewegingen van je armen en benen",
-         "Het bewust onthouden van namen en gebeurtenissen",
-         "Onbewuste processen zoals je hartslag en spijsvertering",
-         "Het opzettelijk aanspannen van een spier in je hand"
-        ],
-        "c": 2,
-        "d": 2,
-        "u": "Het autonome zenuwstelsel regelt onbewuste (onwillekeurige) processen zoals hartslag, ademhaling en spijsvertering. Onthoud: autonoom = automatisch, zonder nadenken.",
-        "uo": [
-         "Bewuste bewegingen horen bij het animale (willekeurige) zenuwstelsel.",
-         "Bewust onthouden hoort bij de hersenen, niet bij het autonome zenuwstelsel.",
-         "Klopt: het autonome zenuwstelsel regelt onbewuste processen zoals hartslag en spijsvertering.",
-         "Een spier opzettelijk aanspannen is juist willekeurig, dus animaal."
-        ],
-        "uh": "Autonoom = onbewuste processen (hartslag, spijsvertering)."
-       },
-       {
-        "v": "Welk deel van het zenuwstelsel gebruik je voor bewuste, willekeurige bewegingen?",
-        "o": [
-         "Het autonome zenuwstelsel dat alles automatisch regelt",
-         "De onwillekeurige reflexen die via het ruggenmerg lopen",
-         "Alleen de neurotransmitters in de synapsen",
-         "Het animale (willekeurige) zenuwstelsel"
-        ],
-        "c": 3,
-        "d": 1,
-        "u": "Bewuste, willekeurige bewegingen regel je met het animale zenuwstelsel. Onthoud: animaal = willekeurig (bewust), autonoom = onwillekeurig (onbewust).",
-        "uo": [
-         "Het autonome zenuwstelsel regelt juist de onbewuste processen.",
-         "Reflexen zijn juist onwillekeurig; die gebruik je niet voor bewuste bewegingen.",
-         "Neurotransmitters dragen signalen over, maar vormen niet het willekeurige deel.",
-         "Klopt: het animale (willekeurige) zenuwstelsel regelt bewuste bewegingen."
-        ],
-        "uh": "Animaal = willekeurig (bewust); autonoom = onwillekeurig (onbewust)."
+        "uh": "Welk systeem is snel?",
+        "ctx": "Bij schrik trek je binnen 0,1 seconde je hand terug, en een paar seconden later bonst je hart nog door adrenaline in je bloed. Groeihormoon zorgt er jarenlang voor dat je langer wordt. Een leerling vergelijkt de manier waarop het zenuwstelsel en het hormoonstelsel werken."
        }
       ],
       "oe": [
        {
-        "bron": "Reflex bij een hete pan",
-        "ctx": "Iemand pakt per ongeluk een hete steelpan vast en trekt zijn hand razendsnel terug, nog voordat hij bewust de pijn voelt. Deze snelle, onbewuste reactie is een reflex die via het ruggenmerg verloopt.",
-        "v": "Beschrijf de route die de prikkel aflegt bij deze reflex (de reflexboog) en leg uit waarom de reactie zo snel is.",
+        "bron": "Examenstijl",
+        "ctx": "Bij een test moet een leerling op een knop drukken zodra een lampje gaat branden. Haar gemiddelde reactietijd is 0,25 s. Bij de kniepeesreflex meet de arts een reactietijd van 0,05 s.",
+        "v": "Leg met de route van de impuls uit waarom de kniepeesreflex zoveel sneller is dan de reactie op het lampje.",
         "o": [
          ""
         ],
         "c": 0,
-        "u": "De prikkel wordt opgevangen door een receptor in de huid, gaat via een sensorisch neuron naar het ruggenmerg, daar via een schakelcel naar een motorisch neuron, en die stuurt de spier (effector) aan die de hand terugtrekt. De reactie is zo snel omdat de reflex via het ruggenmerg loopt en niet eerst langs de hersenen hoeft. (Kernpunten: [1] route receptor -> sensorisch neuron -> schakelcel -> motorisch neuron -> effector; [2] snel omdat het via het ruggenmerg gaat, buiten de hersenen om.)"
+        "u": "Bij de reflex gaat de impuls via het sensorische neuron naar het ruggenmerg en direct naar het motorische neuron (1p). Bij het lampje gaat de impuls van het oog naar de grote hersenen, die beslissen, en dan via het ruggenmerg naar de spieren: een langere weg (1p). Op die langere weg liggen meer synapsen, en elke synaps kost tijd (1p)."
        },
        {
-        "bron": "Signaal door de synaps",
-        "ctx": "Tussen twee zenuwcellen zit een kleine ruimte: de synaps. In een proef blijkt dat een signaal daar altijd maar in een richting kan worden doorgegeven, van cel A naar cel B en nooit andersom.",
-        "v": "Leg uit hoe het signaal in de synaps wordt overgedragen en waarom dit maar in een richting kan.",
+        "bron": "Examenstijl",
+        "ctx": "Een patiënt heeft na een hernia een beschadigde zenuw in zijn been. Hij voelt geen aanraking meer op zijn rechtervoet, maar kan zijn voet nog wel bewust bewegen. De kniepeesreflex van het rechterbeen werkt niet.",
+        "v": "Leg uit welk soort neuron beschadigd is en waarom ook de reflex niet werkt.",
         "o": [
          ""
         ],
         "c": 0,
-        "u": "In de synaps wordt het signaal chemisch overgedragen: de zendende cel (A) geeft neurotransmitters af, die door de ontvangende cel (B) worden opgevangen. Alleen cel A geeft af en alleen cel B heeft de bijbehorende ontvangplekken, daarom kan het signaal maar in een richting. (Kernpunten: [1] overdracht via neurotransmitters (chemisch); [2] alleen de zender geeft af en alleen de ontvanger vangt op, dus een richting.)"
+        "u": "Het sensorische neuron is beschadigd, want hij voelt niets meer (1p). Het motorische neuron werkt, want hij kan de voet bewust bewegen (1p). Een reflex begint met een impuls via het sensorische neuron; komt die niet in het ruggenmerg aan, dan volgt ook geen reflex (1p)."
        },
        {
-        "bron": "Snelle en langzame regeling",
-        "ctx": "Als iemand schrikt, gaat het hart onmiddellijk sneller kloppen. Toch blijft het gespannen, opgejaagde gevoel daarna nog een hele tijd aanhouden, ook als het gevaar al voorbij is.",
-        "v": "Leg uit welk regelsysteem de onmiddellijke reactie veroorzaakt en welk systeem het langdurige gevoel, en noem het verschil tussen die systemen.",
+        "bron": "Examenstijl",
+        "ctx": "Sommige insecticiden blokkeren het enzym dat acetylcholine in de synapsspleet afbreekt. Bij insecten raken de spieren daardoor verkrampt en sterft het insect. Botox blokkeert juist de afgifte van acetylcholine uit het axonuiteinde.",
+        "v": "Leg uit waarom de insecticide tot kramp leidt en welk effect botox op een spier heeft.",
         "o": [
          ""
         ],
         "c": 0,
-        "u": "De onmiddellijke reactie (hart meteen sneller) wordt geregeld door het zenuwstelsel, dat snel maar kortdurend werkt. Het langdurige gespannen gevoel komt door hormonen (zoals adrenaline), die trager maar langduriger werken. Het verschil: het zenuwstelsel werkt snel en kort via elektrische impulsen, het hormoonstelsel traag en lang via het bloed. (Kernpunten: [1] zenuwstelsel = snelle, korte reactie; [2] hormonen = trage, langdurige reactie.)"
+        "u": "Zonder afbrekend enzym blijft acetylcholine in de synapsspleet en aan de receptoren gebonden (1p). De spier krijgt daardoor steeds een nieuw signaal en blijft samentrekken: kramp (1p). Bij botox komt geen acetylcholine vrij, dus de spier krijgt geen signaal en ontspant: verlamming van die spier (1p)."
        },
        {
-        "bron": "Sensorisch en motorisch",
-        "ctx": "Een leerling voelt met zijn vingers of een kopje warm is en pakt het daarna op. Bij dit voelen en oppakken zijn verschillende typen zenuwcellen betrokken.",
-        "v": "Leg uit welk type neuron zorgt voor het voelen en welk type zorgt voor het oppakken, en in welke richting elk type de prikkel geleidt.",
+        "bron": "Examenstijl",
+        "ctx": "In een tabel staan twee zenuwvezels. Vezel P is 15 µm dik, heeft een myelineschede en geleidt met 90 m/s. Vezel Q is 1 µm dik, heeft geen myelineschede en geleidt met 1 m/s. De afstand van de voet naar het ruggenmerg is 1,2 m.",
+        "v": "Bereken het verschil in tijd tussen vezel P en vezel Q over deze afstand en leg uit waarom P sneller geleidt.",
         "o": [
          ""
         ],
         "c": 0,
-        "u": "Het voelen verloopt via het sensorische (gevoels)neuron, dat de prikkel van de vingers (het zintuig) naar het centrale zenuwstelsel geleidt. Het oppakken verloopt via het motorische (beweeg)neuron, dat een signaal vanuit het centrale zenuwstelsel naar de spieren van de hand stuurt. Sensorisch geleidt dus naar binnen, motorisch naar buiten. (Kernpunten: [1] sensorisch neuron = van zintuig naar het centrale zenuwstelsel (voelen); [2] motorisch neuron = van het centrale zenuwstelsel naar de spier (oppakken).)"
+        "u": "P: 1,2 / 90 = 0,013 s; Q: 1,2 / 1 = 1,2 s (1p). Verschil ongeveer 1,19 s (1p). P heeft een myelineschede, waardoor de impuls van insnoering naar insnoering springt, en P is dikker; beide verhogen de snelheid (1p)."
        },
        {
-        "bron": "Ruggenmerg beschadigd",
-        "ctx": "Na een ongeluk raakt het ruggenmerg van een patient op een bepaalde hoogte beschadigd. Onder die plek voelt de patient niets meer en kan hij zijn benen niet meer bewegen.",
-        "v": "Verklaar waarom de patient onder de beschadiging geen gevoel meer heeft en zijn benen niet meer kan bewegen.",
+        "bron": "Examenstijl",
+        "ctx": "Bij een spannende toets merkt een leerling dat zijn hart sneller klopt, zijn handen zweten en hij een droge mond heeft. Na de toets, tijdens de lunch, wordt zijn hartslag weer rustig en komt de spijsvertering op gang.",
+        "v": "Leg uit welk deel van het zenuwstelsel actief is tijdens de toets en welk deel tijdens de lunch, en waarom deze reacties niet bewust gestuurd worden.",
         "o": [
          ""
         ],
         "c": 0,
-        "u": "Prikkels uit de benen moeten via het ruggenmerg omhoog naar de hersenen om als gevoel te worden waargenomen, en opdrachten voor beweging moeten via het ruggenmerg omlaag naar de beenspieren. Door de beschadiging worden deze zenuwbanen onderbroken: de prikkels bereiken de hersenen niet meer (geen gevoel) en de opdrachten bereiken de spieren niet meer (geen beweging). (Kernpunten: [1] sensorische prikkels bereiken de hersenen niet meer, dus geen gevoel; [2] motorische opdrachten bereiken de spieren niet meer, dus geen beweging.)"
+        "u": "Tijdens de toets is het sympathische zenuwstelsel actief: hart sneller, zweten, minder speeksel (1p). Tijdens de lunch het parasympathische: hartslag omlaag, spijsvertering omhoog (1p). Beide horen bij het autonome zenuwstelsel, dat onbewuste processen regelt; de leerling kan ze niet zelf besturen (1p)."
        }
       ]
      },
