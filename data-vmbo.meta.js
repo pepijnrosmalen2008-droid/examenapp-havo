@@ -1231,6 +1231,27 @@ var VAKKEN_VMBO = [
       "nOe": 5,
       "nBeg": 12,
       "hasSam": true
+     },
+     {
+      "id": "D6",
+      "lo": "en.D.6",
+      "gs": 2,
+      "naam": "Spelling, leestekens en hoofdletters",
+      "beschrijving": "Je leert in het Engels goed te spellen en te interpungeren: je gebruikt hoofdletters bij namen, dagen en talen, leestekens zoals komma, vraagteken en apostrof, kent veelgemaakte fouten als its en it's en controleert je tekst.",
+      "ceStatus": "SE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Hoofdletters",
+       "Leestekens",
+       "Apostrof en samentrekkingen",
+       "Veelgemaakte spellingfouten",
+       "Je tekst controleren"
+      ],
+      "nSv": 27,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
      }
     ]
    }

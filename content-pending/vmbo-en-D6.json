@@ -1,0 +1,682 @@
+{
+ "id": "D6",
+ "lo": "en.D.6",
+ "gs": 2,
+ "naam": "Spelling, leestekens en hoofdletters",
+ "beschrijving": "Je leert in het Engels goed te spellen en te interpungeren: je gebruikt hoofdletters bij namen, dagen en talen, leestekens zoals komma, vraagteken en apostrof, kent veelgemaakte fouten als its en it's en controleert je tekst.",
+ "ceStatus": "SE",
+ "binas": "",
+ "val": "",
+ "onderwerpen": [
+  "Hoofdletters",
+  "Leestekens",
+  "Apostrof en samentrekkingen",
+  "Veelgemaakte spellingfouten",
+  "Je tekst controleren"
+ ],
+ "sam": "Gebruik hoofdletters bij I, namen, dagen, maanden, talen en nationaliteiten. Een vraag eindigt met een vraagteken en een opsomming heeft komma's. Een apostrof maakt een samentrekking zoals it's. Let op their, there en they're en op to en too. Lees je tekst langzaam na.",
+ "begrippen": [
+  {
+   "t": "Hoofdletter",
+   "d": "Een grote beginletter bij I, namen, dagen, maanden, plaatsen, talen en nationaliteiten."
+  },
+  {
+   "t": "Leesteken",
+   "d": "Een teken zoals een punt, komma, vraagteken of uitroepteken."
+  },
+  {
+   "t": "Komma",
+   "d": "Een teken dat onderdelen in een lijst en de aanhef scheidt."
+  },
+  {
+   "t": "Vraagteken",
+   "d": "Het teken aan het eind van een vraag."
+  },
+  {
+   "t": "Uitroepteken",
+   "d": "Een teken dat gevoel laat zien, zoals Write back soon!"
+  },
+  {
+   "t": "Apostrof",
+   "d": "Een teken in verkortingen zoals it's (it is)."
+  },
+  {
+   "t": "Samentrekking",
+   "d": "Een verkorte vorm, zoals it's en you're."
+  },
+  {
+   "t": "Spelling",
+   "d": "Hoe je een woord goed schrijft, zoals their, there en they're."
+  },
+  {
+   "t": "Eigennaam",
+   "d": "De naam van een persoon of plaats, zoals Anna of London."
+  },
+  {
+   "t": "Nationaliteit",
+   "d": "Bijvoorbeeld Dutch of German, met een hoofdletter."
+  },
+  {
+   "t": "Opsomming",
+   "d": "Een lijst met onderdelen, gescheiden door komma's."
+  },
+  {
+   "t": "Controleren",
+   "d": "Je tekst nalezen op fouten."
+  }
+ ],
+ "sv": [
+  {
+   "v": "Welk Engels woord krijgt altijd een hoofdletter?",
+   "o": [
+    "\"and\"",
+    "\"I\"",
+    "\"the\"",
+    "\"is\""
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 0,
+   "u": "Let op hoofdletters, leestekens en spelling. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"and\"\"? Dan denk je dat elk kort woord een hoofdletter krijgt. And is een gewoon voegwoord, dus een kleine letter.",
+    "Klopt: het woord I (ik) schrijf je altijd met een hoofdletter.",
+    "Koos je \"\"the\"\"? Dan pak je een lidwoord. The krijgt alleen een hoofdletter vooraan in de zin, en dus niet altijd.",
+    "Koos je \"\"is\"\"? Dan kies je een werkwoord. Is heeft een kleine letter, behalve vooraan de zin."
+   ],
+   "uh": "Welk Engels woord krijgt altijd een hoofdletter?"
+  },
+  {
+   "v": "Welke woorden hebben een hoofdletter nodig in: 'on monday i met anna in london'?",
+   "o": [
+    "\"alleen On\"",
+    "\"alleen Monday en London, volgens mij\"",
+    "\"geen enkel woord\"",
+    "\"On, Monday, I, Anna en London\""
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 0,
+   "u": "Let op hoofdletters, leestekens en spelling. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"alleen On\"\"? Dan denk je dat alleen het begin telt. Een dag, een naam en een plaats hebben er ook een nodig, dus er mist meer.",
+    "Koos je \"\"alleen Monday en London, volgens mij\"\"? Dan pak je dag en plaats, maar vergeet de rest. Het begin van de zin, I en Anna missen, dus dit is onvolledig.",
+    "Koos je \"\"geen enkel woord\"\"? Dan denk je dat kleine letters mogen. In het Engels hebben namen, dagen en I altijd een hoofdletter, dus dit is fout.",
+    "Klopt: het begin van de zin, een dag, I, een naam en een plaats krijgen een hoofdletter."
+   ],
+   "uh": "Welke woorden hebben een hoofdletter nodig in: 'on monday i met anna in london'?"
+  },
+  {
+   "v": "Welk leesteken sluit een vraag af?",
+   "o": [
+    "\"een vraagteken\"",
+    "\"een komma\"",
+    "\"een dubbele punt\"",
+    "\"een punt\""
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 1,
+   "u": "Let op hoofdletters, leestekens en spelling. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: een vraag eindigt altijd met een vraagteken.",
+    "Koos je \"\"een komma\"\"? Dan denk je dat een komma een zin afsluit. Een komma is een pauze, en geen eind.",
+    "Koos je \"\"een dubbele punt\"\"? Dan pak je een dubbele punt. Die kondigt iets aan, en sluit niet af.",
+    "Koos je \"\"een punt\"\"? Dan kies je een punt. Die sluit een mededeling af, en geen vraag."
+   ],
+   "uh": "Welk leesteken sluit een vraag af?"
+  },
+  {
+   "v": "Wanneer gebruik je een komma in een opsomming?",
+   "o": [
+    "\"na elk woord van de zin, eigenlijk, denk ik, zeg maar\"",
+    "\"alleen aan het eind\"",
+    "\"tussen de onderdelen: apples, bananas and pears\"",
+    "\"nooit\""
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 1,
+   "u": "Let op hoofdletters, leestekens en spelling. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"na elk woord van de zin, eigenlijk, denk ik, zeg maar\"\"? Dan denk je dat je overal een komma zet. Dan wordt de zin onleesbaar, en klopt de regel niet.",
+    "Koos je \"\"alleen aan het eind\"\"? Dan pak je het einde. Een komma staat tussen onderdelen, en niet aan het eind.",
+    "Klopt: komma's scheiden de onderdelen van een lijst.",
+    "Koos je \"\"nooit\"\"? Dan kies je nooit. Een opsomming heeft juist komma's nodig, om de onderdelen te scheiden."
+   ],
+   "uh": "Wanneer gebruik je een komma in een opsomming?"
+  },
+  {
+   "v": "In 'It's cold today' staat 'It's'. Wat betekent dat?",
+   "o": [
+    "\"the cold\"",
+    "\"it is\"",
+    "\"of it\"",
+    "\"it has not\""
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 2,
+   "u": "Let op hoofdletters, leestekens en spelling. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"the cold\"\"? Dan denk je dat it's een zelfstandig naamwoord is. Het is een samentrekking, en betekent het is.",
+    "Klopt: it's is de korte vorm van it is, met een apostrof.",
+    "Koos je \"\"of it\"\"? Dan pak je een bezitsvorm. Its zonder apostrof is bezit, en it's is it is.",
+    "Koos je \"\"it has not\"\"? Dan kies je een ontkenning. It's heeft geen not, dus het is geen ontkenning."
+   ],
+   "uh": "In 'It's cold today' staat 'It's'. Wat betekent dat?"
+  },
+  {
+   "v": "Welk woord past: 'We went to ___ house.' (het huis van hen)",
+   "o": [
+    "\"there\"",
+    "\"they're\"",
+    "\"thair\"",
+    "\"their\""
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 3,
+   "u": "Let op hoofdletters, leestekens en spelling. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"there\"\"? Dan denk je dat there een bezit is. There is een plaats, en past niet bij house van hen.",
+    "Koos je \"\"they're\"\"? Dan pak je een samentrekking. They're is they are, en geen bezit.",
+    "Koos je \"\"thair\"\"? Dan kies je een eigen spelling. Dit woord bestaat niet, dus het is fout.",
+    "Klopt: their betekent van hen en laat bezit zien."
+   ],
+   "uh": "Welk woord past: 'We went to ___ house.' (het huis van hen)"
+  },
+  {
+   "v": "Wat doe je als laatste met je tekst?",
+   "o": [
+    "\"nalezen op spelling, hoofdletters en leestekens\"",
+    "\"meteen versturen\"",
+    "\"de helft schrappen\"",
+    "\"alleen de eerste zin lezen, volgens mij, eigenlijk\""
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 4,
+   "u": "Let op hoofdletters, leestekens en spelling. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: een laatste controle vangt fouten die je zelf niet zag.",
+    "Koos je \"\"meteen versturen\"\"? Dan denk je dat je tekst klaar is. Je ziet fouten alleen als je nalees, dus versturen is te snel.",
+    "Koos je \"\"de helft schrappen\"\"? Dan pak je een kortere tekst. Dit lost fouten niet op, en je mist informatie.",
+    "Koos je \"\"alleen de eerste zin lezen, volgens mij, eigenlijk\"\"? Dan kies je een snelle check. De fouten kunnen overal staan, dus je moet alles lezen."
+   ],
+   "uh": "Wat doe je als laatste met je tekst?"
+  },
+  {
+   "v": "Which words have a capital letter because they are a day and a month?",
+   "o": [
+    "\"Amsterdam and London\"",
+    "\"Dutch and German\"",
+    "\"Monday and August\"",
+    "\"Thank and Could\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 0,
+   "u": "Let op hoofdletters, leestekens en spelling. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"Amsterdam and London\"\"? Dan denk je dat dit een dag en een maand zijn. Het zijn plaatsnamen, en die krijgen om een andere reden een hoofdletter.",
+    "Koos je \"\"Dutch and German\"\"? Dan pak je talen. Dutch en German zijn een nationaliteit en een taal, en geen dag of maand.",
+    "Klopt: dagen en maanden krijgen in het Engels een hoofdletter.",
+    "Koos je \"\"Thank and Could\"\"? Dan kies je beginwoorden. Dit zijn de eerste woorden van een zin, en geen dag of maand."
+   ],
+   "uh": "Which words have a capital letter because they are a day and a month?",
+   "ctx": "You read this letter from Mark: \"Dear Mr Brown, Thank you for your e-mail of Monday 5 May. I am Dutch, and I speak English and German. We will visit London in August, so I would like to book a room for three nights. Our hotel in Amsterdam was great, but their breakfast was too small. Could you send me the price list, please? Yours sincerely, Mark de Jong\""
+  },
+  {
+   "v": "Why do 'Dutch' and 'German' have a capital letter?",
+   "o": [
+    "\"they are verbs\"",
+    "\"they are a nationality and a language\"",
+    "\"they are the first words of a sentence, you know\"",
+    "\"they are numbers\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 0,
+   "u": "Let op hoofdletters, leestekens en spelling. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"they are verbs\"\"? Dan denk je dat het werkwoorden zijn. Het zijn bijvoeglijke naamwoorden en zelfstandige naamwoorden, en geen werkwoorden.",
+    "Klopt: nationaliteiten en talen krijgen in het Engels een hoofdletter.",
+    "Koos je \"\"they are the first words of a sentence, you know\"\"? Dan pak je de zinsbegin. Ze staan midden in de zin, en toch hebben ze een hoofdletter.",
+    "Koos je \"\"they are numbers\"\"? Dan kies je getallen. Het zijn geen getallen, maar een nationaliteit en een taal."
+   ],
+   "uh": "Why do 'Dutch' and 'German' have a capital letter?",
+   "ctx": "You read this letter from Mark: \"Dear Mr Brown, Thank you for your e-mail of Monday 5 May. I am Dutch, and I speak English and German. We will visit London in August, so I would like to book a room for three nights. Our hotel in Amsterdam was great, but their breakfast was too small. Could you send me the price list, please? Yours sincerely, Mark de Jong\""
+  },
+  {
+   "v": "Which word is correct in: 'but ___ breakfast was too small'?",
+   "o": [
+    "\"there\"",
+    "\"they're\"",
+    "\"thier\"",
+    "\"their\""
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 3,
+   "u": "Let op hoofdletters, leestekens en spelling. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"there\"\"? Dan denk je dat there past. There is een plaats, en geen bezit.",
+    "Koos je \"\"they're\"\"? Dan pak je een samentrekking. They're is they are, en past niet voor breakfast.",
+    "Koos je \"\"thier\"\"? Dan kies je een verkeerde spelling. Het woord bestaat zo niet, dus het is fout.",
+    "Klopt: their betekent van hen en past bij het ontbijt van het hotel."
+   ],
+   "uh": "Which word is correct in: 'but ___ breakfast was too small'?",
+   "ctx": "You read this letter from Mark: \"Dear Mr Brown, Thank you for your e-mail of Monday 5 May. I am Dutch, and I speak English and German. We will visit London in August, so I would like to book a room for three nights. Our hotel in Amsterdam was great, but their breakfast was too small. Could you send me the price list, please? Yours sincerely, Mark de Jong\""
+  },
+  {
+   "v": "In 'was too small', what does 'too' mean?",
+   "o": [
+    "\"te (more than needed)\"",
+    "\"naar (to)\"",
+    "\"twee (two), I think, I suppose\"",
+    "\"niet\""
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 3,
+   "u": "Let op hoofdletters, leestekens en spelling. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: too small betekent te klein, dus meer dan nodig.",
+    "Koos je \"\"naar (to)\"\"? Dan denk je dat too naar betekent. Naar is to met één o, en het woord is anders gespeld.",
+    "Koos je \"\"twee (two), I think, I suppose\"\"? Dan pak je een getal. Two is twee, en wordt met w geschreven.",
+    "Koos je \"\"niet\"\"? Dan kies je een ontkenning. Too is geen ontkenning, maar een versterking."
+   ],
+   "uh": "In 'was too small', what does 'too' mean?",
+   "ctx": "You read this letter from Mark: \"Dear Mr Brown, Thank you for your e-mail of Monday 5 May. I am Dutch, and I speak English and German. We will visit London in August, so I would like to book a room for three nights. Our hotel in Amsterdam was great, but their breakfast was too small. Could you send me the price list, please? Yours sincerely, Mark de Jong\""
+  },
+  {
+   "v": "Which of these words needs a capital letter?",
+   "o": [
+    "\"went\"",
+    "\"class\"",
+    "\"friday\"",
+    "\"with\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 0,
+   "u": "Let op hoofdletters, leestekens en spelling. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"went\"\"? Dan denk je dat het werkwoord een hoofdletter krijgt. Went is gewoon een werkwoord, en krijgt geen hoofdletter.",
+    "Koos je \"\"class\"\"? Dan pak je een zelfstandig naamwoord. Class is gewoon een woord, en krijgt geen hoofdletter.",
+    "Klopt: dagen van de week krijgen een hoofdletter.",
+    "Koos je \"\"with\"\"? Dan kies je een voorzetsel. With krijgt alleen vooraan de zin een hoofdletter, en hier staat het midden in."
+   ],
+   "uh": "Which of these words needs a capital letter?",
+   "ctx": "You read this text with mistakes from a pupil: \"hi sara, its me, Jade! i went to paris last friday with my class. We had a great time, but it was very cold. Your going to love it when we go next year, I think. see you soon, Jade\""
+  },
+  {
+   "v": "What is the mistake in 'its me'?",
+   "o": [
+    "\"me needs a capital\"",
+    "\"it's needs an apostrophe\"",
+    "\"its is a verb\"",
+    "\"there is no mistake, I suppose\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 2,
+   "u": "Let op hoofdletters, leestekens en spelling. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"me needs a capital\"\"? Dan denk je dat me een hoofdletter krijgt. Me is een gewoon voornaamwoord, en krijgt geen hoofdletter.",
+    "Klopt: het is it's met een apostrof, want het betekent it is.",
+    "Koos je \"\"its is a verb\"\"? Dan pak je een werkwoord. Its is een bezitsvorm, en geen werkwoord.",
+    "Koos je \"\"there is no mistake, I suppose\"\"? Dan kies je geen fout. Zonder apostrof betekent its van het, en hier moet it is staan."
+   ],
+   "uh": "What is the mistake in 'its me'?",
+   "ctx": "You read this text with mistakes from a pupil: \"hi sara, its me, Jade! i went to paris last friday with my class. We had a great time, but it was very cold. Your going to love it when we go next year, I think. see you soon, Jade\""
+  },
+  {
+   "v": "What is the mistake in 'Your going to love it'?",
+   "o": [
+    "\"going should be goin, you know, I think\"",
+    "\"love needs a capital\"",
+    "\"to should be too\"",
+    "\"it should be you're, not your\""
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 3,
+   "u": "Let op hoofdletters, leestekens en spelling. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"going should be goin, you know, I think\"\"? Dan denk je dat going fout is. Going is goed gespeld, en goin is informeel.",
+    "Koos je \"\"love needs a capital\"\"? Dan pak je een hoofdletter. Love is een werkwoord midden in de zin, en krijgt geen hoofdletter.",
+    "Koos je \"\"to should be too\"\"? Dan kies je too. In going to is to het goede woord, omdat het bij going to hoort.",
+    "Klopt: you're is you are, en your is van jou."
+   ],
+   "uh": "What is the mistake in 'Your going to love it'?",
+   "ctx": "You read this text with mistakes from a pupil: \"hi sara, its me, Jade! i went to paris last friday with my class. We had a great time, but it was very cold. Your going to love it when we go next year, I think. see you soon, Jade\""
+  },
+  {
+   "v": "Which punctuation mark is used after 'Saturday' in 'On Saturday, 12 July'?",
+   "o": [
+    "\"a comma\"",
+    "\"a full stop\"",
+    "\"a question mark\"",
+    "\"an apostrophe\""
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 1,
+   "u": "Let op hoofdletters, leestekens en spelling. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: een komma scheidt de dag van de datum.",
+    "Koos je \"\"a full stop\"\"? Dan denk je dat een punt past. Een punt sluit een zin af, en de zin gaat door.",
+    "Koos je \"\"a question mark\"\"? Dan pak je een vraagteken. Het is geen vraag, dus het past niet.",
+    "Koos je \"\"an apostrophe\"\"? Dan kies je een apostrof. Een apostrof laat bezit of verkorting zien, en past hier niet."
+   ],
+   "uh": "Which punctuation mark is used after 'Saturday' in 'On Saturday, 12 July'?",
+   "ctx": "You read this part of an e-mail: \"On Saturday, 12 July, my friend Tim and I went to the Science Museum in London. We saw dinosaurs, robots, and a huge space rocket. It's the best museum I have ever visited. Do you want to go there with me? Write to me, and tell me what you think!\""
+  },
+  {
+   "v": "Why is there a comma in 'dinosaurs, robots, and a huge space rocket'?",
+   "o": [
+    "\"it ends the sentence, I think, I suppose\"",
+    "\"it asks a question\"",
+    "\"it separates items in a list\"",
+    "\"it shows possession\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 1,
+   "u": "Let op hoofdletters, leestekens en spelling. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"it ends the sentence, I think, I suppose\"\"? Dan denk je dat de komma het einde is. Een punt sluit af, en de zin gaat nog door.",
+    "Koos je \"\"it asks a question\"\"? Dan pak je een vraag. Een vraagteken stelt een vraag, en een komma niet.",
+    "Klopt: komma's scheiden de onderdelen van een opsomming.",
+    "Koos je \"\"it shows possession\"\"? Dan kies je bezit. Een apostrof laat bezit zien, en een komma niet."
+   ],
+   "uh": "Why is there a comma in 'dinosaurs, robots, and a huge space rocket'?",
+   "ctx": "You read this part of an e-mail: \"On Saturday, 12 July, my friend Tim and I went to the Science Museum in London. We saw dinosaurs, robots, and a huge space rocket. It's the best museum I have ever visited. Do you want to go there with me? Write to me, and tell me what you think!\""
+  },
+  {
+   "v": "'It's the best museum.' What does 'It's' stand for?",
+   "o": [
+    "\"it has not\"",
+    "\"it is\"",
+    "\"its own\"",
+    "\"it was\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 2,
+   "u": "Let op hoofdletters, leestekens en spelling. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"it has not\"\"? Dan denk je dat it's een ontkenning is. Er staat geen not, dus het is geen ontkenning.",
+    "Klopt: it's is een korte vorm van it is, met een apostrof.",
+    "Koos je \"\"its own\"\"? Dan pak je een bezitsvorm. Its zonder apostrof is bezit, en it's is it is.",
+    "Koos je \"\"it was\"\"? Dan kies je de verleden tijd. It's is tegenwoordige tijd, en was staat er niet."
+   ],
+   "uh": "'It's the best museum.' What does 'It's' stand for?",
+   "ctx": "You read this part of an e-mail: \"On Saturday, 12 July, my friend Tim and I went to the Science Museum in London. We saw dinosaurs, robots, and a huge space rocket. It's the best museum I have ever visited. Do you want to go there with me? Write to me, and tell me what you think!\""
+  },
+  {
+   "v": "Which words need a capital letter in 'we will visit london in august'?",
+   "o": [
+    "\"only London, I suppose, really\"",
+    "\"only August\"",
+    "\"only We\"",
+    "\"We, London and August\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 0,
+   "u": "Let op hoofdletters, leestekens en spelling. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"only London, I suppose, really\"\"? Dan denk je dat alleen de plaats een hoofdletter krijgt. De maand en het begin van de zin hebben er ook een nodig, dus er mist meer.",
+    "Koos je \"\"only August\"\"? Dan pak je alleen de maand. De plaats en het eerste woord hebben er ook een nodig, dus dit is onvolledig.",
+    "Koos je \"\"only We\"\"? Dan kies je alleen het begin van de zin. Plaatsnamen en maanden hebben er ook een nodig, dus dit is onvolledig.",
+    "Klopt: het begin van de zin, een plaats en een maand krijgen een hoofdletter."
+   ],
+   "uh": "Which words need a capital letter in 'we will visit london in august'?",
+   "ctx": "You read this letter from Mark: \"Dear Mr Brown, Thank you for your e-mail of Monday 5 May. I am Dutch, and I speak English and German. We will visit London in August, so I would like to book a room for three nights. Our hotel in Amsterdam was great, but their breakfast was too small. Could you send me the price list, please? Yours sincerely, Mark de Jong\""
+  },
+  {
+   "v": "Which punctuation mark is right after the opening 'Dear Mr Brown'?",
+   "o": [
+    "\"a comma\"",
+    "\"a full stop\"",
+    "\"a question mark\"",
+    "\"a colon and a dash\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 1,
+   "u": "Let op hoofdletters, leestekens en spelling. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: na de aanhef staat in het Engels een komma.",
+    "Koos je \"\"a full stop\"\"? Dan denk je dat een punt past. Een punt sluit een zin af, en de aanhef is geen zin.",
+    "Koos je \"\"a question mark\"\"? Dan pak je een vraagteken. Het is geen vraag, dus het past niet.",
+    "Koos je \"\"a colon and a dash\"\"? Dan kies je een combinatie. Dat is te zwaar, en niet gebruikelijk bij een aanhef."
+   ],
+   "uh": "Which punctuation mark is right after the opening 'Dear Mr Brown'?",
+   "ctx": "You read this letter from Mark: \"Dear Mr Brown, Thank you for your e-mail of Monday 5 May. I am Dutch, and I speak English and German. We will visit London in August, so I would like to book a room for three nights. Our hotel in Amsterdam was great, but their breakfast was too small. Could you send me the price list, please? Yours sincerely, Mark de Jong\""
+  },
+  {
+   "v": "'Their breakfast was too small.' Why is 'their' correct here?",
+   "o": [
+    "\"it shows a place\"",
+    "\"it means they are, really, to be honest, you know\"",
+    "\"it shows that the breakfast belongs to them\"",
+    "\"it is shorter\""
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 3,
+   "u": "Let op hoofdletters, leestekens en spelling. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"it shows a place\"\"? Dan denk je dat their een plaats is. Dat is there, en dit is bezit.",
+    "Koos je \"\"it means they are, really, to be honest, you know\"\"? Dan pak je een samentrekking. They're is they are, en geen bezit.",
+    "Klopt: their betekent van hen en laat bezit zien.",
+    "Koos je \"\"it is shorter\"\"? Dan kies je kortheid. De spelling hangt af van de betekenis, en niet van lengte."
+   ],
+   "uh": "'Their breakfast was too small.' Why is 'their' correct here?",
+   "ctx": "You read this letter from Mark: \"Dear Mr Brown, Thank you for your e-mail of Monday 5 May. I am Dutch, and I speak English and German. We will visit London in August, so I would like to book a room for three nights. Our hotel in Amsterdam was great, but their breakfast was too small. Could you send me the price list, please? Yours sincerely, Mark de Jong\""
+  },
+  {
+   "v": "How many capital-letter mistakes are in 'hi sara, its me, Jade! i went to paris last friday'?",
+   "o": [
+    "\"two\"",
+    "\"five\"",
+    "\"three\"",
+    "\"six\""
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 4,
+   "u": "Let op hoofdletters, leestekens en spelling. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"two\"\"? Dan denk je dat er maar twee zijn. Je telt alleen sara en paris, maar hi, i en friday ontbreken ook.",
+    "Klopt: hi, sara, i, paris en friday missen een hoofdletter.",
+    "Koos je \"\"three\"\"? Dan pak je drie fouten. Je mist er nog twee, namelijk hi en friday.",
+    "Koos je \"\"six\"\"? Dan kies je zes. Je telt een woord mee dat al goed is, bijvoorbeeld Jade."
+   ],
+   "uh": "How many capital-letter mistakes are in 'hi sara, its me, Jade! i went to paris last friday'?",
+   "ctx": "You read this text with mistakes from a pupil: \"hi sara, its me, Jade! i went to paris last friday with my class. We had a great time, but it was very cold. Your going to love it when we go next year, I think. see you soon, Jade\""
+  },
+  {
+   "v": "Which version of the first sentence is correct?",
+   "o": [
+    "\"Hi Sara, its me, Jade!\"",
+    "\"Hi Sara it's me Jade!\"",
+    "\"Hi Sara, it's me, Jade, to be honest?\"",
+    "\"Hi Sara, it's me, Jade!\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 2,
+   "u": "Let op hoofdletters, leestekens en spelling. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"Hi Sara, its me, Jade!\"\"? Dan denk je dat its goed is. Je mist de apostrof, en it's is het correct.",
+    "Koos je \"\"Hi Sara it's me Jade!\"\"? Dan laat je de komma's weg. Na de aanhef en voor de naam staat een komma, dus ze ontbreken.",
+    "Koos je \"\"Hi Sara, it's me, Jade, to be honest?\"\"? Dan kies je een vraagteken. De zin is een mededeling, en past bij een uitroepteken.",
+    "Klopt: hi en namen hebben een hoofdletter, it's heeft een apostrof en de komma's staan goed."
+   ],
+   "uh": "Which version of the first sentence is correct?",
+   "ctx": "You read this text with mistakes from a pupil: \"hi sara, its me, Jade! i went to paris last friday with my class. We had a great time, but it was very cold. Your going to love it when we go next year, I think. see you soon, Jade\""
+  },
+  {
+   "v": "What is the best way to correct your own text?",
+   "o": [
+    "\"read it slowly and check capitals, punctuation and tricky words\"",
+    "\"read it fast once\"",
+    "\"let a spell checker decide everything, I suppose, really, to be honest\"",
+    "\"check only the first line\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 4,
+   "u": "Let op hoofdletters, leestekens en spelling. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: zo vind je meer fouten dan met één snelle blik.",
+    "Koos je \"\"read it fast once\"\"? Dan denk je dat snel lezen genoeg is. Je ziet fouten dan niet, dus langzaam is beter.",
+    "Koos je \"\"let a spell checker decide everything, I suppose, really, to be honest\"\"? Dan pak je een computer. Een spellingscontrole mist its en it's, en kent jouw bedoeling niet.",
+    "Koos je \"\"check only the first line\"\"? Dan kies je een deel. Fouten staan overal, dus je moet alles lezen."
+   ],
+   "uh": "What is the best way to correct your own text?",
+   "ctx": "You read this text with mistakes from a pupil: \"hi sara, its me, Jade! i went to paris last friday with my class. We had a great time, but it was very cold. Your going to love it when we go next year, I think. see you soon, Jade\""
+  },
+  {
+   "v": "Why does 'Science Museum' have capital letters?",
+   "o": [
+    "\"it is the first sentence, you know\"",
+    "\"it is a verb\"",
+    "\"it is the name of a place\"",
+    "\"it is a number\""
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 0,
+   "u": "Let op hoofdletters, leestekens en spelling. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"it is the first sentence, you know\"\"? Dan denk je dat het de eerste zin is. Het staat midden in de zin, en toch heeft het hoofdletters.",
+    "Koos je \"\"it is a verb\"\"? Dan pak je een werkwoord. Het is een naam, en geen werkwoord.",
+    "Klopt: namen van plaatsen en gebouwen krijgen hoofdletters.",
+    "Koos je \"\"it is a number\"\"? Dan kies je een getal. Het is een naam, en geen getal."
+   ],
+   "uh": "Why does 'Science Museum' have capital letters?",
+   "ctx": "You read this part of an e-mail: \"On Saturday, 12 July, my friend Tim and I went to the Science Museum in London. We saw dinosaurs, robots, and a huge space rocket. It's the best museum I have ever visited. Do you want to go there with me? Write to me, and tell me what you think!\""
+  },
+  {
+   "v": "Which mark ends 'Do you want to go there with me'?",
+   "o": [
+    "\"a full stop\"",
+    "\"a question mark\"",
+    "\"a comma\"",
+    "\"an exclamation mark\""
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 1,
+   "u": "Let op hoofdletters, leestekens en spelling. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"a full stop\"\"? Dan denk je dat een punt past. Een punt sluit een mededeling af, en geen vraag.",
+    "Klopt: een vraag eindigt altijd met een vraagteken aan het eind.",
+    "Koos je \"\"a comma\"\"? Dan pak je een komma. Een komma is een pauze, en geen eind.",
+    "Koos je \"\"an exclamation mark\"\"? Dan kies je een uitroepteken. Dat laat gevoel zien, en dit is een vraag."
+   ],
+   "uh": "Which mark ends 'Do you want to go there with me'?",
+   "ctx": "You read this part of an e-mail: \"On Saturday, 12 July, my friend Tim and I went to the Science Museum in London. We saw dinosaurs, robots, and a huge space rocket. It's the best museum I have ever visited. Do you want to go there with me? Write to me, and tell me what you think!\""
+  },
+  {
+   "v": "Which form is right in 'Do you want to come ___?' meaning 'also'?",
+   "o": [
+    "\"to\"",
+    "\"two\"",
+    "\"tu\"",
+    "\"too\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 3,
+   "u": "Let op hoofdletters, leestekens en spelling. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"to\"\"? Dan denk je dat to past. To betekent naar of om te, en niet ook.",
+    "Koos je \"\"two\"\"? Dan pak je een getal. Two is twee, en past niet in de zin.",
+    "Koos je \"\"tu\"\"? Dan kies je een verzonnen woord. Tu bestaat niet, dus het is fout.",
+    "Klopt: too aan het eind van de zin betekent ook."
+   ],
+   "uh": "Which form is right in 'Do you want to come ___?' meaning 'also'?",
+   "ctx": "You read this part of an e-mail: \"On Saturday, 12 July, my friend Tim and I went to the Science Museum in London. We saw dinosaurs, robots, and a huge space rocket. It's the best museum I have ever visited. Do you want to go there with me? Write to me, and tell me what you think!\""
+  },
+  {
+   "v": "Which sentence has a correct contraction?",
+   "o": [
+    "\"It's the best museum I have ever visited.\"",
+    "\"Its' the best museum I have ever visited.\"",
+    "\"I'ts the best museum I have ever visited.\"",
+    "\"It's' the best museum I have ever visited, to be honest.\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 2,
+   "u": "Let op hoofdletters, leestekens en spelling. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: it's heeft de apostrof tussen t en s, want het is it is.",
+    "Koos je \"\"Its' the best museum I have ever visited.\"\"? Dan denk je dat de apostrof achteraan hoort. Hij staat tussen it en s, dus it's.",
+    "Koos je \"\"I'ts the best museum I have ever visited.\"\"? Dan pak je een verkeerde plek voor de apostrof. De letters t en s horen samen, dus it's.",
+    "Koos je \"\"It's' the best museum I have ever visited, to be honest.\"\"? Dan kies je een dubbele apostrof. Er is er maar één nodig, en hij staat tussen t en s."
+   ],
+   "uh": "Which sentence has a correct contraction?",
+   "ctx": "You read this part of an e-mail: \"On Saturday, 12 July, my friend Tim and I went to the Science Museum in London. We saw dinosaurs, robots, and a huge space rocket. It's the best museum I have ever visited. Do you want to go there with me? Write to me, and tell me what you think!\""
+  }
+ ],
+ "oe": [
+  {
+   "bron": "Examenstijl",
+   "ctx": "A classmate wrote this sentence in an e-mail to a friend in England: \"last friday i went to amsterdam with my cousin and we saw the royal palace.\" Your teacher reads the e-mail and says that there are several capital letter mistakes in this sentence, which makes it look careless.",
+   "v": "Write the corrected sentence in English and name two types of words that need a capital.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Last Friday I went to Amsterdam with my cousin and we saw the Royal Palace (1p). Dag en plaats of naam hebben hoofdletters (1p). I krijgt altijd een hoofdletter (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Your pen friend wrote: \"Its going to be a great summer, your coming to visit me in july.\" You want to help your friend to check the text for mistakes.",
+   "v": "Write the corrected sentence in English and name the mistakes in Dutch.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "It's going to be a great summer (1p). You're coming to visit me in July (1p). Fouten: apostrof, you're/your, hoofdletter bij maand (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "You want to write a list of things you take with you on holiday: a towel, a book, sunglasses and a camera. You write it in one sentence in English.",
+   "v": "Write one sentence in English with the list and the right punctuation.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "I take a towel, a book, sunglasses and a camera (1p). Komma's tussen de onderdelen (1p). Punt aan het eind (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "A classmate writes in his English letter: \"We went to there house, and there dog was friendly.\" He confused two words that sound the same but have a different meaning and spelling.",
+   "v": "Write the corrected sentence and explain the mistake in Dutch.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "We went to their house, and their dog was friendly (1p). Their is bezit, there is plaats (1p). Een duidelijke uitleg (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "A friend says during an English lesson: \"Spelling and capitals do not matter in an e-mail, because everybody can still read it anyway and nobody will check it.\" You do not agree.",
+   "v": "Write two sentences in English that explain why spelling and punctuation matter, with an example.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Fouten kunnen verwarrend of onbeleefd zijn (1p). Voorbeeld: its / it's of their / there (1p). Een duidelijke uitleg (1p)."
+  }
+ ]
+}
