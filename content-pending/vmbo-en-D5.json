@@ -1,0 +1,682 @@
+{
+ "id": "D5",
+ "lo": "en.D.5",
+ "gs": 2,
+ "naam": "Goede zinnen bouwen: woordvolgorde",
+ "beschrijving": "Je leert in het Engels zinnen met de goede woordvolgorde te schrijven: onderwerp, werkwoord en object, bijwoorden als always op de juiste plek, plaats voor tijd, vragen en ontkenningen met do en bijvoeglijke naamwoorden vóór het naamwoord.",
+ "ceStatus": "SE",
+ "binas": "",
+ "val": "",
+ "onderwerpen": [
+  "Basisvolgorde",
+  "Always en andere bijwoorden",
+  "Plaats en tijd",
+  "Vragen en ontkenningen",
+  "Bijvoeglijke naamwoorden en controleren"
+ ],
+ "sam": "De Engelse woordvolgorde is onderwerp, werkwoord, object, plaats en tijd. Always en often staan vóór het werkwoord maar na am, is en are. Vragen en ontkenningen maak je met do. Na could you tell me gebruik je de gewone volgorde. Het bijvoeglijk naamwoord staat vóór het naamwoord.",
+ "begrippen": [
+  {
+   "t": "Woordvolgorde",
+   "d": "De vaste volgorde van de woorden in een zin."
+  },
+  {
+   "t": "Onderwerp",
+   "d": "Wie of wat iets doet, bijvoorbeeld I of the museum."
+  },
+  {
+   "t": "Werkwoord",
+   "d": "Wat er gebeurt, bijvoorbeeld play of opens."
+  },
+  {
+   "t": "Lijdend voorwerp",
+   "d": "Wat de handeling krijgt, bijvoorbeeld football."
+  },
+  {
+   "t": "Frequentiewoord",
+   "d": "Een woord als always of often dat zegt hoe vaak."
+  },
+  {
+   "t": "Hulpwerkwoord",
+   "d": "Een werkwoord als do dat vragen en ontkenningen vormt."
+  },
+  {
+   "t": "Ontkenning",
+   "d": "Een zin met do not."
+  },
+  {
+   "t": "Vraagzin",
+   "d": "Een zin die begint met do, does of did."
+  },
+  {
+   "t": "Bijvoeglijk",
+   "d": "Een woord dat een zelfstandig naamwoord beschrijft, zoals small."
+  },
+  {
+   "t": "Plaats",
+   "d": "Waar iets gebeurt, bijvoorbeeld to the cinema."
+  },
+  {
+   "t": "Tijd",
+   "d": "Wanneer iets gebeurt, bijvoorbeeld yesterday."
+  },
+  {
+   "t": "Controleren",
+   "d": "Je zinnen nalezen op de volgorde."
+  }
+ ],
+ "sv": [
+  {
+   "v": "Welke zin heeft de goede woordvolgorde?",
+   "o": [
+    "\"Play I football every day, denk ik.\"",
+    "\"I play football every day.\"",
+    "\"I football play every day.\"",
+    "\"Every day football I play.\""
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 0,
+   "u": "Let op de volgorde van de woorden. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"Play I football every day, denk ik.\"\"? Dan denk je dat het werkwoord vooraan mag. In het Engels staat het onderwerp eerst, dus I hoort voor play.",
+    "Klopt: de Engelse basisvolgorde is onderwerp, werkwoord, lijdend voorwerp en dan de tijd.",
+    "Koos je \"\"I football play every day.\"\"? Dan pak je de Nederlandse volgorde met het lijdend voorwerp voor het werkwoord. In het Engels staat het werkwoord vóór het object, dus het is play football.",
+    "Koos je \"\"Every day football I play.\"\"? Dan kies je een volgorde die vooral Nederlands klinkt. In het Engels komt het onderwerp meestal eerst, dus het begin klopt niet."
+   ],
+   "uh": "Welke zin heeft de goede woordvolgorde?"
+  },
+  {
+   "v": "Welke zin is goed?",
+   "o": [
+    "\"She plays always tennis, volgens mij.\"",
+    "\"Always she plays tennis.\"",
+    "\"She plays tennis always.\"",
+    "\"She always plays tennis.\""
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 1,
+   "u": "Let op de volgorde van de woorden. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"She plays always tennis, volgens mij.\"\"? Dan denk je dat always tussen werkwoord en object past. Het staat voor het werkwoord, en niet erachter.",
+    "Koos je \"\"Always she plays tennis.\"\"? Dan pak je een zin met always vooraan. Dat is ongebruikelijk, en benadrukt iets wat hier niet bedoeld is.",
+    "Koos je \"\"She plays tennis always.\"\"? Dan kies je always aan het eind. Dat klinkt niet natuurlijk, en het hoort voor het werkwoord.",
+    "Klopt: een bijwoord van frequentie staat meestal vóór het werkwoord."
+   ],
+   "uh": "Welke zin is goed?"
+  },
+  {
+   "v": "Waar staat 'always' bij het werkwoord 'to be'?",
+   "o": [
+    "\"I am always happy.\"",
+    "\"I always am happy, zeg maar.\"",
+    "\"Always I am happy.\"",
+    "\"I am happy always.\""
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 1,
+   "u": "Let op de volgorde van de woorden. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: bij am, is en are staat always erachter.",
+    "Koos je \"\"I always am happy, zeg maar.\"\"? Dan denk je dat always voor am staat. Bij to be komt always erná, en niet ervoor.",
+    "Koos je \"\"Always I am happy.\"\"? Dan pak je always vooraan. Dat is geen normale zinsvolgorde, en niet nodig.",
+    "Koos je \"\"I am happy always.\"\"? Dan kies je always aan het eind. Dat klinkt niet natuurlijk, en het hoort na am."
+   ],
+   "uh": "Waar staat 'always' bij het werkwoord 'to be'?"
+  },
+  {
+   "v": "Welke zin heeft de goede volgorde van plaats en tijd?",
+   "o": [
+    "\"We went yesterday to the cinema, eigenlijk.\"",
+    "\"Yesterday we to the cinema went.\"",
+    "\"We went to the cinema yesterday.\"",
+    "\"We the cinema went yesterday.\""
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 2,
+   "u": "Let op de volgorde van de woorden. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"We went yesterday to the cinema, eigenlijk.\"\"? Dan denk je dat de tijd voor de plaats mag. In het Engels komt de plaats eerst, en de tijd daarna.",
+    "Koos je \"\"Yesterday we to the cinema went.\"\"? Dan pak je een Nederlandse structuur met het werkwoord laat. In het Engels staat het werkwoord vroeg in de zin, dus went hoort na we.",
+    "Klopt: in het Engels komt eerst de plaats en daarna de tijd.",
+    "Koos je \"\"We the cinema went yesterday.\"\"? Dan kies je een zin zonder to. Het werkwoord moet voor de plaats staan, en je hebt to nodig."
+   ],
+   "uh": "Welke zin heeft de goede volgorde van plaats en tijd?"
+  },
+  {
+   "v": "Welke vraag is goed?",
+   "o": [
+    "\"You like pizza?\"",
+    "\"Do you like pizza?\"",
+    "\"Like you pizza?\"",
+    "\"Does you like pizza?\""
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 3,
+   "u": "Let op de volgorde van de woorden. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"You like pizza?\"\"? Dan denk je dat je alleen met je stem een vraag stelt. In geschreven Engels gebruik je do, en een vraagteken alleen is te weinig.",
+    "Klopt: een gewone vraag begint met do, does of did.",
+    "Koos je \"\"Like you pizza?\"\"? Dan pak je de Nederlandse omkering. In het Engels gebruik je een hulpwerkwoord, en niet je + like.",
+    "Koos je \"\"Does you like pizza?\"\"? Dan kies je does bij you. Bij you hoort do, en does hoort bij he, she en it."
+   ],
+   "uh": "Welke vraag is goed?"
+  },
+  {
+   "v": "Welke ontkenning is goed?",
+   "o": [
+    "\"I like not fish.\"",
+    "\"I not like fish.\"",
+    "\"I do not likes fish, denk ik.\"",
+    "\"I do not like fish.\""
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 3,
+   "u": "Let op de volgorde van de woorden. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"I like not fish.\"\"? Dan denk je dat not achter het werkwoord kan. In het Engels gebruik je do not, en not komt voor het werkwoord.",
+    "Koos je \"\"I not like fish.\"\"? Dan pak je not direct voor het werkwoord. Je hebt do nodig, om de ontkenning te vormen.",
+    "Koos je \"\"I do not likes fish, denk ik.\"\"? Dan kies je een s na do not. Na do not gebruik je het hele werkwoord, dus like en niet likes.",
+    "Klopt: de ontkenning gebeurt met do not en het hele werkwoord."
+   ],
+   "uh": "Welke ontkenning is goed?"
+  },
+  {
+   "v": "Waar staat het bijvoeglijk naamwoord in het Engels?",
+   "o": [
+    "\"vóór het zelfstandig naamwoord: a red car\"",
+    "\"erachter: a car red\"",
+    "\"los van het naamwoord\"",
+    "\"aan het begin van de zin, volgens mij, eigenlijk\""
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 4,
+   "u": "Let op de volgorde van de woorden. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: in het Engels staat het bijvoeglijk naamwoord vóór het zelfstandig naamwoord.",
+    "Koos je \"\"erachter: a car red\"\"? Dan denk je dat het erachter staat. Dat is een andere taal, en klopt niet voor het Engels.",
+    "Koos je \"\"los van het naamwoord\"\"? Dan pak je een willekeurige plek. Het hoort er direct voor, en niet ver weg.",
+    "Koos je \"\"aan het begin van de zin, volgens mij, eigenlijk\"\"? Dan kies je de eerste plek van de zin. Het staat bij het naamwoord, en niet vooraan."
+   ],
+   "uh": "Waar staat het bijvoeglijk naamwoord in het Engels?"
+  },
+  {
+   "v": "Which sentence has a word order mistake?",
+   "o": [
+    "\"We swam in the sea.\"",
+    "\"Do you like the beach?\"",
+    "\"I always am happy at the beach!\"",
+    "\"I hope to see you soon, I suppose.\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 1,
+   "u": "Let op de volgorde van de woorden. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"We swam in the sea.\"\"? Dan denk je dat deze zin fout is. Onderwerp, werkwoord en plaats staan goed, dus de volgorde klopt.",
+    "Koos je \"\"Do you like the beach?\"\"? Dan pak je de vraag. Do you like staat correct, dus er is geen fout.",
+    "Klopt: bij am hoort always erachter: i am always.",
+    "Koos je \"\"I hope to see you soon, I suppose.\"\"? Dan kies je de slotzin. De volgorde klopt, dus er is geen fout."
+   ],
+   "uh": "Which sentence has a word order mistake?",
+   "ctx": "You read this part of an e-mail from Eva. One sentence has a mistake: \"Hi Tom, Yesterday I went to the beach with my family. We swam in the sea and we played volleyball. I always am happy at the beach! Do you like the beach? I hope to see you soon. Love, Eva\""
+  },
+  {
+   "v": "What is the correct version of the mistake?",
+   "o": [
+    "\"I happy am always at the beach, you know!\"",
+    "\"I am always happy at the beach!\"",
+    "\"Always I am happy at the beach!\"",
+    "\"I am happy always at the beach!\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 1,
+   "u": "Let op de volgorde van de woorden. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"I happy am always at the beach, you know!\"\"? Dan denk je dat het bijvoeglijk naamwoord voor am staat. Dat klopt niet, want happy komt na am.",
+    "Klopt: always staat na am, dus i am always happy.",
+    "Koos je \"\"Always I am happy at the beach!\"\"? Dan pak je always vooraan. Dat is ongebruikelijk, en klopt niet voor deze zin.",
+    "Koos je \"\"I am happy always at the beach!\"\"? Dan kies je always achter happy. Dat klinkt niet natuurlijk, en hoort na am."
+   ],
+   "uh": "What is the correct version of the mistake?",
+   "ctx": "You read this part of an e-mail from Eva. One sentence has a mistake: \"Hi Tom, Yesterday I went to the beach with my family. We swam in the sea and we played volleyball. I always am happy at the beach! Do you like the beach? I hope to see you soon. Love, Eva\""
+  },
+  {
+   "v": "Which word shows when Eva went to the beach?",
+   "o": [
+    "\"beach\"",
+    "\"family\"",
+    "\"sea\"",
+    "\"Yesterday\""
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 2,
+   "u": "Let op de volgorde van de woorden. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"beach\"\"? Dan denk je dat beach een tijd is. Het is een plaats, en geen tijd.",
+    "Koos je \"\"family\"\"? Dan pak je een persoon. Family zegt niets over tijd, en geen moment.",
+    "Koos je \"\"sea\"\"? Dan kies je een plaats. Sea is geen tijd, en geeft geen moment.",
+    "Klopt: yesterday is een tijdswoord en staat hier aan het begin."
+   ],
+   "uh": "Which word shows when Eva went to the beach?",
+   "ctx": "You read this part of an e-mail from Eva. One sentence has a mistake: \"Hi Tom, Yesterday I went to the beach with my family. We swam in the sea and we played volleyball. I always am happy at the beach! Do you like the beach? I hope to see you soon. Love, Eva\""
+  },
+  {
+   "v": "Which sentence is a question?",
+   "o": [
+    "\"Do you like the beach?\"",
+    "\"We swam in the sea.\"",
+    "\"I hope to see you soon, I think.\"",
+    "\"Love, Eva\""
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 3,
+   "u": "Let op de volgorde van de woorden. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: de vraag begint met do en eindigt met een vraagteken.",
+    "Koos je \"\"We swam in the sea.\"\"? Dan denk je dat dit een vraag is. Het is een mededeling, en eindigt op een punt.",
+    "Koos je \"\"I hope to see you soon, I think.\"\"? Dan pak je de slotzin. Het is een wens, en geen vraag.",
+    "Koos je \"\"Love, Eva\"\"? Dan kies je de groet. Het is een afsluiting, en geen vraag."
+   ],
+   "uh": "Which sentence is a question?",
+   "ctx": "You read this part of an e-mail from Eva. One sentence has a mistake: \"Hi Tom, Yesterday I went to the beach with my family. We swam in the sea and we played volleyball. I always am happy at the beach! Do you like the beach? I hope to see you soon. Love, Eva\""
+  },
+  {
+   "v": "Which sentence is a negative sentence?",
+   "o": [
+    "\"Could you tell me where I can buy tickets?\"",
+    "\"Please send me the information soon.\"",
+    "\"I do not know the price.\"",
+    "\"I would like to know what time the museum opens.\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 3,
+   "u": "Let op de volgorde van de woorden. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"Could you tell me where I can buy tickets?\"\"? Dan denk je dat dit ontkennend is. Er staat geen not, en het is een vraag.",
+    "Koos je \"\"Please send me the information soon.\"\"? Dan pak je een verzoek. Er staat geen not, dus het is niet ontkennend.",
+    "Klopt: do not maakt de zin ontkennend, en het werkwoord blijft gewoon staan.",
+    "Koos je \"\"I would like to know what time the museum opens.\"\"? Dan kies je een wens. Er staat geen not, dus het is niet ontkennend."
+   ],
+   "uh": "Which sentence is a negative sentence?",
+   "ctx": "You read this e-mail from Ben: \"Dear Sir or Madam, I would like to know what time the museum opens. Could you tell me where I can buy tickets? I do not know the price. Please send me the information soon. Yours faithfully, Ben\""
+  },
+  {
+   "v": "Which word order follows 'where' in 'Could you tell me where I can buy tickets?'",
+   "o": [
+    "\"can I buy, I suppose\"",
+    "\"I can buy\"",
+    "\"buy I can\"",
+    "\"I buy can\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 3,
+   "u": "Let op de volgorde van de woorden. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"can I buy, I suppose\"\"? Dan denk je dat je hier omkeert. Dat doe je alleen in een directe vraag, en niet na could you tell me.",
+    "Klopt: na could you tell me gebruik je de gewone volgorde onderwerp-werkwoord.",
+    "Koos je \"\"buy I can\"\"? Dan pak je een omgekeerde volgorde. Dit klopt in geen enkele Engelse zin, en het werkwoord moet na het onderwerp.",
+    "Koos je \"\"I buy can\"\"? Dan kies je een verkeerde plaats voor can. Can staat voor het werkwoord, en niet erachter."
+   ],
+   "uh": "Which word order follows 'where' in 'Could you tell me where I can buy tickets?'",
+   "ctx": "You read this e-mail from Ben: \"Dear Sir or Madam, I would like to know what time the museum opens. Could you tell me where I can buy tickets? I do not know the price. Please send me the information soon. Yours faithfully, Ben\""
+  },
+  {
+   "v": "Which group of words has the correct order in 'what time the museum opens'?",
+   "o": [
+    "\"opens the museum, you know\"",
+    "\"the opens museum\"",
+    "\"museum the opens\"",
+    "\"the museum opens\""
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 0,
+   "u": "Let op de volgorde van de woorden. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"opens the museum, you know\"\"? Dan denk je dat het werkwoord eerst komt. Dat doe je in een directe vraag, maar dit is een bijzin na what time.",
+    "Koos je \"\"the opens museum\"\"? Dan zet dit je het werkwoord midden in de naam. Het lidwoord hoort bij museum, en opens volgt daarna.",
+    "Koos je \"\"museum the opens\"\"? Dan zet dit je het lidwoord achter het naamwoord. Het staat ervoor, dus the museum.",
+    "Klopt: onderwerp en dan werkwoord, dus the museum opens."
+   ],
+   "uh": "Which group of words has the correct order in 'what time the museum opens'?",
+   "ctx": "You read this e-mail from Ben: \"Dear Sir or Madam, I would like to know what time the museum opens. Could you tell me where I can buy tickets? I do not know the price. Please send me the information soon. Yours faithfully, Ben\""
+  },
+  {
+   "v": "Where is the adjective in 'long blond hair'?",
+   "o": [
+    "\"before the noun hair\"",
+    "\"after the noun hair\"",
+    "\"at the start of the sentence\"",
+    "\"at the end of the sentence\""
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 4,
+   "u": "Let op de volgorde van de woorden. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: long en blond staan vóór hair, en dat is de Engelse volgorde.",
+    "Koos je \"\"after the noun hair\"\"? Dan denk je dat het erachter staat. In het Engels staat het ervoor, en niet erna.",
+    "Koos je \"\"at the start of the sentence\"\"? Dan pak je de eerste plek van de zin. Het staat bij het naamwoord, en niet aan het begin.",
+    "Koos je \"\"at the end of the sentence\"\"? Dan kies je het slot van de zin. Het staat vóór hair, en niet aan het eind."
+   ],
+   "uh": "Where is the adjective in 'long blond hair'?",
+   "ctx": "You read this text about a friend: \"My best friend is called Lisa. She has long blond hair and big blue eyes. She plays tennis every Saturday. Last summer she went to Spain with her parents. They stayed in a small hotel near the sea.\""
+  },
+  {
+   "v": "Which words show how often Lisa plays tennis?",
+   "o": [
+    "\"last summer\"",
+    "\"near the sea, I think\"",
+    "\"every Saturday\"",
+    "\"small\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 2,
+   "u": "Let op de volgorde van de woorden. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"last summer\"\"? Dan denk je dat last summer de frequentie geeft. Het is een moment in het verleden, en geen herhaling.",
+    "Koos je \"\"near the sea, I think\"\"? Dan pak je een plaats. Het zegt niets over hoe vaak, dus het past niet.",
+    "Klopt: every saturday zegt hoe vaak ze tennist.",
+    "Koos je \"\"small\"\"? Dan kies je een bijvoeglijk naamwoord. Het zegt niets over hoe vaak, dus het past niet."
+   ],
+   "uh": "Which words show how often Lisa plays tennis?",
+   "ctx": "You read this text about a friend: \"My best friend is called Lisa. She has long blond hair and big blue eyes. She plays tennis every Saturday. Last summer she went to Spain with her parents. They stayed in a small hotel near the sea.\""
+  },
+  {
+   "v": "Which sentence has the time at the beginning?",
+   "o": [
+    "\"She plays tennis every Saturday.\"",
+    "\"Last summer she went to Spain with her parents.\"",
+    "\"My best friend is called Lisa.\"",
+    "\"They stayed in a small hotel near the sea, to be honest.\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 2,
+   "u": "Let op de volgorde van de woorden. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"She plays tennis every Saturday.\"\"? Dan denk je dat every saturday vooraan staat. Het staat achteraan, en niet vooraan.",
+    "Klopt: last summer staat vooraan als tijdsaanduiding.",
+    "Koos je \"\"My best friend is called Lisa.\"\"? Dan pak je de eerste zin. Er staat geen tijd in, dus het is geen tijdsaanduiding.",
+    "Koos je \"\"They stayed in a small hotel near the sea, to be honest.\"\"? Dan kies je de laatste zin. Er staat geen tijd in, dus het is geen tijdsaanduiding."
+   ],
+   "uh": "Which sentence has the time at the beginning?",
+   "ctx": "You read this text about a friend: \"My best friend is called Lisa. She has long blond hair and big blue eyes. She plays tennis every Saturday. Last summer she went to Spain with her parents. They stayed in a small hotel near the sea.\""
+  },
+  {
+   "v": "Why is 'I am always happy' correct but 'I always am happy' wrong?",
+   "o": [
+    "\"always goes before am\"",
+    "\"always goes at the end of the sentence\"",
+    "\"always never moves\"",
+    "\"always goes after am, is and are\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 1,
+   "u": "Let op de volgorde van de woorden. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"always goes before am\"\"? Dan denk je dat always voor am hoort. Dat geldt bij gewone werkwoorden, maar niet bij to be.",
+    "Koos je \"\"always goes at the end of the sentence\"\"? Dan pak je het slot van de zin. Always staat bij het werkwoord, en niet aan het eind.",
+    "Koos je \"\"always never moves\"\"? Dan kies je een vaste plek. Always verschuift met het werkwoord, dus het is niet vast.",
+    "Klopt: bij am, is en are staat een bijwoord van frequentie erachter."
+   ],
+   "uh": "Why is 'I am always happy' correct but 'I always am happy' wrong?",
+   "ctx": "You read this part of an e-mail from Eva. One sentence has a mistake: \"Hi Tom, Yesterday I went to the beach with my family. We swam in the sea and we played volleyball. I always am happy at the beach! Do you like the beach? I hope to see you soon. Love, Eva\""
+  },
+  {
+   "v": "Which sentence has the correct order?",
+   "o": [
+    "\"We swam in the sea and we played volleyball.\"",
+    "\"We in the sea swam and played we volleyball, you know.\"",
+    "\"Swam we in the sea.\"",
+    "\"We swam the sea in.\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 0,
+   "u": "Let op de volgorde van de woorden. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: in beide delen staat het onderwerp voor het werkwoord.",
+    "Koos je \"\"We in the sea swam and played we volleyball, you know.\"\"? Dan denk je dat de plaats voor het werkwoord kan. Het werkwoord moet vroeg komen, en we hoort voor played.",
+    "Koos je \"\"Swam we in the sea.\"\"? Dan pak je een omgekeerde volgorde. Een mededeling begint met het onderwerp, en dus met we.",
+    "Koos je \"\"We swam the sea in.\"\"? Dan kies je een nawoord. In het Engels staat in vóór the sea, dus de volgorde klopt niet."
+   ],
+   "uh": "Which sentence has the correct order?",
+   "ctx": "You read this part of an e-mail from Eva. One sentence has a mistake: \"Hi Tom, Yesterday I went to the beach with my family. We swam in the sea and we played volleyball. I always am happy at the beach! Do you like the beach? I hope to see you soon. Love, Eva\""
+  },
+  {
+   "v": "Put in the right order: 'Yesterday / went / I / to the beach'.",
+   "o": [
+    "\"I yesterday went to the beach, really.\"",
+    "\"Went I to the beach yesterday.\"",
+    "\"Yesterday I went to the beach.\"",
+    "\"Yesterday to the beach I went.\""
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 2,
+   "u": "Let op de volgorde van de woorden. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"I yesterday went to the beach, really.\"\"? Dan plaats je yesterday tussen onderwerp en werkwoord. Het hoort aan het begin of het eind, maar niet daartussen.",
+    "Koos je \"\"Went I to the beach yesterday.\"\"? Dan begin je met het werkwoord. Een mededeling heeft het onderwerp eerst, dus I went.",
+    "Klopt: tijd, onderwerp, werkwoord en dan de plaats.",
+    "Koos je \"\"Yesterday to the beach I went.\"\"? Dan zet dit je de plaats voor het onderwerp. Na yesterday volgt I, en de plaats staat achteraan."
+   ],
+   "uh": "Put in the right order: 'Yesterday / went / I / to the beach'.",
+   "ctx": "You read this part of an e-mail from Eva. One sentence has a mistake: \"Hi Tom, Yesterday I went to the beach with my family. We swam in the sea and we played volleyball. I always am happy at the beach! Do you like the beach? I hope to see you soon. Love, Eva\""
+  },
+  {
+   "v": "Which question is correct?",
+   "o": [
+    "\"Could you tell me what time does the museum open?\"",
+    "\"Could you tell me what time the museum opens?\"",
+    "\"Could you tell me what time opens the museum?\"",
+    "\"Could you tell me what the museum time opens?\""
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 3,
+   "u": "Let op de volgorde van de woorden. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"Could you tell me what time does the museum open?\"\"? Dan denk je dat je moet omkeren. Dat doe je alleen in een directe vraag, en niet in een ingebedde zin.",
+    "Klopt: na could you tell me gebruik je de gewone volgorde.",
+    "Koos je \"\"Could you tell me what time opens the museum?\"\"? Dan pak je een omgekeerde volgorde. Het onderwerp staat voor het werkwoord, dus the museum opens.",
+    "Koos je \"\"Could you tell me what the museum time opens?\"\"? Dan kies je een verkeerde plek voor time. Time hoort bij what, en staat vóór the museum."
+   ],
+   "uh": "Which question is correct?",
+   "ctx": "You read this e-mail from Ben: \"Dear Sir or Madam, I would like to know what time the museum opens. Could you tell me where I can buy tickets? I do not know the price. Please send me the information soon. Yours faithfully, Ben\""
+  },
+  {
+   "v": "Make the sentence negative: 'I know the price.'",
+   "o": [
+    "\"I know not the price.\"",
+    "\"I not know the price.\"",
+    "\"I do not knows the price, to be honest.\"",
+    "\"I do not know the price.\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 3,
+   "u": "Let op de volgorde van de woorden. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"I know not the price.\"\"? Dan denk je dat not na het werkwoord staat. Je gebruikt do not, en not komt voor het werkwoord.",
+    "Koos je \"\"I not know the price.\"\"? Dan pak je not direct voor het werkwoord. Je hebt do nodig, om de ontkenning te vormen.",
+    "Koos je \"\"I do not knows the price, to be honest.\"\"? Dan kies je een s na do not. Na do not blijft het werkwoord hetzelfde, dus know en niet knows.",
+    "Klopt: do not maakt de zin ontkennend en know blijft hetzelfde."
+   ],
+   "uh": "Make the sentence negative: 'I know the price.'",
+   "ctx": "You read this e-mail from Ben: \"Dear Sir or Madam, I would like to know what time the museum opens. Could you tell me where I can buy tickets? I do not know the price. Please send me the information soon. Yours faithfully, Ben\""
+  },
+  {
+   "v": "Which sentence is wrong?",
+   "o": [
+    "\"Send please me the information.\"",
+    "\"Please send me the information, I suppose.\"",
+    "\"I would like to know the price.\"",
+    "\"I do not know the price.\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 0,
+   "u": "Let op de volgorde van de woorden. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: please staat vóór het werkwoord en me staat direct na send, dus please send me.",
+    "Koos je \"\"Please send me the information, I suppose.\"\"? Dan denk je dat deze zin fout is. Hij is goed, en staat al in de mail.",
+    "Koos je \"\"I would like to know the price.\"\"? Dan pak je een correcte zin. De volgorde klopt, dus er is geen fout.",
+    "Koos je \"\"I do not know the price.\"\"? Dan kies je de ontkenning. Do not know is goed, dus er is geen fout."
+   ],
+   "uh": "Which sentence is wrong?",
+   "ctx": "You read this e-mail from Ben: \"Dear Sir or Madam, I would like to know what time the museum opens. Could you tell me where I can buy tickets? I do not know the price. Please send me the information soon. Yours faithfully, Ben\""
+  },
+  {
+   "v": "Which noun phrase is correct?",
+   "o": [
+    "\"a hotel small near the sea, you know\"",
+    "\"a near the sea small hotel\"",
+    "\"a small hotel near the sea\"",
+    "\"a hotel near small the sea\""
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 4,
+   "u": "Let op de volgorde van de woorden. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"a hotel small near the sea, you know\"\"? Dan denk je dat small na het naamwoord kan. In het Engels staat het ervoor, dus a small hotel.",
+    "Koos je \"\"a near the sea small hotel\"\"? Dan pak je een rare volgorde. Near the sea hoort na hotel, en small ervoor.",
+    "Klopt: het bijvoeglijk naamwoord staat vóór hotel en de plaats erna.",
+    "Koos je \"\"a hotel near small the sea\"\"? Dan kies je small voor sea. Small beschrijft het hotel, en niet de zee."
+   ],
+   "uh": "Which noun phrase is correct?",
+   "ctx": "You read this text about a friend: \"My best friend is called Lisa. She has long blond hair and big blue eyes. She plays tennis every Saturday. Last summer she went to Spain with her parents. They stayed in a small hotel near the sea.\""
+  },
+  {
+   "v": "Which sentence puts place before time?",
+   "o": [
+    "\"She went last summer to Spain, really.\"",
+    "\"She went to Spain last summer.\"",
+    "\"Last she summer went to Spain.\"",
+    "\"She last summer went Spain to.\""
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 2,
+   "u": "Let op de volgorde van de woorden. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"She went last summer to Spain, really.\"\"? Dan denk je dat de tijd voor de plaats kan. In het Engels komt de plaats eerst, en de tijd daarna.",
+    "Klopt: in het Engels komt eerst de plaats en daarna de tijd.",
+    "Koos je \"\"Last she summer went to Spain.\"\"? Dan pak je een verspreide tijd. Last summer hoort bij elkaar, dus het klopt niet.",
+    "Koos je \"\"She last summer went Spain to.\"\"? Dan kies je een verkeerde plek voor to. To komt voor Spain, en niet erna."
+   ],
+   "uh": "Which sentence puts place before time?",
+   "ctx": "You read this text about a friend: \"My best friend is called Lisa. She has long blond hair and big blue eyes. She plays tennis every Saturday. Last summer she went to Spain with her parents. They stayed in a small hotel near the sea.\""
+  },
+  {
+   "v": "Which sentence is correct?",
+   "o": [
+    "\"She plays often tennis on Saturday, I think.\"",
+    "\"Often plays she tennis on Saturday.\"",
+    "\"She tennis often plays on Saturday.\"",
+    "\"She often plays tennis on Saturday.\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 1,
+   "u": "Let op de volgorde van de woorden. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"She plays often tennis on Saturday, I think.\"\"? Dan denk je dat often tussen werkwoord en object past. Het staat voor het werkwoord, en niet erachter.",
+    "Koos je \"\"Often plays she tennis on Saturday.\"\"? Dan pak je een omgekeerde volgorde. Het onderwerp komt vóór het werkwoord, dus she plays.",
+    "Koos je \"\"She tennis often plays on Saturday.\"\"? Dan kies je een Nederlandse volgorde. Het lijdend voorwerp staat achter het werkwoord, dus plays tennis.",
+    "Klopt: often staat vóór het werkwoord, dus tussen she en plays."
+   ],
+   "uh": "Which sentence is correct?",
+   "ctx": "You read this text about a friend: \"My best friend is called Lisa. She has long blond hair and big blue eyes. She plays tennis every Saturday. Last summer she went to Spain with her parents. They stayed in a small hotel near the sea.\""
+  },
+  {
+   "v": "How can you check the word order of your own text?",
+   "o": [
+    "\"read it aloud and check subject, verb and object\"",
+    "\"count the words\"",
+    "\"write it twice\"",
+    "\"look only at the spelling, to be honest, you know, I think\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 4,
+   "u": "Let op de volgorde van de woorden. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: zo hoor je fouten en kun je onderwerp, werkwoord en object controleren.",
+    "Koos je \"\"count the words\"\"? Dan denk je dat het aantal woorden zegt of de volgorde klopt. Dat zegt niets over de volgorde, dus het helpt niet.",
+    "Koos je \"\"write it twice\"\"? Dan pak je een tweede versie. Je moet controleren, en niet dezelfde fout herhalen.",
+    "Koos je \"\"look only at the spelling, to be honest, you know, I think\"\"? Dan kies je alleen spelling. De volgorde is iets anders, en spelling controleert dat niet."
+   ],
+   "uh": "How can you check the word order of your own text?",
+   "ctx": "You read this text about a friend: \"My best friend is called Lisa. She has long blond hair and big blue eyes. She plays tennis every Saturday. Last summer she went to Spain with her parents. They stayed in a small hotel near the sea.\""
+  }
+ ],
+ "oe": [
+  {
+   "bron": "Examenstijl",
+   "ctx": "In your essay for English class you wrote: \"Yesterday we to the cinema went, and I always am tired after a film.\" Your teacher says that there are two word order mistakes in this sentence.",
+   "v": "Write the corrected sentence in English and name the two mistakes in Dutch.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Yesterday we went to the cinema (1p). I am always tired after a film (1p). Fout 1: werkwoord te laat, fout 2: always na am (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "A classmate wrote: \"She plays often tennis on Saturday.\" and \"I like not vegetables.\" You help your classmate and want to explain how to put these sentences in the correct order.",
+   "v": "Write the two corrected sentences in English.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "She often plays tennis on Saturday (1p). I do not like vegetables (1p). Beide zinnen volledig goed (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "You want to ask your penfriend a question in your e-mail: you want to know at what time his school starts, and you also want to ask whether he likes sports, in a polite and correct way.",
+   "v": "Write two correct questions in English.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Could you tell me what time your school starts (1p). Do you like sports (1p). Juiste woordvolgorde in beide vragen (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "You describe your bedroom in an e-mail: it is a big, bright room on the second floor with a blue carpet. You want to put the adjectives in the right order and place in the right order.",
+   "v": "Write two correct sentences in English that describe the room.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "I have a big bright room on the second floor (1p). The room has a blue carpet (1p). Bijvoeglijke naamwoorden voor het naamwoord (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Your friend says: \"Word order does not matter, because everybody understands me anyway.\" You do not agree.",
+   "v": "Write two sentences in English that explain why word order matters, with an example.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Een verkeerde volgorde kan verwarrend zijn (1p). Voorbeeld: I always am happy (1p). Een duidelijke uitleg (1p)."
+  }
+ ]
+}

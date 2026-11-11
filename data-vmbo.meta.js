@@ -1210,6 +1210,27 @@ var VAKKEN_VMBO = [
       "nOe": 5,
       "nBeg": 12,
       "hasSam": true
+     },
+     {
+      "id": "D5",
+      "lo": "en.D.5",
+      "gs": 2,
+      "naam": "Goede zinnen bouwen: woordvolgorde",
+      "beschrijving": "Je leert in het Engels zinnen met de goede woordvolgorde te schrijven: onderwerp, werkwoord en object, bijwoorden als always op de juiste plek, plaats voor tijd, vragen en ontkenningen met do en bijvoeglijke naamwoorden vóór het naamwoord.",
+      "ceStatus": "SE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Basisvolgorde",
+       "Always en andere bijwoorden",
+       "Plaats en tijd",
+       "Vragen en ontkenningen",
+       "Bijvoeglijke naamwoorden en controleren"
+      ],
+      "nSv": 27,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
      }
     ]
    }
