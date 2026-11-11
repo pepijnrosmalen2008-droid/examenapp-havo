@@ -489,7 +489,7 @@ Deze modules hebben al 25 vragen en een samenvatting, maar nog niet de v2-uitleg
 antwoord, onderwerp-tags, casusvragen en gekeurde figuren. Zelfde werkwijze; bestaande
 vragen zijn grondstof, niet heilig.
 
-- [ ] **HAVO · Biologie** (`bi`) · domein A (opwaarderen)
+- [x] **HAVO · Biologie** (`bi`) · domein A (opwaarderen)  (alle leerdoelen op v2)
   - [x] A1 · bi.A.1 Onderzoek opzetten
   - [x] A2 · bi.A.2 Betrouwbaarheid en validiteit beoordelen
   - [x] A3 · bi.A.3 Data verwerken en grafieken lezen
