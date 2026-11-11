@@ -48510,595 +48510,711 @@ var VAKKEN = [
      },
      {
       "id": "M4",
+      "lo": "bi.M.4",
+      "gs": 2,
       "naam": "Fotosynthese & celademhaling",
-      "beschrijving": "Hoe planten glucose opbouwen met licht (fotosynthese) en hoe cellen glucose met zuurstof afbreken voor energie (celademhaling), incl. assimilatie/dissimilatie en gisting.",
-      "ceStatus": "CE",
+      "beschrijving": "Je beschrijft fotosynthese en aerobe en anaerobe dissimilatie met hun grondstoffen, producten en energieomzetting, leest beperkende factoren af uit grafieken, onderscheidt assimilatie en dissimilatie en verklaart de gaswisseling van een plant in licht en donker.",
+      "ceStatus": "CE+SE",
+      "binas": "",
+      "val": "",
       "onderwerpen": [
-       "Fotosynthese (opbouw glucose)",
-       "Celademhaling (afbraak glucose)",
-       "Bladgroenkorrel & mitochondrium",
-       "Assimilatie vs dissimilatie",
-       "Anaerobe dissimilatie (gisting)",
-       "Gasuitwisseling & beperkende factoren"
+       "Fotosynthese",
+       "Beperkende factoren",
+       "Assimilatie en dissimilatie",
+       "Aerobe dissimilatie",
+       "Anaerobe dissimilatie",
+       "Gaswisseling bij planten"
       ],
-      "sam": "Bij fotosynthese bouwt een plant glucose op uit CO2 en water met behulp van lichtenergie; dit gebeurt in de bladgroenkorrels en levert zuurstof op. Bij celademhaling breken cellen glucose met zuurstof af tot CO2 en water, waarbij energie vrijkomt; dit gebeurt in de mitochondriën. De producten van het ene proces zijn de grondstoffen van het andere. Zonder zuurstof verloopt de afbraak onvolledig (anaerobe dissimilatie of gisting) en levert veel minder energie op.",
+      "sam": "Fotosynthese (bladgroenkorrel): CO2 + water + licht → glucose + zuurstof. Beperkende factoren: licht, CO2, temperatuur (enzymen). Assimilatie = opbouwen (zetmeel, cellulose, vetten; eiwitten met nitraat), kost energie. Aerobe dissimilatie (mitochondrium): glucose + zuurstof → CO2 + water + ~36 ATP. Anaeroob: spier → melkzuur, gist → alcohol + CO2; 2 ATP. Kalkwater wordt troebel door CO2. Donker: netto CO2 af; compensatiepunt: fotosynthese = dissimilatie.",
       "begrippen": [
        {
         "t": "Fotosynthese",
-        "d": "Opbouw van glucose uit CO2 en water met lichtenergie; gebeurt in de bladgroenkorrels."
-       },
-       {
-        "t": "Celademhaling",
-        "d": "Afbraak van glucose met zuurstof tot CO2 en water, waarbij energie vrijkomt; gebeurt in de mitochondrien."
-       },
-       {
-        "t": "Bladgroenkorrel",
-        "d": "Celorganel met bladgroen waarin de fotosynthese plaatsvindt."
+        "d": "Proces in bladgroenkorrels waarbij met lichtenergie glucose en zuurstof worden gemaakt uit koolstofdioxide en water."
        },
        {
         "t": "Bladgroen",
-        "d": "De groene kleurstof die de lichtenergie voor de fotosynthese opvangt."
+        "d": "Kleurstof in bladgroenkorrels die licht opvangt voor de fotosynthese (chlorofyl)."
        },
        {
-        "t": "Glucose",
-        "d": "Energierijke suiker die bij fotosynthese wordt gemaakt en bij celademhaling wordt afgebroken."
-       },
-       {
-        "t": "Mitochondrium",
-        "d": "Celorganel waarin glucose met zuurstof wordt afgebroken en energie vrijkomt."
-       },
-       {
-        "t": "Assimilatie",
-        "d": "Opbouw van complexe stoffen uit eenvoudige, zoals bij de fotosynthese."
-       },
-       {
-        "t": "Dissimilatie",
-        "d": "Afbraak van complexe stoffen waarbij energie vrijkomt, zoals bij de celademhaling."
-       },
-       {
-        "t": "Anaerobe dissimilatie",
-        "d": "Afbraak van glucose zonder zuurstof (gisting); levert veel minder energie, met melkzuur of alcohol als restproduct."
-       },
-       {
-        "t": "Huidmondje",
-        "d": "Opening in het blad waardoor CO2 naar binnen en zuurstof en waterdamp naar buiten gaan."
+        "t": "Zetmeel",
+        "d": "Opslagstof van planten, opgebouwd uit glucose; kleurt blauwzwart met jodium."
        },
        {
         "t": "Beperkende factor",
-        "d": "De factor (licht, CO2 of temperatuur) die op dat moment de fotosynthesesnelheid begrenst."
+        "d": "De factor die op een moment de snelheid van een proces bepaalt, zoals licht, CO2 of temperatuur."
+       },
+       {
+        "t": "Assimilatie",
+        "d": "Opbouwen van grotere stoffen uit kleinere; kost energie."
+       },
+       {
+        "t": "Dissimilatie",
+        "d": "Afbreken van stoffen waarbij energie vrijkomt, vastgelegd in ATP."
+       },
+       {
+        "t": "Nitraat",
+        "d": "Stikstofzout uit de bodem dat een plant nodig heeft om aminozuren en eiwitten te maken."
+       },
+       {
+        "t": "Aerobe dissimilatie",
+        "d": "Volledige afbraak van glucose met zuurstof tot koolstofdioxide en water; levert veel ATP."
+       },
+       {
+        "t": "ATP",
+        "d": "Energiedrager in de cel; wordt gemaakt bij dissimilatie en gebruikt voor celprocessen."
+       },
+       {
+        "t": "Anaerobe dissimilatie",
+        "d": "Gedeeltelijke afbraak van glucose zonder zuurstof; levert maar 2 ATP per glucose."
+       },
+       {
+        "t": "Melkzuur",
+        "d": "Eindproduct van anaerobe dissimilatie in spieren."
+       },
+       {
+        "t": "Alcoholgisting",
+        "d": "Anaerobe afbraak van glucose door gist tot alcohol en koolstofdioxide."
+       },
+       {
+        "t": "Huidmondje",
+        "d": "Opening tussen twee sluitcellen in het blad waardoor gassen in en uit gaan."
        },
        {
         "t": "Compensatiepunt",
-        "d": "De lichtsterkte waarbij fotosynthese en celademhaling elkaar precies opheffen."
+        "d": "Lichtintensiteit waarbij fotosynthese en dissimilatie even snel zijn; netto geen gaswisseling."
+       },
+       {
+        "t": "Kalkwater",
+        "d": "Helder reagens dat troebel wordt door koolstofdioxide."
        }
       ],
       "sv": [
        {
-        "v": "Wat is fotosynthese?",
+        "v": "Welke stoffen heeft een plant nodig voor de fotosynthese?",
         "o": [
-         "De opbouw van glucose uit CO2 en water met lichtenergie",
-         "De afbraak van glucose waarbij warmte en veel energie vrijkomen",
-         "De opname van zuurstof door de wortels",
-         "Het verdampen van water via de bladeren"
-        ],
-        "c": 0,
-        "d": 1,
-        "u": "Fotosynthese is de opbouw van glucose uit CO2 en water met lichtenergie. Koos je 'afbraak van glucose'? Dat is juist celademhaling, het tegenovergestelde. Onthoud: foto = licht, synthese = opbouw.",
-        "uo": [
-         "Klopt: met lichtenergie bouwt de plant glucose op uit CO2 en water.",
-         "Dat is celademhaling (afbraak, energie vrij), juist het omgekeerde van fotosynthese.",
-         "Zuurstofopname hoort bij ademhaling; fotosynthese geeft juist zuurstof af.",
-         "Waterverdamping is verdamping, geen opbouw van glucose."
-        ],
-        "uh": "Foto = licht, synthese = opbouw: glucose maken met licht."
-       },
-       {
-        "v": "Wat gebeurt er bij celademhaling?",
-        "o": [
-         "Er wordt glucose opgebouwd uit koolstofdioxide",
-         "Lichtenergie wordt door bladgroen ingevangen",
-         "Water wordt met behulp van licht gesplitst",
-         "Glucose wordt met zuurstof afgebroken en levert energie"
-        ],
-        "c": 3,
-        "d": 1,
-        "u": "Bij celademhaling wordt glucose met zuurstof afgebroken en komt energie vrij. Koos je 'glucose opbouwen'? Dat is fotosynthese. Onthoud: celademhaling = glucose verbranden voor energie.",
-        "uo": [
-         "Glucose opbouwen is fotosynthese, niet celademhaling.",
-         "Licht invangen hoort bij fotosynthese; celademhaling heeft geen licht nodig.",
-         "Water splitsen met licht hoort bij fotosynthese.",
-         "Klopt: glucose wordt met zuurstof afgebroken en dat levert energie."
-        ],
-        "uh": "Celademhaling = glucose met zuurstof verbranden voor energie."
-       },
-       {
-        "v": "Waar in de cel vindt de fotosynthese plaats?",
-        "o": [
-         "In de celkern met het DNA",
-         "In het mitochondrium",
-         "In de bladgroenkorrel",
-         "In het celmembraan"
+         "zuurstof en water, met licht als energiebron",
+         "glucose en zuurstof, met warmte als energiebron",
+         "koolstofdioxide en water, met licht als energiebron",
+         "koolstofdioxide en glucose, met ATP uit de mitochondriën"
         ],
         "c": 2,
         "d": 1,
-        "u": "Onthoud: fotosynthese gebeurt in de bladgroenkorrel (met bladgroen).",
+        "s": 0,
+        "u": "Fotosynthese: koolstofdioxide + water → glucose + zuurstof, met lichtenergie.",
         "uo": [
-         "De celkern bevat het DNA, niet de fotosynthese.",
-         "Het mitochondrium is juist voor de celademhaling.",
-         "Klopt: de bladgroenkorrel bevat bladgroen en doet de fotosynthese.",
-         "Het celmembraan is de celgrens, geen fotosynthese-plek."
+         "Koos je zuurstof en water? Zuurstof komt bij fotosynthese vrij, het wordt niet gebruikt. De koolstof voor glucose komt uit koolstofdioxide.",
+         "Koos je glucose en zuurstof? Dat zijn juist de producten van de fotosynthese. Ze zijn de grondstoffen van de dissimilatie, het omgekeerde proces.",
+         "Klopt: een plant maakt met lichtenergie glucose uit koolstofdioxide en water. Zuurstof komt daarbij vrij als bijproduct.",
+         "Koos je glucose met ATP? Glucose is wat de plant maakt, niet wat hij gebruikt. De energie komt bij fotosynthese uit licht, niet uit ATP van mitochondriën."
         ],
-        "uh": "Fotosynthese = in de bladgroenkorrel."
+        "uh": "CO2 + water + licht."
        },
        {
-        "v": "Waar vindt de celademhaling vooral plaats?",
+        "v": "Welke energieomzetting vindt plaats bij de fotosynthese?",
         "o": [
-         "In de bladgroenkorrel",
-         "In het mitochondrium",
-         "In de vacuole",
-         "In de celwand"
-        ],
-        "c": 1,
-        "d": 1,
-        "u": "Onthoud: celademhaling gebeurt in het mitochondrium.",
-        "uo": [
-         "De bladgroenkorrel is voor de fotosynthese.",
-         "Klopt: het mitochondrium breekt glucose met zuurstof af.",
-         "De vacuole is een opslagruimte, geen ademhalingsplek.",
-         "De celwand geeft stevigheid, geen celademhaling."
-        ],
-        "uh": "Celademhaling = in het mitochondrium."
-       },
-       {
-        "v": "Een plant staat in het volledige donker. Wat gebeurt er?",
-        "o": [
-         "Celademhaling gaat door, fotosynthese stopt",
-         "Fotosynthese gaat door, celademhaling stopt",
-         "Beide processen stoppen volledig",
-         "Beide processen gaan gewoon door"
-        ],
-        "c": 0,
-        "d": 2,
-        "u": "Fotosynthese heeft licht nodig en stopt in het donker; celademhaling gaat dag en nacht door. Onthoud: alleen fotosynthese heeft licht nodig.",
-        "uo": [
-         "Klopt: zonder licht geen fotosynthese, maar de celademhaling loopt door.",
-         "Andersom: juist de fotosynthese stopt, niet de celademhaling.",
-         "De celademhaling stopt niet; die gaat continu door.",
-         "Fotosynthese kan niet doorgaan zonder licht."
-        ],
-        "uh": "Alleen fotosynthese heeft licht nodig; ademhaling gaat altijd door."
-       },
-       {
-        "v": "Welke stof vangt het licht op voor de fotosynthese?",
-        "o": [
-         "Zetmeel",
-         "Water",
-         "Zuurstof",
-         "Bladgroen"
-        ],
-        "c": 3,
-        "d": 1,
-        "u": "Onthoud: bladgroen (chlorofyl) vangt het licht op.",
-        "uo": [
-         "Zetmeel is een opslagstof, geen lichtvanger.",
-         "Water is een grondstof, maar vangt geen licht op.",
-         "Zuurstof is een product, geen lichtvanger.",
-         "Klopt: bladgroen vangt de lichtenergie op."
-        ],
-        "uh": "Bladgroen vangt het licht op voor de fotosynthese."
-       },
-       {
-        "v": "Wat zijn de grondstoffen (uitgangsstoffen) van de fotosynthese?",
-        "o": [
-         "Glucose en zuurstof",
-         "Koolstofdioxide en water",
-         "Zuurstof en water",
-         "Glucose en koolstofdioxide"
+         "chemische energie in glucose wordt omgezet in warmte",
+         "lichtenergie wordt omgezet in chemische energie in glucose",
+         "warmte uit de omgeving wordt omgezet in lichtenergie",
+         "chemische energie in ATP wordt omgezet in licht"
         ],
         "c": 1,
         "d": 2,
-        "u": "De grondstoffen zijn koolstofdioxide en water; glucose en zuurstof zijn juist de producten. Onthoud: CO2 + water gaan erin, glucose + O2 komen eruit.",
+        "s": 0,
+        "u": "Bij fotosynthese wordt lichtenergie vastgelegd als chemische energie in glucose.",
         "uo": [
-         "Glucose en zuurstof zijn de producten, niet de grondstoffen.",
-         "Klopt: uit CO2 en water bouwt de plant glucose op.",
-         "Zuurstof is een product; water klopt wel, maar zuurstof niet.",
-         "Glucose is een product, geen grondstof."
+         "Koos je glucose naar warmte? Dat gebeurt bij dissimilatie, waarbij een deel van de energie uit glucose als warmte vrijkomt. Fotosynthese gaat de andere kant op.",
+         "Klopt: bladgroen vangt licht op en de plant legt die energie vast in de bindingen van glucose. Zo wordt lichtenergie chemische energie.",
+         "Koos je warmte naar licht? Een plant maakt geen licht. Hij vangt licht op en zet dat om in chemische energie.",
+         "Koos je ATP naar licht? Licht maken doen alleen een paar dieren, zoals vuurvliegjes. Een plant vangt licht op in plaats van het te maken."
         ],
-        "uh": "Fotosynthese: CO2 + water erin, glucose + zuurstof eruit."
+        "uh": "Licht wordt vastgelegd."
        },
        {
-        "v": "Wat zijn de eindproducten van de fotosynthese?",
+        "v": "Welk resultaat verwacht je na de zetmeelproef op dit blad?",
         "o": [
-         "Koolstofdioxide en water",
-         "Uitsluitend zuurstof en warmte",
-         "Glucose en zuurstof",
-         "Water en losse energie"
-        ],
-        "c": 2,
-        "d": 2,
-        "u": "De producten zijn glucose en zuurstof. Koos je 'CO2 en water'? Dat zijn de producten van de celademhaling. Onthoud: fotosynthese maakt glucose en zuurstof.",
-        "uo": [
-         "CO2 en water zijn de producten van de celademhaling.",
-         "Er komt ook glucose bij; zuurstof alleen is onvolledig.",
-         "Klopt: fotosynthese levert glucose en zuurstof.",
-         "Er ontstaat glucose (energie in een stof), niet losse energie."
-        ],
-        "uh": "Fotosynthese maakt glucose en zuurstof."
-       },
-       {
-        "v": "Wat zijn de eindproducten van de celademhaling?",
-        "o": [
-         "Koolstofdioxide en water",
-         "Glucose en zuurstof",
-         "Alleen glucose",
-         "Bladgroen en water"
+         "het deel onder de folie kleurt niet blauwzwart, de rest wel",
+         "het hele blad kleurt blauwzwart, want het stond een dag in het licht",
+         "alleen het deel onder de folie kleurt blauwzwart",
+         "het blad kleurt nergens, want het heeft eerst in het donker gestaan"
         ],
         "c": 0,
         "d": 2,
-        "u": "De producten zijn koolstofdioxide en water (plus energie). Koos je 'glucose en zuurstof'? Dat zijn de producten van de fotosynthese. Onthoud: ademhaling levert CO2 en water.",
+        "s": 0,
+        "u": "Zonder licht geen fotosynthese en dus geen zetmeel onder de folie.",
         "uo": [
-         "Klopt: celademhaling levert CO2 en water op, plus energie.",
-         "Glucose en zuurstof zijn juist de grondstoffen van de celademhaling.",
-         "Glucose wordt juist afgebroken, niet gevormd.",
-         "Bladgroen is geen product van de celademhaling."
+         "Klopt: onder de folie kwam geen licht, dus daar kon geen fotosynthese plaatsvinden en is geen zetmeel gemaakt. Alleen de rest kleurt met jodium.",
+         "Koos je het hele blad? Onder de folie kwam geen licht. Door de twee dagen donker was het oude zetmeel op, dus daar is niets te kleuren.",
+         "Koos je alleen onder de folie? Dat is precies omgekeerd. Juist waar licht viel, heeft de plant glucose gemaakt en als zetmeel opgeslagen.",
+         "Koos je nergens? Na het donker was het zetmeel op, maar daarna stond de plant een dag in het licht. In de belichte delen is weer zetmeel gemaakt."
         ],
-        "uh": "Celademhaling levert CO2 en water (en energie)."
+        "uh": "Waar kwam licht?",
+        "ctx": "Een leerling zet een plant twee dagen in het donker, zodat het zetmeel in de bladeren op raakt. Daarna plakt ze op één blad een strook aluminiumfolie en zet de plant een dag in het licht. Ze kookt het blad in alcohol om het bladgroen eruit te halen en druppelt er jodium op."
        },
        {
-        "v": "Via welke openingen neemt een blad koolstofdioxide op?",
+        "v": "Wat toont deze proef met het bonte blad aan?",
         "o": [
-         "De houtvaten",
-         "De bastvaten",
-         "De celkernen",
-         "De huidmondjes"
-        ],
-        "c": 3,
-        "d": 1,
-        "u": "Onthoud: gasuitwisseling gaat via de huidmondjes.",
-        "uo": [
-         "Houtvaten vervoeren water, geen gassen naar buiten.",
-         "Bastvaten vervoeren suikers, geen CO2-opname.",
-         "Celkernen bevatten DNA, geen gasuitwisseling.",
-         "Klopt: via de huidmondjes komt CO2 binnen en gaat O2 naar buiten."
-        ],
-        "uh": "Gasuitwisseling van het blad gaat via de huidmondjes."
-       },
-       {
-        "v": "Waarom noemen we de fotosynthese een vorm van assimilatie?",
-        "o": [
-         "Omdat er ingewikkelde stoffen juist worden afgebroken tot eenvoudige",
-         "Omdat uit eenvoudige stoffen een complexe stof wordt gebouwd",
-         "Omdat er energie bij vrijkomt",
-         "Omdat er zuurstof wordt verbruikt"
-        ],
-        "c": 1,
-        "d": 2,
-        "u": "Assimilatie is opbouw: uit CO2 en water (eenvoudig) wordt glucose (complex) gebouwd. Onthoud: assimilatie = opbouw, dissimilatie = afbraak.",
-        "uo": [
-         "Afbraak hoort bij dissimilatie, niet bij assimilatie.",
-         "Klopt: assimilatie is opbouw van een complexe stof uit eenvoudige.",
-         "Bij assimilatie wordt energie juist vastgelegd, niet vrijgemaakt.",
-         "Fotosynthese verbruikt geen zuurstof; het maakt zuurstof."
-        ],
-        "uh": "Assimilatie = opbouw (fotosynthese); dissimilatie = afbraak."
-       },
-       {
-        "v": "Waarom noemen we de celademhaling een vorm van dissimilatie?",
-        "o": [
-         "Omdat er juist glucose wordt opgebouwd uit koolstofdioxide en water",
-         "Omdat er licht voor nodig is",
-         "Omdat een complexe stof wordt afgebroken en energie vrijkomt",
-         "Omdat het in de bladgroenkorrel gebeurt"
-        ],
-        "c": 2,
-        "d": 2,
-        "u": "Dissimilatie is afbraak met energie: glucose (complex) wordt afgebroken. Onthoud: dissimilatie = afbraak waarbij energie vrijkomt.",
-        "uo": [
-         "Glucose opbouwen is assimilatie, niet dissimilatie.",
-         "Celademhaling heeft geen licht nodig.",
-         "Klopt: een complexe stof wordt afgebroken en er komt energie vrij.",
-         "Celademhaling gebeurt in het mitochondrium, niet de bladgroenkorrel."
-        ],
-        "uh": "Dissimilatie = afbraak van glucose met energie vrij."
-       },
-       {
-        "v": "Waarom kan een plant 's nachts wel ademhalen maar niet fotosynthetiseren?",
-        "o": [
-         "Voor de fotosynthese is licht nodig, voor de celademhaling niet",
-         "De celademhaling heeft juist wel voortdurend licht nodig om te werken",
-         "'s Nachts is er in de plant geen zuurstof",
-         "'s Nachts is er in de plant geen glucose"
-        ],
-        "c": 0,
-        "d": 2,
-        "u": "Fotosynthese heeft licht nodig; celademhaling niet. Onthoud: alleen de fotosynthese is afhankelijk van licht.",
-        "uo": [
-         "Klopt: fotosynthese heeft licht nodig, celademhaling gaat ook zonder licht.",
-         "Andersom: de celademhaling heeft juist geen licht nodig.",
-         "Er is 's nachts wel zuurstof aanwezig voor de ademhaling.",
-         "Er is glucose opgeslagen; daar kan de plant 's nachts op ademhalen."
-        ],
-        "uh": "Alleen fotosynthese heeft licht nodig."
-       },
-       {
-        "v": "Overdag geeft een plant netto zuurstof af, ook al ademt hij ook. Hoe kan dat?",
-        "o": [
-         "Overdag ademt de plant helemaal niet en verbruikt geen zuurstof meer",
-         "Overdag neemt de plant geen CO2 op",
-         "Bij licht stopt de celademhaling",
-         "De fotosynthese verloopt overdag sneller dan de celademhaling"
+         "zetmeel wordt in de witte delen direct weer afgebroken",
+         "voor fotosynthese is licht nodig",
+         "de witte delen hebben geen huidmondjes en krijgen dus geen CO2",
+         "voor fotosynthese is bladgroen nodig"
         ],
         "c": 3,
         "d": 3,
-        "u": "Overdag maakt de fotosynthese meer zuurstof dan de ademhaling verbruikt, dus netto komt er zuurstof vrij. Onthoud: bij fel licht overtreft de fotosynthese de ademhaling.",
+        "s": 0,
+        "u": "Alleen de delen met bladgroen maken zetmeel: bladgroen is nodig.",
         "uo": [
-         "De plant ademt overdag gewoon door.",
-         "De plant neemt overdag juist CO2 op voor de fotosynthese.",
-         "De celademhaling stopt niet bij licht; die loopt door.",
-         "Klopt: de fotosynthese is overdag sneller, dus netto komt er zuurstof vrij."
+         "Koos je direct afbreken? Daar is in de proef geen aanwijzing voor. De eenvoudigste verklaring is dat er zonder bladgroen geen zetmeel is gemaakt.",
+         "Koos je licht? Het hele blad stond in hetzelfde felle licht. Het verschil tussen de delen is het bladgroen, niet het licht.",
+         "Koos je geen huidmondjes? De witte delen hebben gewoon huidmondjes en krijgen CO2. Wat ze missen is bladgroen, en dat is hier het enige verschil.",
+         "Klopt: het hele blad kreeg evenveel licht en CO2. Alleen de delen met bladgroen maakten zetmeel, dus bladgroen is nodig voor fotosynthese."
         ],
-        "uh": "Overdag > fotosynthese sneller dan ademhaling: netto zuurstof."
+        "uh": "Wat is het enige verschil?",
+        "ctx": "Een bonte plant heeft bladeren met groene delen en witte randen zonder bladgroen. De plant staat twee dagen in het donker en daarna een dag in fel licht. Dan doet een leerling de zetmeelproef op een blad: alleen de groene delen kleuren blauwzwart, de witte randen niet."
        },
        {
-        "v": "Welke gassen wisselt een plant bij fotosynthese met de lucht uit?",
+        "v": "Welke stof heeft Van Helmont over het hoofd gezien als bron van de massa?",
         "o": [
-         "Neemt zuurstof op, geeft koolstofdioxide af",
-         "Neemt koolstofdioxide op, geeft zuurstof af",
-         "Neemt koolstofdioxide op, geeft koolstofdioxide af",
-         "Neemt zuurstof op, geeft zuurstof af"
+         "mineralen die uit de aarde zijn opgenomen",
+         "zuurstof uit de lucht",
+         "koolstofdioxide uit de lucht",
+         "glucose uit het regenwater"
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 0,
+        "u": "De koolstof in een plant komt uit het CO2 in de lucht.",
+        "uo": [
+         "Koos je mineralen uit de aarde? De aarde werd maar 0,06 kg lichter. Mineralen zijn nodig, maar leveren maar een heel klein deel van de massa.",
+         "Koos je zuurstof uit de lucht? Een plant geeft bij fotosynthese juist zuurstof af. De massa komt uit het koolstofdioxide dat hij opneemt.",
+         "Klopt: bij fotosynthese legt de plant koolstofdioxide uit de lucht vast in glucose, en daarmee in zetmeel en cellulose. Het grootste deel van de droge massa komt dus uit de lucht.",
+         "Koos je glucose uit het regenwater? Regenwater bevat geen glucose. De plant maakt zijn glucose zelf uit koolstofdioxide en water."
+        ],
+        "uh": "Waar komt de koolstof vandaan?",
+        "ctx": "In de 17e eeuw plantte Van Helmont een wilgje van 2,3 kg in een pot met 90 kg gedroogde aarde. Vijf jaar lang gaf hij alleen regenwater. Daarna woog de wilg 76,7 kg, terwijl de aarde maar 0,06 kg lichter was geworden. Hij concludeerde dat de boom helemaal uit water was opgebouwd."
+       },
+       {
+        "v": "Welke factor kan de snelheid van de fotosynthese beperken?",
+        "o": [
+         "de hoeveelheid zuurstof in de lucht",
+         "de lichtintensiteit",
+         "de hoeveelheid zetmeel in het blad",
+         "de grootte van de bloemen"
         ],
         "c": 1,
-        "d": 2,
-        "u": "Bij fotosynthese neemt de plant CO2 op en geeft zuurstof af. Onthoud: CO2 erin, zuurstof eruit (omgekeerd aan ademhaling).",
+        "d": 1,
+        "s": 1,
+        "u": "Licht, CO2 en temperatuur zijn de bekende beperkende factoren.",
         "uo": [
-         "Zuurstof opnemen en CO2 afgeven hoort bij de ademhaling.",
-         "Klopt: de plant neemt CO2 op en geeft zuurstof af.",
-         "De plant geeft bij fotosynthese juist zuurstof af, geen CO2.",
-         "De plant neemt CO2 op, geen zuurstof, en geeft zuurstof af."
+         "Koos je zuurstof? Zuurstof is een product van de fotosynthese, geen grondstof. Meer of minder zuurstof in de lucht beperkt de fotosynthese niet.",
+         "Klopt: met te weinig licht kan de plant maar langzaam glucose maken. Ook de hoeveelheid koolstofdioxide en de temperatuur kunnen beperkend zijn.",
+         "Koos je zetmeel? Zetmeel is de opslagvorm van de glucose die al gemaakt is. Het is geen grondstof en beperkt de fotosynthese daarom niet.",
+         "Koos je de bloemen? Bloemen zijn er voor de voortplanting. Fotosynthese gebeurt vooral in de bladeren en hangt af van licht, CO2 en temperatuur."
         ],
-        "uh": "Fotosynthese: CO2 opnemen, zuurstof afgeven."
+        "uh": "Wat heeft de plant nodig?"
        },
        {
-        "v": "Bij fel licht groeit een plant niet harder, ook al is er licht genoeg. Wat kan de beperkende factor zijn?",
+        "v": "Welke factor is beperkend bij 0,03% CO2 en een lichtintensiteit van 20 klx?",
         "o": [
-         "De hoeveelheid koolstofdioxide",
-         "De hoeveelheid licht",
-         "De hoeveelheid bladgroen",
-         "De zwaartekracht"
+         "de hoeveelheid koolstofdioxide",
+         "het licht, want meer licht geeft altijd meer fotosynthese",
+         "de temperatuur van het water",
+         "de hoeveelheid zuurstof in het water"
         ],
         "c": 0,
         "d": 2,
-        "u": "Als licht niet meer beperkt, kan een tekort aan CO2 (of temperatuur) de snelheid begrenzen. Onthoud: de traagste factor bepaalt de fotosynthesesnelheid.",
+        "s": 1,
+        "u": "Bij 20 klx is de lijn bij 0,03% al vlak; meer CO2 maakt hem hoger, dus CO2 is beperkend.",
         "uo": [
-         "Klopt: als er licht genoeg is, kan CO2 de beperkende factor worden.",
-         "Licht is juist ruim aanwezig, dus dat is niet de beperking.",
-         "Bladgroen is meestal niet de beperkende factor bij fel licht.",
-         "Zwaartekracht speelt geen rol bij de fotosynthesesnelheid."
+         "Klopt: bij 0,03% CO2 helpt meer licht boven 10 klx niet meer. Met 0,1% CO2 gaat de snelheid bij hetzelfde licht wel omhoog, dus CO2 is beperkend.",
+         "Koos je licht? Meer licht helpt alleen zolang de lijn stijgt. Bij 0,03% CO2 is de lijn bij 20 klx al vlak; wat dan nog helpt, is meer koolstofdioxide.",
+         "Koos je temperatuur? Die was in de proef overal gelijk. Het verschil tussen de lijnen komt alleen door de hoeveelheid CO2.",
+         "Koos je zuurstof? Zuurstof komt bij fotosynthese vrij en beperkt haar niet. In de grafiek verschilt alleen de hoeveelheid CO2."
         ],
-        "uh": "De traagste factor (licht, CO2, temperatuur) beperkt de snelheid."
+        "uh": "Waar is de lijn vlak, en wat helpt dan nog?",
+        "ctx": "In een grafiek staat de fotosynthesesnelheid van een waterplant tegen de lichtintensiteit, bij 0,03% en bij 0,1% CO2 en steeds 20 °C. Bij beide lijnen stijgt de snelheid eerst evenredig met het licht. Bij 0,03% CO2 vlakt de lijn af vanaf 10 klx, bij 0,1% pas bij 25 klx en op een hoger niveau."
        },
        {
-        "v": "In welk celorganel wordt glucose met zuurstof afgebroken?",
+        "v": "Waarom stopt de fotosynthese bij 45 °C bijna helemaal?",
         "o": [
-         "De bladgroenkorrel",
-         "De celkern met chromosomen",
-         "Het mitochondrium",
-         "De grote vacuole"
-        ],
-        "c": 2,
-        "d": 1,
-        "u": "Onthoud: het mitochondrium breekt glucose met zuurstof af.",
-        "uo": [
-         "De bladgroenkorrel is voor de fotosynthese, niet de afbraak.",
-         "De celkern bevat het DNA, geen glucose-afbraak.",
-         "Klopt: in het mitochondrium wordt glucose met zuurstof afgebroken.",
-         "De vacuole is opslagruimte, geen afbraakplek."
-        ],
-        "uh": "Glucose-afbraak met zuurstof = in het mitochondrium."
-       },
-       {
-        "v": "Een spier werkt zo hard dat er te weinig zuurstof is. Wat gebeurt er met de glucose-afbraak?",
-        "o": [
-         "De afbraak stopt volledig tot er zuurstof is",
-         "Er treedt anaerobe dissimilatie op, met melkzuur",
-         "De fotosynthese neemt de energie over",
-         "Er komt juist meer energie per glucose vrij"
-        ],
-        "c": 1,
-        "d": 3,
-        "u": "Zonder genoeg zuurstof gaat de cel over op anaerobe dissimilatie; daarbij ontstaat melkzuur en veel minder energie. Onthoud: te weinig zuurstof = onvolledige afbraak, melkzuur.",
-        "uo": [
-         "De afbraak stopt niet; hij gaat anaeroob (zonder zuurstof) verder.",
-         "Klopt: zonder genoeg zuurstof ontstaat melkzuur (anaerobe dissimilatie).",
-         "Spiercellen doen niet aan fotosynthese.",
-         "Anaerobe afbraak levert juist minder energie, niet meer."
-        ],
-        "uh": "Te weinig zuurstof in de spier: anaerobe afbraak, melkzuur."
-       },
-       {
-        "v": "Waarom levert gisting (anaerobe dissimilatie) minder energie dan gewone celademhaling?",
-        "o": [
-         "Omdat er tijdens de gisting helemaal geen nieuwe glucose bij komt",
-         "Omdat het in de bladgroenkorrel gebeurt",
-         "Omdat er licht voor ontbreekt",
-         "Omdat de glucose zonder zuurstof niet volledig wordt afgebroken"
+         "het bladgroen verdampt bij die temperatuur uit het blad",
+         "het licht wordt bij hoge temperatuur zwakker",
+         "er is bij 45 °C geen koolstofdioxide meer in de lucht",
+         "de enzymen van de fotosynthese denatureren"
         ],
         "c": 3,
         "d": 2,
-        "u": "Zonder zuurstof wordt glucose maar deels afgebroken, dus komt er minder energie vrij (en blijft melkzuur of alcohol over). Onthoud: geen zuurstof = onvolledige afbraak = minder energie.",
+        "s": 1,
+        "u": "Fotosynthese gebeurt met enzymen; bij hoge temperatuur denatureren die.",
         "uo": [
-         "Of er glucose bij komt is niet de reden; het gaat om de onvolledige afbraak.",
-         "Gisting gebeurt niet in de bladgroenkorrel.",
-         "Licht speelt geen rol bij de afbraak van glucose.",
-         "Klopt: zonder zuurstof wordt glucose maar deels afgebroken, dus minder energie."
+         "Koos je verdampen van bladgroen? Bladgroen is een kleurstof die niet verdampt bij 45 °C. Wat kapotgaat, zijn de eiwitten: de enzymen.",
+         "Koos je zwakker licht? De lichtintensiteit hangt van de lamp of de zon af, niet van de temperatuur. Het probleem zit in de plant zelf.",
+         "Koos je geen CO2? De lucht bevat bij elke temperatuur koolstofdioxide. De plant kan het alleen niet meer verwerken als de enzymen kapot zijn.",
+         "Klopt: fotosynthese verloopt in stappen die door enzymen worden versneld. Boven het optimum denatureren die enzymen en stopt het proces."
         ],
-        "uh": "Geen zuurstof: glucose deels afgebroken, dus minder energie."
+        "uh": "Enzymen hebben een optimum."
        },
        {
-        "v": "Wat is het gasvormige eindproduct van de fotosynthese?",
+        "v": "Welke maatregel verhoogt rond het middaguur de opbrengst het meest?",
         "o": [
-         "Zuurstof",
-         "Koolstofdioxide",
-         "Waterstof",
-         "Stikstof"
+         "de kas verwarmen tot 40 °C, want warmte versnelt de enzymen",
+         "extra lampen, want meer licht geeft altijd meer fotosynthese",
+         "extra CO2 in de kas, want dat is dan de beperkende factor",
+         "de ramen sluiten, zodat er geen zuurstof meer bij kan komen"
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 1,
+        "u": "Bij fel licht en 25 °C is het gedaalde CO2-gehalte de beperkende factor.",
+        "uo": [
+         "Koos je 40 °C? Dat is ver boven het optimum van de meeste planten. De enzymen gaan dan juist slechter werken of denatureren.",
+         "Koos je extra lampen? Het zonlicht is al fel. Meer licht helpt niet als een andere factor, hier CO2, de snelheid beperkt.",
+         "Klopt: het licht is fel en de temperatuur goed, maar het CO2-gehalte is gehalveerd. Dan is CO2 beperkend en levert extra CO2 de meeste winst op.",
+         "Koos je de ramen sluiten? Zuurstof beperkt de fotosynthese niet. Dicht maken zorgt juist dat er nog minder CO2 van buiten binnenkomt."
+        ],
+        "uh": "Welke factor is gezakt?",
+        "ctx": "Een tuinder kweekt tomaten in een kas. Op een zomerdag is het licht fel en de temperatuur 25 °C. Hij meet dat de CO2-concentratie in de gesloten kas rond het middaguur zakt van 0,04% naar 0,02%. Hij twijfelt tussen extra lampen, extra verwarming of extra CO2."
+       },
+       {
+        "v": "Wat kun je concluderen over de situatie met de lamp op 10 cm zonder extra CO2?",
+        "o": [
+         "licht was toen nog steeds de beperkende factor, niet CO2",
+         "CO2 was toen de beperkende factor, niet het licht",
+         "de temperatuur was toen de beperkende factor",
+         "het takje was toen al op zijn maximale snelheid"
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 1,
+        "u": "Extra CO2 bij hetzelfde licht verhoogt de snelheid, dus CO2 was beperkend.",
+        "uo": [
+         "Koos je licht? Het licht veranderde niet tussen 40 en 65 belletjes. Alleen het CO2 kwam erbij, dus CO2 was beperkend.",
+         "Klopt: bij hetzelfde licht (10 cm) geeft extra CO2 meer belletjes, van 40 naar 65. Dan beperkte de hoeveelheid CO2 de fotosynthese.",
+         "Koos je temperatuur? In de proef is alleen het CO2 veranderd, en daardoor steeg de snelheid. Een andere factor was dus niet de beperkende.",
+         "Koos je maximale snelheid? Met extra CO2 ging het van 40 naar 65 belletjes. Het takje kon dus nog sneller."
+        ],
+        "uh": "Wat veranderde er tussen 40 en 65 belletjes?",
+        "ctx": "Een leerling telt de zuurstofbelletjes die een takje waterpest per minuut afgeeft. Met de lamp op 10 cm telt hij 40 belletjes, op 20 cm 22 en op 40 cm 8. Daarna zet hij de lamp weer op 10 cm en voegt natriumwaterstofcarbonaat toe, dat extra CO2 in het water brengt: nu telt hij 65 belletjes."
+       },
+       {
+        "v": "Welk proces is een voorbeeld van assimilatie?",
+        "o": [
+         "een plant maakt zetmeel uit glucose",
+         "een spiercel breekt glucose af tot CO2 en water",
+         "gist zet suiker om in alcohol en CO2",
+         "een lysosoom breekt een opgenomen bacterie af"
         ],
         "c": 0,
         "d": 1,
-        "u": "Onthoud: fotosynthese geeft zuurstof af.",
+        "s": 2,
+        "u": "Assimilatie is het opbouwen van grotere stoffen uit kleinere.",
         "uo": [
-         "Klopt: bij de fotosynthese komt zuurstof vrij.",
-         "CO2 is juist een grondstof van de fotosynthese.",
-         "Waterstof komt niet als gas vrij bij de fotosynthese.",
-         "Stikstof speelt geen rol in de fotosynthesevergelijking."
+         "Klopt: bij assimilatie bouwt een organisme grote stoffen op uit kleine. Zetmeel is een keten van vele glucosemoleculen.",
+         "Koos je glucose afbreken in de spiercel? Dat is dissimilatie: afbreken met energie als opbrengst. Assimilatie is juist opbouwen.",
+         "Koos je gist die suiker omzet? Ook dat is dissimilatie, namelijk alcoholgisting. Er wordt iets afgebroken, niet opgebouwd.",
+         "Koos je het lysosoom? Dat breekt af met verteringsenzymen. Assimilatie is het omgekeerde: kleine stoffen samenvoegen tot grote."
         ],
-        "uh": "Fotosynthese geeft zuurstof af."
+        "uh": "Opbouwen of afbreken?"
        },
        {
-        "v": "Een bont blad maakt op de witte delen (zonder bladgroen) geen zetmeel. Waarom niet?",
+        "v": "Waarvoor heeft een plant naast glucose ook nitraat uit de bodem nodig?",
         "o": [
-         "Daar zit geen water in het blad",
-         "Daar zitten geen huidmondjes",
-         "Zonder bladgroen kan daar geen fotosynthese plaatsvinden",
-         "Daar is de zuurstofconcentratie te hoog"
-        ],
-        "c": 2,
-        "d": 2,
-        "u": "Zonder bladgroen wordt er geen licht ingevangen, dus geen fotosynthese en geen zetmeel. Onthoud: geen bladgroen = geen fotosynthese.",
-        "uo": [
-         "Water zit ook in de witte delen; dat is niet de reden.",
-         "Huidmondjes zitten er ook; het gaat om het ontbreken van bladgroen.",
-         "Klopt: zonder bladgroen geen fotosynthese, dus geen zetmeel.",
-         "De zuurstofconcentratie is niet de oorzaak van geen zetmeel."
-        ],
-        "uh": "Geen bladgroen betekent geen fotosynthese, dus geen zetmeel."
-       },
-       {
-        "v": "Bij welk stofwisselingsproces ontstaat het melkzuur in vermoeide spieren?",
-        "o": [
-         "Anaerobe dissimilatie",
-         "Fotosynthese",
-         "Aerobe celademhaling",
-         "Assimilatie van glucose"
-        ],
-        "c": 0,
-        "d": 3,
-        "u": "Melkzuur ontstaat bij anaerobe dissimilatie: glucose-afbraak zonder zuurstof. Onthoud: melkzuur is het teken van afbraak zonder zuurstof.",
-        "uo": [
-         "Klopt: melkzuur ontstaat bij de afbraak van glucose zonder zuurstof.",
-         "Fotosynthese maakt glucose, geen melkzuur.",
-         "Bij aerobe celademhaling (met zuurstof) ontstaat geen melkzuur.",
-         "Assimilatie is opbouw, daarbij ontstaat geen melkzuur."
-        ],
-        "uh": "Melkzuur = glucose-afbraak zonder zuurstof (anaeroob)."
-       },
-       {
-        "v": "Waarom heten fotosynthese en celademhaling elkaars tegengestelde processen?",
-        "o": [
-         "Ze bouwen allebei glucose op",
-         "Ze gebeuren allebei in het mitochondrium",
-         "Ze hebben allebei licht nodig",
-         "De producten van het ene zijn de grondstoffen van het andere"
+         "om glucose sneller af te breken in de mitochondriën",
+         "om zetmeel op te slaan in de wortel",
+         "om cellulose voor de celwand te maken",
+         "om aminozuren en eiwitten te maken"
         ],
         "c": 3,
         "d": 2,
-        "u": "Wat de fotosynthese maakt (glucose, zuurstof) gebruikt de celademhaling, en omgekeerd. Onthoud: de twee processen vullen elkaar aan als een kringloop.",
+        "s": 2,
+        "u": "Eiwitten bevatten stikstof; die haalt de plant uit nitraat.",
         "uo": [
-         "Alleen de fotosynthese bouwt glucose op, de ademhaling breekt het af.",
-         "Fotosynthese gebeurt in de bladgroenkorrel, ademhaling in het mitochondrium.",
-         "Alleen de fotosynthese heeft licht nodig.",
-         "Klopt: glucose en zuurstof uit de fotosynthese zijn de grondstoffen van de ademhaling."
+         "Koos je sneller afbreken? Nitraat versnelt de dissimilatie niet. De plant gebruikt het als stikstofbron voor eiwitten en DNA.",
+         "Koos je zetmeel? Zetmeel bestaat alleen uit glucose-eenheden en bevat geen stikstof. Daarvoor is geen nitraat nodig.",
+         "Koos je cellulose? Ook cellulose bestaat alleen uit glucose. De plant kan het maken zonder mineralen uit de bodem.",
+         "Klopt: aminozuren bevatten stikstof. Die stikstof haalt de plant uit nitraat in de bodem. Met glucose en nitraat maakt hij aminozuren en dan eiwitten."
         ],
-        "uh": "De producten van het ene proces zijn de grondstoffen van het andere."
+        "uh": "Welk element zit in eiwitten en niet in suikers?"
        },
        {
-        "v": "Waar haalt een plant de energie vandaan om glucose te maken?",
+        "v": "Waarin verschillen assimilatie en dissimilatie?",
         "o": [
-         "Uit de mineralen in de bodem",
-         "Uit het zonlicht",
-         "Uit de opgenomen zuurstof",
-         "Uit het opgenomen koolstofdioxide"
-        ],
-        "c": 1,
-        "d": 1,
-        "u": "Onthoud: de energie voor de fotosynthese komt uit het zonlicht.",
-        "uo": [
-         "Mineralen zijn bouwstof, geen energiebron voor de fotosynthese.",
-         "Klopt: lichtenergie uit de zon drijft de fotosynthese aan.",
-         "Zuurstof is een product, geen energiebron voor de opbouw.",
-         "CO2 is een grondstof, maar levert niet de energie."
-        ],
-        "uh": "De energie voor de fotosynthese komt uit zonlicht."
-       },
-       {
-        "v": "In het donker geeft een plant koolstofdioxide af. Wat zegt dit over zijn stofwisseling?",
-        "o": [
-         "Er vindt op dat moment fotosynthese plaats",
-         "De plant neemt zuurstof af zonder iets te verbranden",
-         "Op dat moment is alleen de celademhaling actief",
-         "De plant bouwt op dat moment glucose op"
+         "assimilatie doen alleen planten, dissimilatie doen alleen dieren",
+         "bij assimilatie komt energie vrij, bij dissimilatie wordt energie vastgelegd",
+         "bij assimilatie worden stoffen opgebouwd, bij dissimilatie afgebroken",
+         "assimilatie gebeurt alleen in het donker, dissimilatie alleen in het licht"
         ],
         "c": 2,
-        "d": 3,
-        "u": "CO2 afgeven zonder licht betekent dat alleen de celademhaling loopt (fotosynthese ligt stil). Onthoud: in het donker meet je puur de ademhaling van de plant.",
+        "d": 2,
+        "s": 2,
+        "u": "Assimilatie bouwt op en kost energie; dissimilatie breekt af en levert energie.",
         "uo": [
-         "Fotosynthese kan niet in het donker; er is geen licht.",
-         "CO2 afgeven komt juist door het verbranden van glucose.",
-         "Klopt: zonder licht is alleen de celademhaling actief, die geeft CO2 af.",
-         "Glucose opbouwen is fotosynthese, en die ligt in het donker stil."
+         "Koos je planten en dieren? Planten doen allebei: ze maken glucose en zetmeel én breken glucose af in hun mitochondriën. Dieren assimileren ook, bijvoorbeeld eiwitten.",
+         "Koos je energie bij assimilatie? Het is andersom: opbouwen kost energie, afbreken levert energie op. Dat vrijkomen hoort bij dissimilatie.",
+         "Klopt: bij assimilatie maak je grote stoffen uit kleine, en dat kost energie. Bij dissimilatie breek je stoffen af, en dan komt energie vrij.",
+         "Koos je donker en licht? Dissimilatie gaat dag en nacht door. Alleen fotosynthese, een vorm van assimilatie, heeft licht nodig."
         ],
-        "uh": "In het donker: alleen celademhaling, dus CO2 komt vrij."
+        "uh": "Op of af?"
+       },
+       {
+        "v": "Welke processen verklaren dat de knol in het voorjaar lichter wordt?",
+        "o": [
+         "de knol doet onder de grond aan fotosynthese en geeft zo zuurstof af",
+         "zetmeel wordt glucose, dat wordt verbruikt voor dissimilatie en groei",
+         "de knol verliest alleen water door verdamping via de schil",
+         "het zetmeel lost op in het grondwater en spoelt vanzelf weg uit de knol"
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 2,
+        "u": "De voorraad zetmeel wordt afgebroken en gebruikt voor energie en de bouw van de nieuwe plant.",
+        "uo": [
+         "Koos je fotosynthese onder de grond? Onder de grond is geen licht. Fotosynthese kan pas als de nieuwe bladeren boven de grond licht vangen.",
+         "Klopt: de knol breekt zijn zetmeel af tot glucose. Een deel wordt gedissimileerd voor energie (en verdwijnt als CO2), de rest gaat naar de groeiende stengel.",
+         "Koos je alleen waterverlies? De knol verliest ook droge massa: het zetmeel neemt af. Dat komt door afbraak en verbruik, niet door verdamping.",
+         "Koos je wegspoelen? Zetmeel lost niet op in water en zit in de cellen. De plant breekt het zelf af met enzymen."
+        ],
+        "uh": "Waar gaat de opgeslagen energie heen?",
+        "ctx": "Een aardappelplant maakt in de zomer glucose in zijn bladeren. In de herfst zitten de knollen onder de grond vol zetmeel. In het voorjaar loopt een knol uit: hij wordt lichter, terwijl er een nieuwe stengel met bladeren groeit, nog voordat die bladeren boven de grond veel licht opvangen."
+       },
+       {
+        "v": "Welke stoffen ontstaan bij de aerobe dissimilatie van glucose?",
+        "o": [
+         "koolstofdioxide en water",
+         "zuurstof en glucose",
+         "melkzuur en water",
+         "alcohol en koolstofdioxide"
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 3,
+        "u": "Glucose + zuurstof → koolstofdioxide + water + energie.",
+        "uo": [
+         "Klopt: met zuurstof wordt glucose volledig afgebroken tot koolstofdioxide en water. Daarbij komt veel energie vrij.",
+         "Koos je zuurstof en glucose? Dat zijn juist de grondstoffen van de aerobe dissimilatie. Ze ontstaan bij fotosynthese, het omgekeerde proces.",
+         "Koos je melkzuur? Melkzuur ontstaat in spieren bij anaerobe dissimilatie, dus zonder zuurstof. Aeroob betekent met zuurstof.",
+         "Koos je alcohol? Alcohol ontstaat bij alcoholgisting door gist, zonder zuurstof. Met zuurstof wordt glucose helemaal afgebroken tot CO2 en water."
+        ],
+        "uh": "Volledig afgebroken."
+       },
+       {
+        "v": "Waarvoor gebruikt een cel de energie die bij dissimilatie vrijkomt?",
+        "o": [
+         "voor het opbouwen van glucose uit koolstofdioxide",
+         "alleen voor het warm houden van het lichaam, verder voor niets",
+         "voor het maken van zuurstof voor de ademhaling",
+         "voor het maken van ATP, dat processen in de cel aandrijft"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 3,
+        "u": "De energie wordt vastgelegd in ATP; een deel komt vrij als warmte.",
+        "uo": [
+         "Koos je glucose opbouwen? Dat is fotosynthese, en die gebruikt lichtenergie. De energie uit dissimilatie gaat vooral naar ATP.",
+         "Koos je alleen warmte? Een deel komt wel vrij als warmte, en dat houdt ons warm. Maar het belangrijkste is dat er ATP wordt gemaakt.",
+         "Koos je zuurstof maken? Zuurstof wordt bij dissimilatie juist verbruikt. Een cel kan geen zuurstof maken; alleen fotosynthese levert zuurstof.",
+         "Klopt: een groot deel van de energie wordt vastgelegd in ATP. Daarmee drijft de cel spiersamentrekking, transport en de opbouw van stoffen aan."
+        ],
+        "uh": "De energiedrager van de cel."
+       },
+       {
+        "v": "Wat toont de proef met de erwten aan?",
+        "o": [
+         "gekookte erwten nemen alle CO2 uit de lucht op",
+         "kiemende zaden doen aan fotosynthese en nemen CO2 op",
+         "kiemende zaden doen aan dissimilatie en geven CO2 af",
+         "kalkwater wordt na een dag in een fles vanzelf troebel"
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 3,
+        "u": "Kalkwater wordt troebel door CO2; levende zaden dissimileren en maken CO2.",
+        "uo": [
+         "Koos je gekookte erwten die CO2 opnemen? Dode erwten doen niets meer; ze zijn de controle. Het verschil komt doordat levende erwten CO2 maken.",
+         "Koos je fotosynthese? Dan zouden de erwten CO2 opnemen en blijft het kalkwater juist helder. Bovendien hebben kiemende zaden nog geen bladeren.",
+         "Klopt: kalkwater wordt troebel door koolstofdioxide. Alleen bij de levende, kiemende erwten gebeurde dat, dus zij geven CO2 af door dissimilatie.",
+         "Koos je vanzelf troebel? Dan was het kalkwater bij de dode erwten ook troebel geworden. Die fles is juist de controle."
+        ],
+        "uh": "Wat doet kalkwater troebel worden?",
+        "ctx": "Een leerling blaast via een rietje uitgeademde lucht door helder kalkwater; het wordt troebel. Daarna doet ze kiemende erwten in een afgesloten fles met een bakje kalkwater, en in een tweede fles gekookte, dode erwten. Na een dag in het donker is alleen het kalkwater bij de kiemende erwten troebel."
+       },
+       {
+        "v": "Waarom verbruikt een spier zonder zuurstof veel meer glucose per hoeveelheid ATP?",
+        "o": [
+         "zonder zuurstof wordt glucose eerst omgezet in vet, en pas daarna in ATP",
+         "zonder zuurstof wordt glucose maar onvolledig afgebroken, dus komt er weinig ATP uit",
+         "zonder zuurstof moet de spier eerst zelf zuurstof maken uit een deel van de glucose",
+         "zonder zuurstof werkt het mitochondrium juist twee keer zo snel"
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 3,
+        "u": "Anaeroob komt maar 2 ATP per glucose vrij in plaats van ongeveer 36.",
+        "uo": [
+         "Koos je eerst vet? Vet wordt niet uit glucose gemaakt om ATP op te leveren. Zonder zuurstof stopt de afbraak bij melkzuur.",
+         "Klopt: zonder zuurstof wordt glucose maar een klein stukje afgebroken, tot melkzuur. Dat levert 2 ATP op in plaats van 36, dus de spier verbruikt veel meer glucose.",
+         "Koos je zuurstof maken? Een spiercel kan geen zuurstof maken; dat kan alleen fotosynthese. Hij moet het doen met de onvolledige afbraak tot melkzuur.",
+         "Koos je het mitochondrium dat sneller werkt? Zonder zuurstof werkt het mitochondrium juist niet. De afbraak tot melkzuur gebeurt in het cytoplasma."
+        ],
+        "uh": "Vergelijk 2 met 36.",
+        "ctx": "Bij een duurloop breekt een spier glucose af met zuurstof: per molecuul glucose levert dat ongeveer 36 ATP op. Bij een sprint van tien seconden voert het bloed niet snel genoeg zuurstof aan. De spier maakt dan ATP zonder zuurstof en daarbij levert een molecuul glucose maar 2 ATP op."
+       },
+       {
+        "v": "Waarom raken juist hart- en hersencellen het snelst in de problemen?",
+        "o": [
+         "ze verbruiken veel ATP en kunnen nauwelijks zonder aerobe dissimilatie",
+         "ze hebben geen mitochondriën en zijn daardoor extra gevoelig",
+         "cyanide komt alleen in het hart en de hersenen terecht",
+         "in die cellen wordt cyanide omgezet in koolstofdioxide"
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 3,
+        "u": "Cellen met een hoog energieverbruik merken het eerst als de mitochondriën stoppen.",
+        "uo": [
+         "Klopt: hart- en hersencellen gebruiken voortdurend veel ATP, bijna alleen uit aerobe dissimilatie. Valt die weg, dan hebben zij het snelst een tekort.",
+         "Koos je geen mitochondriën? Hart- en hersencellen hebben juist heel veel mitochondriën. Daarom raakt het gif ze zo hard.",
+         "Koos je alleen in het hart en de hersenen? Cyanide komt via het bloed in alle cellen. Alleen merken cellen met een hoog verbruik het eerst.",
+         "Koos je omzetten in CO2? Dat staat nergens in de tekst en verklaart niets. Het gif blokkeert het gebruik van zuurstof in de mitochondriën."
+        ],
+        "uh": "Welke cellen verbruiken de meeste energie?",
+        "ctx": "Cyanide is een gif dat een enzym in de mitochondriën blokkeert, zodat de cel geen zuurstof meer kan gebruiken bij de dissimilatie. Iemand die cyanide binnenkrijgt, heeft genoeg zuurstof in het bloed, maar vooral zijn hart- en hersencellen raken binnen minuten zonder energie."
+       },
+       {
+        "v": "Welke stof ontstaat in een spier bij anaerobe dissimilatie?",
+        "o": [
+         "zetmeel",
+         "alcohol",
+         "zuurstof",
+         "melkzuur"
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 4,
+        "u": "Spieren maken zonder zuurstof melkzuur.",
+        "uo": [
+         "Koos je zetmeel? Zetmeel wordt door planten opgebouwd uit glucose. Bij dissimilatie wordt glucose juist afgebroken.",
+         "Koos je alcohol? Alcohol maakt gist bij alcoholgisting. Menselijke spieren maken zonder zuurstof melkzuur.",
+         "Koos je zuurstof? Zuurstof ontstaat alleen bij fotosynthese. Anaeroob betekent juist zonder zuurstof.",
+         "Klopt: als er te weinig zuurstof is, breekt de spier glucose af tot melkzuur. Dat levert snel een beetje ATP op."
+        ],
+        "uh": "Denk aan verzuurde spieren."
+       },
+       {
+        "v": "Welk gas laat het deeg rijzen en welk proces maakt dat gas?",
+        "o": [
+         "waterdamp, die ontstaat bij het opwarmen van het deeg",
+         "zuurstof, uit de fotosynthese van de gist",
+         "koolstofdioxide, uit de alcoholgisting van de gist",
+         "stikstof, uit de afbraak van eiwitten in het meel"
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 4,
+        "u": "Gist breekt zonder zuurstof suiker af tot alcohol en koolstofdioxide.",
+        "uo": [
+         "Koos je waterdamp? Het deeg rijst al bij kamertemperatuur, ver onder het kookpunt. Het gas komt van de gist.",
+         "Koos je zuurstof uit fotosynthese? Gist is een schimmel zonder bladgroen en doet niet aan fotosynthese. Bovendien staat het deeg niet in het licht.",
+         "Klopt: gist breekt zonder zuurstof suiker af tot alcohol en koolstofdioxide. Het gas vormt de gaatjes en laat het deeg rijzen.",
+         "Koos je stikstof? Bij de afbraak van eiwitten ontstaat geen stikstofgas dat deeg laat rijzen. Het gas is CO2 van de gistcellen."
+        ],
+        "uh": "Wat maakt gist zonder zuurstof?",
+        "ctx": "Een bakker mengt meel, water, een beetje suiker en gist en laat het deeg op een warme plek staan. Na een uur is het deeg twee keer zo groot geworden en zit het vol gaatjes. In het midden van het deeg is bijna geen zuurstof. Bij het bakken verdwijnt de geur van alcohol."
+       },
+       {
+        "v": "Waarom levert alcoholgisting minder energie op dan aerobe dissimilatie?",
+        "o": [
+         "bij gisting wordt de energie omgezet in zuurstof",
+         "in alcohol zit nog veel energie die niet is vrijgekomen",
+         "gist heeft geen enzymen voor de afbraak van glucose",
+         "bij gisting wordt glucose volledig afgebroken tot water"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 4,
+        "u": "Alcohol is een onvolledig afbraakproduct: er zit nog energie in.",
+        "uo": [
+         "Koos je omzetten in zuurstof? Bij gisting ontstaat geen zuurstof, maar alcohol en koolstofdioxide. Energie kan nooit in zuurstof worden omgezet.",
+         "Klopt: glucose wordt maar half afgebroken, tot alcohol. In die alcohol zit nog veel energie, daarom kun je hem ook verbranden.",
+         "Koos je geen enzymen? Gist heeft wel enzymen, anders kon hij suiker helemaal niet afbreken. Zonder zuurstof stopt de afbraak alleen eerder.",
+         "Koos je volledig tot water? Volledige afbraak tot CO2 en water gebeurt alleen met zuurstof. Bij gisting blijft er alcohol over."
+        ],
+        "uh": "Wat blijft er over?"
+       },
+       {
+        "v": "Waarom blijft de atleet na de sprint nog doorhijgen?",
+        "o": [
+         "er is extra zuurstof nodig om het melkzuur alsnog af te breken",
+         "hij moet het melkzuur via zijn longen uitademen",
+         "zijn spieren maken nu juist alcohol, en dat kost zuurstof",
+         "zijn longen zijn door de inspanning tijdelijk kleiner geworden en vangen minder lucht"
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 4,
+        "u": "Het melkzuur wordt na afloop met zuurstof verder afgebroken of omgezet.",
+        "uo": [
+         "Klopt: tijdens de sprint ontstond melkzuur omdat er te weinig zuurstof was. Na afloop is extra zuurstof nodig om dat melkzuur alsnog af te breken.",
+         "Koos je melkzuur uitademen? Melkzuur is opgelost in het bloed en gaat niet via de longen naar buiten. Het wordt met zuurstof verwerkt.",
+         "Koos je alcohol? Menselijke spieren maken geen alcohol; dat doet gist. Bij ons ontstaat zonder zuurstof melkzuur.",
+         "Koos je kleinere longen? De longen worden door een sprint niet kleiner. Het hijgen dient om extra zuurstof binnen te krijgen."
+        ],
+        "uh": "Wat moet er met het melkzuur gebeuren?",
+        "ctx": "Na een sprint van 400 meter hijgt een atleet nog minutenlang door, ook al staat hij stil. Zijn bloed bevat dan veel melkzuur. Na ongeveer een kwartier is het melkzuurgehalte weer normaal en ademt hij rustig. Bij een rustige wandeling van dezelfde afstand hijgt hij helemaal niet."
+       },
+       {
+        "v": "Waarom stopt de gisting bij ongeveer 14% alcohol?",
+        "o": [
+         "de gist heeft alle suiker in het vat al opgebruikt",
+         "alle zuurstof is op, en zonder zuurstof kan gist niet leven",
+         "het waterslot laat te veel koolstofdioxide terug in het vat",
+         "de alcohol wordt bij die concentratie giftig voor de gist zelf"
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 4,
+        "u": "Gist gaat dood door zijn eigen afvalstof, de alcohol.",
+        "uo": [
+         "Koos je alle suiker op? Er zit nog suiker in het vat, staat in de tekst. Dus suiker is niet de reden dat het stopt.",
+         "Koos je geen zuurstof? Gist kan zonder zuurstof leven; dan gaat hij juist gisten. Het gebrek aan zuurstof zorgt er dus voor dat er alcohol ontstaat.",
+         "Koos je CO2 dat terugkomt? Het waterslot laat gas eruit, maar niet erin. Het koolstofdioxide ontsnapt gewoon.",
+         "Klopt: alcohol is een afvalstof die bij hoge concentratie de gistcellen zelf beschadigt. Daarom stopt de gisting, ook al is er nog suiker."
+        ],
+        "uh": "Er is nog suiker; wat remt dan?",
+        "ctx": "Een wijnmaker doet druivensap met gist in een vat met een waterslot: gas kan eruit, maar lucht kan er niet in. De eerste dag groeit de gist snel. Daarna stijgt het alcoholgehalte langzaam tot ongeveer 14%. Dan stopt de gisting, terwijl er nog suiker in het vat zit."
+       },
+       {
+        "v": "Welk gas geeft een plant in het donker af?",
+        "o": [
+         "waterstof",
+         "zuurstof",
+         "koolstofdioxide",
+         "stikstof"
+        ],
+        "c": 2,
+        "d": 1,
+        "s": 5,
+        "u": "In het donker is er alleen dissimilatie: de plant geeft CO2 af.",
+        "uo": [
+         "Koos je waterstof? Waterstofgas komt bij fotosynthese en dissimilatie niet vrij. Een plant geeft in het donker koolstofdioxide af.",
+         "Koos je zuurstof? Zuurstof geeft een plant alleen af als de fotosynthese sneller gaat dan de dissimilatie, en dat kan alleen in het licht.",
+         "Klopt: in het donker is er geen fotosynthese, wel dissimilatie. De plant neemt zuurstof op en geeft koolstofdioxide af.",
+         "Koos je stikstof? Stikstof neemt een plant op als nitraat uit de bodem. Bij dissimilatie komt koolstofdioxide vrij."
+        ],
+        "uh": "Alleen dissimilatie."
+       },
+       {
+        "v": "Langs welke weg komen CO2 en zuurstof het blad in en uit?",
+        "o": [
+         "via de nerven, samen met het water uit de wortels",
+         "via de huidmondjes, vooral aan de onderkant van het blad",
+         "via de opperhuidcellen, dwars door de waslaag heen",
+         "via de bladgroenkorrels, die aan de buitenkant liggen"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 5,
+        "u": "Gassen gaan door de huidmondjes het blad in en uit.",
+        "uo": [
+         "Koos je de nerven? Door de nerven gaan water en opgeloste stoffen. Gassen komen het blad binnen via de huidmondjes.",
+         "Klopt: huidmondjes zijn kleine openingen tussen twee sluitcellen. Daardoor diffunderen CO2 en zuurstof het blad in en uit.",
+         "Koos je dwars door de waslaag? De waslaag beschermt het blad juist tegen uitdrogen en laat bijna niets door. Gassen gaan door de huidmondjes.",
+         "Koos je de bladgroenkorrels? Die liggen binnen in de cellen, niet aan de buitenkant van het blad. Gassen komen binnen via de huidmondjes."
+        ],
+        "uh": "Kleine openingen in het blad."
+       },
+       {
+        "v": "Wat gebeurt er in de plant bij 2 klx?",
+        "o": [
+         "fotosynthese en dissimilatie zijn even snel",
+         "de plant doet niet aan fotosynthese en niet aan dissimilatie",
+         "alleen de dissimilatie is gestopt",
+         "de fotosynthese is twee keer zo snel als de dissimilatie"
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 5,
+        "u": "Bij het compensatiepunt neemt de fotosynthese evenveel CO2 op als de dissimilatie afgeeft.",
+        "uo": [
+         "Klopt: bij 2 klx neemt de fotosynthese precies zoveel CO2 op als de dissimilatie afgeeft. Netto verandert er niets: dat is het compensatiepunt.",
+         "Koos je allebei gestopt? Een levende plant dissimileert altijd. De CO2 blijft gelijk omdat opname en afgifte even groot zijn.",
+         "Koos je dissimilatie gestopt? Dissimilatie gaat dag en nacht door. Dan zou de CO2 bovendien al bij heel weinig licht dalen.",
+         "Koos je twee keer zo snel? Dan zou er netto CO2 worden opgenomen en zou de concentratie dalen, zoals bij 10 klx."
+        ],
+        "uh": "Gelijk blijven betekent: opname = afgifte.",
+        "ctx": "In een afgesloten bak met een plant meet een onderzoeker de CO2-concentratie bij verschillende lichtsterktes, steeds bij dezelfde temperatuur. In het donker stijgt de concentratie. Bij 2 klx blijft hij gelijk. Bij 10 klx daalt hij snel."
+       },
+       {
+        "v": "Hoe verklaar je dat het zuurstofgehalte het laagst is vlak voordat de lamp aangaat?",
+        "o": [
+         "zuurstof verdampt in de nacht uit het water, doordat het afkoelt",
+         "de planten maken alleen in het donker zuurstof, en die is dan net op",
+         "de vissen ademen alleen in het licht, en in de nacht doen ze niets",
+         "de hele nacht verbruiken planten en vissen zuurstof, zonder fotosynthese"
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 5,
+        "u": "Na een hele nacht dissimilatie zonder fotosynthese is de zuurstof het laagst.",
+        "uo": [
+         "Koos je verdampen door afkoeling? Koud water kan juist meer zuurstof bevatten. De daling komt door verbruik zonder aanvoer.",
+         "Koos je zuurstof in het donker? Planten maken alleen zuurstof bij fotosynthese, en die heeft licht nodig. In het donker verbruiken ze juist zuurstof.",
+         "Koos je vissen die alleen in het licht ademen? Vissen ademen dag en nacht. Ook planten dissimileren dag en nacht.",
+         "Klopt: in het donker maken de planten geen zuurstof, maar planten en vissen verbruiken het wel. Na twaalf uur donker is het gehalte het laagst."
+        ],
+        "uh": "Wat gebeurt er de hele nacht?",
+        "ctx": "In een aquarium met veel waterplanten en vissen meet de eigenaar het zuurstofgehalte van het water. Om 16.00 uur is het 9 mg per liter, om 6.00 uur in de ochtend nog maar 4 mg per liter. De verlichting brandt elke dag van 8.00 tot 20.00 uur; daarbuiten is het donker."
        }
       ],
       "oe": [
        {
-        "bron": "Practicum zetmeelproef",
-        "ctx": "Een leerling zet een plant een nacht in het donker, zodat het zetmeel uit de bladeren verdwijnt. Daarna dekt hij een deel van een blad af met zwart papier en zet de plant een dag in het licht. Aan het eind kookt hij het blad, haalt het bladgroen eruit en druppelt er jodium op. Het niet-afgedekte deel wordt blauwzwart, het afgedekte deel niet.",
-        "v": "Verklaar waarom alleen het niet-afgedekte deel van het blad blauwzwart kleurt met jodium.",
+        "bron": "Examenstijl",
+        "ctx": "Een onderzoeker zet drie afgesloten buizen met een waterplant en een indicator in het licht. De indicator kleurt geel bij veel CO2, rood bij een normale hoeveelheid en paars bij weinig CO2. Buis A staat in fel licht, buis B is in aluminiumfolie gewikkeld, buis C bevat geen plant. Na een paar uur is A paars, B geel en C rood.",
+        "v": "Verklaar de kleur in buis A en in buis B, en leg uit waarom buis C nodig is.",
         "o": [
          ""
         ],
         "c": 0,
-        "u": "Jodium kleurt blauwzwart bij zetmeel. Alleen het deel dat licht kreeg, kon fotosynthese uitvoeren en daarbij glucose maken die als zetmeel is opgeslagen; daar kleurt de jodium dus blauwzwart. Het afgedekte deel kreeg geen licht, deed geen fotosynthese en maakte geen zetmeel, dus daar blijft de kleuring uit. (Kernpunten: [1] licht is nodig voor de fotosynthese; [2] alleen waar fotosynthese plaatsvond, is zetmeel gevormd dat met jodium blauwzwart kleurt.)"
+        "u": "A: de fotosynthese is sneller dan de dissimilatie, dus de plant neemt netto CO2 op: weinig CO2 (1p). B: in het donker alleen dissimilatie, dus de plant geeft CO2 af: veel CO2 (1p). C is de controle: die laat zien dat de kleur zonder plant niet verandert, dus dat de verandering door de plant komt (1p)."
        },
        {
-        "bron": "Proef met waterpest",
-        "ctx": "Waterpest is een waterplant. Een leerling zet een takje waterpest onder water in een reageerbuis en schijnt er een lamp op. Er stijgen gasbelletjes op vanaf de snijkant. Hoe dichter de lamp bij de plant staat, hoe meer belletjes er per minuut vrijkomen. Bij zeer weinig licht stoppen de belletjes.",
-        "v": "Leg uit welk gas in de belletjes zit en waarom het aantal belletjes toeneemt als de lamp dichterbij komt.",
+        "bron": "Examenstijl",
+        "ctx": "In een kas met paprika’s is op een zonnige dag de temperatuur 24 °C en de CO2-concentratie 0,04%. De tuinder verhoogt de CO2 tot 0,10% en ziet de groei met 25% toenemen. Op een donkere, bewolkte dag doet hij hetzelfde, maar dan neemt de groei bijna niet toe.",
+        "v": "Leg met het begrip beperkende factor uit waarom extra CO2 op de zonnige dag wel helpt en op de bewolkte dag niet.",
         "o": [
          ""
         ],
         "c": 0,
-        "u": "In de belletjes zit zuurstof, een product van de fotosynthese. Hoe dichter de lamp, hoe meer licht de plant krijgt; licht is de grondstof/energiebron voor de fotosynthese, dus de fotosynthesesnelheid neemt toe en er komt meer zuurstof (meer belletjes) per minuut vrij. Bij te weinig licht stopt de fotosynthese en stoppen de belletjes. (Kernpunten: [1] het gas is zuurstof uit de fotosynthese; [2] meer licht betekent een hogere fotosynthesesnelheid, dus meer zuurstof.)"
+        "u": "De snelheid wordt bepaald door de factor die het minst aanwezig is: de beperkende factor (1p). Op de zonnige dag is er licht genoeg en is CO2 beperkend, dus extra CO2 verhoogt de fotosynthese (1p). Op de bewolkte dag is licht beperkend; extra CO2 helpt dan niet, omdat er te weinig licht is om meer glucose te maken (1p)."
        },
        {
-        "bron": "Gist en brooddeeg",
-        "ctx": "Bij het maken van brood voegt een bakker gist toe aan het deeg. De gistcellen zetten suikers uit het deeg om. In het deeg is weinig zuurstof aanwezig. Tijdens het rijzen wordt het deeg groter en ontstaan er gasbelletjes.",
-        "v": "Leg uit welk proces de gistcellen in het zuurstofarme deeg uitvoeren en waarom het deeg daardoor rijst.",
+        "bron": "Examenstijl",
+        "ctx": "Bij het maken van yoghurt zetten bacteriën melksuiker om in melkzuur. Bij het maken van bier zet gist zonder zuurstof suiker om. Een brouwer laat eerst een paar uur lucht door het mengsel borrelen en sluit het vat daarna af.",
+        "v": "Geef de reactie van de gisting door gist in woorden en leg uit waarom de brouwer eerst lucht door het mengsel laat borrelen.",
         "o": [
          ""
         ],
         "c": 0,
-        "u": "Omdat er weinig zuurstof is, voeren de gistcellen anaerobe dissimilatie (gisting) uit: ze breken de suiker zonder zuurstof af. Daarbij ontstaat koolstofdioxide (en alcohol). Het koolstofdioxidegas vormt belletjes die in het deeg blijven zitten, waardoor het deeg groter wordt (rijst). (Kernpunten: [1] gisting/anaerobe dissimilatie door zuurstoftekort; [2] het gevormde CO2-gas laat het deeg rijzen.)"
+        "u": "Glucose → alcohol + koolstofdioxide (+ weinig energie) (1p). Met zuurstof doet de gist aan aerobe dissimilatie; dat levert veel ATP, zodat de gist snel groeit en zich vermeerdert (1p). Na het afsluiten is de zuurstof op en gaat de grote hoeveelheid gist over op alcoholgisting, zodat er veel alcohol ontstaat (1p)."
        },
        {
-        "bron": "Kas en CO2",
-        "ctx": "Een tuinder wil dat zijn tomatenplanten in de kas sneller groeien. De planten staan in fel licht en op een goede temperatuur. Toch groeien ze niet harder. De tuinder besluit extra koolstofdioxide in de kas te blazen, waarna de planten wel sneller groeien.",
-        "v": "Leg met het begrip beperkende factor uit waarom het toevoegen van extra koolstofdioxide de groei versnelt.",
+        "bron": "Examenstijl",
+        "ctx": "Een marathonloper heeft na 30 km de meeste glycogeen in zijn spieren verbruikt. Een sprinter loopt 100 meter in 10 seconden. Na afloop meet een sportarts bij de sprinter veel meer melkzuur in het bloed dan bij de marathonloper.",
+        "v": "Verklaar waarom de sprinter meer melkzuur heeft en waarom de sprinter na de finish langer blijft hijgen dan je op grond van de korte afstand zou verwachten.",
         "o": [
          ""
         ],
         "c": 0,
-        "u": "De fotosynthesesnelheid wordt bepaald door de factor die het meest tekortschiet (de beperkende factor). Licht en temperatuur waren al ruim voldoende, dus die beperkten niet. Blijkbaar was koolstofdioxide de beperkende factor; door meer CO2 toe te voegen kan de fotosynthese sneller verlopen, waardoor de planten meer glucose maken en harder groeien. (Kernpunten: [1] de beperkende factor begrenst de fotosynthesesnelheid; [2] hier was CO2 beperkend, dus extra CO2 versnelt de fotosynthese en de groei.)"
+        "u": "Bij de sprint kan het bloed niet snel genoeg zuurstof aanvoeren, dus de spieren maken ATP door anaerobe dissimilatie met melkzuur als product (1p). De marathonloper loopt rustiger, krijgt genoeg zuurstof en dissimileert aeroob tot CO2 en water (1p). Na de sprint is extra zuurstof nodig om het melkzuur af te breken; daarom hijgt hij nog door (1p)."
        },
        {
-        "bron": "Plant in een afgesloten pot",
-        "ctx": "Een leerling zet een plant in een goed afgesloten glazen pot met een CO2-meter. Overdag, met de pot in het licht, daalt de gemeten hoeveelheid koolstofdioxide in de pot. 's Nachts, in het donker, stijgt de hoeveelheid koolstofdioxide juist weer.",
-        "v": "Verklaar de daling van het koolstofdioxide overdag en de stijging 's nachts met de processen fotosynthese en celademhaling.",
+        "bron": "Examenstijl",
+        "ctx": "Een leerling meet de CO2-opname van een kamerplant bij verschillende lichtintensiteiten: 0 klx: −8; 1 klx: −3; 2 klx: 0; 5 klx: +12; 10 klx: +20; 20 klx: +22 (in mg per uur). Negatief betekent dat de plant CO2 afgeeft.",
+        "v": "Bepaal het compensatiepunt, leg uit wat daar in de plant gebeurt en leg uit waarom deze plant op een plek met gemiddeld 1 klx op den duur niet groeit.",
         "o": [
          ""
         ],
         "c": 0,
-        "u": "Overdag doet de plant fotosynthese en celademhaling tegelijk, maar de fotosynthese is sneller: er wordt netto CO2 opgenomen, dus de hoeveelheid CO2 in de pot daalt. 's Nachts ligt de fotosynthese stil (geen licht), maar de celademhaling gaat door; daarbij komt CO2 vrij, dus de hoeveelheid CO2 stijgt. (Kernpunten: [1] overdag overheerst de fotosynthese, netto CO2-opname; [2] 's nachts alleen celademhaling, netto CO2-afgifte.)"
+        "u": "Het compensatiepunt ligt bij 2 klx (1p). Daar zijn fotosynthese en dissimilatie even snel: de plant neemt evenveel CO2 op als hij afgeeft (1p). Bij 1 klx is de dissimilatie groter dan de fotosynthese: de plant verbruikt meer glucose dan hij maakt, dus er blijft niets over voor groei (1p)."
        }
       ]
      },

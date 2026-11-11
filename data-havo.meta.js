@@ -1151,20 +1151,24 @@ var VAKKEN = [
      },
      {
       "id": "M4",
+      "lo": "bi.M.4",
+      "gs": 2,
       "naam": "Fotosynthese & celademhaling",
-      "beschrijving": "Hoe planten glucose opbouwen met licht (fotosynthese) en hoe cellen glucose met zuurstof afbreken voor energie (celademhaling), incl. assimilatie/dissimilatie en gisting.",
-      "ceStatus": "CE",
+      "beschrijving": "Je beschrijft fotosynthese en aerobe en anaerobe dissimilatie met hun grondstoffen, producten en energieomzetting, leest beperkende factoren af uit grafieken, onderscheidt assimilatie en dissimilatie en verklaart de gaswisseling van een plant in licht en donker.",
+      "ceStatus": "CE+SE",
+      "binas": "",
+      "val": "",
       "onderwerpen": [
-       "Fotosynthese (opbouw glucose)",
-       "Celademhaling (afbraak glucose)",
-       "Bladgroenkorrel & mitochondrium",
-       "Assimilatie vs dissimilatie",
-       "Anaerobe dissimilatie (gisting)",
-       "Gasuitwisseling & beperkende factoren"
+       "Fotosynthese",
+       "Beperkende factoren",
+       "Assimilatie en dissimilatie",
+       "Aerobe dissimilatie",
+       "Anaerobe dissimilatie",
+       "Gaswisseling bij planten"
       ],
-      "nSv": 25,
+      "nSv": 28,
       "nOe": 5,
-      "nBeg": 12,
+      "nBeg": 15,
       "hasSam": true
      },
      {
