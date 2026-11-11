@@ -5,7 +5,7 @@
 Volledige beschrijving (functies, inhoud per niveau, prijs, wat Slagio niet is): https://slagio.nl/llms-full.txt
 
 ## In het kort
-- 12 vakken havo, 16 vakken vwo, 12 vakken vmbo; 26.992 oefenvragen en 4.346 begrippen.
+- 12 vakken havo, 16 vakken vwo, 12 vakken vmbo; 26.994 oefenvragen en 4.346 begrippen.
 - Adaptief oefenen: na een fout een vraag over hetzelfde onderwerp, een niveau makkelijker; uitleg bij elk fout antwoord.
 - Foutenboek en herhalen met gespreide herhaling, beheersing per leerdoel, studieplan tot het examen.
 - Examens met klok, proefexamens in examenstijl met modelantwoord en puntenverdeling, archief met officiële oude examens.
@@ -60,7 +60,7 @@ Volledige beschrijving (functies, inhoud per niveau, prijs, wat Slagio niet is):
 - [Homeostase en antagonisme (Biologie HAVO)](https://slagio.nl/leren/havo/biologie/homeostase-en-antagonisme.html): Je legt uit wat homeostase is en waarom die nodig is, beschrijft een regelkring met receptor, regelcentrum, effector en normwaarde, herkent negatieve…
 - [Afweer en immuniteit (Biologie HAVO)](https://slagio.nl/leren/havo/biologie/afweer-en-immuniteit.html): Je beschrijft de barrières en de aspecifieke afweer tegen ziekteverwekkers, legt uit hoe antilichamen specifiek op antigenen werken, verklaart de primaire en…
 - [Transport en gasuitwisseling (Biologie HAVO)](https://slagio.nl/leren/havo/biologie/transport-en-gasuitwisseling.html): Je beschrijft de bouw van het hart, volgt de route van het bloed door de dubbele bloedsomloop, onderscheidt slagaders, aders en haarvaten, beschrijft de…
-- [Spijsvertering en uitscheiding (Biologie HAVO)](https://slagio.nl/leren/havo/biologie/spijsvertering-en-uitscheiding.html): Mechanische en chemische vertering, het verteringsstelsel, opname in de dunne darm, en de rol van de nieren bij uitscheiding.
+- [Spijsvertering en uitscheiding (Biologie HAVO)](https://slagio.nl/leren/havo/biologie/spijsvertering-en-uitscheiding.html): Je legt uit waarom voedsel verteerd wordt, onderscheidt mechanische en chemische vertering, beschrijft welke enzymen waar werken en wat gal doet, volgt de weg…
 - [Beweging: gewrichten en spieren (Biologie HAVO)](https://slagio.nl/leren/havo/biologie/beweging-gewrichten-en-spieren.html): Het skelet en gewrichten, pezen en gewrichtsbanden, en hoe antagonistische spieren (buigspier en strekspier) samenwerken bij beweging.
 - [Ecosystemen: biotische en abiotische factoren (Biologie HAVO)](https://slagio.nl/leren/havo/biologie/ecosystemen-biotische-en-abiotische-factoren.html): Het ecosysteem als levensgemeenschap plus biotoop, het onderscheid tussen biotische en abiotische factoren, en de niche van een soort.
 - [Voedselrelaties en energiedoorgifte (Biologie HAVO)](https://slagio.nl/leren/havo/biologie/voedselrelaties-en-energiedoorgifte.html): Voedselketens en voedselwebben, de rol van producent, consument en reducent, en energiedoorgifte via de piramide van biomassa.

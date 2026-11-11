@@ -54724,565 +54724,684 @@ var VAKKEN = [
      },
      {
       "id": "O6",
+      "lo": "bi.O.6",
+      "gs": 2,
       "naam": "Spijsvertering en uitscheiding",
-      "beschrijving": "Mechanische en chemische vertering, het verteringsstelsel, opname in de dunne darm, en de rol van de nieren bij uitscheiding.",
-      "ceStatus": "CE",
+      "beschrijving": "Je legt uit waarom voedsel verteerd wordt, onderscheidt mechanische en chemische vertering, beschrijft welke enzymen waar werken en wat gal doet, volgt de weg door het verteringskanaal, verklaart de opname in de dunne darm en beschrijft hoe de nieren met filtratie en terugresorptie urine maken.",
+      "ceStatus": "CE+SE",
+      "binas": "",
+      "val": "",
       "onderwerpen": [
-       "Spijsvertering: voedsel afbreken tot opneembare stoffen",
-       "Mechanische vertering (kauwen, malen)",
-       "Chemische vertering (enzymen)",
-       "Verteringsstelsel: mond, maag, dunne en dikke darm",
-       "Opname (resorptie) in de dunne darm",
-       "Uitscheiding en de nieren"
+       "Voedingsstoffen en vertering",
+       "Mechanische vertering",
+       "Chemische vertering en enzymen",
+       "Het verteringskanaal",
+       "Opname in de dunne darm",
+       "Uitscheiding door de nieren"
       ],
-      "sam": "Bij de spijsvertering wordt voedsel afgebroken tot stoffen die klein genoeg zijn om te worden opgenomen in het bloed. Dat gebeurt op twee manieren: mechanisch (kauwen en malen maken het voedsel fysiek kleiner) en chemisch (enzymen breken de grote stoffen af tot kleine bouwstenen). Het voedsel gaat via de mond, slokdarm, maag en dunne darm. In de dunne darm worden de opneembare stoffen in het bloed opgenomen; in de dikke darm wordt vooral water opgenomen. Uitscheiding is iets anders: de nieren halen afvalstoffen zoals ureum uit het bloed en maken daar urine van.",
+      "sam": "Vertering: zetmeel → glucose, eiwit → aminozuren, vet → glycerol + vetzuren; water, mineralen, vitaminen niet. Mechanisch: kauwen, maag, gal (emulgeert, geen enzym) = groter oppervlak. Chemisch: amylase (zetmeel), pepsine (eiwit, maag, pH 2), lipase (vet); alvleessap bevat alle drie. Route: mond, slokdarm, maag, dunne darm, dikke darm (water terug). Opname in dunne darm: darmvlokken, glucose en aminozuren via poortader naar lever, vetten via lymfe. Nier: filtratie (180 L voorurine), terugresorptie (glucose, 99% water), urine met ureum.",
       "begrippen": [
        {
-        "t": "Spijsvertering",
-        "d": "het afbreken van voedsel tot stoffen die opgenomen kunnen worden"
+        "t": "Vertering",
+        "d": "Het afbreken van grote voedselmoleculen tot kleine bouwstenen die opgenomen kunnen worden."
        },
        {
         "t": "Mechanische vertering",
-        "d": "het voedsel fysiek kleiner maken, bijvoorbeeld door kauwen"
+        "d": "Voedsel kleiner maken zonder de moleculen te veranderen, zoals kauwen en emulgeren."
        },
        {
         "t": "Chemische vertering",
-        "d": "het afbreken van stoffen door verteringsenzymen"
+        "d": "Het afbreken van moleculen door enzymen."
        },
        {
-        "t": "Verteringsstelsel",
-        "d": "de organen die samen het voedsel verteren"
+        "t": "Amylase",
+        "d": "Enzym uit speeksel en alvleessap dat zetmeel afbreekt."
        },
        {
-        "t": "Verteringsenzym",
-        "d": "een enzym dat grote voedingsstoffen afbreekt tot kleine bouwstenen"
+        "t": "Pepsine",
+        "d": "Enzym in de maag dat eiwitten afbreekt; werkt in zuur milieu."
        },
        {
-        "t": "Maag",
-        "d": "orgaan waar voedsel wordt gemengd en eiwit begint te verteren"
+        "t": "Lipase",
+        "d": "Enzym uit de alvleesklier dat vetten afbreekt tot glycerol en vetzuren."
+       },
+       {
+        "t": "Gal",
+        "d": "Vloeistof uit de lever die vet emulgeert; bevat geen enzymen."
+       },
+       {
+        "t": "Alvleessap",
+        "d": "Verteringssap van de alvleesklier met enzymen voor zetmeel, eiwit en vet."
        },
        {
         "t": "Dunne darm",
-        "d": "orgaan waar de vertering afrondt en stoffen worden opgenomen"
+        "d": "Deel van het verteringskanaal waar de meeste vertering en opname plaatsvindt."
        },
        {
         "t": "Dikke darm",
-        "d": "orgaan waar vooral water uit de darminhoud wordt opgenomen"
+        "d": "Deel van het verteringskanaal dat water en zouten terugneemt."
        },
        {
-        "t": "Resorptie",
-        "d": "het opnemen van verteerde stoffen in het bloed, vooral in de dunne darm"
+        "t": "Darmvlok",
+        "d": "Uitstulping van de dunne darmwand die het oppervlak voor opname vergroot."
        },
        {
-        "t": "Uitscheiding",
-        "d": "het verwijderen van afvalstoffen uit het bloed"
-       },
-       {
-        "t": "Nieren",
-        "d": "organen die afvalstoffen uit het bloed filteren en urine maken"
+        "t": "Poortader",
+        "d": "Ader die bloed met opgenomen voedingsstoffen van de darm naar de lever voert."
        },
        {
         "t": "Ureum",
-        "d": "afvalstof die met de urine het lichaam verlaat"
+        "d": "Afvalstof die de lever maakt uit aminozuren en die met de urine wordt uitgescheiden."
+       },
+       {
+        "t": "Filtratie",
+        "d": "Het uit het bloed persen van water en kleine stoffen in het nierkapsel."
+       },
+       {
+        "t": "Terugresorptie",
+        "d": "Het terugnemen van glucose, zouten en water uit de voorurine in het bloed."
        }
       ],
       "sv": [
        {
-        "v": "Wat gebeurt er bij de spijsvertering?",
+        "v": "Waarom moet voedsel verteerd worden?",
         "o": [
-         "Voedsel wordt afgebroken tot opneembare stoffen",
-         "Afvalstoffen worden uit het bloed gefilterd door de nieren",
-         "Zuurstof wordt in de longblaasjes aan het bloed toegevoegd",
-         "De lichaamstemperatuur wordt rond 37 graden gehouden"
-        ],
-        "c": 0,
-        "d": 1,
-        "u": "Spijsvertering breekt voedsel af tot kleine stoffen die het lichaam kan opnemen.",
-        "uo": [
-         "Klopt: voedsel afbreken tot opneembare stoffen.",
-         "Dat is uitscheiding, niet vertering.",
-         "Dat is de gasuitwisseling.",
-         "Dat is de temperatuurregeling."
-        ],
-        "uh": "Spijsvertering = voedsel afbreken tot opneembare stoffen."
-       },
-       {
-        "v": "Wat is mechanische vertering?",
-        "o": [
-         "Het afbreken van stoffen door enzymen in de maag",
-         "Het voedsel fysiek kleiner maken",
-         "Het opnemen van water in de dikke darm",
-         "Het filteren van afval uit het bloed door de nieren"
-        ],
-        "c": 1,
-        "d": 1,
-        "u": "Mechanische vertering maakt het voedsel fysiek kleiner, bijvoorbeeld door kauwen.",
-        "uo": [
-         "Dat is juist chemische vertering.",
-         "Klopt: fysiek kleiner maken, zoals kauwen.",
-         "Dat is opname in de dikke darm.",
-         "Dat is uitscheiding door de nieren."
-        ],
-        "uh": "Mechanisch = fysiek kleiner maken (kauwen, malen)."
-       },
-       {
-        "v": "Wat is chemische vertering?",
-        "o": [
-         "Het voedsel kleiner maken door te kauwen",
-         "Het opnemen van stoffen in het bloed",
-         "Het afbreken van stoffen door enzymen",
-         "Het verwijderen van afval via de nieren"
+         "vertering maakt van eiwitten vetten die beter te bewaren zijn",
+         "voedsel moet warm worden voordat het in het bloed kan",
+         "grote moleculen moeten klein genoeg worden om opgenomen te worden",
+         "zonder vertering zou voedsel in de maag gaan rotten en giftig worden"
         ],
         "c": 2,
         "d": 1,
-        "u": "Chemische vertering breekt grote stoffen af tot kleine bouwstenen met behulp van enzymen.",
+        "s": 0,
+        "u": "Vertering breekt grote moleculen af tot kleine die door de darmwand kunnen.",
         "uo": [
-         "Kauwen is juist mechanische vertering.",
-         "Opname is geen vertering maar resorptie.",
-         "Klopt: enzymen breken de stoffen chemisch af.",
-         "Dat is uitscheiding, niet vertering."
+         "Koos je eiwitten omzetten in vetten? Bij vertering worden eiwitten afgebroken tot aminozuren, niet omgezet in vetten. Het doel is kleine, opneembare moleculen.",
+         "Koos je warm worden? Voedsel krijgt in je lichaam vanzelf je lichaamstemperatuur, maar daardoor wordt het niet opneembaar. Het gaat om de grootte van de moleculen.",
+         "Klopt: zetmeel, eiwitten en vetten zijn te groot om door de darmwand te gaan. Ze worden afgebroken tot glucose, aminozuren, vetzuren en glycerol, die wel opgenomen kunnen worden.",
+         "Koos je rotten in de maag? Maagzuur doodt veel bacteriën, maar dat is niet het doel van vertering. Vertering maakt moleculen klein genoeg om op te nemen."
         ],
-        "uh": "Chemisch = enzymen breken de stoffen af."
+        "uh": "Klein genoeg voor de darmwand."
        },
        {
-        "v": "Wat is het verschil tussen mechanische en chemische vertering?",
+        "v": "In welke stoffen wordt eiwit bij de vertering afgebroken?",
         "o": [
-         "Beide processen filteren samen het bloed in de nieren van afval",
-         "Ze zijn precies hetzelfde en wisselbaar",
-         "Beide nemen alleen water op in de dikke darm",
-         "Mechanisch maakt fysiek kleiner, chemisch breekt af met enzymen"
-        ],
-        "c": 3,
-        "d": 2,
-        "u": "Mechanische vertering maakt het voedsel fysiek kleiner; chemische vertering breekt de stoffen met enzymen af.",
-        "uo": [
-         "Vertering is geen filteren van bloed.",
-         "Ze verschillen juist: fysiek versus met enzymen.",
-         "Dit gaat over wateropname, niet over dit verschil.",
-         "Klopt: mechanisch is fysiek, chemisch is met enzymen."
-        ],
-        "uh": "Mechanisch = kleiner maken, chemisch = afbreken met enzymen."
-       },
-       {
-        "v": "Welk orgaan hoort NIET bij het verteringsstelsel?",
-        "o": [
-         "De nier",
-         "De maag",
-         "De dunne darm",
-         "De dikke darm"
-        ],
-        "c": 0,
-        "d": 2,
-        "u": "De nieren horen bij de uitscheiding, niet bij het verteringsstelsel.",
-        "uo": [
-         "Klopt: de nier hoort bij de uitscheiding, niet bij de vertering.",
-         "De maag verteert wel degelijk.",
-         "De dunne darm hoort bij de vertering.",
-         "De dikke darm hoort bij de vertering."
-        ],
-        "uh": "Nieren horen bij uitscheiding, niet bij de vertering."
-       },
-       {
-        "v": "Waar wordt het meeste voedsel opgenomen in het bloed?",
-        "o": [
-         "In de maag waar het eiwit wordt afgebroken",
-         "In de dunne darm",
-         "In de dikke darm waar vooral water bij komt",
-         "In de slokdarm op weg naar de maag"
+         "glucose",
+         "aminozuren",
+         "vetzuren en glycerol",
+         "mineralen"
         ],
         "c": 1,
         "d": 2,
-        "u": "In de dunne darm rondt de vertering af en worden de kleine stoffen opgenomen in het bloed.",
+        "s": 0,
+        "u": "Eiwitten → aminozuren; zetmeel → glucose; vetten → vetzuren en glycerol.",
         "uo": [
-         "In de maag begint vooral de eiwitvertering.",
-         "Klopt: in de dunne darm gebeurt de opname.",
-         "In de dikke darm wordt vooral water opgenomen.",
-         "In de slokdarm wordt niets opgenomen."
+         "Koos je glucose? Glucose is de bouwsteen van zetmeel. Eiwit bestaat uit aminozuren, dus daar komt geen glucose uit bij de vertering.",
+         "Klopt: eiwitten zijn ketens van aminozuren. Enzymen zoals pepsine en trypsine knippen die ketens tot losse aminozuren, die de dunne darm opneemt.",
+         "Koos je vetzuren en glycerol? Dat zijn de bouwstenen van vetten. Vetten worden door lipase in deze stoffen afgebroken, eiwitten niet.",
+         "Koos je mineralen? Mineralen zoals ijzer en calcium zijn al klein en hoeven niet verteerd te worden. Ze zijn geen afbraakproduct van eiwit."
         ],
-        "uh": "Opname (resorptie) = vooral in de dunne darm."
+        "uh": "De bouwstenen van eiwit."
        },
        {
-        "v": "Wat gebeurt er vooral in de dikke darm?",
+        "v": "Welke voedingsstof hoeft niet verteerd te worden om opgenomen te worden?",
         "o": [
-         "Eiwitten worden er in kleine stukjes geknipt",
-         "Voedsel wordt er fijngekauwd",
-         "Er wordt vooral water opgenomen",
-         "Zuurstof wordt er aan het bloed toegevoegd"
+         "water",
+         "zetmeel",
+         "eiwit",
+         "vet"
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 0,
+        "u": "Water, mineralen, vitaminen en glucose zijn al klein genoeg.",
+        "uo": [
+         "Klopt: water is een klein molecuul en wordt zonder vertering in de darm opgenomen, vooral in de dikke darm. Ook mineralen en vitaminen hoeven niet verteerd te worden.",
+         "Koos je zetmeel? Zetmeel is een lange keten van glucose. Het moet eerst door amylase worden afgebroken voordat het opgenomen kan worden.",
+         "Koos je eiwit? Eiwitten zijn grote moleculen. Ze worden in maag en dunne darm afgebroken tot aminozuren voordat ze worden opgenomen.",
+         "Koos je vet? Vet moet eerst door gal worden geëmulgeerd en door lipase worden afgebroken tot vetzuren en glycerol."
+        ],
+        "uh": "Klein molecuul."
+       },
+       {
+        "v": "Waarom stijgt het glucosegehalte in het bloed sneller na het eten van druivensuiker dan na volkorenbrood?",
+        "o": [
+         "volkorenbrood remt de werking van insuline",
+         "volkorenbrood bevat helemaal geen koolhydraten, alleen eiwitten",
+         "druivensuiker wordt al in de mond in het bloed opgenomen",
+         "zetmeel moet eerst worden verteerd"
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 0,
+        "u": "Glucose hoeft niet verteerd te worden; zetmeel moet eerst worden afgebroken.",
+        "uo": [
+         "Koos je remmen van insuline? Brood remt insuline niet. De glucose komt alleen trager vrij omdat zetmeel eerst verteerd moet worden.",
+         "Koos je geen koolhydraten? Volkorenbrood bevat juist veel zetmeel, een koolhydraat. Het verschil is dat zetmeel eerst verteerd moet worden.",
+         "Koos je opname in de mond? In de mond wordt nauwelijks glucose opgenomen; dat gebeurt in de dunne darm. Het verschil zit in de vertering vooraf.",
+         "Klopt: druivensuiker is glucose en wordt direct in de dunne darm opgenomen. Het zetmeel in brood moet eerst door amylase worden afgebroken; dat kost tijd, en de vezels vertragen het nog meer."
+        ],
+        "uh": "Wat moet er eerst gebeuren met zetmeel?",
+        "ctx": "Twee leerlingen meten hun bloedglucose na het eten. De een eet 50 g druivensuiker (glucose), de ander een hoeveelheid volkorenbrood met evenveel koolhydraten in de vorm van zetmeel. Bij de eerste is de glucose na 20 minuten al flink gestegen, bij de tweede pas na een uur en minder hoog."
+       },
+       {
+        "v": "Waarom is voedingsvezel belangrijk, hoewel het niet verteerd wordt?",
+        "o": [
+         "het wordt in de maag omgezet in eiwitten",
+         "het levert de meeste energie van alle voedingsstoffen",
+         "het houdt de ontlasting volumineus en zacht",
+         "het wordt direct opgenomen als glucose"
         ],
         "c": 2,
         "d": 2,
-        "u": "In de dikke darm wordt vooral water uit de darminhoud opgenomen; de rest wordt ontlasting.",
+        "s": 0,
+        "u": "Vezels worden niet verteerd, maar zorgen voor een goede darmwerking.",
         "uo": [
-         "Eiwitvertering begint in de maag, niet in de dikke darm.",
-         "Kauwen gebeurt in de mond.",
-         "Klopt: in de dikke darm wordt vooral water opgenomen.",
-         "Gasuitwisseling gebeurt in de longen."
+         "Koos je omzetten in eiwitten? In de maag worden eiwitten afgebroken, niet gemaakt. Vezels gaan onverteerd door maag en dunne darm.",
+         "Koos je de meeste energie? Vezels leveren nauwelijks energie, juist omdat we ze niet kunnen verteren. Vetten leveren per gram de meeste energie.",
+         "Klopt: vezels (vooral cellulose uit planten) worden door de mens niet verteerd. Ze houden water vast, maken de ontlasting zacht en volumineus en zorgen dat de darm goed beweegt.",
+         "Koos je opname als glucose? Cellulose bestaat wel uit glucose, maar wij hebben geen enzym om het af te breken. Daarom wordt het niet opgenomen."
         ],
-        "uh": "Dikke darm = vooral wateropname."
+        "uh": "Wat doet het in de darm?"
        },
        {
-        "v": "Wat is de rol van verteringsenzymen?",
+        "v": "Welke vorm van vertering vindt plaats als je kauwt?",
         "o": [
-         "Ze maken het voedsel alleen fysiek kleiner",
-         "Ze pompen het bloed door het lichaam",
-         "Ze filteren afvalstoffen uit het bloed en maken daar urine van",
-         "Ze breken grote stoffen af tot kleine bouwstenen"
-        ],
-        "c": 3,
-        "d": 2,
-        "u": "Verteringsenzymen breken grote voedingsstoffen chemisch af tot kleine, opneembare bouwstenen.",
-        "uo": [
-         "Fysiek kleiner maken is mechanisch, niet het werk van enzymen.",
-         "Pompen doet het hart.",
-         "Filteren doen de nieren.",
-         "Klopt: enzymen breken stoffen af tot kleine bouwstenen."
-        ],
-        "uh": "Verteringsenzym = breekt grote stoffen af tot kleine bouwstenen."
-       },
-       {
-        "v": "Wat doet uitscheiding?",
-        "o": [
-         "Afvalstoffen uit het bloed verwijderen",
-         "Voedsel afbreken tot kleine stoffen",
-         "Stoffen opnemen in de dunne darm",
-         "Zuurstof opnemen in de longblaasjes diep in de longen"
-        ],
-        "c": 0,
-        "d": 1,
-        "u": "Uitscheiding verwijdert afvalstoffen zoals ureum uit het bloed.",
-        "uo": [
-         "Klopt: afvalstoffen uit het bloed verwijderen.",
-         "Dat is de spijsvertering.",
-         "Dat is opname (resorptie), niet uitscheiding.",
-         "Dat is de gasuitwisseling."
-        ],
-        "uh": "Uitscheiding = afvalstoffen uit het bloed verwijderen."
-       },
-       {
-        "v": "Welk orgaan filtert afvalstoffen uit het bloed?",
-        "o": [
-         "De maag",
-         "De nieren",
-         "De dunne darm",
-         "De longen"
+         "chemische vertering",
+         "mechanische vertering",
+         "opname",
+         "uitscheiding"
         ],
         "c": 1,
         "d": 1,
-        "u": "De nieren filteren afvalstoffen zoals ureum uit het bloed en maken daar urine van.",
+        "s": 1,
+        "u": "Kauwen maakt voedsel kleiner zonder de moleculen te veranderen: mechanisch.",
         "uo": [
-         "De maag verteert voedsel, hij filtert geen bloed.",
-         "Klopt: de nieren filteren het bloed.",
-         "De dunne darm neemt stoffen op, hij filtert geen afval.",
-         "De longen doen gasuitwisseling."
+         "Koos je chemische vertering? Die gebeurt door enzymen die moleculen afbreken. Kauwen zelf verandert de moleculen niet, al werkt het amylase in speeksel ondertussen wel.",
+         "Klopt: bij het kauwen maak je het voedsel kleiner en vermeng je het met speeksel. De moleculen blijven hetzelfde: dat is mechanische vertering.",
+         "Koos je opname? Opname is het overgaan van stoffen uit de darm naar het bloed. Dat gebeurt vooral in de dunne darm, niet bij het kauwen.",
+         "Koos je uitscheiding? Uitscheiding is het verwijderen van afvalstoffen uit het lichaam, bijvoorbeeld door de nieren. Kauwen hoort bij de vertering."
         ],
-        "uh": "Nieren = filteren afval uit het bloed."
+        "uh": "Kleiner maken."
        },
        {
-        "v": "Verteren de nieren voedsel?",
+        "v": "Waarom helpt goed kauwen bij de vertering?",
         "o": [
-         "Ja, ze breken eiwit af zoals de maag",
-         "Ja, ze nemen voeding op zoals de dunne darm",
-         "Nee, ze filteren afval uit het bloed",
-         "Ja, ze kauwen het voedsel fijn"
-        ],
-        "c": 2,
-        "d": 2,
-        "u": "De nieren verteren geen voedsel; ze horen bij de uitscheiding en filteren afval uit het bloed.",
-        "uo": [
-         "De nieren verteren geen eiwit, dat doet de maag.",
-         "Opname doet de dunne darm, niet de nier.",
-         "Klopt: de nieren filteren afval, ze verteren niet.",
-         "Kauwen gebeurt in de mond."
-        ],
-        "uh": "Nieren verteren niet: ze filteren afval (uitscheiding)."
-       },
-       {
-        "v": "Wat is ureum?",
-        "o": [
-         "Een bouwsteen van eiwit die wordt opgenomen",
-         "Een enzym dat in de dikke darm het zetmeel verder afbreekt",
-         "Een suiker die in de dikke darm ontstaat",
-         "Een afvalstof die met de urine wordt uitgescheiden"
-        ],
-        "c": 3,
-        "d": 2,
-        "u": "Ureum is een afvalstof die de nieren uit het bloed filteren en die met de urine het lichaam verlaat.",
-        "uo": [
-         "Ureum is een afvalstof, geen opneembare bouwsteen.",
-         "Ureum is geen enzym.",
-         "Ureum is geen suiker.",
-         "Klopt: ureum is een afvalstof in de urine."
-        ],
-        "uh": "Ureum = afvalstof die met de urine verdwijnt."
-       },
-       {
-        "v": "Waar begint de vertering van zetmeel?",
-        "o": [
-         "In de mond",
-         "In de nieren tijdens het filteren",
-         "In de dikke darm bij de wateropname",
-         "In de longen bij de gasuitwisseling"
+         "kleine stukjes hebben meer oppervlak",
+         "kauwen maakt de enzymen in het speeksel sterker",
+         "door kauwen worden eiwitten al in de mond omgezet in aminozuren",
+         "kauwen zorgt dat het voedsel sneller door de slokdarm valt"
         ],
         "c": 0,
         "d": 2,
-        "u": "In de mond zit in het speeksel een enzym (amylase) dat zetmeel begint af te breken.",
+        "s": 1,
+        "u": "Meer oppervlak = enzymen kunnen sneller werken.",
         "uo": [
-         "Klopt: in de mond begint de zetmeelvertering (speeksel).",
-         "De nieren verteren geen zetmeel.",
-         "De dikke darm neemt vooral water op.",
-         "De longen verteren geen voedsel."
+         "Klopt: hoe kleiner de stukjes, hoe groter het totale oppervlak. Daar kunnen de enzymen tegelijk aan werken, dus de chemische vertering gaat sneller.",
+         "Koos je sterkere enzymen? Kauwen verandert de enzymen zelf niet. Het vergroot het oppervlak waarop ze kunnen werken.",
+         "Koos je eiwitten in de mond? In de mond wordt geen eiwit verteerd; dat begint pas in de maag met pepsine. Kauwen vergroot alleen het oppervlak.",
+         "Koos je sneller door de slokdarm? Het voedsel wordt door spierbewegingen door de slokdarm geduwd, niet door de zwaartekracht. Het voordeel van kauwen is het grotere oppervlak."
         ],
-        "uh": "Zetmeelvertering begint in de mond (speeksel)."
+        "uh": "Denk aan oppervlak."
        },
        {
-        "v": "Iemand kauwt zijn eten goed. Waarom helpt dat de vertering?",
+        "v": "Wat doet gal bij de vertering van vet?",
         "o": [
-         "Omdat de nieren dan veel minder afvalstoffen hoeven te filteren",
-         "Omdat het voedsel dan een groter oppervlak krijgt voor enzymen",
-         "Omdat er dan meer water in de dikke darm komt",
-         "Omdat het bloed dan sneller wordt rondgepompt"
-        ],
-        "c": 1,
-        "d": 3,
-        "u": "Goed kauwen maakt het voedsel kleiner, waardoor enzymen een groter oppervlak hebben om op te werken.",
-        "uo": [
-         "De nieren staan los van het kauwen.",
-         "Klopt: kleiner voedsel = meer oppervlak voor de enzymen.",
-         "Kauwen bepaalt niet de wateropname.",
-         "Kauwen versnelt de bloedsomloop niet."
-        ],
-        "uh": "Goed kauwen = meer oppervlak, enzymen werken sneller."
-       },
-       {
-        "v": "Waarom moeten grote voedingsstoffen eerst worden verteerd?",
-        "o": [
-         "Omdat ze anders veel te klein zijn om met het oog te zien",
-         "Omdat ze anders meteen worden uitgescheiden door de nieren",
-         "Omdat ze te groot zijn om in het bloed te worden opgenomen",
-         "Omdat ze anders de longen zouden binnendringen"
-        ],
-        "c": 2,
-        "d": 3,
-        "u": "Grote stoffen passen niet door de darmwand; door vertering worden ze klein genoeg om opgenomen te worden.",
-        "uo": [
-         "Zichtbaarheid speelt geen rol.",
-         "De nieren scheiden geen voedsel uit.",
-         "Klopt: te groot om op te nemen, dus eerst afbreken.",
-         "Voedsel komt niet in de longen."
-        ],
-        "uh": "Groot voedsel eerst verteren: anders past het niet in het bloed."
-       },
-       {
-        "v": "Wat is de goede volgorde in het verteringsstelsel?",
-        "o": [
-         "Eerst de maag, dan de mond, de dikke darm en de dunne darm",
-         "Dikke darm, dunne darm, maag, mond",
-         "Dunne darm, mond, maag, dikke darm",
-         "Mond, maag, dunne darm, dikke darm"
+         "het zet vet om in glucose voor de spieren",
+         "het breekt vet als enzym af tot vetzuren en glycerol",
+         "het neemt vet direct op in het bloed van de lever",
+         "het verdeelt vet in kleine druppeltjes"
         ],
         "c": 3,
         "d": 2,
-        "u": "Het voedsel gaat van de mond via de maag naar de dunne darm en daarna de dikke darm.",
+        "s": 1,
+        "u": "Gal emulgeert vet: kleinere druppels, groter oppervlak voor lipase.",
         "uo": [
-         "De mond komt eerst, niet de maag.",
-         "Dit is precies de omgekeerde volgorde.",
-         "De mond komt eerst, niet de dunne darm.",
-         "Klopt: mond, maag, dunne darm, dikke darm."
+         "Koos je vet omzetten in glucose? Gal verandert vet niet in glucose. Het verdeelt het alleen in kleine druppels.",
+         "Koos je gal als enzym? Gal bevat geen verteringsenzymen. Het afbreken tot vetzuren en glycerol doet lipase uit de alvleesklier.",
+         "Koos je directe opname? Gal wordt in de lever gemaakt, maar neemt zelf geen vet op. De opname gebeurt in de dunne darm na vertering.",
+         "Klopt: gal bevat geen enzymen, maar verdeelt vet in kleine druppeltjes (emulgeren). Daardoor heeft lipase een veel groter oppervlak om op te werken."
         ],
-        "uh": "Volgorde: mond, maag, dunne darm, dikke darm."
+        "uh": "Denk aan afwasmiddel in vet water."
        },
        {
-        "v": "In welk orgaan begint vooral de eiwitvertering?",
+        "v": "Waarom heeft iemand na het verwijderen van de galblaas soms last bij een vette maaltijd?",
         "o": [
-         "In de maag",
-         "In de mond bij het kauwen",
-         "In de dikke darm bij het water",
-         "In de nieren bij het filteren"
+         "zonder galblaas wordt vet niet meer in de maag afgebroken",
+         "zonder galblaas maakt de alvleesklier geen lipase meer",
+         "er komt minder gal tegelijk in de darm",
+         "de lever maakt zonder galblaas helemaal geen gal meer"
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 1,
+        "u": "De galblaas slaat gal op; zonder komt er bij een vette maaltijd minder gal tegelijk.",
+        "uo": [
+         "Koos je vet in de maag? Vet wordt vooral in de dunne darm verteerd, niet in de maag. Het probleem zit bij de hoeveelheid gal in de darm.",
+         "Koos je geen lipase? Lipase komt uit de alvleesklier, die gewoon blijft werken. Het probleem is het emulgeren door gal.",
+         "Klopt: de galblaas slaat gal op en spuit bij een vette maaltijd veel tegelijk in de darm. Zonder galblaas druppelt de gal continu en komt er na een vette maaltijd te weinig tegelijk; het vet wordt slechter geëmulgeerd en verteerd.",
+         "Koos je geen gal meer? De lever blijft gal maken. Alleen de opslag ontbreekt, zodat er niet veel tegelijk beschikbaar is."
+        ],
+        "uh": "Wat doet de galblaas eigenlijk?",
+        "ctx": "Bij een patiënt met galstenen is de galblaas verwijderd. De lever blijft gal maken, maar die druppelt nu continu in de twaalfvingerige darm. Na een maaltijd met veel vet krijgt de patiënt buikpijn en vette, dunne ontlasting. Bij magere maaltijden heeft hij geen klachten."
+       },
+       {
+        "v": "Welk enzym breekt zetmeel af?",
+        "o": [
+         "pepsine",
+         "amylase",
+         "lipase",
+         "trypsine"
+        ],
+        "c": 1,
+        "d": 1,
+        "s": 2,
+        "u": "Amylase (speeksel, alvleessap) breekt zetmeel af tot suikers.",
+        "uo": [
+         "Koos je pepsine? Pepsine werkt in de maag en breekt eiwitten af, geen zetmeel. Elk enzym werkt maar op één soort stof.",
+         "Klopt: amylase uit het speeksel en uit het alvleessap breekt zetmeel af tot kleinere suikers, die verder worden afgebroken tot glucose.",
+         "Koos je lipase? Lipase breekt vetten af tot vetzuren en glycerol. Op zetmeel heeft het geen effect.",
+         "Koos je trypsine? Trypsine uit de alvleesklier breekt eiwitten af in de dunne darm, niet zetmeel."
+        ],
+        "uh": "In speeksel."
+       },
+       {
+        "v": "Waarom werkt pepsine wel in de maag en niet in de dunne darm?",
+        "o": [
+         "pepsine werkt alleen in zuur milieu",
+         "in de dunne darm zitten geen eiwitten meer",
+         "pepsine wordt in de dunne darm door gal opgelost",
+         "de dunne darm is te warm voor pepsine"
         ],
         "c": 0,
         "d": 2,
-        "u": "In de maag zit het enzym pepsine, dat eiwit begint af te breken in een zure omgeving.",
+        "s": 2,
+        "u": "Elk enzym heeft een pH-optimum; pepsine werkt in zuur milieu.",
         "uo": [
-         "Klopt: in de maag begint de eiwitvertering.",
-         "In de mond begint vooral de zetmeelvertering.",
-         "In de dikke darm gebeurt vooral wateropname.",
-         "De nieren verteren geen eiwit."
+         "Klopt: pepsine werkt het best bij een pH rond 2, in de zure maag. In de dunne darm is het milieu licht basisch en werkt pepsine nauwelijks.",
+         "Koos je geen eiwitten meer? In de dunne darm wordt eiwit verder verteerd door trypsine. Pepsine werkt er niet omdat de pH niet goed is.",
+         "Koos je opgelost door gal? Gal emulgeert vet en lost geen enzymen op. Het verschil is de zuurgraad.",
+         "Koos je te warm? Maag en darm hebben dezelfde temperatuur, ongeveer 37 °C. Het verschil zit in de pH."
         ],
-        "uh": "Eiwitvertering begint vooral in de maag."
+        "uh": "Denk aan de zuurgraad."
        },
        {
-        "v": "Waarom heeft de dunne darm een heel groot oppervlak van binnen?",
+        "v": "Welk orgaan maakt een verteringssap met enzymen voor zetmeel, eiwit én vet?",
         "o": [
-         "Om het bloed sneller rond te pompen",
-         "Om zo veel mogelijk stoffen te kunnen opnemen",
-         "Om meer afval te kunnen uitscheiden",
-         "Om het voedsel in de mond fijn te kauwen en te malen"
-        ],
-        "c": 1,
-        "d": 3,
-        "u": "Een groot inwendig oppervlak laat de dunne darm veel verteerde stoffen tegelijk in het bloed opnemen.",
-        "uo": [
-         "Pompen doet het hart, niet de darm.",
-         "Klopt: groot oppervlak = veel opname tegelijk.",
-         "Uitscheiding doen de nieren.",
-         "Kauwen gebeurt in de mond."
-        ],
-        "uh": "Dunne darm groot oppervlak = veel opname tegelijk."
-       },
-       {
-        "v": "Welke uitspraak over vertering en uitscheiding klopt?",
-        "o": [
-         "De nieren verteren voedsel tot bouwstenen",
-         "Beide processen gebeuren tegelijk en volledig in de maag zelf",
-         "Vertering breekt voedsel af, uitscheiding verwijdert afval",
-         "Uitscheiding neemt voedsel op in het bloed"
-        ],
-        "c": 2,
-        "d": 2,
-        "u": "Vertering breekt voedsel af tot opneembare stoffen; uitscheiding verwijdert afvalstoffen uit het bloed.",
-        "uo": [
-         "De nieren verteren geen voedsel.",
-         "Uitscheiding gebeurt in de nieren, niet in de maag.",
-         "Klopt: vertering breekt af, uitscheiding verwijdert afval.",
-         "Opname is geen uitscheiding."
-        ],
-        "uh": "Vertering = afbreken, uitscheiding = afval verwijderen."
-       },
-       {
-        "v": "Een stof is te groot voor de darmwand. Wat gebeurt er eerst?",
-        "o": [
-         "De stof wordt meteen uitgescheiden door de nieren",
-         "De stof wordt rechtstreeks in de longblaasjes van de longen opgenomen",
-         "De stof wordt door het hart weggepompt",
-         "De stof wordt eerst verder verteerd tot kleinere delen"
+         "de dikke darm",
+         "de lever",
+         "de galblaas",
+         "de alvleesklier"
         ],
         "c": 3,
-        "d": 3,
-        "u": "Een te grote stof kan niet door de darmwand; enzymen breken hem eerst af tot kleine, opneembare delen.",
+        "d": 2,
+        "s": 2,
+        "u": "Alvleessap bevat amylase, trypsine en lipase.",
         "uo": [
-         "De nieren scheiden geen onverteerd voedsel uit.",
-         "Voedsel wordt niet in de longen opgenomen.",
-         "Het hart pompt bloed, geen darminhoud.",
-         "Klopt: eerst verder verteren tot kleinere delen."
+         "Koos je de dikke darm? Die neemt vooral water op en maakt geen verteringsenzymen. Bacteriën daar breken wel nog wat vezels af.",
+         "Koos je de lever? De lever maakt gal, en gal bevat geen verteringsenzymen. Het emulgeert alleen vet.",
+         "Koos je de galblaas? Die slaat alleen gal op, zonder enzymen. De alvleesklier levert de enzymen.",
+         "Klopt: het alvleessap bevat enzymen voor alle drie: amylase voor zetmeel, trypsine voor eiwit en lipase voor vet. Het komt in de twaalfvingerige darm."
         ],
-        "uh": "Te grote stof = eerst verder verteren tot hij past."
+        "uh": "Achter de maag."
        },
        {
-        "v": "Wat wordt er van de afvalstoffen in de nieren gemaakt?",
+        "v": "Welke conclusie past bij de resultaten van dit experiment?",
         "o": [
-         "Urine",
-         "Speeksel voor de vertering",
-         "Nieuw bloed voor de bloedsomloop",
-         "Zuurstofrijk bloed"
+         "amylase werkt alleen in zuur milieu, net als pepsine",
+         "amylase werkt bij alle temperaturen en pH-waarden even goed",
+         "amylase werkt bij 37 °C en neutrale pH",
+         "zetmeel verdwijnt vanzelf als je het warm maakt, ook zonder enzym"
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 2,
+        "u": "Het enzym heeft een optimum: werkt bij 37 °C neutraal, niet in zuur en niet na koken.",
+        "uo": [
+         "Koos je alleen in zuur milieu? In buis B (pH 2) werkte amylase juist niet. Het werkt bij een neutrale pH, zoals in de mond.",
+         "Koos je overal even goed? Dan was het zetmeel in alle buizen verdwenen. In de zure en de gekookte buis bleef het zetmeel.",
+         "Klopt: buis A (37 °C, neutraal) is na 10 minuten zetmeelvrij. In buis B (pH 2) en buis C (gekookt) blijft het zetmeel. Amylase werkt dus bij een neutrale pH en wordt door hitte en zuur onwerkzaam.",
+         "Koos je vanzelf door warmte? Buis D (zonder enzym, 37 °C) bevat na 10 minuten nog zetmeel. Het verdwijnen komt dus door het enzym."
+        ],
+        "uh": "Vergelijk elke buis met buis A.",
+        "ctx": "Een leerling vult vier buizen met zetmeeloplossing. A: speeksel, 37 °C, neutraal. B: speeksel, 37 °C, pH 2. C: gekookt speeksel, 37 °C, neutraal. D: water in plaats van speeksel, 37 °C. Na 10 minuten test ze met jodium: alleen buis A kleurt niet meer blauwzwart."
+       },
+       {
+        "v": "Welk enzym breekt vet af?",
+        "o": [
+         "amylase",
+         "lipase",
+         "pepsine",
+         "maltase"
+        ],
+        "c": 1,
+        "d": 1,
+        "s": 2,
+        "u": "Lipase breekt vet af tot vetzuren en glycerol.",
+        "uo": [
+         "Koos je amylase? Amylase breekt zetmeel af, geen vet. Elk enzym werkt maar op één soort stof.",
+         "Klopt: lipase uit de alvleesklier breekt vet af tot vetzuren en glycerol, in de dunne darm. Gal helpt door het vet eerst in druppeltjes te verdelen.",
+         "Koos je pepsine? Pepsine breekt eiwitten af in de maag. Op vet werkt het niet.",
+         "Koos je maltase? Maltase breekt de suiker maltose af tot glucose, het laatste stapje van de zetmeelvertering."
+        ],
+        "uh": "Lip- klinkt als lipide."
+       },
+       {
+        "v": "In welke volgorde gaat voedsel door het verteringskanaal?",
+        "o": [
+         "mond, slokdarm, maag, dunne darm, dikke darm",
+         "mond, maag, slokdarm, dikke darm, dunne darm",
+         "mond, slokdarm, dikke darm, maag, dunne darm",
+         "mond, slokdarm, maag, lever, dunne darm"
         ],
         "c": 0,
         "d": 1,
-        "u": "De nieren maken van de gefilterde afvalstoffen en water urine.",
+        "s": 3,
+        "u": "Mond → slokdarm → maag → dunne darm → dikke darm → endeldarm.",
         "uo": [
-         "Klopt: de nieren maken urine.",
-         "Speeksel wordt in de mond gemaakt.",
-         "De nieren maken geen bloed aan.",
-         "Zuurstofrijk bloed komt uit de longen."
+         "Klopt: voedsel gaat van de mond via de slokdarm naar de maag, dan naar de dunne darm en de dikke darm, en tot slot via de endeldarm naar buiten.",
+         "Koos je eerst de maag? De slokdarm verbindt de mond met de maag, dus die komt eerst. En de dunne darm komt vóór de dikke darm.",
+         "Koos je de dikke darm vóór de maag? De dikke darm is het laatste deel, waar water wordt opgenomen. Eerst komen maag en dunne darm.",
+         "Koos je de lever? De lever maakt gal, maar voedsel gaat er niet doorheen. Het verteringskanaal loopt van maag naar dunne darm."
         ],
-        "uh": "Nieren maken urine van het gefilterde afval."
+        "uh": "Van boven naar beneden."
        },
        {
-        "v": "Waarom wordt voedsel eerst mechanisch en dan chemisch verteerd?",
+        "v": "Wat is de belangrijkste functie van de dikke darm?",
         "o": [
-         "Omdat de nieren de volgorde van de hele vertering zo regelen",
-         "Omdat kleiner voedsel de enzymen sneller laat werken",
-         "Omdat het voedsel anders in de longen komt",
-         "Omdat het bloed anders te snel stroomt"
+         "het opnemen van het meeste glucose in het bloed",
+         "het verteren van eiwitten tot aminozuren",
+         "het maken van gal voor de vertering van vet",
+         "water terugwinnen uit voedselresten"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 3,
+        "u": "De dikke darm neemt water (en zouten) terug; ontlasting wordt vaster.",
+        "uo": [
+         "Koos je glucose opnemen? Het meeste glucose wordt al in de dunne darm opgenomen. In de dikke darm gaat het vooral om water.",
+         "Koos je eiwitten verteren? Dat gebeurt in de maag en de dunne darm. In de dikke darm zitten nog maar weinig verteerbare stoffen.",
+         "Koos je gal maken? Gal wordt gemaakt door de lever en opgeslagen in de galblaas. De dikke darm maakt geen gal.",
+         "Klopt: in de dikke darm wordt het meeste water uit de voedselresten teruggenomen. Daardoor wordt de ontlasting vaster. Bacteriën maken er ook vitamine K."
+        ],
+        "uh": "Waarom wordt ontlasting vast?"
+       },
+       {
+        "v": "Waarom krijgt iemand met een ontstoken dikke darm vaak diarree?",
+        "o": [
+         "de maag maakt te weinig maagzuur",
+         "de dunne darm maakt dan extra enzymen aan",
+         "de dikke darm neemt minder water terug",
+         "de lever maakt te veel gal, die de ontlasting oplost"
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 3,
+        "u": "Een zieke dikke darm neemt te weinig water terug.",
+        "uo": [
+         "Koos je te weinig maagzuur? Maagzuur werkt in de maag, ver voor de dikke darm. Diarree door een zieke dikke darm komt door minder waterterugname.",
+         "Koos je extra enzymen? Enzymen maken de ontlasting niet dunner. Het probleem is dat er te weinig water wordt teruggenomen.",
+         "Klopt: een ontstoken dikke darm kan minder water uit de voedselresten terugnemen. De ontlasting blijft daardoor dun en waterig, en de patiënt verliest veel vocht.",
+         "Koos je te veel gal? De lever wordt niet beïnvloed door een ontsteking in de dikke darm. Het gaat om de functie van de dikke darm zelf."
+        ],
+        "uh": "Wat doet de dikke darm normaal?",
+        "ctx": "Bij een ontsteking van de dikke darm heeft een patiënt al weken waterige diarree. Hij verliest daardoor veel vocht en zouten en raakt licht uitgedroogd. Zijn maag en dunne darm werken normaal, en hij neemt zijn voedingsstoffen gewoon op."
+       },
+       {
+        "v": "Wat is de functie van maagzuur naast het doden van bacteriën?",
+        "o": [
+         "het breekt zetmeel af tot glucose",
+         "het zorgt voor de juiste pH voor pepsine",
+         "het emulgeert vet in kleine druppels",
+         "het neemt water op uit het voedsel"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 3,
+        "u": "Maagzuur maakt de maag zuur, zodat pepsine kan werken.",
+        "uo": [
+         "Koos je zetmeel afbreken? Zuur breekt zetmeel niet af in de maag; amylase uit speeksel werkt in de maag zelfs nauwelijks door de lage pH.",
+         "Klopt: maagzuur maakt de pH in de maag ongeveer 2. Daarbij werkt pepsine het best, dat eiwitten afbreekt. Bovendien doodt het zuur veel bacteriën.",
+         "Koos je emulgeren? Dat doet gal uit de lever, en pas in de dunne darm. Maagzuur verdeelt vet niet in druppeltjes.",
+         "Koos je water opnemen? Water wordt vooral in de dikke darm opgenomen. Maagzuur heeft daar geen rol in."
+        ],
+        "uh": "Welk enzym werkt in de maag?"
+       },
+       {
+        "v": "Waar worden de meeste voedingsstoffen opgenomen in het bloed?",
+        "o": [
+         "in de dunne darm",
+         "in de maag",
+         "in de dikke darm",
+         "in de slokdarm"
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 4,
+        "u": "De dunne darm met darmvlokken is de plaats van opname.",
+        "uo": [
+         "Klopt: in de dunne darm worden glucose, aminozuren, vetzuren, vitaminen en mineralen opgenomen. Daar is een enorm oppervlak met darmvlokken.",
+         "Koos je de maag? In de maag wordt eiwit verteerd, maar er wordt nauwelijks iets opgenomen, behalve wat water en alcohol.",
+         "Koos je de dikke darm? Daar wordt vooral water teruggenomen. De voedingsstoffen zijn dan al opgenomen in de dunne darm.",
+         "Koos je de slokdarm? Die vervoert het voedsel alleen naar de maag. Er wordt niets opgenomen."
+        ],
+        "uh": "Het langste deel."
+       },
+       {
+        "v": "Waarom heeft de dunne darm darmvlokken?",
+        "o": [
+         "ze filteren bacteriën uit het voedsel",
+         "ze maken de enzymen voor de vertering",
+         "ze duwen het voedsel naar de dikke darm",
+         "ze vergroten het oppervlak voor de opname"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 4,
+        "u": "Darmvlokken en microvilli vergroten het oppervlak enorm.",
+        "uo": [
+         "Koos je bacteriën filteren? Dat doet de afweer in de darmwand. De vlokken zijn er voor een groot oppervlak.",
+         "Koos je enzymen maken? De darmwand maakt wel wat enzymen, maar de vlokken zijn er vooral om het oppervlak te vergroten.",
+         "Koos je voedsel duwen? Dat doen de spieren in de darmwand met golvende bewegingen. Darmvlokken zorgen voor opname.",
+         "Klopt: de darmwand is geplooid en bezet met miljoenen darmvlokken, en de cellen hebben nog eens microvilli. Zo ontstaat een oppervlak van ongeveer 200 m² voor opname."
+        ],
+        "uh": "Denk aan een badstof handdoek."
+       },
+       {
+        "v": "Waarom stroomt het bloed uit de dunne darm eerst naar de lever?",
+        "o": [
+         "de lever verteert de laatste eiwitten die nog in het bloed zitten",
+         "de lever maakt het bloed zuurstofrijk voor de rest van het lichaam",
+         "de lever slaat stoffen op en ontgift",
+         "de lever filtert alle water uit het bloed"
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 4,
+        "u": "Via de poortader komt het voedselrijke bloed eerst in de lever, die het bewerkt.",
+        "uo": [
+         "Koos je eiwitten verteren? In het bloed zitten al aminozuren; eiwit wordt in de darm verteerd. De lever verwerkt de aminozuren, onder andere tot ureum.",
+         "Koos je zuurstofrijk maken? Dat gebeurt in de longblaasjes. De lever krijgt via de poortader juist zuurstofarm bloed uit de darm.",
+         "Klopt: via de poortader gaat het bloed met opgenomen voedingsstoffen naar de lever. Die slaat glucose op als glycogeen, zet stoffen om en breekt giftige stoffen af voordat het bloed verder gaat.",
+         "Koos je water filteren? Water wordt door de nieren uit het bloed gefilterd, niet door de lever."
+        ],
+        "uh": "Waarom eerst langs een fabriek?",
+        "ctx": "Het bloed uit de haarvaten van de dunne darm stroomt niet direct terug naar het hart, maar via de poortader eerst naar de lever. Na een maaltijd met veel koolhydraten bevat de poortader veel meer glucose dan de leverader die uit de lever wegstroomt."
+       },
+       {
+        "v": "Waarom hebben mensen met coeliakie vaak een tekort aan voedingsstoffen?",
+        "o": [
+         "hun maag maakt geen pepsine en eiwitten worden niet verteerd",
+         "het oppervlak voor opname is kleiner",
+         "hun dikke darm neemt te veel water op",
+         "hun lever slaat te veel glucose op als glycogeen"
         ],
         "c": 1,
         "d": 3,
-        "u": "Mechanische vertering maakt het voedsel kleiner, waardoor de enzymen bij de chemische vertering een groter oppervlak hebben.",
+        "s": 4,
+        "u": "Platte darmvlokken: veel minder oppervlak voor opname.",
         "uo": [
-         "De nieren regelen de vertering niet.",
-         "Klopt: eerst kleiner, dan werken enzymen sneller.",
-         "Voedsel komt niet in de longen.",
-         "De bloedsnelheid staat hier los van."
+         "Koos je geen pepsine? Coeliakie is een ziekte van de dunne darm, niet van de maag. De maag maakt gewoon pepsine.",
+         "Klopt: bij coeliakie raken de darmvlokken door gluten beschadigd en worden ze plat. Het oppervlak van de dunne darm wordt veel kleiner, dus er worden minder voedingsstoffen opgenomen.",
+         "Koos je te veel water? Bij coeliakie is de ontlasting juist vaak dun. Het probleem zit in de dunne darm, niet in de dikke darm.",
+         "Koos je te veel glycogeen? Opslag in de lever heeft niets met coeliakie te maken. Het tekort komt doordat er te weinig wordt opgenomen."
         ],
-        "uh": "Eerst kleiner (mechanisch), dan enzymen (chemisch): sneller."
+        "uh": "Wat gebeurt er met het oppervlak?",
+        "ctx": "Bij de darmziekte coeliakie reageert het afweersysteem op gluten, een eiwit in tarwe. Daardoor raken de darmvlokken van de dunne darm beschadigd en worden ze plat. Patiënten vallen af en hebben vaak een tekort aan ijzer en vitaminen, ook als ze genoeg eten."
        },
        {
-        "v": "Welk orgaan mengt het voedsel en begint de eiwitvertering?",
+        "v": "Hoe worden vetzuren na opname in de darmvlok vooral afgevoerd?",
         "o": [
-         "De dikke darm",
-         "De nier",
-         "De maag",
-         "De slokdarm"
-        ],
-        "c": 2,
-        "d": 2,
-        "u": "De maag mengt het voedsel en begint met het enzym pepsine de eiwitvertering.",
-        "uo": [
-         "De dikke darm neemt vooral water op.",
-         "De nier hoort bij de uitscheiding.",
-         "Klopt: de maag mengt en begint de eiwitvertering.",
-         "De slokdarm vervoert alleen, hij verteert niet."
-        ],
-        "uh": "Maag = mengen en eiwitvertering starten."
-       },
-       {
-        "v": "Wat gebeurt er met verteerde voedingsstoffen na opname in de dunne darm?",
-        "o": [
-         "Ze worden meteen uitgeplast door de nieren",
-         "Ze blijven voorgoed onveranderd achter in de dunne darm",
-         "Ze worden weer tot groot voedsel opgebouwd in de maag",
-         "Ze gaan het bloed in en worden door het lichaam vervoerd"
-        ],
-        "c": 3,
-        "d": 3,
-        "u": "Na opname in de dunne darm komen de kleine stoffen in het bloed en worden ze naar de cellen vervoerd.",
-        "uo": [
-         "Opgenomen voeding wordt niet meteen uitgeplast.",
-         "Ze blijven niet in de darm, ze worden opgenomen.",
-         "Voedsel wordt niet teruggebouwd in de maag.",
-         "Klopt: ze gaan het bloed in en worden vervoerd."
-        ],
-        "uh": "Na opname: voeding gaat het bloed in, naar de cellen."
-       },
-       {
-        "v": "Welk woord betekent het opnemen van verteerde stoffen in het bloed?",
-        "o": [
-         "Resorptie",
-         "De mechanische vertering van het voedsel door te kauwen",
-         "De uitscheiding van afvalstoffen uit het bloed door de nieren",
-         "De gasuitwisseling van zuurstof en koolstofdioxide in de longen"
+         "via de lymfevaten",
+         "via de slagaders naar de nieren",
+         "via de galgang naar de lever",
+         "via de dikke darm naar buiten"
         ],
         "c": 0,
         "d": 2,
-        "u": "Resorptie is het opnemen van verteerde stoffen in het bloed, vooral in de dunne darm.",
+        "s": 4,
+        "u": "Vetten gaan via de lymfevaten (chylvaten); suikers en aminozuren via het bloed naar de poortader.",
         "uo": [
-         "Klopt: resorptie is opname in het bloed.",
-         "Kauwen is mechanische vertering, geen opname.",
-         "Dat is uitscheiding, niet opname.",
-         "Dat is gasuitwisseling, niet opname."
+         "Klopt: na opname worden vetten in de darmcellen weer in pakketjes gezet en via de lymfevaten in de darmvlok afgevoerd. Later komen ze via de lymfe in het bloed.",
+         "Koos je slagaders naar de nieren? Uit de darm vertrekken geen slagaders met voedingsstoffen; het bloed gaat via de poortader naar de lever. Vetten gaan via de lymfe.",
+         "Koos je de galgang? Door de galgang stroomt gal van de lever naar de darm, de andere kant op. Vetten worden niet via de galgang afgevoerd.",
+         "Koos je de dikke darm? De vetzuren zijn al opgenomen in de darmvlok. Ze gaan niet terug de darm in, maar via de lymfe het lichaam in."
         ],
-        "uh": "Resorptie = opname van verteerde stoffen in het bloed."
+        "uh": "Niet via het bloed."
+       },
+       {
+        "v": "Welke afvalstof uit de afbraak van eiwitten zit in urine?",
+        "o": [
+         "zetmeel",
+         "glucose",
+         "koolstofdioxide",
+         "ureum"
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 5,
+        "u": "Ureum ontstaat in de lever uit aminozuren en wordt door de nieren uitgescheiden.",
+        "uo": [
+         "Koos je zetmeel? Zetmeel komt niet in het bloed; het wordt in de darm verteerd tot glucose.",
+         "Koos je glucose? Glucose wordt in de nieren helemaal teruggenomen. Bij een gezond persoon zit er geen glucose in de urine.",
+         "Koos je koolstofdioxide? Dat wordt via de longen uitgeademd, niet via de urine.",
+         "Klopt: als aminozuren worden afgebroken, maakt de lever er ureum van. De nieren scheiden het ureum uit met de urine."
+        ],
+        "uh": "Uit de lever."
+       },
+       {
+        "v": "Wat gebeurt er in de nieren bij de filtratie?",
+        "o": [
+         "ureum wordt omgezet in glucose",
+         "alle bloedcellen worden uit het bloed gehaald",
+         "water en kleine stoffen gaan uit het bloed",
+         "grote eiwitten worden actief de urine in gepompt"
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 5,
+        "u": "Filtratie: bloeddruk perst water en kleine moleculen in het nierkapsel.",
+        "uo": [
+         "Koos je ureum omzetten? Ureum wordt in de nieren niet omgezet; het wordt uitgescheiden.",
+         "Koos je bloedcellen? Bloedcellen zijn te groot en blijven bij gezonde nieren in het bloed. Zie je bloed in de urine, dan is er iets mis.",
+         "Klopt: in het nierkapsel perst de bloeddruk water en kleine opgeloste stoffen, zoals glucose, zouten en ureum, uit het bloed. Bloedcellen en grote eiwitten blijven in het bloed.",
+         "Koos je eiwitten de urine in? Grote eiwitten blijven juist in het bloed. Eiwit in de urine is een teken van een nierprobleem."
+        ],
+        "uh": "Persen door de bloeddruk."
+       },
+       {
+        "v": "Waarom zit er in de voorurine wel glucose en in de urine niet?",
+        "o": [
+         "glucose wordt in de blaas afgebroken",
+         "glucose wordt helemaal teruggenomen",
+         "glucose verdampt uit de nierbuisjes",
+         "glucose wordt in de urine omgezet in ureum"
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 5,
+        "u": "Terugresorptie: glucose wordt volledig uit de voorurine teruggehaald.",
+        "uo": [
+         "Koos je afbraak in de blaas? De blaas slaat urine alleen op. De glucose is al eerder teruggenomen in de nierbuisjes.",
+         "Klopt: bij de filtratie komt glucose mee in de voorurine. In de nierbuisjes wordt het daarna helemaal teruggenomen in het bloed (terugresorptie), zodat er niets verloren gaat.",
+         "Koos je verdampen? In de nier verdampt niets. Glucose wordt door transporteiwitten actief teruggenomen.",
+         "Koos je omzetten in ureum? Ureum ontstaat in de lever uit aminozuren, niet uit glucose."
+        ],
+        "uh": "Wat gebeurt er in de nierbuisjes?",
+        "ctx": "Per dag filteren de nieren ongeveer 180 liter voorurine uit het bloed. Die voorurine bevat evenveel glucose per liter als het bloedplasma. Toch plast een gezond persoon maar ongeveer 1,5 liter per dag, en daar zit geen glucose in."
+       },
+       {
+        "v": "Hoeveel procent van het water in de voorurine wordt teruggenomen?",
+        "o": [
+         "ongeveer 99%",
+         "ongeveer 50%",
+         "ongeveer 1%",
+         "ongeveer 10%"
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 5,
+        "u": "180 L voorurine, 1,5 L urine: (180 − 1,5) / 180 ≈ 99% teruggenomen.",
+        "uo": [
+         "Klopt: van de 180 liter voorurine blijft maar 1,5 liter over als urine. (180 − 1,5) / 180 × 100% ≈ 99% wordt dus teruggenomen in het bloed.",
+         "Koos je 50%? Dan zou je 90 liter per dag plassen. Er blijft maar 1,5 liter over, dus bijna alles wordt teruggenomen.",
+         "Koos je 1%? Dat is ongeveer het deel dat als urine overblijft (1,5 van 180). Er wordt juist 99% teruggenomen.",
+         "Koos je 10%? Dan zou je 162 liter per dag plassen. Bijna al het water gaat terug naar het bloed."
+        ],
+        "uh": "Reken uit hoeveel er overblijft.",
+        "ctx": "De nieren van een volwassene filteren per dag ongeveer 180 liter voorurine uit het bloed. Per dag maakt deze persoon ongeveer 1,5 liter urine. Het verschil wordt in de nierbuisjes teruggenomen in het bloed."
        }
       ],
       "oe": [
        {
-        "vraag": "Leg uit wat het verschil is tussen mechanische en chemische vertering.",
-        "antwoord": "Bij mechanische vertering wordt het voedsel fysiek kleiner gemaakt, bijvoorbeeld door te kauwen of door de bewegingen van de maag. Bij chemische vertering breken verteringsenzymen de grote voedingsstoffen af tot kleine bouwstenen. Mechanisch verandert de vorm, chemisch verandert de stof."
+        "bron": "Examenstijl",
+        "ctx": "Een leerling onderzoekt de werking van pepsine. Ze doet in vier buizen een stukje gekookt eiwit met pepsine: A bij 37 °C en pH 2, B bij 37 °C en pH 8, C bij 5 °C en pH 2, D bij 37 °C en pH 2 maar met gekookte pepsine. Na een dag is alleen in buis A het eiwit grotendeels verdwenen.",
+        "v": "Verklaar de resultaten van de buizen B, C en D en leg uit waarom pepsine in het menselijk lichaam in de maag werkt.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "B: pepsine werkt niet bij pH 8, want het pH-optimum ligt rond 2 (1p). C: bij 5 °C gaan de moleculen zo traag dat er in een dag nauwelijks eiwit wordt afgebroken; D: door koken is pepsine gedenatureerd (1p). In de maag is het milieu zuur door maagzuur, met een pH rond 2: daar werkt pepsine het best (1p)."
        },
        {
-        "vraag": "Beschrijf de weg die het voedsel door het verteringsstelsel aflegt.",
-        "antwoord": "Het voedsel gaat van de mond via de slokdarm naar de maag. In de maag wordt het gemengd en begint de eiwitvertering. Daarna gaat het naar de dunne darm, waar de vertering afrondt en de stoffen worden opgenomen in het bloed. In de dikke darm wordt vooral water opgenomen en blijft de ontlasting over."
+        "bron": "Examenstijl",
+        "ctx": "Bij een patiënt is een groot deel van de dunne darm verwijderd. Hij eet normaal, maar valt af en heeft tekorten aan vitaminen en ijzer.",
+        "v": "Leg uit waarom deze patiënt tekorten krijgt, terwijl hij genoeg eet, en waarom het oppervlak van de dunne darm zo belangrijk is.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "In de dunne darm worden de meeste voedingsstoffen opgenomen (1p). Met een kortere dunne darm is het oppervlak voor opname veel kleiner (1p). Daardoor wordt een deel van het voedsel niet opgenomen en verlaat het het lichaam met de ontlasting, ook al eet hij genoeg (1p)."
        },
        {
-        "vraag": "Leg uit waarom grote voedingsstoffen eerst verteerd moeten worden voordat ze kunnen worden opgenomen.",
-        "antwoord": "Grote voedingsstoffen zijn te groot om door de wand van de dunne darm het bloed in te gaan. Door de vertering worden ze afgebroken tot kleine bouwstenen die wel door de darmwand passen en zo in het bloed kunnen worden opgenomen."
+        "bron": "Examenstijl",
+        "ctx": "Een student eet een maaltijd met brood (zetmeel), kaas (eiwit en vet) en een appel. Een uur later meet een arts in de poortader een hoog gehalte aan glucose en aminozuren. In de leverader, die bloed van de lever naar het hart voert, is het glucosegehalte veel lager.",
+        "v": "Leg uit waar glucose en aminozuren worden opgenomen, waarom het glucosegehalte in de leverader lager is en welke afvalstof de lever maakt uit overtollige aminozuren.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Glucose en aminozuren worden in de dunne darm opgenomen in de haarvaten van de darmvlokken en via de poortader naar de lever gebracht (1p). De lever slaat glucose op als glycogeen (onder invloed van insuline), dus er gaat minder glucose door naar de leverader (1p). Uit overtollige aminozuren maakt de lever ureum (1p)."
        },
        {
-        "vraag": "Leg uit waarom de nieren niet bij de spijsvertering horen maar bij de uitscheiding.",
-        "antwoord": "De nieren breken geen voedsel af en nemen geen voedingsstoffen op. Ze filteren afvalstoffen zoals ureum uit het bloed en maken daar urine van. Dat is uitscheiding: het verwijderen van afval uit het lichaam, niet het verteren van voedsel."
+        "bron": "Examenstijl",
+        "ctx": "Een gezond persoon maakt per dag 180 liter voorurine en 1,5 liter urine. In de voorurine zit 1 g glucose per liter en 0,3 g ureum per liter. In de urine zit geen glucose en ongeveer 20 g ureum per liter.",
+        "v": "Bereken hoeveel glucose er per dag in de voorurine komt en leg uit waarom er geen glucose in de urine zit, terwijl ureum juist geconcentreerder is.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "180 L × 1 g/L = 180 g glucose per dag in de voorurine (1p). In de nierbuisjes wordt alle glucose teruggenomen in het bloed (terugresorptie), dus er zit geen glucose in de urine (1p). Ureum wordt niet teruggenomen, terwijl 99% van het water wel wordt teruggenomen; daardoor wordt ureum in de urine veel geconcentreerder (1p)."
        },
        {
-        "vraag": "Waarom helpt goed kauwen de chemische vertering?",
-        "antwoord": "Goed kauwen is mechanische vertering: het maakt het voedsel in kleinere stukjes. Daardoor krijgt het voedsel een groter oppervlak. Verteringsenzymen kunnen dan op een groter oppervlak tegelijk werken, waardoor de chemische vertering sneller en vollediger verloopt."
+        "bron": "Examenstijl",
+        "ctx": "Bij iemand met een verstopte galgang komt er geen gal meer in de dunne darm. De patiënt heeft vette, bleke ontlasting en verliest gewicht. De vertering van zetmeel en eiwit verloopt normaal.",
+        "v": "Leg uit wat de functie van gal is en waarom de patiënt vette ontlasting heeft, terwijl de alvleesklier gewoon lipase maakt.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Gal emulgeert vet: het verdeelt vet in kleine druppeltjes (1p). Zonder gal blijft het vet in grote druppels, met een klein oppervlak voor lipase (1p). Lipase kan het vet dan maar langzaam afbreken; een groot deel wordt niet verteerd en niet opgenomen en komt in de ontlasting (1p)."
        }
       ]
      },

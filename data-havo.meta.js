@@ -1379,20 +1379,24 @@ var VAKKEN = [
      },
      {
       "id": "O6",
+      "lo": "bi.O.6",
+      "gs": 2,
       "naam": "Spijsvertering en uitscheiding",
-      "beschrijving": "Mechanische en chemische vertering, het verteringsstelsel, opname in de dunne darm, en de rol van de nieren bij uitscheiding.",
-      "ceStatus": "CE",
+      "beschrijving": "Je legt uit waarom voedsel verteerd wordt, onderscheidt mechanische en chemische vertering, beschrijft welke enzymen waar werken en wat gal doet, volgt de weg door het verteringskanaal, verklaart de opname in de dunne darm en beschrijft hoe de nieren met filtratie en terugresorptie urine maken.",
+      "ceStatus": "CE+SE",
+      "binas": "",
+      "val": "",
       "onderwerpen": [
-       "Spijsvertering: voedsel afbreken tot opneembare stoffen",
-       "Mechanische vertering (kauwen, malen)",
-       "Chemische vertering (enzymen)",
-       "Verteringsstelsel: mond, maag, dunne en dikke darm",
-       "Opname (resorptie) in de dunne darm",
-       "Uitscheiding en de nieren"
+       "Voedingsstoffen en vertering",
+       "Mechanische vertering",
+       "Chemische vertering en enzymen",
+       "Het verteringskanaal",
+       "Opname in de dunne darm",
+       "Uitscheiding door de nieren"
       ],
-      "nSv": 25,
+      "nSv": 27,
       "nOe": 5,
-      "nBeg": 12,
+      "nBeg": 15,
       "hasSam": true
      },
      {
