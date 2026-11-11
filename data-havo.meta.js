@@ -1518,20 +1518,24 @@ var VAKKEN = [
      },
      {
       "id": "P4",
+      "lo": "bi.P.4",
+      "gs": 2,
       "naam": "Relaties tussen soorten",
-      "beschrijving": "Vormen van symbiose (mutualisme, commensalisme en parasitisme), predatie en concurrentie, en het effect van een exoot op een ecosysteem.",
-      "ceStatus": "CE",
+      "beschrijving": "Je herkent en verklaart mutualisme, commensalisme, parasitisme, predatie en concurrentie tussen soorten, beschrijft de levenscyclus van een parasiet met tussengastheer en eindgastheer, legt schutkleur en waarschuwingskleur uit en verklaart de gevolgen van exoten voor een ecosysteem.",
+      "ceStatus": "CE+SE",
+      "binas": "",
+      "val": "",
       "onderwerpen": [
-       "Symbiose als langdurig samenleven",
-       "Mutualisme (beide voordeel)",
-       "Commensalisme (een voordeel, ander geen last)",
-       "Parasitisme (parasiet voordeel, gastheer nadeel)",
-       "Predatie en concurrentie",
-       "Exoot en het effect op een ecosysteem"
+       "Symbiose en mutualisme",
+       "Commensalisme",
+       "Parasitisme",
+       "Predatie",
+       "Concurrentie",
+       "Exoten"
       ],
-      "nSv": 25,
+      "nSv": 26,
       "nOe": 5,
-      "nBeg": 12,
+      "nBeg": 13,
       "hasSam": true
      },
      {

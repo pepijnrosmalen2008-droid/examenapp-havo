@@ -59990,565 +59990,656 @@ var VAKKEN = [
      },
      {
       "id": "P4",
+      "lo": "bi.P.4",
+      "gs": 2,
       "naam": "Relaties tussen soorten",
-      "beschrijving": "Vormen van symbiose (mutualisme, commensalisme en parasitisme), predatie en concurrentie, en het effect van een exoot op een ecosysteem.",
-      "ceStatus": "CE",
+      "beschrijving": "Je herkent en verklaart mutualisme, commensalisme, parasitisme, predatie en concurrentie tussen soorten, beschrijft de levenscyclus van een parasiet met tussengastheer en eindgastheer, legt schutkleur en waarschuwingskleur uit en verklaart de gevolgen van exoten voor een ecosysteem.",
+      "ceStatus": "CE+SE",
+      "binas": "",
+      "val": "",
       "onderwerpen": [
-       "Symbiose als langdurig samenleven",
-       "Mutualisme (beide voordeel)",
-       "Commensalisme (een voordeel, ander geen last)",
-       "Parasitisme (parasiet voordeel, gastheer nadeel)",
-       "Predatie en concurrentie",
-       "Exoot en het effect op een ecosysteem"
+       "Symbiose en mutualisme",
+       "Commensalisme",
+       "Parasitisme",
+       "Predatie",
+       "Concurrentie",
+       "Exoten"
       ],
-      "sam": "Soorten hebben allerlei relaties met elkaar. Symbiose is het langdurig samenleven van twee soorten. Er zijn drie vormen. Bij mutualisme hebben beide soorten voordeel, zoals een bij die nectar haalt en de bloem bestuift. Bij commensalisme heeft de ene soort voordeel en de andere geen voordeel maar ook geen nadeel. Bij parasitisme heeft de parasiet voordeel en de gastheer nadeel, want de parasiet leeft ten koste van de gastheer. Daarnaast bestaan predatie (een roofdier eet een prooi) en concurrentie (soorten strijden om dezelfde bronnen). Een exoot is een soort die van elders komt. Zonder natuurlijke vijanden kan een exoot sterk toenemen en inheemse soorten verdringen.",
+      "sam": "Symbiose = langdurig samenleven. Mutualisme + / + (bij en bloem, korstmos, pensbacteriën). Commensalisme + / 0 (klimop, zeepok op walvis). Parasitisme + / − (lintworm: eindgastheer mens, tussengastheer varken; gastheer niet direct dood). Predatie + / − (prooi gedood); schutkleur en waarschuwingskleur. Concurrentie − / − om schaarse hulpbronnen; binnen een soort het sterkst; zelfde niche → verdringing. Exoot: door mens verplaatst, geen natuurlijke vijanden, verdringt inheemse soorten (Amerikaanse rivierkreeft).",
       "begrippen": [
        {
         "t": "Symbiose",
-        "d": "het langdurig samenleven van twee verschillende soorten"
+        "d": "Langdurig nauw samenleven van twee verschillende soorten."
        },
        {
         "t": "Mutualisme",
-        "d": "samenleven waarbij beide soorten voordeel hebben"
+        "d": "Relatie waarbij beide soorten voordeel hebben (+ / +)."
        },
        {
         "t": "Commensalisme",
-        "d": "samenleven waarbij één soort voordeel heeft en de ander geen last"
+        "d": "Relatie waarbij één soort voordeel heeft en de andere geen voordeel of nadeel (+ / 0)."
        },
        {
         "t": "Parasitisme",
-        "d": "samenleven waarbij de parasiet voordeel heeft en de gastheer nadeel"
+        "d": "Relatie waarbij de parasiet voordeel heeft en de gastheer nadeel (+ / −)."
        },
        {
         "t": "Parasiet",
-        "d": "organisme dat leeft ten koste van een gastheer"
+        "d": "Organisme dat op of in een gastheer leeft en daar voedsel uit haalt."
        },
        {
         "t": "Gastheer",
-        "d": "organisme waarop of waarin een parasiet leeft"
+        "d": "Organisme waarop of waarin een parasiet leeft."
+       },
+       {
+        "t": "Tussengastheer",
+        "d": "Gastheer waarin een parasiet een deel van zijn levenscyclus doorbrengt, maar niet volwassen wordt."
        },
        {
         "t": "Predatie",
-        "d": "een roofdier dat een prooidier vangt en opeet"
+        "d": "Relatie waarbij een roofdier zijn prooi vangt, doodt en opeet (+ / −)."
        },
        {
-        "t": "Predator",
-        "d": "een roofdier dat andere dieren als prooi eet"
+        "t": "Schutkleur",
+        "d": "Kleur waardoor een dier opgaat in zijn omgeving en minder opvalt."
        },
        {
-        "t": "Prooi",
-        "d": "een dier dat door een roofdier wordt gegeten"
+        "t": "Waarschuwingskleur",
+        "d": "Opvallende kleur van een giftig of onsmakelijk dier die roofdieren afschrikt."
        },
        {
         "t": "Concurrentie",
-        "d": "de strijd tussen soorten om dezelfde bronnen"
+        "d": "Strijd tussen organismen om dezelfde schaarse hulpbron (− / −)."
        },
        {
         "t": "Exoot",
-        "d": "een soort die van nature niet in het gebied thuishoort"
+        "d": "Soort die door de mens in een gebied terecht is gekomen waar hij van nature niet voorkwam."
        },
        {
         "t": "Inheemse soort",
-        "d": "een soort die van nature in het gebied voorkomt"
+        "d": "Soort die van nature in een gebied voorkomt."
        }
       ],
       "sv": [
        {
-        "v": "Wat is symbiose?",
+        "v": "Bij welke relatie hebben beide soorten voordeel?",
         "o": [
-         "Het langdurig samenleven van twee soorten",
-         "Het eenmalig ontmoeten van twee dieren",
-         "De niet-levende omgeving van een gebied",
-         "Het totale aantal individuen van één enkele soort"
-        ],
-        "c": 0,
-        "d": 1,
-        "u": "Symbiose is het langdurig samenleven van twee verschillende soorten.",
-        "uo": [
-         "Klopt: langdurig samenleven van twee soorten.",
-         "Symbiose is juist langdurig, geen eenmalige ontmoeting.",
-         "Dat is de biotoop.",
-         "Dat is de populatiegrootte."
-        ],
-        "uh": "Symbiose = langdurig samenleven van twee soorten."
-       },
-       {
-        "v": "Wat is mutualisme?",
-        "o": [
-         "Eén soort voordeel, de ander nadeel",
-         "Beide soorten hebben voordeel",
-         "Eén soort voordeel, de ander geen last",
-         "Beide soorten hebben alleen maar nadeel"
-        ],
-        "c": 1,
-        "d": 2,
-        "u": "Bij mutualisme hebben beide soorten voordeel van het samenleven.",
-        "uo": [
-         "Dat is parasitisme.",
-         "Klopt: beide soorten hebben voordeel.",
-         "Dat is commensalisme.",
-         "Bij mutualisme is er juist voordeel voor beide."
-        ],
-        "uh": "Mutualisme = beide voordeel."
-       },
-       {
-        "v": "Wat is parasitisme?",
-        "o": [
-         "Beide soorten hebben er voordeel van de samenwerking",
-         "Geen van beide merkt er iets van",
-         "De parasiet voordeel, de gastheer nadeel",
-         "Beide soorten hebben geen voordeel"
-        ],
-        "c": 2,
-        "d": 2,
-        "u": "Bij parasitisme heeft de parasiet voordeel en de gastheer nadeel.",
-        "uo": [
-         "Dat is mutualisme.",
-         "Bij parasitisme merkt de gastheer er wel iets van.",
-         "Klopt: parasiet voordeel, gastheer nadeel.",
-         "De parasiet heeft juist voordeel."
-        ],
-        "uh": "Parasitisme = parasiet voordeel, gastheer nadeel."
-       },
-       {
-        "v": "Wat is commensalisme?",
-        "o": [
-         "Beide soorten hebben nadeel van elkaar",
-         "De parasiet heeft voordeel over de gastheer",
-         "Beide soorten hebben even veel voordeel",
-         "Eén soort voordeel, de ander geen last"
-        ],
-        "c": 3,
-        "d": 2,
-        "u": "Bij commensalisme heeft de ene soort voordeel en de ander geen voordeel maar ook geen nadeel.",
-        "uo": [
-         "Dat is geen commensalisme.",
-         "Dat is parasitisme.",
-         "Dat is mutualisme.",
-         "Klopt: één voordeel, de ander geen last."
-        ],
-        "uh": "Commensalisme = één voordeel, ander geen last."
-       },
-       {
-        "v": "Een bij haalt nectar en bestuift daarbij de bloem. Welke relatie is dat?",
-        "o": [
-         "Mutualisme",
-         "Parasitisme",
-         "Predatie",
-         "Concurrentie"
-        ],
-        "c": 0,
-        "d": 2,
-        "u": "De bij krijgt nectar en de bloem wordt bestoven: beide hebben voordeel, dus mutualisme.",
-        "uo": [
-         "Klopt: beide voordeel, dus mutualisme.",
-         "Er is geen gastheer met nadeel.",
-         "De bij eet de bloem niet op.",
-         "Ze strijden niet om dezelfde bron."
-        ],
-        "uh": "Bij en bloem = mutualisme (beide voordeel)."
-       },
-       {
-        "v": "Een teek zuigt bloed van een hond. Welke relatie is dat?",
-        "o": [
-         "Mutualisme",
-         "Parasitisme",
-         "Commensalisme",
-         "Predatie"
-        ],
-        "c": 1,
-        "d": 2,
-        "u": "De teek (parasiet) heeft voordeel en de hond (gastheer) nadeel, dus parasitisme.",
-        "uo": [
-         "De hond heeft juist nadeel, geen voordeel.",
-         "Klopt: teek voordeel, hond nadeel, dus parasitisme.",
-         "De hond heeft wel degelijk nadeel.",
-         "De teek eet de hond niet in één keer op."
-        ],
-        "uh": "Teek en hond = parasitisme."
-       },
-       {
-        "v": "Wat is een parasiet?",
-        "o": [
-         "Een roofdier dat andere prooidieren opjaagt en vangt",
-         "Een plant die zelf voedsel maakt",
-         "Een organisme dat leeft ten koste van een gastheer",
-         "Een reducent die dode resten afbreekt"
+         "commensalisme",
+         "parasitisme",
+         "mutualisme",
+         "predatie"
         ],
         "c": 2,
         "d": 1,
-        "u": "Een parasiet leeft op of in een gastheer en gaat ten koste van die gastheer.",
+        "s": 0,
+        "u": "Mutualisme: + / +.",
         "uo": [
-         "Dat is een predator.",
-         "Dat is een producent.",
-         "Klopt: leeft ten koste van een gastheer.",
-         "Dat is een reducent."
+         "Koos je commensalisme? Daar heeft één soort voordeel en merkt de andere er niets van: + / 0.",
+         "Koos je parasitisme? Daar heeft alleen de parasiet voordeel; de gastheer heeft er nadeel van. Dat is + / −.",
+         "Klopt: bij mutualisme hebben beide soorten voordeel van het samenleven, zoals de bij die nectar krijgt en de bloem die wordt bestoven.",
+         "Koos je predatie? Een roofdier eet zijn prooi op. De predator heeft voordeel, de prooi het grootste nadeel denkbaar."
         ],
-        "uh": "Parasiet = leeft ten koste van een gastheer."
+        "uh": "Plus en plus."
        },
        {
-        "v": "Wat is een gastheer?",
+        "v": "Welke relatie hebben bijen en bloemen?",
         "o": [
-         "Het roofdier dat de prooi in het gebied vangt",
-         "De soort die zelf voedsel produceert",
-         "De niet-levende omgeving van een gebied",
-         "Het organisme waarop een parasiet leeft"
+         "commensalisme",
+         "mutualisme",
+         "parasitisme",
+         "concurrentie"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 0,
+        "u": "De bij krijgt voedsel, de bloem wordt bestoven: beide voordeel.",
+        "uo": [
+         "Koos je commensalisme? Dan zou één van beide er niets aan hebben. De bloem heeft juist veel baat bij de bestuiving door de bij.",
+         "Klopt: de bij krijgt nectar en stuifmeel als voedsel en brengt ondertussen stuifmeel van bloem naar bloem. Zo hebben beide voordeel: mutualisme.",
+         "Koos je parasitisme? De bij neemt wel nectar, maar de bloem heeft er geen nadeel van: ze wordt bestoven en kan zaad vormen.",
+         "Koos je concurrentie? Bijen en bloemen strijden niet om dezelfde hulpbron. Ze helpen elkaar juist."
+        ],
+        "uh": "Wat krijgt de bloem terug?"
+       },
+       {
+        "v": "Waarom is de relatie tussen een koe en de bacteriën in haar pens mutualisme?",
+        "o": [
+         "beide hebben er voordeel van",
+         "de bacteriën maken de koe ziek, maar de koe overleeft het",
+         "de koe eet de bacteriën op als extra eiwit",
+         "de bacteriën leven in de pens zonder de koe te beïnvloeden"
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 0,
+        "u": "De koe kan zelf geen cellulose verteren; de bacteriën wel. Ze krijgen een warme plek met voedsel.",
+        "uo": [
+         "Klopt: de koe heeft geen enzym om cellulose af te breken. De bacteriën in de pens wel. Zij krijgen een warme plek met voortdurend voedsel, de koe krijgt de afbraakproducten. Beide hebben voordeel.",
+         "Koos je ziek maken? Dan zou het parasitisme zijn. Deze bacteriën zijn juist onmisbaar voor de koe.",
+         "Koos je opeten als eiwit? Een deel van de bacteriën wordt later wel verteerd, maar de kern van de relatie is dat ze cellulose afbreken voor de koe.",
+         "Koos je geen invloed? Zonder deze bacteriën zou de koe gras nauwelijks kunnen verteren. De invloed is dus juist heel groot."
+        ],
+        "uh": "Wat kan de koe zelf niet?",
+        "ctx": "Een koe eet elke dag tientallen kilo’s gras, dat voor een groot deel uit cellulose bestaat. Zelf maakt de koe geen enzym dat cellulose kan afbreken. In haar pens, een grote voormaag, leven miljarden bacteriën die dat wel kunnen. Ze breken de cellulose af tot stoffen die de koe opneemt."
+       },
+       {
+        "v": "Welke conclusie past bij dit experiment met mieren en acacia’s?",
+        "o": [
+         "de mieren beschermen de acacia alleen tegen kou",
+         "de mieren zijn parasieten die de acacia schaden",
+         "de acacia heeft geen voordeel van de mieren",
+         "beide hebben voordeel"
         ],
         "c": 3,
-        "d": 1,
-        "u": "De gastheer is het organisme waarop of waarin een parasiet leeft.",
+        "d": 3,
+        "s": 0,
+        "u": "De boom geeft woonruimte en voedsel; de mieren verdedigen de boom tegen planteneters.",
         "uo": [
-         "Dat is een predator.",
-         "Dat is een producent.",
-         "Dat is de biotoop.",
-         "Klopt: de gastheer draagt de parasiet."
+         "Koos je kou? Over kou staat niets in het experiment. De mieren beschermen tegen planteneters.",
+         "Koos je parasieten? Dan zou de boom het zonder mieren beter doen. Het is precies omgekeerd: zonder mieren gaat het slecht met de boom.",
+         "Koos je geen voordeel? Bomen zonder mieren werden zwaar beschadigd door planteneters. De boom heeft dus juist veel voordeel.",
+         "Klopt: de acacia geeft de mieren holle doornen om in te wonen en suikerrijke druppels. De mieren verdedigen de boom tegen planteneters. Zonder mieren wordt de boom kaalgevreten: beide hebben voordeel."
         ],
-        "uh": "Gastheer = draagt de parasiet."
+        "uh": "Hoe ging het met bomen zonder mieren?",
+        "ctx": "In Afrika leven op sommige acaciabomen mieren in holle doornen. De boom maakt suikerrijke druppels die de mieren eten. Onderzoekers verwijderden bij een groep bomen alle mieren. Na een jaar waren deze bomen veel zwaarder beschadigd door insecten en giraffen dan de bomen met mieren, en een deel was dood."
        },
        {
-        "v": "Wat is predatie?",
+        "v": "Welke relatie hebben korstmossen: een schimmel en een alg die samen één organisme vormen?",
         "o": [
-         "Een roofdier dat een prooi eet",
-         "Twee soorten die elkaar helpen",
-         "Een parasiet die op een gastheer leeft",
-         "Twee soorten die dezelfde bron delen"
+         "predatie",
+         "parasitisme",
+         "mutualisme",
+         "concurrentie"
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 0,
+        "u": "De alg maakt suikers met fotosynthese, de schimmel geeft water, mineralen en bescherming.",
+        "uo": [
+         "Koos je predatie? Bij predatie doodt de ene soort de andere. In een korstmos leven ze juist jarenlang samen.",
+         "Koos je parasitisme? Dan zou een van beide nadeel hebben. In een korstmos kunnen ze samen leven op kale rots, waar geen van beide alleen kan overleven.",
+         "Klopt: in een korstmos maakt de alg met fotosynthese suikers, die ook de schimmel gebruikt. De schimmel houdt water vast, levert mineralen en beschermt de alg tegen uitdrogen. Beide hebben voordeel.",
+         "Koos je concurrentie? Ze strijden niet om dezelfde hulpbron, maar vullen elkaar aan: de een levert suikers, de ander water en bescherming."
+        ],
+        "uh": "Wat levert elk van beide?"
+       },
+       {
+        "v": "Welke relatie is commensalisme?",
+        "o": [
+         "beide soorten hebben voordeel van het samenleven",
+         "één heeft voordeel, de ander niets",
+         "één soort heeft voordeel, de ander heeft nadeel",
+         "beide soorten hebben nadeel van elkaar"
+        ],
+        "c": 1,
+        "d": 1,
+        "s": 1,
+        "u": "Commensalisme: + / 0.",
+        "uo": [
+         "Koos je beide voordeel? Dat is mutualisme. Bij commensalisme heeft maar één soort er iets aan.",
+         "Klopt: bij commensalisme heeft één soort voordeel en heeft de andere geen voordeel en geen nadeel.",
+         "Koos je voordeel en nadeel? Dat is parasitisme of predatie. Bij commensalisme heeft de tweede soort geen nadeel.",
+         "Koos je beide nadeel? Dat past bij concurrentie, waarbij beide soorten strijden om dezelfde hulpbron."
+        ],
+        "uh": "Plus en nul."
+       },
+       {
+        "v": "Welk voorbeeld is commensalisme?",
+        "o": [
+         "een klimop tegen een boom",
+         "een lintworm die in de darm van een varken leeft",
+         "een vos die een konijn vangt en opeet",
+         "twee soorten vogels die om dezelfde nestholen vechten"
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 1,
+        "u": "De klimop gebruikt de boom als steun zonder de boom (veel) te schaden.",
+        "uo": [
+         "Klopt: de klimop gebruikt de boom alleen als steun om bij het licht te komen. Hij neemt geen voedsel uit de boom. De boom heeft er meestal geen last van: + / 0.",
+         "Koos je een lintworm? Die neemt voedsel uit de darm van zijn gastheer en schaadt die: parasitisme.",
+         "Koos je een vos en een konijn? Dat is predatie: de vos doodt en eet het konijn.",
+         "Koos je vechten om nestholen? Dat is concurrentie: beide soorten hebben er nadeel van."
+        ],
+        "uh": "Wie heeft er last van?"
+       },
+       {
+        "v": "Waarom spreken biologen hier van commensalisme en niet van mutualisme?",
+        "o": [
+         "de zeepokken beschermen de walvis tegen orka’s",
+         "de zeepokken zuigen bloed uit de walvis",
+         "de walvis eet de zeepokken op als ze loslaten",
+         "de walvis heeft geen voordeel van de zeepokken"
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 1,
+        "u": "Alleen de zeepokken hebben voordeel; de walvis merkt er weinig van.",
+        "uo": [
+         "Koos je bescherming tegen orka’s? Daar is geen bewijs voor. Juist omdat de walvis geen voordeel heeft, is het geen mutualisme.",
+         "Koos je bloed zuigen? Zeepokken filteren plankton uit het water en zuigen geen bloed. Dan zou het parasitisme zijn.",
+         "Koos je opeten? Daar is in de tekst geen sprake van. De walvis haalt er geen voedsel uit.",
+         "Klopt: de zeepokken krijgen een plek en worden door het water langs voedselrijke gebieden gevoerd. De walvis heeft er geen voordeel van en nauwelijks nadeel: commensalisme."
+        ],
+        "uh": "Wie heeft er voordeel?",
+        "ctx": "Op de huid van bultruggen leven zeepokken: kleine kreeftachtigen die zich vastzetten en met hun pootjes plankton uit het water filteren. Doordat de walvis lange afstanden zwemt, komen de zeepokken steeds op nieuwe plekken met veel plankton. Onderzoekers vonden geen schade aan de huid of de gezondheid van de walvissen."
+       },
+       {
+        "v": "Waarom is een vogel die in een holte van een boom nestelt een voorbeeld van commensalisme?",
+        "o": [
+         "de vogel eet de bladeren van de boom op",
+         "de boom krijgt mest van de vogel en groeit sneller",
+         "de vogel heeft voordeel, de boom merkt er niets van",
+         "de boom en de vogel strijden om hetzelfde licht"
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 1,
+        "u": "De vogel heeft een veilige nestplek; de boom heeft geen voordeel en geen nadeel.",
+        "uo": [
+         "Koos je bladeren eten? Een vogel die nestelt, eet geen bladeren. Dan zou de boom nadeel hebben.",
+         "Koos je mest voor de boom? Een beetje mest in een holte heeft nauwelijks effect op de groei van een boom. Zou de boom duidelijk voordeel hebben, dan was het mutualisme.",
+         "Klopt: de vogel krijgt een beschutte nestplaats, terwijl de boom daar geen voordeel en geen nadeel van heeft. Dat is commensalisme: + / 0.",
+         "Koos je strijd om licht? Een vogel heeft geen licht nodig voor fotosynthese. Er is geen concurrentie tussen vogel en boom."
+        ],
+        "uh": "Heeft de boom er last of voordeel van?"
+       },
+       {
+        "v": "Wat kenmerkt een parasiet?",
+        "o": [
+         "hij helpt zijn gastheer bij de vertering",
+         "hij leeft ten koste van een gastheer",
+         "hij doodt zijn prooi meteen",
+         "hij maakt zelf voedsel met fotosynthese"
+        ],
+        "c": 1,
+        "d": 1,
+        "s": 2,
+        "u": "Parasitisme: + / −; de parasiet leeft op of in een gastheer en schaadt die.",
+        "uo": [
+         "Koos je helpen bij de vertering? Dat is mutualisme, zoals de bacteriën in de pens van een koe.",
+         "Klopt: een parasiet leeft op of in een gastheer en haalt daar voedsel uit. De gastheer heeft er nadeel van, maar wordt meestal niet meteen gedood.",
+         "Koos je meteen doden? Dat doet een predator. Een parasiet heeft er belang bij dat de gastheer nog een tijd blijft leven.",
+         "Koos je fotosynthese? Dat doen producenten. Een parasiet haalt zijn voedsel juist uit een ander organisme."
+        ],
+        "uh": "Ten koste van een ander."
+       },
+       {
+        "v": "Waarom doodt een parasiet zijn gastheer meestal niet snel?",
+        "o": [
+         "dan verliest hij zijn voedsel",
+         "parasieten zijn te klein om iets te doden",
+         "de gastheer maakt de parasiet altijd snel onschadelijk",
+         "parasieten leven alleen in dode organismen"
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 2,
+        "u": "De parasiet is afhankelijk van een levende gastheer.",
+        "uo": [
+         "Klopt: de parasiet leeft van zijn gastheer. Gaat die dood, dan verliest de parasiet zijn voedsel en woonplek. Daarom is het voor een parasiet gunstig als de gastheer lang blijft leven.",
+         "Koos je te klein? Sommige kleine parasieten, zoals bacteriën, kunnen een gastheer wel doden. Het voordeel van een levende gastheer verklaart waarom ze dat vaak niet snel doen.",
+         "Koos je altijd onschadelijk? Veel parasieten overleven juist lang in hun gastheer, zoals lintwormen jarenlang.",
+         "Koos je dode organismen? Organismen die van dode resten leven, zijn reducenten. Parasieten leven van levende gastheren."
+        ],
+        "uh": "Waar leeft de parasiet van?"
+       },
+       {
+        "v": "Waarom gaat de lintworm via het varken naar de mens?",
+        "o": [
+         "de mens geeft de worm via de lucht aan het varken",
+         "het varken eet de mens en zo komt de worm erin",
+         "de lintworm leeft alleen in dieren die gras eten",
+         "hij heeft twee gastheren nodig"
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 2,
+        "u": "Veel parasieten hebben een levenscyclus met een tussengastheer en een eindgastheer.",
+        "uo": [
+         "Koos je via de lucht? De eitjes gaan met de ontlasting naar buiten en worden door het varken opgegeten, niet via de lucht.",
+         "Koos je het varken dat de mens eet? Het is omgekeerd: de mens eet vlees van het varken met blaasjes erin.",
+         "Koos je alleen grasetende dieren? De mens is geen graseter, maar wel de eindgastheer. Het gaat om de levenscyclus via twee gastheren.",
+         "Klopt: de varkenslintworm leeft volwassen in de darm van de mens (eindgastheer). De eitjes komen met de ontlasting naar buiten, een varken eet ze op, en in de spieren van het varken (tussengastheer) ontstaan blaasjes. Wie dat vlees rauw eet, raakt besmet."
+        ],
+        "uh": "Twee gastheren.",
+        "ctx": "De varkenslintworm leeft volwassen in de darm van de mens en kan meters lang worden. Met de ontlasting komen eitjes naar buiten. Als een varken die eitjes binnenkrijgt, ontstaan in zijn spieren kleine blaasjes met een jonge worm erin. Wie rauw of half gaar varkensvlees met blaasjes eet, krijgt een lintworm."
+       },
+       {
+        "v": "Hoe kun je de besmetting met de varkenslintworm het beste voorkomen?",
+        "o": [
+         "mensen alleen in de avond laten eten",
+         "varkens extra gras laten eten",
+         "varkensvlees goed doorbakken",
+         "varkens buiten laten lopen"
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 2,
+        "u": "Doorbakken doodt de blaasjes in het vlees.",
+        "uo": [
+         "Koos je eettijd? Het tijdstip van eten heeft geen invloed op de lintworm. Goed verhitten van het vlees wel.",
+         "Koos je gras? Het voer van het varken verandert niets aan de blaasjes in het vlees. Het gaat erom dat de besmetting van mens naar varken of van vlees naar mens stopt.",
+         "Klopt: door varkensvlees goed door te bakken, gaan de jonge wormen in de blaasjes dood. Zo wordt de cyclus van de lintworm doorbroken.",
+         "Koos je buiten lopen? Buiten kunnen varkens juist makkelijker met besmette ontlasting in aanraking komen. Doorbakken van vlees beschermt de mens."
+        ],
+        "uh": "Wat doodt de jonge wormen?"
+       },
+       {
+        "v": "Wat is het verschil tussen een parasiet en een predator?",
+        "o": [
+         "een parasiet is altijd groter dan zijn gastheer",
+         "een parasiet doodt zijn gastheer meestal niet direct",
+         "een predator leeft altijd in zijn prooi",
+         "een predator heeft geen voedsel nodig"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 2,
+        "u": "Parasiet: leeft lang op of in een gastheer; predator: doodt en eet zijn prooi.",
+        "uo": [
+         "Koos je groter? Parasieten zijn juist meestal veel kleiner dan hun gastheer, zoals een teek op een hond.",
+         "Klopt: een parasiet leeft langere tijd op of in een gastheer en haalt daar voedsel uit, zonder hem direct te doden. Een predator vangt zijn prooi, doodt hem en eet hem op.",
+         "Koos je predator in de prooi? Dat geldt juist voor veel parasieten. Een predator jaagt van buitenaf.",
+         "Koos je geen voedsel? Predatoren eten hun prooi juist als voedsel. Alle dieren hebben voedsel nodig."
+        ],
+        "uh": "Doden of lang benutten?"
+       },
+       {
+        "v": "Welk kenmerk heeft predatie?",
+        "o": [
+         "het roofdier doodt en eet de prooi",
+         "beide soorten hebben voordeel",
+         "de prooi merkt niets van het roofdier",
+         "het roofdier leeft in de prooi"
         ],
         "c": 0,
         "d": 1,
-        "u": "Bij predatie vangt en eet een roofdier (predator) een prooidier.",
+        "s": 3,
+        "u": "Predatie: + / −; de prooi wordt gedood.",
         "uo": [
-         "Klopt: roofdier eet prooi.",
-         "Dat lijkt op mutualisme, niet op predatie.",
-         "Dat is parasitisme.",
-         "Dat lijkt op concurrentie."
+         "Klopt: bij predatie vangt en doodt het roofdier zijn prooi en eet hem op. De predator heeft voordeel, de prooi nadeel.",
+         "Koos je beide voordeel? Dat is mutualisme. Een prooi heeft geen voordeel van gegeten worden.",
+         "Koos je niets merken? Dat hoort bij commensalisme. Een prooi merkt predatie wel: hij gaat dood.",
+         "Koos je leven in de prooi? Dat doet een parasiet. Een roofdier jaagt van buitenaf en eet de prooi op."
         ],
-        "uh": "Predatie = roofdier eet prooi."
+        "uh": "Vangen en opeten."
+       },
+       {
+        "v": "Waarom hebben veel prooidieren schutkleuren?",
+        "o": [
+         "zo houden ze zich warm in de zon",
+         "zo kunnen ze zelf beter jagen",
+         "zo trekken ze meer partners aan",
+         "zo vallen ze minder op"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 3,
+        "u": "Schutkleur = camouflage tegen predatoren.",
+        "uo": [
+         "Koos je warmte? Kleur kan warmte opnemen, maar de functie van een schutkleur is camouflage tegen roofdieren.",
+         "Koos je beter jagen? Ook sommige roofdieren hebben een schutkleur, maar bij prooidieren gaat het erom niet gezien te worden.",
+         "Koos je partners aantrekken? Daarvoor gebruiken dieren juist opvallende kleuren. Een schutkleur is bedoeld om níet op te vallen.",
+         "Klopt: een schutkleur laat een prooidier opgaan in zijn omgeving, zoals een sprinkhaan in het gras. Roofdieren zien hem minder snel, dus hij overleeft vaker."
+        ],
+        "uh": "Niet opvallen."
+       },
+       {
+        "v": "Welke verklaring past bij de felle kleuren van de pijlgifkikker?",
+        "o": [
+         "de kleur lokt prooidieren naar hem toe",
+         "de kleur maakt hem onzichtbaar tussen de bladeren",
+         "de kleur waarschuwt roofdieren dat hij giftig is",
+         "de kleur beschermt hem tegen de zon"
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 3,
+        "u": "Waarschuwingskleur: roofdieren leren dat felle kleuren gif betekenen.",
+        "uo": [
+         "Koos je prooi lokken? De kikker eet insecten, maar de kleur dient om roofdieren af te schrikken, niet om prooi te lokken.",
+         "Koos je onzichtbaar? Felle kleuren vallen juist op tussen de groene bladeren. Het is geen schutkleur.",
+         "Klopt: de felle kleur waarschuwt roofdieren dat de kikker giftig is. Een roofdier dat het eenmaal heeft geprobeerd, mijdt zulke kikkers daarna. Opvallen is hier juist een voordeel.",
+         "Koos je bescherming tegen de zon? Daar is geen aanwijzing voor. De combinatie van gif en felle kleur wijst op een waarschuwing."
+        ],
+        "uh": "Gif en opvallen.",
+        "ctx": "In het regenwoud van Zuid-Amerika leven kleine pijlgifkikkers met felle kleuren, terwijl de meeste andere kikkers groen of bruin zijn. Hun huid bevat een sterk gif. Onderzoekers zagen dat jonge vogels een pijlgifkikker één keer pakken, hem uitspugen en daarna zulke kikkers met rust laten."
+       },
+       {
+        "v": "Waarom zijn snelle roofdieren en snelle prooidieren samen ontstaan?",
+        "o": [
+         "roofdieren leren prooidieren hard lopen",
+         "ze oefenen selectiedruk op elkaar uit",
+         "prooidieren eten de langzame roofdieren",
+         "snelheid ontstaat vanzelf door veel te eten"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 3,
+        "u": "De snelste prooien overleven, de snelste roofdieren vangen het meest: wederzijdse selectie.",
+        "uo": [
+         "Koos je leren? Snelheid is grotendeels erfelijk en wordt niet door de roofdieren aangeleerd. Het ontstaat door natuurlijke selectie.",
+         "Klopt: de snelste prooidieren worden het minst gevangen en krijgen de meeste nakomelingen. Bij de roofdieren vangen de snelste het meest. Zo oefenen ze selectiedruk op elkaar uit en worden ze samen sneller.",
+         "Koos je prooi die roofdieren eet? Prooidieren zoals gazellen eten geen roofdieren. Het gaat om wie overleeft en zich voortplant.",
+         "Koos je veel eten? Veel eten maakt een dier niet erfelijk sneller. Snelheid ontstaat door selectie over vele generaties."
+        ],
+        "uh": "Wie overleeft en plant zich voort?"
+       },
+       {
+        "v": "Wanneer is er sprake van concurrentie?",
+        "o": [
+         "bij strijd om schaarse hulpbronnen",
+         "als één soort de andere soort opeet",
+         "als twee soorten elkaar helpen",
+         "als een soort in een andere soort leeft"
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 4,
+        "u": "Concurrentie: strijd om dezelfde schaarse hulpbron (voedsel, licht, ruimte).",
+        "uo": [
+         "Klopt: concurrentie ontstaat als organismen dezelfde hulpbron nodig hebben die maar beperkt aanwezig is, zoals voedsel, licht, water of nestplaatsen.",
+         "Koos je opeten? Dat is predatie: één soort doodt de andere. Bij concurrentie strijden ze om dezelfde hulpbron.",
+         "Koos je helpen? Dat is mutualisme, het tegenovergestelde van concurrentie.",
+         "Koos je in een andere soort leven? Dat is parasitisme of soms mutualisme, afhankelijk van de gevolgen."
+        ],
+        "uh": "Strijd om iets."
+       },
+       {
+        "v": "Welk voorbeeld is concurrentie tussen soorten?",
+        "o": [
+         "een teek die bloed zuigt bij een hond",
+         "merels die om een vrouwtje vechten",
+         "een kat die een muis vangt",
+         "beuken en eiken om licht"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 4,
+        "u": "Concurrentie tussen soorten = interspecifiek; binnen een soort = intraspecifiek.",
+        "uo": [
+         "Koos je een teek? Een teek leeft van het bloed van de hond en is een parasiet. Dat is geen strijd om een hulpbron.",
+         "Koos je merels om een vrouwtje? Dat is wel concurrentie, maar binnen één soort. Gevraagd werd naar concurrentie tussen soorten.",
+         "Koos je kat en muis? Dat is predatie: de kat vangt en eet de muis. Ze strijden niet om dezelfde hulpbron.",
+         "Klopt: beuken en eiken zijn verschillende soorten die allebei licht nodig hebben. Ze concurreren om die hulpbron."
+        ],
+        "uh": "Twee soorten, één hulpbron."
+       },
+       {
+        "v": "Waarom groeien er onder de beuken bijna geen jonge eiken?",
+        "o": [
+         "de bodem onder beuken is te zout",
+         "de eiken worden door de beuken opgegeten",
+         "de beuken vangen het licht weg",
+         "eiken kunnen alleen groeien in de schaduw"
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 4,
+        "u": "Beuken hebben een dicht bladerdak; jonge eiken hebben veel licht nodig.",
+        "uo": [
+         "Koos je zoute bodem? Over zout staat niets in de tekst, en een bos is meestal niet zout. Het verschil zit in de hoeveelheid licht.",
+         "Koos je opeten? Bomen eten elkaar niet op. Het gaat om de strijd om licht.",
+         "Klopt: beuken vormen een dicht bladerdak dat het meeste licht tegenhoudt. Jonge eiken hebben veel licht nodig en verliezen de concurrentie. Jonge beuken verdragen de schaduw beter.",
+         "Koos je groeien in de schaduw? Het is omgekeerd: jonge eiken hebben juist veel licht nodig. Daarom groeien ze niet onder beuken."
+        ],
+        "uh": "Wat houdt een beuk tegen?",
+        "ctx": "In een oud beukenbos komt maar 2 tot 5% van het licht op de bosbodem. Jonge beukjes groeien daar langzaam maar overleven. Jonge eiken sterven er binnen een paar jaar. Op een open plek waar een beuk is omgewaaid, groeien juist veel jonge eiken snel op."
+       },
+       {
+        "v": "Waarom is de concurrentie het sterkst tussen individuen van dezelfde soort?",
+        "o": [
+         "ze zijn altijd even groot",
+         "ze hebben precies dezelfde behoeften",
+         "ze leven nooit in hetzelfde gebied",
+         "ze eten elkaar op als er weinig voedsel is"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 4,
+        "u": "Individuen van één soort hebben dezelfde niche en dus dezelfde hulpbronnen nodig.",
+        "uo": [
+         "Koos je even groot? Individuen van één soort verschillen in grootte, leeftijd en kracht. De reden is dat ze precies dezelfde hulpbronnen nodig hebben.",
+         "Klopt: individuen van dezelfde soort hebben dezelfde niche: ze eten hetzelfde voedsel en hebben dezelfde nestplaatsen en ruimte nodig. Daardoor is de concurrentie tussen hen het sterkst.",
+         "Koos je nooit in hetzelfde gebied? Een populatie leeft juist in hetzelfde gebied. Daar concurreren de individuen om voedsel en ruimte.",
+         "Koos je elkaar opeten? Kannibalisme komt soms voor, maar dat is geen concurrentie. Concurrentie gaat over strijd om dezelfde hulpbron."
+        ],
+        "uh": "Wat hebben ze allemaal nodig?"
        },
        {
         "v": "Wat is een exoot?",
         "o": [
-         "Een soort die er altijd al gewoond heeft",
-         "Een soort die van nature niet in het gebied hoort",
-         "De niet-levende omgeving van een gebied",
-         "Een roofdier dat prooidieren vangt en verorbert"
-        ],
-        "c": 1,
-        "d": 1,
-        "u": "Een exoot is een soort die van elders komt en niet van nature in het gebied thuishoort.",
-        "uo": [
-         "Dat is juist een inheemse soort.",
-         "Klopt: een soort van elders, niet inheems.",
-         "Dat is de biotoop.",
-         "Een exoot is niet per se een roofdier."
-        ],
-        "uh": "Exoot = soort van elders, niet inheems."
-       },
-       {
-        "v": "Waarom kan een exoot een ecosysteem verstoren?",
-        "o": [
-         "Omdat een exoot altijd meteen uitsterft",
-         "Omdat een exoot geen voedsel nodig heeft",
-         "Omdat een exoot vaak geen natuurlijke vijanden heeft",
-         "Omdat een exoot de biotoop van het gebied niet raakt"
-        ],
-        "c": 2,
-        "d": 3,
-        "u": "Zonder natuurlijke vijanden kan een exoot sterk toenemen en inheemse soorten verdringen.",
-        "uo": [
-         "Een exoot sterft niet altijd uit, hij kan juist woekeren.",
-         "Ook een exoot heeft voedsel nodig.",
-         "Klopt: geen natuurlijke vijanden, dus sterke toename.",
-         "Een exoot beïnvloedt het ecosysteem juist sterk."
-        ],
-        "uh": "Exoot zonder vijanden kan woekeren en soorten verdringen."
-       },
-       {
-        "v": "Wat is het verschil tussen een exoot en een inheemse soort?",
-        "o": [
-         "Een exoot is altijd een plant, inheems een dier",
-         "Een exoot is in werkelijkheid altijd een roofdier",
-         "Er is geen enkel verschil tussen die twee",
-         "Een exoot hoort van elders, inheems van nature hier"
-        ],
-        "c": 3,
-        "d": 2,
-        "u": "Een exoot komt van elders en hoort er niet van nature; een inheemse soort komt van nature in het gebied voor.",
-        "uo": [
-         "Een exoot kan ook een dier zijn.",
-         "Een exoot is niet per se een roofdier.",
-         "Er is wel degelijk verschil.",
-         "Klopt: exoot van elders, inheems van nature hier."
-        ],
-        "uh": "Exoot = van elders, inheems = van nature hier."
-       },
-       {
-        "v": "Een vogel bouwt een nest in een boom zonder de boom te schaden. Welke relatie is dat?",
-        "o": [
-         "Commensalisme",
-         "Parasitisme",
-         "Predatie tussen een roofdier en zijn prooi",
-         "Mutualisme"
-        ],
-        "c": 0,
-        "d": 3,
-        "u": "De vogel heeft voordeel (een nestplek) en de boom heeft geen voor- of nadeel: commensalisme.",
-        "uo": [
-         "Klopt: vogel voordeel, boom geen last, dus commensalisme.",
-         "De boom heeft geen nadeel, dus geen parasitisme.",
-         "De vogel eet de boom niet op.",
-         "De boom heeft geen voordeel, dus geen mutualisme."
-        ],
-        "uh": "Voordeel voor één, geen last voor de ander = commensalisme."
-       },
-       {
-        "v": "Wat hebben mutualisme, commensalisme en parasitisme gemeen?",
-        "o": [
-         "Het zijn alle drie roofdier-prooirelaties",
-         "Het zijn alle drie vormen van symbiose",
-         "Ze hebben alle drie nadeel voor beide",
-         "Ze gaan alle drie over abiotische factoren"
-        ],
-        "c": 1,
-        "d": 2,
-        "u": "Mutualisme, commensalisme en parasitisme zijn alle drie vormen van symbiose: langdurig samenleven.",
-        "uo": [
-         "Het zijn geen roofdier-prooirelaties.",
-         "Klopt: het zijn alle drie vormen van symbiose.",
-         "Bij mutualisme is er juist voordeel voor beide.",
-         "Ze gaan over relaties tussen soorten, niet abiotisch."
-        ],
-        "uh": "Mutualisme, commensalisme, parasitisme = vormen van symbiose."
-       },
-       {
-        "v": "Bij welke relatie heeft precies één soort nadeel?",
-        "o": [
-         "Mutualisme",
-         "Commensalisme",
-         "Parasitisme",
-         "Samenwerking zonder contact"
-        ],
-        "c": 2,
-        "d": 2,
-        "u": "Bij parasitisme heeft de gastheer nadeel terwijl de parasiet voordeel heeft.",
-        "uo": [
-         "Bij mutualisme heeft niemand nadeel.",
-         "Bij commensalisme heeft niemand nadeel.",
-         "Klopt: bij parasitisme heeft de gastheer nadeel.",
-         "Dat is geen symbiosevorm met nadeel."
-        ],
-        "uh": "Nadeel voor één = parasitisme."
-       },
-       {
-        "v": "Waarom heeft een exoot vaak een voordeel ten opzichte van inheemse soorten?",
-        "o": [
-         "Omdat de exoot helemaal geen voedsel nodig heeft",
-         "Omdat de exoot kleiner is dan alle andere",
-         "Omdat de exoot geen ruimte inneemt",
-         "Omdat de exoot geen natuurlijke vijanden heeft"
-        ],
-        "c": 3,
-        "d": 3,
-        "u": "Een exoot mist in het nieuwe gebied vaak zijn natuurlijke vijanden, dus kan hij zich sterk uitbreiden.",
-        "uo": [
-         "Ook een exoot eet voedsel.",
-         "De grootte is niet de reden.",
-         "Ook een exoot neemt ruimte in.",
-         "Klopt: geen natuurlijke vijanden geeft een voordeel."
-        ],
-        "uh": "Exoot mist zijn natuurlijke vijanden in het nieuwe gebied."
-       },
-       {
-        "v": "Wat gebeurt er vaak met inheemse soorten als een exoot sterk toeneemt?",
-        "o": [
-         "Ze worden verdrongen",
-         "Ze nemen samen ook toe",
-         "Ze veranderen in de exoot",
-         "Ze krijgen er alleen maar voordeel bij"
-        ],
-        "c": 0,
-        "d": 3,
-        "u": "Een woekerende exoot gebruikt voedsel en ruimte die de inheemse soorten nodig hebben, dus die worden verdrongen.",
-        "uo": [
-         "Klopt: inheemse soorten worden verdrongen.",
-         "Ze nemen juist vaak af.",
-         "Ze veranderen niet in de exoot.",
-         "Ze hebben juist nadeel."
-        ],
-        "uh": "Woekerende exoot verdringt inheemse soorten."
-       },
-       {
-        "v": "Twee vogelsoorten eten precies hetzelfde zaad in hetzelfde gebied. Welke relatie is dat?",
-        "o": [
-         "Mutualisme",
-         "Concurrentie",
-         "Commensalisme",
-         "Predatie"
-        ],
-        "c": 1,
-        "d": 2,
-        "u": "Beide soorten willen dezelfde bron (het zaad), dus is er concurrentie.",
-        "uo": [
-         "Ze helpen elkaar niet, dus geen mutualisme.",
-         "Klopt: strijd om dezelfde bron is concurrentie.",
-         "Er is geen voordeel-zonder-last hier.",
-         "Ze eten elkaar niet op."
-        ],
-        "uh": "Strijd om dezelfde bron = concurrentie."
-       },
-       {
-        "v": "Wat is een predator?",
-        "o": [
-         "Een dier dat door anderen wordt gegeten",
-         "Een plant die zelf voedsel maakt",
-         "Een roofdier dat andere dieren eet",
-         "Een organisme dat dode resten afbreekt"
-        ],
-        "c": 2,
-        "d": 1,
-        "u": "Een predator is een roofdier dat andere dieren (prooien) vangt en opeet.",
-        "uo": [
-         "Dat is de prooi.",
-         "Dat is een producent.",
-         "Klopt: een predator eet andere dieren.",
-         "Dat is een reducent."
-        ],
-        "uh": "Predator = roofdier."
-       },
-       {
-        "v": "Waarom is het onderscheid tussen de symbiosevormen belangrijk?",
-        "o": [
-         "Omdat ze allemaal precies hetzelfde zijn",
-         "Omdat ze alle drie roofdier-prooi zijn",
-         "Omdat ze uitsluitend over planten in het gebied gaan",
-         "Omdat ze verschillen in wie voordeel of nadeel heeft"
-        ],
-        "c": 3,
-        "d": 3,
-        "u": "De vormen verschillen in wie voordeel en wie nadeel heeft, en dat bepaalt het effect op elke soort.",
-        "uo": [
-         "Ze zijn juist niet hetzelfde.",
-         "Het zijn geen roofdier-prooirelaties.",
-         "Ze gaan over allerlei organismen.",
-         "Klopt: ze verschillen in voor- en nadeel per soort."
-        ],
-        "uh": "De vormen verschillen in wie voordeel of nadeel heeft."
-       },
-       {
-        "v": "Bij mutualisme geldt voor de twee soorten:",
-        "o": [
-         "Allebei voordeel",
-         "Allebei nadeel",
-         "Eén voordeel, één nadeel",
-         "Geen van beide iets"
+         "een door de mens verplaatste soort",
+         "een soort die alleen in tropische landen voorkomt",
+         "een soort die al heel lang in een gebied leeft",
+         "een soort die is uitgestorven"
         ],
         "c": 0,
         "d": 1,
-        "u": "Bij mutualisme hebben allebei de soorten voordeel van het samenleven.",
+        "s": 5,
+        "u": "Exoot = soort die door menselijk toedoen buiten zijn oorspronkelijke gebied leeft.",
         "uo": [
-         "Klopt: allebei voordeel.",
-         "Dat past niet bij mutualisme.",
-         "Dat is parasitisme.",
-         "Dat lijkt op commensalisme voor één kant."
+         "Klopt: een exoot is een soort die door de mens, bewust of per ongeluk, in een gebied terecht is gekomen waar hij van nature niet voorkwam.",
+         "Koos je tropisch? Exoten kunnen overal vandaan komen, ook uit koude gebieden. Het gaat om de verplaatsing door de mens.",
+         "Koos je heel lang in een gebied? Dat is juist een inheemse soort. Een exoot is nieuw in een gebied.",
+         "Koos je uitgestorven? Een exoot leeft juist, en vaak breidt hij zich in zijn nieuwe gebied flink uit."
         ],
-        "uh": "Mutualisme = plus voor allebei."
+        "uh": "Door de mens verplaatst."
        },
        {
-        "v": "Een schoonmakervis eet parasieten van een grote vis, die daar baat bij heeft. Welke relatie?",
+        "v": "Waarom kan een exoot zich soms explosief uitbreiden?",
         "o": [
-         "Parasitisme",
-         "Mutualisme",
-         "Predatie op de grote vis",
-         "Concurrentie om voedsel"
+         "in het nieuwe gebied is de draagkracht altijd nul",
+         "exoten hebben geen voedsel nodig",
+         "exoten planten zich niet voort",
+         "er zijn daar geen natuurlijke vijanden"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 5,
+        "u": "Geen natuurlijke vijanden of ziekten: weinig remmende factoren.",
+        "uo": [
+         "Koos je draagkracht nul? Dan zou de exoot uitsterven. Explosieve groei kan juist omdat de draagkracht hoog is en vijanden ontbreken.",
+         "Koos je geen voedsel? Exoten hebben net als alle organismen voedsel nodig. Het probleem is juist dat ze vaak voedsel van inheemse soorten wegnemen.",
+         "Koos je geen voortplanting? Juist doordat ze zich snel voortplanten, kunnen ze zich uitbreiden.",
+         "Klopt: in zijn oorspronkelijke gebied wordt een soort geremd door roofdieren, parasieten en ziekten. In het nieuwe gebied ontbreken die vaak, waardoor de populatie snel kan groeien."
+        ],
+        "uh": "Wie remt hem in het nieuwe gebied?"
+       },
+       {
+        "v": "Waarom is de Amerikaanse rivierkreeft een bedreiging voor inheemse soorten?",
+        "o": [
+         "hij eet alleen planten die niemand anders eet",
+         "hij helpt inheemse kreeften aan voedsel",
+         "hij eet veel en brengt een ziekte mee",
+         "hij verdwijnt meteen weer uit de sloten"
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 5,
+        "u": "Exoot concurreert, eet veel en brengt een nieuwe ziekte mee.",
+        "uo": [
+         "Koos je planten die niemand eet? Hij eet allerlei planten en dieren, en concurreert dus juist met inheemse soorten.",
+         "Koos je voedsel geven? Hij neemt juist voedsel weg en eet zelfs andere dieren op.",
+         "Klopt: de Amerikaanse rivierkreeft eet waterplanten, insectenlarven en kikkervisjes, en draagt de kreeftenpest mee. Daar is hij zelf tegen bestand, maar de inheemse Europese rivierkreeft niet.",
+         "Koos je meteen verdwijnen? Hij breidt zich juist snel uit, omdat hij weinig natuurlijke vijanden heeft."
+        ],
+        "uh": "Wat neemt hij mee en wat eet hij?",
+        "ctx": "De Amerikaanse rivierkreeft is ooit uit Noord-Amerika naar Europa gebracht voor de kweek. Ontsnapte kreeften verspreiden zich nu snel in Nederlandse sloten. Ze eten waterplanten, insectenlarven en kikkervisjes en dragen een schimmelziekte, de kreeftenpest, mee. De inheemse Europese rivierkreeft is daardoor in Nederland bijna verdwenen."
+       },
+       {
+        "v": "Welk gevolg heeft het verdwijnen van waterplanten door de kreeften voor het ecosysteem?",
+        "o": [
+         "meer zuurstof in het water voor alle dieren",
+         "minder schuilplaatsen en voedsel",
+         "meer voedsel voor de inheemse rivierkreeft",
+         "helderder water met meer algen"
         ],
         "c": 1,
         "d": 3,
-        "u": "De schoonmakervis krijgt voedsel en de grote vis raakt parasieten kwijt: beide voordeel, dus mutualisme.",
+        "s": 5,
+        "u": "Waterplanten zijn voedsel, zuurstofbron en schuilplaats; zonder hen gaat de biodiversiteit achteruit.",
         "uo": [
-         "De grote vis heeft juist voordeel, geen nadeel.",
-         "Klopt: beide voordeel, dus mutualisme.",
-         "De schoonmakervis eet de grote vis niet op.",
-         "Ze strijden niet om dezelfde bron."
+         "Koos je meer zuurstof? Waterplanten maken juist zuurstof met fotosynthese. Zonder planten komt er minder zuurstof in het water.",
+         "Klopt: waterplanten geven voedsel, zuurstof en schuilplaatsen aan vissen, insectenlarven en kikkervisjes. Als ze verdwijnen, nemen veel andere soorten ook af.",
+         "Koos je meer voedsel voor de inheemse kreeft? Die eet ook waterplanten, dus er komt juist minder voedsel voor hem.",
+         "Koos je helder water met meer algen? Zonder waterplanten krijgen algen juist meer kans en wordt het water vaak troebeler."
         ],
-        "uh": "Beide voordeel = mutualisme."
-       },
-       {
-        "v": "Welke uitspraak over parasitisme klopt?",
-        "o": [
-         "De gastheer heeft in werkelijkheid altijd voordeel",
-         "Beide soorten hebben evenveel voordeel",
-         "De parasiet leeft ten koste van de gastheer",
-         "Er is geen enkel contact tussen de soorten"
-        ],
-        "c": 2,
-        "d": 2,
-        "u": "Bij parasitisme heeft de parasiet voordeel ten koste van de gastheer, die daardoor nadeel ondervindt.",
-        "uo": [
-         "De gastheer heeft juist nadeel.",
-         "Alleen de parasiet heeft voordeel.",
-         "Klopt: de parasiet leeft ten koste van de gastheer.",
-         "Er is juist nauw contact."
-        ],
-        "uh": "Parasiet profiteert ten koste van de gastheer."
-       },
-       {
-        "v": "Wat kan een goede maatregel zijn tegen een schadelijke exoot?",
-        "o": [
-         "De exoot met rust laten en niets doen",
-         "De exoot bijvoeren zodat hij groeit",
-         "Alle inheemse soorten weghalen",
-         "De exoot terugdringen of weghalen"
-        ],
-        "c": 3,
-        "d": 3,
-        "u": "Door de exoot terug te dringen krijgen de inheemse soorten weer ruimte en voedsel.",
-        "uo": [
-         "Niets doen laat de exoot verder woekeren.",
-         "Bijvoeren helpt de exoot juist.",
-         "Inheemse soorten weghalen maakt het juist erger.",
-         "Klopt: de exoot terugdringen helpt het ecosysteem."
-        ],
-        "uh": "Schadelijke exoot terugdringen beschermt inheemse soorten."
-       },
-       {
-        "v": "Een luis leeft in het verenkleed van een vogel en zuigt bloed. Welke relatie is dat?",
-        "o": [
-         "Parasitisme",
-         "Mutualisme met wederzijds voordeel",
-         "Commensalisme zonder enige schade",
-         "Predatie waarbij de vogel wordt opgegeten"
-        ],
-        "c": 0,
-        "d": 3,
-        "u": "De luis (parasiet) heeft voordeel en de vogel (gastheer) nadeel, dus parasitisme.",
-        "uo": [
-         "Klopt: luis voordeel, vogel nadeel, dus parasitisme.",
-         "De vogel heeft juist nadeel, geen voordeel.",
-         "De vogel ondervindt wel degelijk schade.",
-         "De luis eet de vogel niet in zijn geheel op."
-        ],
-        "uh": "Parasiet op gastheer met schade = parasitisme."
+        "uh": "Wat doen waterplanten voor andere soorten?",
+        "ctx": "In een natuurgebied met veel Amerikaanse rivierkreeften zijn binnen vijf jaar bijna alle waterplanten uit de sloten verdwenen. Onderzoekers tellen daarna ook veel minder libellenlarven, kikkervisjes en jonge vissen. Het water is troebel geworden."
        }
       ],
       "oe": [
        {
-        "vraag": "Leg uit wat symbiose is en noem de drie vormen met hun voor- en nadelen.",
-        "antwoord": "Symbiose is het langdurig samenleven van twee verschillende soorten. Bij mutualisme hebben beide soorten voordeel. Bij commensalisme heeft de ene soort voordeel en de ander geen voordeel maar ook geen nadeel. Bij parasitisme heeft de parasiet voordeel en de gastheer nadeel."
+        "bron": "Examenstijl",
+        "ctx": "Poetsvisjes eten parasieten van de huid en uit de bek van grote vissen. De grote vissen komen naar vaste poetsstations op het koraal en laten de poetsvisjes hun werk doen zonder ze op te eten. In een proef worden de poetsvisjes van een rif weggehaald; na een paar maanden hebben de grote vissen daar veel meer parasieten en zijn er minder grote vissen.",
+        "v": "Benoem de relatie tussen poetsvis en grote vis, en die tussen de parasieten en de grote vis, en leg met de proef uit dat de grote vissen voordeel hebben van de poetsvisjes.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Poetsvis en grote vis: mutualisme, beide hebben voordeel (1p). Parasieten en grote vis: parasitisme (1p). Zonder poetsvisjes krijgen de grote vissen meer parasieten en gaan ze achteruit; dus de poetsvisjes hebben een gunstig effect op de grote vissen (1p)."
        },
        {
-        "vraag": "Leg uit waarom een bij en een bloem een voorbeeld van mutualisme zijn.",
-        "antwoord": "De bij haalt nectar uit de bloem als voedsel; dat is voordeel voor de bij. Terwijl de bij dat doet, blijft er stuifmeel aan hem plakken, waarmee hij de volgende bloem bestuift; dat is voordeel voor de bloem. Omdat beide soorten voordeel hebben, is het mutualisme."
+        "bron": "Examenstijl",
+        "ctx": "De vos- of hondenlintworm leeft volwassen in de darm van vossen. Met de ontlasting komen eitjes naar buiten, die door muizen worden opgegeten. In de lever van de muis ontstaan blaasjes. Een vos die een besmette muis eet, krijgt een lintworm. Ook mensen kunnen de eitjes binnenkrijgen, bijvoorbeeld via ongewassen bosbessen, en krijgen dan blaasjes in hun lever.",
+        "v": "Geef de eindgastheer en de tussengastheer en leg uit waarom het voor de lintworm een doodlopende weg is als een mens besmet raakt.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Eindgastheer: vos; tussengastheer: muis (1p). In de mens ontstaan alleen blaasjes, net als in een tussengastheer (1p). Een mens wordt niet door een vos gegeten, dus de lintworm kan niet in een eindgastheer komen en zijn cyclus niet afmaken (1p)."
        },
        {
-        "vraag": "Leg uit wat een exoot is en waarom een exoot een ecosysteem kan verstoren.",
-        "antwoord": "Een exoot is een soort die van elders komt en niet van nature in het gebied thuishoort. In het nieuwe gebied heeft de exoot vaak geen natuurlijke vijanden. Daardoor kan de exoot zich sterk uitbreiden, veel voedsel en ruimte innemen en de inheemse soorten verdringen."
+        "bron": "Examenstijl",
+        "ctx": "Twee soorten zeepokken leven op rotsen aan de kust. Soort A leeft hoog op de rots, die bij eb lang droog valt; soort B leeft lager. Als onderzoekers soort B weghalen, groeit soort A ook op de lagere rotsen. Als ze soort A weghalen, groeit soort B niet hoger op de rots, omdat hij uitdroogt.",
+        "v": "Leg uit welke relatie er is tussen soort A en B en wat de proeven laten zien over de factoren die bepalen waar elke soort leeft.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Er is concurrentie om ruimte op de rots (1p). Soort A kan ook lager leven, maar wordt daar door soort B verdrongen: concurrentie bepaalt zijn ondergrens (1p). Soort B kan niet hoger leven omdat hij uitdroogt: een abiotische factor bepaalt zijn bovengrens (1p)."
        },
        {
-        "vraag": "Waarom is het belangrijk om onderscheid te maken tussen parasitisme en mutualisme?",
-        "antwoord": "Bij mutualisme hebben beide soorten voordeel, terwijl bij parasitisme de ene soort voordeel heeft ten koste van de andere. Het effect op de gastheer is dus heel verschillend: bij mutualisme geen schade, bij parasitisme wel. Om te begrijpen hoe soorten elkaar beïnvloeden, moet je die vormen onderscheiden."
+        "bron": "Examenstijl",
+        "ctx": "De Japanse duizendknoop is als sierplant naar Europa gebracht. Hij groeit tot drie meter hoog, vormt dichte bossen langs rivieren en dijken en laat bijna geen licht door. In Japan wordt de plant gegeten door een bladvlo die in Europa niet voorkomt.",
+        "v": "Leg uit wat een exoot is, waarom de Japanse duizendknoop zich in Europa zo sterk uitbreidt en wat het gevolg is voor inheemse planten.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Een exoot is een soort die door de mens in een gebied is gebracht waar hij van nature niet voorkwam (1p). In Europa ontbreekt de bladvlo, zijn natuurlijke vijand, zodat de plant zich ongeremd kan uitbreiden (1p). Doordat hij dichte bossen vormt en het licht wegvangt, verliezen inheemse planten de concurrentie om licht (1p)."
        },
        {
-        "vraag": "Leg uit wat er met inheemse soorten kan gebeuren als een exoot zonder natuurlijke vijanden sterk toeneemt.",
-        "antwoord": "Zonder natuurlijke vijanden kan de exoot sterk in aantal groeien. Hij gebruikt dan voedsel en ruimte die de inheemse soorten ook nodig hebben. Door deze concurrentie kunnen de inheemse soorten in aantal afnemen of zelfs uit het gebied verdwijnen."
+        "bron": "Examenstijl",
+        "ctx": "Rupsen van het gentiaanblauwtje, een vlinder, vallen van hun voedselplant op de grond. Ze verspreiden een geur die lijkt op die van mierenlarven. Mieren nemen de rups mee naar hun nest en voeren hem, terwijl de rups ook mierenlarven opeet. Na de verpopping verlaat de vlinder het nest.",
+        "v": "Leg uit welke relatie er bestaat tussen de rups en de mieren en waarom dit geen mutualisme is.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "De rups heeft voordeel: hij krijgt voedsel en bescherming in het nest (1p). De mieren hebben nadeel: ze voeren de rups en verliezen larven (1p). Het is dus parasitisme (+ / −) en geen mutualisme, omdat de mieren er geen voordeel van hebben (1p)."
        }
       ]
      },
