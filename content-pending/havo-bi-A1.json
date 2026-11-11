@@ -1,0 +1,651 @@
+{
+ "id": "A1",
+ "lo": "bi.A.1",
+ "gs": 2,
+ "naam": "Onderzoek opzetten",
+ "beschrijving": "Je formuleert een toetsbare hypothese bij een onderzoeksvraag, herkent en benoemt de onafhankelijke, afhankelijke en constante variabelen, ontwerpt een passend controle-experiment en beoordeelt of een proef een eerlijke vergelijking oplevert.",
+ "ceStatus": "CE+SE",
+ "binas": "",
+ "val": "",
+ "onderwerpen": [
+  "Hypothese als toetsbare verwachting",
+  "Onafhankelijke variabele (wat je verandert)",
+  "Afhankelijke variabele (wat je meet)",
+  "Constante variabelen (wat je gelijk houdt)",
+  "Controlegroep en controle-experiment",
+  "Eerlijke vergelijking"
+ ],
+ "sam": "Onderzoeksvraag = vraag; hypothese = toetsbare verwachting (bewering), niet toetsbaar = geen goede hypothese; verworpen hypothese is ook een uitkomst. Onafhankelijke variabele = wat je verandert (horizontale as); maar één tegelijk. Afhankelijke variabele = wat je meet (verticale as); moet meten wat de vraag stelt. Constante variabelen gelijk houden (temperatuur, pH, hoeveelheden); warmtefilter bij lamp. Controlegroep = alles gelijk zonder behandeling; placebo bij mensen. Eerlijk: één verschil, groepen groot genoeg, door elkaar, herhalen, let op spreiding.",
+ "begrippen": [
+  {
+   "t": "Onderzoeksvraag",
+   "d": "Vraag die je met een onderzoek wilt beantwoorden."
+  },
+  {
+   "t": "Hypothese",
+   "d": "Toetsbare verwachting over het antwoord op de onderzoeksvraag, geschreven als bewering."
+  },
+  {
+   "t": "Toetsbaar",
+   "d": "Met een experiment of meting na te gaan of iets klopt."
+  },
+  {
+   "t": "Onafhankelijke variabele",
+   "d": "Factor die de onderzoeker zelf verandert; de mogelijke oorzaak."
+  },
+  {
+   "t": "Afhankelijke variabele",
+   "d": "Factor die je meet als resultaat; het mogelijke gevolg."
+  },
+  {
+   "t": "Constante variabele",
+   "d": "Factor die het resultaat kan beïnvloeden en die je gelijk houdt."
+  },
+  {
+   "t": "Controlegroep",
+   "d": "Groep die de behandeling niet krijgt en verder gelijk is aan de proefgroep."
+  },
+  {
+   "t": "Proefgroep",
+   "d": "Groep die de behandeling wel krijgt."
+  },
+  {
+   "t": "Placebo",
+   "d": "Nep-behandeling zonder werkzame stof die er hetzelfde uitziet als de echte."
+  },
+  {
+   "t": "Herhaling",
+   "d": "Dezelfde meting nog eens doen om te zien of het resultaat geen toeval is."
+  },
+  {
+   "t": "Conclusie",
+   "d": "Antwoord op de onderzoeksvraag op basis van de resultaten."
+  }
+ ],
+ "sv": [
+  {
+   "v": "Welke zin is een hypothese?",
+   "o": [
+    "tuinkers is een plant die je in een paar dagen kunt laten kiemen",
+    "kiemen zaden minder goed in zout water dan in gewoon water?",
+    "meer zout geeft minder kiemende zaden",
+    "we zetten twintig zaden op watten in een petrischaal"
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 0,
+   "u": "Een hypothese is een toetsbare verwachting over het verband tussen twee variabelen.",
+   "uo": [
+    "Koos je de zin over tuinkers? Dat is een feit over de plant, geen verwachting die je met een proef toetst.",
+    "Koos je de zin met een vraagteken? Dat is een onderzoeksvraag. Een hypothese is het verwachte antwoord op die vraag, als bewering.",
+    "Klopt: dit is een verwachting die je kunt toetsen. Er staat in wat je verandert (zout) en wat je verwacht te meten (aantal kiemende zaden).",
+    "Koos je de zin over twintig zaden? Dat is een stap uit de werkwijze. Een hypothese zegt wat je verwacht dat er uitkomt."
+   ],
+   "uh": "Een bewering die je kunt testen."
+  },
+  {
+   "v": "Waarom is \"planten groeien beter bij muziek die ze mooi vinden\" geen goede hypothese?",
+   "o": [
+    "planten groeien nooit beter als er geluid is",
+    "je kunt niet meten wat een plant mooi vindt",
+    "een hypothese mag niet over planten gaan",
+    "het is een vraag in plaats van een bewering"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 0,
+   "u": "Een hypothese moet toetsbaar zijn: je moet alles erin kunnen meten.",
+   "uo": [
+    "Koos je dat planten nooit beter groeien? Dat weet je pas na onderzoek. Het probleem zit in de formulering: een deel ervan kun je niet meten.",
+    "Klopt: een hypothese moet toetsbaar zijn. Of een plant muziek mooi vindt, kun je niet meten. Daardoor kun je de bewering met geen enkele proef bevestigen of verwerpen.",
+    "Koos je niet over planten? Een hypothese kan over elk organisme gaan. Het moet alleen een toetsbare verwachting zijn.",
+    "Koos je een vraag? De zin is wel een bewering. Hij is alleen niet toetsbaar, omdat je \"mooi vinden\" bij een plant niet kunt meten."
+   ],
+   "uh": "Kun je alles in de zin meten?"
+  },
+  {
+   "v": "Welke hypothese past bij de onderzoeksvraag van Noor?",
+   "o": [
+    "hoe hoger de temperatuur, hoe sneller de hartslag",
+    "watervlooien hebben een hartslag die je kunt tellen",
+    "wat is de invloed van temperatuur op de hartslag?",
+    "de hartslag blijft bij elke temperatuur gelijk, want watervlooien zijn klein"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 0,
+   "u": "De hypothese geeft een verwacht verband tussen de onafhankelijke en de afhankelijke variabele.",
+   "uo": [
+    "Klopt: deze hypothese noemt wat Noor verandert (temperatuur) en wat ze meet (hartslag), en zegt welk verband ze verwacht. Dat kan ze toetsen.",
+    "Koos je dat je de hartslag kunt tellen? Dat klopt wel, maar het is geen verwachting over het effect van temperatuur. Het is een opmerking over de methode.",
+    "Koos je de zin met \"wat is de invloed\"? Dat is de onderzoeksvraag zelf. De hypothese is het verwachte antwoord.",
+    "Koos je gelijk blijven omdat ze klein zijn? Dit is wel een bewering, maar de reden klopt niet: grootte heeft niets met de verwachting te maken. Een goede hypothese is gebaseerd op wat je weet."
+   ],
+   "uh": "Welke zin noemt een verwacht verband?",
+   "ctx": "Noor onderzoekt watervlooien onder de microscoop. Ze wil weten of de temperatuur van het water invloed heeft op de hartslag van watervlooien. Ze weet dat de stofwisseling van koudbloedige dieren sneller gaat bij een hogere temperatuur. Ze telt de hartslag bij 10, 15, 20 en 25 °C."
+  },
+  {
+   "v": "Wat doe je als de resultaten je hypothese niet ondersteunen?",
+   "o": [
+    "de hypothese achteraf veranderen en doen alsof je die al had",
+    "de metingen aanpassen tot ze kloppen",
+    "de afwijkende metingen weglaten uit je verslag",
+    "de hypothese verwerpen"
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 0,
+   "u": "Een verworpen hypothese is ook een resultaat; je past de gegevens niet aan.",
+   "uo": [
+    "Koos je achteraf veranderen? Dan lijkt het alsof je gelijk had, maar dat is misleidend. Je noemt eerlijk dat de hypothese niet werd ondersteund.",
+    "Koos je de metingen aanpassen? Dat is fraude. De metingen zijn wat ze zijn; de hypothese moet zich aanpassen aan de resultaten, niet andersom.",
+    "Koos je afwijkende metingen weglaten? Metingen weglaten omdat ze niet passen, maakt je onderzoek onbetrouwbaar. Je mag een meetfout alleen weglaten als je kunt uitleggen wat er misging.",
+    "Klopt: als de resultaten de hypothese niet ondersteunen, verwerp je haar. Dat is net zo goed een uitkomst. Je kunt daarna een nieuwe hypothese opstellen en opnieuw toetsen."
+   ],
+   "uh": "Wat is eerlijk wetenschappelijk werken?"
+  },
+  {
+   "v": "Hoe heet de variabele die de onderzoeker zelf verandert?",
+   "o": [
+    "de constante variabele",
+    "de afhankelijke variabele",
+    "de onafhankelijke variabele",
+    "de controlevariabele die je meet"
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 1,
+   "u": "Onafhankelijk = wat jij instelt; afhankelijk = wat je meet.",
+   "uo": [
+    "Koos je constant? Een constante variabele houd je juist gelijk. Die verander je niet.",
+    "Koos je afhankelijk? Dat is wat je meet als gevolg, zoals het aantal kiemende zaden. Die hangt af van wat jij verandert.",
+    "Klopt: de onafhankelijke variabele stel je zelf in, zoals de temperatuur of de hoeveelheid zout. Het is de mogelijke oorzaak.",
+    "Koos je controlevariabele? Dat is een andere naam voor een constante variabele. Die houd je gelijk en verander je dus niet."
+   ],
+   "uh": "Wat stel jij in?"
+  },
+  {
+   "v": "Welke factor is de onafhankelijke variabele in de proef met waterpest?",
+   "o": [
+    "het aantal belletjes per minuut",
+    "de afstand van de lamp",
+    "de temperatuur van het water",
+    "de soort waterplant"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 1,
+   "u": "De afstand van de lamp wordt bewust veranderd.",
+   "uo": [
+    "Koos je het aantal belletjes? Dat tel je als resultaat. Het hangt af van de afstand van de lamp: het is de afhankelijke variabele.",
+    "Klopt: de onderzoeker zet de lamp op verschillende afstanden. Die afstand verandert hij zelf, dus dat is de onafhankelijke variabele.",
+    "Koos je de temperatuur? Die moet juist gelijk blijven, anders weet je niet of de belletjes door het licht of door de warmte komen.",
+    "Koos je de soort plant? Die blijft in de hele proef hetzelfde: overal waterpest. Het is dus een constante variabele."
+   ],
+   "uh": "Wat verschuift de onderzoeker?",
+   "ctx": "Een leerling zet een takje waterpest in een reageerbuis met water. Ze zet een lamp op 10, 20, 30 en 40 cm afstand en telt bij elke afstand hoeveel belletjes zuurstof er per minuut uit het takje komen. De buis staat in een bak water van 20 °C."
+  },
+  {
+   "v": "Welke factor verandert de onderzoeker hier bewust?",
+   "o": [
+    "de concentratie cafeïne",
+    "de hartslag van de watervlooien",
+    "het aantal watervlooien per bakje",
+    "de temperatuur van het water"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 1,
+   "u": "Cafeïne wordt in vier concentraties toegediend: dat stelt de onderzoeker in.",
+   "uo": [
+    "Klopt: de onderzoeker kiest zelf de concentraties cafeïne van 0, 1, 2 en 4 mg per liter. Dat is wat hij verandert: de onafhankelijke variabele.",
+    "Koos je de hartslag? Die meet hij als gevolg van de cafeïne. Het is de afhankelijke variabele.",
+    "Koos je het aantal watervlooien? Dat is in elk bakje gelijk: tien. Het is een constante variabele.",
+    "Koos je de temperatuur? Die is overal 20 °C en blijft gelijk. Het is een constante variabele."
+   ],
+   "uh": "Wat verschilt er bewust tussen de bakjes?",
+   "ctx": "Een onderzoeker zet in vier bakjes elk tien watervlooien in water van 20 °C. Aan de bakjes voegt hij 0, 1, 2 of 4 mg cafeïne per liter toe. Na tien minuten telt hij onder de microscoop bij elke watervlo het aantal hartslagen per minuut."
+  },
+  {
+   "v": "Waarom verander je in een experiment maar één variabele tegelijk?",
+   "o": [
+    "dan klopt de hypothese altijd",
+    "dan heb je minder metingen nodig en ben je sneller klaar",
+    "meer variabelen veranderen is niet toegestaan op school",
+    "anders weet je niet wat het effect veroorzaakt"
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 1,
+   "u": "Alleen bij één verschil weet je wat de oorzaak is.",
+   "uo": [
+    "Koos je dat de hypothese dan klopt? De hypothese kan nog steeds verworpen worden. Je weet alleen zeker welke variabele het resultaat bepaalde.",
+    "Koos je minder metingen? Je hebt juist vaak veel metingen nodig. De reden is dat je wilt weten wat de oorzaak is.",
+    "Koos je niet toegestaan? Het is geen schoolregel, maar een eis voor een eerlijke proef. Ook wetenschappers houden zich eraan.",
+    "Klopt: als je twee dingen tegelijk verandert en je ziet een effect, weet je niet welke van de twee het veroorzaakte. Met één verschil kun je het effect aan die variabele toeschrijven."
+   ],
+   "uh": "Hoe weet je wat de oorzaak was?"
+  },
+  {
+   "v": "Op welke as zet je meestal de afhankelijke variabele?",
+   "o": [
+    "op allebei, dat maakt niet uit",
+    "de horizontale as (x-as)",
+    "de verticale as (y-as)",
+    "die zet je niet in de grafiek"
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 2,
+   "u": "Onafhankelijk horizontaal, afhankelijk verticaal.",
+   "uo": [
+    "Koos je allebei? Elke variabele krijgt één as. De afspraak is: afhankelijk op de verticale as.",
+    "Koos je de horizontale as? Daar zet je de onafhankelijke variabele, wat jij verandert. Het gemeten resultaat komt op de verticale as.",
+    "Klopt: de afhankelijke variabele, wat je meet, zet je op de verticale as. De onafhankelijke variabele, wat je instelt, op de horizontale as.",
+    "Koos je niet in de grafiek? De afhankelijke variabele is juist het resultaat dat je met de grafiek wilt laten zien."
+   ],
+   "uh": "Het resultaat gaat omhoog of omlaag."
+  },
+  {
+   "v": "Welke grootheid is de afhankelijke variabele in de proef met waterpest?",
+   "o": [
+    "de afstand van de lamp tot de buis",
+    "het aantal belletjes per minuut",
+    "de lengte van het takje waterpest",
+    "het soort lamp"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 2,
+   "u": "Wat je meet als gevolg van de afstand.",
+   "uo": [
+    "Koos je de afstand? Die stel je zelf in: dat is de onafhankelijke variabele.",
+    "Klopt: het aantal belletjes per minuut is wat je meet. Het hangt af van de afstand van de lamp, dus het is de afhankelijke variabele.",
+    "Koos je de lengte van het takje? Die moet in de hele proef gelijk blijven, anders vergelijk je niet eerlijk. Het is een constante variabele.",
+    "Koos je het soort lamp? Je gebruikt steeds dezelfde lamp. Dat is een constante variabele."
+   ],
+   "uh": "Wat tel je?"
+  },
+  {
+   "v": "Welke afhankelijke variabele meet het best de opbrengst van de tomatenplanten?",
+   "o": [
+    "de totale massa tomaten per plant",
+    "de lengte van de stengel aan het eind",
+    "het aantal bladeren aan de plant",
+    "de hoeveelheid water die de plant krijgt"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 2,
+   "u": "De onderzoeksvraag gaat over opbrengst: wat de teler oogst.",
+   "uo": [
+    "Klopt: de onderzoeksvraag gaat over de opbrengst, en dat is wat de teler verkoopt: de tomaten. De totale massa tomaten per plant meet dat het best.",
+    "Koos je de lengte van de stengel? Een lange plant geeft niet altijd meer tomaten. Lengte meet groei, niet de opbrengst.",
+    "Koos je het aantal bladeren? Bladeren zeggen iets over groei, maar de teler verkoopt geen bladeren. Het meet niet wat de vraag stelt.",
+    "Koos je de hoeveelheid water? Die geef je zelf en moet in alle groepen gelijk zijn. Het is een constante variabele, geen meting van de opbrengst."
+   ],
+   "uh": "Wat verkoopt de teler?",
+   "ctx": "Een tomatenteler wil weten of een nieuwe meststof de opbrengst van zijn tomatenplanten verhoogt. Hij geeft 30 planten de nieuwe meststof en 30 planten de gewone meststof. Alle planten krijgen evenveel water en licht. Na drie maanden wil hij de resultaten vergelijken."
+  },
+  {
+   "v": "Welke meting is de afhankelijke variabele in dit experiment met amylase?",
+   "o": [
+    "de hoeveelheid jodium per druppel",
+    "de temperatuur van het waterbad",
+    "de hoeveelheid amylase in elke buis",
+    "de tijd tot het zetmeel weg is"
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 2,
+   "u": "Gemeten wordt hoe lang het duurt tot jodium niet meer blauwzwart kleurt.",
+   "uo": [
+    "Koos je de hoeveelheid jodium? Jodium is alleen een hulpmiddel om zetmeel aan te tonen. De hoeveelheid is steeds gelijk.",
+    "Koos je de temperatuur? Die stelt de leerling zelf in op vijf waarden. Dat is de onafhankelijke variabele.",
+    "Koos je de hoeveelheid amylase? Die is in elke buis gelijk: 2 mL. Het is een constante variabele.",
+    "Klopt: de leerling meet hoe lang het duurt tot het zetmeel is afgebroken. Die tijd hangt af van de temperatuur: het is de afhankelijke variabele."
+   ],
+   "uh": "Wat noteert de leerling met de stopwatch?",
+   "ctx": "Een leerling doet in vijf buizen 5 mL zetmeeloplossing en 2 mL amylase. De buizen staan in waterbaden van 10, 20, 30, 40 en 50 °C. Elke minuut neemt hij een druppel uit elke buis en doet die bij jodium. Hij noteert na hoeveel minuten het jodium niet meer blauwzwart kleurt."
+  },
+  {
+   "v": "Welke factor moet in de proef met waterpest constant blijven?",
+   "o": [
+    "het aantal belletjes per minuut",
+    "de afstand van de lamp",
+    "de temperatuur van het water",
+    "de tijd waarin je telt per afstand, die mag per afstand verschillen"
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 3,
+   "u": "Temperatuur beïnvloedt de fotosynthese ook; die moet dus gelijk blijven.",
+   "uo": [
+    "Koos je het aantal belletjes? Dat meet je als resultaat. Het mag en moet juist veranderen als de afstand verandert.",
+    "Koos je de afstand van de lamp? Die verander je juist bewust. Het is de onafhankelijke variabele.",
+    "Klopt: ook de temperatuur beïnvloedt de snelheid van fotosynthese. Als die verandert, weet je niet meer of de belletjes door licht of door warmte komen. Daarom moet hij constant blijven.",
+    "Koos je dat de teltijd mag verschillen? Die moet juist overal gelijk zijn, anders kun je de aantallen niet vergelijken."
+   ],
+   "uh": "Wat beïnvloedt de fotosynthese nog meer?"
+  },
+  {
+   "v": "Waarom kan Daan uit zijn proef geen conclusie trekken over de meststof?",
+   "o": [
+    "hij heeft te weinig potgrond gebruikt",
+    "er verschillen twee factoren tegelijk",
+    "planten in de vensterbank groeien nooit",
+    "hij had de plant in de kast meer mest moeten geven"
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 3,
+   "u": "Licht én meststof verschillen: het effect is aan geen van beide toe te schrijven.",
+   "uo": [
+    "Koos je te weinig potgrond? Daar staat niets over in de proef. Het echte probleem is dat er twee dingen tegelijk verschillen.",
+    "Klopt: de planten verschillen in licht én in meststof. Groeit plant A beter, dan weet Daan niet of dat door het licht of door de meststof komt. Het licht had constant moeten zijn.",
+    "Koos je dat planten in de vensterbank nooit groeien? Ze groeien juist goed in het licht. Dat is ook precies waarom licht een storende factor is.",
+    "Koos je meer mest voor plant B? Dan verander je nog meer. Een eerlijke proef heeft maar één verschil: met of zonder meststof."
+   ],
+   "uh": "Hoeveel dingen zijn er anders?",
+   "ctx": "Daan wil weten of een meststof planten sneller laat groeien. Hij zet plant A met meststof in de vensterbank en plant B zonder meststof in een donkere kast. Na drie weken is plant A 12 cm gegroeid en plant B 2 cm. Daan concludeert dat de meststof goed werkt."
+  },
+  {
+   "v": "Waarom zet je een bak water tussen de lamp en de buis met waterpest?",
+   "o": [
+    "om de temperatuur constant te houden",
+    "om het licht sterker te maken",
+    "om meer koolstofdioxide aan het water te geven",
+    "om de belletjes beter te kunnen zien"
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 3,
+   "u": "Een lamp geeft ook warmte; de bak vangt die op.",
+   "uo": [
+    "Klopt: een lamp geeft naast licht ook warmte. Dichtbij wordt het water warmer. De bak water vangt die warmte op, zodat alleen het licht verschilt en de temperatuur constant blijft.",
+    "Koos je het licht sterker maken? Water maakt het licht niet sterker; het laat het licht vooral door. Het doel is de warmte tegen te houden.",
+    "Koos je koolstofdioxide geven? De bak staat los van de buis met waterpest. Er komt geen koolstofdioxide in de buis.",
+    "Koos je de belletjes beter zien? Daar helpt de bak niet bij. Hij is er om te zorgen dat de temperatuur niet verandert."
+   ],
+   "uh": "Wat geeft een lamp behalve licht?"
+  },
+  {
+   "v": "Welke variabelen moet Lisa constant houden?",
+   "o": [
+    "het aantal buizen bij elke temperatuur, dat maakt niet uit",
+    "de temperatuur van de waterbaden",
+    "de tijd tot de melk dik wordt",
+    "de hoeveelheid enzym en de pH"
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 3,
+   "u": "Alles behalve de temperatuur moet gelijk zijn, ook enzym, melk en pH.",
+   "uo": [
+    "Koos je dat het aantal buizen niet uitmaakt? Voor een eerlijke vergelijking gebruik je bij elke temperatuur evenveel herhalingen.",
+    "Koos je de temperatuur? Die verandert Lisa juist: het is de onafhankelijke variabele.",
+    "Koos je de tijd tot de melk dik wordt? Die meet ze: het is de afhankelijke variabele.",
+    "Klopt: Lisa onderzoekt het effect van temperatuur. Alles wat de werking van het enzym ook beïnvloedt, moet gelijk blijven: de hoeveelheid enzym, de hoeveelheid melk en de pH."
+   ],
+   "uh": "Wat beïnvloedt een enzym nog meer?",
+   "ctx": "Lisa onderzoekt bij welke temperatuur het enzym stremsel melk het snelst dik maakt. Ze zet buizen met 10 mL melk en 1 mL stremsel in waterbaden van 20, 30, 40, 50 en 60 °C. Ze meet de tijd tot de melk dik is. De pH van melk is ongeveer 6,7."
+  },
+  {
+   "v": "Waarvoor dient een controlegroep in een experiment?",
+   "o": [
+    "om de hypothese meteen te bevestigen",
+    "om de proef sneller te kunnen afronden",
+    "om te vergelijken met de groep die de behandeling krijgt",
+    "om extra metingen te hebben als er iets misgaat"
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 4,
+   "u": "De controlegroep laat zien wat er gebeurt zonder de behandeling.",
+   "uo": [
+    "Koos je de hypothese bevestigen? Een controlegroep kan de hypothese ook juist weerleggen. Hij is een vergelijkingspunt.",
+    "Koos je sneller afronden? Een controlegroep kost juist extra werk. Hij is nodig om eerlijk te kunnen vergelijken.",
+    "Klopt: de controlegroep krijgt de behandeling niet en is verder gelijk. Door te vergelijken zie je of het verschil echt door de behandeling komt.",
+    "Koos je extra metingen bij problemen? Een controlegroep is geen reserve. Hij hoort bij de proef om te vergelijken."
+   ],
+   "uh": "Waarmee vergelijk je?"
+  },
+  {
+   "v": "Welke controlegroep past bij de vraag of een nieuwe meststof planten beter laat groeien?",
+   "o": [
+    "planten met twee keer zoveel meststof",
+    "dezelfde planten zonder meststof",
+    "planten van een andere soort met meststof",
+    "planten zonder meststof op een donkere plek"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 4,
+   "u": "Alles gelijk, alleen zonder meststof.",
+   "uo": [
+    "Koos je twee keer zoveel? Dat is een tweede proefgroep, geen controlegroep. Een controlegroep krijgt de behandeling niet.",
+    "Klopt: de controlegroep moet in alles gelijk zijn aan de proefgroep, behalve in de meststof. Dan komt een verschil in groei door de meststof.",
+    "Koos je een andere soort? Dan verschilt de soort én de meststof. Je kunt dan niet zeggen wat het verschil veroorzaakt.",
+    "Koos je een donkere plek? Dan verschilt ook het licht. Een controlegroep mag maar op één punt afwijken."
+   ],
+   "uh": "Wat moet het enige verschil zijn?"
+  },
+  {
+   "v": "Waarom krijgt groep B een pil zonder werkzame stof?",
+   "o": [
+    "om het effect van verwachting uit te sluiten",
+    "omdat er niet genoeg medicijn was voor beide groepen",
+    "om te zien of de pil goed smaakt",
+    "zodat groep B sneller beter wordt"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 4,
+   "u": "Een placebo: beide groepen denken dat ze een medicijn krijgen.",
+   "uo": [
+    "Klopt: dit is een placebo. Mensen die denken dat ze een medicijn krijgen, voelen zich soms al beter door de verwachting. Als beide groepen een pil krijgen, is het enige verschil de werkzame stof.",
+    "Koos je te weinig medicijn? De onderzoekers kiezen bewust voor een nep-pil. Het is een controlegroep, geen tekort.",
+    "Koos je de smaak? Het gaat niet om de smaak. Beide pillen zien er hetzelfde uit, zodat niemand weet wie het echte medicijn krijgt.",
+    "Koos je sneller beter? Groep B krijgt juist geen werkzame stof. Het doel is te vergelijken met groep A."
+   ],
+   "uh": "Wat denken de mensen in groep B?",
+   "ctx": "In een onderzoek naar een nieuw medicijn tegen hoofdpijn krijgen 200 mensen in groep A een pil met de werkzame stof. 200 mensen in groep B krijgen een pil die er precies hetzelfde uitziet, maar geen werkzame stof bevat. Niemand weet in welke groep hij zit. Na een uur geven ze aan hoeveel hoofdpijn ze nog hebben."
+  },
+  {
+   "v": "Welke opstelling is de juiste controle bij deze proef?",
+   "o": [
+    "een schaal met andere zaden in een warme kast",
+    "een schaal zonder zaden in het donker",
+    "net zo’n schaal met zaden zonder water in het licht",
+    "net zo’n schaal met zaden in het licht"
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 4,
+   "u": "De controle verschilt alleen in de factor die je onderzoekt: licht.",
+   "uo": [
+    "Koos je andere zaden in een warme kast? Dan verschillen de soort, de temperatuur en het licht. Dat is geen eerlijke controle.",
+    "Koos je een schaal zonder zaden? Dan kun je niets vergelijken: er kan niets kiemen. De controle moet ook zaden bevatten.",
+    "Koos je zonder water in het licht? Dan verschillen licht én water. Kiemen er minder, dan weet je niet waardoor.",
+    "Klopt: Fleur onderzoekt of licht nodig is voor kieming. De controle is dezelfde schaal met zaden en water, op dezelfde temperatuur, maar in het licht. Het enige verschil is dan het licht."
+   ],
+   "uh": "Wat mag het enige verschil zijn?",
+   "ctx": "Fleur wil weten of tuinkerszaden licht nodig hebben om te kiemen. Ze legt twintig zaden op natte watten in een petrischaal en zet die in een donkere kast bij 20 °C. Na vier dagen zijn achttien zaden gekiemd. Haar docent zegt dat ze nog een controle nodig heeft."
+  },
+  {
+   "v": "Welke controle past bij de vraag of brood sneller schimmelt op een vochtige plek?",
+   "o": [
+    "zelfde brood op een vochtige maar warmere plek",
+    "ander brood op dezelfde vochtige plek",
+    "zelfde brood op een droge plek, zelfde temperatuur",
+    "geen brood, alleen een bakje water"
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 4,
+   "u": "Alleen het vocht mag verschillen.",
+   "uo": [
+    "Koos je warmer? Dan verschillen vocht én temperatuur. Ook temperatuur beïnvloedt schimmelgroei.",
+    "Koos je ander brood op dezelfde plek? Dan verschilt het brood, maar niet het vocht. Zo onderzoek je de vraag niet.",
+    "Klopt: de controle is hetzelfde brood bij dezelfde temperatuur, alleen op een droge plek. Dan is vocht het enige verschil.",
+    "Koos je geen brood? Zonder brood kun je geen schimmelgroei vergelijken. De controle moet ook brood bevatten."
+   ],
+   "uh": "Wat verschilt er tussen proef en controle?"
+  },
+  {
+   "v": "Waarom gebruik je twintig planten per groep in plaats van één?",
+   "o": [
+    "dan groeien de planten sneller",
+    "toevallige verschillen tussen planten vallen weg",
+    "twintig planten nemen minder ruimte in dan één",
+    "met één plant is een experiment verboden"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 5,
+   "u": "Elke plant verschilt een beetje; een gemiddelde van veel planten is betrouwbaarder.",
+   "uo": [
+    "Koos je sneller groeien? Het aantal planten verandert de groeisnelheid niet. Het gaat om een betrouwbaarder resultaat.",
+    "Klopt: elke plant groeit een beetje anders, ook onder dezelfde omstandigheden. Met twintig planten per groep vallen die toevallige verschillen weg in het gemiddelde en is de uitkomst betrouwbaarder.",
+    "Koos je minder ruimte? Twintig planten nemen juist meer ruimte in. De reden is betrouwbaarheid.",
+    "Koos je verboden? Het mag wel, maar met één plant kan een toevallig zwakke of sterke plant de uitkomst bepalen."
+   ],
+   "uh": "Groeien alle planten precies gelijk?"
+  },
+  {
+   "v": "Welke fout zit er in de opzet van deze proef?",
+   "o": [
+    "de groepen krijgen verschillend licht",
+    "de groepen zijn even groot",
+    "alle planten zijn van dezelfde soort",
+    "de groei wordt na vier weken gemeten"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 5,
+   "u": "Licht is een storende factor; zet de planten door elkaar.",
+   "uo": [
+    "Klopt: de planten met meststof staan in de zon, die zonder in de schaduw. Groeien ze beter, dan weet je niet of dat door de meststof of door het licht komt. Je moet de planten door elkaar zetten.",
+    "Koos je even grote groepen? Dat is juist goed. Gelijke groepen maken de vergelijking eerlijker.",
+    "Koos je dezelfde soort? Dat is ook goed: de soort is constant. Het probleem zit in de plek in de kas.",
+    "Koos je meten na vier weken? Dat gebeurt bij beide groepen gelijk. Dat is geen fout in de opzet."
+   ],
+   "uh": "Waar staan de twee groepen?",
+   "ctx": "In een kas onderzoekt een teler of een meststof sla beter laat groeien. Hij zet de 30 planten met meststof aan de zonnige zuidkant van de kas en de 30 planten zonder meststof aan de schaduwkant. Alle planten krijgen evenveel water. Na vier weken weegt hij de krop van elke plant."
+  },
+  {
+   "v": "Welke conclusie past het best bij deze resultaten?",
+   "o": [
+    "zonder meststof groeien planten beter",
+    "de meststof werkt zeker, want 34 is meer dan 31",
+    "de meststof is schadelijk voor de planten",
+    "het verschil is te klein voor een harde conclusie"
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 5,
+   "u": "Het verschil van 3 cm is klein vergeleken met de spreiding van ruim 6 cm.",
+   "uo": [
+    "Koos je dat planten zonder mest beter groeien? Die groep is gemiddeld juist iets korter. Dat past niet bij de resultaten.",
+    "Koos je dat de meststof zeker werkt? 34 is wel meer dan 31, maar de spreiding is groter dan het verschil. Je kunt dus niet zeker zeggen dat het door de meststof komt.",
+    "Koos je schadelijk? De planten met meststof zijn gemiddeld juist iets langer. Er is geen aanwijzing dat de meststof schadelijk is.",
+    "Klopt: het gemiddelde verschil is 3 cm, maar binnen elke groep verschillen de planten 6 tot 7 cm. Het verschil kan dus toeval zijn. Je kunt beter herhalen met meer planten."
+   ],
+   "uh": "Vergelijk het verschil met de spreiding.",
+   "ctx": "Een leerling kweekt twee groepen van tien planten. Groep A krijgt een meststof, groep B niet. Na vier weken is de gemiddelde lengte in groep A 34 cm (planten tussen 30 en 37 cm) en in groep B 31 cm (planten tussen 27 en 34 cm). De leerling wil een conclusie trekken."
+  },
+  {
+   "v": "Waarom herhaal je een meting een paar keer?",
+   "o": [
+    "omdat de eerste meting altijd fout is",
+    "om de hypothese te veranderen",
+    "om te zien of het resultaat geen toeval is",
+    "om meer variabelen tegelijk te kunnen onderzoeken"
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 5,
+   "u": "Herhalen maakt een resultaat betrouwbaarder.",
+   "uo": [
+    "Koos je dat de eerste meting fout is? De eerste meting is niet per definitie fout. Door te herhalen zie je of de metingen overeenkomen.",
+    "Koos je de hypothese veranderen? Herhalen verandert de hypothese niet. Het maakt de uitkomst betrouwbaarder.",
+    "Klopt: als je een meting herhaalt en steeds ongeveer hetzelfde vindt, weet je dat het resultaat geen toeval is. Het gemiddelde van herhaalde metingen is betrouwbaarder.",
+    "Koos je meer variabelen? Bij een herhaling meet je hetzelfde nog eens, met dezelfde variabelen. Je onderzoekt niets nieuws."
+   ],
+   "uh": "Wat vertelt een herhaling?"
+  },
+  {
+   "v": "Hoe maakt Sem zijn proef met regenwormen eerlijk?",
+   "o": [
+    "pot A meer water geven dan pot B",
+    "beide potten dezelfde grond, één met wormen",
+    "in pot B ook potgrond, maar met andere planten",
+    "pot B op een warmere plek zetten"
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 5,
+   "u": "Alleen de wormen mogen verschillen, niet het soort grond.",
+   "uo": [
+    "Koos je meer water voor pot A? Dan verschilt er nog iets extra. Een eerlijke proef heeft maar één verschil.",
+    "Klopt: nu verschillen de potten in wormen én in grondsoort. In een eerlijke proef krijgen beide potten dezelfde grond en verschilt alleen of er wormen in zitten.",
+    "Koos je andere planten? Dan verschillen de planten en de grond nog steeds. Alleen de wormen mogen verschillen.",
+    "Koos je een warmere plek? Dan verschilt ook de temperatuur. Dat maakt de proef nog minder eerlijk."
+   ],
+   "uh": "Wat moet het enige verschil zijn?",
+   "ctx": "Sem wil weten of regenwormen de grond vruchtbaarder maken. In pot A doet hij tuingrond met tien regenwormen, in pot B potgrond zonder wormen. In beide potten zaait hij twintig graszaadjes. Na drie weken is het gras in pot B hoger. Sem concludeert dat regenwormen de grond niet vruchtbaarder maken."
+  }
+ ],
+ "oe": [
+  {
+   "bron": "Examenstijl",
+   "ctx": "Leerlingen willen weten of de temperatuur invloed heeft op de ademhaling van kiemende erwten. Ze doen kiemende erwten in vijf afgesloten flessen bij 5, 10, 15, 20 en 25 °C. In elke fles zit een sensor die meet hoeveel koolstofdioxide er na een uur is. In elke fles zitten 50 g erwten.",
+   "v": "Geef de onafhankelijke variabele, de afhankelijke variabele en twee constante variabelen van dit experiment.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Onafhankelijk: de temperatuur (1p). Afhankelijk: de hoeveelheid koolstofdioxide na een uur (1p). Constant (twee noemen): de massa erwten, de grootte van de fles, de duur van de meting, de soort erwten / hoe lang ze al kiemen (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een leerling wil onderzoeken of tuinkerszaden minder goed kiemen in zout water. Hij legt twintig zaden op watten met zout water in een petrischaal en zet die bij 20 °C in het licht. Na vier dagen zijn er zes gekiemd.",
+   "v": "Formuleer een passende hypothese, en beschrijf het controle-experiment dat de leerling nog moet uitvoeren om een conclusie te kunnen trekken.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Hypothese, bijvoorbeeld: in zout water kiemen minder tuinkerszaden dan in gewoon water (1p). Controle: twintig zaden op watten met gewoon (kraan)water (1p), in dezelfde soort schaal, ook bij 20 °C in het licht en ook vier dagen, zodat alleen het zout verschilt (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een onderzoeker test of een kruidenthee helpt tegen verkoudheid. Hij geeft 25 verkouden mensen drie keer per dag de thee. Na een week zijn 22 van hen weer beter. Hij concludeert dat de thee goed werkt tegen verkoudheid.",
+   "v": "Leg uit waarom deze conclusie niet getrokken mag worden, en beschrijf hoe het onderzoek verbeterd kan worden.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Er is geen controlegroep: een verkoudheid gaat vaak binnen een week vanzelf over, dus je weet niet of de thee het verschil maakt (1p). Verbetering: een even grote controlegroep die een gelijk uitziende en smakende thee zonder het kruid krijgt (placebo) (1p), waarbij de mensen niet weten in welke groep ze zitten en de groepen verder gelijk zijn; liefst ook met meer deelnemers (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een leerling onderzoekt het effect van licht op de groei van boontjes. Ze zet één bonenplant in de vensterbank en één in de gang, waar het minder licht is. De plant in de vensterbank krijgt elke dag water, die in de gang om de dag. Na twee weken is de plant in de vensterbank langer.",
+   "v": "Noem twee fouten in de opzet van dit onderzoek en leg bij elk uit waarom het de conclusie onbetrouwbaar maakt.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Fout 1: de hoeveelheid water verschilt; het verschil in lengte kan door het water komen in plaats van door het licht (1p). Fout 2: er is maar één plant per situatie; een toevallig verschil tussen de planten kan de uitkomst bepalen (1p). Ook mogelijk: temperatuur in vensterbank en gang verschilt. Juiste uitleg bij beide fouten (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Bij een proef met het enzym catalase uit lever meten leerlingen hoeveel zuurstof er per minuut ontstaat bij verschillende pH-waarden. Ze gebruiken steeds 1 g lever en 10 mL waterstofperoxide bij 25 °C. De resultaten: pH 3: 2 mL, pH 5: 9 mL, pH 7: 18 mL, pH 9: 11 mL, pH 11: 3 mL.",
+   "v": "Formuleer de onderzoeksvraag die bij deze proef past en trek een conclusie uit de resultaten. Leg ook uit waarom de temperatuur steeds 25 °C moest zijn.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Onderzoeksvraag: wat is de invloed van de pH op de activiteit van catalase? (1p). Conclusie: catalase werkt het best rond pH 7; bij een lagere of hogere pH ontstaat minder zuurstof (1p). De temperatuur beïnvloedt de enzymactiviteit ook; als die zou verschillen, weet je niet of het verschil door de pH komt (1p)."
+  }
+ ]
+}

@@ -5,7 +5,7 @@
 Volledige beschrijving (functies, inhoud per niveau, prijs, wat Slagio niet is): https://slagio.nl/llms-full.txt
 
 ## In het kort
-- 12 vakken havo, 16 vakken vwo, 12 vakken vmbo; 27.000 oefenvragen en 4.346 begrippen.
+- 12 vakken havo, 16 vakken vwo, 12 vakken vmbo; 27.001 oefenvragen en 4.346 begrippen.
 - Adaptief oefenen: na een fout een vraag over hetzelfde onderwerp, een niveau makkelijker; uitleg bij elk fout antwoord.
 - Foutenboek en herhalen met gespreide herhaling, beheersing per leerdoel, studieplan tot het examen.
 - Examens met klok, proefexamens in examenstijl met modelantwoord en puntenverdeling, archief met officiële oude examens.
@@ -43,7 +43,7 @@ Volledige beschrijving (functies, inhoud per niveau, prijs, wat Slagio niet is):
 - [Personages, thema en motief (Nederlands HAVO)](https://slagio.nl/leren/havo/nederlands/personages-thema-en-motief.html): Je karakteriseert personages (direct en indirect), herkent hun rol en ontwikkeling en legt uit hoe motieven en symbolen het thema van een verhaal ondersteunen.
 - [Stijlfiguren en poëzie (Nederlands HAVO)](https://slagio.nl/leren/havo/nederlands/stijlfiguren-en-poezie.html): Je herkent stijlfiguren zoals metafoor, vergelijking, personificatie, hyperbool en ironie, en je beschrijft rijm, enjambement en de opbouw van een gedicht,…
 - [Literatuurgeschiedenis in hoofdlijnen (Nederlands HAVO)](https://slagio.nl/leren/havo/nederlands/literatuurgeschiedenis-in-hoofdlijnen.html): Je kent de hoofdlijnen van de literatuurgeschiedenis (van Middeleeuwen tot postmodernisme), herkent bij een fragment de stroming en legt uit hoe stromingen op…
-- [Onderzoek opzetten (Biologie HAVO)](https://slagio.nl/leren/havo/biologie/onderzoek-opzetten.html): Een biologisch experiment opzetten met een toetsbare hypothese, de onafhankelijke, afhankelijke en constante variabelen, en een controlegroep.
+- [Onderzoek opzetten (Biologie HAVO)](https://slagio.nl/leren/havo/biologie/onderzoek-opzetten.html): Je formuleert een toetsbare hypothese bij een onderzoeksvraag, herkent en benoemt de onafhankelijke, afhankelijke en constante variabelen, ontwerpt een…
 - [Betrouwbaarheid en validiteit beoordelen (Biologie HAVO)](https://slagio.nl/leren/havo/biologie/betrouwbaarheid-en-validiteit-beoordelen.html): Het verschil tussen betrouwbaarheid (steeds hetzelfde resultaat) en validiteit (meet je het juiste), en de rol van steekproef en placebo.
 - [Data verwerken en grafieken lezen (Biologie HAVO)](https://slagio.nl/leren/havo/biologie/data-verwerken-en-grafieken-lezen.html): Gegevens uit tabellen en grafieken aflezen, as-eenheden juist lezen, spreiding (standaarddeviatie) interpreteren en niet concluderen buiten het meetbereik.
 - [Correlatie versus causaliteit (Biologie HAVO)](https://slagio.nl/leren/havo/biologie/correlatie-versus-causaliteit.html): Het verschil tussen een verband (correlatie) en een oorzaak-gevolgrelatie (causaliteit), en waarom een correlatie geen oorzaak bewijst.

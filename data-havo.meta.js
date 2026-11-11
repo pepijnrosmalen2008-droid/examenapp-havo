@@ -964,9 +964,13 @@ var VAKKEN = [
     "leerdoelen": [
      {
       "id": "A1",
+      "lo": "bi.A.1",
+      "gs": 2,
       "naam": "Onderzoek opzetten",
-      "beschrijving": "Een biologisch experiment opzetten met een toetsbare hypothese, de onafhankelijke, afhankelijke en constante variabelen, en een controlegroep.",
-      "ceStatus": "CE",
+      "beschrijving": "Je formuleert een toetsbare hypothese bij een onderzoeksvraag, herkent en benoemt de onafhankelijke, afhankelijke en constante variabelen, ontwerpt een passend controle-experiment en beoordeelt of een proef een eerlijke vergelijking oplevert.",
+      "ceStatus": "CE+SE",
+      "binas": "",
+      "val": "",
       "onderwerpen": [
        "Hypothese als toetsbare verwachting",
        "Onafhankelijke variabele (wat je verandert)",
@@ -975,9 +979,9 @@ var VAKKEN = [
        "Controlegroep en controle-experiment",
        "Eerlijke vergelijking"
       ],
-      "nSv": 25,
+      "nSv": 26,
       "nOe": 5,
-      "nBeg": 12,
+      "nBeg": 11,
       "hasSam": true
      },
      {
