@@ -382,7 +382,7 @@
   - [x] C4 De wetten van Newton
   - [x] C5 Arbeid, energie en vermogen
   - [x] C6 Warmtetransport
-- [ ] **HAVO · Natuurkunde** (`na`) · domein D — Lading en veld
+- [x] **HAVO · Natuurkunde** (`na`) · domein D — Lading en veld (6 van 6 leerdoelen op v2)
   - [x] D1 Stroom, spanning en lading
   - [x] D2 Weerstand en de wet van Ohm
   - [x] D3 Serie- en parallelschakeling
