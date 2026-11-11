@@ -986,9 +986,13 @@ var VAKKEN = [
      },
      {
       "id": "A2",
+      "lo": "bi.A.2",
+      "gs": 2,
       "naam": "Betrouwbaarheid en validiteit beoordelen",
-      "beschrijving": "Het verschil tussen betrouwbaarheid (steeds hetzelfde resultaat) en validiteit (meet je het juiste), en de rol van steekproef en placebo.",
-      "ceStatus": "CE",
+      "beschrijving": "Je beoordeelt of een onderzoek betrouwbaar en valide is, legt het verschil tussen beide uit, beoordeelt of een steekproef groot genoeg en representatief is en legt uit waarom medicijnonderzoek een placebogroep en blind onderzoek gebruikt.",
+      "ceStatus": "CE+SE",
+      "binas": "",
+      "val": "",
       "onderwerpen": [
        "Betrouwbaarheid: reproduceerbaar resultaat",
        "Validiteit: meet je wat je wilt meten",
@@ -997,7 +1001,7 @@ var VAKKEN = [
        "Representatieve steekproef",
        "Placebo en het placebo-effect"
       ],
-      "nSv": 25,
+      "nSv": 26,
       "nOe": 5,
       "nBeg": 12,
       "hasSam": true

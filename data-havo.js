@@ -40732,9 +40732,13 @@ var VAKKEN = [
      },
      {
       "id": "A2",
+      "lo": "bi.A.2",
+      "gs": 2,
       "naam": "Betrouwbaarheid en validiteit beoordelen",
-      "beschrijving": "Het verschil tussen betrouwbaarheid (steeds hetzelfde resultaat) en validiteit (meet je het juiste), en de rol van steekproef en placebo.",
-      "ceStatus": "CE",
+      "beschrijving": "Je beoordeelt of een onderzoek betrouwbaar en valide is, legt het verschil tussen beide uit, beoordeelt of een steekproef groot genoeg en representatief is en legt uit waarom medicijnonderzoek een placebogroep en blind onderzoek gebruikt.",
+      "ceStatus": "CE+SE",
+      "binas": "",
+      "val": "",
       "onderwerpen": [
        "Betrouwbaarheid: reproduceerbaar resultaat",
        "Validiteit: meet je wat je wilt meten",
@@ -40743,554 +40747,640 @@ var VAKKEN = [
        "Representatieve steekproef",
        "Placebo en het placebo-effect"
       ],
-      "sam": "Bij het beoordelen van een onderzoek let je op twee dingen. Betrouwbaarheid gaat over of je bij herhaling steeds hetzelfde resultaat krijgt: is de uitkomst reproduceerbaar? Validiteit gaat over of je meet wat je echt wilt meten: meet je het juiste? Dit zijn twee verschillende dingen; een meting kan betrouwbaar zijn maar toch het verkeerde meten. Een steekproef is het deel van de groep dat je onderzoekt. Een grotere en representatieve steekproef maakt het onderzoek betrouwbaarder; een te kleine steekproef is een beperking. Bij medicijnonderzoek geef je de controlegroep een placebo, een nepbehandeling zonder werkzame stof, zodat je het echte effect kunt scheiden van het placebo-effect.",
+      "sam": "Betrouwbaar = herhaalbaar/reproduceerbaar; verbeteren door herhalen, middelen, meer individuen. Valide = je meet wat je wilt meten (goede grootheid, goede plek, ijken). Betrouwbaar maar niet valide: steeds dezelfde fout. Herhalen helpt niet tegen een validiteitsprobleem. Steekproef = deel van de populatie; groter = betrouwbaarder gemiddelde. Representatief = lijkt op de populatie; groot is niet vanzelf representatief; spreiden of willekeurig kiezen. Placebo: nep-pil; blind onderzoek; middel − placebo = effect stof, placebo − niets = placebo-effect.",
       "begrippen": [
        {
         "t": "Betrouwbaarheid",
-        "d": "of je bij herhaling steeds hetzelfde resultaat krijgt"
-       },
-       {
-        "t": "Validiteit",
-        "d": "of je meet wat je echt wilt meten"
-       },
-       {
-        "t": "Steekproef",
-        "d": "het deel van de groep dat je onderzoekt"
-       },
-       {
-        "t": "Steekproefgrootte",
-        "d": "hoeveel individuen er in de steekproef zitten"
-       },
-       {
-        "t": "Representatief",
-        "d": "de steekproef lijkt goed op de hele groep"
-       },
-       {
-        "t": "Placebo",
-        "d": "een nepbehandeling zonder werkzame stof"
-       },
-       {
-        "t": "Placebo-effect",
-        "d": "verbetering doordat iemand denkt behandeld te worden"
+        "d": "Mate waarin een meting bij herhaling (ongeveer) dezelfde uitkomst geeft."
        },
        {
         "t": "Reproduceerbaar",
-        "d": "een resultaat dat bij herhaling opnieuw ontstaat"
+        "d": "Door anderen te herhalen met hetzelfde resultaat."
        },
        {
-        "t": "Meetfout",
-        "d": "een afwijking tussen de meting en de echte waarde"
+        "t": "Validiteit",
+        "d": "Mate waarin je meet wat je wilt meten."
        },
        {
-        "t": "Nauwkeurigheid",
-        "d": "hoe dicht een meting bij de echte waarde ligt"
+        "t": "IJken",
+        "d": "Een meetinstrument afstellen met een bekende waarde, zodat een vaste afwijking verdwijnt."
        },
        {
-        "t": "Controlegroep",
-        "d": "de vergelijkingsgroep zonder de echte behandeling"
+        "t": "Populatie",
+        "d": "Alle individuen waarover je in een onderzoek iets wilt zeggen."
        },
        {
-        "t": "Vertekening",
-        "d": "een systematische scheefheid in de resultaten"
+        "t": "Steekproef",
+        "d": "Deel van de populatie dat je onderzoekt om iets over de hele populatie te zeggen."
+       },
+       {
+        "t": "Steekproefgrootte",
+        "d": "Aantal individuen of metingen in een steekproef."
+       },
+       {
+        "t": "Representatief",
+        "d": "Een steekproef die in samenstelling lijkt op de hele populatie."
+       },
+       {
+        "t": "Uitschieter",
+        "d": "Meting die sterk afwijkt van de andere metingen."
+       },
+       {
+        "t": "Placebo",
+        "d": "Nep-behandeling zonder werkzame stof die er hetzelfde uitziet als de echte."
+       },
+       {
+        "t": "Placebo-effect",
+        "d": "Verbetering die ontstaat doordat iemand verwacht dat een behandeling helpt."
+       },
+       {
+        "t": "Blind onderzoek",
+        "d": "Onderzoek waarbij de deelnemers niet weten of ze de echte behandeling of een placebo krijgen."
        }
       ],
       "sv": [
        {
-        "v": "Wat betekent betrouwbaarheid van een onderzoek?",
+        "v": "Wanneer is een meting betrouwbaar?",
         "o": [
-         "Dat je steeds hetzelfde resultaat krijgt",
-         "Dat je het juiste onderwerp meet",
-         "Dat de steekproef heel klein is",
-         "Dat je de meting maar één enkele keer uitvoert"
-        ],
-        "c": 0,
-        "d": 2,
-        "u": "Betrouwbaarheid gaat over of het resultaat bij herhaling steeds hetzelfde is.",
-        "uo": [
-         "Klopt: steeds hetzelfde resultaat bij herhaling.",
-         "Dat is validiteit.",
-         "Een kleine steekproef maakt het juist minder betrouwbaar.",
-         "Betrouwbaarheid vraagt juist herhaling."
-        ],
-        "uh": "Betrouwbaar = steeds hetzelfde resultaat."
-       },
-       {
-        "v": "Wat betekent validiteit van een onderzoek?",
-        "o": [
-         "Dat je steeds hetzelfde krijgt",
-         "Dat je meet wat je wilt meten",
-         "Dat je heel vaak herhaalt",
-         "Dat de steekproef groot is"
-        ],
-        "c": 1,
-        "d": 2,
-        "u": "Validiteit gaat over of je echt meet wat je wilt onderzoeken.",
-        "uo": [
-         "Dat is betrouwbaarheid.",
-         "Klopt: je meet het juiste.",
-         "Herhalen hoort bij betrouwbaarheid.",
-         "Steekproefgrootte hoort bij betrouwbaarheid."
-        ],
-        "uh": "Valide = je meet het juiste."
-       },
-       {
-        "v": "Wat is het verschil tussen betrouwbaarheid en validiteit?",
-        "o": [
-         "De twee begrippen betekenen precies hetzelfde",
-         "Beide gaan alleen over de steekproef",
-         "Betrouwbaar is herhaalbaar, valide is het juiste meten",
-         "Beide gaan over de grootte van de groep"
-        ],
-        "c": 2,
-        "d": 3,
-        "u": "Betrouwbaarheid gaat over herhaalbaarheid, validiteit over of je het juiste meet. Dat zijn twee dingen.",
-        "uo": [
-         "Ze verschillen juist.",
-         "Ze gaan over meer dan de steekproef.",
-         "Klopt: herhaalbaar versus het juiste meten.",
-         "Ze gaan niet alleen over de groepsgrootte."
-        ],
-        "uh": "Betrouwbaar = herhaalbaar, valide = het juiste."
-       },
-       {
-        "v": "Wat is een steekproef?",
-        "o": [
-         "De hele populatie tegelijk",
-         "Een nepbehandeling zonder stof",
-         "De verwachting die je van tevoren opstelt",
-         "Het deel van de groep dat je onderzoekt"
-        ],
-        "c": 3,
-        "d": 1,
-        "u": "Een steekproef is het deel van de groep dat je daadwerkelijk onderzoekt.",
-        "uo": [
-         "De hele populatie is geen steekproef.",
-         "Dat is een placebo.",
-         "Dat is de hypothese.",
-         "Klopt: het onderzochte deel van de groep."
-        ],
-        "uh": "Steekproef = het onderzochte deel van de groep."
-       },
-       {
-        "v": "Waarom is een grotere steekproef meestal beter?",
-        "o": [
-         "Omdat het resultaat dan betrouwbaarder is",
-         "Omdat je dan minder hoeft te meten",
-         "Omdat de validiteit dan verdwijnt",
-         "Omdat de invloed van toeval dan juist groter wordt"
-        ],
-        "c": 0,
-        "d": 2,
-        "u": "Bij een grotere steekproef telt toeval minder mee, dus wordt het resultaat betrouwbaarder.",
-        "uo": [
-         "Klopt: groter is betrouwbaarder.",
-         "Je meet juist meer.",
-         "De validiteit verdwijnt niet.",
-         "Toeval wordt juist kleiner."
-        ],
-        "uh": "Grotere steekproef = betrouwbaarder."
-       },
-       {
-        "v": "Wat is een placebo?",
-        "o": [
-         "Een groep zonder deelnemers",
-         "Een nepbehandeling zonder werkzame stof",
-         "Een heel grote steekproef",
-         "Een tweede hypothese naast de eerste"
-        ],
-        "c": 1,
-        "d": 1,
-        "u": "Een placebo is een nepbehandeling zonder werkzame stof, die eruitziet als de echte behandeling.",
-        "uo": [
-         "Een placebo is geen lege groep.",
-         "Klopt: een nepbehandeling zonder werkzame stof.",
-         "Een placebo is geen steekproef.",
-         "Een placebo is geen hypothese."
-        ],
-        "uh": "Placebo = nepbehandeling zonder werkzame stof."
-       },
-       {
-        "v": "Waarom gebruik je een placebo in een medicijnonderzoek?",
-        "o": [
-         "Om de steekproef kleiner te maken",
-         "Om de hypothese te vervangen",
-         "Om het echte effect van het placebo-effect te scheiden",
-         "Om zo snel mogelijk klaar te zijn met de proef"
-        ],
-        "c": 2,
-        "d": 3,
-        "u": "Met een placebo kun je zien wat er gebeurt zonder werkzame stof, zodat je het echte effect apart kunt aantonen.",
-        "uo": [
-         "De steekproef wordt er niet kleiner van.",
-         "De hypothese blijft nodig.",
-         "Klopt: zo scheid je het echte effect van het placebo-effect.",
-         "Snelheid is niet de reden."
-        ],
-        "uh": "Placebo = echt effect scheiden van het placebo-effect."
-       },
-       {
-        "v": "Een onderzoek meet iets steeds precies hetzelfde, maar meet het verkeerde. Wat klopt er?",
-        "o": [
-         "Het is valide maar niet betrouwbaar",
-         "Het onderzoek is op allebei de punten goed",
-         "Het is allebei fout",
-         "Het is betrouwbaar maar niet valide"
-        ],
-        "c": 3,
-        "d": 3,
-        "u": "Steeds hetzelfde resultaat betekent betrouwbaar; maar het verkeerde meten betekent niet valide.",
-        "uo": [
-         "Het meet juist het verkeerde, dus niet valide.",
-         "Het is niet valide.",
-         "Het is wel betrouwbaar.",
-         "Klopt: betrouwbaar (herhaalbaar) maar niet valide."
-        ],
-        "uh": "Betrouwbaar kan zonder valide te zijn."
-       },
-       {
-        "v": "Wat is een te kleine steekproef?",
-        "o": [
-         "Een beperking van het onderzoek",
-         "Een sterk punt van het onderzoek",
-         "Een bewijs dat het klopt",
-         "De hypothese van het onderzoek"
-        ],
-        "c": 0,
-        "d": 2,
-        "u": "Een te kleine steekproef maakt de uitkomst minder betrouwbaar en is dus een beperking die je moet noemen.",
-        "uo": [
-         "Klopt: het is een beperking.",
-         "Een te kleine steekproef is geen sterk punt.",
-         "Het is geen bewijs, juist een zwakte.",
-         "Het is geen hypothese."
-        ],
-        "uh": "Te kleine steekproef = een beperking om te noemen."
-       },
-       {
-        "v": "Wat betekent een representatieve steekproef?",
-        "o": [
-         "De steekproef is zo klein mogelijk",
-         "De steekproef lijkt op de hele groep",
-         "De steekproef is een nepbehandeling",
-         "De steekproef bevat uitsluitend zieke mensen"
-        ],
-        "c": 1,
-        "d": 2,
-        "u": "Een representatieve steekproef lijkt qua samenstelling op de hele groep, zodat de conclusie voor iedereen geldt.",
-        "uo": [
-         "Klein is niet hetzelfde als representatief.",
-         "Klopt: de steekproef lijkt op de hele groep.",
-         "Dat is een placebo.",
-         "Alleen zieken is juist niet representatief."
-        ],
-        "uh": "Representatief = de steekproef lijkt op de hele groep."
-       },
-       {
-        "v": "Hoe maak je een onderzoek betrouwbaarder?",
-        "o": [
-         "Door de steekproef veel kleiner te maken",
-         "Door maar één meting te doen",
-         "Door vaker te meten en herhalen",
-         "Door de hypothese te schrappen"
-        ],
-        "c": 2,
-        "d": 2,
-        "u": "Door vaker te meten en te herhalen zie je of het resultaat steeds terugkomt, wat de betrouwbaarheid verhoogt.",
-        "uo": [
-         "Kleiner maakt het juist minder betrouwbaar.",
-         "Eén meting is minder betrouwbaar.",
-         "Klopt: vaker meten en herhalen.",
-         "De hypothese blijft nodig."
-        ],
-        "uh": "Vaker meten en herhalen = betrouwbaarder."
-       },
-       {
-        "v": "Een onderzoeker meet lengte maar wil intelligentie onderzoeken. Wat mankeert er?",
-        "o": [
-         "De betrouwbaarheid ontbreekt",
-         "De steekproef is te groot",
-         "Er is niets mis",
-         "De validiteit ontbreekt"
-        ],
-        "c": 3,
-        "d": 3,
-        "u": "Lengte meten terwijl je intelligentie wilt weten betekent dat je het verkeerde meet: de validiteit ontbreekt.",
-        "uo": [
-         "Het kan best steeds hetzelfde meten, dus betrouwbaar.",
-         "De steekproefgrootte is niet het probleem.",
-         "Er is wel iets mis: het verkeerde wordt gemeten.",
-         "Klopt: hij meet het verkeerde, dus niet valide."
-        ],
-        "uh": "Het verkeerde meten = probleem met validiteit."
-       },
-       {
-        "v": "Wat is het placebo-effect?",
-        "o": [
-         "Verbetering doordat iemand denkt behandeld te zijn",
-         "Een meetfout in het instrument",
-         "De grootte van de steekproef",
-         "Een tweede controlegroep in het onderzoek"
-        ],
-        "c": 0,
-        "d": 2,
-        "u": "Het placebo-effect is de verbetering die optreedt doordat iemand gelooft dat hij behandeld wordt.",
-        "uo": [
-         "Klopt: verbetering door het geloof in de behandeling.",
-         "Dat is een meetfout, iets anders.",
-         "Dat is de steekproefgrootte.",
-         "Dat is geen tweede controlegroep."
-        ],
-        "uh": "Placebo-effect = beter voelen door het geloof erin."
-       },
-       {
-        "v": "Welke uitspraak over betrouwbaarheid en validiteit klopt?",
-        "o": [
-         "Betrouwbaar betekent automatisch valide",
-         "Een meting kan betrouwbaar zijn zonder valide",
-         "Valide betekent automatisch betrouwbaar",
-         "Ze hebben helemaal niets met onderzoek te maken"
-        ],
-        "c": 1,
-        "d": 3,
-        "u": "Een meting kan steeds hetzelfde geven (betrouwbaar) en toch het verkeerde meten (niet valide).",
-        "uo": [
-         "Betrouwbaar is niet automatisch valide.",
-         "Klopt: betrouwbaar kan zonder valide.",
-         "Valide is niet automatisch betrouwbaar.",
-         "Ze zijn juist kern van onderzoek beoordelen."
-        ],
-        "uh": "Betrouwbaar en valide zijn niet hetzelfde."
-       },
-       {
-        "v": "Waarom noem je een te kleine steekproef als beperking?",
-        "o": [
-         "Omdat de uitkomst dan zeker klopt",
-         "Omdat de validiteit van het onderzoek dan stijgt",
-         "Omdat de uitkomst dan minder betrouwbaar is",
-         "Omdat je dan sneller klaar bent"
-        ],
-        "c": 2,
-        "d": 3,
-        "u": "Bij een kleine steekproef telt toeval zwaar mee, dus is de uitkomst minder betrouwbaar; dat is een beperking.",
-        "uo": [
-         "Klein maakt het juist onzekerder.",
-         "De validiteit stijgt er niet door.",
-         "Klopt: kleine steekproef = minder betrouwbaar.",
-         "Snelheid is niet het punt."
-        ],
-        "uh": "Kleine steekproef is een beperking (minder betrouwbaar)."
-       },
-       {
-        "v": "Wat is nauwkeurigheid van een meting?",
-        "o": [
-         "Hoe groot de steekproef is",
-         "Of je het juiste onderwerp meet",
-         "De verwachting die je van tevoren hebt opgesteld",
-         "Hoe dicht de meting bij de echte waarde ligt"
-        ],
-        "c": 3,
-        "d": 1,
-        "u": "Nauwkeurigheid geeft aan hoe dicht een meting bij de werkelijke waarde ligt.",
-        "uo": [
-         "Dat is de steekproefgrootte.",
-         "Dat is validiteit.",
-         "Dat is de hypothese.",
-         "Klopt: dicht bij de echte waarde."
-        ],
-        "uh": "Nauwkeurig = dicht bij de echte waarde."
-       },
-       {
-        "v": "Waarom krijgt de controlegroep bij een medicijnproef vaak een placebo?",
-        "o": [
-         "Zodat het verschil met de echte pil zichtbaar wordt",
-         "Zodat de steekproef kleiner wordt",
-         "Zodat je geen metingen hoeft te doen",
-         "Zodat de opgestelde hypothese helemaal verdwijnt"
-        ],
-        "c": 0,
-        "d": 3,
-        "u": "Met een placebo lijkt de controlegroep op de behandelgroep, zodat alleen de werkzame stof het verschil maakt.",
-        "uo": [
-         "Klopt: zo zie je het effect van de werkzame stof.",
-         "De steekproef wordt niet kleiner.",
-         "Meten blijft nodig.",
-         "De hypothese blijft."
-        ],
-        "uh": "Placebo maakt het effect van de werkzame stof zichtbaar."
-       },
-       {
-        "v": "Een test geeft elke keer een ander resultaat bij dezelfde persoon. Wat mankeert er?",
-        "o": [
-         "De validiteit is juist perfect",
-         "De betrouwbaarheid ontbreekt",
-         "De steekproef is te groot",
-         "Er is niets mis"
-        ],
-        "c": 1,
-        "d": 3,
-        "u": "Steeds een ander resultaat bij hetzelfde geval betekent dat de test niet reproduceerbaar en dus niet betrouwbaar is.",
-        "uo": [
-         "Je kunt niets over validiteit zeggen als het onbetrouwbaar is.",
-         "Klopt: geen herhaalbaar resultaat, dus niet betrouwbaar.",
-         "De steekproefgrootte is niet het punt.",
-         "Er is wel iets mis."
-        ],
-        "uh": "Wisselende resultaten = niet betrouwbaar."
-       },
-       {
-        "v": "Wat is reproduceerbaar?",
-        "o": [
-         "Een resultaat dat je maar één keer krijgt",
-         "Een nepbehandeling zonder stof",
-         "Een resultaat dat bij herhaling terugkomt",
-         "De grootte van de onderzochte groep mensen"
+         "als het resultaat de hypothese ondersteunt",
+         "als de onderzoeker er veel ervaring mee heeft",
+         "bij herhaling komt er ongeveer hetzelfde uit",
+         "als je een duur meetinstrument gebruikt"
         ],
         "c": 2,
         "d": 1,
-        "u": "Reproduceerbaar betekent dat je hetzelfde resultaat krijgt als je het onderzoek herhaalt.",
+        "s": 0,
+        "u": "Betrouwbaar = reproduceerbaar: herhaling geeft (bijna) dezelfde uitkomst.",
         "uo": [
-         "Eén keer is niet reproduceerbaar.",
-         "Dat is een placebo.",
-         "Klopt: terugkomend bij herhaling.",
-         "Dat is de steekproefgrootte."
+         "Koos je dat de hypothese wordt ondersteund? Of een resultaat je verwachting bevestigt, zegt niets over de betrouwbaarheid. Ook een tegenvallend resultaat kan betrouwbaar zijn.",
+         "Koos je ervaring? Ook een ervaren onderzoeker kan een onbetrouwbare meting doen. Je ziet de betrouwbaarheid pas als herhalingen overeenkomen.",
+         "Klopt: een meting is betrouwbaar als je bij herhaling, ook door iemand anders, ongeveer dezelfde uitkomst krijgt. Het resultaat is dan geen toeval.",
+         "Koos je een duur instrument? Een duur instrument kan helpen, maar zegt niet of de uitkomst herhaalbaar is. Dat blijkt uit herhalen."
         ],
-        "uh": "Reproduceerbaar = komt bij herhaling terug."
+        "uh": "Wat gebeurt er als je het opnieuw doet?"
        },
        {
-        "v": "Waarom moet een steekproef representatief zijn?",
+        "v": "Hoe vergroot je de betrouwbaarheid van een experiment?",
         "o": [
-         "Zodat de steekproef zo klein mogelijk is",
-         "Zodat je geen controlegroep nodig hebt",
-         "Zodat de validiteit van het onderzoek verdwijnt",
-         "Zodat de conclusie voor de hele groep geldt"
+         "de hypothese duidelijker formuleren",
+         "de proef herhalen en het gemiddelde nemen",
+         "minder proefdieren gebruiken zodat je overzicht houdt",
+         "alleen de metingen opschrijven die op elkaar lijken"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 0,
+        "u": "Herhalen en middelen vermindert de invloed van toeval.",
+        "uo": [
+         "Koos je de hypothese duidelijker? Dat maakt het onderzoek helderder, maar verandert niets aan hoe herhaalbaar de metingen zijn.",
+         "Klopt: door de proef vaker te doen of met meer individuen, en het gemiddelde te nemen, vallen toevallige afwijkingen weg. De uitkomst wordt betrouwbaarder.",
+         "Koos je minder proefdieren? Met minder individuen heeft toeval juist meer invloed. De betrouwbaarheid daalt dan.",
+         "Koos je alleen metingen die op elkaar lijken? Dat is metingen weglaten om een mooier resultaat te krijgen. Het maakt je onderzoek juist onbetrouwbaar."
+        ],
+        "uh": "Wat doet toeval met één meting?"
+       },
+       {
+        "v": "Welke groep heeft de betrouwbaarste metingen gedaan?",
+        "o": [
+         "groep 2",
+         "groep 1",
+         "groep 3",
+         "alle groepen zijn even betrouwbaar"
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 0,
+        "u": "Groep 2 heeft de kleinste spreiding tussen de herhalingen.",
+        "uo": [
+         "Klopt: de drie metingen van groep 2 liggen het dichtst bij elkaar (21, 22 en 21). De herhalingen komen goed overeen, dus de meting is het betrouwbaarst.",
+         "Koos je groep 1? Hun metingen lopen uiteen van 14 tot 28. Bij herhaling komen ze niet op hetzelfde uit, dus ze zijn minder betrouwbaar.",
+         "Koos je groep 3? Hun metingen lopen uiteen van 18 tot 26. Dat is meer spreiding dan bij groep 2.",
+         "Koos je even betrouwbaar? De spreiding verschilt duidelijk per groep. Hoe kleiner de spreiding, hoe betrouwbaarder."
+        ],
+        "uh": "Waar liggen de herhalingen het dichtst bij elkaar?",
+        "ctx": "Drie groepen leerlingen tellen bij dezelfde proef met waterpest elk drie keer het aantal belletjes per minuut. Groep 1: 14, 28 en 21. Groep 2: 21, 22 en 21. Groep 3: 18, 26 en 22. Alle groepen gebruiken dezelfde opstelling."
+       },
+       {
+        "v": "Waarom beschrijf je in je verslag precies hoe je de proef hebt gedaan?",
+        "o": [
+         "zodat niemand je resultaten kan controleren",
+         "zodat je verslag langer wordt",
+         "omdat de docent anders je hypothese niet snapt",
+         "zodat anderen hem kunnen herhalen"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 0,
+        "u": "Een goede werkwijze maakt het onderzoek reproduceerbaar.",
+        "uo": [
+         "Koos je dat niemand kan controleren? Het is juist andersom: je beschrijft de werkwijze zodat anderen je resultaten kunnen controleren.",
+         "Koos je een langer verslag? Lengte is geen doel. Het gaat erom dat iemand anders precies kan nadoen wat jij deed.",
+         "Koos je de hypothese? De hypothese staat los van de werkwijze. De werkwijze is nodig voor herhaling.",
+         "Klopt: met een precieze werkwijze kunnen anderen je proef herhalen. Komen zij op hetzelfde uit, dan is je resultaat betrouwbaar."
+        ],
+        "uh": "Wie moet de proef kunnen nadoen?"
+       },
+       {
+        "v": "Wanneer is een meting valide?",
+        "o": [
+         "als je de meting vaak herhaalt",
+         "als de meting snel klaar is",
+         "als je meet wat je wilt meten",
+         "als het resultaat een rond getal is"
+        ],
+        "c": 2,
+        "d": 1,
+        "s": 1,
+        "u": "Valide = je meet echt de grootheid waar je onderzoeksvraag over gaat.",
+        "uo": [
+         "Koos je vaak herhalen? Herhalen maakt een meting betrouwbaarder, maar niet valide. Je kunt heel precies het verkeerde meten.",
+         "Koos je snel klaar? Snelheid zegt niets over de validiteit. Een snelle meting kan iets heel anders meten dan je wilt.",
+         "Klopt: een meting is valide als hij echt meet wat je wilt weten. Wil je de conditie meten, dan moet je iets meten dat conditie weergeeft, niet bijvoorbeeld lengte.",
+         "Koos je een rond getal? Of een uitkomst rond is, zegt niets over wat je meet."
+        ],
+        "uh": "Meet je het juiste?"
+       },
+       {
+        "v": "Waarom is het aantal blaadjes geen valide maat voor de groei van gras?",
+        "o": [
+         "blaadjes tellen kost te veel tijd",
+         "grassprieten kunnen langer worden zonder nieuwe blaadjes",
+         "gras heeft helemaal geen blaadjes",
+         "blaadjes zijn niet groen genoeg om te tellen"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 1,
+        "u": "Groei = toename in lengte of massa; het aantal blaadjes meet dat slecht.",
+        "uo": [
+         "Koos je te veel tijd? Ook als tellen snel ging, zou het nog steeds de groei slecht meten. Het gaat om wat je meet, niet hoe lang het duurt.",
+         "Klopt: gras groeit vooral doordat bestaande sprieten langer worden. Het aantal blaadjes verandert dan nauwelijks. Daarom meet het niet goed wat je wilt weten: de groei.",
+         "Koos je geen blaadjes? Grassprieten zijn bladeren. Het probleem is dat hun aantal weinig zegt over hoeveel het gras groeit.",
+         "Koos je niet groen genoeg? Kleur heeft niets te maken met validiteit. De vraag is of je meet wat je wilt meten."
+        ],
+        "uh": "Hoe groeit gras vooral?"
+       },
+       {
+        "v": "Waarom is de thermometer in de zon geen valide meting van de luchttemperatuur?",
+        "o": [
+         "de zon warmt de thermometer zelf op",
+         "de thermometer meet bij zon altijd te weinig",
+         "luchttemperatuur kun je niet meten",
+         "een thermometer werkt alleen binnen"
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 1,
+        "u": "In de zon meet je de opwarming van het instrument, niet van de lucht.",
+        "uo": [
+         "Klopt: in de zon warmt het zonlicht de thermometer zelf op. Je meet dan een hogere temperatuur dan die van de lucht. Daarom staat een thermometer voor luchttemperatuur in de schaduw, in een weerhut.",
+         "Koos je te weinig? De thermometer in de zon geeft juist een te hoge waarde, 31 tegen 24 °C.",
+         "Koos je dat luchttemperatuur niet te meten is? Dat kan wel, met een thermometer in de schaduw en met lucht die er goed langs stroomt.",
+         "Koos je alleen binnen? Thermometers werken overal. Het gaat erom waar je hem neerzet."
+        ],
+        "uh": "Wat warmt de zon op?",
+        "ctx": "Twee leerlingen meten op een zonnige dag de luchttemperatuur op het schoolplein. Thijs hangt zijn thermometer in de volle zon tegen een muur, Amira hangt die van haar in een witte weerhut in de schaduw. Thijs meet 31 °C, Amira 24 °C. Het KNMI geeft op dat moment 23,8 °C voor die plaats."
+       },
+       {
+        "v": "Welke meting is het meest valide voor de conditie van de leerlingen?",
+        "o": [
+         "hoeveel uur per week een leerling zegt te sporten",
+         "hoeveel kilo een leerling weegt",
+         "hoe lang een leerling is",
+         "hoe snel de hartslag na inspanning daalt"
         ],
         "c": 3,
         "d": 3,
-        "u": "Als de steekproef op de hele groep lijkt, geldt de conclusie ook voor die hele groep.",
+        "s": 1,
+        "u": "Herstel van de hartslag hangt direct samen met conditie.",
         "uo": [
-         "Klein is niet het doel.",
-         "Een controlegroep kan nog steeds nodig zijn.",
-         "De validiteit verdwijnt niet.",
-         "Klopt: dan geldt de conclusie breed."
+         "Koos je opgegeven sporturen? Wat iemand zegt, kan afwijken van wat hij doet, en uren zeggen niets over hoe zwaar hij sport. Het meet conditie maar indirect.",
+         "Koos je gewicht? Gewicht zegt weinig over conditie: een zware sporter kan een uitstekende conditie hebben. Het meet niet wat je wilt meten.",
+         "Koos je lengte? Lengte heeft niets met conditie te maken. Die meting is niet valide.",
+         "Klopt: hoe beter je conditie, hoe sneller je hartslag na inspanning weer daalt. Dat meet dus echt de conditie."
         ],
-        "uh": "Representatief = conclusie geldt voor de hele groep."
+        "uh": "Wat verandert direct als je conditie beter wordt?",
+        "ctx": "Een gymdocent wil onderzoeken of de conditie van leerlingen verbetert na acht weken extra hardlopen. Hij twijfelt welke meting hij voor en na de acht weken gaat doen. Hij heeft een weegschaal, een meetlat, een hartslagmeter en een vragenlijst over sport."
        },
        {
-        "v": "Wat is een meetfout?",
+        "v": "Welk probleem heeft deze meting?",
         "o": [
-         "Een afwijking tussen meting en echte waarde",
-         "De grootte van de steekproef",
-         "Een nepbehandeling zonder werkzame stof erin",
-         "De hypothese van het onderzoek"
-        ],
-        "c": 0,
-        "d": 1,
-        "u": "Een meetfout is het verschil tussen wat je meet en de werkelijke waarde.",
-        "uo": [
-         "Klopt: het verschil met de echte waarde.",
-         "Dat is de steekproefgrootte.",
-         "Dat is een placebo.",
-         "Dat is de hypothese."
-        ],
-        "uh": "Meetfout = verschil tussen meting en echte waarde."
-       },
-       {
-        "v": "Een onderzoek is goed herhaalbaar en meet precies het juiste. Hoe noem je dat?",
-        "o": [
-         "Alleen betrouwbaar",
-         "Zowel betrouwbaar als valide",
-         "Het onderzoek is alleen valide en verder niks",
-         "Geen van beide"
-        ],
-        "c": 1,
-        "d": 3,
-        "u": "Herhaalbaar betekent betrouwbaar en het juiste meten betekent valide, dus het is allebei.",
-        "uo": [
-         "Het is meer dan alleen betrouwbaar.",
-         "Klopt: allebei goed.",
-         "Het is meer dan alleen valide.",
-         "Het voldoet juist aan beide."
-        ],
-        "uh": "Herhaalbaar en het juiste = betrouwbaar en valide."
-       },
-       {
-        "v": "Waarom is een enkele meting risicovol voor een conclusie?",
-        "o": [
-         "Omdat één enkele meting altijd meteen klopt",
-         "Omdat de validiteit dan stijgt",
-         "Omdat toeval de uitkomst kan vertekenen",
-         "Omdat de steekproef dan groot is"
+         "helder water is altijd ongezond",
+         "helderheid kun je helemaal niet meten",
+         "helderheid zegt maar een deel over de gezondheid",
+         "het meer moet daarvoor eerst worden leeggepompt"
         ],
         "c": 2,
         "d": 2,
-        "u": "Een enkele meting kan toevallig afwijken, dus is een conclusie op één meting onbetrouwbaar.",
+        "s": 1,
+        "u": "Eén grootheid meet een breed begrip als gezondheid maar gedeeltelijk.",
         "uo": [
-         "Eén meting hoeft niet te kloppen.",
-         "De validiteit stijgt er niet door.",
-         "Klopt: toeval kan één meting vertekenen.",
-         "Eén meting maakt de steekproef juist klein."
+         "Koos je altijd ongezond? Helder water is vaak juist een goed teken. Maar het zegt niet alles: ook een meer zonder leven kan helder zijn.",
+         "Koos je niet meetbaar? Helderheid kun je juist goed meten, met een witte schijf die je laat zakken. Het probleem is dat het maar een deel van de gezondheid meet.",
+         "Klopt: een gezond meer hangt af van veel dingen, zoals zuurstof, soorten en voedingsstoffen. Helderheid meet daar maar een klein deel van. Het meet dus niet goed wat de onderzoeker wil weten.",
+         "Koos je leegpompen? Daar is geen sprake van. Het gaat erom dat één meting een breed begrip als gezondheid niet goed weergeeft."
         ],
-        "uh": "Eén meting = te veel kans op toeval."
+        "uh": "Wat bepaalt de gezondheid van een meer allemaal?",
+        "ctx": "Een waterschap wil weten hoe gezond een meer is. Een onderzoeker stelt voor om alleen de helderheid van het water te meten, met een witte schijf die hij laat zakken tot hij hem niet meer ziet. Dat is snel en goedkoop."
        },
        {
-        "v": "Wat is vertekening in een onderzoek?",
+        "v": "Een weegschaal geeft steeds precies 2 kg te veel aan. Hoe noem je zijn metingen?",
         "o": [
-         "Een grote steekproef van veel deelnemers",
-         "Een nepbehandeling zonder stof",
-         "Een correcte meetwaarde",
-         "Een systematische scheefheid in de resultaten"
+         "valide maar niet betrouwbaar",
+         "betrouwbaar maar niet valide",
+         "betrouwbaar en valide",
+         "niet betrouwbaar en niet valide"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 2,
+        "u": "Steeds dezelfde uitkomst = betrouwbaar; steeds verkeerd = niet valide.",
+        "uo": [
+         "Koos je valide maar niet betrouwbaar? Het is andersom: de uitkomst is herhaalbaar (betrouwbaar), maar steeds te hoog (niet valide).",
+         "Klopt: de weegschaal geeft bij herhaling steeds dezelfde waarde, dus de metingen zijn betrouwbaar. Maar die waarde klopt niet met de echte massa, dus de meting is niet valide.",
+         "Koos je beide? De waarde is steeds 2 kg te hoog. Je meet dus niet de juiste massa. Valide is hij niet.",
+         "Koos je geen van beide? De weegschaal geeft wel steeds dezelfde afwijking. Herhaling geeft hetzelfde resultaat, dus hij is betrouwbaar."
+        ],
+        "uh": "Herhaalbaar? En juist?"
+       },
+       {
+        "v": "Wat is er aan de hand met de metingen van Jesse?",
+        "o": [
+         "ze zijn betrouwbaar, maar niet valide",
+         "ze zijn valide, maar niet betrouwbaar",
+         "ze zijn betrouwbaar en valide",
+         "de metingen zijn alleen onbetrouwbaar door toeval"
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 2,
+        "u": "Herhaalbaar (steeds 48) maar hij meet niet wat hij wil (lengte van de hele plant).",
+        "uo": [
+         "Klopt: Jesse krijgt steeds dezelfde waarde, dus zijn meting is betrouwbaar. Maar hij meet vanaf de rand van de pot in plaats van vanaf de grond. Hij meet dus niet de lengte van de plant: niet valide.",
+         "Koos je valide maar niet betrouwbaar? Zijn metingen komen steeds op 48 mm uit, dus ze zijn juist betrouwbaar. Het probleem is wat hij meet.",
+         "Koos je beide? Jesse meet niet de hele plant, want hij begint bij de potrand. Dus valide is zijn meting niet.",
+         "Koos je toeval? Toeval geeft wisselende uitkomsten. Jesse krijgt steeds hetzelfde. Het probleem is een vaste fout in de manier van meten."
+        ],
+        "uh": "Herhaalbaar? En meet hij de juiste lengte?",
+        "ctx": "Jesse meet vijf keer de lengte van een kiemplantje met een liniaal. Hij legt de liniaal steeds op de rand van de pot, die 12 mm boven de grond uitsteekt, en meet tot de top van het plantje. Hij vindt steeds 48 mm. De echte lengte van het plantje vanaf de grond is 60 mm."
+       },
+       {
+        "v": "Wat maakt een meting wel betrouwbaarder, maar niet valider?",
+        "o": [
+         "meten op de goede plek",
+         "een betere grootheid kiezen om te meten",
+         "een meetinstrument goed ijken",
+         "dezelfde meting vaker herhalen"
         ],
         "c": 3,
         "d": 2,
-        "u": "Vertekening is een systematische fout die de resultaten steeds dezelfde kant op scheeftrekt.",
+        "s": 2,
+        "u": "Herhalen verkleint toeval, maar een verkeerde grootheid blijft verkeerd.",
         "uo": [
-         "Dat is de steekproefgrootte.",
-         "Dat is een placebo.",
-         "Vertekening is juist geen correcte waarde.",
-         "Klopt: een systematische scheefheid."
+         "Koos je de goede plek? Een thermometer in de schaduw in plaats van in de zon meet beter de luchttemperatuur. Dat verhoogt de validiteit.",
+         "Koos je een betere grootheid? Dat verhoogt juist de validiteit: je meet dan beter wat je wilt weten.",
+         "Koos je ijken? IJken haalt een vaste afwijking weg, zoals bij een weegschaal die 2 kg te veel aangeeft. Dat maakt de meting valider.",
+         "Klopt: als je steeds hetzelfde meet, wordt je gemiddelde betrouwbaarder. Maar als je de verkeerde grootheid meet, blijft dat zo, hoe vaak je ook herhaalt."
         ],
-        "uh": "Vertekening = systematische scheefheid."
+        "uh": "Wat lost alleen toeval op?"
        },
        {
-        "v": "Welke maatregel verhoogt vooral de betrouwbaarheid?",
+        "v": "Welke conclusie past bij deze dartborden?",
         "o": [
-         "De meting vaak herhalen",
-         "Het verkeerde onderwerp meten",
-         "De steekproef verkleinen",
-         "De hypothese weglaten"
+         "bord B is valide en betrouwbaar",
+         "bord A is valide maar niet betrouwbaar",
+         "bord C is betrouwbaar en valide",
+         "bord D is betrouwbaar maar niet valide"
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 2,
+        "u": "Dicht bij elkaar = betrouwbaar; in het midden = valide.",
+        "uo": [
+         "Koos je bord B? De pijlen zitten dicht bij elkaar, maar naast het midden. Dat is betrouwbaar, maar niet valide.",
+         "Koos je bord A? Daar zitten de pijlen verspreid en niet in het midden: niet betrouwbaar en niet valide.",
+         "Klopt: bij bord C zitten de pijlen dicht bij elkaar én in het midden. De worpen zijn herhaalbaar en raken wat ze moeten raken: betrouwbaar en valide.",
+         "Koos je bord D? De pijlen zitten verspreid rond het midden. Gemiddeld goed, maar niet herhaalbaar: niet betrouwbaar."
+        ],
+        "uh": "Dicht bij elkaar? En in het midden?",
+        "ctx": "Een docent laat vier dartborden zien. Bord A: pijlen verspreid over het hele bord. Bord B: pijlen dicht bij elkaar, maar linksboven, ver van het midden. Bord C: pijlen dicht bij elkaar in het midden. Bord D: pijlen verspreid rondom het midden. Het midden staat voor de echte waarde."
+       },
+       {
+        "v": "Waarom onderzoek je meestal een steekproef in plaats van de hele populatie?",
+        "o": [
+         "een steekproef geeft altijd een exact antwoord",
+         "de hele populatie onderzoeken kost te veel tijd en geld",
+         "de hele populatie mag je nooit onderzoeken",
+         "een steekproef heeft geen spreiding"
+        ],
+        "c": 1,
+        "d": 1,
+        "s": 3,
+        "u": "Een steekproef is een deel van de populatie dat je onderzoekt om iets over het geheel te zeggen.",
+        "uo": [
+         "Koos je exact antwoord? Een steekproef geeft een schatting. Er zit altijd wat onzekerheid in.",
+         "Klopt: alle individuen van een populatie onderzoeken is vaak onmogelijk of veel te duur. Je onderzoekt een deel, de steekproef, en trekt daaruit een conclusie over het geheel.",
+         "Koos je nooit onderzoeken? Het mag wel, als het kan. Bij een kleine populatie onderzoek je soms iedereen.",
+         "Koos je geen spreiding? Ook in een steekproef verschillen individuen van elkaar. Er is dus wel spreiding."
+        ],
+        "uh": "Kun je alle vissen in de Noordzee meten?"
+       },
+       {
+        "v": "Waarom is een grotere steekproef betrouwbaarder?",
+        "o": [
+         "toevallige uitschieters hebben minder invloed",
+         "in een grotere steekproef zitten geen uitschieters",
+         "een grotere steekproef is altijd representatief",
+         "hoe groter de steekproef, hoe groter de spreiding van het gemiddelde"
         ],
         "c": 0,
         "d": 2,
-        "u": "Vaak herhalen laat zien of het resultaat stabiel is, wat de betrouwbaarheid verhoogt.",
+        "s": 3,
+        "u": "Bij veel metingen middelen toevallige afwijkingen uit.",
         "uo": [
-         "Klopt: herhalen verhoogt de betrouwbaarheid.",
-         "Het verkeerde meten raakt de validiteit, niet positief.",
-         "Verkleinen maakt het minder betrouwbaar.",
-         "De hypothese blijft nodig."
+         "Klopt: in een kleine steekproef kan één uitschieter het gemiddelde sterk verschuiven. In een grote steekproef heeft één afwijkend individu weinig invloed. Het gemiddelde ligt dan dichter bij de echte waarde.",
+         "Koos je geen uitschieters? Ook in een grote steekproef zitten uitschieters. Ze hebben alleen minder invloed op het gemiddelde.",
+         "Koos je altijd representatief? Een grote steekproef uit één hoek van de populatie is nog steeds niet representatief. Grootte en representativiteit zijn twee dingen.",
+         "Koos je grotere spreiding? Het is andersom: hoe groter de steekproef, hoe kleiner de spreiding van het gemiddelde."
         ],
-        "uh": "Herhalen verhoogt de betrouwbaarheid."
+        "uh": "Wat doet één uitschieter bij 5 metingen en bij 500?"
+       },
+       {
+        "v": "Waarom is de conclusie van Bas niet betrouwbaar?",
+        "o": [
+         "slakken zijn altijd even groot",
+         "hij heeft de verkeerde soort slakken gemeten",
+         "hij had de slakken moeten wegen in plaats van meten",
+         "zijn steekproef is te klein"
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 3,
+        "u": "Met vier slakken per plek bepaalt toeval de uitkomst.",
+        "uo": [
+         "Koos je altijd even groot? Slakken verschillen juist in grootte. Daardoor heb je veel slakken nodig voor een betrouwbaar gemiddelde.",
+         "Koos je de verkeerde soort? Hij meet op beide plekken dezelfde soort, de huisjesslak. Dat is juist goed.",
+         "Koos je wegen? Lengte van het huisje is een prima maat. Het probleem is het kleine aantal slakken.",
+         "Klopt: Bas heeft maar vier slakken per plek gemeten. Het verschil van 2 mm kan door toeval komen. Met tientallen slakken per plek kan hij een betrouwbaardere conclusie trekken."
+        ],
+        "uh": "Hoeveel slakken mat hij per plek?",
+        "ctx": "Bas wil weten of huisjesslakken in de duinen groter zijn dan in een bos. Hij meet in de duinen vier slakken met een gemiddelde huisjesbreedte van 22 mm en in het bos vier slakken met een gemiddelde van 20 mm. Hij concludeert dat slakken in de duinen groter zijn."
+       },
+       {
+        "v": "Wat gebeurt er met het gemiddelde van een steekproef als je hem groter maakt?",
+        "o": [
+         "het wordt altijd lager",
+         "het wordt altijd hoger",
+         "het komt dichter bij het echte gemiddelde",
+         "het verandert dan niet meer, ook niet een beetje"
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 3,
+        "u": "Grotere steekproef = betere schatting van het populatiegemiddelde.",
+        "uo": [
+         "Koos je altijd lager? Er is geen vaste richting. Het gemiddelde schuift naar de echte waarde toe.",
+         "Koos je altijd hoger? Het gemiddelde kan hoger of lager uitvallen. Het komt vooral dichter bij de echte waarde.",
+         "Klopt: hoe groter de steekproef, hoe dichter het gemiddelde in de buurt komt van het gemiddelde van de hele populatie. De schatting wordt nauwkeuriger.",
+         "Koos je niet meer veranderen? Bij elke extra meting verandert het gemiddelde een beetje, maar steeds minder."
+        ],
+        "uh": "Denk aan een betere schatting."
+       },
+       {
+        "v": "Welke steekproef geeft de betrouwbaarste schatting van de lengte van eikenbladeren in een bos?",
+        "o": [
+         "10 bladeren",
+         "200 bladeren",
+         "1 heel groot blad",
+         "20 bladeren van één tak"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 3,
+        "u": "Veel metingen verspreid over het bos.",
+        "uo": [
+         "Koos je 10 bladeren? Bij tien bladeren kan één heel klein of groot blad het gemiddelde flink verschuiven. Dat is minder betrouwbaar.",
+         "Klopt: met 200 bladeren hebben toevallige uitschieters weinig invloed op het gemiddelde. Als ze ook verspreid over het bos geplukt zijn, is de schatting betrouwbaar.",
+         "Koos je één groot blad? Eén blad zegt niets over het gemiddelde. Bovendien is het een uitschieter.",
+         "Koos je 20 bladeren van één tak? Bladeren van één tak lijken sterk op elkaar en zeggen weinig over het hele bos. Ze zijn bovendien niet representatief."
+        ],
+        "uh": "Hoe meer metingen, hoe minder invloed van toeval."
+       },
+       {
+        "v": "Wanneer is een steekproef representatief?",
+        "o": [
+         "als hij lijkt op de hele populatie",
+         "als hij heel groot is",
+         "als alle deelnemers vrijwilligers zijn",
+         "als hij uit één klas komt"
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 4,
+        "u": "Representatief = de verhoudingen in de steekproef lijken op die in de populatie.",
+        "uo": [
+         "Klopt: een representatieve steekproef lijkt in samenstelling op de hele populatie, bijvoorbeeld in leeftijd, geslacht en leefgebied. Dan kun je de uitkomst op de populatie toepassen.",
+         "Koos je heel groot? Ook een grote steekproef kan scheef zijn, bijvoorbeeld als iedereen uit dezelfde stad komt. Grootte is iets anders dan representativiteit.",
+         "Koos je vrijwilligers? Vrijwilligers zijn vaak juist anders dan de rest, bijvoorbeeld meer geïnteresseerd of gezonder. Dat maakt een steekproef vaak minder representatief.",
+         "Koos je één klas? Eén klas lijkt meestal niet op de hele school of het hele land. Zo’n steekproef is niet representatief."
+        ],
+        "uh": "Lijkt de groep op het geheel?"
+       },
+       {
+        "v": "Waarom is deze steekproef niet representatief voor alle leerlingen van de school?",
+        "o": [
+         "de vragenlijst ging over sport",
+         "er deden te veel leerlingen mee",
+         "de leerlingen mochten zelf hun antwoord geven",
+         "alleen sportklassen deden mee"
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 4,
+        "u": "Sportklassen bewegen meer dan gemiddeld; ze lijken niet op de hele school.",
+        "uo": [
+         "Koos je dat de vragenlijst over sport ging? Dat was juist het onderwerp. Het probleem is dat alleen sportieve leerlingen zijn gevraagd.",
+         "Koos je te veel leerlingen? 120 leerlingen is een redelijke steekproef. Het probleem is wie er meededen, niet hoeveel.",
+         "Koos je zelf antwoord geven? Bij een vragenlijst geef je altijd zelf je antwoord. Dat is niet de reden dat de steekproef scheef is.",
+         "Klopt: leerlingen uit sportklassen bewegen waarschijnlijk meer dan andere leerlingen. De steekproef lijkt dus niet op de hele school en het gemiddelde valt te hoog uit."
+        ],
+        "uh": "Wie zitten er in een sportklas?",
+        "ctx": "Een leerling wil weten hoeveel uur per week leerlingen van haar school bewegen. Ze laat de vragenlijst invullen door 120 leerlingen uit de vier sportklassen van de school. Gemiddeld bewegen zij 9 uur per week. Ze concludeert dat leerlingen van haar school gemiddeld 9 uur per week bewegen."
+       },
+       {
+        "v": "Hoe kan de onderzoeker de steekproef representatiever maken?",
+        "o": [
+         "meer vissen vangen op dezelfde plek",
+         "alleen nog grotere netten gebruiken op dezelfde plek",
+         "op verschillende plekken in het meer vissen",
+         "alleen de grootste vissen meten"
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 4,
+        "u": "Spreid de vangsten over het hele leefgebied, zodat alle delen van de populatie meetellen.",
+        "uo": [
+         "Koos je meer vissen op dezelfde plek? Een grotere steekproef helpt tegen toeval, maar niet als hij uit één deel van de populatie komt.",
+         "Koos je grotere netten op dezelfde plek? Dan vang je meer vissen, maar nog steeds uit hetzelfde deel van het meer. De steekproef blijft scheef.",
+         "Klopt: op één plek bij de oever leven vooral jonge vissen. Door op verschillende plekken en dieptes te vissen, lijkt de steekproef meer op de hele populatie.",
+         "Koos je de grootste vissen? Dan meet je opzettelijk een deel van de populatie. Dat maakt de steekproef nog minder representatief."
+        ],
+        "uh": "Waar leven welke vissen?",
+        "ctx": "Een onderzoeker wil de gemiddelde lengte van baarzen in een meer weten. Hij vangt 200 baarzen met een net, steeds op dezelfde ondiepe plek bij de oever. Uit ander onderzoek is bekend dat jonge baarzen vooral in ondiep water bij de oever leven en oudere, grotere baarzen in dieper water."
+       },
+       {
+        "v": "Waarom kiezen onderzoekers deelnemers vaak willekeurig, bijvoorbeeld door loting?",
+        "o": [
+         "zo hoeven ze minder deelnemers te vragen",
+         "zo komt elke groep eerlijk aan bod",
+         "zo krijgen ze alleen gezonde deelnemers",
+         "zo weten de deelnemers welke pil ze krijgen"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 4,
+        "u": "Willekeurig kiezen voorkomt een scheve steekproef.",
+        "uo": [
+         "Koos je minder deelnemers? Loting verandert het aantal niet. Het zorgt ervoor dat de steekproef niet scheef wordt.",
+         "Klopt: als iedereen evenveel kans heeft om gekozen te worden, komen alle soorten mensen ongeveer in de goede verhouding in de steekproef. Die wordt dan representatief.",
+         "Koos je alleen gezonde deelnemers? Dan zou de steekproef juist scheef zijn. Loting kiest gezonde en minder gezonde mensen door elkaar.",
+         "Koos je weten welke pil? Loting gaat over wie meedoet of in welke groep komt. Het zegt niet dat de deelnemers weten welke pil ze krijgen."
+        ],
+        "uh": "Wie maakt kans om gekozen te worden?"
+       },
+       {
+        "v": "Wat bedoelen onderzoekers met het placebo-effect?",
+        "o": [
+         "mensen voelen zich beter door de verwachting",
+         "een medicijn werkt sneller dan verwacht",
+         "een pil werkt alleen als je hem met water inneemt",
+         "mensen worden zieker door een echt medicijn"
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 5,
+        "u": "Placebo-effect: verbetering door de verwachting, niet door de werkzame stof.",
+        "uo": [
+         "Klopt: mensen die denken dat ze een medicijn krijgen, voelen zich soms al beter, ook als de pil geen werkzame stof bevat. Dat effect komt door hun verwachting.",
+         "Koos je sneller dan verwacht? Dat gaat over de werking van een echt medicijn. Het placebo-effect gaat over verbetering zonder werkzame stof.",
+         "Koos je met water innemen? Dat is een gebruiksaanwijzing. Het placebo-effect gaat over verwachting.",
+         "Koos je zieker worden? Dat is een bijwerking. Het placebo-effect is verbetering door alleen de verwachting."
+        ],
+        "uh": "Wat doet een nep-pil?"
+       },
+       {
+        "v": "Waarom weten de deelnemers niet of ze het echte middel of een placebo krijgen?",
+        "o": [
+         "omdat het verboden is om het te vertellen",
+         "omdat de pillen anders duurder worden",
+         "zodat ze sneller beter worden",
+         "anders beïnvloedt hun verwachting de uitkomst"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 5,
+        "u": "Blind onderzoek: verwachting is in beide groepen gelijk.",
+        "uo": [
+         "Koos je verboden? Het is geen wet, maar een keuze voor een eerlijk onderzoek. Na afloop horen ze wel in welke groep ze zaten.",
+         "Koos je duurder? De prijs van de pillen heeft er niets mee te maken. Het gaat om een eerlijke vergelijking.",
+         "Koos je sneller beter? Het doel is niet dat mensen sneller beter worden, maar dat je het effect van het middel eerlijk kunt meten.",
+         "Klopt: als de deelnemers weten dat ze een placebo krijgen, verwachten ze geen verbetering. Dan is de verwachting in de groepen niet gelijk. Door het geheim te houden, verschilt alleen de werkzame stof."
+        ],
+        "uh": "Wat zou er met hun verwachting gebeuren?"
+       },
+       {
+        "v": "Welke conclusie past bij de resultaten van dit onderzoek?",
+        "o": [
+         "de verbetering komt helemaal door het middel",
+         "het middel werkt niet, want de placebogroep verbeterde ook",
+         "het middel werkt, maar een deel komt door verwachting",
+         "een placebo werkt beter dan het echte middel"
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 5,
+        "u": "Verschil middel – placebo (60 − 35 = 25 procentpunt) is het effect van de stof.",
+        "uo": [
+         "Koos je helemaal door het middel? Dan vergeet je de placebogroep: ook daar verbeterde 35%. Niet alle verbetering komt dus door de stof.",
+         "Koos je dat het middel niet werkt? De middelgroep verbeterde duidelijk vaker dan de placebogroep. Dat verschil laat zien dat de stof werkt.",
+         "Klopt: in de placebogroep verbeterde 35%, door verwachting en doordat klachten vanzelf overgaan. In de middelgroep 60%. Het verschil van 25 procentpunt komt door de werkzame stof.",
+         "Koos je dat placebo beter werkt? De placebogroep verbeterde minder vaak: 35% tegen 60%."
+        ],
+        "uh": "Vergelijk de drie groepen.",
+        "ctx": "In een onderzoek naar een middel tegen slapeloosheid krijgen drie groepen van 100 mensen vier weken lang: (1) het middel, (2) een placebo, (3) niets. Na vier weken slaapt in groep 1 60% beter, in groep 2 35% en in groep 3 15%. Niemand in groep 1 en 2 weet welke pil hij kreeg."
+       },
+       {
+        "v": "Waarom heeft de onderzoeker ook een groep die niets krijgt?",
+        "o": [
+         "om de placebogroep groter te maken",
+         "om te zien hoeveel vanzelf beter wordt",
+         "omdat er niet genoeg pillen waren voor iedereen",
+         "om te testen of de pillen lekker smaken"
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 5,
+        "u": "Zonder behandeling zie je het natuurlijke verloop; placebo – niets = placebo-effect.",
+        "uo": [
+         "Koos je de placebogroep groter maken? Dit is een aparte groep die geen pil krijgt. Zo kun je het natuurlijke verloop meten.",
+         "Klopt: in de groep die niets krijgt, zie je hoeveel mensen vanzelf beter gaan slapen. Het verschil tussen die groep en de placebogroep is het placebo-effect: 35 − 15 = 20 procentpunt.",
+         "Koos je te weinig pillen? De onderzoeker kiest bewust voor een groep zonder behandeling. Het is een vergelijking, geen tekort.",
+         "Koos je de smaak? Smaak heeft niets met de onderzoeksvraag te maken. Deze groep laat zien wat er zonder behandeling gebeurt."
+        ],
+        "uh": "Wat gebeurt er zonder enige behandeling?",
+        "ctx": "Bij hetzelfde onderzoek naar een middel tegen slapeloosheid sliep na vier weken in de groep met het middel 60% beter, in de placebogroep 35% en in de groep zonder behandeling 15%. Slapeloosheid gaat bij een deel van de mensen na een paar weken vanzelf over."
        }
       ],
       "oe": [
        {
-        "vraag": "Leg het verschil uit tussen betrouwbaarheid en validiteit van een onderzoek.",
-        "antwoord": "Betrouwbaarheid gaat over of je bij herhaling steeds hetzelfde resultaat krijgt: is de uitkomst reproduceerbaar? Validiteit gaat over of je meet wat je echt wilt meten: meet je het juiste? Een onderzoek kan betrouwbaar zijn (steeds hetzelfde) maar toch niet valide (het meet het verkeerde)."
+        "bron": "Examenstijl",
+        "ctx": "Een leerling meet de hartslag van een watervlo onder de microscoop. Ze telt vijftien seconden lang en vermenigvuldigt met vier. Ze doet dit één keer bij 15 °C en één keer bij 25 °C en vindt 240 en 320 slagen per minuut. Haar docent zegt dat haar conclusie niet betrouwbaar is.",
+        "v": "Leg uit waarom de conclusie niet betrouwbaar is en geef twee verbeteringen die de betrouwbaarheid vergroten.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Ze heeft maar één meting per temperatuur bij één watervlo gedaan; toeval (tel- of meetfout, een afwijkende watervlo) kan de uitkomst bepalen (1p). Verbetering 1: de meting per temperatuur meerdere keren herhalen en het gemiddelde nemen (1p). Verbetering 2: meer watervlooien gebruiken / langer tellen dan vijftien seconden (1p)."
        },
        {
-        "vraag": "Leg uit waarom een grotere en representatieve steekproef een onderzoek betrouwbaarder maakt.",
-        "antwoord": "In een grotere steekproef telt het toeval van losse gevallen minder zwaar mee, dus komt de gemiddelde uitkomst dichter bij de werkelijkheid. Als de steekproef bovendien representatief is, lijkt hij op de hele groep, zodat de conclusie ook voor die hele groep geldt."
+        "bron": "Examenstijl",
+        "ctx": "Om te onderzoeken of een dieet helpt om af te vallen, wegen onderzoekers 50 deelnemers voor en na acht weken. Ze gebruiken hiervoor een weegschaal die, zo blijkt achteraf, steeds 1,5 kg te weinig aangeeft. Alle deelnemers zijn met dezelfde weegschaal gewogen.",
+        "v": "Leg uit of de afwijking van de weegschaal invloed heeft op de betrouwbaarheid, en of het gemeten gewichtsverlies valide is.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "De weegschaal geeft bij herhaling steeds dezelfde (te lage) waarde, dus de metingen zijn betrouwbaar (1p). De gemeten gewichten zelf zijn niet valide, want ze kloppen niet met de echte massa (1p). Het gewichtsverlies (verschil voor en na) is wel valide, omdat de vaste afwijking van 1,5 kg in beide metingen zit en wegvalt (1p)."
        },
        {
-        "vraag": "Leg uit waarom je bij een medicijnonderzoek een placebo gebruikt.",
-        "antwoord": "De controlegroep krijgt een placebo: een nepbehandeling zonder werkzame stof die eruitziet als het echte medicijn. Zo kun je het echte effect van het medicijn scheiden van het placebo-effect, de verbetering die alleen ontstaat doordat mensen denken dat ze behandeld worden."
+        "bron": "Examenstijl",
+        "ctx": "Een onderzoeker wil weten hoeveel procent van de Nederlanders genoeg groente eet. Hij zet een vragenlijst op de website van een vegetarisch kookblad. 2400 lezers vullen de lijst in. Van hen eet 78% genoeg groente. Uit landelijke cijfers blijkt dat ongeveer 30% van de Nederlanders genoeg groente eet.",
+        "v": "Leg uit waarom het resultaat van 78% zo sterk afwijkt, ook al is de steekproef groot, en beschrijf hoe een representatieve steekproef verkregen kan worden.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "De steekproef is niet representatief: lezers van een vegetarisch kookblad eten waarschijnlijk meer groente dan gemiddeld (1p). Een grote steekproef helpt niet als hij uit een scheve groep komt (1p). Representatief: willekeurig mensen kiezen uit de hele bevolking, verdeeld over leeftijd, geslacht en woonplaats, bijvoorbeeld via de gemeentelijke basisadministratie (1p)."
        },
        {
-        "vraag": "Een test geeft bij dezelfde persoon steeds een andere uitkomst. Leg uit wat er met de betrouwbaarheid aan de hand is.",
-        "antwoord": "Als een test bij hetzelfde geval steeds een andere uitkomst geeft, is het resultaat niet reproduceerbaar. Dat betekent dat de test niet betrouwbaar is. Je kunt dan niet op de uitkomst vertrouwen, want herhaling geeft geen stabiel resultaat."
+        "bron": "Examenstijl",
+        "ctx": "Een bedrijf onderzoekt een nieuwe crème tegen eczeem. 60 patiënten smeren vier weken de crème. Een tweede groep van 60 patiënten smeert een crème die er hetzelfde uitziet en ruikt, maar zonder werkzame stof. Na vier weken is bij 70% van groep 1 en bij 40% van groep 2 de eczeem duidelijk minder. De artsen die de huid beoordelen, weten niet welke patiënt welke crème kreeg.",
+        "v": "Leg uit waarom de tweede groep een crème zonder werkzame stof krijgt, en waarom het belangrijk is dat de artsen niet weten wie welke crème kreeg.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "De tweede groep krijgt een placebo; zo kun je het effect van de werkzame stof scheiden van het placebo-effect en van vanzelf herstellen: het effect van de stof is 70 − 40 = 30 procentpunt (1p). De verwachting van de patiënten is in beide groepen gelijk (1p). Als de artsen het weten, kan hun verwachting hun beoordeling beïnvloeden; door het niet te weten, beoordelen ze beide groepen op dezelfde manier (1p)."
        },
        {
-        "vraag": "Leg uit waarom een te kleine steekproef een beperking van een onderzoek is.",
-        "antwoord": "Bij een kleine steekproef telt het toeval van enkele individuen zwaar mee, waardoor de uitkomst sterk kan afwijken van de werkelijkheid. De conclusie is daardoor minder betrouwbaar en geldt mogelijk niet voor de hele groep. Daarom moet je een te kleine steekproef als beperking noemen."
+        "bron": "Examenstijl",
+        "ctx": "Om te bepalen hoeveel regenwormen er in een weiland leven, graaft een leerling op vijf plekken een kuil van 25 × 25 cm en 30 cm diep, en telt de wormen. Hij vindt 4, 7, 5, 6 en 3 wormen. Het weiland is 2 hectare (20.000 m²). Hij koos de plekken langs het pad, waar het makkelijk graven was.",
+        "v": "Bereken het geschatte aantal wormen per m² en noem één punt waardoor de schatting niet representatief kan zijn.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Gemiddeld 25 / 5 = 5 wormen per 0,0625 m² (1p), dus 5 / 0,0625 = 80 wormen per m² (1p). Niet representatief: de plekken liggen allemaal langs het pad, waar de grond harder of anders kan zijn dan in de rest van het weiland; ook vijf kuilen is weinig (1p)."
        }
       ]
      },
