@@ -58009,565 +58009,662 @@ var VAKKEN = [
     "leerdoelen": [
      {
       "id": "P1",
+      "lo": "bi.P.1",
+      "gs": 2,
       "naam": "Ecosystemen: biotische en abiotische factoren",
-      "beschrijving": "Het ecosysteem als levensgemeenschap plus biotoop, het onderscheid tussen biotische en abiotische factoren, en de niche van een soort.",
-      "ceStatus": "CE",
+      "beschrijving": "Je onderscheidt populatie, levensgemeenschap, biotoop en ecosysteem, herkent biotische en abiotische factoren, legt het verschil tussen habitat en niche uit, werkt met tolerantiegebied en optimum en gebruikt indicatorsoorten en steekproeven bij onderzoek in het veld.",
+      "ceStatus": "CE+SE",
+      "binas": "",
+      "val": "",
       "onderwerpen": [
-       "Ecosysteem: levensgemeenschap plus biotoop",
-       "Biotische factoren (levende omgeving)",
-       "Abiotische factoren (niet-levende omgeving)",
-       "Niche van een soort",
-       "Habitat en levensgemeenschap",
-       "Populatie en soort"
+       "Ecosysteem, biotoop en levensgemeenschap",
+       "Biotische en abiotische factoren",
+       "Populatie en soort",
+       "Habitat en niche",
+       "Tolerantie en optimum",
+       "Indicatorsoorten en onderzoek in het veld"
       ],
-      "sam": "Een ecosysteem bestaat uit een levensgemeenschap (alle organismen samen) en de biotoop (de niet-levende omgeving). De invloeden op een organisme deel je in twee groepen in. Biotische factoren komen van levende organismen, zoals voedsel, concurrentie en vijanden. Abiotische factoren zijn niet-levend, zoals temperatuur, licht, water en bodem. De niche van een soort is de plek en rol die een soort in het ecosysteem heeft: wat het eet, waar het leeft en hoe het zich voortplant. De habitat is de woonplaats van een soort.",
+      "sam": "Populatie = één soort in een gebied; levensgemeenschap = alle populaties; biotoop = niet-levende omgeving; ecosysteem = levensgemeenschap + biotoop. Abiotisch: licht, temperatuur, pH, water, bodem. Biotisch: voedsel, roofdieren, parasieten, concurrenten. Soort: vruchtbare nakomelingen. Habitat = adres, niche = rol; zelfde niche → verdringing. Tolerantiegebied van minimum tot maximum, optimum = beste waarde. Indicatorsoort: smal tolerantiegebied. Steekproef: gemiddeld per m² × oppervlakte.",
       "begrippen": [
        {
-        "t": "Ecosysteem",
-        "d": "een levensgemeenschap samen met de niet-levende omgeving (biotoop)"
+        "t": "Populatie",
+        "d": "Alle individuen van één soort die in hetzelfde gebied leven en zich onderling voortplanten."
        },
        {
         "t": "Levensgemeenschap",
-        "d": "alle organismen van alle soorten samen in een gebied"
+        "d": "Alle populaties van verschillende soorten in een gebied samen."
        },
        {
         "t": "Biotoop",
-        "d": "de niet-levende omgeving van een ecosysteem"
+        "d": "De niet-levende omgeving van een levensgemeenschap, zoals water, bodem en licht."
+       },
+       {
+        "t": "Ecosysteem",
+        "d": "Een levensgemeenschap samen met haar biotoop."
        },
        {
         "t": "Biotische factor",
-        "d": "een invloed die van levende organismen komt"
+        "d": "Levende factor in de omgeving, zoals voedsel, roofdieren, parasieten en concurrenten."
        },
        {
         "t": "Abiotische factor",
-        "d": "een niet-levende invloed, zoals temperatuur of licht"
-       },
-       {
-        "t": "Niche",
-        "d": "de plek en rol van een soort in het ecosysteem"
-       },
-       {
-        "t": "Habitat",
-        "d": "de leefomgeving of woonplaats van een soort"
-       },
-       {
-        "t": "Populatie",
-        "d": "alle individuen van één soort in een gebied"
+        "d": "Niet-levende factor in de omgeving, zoals licht, temperatuur, water en zuurgraad."
        },
        {
         "t": "Soort",
-        "d": "organismen die zich onderling kunnen voortplanten met vruchtbare nakomelingen"
+        "d": "Groep organismen die samen vruchtbare nakomelingen kunnen krijgen."
        },
        {
-        "t": "Milieufactor",
-        "d": "een invloed uit de omgeving op een organisme"
+        "t": "Habitat",
+        "d": "De plek waar een soort leeft."
        },
        {
-        "t": "Aangepast",
-        "d": "goed geschikt om in een bepaalde omgeving te leven"
+        "t": "Niche",
+        "d": "De rol van een soort in een ecosysteem: wat hij eet, wanneer hij actief is en zijn relaties met andere soorten."
        },
        {
-        "t": "Tolerantie",
-        "d": "de mate waarin een soort een factor kan verdragen"
+        "t": "Concurrentie",
+        "d": "Strijd tussen organismen om dezelfde hulpbronnen, zoals voedsel, licht of ruimte."
+       },
+       {
+        "t": "Tolerantiegebied",
+        "d": "De waarden van een factor tussen minimum en maximum waarbij een soort kan leven."
+       },
+       {
+        "t": "Optimum",
+        "d": "De waarde van een factor waarbij een soort het best groeit."
+       },
+       {
+        "t": "Indicatorsoort",
+        "d": "Soort met een smal tolerantiegebied die iets verraadt over de toestand van het milieu."
+       },
+       {
+        "t": "Steekproef",
+        "d": "Telling in een deel van het gebied waarmee je de populatiegrootte van het hele gebied schat."
        }
       ],
       "sv": [
        {
         "v": "Waaruit bestaat een ecosysteem?",
         "o": [
-         "Uit een levensgemeenschap en de biotoop",
-         "Uit alleen de planten die in een gebied groeien",
-         "Uit alleen de niet-levende omgeving van een gebied",
-         "Uit alle individuen van precies één soort"
-        ],
-        "c": 0,
-        "d": 1,
-        "u": "Een ecosysteem is de levensgemeenschap (alle organismen) samen met de biotoop (niet-levende omgeving).",
-        "uo": [
-         "Klopt: levensgemeenschap plus biotoop.",
-         "Ook dieren en andere organismen horen erbij.",
-         "De levende organismen horen er ook bij.",
-         "Dat is een populatie, geen ecosysteem."
-        ],
-        "uh": "Ecosysteem = levensgemeenschap + biotoop."
-       },
-       {
-        "v": "Wat is een biotische factor?",
-        "o": [
-         "Een niet-levende invloed zoals temperatuur of licht",
-         "Een invloed die van levende organismen komt",
-         "De bodem waarop de planten groeien",
-         "De hoeveelheid regen die valt in een gebied"
-        ],
-        "c": 1,
-        "d": 1,
-        "u": "Een biotische factor komt van levende organismen, zoals voedsel, vijanden of concurrentie.",
-        "uo": [
-         "Dat is juist een abiotische factor.",
-         "Klopt: van levende organismen.",
-         "De bodem is abiotisch.",
-         "Regen is abiotisch."
-        ],
-        "uh": "Biotisch = van iets levends."
-       },
-       {
-        "v": "Wat is een abiotische factor?",
-        "o": [
-         "Een vijand die het dier opeet",
-         "De concurrentie om voedsel tussen dieren",
-         "Een niet-levende invloed",
-         "Een ziekteverwekker die een dier aantast"
+         "alle individuen van één soort in een gebied",
+         "alleen alle dieren die in een gebied leven",
+         "organismen plus hun niet-levende omgeving",
+         "alleen de planten en de bodem van een gebied"
         ],
         "c": 2,
         "d": 1,
-        "u": "Een abiotische factor is niet-levend, zoals temperatuur, licht, water of bodem.",
+        "s": 0,
+        "u": "Ecosysteem = levensgemeenschap (biotisch) + biotoop (abiotisch).",
         "uo": [
-         "Een vijand is levend, dus biotisch.",
-         "Concurrentie komt van organismen, dus biotisch.",
-         "Klopt: niet-levend.",
-         "Een ziekteverwekker is levend, dus biotisch."
+         "Koos je één soort? Alle individuen van één soort in een gebied vormen een populatie. Een ecosysteem omvat alle soorten en hun omgeving.",
+         "Koos je alleen de dieren? Een ecosysteem omvat ook planten, schimmels en bacteriën, en ook de niet-levende omgeving.",
+         "Klopt: een ecosysteem bestaat uit alle organismen in een gebied (de levensgemeenschap) samen met de niet-levende omgeving, zoals water, bodem, licht en temperatuur.",
+         "Koos je alleen planten en bodem? Ook dieren, schimmels en bacteriën horen erbij, en ook factoren als licht en water."
         ],
-        "uh": "Abiotisch = niet-levend (temperatuur, licht, water)."
+        "uh": "Levend plus niet-levend."
        },
        {
-        "v": "Welke van deze is een abiotische factor?",
+        "v": "Wat is het verschil tussen een levensgemeenschap en een ecosysteem?",
         "o": [
-         "De vossen die op de muizen jagen",
-         "De planten die als voedsel dienen",
-         "De bacteriën in de bodem",
-         "De temperatuur van de lucht"
-        ],
-        "c": 3,
-        "d": 2,
-        "u": "Temperatuur is niet-levend en dus een abiotische factor; de andere zijn levende organismen.",
-        "uo": [
-         "Vossen zijn levend, dus biotisch.",
-         "Planten zijn levend, dus biotisch.",
-         "Bacteriën zijn levend, dus biotisch.",
-         "Klopt: temperatuur is abiotisch."
-        ],
-        "uh": "Temperatuur, licht en water zijn abiotisch."
-       },
-       {
-        "v": "Welke van deze is een biotische factor?",
-        "o": [
-         "De hoeveelheid voedsel van andere dieren",
-         "De hoeveelheid zonlicht in het bos",
-         "De zuurgraad (pH) van de bodem",
-         "De temperatuur van het water waarin de soorten leven"
-        ],
-        "c": 0,
-        "d": 2,
-        "u": "Voedsel komt van levende organismen en is dus een biotische factor.",
-        "uo": [
-         "Klopt: voedsel komt van organismen, dus biotisch.",
-         "Zonlicht is abiotisch.",
-         "De pH is abiotisch.",
-         "Temperatuur is abiotisch."
-        ],
-        "uh": "Voedsel, vijanden en concurrentie zijn biotisch."
-       },
-       {
-        "v": "Wat is de niche van een soort?",
-        "o": [
-         "Alleen de temperatuur waarbij de soort leeft",
-         "De plek en rol van de soort in het ecosysteem",
-         "Het totale aantal individuen van de soort",
-         "De niet-levende omgeving van het gebied waar de soort woont"
+         "een levensgemeenschap is groter dan een ecosysteem",
+         "een ecosysteem omvat ook de niet-levende omgeving",
+         "een levensgemeenschap bestaat uit één soort",
+         "een ecosysteem bevat geen planten"
         ],
         "c": 1,
         "d": 2,
-        "u": "De niche is de plek en rol van een soort: wat het eet, waar het leeft en hoe het zich voortplant.",
+        "s": 0,
+        "u": "Levensgemeenschap = alle populaties; ecosysteem = levensgemeenschap + abiotische omgeving.",
         "uo": [
-         "De niche is meer dan alleen temperatuur.",
-         "Klopt: de plek en rol van de soort.",
-         "Dat is de populatiegrootte, niet de niche.",
-         "Dat is de biotoop, niet de niche."
+         "Koos je groter? Een levensgemeenschap is juist een onderdeel van een ecosysteem. Het ecosysteem omvat daarnaast nog de abiotische omgeving.",
+         "Klopt: een levensgemeenschap bestaat uit alle populaties van verschillende soorten in een gebied. Een ecosysteem is die levensgemeenschap plus de niet-levende omgeving, de biotoop.",
+         "Koos je één soort? Alle individuen van één soort zijn een populatie. Een levensgemeenschap bestaat uit veel verschillende soorten.",
+         "Koos je geen planten? Planten zijn juist de producenten in bijna elk ecosysteem en horen bij de levensgemeenschap."
         ],
-        "uh": "Niche = plek en rol van een soort in het ecosysteem."
+        "uh": "Wat komt er bij?"
        },
        {
-        "v": "Wat is een levensgemeenschap?",
+        "v": "Welk begrip past bij alle waterplanten, vissen, insecten en bacteriën in een sloot samen?",
         "o": [
-         "De niet-levende omgeving van een gebied",
-         "Eén enkele populatie van een soort",
-         "Alle organismen van alle soorten samen",
-         "Alleen de planten in een gebied"
-        ],
-        "c": 2,
-        "d": 2,
-        "u": "Een levensgemeenschap is alle organismen van alle soorten samen in een gebied.",
-        "uo": [
-         "Dat is de biotoop.",
-         "Dat is een populatie.",
-         "Klopt: alle organismen van alle soorten samen.",
-         "Ook dieren en andere organismen horen erbij."
-        ],
-        "uh": "Levensgemeenschap = alle organismen samen."
-       },
-       {
-        "v": "Wat is de biotoop?",
-        "o": [
-         "Alle dieren van een gebied samen",
-         "Alle planten van een gebied samen",
-         "Alle individuen van één soort",
-         "De niet-levende omgeving"
-        ],
-        "c": 3,
-        "d": 2,
-        "u": "De biotoop is de niet-levende omgeving van een ecosysteem, zoals bodem, water en klimaat.",
-        "uo": [
-         "Dieren horen bij de levensgemeenschap.",
-         "Planten horen bij de levensgemeenschap.",
-         "Dat is een populatie.",
-         "Klopt: de niet-levende omgeving."
-        ],
-        "uh": "Biotoop = de niet-levende omgeving."
-       },
-       {
-        "v": "Wat is een populatie?",
-        "o": [
-         "Alle individuen van één soort in een gebied",
-         "Alle soorten samen in een gebied",
-         "De niet-levende omgeving van een gebied",
-         "Een enkel los dier dat rondloopt ergens in het bos"
+         "levensgemeenschap",
+         "populatie",
+         "biotoop",
+         "soort"
         ],
         "c": 0,
-        "d": 1,
-        "u": "Een populatie is alle individuen van één soort die in hetzelfde gebied leven.",
-        "uo": [
-         "Klopt: alle individuen van één soort.",
-         "Dat is de levensgemeenschap.",
-         "Dat is de biotoop.",
-         "Eén dier is een individu, geen populatie."
-        ],
-        "uh": "Populatie = alle individuen van één soort in een gebied."
-       },
-       {
-        "v": "Iemand noemt de bodem-pH als factor. Is dat biotisch of abiotisch?",
-        "o": [
-         "Biotisch, want planten leven in de bodem",
-         "Abiotisch, want pH is niet-levend",
-         "Biotisch, want bacteriën maken de pH",
-         "Geen van beide, pH telt niet als factor"
-        ],
-        "c": 1,
         "d": 3,
-        "u": "De zuurgraad van de bodem is een niet-levende eigenschap en dus een abiotische factor.",
+        "s": 0,
+        "u": "Alle organismen samen = levensgemeenschap.",
         "uo": [
-         "Dat planten er leven maakt de pH niet levend.",
-         "Klopt: pH is niet-levend, dus abiotisch.",
-         "De pH zelf is niet-levend, ook al beïnvloeden bacteriën hem.",
-         "pH is wel degelijk een milieufactor."
+         "Klopt: alle populaties van verschillende soorten die samen in de sloot leven, vormen de levensgemeenschap.",
+         "Koos je populatie? Een populatie bestaat uit individuen van één soort, bijvoorbeeld alle stekelbaarsjes in de sloot.",
+         "Koos je biotoop? De biotoop is de niet-levende omgeving: het water, de bodem, het licht. Organismen horen daar niet bij.",
+         "Koos je soort? Een soort is een groep organismen die samen vruchtbare nakomelingen kan krijgen. In de sloot leven veel soorten."
         ],
-        "uh": "pH van de bodem = abiotisch (niet-levend)."
+        "uh": "Alle soorten samen.",
+        "ctx": "Een klas onderzoekt een sloot. Ze vinden waterlelies, kroos, stekelbaarsjes, watervlooien, libellenlarven, slakken en in een watermonster ook bacteriën en algen. Ze meten ook de temperatuur, de zuurgraad en de hoeveelheid zuurstof in het water."
        },
        {
-        "v": "Wat is een habitat?",
+        "v": "Welk begrip hoort bij de niet-levende omgeving van een levensgemeenschap?",
         "o": [
-         "De rol van een soort in de voedselketen",
-         "Het aantal individuen van een soort",
-         "De leefomgeving of woonplaats van een soort",
-         "De niet-levende factoren van het gebied bij elkaar"
+         "voedselweb",
+         "populatie",
+         "niche",
+         "biotoop"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 0,
+        "u": "De biotoop is de abiotische omgeving: bodem, water, licht, klimaat.",
+        "uo": [
+         "Koos je voedselweb? Een voedselweb beschrijft wie wie eet: relaties tussen levende organismen. De biotoop is de niet-levende omgeving.",
+         "Koos je populatie? Een populatie bestaat uit levende individuen van één soort. De biotoop is juist het niet-levende deel van het ecosysteem.",
+         "Koos je niche? De niche is de rol van een soort in het ecosysteem: wat hij eet en wanneer hij actief is. Dat gaat over levende organismen, niet over de omgeving.",
+         "Klopt: de biotoop is de niet-levende omgeving waarin een levensgemeenschap leeft, met factoren als bodem, water, licht en temperatuur."
+        ],
+        "uh": "Bio-toop: de plaats."
+       },
+       {
+        "v": "Welke factor is een abiotische factor?",
+        "o": [
+         "een ziekteverwekker",
+         "de hoeveelheid prooidieren",
+         "de temperatuur",
+         "de concurrentie om voedsel"
         ],
         "c": 2,
         "d": 1,
-        "u": "De habitat is de plek waar een soort leeft, zijn woonplaats.",
+        "s": 1,
+        "u": "Abiotisch = niet-levend: temperatuur, licht, water, bodem, zuurgraad.",
         "uo": [
-         "De rol hoort bij de niche.",
-         "Dat is de populatiegrootte.",
-         "Klopt: de woonplaats van een soort.",
-         "Dat is de biotoop, niet de habitat."
+         "Koos je een ziekteverwekker? Ook bacteriën en virussen zijn biotische factoren, omdat ze van levende oorsprong zijn.",
+         "Koos je prooidieren? Prooidieren zijn levende organismen: dat is een biotische factor.",
+         "Klopt: temperatuur is een niet-levende factor. Andere abiotische factoren zijn licht, neerslag, zuurgraad en de samenstelling van de bodem.",
+         "Koos je concurrentie? Concurrentie is een relatie tussen organismen: een biotische factor."
         ],
-        "uh": "Habitat = de woonplaats van een soort."
+        "uh": "Niet levend."
        },
        {
-        "v": "Welke factor is biotisch?",
+        "v": "Welke combinatie bevat alleen biotische factoren?",
         "o": [
-         "De hoeveelheid neerslag die er in het gebied valt",
-         "De windsnelheid in het gebied",
-         "De temperatuur van de bodem",
-         "De aanwezigheid van roofdieren"
-        ],
-        "c": 3,
-        "d": 2,
-        "u": "Roofdieren zijn levende organismen en vormen dus een biotische factor.",
-        "uo": [
-         "Neerslag is abiotisch.",
-         "Wind is abiotisch.",
-         "Temperatuur is abiotisch.",
-         "Klopt: roofdieren zijn levend, dus biotisch."
-        ],
-        "uh": "Roofdieren en concurrenten zijn biotische factoren."
-       },
-       {
-        "v": "Waarom kan dezelfde soort niet overal leven?",
-        "o": [
-         "Omdat de omgeving niet altijd bij de soort past",
-         "Omdat elke soort werkelijk altijd en overal kan leven",
-         "Omdat de niche in elk gebied hetzelfde is",
-         "Omdat abiotische factoren nergens verschillen"
-        ],
-        "c": 0,
-        "d": 3,
-        "u": "Een soort leeft alleen waar de biotische en abiotische factoren binnen zijn tolerantie passen.",
-        "uo": [
-         "Klopt: de omgeving past niet overal bij de soort.",
-         "Soorten kunnen juist niet overal leven.",
-         "De niche kan per gebied anders ingevuld zijn.",
-         "Abiotische factoren verschillen juist sterk per plek."
-        ],
-        "uh": "Een soort leeft alleen waar de factoren bij hem passen."
-       },
-       {
-        "v": "Wat hoort NIET bij de biotoop?",
-        "o": [
-         "De temperatuur",
-         "De regenwormen",
-         "Het zonlicht dat op het gebied valt gedurende de dag",
-         "Het water"
+         "licht, regen en roofdieren",
+         "roofdieren, parasieten, planten",
+         "zuurgraad, wind en temperatuur",
+         "parasieten, zout en bodemsoort"
         ],
         "c": 1,
         "d": 2,
-        "u": "Regenwormen zijn levend en horen bij de levensgemeenschap, niet bij de niet-levende biotoop.",
+        "s": 1,
+        "u": "Biotisch = levend of door levende organismen.",
         "uo": [
-         "Temperatuur is niet-levend, dus biotoop.",
-         "Klopt: regenwormen zijn levend, dus levensgemeenschap.",
-         "Licht is niet-levend, dus biotoop.",
-         "Water is niet-levend, dus biotoop."
+         "Koos je licht, regen en roofdieren? Licht en regen zijn abiotisch; alleen roofdieren zijn biotisch.",
+         "Klopt: roofdieren, parasieten en voedselplanten zijn allemaal levende organismen. Ze zijn biotische factoren.",
+         "Koos je zuurgraad, wind en temperatuur? Dat zijn allemaal abiotische factoren.",
+         "Koos je parasieten, zout en bodemsoort? Zout en bodemsoort zijn abiotisch; alleen parasieten zijn biotisch."
         ],
-        "uh": "Biotoop = alleen het niet-levende deel."
+        "uh": "Alles moet leven."
        },
        {
-        "v": "Concurrentie om voedsel tussen twee soorten is welke soort factor?",
+        "v": "Welke factor bepaalt hier waarschijnlijk vooral welke planten groeien?",
         "o": [
-         "Een abiotische factor",
-         "Een niet-levende factor",
-         "Een biotische factor",
-         "Helemaal geen factor"
+         "de hoeveelheid licht op de bodem",
+         "het aantal vogels in de bomen",
+         "de concurrentie tussen konijnen",
+         "de temperatuur van het grondwater"
         ],
-        "c": 2,
-        "d": 2,
-        "u": "Concurrentie is een invloed tussen levende organismen en dus een biotische factor.",
+        "c": 0,
+        "d": 3,
+        "s": 1,
+        "u": "Onder een gesloten bladerdak bereikt weinig licht de bodem.",
         "uo": [
-         "Concurrentie komt van organismen, niet van niet-levende dingen.",
-         "Het gaat juist om levende organismen.",
-         "Klopt: concurrentie is biotisch.",
-         "Concurrentie is wel degelijk een factor."
+         "Klopt: onder de dichte beuken komt maar 2% van het licht op de bodem. Daar kunnen weinig planten groeien. Op de open plek met 60% licht groeien veel planten.",
+         "Koos je vogels? Vogels kunnen zaden verspreiden, maar het grote verschil tussen de twee plekken is de hoeveelheid licht.",
+         "Koos je konijnen? Over konijnen staat niets in de tekst. Het meetbare verschil is de lichthoeveelheid.",
+         "Koos je grondwatertemperatuur? Die verschilt nauwelijks tussen twee plekken vlak naast elkaar. Het licht verschilt wel enorm."
         ],
-        "uh": "Concurrentie tussen organismen = biotisch."
+        "uh": "Wat verschilt er zo sterk?",
+        "ctx": "In een beukenbos meet een leerling met een luxmeter op de bodem 2% van het licht in de open lucht. Daar groeit bijna niets. Op een open plek in hetzelfde bos, waar een boom is omgewaaid, meet hij 60% en groeien veel varens, braam en jonge boompjes."
        },
        {
-        "v": "Wat bepaalt samen het ecosysteem?",
+        "v": "Waarom is de zuurgraad van de bodem een belangrijke factor voor planten?",
         "o": [
-         "Alleen de levende organismen die er in het gebied wonen",
-         "Alleen de niet-levende omgeving",
-         "Alleen de planten en het licht",
-         "De levensgemeenschap en de biotoop samen"
+         "planten maken zelf de pH van de bodem",
+         "de zuurgraad bepaalt hoeveel dieren er wonen",
+         "zuur maakt de bodem warmer",
+         "veel planten groeien alleen bij een bepaalde pH"
         ],
         "c": 3,
+        "d": 2,
+        "s": 1,
+        "u": "Elke plantensoort heeft een tolerantiegebied voor de pH.",
+        "uo": [
+         "Koos je planten die de pH maken? Planten kunnen de bodem iets zuurder maken, bijvoorbeeld door afgevallen naalden, maar de pH is vooral een abiotische factor waarop ze reageren.",
+         "Koos je het aantal dieren? Dieren hangen indirect af van de planten, maar de pH werkt in de eerste plaats op de planten zelf en op de beschikbaarheid van voedingsstoffen.",
+         "Koos je een warmere bodem? De zuurgraad heeft geen merkbare invloed op de temperatuur van de bodem. Het effect zit in welke planten kunnen groeien.",
+         "Klopt: elke plantensoort heeft een eigen tolerantiegebied voor de zuurgraad. Heide groeit op zure zandgrond, andere soorten juist op kalkrijke grond. De pH bepaalt mee welke planten er groeien."
+        ],
+        "uh": "Denk aan tolerantie."
+       },
+       {
+        "v": "Welk begrip past bij alle konijnen in een duingebied?",
+        "o": [
+         "een ecosysteem",
+         "een levensgemeenschap",
+         "een populatie",
+         "een biotoop"
+        ],
+        "c": 2,
         "d": 1,
-        "u": "Het ecosysteem is de levensgemeenschap en de biotoop samen, met hun onderlinge invloeden.",
+        "s": 2,
+        "u": "Populatie = alle individuen van één soort in een gebied.",
         "uo": [
-         "De niet-levende omgeving hoort er ook bij.",
-         "De organismen horen er ook bij.",
-         "Er hoort veel meer bij dan planten en licht.",
-         "Klopt: levensgemeenschap en biotoop samen."
+         "Koos je ecosysteem? Dat is de levensgemeenschap samen met de niet-levende omgeving.",
+         "Koos je levensgemeenschap? Die bestaat uit alle soorten samen, niet alleen konijnen.",
+         "Klopt: alle konijnen in één duingebied vormen samen een populatie: individuen van dezelfde soort die in hetzelfde gebied leven en zich onderling voortplanten.",
+         "Koos je biotoop? Dat is de niet-levende omgeving, zoals zand, wind en water."
         ],
-        "uh": "Ecosysteem = levend en niet-levend samen."
+        "uh": "Eén soort, één gebied."
        },
        {
-        "v": "Twee soorten hebben dezelfde niche in hetzelfde gebied. Wat gebeurt er waarschijnlijk?",
+        "v": "Wanneer horen twee organismen tot dezelfde soort?",
         "o": [
-         "Ze gaan concurreren om dezelfde bronnen",
-         "Ze leven probleemloos naast elkaar",
-         "Ze veranderen samen langzaam in precies één nieuwe soort",
-         "Ze hebben geen enkele invloed op elkaar"
-        ],
-        "c": 0,
-        "d": 3,
-        "u": "Bij een gelijke niche gebruiken de soorten dezelfde bronnen, dus ontstaat er concurrentie.",
-        "uo": [
-         "Klopt: gelijke niche geeft concurrentie om dezelfde bronnen.",
-         "Bij een gelijke niche botsen ze juist.",
-         "Ze worden niet zomaar één soort.",
-         "Ze beïnvloeden elkaar juist sterk."
-        ],
-        "uh": "Gelijke niche = concurrentie om dezelfde bronnen."
-       },
-       {
-        "v": "Welke uitspraak over biotische en abiotische factoren klopt?",
-        "o": [
-         "Temperatuur is een biotische factor",
-         "Biotisch is levend, abiotisch is niet-levend",
-         "Roofdieren zijn een abiotische factor",
-         "Beide begrippen betekenen in de biologie precies hetzelfde"
+         "als ze er precies hetzelfde uitzien",
+         "als ze samen vruchtbare jongen krijgen",
+         "als ze in hetzelfde gebied leven",
+         "als ze hetzelfde voedsel eten"
         ],
         "c": 1,
         "d": 2,
-        "u": "Biotische factoren komen van levende organismen; abiotische factoren zijn niet-levend.",
+        "s": 2,
+        "u": "Soort: kunnen samen vruchtbare nakomelingen krijgen.",
         "uo": [
-         "Temperatuur is juist abiotisch.",
-         "Klopt: biotisch is levend, abiotisch niet-levend.",
-         "Roofdieren zijn juist biotisch.",
-         "Ze zijn juist elkaars tegengestelde."
+         "Koos je hetzelfde uiterlijk? Mannetjes en vrouwtjes of jonge en volwassen dieren zien er vaak verschillend uit, maar horen wel bij één soort. Andersom lijken sommige soorten sterk op elkaar.",
+         "Klopt: organismen horen bij dezelfde soort als ze onder natuurlijke omstandigheden samen vruchtbare nakomelingen kunnen krijgen.",
+         "Koos je hetzelfde gebied? In één gebied leven veel soorten. Samen leven maakt ze nog geen soort.",
+         "Koos je hetzelfde voedsel? Veel verschillende soorten eten hetzelfde, zoals verschillende vogels die insecten eten."
         ],
-        "uh": "Biotisch = levend, abiotisch = niet-levend."
+        "uh": "Denk aan voortplanting."
        },
        {
-        "v": "Waar hoort licht bij in een ecosysteem?",
+        "v": "Waarom zijn paard en ezel verschillende soorten, terwijl ze samen een muildier kunnen krijgen?",
         "o": [
-         "Bij de levensgemeenschap (biotisch)",
-         "Bij de populatie planten",
-         "Bij de biotoop (abiotisch)",
-         "Bij de niche van de dieren"
-        ],
-        "c": 2,
-        "d": 2,
-        "u": "Licht is een niet-levende factor en hoort dus bij de biotoop.",
-        "uo": [
-         "Licht is niet levend.",
-         "Licht is geen populatie.",
-         "Klopt: licht is abiotisch, dus biotoop.",
-         "Licht is geen niche."
-        ],
-        "uh": "Licht = abiotisch, hoort bij de biotoop."
-       },
-       {
-        "v": "Wat betekent het dat een soort goed is aangepast aan zijn omgeving?",
-        "o": [
-         "De soort verandert in zijn eentje de hele biotoop volledig",
-         "De soort heeft geen enkele vijand meer",
-         "De soort telt altijd heel veel individuen",
-         "De soort past goed bij de factoren in die omgeving"
-        ],
-        "c": 3,
-        "d": 3,
-        "u": "Aangepast zijn betekent dat de soort goed geschikt is voor de biotische en abiotische factoren ter plekke.",
-        "uo": [
-         "Aanpassing verandert niet de hele biotoop.",
-         "Aangepast zijn betekent niet vijandloos.",
-         "Aanpassing zegt niets over het exacte aantal.",
-         "Klopt: de soort past goed bij de plaatselijke factoren."
-        ],
-        "uh": "Aangepast = goed geschikt voor de factoren ter plaatse."
-       },
-       {
-        "v": "Ziekte door een bacterie is welke soort factor voor een dier?",
-        "o": [
-         "Biotisch, want een bacterie is levend",
-         "Abiotisch, want ziekte is niet-levend",
-         "Geen factor, ziekte telt niet mee",
-         "Abiotisch, precies zoals de temperatuur van de omgeving"
+         "een muildier is bijna altijd onvruchtbaar",
+         "paarden en ezels leven in verschillende gebieden",
+         "een muildier lijkt niet op zijn ouders",
+         "paarden en ezels eten ander voedsel"
         ],
         "c": 0,
         "d": 3,
-        "u": "Een bacterie is een levend organisme, dus ziekte door een bacterie is een biotische factor.",
+        "s": 2,
+        "u": "De nakomelingen moeten vruchtbaar zijn; muildieren zijn dat bijna nooit.",
         "uo": [
-         "Klopt: een bacterie is levend, dus biotisch.",
-         "De bacterie die de ziekte veroorzaakt is levend.",
-         "Ziekte is wel degelijk een factor.",
-         "Anders dan temperatuur is een bacterie levend."
+         "Klopt: paard en ezel kunnen samen een muildier krijgen, maar dat muildier is bijna altijd onvruchtbaar. Daarom zijn paard en ezel verschillende soorten.",
+         "Koos je verschillende gebieden? Ook als ze in hetzelfde gebied leven, blijven het verschillende soorten. Het gaat om vruchtbare nakomelingen.",
+         "Koos je het uiterlijk van het muildier? Een muildier lijkt juist deels op allebei. Uiterlijk bepaalt niet of iets een soort is.",
+         "Koos je ander voedsel? Paarden en ezels eten allebei gras. Voedsel bepaalt niet of iets een soort is."
         ],
-        "uh": "Ziekteverwekker is levend, dus biotisch."
+        "uh": "Zijn de nakomelingen vruchtbaar?",
+        "ctx": "Een paardenmerrie en een ezelhengst krijgen samen een muildier. Muildieren zijn sterk en worden gebruikt als lastdier. Een boer probeert met twee muildieren te fokken, maar dat lukt bijna nooit. Een paard heeft 64 chromosomen, een ezel 62."
        },
        {
-        "v": "Wat is het verschil tussen habitat en niche?",
+        "v": "Hoeveel orchideeën staan er naar schatting in de hele duinvallei?",
         "o": [
-         "De twee begrippen betekenen in de biologie precies hetzelfde",
-         "Habitat is de woonplaats, niche is de rol",
-         "Habitat is de rol, niche is de woonplaats",
-         "Beide gaan alleen over temperatuur"
+         "ongeveer 2000",
+         "ongeveer 30",
+         "ongeveer 600",
+         "ongeveer 6000"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 2,
+        "u": "Gemiddeld 3 per m² × 2000 m² = 6000.",
+        "uo": [
+         "Koos je 2000? Dat is de oppervlakte in vierkante meter. Die moet je nog vermenigvuldigen met het gemiddelde van 3 per vierkante meter.",
+         "Koos je 30? Dat is het totaal in de tien proefvlakken samen (10 × 3). De hele vallei is veel groter dan die tien vierkante meter.",
+         "Koos je 600? Dan heb je een factor 10 te weinig gerekend. 3 per m² keer 2000 m² geeft 6000.",
+         "Klopt: gemiddeld staan er 3 orchideeën per vierkante meter. De vallei is 2000 m², dus 3 × 2000 = ongeveer 6000 orchideeën."
+        ],
+        "uh": "Gemiddelde keer oppervlakte.",
+        "ctx": "Om te schatten hoeveel orchideeën er in een duinvallei staan, leggen onderzoekers tien vierkanten van 1 bij 1 meter op willekeurig gekozen plekken neer. In elk vierkant tellen ze de orchideeën. Samen tellen ze er 30. De vallei is 2000 m² groot."
+       },
+       {
+        "v": "Welke beschrijving past bij de habitat van een soort?",
+        "o": [
+         "het aantal individuen van een soort",
+         "de rol die een soort in het ecosysteem speelt",
+         "de plek waar een soort leeft",
+         "het voedsel dat een soort eet"
+        ],
+        "c": 2,
+        "d": 1,
+        "s": 3,
+        "u": "Habitat = leefplek (adres); niche = rol (beroep).",
+        "uo": [
+         "Koos je het aantal? Het aantal individuen is de populatiegrootte, niet de habitat.",
+         "Koos je de rol? Dat is de niche: wat de soort eet, wanneer hij actief is en hoe hij omgaat met andere soorten.",
+         "Klopt: de habitat is de plek waar een soort leeft, zoals een sloot, een bos of een duin. Je kunt het zien als het adres van de soort.",
+         "Koos je het voedsel? Het voedsel hoort bij de niche van een soort, niet bij de habitat."
+        ],
+        "uh": "Het adres."
+       },
+       {
+        "v": "Waarom kunnen twee soorten met precies dezelfde niche niet lang naast elkaar bestaan?",
+        "o": [
+         "ze gaan met elkaar paren en worden één soort",
+         "één soort verdringt de ander",
+         "ze eten elkaar op",
+         "ze hebben altijd verschillende habitats nodig"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 3,
+        "u": "Zelfde niche = sterke concurrentie: de beter aangepaste soort wint.",
+        "uo": [
+         "Koos je paren? Verschillende soorten krijgen geen vruchtbare nakomelingen samen. Concurrentie is het probleem.",
+         "Klopt: met dezelfde niche gebruiken ze precies dezelfde hulpbronnen. Ze concurreren zo sterk dat de beter aangepaste soort de andere verdringt.",
+         "Koos je elkaar opeten? Soorten met dezelfde niche eten hetzelfde voedsel, niet elkaar.",
+         "Koos je verschillende habitats? Twee soorten kunnen wel in dezelfde habitat leven, als ze een verschillende niche hebben."
+        ],
+        "uh": "Wat gebeurt er bij precies hetzelfde voedsel?"
+       },
+       {
+        "v": "Hoe kunnen deze vijf soorten zangvogels in één boom naast elkaar leven?",
+        "o": [
+         "elke soort heeft een eigen niche",
+         "ze eten om de beurt op hetzelfde moment van de dag",
+         "ze vechten net zo lang tot er één soort overblijft",
+         "ze hebben allemaal precies dezelfde niche en delen het voedsel eerlijk"
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 3,
+        "u": "Verdeling van de niche: verschillende plekken voorkomt directe concurrentie.",
+        "uo": [
+         "Klopt: elke soort zoekt op een eigen plek in de boom, en eet daardoor deels ander voedsel. Zo hebben ze elk een eigen niche en concurreren ze weinig.",
+         "Koos je om de beurt? Volgens de tekst eten ze tegelijk, maar op verschillende hoogtes en plekken.",
+         "Koos je vechten? Ze leven al lang samen. Dat lukt doordat ze elkaar niet direct beconcurreren.",
+         "Koos je dezelfde niche? Met precies dezelfde niche zou de ene soort de andere verdringen. Ze verschillen juist in waar ze zoeken."
+        ],
+        "uh": "Zoeken ze op dezelfde plek?",
+        "ctx": "In een grote spar zoeken vijf soorten kleine zangvogels naar insecten. Onderzoek laat zien dat de ene soort vooral in de top zoekt, een andere aan de buitenkant van de onderste takken, een derde dicht bij de stam en twee soorten in het midden, de een op de takken en de ander tussen de naalden."
+       },
+       {
+        "v": "Welke beschrijving hoort bij de niche van een vos?",
+        "o": [
+         "heeft een rode vacht en een lange staart",
+         "leeft in de duinen en in de bossen",
+         "komt in heel Europa voor",
+         "jaagt in de schemering op muizen en konijnen"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 3,
+        "u": "Niche = rol: voedsel, tijd van activiteit, relaties.",
+        "uo": [
+         "Koos je het uiterlijk? Een rode vacht is een kenmerk, maar geen rol in het ecosysteem. De niche gaat over gedrag en voedsel.",
+         "Koos je duinen en bossen? Dat is de habitat, de plek waar de vos leeft. De niche gaat over zijn rol, zoals wat hij eet.",
+         "Koos je heel Europa? Dat is het verspreidingsgebied van de soort. Het zegt niets over de rol die hij in een ecosysteem speelt.",
+         "Klopt: de niche beschrijft de rol van een soort: wat hij eet, wanneer hij actief is en hoe hij omgaat met andere soorten. Jagen in de schemering op muizen hoort daarbij."
+        ],
+        "uh": "Het beroep, niet het adres."
+       },
+       {
+        "v": "Welke conclusie past bij dit experiment met pantoffeldiertjes?",
+        "o": [
+         "soort B kan niet tegen de temperatuur in de gedeelde bak",
+         "soort B is een prooi van A en wordt opgegeten",
+         "soort A verdringt soort B door concurrentie",
+         "soort A en B krijgen samen onvruchtbare nakomelingen"
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 3,
+        "u": "Twee soorten met dezelfde niche: de sterkste concurrent verdringt de ander.",
+        "uo": [
+         "Koos je de temperatuur? Beide bakken hadden dezelfde omstandigheden, en alleen groeide B goed. Het verschil komt door de aanwezigheid van A.",
+         "Koos je een prooi? Beide soorten eten bacteriën, niet elkaar. Over predatie staat niets in de proef; het gaat om concurrentie om voedsel.",
+         "Klopt: beide soorten eten dezelfde bacteriën en hebben dus dezelfde niche. Samen concurreren ze om dat voedsel, en soort A wint: soort B verdwijnt.",
+         "Koos je onvruchtbare nakomelingen? Verschillende soorten pantoffeldiertjes paren niet met elkaar. B verdwijnt door gebrek aan voedsel."
+        ],
+        "uh": "Wat eten ze allebei?",
+        "ctx": "In aparte bakken groeien twee soorten pantoffeldiertjes, A en B, allebei goed op dezelfde soort bacteriën. Worden ze samen in één bak met dezelfde hoeveelheid bacteriën gezet, dan is soort B na twee weken verdwenen, terwijl soort A even goed groeit als wanneer hij alleen was."
+       },
+       {
+        "v": "Welke waarde van een factor noem je het optimum?",
+        "o": [
+         "de laagste waarde waarbij het nog kan leven",
+         "de waarde waarbij het organisme het best groeit",
+         "de hoogste waarde waarbij het nog kan leven",
+         "de waarde waarbij het doodgaat"
+        ],
+        "c": 1,
+        "d": 1,
+        "s": 4,
+        "u": "Optimum = beste waarde; minimum en maximum zijn de grenzen.",
+        "uo": [
+         "Koos je de laagste waarde? Dat is het minimum, de ondergrens van het tolerantiegebied.",
+         "Klopt: het optimum is de waarde van een factor waarbij het organisme het best groeit of zich het best voortplant.",
+         "Koos je de hoogste waarde? Dat is het maximum, de bovengrens van het tolerantiegebied.",
+         "Koos je doodgaan? Buiten het tolerantiegebied gaat het organisme dood. Het optimum is juist de beste waarde."
+        ],
+        "uh": "Het beste."
+       },
+       {
+        "v": "Wat is het tolerantiegebied van een soort?",
+        "o": [
+         "de waarden tussen minimum en maximum",
+         "het gebied waar de soort het meest voorkomt in Nederland",
+         "de waarde van een factor waarbij de soort het best groeit",
+         "de tijd die een soort kan overleven zonder voedsel"
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 4,
+        "u": "Tolerantiegebied = tussen minimum en maximum.",
+        "uo": [
+         "Klopt: het tolerantiegebied loopt van het minimum tot het maximum van een factor. Daarbinnen kan de soort leven; erbuiten niet.",
+         "Koos je een plek in Nederland? Het tolerantiegebied gaat over de waarden van een factor, zoals temperatuur, niet over een plek op de kaart.",
+         "Koos je de beste waarde? Dat is het optimum, het midden van het tolerantiegebied waar de soort het best groeit.",
+         "Koos je overleven zonder voedsel? Dat heeft niets met tolerantie voor een abiotische factor te maken."
+        ],
+        "uh": "Van minimum tot maximum."
+       },
+       {
+        "v": "Welke soort kan het beste overleven in een sloot die in de zomer opwarmt tot 28 °C?",
+        "o": [
+         "geen enkele, want 28 °C is voor alle vissen te warm",
+         "beekforel",
+         "driedoornige stekelbaars",
+         "karper"
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 4,
+        "u": "Kijk welk tolerantiegebied 28 °C omvat.",
+        "uo": [
+         "Koos je geen enkele? De karper heeft een maximum van 32 °C. Voor hem is 28 °C geen probleem.",
+         "Koos je de beekforel? Die heeft een maximum van 20 °C. Bij 28 °C ligt de temperatuur buiten zijn tolerantiegebied.",
+         "Koos je de stekelbaars? Die heeft een maximum van 25 °C. Ook voor hem is 28 °C te warm.",
+         "Klopt: de karper verdraagt temperaturen van 4 tot 32 °C, met een optimum rond 24 °C. Bij 28 °C kan hij dus goed leven."
+        ],
+        "uh": "Vergelijk 28 °C met elk maximum.",
+        "ctx": "Een tabel geeft het tolerantiegebied voor watertemperatuur van drie vissoorten: beekforel 2 tot 20 °C (optimum 12 °C), driedoornige stekelbaars 4 tot 25 °C (optimum 16 °C), karper 4 tot 32 °C (optimum 24 °C). Een sloot warmt in een hete zomer op tot 28 °C."
+       },
+       {
+        "v": "Wat gebeurt er met een organisme bij een waarde buiten zijn tolerantiegebied?",
+        "o": [
+         "het verandert in een andere soort",
+         "het groeit daar het snelst",
+         "het kan daar niet overleven",
+         "het wordt daar groter dan normaal"
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 4,
+        "u": "Buiten het tolerantiegebied kan een organisme niet leven.",
+        "uo": [
+         "Koos je een andere soort? Een organisme verandert niet in een andere soort door een te hoge of lage waarde. Het overleeft dan gewoon niet.",
+         "Koos je het snelst groeien? Het snelst groeit een organisme bij het optimum, in het midden van het tolerantiegebied.",
+         "Klopt: buiten het tolerantiegebied, dus onder het minimum of boven het maximum, kan het organisme niet overleven. Dichter bij de grenzen groeit het al slechter.",
+         "Koos je groter worden? Buiten het tolerantiegebied gaat het organisme dood; het wordt zeker niet groter."
+        ],
+        "uh": "Voorbij de grens."
+       },
+       {
+        "v": "Wat is een indicatorsoort?",
+        "o": [
+         "een soort die alle andere soorten opeet",
+         "een soort die iets zegt over het milieu",
+         "een soort die alleen in dierentuinen voorkomt",
+         "een soort die het snelst groeit in een ecosysteem"
+        ],
+        "c": 1,
+        "d": 1,
+        "s": 5,
+        "u": "Indicatorsoorten verraden de milieuomstandigheden, zoals schoon water of veel stikstof.",
+        "uo": [
+         "Koos je alle soorten opeten? Dat zou een toppredator zijn. Een indicatorsoort zegt iets over het milieu.",
+         "Klopt: een indicatorsoort heeft een smal tolerantiegebied voor een factor. Komt hij voor, dan weet je iets over het milieu, bijvoorbeeld dat het water schoon is.",
+         "Koos je dierentuinen? Een indicatorsoort leeft juist in de natuur en zegt daar iets over het milieu.",
+         "Koos je snelst groeien? Groeisnelheid maakt een soort geen indicator. Het gaat om wat zijn aanwezigheid verraadt."
+        ],
+        "uh": "Wat verraadt de soort?"
+       },
+       {
+        "v": "Waarom is een soort met een smal tolerantiegebied een goede indicator?",
+        "o": [
+         "hij leeft maar bij weinig waarden",
+         "hij komt overal voor, dus je vindt hem makkelijk",
+         "hij groeit bij elke waarde even goed",
+         "hij past zich snel aan elk milieu aan"
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 5,
+        "u": "Smal tolerantiegebied: aanwezigheid zegt veel over de waarde van de factor.",
+        "uo": [
+         "Klopt: een soort met een smal tolerantiegebied leeft alleen bij bepaalde waarden. Vind je hem, dan weet je vrij precies hoe het met die factor zit.",
+         "Koos je overal voorkomen? Een soort die overal voorkomt, zegt juist weinig over het milieu.",
+         "Koos je elke waarde even goed? Dan is het tolerantiegebied breed en zegt de soort niets.",
+         "Koos je snel aanpassen? Een soort die zich aan alles aanpast, is geen goede indicator."
+        ],
+        "uh": "Smal = precies."
+       },
+       {
+        "v": "Wat kun je concluderen uit het voorkomen van de soorten in deze beek?",
+        "o": [
+         "de soorten zeggen niets over de waterkwaliteit",
+         "de beek is overal even schoon",
+         "de beek is bovenstrooms vervuild en benedenstrooms schoon",
+         "boven schoon, beneden vervuild"
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 5,
+        "u": "Steenvliegen = schoon; rode muggenlarven en tubifex = vervuild, zuurstofarm.",
+        "uo": [
+         "Koos je niets? Juist deze dieren worden gebruikt als indicatorsoorten voor de waterkwaliteit.",
+         "Koos je overal even schoon? Dan zouden de steenvliegenlarven overal voorkomen. Ze verdwijnen juist na het lozingspunt.",
+         "Koos je het omgekeerde? Steenvliegen leven bovenstrooms en hebben schoon water nodig. Dus juist daar is het schoon.",
+         "Klopt: steenvliegenlarven leven alleen in schoon, zuurstofrijk water; die vind je bovenstrooms. Benedenstrooms, na het lozingspunt, vind je tubifexwormen en muggenlarven die vervuiling verdragen."
+        ],
+        "uh": "Welke soorten vragen schoon water?",
+        "ctx": "Leerlingen nemen monsters op twee plekken in een beek, voor en na een plek waar een boerderij afvalwater loost. Bovenstrooms vinden ze veel steenvliegenlarven en eendagsvliegenlarven, die alleen in schoon, zuurstofrijk water leven. Benedenstrooms vinden ze vooral tubifexwormen en rode muggenlarven, die weinig zuurstof verdragen."
+       },
+       {
+        "v": "Waarom gebruiken de onderzoekers vierkanten van gelijke grootte op willekeurige plekken?",
+        "o": [
+         "zo hoef je niet te tellen, alleen te kijken",
+         "zo vind je zeker alle soorten die in het gebied voorkomen",
+         "zo is de schatting representatief",
+         "zo kun je de planten makkelijker uitgraven"
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 5,
+        "u": "Gelijke, willekeurig gekozen proefvlakken geven een betrouwbare steekproef.",
+        "uo": [
+         "Koos je niet tellen? Juist in de vierkanten tel je de planten. Dat maakt het onderzoek vergelijkbaar.",
+         "Koos je alle soorten vinden? Een steekproef geeft een schatting; zeldzame soorten kun je toch missen.",
+         "Klopt: met vierkanten van gelijke grootte kun je de tellingen vergelijken. Door ze willekeurig te kiezen, voorkom je dat je alleen op mooie plekken telt. Zo is de schatting representatief.",
+         "Koos je uitgraven? Bij dit onderzoek tel je de planten; je graaft ze niet uit."
+        ],
+        "uh": "Denk aan een eerlijke steekproef.",
+        "ctx": "Om te schatten hoeveel orchideeën er in een duinvallei staan, leggen onderzoekers tien vierkanten van 1 bij 1 meter op willekeurig gekozen plekken neer. In elk vierkant tellen ze de orchideeën. De vallei is 2000 m² groot. Gemiddeld tellen ze 3 orchideeën per vierkant."
+       },
+       {
+        "v": "Wat kun je concluderen als op een heideveld steeds meer brandnetels en gras gaan groeien?",
+        "o": [
+         "de bodem is waarschijnlijk zuurder en voedselarmer geworden",
+         "de bodem bevat waarschijnlijk meer stikstof dan vroeger",
+         "het heideveld wordt waarschijnlijk minder vaak beregend",
+         "de heideplanten zijn waarschijnlijk door konijnen opgegeten"
         ],
         "c": 1,
         "d": 3,
-        "u": "De habitat is waar een soort leeft; de niche is wat de soort doet: zijn plek en rol.",
+        "s": 5,
+        "u": "Brandnetels zijn indicatoren voor een stikstofrijke bodem.",
         "uo": [
-         "Ze verschillen juist.",
-         "Klopt: habitat = woonplaats, niche = rol.",
-         "Dit is precies omgekeerd.",
-         "Beide gaan over veel meer dan temperatuur."
+         "Koos je zuurder en voedselarmer? Juist op zure, voedselarme grond groeit heide goed. Brandnetels hebben veel voedingsstoffen nodig, dus de bodem is rijker geworden.",
+         "Klopt: brandnetel en grassen groeien goed op stikstofrijke grond en verdringen de heide, die juist voedselarme grond nodig heeft. Hun opmars wijst op extra stikstof, bijvoorbeeld uit de lucht.",
+         "Koos je minder beregening? Heide wordt niet beregend, en droogte helpt brandnetels juist niet. De brandnetel wijst op stikstof.",
+         "Koos je konijnen? Konijnen eten ook gras en jonge brandnetels. De verschuiving in plantensoorten wijst op een veranderde bodem, niet op vraat."
         ],
-        "uh": "Habitat = waar, niche = welke rol."
-       },
-       {
-        "v": "Welke reeks bevat alleen abiotische factoren?",
-        "o": [
-         "Licht, roofdieren, water",
-         "Voedsel, concurrentie, vijanden",
-         "Licht, temperatuur, water",
-         "Planten, bacteriën, dieren"
-        ],
-        "c": 2,
-        "d": 2,
-        "u": "Licht, temperatuur en water zijn allemaal niet-levend en dus abiotisch.",
-        "uo": [
-         "Roofdieren zijn levend, dus biotisch.",
-         "Dit zijn allemaal biotische factoren.",
-         "Klopt: alle drie zijn niet-levend.",
-         "Dit zijn allemaal levende organismen."
-        ],
-        "uh": "Abiotisch rijtje: licht, temperatuur, water."
-       },
-       {
-        "v": "Waarom is de niche belangrijk om een soort te begrijpen?",
-        "o": [
-         "Omdat de niche alleen het aantal dieren telt",
-         "Omdat de niche alleen de temperatuur beschrijft",
-         "Omdat de niche voor werkelijk alle soorten volkomen gelijk is",
-         "Omdat de niche laat zien hoe de soort in het ecosysteem past"
-        ],
-        "c": 3,
-        "d": 3,
-        "u": "De niche beschrijft de rol en plek van de soort, en dus hoe die met andere soorten en de omgeving samenhangt.",
-        "uo": [
-         "De niche is meer dan een aantal.",
-         "De niche is meer dan alleen temperatuur.",
-         "Elke soort heeft juist zijn eigen niche.",
-         "Klopt: de niche toont de plek en rol in het geheel."
-        ],
-        "uh": "Niche = hoe een soort in het ecosysteem past."
-       },
-       {
-        "v": "Wat hoort bij de levensgemeenschap van een sloot?",
-        "o": [
-         "De vissen, planten en bacteriën samen",
-         "De temperatuur van het slootwater door het jaar heen",
-         "De hoeveelheid zuurstof die in het water is opgelost",
-         "De zuurgraad van de modder op de bodem"
-        ],
-        "c": 0,
-        "d": 2,
-        "u": "De levensgemeenschap is alle organismen samen; de andere opties zijn niet-levende, abiotische factoren.",
-        "uo": [
-         "Klopt: alle organismen samen vormen de levensgemeenschap.",
-         "Temperatuur is abiotisch, geen levensgemeenschap.",
-         "Zuurstofgehalte is abiotisch.",
-         "Zuurgraad is abiotisch."
-        ],
-        "uh": "Levensgemeenschap = de levende organismen; de rest is abiotisch."
+        "uh": "Wat verraadt een brandnetel?",
+        "ctx": "Op een heideveld groeide vijftig jaar geleden bijna alleen struikheide, een plant die goed groeit op zure, voedselarme zandgrond. Tegenwoordig staan er steeds meer pijpenstrootje (een gras) en zelfs brandnetels, soorten die groeien op voedselrijke grond. In de buurt liggen veel veehouderijen."
        }
       ],
       "oe": [
        {
-        "vraag": "Leg uit uit welke twee delen een ecosysteem bestaat.",
-        "antwoord": "Een ecosysteem bestaat uit de levensgemeenschap en de biotoop. De levensgemeenschap is het geheel van alle organismen van alle soorten in een gebied. De biotoop is de niet-levende omgeving, zoals de bodem, het water, het licht en de temperatuur. Samen met hun onderlinge invloeden vormen ze het ecosysteem."
+        "bron": "Examenstijl",
+        "ctx": "In een duinmeer leven onder andere waterlelies, snoeken, ruisvoorns, watervlooien en algen. Leerlingen meten het zuurstofgehalte, de temperatuur en de helderheid van het water. In de zomer bloeien de algen sterk op en wordt het water troebel.",
+        "v": "Geef van de genoemde voorbeelden twee biotische en twee abiotische factoren en leg uit wat het verschil is tussen de levensgemeenschap en het ecosysteem van dit meer.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Biotisch: bijvoorbeeld snoeken, algen, watervlooien, waterlelies (1p, twee juist). Abiotisch: zuurstofgehalte, temperatuur, helderheid (1p, twee juist). De levensgemeenschap bestaat uit alle organismen in het meer; het ecosysteem is de levensgemeenschap samen met de niet-levende omgeving (1p)."
        },
        {
-        "vraag": "Leg het verschil uit tussen een biotische en een abiotische factor, met van elk een voorbeeld.",
-        "antwoord": "Een biotische factor is een invloed die van levende organismen komt, bijvoorbeeld voedsel, concurrentie of een roofdier. Een abiotische factor is een niet-levende invloed, bijvoorbeeld temperatuur, licht of water. Het verschil is dus of de factor van iets levends komt of niet."
+        "bron": "Examenstijl",
+        "ctx": "Op een heideveld komen twee soorten vlinders voor die allebei als rups op struikheide leven. Soort A legt eitjes in het voorjaar en de rupsen eten jonge scheuten. Soort B legt eitjes in de nazomer en de rupsen eten bloemen.",
+        "v": "Leg uit wat het verschil is tussen habitat en niche, en waarom deze twee vlindersoorten naast elkaar kunnen leven.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Habitat is de plek waar een soort leeft, niche is de rol in het ecosysteem (voedsel, tijd, relaties) (1p). Beide soorten hebben dezelfde habitat: het heideveld met struikheide (1p). Ze hebben een verschillende niche (ander moment, ander deel van de plant), waardoor ze weinig met elkaar concurreren (1p)."
        },
        {
-        "vraag": "Wat wordt bedoeld met de niche van een soort?",
-        "antwoord": "De niche is de plek en rol die een soort in het ecosysteem inneemt. Daarbij hoort wat de soort eet, waar en hoe hij leeft, en hoe hij zich voortplant. Twee soorten met dezelfde niche in hetzelfde gebied gaan met elkaar concurreren om dezelfde bronnen."
+        "bron": "Examenstijl",
+        "ctx": "De larven van de beekprik leven alleen in beken met een watertemperatuur van 6 tot 18 °C en een zuurstofgehalte van minimaal 8 mg/L. Door een warme zomer stijgt de watertemperatuur in een beek tot 23 °C en daalt het zuurstofgehalte tot 5 mg/L.",
+        "v": "Leg met het begrip tolerantiegebied uit wat er met de beekprik in deze beek gebeurt en waarom de beekprik een goede indicatorsoort is.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Het tolerantiegebied voor temperatuur loopt tot 18 °C en voor zuurstof vanaf 8 mg/L (1p). In de warme zomer liggen beide waarden buiten het tolerantiegebied, dus de beekprik kan in deze beek niet overleven (1p). Omdat de beekprik een smal tolerantiegebied heeft, laat zijn aanwezigheid zien dat het water koel en zuurstofrijk is: een goede indicator (1p)."
        },
        {
-        "vraag": "Iemand deelt de zuurgraad van de bodem in als biotische factor. Leg uit waarom dat niet klopt.",
-        "antwoord": "De zuurgraad van de bodem is een niet-levende eigenschap van de omgeving. Biotische factoren komen van levende organismen. Omdat de pH zelf niet leeft, is het een abiotische factor, ook al kunnen organismen de pH wel beïnvloeden."
+        "bron": "Examenstijl",
+        "ctx": "Een boswachter wil weten hoeveel exemplaren van een zeldzame plant in een natuurgebied van 5 hectare (50 000 m²) staan. Hij telt op 20 willekeurige plekken in proefvlakken van 2 × 2 meter. In totaal telt hij 32 planten.",
+        "v": "Bereken het geschatte aantal planten in het hele gebied en geef twee eisen waaraan de steekproef moet voldoen om betrouwbaar te zijn.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Getelde oppervlakte: 20 × 4 m² = 80 m²; dichtheid 32 / 80 = 0,4 planten per m² (1p). Schatting: 0,4 × 50 000 = 20 000 planten (1p). Eisen: proefvlakken even groot, willekeurig gekozen, voldoende aantal (1p, twee juist)."
        },
        {
-        "vraag": "Leg uit wat er gebeurt als twee soorten in hetzelfde gebied dezelfde niche hebben.",
-        "antwoord": "Als twee soorten dezelfde niche hebben, gebruiken ze dezelfde bronnen, zoals hetzelfde voedsel en dezelfde ruimte. Daardoor gaan ze met elkaar concurreren. Vaak wint de ene soort en verdwijnt de andere uit dat gebied, of de soorten gaan hun niche iets anders invullen."
+        "bron": "Examenstijl",
+        "ctx": "In 1950 stonden in een Drents heideveld vooral struikheide en dopheide. Na veertig jaar met veel stikstof uit de lucht, afkomstig van verkeer en veehouderij, is het veld voor een groot deel begroeid met pijpenstrootje, een gras dat goed groeit op voedselrijke grond.",
+        "v": "Leg uit waarom het heideveld is veranderd en waarom pijpenstrootje hier een indicatorsoort is.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Stikstof uit de lucht komt in de bodem terecht, waardoor de voedselarme grond voedselrijker wordt (1p). Pijpenstrootje groeit goed op voedselrijke grond en verdringt de heide, die juist voedselarme grond nodig heeft (1p). Pijpenstrootje verraadt zo een stikstofrijke bodem en is daarmee een indicatorsoort (1p)."
        }
       ]
      },

@@ -1452,20 +1452,24 @@ var VAKKEN = [
     "leerdoelen": [
      {
       "id": "P1",
+      "lo": "bi.P.1",
+      "gs": 2,
       "naam": "Ecosystemen: biotische en abiotische factoren",
-      "beschrijving": "Het ecosysteem als levensgemeenschap plus biotoop, het onderscheid tussen biotische en abiotische factoren, en de niche van een soort.",
-      "ceStatus": "CE",
+      "beschrijving": "Je onderscheidt populatie, levensgemeenschap, biotoop en ecosysteem, herkent biotische en abiotische factoren, legt het verschil tussen habitat en niche uit, werkt met tolerantiegebied en optimum en gebruikt indicatorsoorten en steekproeven bij onderzoek in het veld.",
+      "ceStatus": "CE+SE",
+      "binas": "",
+      "val": "",
       "onderwerpen": [
-       "Ecosysteem: levensgemeenschap plus biotoop",
-       "Biotische factoren (levende omgeving)",
-       "Abiotische factoren (niet-levende omgeving)",
-       "Niche van een soort",
-       "Habitat en levensgemeenschap",
-       "Populatie en soort"
+       "Ecosysteem, biotoop en levensgemeenschap",
+       "Biotische en abiotische factoren",
+       "Populatie en soort",
+       "Habitat en niche",
+       "Tolerantie en optimum",
+       "Indicatorsoorten en onderzoek in het veld"
       ],
-      "nSv": 25,
+      "nSv": 26,
       "nOe": 5,
-      "nBeg": 12,
+      "nBeg": 14,
       "hasSam": true
      },
      {

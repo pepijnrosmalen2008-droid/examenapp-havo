@@ -5,7 +5,7 @@
 Volledige beschrijving (functies, inhoud per niveau, prijs, wat Slagio niet is): https://slagio.nl/llms-full.txt
 
 ## In het kort
-- 12 vakken havo, 16 vakken vwo, 12 vakken vmbo; 26.994 oefenvragen en 4.346 begrippen.
+- 12 vakken havo, 16 vakken vwo, 12 vakken vmbo; 26.995 oefenvragen en 4.346 begrippen.
 - Adaptief oefenen: na een fout een vraag over hetzelfde onderwerp, een niveau makkelijker; uitleg bij elk fout antwoord.
 - Foutenboek en herhalen met gespreide herhaling, beheersing per leerdoel, studieplan tot het examen.
 - Examens met klok, proefexamens in examenstijl met modelantwoord en puntenverdeling, archief met officiële oude examens.
@@ -62,7 +62,7 @@ Volledige beschrijving (functies, inhoud per niveau, prijs, wat Slagio niet is):
 - [Transport en gasuitwisseling (Biologie HAVO)](https://slagio.nl/leren/havo/biologie/transport-en-gasuitwisseling.html): Je beschrijft de bouw van het hart, volgt de route van het bloed door de dubbele bloedsomloop, onderscheidt slagaders, aders en haarvaten, beschrijft de…
 - [Spijsvertering en uitscheiding (Biologie HAVO)](https://slagio.nl/leren/havo/biologie/spijsvertering-en-uitscheiding.html): Je legt uit waarom voedsel verteerd wordt, onderscheidt mechanische en chemische vertering, beschrijft welke enzymen waar werken en wat gal doet, volgt de weg…
 - [Beweging: gewrichten en spieren (Biologie HAVO)](https://slagio.nl/leren/havo/biologie/beweging-gewrichten-en-spieren.html): Je beschrijft de functies en de bouw van het skelet en van een bot, legt de bouw en soorten gewrichten uit, onderscheidt pezen en gewrichtsbanden, verklaart…
-- [Ecosystemen: biotische en abiotische factoren (Biologie HAVO)](https://slagio.nl/leren/havo/biologie/ecosystemen-biotische-en-abiotische-factoren.html): Het ecosysteem als levensgemeenschap plus biotoop, het onderscheid tussen biotische en abiotische factoren, en de niche van een soort.
+- [Ecosystemen: biotische en abiotische factoren (Biologie HAVO)](https://slagio.nl/leren/havo/biologie/ecosystemen-biotische-en-abiotische-factoren.html): Je onderscheidt populatie, levensgemeenschap, biotoop en ecosysteem, herkent biotische en abiotische factoren, legt het verschil tussen habitat en niche uit,…
 - [Voedselrelaties en energiedoorgifte (Biologie HAVO)](https://slagio.nl/leren/havo/biologie/voedselrelaties-en-energiedoorgifte.html): Voedselketens en voedselwebben, de rol van producent, consument en reducent, en energiedoorgifte via de piramide van biomassa.
 - [Populatiedynamiek en draagkracht (Biologie HAVO)](https://slagio.nl/leren/havo/biologie/populatiedynamiek-en-draagkracht.html): Hoe een populatie verandert door geboorte, sterfte en trek, exponentiele groei, en de rol van draagkracht bij het begrenzen van de groei (S-kromme).
 - [Relaties tussen soorten (Biologie HAVO)](https://slagio.nl/leren/havo/biologie/relaties-tussen-soorten.html): Vormen van symbiose (mutualisme, commensalisme en parasitisme), predatie en concurrentie, en het effect van een exoot op een ecosysteem.
