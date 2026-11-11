@@ -1357,20 +1357,24 @@ var VAKKEN = [
      },
      {
       "id": "O5",
+      "lo": "bi.O.5",
+      "gs": 2,
       "naam": "Transport en gasuitwisseling",
-      "beschrijving": "De dubbele bloedsomloop, hart en bloedvaten (slagader, ader, haarvat), de gasuitwisseling in de longblaasjes en de rol van diffusie.",
-      "ceStatus": "CE",
+      "beschrijving": "Je beschrijft de bouw van het hart, volgt de route van het bloed door de dubbele bloedsomloop, onderscheidt slagaders, aders en haarvaten, beschrijft de bestanddelen van bloed, legt de ademhalingsbewegingen uit en verklaart de gaswisseling in de longblaasjes met diffusie.",
+      "ceStatus": "CE+SE",
+      "binas": "",
+      "val": "",
       "onderwerpen": [
-       "Dubbele bloedsomloop (long- en lichaamscircuit)",
-       "Hart: boezems en kamers, kleppen",
-       "Bloedvaten: slagader, ader, haarvat",
-       "Zuurstofrijk en zuurstofarm bloed",
-       "Gasuitwisseling in de longblaasjes",
-       "Diffusie van hoge naar lage concentratie"
+       "Bouw van het hart",
+       "De dubbele bloedsomloop",
+       "Bloedvaten",
+       "Bloed",
+       "De ademhaling",
+       "Gaswisseling in de longblaasjes"
       ],
-      "nSv": 25,
+      "nSv": 27,
       "nOe": 5,
-      "nBeg": 12,
+      "nBeg": 16,
       "hasSam": true
      },
      {
