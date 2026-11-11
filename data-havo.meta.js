@@ -2600,20 +2600,24 @@ var VAKKEN = [
      },
      {
       "id": "D2",
+      "lo": "na.D.2",
+      "gs": 2,
       "naam": "Weerstand en de wet van Ohm",
-      "beschrijving": "Weten wat weerstand is, rekenen met de wet van Ohm (U = I x R) en het verschil begrijpen tussen ohmse en niet-ohmse onderdelen.",
-      "ceStatus": "ce",
+      "beschrijving": "Je legt weerstand uit als spanning per ampère, rekent met de wet van Ohm (U = I · R) in alle drie de vormen, bepaalt de weerstand uit een (I,U)-grafiek, onderscheidt ohmse en niet-ohmse onderdelen zoals de gloeilamp en de NTC, en rekent de weerstand van een draad uit met R = ρ · l / A.",
+      "ceStatus": "CE",
+      "binas": "35D",
+      "val": "",
       "onderwerpen": [
        "Weerstand als tegenwerking",
-       "Wet van Ohm: U = I x R",
+       "Wet van Ohm: U = I · R",
        "Rekenen met U, I en R",
        "(U,I)-grafiek en steilheid",
        "Ohms versus niet-ohms",
        "Weerstand van een draad"
       ],
-      "nSv": 25,
+      "nSv": 28,
       "nOe": 5,
-      "nBeg": 12,
+      "nBeg": 11,
       "hasSam": true
      },
      {

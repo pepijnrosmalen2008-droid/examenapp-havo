@@ -101419,565 +101419,689 @@ var VAKKEN = [
      },
      {
       "id": "D2",
+      "lo": "na.D.2",
+      "gs": 2,
       "naam": "Weerstand en de wet van Ohm",
-      "beschrijving": "Weten wat weerstand is, rekenen met de wet van Ohm (U = I x R) en het verschil begrijpen tussen ohmse en niet-ohmse onderdelen.",
-      "ceStatus": "ce",
+      "beschrijving": "Je legt weerstand uit als spanning per ampère, rekent met de wet van Ohm (U = I · R) in alle drie de vormen, bepaalt de weerstand uit een (I,U)-grafiek, onderscheidt ohmse en niet-ohmse onderdelen zoals de gloeilamp en de NTC, en rekent de weerstand van een draad uit met R = ρ · l / A.",
+      "ceStatus": "CE",
+      "binas": "35D",
+      "val": "",
       "onderwerpen": [
        "Weerstand als tegenwerking",
-       "Wet van Ohm: U = I x R",
+       "Wet van Ohm: U = I · R",
        "Rekenen met U, I en R",
        "(U,I)-grafiek en steilheid",
        "Ohms versus niet-ohms",
        "Weerstand van een draad"
       ],
-      "sam": "Weerstand R geeft aan hoe sterk een onderdeel de stroom tegenwerkt; je meet R in ohm. Het verband tussen spanning, stroom en weerstand is de wet van Ohm: U = I x R. Daaruit haal je ook I = U / R en R = U / I. Bij een vaste spanning geldt: hoe groter de weerstand, hoe kleiner de stroom. Een onderdeel heet ohms als R niet verandert; dan zijn U en I recht evenredig en is de (U,I)-grafiek een rechte lijn door de oorsprong, waarvan de steilheid de weerstand is. Een gloeilampje is niet-ohms: als het heter wordt, wordt de weerstand groter. De weerstand van een draad hangt af van het materiaal (koper geleidt beter dan ijzer), de lengte (langer geeft meer weerstand) en de dikte (dikker geeft minder weerstand). Met een regelweerstand kun je R en dus de stroom instellen. Een weerstand wordt warm doordat de bewegende elektronen tegen de atomen botsen; zo wordt elektrische energie omgezet in warmte.",
+      "sam": "Weerstand R = U / I in ohm; bij dezelfde spanning: grotere R, kleinere I; energie wordt omgezet waar R groot is. Wet van Ohm U = I · R bij constante R (ohms: rechte lijn door de oorsprong). Omrekenen: kΩ naar Ω, mA naar A. (I,U)-grafiek: kies een punt, R = U / I; let op de assen. Gloeilamp: warmer, meer R, grafiek vlakker; NTC: warmer, minder R, steiler. Draad: R = ρ · l / A, 1 mm² = 10⁻⁶ m².",
       "begrippen": [
        {
-        "t": "Weerstand (R)",
-        "d": "de mate waarin een onderdeel de elektrische stroom tegenwerkt"
+        "t": "Weerstand",
+        "d": "Spanning per ampère: R = U / I, in ohm."
        },
        {
-        "t": "Ohm",
-        "d": "de eenheid van weerstand; symbool voor de eenheid is de Griekse omega"
+        "t": "Meetpunt",
+        "d": "Gemeten combinatie van spanning en stroom; per meetpunt geldt R = U / I."
        },
        {
         "t": "Wet van Ohm",
-        "d": "het verband U = I x R tussen spanning, stroom en weerstand"
+        "d": "U = I · R, geldig als de weerstand constant blijft."
        },
        {
-        "t": "Ohmse weerstand",
-        "d": "een weerstand met een vaste R; U en I zijn recht evenredig"
+        "t": "Ohms",
+        "d": "Onderdeel met een constante weerstand; de (I,U)-grafiek is een rechte lijn door de oorsprong."
        },
        {
-        "t": "(U,I)-grafiek",
-        "d": "grafiek van spanning tegen stroom; de steilheid is de weerstand"
+        "t": "Niet ohms",
+        "d": "Onderdeel waarvan de weerstand verandert, zoals een gloeilamp, NTC of led."
        },
        {
-        "t": "Recht evenredig",
-        "d": "twee keer zoveel spanning geeft ook twee keer zoveel stroom"
+        "t": "Gloeilamp",
+        "d": "Lamp met een metalen gloeidraad waarvan de weerstand toeneemt als hij heter wordt."
        },
        {
-        "t": "Regelweerstand",
-        "d": "instelbare weerstand waarmee je de stroom in een kring regelt"
+        "t": "NTC-weerstand",
+        "d": "Weerstand die kleiner wordt als hij warmer wordt; gebruikt als temperatuursensor."
        },
        {
-        "t": "Draaddikte",
-        "d": "een dikkere draad heeft minder weerstand dan een dunne draad"
+        "t": "Voorschakelweerstand",
+        "d": "Weerstand in serie die een deel van de spanning opvangt, bijvoorbeeld bij een led."
        },
        {
-        "t": "Draadlengte",
-        "d": "een langere draad heeft meer weerstand dan een korte draad"
+        "t": "Soortelijke weerstand",
+        "d": "Materiaaleigenschap ρ in Ω · m die bepaalt hoe goed een stof geleidt."
        },
        {
-        "t": "Geleidbaarheid",
-        "d": "hoe goed een stof stroom doorlaat; koper geleidt beter dan ijzer"
+        "t": "Doorsnede",
+        "d": "Oppervlakte A van de dwarsdoorsnede van een draad; 1 mm² = 10⁻⁶ m²."
        },
        {
-        "t": "Warmteontwikkeling",
-        "d": "weerstand zet elektrische energie om in warmte door botsingen"
-       },
-       {
-        "t": "Niet-ohms",
-        "d": "onderdeel waarvan de weerstand verandert, zoals een gloeilamp"
+        "t": "Constantaan",
+        "d": "Legering met een weerstand die vrijwel niet verandert met de temperatuur."
        }
       ],
       "sv": [
        {
-        "v": "Wat is elektrische weerstand?",
+        "v": "Wat zegt de weerstand van een onderdeel?",
         "o": [
-         "De tegenwerking van de stroom",
-         "De totale hoeveelheid lading die een draad in zich kan opslaan",
-         "De duw die de spanningsbron op de vrije elektronen uitoefent",
-         "De warmte die een lampje afgeeft zodra de stroom eenmaal loopt"
-        ],
-        "c": 0,
-        "d": 1,
-        "u": "Weerstand R geeft aan hoe sterk een onderdeel de stroom tegenwerkt.",
-        "uo": [
-         "Klopt: weerstand werkt de stroom tegen.",
-         "Opgeslagen lading is geen weerstand.",
-         "De duw is de spanning, niet de weerstand.",
-         "Warmte is een gevolg, niet de weerstand zelf."
-        ],
-        "uh": "Weerstand = tegenwerking van de stroom."
-       },
-       {
-        "v": "In welke eenheid meet je weerstand?",
-        "o": [
-         "Volt, dezelfde eenheid die je gebruikt voor de spanning",
-         "Ohm",
-         "Ampère, de eenheid die hoort bij de sterkte van de stroom",
-         "Watt, de eenheid waarin je het vermogen uitdrukt"
-        ],
-        "c": 1,
-        "d": 1,
-        "u": "Weerstand R meet je in ohm.",
-        "uo": [
-         "Volt hoort bij spanning.",
-         "Klopt: weerstand in ohm.",
-         "Ampère hoort bij stroom.",
-         "Watt hoort bij vermogen."
-        ],
-        "uh": "Weerstand -> ohm."
-       },
-       {
-        "v": "Hoe luidt de wet van Ohm?",
-        "o": [
-         "U = I gedeeld door R, dus spanning is stroom gedeeld door weerstand",
-         "R = U x I, dus de weerstand is spanning maal stroom bij elkaar",
-         "U = I x R",
-         "I = U x R, dus de stroom is spanning maal weerstand samen"
+         "hoeveel energie het per seconde omzet",
+         "hoeveel stroom het onderdeel opslaat",
+         "hoeveel volt nodig is per ampère stroom",
+         "hoe snel de elektronen erdoor bewegen"
         ],
         "c": 2,
         "d": 1,
-        "u": "Wet van Ohm: U = I x R (spanning = stroom maal weerstand).",
+        "s": 0,
+        "u": "R = U / I, in ohm.",
         "uo": [
-         "U is niet I gedeeld door R.",
-         "R = U x I klopt niet.",
-         "Klopt: U = I x R.",
-         "I = U x R klopt niet."
+         "Koos je energie per seconde? Dat is het vermogen, in watt. Weerstand is spanning gedeeld door stroom.",
+         "Koos je stroom opslaan? Een weerstand slaat geen stroom op; de lading gaat gewoon door. Hij remt de stroom alleen af.",
+         "Klopt: weerstand is spanning per ampère, R = U / I, in ohm (Ω). Een grote weerstand vraagt veel spanning voor een kleine stroom.",
+         "Koos je de snelheid van elektronen? Die is in elk onderdeel heel klein. Weerstand zegt hoeveel spanning je nodig hebt voor een bepaalde stroom."
         ],
-        "uh": "U = I x R."
+        "uh": "Volt per ampère."
        },
        {
-        "v": "Welk symbool hoort bij weerstand?",
+        "v": "Op dezelfde spanning laat lampje A 0,50 A door en lampje B 0,25 A. Welk lampje heeft de grootste weerstand?",
         "o": [
-         "U, het symbool dat je eigenlijk voor de spanning gebruikt",
-         "I, het symbool dat hoort bij de sterkte van de stroom",
-         "P, het symbool dat je voor het vermogen inzet",
-         "R"
-        ],
-        "c": 3,
-        "d": 1,
-        "u": "Weerstand heeft symbool R.",
-        "uo": [
-         "U hoort bij spanning.",
-         "I hoort bij stroom.",
-         "P hoort bij vermogen.",
-         "Klopt: R staat voor weerstand."
-        ],
-        "uh": "R = weerstand."
-       },
-       {
-        "v": "Een draad heeft een grote weerstand. Wat betekent dat voor de stroom (bij vaste U)?",
-        "o": [
-         "Er loopt weinig stroom",
-         "Er loopt juist heel veel stroom door die draad heen",
-         "De stroom blijft precies gelijk, wat de weerstand ook is",
-         "De spanning van de bron wordt vanzelf een stuk groter"
-        ],
-        "c": 0,
-        "d": 2,
-        "u": "Bij vaste spanning geldt: grotere weerstand geeft kleinere stroom.",
-        "uo": [
-         "Klopt: veel weerstand, weinig stroom.",
-         "Veel weerstand geeft juist minder stroom.",
-         "De stroom verandert wel bij andere R.",
-         "De weerstand verandert de bronspanning niet."
-        ],
-        "uh": "Meer R -> minder I (bij vaste U)."
-       },
-       {
-        "v": "U = 6 V en I = 2 A. Bereken de weerstand.",
-        "o": [
-         "12 ohm, gevonden door de spanning en de stroom met elkaar te vermenigvuldigen",
-         "3 ohm",
-         "8 ohm, gevonden door de spanning en de stroom bij elkaar op te tellen",
-         "4 ohm, gevonden door de stroom van de spanning af te trekken"
+         "lampje A",
+         "lampje B",
+         "ze zijn gelijk",
+         "dat kun je niet zeggen zonder de spanning"
         ],
         "c": 1,
         "d": 2,
-        "u": "R = U / I = 6 / 2 = 3 ohm.",
+        "s": 0,
+        "u": "Kleinere stroom bij dezelfde U: grotere R.",
         "uo": [
-         "6 x 2 = 12 is niet R.",
-         "Klopt: 6 / 2 = 3 ohm.",
-         "Optellen geeft geen weerstand.",
-         "Aftrekken geeft geen weerstand."
+         "Koos je lampje A? A laat juist de meeste stroom door. Dat betekent dat A de stroom het minst tegenwerkt.",
+         "Klopt: bij dezelfde spanning laat de grootste weerstand de kleinste stroom door. B laat maar de helft van de stroom door, dus B heeft twee keer zo veel weerstand.",
+         "Koos je gelijk? Dan zouden ze bij dezelfde spanning dezelfde stroom doorlaten. De stromen verschillen een factor twee.",
+         "Koos je dat het niet kan? Je hoeft de spanning niet te weten: hij is voor beide gelijk. Dan is R omgekeerd evenredig met I."
         ],
         "uh": "R = U / I."
        },
        {
-        "v": "R = 4 ohm en I = 3 A. Bereken de spanning.",
+        "v": "Waarom wordt de gloeidraad heet en de aansluitdraad niet, bij dezelfde stroom?",
         "o": [
-         "7 V, gevonden door de weerstand en de stroom bij elkaar op te tellen",
-         "1,3 V, gevonden door de weerstand door de stroom te delen",
+         "de gloeidraad heeft een veel grotere weerstand",
+         "door de aansluitdraad gaat in werkelijkheid minder stroom",
+         "de gloeidraad krijgt extra elektronen van de lamp",
+         "de aansluitdraad straalt zijn warmte sneller uit"
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 0,
+        "u": "Grote R: grote spanning en veel energie.",
+        "uo": [
+         "Klopt: in serie is de stroom overal gelijk. Over de gloeidraad met zijn grote weerstand staat bijna de hele spanning, dus daar geeft elke coulomb het meeste energie af. In de koperdraad met kleine weerstand is dat bijna niets.",
+         "Koos je minder stroom? In serie is de stroom overal even groot. Het verschil zit in de weerstand en dus in de spanning over elk deel.",
+         "Koos je extra elektronen? Er komen geen elektronen bij. Dezelfde elektronen geven in de gloeidraad hun energie af.",
+         "Koos je sneller uitstralen? Dat speelt een kleine rol, maar de echte reden is dat er in de gloeidraad veel meer energie wordt omgezet."
+        ],
+        "uh": "Energie wordt omgezet waar R groot is.",
+        "ctx": "Een ouderwetse gloeilamp is via twee koperen draden van elk een meter aangesloten op het lichtnet. De gloeidraad in de lamp wordt zo heet dat hij licht geeft, maar de koperen aansluitdraden voelen nauwelijks warm aan. Door de draden en de gloeidraad gaat dezelfde stroom."
+       },
+       {
+        "v": "Welke formule hoort bij de wet van Ohm?",
+        "o": [
+         "I = U · R",
+         "U = I / R",
+         "R = U · I",
+         "U = I · R"
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 1,
+        "u": "De wet van Ohm: U = I · R.",
+        "uo": [
+         "Koos je I = U · R? Dan zou een grotere weerstand meer stroom geven. Een grotere weerstand laat juist minder stroom door.",
+         "Koos je U = I / R? Dan zou een grotere weerstand een kleinere spanning geven bij dezelfde stroom. Het is andersom.",
+         "Koos je R = U · I? Spanning maal stroom is het vermogen, niet de weerstand. Weerstand is U / I.",
+         "Klopt: de wet van Ohm is U = I · R. Omgeschreven: I = U / R en R = U / I."
+        ],
+        "uh": "U = I · R."
+       },
+       {
+        "v": "Wanneer geldt de wet van Ohm voor een onderdeel?",
+        "o": [
+         "als de spanning precies 230 V is",
+         "als het onderdeel van koper is gemaakt",
+         "als de weerstand gelijk blijft bij elke stroom",
+         "als er helemaal geen stroom door het onderdeel gaat"
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 1,
+        "u": "Ohms: R constant.",
+        "uo": [
+         "Koos je 230 V? De wet van Ohm hangt niet van een bepaalde spanning af. Het gaat erom dat R gelijk blijft als U verandert.",
+         "Koos je koper? Het materiaal maakt niet uit. Ook een koperdraad die heet wordt, krijgt een andere weerstand.",
+         "Klopt: een onderdeel volgt de wet van Ohm als de weerstand constant blijft. Dan is de stroom recht evenredig met de spanning: twee keer zoveel spanning geeft twee keer zoveel stroom.",
+         "Koos je geen stroom? Zonder stroom valt er niets te meten. De wet gaat over het verband tussen U en I."
+        ],
+        "uh": "R blijft gelijk."
+       },
+       {
+        "v": "Door een weerstand van 20 Ω gaat een stroom van 0,30 A. Hoe groot is de spanning erover?",
+        "o": [
+         "67 V",
+         "6,0 V",
+         "0,015 V",
+         "20,3 V"
+        ],
+        "c": 1,
+        "d": 1,
+        "s": 2,
+        "u": "U = I · R = 0,30 × 20.",
+        "uo": [
+         "Koos je 67 V? Dan heb je 20 door 0,30 gedeeld. De wet van Ohm is U = I · R, vermenigvuldigen dus.",
+         "Klopt: spanning is stroom maal weerstand. U = I · R = 0,30 A × 20 Ω = 6,0 V.",
+         "Koos je 0,015 V? Dan heb je 0,30 door 20 gedeeld. Spanning is stroom maal weerstand.",
+         "Koos je 20,3 V? Dan heb je stroom en weerstand opgeteld. Vermenigvuldig ze."
+        ],
+        "uh": "U = I · R."
+       },
+       {
+        "v": "Een lampje op 12 V laat 0,40 A door. Hoe groot is zijn weerstand?",
+        "o": [
+         "30 Ω",
+         "4,8 Ω",
+         "0,033 Ω",
+         "12,4 Ω"
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 2,
+        "u": "Weerstand is spanning gedeeld door stroom.",
+        "uo": [
+         "Klopt: weerstand is spanning gedeeld door stroom. R = U / I = 12 V / 0,40 A = 30 Ω.",
+         "Koos je 4,8 Ω? Dan heb je U en I vermenigvuldigd: 12 × 0,40. Dat is het vermogen in watt, niet de weerstand.",
+         "Koos je 0,033 Ω? Dan heb je I / U gedaan. De weerstand is spanning gedeeld door stroom.",
+         "Koos je 12,4 Ω? Dan heb je spanning en stroom opgeteld. Deel de spanning door de stroom."
+        ],
+        "uh": "R = U / I."
+       },
+       {
+        "v": "Je zet 9,0 V over een weerstand van 2,2 kΩ. Welke stroom gaat erdoor?",
+        "o": [
+         "0,24 mA",
+         "4,1 A",
+         "20 A",
+         "4,1 mA"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 2,
+        "u": "I = U / R met R in ohm.",
+        "uo": [
+         "Koos je 0,24 mA? Dan heb je R / U gedaan: 2200 / 9,0. Gebruik I = U / R, met de spanning in de teller.",
+         "Koos je 4,1 A? Dan heb je met 2,2 Ω gerekend en de kilo vergeten. 2,2 kΩ is 2200 Ω, dus de stroom is duizend keer zo klein.",
+         "Koos je 20 A? Dan heb je U · R gedaan of de kilo verkeerd gebruikt. De stroom is spanning gedeeld door weerstand.",
+         "Klopt: 2,2 kΩ = 2200 Ω. I = U / R = 9,0 / 2200 = 0,0041 A = 4,1 mA."
+        ],
+        "uh": "kΩ omrekenen naar Ω."
+       },
+       {
+        "v": "Hoe groot is de stroom door het lichaam van de monteur als hij beide draden aanraakt?",
+        "o": [
+         "230 A",
+         "2,3 mA",
+         "0,23 A",
+         "23 A"
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 2,
+        "u": "I = U / R = 230 / 1000.",
+        "uo": [
+         "Koos je 230 A? Dan heb je met 1 Ω gerekend. Gebruik de weerstand van 1000 Ω.",
+         "Koos je 2,3 mA? Dat zou gelden bij een weerstand van 100 000 Ω, met droge huid. Hier is de huid nat.",
+         "Klopt: met natte handen is de weerstand van zijn lichaam ongeveer 1000 Ω. I = U / R = 230 / 1000 = 0,23 A. Dat is levensgevaarlijk: al vanaf ongeveer 30 mA kan het hart op hol slaan.",
+         "Koos je 23 A? Dan heb je met 10 Ω gerekend. 230 gedeeld door 1000 is 0,23."
+        ],
+        "uh": "Natte huid: kleine R, grote I.",
+        "ctx": "Een monteur werkt met natte handen aan een lamp en raakt per ongeluk tegelijk de fasedraad en de nuldraad aan, met 230 V ertussen. Met natte huid is de weerstand van zijn lichaam tussen beide handen ongeveer 1000 Ω, met droge huid ongeveer 100 000 Ω."
+       },
+       {
+        "v": "Welke spanning moet de voeding leveren om de led-strip precies de juiste stroom te geven?",
+        "o": [
+         "24 V",
          "12 V",
-         "0,75 V, gevonden door de stroom door de weerstand te delen"
-        ],
-        "c": 2,
-        "d": 2,
-        "u": "U = I x R = 3 x 4 = 12 V.",
-        "uo": [
-         "Optellen geeft geen spanning.",
-         "R / I is niet U.",
-         "Klopt: 3 x 4 = 12 V.",
-         "I / R is niet U."
-        ],
-        "uh": "U = I x R."
-       },
-       {
-        "v": "U = 10 V en R = 5 ohm. Bereken de stroom.",
-        "o": [
-         "50 A, gevonden door de spanning en de weerstand met elkaar te vermenigvuldigen",
-         "15 A, gevonden door de spanning en de weerstand bij elkaar op te tellen",
-         "0,5 A, gevonden door de weerstand door de spanning te delen",
-         "2 A"
-        ],
-        "c": 3,
-        "d": 2,
-        "u": "I = U / R = 10 / 5 = 2 A.",
-        "uo": [
-         "10 x 5 = 50 is niet I.",
-         "Optellen geeft geen stroom.",
-         "R / U is niet I.",
-         "Klopt: 10 / 5 = 2 A."
-        ],
-        "uh": "I = U / R."
-       },
-       {
-        "v": "Wat gebeurt met de stroom als je de weerstand verdubbelt (U gelijk)?",
-        "o": [
-         "De stroom halveert",
-         "De stroom wordt precies twee keer zo groot als daarvoor",
-         "De stroom blijft exact hetzelfde, want U verandert niet",
-         "De stroom wordt meteen nul en er loopt niets meer"
-        ],
-        "c": 0,
-        "d": 2,
-        "u": "I = U / R: als R twee keer zo groot wordt, wordt I twee keer zo klein.",
-        "uo": [
-         "Klopt: dubbele R geeft halve stroom.",
-         "De stroom verdubbelt niet, hij halveert.",
-         "De stroom blijft niet gelijk als R verandert.",
-         "De stroom wordt niet nul, alleen kleiner."
-        ],
-        "uh": "R x2 -> I gehalveerd (U gelijk)."
-       },
-       {
-        "v": "Een (U,I)-grafiek van een ohmse weerstand is een rechte lijn door de oorsprong. Wat betekent dat?",
-        "o": [
-         "De weerstand wordt steeds groter naarmate de spanning oploopt",
-         "R is constant",
-         "De weerstand wordt steeds kleiner naarmate de spanning oploopt",
-         "Er loopt helemaal geen stroom door de weerstand heen"
+         "6,0 V",
+         "3,0 V"
         ],
         "c": 1,
         "d": 3,
-        "u": "Een rechte lijn door de oorsprong betekent U/I constant, dus R is constant (ohms).",
+        "s": 2,
+        "u": "U = I · R = 0,60 × 20.",
         "uo": [
-         "Een rechte lijn betekent juist geen toenemende R.",
-         "Klopt: rechte lijn = constante R.",
-         "De R neemt niet af bij een rechte lijn.",
-         "Er loopt wel stroom; de lijn stijgt."
+         "Koos je 24 V? Dan zou de stroom 1,2 A worden, twee keer te veel. De strip kan daardoor oververhit raken.",
+         "Klopt: de strip moet 0,60 A krijgen en heeft een weerstand van 20 Ω. U = I · R = 0,60 × 20 = 12 V.",
+         "Koos je 6,0 V? Dan krijgt de strip maar 0,30 A en geeft hij te weinig licht. U = I · R = 12 V.",
+         "Koos je 3,0 V? Dan heb je 0,60 × 5 gedaan of door 4 gedeeld. Vermenigvuldig de stroom met 20 Ω."
         ],
-        "uh": "Rechte (U,I)-lijn door 0 = constante R."
+        "uh": "U = I · R.",
+        "ctx": "Een led-strip onder een keukenkastje moet een stroom van 0,60 A krijgen om goed te branden. Een leerling meet dat de strip, inclusief het voorschakelweerstandje, samen een weerstand van 20 Ω heeft. In de winkel liggen voedingen van 3, 6, 12 en 24 V."
        },
        {
-        "v": "Waarom noemen we een gewone weerstand \"ohms\"?",
+        "v": "Hoe ziet de (U,I)-grafiek van een ohmse weerstand eruit?",
         "o": [
-         "Omdat de weerstand van het onderdeel altijd precies nul ohm is",
-         "Omdat er alleen bij hele hoge spanning stroom doorheen kan gaan",
-         "R blijft gelijk bij elke spanning",
-         "Omdat de weerstand elke seconde spontaan van waarde verspringt"
-        ],
-        "c": 2,
-        "d": 3,
-        "u": "Een ohmse weerstand heeft een vaste R: U en I zijn recht evenredig.",
-        "uo": [
-         "De weerstand is niet nul.",
-         "Er loopt ook bij lage spanning stroom.",
-         "Klopt: R blijft gelijk (recht evenredig).",
-         "De weerstand verspringt niet."
-        ],
-        "uh": "Ohms = vaste R, U en I evenredig."
-       },
-       {
-        "v": "Twee weerstanden: 2 ohm en 10 ohm, zelfde spanning erover. Waar loopt de meeste stroom?",
-        "o": [
-         "Door de weerstand van 10 ohm, want een grotere weerstand trekt meer stroom",
-         "Door beide precies evenveel, de weerstand maakt hier niets uit",
-         "Door geen van beide, bij deze weerstanden loopt er niets",
-         "Door de weerstand van 2 ohm"
-        ],
-        "c": 3,
-        "d": 3,
-        "u": "Bij dezelfde spanning geldt I = U/R: de kleinste weerstand geeft de grootste stroom.",
-        "uo": [
-         "Grotere R geeft juist minder stroom.",
-         "De stroom is niet gelijk bij verschillende R.",
-         "Er loopt wel stroom door beide.",
-         "Klopt: kleinste R geeft grootste stroom."
-        ],
-        "uh": "Kleinste R -> grootste stroom (zelfde U)."
-       },
-       {
-        "v": "Een dikkere draad van hetzelfde metaal heeft welke weerstand?",
-        "o": [
-         "Een kleinere weerstand",
-         "Een grotere weerstand, want er is meer metaal dat de stroom tegenhoudt",
-         "Precies dezelfde weerstand, want de dikte doet er helemaal niet toe",
-         "Geen weerstand meer, een dikke draad laat alles zomaar door"
-        ],
-        "c": 0,
-        "d": 3,
-        "u": "Een dikkere draad biedt meer ruimte voor de stroom, dus minder weerstand.",
-        "uo": [
-         "Klopt: dikker geeft minder weerstand.",
-         "Dikker geeft juist minder, niet meer weerstand.",
-         "De dikte maakt wel uit.",
-         "Ook een dikke draad heeft weerstand."
-        ],
-        "uh": "Dikker -> minder weerstand."
-       },
-       {
-        "v": "Een langere draad van hetzelfde metaal heeft welke weerstand?",
-        "o": [
-         "Een kleinere weerstand, want een lange draad laat de stroom sneller door",
-         "Een grotere weerstand",
-         "Precies dezelfde weerstand, de lengte speelt hierbij geen enkele rol",
-         "Geen weerstand meer, bij een lange draad valt de weerstand weg"
-        ],
-        "c": 1,
-        "d": 3,
-        "u": "Hoe langer de draad, hoe meer de stroom wordt tegengewerkt: meer weerstand.",
-        "uo": [
-         "Langer geeft juist meer, niet minder weerstand.",
-         "Klopt: langer geeft meer weerstand.",
-         "De lengte maakt wel uit.",
-         "Ook een lange draad heeft geen nul."
-        ],
-        "uh": "Langer -> meer weerstand."
-       },
-       {
-        "v": "Je meet U = 8 V over een weerstand en I = 0,5 A. Bereken R.",
-        "o": [
-         "4 ohm, gevonden door de spanning en de stroom met elkaar te vermenigvuldigen",
-         "8,5 ohm, gevonden door de spanning en de stroom bij elkaar op te tellen",
-         "16 ohm",
-         "0,0625 ohm, gevonden door de stroom door de spanning te delen"
-        ],
-        "c": 2,
-        "d": 2,
-        "u": "R = U / I = 8 / 0,5 = 16 ohm.",
-        "uo": [
-         "8 x 0,5 = 4 is niet R.",
-         "Optellen geeft geen weerstand.",
-         "Klopt: 8 / 0,5 = 16 ohm.",
-         "I / U is niet R."
-        ],
-        "uh": "R = U / I."
-       },
-       {
-        "v": "Welke stap gebruik je om I te vinden uit U = I x R?",
-        "o": [
-         "I = U x R, dus stroom is spanning maal weerstand samen",
-         "I = R / U, dus stroom is weerstand gedeeld door spanning",
-         "I = U + R, dus stroom is spanning plus weerstand bij elkaar",
-         "I = U / R"
-        ],
-        "c": 3,
-        "d": 1,
-        "u": "Uit U = I x R volgt I = U / R.",
-        "uo": [
-         "I is niet U x R.",
-         "I is niet R / U.",
-         "Optellen mag niet bij deze formule.",
-         "Klopt: I = U / R."
-        ],
-        "uh": "I = U / R."
-       },
-       {
-        "v": "Welke stap gebruik je om R te vinden uit U = I x R?",
-        "o": [
-         "R = U / I",
-         "R = U x I, dus weerstand is spanning maal stroom bij elkaar",
-         "R = I / U, dus weerstand is stroom gedeeld door spanning",
-         "R = U - I, dus weerstand is spanning min stroom samen"
+         "een rechte lijn door de oorsprong",
+         "een horizontale lijn",
+         "een lijn die steeds steiler wordt",
+         "een lijn die steeds vlakker wordt"
         ],
         "c": 0,
         "d": 1,
-        "u": "Uit U = I x R volgt R = U / I.",
+        "s": 3,
+        "u": "Recht evenredig.",
         "uo": [
-         "Klopt: R = U / I.",
-         "R is niet U x I.",
-         "R is niet I / U.",
-         "Aftrekken mag niet bij deze formule."
+         "Klopt: bij een constante weerstand is de stroom recht evenredig met de spanning. Dat geeft een rechte lijn door de oorsprong.",
+         "Koos je horizontaal? Dan zou de stroom niet veranderen als je de spanning verhoogt. Bij een weerstand neemt de stroom juist evenredig toe.",
+         "Koos je steeds steiler? Dat hoort bij een onderdeel waarvan de weerstand afneemt, zoals een NTC die warm wordt. Bij een ohmse weerstand blijft de helling gelijk.",
+         "Koos je steeds vlakker? Dat zie je bij een gloeilamp, waarvan de weerstand toeneemt als hij warm wordt. Een ohmse weerstand geeft een rechte lijn."
         ],
-        "uh": "R = U / I."
+        "uh": "Rechte lijn door 0."
        },
        {
-        "v": "Een regelweerstand (schuifweerstand) gebruik je om wat te doen?",
+        "v": "In een (I,U)-grafiek met U op de horizontale as is lijn P steiler dan lijn Q. Wat weet je over de weerstanden?",
         "o": [
-         "De spanning van de batterij zelf blijvend groter te maken",
-         "De stroom instellen",
-         "Nieuwe lading aan de stroomkring toe te voegen tijdens gebruik",
-         "De draden van de schakeling kouder te maken dan de omgeving"
+         "dat kun je uit een grafiek niet halen",
+         "P heeft een grotere weerstand dan Q",
+         "P en Q hebben dezelfde weerstand",
+         "P heeft een kleinere weerstand dan Q"
         ],
-        "c": 1,
+        "c": 3,
         "d": 2,
-        "u": "Met een regelweerstand verander je R en dus de stroom in de kring.",
+        "s": 3,
+        "u": "Steiler: meer stroom per volt.",
         "uo": [
-         "Hij verhoogt de bronspanning niet.",
-         "Klopt: de stroom instellen via R.",
-         "Hij voegt geen lading toe.",
-         "Koelen is niet zijn doel."
+         "Koos je dat het niet kan? Uit de helling kun je juist de weerstand halen: R = U / I bij elk punt van de lijn.",
+         "Koos je grotere weerstand? Dat klopt als U verticaal staat en I horizontaal. Kijk daarom altijd goed welke grootheid op welke as staat.",
+         "Koos je dezelfde weerstand? Dan zouden de lijnen samenvallen. Verschillende hellingen betekenen verschillende weerstanden.",
+         "Klopt: met U op de horizontale as en I op de verticale as betekent een steilere lijn meer stroom per volt. Meer stroom bij dezelfde spanning betekent een kleinere weerstand."
         ],
-        "uh": "Regelweerstand -> stroom instellen."
+        "uh": "Let op welke as."
        },
        {
-        "v": "Waarom wordt een weerstand warm als er stroom door loopt?",
+        "v": "Hoe groot is de weerstand van de draad volgens de meting?",
         "o": [
-         "Omdat er koude lucht langs de buitenkant van de weerstand stroomt",
-         "Omdat de weerstand extra lading uit het niets laat ontstaan",
-         "Elektronen botsen tegen atomen",
-         "Omdat de spanning van de bron in de weerstand wordt opgeslagen"
+         "2,5 Ω",
+         "0,040 Ω",
+         "25 Ω",
+         "250 Ω"
         ],
         "c": 2,
         "d": 3,
-        "u": "De bewegende elektronen botsen tegen de atomen; die wrijving geeft warmte.",
+        "s": 3,
+        "u": "R = U / I in elk punt.",
         "uo": [
-         "Koude lucht is niet de warmtebron.",
-         "Er ontstaat geen nieuwe lading.",
-         "Klopt: botsingen geven warmte.",
-         "De spanning wordt niet opgeslagen."
+         "Koos je 2,5 Ω? Dan heb je de stroom in de verkeerde eenheid gelezen, bijvoorbeeld 2,0 A in plaats van 0,20 A. Lees de as goed af.",
+         "Koos je 0,040 Ω? Dan heb je I / U gedaan. De weerstand is spanning gedeeld door stroom.",
+         "Klopt: neem een punt op de lijn, bijvoorbeeld U = 5,0 V en I = 0,20 A. R = U / I = 5,0 / 0,20 = 25 Ω. Omdat het een rechte lijn door de oorsprong is, geeft elk punt dezelfde uitkomst.",
+         "Koos je 250 Ω? Dan heb je de stroom als 20 mA gelezen. Bij 5,0 V is de stroom 0,20 A, dus 200 mA."
         ],
-        "uh": "Botsingen elektronen-atomen -> warmte."
+        "uh": "Kies een punt, deel U door I.",
+        "ctx": "Een leerling meet de stroom door een constantaandraad bij verschillende spanningen. Ze tekent een (I,U)-grafiek met U op de horizontale as. De meetpunten liggen op een rechte lijn door de oorsprong; bij 5,0 V hoort een stroom van 0,20 A en bij 10,0 V een stroom van 0,40 A."
        },
        {
-        "v": "Bij een lampje neemt de weerstand toe als het heter wordt. Is dat lampje ohms?",
+        "v": "Welk onderdeel is niet ohms?",
         "o": [
-         "Ja, want de weerstand van een lampje blijft altijd precies gelijk",
-         "Ja, want elk onderdeel met een draad erin is per definitie ohms",
-         "Nee, want een lampje laat helemaal geen stroom door zich heen",
-         "Nee, R verandert"
-        ],
-        "c": 3,
-        "d": 3,
-        "u": "Ohms betekent constante R. Bij een gloeilampje verandert R met de temperatuur: niet-ohms.",
-        "uo": [
-         "De weerstand blijft niet gelijk bij een gloeilamp.",
-         "Niet elk draadonderdeel is ohms.",
-         "Een lampje laat wel stroom door.",
-         "Klopt: R verandert, dus niet-ohms."
-        ],
-        "uh": "Veranderende R = niet-ohms."
-       },
-       {
-        "v": "Twee identieke weerstanden achter elkaar (in serie). Wat geldt voor de totale weerstand?",
-        "o": [
-         "Die wordt groter",
-         "Die wordt kleiner dan de weerstand van één los onderdeel alleen",
-         "Die blijft precies gelijk aan de weerstand van één onderdeel",
-         "Die wordt meteen nul, twee weerstanden heffen elkaar op"
-        ],
-        "c": 0,
-        "d": 3,
-        "u": "In serie tel je de weerstanden op, dus de totale weerstand wordt groter.",
-        "uo": [
-         "Klopt: in serie wordt R groter (optellen).",
-         "In serie wordt R niet kleiner.",
-         "De totale R blijft niet gelijk.",
-         "De weerstanden heffen elkaar niet op."
-        ],
-        "uh": "Serie: weerstanden optellen -> groter."
-       },
-       {
-        "v": "Je wilt de stroom in een kring kleiner maken zonder de bron te veranderen. Wat doe je?",
-        "o": [
-         "De weerstand juist zo klein mogelijk maken in de kring",
-         "De weerstand vergroten",
-         "Een tweede identieke batterij extra in serie erbij zetten",
-         "Een dikkere draad met minder weerstand gebruiken"
+         "een constantaandraad",
+         "een gloeilamp",
+         "een koolweerstand bij kamertemperatuur",
+         "een metaalfilmweerstand"
         ],
         "c": 1,
-        "d": 3,
-        "u": "I = U / R: bij vaste U geeft een grotere weerstand een kleinere stroom.",
+        "d": 1,
+        "s": 4,
+        "u": "Gloeilamp: R stijgt met temperatuur.",
         "uo": [
-         "Kleinere R geeft juist meer stroom.",
-         "Klopt: grotere R geeft kleinere stroom.",
-         "Een extra batterij verhoogt de stroom.",
-         "Een dikkere draad verlaagt R, dus meer stroom."
+         "Koos je constantaan? Dat is juist een legering die gekozen wordt omdat de weerstand nauwelijks verandert met de temperatuur.",
+         "Klopt: de gloeidraad wordt heet als er meer stroom door gaat, en dan neemt zijn weerstand toe. De weerstand is dus niet constant: een gloeilamp is niet ohms.",
+         "Koos je een koolweerstand? Zolang hij niet heet wordt, blijft de weerstand vrijwel constant. Daarvoor is hij bedoeld.",
+         "Koos je een metaalfilmweerstand? Die is gemaakt om een vaste weerstand te hebben. Hij volgt de wet van Ohm."
         ],
-        "uh": "Kleinere stroom = grotere R (vaste U)."
+        "uh": "Gloeilamp."
        },
        {
-        "v": "Op een grafiek staat weerstand A steiler dan B (U tegen I). Welke heeft de grootste weerstand?",
+        "v": "Waarom wordt de (I,U)-grafiek van een gloeilamp steeds vlakker bij hogere spanning?",
         "o": [
-         "Weerstand B, want een minder steile lijn hoort bij meer weerstand",
-         "Ze hebben allebei precies dezelfde weerstand op de grafiek",
-         "Weerstand A",
-         "Geen van beide heeft een weerstand die je uit de lijn kunt halen"
-        ],
-        "c": 2,
-        "d": 3,
-        "u": "In een (U,I)-grafiek is R de steilheid: U/I. Steiler = grotere weerstand.",
-        "uo": [
-         "Minder steil is juist minder weerstand.",
-         "De lijnen verschillen, dus de R ook.",
-         "Klopt: de steilste lijn heeft de grootste R.",
-         "De steilheid geeft juist de weerstand."
-        ],
-        "uh": "Steilste (U,I)-lijn = grootste R."
-       },
-       {
-        "v": "Waarom gebruik je in gevoelige apparaten koperdraad en niet ijzerdraad?",
-        "o": [
-         "IJzer geleidt beter en heeft nog minder weerstand dan koper",
-         "Koper en ijzer hebben precies dezelfde weerstand per meter",
-         "IJzer heeft helemaal geen weerstand en verspilt dus geen energie",
-         "Koper heeft minder weerstand"
-        ],
-        "c": 3,
-        "d": 3,
-        "u": "Koper heeft een lagere weerstand dan ijzer, dus minder energieverlies als warmte.",
-        "uo": [
-         "IJzer geleidt juist slechter dan koper.",
-         "De weerstand per meter verschilt wel.",
-         "IJzer heeft wel degelijk weerstand.",
-         "Klopt: koper heeft de laagste weerstand."
-        ],
-        "uh": "Koper < ijzer in weerstand."
-       },
-       {
-        "v": "Bij U = 230 V loopt door een apparaat 0,5 A. Wat is de weerstand?",
-        "o": [
-         "460 ohm",
-         "115 ohm, gevonden door de spanning en de stroom met elkaar te vermenigvuldigen",
-         "230,5 ohm, gevonden door de spanning en de stroom bij elkaar op te tellen",
-         "0,0022 ohm, gevonden door de stroom door de spanning te delen"
+         "de draad wordt warmer en zijn weerstand neemt toe",
+         "de draad wordt warmer en zijn weerstand neemt af",
+         "er gaan minder elektronen door de lamp",
+         "de spanning wordt bij hogere waarden steeds kleiner"
         ],
         "c": 0,
         "d": 2,
-        "u": "R = U / I = 230 / 0,5 = 460 ohm.",
+        "s": 4,
+        "u": "Warmer: grotere R, minder stroom per volt.",
         "uo": [
-         "Klopt: 230 / 0,5 = 460 ohm.",
-         "230 x 0,5 = 115 is niet R.",
-         "Optellen geeft geen weerstand.",
-         "I / U is niet R."
+         "Klopt: bij een hogere spanning gaat er meer stroom door de draad, die daardoor heter wordt. In een hete metalen draad trillen de atomen harder en botsen de elektronen vaker: de weerstand neemt toe en de stroom groeit minder hard.",
+         "Koos je weerstand neemt af? Dan zou de grafiek juist steiler worden. Bij een metaal neemt de weerstand toe als het warmer wordt.",
+         "Koos je minder elektronen? Het aantal vrije elektronen verandert nauwelijks. Ze worden alleen vaker afgeremd door botsingen.",
+         "Koos je kleinere spanning? De spanning op de horizontale as neemt gewoon toe. Het is de stroom die minder hard groeit."
         ],
-        "uh": "R = U / I."
+        "uh": "Heter metaal: meer weerstand."
+       },
+       {
+        "v": "Hoe groot is de weerstand van de lamp bij 2,0 V en bij 6,0 V, en wat concludeer je?",
+        "o": [
+         "4,0 Ω en 12 Ω: de weerstand neemt toe",
+         "8,0 Ω en 8,0 Ω: de lamp is ohms",
+         "20 Ω en 8,0 Ω: de weerstand neemt af",
+         "8,0 Ω en 20 Ω: niet ohms"
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 4,
+        "u": "R = U / I in elk punt apart.",
+        "uo": [
+         "Koos je 4,0 Ω en 12 Ω? Dan heb je met de halve spanning gerekend. Gebruik de afgelezen waarden: 2,0 V bij 0,25 A en 6,0 V bij 0,30 A.",
+         "Koos je twee keer 8,0 Ω? Dan heb je bij 6,0 V met de verkeerde stroom gerekend. Reken R in elk punt apart uit.",
+         "Koos je 20 Ω en 8,0 Ω? Dan heb je de punten omgedraaid. Bij de lage spanning is de draad koeler en de weerstand kleiner.",
+         "Klopt: bij 2,0 V is R = 2,0 / 0,25 = 8,0 Ω, bij 6,0 V is R = 6,0 / 0,30 = 20 Ω. De weerstand neemt toe als de lamp warmer wordt, dus de lamp is niet ohms."
+        ],
+        "uh": "Reken R per punt.",
+        "ctx": "Een leerling meet de stroom door een fietslampje bij oplopende spanning. Bij 2,0 V meet ze 0,25 A en bij 6,0 V meet ze 0,30 A. Ze vraagt zich af of het lampje de wet van Ohm volgt."
+       },
+       {
+        "v": "Wat gebeurt er met de weerstand van een draad als je hem twee keer zo lang maakt?",
+        "o": [
+         "die blijft gelijk",
+         "die wordt twee keer zo klein",
+         "die wordt twee keer zo groot",
+         "die wordt vier keer zo groot"
+        ],
+        "c": 2,
+        "d": 1,
+        "s": 5,
+        "u": "Weerstand is recht evenredig met de lengte.",
+        "uo": [
+         "Koos je gelijk? Lengte maakt wel uit: in R = ρ · l / A staat l in de teller.",
+         "Koos je twee keer zo klein? Dat gebeurt als je de doorsnede twee keer zo groot maakt. Een langere draad geeft juist meer weerstand.",
+         "Klopt: de weerstand van een draad is recht evenredig met de lengte, R = ρ · l / A. De elektronen moeten een twee keer zo lange weg afleggen.",
+         "Koos je vier keer zo groot? Dat zou bij l² horen. De weerstand is recht evenredig met de lengte, dus twee keer zo groot."
+        ],
+        "uh": "Langer: meer weerstand."
+       },
+       {
+        "v": "Waarom is een verlengsnoer voor een waterkoker dikker dan een snoer voor een lampje?",
+        "o": [
+         "een dikkere draad laat de spanning toenemen",
+         "een dikkere draad heeft minder weerstand en wordt minder warm",
+         "een dikke draad houdt meer elektronen vast",
+         "dikke draden zijn verplicht bij elk snoer"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 5,
+        "u": "Grotere A: kleinere R.",
+        "uo": [
+         "Koos je meer spanning? De dikte van de draad verandert de spanning van het stopcontact niet. Hij verlaagt alleen de weerstand van het snoer.",
+         "Klopt: R = ρ · l / A. Een dikkere draad heeft een grotere doorsnede A en dus een kleinere weerstand. Bij de grote stroom van een waterkoker wordt de draad dan minder warm.",
+         "Koos je elektronen vasthouden? Een draad houdt geen elektronen vast; ze stromen door. Een dikke draad heeft meer ruimte, dus minder weerstand.",
+         "Koos je verplicht? Een lampje heeft genoeg aan een dun snoer. Voor grote stromen is een dikke draad nodig, anders wordt hij te warm."
+        ],
+        "uh": "Dik = weinig weerstand."
+       },
+       {
+        "v": "Hoe groot is de weerstand van de koperdraad van de verlengkabel?",
+        "o": [
+         "0,34 Ω",
+         "3,4 Ω",
+         "34 Ω",
+         "0,034 Ω"
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 5,
+        "u": "R = ρ · l / A.",
+        "uo": [
+         "Klopt: R = ρ · l / A = 17 · 10⁻⁹ × 50 / 2,5 · 10⁻⁶ = 0,34 Ω. Let op: 2,5 mm² = 2,5 · 10⁻⁶ m².",
+         "Koos je 3,4 Ω? Dan heb je 1 mm² als 10⁻⁵ m² genomen. 1 mm² = 10⁻⁶ m², dus deel door 2,5 · 10⁻⁶.",
+         "Koos je 34 Ω? Dan ben je twee machten van tien kwijt bij het omrekenen. Reken mm² om naar m² met 10⁻⁶.",
+         "Koos je 0,034 Ω? Dan heb je met 5,0 m of een te kleine lengte gerekend. De kabel is 50 m."
+        ],
+        "uh": "mm² = 10⁻⁶ m².",
+        "ctx": "Een kabelhaspel heeft een verlengkabel van 50 m met koperen aders van 2,5 mm² doorsnede. Volgens Binas is de soortelijke weerstand van koper 17 · 10⁻⁹ Ω · m. Een elektricien wil weten hoeveel weerstand één ader heeft."
+       },
+       {
+        "v": "Waarom heeft het verwarmingselement van een föhn een veel grotere weerstand dan het snoer?",
+        "o": [
+         "een grote weerstand maakt het element lichter van gewicht",
+         "een grote weerstand laat meer stroom door",
+         "het snoer moet de spanning verhogen",
+         "daar moet de energie worden omgezet"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 0,
+        "u": "Waar de weerstand groot is, wordt energie omgezet.",
+        "uo": [
+         "Koos je lichter? Weerstand heeft niets met gewicht te maken. Het element is juist zo gemaakt dat het warm wordt.",
+         "Koos je meer stroom? Een grote weerstand laat juist minder stroom door. Het gaat erom waar de energie wordt omgezet.",
+         "Koos je spanning verhogen? Een snoer verhoogt de spanning niet. Het brengt de stroom alleen naar het element, met zo min mogelijk verlies.",
+         "Klopt: element en snoer staan in serie, dus door beide gaat dezelfde stroom. Over het element met de grote weerstand staat bijna alle spanning; daar wordt de energie omgezet in warmte. Het snoer blijft koel."
+        ],
+        "uh": "Energie wordt omgezet bij grote R."
+       },
+       {
+        "v": "Je verdubbelt de spanning over een ohmse weerstand. Wat gebeurt er met de stroom?",
+        "o": [
+         "die blijft precies gelijk",
+         "die halveert",
+         "die verdubbelt",
+         "die wordt vier keer zo groot"
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 1,
+        "u": "I = U / R, R constant.",
+        "uo": [
+         "Koos je gelijk? Dan zou de weerstand mee verdubbelen. Bij een ohmse weerstand blijft R gelijk, dus de stroom groeit mee.",
+         "Koos je halveren? Dat zou gebeuren als je de weerstand verdubbelt bij dezelfde spanning. Meer spanning geeft juist meer stroom.",
+         "Klopt: bij een ohmse weerstand blijft R gelijk. Dan is I = U / R recht evenredig met U: twee keer zoveel spanning geeft twee keer zoveel stroom.",
+         "Koos je vier keer zo groot? Dat hoort bij een kwadratisch verband, zoals bij het vermogen. De stroom zelf groeit recht evenredig."
+        ],
+        "uh": "Recht evenredig."
+       },
+       {
+        "v": "Een weerstand van 150 Ω mag hooguit 40 mA doorlaten. Welke spanning mag er maximaal over staan?",
+        "o": [
+         "3,8 V",
+         "6,0 V",
+         "0,27 V",
+         "6000 V"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 2,
+        "u": "U = I · R = 0,040 × 150.",
+        "uo": [
+         "Koos je 3,8 V? Dan heb je 150 door 40 gedeeld. Gebruik U = I · R met de stroom in ampère.",
+         "Klopt: 40 mA = 0,040 A. U = I · R = 0,040 × 150 = 6,0 V. Bij een hogere spanning wordt de stroom te groot.",
+         "Koos je 0,27 V? Dan heb je de stroom door de weerstand gedeeld. Bij Ohm hoort vermenigvuldigen: 0,040 A maal 150 Ω.",
+         "Koos je 6000 V? Dan heb je 40 mA als 40 A gelezen. Reken eerst om: 40 mA = 0,040 A."
+        ],
+        "uh": "mA omrekenen naar A."
+       },
+       {
+        "v": "Hoe groot moet de voorschakelweerstand zijn zodat de led precies 20 mA krijgt?",
+        "o": [
+         "150 Ω",
+         "250 Ω",
+         "100 Ω",
+         "0,15 Ω"
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 2,
+        "u": "Spanning over R = 5,0 − 2,0 = 3,0 V.",
+        "uo": [
+         "Klopt: over de led staat 2,0 V, dus over de weerstand 5,0 − 2,0 = 3,0 V. Er gaat 20 mA = 0,020 A doorheen: R = 3,0 / 0,020 = 150 Ω.",
+         "Koos je 250 Ω? Dan heb je de hele 5,0 V gebruikt. Over de led zelf staat al 2,0 V; alleen de rest staat over de weerstand.",
+         "Koos je 100 Ω? Dan heb je de 2,0 V van de led genomen. Over de weerstand staat 3,0 V.",
+         "Koos je 0,15 Ω? Dan heb je met 20 A gerekend. Reken 20 mA om naar 0,020 A."
+        ],
+        "uh": "Eerst de spanning over R.",
+        "ctx": "Een rode led moet op een usb-poort van 5,0 V worden aangesloten. Over de led staat bij gebruik 2,0 V en hij mag precies 20 mA krijgen. In serie met de led komt een voorschakelweerstand, die de rest van de spanning opvangt."
+       },
+       {
+        "v": "Een leerling zet in een grafiek I op de horizontale as en U op de verticale as. Wat is dan de helling?",
+        "o": [
+         "de spanning U",
+         "de stroomsterkte I",
+         "het vermogen P",
+         "de weerstand R"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 3,
+        "u": "Helling = U / I = R.",
+        "uo": [
+         "Koos je de spanning? U staat op de verticale as. De helling is spanning per ampère: de weerstand.",
+         "Koos je de stroomsterkte? I staat op de as zelf. De helling is de verhouding tussen de verandering van U en van I.",
+         "Koos je het vermogen? Vermogen is U · I, een product. De helling is een deling: U / I.",
+         "Klopt: met I op de horizontale as en U op de verticale as is de helling ΔU / ΔI, en dat is precies de weerstand."
+        ],
+        "uh": "Helling = R."
+       },
+       {
+        "v": "Wat gebeurt er met de weerstand van een NTC als hij warmer wordt?",
+        "o": [
+         "die blijft gelijk",
+         "die neemt toe",
+         "die neemt af",
+         "die wordt precies nul"
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 4,
+        "u": "NTC: negatieve temperatuurcoëfficiënt.",
+        "uo": [
+         "Koos je gelijk? Een gewone vaste weerstand houdt bij elke temperatuur ongeveer dezelfde waarde. Een NTC is juist gemaakt om sterk op warmte te reageren.",
+         "Koos je toenemen? Dat gebeurt bij een metalen draad, zoals een gloeidraad. Een NTC doet precies het omgekeerde.",
+         "Klopt: NTC betekent negatieve temperatuurcoëfficiënt. Hoe warmer, hoe kleiner de weerstand. Daarom gebruik je hem als temperatuursensor.",
+         "Koos je nul? De weerstand neemt af, maar wordt niet nul. Hij blijft een eindige waarde houden, ook bij hoge temperatuur."
+        ],
+        "uh": "Warmer: kleiner."
+       },
+       {
+        "v": "Welke draad heeft de kleinste weerstand?",
+        "o": [
+         "een lange, dunne koperdraad",
+         "een korte, dikke koperdraad",
+         "een korte, dunne ijzerdraad",
+         "een lange, dikke ijzerdraad"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 5,
+        "u": "Kort, dik en goed geleidend materiaal.",
+        "uo": [
+         "Koos je lang en dun? Dat geeft juist de grootste weerstand: een grote lengte en een kleine doorsnede.",
+         "Klopt: R = ρ · l / A. Een korte draad (kleine l), een dikke draad (grote A) en koper met een kleine soortelijke weerstand ρ geven samen de kleinste weerstand.",
+         "Koos je kort en dun ijzer? Ijzer heeft een grotere soortelijke weerstand dan koper, en een dunne draad heeft een kleine doorsnede.",
+         "Koos je lang en dik ijzer? Dik helpt wel, maar de draad is lang en ijzer geleidt slechter dan koper."
+        ],
+        "uh": "R = ρ · l / A."
+       },
+       {
+        "v": "Hoe lang moet de constantaandraad zijn om een weerstand van 10 Ω te krijgen?",
+        "o": [
+         "4,0 m",
+         "40 m",
+         "0,40 m",
+         "2,5 m"
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 5,
+        "u": "l = R · A / ρ.",
+        "uo": [
+         "Klopt: l = R · A / ρ = 10 × 0,20 · 10⁻⁶ / 0,50 · 10⁻⁶ = 4,0 m.",
+         "Koos je 40 m? Dan heb je een factor tien verkeerd gezet bij de doorsnede: 0,20 mm² is 0,20 · 10⁻⁶ m², niet 2,0 · 10⁻⁶.",
+         "Koos je 0,40 m? Dan ben je een factor tien te klein uitgekomen. Controleer de machten van tien in A en ρ.",
+         "Koos je 2,5 m? Dan heb je ρ / (R · A) of iets omgekeerd gedaan. Schrijf R = ρ · l / A om naar l = R · A / ρ."
+        ],
+        "uh": "Formule omschrijven.",
+        "ctx": "Voor een practicum wil een docent een weerstand van 10 Ω maken van constantaandraad met een doorsnede van 0,20 mm². Volgens Binas is de soortelijke weerstand van constantaan 0,50 · 10⁻⁶ Ω · m. Hij wikkelt de draad op een klosje."
+       },
+       {
+        "v": "Welke conclusie trek je uit de meting aan het onderdeel?",
+        "o": [
+         "er is iets mis met de meter, want dit kan niet",
+         "de weerstand blijft gelijk: het onderdeel volgt de wet van Ohm",
+         "de weerstand neemt toe: het moet een gloeilamp zijn",
+         "de weerstand neemt af: niet ohms"
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 4,
+        "u": "R = U / I per punt: 50, 25 en 12,5 Ω.",
+        "uo": [
+         "Koos je een kapotte meter? Veel onderdelen zijn niet ohms, zoals een diode of een NTC. De meting kan prima kloppen.",
+         "Koos je gelijk? Dan zou de stroom recht evenredig groeien: 0,020, 0,040 en 0,060 A. De gemeten stroom groeit veel harder.",
+         "Koos je toenemen en een gloeilamp? Bij een gloeilamp groeit de stroom juist minder hard. Hier groeit hij steeds harder, dus de weerstand neemt af.",
+         "Klopt: bij 1,0 V is R = 1,0 / 0,020 = 50 Ω, bij 2,0 V is R = 2,0 / 0,080 = 25 Ω en bij 3,0 V is R = 3,0 / 0,24 = 12,5 Ω. De weerstand neemt af, dus het onderdeel volgt de wet van Ohm niet."
+        ],
+        "uh": "Reken R per meetpunt.",
+        "ctx": "Een leerling meet aan een onbekend onderdeel. Bij 1,0 V gaat er 20 mA door, bij 2,0 V 80 mA en bij 3,0 V 240 mA. In haar grafiek loopt de lijn steeds steiler omhoog."
        }
       ],
       "oe": [
        {
-        "vraag": "Schrijf de wet van Ohm op en leg met een voorbeeld uit hoe je met deze formule de stroom berekent.",
-        "antwoord": "De wet van Ohm is U = I x R, met U de spanning in volt, I de stroom in ampère en R de weerstand in ohm. Om de stroom te berekenen schrijf je de formule om naar I = U / R. Voorbeeld: bij U = 12 V en R = 4 ohm is I = 12 / 4 = 3 A. De stroom is dus 3 ampère."
+        "bron": "Examenstijl",
+        "ctx": "Een leerling meet aan een draadje van constantaan. Bij een spanning van 3,0 V gaat er 0,12 A door. De draad is 1,5 m lang. Volgens Binas is de soortelijke weerstand van constantaan 0,50 · 10⁻⁶ Ω · m.",
+        "v": "Bereken de weerstand van de draad en de doorsnede in mm², en voorspel de stroom als de spanning 4,5 V wordt.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "R = U / I = 3,0 / 0,12 = 25 Ω (1p). A = ρ · l / R = 0,50 · 10⁻⁶ × 1,5 / 25 = 3,0 · 10⁻⁸ m² = 0,030 mm² (1p). Constantaan is ohms, dus I = 4,5 / 25 = 0,18 A (1p)."
        },
        {
-        "vraag": "Leg uit wat het betekent dat een weerstand \"ohms\" is en hoe je dat aan een (U,I)-grafiek ziet.",
-        "antwoord": "Een weerstand is ohms als de weerstand R niet verandert wanneer de spanning verandert. Spanning en stroom zijn dan recht evenredig: twee keer zoveel spanning geeft twee keer zoveel stroom. In een (U,I)-grafiek zie je dat als een rechte lijn door de oorsprong. De steilheid van die lijn is de weerstand: hoe steiler, hoe groter R."
+        "bron": "Examenstijl",
+        "ctx": "Een blauwe led moet op een accu van 12 V worden aangesloten. Over de led staat bij gebruik 3,2 V en de stroom moet 25 mA zijn. In de doos zitten weerstanden van 150, 330, 470 en 1000 Ω.",
+        "v": "Bereken welke voorschakelweerstand precies nodig is en leg uit welke weerstand uit de doos je kiest.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Over de weerstand staat 12 − 3,2 = 8,8 V (1p). R = 8,8 / 0,025 = 352 Ω (1p). Kies 470 Ω: dan wordt de stroom iets kleiner (19 mA) en loop je geen risico op een te grote stroom; 330 Ω geeft 27 mA, iets te veel (1p)."
        },
        {
-        "vraag": "Bereken de weerstand van een onderdeel waarover 9 V staat terwijl er 0,3 A doorheen loopt. Toon je berekening.",
-        "antwoord": "Je gebruikt de wet van Ohm omgeschreven naar R: R = U / I. Invullen geeft R = 9 / 0,3 = 30. De weerstand is dus 30 ohm."
+        "bron": "Examenstijl",
+        "ctx": "Een leerling meet de stroom door een fietslampje: bij 1,0 V 0,15 A, bij 3,0 V 0,25 A en bij 6,0 V 0,33 A. Haar buurman zegt dat het lampje gewoon een vaste weerstand heeft van 18 Ω.",
+        "v": "Bereken de weerstand bij elk meetpunt, beoordeel de uitspraak van de buurman en verklaar de verandering.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "R = 6,7 Ω, 12 Ω en 18 Ω (1p). De weerstand is niet vast, dus het lampje is niet ohms; de buurman heeft alleen gelijk bij 6,0 V (1p). Bij een grotere stroom wordt de gloeidraad heter en heeft het metaal meer weerstand (1p)."
        },
        {
-        "vraag": "Leg uit waarom een lange, dunne draad meer weerstand heeft dan een korte, dikke draad van hetzelfde metaal.",
-        "antwoord": "De weerstand hangt af van de lengte en de dikte van de draad. Hoe langer de draad, hoe meer de elektronen onderweg tegen atomen botsen, dus hoe groter de weerstand. Hoe dikker de draad, hoe meer ruimte de stroom heeft, dus hoe kleiner de weerstand. Een lange en dunne draad combineert allebei de effecten die de weerstand vergroten, dus die heeft de grootste weerstand."
+        "bron": "Examenstijl",
+        "ctx": "Een waterkoker van 2000 W op 230 V wordt aangesloten met een verlengkabel van 25 m. Elke koperader heeft een doorsnede van 0,75 mm²; de stroom gaat heen door de ene ader en terug door de andere. De soortelijke weerstand van koper is 17 · 10⁻⁹ Ω · m.",
+        "v": "Bereken de stroom, de weerstand van de twee aders samen en de spanning die over de kabel verloren gaat.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "I = P / U = 2000 / 230 = 8,7 A (1p). R = 17 · 10⁻⁹ × 50 / 0,75 · 10⁻⁶ = 1,1 Ω (1p). U = I · R = 8,7 × 1,1 = 9,9 V gaat verloren over de kabel (1p)."
        },
        {
-        "vraag": "Een gloeilampje wordt heter naarmate er meer stroom doorheen loopt en de weerstand neemt daarbij toe. Is dit lampje ohms? Leg uit.",
-        "antwoord": "Nee, dit lampje is niet ohms. Ohms betekent dat de weerstand constant blijft, ongeacht de spanning. Bij dit lampje verandert de weerstand juist: als het heter wordt, wordt R groter. Spanning en stroom zijn dan niet meer recht evenredig, dus de (U,I)-grafiek is geen rechte lijn maar een kromme. Daarom noem je het een niet-ohmse weerstand."
+        "bron": "Examenstijl",
+        "ctx": "Een elektricien waarschuwt: \"Met droge handen heb je tussen je handen zo'n 100 kΩ weerstand, met natte handen nog maar 1 kΩ. Een stroom van meer dan 30 mA door je lichaam kan dodelijk zijn.\" Het lichtnet heeft een spanning van 230 V.",
+        "v": "Bereken de stroom door het lichaam met droge en met natte handen en leg uit welke situatie gevaarlijk is.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Droog: I = 230 / 100 000 = 2,3 mA (1p). Nat: I = 230 / 1000 = 0,23 A = 230 mA (1p). Met natte handen is de stroom veel groter dan 30 mA en dus levensgevaarlijk; met droge handen voel je een schok, maar ligt de stroom onder die grens (1p)."
        }
       ]
      },
