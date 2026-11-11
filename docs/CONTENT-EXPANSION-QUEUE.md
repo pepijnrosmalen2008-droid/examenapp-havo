@@ -510,7 +510,7 @@ vragen zijn grondstof, niet heilig.
   - [x] O5 · bi.O.5 Transport en gasuitwisseling
   - [x] O6 · bi.O.6 Spijsvertering en uitscheiding
   - [x] O7 · bi.O.7 Beweging: gewrichten en spieren
-- [ ] **HAVO · Biologie** (`bi`) · domein P (opwaarderen)
+- [x] **HAVO · Biologie** (`bi`) · domein P (opwaarderen)  (alle leerdoelen op v2)
   - [x] P1 · bi.P.1 Ecosystemen: biotische en abiotische factoren
   - [x] P2 · bi.P.2 Voedselrelaties en energiedoorgifte
   - [x] P3 · bi.P.3 Populatiedynamiek en draagkracht
