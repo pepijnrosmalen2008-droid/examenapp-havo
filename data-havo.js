@@ -102794,565 +102794,689 @@ var VAKKEN = [
      },
      {
       "id": "D4",
+      "lo": "na.D.4",
+      "gs": 2,
       "naam": "Vermogen en energie",
-      "beschrijving": "Rekenen met elektrisch vermogen (P = U x I) en energie (E = P x t), omgaan met de eenheden watt, joule en kWh en energiekosten berekenen.",
-      "ceStatus": "ce",
+      "beschrijving": "Je rekent met elektrisch vermogen (P = U · I) en energie (E = P · t), werkt met watt, joule en kilowattuur, berekent energiekosten en terugverdientijd, gebruikt rendement om zuinigheid te vergelijken en schrijft formules om, ook in combinatie met de wet van Ohm.",
+      "ceStatus": "CE",
+      "binas": "35D",
+      "val": "",
       "onderwerpen": [
-       "Vermogen: P = U x I",
-       "Energie: E = P x t",
+       "Vermogen: P = U · I",
+       "Energie: E = P · t",
        "Eenheden watt, joule en kWh",
        "Energiekosten berekenen",
        "Warmteverlies en zuinigheid",
        "Formules omschrijven"
       ],
-      "sam": "Vermogen P is de energie die een apparaat per seconde omzet; je meet het in watt (W), waarbij 1 W gelijk is aan 1 joule per seconde. Je berekent het elektrische vermogen met P = U x I: spanning maal stroom. De energie die een apparaat in een bepaalde tijd gebruikt, bereken je met E = P x t: vermogen maal tijd. In de natuurkunde reken je energie in joule, met de tijd in seconden. Op de energierekening wordt energie gegeven in kilowattuur (kWh): het vermogen in kilowatt maal de tijd in uren. De kosten zijn dan het verbruik in kWh maal de prijs per kWh. Uit de formules haal je ook I = P / U en t = E / P. Veel apparaten verliezen een deel van de energie als warmte: een gloeilamp zet maar een klein deel om in licht en de rest in warmte, terwijl een ledlamp veel minder warmte verliest en daarom zuiniger is. Hoe hoger het vermogen en hoe langer een apparaat aanstaat, hoe meer energie het gebruikt en hoe hoger de kosten.",
+      "sam": "P = U · I in watt (energie per seconde); I = P / U. E = P · t: W × s = J, kW × h = kWh; 1 kWh = 3,6 MJ; jaar = 8760 h. Kosten = kWh × prijs; terugverdientijd = extra kosten / besparing per jaar. Rendement η = nuttig / totaal; gloeilamp 5%, led 40%. Omschrijven: U = P / I, t = E / P, R = U² / P; vaste R: halve spanning geeft een kwart vermogen.",
       "begrippen": [
        {
-        "t": "Vermogen (P)",
-        "d": "de energie die een apparaat per seconde omzet, in watt"
+        "t": "Elektrisch vermogen",
+        "d": "Energie die per seconde wordt omgezet: P = U · I, in watt."
        },
        {
-        "t": "Watt (W)",
-        "d": "de eenheid van vermogen; 1 watt is 1 joule per seconde"
+        "t": "Watt",
+        "d": "Eenheid van vermogen: 1 W = 1 J/s."
        },
        {
-        "t": "Energie (E)",
-        "d": "de hoeveelheid arbeid of omgezette energie, in joule of kWh"
+        "t": "Energie",
+        "d": "E = P · t, in joule of kilowattuur."
        },
        {
-        "t": "Joule (J)",
-        "d": "de natuurkundige eenheid van energie; 1 J is 1 watt gedurende 1 seconde"
+        "t": "Joule",
+        "d": "SI-eenheid van energie: 1 J = 1 W · s."
        },
        {
-        "t": "P = U x I",
-        "d": "het vermogen is de spanning maal de stroom door het apparaat"
-       },
-       {
-        "t": "E = P x t",
-        "d": "de energie is het vermogen maal de tijd dat het apparaat aanstaat"
-       },
-       {
-        "t": "Kilowattuur (kWh)",
-        "d": "energie-eenheid op de rekening: 1 kW gedurende 1 uur"
-       },
-       {
-        "t": "Wattage",
-        "d": "het vermogen dat op een apparaat staat, in watt"
+        "t": "Kilowattuur",
+        "d": "Energie van 1 kW gedurende een uur: 1 kWh = 3,6 · 10⁶ J."
        },
        {
         "t": "Energiekosten",
-        "d": "het verbruik in kWh maal de prijs per kWh"
+        "d": "Verbruikte energie in kWh maal de prijs per kWh."
+       },
+       {
+        "t": "Terugverdientijd",
+        "d": "Extra aankoopprijs gedeeld door de besparing per jaar."
+       },
+       {
+        "t": "Rendement",
+        "d": "Nuttig deel van het vermogen of de energie: η = P_nuttig / P_totaal."
        },
        {
         "t": "Warmteverlies",
-        "d": "energie die als warmte verloren gaat in plaats van nuttig te worden"
+        "d": "Energie die als ongewenste warmte verloren gaat."
        },
        {
-        "t": "Ledlamp",
-        "d": "zuinige lamp die veel minder energie als warmte verliest dan een gloeilamp"
+        "t": "Typeplaatje",
+        "d": "Plaatje op een apparaat met onder andere spanning en vermogen."
        },
        {
-        "t": "Zuinig apparaat",
-        "d": "een apparaat dat minder watt gebruikt voor hetzelfde nut"
+        "t": "Stand-by",
+        "d": "Toestand waarin een apparaat uit lijkt, maar nog steeds energie gebruikt."
        }
       ],
       "sv": [
        {
-        "v": "Wat is elektrisch vermogen?",
+        "v": "Met welke formule bereken je het elektrisch vermogen van een apparaat?",
         "o": [
-         "De energie die per seconde wordt omgezet",
-         "De totale hoeveelheid lading die een apparaat in zich opslaat",
-         "De weerstand die een apparaat biedt aan de doorlopende stroom",
-         "De spanning die het stopcontact aan het apparaat levert"
-        ],
-        "c": 0,
-        "d": 1,
-        "u": "Vermogen P is de energie die een apparaat per seconde omzet.",
-        "uo": [
-         "Klopt: vermogen is energie per seconde.",
-         "Opgeslagen lading is geen vermogen.",
-         "Weerstand is geen vermogen.",
-         "Spanning alleen is geen vermogen."
-        ],
-        "uh": "Vermogen = energie per seconde."
-       },
-       {
-        "v": "In welke eenheid meet je vermogen?",
-        "o": [
-         "Joule, dezelfde eenheid die je voor de hoeveelheid energie gebruikt",
-         "Watt (W)",
-         "Volt, de eenheid die hoort bij de elektrische spanning",
-         "Ampère, de eenheid die je voor de stroomsterkte gebruikt"
-        ],
-        "c": 1,
-        "d": 1,
-        "u": "Vermogen P meet je in watt (W). 1 W = 1 joule per seconde.",
-        "uo": [
-         "Joule hoort bij energie, niet vermogen.",
-         "Klopt: vermogen in watt.",
-         "Volt hoort bij spanning.",
-         "Ampère hoort bij stroom."
-        ],
-        "uh": "Vermogen -> watt (W)."
-       },
-       {
-        "v": "Welke formule gebruik je voor elektrisch vermogen?",
-        "o": [
-         "P = U gedeeld door I, dus vermogen is spanning gedeeld door stroom",
-         "P = U plus I, dus vermogen is spanning plus stroom bij elkaar",
-         "P = U x I",
-         "P = I gedeeld door U, dus vermogen is stroom gedeeld door spanning"
+         "P = I / U",
+         "P = U / I",
+         "P = U · I",
+         "P = U · I · t"
         ],
         "c": 2,
         "d": 1,
-        "u": "Vermogen: P = U x I (spanning maal stroom).",
+        "s": 0,
+        "u": "Vermogen is spanning maal stroom.",
         "uo": [
-         "P is niet U gedeeld door I.",
-         "Optellen mag hier niet.",
-         "Klopt: P = U x I.",
-         "P is niet I gedeeld door U."
+         "Koos je P = I / U? Dat is het omgekeerde van de weerstand. Vermogen groeit met zowel spanning als stroom, dus vermenigvuldig ze.",
+         "Koos je P = U / I? Dat is de weerstand, R = U / I, in ohm. Vermogen is een product van spanning en stroom.",
+         "Klopt: het elektrisch vermogen is spanning maal stroomsterkte, P = U · I. Elke coulomb geeft U joule af, en er komen I coulomb per seconde langs: samen U · I joule per seconde.",
+         "Koos je P = U · I · t? Dat is de energie die in een tijd t wordt omgezet, in joule. Vermogen is energie per seconde, dus zonder de tijd."
         ],
-        "uh": "P = U x I."
+        "uh": "P = U · I."
        },
        {
-        "v": "Welke formule gebruik je voor elektrische energie?",
+        "v": "Een föhn op 230 V trekt een stroom van 7,0 A. Hoe groot is zijn vermogen?",
         "o": [
-         "E = P gedeeld door t, dus energie is vermogen gedeeld door tijd",
-         "E = P plus t, dus energie is vermogen plus tijd bij elkaar",
-         "E = t gedeeld door P, dus energie is tijd gedeeld door vermogen",
-         "E = P x t"
-        ],
-        "c": 3,
-        "d": 1,
-        "u": "Energie: E = P x t (vermogen maal tijd).",
-        "uo": [
-         "E is niet P gedeeld door t.",
-         "Optellen mag hier niet.",
-         "E is niet t gedeeld door P.",
-         "Klopt: E = P x t."
-        ],
-        "uh": "E = P x t."
-       },
-       {
-        "v": "In welke eenheid meet je elektrische energie in de natuurkunde?",
-        "o": [
-         "Joule (J)",
-         "Watt, dezelfde eenheid die je eigenlijk voor het vermogen gebruikt",
-         "Volt, de eenheid die hoort bij de elektrische spanning",
-         "Ohm, de eenheid die je gebruikt voor de weerstand"
-        ],
-        "c": 0,
-        "d": 1,
-        "u": "Energie E meet je in joule (J). De energierekening gebruikt kWh.",
-        "uo": [
-         "Klopt: energie in joule.",
-         "Watt hoort bij vermogen.",
-         "Volt hoort bij spanning.",
-         "Ohm hoort bij weerstand."
-        ],
-        "uh": "Energie -> joule (J)."
-       },
-       {
-        "v": "Een apparaat: U = 230 V, I = 2 A. Bereken het vermogen.",
-        "o": [
-         "115 W, gevonden door de spanning door de stroom te delen",
-         "460 W",
-         "232 W, gevonden door de spanning en de stroom bij elkaar op te tellen",
-         "0,0087 W, gevonden door de stroom door de spanning te delen"
+         "32,9 W",
+         "1,6 kW",
+         "237 W",
+         "16 kW"
         ],
         "c": 1,
         "d": 2,
-        "u": "P = U x I = 230 x 2 = 460 W.",
+        "s": 0,
+        "u": "P = 230 × 7,0.",
         "uo": [
-         "Delen geeft geen vermogen.",
-         "Klopt: 230 x 2 = 460 W.",
-         "Optellen geeft geen vermogen.",
-         "I / U is niet P."
+         "Koos je 32,9 W? Dan heb je 230 door 7,0 gedeeld. Dat is de weerstand in ohm, niet het vermogen.",
+         "Klopt: P = U · I = 230 × 7,0 = 1610 W = 1,6 kW.",
+         "Koos je 237 W? Dan heb je spanning en stroom opgeteld. Vermenigvuldig ze met elkaar.",
+         "Koos je 16 kW? Dan staat de komma verkeerd. 230 × 7,0 = 1610 W, dus 1,6 kW."
         ],
-        "uh": "P = U x I."
+        "uh": "P = U · I."
        },
        {
-        "v": "Een lamp van 60 W brandt 2 uur. Reken uur eerst om: hoeveel seconden is 2 uur?",
+        "v": "Welke stroom trekt een lamp van 60 W op het lichtnet van 230 V?",
         "o": [
-         "120 s, gevonden door de twee uur simpelweg maal zestig te doen",
-         "3600 s, want twee uur is precies gelijk aan één uur in seconden",
-         "7200 s",
-         "20 s, gevonden door zestig door drie te delen bij benadering"
-        ],
-        "c": 2,
-        "d": 2,
-        "u": "1 uur = 3600 s, dus 2 uur = 2 x 3600 = 7200 s.",
-        "uo": [
-         "Maal 60 geeft 120, dat zijn minuten in seconden.",
-         "3600 s is maar één uur.",
-         "Klopt: 2 x 3600 = 7200 s.",
-         "20 s klopt niet."
-        ],
-        "uh": "1 uur = 3600 s."
-       },
-       {
-        "v": "Een lamp van 60 W brandt 7200 s. Bereken de energie in joule.",
-        "o": [
-         "120 J, gevonden door het vermogen en de tijd bij elkaar op te tellen",
-         "432 J, gevonden door het vermogen door de tijd te delen",
-         "0,0083 J, gevonden door de tijd door het vermogen te delen",
-         "432000 J"
-        ],
-        "c": 3,
-        "d": 2,
-        "u": "E = P x t = 60 x 7200 = 432000 J.",
-        "uo": [
-         "Optellen geeft geen energie.",
-         "Delen geeft geen energie.",
-         "t / P is niet E.",
-         "Klopt: 60 x 7200 = 432000 J."
-        ],
-        "uh": "E = P x t."
-       },
-       {
-        "v": "Wat betekent kWh?",
-        "o": [
-         "Kilowattuur, een eenheid van energie",
-         "Kilowatt, een eenheid die eigenlijk het vermogen aangeeft",
-         "Kilowatt per uur, een maat voor hoe snel het vermogen stijgt",
-         "Kilo-ohm, een eenheid die hoort bij een grote weerstand"
+         "0,26 A",
+         "3,8 A",
+         "13,8 kA",
+         "290 A"
         ],
         "c": 0,
         "d": 2,
-        "u": "kWh is een energie-eenheid: vermogen (kW) maal tijd (uur), gebruikt op de rekening.",
+        "s": 0,
+        "u": "I = P / U = 60 / 230.",
         "uo": [
-         "Klopt: kWh is een eenheid van energie.",
-         "Kilowatt alleen is vermogen, geen energie.",
-         "kWh is geen snelheid van het vermogen.",
-         "kWh heeft niets met ohm te maken."
+         "Klopt: I = P / U = 60 / 230 = 0,26 A. Een gewone lamp trekt dus maar een kleine stroom.",
+         "Koos je 3,8 A? Dan heb je 230 door 60 gedeeld. De stroom is vermogen gedeeld door spanning.",
+         "Koos je 13,8 kA? Dan heb je vermenigvuldigd: 60 × 230. Dat is geen stroom; deel het vermogen door de spanning.",
+         "Koos je 290 A? Dan heb je vermogen en spanning opgeteld. Gebruik I = P / U."
         ],
-        "uh": "kWh = energie (kW maal uur)."
+        "uh": "I = P / U."
        },
        {
-        "v": "Een apparaat van 1000 W staat 3 uur aan. Hoeveel kWh gebruikt het?",
+        "v": "Welk vermogen levert de laadpaal aan de auto?",
         "o": [
-         "3000 kWh, gevonden door het aantal watt maal de uren te nemen",
-         "3 kWh",
-         "0,33 kWh, gevonden door de uren door het vermogen te delen",
-         "1003 kWh, gevonden door het vermogen en de uren op te tellen"
+         "6,4 kW",
+         "400 V",
+         "16 A",
+         "11 kW"
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 0,
+        "u": "P = U · I = 400 × 16 × 1,73.",
+        "uo": [
+         "Koos je 6,4 kW? Dan heb je 400 × 16 gedaan en de factor voor drie fasen vergeten. De opgave geeft die factor 1,73.",
+         "Koos je 400 V? Dat is de spanning, geen vermogen. Vermogen druk je uit in watt.",
+         "Koos je 16 A? Dat is de stroom per fase. Het vermogen volgt uit spanning en stroom samen.",
+         "Klopt: een laadpaal met drie fasen levert P = 400 × 16 × 1,73 = 11 · 10³ W = 11 kW. Dat staat ook vaak op de paal: 11 kW."
+        ],
+        "uh": "Gebruik de gegeven formule.",
+        "ctx": "Een thuislader voor een elektrische auto werkt met drie fasen van 400 V en een stroom van 16 A per fase. Voor zo'n driefasenaansluiting geldt P = U · I · 1,73. De eigenaar wil weten welk vermogen de lader levert."
+       },
+       {
+        "v": "Hoeveel energie zet een apparaat van 500 W in 10 s om?",
+        "o": [
+         "510 J",
+         "50 J",
+         "5,0 kJ",
+         "0,020 J"
+        ],
+        "c": 2,
+        "d": 1,
+        "s": 1,
+        "u": "E = P · t = 500 × 10.",
+        "uo": [
+         "Koos je 510 J? Dan heb je vermogen en tijd opgeteld. Vermenigvuldig ze.",
+         "Koos je 50 J? Dan heb je 500 door 10 gedeeld. Energie is vermogen maal tijd.",
+         "Klopt: E = P · t = 500 W × 10 s = 5000 J = 5,0 kJ.",
+         "Koos je 0,020 J? Dan heb je 10 door 500 gedeeld. Een langere tijd geeft juist meer energie."
+        ],
+        "uh": "E = P · t."
+       },
+       {
+        "v": "Een stofzuiger van 1,8 kW staat een kwartier aan. Hoeveel energie gebruikt hij in kWh?",
+        "o": [
+         "27 kWh",
+         "0,45 kWh",
+         "7,2 kWh",
+         "1,8 kWh"
         ],
         "c": 1,
         "d": 2,
-        "u": "1000 W = 1 kW; energie = 1 kW x 3 uur = 3 kWh.",
+        "s": 1,
+        "u": "E = 1,8 kW × 0,25 h.",
         "uo": [
-         "Je moet eerst naar kW: 1000 W is 1 kW.",
-         "Klopt: 1 kW x 3 uur = 3 kWh.",
-         "Delen klopt niet hier.",
-         "Optellen geeft geen energie."
+         "Koos je 27 kWh? Dan heb je met 15 uur gerekend in plaats van 15 minuten. Een kwartier is 0,25 h.",
+         "Klopt: een kwartier is 0,25 h. E = P · t = 1,8 kW × 0,25 h = 0,45 kWh.",
+         "Koos je 7,2 kWh? Dan heb je door 0,25 gedeeld in plaats van ermee vermenigvuldigd.",
+         "Koos je 1,8 kWh? Dat is de energie in een heel uur. Een kwartier is maar een vierde daarvan."
         ],
-        "uh": "kWh = kW x uur (eerst W -> kW)."
+        "uh": "Tijd in uren voor kWh."
        },
        {
-        "v": "Twee lampen: 40 W en 100 W op dezelfde spanning. Welke zet meer energie per seconde om?",
+        "v": "Hoeveel energie in joule zet de waterkoker om tijdens het koken?",
         "o": [
-         "De lamp van 40 W, want een lager wattage betekent hier meer energie",
-         "Ze zetten allebei precies evenveel energie per seconde om",
-         "De lamp van 100 W",
-         "Geen van beide zet energie om zolang ze branden"
-        ],
-        "c": 2,
-        "d": 2,
-        "u": "Meer watt betekent meer energie per seconde, dus de 100 W-lamp.",
-        "uo": [
-         "Lager wattage is juist minder energie per seconde.",
-         "De wattages verschillen, dus ook de omzetting.",
-         "Klopt: 100 W zet meer per seconde om.",
-         "Een brandende lamp zet wel energie om."
-        ],
-        "uh": "Meer watt = meer energie per seconde."
-       },
-       {
-        "v": "Waar wordt de meeste elektrische energie in een gloeilamp in omgezet?",
-        "o": [
-         "Zichtbaar licht, want vrijwel alle energie wordt netjes licht",
-         "Geluid, dat je de lamp voortdurend hoort maken",
-         "Nieuwe lading, die de lamp aan de kring toevoegt",
-         "Warmte"
-        ],
-        "c": 3,
-        "d": 2,
-        "u": "Een gloeilamp zet het grootste deel om in warmte en maar een klein deel in licht.",
-        "uo": [
-         "Maar een klein deel wordt licht.",
-         "Een lamp maakt nauwelijks geluid.",
-         "Een lamp maakt geen nieuwe lading.",
-         "Klopt: vooral warmte, weinig licht."
-        ],
-        "uh": "Gloeilamp: veel warmte, weinig licht."
-       },
-       {
-        "v": "Waarom is een ledlamp zuiniger dan een gloeilamp bij dezelfde lichtopbrengst?",
-        "o": [
-         "Hij zet minder energie om in warmte",
-         "Hij heeft een veel hogere spanning van het stopcontact nodig",
-         "Hij gebruikt meer watt maar geeft daardoor toevallig meer licht",
-         "Hij slaat de energie op in plaats van die te gebruiken"
+         "3,6 · 10⁵ J",
+         "6,0 kJ",
+         "360 J",
+         "3,6 · 10⁸ J"
         ],
         "c": 0,
         "d": 3,
-        "u": "Een ledlamp verliest veel minder energie als warmte, dus meer licht per watt.",
+        "s": 1,
+        "u": "E = P · t, t in seconden.",
         "uo": [
-         "Klopt: minder warmteverlies, meer licht per watt.",
-         "Een led heeft geen hogere spanning nodig.",
-         "Een led gebruikt juist minder watt.",
-         "Een led slaat geen energie op."
+         "Klopt: 3 min = 180 s. E = P · t = 2000 W × 180 s = 3,6 · 10⁵ J.",
+         "Koos je 6,0 kJ? Dan heb je 2000 × 3 gedaan, met minuten. Voor joule moet de tijd in seconden.",
+         "Koos je 360 J? Dan heb je met 2,0 W of een factor duizend te weinig gerekend. Het vermogen is 2000 W.",
+         "Koos je 3,6 · 10⁸ J? Dan heb je met milliseconden of een factor duizend te veel gerekend. 2000 × 180 = 360 000 J."
         ],
-        "uh": "Led: minder warmteverlies = zuiniger."
+        "uh": "Joule: watt × seconde.",
+        "ctx": "Een waterkoker van 2000 W brengt een liter water in 3 minuten aan de kook. Een leerling wil weten hoeveel elektrische energie de waterkoker daarbij gebruikt, in joule."
        },
        {
-        "v": "Een apparaat gebruikt 2 kWh en 1 kWh kost 0,30 euro. Wat zijn de kosten?",
+        "v": "Welke eenheid is géén eenheid van energie?",
         "o": [
-         "0,15 euro, gevonden door de prijs door het verbruik te delen",
-         "0,60 euro",
-         "2,30 euro, gevonden door het verbruik en de prijs op te tellen",
-         "6,00 euro, gevonden door het verbruik maal tien maal de prijs te nemen"
+         "kilojoule",
+         "joule",
+         "kilowattuur",
+         "watt"
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 2,
+        "u": "Watt is vermogen.",
+        "uo": [
+         "Koos je kilojoule? Het voorvoegsel kilo verandert alleen de grootte: duizend keer zoveel. Wat je meet, blijft energie, net als bij de joule zelf.",
+         "Koos je joule? De joule is de SI-eenheid van energie. Watt is joule per seconde.",
+         "Koos je kilowattuur? Een kWh is de energie die een vermogen van 1 kW in een uur omzet. Het is dus wel een eenheid van energie.",
+         "Klopt: de watt is de eenheid van vermogen, energie per seconde. Joule, kilojoule en kilowattuur zijn eenheden van energie."
+        ],
+        "uh": "Watt = vermogen."
+       },
+       {
+        "v": "Hoeveel joule is 1 kWh?",
+        "o": [
+         "3600 J",
+         "1000 J",
+         "3,6 · 10⁶ J",
+         "3,6 · 10³ kJ · s"
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 2,
+        "u": "1000 W × 3600 s.",
+        "uo": [
+         "Koos je 3600 J? Dan heb je het uur omgerekend maar de kilo vergeten. Het is 1000 W maal 3600 s.",
+         "Koos je 1000 J? Een kWh is veel meer dan duizend joule: een vermogen van duizend watt houdt het een heel uur vol. Vermenigvuldig ook met de 3600 seconden.",
+         "Klopt: 1 kWh is 1000 W gedurende 3600 s: 1000 × 3600 = 3,6 · 10⁶ J, oftewel 3,6 MJ.",
+         "Koos je 3,6 · 10³ kJ · s? Dat is een verkeerde combinatie van eenheden. Energie in joule is watt maal seconde: 3,6 · 10⁶ J."
+        ],
+        "uh": "1 kWh = 3,6 MJ."
+       },
+       {
+        "v": "Waarom drukt de energieleverancier je verbruik uit in kWh en niet in joule?",
+        "o": [
+         "joule is alleen voor warmte bedoeld",
+         "de getallen zijn in kWh veel handiger klein",
+         "een kWh is een eenheid van vermogen",
+         "de meter kan geen joule meten"
         ],
         "c": 1,
-        "d": 2,
-        "u": "Kosten = verbruik x prijs = 2 x 0,30 = 0,60 euro.",
+        "d": 3,
+        "s": 2,
+        "u": "1 kWh = 3,6 · 10⁶ J: kleinere getallen.",
         "uo": [
-         "Delen geeft niet de kosten.",
-         "Klopt: 2 x 0,30 = 0,60 euro.",
-         "Optellen geeft niet de kosten.",
-         "Maal tien hoort er niet bij."
+         "Koos je alleen voor warmte? De joule is de eenheid voor alle soorten energie, ook elektrische. Het gaat om handige getallen.",
+         "Klopt: een huishouden gebruikt zo'n 2500 kWh per jaar. In joule zou dat 9 · 10⁹ J zijn, een onhandig groot getal. Met kWh blijven de getallen overzichtelijk, en reken je makkelijk met vermogen in kW en tijd in uren.",
+         "Koos je eenheid van vermogen? Een kWh is juist een eenheid van energie: kilowatt maal uur.",
+         "Koos je dat de meter geen joule kan meten? Een meter kan prima in joule rekenen; het is een keuze voor handige getallen op de rekening."
         ],
-        "uh": "Kosten = kWh x prijs per kWh."
+        "uh": "Handige getallen.",
+        "ctx": "Op de jaarafrekening van een gezin staat een elektriciteitsverbruik van 2500 kWh. In de natuurkundeles heeft een leerling geleerd dat de joule de eenheid van energie is. Hij vraagt zich af waarom de leverancier geen joule gebruikt."
        },
        {
-        "v": "P = U x I. Hoe bereken je de stroom als je P en U weet?",
+        "v": "Hoe bereken je de kosten van het elektriciteitsverbruik van een apparaat?",
         "o": [
-         "I = P x U, dus stroom is vermogen maal spanning bij elkaar",
-         "I = U / P, dus stroom is spanning gedeeld door vermogen",
+         "energie in kWh maal de prijs per kWh",
+         "vermogen in watt maal de prijs per kWh",
+         "stroom in ampère maal de prijs",
+         "spanning maal de tijd"
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 3,
+        "u": "Kosten = E (kWh) × prijs.",
+        "uo": [
+         "Klopt: je betaalt voor energie. Reken de energie uit in kWh met E = P · t (P in kW, t in h) en vermenigvuldig met de prijs per kWh.",
+         "Koos je vermogen maal prijs? Vermogen zegt hoe snel energie wordt gebruikt, niet hoeveel. Je moet ook met de tijd vermenigvuldigen.",
+         "Koos je stroom maal prijs? Je betaalt niet voor stroomsterkte maar voor energie. Bereken eerst de energie in kWh.",
+         "Koos je spanning maal tijd? Dat geeft geen energie. Energie is vermogen maal tijd, en kosten zijn energie maal prijs."
+        ],
+        "uh": "Eerst kWh, dan prijs."
+       },
+       {
+        "v": "Een tv van 120 W staat 4,0 uur per dag aan. Wat kost dat per dag bij 0,30 euro per kWh?",
+        "o": [
+         "0,48 euro",
+         "144 euro",
+         "1,44 euro",
+         "0,14 euro"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 3,
+        "u": "E = 0,12 × 4,0 = 0,48 kWh.",
+        "uo": [
+         "Koos je 0,48 euro? Dat is de energie in kWh, nog niet vermenigvuldigd met de prijs van 0,30 euro.",
+         "Koos je 144 euro? Dan heb je met 120 kW gerekend in plaats van 120 W. Reken eerst om: 120 W = 0,12 kW.",
+         "Koos je 1,44 euro? Dan heb je met 1,2 kW gerekend, tien keer te veel. 120 W is 0,12 kW, en dan kost het 0,14 euro.",
+         "Klopt: E = 0,12 kW × 4,0 h = 0,48 kWh. Kosten: 0,48 × 0,30 = 0,14 euro per dag."
+        ],
+        "uh": "W naar kW, dan maal uren en prijs."
+       },
+       {
+        "v": "Hoeveel bespaart het gezin per jaar door de oude koelkast te vervangen?",
+        "o": [
+         "168 euro",
+         "240 euro",
+         "72 euro",
+         "0,20 euro"
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 3,
+        "u": "Verschil 240 kWh × 0,30.",
+        "uo": [
+         "Koos je 168 euro? Dan heb je met 560 kWh gerekend, de som van beide verbruiken. Het gaat om het verschil.",
+         "Koos je 240 euro? Dat is het verschil in kWh, niet in euro. Vermenigvuldig nog met de prijs van 0,30 euro per kWh.",
+         "Klopt: het verschil in verbruik is 400 − 160 = 240 kWh per jaar. Bij 0,30 euro per kWh is dat 240 × 0,30 = 72 euro per jaar.",
+         "Koos je 0,20 euro? Dan heb je iets per dag gerekend of door 365 gedeeld. De verbruiken zijn al per jaar gegeven."
+        ],
+        "uh": "Verschil in kWh maal prijs.",
+        "ctx": "Een oude koelkast gebruikt volgens het energielabel 400 kWh per jaar. Een nieuwe zuinige koelkast gebruikt 160 kWh per jaar en kost 600 euro. De stroomprijs is 0,30 euro per kWh. Het gezin twijfelt of vervangen loont."
+       },
+       {
+        "v": "Waarom is een ledlamp zuiniger dan een gloeilamp die even veel licht geeft?",
+        "o": [
+         "de led heeft een hogere spanning nodig",
+         "de led maakt meer licht en minder warmte",
+         "de led gebruikt geen stroom",
+         "de led geeft zijn warmte terug aan het net"
+        ],
+        "c": 1,
+        "d": 1,
+        "s": 4,
+        "u": "Hoger rendement.",
+        "uo": [
+         "Koos je hogere spanning? Ledlampen voor in huis werken op dezelfde 230 V. Het verschil zit in hoeveel energie licht wordt.",
+         "Klopt: een gloeilamp zet maar ongeveer 5% van de energie om in licht, de rest wordt warmte. Een ledlamp haalt ongeveer 40%. Voor hetzelfde licht is dus veel minder vermogen nodig.",
+         "Koos je geen stroom? Een ledlamp gebruikt wel stroom, alleen veel minder dan een gloeilamp voor hetzelfde licht.",
+         "Koos je warmte teruggeven? Warmte gaat niet terug naar het net. De led maakt simpelweg minder warmte en meer licht."
+        ],
+        "uh": "Minder warmte, meer licht."
+       },
+       {
+        "v": "Een gloeilamp van 60 W geeft evenveel licht als een ledlamp van 8 W. Hoeveel energie bespaar je in 1000 uur?",
+        "o": [
+         "52 kWh",
+         "60 kWh",
+         "8 kWh",
+         "68 kWh"
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 4,
+        "u": "(60 − 8) W × 1000 h.",
+        "uo": [
+         "Klopt: het verschil in vermogen is 52 W = 0,052 kW. In 1000 h bespaar je 0,052 × 1000 = 52 kWh.",
+         "Koos je 60 kWh? Dat is wat de gloeilamp gebruikt. De ledlamp gebruikt ook nog 8 kWh, dus de besparing is het verschil.",
+         "Koos je 8 kWh? Dat is wat de ledlamp gebruikt. De besparing is wat je niet meer gebruikt.",
+         "Koos je 68 kWh? Dan heb je de twee verbruiken opgeteld. Besparen betekent wat je niet meer gebruikt: het verschil van 52 kWh."
+        ],
+        "uh": "Verschil in vermogen maal tijd."
+       },
+       {
+        "v": "Hoe groot is het rendement van de elektromotor in de elektrische fiets?",
+        "o": [
+         "64%",
+         "20%",
+         "125%",
+         "80%"
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 4,
+        "u": "η = P_nuttig / P_in = 200 / 250.",
+        "uo": [
+         "Koos je 64%? Dan heb je het rendement nog eens met 0,80 vermenigvuldigd. η = 200 / 250 = 0,80.",
+         "Koos je 20%? Dat is het deel dat verloren gaat als warmte. Het rendement is het nuttige deel.",
+         "Koos je 125%? Dan heb je 250 / 200 gedaan. Een rendement is altijd kleiner dan 100%: nuttig gedeeld door totaal.",
+         "Klopt: de motor krijgt 36 × 6,9 = 250 W elektrisch vermogen en levert 200 W mechanisch vermogen. η = 200 / 250 = 0,80 = 80%. De rest wordt warmte in de motor."
+        ],
+        "uh": "Nuttig / totaal.",
+        "ctx": "De motor van een elektrische fiets wordt gevoed door een accu van 36 V. Tijdens het rijden gaat er een stroom van 6,9 A door de motor. Een meting op een testbank laat zien dat de motor een mechanisch vermogen van 200 W aan het wiel levert."
+       },
+       {
+        "v": "Hoe schrijf je P = U · I om om de stroom te berekenen?",
+        "o": [
+         "I = P · U",
+         "I = U / P",
          "I = P / U",
-         "I = P plus U, dus stroom is vermogen plus spanning samen"
+         "I = P − U"
         ],
         "c": 2,
-        "d": 2,
-        "u": "Uit P = U x I volgt I = P / U.",
+        "d": 1,
+        "s": 5,
+        "u": "Deel beide kanten door U.",
         "uo": [
-         "I is niet P x U.",
-         "I is niet U / P.",
-         "Klopt: I = P / U.",
-         "Optellen mag hier niet."
+         "Koos je I = P · U? Dan zou de stroom groeien met de spanning bij hetzelfde vermogen. Het is andersom: bij hogere spanning is minder stroom nodig.",
+         "Koos je I = U / P? Dan heb je het omgekeerd. Een groter vermogen bij dezelfde spanning vraagt juist meer stroom.",
+         "Klopt: deel beide kanten van P = U · I door U. Dan staat er I = P / U.",
+         "Koos je I = P − U? Aftrekken mag niet: watt en volt zijn verschillende grootheden. Deel P door U."
         ],
         "uh": "I = P / U."
        },
        {
-        "v": "Een föhn van 1200 W op 230 V. Bereken de stroom (afgerond).",
+        "v": "Hoe lang kan een lamp van 5,0 W branden op een accu met 60 Wh energie?",
         "o": [
-         "Ongeveer 276000 A, gevonden door het vermogen en de spanning te vermenigvuldigen",
-         "Ongeveer 0,19 A, gevonden door de spanning door het vermogen te delen",
-         "Ongeveer 1430 A, gevonden door het vermogen en de spanning op te tellen",
-         "Ongeveer 5,2 A"
-        ],
-        "c": 3,
-        "d": 3,
-        "u": "I = P / U = 1200 / 230 = ongeveer 5,2 A.",
-        "uo": [
-         "Vermenigvuldigen geeft geen stroom.",
-         "U / P is niet I.",
-         "Optellen geeft geen stroom.",
-         "Klopt: 1200 / 230 is ongeveer 5,2 A."
-        ],
-        "uh": "I = P / U."
-       },
-       {
-        "v": "Waarom heeft een zwaar apparaat een dikkere aansluitdraad nodig?",
-        "o": [
-         "Er loopt een grote stroom door",
-         "Omdat een dikke draad de spanning van het net flink verhoogt",
-         "Omdat de dikke draad de energie tijdens gebruik opslaat",
-         "Omdat een dun draadje juist meer vermogen zou leveren"
-        ],
-        "c": 0,
-        "d": 3,
-        "u": "Een groot vermogen betekent een grote stroom; een dunne draad zou te heet worden.",
-        "uo": [
-         "Klopt: grote stroom vraagt een dikke draad.",
-         "Een dikke draad verhoogt de spanning niet.",
-         "De draad slaat geen energie op.",
-         "Een dun draadje levert niet meer vermogen."
-        ],
-        "uh": "Groot vermogen -> grote stroom -> dikke draad."
-       },
-       {
-        "v": "Een lamp staat een hele dag (24 uur) aan op 0,05 kW. Hoeveel kWh is dat?",
-        "o": [
-         "0,48 kWh, gevonden door de uren door het vermogen te delen",
-         "1,2 kWh",
-         "24,05 kWh, gevonden door de uren en het vermogen op te tellen",
-         "480 kWh, gevonden door de uren maal het aantal watt te nemen"
-        ],
-        "c": 1,
-        "d": 3,
-        "u": "E = P x t = 0,05 kW x 24 uur = 1,2 kWh.",
-        "uo": [
-         "Delen geeft geen energie.",
-         "Klopt: 0,05 x 24 = 1,2 kWh.",
-         "Optellen geeft geen energie.",
-         "Reken met kW, niet met watt hier."
-        ],
-        "uh": "kWh = kW x uur."
-       },
-       {
-        "v": "Twee apparaten, hetzelfde vermogen, maar A staat 2x zo lang aan. Wie gebruikt meer energie?",
-        "o": [
-         "Apparaat B, want een kortere tijd geeft juist meer energie",
-         "Ze gebruiken precies evenveel, de tijd doet er niet toe",
-         "Apparaat A",
-         "Geen van beide gebruikt energie zolang ze aanstaan"
-        ],
-        "c": 2,
-        "d": 3,
-        "u": "E = P x t: bij gelijk vermogen gebruikt het apparaat dat langer aanstaat meer energie.",
-        "uo": [
-         "Korter aan is juist minder energie.",
-         "De tijd doet er wel toe.",
-         "Klopt: langer aan = meer energie (bij gelijk P).",
-         "Een apparaat dat aanstaat gebruikt energie."
-        ],
-        "uh": "Zelfde P, langer aan -> meer energie."
-       },
-       {
-        "v": "Waarom staat op een apparaat een wattage vermeld?",
-        "o": [
-         "Het geeft aan hoeveel lading het apparaat blijvend opslaat",
-         "Het geeft de totale energie voor de hele levensduur aan",
-         "Het geeft aan hoe zwaar het apparaat in kilogram is",
-         "Het geeft de energie per seconde aan"
-        ],
-        "c": 3,
-        "d": 3,
-        "u": "Het wattage is het vermogen: hoeveel energie het per seconde omzet.",
-        "uo": [
-         "Het gaat niet over opgeslagen lading.",
-         "Het is niet de totale levensduur-energie.",
-         "Watt is geen massa.",
-         "Klopt: het wattage is de energie per seconde."
-        ],
-        "uh": "Wattage = vermogen = energie/seconde."
-       },
-       {
-        "v": "Een apparaat van 500 W draait 10 minuten. Reken de tijd om naar seconden.",
-        "o": [
-         "600 s",
-         "10 s, want tien minuten is bij benadering tien seconden lang",
-         "36000 s, gevonden door tien maal een heel uur in seconden te nemen",
-         "50 s, gevonden door het vermogen door tien te delen"
-        ],
-        "c": 0,
-        "d": 2,
-        "u": "10 minuten = 10 x 60 = 600 s.",
-        "uo": [
-         "Klopt: 10 x 60 = 600 s.",
-         "Tien minuten is niet tien seconden.",
-         "36000 s is tien uur.",
-         "Delen door tien klopt niet."
-        ],
-        "uh": "1 minuut = 60 s."
-       },
-       {
-        "v": "Een apparaat van 500 W draait 600 s. Bereken de energie in joule.",
-        "o": [
-         "1100 J, gevonden door het vermogen en de tijd bij elkaar op te tellen",
-         "300000 J",
-         "0,83 J, gevonden door het vermogen door de tijd te delen",
-         "300 J, gevonden door het vermogen door tijd maal duizend te delen"
+         "300 h",
+         "12 h",
+         "0,083 h",
+         "65 h"
         ],
         "c": 1,
         "d": 2,
-        "u": "E = P x t = 500 x 600 = 300000 J.",
+        "s": 5,
+        "u": "t = E / P = 60 / 5,0.",
         "uo": [
-         "Optellen geeft geen energie.",
-         "Klopt: 500 x 600 = 300000 J.",
-         "Delen geeft geen energie.",
-         "300 J is veel te weinig."
-        ],
-        "uh": "E = P x t."
-       },
-       {
-        "v": "Waarom telt een grote verbruiker zoals een wasdroger flink mee op de energierekening?",
-        "o": [
-         "Alleen omdat hij een groot en zwaar apparaat is",
-         "Omdat hij de spanning van het hele huis verlaagt",
-         "Hoog vermogen en lange draaitijd",
-         "Omdat hij lading van andere apparaten opgebruikt"
-        ],
-        "c": 2,
-        "d": 3,
-        "u": "Zowel een hoog vermogen als een lange draaitijd geven veel kWh, dus hoge kosten.",
-        "uo": [
-         "Het gewicht bepaalt het verbruik niet.",
-         "Hij verlaagt de huisspanning niet.",
-         "Klopt: hoog vermogen maal lange tijd = veel kWh.",
-         "Hij gebruikt geen lading van anderen."
-        ],
-        "uh": "Kosten hangen af van P en t (kWh)."
-       },
-       {
-        "v": "Een spaarlamp van 11 W vervangt een gloeilamp van 60 W met bijna hetzelfde licht. Wat bespaar je?",
-        "o": [
-         "Niets, want beide lampen gebruiken uiteindelijk even veel",
-         "Spanning, want de spaarlamp verlaagt de netspanning",
-         "Lading, want de spaarlamp slaat lading op voor later",
-         "Energie, want minder watt bij gelijk licht"
-        ],
-        "c": 3,
-        "d": 3,
-        "u": "Minder watt bij gelijke lichtopbrengst betekent minder energie per seconde: besparing.",
-        "uo": [
-         "Er is wel een verschil in verbruik.",
-         "De spaarlamp verlaagt de spanning niet.",
-         "Er wordt geen lading opgeslagen.",
-         "Klopt: minder watt bij gelijk licht bespaart energie."
-        ],
-        "uh": "Minder watt, zelfde licht = besparing."
-       },
-       {
-        "v": "Hoe bereken je de tijd als je E en P weet?",
-        "o": [
-         "t = E / P",
-         "t = E x P, dus tijd is energie maal vermogen bij elkaar",
-         "t = P / E, dus tijd is vermogen gedeeld door energie",
-         "t = E plus P, dus tijd is energie plus vermogen samen"
-        ],
-        "c": 0,
-        "d": 2,
-        "u": "Uit E = P x t volgt t = E / P.",
-        "uo": [
-         "Klopt: t = E / P.",
-         "t is niet E x P.",
-         "t is niet P / E.",
-         "Optellen mag hier niet."
+         "Koos je 300 h? Dan heb je 60 × 5,0 gedaan. De tijd is energie gedeeld door vermogen.",
+         "Klopt: de tijd is de energie gedeeld door het vermogen. t = E / P = 60 Wh / 5,0 W = 12 h.",
+         "Koos je 0,083 h? Dan heb je P / E gedaan. Een kleiner vermogen moet juist een langere tijd geven.",
+         "Koos je 65 h? Dan heb je energie en vermogen opgeteld. Deel de energie door het vermogen."
         ],
         "uh": "t = E / P."
+       },
+       {
+        "v": "Hoe groot is de weerstand van het verwarmingselement van de waterkoker?",
+        "o": [
+         "26 Ω",
+         "0,11 Ω",
+         "8,7 Ω",
+         "2000 Ω"
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 5,
+        "u": "I = P / U = 8,7 A; R = U / I.",
+        "uo": [
+         "Klopt: I = P / U = 2000 / 230 = 8,7 A. R = U / I = 230 / 8,7 = 26 Ω. Je kunt ook R = U² / P = 230² / 2000 = 26 Ω gebruiken.",
+         "Koos je 0,11 Ω? Dan heb je P / U² gedaan of iets omgedraaid. R = U² / P = 52 900 / 2000 = 26 Ω.",
+         "Koos je 8,7 Ω? Dat is de stroom in ampère. Deel de spanning nog door die stroom om de weerstand te krijgen.",
+         "Koos je 2000 Ω? Dan heb je het vermogen als weerstand genomen. Combineer P = U · I met R = U / I."
+        ],
+        "uh": "Combineer twee formules.",
+        "ctx": "Op het typeplaatje van een waterkoker staat: 230 V, 2000 W. Een leerling wil weten welke weerstand het verwarmingselement heeft als het warm is. Hij mag aannemen dat de weerstand tijdens het koken constant is."
+       },
+       {
+        "v": "Welke stroom trekt een oven van 3,0 kW op 230 V?",
+        "o": [
+         "3,0 A",
+         "0,077 A",
+         "690 A",
+         "13 A"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 0,
+        "u": "I = P / U = 3000 / 230.",
+        "uo": [
+         "Koos je 3,0 A? Dan heb je het getal van het vermogen in kW als stroom gelezen. Reken I = P / U uit met P in watt.",
+         "Koos je 0,077 A? Dan heb je 230 door 3000 gedeeld. De stroom is vermogen gedeeld door spanning, en 3,0 kW is 3000 W.",
+         "Koos je 690 A? Dan heb je 3,0 met 230 vermenigvuldigd. Dat is geen stroom; deel het vermogen door de spanning.",
+         "Klopt: I = P / U = 3000 W / 230 V = 13 A. Daarom krijgt een oven vaak een eigen groep: samen met andere apparaten kom je snel boven de 16 A."
+        ],
+        "uh": "kW eerst naar W."
+       },
+       {
+        "v": "Een telefoon laadt 2,0 uur met een vermogen van 10 W. Hoeveel energie is dat in joule?",
+        "o": [
+         "1200 J",
+         "20 J",
+         "7,2 · 10⁴ J",
+         "5,0 J"
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 1,
+        "u": "E = P · t = 10 × 7200 s.",
+        "uo": [
+         "Koos je 1200 J? Dan heb je de tijd in minuten genomen: 10 × 120. Een joule is een watt maal een seconde.",
+         "Koos je 20 J? Dan heb je de tijd in uren gebruikt: 10 × 2,0 = 20, maar dat is 20 Wh, geen 20 J. Voor joule moet de tijd in seconden.",
+         "Klopt: 2,0 h = 7200 s. E = P · t = 10 W × 7200 s = 72 000 J = 7,2 · 10⁴ J. In wattuur is dat 20 Wh.",
+         "Koos je 5,0 J? Dan heb je 10 door 2,0 gedeeld. Energie is vermogen maal tijd, niet gedeeld door de tijd."
+        ],
+        "uh": "Joule vraagt seconden."
+       },
+       {
+        "v": "Hoeveel energie gebruiken de apparaten in stand-by samen in een jaar?",
+        "o": [
+         "30 kWh",
+         "263 kWh",
+         "720 kWh",
+         "26 kWh"
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 1,
+        "u": "E = 0,030 kW × 8760 h.",
+        "uo": [
+         "Koos je 30 kWh? Dan heb je het vermogen in watt als energie gelezen. Vermenigvuldig het vermogen in kW met het aantal uren in een jaar.",
+         "Klopt: de apparaten staan dag en nacht op stand-by: 365 × 24 = 8760 h. E = 0,030 kW × 8760 h = 263 kWh. Bij 0,30 euro per kWh kost dat bijna 80 euro per jaar, terwijl je er niets aan hebt.",
+         "Koos je 720 kWh? Dan heb je 30 W × 24 h genomen en die wattuur als kWh gelezen. Reken met 0,030 kW en 8760 h.",
+         "Koos je 26 kWh? Dan heb je een factor tien te weinig, bijvoorbeeld met 876 uur. Een jaar heeft 8760 uur."
+        ],
+        "uh": "Uren in een jaar: 8760.",
+        "ctx": "In een woonkamer staan een tv, een settopbox, een spelcomputer en een geluidsinstallatie altijd op stand-by. Samen gebruiken ze dan 30 W, de hele dag en nacht. Het gezin heeft dit nooit gemerkt, omdat de apparaten uit lijken te staan."
+       },
+       {
+        "v": "Hoeveel kWh is 18 MJ?",
+        "o": [
+         "5,0 kWh",
+         "18 kWh",
+         "65 kWh",
+         "0,50 kWh"
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 2,
+        "u": "1 kWh = 3,6 MJ.",
+        "uo": [
+         "Klopt: 1 kWh = 3,6 MJ. 18 MJ / 3,6 MJ per kWh = 5,0 kWh.",
+         "Koos je 18 kWh? Dan heb je megajoule en kilowattuur als gelijk gezien. Eén kWh is 3,6 MJ, dus deel door 3,6.",
+         "Koos je 65 kWh? Dan heb je met 3,6 vermenigvuldigd in plaats van erdoor gedeeld. Een kWh is groter dan een MJ, dus het getal wordt kleiner.",
+         "Koos je 0,50 kWh? Dan heb je een factor tien te veel gedeeld. 18 / 3,6 = 5,0."
+        ],
+        "uh": "Deel MJ door 3,6."
+       },
+       {
+        "v": "Een wasmachine gebruikt 1,2 kWh per beurt, 4 keer per week. Wat kost dat per jaar bij 0,30 euro per kWh?",
+        "o": [
+         "14 euro",
+         "1,44 euro",
+         "250 euro",
+         "75 euro"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 3,
+        "u": "1,2 × 4 × 52 = 250 kWh.",
+        "uo": [
+         "Koos je 14 euro? Dan heb je met een maand of een te kleine factor gerekend. Een jaar heeft 52 weken.",
+         "Koos je 1,44 euro? Dat zijn de kosten per week: 1,2 × 4 × 0,30. Vermenigvuldig nog met 52 weken.",
+         "Koos je 250 euro? Dat is de energie in kWh, nog niet vermenigvuldigd met de prijs van 0,30 euro.",
+         "Klopt: per jaar 1,2 × 4 × 52 = 250 kWh. Kosten: 250 × 0,30 = 75 euro per jaar."
+        ],
+        "uh": "Per jaar: × 52 weken."
+       },
+       {
+        "v": "Na hoeveel jaar heeft het gezin de nieuwe koelkast terugverdiend?",
+        "o": [
+         "72 jaar",
+         "2,5 jaar",
+         "8,3 jaar",
+         "3,8 jaar"
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 3,
+        "u": "Prijs / besparing per jaar = 600 / 72.",
+        "uo": [
+         "Koos je 72 jaar? Dat is de besparing in euro per jaar, niet het aantal jaren. Deel de prijs door de besparing.",
+         "Koos je 2,5 jaar? Dan heb je 600 door 240 gedeeld: euro door kWh. Reken de besparing eerst om naar euro.",
+         "Klopt: de besparing is 240 kWh per jaar, dus 240 × 0,30 = 72 euro. De koelkast kost 600 euro: 600 / 72 = 8,3 jaar. Pas daarna levert hij echt geld op.",
+         "Koos je 3,8 jaar? Dan heb je met de 160 kWh van de nieuwe koelkast gerekend. De besparing is het verschil: 240 kWh."
+        ],
+        "uh": "Terugverdientijd = kosten / besparing.",
+        "ctx": "De oude koelkast van een gezin gebruikt 400 kWh per jaar, een nieuwe zuinige 160 kWh per jaar. De nieuwe koelkast kost 600 euro en de stroomprijs is 0,30 euro per kWh. Het gezin wil weten na hoeveel jaar de nieuwe koelkast zich heeft terugverdiend."
+       },
+       {
+        "v": "Waarom wordt de adapter van een laptop warm tijdens het laden?",
+        "o": [
+         "de adapter slaat energie op als warmte voor later",
+         "een deel van de energie wordt warmte",
+         "de laptop stuurt warmte terug naar de adapter",
+         "warmte is nodig om de spanning te verlagen"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 4,
+        "u": "Rendement onder 100%.",
+        "uo": [
+         "Koos je opslaan voor later? Een adapter slaat geen energie op. De warmte gaat de lucht in en is verloren.",
+         "Klopt: geen enkele adapter heeft een rendement van 100%. Een deel van de elektrische energie wordt in de adapter zelf warmte. Hoe warmer hij wordt, hoe meer energie er verloren gaat.",
+         "Koos je warmte van de laptop? De warmte ontstaat in de adapter zelf, door de stroom die erdoor gaat. Er stroomt geen warmte terug door het snoer.",
+         "Koos je warmte nodig? Spanning verlagen kan zonder warmte; de warmte is een bijeffect, een verlies. Een zuinigere adapter wordt minder warm."
+        ],
+        "uh": "Verlies wordt warmte."
+       },
+       {
+        "v": "Op een apparaat staat 1150 W en 5,0 A. Op welke spanning werkt het?",
+        "o": [
+         "230 V",
+         "5750 V",
+         "0,0043 V",
+         "1145 V"
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 5,
+        "u": "Spanning is vermogen gedeeld door stroom.",
+        "uo": [
+         "Klopt: schrijf P = U · I om naar U = P / I = 1150 / 5,0 = 230 V: gewoon het lichtnet.",
+         "Koos je 5750 V? Dan heb je vermenigvuldigd: 1150 × 5,0. Om de spanning te vinden deel je het vermogen door de stroom.",
+         "Koos je 0,0043 V? Dan heb je I / P gedaan. De spanning is vermogen gedeeld door stroom.",
+         "Koos je 1145 V? Dan heb je de stroom van het vermogen afgetrokken. Watt en ampère kun je niet aftrekken; deel ze."
+        ],
+        "uh": "U = P / I."
+       },
+       {
+        "v": "Wat gebeurt er met het vermogen van een verwarmingselement als je het op de helft van de spanning aansluit?",
+        "o": [
+         "het wordt dan twee keer zo groot",
+         "het wordt twee keer zo klein",
+         "het blijft gelijk",
+         "het wordt vier keer zo klein"
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 5,
+        "u": "P = U² / R, R gelijk.",
+        "uo": [
+         "Koos je twee keer zo groot? Minder spanning geeft nooit meer vermogen bij dezelfde weerstand. Het wordt juist kleiner.",
+         "Koos je twee keer zo klein? Dan vergeet je dat ook de stroom halveert. Spanning en stroom worden allebei de helft, dus het vermogen een kwart.",
+         "Koos je gelijk? Het vermogen hangt af van de spanning. Met minder spanning gaat er minder stroom en wordt er minder energie per seconde omgezet.",
+         "Klopt: bij een vaste weerstand halveert de stroom als de spanning halveert. P = U · I wordt dan ½ × ½ = ¼ van het oorspronkelijke vermogen. Met P = U² / R zie je dat ook direct."
+        ],
+        "uh": "Halve U, halve I: kwart P.",
+        "ctx": "Een Amerikaanse student neemt een haardroger van 1200 W voor 230 V mee naar de Verenigde Staten, waar het lichtnet 115 V heeft. Hij merkt dat de haardroger daar nauwelijks warm wordt. Neem aan dat de weerstand van het element niet verandert."
        }
       ],
       "oe": [
        {
-        "vraag": "Leg uit wat het verschil is tussen vermogen en energie. Noem van beide de eenheid.",
-        "antwoord": "Vermogen is hoeveel energie een apparaat per seconde omzet; je meet dat in watt (W). Energie is de totale hoeveelheid die wordt omgezet; die meet je in joule (J), of op de rekening in kilowattuur (kWh). Het verband is E = P x t: de energie is het vermogen maal de tijd. Een apparaat met veel vermogen gebruikt dus pas veel energie als het ook lang aanstaat."
+        "bron": "Examenstijl",
+        "ctx": "Op het typeplaatje van een elektrische kachel staat: 230 V, 1500 W. De kachel staat in de winter gemiddeld 5,0 uur per dag aan, 120 dagen per jaar. De stroomprijs is 0,30 euro per kWh.",
+        "v": "Bereken de stroom door de kachel, de energie per winter in kWh en de kosten per winter.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "I = P / U = 1500 / 230 = 6,5 A (1p). E = 1,5 kW × 5,0 h × 120 = 900 kWh (1p). Kosten 900 × 0,30 = 270 euro (1p)."
        },
        {
-        "vraag": "Een lamp van 40 W brandt 3 uur. Bereken de gebruikte energie in joule. Toon je berekening met tussenstappen.",
-        "antwoord": "Eerst reken je de tijd om naar seconden: 3 uur is 3 x 3600 = 10800 s. Dan gebruik je E = P x t = 40 x 10800 = 432000 J. De lamp gebruikt dus 432000 joule energie."
+        "bron": "Examenstijl",
+        "ctx": "Een gezin vervangt twaalf gloeilampen van 60 W door ledlampen van 8 W die even veel licht geven. Elke lamp brandt gemiddeld 3,0 uur per dag. Een ledlamp kost 4 euro en de stroomprijs is 0,30 euro per kWh.",
+        "v": "Bereken hoeveel kWh het gezin per jaar bespaart en na hoeveel tijd de ledlampen zijn terugverdiend.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Besparing per lamp: 0,052 kW × 3,0 h × 365 = 57 kWh; voor twaalf lampen 683 kWh per jaar (1p). Dat is 683 × 0,30 = 205 euro per jaar (1p). De lampen kosten 12 × 4 = 48 euro, terugverdiend na 48 / 205 = 0,23 jaar, ongeveer drie maanden (1p)."
        },
        {
-        "vraag": "Een apparaat gebruikt 4 kWh in een dag. Bereken de kosten als 1 kWh 0,30 euro kost, en leg uit hoe je rekent.",
-        "antwoord": "De kosten bereken je door het verbruik in kWh te vermenigvuldigen met de prijs per kWh. Dat is 4 x 0,30 = 1,20 euro. Het apparaat kost dus 1,20 euro per dag aan energie."
+        "bron": "Examenstijl",
+        "ctx": "Een elektrische auto heeft een accu van 60 kWh. Met een thuislader van 11 kW laadt de eigenaar de lege accu helemaal op. Het rendement van het laden is 90%. De stroomprijs is 0,30 euro per kWh.",
+        "v": "Bereken hoeveel energie uit het net nodig is, hoe lang het laden duurt en wat een volle accu kost.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "E_net = 60 / 0,90 = 67 kWh (1p). t = E / P = 67 / 11 = 6,1 h (1p). Kosten 67 × 0,30 = 20 euro (1p)."
        },
        {
-        "vraag": "Leg uit waarom een ledlamp bij dezelfde hoeveelheid licht veel minder energie gebruikt dan een gloeilamp.",
-        "antwoord": "Een gloeilamp zet het grootste deel van de elektrische energie om in warmte en maar een klein deel in licht. Een ledlamp verliest veel minder energie als warmte en zet dus een groter deel om in licht. Daardoor heeft een led een veel lager vermogen (minder watt) nodig om evenveel licht te geven, en gebruikt hij bij dezelfde tijd minder energie."
+        "bron": "Examenstijl",
+        "ctx": "Een leerling meet aan een kleine elektromotor die een gewicht omhoog trekt. Over de motor staat 6,0 V en er gaat 0,50 A door. In 4,0 s trekt hij een gewicht van 0,20 kg 2,4 m omhoog met constante snelheid.",
+        "v": "Bereken het elektrisch vermogen, het nuttige vermogen en het rendement van de motor.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "P_el = U · I = 6,0 × 0,50 = 3,0 W (1p). P_nuttig = m · g · h / t = 0,20 × 9,81 × 2,4 / 4,0 = 1,2 W (1p). η = 1,2 / 3,0 = 0,39 = 39% (1p)."
        },
        {
-        "vraag": "Een föhn heeft een vermogen van 1200 W en staat op 230 V. Bereken de stroom die er doorheen loopt en toon je berekening.",
-        "antwoord": "Je gebruikt P = U x I, omgeschreven naar I = P / U. Invullen geeft I = 1200 / 230 = ongeveer 5,2 A. Door de föhn loopt dus een stroom van ongeveer 5,2 ampère. Dat is een flinke stroom, en daarom heeft zo een apparaat een stevige aansluitdraad nodig."
+        "bron": "Examenstijl",
+        "ctx": "Op het typeplaatje van een gloeilamp staat: 230 V, 100 W. Een leerling sluit de lamp aan op een regelbare voeding van 115 V. Hij verwacht dat de lamp dan 50 W levert.",
+        "v": "Bereken de weerstand van de lamp bij 230 V en het vermogen bij 115 V als de weerstand gelijk zou blijven, en beoordeel de verwachting van de leerling.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "R = U² / P = 230² / 100 = 529 Ω (1p). Bij 115 V: P = 115² / 529 = 25 W, een kwart en niet de helft (1p). In werkelijkheid is de gloeidraad bij lagere spanning koeler en heeft hij een kleinere weerstand, dus het vermogen ligt iets boven 25 W, maar zeker niet op 50 W (1p)."
        }
       ]
      },

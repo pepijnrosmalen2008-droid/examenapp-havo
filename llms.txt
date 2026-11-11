@@ -5,7 +5,7 @@
 Volledige beschrijving (functies, inhoud per niveau, prijs, wat Slagio niet is): https://slagio.nl/llms-full.txt
 
 ## In het kort
-- 12 vakken havo, 16 vakken vwo, 12 vakken vmbo; 26.799 oefenvragen en 4.346 begrippen.
+- 12 vakken havo, 16 vakken vwo, 12 vakken vmbo; 26.802 oefenvragen en 4.346 begrippen.
 - Adaptief oefenen: na een fout een vraag over hetzelfde onderwerp, een niveau makkelijker; uitleg bij elk fout antwoord.
 - Foutenboek en herhalen met gespreide herhaling, beheersing per leerdoel, studieplan tot het examen.
 - Examens met klok, proefexamens in examenstijl met modelantwoord en puntenverdeling, archief met officiële oude examens.
@@ -105,7 +105,7 @@ Volledige beschrijving (functies, inhoud per niveau, prijs, wat Slagio niet is):
 - [Stroom, spanning en lading (Natuurkunde HAVO)](https://slagio.nl/leren/havo/natuurkunde/stroom-spanning-en-lading.html): Je beschrijft stroom als bewegende lading en rekent met I = Q / t en de lading van een elektron, legt spanning uit als energie per lading (U = E / Q), sluit…
 - [Weerstand en de wet van Ohm (Natuurkunde HAVO)](https://slagio.nl/leren/havo/natuurkunde/weerstand-en-de-wet-van-ohm.html): Je legt weerstand uit als spanning per ampère, rekent met de wet van Ohm (U = I · R) in alle drie de vormen, bepaalt de weerstand uit een (I,U)-grafiek,…
 - [Serie- en parallelschakeling (Natuurkunde HAVO)](https://slagio.nl/leren/havo/natuurkunde/serie-en-parallelschakeling.html): Je herkent serie- en parallelschakelingen, past de regels voor stroom, spanning en totale weerstand toe (ook bij gemengde schakelingen), voorspelt wat er…
-- [Vermogen en energie (Natuurkunde HAVO)](https://slagio.nl/leren/havo/natuurkunde/vermogen-en-energie.html): Rekenen met elektrisch vermogen (P = U x I) en energie (E = P x t), omgaan met de eenheden watt, joule en kWh en energiekosten berekenen.
+- [Vermogen en energie (Natuurkunde HAVO)](https://slagio.nl/leren/havo/natuurkunde/vermogen-en-energie.html): Je rekent met elektrisch vermogen (P = U · I) en energie (E = P · t), werkt met watt, joule en kilowattuur, berekent energiekosten en terugverdientijd,…
 - [Geleiders, isolatoren en sensoren (Natuurkunde HAVO)](https://slagio.nl/leren/havo/natuurkunde/geleiders-isolatoren-en-sensoren.html): Geleiders en isolatoren herkennen en verklaren, en begrijpen hoe niet-ohmse onderdelen werken: gloeilamp, LDR, NTC en diode.
 - [Elektrische veiligheid (Natuurkunde HAVO)](https://slagio.nl/leren/havo/natuurkunde/elektrische-veiligheid.html): Begrijpen wat kortsluiting en overbelasting zijn en hoe zekeringen, aarding en de aardlekschakelaar mensen en huizen beschermen tegen schokken en brand.
 - [Soorten ioniserende straling (Natuurkunde HAVO)](https://slagio.nl/leren/havo/natuurkunde/soorten-ioniserende-straling.html): Je beschrijft de bouw van een atoomkern met massagetal en atoomnummer, legt uit wat ioniserende straling is, onderscheidt alfa-, bèta- en gammastraling naar…

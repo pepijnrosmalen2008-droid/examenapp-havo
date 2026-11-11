@@ -2644,20 +2644,24 @@ var VAKKEN = [
      },
      {
       "id": "D4",
+      "lo": "na.D.4",
+      "gs": 2,
       "naam": "Vermogen en energie",
-      "beschrijving": "Rekenen met elektrisch vermogen (P = U x I) en energie (E = P x t), omgaan met de eenheden watt, joule en kWh en energiekosten berekenen.",
-      "ceStatus": "ce",
+      "beschrijving": "Je rekent met elektrisch vermogen (P = U · I) en energie (E = P · t), werkt met watt, joule en kilowattuur, berekent energiekosten en terugverdientijd, gebruikt rendement om zuinigheid te vergelijken en schrijft formules om, ook in combinatie met de wet van Ohm.",
+      "ceStatus": "CE",
+      "binas": "35D",
+      "val": "",
       "onderwerpen": [
-       "Vermogen: P = U x I",
-       "Energie: E = P x t",
+       "Vermogen: P = U · I",
+       "Energie: E = P · t",
        "Eenheden watt, joule en kWh",
        "Energiekosten berekenen",
        "Warmteverlies en zuinigheid",
        "Formules omschrijven"
       ],
-      "nSv": 25,
+      "nSv": 28,
       "nOe": 5,
-      "nBeg": 12,
+      "nBeg": 11,
       "hasSam": true
      },
      {
