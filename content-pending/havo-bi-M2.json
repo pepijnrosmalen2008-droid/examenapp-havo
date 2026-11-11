@@ -1,0 +1,710 @@
+{
+ "id": "M2",
+ "lo": "bi.M.2",
+ "gs": 2,
+ "naam": "Transport door het celmembraan",
+ "beschrijving": "Je beschrijft de bouw van het celmembraan, verklaart diffusie en osmose, voorspelt wat er met cellen gebeurt in hypotone, isotone en hypertone oplossingen, onderscheidt passief en actief transport en verklaart turgor en plasmolyse bij plantencellen.",
+ "ceStatus": "CE+SE",
+ "binas": "",
+ "val": "",
+ "onderwerpen": [
+  "Bouw van het celmembraan",
+  "Diffusie",
+  "Osmose",
+  "Hypertoon, hypotoon en isotoon",
+  "Actief transport",
+  "Plasmolyse en turgor"
+ ],
+ "sam": "Celmembraan: dubbele laag fosfolipiden met transporteiwitten, selectief doorlaatbaar. Diffusie: netto van hoog naar laag, geen energie; sneller bij groter verschil, hogere temperatuur, groter oppervlak. Osmose: diffusie van water door een membraan, naar de kant met de meeste opgeloste stof. Hypotoon: water de cel in (bloedcel barst); isotoon: gelijk (0,9% zout); hypertoon: water eruit (bloedcel krimpt). Actief transport: tegen het verschil in, transporteiwit en ATP. Turgor: volle vacuole tegen de celwand; plasmolyse: inhoud laat los in hypertone oplossing.",
+ "begrippen": [
+  {
+   "t": "Fosfolipide",
+   "d": "Vetachtig molecuul met een kop die van water houdt en staarten die water afstoten; bouwsteen van het membraan."
+  },
+  {
+   "t": "Selectief doorlaatbaar",
+   "d": "Laat sommige stoffen door en houdt andere tegen, zoals het celmembraan."
+  },
+  {
+   "t": "Transporteiwit",
+   "d": "Eiwit in het membraan waardoor ionen of glucose het membraan passeren."
+  },
+  {
+   "t": "Diffusie",
+   "d": "Netto verplaatsing van deeltjes van hoge naar lage concentratie, zonder energie van de cel."
+  },
+  {
+   "t": "Concentratieverschil",
+   "d": "Verschil in de hoeveelheid opgeloste stof tussen twee plekken; drijft diffusie aan."
+  },
+  {
+   "t": "Osmose",
+   "d": "Diffusie van water door een selectief doorlaatbaar membraan, naar de kant met de meeste opgeloste stof."
+  },
+  {
+   "t": "Hypotoon",
+   "d": "Oplossing met minder opgeloste stoffen dan de cel; water gaat de cel in."
+  },
+  {
+   "t": "Isotoon",
+   "d": "Oplossing met evenveel opgeloste stoffen als de cel; netto geen waterverplaatsing."
+  },
+  {
+   "t": "Hypertoon",
+   "d": "Oplossing met meer opgeloste stoffen dan de cel; water gaat de cel uit."
+  },
+  {
+   "t": "Passief transport",
+   "d": "Transport van hoog naar laag zonder energie, zoals diffusie en osmose."
+  },
+  {
+   "t": "Actief transport",
+   "d": "Transport tegen het concentratieverschil in met een transporteiwit, kost ATP."
+  },
+  {
+   "t": "Endocytose",
+   "d": "Opname van grote deeltjes doordat het membraan eromheen een blaasje afsnoert."
+  },
+  {
+   "t": "Turgor",
+   "d": "Druk van de volle vacuole en het cytoplasma tegen de celwand; houdt de plant stevig."
+  },
+  {
+   "t": "Plasmolyse",
+   "d": "Loslaten van het celmembraan van de celwand doordat de cel water verliest in een hypertone oplossing."
+  },
+  {
+   "t": "Grensplasmolyse",
+   "d": "Het membraan laat net los; de buitenoplossing is dan even geconcentreerd als het celvocht."
+  }
+ ],
+ "sv": [
+  {
+   "v": "Waaruit bestaat het celmembraan vooral?",
+   "o": [
+    "een enkele laag eiwitten zonder vetachtige stoffen",
+    "een stevige laag cellulose met kleine poriën erin",
+    "een dubbele laag fosfolipiden met eiwitten erin",
+    "een netwerk van DNA-draden rond het cytoplasma"
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 0,
+   "u": "Het celmembraan is een dubbele laag fosfolipiden met eiwitten.",
+   "uo": [
+    "Koos je alleen eiwitten? Eiwitten zitten wel in het membraan, maar de basis is een dubbele laag vetachtige moleculen: fosfolipiden.",
+    "Koos je cellulose? Dat is het materiaal van de celwand van planten. De celwand ligt buiten het membraan en is volledig doorlaatbaar voor water en opgeloste stoffen.",
+    "Klopt: het membraan is een dubbele laag fosfolipiden. De koppen wijzen naar het water, de staarten naar elkaar. Daartussen zitten transporteiwitten.",
+    "Koos je DNA-draden? DNA ligt in de celkern en heeft niets met het membraan te maken. Het membraan is opgebouwd uit fosfolipiden en eiwitten."
+   ],
+   "uh": "Twee lagen vetachtige moleculen."
+  },
+  {
+   "v": "Welke stof gaat het makkelijkst direct door de fosfolipidenlaag?",
+   "o": [
+    "glucose",
+    "zuurstof",
+    "natriumionen",
+    "zetmeel"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 0,
+   "u": "Kleine, ongeladen moleculen zoals O2 en CO2 gaan direct door de dubbellaag.",
+   "uo": [
+    "Koos je glucose? Glucose is te groot en lost niet op in het vetachtige midden van het membraan. Het heeft een transporteiwit nodig.",
+    "Klopt: zuurstof is een klein, ongeladen molecuul. Het glipt tussen de fosfolipiden door, zonder hulp van een eiwit.",
+    "Koos je natriumionen? Ionen zijn geladen en worden tegengehouden door het waterafstotende midden van het membraan. Ze gaan alleen via eiwitten.",
+    "Koos je zetmeel? Zetmeel is een enorm molecuul van duizenden glucose-eenheden. Dat komt helemaal niet door het membraan; het moet eerst verteerd worden."
+   ],
+   "uh": "Klein en ongeladen."
+  },
+  {
+   "v": "Waarom noem je het celmembraan selectief doorlaatbaar?",
+   "o": [
+    "het laat sommige stoffen door en houdt andere tegen",
+    "het laat alle stoffen door, maar alleen in de richting naar binnen",
+    "het laat alleen water door en verder helemaal niets",
+    "het laat stoffen pas door als de cel genoeg energie heeft"
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 0,
+   "u": "Selectief doorlaatbaar: sommige stoffen kunnen erdoor, andere niet.",
+   "uo": [
+    "Klopt: kleine ongeladen moleculen en water gaan erdoor, ionen en grote moleculen alleen via eiwitten of helemaal niet. Het membraan kiest dus.",
+    "Koos je alleen naar binnen? Stoffen gaan ook naar buiten, zoals koolstofdioxide en afvalstoffen. De richting hangt af van het concentratieverschil of van een pomp.",
+    "Koos je alleen water? Dan zou de cel geen zuurstof en voedingsstoffen kunnen opnemen. Ook zuurstof, CO2 en via eiwitten glucose en ionen gaan erdoor.",
+    "Koos je alleen met energie? Diffusie en osmose kosten de cel geen energie en gaan toch door het membraan. Alleen actief transport kost energie."
+   ],
+   "uh": "Sommige wel, sommige niet."
+  },
+  {
+   "v": "Waarom komt ethanol zo snel in de cellen terecht?",
+   "o": [
+    "ethanol wordt eerst omgezet in glucose en gaat dan via de glucose-eiwitten",
+    "ethanol wordt door transporteiwitten actief de cel in gepompt met ATP",
+    "ethanol maakt grote gaten in het membraan, zodat alles naar binnen stroomt",
+    "ethanol lost op in de fosfolipiden en diffundeert zo door het membraan"
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 0,
+   "u": "Een klein molecuul dat in vet oplost, diffundeert direct door de fosfolipidenlaag.",
+   "uo": [
+    "Koos je omzetten in glucose? Ethanol wordt in de lever afgebroken, maar niet tot glucose. Het komt de cel in omdat het in vet oplost.",
+    "Koos je actief pompen? Ethanol gaat van hoog (bloed) naar laag (cel), dus er is geen pomp nodig. Diffusie kost geen energie.",
+    "Koos je gaten in het membraan? Dan zouden ook glucose en ionen ongehinderd naar binnen stromen en zou de cel kapot gaan. Ethanol lost gewoon op in het membraan.",
+    "Klopt: ethanol is klein en lost op in vet. Daardoor gaat het direct door de fosfolipiden, zonder te wachten op een transporteiwit."
+   ],
+   "uh": "Lost het op in vet?",
+   "ctx": "Alcohol (ethanol) komt na een drankje binnen enkele minuten in het bloed en in de hersenen. Ethanol is een klein molecuul dat goed oplost in vet en in water. Glucose is groter, lost niet op in vet en heeft speciale transporteiwitten nodig om een cel in te komen."
+  },
+  {
+   "v": "Welke beweging hoort bij diffusie?",
+   "o": [
+    "alleen watermoleculen bewegen door een membraan heen",
+    "deeltjes bewegen met energie van lage naar hoge concentratie",
+    "deeltjes verspreiden zich van hoge naar lage concentratie",
+    "deeltjes blijven op hun plek tot er een stroming komt"
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 1,
+   "u": "Diffusie: netto verplaatsing van hoge naar lage concentratie, zonder energie van de cel.",
+   "uo": [
+    "Koos je alleen water? Diffusie van water door een membraan heet osmose. Diffusie geldt voor alle deeltjes, ook zuurstof of een kleurstof.",
+    "Koos je van laag naar hoog? Dat is actief transport, en dat kost energie. Diffusie gaat altijd met het concentratieverschil mee, van hoog naar laag.",
+    "Klopt: door hun eigen beweging verspreiden deeltjes zich van een plek met veel naar een plek met weinig. Dat kost de cel geen energie.",
+    "Koos je stil tot er stroming komt? Deeltjes bewegen altijd door warmte. Diffusie gebeurt ook in stilstaand water, zonder dat iets roert of stroomt."
+   ],
+   "uh": "Van veel naar weinig."
+  },
+  {
+   "v": "Wat is er na twee dagen met de netto verplaatsing van de deeltjes gebeurd?",
+   "o": [
+    "de deeltjes zijn stil komen te liggen omdat ze geen energie meer hebben",
+    "de deeltjes bewegen nog, maar er is geen netto verplaatsing meer",
+    "de deeltjes zijn naar de bodem gezakt en daar blijven liggen",
+    "de deeltjes bewegen nu juist terug van laag naar hoog"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 1,
+   "u": "Bij een gelijke concentratie bewegen deeltjes nog, maar netto verplaatst er niets.",
+   "uo": [
+    "Koos je stil liggen? Deeltjes bewegen altijd, zolang er warmte is. Ze hebben geen voorraad energie die opraakt; de beweging komt van de temperatuur.",
+    "Klopt: als de concentratie overal gelijk is, gaan er evenveel deeltjes de ene kant op als de andere. Ze bewegen nog, maar netto verandert er niets.",
+    "Koos je naar de bodem? Dan zou het glas onderin donker en bovenin helder zijn. Het glas is juist gelijkmatig lichtpaars geworden.",
+    "Koos je terug van laag naar hoog? Er is geen verschil meer, dus ook geen hoog en laag. Vanzelf ontstaat er geen nieuw verschil."
+   ],
+   "uh": "Gelijk verdeeld = evenwicht.",
+   "ctx": "In een bekerglas met water van 20 °C laat een leerling voorzichtig een korrel kaliumpermanganaat zakken. Na een uur is het water rond de korrel paars, maar bovenin nog helder. Na twee dagen is het hele glas gelijkmatig lichtpaars. Hij heeft niet geroerd en het glas stond stil."
+  },
+  {
+   "v": "Hoe verandert de snelheid van diffusie als de temperatuur stijgt?",
+   "o": [
+    "diffusie gaat sneller, omdat de deeltjes sneller bewegen",
+    "diffusie gaat langzamer, omdat het water uitzet en dunner wordt",
+    "diffusie verandert niet, want alleen het concentratieverschil telt",
+    "diffusie stopt boven 40 °C, omdat het membraan dan smelt"
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 1,
+   "u": "Hogere temperatuur, snellere deeltjes, snellere diffusie.",
+   "uo": [
+    "Klopt: bij een hogere temperatuur bewegen de deeltjes sneller. Daardoor verspreiden ze zich ook sneller van hoog naar laag.",
+    "Koos je langzamer? Water zet bij opwarmen maar heel weinig uit. Het belangrijkste effect is dat de deeltjes sneller bewegen, dus diffusie versnelt.",
+    "Koos je geen verandering? Het concentratieverschil telt wel, maar ook de temperatuur, het oppervlak en de afstand bepalen hoe snel diffusie gaat.",
+    "Koos je stoppen boven 40 °C? Diffusie gaat ook zonder membraan, bijvoorbeeld in een glas water. Het membraan smelt bovendien niet bij 40 °C."
+   ],
+   "uh": "Warmte = beweging."
+  },
+  {
+   "v": "Waarom krijgen mensen met emfyseem minder zuurstof in hun bloed?",
+   "o": [
+    "grotere blaasjes houden de zuurstof vast, zodat die niet weg kan",
+    "het concentratieverschil tussen lucht en bloed wordt juist groter",
+    "de zuurstof moet actief worden gepompt en dat kost te veel energie",
+    "er is minder oppervlak waardoor zuurstof kan diffunderen"
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 1,
+   "u": "Minder oppervlak betekent minder diffusie per seconde.",
+   "uo": [
+    "Koos je zuurstof vasthouden? Een longblaasje houdt geen zuurstof vast. Zuurstof diffundeert gewoon door de wand; er is alleen minder wand.",
+    "Koos je een groter concentratieverschil? Een groter verschil zou diffusie juist versnellen. Het probleem bij emfyseem is het kleinere oppervlak.",
+    "Koos je actief pompen? Zuurstof gaat in de longen door diffusie van hoog naar laag, zonder pomp. Er is geen energie voor nodig.",
+    "Klopt: hoeveel zuurstof er per seconde diffundeert, hangt af van het oppervlak. Minder oppervlak geeft minder zuurstof in het bloed."
+   ],
+   "uh": "Waar hangt de snelheid van af?",
+   "ctx": "In de longblaasjes is de concentratie zuurstof hoog en in het bloed dat aankomt laag. Bij de longziekte emfyseem gaan wanden tussen longblaasjes kapot: er ontstaan minder, maar grotere blaasjes. Het totale oppervlak van de longen wordt daardoor veel kleiner, terwijl de lucht even zuurstofrijk blijft."
+  },
+  {
+   "v": "Waarom blijft er zuurstof de spiercel in gaan zolang de spier werkt?",
+   "o": [
+    "de cel neemt zuurstof op met ATP, omdat diffusie veel te langzaam gaat",
+    "de diffusie stopt zodra de cel genoeg zuurstof heeft en vol zit",
+    "de cel verbruikt zuurstof, dus het concentratieverschil blijft bestaan",
+    "zuurstof diffundeert juist de cel uit, omdat er binnen meer is"
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 1,
+   "u": "Doordat de cel zuurstof verbruikt, blijft de concentratie binnen laag.",
+   "uo": [
+    "Koos je opnemen met ATP? Zuurstof gaat van veel (bloed) naar weinig (cel). Daarvoor is geen pomp nodig; diffusie gaat over zulke korte afstanden snel genoeg.",
+    "Koos je stoppen als de cel vol zit? Een werkende cel raakt nooit vol, want hij verbruikt de zuurstof direct. Daardoor blijft het verschil bestaan.",
+    "Klopt: de spiercel gebruikt zuurstof meteen op. Binnen blijft de concentratie laag, dus het verschil met het bloed blijft en de diffusie gaat door.",
+    "Koos je de cel uit? In de werkende spiercel is juist weinig zuurstof, want hij gebruikt het op. Zuurstof gaat dus van het bloed naar de cel."
+   ],
+   "uh": "Wat gebeurt er binnen met de zuurstof?",
+   "ctx": "Een spiercel gebruikt bij inspanning voortdurend zuurstof voor de afbraak van glucose. In het bloed in de haarvaten rond de spier zit veel zuurstof, in de spiercel zelf weinig. Zuurstof gaat door diffusie van het bloed naar de spiercel, minuten- of zelfs urenlang achter elkaar."
+  },
+  {
+   "v": "Welke beschrijving past bij osmose?",
+   "o": [
+    "transport van suiker door een membraan met behulp van energie",
+    "diffusie van water door een selectief doorlaatbaar membraan",
+    "het oplossen van zout in water tot een gelijkmatige oplossing",
+    "het opnemen van grote deeltjes door instulping van het membraan"
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 2,
+   "u": "Osmose is diffusie van water door een selectief doorlaatbaar membraan.",
+   "uo": [
+    "Koos je suiker met energie? Dat is actief transport van suiker. Bij osmose gaat het om water en kost het de cel geen energie.",
+    "Klopt: bij osmose gaat water door een membraan dat wel water doorlaat, maar de opgeloste stof niet. Het is een speciaal geval van diffusie.",
+    "Koos je zout oplossen? Oplossen gebeurt zonder membraan. Osmose vraagt altijd een membraan dat water doorlaat en de opgeloste stof tegenhoudt.",
+    "Koos je instulping? Dat heet endocytose: het membraan omsluit een groot deeltje. Bij osmose gaan alleen watermoleculen door het membraan."
+   ],
+   "uh": "Water door een membraan."
+  },
+  {
+   "v": "Wat zie je na een paar uur aan de vloeistofniveaus?",
+   "o": [
+    "rechts is het niveau gestegen, want er gaat netto water naar de suikerkant",
+    "links is het niveau gestegen, want suiker duwt water naar de waterkant",
+    "beide niveaus blijven gelijk, want het membraan houdt water en suiker tegen",
+    "de suiker gaat naar links tot beide kanten 5% bevatten"
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 2,
+   "u": "Water gaat netto naar de kant met de hoogste concentratie opgeloste stof.",
+   "uo": [
+    "Klopt: rechts zit minder vrij water door de suiker. Netto gaat er water van links naar rechts, dus rechts stijgt het niveau.",
+    "Koos je links stijgt? Suiker duwt geen water weg. Water gaat juist naar de kant met de meeste opgeloste stof, en dat is rechts.",
+    "Koos je gelijk blijven? Het membraan laat water wel door, alleen suiker niet. Daardoor kan er netto water naar de suikerkant gaan.",
+    "Koos je suiker naar links? Het membraan laat suikermoleculen niet door. Alleen water kan bewegen, dus de suiker blijft rechts."
+   ],
+   "uh": "Wat mag er door het membraan?",
+   "ctx": "In een U-buis zit links zuiver water en rechts een suikeroplossing van 10%. In het midden zit een membraan dat watermoleculen doorlaat, maar suikermoleculen niet. Aan het begin staan de vloeistoffen links en rechts precies even hoog. De buis blijft een paar uur staan."
+  },
+  {
+   "v": "In welke richting gaat water bij osmose netto?",
+   "o": [
+    "naar de kant waar de temperatuur het laagst is",
+    "naar de kant met de minste opgeloste stoffen, dus het meeste water",
+    "altijd van binnen de cel naar buiten de cel",
+    "naar de kant met de hoogste concentratie opgeloste stoffen"
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 2,
+   "u": "Water gaat naar de kant met de meeste opgeloste stoffen (het minste vrije water).",
+   "uo": [
+    "Koos je de koudste kant? Osmose wordt bepaald door het verschil in opgeloste stoffen, niet door een temperatuurverschil.",
+    "Koos je de kant met het meeste water? Dat is juist de kant waar het water vandaan komt. Water gaat van veel water naar weinig water.",
+    "Koos je altijd naar buiten? De richting hangt af van de concentraties. In zuiver water gaat water juist de cel in.",
+    "Klopt: waar veel opgeloste stof zit, is relatief weinig vrij water. Water diffundeert daarheen, van veel water naar weinig water."
+   ],
+   "uh": "Water volgt de opgeloste stof."
+  },
+  {
+   "v": "Wat kun je concluderen over de concentratie in de aardappelcellen?",
+   "o": [
+    "die is hoger dan 3%, want anders zouden ze daarin niet slap worden",
+    "die is gelijk aan zuiver water, want daarin veranderen ze het meest",
+    "die is ongeveer gelijk aan een zoutoplossing van 0,9%",
+    "die is niet te bepalen zonder de cellen onder een microscoop te zien"
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 2,
+   "u": "Waar de massa gelijk blijft, is de oplossing isotoon met het celvocht.",
+   "uo": [
+    "Koos je hoger dan 3%? De reepjes werden in 3% slap, dus ze verloren water. Dan is de buitenkant geconcentreerder dan de cellen, niet andersom.",
+    "Koos je zuiver water? In zuiver water nemen de cellen juist veel water op. Dat laat zien dat er in de cellen meer opgeloste stof zit dan in water.",
+    "Klopt: bij 0,9% gaat er netto geen water in of uit, dus de massa blijft gelijk. Die oplossing heeft dezelfde concentratie als het celvocht.",
+    "Koos je niet te bepalen? Met de massa kun je het wel bepalen: waar de massa niet verandert, zijn binnen en buiten even geconcentreerd."
+   ],
+   "uh": "Zoek waar de massa niet verandert.",
+   "ctx": "Een leerling legt even zware reepjes aardappel een nacht in zoutoplossingen van verschillende concentratie. Daarna weegt hij ze opnieuw. In 0% en 0,5% zout zijn ze zwaarder en stevig, in 0,9% is de massa gelijk gebleven, in 1,5% en 3% zijn ze lichter en buigzaam geworden."
+  },
+  {
+   "v": "Hoe ontstaat het laagje vocht onder in de slaschaal?",
+   "o": [
+    "zout gaat door actief transport de cellen in en duwt het water eruit",
+    "water gaat door osmose uit de cellen naar de zoute buitenkant",
+    "de dressing lost de celwanden op, zodat het celvocht wegloopt",
+    "de sla verdampt water, dat daarna in de schaal condenseert"
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 2,
+   "u": "Zout op de blaadjes maakt de buitenkant hypertoon: water gaat de cellen uit.",
+   "uo": [
+    "Koos je zout dat water eruit duwt? Zout dat de cel in gaat, zou juist water aantrekken. Het water gaat eruit omdat het zout búiten de cel zit.",
+    "Klopt: door het zout is de vloeistof op de blaadjes geconcentreerder dan het celvocht. Water gaat door osmose de cellen uit en verzamelt zich in de schaal.",
+    "Koos je opgeloste celwanden? Een celwand van cellulose lost niet op in dressing. Bovendien zou de sla dan uit elkaar vallen in plaats van slap worden.",
+    "Koos je verdampen en condenseren? In een open schaal bij kamertemperatuur gaat dat veel te langzaam. Het vocht komt in een uur door osmose uit de cellen."
+   ],
+   "uh": "Waar is het zoutst?",
+   "ctx": "Een kok doet een uur voor het eten al zout en dressing over een salade. Als de gasten aan tafel gaan, liggen de slablaadjes slap in een laagje vocht onder in de schaal. Sla die pas vlak voor het eten wordt aangemaakt, blijft knapperig en droog."
+  },
+  {
+   "v": "Welke oplossing noem je hypotoon ten opzichte van een cel?",
+   "o": [
+    "een oplossing met minder opgeloste stoffen dan de cel",
+    "een oplossing met meer opgeloste stoffen dan in de cel zelf",
+    "een oplossing met precies dezelfde concentratie als de cel",
+    "een oplossing waarin helemaal geen water meer aanwezig is"
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 3,
+   "u": "Hypo = minder: een hypotone oplossing bevat minder opgeloste stoffen dan de cel.",
+   "uo": [
+    "Klopt: hypotoon betekent minder opgeloste stoffen dan in de cel. Een cel in een hypotone oplossing neemt water op.",
+    "Koos je meer opgeloste stoffen? Dat heet hypertoon (hyper = meer). Daarin verliest een cel juist water.",
+    "Koos je dezelfde concentratie? Dat heet isotoon (iso = gelijk). Daarin gaat er netto geen water de cel in of uit.",
+    "Koos je zonder water? Een oplossing bestaat altijd uit water met opgeloste stoffen. Hypotoon zegt iets over hoeveel stof erin zit, niet over het water."
+   ],
+   "uh": "Hypo = onder."
+  },
+  {
+   "v": "Wat gebeurt er met rode bloedcellen als er zuiver water in de ader komt?",
+   "o": [
+    "ze vormen een celwand om zich te beschermen",
+    "ze verliezen water, krimpen en worden gerimpeld",
+    "ze blijven gelijk, want het water mengt zich snel",
+    "ze nemen water op, zwellen en kunnen barsten"
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 3,
+   "u": "Zuiver water is hypotoon: water stroomt de cel in tot hij kan barsten.",
+   "uo": [
+    "Koos je een celwand vormen? Dierlijke cellen kunnen geen celwand maken. Daarom zijn ze juist zo kwetsbaar in een hypotone oplossing.",
+    "Koos je krimpen? Dat gebeurt in een hypertone oplossing, met meer zout dan in de cel. Zuiver water heeft juist minder opgeloste stof.",
+    "Koos je gelijk blijven? Vlak bij het infuus is het bloed tijdelijk sterk verdund. Cellen daar nemen water op voordat alles gemengd is.",
+    "Klopt: zuiver water is hypotoon ten opzichte van de cel. Water gaat door osmose naar binnen, de cel zwelt en zonder celwand barst hij."
+   ],
+   "uh": "Zuiver water heeft geen opgeloste stof.",
+   "ctx": "In het ziekenhuis krijgt een patiënt een infuus met een fysiologische zoutoplossing van 0,9% keukenzout. Die oplossing heeft dezelfde concentratie opgeloste stoffen als bloedplasma. Een stagiair vraagt zich af waarom je niet gewoon zuiver water in een ader mag laten lopen."
+  },
+  {
+   "v": "Wat gebeurt er met een rode bloedcel in een hypertone oplossing?",
+   "o": [
+    "hij blijft gelijk van vorm en van grootte",
+    "hij neemt water op door osmose en barst",
+    "hij verliest water door osmose en krimpt",
+    "hij neemt zout op en wordt daardoor groter"
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 3,
+   "u": "In een hypertone oplossing verliest een cel water en krimpt hij.",
+   "uo": [
+    "Koos je gelijk blijven? Dat gebeurt in een isotone oplossing. Een hypertone oplossing heeft meer opgeloste stof, dus er gaat water uit de cel.",
+    "Koos je water opnemen en barsten? Dat gebeurt in een hypotone oplossing, met minder opgeloste stof dan in de cel. Hypertoon is het omgekeerde.",
+    "Klopt: buiten zit meer opgeloste stof dan binnen. Water gaat door osmose naar buiten en de rode bloedcel krimpt en rimpelt.",
+    "Koos je zout opnemen? Het membraan laat zout maar slecht door. Wat wel snel beweegt, is water, en dat gaat naar de zoute buitenkant."
+   ],
+   "uh": "Hyper = meer opgeloste stof buiten."
+  },
+  {
+   "v": "Waarom klopt de vacuole van het pantoffeldiertje langzamer in zouter water?",
+   "o": [
+    "zout water maakt de vacuole stuk, zodat hij niet meer kan kloppen",
+    "er komt minder water door osmose binnen, dus er hoeft minder uit",
+    "in zout water neemt het diertje zout op in plaats van water",
+    "het diertje heeft in zout water geen energie meer voor de pomp"
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 3,
+   "u": "In zouter water is het verschil met de cel kleiner, dus komt er minder water binnen.",
+   "uo": [
+    "Koos je een kapotte vacuole? Hij klopt nog, alleen langzamer. Een kapotte vacuole zou helemaal stoppen, en het diertje zou dan juist opzwellen.",
+    "Klopt: in zoet water stroomt er steeds water naar binnen, dat de vacuole wegpompt. In zouter water is het verschil kleiner en komt er minder binnen.",
+    "Koos je zout in plaats van water? Het verschil zit in hoeveel water er door osmose binnenkomt. Dat wordt kleiner als het buitenwater zouter is.",
+    "Koos je geen energie? Het diertje leeft en beweegt gewoon. De vacuole klopt langzamer omdat er minder water weg te pompen is."
+   ],
+   "uh": "Hoe groot is het verschil binnen en buiten?",
+   "ctx": "Een pantoffeldiertje is een eencellige die in zoet water leeft. Het heeft een kloppende vacuole die zich steeds vult met water en dat naar buiten perst. Als je het diertje in water met een beetje zout zet, klopt de vacuole veel langzamer, maar het diertje blijft gewoon rondzwemmen."
+  },
+  {
+   "v": "Waarin verschilt actief transport van passief transport?",
+   "o": [
+    "actief transport kost energie en kan tegen het concentratieverschil in",
+    "actief transport gaat altijd sneller en heeft geen eiwitten nodig",
+    "actief transport gaat alleen naar buiten en passief alleen naar binnen",
+    "actief transport werkt alleen voor water, passief voor andere stoffen"
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 4,
+   "u": "Actief transport kost ATP en kan van lage naar hoge concentratie.",
+   "uo": [
+    "Klopt: actief transport kost de cel energie (ATP) en kan stoffen van lage naar hoge concentratie brengen. Passief transport gaat altijd van hoog naar laag.",
+    "Koos je sneller en zonder eiwitten? Actief transport heeft juist altijd een transporteiwit nodig, een pomp. Het gaat ook niet per se sneller.",
+    "Koos je naar buiten en naar binnen? Beide soorten transport kunnen in beide richtingen. Het verschil is of er energie voor nodig is.",
+    "Koos je alleen water? Water gaat juist passief, door osmose. Actief transport wordt gebruikt voor ionen, glucose en aminozuren."
+   ],
+   "uh": "Energie of geen energie?"
+  },
+  {
+   "v": "Welke conclusie past bij deze gegevens over de kaliumopname?",
+   "o": [
+    "zuurstof is nodig om de kaliumionen kleiner te maken",
+    "kalium wordt door diffusie opgenomen, want er is veel kalium in de bodem",
+    "kalium wordt door osmose opgenomen, samen met het bodemwater",
+    "kalium wordt actief opgenomen, met energie uit de dissimilatie"
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 4,
+   "u": "Opname tegen het concentratieverschil in, afhankelijk van zuurstof: actief transport.",
+   "uo": [
+    "Koos je ionen kleiner maken? Zuurstof verandert de grootte van een ion niet. Het is nodig voor de dissimilatie die de energie (ATP) levert.",
+    "Koos je diffusie? In de cel zit 75 keer zoveel kalium als in de bodem. Diffusie zou kalium dan juist de cel uit laten gaan.",
+    "Koos je osmose? Osmose is transport van water, niet van ionen. Kalium komt via transporteiwitten de cel in.",
+    "Klopt: kalium gaat van laag (bodem) naar hoog (cel), dus tegen het verschil in. Dat kost energie uit de dissimilatie, en daarvoor is zuurstof nodig."
+   ],
+   "uh": "Van laag naar hoog en zuurstof nodig.",
+   "ctx": "Wortelharen van een plant nemen kaliumionen op uit de bodem. In de cellen van het wortelhaar is de concentratie kalium 75 keer zo hoog als in het bodemwater. Als onderzoekers alle zuurstof uit de bodem halen, stopt de opname van kalium bijna helemaal, terwijl de wortel verder nog leeft."
+  },
+  {
+   "v": "Waar komt de energie voor actief transport vandaan?",
+   "o": [
+    "uit het concentratieverschil zelf, dat de stof duwt",
+    "uit de warmte van het bloed dat langs de cel stroomt",
+    "uit ATP dat in de mitochondriën is gemaakt",
+    "uit licht dat door het membraan naar binnen valt"
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 4,
+   "u": "De energie voor transporteiwitten komt uit ATP uit de dissimilatie.",
+   "uo": [
+    "Koos je het concentratieverschil? Dat helpt alleen bij passief transport, van hoog naar laag. Bij actief transport werkt de cel er juist tegenin.",
+    "Koos je warmte van het bloed? Warmte laat deeltjes bewegen en helpt bij diffusie, maar kan geen stof tegen het verschil in duwen.",
+    "Klopt: de mitochondriën maken bij de dissimilatie ATP. Een transporteiwit gebruikt die ATP om een stof tegen het verschil in te pompen.",
+    "Koos je licht? Alleen bladgroenkorrels gebruiken licht, voor de fotosynthese. Transport door het membraan wordt aangedreven door ATP."
+   ],
+   "uh": "De energiedrager van de cel."
+  },
+  {
+   "v": "Welke beschrijving van dit transport is juist?",
+   "o": [
+    "het is diffusie; de bacterie gaat vanzelf van veel naar weinig",
+    "het is endocytose; het membraan omsluit het deeltje en dat kost energie",
+    "het is osmose; de bacterie wordt met het water mee naar binnen gezogen",
+    "het is passief transport door een kanaaleiwit dat heel wijd opengaat"
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 4,
+   "u": "Grote deeltjes worden opgenomen door instulping van het membraan: endocytose.",
+   "uo": [
+    "Koos je diffusie? Een bacterie is geen opgelost molecuul en kan niet door het membraan diffunderen. Hij wordt met een blaasje binnengehaald.",
+    "Klopt: de bacterie is te groot voor een transporteiwit. Het membraan stulpt eromheen en snoert een blaasje af. Die beweging van het membraan kost energie.",
+    "Koos je osmose? Osmose gaat alleen over water. Een hele bacterie gaat er nooit door osmose in.",
+    "Koos je een wijd kanaaleiwit? Kanaaleiwitten laten alleen kleine ionen of moleculen door. Een bacterie van 2 µm past daar duizenden keren niet door."
+   ],
+   "uh": "Te groot voor een eiwit.",
+   "ctx": "Een witte bloedcel komt een bacterie tegen. Het celmembraan stulpt om de bacterie heen en snoert een blaasje af met de bacterie erin. Daarna versmelt een lysosoom met dat blaasje. De bacterie is ongeveer 2 µm groot, veel te groot voor een transporteiwit in het membraan."
+  },
+  {
+   "v": "Waarom wordt het slijm dik als het chloride-eiwit niet werkt?",
+   "o": [
+    "er gaat geen chloride naar buiten, dus er volgt ook geen water door osmose",
+    "er gaat te veel chloride naar buiten, waardoor het water verdampt",
+    "het slijm krijgt te veel water, omdat chloride het water in de cel houdt",
+    "zonder chloride kunnen de cellen helemaal geen slijm meer maken"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 4,
+   "u": "Zonder chloride buiten de cel volgt er geen water: het slijm droogt in.",
+   "uo": [
+    "Klopt: normaal maakt het chloride de laag buiten de cel geconcentreerder, zodat water volgt. Zonder pomp blijft het water binnen en wordt het slijm taai.",
+    "Koos je te veel chloride? Het eiwit werkt juist niet, dus er gaat te weinig chloride naar buiten. Water verdampt in de longen bovendien niet zomaar.",
+    "Koos je te veel water? Het slijm is juist dik en taai, en dat betekent te weinig water. Chloride trekt water mee naar waar het chloride is.",
+    "Koos je geen slijm meer? De cellen maken nog wel slijm, alleen zit er te weinig water in. Daardoor is het dik in plaats van afwezig."
+   ],
+   "uh": "Water volgt de opgeloste stof.",
+   "ctx": "Bij taaislijmziekte (CF) werkt een transporteiwit voor chloride-ionen in de cellen van de luchtwegen niet goed. Normaal pompt dat eiwit chloride naar de buitenkant, waarna water door osmose volgt en het slijm dun blijft. Bij CF is het slijm dik en taai en raken de longen vaak ontstoken."
+  },
+  {
+   "v": "Welke beschrijving past bij turgor in een plantencel?",
+   "o": [
+    "het krimpen van de celwand als hij in zout water ligt",
+    "het loslaten van het celmembraan van de celwand",
+    "het barsten van een cel die in zuiver water ligt",
+    "de druk van de volle vacuole op de celwand"
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 5,
+   "u": "Turgor is de druk van de inhoud van de cel tegen de celwand.",
+   "uo": [
+    "Koos je een krimpende celwand? De celwand is stevig en krimpt bijna niet. Bij waterverlies krimpt de inhoud, niet de wand.",
+    "Koos je loslaten van de celwand? Dat heet plasmolyse en gebeurt als de cel veel water verliest. Turgor is juist de druk bij een volle cel.",
+    "Koos je barsten? Een plantencel barst niet, want de celwand houdt hem tegen. Die tegendruk van de wand hoort bij turgor.",
+    "Klopt: een volle vacuole duwt het cytoplasma tegen de celwand. Die druk heet turgor en maakt de cel stevig."
+   ],
+   "uh": "Druk van binnen."
+  },
+  {
+   "v": "Waarom barst een plantencel niet in zuiver water, een rode bloedcel wel?",
+   "o": [
+    "de vacuole pompt al het binnenkomende water direct weer weg",
+    "de plantencel neemt in zuiver water helemaal geen water op",
+    "de stevige celwand houdt de cel tegen als hij vol water zit",
+    "de plantencel heeft geen celmembraan, alleen een celwand"
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 5,
+   "u": "De celwand houdt de opzwellende plantencel tegen.",
+   "uo": [
+    "Koos je wegpompen door de vacuole? De grote vacuole van een plantencel slaat water op en pompt het niet weg. Dat doet een kloppende vacuole van een eencellige.",
+    "Koos je helemaal geen water? Een plantencel in zuiver water neemt wel water op; daardoor wordt hij juist stevig. Hij barst alleen niet.",
+    "Klopt: de plantencel neemt ook water op, maar de stevige celwand duwt terug. Zodra de druk groot genoeg is, komt er netto geen water meer bij.",
+    "Koos je geen celmembraan? Elke cel heeft een celmembraan. Bij een plantencel ligt daar nog een celwand omheen, en die voorkomt het barsten."
+   ],
+   "uh": "Wat heeft een plantencel extra?"
+  },
+  {
+   "v": "Wat zit er na de plasmolyse tussen de celwand en het celmembraan?",
+   "o": [
+    "lucht, die door de poriën in de celwand naar binnen is gezogen",
+    "de suikeroplossing, die door de celwand heen is gegaan",
+    "cytoplasma, dat buiten het membraan is gelekt",
+    "niets: daar is een leeg vacuüm ontstaan"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 5,
+   "u": "De celwand is volledig doorlaatbaar, dus de buitenvloeistof vult de ruimte.",
+   "uo": [
+    "Koos je lucht? Het preparaat ligt in een vloeistof onder een dekglas. Er is geen lucht die naar binnen kan; de suikeroplossing stroomt door de wand.",
+    "Klopt: de celwand laat water en opgeloste stoffen gewoon door. De ruimte tussen wand en membraan vult zich met de suikeroplossing van buiten.",
+    "Koos je cytoplasma buiten het membraan? Het membraan zit nog heel om de inhoud heen. Het cytoplasma blijft binnen het membraan, alleen krimpt het geheel.",
+    "Koos je een vacuüm? Een vacuüm zou meteen gevuld worden, want de celwand is doorlaatbaar. De vloeistof van buiten stroomt erin."
+   ],
+   "uh": "Wat laat de celwand door?",
+   "ctx": "Een leerling bekijkt cellen van een rode ui onder de microscoop. Ze druppelt aan de rand van het dekglas een geconcentreerde suikeroplossing en zuigt met filtreerpapier aan de andere kant. Na enkele minuten ziet ze dat de rode inhoud van de cellen kleiner wordt en loslaat van de celwand."
+  },
+  {
+   "v": "Wat is de concentratie in het celvocht van deze uiencellen ongeveer?",
+   "o": [
+    "0,50 M",
+    "0,40 M",
+    "0,30 M",
+    "0,70 M"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 5,
+   "u": "Bij grensplasmolyse (50% van de cellen) is de buitenconcentratie gelijk aan die van het celvocht.",
+   "uo": [
+    "Klopt: bij 0,50 M heeft de helft van de cellen plasmolyse. Dat is grensplasmolyse, en dan is de oplossing ongeveer even geconcentreerd als het celvocht.",
+    "Koos je 0,40 M? Daar begint de plasmolyse pas bij een paar cellen (20%). De meeste cellen hebben nog een hogere concentratie dan deze oplossing.",
+    "Koos je 0,30 M? Daar heeft nog geen enkele cel plasmolyse, dus de oplossing is hypotoon of hooguit gelijk voor de cellen met de laagste concentratie.",
+    "Koos je 0,70 M? Dan hebben alle cellen plasmolyse; deze oplossing is voor alle cellen hypertoon. Zoek het punt waar het precies de helft is."
+   ],
+   "uh": "Zoek waar de helft van de cellen plasmolyse heeft.",
+   "ctx": "Een leerling legt stukjes rode-uienhuid in zes suikeroplossingen en telt per oplossing het percentage cellen met plasmolyse: 0,20 M: 0%; 0,30 M: 0%; 0,40 M: 20%; 0,50 M: 50%; 0,60 M: 90%; 0,70 M: 100%. Bij grensplasmolyse heeft de helft van de cellen plasmolyse."
+  },
+  {
+   "v": "Hoe verklaar je dat de planten slap hangen terwijl de grond vochtig is?",
+   "o": [
+    "de plant gebruikt al het water om de kunstmest actief op te nemen",
+    "de kunstmest verstopt de wortelharen, zodat er geen water meer in kan",
+    "kunstmest is giftig voor de bladgroenkorrels, zodat de fotosynthese stopt",
+    "het bodemwater is hypertoon geworden, dus wortelcellen verliezen water"
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 5,
+   "u": "Te veel opgeloste zouten rond de wortels maken het bodemwater hypertoon.",
+   "uo": [
+    "Koos je water verbruiken voor opname? Actief transport kost ATP, geen water. Het probleem is dat het water de wortel uit gaat in plaats van erin.",
+    "Koos je verstopte wortelharen? Dan zou regen niet helpen. Na regen is het bodemwater verdund en knappen de planten op, dus het gaat om de concentratie.",
+    "Koos je giftig voor de bladgroenkorrels? Dan zou regen de planten niet zo snel herstellen. Slap hangen komt door waterverlies, niet door minder fotosynthese.",
+    "Klopt: door de kunstmest zit er meer opgeloste stof in het bodemwater dan in de wortelcellen. Water gaat door osmose de wortels uit en de plant verliest turgor."
+   ],
+   "uh": "Wat doet de regen met de concentratie?",
+   "ctx": "Een tuinder strooit veel te veel kunstmest rond zijn tomatenplanten. Kunstmest bestaat uit zouten die oplossen in het bodemwater. Na een droge, warme dag hangen de planten slap, ook al is de grond nog vochtig. Na een paar flinke regenbuien knappen de planten weer op."
+  }
+ ],
+ "oe": [
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een leerling snijdt vijf even grote stukjes rode biet en weegt ze. Ze legt elk stukje een nacht in een suikeroplossing: 0; 0,2; 0,4; 0,6 en 0,8 M. De massaverandering is: +14%, +6%, −1%, −7% en −12%.",
+   "v": "Bepaal de concentratie van het celvocht en leg met het begrip osmose uit waarom het stukje in 0,8 M lichter wordt.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Het celvocht is ongeveer 0,38 M: daar is de massaverandering nul (tussen +6% bij 0,2 M en −1% bij 0,4 M) (1p). De oplossing van 0,8 M is hypertoon ten opzichte van de cellen (1p). Door osmose gaat water netto de cellen uit naar de geconcentreerde oplossing, dus de massa daalt (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Zeevis heeft lichaamsvloeistof met een lagere zoutconcentratie dan zeewater. Zoetwatervis heeft lichaamsvloeistof met een hogere concentratie dan het water om hem heen. Zoetwatervissen plassen veel en verdund; zeevissen drinken zeewater en scheiden via hun kieuwen actief zout uit.",
+   "v": "Leg uit waarom een zoetwatervis veel verdunde urine maakt en waarom een zeevis voor zijn zouthuishouding energie nodig heeft.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Zoet water is hypotoon ten opzichte van de vis: water komt door osmose steeds het lichaam in (1p), en dat overtollige water moet als veel, verdunde urine weg (1p). Een zeevis moet zout uitscheiden naar zeewater dat zouter is dan zijn lichaam, dus tegen het concentratieverschil in: actief transport, dat ATP kost (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Bij uitdroging na veel braken krijgt een kind een drankje met zout en glucose (ORS). In de darmwand neemt een transporteiwit glucose op samen met natriumionen, ook als er in de darmcel al meer glucose zit dan in de darm. Daarna volgt water door osmose.",
+   "v": "Leg uit waarom de opname van glucose actief transport is en hoe het drankje helpt om water op te nemen.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Glucose wordt opgenomen terwijl de concentratie in de darmcel al hoger is: tegen het concentratieverschil in, dus actief transport dat energie kost (1p). Glucose en natrium komen in de darmwand en het bloed; daardoor wordt het weefsel geconcentreerder dan de darminhoud (1p). Water volgt door osmose naar de kant met de meeste opgeloste stof, het lichaam in (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een onderzoeker meet bij plantenwortels hoeveel nitraat ze opnemen bij verschillende temperaturen, met en zonder zuurstof in het water. Met zuurstof stijgt de opname van 10 tot 30 °C sterk en daalt boven 40 °C. Zonder zuurstof is de opname bij elke temperatuur bijna nul.",
+   "v": "Leg uit wat deze resultaten zeggen over de manier van opname en verklaar de daling boven 40 °C.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Zonder zuurstof geen opname: de opname hangt af van dissimilatie, dus het is actief transport met ATP (1p). Tussen 10 en 30 °C werken de enzymen van de dissimilatie en de transporteiwitten sneller (1p). Boven 40 °C denatureren eiwitten, waaronder de transporteiwitten en enzymen, zodat de opname daalt (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Bij een experiment worden cellen van rode ui bekeken in drie vloeistoffen: P (zuiver water), Q (0,3 M sucrose) en R (1,0 M sucrose). In P is de rode inhoud groot en ligt tegen de wand. In Q liggen de meeste cellen nog tegen de wand, enkele laten net los. In R is de rode inhoud in alle cellen een klein bolletje.",
+   "v": "Benoem de toestand van de cellen in P, Q en R, en leg uit waarom de cellen in P niet barsten.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "P: turgor; Q: (rond) grensplasmolyse; R: plasmolyse (1p, alle drie goed). In P is de oplossing hypotoon, dus water gaat door osmose de cel in (1p). De stevige celwand drukt terug, zodat de cel niet verder opzwelt en niet barst (1p)."
+  }
+ ]
+}

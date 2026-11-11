@@ -1106,20 +1106,24 @@ var VAKKEN = [
      },
      {
       "id": "M2",
+      "lo": "bi.M.2",
+      "gs": 2,
       "naam": "Transport door het celmembraan",
-      "beschrijving": "Hoe stoffen door het selectief doorlaatbare celmembraan bewegen via diffusie, osmose, passief en actief transport, met hypertoon/hypotoon/isotoon, plasmolyse en turgor.",
-      "ceStatus": "CE",
+      "beschrijving": "Je beschrijft de bouw van het celmembraan, verklaart diffusie en osmose, voorspelt wat er met cellen gebeurt in hypotone, isotone en hypertone oplossingen, onderscheidt passief en actief transport en verklaart turgor en plasmolyse bij plantencellen.",
+      "ceStatus": "CE+SE",
+      "binas": "",
+      "val": "",
       "onderwerpen": [
-       "Selectief doorlaatbaar celmembraan",
-       "Diffusie & concentratiegradiënt",
-       "Osmose (water)",
-       "Hypertoon, hypotoon, isotoon",
-       "Passief vs actief transport",
-       "Plasmolyse & turgor"
+       "Bouw van het celmembraan",
+       "Diffusie",
+       "Osmose",
+       "Hypertoon, hypotoon en isotoon",
+       "Actief transport",
+       "Plasmolyse en turgor"
       ],
-      "nSv": 25,
+      "nSv": 28,
       "nOe": 5,
-      "nBeg": 12,
+      "nBeg": 15,
       "hasSam": true
      },
      {
