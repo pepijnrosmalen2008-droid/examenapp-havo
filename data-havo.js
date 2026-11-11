@@ -55407,565 +55407,640 @@ var VAKKEN = [
      },
      {
       "id": "O7",
+      "lo": "bi.O.7",
+      "gs": 2,
       "naam": "Beweging: gewrichten en spieren",
-      "beschrijving": "Het skelet en gewrichten, pezen en gewrichtsbanden, en hoe antagonistische spieren (buigspier en strekspier) samenwerken bij beweging.",
-      "ceStatus": "CE",
+      "beschrijving": "Je beschrijft de functies en de bouw van het skelet en van een bot, legt de bouw en soorten gewrichten uit, onderscheidt pezen en gewrichtsbanden, verklaart waarom spieren alleen kunnen trekken en in antagonistische paren werken, en legt het verband tussen spierwerking, ATP en melkzuur.",
+      "ceStatus": "CE+SE",
+      "binas": "",
+      "val": "",
       "onderwerpen": [
-       "Skelet: steun en bescherming",
-       "Gewricht als beweegbare verbinding",
-       "Kraakbeen, gewrichtsband en pees",
-       "Spieren kunnen alleen samentrekken",
-       "Antagonisten: buigspier en strekspier",
-       "Voorbeeld: buigen en strekken van de arm"
+       "Het skelet",
+       "Gewrichten",
+       "Pezen en gewrichtsbanden",
+       "Spieren trekken alleen",
+       "Antagonistische spieren",
+       "Spieren en energie"
       ],
-      "sam": "Je botten vormen samen het skelet, dat je lichaam steun en bescherming geeft. Op plaatsen waar botten kunnen bewegen zit een gewricht. Kraakbeen zorgt voor demping, een gewrichtsband houdt de botten bij elkaar en een pees verbindt een spier met een bot. Spieren kunnen alleen samentrekken (trekken), niet duwen. Daarom werken ze in paren die tegengesteld werken: de antagonisten. Om je arm te buigen trekt de buigspier samen; om hem te strekken trekt de strekspier samen. Een spier kan dus nooit zelf zowel buigen als strekken.",
+      "sam": "Skelet: steun, bescherming, beweging, bloedaanmaak (rood beenmerg). Bot: kalk (hard) + lijmstof (buigzaam). Gewricht: kraakbeen, gewrichtskapsel met gewrichtssmeer, banden; kogelgewricht (schouder, heup) en scharniergewricht (knie, elleboog). Pees: spier aan bot; band: bot aan bot. Spieren trekken alleen samen (korter en dikker); antagonisten: biceps buigt, triceps strekt. Energie: ATP uit dissimilatie; te weinig zuurstof → melkzuur.",
       "begrippen": [
        {
         "t": "Skelet",
-        "d": "alle botten samen, geeft steun en bescherming"
+        "d": "Geheel van botten dat steun geeft, organen beschermt, beweging mogelijk maakt en bloedcellen maakt."
        },
        {
-        "t": "Gewricht",
-        "d": "een beweegbare verbinding tussen twee botten"
-       },
-       {
-        "t": "Scharniergewricht",
-        "d": "gewricht dat maar één richting op buigt, zoals de elleboog"
-       },
-       {
-        "t": "Kogelgewricht",
-        "d": "gewricht dat alle kanten op kan draaien, zoals de schouder"
+        "t": "Beenmerg",
+        "d": "Weefsel in botten; rood beenmerg maakt bloedcellen, geel beenmerg bevat vet."
        },
        {
         "t": "Kraakbeen",
-        "d": "veerkrachtig materiaal dat schokken in een gewricht dempt"
+        "d": "Glad, veerkrachtig weefsel dat onder andere de botuiteinden in gewrichten bedekt."
        },
        {
-        "t": "Gewrichtsband",
-        "d": "stevige band die de botten in een gewricht bij elkaar houdt"
+        "t": "Gewricht",
+        "d": "Beweegbare verbinding tussen twee of meer botten."
+       },
+       {
+        "t": "Gewrichtskapsel",
+        "d": "Omhulsel om een gewricht dat gewrichtssmeer maakt."
+       },
+       {
+        "t": "Gewrichtssmeer",
+        "d": "Vocht in een gewricht dat de wrijving tussen de botten vermindert."
+       },
+       {
+        "t": "Kogelgewricht",
+        "d": "Gewricht dat in alle richtingen kan bewegen, zoals de schouder en de heup."
+       },
+       {
+        "t": "Scharniergewricht",
+        "d": "Gewricht dat vooral in één vlak beweegt, zoals de knie en de elleboog."
        },
        {
         "t": "Pees",
-        "d": "stevig weefsel dat een spier met een bot verbindt"
+        "d": "Stevige streng bindweefsel die een spier aan een bot vastmaakt."
        },
        {
-        "t": "Spier",
-        "d": "weefsel dat kan samentrekken en zo beweging maakt"
-       },
-       {
-        "t": "Samentrekken",
-        "d": "korter en dikker worden van een spier, waardoor hij trekt"
-       },
-       {
-        "t": "Buigspier",
-        "d": "spier die een gewricht buigt als hij samentrekt"
-       },
-       {
-        "t": "Strekspier",
-        "d": "spier die een gewricht strekt als hij samentrekt"
+        "t": "Gewrichtsband",
+        "d": "Stevig bindweefsel dat botten in een gewricht met elkaar verbindt."
        },
        {
         "t": "Antagonisten",
-        "d": "twee spieren met een tegengestelde werking, zoals buig- en strekspier"
+        "d": "Spieren met een tegengestelde werking in hetzelfde gewricht."
+       },
+       {
+        "t": "Biceps",
+        "d": "Spier aan de voorkant van de bovenarm die de elleboog buigt."
+       },
+       {
+        "t": "Triceps",
+        "d": "Spier aan de achterkant van de bovenarm die de elleboog strekt."
+       },
+       {
+        "t": "Melkzuur",
+        "d": "Stof die in spieren ontstaat bij dissimilatie zonder zuurstof."
        }
       ],
       "sv": [
        {
-        "v": "Wat is de functie van het skelet?",
+        "v": "Welke functie heeft de schedel vooral?",
         "o": [
-         "Steun en bescherming geven",
-         "Het bloed rondpompen door het hele lichaam",
-         "Voedsel afbreken tot kleine bouwstenen",
-         "Zuurstof opnemen in de longblaasjes"
+         "bloedaanmaak",
+         "beweging",
+         "bescherming",
+         "opslag van vet"
         ],
-        "c": 0,
+        "c": 2,
         "d": 1,
-        "u": "Het skelet geeft het lichaam steun en beschermt organen.",
+        "s": 0,
+        "u": "De schedel beschermt de hersenen.",
         "uo": [
-         "Klopt: steun en bescherming.",
-         "Pompen doet het hart.",
-         "Afbreken doet het verteringsstelsel.",
-         "Zuurstof opnemen doen de longen."
+         "Koos je bloedaanmaak? Bloedcellen worden gemaakt in het rode beenmerg van onder andere de platte botten en de wervels. De hoofdfunctie van de schedel is bescherming.",
+         "Koos je beweging? De schedelbotten zijn op de onderkaak na vergroeid en bewegen niet ten opzichte van elkaar. Beweging gebeurt vooral bij de gewrichten van armen en benen.",
+         "Klopt: de schedel is een harde doos van botten die de hersenen beschermt tegen stoten en klappen. Ook de ribben beschermen, namelijk hart en longen.",
+         "Koos je vetopslag? Vet wordt opgeslagen in vetweefsel en in het gele beenmerg van pijpbeenderen. De schedel dient vooral om de hersenen te beschermen."
         ],
-        "uh": "Skelet = steun en bescherming."
+        "uh": "Wat zit erin?"
        },
        {
-        "v": "Wat is een gewricht?",
+        "v": "Waarom zijn botten zowel stevig als een beetje buigzaam?",
         "o": [
-         "Een spier die een bot kan buigen",
-         "Een beweegbare verbinding tussen botten",
-         "Een pees die de spier aan het bot vastmaakt",
-         "Een band die de spier omhult"
+         "ze bestaan alleen uit kraakbeen",
+         "kalk en lijmstof",
+         "ze zijn hol en gevuld met lucht",
+         "ze bevatten veel spiervezels"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 0,
+        "u": "Kalkzouten maken bot hard, collageen maakt het buigzaam.",
+        "uo": [
+         "Koos je alleen kraakbeen? Kraakbeen is veel zachter dan bot en zit vooral aan de uiteinden van botten en in de neus en oren.",
+         "Klopt: kalkzouten (calciumfosfaat) maken bot hard en stevig. Lijmstof (collageen) maakt het een beetje veerkrachtig, zodat het niet meteen breekt.",
+         "Koos je hol met lucht? Pijpbeenderen zijn hol, maar gevuld met beenmerg. Lucht maakt bot niet stevig of buigzaam.",
+         "Koos je spiervezels? Spieren zitten aan de botten vast via pezen, maar zitten niet in het bot zelf."
+        ],
+        "uh": "Twee bouwstoffen."
+       },
+       {
+        "v": "Waarom breken de botten van ouderen sneller dan die van kinderen?",
+        "o": [
+         "oudere botten bevatten relatief meer kalk en minder lijmstof",
+         "oudere botten bevatten meer lijmstof en worden daardoor slap",
+         "bij ouderen groeit er geen nieuw bot meer, dus botten worden dunner",
+         "oudere botten bevatten minder kalk en zijn daardoor juist veerkrachtiger"
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 0,
+        "u": "Bij ouderen is bot brosser: verhouding kalk en lijmstof verschuift, en de dichtheid neemt vaak af.",
+        "uo": [
+         "Klopt: bij kinderen zit relatief veel lijmstof in het bot, zodat het buigzaam is. Bij ouderen is het relatief meer kalk en minder lijmstof, waardoor het bros wordt en sneller breekt.",
+         "Koos je meer lijmstof bij ouderen? Het is andersom: kinderen hebben relatief veel lijmstof. Daarom buigen hun botten soms in plaats van te breken.",
+         "Koos je geen nieuw bot meer? Ook bij ouderen wordt bot steeds afgebroken en opgebouwd, al gaat de opbouw langzamer. De verhouding van kalk en lijmstof verklaart de brosheid.",
+         "Koos je minder kalk en veerkrachtiger? Minder kalk zou bot juist zachter maken, niet brosser. Het verlies aan lijmstof maakt oud bot bros."
+        ],
+        "uh": "Wat maakt bot buigzaam?",
+        "ctx": "Een kind van zeven valt van een klimrek en heeft een zogenaamde groenhoutfractuur: het bot is gebogen en aan één kant gescheurd, maar niet helemaal doorgebroken. Een vrouw van tachtig breekt bij een kleine val haar heup in twee stukken. Artsen leggen het verschil uit met de samenstelling van het bot."
+       },
+       {
+        "v": "Waar in het lichaam vind je kraakbeen?",
+        "o": [
+         "in de schedel van een volwassene",
+         "in het midden van een pijpbeen",
+         "in de pezen die spieren aan botten vastmaken",
+         "op de uiteinden van botten in een gewricht"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 0,
+        "u": "Kraakbeen bedekt de uiteinden van botten in gewrichten, en zit ook in neus, oor en tussenwervelschijven.",
+        "uo": [
+         "Koos je de schedel van een volwassene? Die bestaat uit vergroeide botplaten. Bij een baby zitten er nog zachte plekken (fontanellen), maar dat is bindweefsel.",
+         "Koos je het midden van een pijpbeen? Daar zit beenmerg in de holte, omgeven door hard bot. Kraakbeen zit aan de uiteinden.",
+         "Koos je de pezen? Pezen bestaan uit sterk, taai bindweefsel, geen kraakbeen.",
+         "Klopt: een glad laagje kraakbeen bedekt de uiteinden van de botten in een gewricht. Het vangt schokken op en laat de botten soepel langs elkaar glijden."
+        ],
+        "uh": "Waar botten langs elkaar glijden."
+       },
+       {
+        "v": "Waar worden rode bloedcellen gemaakt?",
+        "o": [
+         "in de pezen",
+         "in het kraakbeen",
+         "in het rode beenmerg",
+         "in de gewrichtsbanden"
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 0,
+        "u": "Het rode beenmerg in onder andere platte botten en wervels maakt bloedcellen.",
+        "uo": [
+         "Koos je pezen? Pezen verbinden spieren met botten en bestaan uit taai bindweefsel, zonder beenmerg.",
+         "Koos je kraakbeen? Kraakbeen bedekt botuiteinden en zit in neus en oren. Er worden geen bloedcellen gemaakt.",
+         "Klopt: in het rode beenmerg, onder andere in het borstbeen, de wervels en het bekken, worden rode en witte bloedcellen gemaakt. Dat is een van de functies van het skelet.",
+         "Koos je gewrichtsbanden? Banden houden botten bij elkaar in een gewricht. Bloedcellen ontstaan in het beenmerg."
+        ],
+        "uh": "Binnen in het bot."
+       },
+       {
+        "v": "Welk soort gewricht is het kniegewricht?",
+        "o": [
+         "een kogelgewricht",
+         "een scharniergewricht",
+         "een vergroeiing",
+         "een draaigewricht in de nek"
         ],
         "c": 1,
         "d": 1,
-        "u": "Een gewricht is een plek waar twee botten beweegbaar met elkaar zijn verbonden.",
+        "s": 1,
+        "u": "De knie beweegt vooral in één vlak: scharniergewricht.",
         "uo": [
-         "Een spier is geen gewricht.",
-         "Klopt: een beweegbare verbinding tussen botten.",
-         "Dat is een pees, geen gewricht.",
-         "Dat is geen gewricht."
+         "Koos je kogelgewricht? Een kogelgewricht, zoals de schouder of heup, kan in alle richtingen bewegen. De knie kan dat niet.",
+         "Klopt: de knie beweegt vooral in één richting, buigen en strekken, zoals een deur aan een scharnier. Daarom heet het een scharniergewricht.",
+         "Koos je vergroeiing? Bij een vergroeiing, zoals in de schedel, bewegen de botten helemaal niet. De knie beweegt wel.",
+         "Koos je draaigewricht in de nek? Dat laat het hoofd draaien. De knie werkt als een scharnier."
         ],
-        "uh": "Gewricht = beweegbare verbinding tussen botten."
+        "uh": "Als een deur."
+       },
+       {
+        "v": "Waarom kan je arm in de schouder veel meer kanten op bewegen dan je onderarm in de elleboog?",
+        "o": [
+         "de schouder is een kogelgewricht",
+         "de schouder heeft meer kraakbeen dan de elleboog",
+         "de elleboog heeft geen gewrichtsbanden",
+         "in de schouder zit geen gewrichtskapsel"
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 1,
+        "u": "Kogelgewricht: alle richtingen; scharniergewricht: één vlak.",
+        "uo": [
+         "Klopt: in de schouder past de bolle kop van het opperarmbeen in een kom: een kogelgewricht, dat in alle richtingen kan draaien. De elleboog is een scharniergewricht dat vooral buigt en strekt.",
+         "Koos je meer kraakbeen? De hoeveelheid kraakbeen bepaalt niet in welke richtingen een gewricht beweegt. Dat bepaalt de vorm van de botuiteinden.",
+         "Koos je geen gewrichtsbanden? De elleboog heeft wel banden. Die houden de botten bij elkaar en beperken juist zijwaartse beweging.",
+         "Koos je geen gewrichtskapsel? Alle bewegende gewrichten hebben een kapsel. Het verschil zit in de vorm: kogel of scharnier."
+        ],
+        "uh": "Kogel of scharnier?"
+       },
+       {
+        "v": "Wat is de functie van het gewrichtssmeer?",
+        "o": [
+         "het voert zuurstof naar het bot",
+         "het maakt de botten harder",
+         "het zet de spieren aan om samen te trekken",
+         "het vermindert de wrijving"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 1,
+        "u": "Gewrichtssmeer (synoviaal vocht) vermindert wrijving.",
+        "uo": [
+         "Koos je zuurstof aanvoeren? Bot krijgt zuurstof via bloedvaten. Gewrichtssmeer voedt wel het kraakbeen een beetje, maar smeren is de hoofdtaak.",
+         "Koos je harder maken? Bot wordt hard door kalkzouten, niet door gewrichtssmeer.",
+         "Koos je spieren aanzetten? Spieren trekken samen door impulsen uit motorische neuronen, niet door gewrichtssmeer.",
+         "Klopt: het gewrichtskapsel maakt gewrichtssmeer. Dat vocht vermindert de wrijving tussen de kraakbeenlagen, zodat de botten soepel bewegen."
+        ],
+        "uh": "Denk aan olie in een scharnier."
+       },
+       {
+        "v": "Waarom heeft iemand met artrose pijn bij het lopen?",
+        "o": [
+         "het gewrichtssmeer is veranderd in kalk",
+         "de spieren rond de knie zijn verlamd",
+         "het kraakbeen is versleten",
+         "de gewrichtsbanden zijn te kort geworden"
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 1,
+        "u": "Bij artrose is het kraakbeen versleten; botten schuren langs elkaar.",
+        "uo": [
+         "Koos je gewrichtssmeer dat kalk wordt? Gewrichtssmeer verandert niet in kalk. Wel kunnen er botuitsteeksels ontstaan, maar het hoofdprobleem is versleten kraakbeen.",
+         "Koos je verlamde spieren? Bij artrose werken de spieren gewoon. Het probleem zit in het gewricht zelf.",
+         "Klopt: bij artrose wordt het kraakbeen dunner en ruwer. De botten schuren dan direct langs elkaar, wat pijn en stijfheid geeft.",
+         "Koos je te korte banden? Banden worden bij artrose niet korter. De pijn komt doordat het kraakbeen niet meer beschermt."
+        ],
+        "uh": "Wat beschermt normaal de botuiteinden?",
+        "ctx": "Een man van 65 heeft al jaren pijn in zijn knie bij het lopen en traplopen. Op een röntgenfoto ziet de arts dat de ruimte tussen het dijbeen en het scheenbeen veel kleiner is dan normaal. De arts noemt de aandoening artrose en stelt voor om op termijn een kunstknie te plaatsen."
+       },
+       {
+        "v": "Welk soort gewricht is het heupgewricht?",
+        "o": [
+         "een scharniergewricht",
+         "een kogelgewricht",
+         "een vergroeiing",
+         "een rolgewricht"
+        ],
+        "c": 1,
+        "d": 1,
+        "s": 1,
+        "u": "De heup kan in alle richtingen bewegen: kogelgewricht.",
+        "uo": [
+         "Koos je scharniergewricht? Een scharnier beweegt in één vlak, zoals de knie. De heup kan ook zijwaarts en draaiend bewegen.",
+         "Klopt: de bolle kop van het dijbeen past in een kom in het bekken. Zo kan het been in alle richtingen bewegen: een kogelgewricht.",
+         "Koos je vergroeiing? Bij een vergroeiing bewegen de botten niet, zoals in de schedel. De heup beweegt juist veel.",
+         "Koos je rolgewricht? Een rolgewricht laat botten om elkaar draaien, zoals spaakbeen en ellepijp. De heup is een kogelgewricht."
+        ],
+        "uh": "Kop in een kom."
        },
        {
         "v": "Wat verbindt een spier met een bot?",
         "o": [
-         "Een gewrichtsband tussen twee botten",
-         "Het kraakbeen in het gewricht",
-         "Een pees",
-         "De gewrichtsholte"
-        ],
-        "c": 2,
-        "d": 1,
-        "u": "Een pees is het stevige weefsel dat een spier aan een bot vastmaakt.",
-        "uo": [
-         "Een gewrichtsband verbindt botten, geen spier met bot.",
-         "Kraakbeen dempt schokken, het verbindt niet.",
-         "Klopt: een pees verbindt spier en bot.",
-         "De gewrichtsholte is geen verbinding."
-        ],
-        "uh": "Pees = verbindt spier met bot."
-       },
-       {
-        "v": "Wat houdt de botten in een gewricht bij elkaar?",
-        "o": [
-         "Een pees die naar de spier loopt",
-         "Het kraakbeen dat de schokken opvangt",
-         "De buigspier van het gewricht",
-         "Een gewrichtsband"
-        ],
-        "c": 3,
-        "d": 1,
-        "u": "Een gewrichtsband is de stevige band die de botten van een gewricht bij elkaar houdt.",
-        "uo": [
-         "Een pees verbindt spier met bot, niet bot met bot.",
-         "Kraakbeen dempt, het houdt niet vast.",
-         "Een spier houdt de botten niet bij elkaar.",
-         "Klopt: de gewrichtsband houdt de botten bij elkaar."
-        ],
-        "uh": "Gewrichtsband = houdt de botten bij elkaar."
-       },
-       {
-        "v": "Wat is de functie van kraakbeen in een gewricht?",
-        "o": [
-         "Schokken dempen",
-         "De botten stevig aan elkaar vastmaken",
-         "De spier aan het bot verbinden",
-         "Het bloed door het gewricht pompen"
+         "een pees",
+         "een gewrichtsband",
+         "kraakbeen",
+         "een zenuw"
         ],
         "c": 0,
-        "d": 2,
-        "u": "Kraakbeen is veerkrachtig en dempt de schokken tussen de botten in een gewricht.",
+        "d": 1,
+        "s": 2,
+        "u": "Pees: spier aan bot. Gewrichtsband: bot aan bot.",
         "uo": [
-         "Klopt: kraakbeen dempt de schokken.",
-         "Vastmaken doet de gewrichtsband.",
-         "Verbinden van spier en bot doet de pees.",
-         "Er wordt geen bloed door het gewricht gepompt."
+         "Klopt: een pees is een stevige streng bindweefsel die een spier aan een bot vastmaakt. Als de spier samentrekt, trekt de pees aan het bot.",
+         "Koos je een gewrichtsband? Een band verbindt botten met elkaar in een gewricht, niet een spier met een bot.",
+         "Koos je kraakbeen? Kraakbeen bedekt de botuiteinden in een gewricht en verbindt geen spier met bot.",
+         "Koos je een zenuw? Een zenuw stuurt de spier aan met impulsen, maar maakt hem niet vast aan het bot."
         ],
-        "uh": "Kraakbeen = schokdemper in het gewricht."
+        "uh": "Denk aan de achillespees."
+       },
+       {
+        "v": "Wat gebeurt er bij een verzwikte enkel?",
+        "o": [
+         "het kraakbeen in de enkel verdwijnt helemaal",
+         "het bot breekt in meerdere stukken",
+         "de spieren in de kuit worden verlamd",
+         "de banden worden overrekt"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 2,
+        "u": "Bij verzwikken (verstuiken) worden banden overrekt of scheuren ze.",
+        "uo": [
+         "Koos je kraakbeen dat verdwijnt? Kraakbeen verdwijnt niet door één verzwikking. Het zijn de banden die beschadigen.",
+         "Koos je een gebroken bot? Dat is een breuk, iets anders dan een verzwikking. Bij verzwikken gaat het om de banden.",
+         "Koos je verlamde spieren? Spieren worden door een verzwikking niet verlamd. De schade zit in de banden.",
+         "Klopt: bij het verzwikken draait de voet te ver om. De gewrichtsbanden, die de botten bij elkaar houden, worden overrekt of scheuren. De enkel wordt dik en pijnlijk."
+        ],
+        "uh": "Wat houdt de botten bij elkaar?"
+       },
+       {
+        "v": "Waarom kan iemand met een gescheurde achillespees zijn tenen niet meer krachtig strekken?",
+        "o": [
+         "het enkelgewricht is door de scheur vergroeid",
+         "de kuitspier krijgt geen impulsen meer van de zenuw",
+         "de spier trekt niet meer aan het bot",
+         "de scheenbeenspier trekt nu harder dan normaal"
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 2,
+        "u": "Zonder pees wordt de kracht van de spier niet meer op het bot overgebracht.",
+        "uo": [
+         "Koos je vergroeid gewricht? Het gewricht beweegt nog, je kunt de voet met de hand bewegen. Alleen de spier kan er niet meer aan trekken.",
+         "Koos je geen impulsen? De zenuw is niet beschadigd; de spier trekt nog samen. Het probleem is de verbinding met het bot.",
+         "Klopt: de kuitspier trekt nog samen, maar omdat de pees gescheurd is, wordt die kracht niet meer op het hielbeen overgebracht. De voet strekt dan niet.",
+         "Koos je harder trekkende scheenbeenspier? Die spier wordt niet sterker door de scheur. De kuitspier kan zijn werk niet meer doen."
+        ],
+        "uh": "Wat brengt de kracht over op het bot?",
+        "ctx": "Een badmintonspeler voelt tijdens een sprong een knal achter in zijn onderbeen. Daarna kan hij niet meer op zijn tenen staan en niet krachtig afzetten. Hij voelt zijn kuitspier nog wel aanspannen. Een echo laat een scheur in de achillespees zien, die de kuitspier met het hielbeen verbindt."
        },
        {
         "v": "Wat kan een spier zelf doen?",
         "o": [
-         "Zowel trekken als duwen",
-         "Alleen samentrekken",
-         "Alleen duwen tegen het bot",
-         "Zichzelf uit zichzelf verlengen"
+         "alleen uitrekken",
+         "alleen samentrekken",
+         "samentrekken en zichzelf uitduwen",
+         "het bot laten groeien"
         ],
         "c": 1,
-        "d": 2,
-        "u": "Een spier kan alleen samentrekken (trekken); duwen of zichzelf verlengen kan hij niet.",
+        "d": 1,
+        "s": 3,
+        "u": "Een spier kan alleen samentrekken (korter worden) en trekken.",
         "uo": [
-         "Duwen kan een spier niet.",
-         "Klopt: een spier kan alleen samentrekken.",
-         "Duwen kan een spier niet.",
-         "Zichzelf verlengen kan een spier niet."
+         "Koos je alleen uitrekken? Een spier wordt alleen langer als hij ontspant en een andere spier hem uitrekt. Zelf kan hij alleen samentrekken.",
+         "Klopt: een spier kan alleen samentrekken en daarmee aan een bot trekken. Hij kan niet zelf duwen of zichzelf uitrekken.",
+         "Koos je zichzelf uitduwen? Een spier kan niet duwen. Daarom zijn er altijd twee spieren nodig voor heen en terug.",
+         "Koos je bot laten groeien? Spieren laten bot niet groeien. Ze bewegen botten door eraan te trekken."
         ],
-        "uh": "Een spier kan alleen trekken (samentrekken), niet duwen."
+        "uh": "Trekken, niet duwen."
        },
        {
-        "v": "Waarom zijn er twee spieren nodig om een arm te buigen en te strekken?",
+        "v": "Wat gebeurt er met een spier als hij samentrekt?",
         "o": [
-         "Omdat het gewricht anders te snel slijt",
-         "Omdat een enkele spier daarvoor veel te zwaar zou worden",
-         "Omdat een spier alleen kan trekken en niet duwen",
-         "Omdat de botten anders niet groeien"
-        ],
-        "c": 2,
-        "d": 3,
-        "u": "Een spier kan alleen trekken, dus je hebt een tweede, tegengestelde spier nodig om terug te bewegen.",
-        "uo": [
-         "Slijtage is niet de reden.",
-         "Het gewicht van de spier is niet de reden.",
-         "Klopt: trekken kan wel, duwen niet, dus twee spieren.",
-         "Botgroei staat hier los van."
-        ],
-        "uh": "Spier trekt alleen, dus twee spieren voor heen en terug."
-       },
-       {
-        "v": "Wat zijn antagonisten bij beweging?",
-        "o": [
-         "Twee botten die tegen elkaar schuren",
-         "Twee gewrichtsbanden om één gewricht",
-         "Twee pezen die aan hetzelfde bot vastzitten in het gewricht",
-         "Twee spieren met een tegengestelde werking"
-        ],
-        "c": 3,
-        "d": 2,
-        "u": "Antagonisten zijn twee spieren die tegengesteld werken, zoals de buigspier en de strekspier.",
-        "uo": [
-         "Botten die schuren zijn geen antagonisten.",
-         "Twee banden zijn geen antagonisten.",
-         "Twee pezen zijn geen antagonisten.",
-         "Klopt: twee spieren met tegengestelde werking."
-        ],
-        "uh": "Antagonisten = twee spieren die tegengesteld werken."
-       },
-       {
-        "v": "Wat doet de buigspier als hij samentrekt?",
-        "o": [
-         "Hij buigt het gewricht",
-         "Hij strekt het gewricht juist",
-         "Hij houdt het gewricht stijf op zijn plek",
-         "Hij duwt het bot naar buiten"
+         "hij wordt korter en dikker",
+         "hij wordt langer en dunner",
+         "hij blijft even lang maar wordt harder",
+         "hij verdwijnt tijdelijk in het bot"
         ],
         "c": 0,
         "d": 2,
-        "u": "Als de buigspier samentrekt, buigt het gewricht (bijvoorbeeld je arm gaat omhoog).",
+        "s": 3,
+        "u": "Samentrekkende spier: korter en dikker.",
         "uo": [
-         "Klopt: de buigspier buigt het gewricht.",
-         "Strekken doet juist de strekspier.",
-         "De buigspier zet het gewricht in beweging, hij houdt het niet stijf.",
-         "Een spier duwt niet."
+         "Klopt: bij samentrekken schuiven de eiwitdraden in de spiervezels in elkaar. De spier wordt korter en dikker, zoals je biceps bij het buigen van de arm.",
+         "Koos je langer en dunner? Dat gebeurt als een ontspannen spier wordt uitgerekt door zijn tegenspeler.",
+         "Koos je even lang? Een spier die samentrekt wordt wel korter; anders zou hij niet aan het bot kunnen trekken.",
+         "Koos je verdwijnen in het bot? Een spier ligt buiten het bot en is er met pezen aan vastgemaakt."
         ],
-        "uh": "Buigspier samentrekken = gewricht buigt."
+        "uh": "Voel je biceps."
        },
        {
-        "v": "Wat doet de strekspier als hij samentrekt?",
+        "v": "Waarom kun je je onderarm strekken terwijl de biceps alleen kan samentrekken?",
         "o": [
-         "Hij buigt het gewricht juist",
-         "Hij strekt het gewricht",
-         "Hij ontspant het hele gewricht",
-         "Hij duwt de buigspier omhoog"
-        ],
-        "c": 1,
-        "d": 2,
-        "u": "Als de strekspier samentrekt, strekt het gewricht (bijvoorbeeld je arm gaat recht).",
-        "uo": [
-         "Buigen doet juist de buigspier.",
-         "Klopt: de strekspier strekt het gewricht.",
-         "Samentrekken is niet ontspannen.",
-         "Een spier duwt niet."
-        ],
-        "uh": "Strekspier samentrekken = gewricht strekt."
-       },
-       {
-        "v": "Wat gebeurt er met de strekspier terwijl de buigspier de arm buigt?",
-        "o": [
-         "Hij trekt tegelijk ook samen",
-         "Hij verandert in een pees",
-         "Hij ontspant",
-         "Hij houdt de arm gestrekt"
-        ],
-        "c": 2,
-        "d": 3,
-        "u": "Terwijl de buigspier samentrekt, ontspant de strekspier zodat de arm kan buigen.",
-        "uo": [
-         "Als beide zouden trekken, zou de arm niet bewegen.",
-         "Een spier verandert niet in een pees.",
-         "Klopt: de strekspier ontspant bij het buigen.",
-         "Bij het buigen wordt de arm juist niet gestrekt gehouden."
-        ],
-        "uh": "Buigen: buigspier trekt, strekspier ontspant."
-       },
-       {
-        "v": "Kan één spier zowel buigen als strekken?",
-        "o": [
-         "Ja, als de spier maar sterk genoeg getraind is",
-         "Ja, dat doet elke spier vanzelf",
-         "Ja, als er genoeg kraakbeen is",
-         "Nee, daarvoor zijn twee tegengestelde spieren nodig"
+         "de gewrichtsbanden trekken de arm actief recht",
+         "de biceps duwt de onderarm zelf terug als hij ontspant",
+         "de zwaartekracht is de enige kracht die de arm strekt",
+         "een andere spier, de triceps, trekt de onderarm terug"
         ],
         "c": 3,
         "d": 3,
-        "u": "Een spier kan alleen trekken, dus buigen en strekken vragen twee tegengestelde spieren.",
+        "s": 3,
+        "u": "Voor terugbewegen is een tegenspeler nodig: de triceps.",
         "uo": [
-         "Kracht verandert dit niet; een spier trekt maar één kant op.",
-         "Geen enkele spier doet beide alleen.",
-         "Kraakbeen speelt hier geen rol.",
-         "Klopt: twee tegengestelde spieren nodig."
+         "Koos je gewrichtsbanden? Banden houden botten bij elkaar maar trekken niet actief. Bewegen doen spieren.",
+         "Koos je duwende biceps? Een spier kan niet duwen. Als de biceps ontspant, beweegt de arm niet vanzelf terug; daar is de triceps voor.",
+         "Koos je alleen de zwaartekracht? Zwaartekracht helpt soms, maar je kunt je arm ook boven je hoofd strekken. Dat doet de triceps.",
+         "Klopt: de biceps buigt de arm, maar kan hem niet strekken. Daarvoor trekt de triceps aan de achterkant samen, terwijl de biceps ontspant en wordt uitgerekt."
         ],
-        "uh": "Eén spier trekt maar één kant op: buigen en strekken vraagt twee."
+        "uh": "Wie zit aan de andere kant?",
+        "ctx": "Een leerling legt haar arm op tafel en buigt hem langzaam: ze voelt de biceps aan de voorkant van haar bovenarm dik en hard worden. Daarna strekt ze haar arm boven haar hoofd, tegen de zwaartekracht in. Nu voelt ze de achterkant van haar bovenarm hard worden."
        },
        {
-        "v": "Welk soort gewricht is de elleboog?",
+        "v": "Waarom heb je voor elke beweging heen en terug twee spieren nodig?",
         "o": [
-         "Een scharniergewricht",
-         "Een kogelgewricht dat alle kanten op draait",
-         "Een gewricht dat helemaal niet beweegt",
-         "Een gewricht zonder kraakbeen"
-        ],
-        "c": 0,
-        "d": 2,
-        "u": "De elleboog is een scharniergewricht: het buigt en strekt in één richting.",
-        "uo": [
-         "Klopt: de elleboog is een scharniergewricht.",
-         "De schouder is een kogelgewricht, de elleboog niet.",
-         "De elleboog beweegt wel degelijk.",
-         "Ook de elleboog heeft kraakbeen."
-        ],
-        "uh": "Elleboog = scharniergewricht (één richting)."
-       },
-       {
-        "v": "Welk soort gewricht is de schouder?",
-        "o": [
-         "Een scharniergewricht dat één kant op buigt",
-         "Een kogelgewricht",
-         "Een gewricht dat vastzit en niet beweegt",
-         "Een gewricht zonder gewrichtsband"
-        ],
-        "c": 1,
-        "d": 2,
-        "u": "De schouder is een kogelgewricht: het kan alle kanten op draaien.",
-        "uo": [
-         "Een scharniergewricht buigt maar één kant op, de schouder meer.",
-         "Klopt: de schouder is een kogelgewricht.",
-         "De schouder beweegt juist heel veel.",
-         "Ook de schouder heeft gewrichtsbanden."
-        ],
-        "uh": "Schouder = kogelgewricht (alle kanten op)."
-       },
-       {
-        "v": "Waarom heb je in een gewricht kraakbeen nodig?",
-        "o": [
-         "Om de spier aan het bot te verbinden",
-         "Om het bloed sneller door het gewricht heen rond te pompen",
-         "Om de botten soepel en gedempt te laten bewegen",
-         "Om de botten aan elkaar vast te lijmen"
-        ],
-        "c": 2,
-        "d": 3,
-        "u": "Kraakbeen is glad en veerkrachtig, zodat de botten soepel over elkaar bewegen en schokken worden gedempt.",
-        "uo": [
-         "Verbinden van spier en bot doet de pees.",
-         "Kraakbeen pompt geen bloed.",
-         "Klopt: kraakbeen zorgt voor soepel en gedempt bewegen.",
-         "Vastmaken doet de gewrichtsband, niet het kraakbeen."
-        ],
-        "uh": "Kraakbeen = soepel bewegen en schokken dempen."
-       },
-       {
-        "v": "Wat betekent samentrekken van een spier?",
-        "o": [
-         "De spier wordt langer en dunner",
-         "De spier verandert in kraakbeen",
-         "De spier duwt het bot met kracht van zich af",
-         "De spier wordt korter en dikker en trekt"
-        ],
-        "c": 3,
-        "d": 2,
-        "u": "Bij samentrekken wordt een spier korter en dikker, waardoor hij aan het bot trekt.",
-        "uo": [
-         "Bij samentrekken wordt de spier juist korter, niet langer.",
-         "Een spier wordt geen kraakbeen.",
-         "Een spier duwt niet, hij trekt.",
-         "Klopt: korter en dikker, en de spier trekt."
-        ],
-        "uh": "Samentrekken = korter en dikker, de spier trekt."
-       },
-       {
-        "v": "Je strekt je arm. Welke spier trekt daarvoor samen?",
-        "o": [
-         "De strekspier",
-         "De buigspier die de arm juist buigt",
-         "Allebei de spieren tegelijk even hard",
-         "De pees die aan het bot vastzit"
-        ],
-        "c": 0,
-        "d": 3,
-        "u": "Om te strekken trekt de strekspier samen, terwijl de buigspier ontspant.",
-        "uo": [
-         "Klopt: de strekspier trekt samen om te strekken.",
-         "De buigspier buigt juist.",
-         "Als beide even hard trekken, beweegt de arm niet.",
-         "Een pees is geen spier en trekt niet zelf samen."
-        ],
-        "uh": "Strekken = strekspier trekt, buigspier ontspant."
-       },
-       {
-        "v": "Waarom kan een spier een bot niet terugduwen na het buigen?",
-        "o": [
-         "Omdat de pees tussen de spier en het bot te kort is",
-         "Omdat een spier alleen kan trekken",
-         "Omdat het kraakbeen in de weg zit",
-         "Omdat het bot te zwaar is"
-        ],
-        "c": 1,
-        "d": 3,
-        "u": "Een spier kan alleen trekken; om terug te bewegen moet de tegengestelde spier trekken.",
-        "uo": [
-         "De peeslengte is niet de reden.",
-         "Klopt: een spier trekt alleen, duwen kan niet.",
-         "Kraakbeen zit niet in de weg.",
-         "Het gewicht van het bot is niet de reden."
-        ],
-        "uh": "Een spier duwt nooit, hij trekt alleen."
-       },
-       {
-        "v": "Welke twee spieren zijn antagonisten in de bovenarm?",
-        "o": [
-         "Twee buigspieren naast elkaar",
-         "De pees en de gewrichtsband",
-         "De buigspier en de strekspier",
-         "Het kraakbeen en het bot in het midden van het gewricht"
+         "de tweede spier levert de ATP voor de eerste",
+         "één spier zou te snel moe worden",
+         "een spier kan alleen trekken, niet duwen",
+         "de tweede spier houdt het bot warm"
         ],
         "c": 2,
         "d": 2,
-        "u": "In de bovenarm zijn de buigspier en de strekspier antagonisten: ze werken tegengesteld.",
+        "s": 3,
+        "u": "Spieren trekken alleen, dus voor terug is een tweede spier nodig.",
         "uo": [
-         "Twee buigspieren werken niet tegengesteld.",
-         "Een pees en band zijn geen spieren.",
-         "Klopt: buigspier en strekspier zijn antagonisten.",
-         "Kraakbeen en bot zijn geen spieren."
+         "Koos je ATP leveren? Elke spier maakt zijn eigen ATP in zijn eigen mitochondriën. De tweede spier is nodig om terug te trekken.",
+         "Koos je te snel moe? Ook als een spier niet moe is, kan hij een bot niet terugduwen. Het gaat om trekken versus duwen.",
+         "Klopt: een spier kan zich alleen samentrekken en aan een bot trekken. Om het bot weer terug te bewegen, moet een andere spier aan de andere kant trekken.",
+         "Koos je warm houden? Spieren maken wel warmte, maar dat is niet de reden voor twee spieren per gewricht."
         ],
-        "uh": "Bovenarm: buigspier en strekspier zijn antagonisten."
+        "uh": "Trekken, nooit duwen."
        },
        {
-        "v": "Wat gebeurt er als beide antagonisten tegelijk even hard samentrekken?",
+        "v": "Welke spier buigt de arm in de elleboog?",
         "o": [
-         "De arm beweegt heel snel",
-         "De arm buigt automatisch",
-         "De spieren veranderen in botten",
-         "Het gewricht blijft stil staan"
+         "de triceps",
+         "de biceps",
+         "de kuitspier",
+         "de buikspier"
         ],
-        "c": 3,
-        "d": 3,
-        "u": "Als de buig- en strekspier even hard trekken, heffen ze elkaar op en blijft het gewricht stil.",
+        "c": 1,
+        "d": 1,
+        "s": 4,
+        "u": "Biceps (voorkant bovenarm) buigt, triceps (achterkant) strekt.",
         "uo": [
-         "Bij tegengesteld even hard trekken beweegt er juist niets.",
-         "De arm buigt dan juist niet.",
-         "Spieren veranderen niet in botten.",
-         "Klopt: ze heffen elkaar op, het gewricht staat stil."
+         "Koos je de triceps? Die zit aan de achterkant van de bovenarm en strekt de arm juist.",
+         "Klopt: de biceps aan de voorkant van de bovenarm trekt de onderarm omhoog: de arm buigt.",
+         "Koos je de kuitspier? Die zit in het onderbeen en strekt de voet, zoals bij op je tenen staan. De arm buigt door de biceps.",
+         "Koos je de buikspier? Die buigt de romp en helpt bij uitademen, maar beweegt de arm niet."
         ],
-        "uh": "Beide antagonisten even hard = gewricht staat stil."
+        "uh": "Voorkant bovenarm."
        },
        {
-        "v": "Waarvoor dient een gewrichtsband precies?",
+        "v": "Waarom noem je de biceps en de triceps antagonisten?",
         "o": [
-         "De botten van een gewricht bijeen houden",
-         "De spier vanuit zichzelf laten samentrekken en ontspannen",
-         "De schokken in het gewricht dempen",
-         "De spier met het bot verbinden"
+         "ze werken tegengesteld",
+         "ze trekken altijd tegelijk samen",
+         "ze zitten aan dezelfde kant van het bot",
+         "ze worden aangestuurd door hetzelfde hormoon"
         ],
         "c": 0,
         "d": 2,
-        "u": "De gewrichtsband houdt de botten van een gewricht stevig bij elkaar zodat het niet uit de kom schiet.",
+        "s": 4,
+        "u": "Antagonisten: tegengestelde werking in hetzelfde gewricht.",
         "uo": [
-         "Klopt: de band houdt de botten bijeen.",
-         "Samentrekken doet de spier zelf.",
-         "Dempen doet het kraakbeen.",
-         "Verbinden van spier en bot doet de pees."
+         "Klopt: de biceps buigt de elleboog, de triceps strekt hem. Ze werken tegengesteld: als de een samentrekt, ontspant de ander.",
+         "Koos je tegelijk samentrekken? Dan zou de arm stil blijven staan. Bij een beweging trekt de een samen en ontspant de ander.",
+         "Koos je dezelfde kant? Juist niet: de biceps zit voor en de triceps achter op de bovenarm.",
+         "Koos je hetzelfde hormoon? Spieren worden aangestuurd door zenuwen. Antagonist gaat over de tegengestelde werking."
         ],
-        "uh": "Gewrichtsband = houdt de botten bijeen."
+        "uh": "Tegengesteld."
        },
        {
-        "v": "Welke uitspraak over spieren klopt?",
+        "v": "Wat gebeurt er met de spieren van het bovenbeen als je je knie strekt om een bal te trappen?",
         "o": [
-         "Een spier kan zowel trekken als duwen",
-         "Een spier kan alleen trekken, dus werkt in een paar",
-         "Een spier kan zichzelf strekken",
-         "Een spier verbindt rechtstreeks twee botten met elkaar"
+         "geen van beide spieren doet iets; de knie strekt vanzelf",
+         "beide spieren trekken even hard samen",
+         "de achterste bovenbeenspier trekt samen en de voorste ontspant",
+         "de voorste trekt samen, de achterste ontspant"
         ],
-        "c": 1,
-        "d": 2,
-        "u": "Een spier kan alleen trekken; daarom werken spieren in tegengestelde paren (antagonisten).",
+        "c": 3,
+        "d": 3,
+        "s": 4,
+        "u": "Strekken van de knie: voorkant (quadriceps) samen, achterkant (hamstrings) ontspant.",
         "uo": [
-         "Duwen kan een spier niet.",
-         "Klopt: alleen trekken, dus in een paar.",
-         "Zichzelf strekken kan een spier niet.",
-         "Botten verbinden doet de gewrichtsband, niet de spier."
+         "Koos je vanzelf? Een gewricht beweegt niet vanzelf. Er is altijd een spier die samentrekt.",
+         "Koos je beide even hard? Dan zou de knie niet bewegen. Bij een trap ontspant de buigspier.",
+         "Koos je de achterste? Die buigt de knie juist, zoals bij het naar achteren halen van het been voor de trap.",
+         "Klopt: de spier aan de voorkant van het bovenbeen strekt de knie. Tegelijk ontspant de spier aan de achterkant, zijn antagonist, die de knie buigt."
         ],
-        "uh": "Spier trekt alleen, dus werkt in een antagonistenpaar."
+        "uh": "Welke kant strekt de knie?",
+        "ctx": "Een voetballer haalt zijn been naar achteren en trapt dan hard tegen de bal. Bij het naar achteren halen buigt de knie, bij de trap strekt hij snel. Aan de voorkant van het bovenbeen ligt een grote spier die aan het scheenbeen vastzit, aan de achterkant een spier die achter de knie vastzit."
        },
        {
-        "v": "Iemand tilt een boodschappentas op door de arm te buigen. Welke spier trekt samen?",
+        "v": "Waarom trekken bij stilstaan de spieren voor en achter het onderbeen allebei een beetje samen?",
         "o": [
-         "De strekspier die de arm juist strekt",
-         "De pees aan de onderarm",
-         "De buigspier",
-         "De gewrichtsband van de elleboog"
+         "zo trekken ze de botten van het onderbeen dichter naar elkaar",
+         "zo maken ze extra warmte om het been warm te houden",
+         "zo staat de enkel stevig",
+         "zo bouwen ze een voorraad melkzuur op voor later"
         ],
         "c": 2,
         "d": 3,
-        "u": "Om de arm te buigen en de tas op te tillen trekt de buigspier samen; de strekspier ontspant.",
+        "s": 4,
+        "u": "Antagonisten die samen licht aanspannen, houden een gewricht stabiel.",
         "uo": [
-         "De strekspier strekt juist.",
-         "Een pees trekt niet zelf samen.",
-         "Klopt: de buigspier buigt de arm om te tillen.",
-         "Een gewrichtsband trekt niet samen."
+         "Koos je botten naar elkaar trekken? De botten van het onderbeen zitten vast met banden. De spieren houden de enkel stabiel.",
+         "Koos je warmte? Spieren maken wel wat warmte, maar bij stilstaan is het doel stabiliteit. Voor warmte rillen we.",
+         "Klopt: als beide antagonisten licht aanspannen, staat het gewricht vast. Zo blijf je rechtop staan zonder om te vallen; je hersenen stellen de spanning steeds bij.",
+         "Koos je melkzuur? Melkzuur is een afvalproduct bij zuurstoftekort, geen voorraad. Licht aanspannen gebeurt om stevig te staan."
         ],
-        "uh": "Arm buigen om te tillen = buigspier trekt samen."
+        "uh": "Wat gebeurt er als beide een beetje trekken?",
+        "ctx": "Een onderzoeker meet met elektroden de activiteit van de spieren aan de voor- en achterkant van het onderbeen bij een proefpersoon die rechtop stilstaat. Beide spieren zijn een beetje actief. Als de proefpersoon zijn ogen sluit, worden ze allebei actiever en wiebelt hij iets meer."
        },
        {
-        "v": "Waarom kan de elleboog niet alle kanten op draaien zoals de schouder?",
+        "v": "Waar halen spieren de energie vandaan om samen te trekken?",
         "o": [
-         "Omdat de elleboog geen kraakbeen heeft",
-         "Omdat de elleboog helemaal geen eigen spieren zou hebben",
-         "Omdat de elleboog vastzit aan het bot",
-         "Omdat de elleboog een scharniergewricht is"
+         "uit kalk in de botten",
+         "uit ATP",
+         "uit gewrichtssmeer",
+         "uit de pezen"
+        ],
+        "c": 1,
+        "d": 1,
+        "s": 5,
+        "u": "Spieren gebruiken ATP uit de dissimilatie.",
+        "uo": [
+         "Koos je kalk in de botten? Kalk maakt bot hard, maar levert geen energie. Spieren halen hun energie uit ATP.",
+         "Klopt: spieren gebruiken ATP. Dat maken ze vooral door aerobe dissimilatie van glucose en vetzuren in hun mitochondriën.",
+         "Koos je gewrichtssmeer? Dat vermindert de wrijving in het gewricht, maar levert geen energie voor het samentrekken.",
+         "Koos je de pezen? Pezen brengen de kracht over op het bot, maar leveren zelf geen energie."
+        ],
+        "uh": "De energiedrager."
+       },
+       {
+        "v": "Waarom bevatten spiercellen zoveel mitochondriën?",
+        "o": [
+         "spieren hebben veel ATP nodig voor het samentrekken",
+         "mitochondriën maken de spiervezels sterker en langer",
+         "mitochondriën slaan kalk op voor de botten",
+         "mitochondriën geven de impulsen door aan de spier"
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 5,
+        "u": "Veel energieverbruik = veel mitochondriën voor aerobe dissimilatie.",
+        "uo": [
+         "Klopt: samentrekken kost veel energie. Mitochondriën maken met aerobe dissimilatie veel ATP, en daarom hebben spiercellen er veel.",
+         "Koos je sterker en langer? Spieren worden sterker door training, waarbij meer eiwitdraden ontstaan. Mitochondriën leveren de energie.",
+         "Koos je kalk opslaan? Mitochondriën slaan geen kalk op voor de botten; ze maken ATP.",
+         "Koos je impulsen doorgeven? Impulsen komen via motorische neuronen en synapsen. Mitochondriën zorgen voor energie."
+        ],
+        "uh": "Wat maken mitochondriën?"
+       },
+       {
+        "v": "Waarom raakt een sprinter sneller vermoeid dan een wandelaar?",
+        "o": [
+         "zijn botten verliezen kalk door de snelheid",
+         "zijn spieren gebruiken helemaal geen ATP",
+         "zijn pezen rekken bij de sprint te ver uit",
+         "zijn spieren maken melkzuur"
         ],
         "c": 3,
         "d": 3,
-        "u": "De elleboog is een scharniergewricht en buigt daarom maar in één richting, anders dan het kogelgewricht van de schouder.",
+        "s": 5,
+        "u": "Bij een sprint is de zuurstofaanvoer te laag: anaerobe dissimilatie met melkzuur.",
         "uo": [
-         "De elleboog heeft wel kraakbeen.",
-         "De elleboog heeft wel spieren.",
-         "Elk gewricht zit aan botten vast, dat is niet de reden.",
-         "Klopt: als scharniergewricht buigt hij maar één kant op."
+         "Koos je kalkverlies? Botten verliezen geen kalk door een sprint. Het gaat om zuurstof en energie in de spieren.",
+         "Koos je geen ATP? Spieren gebruiken altijd ATP. Bij een sprint juist heel veel, sneller dan het met zuurstof kan worden gemaakt.",
+         "Koos je uitgerekte pezen? Pezen rekken bijna niet. De vermoeidheid komt uit de spieren zelf.",
+         "Klopt: bij een sprint is er meer energie nodig dan met de aangevoerde zuurstof kan worden gemaakt. De spieren gaan anaeroob dissimileren; er ontstaat melkzuur en ze raken snel moe."
         ],
-        "uh": "Elleboog = scharnier (één richting), schouder = kogel (alle kanten)."
+        "uh": "Denk aan zuurstof en melkzuur.",
+        "ctx": "Een sprinter loopt de 400 meter in 50 seconden en ligt daarna uitgeput op de baan met pijnlijke, verzuurde benen. Een wandelaar loopt dezelfde afstand in vijf minuten en voelt zich daarna prima. Bloedonderzoek laat bij de sprinter een veel hoger melkzuurgehalte zien."
        },
        {
-        "v": "Wat is de taak van een pees bij het bewegen?",
+        "v": "Waarom worden de spieren van iemand met een gipsbeen na zes weken dunner?",
         "o": [
-         "De trekkracht van de spier op het bot overbrengen",
-         "Het gewricht als een stevige band bijeen houden",
-         "De schokken tussen de botten in het gewricht dempen",
-         "De botten van het skelet zelf laten groeien"
+         "zonder beweging gaat de pees de spier vervangen",
+         "de spieren worden door het gips samengeknepen en lopen leeg",
+         "ongebruikte spieren breken eiwit af",
+         "het bot groeit onder het gips over de spier heen"
         ],
-        "c": 0,
+        "c": 2,
         "d": 3,
-        "u": "De pees brengt de trekkracht van de samentrekkende spier over op het bot, waardoor het gewricht beweegt.",
+        "s": 5,
+        "u": "Spieren passen zich aan het gebruik aan: niet gebruiken = afbraak.",
         "uo": [
-         "Klopt: de pees geeft de trekkracht door aan het bot.",
-         "Bijeen houden doet de gewrichtsband.",
-         "Dempen doet het kraakbeen.",
-         "Botgroei is geen taak van de pees."
+         "Koos je pees die de spier vervangt? Een pees vervangt nooit een spier. De spier wordt alleen dunner.",
+         "Koos je samenknijpen door het gips? Gips knijpt de spier niet leeg. Het verlies komt doordat de spier niet wordt gebruikt.",
+         "Klopt: een spier die niet wordt gebruikt, breekt een deel van zijn eiwitdraden af en wordt dunner en zwakker. Na het gips moet hij weer worden getraind.",
+         "Koos je bot over de spier? Bot groeit niet over spieren heen. Onder het gips herstelt alleen de breuk."
         ],
-        "uh": "Pees = brengt de trekkracht van de spier over op het bot."
+        "uh": "Gebruiken of verliezen.",
+        "ctx": "Een meisje heeft zes weken gips om haar onderbeen na een botbreuk. Als het gips eraf gaat, is haar kuit ongeveer 3 cm dunner dan die van haar andere been, en ze kan nauwelijks op haar tenen staan. Na een paar maanden fysiotherapie zijn beide kuiten weer even dik."
        }
       ],
       "oe": [
        {
-        "vraag": "Leg uit waarom er twee spieren nodig zijn om je arm te buigen en te strekken.",
-        "antwoord": "Een spier kan alleen samentrekken, oftewel trekken, en niet duwen. Om de arm te buigen trekt de buigspier samen. Om de arm daarna weer te strekken kan diezelfde spier niet terugduwen; daarvoor moet de strekspier samentrekken. Omdat de twee spieren tegengesteld werken, heten ze antagonisten."
+        "bron": "Examenstijl",
+        "ctx": "Bij een röntgenfoto van de knie van een 70-jarige vrouw ziet de arts dat de ruimte tussen dijbeen en scheenbeen sterk is versmald. De vrouw heeft pijn bij het lopen en een stijve knie, vooral ’s ochtends. De arts adviseert te bewegen en af te vallen.",
+        "v": "Leg uit wat de functie is van kraakbeen en gewrichtssmeer in een gezond gewricht, en verklaar haar klachten.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Kraakbeen bedekt de botuiteinden; het is glad en vangt schokken op (1p). Gewrichtssmeer uit het gewrichtskapsel vermindert de wrijving (1p). Bij haar is het kraakbeen versleten (artrose), zodat de botten over elkaar schuren; dat geeft pijn en stijfheid (1p)."
        },
        {
-        "vraag": "Beschrijf de functie van de pees, de gewrichtsband en het kraakbeen in en rond een gewricht.",
-        "antwoord": "De pees verbindt een spier met een bot, zodat de trekkracht van de spier op het bot wordt overgebracht. De gewrichtsband houdt de twee botten van het gewricht bij elkaar. Het kraakbeen bedekt de uiteinden van de botten en dempt de schokken, zodat de botten soepel over elkaar bewegen."
+        "bron": "Examenstijl",
+        "ctx": "Een gewichtheffer tilt een halter op door zijn armen in de ellebogen te buigen. Daarna laat hij de halter langzaam zakken tot zijn armen gestrekt zijn.",
+        "v": "Leg uit welke spier bij het optillen samentrekt en waarom bij het langzaam laten zakken toch nog de biceps actief is, terwijl de arm strekt.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Bij het optillen trekt de biceps samen en buigt de arm; de triceps ontspant (1p). Bij het laten zakken trekt de zwaartekracht de onderarm naar beneden (1p). De biceps blijft licht aangespannen om de halter af te remmen, zodat hij langzaam zakt en niet valt; de spier wordt daarbij uitgerekt terwijl hij spanning houdt (1p)."
        },
        {
-        "vraag": "Leg uit wat er gebeurt met de buigspier en de strekspier als je je arm strekt.",
-        "antwoord": "Bij het strekken trekt de strekspier samen: hij wordt korter en dikker en trekt aan het bot, waardoor de arm zich strekt. Tegelijk ontspant de buigspier, zodat hij het strekken niet tegenwerkt. De twee spieren werken dus altijd tegengesteld."
+        "bron": "Examenstijl",
+        "ctx": "Een tennisser krijgt pijn aan de buitenkant van zijn elleboog (tennisarm). Een echo laat zien dat de pees waarmee de strekspieren van de onderarm aan het opperarmbeen vastzitten, ontstoken is. Hij heeft geen klachten als hij zijn arm stil houdt.",
+        "v": "Leg uit wat een pees is en waarom de patiënt vooral pijn heeft als hij een racket stevig vastpakt en slaat.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Een pees verbindt een spier met een bot en brengt de kracht van de spier over op het bot (1p). Bij vastpakken en slaan trekken de onderarmspieren hard samen (1p). Daardoor komt er veel spanning op de ontstoken pees, wat pijn doet; bij stilhouden trekt er niets aan de pees (1p)."
        },
        {
-        "vraag": "Leg uit waarom een spier een bot niet kan terugduwen na een beweging.",
-        "antwoord": "Een spier kan alleen samentrekken en zo trekken; hij kan zichzelf niet verlengen of duwen. Daardoor kan een spier een bot niet terugduwen. De terugbeweging moet daarom worden gemaakt door de tegengestelde spier, die op zijn beurt samentrekt en trekt."
+        "bron": "Examenstijl",
+        "ctx": "Bij een hartfilmpje en een bloedtest tijdens een inspanningstest op een loopband meten artsen de hartslag en het melkzuurgehalte. Bij 10 km/h is het melkzuur 1,2 mmol/L, bij 16 km/h 4,5 mmol/L en bij 18 km/h 8 mmol/L. Na de test daalt het melkzuurgehalte in een kwartier weer naar normaal.",
+        "v": "Verklaar de sterke stijging van het melkzuur boven 16 km/h en leg uit waarom het melkzuur na de test weer daalt.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Bij hoge snelheid hebben de spieren meer ATP nodig dan met de aangevoerde zuurstof kan worden gemaakt (1p). Ze maken extra ATP door anaerobe dissimilatie, waarbij melkzuur ontstaat (1p). Na de test is er weer genoeg zuurstof en wordt het melkzuur verder afgebroken, zodat het gehalte daalt (1p)."
        },
        {
-        "vraag": "Wat is het verschil tussen een scharniergewricht en een kogelgewricht? Geef van elk een voorbeeld.",
-        "antwoord": "Een scharniergewricht kan maar in één richting buigen en strekken, zoals de elleboog of de knie. Een kogelgewricht kan alle kanten op draaien, zoals de schouder of de heup. Het verschil zit in de vorm van de botuiteinden en dus in de bewegingsvrijheid."
+        "bron": "Examenstijl",
+        "ctx": "Bij een schoolonderzoek vergelijken leerlingen de botten van een kip die gekookt is in water met botten die een week in azijn hebben gelegen. Het bot uit de azijn is zo buigzaam dat je er een knoop in kunt leggen. Een bot dat in een oven is verbrand, is juist hard maar brokkelt bij een tik uit elkaar.",
+        "v": "Leg uit welke stof in het bot de azijn heeft opgelost en welke stof bij het verbranden verdwijnt, en wat dit zegt over de functie van beide stoffen.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "De azijn heeft de kalkzouten opgelost; wat overblijft is lijmstof, daarom is het bot buigzaam (1p). Bij verbranden verdwijnt de lijmstof; alleen kalk blijft over, dat hard maar bros is (1p). Kalk zorgt dus voor de hardheid van bot en lijmstof voor de buigzaamheid; samen maken ze bot stevig en veerkrachtig (1p)."
        }
       ]
      }

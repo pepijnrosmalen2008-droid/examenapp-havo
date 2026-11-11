@@ -1401,20 +1401,24 @@ var VAKKEN = [
      },
      {
       "id": "O7",
+      "lo": "bi.O.7",
+      "gs": 2,
       "naam": "Beweging: gewrichten en spieren",
-      "beschrijving": "Het skelet en gewrichten, pezen en gewrichtsbanden, en hoe antagonistische spieren (buigspier en strekspier) samenwerken bij beweging.",
-      "ceStatus": "CE",
+      "beschrijving": "Je beschrijft de functies en de bouw van het skelet en van een bot, legt de bouw en soorten gewrichten uit, onderscheidt pezen en gewrichtsbanden, verklaart waarom spieren alleen kunnen trekken en in antagonistische paren werken, en legt het verband tussen spierwerking, ATP en melkzuur.",
+      "ceStatus": "CE+SE",
+      "binas": "",
+      "val": "",
       "onderwerpen": [
-       "Skelet: steun en bescherming",
-       "Gewricht als beweegbare verbinding",
-       "Kraakbeen, gewrichtsband en pees",
-       "Spieren kunnen alleen samentrekken",
-       "Antagonisten: buigspier en strekspier",
-       "Voorbeeld: buigen en strekken van de arm"
+       "Het skelet",
+       "Gewrichten",
+       "Pezen en gewrichtsbanden",
+       "Spieren trekken alleen",
+       "Antagonistische spieren",
+       "Spieren en energie"
       ],
       "nSv": 25,
       "nOe": 5,
-      "nBeg": 12,
+      "nBeg": 14,
       "hasSam": true
      }
     ]
