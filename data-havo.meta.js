@@ -2481,9 +2481,13 @@ var VAKKEN = [
      },
      {
       "id": "C4",
+      "lo": "na.C.4",
+      "gs": 2,
       "naam": "De wetten van Newton",
-      "beschrijving": "De drie wetten van Newton toepassen, inclusief traagheid (eerste wet), F = m maal a (tweede wet) en actie = reactie (derde wet), met de nadruk dat actie en reactie op verschillende voorwerpen werken.",
+      "beschrijving": "Je past de drie wetten van Newton toe: traagheid bij een resulterende kracht van nul, Fres = m · a voor de versnelling en actie is reactie tussen twee voorwerpen. Je bepaalt eerst de resulterende kracht en rekent dan de versnelling uit, en je ziet massa als maat voor traagheid.",
       "ceStatus": "CE",
+      "binas": "35A",
+      "val": "",
       "onderwerpen": [
        "Eerste wet: traagheid",
        "Tweede wet: F = m maal a",
@@ -2492,9 +2496,9 @@ var VAKKEN = [
        "Resulterende kracht en versnelling",
        "Massa als maat voor traagheid"
       ],
-      "nSv": 25,
+      "nSv": 27,
       "nOe": 5,
-      "nBeg": 12,
+      "nBeg": 11,
       "hasSam": true
      },
      {
