@@ -375,7 +375,7 @@
   - [x] B3 Geluid: grondtoon, boventonen, resonantie (gs:2, 28 vragen, 6 figuren: gehoorbereik op logschaal, staande golf, snaar in drie modi, open en gesloten pijp, resonantiekromme, stemvork tegen trompet)
   - [x] B4 Breking, spiegeling, interferentie (gs:2, 28 vragen, 6 figuren: spiegelwet, bundel met golffronten, Snellius-grafiek water en glas, lamp onder water met grenshoek, interferentiepatroon van twee bronnen, tegenfase)
   - [x] B5 Doppler-effect (gs:2, 28 vragen, 6 figuren: toon bij passeren, golffronten van een rijdende bron, dopplerformule als grafiek, radar, roodverschoven spectrum, vleermuis en mot)
-- [ ] **HAVO · Natuurkunde** (`na`) · domein C — Beweging en wisselwerking
+- [x] **HAVO · Natuurkunde** (`na`) · domein C — Beweging en wisselwerking (6 van 6 leerdoelen op v2)
   - [x] C1 Snelheid en versnelling
   - [x] C2 Krachten herkennen
   - [x] C3 Krachten samenstellen en ontbinden
