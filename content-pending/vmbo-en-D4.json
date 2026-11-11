@@ -1,0 +1,682 @@
+{
+ "id": "D4",
+ "lo": "en.D.4",
+ "gs": 2,
+ "naam": "Informatie vragen en geven in een tekst",
+ "beschrijving": "Je leert in het Engels in een e-mail informatie te vragen en te geven: je stelt beleefde vragen met could you tell me, beantwoordt alle vragen met tijden, prijzen en voorwaarden en controleert of je antwoord compleet en vriendelijk is.",
+ "ceStatus": "SE",
+ "binas": "",
+ "val": "",
+ "onderwerpen": [
+  "Een vraag formuleren",
+  "Alle informatie geven",
+  "Details: tijd, prijs en voorwaarden",
+  "Reageren op een vraag",
+  "Controleren en afsluiten"
+ ],
+ "sam": "Vraag beleefd met could you tell me en gebruik de gewone zinsvolgorde. Een antwoord begint met een bedankje en beantwoordt elke vraag, met data, prijzen, percentages en voorwaarden. Controleer of je alle vragen beantwoord hebt en sluit beleefd af.",
+ "begrippen": [
+  {
+   "t": "Informatie",
+   "d": "Gegevens die je vraagt of geeft, zoals tijd en prijs."
+  },
+  {
+   "t": "Vraag",
+   "d": "Een zin waarmee je iets wilt weten, bijvoorbeeld Could you tell me...?"
+  },
+  {
+   "t": "Antwoord",
+   "d": "De reactie met de gevraagde informatie."
+  },
+  {
+   "t": "Beleefd",
+   "d": "Netjes vragen met could you en please."
+  },
+  {
+   "t": "Korting",
+   "d": "Discount: een lagere prijs dan normaal."
+  },
+  {
+   "t": "Percentage",
+   "d": "Per cent, bijvoorbeeld fifty per cent is 50%."
+  },
+  {
+   "t": "Inclusief",
+   "d": "Including: al in de prijs inbegrepen."
+  },
+  {
+   "t": "Voorwaarde",
+   "d": "Iets wat moet gebeuren, zoals if they show their student card."
+  },
+  {
+   "t": "Deadline",
+   "d": "De dag vóór wanneer je iets moet doen, zoals sign up before 20 June."
+  },
+  {
+   "t": "Openingstijd",
+   "d": "De tijd waarop iets open is, zoals from ten to five."
+  },
+  {
+   "t": "Bedankje",
+   "d": "Thank you for your e-mail."
+  },
+  {
+   "t": "Controleren",
+   "d": "Nagaan of je alle vragen beantwoord hebt."
+  }
+ ],
+ "sv": [
+  {
+   "v": "Je wilt informatie vragen aan een onbekende. Welke zin past?",
+   "o": [
+    "\"Tell me the price.\"",
+    "\"Could you tell me how much the ticket costs?\"",
+    "\"What is the price, you?\"",
+    "\"Give me the ticket cost, I think, I suppose, really.\""
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 0,
+   "u": "Let op welke informatie gevraagd en gegeven wordt. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"Tell me the price.\"\"? Dan denk je dat dit voldoende is. Het is een bevel, en klinkt onbeleefd.",
+    "Klopt: could you tell me is een beleefde manier om iets te vragen.",
+    "Koos je \"\"What is the price, you?\"\"? Dan pak je een brokkelige zin. De woordvolgorde klopt niet, en het klinkt onbeleefd.",
+    "Koos je \"\"Give me the ticket cost, I think, I suppose, really.\"\"? Dan kies je een eis. Dit is bot, en niet beleefd."
+   ],
+   "uh": "Je wilt informatie vragen aan een onbekende. Welke zin past?"
+  },
+  {
+   "v": "Welke vraag is een beleefde manier om naar een tijd te vragen?",
+   "o": [
+    "\"When opens the museum, volgens mij, eigenlijk?\"",
+    "\"The museum is open.\"",
+    "\"Open the museum now.\"",
+    "\"Could you tell me when the museum opens?\""
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 0,
+   "u": "Let op welke informatie gevraagd en gegeven wordt. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"When opens the museum, volgens mij, eigenlijk?\"\"? Dan denk je dat dit goed Engels is. De woordvolgorde klopt niet, en het is niet beleefd.",
+    "Koos je \"\"The museum is open.\"\"? Dan pak je een mededeling. Dit stelt geen vraag, en geeft geen informatie over de tijd.",
+    "Koos je \"\"Open the museum now.\"\"? Dan kies je een bevel. Dit is onbeleefd, en vraagt niets.",
+    "Klopt: de zin is beleefd en de woordvolgorde in het tweede deel klopt."
+   ],
+   "uh": "Welke vraag is een beleefde manier om naar een tijd te vragen?"
+  },
+  {
+   "v": "Iemand vraagt in een e-mail drie dingen. Wat moet jouw antwoord doen?",
+   "o": [
+    "\"alle drie de vragen beantwoorden\"",
+    "\"alleen de eerste beantwoorden, I suppose\"",
+    "\"een nieuwe vraag stellen\"",
+    "\"over iets anders schrijven\""
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 1,
+   "u": "Let op welke informatie gevraagd en gegeven wordt. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: een goed antwoord geeft alle gevraagde informatie.",
+    "Koos je \"\"alleen de eerste beantwoorden, I suppose\"\"? Dan denk je dat één antwoord genoeg is. De ander mist dan informatie, en moet opnieuw vragen.",
+    "Koos je \"\"een nieuwe vraag stellen\"\"? Dan pak je een tegenvraag. Eerst moet je antwoorden, en dan pas vragen.",
+    "Koos je \"\"over iets anders schrijven\"\"? Dan kies je een ander onderwerp. Dat helpt de ander niet, en beantwoordt zijn vraag niet."
+   ],
+   "uh": "Iemand vraagt in een e-mail drie dingen. Wat moet jouw antwoord doen?"
+  },
+  {
+   "v": "Wat is een 'discount'?",
+   "o": [
+    "\"een tijdstip, eigenlijk, denk ik, zeg maar\"",
+    "\"een adres\"",
+    "\"een percentage of bedrag lager dan de gewone prijs\"",
+    "\"een naam\""
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 2,
+   "u": "Let op welke informatie gevraagd en gegeven wordt. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"een tijdstip, eigenlijk, denk ik, zeg maar\"\"? Dan denk je dat discount een tijd is. Het gaat over geld, en niet over de klok.",
+    "Koos je \"\"een adres\"\"? Dan pak je een plaats. Een discount is een prijs, en geen adres.",
+    "Klopt: discount betekent korting, dus een lagere prijs dan normaal.",
+    "Koos je \"\"een naam\"\"? Dan kies je een naam. Een discount is korting, en geen naam."
+   ],
+   "uh": "Wat is een 'discount'?"
+  },
+  {
+   "v": "Hoe schrijf je 'fifty per cent' met cijfers?",
+   "o": [
+    "\"15%\"",
+    "\"50%\"",
+    "\"5%\"",
+    "\"500%\""
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 2,
+   "u": "Let op welke informatie gevraagd en gegeven wordt. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"15%\"\"? Dan denk je dat fifty vijftien is. Fifteen is 15, en fifty is 50.",
+    "Klopt: fifty is vijftig, dus fifty per cent is 50 procent.",
+    "Koos je \"\"5%\"\"? Dan pak je alleen een vijf. Fifty heeft nog een nul, dus het is 50.",
+    "Koos je \"\"500%\"\"? Dan kies je te veel nullen. Fifty is vijftig, en geen vijfhonderd."
+   ],
+   "uh": "Hoe schrijf je 'fifty per cent' met cijfers?"
+  },
+  {
+   "v": "Hoe begin je een antwoord op een vraag in een e-mail?",
+   "o": [
+    "\"Goodbye.\"",
+    "\"I am sorry, I do not know you.\"",
+    "\"Why do you ask?\"",
+    "\"Thank you for your e-mail.\""
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 3,
+   "u": "Let op welke informatie gevraagd en gegeven wordt. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"Goodbye.\"\"? Dan denk je dat dit een begin is. Het is een afscheid, en hoort aan het einde.",
+    "Koos je \"\"I am sorry, I do not know you.\"\"? Dan pak je een afwijzing. Dit helpt niet, en beantwoordt de vraag niet.",
+    "Koos je \"\"Why do you ask?\"\"? Dan kies je een tegenvraag. Eerst reageer je beleefd, en beantwoord je daarna.",
+    "Klopt: je bedankt voor het bericht en laat zien dat je reageert."
+   ],
+   "uh": "Hoe begin je een antwoord op een vraag in een e-mail?"
+  },
+  {
+   "v": "Wat doe je voor je een antwoord verstuurt?",
+   "o": [
+    "\"controleren of je alle vragen beantwoord hebt\"",
+    "\"alle getallen weglaten, volgens mij, eigenlijk, denk ik\"",
+    "\"de vragen negeren\"",
+    "\"de aanhef weghalen\""
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 4,
+   "u": "Let op welke informatie gevraagd en gegeven wordt. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: zo mis je geen informatie en hoeft de ander niet opnieuw te vragen.",
+    "Koos je \"\"alle getallen weglaten, volgens mij, eigenlijk, denk ik\"\"? Dan denk je dat getallen niet nodig zijn. Prijzen en tijden zijn juist belangrijke informatie, en moeten erin.",
+    "Koos je \"\"de vragen negeren\"\"? Dan pak je een snelle weg. Dan krijgt de ander geen antwoord, en je e-mail is nutteloos.",
+    "Koos je \"\"de aanhef weghalen\"\"? Dan kies je een kortere mail. Een aanhef hoort er altijd bij, en laat zien dat je beleefd bent."
+   ],
+   "uh": "Wat doe je voor je een antwoord verstuurt?"
+  },
+  {
+   "v": "When does the camp start?",
+   "o": [
+    "\"on 20 June, I suppose\"",
+    "\"on 15 July\"",
+    "\"on 5 July\"",
+    "\"on 5 June\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 1,
+   "u": "Let op welke informatie gevraagd en gegeven wordt. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"on 20 June, I suppose\"\"? Dan denk je dat het kamp op 20 juni begint. Dat is de deadline om je aan te melden, en niet de startdatum.",
+    "Koos je \"\"on 15 July\"\"? Dan pak je een andere datum. Dit wordt niet genoemd, dus je verzint iets.",
+    "Klopt: julie noemt it starts on 5 July, dus het kamp begint op 5 juli.",
+    "Koos je \"\"on 5 June\"\"? Dan kies je de verkeerde maand. Er staat July, dus juli."
+   ],
+   "uh": "When does the camp start?",
+   "ctx": "You read this e-mail from Julie to Max: \"Hi Max, Thanks for asking about the camp. It starts on 5 July and lasts for one week. It costs 150 euros, including food and accommodation. You can go swimming, play volleyball and go to an evening disco. You must bring a sleeping bag, a towel and comfortable shoes. Please sign up before 20 June on our website. Kind regards, Julie\""
+  },
+  {
+   "v": "How much does the camp cost?",
+   "o": [
+    "\"50 euros, without food\"",
+    "\"150 euros, including food and accommodation\"",
+    "\"115 euros, without a bed, you know, I think, I suppose\"",
+    "\"200 euros per day\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 2,
+   "u": "Let op welke informatie gevraagd en gegeven wordt. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"50 euros, without food\"\"? Dan denk je dat het 50 euro is. Er staat 150, en het is inclusief eten.",
+    "Klopt: julie noemt 150 euro, inclusief eten en slapen.",
+    "Koos je \"\"115 euros, without a bed, you know, I think, I suppose\"\"? Dan draai je de cijfers. Er staat 150, en het is inclusief slapen.",
+    "Koos je \"\"200 euros per day\"\"? Dan kies je een dagbedrag. Het bedrag geldt voor het hele kamp, en is 150 euro."
+   ],
+   "uh": "How much does the camp cost?",
+   "ctx": "You read this e-mail from Julie to Max: \"Hi Max, Thanks for asking about the camp. It starts on 5 July and lasts for one week. It costs 150 euros, including food and accommodation. You can go swimming, play volleyball and go to an evening disco. You must bring a sleeping bag, a towel and comfortable shoes. Please sign up before 20 June on our website. Kind regards, Julie\""
+  },
+  {
+   "v": "Which activities are mentioned?",
+   "o": [
+    "\"football, tennis and a quiz, really, to be honest\"",
+    "\"hiking, cooking and a film\"",
+    "\"painting, singing and chess\"",
+    "\"swimming, volleyball and an evening disco\""
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 1,
+   "u": "Let op welke informatie gevraagd en gegeven wordt. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"football, tennis and a quiz, really, to be honest\"\"? Dan denk je dat dit de activiteiten zijn. Deze worden niet genoemd, dus je verzint iets.",
+    "Koos je \"\"hiking, cooking and a film\"\"? Dan pak je een andere reeks. Deze worden niet genoemd, dus het klopt niet.",
+    "Koos je \"\"painting, singing and chess\"\"? Dan kies je creatieve activiteiten. Deze worden niet genoemd, dus het klopt niet.",
+    "Klopt: dit zijn de drie activiteiten die Julie noemt."
+   ],
+   "uh": "Which activities are mentioned?",
+   "ctx": "You read this e-mail from Julie to Max: \"Hi Max, Thanks for asking about the camp. It starts on 5 July and lasts for one week. It costs 150 euros, including food and accommodation. You can go swimming, play volleyball and go to an evening disco. You must bring a sleeping bag, a towel and comfortable shoes. Please sign up before 20 June on our website. Kind regards, Julie\""
+  },
+  {
+   "v": "Before when must you sign up?",
+   "o": [
+    "\"before 20 June\"",
+    "\"before 5 July\"",
+    "\"before 1 June\"",
+    "\"before 15 June, I think\""
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 4,
+   "u": "Let op welke informatie gevraagd en gegeven wordt. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: julie vraagt je je vóór 20 juni aan te melden.",
+    "Koos je \"\"before 5 July\"\"? Dan denk je dat het voor de startdatum is. Aanmelden moet eerder, namelijk vóór 20 juni.",
+    "Koos je \"\"before 1 June\"\"? Dan pak je een andere datum. Er staat 20 June, dus 20 juni.",
+    "Koos je \"\"before 15 June, I think\"\"? Dan kies je een verzonnen datum. Er staat 20 June, dus het klopt niet."
+   ],
+   "uh": "Before when must you sign up?",
+   "ctx": "You read this e-mail from Julie to Max: \"Hi Max, Thanks for asking about the camp. It starts on 5 July and lasts for one week. It costs 150 euros, including food and accommodation. You can go swimming, play volleyball and go to an evening disco. You must bring a sleeping bag, a towel and comfortable shoes. Please sign up before 20 June on our website. Kind regards, Julie\""
+  },
+  {
+   "v": "What does Tim want to know about museums?",
+   "o": [
+    "\"which ones are free for everyone\"",
+    "\"which ones are the oldest\"",
+    "\"which ones are open on Mondays\"",
+    "\"which ones are closed in July\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 0,
+   "u": "Let op welke informatie gevraagd en gegeven wordt. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"which ones are free for everyone\"\"? Dan denk je dat hij vraagt naar gratis musea. Dit staat er niet, en hij vraagt naar maandag.",
+    "Koos je \"\"which ones are the oldest\"\"? Dan pak je de oudste musea. Dit staat er niet, dus je verzint iets.",
+    "Klopt: hij vraagt which museums are open on Mondays.",
+    "Koos je \"\"which ones are closed in July\"\"? Dan kies je juli. Hij komt volgende maand, en vraagt naar maandag."
+   ],
+   "uh": "What does Tim want to know about museums?",
+   "ctx": "You read this e-mail from Tim to the tourist office: \"Dear Sir or Madam, I am going to visit your city next month with my family. Could you tell me which museums are open on Mondays? Is there a discount for students? We would also like to know how we can get from the station to the city centre. Thank you very much. Yours faithfully, Tim Smit\""
+  },
+  {
+   "v": "Which second question does Tim ask?",
+   "o": [
+    "\"if there is a restaurant, I suppose, really\"",
+    "\"if there is a discount for students\"",
+    "\"if there is a playground\"",
+    "\"if there is a taxi\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 0,
+   "u": "Let op welke informatie gevraagd en gegeven wordt. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"if there is a restaurant, I suppose, really\"\"? Dan denk je dat hij een eetplek zoekt. Zijn vragen gaan over musea en vervoer, en niet over eten.",
+    "Klopt: hij vraagt is there a discount for students.",
+    "Koos je \"\"if there is a playground\"\"? Dan pak je iets voor kinderen. Hij reist met zijn gezin, maar vraagt niet naar een speeltuin.",
+    "Koos je \"\"if there is a taxi\"\"? Dan verwar je zijn vraag over de weg met een taxivraag. Hij vraagt hoe hij kan komen, maar noemt geen taxi."
+   ],
+   "uh": "Which second question does Tim ask?",
+   "ctx": "You read this e-mail from Tim to the tourist office: \"Dear Sir or Madam, I am going to visit your city next month with my family. Could you tell me which museums are open on Mondays? Is there a discount for students? We would also like to know how we can get from the station to the city centre. Thank you very much. Yours faithfully, Tim Smit\""
+  },
+  {
+   "v": "How does Tim ask politely?",
+   "o": [
+    "\"Tell me...!\"",
+    "\"I want to know.., you know.\"",
+    "\"Answer me...\"",
+    "\"Could you tell me...?\""
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 0,
+   "u": "Let op welke informatie gevraagd en gegeven wordt. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"Tell me...!\"\"? Dan denk je dat dit beleefd is. Het is een bevel, en klinkt onbeleefd.",
+    "Koos je \"\"I want to know.., you know.\"\"? Dan pak je een eis. Dit klinkt bot, en niet beleefd.",
+    "Koos je \"\"Answer me...\"\"? Dan kies je een bevel. Dit is onbeleefd, en hij gebruikt het niet.",
+    "Klopt: could you tell me is een beleefde vraagvorm."
+   ],
+   "uh": "How does Tim ask politely?",
+   "ctx": "You read this e-mail from Tim to the tourist office: \"Dear Sir or Madam, I am going to visit your city next month with my family. Could you tell me which museums are open on Mondays? Is there a discount for students? We would also like to know how we can get from the station to the city centre. Thank you very much. Yours faithfully, Tim Smit\""
+  },
+  {
+   "v": "Which museum is open on Mondays?",
+   "o": [
+    "\"the City Museum\"",
+    "\"the Art Museum\"",
+    "\"the Science Museum\"",
+    "\"the Railway Museum\""
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 1,
+   "u": "Let op welke informatie gevraagd en gegeven wordt. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: de reactie noemt de city museum als uitzondering.",
+    "Koos je \"\"the Art Museum\"\"? Dan denk je dat een kunstmuseum open is. De reactie noemt geen kunstmuseum, dus dit is een gok.",
+    "Koos je \"\"the Science Museum\"\"? Dan verwar je het met een bekend museum. Dit museum komt niet voor, dus het klopt niet.",
+    "Koos je \"\"the Railway Museum\"\"? Dan koppel je het museum aan het station. De reactie noemt het niet, dus het is geen antwoord."
+   ],
+   "uh": "Which museum is open on Mondays?",
+   "ctx": "You read this reply from the tourist office: \"Dear Mr Smit, Thank you for your e-mail. Most museums are closed on Mondays, but the City Museum is open from ten to five. Students get a discount of fifty per cent if they show their student card. From the station you can take bus 12 or walk, which takes about fifteen minutes. I hope this information is useful. Yours sincerely, Anna Berg\""
+  },
+  {
+   "v": "How much discount do students get?",
+   "o": [
+    "\"15 per cent, I think\"",
+    "\"5 per cent\"",
+    "\"50 per cent\"",
+    "\"free entry\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 2,
+   "u": "Let op welke informatie gevraagd en gegeven wordt. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"15 per cent, I think\"\"? Dan denk je dat fifty vijftien is. Fifteen is 15, en fifty is 50.",
+    "Koos je \"\"5 per cent\"\"? Dan pak je een klein percentage. Fifty is 50, en niet 5.",
+    "Klopt: de reactie zegt fifty per cent, dus de helft van de prijs.",
+    "Koos je \"\"free entry\"\"? Dan kies je gratis. Het is korting van de helft, en niet gratis."
+   ],
+   "uh": "How much discount do students get?",
+   "ctx": "You read this reply from the tourist office: \"Dear Mr Smit, Thank you for your e-mail. Most museums are closed on Mondays, but the City Museum is open from ten to five. Students get a discount of fifty per cent if they show their student card. From the station you can take bus 12 or walk, which takes about fifteen minutes. I hope this information is useful. Yours sincerely, Anna Berg\""
+  },
+  {
+   "v": "How can Tim get from the station to the city centre?",
+   "o": [
+    "\"by taxi only, to be honest, you know, I think\"",
+    "\"by bus 12 or by walking about fifteen minutes\"",
+    "\"by train\"",
+    "\"by boat\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 1,
+   "u": "Let op welke informatie gevraagd en gegeven wordt. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"by taxi only, to be honest, you know, I think\"\"? Dan denk je dat een taxi de enige optie is. Er worden bus of lopen genoemd, dus je verzint iets.",
+    "Klopt: dit zijn de twee opties in de reactie.",
+    "Koos je \"\"by train\"\"? Dan pak je de trein. Hij komt al met de trein aan, en het gaat om het stuk naar het centrum.",
+    "Koos je \"\"by boat\"\"? Dan kies je een boot. Dit wordt niet genoemd, dus het klopt niet."
+   ],
+   "uh": "How can Tim get from the station to the city centre?",
+   "ctx": "You read this reply from the tourist office: \"Dear Mr Smit, Thank you for your e-mail. Most museums are closed on Mondays, but the City Museum is open from ten to five. Students get a discount of fifty per cent if they show their student card. From the station you can take bus 12 or walk, which takes about fifteen minutes. I hope this information is useful. Yours sincerely, Anna Berg\""
+  },
+  {
+   "v": "Julie starts with 'Thanks for asking about the camp'. Why?",
+   "o": [
+    "\"to end the e-mail, I suppose\"",
+    "\"to say goodbye\"",
+    "\"to complain\"",
+    "\"to react to Max's question\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 3,
+   "u": "Let op welke informatie gevraagd en gegeven wordt. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"to end the e-mail, I suppose\"\"? Dan denk je dat dit afsluit. Het staat aan het begin, en de mail gaat daarna door.",
+    "Koos je \"\"to say goodbye\"\"? Dan pak je een afscheid. Het is een bedankje, en geen afscheid.",
+    "Koos je \"\"to complain\"\"? Dan kies je een klacht. De zin is vriendelijk, en klaagt niet.",
+    "Klopt: zo laat ze zien dat ze zijn vraag gelezen heeft."
+   ],
+   "uh": "Julie starts with 'Thanks for asking about the camp'. Why?",
+   "ctx": "You read this e-mail from Julie to Max: \"Hi Max, Thanks for asking about the camp. It starts on 5 July and lasts for one week. It costs 150 euros, including food and accommodation. You can go swimming, play volleyball and go to an evening disco. You must bring a sleeping bag, a towel and comfortable shoes. Please sign up before 20 June on our website. Kind regards, Julie\""
+  },
+  {
+   "v": "Which information about what to bring is correct?",
+   "o": [
+    "\"a sleeping bag, a towel and comfortable shoes\"",
+    "\"a tent and a bike\"",
+    "\"a phone and a laptop\"",
+    "\"a swimsuit and a bike, you know, I think, I suppose\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 1,
+   "u": "Let op welke informatie gevraagd en gegeven wordt. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: dit zijn de drie dingen die Julie noemt.",
+    "Koos je \"\"a tent and a bike\"\"? Dan denk je dat dit de lijst is. Deze worden niet genoemd, dus je verzint iets.",
+    "Koos je \"\"a phone and a laptop\"\"? Dan pak je elektronica. Deze worden niet genoemd, dus het klopt niet.",
+    "Koos je \"\"a swimsuit and a bike, you know, I think, I suppose\"\"? Dan kies je een zwembroek en een fiets. Deze worden niet genoemd, dus het klopt niet."
+   ],
+   "uh": "Which information about what to bring is correct?",
+   "ctx": "You read this e-mail from Julie to Max: \"Hi Max, Thanks for asking about the camp. It starts on 5 July and lasts for one week. It costs 150 euros, including food and accommodation. You can go swimming, play volleyball and go to an evening disco. You must bring a sleeping bag, a towel and comfortable shoes. Please sign up before 20 June on our website. Kind regards, Julie\""
+  },
+  {
+   "v": "What does 'including food and accommodation' mean?",
+   "o": [
+    "\"food costs extra\"",
+    "\"a place to sleep costs extra, really, to be honest\"",
+    "\"food and a place to sleep are part of the price\"",
+    "\"there is no food\""
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 2,
+   "u": "Let op welke informatie gevraagd en gegeven wordt. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"food costs extra\"\"? Dan denk je dat het eten extra kost. Including betekent inclusief, dus het zit in de prijs.",
+    "Koos je \"\"a place to sleep costs extra, really, to be honest\"\"? Dan pak je een bijbetaling voor het slapen. Including betekent inclusief, dus het hoort bij de prijs.",
+    "Klopt: including betekent inclusief, dus het zit al in de 150 euro.",
+    "Koos je \"\"there is no food\"\"? Dan kies je geen eten. Het eten is juist inbegrepen, dus er is wel eten."
+   ],
+   "uh": "What does 'including food and accommodation' mean?",
+   "ctx": "You read this e-mail from Julie to Max: \"Hi Max, Thanks for asking about the camp. It starts on 5 July and lasts for one week. It costs 150 euros, including food and accommodation. You can go swimming, play volleyball and go to an evening disco. You must bring a sleeping bag, a towel and comfortable shoes. Please sign up before 20 June on our website. Kind regards, Julie\""
+  },
+  {
+   "v": "Which sentence asks for the opening days?",
+   "o": [
+    "\"Thank you very much.\"",
+    "\"Could you tell me which museums are open on Mondays?\"",
+    "\"Yours faithfully, Tim Smit\"",
+    "\"I am going to visit your city next month, I think, I suppose.\""
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 0,
+   "u": "Let op welke informatie gevraagd en gegeven wordt. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"Thank you very much.\"\"? Dan denk je dat dit een vraag is. Het is een bedankje, en vraagt niets.",
+    "Klopt: deze zin vraagt direct naar openingsdagen.",
+    "Koos je \"\"Yours faithfully, Tim Smit\"\"? Dan pak je het slot. Dit is een afsluiting, en geen vraag.",
+    "Koos je \"\"I am going to visit your city next month, I think, I suppose.\"\"? Dan kies je het doel. Dit vertelt waarom hij schrijft, en stelt geen vraag."
+   ],
+   "uh": "Which sentence asks for the opening days?",
+   "ctx": "You read this e-mail from Tim to the tourist office: \"Dear Sir or Madam, I am going to visit your city next month with my family. Could you tell me which museums are open on Mondays? Is there a discount for students? We would also like to know how we can get from the station to the city centre. Thank you very much. Yours faithfully, Tim Smit\""
+  },
+  {
+   "v": "Why does Tim end with 'Thank you very much'?",
+   "o": [
+    "\"he complains\"",
+    "\"he cancels the trip, to be honest\"",
+    "\"he gives an order\"",
+    "\"he thanks the reader in advance\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 4,
+   "u": "Let op welke informatie gevraagd en gegeven wordt. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"he complains\"\"? Dan denk je dat hij klaagt. De zin is vriendelijk, en klaagt niet.",
+    "Koos je \"\"he cancels the trip, to be honest\"\"? Dan pak je een afzegging. Hij gaat juist op reis, en zegt niet af.",
+    "Koos je \"\"he gives an order\"\"? Dan kies je een bevel. De zin is beleefd, en geen bevel.",
+    "Klopt: hij bedankt alvast, voordat hij het antwoord heeft."
+   ],
+   "uh": "Why does Tim end with 'Thank you very much'?",
+   "ctx": "You read this e-mail from Tim to the tourist office: \"Dear Sir or Madam, I am going to visit your city next month with my family. Could you tell me which museums are open on Mondays? Is there a discount for students? We would also like to know how we can get from the station to the city centre. Thank you very much. Yours faithfully, Tim Smit\""
+  },
+  {
+   "v": "Which sentence gives Tim's reason for writing?",
+   "o": [
+    "\"I am going to visit your city next month with my family.\"",
+    "\"Thank you very much.\"",
+    "\"Is there a discount for students, I suppose, really, to be honest?\"",
+    "\"Yours faithfully, Tim Smit\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 3,
+   "u": "Let op welke informatie gevraagd en gegeven wordt. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: de eerste zin legt uit waarom hij vragen stelt.",
+    "Koos je \"\"Thank you very much.\"\"? Dan denk je dat dit de reden is. Het is een bedankje, en geen reden.",
+    "Koos je \"\"Is there a discount for students, I suppose, really, to be honest?\"\"? Dan pak je een vraag. Dit is een vraag, en geen reden.",
+    "Koos je \"\"Yours faithfully, Tim Smit\"\"? Dan kies je het slot. Dit is een afsluiting, en geen reden."
+   ],
+   "uh": "Which sentence gives Tim's reason for writing?",
+   "ctx": "You read this e-mail from Tim to the tourist office: \"Dear Sir or Madam, I am going to visit your city next month with my family. Could you tell me which museums are open on Mondays? Is there a discount for students? We would also like to know how we can get from the station to the city centre. Thank you very much. Yours faithfully, Tim Smit\""
+  },
+  {
+   "v": "How does Anna begin her answer?",
+   "o": [
+    "\"Hi Tim, what's up, you know?\"",
+    "\"Goodbye, Mr Smit.\"",
+    "\"Thank you for your e-mail.\"",
+    "\"I do not know.\""
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 3,
+   "u": "Let op welke informatie gevraagd en gegeven wordt. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"Hi Tim, what's up, you know?\"\"? Dan denk je dat dit past. Het is te los, en niet formeel.",
+    "Koos je \"\"Goodbye, Mr Smit.\"\"? Dan pak je een afscheid. Dit past aan het einde, en niet aan het begin.",
+    "Klopt: ze bedankt voor zijn bericht en reageert beleefd.",
+    "Koos je \"\"I do not know.\"\"? Dan kies je een afwijzing. Ze geeft juist informatie, dus dit klopt niet."
+   ],
+   "uh": "How does Anna begin her answer?",
+   "ctx": "You read this reply from the tourist office: \"Dear Mr Smit, Thank you for your e-mail. Most museums are closed on Mondays, but the City Museum is open from ten to five. Students get a discount of fifty per cent if they show their student card. From the station you can take bus 12 or walk, which takes about fifteen minutes. I hope this information is useful. Yours sincerely, Anna Berg\""
+  },
+  {
+   "v": "What is the condition for the student discount?",
+   "o": [
+    "\"being under twelve, really\"",
+    "\"showing the student card\"",
+    "\"coming on a Monday\"",
+    "\"paying cash\""
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 2,
+   "u": "Let op welke informatie gevraagd en gegeven wordt. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"being under twelve, really\"\"? Dan denk je dat de leeftijd telt. Dit wordt niet genoemd, dus je verzint iets.",
+    "Klopt: zij zegt if they show their student card.",
+    "Koos je \"\"coming on a Monday\"\"? Dan pak je maandag. Dit wordt niet genoemd, dus het klopt niet.",
+    "Koos je \"\"paying cash\"\"? Dan kies je contant. Dit wordt niet genoemd, dus het klopt niet."
+   ],
+   "uh": "What is the condition for the student discount?",
+   "ctx": "You read this reply from the tourist office: \"Dear Mr Smit, Thank you for your e-mail. Most museums are closed on Mondays, but the City Museum is open from ten to five. Students get a discount of fifty per cent if they show their student card. From the station you can take bus 12 or walk, which takes about fifteen minutes. I hope this information is useful. Yours sincerely, Anna Berg\""
+  },
+  {
+   "v": "Which sentence answers Tim's question about getting to the centre?",
+   "o": [
+    "\"Most museums are closed on Mondays, I think, I suppose.\"",
+    "\"I hope this information is useful.\"",
+    "\"Yours sincerely, Anna Berg.\"",
+    "\"From the station you can take bus 12 or walk.\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 1,
+   "u": "Let op welke informatie gevraagd en gegeven wordt. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"Most museums are closed on Mondays, I think, I suppose.\"\"? Dan denk je dat dit de route is. Het gaat over openingsdagen, en niet over vervoer.",
+    "Koos je \"\"I hope this information is useful.\"\"? Dan pak je het slot. Dit is een afsluiting, en geen route.",
+    "Koos je \"\"Yours sincerely, Anna Berg.\"\"? Dan kies je de ondertekening. Dit is een afsluiting, en geen route.",
+    "Klopt: deze zin geeft de route naar het centrum."
+   ],
+   "uh": "Which sentence answers Tim's question about getting to the centre?",
+   "ctx": "You read this reply from the tourist office: \"Dear Mr Smit, Thank you for your e-mail. Most museums are closed on Mondays, but the City Museum is open from ten to five. Students get a discount of fifty per cent if they show their student card. From the station you can take bus 12 or walk, which takes about fifteen minutes. I hope this information is useful. Yours sincerely, Anna Berg\""
+  },
+  {
+   "v": "Why does Anna write 'I hope this information is useful'?",
+   "o": [
+    "\"to end the e-mail politely\"",
+    "\"to ask a question, to be honest\"",
+    "\"to refuse\"",
+    "\"to complain\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 4,
+   "u": "Let op welke informatie gevraagd en gegeven wordt. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: zo sluit ze vriendelijk en zakelijk af.",
+    "Koos je \"\"to ask a question, to be honest\"\"? Dan denk je dat dit een vraag is. Het is een wens, en geen vraag.",
+    "Koos je \"\"to refuse\"\"? Dan pak je een weigering. Het is vriendelijk, en weigert niet.",
+    "Koos je \"\"to complain\"\"? Dan kies je een klacht. De zin is positief, en klaagt niet."
+   ],
+   "uh": "Why does Anna write 'I hope this information is useful'?",
+   "ctx": "You read this reply from the tourist office: \"Dear Mr Smit, Thank you for your e-mail. Most museums are closed on Mondays, but the City Museum is open from ten to five. Students get a discount of fifty per cent if they show their student card. From the station you can take bus 12 or walk, which takes about fifteen minutes. I hope this information is useful. Yours sincerely, Anna Berg\""
+  }
+ ],
+ "oe": [
+  {
+   "bron": "Examenstijl",
+   "ctx": "A friend of your parents from England is going to visit your town next month. He wrote: \"Could you tell me what time the shops open on Saturday? And is there a cheap place to eat in the centre?\" The shops open at nine and close at six. There is a pizza restaurant where meals cost about eight euros.",
+   "v": "Write a short informal e-mail in English that answers both questions and has an opening and a closing.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Hi (opening) (1p). The shops open at nine and close at six (1p). There is a pizza restaurant, about eight euros (1p). Slot, bijvoorbeeld See you soon (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "You want to join an English-speaking tennis club. You do not know the name of the secretary. You want to know the price per month, the days of the training and if you can try one lesson for free.",
+   "v": "Write three polite questions in English that you can ask in a formal e-mail.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Could you tell me how much it costs per month (1p). Could you tell me on which days there is training (1p). Is it possible to try one lesson for free (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "You work part-time in a bike shop. A customer from England asks by e-mail what a new bike costs and when the shop is open. The bike costs 350 euros, there is a discount of ten per cent this week, and the shop is open from ten to five on weekdays.",
+   "v": "Write a short formal answer in English with the price, the discount and the opening times.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Thank you for your e-mail (1p). The bike costs 350 euros, ten per cent discount (1p). Open from ten to five on weekdays (1p). Yours sincerely (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Your classmate answers an e-mail with the question \"How much is the camp, and when does it start, and what must I bring?\" with only: \"It costs 100 euros.\" You think this is a bad answer.",
+   "v": "Write two sentences in English that explain what is wrong with this answer.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Er ontbreken twee antwoorden (1p). Het antwoord moet alle vragen beantwoorden: ook startdatum en wat je moet meenemen (1p). Een duidelijke uitleg (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "A pupil from another class says: \"When I ask for information, I always write: Give me the information.\" You think this is not polite.",
+   "v": "Write a better question in English and explain why it is better.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Could you tell me / Could you give me the information (1p). Het is beleefder dan een bevel (1p). Een duidelijke uitleg (1p)."
+  }
+ ]
+}

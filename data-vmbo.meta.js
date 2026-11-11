@@ -1189,6 +1189,27 @@ var VAKKEN_VMBO = [
       "nOe": 5,
       "nBeg": 12,
       "hasSam": true
+     },
+     {
+      "id": "D4",
+      "lo": "en.D.4",
+      "gs": 2,
+      "naam": "Informatie vragen en geven in een tekst",
+      "beschrijving": "Je leert in het Engels in een e-mail informatie te vragen en te geven: je stelt beleefde vragen met could you tell me, beantwoordt alle vragen met tijden, prijzen en voorwaarden en controleert of je antwoord compleet en vriendelijk is.",
+      "ceStatus": "SE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Een vraag formuleren",
+       "Alle informatie geven",
+       "Details: tijd, prijs en voorwaarden",
+       "Reageren op een vraag",
+       "Controleren en afsluiten"
+      ],
+      "nSv": 27,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
      }
     ]
    }

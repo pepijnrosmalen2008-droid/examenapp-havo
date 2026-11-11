@@ -5,7 +5,7 @@
 Volledige beschrijving (functies, inhoud per niveau, prijs, wat Slagio niet is): https://slagio.nl/llms-full.txt
 
 ## In het kort
-- 12 vakken havo, 16 vakken vwo, 12 vakken vmbo; 26.903 oefenvragen en 4.346 begrippen.
+- 12 vakken havo, 16 vakken vwo, 12 vakken vmbo; 26.930 oefenvragen en 4.346 begrippen.
 - Adaptief oefenen: na een fout een vraag over hetzelfde onderwerp, een niveau makkelijker; uitleg bij elk fout antwoord.
 - Foutenboek en herhalen met gespreide herhaling, beheersing per leerdoel, studieplan tot het examen.
 - Examens met klok, proefexamens in examenstijl met modelantwoord en puntenverdeling, archief met officiële oude examens.
@@ -268,6 +268,7 @@ Volledige beschrijving (functies, inhoud per niveau, prijs, wat Slagio niet is):
 - [Een informele e-mail of brief schrijven (Engels VMBO)](https://slagio.nl/leren/vmbo/engels/een-informele-e-mail-of-brief-schrijven.html): Je leert in het Engels een informele e-mail of brief te schrijven: je kiest een passende opening en afsluiting, reageert op een bericht, vertelt nieuws, stelt…
 - [Een formele brief of e-mail schrijven (Engels VMBO)](https://slagio.nl/leren/vmbo/engels/een-formele-brief-of-e-mail-schrijven.html): Je leert in het Engels een formele brief of e-mail te schrijven: je kiest de juiste aanhef en afsluiting, noemt je doel, doet een beleefd verzoek, geeft…
 - [Een bericht of uitnodiging schrijven: afspreken, uitnodigen en bedanken (Engels VMBO)](https://slagio.nl/leren/vmbo/engels/een-bericht-of-uitnodiging-schrijven-afspreken-uitnodigen-en-bedanken.html): Je leert in het Engels korte berichten te schrijven: je nodigt uit met wat, wanneer en waar, accepteert of weigert beleefd, maakt een afspraak met een…
+- [Informatie vragen en geven in een tekst (Engels VMBO)](https://slagio.nl/leren/vmbo/engels/informatie-vragen-en-geven-in-een-tekst.html): Je leert in het Engels in een e-mail informatie te vragen en te geven: je stelt beleefde vragen met could you tell me, beantwoordt alle vragen met tijden,…
 
 ## Examenvragen in examenstijl (met modelantwoord en puntenverdeling)
 - [Examenvragen Nederlands HAVO](https://slagio.nl/leren/havo/nederlands/examenvragen.html): 11 vragen uit een Slagio-proefexamen
