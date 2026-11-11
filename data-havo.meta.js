@@ -1562,9 +1562,13 @@ var VAKKEN = [
      },
      {
       "id": "P6",
+      "lo": "bi.P.6",
+      "gs": 2,
       "naam": "Evolutie en natuurlijke selectie",
-      "beschrijving": "Variatie en mutatie, natuurlijke selectie, evolutie als verandering van een populatie over generaties, en soortvorming. Nadruk op: populaties evolueren (niet individuen) en niet doelgericht redeneren.",
-      "ceStatus": "CE",
+      "beschrijving": "Je legt uit hoe variatie ontstaat door mutatie en geslachtelijke voortplanting, beschrijft natuurlijke selectie in stappen, verklaart met voorbeelden zoals de berkenspanner en antibioticaresistentie hoe populaties veranderen over generaties, weerlegt het idee dat individuen evolueren en legt uit hoe nieuwe soorten ontstaan.",
+      "ceStatus": "CE+SE",
+      "binas": "",
+      "val": "",
       "onderwerpen": [
        "Variatie en mutatie binnen een populatie",
        "Natuurlijke selectie",

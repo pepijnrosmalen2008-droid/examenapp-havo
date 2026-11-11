@@ -61318,9 +61318,13 @@ var VAKKEN = [
      },
      {
       "id": "P6",
+      "lo": "bi.P.6",
+      "gs": 2,
       "naam": "Evolutie en natuurlijke selectie",
-      "beschrijving": "Variatie en mutatie, natuurlijke selectie, evolutie als verandering van een populatie over generaties, en soortvorming. Nadruk op: populaties evolueren (niet individuen) en niet doelgericht redeneren.",
-      "ceStatus": "CE",
+      "beschrijving": "Je legt uit hoe variatie ontstaat door mutatie en geslachtelijke voortplanting, beschrijft natuurlijke selectie in stappen, verklaart met voorbeelden zoals de berkenspanner en antibioticaresistentie hoe populaties veranderen over generaties, weerlegt het idee dat individuen evolueren en legt uit hoe nieuwe soorten ontstaan.",
+      "ceStatus": "CE+SE",
+      "binas": "",
+      "val": "",
       "onderwerpen": [
        "Variatie en mutatie binnen een populatie",
        "Natuurlijke selectie",
@@ -61329,554 +61333,618 @@ var VAKKEN = [
        "Populaties veranderen, niet individuen",
        "Soortvorming"
       ],
-      "sam": "Binnen een populatie zijn individuen niet allemaal gelijk: er is variatie, die ontstaat door mutaties. Sommige individuen passen door hun eigenschappen beter bij de omgeving. Zij hebben meer kans om te overleven en zich voort te planten en geven hun erfelijke eigenschappen door. Dit heet natuurlijke selectie. In de volgende generaties komt de gunstige eigenschap daardoor vaker voor. Zo verandert de populatie over vele generaties: dat is evolutie. Let op twee dingen. Niet het individu past zich tijdens zijn leven aan, maar de populatie verandert over generaties. En evolutie is niet doelgericht: de variatie is er al door toeval, en de omgeving selecteert daaruit. Als populaties gescheiden raken en apart evolueren, kunnen ze zo verschillen dat er nieuwe soorten ontstaan: soortvorming.",
+      "sam": "Variatie: nieuwe combinaties van allelen bij geslachtelijke voortplanting; nieuwe eigenschappen door mutatie (alleen in geslachtscellen erfelijk). Natuurlijke selectie: overproductie, variatie, omgeving selecteert, best aangepaste krijgen meer nakomelingen (berkenspanner, resistentie). Seksuele en kunstmatige selectie. Evolutie = verandering in allelfrequenties van een populatie over generaties; snel bij korte generatietijd (vinken, bacteriën). Individuen evolueren niet; verworven eigenschappen zijn niet erfelijk; gif of antibioticum selecteert, maakt geen mutaties. Soort = samen vruchtbaar nageslacht. Soortvorming: geografische scheiding → eigen mutaties en selectie → twee soorten.",
       "begrippen": [
        {
-        "t": "Evolutie",
-        "d": "de verandering van erfelijke eigenschappen van een populatie over generaties"
-       },
-       {
-        "t": "Natuurlijke selectie",
-        "d": "het proces waarbij beter passende individuen meer nakomelingen krijgen"
-       },
-       {
         "t": "Variatie",
-        "d": "de verschillen tussen individuen binnen een populatie"
+        "d": "Verschillen in eigenschappen tussen individuen van dezelfde populatie."
        },
        {
         "t": "Mutatie",
-        "d": "een verandering in het DNA die nieuwe variatie kan geven"
+        "d": "Toevallige verandering in het DNA; in een geslachtscel kan hij worden doorgegeven."
        },
        {
-        "t": "Aanpassing",
-        "d": "een erfelijke eigenschap waarmee een soort beter past bij de omgeving"
+        "t": "Natuurlijke selectie",
+        "d": "Proces waarbij individuen met gunstige erfelijke eigenschappen vaker overleven en meer nakomelingen krijgen."
+       },
+       {
+        "t": "Kunstmatige selectie",
+        "d": "Selectie waarbij de mens kiest welke dieren of planten zich voortplanten."
+       },
+       {
+        "t": "Seksuele selectie",
+        "d": "Selectie doordat individuen met bepaalde kenmerken vaker als partner worden gekozen."
+       },
+       {
+        "t": "Overproductie",
+        "d": "Er worden meer nakomelingen geboren dan er in de omgeving kunnen overleven."
+       },
+       {
+        "t": "Evolutie",
+        "d": "Verandering in erfelijke eigenschappen van een populatie over generaties."
+       },
+       {
+        "t": "Resistentie",
+        "d": "Erfelijke ongevoeligheid voor een stof, zoals een antibioticum of insectengif."
+       },
+       {
+        "t": "Generatietijd",
+        "d": "Tijd tussen de geboorte van een individu en de geboorte van zijn nakomelingen."
+       },
+       {
+        "t": "Soort",
+        "d": "Groep individuen die samen vruchtbare nakomelingen kunnen krijgen."
        },
        {
         "t": "Soortvorming",
-        "d": "het ontstaan van nieuwe soorten door evolutie"
+        "d": "Ontstaan van nieuwe soorten uit één oorspronkelijke soort."
        },
        {
-        "t": "Erfelijke eigenschap",
-        "d": "een eigenschap die via het DNA wordt doorgegeven"
-       },
-       {
-        "t": "Voortplanting",
-        "d": "het krijgen van nakomelingen die eigenschappen erven"
-       },
-       {
-        "t": "Selectiedruk",
-        "d": "de invloed van de omgeving die bepaalt wie meer nakomelingen krijgt"
-       },
-       {
-        "t": "Generatie",
-        "d": "een opeenvolging van nakomelingen in de tijd"
-       },
-       {
-        "t": "Fossiel",
-        "d": "een bewaard gebleven overblijfsel of afdruk van een organisme"
-       },
-       {
-        "t": "Gemeenschappelijke voorouder",
-        "d": "een soort waaruit meerdere latere soorten zijn ontstaan"
+        "t": "Geografische scheiding",
+        "d": "Scheiding van een populatie door een barrière zoals een rivier, gebergte of zee."
        }
       ],
       "sv": [
        {
-        "v": "Wat is evolutie?",
+        "v": "Waardoor ontstaan nieuwe erfelijke eigenschappen in een populatie?",
         "o": [
-         "Verandering van een populatie over generaties",
-         "De verandering van één dier tijdens zijn leven",
-         "Het groter worden van een enkel organisme",
-         "Het aantal soorten in een gebied nu"
-        ],
-        "c": 0,
-        "d": 2,
-        "u": "Evolutie is de verandering van de erfelijke eigenschappen van een populatie over vele generaties.",
-        "uo": [
-         "Klopt: een populatie verandert over generaties.",
-         "Eén dier evolueert niet tijdens zijn leven.",
-         "Groter worden is geen evolutie.",
-         "Dat is de soortenrijkdom, niet evolutie."
-        ],
-        "uh": "Evolutie = populatie verandert over generaties."
-       },
-       {
-        "v": "Wat is natuurlijke selectie?",
-        "o": [
-         "Toeval bepaalt alles, helemaal zonder de omgeving",
-         "Beter passende individuen krijgen meer nakomelingen",
-         "Elk individu past zich zelf aan zijn omgeving aan",
-         "Alle individuen overleven precies even goed"
-        ],
-        "c": 1,
-        "d": 2,
-        "u": "Bij natuurlijke selectie hebben beter passende individuen meer kans om te overleven en zich voort te planten.",
-        "uo": [
-         "De omgeving speelt juist een sleutelrol.",
-         "Klopt: beter passende individuen krijgen meer nakomelingen.",
-         "Het individu past zich niet zelf tijdens zijn leven aan.",
-         "Ze overleven juist niet allemaal even goed."
-        ],
-        "uh": "Natuurlijke selectie = beter passend, meer nakomelingen."
-       },
-       {
-        "v": "Wat evolueert er: een individu of een populatie?",
-        "o": [
-         "Een individu tijdens zijn leven",
-         "Een enkel dier dat groter wordt",
-         "Een populatie over generaties",
-         "Alleen de niet-levende omgeving"
-        ],
-        "c": 2,
-        "d": 3,
-        "u": "Niet een individu, maar een populatie verandert over generaties: dat is evolutie.",
-        "uo": [
-         "Een individu evolueert niet tijdens zijn leven.",
-         "Groeien is geen evolutie.",
-         "Klopt: de populatie evolueert over generaties.",
-         "De biotoop evolueert niet."
-        ],
-        "uh": "Populaties evolueren, individuen niet."
-       },
-       {
-        "v": "Waar komt de variatie binnen een populatie vandaan?",
-        "o": [
-         "Van de wil van elk dier",
-         "Van de temperatuur van de lucht",
-         "Van het aantal roofdieren",
-         "Van mutaties in het DNA"
-        ],
-        "c": 3,
-        "d": 2,
-        "u": "Variatie ontstaat door mutaties in het DNA, die nieuwe erfelijke verschillen geven.",
-        "uo": [
-         "Variatie ontstaat niet door wil.",
-         "Temperatuur maakt de erfelijke variatie niet.",
-         "Roofdieren maken de variatie niet.",
-         "Klopt: mutaties in het DNA geven variatie."
-        ],
-        "uh": "Variatie komt door mutaties in het DNA."
-       },
-       {
-        "v": "Wat is variatie in een populatie?",
-        "o": [
-         "De verschillen tussen de individuen",
-         "Dat alle individuen precies gelijk zijn",
-         "Het aantal soorten in een gebied",
-         "De niet-levende factoren samen"
-        ],
-        "c": 0,
-        "d": 1,
-        "u": "Variatie zijn de erfelijke verschillen tussen de individuen binnen een populatie.",
-        "uo": [
-         "Klopt: de verschillen tussen individuen.",
-         "Bij variatie zijn ze juist niet gelijk.",
-         "Dat is de soortenrijkdom.",
-         "Dat zijn abiotische factoren."
-        ],
-        "uh": "Variatie = de verschillen tussen individuen."
-       },
-       {
-        "v": "Waarom is de uitspraak fout dat een dier zich aanpast om te overleven?",
-        "o": [
-         "Omdat aanpassing altijd binnen één leven gebeurt",
-         "Omdat de variatie er al is en de omgeving selecteert",
-         "Omdat evolutie een doel nastreeft",
-         "Omdat de dieren in de populatie nooit doodgaan"
-        ],
-        "c": 1,
-        "d": 3,
-        "u": "De variatie is er al door toeval; de omgeving selecteert daaruit. Evolutie streeft geen doel na.",
-        "uo": [
-         "Evolutie gaat juist over generaties, niet één leven.",
-         "Klopt: de variatie is er al, de omgeving selecteert.",
-         "Evolutie streeft geen doel na.",
-         "Dieren gaan wel degelijk dood."
-        ],
-        "uh": "Niet doelgericht: variatie is er al, omgeving selecteert."
-       },
-       {
-        "v": "Wat is soortvorming?",
-        "o": [
-         "Het groter worden van één dier",
-         "Het uitsterven van alle soorten",
-         "Het ontstaan van nieuwe soorten",
-         "Het aantal individuen van een soort"
-        ],
-        "c": 2,
-        "d": 2,
-        "u": "Soortvorming is het ontstaan van nieuwe soorten doordat populaties apart evolueren.",
-        "uo": [
-         "Groeien is geen soortvorming.",
-         "Dat is uitsterven, het tegenovergestelde.",
-         "Klopt: het ontstaan van nieuwe soorten.",
-         "Dat is de populatiegrootte."
-        ],
-        "uh": "Soortvorming = nieuwe soorten ontstaan."
-       },
-       {
-        "v": "Hoe kan soortvorming ontstaan?",
-        "o": [
-         "Doordat één enkel dier heel snel groter groeit",
-         "Doordat de temperatuur even stijgt",
-         "Doordat alle soorten samensmelten",
-         "Doordat populaties gescheiden apart evolueren"
-        ],
-        "c": 3,
-        "d": 3,
-        "u": "Als populaties van elkaar gescheiden raken, evolueren ze apart en kunnen ze zo verschillen dat het nieuwe soorten worden.",
-        "uo": [
-         "Groei van één dier geeft geen nieuwe soort.",
-         "Een tijdelijke temperatuurstijging is niet genoeg.",
-         "Soorten smelten niet samen tot nieuwe soorten.",
-         "Klopt: gescheiden populaties evolueren apart."
-        ],
-        "uh": "Gescheiden populaties evolueren apart tot nieuwe soorten."
-       },
-       {
-        "v": "Vogels zien opvallende kevers beter dan onopvallende. Wat gebeurt er over generaties?",
-        "o": [
-         "De onopvallende kleur komt vaker voor",
-         "De opvallende kleur wordt juist vaker",
-         "Alle kevers krijgen precies dezelfde kleur",
-         "Er verandert helemaal niets"
-        ],
-        "c": 0,
-        "d": 3,
-        "u": "De onopvallende kevers overleven vaker en planten zich meer voort, dus komt hun kleur in latere generaties vaker voor.",
-        "uo": [
-         "Klopt: de onopvallende kleur wordt vaker.",
-         "De opvallende kevers worden juist vaker opgegeten.",
-         "Er blijft variatie, niet één kleur.",
-         "Er verandert juist iets over generaties."
-        ],
-        "uh": "Wie beter overleeft, geeft zijn kleur vaker door."
-       },
-       {
-        "v": "Wat is een mutatie?",
-        "o": [
-         "Het opeten van een prooi",
-         "Een verandering in het DNA",
-         "De rol van een soort in de keten",
-         "De niet-levende omgeving"
-        ],
-        "c": 1,
-        "d": 1,
-        "u": "Een mutatie is een verandering in het DNA die nieuwe erfelijke variatie kan opleveren.",
-        "uo": [
-         "Dat is predatie.",
-         "Klopt: een verandering in het DNA.",
-         "Dat is de niche.",
-         "Dat is de biotoop."
-        ],
-        "uh": "Mutatie = verandering in het DNA."
-       },
-       {
-        "v": "Wat geven de best passende individuen door aan hun nakomelingen?",
-        "o": [
-         "Hun aangeleerde gedrag van die dag",
-         "Hun leeftijd op dat moment",
-         "Hun erfelijke eigenschappen",
-         "Hun plek in het gebied"
-        ],
-        "c": 2,
-        "d": 2,
-        "u": "Via voortplanting geven individuen hun erfelijke eigenschappen door aan hun nakomelingen.",
-        "uo": [
-         "Aangeleerd gedrag is niet erfelijk.",
-         "Leeftijd wordt niet doorgegeven.",
-         "Klopt: hun erfelijke eigenschappen.",
-         "Een plek wordt niet geërfd."
-        ],
-        "uh": "Doorgegeven wordt alleen wat erfelijk is."
-       },
-       {
-        "v": "Waarom is evolutie niet doelgericht?",
-        "o": [
-         "Omdat soorten een vast plan van tevoren volgen",
-         "Omdat de natuur vooruit denkt",
-         "Omdat dieren kiezen hoe ze veranderen",
-         "Omdat de variatie door toeval ontstaat"
-        ],
-        "c": 3,
-        "d": 3,
-        "u": "De variatie ontstaat door toevallige mutaties; de omgeving selecteert daaruit, zonder vooropgezet doel.",
-        "uo": [
-         "Soorten volgen geen plan.",
-         "De natuur denkt niet vooruit.",
-         "Dieren kiezen hun evolutie niet.",
-         "Klopt: de variatie ontstaat door toeval."
-        ],
-        "uh": "Evolutie heeft geen doel: toeval plus selectie."
-       },
-       {
-        "v": "Wat is een aanpassing in evolutionaire zin?",
-        "o": [
-         "Een erfelijke eigenschap die beter past bij de omgeving",
-         "Een spier die dikker wordt door training",
-         "Een keuze die een dier bewust en met opzet maakt",
-         "Een tijdelijke verandering in één leven"
-        ],
-        "c": 0,
-        "d": 3,
-        "u": "Een aanpassing is een erfelijke eigenschap waarmee een soort beter past bij zijn omgeving.",
-        "uo": [
-         "Klopt: een erfelijke eigenschap die beter past.",
-         "Een getrainde spier is niet erfelijk.",
-         "Evolutie berust niet op bewuste keuze.",
-         "Een tijdelijke verandering is geen evolutionaire aanpassing."
-        ],
-        "uh": "Aanpassing = erfelijke eigenschap die beter past."
-       },
-       {
-        "v": "Wat is selectiedruk?",
-        "o": [
-         "De wil van een dier om te veranderen",
-         "De invloed van de omgeving op wie zich voortplant",
-         "Het aantal soorten in een gebied",
-         "De hoeveelheid regen die er per jaar in het gebied valt"
-        ],
-        "c": 1,
-        "d": 2,
-        "u": "Selectiedruk is de invloed van de omgeving die bepaalt welke individuen meer nakomelingen krijgen.",
-        "uo": [
-         "Het gaat niet om de wil van een dier.",
-         "Klopt: de omgeving bepaalt wie zich voortplant.",
-         "Dat is de soortenrijkdom.",
-         "Neerslag is niet de selectiedruk zelf."
-        ],
-        "uh": "Selectiedruk = invloed van de omgeving op de voortplanting."
-       },
-       {
-        "v": "Wat toont een fossiel?",
-        "o": [
-         "Het huidige aantal dieren van een soort",
-         "De niet-levende omgeving van nu",
-         "Een overblijfsel van een organisme uit het verleden",
-         "De niche en de rol van een nu nog levende soort"
+         "door het eten van ander voedsel",
+         "doordat dieren oefenen",
+         "door mutaties",
+         "doordat het klimaat ze direct verandert"
         ],
         "c": 2,
         "d": 1,
-        "u": "Een fossiel is een bewaard gebleven overblijfsel of afdruk van een organisme uit het verleden.",
+        "s": 0,
+        "u": "Een mutatie is een verandering in het DNA; alleen die is erfelijk nieuw.",
         "uo": [
-         "Een fossiel gaat over het verleden, niet nu.",
-         "Een fossiel is niet de omgeving van nu.",
-         "Klopt: een overblijfsel uit het verleden.",
-         "Een fossiel is geen niche."
+         "Koos je ander voedsel? Voedsel kan de groei beïnvloeden, maar verandert geen genen die je doorgeeft. Het is geen erfelijke verandering.",
+         "Koos je oefenen? Door oefenen worden spieren sterker, maar dat verandert het DNA niet. Het nageslacht erft die sterkere spieren dus niet.",
+         "Klopt: nieuwe erfelijke eigenschappen ontstaan door mutaties, toevallige veranderingen in het DNA. Komt de mutatie in een geslachtscel terecht, dan kan het nageslacht hem erven.",
+         "Koos je het klimaat? Het klimaat bepaalt welke varianten overleven, maar maakt zelf geen gerichte nieuwe eigenschappen. Die ontstaan toevallig door mutaties."
         ],
-        "uh": "Fossiel = overblijfsel uit het verleden."
+        "uh": "Wat verandert er in het DNA?"
        },
        {
-        "v": "Waarom helpen fossielen om evolutie te begrijpen?",
+        "v": "Welke bron van variatie mengt bestaande allelen tot nieuwe combinaties?",
         "o": [
-         "Ze tonen precies de toekomst van een soort",
-         "Ze bewijzen dat soorten nooit veranderen",
-         "Ze gaan alleen over de niet-levende dingen van vroeger",
-         "Ze laten zien hoe soorten in de tijd veranderden"
-        ],
-        "c": 3,
-        "d": 3,
-        "u": "Fossielen van verschillende ouderdom laten zien hoe soorten in de loop van de tijd zijn veranderd.",
-        "uo": [
-         "Fossielen tonen het verleden, niet de toekomst.",
-         "Ze laten juist zien dat soorten wel veranderen.",
-         "Fossielen gaan over vroegere organismen.",
-         "Klopt: ze tonen verandering door de tijd."
-        ],
-        "uh": "Fossielen tonen verandering van soorten door de tijd."
-       },
-       {
-        "v": "Wat is een gemeenschappelijke voorouder?",
-        "o": [
-         "Een soort waaruit latere soorten zijn ontstaan",
-         "Het jongste dier dat in de populatie is geboren",
-         "De niet-levende omgeving van vroeger",
-         "Een soort die nu nog onveranderd leeft"
-        ],
-        "c": 0,
-        "d": 2,
-        "u": "Een gemeenschappelijke voorouder is een soort waaruit door evolutie meerdere latere soorten zijn ontstaan.",
-        "uo": [
-         "Klopt: een soort waaruit latere soorten ontstonden.",
-         "Dat is geen voorouder.",
-         "Een voorouder is een soort, geen omgeving.",
-         "Een voorouder is juist veranderd in nieuwe soorten."
-        ],
-        "uh": "Gemeenschappelijke voorouder = bron van latere soorten."
-       },
-       {
-        "v": "Welke uitspraak over natuurlijke selectie klopt?",
-        "o": [
-         "Elk individu kiest zijn eigen eigenschappen",
-         "De omgeving bepaalt wie meer nakomelingen krijgt",
-         "Alle individuen planten zich even veel voort",
-         "Selectie werkt alleen op de niet-levende omgeving"
+         "mutatie in een huidcel",
+         "geslachtelijke voortplanting",
+         "ongeslachtelijke voortplanting",
+         "het gebruik van een orgaan"
         ],
         "c": 1,
         "d": 2,
-        "u": "De omgeving vormt de selectiedruk en bepaalt zo welke individuen meer nakomelingen krijgen.",
+        "s": 0,
+        "u": "Meiose en bevruchting zorgen voor steeds nieuwe combinaties van allelen.",
         "uo": [
-         "Individuen kiezen hun eigenschappen niet.",
-         "Klopt: de omgeving bepaalt wie meer nakomelingen krijgt.",
-         "Ze planten zich juist niet even veel voort.",
-         "Selectie werkt op de individuen, niet op de biotoop."
+         "Koos je mutatie in een huidcel? Een mutatie in een lichaamscel wordt niet doorgegeven aan het nageslacht. Alleen mutaties in geslachtscellen tellen voor de populatie.",
+         "Klopt: bij geslachtelijke voortplanting krijgt elk kind een nieuwe combinatie van allelen van vader en moeder. Daardoor verschillen broers en zussen van elkaar.",
+         "Koos je ongeslachtelijke voortplanting? Daarbij ontstaan klonen met precies hetzelfde DNA. Er worden dan juist geen nieuwe combinaties gevormd.",
+         "Koos je het gebruik van een orgaan? Gebruik of niet-gebruik verandert het DNA niet. Wat je in je leven verandert, geef je niet door."
         ],
-        "uh": "De omgeving selecteert wie meer nakomelingen krijgt."
+        "uh": "Wat gebeurt er bij meiose en bevruchting?"
        },
        {
-        "v": "Een populatie leeft in een steeds kouder wordend gebied. Wat kan er over generaties gebeuren?",
+        "v": "Waarom is variatie binnen een populatie nodig voor evolutie?",
         "o": [
-         "Elk dier krijgt in zijn leven een dikke vacht",
-         "De hele populatie sterft in werkelijkheid altijd meteen uit",
-         "Dieren met een dikkere vacht worden talrijker",
-         "De temperatuur past zich aan de dieren aan"
+         "anders valt er niets te selecteren",
+         "variatie zorgt dat alle dieren even groot worden",
+         "zonder variatie krijgt een soort sneller jongen",
+         "variatie voorkomt dat er mutaties ontstaan"
         ],
-        "c": 2,
-        "d": 3,
-        "u": "Dieren die door variatie een dikkere vacht hebben, overleven de kou beter en geven die eigenschap vaker door.",
+        "c": 0,
+        "d": 2,
+        "s": 0,
+        "u": "Selectie werkt alleen als individuen verschillen in erfelijke eigenschappen.",
         "uo": [
-         "Een individu krijgt niet zomaar erfelijk een dikke vacht.",
-         "De populatie sterft niet per se meteen uit.",
-         "Klopt: dikkere vacht overleeft beter en wordt talrijker.",
-         "De temperatuur past zich niet aan de dieren aan."
+         "Klopt: natuurlijke selectie kan alleen werken als individuen erfelijk verschillen. Zijn ze allemaal gelijk, dan overleeft geen enkele variant beter en verandert de populatie niet.",
+         "Koos je even groot? Variatie betekent juist dat individuen verschillen, ook in grootte. Het gaat erom dat er verschillen zijn om uit te selecteren.",
+         "Koos je sneller jongen? Variatie zegt niets over de snelheid van voortplanting. Het geeft de selectie iets om mee te werken.",
+         "Koos je mutaties voorkomen? Mutaties zijn juist een bron van variatie. Variatie voorkomt ze niet."
         ],
-        "uh": "Beter passende variant wordt over generaties talrijker."
+        "uh": "Waaruit kiest de natuur?"
        },
        {
-        "v": "Waarom is variatie nodig voor natuurlijke selectie?",
+        "v": "Wat laat de meting aan de snavels van de vinken zien?",
         "o": [
-         "Omdat variatie de omgeving van het gebied verandert",
-         "Omdat variatie de dieren doelen geeft",
-         "Omdat variatie soorten laat samensmelten",
-         "Omdat zonder verschillen er niets te selecteren valt"
+         "de jongen krijgen altijd een grotere snavel",
+         "alle vinken hebben precies dezelfde snavel",
+         "de snavels groeien door het eten van zaden",
+         "er is erfelijke variatie in snavelgrootte"
         ],
         "c": 3,
         "d": 3,
-        "u": "Selectie kan alleen werken als er verschillen tussen individuen zijn; zonder variatie is er niets om uit te kiezen.",
+        "s": 0,
+        "u": "Snavels verschillen, en jongen lijken op hun ouders: erfelijke variatie.",
         "uo": [
-         "Variatie verandert de omgeving niet.",
-         "Variatie geeft geen doelen.",
-         "Variatie laat soorten niet samensmelten.",
-         "Klopt: zonder verschillen valt er niets te selecteren."
+         "Koos je altijd groter? Jongen van ouders met een kleine snavel hebben ook een kleine snavel. Ze lijken op hun ouders, niet altijd groter.",
+         "Koos je dezelfde snavel? De metingen lopen van 8 tot 12 mm. Er is juist duidelijke variatie.",
+         "Koos je groeien door zaden eten? De snavelgrootte van jongen lijkt op die van hun ouders, ook als ze hetzelfde eten. Het verschil is dus erfelijk.",
+         "Klopt: de snavels verschillen van 8 tot 12 mm, en ouders met een grote snavel krijgen jongen met een grote snavel. Er is dus erfelijke variatie waarop selectie kan werken."
         ],
-        "uh": "Geen variatie, geen selectie."
+        "uh": "Lijken jongen op hun ouders?",
+        "ctx": "Op een eiland van de Galápagos meten onderzoekers bij 100 vinken van één soort de snaveldiepte. De waarden liggen tussen 8 en 12 mm. Ze meten ook de jongen van deze vinken. Ouders met een diepe snavel krijgen gemiddeld jongen met een diepe snavel, ouders met een ondiepe snavel jongen met een ondiepe snavel."
        },
        {
-        "v": "Wat is het verschil tussen groei en evolutie?",
+        "v": "Wat houdt natuurlijke selectie in?",
         "o": [
-         "Groei is één individu, evolutie een populatie",
-         "Groei is een populatie, evolutie een individu",
-         "De twee begrippen betekenen precies hetzelfde",
-         "Beide gebeuren binnen één leven"
+         "de mens kiest welke dieren zich voortplanten",
+         "dieren kiezen zelf welke eigenschappen ze krijgen",
+         "de best aangepaste krijgen meer jongen",
+         "alle individuen krijgen evenveel nakomelingen"
+        ],
+        "c": 2,
+        "d": 1,
+        "s": 1,
+        "u": "Wie beter is aangepast, overleeft vaker en plant zich meer voort.",
+        "uo": [
+         "Koos je de mens? Dat is kunstmatige selectie, zoals bij het fokken van honden. Bij natuurlijke selectie doet de omgeving de selectie.",
+         "Koos je zelf kiezen? Een dier kan zijn erfelijke eigenschappen niet kiezen. Variatie ontstaat toevallig; de omgeving bepaalt welke varianten het beste overleven.",
+         "Klopt: bij natuurlijke selectie overleven individuen met gunstige erfelijke eigenschappen vaker en krijgen ze meer nakomelingen. Zo komen die eigenschappen in de volgende generatie vaker voor.",
+         "Koos je evenveel nakomelingen? Dan zou er geen selectie zijn. Het gaat juist om verschil in voortplantingssucces."
+        ],
+        "uh": "Wie plant zich het meest voort?"
+       },
+       {
+        "v": "Waarom werden donkere berkenspanners in Engelse industriesteden algemener?",
+        "o": [
+         "de roet maakte de vlinders zelf donker",
+         "ze vielen minder op op zwartgeblakerde bomen",
+         "donkere vlinders konden beter tegen vieze lucht",
+         "de vogels aten alleen nog donkere vlinders"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 1,
+        "u": "Op roetzwarte stammen werden lichte vlinders vaker gezien en gegeten.",
+        "uo": [
+         "Koos je dat roet de vlinders donker maakte? Roet verandert het DNA van de vlinder niet. De donkere vorm bestond al door een mutatie en werd door selectie algemener.",
+         "Klopt: door roet werden de boomstammen donker. Lichte vlinders vielen daar op en werden vaker door vogels gegeten. Donkere vlinders overleefden vaker en gaven het allel voor donker door.",
+         "Koos je vieze lucht? Het voordeel zat in de schutkleur, niet in het verdragen van vieze lucht. Vogels vonden de lichte vlinders makkelijker.",
+         "Koos je dat vogels alleen donkere aten? Dan zouden de donkere juist zeldzamer worden. Vogels aten vooral de lichte, opvallende vlinders."
+        ],
+        "uh": "Wie zagen de vogels het makkelijkst?"
+       },
+       {
+        "v": "Wat verklaart de daling van het aandeel donkere vlinders na 1960?",
+        "o": [
+         "donker viel weer op op lichte stammen",
+         "de donkere vlinders werden zelf weer licht",
+         "er ontstonden geen mutaties meer voor donker",
+         "de vogels hielden op met vlinders eten"
         ],
         "c": 0,
         "d": 3,
-        "u": "Groei gebeurt bij één individu tijdens zijn leven; evolutie is verandering van een populatie over generaties.",
+        "s": 1,
+        "u": "Met schonere lucht werden stammen weer licht: nu had licht de schutkleur.",
         "uo": [
-         "Klopt: groei is een individu, evolutie een populatie.",
-         "Dit is precies omgekeerd.",
-         "Ze verschillen juist.",
-         "Evolutie duurt juist vele generaties."
+         "Klopt: na de schone-luchtwetten werden de stammen weer licht met korstmos. Nu vielen de donkere vlinders op en werden ze vaker gegeten. De selectie draaide om.",
+         "Koos je dat donkere vlinders licht werden? Een vlinder verandert zijn kleur niet tijdens zijn leven. De populatie veranderde doordat lichte vlinders weer meer nakomelingen kregen.",
+         "Koos je geen mutaties meer? De donkere allelen waren er nog. Het aandeel daalde doordat de selectie nu tegen donker werkte.",
+         "Koos je geen vlinders meer eten? Vogels bleven vlinders eten. Het verschil zat in welke vlinders ze het makkelijkst vonden."
         ],
-        "uh": "Groei = individu, evolutie = populatie over generaties."
+        "uh": "Welke kleur hadden de stammen na 1960?",
+        "ctx": "In de omgeving van Manchester was rond 1950 ruim 90% van de berkenspanners donker. Na 1956 kwamen er wetten voor schonere lucht. Het roet verdween en er groeiden weer lichte korstmossen op de stammen. In 2000 was nog maar 10% van de berkenspanners donker."
        },
        {
-        "v": "Hoe wordt een gunstige eigenschap in een populatie steeds algemener?",
+        "v": "Wat bepaalt of een eigenschap gunstig is?",
         "o": [
-         "Doordat de omgeving de nieuwe eigenschap zelf maakt",
-         "Doordat de dragers meer nakomelingen krijgen",
-         "Doordat dieren de eigenschap bewust kiezen",
-         "Doordat de eigenschap in één leven ontstaat"
+         "of de eigenschap dominant of recessief is",
+         "het aantal genen dat ervoor codeert",
+         "hoe groot het organisme uiteindelijk wordt",
+         "de omgeving waarin het organisme leeft"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 1,
+        "u": "Een eigenschap is alleen gunstig in een bepaalde omgeving.",
+        "uo": [
+         "Koos je dominant of recessief? Dominant zegt alleen iets over hoe een allel tot uiting komt, niet of het gunstig is.",
+         "Koos je het aantal genen? Het aantal genen zegt niets over het nut. Een eigenschap is gunstig als hij helpt om in die omgeving te overleven en je voort te planten.",
+         "Koos je de grootte? Groot zijn kan in de ene omgeving gunstig zijn en in een andere juist niet. Het hangt van de omgeving af.",
+         "Klopt: of een eigenschap gunstig is, hangt af van de omgeving. Donkere vleugels zijn gunstig op roetzwarte stammen, maar ongunstig op lichte stammen."
+        ],
+        "uh": "Denk aan de berkenspanner."
+       },
+       {
+        "v": "Waarom werkt het antibioticum na enkele weken niet meer goed?",
+        "o": [
+         "het antibioticum werd zwakker door het bewaren",
+         "de bacteriën werden gewend aan het middel",
+         "resistente bacteriën bleven over",
+         "de patiënt maakte zelf antistoffen tegen het middel"
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 1,
+        "u": "Selectie: resistente bacteriën blijven over en vermenigvuldigen zich.",
+        "uo": [
+         "Koos je zwakker door bewaren? Het middel werkte nog steeds tegen gevoelige bacteriën. Het probleem is dat er nu vooral resistente zijn.",
+         "Koos je gewend raken? Een bacterie went niet aan een antibioticum. De resistentie zat al in een paar bacteriën en werd door selectie algemener.",
+         "Klopt: een paar bacteriën hadden door een mutatie al resistentie. Het antibioticum doodde de gevoelige bacteriën. De resistente bleven over en vermenigvuldigden zich: de populatie werd resistent.",
+         "Koos je antistoffen tegen het middel? Antistoffen richten zich tegen ziekteverwekkers, niet tegen medicijnen. De verandering zit in de bacteriën."
+        ],
+        "uh": "Welke bacteriën bleven over?",
+        "ctx": "Een patiënt krijgt een antibioticum tegen een longontsteking. Na drie dagen voelt hij zich beter en stopt hij met de kuur. Twee weken later wordt hij weer ziek. Het antibioticum werkt nu veel minder goed. In het lab blijkt dat bijna alle bacteriën in zijn longen tegen het middel bestand zijn."
+       },
+       {
+        "v": "Waarom sterft een groot deel van de nakomelingen voordat ze volwassen zijn?",
+        "o": [
+         "ouders zorgen nooit voor hun jongen",
+         "er worden te veel jongen geboren",
+         "alle jongen zijn erfelijk precies gelijk",
+         "jongen hebben geen voedsel nodig"
         ],
         "c": 1,
-        "d": 3,
-        "u": "Individuen met de gunstige eigenschap overleven en planten zich vaker voort, dus geven ze die vaker door.",
+        "d": 1,
+        "s": 2,
+        "u": "Overproductie: er is niet genoeg voedsel en ruimte voor iedereen.",
         "uo": [
-         "De omgeving selecteert, maar maakt de eigenschap niet.",
-         "Klopt: de dragers krijgen meer nakomelingen.",
-         "Er is geen bewuste keuze.",
-         "De eigenschap wordt geërfd, niet in één leven gevormd."
+         "Koos je geen zorg? Veel ouders zorgen wel voor hun jongen. Toch sterven er veel, omdat er meer worden geboren dan de omgeving kan dragen.",
+         "Klopt: de meeste soorten krijgen veel meer nakomelingen dan er in de omgeving kunnen leven. Door gebrek aan voedsel, ruimte en door roofdieren sterft een groot deel.",
+         "Koos je erfelijk gelijk? Jongen verschillen juist van elkaar. Daardoor overleven sommigen beter dan anderen.",
+         "Koos je geen voedsel? Alle jongen hebben voedsel nodig. Juist het tekort aan voedsel zorgt dat veel jongen sterven."
         ],
-        "uh": "Gunstige eigenschap verspreidt zich via meer nakomelingen."
+        "uh": "Denk aan overproductie."
        },
        {
-        "v": "Welke uitspraak over evolutie klopt?",
+        "v": "Waarom telt voor evolutie vooral het aantal nakomelingen, niet hoe lang een dier leeft?",
         "o": [
-         "Evolutie streeft naar een perfect eindresultaat",
-         "Individuen evolueren tijdens hun eigen leven mee",
-         "Evolutie is verandering van populaties over generaties",
-         "Evolutie gebeurt zonder erfelijke eigenschappen"
+         "alleen via nakomelingen gaan allelen naar de volgende generatie",
+         "lang leven is altijd ongunstig voor een soort",
+         "een dier dat oud wordt, verliest zijn allelen",
+         "het aantal nakomelingen bepaalt hoe groot een dier wordt"
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 2,
+        "u": "Evolutie gaat over welke allelen worden doorgegeven.",
+        "uo": [
+         "Klopt: een dier dat lang leeft maar geen jongen krijgt, geeft zijn allelen niet door. Voor de volgende generatie telt hoeveel nakomelingen een individu heeft.",
+         "Koos je lang leven ongunstig? Lang leven kan juist helpen om meer jongen te krijgen. Maar alleen de jongen dragen de allelen verder.",
+         "Koos je allelen verliezen? Een dier verliest zijn allelen niet door ouder te worden. Het geeft ze alleen door via zijn nakomelingen.",
+         "Koos je grootte? Het aantal nakomelingen bepaalt niet hoe groot een dier is. Het bepaalt hoeveel van zijn allelen in de volgende generatie zitten."
+        ],
+        "uh": "Hoe komen allelen in de volgende generatie?"
+       },
+       {
+        "v": "Waarom krijgen pauwen met een grotere staart meer nakomelingen?",
+        "o": [
+         "ze vinden met hun staart meer voedsel",
+         "een grote staart helpt bij het vluchten",
+         "grote staarten maken ze onzichtbaar voor roofdieren",
+         "vrouwtjes kiezen vaker voor hen"
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 2,
+        "u": "Seksuele selectie: vrouwtjes kiezen mannetjes met opvallende kenmerken.",
+        "uo": [
+         "Koos je voedsel vinden? Een staart helpt niet bij het vinden van voedsel. Het voordeel is dat vrouwtjes voor hem kiezen.",
+         "Koos je vluchten? Een grote staart is juist zwaar en hindert bij het vluchten. Het voordeel zit in de partnerkeuze.",
+         "Koos je onzichtbaar? Een grote, opvallende staart maakt een pauw juist beter zichtbaar. Het nadeel bij roofdieren weegt minder zwaar dan het voordeel bij vrouwtjes.",
+         "Klopt: pauwhennen kiezen vaker mannetjes met een grote, opvallende staart. Die mannetjes krijgen meer nakomelingen, ook al vallen ze ook meer op voor roofdieren. Dit heet seksuele selectie."
+        ],
+        "uh": "Wie kiest de partner?",
+        "ctx": "Bij pauwen hebben de mannetjes een grote staart met oogvlekken. In een proef knippen onderzoekers bij een deel van de mannetjes een aantal oogvlekken weg. Die mannetjes paren daarna minder vaak dan mannetjes met een volle staart. Mannetjes met een grote staart worden wel vaker door vossen gegrepen."
+       },
+       {
+        "v": "Waarin verschilt kunstmatige selectie vooral van natuurlijke selectie?",
+        "o": [
+         "kunstmatige selectie werkt niet over meerdere generaties",
+         "alleen bij natuurlijke selectie is er variatie",
+         "wie de selectie uitvoert",
+         "alleen bij kunstmatige selectie worden allelen doorgegeven"
         ],
         "c": 2,
         "d": 2,
-        "u": "Evolutie is de verandering van erfelijke eigenschappen van een populatie over vele generaties, zonder vooropgezet doel.",
+        "s": 2,
+        "u": "Kunstmatig: de mens kiest. Natuurlijk: de omgeving bepaalt.",
         "uo": [
-         "Evolutie streeft geen perfect doel na.",
-         "Individuen evolueren niet tijdens hun leven.",
-         "Klopt: verandering van populaties over generaties.",
-         "Evolutie draait juist om erfelijke eigenschappen."
+         "Koos je niet over meerdere generaties? Fokkers selecteren juist over vele generaties. Zo zijn alle hondenrassen uit de wolf ontstaan.",
+         "Koos je variatie alleen bij natuurlijke selectie? Ook een fokker heeft variatie nodig om uit te kiezen. Zonder variatie kun je niets fokken.",
+         "Klopt: bij kunstmatige selectie kiest de mens welke dieren of planten zich voortplanten, zoals bij hondenrassen. Bij natuurlijke selectie bepaalt de omgeving wie overleeft en zich voortplant.",
+         "Koos je alleen bij kunstmatige? Bij beide vormen worden allelen doorgegeven aan de nakomelingen. Het verschil is wie de keuze maakt."
         ],
-        "uh": "Evolutie = populaties veranderen over generaties, doelloos."
+        "uh": "Wie kiest er?"
        },
        {
-        "v": "Twee eilanden raken gescheiden en de vogels evolueren apart. Wat kan er ontstaan?",
+        "v": "Welke omschrijving past bij evolutie?",
         "o": [
-         "Precies dezelfde vogels als vroeger",
-         "Eén dier dat op beide eilanden groeit",
-         "Een niet-levende factor van het eiland",
-         "Twee nieuwe, verschillende soorten"
+         "de groei van een dier van jong naar volwassen",
+         "erfelijke verandering van een populatie",
+         "het veranderen van één individu tijdens zijn leven",
+         "het ontstaan van leven uit dode materie"
+        ],
+        "c": 1,
+        "d": 1,
+        "s": 3,
+        "u": "Evolutie: de verdeling van allelen in een populatie verandert over generaties.",
+        "uo": [
+         "Koos je de groei van jong naar volwassen? Dat is ontwikkeling van één individu. Evolutie gaat over een populatie over generaties.",
+         "Klopt: evolutie is de verandering in erfelijke eigenschappen van een populatie over vele generaties. Het aandeel van bepaalde allelen neemt toe of af.",
+         "Koos je één individu? Een individu evolueert niet. Zijn DNA blijft zijn hele leven gelijk. Alleen de populatie verandert.",
+         "Koos je leven uit dode materie? Dat gaat over het ontstaan van het eerste leven. Evolutie gaat over hoe bestaande populaties veranderen."
+        ],
+        "uh": "Populatie en generaties."
+       },
+       {
+        "v": "Welke volgorde beschrijft evolutie door natuurlijke selectie?",
+        "o": [
+         "variatie → selectie → meer nakomelingen → verandering",
+         "selectie → mutatie → oefenen → verandering",
+         "verandering → variatie → selectie → mutatie",
+         "oefenen → doorgeven → selectie → variatie"
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 3,
+        "u": "Eerst variatie, dan selectie door de omgeving, dan verschil in nakomelingen.",
+        "uo": [
+         "Klopt: er is erfelijke variatie, de omgeving selecteert, de best aangepaste krijgen meer nakomelingen en zo verandert de populatie over generaties.",
+         "Koos je de reeks met oefenen? Oefenen verandert het DNA niet. Mutatie levert variatie op, die komt dus vóór de selectie.",
+         "Koos je verandering eerst? Verandering van de populatie is het gevolg, niet het begin. Het begint met variatie.",
+         "Koos je oefenen en doorgeven? Wat je door oefenen leert of krijgt, geef je niet door. Variatie moet erfelijk zijn."
+        ],
+        "uh": "Wat moet er eerst zijn?"
+       },
+       {
+        "v": "Wat laat de grafiek van de snavels na de droogte zien?",
+        "o": [
+         "de snaveldiepte bleef in de volgende generatie gelijk",
+         "alle vinken kregen tijdens de droogte een diepere snavel",
+         "de vinken stierven allemaal door de droogte",
+         "de gemiddelde snavel werd dieper"
         ],
         "c": 3,
         "d": 3,
-        "u": "Doordat de gescheiden populaties apart evolueren, kunnen ze zo verschillen dat er twee nieuwe soorten ontstaan.",
+        "s": 3,
+        "u": "Vinken met diepe snavels overleefden vaker; hun jongen erfden die snavels.",
         "uo": [
-         "Ze blijven juist niet precies gelijk.",
-         "Het gaat om populaties, niet één dier.",
-         "Er ontstaat een soort, geen abiotische factor.",
-         "Klopt: er kunnen twee nieuwe soorten ontstaan."
+         "Koos je gelijk gebleven? De jongen hadden gemiddeld een diepere snavel dan de generatie vóór de droogte. Dat is een verandering.",
+         "Koos je dat alle vinken een diepere snavel kregen? Een volwassen vink verandert zijn snavel niet. Het gemiddelde veranderde omdat vinken met ondiepe snavels vaker stierven.",
+         "Koos je dat ze allemaal stierven? Een deel overleefde, vooral de vinken met diepe snavels. Zij kregen de volgende generatie.",
+         "Klopt: tijdens de droogte bleven vooral harde zaden over. Vinken met een diepe snavel konden die kraken en overleefden vaker. Hun jongen hadden ook diepe snavels, dus het gemiddelde ging omhoog."
         ],
-        "uh": "Gescheiden en apart evolueren kan soortvorming geven."
+        "uh": "Wie overleefde de droogte?",
+        "ctx": "In 1977 was het extreem droog op het eiland Daphne Major. Bijna alle kleine, zachte zaden waren op; alleen grote, harde zaden bleven over. Van de 1200 vinken overleefden er 180. De gemiddelde snaveldiepte van de generatie vóór de droogte was 9,2 mm; die van de jongen na de droogte 9,7 mm."
        },
        {
-        "v": "Waarom duurt evolutie meestal heel veel generaties?",
+        "v": "Waarom duurt evolutie bij olifanten veel langer dan bij bacteriën?",
         "o": [
-         "Kleine erfelijke verschuivingen stapelen langzaam op",
-         "Omdat elk dier het bewust heel traag doet",
-         "Omdat de omgeving nooit verandert",
-         "Omdat mutaties helemaal niet bestaan"
+         "bij olifanten is er geen natuurlijke selectie",
+         "olifanten hebben geen DNA dat kan muteren",
+         "langere generatietijd",
+         "bacteriën hebben geen variatie nodig"
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 3,
+        "u": "Evolutie gaat per generatie; bacteriën delen elke twintig minuten.",
+        "uo": [
+         "Koos je geen selectie? Ook bij olifanten is er selectie, bijvoorbeeld door stroperij op dieren met grote slagtanden.",
+         "Koos je geen DNA? Olifanten hebben net als alle organismen DNA dat kan muteren. Het verschil zit in de generatietijd.",
+         "Klopt: evolutie verloopt per generatie. Een bacterie kan zich elke twintig minuten delen, een olifant krijgt pas na vijftien jaar jongen. In dezelfde tijd gaan er bij bacteriën veel meer generaties voorbij.",
+         "Koos je geen variatie? Ook bacteriën hebben variatie nodig om te evolueren. Die ontstaat bij hen vooral door mutaties."
+        ],
+        "uh": "Hoe lang duurt één generatie?"
+       },
+       {
+        "v": "Waarom is de uitspraak \"de giraf strekte zijn nek en kreeg zo een langere nek\" onjuist?",
+        "o": [
+         "giraffen hebben helemaal geen lange nek nodig",
+         "wat een dier tijdens zijn leven verandert, wordt niet erfelijk doorgegeven",
+         "de nek van een giraf is juist korter geworden",
+         "giraffen eten nooit blad van hoge bomen"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 4,
+        "u": "Verworven eigenschappen zijn niet erfelijk.",
+        "uo": [
+         "Koos je geen lange nek nodig? Een lange nek helpt wel om bij hoge bladeren te komen. Het probleem in de uitspraak is het idee dat strekken erfelijk is.",
+         "Klopt: als een giraf zijn nek rekt, verandert zijn DNA niet. Zijn jongen erven dus geen langere nek. Langere nekken werden algemener doordat giraffen met een erfelijk langere nek vaker overleefden.",
+         "Koos je korter geworden? De nek is in de loop van de evolutie juist langer geworden. Het gaat erom hoe dat gebeurde.",
+         "Koos je nooit hoog blad? Giraffen eten juist veel blad van hoge acacia’s. De fout zit in het doorgeven van een verworven eigenschap."
+        ],
+        "uh": "Verandert het DNA door strekken?"
+       },
+       {
+        "v": "Welke uitspraak over deze muggen klopt?",
+        "o": [
+         "het aandeel resistente muggen in de populatie nam toe",
+         "elke mug werd na contact met gif resistent",
+         "de muggen kozen zelf om resistent te worden",
+         "het gif veroorzaakte de mutatie voor resistentie"
         ],
         "c": 0,
         "d": 3,
-        "u": "Evolutie verloopt via kleine verschuivingen in eigenschappen die zich over veel generaties opstapelen.",
+        "s": 4,
+        "u": "De populatie verandert: resistente muggen overleven en planten zich voort.",
         "uo": [
-         "Klopt: kleine verschuivingen stapelen over generaties op.",
-         "Er is geen bewuste sturing door dieren.",
-         "De omgeving verandert juist wel.",
-         "Mutaties bestaan wel en leveren variatie."
+         "Klopt: het gif doodde gevoelige muggen. De paar muggen die al een allel voor resistentie hadden, overleefden en kregen jongen. Zo nam het aandeel resistente muggen per generatie toe.",
+         "Koos je dat elke mug resistent werd? Een mug die gevoelig is, gaat dood aan het gif. Hij wordt niet tijdens zijn leven resistent.",
+         "Koos je zelf kiezen? Muggen kunnen hun erfelijke eigenschappen niet kiezen. De resistentie was er al door een toevallige mutatie.",
+         "Koos je dat het gif de mutatie veroorzaakte? Het gif selecteert, maar maakt geen gerichte mutaties. De resistente muggen waren er al vóór het spuiten."
         ],
-        "uh": "Evolutie = kleine erfelijke verschuivingen over veel generaties."
+        "uh": "Wie veranderde: de mug of de populatie?",
+        "ctx": "In een gebied met malaria werd jarenlang met een insectengif tegen muggen gespoten. In het eerste jaar stierf 99% van de muggen. Onderzoekers vonden in oude, bewaarde muggen van vóór het spuiten al een paar muggen met een allel voor resistentie. Na tien jaar was 80% van de muggen resistent."
+       },
+       {
+        "v": "Waarom kun je niet zeggen dat een individu evolueert?",
+        "o": [
+         "alleen planten kunnen evolueren",
+         "individuen veranderen nooit in hun leven",
+         "een individu kan geen nakomelingen krijgen",
+         "zijn genen blijven gelijk"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 4,
+        "u": "Evolutie is een verandering in de verdeling van allelen over generaties.",
+        "uo": [
+         "Koos je alleen planten? Alle organismen evolueren: planten, dieren, schimmels en bacteriën.",
+         "Koos je nooit veranderen? Een individu verandert wel, bijvoorbeeld door te groeien of te leren. Maar die veranderingen zijn niet erfelijk.",
+         "Koos je geen nakomelingen? De meeste individuen krijgen wel nakomelingen. Via die nakomelingen verandert de populatie, niet het individu zelf.",
+         "Klopt: een individu houdt zijn hele leven dezelfde genen. Evolutie is een verandering in hoe vaak allelen in een populatie voorkomen, en dat zie je pas over generaties."
+        ],
+        "uh": "Wat verandert er bij evolutie?"
+       },
+       {
+        "v": "Wat gebeurt er met het aandeel donkere muizen in de lavapopulatie?",
+        "o": [
+         "het daalt, want uilen eten vooral donkere muizen",
+         "het blijft gelijk omdat muizen hun vacht niet kiezen",
+         "het neemt over generaties toe",
+         "alle lichte muizen worden in één jaar donker"
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 4,
+        "u": "Donkere muizen vallen op donkere lava minder op; zij krijgen meer jongen.",
+        "uo": [
+         "Koos je dalen? Op donkere lava vallen juist de lichte muizen op. Die worden vaker door uilen gegrepen.",
+         "Koos je gelijk blijven? Muizen kiezen hun vacht inderdaad niet. Maar de uilen selecteren: lichte muizen worden vaker gegeten, dus het aandeel verandert wel.",
+         "Klopt: op donkere lava zien uilen lichte muizen makkelijker. Donkere muizen overleven vaker en krijgen meer jongen. Over generaties neemt het aandeel donkere muizen toe.",
+         "Koos je in één jaar donker? Een lichte muis wordt niet donker. De populatie verandert over generaties doordat donkere muizen meer nakomelingen krijgen."
+        ],
+        "uh": "Wie vallen op voor de uil?",
+        "ctx": "In een woestijn in Arizona leven zandmuizen op lichte zandgrond en op een donker lavaveld. Op het zand is 95% van de muizen licht. Op de lava komt sinds kort ook een donkere vorm voor, door een mutatie in één gen. Uilen jagen er ’s nachts op muizen die ze tegen de ondergrond kunnen zien."
+       },
+       {
+        "v": "Wanneer behoren twee groepen dieren tot verschillende soorten?",
+        "o": [
+         "als ze een andere kleur vacht of veren hebben",
+         "als ze samen geen vruchtbare nakomelingen krijgen",
+         "als ze in verschillende landen of werelddelen leven",
+         "als ze ander voedsel eten"
+        ],
+        "c": 1,
+        "d": 1,
+        "s": 5,
+        "u": "Soort: individuen die samen vruchtbare nakomelingen kunnen krijgen.",
+        "uo": [
+         "Koos je kleur? Binnen één soort kunnen individuen heel verschillend gekleurd zijn, zoals hondenrassen. Kleur bepaalt niet of het een andere soort is.",
+         "Klopt: tot dezelfde soort horen individuen die samen vruchtbare nakomelingen kunnen krijgen. Een paard en een ezel krijgen een muilezel, maar die is onvruchtbaar: het zijn twee soorten.",
+         "Koos je verschillende landen? Een vos in Nederland en een vos in Duitsland zijn dezelfde soort. Waar ze wonen, bepaalt niet de soort.",
+         "Koos je ander voedsel? Individuen van één soort kunnen verschillend voedsel eten. Het criterium is vruchtbaar nageslacht."
+        ],
+        "uh": "Denk aan de muilezel."
+       },
+       {
+        "v": "Waarmee begint soortvorming door geografische scheiding?",
+        "o": [
+         "een populatie wordt in tweeën gesplitst",
+         "de twee groepen worden meteen onvruchtbaar met elkaar",
+         "alle dieren krijgen dezelfde mutatie",
+         "de populatie groeit tot de draagkracht"
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 5,
+        "u": "Een barrière (rivier, gebergte, zee) scheidt de populatie; er is geen uitwisseling meer.",
+        "uo": [
+         "Klopt: eerst raakt een populatie gescheiden, bijvoorbeeld door een rivier, gebergte of zee. Daarna is er geen uitwisseling van genen meer tussen de twee groepen.",
+         "Koos je meteen onvruchtbaar? Dat gebeurt pas na vele generaties, als de groepen genoeg verschillen. Het begint met de scheiding.",
+         "Koos je dezelfde mutatie? Mutaties zijn toevallig. In de twee groepen ontstaan juist verschillende mutaties, waardoor ze uit elkaar groeien.",
+         "Koos je de draagkracht? Populatiegroei heeft hier niets mee te maken. Soortvorming begint met een scheiding."
+        ],
+        "uh": "Wat houdt de groepen uit elkaar?"
+       },
+       {
+        "v": "Waarom zijn de eekhoorns aan beide kanten van de canyon twee soorten geworden?",
+        "o": [
+         "ze kozen ervoor om niet meer met elkaar te paren",
+         "ze aten hetzelfde voedsel en werden dus gelijk",
+         "de rivier veranderde hun DNA in één keer",
+         "ze konden niet meer paren en veranderden apart"
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 5,
+        "u": "Gescheiden populaties krijgen eigen mutaties en eigen selectie, en groeien uit elkaar.",
+        "uo": [
+         "Koos je zelf kiezen? Eekhoorns kiezen dit niet. Ze kwamen gewoon niet meer bij elkaar, waardoor er geen genen werden uitgewisseld.",
+         "Koos je hetzelfde voedsel? Dan zouden ze juist meer gelijk blijven. Ze verschillen doordat ze apart evolueerden in verschillende omstandigheden.",
+         "Koos je dat de rivier het DNA veranderde? De rivier scheidt alleen. Het DNA veranderde door toevallige mutaties en selectie over vele generaties.",
+         "Klopt: door de canyon konden de eekhoorns elkaar niet meer bereiken. Aan beide kanten ontstonden andere mutaties en werkte andere selectie. Na vele generaties verschilden ze zoveel dat ze twee soorten werden."
+        ],
+        "uh": "Wat deed de canyon met de uitwisseling van genen?",
+        "ctx": "Aan de zuidkant en de noordkant van de Grand Canyon leven twee soorten eekhoorns die sterk op elkaar lijken. De rivier en de diepe kloof zijn voor eekhoorns onoverbrugbaar. Biologen denken dat beide soorten afstammen van één oorspronkelijke populatie die door het ontstaan van de canyon in tweeën werd gesplitst."
+       },
+       {
+        "v": "Waarom verschillen de cichliden in het Victoriameer zo sterk van elkaar?",
+        "o": [
+         "ze leefden allemaal in hetzelfde stukje meer",
+         "ze stammen elk van een andere voorouder af",
+         "ze pasten zich aan verschillend voedsel aan",
+         "het water veranderde ze allemaal op dezelfde manier"
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 5,
+        "u": "Verschillende niches (voedsel, plek) leiden tot verschillende aanpassingen en soorten.",
+        "uo": [
+         "Koos je hetzelfde stukje meer? Dan zou de selectie voor iedereen gelijk zijn. Ze leefden juist op verschillende plekken met verschillend voedsel.",
+         "Koos je elk een andere voorouder? DNA-onderzoek laat zien dat ze van een paar gemeenschappelijke voorouders afstammen. De verschillen ontstonden later.",
+         "Klopt: de cichliden stammen af van een paar voorouders. Groepen die ander voedsel gingen eten, kregen door selectie andere bekken en tanden. Zo ontstonden honderden soorten, elk met een eigen niche.",
+         "Koos je dezelfde verandering? Dan zouden ze juist op elkaar gaan lijken. Ze verschillen omdat de selectie per groep anders was."
+        ],
+        "uh": "Wat aten de verschillende groepen?",
+        "ctx": "In het Victoriameer in Afrika leven meer dan vijfhonderd soorten cichliden, een groep vissen. Sommige eten algen van stenen, andere eten slakken, insecten of andere vissen. Hun bekken en tanden verschillen sterk. Uit DNA-onderzoek blijkt dat ze allemaal afstammen van een paar voorouders die er minder dan 100.000 jaar geleden leefden."
        }
       ],
       "oe": [
        {
-        "vraag": "Leg in stappen uit hoe natuurlijke selectie werkt.",
-        "antwoord": "Binnen een populatie is er variatie tussen de individuen, die ontstaat door mutaties. Sommige individuen passen door hun eigenschappen beter bij de omgeving. Zij hebben meer kans om te overleven en zich voort te planten, en geven hun erfelijke eigenschappen door. Daardoor komt de gunstige eigenschap in de volgende generaties vaker voor, en verandert de populatie."
+        "bron": "Examenstijl",
+        "ctx": "Op de Bahama’s leven hagedissen op eilanden met hoge bomen. Onderzoekers zetten een groep hagedissen uit op kleine eilanden met alleen lage struiken en dunne takken. Na veertien jaar hebben de hagedissen op de kleine eilanden gemiddeld kortere poten dan hun voorouders. Met kortere poten bewegen hagedissen zich sneller over dunne takken.",
+        "v": "Leg met natuurlijke selectie uit hoe de gemiddelde poot korter is geworden. Gebruik in je antwoord de begrippen variatie en nakomelingen.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Er was erfelijke variatie in pootlengte in de uitgezette groep (1p). Op dunne takken konden hagedissen met kortere poten zich beter bewegen, aan roofdieren ontsnappen en voedsel vangen, dus ze overleefden vaker (1p). Zij kregen meer nakomelingen met korte poten, waardoor de gemiddelde pootlengte in de populatie afnam (1p)."
        },
        {
-        "vraag": "Leg uit waarom het fout is om te zeggen dat een individu zich aanpast om te overleven.",
-        "antwoord": "Een individu verandert zijn erfelijke eigenschappen niet tijdens zijn leven. De variatie is er al door toevallige mutaties. De omgeving selecteert daaruit de individuen die het beste passen. Evolutie heeft geen doel; het is dus fout om te zeggen dat een dier verandert om te overleven. Niet het individu, maar de populatie verandert over generaties."
+        "bron": "Examenstijl",
+        "ctx": "Een leerling schrijft in een verslag: “Door het spuiten met gif werden de ratten in de haven resistent. Ze pasten zich aan het gif aan en gaven dat door aan hun jongen.” Onderzoekers vonden in ratten van vóór het spuiten al een allel voor resistentie bij 1 op de 1000 ratten. Na twintig jaar spuiten had 70% van de ratten dit allel.",
+        "v": "Leg uit wat er fout is aan de uitspraak van de leerling en geef een juiste verklaring voor de toename van het allel.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Fout: een individuele rat past zich niet aan het gif aan; het gif verandert het DNA niet en verworven eigenschappen zijn niet erfelijk (1p). Het allel voor resistentie was al aanwezig door een mutatie (1p). Het gif doodde gevoelige ratten; resistente ratten overleefden, kregen meer nakomelingen en zo nam het aandeel van het allel in de populatie toe (1p)."
        },
        {
-        "vraag": "Leg uit waarom variatie een voorwaarde is voor evolutie.",
-        "antwoord": "Natuurlijke selectie werkt alleen als er verschillen tussen individuen zijn. Als alle individuen precies gelijk zijn, is er niets om uit te selecteren en kan de populatie niet veranderen. De variatie, die door mutaties ontstaat, levert de verschillen waarop de selectie kan werken."
+        "bron": "Examenstijl",
+        "ctx": "Een kuur antibiotica duurt zeven dagen. Na drie dagen zijn de klachten meestal over. Uit metingen blijkt dat na drie dagen nog ongeveer 1% van de bacteriën leeft. Dat zijn vooral bacteriën die iets minder gevoelig zijn voor het middel. Na zeven dagen zijn ook die vrijwel allemaal dood.",
+        "v": "Leg uit waarom het voor het ontstaan van resistentie gevaarlijk is als patiënten na drie dagen stoppen met de kuur.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Na drie dagen leven vooral de minder gevoelige bacteriën nog (1p). Als je dan stopt, kunnen zij zich vermenigvuldigen zonder concurrentie van gevoelige bacteriën (1p). Zo ontstaat een populatie die minder gevoelig is, en kan bij herhaling een resistente populatie ontstaan; de hele kuur doodt ook de minder gevoelige bacteriën (1p)."
        },
        {
-        "vraag": "Leg uit hoe uit één populatie twee nieuwe soorten kunnen ontstaan.",
-        "antwoord": "Als een populatie in twee groepen wordt gescheiden, bijvoorbeeld door een rivier of een zee, kunnen de groepen zich niet meer met elkaar voortplanten. In elke groep werkt de natuurlijke selectie apart, met eigen mutaties en een eigen omgeving. Na veel generaties kunnen de groepen zo verschillen dat het aparte soorten zijn geworden: soortvorming."
+        "bron": "Examenstijl",
+        "ctx": "Aan weerszijden van de Landengte van Panama leven garnalen die sterk op elkaar lijken: in de Grote Oceaan en in de Caribische Zee. Ongeveer drie miljoen jaar geleden ontstond de landengte en werden de zeeën van elkaar gescheiden. Als onderzoekers garnalen uit beide zeeën in één aquarium zetten, paren ze bijna nooit, en de enkele nakomelingen zijn onvruchtbaar.",
+        "v": "Leg uit waarom de garnalen uit beide zeeën als twee soorten worden beschouwd, en beschrijf hoe deze soorten ontstaan zijn.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Ze krijgen samen geen vruchtbare nakomelingen, dus het zijn verschillende soorten (1p). De landengte scheidde één populatie in tweeën, waardoor er geen genen meer werden uitgewisseld (1p). In elke zee ontstonden andere mutaties en werkte andere selectie, zodat ze na vele generaties te veel verschilden om samen vruchtbaar nageslacht te krijgen (1p)."
        },
        {
-        "vraag": "Leg uit wat het verschil is tussen de groei van een individu en de evolutie van een populatie.",
-        "antwoord": "Groei is de toename van één individu tijdens zijn eigen leven; dat is geen evolutie. Evolutie is de verandering van erfelijke eigenschappen van een hele populatie over vele generaties. Groei gebeurt dus binnen één leven bij één individu, evolutie over generaties bij een populatie."
+        "bron": "Examenstijl",
+        "ctx": "Fokkers hebben uit de wilde kool in een paar duizend jaar verschillende groenten gemaakt: spruitjes, bloemkool, broccoli, rode kool en boerenkool. Elke groente is ontstaan door steeds de planten met het grootste deel van één orgaan (bloemknop, blad of zijknop) te gebruiken voor de volgende generatie.",
+        "v": "Leg uit wat het verschil is tussen deze vorm van selectie en natuurlijke selectie, en waarom dit veel sneller ging dan evolutie in de natuur meestal gaat.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Dit is kunstmatige selectie: de mens kiest welke planten zich voortplanten; bij natuurlijke selectie bepaalt de omgeving dat (1p). De fokker kiest elke generatie gericht steeds dezelfde eigenschap (1p). In de natuur is de selectiedruk meestal minder sterk en minder gericht, zodat veranderingen langzamer gaan (1p)."
        }
       ]
      }
