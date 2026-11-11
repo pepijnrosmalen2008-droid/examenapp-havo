@@ -2503,9 +2503,13 @@ var VAKKEN = [
      },
      {
       "id": "C5",
+      "lo": "na.C.5",
+      "gs": 2,
       "naam": "Arbeid, energie en vermogen",
-      "beschrijving": "Arbeid, energie en vermogen berekenen, werken met de wet van behoud van energie, en het verschil tussen arbeid en vermogen.",
+      "beschrijving": "Je rekent met arbeid (W = F · s), kinetische energie en zwaarte-energie, past de wet van behoud van energie toe, ook met warmte door wrijving, rekent met vermogen (P = E / t en P = F · v) en rendement, en houdt energie en vermogen uit elkaar.",
       "ceStatus": "CE",
+      "binas": "35A",
+      "val": "",
       "onderwerpen": [
        "Arbeid: W = F maal s",
        "Energievormen (kinetisch, zwaarte)",
@@ -2514,9 +2518,9 @@ var VAKKEN = [
        "Verschil arbeid en vermogen",
        "Rendement"
       ],
-      "nSv": 25,
+      "nSv": 28,
       "nOe": 5,
-      "nBeg": 12,
+      "nBeg": 11,
       "hasSam": true
      },
      {

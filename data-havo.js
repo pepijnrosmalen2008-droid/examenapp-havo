@@ -96827,9 +96827,13 @@ var VAKKEN = [
      },
      {
       "id": "C5",
+      "lo": "na.C.5",
+      "gs": 2,
       "naam": "Arbeid, energie en vermogen",
-      "beschrijving": "Arbeid, energie en vermogen berekenen, werken met de wet van behoud van energie, en het verschil tussen arbeid en vermogen.",
+      "beschrijving": "Je rekent met arbeid (W = F · s), kinetische energie en zwaarte-energie, past de wet van behoud van energie toe, ook met warmte door wrijving, rekent met vermogen (P = E / t en P = F · v) en rendement, en houdt energie en vermogen uit elkaar.",
       "ceStatus": "CE",
+      "binas": "35A",
+      "val": "",
       "onderwerpen": [
        "Arbeid: W = F maal s",
        "Energievormen (kinetisch, zwaarte)",
@@ -96838,554 +96842,675 @@ var VAKKEN = [
        "Verschil arbeid en vermogen",
        "Rendement"
       ],
-      "sam": "Arbeid, energie en vermogen horen bij elkaar. Arbeid is de energie die een kracht toevoegt door een voorwerp te verplaatsen: W is kracht maal verplaatsing, met eenheid joule. Energie is het vermogen om arbeid te verrichten en heeft dezelfde eenheid, joule. Belangrijke energievormen zijn de kinetische energie (bewegingsenergie, een half maal massa maal snelheid in het kwadraat) en de zwaarte-energie (massa maal g maal hoogte). Volgens de wet van behoud van energie gaat energie nooit verloren; ze verandert alleen van vorm. Vermogen is iets anders dan arbeid. Het vermogen zegt hoe snel je arbeid levert: het is de arbeid gedeeld door de tijd, met eenheid watt. Twee machines kunnen dezelfde arbeid leveren, maar de snelste heeft het grootste vermogen. Verwar arbeid (totale energie in joule) dus niet met vermogen (energie per seconde in watt). Het rendement geeft aan welk deel van de toegevoerde energie nuttig wordt gebruikt.",
+      "sam": "Arbeid W = F · s (alleen de component in de bewegingsrichting; loodrecht 0, tegenwerkend negatief). Ek = ½ · m · v², Ez = m · g · h. Behoud van energie: energie wordt omgezet, warmte meetellen; zonder wrijving v = √(2gh) en h = v²/2g. Vermogen P = E / t in watt; bij constante snelheid P = F · v. J en kWh zijn energie, W en kW vermogen. Rendement η = nuttig / totaal, altijd onder 100%.",
       "begrippen": [
        {
         "t": "Arbeid",
-        "d": "de energie die een kracht toevoegt: W = F maal s; eenheid joule"
-       },
-       {
-        "t": "Energie",
-        "d": "het vermogen om arbeid te verrichten; eenheid joule (J)"
-       },
-       {
-        "t": "Vermogen",
-        "d": "de arbeid per tijd: P = W gedeeld door t; eenheid watt (W)"
+        "d": "Kracht maal verplaatsing in de richting van de kracht: W = F · s, in joule."
        },
        {
         "t": "Joule",
-        "d": "de eenheid van arbeid en energie (J)"
-       },
-       {
-        "t": "Watt",
-        "d": "de eenheid van vermogen (W = J/s)"
+        "d": "Eenheid van energie en arbeid: 1 J = 1 N · m."
        },
        {
         "t": "Kinetische energie",
-        "d": "bewegingsenergie: Ek = een half maal m maal v in het kwadraat"
+        "d": "Bewegingsenergie: Ek = ½ · m · v²."
        },
        {
         "t": "Zwaarte-energie",
-        "d": "energie door hoogte: Ez = m maal g maal h"
+        "d": "Energie door hoogte: Ez = m · g · h."
        },
        {
         "t": "Wet van behoud van energie",
-        "d": "energie gaat niet verloren, maar verandert van vorm"
+        "d": "Energie kan niet ontstaan of verdwijnen, alleen van vorm veranderen."
+       },
+       {
+        "t": "Warmte",
+        "d": "Energie die door wrijving ontstaat en meestal niet meer nuttig te gebruiken is."
+       },
+       {
+        "t": "Vermogen",
+        "d": "Energie per seconde: P = E / t, in watt."
+       },
+       {
+        "t": "Watt",
+        "d": "Eenheid van vermogen: 1 W = 1 J/s."
+       },
+       {
+        "t": "Kilowattuur",
+        "d": "Eenheid van energie: de energie van 1 kW gedurende een uur, 3,6 MJ."
        },
        {
         "t": "Rendement",
-        "d": "het deel van de energie dat nuttig wordt gebruikt, in procenten"
+        "d": "Nuttig deel van de energie: η = E_nuttig / E_totaal."
        },
        {
-        "t": "Kracht",
-        "d": "de kracht die de arbeid levert, in de bewegingsrichting (N)"
-       },
-       {
-        "t": "Verplaatsing",
-        "d": "de afgelegde weg in de richting van de kracht (m)"
-       },
-       {
-        "t": "Energievorm",
-        "d": "een soort energie, zoals beweging, warmte of hoogte"
+        "t": "Nuttige energie",
+        "d": "Het deel van de energie dat doet waarvoor het apparaat bedoeld is."
        }
       ],
       "sv": [
        {
-        "v": "Hoe bereken je arbeid?",
+        "v": "Wanneer verricht een kracht arbeid op een voorwerp?",
         "o": [
-         "Kracht maal verplaatsing",
-         "Kracht gedeeld door tijd",
-         "Massa maal snelheid in dit geval",
-         "Kracht plus verplaatsing"
-        ],
-        "c": 0,
-        "d": 2,
-        "u": "Arbeid is W = F maal s, de kracht maal de verplaatsing in de richting van de kracht.",
-        "uo": [
-         "Klopt: kracht maal verplaatsing.",
-         "Dat is vermogen.",
-         "Dat is impuls.",
-         "Optellen klopt niet."
-        ],
-        "uh": "Arbeid W = F maal s."
-       },
-       {
-        "v": "Wat is de eenheid van arbeid en energie?",
-        "o": [
-         "Watt",
-         "Joule",
-         "Newton",
-         "Kilogram"
-        ],
-        "c": 1,
-        "d": 1,
-        "u": "Arbeid en energie meet je in joule (J).",
-        "uo": [
-         "Watt is vermogen.",
-         "Klopt: joule.",
-         "Newton is kracht.",
-         "Kilogram is massa."
-        ],
-        "uh": "Arbeid en energie in joule."
-       },
-       {
-        "v": "Hoe bereken je vermogen?",
-        "o": [
-         "Kracht maal afstand",
-         "Massa maal g in dit geval",
-         "Arbeid gedeeld door tijd",
-         "Snelheid maal tijd"
+         "alleen als het voorwerp daarbij sneller gaat bewegen",
+         "als je een kracht uitoefent, ook als er niets beweegt",
+         "als het zich verplaatst in de richting van de kracht",
+         "als het voorwerp met een constante snelheid stilstaat"
         ],
         "c": 2,
-        "d": 2,
-        "u": "Vermogen is P = W gedeeld door t, de arbeid per tijd.",
-        "uo": [
-         "Dat is arbeid.",
-         "Dat is zwaartekracht.",
-         "Klopt: arbeid gedeeld door tijd.",
-         "Dat is afstand."
-        ],
-        "uh": "Vermogen P = W gedeeld door t."
-       },
-       {
-        "v": "Wat is de eenheid van vermogen?",
-        "o": [
-         "Joule",
-         "Newton",
-         "Meter",
-         "Watt"
-        ],
-        "c": 3,
         "d": 1,
-        "u": "Vermogen meet je in watt (W), gelijk aan joule per seconde.",
+        "s": 0,
+        "u": "Arbeid: kracht én verplaatsing in die richting.",
         "uo": [
-         "Joule is energie.",
-         "Newton is kracht.",
-         "Meter is afstand.",
-         "Klopt: watt."
+         "Koos je alleen als het sneller gaat? Ook bij een constante snelheid kan een kracht arbeid verrichten, bijvoorbeeld als je een kist met constante snelheid optilt.",
+         "Koos je ook als er niets beweegt? Duw je tegen een muur die niet beweegt, dan word je wel moe, maar natuurkundig verricht je geen arbeid op de muur.",
+         "Klopt: arbeid is kracht maal verplaatsing in de richting van de kracht, W = F · s. Zonder verplaatsing in die richting is de arbeid nul.",
+         "Koos je stilstaan met constante snelheid? Een voorwerp dat stilstaat, verplaatst zich niet. Dan is er geen arbeid, wat de kracht ook is."
         ],
-        "uh": "Vermogen in watt (W)."
+        "uh": "W = F · s, alleen bij verplaatsing."
        },
        {
-        "v": "Wat is het verschil tussen arbeid en vermogen?",
+        "v": "Je duwt een winkelkar 15 m vooruit met een kracht van 40 N. Hoeveel arbeid verricht je?",
         "o": [
-         "Arbeid is energie, vermogen is energie per seconde",
-         "Ze zijn precies hetzelfde",
-         "Arbeid is per seconde, vermogen is totaal",
-         "Beide zijn een kracht van dit voorwerp"
+         "55 J",
+         "600 J",
+         "2,7 J",
+         "0,375 J"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 0,
+        "u": "W = F · s = 40 × 15.",
+        "uo": [
+         "Koos je 55 J? Dan heb je kracht en afstand opgeteld. Arbeid is kracht maal afstand.",
+         "Klopt: W = F · s = 40 N × 15 m = 600 J. Een joule is een newton maal een meter.",
+         "Koos je 2,7 J? Dan heb je 40 door 15 gedeeld. Een grotere afstand geeft juist meer arbeid, dus vermenigvuldig.",
+         "Koos je 0,375 J? Dan heb je 15 door 40 gedeeld. Arbeid groeit met kracht én afstand: W = F · s."
+        ],
+        "uh": "W = F · s."
+       },
+       {
+        "v": "Hoeveel arbeid verricht de zwaartekracht op een tas die je horizontaal over 20 m draagt?",
+        "o": [
+         "0 J",
+         "20 J",
+         "98 J",
+         "1960 J"
         ],
         "c": 0,
+        "d": 2,
+        "s": 0,
+        "u": "Kracht loodrecht op verplaatsing: W = 0.",
+        "uo": [
+         "Klopt: de zwaartekracht wijst omlaag en de verplaatsing is horizontaal. Er is geen verplaatsing in de richting van de kracht, dus de arbeid is nul.",
+         "Koos je 20 J? Dan heb je alleen de afstand als arbeid genomen. Arbeid vraagt een kracht in de richting van de beweging, en die is er hier niet.",
+         "Koos je 98 J? Dat lijkt op de zwaartekracht op een tas van 10 kg. Maar die kracht staat loodrecht op de beweging en verricht dus geen arbeid.",
+         "Koos je 1960 J? Dan heb je zwaartekracht maal afstand gedaan. Dat mag alleen als de verplaatsing in de richting van de kracht is, dus omlaag."
+        ],
+        "uh": "Loodrecht: geen arbeid."
+       },
+       {
+        "v": "Hoeveel arbeid verricht de wrijvingskracht op de skiër tijdens de afdaling?",
+        "o": [
+         "−0,84 kJ",
+         "4,2 kJ",
+         "0 J",
+         "−4,2 kJ"
+        ],
+        "c": 3,
         "d": 3,
-        "u": "Arbeid is de totale energie (joule); vermogen is hoe snel je die levert (joule per seconde, watt).",
+        "s": 0,
+        "u": "Wrijving tegen beweging in: W = −Fw · s.",
         "uo": [
-         "Klopt: arbeid is energie, vermogen is per seconde.",
-         "Ze verschillen juist.",
-         "Dit is precies omgekeerd.",
-         "Geen van beide is een kracht."
+         "Koos je −0,84 kJ? Dan heb je de afstand niet goed gebruikt. Vermenigvuldig de wrijving met de hele afstand van 120 m.",
+         "Koos je +4,2 kJ? De grootte klopt, maar de wrijving werkt tegen de beweging in. Dan is de arbeid negatief: hij neemt energie weg.",
+         "Koos je 0 J? Dat geldt bij een kracht loodrecht op de beweging. De wrijving werkt langs de helling, tegen de beweging in.",
+         "Klopt: de wrijving van 35 N werkt tegen de beweging in over 120 m. W = −35 × 120 = −4200 J = −4,2 kJ. Negatieve arbeid betekent dat de wrijving energie afneemt."
         ],
-        "uh": "Arbeid = energie (J), vermogen = per seconde (W)."
+        "uh": "Tegenwerkende kracht: negatieve arbeid.",
+        "ctx": "Een skiër glijdt 120 m langs een helling naar beneden. Tijdens de afdaling werkt er een gemiddelde wrijvingskracht van 35 N tussen de ski's en de sneeuw, tegen zijn beweging in. Zijn snelheid neemt onderweg toe van 2 m/s tot 14 m/s."
        },
        {
-        "v": "Wat is kinetische energie?",
+        "v": "Hoeveel arbeid verricht het kind op de slee als het met 50 N trekt onder 30° over 40 m?",
         "o": [
-         "Energie door hoogte",
-         "Bewegingsenergie",
-         "Warmte-energie",
-         "Chemische energie"
+         "1,0 kJ",
+         "2,0 · 10³ J",
+         "1,7 kJ",
+         "2,3 kJ"
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 0,
+        "u": "Alleen de horizontale component: F · cos 30° · s.",
+        "uo": [
+         "Koos je 1,0 kJ? Dan heb je de verticale component gebruikt: 50 × sin 30° = 25 N. Die staat loodrecht op de beweging en verricht geen arbeid.",
+         "Koos je 2,0 · 10³ J? Dan heb je de hele kracht genomen: 50 × 40. Omdat het touw schuin staat, werkt maar een deel van de kracht in de bewegingsrichting.",
+         "Klopt: alleen de component in de bewegingsrichting verricht arbeid. Fx = 50 × cos 30° = 43 N; W = 43 × 40 = 1,7 · 10³ J.",
+         "Koos je 2,3 kJ? Dan heb je door cos 30° gedeeld in plaats van ermee vermenigvuldigd. Een component is altijd kleiner dan de kracht zelf."
+        ],
+        "uh": "W = F · cos α · s.",
+        "ctx": "Een kind trekt een slee met een broertje erop 40 m over vlakke sneeuw. Het touw maakt een hoek van 30° met de grond en het kind trekt met een constante kracht van 50 N. De slee beweegt met een vrijwel constante snelheid."
+       },
+       {
+        "v": "Welke formule hoort bij de kinetische energie?",
+        "o": [
+         "Ek = m · g · h",
+         "Ek = ½ · m · v²",
+         "Ek = m · v",
+         "Ek = ½ · m · v · t"
         ],
         "c": 1,
         "d": 1,
-        "u": "Kinetische energie is de energie die een voorwerp heeft door zijn beweging.",
+        "s": 1,
+        "u": "Bewegingsenergie: ½ m v².",
         "uo": [
-         "Dat is zwaarte-energie.",
-         "Klopt: bewegingsenergie.",
-         "Dat is warmte.",
-         "Dat is chemische energie."
+         "Koos je m · g · h? Dat is de zwaarte-energie, die hoort bij hoogte. Bewegingsenergie hangt af van de snelheid.",
+         "Klopt: kinetische energie is bewegingsenergie, Ek = ½ · m · v². De snelheid staat in het kwadraat: twee keer zo snel is vier keer zoveel energie.",
+         "Koos je m · v? Dat is de impuls, geen energie. Bij energie staat de snelheid in het kwadraat, met een factor ½.",
+         "Koos je ½ · m · v · t? Dan zou de energie groeien naarmate je langer rijdt. Kinetische energie hangt alleen af van massa en snelheid, en de snelheid staat in het kwadraat."
         ],
-        "uh": "Kinetische energie = bewegingsenergie."
+        "uh": "Ek = ½ m v²."
        },
        {
-        "v": "Wat is de formule voor kinetische energie?",
+        "v": "Hoe groot is de zwaarte-energie van een boek van 1,5 kg op een plank van 2,0 m hoog?",
         "o": [
-         "m maal g maal h",
-         "F maal s van dit voorwerp",
-         "Een half maal m maal v in het kwadraat",
-         "P maal t"
+         "29 J",
+         "3,0 J",
+         "15 J",
+         "0,75 J"
         ],
-        "c": 2,
+        "c": 0,
         "d": 2,
-        "u": "De kinetische energie is Ek = een half maal massa maal snelheid in het kwadraat.",
+        "s": 1,
+        "u": "Ez = m · g · h = 1,5 × 9,81 × 2,0.",
         "uo": [
-         "Dat is zwaarte-energie.",
-         "Dat is arbeid.",
-         "Klopt: een half maal m maal v kwadraat.",
-         "Dat is arbeid via vermogen."
+         "Klopt: Ez = m · g · h = 1,5 × 9,81 × 2,0 = 29 J, ten opzichte van de vloer.",
+         "Koos je 3,0 J? Dan heb je g vergeten: alleen m · h. Vermenigvuldig ook met 9,81 N/kg.",
+         "Koos je 15 J? Dan heb je de hoogte niet meegenomen, of door 2 gedeeld. Ez = m · g · h, zonder factor ½.",
+         "Koos je 0,75 J? Dan heb je de massa door de hoogte gedeeld. Bij zwaarte-energie vermenigvuldig je massa, g en hoogte."
         ],
-        "uh": "Ek = een half maal m maal v kwadraat."
+        "uh": "Ez = m g h."
        },
        {
-        "v": "Wat is de formule voor zwaarte-energie?",
+        "v": "Een auto rijdt eerst 50 km/h en daarna 100 km/h. Hoeveel keer zo groot wordt zijn kinetische energie?",
         "o": [
-         "Een half maal m maal v kwadraat",
-         "F gedeeld door t",
-         "m gedeeld door v",
-         "m maal g maal h"
+         "√2 keer",
+         "2 keer",
+         "8 keer",
+         "4 keer"
         ],
         "c": 3,
         "d": 2,
-        "u": "De zwaarte-energie is Ez = massa maal g maal hoogte.",
+        "s": 1,
+        "u": "Ek ∝ v²: (2)² = 4.",
         "uo": [
-         "Dat is kinetische energie.",
-         "Dat is vermogen-achtig.",
-         "Dat is onjuist.",
-         "Klopt: m maal g maal h."
+         "Koos je √2 keer? Dan heb je de wortel genomen in plaats van het kwadraat. Snelheid verdubbelen geeft vier keer zoveel energie.",
+         "Koos je 2 keer? Dat geldt als Ek recht evenredig met v was. De snelheid staat in het kwadraat.",
+         "Koos je 8 keer? Dat zou bij v³ horen. De kinetische energie gaat met het kwadraat van de snelheid.",
+         "Klopt: Ek = ½ · m · v². De snelheid wordt twee keer zo groot, dus de energie 2² = 4 keer zo groot. Daarom is de remweg bij 100 km/h vier keer zo lang."
         ],
-        "uh": "Ez = m maal g maal h."
+        "uh": "Kwadraat van de snelheid."
+       },
+       {
+        "v": "Hoe groot is de kinetische energie van de bal op het moment dat hij de keeper bereikt?",
+        "o": [
+         "12 J",
+         "1,4 J",
+         "49 J",
+         "98 J"
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 1,
+        "u": "v = 30 m/s; Ek = ½ × 0,43 × 30².",
+        "uo": [
+         "Koos je 12 J? Dan heb je met 7,5 m/s gerekend of een factor verkeerd. Gebruik v = 15 m/s in het kwadraat.",
+         "Koos je 1,4 J? Dan heb je ½ × 0,43 × 15 gedaan, zonder kwadraat. De snelheid moet in het kwadraat.",
+         "Klopt: Ek = ½ · m · v² = ½ × 0,43 × 15² = ½ × 0,43 × 225 = 48 J, afgerond 49 J. De bal had bij het schieten meer energie; een deel is onderweg door luchtweerstand omgezet in warmte.",
+         "Koos je 98 J? Dan ben je de factor ½ vergeten: 0,43 × 15² = 97 J. De kinetische energie is de helft daarvan."
+        ],
+        "uh": "Ek = ½ m v² met v = 15 m/s.",
+        "ctx": "Een voetballer schiet een bal van 0,43 kg weg. Een snelheidsmeter langs het veld meet dat de bal bij de keeper aankomt met een snelheid van 15 m/s, na onderweg energie te hebben verloren door luchtweerstand."
        },
        {
         "v": "Wat zegt de wet van behoud van energie?",
         "o": [
-         "Energie gaat niet verloren, maar verandert van vorm",
-         "Energie verdwijnt bij wrijving",
-         "Energie ontstaat uit het niets",
-         "Energie is altijd nul van dit voorwerp"
+         "energie raakt na verloop van tijd vanzelf op",
+         "energie wordt alleen omgezet, nooit gemaakt of vernietigd",
+         "energie ontstaat als iets in beweging komt",
+         "energie blijft alleen behouden als er nergens wrijving of luchtweerstand is"
+        ],
+        "c": 1,
+        "d": 1,
+        "s": 2,
+        "u": "Energie wordt omgezet, niet gemaakt of vernietigd.",
+        "uo": [
+         "Koos je vanzelf op? Het lijkt soms zo, maar de energie is dan omgezet, vaak in warmte. Hij is niet verdwenen.",
+         "Klopt: de totale hoeveelheid energie blijft gelijk. Energie gaat alleen over van de ene vorm in de andere, bijvoorbeeld van zwaarte-energie in kinetische energie en warmte.",
+         "Koos je ontstaan bij beweging? De bewegingsenergie komt ergens vandaan, bijvoorbeeld uit chemische energie in je spieren of in brandstof.",
+         "Koos je alleen zonder wrijving? Ook met wrijving blijft de totale energie behouden. Wrijving zet energie om in warmte, die tel je dan mee."
+        ],
+        "uh": "Omzetten, niet maken."
+       },
+       {
+        "v": "Een steen valt zonder luchtweerstand 5,0 m naar beneden. Met welke snelheid komt hij aan?",
+        "o": [
+         "9,9 m/s",
+         "49 m/s",
+         "7,0 m/s",
+         "98,1 m/s"
         ],
         "c": 0,
         "d": 2,
-        "u": "Volgens de wet van behoud van energie blijft de totale energie gelijk; ze verandert alleen van vorm.",
+        "s": 2,
+        "u": "m g h = ½ m v² → v = √(2 g h).",
         "uo": [
-         "Klopt: energie verandert van vorm, gaat niet verloren.",
-         "Bij wrijving wordt het warmte, niet weg.",
-         "Energie ontstaat niet uit niets.",
-         "Energie is niet altijd nul."
+         "Klopt: zwaarte-energie wordt kinetische energie: m · g · h = ½ · m · v². De massa valt weg: v = √(2 × 9,81 × 5,0) = √98 = 9,9 m/s.",
+         "Koos je 49 m/s? Dan heb je g · h = 49 genomen zonder wortel. De snelheid is de wortel van 2 · g · h.",
+         "Koos je 7,0 m/s? Dan heb je √49 genomen en de factor 2 vergeten. Het is √(2 × 9,81 × 5,0).",
+         "Koos je 98,1 m/s? Dat is 2 · g · h zonder wortel. Neem de wortel om de snelheid te krijgen."
         ],
-        "uh": "Energie gaat niet verloren, verandert van vorm."
+        "uh": "v = √(2 g h)."
        },
        {
-        "v": "Een kracht van 20 N verplaatst een voorwerp 3 m. Hoeveel arbeid is dat?",
+        "v": "Een bal wordt met 8,0 m/s recht omhoog gegooid. Hoe hoog komt hij zonder luchtweerstand?",
         "o": [
-         "23 J",
-         "60 J",
-         "6,7 J",
-         "17 J"
-        ],
-        "c": 1,
-        "d": 2,
-        "u": "W = F maal s = 20 maal 3 = 60 J.",
-        "uo": [
-         "23 is de optelling.",
-         "Klopt: 20 maal 3 is 60 J.",
-         "6,7 is verkeerd gedeeld.",
-         "17 is het verschil."
-        ],
-        "uh": "W = F maal s, hier 20 maal 3 = 60 J."
-       },
-       {
-        "v": "Een machine levert 600 J in 3 s. Wat is het vermogen?",
-        "o": [
-         "1800 W",
-         "603 W",
-         "200 W",
-         "2 W"
-        ],
-        "c": 2,
-        "d": 3,
-        "u": "P = W gedeeld door t = 600 gedeeld door 3 = 200 W.",
-        "uo": [
-         "1800 is de vermenigvuldiging.",
-         "603 is de optelling.",
-         "Klopt: 600 gedeeld door 3 is 200 W.",
-         "2 is verkeerd."
-        ],
-        "uh": "P = W gedeeld door t, hier 600 / 3 = 200 W."
-       },
-       {
-        "v": "Twee liften brengen dezelfde last even hoog, maar lift A doet het sneller. Wat geldt?",
-        "o": [
-         "Lift A doet minder arbeid",
-         "Lift A doet meer arbeid in dit geval",
-         "Beide hebben nul vermogen",
-         "Lift A heeft een groter vermogen"
-        ],
-        "c": 3,
-        "d": 3,
-        "u": "Dezelfde arbeid in minder tijd betekent een groter vermogen (P = W gedeeld door t).",
-        "uo": [
-         "De arbeid is juist gelijk.",
-         "De arbeid is gelijk, niet meer.",
-         "Ze hebben wel vermogen.",
-         "Klopt: sneller bij zelfde arbeid = groter vermogen."
-        ],
-        "uh": "Zelfde arbeid, sneller = groter vermogen."
-       },
-       {
-        "v": "Wat gebeurt er met de zwaarte-energie als een bal valt?",
-        "o": [
-         "Ze wordt kinetische energie",
-         "Ze verdwijnt volledig",
-         "Ze wordt groter in dit geval",
-         "Ze blijft gelijk"
-        ],
-        "c": 0,
-        "d": 3,
-        "u": "Bij het vallen zet zwaarte-energie zich om in kinetische energie; de totale energie blijft gelijk.",
-        "uo": [
-         "Klopt: zwaarte-energie wordt bewegingsenergie.",
-         "Ze verdwijnt niet, ze verandert van vorm.",
-         "De zwaarte-energie neemt juist af.",
-         "De zwaarte-energie daalt terwijl de bal valt."
-        ],
-        "uh": "Vallen: zwaarte-energie wordt kinetische energie."
-       },
-       {
-        "v": "Wat is rendement?",
-        "o": [
-         "De totale toegevoerde energie",
-         "Het deel van de energie dat nuttig wordt gebruikt",
-         "De massa maal g van dit voorwerp",
-         "De snelheid per seconde"
-        ],
-        "c": 1,
-        "d": 2,
-        "u": "Het rendement geeft aan welk deel van de toegevoerde energie nuttig wordt gebruikt, in procenten.",
-        "uo": [
-         "Dat is de toegevoerde energie zelf.",
-         "Klopt: het nuttige deel van de energie.",
-         "Dat is een kracht.",
-         "Dat is versnelling."
-        ],
-        "uh": "Rendement = nuttig deel van de energie."
-       },
-       {
-        "v": "Wat heeft meer kinetische energie: een snelle of een langzame auto van dezelfde massa?",
-        "o": [
-         "De langzame auto",
-         "Beide gelijk",
-         "De snelle auto",
-         "Geen van beide"
-        ],
-        "c": 2,
-        "d": 3,
-        "u": "Kinetische energie hangt af van v in het kwadraat, dus de snellere auto heeft veel meer kinetische energie.",
-        "uo": [
-         "De langzame heeft juist minder.",
-         "Ze verschillen in snelheid, dus niet gelijk.",
-         "Klopt: de snelle auto heeft meer.",
-         "Beide bewegen, dus beide hebben energie."
-        ],
-        "uh": "Meer snelheid = veel meer kinetische energie."
-       },
-       {
-        "v": "Waar wordt de energie van wrijving in omgezet?",
-        "o": [
-         "In hoogte",
-         "In massa",
-         "In tijd in dit geval",
-         "In warmte"
+         "32 m",
+         "6,5 m",
+         "0,82 m",
+         "3,3 m"
         ],
         "c": 3,
         "d": 2,
-        "u": "Wrijving zet bewegingsenergie om in warmte; de energie gaat niet verloren.",
+        "s": 2,
+        "u": "½ m v² = m g h → h = v² / 2g.",
         "uo": [
-         "Niet in hoogte.",
-         "Niet in massa.",
-         "Niet in tijd.",
-         "Klopt: in warmte."
+         "Koos je 32 m? Dan heb je v² door 2 gedeeld maar g vergeten. Deel ook door 9,81.",
+         "Koos je 6,5 m? Dan ben je de factor 2 in de noemer vergeten: 64 / 9,81. Gebruik h = v² / (2 · g).",
+         "Koos je 0,82 m? Dan heb je v en niet v² gebruikt: 8,0 / 9,81. De snelheid moet in het kwadraat.",
+         "Klopt: alle kinetische energie wordt zwaarte-energie: h = v² / (2g) = 64 / 19,6 = 3,3 m."
         ],
-        "uh": "Wrijving maakt warmte (geen energie weg)."
+        "uh": "h = v² / 2g."
        },
        {
-        "v": "Wat is energie?",
+        "v": "Hoeveel energie is er door wrijving omgezet in warmte tijdens de rit naar beneden?",
         "o": [
-         "Het vermogen om arbeid te verrichten",
-         "De kracht per seconde",
-         "De massa van een voorwerp",
-         "De temperatuur volgens de berekening hier"
+         "20 kJ",
+         "59 kJ",
+         "39 kJ",
+         "98,1 kJ"
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 2,
+        "u": "Ez begin − Ek eind = warmte.",
+        "uo": [
+         "Koos je 20 kJ? Dan heb je met een te lage snelheid of hoogte gerekend. Ez = 98 kJ en Ek = 58 kJ, het verschil is ongeveer 40 kJ.",
+         "Koos je 59 kJ? Dat is ongeveer de kinetische energie onderaan. De vraag is hoeveel energie er onderweg is \"verdwenen\": het verschil met de zwaarte-energie.",
+         "Klopt: Ez = 400 × 9,81 × 25 = 98 kJ. Onderaan is Ek = ½ × 400 × 17² = 58 kJ. Het verschil, 98 − 58 = 40 ≈ 39 kJ, is door wrijving omgezet in warmte.",
+         "Koos je 98,1 kJ? Dat is de zwaarte-energie bovenaan. Een deel daarvan is kinetische energie geworden; alleen de rest is warmte."
+        ],
+        "uh": "Warmte = verschil.",
+        "ctx": "Een karretje van een achtbaan met inzittenden heeft een massa van 400 kg. Het start vrijwel stil op een hoogte van 25 m en rijdt naar het laagste punt van de baan. Daar meet een sensor een snelheid van 17 m/s. Wrijving en luchtweerstand zijn niet te verwaarlozen."
+       },
+       {
+        "v": "Waarom komt de slinger van een schommel steeds iets minder hoog als niemand duwt?",
+        "o": [
+         "de zwaartekracht wordt bij elke slingering iets kleiner",
+         "bij elke slingering wordt wat energie warmte",
+         "de energie verdwijnt langzaam uit de schommel",
+         "de massa van het kind neemt af door de beweging"
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 2,
+        "u": "Wrijving zet energie om in warmte.",
+        "uo": [
+         "Koos je kleinere zwaartekracht? Die blijft m · g. Het verschil komt doordat energie wordt omgezet in warmte.",
+         "Klopt: door luchtweerstand en wrijving in de ophanging wordt bij elke slingering een beetje energie omgezet in warmte. Er blijft dus steeds minder zwaarte-energie over op het hoogste punt.",
+         "Koos je dat energie verdwijnt? Energie verdwijnt nooit. Hij wordt warmte in de lucht en in de ophanging, en die kun je niet meer gebruiken om te schommelen.",
+         "Koos je kleinere massa? De massa van het kind blijft gelijk. De lagere hoogte komt door energie die wordt omgezet in warmte."
+        ],
+        "uh": "Omgezet in warmte.",
+        "ctx": "Een kind zit op een schommel en wordt één keer flink aangeduwd. Daarna duwt niemand meer en het kind zit stil. Op een filmpje zie je dat de schommel bij elke heen-en-weergang iets minder hoog komt, tot hij na een paar minuten bijna stilhangt."
+       },
+       {
+        "v": "Wat geeft het vermogen van een apparaat aan?",
+        "o": [
+         "hoeveel energie het per seconde omzet",
+         "hoeveel energie het in totaal kan opslaan",
+         "hoe groot de kracht is die het levert",
+         "hoe lang het achter elkaar kan werken"
         ],
         "c": 0,
         "d": 1,
-        "u": "Energie is het vermogen om arbeid te verrichten, met eenheid joule.",
+        "s": 3,
+        "u": "Vermogen is energie per seconde: P = E / t.",
         "uo": [
-         "Klopt: het vermogen om arbeid te verrichten.",
-         "Dat lijkt op vermogen, niet energie.",
-         "Massa is geen energie.",
-         "Temperatuur is geen energie."
+         "Klopt: vermogen is energie per tijd, P = E / t, in watt (joule per seconde). Een lamp van 10 W zet elke seconde 10 J om.",
+         "Koos je totale opslag? Dat is de capaciteit, bijvoorbeeld van een accu in kWh. Vermogen zegt hoe snel energie wordt omgezet.",
+         "Koos je de kracht? Kracht meet je in newton. Vermogen meet je in watt, en het gaat over energie per seconde.",
+         "Koos je hoe lang het werkt? Dat hangt af van de opgeslagen energie en het vermogen samen. Vermogen zelf is energie per seconde."
         ],
-        "uh": "Energie = het vermogen om arbeid te doen (J)."
+        "uh": "Energie per seconde."
        },
        {
-        "v": "Een lamp gebruikt 60 J per seconde. Wat is het vermogen?",
+        "v": "Een waterkoker van 2000 W staat 90 s aan. Hoeveel energie zet hij om?",
         "o": [
-         "60 J",
-         "60 W",
-         "1 W",
-         "3600 W"
-        ],
-        "c": 1,
-        "d": 2,
-        "u": "60 joule per seconde is een vermogen van 60 watt.",
-        "uo": [
-         "Joule is energie, niet vermogen.",
-         "Klopt: 60 J per seconde is 60 W.",
-         "1 W is te weinig.",
-         "3600 zou per uur zijn."
-        ],
-        "uh": "Joule per seconde = watt."
-       },
-       {
-        "v": "Waarom mag je arbeid en vermogen niet verwarren?",
-        "o": [
-         "Ze hebben dezelfde eenheid",
-         "Beide zijn een kracht van dit voorwerp",
-         "Arbeid is totale energie, vermogen is per seconde",
-         "Vermogen is altijd groter"
-        ],
-        "c": 2,
-        "d": 3,
-        "u": "Arbeid is de totale geleverde energie (joule); vermogen is hoe snel je die levert (watt). Verschillende grootheden en eenheden.",
-        "uo": [
-         "Ze hebben juist verschillende eenheden.",
-         "Geen van beide is een kracht.",
-         "Klopt: arbeid totaal, vermogen per seconde.",
-         "Vermogen is niet altijd groter."
-        ],
-        "uh": "Arbeid (J) versus vermogen (W): niet hetzelfde."
-       },
-       {
-        "v": "Een voorwerp ligt hoog op een plank. Welke energievorm heeft het vooral?",
-        "o": [
-         "Kinetische energie",
-         "Warmte",
-         "Geluid",
-         "Zwaarte-energie"
+         "1,8 MJ",
+         "22 J",
+         "2,09 kJ",
+         "180 kJ"
         ],
         "c": 3,
         "d": 2,
-        "u": "Door zijn hoogte heeft het voorwerp zwaarte-energie, ook als het stilligt.",
+        "s": 3,
+        "u": "E = P · t = 2000 × 90.",
         "uo": [
-         "Het beweegt niet, dus geen kinetische energie.",
-         "Er is geen sprake van warmte.",
-         "Er is geen geluid.",
-         "Klopt: zwaarte-energie door de hoogte."
+         "Koos je 1,8 MJ? Dan staat er een nul te veel. 2000 × 90 = 180 000 J = 0,18 MJ.",
+         "Koos je 22 J? Dan heb je 2000 door 90 gedeeld. Energie is vermogen maal tijd.",
+         "Koos je 2,09 kJ? Dan heb je vermogen en tijd opgeteld: 2000 + 90. Vermenigvuldig ze met elkaar.",
+         "Klopt: E = P · t = 2000 W × 90 s = 180 000 J = 180 kJ."
         ],
-        "uh": "Hoog en stil = zwaarte-energie."
+        "uh": "E = P · t."
        },
        {
-        "v": "Bij welke situatie is er geen arbeid, ook al werkt er een kracht?",
+        "v": "Een kraan tilt 500 kg in 20 s 12 m omhoog. Hoe groot is het nuttige vermogen?",
         "o": [
-         "Als het voorwerp niet verplaatst",
-         "Als de kracht heel groot is",
-         "Als het voorwerp snel beweegt",
-         "Als de massa groot is in dit geval"
+         "300 W",
+         "58,9 kW",
+         "2,9 kW",
+         "6,0 kW"
         ],
-        "c": 0,
-        "d": 3,
-        "u": "Arbeid is kracht maal verplaatsing; zonder verplaatsing is de arbeid nul, hoe groot de kracht ook is.",
+        "c": 2,
+        "d": 2,
+        "s": 3,
+        "u": "P = m g h / t.",
         "uo": [
-         "Klopt: geen verplaatsing, geen arbeid.",
-         "Een grote kracht zonder verplaatsing geeft nog geen arbeid.",
-         "Snelle beweging betekent juist wel arbeid.",
-         "Massa bepaalt de arbeid niet direct."
+         "Koos je 300 W? Dan heb je g vergeten: 500 × 12 / 20. Vermenigvuldig ook met 9,81.",
+         "Koos je 58,9 kW? Dat is de arbeid in kJ, niet gedeeld door de tijd. Deel door 20 s voor het vermogen.",
+         "Klopt: W = m · g · h = 500 × 9,81 × 12 = 58,9 kJ. P = W / t = 58 900 / 20 = 2,9 · 10³ W.",
+         "Koos je 6,0 kW? Dan heb je door 10 s gedeeld of een factor 2 te veel. Het tillen duurt 20 s."
         ],
-        "uh": "Geen verplaatsing = geen arbeid."
+        "uh": "P = W / t."
        },
        {
-        "v": "Een pomp met een hoger rendement...",
+        "v": "Hoe groot is het vermogen dat de wielrenner levert tegen de luchtweerstand in?",
         "o": [
-         "verspilt meer energie volgens de berekening hier",
-         "gebruikt een groter deel van de energie nuttig",
-         "levert altijd meer arbeid",
-         "heeft geen energie nodig"
+         "30 W",
+         "330 W",
+         "3,0 kW",
+         "11 W"
         ],
         "c": 1,
         "d": 3,
-        "u": "Een hoger rendement betekent dat een groter deel van de toegevoerde energie nuttig wordt gebruikt en minder als warmte verloren gaat.",
+        "s": 3,
+        "u": "Bij constante snelheid geldt P = F · v.",
         "uo": [
-         "Hoger rendement verspilt juist minder.",
-         "Klopt: meer van de energie wordt nuttig gebruikt.",
-         "Rendement gaat over efficiëntie, niet totale arbeid.",
-         "Ook een efficiënte pomp heeft energie nodig."
+         "Koos je 30 W? Dan heb je alleen de kracht genomen. Vermogen is kracht maal snelheid: P = F · v.",
+         "Klopt: bij een constante snelheid levert hij net zoveel kracht als de weerstand. P = F · v = 30 N × 11 m/s = 330 W.",
+         "Koos je 3,0 kW? Dan heb je met 100 m/s of een factor 10 te veel gerekend. 40 km/h is 11 m/s.",
+         "Koos je 11 W? Dan heb je alleen de snelheid in m/s genomen. Vermenigvuldig met de kracht van 30 N."
         ],
-        "uh": "Hoger rendement = meer nuttig, minder verspild."
+        "uh": "P = F · v.",
+        "ctx": "Een wielrenner rijdt met een constante snelheid van 40 km/h (11 m/s) over een vlakke weg. Luchtweerstand en rolweerstand samen zijn bij die snelheid 30 N. Hij wil weten welk vermogen hij levert, want zijn fietscomputer laat dat niet zien."
        },
        {
-        "v": "Een steen van 2 kg valt. Waar komt de kinetische energie vandaan?",
+        "v": "In welke eenheid druk je vermogen uit?",
         "o": [
-         "Uit warmte in dit geval",
-         "Uit geluid",
-         "Uit de zwaarte-energie",
-         "Uit chemische energie"
+         "watt",
+         "joule",
+         "newton",
+         "kilogram"
         ],
-        "c": 2,
-        "d": 3,
-        "u": "Tijdens de val zet de zwaarte-energie zich om in kinetische energie, volgens behoud van energie.",
+        "c": 0,
+        "d": 1,
+        "s": 4,
+        "u": "Watt is joule per seconde.",
         "uo": [
-         "Niet uit warmte.",
-         "Niet uit geluid.",
-         "Klopt: uit de zwaarte-energie.",
-         "Niet uit chemische energie."
+         "Klopt: vermogen meet je in watt (W). Eén watt is één joule per seconde.",
+         "Koos je joule? Dat is de eenheid van energie en arbeid. Vermogen is energie per seconde, dus joule per seconde: watt.",
+         "Koos je newton? Dat is de eenheid van kracht. Vermogen hangt samen met energie en tijd.",
+         "Koos je kilogram? Dat is de eenheid van massa. Vermogen meet je in watt."
         ],
-        "uh": "Vallen: zwaarte-energie wordt kinetische energie."
+        "uh": "Vermogen meet je in watt."
        },
        {
-        "v": "Welke grootheid vertelt hoe snel energie wordt geleverd?",
+        "v": "Twee leerlingen lopen even zware tassen dezelfde trap op. Anna doet het in 10 s, Bram in 20 s. Wat klopt?",
         "o": [
-         "Arbeid",
-         "Massa",
-         "Verplaatsing",
-         "Vermogen"
+         "ze leveren hetzelfde vermogen, want de trap is gelijk",
+         "Anna verricht meer arbeid en levert meer vermogen",
+         "Bram verricht meer arbeid omdat hij er langer over doet",
+         "evenveel arbeid, maar Anna levert meer vermogen"
         ],
         "c": 3,
         "d": 2,
-        "u": "Het vermogen geeft aan hoeveel arbeid (energie) er per seconde wordt geleverd.",
+        "s": 4,
+        "u": "Zelfde arbeid, andere tijd.",
         "uo": [
-         "Arbeid is de totale energie.",
-         "Massa is hoeveelheid materie.",
-         "Verplaatsing is een afstand.",
-         "Klopt: vermogen is energie per seconde."
+         "Koos je hetzelfde vermogen? Het vermogen hangt ook van de tijd af. Wie sneller is, levert meer vermogen.",
+         "Koos je meer arbeid voor Anna? Arbeid hangt af van kracht en hoogte, niet van de tijd. Alleen het vermogen is bij Anna groter.",
+         "Koos je meer arbeid voor Bram? Langer erover doen kost niet meer arbeid. Wel levert Bram een kleiner vermogen.",
+         "Klopt: de arbeid is m · g · h en hangt niet af van de tijd, dus die is gelijk. Anna doet het in de helft van de tijd en levert daarom twee keer zoveel vermogen."
         ],
-        "uh": "Vermogen = hoe snel energie geleverd wordt."
+        "uh": "P = W / t."
        },
        {
-        "v": "Een kracht duwt een kar 5 m vooruit. Daarna staat de kar 10 s stil. Hoeveel arbeid tijdens het stilstaan?",
+        "v": "Waarom is een accu van 60 kWh niet \"krachtiger\" dan een motor van 150 kW?",
         "o": [
-         "Nul",
-         "400 J",
-         "40 J",
-         "10 J"
+         "een kWh is kleiner dan een kW",
+         "60 is kleiner dan 150, dus de motor is krachtiger",
+         "kWh is energie, kW is vermogen",
+         "kW en kWh zijn hetzelfde, alleen anders geschreven"
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 4,
+        "u": "kWh = energie, kW = vermogen.",
+        "uo": [
+         "Koos je dat een kWh kleiner is? Ze zijn niet te vergelijken: de ene is energie, de andere vermogen. 1 kWh is de energie van 1 kW gedurende een uur.",
+         "Koos je dat 60 kleiner is dan 150? Je vergelijkt dan twee verschillende grootheden. Dat is zoiets als liters met kilometers per uur vergelijken.",
+         "Klopt: 60 kWh is de energie die in de accu past. 150 kW is hoe snel de motor energie kan omzetten. Bij vol vermogen is de accu na 60 / 150 = 0,4 h leeg.",
+         "Koos je dat ze hetzelfde zijn? kWh is kilowatt maal uur, dus energie. kW zonder uur is vermogen."
+        ],
+        "uh": "Energie ≠ vermogen.",
+        "ctx": "Een elektrische auto heeft een accu met een capaciteit van 60 kWh en een motor met een maximaal vermogen van 150 kW. Een leerling zegt dat de motor dus \"sterker\" is dan de accu, omdat 150 meer is dan 60."
+       },
+       {
+        "v": "Wat is het rendement van een apparaat?",
+        "o": [
+         "de totale energie die het apparaat verbruikt",
+         "het nuttige deel van de energie",
+         "de energie die als warmte verloren gaat",
+         "het vermogen gedeeld door de tijd"
+        ],
+        "c": 1,
+        "d": 1,
+        "s": 5,
+        "u": "η = nuttig / totaal.",
+        "uo": [
+         "Koos je de totale energie? Dat is de noemer in de formule. Het rendement zegt welk deel daarvan nuttig is.",
+         "Klopt: het rendement is de nuttige energie gedeeld door de totale toegevoerde energie, vaak in procenten. Het is altijd kleiner dan 100%.",
+         "Koos je de warmte die verloren gaat? Dat is juist het niet-nuttige deel. Het rendement gaat over het nuttige deel.",
+         "Koos je vermogen gedeeld door tijd? Dat is geen zinvolle grootheid. Rendement is nuttig gedeeld door totaal."
+        ],
+        "uh": "Nuttig / totaal."
+       },
+       {
+        "v": "Een led-lamp krijgt 8,0 W toegevoerd en geeft 2,8 W als licht af. Wat is het rendement?",
+        "o": [
+         "35%",
+         "2,9%",
+         "65%",
+         "29%"
         ],
         "c": 0,
-        "d": 3,
-        "u": "Tijdens het stilstaan is er geen verplaatsing, dus is de arbeid nul, ongeacht de tijd.",
+        "d": 2,
+        "s": 5,
+        "u": "η = 2,8 / 8,0.",
         "uo": [
-         "Klopt: geen verplaatsing, dus geen arbeid.",
-         "400 J was de arbeid tijdens het duwen.",
-         "40 is de kracht, niet de arbeid.",
-         "10 is de tijd, niet de arbeid."
+         "Klopt: η = nuttig / totaal = 2,8 / 8,0 = 0,35 = 35%. De rest, 5,2 W, wordt warmte.",
+         "Koos je 2,9%? Dan heb je 8,0 door 2,8 gedeeld en door 100 gedeeld. Deel het nuttige door het totale.",
+         "Koos je 65%? Dat is het deel dat warmte wordt. Het rendement gaat over het nuttige deel: het licht.",
+         "Koos je 29%? Dan heb je 2,8 / 9,6 of iets dergelijks gedaan. Gebruik 2,8 / 8,0."
         ],
-        "uh": "Stilstaan = geen verplaatsing = geen arbeid."
+        "uh": "η = nuttig / totaal."
+       },
+       {
+        "v": "Hoeveel elektrische energie gebruikt de lift om de mensen naar de bovenste verdieping te brengen?",
+        "o": [
+         "5,9 · 10⁵ J",
+         "2,12 · 10⁵ J",
+         "1,3 · 10⁵ J",
+         "3,5 · 10⁵ J"
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 5,
+        "u": "E_el = E_nuttig / η.",
+        "uo": [
+         "Koos je 5,9 · 10⁵ J? Dan heb je door 0,36 of een te klein rendement gedeeld. Deel de nuttige energie door 0,60.",
+         "Koos je 2,12 · 10⁵ J? Dat is de nuttige energie. De motor gebruikt meer, omdat een deel verloren gaat.",
+         "Koos je 1,3 · 10⁵ J? Dan heb je met het rendement vermenigvuldigd in plaats van erdoor gedeeld. De toegevoerde energie is groter dan de nuttige.",
+         "Klopt: de nuttige energie is m · g · h = 900 × 9,81 × 24 = 2,1 · 10⁵ J. Met een rendement van 60%: E_el = 2,12 · 10⁵ / 0,60 = 3,5 · 10⁵ J."
+        ],
+        "uh": "Totaal = nuttig / η.",
+        "ctx": "Een lift brengt acht personen en zichzelf, samen 900 kg, van de begane grond naar de bovenste verdieping, 24 m hoger. De liftmotor en de kabels hebben samen een rendement van 60%. De beheerder wil weten hoeveel elektrische energie een rit kost."
+       },
+       {
+        "v": "Hoeveel arbeid verricht je als je een krat van 12 kg met constante snelheid 1,5 m optilt?",
+        "o": [
+         "8,0 J",
+         "18 J",
+         "177 J",
+         "1,8 kJ"
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 0,
+        "u": "W = F · s met F = m · g.",
+        "uo": [
+         "Koos je 8,0 J? Dan heb je 12 door 1,5 gedeeld. Arbeid is kracht maal afstand, en de kracht is hier m · g.",
+         "Koos je 18 J? Dan heb je de massa als kracht genomen: 12 × 1,5. Reken eerst de zwaartekracht uit met F = m · g.",
+         "Klopt: met constante snelheid is je kracht even groot als de zwaartekracht: 12 × 9,81 = 118 N. W = 118 × 1,5 = 177 J.",
+         "Koos je 1,8 kJ? Dan staat de komma verkeerd, bijvoorbeeld door met 15 m te rekenen. De hoogte is 1,5 m."
+        ],
+        "uh": "Tillen: W = m · g · h."
+       },
+       {
+        "v": "Met welke snelheid gaat de slinger door het laagste punt, als je wrijving verwaarloost?",
+        "o": [
+         "4,0 m/s",
+         "2,0 m/s",
+         "0,40 m/s",
+         "20 m/s"
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 2,
+        "u": "v = √(2 g h) met h = 0,20 m.",
+        "uo": [
+         "Koos je 4,0 m/s? Dan heb je 2 · g · h genomen zonder wortel. De snelheid is de wortel daarvan.",
+         "Klopt: de slinger zakt 0,20 m. Zwaarte-energie wordt kinetische energie: v = √(2 × 9,81 × 0,20) = √3,9 = 2,0 m/s. De massa van het gewicht maakt niet uit.",
+         "Koos je 0,40 m/s? Dan heb je 2 × 0,20 gedaan en g vergeten. Gebruik v = √(2 · g · h).",
+         "Koos je 20 m/s? Dan heb je met een hoogte van 20 m gerekend of de wortel vergeten. Het hoogteverschil is maar 20 cm."
+        ],
+        "uh": "Massa valt weg.",
+        "ctx": "Bij een practicum hangt een gewichtje van 200 g aan een touw van 1,0 m. Een leerling trekt het opzij tot het 20 cm hoger hangt dan in het laagste punt en laat het dan los. Een lichtpoort onderaan meet de snelheid van het gewichtje."
+       },
+       {
+        "v": "Een leerling van 55 kg loopt in 8,0 s een trap van 4,2 m hoog op. Welk vermogen levert hij om omhoog te komen?",
+        "o": [
+         "283 W",
+         "29 W",
+         "2,3 kW",
+         "539 W"
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 3,
+        "u": "P = m g h / t.",
+        "uo": [
+         "Klopt: W = 55 × 9,81 × 4,2 = 2266 J. P = 2266 / 8,0 = 283 W.",
+         "Koos je 29 W? Dan heb je g vergeten: 55 × 4,2 / 8,0. Vermenigvuldig ook met 9,81.",
+         "Koos je 2,3 kW? Dat is ongeveer de arbeid in kJ. Deel die nog door de tijd van 8,0 s.",
+         "Koos je 539 W? Dan heb je de zwaartekracht als vermogen genomen. Vermogen is arbeid per seconde."
+        ],
+        "uh": "Eerst arbeid, dan delen door t."
+       },
+       {
+        "v": "Hoeveel energie uit de benzine gaat er verloren tijdens deze rit?",
+        "o": [
+         "35 MJ",
+         "108 MJ",
+         "27 MJ",
+         "81 MJ"
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 5,
+        "u": "Verlies = totaal × (1 − η).",
+        "uo": [
+         "Koos je 35 MJ? Dan heb je met een verkeerd rendement gerekend. Bij 25% is het verlies 75% van 108 MJ.",
+         "Koos je 108 MJ? Dat is alle energie uit de benzine. Een kwart daarvan wordt wel nuttig gebruikt.",
+         "Koos je 27 MJ? Dat is het nuttige deel. Het verlies is de rest: drie kwart van de energie.",
+         "Klopt: de benzine levert 108 MJ. Met een rendement van 25% is 27 MJ nuttig; de rest, 108 − 27 = 81 MJ, wordt vooral warmte in de motor en de uitlaat."
+        ],
+        "uh": "Verlies = 75%.",
+        "ctx": "Een auto verbruikt op een rit 3,0 liter benzine. Eén liter benzine levert bij verbranding 36 MJ. De motor heeft een rendement van 25%: een kwart van de energie wordt gebruikt om de auto te laten rijden."
        }
       ],
       "oe": [
        {
-        "vraag": "Leg het verschil uit tussen arbeid en vermogen, met van elk de eenheid.",
-        "antwoord": "Arbeid is de energie die een kracht toevoegt door een voorwerp te verplaatsen: W = F maal s, met eenheid joule (J). Vermogen is hoe snel die arbeid wordt geleverd: P = W gedeeld door t, met eenheid watt (W), gelijk aan joule per seconde. Twee machines kunnen dezelfde arbeid leveren, maar de snelste heeft het grootste vermogen."
+        "bron": "Examenstijl",
+        "ctx": "Een bouwvakker trekt met een katrol een emmer cement van 25 kg met constante snelheid 8,0 m omhoog naar een steiger. Dat duurt 16 s. Daarna draagt hij de emmer 10 m horizontaal over de steiger.",
+        "v": "Bereken de arbeid bij het omhoogtrekken en het vermogen dat hij daarbij levert, en leg uit hoeveel arbeid hij op de emmer verricht tijdens het horizontaal dragen.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "W = m · g · h = 25 × 9,81 × 8,0 = 1,96 · 10³ J (1p). P = W / t = 1962 / 16 = 123 W (1p). Bij horizontaal dragen staat zijn kracht omhoog loodrecht op de verplaatsing: W = 0 J (1p)."
        },
        {
-        "vraag": "Een kracht van 25 N verplaatst een kist 4 m. Bereken de arbeid.",
-        "antwoord": "De arbeid is W = F maal s = 25 maal 4 = 100 J. De kracht levert dus 100 joule arbeid."
+        "bron": "Examenstijl",
+        "ctx": "Een skispringer van 65 kg start stil boven aan een schans. Het hoogteverschil tot de afzet is 45 m. Bij de afzet heeft hij een snelheid van 25 m/s.",
+        "v": "Bereken de snelheid die hij zonder wrijving zou hebben en hoeveel energie door wrijving en luchtweerstand is omgezet in warmte.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Zonder wrijving: v = √(2 × 9,81 × 45) = 29,7 m/s (1p). Ez = 65 × 9,81 × 45 = 28,7 kJ; Ek = ½ × 65 × 25² = 20,3 kJ (1p). Warmte = 28,7 − 20,3 = 8,4 kJ (1p)."
        },
        {
-        "vraag": "Leg met de wet van behoud van energie uit wat er met de energie gebeurt als een bal van een hoogte valt.",
-        "antwoord": "Bovenaan heeft de bal zwaarte-energie (m maal g maal h). Tijdens het vallen neemt de hoogte af en de snelheid toe, waardoor de zwaarte-energie zich omzet in kinetische energie (een half maal m maal v kwadraat). De totale energie blijft gelijk: er gaat geen energie verloren, ze verandert alleen van vorm."
+        "bron": "Examenstijl",
+        "ctx": "Een elektrische auto van 1600 kg trekt op van 0 tot 100 km/h in 7,0 s. De accu levert tijdens het optrekken een gemiddeld vermogen van 150 kW. Wrijving mag je in deze opgave verwaarlozen.",
+        "v": "Bereken de kinetische energie bij 100 km/h, de energie die de accu levert en het rendement van de aandrijving.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "v = 27,8 m/s; Ek = ½ × 1600 × 27,8² = 6,17 · 10⁵ J (1p). E_accu = P · t = 150 000 × 7,0 = 1,05 · 10⁶ J (1p). η = 6,17 · 10⁵ / 1,05 · 10⁶ = 0,59 = 59% (1p)."
        },
        {
-        "vraag": "Een motor levert 900 J arbeid in 3 s. Bereken het vermogen.",
-        "antwoord": "Het vermogen is P = W gedeeld door t = 900 gedeeld door 3 = 300 W. De motor heeft dus een vermogen van 300 watt."
+        "bron": "Examenstijl",
+        "ctx": "Een gezin gebruikt een elektrische boiler van 2,4 kW. Die staat elke dag gemiddeld 1,5 uur aan om water te verwarmen. Een kWh kost 0,30 euro. Een buurman zegt dat een boiler van 1,2 kW goedkoper is, omdat hij minder vermogen heeft.",
+        "v": "Bereken de energie per dag in kWh en de kosten per jaar, en leg uit of de buurman gelijk heeft als het gezin even veel warm water gebruikt.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "E = P · t = 2,4 × 1,5 = 3,6 kWh per dag (1p). Per jaar 3,6 × 365 × 0,30 = 394 euro (1p). De buurman heeft geen gelijk: voor dezelfde hoeveelheid warm water is dezelfde energie nodig; een boiler van 1,2 kW staat dan twee keer zo lang aan (1p)."
        },
        {
-        "vraag": "Leg uit waarom er geen arbeid wordt verricht als je een zware koffer stil vasthoudt, ook al kost het je moeite.",
-        "antwoord": "Arbeid in natuurkundige zin is kracht maal verplaatsing. Als je de koffer stil vasthoudt, is er geen verplaatsing. Daardoor is de arbeid nul, hoe groot de kracht ook is die je levert. Je spieren gebruiken wel energie, maar er wordt geen arbeid aan de koffer verricht."
+        "bron": "Examenstijl",
+        "ctx": "Een waterkrachtcentrale laat elke seconde 30 m³ water (30 000 kg) 20 m naar beneden stromen door turbines. De centrale levert een elektrisch vermogen van 4,5 MW aan het net.",
+        "v": "Bereken de zwaarte-energie die het water elke seconde verliest en het rendement van de centrale.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Per seconde: Ez = 30 000 × 9,81 × 20 = 5,9 · 10⁶ J, dus een vermogen van 5,9 MW (1p). η = 4,5 / 5,9 = 0,76 (1p) = 76% (1p)."
        }
       ]
      },
