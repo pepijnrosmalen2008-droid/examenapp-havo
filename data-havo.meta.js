@@ -2525,20 +2525,24 @@ var VAKKEN = [
      },
      {
       "id": "C6",
+      "lo": "na.C.6",
+      "gs": 2,
       "naam": "Warmtetransport",
-      "beschrijving": "De drie vormen van warmtetransport (geleiding, stroming en straling) onderscheiden en herkennen, en weten hoe isolatie werkt.",
+      "beschrijving": "Je onderscheidt de drie vormen van warmtetransport (geleiding, stroming en straling) en herkent ze in de praktijk, weet welke stoffen goed geleiden en welke isoleren, rekent met Q = c · m · ΔT en legt uit hoe isolatie, dubbel glas en een thermosfles warmteverlies afremmen.",
       "ceStatus": "CE",
+      "binas": "8–12",
+      "val": "",
       "onderwerpen": [
        "Geleiding: warmte door een vaste stof",
        "Stroming: warmte met een bewegend gas of vloeistof",
        "Straling: warmte zonder tussenstof",
        "Geleiders en isolatoren",
-       "De drie vormen onderscheiden",
+       "Warmte en temperatuur: Q = c · m · ΔT",
        "Isolatie in de praktijk"
       ],
-      "nSv": 25,
+      "nSv": 28,
       "nOe": 5,
-      "nBeg": 12,
+      "nBeg": 11,
       "hasSam": true
      }
     ]

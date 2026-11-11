@@ -5,7 +5,7 @@
 Volledige beschrijving (functies, inhoud per niveau, prijs, wat Slagio niet is): https://slagio.nl/llms-full.txt
 
 ## In het kort
-- 12 vakken havo, 16 vakken vwo, 12 vakken vmbo; 26.787 oefenvragen en 4.346 begrippen.
+- 12 vakken havo, 16 vakken vwo, 12 vakken vmbo; 26.790 oefenvragen en 4.346 begrippen.
 - Adaptief oefenen: na een fout een vraag over hetzelfde onderwerp, een niveau makkelijker; uitleg bij elk fout antwoord.
 - Foutenboek en herhalen met gespreide herhaling, beheersing per leerdoel, studieplan tot het examen.
 - Examens met klok, proefexamens in examenstijl met modelantwoord en puntenverdeling, archief met officiële oude examens.
@@ -101,7 +101,7 @@ Volledige beschrijving (functies, inhoud per niveau, prijs, wat Slagio niet is):
 - [Krachten samenstellen en ontbinden (Natuurkunde HAVO)](https://slagio.nl/leren/havo/natuurkunde/krachten-samenstellen-en-ontbinden.html): Je stelt krachten samen tot een resulterende kracht: op één lijn door optellen en aftrekken, loodrecht met de stelling van Pythagoras en onder een…
 - [De wetten van Newton (Natuurkunde HAVO)](https://slagio.nl/leren/havo/natuurkunde/de-wetten-van-newton.html): Je past de drie wetten van Newton toe: traagheid bij een resulterende kracht van nul, Fres = m · a voor de versnelling en actie is reactie tussen twee…
 - [Arbeid, energie en vermogen (Natuurkunde HAVO)](https://slagio.nl/leren/havo/natuurkunde/arbeid-energie-en-vermogen.html): Je rekent met arbeid (W = F · s), kinetische energie en zwaarte-energie, past de wet van behoud van energie toe, ook met warmte door wrijving, rekent met…
-- [Warmtetransport (Natuurkunde HAVO)](https://slagio.nl/leren/havo/natuurkunde/warmtetransport.html): De drie vormen van warmtetransport (geleiding, stroming en straling) onderscheiden en herkennen, en weten hoe isolatie werkt.
+- [Warmtetransport (Natuurkunde HAVO)](https://slagio.nl/leren/havo/natuurkunde/warmtetransport.html): Je onderscheidt de drie vormen van warmtetransport (geleiding, stroming en straling) en herkent ze in de praktijk, weet welke stoffen goed geleiden en welke…
 - [Stroom, spanning en lading (Natuurkunde HAVO)](https://slagio.nl/leren/havo/natuurkunde/stroom-spanning-en-lading.html): Begrijpen wat elektrische stroom, spanning en lading zijn, in welke eenheden je ze meet en hoe je ze meet met een ampèremeter en voltmeter.
 - [Weerstand en de wet van Ohm (Natuurkunde HAVO)](https://slagio.nl/leren/havo/natuurkunde/weerstand-en-de-wet-van-ohm.html): Weten wat weerstand is, rekenen met de wet van Ohm (U = I x R) en het verschil begrijpen tussen ohmse en niet-ohmse onderdelen.
 - [Serie- en parallelschakeling (Natuurkunde HAVO)](https://slagio.nl/leren/havo/natuurkunde/serie-en-parallelschakeling.html): Het verschil begrijpen tussen serie- en parallelschakelingen en weten hoe stroom, spanning en weerstand zich in elke schakeling gedragen.
