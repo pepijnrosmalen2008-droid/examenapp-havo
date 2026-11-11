@@ -1496,20 +1496,24 @@ var VAKKEN = [
      },
      {
       "id": "P3",
+      "lo": "bi.P.3",
+      "gs": 2,
       "naam": "Populatiedynamiek en draagkracht",
-      "beschrijving": "Hoe een populatie verandert door geboorte, sterfte en trek, exponentiele groei, en de rol van draagkracht bij het begrenzen van de groei (S-kromme).",
-      "ceStatus": "CE",
+      "beschrijving": "Je berekent populatiedichtheid en schat populaties met vangen en terugvangen, rekent met geboorte, sterfte, immigratie en emigratie, herkent exponentiële groei en de S-kromme, legt draagkracht en remmende factoren uit en verklaart de wisselwerking tussen predator en prooi.",
+      "ceStatus": "CE+SE",
+      "binas": "",
+      "val": "",
       "onderwerpen": [
-       "Populatie en populatiegrootte",
-       "Geboorte, sterfte, immigratie, emigratie",
-       "Exponentiele groei",
-       "Draagkracht als grens",
+       "Populatiegrootte en dichtheid",
+       "Geboorte, sterfte, immigratie en emigratie",
+       "Exponentiële groei",
+       "Draagkracht en de S-kromme",
        "Remmende factoren",
-       "Grafiek van populatiegroei (S-kromme)"
+       "Predator en prooi"
       ],
-      "nSv": 25,
+      "nSv": 26,
       "nOe": 5,
-      "nBeg": 12,
+      "nBeg": 14,
       "hasSam": true
      },
      {
