@@ -1052,9 +1052,13 @@ var VAKKEN = [
      },
      {
       "id": "A5",
+      "lo": "bi.A.5",
+      "gs": 2,
       "naam": "Biologisch onderzoeksgereedschap",
-      "beschrijving": "Het gebruik van een determineertabel om een soort op naam te brengen, en de functie van een preparaat bij microscopisch onderzoek.",
-      "ceStatus": "CE",
+      "beschrijving": "Je brengt planten en dieren op naam met een determineertabel, kiest bij elke stap de juiste tak, maakt een goed preparaat met objectglas en dekglas, kent de onderdelen van de microscoop en berekent de totale vergroting en de werkelijke grootte van een cel.",
+      "ceStatus": "CE+SE",
+      "binas": "",
+      "val": "",
       "onderwerpen": [
        "Determineren: een soort op naam brengen",
        "Determineertabel met keuzes op kenmerken",
@@ -1063,7 +1067,7 @@ var VAKKEN = [
        "Microscoop en vergroting",
        "Objectglas en dekglas"
       ],
-      "nSv": 25,
+      "nSv": 27,
       "nOe": 5,
       "nBeg": 12,
       "hasSam": true
