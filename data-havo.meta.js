@@ -1291,20 +1291,24 @@ var VAKKEN = [
      },
      {
       "id": "O2",
+      "lo": "bi.O.2",
+      "gs": 2,
       "naam": "Hormonale regulatie",
-      "beschrijving": "Hormonen als trage, langdurige regeling via het bloed, met insuline, glucagon en adrenaline en de regeling van de bloedsuiker.",
-      "ceStatus": "CE",
+      "beschrijving": "Je beschrijft hoe hormonen via het bloed werken op doelorganen met receptoren, legt de regeling van de bloedsuikerspiegel met insuline en glucagon uit, verklaart de oorzaken en gevolgen van diabetes, beschrijft de werking van adrenaline en legt de negatieve terugkoppeling tussen hypofyse en schildklier uit.",
+      "ceStatus": "CE+SE",
+      "binas": "",
+      "val": "",
       "onderwerpen": [
-       "Hormoon en hormoonklier",
-       "Regeling via het bloed (traag en langdurig)",
+       "Hormonen en hormoonklieren",
+       "Doelorgaan en receptoren",
        "Insuline en glucagon",
-       "Bloedsuikerregeling en glycogeen",
-       "Adrenaline (vecht of vlucht)",
-       "Doelorgaan en receptoren"
+       "Diabetes",
+       "Adrenaline",
+       "Hypofyse en schildklier"
       ],
-      "nSv": 25,
+      "nSv": 27,
       "nOe": 5,
-      "nBeg": 12,
+      "nBeg": 15,
       "hasSam": true
      },
      {
