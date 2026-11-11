@@ -1,0 +1,680 @@
+{
+ "id": "O3",
+ "lo": "bi.O.3",
+ "gs": 2,
+ "naam": "Homeostase en antagonisme",
+ "beschrijving": "Je legt uit wat homeostase is en waarom die nodig is, beschrijft een regelkring met receptor, regelcentrum, effector en normwaarde, herkent negatieve terugkoppeling en antagonisme, en verklaart de regeling van de lichaamstemperatuur en de waterhuishouding met ADH.",
+ "ceStatus": "CE+SE",
+ "binas": "",
+ "val": "",
+ "onderwerpen": [
+  "Homeostase",
+  "De regelkring",
+  "Negatieve terugkoppeling",
+  "Antagonisme",
+  "Temperatuurregeling",
+  "Waterhuishouding en ADH"
+ ],
+ "sam": "Homeostase = inwendig milieu constant (temperatuur, glucose, water); nodig voor enzymen. Regelkring: receptor meet, regelcentrum (hypothalamus) vergelijkt met normwaarde, effector voert uit. Koorts = hogere normwaarde. Negatieve terugkoppeling: afwijking tegengewerkt (glucose, thermostaat); positieve versterkt (weeën). Antagonisme: insuline/glucagon, sympathisch/parasympathisch. Warm: vaten wijd, zweten; koud: vaten nauw, kippenvel, rillen. ADH (hypofyse): nieren meer water terug; veel drinken = minder ADH; alcohol remt ADH.",
+ "begrippen": [
+  {
+   "t": "Homeostase",
+   "d": "Het constant houden van het inwendig milieu, zoals temperatuur, glucose- en watergehalte."
+  },
+  {
+   "t": "Inwendig milieu",
+   "d": "De vloeistof rond de cellen: bloed en weefselvocht."
+  },
+  {
+   "t": "Normwaarde",
+   "d": "De gewenste waarde waarmee het regelcentrum de gemeten waarde vergelijkt."
+  },
+  {
+   "t": "Regelkring",
+   "d": "Kring van receptor, regelcentrum en effector die een waarde constant houdt."
+  },
+  {
+   "t": "Receptor",
+   "d": "Zintuigcel of zintuig dat een waarde meet, zoals de temperatuur."
+  },
+  {
+   "t": "Regelcentrum",
+   "d": "Deel dat de gemeten waarde vergelijkt met de normwaarde en de effector aanstuurt."
+  },
+  {
+   "t": "Effector",
+   "d": "Orgaan dat de reactie uitvoert, zoals een spier of klier."
+  },
+  {
+   "t": "Negatieve terugkoppeling",
+   "d": "Regeling waarbij een afwijking van de normwaarde wordt tegengewerkt."
+  },
+  {
+   "t": "Positieve terugkoppeling",
+   "d": "Regeling waarbij een verandering steeds verder wordt versterkt, zoals bij weeën."
+  },
+  {
+   "t": "Antagonisme",
+   "d": "Twee hormonen of zenuwen hebben een tegengesteld effect op dezelfde waarde."
+  },
+  {
+   "t": "Hypothalamus",
+   "d": "Deel van de hersenen dat het regelcentrum is voor temperatuur en water."
+  },
+  {
+   "t": "Zweetklier",
+   "d": "Klier in de huid die zweet maakt; verdampend zweet koelt het lichaam af."
+  },
+  {
+   "t": "Koorts",
+   "d": "Verhoging van de lichaamstemperatuur doordat de normwaarde in de hypothalamus hoger is gezet."
+  },
+  {
+   "t": "ADH",
+   "d": "Hormoon uit de hypofyse dat de nieren meer water laat terugnemen."
+  }
+ ],
+ "sv": [
+  {
+   "v": "Welke beschrijving past bij homeostase?",
+   "o": [
+    "het opnemen van zo veel mogelijk voedingsstoffen tegelijk",
+    "het steeds sneller laten stijgen van de lichaamstemperatuur",
+    "het constant houden van het inwendig milieu",
+    "het aanpassen van het lichaam aan een nieuw klimaat via evolutie"
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 0,
+   "u": "Homeostase = het binnen nauwe grenzen houden van temperatuur, glucose, water en zout.",
+   "uo": [
+    "Koos je zo veel mogelijk opnemen? Het lichaam neemt op wat nodig is en houdt de gehalten in het bloed constant. Te veel is ook een verstoring.",
+    "Koos je steeds stijgen? Homeostase draait juist om stabiel houden. Een steeds stijgende temperatuur is gevaarlijk.",
+    "Klopt: bij homeostase houdt het lichaam waarden als temperatuur, glucosegehalte en watergehalte binnen nauwe grenzen, ook als de omgeving verandert.",
+    "Koos je evolutie? Evolutie verandert een soort over vele generaties. Homeostase gebeurt binnen één organisme, van minuut tot minuut."
+   ],
+   "uh": "Constant houden."
+  },
+  {
+   "v": "Waarom is een constante lichaamstemperatuur van ongeveer 37 °C belangrijk?",
+   "o": [
+    "bij 37 °C kan het bloed geen zuurstof meer vervoeren",
+    "de enzymen in de cellen werken het best bij die temperatuur",
+    "bij een andere temperatuur kunnen spieren niet meer samentrekken, ook niet een beetje",
+    "alleen bij precies 37 °C ontstaan er nieuwe cellen in het lichaam"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 0,
+   "u": "Enzymen hebben een optimum; buiten dat bereik werken ze slechter of denatureren ze.",
+   "uo": [
+    "Koos je geen zuurstofvervoer? Bij 37 °C vervoert het bloed juist goed zuurstof. Het gaat om de werking van enzymen.",
+    "Klopt: bijna alle processen in de cel worden door enzymen versneld. Die werken het best rond 37 °C; bij veel hogere temperaturen denatureren ze.",
+    "Koos je spieren die helemaal niet meer werken? Spieren werken bij een iets andere temperatuur nog wel, alleen minder goed, omdat de enzymen minder goed werken.",
+    "Koos je nieuwe cellen alleen bij 37 °C? Celdeling gaat ook bij iets andere temperaturen door. De reden is de werking van de enzymen."
+   ],
+   "uh": "Denk aan het optimum van enzymen."
+  },
+  {
+   "v": "Waarom is een lichaamstemperatuur van 42 °C levensgevaarlijk?",
+   "o": [
+    "eiwitten zoals enzymen gaan denatureren",
+    "het bloed gaat koken in de bloedvaten",
+    "de cellen nemen te veel water op en barsten",
+    "het lichaam maakt dan geen ATP meer aan, omdat er geen glucose meer is"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 0,
+   "u": "Bij hoge temperatuur verliezen eiwitten blijvend hun vorm.",
+   "uo": [
+    "Klopt: bij zo een hoge temperatuur verliezen enzymen en andere eiwitten hun vorm (denaturatie). Ze werken dan niet meer, en dat is blijvend.",
+    "Koos je koken? Bloed kookt pas rond 100 °C. Het probleem bij 42 °C zit in de eiwitten.",
+    "Koos je cellen die barsten? Temperatuur verandert de osmose nauwelijks. Het gevaar zit in de denaturatie van eiwitten.",
+    "Koos je geen glucose meer? Er is genoeg glucose; het probleem is dat de enzymen die het moeten verwerken kapotgaan."
+   ],
+   "uh": "Wat gebeurt er met eiwitten bij hitte?",
+   "ctx": "Bij een zonnesteek kan de lichaamstemperatuur oplopen tot boven 41 °C. Artsen koelen de patiënt zo snel mogelijk af met koud water en ijszakken. Ook als de temperatuur weer normaal is, kunnen er blijvende schade aan hersenen, lever en nieren ontstaan."
+  },
+  {
+   "v": "Welke waarde wordt niet door homeostase constant gehouden?",
+   "o": [
+    "de lichaamstemperatuur",
+    "het glucosegehalte van het bloed",
+    "het watergehalte van het bloed",
+    "de lichaamslengte"
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 0,
+   "u": "Homeostase regelt het inwendig milieu: temperatuur, glucose, water, zout, pH.",
+   "uo": [
+    "Koos je de lichaamstemperatuur? Die wordt rond 37 °C gehouden door zweten, rillen en de bloedvaten in de huid.",
+    "Koos je het glucosegehalte? Dat wordt met insuline en glucagon tussen ongeveer 4 en 8 mmol/L gehouden.",
+    "Koos je het watergehalte? Dat regelen de nieren met behulp van het hormoon ADH.",
+    "Klopt: je lengte verandert door groei en wordt niet rond een vaste waarde geregeld. Glucose, water en temperatuur wel."
+   ],
+   "uh": "Wat groeit gewoon door?"
+  },
+  {
+   "v": "Welk deel van een regelkring meet een verandering?",
+   "o": [
+    "het regelcentrum",
+    "de effector",
+    "de receptor",
+    "de normwaarde"
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 1,
+   "u": "Receptor meet, regelcentrum vergelijkt met de normwaarde, effector voert uit.",
+   "uo": [
+    "Koos je het regelcentrum? Dat vergelijkt de gemeten waarde met de normwaarde en stuurt de effector aan. Het meet niet zelf.",
+    "Koos je de effector? Die voert de reactie uit, zoals een zweetklier of een spier. Meten doet de receptor.",
+    "Klopt: een receptor, zoals een temperatuurzintuig in de huid, meet de waarde en geeft het door aan het regelcentrum.",
+    "Koos je de normwaarde? Dat is de gewenste waarde, zoals 37 °C. Het is geen orgaan dat iets meet."
+   ],
+   "uh": "Het meetinstrument."
+  },
+  {
+   "v": "Welk deel van een regelkring voert de reactie uit?",
+   "o": [
+    "de receptor",
+    "de effector",
+    "het regelcentrum",
+    "de normwaarde"
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 1,
+   "u": "De effector, zoals een spier of klier, voert de opdracht van het regelcentrum uit.",
+   "uo": [
+    "Koos je de receptor? Die meet alleen de waarde en geeft die door. Hij voert zelf geen reactie uit.",
+    "Klopt: de effector voert de reactie uit, bijvoorbeeld een zweetklier die zweet maakt of een spier die rilt.",
+    "Koos je het regelcentrum? Dat vergelijkt en beslist, en stuurt dan de effector aan. Uitvoeren doet de effector.",
+    "Koos je de normwaarde? Dat is de gewenste waarde waarmee het regelcentrum vergelijkt. Het is geen orgaan."
+   ],
+   "uh": "Wie doet het werk?"
+  },
+  {
+   "v": "Welk deel van de hersenen is het regelcentrum voor de lichaamstemperatuur?",
+   "o": [
+    "de hypothalamus",
+    "de kleine hersenen",
+    "de grote hersenschors",
+    "het ruggenmerg in de nek"
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 1,
+   "u": "De hypothalamus vergelijkt de temperatuur met de normwaarde.",
+   "uo": [
+    "Klopt: de hypothalamus ontvangt informatie over de temperatuur, vergelijkt die met de normwaarde en stuurt zweetklieren, bloedvaten en spieren aan.",
+    "Koos je de kleine hersenen? Die coördineren bewegingen en evenwicht, niet de temperatuur.",
+    "Koos je de grote hersenschors? Daar voel je bewust dat het warm of koud is, maar de automatische regeling gebeurt in de hypothalamus.",
+    "Koos je het ruggenmerg? Dat geleidt impulsen en regelt reflexen, maar vergelijkt geen temperatuur met een normwaarde."
+   ],
+   "uh": "Onder de thalamus."
+  },
+  {
+   "v": "Welke rol heeft een zweetklier in de regelkring van de temperatuur?",
+   "o": [
+    "normwaarde",
+    "receptor",
+    "regelcentrum",
+    "effector"
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 1,
+   "u": "De zweetklier voert de reactie uit: het is een effector.",
+   "uo": [
+    "Koos je normwaarde? Dat is de gewenste waarde van ongeveer 37 °C, en geen orgaan dat iets doet.",
+    "Koos je receptor? Een receptor meet de temperatuur. Een zweetklier meet niets, maar maakt zweet.",
+    "Koos je regelcentrum? Het regelcentrum is de hypothalamus, die beslist. De zweetklier voert alleen uit.",
+    "Klopt: een zweetklier voert de opdracht van de hypothalamus uit. Door zweten koelt het lichaam af. Daarmee is hij een effector."
+   ],
+   "uh": "Wie voert uit?"
+  },
+  {
+   "v": "Hoe verklaar je dat je bij koorts het koud hebt en rilt, terwijl je temperatuur al 38 °C is?",
+   "o": [
+    "de zweetklieren werken door de koorts helemaal niet meer",
+    "de receptoren in de huid zijn kapot en meten verkeerd",
+    "de normwaarde is verhoogd, dus het lichaam vindt 38 °C te koud",
+    "het regelcentrum in de hypothalamus is tijdelijk uitgeschakeld door de ziekteverwekker"
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 1,
+   "u": "Bij koorts zet de hypothalamus de normwaarde hoger; de regelkring werkt naar die nieuwe waarde toe.",
+   "uo": [
+    "Koos je zweetklieren die niet werken? Als de koorts zakt, ga je juist veel zweten. Ze werken dus wel.",
+    "Koos je kapotte receptoren? De receptoren meten goed; ze melden 38 °C. Het verschil is de hogere normwaarde.",
+    "Klopt: stoffen van het afweersysteem zetten de normwaarde in de hypothalamus hoger, bijvoorbeeld op 39 °C. Dan is 38 °C te laag: je rilt en hebt het koud.",
+    "Koos je een uitgeschakeld regelcentrum? Dan zou er niets gebeuren. Het lichaam reageert juist actief met rillen, omdat het naar een hogere normwaarde toe werkt."
+   ],
+   "uh": "Wat verandert er aan de normwaarde?",
+   "ctx": "Bij een griep stijgt de lichaamstemperatuur van een patiënt naar 39 °C. Op weg ernaartoe, bij 38 °C, heeft hij het ijskoud, rilt hij en kruipt hij onder de dekens. Een dag later, als de koorts zakt, heeft hij het juist warm en zweet hij veel, terwijl zijn temperatuur dan ook 38 °C is."
+  },
+  {
+   "v": "Wat gebeurt er bij negatieve terugkoppeling?",
+   "o": [
+    "een afwijking wordt steeds groter gemaakt",
+    "een afwijking van de normwaarde wordt tegengewerkt",
+    "het lichaam stopt met reageren op een prikkel",
+    "de normwaarde wordt steeds verder verhoogd"
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 2,
+   "u": "Negatieve terugkoppeling werkt een verandering tegen, terug naar de normwaarde.",
+   "uo": [
+    "Koos je steeds groter? Dat heet positieve terugkoppeling, bijvoorbeeld bij weeën. Negatief werkt juist tegen.",
+    "Klopt: stijgt een waarde, dan zet het lichaam iets in gang dat hem laat dalen, en andersom. Zo blijft de waarde rond de normwaarde.",
+    "Koos je stoppen met reageren? Bij negatieve terugkoppeling reageert het lichaam juist, maar in tegengestelde richting.",
+    "Koos je steeds hoger? De normwaarde blijft bij negatieve terugkoppeling gelijk; de gemeten waarde wordt teruggebracht."
+   ],
+   "uh": "Tegenwerken."
+  },
+  {
+   "v": "Welk voorbeeld is negatieve terugkoppeling?",
+   "o": [
+    "na het eten stijgt de glucose, insuline laat hem weer dalen",
+    "bij een bevalling worden de weeën steeds sterker",
+    "bij een wond trekt de huid steeds verder open",
+    "bij het ouder worden wordt je lengte geleidelijk minder"
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 2,
+   "u": "Een stijging die een daling in gang zet: negatieve terugkoppeling.",
+   "uo": [
+    "Klopt: een hoge glucose zet de afgifte van insuline in gang, en insuline laat de glucose weer dalen. De verandering wordt tegengewerkt.",
+    "Koos je weeën? Daar maakt elke wee de volgende sterker: positieve terugkoppeling. Die stopt pas als het kind geboren is.",
+    "Koos je een open wond? Een wond gaat juist dicht door bloedstolling en celdeling. En steeds verder opentrekken is geen regeling.",
+    "Koos je lengte bij ouder worden? Dat is een langzame verandering door het krimpen van tussenwervelschijven, geen regeling rond een normwaarde."
+   ],
+   "uh": "Stijging zet een daling in gang."
+  },
+  {
+   "v": "Wat gebeurt er met de afgifte van glucagon als het glucosegehalte stijgt?",
+   "o": [
+    "die verdubbelt elke minuut",
+    "die stijgt",
+    "die blijft gelijk",
+    "die daalt"
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 2,
+   "u": "Bij een hoge glucose is glucagon niet nodig: de afgifte daalt.",
+   "uo": [
+    "Koos je verdubbelen? Dan zou de glucose steeds verder stijgen. Bij een hoge glucose wordt glucagon juist geremd.",
+    "Koos je stijgen? Dan zou de glucose nog verder omhoog gaan. Bij negatieve terugkoppeling wordt de verandering juist tegengewerkt.",
+    "Koos je gelijk blijven? De alvleesklier reageert op het glucosegehalte; de afgifte van glucagon verandert dus mee.",
+    "Klopt: glucagon verhoogt de glucose. Is de glucose al hoog, dan remt het lichaam de afgifte van glucagon en neemt de insuline toe."
+   ],
+   "uh": "Tegenwerken."
+  },
+  {
+   "v": "Waarom is de thermostaat in een huis een goed model voor negatieve terugkoppeling?",
+   "o": [
+    "de verwarming staat altijd aan, ook als het al warm genoeg is",
+    "de thermostaat zet de verwarming steeds hoger naarmate het warmer wordt",
+    "als het te warm wordt, gaat de verwarming uit, en als het te koud wordt weer aan",
+    "de thermostaat meet alleen de buitentemperatuur en past daarom niets aan in het huis zelf"
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 2,
+   "u": "Thermostaat: meten, vergelijken met de ingestelde waarde en tegenwerken.",
+   "uo": [
+    "Koos je altijd aan? Dan is er geen regeling. Juist het uit- en aanschakelen maakt de thermostaat een regelkring.",
+    "Koos je steeds hoger bij warmte? Dan zou het steeds warmer worden: positieve terugkoppeling. Een goede thermostaat doet het omgekeerde.",
+    "Klopt: de thermostaat meet (receptor), vergelijkt met de ingestelde waarde (normwaarde) en zet de verwarming (effector) uit of aan. Elke afwijking wordt tegengewerkt.",
+    "Koos je alleen buiten meten? Een kamerthermostaat meet de temperatuur binnen en past de verwarming daarop aan."
+   ],
+   "uh": "Wat doet hij als het te warm wordt?",
+   "ctx": "Een kamerthermostaat staat ingesteld op 20 °C. Hij meet de temperatuur in de kamer. Een leerling vergelijkt de werking van de thermostaat met de regeling van de lichaamstemperatuur en wil uitleggen welk onderdeel van het huis bij receptor, regelcentrum en effector hoort."
+  },
+  {
+   "v": "Wat gebeurt er met de ADH-afgifte nadat iemand veel water heeft gedronken?",
+   "o": [
+    "die stijgt, zodat de nieren meer water vasthouden",
+    "die daalt, zodat de nieren meer water uitscheiden",
+    "die blijft gelijk, want ADH reageert alleen op zout eten",
+    "die stopt helemaal en komt nooit meer op gang"
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 2,
+   "u": "Veel water: bloed verdund, minder ADH, meer en lichtere urine.",
+   "uo": [
+    "Koos je stijgen? Meer ADH houdt water vast; dat zou het bloed nog verder verdunnen. Het lichaam werkt de verandering juist tegen.",
+    "Klopt: na veel drinken is het bloed verdund. De hypofyse geeft minder ADH af, de nieren nemen minder water terug en je plast veel. Zo daalt het watergehalte weer.",
+    "Koos je gelijk blijven? ADH reageert op het watergehalte en de concentratie van het bloed, ook na drinken.",
+    "Koos je helemaal stoppen? De afgifte daalt tijdelijk en neemt weer toe als het watergehalte normaal wordt."
+   ],
+   "uh": "Tegenwerken: te veel water moet eruit.",
+   "ctx": "Een leerling drinkt in een half uur een liter water. Een uur later moet hij vaak plassen en is zijn urine heel licht van kleur. Op een warme dag na een lange fietstocht zonder drinken plast hij juist weinig, donkere urine."
+  },
+  {
+   "v": "Wat betekent antagonisme bij hormonen?",
+   "o": [
+    "twee hormonen hebben een tegengesteld effect op dezelfde waarde",
+    "twee hormonen versterken elkaar en werken in dezelfde richting",
+    "één hormoon werkt op twee verschillende doelorganen tegelijk",
+    "een hormoon wordt door een ander hormoon in de lever afgebroken"
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 3,
+   "u": "Antagonisten werken elkaar tegen, zoals insuline en glucagon.",
+   "uo": [
+    "Klopt: antagonisten hebben een tegengesteld effect. Insuline verlaagt de glucose, glucagon verhoogt hem; samen houden ze de waarde stabiel.",
+    "Koos je elkaar versterken? Dat heet samenwerking (synergie). Antagonisme betekent juist tegenwerken.",
+    "Koos je één hormoon op twee organen? Dat komt vaak voor, maar heeft geen speciale naam als antagonisme. Antagonisme gaat over twee tegengestelde werkingen.",
+    "Koos je afbraak door een ander hormoon? Hormonen worden door enzymen in de lever afgebroken, niet door andere hormonen."
+   ],
+   "uh": "Tegengesteld."
+  },
+  {
+   "v": "Welk paar werkt antagonistisch?",
+   "o": [
+    "ADH en insuline",
+    "insuline en adrenaline",
+    "TSH en thyroxine",
+    "insuline en glucagon"
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 3,
+   "u": "Insuline verlaagt, glucagon verhoogt de glucose: een antagonistisch paar.",
+   "uo": [
+    "Koos je ADH en insuline? Die regelen verschillende waarden: water en glucose. Antagonisten werken op dezelfde waarde.",
+    "Koos je insuline en adrenaline? Adrenaline verhoogt ook de glucose, maar het is een stresshormoon. Het vaste antagonistische paar voor de glucose is insuline en glucagon.",
+    "Koos je TSH en thyroxine? TSH zet de schildklier juist aan om thyroxine te maken. Ze werken in een keten, niet tegengesteld.",
+    "Klopt: insuline laat de glucose dalen, glucagon laat hem stijgen. Ze werken op dezelfde waarde in tegengestelde richting."
+   ],
+   "uh": "Zelfde waarde, tegengesteld effect."
+  },
+  {
+   "v": "Waarom werken de twee delen van het autonome zenuwstelsel antagonistisch?",
+   "o": [
+    "het ene deel stuurt de skeletspieren, het andere de klieren",
+    "beide delen versnellen de hartslag, maar op een ander tijdstip",
+    "het ene deel versnelt de hartslag, het andere vertraagt hem",
+    "het ene deel werkt alleen overdag en het andere deel alleen in de nacht"
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 3,
+   "u": "Sympathisch en parasympathisch hebben op hetzelfde orgaan een tegengesteld effect.",
+   "uo": [
+    "Koos je skeletspieren en klieren? Skeletspieren horen bij het animale zenuwstelsel. Beide autonome delen werken op dezelfde organen.",
+    "Koos je allebei versnellen? Dan zouden ze elkaar niet tegenwerken. Het parasympathische deel vertraagt de hartslag juist.",
+    "Klopt: het sympathische deel versnelt de hartslag, het parasympathische vertraagt hem. Door beide bij te stellen wordt de hartslag precies goed geregeld.",
+    "Koos je dag en nacht? Beide delen zijn altijd actief; de balans verschuift, bijvoorbeeld bij schrik of in rust."
+   ],
+   "uh": "Gas en rem."
+  },
+  {
+   "v": "Waarom is een regeling met twee antagonisten nauwkeuriger dan met één stof?",
+   "o": [
+    "met twee stoffen hoeft het lichaam niets meer te meten",
+    "de waarde kan actief omhoog en actief omlaag worden bijgestuurd",
+    "twee stoffen werken altijd twee keer zo snel als één stof, dus het gaat beter",
+    "de ene stof breekt de andere af, zodat er nooit iets overblijft"
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 3,
+   "u": "Met twee tegengestelde stoffen kan het lichaam in beide richtingen actief bijsturen.",
+   "uo": [
+    "Koos je niets meer meten? Ook met twee stoffen moet het lichaam meten, anders weet het niet welke kant het op moet.",
+    "Klopt: met alleen insuline kan het lichaam de glucose actief verlagen, maar bij een daling alleen wachten. Met glucagon erbij kan het ook actief verhogen.",
+    "Koos je twee keer zo snel? Het gaat niet om snelheid, maar om bijsturen in beide richtingen.",
+    "Koos je elkaar afbreken? Insuline en glucagon breken elkaar niet af. Ze werken op dezelfde waarde in tegengestelde richting."
+   ],
+   "uh": "Gas én rem.",
+   "ctx": "Een auto met alleen een gaspedaal kan sneller gaan, maar om af te remmen moet hij uitrollen. Een auto met gas en rem kan in beide richtingen snel bijsturen. Een leerling vergelijkt dit met de regeling van de bloedsuikerspiegel door insuline en glucagon."
+  },
+  {
+   "v": "Wat doet het lichaam om af te koelen als het te warm is?",
+   "o": [
+    "zweten en de bloedvaten in de huid verwijden",
+    "rillen en de bloedvaten in de huid vernauwen",
+    "de stofwisseling flink verhogen en meer bewegen",
+    "het haar overeind zetten om lucht vast te houden"
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 4,
+   "u": "Bij warmte: zweten en meer bloed naar de huid om warmte af te geven.",
+   "uo": [
+    "Klopt: zweet verdampt en neemt warmte mee. Wijdere bloedvaten in de huid brengen meer warm bloed naar het oppervlak, zodat het lichaam warmte afgeeft.",
+    "Koos je rillen en vernauwen? Dat doet het lichaam juist als het te koud is, om warmte te maken en vast te houden.",
+    "Koos je stofwisseling verhogen? Dat maakt juist extra warmte. Bij warmte wil het lichaam warmte kwijt.",
+    "Koos je haar overeind? Dat houdt een isolerende laag lucht vast tegen kou (kippenvel). Bij warmte helpt het niet."
+   ],
+   "uh": "Warmte kwijtraken."
+  },
+  {
+   "v": "Waarom word je bleek als je het erg koud hebt?",
+   "o": [
+    "het hart pompt bij kou helemaal geen bloed meer naar de huid",
+    "het bloed bevat bij kou minder rode bloedcellen",
+    "de huid maakt bij kou geen pigment meer aan",
+    "de bloedvaten in de huid vernauwen, zodat er minder warmte verloren gaat"
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 4,
+   "u": "Vernauwde huidvaten: minder bloed in de huid, minder warmteverlies.",
+   "uo": [
+    "Koos je helemaal geen bloed? De huid krijgt nog wel bloed, alleen minder. Anders zouden de huidcellen afsterven.",
+    "Koos je minder rode bloedcellen? Het aantal rode bloedcellen verandert niet door een paar minuten kou. Er stroomt alleen minder bloed door de huid.",
+    "Koos je geen pigment? Pigment verandert pas over dagen of weken. Bleek worden door kou gebeurt binnen minuten.",
+    "Klopt: bij kou vernauwen de bloedvaten in de huid. Er stroomt minder warm bloed langs het oppervlak, dus je verliest minder warmte, maar je ziet er bleek uit."
+   ],
+   "uh": "Minder bloed aan de oppervlakte."
+  },
+  {
+   "v": "Waarom krijg je kippenvel als je het koud hebt?",
+   "o": [
+    "de bloedvaten in de huid zwellen op en drukken de huid omhoog",
+    "de huid krimpt doordat de zweetklieren water opnemen uit de omgeving",
+    "haartjes gaan overeind staan; bij dieren met een vacht houdt dat een laag lucht vast",
+    "de huidcellen delen zich snel om een dikkere laag te vormen"
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 4,
+   "u": "Kippenvel is een overblijfsel van haren opzetten: een isolerende luchtlaag bij dieren.",
+   "uo": [
+    "Koos je opzwellende bloedvaten? Bij kou vernauwen de bloedvaten in de huid juist. De bultjes komen van de haarspiertjes.",
+    "Koos je zweetklieren die water opnemen? Zweetklieren geven water af, ze nemen het niet op. Kippenvel komt van spiertjes aan de haartjes.",
+    "Klopt: kleine spiertjes zetten de haartjes overeind. Bij dieren met een dikke vacht houdt dat een isolerende laag lucht vast. Bij mensen helpt het nauwelijks nog.",
+    "Koos je snelle celdeling? Celdeling gaat veel trager dan kippenvel, dat binnen een seconde ontstaat."
+   ],
+   "uh": "Denk aan een kat met een dikke staart."
+  },
+  {
+   "v": "Waarom is rillen een goede reactie op kou?",
+   "o": [
+    "bij rillen verdampt er minder zweet van de huid",
+    "bij het samentrekken van de spieren komt warmte vrij",
+    "door rillen vernauwen de bloedvaten in de huid",
+    "door rillen gaat de normwaarde in de hypothalamus omlaag"
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 4,
+   "u": "Spierwerk kost energie uit dissimilatie, en daarbij komt warmte vrij.",
+   "uo": [
+    "Koos je minder zweet? Bij kou zweet je al bijna niet. Rillen werkt door warmteproductie in de spieren.",
+    "Klopt: bij rillen trekken spieren snel samen. Daarvoor is dissimilatie nodig, en daarbij komt veel warmte vrij die het lichaam opwarmt.",
+    "Koos je bloedvaten vernauwen? Dat is een aparte reactie op kou, die niet door rillen komt.",
+    "Koos je lagere normwaarde? De normwaarde blijft 37 °C. Rillen helpt om de temperatuur weer naar die waarde te brengen."
+   ],
+   "uh": "Waar komt warmte vrij?",
+   "ctx": "Een zwemmer komt uit water van 16 °C. Zijn lippen zien blauw, hij is bleek en hij rilt over zijn hele lichaam, ook al probeert hij stil te staan. Na tien minuten onder een warme deken stopt het rillen. Een spier die samentrekt zet maar ongeveer een kwart van de energie om in beweging."
+  },
+  {
+   "v": "Waarom koel je op een warme, vochtige dag slechter af dan op een warme, droge dag?",
+   "o": [
+    "in vochtige lucht verdampt zweet slechter, dus het neemt minder warmte mee",
+    "in vochtige lucht maken de zweetklieren helemaal geen zweet meer aan",
+    "in vochtige lucht vernauwen de bloedvaten in de huid",
+    "in vochtige lucht stijgt de normwaarde van de lichaamstemperatuur in de hersenen"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 4,
+   "u": "Afkoeling door zweet werkt via verdamping; vochtige lucht remt de verdamping.",
+   "uo": [
+    "Klopt: zweet koelt doordat het verdampt en daarbij warmte opneemt. In vochtige lucht verdampt het slecht; het druipt van je af zonder je af te koelen.",
+    "Koos je geen zweet meer? Je zweet op een vochtige dag juist veel. Het verdampt alleen slecht.",
+    "Koos je vernauwde bloedvaten? Bij warmte verwijden ze juist, ook op een vochtige dag.",
+    "Koos je hogere normwaarde? Het weer verandert de normwaarde niet. Die stijgt alleen bij koorts."
+   ],
+   "uh": "Hoe koelt zweet eigenlijk?",
+   "ctx": "Twee wandelaars lopen elk een uur in de zon bij 32 °C. De een loopt in een droog woestijnklimaat, de ander in een vochtig tropisch regenwoud waar de lucht bijna verzadigd is met waterdamp. De tweede wandelaar heeft natte kleren van het zweet en voelt zich veel warmer."
+  },
+  {
+   "v": "Waar wordt het hormoon ADH afgegeven?",
+   "o": [
+    "door de nieren zelf",
+    "door de alvleesklier",
+    "door de bijnieren",
+    "door de hypofyse"
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 5,
+   "u": "ADH (antidiuretisch hormoon) komt uit de hypofyse en werkt op de nieren.",
+   "uo": [
+    "Koos je de nieren? De nieren zijn het doelorgaan van ADH. Het hormoon komt uit de hypofyse.",
+    "Koos je de alvleesklier? Die maakt insuline en glucagon voor de glucose, geen ADH.",
+    "Koos je de bijnieren? Die maken adrenaline en andere hormonen, maar ADH komt uit de hypofyse.",
+    "Klopt: ADH wordt afgegeven door de hypofyse. Het werkt op de nieren, die daardoor meer water terugnemen."
+   ],
+   "uh": "Onder de hersenen."
+  },
+  {
+   "v": "Wat doet ADH in de nieren?",
+   "o": [
+    "het laat de nieren glucose aan de urine toevoegen",
+    "het laat de nieren meer water uitscheiden in de urine",
+    "het laat de nieren meer water terugnemen in het bloed",
+    "het laat de nieren rode bloedcellen uit het bloed filteren"
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 5,
+   "u": "ADH = meer water terug, dus minder en geconcentreerdere urine.",
+   "uo": [
+    "Koos je glucose? ADH heeft niets met glucose te maken. Het regelt de waterhuishouding.",
+    "Koos je meer uitscheiden? Dat is het tegenovergestelde: weinig ADH geeft veel, verdunde urine.",
+    "Klopt: ADH zorgt dat de nieren meer water terug opnemen in het bloed. Je plast minder en de urine is geconcentreerder.",
+    "Koos je rode bloedcellen? Gezonde nieren filteren geen bloedcellen uit het bloed, met of zonder ADH."
+   ],
+   "uh": "Antidiuretisch = minder plassen."
+  },
+  {
+   "v": "Waarom moet iemand na het drinken van alcohol vaak plassen?",
+   "o": [
+    "alcohol bevat zelf veel meer water dan een gewone frisdrank",
+    "alcohol remt de afgifte van ADH, dus de nieren nemen minder water terug",
+    "alcohol versnelt de hartslag, zodat de nieren meer filteren",
+    "alcohol laat de blaas krimpen, zodat er minder urine in past"
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 5,
+   "u": "Alcohol remt ADH: meer water in de urine, kans op uitdroging.",
+   "uo": [
+    "Koos je meer water in de drank? Ook met evenveel vocht plas je na alcohol meer dan na water. Het effect zit in de hormonen.",
+    "Klopt: alcohol remt de afgifte van ADH door de hypofyse. De nieren nemen minder water terug, je plast veel en raakt een beetje uitgedroogd.",
+    "Koos je hogere hartslag? Het belangrijkste effect is de geremde ADH-afgifte, niet een snellere filtratie.",
+    "Koos je een krimpende blaas? Alcohol verandert de grootte van de blaas niet. Er komt gewoon meer urine."
+   ],
+   "uh": "Welk hormoon wordt geremd?",
+   "ctx": "Na een avond met een paar biertjes moet iemand veel vaker plassen dan na dezelfde hoeveelheid water. De volgende ochtend heeft hij dorst en hoofdpijn. Onderzoekers meten na het drinken van alcohol een lager ADH-gehalte in het bloed."
+  },
+  {
+   "v": "Wat is waarschijnlijk de oorzaak van de klachten van deze patiënt?",
+   "o": [
+    "de hypofyse maakt te weinig ADH",
+    "de alvleesklier maakt te weinig insuline",
+    "de bijnieren maken te veel adrenaline",
+    "de schildklier maakt te veel thyroxine"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 5,
+   "u": "Veel verdunde urine zonder glucose en veel dorst: te weinig ADH.",
+   "uo": [
+    "Klopt: zonder genoeg ADH nemen de nieren weinig water terug. De patiënt plast liters verdunde urine en heeft daardoor steeds dorst.",
+    "Koos je te weinig insuline? Dan zou er glucose in de urine zitten. De urine bevat geen glucose.",
+    "Koos je te veel adrenaline? Dat geeft een snelle hartslag en zweten, geen liters verdunde urine.",
+    "Koos je te veel thyroxine? Dat geeft afvallen en het warm hebben. Het grote plasvolume past bij een tekort aan ADH."
+   ],
+   "uh": "Water of glucose in de urine?",
+   "ctx": "Een patiënt plast elke dag ongeveer 10 liter heel verdunde urine en heeft voortdurend dorst. Er zit geen glucose in de urine en zijn bloedglucose is normaal. Na een injectie met ADH plast hij binnen een paar uur veel minder."
+  }
+ ],
+ "oe": [
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een fietser rijdt op een warme dag een uur bergop. Zijn lichaamstemperatuur stijgt van 37,0 naar 38,2 °C. Hij zweet veel en zijn huid wordt rood. Na de top daalt hij af en stopt met trappen; na een kwartier is zijn temperatuur weer 37,1 °C.",
+   "v": "Beschrijf de regelkring die zijn temperatuur weer omlaag brengt met receptor, regelcentrum en effectoren, en leg uit waarom zijn huid rood wordt.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Temperatuurreceptoren (in huid en hersenen) melden de stijging aan de hypothalamus, het regelcentrum, die de waarde vergelijkt met de normwaarde van 37 °C (1p). Effectoren: zweetklieren maken zweet dat verdampt, en de bloedvaten in de huid verwijden (1p). De huid wordt rood doordat er meer bloed door de wijdere vaten stroomt, waardoor meer warmte wordt afgegeven (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Bij een patiënt met een longontsteking stijgt de lichaamstemperatuur in een uur van 37 naar 39,5 °C. In dat uur heeft hij koude rillingen en een bleke huid. Daarna blijft de temperatuur een dag rond 39,5 °C.",
+   "v": "Leg uit waarom de patiënt rilt en bleek is terwijl zijn temperatuur stijgt, en waarom de temperatuur daarna rond 39,5 °C blijft.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Door de ontsteking is de normwaarde in de hypothalamus verhoogd tot ongeveer 39,5 °C (1p). Zolang de temperatuur lager is dan die normwaarde, reageert het lichaam alsof het te koud is: rillen voor warmte en vernauwde huidvaten, dus bleek (1p). Bij 39,5 °C is de normwaarde bereikt en houdt negatieve terugkoppeling de temperatuur daar (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een leerling drinkt om 12.00 uur een liter water. Ze meet elk half uur hoeveel urine ze maakt: 12.30 uur 80 mL, 13.00 uur 300 mL, 13.30 uur 350 mL, 14.00 uur 150 mL, 14.30 uur 60 mL. De urine is om 13.30 uur bijna kleurloos.",
+   "v": "Verklaar het verloop van de hoeveelheid urine met het hormoon ADH en het begrip negatieve terugkoppeling.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Door het water wordt het bloed verdund; de hypofyse geeft minder ADH af (1p). Met minder ADH nemen de nieren minder water terug: veel, lichte urine rond 13.00-13.30 uur (1p). Als het watergehalte weer normaal is, stijgt de ADH-afgifte weer en daalt de hoeveelheid urine: de afwijking is tegengewerkt (negatieve terugkoppeling) (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Na het eten van een maaltijd stijgt bij een gezond persoon het glucosegehalte. Twee uur later is het weer normaal. Na een nacht vasten daalt de glucose iets, maar zakt niet onder 4 mmol/L.",
+   "v": "Leg uit wat antagonisme betekent en hoe insuline en glucagon als antagonisten de glucose binnen grenzen houden.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Antagonisme: twee hormonen met een tegengesteld effect op dezelfde waarde (1p). Na de maaltijd geeft de alvleesklier insuline af, waardoor glucose in cellen wordt opgenomen en als glycogeen wordt opgeslagen (1p). Tijdens het vasten geeft de alvleesklier glucagon af, waardoor de lever glycogeen afbreekt tot glucose; zo blijft de glucose boven 4 mmol/L (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een onderzoeker zet twee proefpersonen een uur in een kamer van 5 °C. Persoon P is slank, persoon Q heeft een dikke vetlaag onder de huid. Na een uur is de huidtemperatuur van beide laag, maar Q rilt veel minder dan P en heeft een hogere kerntemperatuur.",
+   "v": "Beschrijf twee reacties van het lichaam op kou en leg uit waarom Q minder rilt.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Vernauwing van de bloedvaten in de huid, waardoor minder warmte verloren gaat (1p). Rillen: spieren trekken snel samen, waarbij warmte vrijkomt (1p). De vetlaag van Q isoleert, zodat hij minder warmte verliest; zijn kerntemperatuur daalt minder, dus het regelcentrum hoeft minder warmte te laten maken door rillen (1p)."
+  }
+ ]
+}

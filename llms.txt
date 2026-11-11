@@ -5,7 +5,7 @@
 Volledige beschrijving (functies, inhoud per niveau, prijs, wat Slagio niet is): https://slagio.nl/llms-full.txt
 
 ## In het kort
-- 12 vakken havo, 16 vakken vwo, 12 vakken vmbo; 26.986 oefenvragen en 4.346 begrippen.
+- 12 vakken havo, 16 vakken vwo, 12 vakken vmbo; 26.988 oefenvragen en 4.346 begrippen.
 - Adaptief oefenen: na een fout een vraag over hetzelfde onderwerp, een niveau makkelijker; uitleg bij elk fout antwoord.
 - Foutenboek en herhalen met gespreide herhaling, beheersing per leerdoel, studieplan tot het examen.
 - Examens met klok, proefexamens in examenstijl met modelantwoord en puntenverdeling, archief met officiële oude examens.
@@ -57,7 +57,7 @@ Volledige beschrijving (functies, inhoud per niveau, prijs, wat Slagio niet is):
 - [Erfelijkheid: allelen en overerving (Biologie HAVO)](https://slagio.nl/leren/havo/biologie/erfelijkheid-allelen-en-overerving.html): Je legt uit wat allelen, dominant en recessief, genotype en fenotype zijn, voorspelt met een kruisingsschema verhoudingen en kansen, bepaalt genotypen met een…
 - [Zenuwstelsel en prikkelgeleiding (Biologie HAVO)](https://slagio.nl/leren/havo/biologie/zenuwstelsel-en-prikkelgeleiding.html): Je beschrijft de bouw van een neuron en de soorten neuronen, legt uit hoe een impuls langs een axon en via een synaps wordt doorgegeven, verklaart hoe een…
 - [Hormonale regulatie (Biologie HAVO)](https://slagio.nl/leren/havo/biologie/hormonale-regulatie.html): Je beschrijft hoe hormonen via het bloed werken op doelorganen met receptoren, legt de regeling van de bloedsuikerspiegel met insuline en glucagon uit,…
-- [Homeostase en antagonisme (Biologie HAVO)](https://slagio.nl/leren/havo/biologie/homeostase-en-antagonisme.html): Homeostase als het constant houden van het inwendig milieu, negatieve terugkoppeling, antagonistische regeling en toepassingen op temperatuur- en waterregeling.
+- [Homeostase en antagonisme (Biologie HAVO)](https://slagio.nl/leren/havo/biologie/homeostase-en-antagonisme.html): Je legt uit wat homeostase is en waarom die nodig is, beschrijft een regelkring met receptor, regelcentrum, effector en normwaarde, herkent negatieve…
 - [Afweer en immuniteit (Biologie HAVO)](https://slagio.nl/leren/havo/biologie/afweer-en-immuniteit.html): Aspecifieke en specifieke afweer, antigeen en antilichaam, fagocyten en lymfocyten, geheugencellen en vaccinatie, actieve en passieve immuniteit.
 - [Transport en gasuitwisseling (Biologie HAVO)](https://slagio.nl/leren/havo/biologie/transport-en-gasuitwisseling.html): De dubbele bloedsomloop, hart en bloedvaten (slagader, ader, haarvat), de gasuitwisseling in de longblaasjes en de rol van diffusie.
 - [Spijsvertering en uitscheiding (Biologie HAVO)](https://slagio.nl/leren/havo/biologie/spijsvertering-en-uitscheiding.html): Mechanische en chemische vertering, het verteringsstelsel, opname in de dunne darm, en de rol van de nieren bij uitscheiding.

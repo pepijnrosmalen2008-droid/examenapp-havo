@@ -1313,22 +1313,24 @@ var VAKKEN = [
      },
      {
       "id": "O3",
+      "lo": "bi.O.3",
+      "gs": 2,
       "naam": "Homeostase en antagonisme",
-      "beschrijving": "Homeostase als het constant houden van het inwendig milieu, negatieve terugkoppeling, antagonistische regeling en toepassingen op temperatuur- en waterregeling.",
-      "ceStatus": "CE",
+      "beschrijving": "Je legt uit wat homeostase is en waarom die nodig is, beschrijft een regelkring met receptor, regelcentrum, effector en normwaarde, herkent negatieve terugkoppeling en antagonisme, en verklaart de regeling van de lichaamstemperatuur en de waterhuishouding met ADH.",
+      "ceStatus": "CE+SE",
+      "binas": "",
+      "val": "",
       "onderwerpen": [
-       "Homeostase: constant inwendig milieu",
-       "Waarom homeostase nodig is (enzymen/cellen)",
-       "Negatieve terugkoppeling (feedback)",
-       "Setpoint / normwaarde",
-       "Antagonisme: twee tegengestelde regelingen",
-       "Temperatuurregeling (zweten, rillen, bloedvaten)",
-       "Waterhuishouding en nieren (ADH)",
-       "Receptor, verwerkingscentrum, effector"
+       "Homeostase",
+       "De regelkring",
+       "Negatieve terugkoppeling",
+       "Antagonisme",
+       "Temperatuurregeling",
+       "Waterhuishouding en ADH"
       ],
-      "nSv": 25,
+      "nSv": 27,
       "nOe": 5,
-      "nBeg": 12,
+      "nBeg": 14,
       "hasSam": true
      },
      {
