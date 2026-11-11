@@ -41386,9 +41386,13 @@ var VAKKEN = [
      },
      {
       "id": "A3",
+      "lo": "bi.A.3",
+      "gs": 2,
       "naam": "Data verwerken en grafieken lezen",
-      "beschrijving": "Gegevens uit tabellen en grafieken aflezen, as-eenheden juist lezen, spreiding (standaarddeviatie) interpreteren en niet concluderen buiten het meetbereik.",
-      "ceStatus": "CE",
+      "beschrijving": "Je leest grafieken en tabellen correct af (assen, eenheden, interpoleren), rekent met toenames en procentuele veranderingen, bepaalt gemiddelde, mediaan en spreiding, beschrijft de spreiding rond het gemiddelde met foutbalken en legt uit waarom extrapoleren buiten het meetbereik onbetrouwbaar is.",
+      "ceStatus": "CE+SE",
+      "binas": "",
+      "val": "",
       "onderwerpen": [
        "Grafiek lezen: assen en as-eenheden",
        "Aflezen van een waarde",
@@ -41397,554 +41401,622 @@ var VAKKEN = [
        "Standaarddeviatie",
        "Meetbereik: niet extrapoleren"
       ],
-      "sam": "Bij het lezen van een grafiek kijk je eerst naar de assen: wat staat er op de x-as en de y-as, en in welke eenheid? Verkeerd lezen van de as-eenheden is een veelgemaakte fout. Om een waarde af te lezen ga je vanaf een x-waarde omhoog tot de lijn en dan naar de y-as. Uit meerdere metingen bereken je het gemiddelde. De spreiding laat zien hoe ver de metingen uit elkaar liggen; de standaarddeviatie is daar een maat voor. Een kleine standaarddeviatie betekent dat de metingen dicht bij elkaar liggen. Let op het meetbereik: conclusies trekken buiten de gemeten waarden (extrapoleren) is onzeker, want daar heb je geen metingen.",
+      "sam": "Assen: grootheid (eenheid); as die niet bij nul begint vertekent. Aflezen: recht omhoog en opzij; interpoleren tussen meetpunten; steil = snelle verandering; toename per tijd = verschil ÷ tijd. Tabel: precieze waarden; procentuele verandering = verschil ÷ beginwaarde × 100%. Gemiddelde = som ÷ aantal; mediaan ongevoelig voor uitschieters; spreiding (bereik). Standaarddeviatie = spreiding rond gemiddelde; ± 1 sd ≈ 68%; foutbalken. Meetbereik: interpoleren mag, extrapoleren onbetrouwbaar (enzym denatureert, groei remt af).",
       "begrippen": [
        {
-        "t": "Grafiek",
-        "d": "een figuur die het verband tussen twee grootheden toont"
+        "t": "Grootheid",
+        "d": "Eigenschap die je kunt meten, zoals lengte, tijd of temperatuur."
        },
        {
-        "t": "X-as",
-        "d": "de horizontale as, vaak de onafhankelijke variabele"
+        "t": "Eenheid",
+        "d": "Maat waarin je een grootheid uitdrukt, zoals cm, s of °C."
        },
        {
-        "t": "Y-as",
-        "d": "de verticale as, vaak de afhankelijke variabele"
-       },
-       {
-        "t": "As-eenheid",
-        "d": "de grootheid en eenheid die op een as staan"
-       },
-       {
-        "t": "Meetpunt",
-        "d": "een gemeten waarde in een grafiek of tabel"
-       },
-       {
-        "t": "Tabel",
-        "d": "een geordend overzicht van meetwaarden in rijen en kolommen"
-       },
-       {
-        "t": "Gemiddelde",
-        "d": "de som van de waarden gedeeld door het aantal"
-       },
-       {
-        "t": "Spreiding",
-        "d": "hoe ver de metingen uit elkaar liggen"
-       },
-       {
-        "t": "Standaarddeviatie",
-        "d": "een maat voor de spreiding rond het gemiddelde"
-       },
-       {
-        "t": "Meetbereik",
-        "d": "het gebied van waarden waarin je hebt gemeten"
+        "t": "Interpoleren",
+        "d": "Een waarde aflezen of berekenen tussen twee gemeten punten."
        },
        {
         "t": "Extrapoleren",
-        "d": "een uitspraak doen buiten het meetbereik"
+        "d": "Een grafiek doortrekken buiten het gemeten gebied om een waarde te voorspellen."
        },
        {
-        "t": "Trend",
-        "d": "de algemene richting van een verband in een grafiek"
+        "t": "Meetbereik",
+        "d": "Het gebied waarin echt is gemeten."
+       },
+       {
+        "t": "Gemiddelde",
+        "d": "Som van alle waarden gedeeld door het aantal waarden."
+       },
+       {
+        "t": "Mediaan",
+        "d": "Middelste waarde als je alle waarden op volgorde zet."
+       },
+       {
+        "t": "Spreiding",
+        "d": "Mate waarin meetwaarden van elkaar verschillen."
+       },
+       {
+        "t": "Bereik",
+        "d": "Verschil tussen de hoogste en de laagste meetwaarde."
+       },
+       {
+        "t": "Standaarddeviatie",
+        "d": "Maat voor de spreiding van metingen rond het gemiddelde."
+       },
+       {
+        "t": "Foutbalk",
+        "d": "Streepje in een grafiek dat de spreiding rond een gemiddelde weergeeft."
+       },
+       {
+        "t": "Uitschieter",
+        "d": "Meetwaarde die sterk afwijkt van de andere metingen."
        }
       ],
       "sv": [
        {
-        "v": "Waar kijk je als eerste naar bij een grafiek?",
+        "v": "Wat hoort er langs elke as van een grafiek te staan?",
         "o": [
-         "Naar de assen en hun eenheden",
-         "Naar de kleur van de lijn",
-         "Naar de titel van het boek",
-         "Naar de naam van de onderzoeker"
-        ],
-        "c": 0,
-        "d": 2,
-        "u": "Kijk eerst wat er op de x-as en y-as staat en in welke eenheid, anders lees je verkeerd af.",
-        "uo": [
-         "Klopt: eerst de assen en hun eenheden.",
-         "De kleur is niet het belangrijkste.",
-         "De boektitel is niet relevant.",
-         "De naam is niet relevant."
-        ],
-        "uh": "Lees eerst de assen en de eenheden."
-       },
-       {
-        "v": "Wat staat meestal op de x-as?",
-        "o": [
-         "De afhankelijke variabele",
-         "De onafhankelijke variabele",
-         "De standaarddeviatie van de metingen",
-         "De titel van de grafiek"
-        ],
-        "c": 1,
-        "d": 2,
-        "u": "Op de x-as staat meestal de onafhankelijke variabele, wat je zelf varieert.",
-        "uo": [
-         "De afhankelijke variabele staat meestal op de y-as.",
-         "Klopt: de onafhankelijke variabele.",
-         "De standaarddeviatie is geen as.",
-         "De titel is geen as-inhoud."
-        ],
-        "uh": "X-as = meestal de onafhankelijke variabele."
-       },
-       {
-        "v": "Wat staat meestal op de y-as?",
-        "o": [
-         "De onafhankelijke variabele",
-         "De naam van de onderzoeker",
-         "De afhankelijke variabele",
-         "De datum van de meting"
+         "de naam van de onderzoeker",
+         "alleen de getallen",
+         "grootheid en eenheid",
+         "de hypothese van het onderzoek"
         ],
         "c": 2,
-        "d": 2,
-        "u": "Op de y-as staat meestal de afhankelijke variabele, wat je meet.",
-        "uo": [
-         "Die staat meestal op de x-as.",
-         "De naam is geen as-inhoud.",
-         "Klopt: de afhankelijke variabele.",
-         "De datum is geen as-inhoud."
-        ],
-        "uh": "Y-as = meestal de afhankelijke variabele."
-       },
-       {
-        "v": "Hoe lees je bij een x-waarde de bijbehorende y-waarde af?",
-        "o": [
-         "Je raadt de waarde zonder te kijken",
-         "Je leest alleen de titel boven de grafiek",
-         "Je pakt een willekeurig getal",
-         "Je gaat omhoog naar de lijn en dan naar de y-as"
-        ],
-        "c": 3,
-        "d": 2,
-        "u": "Vanaf de x-waarde ga je verticaal omhoog tot de lijn en dan horizontaal naar de y-as.",
-        "uo": [
-         "Raden is geen aflezen.",
-         "De titel geeft geen waarde.",
-         "Een willekeurig getal is fout.",
-         "Klopt: omhoog naar de lijn, dan naar de y-as."
-        ],
-        "uh": "Aflezen: omhoog naar de lijn, dan naar de y-as."
-       },
-       {
-        "v": "Wat is een veelgemaakte fout bij grafieken lezen?",
-        "o": [
-         "De as-eenheden verkeerd lezen",
-         "Eerst naar de assen kijken",
-         "Het gemiddelde berekenen",
-         "De meetlijn in de grafiek netjes volgen"
-        ],
-        "c": 0,
-        "d": 2,
-        "u": "Een veelgemaakte fout is de eenheid op een as over het hoofd zien, waardoor je de waarde verkeerd afleest.",
-        "uo": [
-         "Klopt: as-eenheden verkeerd lezen is een klassieke fout.",
-         "Eerst naar de assen kijken is juist goed.",
-         "Het gemiddelde berekenen is geen fout.",
-         "De lijn volgen is juist goed."
-        ],
-        "uh": "Let op de as-eenheden om fouten te voorkomen."
-       },
-       {
-        "v": "Wat is het gemiddelde van een reeks metingen?",
-        "o": [
-         "Het grootste getal",
-         "De som gedeeld door het aantal",
-         "Het kleinste getal",
-         "Het middelste meetpunt op de x-as"
-        ],
-        "c": 1,
         "d": 1,
-        "u": "Het gemiddelde is de som van alle waarden gedeeld door het aantal metingen.",
+        "s": 0,
+        "u": "Bijvoorbeeld: \"tijd (min)\" of \"massa (g)\".",
         "uo": [
-         "Dat is het maximum, niet het gemiddelde.",
-         "Klopt: som gedeeld door het aantal.",
-         "Dat is het minimum.",
-         "Dat is niet hoe je een gemiddelde berekent."
+         "Koos je de naam van de onderzoeker? Die hoort in je verslag, niet langs de as. Langs de as staat wat je meet.",
+         "Koos je alleen getallen? Zonder grootheid en eenheid weet niemand wat 20 betekent: 20 seconden, 20 gram of 20 graden?",
+         "Klopt: langs elke as staat welke grootheid je weergeeft en in welke eenheid, bijvoorbeeld \"temperatuur (°C)\". Zonder eenheid weet je niet wat een getal betekent.",
+         "Koos je de hypothese? Die staat in je verslag. Langs de assen staat welke grootheid en eenheid je weergeeft."
         ],
-        "uh": "Gemiddelde = som / aantal."
+        "uh": "Wat betekent het getal 20?"
        },
        {
-        "v": "Wat is de standaarddeviatie een maat voor?",
+        "v": "Langs de verticale as staat \"O2-productie (mL per uur)\". Wat betekent de waarde 12?",
         "o": [
-         "De titel die boven de grafiek staat",
-         "De onafhankelijke variabele",
-         "De spreiding rond het gemiddelde",
-         "Het aantal assen in de grafiek"
-        ],
-        "c": 2,
-        "d": 2,
-        "u": "De standaarddeviatie geeft aan hoe ver de metingen gemiddeld van het gemiddelde af liggen: de spreiding.",
-        "uo": [
-         "Dat is geen standaarddeviatie.",
-         "Dat is een variabele, geen spreidingsmaat.",
-         "Klopt: de spreiding rond het gemiddelde.",
-         "Het gaat niet over het aantal assen."
-        ],
-        "uh": "Standaarddeviatie = maat voor de spreiding."
-       },
-       {
-        "v": "Wat betekent een kleine standaarddeviatie?",
-        "o": [
-         "De metingen liggen ver uit elkaar",
-         "De grafiek heeft helemaal geen assen",
-         "Er is maar één meting gedaan",
-         "De metingen liggen dicht bij elkaar"
-        ],
-        "c": 3,
-        "d": 3,
-        "u": "Een kleine standaarddeviatie betekent dat de metingen dicht bij het gemiddelde liggen, dus weinig spreiding.",
-        "uo": [
-         "Ver uit elkaar hoort bij een grote standaarddeviatie.",
-         "Assen hebben er niets mee te maken.",
-         "Je hebt meerdere metingen nodig voor spreiding.",
-         "Klopt: dicht bij elkaar, weinig spreiding."
-        ],
-        "uh": "Kleine standaarddeviatie = metingen dicht bij elkaar."
-       },
-       {
-        "v": "Wat betekent een grote standaarddeviatie?",
-        "o": [
-         "De metingen liggen ver uit elkaar",
-         "De metingen liggen dicht bij elkaar",
-         "Er is geen gemiddelde te berekenen",
-         "De grafiek is fout getekend"
-        ],
-        "c": 0,
-        "d": 3,
-        "u": "Een grote standaarddeviatie betekent dat de metingen ver van het gemiddelde liggen: veel spreiding.",
-        "uo": [
-         "Klopt: ver uit elkaar, veel spreiding.",
-         "Dicht bij elkaar hoort bij een kleine standaarddeviatie.",
-         "Een gemiddelde is er nog steeds.",
-         "De grafiek hoeft niet fout te zijn."
-        ],
-        "uh": "Grote standaarddeviatie = veel spreiding."
-       },
-       {
-        "v": "Wat is het meetbereik?",
-        "o": [
-         "De kleur van de meetlijn",
-         "Het gebied van waarden waarin je hebt gemeten",
-         "De naam die bij de x-as hoort",
-         "Het aantal onderzoekers"
+         "12 uur zuurstofproductie",
+         "12 mL zuurstof per uur",
+         "12 procent zuurstof in de lucht",
+         "12 mL zuurstof in totaal, na afloop van de proef"
         ],
         "c": 1,
         "d": 2,
-        "u": "Het meetbereik is het gebied van waarden waarbinnen je metingen hebt gedaan.",
+        "s": 0,
+        "u": "Lees grootheid én eenheid samen.",
         "uo": [
-         "De kleur is niet het meetbereik.",
-         "Klopt: het gebied waarin je hebt gemeten.",
-         "Dat is een as-naam.",
-         "Dat is niet het meetbereik."
+         "Koos je 12 uur? De eenheid is mL per uur, geen uren. Het getal geeft een hoeveelheid zuurstof per uur aan.",
+         "Klopt: de grootheid is de zuurstofproductie en de eenheid mL per uur. Een waarde van 12 betekent dus dat er 12 mL zuurstof per uur wordt gevormd.",
+         "Koos je 12 procent? Er staat mL per uur, geen procent. Je moet de eenheid langs de as gebruiken.",
+         "Koos je 12 mL in totaal? Er staat per uur: het is een snelheid, geen totale hoeveelheid. De waarde 12 geldt voor elk uur."
         ],
-        "uh": "Meetbereik = het gebied waarin je hebt gemeten."
+        "uh": "Lees de eenheid goed."
        },
        {
-        "v": "Waarom is een conclusie buiten het meetbereik onzeker?",
+        "v": "Waarom geeft de grafiek van de fabrikant een vertekend beeld?",
         "o": [
-         "Omdat de grafiek daar mooier is",
-         "Omdat het gemiddelde daar stijgt",
-         "Omdat je daar geen metingen hebt",
-         "Omdat de assen daar helemaal verdwijnen"
-        ],
-        "c": 2,
-        "d": 3,
-        "u": "Buiten het gemeten gebied heb je geen data, dus je weet niet of het verband daar nog geldt.",
-        "uo": [
-         "Uiterlijk zegt niets over zekerheid.",
-         "Het gemiddelde is niet de reden.",
-         "Klopt: buiten het bereik zijn er geen metingen.",
-         "De assen verdwijnen niet."
-        ],
-        "uh": "Buiten het meetbereik: geen data, dus onzeker."
-       },
-       {
-        "v": "Wat is extrapoleren?",
-        "o": [
-         "Een waarde aflezen binnen het bereik",
-         "Het gemiddelde berekenen",
-         "De assen van de grafiek benoemen",
-         "Een uitspraak doen buiten het meetbereik"
-        ],
-        "c": 3,
-        "d": 2,
-        "u": "Extrapoleren is het doortrekken van een verband buiten het gebied waar je hebt gemeten.",
-        "uo": [
-         "Dat is aflezen binnen het bereik.",
-         "Dat is een berekening, geen extrapolatie.",
-         "Dat is de assen benoemen.",
-         "Klopt: buiten het meetbereik uitspraken doen."
-        ],
-        "uh": "Extrapoleren = buiten het meetbereik doortrekken."
-       },
-       {
-        "v": "Wat is een trend in een grafiek?",
-        "o": [
-         "De algemene richting van het verband",
-         "De exacte waarde van één punt",
-         "De titel die boven de grafiek staat",
-         "De naam van de onderzoeker"
+         "de as begint niet bij nul",
+         "de staven zijn niet even breed",
+         "er staat geen titel boven",
+         "er zijn maar twee staven"
         ],
         "c": 0,
-        "d": 1,
-        "u": "Een trend is de algemene richting: stijgend, dalend of vlak.",
-        "uo": [
-         "Klopt: de algemene richting.",
-         "Dat is één los punt, geen trend.",
-         "Dat is de titel.",
-         "Dat is de naam."
-        ],
-        "uh": "Trend = de algemene richting (stijgen/dalen/vlak)."
-       },
-       {
-        "v": "In een grafiek stijgt de lijn steeds. Wat is de trend?",
-        "o": [
-         "Dalend",
-         "Stijgend",
-         "Vlak",
-         "Er is geen trend"
-        ],
-        "c": 1,
-        "d": 1,
-        "u": "Een lijn die blijft omhooggaan, laat een stijgende trend zien.",
-        "uo": [
-         "Dalend zou omlaag gaan.",
-         "Klopt: de lijn stijgt.",
-         "Vlak zou horizontaal zijn.",
-         "Er is wel degelijk een trend."
-        ],
-        "uh": "Omhoog = stijgende trend."
-       },
-       {
-        "v": "Hoe lees je de fotosynthesesnelheid uit een grafiek af?",
-        "o": [
-         "Je raadt zomaar een willekeurig getal",
-         "Je kijkt naar de kleur",
-         "Je leest de gemeten waarde op de y-as af",
-         "Je gebruikt de titel als getal"
-        ],
-        "c": 2,
         "d": 3,
-        "u": "De fotosynthesesnelheid staat als afhankelijke variabele op de y-as; die lees je bij de juiste x-waarde af.",
+        "s": 0,
+        "u": "Een as die bij 95 begint, maakt een verschil van 4% heel groot.",
         "uo": [
-         "Raden is geen aflezen.",
-         "De kleur geeft geen waarde.",
-         "Klopt: aflezen op de y-as bij de x-waarde.",
-         "De titel is geen getal."
+         "Klopt: de verticale as begint bij 95%. Daardoor lijkt het verschil tussen 98% en 102% enorm, terwijl het maar 4 procentpunt is. Bij een as vanaf nul zie je dat het verschil klein is.",
+         "Koos je de breedte? In de beschrijving zijn de staven even breed. Het vertekende beeld komt door waar de as begint.",
+         "Koos je geen titel? Een titel ontbreekt misschien, maar dat maakt het verschil niet groter dan het is. Dat doet de as.",
+         "Koos je twee staven? Twee staven kan prima. Het probleem is dat de as niet bij nul begint. Met een as vanaf nul zie je het echte verschil."
         ],
-        "uh": "Fotosynthesesnelheid = van de y-as aflezen."
+        "uh": "Waar begint de verticale as?",
+        "ctx": "Een fabrikant van plantenvoeding laat een staafdiagram zien. De staaf van planten met zijn voeding (102% groei) is drie keer zo hoog als die van planten met gewone voeding (98% groei). De verticale as loopt van 95% tot 103%."
        },
        {
-        "v": "Waarom bereken je een gemiddelde uit meerdere metingen?",
+        "v": "Je maakt een grafiek van de groei van een plant tegen de tijd. Wat zet je op de horizontale as?",
         "o": [
-         "Om de grafiek kleiner te maken",
-         "Om de assen uit de grafiek te verwijderen",
-         "Om maar één meting te hoeven doen",
-         "Om toeval van losse metingen te verminderen"
+         "de naam van de plant",
+         "de lengte van de plant",
+         "de hoeveelheid water",
+         "de tijd"
         ],
         "c": 3,
-        "d": 2,
-        "u": "Een gemiddelde van meerdere metingen ligt dichter bij de werkelijkheid dan een enkele meting.",
-        "uo": [
-         "Het gaat niet om de grootte van de grafiek.",
-         "De assen blijven.",
-         "Je doet juist meerdere metingen.",
-         "Klopt: het gemiddelde vermindert de invloed van toeval."
-        ],
-        "uh": "Gemiddelde vermindert de invloed van toeval."
-       },
-       {
-        "v": "Een tabel toont per temperatuur een meetwaarde. Wat is een tabel?",
-        "o": [
-         "Een geordend overzicht van meetwaarden",
-         "Een nepbehandeling zonder stof",
-         "De verwachting die je van tevoren opstelt",
-         "De titel van de grafiek"
-        ],
-        "c": 0,
         "d": 1,
-        "u": "Een tabel is een geordend overzicht van meetwaarden in rijen en kolommen.",
+        "s": 0,
+        "u": "Tijd is de onafhankelijke variabele: die loopt gewoon door.",
         "uo": [
-         "Klopt: een geordend overzicht van meetwaarden.",
-         "Dat is een placebo.",
-         "Dat is de hypothese.",
-         "Dat is de grafiektitel."
+         "Koos je de naam van de plant? Een naam is geen grootheid met een eenheid. Die kan in de titel. Langs een as staat altijd een grootheid met eenheid.",
+         "Koos je de lengte? Dat is wat je meet, de afhankelijke variabele. Die zet je op de verticale as.",
+         "Koos je de hoeveelheid water? Die houd je constant in dit onderzoek. Die staat niet op een as. Die is in elke meting even groot.",
+         "Klopt: de tijd loopt vanzelf door en is de onafhankelijke variabele. Die zet je op de horizontale as. De lengte die je meet, komt op de verticale as."
         ],
-        "uh": "Tabel = geordend overzicht van meetwaarden."
+        "uh": "Wat loopt vanzelf door?"
        },
        {
-        "v": "Waarom moet je de eenheid op een as controleren?",
+        "v": "De grafiek van de enzymactiviteit heeft zijn top bij 37 °C. Wat is de optimumtemperatuur?",
         "o": [
-         "Anders wordt de hele grafiek een stuk kleiner",
-         "Anders lees je de waarde verkeerd af",
-         "Anders verdwijnt het gemiddelde",
-         "Anders krijg je een controlegroep"
+         "100 °C",
+         "0 °C",
+         "37 °C",
+         "de temperatuur waarbij de lijn de x-as raakt"
+        ],
+        "c": 2,
+        "d": 1,
+        "s": 1,
+        "u": "Het optimum ligt bij de top van de grafiek.",
+        "uo": [
+         "Koos je 100 °C? Bij die temperatuur is een menselijk enzym allang kapot. Het optimum is de top van de grafiek.",
+         "Koos je 0 °C? Bij lage temperaturen werkt een enzym juist langzaam. Het optimum ligt bij de top. Dat is de plek met de hoogste activiteit.",
+         "Klopt: de optimumtemperatuur is de temperatuur waarbij het enzym het snelst werkt. Dat is de top van de grafiek: 37 °C.",
+         "Koos je waar de lijn de x-as raakt? Daar is de activiteit nul. Het optimum is waar de activiteit het hoogst is."
+        ],
+        "uh": "Waar is de grafiek het hoogst?"
+       },
+       {
+        "v": "Hoeveel zuurstof is er na 5 minuten gevormd?",
+        "o": [
+         "20 mL",
+         "25 mL",
+         "30 mL",
+         "50 mL"
         ],
         "c": 1,
         "d": 3,
-        "u": "Zonder de eenheid weet je niet wat een getal betekent, dus kun je de waarde verkeerd aflezen.",
+        "s": 1,
+        "u": "Rechte lijn: 5 mL per minuut, dus na 5 minuten 25 mL.",
         "uo": [
-         "De grootte verandert niet.",
-         "Klopt: zonder de eenheid lees je verkeerd af.",
-         "Het gemiddelde blijft.",
-         "Er ontstaat geen controlegroep."
+         "Koos je 20 mL? Dat is de waarde na 4 minuten. Na 5 minuten is er nog een minuut bij: 5 mL meer. Die minuut levert nog eens 5 mL op.",
+         "Klopt: de lijn is recht en stijgt elke 2 minuten met 10 mL, dus 5 mL per minuut. Na 5 minuten is dat 25 mL. Dit heet interpoleren: aflezen tussen twee meetpunten.",
+         "Koos je 30 mL? Dat is de waarde na 6 minuten. Na 5 minuten zit je precies tussen 20 en 30 mL. Je leest dus af tussen twee meetpunten in.",
+         "Koos je 50 mL? Dan heb je 5 keer 10 gerekend. Maar 10 mL hoort bij 2 minuten, niet bij 1 minuut."
         ],
-        "uh": "Controleer de eenheid, anders lees je fout af."
+        "uh": "Hoeveel komt er per minuut bij?",
+        "ctx": "Bij een proef met lever en waterstofperoxide meet een leerling de hoeveelheid gevormde zuurstof. Na 2 minuten is er 10 mL, na 4 minuten 20 mL en na 6 minuten 30 mL. In de grafiek verbindt ze de punten met een rechte lijn door de oorsprong."
        },
        {
-        "v": "Twee metingen: 20 en 22 graden. Wat is het gemiddelde?",
+        "v": "Hoeveel groeide de zonnebloem gemiddeld per dag tussen dag 10 en dag 20?",
         "o": [
-         "42 graden",
-         "Het verschil van 2 graden tussen de metingen",
-         "21 graden",
-         "20 graden"
+         "1,2 cm per dag",
+         "12 cm per dag",
+         "2,6 cm per dag",
+         "1,4 cm per dag"
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 1,
+        "u": "Toename 26 − 14 = 12 cm in 10 dagen: 1,2 cm per dag.",
+        "uo": [
+         "Klopt: de lengte ging van 14 naar 26 cm. Dat is 12 cm in 10 dagen, dus gemiddeld 1,2 cm per dag.",
+         "Koos je 12 cm per dag? 12 cm is de totale groei in die 10 dagen. Per dag moet je nog delen door 10.",
+         "Koos je 2,6 cm per dag? Dan heb je 26 cm door 10 gedeeld. Je moet de toename gebruiken: 26 − 14.",
+         "Koos je 1,4 cm per dag? Dan heb je 14 door 10 gedeeld. Dat is de lengte op dag 10, niet de groei."
+        ],
+        "uh": "Toename gedeeld door tijd.",
+        "ctx": "Een leerling meet elke vijf dagen de lengte van een zonnebloem. Uit de grafiek leest ze af: dag 0: 2 cm, dag 5: 7 cm, dag 10: 14 cm, dag 15: 20 cm, dag 20: 26 cm, dag 25: 30 cm."
+       },
+       {
+        "v": "Wat betekent het als een grafiek op een bepaald stuk heel steil loopt?",
+        "o": [
+         "daar is de hoogste waarde bereikt",
+         "de meting is daar mislukt",
+         "de grootheid blijft daar gelijk",
+         "de grootheid verandert daar snel"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 1,
+        "u": "Steilheid = snelheid van verandering.",
+        "uo": [
+         "Koos je hoogste waarde? De top van een grafiek is vlak. Een steil stuk zegt hoe snel het verandert, niet hoe hoog het is.",
+         "Koos je mislukte meting? Een steil stuk is gewoon een snelle verandering. Daar is niets mis mee. Het laat alleen zien dat er veel verandert.",
+         "Koos je gelijk blijven? Dan loopt de lijn juist horizontaal. Steil betekent snel veranderen. Een steil stuk laat juist veel verandering zien.",
+         "Klopt: hoe steiler de lijn, hoe sneller de grootheid op de verticale as verandert per eenheid op de horizontale as."
+        ],
+        "uh": "Steil = snel of langzaam?"
+       },
+       {
+        "v": "Wanneer is een grafiek handiger dan een tabel?",
+        "o": [
+         "als je maar één meting hebt",
+         "als je exacte getallen wilt opzoeken",
+         "als je een verband wilt laten zien",
+         "als je meetwaarden zonder eenheid hebt"
         ],
         "c": 2,
         "d": 2,
-        "u": "Het gemiddelde is (20 + 22) gedeeld door 2, dus 21 graden.",
+        "s": 2,
+        "u": "Een grafiek laat in één oogopslag een trend of verband zien.",
         "uo": [
-         "42 is de som, niet het gemiddelde.",
-         "2 is het verschil, niet het gemiddelde.",
-         "Klopt: (20 + 22) / 2 = 21.",
-         "20 is het laagste getal, niet het gemiddelde."
+         "Koos je één meting? Eén meting kun je niet in een lijn zetten. Dan heb je geen grafiek nodig. Een grafiek heeft meerdere punten nodig.",
+         "Koos je exacte getallen? Die lees je juist makkelijker af in een tabel. Een grafiek is voor het verband.",
+         "Klopt: in een grafiek zie je direct of iets stijgt, daalt of een top heeft. Een tabel is handiger om precieze getallen op te zoeken.",
+         "Koos je zonder eenheid? Meetwaarden hebben altijd een eenheid, in een tabel en in een grafiek."
         ],
-        "uh": "Gemiddelde = som / aantal, hier 21."
+        "uh": "Wat zie je in één oogopslag?"
        },
        {
-        "v": "Wat kun je NIET zeker zeggen op basis van een grafiek?",
+        "v": "In welk gebied nam het aantal soorten procentueel het sterkst af?",
         "o": [
-         "Een afgelezen waarde binnen het bereik",
-         "De trend van de meetlijn",
-         "Het gemiddelde van de meetpunten",
-         "Wat er gebeurt buiten het meetbereik"
-        ],
-        "c": 3,
-        "d": 3,
-        "u": "Buiten het gemeten gebied heb je geen data, dus daar kun je geen zekere uitspraak over doen.",
-        "uo": [
-         "Binnen het bereik kun je aflezen.",
-         "De trend kun je binnen het bereik zien.",
-         "Het gemiddelde kun je berekenen.",
-         "Klopt: buiten het meetbereik weet je het niet zeker."
-        ],
-        "uh": "Buiten het meetbereik: geen zekere uitspraak."
-       },
-       {
-        "v": "Wat betekent een vlakke lijn in een grafiek?",
-        "o": [
-         "De waarde verandert niet",
-         "De waarde stijgt snel",
-         "De waarde daalt snel",
-         "De grafiek is helemaal fout getekend"
-        ],
-        "c": 0,
-        "d": 1,
-        "u": "Een horizontale (vlakke) lijn betekent dat de gemeten waarde gelijk blijft.",
-        "uo": [
-         "Klopt: de waarde blijft gelijk.",
-         "Bij stijgen gaat de lijn omhoog.",
-         "Bij dalen gaat de lijn omlaag.",
-         "De grafiek hoeft niet fout te zijn."
-        ],
-        "uh": "Vlakke lijn = de waarde verandert niet."
-       },
-       {
-        "v": "Waarom teken je meetpunten met foutbalken (spreiding)?",
-        "o": [
-         "Om de grafiek te versieren",
-         "Om te tonen hoe zeker de metingen zijn",
-         "Om de x-as van de grafiek te verlengen",
-         "Om de titel groter te maken"
+         "gebied A",
+         "gebied B",
+         "gebied C",
+         "gebied D"
         ],
         "c": 1,
         "d": 3,
-        "u": "Foutbalken tonen de spreiding, zodat je ziet hoe betrouwbaar elk meetpunt is.",
+        "s": 2,
+        "u": "B: van 20 naar 12 = −40%. C daalde het meest in aantal, maar minder in procent.",
         "uo": [
-         "Ze zijn geen versiering.",
-         "Klopt: ze tonen de spreiding en zekerheid.",
-         "Ze verlengen de as niet.",
-         "Ze veranderen de titel niet."
+         "Koos je gebied A? Daar ging het van 40 naar 30: 10 van de 40 is 25%. Dat is minder dan in B. B daalde met 40% dus sterker.",
+         "Klopt: in gebied B daalde het aantal van 20 naar 12. Dat is 8 van de 20, dus 40%. Geen ander gebied daalde procentueel zo sterk.",
+         "Koos je gebied C? Daar daalde het aantal het meest: 15 soorten. Maar van 50 is dat 30%. Procentueel daalde B sterker.",
+         "Koos je gebied D? Daar ging het van 10 naar 8: 20%. Dat is de kleinste procentuele daling. In B ging er procentueel twee keer zoveel af."
         ],
-        "uh": "Foutbalken tonen de spreiding van de metingen."
+        "uh": "Reken elke daling om naar procent.",
+        "ctx": "Onderzoekers tellen in vier natuurgebieden het aantal soorten dagvlinders in 2010 en in 2020. Gebied A: 40 en 30. Gebied B: 20 en 12. Gebied C: 50 en 35. Gebied D: 10 en 8."
        },
        {
-        "v": "Wat doe je bij het aflezen van een tabel?",
+        "v": "Hoeveel steeg de bloedsuikerspiegel van persoon C na de maaltijd?",
         "o": [
-         "De kleur van de tabel meten",
-         "De grafiek negeren en gokken",
-         "De juiste rij en kolom opzoeken",
-         "De titel van de tabel als waarde nemen"
-        ],
-        "c": 2,
-        "d": 2,
-        "u": "In een tabel zoek je de juiste rij en kolom om de bijbehorende meetwaarde te vinden.",
-        "uo": [
-         "De kleur meet je niet.",
-         "Gokken is geen aflezen.",
-         "Klopt: de juiste rij en kolom opzoeken.",
-         "De titel is geen meetwaarde."
-        ],
-        "uh": "Tabel aflezen = juiste rij en kolom."
-       },
-       {
-        "v": "Welke uitspraak over grafieken lezen klopt?",
-        "o": [
-         "Concludeer altijd buiten het meetbereik",
-         "Een enkele meting is altijd genoeg",
-         "De kleur bepaalt de waarde",
-         "Lees eerst de assen en hun eenheden"
-        ],
-        "c": 3,
-        "d": 2,
-        "u": "Begin met de assen en eenheden lezen; concludeer niet buiten het meetbereik en steun niet op één meting.",
-        "uo": [
-         "Buiten het meetbereik concluderen is juist onzeker.",
-         "Eén meting is meestal niet genoeg.",
-         "De kleur bepaalt de waarde niet.",
-         "Klopt: begin bij de assen en eenheden."
-        ],
-        "uh": "Eerst assen en eenheden, blijf binnen het meetbereik."
-       },
-       {
-        "v": "Twee onderzoekers meten dezelfde plant. De spreiding is klein. Wat betekent dat?",
-        "o": [
-         "De metingen liggen dicht bij elkaar",
-         "De metingen liggen ver uit elkaar",
-         "Er is helemaal niet gemeten",
-         "De grafiek heeft helemaal geen y-as"
+         "3,4 mmol/L",
+         "8,6 mmol/L",
+         "5,2 mmol/L",
+         "13,8 mmol/L"
         ],
         "c": 0,
         "d": 3,
-        "u": "Een kleine spreiding betekent dat de metingen dicht bij elkaar liggen, dus goed reproduceerbaar.",
+        "s": 2,
+        "u": "Na − voor: 8,6 − 5,2 = 3,4 mmol/L.",
         "uo": [
-         "Klopt: kleine spreiding = dicht bij elkaar.",
-         "Ver uit elkaar hoort bij grote spreiding.",
-         "Er is wel gemeten.",
-         "De y-as is er wel."
+         "Klopt: de stijging is de waarde na de maaltijd min de waarde ervoor: 8,6 − 5,2 = 3,4 mmol/L.",
+         "Koos je 8,6? Dat is de waarde na de maaltijd. De stijging is het verschil met de waarde ervoor.",
+         "Koos je 5,2? Dat is de waarde voor de maaltijd. Je moet het verschil uitrekenen. Na min voor geeft 8,6 − 5,2 = 3,4 mmol/L.",
+         "Koos je 13,8? Dan heb je de twee waarden opgeteld. Een stijging is een verschil: aftrekken. Optellen geeft nooit een verandering."
         ],
-        "uh": "Kleine spreiding = metingen dicht bij elkaar."
+        "uh": "Na min voor.",
+        "ctx": "In een tabel staat de bloedsuikerspiegel van vier personen voor en een uur na een maaltijd (in mmol/L). Persoon A: 4,8 en 7,1. Persoon B: 5,0 en 6,9. Persoon C: 5,2 en 8,6. Persoon D: 4,6 en 9,8. Persoon D heeft diabetes type 2."
+       },
+       {
+        "v": "Hoeveel procent nam het aantal getelde huismussen af tussen 2015 en 2024?",
+        "o": [
+         "65%",
+         "42%",
+         "78%",
+         "35%"
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 2,
+        "u": "(120 − 78) / 120 × 100% = 35%.",
+        "uo": [
+         "Koos je 65%? Dat is het percentage dat er nog is: 78 / 120. De afname is 100 − 65 = 35%. Let goed op wat de vraag stelt: de afname.",
+         "Koos je 42%? 42 is het aantal mussen dat minder is geteld, geen percentage. Je moet nog delen door 120.",
+         "Koos je 78%? Dan heb je het aantal in 2024 als percentage genomen. De afname is het verschil gedeeld door de beginwaarde.",
+         "Klopt: de afname is 120 − 78 = 42 mussen. Ten opzichte van 120 is dat 42 / 120 = 0,35, dus 35%."
+        ],
+        "uh": "Afname gedeeld door de beginwaarde.",
+        "ctx": "Bij de jaarlijkse tuinvogeltelling in een gemeente telden vrijwilligers het aantal huismussen in dezelfde 50 tuinen. 2015: 120 mussen. 2018: 96. 2021: 84. 2024: 78. De gemeente wil weten hoe sterk de huismus is achteruitgegaan."
+       },
+       {
+        "v": "Hoe bereken je het gemiddelde van een reeks metingen?",
+        "o": [
+         "de middelste waarde nemen zonder te rekenen",
+         "de hoogste en laagste waarde optellen",
+         "alle waarden optellen en delen door het aantal",
+         "de hoogste waarde delen door het aantal"
+        ],
+        "c": 2,
+        "d": 1,
+        "s": 3,
+        "u": "Som / aantal.",
+        "uo": [
+         "Koos je de middelste waarde? Dat is de mediaan, als je de waarden op volgorde zet. Het gemiddelde is iets anders.",
+         "Koos je hoogste plus laagste? Daarmee gebruik je maar twee waarden. Het gemiddelde gebruikt ze allemaal.",
+         "Klopt: je telt alle meetwaarden op en deelt door het aantal metingen. Zo krijg je het gemiddelde.",
+         "Koos je hoogste gedeeld door aantal? Dan laat je alle andere waarden weg. Je moet alle waarden optellen."
+        ],
+        "uh": "Optellen en dan…"
+       },
+       {
+        "v": "Hoeveel is het gemiddelde van deze vijf metingen?",
+        "o": [
+         "5",
+         "6",
+         "30",
+         "7"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 3,
+        "u": "4 + 6 + 5 + 7 + 8 = 30; 30 / 5 = 6.",
+        "uo": [
+         "Koos je 5? Dat is de derde meting in de rij. Het gemiddelde bereken je met alle waarden: 30 / 5 = 6.",
+         "Klopt: de som is 30 en er zijn 5 metingen. 30 / 5 = 6 slagen per 2 seconden.",
+         "Koos je 30? Dat is de som. Je moet nog delen door het aantal metingen, vijf. Dus 30 gedeeld door 5 metingen geeft 6.",
+         "Koos je 7? Dat is de vierde meting. Het gemiddelde is 30 / 5 = 6. Een losse meting is nog geen gemiddelde; je moet alle vijf de waarden gebruiken."
+        ],
+        "uh": "Som gedeeld door 5.",
+        "ctx": "Een leerling telt onder de microscoop de hartslag van een watervlo. Omdat het hartje zo snel klopt, telt ze steeds twee seconden. Ze doet dat vijf keer achter elkaar en vindt 4, 6, 5, 7 en 8 slagen per 2 seconden."
+       },
+       {
+        "v": "Welke uitspraak over de twee groepen klopt?",
+        "o": [
+         "groep B heeft meer spreiding",
+         "groep A heeft een hoger gemiddelde",
+         "groep B heeft een hoger gemiddelde",
+         "beide groepen zijn precies gelijk"
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 3,
+        "u": "Zelfde gemiddelde, maar B loopt van 10 tot 30.",
+        "uo": [
+         "Klopt: beide groepen hebben gemiddeld 20 kiemplantjes, maar in groep B lopen de waarden uiteen van 10 tot 30. Die spreiding is veel groter dan in groep A (18 tot 22).",
+         "Koos je A hoger? Beide groepen hebben gemiddeld 20. Het verschil zit in de spreiding. A is alleen minder gespreid, niet hoger.",
+         "Koos je B hoger? Ook groep B heeft gemiddeld 20. De waarden liggen alleen verder uit elkaar.",
+         "Koos je precies gelijk? Het gemiddelde is gelijk, maar de spreiding niet. In B lopen de waarden veel verder uiteen."
+        ],
+        "uh": "Gemiddelde én spreiding bekijken.",
+        "ctx": "In twee groepen van tien petrischalen telt een leerling hoeveel van de dertig zaden zijn gekiemd. Groep A: gemiddeld 20, de waarden liggen tussen 18 en 22. Groep B: gemiddeld 20, de waarden liggen tussen 10 en 30."
+       },
+       {
+        "v": "Wat is het gemiddelde als de leerling de meetfout weglaat?",
+        "o": [
+         "13",
+         "15,8",
+         "31",
+         "12"
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 3,
+        "u": "Zonder 31: (12 + 13 + 11 + 12) / 4 = 48 / 4 = 12.",
+        "uo": [
+         "Koos je 13? Dat is de hoogste van de vier goede metingen, niet het gemiddelde. Tel de vier goede waarden op en deel door 4.",
+         "Koos je 15,8? Dat is het gemiddelde met de meetfout erbij: 79 / 5. Eén uitschieter trekt het gemiddelde flink omhoog.",
+         "Koos je 31? Dat is juist de foute meting die je weglaat. Die waarde is fout geteld, dus die tel je niet mee. Reken met de andere vier.",
+         "Klopt: zonder de foute meting van 31 blijven 12, 13, 11 en 12 over. Samen 48, gedeeld door 4 is 12."
+        ],
+        "uh": "Laat 31 weg en reken opnieuw.",
+        "ctx": "Een leerling telt vijf keer de belletjes van waterpest per minuut: 12, 13, 11, 12 en 31. Bij de laatste meting blijkt dat ze per ongeluk twee minuten heeft geteld in plaats van één. Ze mag die meting daarom weglaten."
+       },
+       {
+        "v": "Waarom is de mediaan soms een betere maat dan het gemiddelde?",
+        "o": [
+         "de mediaan kun je zonder metingen bepalen",
+         "de mediaan is altijd hoger dan het gemiddelde",
+         "één uitschieter verschuift hem nauwelijks",
+         "de mediaan laat de spreiding zien"
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 3,
+        "u": "De mediaan is de middelste waarde; uitschieters hebben weinig invloed.",
+        "uo": [
+         "Koos je zonder metingen? Voor de mediaan heb je juist alle metingen nodig, op volgorde gezet.",
+         "Koos je altijd hoger? De mediaan kan hoger of lager zijn dan het gemiddelde. Het voordeel is dat hij weinig gevoelig is voor uitschieters.",
+         "Klopt: de mediaan is de middelste waarde als je de metingen op volgorde zet. Eén extreem hoge of lage waarde verschuift die nauwelijks, terwijl het gemiddelde er flink door verandert.",
+         "Koos je de spreiding? De mediaan is één middelste waarde. Spreiding laat je zien met bijvoorbeeld het bereik of de standaarddeviatie."
+        ],
+        "uh": "Wat doet één heel grote waarde?"
+       },
+       {
+        "v": "Wat zegt een grote standaarddeviatie over de metingen?",
+        "o": [
+         "ze zijn allemaal gelijk",
+         "ze liggen ver uit elkaar",
+         "het gemiddelde is hoog",
+         "de meting is zeker valide"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 4,
+        "u": "Standaarddeviatie = maat voor spreiding rond het gemiddelde.",
+        "uo": [
+         "Koos je allemaal gelijk? Dan is de standaarddeviatie juist nul. Hoe groter, hoe meer verschil tussen de metingen.",
+         "Klopt: de standaarddeviatie geeft aan hoe ver de metingen gemiddeld van het gemiddelde af liggen. Een grote standaarddeviatie betekent veel spreiding.",
+         "Koos je hoog gemiddelde? De standaarddeviatie zegt niets over hoe hoog het gemiddelde is, alleen over de spreiding eromheen.",
+         "Koos je valide? De standaarddeviatie zegt iets over spreiding, niet of je het goede meet. Spreiding en validiteit zijn twee verschillende dingen."
+        ],
+        "uh": "Denk aan spreiding."
+       },
+       {
+        "v": "Tussen welke lengtes ligt ongeveer 68% van de leerlingen?",
+        "o": [
+         "tussen 163 en 177 cm",
+         "tussen 170 en 177 cm",
+         "tussen 156 en 184 cm",
+         "tussen 168 en 172 cm"
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 4,
+        "u": "Gemiddelde ± 1 standaarddeviatie: 170 − 7 en 170 + 7.",
+        "uo": [
+         "Klopt: bij een normale verdeling ligt ongeveer 68% van de waarden binnen één standaarddeviatie van het gemiddelde: van 170 − 7 = 163 tot 170 + 7 = 177 cm.",
+         "Koos je 170 tot 177? Dat is maar de helft: alleen boven het gemiddelde. 68% ligt aan beide kanten, van 163 tot 177.",
+         "Koos je 156 tot 184? Dat is gemiddelde ± 2 standaarddeviaties. Daarbinnen ligt ongeveer 95%. Voor 68% gebruik je één sd aan elke kant.",
+         "Koos je 168 tot 172? Dat is veel smaller dan één standaarddeviatie van 7 cm. Er ligt veel minder dan 68% in."
+        ],
+        "uh": "Gemiddelde min en plus één standaarddeviatie.",
+        "ctx": "Op een school is de lichaamslengte van 400 leerlingen van 16 jaar gemeten. De lengtes zijn normaal verdeeld met een gemiddelde van 170 cm en een standaarddeviatie van 7 cm. Bij een normale verdeling ligt ongeveer 68% van de waarden binnen één standaarddeviatie van het gemiddelde."
+       },
+       {
+        "v": "Welke meetmethode is het betrouwbaarst?",
+        "o": [
+         "dat kun je zonder gemiddelde niet zeggen",
+         "methode 2",
+         "beide even betrouwbaar",
+         "methode 1"
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 4,
+        "u": "Zelfde gemiddelde; methode 1 heeft de kleinste standaarddeviatie.",
+        "uo": [
+         "Koos je dat je het niet kunt zeggen? Het gemiddelde is gegeven (5,0 voor beide). En de standaarddeviatie laat de spreiding zien.",
+         "Koos je methode 2? Die heeft een veel grotere standaarddeviatie. Herhaalde metingen lopen daar ver uiteen.",
+         "Koos je even betrouwbaar? Het gemiddelde is gelijk, maar de spreiding verschilt sterk. Betrouwbaarheid hangt van de spreiding af.",
+         "Klopt: beide methoden geven gemiddeld 5,0 mmol/L, maar methode 1 heeft een standaarddeviatie van 0,1 en methode 2 van 0,8. Bij methode 1 liggen herhaalde metingen dichter bij elkaar: betrouwbaarder."
+        ],
+        "uh": "Kleinste spreiding = …",
+        "ctx": "Een laboratorium test twee apparaten om de bloedsuikerspiegel te meten. Met elk apparaat wordt hetzelfde bloedmonster twintig keer gemeten. Methode 1: gemiddeld 5,0 mmol/L, standaarddeviatie 0,1. Methode 2: gemiddeld 5,0 mmol/L, standaarddeviatie 0,8."
+       },
+       {
+        "v": "Hoe wordt de standaarddeviatie vaak in een grafiek weergegeven?",
+        "o": [
+         "met een andere kleur voor elk punt",
+         "als een titel boven de grafiek",
+         "als foutbalken bij elk punt",
+         "als een tweede horizontale as"
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 4,
+        "u": "Foutbalken: een streepje van gemiddelde − sd tot gemiddelde + sd.",
+        "uo": [
+         "Koos je een andere kleur? Kleur kan groepen onderscheiden, maar laat de spreiding niet zien. Daar zijn foutbalken voor.",
+         "Koos je een titel? De titel vertelt waar de grafiek over gaat. De spreiding zie je aan foutbalken.",
+         "Klopt: bij elk gemiddelde staat een verticaal streepje, een foutbalk, dat loopt van gemiddelde min tot gemiddelde plus de standaarddeviatie. Zo zie je de spreiding.",
+         "Koos je een tweede as? De standaarddeviatie heeft dezelfde eenheid als de meting en staat bij de punten zelf."
+        ],
+        "uh": "Streepjes boven en onder een punt."
+       },
+       {
+        "v": "Wat betekent extrapoleren?",
+        "o": [
+         "aflezen tussen twee meetpunten",
+         "een grafiek doortrekken buiten het meetbereik",
+         "de gemiddelde waarde uitrekenen",
+         "een meetfout uit de tabel halen"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 5,
+        "u": "Extrapoleren = voorspellen buiten de metingen; dat is onzeker.",
+        "uo": [
+         "Koos je tussen twee meetpunten? Dat is interpoleren. Dat is veiliger, omdat je binnen het meetbereik blijft.",
+         "Klopt: extrapoleren is een grafiek doortrekken voorbij de laatste meting en zo een waarde voorspellen. Dat is riskant, omdat je niet weet of het verband daar hetzelfde blijft.",
+         "Koos je het gemiddelde? Dat heeft niets met extrapoleren te maken. Het gemiddelde is een rekensom met alle metingen, extrapoleren is doortrekken buiten je metingen.",
+         "Koos je een meetfout weghalen? Dat is gegevens opschonen, geen extrapoleren. Extrapoleren gaat over voorspellen buiten het meetbereik."
+        ],
+        "uh": "Buiten of binnen de metingen?"
+       },
+       {
+        "v": "Waarom is de voorspelling van de leerling voor 70 °C onjuist?",
+        "o": [
+         "70 °C ligt buiten het meetbereik",
+         "het enzym werkt bij 70 °C precies even snel",
+         "enzymen werken bij elke temperatuur",
+         "de grafiek stijgt tussen 10 en 40 °C niet"
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 5,
+        "u": "Buiten het meetbereik kun je niet doortrekken; boven het optimum denatureert het enzym.",
+        "uo": [
+         "Klopt: de leerling heeft alleen tussen 10 en 40 °C gemeten. Daarbuiten weet je niet hoe het verband loopt. Bij hoge temperaturen denatureert het enzym en daalt de activiteit juist.",
+         "Koos je precies even snel? Ook dat weet je niet zonder te meten. Bovendien verliest een menselijk enzym bij 70 °C zijn vorm.",
+         "Koos je elke temperatuur? Enzymen hebben een optimum. Boven die temperatuur denatureren ze en werken ze niet meer.",
+         "Koos je dat de grafiek niet stijgt? Tussen 10 en 40 °C stijgt de activiteit wel. Het probleem is het doortrekken voorbij 40 °C."
+        ],
+        "uh": "Waar heeft ze gemeten?",
+        "ctx": "Een leerling meet de activiteit van een enzym uit speeksel bij 10, 20, 30 en 40 °C. De activiteit stijgt bij elke stap. Ze trekt de lijn door en voorspelt dat het enzym bij 70 °C nog veel sneller werkt dan bij 40 °C."
+       },
+       {
+        "v": "Waarom kun je het aantal bacteriën na 48 uur niet met deze grafiek voorspellen?",
+        "o": [
+         "de grafiek is na 6 uur al een rechte lijn",
+         "bacteriën stoppen na zes uur altijd met delen",
+         "na 48 uur zijn er nog evenveel bacteriën als na 6 uur",
+         "remmende factoren gaan de groei afremmen"
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 5,
+        "u": "Voedsel raakt op en afvalstoffen hopen op: buiten het meetbereik verandert het verband.",
+        "uo": [
+         "Koos je een rechte lijn? De grafiek is in de meting juist steeds steiler: exponentiële groei. Een rechte lijn zou bij gelijkmatige groei horen.",
+         "Koos je altijd na zes uur stoppen? Bacteriën stoppen niet op een vast moment. Het hangt af van voedsel en ruimte.",
+         "Koos je evenveel als na 6 uur? Dat weet je ook niet zonder te meten. Waarschijnlijk zijn er meer, maar niet zoveel als de doorgetrokken lijn zegt.",
+         "Klopt: na een tijd raken voedsel en ruimte op en hopen afvalstoffen zich op. De exponentiële groei houdt dan op. Doortrekken buiten het meetbereik geeft een veel te hoog getal."
+        ],
+        "uh": "Blijft er genoeg voedsel?",
+        "ctx": "In een kweek met voedingsbodem verdubbelt het aantal bacteriën elke 30 minuten. Een leerling meet zes uur lang en ziet een steeds steiler stijgende grafiek. Ze trekt de lijn door en berekent dat er na 48 uur meer bacteriën zouden zijn dan er atomen op aarde zijn."
+       },
+       {
+        "v": "Waarom is interpoleren betrouwbaarder dan extrapoleren?",
+        "o": [
+         "interpoleren gebruikt altijd meer metingen",
+         "je hebt geen grafiek nodig",
+         "je blijft binnen het gemeten gebied",
+         "bij interpoleren is er geen spreiding"
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 5,
+        "u": "Tussen meetpunten weet je hoe het verband loopt; daarbuiten niet.",
+        "uo": [
+         "Koos je meer metingen? Het aantal metingen is hetzelfde. Het verschil is of je binnen of buiten het meetbereik afleest.",
+         "Koos je geen grafiek nodig? Je interpoleert juist vaak met een grafiek of een rechte lijn tussen twee punten.",
+         "Klopt: bij interpoleren lees je af tussen meetpunten die je echt hebt gemeten. Je weet dan hoe het verband daar ongeveer loopt. Bij extrapoleren ga je buiten je metingen en kan het verband veranderen.",
+         "Koos je geen spreiding? Ook bij interpoleren is er spreiding in de metingen. Het voordeel is dat je in het gemeten gebied blijft."
+        ],
+        "uh": "Binnen of buiten de metingen?"
        }
       ],
       "oe": [
        {
-        "vraag": "Leg uit waarom je bij een grafiek eerst naar de assen en hun eenheden kijkt.",
-        "antwoord": "De assen vertellen welke grootheid je afleest en in welke eenheid. Als je de eenheid over het hoofd ziet, lees je de waarde verkeerd af. Daarom kijk je eerst wat er op de x-as en de y-as staat en in welke eenheid, voordat je een waarde afleest."
+        "bron": "Examenstijl",
+        "ctx": "Leerlingen meten bij verschillende temperaturen hoeveel koolstofdioxide kiemende erwten per uur afgeven. Resultaten: 5 °C: 2 mL, 10 °C: 4 mL, 15 °C: 7 mL, 20 °C: 11 mL, 25 °C: 16 mL. Ze willen de gegevens in een grafiek zetten.",
+        "v": "Geef aan welke grootheid en eenheid op elke as komen, en lees af of bereken hoeveel CO2 er bij 22,5 °C ongeveer per uur wordt afgegeven.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Horizontale as: temperatuur (°C) (1p). Verticale as: CO2-afgifte (mL per uur) (1p). Bij 22,5 °C ligt de waarde tussen 11 en 16 mL, ongeveer 13 à 14 mL per uur (interpoleren) (1p)."
        },
        {
-        "vraag": "Leg uit hoe je bij een gegeven x-waarde de bijbehorende y-waarde uit een grafiek afleest.",
-        "antwoord": "Je zoekt de x-waarde op de horizontale as. Vanaf dat punt ga je verticaal omhoog tot je de lijn of het meetpunt raakt. Vanaf daar ga je horizontaal naar de y-as en leest daar de bijbehorende waarde af, in de eenheid van de y-as."
+        "bron": "Examenstijl",
+        "ctx": "Bij een tuinvogeltelling werden in een gemeente deze aantallen merels geteld: 2016: 250, 2017: 180, 2018: 150, 2019: 160, 2020: 170. In 2016 en 2017 heerste in die regio het usutuvirus, dat vooral merels doodt.",
+        "v": "Bereken met hoeveel procent het aantal merels afnam van 2016 tot 2018, en beschrijf de trend na 2018.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Afname: 250 − 150 = 100 (1p); 100 / 250 × 100% = 40% (1p). Na 2018 neemt het aantal weer langzaam toe (van 150 naar 170): de populatie herstelt zich na het virus (1p)."
        },
        {
-        "vraag": "Leg uit wat een grote en een kleine standaarddeviatie zeggen over de metingen.",
-        "antwoord": "De standaarddeviatie is een maat voor de spreiding rond het gemiddelde. Een kleine standaarddeviatie betekent dat de metingen dicht bij het gemiddelde liggen en dus dicht bij elkaar. Een grote standaarddeviatie betekent dat de metingen ver van het gemiddelde en dus ver uit elkaar liggen."
+        "bron": "Examenstijl",
+        "ctx": "Bij twee groepen van tien muizen wordt het lichaamsgewicht gemeten na vier weken op een ander dieet. Dieet A: gemiddeld 28 g, standaarddeviatie 1 g. Dieet B: gemiddeld 30 g, standaarddeviatie 5 g. In een grafiek staan de gemiddelden met foutbalken van één standaarddeviatie.",
+        "v": "Leg uit wat de standaarddeviatie zegt over de muizen in groep B, en of je op basis van deze gegevens zeker kunt zeggen dat dieet B tot een hoger gewicht leidt.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "In groep B is de spreiding groot: de gewichten van de muizen liggen ver uit elkaar (1p). De foutbalken overlappen: B loopt van 25 tot 35 g en A van 27 tot 29 g (1p). Het verschil van 2 g is klein vergeleken met de spreiding, dus je kunt niet zeker zeggen dat dieet B tot een hoger gewicht leidt (1p)."
        },
        {
-        "vraag": "Leg uit waarom je geen conclusie mag trekken buiten het meetbereik van een grafiek.",
-        "antwoord": "Buiten het meetbereik heb je geen metingen gedaan. Je weet dus niet of het verband dat je binnen het bereik ziet, daar ook nog geldt. Een uitspraak doen buiten het gemeten gebied heet extrapoleren en is onzeker, omdat er geen gegevens zijn die de conclusie ondersteunen."
+        "bron": "Examenstijl",
+        "ctx": "Een onderzoeker meet de lengte van een groeiende bamboestengel: dag 0: 10 cm, dag 2: 60 cm, dag 4: 110 cm, dag 6: 160 cm. Een leerling concludeert dat de stengel na 100 dagen 2510 cm lang is.",
+        "v": "Laat zien hoe de leerling aan 2510 cm komt en leg uit waarom deze voorspelling onbetrouwbaar is.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "De stengel groeit 50 cm per 2 dagen = 25 cm per dag (1p); 10 + 100 × 25 = 2510 cm (1p). Dit is extrapoleren ver buiten het meetbereik van 6 dagen; de groei stopt of vertraagt als de stengel volgroeid is, dus het verband blijft niet hetzelfde (1p)."
        },
        {
-        "vraag": "Leg uit waarom je uit meerdere metingen een gemiddelde berekent in plaats van één meting te gebruiken.",
-        "antwoord": "Een enkele meting kan toevallig afwijken van de werkelijke waarde. Door meerdere metingen te doen en het gemiddelde te berekenen, verminder je de invloed van dat toeval. Het gemiddelde ligt dan dichter bij de werkelijke waarde en de conclusie is betrouwbaarder."
+        "bron": "Examenstijl",
+        "ctx": "Vijf leerlingen meten elk hun hartslag in rust: 64, 70, 68, 72 en 116 slagen per minuut. De leerling met 116 had net de trap op gerend.",
+        "v": "Bereken het gemiddelde met en zonder de laatste meting, en leg uit welke waarde het beste de rusthartslag van deze groep weergeeft.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Met: (64 + 70 + 68 + 72 + 116) / 5 = 390 / 5 = 78 slagen per minuut (1p). Zonder: 274 / 4 = 68,5 slagen per minuut (1p). De meting van 116 is geen rusthartslag (meetfout door inspanning), dus 68,5 geeft de rusthartslag het best weer (1p)."
        }
       ]
      },

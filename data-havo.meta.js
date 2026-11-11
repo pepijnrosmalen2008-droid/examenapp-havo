@@ -1008,9 +1008,13 @@ var VAKKEN = [
      },
      {
       "id": "A3",
+      "lo": "bi.A.3",
+      "gs": 2,
       "naam": "Data verwerken en grafieken lezen",
-      "beschrijving": "Gegevens uit tabellen en grafieken aflezen, as-eenheden juist lezen, spreiding (standaarddeviatie) interpreteren en niet concluderen buiten het meetbereik.",
-      "ceStatus": "CE",
+      "beschrijving": "Je leest grafieken en tabellen correct af (assen, eenheden, interpoleren), rekent met toenames en procentuele veranderingen, bepaalt gemiddelde, mediaan en spreiding, beschrijft de spreiding rond het gemiddelde met foutbalken en legt uit waarom extrapoleren buiten het meetbereik onbetrouwbaar is.",
+      "ceStatus": "CE+SE",
+      "binas": "",
+      "val": "",
       "onderwerpen": [
        "Grafiek lezen: assen en as-eenheden",
        "Aflezen van een waarde",
