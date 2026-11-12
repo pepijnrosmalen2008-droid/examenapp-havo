@@ -62,6 +62,17 @@
       "verwacht": 135,
       "laag": 105,
       "hoog": 165,
+      "uitkomst": 114,
+      "raak": true,
+      "afwijking": -21
+    },
+    {
+      "gedaan": "2026-11-12",
+      "voor": "2026-11-19",
+      "metriek": "betrokken dagbezoeken per week",
+      "verwacht": 118,
+      "laag": 98,
+      "hoog": 140,
       "uitkomst": null,
       "raak": null
     }
@@ -91,13 +102,23 @@
     },
     {
       "gestart": "2026-11-05",
-      "status": "loopt",
-      "resultaat": "",
+      "status": "mislukt",
+      "resultaat": "Terugkeer van de instroomweek van 29 okt (168 leerlingen) is 2%, doel was 15%. Onbekend of het bericht is verstuurd.",
       "titel": "De piekgroep van 29 oktober terughalen",
       "hypothese": "Nieuwe leerlingen komen terug als ze een concreet, klein verzoek krijgen op het kanaal waar ze Slagio vonden.",
       "actie": "Deel op de plek waar je Slagio het laatst deelde (groepsapp, klas, Instagram) één bericht met een kleine opdracht, bijvoorbeeld '5 vragen vandaag' met een directe link. Noteer de datum en de plek en stuur ze mij.",
       "meting": "Terugkeer van de instroomweek van 29 oktober (169 nieuwe leerlingen) in de cohorten van volgende week.",
       "doel": "Minstens 15% van die 169 leerlingen komt terug (het gemiddelde is 5% tot 9%)."
+    },
+    {
+      "gestart": "2026-11-12",
+      "status": "loopt",
+      "resultaat": "",
+      "titel": "Eén klas een account laten aanmaken",
+      "hypothese": "Leerlingen die op dag 1 een account maken komen vaker terug, en een klas die dat samen doet komt zichtbaar vaker terug dan wie het alleen vindt.",
+      "actie": "Vraag één klas of groep om bij het eerste bezoek een account aan te maken (met 'bewaar je voortgang' als reden) en een maatje te kiezen. Noteer de datum, de klas en het aantal leerlingen en stuur ze mij.",
+      "meting": "terugkeerProfiel: aantal leerlingen met account aangemaakt, en de terugkeer van de instroomweek waarin dit gebeurt.",
+      "doel": "Minstens 15 nieuwe accounts in één week en minstens 15% terugkeer van die instroomweek (basis nu 7%)."
     }
   ],
   "backlog": [
@@ -244,6 +265,30 @@
       "waarom": "Safari voor 16.4 laadt schedule.js niet, waardoor het rooster en de aftelklok kunnen ontbreken. De Arcade kan crashen bij een ander opslagformaat van mijnvakken.",
       "bewijs": "schedule.js:687 `split(/(?<=[.!?])\\s+/)`; op 28 okt twee apparaten met `Invalid regular expression: invalid group specifier name` en `Can't find variable: renderSchedule` (init.js:400). arcade.js:249 `mijn.find(...)` zonder controle, tegen examenbieb.js:31 mét `Array.isArray`. Melding op 11 okt: `mijn.find is not a function`.",
       "voorstel": "Splits de zin zonder lookbehind (split op /([.!?])\\s+/ en plak terug) en neem de Array.isArray-controle uit examenbieb.js:31 over. Bump de SW-cache."
+    },
+    {
+      "id": "B-13",
+      "gemaakt": "2026-11-12",
+      "status": "open",
+      "prioriteit": 1,
+      "grootte": "middel",
+      "soort": "content",
+      "titel": "Stopwoorden en aanhalingstekens uit de antwoordopties van Engelse en wiskundevragen halen",
+      "waarom": "Foute opties met een stopwoord verraden het goede antwoord: wie kiest wat niet aarzelt, scoort goed zonder de stof te kennen. Dat maakt scores en de beheersing per leerdoel onbetrouwbaar.",
+      "bewijs": "Telling in gs:2-modules van opties met ', I suppose', ', I think', ', you know', ', zeg maar', ', volgens mij', ', gewoon', ', really': vwo en 399/945 vragen, havo wa 73/162, vmbo en 384/648. In het goede antwoord komt het 0 keer voor. Voorbeeld havo wa A5: 'f is met 3 vermenigvuldigd, I suppose, really'. Aanhalingstekens om de hele optie: havo wa 648/648, vmbo en 2592/2592, vwo en 2465/3780.",
+      "voorstel": "Voeg aan check-leerdoel.mjs een harde poort toe die deze stopwoorden en 'hele optie tussen aanhalingstekens' afkeurt. Haal ze met een script uit de bestaande modules (vwo en, havo wa, vmbo en, en havo en waar ze voorkomen), herschrijf afleiders die daardoor te kort of te kaal worden, draai split-data.js en build-leren.mjs, bump de SW-cache."
+    },
+    {
+      "id": "B-14",
+      "gemaakt": "2026-11-12",
+      "status": "open",
+      "prioriteit": 3,
+      "grootte": "klein",
+      "soort": "data",
+      "titel": "Resourcefouten van niet-kritieke scripts niet als js_error loggen",
+      "waarom": "Eén uitbarsting van 40 apparaten verdrievoudigde het aantal meldingen en maakt de foutenlijst van Jarvis onleesbaar, terwijl geen leerling hinder had.",
+      "bewijs": "177 js_error deze week tegen 6 vorige week; 98 daarvan in twee uitbarstingen (11 nov rond 04:58 UTC, 12 nov rond 03:17 UTC), steeds arcade.js, arcade2d.js, clash.js, kingdom.js, momenten.js, icon-192.png met kind 'resource'; alle bestanden live HTTP 200.",
+      "voorstel": "Log in cloud.js (rond regel 308 tot 321) kind 'resource' alleen voor kritieke scripts (state.js, quiz.js, data.js, init.js) en niet voor lazy en voorgeladen bestanden; of dedupliceer per apparaat per uur."
     }
   ]
 }
