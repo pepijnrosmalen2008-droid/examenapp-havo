@@ -908,6 +908,27 @@ var VAKKEN = [
       "nOe": 5,
       "nBeg": 12,
       "hasSam": true
+     },
+     {
+      "id": "A5",
+      "lo": "wa.A.5",
+      "gs": 2,
+      "naam": "Wiskundige taal, notatie en formules lezen",
+      "beschrijving": "Je leest wiskundige taal en formules: je herkent variabele, constante en coëfficiënt, gebruikt de functienotatie f(x), let op haakjes en machten, herkent evenredig, lineair en exponentieel in een tabel en vertaalt woorden naar een formule.",
+      "ceStatus": "CE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Onderdelen van een formule",
+       "Functienotatie en invullen",
+       "Woorden omzetten naar formules",
+       "Tabellen en verbanden herkennen",
+       "Haakjes, machten en tekens"
+      ],
+      "nSv": 27,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
      }
     ]
    },

@@ -1,0 +1,682 @@
+{
+ "id": "A5",
+ "lo": "wa.A.5",
+ "gs": 2,
+ "naam": "Wiskundige taal, notatie en formules lezen",
+ "beschrijving": "Je leest wiskundige taal en formules: je herkent variabele, constante en coëfficiënt, gebruikt de functienotatie f(x), let op haakjes en machten, herkent evenredig, lineair en exponentieel in een tabel en vertaalt woorden naar een formule.",
+ "ceStatus": "CE",
+ "binas": "",
+ "val": "",
+ "onderwerpen": [
+  "Onderdelen van een formule",
+  "Functienotatie en invullen",
+  "Woorden omzetten naar formules",
+  "Tabellen en verbanden herkennen",
+  "Haakjes, machten en tekens"
+ ],
+ "sam": "In K = 250 + 12,5n is n de variabele, 250 de constante en 12,5 de coëfficiënt. Bij f(3) vul je x = 3 in. Let op haakjes en machten: 2x² is anders dan (2x)² en −3² is −9. Een gelijke toename per stap is lineair, een gelijke groeifactor exponentieel. Een evenredig verband heeft een vaste verhouding. Vertaal per, vast en evenredig naar de juiste term.",
+ "begrippen": [
+  {
+   "t": "Variabele",
+   "d": "Een letter voor een getal dat kan veranderen, zoals n of x."
+  },
+  {
+   "t": "Constante",
+   "d": "Een vast getal in een formule, zoals 250 in K = 250 + 12,5n."
+  },
+  {
+   "t": "Coëfficiënt",
+   "d": "Het getal vóór een variabele, zoals 12,5 bij n."
+  },
+  {
+   "t": "Functie",
+   "d": "Een regel die bij elke invoer precies één uitkomst geeft, zoals f(x) = 2x² − 3x + 1."
+  },
+  {
+   "t": "Functiewaarde",
+   "d": "De uitkomst voor een gekozen x, zoals f(3) = 10."
+  },
+  {
+   "t": "Evenredig",
+   "d": "Een verband waarbij y/x altijd hetzelfde is, zoals W = 4p."
+  },
+  {
+   "t": "Lineair",
+   "d": "Een verband met een constante toename per stap; de grafiek is een rechte lijn."
+  },
+  {
+   "t": "Groeifactor",
+   "d": "Het getal waarmee je telkens vermenigvuldigt, zoals 1,08 voor 8% groei."
+  },
+  {
+   "t": "Kwadraat",
+   "d": "Een getal met zichzelf vermenigvuldigd, zoals 3² = 9."
+  },
+  {
+   "t": "Haakjes",
+   "d": "Tekens die de volgorde bepalen, zoals (2x)² = 4x²."
+  },
+  {
+   "t": "Tabel",
+   "d": "Een overzicht van invoer en uitkomst naast elkaar."
+  },
+  {
+   "t": "Term",
+   "d": "Een deel van een som, zoals 250 of 12,5n in 250 + 12,5n."
+  }
+ ],
+ "sv": [
+  {
+   "v": "In K = 250 + 12,5n: welk getal is de coëfficiënt van n?",
+   "o": [
+    "\"250\"",
+    "\"12,5\"",
+    "\"262,5\"",
+    "\"n\""
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 0,
+   "u": "Lees de formule stap voor stap: wat is variabele, constante en coëfficiënt? Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"250\"\"? Dan neem je de vaste term. Dat is het getal zonder variabele, en niet het getal voor n. Het goede antwoord is 12,5.",
+    "Klopt: de coëfficiënt is het getal dat voor de variabele staat.",
+    "Koos je \"\"262,5\"\"? Dan tel je 250 en 12,5 bij elkaar op. De formule geeft twee aparte getallen, en de coëfficiënt is alleen 12,5.",
+    "Koos je \"\"n\"\"? Dan neem je de variabele. n is de letter, en de coëfficiënt is het getal ervoor. Controleer je rekenstap: de juiste uitkomst is 12,5."
+   ],
+   "uh": "In K = 250 + 12,5n: welk getal is de coëfficiënt van n?"
+  },
+  {
+   "v": "In K = 250 + 12,5n: welk getal is de vaste term (constante)?",
+   "o": [
+    "\"12,5\"",
+    "\"n\"",
+    "\"K\"",
+    "\"250\""
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 0,
+   "u": "Lees de formule stap voor stap: wat is variabele, constante en coëfficiënt? Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"12,5\"\"? Dan neem je de coëfficiënt van n. Die verandert met n mee, en de vaste term is 250. Het goede antwoord is 250.",
+    "Koos je \"\"n\"\"? Dan neem je een letter. De vaste term is een getal, en n is een variabele. Door de stappen goed na te lopen kom je uit op 250.",
+    "Koos je \"\"K\"\"? Dan neem je de uitkomst. K verandert met n mee, en de vaste term is 250. Controleer je rekenstap: de juiste uitkomst is 250.",
+    "Klopt: de vaste term staat los van n en blijft altijd gelijk."
+   ],
+   "uh": "In K = 250 + 12,5n: welk getal is de vaste term (constante)?"
+  },
+  {
+   "v": "Je leest f(3) = 10. Wat is hier gebeurd?",
+   "o": [
+    "\"je hebt x = 3 ingevuld en de uitkomst is 10\"",
+    "\"f is met 3 vermenigvuldigd, I suppose, really\"",
+    "\"x is gelijk aan 10\"",
+    "\"het derde punt van x is 10\""
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 1,
+   "u": "Lees de formule stap voor stap: wat is variabele, constante en coëfficiënt? Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: f(3) betekent de waarde van de functie voor x = 3.",
+    "Koos je \"\"f is met 3 vermenigvuldigd, I suppose, really\"\"? Dan lees je f(3) als f maal 3. De haakjes betekenen invullen, en niet vermenigvuldigen.",
+    "Koos je \"\"x is gelijk aan 10\"\"? Dan draai je de rollen om. x is 3 en de uitkomst is 10, dus f(3) = 10. Door de stappen goed na te lopen kom je uit op je hebt x = 3 ingevuld en de uitkomst is 10.",
+    "Koos je \"\"het derde punt van x is 10\"\"? Dan denk je aan de volgorde van punten. Het getal 3 is de invoer, en niet het volgnummer."
+   ],
+   "uh": "Je leest f(3) = 10. Wat is hier gebeurd?"
+  },
+  {
+   "v": "Welke uitdrukking betekent '2 keer x in het kwadraat'?",
+   "o": [
+    "\"(2x)²\"",
+    "\"4x\"",
+    "\"2x²\"",
+    "\"x² + 2\""
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 4,
+   "u": "Lees de formule stap voor stap: wat is variabele, constante en coëfficiënt? Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"(2x)²\"\"? Dan zet dit je 2 en x samen in het kwadraat. Dat is 4x², en niet 2 keer x². Het goede antwoord is 2x².",
+    "Koos je \"\"4x\"\"? Dan bereken je 2 × x × 2. Het kwadraat hoort bij x alleen, dus 2x². Door de stappen goed na te lopen kom je uit op 2x².",
+    "Klopt: eerst kwadrateren en dan met 2 vermenigvuldigen. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"x² + 2\"\"? Dan tel je 2 op bij x². Het woord keer betekent vermenigvuldigen, dus 2x². Controleer je rekenstap: de juiste uitkomst is 2x²."
+   ],
+   "uh": "Welke uitdrukking betekent '2 keer x in het kwadraat'?"
+  },
+  {
+   "v": "Bereken −3² (let op de notatie).",
+   "o": [
+    "\"9\"",
+    "\"−9\"",
+    "\"−6\"",
+    "\"6\""
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 4,
+   "u": "Lees de formule stap voor stap: wat is variabele, constante en coëfficiënt? Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"9\"\"? Dan laat je het min-teken weg. De macht geldt alleen voor 3, en het min-teken blijft staan. Het goede antwoord is −9.",
+    "Klopt: eerst 3² = 9 en dan het min-teken: −9. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"−6\"\"? Dan reken je 3 × 2. Een kwadraat is 3 × 3 en niet 3 × 2, dus 9. Door de stappen goed na te lopen kom je uit op −9.",
+    "Koos je \"\"6\"\"? Dan reken je 3 × 2 en laat je het teken weg. Een kwadraat is 3 × 3, dus 9 met een min ervoor. Controleer je rekenstap: de juiste uitkomst is −9."
+   ],
+   "uh": "Bereken −3² (let op de notatie)."
+  },
+  {
+   "v": "Twee grootheden zijn evenredig. Wat gebeurt er met de eerste als de tweede verdubbelt?",
+   "o": [
+    "\"de eerste wordt de helft, I think\"",
+    "\"de eerste blijft gelijk\"",
+    "\"de eerste wordt 2 meer\"",
+    "\"de eerste verdubbelt ook\""
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 2,
+   "u": "Lees de formule stap voor stap: wat is variabele, constante en coëfficiënt? Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"de eerste wordt de helft, I think\"\"? Dan draai je de verandering om. Bij evenredigheid gaan beide dezelfde kant op, en dat is omgekeerd evenredig.",
+    "Koos je \"\"de eerste blijft gelijk\"\"? Dan denk je dat er geen verband is. Bij evenredigheid verandert de eerste mee, dus verdubbelt hij.",
+    "Koos je \"\"de eerste wordt 2 meer\"\"? Dan tel je 2 op in plaats van te verdubbelen. Evenredig betekent dezelfde factor, en niet hetzelfde bedrag.",
+    "Klopt: bij evenredigheid is het quotiënt altijd gelijk, dus beide veranderen met dezelfde factor."
+   ],
+   "uh": "Twee grootheden zijn evenredig. Wat gebeurt er met de eerste als de tweede verdubbelt?"
+  },
+  {
+   "v": "In een tabel nemen de y-waarden steeds met 3 toe als x met 1 toeneemt. Welk soort verband is dit?",
+   "o": [
+    "\"lineair\"",
+    "\"kwadratisch\"",
+    "\"exponentieel\"",
+    "\"omgekeerd evenredig\""
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 3,
+   "u": "Lees de formule stap voor stap: wat is variabele, constante en coëfficiënt? Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: een gelijke toename per stap geeft een rechte lijn.",
+    "Koos je \"\"kwadratisch\"\"? Dan denk je dat het stijgt in steeds grotere stappen. De toename is steeds 3, en dat is constant.",
+    "Koos je \"\"exponentieel\"\"? Dan denk je aan een groeifactor. Een exponentiële groei vermenigvuldigt, maar hier tel je steeds 3 op.",
+    "Koos je \"\"omgekeerd evenredig\"\"? Dan denk je dat y afneemt als x toeneemt. Hier neemt y toe, en dus is het niet omgekeerd evenredig."
+   ],
+   "uh": "In een tabel nemen de y-waarden steeds met 3 toe als x met 1 toeneemt. Welk soort verband is dit?"
+  },
+  {
+   "v": "Welke letter is de onafhankelijke variabele (de invoer) in K = 250 + 12,5n?",
+   "o": [
+    "\"K\"",
+    "\"250\"",
+    "\"n\"",
+    "\"12,5\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 0,
+   "u": "Lees de formule stap voor stap: wat is variabele, constante en coëfficiënt? Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"K\"\"? Dan neem je de uitkomst. K hangt af van n, dus K is de afhankelijke variabele. Het goede antwoord is n.",
+    "Koos je \"\"250\"\"? Dan neem je een getal. De invoer is een letter, en 250 is een vaste term. Door de stappen goed na te lopen kom je uit op n.",
+    "Klopt: n is het aantal gasten dat je kiest, en K hangt daarvan af.",
+    "Koos je \"\"12,5\"\"? Dan neem je de coëfficiënt. Dat is een getal, en de invoer is een letter. Controleer je rekenstap: de juiste uitkomst is n."
+   ],
+   "uh": "Welke letter is de onafhankelijke variabele (de invoer) in K = 250 + 12,5n?",
+   "ctx": "De kosten K (in euro) van een feestzaal worden gegeven door K = 250 + 12,5n, waarbij n het aantal gasten is. De zaal vraagt dus een vast bedrag en een bedrag per gast. Je wilt de formule lezen en gebruiken."
+  },
+  {
+   "v": "Waar staat het getal 12,5 voor?",
+   "o": [
+    "\"de vaste kosten\"",
+    "\"de kosten per gast\"",
+    "\"het aantal gasten, eigenlijk\"",
+    "\"de totale kosten\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 0,
+   "u": "Lees de formule stap voor stap: wat is variabele, constante en coëfficiënt? Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"de vaste kosten\"\"? Dan verwar je 12,5 met 250. 250 is de vaste term, en 12,5 hoort bij elke gast. Het goede antwoord is de kosten per gast.",
+    "Klopt: 12,5 is de coëfficiënt van n en hoort bij elke extra gast.",
+    "Koos je \"\"het aantal gasten, eigenlijk\"\"? Dan verwar je het getal met de variabele. n is het aantal gasten, en 12,5 is het bedrag per gast.",
+    "Koos je \"\"de totale kosten\"\"? Dan verwar je 12,5 met K. K is de totale kosten, en 12,5 is maar een deel. Controleer je rekenstap: de juiste uitkomst is de kosten per gast."
+   ],
+   "uh": "Waar staat het getal 12,5 voor?",
+   "ctx": "De kosten K (in euro) van een feestzaal worden gegeven door K = 250 + 12,5n, waarbij n het aantal gasten is. De zaal vraagt dus een vast bedrag en een bedrag per gast. Je wilt de formule lezen en gebruiken."
+  },
+  {
+   "v": "Bereken K voor n = 40.",
+   "o": [
+    "\"€290\"",
+    "\"€10 500\"",
+    "\"€500\"",
+    "\"€750\""
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 1,
+   "u": "Lees de formule stap voor stap: wat is variabele, constante en coëfficiënt? Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"€290\"\"? Dan tel je 250 en 40 op. Je moet 12,5 met 40 vermenigvuldigen, en daarna 250 optellen. Het goede antwoord is €750.",
+    "Koos je \"\"€10 500\"\"? Dan reken je (250 + 12,5) × 40. De 250 betaal je maar één keer, dus alleen 12,5 maal 40. Door de stappen goed na te lopen kom je uit op €750.",
+    "Koos je \"\"€500\"\"? Dan vergeet je de vaste kosten van 250. Die horen er altijd bij, dus 500 + 250. Controleer je rekenstap: de juiste uitkomst is €750.",
+    "Klopt: 250 + 12,5 × 40 = 250 + 500 = 750. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Bereken K voor n = 40.",
+   "ctx": "De kosten K (in euro) van een feestzaal worden gegeven door K = 250 + 12,5n, waarbij n het aantal gasten is. De zaal vraagt dus een vast bedrag en een bedrag per gast. Je wilt de formule lezen en gebruiken."
+  },
+  {
+   "v": "Voor hoeveel gasten kost de zaal precies €1000?",
+   "o": [
+    "\"60 gasten\"",
+    "\"80 gasten\"",
+    "\"100 gasten, I think\"",
+    "\"40 gasten\""
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 1,
+   "u": "Lees de formule stap voor stap: wat is variabele, constante en coëfficiënt? Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: 250 + 12,5n = 1000 geeft 12,5n = 750 en dus n = 60.",
+    "Koos je \"\"80 gasten\"\"? Dan deel je 1000 door 12,5. Je moet eerst de vaste kosten van 250 aftrekken, en dan delen. Het goede antwoord is 60 gasten.",
+    "Koos je \"\"100 gasten, I think\"\"? Dan neem je het verschil van 1000 en 250 gedeeld door 7,5. De coëfficiënt is 12,5, dus n = 60. Door de stappen goed na te lopen kom je uit op 60 gasten.",
+    "Koos je \"\"40 gasten\"\"? Dan vul je de uitkomst van een andere vraag in. Bij 40 gasten is het €750, en niet €1000. Controleer je rekenstap: de juiste uitkomst is 60 gasten."
+   ],
+   "uh": "Voor hoeveel gasten kost de zaal precies €1000?",
+   "ctx": "De kosten K (in euro) van een feestzaal worden gegeven door K = 250 + 12,5n, waarbij n het aantal gasten is. De zaal vraagt dus een vast bedrag en een bedrag per gast. Je wilt de formule lezen en gebruiken."
+  },
+  {
+   "v": "Bereken f(3) voor f(x) = 2x² − 3x + 1.",
+   "o": [
+    "\"28\"",
+    "\"16\"",
+    "\"10\"",
+    "\"−2\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 1,
+   "u": "Lees de formule stap voor stap: wat is variabele, constante en coëfficiënt? Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"28\"\"? Dan reken je (2 × 3)² − 9 + 1. Het kwadraat hoort alleen bij x, dus 2 × 3² = 18. Het goede antwoord is 10.",
+    "Koos je \"\"16\"\"? Dan vergeet je de −3 × 3. Je rekent dan met −3 alleen, en je moet −3 × 3 = −9 nemen. Door de stappen goed na te lopen kom je uit op 10.",
+    "Klopt: 2 × 9 − 9 + 1 = 10. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"−2\"\"? Dan reken je 2 × 3 in plaats van 2 × 3². Het kwadraat van 3 is 9, en dus 18. Controleer je rekenstap: de juiste uitkomst is 10."
+   ],
+   "uh": "Bereken f(3) voor f(x) = 2x² − 3x + 1.",
+   "ctx": "Een functie f is gegeven door f(x) = 2x² − 3x + 1. Je wilt functiewaarden uitrekenen en daarbij letten op de notatie van machten, haakjes en tekens."
+  },
+  {
+   "v": "Voor welke x geldt f(x) = 1 bij f(x) = 2x² − 3x + 1?",
+   "o": [
+    "\"alleen x = 0\"",
+    "\"x = 0 of x = 1,5\"",
+    "\"x = 1\"",
+    "\"alleen x = 1,5, I suppose\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 1,
+   "u": "Lees de formule stap voor stap: wat is variabele, constante en coëfficiënt? Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"alleen x = 0\"\"? Dan vergeet je de tweede oplossing. Uit x(2x − 3) = 0 volgen twee waarden, namelijk 0 en 1,5. Het goede antwoord is x = 0 of x = 1,5.",
+    "Klopt: 2x² − 3x = 0 geeft x(2x − 3) = 0, dus x = 0 of x = 1,5.",
+    "Koos je \"\"x = 1\"\"? Dan vul je x = 1 in. Dan is f(1) = 0 en niet 1, dus x = 1 is geen oplossing. Door de stappen goed na te lopen kom je uit op x = 0 of x = 1,5.",
+    "Koos je \"\"alleen x = 1,5, I suppose\"\"? Dan vergeet je x = 0. Ook voor x = 0 is f(0) = 1, dus er zijn twee oplossingen. Controleer je rekenstap: de juiste uitkomst is x = 0 of x = 1,5."
+   ],
+   "uh": "Voor welke x geldt f(x) = 1 bij f(x) = 2x² − 3x + 1?",
+   "ctx": "Een functie f is gegeven door f(x) = 2x² − 3x + 1. Je wilt functiewaarden uitrekenen en daarbij letten op de notatie van machten, haakjes en tekens."
+  },
+  {
+   "v": "Welke term van f(x) = 2x² − 3x + 1 is de constante?",
+   "o": [
+    "\"2\"",
+    "\"−3\"",
+    "\"x²\"",
+    "\"1\""
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 0,
+   "u": "Lees de formule stap voor stap: wat is variabele, constante en coëfficiënt? Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"2\"\"? Dan neem je de coëfficiënt van x². Die staat bij een variabele, en de constante staat los. Het goede antwoord is 1.",
+    "Koos je \"\"−3\"\"? Dan neem je de coëfficiënt van x. Die staat bij een variabele, en de constante staat los. Door de stappen goed na te lopen kom je uit op 1.",
+    "Koos je \"\"x²\"\"? Dan neem je een term met de variabele. De constante bevat geen letter, en dat is 1. Controleer je rekenstap: de juiste uitkomst is 1.",
+    "Klopt: de constante is de term zonder x. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Welke term van f(x) = 2x² − 3x + 1 is de constante?",
+   "ctx": "Een functie f is gegeven door f(x) = 2x² − 3x + 1. Je wilt functiewaarden uitrekenen en daarbij letten op de notatie van machten, haakjes en tekens."
+  },
+  {
+   "v": "Hoeveel neemt y toe als x met 1 toeneemt?",
+   "o": [
+    "\"3\"",
+    "\"5\"",
+    "\"8\"",
+    "\"1\""
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 3,
+   "u": "Lees de formule stap voor stap: wat is variabele, constante en coëfficiënt? Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: 5, 8, 11, 14: telkens 3 erbij. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"5\"\"? Dan neem je de beginwaarde. Je moet het verschil tussen twee opeenvolgende waarden nemen, en dat is 3. Het goede antwoord is 3.",
+    "Koos je \"\"8\"\"? Dan neem je een willekeurige waarde uit de tabel. Het gaat om het verschil, en dat is 3. Door de stappen goed na te lopen kom je uit op 3.",
+    "Koos je \"\"1\"\"? Dan neem je de toename van x. Je zoekt de toename van y, en dat is 3. Controleer je rekenstap: de juiste uitkomst is 3."
+   ],
+   "uh": "Hoeveel neemt y toe als x met 1 toeneemt?",
+   "ctx": "In een tabel staat bij x = 0, 1, 2, 3 de uitkomst y = 5, 8, 11, 14. Een leerling zoekt een formule bij deze tabel en wil ook een uitkomst voorspellen voor grotere waarden van x."
+  },
+  {
+   "v": "Welke formule past bij de tabel?",
+   "o": [
+    "\"y = 3 + 5x\"",
+    "\"y = 5 · 3^x, denk ik\"",
+    "\"y = 5 + 3x\"",
+    "\"y = 3x\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 3,
+   "u": "Lees de formule stap voor stap: wat is variabele, constante en coëfficiënt? Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"y = 3 + 5x\"\"? Dan wissel je beginwaarde en toename om. Bij x = 0 is y = 5, en de toename is 3. Het goede antwoord is y = 5 + 3x.",
+    "Koos je \"\"y = 5 · 3^x, denk ik\"\"? Dan maak je er een exponentiële formule van. Bij x = 1 zou y 15 zijn, terwijl de tabel 8 geeft.",
+    "Klopt: bij x = 0 is y = 5 en y neemt per stap 3 toe. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"y = 3x\"\"? Dan vergeet je de beginwaarde 5. Bij x = 0 geeft 3x gelijk aan 0, en de tabel geeft 5. Controleer je rekenstap: de juiste uitkomst is y = 5 + 3x."
+   ],
+   "uh": "Welke formule past bij de tabel?",
+   "ctx": "In een tabel staat bij x = 0, 1, 2, 3 de uitkomst y = 5, 8, 11, 14. Een leerling zoekt een formule bij deze tabel en wil ook een uitkomst voorspellen voor grotere waarden van x."
+  },
+  {
+   "v": "Welke y hoort bij x = 10?",
+   "o": [
+    "\"50\"",
+    "\"35\"",
+    "\"30\"",
+    "\"38\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 3,
+   "u": "Lees de formule stap voor stap: wat is variabele, constante en coëfficiënt? Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"50\"\"? Dan reken je 5 × 10. De toename per stap is 3, dus 5 + 30. Het goede antwoord is 35.",
+    "Klopt: 5 + 3 × 10 = 35. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"30\"\"? Dan vergeet je de beginwaarde van 5. Die hoort erbij, dus 5 + 30. Door de stappen goed na te lopen kom je uit op 35.",
+    "Koos je \"\"38\"\"? Dan reken je met x = 11. Er staat x = 10, dus 5 + 3 × 10. Controleer je rekenstap: de juiste uitkomst is 35."
+   ],
+   "uh": "Welke y hoort bij x = 10?",
+   "ctx": "In een tabel staat bij x = 0, 1, 2, 3 de uitkomst y = 5, 8, 11, 14. Een leerling zoekt een formule bij deze tabel en wil ook een uitkomst voorspellen voor grotere waarden van x."
+  },
+  {
+   "v": "Welk kenmerk heeft een evenredig verband zoals W = 4p?",
+   "o": [
+    "\"W is altijd 4 meer dan p, zeg maar, gewoon, volgens mij\"",
+    "\"W = 4 + p\"",
+    "\"W is constant\"",
+    "\"de verhouding W gedeeld door p is altijd 4\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 2,
+   "u": "Lees de formule stap voor stap: wat is variabele, constante en coëfficiënt? Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"W is altijd 4 meer dan p, zeg maar, gewoon, volgens mij\"\"? Dan maak je een optelverband van de formule. W = 4p is een vermenigvuldiging, en geen optelling.",
+    "Koos je \"\"W = 4 + p\"\"? Dan schrijf je de formule als optelling. W is 4 keer p, en niet 4 erbij. Door de stappen goed na te lopen kom je uit op de verhouding W gedeeld door p is altijd 4.",
+    "Koos je \"\"W is constant\"\"? Dan denk je dat W niet verandert. W verandert mee met p, dus W is niet constant. Controleer je rekenstap: de juiste uitkomst is de verhouding W gedeeld door p is altijd 4.",
+    "Klopt: bij evenredigheid is de verhouding constant. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Welk kenmerk heeft een evenredig verband zoals W = 4p?",
+   "ctx": "Een bedrijf schrijft in zijn jaarverslag: \"De winst W (in euro) is evenredig met het aantal verkochte producten p: W = 4p.\" De directeur wil weten wat er met de winst gebeurt als de verkoop verandert."
+  },
+  {
+   "v": "Wat gebeurt er met W als p verdubbelt?",
+   "o": [
+    "\"W verdubbelt ook\"",
+    "\"W blijft gelijk\"",
+    "\"W wordt 4 meer\"",
+    "\"W wordt vier keer zo groot\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 2,
+   "u": "Lees de formule stap voor stap: wat is variabele, constante en coëfficiënt? Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: bij W = 4p geldt W(2p) = 8p = 2 × 4p. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"W blijft gelijk\"\"? Dan denk je dat W niet meeverandert. Bij evenredigheid verandert W mee, dus W verdubbelt. Het goede antwoord is W verdubbelt ook.",
+    "Koos je \"\"W wordt 4 meer\"\"? Dan tel je 4 bij W op. Een evenredig verband vermenigvuldigt, dus W verdubbelt. Door de stappen goed na te lopen kom je uit op W verdubbelt ook.",
+    "Koos je \"\"W wordt vier keer zo groot\"\"? Dan vermenigvuldig je met 4 in plaats van met 2. De 4 is de coëfficiënt, en niet de verandering van p."
+   ],
+   "uh": "Wat gebeurt er met W als p verdubbelt?",
+   "ctx": "Een bedrijf schrijft in zijn jaarverslag: \"De winst W (in euro) is evenredig met het aantal verkochte producten p: W = 4p.\" De directeur wil weten wat er met de winst gebeurt als de verkoop verandert."
+  },
+  {
+   "v": "Hoeveel is W bij p = 25?",
+   "o": [
+    "\"29\"",
+    "\"625\"",
+    "\"100\"",
+    "\"6,25\""
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 1,
+   "u": "Lees de formule stap voor stap: wat is variabele, constante en coëfficiënt? Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"29\"\"? Dan tel je 4 en 25 op. W = 4p is een product, dus 4 × 25. Het goede antwoord is 100.",
+    "Koos je \"\"625\"\"? Dan reken je 25 × 25. De formule is 4p en niet p², dus 100. Door de stappen goed na te lopen kom je uit op 100.",
+    "Klopt: 4 × 25 = 100. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"6,25\"\"? Dan deel je 25 door 4. De formule is vermenigvuldigen met 4, en dat geeft 100. Controleer je rekenstap: de juiste uitkomst is 100."
+   ],
+   "uh": "Hoeveel is W bij p = 25?",
+   "ctx": "Een bedrijf schrijft in zijn jaarverslag: \"De winst W (in euro) is evenredig met het aantal verkochte producten p: W = 4p.\" De directeur wil weten wat er met de winst gebeurt als de verkoop verandert."
+  },
+  {
+   "v": "Met welk getal vermenigvuldig je de omzet bij een stijging van 8% per jaar?",
+   "o": [
+    "\"0,08\"",
+    "\"1,08\"",
+    "\"8\"",
+    "\"1,8\""
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 2,
+   "u": "Lees de formule stap voor stap: wat is variabele, constante en coëfficiënt? Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"0,08\"\"? Dan neem je alleen de stijging. Je moet de oorspronkelijke 100% erbij tellen, dus 1,08. Het goede antwoord is 1,08.",
+    "Klopt: 100% + 8% = 108% = 1,08. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"8\"\"? Dan neem je het percentage als getal. Je rekent met een factor, en dat is 1,08. Door de stappen goed na te lopen kom je uit op 1,08.",
+    "Koos je \"\"1,8\"\"? Dan verwar je 8% met 80%. 8% is 0,08, dus de factor is 1,08. Controleer je rekenstap: de juiste uitkomst is 1,08."
+   ],
+   "uh": "Met welk getal vermenigvuldig je de omzet bij een stijging van 8% per jaar?",
+   "ctx": "In een bericht staat: \"De omzet van een winkel is gestegen met 8% per jaar.\" De winkel heeft nu €500 000 omzet per jaar en de eigenaar wil weten wat dat voor de komende jaren betekent, als de groei zo doorgaat."
+  },
+  {
+   "v": "Hoeveel is de omzet na 1 jaar?",
+   "o": [
+    "\"€508 000, to be honest\"",
+    "\"€580 000\"",
+    "\"€40 000\"",
+    "\"€540 000\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 1,
+   "u": "Lees de formule stap voor stap: wat is variabele, constante en coëfficiënt? Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"€508 000, to be honest\"\"? Dan tel je 8% van 100 000 op. De stijging is 8% van 500 000, en dat is 40 000. Het goede antwoord is €540 000.",
+    "Koos je \"\"€580 000\"\"? Dan tel je 16% op. Na 1 jaar is het 8% en niet meer, dus 540 000. Door de stappen goed na te lopen kom je uit op €540 000.",
+    "Koos je \"\"€40 000\"\"? Dan neem je alleen de stijging. Je moet die bij 500 000 optellen, dus 540 000. Controleer je rekenstap: de juiste uitkomst is €540 000.",
+    "Klopt: 500 000 × 1,08 = 540 000. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Hoeveel is de omzet na 1 jaar?",
+   "ctx": "In een bericht staat: \"De omzet van een winkel is gestegen met 8% per jaar.\" De winkel heeft nu €500 000 omzet per jaar en de eigenaar wil weten wat dat voor de komende jaren betekent, als de groei zo doorgaat."
+  },
+  {
+   "v": "Na hoeveel hele jaar is de omzet voor het eerst meer dan €600 000?",
+   "o": [
+    "\"na 3 jaar\"",
+    "\"na 2 jaar, I suppose\"",
+    "\"na 4 jaar\"",
+    "\"na 1 jaar\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 1,
+   "u": "Lees de formule stap voor stap: wat is variabele, constante en coëfficiënt? Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: na 2 jaar is het 583 200 en na 3 jaar 629 856, en dat is meer dan 600 000.",
+    "Koos je \"\"na 2 jaar, I suppose\"\"? Dan rond je 583 200 af. Dat is nog minder dan 600 000, dus je hebt 3 jaar nodig. Het goede antwoord is na 3 jaar.",
+    "Koos je \"\"na 4 jaar\"\"? Dan neem je te veel jaren. Na 3 jaar is de omzet al 629 856, en dat is meer dan 600 000. Door de stappen goed na te lopen kom je uit op na 3 jaar.",
+    "Koos je \"\"na 1 jaar\"\"? Dan tel je 100 000 erbij. Na 1 jaar is het maar 540 000, dus je hebt 3 jaar nodig. Controleer je rekenstap: de juiste uitkomst is na 3 jaar."
+   ],
+   "uh": "Na hoeveel hele jaar is de omzet voor het eerst meer dan €600 000?",
+   "ctx": "In een bericht staat: \"De omzet van een winkel is gestegen met 8% per jaar.\" De winkel heeft nu €500 000 omzet per jaar en de eigenaar wil weten wat dat voor de komende jaren betekent, als de groei zo doorgaat."
+  },
+  {
+   "v": "Een tabel van de omzet na 0, 1, 2, 3 jaar: 500 000; 540 000; 583 200; 629 856. Welk soort groei is dit?",
+   "o": [
+    "\"elk jaar neemt de omzet met hetzelfde bedrag toe, you know\"",
+    "\"de omzet daalt\"",
+    "\"de omzet groeit steeds met dezelfde factor 1,08\"",
+    "\"de omzet groeit lineair\""
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 3,
+   "u": "Lees de formule stap voor stap: wat is variabele, constante en coëfficiënt? Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"elk jaar neemt de omzet met hetzelfde bedrag toe, you know\"\"? Dan denk je aan een lineaire toename. De stappen zijn 40 000, 43 200 en 46 656, en dus niet gelijk.",
+    "Koos je \"\"de omzet daalt\"\"? Dan zie je een afname. De getallen stijgen, dus de omzet neemt toe. Door de stappen goed na te lopen kom je uit op de omzet groeit steeds met dezelfde factor 1,08.",
+    "Klopt: 540 000/500 000 = 1,08 en 583 200/540 000 = 1,08.",
+    "Koos je \"\"de omzet groeit lineair\"\"? Dan zie je een rechte lijn. De toename wordt steeds groter, dus het is exponentieel."
+   ],
+   "uh": "Een tabel van de omzet na 0, 1, 2, 3 jaar: 500 000; 540 000; 583 200; 629 856. Welk soort groei is dit?",
+   "ctx": "In een bericht staat: \"De omzet van een winkel is gestegen met 8% per jaar.\" De winkel heeft nu €500 000 omzet per jaar en de eigenaar wil weten wat dat voor de komende jaren betekent, als de groei zo doorgaat."
+  },
+  {
+   "v": "Bereken A = 2x² voor x = 3.",
+   "o": [
+    "\"36\"",
+    "\"18\"",
+    "\"12\"",
+    "\"6\""
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 4,
+   "u": "Lees de formule stap voor stap: wat is variabele, constante en coëfficiënt? Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"36\"\"? Dan kwadrateer je 2 en x samen. Het kwadraat hoort alleen bij x, dus 2 × 9. Het goede antwoord is 18.",
+    "Klopt: eerst 3² = 9 en dan 2 × 9 = 18. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"12\"\"? Dan reken je 2 × 3 × 2. Een kwadraat is 3 × 3, dus 9. Door de stappen goed na te lopen kom je uit op 18.",
+    "Koos je \"\"6\"\"? Dan reken je 2 × 3. Het kwadraat van 3 is 9, dus 2 × 9. Controleer je rekenstap: de juiste uitkomst is 18."
+   ],
+   "uh": "Bereken A = 2x² voor x = 3.",
+   "ctx": "Een leerling krijgt drie uitdrukkingen: A = 2x², B = (2x)² en C = −x². Hij moet ze alle drie berekenen voor x = 3 en let daarbij goed op de notatie, de haakjes en de volgorde van bewerkingen."
+  },
+  {
+   "v": "Welke van A, B en C is bij x = 3 het grootst?",
+   "o": [
+    "\"A = 2x² = 18\"",
+    "\"C = −x² = −9\"",
+    "\"A en B zijn even groot\"",
+    "\"B = (2x)² = 36\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 4,
+   "u": "Lees de formule stap voor stap: wat is variabele, constante en coëfficiënt? Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"A = 2x² = 18\"\"? Dan neem je 2x² voor (2x)². Bij B wordt ook de 2 gekwadrateerd, en dan is B gelijk aan 36. Het goede antwoord is B = (2x)² = 36.",
+    "Koos je \"\"C = −x² = −9\"\"? Dan neem je een negatief getal als grootste. C is negatief, en dus kleiner dan A en B. Door de stappen goed na te lopen kom je uit op B = (2x)² = 36.",
+    "Koos je \"\"A en B zijn even groot\"\"? Dan denk je dat de haakjes niets doen. A is 18 en B is 36, dus ze zijn niet gelijk. Controleer je rekenstap: de juiste uitkomst is B = (2x)² = 36.",
+    "Klopt: A = 18, B = 36 en C = −9, dus B is het grootst. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Welke van A, B en C is bij x = 3 het grootst?",
+   "ctx": "Een leerling krijgt drie uitdrukkingen: A = 2x², B = (2x)² en C = −x². Hij moet ze alle drie berekenen voor x = 3 en let daarbij goed op de notatie, de haakjes en de volgorde van bewerkingen."
+  },
+  {
+   "v": "Waarom is B = (2x)² groter dan A = 2x² (voor x = 3)?",
+   "o": [
+    "\"bij B wordt ook de 2 gekwadrateerd: 4x² tegenover 2x²\"",
+    "\"bij B tel je de haakjes erbij op\"",
+    "\"bij B is het min-teken weggevallen, volgens mij, eigenlijk\"",
+    "\"36 is groter dan 18 om geen reden\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 4,
+   "u": "Lees de formule stap voor stap: wat is variabele, constante en coëfficiënt? Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: (2x)² = 4x², en dat is twee keer zo groot als 2x².",
+    "Koos je \"\"bij B tel je de haakjes erbij op\"\"? Dan denk je dat haakjes iets optellen. Haakjes bepalen alleen de volgorde, en bij B kwadrateer je 2x helemaal.",
+    "Koos je \"\"bij B is het min-teken weggevallen, volgens mij, eigenlijk\"\"? Dan zoek je de oorzaak bij een teken. Er staat geen min-teken in B, het verschil zit in het kwadrateren van de 2.",
+    "Koos je \"\"36 is groter dan 18 om geen reden\"\"? Dan zie je het verschil als toeval. Het verschil komt door de haakjes, en dus door de 2 die ook mee kwadrateert."
+   ],
+   "uh": "Waarom is B = (2x)² groter dan A = 2x² (voor x = 3)?",
+   "ctx": "Een leerling krijgt drie uitdrukkingen: A = 2x², B = (2x)² en C = −x². Hij moet ze alle drie berekenen voor x = 3 en let daarbij goed op de notatie, de haakjes en de volgorde van bewerkingen."
+  }
+ ],
+ "oe": [
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een bedrijf rekent voor het huren van een tent een vast bedrag van €120 plus €15 per gast. De totale kosten K (in euro) voor n gasten worden gegeven door K = 120 + 15n. Een klant wil weten wat elk onderdeel van de formule betekent en wat de tent kost voor 30 gasten.",
+   "v": "Zeg wat de getallen 120 en 15 betekenen en bereken K voor n = 30.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "120 is het vaste bedrag, de vaste term (1p). 15 is het bedrag per gast, de coëfficiënt (1p). K = 120 + 450 = 570 euro (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een functie is gegeven door g(x) = x² − 4x + 3. Een leerling wil g(0), g(1) en g(5) uitrekenen en let goed op de notatie van het kwadraat en de tekens.",
+   "v": "Bereken g(0), g(1) en g(5).",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "g(0) = 3 (1p). g(1) = 1 − 4 + 3 = 0 (1p). g(5) = 25 − 20 + 3 = 8 (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "In een tabel staat bij t = 0, 1, 2, 3 de hoeveelheid water in een ton: 80, 74, 68, 62 liter. Een leerling zoekt een formule en wil weten wanneer de ton leeg is. Hij vermoedt dat het verband lineair is.",
+   "v": "Stel de formule op en bereken na hoeveel uur de ton leeg is.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Per uur 6 liter minder en begin 80 (1p). V = 80 − 6t (1p). Leeg bij t = 80/6 is ongeveer 13,3 uur (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een webshop groeit 5% per maand in omzet. De omzet is nu €20 000 per maand. De eigenaar wil weten wat de omzet na 2 maanden is, en hij wil de groei goed noteren met een groeifactor.",
+   "v": "Geef de groeifactor en bereken de omzet na 2 maanden (op hele euro's).",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Groeifactor 1,05 (1p). 20 000 × 1,05² = 22 050 (1p). Dat is €22 050 per maand (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een klasgenoot zegt: \"(3x)² en 3x² zijn hetzelfde, want de haakjes doen niets.\" Jij weet dat hij dit kan nagaan door een getal in te vullen, bijvoorbeeld x = 2.",
+   "v": "Leg uit dat de twee uitdrukkingen niet hetzelfde zijn, met een berekening voor x = 2.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "(3 × 2)² = 36 (1p). 3 × 2² = 12 (1p). De haakjes bepalen wat gekwadrateerd wordt (1p)."
+  }
+ ]
+}
