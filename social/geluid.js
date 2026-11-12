@@ -129,6 +129,59 @@
   }
   const lerp = (a, b, x) => a + (b - a) * x;
 
+  // ── Akoestische instrumenten en geluiden van dingen ──
+  // Snaar (Karplus-Strong): een aangeslagen snaar die uitsterft. Klinkt als bas, ukelele of gitaar.
+  function snaar(ac, M, uit, f, t, dur, vol, o, px) {
+    o = o || {}; const sr = ac.sampleRate, N = Math.max(2, Math.round(sr / f)), len = Math.floor(sr * dur), buf = ac.createBuffer(1, len, sr), d = buf.getChannelData(0), r = rnd(_seed++ * 7919);
+    const ring = new Float32Array(N); let vorig = 0; for (let i = 0; i < N; i++) { vorig += (o.helder || .5) * ((r() * 2 - 1) - vorig); ring[i] = vorig; }
+    let k = 0, laatst = 0; const dm = o.demp || .995;
+    for (let i = 0; i < len; i++) { const cur = ring[k]; ring[k] = dm * .5 * (cur + laatst); laatst = cur; d[i] = cur * (i > len - 1500 ? (len - i) / 1500 : 1); k = (k + 1) % N; }
+    const n = ac.createBufferSource(); n.buffer = buf; const g = ac.createGain(); g.gain.value = vol * 2.2; n.connect(g);
+    const pn = px ? pan(ac, px) : null; if (pn) { g.connect(pn); pn.connect(uit); } else g.connect(uit);
+    const rv = ac.createGain(); rv.gain.value = .25; g.connect(rv); rv.connect(M.rev); n.start(t);
+  }
+  // Getokkeld akkoord: de snaren vlak na elkaar, zoals een duim over een ukelele.
+  function tokkel(ac, M, uit, freqs, t, dur, vol) { freqs.forEach((f, i) => snaar(ac, M, uit, f, t + i * .017, dur, vol * (1 - i * .08), { demp: .9955, helder: .6 }, (i - 1.5) * .25)); }
+  const osc = (ac, uit, type, f, t, att, piek, dur) => { const o = ac.createOscillator(), g = ac.createGain(); o.type = type; o.frequency.value = f; env(g, t, att, piek, dur); o.connect(g); g.connect(uit); o.start(t); o.stop(t + dur + .05); return o; };
+  const bus = (ac, M, uit, px, galm) => { const g = ac.createGain(); const pn = px ? pan(ac, px) : null; if (pn) { g.connect(pn); pn.connect(uit); } else g.connect(uit); if (galm) { const rv = ac.createGain(); rv.gain.value = galm; g.connect(rv); rv.connect(M.rev); } return g; };
+  // Marimba: houten toon, korte boventoon, zachte tik van de stok.
+  function marimba(ac, M, uit, f, t, vol, px) { const g = bus(ac, M, uit, px, .3);
+    osc(ac, g, 'sine', f, t, .004, vol, .5); osc(ac, g, 'sine', f * 3.93, t, .003, vol * .28, .09); osc(ac, g, 'sine', f * 9.2, t, .002, vol * .08, .03);
+    ruis(ac, M, g, t, .014, { soort: 'lowpass', f1: 1300, vol: vol * .5 }); }
+  // Kalimba: metalen tong, helder en kort.
+  function kalimba(ac, M, uit, f, t, vol, px) { const g = bus(ac, M, uit, px, .35);
+    osc(ac, g, 'sine', f, t, .003, vol, .85); osc(ac, g, 'sine', f * 2, t, .003, vol * .22, .3); osc(ac, g, 'sine', f * 5.35, t, .002, vol * .14, .05);
+    ruis(ac, M, g, t, .008, { f1: 3200, vol: vol * .25, q: 1.5 }); }
+  // Handklap: drie korte stootjes ruis en een staartje.
+  function klap(ac, M, uit, t, vol) { const g = bus(ac, M, uit, 0, .3); [0, .011, .023].forEach(d => ruis(ac, M, g, t + d, .009, { f1: 1500, vol: vol, q: 1.3 })); ruis(ac, M, g, t + .03, .1, { f1: 1300, vol: vol * .7, q: .9 }); }
+  function shaker(ac, M, uit, t, vol) { ruis(ac, M, uit, t, .045, { f1: 4600, vol: vol, q: 1.2, zwel: .3 }); }
+  // Stamp: iets zwaars komt neer.
+  function stamp(ac, M, uit, t, vol) { const o = ac.createOscillator(), g = ac.createGain(); o.type = 'sine'; o.frequency.setValueAtTime(105, t); o.frequency.exponentialRampToValueAtTime(44, t + .16); env(g, t, .003, vol, .32); o.connect(g); g.connect(uit); o.start(t); o.stop(t + .4);
+    ruis(ac, M, uit, t, .07, { soort: 'lowpass', f1: 500, vol: vol * .5 }); }
+  function tom(ac, M, uit, t, f, vol, px) { const g = bus(ac, M, uit, px, .2); const o = ac.createOscillator(), e = ac.createGain(); o.type = 'sine'; o.frequency.setValueAtTime(f * 1.6, t); o.frequency.exponentialRampToValueAtTime(f, t + .07); env(e, t, .003, vol, .24); o.connect(e); e.connect(g); o.start(t); o.stop(t + .3);
+    ruis(ac, M, g, t, .02, { soort: 'lowpass', f1: 900, vol: vol * .4 }); }
+  // Tok: hout op hout (f bepaalt hoe groot het stuk hout klinkt).
+  function tok(ac, M, uit, t, vol, f) { const g = bus(ac, M, uit, 0, .2); osc(ac, g, 'sine', f, t, .002, vol * .22, .07); osc(ac, g, 'sine', f * 1.52, t, .002, vol * .12, .045); ruis(ac, M, g, t, .012, { f1: f * 3, vol: vol * .12, q: 2 }); }
+  // Klak: een klepje van een klapbord dat omvalt.
+  function klak(ac, M, uit, t, vol) { ruis(ac, M, uit, t, .012, { f1: 2400, vol: vol * .2, q: 3 }); ruis(ac, M, uit, t + .028, .02, { f1: 950, vol: vol * .22, q: 2 }); osc(ac, uit, 'sine', 140, t + .028, .002, vol * .14, .06); }
+  function woesj(ac, M, uit, t, dur, vol, f1, f2) { ruis(ac, M, uit, t, dur, { f1: f1, f2: f2, vol: vol, zwel: .5, q: 1.1 }); }
+  // Schuiffluit: het tekenfilmgeluid van iets dat omhoog gaat.
+  function fluit(ac, M, uit, t, dur, f1, f2, vol) { const o = ac.createOscillator(), g = ac.createGain(), l = ac.createOscillator(), lg = ac.createGain(); o.type = 'sine'; o.frequency.setValueAtTime(f1, t); o.frequency.exponentialRampToValueAtTime(f2, t + dur);
+    l.frequency.value = 7; lg.gain.value = 9; l.connect(lg); lg.connect(o.frequency); g.gain.setValueAtTime(.0001, t); g.gain.exponentialRampToValueAtTime(vol, t + dur * .25); g.gain.exponentialRampToValueAtTime(.0001, t + dur);
+    o.connect(g); g.connect(uit); o.start(t); l.start(t); o.stop(t + dur + .05); l.stop(t + dur + .05); }
+  // Gruis: brokstukken die vallen.
+  function gruis(ac, M, uit, t, dur, r) { for (let i = 0; i < 14; i++) { const tt = t + Math.pow(r(), 1.6) * dur; ruis(ac, M, uit, tt, .03 + r() * .06, { soort: 'lowpass', f1: 300 + r() * 900, vol: .1 * (1 - (tt - t) / dur) + .02, px: (r() - .5) * 1.4 }); if (i % 3 === 0) tok(ac, M, uit, tt, .35, 160 + r() * 200); } }
+  // Vuur: zacht geraas met knetters.
+  function vuur(ac, M, uit, t, dur, vol, r) { ruis(ac, M, uit, t, dur, { soort: 'lowpass', f1: 520, f2: 460, vol: vol, zwel: .08, q: .4 });
+    const n = Math.round(dur * 9); for (let i = 0; i < n; i++) { const tt = t + r() * dur; ruis(ac, M, uit, tt, .015 + r() * .03, { f1: 1400 + r() * 2400, vol: vol * (.5 + r() * 1.2), q: 2.2, px: (r() - .5) * 1.2 }); } }
+  // Het Slagio-motief: vier noten omhoog, de laatste valt op de tel met bas en een klap.
+  function motief(ac, M, uit, t, grond, r, zacht) {
+    const v = zacht ? .7 : 1; [[4, 0], [7, .13], [9, .26], [12, .5]].forEach(([n, d], i) => { const tt = t + d + (r() - .5) * .008;
+      marimba(ac, M, uit, NOOT(grond + n - 12), tt, (.11 + i * .015) * v, (i - 1.5) * .25); kalimba(ac, M, uit, NOOT(grond + n), tt + .004, (.05 + i * .012) * v, (1.5 - i) * .25); });
+    snaar(ac, M, uit, NOOT(grond - 29), t + .26, .5, .2 * v, { demp: .996, helder: .35 }); snaar(ac, M, uit, NOOT(grond - 36), t + .5, 1.3, .3 * v, { demp: .997, helder: .35 });
+    if (!zacht) klap(ac, M, uit, t + .5, .1); tokkel(ac, M, uit, [0, 4, 7, 12].map(n => NOOT(grond + n - 12)), t + .5, 1.7, .12 * v);
+  }
+
   // Recepten. (t = starttijd, x = extra parameter uit de cue)
   const R = {
     // ── uit de app (quiz.js playSound) ──
@@ -181,58 +234,53 @@
       }
     },
     // ── Momenten: één compositie per moment, op de tel van het beeld ──
-    // Level omhoog (D-groot). x = { hit }: het moment waarop het cijfer wisselt.
+    // Akoestisch gehouden: marimba, kalimba, een getokkeld akkoord, bas, handklap en
+    // geluiden van de dingen in beeld (sprong, landing, klap door het plafond, hout, vuur).
+    // Level omhoog (D). x = { vul0, vul1, hurk, sprong, land }
     mLevel: (a, M, u, t, x) => {
-      const H = t + ((x && x.hit) || 1.62), D = [-19, -12, -7, -3, 0, 5, 9, 12, 17];           // D3 A3 D4 F#4 A4 D5 F#5 A5 D6
-      bel(a, M, u, NOOT(5), t + .05, .7, .05);
-      vlak(a, M, u, [NOOT(-19), NOOT(-12)], t + .4, H - t - .35, .05, { c1: 300, c2: 1500, open: H - t - .5, c3: 1500, att: .5, houd: .95, zaal: .3 });
-      const n = 11; for (let i = 0; i < n; i++) { const q = i / (n - 1), tt = lerp(t + .52, H - .09, Math.pow(q, .82)); pluk(a, M, u, NOOT([-7, -3, 0, 5, 9, 12, 5, 9, 12, 17, 21][i]), tt, .22, .05 + q * .06, (q - .5) * .8); }
-      ruis(a, M, u, H - .75, .75, { f1: 500, f2: 5200, vol: .07, zwel: .93, q: .7, zaal: .2 });
-      dreun(a, M, u, H, .5, true);
-      ruis(a, M, u, H, 1.5, { f1: 3600, f2: 1400, vol: .06, q: .5, att: .01, zaal: .5 });
-      vlak(a, M, u, [NOOT(-19), NOOT(-12), NOOT(-7), NOOT(-3), NOOT(0)], H, 2.6, .16, { c1: 900, c2: 3200, open: .12, c3: 500, att: .012, houd: .3 });
-      [5, 9, 12, 17].forEach((nt, i) => bel(a, M, u, NOOT(nt), H + i * .045, 1.6, .11 - i * .012, (i - 1.5) * .35));
-      bel(a, M, u, NOOT(12), H + .42, 1.2, .1, -.3); bel(a, M, u, NOOT(17), H + .6, 2.2, .13, .3); bel(a, M, u, NOOT(5), H + .6, 2.2, .07);
-      glinster(a, M, u, H + .9, H + 2.9, [5, 9, 12, 17, 21], 9, .035, 7);
+      x = x || {}; const v0 = t + (x.vul0 || .5), v1 = t + (x.vul1 || 1.35), hk = t + (x.hurk || 1.62), sp = t + (x.sprong || 1.85), L = t + (x.land || 2.3), r = rnd(11);
+      tok(a, M, u, t + .08, .5, 300); tok(a, M, u, t + .2, .5, 360);                                   // treden schuiven op hun plek
+      const sch = [5, 7, 9, 12, 14, 17, 19, 21], n = 8;                                                // trede loopt vol: toonladder omhoog
+      for (let i = 0; i < n; i++) { const tt = lerp(v0, v1 - .06, i / (n - 1)) + (r() - .5) * .012; marimba(a, M, u, NOOT(sch[i] - 12), tt, .07 + i * .012, (i / n - .5) * .6); if (i % 2) shaker(a, M, u, tt, .03); }
+      kalimba(a, M, u, NOOT(12), v1, .12, .2); kalimba(a, M, u, NOOT(17), v1 + .02, .1, -.2);         // vol: tingel
+      tok(a, M, u, hk, .35, 220);                                                                      // hurken
+      fluit(a, M, u, sp, L - sp - .04, 420, 980, .05); woesj(a, M, u, sp, L - sp, .05, 500, 2600);     // sprong
+      stamp(a, M, u, L, .5); tok(a, M, u, L + .01, .5, 180);                                           // landing
+      tokkel(a, M, u, [5, 9, 12, 17].map(n2 => NOOT(n2 - 12)), L, 1.6, .16);
+      snaar(a, M, u, NOOT(-31), L, 1.3, .3, { demp: .997, helder: .35 });
+      motief(a, M, u, L + .22, 5, r);
+      shaker(a, M, u, L + .22, .04); shaker(a, M, u, L + .35, .04); shaker(a, M, u, L + .48, .05);
     },
-    // Promotie (E-groot). x = { start, land }: het schild springt op start en landt op land.
+    // Promotie (E). x = { start, klap, stempel }
     mPromotie: (a, M, u, t, x) => {
-      const S0 = t + ((x && x.start) || 1.7), L = t + ((x && x.land) || 2.12), E = n => NOOT(n + 7);   // E5 = NOOT(7)
-      bel(a, M, u, E(-12), t + .1, .7, .05);
-      const n = 12; for (let i = 0; i < n; i++) { const q = i / (n - 1), tt = lerp(t + .7, S0 - .05, Math.pow(q, .7));       // roffel die versnelt
-        const o = a.createOscillator(), g = a.createGain(); o.type = 'sine'; o.frequency.setValueAtTime(130 + q * 50, tt); o.frequency.exponentialRampToValueAtTime(70, tt + .12); env(g, tt, .003, .12 + q * .16, .16); o.connect(g); g.connect(u); o.start(tt); o.stop(tt + .2);
-        if (i % 2) pluk(a, M, u, E([-24, -20, -17, -12, -8, -5][Math.floor(i / 2)]), tt, .2, .05 + q * .04, (q - .5)); }
-      vlak(a, M, u, [E(-24), E(-17)], t + .7, S0 - t - .65, .05, { c1: 250, c2: 1300, open: S0 - t - .8, c3: 1300, att: .5, houd: .95, zaal: .3 });
-      ruis(a, M, u, S0, L - S0, { f1: 400, f2: 4800, vol: .1, zwel: .55, q: 1.1, zaal: .2, px: -.4 });                    // het schild draait door de lucht
-      ruis(a, M, u, S0 + .1, L - S0 - .1, { f1: 4200, f2: 700, vol: .07, zwel: .5, q: 1.1, px: .4 });
-      { const o = a.createOscillator(), g = a.createGain(); o.type = 'triangle'; o.frequency.setValueAtTime(220, S0); o.frequency.exponentialRampToValueAtTime(880, L - .03); env(g, S0, .05, .05, L - S0); o.connect(g); g.connect(u); o.start(S0); o.stop(L + .05); }
-      dreun(a, M, u, L, .55, true);
-      ruis(a, M, u, L, 1.7, { f1: 3800, f2: 1300, vol: .07, q: .5, att: .01, zaal: .5 });
-      // koper: ta-ta-taaa
-      vlak(a, M, u, [E(-17), E(-12), E(-8)], L, .16, .15, { c1: 700, c2: 2600, open: .03, c3: 900, att: .008, houd: .6, zaal: .3 });
-      vlak(a, M, u, [E(-17), E(-12), E(-8)], L + .17, .14, .15, { c1: 700, c2: 2600, open: .03, c3: 900, att: .008, houd: .6, zaal: .3 });
-      vlak(a, M, u, [E(-24), E(-12), E(-5), E(0), E(4)], L + .34, 2.4, .2, { c1: 800, c2: 3400, open: .1, c3: 500, att: .012, houd: .35 });
-      [0, 4, 7, 12].forEach((nt, i) => bel(a, M, u, E(nt), L + .34 + i * .05, 1.8, .1 - i * .012, (i - 1.5) * .35));
-      bel(a, M, u, E(12), L + 1.0, 2.2, .1, .25); bel(a, M, u, E(7), L + 1.0, 2.2, .06, -.25);
-      glinster(a, M, u, L + 1.2, L + 3, [0, 4, 7, 11, 12], 8, .035, 9);
+      x = x || {}; const S0 = t + (x.start || 1.5), K = t + (x.klap || 1.74), ST = t + (x.stempel || 2.45), r = rnd(21);
+      tok(a, M, u, t + .12, .5, 260);
+      const n = 13; for (let i = 0; i < n; i++) { const q = i / (n - 1), tt = lerp(t + .6, S0 - .04, Math.pow(q, .68)); tom(a, M, u, tt, 82 + (i % 3) * 14, .12 + q * .2, (i % 2 ? .3 : -.3)); if (i > 5) shaker(a, M, u, tt + .04, .02 + q * .03); }
+      fluit(a, M, u, S0, K - S0, 300, 1250, .06); woesj(a, M, u, S0, K - S0 + .05, .09, 300, 3200);
+      stamp(a, M, u, K, .7); gruis(a, M, u, K, .7, r);                                                 // door het plafond
+      tokkel(a, M, u, [7, 11, 14, 19].map(n2 => NOOT(n2 - 12)), K + .02, 1.2, .13);
+      snaar(a, M, u, NOOT(-29), K, 1.2, .3, { demp: .997, helder: .35 });
+      woesj(a, M, u, K + .05, .5, .04, 2400, 500);                                                     // kleur stroomt het beeld in
+      motief(a, M, u, ST - .5, 7, r);                                                                  // laatste noot valt op het stempel
+      stamp(a, M, u, ST, .55); tok(a, M, u, ST, .7, 520);
+      tokkel(a, M, u, [0, 4, 7, 12].map(n2 => NOOT(n2 - 12)), ST + .42, .5, .1); tokkel(a, M, u, [7, 11, 14, 19, 23].map(n2 => NOOT(n2 - 12)), ST + .66, 1.8, .15);   // ta-daa
+      snaar(a, M, u, NOOT(-29), ST + .66, 1.4, .28, { demp: .997, helder: .35 }); klap(a, M, u, ST + .66, .1);
     },
-    // Streak (A-groot). x = { dagen: [tijden], vink, vlam }: bolletjes, vandaag afgevinkt, vlam laait op.
+    // Streak (A). x = { hops:[t], dagen:[t], terug, worp, vlam, duur }
     mStreak: (a, M, u, t, x) => {
-      x = x || {}; const V = t + (x.vink || 1.45), F = t + (x.vlam || 1.87), eind = t + (x.duur || 5), A = [0, 2, 4, 5, 7, 9, 11, 12];
-      // vuur: zacht geraas met knetters, harder na het oplaaien
-      ruis(a, M, u, t, F - t, { soort: 'lowpass', f1: 420, f2: 520, vol: .035, zwel: .3, q: .4 });
-      ruis(a, M, u, F, eind - F, { soort: 'lowpass', f1: 1500, f2: 600, vol: .07, att: .05, q: .4 });
-      const r = rnd(123); for (let i = 0; i < 46; i++) { const tt = lerp(t + .2, eind - .2, r()); ruis(a, M, u, tt, .02 + r() * .03, { f1: 1500 + r() * 2500, vol: (tt > F ? .05 : .022) * (.4 + r()), q: 2, px: (r() - .5) * 1.2 }); }
-      (x.dagen || []).forEach((d, i) => pluk(a, M, u, NOOT(A[i % 8]), t + d, .26, .08, (i - 3) * .2));
-      pluk(a, M, u, NOOT(A[(x.dagen || []).length % 8] + 0), V, .3, .12); bel(a, M, u, NOOT(12), V + .02, .8, .07);
-      { const o = a.createOscillator(), g = a.createGain(); o.type = 'sine'; o.frequency.setValueAtTime(520, V + .06); o.frequency.exponentialRampToValueAtTime(1500, F); env(g, V + .06, .04, .045, F - V - .04); o.connect(g); naar(a, M, g, u, .3); o.start(V + .06); o.stop(F + .05); }
-      ruis(a, M, u, V + .06, F - V - .06, { f1: 900, f2: 4200, vol: .04, zwel: .8, q: 1.4 });
-      dreun(a, M, u, F, .45, true);
-      ruis(a, M, u, F, .9, { soort: 'lowpass', f1: 300, f2: 3800, vol: .16, zwel: .12, q: .5, baan: .25, zaal: .3 });          // woesj van de vlam
-      vlak(a, M, u, [NOOT(-24), NOOT(-12), NOOT(-5), NOOT(0), NOOT(4)], F, 2.4, .15, { c1: 800, c2: 3000, open: .12, c3: 500, att: .012, houd: .3 });
-      [0, 4, 7, 12].forEach((nt, i) => bel(a, M, u, NOOT(nt), F + i * .05, 1.7, .1 - i * .012, (i - 1.5) * .35));
-      bel(a, M, u, NOOT(7), F + .45, 1.2, .09, -.3); bel(a, M, u, NOOT(12), F + .62, 2.2, .12, .3);
-      glinster(a, M, u, F + .9, F + 2.8, [0, 4, 7, 9, 12], 7, .03, 5);
+      x = x || {}; const W = t + (x.worp || 1.5), F = t + (x.vlam || 1.88), eind = t + (x.duur || 5), r = rnd(31), A = [0, 2, 4, 7, 9, 12];
+      vuur(a, M, u, t, F - t, .03, r); vuur(a, M, u, F, eind - F, .065, r);
+      (x.hops || []).forEach((h, i) => { stamp(a, M, u, t + h, .16); marimba(a, M, u, NOOT(i ? -8 : -12), t + h, .06); });
+      (x.dagen || []).forEach((d, i) => marimba(a, M, u, NOOT(A[i % 6] - 12), t + d + (r() - .5) * .01, .07, (i - 3) * .15));
+      tok(a, M, u, t + (x.terug || 1.2), .3, 240);
+      woesj(a, M, u, W, F - W, .06, 600, 2200);                                                       // het blok vliegt
+      tok(a, M, u, F, .9, 330); tok(a, M, u, F + .05, .5, 250); stamp(a, M, u, F, .35);               // hout op hout
+      ruis(a, M, u, F, .8, { soort: 'lowpass', f1: 300, f2: 3200, vol: .13, zwel: .12, q: .5, baan: .25 });   // het vuur laait op
+      klak(a, M, u, F + .1, .5); klak(a, M, u, F + .34, .7);                                          // het klapbord valt om
+      kalimba(a, M, u, NOOT(12), F + .02, .1);
+      tokkel(a, M, u, [0, 4, 7, 12].map(n2 => NOOT(n2 - 12)), F + .36, 1.6, .13);
+      snaar(a, M, u, NOOT(-36), F + .36, 1.3, .26, { demp: .997, helder: .35 });
+      motief(a, M, u, F + .6, 0, r, true);
     },
     typ: (a, M, u, t, x) => { const r = rnd(Math.floor(t * 1000) + 3); N(a, M, u, t, .018, { freq: 1800 + r() * 500, vol: .03 * (x || 1), q: 1.6 }); },
     scan: (a, M, u, t, x) => { const d = x || .8; N(a, M, u, t, d, { freq: 600, freq2: 2200, q: 3, vol: .05, swell: .5, sweep: 1 }); T(a, M, u, 520, 1040, t, d, { vol: .03, glide: 1, cut: 1800 }); },

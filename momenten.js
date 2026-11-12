@@ -27,18 +27,15 @@
   const zet = (el, st) => { for (const k in st) { const v = st[k]; if (el.style[k] !== v) el.style[k] = v; } };
 
   const CSS = `
-.mm-root{position:relative;overflow:hidden;width:1080px;background:#0b0d16;--mm-kop:var(--font-head,var(--kop,system-ui));--mm-tekst:var(--font,var(--tekst,system-ui));line-height:1;-webkit-font-smoothing:antialiased}
+.mm-root{position:relative;overflow:hidden;width:1080px;background:#10142a;--mm-kop:var(--font-head,var(--kop,system-ui));--mm-tekst:var(--font,var(--tekst,system-ui));line-height:1;-webkit-font-smoothing:antialiased}
 .mm-root *{box-sizing:border-box;margin:0;padding:0}
 .mm-root .mm-a{position:absolute}
-.mm-root svg{display:block}
-.mm-bg{inset:0;background:radial-gradient(90% 70% at 50% 42%,#1c2140,#0f1118 62%,#0a0b12)}
-.mm-gloed{width:1100px;height:1100px;border-radius:50%;filter:blur(60px);left:-10px;top:0}
-.mm-g1{background:radial-gradient(circle,rgba(255,138,31,.42),rgba(255,138,31,0) 62%)}
-.mm-g2{background:radial-gradient(circle,var(--mm-niv-g,rgba(47,107,255,.4)),rgba(47,107,255,0) 62%)}
-.mm-korrel{inset:0;opacity:.07;mix-blend-mode:overlay}
-.mm-deel{left:0;top:0}
+.mm-root svg{display:block;overflow:visible}
+.mm-root .m-shadow{display:none}
+.mm-deel{left:0;top:0;pointer-events:none}
 .mm-podium-w{left:0;width:1080px;height:1080px;transform-origin:50% 50%}
 .mm-podium{left:0;top:0;width:1080px;height:1080px}
+.mm-wereld{left:0;top:0;width:1080px;height:1080px}
 .mm-midden{left:0;right:0;text-align:center}
 .mm-hook{left:80px;right:80px;top:250px;text-align:center;font:800 80px/1.04 var(--mm-kop);color:#fff;letter-spacing:-.03em;word-spacing:.06em}
 .mm-hook span{display:inline-block}
@@ -46,201 +43,212 @@
 .mm-merk b{display:inline-flex;align-items:center;gap:22px;font:800 64px/1 var(--mm-kop);color:#fff;letter-spacing:-.02em}
 .mm-merk img{width:84px;height:84px;border-radius:22px}
 .mm-merk small{display:block;margin-top:16px;font:600 34px/1 var(--mm-tekst);color:rgba(255,255,255,.7)}
-.mm-flits{inset:0;background:#fff;opacity:0;pointer-events:none}
-.mm-pil{display:inline-block;padding:26px 58px 30px;border-radius:999px;background:linear-gradient(135deg,#ffd76a,#ffb020 45%,#ff8a1f);
-  font:800 84px/1 var(--mm-kop);color:#3a1600;letter-spacing:-.03em;white-space:nowrap;box-shadow:0 10px 0 #c95f00,0 34px 70px -18px rgba(255,150,30,.75)}
-.mm-sub{font:700 44px/1 var(--mm-tekst);color:rgba(255,255,255,.82);letter-spacing:-.01em}
-.mm-ster{width:70px;height:70px;margin:-35px 0 0 -35px}
-.mm-ster svg,.mm-vonk svg,.mm-ring svg,.mm-vlam svg,.mm-pijl svg{width:100%;height:100%;overflow:visible}
-.mm-stralen{left:40px;width:1000px;height:1000px;border-radius:50%;opacity:0;
-  background:repeating-conic-gradient(var(--mm-str,rgba(255,214,120,.42)) 0 9deg,transparent 9deg 22.5deg);
-  -webkit-mask:radial-gradient(circle,#000 24%,transparent 66%);mask:radial-gradient(circle,#000 24%,transparent 66%)}
-.mm-schok{border-radius:50%;border:10px solid #ffd76a;opacity:0}
-.mm-label{top:120px;font:800 32px/1 var(--mm-tekst);letter-spacing:.24em;text-transform:uppercase;color:rgba(255,255,255,.62)}
-/* level */
-.mm-lv .mm-stralen{top:-30px}
-.mm-lv .mm-schok{left:540px;top:470px;width:470px;height:470px;margin:-235px 0 0 -235px}
-.mm-lv .mm-vonk{left:370px;top:0;width:340px;height:340px}
-.mm-ring{left:260px;top:190px;width:560px;height:560px}
-.mm-kern{left:540px;top:470px;width:0;height:0}
-.mm-kern small{position:absolute;left:-200px;width:400px;top:-150px;text-align:center;font:800 32px/1 var(--mm-tekst);letter-spacing:.24em;text-transform:uppercase;color:rgba(255,255,255,.62)}
-.mm-cijfer{position:absolute;left:-200px;width:400px;top:-108px;height:240px;overflow:hidden;text-align:center}
-.mm-cijfer b,.mm-teller b{position:absolute;left:0;right:0;top:0;font:800 250px/240px var(--mm-kop);letter-spacing:-.05em;color:#fff}
-.mm-cijfer b.mm-nieuw,.mm-teller b.mm-nieuw{background:linear-gradient(180deg,#fff3c4,#ffc247 48%,#ff8a1f);-webkit-background-clip:text;background-clip:text;color:transparent}
-.mm-kop{left:545px;top:232px;width:0;height:0}
-.mm-kop i{position:absolute;left:-17px;top:-17px;width:34px;height:34px;border-radius:50%;background:#fff;box-shadow:0 0 30px 12px rgba(255,214,120,.9)}
-/* promotie */
-.mm-pr .mm-stralen{top:-60px}
-.mm-pr .mm-schok{left:540px;top:440px;width:460px;height:460px;margin:-230px 0 0 -230px;border-color:#fff}
-.mm-streep{width:8px;border-radius:8px;background:linear-gradient(180deg,rgba(255,255,255,0),rgba(255,255,255,.75),rgba(255,255,255,0))}
-.mm-pr .mm-vonk{left:380px;top:0;width:320px;height:320px}
-.mm-schild{left:330px;top:200px;width:420px;height:480px}
+.mm-vonk svg{width:100%;height:100%}
+.mm-kick{font:800 40px/1 var(--mm-tekst);letter-spacing:.24em;text-transform:uppercase;color:#ffc247;white-space:nowrap}
+.mm-groot{font:800 170px/1.08 var(--mm-kop);color:#fff;letter-spacing:-.045em;white-space:nowrap}
+.mm-groot em{font-style:normal;color:#ffc247}
+.mm-l{display:inline-block;overflow:hidden;vertical-align:top;padding:0 .02em;margin:0 -.02em}
+.mm-l i{display:inline-block;font-style:normal}
+.mm-zon{border-radius:50%}
+/* level: de trap */
+.mm-trede{overflow:hidden}
+.mm-trede u{position:absolute;left:0;right:0;top:0;height:26px;text-decoration:none}
+.mm-trede b{position:absolute;left:0;right:0;text-align:center;font:800 190px/1 var(--mm-kop);letter-spacing:-.05em}
+.mm-vul{left:0;right:0;bottom:0;background:#ffb020}
+.mm-vul u{background:#ffd76a}
+.mm-glim{top:0;bottom:0;width:120px;background:rgba(255,255,255,.55);transform:skewX(-20deg)}
+.mm-stok{width:10px;border-radius:5px;background:#e9edf5;transform-origin:50% 100%}
+.mm-vaan{transform-origin:0 50%}
+/* promotie: door het plafond */
+.mm-zone{left:-2460px;width:6000px}
+.mm-balk{left:-2460px;width:6000px;height:40px}
+.mm-zlab{font:800 34px/1 var(--mm-tekst);letter-spacing:.24em;text-transform:uppercase;color:rgba(255,255,255,.75)}
+.mm-rail{width:6px;top:-3000px;height:7000px;background:rgba(255,255,255,.08)}
+.mm-vloed{border-radius:50%;width:200px;height:200px;margin:-100px 0 0 -100px}
+.mm-plat{width:380px;height:50px;margin-left:-190px;border-radius:14px;background:#aeb6c8;overflow:hidden}
+.mm-plat u{position:absolute;left:0;right:0;top:0;height:20px;background:#e9edf5}
+.mm-wijs{width:70px;height:46px;margin-left:-35px}
+.mm-schild{width:230px;height:264px;margin:-132px 0 0 -115px}
 .mm-schild .mm-sv{position:absolute;inset:0}
-.mm-schild svg{position:absolute;inset:0;width:100%;height:100%;overflow:visible}
-.mm-pijl{width:90px;height:60px;margin-left:-45px}
-.mm-divnaam{top:722px;height:100px;overflow:hidden}
-.mm-divnaam b{position:absolute;left:0;right:0;top:0;font:800 84px/100px var(--mm-kop);color:#fff;letter-spacing:-.035em}
-/* streak */
-.mm-halo{left:190px;top:-40px;width:700px;height:700px;border-radius:50%;background:radial-gradient(circle,rgba(255,150,40,.6),rgba(255,106,19,.18) 45%,rgba(255,106,19,0) 68%)}
-.mm-st .mm-schok{left:540px;top:330px;width:380px;height:380px;margin:-190px 0 0 -190px}
-.mm-vlam{left:390px;top:110px;width:300px;height:375px}
-.mm-teller{top:478px;height:250px;overflow:hidden}
-.mm-teller b{line-height:250px}
-.mm-onder{top:738px;font:800 58px/1 var(--mm-kop);color:#ffd9a0;letter-spacing:-.02em}
-.mm-dag{width:92px;height:92px;margin:-46px 0 0 -46px;border-radius:50%;background:rgba(255,255,255,.07);border:4px solid rgba(255,255,255,.14);display:grid;place-items:center}
-.mm-dag i{position:absolute;inset:-4px;border-radius:50%;background:linear-gradient(135deg,#ffd76a,#ff8a1f);box-shadow:0 6px 0 #c95f00}
-.mm-dag svg{position:relative;width:46px;height:46px;fill:none;stroke:#3a1600;stroke-width:5;stroke-linecap:round;stroke-linejoin:round}
-.mm-vandaag{top:968px;font:800 26px/1 var(--mm-tekst);letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.6);width:200px;margin-left:-100px;text-align:center}
-.mm-vuurtje{width:26px;height:26px;margin:-13px 0 0 -13px;border-radius:50%;background:#fff;box-shadow:0 0 30px 14px rgba(255,190,90,.95)}
+.mm-schild svg{position:absolute;inset:0;width:100%;height:100%}
+.mm-kring{border-radius:50%;border:10px solid #fff;width:240px;height:240px;margin:-120px 0 0 -120px}
+/* streak: klapbord en kampvuur */
+.mm-bord{display:flex;gap:14px;justify-content:center;left:0;right:0;top:96px;perspective:1400px}
+.mm-kaart{position:relative;width:210px;height:300px}
+.mm-helft{position:absolute;left:0;right:0;height:149px;overflow:hidden;backface-visibility:hidden}
+.mm-helft.mm-b{top:0;border-radius:22px 22px 4px 4px;background:#2a3160;transform-origin:50% 100%}
+.mm-helft.mm-o{top:151px;border-radius:4px 4px 22px 22px;background:#222850;transform-origin:50% 0}
+.mm-helft b{position:absolute;left:0;right:0;text-align:center;font:800 250px/300px var(--mm-kop);color:#fff;letter-spacing:-.04em}
+.mm-helft.mm-b b{top:0}.mm-helft.mm-o b{top:-151px}
+.mm-helft.mm-goud b{color:#ffc247}
+.mm-pen{position:absolute;top:139px;width:12px;height:22px;border-radius:4px;background:#10142a;z-index:3}
+.mm-onder{top:430px;font:800 56px/1 var(--mm-kop);color:#fff;letter-spacing:-.02em}
+.mm-dag{width:66px;height:66px;margin:-33px 0 0 -33px;border-radius:50%;background:#232a4d;display:grid;place-items:center}
+.mm-dag i{position:absolute;inset:0;border-radius:50%;background:#ffb020}
+.mm-dag svg{position:relative;width:34px;height:34px;fill:none;stroke:#3a1600;stroke-width:5;stroke-linecap:round;stroke-linejoin:round}
+.mm-grond{left:-2460px;width:6000px;top:985px;height:4000px;background:#0b0e1f}
+.mm-vuur{left:640px;top:985px;width:0;height:0}
+.mm-vuur svg{position:absolute;left:-170px;top:-380px;width:340px;height:420px}
+.mm-blok{width:130px;height:38px;margin:-19px 0 0 -65px;border-radius:10px;background:#8a5a2b;overflow:hidden}
+.mm-blok u{position:absolute;left:0;right:0;top:0;height:14px;background:#a8743c}
+.mm-blok s{position:absolute;right:0;top:0;bottom:0;width:26px;background:#d9b382;border-radius:50%/40%}
 /* het scherm in de app */
-.mm-ov{position:fixed;inset:0;z-index:9700;background:radial-gradient(90% 70% at 50% 42%,#1c2140,#0f1118 62%,#0a0b12);overflow:hidden;opacity:0;transition:opacity .25s ease;touch-action:manipulation}
+.mm-ov{position:fixed;inset:0;z-index:9700;background:#10142a;overflow:hidden;opacity:0;transition:opacity .25s ease;touch-action:manipulation}
 .mm-ov.mm-aan{opacity:1}
 .mm-ov .mm-root{position:absolute;left:50%;top:0;margin-left:-540px;transform-origin:50% 0;overflow:visible;background:none}
-.mm-ov .mm-bg{display:none}
-.mm-ov .mm-korrel{display:none}
 .mm-voet{position:absolute;z-index:2;left:0;right:0;bottom:0;padding:0 22px calc(22px + env(safe-area-inset-bottom));display:flex;flex-direction:column;align-items:center;gap:14px;
   opacity:0;transform:translateY(24px);transition:opacity .35s ease,transform .45s cubic-bezier(.2,1.3,.4,1);pointer-events:none}
 .mm-voet.mm-aan{opacity:1;transform:none;pointer-events:auto}
-.mm-regel{font:600 16px/1.35 var(--font,system-ui);color:rgba(255,255,255,.82);text-align:center;max-width:340px}
-.mm-regel b{color:#ffd76a;font-weight:800}
-.mm-knop{width:100%;max-width:360px;min-height:56px;border-radius:18px;border:2px solid rgba(0,0,0,.18);border-bottom-width:5px;background:var(--mm-niv,#2f6bff);color:#fff;
+.mm-regel{font:600 16px/1.35 var(--font,system-ui);color:rgba(255,255,255,.9);text-align:center;max-width:340px;background:rgba(11,13,24,.78);padding:8px 16px;border-radius:999px}
+.mm-regel b{color:#ffc247;font-weight:800}
+.mm-knop{width:100%;max-width:360px;min-height:56px;border-radius:18px;border:2px solid rgba(0,0,0,.18);border-bottom-width:5px;background:#fff;color:#10142a;
   font:800 18px/1 var(--font-head,system-ui);letter-spacing:-.01em;cursor:pointer;transition:transform .08s ease,border-bottom-width .08s ease}
 .mm-knop:active{transform:translateY(3px);border-bottom-width:2px}
 @media(prefers-reduced-motion:reduce){.mm-ov,.mm-voet{transition:opacity .2s ease}.mm-voet{transform:none}}
 `;
-  function stijl() { if (document.getElementById('mm-css')) return; const s = document.createElement('style'); s.id = 'mm-css'; s.textContent = CSS; document.head.appendChild(s); }
+  function stijl() { let s = document.getElementById('mm-css'); if (!s) { s = document.createElement('style'); s.id = 'mm-css'; document.head.appendChild(s); } if (s.textContent !== CSS) s.textContent = CSS; }
 
-  const NIV = { havo: ['#2f6bff', 'rgba(47,107,255,.42)'], vwo: ['#7c4dff', 'rgba(124,77,255,.42)'], vmbo: ['#14b8a6', 'rgba(20,184,166,.42)'] };
-  const ster = k => `<svg viewBox="-10 -10 20 20"><path d="M0 -10C1.2 -3 3 -1.2 10 0C3 1.2 1.2 3 0 10C-1.2 3 -3 1.2 -10 0C-3 -1.2 -1.2 -3 0 -10Z" fill="${k || '#ffe9a8'}"/></svg>`;
+  const NIV = { havo: ['#2f6bff', '#1f4fd0', '#6f9bff'], vwo: ['#7c4dff', '#5b33cf', '#a98bff'], vmbo: ['#14b8a6', '#0d8f81', '#5fd9cb'] };
+  const BG = '#10142a';
   const vonkSVG = (m, px) => (typeof mascotSVG === 'function') ? mascotSVG(m, px) : '';
+  const mix = (k, w, pc) => `color-mix(in srgb,${k} ${100 - pc}%,${w} ${pc}%)`;
+  const kleurVast = k => { const d = document.createElement('i'); d.style.color = k; document.body.appendChild(d); const c = getComputedStyle(d).color; d.remove(); return c; };
 
-  // ── Basis: achtergrond, deeltjes, flits, haak en merk (alleen in de video's) ──
+  // ── Basis: vlak decor, één canvas voor papier, stof en brokstukken, haak en merk (video) ──
+  // Stijl: vlakke vormen in twee tinten, geen gloed of verloop. Beweging met aanloop,
+  // rek en doorveren. Vonk doet het werk; de rest ondersteunt.
   function basis(root, o, klasse, html) {
     stijl();
     const H = o.H || 1080, S = o.S || 1, CY = o.CY || 540, PY = CY - 540, niv = NIV[o.niveau] || NIV.havo;
-    root.classList.add('mm-root'); root.style.height = H + 'px'; root.style.setProperty('--mm-niv', niv[0]); root.style.setProperty('--mm-niv-g', niv[1]);
-    root.innerHTML = '<div class="mm-a mm-bg"></div><div class="mm-a mm-gloed mm-g1"></div><div class="mm-a mm-gloed mm-g2"></div>'
-      + '<canvas class="mm-a mm-korrel" width="270" height="' + Math.round(H / 4) + '"></canvas>'
-      + '<div class="mm-a mm-podium-w" style="top:' + PY + 'px;transform:scale(' + S + ')"><div class="mm-a mm-podium ' + klasse + '">' + html + '</div></div>'
+    root.classList.add('mm-root'); root.style.height = H + 'px';
+    root.innerHTML = '<div class="mm-a mm-podium-w" style="top:' + PY + 'px;transform:scale(' + S + ')"><div class="mm-a mm-podium ' + klasse + '">' + html + '</div></div>'
       + '<canvas class="mm-a mm-deel" width="1080" height="' + H + '"></canvas>'
       + (o.haak ? '<div class="mm-a mm-hook">' + o.haak.split(' ').map(w => '<span>' + w + '</span>').join(' ') + '</div>'
-        + '<div class="mm-a mm-merk"><b><img src="' + (o.icoon || '/icon-512.png') + '" alt="">slagio.nl</b><small>' + (o.onder || '') + '</small></div>' : '')
-      + '<div class="mm-a mm-flits"></div>';
-    const k = root.querySelector('.mm-korrel'), g = k.getContext('2d'), d = g.createImageData(k.width, k.height), r0 = rnd(5);
-    for (let i = 0; i < d.data.length; i += 4) { const v = r0() * 255; d.data[i] = d.data[i + 1] = d.data[i + 2] = v; d.data[i + 3] = 255; }
-    g.putImageData(d, 0, 0); k.style.width = '1080px'; k.style.height = H + 'px';
+        + '<div class="mm-a mm-merk"><b><img src="' + (o.icoon || '/icon-512.png') + '" alt="">slagio.nl</b><small>' + (o.onder || '') + '</small></div>' : '');
     const ctx = root.querySelector('.mm-deel').getContext('2d'), podium = root.querySelector('.mm-podium');
-    const g1 = root.querySelector('.mm-g1'), g2 = root.querySelector('.mm-g2'), flits = root.querySelector('.mm-flits');
     const hookW = [...root.querySelectorAll('.mm-hook span')], merk = root.querySelector('.mm-merk');
-    const deeltjes = [];
+    const deel = [];
     const B = {
       $: s => root.querySelector(s), niv, podium,
       nieuw(ouder, klasse2, html2) { const el = document.createElement('div'); el.className = 'mm-a ' + klasse2; if (html2) el.innerHTML = html2; root.querySelector(ouder).appendChild(el); return el; },
-      // Confetti: n stukjes vanuit (x,y) op het podium, kegel rond hoek (rad, -PI/2 = omhoog).
-      confetti({ t0, x, y, n = 60, kleuren, kracht = 1500, hoek = -Math.PI / 2, spreid = Math.PI, seed = 1, leven = 2.6 }) {
-        const r = rnd(seed);
-        for (let i = 0; i < n; i++) { const a = hoek + (r() - .5) * spreid, v = kracht * (.35 + r() * .65);
-          deeltjes.push({ soort: 'c', t0: t0 + r() * .05, x, y, vx: Math.cos(a) * v, vy: Math.sin(a) * v, w: 14 + r() * 16, h: 8 + r() * 10,
-            k: kleuren[Math.floor(r() * kleuren.length)], rot: r() * 6.28, om: (r() - .5) * 16, fl: 6 + r() * 10, ff: r() * 6.28, leven: leven * (.7 + r() * .3), rond: r() < .18 }); }
-      },
-      // Vonken: korte lichtpuntjes die alle kanten op schieten.
-      vonken({ t0, x, y, n = 24, kleur = '#ffd76a', kracht = 700, seed = 2, leven = .7, grootte = 7 }) {
-        const r = rnd(seed);
-        for (let i = 0; i < n; i++) { const a = r() * 6.283, v = kracht * (.4 + r() * .6);
-          deeltjes.push({ soort: 'v', t0: t0 + r() * .04, x, y, vx: Math.cos(a) * v, vy: Math.sin(a) * v, k: kleur, s: grootte * (.5 + r()), leven: leven * (.6 + r() * .4) }); }
-      },
-      // Sintels: stijgen langzaam op en doven (voor de vlam). lus = blijf herhalen na t1 (in de app).
-      sintels({ t0, t1, x, y, breed = 160, n = 40, seed = 3, kleur = '#ffb020', lus = 0 }) {
-        const r = rnd(seed);
-        for (let i = 0; i < n; i++) deeltjes.push({ soort: 's', t0: lerp(t0, t1, r()), x: x + (r() - .5) * breed, y, vy: -(160 + r() * 240), zw: 20 + r() * 50, zf: 2 + r() * 3, ff: r() * 6.28, k: kleur, s: 3 + r() * 5, leven: 1.1 + r() * 1.1, lus });
-      },
-      // Elk frame: gloed, flits, schudden, haak en merk, deeltjes.
-      kader(t, { flitsT = [], schud = 0, haakT = .15, merkT = 2.6 } = {}) {
-        zet(g1, { transform: `translate(${-240 + Math.sin(t * .6) * 120}px,${PY - 260 + Math.cos(t * .5) * 80}px)` });
-        zet(g2, { transform: `translate(${230 + Math.cos(t * .55) * 130}px,${PY + 330 + Math.sin(t * .7) * 90}px)` });
-        const fl = Math.max(0, ...flitsT.map(x => t >= x ? 1 - clamp((t - x) / .22) : 0)); zet(flits, { opacity: String(fl * .5) });
-        const r = rnd(Math.floor(t * 30) + 1); zet(podium, { transform: schud > 0 ? `translate(${(r() - .5) * schud}px,${(r() - .5) * schud}px)` : 'none' });
+      // Vonk met de voeten op (x,y); sx/sy = rek, rot = helling. De stemming wisselt alleen als hij verandert.
+      vonk(sel, W) { const el = root.querySelector(sel); el.style.width = el.style.height = W + 'px'; el.style.transformOrigin = '50% 92%'; let m0 = '';
+        return (m, x, y, sx = 1, sy = 1, rot = 0, zicht = 1) => { if (m !== m0) { m0 = m; el.innerHTML = vonkSVG(m, W); }
+          zet(el, { left: (x - W / 2) + 'px', top: (y - W * .92) + 'px', opacity: String(zicht), transform: `rotate(${rot}deg) scale(${sx},${sy})` }); }; },
+      // Tekst die letter voor letter omhoog komt uit een masker.
+      letters(sel) { const el = root.querySelector(sel); const maak2 = n => { if (n.nodeType === 3) { const f = document.createDocumentFragment(); [...n.textContent].forEach(ch => { const s = document.createElement('span'); s.className = 'mm-l'; s.innerHTML = '<i>' + (ch === ' ' ? '&nbsp;' : ch) + '</i>'; f.appendChild(s); }); n.replaceWith(f); } else [...n.childNodes].forEach(maak2); };
+        [...el.childNodes].forEach(maak2); return [...el.querySelectorAll('.mm-l i')]; },
+      tekst(L, t, t0, stap = .035, dur = .5) { L.forEach((el, i) => { const x = p(t, t0 + i * stap, t0 + i * stap + dur, E.uit5); zet(el, { transform: `translateY(${(1 - x) * 110}%)` }); }); },
+      // Papier: een handvol grote vlakke vormen die wegspatten en neerdwarrelen.
+      papier({ t0, x, y, n = 14, kleuren, kracht = 1300, hoek = -Math.PI / 2, spreid = 2.4, seed = 1, leven = 2.2, maat = 1 }) {
+        const r = rnd(seed); for (let i = 0; i < n; i++) { const a = hoek + (r() - .5) * spreid, v = kracht * (.45 + r() * .55);
+          deel.push({ s: 'p', t0: t0 + r() * .04, x, y, vx: Math.cos(a) * v, vy: Math.sin(a) * v, m: (26 + r() * 30) * maat, k: kleuren[i % kleuren.length], vorm: i % 6, rot: r() * 6.28, om: (r() - .5) * 7, leven: leven * (.75 + r() * .25) }); } },
+      // Stof: vlakke wolkjes die uitdijen bij een landing.
+      stof({ t0, x, y, n = 6, kleur = 'rgba(255,255,255,.5)', breed = 150, seed = 2 }) {
+        const r = rnd(seed); for (let i = 0; i < n; i++) deel.push({ s: 'd', t0: t0 + r() * .03, x: x + (r() - .5) * 30, y: y - r() * 8, vx: (i % 2 ? 1 : -1) * breed * (.5 + r()), m: 16 + r() * 22, k: kleur, leven: .45 + r() * .25 }); },
+      // Brokken: rechthoeken die wegvliegen en vallen.
+      brokken({ t0, x, y, n = 9, kleur, seed = 3, breed = 320 }) {
+        const r = rnd(seed); for (let i = 0; i < n; i++) deel.push({ s: 'b', t0, x: x + (r() - .5) * breed, y, vx: (r() - .5) * 900, vy: -(300 + r() * 900), w: 30 + r() * 60, h: 22 + r() * 22, k: kleur, rot: r() * 6.28, om: (r() - .5) * 12, leven: 2 }); },
+      // Slagster: één of twee beelden een vlakke ster op het punt van de klap.
+      ster({ t0, x, y, r1 = 240, kleur = '#fff', punten = 12, dur = .1 }) { deel.push({ s: 'i', t0, x, y, r1, k: kleur, n: punten, leven: dur }); },
+      // Vonkjes: kleine ruitjes die opstijgen uit het vuur. lus = herhaal (in de app).
+      vonkjes({ t0, t1, x, y, n = 16, breed = 120, seed = 4, lus = 0, kleuren = ['#ffd76a', '#ff9a2e'] }) {
+        const r = rnd(seed); for (let i = 0; i < n; i++) deel.push({ s: 'v', t0: lerp(t0, t1, r()), x: x + (r() - .5) * breed, y, vy: -(170 + r() * 220), zw: 20 + r() * 40, zf: 2 + r() * 3, ff: r() * 6.28, m: 6 + r() * 7, k: kleuren[i % kleuren.length], leven: 1 + r() * .9, lus }); },
+      kader(t, { haakT = .15, merkT = 2.6 } = {}) {
         hookW.forEach((el, i) => { const x = p(t, haakT + i * .07, haakT + i * .07 + .4, E.terug); zet(el, { opacity: String(Math.min(1, x * 1.6)), transform: `translateY(${lerp(50, 0, x)}px) scale(${lerp(.85, 1, x)})` }); });
         if (merk) { const m = p(t, merkT, merkT + .5, E.uit); zet(merk, { opacity: String(m), transform: `translateY(${lerp(50, 0, m)}px)` }); }
         ctx.setTransform(1, 0, 0, 1, 0, 0); ctx.clearRect(0, 0, 1080, H); ctx.setTransform(S, 0, 0, S, 540 * (1 - S), CY - 540 * S);
-        for (const d of deeltjes) {
+        for (const d of deel) {
           let tau = t - d.t0; if (tau < 0) continue; if (d.lus && tau > d.leven) tau = tau % d.lus; if (tau > d.leven) continue; const u = tau / d.leven;
-          if (d.soort === 'c') { const kk = 2.2, f = (1 - Math.exp(-kk * tau)) / kk; const x = d.x + d.vx * f, y = d.y + d.vy * f + 520 * tau * tau;
-            ctx.save(); ctx.translate(x, y); ctx.rotate(d.rot + d.om * tau); ctx.scale(1, Math.cos(d.ff + d.fl * tau));
-            ctx.globalAlpha = u > .75 ? (1 - u) / .25 : 1; ctx.fillStyle = d.k; ctx.beginPath();
-            if (d.rond) ctx.arc(0, 0, d.h * .8, 0, 6.283); else if (ctx.roundRect) ctx.roundRect(-d.w / 2, -d.h / 2, d.w, d.h, 3); else ctx.rect(-d.w / 2, -d.h / 2, d.w, d.h);
-            ctx.fill(); ctx.restore(); }
-          else if (d.soort === 'v') { const kk = 4, f = (1 - Math.exp(-kk * tau)) / kk; const x = d.x + d.vx * f, y = d.y + d.vy * f + 200 * tau * tau;
-            ctx.globalAlpha = (1 - u) * (1 - u); ctx.fillStyle = d.k; ctx.beginPath(); ctx.arc(x, y, d.s * (1 - u * .6), 0, 6.283); ctx.fill();
-            ctx.globalAlpha = (1 - u) * .25; ctx.beginPath(); ctx.arc(x, y, d.s * 2.6, 0, 6.283); ctx.fill(); ctx.globalAlpha = 1; }
-          else { const x = d.x + Math.sin(d.ff + tau * d.zf) * d.zw * u, y = d.y + d.vy * tau;
-            ctx.globalAlpha = Math.sin(u * Math.PI) * .9; ctx.fillStyle = d.k; ctx.beginPath(); ctx.arc(x, y, d.s * (1 - u * .5), 0, 6.283); ctx.fill(); ctx.globalAlpha = 1; }
+          ctx.fillStyle = ctx.strokeStyle = d.k; ctx.globalAlpha = 1;
+          if (d.s === 'p') { const kk = 3, f = (1 - Math.exp(-kk * tau)) / kk, x = d.x + d.vx * f, y = d.y + d.vy * f + 330 * tau * tau, sc = (u < .08 ? u / .08 : u > .7 ? (1 - u) / .3 : 1), m = d.m * sc;
+            ctx.save(); ctx.translate(x, y); ctx.rotate(d.rot + d.om * tau); ctx.beginPath();
+            if (d.vorm === 0) { ctx.arc(0, 0, m * .5, 0, 6.283); ctx.fill(); }
+            else if (d.vorm === 1) { ctx.moveTo(0, -m * .6); ctx.lineTo(m * .55, m * .45); ctx.lineTo(-m * .55, m * .45); ctx.closePath(); ctx.fill(); }
+            else if (d.vorm === 2) { ctx.lineWidth = m * .22; ctx.lineCap = 'round'; ctx.moveTo(-m * .7, 0); ctx.bezierCurveTo(-m * .35, -m * .6, -m * .1, m * .6, m * .2, 0); ctx.bezierCurveTo(m * .4, -m * .4, m * .55, -m * .2, m * .7, 0); ctx.stroke(); }
+            else if (d.vorm === 3) { ctx.lineWidth = m * .2; ctx.arc(0, 0, m * .42, 0, 6.283); ctx.stroke(); }
+            else if (d.vorm === 4) { ctx.fillRect(-m * .5, -m * .13, m, m * .26); ctx.fillRect(-m * .13, -m * .5, m * .26, m); }
+            else { ctx.fillRect(-m * .5, -m * .28, m, m * .56); }
+            ctx.restore(); }
+          else if (d.s === 'd') { const e = 1 - Math.pow(1 - u, 3); ctx.globalAlpha = 1 - u; ctx.beginPath(); ctx.ellipse(d.x + d.vx * e, d.y - e * 22, d.m * (.6 + e), d.m * (.45 + e * .5), 0, 0, 6.283); ctx.fill(); }
+          else if (d.s === 'b') { const x = d.x + d.vx * tau, y = d.y + d.vy * tau + 1400 * tau * tau; ctx.globalAlpha = u > .8 ? (1 - u) / .2 : 1; ctx.save(); ctx.translate(x, y); ctx.rotate(d.rot + d.om * tau); ctx.fillRect(-d.w / 2, -d.h / 2, d.w, d.h); ctx.restore(); }
+          else if (d.s === 'i') { ctx.beginPath(); for (let i = 0; i < d.n * 2; i++) { const a = i * Math.PI / d.n, rr = (i % 2 ? .45 : 1) * d.r1 * (.7 + u * .5); ctx.lineTo(d.x + Math.cos(a) * rr, d.y + Math.sin(a) * rr); } ctx.closePath(); ctx.fill(); }
+          else { const x = d.x + Math.sin(d.ff + tau * d.zf) * d.zw * u, y = d.y + d.vy * tau, m = d.m * (1 - u * .6); ctx.globalAlpha = Math.sin(u * Math.PI); ctx.save(); ctx.translate(x, y); ctx.rotate(.785); ctx.fillRect(-m / 2, -m / 2, m, m); ctx.restore(); }
         }
+        ctx.globalAlpha = 1;
       },
-      sterren(lijst, t0, stap, kleur2) { return lijst.map(([x, y, s], i) => { const el = B.nieuw('.mm-sterren', 'mm-ster', ster(i % 2 ? '#fff' : (kleur2 || '#ffe08a'))); el.style.left = x + 'px'; el.style.top = y + 'px'; return { el, s, t: t0 + i * stap }; }); },
-      // blijf = in de app blijven de glinsteringen staan; in de video doven ze aan het eind.
-      tekenSterren(ST, t, uitA, uitB) { ST.forEach(s => { const x = p(t, s.t, s.t + .35, E.terug); const tw = .75 + Math.sin(t * 5 + s.t * 9) * .25; zet(s.el, { opacity: String(Math.min(1, x * 2) * (o.blijf ? 1 : 1 - p(t, uitA, uitB))), transform: `scale(${x * s.s * tw}) rotate(${t * 40 + s.t * 90}deg)` }); }); },
     };
     return B;
   }
-  const kleurVast = k => { const d = document.createElement('i'); d.style.color = k; document.body.appendChild(d); const c = getComputedStyle(d).color; d.remove(); return c; };
-  const mix = (k, w, pc) => `color-mix(in srgb,${k} ${100 - pc}%,${w} ${pc}%)`;
+  // Sprongbaan: van a naar b met een boog van hoogte h (u = 0..1).
+  const boog = (a, b, h, u) => [lerp(a[0], b[0], u), lerp(a[1], b[1], u) - h * 4 * u * (1 - u)];
+  // Na een landing: indrukken en terugveren (geeft sx, sy).
+  const plet = (t, tl, diep = .28) => { if (t < tl) return [1, 1]; const d = Math.exp(-(t - tl) * 9) * Math.cos((t - tl) * 20) * diep; return [1 + d * .8, 1 - d]; };
 
-  // ═══════ LEVEL OMHOOG ═══════   o: { level, naam }
+  // ═══════ LEVEL OMHOOG ═══════   o: { level }
+  // Vonk staat op de trede van zijn level. De volgende trede loopt vol, licht op,
+  // Vonk hurkt, springt erop en plant een vaantje.
   function level(root, o) {
-    const LV = Math.max(2, +(o.level || 5)), R = 215, OM = 2 * Math.PI * R, T0 = 1.62;
+    const LV = Math.max(2, +(o.level || 5));
+    const V0 = .5, V1 = 1.35, HK = 1.62, SP = 1.85, TL = 2.3;
+    const A = { x: 110, w: 410, y: 800 }, Bt = { x: 520, w: 450, y: 640 };
     const B = basis(root, Object.assign({ haak: o.video ? 'Zo voelt een level omhoog.' : '', onder: 'Elke goede vraag levert XP op' }, o), 'mm-lv', `
-      <div class="mm-a mm-stralen"></div>
-      <div class="mm-a mm-schok mm-s1"></div><div class="mm-a mm-schok mm-s2"></div>
-      <div class="mm-a mm-vonk"></div>
-      <div class="mm-a mm-ring"><svg viewBox="-280 -280 560 560">
-        <defs><linearGradient id="mm-rg" x1="0" y1="1" x2="1" y2="0"><stop offset="0" stop-color="#ff7a1a"/><stop offset=".55" stop-color="#ffb020"/><stop offset="1" stop-color="#ffe08a"/></linearGradient>
-        <radialGradient id="mm-kg" cx=".5" cy=".38" r=".7"><stop offset="0" stop-color="#262c52"/><stop offset="1" stop-color="#12152a"/></radialGradient></defs>
-        <circle r="${R + 22}" fill="url(#mm-kg)"/><circle r="${R}" fill="none" stroke="rgba(255,255,255,.09)" stroke-width="40"/>
-        <circle class="mm-boog" r="${R}" fill="none" stroke="url(#mm-rg)" stroke-width="40" stroke-linecap="round" stroke-dasharray="${OM}" stroke-dashoffset="${OM}" transform="rotate(-90)"/>
-        <circle r="${R - 34}" fill="none" stroke="rgba(255,255,255,.06)" stroke-width="2"/></svg></div>
-      <div class="mm-a mm-kop"><i></i></div>
-      <div class="mm-a mm-kern"><small>Level</small><div class="mm-cijfer"><b class="mm-oud">${LV - 1}</b><b class="mm-nieuw">${LV}</b></div></div>
-      <div class="mm-sterren"></div>
-      <div class="mm-a mm-midden mm-pilw" style="top:800px"><span class="mm-pil">Level omhoog</span></div>
-      <div class="mm-a mm-midden mm-sub" style="top:968px">${o.naam ? 'Je bent nu ' + o.naam : ''}</div>`);
-    const $ = B.$, ST = B.sterren([[250, 300, .9], [840, 250, 1.2], [900, 560, .8], [190, 600, 1.1], [300, 130, .7], [800, 720, .75]], T0 + .12, .09);
-    const GOUD = ['#ffd76a', '#ffb020', '#ff8a1f', '#ffffff', B.niv[0], '#fff3c4'];
-    B.confetti({ t0: T0, x: 540, y: 470, n: 110, kleuren: GOUD, kracht: 1900, spreid: 6.283, seed: 11, leven: 3 });
-    B.confetti({ t0: T0 + .42, x: 120, y: 1000, n: 46, kleuren: GOUD, kracht: 2100, hoek: -1.15, spreid: .7, seed: 12, leven: 2.8 });
-    B.confetti({ t0: T0 + .5, x: 960, y: 1000, n: 46, kleuren: GOUD, kracht: 2100, hoek: -1.99, spreid: .7, seed: 13, leven: 2.8 });
-    B.vonken({ t0: T0, x: 540, y: 470, n: 46, kracht: 1500, seed: 14, leven: .8, grootte: 9 });
-    for (let i = 0; i < 22; i++) { const tt = .55 + i * .047, f = lerp(.62, 1, p(tt, .5, T0, E.inUit)), a = -Math.PI / 2 + f * 6.283; B.vonken({ t0: tt, x: 540 + Math.cos(a) * R, y: 470 + Math.sin(a) * R, n: 3, kracht: 260, seed: 40 + i, leven: .45, grootte: 5 }); }
-    let stemming = ''; const vonkZet = m => { if (m !== stemming) { stemming = m; $('.mm-vonk').innerHTML = vonkSVG(m, 340); } };
+      <div class="mm-a mm-wereld">
+        <div class="mm-a mm-zon" style="left:${Bt.x + Bt.w / 2 - 430}px;top:${Bt.y - 500}px;width:860px;height:860px;background:#1a2147"></div>
+        <div class="mm-a mm-trede mm-ta" style="left:${A.x}px;top:${A.y}px;width:${A.w}px;height:4000px;background:var(--mm-n2)"><u style="background:var(--mm-n1)"></u><b style="top:70px;color:rgba(255,255,255,.55)">${LV - 1}</b></div>
+        <div class="mm-a mm-trede mm-tb" style="left:${Bt.x}px;top:${Bt.y}px;width:${Bt.w}px;height:4000px;background:#232a4d"><u style="background:#2c3460"></u>
+          <div class="mm-a mm-vulw" style="left:0;right:0;top:0;height:640px;overflow:hidden"><div class="mm-a mm-vul" style="height:0"><u></u></div></div><div class="mm-a mm-glim"></div><b class="mm-tbn" style="top:86px;color:rgba(255,255,255,.22)">${LV}</b></div>
+        <div class="mm-a mm-stok" style="left:${Bt.x + Bt.w - 92}px;top:${Bt.y - 250}px;height:250px"></div>
+        <div class="mm-a mm-vaan" style="left:${Bt.x + Bt.w - 84}px;top:${Bt.y - 250}px;width:150px;height:96px"><svg viewBox="0 0 150 96" width="150" height="96"><path d="M0 0H150L112 48L150 96H0Z" fill="#ffb020"/><path d="M0 0H150L112 48H0Z" fill="#ffd76a"/></svg></div>
+        <div class="mm-a mm-vonk"></div>
+      </div>
+      <div class="mm-a mm-midden mm-kick" style="top:128px">Level omhoog</div>
+      <div class="mm-a mm-midden mm-groot" style="top:186px">Level <em>${LV}</em></div>`);
+    root.style.setProperty('--mm-n1', B.niv[0]); root.style.setProperty('--mm-n2', B.niv[1]);
+    const $ = B.$, vonk = B.vonk('.mm-vonk', 300), LK = B.letters('.mm-kick'), LG = B.letters('.mm-groot');
+    const pA = [A.x + A.w / 2, A.y], pB = [Bt.x + Bt.w / 2 - 30, Bt.y];
+    const KL = ['#ffc247', '#ffffff', B.niv[2], '#ff7a59'];
+    B.stof({ t0: .42, x: pA[0], y: A.y, n: 4, breed: 90, seed: 5 });
+    B.stof({ t0: TL, x: pB[0], y: Bt.y, n: 8, seed: 6 });
+    B.ster({ t0: TL, x: pB[0], y: Bt.y + 6, r1: 150, kleur: '#fff', dur: .07 });
+    B.papier({ t0: TL + .02, x: pB[0], y: Bt.y - 120, n: 16, kleuren: KL, kracht: 1500, spreid: 3, seed: 7 });
     function render(t) {
-      let schud = 0;
-      const op = p(t, .05, .5, E.terug);
-      const puls = t >= T0 ? 1 + Math.exp(-(t - T0) * 7) * Math.cos((t - T0) * 22) * .13 : 1 + p(t, 1.2, T0, E.in) * .03;
-      zet($('.mm-ring'), { opacity: String(Math.min(1, op * 1.8)), transform: `scale(${lerp(.6, 1, op) * puls})` });
-      zet($('.mm-kern'), { opacity: String(Math.min(1, op * 1.8)), transform: `scale(${lerp(.6, 1, op) * puls})` });
-      const vol = t < T0 ? lerp(.62, 1, p(t, .5, T0, E.inUit)) : lerp(0, .12, p(t, T0 + .5, T0 + 1.3, E.uit5));
-      $('.mm-boog').setAttribute('stroke-dashoffset', String(OM * (1 - vol)));
-      const a = -Math.PI / 2 + vol * 6.283;
-      zet($('.mm-kop'), { left: (540 + Math.cos(a) * R) + 'px', top: (470 + Math.sin(a) * R) + 'px', opacity: t > .5 && t < T0 ? '1' : '0', transform: `scale(${1 + Math.sin(t * 40) * .15})` });
-      if (t > 1.15 && t < T0) schud = p(t, 1.15, T0) * 9;
-      const wis = p(t, T0 - .02, T0 + .5, E.veer);
-      zet($('.mm-oud'), { transform: `translateY(${-wis * 260}px)`, opacity: String(1 - p(t, T0, T0 + .14)) });
-      zet($('.mm-nieuw'), { transform: `translateY(${lerp(260, 0, wis)}px) scale(${1 + (t >= T0 ? Math.exp(-(t - T0) * 6) * .25 : 0)})`, opacity: t >= T0 - .02 ? '1' : '0' });
-      const str = p(t, T0, T0 + .45, E.uit5); zet($('.mm-stralen'), { opacity: String(str * (.85 - p(t, 3.9, 5) * .35)), transform: `rotate(${t * 26}deg) scale(${lerp(.45, 1.08, str)})` });
-      [['.mm-s1', 0], ['.mm-s2', .16]].forEach(([s, d]) => { const x = p(t, T0 + d, T0 + d + .7, E.uit); zet($(s), { opacity: String(x > 0 ? (1 - x) * .9 : 0), transform: `scale(${lerp(.9, 2.5, x)})`, borderWidth: lerp(12, 2, x) + 'px' }); });
-      if (t >= T0 && t < T0 + .3) schud = (T0 + .3 - t) * 70;
-      vonkZet(t < T0 + .75 ? 'wow' : 'feest');
-      const vk = p(t, T0 + .12, T0 + .7, E.veer); const dans = t > T0 + .7 ? Math.sin((t - T0 - .7) * 5.2) : 0;
-      zet($('.mm-vonk'), { opacity: t > T0 + .1 ? '1' : '0', transform: `translateY(${lerp(250, -36, Math.min(1.08, vk)) + Math.abs(dans) * -16}px) rotate(${dans * 5}deg)` });
-      const pl = p(t, T0 + .38, T0 + .85, E.veer); zet($('.mm-pilw'), { opacity: String(Math.min(1, pl * 2.2)), transform: `scale(${lerp(.3, 1, pl)}) rotate(${lerp(-6, 0, Math.min(1, pl))}deg)` });
-      const sb = p(t, T0 + .8, T0 + 1.2, E.uit); zet($('.mm-sub'), { opacity: String(sb), transform: `translateY(${lerp(30, 0, sb)}px)` });
-      B.tekenSterren(ST, t, 4.5, 5);
-      B.kader(t, { flitsT: [T0], schud, merkT: T0 + 1.2 });
+      // de treden komen omhoog
+      const ia = p(t, .05, .5, E.uit5), ib = p(t, .16, .62, E.uit5);
+      const dip = t >= TL ? Math.exp(-(t - TL) * 8) * Math.cos((t - TL) * 18) * 18 : 0;
+      zet($('.mm-ta'), { transform: `translateY(${(1 - ia) * 420}px)` });
+      zet($('.mm-tb'), { transform: `translateY(${(1 - ib) * 520 + dip}px)` });
+      // de volgende trede loopt vol en licht op
+      const vul = p(t, V0, V1, E.inUit); zet($('.mm-vul'), { height: (vul * 100) + '%' });
+      const vol = t >= V1; zet($('.mm-tb'), { background: vol ? '#ffb020' : '#232a4d' }); zet($('.mm-tbn'), { color: vol ? '#3a1600' : 'rgba(255,255,255,.22)', transform: `scale(${1 + (vol ? Math.exp(-(t - V1) * 9) * .22 : 0)})` });
+      const gl = p(t, V1, V1 + .32); zet($('.mm-glim'), { left: lerp(-160, Bt.w + 40, gl) + 'px', opacity: gl > 0 && gl < 1 ? '1' : '0' });
+      // de zon achter de trap gaat op bij de landing
+      const zn = p(t, TL, TL + .7, E.uit5); zet($('.mm-zon'), { transform: `scale(${zn})` });
+      // Vonk: landt op zijn trede, kijkt, schrikt blij, hurkt, springt, landt, viert
+      let m = 'kijk', x = pA[0], y = A.y + (1 - ia) * 420, sx = 1, sy = 1, rot = 0, zicht = p(t, .12, .3);
+      if (t < HK) { const [a, b] = plet(t, .42, .2); sx = a; sy = b;
+        if (t > V0 && t < V1) { sy *= 1 + Math.sin(t * 22) * .012; rot = lerp(0, 4, vul); }
+        if (t >= V1) { m = 'wow'; const h = p(t, V1, V1 + .26); y -= Math.sin(h * Math.PI) * 46; const [c, d] = plet(t, V1 + .26, .14); sx = c; sy = d; rot = 4; } }
+      else if (t < SP) { m = 'vastberaden'; const h = p(t, HK, SP, E.uit); sx = lerp(1, 1.16, h); sy = lerp(1, .76, h); rot = lerp(4, -8, h); }
+      else if (t < TL) { m = 'wow'; const u = p(t, SP, TL); const e = u < .5 ? E.uit(u * 2) / 2 : .5 + E.in((u - .5) * 2) / 2; [x, y] = boog(pA, pB, 250, e);
+        const rek = Math.sin(u * Math.PI); sx = lerp(1.1, .88, Math.min(1, u * 4)) + (1 - rek) * .04; sy = lerp(.8, 1.2, Math.min(1, u * 4)) - (u > .8 ? (u - .8) * 1.2 : 0); rot = lerp(-10, 12, u); }
+      else { m = t < TL + .22 ? 'wow' : 'feest'; x = pB[0]; y = Bt.y + dip; const [a, b] = plet(t, TL, .3); sx = a; sy = b;
+        if (t > TL + .7) { const dn = (t - TL - .7); y -= Math.abs(Math.sin(dn * 5.2)) * 22; rot = Math.sin(dn * 5.2) * 5; sy *= 1 + Math.sin(dn * 10.4) * .02; } }
+      vonk(m, x, y, sx, sy, rot, zicht);
+      // het vaantje
+      const st = p(t, TL + .45, TL + .8, E.veer); zet($('.mm-stok'), { transform: `translateY(${dip}px) scaleY(${Math.min(1.05, st)})`, opacity: t > TL + .45 ? '1' : '0' });
+      const vn = p(t, TL + .62, TL + 1.05, E.veer); zet($('.mm-vaan'), { transform: `translateY(${dip}px) scaleX(${Math.min(1.08, vn)}) skewY(${Math.sin(t * 5) * 4 * Math.min(1, vn)}deg)`, opacity: t > TL + .62 ? '1' : '0' });
+      // de wereld schuift iets op zodat de nieuwe trede midden staat
+      const cam = p(t, TL - .1, TL + .7, E.inUit); zet($('.mm-wereld'), { transform: `translate(${-cam * 150}px,${cam * 40}px)` });
+      B.tekst(LK, t, TL + .18, .03, .45); B.tekst(LG, t, TL + .3, .05, .55);
+      B.kader(t, { merkT: TL + 1.2 });
     }
-    return { duur: 5, cover: 2.9, klap: T0, knop: T0 + 1.5, render, geluid: [[0, 'mLevel', 1, { hit: T0 }]] };
+    return { duur: 5.2, cover: 3.6, klap: TL, knop: TL + 1.3, render, geluid: [[0, 'mLevel', 1, { vul0: V0, vul1: V1, hurk: HK, sprong: SP, land: TL }]] };
   }
 
   // ═══════ PROMOTIE ═══════   o: { van, naar } (index in DIV of naam)
+  // Onderin je oude divisie, boven het plafond de nieuwe. Het platform schiet omhoog,
+  // Vonk gaat door het plafond en de kleur van de nieuwe divisie stroomt het beeld in.
   const DIV = [['Brons', '#c17a3f'], ['Zilver', '#9aa4b2'], ['Goud', '#e8a91d'], ['Platina', '#3fb8c4'], ['Diamant', '#5b8def'], ['Legende', '#a855f7']];
   const EMBLEEM = [
     '<path d="M-44 20L0 -18L44 20"/>',
@@ -251,113 +259,139 @@
     '<path fill="#fff" stroke="none" d="M-56 44L-64 -30L-28 2L0 -52L28 2L64 -30L56 44Z"/>',
   ];
   const schild = i => { const k = DIV[i][1]; return `<svg viewBox="-105 -125 210 250">
-    <path d="M0 -118L94 -84V8C94 74 48 110 0 130C-48 110 -94 74 -94 8V-84Z" fill="${mix(k, '#000', 42)}"/>
+    <path d="M0 -118L94 -84V8C94 74 48 110 0 130C-48 110 -94 74 -94 8V-84Z" fill="#fff"/>
     <path d="M0 -104L82 -74V8C82 64 42 96 0 114C-42 96 -82 64 -82 8V-74Z" fill="${k}"/>
-    <path d="M0 -104L82 -74V8C82 64 42 96 0 114Z" fill="${mix(k, '#000', 16)}"/>
-    <path d="M0 -104L-82 -74V-30L0 -62Z" fill="${mix(k, '#fff', 34)}"/><path d="M0 -104L82 -74V-30L0 -62Z" fill="${mix(k, '#fff', 14)}"/>
-    <g fill="none" stroke="#fff" stroke-width="15" stroke-linecap="round" stroke-linejoin="round" transform="translate(0 18) scale(.82)">${EMBLEEM[i]}</g></svg>`; };
+    <path d="M0 -104L82 -74V8C82 64 42 96 0 114Z" fill="${mix(k, '#000', 18)}"/>
+    <g fill="none" stroke="#fff" stroke-width="15" stroke-linecap="round" stroke-linejoin="round" transform="translate(0 6) scale(.82)">${EMBLEEM[i]}</g></svg>`; };
   function promotie(root, o) {
     const zoek = n => typeof n === 'number' ? clamp(n, 0, 5) : Math.max(0, DIV.findIndex(d => d[0].toLowerCase() === String(n || '').toLowerCase()));
     const iN = o.naar != null ? zoek(o.naar) : 1, iV = o.van != null ? zoek(o.van) : Math.max(0, iN - 1);
-    const T0 = 1.7, TL = T0 + .42;
+    const T0 = 1.5, TI = 1.74, TP = 2.08, TR = 2.5, TS = 2.5;       // start, door het plafond, hoogste punt, rust, stempel
+    const YB = 420, Y0 = 930, YI = 716, YP = 640, YR = 820;         // plafond, platform: start, klap, top, rust
+    const tint = i => mix(DIV[i][1], '#0b0d18', 60), ton2 = i => DIV[i][1];
     const B = basis(root, Object.assign({ haak: o.video ? 'Deze week in de top 7.' : '', onder: 'Elke week een nieuwe wedstrijd' }, o), 'mm-pr', `
-      <div class="mm-a mm-midden mm-label">Weekwedstrijd</div>
-      <div class="mm-a mm-stralen" style="--mm-str:${mix(DIV[iN][1], '#fff', 45)}"></div>
-      <div class="mm-strepen"></div>
-      <div class="mm-a mm-schok mm-s1"></div><div class="mm-a mm-schok mm-s2"></div>
+      <div class="mm-a mm-zone" style="top:${YB}px;height:5000px;background:${tint(iV)}"></div>
+      <div class="mm-a mm-zone" style="top:-3000px;height:${3000 + YB}px;background:${tint(iN)}"></div>
+      <div class="mm-a mm-vloed" style="left:540px;top:${YB}px;background:${tint(iN)}"></div>
+      <div class="mm-a mm-rail" style="left:397px"></div><div class="mm-a mm-rail" style="left:677px"></div>
+      <div class="mm-a mm-zlab mm-zl1" style="left:70px;top:${YB + 64}px">${DIV[iV][0]}</div>
+      <div class="mm-a mm-zlab mm-zl2" style="left:70px;top:${YB - 70}px">${DIV[iN][0]}</div>
+      <div class="mm-a mm-balk mm-bl" style="top:${YB}px;background:${ton2(iV)};transform-origin:2460px 50%"></div>
+      <div class="mm-wijzers"></div>
+      <div class="mm-a mm-plat"><u></u></div>
       <div class="mm-a mm-vonk"></div>
-      <div class="mm-a mm-schild"><div class="mm-sv">${schild(iV)}</div></div>
-      <div class="mm-pijlen"></div>
-      <div class="mm-a mm-midden mm-divnaam"><b class="mm-doud">${DIV[iV][0]}-divisie</b><b class="mm-dnieuw">${DIV[iN][0]}-divisie</b></div>
-      <div class="mm-sterren"></div>
-      <div class="mm-a mm-midden mm-pilw" style="top:856px"><span class="mm-pil">Promotie</span></div>`);
-    const $ = B.$, rs = rnd(21);
-    const STR = [...Array(16)].map((_, i) => ({ el: B.nieuw('.mm-strepen', 'mm-streep'), x: 90 + i * 60 + (rs() - .5) * 30, h: 160 + rs() * 260, v: 1500 + rs() * 1300, f: rs() }));
-    const PIJ = [[190, 0], [190, .18], [190, .36], [890, .09], [890, .27], [890, .45]].map(([x, d]) => { const el = B.nieuw('.mm-pijlen', 'mm-pijl', '<svg viewBox="-45 -30 90 60"><path d="M-34 16L0 -16L34 16" fill="none" stroke="#4ade80" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/></svg>'); el.style.left = x + 'px'; return { el, d }; });
-    const ST = B.sterren([[230, 250, 1], [850, 230, 1.2], [910, 560, .8], [170, 590, 1.05], [320, 110, .7], [770, 120, .8]], T0 + .5, .09, mix(DIV[iN][1], '#fff', 55));
-    const KL = [DIV[iN][1], '#ffffff', '#ffd76a', '#ffb020', mix(DIV[iN][1], '#fff', 50), '#4ade80'].map(kleurVast);
-    B.confetti({ t0: TL, x: 540, y: 440, n: 120, kleuren: KL, kracht: 2000, spreid: 6.283, seed: 31, leven: 3 });
-    B.confetti({ t0: TL + .38, x: 110, y: 1010, n: 44, kleuren: KL, kracht: 2100, hoek: -1.15, spreid: .7, seed: 32, leven: 2.8 });
-    B.confetti({ t0: TL + .46, x: 970, y: 1010, n: 44, kleuren: KL, kracht: 2100, hoek: -1.99, spreid: .7, seed: 33, leven: 2.8 });
-    B.vonken({ t0: TL, x: 540, y: 440, n: 50, kleur: '#ffffff', kracht: 1500, seed: 34, leven: .8, grootte: 9 });
-    let stemming = '', gezicht = iV; const vonkZet = m => { if (m !== stemming) { stemming = m; $('.mm-vonk').innerHTML = vonkSVG(m, 320); } };
+      <div class="mm-a mm-kring" style="left:540px;top:215px"></div>
+      <div class="mm-a mm-schild" style="left:540px;top:215px"><div class="mm-sv">${schild(iN)}</div></div>
+      <div class="mm-a mm-midden mm-groot" style="top:352px;font-size:104px">${DIV[iN][0]}-divisie</div>
+      <div class="mm-a mm-midden mm-kick" style="top:480px">Promotie</div>`);
+    const $ = B.$, vonk = B.vonk('.mm-vonk', 280), LG = B.letters('.mm-groot'), LK = B.letters('.mm-kick');
+    const WIJ = [0, .16, .32].map((d, i) => { const el = B.nieuw('.mm-wijzers', 'mm-wijs', '<svg viewBox="-35 -23 70 46" width="70" height="46"><path d="M-26 12L0 -12L26 12" fill="none" stroke="#ffc247" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/></svg>'); el.style.left = '540px'; return { el, d, i }; });
+    const KL = [DIV[iN][1], '#ffffff', '#ffc247', mix(DIV[iN][1], '#fff', 50)].map(kleurVast);
+    B.ster({ t0: TI, x: 540, y: YB, r1: 170, kleur: '#fff', dur: .07 });
+    B.brokken({ t0: TI, x: 540, y: YB, n: 11, kleur: kleurVast(ton2(iV)), seed: 31 });
+    B.papier({ t0: TI + .03, x: 540, y: YB - 40, n: 14, kleuren: KL, kracht: 1500, spreid: 2.6, seed: 32 });
+    B.stof({ t0: TR - .05, x: 540, y: YR, n: 6, breed: 220, seed: 33 });
+    B.papier({ t0: TS + .02, x: 540, y: 215, n: 10, kleuren: KL, kracht: 1100, spreid: 6.283, seed: 34, leven: 1.7, maat: .8 });
     function render(t) {
-      let schud = 0;
-      const lb = p(t, .05, .45, E.uit); zet($('.mm-label'), { opacity: String(lb * (1 - p(t, T0 + .3, T0 + .5))), transform: `translateY(${lerp(-30, 0, lb)}px)` });
-      const op = p(t, .1, .6, E.veer), laad = p(t, .7, T0, E.in);
-      const spr = p(t, T0, TL), hoogte = Math.sin(spr * Math.PI) * -150, draai = p(t, T0, TL, E.inUit) * 540;
-      const land = t >= TL ? 1 + Math.exp(-(t - TL) * 7) * Math.cos((t - TL) * 20) * .16 : 1;
-      const face = draai >= 270 ? iN : iV; if (face !== gezicht) { gezicht = face; $('.mm-sv').innerHTML = schild(face); }
-      const tril = t < T0 ? laad * 10 : 0, r = rnd(Math.floor(t * 30) + 7);
-      zet($('.mm-schild'), { opacity: String(Math.min(1, op * 2)), transform: `translate(${(r() - .5) * tril}px,${hoogte + (r() - .5) * tril + (t > TL + .5 ? Math.sin((t - TL) * 2.2) * 8 : 0)}px) perspective(1400px) rotateY(${draai}deg) scale(${lerp(.4, 1, Math.min(1.1, op)) * (1 + laad * .06) * (1 + Math.sin(spr * Math.PI) * .22) * land})` });
-      STR.forEach(s => { const y = 1150 - ((t * s.v + s.f * 1400) % 1500); zet(s.el, { left: s.x + 'px', top: y + 'px', height: s.h + 'px', opacity: String(laad * .55 * (1 - p(t, TL, TL + .3))) }); });
-      PIJ.forEach(a => { const c = ((t - .7 - a.d) % .9 + .9) % .9 / .9; const aan = t > .7 + a.d && t < TL; zet(a.el, { top: (700 - c * 420) + 'px', opacity: String(aan ? Math.sin(c * Math.PI) * .95 * (1 - p(t, T0, TL)) : 0), transform: `scale(${.7 + c * .5})` }); });
-      if (t > 1.2 && t < T0) schud = laad * 8; if (t >= TL && t < TL + .3) schud = (TL + .3 - t) * 80;
-      const str = p(t, TL, TL + .45, E.uit5); zet($('.mm-stralen'), { opacity: String(str * (.9 - p(t, 4.4, 5.4) * .35)), transform: `rotate(${t * 24}deg) scale(${lerp(.45, 1.08, str)})` });
-      [['.mm-s1', 0], ['.mm-s2', .16]].forEach(([s, d]) => { const x = p(t, TL + d, TL + d + .7, E.uit); zet($(s), { opacity: String(x > 0 ? (1 - x) * .9 : 0), transform: `scale(${lerp(.9, 2.6, x)})`, borderWidth: lerp(12, 2, x) + 'px' }); });
-      const nm = p(t, .3, .7, E.uit), wis = p(t, TL - .05, TL + .45, E.veer);
-      zet($('.mm-doud'), { opacity: String(nm * (1 - p(t, TL, TL + .12))), transform: `translateY(${lerp(40, 0, nm) - wis * 110}px)` });
-      zet($('.mm-dnieuw'), { opacity: t >= TL - .05 ? '1' : '0', transform: `translateY(${lerp(110, 0, wis)}px)` });
-      vonkZet(t < TL + .9 ? 'wow' : 'trots');
-      const vk = p(t, TL + .15, TL + .75, E.veer), dans = t > TL + .75 ? Math.sin((t - TL - .75) * 4.6) : 0;
-      zet($('.mm-vonk'), { opacity: t > TL + .12 ? '1' : '0', transform: `translateY(${lerp(260, -50, Math.min(1.08, vk)) + Math.abs(dans) * -14}px) rotate(${dans * 4}deg)` });
-      const pl = p(t, TL + .3, TL + .8, E.veer); zet($('.mm-pilw'), { opacity: String(Math.min(1, pl * 2.2)), transform: `scale(${lerp(.3, 1, pl)}) rotate(${lerp(6, 0, Math.min(1, pl))}deg)` });
-      B.tekenSterren(ST, t, 4.9, 5.4);
-      B.kader(t, { flitsT: [TL], schud, merkT: TL + 1.1 });
+      // platform: komt binnen, laadt op, schiet omhoog, veert uit
+      const inn = p(t, .1, .6, E.uit5), laad = p(t, .65, T0, E.in);
+      let y = lerp(Y0 + 420, Y0, inn) + laad * 26;
+      if (t >= T0 && t < TI) y = lerp(Y0 + 26, YI, p(t, T0, TI, E.in));
+      else if (t >= TI && t < TP) y = lerp(YI, YP, p(t, TI, TP, E.uit));
+      else if (t >= TP) y = lerp(YP, YR, p(t, TP, TR, E.inUit)) + (t >= TR ? Math.exp(-(t - TR) * 8) * Math.cos((t - TR) * 17) * -16 : 0);
+      const r = rnd(Math.floor(t * 30) + 7), tril = t < T0 ? laad * 7 : 0, tx = (r() - .5) * tril;
+      zet($('.mm-plat'), { left: (540 + tx) + 'px', top: y + 'px' });
+      WIJ.forEach(w => { const c = ((t - .65 - w.d) % .48 + .48) % .48 / .48; zet(w.el, { top: (y + 78 + w.i * 40) + 'px', opacity: String(t > .65 && t < T0 ? .35 + .65 * (c < .5 ? 1 : 0) : (t >= T0 && t < TP ? 1 : 0)), transform: `translateY(${t >= T0 ? (t - T0) * 260 : 0}px)` }); });
+      // Vonk
+      let m = 'blij', sx = 1, sy = 1, rot = 0;
+      if (t < .65) { const [a, b] = plet(t, .6, .12); sx = a; sy = b; }
+      else if (t < T0) { m = 'vastberaden'; sx = 1 + laad * .14; sy = 1 - laad * .22; }
+      else if (t < TI) { m = 'wow'; const u = p(t, T0, TI); sx = lerp(1.14, .86, Math.min(1, u * 3)); sy = lerp(.78, 1.24, Math.min(1, u * 3)); }
+      else if (t < TP) { m = 'wow'; const u = p(t, TI, TI + .12); sx = lerp(1.2, .95, u); sy = lerp(.74, 1.08, u); rot = Math.sin((t - TI) * 30) * 4 * (1 - p(t, TI, TP)); }
+      else { m = t < TR ? 'wow' : 'feest'; const [a, b] = plet(t, TR, .22); sx = a; sy = b; if (t > TR + .5) { const dn = t - TR - .5; rot = Math.sin(dn * 4.8) * 4; sy *= 1 + Math.sin(dn * 9.6) * .02; } }
+      vonk(m, 540 + tx, y + (t > TR + .5 ? -Math.abs(Math.sin((t - TR - .5) * 4.8)) * 18 : 0), sx, sy, rot, p(t, .1, .25));
+      // het plafond breekt, de nieuwe kleur stroomt het beeld in
+      const br = p(t, TI, TI + .5, E.uit); zet($('.mm-bl'), { opacity: String(1 - p(t, TI + .05, TI + .4)), transform: `scaleY(${1 + br * 2})` });
+      const vl = p(t, TI, TI + .62, E.inUit); zet($('.mm-vloed'), { transform: `scale(${vl * 40})`, opacity: t >= TI ? '1' : '0' });
+      zet($('.mm-zl1'), { opacity: String(p(t, .2, .5) * (1 - p(t, TI, TI + .15))) }); zet($('.mm-zl2'), { opacity: String(p(t, .3, .6) * (1 - p(t, TI + .2, TI + .45))) });
+      // het schild wordt gestempeld, de naam komt eronder
+      const sl = p(t, TS - .16, TS, E.in), [a, b] = plet(t, TS, .2);
+      zet($('.mm-schild'), { opacity: t >= TS - .16 ? '1' : '0', transform: `scale(${lerp(2.6, 1, sl) * a},${lerp(2.6, 1, sl) * b}) rotate(${lerp(-14, 0, sl)}deg)` });
+      const kr = p(t, TS, TS + .5, E.uit); zet($('.mm-kring'), { opacity: String(kr > 0 ? (1 - kr) : 0), transform: `scale(${lerp(.9, 2.4, kr)})`, borderWidth: lerp(12, 2, kr) + 'px' });
+      B.tekst(LG, t, TS + .12, .035, .5); B.tekst(LK, t, TS + .4, .03, .45);
+      B.kader(t, { merkT: TS + 1 });
     }
-    return { duur: 5.4, cover: 3.2, klap: TL, knop: TL + 1.4, render, geluid: [[0, 'mPromotie', 1, { start: T0, land: TL }]] };
+    return { duur: 5.4, cover: 3.8, klap: TI, knop: TS + 1.1, render, geluid: [[0, 'mPromotie', 1, { start: T0, klap: TI, stempel: TS }]] };
   }
 
   // ═══════ STREAK ═══════   o: { dagen }
+  // Vonk huppelt naar het kampvuur met een blok hout: elke dag een blok. Het blok
+  // vliegt op het vuur, het vuur laait op en het klapbord springt naar de nieuwe stand.
   function streak(root, o) {
-    const N = Math.max(2, +(o.dagen || 7)), VOL = Math.min(N, 7), DX = i => 540 + (i - 3) * 128, DY = 900, TD = 1.45, TF = TD + .42;
+    const N = Math.max(2, +(o.dagen || 7)), VOL = Math.min(N, 7), DX = i => 540 + (i - 3) * 92, DY = 570;
+    const HOP = [.3, .62], TB = 1.2, TW = 1.5, TF = 1.88, TK = TF + .1;          // hops, uithalen, worp, blok landt, klapbord
+    const sO = String(N - 1), sN = String(N), len = Math.max(sO.length, sN.length), dO = sO.padStart(len, ' '), dN = sN.padStart(len, ' ');
+    const kaart = i => { const a = dO[i] === ' ' ? '' : dO[i], b = dN[i]; const wis = a !== b; return `<div class="mm-kaart" data-wis="${wis ? 1 : 0}">
+        <div class="mm-helft mm-b ${wis ? 'mm-goud' : ''}"><b>${b}</b></div><div class="mm-helft mm-o"><b>${a}</b></div>
+        <div class="mm-helft mm-b mm-kb"><b>${a}</b></div><div class="mm-helft mm-o mm-ko mm-goud"><b>${b}</b></div>
+        <i class="mm-pen" style="left:-6px"></i><i class="mm-pen" style="right:-6px"></i></div>`; };
     const B = basis(root, Object.assign({ haak: o.video ? 'Elke dag even. Dat telt op.' : '', onder: 'Elke dag dat je oefent telt mee' }, o), 'mm-st', `
-      <div class="mm-a mm-halo"></div>
-      <div class="mm-a mm-schok mm-s1"></div><div class="mm-a mm-schok mm-s2"></div>
-      <div class="mm-a mm-vlam"><svg viewBox="0 0 120 150">
-        <defs><linearGradient id="mm-fl" x1="0" y1="1" x2="0" y2="0"><stop offset="0" stop-color="#ff3d00"/><stop offset=".55" stop-color="#ff8a1f"/><stop offset="1" stop-color="#ffd76a"/></linearGradient>
-        <linearGradient id="mm-fl2" x1="0" y1="1" x2="0" y2="0"><stop offset="0" stop-color="#ffd76a"/><stop offset="1" stop-color="#fff6d0"/></linearGradient></defs>
-        <path d="M60 4C74 34 104 52 104 92c0 30-20 52-44 52S16 122 16 92c0-22 12-34 20-44 2 14 8 22 16 24-4-24 0-44 8-68z" fill="url(#mm-fl)"/>
-        <path class="mm-fk" d="M60 64c10 16 24 24 24 44 0 16-10 28-24 28s-24-12-24-28c0-12 8-20 12-26 2 8 6 12 10 12-2-12-2-20 2-30z" fill="url(#mm-fl2)"/></svg></div>
-      <div class="mm-a mm-midden mm-teller"><b class="mm-oud">${N - 1}</b><b class="mm-nieuw">${N}</b></div>
+      <div class="mm-a mm-zon" style="left:240px;top:560px;width:800px;height:800px;background:#1d2040"></div>
+      <div class="mm-a mm-grond"></div>
+      <div class="mm-a mm-bord">${[...Array(len)].map((_, i) => kaart(i)).join('')}</div>
       <div class="mm-a mm-midden mm-onder">dagen op rij</div>
       <div class="mm-dagen"></div>
-      <div class="mm-a mm-vandaag" style="left:${DX(VOL - 1)}px">vandaag</div>
-      <div class="mm-a mm-vuurtje"></div>
-      <div class="mm-sterren"></div>`);
-    const $ = B.$;
+      <div class="mm-a mm-vuur"><svg viewBox="-170 -380 340 420">
+        <g class="mm-v1"><path d="M0 -330C40 -250 130 -190 130 -90C130 -20 70 20 0 20S-130 -20 -130 -90C-130 -150 -90 -180 -70 -220C-60 -180 -40 -160 -20 -160C-40 -230 -30 -280 0 -330Z" fill="#ff5a1f"/></g>
+        <g class="mm-v2"><path d="M0 -230C30 -180 90 -140 90 -70C90 -20 50 14 0 14S-90 -20 -90 -70C-90 -110 -60 -130 -48 -160C-40 -130 -26 -116 -12 -116C-26 -160 -20 -196 0 -230Z" fill="#ff9a2e"/></g>
+        <g class="mm-v3"><path d="M0 -130C20 -100 54 -80 54 -40C54 -10 30 8 0 8S-54 -10 -54 -40C-54 -64 -36 -76 -28 -94C-24 -76 -16 -68 -8 -68C-14 -92 -12 -112 0 -130Z" fill="#ffd76a"/></g>
+        <g class="mm-hout"><rect x="-128" y="-6" width="256" height="38" rx="12" fill="#6e451e" transform="rotate(-12)"/><rect x="-128" y="-6" width="256" height="38" rx="12" fill="#8a5a2b" transform="rotate(11)"/><rect x="-128" y="-6" width="256" height="13" rx="6" fill="#a8743c" transform="rotate(11)"/></g>
+        <g class="mm-extra"><rect x="-104" y="-44" width="208" height="36" rx="12" fill="#8a5a2b" transform="rotate(-3)"/><rect x="-104" y="-44" width="208" height="12" rx="6" fill="#a8743c" transform="rotate(-3)"/></g></svg></div>
+      <div class="mm-a mm-vonk"></div>
+      <div class="mm-a mm-blok"><u></u><s></s></div>`);
+    const $ = B.$, vonk = B.vonk('.mm-vonk', 270);
     const DAG = [...Array(7)].map((_, i) => { const el = B.nieuw('.mm-dagen', 'mm-dag', '<i></i><svg viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>'); el.style.left = DX(i) + 'px'; el.style.top = DY + 'px';
-      return { el, vul: el.firstChild, vink: el.lastChild, t: i < VOL - 1 ? .45 + i * .11 : (i === VOL - 1 ? TD : 99) }; });
-    const ST = B.sterren([[250, 200, 1], [830, 170, 1.15], [880, 420, .8], [200, 440, .9]], TF + .15, .1);
-    B.vonken({ t0: TD, x: DX(VOL - 1), y: DY, n: 18, kracht: 520, seed: 51, leven: .5, grootte: 6 });
-    B.vonken({ t0: TF, x: 540, y: 360, n: 60, kleur: '#ffd76a', kracht: 1500, seed: 52, leven: .9, grootte: 9 });
-    B.vonken({ t0: TF, x: 540, y: 360, n: 30, kleur: '#ff8a1f', kracht: 1000, seed: 53, leven: 1.1, grootte: 8 });
-    B.sintels({ t0: .3, t1: TF, x: 540, y: 430, breed: 120, n: 14, seed: 54 });
-    B.sintels({ t0: TF, t1: 5, x: 540, y: 440, breed: 230, n: 90, seed: 55, lus: o.blijf ? 3.2 : 0 });
-    B.sintels({ t0: TF, t1: 5, x: 540, y: 440, breed: 200, n: 40, seed: 56, kleur: '#fff0c0', lus: o.blijf ? 3.2 : 0 });
+      return { el, vul: el.firstChild, vink: el.lastChild, t: i < VOL - 1 ? .5 + i * .09 : (i === VOL - 1 ? TF : 99) }; });
+    const KA = [...root.querySelectorAll('.mm-kaart')].map(el => ({ wis: el.dataset.wis === '1', kb: el.querySelector('.mm-kb'), ko: el.querySelector('.mm-ko') }));
+    const VX = 300, VY = 985, FX = 640;
+    B.stof({ t0: HOP[0] + .3, x: 150, y: VY, n: 3, breed: 60, seed: 41 }); B.stof({ t0: HOP[1] + .32, x: VX, y: VY, n: 4, breed: 70, seed: 42 });
+    B.ster({ t0: TF, x: FX, y: VY - 40, r1: 130, kleur: '#fff', dur: .07 });
+    B.vonkjes({ t0: .2, t1: TF, x: FX, y: VY - 90, n: 8, breed: 90, seed: 43 });
+    B.vonkjes({ t0: TF, t1: TF + .25, x: FX, y: VY - 120, n: 18, breed: 200, seed: 44 });
+    B.vonkjes({ t0: TF + .2, t1: 5, x: FX, y: VY - 150, n: 26, breed: 170, seed: 45, lus: o.blijf ? 3 : 0 });
     function render(t) {
-      let schud = 0;
-      const op = p(t, .05, .5, E.terug), laai = p(t, TF, TF + .5, E.veer), kracht = lerp(.62, 1, Math.min(1.25, laai));
-      const flik = 1 + Math.sin(t * 9) * .03 + Math.sin(t * 23) * .015, klap = t >= TF ? Math.exp(-(t - TF) * 5) * .3 : 0;
-      zet($('.mm-vlam'), { opacity: String(Math.min(1, op * 2)), transform: `translateY(${(1 - kracht) * 90}px) scale(${lerp(.3, 1, op) * kracht * flik * (1 + klap)},${lerp(.3, 1, op) * kracht * (1 + Math.sin(t * 13) * .035) * (1 + klap * 1.4)}) rotate(${Math.sin(t * 6) * 2.4}deg)`, filter: `saturate(${lerp(.55, 1, Math.min(1, laai))}) brightness(${lerp(.8, 1, Math.min(1, laai))})`, transformOrigin: '50% 92%' });
-      zet($('.mm-fk'), { transform: `translateY(${Math.sin(t * 11) * 2.5}px) scale(${1 + Math.sin(t * 17) * .04})`, transformOrigin: '60px 130px' });
-      zet($('.mm-halo'), { opacity: String(lerp(.25, .95, Math.min(1, laai)) * op), transform: `scale(${lerp(.7, 1, Math.min(1, laai)) * (1 + Math.sin(t * 7) * .03) + klap})` });
-      const cf = p(t, .15, .55, E.uit), wis = p(t, TF - .02, TF + .5, E.veer);
-      zet($('.mm-oud'), { opacity: String(cf * (1 - p(t, TF, TF + .14))), transform: `translateY(${lerp(40, 0, cf) - wis * 270}px)` });
-      zet($('.mm-nieuw'), { opacity: t >= TF - .02 ? '1' : '0', transform: `translateY(${lerp(270, 0, wis)}px) scale(${1 + (t >= TF ? Math.exp(-(t - TF) * 6) * .22 : 0)})` });
-      const on = p(t, .3, .7, E.uit); zet($('.mm-onder'), { opacity: String(on), transform: `translateY(${lerp(30, 0, on)}px)` });
-      DAG.forEach((d, i) => { const inn = p(t, .2 + i * .04, .55 + i * .04, E.terug), v = p(t, d.t, d.t + .3, E.terug), pu = i === VOL - 1 && t < TD ? 1 + Math.sin(t * 6) * .06 : 1;
-        zet(d.el, { opacity: String(Math.min(1, inn * 2)), transform: `scale(${inn * pu * (1 + Math.max(0, 1 - Math.abs(t - d.t - .08) * 9) * .25)})` });
+      // vuur: drie vlakke lagen die elk op hun eigen tempo wiebelen; laait op bij TF
+      const laai = p(t, TF, TF + .5, E.veer), kr = lerp(.56, 1, Math.min(1.22, laai)) * p(t, .05, .5, E.terug), klap = t >= TF ? Math.exp(-(t - TF) * 5) * .25 : 0;
+      [['.mm-v1', 7, 0], ['.mm-v2', 9.5, 1.3], ['.mm-v3', 12, 2.1]].forEach(([s, f, ph], i) => { const w = Math.sin(t * f + ph), w2 = Math.sin(t * f * .63 + ph * 2);
+        $(s).setAttribute('transform', `scale(${kr * (1 + w * .05 + klap * .5)},${kr * (1 + w2 * .09 + klap * (1 + i * .3))}) skewX(${w2 * 5})`); });
+      const ex = p(t, TF, TF + .25, E.terug); $('.mm-extra').setAttribute('transform', `scale(${ex})`); $('.mm-extra').setAttribute('opacity', t >= TF ? '1' : '0');
+      zet($('.mm-zon'), { transform: `scale(${lerp(.55, 1, Math.min(1.1, laai)) * (1 + Math.sin(t * 3) * .015)})` });
+      // Vonk huppelt binnen met het blok, haalt uit, gooit, kijkt naar het vuur
+      let m = 'blij', x = VX, y = VY, sx = 1, sy = 1, rot = 0, bx, by, br = 14, blok = 1;
+      const h1 = p(t, HOP[0], HOP[0] + .3), h2 = p(t, HOP[1], HOP[1] + .32);
+      if (t < HOP[1] + .32) { x = h2 > 0 ? lerp(150, VX, h2) : lerp(-170, 150, h1); const u = h2 > 0 ? h2 : h1; y = VY - Math.sin(u * Math.PI) * 90; sy = 1 + Math.sin(u * Math.PI) * .1; sx = 1 - Math.sin(u * Math.PI) * .06; rot = 6;
+        if (h1 >= 1 && h2 <= 0) { const [a, b] = plet(t, HOP[0] + .3, .2); sx = a; sy = b; } }
+      else if (t < TB) { const [a, b] = plet(t, HOP[1] + .32, .22); sx = a; sy = b; }
+      else if (t < TW) { m = 'vastberaden'; const u = p(t, TB, TW, E.uit); rot = lerp(0, -14, u); sx = 1 + u * .06; sy = 1 - u * .08; }
+      else if (t < TF) { m = 'vastberaden'; const u = p(t, TW, TW + .16, E.uit); rot = lerp(-14, 14, u); sx = lerp(1.06, .96, u); sy = lerp(.92, 1.06, u); }
+      else { m = t < TF + .6 ? 'wow' : 'trots'; const u = p(t, TF, TF + .5, E.uit); rot = lerp(14, 0, u) + (t < TF + .5 ? -Math.sin(u * Math.PI) * 8 : 0); const [a, b] = plet(t, TF, .1); sx = a; sy = b;
+        if (t > TF + .9) { const dn = t - TF - .9; sy *= 1 + Math.sin(dn * 3.2) * .018; rot = Math.sin(dn * 1.6) * 2; } }
+      vonk(m, x, y, sx, sy, rot, 1);
+      // het blok: in de hand, dan in een boog naar het vuur
+      const hx = x + 96 + (t >= TB && t < TW ? -p(t, TB, TW, E.uit) * 150 : 0), hy = y - 118 + (t >= TB && t < TW ? -p(t, TB, TW, E.uit) * 60 : 0);
+      if (t < TW) { bx = hx; by = hy; br = 14 + rot * 2; } else { const u = p(t, TW, TF); [bx, by] = boog([VX - 54 + 96, VY - 178], [FX, VY - 60], 190, u); br = -14 + u * 330; blok = t < TF ? 1 : 0; }
+      zet($('.mm-blok'), { left: bx + 'px', top: by + 'px', opacity: String(blok), transform: `rotate(${br}deg)` });
+      // klapbord: bovenste helft klapt omlaag, onderste helft valt eroverheen
+      const bi = p(t, .1, .55, E.uit5); zet($('.mm-bord'), { opacity: String(Math.min(1, bi * 2)), transform: `translateY(${(1 - bi) * -60}px)` });
+      KA.forEach((k, i) => { if (!k.wis) { zet(k.kb, { opacity: '0' }); zet(k.ko, { opacity: '0' }); return; } const t0 = TK + i * .07, a = p(t, t0, t0 + .22, E.in), b = p(t, t0 + .22, t0 + .5, E.veer);
+        zet(k.kb, { transform: `rotateX(${-a * 90}deg)`, opacity: a < 1 ? '1' : '0' }); zet(k.ko, { transform: `rotateX(${(1 - Math.min(1.12, b)) * 90}deg)`, opacity: t >= t0 + .22 ? '1' : '0' }); });
+      const on = p(t, .3, .7, E.uit); zet($('.mm-onder'), { opacity: String(on), transform: `translateY(${lerp(24, 0, on)}px)` });
+      DAG.forEach((d, i) => { const inn = p(t, .25 + i * .04, .6 + i * .04, E.terug), v = p(t, d.t, d.t + .3, E.terug);
+        zet(d.el, { opacity: String(Math.min(1, inn * 2)), transform: `scale(${inn * (1 + Math.max(0, 1 - Math.abs(t - d.t - .08) * 9) * .3)})` });
         zet(d.vul, { opacity: String(Math.min(1, v * 2)), transform: `scale(${v})` }); zet(d.vink, { opacity: String(Math.min(1, v * 2)), transform: `scale(${v})` }); });
-      const vd = p(t, .5, .8, E.uit); zet($('.mm-vandaag'), { opacity: String(vd * (.6 + .4 * Math.sin(t * 6) ** 2)) });
-      const vl = p(t, TD + .06, TF, E.inUit), x0 = DX(VOL - 1), bx = lerp(x0, 540, vl), by = lerp(DY, 400, vl) - Math.sin(vl * Math.PI) * 170;
-      zet($('.mm-vuurtje'), { left: bx + 'px', top: by + 'px', opacity: vl > 0 && vl < 1 ? '1' : '0', transform: `scale(${1 + Math.sin(t * 50) * .2})` });
-      [['.mm-s1', 0], ['.mm-s2', .16]].forEach(([s, d]) => { const x = p(t, TF + d, TF + d + .7, E.uit); zet($(s), { opacity: String(x > 0 ? (1 - x) * .9 : 0), transform: `scale(${lerp(.8, 2.8, x)})`, borderWidth: lerp(12, 2, x) + 'px' }); });
-      if (t >= TF && t < TF + .3) schud = (TF + .3 - t) * 60;
-      B.tekenSterren(ST, t, 4.5, 5);
-      B.kader(t, { flitsT: [TF], schud, merkT: TF + 1 });
+      B.kader(t, { merkT: TF + 1 });
     }
-    return { duur: 5, cover: 3.1, klap: TF, knop: TF + 1.3, render, geluid: [[0, 'mStreak', 1, { dagen: DAG.filter((d, i) => i < VOL - 1).map(d => d.t), vink: TD, vlam: TF, duur: 5 }]] };
+    return { duur: 5, cover: 3.3, klap: TF, knop: TF + 1.3, render, geluid: [[0, 'mStreak', 1, { hops: [HOP[0] + .3, HOP[1] + .32], dagen: DAG.filter((d, i) => i < VOL - 1).map(d => d.t), terug: TB, worp: TW, vlam: TF, duur: 5 }]] };
   }
 
   const DEF = { level, promotie, streak };
@@ -377,9 +411,9 @@
     const vw = innerWidth, vh = innerHeight, sch = Math.min(vw / 1080, vh / 1420), H = Math.ceil(vh / sch);
     const niveau = (typeof APP_LEVEL !== 'undefined' && APP_LEVEL) || 'havo';
     // Het podium staat iets boven het midden, zodat de knop onderin vrij blijft.
-    const CY = Math.max(610, Math.min(H - 710, H * .43));
+    const CY = Math.max(610, Math.min(H - 710, H * ({ level: .5, streak: .5 }[soort] || .45)));
     const m = maak(soort, root, Object.assign({ H, CY, S: 1, niveau, blijf: true }, o || {}));
-    root.style.transform = 'scale(' + sch + ')'; ov.style.setProperty('--mm-niv', NIV[niveau] ? NIV[niveau][0] : NIV.havo[0]);
+    root.style.transform = 'scale(' + sch + ')';
     const rustig = !!(window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches);
     let raf = 0, t0 = 0, stopGeluid = null, knopAan = false;
     const zetKnop = () => { if (knopAan) return; knopAan = true; voet.classList.add('mm-aan'); try { voet.querySelector('.mm-knop').focus({ preventScroll: true }); } catch (e) {} };
