@@ -866,6 +866,27 @@ var VAKKEN = [
       "nOe": 5,
       "nBeg": 12,
       "hasSam": true
+     },
+     {
+      "id": "A3",
+      "lo": "wa.A.3",
+      "gs": 2,
+      "naam": "Rekenen met een model en afronden op de juiste nauwkeurigheid",
+      "beschrijving": "Je rekent met een model zonder tussenafronden en rondt je antwoord af op de juiste nauwkeurigheid: je rondt af op het gevraagde aantal decimalen, rondt omhoog af bij een benodigd aantal en past je antwoord aan de context aan.",
+      "ceStatus": "CE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Afrondingsregels",
+       "Afronden op decimalen",
+       "Afronden bij een benodigd aantal",
+       "Niet afronden tussen de stappen",
+       "Nauwkeurigheid die bij de gegevens past"
+      ],
+      "nSv": 27,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
      }
     ]
    },

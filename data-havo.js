@@ -35336,6 +35336,688 @@ var VAKKEN = [
         "u": "Met een formule kun je voor elke waarde dezelfde berekening gebruiken (1p). Voorbeeld: K = 4,50 + 2,20k voor elke rit (1p). Een duidelijke uitleg (1p)."
        }
       ]
+     },
+     {
+      "id": "A3",
+      "lo": "wa.A.3",
+      "gs": 2,
+      "naam": "Rekenen met een model en afronden op de juiste nauwkeurigheid",
+      "beschrijving": "Je rekent met een model zonder tussenafronden en rondt je antwoord af op de juiste nauwkeurigheid: je rondt af op het gevraagde aantal decimalen, rondt omhoog af bij een benodigd aantal en past je antwoord aan de context aan.",
+      "ceStatus": "CE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Afrondingsregels",
+       "Afronden op decimalen",
+       "Afronden bij een benodigd aantal",
+       "Niet afronden tussen de stappen",
+       "Nauwkeurigheid die bij de gegevens past"
+      ],
+      "sam": "Bij afronden kijk je naar het volgende cijfer: 5 of meer rond je omhoog. Een aantal dat je nodig hebt, zoals bussen of liters, rond je omhoog af. Rond pas af bij het eindantwoord en niet bij een tussenantwoord. Het antwoord mag niet nauwkeuriger zijn dan de gegevens en heeft een eenheid. Controleer of het realistisch is.",
+      "begrippen": [
+       {
+        "t": "Afronden",
+        "d": "Een getal vervangen door een eenvoudiger getal in de buurt."
+       },
+       {
+        "t": "Decimaal",
+        "d": "Een cijfer achter de komma."
+       },
+       {
+        "t": "Afkappen",
+        "d": "Cijfers weglaten zonder te kijken naar het volgende cijfer; dat is geen afronden."
+       },
+       {
+        "t": "Tussenantwoord",
+        "d": "Een antwoord halverwege je berekening; rond dat niet af."
+       },
+       {
+        "t": "Eindantwoord",
+        "d": "Het antwoord op de vraag; daar rond je af."
+       },
+       {
+        "t": "Nauwkeurigheid",
+        "d": "Hoeveel decimalen of cijfers een antwoord mag hebben, passend bij de gegevens."
+       },
+       {
+        "t": "Omhoog afronden",
+        "d": "Bij een tekort: je neemt altijd het volgende hele getal."
+       },
+       {
+        "t": "Aantal",
+        "d": "Een geheel getal dat je telt, zoals bussen of eieren."
+       },
+       {
+        "t": "Eenheid",
+        "d": "Wat je meet, zoals liter, euro of meter."
+       },
+       {
+        "t": "Procent",
+        "d": "Een honderdste deel; je rondt percentages vaak af op één decimaal."
+       },
+       {
+        "t": "Controleren",
+        "d": "Nagaan of je antwoord klopt en past bij de context."
+       },
+       {
+        "t": "Context",
+        "d": "De situatie waarin de opgave speelt."
+       }
+      ],
+      "sv": [
+       {
+        "v": "Een weegschaal toont 4,36 kg. Je noteert het gewicht op één decimaal. Wat schrijf je op?",
+        "o": [
+         "\"4,3 kg, I think\"",
+         "\"4,4 kg\"",
+         "\"4,5 kg\"",
+         "\"5 kg\""
+        ],
+        "c": 1,
+        "d": 1,
+        "s": 0,
+        "u": "Rond pas aan het eind af en kijk wat bij de situatie past. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"4,3 kg, I think\"\"? Dan kap je het getal af. De tweede decimaal is 6 en dat is meer dan 5, dus je moet omhoog afronden.",
+         "Klopt: de tweede decimaal is 6 en dat is 5 of meer, dus rond je omhoog af naar 4,4.",
+         "Koos je \"\"4,5 kg\"\"? Dan rond je altijd omhoog af. De tweede decimaal is 6, dus 4,4 en niet 4,5.",
+         "Koos je \"\"5 kg\"\"? Dan rond je af op hele kilo's. De opgave vraagt om één decimaal, dus 4,4 kg."
+        ],
+        "uh": "Een weegschaal toont 4,36 kg. Je noteert het gewicht op één decimaal. Wat schrijf je op?"
+       },
+       {
+        "v": "Een slager rekent €12,45 per kilo en rondt af op €0,10. Welke prijs wordt het?",
+        "o": [
+         "\"€12,40\"",
+         "\"€12,00\"",
+         "\"€13,00\"",
+         "\"€12,50\""
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 0,
+        "u": "Rond pas aan het eind af en kijk wat bij de situatie past. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"€12,40\"\"? Dan rond je naar beneden af. Bij een 5 rond je omhoog, dus €12,50.",
+         "Koos je \"\"€12,00\"\"? Dan rond je af op hele euro's. De slager wil afronden op tientallen centen, dus €12,50.",
+         "Koos je \"\"€13,00\"\"? Dan rond je af op hele euro's en dan omhoog. Je rondt af op €0,10, dus €12,50.",
+         "Klopt: bij een 5 als eerste weggelaten cijfer rond je omhoog af."
+        ],
+        "uh": "Een slager rekent €12,45 per kilo en rondt af op €0,10. Welke prijs wordt het?"
+       },
+       {
+        "v": "Een meting geeft 0,0764 gram. Je geeft de uitkomst op twee decimalen. Wat schrijf je op?",
+        "o": [
+         "\"0,08 gram\"",
+         "\"0,07 gram\"",
+         "\"0,1 gram\"",
+         "\"0,076 gram, I suppose\""
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 1,
+        "u": "Rond pas aan het eind af en kijk wat bij de situatie past. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: de derde decimaal is 6, dus 0,07 wordt 0,08.",
+         "Koos je \"\"0,07 gram\"\"? Dan kap je af na de tweede decimaal. De derde decimaal is 6, dus je moet omhoog afronden.",
+         "Koos je \"\"0,1 gram\"\"? Dan rond je af op één decimaal. De opgave vraagt om twee decimalen, dus 0,08.",
+         "Koos je \"\"0,076 gram, I suppose\"\"? Dan rond je af op drie decimalen. Je moet na twee decimalen stoppen, en dus 0,08."
+        ],
+        "uh": "Een meting geeft 0,0764 gram. Je geeft de uitkomst op twee decimalen. Wat schrijf je op?"
+       },
+       {
+        "v": "Een bus heeft 50 plaatsen en je hebt 137 leerlingen. Hoeveel bussen heb je nodig?",
+        "o": [
+         "\"2\"",
+         "\"2,74\"",
+         "\"3\"",
+         "\"4\""
+        ],
+        "c": 2,
+        "d": 1,
+        "s": 2,
+        "u": "Rond pas aan het eind af en kijk wat bij de situatie past. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"2\"\"? Dan kap je 2,74 af naar beneden. Met 2 bussen blijven 37 leerlingen over, dus je hebt er 3 nodig.",
+         "Koos je \"\"2,74\"\"? Dan laat je het antwoord als decimaal staan. Een aantal bussen moet een geheel getal zijn, dus 3.",
+         "Klopt: 137/50 = 2,74 en een deel van een bus bestaat niet, dus je hebt 3 bussen nodig.",
+         "Koos je \"\"4\"\"? Dan rond je te veel omhoog af. Met 3 bussen zijn er 150 plaatsen, en dat is genoeg."
+        ],
+        "uh": "Een bus heeft 50 plaatsen en je hebt 137 leerlingen. Hoeveel bussen heb je nodig?"
+       },
+       {
+        "v": "Een pak bevat 6 koekjes en je hebt er 20 nodig. Hoeveel pakken koop je?",
+        "o": [
+         "\"3\"",
+         "\"4\"",
+         "\"3,3\"",
+         "\"20\""
+        ],
+        "c": 1,
+        "d": 1,
+        "s": 2,
+        "u": "Rond pas aan het eind af en kijk wat bij de situatie past. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"3\"\"? Dan rond je 3,33 naar het dichtstbijzijnde getal af. Met 3 pakken heb je 18 koekjes, en dat is te weinig.",
+         "Klopt: 20/6 = 3,33 en met 3 pakken heb je maar 18 koekjes, dus 4 pakken.",
+         "Koos je \"\"3,3\"\"? Dan laat je het antwoord als decimaal staan. Je kunt alleen hele pakken kopen, dus 4.",
+         "Koos je \"\"20\"\"? Dan neem je het aantal koekjes als aantal pakken. Dat is wat je nodig hebt, en niet het aantal pakken."
+        ],
+        "uh": "Een pak bevat 6 koekjes en je hebt er 20 nodig. Hoeveel pakken koop je?"
+       },
+       {
+        "v": "Je rekent in meerdere stappen. Wanneer rond je af?",
+        "o": [
+         "\"na elke stap\"",
+         "\"vóór de eerste stap, I think\"",
+         "\"nooit\"",
+         "\"pas bij het eindantwoord\""
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 3,
+        "u": "Rond pas aan het eind af en kijk wat bij de situatie past. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"na elke stap\"\"? Dan rond je steeds af. Elke afronding voegt een kleine fout toe, en die stapelen zich op.",
+         "Koos je \"\"vóór de eerste stap, I think\"\"? Dan rond je de gegevens af voor je begint. Dan ben je al onnauwkeurig, voordat je rekent.",
+         "Koos je \"\"nooit\"\"? Dan rond je nooit af. Een antwoord met te veel decimalen past niet bij de context, dus aan het eind moet je afronden.",
+         "Klopt: tussenafrondingen maken je eindantwoord minder nauwkeurig."
+        ],
+        "uh": "Je rekent in meerdere stappen. Wanneer rond je af?"
+       },
+       {
+        "v": "Een lengte is gemeten op hele cm: 182 cm. Welk antwoord past bij de vraag hoeveel meter dat is?",
+        "o": [
+         "\"1,82 m\"",
+         "\"1,8200 m\"",
+         "\"1,8 m\"",
+         "\"2 m\""
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 4,
+        "u": "Rond pas aan het eind af en kijk wat bij de situatie past. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: de nauwkeurigheid van het antwoord past bij de meting op hele centimeters.",
+         "Koos je \"\"1,8200 m\"\"? Dan schrijf je te veel nullen op. De meting is maar op hele cm nauwkeurig, dus 1,82 is genoeg.",
+         "Koos je \"\"1,8 m\"\"? Dan rond je te grof af. Je gooit informatie weg die in de meting zat, dus 1,82 m.",
+         "Koos je \"\"2 m\"\"? Dan rond je af op hele meters. Dat is veel grover dan de meting, dus je verliest nauwkeurigheid."
+        ],
+        "uh": "Een lengte is gemeten op hele cm: 182 cm. Welk antwoord past bij de vraag hoeveel meter dat is?"
+       },
+       {
+        "v": "Bereken 38,4 / 7 en rond af op twee decimalen.",
+        "o": [
+         "\"5,48 liter, I suppose\"",
+         "\"5,5 liter\"",
+         "\"5,49 liter\"",
+         "\"5,50 liter\""
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 1,
+        "u": "Rond pas aan het eind af en kijk wat bij de situatie past. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"5,48 liter, I suppose\"\"? Dan kap je de uitkomst af. De derde decimaal is 5 en dus rond je omhoog, dus 5,49.",
+         "Koos je \"\"5,5 liter\"\"? Dan rond je af op één decimaal. De opgave vraagt om twee decimalen, dus 5,49.",
+         "Klopt: 38,4/7 = 5,4857… en de derde decimaal is 5 of meer, dus 5,49.",
+         "Koos je \"\"5,50 liter\"\"? Dan rond je eerst af naar 5,5 en schrijf je er een nul bij. Dat is een tussenafronding, en je krijgt 5,49."
+        ],
+        "uh": "Bereken 38,4 / 7 en rond af op twee decimalen.",
+        "ctx": "Een kamer heeft een muuroppervlak van 38,4 m². Eén liter verf is genoeg voor 7 m². Verf wordt alleen per hele liter verkocht. Je wilt weten hoeveel liter je minimaal moet kopen om de hele muur te schilderen."
+       },
+       {
+        "v": "Hoeveel liter moet je minimaal kopen?",
+        "o": [
+         "\"5 liter\"",
+         "\"6 liter\"",
+         "\"5,49 liter\"",
+         "\"7 liter\""
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 2,
+        "u": "Rond pas aan het eind af en kijk wat bij de situatie past. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"5 liter\"\"? Dan rond je naar het dichtstbijzijnde getal af. Met 5 liter schilder je maar 35 m², en dat is te weinig.",
+         "Klopt: 5 liter is te weinig voor 5,49 liter, dus je koopt 6 hele liters.",
+         "Koos je \"\"5,49 liter\"\"? Dan laat je het antwoord als decimaal staan. Verf wordt alleen per hele liter verkocht, dus 6.",
+         "Koos je \"\"7 liter\"\"? Dan neem je het aantal m² per liter. Dat is gegeven, en niet het aantal liters."
+        ],
+        "uh": "Hoeveel liter moet je minimaal kopen?",
+        "ctx": "Een kamer heeft een muuroppervlak van 38,4 m². Eén liter verf is genoeg voor 7 m². Verf wordt alleen per hele liter verkocht. Je wilt weten hoeveel liter je minimaal moet kopen om de hele muur te schilderen."
+       },
+       {
+        "v": "Waarom rond je hier omhoog af en niet naar het dichtstbijzijnde getal?",
+        "o": [
+         "\"omdat 6 een mooier getal is\"",
+         "\"omdat afronden altijd omhoog gaat\"",
+         "\"omdat de verf anders te duur wordt, gewoon, volgens mij\"",
+         "\"met 5 liter reikt de verf niet voor de hele muur\""
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 2,
+        "u": "Rond pas aan het eind af en kijk wat bij de situatie past. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"omdat 6 een mooier getal is\"\"? Dan kies je op smaak. Het gaat om wat nodig is, en niet om een mooi getal.",
+         "Koos je \"\"omdat afronden altijd omhoog gaat\"\"? Dan denk je dat omhoog de vaste regel is. Afronden gaat naar het dichtstbijzijnde getal, behalve als je een tekort moet voorkomen.",
+         "Koos je \"\"omdat de verf anders te duur wordt, gewoon, volgens mij\"\"? Dan denk je dat de prijs bepaalt. Het is juist duurder om meer te kopen, en de reden is een tekort voorkomen.",
+         "Klopt: je hebt minstens 5,49 liter nodig, dus 6 hele liters."
+        ],
+        "uh": "Waarom rond je hier omhoog af en niet naar het dichtstbijzijnde getal?",
+        "ctx": "Een kamer heeft een muuroppervlak van 38,4 m². Eén liter verf is genoeg voor 7 m². Verf wordt alleen per hele liter verkocht. Je wilt weten hoeveel liter je minimaal moet kopen om de hele muur te schilderen."
+       },
+       {
+        "v": "Hoeveel m² kun je maximaal schilderen met 5 liter?",
+        "o": [
+         "\"35 m²\"",
+         "\"38,4 m²\"",
+         "\"5 m²\"",
+         "\"42 m²\""
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 4,
+        "u": "Rond pas aan het eind af en kijk wat bij de situatie past. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: 5 × 7 = 35 m² en dat is minder dan de 38,4 m² van de muur.",
+         "Koos je \"\"38,4 m²\"\"? Dan neem je het oppervlak dat je wilt schilderen. Met 5 liter schilder je maar 5 × 7, en dat is 35.",
+         "Koos je \"\"5 m²\"\"? Dan neem je het aantal liters als oppervlak. Je vermenigvuldigt met 7, dus 35.",
+         "Koos je \"\"42 m²\"\"? Dan reken je met 6 liter. De vraag gaat over 5 liter, dus 35."
+        ],
+        "uh": "Hoeveel m² kun je maximaal schilderen met 5 liter?",
+        "ctx": "Een kamer heeft een muuroppervlak van 38,4 m². Eén liter verf is genoeg voor 7 m². Verf wordt alleen per hele liter verkocht. Je wilt weten hoeveel liter je minimaal moet kopen om de hele muur te schilderen."
+       },
+       {
+        "v": "Bereken 41,3 / 650 × 100 op één decimaal (liter per 100 km).",
+        "o": [
+         "\"6,3\"",
+         "\"6,35\"",
+         "\"6,4\"",
+         "\"6,5\""
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 1,
+        "u": "Rond pas aan het eind af en kijk wat bij de situatie past. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"6,3\"\"? Dan kap je de uitkomst af. De tweede decimaal is 5, dus rond je omhoog af naar 6,4.",
+         "Koos je \"\"6,35\"\"? Dan rond je af op twee decimalen. De opgave vraagt om één decimaal, dus 6,4.",
+         "Klopt: de uitkomst is 6,3538… en de tweede decimaal is 5, dus 6,4.",
+         "Koos je \"\"6,5\"\"? Dan rond je te hoog af. 6,3538 ligt dichter bij 6,4 dan bij 6,5, dus 6,4."
+        ],
+        "uh": "Bereken 41,3 / 650 × 100 op één decimaal (liter per 100 km).",
+        "ctx": "Een auto rijdt 650 km en verbruikt daarbij 41,3 liter benzine. Je wilt het verbruik in liter per 100 km berekenen en daarna uitrekenen hoeveel benzine een rit van 200 km kost. Je rondt af op één decimaal."
+       },
+       {
+        "v": "Een leerling rondt 41,3/650 eerst af op twee decimalen (0,06) en vermenigvuldigt dan met 100. Wat krijgt hij?",
+        "o": [
+         "\"6,4 liter per 100 km\"",
+         "\"6,0 liter per 100 km\"",
+         "\"0,06 liter per 100 km, I suppose\"",
+         "\"6,35 liter per 100 km\""
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 3,
+        "u": "Rond pas aan het eind af en kijk wat bij de situatie past. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"6,4 liter per 100 km\"\"? Dan denk je dat de tussenafronding niets verandert. Hij rondt eerst af op 0,06, en dat geeft 6,0.",
+         "Klopt: 0,06 × 100 = 6,0, en dat wijkt van 6,4 af door de tussenafronding.",
+         "Koos je \"\"0,06 liter per 100 km, I suppose\"\"? Dan vergeet je de vermenigvuldiging met 100. Hij berekent 0,06 × 100, en dat is 6,0.",
+         "Koos je \"\"6,35 liter per 100 km\"\"? Dan neem je de ongeroonde uitkomst. Hij rondt eerst af, dus zijn antwoord is 6,0."
+        ],
+        "uh": "Een leerling rondt 41,3/650 eerst af op twee decimalen (0,06) en vermenigvuldigt dan met 100. Wat krijgt hij?",
+        "ctx": "Een auto rijdt 650 km en verbruikt daarbij 41,3 liter benzine. Je wilt het verbruik in liter per 100 km berekenen en daarna uitrekenen hoeveel benzine een rit van 200 km kost. Je rondt af op één decimaal."
+       },
+       {
+        "v": "Hoeveel liter is nodig voor een rit van 200 km (afgerond op 1 decimaal), zonder tussenafronding?",
+        "o": [
+         "\"12,8 liter\"",
+         "\"13,0 liter\"",
+         "\"12,71 liter, you know\"",
+         "\"12,7 liter\""
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 3,
+        "u": "Rond pas aan het eind af en kijk wat bij de situatie past. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"12,8 liter\"\"? Dan reken je met het afgeronde verbruik van 6,4. Je moet het onafgeronde getal gebruiken, en dat geeft 12,7.",
+         "Koos je \"\"13,0 liter\"\"? Dan rond je af op hele liters. De opgave vraagt om één decimaal, dus 12,7.",
+         "Koos je \"\"12,71 liter, you know\"\"? Dan rond je af op twee decimalen. De opgave vraagt om één decimaal, dus 12,7.",
+         "Klopt: 200 × 41,3 / 650 = 12,7077… en dat is 12,7 liter."
+        ],
+        "uh": "Hoeveel liter is nodig voor een rit van 200 km (afgerond op 1 decimaal), zonder tussenafronding?",
+        "ctx": "Een auto rijdt 650 km en verbruikt daarbij 41,3 liter benzine. Je wilt het verbruik in liter per 100 km berekenen en daarna uitrekenen hoeveel benzine een rit van 200 km kost. Je rondt af op één decimaal."
+       },
+       {
+        "v": "Welk percentage van de bezoekers koopt iets (afgerond op één decimaal)?",
+        "o": [
+         "\"8,1%\"",
+         "\"8,0%\"",
+         "\"8,05%\"",
+         "\"8%\""
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 1,
+        "u": "Rond pas aan het eind af en kijk wat bij de situatie past. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: 189/2347 = 0,08053 en dat is 8,05…%, dus 8,1%.",
+         "Koos je \"\"8,0%\"\"? Dan kap je af. Het derde cijfer na de komma is 5 of meer, dus je rondt omhoog af.",
+         "Koos je \"\"8,05%\"\"? Dan rond je af op twee decimalen en laat je de tweede decimaal staan. De opgave vraagt om één decimaal, dus het antwoord is 8,1%.",
+         "Koos je \"\"8%\"\"? Dan rond je af op hele procenten en verliest daarbij een decimaal. Dat is minder nauwkeurig dan gevraagd, dus 8,1%."
+        ],
+        "uh": "Welk percentage van de bezoekers koopt iets (afgerond op één decimaal)?",
+        "ctx": "Een webshop heeft in een maand 2347 bezoekers, van wie er 189 iets kopen. Je wilt het percentage kopers weten, afgerond op één decimaal, en het aantal bezoekers dat niets koopt."
+       },
+       {
+        "v": "Hoeveel bezoekers kopen niets?",
+        "o": [
+         "\"189\"",
+         "\"2536\"",
+         "\"2158\"",
+         "\"2148\""
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 4,
+        "u": "Rond pas aan het eind af en kijk wat bij de situatie past. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"189\"\"? Dan neem je het aantal kopers. Je zoekt het aantal niet-kopers, dus je moet aftrekken.",
+         "Koos je \"\"2536\"\"? Dan tel je 189 bij 2347 op. Het gaat om het aantal dat niet koopt, dus aftrekken.",
+         "Klopt: 2347 min 189 is 2158 bezoekers die niets kopen.",
+         "Koos je \"\"2148\"\"? Dan maak je een rekenfout bij het aftrekken. 2347 min 189 is 2158, dus controleer je som."
+        ],
+        "uh": "Hoeveel bezoekers kopen niets?",
+        "ctx": "Een webshop heeft in een maand 2347 bezoekers, van wie er 189 iets kopen. Je wilt het percentage kopers weten, afgerond op één decimaal, en het aantal bezoekers dat niets koopt."
+       },
+       {
+        "v": "Hoeveel procent van de bezoekers koopt niets (afgerond op één decimaal)?",
+        "o": [
+         "\"92,0%\"",
+         "\"91,9%\"",
+         "\"91,8%\"",
+         "\"91,95%\""
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 4,
+        "u": "Rond pas aan het eind af en kijk wat bij de situatie past. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"92,0%\"\"? Dan trek je 8,0 van 100 af. Het percentage kopers is 8,1, dus 100 min 8,1 is 91,9.",
+         "Klopt: 2158/2347 = 0,9195 en dat is 91,9%, ofwel 100% min 8,1%.",
+         "Koos je \"\"91,8%\"\"? Dan rond je 91,947 af naar beneden. Het tweede cijfer na de komma is 4 en dus 91,9, maar 91,8 is nog lager.",
+         "Koos je \"\"91,95%\"\"? Dan laat je twee decimalen staan. De opgave vraagt om één decimaal, dus 91,9%."
+        ],
+        "uh": "Hoeveel procent van de bezoekers koopt niets (afgerond op één decimaal)?",
+        "ctx": "Een webshop heeft in een maand 2347 bezoekers, van wie er 189 iets kopen. Je wilt het percentage kopers weten, afgerond op één decimaal, en het aantal bezoekers dat niets koopt."
+       },
+       {
+        "v": "Hoe groot is de oppervlakte van het stuk grond?",
+        "o": [
+         "\"19,8 m²\"",
+         "\"91 m²\"",
+         "\"912,5 m², zeg maar\"",
+         "\"91,25 m²\""
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 3,
+        "u": "Rond pas aan het eind af en kijk wat bij de situatie past. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"19,8 m²\"\"? Dan tel je de zijden op. Een oppervlakte is lengte maal breedte, dus 12,5 × 7,3.",
+         "Koos je \"\"91 m²\"\"? Dan rond je de oppervlakte af. Voor je verder rekent mag je niet afronden, en dan blijft het 91,25.",
+         "Koos je \"\"912,5 m², zeg maar\"\"? Dan verplaats je de komma. 12,5 × 7,3 is 91,25, en niet 912,5.",
+         "Klopt: 12,5 × 7,3 = 91,25, lengte maal breedte in vierkante meter."
+        ],
+        "uh": "Hoe groot is de oppervlakte van het stuk grond?",
+        "ctx": "Een rechthoekig stuk grond meet 12,5 m bij 7,3 m. Je berekent de oppervlakte en daarna de kosten voor het leggen van gras: €18,75 per m². De kosten worden afgerond op hele centen."
+       },
+       {
+        "v": "Hoeveel kosten het gras en het leggen (op de cent nauwkeurig)?",
+        "o": [
+         "\"€1710,94\"",
+         "\"€1706,25\"",
+         "\"€1711,00\"",
+         "\"€1710,93\""
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 3,
+        "u": "Rond pas aan het eind af en kijk wat bij de situatie past. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: 91,25 × 18,75 = 1710,9375, afgerond 1710,94.",
+         "Koos je \"\"€1706,25\"\"? Dan reken je met 91 m². Je rondt dan te vroeg af, en het antwoord wordt onnauwkeurig.",
+         "Koos je \"\"€1711,00\"\"? Dan rond je af op hele euro's. De opgave vraagt om hele centen, dus 1710,94.",
+         "Koos je \"\"€1710,93\"\"? Dan kap je af. De derde decimaal is 7 en je rondt omhoog af, dus 1710,94."
+        ],
+        "uh": "Hoeveel kosten het gras en het leggen (op de cent nauwkeurig)?",
+        "ctx": "Een rechthoekig stuk grond meet 12,5 m bij 7,3 m. Je berekent de oppervlakte en daarna de kosten voor het leggen van gras: €18,75 per m². De kosten worden afgerond op hele centen."
+       },
+       {
+        "v": "Waarom is €1706,25 minder nauwkeurig dan €1710,94?",
+        "o": [
+         "\"de prijs per m² is afgerond\"",
+         "\"de breedte is afgerond op 7\"",
+         "\"de oppervlakte is eerst afgerond op 91 m²\"",
+         "\"91,25 is verkeerd vermenigvuldigd, gewoon, volgens mij\""
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 3,
+        "u": "Rond pas aan het eind af en kijk wat bij de situatie past. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"de prijs per m² is afgerond\"\"? Dan zoek je de fout bij het tarief. De prijs is 18,75 en niet gewijzigd, dus de afronding zit elders.",
+         "Koos je \"\"de breedte is afgerond op 7\"\"? Dan pak je de breedte als schuldige. In beide berekeningen is de breedte 7,3, dus het verschil zit in de oppervlakte.",
+         "Klopt: 91 × 18,75 = 1706,25 en 91,25 × 18,75 = 1710,94, door de tussenafronding.",
+         "Koos je \"\"91,25 is verkeerd vermenigvuldigd, gewoon, volgens mij\"\"? Dan denk je dat de vermenigvuldiging fout is. 12,5 × 7,3 is 91,25, en de afronding veroorzaakt het verschil."
+        ],
+        "uh": "Waarom is €1706,25 minder nauwkeurig dan €1710,94?",
+        "ctx": "Een rechthoekig stuk grond meet 12,5 m bij 7,3 m. Je berekent de oppervlakte en daarna de kosten voor het leggen van gras: €18,75 per m². De kosten worden afgerond op hele centen."
+       },
+       {
+        "v": "Rond de kosten 1710,9375 af op hele euro's.",
+        "o": [
+         "\"€1710\"",
+         "\"€1711\"",
+         "\"€1712\"",
+         "\"€1700\""
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 1,
+        "u": "Rond pas aan het eind af en kijk wat bij de situatie past. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"€1710\"\"? Dan kap je af. De eerste decimaal is 9 en meer dan 5, dus je rondt omhoog af.",
+         "Klopt: de eerste decimaal is 9, dus 1710 wordt 1711.",
+         "Koos je \"\"€1712\"\"? Dan rond je twee keer omhoog af. Je rondt af op 1711, en dat is het antwoord.",
+         "Koos je \"\"€1700\"\"? Dan rond je af op tientallen. De opgave vraagt om hele euro's, dus 1711."
+        ],
+        "uh": "Rond de kosten 1710,9375 af op hele euro's.",
+        "ctx": "Een rechthoekig stuk grond meet 12,5 m bij 7,3 m. Je berekent de oppervlakte en daarna de kosten voor het leggen van gras: €18,75 per m². De kosten worden afgerond op hele centen."
+       },
+       {
+        "v": "Hoeveel bussen zijn minimaal nodig voor 137 leerlingen en 9 begeleiders?",
+        "o": [
+         "\"2,92\"",
+         "\"2\"",
+         "\"4\"",
+         "\"3\""
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 2,
+        "u": "Rond pas aan het eind af en kijk wat bij de situatie past. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"2,92\"\"? Dan laat je het antwoord als decimaal staan. Een aantal bussen is geheel, dus 3.",
+         "Koos je \"\"2\"\"? Dan kap je 2,92 af. Met 2 bussen zijn er maar 100 plaatsen, en dat is te weinig voor 146 personen.",
+         "Koos je \"\"4\"\"? Dan rond je te veel omhoog af. Met 3 bussen zijn er 150 plaatsen, en dat is genoeg.",
+         "Klopt: 146/50 = 2,92 en je hebt hele bussen nodig, dus 3."
+        ],
+        "uh": "Hoeveel bussen zijn minimaal nodig voor 137 leerlingen en 9 begeleiders?",
+        "ctx": "Een school organiseert een excursie voor 137 leerlingen en 9 begeleiders. Een bus heeft 50 plaatsen. Een bus kost €420 per dag. De school wil weten hoeveel bussen nodig zijn en wat dat kost."
+       },
+       {
+        "v": "Hoeveel kost de excursie aan bussen?",
+        "o": [
+         "\"€1260\"",
+         "\"€840\"",
+         "\"€1226\"",
+         "\"€1680\""
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 2,
+        "u": "Rond pas aan het eind af en kijk wat bij de situatie past. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: 3 bussen × €420 per bus is €1260 voor de excursie.",
+         "Koos je \"\"€840\"\"? Dan reken je met 2 bussen. Met 2 bussen is er niet genoeg plaats, dus 3 bussen.",
+         "Koos je \"\"€1226\"\"? Dan reken je met 2,92 bussen. Je betaalt voor hele bussen, dus 3 × 420.",
+         "Koos je \"\"€1680\"\"? Dan reken je met 4 bussen. Je hebt er maar 3 nodig, dus 3 × 420."
+        ],
+        "uh": "Hoeveel kost de excursie aan bussen?",
+        "ctx": "Een school organiseert een excursie voor 137 leerlingen en 9 begeleiders. Een bus heeft 50 plaatsen. Een bus kost €420 per dag. De school wil weten hoeveel bussen nodig zijn en wat dat kost."
+       },
+       {
+        "v": "Hoeveel plaatsen blijven leeg?",
+        "o": [
+         "\"3\"",
+         "\"13\"",
+         "\"4\"",
+         "\"14\""
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 4,
+        "u": "Rond pas aan het eind af en kijk wat bij de situatie past. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"3\"\"? Dan neem je het aantal bussen. Het gaat om lege plaatsen, en dat is 150 min 146.",
+         "Koos je \"\"13\"\"? Dan trek je 137 af in plaats van 146. De begeleiders tellen ook mee, dus 150 min 146.",
+         "Klopt: 3 × 50 = 150 plaatsen en 150 min 146 is 4.",
+         "Koos je \"\"14\"\"? Dan vergeet je dat er 9 begeleiders zijn. Je telt dan verkeerd, en het antwoord moet 4 zijn."
+        ],
+        "uh": "Hoeveel plaatsen blijven leeg?",
+        "ctx": "Een school organiseert een excursie voor 137 leerlingen en 9 begeleiders. Een bus heeft 50 plaatsen. Een bus kost €420 per dag. De school wil weten hoeveel bussen nodig zijn en wat dat kost."
+       },
+       {
+        "v": "Hoeveel hele eieren heb je minimaal nodig voor 7 personen?",
+        "o": [
+         "\"5\"",
+         "\"6\"",
+         "\"5,25\"",
+         "\"7\""
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 2,
+        "u": "Rond pas aan het eind af en kijk wat bij de situatie past. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"5\"\"? Dan rond je 5,25 af naar het dichtstbijzijnde getal. Met 5 eieren heb je te weinig, dus 6.",
+         "Klopt: 3/4 × 7 = 5,25 en je hebt hele eieren nodig, dus je koopt er 6.",
+         "Koos je \"\"5,25\"\"? Dan laat je het antwoord als decimaal staan. Eieren gebruik je heel, dus 6.",
+         "Koos je \"\"7\"\"? Dan neem je het aantal personen. Dat is gegeven, en niet het aantal eieren."
+        ],
+        "uh": "Hoeveel hele eieren heb je minimaal nodig voor 7 personen?",
+        "ctx": "Een recept voor 4 personen gebruikt 250 gram bloem en 3 eieren. Je kookt voor 7 personen en rekent de hoeveelheden om. Eieren kun je alleen heel gebruiken, en bloem weeg je in de praktijk af op ongeveer 10 gram nauwkeurig."
+       },
+       {
+        "v": "Hoeveel gram bloem is precies nodig voor 7 personen?",
+        "o": [
+         "\"1750 g, I think\"",
+         "\"62,5 g\"",
+         "\"4375 g\"",
+         "\"437,5 g\""
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 3,
+        "u": "Rond pas aan het eind af en kijk wat bij de situatie past. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"1750 g, I think\"\"? Dan vermenigvuldig je 250 met 7. Je moet eerst delen door 4, en dan met 7.",
+         "Koos je \"\"62,5 g\"\"? Dan neem je de hoeveelheid per persoon. Je moet nog met 7 vermenigvuldigen, en dan krijg je 437,5.",
+         "Koos je \"\"4375 g\"\"? Dan verplaats je de komma. 62,5 × 7 is 437,5, en niet 4375.",
+         "Klopt: 250/4 × 7 = 62,5 × 7 = 437,5 gram bloem voor 7 personen."
+        ],
+        "uh": "Hoeveel gram bloem is precies nodig voor 7 personen?",
+        "ctx": "Een recept voor 4 personen gebruikt 250 gram bloem en 3 eieren. Je kookt voor 7 personen en rekent de hoeveelheden om. Eieren kun je alleen heel gebruiken, en bloem weeg je in de praktijk af op ongeveer 10 gram nauwkeurig."
+       },
+       {
+        "v": "Welke hoeveelheid bloem past het best bij het afwegen in de keuken?",
+        "o": [
+         "\"ongeveer 440 g\"",
+         "\"437,5000 g, volgens mij\"",
+         "\"400 g\"",
+         "\"1000 g\""
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 4,
+        "u": "Rond pas aan het eind af en kijk wat bij de situatie past. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: je weegt op ongeveer 10 gram nauwkeurig, dus 440 g past bij de gegevens.",
+         "Koos je \"\"437,5000 g, volgens mij\"\"? Dan schrijf je veel decimalen op. De weegschaal geeft geen 0,1 gram nauwkeurig, dus dit past niet.",
+         "Koos je \"\"400 g\"\"? Dan rond je te grof af. Je verliest 37,5 gram en dat is meer dan 10 gram, dus het past niet.",
+         "Koos je \"\"1000 g\"\"? Dan rond je af op een kilo. Dat is veel te veel, en past niet bij 437,5 gram."
+        ],
+        "uh": "Welke hoeveelheid bloem past het best bij het afwegen in de keuken?",
+        "ctx": "Een recept voor 4 personen gebruikt 250 gram bloem en 3 eieren. Je kookt voor 7 personen en rekent de hoeveelheden om. Eieren kun je alleen heel gebruiken, en bloem weeg je in de praktijk af op ongeveer 10 gram nauwkeurig."
+       }
+      ],
+      "oe": [
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een schoolkantine verkoopt in een week 1284 broodjes. Daarvan zijn er 347 broodjes kaas. De kantine wil het percentage broodjes kaas weten, afgerond op één decimaal, en weten hoeveel broodjes niet met kaas zijn.",
+        "v": "Bereken het percentage broodjes kaas (op één decimaal) en het aantal broodjes zonder kaas.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "347/1284 is 0,2702 (1p). Dat is 27,0% (1p). Zonder kaas: 1284 min 347 is 937 (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een schilder moet een muur van 52,6 m² schilderen. Een blik verf van 2,5 liter is genoeg voor 20 m² en wordt alleen als heel blik verkocht. De schilder wil weten hoeveel blikken hij minimaal moet kopen en hoeveel m² hij dan extra kan schilderen.",
+        "v": "Bereken het aantal blikken en leg uit waarom je omhoog afrondt.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "52,6/20 is 2,63 (1p). Hij koopt 3 blikken (1p). Met 2 blikken schilder je maar 40 m², en dat is te weinig (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een leerling berekent de oppervlakte van een cirkel met straal 3,2 cm met de formule A = π × r². Hij rondt r² = 10,24 eerst af op 10 en berekent daarna A. Je wilt dat hij zonder tussenafronding rekent.",
+        "v": "Bereken A zonder tussenafronding (op 1 decimaal) en leg uit waarom afronden vóór het eind een fout oplevert.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "A = π × 10,24 is 32,17 (1p). Afgerond 32,2 cm² (1p). Met r² = 10 krijg je 31,4, dus een fout (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een gemeente meet dat er in een jaar 2 387 400 liter drinkwater werd verbruikt door 12 500 inwoners. De gemeente wil weten hoeveel liter dat per inwoner is, afgerond op hele liters, en vindt een antwoord met veel decimalen onnodig.",
+        "v": "Bereken het verbruik per inwoner (hele liters) en leg uit waarom je niet verder afrondt.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "2 387 400/12 500 is 190,992 (1p). Afgerond 191 liter (1p). Meer decimalen zijn zinloos: de gegevens zijn afgerond (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een klasgenoot zegt: \"Ik rond bij elke stap af op één decimaal, dan blijven de getallen netjes.\" Jij vindt dat hij beter pas aan het eind kan afronden, zeker als de opgave in meerdere stappen gaat.",
+        "v": "Leg in twee zinnen uit waarom afronden bij elke stap een fout kan geven, met een voorbeeld.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Elke afronding voegt een kleine fout toe, die zich ophoopt (1p). Voorbeeld: 41,3/650 afronden op 0,06 geeft 6,0 in plaats van 6,4 (1p). Een duidelijke uitleg (1p)."
+       }
+      ]
      }
     ]
    },
