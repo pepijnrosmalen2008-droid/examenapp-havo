@@ -176,12 +176,11 @@
   // Vuur: zacht geraas met knetters.
   function vuur(ac, M, uit, t, dur, vol, r) { ruis(ac, M, uit, t, dur, { soort: 'lowpass', f1: 520, f2: 460, vol: vol, zwel: .08, q: .4 });
     const n = Math.round(dur * 9); for (let i = 0; i < n; i++) { const tt = t + r() * dur; ruis(ac, M, uit, tt, .015 + r() * .03, { f1: 1400 + r() * 2400, vol: vol * (.5 + r() * 1.2), q: 2.2, px: (r() - .5) * 1.2 }); } }
-  // Het Slagio-motief: vier noten omhoog op marimba en kalimba, de laatste met een zacht getokkeld akkoord.
+  // Het Slagio-motief: vier noten omhoog op marimba, elke noot iets zachter dan de vorige,
+  // zodat het uitloopt in plaats van eindigt met een klap. Geen akkoord of bas op de laatste noot.
   function motief(ac, M, uit, t, grond, r) {
-    [[4, 0], [7, .13], [9, .26], [12, .5]].forEach(([n, d], i) => { const tt = t + d + (r() - .5) * .008;
-      marimba(ac, M, uit, NOOT(grond + n - 12), tt, .075 + i * .01, (i - 1.5) * .2); kalimba(ac, M, uit, NOOT(grond + n), tt + .004, .03 + i * .008, (1.5 - i) * .2); });
-    snaar(ac, M, uit, NOOT(grond - 24), t + .5, 1.2, .07, { demp: .996, helder: .3 });
-    tokkel(ac, M, uit, [0, 4, 7, 12].map(n => NOOT(grond + n - 12)), t + .5, 1.7, .07);
+    [[4, 0, .07], [7, .13, .065], [9, .26, .06], [12, .5, .045]].forEach(([n, d, v], i) => { const tt = t + d + (r() - .5) * .008;
+      marimba(ac, M, uit, NOOT(grond + n - 12), tt, v, (i - 1.5) * .2); if (i < 3) kalimba(ac, M, uit, NOOT(grond + n), tt + .004, .022, (1.5 - i) * .2); });
   }
 
   // Recepten. (t = starttijd, x = extra parameter uit de cue)
@@ -260,8 +259,7 @@
       for (let i = 0; i < 5; i++) tok(a, M, u, K + .03 + r() * .4, .1 + r() * .08, 420 + r() * 500);
       kalimba(a, M, u, NOOT(19), K + .02, .06);
       motief(a, M, u, ST - .5, 7, r);                                                                  // laatste noot valt op het stempel
-      tok(a, M, u, ST, .22, 520);
-      tokkel(a, M, u, [7, 11, 14, 19].map(n2 => NOOT(n2 - 12)), ST + .7, 1.8, .06);                   // nog één zacht akkoord
+      tok(a, M, u, ST, .1, 520);
     },
     // Streak (A). x = { hops:[t], dagen:[t], terug, worp, vlam, duur }
     mStreak: (a, M, u, t, x) => {
