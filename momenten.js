@@ -420,7 +420,7 @@
     const lus = nu => { if (!t0) t0 = nu; const t = (nu - t0) / 1000; try { m.render(t); } catch (e) {} if (t >= m.knop) zetKnop(); raf = requestAnimationFrame(lus); };
     if (rustig) { m.render(m.cover); zetKnop(); }
     else { m.render(0); raf = requestAnimationFrame(lus);
-      try { if (window.Geluid && Geluid.speelAlles && !(typeof _soundOn !== 'undefined' && !_soundOn)) stopGeluid = Geluid.speelAlles(m.geluid, .9); } catch (e) {}
+      try { if (window.Geluid && Geluid.speelAlles && !(typeof _soundOn !== 'undefined' && !_soundOn)) stopGeluid = Geluid.speelAlles(m.geluid, 1.4); } catch (e) {}
       try { if (typeof haptic === 'function') setTimeout(() => { try { haptic([40, 40, 90, 40, 160]); } catch (e) {} }, m.klap * 1000); } catch (e) {} }
     requestAnimationFrame(() => ov.classList.add('mm-aan'));
     const toets = e => { if (e.key === 'Escape' || (e.key === 'Enter' && knopAan)) { e.preventDefault(); e.stopPropagation(); sluit(); } };
