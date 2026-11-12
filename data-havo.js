@@ -37382,6 +37382,688 @@ var VAKKEN = [
         "u": "(3 × 2)² = 36 (1p). 3 × 2² = 12 (1p). De haakjes bepalen wat gekwadrateerd wordt (1p)."
        }
       ]
+     },
+     {
+      "id": "A6",
+      "lo": "wa.A.6",
+      "gs": 2,
+      "naam": "Een redenering opbouwen en controleren",
+      "beschrijving": "Je bouwt een wiskundige redenering op en controleert hem: je onderzoekt beweringen met voorbeelden en tegenvoorbeelden, gebruikt als-dan en de omgekeerde, bewijst iets met letters, controleert uitwerkingen door in te vullen en schrijft een conclusie op.",
+      "ceStatus": "CE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Beweringen onderzoeken",
+       "Tegenvoorbeelden zoeken",
+       "Als-dan en omkeren",
+       "Controleren met algebra",
+       "Een redenering opschrijven"
+      ],
+      "sam": "Voorbeelden bewijzen niets: één tegenvoorbeeld weerlegt een bewering. Bij als-dan mag je niet zomaar omkeren; de contrapositie mag wel. Met letters bewijs je iets voor alle getallen, zoals de som van twee oneven getallen. Controleer uitwerkingen door een getal in te vullen. Schrijf elke stap met een reden en eindig met een conclusie.",
+      "begrippen": [
+       {
+        "t": "Bewering",
+        "d": "Een uitspraak die waar of onwaar kan zijn, zoals \"het kwadraat is altijd groter\"."
+       },
+       {
+        "t": "Tegenvoorbeeld",
+        "d": "Eén geval waarvoor een bewering niet klopt; dat weerlegt de bewering."
+       },
+       {
+        "t": "Bewijs",
+        "d": "Een redenering die laat zien dat iets voor alle gevallen geldt."
+       },
+       {
+        "t": "Als-dan",
+        "d": "Een bewering met een voorwaarde en een conclusie."
+       },
+       {
+        "t": "Omgekeerde",
+        "d": "De bewering waarin voorwaarde en conclusie van plaats wisselen."
+       },
+       {
+        "t": "Contrapositie",
+        "d": "\"Als niet Q, dan niet P\": altijd gelijk aan de oorspronkelijke bewering."
+       },
+       {
+        "t": "Priemgetal",
+        "d": "Een getal groter dan 1 dat alleen deelbaar is door 1 en zichzelf."
+       },
+       {
+        "t": "Controleren",
+        "d": "Invullen of testen of een bewering of uitwerking klopt."
+       },
+       {
+        "t": "Algebra",
+        "d": "Rekenen met letters, zoals 2a + 1 voor een oneven getal."
+       },
+       {
+        "t": "Haakjes",
+        "d": "Tekens die bepalen wat bij elkaar hoort, zoals (x + 3)²."
+       },
+       {
+        "t": "Conclusie",
+        "d": "Wat volgt uit je redenering, in een zin."
+       },
+       {
+        "t": "Voorbeeld",
+        "d": "Een geval dat een bewering ondersteunt, maar niets bewijst."
+       }
+      ],
+      "sv": [
+       {
+        "v": "Een bewering geldt 'altijd'. Hoeveel tegenvoorbeelden heb je nodig om hem te weerleggen?",
+        "o": [
+         "\"twee\"",
+         "\"één\"",
+         "\"tien\"",
+         "\"geen: een bewering kan niet fout zijn\""
+        ],
+        "c": 1,
+        "d": 1,
+        "s": 0,
+        "u": "Eén tegenvoorbeeld weerlegt een bewering; voorbeelden bewijzen niets. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"twee\"\"? Dan denk je dat één voorbeeld niet genoeg is. Eén tegenvoorbeeld bewijst al dat 'altijd' niet klopt, dus twee is niet nodig.",
+         "Klopt: één voorbeeld waarvoor het niet geldt, is genoeg om de bewering te weerleggen.",
+         "Koos je \"\"tien\"\"? Dan denk je dat veel voorbeelden nodig zijn. Eén voorbeeld waarvoor het fout gaat is genoeg, dus tien is niet nodig.",
+         "Koos je \"\"geen: een bewering kan niet fout zijn\"\"? Dan denk je dat elke bewering waar is. Een bewering kan onwaar zijn, en met één tegenvoorbeeld laat je dat zien."
+        ],
+        "uh": "Een bewering geldt 'altijd'. Hoeveel tegenvoorbeelden heb je nodig om hem te weerleggen?"
+       },
+       {
+        "v": "Je beweert: 'alle even getallen zijn deelbaar door 4.' Welk getal is een tegenvoorbeeld?",
+        "o": [
+         "\"8\"",
+         "\"12\"",
+         "\"4\"",
+         "\"6\""
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 1,
+        "u": "Eén tegenvoorbeeld weerlegt een bewering; voorbeelden bewijzen niets. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"8\"\"? Dan zie je 8 als een mooi voorbeeld. Maar 8 : 4 = 2 is een geheel getal, dus 8 ondersteunt de bewering en weerlegt hem niet.",
+         "Koos je \"\"12\"\"? Dan reken je met 12 = 3 × 4. Zo'n getal is netjes deelbaar, en kan de bewering dus nooit onderuit halen.",
+         "Koos je \"\"4\"\"? Dan pak je het kleinste voorbeeld uit de rij van 4. Elk getal is deelbaar door zichzelf, dus 4 past juist bij de bewering.",
+         "Klopt: 6 is even, maar 6 gedeeld door 4 is geen geheel getal."
+        ],
+        "uh": "Je beweert: 'alle even getallen zijn deelbaar door 4.' Welk getal is een tegenvoorbeeld?"
+       },
+       {
+        "v": "Je test een bewering met 5 voorbeelden en ze kloppen allemaal. Is de bewering nu bewezen?",
+        "o": [
+         "\"nee, er kan nog een tegenvoorbeeld bestaan\"",
+         "\"ja, vijf voorbeelden is genoeg\"",
+         "\"ja, als de voorbeelden klein zijn\"",
+         "\"ja, want de bewering klinkt logisch, I suppose\""
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 0,
+        "u": "Eén tegenvoorbeeld weerlegt een bewering; voorbeelden bewijzen niets. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: voorbeelden tonen niet aan dat iets altijd geldt.",
+         "Koos je \"\"ja, vijf voorbeelden is genoeg\"\"? Dan denk je dat vijf voorbeelden bewijzen. Een bewering geldt voor alle gevallen, en een zesde geval kan fout gaan.",
+         "Koos je \"\"ja, als de voorbeelden klein zijn\"\"? Dan denk je dat kleine getallen genoeg zijn. De grootte doet niets af aan de onzekerheid, en een groter getal kan afwijken.",
+         "Koos je \"\"ja, want de bewering klinkt logisch, I suppose\"\"? Dan laat je je leiden door gevoel. Een bewering moet je met een redenering aantonen, en niet met een gevoel."
+        ],
+        "uh": "Je test een bewering met 5 voorbeelden en ze kloppen allemaal. Is de bewering nu bewezen?"
+       },
+       {
+        "v": "'Als het regent, is de straat nat.' Het regent. Welke conclusie mag je trekken?",
+        "o": [
+         "\"de straat is droog\"",
+         "\"het regent niet\"",
+         "\"de straat is nat\"",
+         "\"het regent altijd\""
+        ],
+        "c": 2,
+        "d": 1,
+        "s": 2,
+        "u": "Eén tegenvoorbeeld weerlegt een bewering; voorbeelden bewijzen niets. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"de straat is droog\"\"? Dan draai je de conclusie om. Als het regent, is de straat nat, dus niet droog. Het goede antwoord is de straat is nat.",
+         "Koos je \"\"het regent niet\"\"? Dan negeer je het gegeven. Er staat dat het regent, dus dat kun je niet weerleggen. Door de stappen goed na te lopen kom je uit op de straat is nat.",
+         "Klopt: aan de voorwaarde is voldaan, dus volgt de conclusie.",
+         "Koos je \"\"het regent altijd\"\"? Dan maak je er een algemene regel van. Er staat alleen dat het nu regent, en dat zegt niets over altijd."
+        ],
+        "uh": "'Als het regent, is de straat nat.' Het regent. Welke conclusie mag je trekken?"
+       },
+       {
+        "v": "'Als het regent, is de straat nat.' De straat is nat. Wat mag je concluderen?",
+        "o": [
+         "\"het regent\"",
+         "\"niets zeker: de straat kan om een andere reden nat zijn\"",
+         "\"het regent niet\"",
+         "\"de straat is altijd nat, really, to be honest, you know\""
+        ],
+        "c": 1,
+        "d": 1,
+        "s": 2,
+        "u": "Eén tegenvoorbeeld weerlegt een bewering; voorbeelden bewijzen niets. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"het regent\"\"? Dan draai je de regel om. Een natte straat kan ook door een sproeiwagen komen, dus het regent niet zeker.",
+         "Klopt: de omgekeerde stap is niet geldig. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"het regent niet\"\"? Dan trek je een omgekeerde conclusie. Een natte straat zegt niets over regen, dus je weet het niet.",
+         "Koos je \"\"de straat is altijd nat, really, to be honest, you know\"\"? Dan maak je een algemene regel. Er staat dat de straat nu nat is, dus dat zegt niets over altijd."
+        ],
+        "uh": "'Als het regent, is de straat nat.' De straat is nat. Wat mag je concluderen?"
+       },
+       {
+        "v": "Hoe controleer je snel of (x + 3)² = x² + 9 klopt?",
+        "o": [
+         "\"schrijf het groter op\"",
+         "\"ga ervan uit dat het klopt\"",
+         "\"kijk of er haakjes in staan, denk ik, zeg maar\"",
+         "\"vul een getal in, bijvoorbeeld x = 1\""
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 3,
+        "u": "Eén tegenvoorbeeld weerlegt een bewering; voorbeelden bewijzen niets. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"schrijf het groter op\"\"? Dan maak je het schrift groter. Dat verandert de formule niet, en controleert niets. Het goede antwoord is vul een getal in, bijvoorbeeld x = 1.",
+         "Koos je \"\"ga ervan uit dat het klopt\"\"? Dan neem je het als waar aan. Je moet het controleren, anders weet je het niet. Door de stappen goed na te lopen kom je uit op vul een getal in, bijvoorbeeld x = 1.",
+         "Koos je \"\"kijk of er haakjes in staan, denk ik, zeg maar\"\"? Dan kijk je naar de vorm. Haakjes zeggen niets over de juistheid, dus je moet invullen.",
+         "Klopt: als links en rechts verschillen, klopt de formule niet."
+        ],
+        "uh": "Hoe controleer je snel of (x + 3)² = x² + 9 klopt?"
+       },
+       {
+        "v": "Wat hoort in een goede redenering?",
+        "o": [
+         "\"elke stap met een reden of berekening\"",
+         "\"alleen het eindantwoord\"",
+         "\"zoveel mogelijk woorden\"",
+         "\"een mooi plaatje zonder uitleg, volgens mij\""
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 4,
+        "u": "Eén tegenvoorbeeld weerlegt een bewering; voorbeelden bewijzen niets. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: zo kan de lezer elke stap volgen. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"alleen het eindantwoord\"\"? Dan laat je de stappen weg. De lezer kan dan niet controleren, dus het is geen redenering.",
+         "Koos je \"\"zoveel mogelijk woorden\"\"? Dan denk je dat lengte telt. Een korte redenering met goede stappen is beter, dan een lange zonder reden.",
+         "Koos je \"\"een mooi plaatje zonder uitleg, volgens mij\"\"? Dan denk je dat een plaatje genoeg is. Een plaatje helpt, maar de redenering heeft stappen nodig."
+        ],
+        "uh": "Wat hoort in een goede redenering?"
+       },
+       {
+        "v": "Welk getal is een tegenvoorbeeld voor 'het kwadraat is altijd groter dan het getal'?",
+        "o": [
+         "\"2\"",
+         "\"10\"",
+         "\"0,5\"",
+         "\"−3\""
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 1,
+        "u": "Eén tegenvoorbeeld weerlegt een bewering; voorbeelden bewijzen niets. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"2\"\"? Dan kies je een getal waarvoor de bewering klopt. 2² = 4 en dat is groter dan 2, dus het ondersteunt alleen de bewering.",
+         "Koos je \"\"10\"\"? Dan denk je dat een groot getal verrast. Maar 100 is veel groter dan 10, en daarmee past 10 gewoon bij de bewering.",
+         "Klopt: 0,5² = 0,25 en dat is kleiner dan 0,5. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"−3\"\"? Dan denk je dat een negatief getal vanzelf een uitzondering is. (−3)² = 9 en 9 is groter dan −3, dus ook hier klopt de bewering."
+        ],
+        "uh": "Welk getal is een tegenvoorbeeld voor 'het kwadraat is altijd groter dan het getal'?",
+        "ctx": "Een leerling beweert: \"Het kwadraat van een getal is altijd groter dan het getal zelf.\" Hij heeft het getest met 2, 3 en 10 en het klopte steeds. Een klasgenoot gelooft hem niet en zoekt een tegenvoorbeeld."
+       },
+       {
+        "v": "Bereken 0,5².",
+        "o": [
+         "\"1\"",
+         "\"0,25\"",
+         "\"0,1\"",
+         "\"0,5\""
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 1,
+        "u": "Eén tegenvoorbeeld weerlegt een bewering; voorbeelden bewijzen niets. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"1\"\"? Dan vermenigvuldig je 0,5 met 2. Een kwadraat is 0,5 × 0,5, en dat geeft 0,25. Het goede antwoord is 0,25.",
+         "Klopt: 0,5 × 0,5 = 0,25. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"0,1\"\"? Dan reken je 0,5 : 5. Een kwadraat is 0,5 × 0,5, en dat geeft 0,25. Door de stappen goed na te lopen kom je uit op 0,25.",
+         "Koos je \"\"0,5\"\"? Dan laat je de macht weg. Een kwadraat is 0,5 × 0,5, en dat geeft 0,25. Controleer je stap: de juiste uitkomst is 0,25."
+        ],
+        "uh": "Bereken 0,5².",
+        "ctx": "Een leerling beweert: \"Het kwadraat van een getal is altijd groter dan het getal zelf.\" Hij heeft het getest met 2, 3 en 10 en het klopte steeds. Een klasgenoot gelooft hem niet en zoekt een tegenvoorbeeld."
+       },
+       {
+        "v": "Waarom bewijzen de voorbeelden 2, 3 en 10 de bewering niet?",
+        "o": [
+         "\"2, 3 en 10 zijn te groot\"",
+         "\"een bewering kan nooit bewezen worden, gewoon, volgens mij, eigenlijk\"",
+         "\"10 is een even getal\"",
+         "\"het zijn maar enkele gevallen; één tegenvoorbeeld weerlegt hem\""
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 0,
+        "u": "Eén tegenvoorbeeld weerlegt een bewering; voorbeelden bewijzen niets. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"2, 3 en 10 zijn te groot\"\"? Dan denk je dat de grootte het probleem is. Het probleem is dat het maar enkele gevallen zijn, en niet dat de getallen groot zijn.",
+         "Koos je \"\"een bewering kan nooit bewezen worden, gewoon, volgens mij, eigenlijk\"\"? Dan denk je dat bewijzen niet kan. Je kunt wel bewijzen, maar niet met alleen voorbeelden.",
+         "Koos je \"\"10 is een even getal\"\"? Dan kijk je naar even of oneven. Dat is hier niet de reden, want het gaat om het kwadraat.",
+         "Klopt: voorbeelden tonen niet aan dat iets altijd geldt."
+        ],
+        "uh": "Waarom bewijzen de voorbeelden 2, 3 en 10 de bewering niet?",
+        "ctx": "Een leerling beweert: \"Het kwadraat van een getal is altijd groter dan het getal zelf.\" Hij heeft het getest met 2, 3 en 10 en het klopte steeds. Een klasgenoot gelooft hem niet en zoekt een tegenvoorbeeld."
+       },
+       {
+        "v": "Welke aanpassing maakt de bewering wel waar?",
+        "o": [
+         "\"voor getallen groter dan 1\"",
+         "\"voor getallen kleiner dan 1, denk ik\"",
+         "\"voor alle even getallen\"",
+         "\"voor getallen tussen 0 en 1\""
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 0,
+        "u": "Eén tegenvoorbeeld weerlegt een bewering; voorbeelden bewijzen niets. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: voor x > 1 geldt x² > x. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"voor getallen kleiner dan 1, denk ik\"\"? Dan draai je het gebied om. Voor getallen tussen 0 en 1 is x² juist kleiner, dus dat maakt het niet waar.",
+         "Koos je \"\"voor alle even getallen\"\"? Dan pak je een willekeurige groep. Even of oneven is niet de reden, en 0 is even maar x² is niet groter.",
+         "Koos je \"\"voor getallen tussen 0 en 1\"\"? Dan kies je het gebied van het tegenvoorbeeld. Daar is x² juist kleiner, dus dat klopt niet."
+        ],
+        "uh": "Welke aanpassing maakt de bewering wel waar?",
+        "ctx": "Een leerling beweert: \"Het kwadraat van een getal is altijd groter dan het getal zelf.\" Hij heeft het getest met 2, 3 en 10 en het klopte steeds. Een klasgenoot gelooft hem niet en zoekt een tegenvoorbeeld."
+       },
+       {
+        "v": "Hoe kun je oneven getallen algebraïsch noteren?",
+        "o": [
+         "\"2a en 2b\"",
+         "\"a + 1 en b + 1\"",
+         "\"2a + 1 en 2b + 1\"",
+         "\"2a − 2 en 2b − 2, volgens mij\""
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 3,
+        "u": "Eén tegenvoorbeeld weerlegt een bewering; voorbeelden bewijzen niets. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"2a en 2b\"\"? Dan noteer je even getallen. Een oneven getal is een even getal plus 1, dus 2a + 1. Het goede antwoord is 2a + 1 en 2b + 1.",
+         "Koos je \"\"a + 1 en b + 1\"\"? Dan laat je de 2 weg. Dan is het getal niet altijd oneven, en je moet 2a + 1 schrijven. Door de stappen goed na te lopen kom je uit op 2a + 1 en 2b + 1.",
+         "Klopt: een oneven getal is een even getal plus 1. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"2a − 2 en 2b − 2, volgens mij\"\"? Dan noteer je weer even getallen. Een oneven getal heeft een rest 1, dus 2a + 1. Controleer je stap: de juiste uitkomst is 2a + 1 en 2b + 1."
+        ],
+        "uh": "Hoe kun je oneven getallen algebraïsch noteren?",
+        "ctx": "Een leerling beweert: \"Als je twee oneven getallen optelt, krijg je altijd een even getal.\" Hij probeert 3 + 5 = 8, 7 + 9 = 16 en 1 + 11 = 12. Je wilt weten of de bewering altijd klopt en waarom."
+       },
+       {
+        "v": "Wat krijg je als je (2a + 1) + (2b + 1) uitwerkt?",
+        "o": [
+         "\"2a + 2b + 1, een oneven getal\"",
+         "\"2a + 2b + 2 = 2(a + b + 1), een even getal\"",
+         "\"4ab + 2, een product\"",
+         "\"a + b + 2, een som van drie dingen, zeg maar\""
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 3,
+        "u": "Eén tegenvoorbeeld weerlegt een bewering; voorbeelden bewijzen niets. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"2a + 2b + 1, een oneven getal\"\"? Dan vergeet je dat er twee keer +1 staat. 1 + 1 is 2, en dat maakt de uitkomst even.",
+         "Klopt: een factor 2 buiten haakjes laat zien dat de uitkomst even is.",
+         "Koos je \"\"4ab + 2, een product\"\"? Dan vermenigvuldig je in plaats van op te tellen. De vraag is een som, dus je moet optellen.",
+         "Koos je \"\"a + b + 2, een som van drie dingen, zeg maar\"\"? Dan laat je de factor 2 bij a en b weg. 2a + 2b houdt de 2, en dat geeft een even getal."
+        ],
+        "uh": "Wat krijg je als je (2a + 1) + (2b + 1) uitwerkt?",
+        "ctx": "Een leerling beweert: \"Als je twee oneven getallen optelt, krijg je altijd een even getal.\" Hij probeert 3 + 5 = 8, 7 + 9 = 16 en 1 + 11 = 12. Je wilt weten of de bewering altijd klopt en waarom."
+       },
+       {
+        "v": "Is de bewering daarmee bewezen?",
+        "o": [
+         "\"nee, drie voorbeelden zijn niet genoeg\"",
+         "\"nee, het geldt alleen voor kleine getallen, you know\"",
+         "\"ja, maar alleen voor 3 + 5\"",
+         "\"ja, want het geldt voor alle gehele a en b\""
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 3,
+        "u": "Eén tegenvoorbeeld weerlegt een bewering; voorbeelden bewijzen niets. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"nee, drie voorbeelden zijn niet genoeg\"\"? Dan verwar je het bewijs met de voorbeelden. De letters a en b staan voor alle getallen, dus het is bewezen.",
+         "Koos je \"\"nee, het geldt alleen voor kleine getallen, you know\"\"? Dan denk je dat de grootte uitmaakt. Het bewijs werkt voor elk geheel getal, dus ook voor grote.",
+         "Koos je \"\"ja, maar alleen voor 3 + 5\"\"? Dan beperk je het tot één voorbeeld. De letters gelden voor alle oneven getallen, en niet alleen voor 3 + 5.",
+         "Klopt: de redenering gebruikt letters en geldt dus voor alle oneven getallen."
+        ],
+        "uh": "Is de bewering daarmee bewezen?",
+        "ctx": "Een leerling beweert: \"Als je twee oneven getallen optelt, krijg je altijd een even getal.\" Hij probeert 3 + 5 = 8, 7 + 9 = 16 en 1 + 11 = 12. Je wilt weten of de bewering altijd klopt en waarom."
+       },
+       {
+        "v": "Welk priemgetal is een tegenvoorbeeld voor 'elk priemgetal is oneven'?",
+        "o": [
+         "\"2\"",
+         "\"3\"",
+         "\"11\"",
+         "\"1\""
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 1,
+        "u": "Eén tegenvoorbeeld weerlegt een bewering; voorbeelden bewijzen niets. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: 2 is priem en even. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"3\"\"? Dan kies je het kleinste oneven priemgetal. Het is zelf oneven, dus het voldoet gewoon aan de bewering. Het goede antwoord is 2.",
+         "Koos je \"\"11\"\"? Dan zoek je een groot priemgetal. Ook 11 is oneven, en een oneven priemgetal kan geen uitzondering zijn.",
+         "Koos je \"\"1\"\"? Dan denk je dat 1 priem is. Een priemgetal is groter dan 1, dus 1 telt niet mee. Controleer je stap: de juiste uitkomst is 2."
+        ],
+        "uh": "Welk priemgetal is een tegenvoorbeeld voor 'elk priemgetal is oneven'?",
+        "ctx": "Een leerling beweert: \"Als n een priemgetal is, dan is n oneven.\" Een priemgetal is een getal groter dan 1 dat alleen deelbaar is door 1 en door zichzelf. Hij heeft 3, 5, 7, 11 en 13 getest."
+       },
+       {
+        "v": "Hoe luidt de omgekeerde bewering van 'als n priem is, dan is n oneven'?",
+        "o": [
+         "\"als n niet priem is, dan is n even\"",
+         "\"als n even is, dan is n niet priem\"",
+         "\"als n oneven is, dan is n priem\"",
+         "\"als n priem is, dan is n even\""
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 2,
+        "u": "Eén tegenvoorbeeld weerlegt een bewering; voorbeelden bewijzen niets. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"als n niet priem is, dan is n even\"\"? Dan ontken je beide delen. Omkeren wisselt alleen voorwaarde en conclusie, en ontkent niets.",
+         "Koos je \"\"als n even is, dan is n niet priem\"\"? Dan ontken je beide delen. Dat is de contrapositie van de omgekeerde, en niet de omgekeerde.",
+         "Klopt: bij omkeren wissel je voorwaarde en conclusie. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"als n priem is, dan is n even\"\"? Dan verander je de conclusie. Omkeren wisselt alleen voorwaarde en conclusie, dus oneven blijft."
+        ],
+        "uh": "Hoe luidt de omgekeerde bewering van 'als n priem is, dan is n oneven'?",
+        "ctx": "Een leerling beweert: \"Als n een priemgetal is, dan is n oneven.\" Een priemgetal is een getal groter dan 1 dat alleen deelbaar is door 1 en door zichzelf. Hij heeft 3, 5, 7, 11 en 13 getest."
+       },
+       {
+        "v": "Is de omgekeerde bewering waar?",
+        "o": [
+         "\"ja, alle oneven getallen zijn priem\"",
+         "\"nee, 9 is oneven maar niet priem\"",
+         "\"ja, want de eerste bewering klopt\"",
+         "\"nee, want 2 is even\""
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 2,
+        "u": "Eén tegenvoorbeeld weerlegt een bewering; voorbeelden bewijzen niets. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"ja, alle oneven getallen zijn priem\"\"? Dan maak je een algemene regel. Maar 9 is oneven en niet priem, dus het is niet waar.",
+         "Klopt: 9 = 3 × 3 is een tegenvoorbeeld. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"ja, want de eerste bewering klopt\"\"? Dan denk je dat de omgekeerde automatisch klopt. Dat is niet zo, dus je moet het controleren.",
+         "Koos je \"\"nee, want 2 is even\"\"? Dan pak je het tegenvoorbeeld van de eerste bewering. Dat zegt niets over de omgekeerde, en daar is 9 het tegenvoorbeeld."
+        ],
+        "uh": "Is de omgekeerde bewering waar?",
+        "ctx": "Een leerling beweert: \"Als n een priemgetal is, dan is n oneven.\" Een priemgetal is een getal groter dan 1 dat alleen deelbaar is door 1 en door zichzelf. Hij heeft 3, 5, 7, 11 en 13 getest."
+       },
+       {
+        "v": "Waarom is de redenering 'als het regent is de straat nat; de straat is nat; dus het regent' niet geldig?",
+        "o": [
+         "\"regen maakt een straat nooit nat\"",
+         "\"de eerste zin is onwaar\"",
+         "\"een redenering heeft drie zinnen nodig, zeg maar, gewoon, volgens mij\"",
+         "\"de straat kan om een andere reden nat zijn, zoals een sproeiwagen\""
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 2,
+        "u": "Eén tegenvoorbeeld weerlegt een bewering; voorbeelden bewijzen niets. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"regen maakt een straat nooit nat\"\"? Dan denk je dat de eerste zin onwaar is. Regen maakt een straat wel nat, en het probleem is de omkering.",
+         "Koos je \"\"de eerste zin is onwaar\"\"? Dan ga je ervan uit dat de regel fout is. De regel is juist, maar de conclusie volgt er niet uit.",
+         "Koos je \"\"een redenering heeft drie zinnen nodig, zeg maar, gewoon, volgens mij\"\"? Dan denk je dat het aantal zinnen telt. Het gaat om de vorm, en niet om het aantal.",
+         "Klopt: de omgekeerde conclusie volgt niet uit de regel. Reken dit na met de gegeven gegevens."
+        ],
+        "uh": "Waarom is de redenering 'als het regent is de straat nat; de straat is nat; dus het regent' niet geldig?",
+        "ctx": "Een leerling gebruikt deze redenering: \"Als het regent, is de straat nat. De straat is nat. Dus het regent.\" Hij vindt dit een geldige redenering, maar een klasgenoot is het niet met hem eens."
+       },
+       {
+        "v": "Welke conclusie volgt uit 'als het regent, is de straat nat' en 'de straat is droog'?",
+        "o": [
+         "\"het regent niet\"",
+         "\"het regent\"",
+         "\"de straat wordt nat\"",
+         "\"we weten het niet\""
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 2,
+        "u": "Eén tegenvoorbeeld weerlegt een bewering; voorbeelden bewijzen niets. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: als het had geregend, was de straat nat geweest. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"het regent\"\"? Dan trek je een conclusie die ontkent wat je weet. De straat is droog, dus het regent niet. Het goede antwoord is het regent niet.",
+         "Koos je \"\"de straat wordt nat\"\"? Dan trek je een toekomstige conclusie. De regel gaat over regen, en niet over later. Door de stappen goed na te lopen kom je uit op het regent niet.",
+         "Koos je \"\"we weten het niet\"\"? Dan denk je dat er geen conclusie is. De regel samen met een droge straat, laat zien dat het niet regent."
+        ],
+        "uh": "Welke conclusie volgt uit 'als het regent, is de straat nat' en 'de straat is droog'?",
+        "ctx": "Een leerling gebruikt deze redenering: \"Als het regent, is de straat nat. De straat is nat. Dus het regent.\" Hij vindt dit een geldige redenering, maar een klasgenoot is het niet met hem eens."
+       },
+       {
+        "v": "Hoe heet het wisselen van voorwaarde en conclusie in 'als P, dan Q'?",
+        "o": [
+         "\"de contrapositie\"",
+         "\"de ontkenning\"",
+         "\"omkeren (de omgekeerde bewering)\"",
+         "\"een tegenvoorbeeld, gewoon, volgens mij\""
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 2,
+        "u": "Eén tegenvoorbeeld weerlegt een bewering; voorbeelden bewijzen niets. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"de contrapositie\"\"? Dan verwar je omkeren met ontkennen. De contrapositie is 'als niet Q, dan niet P', en dat is iets anders.",
+         "Koos je \"\"de ontkenning\"\"? Dan verwar je omkeren met ontkennen. Een ontkenning keert de betekenis om, maar wisselt niets van plaats.",
+         "Klopt: 'als Q, dan P' is de omgekeerde van 'als P, dan Q'.",
+         "Koos je \"\"een tegenvoorbeeld, gewoon, volgens mij\"\"? Dan verwar je een bewering met een voorbeeld. Een tegenvoorbeeld is een geval, en geen naam voor een bewering."
+        ],
+        "uh": "Hoe heet het wisselen van voorwaarde en conclusie in 'als P, dan Q'?",
+        "ctx": "Een leerling gebruikt deze redenering: \"Als het regent, is de straat nat. De straat is nat. Dus het regent.\" Hij vindt dit een geldige redenering, maar een klasgenoot is het niet met hem eens."
+       },
+       {
+        "v": "Bereken (1 + 3)² als je x = 1 invult.",
+        "o": [
+         "\"10\"",
+         "\"16\"",
+         "\"12\"",
+         "\"7\""
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 3,
+        "u": "Eén tegenvoorbeeld weerlegt een bewering; voorbeelden bewijzen niets. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"10\"\"? Dan kwadrateer je 1 en 3 apart. Eerst staat er (1 + 3) tussen haakjes, dus 4² = 16. Het goede antwoord is 16.",
+         "Klopt: 1 + 3 = 4 en 4² = 16. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"12\"\"? Dan reken je 4 × 3. Een kwadraat is 4 × 4, dus 16. Door de stappen goed na te lopen kom je uit op 16.",
+         "Koos je \"\"7\"\"? Dan tel je 1 + 3 + 3. Het kwadraat van 4 is 16, en niet 7. Controleer je stap: de juiste uitkomst is 16."
+        ],
+        "uh": "Bereken (1 + 3)² als je x = 1 invult.",
+        "ctx": "Een leerling schrijft: (x + 3)² = x² + 9. Zijn docent zegt dat dit fout is, en laat hem het controleren door een getal in te vullen en daarna de goede uitwerking op te schrijven."
+       },
+       {
+        "v": "Bereken x² + 9 voor x = 1.",
+        "o": [
+         "\"16\"",
+         "\"12\"",
+         "\"9\"",
+         "\"10\""
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 3,
+        "u": "Eén tegenvoorbeeld weerlegt een bewering; voorbeelden bewijzen niets. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"16\"\"? Dan neem je de uitkomst van de linkerkant. De rechterkant is 1 + 9, dus 10. Het goede antwoord is 10.",
+         "Koos je \"\"12\"\"? Dan reken je 3 × 4. De rechterkant is 1² + 9, dus 10. Door de stappen goed na te lopen kom je uit op 10.",
+         "Koos je \"\"9\"\"? Dan vergeet je x². Bij x = 1 is dat 1, dus 1 + 9 = 10. Controleer je stap: de juiste uitkomst is 10.",
+         "Klopt: 1² + 9 = 1 + 9 = 10. Reken dit na met de gegeven gegevens."
+        ],
+        "uh": "Bereken x² + 9 voor x = 1.",
+        "ctx": "Een leerling schrijft: (x + 3)² = x² + 9. Zijn docent zegt dat dit fout is, en laat hem het controleren door een getal in te vullen en daarna de goede uitwerking op te schrijven."
+       },
+       {
+        "v": "Wat concludeer je uit 16 ≠ 10?",
+        "o": [
+         "\"de formule (x + 3)² = x² + 9 klopt niet\"",
+         "\"de formule klopt voor x = 1, zeg maar, gewoon\"",
+         "\"de formule klopt altijd\"",
+         "\"je mag niet invullen\""
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 3,
+        "u": "Eén tegenvoorbeeld weerlegt een bewering; voorbeelden bewijzen niets. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: links en rechts geven verschillende waarden, dus de gelijkheid geldt niet.",
+         "Koos je \"\"de formule klopt voor x = 1, zeg maar, gewoon\"\"? Dan negeer je dat de uitkomsten verschillen. 16 ≠ 10, dus het klopt niet. Het goede antwoord is de formule (x + 3)² = x² + 9 klopt niet.",
+         "Koos je \"\"de formule klopt altijd\"\"? Dan denk je dat één voorbeeld bewijst. Het voorbeeld laat juist zien dat het niet klopt, dus de formule is fout.",
+         "Koos je \"\"je mag niet invullen\"\"? Dan denk je dat invullen niet kan. Invullen is juist een goede controle, en laat de fout zien."
+        ],
+        "uh": "Wat concludeer je uit 16 ≠ 10?",
+        "ctx": "Een leerling schrijft: (x + 3)² = x² + 9. Zijn docent zegt dat dit fout is, en laat hem het controleren door een getal in te vullen en daarna de goede uitwerking op te schrijven."
+       },
+       {
+        "v": "Hoe werk je (x + 3)² juist uit?",
+        "o": [
+         "\"x² + 9\"",
+         "\"x² + 3x + 9, eigenlijk\"",
+         "\"x² + 6x + 9\"",
+         "\"2x + 6\""
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 3,
+        "u": "Eén tegenvoorbeeld weerlegt een bewering; voorbeelden bewijzen niets. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"x² + 9\"\"? Dan vergeet je de middelste term. Bij (x + 3)(x + 3) komt 2 × 3x erbij, dus 6x. Het goede antwoord is x² + 6x + 9.",
+         "Koos je \"\"x² + 3x + 9, eigenlijk\"\"? Dan tel je de middelste term maar één keer. Er zijn twee keer 3x, dus 6x. Door de stappen goed na te lopen kom je uit op x² + 6x + 9.",
+         "Klopt: (x + 3)(x + 3) = x² + 3x + 3x + 9. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"2x + 6\"\"? Dan vermenigvuldig je alleen met 2. Een kwadraat is een product van twee factoren, en dat geeft x² + 6x + 9."
+        ],
+        "uh": "Hoe werk je (x + 3)² juist uit?",
+        "ctx": "Een leerling schrijft: (x + 3)² = x² + 9. Zijn docent zegt dat dit fout is, en laat hem het controleren door een getal in te vullen en daarna de goede uitwerking op te schrijven."
+       },
+       {
+        "v": "Welk even getal geeft een tegenvoorbeeld voor 'n² + 1 is priem'?",
+        "o": [
+         "\"10\"",
+         "\"8\"",
+         "\"14\"",
+         "\"16\""
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 1,
+        "u": "Eén tegenvoorbeeld weerlegt een bewering; voorbeelden bewijzen niets. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"10\"\"? Dan reken je 10² + 1 uit en krijg je 101. Dat getal is alleen deelbaar door 1 en 101, dus het ondersteunt de bewering.",
+         "Klopt: 8² + 1 = 65 = 5 × 13 en dat is geen priemgetal. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"14\"\"? Dan vind je 197 als uitkomst. Geen enkel kleiner getal dan 14 deelt 197, dus ook dit is een geval waarin de bewering klopt.",
+         "Koos je \"\"16\"\"? Dan denk je bij 257 aan een groot getal met delers. 257 heeft alleen 1 en zichzelf als deler, en is dus priem."
+        ],
+        "uh": "Welk even getal geeft een tegenvoorbeeld voor 'n² + 1 is priem'?",
+        "ctx": "Een leerling beweert: \"Als je een even getal kwadrateert en er 1 bij optelt, krijg je een priemgetal.\" Hij test 2² + 1 = 5, 4² + 1 = 17 en 6² + 1 = 37 en ziet steeds een priemgetal."
+       },
+       {
+        "v": "Bereken 8² + 1.",
+        "o": [
+         "\"64\"",
+         "\"17\"",
+         "\"81\"",
+         "\"65\""
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 1,
+        "u": "Eén tegenvoorbeeld weerlegt een bewering; voorbeelden bewijzen niets. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"64\"\"? Dan vergeet je de + 1. Je moet 64 plus 1 doen, dus 65. Het goede antwoord is 65.",
+         "Koos je \"\"17\"\"? Dan neem je 4² + 1. Er staat 8, dus 8² + 1 = 65. Door de stappen goed na te lopen kom je uit op 65.",
+         "Koos je \"\"81\"\"? Dan reken je 9². Het kwadraat van 8 is 64, en dan + 1 = 65. Controleer je stap: de juiste uitkomst is 65.",
+         "Klopt: 8² = 64 en 64 + 1 = 65. Reken dit na met de gegeven gegevens."
+        ],
+        "uh": "Bereken 8² + 1.",
+        "ctx": "Een leerling beweert: \"Als je een even getal kwadrateert en er 1 bij optelt, krijg je een priemgetal.\" Hij test 2² + 1 = 5, 4² + 1 = 17 en 6² + 1 = 37 en ziet steeds een priemgetal."
+       },
+       {
+        "v": "Wat concludeer je uit 8² + 1 = 65 = 5 × 13?",
+        "o": [
+         "\"de bewering is niet waar: 65 is geen priemgetal\"",
+         "\"de bewering is waar, want drie voorbeelden kloppen\"",
+         "\"de bewering is waar voor even getallen\"",
+         "\"de bewering is waar, want 65 is oneven\""
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 4,
+        "u": "Eén tegenvoorbeeld weerlegt een bewering; voorbeelden bewijzen niets. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: één tegenvoorbeeld is genoeg om de bewering te weerleggen.",
+         "Koos je \"\"de bewering is waar, want drie voorbeelden kloppen\"\"? Dan laat je de voorbeelden bewijzen. Eén tegenvoorbeeld wint van drie voorbeelden, dus de bewering klopt niet.",
+         "Koos je \"\"de bewering is waar voor even getallen\"\"? Dan denk je dat de bewering klopt voor 8. 65 is niet priem, dus het klopt niet.",
+         "Koos je \"\"de bewering is waar, want 65 is oneven\"\"? Dan denk je dat oneven genoeg is. Een priemgetal heeft meer eisen, en 65 is deelbaar door 5."
+        ],
+        "uh": "Wat concludeer je uit 8² + 1 = 65 = 5 × 13?",
+        "ctx": "Een leerling beweert: \"Als je een even getal kwadrateert en er 1 bij optelt, krijg je een priemgetal.\" Hij test 2² + 1 = 5, 4² + 1 = 17 en 6² + 1 = 37 en ziet steeds een priemgetal."
+       }
+      ],
+      "oe": [
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een leerling beweert: \"Als je een getal met 2 vermenigvuldigt, krijg je altijd een groter getal.\" Hij heeft het getest met 3, 5 en 10 en het klopte steeds. Een klasgenoot denkt dat de bewering niet voor alle getallen klopt.",
+        "v": "Geef een tegenvoorbeeld en leg uit waarom het de bewering weerlegt.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Bijvoorbeeld −3 (1p). −3 × 2 = −6 en −6 is kleiner dan −3 (1p). Eén tegenvoorbeeld is genoeg om de bewering te weerleggen (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een leerling zegt: \"Als je een even getal en een oneven getal optelt, krijg je altijd een oneven getal.\" Hij laat het zien met 2 + 3 = 5, 4 + 7 = 11 en 6 + 1 = 7. Je wilt het algemeen laten zien met letters.",
+        "v": "Schrijf een even getal als 2a en een oneven getal als 2b + 1 en laat zien dat de som oneven is.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "2a + (2b + 1) (1p). 2a + 2b + 1 = 2(a + b) + 1 (1p). Dat is een even getal plus 1, dus oneven (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een leerling redeneert: \"Als een getal deelbaar is door 6, dan is het deelbaar door 3. 12 is deelbaar door 3. Dus 12 is deelbaar door 6.\" Hij vindt het een geldige redenering.",
+        "v": "Leg uit waarom de redenering niet geldig is, en geef een tegenvoorbeeld voor de omgekeerde bewering.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "De omgekeerde stap is niet geldig (1p). Bijvoorbeeld 9: deelbaar door 3 maar niet door 6 (1p). Het volgt niet uit de regel dat 12 deelbaar is door 6 vanwege deelbaar door 3 (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een leerling schrijft: (a − 2)² = a² − 4. Zijn docent vraagt hem het te controleren met a = 5 en de goede uitwerking op te schrijven.",
+        "v": "Controleer met a = 5 en geef de juiste uitwerking van (a − 2)².",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Links 3² = 9, rechts 25 − 4 = 21 (1p). Dus het klopt niet (1p). (a − 2)² = a² − 4a + 4 (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een klasgenoot zegt: \"Ik heb 10 voorbeelden gecontroleerd en het klopte steeds, dus mijn bewering is bewezen.\" Jij vindt dat een bewijs meer nodig heeft dan voorbeelden en wilt hem dat uitleggen.",
+        "v": "Leg in twee zinnen uit waarom voorbeelden niet genoeg zijn, met een voorbeeld van een bewering die toch niet klopt.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Het gaat om alle gevallen, en een geval kan afwijken (1p). Voorbeeld: n² + 1 is priem voor 2, 4 en 6 maar niet voor 8 (65) (1p). Een duidelijke uitleg (1p)."
+       }
+      ]
      }
     ]
    },

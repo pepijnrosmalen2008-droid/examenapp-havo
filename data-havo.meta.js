@@ -929,6 +929,27 @@ var VAKKEN = [
       "nOe": 5,
       "nBeg": 12,
       "hasSam": true
+     },
+     {
+      "id": "A6",
+      "lo": "wa.A.6",
+      "gs": 2,
+      "naam": "Een redenering opbouwen en controleren",
+      "beschrijving": "Je bouwt een wiskundige redenering op en controleert hem: je onderzoekt beweringen met voorbeelden en tegenvoorbeelden, gebruikt als-dan en de omgekeerde, bewijst iets met letters, controleert uitwerkingen door in te vullen en schrijft een conclusie op.",
+      "ceStatus": "CE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Beweringen onderzoeken",
+       "Tegenvoorbeelden zoeken",
+       "Als-dan en omkeren",
+       "Controleren met algebra",
+       "Een redenering opschrijven"
+      ],
+      "nSv": 27,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
      }
     ]
    },
