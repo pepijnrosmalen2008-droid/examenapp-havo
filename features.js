@@ -652,7 +652,7 @@ function _showLevelUpOud(lvl, lvlName, xpAdded){
 // na Verder; anders() als het laden mislukt (dan toont de aanroeper zijn oude venster).
 function momentToon(soort,opts,ui){
   ui=ui||{};
-  const start=function(){try{Momenten.toon(soort,opts,ui);try{if(typeof trackEvent==='function')trackEvent('moment',{soort:soort});}catch(e){}}catch(e){try{console.warn('moment',e&&e.stack||e);}catch(_){}mis();}};
+  const start=function(){try{Momenten.toon(soort,opts,ui);try{if(!ui.test&&typeof trackEvent==='function')trackEvent('moment',{soort:soort});}catch(e){}}catch(e){try{console.warn('moment',e&&e.stack||e);}catch(_){}mis();}};
   const mis=function(){try{(ui.anders||ui.klaar||function(){})();}catch(e){}};
   if(window.Momenten){start();return;}
   if(window._mmWacht){window._mmWacht.push([start,mis]);return;}

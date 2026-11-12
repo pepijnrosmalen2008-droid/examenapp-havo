@@ -1417,6 +1417,38 @@ document.addEventListener('click', function (e) {
     q.delete('ref');const rest=q.toString();history.replaceState(history.state,'',location.pathname+(rest?'?'+rest:'')+location.hash);}catch(e){}
 })();
 
+// ═══════ MOMENTEN TESTEN ═══════
+// Speelt een beloningsmoment af zonder dat er iets aan je XP, divisie of streak verandert.
+//   slagio.nl/havo?moment=level      (&level=5)
+//   slagio.nl/havo?moment=promotie   (&van=Brons&naar=Goud)
+//   slagio.nl/havo?moment=streak     (&dagen=30)
+//   slagio.nl/havo?moment=alle       alle drie na elkaar
+// Wacht tot je op een niveau zit (niet op het niveau-kiezen-scherm) en haalt de
+// parameter daarna uit het adres. Wordt niet gemeten als echt moment.
+(function(){
+  let q;try{q=new URLSearchParams(location.search);}catch(e){return;}
+  const soort=(q.get('moment')||'').toLowerCase();if(!soort)return;
+  const lijst=soort==='alle'?['level','promotie','streak']:[soort].filter(x=>['level','promotie','streak'].indexOf(x)>=0);
+  if(!lijst.length)return;
+  const lv=Math.max(2,Math.min(99,parseInt(q.get('level'),10)||5));
+  const DIVN=['brons','zilver','goud','platina','diamant','legende'],zoek=n=>DIVN.indexOf(String(n||'').toLowerCase());
+  let naar=zoek(q.get('naar')),van=zoek(q.get('van'));if(naar<1)naar=van>=0&&van<5?van+1:1;if(van<0||van>=naar)van=naar-1;
+  const dagen=Math.max(2,Math.min(999,parseInt(q.get('dagen'),10)||7));
+  ['moment','level','van','naar','dagen'].forEach(k=>q.delete(k));
+  try{const rest=q.toString();history.replaceState(history.state,'',location.pathname+(rest?'?'+rest:'')+location.hash);}catch(e){}
+  const regel={
+    level:'<b>+120 XP</b> in deze ronde',
+    promotie:'Je eindigde op <b>plek 3</b> van 30',
+    streak:(function(){try{const nx=getNextStreakMilestone(dagen);return nx?'Nog <b>'+(nx-dagen)+' '+(nx-dagen===1?'dag':'dagen')+'</b> tot '+nx+' dagen op rij':'';}catch(e){return '';}})(),
+  };
+  const opts={level:{level:lv},promotie:{van:van,naar:naar},streak:{dagen:dagen}};
+  const speel=i=>{if(i>=lijst.length)return;const k=lijst[i];
+    momentToon(k,opts[k],{test:true,titel:'Test: '+k,regel:regel[k],klaar:()=>setTimeout(()=>speel(i+1),350)});};
+  let n=0;const klaar=()=>{try{return !document.documentElement.classList.contains('level-welcome')&&!!document.querySelector('.sc.on')&&typeof momentToon==='function';}catch(e){return false;}};
+  const wacht=()=>{if(klaar())return setTimeout(()=>speel(0),700);if(++n<150)setTimeout(wacht,400);};
+  if(document.readyState==='complete')wacht();else addEventListener('load',wacht,{once:true});
+})();
+
 // ═══════ ARCADE (lazy) ═══════
 // De minigames staan in arcade.js en laden pas als je de Arcade opent.
 function arcadeOpen(cb){
