@@ -823,7 +823,30 @@ var VAKKEN = [
     "nSv": 99,
     "nOe": 3,
     "nBeg": 19,
-    "hasSam": true
+    "hasSam": true,
+    "leerdoelen": [
+     {
+      "id": "A1",
+      "lo": "wa.A.1",
+      "gs": 2,
+      "naam": "De rol van wiskunde herkennen en informatie beoordelen",
+      "beschrijving": "Je herkent waar wiskunde in het dagelijks leven zit en beoordeelt informatie met cijfers: je maakt onderscheid tussen procent en procentpunt, let op de schaalverdeling van grafieken, leest een peiling met marge en controleert of een verband ook een oorzaak is.",
+      "ceStatus": "CE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Wiskunde in het dagelijks leven",
+       "Procenten en procentpunten",
+       "Grafieken en tabellen beoordelen",
+       "Bronnen en betrouwbaarheid",
+       "Resultaten controleren en communiceren"
+      ],
+      "nSv": 27,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
+     }
+    ]
    },
    {
     "id": "B",

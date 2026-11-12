@@ -33971,6 +33971,690 @@ var VAKKEN = [
       "t": "Kwadratisch",
       "d": "de tweede verschillen zijn gelijk"
      }
+    ],
+    "leerdoelen": [
+     {
+      "id": "A1",
+      "lo": "wa.A.1",
+      "gs": 2,
+      "naam": "De rol van wiskunde herkennen en informatie beoordelen",
+      "beschrijving": "Je herkent waar wiskunde in het dagelijks leven zit en beoordeelt informatie met cijfers: je maakt onderscheid tussen procent en procentpunt, let op de schaalverdeling van grafieken, leest een peiling met marge en controleert of een verband ook een oorzaak is.",
+      "ceStatus": "CE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Wiskunde in het dagelijks leven",
+       "Procenten en procentpunten",
+       "Grafieken en tabellen beoordelen",
+       "Bronnen en betrouwbaarheid",
+       "Resultaten controleren en communiceren"
+      ],
+      "sam": "Wiskunde zit in geld, nieuws en gezondheid. Maak onderscheid tussen procent en procentpunt: de relatieve verandering reken je ten opzichte van de oude waarde. Let op waar een as begint, op de bron en op de marge van een peiling. Een verband is geen oorzaak. Controleer cijfers en trek een conclusie met een getal.",
+      "begrippen": [
+       {
+        "t": "Procent",
+        "d": "Een honderdste deel; een stijging of daling reken je ten opzichte van de oude waarde."
+       },
+       {
+        "t": "Procentpunt",
+        "d": "Het verschil tussen twee percentages, bijvoorbeeld van 4% naar 6% is 2 procentpunt."
+       },
+       {
+        "t": "Relatieve verandering",
+        "d": "De verandering gedeeld door de oude waarde, bijvoorbeeld 2/4 = 50%."
+       },
+       {
+        "t": "Bron",
+        "d": "Waar de informatie vandaan komt en hoe de cijfers zijn verkregen."
+       },
+       {
+        "t": "Steekproef",
+        "d": "Een deel van de groep dat je onderzoekt, zoals 1000 mensen in een peiling."
+       },
+       {
+        "t": "Marge",
+        "d": "De onzekerheid bij een peiling, bijvoorbeeld 3 procentpunt naar boven en beneden."
+       },
+       {
+        "t": "Schaalverdeling",
+        "d": "De getallen op een as; een as die niet bij 0 begint kan misleiden."
+       },
+       {
+        "t": "Verband",
+        "d": "Twee grootheden die samen veranderen; dat is nog geen oorzaak."
+       },
+       {
+        "t": "Oorzaak",
+        "d": "Iets wat een ander verschijnsel echt veroorzaakt."
+       },
+       {
+        "t": "Conclusie",
+        "d": "Wat je vindt op basis van je getallen en je onderzoek."
+       },
+       {
+        "t": "Context",
+        "d": "De situatie waarin een wiskundige vraag staat."
+       },
+       {
+        "t": "Controleren",
+        "d": "Nagaan of je antwoord klopt en realistisch is."
+       }
+      ],
+      "sv": [
+       {
+        "v": "Een prijs stijgt van €50 naar €60. Hoeveel procent is de stijging?",
+        "o": [
+         "\"10%\"",
+         "\"20%\"",
+         "\"16,7%\"",
+         "\"120%\""
+        ],
+        "c": 1,
+        "d": 1,
+        "s": 1,
+        "u": "Controleer de cijfers en de schaal. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"10%\"\"? Dan neem je het verschil van 10 euro als percentage. Je moet het verschil delen door de oude prijs van 50, en dat geeft 20 procent.",
+         "Klopt: de stijging is €10 en dat is 10/50 = 20% van de oude prijs.",
+         "Koos je \"\"16,7%\"\"? Dan deel je door de nieuwe prijs van 60. Een procentuele stijging reken je altijd ten opzichte van de oude prijs, dus door 50.",
+         "Koos je \"\"120%\"\"? Dan tel je de nieuwe prijs bij 100 procent op. Dat is 60/50 en dat is de nieuwe prijs als percentage van de oude, en niet de stijging."
+        ],
+        "uh": "Een prijs stijgt van €50 naar €60. Hoeveel procent is de stijging?"
+       },
+       {
+        "v": "Een partij gaat van 20% naar 25% van de stemmen. Welke uitspraak klopt?",
+        "o": [
+         "\"een stijging van 5 procent\"",
+         "\"een stijging van 25 procentpunt, to be honest\"",
+         "\"een daling van 5 procentpunt\"",
+         "\"een stijging van 5 procentpunt\""
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 1,
+        "u": "Controleer de cijfers en de schaal. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"een stijging van 5 procent\"\"? Dan noem je het verschil tussen twee percentages een procent. Het verschil in procentpunten is 5, en 5 procent van 20 zou maar 1 zijn.",
+         "Koos je \"\"een stijging van 25 procentpunt, to be honest\"\"? Dan neem je het nieuwe percentage als verschil. Je moet 25 min 20 doen, en dat is 5.",
+         "Koos je \"\"een daling van 5 procentpunt\"\"? Dan draai je het verschil om. Het aandeel gaat van 20 naar 25, dus omhoog en niet omlaag.",
+         "Klopt: het verschil tussen de percentages is 5 procentpunt."
+        ],
+        "uh": "Een partij gaat van 20% naar 25% van de stemmen. Welke uitspraak klopt?"
+       },
+       {
+        "v": "Je wilt weten of een nieuwsbericht betrouwbaar is. Wat controleer je eerst?",
+        "o": [
+         "\"wie de bron is en hoe de cijfers zijn verkregen\"",
+         "\"hoe lang het artikel is\"",
+         "\"hoeveel mensen het delen\"",
+         "\"of de kop spannend klinkt, I suppose, really, to be honest\""
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 3,
+        "u": "Controleer de cijfers en de schaal. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: zonder bron en methode kun je de cijfers niet beoordelen.",
+         "Koos je \"\"hoe lang het artikel is\"\"? Dan denk je dat een lang artikel betrouwbaarder is. De lengte zegt niets over de cijfers, en de bron blijft onbekend.",
+         "Koos je \"\"hoeveel mensen het delen\"\"? Dan denk je dat populariteit waarheid bewijst. Veel gedeelde berichten kunnen fout zijn, dus dit is geen controle.",
+         "Koos je \"\"of de kop spannend klinkt, I suppose, really, to be honest\"\"? Dan pak je de stijl van de kop. Een spannende kop zegt niets over de cijfers, dus dit helpt niet."
+        ],
+        "uh": "Je wilt weten of een nieuwsbericht betrouwbaar is. Wat controleer je eerst?"
+       },
+       {
+        "v": "Een grafiek heeft een y-as die bij 90 begint in plaats van bij 0. Wat is het gevolg?",
+        "o": [
+         "\"verschillen lijken kleiner\"",
+         "\"de verhoudingen blijven gelijk, you know\"",
+         "\"verschillen lijken groter dan ze zijn\"",
+         "\"de gegevens zijn fout\""
+        ],
+        "c": 2,
+        "d": 1,
+        "s": 2,
+        "u": "Controleer de cijfers en de schaal. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"verschillen lijken kleiner\"\"? Dan denk je dat de as het verschil kleiner maakt. Een afgekapte as vergroot juist het verschil, omdat het onderste deel verdwijnt.",
+         "Koos je \"\"de verhoudingen blijven gelijk, you know\"\"? Dan denk je dat een afgekapte as niets verandert. De hoogte van de staven is dan niet meer evenredig, dus de verhouding klopt niet.",
+         "Klopt: je ziet alleen het stuk boven 90, dus kleine verschillen worden uitgerekt.",
+         "Koos je \"\"de gegevens zijn fout\"\"? Dan denk je dat de getallen niet kloppen. De getallen zijn juist goed, maar de weergave is misleidend."
+        ],
+        "uh": "Een grafiek heeft een y-as die bij 90 begint in plaats van bij 0. Wat is het gevolg?"
+       },
+       {
+        "v": "Waarvoor gebruik je wiskunde bij een hypotheek?",
+        "o": [
+         "\"om het huis te tekenen\"",
+         "\"om rente en aflossing te berekenen\"",
+         "\"om de huizenprijs te loten, really, to be honest\"",
+         "\"om het weer te voorspellen\""
+        ],
+        "c": 1,
+        "d": 1,
+        "s": 0,
+        "u": "Controleer de cijfers en de schaal. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"om het huis te tekenen\"\"? Dan pak je de tekening van een huis. Dat is een ontwerp, en geen berekening van geld.",
+         "Klopt: met rekenregels en formules bereken je wat je maandelijks betaalt.",
+         "Koos je \"\"om de huizenprijs te loten, really, to be honest\"\"? Dan denk je dat de prijs door loting ontstaat. De prijs komt uit de markt, en rente en aflossing reken je uit.",
+         "Koos je \"\"om het weer te voorspellen\"\"? Dan kies je een ander onderwerp. Het weer heeft niets met een hypotheek te maken, dus dit klopt niet."
+        ],
+        "uh": "Waarvoor gebruik je wiskunde bij een hypotheek?"
+       },
+       {
+        "v": "Een tabel geeft de gemiddelde temperatuur per maand. Welke vraag kun je met alleen deze tabel beantwoorden?",
+        "o": [
+         "\"Hoe warm was het gisteren om 12 uur, I think?\"",
+         "\"Waarom is juli warmer dan januari?\"",
+         "\"Wat wordt de temperatuur in 2050?\"",
+         "\"In welke maand is het gemiddeld het warmst?\""
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 2,
+        "u": "Controleer de cijfers en de schaal. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"Hoe warm was het gisteren om 12 uur, I think?\"\"? Dan denk je dat een tabel met maandgemiddelden een dagwaarde geeft. Die waarde staat er niet in, dus je kunt niets zeggen.",
+         "Koos je \"\"Waarom is juli warmer dan januari?\"\"? Dan pak je een verklaring. De tabel geeft alleen getallen, en geen oorzaak.",
+         "Koos je \"\"Wat wordt de temperatuur in 2050?\"\"? Dan vraag je naar de toekomst. De tabel geeft het verleden, dus je kunt dit niet afleiden.",
+         "Klopt: dit staat direct in de tabel, je zoekt de hoogste waarde."
+        ],
+        "uh": "Een tabel geeft de gemiddelde temperatuur per maand. Welke vraag kun je met alleen deze tabel beantwoorden?"
+       },
+       {
+        "v": "Je presenteert onderzoeksresultaten aan klasgenoten. Wat hoort in een duidelijke conclusie?",
+        "o": [
+         "\"wat je gevonden hebt, met het getal uit je onderzoek\"",
+         "\"alleen je mening zonder getallen, to be honest, you know\"",
+         "\"alle ruwe gegevens zonder uitleg\"",
+         "\"een gok over wat anderen vinden\""
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 4,
+        "u": "Controleer de cijfers en de schaal. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: een conclusie bevat je resultaat en het bijbehorende getal.",
+         "Koos je \"\"alleen je mening zonder getallen, to be honest, you know\"\"? Dan denk je dat een mening genoeg is. Zonder getal kan niemand het controleren, dus het is geen conclusie.",
+         "Koos je \"\"alle ruwe gegevens zonder uitleg\"\"? Dan pak je alle gegevens. Dat is geen conclusie, maar een rij getallen zonder samenvatting.",
+         "Koos je \"\"een gok over wat anderen vinden\"\"? Dan kies je een gok. Een conclusie komt uit je eigen onderzoek, en niet uit een gok."
+        ],
+        "uh": "Je presenteert onderzoeksresultaten aan klasgenoten. Wat hoort in een duidelijke conclusie?"
+       },
+       {
+        "v": "De werkloosheid steeg van 4% naar 6%. Hoeveel procentpunt is dat?",
+        "o": [
+         "\"50 procentpunt\"",
+         "\"1,5 procentpunt\"",
+         "\"2 procentpunt\"",
+         "\"12 procentpunt\""
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 1,
+        "u": "Controleer de cijfers en de schaal. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"50 procentpunt\"\"? Dan verwar je procentpunt met de relatieve stijging. 6 is 50 procent meer dan 4, maar het verschil is 2 procentpunt.",
+         "Koos je \"\"1,5 procentpunt\"\"? Dan deel je 6 door 4. Dat geeft de factor 1,5 en niet het verschil, terwijl je 6 min 4 moet doen.",
+         "Klopt: 6 min 4 is 2, dus het verschil is 2 procentpunt.",
+         "Koos je \"\"12 procentpunt\"\"? Dan tel je 6 en 4 bij elkaar op en neem je er nog twee bij. Een verschil reken je met aftrekken, en dat is 2."
+        ],
+        "uh": "De werkloosheid steeg van 4% naar 6%. Hoeveel procentpunt is dat?",
+        "ctx": "Een krant schrijft op de voorpagina: \"De werkloosheid steeg van 4% naar 6%. Dat is een stijging van 2 procent.\" Een politicus reageert dat dit een ramp is. De krant noemt geen bron en zegt niet hoe de cijfers zijn berekend."
+       },
+       {
+        "v": "Hoeveel procent is de relatieve stijging van de werkloosheid?",
+        "o": [
+         "\"2%\"",
+         "\"50%\"",
+         "\"33%\"",
+         "\"150%\""
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 1,
+        "u": "Controleer de cijfers en de schaal. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"2%\"\"? Dan neem je het aantal procentpunten als relatieve stijging. Je moet het verschil delen door de oude waarde, dus 2/4.",
+         "Klopt: de stijging is 2 procentpunt en 2/4 = 0,5 = 50% van de oude waarde.",
+         "Koos je \"\"33%\"\"? Dan deel je door het nieuwe percentage van 6. De relatieve stijging reken je ten opzichte van 4, en dat geeft 50 procent.",
+         "Koos je \"\"150%\"\"? Dan neem je de factor 1,5 als stijging. De factor is 150 procent van het oude, maar de stijging is 50 procent."
+        ],
+        "uh": "Hoeveel procent is de relatieve stijging van de werkloosheid?",
+        "ctx": "Een krant schrijft op de voorpagina: \"De werkloosheid steeg van 4% naar 6%. Dat is een stijging van 2 procent.\" Een politicus reageert dat dit een ramp is. De krant noemt geen bron en zegt niet hoe de cijfers zijn berekend."
+       },
+       {
+        "v": "Waarom is de zin 'een stijging van 2 procent' onduidelijk?",
+        "o": [
+         "\"2 is altijd te klein\"",
+         "\"werkloosheid kan niet stijgen\"",
+         "\"procenten mogen niet in een krant, gewoon, volgens mij\"",
+         "\"het kan 2 procentpunt of 2 procent van 4% bedoelen\""
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 1,
+        "u": "Controleer de cijfers en de schaal. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"2 is altijd te klein\"\"? Dan denk je dat het getal te klein is. De grootte van het getal is niet het probleem, maar de betekenis van procent.",
+         "Koos je \"\"werkloosheid kan niet stijgen\"\"? Dan denk je dat werkloosheid vast blijft. Dat is niet zo, en het is ook niet het probleem.",
+         "Koos je \"\"procenten mogen niet in een krant, gewoon, volgens mij\"\"? Dan pak je een verbod. Procenten mogen wel, maar je moet duidelijk zijn over wat je meet.",
+         "Klopt: 2 procentpunt is het verschil, 2 procent van 4% is maar 0,08 procentpunt."
+        ],
+        "uh": "Waarom is de zin 'een stijging van 2 procent' onduidelijk?",
+        "ctx": "Een krant schrijft op de voorpagina: \"De werkloosheid steeg van 4% naar 6%. Dat is een stijging van 2 procent.\" Een politicus reageert dat dit een ramp is. De krant noemt geen bron en zegt niet hoe de cijfers zijn berekend."
+       },
+       {
+        "v": "Staaf A is 92 en staaf B is 96. Hoeveel procent hoger is B dan A (afgerond op 1 decimaal)?",
+        "o": [
+         "\"4,3%\"",
+         "\"4,2%\"",
+         "\"4,0%\"",
+         "\"104,3%\""
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 2,
+        "u": "Controleer de cijfers en de schaal. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: 4/92 = 0,0435, dus ongeveer 4,3% hoger.",
+         "Koos je \"\"4,2%\"\"? Dan deel je het verschil door de nieuwe waarde van 96. Je moet delen door de oude waarde van 92, en dat geeft 4,3 procent.",
+         "Koos je \"\"4,0%\"\"? Dan neem je het verschil van 4 als percentage. Het verschil is 4 op een totaal van 92, en niet op een totaal van 100.",
+         "Koos je \"\"104,3%\"\"? Dan neem je B als percentage van A. Dat is de verhouding 96/92, maar de stijging is 104,3 min 100."
+        ],
+        "uh": "Staaf A is 92 en staaf B is 96. Hoeveel procent hoger is B dan A (afgerond op 1 decimaal)?",
+        "ctx": "Een bedrijf toont een staafdiagram met de omzet van twee jaren: staaf A is 92 en staaf B is 96. De verticale as begint bij 88 in plaats van bij 0, en staaf B lijkt twee keer zo hoog als staaf A."
+       },
+       {
+        "v": "Waarom lijkt staaf B twee keer zo hoog als staaf A?",
+        "o": [
+         "\"B is werkelijk twee keer zo groot, volgens mij, eigenlijk\"",
+         "\"de staven zijn dikker getekend\"",
+         "\"de as begint bij 88, dus je ziet 8 tegenover 4\"",
+         "\"de kleur van B is donkerder\""
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 2,
+        "u": "Controleer de cijfers en de schaal. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"B is werkelijk twee keer zo groot, volgens mij, eigenlijk\"\"? Dan denk je dat 96 twee keer 92 is. Dat klopt niet, want 96 is maar iets meer dan 92.",
+         "Koos je \"\"de staven zijn dikker getekend\"\"? Dan pak je de dikte van de staaf. Dat verandert de hoogte niet, dus dit is niet de oorzaak.",
+         "Klopt: 96 min 88 is 8 en 92 min 88 is 4, dus de zichtbare hoogten verhouden zich 2 op 1.",
+         "Koos je \"\"de kleur van B is donkerder\"\"? Dan kies je de kleur. Kleur verandert de hoogte niet, dus dit is niet de oorzaak."
+        ],
+        "uh": "Waarom lijkt staaf B twee keer zo hoog als staaf A?",
+        "ctx": "Een bedrijf toont een staafdiagram met de omzet van twee jaren: staaf A is 92 en staaf B is 96. De verticale as begint bij 88 in plaats van bij 0, en staaf B lijkt twee keer zo hoog als staaf A."
+       },
+       {
+        "v": "Hoe maak je de grafiek eerlijker?",
+        "o": [
+         "\"de staven dikker maken, zeg maar\"",
+         "\"de y-as laten beginnen bij 0\"",
+         "\"de kleur veranderen\"",
+         "\"de titel groter maken\""
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 2,
+        "u": "Controleer de cijfers en de schaal. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"de staven dikker maken, zeg maar\"\"? Dan denk je dat dikkere staven het eerlijker maken. De hoogte blijft misleidend, dus dit lost niets op.",
+         "Klopt: dan zijn de staven evenredig met de waarden en zie je het kleine verschil.",
+         "Koos je \"\"de kleur veranderen\"\"? Dan pak je de kleur. De as blijft afgekapt, dus de hoogte blijft misleidend.",
+         "Koos je \"\"de titel groter maken\"\"? Dan kies je de titel. Een grotere titel verandert de staven niet, dus de grafiek blijft misleidend."
+        ],
+        "uh": "Hoe maak je de grafiek eerlijker?",
+        "ctx": "Een bedrijf toont een staafdiagram met de omzet van twee jaren: staaf A is 92 en staaf B is 96. De verticale as begint bij 88 in plaats van bij 0, en staaf B lijkt twee keer zo hoog als staaf A."
+       },
+       {
+        "v": "Tussen welke percentages ligt het werkelijke aandeel waarschijnlijk?",
+        "o": [
+         "\"47% en 57%, you know\"",
+         "\"52% en 55%\"",
+         "\"50% en 54%\"",
+         "\"49% en 55%\""
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 3,
+        "u": "Controleer de cijfers en de schaal. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"47% en 57%, you know\"\"? Dan tel je de marge twee keer. De marge is 3 naar boven en 3 naar beneden, dus 49 tot 55.",
+         "Koos je \"\"52% en 55%\"\"? Dan neem je de marge alleen naar boven. De marge geldt naar beide kanten, dus ook naar beneden.",
+         "Koos je \"\"50% en 54%\"\"? Dan neem je een willekeurige marge van 2. De marge is 3, dus 49 tot 55.",
+         "Klopt: 52 min 3 is 49 en 52 plus 3 is 55, dus de marge geldt naar beide kanten."
+        ],
+        "uh": "Tussen welke percentages ligt het werkelijke aandeel waarschijnlijk?",
+        "ctx": "In een peiling onder 1000 mensen zegt 52% op partij X te zullen stemmen. De marge is 3 procentpunt (naar boven en naar beneden). De krant schrijft op de voorpagina dat de meerderheid van de bevolking op partij X stemt."
+       },
+       {
+        "v": "Hoeveel mensen uit de peiling zeggen op partij X te stemmen?",
+        "o": [
+         "\"520\"",
+         "\"52\"",
+         "\"480\"",
+         "\"5200\""
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 3,
+        "u": "Controleer de cijfers en de schaal. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: 52% van 1000 is 0,52 × 1000 = 520 mensen uit de peiling.",
+         "Koos je \"\"52\"\"? Dan vergeet je dat het om 1000 mensen gaat. 52 is het percentage, en geen aantal.",
+         "Koos je \"\"480\"\"? Dan neem je het aantal dat niet op X stemt. 100 min 52 is 48 procent, dus 480 mensen niet op X.",
+         "Koos je \"\"5200\"\"? Dan vermenigvuldig je met 100 in plaats van 10. 52 procent van 1000 is 520, en niet 5200."
+        ],
+        "uh": "Hoeveel mensen uit de peiling zeggen op partij X te stemmen?",
+        "ctx": "In een peiling onder 1000 mensen zegt 52% op partij X te zullen stemmen. De marge is 3 procentpunt (naar boven en naar beneden). De krant schrijft op de voorpagina dat de meerderheid van de bevolking op partij X stemt."
+       },
+       {
+        "v": "Mag de krant schrijven: 'Partij X heeft zeker een meerderheid'?",
+        "o": [
+         "\"ja, want 52% is meer dan 50%\"",
+         "\"ja, want de peiling is representatief\"",
+         "\"nee, want 49% valt binnen de marge\"",
+         "\"nee, want 52% is minder dan de helft\""
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 3,
+        "u": "Controleer de cijfers en de schaal. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"ja, want 52% is meer dan 50%\"\"? Dan vergeet je de marge. De werkelijke waarde kan 49 procent zijn, en dat is geen meerderheid.",
+         "Koos je \"\"ja, want de peiling is representatief\"\"? Dan denk je dat representatief zeker betekent. Een steekproef blijft onzeker, en de marge laat dat zien.",
+         "Klopt: 49% is minder dan de helft, dus een meerderheid is niet zeker.",
+         "Koos je \"\"nee, want 52% is minder dan de helft\"\"? Dan denk je dat 52 minder is dan 50. Dat is niet zo, maar de marge maakt het onzeker."
+        ],
+        "uh": "Mag de krant schrijven: 'Partij X heeft zeker een meerderheid'?",
+        "ctx": "In een peiling onder 1000 mensen zegt 52% op partij X te zullen stemmen. De marge is 3 procentpunt (naar boven en naar beneden). De krant schrijft op de voorpagina dat de meerderheid van de bevolking op partij X stemt."
+       },
+       {
+        "v": "Wat gebeurt er met de marge als je meer mensen ondervraagt (zelfde methode)?",
+        "o": [
+         "\"ze wordt groter\"",
+         "\"ze wordt kleiner\"",
+         "\"ze blijft altijd gelijk\"",
+         "\"ze verdwijnt volledig\""
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 3,
+        "u": "Controleer de cijfers en de schaal. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"ze wordt groter\"\"? Dan denk je dat meer mensen meer onzekerheid geven. Het is juist andersom, dus de marge krimpt.",
+         "Klopt: een grotere steekproef geeft een nauwkeurigere schatting.",
+         "Koos je \"\"ze blijft altijd gelijk\"\"? Dan denk je dat de steekproefgrootte niets doet. De marge hangt ervan af, dus ze verandert.",
+         "Koos je \"\"ze verdwijnt volledig\"\"? Dan denk je dat een grote steekproef alles zeker maakt. Zolang je niet iedereen ondervraagt, blijft er een marge."
+        ],
+        "uh": "Wat gebeurt er met de marge als je meer mensen ondervraagt (zelfde methode)?",
+        "ctx": "In een peiling onder 1000 mensen zegt 52% op partij X te zullen stemmen. De marge is 3 procentpunt (naar boven en naar beneden). De krant schrijft op de voorpagina dat de meerderheid van de bevolking op partij X stemt."
+       },
+       {
+        "v": "Klopt de advertentie 'Nu 25% korting! Van €80 voor €64'?",
+        "o": [
+         "\"ja, want 25% van 80 is 16, I suppose, really\"",
+         "\"ja, want 80 min 64 is 16\"",
+         "\"nee: de korting is 16%\"",
+         "\"nee: de korting is 20%, want €16 van €80\""
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 1,
+        "u": "Controleer de cijfers en de schaal. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"ja, want 25% van 80 is 16, I suppose, really\"\"? Dan reken je 25 procent van 80 verkeerd uit. 25% van 80 is 20, en niet 16.",
+         "Koos je \"\"ja, want 80 min 64 is 16\"\"? Dan controleer je alleen het verschil. Je moet het verschil als percentage van 80 berekenen, en dat is geen 25.",
+         "Koos je \"\"nee: de korting is 16%\"\"? Dan neem je het verschil als percentage. 16 euro van 80 is 20 procent, en niet 16 procent.",
+         "Klopt: 80 min 64 is 16 en 16/80 = 0,20, dus 20% korting."
+        ],
+        "uh": "Klopt de advertentie 'Nu 25% korting! Van €80 voor €64'?",
+        "ctx": "Een winkel hangt een grote poster op met de tekst: \"Nu 25% korting! Van €80 voor €64.\" Daaronder staat in kleine letters dat de actie voor alle schoenen geldt. Een klant twijfelt of de reclame wel klopt en wil het zelf narekenen."
+       },
+       {
+        "v": "Wat moet de nieuwe prijs zijn bij echt 25% korting op €80?",
+        "o": [
+         "\"€60\"",
+         "\"€64\"",
+         "\"€55\"",
+         "\"€20\""
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 1,
+        "u": "Controleer de cijfers en de schaal. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: 25% van 80 is 20 en 80 min 20 is 60, de prijs bij echt 25% korting.",
+         "Koos je \"\"€64\"\"? Dan neem je de prijs uit de advertentie. Bij 25 procent korting betaal je 75 procent, en dat is 60.",
+         "Koos je \"\"€55\"\"? Dan trek je 25 af van 80. Een procent trek je niet als euro af, maar je rekent 25 procent van 80.",
+         "Koos je \"\"€20\"\"? Dan neem je het kortingsbedrag als nieuwe prijs. Het kortingsbedrag is 20, maar de nieuwe prijs is 80 min 20."
+        ],
+        "uh": "Wat moet de nieuwe prijs zijn bij echt 25% korting op €80?",
+        "ctx": "Een winkel hangt een grote poster op met de tekst: \"Nu 25% korting! Van €80 voor €64.\" Daaronder staat in kleine letters dat de actie voor alle schoenen geldt. Een klant twijfelt of de reclame wel klopt en wil het zelf narekenen."
+       },
+       {
+        "v": "Hoeveel euro korting geeft de winkel werkelijk?",
+        "o": [
+         "\"€20\"",
+         "\"€64\"",
+         "\"€16\"",
+         "\"€25\""
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 4,
+        "u": "Controleer de cijfers en de schaal. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"€20\"\"? Dan neem je 25 procent van 80. Dat is de korting uit de advertentie, maar de winkel geeft maar 16.",
+         "Koos je \"\"€64\"\"? Dan neem je de nieuwe prijs. Dat is wat je betaalt, en niet wat je korting krijgt.",
+         "Klopt: de oude prijs is 80 en de nieuwe 64, het verschil is 16.",
+         "Koos je \"\"€25\"\"? Dan neem je het percentage als euro. Een procent is geen euro, en de korting is 16."
+        ],
+        "uh": "Hoeveel euro korting geeft de winkel werkelijk?",
+        "ctx": "Een winkel hangt een grote poster op met de tekst: \"Nu 25% korting! Van €80 voor €64.\" Daaronder staat in kleine letters dat de actie voor alle schoenen geldt. Een klant twijfelt of de reclame wel klopt en wil het zelf narekenen."
+       },
+       {
+        "v": "Hoeveel staat er na 1 jaar op de rekening?",
+        "o": [
+         "\"€2003\"",
+         "\"€2060\"",
+         "\"€2030\"",
+         "\"€2600\""
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 0,
+        "u": "Controleer de cijfers en de schaal. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"€2003\"\"? Dan tel je 3 bij 2000 op. 3 is het percentage en niet het bedrag, dus je moet 3 procent van 2000 nemen.",
+         "Klopt: 3% van 2000 is 60, dus 2000 + 60 = 2060.",
+         "Koos je \"\"€2030\"\"? Dan tel je 3 procent van 1000 op. De rente is over 2000, dus 60.",
+         "Koos je \"\"€2600\"\"? Dan tel je 30 procent op. De rente is 3 procent, dus 60 en niet 600."
+        ],
+        "uh": "Hoeveel staat er na 1 jaar op de rekening?",
+        "ctx": "Je zet €2000 op een spaarrekening met 3% rente per jaar. Na een jaar wordt de rente bij het saldo gevoegd, en in het tweede jaar krijg je ook rente over de rente van het eerste jaar. Je wilt weten hoeveel er op de rekening staat."
+       },
+       {
+        "v": "Hoeveel rente krijg je in het eerste jaar?",
+        "o": [
+         "\"€6\"",
+         "\"€600\"",
+         "\"€3\"",
+         "\"€60\""
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 0,
+        "u": "Controleer de cijfers en de schaal. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"€6\"\"? Dan rekent met 0,3 procent als rentepercentage. De rente is 3 procent per jaar, en dat is tien keer zoveel.",
+         "Koos je \"\"€600\"\"? Dan laat je een nul te veel staan en rekent met 30 procent. Het rentepercentage is 3, dus de rente is veel kleiner.",
+         "Koos je \"\"€3\"\"? Dan neem je het percentage als bedrag. Het percentage is 3, maar het bedrag is 60.",
+         "Klopt: 3% van 2000 is 0,03 × 2000 = 60 euro rente in het eerste jaar."
+        ],
+        "uh": "Hoeveel rente krijg je in het eerste jaar?",
+        "ctx": "Je zet €2000 op een spaarrekening met 3% rente per jaar. Na een jaar wordt de rente bij het saldo gevoegd, en in het tweede jaar krijg je ook rente over de rente van het eerste jaar. Je wilt weten hoeveel er op de rekening staat."
+       },
+       {
+        "v": "Hoeveel staat er na 2 jaar, als je ook rente over de rente krijgt?",
+        "o": [
+         "\"€2121,80\"",
+         "\"€2120,00\"",
+         "\"€2060,00\"",
+         "\"€2180,00\""
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 0,
+        "u": "Controleer de cijfers en de schaal. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: 2000 × 1,03 × 1,03 = 2121,80, want de rente wordt ook weer rentedragend.",
+         "Koos je \"\"€2120,00\"\"? Dan reken je alleen rente over het beginbedrag. In jaar 2 krijg je ook rente over de 60 euro, dus iets meer.",
+         "Koos je \"\"€2060,00\"\"? Dan stop je na 1 jaar. Je moet nog een jaar rekenen, en dat geeft 2121,80.",
+         "Koos je \"\"€2180,00\"\"? Dan tel je 9 procent over twee jaar op. De rente is 3 procent per jaar met rente op rente, en dat geeft 2121,80."
+        ],
+        "uh": "Hoeveel staat er na 2 jaar, als je ook rente over de rente krijgt?",
+        "ctx": "Je zet €2000 op een spaarrekening met 3% rente per jaar. Na een jaar wordt de rente bij het saldo gevoegd, en in het tweede jaar krijg je ook rente over de rente van het eerste jaar. Je wilt weten hoeveel er op de rekening staat."
+       },
+       {
+        "v": "Hoeveel procent is de daling van het aantal verkeersdoden?",
+        "o": [
+         "\"70%\"",
+         "\"7%\"",
+         "\"10%\"",
+         "\"11,1%\""
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 1,
+        "u": "Controleer de cijfers en de schaal. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"70%\"\"? Dan neem je het aantal als percentage. Het aantal is 70, maar de daling is 70 van 700.",
+         "Koos je \"\"7%\"\"? Dan deel je 70 door 1000. De oude waarde is 700, dus 70/700.",
+         "Klopt: de daling is 70 en 70/700 = 0,10 = 10%.",
+         "Koos je \"\"11,1%\"\"? Dan deel je door de nieuwe waarde van 630. Je rekent ten opzichte van de oude waarde 700, dus 10 procent."
+        ],
+        "uh": "Hoeveel procent is de daling van het aantal verkeersdoden?",
+        "ctx": "Een krant meldt: \"Het aantal verkeersdoden daalde in vijf jaar van 700 naar 630.\" De minister is blij en zegt dat de maatregelen werken. Een leerling wil nagaan hoeveel procent de daling is en hoeveel doden het gemiddeld per jaar minder werd."
+       },
+       {
+        "v": "Hoeveel verkeersdoden minder is het gemiddeld per jaar?",
+        "o": [
+         "\"70\"",
+         "\"14\"",
+         "\"126\"",
+         "\"7\""
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 4,
+        "u": "Controleer de cijfers en de schaal. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"70\"\"? Dan neem je de totale daling. Je moet delen door 5 jaar, dus 14.",
+         "Klopt: 70 minder in 5 jaar is 70/5 = 14 per jaar.",
+         "Koos je \"\"126\"\"? Dan deel je 630 door 5. Dat is het gemiddelde aantal per jaar na de daling, en niet de daling per jaar.",
+         "Koos je \"\"7\"\"? Dan neem je 10 procent van 70. De gemiddelde daling per jaar is 70 gedeeld door 5, en dat is 14."
+        ],
+        "uh": "Hoeveel verkeersdoden minder is het gemiddeld per jaar?",
+        "ctx": "Een krant meldt: \"Het aantal verkeersdoden daalde in vijf jaar van 700 naar 630.\" De minister is blij en zegt dat de maatregelen werken. Een leerling wil nagaan hoeveel procent de daling is en hoeveel doden het gemiddeld per jaar minder werd."
+       },
+       {
+        "v": "Wat is het probleem met deze grafiek?",
+        "o": [
+         "\"de lijn is te dik\"",
+         "\"de grafiek heeft een titel\"",
+         "\"de x-as loopt van links naar rechts, denk ik\"",
+         "\"je weet niet wat de getallen betekenen\""
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 2,
+        "u": "Controleer de cijfers en de schaal. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"de lijn is te dik\"\"? Dan denk je dat de dikte het probleem is. De dikte verandert de betekenis niet, maar het ontbrekende label wel.",
+         "Koos je \"\"de grafiek heeft een titel\"\"? Dan denk je dat een titel een probleem is. Een titel helpt juist, maar hij vervangt geen eenheid.",
+         "Koos je \"\"de x-as loopt van links naar rechts, denk ik\"\"? Dan pak je de richting van de as. Dat is gewoon normaal, en geen probleem.",
+         "Klopt: zonder label en eenheid kun je de getallen niet interpreteren."
+        ],
+        "uh": "Wat is het probleem met deze grafiek?",
+        "ctx": "Een tijdschrift toont een grafiek met het aantal verkeersdoden per jaar van 2015 tot 2024, maar op de verticale as staat geen eenheid en geen label. De titel van de grafiek is alleen Ontwikkeling. Een lezer vraagt zich af of hij daar iets zinnigs over kan zeggen."
+       },
+       {
+        "v": "Wat is een goede reactie?",
+        "o": [
+         "\"verband is geen oorzaak: warm weer kan beide verklaren\"",
+         "\"ijs veroorzaakt verdrinking\"",
+         "\"verdrinken veroorzaakt ijsverkoop\"",
+         "\"het verband bewijst dat ijs gevaarlijk is, volgens mij, eigenlijk\""
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 3,
+        "u": "Controleer de cijfers en de schaal. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: een derde factor, warm weer, zorgt voor meer ijs en meer zwemmen.",
+         "Koos je \"\"ijs veroorzaakt verdrinking\"\"? Dan denk je dat het verband een oorzaak bewijst. Een samenhang laat niet zien wat de oorzaak is, dus dit is te snel.",
+         "Koos je \"\"verdrinken veroorzaakt ijsverkoop\"\"? Dan draai je de oorzaak om. Ook dat is niet bewezen, en er is een andere verklaring.",
+         "Koos je \"\"het verband bewijst dat ijs gevaarlijk is, volgens mij, eigenlijk\"\"? Dan trek je een conclusie uit alleen een verband. Je weet niet of ijs de oorzaak is, dus dit bewijst niets."
+        ],
+        "uh": "Wat is een goede reactie?",
+        "ctx": "Een onderzoeker ziet in de zomer dat mensen die meer ijs eten vaker verdrinken. Een krant schrijft op de voorpagina: 'IJs eten is gevaarlijk.' Je wilt de redenering beoordelen en let daarbij op wat het onderzoek wel en niet laat zien."
+       }
+      ],
+      "oe": [
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een krant schrijft: \"De btw ging van 19% naar 21%. Dat is een stijging van 2 procent.\" Je wilt weten wat er klopt aan deze zin. Je weet dat een btw-tarief als percentage wordt uitgedrukt en dat een verschil tussen twee percentages anders heet dan een relatieve stijging.",
+        "v": "Leg uit wat er niet precies klopt, en bereken de relatieve stijging in procenten (afgerond op 1 decimaal).",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Het is 2 procentpunt (1p). Relatieve stijging: 2 gedeeld door 19 is 0,105 (1p). Dat is 10,5% (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "In een peiling onder 800 mensen zegt 45% dat ze het nieuwe station mooi vinden. De marge is 4 procentpunt. De gemeente schrijft in een persbericht: \"Bijna de helft van de bevolking is tevreden.\"",
+        "v": "Bereken hoeveel mensen uit de peiling het station mooi vinden en tussen welke percentages het echte aandeel ligt.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "45% van 800 is 360 mensen (1p). Ondergrens 41% (1p). Bovengrens 49% (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een staafdiagram toont het aantal bezoekers van een zwembad in twee jaren: 5200 en 5400. De verticale as begint bij 5000, en de tweede staaf lijkt dubbel zo hoog als de eerste. Een leerling zegt: \"Het aantal bezoekers is verdubbeld.\"",
+        "v": "Leg uit waarom de leerling zich vergist en bereken de werkelijke stijging in procenten (afgerond op 1 decimaal).",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "De as begint bij 5000, dus de zichtbare stukken zijn 200 en 400 (1p). Verschil 200, 200/5200 (1p). Dat is ongeveer 3,8% (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een webwinkel adverteert: \"Nu 30% korting! Van €50 voor €38.\" Je wilt controleren of deze reclame klopt. Je weet dat je een korting als percentage van de oude prijs berekent.",
+        "v": "Bereken de werkelijke korting in procenten en zeg of de reclame klopt.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Korting is 50 min 38 is 12 euro (1p). 12/50 is 24% (1p). De reclame klopt niet, want 24% is geen 30% (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een klasgenoot leest dat studenten die veel koffie drinken beter scoren op een toets, en zegt: \"Koffie maakt je slimmer.\" Hij heeft verder geen onderzoek gelezen en kent de bron niet. Jij vindt zijn conclusie te snel.",
+        "v": "Leg uit waarom deze conclusie te snel is en noem één andere mogelijke verklaring.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Een verband betekent niet dat het een oorzaak is (1p). Bijvoorbeeld: studenten die veel leren drinken ook veel koffie (1p). Een duidelijke uitleg (1p)."
+       }
+      ]
+     }
     ]
    },
    {
