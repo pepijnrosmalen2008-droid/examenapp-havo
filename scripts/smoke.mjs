@@ -115,6 +115,28 @@ try {
     : bad('leaderboard-knop ontbreekt in het home-menu / Meer-menu');
 } catch (e) { bad('CSS/leaderboard-check mislukt: ' + e.message); }
 
+// 5a. Weekwedstrijd: niet iedereen als vos. Elke nieuwe bezoeker krijgt de vos als
+//     standaardmaatje; wie nooit koos, moet in de lijst toch een eigen dier hebben.
+try {
+  const lgSrc = read('league.js');
+  const geen = /p_animal\s*:\s*_lgSpelerDier\(\)/.test(lgSrc) && !/p_animal\s*:[^,]*MAATJE_STD/.test(lgSrc);
+  geen ? ok('weekwedstrijd stuurt het dier via _lgSpelerDier (geen standaard-vos)') : bad('weekwedstrijd stuurt mogelijk de standaard-vos naar de server (gebruik _lgSpelerDier)');
+  const st = { prof: {}, open: false };
+  const env = { localStorage: { getItem: k => k === 'examenapp_profiel' ? JSON.stringify(st.prof) : null, setItem() {}, removeItem() {} },
+    window: {}, document: { getElementById: () => null, querySelector: () => null, addEventListener() {}, documentElement: { classList: { contains: () => false } } },
+    PROF_KEY: 'examenapp_profiel', getAnimalById: id => ['adelaar','beer','cactus','draak','eenhoorn','gorilla','haai','leeuw','octopus','olifant','robot','slang','slijm','tijger','uil','vlinder','vos','wolf'].includes(id) ? { id } : null,
+    maatjeOpen: () => st.open, getTotalXP: () => 0, getAnimalStageIdx: () => 0 };
+  const fn = new Function(...Object.keys(env), 'let _DID="";' + lgSrc + '\nreturn {spel:d=>{_DID=d;return _lgSpelerDier();},spreid:_lgSpreidDieren};');
+  const L = fn(...Object.values(env));
+  st.prof = { animalId: 'vos' }; st.open = true;
+  const nieuw = new Set([...Array(30)].map((_, i) => L.spel('apparaat-' + i)));
+  nieuw.size >= 8 ? ok(`niet-gekozen maatje → ${nieuw.size} verschillende dieren over 30 apparaten`) : bad(`niet-gekozen maatje geeft maar ${nieuw.size} verschillende dieren (standaard lekt door)`);
+  st.prof = { animalId: 'vos' }; st.open = false;
+  L.spel('x') === 'vos' ? ok('zelf gekozen vos blijft een vos') : bad('zelf gekozen vos wordt overschreven');
+  const rijen = L.spreid([...Array(16)].map((_, i) => ({ did: 'd' + i, naam: 'n' + i, animalId: 'vos' })));
+  new Set(rijen.map(r => r.animalId)).size >= 6 ? ok('vangnet spreidt een cohort waarin iedereen hetzelfde dier heeft') : bad('vangnet laat een cohort met allemaal hetzelfde dier staan');
+} catch (e) { bad('weekwedstrijd-diercheck mislukt: ' + e.message); }
+
 // 5b. Leaderboard-bots: alle vulbots zijn mens-achtig (dier-avatar + stage +
 //     geloofwaardige badges). Robot-bots zijn verwijderd.
 try {

@@ -163,13 +163,34 @@ function _lgRealRows(L){
       return;
     }
     seen[key]=out.length;
-    out.push({naam:nm,animalId:_lgDierOk(p.animal_id)?p.animal_id:_lgDierVoor(p.did||nm),stage:p.stage||0,xp:Math.max(0,p.xp||0),me:false,real:true});
+    out.push({naam:nm,did:p.did,animalId:_lgDierOk(p.animal_id)?p.animal_id:_lgDierVoor(p.did||nm),stage:p.stage||0,xp:Math.max(0,p.xp||0),me:false,real:true});
   });
-  return out;
+  return _lgSpreidDieren(out);
 }
 
 // Spelers zonder (geldig) maatje krijgen een vast getekend dier op basis van hun
 // device, nooit meer de losse vos-emoji.
+// Het dier dat andere spelers van mij zien. Iedereen krijgt bij de start de vos als
+// standaardmaatje (onbStil in onb.js). Wie nog niet zelf koos, of geen geldig dier heeft,
+// stuurt daarom een vast dier op basis van zijn apparaat: anders staat iedereen die nooit
+// koos als vos in de lijst (zo ging het in november 2026). Een gekozen vos blijft een vos.
+function _lgSpelerDier(){
+  const me=_lgMeAvatar();let open=false;
+  try{open=typeof maatjeOpen==='function'&&maatjeOpen();}catch(e){}
+  return (!open&&_lgDierOk(me.id))?me.id:_lgDierVoor(typeof _DID!=='undefined'?_DID:'');
+}
+// Vangnet: hebben de meeste echte spelers hetzelfde dier, dan is dat bijna zeker een
+// standaarddier en geen keuze (bij 18 dieren is de kans op toeval nihil). Iedereen met
+// dat dier krijgt dan een vast dier op basis van zijn apparaat. Vangt ook oude standen
+// op van spelers die nog met een oude versie van de app synchroniseerden.
+function _lgSpreidDieren(rows){
+  const n=rows.length;if(n<5)return rows;
+  const c={};rows.forEach(r=>{c[r.animalId]=(c[r.animalId]||0)+1;});
+  const top=Object.keys(c).sort((a,b)=>c[b]-c[a])[0];
+  if(c[top]/n<.5)return rows;
+  rows.forEach(r=>{if(r.animalId===top)r.animalId=_lgDierVoor(r.did||r.naam);});
+  return rows;
+}
 function _lgDierOk(id){try{return !!(id&&typeof getAnimalById==='function'&&getAnimalById(id));}catch(e){return false;}}
 function _lgDierVoor(sleutel){return _LG_DIER[_lgHash('dier|'+(sleutel||''))%_LG_DIER.length];}
 function _lgGeenNaam(nm){const k=(nm||'').trim().toLowerCase();return !k||k==='jij'||k==='speler'||k==='you'||k==='ik';}
@@ -419,7 +440,7 @@ function leagueSyncAndFetch(force){
   (async()=>{
     try{
       const sdiv=_lgSyncDiv(L.division);
-      await SB.rpc('league_sync',{p_did:_DID,p_naam:(_lgGeenNaam(_lgMeName())?_lgNaamVoor(_DID):_lgMeName()),p_animal:(_lgDierOk(me.id)?me.id:(typeof MAATJE_STD!=='undefined'?MAATJE_STD:_lgDierVoor(_DID))),p_stage:me.stage||0,p_division:sdiv,p_week:L.week,p_xp:L.weekXP||0});
+      await SB.rpc('league_sync',{p_did:_DID,p_naam:(_lgGeenNaam(_lgMeName())?_lgNaamVoor(_DID):_lgMeName()),p_animal:_lgSpelerDier(),p_stage:me.stage||0,p_division:sdiv,p_week:L.week,p_xp:L.weekXP||0});
       const {data,error}=await SB.rpc('league_cohort',{p_division:sdiv,p_week:L.week});
       if(!error&&Array.isArray(data)){
         window._lgRealCache={week:L.week,division:L.division,players:data,ts:Date.now()};
