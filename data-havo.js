@@ -36018,6 +36018,688 @@ var VAKKEN = [
         "u": "Elke afronding voegt een kleine fout toe, die zich ophoopt (1p). Voorbeeld: 41,3/650 afronden op 0,06 geeft 6,0 in plaats van 6,4 (1p). Een duidelijke uitleg (1p)."
        }
       ]
+     },
+     {
+      "id": "A4",
+      "lo": "wa.A.4",
+      "gs": 2,
+      "naam": "Je antwoord controleren en terugvertalen naar de context",
+      "beschrijving": "Je controleert je antwoord: je schat de grootteorde, kijkt naar de eenheid, vult je oplossing in, beoordeelt of het antwoord in de situatie kan en schrijft je conclusie als een zin met eenheid.",
+      "ceStatus": "CE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Schatten en grootteorde",
+       "Eenheden controleren",
+       "Realistische antwoorden en bereik",
+       "Controleren door invullen",
+       "Terugvertalen in een zin"
+      ],
+      "sam": "Controleer je antwoord door te schatten, de eenheid na te kijken en je oplossing in te vullen. Een model heeft een bereik: een negatief aantal bezoekers kan niet. Schrijf je conclusie als een zin met eenheid in de context. Een fout van factor 10 vind je met schatten.",
+      "begrippen": [
+       {
+        "t": "Schatten",
+        "d": "Met afgeronde getallen snel een antwoord in de buurt bepalen."
+       },
+       {
+        "t": "Grootteorde",
+        "d": "Hoe groot een getal ongeveer is, zoals 90 000 en niet 9 000."
+       },
+       {
+        "t": "Eenheid",
+        "d": "Wat je meet, zoals km/u, m² of uur; die hoort bij je antwoord."
+       },
+       {
+        "t": "Realistisch",
+        "d": "Een antwoord dat in de situatie kan kloppen."
+       },
+       {
+        "t": "Bereik",
+        "d": "De waarden waarvoor een model geldt."
+       },
+       {
+        "t": "Invullen",
+        "d": "Je gevonden oplossing in de oorspronkelijke vergelijking zetten."
+       },
+       {
+        "t": "Terugvertalen",
+        "d": "Het antwoord in een zin met eenheid in de context zetten."
+       },
+       {
+        "t": "Controle",
+        "d": "Nagaan of een antwoord klopt, bijvoorbeeld door tegen te rekenen."
+       },
+       {
+        "t": "Factor",
+        "d": "Een getal waarmee je vermenigvuldigt; een fout van factor 10 zie je met schatten."
+       },
+       {
+        "t": "Context",
+        "d": "De situatie waarin de opgave speelt."
+       },
+       {
+        "t": "Conclusie",
+        "d": "Wat je vindt, in een zin met eenheid."
+       },
+       {
+        "t": "Fout",
+        "d": "Een afwijking van het goede antwoord, zoals een verkeerde bewerking."
+       }
+      ],
+      "sv": [
+       {
+        "v": "Een fietser legt 60 km af in 2 uur. Welke snelheid is realistisch?",
+        "o": [
+         "\"120 km/u, I think\"",
+         "\"30 km/u\"",
+         "\"62 km/u\"",
+         "\"3 km/u\""
+        ],
+        "c": 1,
+        "d": 1,
+        "s": 0,
+        "u": "Controleer eenheid, grootte en of het antwoord in de situatie kan. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"120 km/u, I think\"\"? Dan vermenigvuldig je 60 met 2. Snelheid is afstand gedeeld door tijd, en 120 is veel te snel voor een fiets.",
+         "Klopt: 60 gedeeld door 2 is 30 km/u en dat is een gewone fietssnelheid.",
+         "Koos je \"\"62 km/u\"\"? Dan tel je 60 en 2 op. Dat heeft geen betekenis voor snelheid, en 62 is te hoog voor een fietser.",
+         "Koos je \"\"3 km/u\"\"? Dan deel je de tijd door een deel van de afstand verkeerd. 3 km/u is wandeltempo, en niet de snelheid van deze fietser."
+        ],
+        "uh": "Een fietser legt 60 km af in 2 uur. Welke snelheid is realistisch?"
+       },
+       {
+        "v": "Je berekent 19,8 × 4,1. Welke schatting past om je antwoord te controleren?",
+        "o": [
+         "\"20 × 40 = 800\"",
+         "\"20 + 4 = 24\"",
+         "\"2 × 4 = 8\"",
+         "\"20 × 4 = 80\""
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 0,
+        "u": "Controleer eenheid, grootte en of het antwoord in de situatie kan. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"20 × 40 = 800\"\"? Dan verschuif je de komma van 4,1. 4,1 is ongeveer 4 en niet 40, dus de schatting is 80.",
+         "Koos je \"\"20 + 4 = 24\"\"? Dan tel je de getallen op in plaats van te vermenigvuldigen. De opgave is een product, dus 20 × 4.",
+         "Koos je \"\"2 × 4 = 8\"\"? Dan rond je 19,8 af op 2. 19,8 is ongeveer 20, dus de schatting is 80.",
+         "Klopt: 19,8 is ongeveer 20 en 4,1 ongeveer 4, dus het antwoord ligt rond 80."
+        ],
+        "uh": "Je berekent 19,8 × 4,1. Welke schatting past om je antwoord te controleren?"
+       },
+       {
+        "v": "Je berekent een afstand en krijgt '15 uur'. Wat klopt er niet?",
+        "o": [
+         "\"uur is een eenheid van tijd en geen eenheid van afstand\"",
+         "\"15 is te groot\"",
+         "\"er staat geen komma, I suppose, really, to be honest\"",
+         "\"niets, uur is goed\""
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 1,
+        "u": "Controleer eenheid, grootte en of het antwoord in de situatie kan. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: een afstand heeft een eenheid als km of m.",
+         "Koos je \"\"15 is te groot\"\"? Dan denk je dat het getal fout is. Het getal kan best kloppen, maar de eenheid hoort niet bij een afstand.",
+         "Koos je \"\"er staat geen komma, I suppose, really, to be honest\"\"? Dan mis je een komma. Een geheel getal heeft geen komma nodig, en het probleem zit in de eenheid.",
+         "Koos je \"\"niets, uur is goed\"\"? Dan denk je dat elke eenheid kan. Bij een afstand hoort km of m, en niet uur."
+        ],
+        "uh": "Je berekent een afstand en krijgt '15 uur'. Wat klopt er niet?"
+       },
+       {
+        "v": "Welke eenheid hoort bij een oppervlakte?",
+        "o": [
+         "\"m\"",
+         "\"m³\"",
+         "\"m²\"",
+         "\"kg\""
+        ],
+        "c": 2,
+        "d": 1,
+        "s": 1,
+        "u": "Controleer eenheid, grootte en of het antwoord in de situatie kan. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"m\"\"? Dan kies je een eenheid voor lengte. Een oppervlakte is lengte keer breedte, en dat is m².",
+         "Koos je \"\"m³\"\"? Dan kies je een eenheid voor inhoud. Een oppervlakte heeft maar twee afmetingen, dus m².",
+         "Klopt: een oppervlakte is lengte keer breedte en dus in vierkante meter.",
+         "Koos je \"\"kg\"\"? Dan kies je een eenheid voor massa. Een oppervlakte gaat over ruimte op een vlak, dus m²."
+        ],
+        "uh": "Welke eenheid hoort bij een oppervlakte?"
+       },
+       {
+        "v": "Een model geeft een negatief aantal bezoekers. Wat betekent dat?",
+        "o": [
+         "\"er zijn echt minder dan nul mensen gekomen, really\"",
+         "\"het model geldt niet meer voor die waarde van t\"",
+         "\"het model is altijd goed\"",
+         "\"je mag het min-teken weglaten\""
+        ],
+        "c": 1,
+        "d": 1,
+        "s": 2,
+        "u": "Controleer eenheid, grootte en of het antwoord in de situatie kan. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"er zijn echt minder dan nul mensen gekomen, really\"\"? Dan neem je het getal letterlijk. Een aantal mensen kan niet negatief zijn, dus het model klopt daar niet.",
+         "Klopt: een aantal bezoekers kan niet negatief zijn, dus het model is daar niet bruikbaar.",
+         "Koos je \"\"het model is altijd goed\"\"? Dan denk je dat een formule altijd geldt. Een model heeft een bereik, en buiten dat bereik geeft het onzin.",
+         "Koos je \"\"je mag het min-teken weglaten\"\"? Dan laat je het min-teken weg. Dan verander je de uitkomst, en blijft het model buiten zijn bereik."
+        ],
+        "uh": "Een model geeft een negatief aantal bezoekers. Wat betekent dat?"
+       },
+       {
+        "v": "Hoe controleer je een gevonden oplossing van een vergelijking?",
+        "o": [
+         "\"doe de berekening nog eens met dezelfde stappen, denk ik, zeg maar\"",
+         "\"kijk of het getal mooi is\"",
+         "\"schrijf het antwoord groter op\"",
+         "\"vul de oplossing in en kijk of beide kanten gelijk zijn\""
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 3,
+        "u": "Controleer eenheid, grootte en of het antwoord in de situatie kan. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"doe de berekening nog eens met dezelfde stappen, denk ik, zeg maar\"\"? Dan herhaal je dezelfde berekening. Een fout in je stap kom je zo niet op het spoor, dus je moet invullen.",
+         "Koos je \"\"kijk of het getal mooi is\"\"? Dan kijk je naar het uiterlijk van het antwoord. Een mooi getal bewijst niets, dus je moet invullen.",
+         "Koos je \"\"schrijf het antwoord groter op\"\"? Dan verander je het schrift in plaats van de controle. Dat controleert niets, dus je moet invullen.",
+         "Klopt: dan zie je meteen of de oplossing klopt."
+        ],
+        "uh": "Hoe controleer je een gevonden oplossing van een vergelijking?"
+       },
+       {
+        "v": "Welke slotzin hoort bij 'K = 4,50 + 2,20k; bij k = 12 is K = 30,90'?",
+        "o": [
+         "\"Een rit van 12 km kost €30,90.\"",
+         "\"30,90\"",
+         "\"k = 12\"",
+         "\"De formule is K = 4,50 + 2,20k, volgens mij.\""
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 4,
+        "u": "Controleer eenheid, grootte en of het antwoord in de situatie kan. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: een goede slotzin noemt het antwoord met eenheid in de situatie.",
+         "Koos je \"\"30,90\"\"? Dan schrijf je alleen het getal. Zonder eenheid en zonder context mist de betekenis, dus schrijf je een hele zin.",
+         "Koos je \"\"k = 12\"\"? Dan schrijf je alleen de ingevulde waarde op. Dat is geen antwoord op de vraag, dus je moet het resultaat noemen.",
+         "Koos je \"\"De formule is K = 4,50 + 2,20k, volgens mij.\"\"? Dan schrijf je de formule op. Dat is het model en niet het antwoord, dus je moet het resultaat noemen."
+        ],
+        "uh": "Welke slotzin hoort bij 'K = 4,50 + 2,20k; bij k = 12 is K = 30,90'?"
+       },
+       {
+        "v": "Waarom is 120 km/u niet realistisch voor een fietser?",
+        "o": [
+         "\"een fietser rijdt nooit sneller dan 5 km/u, zeg maar\"",
+         "\"120 is geen geheel getal\"",
+         "\"een fietser rijdt meestal tussen 15 en 35 km/u\"",
+         "\"km/u is geen eenheid van snelheid\""
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 0,
+        "u": "Controleer eenheid, grootte en of het antwoord in de situatie kan. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"een fietser rijdt nooit sneller dan 5 km/u, zeg maar\"\"? Dan stel je de grens veel te laag. Een fietser haalt gemakkelijk 20 km/u, en 120 blijft te hoog.",
+         "Koos je \"\"120 is geen geheel getal\"\"? Dan denk je dat het getal fout geschreven is. 120 is een geheel getal, en het probleem zit in de grootte.",
+         "Klopt: 120 km/u is een autosnelheid en geen fietssnelheid.",
+         "Koos je \"\"km/u is geen eenheid van snelheid\"\"? Dan denk je dat de eenheid fout is. Km/u is juist een eenheid van snelheid, en het probleem is de grootte."
+        ],
+        "uh": "Waarom is 120 km/u niet realistisch voor een fietser?",
+        "ctx": "Een leerling moet de snelheid berekenen van een fietser die 60 km aflegt in 2 uur. Hij schrijft: \"snelheid = 60 × 2 = 120 km/u.\" De docent zet er een vraagteken bij en vraagt of dit antwoord wel realistisch is."
+       },
+       {
+        "v": "Welke berekening geeft de juiste snelheid?",
+        "o": [
+         "\"60 × 2 = 120\"",
+         "\"60 : 2 = 30 km/u\"",
+         "\"2 : 60 = 0,03, eigenlijk\"",
+         "\"60 − 2 = 58\""
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 3,
+        "u": "Controleer eenheid, grootte en of het antwoord in de situatie kan. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"60 × 2 = 120\"\"? Dan vermenigvuldig je afstand en tijd. Dat geeft geen snelheid, want je moet delen.",
+         "Klopt: snelheid is afstand gedeeld door tijd.",
+         "Koos je \"\"2 : 60 = 0,03, eigenlijk\"\"? Dan draai je de deling om. Je deelt de tijd door de afstand, maar het moet andersom.",
+         "Koos je \"\"60 − 2 = 58\"\"? Dan trek je tijd af van afstand. Dat heeft geen betekenis, want je moet delen."
+        ],
+        "uh": "Welke berekening geeft de juiste snelheid?",
+        "ctx": "Een leerling moet de snelheid berekenen van een fietser die 60 km aflegt in 2 uur. Hij schrijft: \"snelheid = 60 × 2 = 120 km/u.\" De docent zet er een vraagteken bij en vraagt of dit antwoord wel realistisch is."
+       },
+       {
+        "v": "Controleer 30 km/u: hoeveel km leg je in 2 uur af?",
+        "o": [
+         "\"15 km, really\"",
+         "\"32 km\"",
+         "\"30 km\"",
+         "\"60 km\""
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 3,
+        "u": "Controleer eenheid, grootte en of het antwoord in de situatie kan. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"15 km, really\"\"? Dan deel je door 2 in plaats van te vermenigvuldigen. Afstand is snelheid keer tijd, dus 30 × 2.",
+         "Koos je \"\"32 km\"\"? Dan tel je 30 en 2 op. Afstand is snelheid keer tijd, dus je moet vermenigvuldigen.",
+         "Koos je \"\"30 km\"\"? Dan vergeet je de tijd. Je moet 30 × 2 doen, en dat geeft 60.",
+         "Klopt: 30 × 2 = 60, en dat is de gegeven afstand."
+        ],
+        "uh": "Controleer 30 km/u: hoeveel km leg je in 2 uur af?",
+        "ctx": "Een leerling moet de snelheid berekenen van een fietser die 60 km aflegt in 2 uur. Hij schrijft: \"snelheid = 60 × 2 = 120 km/u.\" De docent zet er een vraagteken bij en vraagt of dit antwoord wel realistisch is."
+       },
+       {
+        "v": "Welke eenheid hoort bij snelheid?",
+        "o": [
+         "\"km/u\"",
+         "\"km\"",
+         "\"uur\"",
+         "\"m²\""
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 1,
+        "u": "Controleer eenheid, grootte en of het antwoord in de situatie kan. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: snelheid is afstand per tijd, bijvoorbeeld km per uur.",
+         "Koos je \"\"km\"\"? Dan kies je alleen de afgelegde weg. Een snelheid zegt hoeveel weg er per tijdseenheid is afgelegd, en dat is km/u.",
+         "Koos je \"\"uur\"\"? Dan meet je alleen de duur van de rit. Snelheid combineert de duur met de afgelegde weg, en dat geeft een quotiënt van km en uur.",
+         "Koos je \"\"m²\"\"? Dan verwar je snelheid met een oppervlakte. Een vierkante meter beschrijft een vlak, en geen beweging."
+        ],
+        "uh": "Welke eenheid hoort bij snelheid?",
+        "ctx": "Een leerling moet de snelheid berekenen van een fietser die 60 km aflegt in 2 uur. Hij schrijft: \"snelheid = 60 × 2 = 120 km/u.\" De docent zet er een vraagteken bij en vraagt of dit antwoord wel realistisch is."
+       },
+       {
+        "v": "Wat is B voor t = 15 in B = 200 − 15t?",
+        "o": [
+         "\"425\"",
+         "\"25\"",
+         "\"−25\"",
+         "\"−15\""
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 2,
+        "u": "Controleer eenheid, grootte en of het antwoord in de situatie kan. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"425\"\"? Dan tel je 15 × 15 bij 200 op. Het is een min, dus 200 − 225.",
+         "Koos je \"\"25\"\"? Dan laat je het min-teken weg. De uitkomst is negatief, dus −25.",
+         "Klopt: 200 − 15 × 15 = 200 − 225 = −25, dus een negatief getal.",
+         "Koos je \"\"−15\"\"? Dan neem je alleen −15. Je moet 15 × 15 uitrekenen, dus −25."
+        ],
+        "uh": "Wat is B voor t = 15 in B = 200 − 15t?",
+        "ctx": "Volgens een model voor het aantal bezoekers van een tentoonstelling geldt B = 200 − 15t, waarbij t het aantal weken sinds de opening is. Een leerling vult t = 15 in en vindt B = −25. Het model is bedoeld voor de eerste 10 weken."
+       },
+       {
+        "v": "Wat zegt het antwoord −25 over het model?",
+        "o": [
+         "\"er zijn 25 bezoekers minder dan nul gekomen, zeg maar\"",
+         "\"het model werkt niet meer na ongeveer 13 weken\"",
+         "\"het model is altijd bruikbaar\"",
+         "\"t moet kleiner dan 0 zijn\""
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 2,
+        "u": "Controleer eenheid, grootte en of het antwoord in de situatie kan. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"er zijn 25 bezoekers minder dan nul gekomen, zeg maar\"\"? Dan neem je het getal letterlijk. Een aantal bezoekers kan niet negatief zijn, dus het model klopt niet.",
+         "Klopt: B = 0 bij t = 13,3 en daarna zou het aantal negatief worden.",
+         "Koos je \"\"het model is altijd bruikbaar\"\"? Dan denk je dat een formule altijd geldt. Hier loopt het model vast, dus het is niet altijd bruikbaar.",
+         "Koos je \"\"t moet kleiner dan 0 zijn\"\"? Dan denk je dat t negatief moet. t is het aantal weken, en dat is positief."
+        ],
+        "uh": "Wat zegt het antwoord −25 over het model?",
+        "ctx": "Volgens een model voor het aantal bezoekers van een tentoonstelling geldt B = 200 − 15t, waarbij t het aantal weken sinds de opening is. Een leerling vult t = 15 in en vindt B = −25. Het model is bedoeld voor de eerste 10 weken."
+       },
+       {
+        "v": "Tot en met welke hele week geeft het model een niet-negatief aantal bezoekers?",
+        "o": [
+         "\"week 15, you know\"",
+         "\"week 10\"",
+         "\"week 14\"",
+         "\"week 13\""
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 2,
+        "u": "Controleer eenheid, grootte en of het antwoord in de situatie kan. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"week 15, you know\"\"? Dan neem je de week van de berekening. Bij t = 15 is B negatief, dus het model werkt dan niet.",
+         "Koos je \"\"week 10\"\"? Dan neem je de bedoelde periode. Het model werkt iets langer, namelijk tot week 13.",
+         "Koos je \"\"week 14\"\"? Dan tel je een week te veel. Bij t = 14 is B = −10, en dat is negatief.",
+         "Klopt: bij t = 13 is B = 5 en bij t = 14 is B = −10."
+        ],
+        "uh": "Tot en met welke hele week geeft het model een niet-negatief aantal bezoekers?",
+        "ctx": "Volgens een model voor het aantal bezoekers van een tentoonstelling geldt B = 200 − 15t, waarbij t het aantal weken sinds de opening is. Een leerling vult t = 15 in en vindt B = −25. Het model is bedoeld voor de eerste 10 weken."
+       },
+       {
+        "v": "Welke schatting past bij 240 × 365?",
+        "o": [
+         "\"ongeveer 250 × 350 = 87 500\"",
+         "\"ongeveer 250 × 35 = 8 750\"",
+         "\"ongeveer 200 + 365 = 565\"",
+         "\"ongeveer 2 400 × 365 = 876 000\""
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 0,
+        "u": "Controleer eenheid, grootte en of het antwoord in de situatie kan. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: 240 is ongeveer 250 en 365 ongeveer 350, dus rond 87 500.",
+         "Koos je \"\"ongeveer 250 × 35 = 8 750\"\"? Dan laat je een nul weg. 365 is ongeveer 350 en niet 35, dus de schatting is 87 500.",
+         "Koos je \"\"ongeveer 200 + 365 = 565\"\"? Dan tel je de getallen op. Het gaat om een product, dus je moet vermenigvuldigen.",
+         "Koos je \"\"ongeveer 2 400 × 365 = 876 000\"\"? Dan neem je een nul te veel. 240 is ongeveer 250, dus de schatting is 87 500."
+        ],
+        "uh": "Welke schatting past bij 240 × 365?",
+        "ctx": "Een bakkerij verkoopt gemiddeld 240 broden per dag. Een leerling berekent: in een jaar van 365 dagen zijn dat 8 760 broden. Hij wil zijn antwoord controleren met een schatting voordat hij het inlevert."
+       },
+       {
+        "v": "Is 8 760 broden in een jaar realistisch?",
+        "o": [
+         "\"ja, 8 760 is ongeveer 24 × 365\"",
+         "\"nee, het moet 876 000 zijn\"",
+         "\"nee, het moet ongeveer 87 600 zijn\"",
+         "\"ja, een bakkerij verkoopt weinig, I think\""
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 0,
+        "u": "Controleer eenheid, grootte en of het antwoord in de situatie kan. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"ja, 8 760 is ongeveer 24 × 365\"\"? Dan controleer je met 24 in plaats van 240. Dat is dezelfde fout als de leerling maakte, namelijk een nul te weinig.",
+         "Koos je \"\"nee, het moet 876 000 zijn\"\"? Dan maak je een fout in de andere richting. 876 000 is tien keer te groot, en het moet 87 600 zijn.",
+         "Klopt: 240 × 365 = 87 600 en de leerling is een factor 10 te laag.",
+         "Koos je \"\"ja, een bakkerij verkoopt weinig, I think\"\"? Dan redeneer je op gevoel. 240 broden per dag is niet weinig, en over een jaar is het veel meer dan 8 760."
+        ],
+        "uh": "Is 8 760 broden in een jaar realistisch?",
+        "ctx": "Een bakkerij verkoopt gemiddeld 240 broden per dag. Een leerling berekent: in een jaar van 365 dagen zijn dat 8 760 broden. Hij wil zijn antwoord controleren met een schatting voordat hij het inlevert."
+       },
+       {
+        "v": "Welke bewerking controleert 87 600 als antwoord op 240 × 365?",
+        "o": [
+         "\"87 600 − 365 = 87 235\"",
+         "\"87 600 : 365 = 240\"",
+         "\"87 600 × 240\"",
+         "\"87 600 : 240 = 3,65\""
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 3,
+        "u": "Controleer eenheid, grootte en of het antwoord in de situatie kan. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"87 600 − 365 = 87 235\"\"? Dan trek je 365 af. Een vermenigvuldiging controleer je met delen, dus 87 600 : 365.",
+         "Klopt: delen door de ene factor moet de andere geven.",
+         "Koos je \"\"87 600 × 240\"\"? Dan vermenigvuldig je nog een keer. Dat maakt het getal groter, en controleert niets.",
+         "Koos je \"\"87 600 : 240 = 3,65\"\"? Dan deel je door 240 en krijg je 365 delen door 100. Het klopt wel, maar 365 is dan niet 3,65 maar 365."
+        ],
+        "uh": "Welke bewerking controleert 87 600 als antwoord op 240 × 365?",
+        "ctx": "Een bakkerij verkoopt gemiddeld 240 broden per dag. Een leerling berekent: in een jaar van 365 dagen zijn dat 8 760 broden. Hij wil zijn antwoord controleren met een schatting voordat hij het inlevert."
+       },
+       {
+        "v": "Wat ontbreekt er bij het antwoord '15'?",
+        "o": [
+         "\"een komma\"",
+         "\"een min-teken\"",
+         "\"niets, 15 is genoeg, zeg maar\"",
+         "\"de eenheid: 15 uur\""
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 1,
+        "u": "Controleer eenheid, grootte en of het antwoord in de situatie kan. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"een komma\"\"? Dan denk je dat er een komma nodig is. Het getal 15 is geheel, en het probleem is de eenheid.",
+         "Koos je \"\"een min-teken\"\"? Dan denk je dat het negatief is. De tijd tot het bad vol is positief, en er ontbreekt een eenheid.",
+         "Koos je \"\"niets, 15 is genoeg, zeg maar\"\"? Dan denk je dat het getal alleen genoeg is. Een antwoord in de context heeft een eenheid, en daar ontbreekt hier 'uur'.",
+         "Klopt: zonder eenheid weet je niet of het uren, minuten of liters zijn."
+        ],
+        "uh": "Wat ontbreekt er bij het antwoord '15'?",
+        "ctx": "Een zwembad van 90 m³ wordt gevuld met 6 m³ per uur. Een leerling rekent 90 : 6 = 15 en schrijft alleen \"15\" op. Het zwembad is om 8.00 uur begonnen te vullen en moet om 22.00 uur vol zijn voor een wedstrijd."
+       },
+       {
+        "v": "Welke zin geeft het antwoord in de context?",
+        "o": [
+         "\"Het zwembad is na 15 uur vol.\"",
+         "\"Het zwembad is na 90 uur vol, eigenlijk.\"",
+         "\"15 m³ per uur\"",
+         "\"Het zwembad is vol bij 90.\""
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 4,
+        "u": "Controleer eenheid, grootte en of het antwoord in de situatie kan. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: de zin noemt het resultaat met eenheid in de situatie.",
+         "Koos je \"\"Het zwembad is na 90 uur vol, eigenlijk.\"\"? Dan verwar je het volume van 90 m³ met de tijd. De tijd is 90 : 6, en dat is 15 uur.",
+         "Koos je \"\"15 m³ per uur\"\"? Dan verwar je het antwoord met de stroomsnelheid. De 6 m³ per uur is gegeven, en niet 15.",
+         "Koos je \"\"Het zwembad is vol bij 90.\"\"? Dan schrijf je het volume zonder eenheid. De vraag was hoe lang het duurt, en dat is 15 uur."
+        ],
+        "uh": "Welke zin geeft het antwoord in de context?",
+        "ctx": "Een zwembad van 90 m³ wordt gevuld met 6 m³ per uur. Een leerling rekent 90 : 6 = 15 en schrijft alleen \"15\" op. Het zwembad is om 8.00 uur begonnen te vullen en moet om 22.00 uur vol zijn voor een wedstrijd."
+       },
+       {
+        "v": "Om hoe laat is het zwembad vol?",
+        "o": [
+         "\"om 22.00 uur, really\"",
+         "\"om 15.00 uur\"",
+         "\"om 23.00 uur\"",
+         "\"om 9.30 uur\""
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 4,
+        "u": "Controleer eenheid, grootte en of het antwoord in de situatie kan. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"om 22.00 uur, really\"\"? Dan neem je de tijd van de wedstrijd. Dat is de deadline, en niet het moment dat het bad vol is.",
+         "Koos je \"\"om 15.00 uur\"\"? Dan tel je 15 uur bij 0.00 uur op. Je begon om 8.00 uur, dus 8 + 15.",
+         "Klopt: 8.00 uur plus 15 uur is 23.00 uur, dus om elf uur 's avonds.",
+         "Koos je \"\"om 9.30 uur\"\"? Dan tel je 90 minuten op. Het duurt 15 uur, dus 8.00 plus 15 uur."
+        ],
+        "uh": "Om hoe laat is het zwembad vol?",
+        "ctx": "Een zwembad van 90 m³ wordt gevuld met 6 m³ per uur. Een leerling rekent 90 : 6 = 15 en schrijft alleen \"15\" op. Het zwembad is om 8.00 uur begonnen te vullen en moet om 22.00 uur vol zijn voor een wedstrijd."
+       },
+       {
+        "v": "Is het zwembad om 22.00 uur vol?",
+        "o": [
+         "\"ja, 15 uur komt overeen met 22.00 uur\"",
+         "\"nee, dan is het pas 84 m³ vol\"",
+         "\"ja, want 6 × 15 = 90\"",
+         "\"nee, want het bad is dan leeg\""
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 2,
+        "u": "Controleer eenheid, grootte en of het antwoord in de situatie kan. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"ja, 15 uur komt overeen met 22.00 uur\"\"? Dan reken je 15 uur van 7.00. Het begon om 8.00 uur, dus 15 uur later is 23.00.",
+         "Klopt: van 8.00 tot 22.00 is 14 uur en 14 × 6 = 84 m³, minder dan 90.",
+         "Koos je \"\"ja, want 6 × 15 = 90\"\"? Dan vergeet je dat er maar 14 uur voorbij zijn. 6 × 15 hoort bij 15 uur, en dat is 23.00.",
+         "Koos je \"\"nee, want het bad is dan leeg\"\"? Dan denk je dat het bad leeg is. Het bad wordt gevuld, en is dan voor 84 m³ vol."
+        ],
+        "uh": "Is het zwembad om 22.00 uur vol?",
+        "ctx": "Een zwembad van 90 m³ wordt gevuld met 6 m³ per uur. Een leerling rekent 90 : 6 = 15 en schrijft alleen \"15\" op. Het zwembad is om 8.00 uur begonnen te vullen en moet om 22.00 uur vol zijn voor een wedstrijd."
+       },
+       {
+        "v": "Controleer x = 28: wat is de waarde van 3x + 8?",
+        "o": [
+         "\"84\"",
+         "\"36\"",
+         "\"76\"",
+         "\"92\""
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 3,
+        "u": "Controleer eenheid, grootte en of het antwoord in de situatie kan. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"84\"\"? Dan vergeet je de + 8. Je moet 3x + 8 uitrekenen, dus 84 + 8.",
+         "Koos je \"\"36\"\"? Dan tel je 28 + 8. Je moet eerst 3 × 28 doen, en daarna + 8.",
+         "Koos je \"\"76\"\"? Dan verwar je de linkerkant met de rechterkant. 76 is 2x + 20, en niet 3x + 8.",
+         "Klopt: 3 × 28 = 84 en 84 + 8 = 92 voor de linkerkant."
+        ],
+        "uh": "Controleer x = 28: wat is de waarde van 3x + 8?",
+        "ctx": "Een leerling lost de vergelijking 3x + 8 = 2x + 20 op en vindt x = 28. De docent vraagt hem zijn antwoord te controleren door in te vullen, en daarna het goede antwoord te geven."
+       },
+       {
+        "v": "Wat is 2x + 20 bij x = 28?",
+        "o": [
+         "\"76\"",
+         "\"92\"",
+         "\"48\"",
+         "\"56\""
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 3,
+        "u": "Controleer eenheid, grootte en of het antwoord in de situatie kan. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: 2 × 28 = 56 en 56 + 20 = 76 voor de rechterkant.",
+         "Koos je \"\"92\"\"? Dan verwar je de rechterkant met de linkerkant. 92 is 3x + 8, en niet 2x + 20.",
+         "Koos je \"\"48\"\"? Dan tel je 28 + 20. Je moet eerst 2 × 28 doen, en daarna + 20.",
+         "Koos je \"\"56\"\"? Dan vergeet je de + 20. Je moet 2x + 20 uitrekenen, dus 56 + 20."
+        ],
+        "uh": "Wat is 2x + 20 bij x = 28?",
+        "ctx": "Een leerling lost de vergelijking 3x + 8 = 2x + 20 op en vindt x = 28. De docent vraagt hem zijn antwoord te controleren door in te vullen, en daarna het goede antwoord te geven."
+       },
+       {
+        "v": "Wat concludeer je uit 92 en 76?",
+        "o": [
+         "\"x = 28 klopt, want 92 is groter dan 76\"",
+         "\"x = 28 klopt, want beide kanten zijn even groot\"",
+         "\"x = 28 klopt niet, want 92 ≠ 76\"",
+         "\"je kunt het niet controleren\""
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 3,
+        "u": "Controleer eenheid, grootte en of het antwoord in de situatie kan. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"x = 28 klopt, want 92 is groter dan 76\"\"? Dan denk je dat groter goed is. Bij een oplossing moeten beide kanten gelijk zijn, en dat is niet zo.",
+         "Koos je \"\"x = 28 klopt, want beide kanten zijn even groot\"\"? Dan zie je 92 en 76 als gelijk. Dat zijn verschillende getallen, dus 28 klopt niet.",
+         "Klopt: bij een juiste oplossing zijn beide kanten gelijk.",
+         "Koos je \"\"je kunt het niet controleren\"\"? Dan denk je dat controleren niet kan. Je vult gewoon in, en dan zie je dat het niet klopt."
+        ],
+        "uh": "Wat concludeer je uit 92 en 76?",
+        "ctx": "Een leerling lost de vergelijking 3x + 8 = 2x + 20 op en vindt x = 28. De docent vraagt hem zijn antwoord te controleren door in te vullen, en daarna het goede antwoord te geven."
+       },
+       {
+        "v": "Wat is de juiste oplossing van 3x + 8 = 2x + 20?",
+        "o": [
+         "\"x = 28\"",
+         "\"x = 12\"",
+         "\"x = −12, gewoon\"",
+         "\"x = 6\""
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 2,
+        "u": "Controleer eenheid, grootte en of het antwoord in de situatie kan. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"x = 28\"\"? Dan tel je 20 en 8 op. Je moet 20 min 8 doen, en dat geeft x = 12.",
+         "Klopt: 3x − 2x = 20 − 8 geeft x = 12, en dat klopt als je invult.",
+         "Koos je \"\"x = −12, gewoon\"\"? Dan draai je het teken om. 20 − 8 is 12, en niet −12.",
+         "Koos je \"\"x = 6\"\"? Dan deel je 12 door 2 omdat er een 2x staat. Je trekt 2x af en deelt niet, dus x = 12."
+        ],
+        "uh": "Wat is de juiste oplossing van 3x + 8 = 2x + 20?",
+        "ctx": "Een leerling lost de vergelijking 3x + 8 = 2x + 20 op en vindt x = 28. De docent vraagt hem zijn antwoord te controleren door in te vullen, en daarna het goede antwoord te geven."
+       },
+       {
+        "v": "Welke zin geeft het antwoord in de context van de plant?",
+        "o": [
+         "\"H = 40\"",
+         "\"t = 8 weken en 40\"",
+         "\"De formule geeft 40, denk ik, zeg maar.\"",
+         "\"Na 8 weken is de plant 40 cm hoog.\""
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 4,
+        "u": "Controleer eenheid, grootte en of het antwoord in de situatie kan. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"H = 40\"\"? Dan schrijf je alleen de formule-uitkomst. Er staat geen eenheid en geen situatie, dus het is geen zin.",
+         "Koos je \"\"t = 8 weken en 40\"\"? Dan noem je getallen zonder verband. Er staat geen eenheid bij 40, dus het is geen antwoord.",
+         "Koos je \"\"De formule geeft 40, denk ik, zeg maar.\"\"? Dan noem je de formule als antwoord. Je moet zeggen wat 40 betekent, namelijk de hoogte van de plant.",
+         "Klopt: de zin noemt het resultaat met eenheid en situatie."
+        ],
+        "uh": "Welke zin geeft het antwoord in de context van de plant?",
+        "ctx": "Een model voor de hoogte H (in cm) van een plant na t weken is H = 12 + 3,5t. Een leerling berekent dat de plant na 8 weken 40 cm is en schrijft alleen: \"H = 40.\" Hij wordt gevraagd een zin te schrijven en het model te beoordelen."
+       },
+       {
+        "v": "Is het realistisch dat de plant na 100 weken 362 cm is?",
+        "o": [
+         "\"nee, planten groeien niet eindeloos 3,5 cm per week\"",
+         "\"ja, want 12 + 3,5 × 100 = 362 klopt\"",
+         "\"ja, een plant kan altijd doorgroeien, to be honest, you know\"",
+         "\"nee, want 362 is een oneven getal\""
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 2,
+        "u": "Controleer eenheid, grootte en of het antwoord in de situatie kan. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: het model is alleen bruikbaar voor een beperkte tijd.",
+         "Koos je \"\"ja, want 12 + 3,5 × 100 = 362 klopt\"\"? Dan controleer je alleen de berekening. De rekenstap klopt, maar het model is niet realistisch voor zo lang.",
+         "Koos je \"\"ja, een plant kan altijd doorgroeien, to be honest, you know\"\"? Dan denk je dat planten eindeloos blijven groeien. Een plant heeft een maximale hoogte, dus het model geldt niet voor 100 weken.",
+         "Koos je \"\"nee, want 362 is een oneven getal\"\"? Dan kijk je naar het getal zelf. Even of oneven zegt niets over realisme, dus dit is geen reden."
+        ],
+        "uh": "Is het realistisch dat de plant na 100 weken 362 cm is?",
+        "ctx": "Een model voor de hoogte H (in cm) van een plant na t weken is H = 12 + 3,5t. Een leerling berekent dat de plant na 8 weken 40 cm is en schrijft alleen: \"H = 40.\" Hij wordt gevraagd een zin te schrijven en het model te beoordelen."
+       }
+      ],
+      "oe": [
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een leerling berekent hoeveel water een kraan in 4 minuten geeft als er 12 liter per minuut uit komt. Hij schrijft: \"12 : 4 = 3.\" Je ziet meteen dat dit niet klopt, want in 4 minuten komt er meer water uit dan in 1 minuut, en het antwoord heeft geen eenheid.",
+        "v": "Leg uit wat er mis is, geef de juiste berekening en schrijf het antwoord als zin met eenheid.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Hij deelt, maar je moet vermenigvuldigen (1p). 12 × 4 = 48 (1p). In 4 minuten komt er 48 liter water uit de kraan (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een model voor de prijs P (in euro) van een tweedehands fiets na t jaar is P = 400 − 60t. Een leerling berekent P voor t = 8 en vindt P = −80. Hij schrijft: \"De fiets kost min 80 euro.\" Het model is bedoeld voor fietsen tot 5 jaar oud.",
+        "v": "Leg uit waarom dit antwoord niet realistisch is en wat het zegt over het model.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Een prijs kan niet negatief zijn (1p). Bij t = 8 ligt buiten het bereik van het model (1p). Het model geldt alleen tot t = 5 of tot 6,7 jaar (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een leerling lost 5x − 7 = 3x + 9 op en vindt x = 1. Je wilt hem helpen zijn antwoord te controleren door in te vullen, en daarna het goede antwoord te geven.",
+        "v": "Controleer x = 1 door in te vullen en geef de juiste oplossing.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Links 5 − 7 = −2, rechts 3 + 9 = 12 (1p). Dus x = 1 klopt niet (1p). 2x = 16 geeft x = 8 (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een leerling schat 49 × 21 als \"ongeveer 50 × 20 = 1000\". Daarna rekent hij uit: 49 × 21 = 1029. Hij vraagt zich af of zijn schatting en antwoord bij elkaar passen, en welke schatting hij nu beter had kunnen gebruiken.",
+        "v": "Leg uit of schatting en antwoord bij elkaar passen en bereken hoeveel de schatting afwijkt.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Ja, 1029 ligt dicht bij 1000 (1p). Het verschil is 29 (1p). De schatting is bruikbaar als controle op de grootteorde (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een klasgenoot zegt: \"Als mijn rekenmachine het antwoord geeft, hoef ik niet meer na te denken of het kan kloppen.\" Jij vindt dat hij toch moet controleren, ook als hij met een rekenmachine werkt.",
+        "v": "Leg in twee zinnen uit waarom je een antwoord ook bij een rekenmachine moet controleren, met een voorbeeld.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Je kunt een verkeerd getal intoetsen (1p). Voorbeeld: 240 × 365 geeft 8 760 als je een nul vergeet (1p). Schatten laat zien dat het antwoord niet klopt (1p)."
+       }
+      ]
      }
     ]
    },

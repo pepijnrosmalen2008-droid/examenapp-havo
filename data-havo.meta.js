@@ -887,6 +887,27 @@ var VAKKEN = [
       "nOe": 5,
       "nBeg": 12,
       "hasSam": true
+     },
+     {
+      "id": "A4",
+      "lo": "wa.A.4",
+      "gs": 2,
+      "naam": "Je antwoord controleren en terugvertalen naar de context",
+      "beschrijving": "Je controleert je antwoord: je schat de grootteorde, kijkt naar de eenheid, vult je oplossing in, beoordeelt of het antwoord in de situatie kan en schrijft je conclusie als een zin met eenheid.",
+      "ceStatus": "CE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Schatten en grootteorde",
+       "Eenheden controleren",
+       "Realistische antwoorden en bereik",
+       "Controleren door invullen",
+       "Terugvertalen in een zin"
+      ],
+      "nSv": 27,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
      }
     ]
    },
