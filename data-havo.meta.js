@@ -845,6 +845,27 @@ var VAKKEN = [
       "nOe": 5,
       "nBeg": 12,
       "hasSam": true
+     },
+     {
+      "id": "A2",
+      "lo": "wa.A.2",
+      "gs": 2,
+      "naam": "Een situatie vertalen naar een wiskundig model",
+      "beschrijving": "Je vertaalt een situatie met cijfers naar een wiskundig model: je schrijft op wat gegeven en gevraagd is, kiest variabelen, stelt een lineaire formule op, rekent met invullen en vergelijkingen, vergelijkt twee modellen en vertaalt het antwoord terug naar de context.",
+      "ceStatus": "CE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Gegeven en gevraagd ordenen",
+       "Een formule opstellen",
+       "Met een formule rekenen",
+       "Twee modellen vergelijken",
+       "Betekenis terugvertalen"
+      ],
+      "nSv": 27,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
      }
     ]
    },

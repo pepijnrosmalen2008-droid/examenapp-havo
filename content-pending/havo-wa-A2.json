@@ -1,0 +1,682 @@
+{
+ "id": "A2",
+ "lo": "wa.A.2",
+ "gs": 2,
+ "naam": "Een situatie vertalen naar een wiskundig model",
+ "beschrijving": "Je vertaalt een situatie met cijfers naar een wiskundig model: je schrijft op wat gegeven en gevraagd is, kiest variabelen, stelt een lineaire formule op, rekent met invullen en vergelijkingen, vergelijkt twee modellen en vertaalt het antwoord terug naar de context.",
+ "ceStatus": "CE",
+ "binas": "",
+ "val": "",
+ "onderwerpen": [
+  "Gegeven en gevraagd ordenen",
+  "Een formule opstellen",
+  "Met een formule rekenen",
+  "Twee modellen vergelijken",
+  "Betekenis terugvertalen"
+ ],
+ "sam": "Schrijf op wat gegeven en gevraagd is en kies variabelen. Een lineaire formule heeft een beginwaarde en een stijging per eenheid, zoals K = 4,50 + 2,20k. Met invullen reken je een waarde uit en met een vergelijking vind je een onbekende. Het snijpunt van twee lijnen is waar twee modellen gelijk zijn. Vertaal je antwoord terug met een eenheid.",
+ "begrippen": [
+  {
+   "t": "Model",
+   "d": "Een formule of tabel die een situatie vereenvoudigd weergeeft."
+  },
+  {
+   "t": "Variabele",
+   "d": "Een letter voor een getal dat kan veranderen, zoals k of t."
+  },
+  {
+   "t": "Formule",
+   "d": "Een regel die de ene grootheid uit de andere berekent, zoals K = 4,50 + 2,20k."
+  },
+  {
+   "t": "Gegeven",
+   "d": "Wat er in de opgave al staat, zoals getallen en tarieven."
+  },
+  {
+   "t": "Gevraagd",
+   "d": "Wat je moet uitrekenen of aantonen."
+  },
+  {
+   "t": "Beginwaarde",
+   "d": "De waarde bij 0, zoals het starttarief of de beginhoogte."
+  },
+  {
+   "t": "Stijging per eenheid",
+   "d": "Hoeveel de uitkomst verandert als de variabele met 1 toeneemt."
+  },
+  {
+   "t": "Vergelijking",
+   "d": "Twee uitdrukkingen die gelijk zijn, zoals 15 + 2t = 9 + 3t."
+  },
+  {
+   "t": "Snijpunt",
+   "d": "Het punt waar twee grafieken elkaar kruisen en twee modellen gelijk zijn."
+  },
+  {
+   "t": "Invullen",
+   "d": "Een getal voor de variabele in de formule zetten."
+  },
+  {
+   "t": "Terugvertalen",
+   "d": "Het antwoord weer in de context zetten, met eenheid."
+  },
+  {
+   "t": "Context",
+   "d": "De situatie waarin de opgave speelt."
+  }
+ ],
+ "sv": [
+  {
+   "v": "Er staat: 'Hoeveel kost een taxirit van 8 km?' Wat is de gevraagde grootheid?",
+   "o": [
+    "\"de afstand van 8 km\"",
+    "\"de kosten van de rit\"",
+    "\"het starttarief\"",
+    "\"de prijs per kilometer\""
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 0,
+   "u": "Zoek eerst gegeven en gevraagd en stel dan de formule op. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"de afstand van 8 km\"\"? Dan neem je de afstand als gevraagd. De 8 km is al gegeven, en je rekent juist de kosten uit.",
+    "Klopt: gevraagd is wat je moet uitrekenen, hier het bedrag van de rit.",
+    "Koos je \"\"het starttarief\"\"? Dan pak je een deel van de prijs. Het starttarief is gegeven, en niet wat gevraagd wordt.",
+    "Koos je \"\"de prijs per kilometer\"\"? Dan kies je het tarief. Dat is gegeven, en je berekent het eindbedrag."
+   ],
+   "uh": "Er staat: 'Hoeveel kost een taxirit van 8 km?' Wat is de gevraagde grootheid?"
+  },
+  {
+   "v": "Een ton heeft 120 liter en verliest 4 liter per uur. Wat is hier 'gegeven'?",
+   "o": [
+    "\"het aantal uren tot de ton leeg is\"",
+    "\"de formule\"",
+    "\"het eindantwoord\"",
+    "\"120 liter en 4 liter per uur\""
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 0,
+   "u": "Zoek eerst gegeven en gevraagd en stel dan de formule op. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"het aantal uren tot de ton leeg is\"\"? Dan pak je een antwoord. Dat reken je pas uit, en het is niet gegeven.",
+    "Koos je \"\"de formule\"\"? Dan neem je het model. De formule stel je zelf op, en hij staat niet in de tekst.",
+    "Koos je \"\"het eindantwoord\"\"? Dan kies je het resultaat. Dat bereken je, en het is nog niet gegeven.",
+    "Klopt: gegeven zijn de getallen die al in de tekst staan."
+   ],
+   "uh": "Een ton heeft 120 liter en verliest 4 liter per uur. Wat is hier 'gegeven'?"
+  },
+  {
+   "v": "Een taxi rekent €3 start en €2 per km. Welke formule geeft de kosten K bij k kilometer?",
+   "o": [
+    "\"K = 3 + 2k\"",
+    "\"K = 2 + 3k\"",
+    "\"K = 5k\"",
+    "\"K = 3 × 2 × k\""
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 1,
+   "u": "Zoek eerst gegeven en gevraagd en stel dan de formule op. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: de start telt eenmalig en €2 komt voor elke kilometer erbij.",
+    "Koos je \"\"K = 2 + 3k\"\"? Dan wissel je start en prijs per kilometer om. De 3 is het starttarief, en de 2 hoort bij de kilometers.",
+    "Koos je \"\"K = 5k\"\"? Dan tel je start en prijs per km bij elkaar op en vermenigvuldig je met k. Het starttarief betaal je maar één keer, dus niet per kilometer.",
+    "Koos je \"\"K = 3 × 2 × k\"\"? Dan vermenigvuldig je start en prijs. Je moet optellen, omdat de start eenmalig is."
+   ],
+   "uh": "Een taxi rekent €3 start en €2 per km. Welke formule geeft de kosten K bij k kilometer?"
+  },
+  {
+   "v": "In de formule y = 40 + 5x: wat betekent het getal 40?",
+   "o": [
+    "\"de groei per eenheid, you know, I think\"",
+    "\"de waarde van x\"",
+    "\"de beginwaarde, dus y bij x = 0\"",
+    "\"de eenheid van x\""
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 4,
+   "u": "Zoek eerst gegeven en gevraagd en stel dan de formule op. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"de groei per eenheid, you know, I think\"\"? Dan neem je het getal 5 voor 40. Het getal 5 is de groei per eenheid, en 40 de beginwaarde.",
+    "Koos je \"\"de waarde van x\"\"? Dan denk je dat 40 de waarde van x is. x is de variabele, en kan elke waarde hebben.",
+    "Klopt: als x gelijk is aan 0 blijft alleen 40 over.",
+    "Koos je \"\"de eenheid van x\"\"? Dan pak je een eenheid. 40 is een getal, en een eenheid is een woord als km of uur."
+   ],
+   "uh": "In de formule y = 40 + 5x: wat betekent het getal 40?"
+  },
+  {
+   "v": "Bereken K = 3 + 2k voor k = 10.",
+   "o": [
+    "\"50\"",
+    "\"23\"",
+    "\"32\"",
+    "\"20\""
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 2,
+   "u": "Zoek eerst gegeven en gevraagd en stel dan de formule op. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"50\"\"? Dan reken je (3 + 2) × 10 uit en tel je dus eerst op. Eerst vermenigvuldigen en dan optellen, dus eerst 2 × 10 en dan 3 + 20.",
+    "Klopt: eerst 2 × 10 = 20 vermenigvuldigen en dan 3 optellen geeft 23.",
+    "Koos je \"\"32\"\"? Dan draai je de cijfers van de uitkomst om. 3 + 20 is 23 en niet 32, dus controleer je optelling nog een keer.",
+    "Koos je \"\"20\"\"? Dan vergeet je het starttarief van 3 euro. Alleen 2 × 10 telt dan mee, maar het starttarief hoort bij elke rit mee, dus de uitkomst is 3 + 20 en dat is dus 23 euro."
+   ],
+   "uh": "Bereken K = 3 + 2k voor k = 10."
+  },
+  {
+   "v": "Twee abonnementen: A = 10 + 4m en B = 6m. Wanneer zijn ze even duur?",
+   "o": [
+    "\"bij m = 10, I think\"",
+    "\"bij m = 2\"",
+    "\"bij m = 1\"",
+    "\"bij m = 5\""
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 3,
+   "u": "Zoek eerst gegeven en gevraagd en stel dan de formule op. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"bij m = 10, I think\"\"? Dan neem je het startbedrag als aantal maanden. Je moet 10 = 2m oplossen, en dat geeft 5.",
+    "Koos je \"\"bij m = 2\"\"? Dan neem je het verschil in prijs als aantal maanden. 6 min 4 is 2, maar je moet nog door 10 delen.",
+    "Koos je \"\"bij m = 1\"\"? Dan vul je m = 1 in. Dan is A gelijk aan 14 en B gelijk aan 6, dus ze zijn niet even duur.",
+    "Klopt: 10 + 4m = 6m geeft 10 = 2m en dus m = 5."
+   ],
+   "uh": "Twee abonnementen: A = 10 + 4m en B = 6m. Wanneer zijn ze even duur?"
+  },
+  {
+   "v": "In V = 120 − 4t: wat betekent het min-teken voor de 4?",
+   "o": [
+    "\"elk uur gaat er 4 liter af\"",
+    "\"elk uur komt er 4 liter bij, to be honest\"",
+    "\"na 4 uur is de ton leeg\"",
+    "\"er zit 4 liter in de ton\""
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 4,
+   "u": "Zoek eerst gegeven en gevraagd en stel dan de formule op. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: het min-teken laat zien dat de hoeveelheid afneemt.",
+    "Koos je \"\"elk uur komt er 4 liter bij, to be honest\"\"? Dan draai je het teken om. Een plus zou toenemen, en hier staat een min.",
+    "Koos je \"\"na 4 uur is de ton leeg\"\"? Dan pak je 4 als tijd. Het is de afname per uur, en niet het aantal uren.",
+    "Koos je \"\"er zit 4 liter in de ton\"\"? Dan neem je 4 als beginwaarde. De beginwaarde is 120, en 4 is de afname."
+   ],
+   "uh": "In V = 120 − 4t: wat betekent het min-teken voor de 4?"
+  },
+  {
+   "v": "Welke formule geeft de taxikosten K bij k kilometer?",
+   "o": [
+    "\"K = 2,20 + 4,50k, zeg maar\"",
+    "\"K = 6,70k\"",
+    "\"K = 4,50 + 2,20k\"",
+    "\"K = 4,50k + 2,20\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 1,
+   "u": "Zoek eerst gegeven en gevraagd en stel dan de formule op. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"K = 2,20 + 4,50k, zeg maar\"\"? Dan wissel je start en kilometerprijs om. 4,50 is het starttarief, en 2,20 komt per kilometer.",
+    "Koos je \"\"K = 6,70k\"\"? Dan tel je 4,50 en 2,20 op en vermenigvuldig je met k. Het starttarief betaal je maar één keer, niet per kilometer.",
+    "Klopt: het starttarief 4,50 komt één keer, en 2,20 telt voor elke kilometer.",
+    "Koos je \"\"K = 4,50k + 2,20\"\"? Dan pak je de groei en de beginwaarde verkeerd. 4,50 is de beginwaarde, en 2,20 de stijging per km."
+   ],
+   "uh": "Welke formule geeft de taxikosten K bij k kilometer?",
+   "ctx": "Een taxibedrijf rekent een starttarief van €4,50 plus €2,20 per gereden kilometer. Je wilt de kosten K (in euro) als formule van het aantal kilometers k opstellen en daarmee ritten doorrekenen."
+  },
+  {
+   "v": "Hoeveel kost een rit van 12 km?",
+   "o": [
+    "\"€26,40\"",
+    "\"€30,90\"",
+    "\"€80,40\"",
+    "\"€56,20\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 2,
+   "u": "Zoek eerst gegeven en gevraagd en stel dan de formule op. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"€26,40\"\"? Dan vergeet je het starttarief. 2,20 × 12 is 26,40, maar je moet nog 4,50 bijtellen.",
+    "Klopt: 4,50 + 2,20 × 12 = 4,50 + 26,40 = 30,90.",
+    "Koos je \"\"€80,40\"\"? Dan reken je met 6,70 per kilometer. Het starttarief betaal je maar één keer, dus niet 12 keer.",
+    "Koos je \"\"€56,20\"\"? Dan vermenigvuldig je het starttarief met 12. Je moet 2,20 met 12 vermenigvuldigen, en daarna 4,50 optellen."
+   ],
+   "uh": "Hoeveel kost een rit van 12 km?",
+   "ctx": "Een taxibedrijf rekent een starttarief van €4,50 plus €2,20 per gereden kilometer. Je wilt de kosten K (in euro) als formule van het aantal kilometers k opstellen en daarmee ritten doorrekenen."
+  },
+  {
+   "v": "Hoeveel hele kilometer kun je rijden voor €40?",
+   "o": [
+    "\"18 km\"",
+    "\"17 km\"",
+    "\"35,5 km\"",
+    "\"16 km\""
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 2,
+   "u": "Zoek eerst gegeven en gevraagd en stel dan de formule op. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"18 km\"\"? Dan vergeet je het starttarief. 40 gedeeld door 2,20 is 18,2, maar eerst gaat 4,50 eraf.",
+    "Koos je \"\"17 km\"\"? Dan rond je naar boven af. Bij 17 km kost de rit 41,90, en dat is meer dan 40.",
+    "Koos je \"\"35,5 km\"\"? Dan laat je het delen door 2,20 weg. 35,50 is het bedrag na aftrek van de start, en nog niet het aantal kilometers.",
+    "Klopt: 4,50 + 2,20k = 40 geeft k = 35,50/2,20 ≈ 16,1, dus 16 hele km."
+   ],
+   "uh": "Hoeveel hele kilometer kun je rijden voor €40?",
+   "ctx": "Een taxibedrijf rekent een starttarief van €4,50 plus €2,20 per gereden kilometer. Je wilt de kosten K (in euro) als formule van het aantal kilometers k opstellen en daarmee ritten doorrekenen."
+  },
+  {
+   "v": "Wat betekent het getal 2,20 in de formule?",
+   "o": [
+    "\"de kosten per kilometer\"",
+    "\"de kosten bij 0 km\"",
+    "\"het aantal kilometers\"",
+    "\"de totale kosten van de rit\""
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 4,
+   "u": "Zoek eerst gegeven en gevraagd en stel dan de formule op. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: 2,20 is de stijging van de kosten voor elke extra kilometer.",
+    "Koos je \"\"de kosten bij 0 km\"\"? Dan pak je het starttarief. Dat is 4,50, en 2,20 is de groei.",
+    "Koos je \"\"het aantal kilometers\"\"? Dan neem je de variabele k. Het getal 2,20 is een vast tarief, en geen aantal.",
+    "Koos je \"\"de totale kosten van de rit\"\"? Dan neem je K. K hangt af van het aantal kilometers, en 2,20 is maar een deel ervan."
+   ],
+   "uh": "Wat betekent het getal 2,20 in de formule?",
+   "ctx": "Een taxibedrijf rekent een starttarief van €4,50 plus €2,20 per gereden kilometer. Je wilt de kosten K (in euro) als formule van het aantal kilometers k opstellen en daarmee ritten doorrekenen."
+  },
+  {
+   "v": "Welke formules horen bij sportschool A en B (m = aantal maanden)?",
+   "o": [
+    "\"A = 30 + 25m en B = 38m\"",
+    "\"A = 25m + 30 en B = 38 + m\"",
+    "\"A = 25 + 30m en B = 38m\"",
+    "\"A = 55m en B = 38m\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 1,
+   "u": "Zoek eerst gegeven en gevraagd en stel dan de formule op. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"A = 30 + 25m en B = 38m\"\"? Dan wissel je inschrijfgeld en maandprijs om. Het inschrijfgeld is 25, en 30 is de maandprijs.",
+    "Koos je \"\"A = 25m + 30 en B = 38 + m\"\"? Dan zet dit je de variabele bij de verkeerde getallen. De maanden horen bij het maandbedrag, en niet bij het inschrijfgeld.",
+    "Klopt: A heeft 25 eenmalig plus 30 per maand en B alleen 38 per maand.",
+    "Koos je \"\"A = 55m en B = 38m\"\"? Dan tel je inschrijfgeld en maandprijs op en vermenigvuldig je met m. Het inschrijfgeld betaal je maar één keer, dus niet elke maand."
+   ],
+   "uh": "Welke formules horen bij sportschool A en B (m = aantal maanden)?",
+   "ctx": "Sportschool A vraagt €25 inschrijfgeld en €30 per maand. Sportschool B vraagt geen inschrijfgeld, maar €38 per maand. Je wilt weten na hoeveel maanden A goedkoper is dan B. Neem m voor het aantal maanden."
+  },
+  {
+   "v": "Na hoeveel maanden zijn A en B precies even duur?",
+   "o": [
+    "\"na 8 maanden\"",
+    "\"na 3,125 maanden\"",
+    "\"na 25 maanden\"",
+    "\"na 0,32 maanden, I suppose\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 3,
+   "u": "Zoek eerst gegeven en gevraagd en stel dan de formule op. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"na 8 maanden\"\"? Dan neem je het verschil in maandprijs als aantal maanden. Je moet 25 delen door 8, en dat geeft 3,125.",
+    "Klopt: 25 + 30m = 38m geeft 25 = 8m, dus m = 3,125.",
+    "Koos je \"\"na 25 maanden\"\"? Dan neem je het inschrijfgeld als aantal maanden. Dat is een bedrag, en geen tijd.",
+    "Koos je \"\"na 0,32 maanden, I suppose\"\"? Dan deel je 8 door 25. Je moet 25 door 8 delen, dus 3,125."
+   ],
+   "uh": "Na hoeveel maanden zijn A en B precies even duur?",
+   "ctx": "Sportschool A vraagt €25 inschrijfgeld en €30 per maand. Sportschool B vraagt geen inschrijfgeld, maar €38 per maand. Je wilt weten na hoeveel maanden A goedkoper is dan B. Neem m voor het aantal maanden."
+  },
+  {
+   "v": "Vanaf hoeveel hele maanden is A goedkoper dan B?",
+   "o": [
+    "\"vanaf 3 maanden\"",
+    "\"vanaf 5 maanden\"",
+    "\"vanaf 25 maanden, you know\"",
+    "\"vanaf 4 maanden\""
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 3,
+   "u": "Zoek eerst gegeven en gevraagd en stel dan de formule op. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"vanaf 3 maanden\"\"? Dan rond je 3,125 naar beneden af. Na 3 maanden kost A 115 en B 114, dus B is dan nog goedkoper.",
+    "Koos je \"\"vanaf 5 maanden\"\"? Dan rond je te ver naar boven af. Na 4 maanden is A al goedkoper, dus 5 is te laat.",
+    "Koos je \"\"vanaf 25 maanden, you know\"\"? Dan neem je het inschrijfgeld als aantal maanden. Dat is een bedrag, en het kantelpunt ligt bij 4 maanden.",
+    "Klopt: na 3 maanden kost A 115 en B 114, na 4 maanden kost A 145 en B 152."
+   ],
+   "uh": "Vanaf hoeveel hele maanden is A goedkoper dan B?",
+   "ctx": "Sportschool A vraagt €25 inschrijfgeld en €30 per maand. Sportschool B vraagt geen inschrijfgeld, maar €38 per maand. Je wilt weten na hoeveel maanden A goedkoper is dan B. Neem m voor het aantal maanden."
+  },
+  {
+   "v": "Welke formule geeft het aantal liter V na t uur?",
+   "o": [
+    "\"V = 120 − 4t\"",
+    "\"V = 120 + 4t, gewoon\"",
+    "\"V = 4 − 120t\"",
+    "\"V = 4t − 120\""
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 1,
+   "u": "Zoek eerst gegeven en gevraagd en stel dan de formule op. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: je begint met 120 en er gaat 4 liter per uur af.",
+    "Koos je \"\"V = 120 + 4t, gewoon\"\"? Dan kies je een plus. De ton verliest water, dus het aantal liter neemt af.",
+    "Koos je \"\"V = 4 − 120t\"\"? Dan wissel je begin en afname om. De beginhoeveelheid is 120, en 4 is de afname per uur.",
+    "Koos je \"\"V = 4t − 120\"\"? Dan draai je de volgorde om. Dan krijg je een negatieve beginwaarde, en dat klopt niet met 120 liter."
+   ],
+   "uh": "Welke formule geeft het aantal liter V na t uur?",
+   "ctx": "Een regenton bevat 120 liter water. Door een lek verliest hij 4 liter per uur. Je wilt een formule voor de hoeveelheid water V (in liter) na t uur opstellen en berekenen wanneer de ton leeg is."
+  },
+  {
+   "v": "Hoeveel liter zit er na 7 uur in de ton?",
+   "o": [
+    "\"28 liter\"",
+    "\"148 liter, I think\"",
+    "\"92 liter\"",
+    "\"116 liter\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 2,
+   "u": "Zoek eerst gegeven en gevraagd en stel dan de formule op. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"28 liter\"\"? Dan neem je alleen het verlies. Je moet dat van 120 aftrekken, en dan houd je 92 over.",
+    "Koos je \"\"148 liter, I think\"\"? Dan tel je het verlies erbij op. De ton verliest water, dus je moet aftrekken.",
+    "Klopt: V = 120 − 4 × 7 = 120 − 28 = 92 liter na 7 uur.",
+    "Koos je \"\"116 liter\"\"? Dan trek je maar 1 uur af. Er is 7 uur verlopen, dus 7 × 4 gaat eraf."
+   ],
+   "uh": "Hoeveel liter zit er na 7 uur in de ton?",
+   "ctx": "Een regenton bevat 120 liter water. Door een lek verliest hij 4 liter per uur. Je wilt een formule voor de hoeveelheid water V (in liter) na t uur opstellen en berekenen wanneer de ton leeg is."
+  },
+  {
+   "v": "Na hoeveel uur is de ton leeg?",
+   "o": [
+    "\"na 480 uur\"",
+    "\"na 30 uur\"",
+    "\"na 116 uur\"",
+    "\"na 0,03 uur\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 2,
+   "u": "Zoek eerst gegeven en gevraagd en stel dan de formule op. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"na 480 uur\"\"? Dan vermenigvuldig je 120 met 4. Je moet 120 delen door 4, en dat is 30.",
+    "Klopt: 120 − 4t = 0 geeft 4t = 120 en dus t = 30.",
+    "Koos je \"\"na 116 uur\"\"? Dan trek je 4 van 120 af. Je moet delen door 4, en dat geeft 30.",
+    "Koos je \"\"na 0,03 uur\"\"? Dan deel je 4 door 120. Je moet 120 delen door 4, dus 30 uur."
+   ],
+   "uh": "Na hoeveel uur is de ton leeg?",
+   "ctx": "Een regenton bevat 120 liter water. Door een lek verliest hij 4 liter per uur. Je wilt een formule voor de hoeveelheid water V (in liter) na t uur opstellen en berekenen wanneer de ton leeg is."
+  },
+  {
+   "v": "Welke twee formules horen bij de situatie (t = aantal weken)?",
+   "o": [
+    "\"HA = 2 + 15t en HB = 3 + 9t, zeg maar\"",
+    "\"HA = 15 + 3t en HB = 9 + 2t\"",
+    "\"HA = 17t en HB = 12t\"",
+    "\"HA = 15 + 2t en HB = 9 + 3t\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 1,
+   "u": "Zoek eerst gegeven en gevraagd en stel dan de formule op. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"HA = 2 + 15t en HB = 3 + 9t, zeg maar\"\"? Dan wissel je beginhoogte en groei om. 15 en 9 zijn de beginhoogtes, en 2 en 3 de groei per week.",
+    "Koos je \"\"HA = 15 + 3t en HB = 9 + 2t\"\"? Dan wissel je de groeisnelheden van A en B om. Plant A groeit 2 per week, en plant B 3.",
+    "Koos je \"\"HA = 17t en HB = 12t\"\"? Dan tel je beginhoogte en groei bij elkaar op en vermenigvuldig je met t. De beginhoogte tel je maar één keer, dus niet elke week.",
+    "Klopt: beginhoogte plus groei per week voor elke plant."
+   ],
+   "uh": "Welke twee formules horen bij de situatie (t = aantal weken)?",
+   "ctx": "Plant A is nu 15 cm hoog en groeit 2 cm per week. Plant B is nu 9 cm hoog en groeit 3 cm per week. Je wilt weten wanneer de planten even hoog zijn en hoe hoog ze dan zijn. Neem t voor het aantal weken vanaf nu."
+  },
+  {
+   "v": "Na hoeveel weken zijn de planten even hoog?",
+   "o": [
+    "\"na 6 weken\"",
+    "\"na 3 weken\"",
+    "\"na 24 weken, you know\"",
+    "\"na 12 weken\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 3,
+   "u": "Zoek eerst gegeven en gevraagd en stel dan de formule op. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: 15 + 2t = 9 + 3t geeft 15 − 9 = 3t − 2t, dus t = 6.",
+    "Koos je \"\"na 3 weken\"\"? Dan deel je 6 door 2. Je moet 6 = t oplossen, en t is meteen 6.",
+    "Koos je \"\"na 24 weken, you know\"\"? Dan tel je 15 en 9 bij elkaar op. Je moet het verschil van 6 nemen, en niet de som.",
+    "Koos je \"\"na 12 weken\"\"? Dan verdubbel je het antwoord. Je moet 15 + 2t = 9 + 3t oplossen, en dat is t = 6."
+   ],
+   "uh": "Na hoeveel weken zijn de planten even hoog?",
+   "ctx": "Plant A is nu 15 cm hoog en groeit 2 cm per week. Plant B is nu 9 cm hoog en groeit 3 cm per week. Je wilt weten wanneer de planten even hoog zijn en hoe hoog ze dan zijn. Neem t voor het aantal weken vanaf nu."
+  },
+  {
+   "v": "Hoe hoog zijn beide planten dan?",
+   "o": [
+    "\"21 cm, gewoon\"",
+    "\"12 cm\"",
+    "\"27 cm\"",
+    "\"6 cm\""
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 2,
+   "u": "Zoek eerst gegeven en gevraagd en stel dan de formule op. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"21 cm, gewoon\"\"? Dan tel je 15 en 6 bij elkaar op. Je moet de groei van 2 × 6 gebruiken, en dan krijg je 27.",
+    "Koos je \"\"12 cm\"\"? Dan neem je 2 × 6 als hoogte. De beginhoogte van 15 hoort erbij, dus 27.",
+    "Klopt: HA(6) = 15 + 12 = 27 en HB(6) = 9 + 18 = 27.",
+    "Koos je \"\"6 cm\"\"? Dan neem je het aantal weken als hoogte. Dat is de tijd, en niet de hoogte."
+   ],
+   "uh": "Hoe hoog zijn beide planten dan?",
+   "ctx": "Plant A is nu 15 cm hoog en groeit 2 cm per week. Plant B is nu 9 cm hoog en groeit 3 cm per week. Je wilt weten wanneer de planten even hoog zijn en hoe hoog ze dan zijn. Neem t voor het aantal weken vanaf nu."
+  },
+  {
+   "v": "Welke plant is na 10 weken het hoogst, en hoeveel cm?",
+   "o": [
+    "\"plant A met 35 cm, denk ik\"",
+    "\"plant B met 39 cm\"",
+    "\"plant B met 30 cm\"",
+    "\"plant A met 37 cm\""
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 3,
+   "u": "Zoek eerst gegeven en gevraagd en stel dan de formule op. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"plant A met 35 cm, denk ik\"\"? Dan kies je de plant die vooraan begon. Na 6 weken haalt B A in, en na 10 weken is B hoger.",
+    "Klopt: HA = 15 + 20 = 35 en HB = 9 + 30 = 39.",
+    "Koos je \"\"plant B met 30 cm\"\"? Dan vergeet je de beginhoogte van 9. Die hoort erbij, dus HB is 39.",
+    "Koos je \"\"plant A met 37 cm\"\"? Dan reken je met 15 + 2 × 11. Na 10 weken is het 15 + 2 × 10, dus 35."
+   ],
+   "uh": "Welke plant is na 10 weken het hoogst, en hoeveel cm?",
+   "ctx": "Plant A is nu 15 cm hoog en groeit 2 cm per week. Plant B is nu 9 cm hoog en groeit 3 cm per week. Je wilt weten wanneer de planten even hoog zijn en hoe hoog ze dan zijn. Neem t voor het aantal weken vanaf nu."
+  },
+  {
+   "v": "Hoeveel is de maandprijs met 25% korting?",
+   "o": [
+    "\"€2\"",
+    "\"€7,25\"",
+    "\"€10\"",
+    "\"€6\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 2,
+   "u": "Zoek eerst gegeven en gevraagd en stel dan de formule op. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"€2\"\"? Dan neem je alleen de korting. Je moet die van 8 aftrekken, en dan betaal je 6.",
+    "Koos je \"\"€7,25\"\"? Dan trek je 0,75 af van 8. Je moet 25 procent van 8 aftrekken, en dat is 2.",
+    "Koos je \"\"€10\"\"? Dan tel je de korting erbij op. Een korting trek je af, en maakt de prijs lager.",
+    "Klopt: 25% van 8 is 2 euro korting en 8 min 2 is 6 euro."
+   ],
+   "uh": "Hoeveel is de maandprijs met 25% korting?",
+   "ctx": "Een app kost €8 per maand. Wie een jaarabonnement neemt, krijgt 25% korting op de maandprijs en betaalt het hele jaar ineens. Je wilt weten wat je voor een jaar betaalt en wat je bespaart."
+  },
+  {
+   "v": "Hoeveel betaal je voor een jaar met korting?",
+   "o": [
+    "\"€72\"",
+    "\"€96\"",
+    "\"€24\"",
+    "\"€60\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 2,
+   "u": "Zoek eerst gegeven en gevraagd en stel dan de formule op. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: een jaar heeft 12 maanden en 12 × 6 = 72 euro.",
+    "Koos je \"\"€96\"\"? Dan reken je zonder korting. 12 × 8 is 96, en met korting betaal je 12 × 6.",
+    "Koos je \"\"€24\"\"? Dan neem je 12 × 2. Dat is de totale korting, en niet wat je betaalt.",
+    "Koos je \"\"€60\"\"? Dan neem je 10 maanden. Een jaar heeft 12 maanden, dus 12 × 6."
+   ],
+   "uh": "Hoeveel betaal je voor een jaar met korting?",
+   "ctx": "Een app kost €8 per maand. Wie een jaarabonnement neemt, krijgt 25% korting op de maandprijs en betaalt het hele jaar ineens. Je wilt weten wat je voor een jaar betaalt en wat je bespaart."
+  },
+  {
+   "v": "Hoeveel bespaar je per jaar ten opzichte van 12 maanden zonder korting?",
+   "o": [
+    "\"€72\"",
+    "\"€48\"",
+    "\"€24\"",
+    "\"€25\""
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 3,
+   "u": "Zoek eerst gegeven en gevraagd en stel dan de formule op. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"€72\"\"? Dan neem je het bedrag dat je betaalt. Je bespaart het verschil, en dat is 24.",
+    "Koos je \"\"€48\"\"? Dan verdubbel je de besparing. Het verschil is 96 min 72, en dat is 24.",
+    "Klopt: 96 min 72 is 24, ofwel 12 maanden keer 2 euro korting.",
+    "Koos je \"\"€25\"\"? Dan neem je het kortingspercentage als bedrag. 25 procent is geen 25 euro, maar 24 euro in dit geval."
+   ],
+   "uh": "Hoeveel bespaar je per jaar ten opzichte van 12 maanden zonder korting?",
+   "ctx": "Een app kost €8 per maand. Wie een jaarabonnement neemt, krijgt 25% korting op de maandprijs en betaalt het hele jaar ineens. Je wilt weten wat je voor een jaar betaalt en wat je bespaart."
+  },
+  {
+   "v": "Welk bedrijf is goedkoper bij 15 uur?",
+   "o": [
+    "\"bedrijf X, €25 goedkoper\"",
+    "\"bedrijf Y, €25 goedkoper\"",
+    "\"bedrijf X, €75 goedkoper\"",
+    "\"bedrijf Y, €250 goedkoper, gewoon\""
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 3,
+   "u": "Zoek eerst gegeven en gevraagd en stel dan de formule op. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"bedrijf X, €25 goedkoper\"\"? Dan draai je de uitkomsten om. X kost 925 en Y 900, dus Y is goedkoper.",
+    "Klopt: X kost 250 + 45 × 15 = 925 en Y kost 60 × 15 = 900.",
+    "Koos je \"\"bedrijf X, €75 goedkoper\"\"? Dan vergeet je de aanlegkosten van X. Met 250 erbij kost X 925, en dat is meer dan Y.",
+    "Koos je \"\"bedrijf Y, €250 goedkoper, gewoon\"\"? Dan neem je de aanlegkosten als verschil. Het verschil is 925 min 900, en dat is 25."
+   ],
+   "uh": "Welk bedrijf is goedkoper bij 15 uur?",
+   "ctx": "Bedrijf X maakt een offerte: €250 voor de aanleg plus €45 per uur arbeid. Bedrijf Y vraagt €60 per uur zonder aanlegkosten. Je verwacht dat de klus 15 uur duurt en vraagt je af welk bedrijf goedkoper is."
+  },
+  {
+   "v": "Vanaf hoeveel hele uur is X goedkoper dan Y?",
+   "o": [
+    "\"vanaf 15 uur\"",
+    "\"vanaf 16 uur\"",
+    "\"vanaf 250 uur, I think\"",
+    "\"vanaf 17 uur\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 3,
+   "u": "Zoek eerst gegeven en gevraagd en stel dan de formule op. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"vanaf 15 uur\"\"? Dan neem je de verwachte klusduur. Bij 15 uur is Y nog goedkoper, dus X is dan niet voordeliger.",
+    "Koos je \"\"vanaf 16 uur\"\"? Dan rond je 16,67 naar beneden af. Bij 16 uur kost X 970 en Y 960, dus Y is nog goedkoper.",
+    "Koos je \"\"vanaf 250 uur, I think\"\"? Dan neem je de aanlegkosten als aantal uren. Dat is een bedrag, en het kantelpunt ligt bij 17 uur.",
+    "Klopt: 250 + 45u < 60u geeft 250 < 15u, dus u > 16,7 en dus vanaf 17 uur."
+   ],
+   "uh": "Vanaf hoeveel hele uur is X goedkoper dan Y?",
+   "ctx": "Bedrijf X maakt een offerte: €250 voor de aanleg plus €45 per uur arbeid. Bedrijf Y vraagt €60 per uur zonder aanlegkosten. Je verwacht dat de klus 15 uur duurt en vraagt je af welk bedrijf goedkoper is."
+  },
+  {
+   "v": "Wat betekent het getal 250 in de formule van bedrijf X?",
+   "o": [
+    "\"de vaste kosten, ook bij 0 uur\"",
+    "\"de kosten per uur\"",
+    "\"het aantal uren\"",
+    "\"de totale kosten van de klus, volgens mij\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 4,
+   "u": "Zoek eerst gegeven en gevraagd en stel dan de formule op. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: 250 betaal je eenmalig, onafhankelijk van het aantal uren.",
+    "Koos je \"\"de kosten per uur\"\"? Dan pak je het uurtarief. Dat is 45, en 250 is de aanleg.",
+    "Koos je \"\"het aantal uren\"\"? Dan neem je de variabele. 250 is een bedrag, en geen aantal uren.",
+    "Koos je \"\"de totale kosten van de klus, volgens mij\"\"? Dan neem je de uitkomst. De totale kosten zijn 250 + 45u, en dat hangt af van het aantal uren."
+   ],
+   "uh": "Wat betekent het getal 250 in de formule van bedrijf X?",
+   "ctx": "Bedrijf X maakt een offerte: €250 voor de aanleg plus €45 per uur arbeid. Bedrijf Y vraagt €60 per uur zonder aanlegkosten. Je verwacht dat de klus 15 uur duurt en vraagt je af welk bedrijf goedkoper is."
+  }
+ ],
+ "oe": [
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een fietsverhuurder rekent €6 per dag plus een borg van €20 die je niet terugkrijgt. Je wilt de totale kosten K (in euro) voor d dagen weten. Je wilt een formule opstellen en daarmee de kosten van een huur van 5 dagen uitrekenen.",
+   "v": "Stel de formule voor K op en bereken de kosten voor 5 dagen.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "K = 20 + 6d (1p). Invullen d = 5: 20 + 30 (1p). Het antwoord is €50 (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een zwembad kost €3,50 per bezoek. Een abonnement kost €40 per jaar en daarna €1,50 per bezoek. Je wilt weten vanaf hoeveel bezoeken per jaar het abonnement goedkoper is dan losse kaartjes. Neem n voor het aantal bezoeken.",
+   "v": "Stel beide formules op en bereken vanaf hoeveel hele bezoeken het abonnement goedkoper is.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Losse kaartjes 3,50n en abonnement 40 + 1,50n (1p). 3,50n = 40 + 1,50n geeft n = 20 (1p). Vanaf 21 bezoeken is het abonnement goedkoper (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een kaars is 24 cm hoog en brandt 3 cm per uur af. Je wilt een model voor de hoogte H (in cm) na t uur opstellen, berekenen na hoeveel uur de kaars op is en zeggen wat het getal 3 in je formule betekent.",
+   "v": "Stel de formule op, bereken na hoeveel uur de kaars op is en leg uit wat 3 betekent.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "H = 24 − 3t (1p). 24 − 3t = 0 geeft t = 8 (1p). 3 is de afname per uur in cm (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een klasgenoot zegt: \"Bij een abonnement van €10 inschrijfgeld en €5 per maand zijn de kosten 15m.\" Je weet dat hij het inschrijfgeld verkeerd heeft meegenomen en dat de kosten na 4 maanden €30 zijn.",
+   "v": "Stel de juiste formule op en leg uit wat er in de formule van je klasgenoot fout is.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "K = 10 + 5m (1p). Na 4 maanden is het 10 + 20 is 30 (1p). Het inschrijfgeld betaal je maar één keer en niet elke maand (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een klasgenoot zegt: \"Ik begin altijd meteen met rekenen en schrijf geen formule op. Dat kost alleen maar tijd.\" Jij vindt dat hij beter een model kan opstellen, vooral als een opgave meerdere vragen heeft.",
+   "v": "Leg in twee zinnen uit waarom een model opstellen helpt, met een voorbeeld uit een opgave met een tarief.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Met een formule kun je voor elke waarde dezelfde berekening gebruiken (1p). Voorbeeld: K = 4,50 + 2,20k voor elke rit (1p). Een duidelijke uitleg (1p)."
+  }
+ ]
+}
