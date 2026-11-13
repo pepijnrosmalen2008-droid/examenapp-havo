@@ -40146,6 +40146,688 @@ var VAKKEN = [
         "u": "12 × 7 = 84, 2⁴ = 16, 18 : 3 = 6 (1p). 84 − 16 + 6 = 74 (1p). Schatten: ongeveer 80 − 15 + 5 = 70 laat zien dat een veel groter antwoord niet kan (1p)."
        }
       ]
+     },
+     {
+      "id": "B2",
+      "lo": "wa.B.2",
+      "gs": 2,
+      "naam": "Rekenen met breuken, verhoudingen en procenten",
+      "beschrijving": "Je rekent met breuken, decimale getallen, verhoudingen en schaal en met procenten: je gebruikt een gemeenschappelijke noemer, rekent met een groeifactor en btw en maakt onderscheid tussen absolute en relatieve verandering.",
+      "ceStatus": "CE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Breuken en decimale getallen",
+       "Verhoudingen en schaal",
+       "Procenten en groeifactor",
+       "Absolute en relatieve verandering",
+       "Btw en afronden"
+      ],
+      "sam": "Een breuk is een deling en bij optellen heb je een gemeenschappelijke noemer nodig. Een schaal is een vaste verhouding. Een percentage reken je over de oude waarde met een groeifactor: 1,21 bij 21% btw. Twee kortingen na elkaar tel je niet op. Een absolute verandering is een verschil, een relatieve verandering is dat verschil gedeeld door de oude waarde.",
+      "begrippen": [
+       {
+        "t": "Breuk",
+        "d": "Een deel van een geheel, zoals 3/8; teller gedeeld door noemer."
+       },
+       {
+        "t": "Noemer",
+        "d": "Het getal onder de breukstreep: in hoeveel gelijke delen het geheel is verdeeld."
+       },
+       {
+        "t": "Gemeenschappelijke noemer",
+        "d": "Dezelfde noemer voor twee breuken, nodig bij optellen en aftrekken."
+       },
+       {
+        "t": "Verhouding",
+        "d": "De vergelijking van twee getallen, zoals de schaal 1 : 25 000."
+       },
+       {
+        "t": "Schaal",
+        "d": "De verhouding tussen een afstand op een kaart en in werkelijkheid."
+       },
+       {
+        "t": "Procent",
+        "d": "Een honderdste deel; een verandering reken je ten opzichte van de oude waarde."
+       },
+       {
+        "t": "Groeifactor",
+        "d": "Het getal waarmee je vermenigvuldigt bij een procentuele verandering, zoals 1,21 voor 21%."
+       },
+       {
+        "t": "Absolute verandering",
+        "d": "Het verschil in dezelfde eenheid, zoals 600 inwoners."
+       },
+       {
+        "t": "Relatieve verandering",
+        "d": "Het verschil gedeeld door de oude waarde, zoals 7,5%."
+       },
+       {
+        "t": "Btw",
+        "d": "Belasting over de prijs zonder btw; met 21% btw is de prijs 1,21 keer zo groot."
+       },
+       {
+        "t": "Decimaal getal",
+        "d": "Een getal met cijfers achter de komma; een breuk is een deling."
+       },
+       {
+        "t": "Afronden",
+        "d": "Een getal vervangen door een eenvoudiger getal, passend bij de situatie."
+       }
+      ],
+      "sv": [
+       {
+        "v": "Een taart wordt in 8 gelijke stukken gesneden en je eet er 3. Welk deel van de taart is dat?",
+        "o": [
+         "\"8/3\"",
+         "\"3/8\"",
+         "\"3/5\"",
+         "\"5/8\""
+        ],
+        "c": 1,
+        "d": 1,
+        "s": 0,
+        "u": "Reken ten opzichte van de oude waarde en let op wat de breuk of het percentage beschrijft. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"8/3\"\"? Dan draai je teller en noemer om. De teller is het aantal stukken dat je neemt, en de noemer het totaal aantal stukken.",
+         "Klopt: je neemt 3 van de 8 gelijke delen. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"3/5\"\"? Dan trek je 3 van 8 af voor de noemer. De noemer blijft het totaal van 8 stukken, dus 3/8. Door de stappen goed na te lopen kom je uit op 3/8.",
+         "Koos je \"\"5/8\"\"? Dan neem je de stukken die over zijn. Je at er 3, en de rest is 5/8. Controleer je stap: de juiste uitkomst is 3/8."
+        ],
+        "uh": "Een taart wordt in 8 gelijke stukken gesneden en je eet er 3. Welk deel van de taart is dat?"
+       },
+       {
+        "v": "Een lat is 3/4 meter lang. Hoeveel meter is dat als decimaal getal?",
+        "o": [
+         "\"0,34\"",
+         "\"1,33\"",
+         "\"0,25\"",
+         "\"0,75\""
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 4,
+        "u": "Reken ten opzichte van de oude waarde en let op wat de breuk of het percentage beschrijft. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"0,34\"\"? Dan zet dit je 3 en 4 naast elkaar achter de komma. Een breuk is een deling, dus 3 : 4 = 0,75. Het goede antwoord is 0,75.",
+         "Koos je \"\"1,33\"\"? Dan deel je 4 door 3. Je moet de teller door de noemer delen, dus 3 : 4. Door de stappen goed na te lopen kom je uit op 0,75.",
+         "Koos je \"\"0,25\"\"? Dan neem je 1/4 in plaats van 3/4. Drie kwart is drie keer zo groot, dus 0,75. Controleer je stap: de juiste uitkomst is 0,75.",
+         "Klopt: 3 gedeeld door 4 is 0,75. Reken dit na met de gegeven gegevens."
+        ],
+        "uh": "Een lat is 3/4 meter lang. Hoeveel meter is dat als decimaal getal?"
+       },
+       {
+        "v": "Een kaart heeft schaal 1 : 1000. Hoeveel meter in werkelijkheid is 5 cm op de kaart?",
+        "o": [
+         "\"50 m\"",
+         "\"5000 m\"",
+         "\"5 m\"",
+         "\"500 m\""
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 1,
+        "u": "Reken ten opzichte van de oude waarde en let op wat de breuk of het percentage beschrijft. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: 5 × 1000 = 5000 cm = 50 m. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"5000 m\"\"? Dan vergeet je de centimeters om te rekenen. 5000 cm is 50 m, en niet 5000 m. Het goede antwoord is 50 m.",
+         "Koos je \"\"5 m\"\"? Dan deel je door 1000 in plaats van te vermenigvuldigen. De werkelijkheid is groter dan de kaart, dus ×1000.",
+         "Koos je \"\"500 m\"\"? Dan reken je 5 cm als 50 cm. Het is 5 × 1000 = 5000 cm, en dat is 50 m. Controleer je stap: de juiste uitkomst is 50 m."
+        ],
+        "uh": "Een kaart heeft schaal 1 : 1000. Hoeveel meter in werkelijkheid is 5 cm op de kaart?"
+       },
+       {
+        "v": "Een prijs van €200 stijgt met 10%. Hoeveel is de nieuwe prijs?",
+        "o": [
+         "\"€210\"",
+         "\"€20\"",
+         "\"€220\"",
+         "\"€180\""
+        ],
+        "c": 2,
+        "d": 1,
+        "s": 2,
+        "u": "Reken ten opzichte van de oude waarde en let op wat de breuk of het percentage beschrijft. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"€210\"\"? Dan tel je 10 euro op in plaats van 10 procent. Je moet 10% van 200 nemen, en dat is 20. Het goede antwoord is €220.",
+         "Koos je \"\"€20\"\"? Dan neem je alleen de stijging. De nieuwe prijs is de oude plus de stijging, dus 200 + 20. Door de stappen goed na te lopen kom je uit op €220.",
+         "Klopt: 10% van 200 is 20 en 200 + 20 = 220. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"€180\"\"? Dan trek je de stijging af. De prijs stijgt, dus je moet erbij optellen. Controleer je stap: de juiste uitkomst is €220."
+        ],
+        "uh": "Een prijs van €200 stijgt met 10%. Hoeveel is de nieuwe prijs?"
+       },
+       {
+        "v": "Een prijs van €200 wordt 25% goedkoper. Hoeveel betaal je nu?",
+        "o": [
+         "\"€175\"",
+         "\"€150\"",
+         "\"€50\"",
+         "\"€225\""
+        ],
+        "c": 1,
+        "d": 1,
+        "s": 2,
+        "u": "Reken ten opzichte van de oude waarde en let op wat de breuk of het percentage beschrijft. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"€175\"\"? Dan trek je 25 euro af in plaats van 25 procent. Je moet 25% van 200 nemen, en dat is 50. Het goede antwoord is €150.",
+         "Klopt: 25% van 200 is 50 en 200 − 50 = 150. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"€50\"\"? Dan neem je alleen de korting. De nieuwe prijs is de oude min de korting, dus 200 − 50. Door de stappen goed na te lopen kom je uit op €150.",
+         "Koos je \"\"€225\"\"? Dan tel je de korting erbij op. Bij goedkoper wordt de prijs lager, dus je moet aftrekken. Controleer je stap: de juiste uitkomst is €150."
+        ],
+        "uh": "Een prijs van €200 wordt 25% goedkoper. Hoeveel betaal je nu?"
+       },
+       {
+        "v": "Het aantal leden stijgt van 50 naar 60. Wat is hier de absolute toename?",
+        "o": [
+         "\"20%\"",
+         "\"60 leden, I think\"",
+         "\"10%\"",
+         "\"10 leden\""
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 3,
+        "u": "Reken ten opzichte van de oude waarde en let op wat de breuk of het percentage beschrijft. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"20%\"\"? Dan geef je de relatieve toename. De absolute toename is het verschil in aantallen, en dat is 10 leden.",
+         "Koos je \"\"60 leden, I think\"\"? Dan neem je het nieuwe aantal. De absolute toename is het verschil, dus 60 − 50. Door de stappen goed na te lopen kom je uit op 10 leden.",
+         "Koos je \"\"10%\"\"? Dan zet dit je het verschil om in een percentage zonder te delen door 50. Dat is de relatieve toename, en die is 20%.",
+         "Klopt: 60 − 50 = 10 leden, in dezelfde eenheid als de aantallen."
+        ],
+        "uh": "Het aantal leden stijgt van 50 naar 60. Wat is hier de absolute toename?"
+       },
+       {
+        "v": "Het aantal leden stijgt van 50 naar 60. Hoe groot is de relatieve toename?",
+        "o": [
+         "\"20%\"",
+         "\"10%\"",
+         "\"16,7%\"",
+         "\"120%\""
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 3,
+        "u": "Reken ten opzichte van de oude waarde en let op wat de breuk of het percentage beschrijft. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: de toename is 10 en 10/50 = 0,20 = 20%. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"10%\"\"? Dan neem je de absolute toename als percentage. Je moet delen door de oude waarde, en 10/50 = 20%. Het goede antwoord is 20%.",
+         "Koos je \"\"16,7%\"\"? Dan deel je door de nieuwe waarde van 60. De relatieve toename is ten opzichte van de oude waarde, dus 10/50.",
+         "Koos je \"\"120%\"\"? Dan neem je het nieuwe aantal als percentage van het oude. Dat is 60/50 en dat is geen toename, maar de verhouding."
+        ],
+        "uh": "Het aantal leden stijgt van 50 naar 60. Hoe groot is de relatieve toename?"
+       },
+       {
+        "v": "Hoeveel melk heb je per persoon nodig?",
+        "o": [
+         "\"4,5 liter, I suppose\"",
+         "\"8 liter\"",
+         "\"1/8 liter\"",
+         "\"1/6 liter\""
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 1,
+        "u": "Reken ten opzichte van de oude waarde en let op wat de breuk of het percentage beschrijft. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"4,5 liter, I suppose\"\"? Dan vermenigvuldig je 3/4 met 6. Je moet delen door het aantal personen, en niet vermenigvuldigen.",
+         "Koos je \"\"8 liter\"\"? Dan deel je 6 door 3/4. Je deelt de melk door het aantal personen, en niet andersom. Door de stappen goed na te lopen kom je uit op 1/8 liter.",
+         "Klopt: 3/4 gedeeld door 6 is 3/24 = 1/8 liter. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"1/6 liter\"\"? Dan neem je 1 gedeeld door 6. De melk is 3/4 liter en niet 1 liter, dus je moet 3/4 delen door 6."
+        ],
+        "uh": "Hoeveel melk heb je per persoon nodig?",
+        "ctx": "Een recept gebruikt 3/4 liter melk voor 6 personen. Een leerling wil weten hoeveel melk nodig is voor 8 personen en hoeveel personen hij met 2 liter melk kan bedienen. Hij rekent met breuken en verhoudingen."
+       },
+       {
+        "v": "Hoeveel melk heb je nodig voor 8 personen?",
+        "o": [
+         "\"6 liter\"",
+         "\"1 liter\"",
+         "\"3/32 liter\"",
+         "\"1 1/3 liter\""
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 1,
+        "u": "Reken ten opzichte van de oude waarde en let op wat de breuk of het percentage beschrijft. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"6 liter\"\"? Dan vermenigvuldig je 3/4 met 8. Dat zou per persoon 3/4 liter zijn, maar 3/4 is voor 6 personen. Het goede antwoord is 1 liter.",
+         "Klopt: 8 × 1/8 = 1 liter. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"3/32 liter\"\"? Dan deel je 3/4 door 8. Meer personen vragen meer melk, dus je moet vermenigvuldigen. Door de stappen goed na te lopen kom je uit op 1 liter.",
+         "Koos je \"\"1 1/3 liter\"\"? Dan neem je 8/6 en vergeet je 3/4. Je moet 3/4 × 8/6 doen, en dat is 1 liter. Controleer je stap: de juiste uitkomst is 1 liter."
+        ],
+        "uh": "Hoeveel melk heb je nodig voor 8 personen?",
+        "ctx": "Een recept gebruikt 3/4 liter melk voor 6 personen. Een leerling wil weten hoeveel melk nodig is voor 8 personen en hoeveel personen hij met 2 liter melk kan bedienen. Hij rekent met breuken en verhoudingen."
+       },
+       {
+        "v": "Hoeveel personen kun je met 2 liter melk bedienen?",
+        "o": [
+         "\"12 personen, really\"",
+         "\"8 personen\"",
+         "\"24 personen\"",
+         "\"16 personen\""
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 1,
+        "u": "Reken ten opzichte van de oude waarde en let op wat de breuk of het percentage beschrijft. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"12 personen, really\"\"? Dan vermenigvuldig je 3/4 met 16 in plaats van te delen. Je hebt de melk per persoon nodig om 2 liter in porties te verdelen, en die portie is 1/8 liter, zodat 2 : 1/8 = 16 personen.",
+         "Koos je \"\"8 personen\"\"? Dan pak je het aantal uit de vorige vraag over. Daar was 1 liter nodig voor 8 personen, terwijl er nu twee keer zoveel melk is, dus het aantal personen verdubbelt ook tot 16.",
+         "Koos je \"\"24 personen\"\"? Dan deel je 2 door 3/4 en reken je dat om met een verkeerde factor. Het recept is bedoeld voor 6 personen, maar de portie per persoon is de basis, en met 1/8 liter per persoon kom je op 16 personen.",
+         "Klopt: per persoon is 1/8 liter, dus 2 : 1/8 = 16. Reken dit na met de gegeven gegevens."
+        ],
+        "uh": "Hoeveel personen kun je met 2 liter melk bedienen?",
+        "ctx": "Een recept gebruikt 3/4 liter melk voor 6 personen. Een leerling wil weten hoeveel melk nodig is voor 8 personen en hoeveel personen hij met 2 liter melk kan bedienen. Hij rekent met breuken en verhoudingen."
+       },
+       {
+        "v": "Welk deel van de route heeft Sam in totaal gelopen?",
+        "o": [
+         "\"11/12\"",
+         "\"3/7\"",
+         "\"5/12\"",
+         "\"1/6\""
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 0,
+        "u": "Reken ten opzichte van de oude waarde en let op wat de breuk of het percentage beschrijft. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: 2/3 + 1/4 = 8/12 + 3/12 = 11/12. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"3/7\"\"? Dan tel je tellers en noemers apart op. Bij het optellen van breuken maak je eerst de noemers gelijk, dus 8/12 + 3/12.",
+         "Koos je \"\"5/12\"\"? Dan trek je 3/12 van 8/12 af. De middag komt erbij, dus je moet optellen. Door de stappen goed na te lopen kom je uit op 11/12.",
+         "Koos je \"\"1/6\"\"? Dan neem je het verschil van de twee delen. Het totaal gelopen deel is een som, en geen verschil. Controleer je stap: de juiste uitkomst is 11/12."
+        ],
+        "uh": "Welk deel van de route heeft Sam in totaal gelopen?",
+        "ctx": "Sam loopt in de ochtend 2/3 van een wandelroute en in de middag nog 1/4 van de hele route. Een vriendin vraagt hoeveel hij in totaal heeft gelopen, hoeveel er nog over is, en hoeveel procent dat is."
+       },
+       {
+        "v": "Welk deel van de route moet Sam nog lopen?",
+        "o": [
+         "\"11/12\"",
+         "\"4/7\"",
+         "\"1/12\"",
+         "\"1/6\""
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 0,
+        "u": "Reken ten opzichte van de oude waarde en let op wat de breuk of het percentage beschrijft. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"11/12\"\"? Dan neem je het gelopen deel. De vraag is naar het deel dat nog moet, dus 1 min 11/12. Het goede antwoord is 1/12.",
+         "Koos je \"\"4/7\"\"? Dan gebruik je 3/7 als gelopen deel. 3/7 is een rekenfout van het optellen, en het juiste gelopen deel is 11/12.",
+         "Klopt: 1 − 11/12 = 1/12. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"1/6\"\"? Dan reken je 2/12 in plaats van 1/12. Het gelopen deel is 11/12, en de rest is 1/12. Controleer je stap: de juiste uitkomst is 1/12."
+        ],
+        "uh": "Welk deel van de route moet Sam nog lopen?",
+        "ctx": "Sam loopt in de ochtend 2/3 van een wandelroute en in de middag nog 1/4 van de hele route. Een vriendin vraagt hoeveel hij in totaal heeft gelopen, hoeveel er nog over is, en hoeveel procent dat is."
+       },
+       {
+        "v": "Hoeveel procent van de route heeft Sam gelopen, afgerond op één decimaal?",
+        "o": [
+         "\"91,6%\"",
+         "\"91,7%\"",
+         "\"92%\"",
+         "\"11,12%\""
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 4,
+        "u": "Reken ten opzichte van de oude waarde en let op wat de breuk of het percentage beschrijft. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"91,6%\"\"? Dan kap je af in plaats van af te ronden. Het tweede cijfer na de komma is 6, dus je rondt omhoog af naar 91,7.",
+         "Klopt: 11/12 = 0,91666… en dat is afgerond 91,7%. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"92%\"\"? Dan rond je af op hele procenten. De opgave vraagt om één decimaal, dus 91,7%. Door de stappen goed na te lopen kom je uit op 91,7%.",
+         "Koos je \"\"11,12%\"\"? Dan schrijf je de breuk 11/12 als 11,12. Een breuk is een deling, dus 11 : 12 = 0,9167. Controleer je stap: de juiste uitkomst is 91,7%."
+        ],
+        "uh": "Hoeveel procent van de route heeft Sam gelopen, afgerond op één decimaal?",
+        "ctx": "Sam loopt in de ochtend 2/3 van een wandelroute en in de middag nog 1/4 van de hele route. Een vriendin vraagt hoeveel hij in totaal heeft gelopen, hoeveel er nog over is, en hoeveel procent dat is."
+       },
+       {
+        "v": "Hoeveel kost de jas na 15% uitverkoopkorting?",
+        "o": [
+         "\"€105\"",
+         "\"€18\"",
+         "\"€135\"",
+         "\"€102\""
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 2,
+        "u": "Reken ten opzichte van de oude waarde en let op wat de breuk of het percentage beschrijft. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"€105\"\"? Dan trek je 15 euro af in plaats van 15 procent. 15% van 120 is 18, en niet 15. Het goede antwoord is €102.",
+         "Koos je \"\"€18\"\"? Dan neem je alleen de korting. De prijs is de oude min de korting, dus 120 − 18. Door de stappen goed na te lopen kom je uit op €102.",
+         "Koos je \"\"€135\"\"? Dan tel je de korting erbij op. Bij korting trek je af, dus 120 − 18. Controleer je stap: de juiste uitkomst is €102.",
+         "Klopt: 15% van 120 is 18 en 120 − 18 = 102. Reken dit na met de gegeven gegevens."
+        ],
+        "uh": "Hoeveel kost de jas na 15% uitverkoopkorting?",
+        "ctx": "Een jas kost €120. In de uitverkoop gaat er 15% af, en daarna komt er nog 10% korting op de uitverkoopprijs. De klant denkt dat hij samen 25% korting krijgt en wil dat nagaan door de prijzen uit te rekenen."
+       },
+       {
+        "v": "Hoeveel kost de jas na nog eens 10% korting op de uitverkoopprijs?",
+        "o": [
+         "\"€91,80\"",
+         "\"€90,00\"",
+         "\"€92,00\"",
+         "\"€91,00\""
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 2,
+        "u": "Reken ten opzichte van de oude waarde en let op wat de breuk of het percentage beschrijft. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: 10% van 102 is 10,20 en 102 − 10,20 = 91,80. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"€90,00\"\"? Dan tel je de kortingen op tot 25% van 120. De tweede korting geldt voor de uitverkoopprijs van 102, en niet voor 120.",
+         "Koos je \"\"€92,00\"\"? Dan trek je 10 euro af van 102. Je moet 10% van 102 nemen, en dat is 10,20. Door de stappen goed na te lopen kom je uit op €91,80.",
+         "Koos je \"\"€91,00\"\"? Dan rond je de korting af op 11 euro. 10% van 102 is precies 10,20, dus 91,80. Controleer je stap: de juiste uitkomst is €91,80."
+        ],
+        "uh": "Hoeveel kost de jas na nog eens 10% korting op de uitverkoopprijs?",
+        "ctx": "Een jas kost €120. In de uitverkoop gaat er 15% af, en daarna komt er nog 10% korting op de uitverkoopprijs. De klant denkt dat hij samen 25% korting krijgt en wil dat nagaan door de prijzen uit te rekenen."
+       },
+       {
+        "v": "Hoeveel procent korting is dit in totaal?",
+        "o": [
+         "\"25%\"",
+         "\"10%\"",
+         "\"23,5%\"",
+         "\"76,5%\""
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 2,
+        "u": "Reken ten opzichte van de oude waarde en let op wat de breuk of het percentage beschrijft. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"25%\"\"? Dan tel je 15% en 10% bij elkaar op. De tweede korting geldt voor een lager bedrag, dus de totale korting is kleiner.",
+         "Koos je \"\"10%\"\"? Dan neem je alleen de laatste korting. Beide kortingen tellen mee, dus de totale korting is groter. Door de stappen goed na te lopen kom je uit op 23,5%.",
+         "Klopt: 91,80/120 = 0,765, dus 100% − 76,5% = 23,5%. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"76,5%\"\"? Dan geef je het percentage dat de klant nog betaalt. De vraag gaat over de korting, en dat is 100% − 76,5%."
+        ],
+        "uh": "Hoeveel procent korting is dit in totaal?",
+        "ctx": "Een jas kost €120. In de uitverkoop gaat er 15% af, en daarna komt er nog 10% korting op de uitverkoopprijs. De klant denkt dat hij samen 25% korting krijgt en wil dat nagaan door de prijzen uit te rekenen."
+       },
+       {
+        "v": "Hoeveel euro bedraagt de absolute prijsdaling?",
+        "o": [
+         "\"€30,00\"",
+         "\"€28,20\"",
+         "\"€23,50\"",
+         "\"€18,00\""
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 3,
+        "u": "Reken ten opzichte van de oude waarde en let op wat de breuk of het percentage beschrijft. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"€30,00\"\"? Dan neem je 25% van 120. De korting is geen 25%, dus 28,20. Het goede antwoord is €28,20.",
+         "Klopt: 120 − 91,80 = 28,20. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"€23,50\"\"? Dan neem je het percentage als euro's. Een absolute daling is in euro, en dat is 28,20. Door de stappen goed na te lopen kom je uit op €28,20.",
+         "Koos je \"\"€18,00\"\"? Dan neem je alleen de eerste korting. De totale daling bevat ook de tweede, dus 28,20. Controleer je stap: de juiste uitkomst is €28,20."
+        ],
+        "uh": "Hoeveel euro bedraagt de absolute prijsdaling?",
+        "ctx": "Een jas kost €120. In de uitverkoop gaat er 15% af, en daarna komt er nog 10% korting op de uitverkoopprijs. De klant denkt dat hij samen 25% korting krijgt en wil dat nagaan door de prijzen uit te rekenen."
+       },
+       {
+        "v": "Hoeveel bedraagt de absolute toename van het aantal inwoners?",
+        "o": [
+         "\"7,5%\"",
+         "\"8600 inwoners, I suppose\"",
+         "\"8000 inwoners\"",
+         "\"600 inwoners\""
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 3,
+        "u": "Reken ten opzichte van de oude waarde en let op wat de breuk of het percentage beschrijft. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"7,5%\"\"? Dan geef je de relatieve toename. De absolute toename is het verschil in aantallen, dus 600 inwoners. Het goede antwoord is 600 inwoners.",
+         "Koos je \"\"8600 inwoners, I suppose\"\"? Dan neem je het nieuwe aantal. De toename is het verschil, dus 600. Door de stappen goed na te lopen kom je uit op 600 inwoners.",
+         "Koos je \"\"8000 inwoners\"\"? Dan neem je het oude aantal. De toename is het verschil, dus 600. Controleer je stap: de juiste uitkomst is 600 inwoners.",
+         "Klopt: 8600 − 8000 = 600. Reken dit na met de gegeven gegevens."
+        ],
+        "uh": "Hoeveel bedraagt de absolute toename van het aantal inwoners?",
+        "ctx": "Het aantal inwoners van een dorp steeg in vijf jaar van 8000 naar 8600. De gemeente wil weten wat de absolute en wat de relatieve toename is, en hoeveel de bevolking gemiddeld per jaar toenam."
+       },
+       {
+        "v": "Hoe groot is de relatieve toename?",
+        "o": [
+         "\"7,5%\"",
+         "\"6,98%\"",
+         "\"600%\"",
+         "\"0,075%\""
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 3,
+        "u": "Reken ten opzichte van de oude waarde en let op wat de breuk of het percentage beschrijft. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: 600/8000 = 0,075 = 7,5%. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"6,98%\"\"? Dan deel je door het nieuwe aantal van 8600. De relatieve toename reken je ten opzichte van de oude waarde, dus 600/8000.",
+         "Koos je \"\"600%\"\"? Dan neem je de absolute toename als percentage. Je moet delen door 8000, en dan vermenigvuldigen met 100.",
+         "Koos je \"\"0,075%\"\"? Dan vergeet je met 100 te vermenigvuldigen. 0,075 is 7,5%, en niet 0,075%. Controleer je stap: de juiste uitkomst is 7,5%."
+        ],
+        "uh": "Hoe groot is de relatieve toename?",
+        "ctx": "Het aantal inwoners van een dorp steeg in vijf jaar van 8000 naar 8600. De gemeente wil weten wat de absolute en wat de relatieve toename is, en hoeveel de bevolking gemiddeld per jaar toenam."
+       },
+       {
+        "v": "Hoeveel inwoners kwamen er gemiddeld per jaar bij?",
+        "o": [
+         "\"600\"",
+         "\"1720\"",
+         "\"120\"",
+         "\"7,5\""
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 3,
+        "u": "Reken ten opzichte van de oude waarde en let op wat de breuk of het percentage beschrijft. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"600\"\"? Dan neem je de totale toename. Je moet delen door het aantal jaren, en dat is 5. Het goede antwoord is 120.",
+         "Koos je \"\"1720\"\"? Dan deel je 8600 door 5. Het gaat om de toename en niet om het aantal inwoners, dus 600 : 5. Door de stappen goed na te lopen kom je uit op 120.",
+         "Klopt: 600 : 5 = 120 per jaar. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"7,5\"\"? Dan neem je het percentage als aantal. Het gemiddelde is een aantal inwoners, en dat is 120. Controleer je stap: de juiste uitkomst is 120."
+        ],
+        "uh": "Hoeveel inwoners kwamen er gemiddeld per jaar bij?",
+        "ctx": "Het aantal inwoners van een dorp steeg in vijf jaar van 8000 naar 8600. De gemeente wil weten wat de absolute en wat de relatieve toename is, en hoeveel de bevolking gemiddeld per jaar toenam."
+       },
+       {
+        "v": "Hoeveel km is de werkelijke afstand tussen de dorpen?",
+        "o": [
+         "\"150 km\"",
+         "\"1,5 km\"",
+         "\"15 km\"",
+         "\"0,15 km, I think\""
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 1,
+        "u": "Reken ten opzichte van de oude waarde en let op wat de breuk of het percentage beschrijft. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"150 km\"\"? Dan reken je 150 000 cm om naar km zonder te delen door 100 000. Het is 1500 m, en dat is 1,5 km. Het goede antwoord is 1,5 km.",
+         "Klopt: 6 × 25 000 = 150 000 cm = 1,5 km. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"15 km\"\"? Dan verlies je een nul bij het omrekenen. 150 000 cm is 1,5 km, en niet 15 km. Door de stappen goed na te lopen kom je uit op 1,5 km.",
+         "Koos je \"\"0,15 km, I think\"\"? Dan verplaats je de komma te ver. 150 000 cm is 1,5 km, en niet 0,15 km. Controleer je stap: de juiste uitkomst is 1,5 km."
+        ],
+        "uh": "Hoeveel km is de werkelijke afstand tussen de dorpen?",
+        "ctx": "Een wandelkaart heeft de schaal 1 : 25 000. Twee dorpen liggen op de kaart 6 cm uit elkaar. Een wandelaar wil de werkelijke afstand weten in kilometers, en hoe lang hij erover doet bij 5 km per uur."
+       },
+       {
+        "v": "Hoe lang doet de wandelaar over 1,5 km bij 5 km per uur?",
+        "o": [
+         "\"30 minuten, volgens mij\"",
+         "\"3,3 uur\"",
+         "\"18 uur\"",
+         "\"18 minuten\""
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 1,
+        "u": "Reken ten opzichte van de oude waarde en let op wat de breuk of het percentage beschrijft. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"30 minuten, volgens mij\"\"? Dan reken je 1,5 × 20. De tijd is afstand gedeeld door snelheid, dus 1,5 : 5 uur. Het goede antwoord is 18 minuten.",
+         "Koos je \"\"3,3 uur\"\"? Dan deel je 5 door 1,5. Tijd is afstand gedeeld door snelheid, en niet andersom. Door de stappen goed na te lopen kom je uit op 18 minuten.",
+         "Koos je \"\"18 uur\"\"? Dan laat je de omrekening van uren naar minuten weg. 0,3 uur is 18 minuten, en niet 18 uur. Controleer je stap: de juiste uitkomst is 18 minuten.",
+         "Klopt: 1,5 : 5 = 0,3 uur en 0,3 × 60 = 18 minuten. Reken dit na met de gegeven gegevens."
+        ],
+        "uh": "Hoe lang doet de wandelaar over 1,5 km bij 5 km per uur?",
+        "ctx": "Een wandelkaart heeft de schaal 1 : 25 000. Twee dorpen liggen op de kaart 6 cm uit elkaar. Een wandelaar wil de werkelijke afstand weten in kilometers, en hoe lang hij erover doet bij 5 km per uur."
+       },
+       {
+        "v": "Een tweede route is 3 cm op de kaart. Hoeveel meter is dat in werkelijkheid?",
+        "o": [
+         "\"750 m\"",
+         "\"75 m\"",
+         "\"7500 m, I suppose\"",
+         "\"3000 m\""
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 1,
+        "u": "Reken ten opzichte van de oude waarde en let op wat de breuk of het percentage beschrijft. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: 3 × 25 000 = 75 000 cm = 750 m. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"75 m\"\"? Dan laat je een nul weg. 75 000 cm is 750 m, en niet 75 m. Het goede antwoord is 750 m.",
+         "Koos je \"\"7500 m, I suppose\"\"? Dan verwar je cm en m. 75 000 cm is 750 m, en niet 7500 m. Door de stappen goed na te lopen kom je uit op 750 m.",
+         "Koos je \"\"3000 m\"\"? Dan vermenigvuldig je 3 met 1000. De schaal is 1 : 25 000, dus 3 × 25 000 cm. Controleer je stap: de juiste uitkomst is 750 m."
+        ],
+        "uh": "Een tweede route is 3 cm op de kaart. Hoeveel meter is dat in werkelijkheid?",
+        "ctx": "Een wandelkaart heeft de schaal 1 : 25 000. Twee dorpen liggen op de kaart 6 cm uit elkaar. Een wandelaar wil de werkelijke afstand weten in kilometers, en hoe lang hij erover doet bij 5 km per uur."
+       },
+       {
+        "v": "Wat kost de tv zonder btw?",
+        "o": [
+         "\"€382,36\"",
+         "\"€425,00\"",
+         "\"€400\"",
+         "\"€463,00\""
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 2,
+        "u": "Reken ten opzichte van de oude waarde en let op wat de breuk of het percentage beschrijft. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"€382,36\"\"? Dan trek je 21% van 484 af. De 21% is berekend over de prijs zonder btw, dus je moet delen door 1,21.",
+         "Koos je \"\"€425,00\"\"? Dan neem je een rond bedrag. De prijs zonder btw is 484 : 1,21, en dat is precies 400. Door de stappen goed na te lopen kom je uit op €400.",
+         "Klopt: 484 : 1,21 = 400. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"€463,00\"\"? Dan trek je 21 euro af van 484. Een procent is geen euro, dus deel je door 1,21. Controleer je stap: de juiste uitkomst is €400."
+        ],
+        "uh": "Wat kost de tv zonder btw?",
+        "ctx": "Een tv kost €484 inclusief 21% btw. De winkel moet het bedrag zonder btw weten en het btw-bedrag voor de boekhouding. Een leerling rekent met de verkeerde methode en vindt een bedrag dat te groot lijkt."
+       },
+       {
+        "v": "Hoeveel btw zit er in de prijs van €484?",
+        "o": [
+         "\"€101,64\"",
+         "\"€84\"",
+         "\"€21,00\"",
+         "\"€76,36\""
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 2,
+        "u": "Reken ten opzichte van de oude waarde en let op wat de breuk of het percentage beschrijft. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"€101,64\"\"? Dan neem je 21% van 484. De btw is 21% van de prijs zonder btw, en dat is 21% van 400. Het goede antwoord is €84.",
+         "Klopt: 484 − 400 = 84, ofwel 21% van 400. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"€21,00\"\"? Dan neem je het percentage als euro's. Het btw-bedrag is een deel van 400, dus 84. Door de stappen goed na te lopen kom je uit op €84.",
+         "Koos je \"\"€76,36\"\"? Dan trek je 21% van 484 af van 484 en neem je het verschil met 400. Dat is een omweg met een fout, en het btw-bedrag is gewoon 84."
+        ],
+        "uh": "Hoeveel btw zit er in de prijs van €484?",
+        "ctx": "Een tv kost €484 inclusief 21% btw. De winkel moet het bedrag zonder btw weten en het btw-bedrag voor de boekhouding. Een leerling rekent met de verkeerde methode en vindt een bedrag dat te groot lijkt."
+       },
+       {
+        "v": "Met welk getal vermenigvuldig je de prijs zonder btw om de prijs met 21% btw te krijgen?",
+        "o": [
+         "\"0,21\"",
+         "\"21\"",
+         "\"0,79\"",
+         "\"1,21\""
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 2,
+        "u": "Reken ten opzichte van de oude waarde en let op wat de breuk of het percentage beschrijft. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"0,21\"\"? Dan neem je alleen de btw. Je moet de oorspronkelijke 100% erbij tellen, dus 1,21. Het goede antwoord is 1,21.",
+         "Koos je \"\"21\"\"? Dan neem je het percentage als getal. Je rekent met een factor, en die is 1,21. Door de stappen goed na te lopen kom je uit op 1,21.",
+         "Koos je \"\"0,79\"\"? Dan trek je 21% af van 100%. De btw komt erbij, dus 1,21. Controleer je stap: de juiste uitkomst is 1,21.",
+         "Klopt: 100% + 21% = 121% = 1,21. Reken dit na met de gegeven gegevens."
+        ],
+        "uh": "Met welk getal vermenigvuldig je de prijs zonder btw om de prijs met 21% btw te krijgen?",
+        "ctx": "Een tv kost €484 inclusief 21% btw. De winkel moet het bedrag zonder btw weten en het btw-bedrag voor de boekhouding. Een leerling rekent met de verkeerde methode en vindt een bedrag dat te groot lijkt."
+       },
+       {
+        "v": "Waarom is 21% van €484 niet het btw-bedrag?",
+        "o": [
+         "\"21% is berekend over de prijs zonder btw, niet over de prijs met btw\"",
+         "\"21% van 484 is te klein\"",
+         "\"btw wordt altijd afgerond op 100 euro, volgens mij, eigenlijk, denk ik\"",
+         "\"het btw-percentage is eigenlijk 19%\""
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 2,
+        "u": "Reken ten opzichte van de oude waarde en let op wat de breuk of het percentage beschrijft. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: het btw-percentage geldt voor de prijs zonder btw, die 400 is.",
+         "Koos je \"\"21% van 484 is te klein\"\"? Dan denk je dat het bedrag te klein is. Het is juist te groot, omdat 484 al btw bevat.",
+         "Koos je \"\"btw wordt altijd afgerond op 100 euro, volgens mij, eigenlijk, denk ik\"\"? Dan verzin je een afrondingsregel. Zo'n regel bestaat niet, en het bedrag is precies 84.",
+         "Koos je \"\"het btw-percentage is eigenlijk 19%\"\"? Dan denk je dat het tarief anders is. In de opgave staat 21%, en dat is het tarief."
+        ],
+        "uh": "Waarom is 21% van €484 niet het btw-bedrag?",
+        "ctx": "Een tv kost €484 inclusief 21% btw. De winkel moet het bedrag zonder btw weten en het btw-bedrag voor de boekhouding. Een leerling rekent met de verkeerde methode en vindt een bedrag dat te groot lijkt."
+       }
+      ],
+      "oe": [
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een boodschappenlijst geeft: 2/5 van het budget gaat naar groente, 1/4 naar vlees en de rest naar overige zaken. Het budget is €80. Je wilt weten hoeveel geld elk deel krijgt en hoeveel er voor de overige zaken overblijft.",
+        "v": "Bereken de bedragen voor groente en vlees en het deel voor de overige zaken.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Groente 2/5 × 80 = 32 euro (1p). Vlees 1/4 × 80 = 20 euro (1p). Overig 80 − 32 − 20 = 28 euro (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een laptop kost €750. De winkel geeft eerst 20% korting en daarna nog 10% op de nieuwe prijs. Een klant denkt dat de totale korting 30% is en wil dat nagaan door te rekenen.",
+        "v": "Bereken de eindprijs en het totale kortingspercentage en zeg of de klant gelijk heeft.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "750 × 0,8 = 600 en 600 × 0,9 = 540 (1p). Korting 210 van 750 is 28% (1p). Nee, 28% is minder dan 30% omdat de tweede korting op een lager bedrag geldt (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een kaart heeft de schaal 1 : 50 000. Twee steden liggen op de kaart 8,4 cm uit elkaar. Een fietser wil de werkelijke afstand weten en berekenen hoe lang hij er bij 15 km per uur over doet.",
+        "v": "Bereken de afstand in km en de rijtijd in minuten.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "8,4 × 50 000 = 420 000 cm = 4,2 km (1p). 4,2 : 15 = 0,28 uur (1p). 0,28 × 60 = 16,8 minuten (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Het aantal bezoekers van een museum was vorig jaar 12 500 en dit jaar 13 750. De directeur wil weten wat de absolute en wat de relatieve toename is, en wat het aantal bezoekers volgend jaar wordt bij dezelfde procentuele groei.",
+        "v": "Bereken de absolute en relatieve toename en het aantal bezoekers volgend jaar.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "13 750 − 12 500 = 1250 (1p). 1250/12 500 = 10% (1p). Volgend jaar 13 750 × 1,10 = 15 125 bezoekers (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een klasgenoot zegt: \"Prijs €121 met 21% btw, dus de btw is 21% van 121 en de prijs zonder btw is 121 − 25,41 = 95,59.\" Jij weet dat dit niet klopt, want het btw-percentage geldt voor de prijs zonder btw.",
+        "v": "Bereken de prijs zonder btw en het btw-bedrag en leg de fout uit.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "121 : 1,21 = 100 euro (1p). Btw is 21 euro (1p). 21% geldt over de prijs zonder btw en niet over 121 (1p)."
+       }
+      ]
      }
     ]
    },

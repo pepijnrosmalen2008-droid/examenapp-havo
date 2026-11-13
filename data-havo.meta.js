@@ -995,6 +995,27 @@ var VAKKEN = [
       "nOe": 5,
       "nBeg": 12,
       "hasSam": true
+     },
+     {
+      "id": "B2",
+      "lo": "wa.B.2",
+      "gs": 2,
+      "naam": "Rekenen met breuken, verhoudingen en procenten",
+      "beschrijving": "Je rekent met breuken, decimale getallen, verhoudingen en schaal en met procenten: je gebruikt een gemeenschappelijke noemer, rekent met een groeifactor en btw en maakt onderscheid tussen absolute en relatieve verandering.",
+      "ceStatus": "CE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Breuken en decimale getallen",
+       "Verhoudingen en schaal",
+       "Procenten en groeifactor",
+       "Absolute en relatieve verandering",
+       "Btw en afronden"
+      ],
+      "nSv": 27,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
      }
     ]
    },
