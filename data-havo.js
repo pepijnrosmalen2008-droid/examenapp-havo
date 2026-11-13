@@ -39463,6 +39463,690 @@ var VAKKEN = [
       "t": "Vereenvoudigen",
       "d": "deel teller en noemer door hun grootste gemene deler."
      }
+    ],
+    "leerdoelen": [
+     {
+      "id": "B1",
+      "lo": "wa.B.1",
+      "gs": 2,
+      "naam": "Rekenen met rekenregels, machten en wortels",
+      "beschrijving": "Je rekent met getallen met de juiste volgorde van bewerkingen en haakjes, gebruikt de rekenregels voor machten (ook met exponent 0 en negatieve exponenten) en wortels, schrijft grote getallen in wetenschappelijke notatie en controleert je antwoord met een schatting.",
+      "ceStatus": "CE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Volgorde van bewerkingen en haakjes",
+       "Machtregels",
+       "Wortels",
+       "Nul en negatieve exponenten",
+       "Wetenschappelijke notatie en controleren"
+      ],
+      "sam": "Reken in de volgorde haakjes, machten en wortels, vermenigvuldigen en delen, optellen en aftrekken. Bij machten met hetzelfde grondtal tel je de exponenten op bij een product en trek je ze af bij een deling; a⁰ = 1 en a⁻ⁿ = 1/aⁿ. Een wortel van een product mag je splitsen, een wortel van een som niet. Gebruik wetenschappelijke notatie voor grote getallen en controleer met een schatting. Let op typische fouten: van links naar rechts rekenen, de haakjes weglaten, exponenten vermenigvuldigen in plaats van optellen en een wortel van een som splitsen.",
+      "begrippen": [
+       {
+        "t": "Volgorde van bewerkingen",
+        "d": "Eerst haakjes, dan machten en wortels, dan vermenigvuldigen en delen, dan optellen en aftrekken."
+       },
+       {
+        "t": "Haakjes",
+        "d": "Tekens die bepalen wat je eerst uitrekent, zoals (6 + 4) × 3."
+       },
+       {
+        "t": "Macht",
+        "d": "Herhaald vermenigvuldigen met het grondtal, zoals 2⁵ = 32."
+       },
+       {
+        "t": "Grondtal",
+        "d": "Het getal dat vermenigvuldigd wordt, zoals 2 in 2⁵."
+       },
+       {
+        "t": "Exponent",
+        "d": "Het kleine getal boven een macht dat zegt hoe vaak je vermenigvuldigt."
+       },
+       {
+        "t": "Nulde macht",
+        "d": "a⁰ = 1 voor elk getal a behalve 0."
+       },
+       {
+        "t": "Negatieve exponent",
+        "d": "a⁻ⁿ = 1/aⁿ, bijvoorbeeld 5⁻² = 1/25 = 0,04."
+       },
+       {
+        "t": "Wortel",
+        "d": "Het getal dat met zichzelf vermenigvuldigd het getal oplevert, zoals √81 = 9."
+       },
+       {
+        "t": "Wetenschappelijke notatie",
+        "d": "Een getal als a × 10ⁿ met 1 ≤ a < 10, zoals 4,2 × 10¹³."
+       },
+       {
+        "t": "Rekenregel",
+        "d": "Een vaste regel zoals aᵐ × aⁿ = aᵐ⁺ⁿ."
+       },
+       {
+        "t": "Controleren",
+        "d": "Met een schatting of rekenmachine nagaan of je antwoord klopt."
+       },
+       {
+        "t": "Afronden",
+        "d": "Een getal vervangen door een eenvoudiger getal, passend bij de situatie."
+       }
+      ],
+      "sv": [
+       {
+        "v": "Een leerling rekent 6 + 4 × 3 uit. Welke uitkomst klopt volgens de volgorde van bewerkingen?",
+        "o": [
+         "\"30\"",
+         "\"18\"",
+         "\"13\"",
+         "\"72\""
+        ],
+        "c": 1,
+        "d": 1,
+        "s": 0,
+        "u": "Werk in de goede volgorde en gebruik de rekenregels. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"30\"\"? Dan reken je van links naar rechts: 6 + 4 = 10 en dan × 3. Vermenigvuldigen gaat voor optellen, dus eerst 4 × 3 = 12.",
+         "Klopt: eerst vermenigvuldigen (4 × 3 = 12) en dan optellen (6 + 12 = 18).",
+         "Koos je \"\"13\"\"? Dan tel je alle getallen bij elkaar op. De opgave heeft een vermenigvuldiging, dus je moet 4 × 3 berekenen.",
+         "Koos je \"\"72\"\"? Dan vermenigvuldig je alle getallen. Er staat een plus tussen 6 en 4 × 3, dus eerst 4 × 3 en dan + 6. Controleer je stap: de juiste uitkomst is 18."
+        ],
+        "uh": "Een leerling rekent 6 + 4 × 3 uit. Welke uitkomst klopt volgens de volgorde van bewerkingen?"
+       },
+       {
+        "v": "Je zet haakjes om de som in 6 + 4 × 3 en krijgt (6 + 4) × 3. Wat wordt nu de uitkomst?",
+        "o": [
+         "\"18\"",
+         "\"13\"",
+         "\"72\"",
+         "\"30\""
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 0,
+        "u": "Werk in de goede volgorde en gebruik de rekenregels. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"18\"\"? Dan laat je de haakjes weg. Met haakjes moet je eerst 6 + 4 doen, en dan pas × 3. Het goede antwoord is 30.",
+         "Koos je \"\"13\"\"? Dan tel je alle getallen op. Er staat een maalteken, dus je moet vermenigvuldigen. Door de stappen goed na te lopen kom je uit op 30.",
+         "Koos je \"\"72\"\"? Dan vermenigvuldig je alle getallen. De som in de haakjes is 10, en niet 6 × 4. Controleer je stap: de juiste uitkomst is 30.",
+         "Klopt: haakjes gaan voor, dus eerst 6 + 4 = 10 en dan × 3."
+        ],
+        "uh": "Je zet haakjes om de som in 6 + 4 × 3 en krijgt (6 + 4) × 3. Wat wordt nu de uitkomst?"
+       },
+       {
+        "v": "Een kristal verdubbelt vijf keer zijn aantal cellen, beginnend met 1. Hoeveel cellen zijn er daarna?",
+        "o": [
+         "\"32\"",
+         "\"10\"",
+         "\"25\"",
+         "\"7\""
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 1,
+        "u": "Werk in de goede volgorde en gebruik de rekenregels. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: 2 × 2 × 2 × 2 × 2 = 32. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"10\"\"? Dan vermenigvuldig je 2 met 5. Een macht betekent herhaald vermenigvuldigen met het grondtal, dus 2 × 2 × 2 × 2 × 2.",
+         "Koos je \"\"25\"\"? Dan draai je grondtal en exponent om. 2⁵ is niet 5², en geeft 32. Door de stappen goed na te lopen kom je uit op 32.",
+         "Koos je \"\"7\"\"? Dan tel je 2 en 5 op. Een macht is geen som, maar herhaald vermenigvuldigen. Controleer je stap: de juiste uitkomst is 32."
+        ],
+        "uh": "Een kristal verdubbelt vijf keer zijn aantal cellen, beginnend met 1. Hoeveel cellen zijn er daarna?"
+       },
+       {
+        "v": "Welke regel hoort bij 2³ × 2⁴?",
+        "o": [
+         "\"exponenten vermenigvuldigen: 2¹²\"",
+         "\"grondtallen vermenigvuldigen: 4⁷\"",
+         "\"exponenten optellen: 2⁷\"",
+         "\"exponenten aftrekken: 2¹\""
+        ],
+        "c": 2,
+        "d": 1,
+        "s": 1,
+        "u": "Werk in de goede volgorde en gebruik de rekenregels. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"exponenten vermenigvuldigen: 2¹²\"\"? Dan kies je de regel voor een macht van een macht. Bij een product van machten tel je op, dus 3 + 4 = 7.",
+         "Koos je \"\"grondtallen vermenigvuldigen: 4⁷\"\"? Dan vermenigvuldig je de grondtallen. Het grondtal blijft gelijk, en alleen de exponenten worden opgeteld.",
+         "Klopt: bij gelijke grondtallen tel je de exponenten op. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"exponenten aftrekken: 2¹\"\"? Dan kies je de regel voor een deling. Hier staat een maalteken, dus je telt op. Controleer je stap: de juiste uitkomst is exponenten optellen: 2⁷."
+        ],
+        "uh": "Welke regel hoort bij 2³ × 2⁴?"
+       },
+       {
+        "v": "Een vierkante vloer bestaat uit 81 gelijke tegels. Hoeveel tegels liggen er langs één zijde?",
+        "o": [
+         "\"8,1\"",
+         "\"9\"",
+         "\"40,5\"",
+         "\"6561\""
+        ],
+        "c": 1,
+        "d": 1,
+        "s": 2,
+        "u": "Werk in de goede volgorde en gebruik de rekenregels. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"8,1\"\"? Dan deel je 81 door 10. Een wortel is het getal dat met zichzelf vermenigvuldigd 81 geeft, en dat is 9.",
+         "Klopt: 9 × 9 = 81. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"40,5\"\"? Dan deel je 81 door 2. Een wortel is geen halveren, maar het zoeken van het getal waarvan het kwadraat 81 is.",
+         "Koos je \"\"6561\"\"? Dan kwadrateer je 81. Een wortel is het omgekeerde van kwadrateren, dus √81 = 9. Controleer je stap: de juiste uitkomst is 9."
+        ],
+        "uh": "Een vierkante vloer bestaat uit 81 gelijke tegels. Hoeveel tegels liggen er langs één zijde?"
+       },
+       {
+        "v": "Volgens een rekenregel is 5³ : 5³ = 5⁰, want je trekt de exponenten af. Welke waarde heeft 5⁰ daardoor?",
+        "o": [
+         "\"0\"",
+         "\"5\"",
+         "\"50\"",
+         "\"1\""
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 3,
+        "u": "Werk in de goede volgorde en gebruik de rekenregels. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"0\"\"? Dan denk je dat een nul als exponent de uitkomst nul maakt. Het is een afspraak dat a⁰ = 1, en die past bij de machtregels.",
+         "Koos je \"\"5\"\"? Dan denk je dat de exponent 0 niets doet. a⁰ is 1 en niet a, dus 5⁰ = 1. Door de stappen goed na te lopen kom je uit op 1.",
+         "Koos je \"\"50\"\"? Dan schrijf je 5 en 0 achter elkaar. Een macht is geen aanhechting van cijfers, dus 5⁰ = 1. Controleer je stap: de juiste uitkomst is 1.",
+         "Klopt: elk getal (behalve 0) tot de macht 0 is 1. Reken dit na met de gegeven gegevens."
+        ],
+        "uh": "Volgens een rekenregel is 5³ : 5³ = 5⁰, want je trekt de exponenten af. Welke waarde heeft 5⁰ daardoor?"
+       },
+       {
+        "v": "Een leerling schrijft 3⁻² om met de regel voor een negatieve exponent. Welke breuk hoort daarbij?",
+        "o": [
+         "\"1/9\"",
+         "\"−9\"",
+         "\"1/6\"",
+         "\"−1/9\""
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 3,
+        "u": "Werk in de goede volgorde en gebruik de rekenregels. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: een negatieve exponent geeft 1 gedeeld door de macht: 1/3² = 1/9.",
+         "Koos je \"\"−9\"\"? Dan maak je er een negatief getal van. Het minteken in de exponent betekent omkeren, en geeft 1/9. Het goede antwoord is 1/9.",
+         "Koos je \"\"1/6\"\"? Dan reken je 3 × 2. Je moet 3² = 9 nemen, dus 1/9. Door de stappen goed na te lopen kom je uit op 1/9.",
+         "Koos je \"\"−1/9\"\"? Dan denk je dat het teken van de exponent ook voor de breuk geldt. Het minteken staat alleen in de exponent, dus de breuk is positief."
+        ],
+        "uh": "Een leerling schrijft 3⁻² om met de regel voor een negatieve exponent. Welke breuk hoort daarbij?"
+       },
+       {
+        "v": "Welke waarde heeft de term 3 × 2² in de opgave als je de macht eerst neemt?",
+        "o": [
+         "\"36\"",
+         "\"18\"",
+         "\"12\"",
+         "\"6\""
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 0,
+        "u": "Werk in de goede volgorde en gebruik de rekenregels. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"36\"\"? Dan kwadrateer je 3 × 2. Het kwadraat hoort alleen bij 2, dus 2² = 4 en dan × 3. Het goede antwoord is 12.",
+         "Koos je \"\"18\"\"? Dan reken je 3 × 2 × 3. Een kwadraat is 2 × 2, en dat is 4. Door de stappen goed na te lopen kom je uit op 12.",
+         "Klopt: eerst 2² = 4 en dan 3 × 4 = 12. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"6\"\"? Dan reken je 3 × 2. De macht staat er nog bij, dus 3 × 2² = 12. Controleer je stap: de juiste uitkomst is 12."
+        ],
+        "uh": "Welke waarde heeft de term 3 × 2² in de opgave als je de macht eerst neemt?",
+        "ctx": "Een leerling rekent zonder rekenmachine en moet de volgorde van bewerkingen gebruiken. Hij krijgt de opgave 4 + 3 × 2² − 10 : 5 en wil weten wat de uitkomst is en wat er verandert als er haakjes bij komen."
+       },
+       {
+        "v": "Welke uitkomst heeft de hele opgave, precies zoals die in de tekst staat?",
+        "o": [
+         "\"3,6\"",
+         "\"14\"",
+         "\"6\"",
+         "\"16\""
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 0,
+        "u": "Werk in de goede volgorde en gebruik de rekenregels. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"3,6\"\"? Dan reken je van links naar rechts: (4 + 3) × 4 = 28, 28 − 10 = 18 en 18 : 5 = 3,6. Eerst machten, dan × en :, en pas daarna + en −.",
+         "Klopt: 4 + 12 − 2 = 14. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"6\"\"? Dan laat je de deling weg. 10 : 5 = 2 hoort bij de opgave, dus 4 + 12 − 2. Door de stappen goed na te lopen kom je uit op 14.",
+         "Koos je \"\"16\"\"? Dan tel je alleen 4 + 12 bij elkaar op. Je moet ook 10 : 5 = 2 aftrekken, dus 14. Controleer je stap: de juiste uitkomst is 14."
+        ],
+        "uh": "Welke uitkomst heeft de hele opgave, precies zoals die in de tekst staat?",
+        "ctx": "Een leerling rekent zonder rekenmachine en moet de volgorde van bewerkingen gebruiken. Hij krijgt de opgave 4 + 3 × 2² − 10 : 5 en wil weten wat de uitkomst is en wat er verandert als er haakjes bij komen."
+       },
+       {
+        "v": "Welke bewerking voer je het eerst uit in 4 + 3 × 2² − 10 : 5?",
+        "o": [
+         "\"4 + 3\"",
+         "\"3 × 2\"",
+         "\"10 : 5, gewoon, volgens mij\"",
+         "\"de macht 2² = 4\""
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 0,
+        "u": "Werk in de goede volgorde en gebruik de rekenregels. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"4 + 3\"\"? Dan begin je van links. Optellen gaat niet voor, dus je begint met de macht. Het goede antwoord is de macht 2² = 4.",
+         "Koos je \"\"3 × 2\"\"? Dan vermenigvuldig je voor de macht. De macht 2² gaat voor, dus eerst 2² = 4. Door de stappen goed na te lopen kom je uit op de macht 2² = 4.",
+         "Koos je \"\"10 : 5, gewoon, volgens mij\"\"? Dan begin je met de deling. De macht gaat nog voor, dus eerst 2² = 4. Controleer je stap: de juiste uitkomst is de macht 2² = 4.",
+         "Klopt: machten gaan voor vermenigvuldigen, delen, optellen en aftrekken."
+        ],
+        "uh": "Welke bewerking voer je het eerst uit in 4 + 3 × 2² − 10 : 5?",
+        "ctx": "Een leerling rekent zonder rekenmachine en moet de volgorde van bewerkingen gebruiken. Hij krijgt de opgave 4 + 3 × 2² − 10 : 5 en wil weten wat de uitkomst is en wat er verandert als er haakjes bij komen."
+       },
+       {
+        "v": "Wat wordt de uitkomst als je haakjes om 4 + 3 zet?",
+        "o": [
+         "\"26\"",
+         "\"14\"",
+         "\"18\"",
+         "\"3,6\""
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 0,
+        "u": "Werk in de goede volgorde en gebruik de rekenregels. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: haakjes eerst: 7 × 4 − 2 = 26. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"14\"\"? Dan laat je de haakjes weg. Met haakjes is 4 + 3 = 7, en dan 7 × 4 − 2. Het goede antwoord is 26.",
+         "Koos je \"\"18\"\"? Dan vergeet je 10 : 5 te berekenen. De deling gaat voor het aftrekken, dus 28 − 2. Door de stappen goed na te lopen kom je uit op 26.",
+         "Koos je \"\"3,6\"\"? Dan reken je van links naar rechts. Dan klopt de volgorde niet, want eerst haakjes, dan macht, dan × en :."
+        ],
+        "uh": "Wat wordt de uitkomst als je haakjes om 4 + 3 zet?",
+        "ctx": "Een leerling rekent zonder rekenmachine en moet de volgorde van bewerkingen gebruiken. Hij krijgt de opgave 4 + 3 × 2² − 10 : 5 en wil weten wat de uitkomst is en wat er verandert als er haakjes bij komen."
+       },
+       {
+        "v": "Welke waarde krijg je als je 2³ en 2⁴ met de machtregel met elkaar vermenigvuldigt?",
+        "o": [
+         "\"4096\"",
+         "\"56\"",
+         "\"128\"",
+         "\"14\""
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 1,
+        "u": "Werk in de goede volgorde en gebruik de rekenregels. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"4096\"\"? Dan vermenigvuldig je de exponenten (3 × 4 = 12). Bij een product tel je ze op, dus 2⁷. Het goede antwoord is 128.",
+         "Koos je \"\"56\"\"? Dan reken je 8 × 7. 2⁴ is 16 en niet 7, dus 8 × 16 = 128. Door de stappen goed na te lopen kom je uit op 128.",
+         "Klopt: 2³ × 2⁴ = 2⁷ = 128. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"14\"\"? Dan tel je 2³ + 2⁴ als exponenten op en neem je 2 × 7. Een macht is geen vermenigvuldiging met 2, dus 2⁷ = 128."
+        ],
+        "uh": "Welke waarde krijg je als je 2³ en 2⁴ met de machtregel met elkaar vermenigvuldigt?",
+        "ctx": "Bij een opgave over machten moet een leerling rekenregels gebruiken voor 2³ × 2⁴, (3²)³ en 5⁻². Hij wil de waarden uitrekenen en de regel erbij zetten, zodat zijn docent kan controleren wat hij gedaan heeft."
+       },
+       {
+        "v": "Welke uitkomst heeft de macht van een macht (3²)³?",
+        "o": [
+         "\"243\"",
+         "\"729\"",
+         "\"18\"",
+         "\"81\""
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 1,
+        "u": "Werk in de goede volgorde en gebruik de rekenregels. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"243\"\"? Dan tel je de exponenten op (2 + 3 = 5). Bij een macht van een macht vermenigvuldig je, dus 2 × 3 = 6. Het goede antwoord is 729.",
+         "Klopt: (3²)³ = 3⁶ = 729. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"18\"\"? Dan vermenigvuldig je 3 × 2 × 3. Een macht betekent herhaald vermenigvuldigen met het grondtal, dus 3⁶ = 729.",
+         "Koos je \"\"81\"\"? Dan neem je alleen 3⁴. Het resultaat is 3 tot de zesde, dus 729. Controleer je stap: de juiste uitkomst is 729."
+        ],
+        "uh": "Welke uitkomst heeft de macht van een macht (3²)³?",
+        "ctx": "Bij een opgave over machten moet een leerling rekenregels gebruiken voor 2³ × 2⁴, (3²)³ en 5⁻². Hij wil de waarden uitrekenen en de regel erbij zetten, zodat zijn docent kan controleren wat hij gedaan heeft."
+       },
+       {
+        "v": "Bereken 5⁻² als decimaal getal.",
+        "o": [
+         "\"−25\"",
+         "\"0,4\"",
+         "\"25\"",
+         "\"0,04\""
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 3,
+        "u": "Werk in de goede volgorde en gebruik de rekenregels. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"−25\"\"? Dan maak je er een negatief getal van. Het minteken zit in de exponent, en geeft een breuk. Het goede antwoord is 0,04.",
+         "Koos je \"\"0,4\"\"? Dan reken je 1/5 × 2. Je moet 1/5² = 1/25 nemen, en dat is 0,04. Door de stappen goed na te lopen kom je uit op 0,04.",
+         "Koos je \"\"25\"\"? Dan laat je het minteken weg. Dat geeft 5² en niet 5⁻², dus je moet 1/25 nemen. Controleer je stap: de juiste uitkomst is 0,04.",
+         "Klopt: 5⁻² = 1/25 = 0,04. Reken dit na met de gegeven gegevens."
+        ],
+        "uh": "Bereken 5⁻² als decimaal getal.",
+        "ctx": "Bij een opgave over machten moet een leerling rekenregels gebruiken voor 2³ × 2⁴, (3²)³ en 5⁻². Hij wil de waarden uitrekenen en de regel erbij zetten, zodat zijn docent kan controleren wat hij gedaan heeft."
+       },
+       {
+        "v": "Bereken √9 × √4.",
+        "o": [
+         "\"6\"",
+         "\"13\"",
+         "\"36\"",
+         "\"5\""
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 2,
+        "u": "Werk in de goede volgorde en gebruik de rekenregels. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: 3 × 2 = 6, ook gelijk aan √36. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"13\"\"? Dan tel je 9 en 4 op. Het teken is een maalteken, dus 3 × 2. Het goede antwoord is 6.",
+         "Koos je \"\"36\"\"? Dan vermenigvuldig je 9 en 4 zonder wortel. Eerst de wortels nemen: 3 × 2 = 6, en pas daarna kijken. Door de stappen goed na te lopen kom je uit op 6.",
+         "Koos je \"\"5\"\"? Dan tel je 3 en 2 op. De opgave is een product, dus 3 × 2. Controleer je stap: de juiste uitkomst is 6."
+        ],
+        "uh": "Bereken √9 × √4.",
+        "ctx": "Een leerling werkt met wortels: √9 × √4, √50 en √(9 + 16). Hij gebruikt de regel √a × √b = √(ab) voor a, b ≥ 0 en let goed op wat wel en niet mag bij wortels van sommen en producten."
+       },
+       {
+        "v": "Schrijf √50 in de vorm a√2.",
+        "o": [
+         "\"25√2\"",
+         "\"10√2\"",
+         "\"5√2\"",
+         "\"2√5\""
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 2,
+        "u": "Werk in de goede volgorde en gebruik de rekenregels. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"25√2\"\"? Dan neem je 25 als factor voor de wortel. Je moet √25 = 5 nemen, dus 5√2. Het goede antwoord is 5√2.",
+         "Koos je \"\"10√2\"\"? Dan denk je 50 = 5 × 10. Je moet het deel dat een kwadraat is eruit halen: 25, dus 5√2. Door de stappen goed na te lopen kom je uit op 5√2.",
+         "Klopt: 50 = 25 × 2 en √25 = 5, dus 5√2. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"2√5\"\"? Dan wissel je de getallen om. 50 = 25 × 2 en niet 10 × 5, dus 5√2. Controleer je stap: de juiste uitkomst is 5√2."
+        ],
+        "uh": "Schrijf √50 in de vorm a√2.",
+        "ctx": "Een leerling werkt met wortels: √9 × √4, √50 en √(9 + 16). Hij gebruikt de regel √a × √b = √(ab) voor a, b ≥ 0 en let goed op wat wel en niet mag bij wortels van sommen en producten."
+       },
+       {
+        "v": "Klopt √(9 + 16) = √9 + √16?",
+        "o": [
+         "\"ja: 3 + 4 = 7 en √25 = 7\"",
+         "\"nee: √25 = 5 en 3 + 4 = 7\"",
+         "\"ja, wortels mag je altijd splitsen\"",
+         "\"nee: √25 = 12,5\""
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 2,
+        "u": "Werk in de goede volgorde en gebruik de rekenregels. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"ja: 3 + 4 = 7 en √25 = 7\"\"? Dan reken je √25 verkeerd uit. √25 = 5, en dat is niet gelijk aan 7. Het goede antwoord is nee: √25 = 5 en 3 + 4 = 7.",
+         "Klopt: de wortel van een som is niet de som van de wortels.",
+         "Koos je \"\"ja, wortels mag je altijd splitsen\"\"? Dan pas je de regel voor een product toe op een som. √(ab) = √a × √b geldt alleen voor producten, en niet voor sommen.",
+         "Koos je \"\"nee: √25 = 12,5\"\"? Dan deel je 25 door 2. De wortel van 25 is 5, omdat 5 × 5 = 25. Controleer je stap: de juiste uitkomst is nee: √25 = 5 en 3 + 4 = 7."
+        ],
+        "uh": "Klopt √(9 + 16) = √9 + √16?",
+        "ctx": "Een leerling werkt met wortels: √9 × √4, √50 en √(9 + 16). Hij gebruikt de regel √a × √b = √(ab) voor a, b ≥ 0 en let goed op wat wel en niet mag bij wortels van sommen en producten."
+       },
+       {
+        "v": "Hoeveel nullen staan er achter 42 als je 4,2 × 10¹³ als geheel getal schrijft?",
+        "o": [
+         "\"13 nullen, I suppose\"",
+         "\"11 nullen\"",
+         "\"14 nullen\"",
+         "\"12 nullen\""
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 4,
+        "u": "Werk in de goede volgorde en gebruik de rekenregels. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"13 nullen, I suppose\"\"? Dan tel je de exponent als aantal nullen. De komma schuift 1 plaats op, dus 12 nullen na 42. Het goede antwoord is 12 nullen.",
+         "Koos je \"\"11 nullen\"\"? Dan trek je 2 af. De komma in 4,2 schuift 1 plaats, dus 13 − 1 = 12 nullen. Door de stappen goed na te lopen kom je uit op 12 nullen.",
+         "Koos je \"\"14 nullen\"\"? Dan tel je een nul erbij. Er zijn 12 nullen na 42, omdat de komma 1 plaats schuift. Controleer je stap: de juiste uitkomst is 12 nullen.",
+         "Klopt: 4,2 × 10¹³ = 42 × 10¹², dus 42 gevolgd door 12 nullen."
+        ],
+        "uh": "Hoeveel nullen staan er achter 42 als je 4,2 × 10¹³ als geheel getal schrijft?",
+        "ctx": "Een natuurkundige noemt de afstand tot een ster 4,2 × 10¹³ km. Een leerling wil dit getal als geheel getal schrijven en het vermenigvuldigen met 3 × 10². Hij gebruikt rekenregels voor machten van tien en schrijft de uitkomst in wetenschappelijke notatie."
+       },
+       {
+        "v": "Bereken (3 × 10²) × (4,2 × 10¹³) in wetenschappelijke notatie.",
+        "o": [
+         "\"1,26 × 10¹⁶\"",
+         "\"12,6 × 10¹⁵, you know\"",
+         "\"1,26 × 10¹⁵\"",
+         "\"12,6 × 10³⁰\""
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 4,
+        "u": "Werk in de goede volgorde en gebruik de rekenregels. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: 3 × 4,2 = 12,6 en 10² × 10¹³ = 10¹⁵, dus 12,6 × 10¹⁵ = 1,26 × 10¹⁶.",
+         "Koos je \"\"12,6 × 10¹⁵, you know\"\"? Dan laat je het getal niet normaliseren. In wetenschappelijke notatie staat één cijfer voor de komma, dus 1,26 × 10¹⁶.",
+         "Koos je \"\"1,26 × 10¹⁵\"\"? Dan vergeet je het schuiven van de komma. 12,6 wordt 1,26 en de exponent gaat omhoog, dus 10¹⁶.",
+         "Koos je \"\"12,6 × 10³⁰\"\"? Dan vermenigvuldig je de exponenten (2 × 13 = 26) en tel je 4 op. Bij een product tel je ze op, dus 10¹⁵."
+        ],
+        "uh": "Bereken (3 × 10²) × (4,2 × 10¹³) in wetenschappelijke notatie.",
+        "ctx": "Een natuurkundige noemt de afstand tot een ster 4,2 × 10¹³ km. Een leerling wil dit getal als geheel getal schrijven en het vermenigvuldigen met 3 × 10². Hij gebruikt rekenregels voor machten van tien en schrijft de uitkomst in wetenschappelijke notatie."
+       },
+       {
+        "v": "Welke regel gebruik je bij 10² × 10¹³?",
+        "o": [
+         "\"exponenten vermenigvuldigen: 10²⁶\"",
+         "\"exponenten aftrekken: 10¹¹\"",
+         "\"exponenten optellen: 10¹⁵\"",
+         "\"grondtallen vermenigvuldigen: 100¹⁵\""
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 1,
+        "u": "Werk in de goede volgorde en gebruik de rekenregels. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"exponenten vermenigvuldigen: 10²⁶\"\"? Dan kies je de regel voor een macht van een macht. Hier is het een product, dus 2 + 13 = 15.",
+         "Koos je \"\"exponenten aftrekken: 10¹¹\"\"? Dan kies je de regel voor een deling. Er staat een maalteken, dus je telt op. Door de stappen goed na te lopen kom je uit op exponenten optellen: 10¹⁵.",
+         "Klopt: bij gelijke grondtallen tel je de exponenten op. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"grondtallen vermenigvuldigen: 100¹⁵\"\"? Dan vermenigvuldig je de grondtallen. Het grondtal 10 blijft gelijk, en alleen de exponenten tellen op."
+        ],
+        "uh": "Welke regel gebruik je bij 10² × 10¹³?",
+        "ctx": "Een natuurkundige noemt de afstand tot een ster 4,2 × 10¹³ km. Een leerling wil dit getal als geheel getal schrijven en het vermenigvuldigen met 3 × 10². Hij gebruikt rekenregels voor machten van tien en schrijft de uitkomst in wetenschappelijke notatie."
+       },
+       {
+        "v": "Hoe lang doet licht (3 × 10⁵ km/s) over 4,2 × 10¹³ km?",
+        "o": [
+         "\"1,26 × 10¹⁹ seconden\"",
+         "\"1,4 × 10⁸ seconden\"",
+         "\"1,4 × 10¹⁸ seconden\"",
+         "\"7 × 10⁻⁹ seconden\""
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 4,
+        "u": "Werk in de goede volgorde en gebruik de rekenregels. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"1,26 × 10¹⁹ seconden\"\"? Dan vermenigvuldig je afstand en snelheid. Tijd is afstand gedeeld door snelheid, dus je moet delen.",
+         "Klopt: tijd = afstand : snelheid = 4,2 × 10¹³ : 3 × 10⁵ = 1,4 × 10⁸ s.",
+         "Koos je \"\"1,4 × 10¹⁸ seconden\"\"? Dan tel je 13 en 5 bij elkaar op. Bij een deling van machten van tien trek je de exponenten juist af, dus 13 − 5 = 8.",
+         "Koos je \"\"7 × 10⁻⁹ seconden\"\"? Dan draai je de deling om en krijg je een bijna nul-getal. Een tijd van een paar nanoseconden is onzinnig voor 4 lichtjaar, dus kijk je of de uitkomst realistisch is."
+        ],
+        "uh": "Hoe lang doet licht (3 × 10⁵ km/s) over 4,2 × 10¹³ km?",
+        "ctx": "Een natuurkundige noemt de afstand tot een ster 4,2 × 10¹³ km. Een leerling wil dit getal als geheel getal schrijven en het vermenigvuldigen met 3 × 10². Hij gebruikt rekenregels voor machten van tien en schrijft de uitkomst in wetenschappelijke notatie."
+       },
+       {
+        "v": "Welke berekening geeft het totaal van de kassabon?",
+        "o": [
+         "\"(3 + 2 + 1) × (2,45 + 6,80 + 1,95)\"",
+         "\"3 × (2,45 + 2 × 6,80 + 1,95)\"",
+         "\"3 + 2 × 6,80 + 1,95\"",
+         "\"3 × 2,45 + 2 × 6,80 + 1,95\""
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 0,
+        "u": "Werk in de goede volgorde en gebruik de rekenregels. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"(3 + 2 + 1) × (2,45 + 6,80 + 1,95)\"\"? Dan vermenigvuldig je twee totalen met elkaar. Dat geeft het aantal artikelen maal de som van alle prijzen, en niet het bedrag dat de klant verschuldigd is.",
+         "Koos je \"\"3 × (2,45 + 2 × 6,80 + 1,95)\"\"? Dan zet dit je de factor 3 voor de hele som. Alleen het brood wordt drie keer gekocht, dus de haakjes zitten verkeerd.",
+         "Koos je \"\"3 + 2 × 6,80 + 1,95\"\"? Dan laat je de prijs van de broden weg. De 3 hoort bij €2,45, dus 3 × 2,45. Controleer je stap: de juiste uitkomst is 3 × 2,45 + 2 × 6,80 + 1,95.",
+         "Klopt: per soort aantal keer prijs en daarna alles optellen."
+        ],
+        "uh": "Welke berekening geeft het totaal van de kassabon?",
+        "ctx": "Een kassabon vermeldt: 3 broden van €2,45, 2 kazen van €6,80 en 1 fles sap van €1,95. Een klant wil het totaal narekenen en controleren, en gebruikt daarbij de volgorde van bewerkingen en haakjes."
+       },
+       {
+        "v": "Hoeveel is het totaal van de kassabon?",
+        "o": [
+         "\"€22,90\"",
+         "\"€67,20\"",
+         "\"€54,00\"",
+         "\"€16,10\""
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 0,
+        "u": "Werk in de goede volgorde en gebruik de rekenregels. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: 7,35 + 13,60 + 1,95 = 22,90. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"€67,20\"\"? Dan reken je (3 + 2 + 1) × 11,20. Elke prijs hoort bij zijn eigen aantal, dus 3 × 2,45 + 2 × 6,80 + 1,95.",
+         "Koos je \"\"€54,00\"\"? Dan reken je 3 × 18. Alleen de broden zijn met 3 te vermenigvuldigen, en de rest hoort bij andere aantallen.",
+         "Koos je \"\"€16,10\"\"? Dan laat je de twee kazen niet verdubbelen. 2 × 6,80 = 13,60, en dat hoort bij de bon. Controleer je stap: de juiste uitkomst is €22,90."
+        ],
+        "uh": "Hoeveel is het totaal van de kassabon?",
+        "ctx": "Een kassabon vermeldt: 3 broden van €2,45, 2 kazen van €6,80 en 1 fles sap van €1,95. Een klant wil het totaal narekenen en controleren, en gebruikt daarbij de volgorde van bewerkingen en haakjes."
+       },
+       {
+        "v": "De klant betaalt met €50. Hoeveel wisselgeld krijgt hij?",
+        "o": [
+         "\"€22,90\"",
+         "\"€72,90\"",
+         "\"€27,10\"",
+         "\"€26,10\""
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 0,
+        "u": "Werk in de goede volgorde en gebruik de rekenregels. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"€22,90\"\"? Dan neem je het totaal als wisselgeld. Het wisselgeld is het verschil tussen 50 en het totaal, en dat is 27,10.",
+         "Koos je \"\"€72,90\"\"? Dan tel je 50 en 22,90 op. Het wisselgeld is een verschil, dus aftrekken. Door de stappen goed na te lopen kom je uit op €27,10.",
+         "Klopt: 50 − 22,90 = 27,10. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"€26,10\"\"? Dan maak je een rekenfout bij het aftrekken. 50 − 22,90 is 27,10, dus controleer je som. Controleer je stap: de juiste uitkomst is €27,10."
+        ],
+        "uh": "De klant betaalt met €50. Hoeveel wisselgeld krijgt hij?",
+        "ctx": "Een kassabon vermeldt: 3 broden van €2,45, 2 kazen van €6,80 en 1 fles sap van €1,95. Een klant wil het totaal narekenen en controleren, en gebruikt daarbij de volgorde van bewerkingen en haakjes."
+       },
+       {
+        "v": "Bereken 2³ × 2⁻¹.",
+        "o": [
+         "\"8\"",
+         "\"4\"",
+         "\"16\"",
+         "\"0,25\""
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 1,
+        "u": "Werk in de goede volgorde en gebruik de rekenregels. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"8\"\"? Dan laat je 2⁻¹ weg of vermenigvuldig je met 1. 2⁻¹ = 1/2, dus 8 × 1/2 = 4. Het goede antwoord is 4.",
+         "Klopt: 2³ × 2⁻¹ = 2² = 4. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"16\"\"? Dan tel je 3 en 1 op als exponenten. De exponent is −1, dus 3 + (−1) = 2. Door de stappen goed na te lopen kom je uit op 4.",
+         "Koos je \"\"0,25\"\"? Dan neem je 2⁻². De exponenten tel je op: 3 + (−1) = 2, dus 2² = 4. Controleer je stap: de juiste uitkomst is 4."
+        ],
+        "uh": "Bereken 2³ × 2⁻¹.",
+        "ctx": "Een leerling krijgt de opgaven 2³ × 2⁻¹, 8⁰ + 3² en √(a²) voor a ≥ 0, en moet laten zien dat hij de machtregels en wortelregels beheerst. Hij schrijft de tussenstappen op en controleert met een rekenmachine."
+       },
+       {
+        "v": "Welke waarde heeft de som van de nulde macht 8⁰ en het kwadraat 3²?",
+        "o": [
+         "\"9\"",
+         "\"17\"",
+         "\"11\"",
+         "\"10\""
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 3,
+        "u": "Werk in de goede volgorde en gebruik de rekenregels. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"9\"\"? Dan neem je 8⁰ gelijk aan 0. Elk getal tot de macht 0 is 1, dus 1 + 9. Het goede antwoord is 10.",
+         "Koos je \"\"17\"\"? Dan tel je 8 en 9 op. 8⁰ is 1, en niet 8. Door de stappen goed na te lopen kom je uit op 10.",
+         "Koos je \"\"11\"\"? Dan reken je 8⁰ als 2. Een macht met exponent 0 is 1, dus 1 + 9 = 10. Controleer je stap: de juiste uitkomst is 10.",
+         "Klopt: 8⁰ = 1 en 3² = 9, dus 1 + 9 = 10. Reken dit na met de gegeven gegevens."
+        ],
+        "uh": "Welke waarde heeft de som van de nulde macht 8⁰ en het kwadraat 3²?",
+        "ctx": "Een leerling krijgt de opgaven 2³ × 2⁻¹, 8⁰ + 3² en √(a²) voor a ≥ 0, en moet laten zien dat hij de machtregels en wortelregels beheerst. Hij schrijft de tussenstappen op en controleert met een rekenmachine."
+       },
+       {
+        "v": "Een leerling wil √(a²) eenvoudiger schrijven voor a ≥ 0. Welke vorm klopt?",
+        "o": [
+         "\"√(a²) = a\"",
+         "\"√(a²) = a²\"",
+         "\"√(a²) = 2a\"",
+         "\"√(a²) = a/2\""
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 2,
+        "u": "Werk in de goede volgorde en gebruik de rekenregels. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: de wortel en het kwadraat heffen elkaar op voor a ≥ 0.",
+         "Koos je \"\"√(a²) = a²\"\"? Dan kwadrateer je nog een keer. De wortel maakt het kwadraat ongedaan, dus √(a²) = a. Het goede antwoord is √(a²) = a.",
+         "Koos je \"\"√(a²) = 2a\"\"? Dan verwar je een kwadraat met een verdubbeling. a² is a × a, en de wortel daarvan is a. Door de stappen goed na te lopen kom je uit op √(a²) = a.",
+         "Koos je \"\"√(a²) = a/2\"\"? Dan deel je door 2. De wortel is geen halvering, dus √(a²) = a. Controleer je stap: de juiste uitkomst is √(a²) = a."
+        ],
+        "uh": "Een leerling wil √(a²) eenvoudiger schrijven voor a ≥ 0. Welke vorm klopt?",
+        "ctx": "Een leerling krijgt de opgaven 2³ × 2⁻¹, 8⁰ + 3² en √(a²) voor a ≥ 0, en moet laten zien dat hij de machtregels en wortelregels beheerst. Hij schrijft de tussenstappen op en controleert met een rekenmachine."
+       }
+      ],
+      "oe": [
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een leerling rekent de opgave 5 + 2 × 3² − 12 : 4 uit zonder rekenmachine. Hij krijgt als antwoord 19,5 en weet dat dit niet klopt, want hij heeft de volgorde van bewerkingen waarschijnlijk niet goed gebruikt.",
+        "v": "Bereken de uitkomst en leg uit welke fout de leerling kan hebben gemaakt.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "5 + 2 × 9 − 3 = 20 (1p). Eerst de macht, dan × en :, dan + en − (1p). Hij rekende waarschijnlijk van links naar rechts (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een leerling wil de uitdrukking (2³ × 2⁴) : 2⁵ vereenvoudigen met machtregels. Hij schrijft de tussenstappen op en controleert met de rekenmachine dat de uitkomst klopt.",
+        "v": "Schrijf de uitdrukking als één macht van 2 en bereken de waarde.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "2³ × 2⁴ = 2⁷ (1p). 2⁷ : 2⁵ = 2⁷⁻⁵ = 2² (1p). De waarde van 2² is 4 (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een leerling schrijft de afstand van de aarde tot de zon als 1,5 × 10⁸ km en de snelheid van licht als 3 × 10⁵ km/s. Hij wil weten hoe lang het licht onderweg is van de zon naar de aarde.",
+        "v": "Bereken de tijd in seconden en leg uit welke machtregel je gebruikt.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "1,5 × 10⁸ : 3 × 10⁵ = 0,5 × 10³ (1p). Dat is 500 seconden, ruim acht minuten (1p). Bij delen trek je de exponenten af: 8 − 5 = 3 (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een klasgenoot beweert dat √(16 + 9) gelijk is aan √16 + √9, omdat wortels \"gewoon uit elkaar mogen\". Je wilt hem met een berekening laten zien dat dit niet klopt.",
+        "v": "Bereken beide kanten en leg uit waarom de bewering niet klopt.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "√25 = 5 (1p). √16 + √9 = 4 + 3 = 7 (1p). De regel √(ab) = √a × √b geldt alleen voor producten, niet voor sommen (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een leerling moet 12 × (3 + 4) − 2⁴ + 18 : 3 berekenen en maakt een fout door de haakjes weg te laten. Hij krijgt een uitkomst die veel te groot lijkt, en wil zijn fout opsporen met een schatting.",
+        "v": "Bereken de juiste uitkomst en leg uit hoe een schatting een fout kan laten zien.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "12 × 7 = 84, 2⁴ = 16, 18 : 3 = 6 (1p). 84 − 16 + 6 = 74 (1p). Schatten: ongeveer 80 − 15 + 5 = 70 laat zien dat een veel groter antwoord niet kan (1p)."
+       }
+      ]
+     }
     ]
    },
    {

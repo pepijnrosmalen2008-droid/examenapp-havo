@@ -973,7 +973,30 @@ var VAKKEN = [
     "nSv": 85,
     "nOe": 7,
     "nBeg": 13,
-    "hasSam": true
+    "hasSam": true,
+    "leerdoelen": [
+     {
+      "id": "B1",
+      "lo": "wa.B.1",
+      "gs": 2,
+      "naam": "Rekenen met rekenregels, machten en wortels",
+      "beschrijving": "Je rekent met getallen met de juiste volgorde van bewerkingen en haakjes, gebruikt de rekenregels voor machten (ook met exponent 0 en negatieve exponenten) en wortels, schrijft grote getallen in wetenschappelijke notatie en controleert je antwoord met een schatting.",
+      "ceStatus": "CE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Volgorde van bewerkingen en haakjes",
+       "Machtregels",
+       "Wortels",
+       "Nul en negatieve exponenten",
+       "Wetenschappelijke notatie en controleren"
+      ],
+      "nSv": 27,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
+     }
+    ]
    },
    {
     "id": "C",
