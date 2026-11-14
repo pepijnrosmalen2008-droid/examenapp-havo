@@ -1,0 +1,682 @@
+{
+ "id": "C1",
+ "lo": "wa.C.1",
+ "gs": 2,
+ "naam": "Tabellen opstellen, aflezen en interpreteren",
+ "beschrijving": "Je stelt tabellen op, leest ze af, herkent het patroon (lineair, recht evenredig of omgekeerd evenredig), vergelijkt tabellen en koppelt een tabel aan een formule of grafiek.",
+ "ceStatus": "CE",
+ "binas": "",
+ "val": "",
+ "onderwerpen": [
+  "Een tabel opstellen",
+  "Waarden aflezen en toename bepalen",
+  "Tabellen vergelijken",
+  "Tabel en formule of grafiek",
+  "Soort verband herkennen"
+ ],
+ "sam": "Een tabel toont waarden van twee variabelen. Bij een vaste toename is het verband lineair, bij een constante verhouding recht evenredig en bij een constant product omgekeerd evenredig. Met het patroon bepaal je ontbrekende waarden en stel je een formule op. Vergelijk tabellen per kolom en controleer met een andere kolom.",
+ "begrippen": [
+  {
+   "t": "Tabel",
+   "d": "Een overzicht van waarden van twee variabelen naast elkaar."
+  },
+  {
+   "t": "Variabele",
+   "d": "Een grootheid die kan veranderen, zoals tijd of kosten."
+  },
+  {
+   "t": "Aflezen",
+   "d": "Een waarde uit een rij of kolom van de tabel halen."
+  },
+  {
+   "t": "Toename",
+   "d": "Het verschil tussen twee waarden in de tabel."
+  },
+  {
+   "t": "Constante toename",
+   "d": "Elke stap even groot: kenmerk van een lineair verband."
+  },
+  {
+   "t": "Lineair verband",
+   "d": "Een verband met een vaste toename per stap, zoals K = 10 + 0,05m."
+  },
+  {
+   "t": "Recht evenredig",
+   "d": "Als x een factor groter wordt, wordt y dezelfde factor groter; y : x is constant."
+  },
+  {
+   "t": "Omgekeerd evenredig",
+   "d": "Als x een factor groter wordt, wordt y diezelfde factor kleiner; x · y is constant."
+  },
+  {
+   "t": "Groeifactor",
+   "d": "Het getal waarmee je telkens vermenigvuldigt, zoals 1,10 bij 10% groei."
+  },
+  {
+   "t": "Patroon",
+   "d": "Wat in de tabel steeds terugkomt: een vaste stap, een vaste factor of een vast product."
+  },
+  {
+   "t": "Tabellen vergelijken",
+   "d": "Per kolom naar de verschillen kijken, en naar het soort groei."
+  },
+  {
+   "t": "Formule bij een tabel",
+   "d": "Een regel die bij elke invoer de uitvoer geeft, zoals y = 2x + 3."
+  }
+ ],
+ "sv": [
+  {
+   "v": "Een tabel stijgt met gelijke stappen: x = 3 geeft 12 en x = 4 geeft 16. Welke waarde hoort bij x = 5?",
+   "o": [
+    "\"24\"",
+    "\"20\"",
+    "\"18\"",
+    "\"19\""
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 0,
+   "u": "Zoek eerst het patroon in de tabel en gebruik dat om de gevraagde waarde te bepalen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"24\"\"? Dan verdubbel je de stap in plaats van die toe te passen. De stap is 4, dus 16 + 4. Het goede antwoord is 20.",
+    "Klopt: de stap is 16 − 12 = 4, dus bij x = 5 is y = 16 + 4 = 20.",
+    "Koos je \"\"18\"\"? Dan neem je de helft van de stap. De stap volgt uit 16 − 12 = 4, dus de volgende waarde is 20. Door de stappen goed na te lopen kom je uit op 20.",
+    "Koos je \"\"19\"\"? Dan tel je 3 en 4 bij 12 op. De stap volgt uit het verschil tussen twee opeenvolgende waarden, dus 4. Controleer je stap: de juiste uitkomst is 20."
+   ],
+   "uh": "Een tabel stijgt met gelijke stappen: x = 3 geeft 12 en x = 4 geeft 16. Welke waarde hoort bij x = 5?"
+  },
+  {
+   "v": "Een tabel geeft: 4 uur werken levert €48 op en het verband is recht evenredig. Hoeveel euro levert 1 uur op?",
+   "o": [
+    "\"€44\"",
+    "\"€192\"",
+    "\"€52\"",
+    "\"€12\""
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 1,
+   "u": "Zoek eerst het patroon in de tabel en gebruik dat om de gevraagde waarde te bepalen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"€44\"\"? Dan trek je 4 van 48 af. Bij een recht evenredig verband deel je, dus 48 : 4. Het goede antwoord is €12.",
+    "Koos je \"\"€192\"\"? Dan vermenigvuldig je 48 met 4. De opbrengst per uur vind je door te delen, dus 48 : 4. Door de stappen goed na te lopen kom je uit op €12.",
+    "Koos je \"\"€52\"\"? Dan tel je 4 bij 48 op. Een recht evenredig verband gaat om verhoudingen, dus delen. Controleer je stap: de juiste uitkomst is €12.",
+    "Klopt: bij recht evenredig deel je de opbrengst door de uren, 48 : 4 = 12."
+   ],
+   "uh": "Een tabel geeft: 4 uur werken levert €48 op en het verband is recht evenredig. Hoeveel euro levert 1 uur op?"
+  },
+  {
+   "v": "Tabel: 0 km kost €5, 10 km kost €9 en 20 km kost €13. Hoeveel euro nemen de kosten toe tussen 0 en 20 km?",
+   "o": [
+    "\"€8\"",
+    "\"€13\"",
+    "\"€4\"",
+    "\"€18\""
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 1,
+   "u": "Zoek eerst het patroon in de tabel en gebruik dat om de gevraagde waarde te bepalen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: 13 − 5 = 8 euro, het verschil tussen de twee kosten.",
+    "Koos je \"\"€13\"\"? Dan neem je de kosten bij 20 km. De toename is het verschil met de beginkosten, dus 13 − 5. Het goede antwoord is €8.",
+    "Koos je \"\"€4\"\"? Dan neem je de toename tussen 0 en 10 km. De vraag gaat over 0 tot 20 km, dus 8. Door de stappen goed na te lopen kom je uit op €8.",
+    "Koos je \"\"€18\"\"? Dan tel je de kosten bij 0 en 20 km bij elkaar op. De toename is een verschil, dus 13 − 5. Controleer je stap: de juiste uitkomst is €8."
+   ],
+   "uh": "Tabel: 0 km kost €5, 10 km kost €9 en 20 km kost €13. Hoeveel euro nemen de kosten toe tussen 0 en 20 km?"
+  },
+  {
+   "v": "Twee tabellen starten bij 100. Na 3 stappen is P 130 en Q 115. Hoeveel groter is de toename van P?",
+   "o": [
+    "\"30\"",
+    "\"45\"",
+    "\"15\"",
+    "\"245\""
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 2,
+   "u": "Zoek eerst het patroon in de tabel en gebruik dat om de gevraagde waarde te bepalen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"30\"\"? Dan neem je alleen de toename van P. De vraag is hoeveel groter die is dan Q, dus 30 − 15. Het goede antwoord is 15.",
+    "Koos je \"\"45\"\"? Dan tel je de toenames van P en Q op. Je vergelijkt ze door het verschil te nemen, dus 30 − 15. Door de stappen goed na te lopen kom je uit op 15.",
+    "Klopt: P neemt 30 toe en Q neemt 15 toe, dus het verschil is 30 − 15 = 15.",
+    "Koos je \"\"245\"\"? Dan tel je 130 en 115 bij elkaar op. Het gaat om de toenames ten opzichte van 100, dus 30 en 15. Controleer je stap: de juiste uitkomst is 15."
+   ],
+   "uh": "Twee tabellen starten bij 100. Na 3 stappen is P 130 en Q 115. Hoeveel groter is de toename van P?"
+  },
+  {
+   "v": "Een formule is y = 2x + 3. Welke waarde zet je in de tabel bij x = 4?",
+   "o": [
+    "\"14\"",
+    "\"11\"",
+    "\"9\"",
+    "\"24\""
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 3,
+   "u": "Zoek eerst het patroon in de tabel en gebruik dat om de gevraagde waarde te bepalen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"14\"\"? Dan reken je 2 × (4 + 3). De 3 hoort er los bij opgeteld te worden, dus 2 × 4 + 3. Het goede antwoord is 11.",
+    "Klopt: 2 × 4 + 3 = 8 + 3 = 11. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"9\"\"? Dan reken je 2 × 4 + 1. De formule heeft + 3, dus 8 + 3. Door de stappen goed na te lopen kom je uit op 11.",
+    "Koos je \"\"24\"\"? Dan vermenigvuldig je 2, 4 en 3. Er staat een plusteken in de formule, dus 8 + 3. Controleer je stap: de juiste uitkomst is 11."
+   ],
+   "uh": "Een formule is y = 2x + 3. Welke waarde zet je in de tabel bij x = 4?"
+  },
+  {
+   "v": "In een tabel verdubbelt y steeds precies als x verdubbelt. Welk soort verband is dat?",
+   "o": [
+    "\"omgekeerd evenredig\"",
+    "\"exponentieel\"",
+    "\"constant\"",
+    "\"recht evenredig\""
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 4,
+   "u": "Zoek eerst het patroon in de tabel en gebruik dat om de gevraagde waarde te bepalen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"omgekeerd evenredig\"\"? Dan denk je aan het geval waarin y halveert als x verdubbelt. Hier verdubbelt y, dus recht evenredig.",
+    "Koos je \"\"exponentieel\"\"? Dan denk je aan steeds groeien met dezelfde factor per stap. Hier gaat het om een verdubbeling bij verdubbeling van x, en dat is recht evenredig.",
+    "Koos je \"\"constant\"\"? Dan denk je dat y niet verandert. Hier verandert y wel mee met x, dus recht evenredig. Controleer je stap: de juiste uitkomst is recht evenredig.",
+    "Klopt: als beide grootheden dezelfde factor krijgen, is het verband recht evenredig."
+   ],
+   "uh": "In een tabel verdubbelt y steeds precies als x verdubbelt. Welk soort verband is dat?"
+  },
+  {
+   "v": "In een tabel horen bij elkaar (4, 15) en (6, 10); steeds geldt x · y = 60. Welk soort verband is dat?",
+   "o": [
+    "\"omgekeerd evenredig\"",
+    "\"recht evenredig\"",
+    "\"lineair met beginwaarde\"",
+    "\"exponentieel\""
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 4,
+   "u": "Zoek eerst het patroon in de tabel en gebruik dat om de gevraagde waarde te bepalen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: een constant product betekent dat y kleiner wordt als x groter wordt, dus omgekeerd evenredig.",
+    "Koos je \"\"recht evenredig\"\"? Dan controleer je de verhouding y : x in plaats van het product. Bij 4 en 15 is die 3,75 en bij 6 en 10 is die 1,67, dus de verhouding is niet constant maar het product is dat wel.",
+    "Koos je \"\"lineair met beginwaarde\"\"? Dan verwacht je een vaste stap per kolom. De stap tussen y = 15 en y = 10 is niet gelijk aan die tussen 10 en 6, dus het verband is niet lineair.",
+    "Koos je \"\"exponentieel\"\"? Dan zoek je een vaste groeifactor. Van 15 naar 10 is de factor 0,67 en van 10 naar 6 is die 0,6, dus er is geen constante factor."
+   ],
+   "uh": "In een tabel horen bij elkaar (4, 15) en (6, 10); steeds geldt x · y = 60. Welk soort verband is dat?"
+  },
+  {
+   "v": "Hoeveel euro betaal je bij 200 belminuten volgens de tabel?",
+   "o": [
+    "\"€15\"",
+    "\"€25\"",
+    "\"€20\"",
+    "\"€200\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 1,
+   "u": "Zoek eerst het patroon in de tabel en gebruik dat om de gevraagde waarde te bepalen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"€15\"\"? Dan lees je de rij bij 100 minuten af. De vraag is naar 200 minuten, dus €20. Het goede antwoord is €20.",
+    "Koos je \"\"€25\"\"? Dan lees je de rij bij 300 minuten af. 200 minuten staat een kolom eerder, dus €20. Door de stappen goed na te lopen kom je uit op €20.",
+    "Klopt: de tabel geeft bij 200 minuten €20. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"€200\"\"? Dan neem je het aantal minuten als bedrag. Het bedrag staat in de tweede rij van de tabel, dus €20. Controleer je stap: de juiste uitkomst is €20."
+   ],
+   "uh": "Hoeveel euro betaal je bij 200 belminuten volgens de tabel?",
+   "ctx": "Een telefoonabonnement heeft de volgende tabel. Bij 0 belminuten betaal je €10, bij 100 minuten €15, bij 200 minuten €20 en bij 300 minuten €25 per maand. De klant wil de tabel lezen, het patroon beschrijven en er een formule bij opstellen."
+  },
+  {
+   "v": "Met hoeveel euro nemen de kosten toe per extra 100 belminuten?",
+   "o": [
+    "\"€10\"",
+    "\"€5\"",
+    "\"€15\"",
+    "\"€25\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 1,
+   "u": "Zoek eerst het patroon in de tabel en gebruik dat om de gevraagde waarde te bepalen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"€10\"\"? Dan neem je het vaste bedrag bij 0 minuten. Je moet het verschil tussen twee kolommen nemen, dus 5. Het goede antwoord is €5.",
+    "Klopt: 15 − 10 = 5, 20 − 15 = 5 en 25 − 20 = 5. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"€15\"\"? Dan neem je de kosten bij 100 minuten. De toename is een verschil, dus €5. Door de stappen goed na te lopen kom je uit op €5.",
+    "Koos je \"\"€25\"\"? Dan neem je de kosten bij 300 minuten. De toename per stap is veel kleiner, namelijk €5. Controleer je stap: de juiste uitkomst is €5."
+   ],
+   "uh": "Met hoeveel euro nemen de kosten toe per extra 100 belminuten?",
+   "ctx": "Een telefoonabonnement heeft de volgende tabel. Bij 0 belminuten betaal je €10, bij 100 minuten €15, bij 200 minuten €20 en bij 300 minuten €25 per maand. De klant wil de tabel lezen, het patroon beschrijven en er een formule bij opstellen."
+  },
+  {
+   "v": "Welke formule past bij de tabel, met K in euro en m het aantal minuten?",
+   "o": [
+    "\"K = 10m + 0,05, gewoon\"",
+    "\"K = 0,05m\"",
+    "\"K = 10 + 5m\"",
+    "\"K = 10 + 0,05m\""
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 3,
+   "u": "Zoek eerst het patroon in de tabel en gebruik dat om de gevraagde waarde te bepalen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"K = 10m + 0,05, gewoon\"\"? Dan verwissel je het vaste bedrag en de prijs per minuut. Het vaste bedrag staat los en de prijs per minuut hoort bij m, dus 10 + 0,05m.",
+    "Koos je \"\"K = 0,05m\"\"? Dan laat je het vaste bedrag weg. Bij 0 minuten kost het al €10, dus 10 + 0,05m. Door de stappen goed na te lopen kom je uit op K = 10 + 0,05m.",
+    "Koos je \"\"K = 10 + 5m\"\"? Dan gebruik je €5 per minuut in plaats van per 100 minuten. Per minuut is het €0,05, dus 10 + 0,05m.",
+    "Klopt: vast €10 plus €5 per 100 minuten, dus €0,05 per minuut; bij m = 200 geeft dat 20."
+   ],
+   "uh": "Welke formule past bij de tabel, met K in euro en m het aantal minuten?",
+   "ctx": "Een telefoonabonnement heeft de volgende tabel. Bij 0 belminuten betaal je €10, bij 100 minuten €15, bij 200 minuten €20 en bij 300 minuten €25 per maand. De klant wil de tabel lezen, het patroon beschrijven en er een formule bij opstellen."
+  },
+  {
+   "v": "Hoeveel euro kost 25 liter brandstof?",
+   "o": [
+    "\"€47,50\"",
+    "\"€45,00\"",
+    "\"€44,00\"",
+    "\"€50,00\""
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 4,
+   "u": "Zoek eerst het patroon in de tabel en gebruik dat om de gevraagde waarde te bepalen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: de prijs per liter is 19 : 10 = 1,90, dus 25 × 1,90 = 47,50.",
+    "Koos je \"\"€45,00\"\"? Dan neem je het gemiddelde van €38 en €57 en rond je af. Het verband is recht evenredig, dus 25 × 1,90.",
+    "Koos je \"\"€44,00\"\"? Dan tel je €6 bij €38 op. De prijs per liter is 1,90, dus 25 × 1,90. Door de stappen goed na te lopen kom je uit op €47,50.",
+    "Koos je \"\"€50,00\"\"? Dan neem je 25 × 2. Er geldt €1,90 per liter, dus 25 × 1,90. Controleer je stap: de juiste uitkomst is €47,50."
+   ],
+   "uh": "Hoeveel euro kost 25 liter brandstof?",
+   "ctx": "Bij een tankstation staat een tabel: 10 liter brandstof kost €19, 20 liter kost €38 en 30 liter kost €57. Een klant wil weten wat 25 liter kost en onderzoekt hoe de prijs en het aantal liters met elkaar samenhangen."
+  },
+  {
+   "v": "Hoeveel euro kost een liter volgens de tabel?",
+   "o": [
+    "\"€19\"",
+    "\"€1,00\"",
+    "\"€1,90\"",
+    "\"€0,53\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 4,
+   "u": "Zoek eerst het patroon in de tabel en gebruik dat om de gevraagde waarde te bepalen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"€19\"\"? Dan neem je de prijs voor 10 liter. Je moet delen door het aantal liters, dus 19 : 10. Het goede antwoord is €1,90.",
+    "Koos je \"\"€1,00\"\"? Dan neem je een rond bedrag. 19 : 10 is 1,90, en niet 1,00. Door de stappen goed na te lopen kom je uit op €1,90.",
+    "Klopt: 19 : 10 = 38 : 20 = 57 : 30 = 1,90. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"€0,53\"\"? Dan deel je 10 door 19. Je moet de prijs delen door de liters, dus 19 : 10. Controleer je stap: de juiste uitkomst is €1,90."
+   ],
+   "uh": "Hoeveel euro kost een liter volgens de tabel?",
+   "ctx": "Bij een tankstation staat een tabel: 10 liter brandstof kost €19, 20 liter kost €38 en 30 liter kost €57. Een klant wil weten wat 25 liter kost en onderzoekt hoe de prijs en het aantal liters met elkaar samenhangen."
+  },
+  {
+   "v": "Waarom is het verband tussen liters en prijs recht evenredig?",
+   "o": [
+    "\"de prijs stijgt steeds\"",
+    "\"de prijs gedeeld door de liters is steeds hetzelfde\"",
+    "\"het product van liters en prijs is constant, zeg maar\"",
+    "\"er is een vast beginbedrag\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 4,
+   "u": "Zoek eerst het patroon in de tabel en gebruik dat om de gevraagde waarde te bepalen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"de prijs stijgt steeds\"\"? Dan denk je dat stijgen genoeg is. Ook niet-evenredige verbanden stijgen, maar hier is de verhouding constant.",
+    "Klopt: 19 : 10, 38 : 20 en 57 : 30 geven alle drie 1,90.",
+    "Koos je \"\"het product van liters en prijs is constant, zeg maar\"\"? Dan verwar je dit met omgekeerd evenredig. Hier groeit de prijs mee met de liters, en de verhouding is constant.",
+    "Koos je \"\"er is een vast beginbedrag\"\"? Dan denk je dat er een startbedrag is. Bij 0 liter is de prijs €0, dus recht evenredig."
+   ],
+   "uh": "Waarom is het verband tussen liters en prijs recht evenredig?",
+   "ctx": "Bij een tankstation staat een tabel: 10 liter brandstof kost €19, 20 liter kost €38 en 30 liter kost €57. Een klant wil weten wat 25 liter kost en onderzoekt hoe de prijs en het aantal liters met elkaar samenhangen."
+  },
+  {
+   "v": "Hoeveel uur duurt de rit bij 30 km/u?",
+   "o": [
+    "\"3 uur\"",
+    "\"1,5 uur\"",
+    "\"90 uur\"",
+    "\"4 uur\""
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 4,
+   "u": "Zoek eerst het patroon in de tabel en gebruik dat om de gevraagde waarde te bepalen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"3 uur\"\"? Dan neem je de tijd bij 40 km/u. Een lagere snelheid kost meer tijd, dus 4 uur. Het goede antwoord is 4 uur.",
+    "Koos je \"\"1,5 uur\"\"? Dan neem je de tijd bij 80 km/u. Bij 30 km/u is de rit langer, dus 120 : 30. Door de stappen goed na te lopen kom je uit op 4 uur.",
+    "Koos je \"\"90 uur\"\"? Dan trek je 30 van 120 af. De tijd vind je door te delen, dus 120 : 30. Controleer je stap: de juiste uitkomst is 4 uur.",
+    "Klopt: de tijd is 120 : 30 = 4 uur. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Hoeveel uur duurt de rit bij 30 km/u?",
+   "ctx": "Een automobilist wil een afstand van 120 kilometer afleggen. De tabel laat zien: bij 40 km/u duurt de rit 3 uur, bij 60 km/u 2 uur, bij 80 km/u 1,5 uur en bij 120 km/u 1 uur. Hij onderzoekt hoe snelheid en reistijd samenhangen."
+  },
+  {
+   "v": "Welk getal is in alle kolommen van de tabel gelijk als je snelheid en tijd vermenigvuldigt?",
+   "o": [
+    "\"120\"",
+    "\"40\"",
+    "\"3\"",
+    "\"60\""
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 4,
+   "u": "Zoek eerst het patroon in de tabel en gebruik dat om de gevraagde waarde te bepalen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: 40 × 3 = 60 × 2 = 80 × 1,5 = 120 × 1 = 120, de afstand.",
+    "Koos je \"\"40\"\"? Dan neem je de eerste snelheid. Het product van snelheid en tijd is steeds gelijk aan de afstand, dus 120.",
+    "Koos je \"\"3\"\"? Dan neem je de eerste tijd. Het constante getal is het product, dus 120. Door de stappen goed na te lopen kom je uit op 120.",
+    "Koos je \"\"60\"\"? Dan neem je het verschil tussen twee snelheden. Het product is constant, namelijk 120. Controleer je stap: de juiste uitkomst is 120."
+   ],
+   "uh": "Welk getal is in alle kolommen van de tabel gelijk als je snelheid en tijd vermenigvuldigt?",
+   "ctx": "Een automobilist wil een afstand van 120 kilometer afleggen. De tabel laat zien: bij 40 km/u duurt de rit 3 uur, bij 60 km/u 2 uur, bij 80 km/u 1,5 uur en bij 120 km/u 1 uur. Hij onderzoekt hoe snelheid en reistijd samenhangen."
+  },
+  {
+   "v": "Welke snelheid hoort bij een rit van 1,2 uur?",
+   "o": [
+    "\"144 km/u\"",
+    "\"118,8 km/u\"",
+    "\"100 km/u\"",
+    "\"10 km/u\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 1,
+   "u": "Zoek eerst het patroon in de tabel en gebruik dat om de gevraagde waarde te bepalen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"144 km/u\"\"? Dan vermenigvuldig je 120 met 1,2. De snelheid is afstand gedeeld door tijd, dus 120 : 1,2. Het goede antwoord is 100 km/u.",
+    "Koos je \"\"118,8 km/u\"\"? Dan trek je 1,2 van 120 af. Een snelheid vind je door te delen, dus 120 : 1,2. Door de stappen goed na te lopen kom je uit op 100 km/u.",
+    "Klopt: 120 : 1,2 = 100 km/u. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"10 km/u\"\"? Dan deel je 120 door 12. Het gaat om 1,2 uur en niet om 12, dus 100. Controleer je stap: de juiste uitkomst is 100 km/u."
+   ],
+   "uh": "Welke snelheid hoort bij een rit van 1,2 uur?",
+   "ctx": "Een automobilist wil een afstand van 120 kilometer afleggen. De tabel laat zien: bij 40 km/u duurt de rit 3 uur, bij 60 km/u 2 uur, bij 80 km/u 1,5 uur en bij 120 km/u 1 uur. Hij onderzoekt hoe snelheid en reistijd samenhangen."
+  },
+  {
+   "v": "Waarom is het verband tussen snelheid en tijd niet recht evenredig?",
+   "o": [
+    "\"de tijd is altijd 120, volgens mij, eigenlijk, denk ik\"",
+    "\"bij een hogere snelheid wordt de tijd juist korter\"",
+    "\"de snelheid neemt toe\"",
+    "\"de afstand verandert\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 4,
+   "u": "Zoek eerst het patroon in de tabel en gebruik dat om de gevraagde waarde te bepalen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"de tijd is altijd 120, volgens mij, eigenlijk, denk ik\"\"? Dan denk je dat de tijd constant is. Het constante getal is het product, en niet de tijd.",
+    "Klopt: het product is constant, dus het verband is omgekeerd evenredig.",
+    "Koos je \"\"de snelheid neemt toe\"\"? Dan denk je dat een toename genoeg is. Bij recht evenredig groeien beide mee, maar hier daalt de tijd.",
+    "Koos je \"\"de afstand verandert\"\"? Dan denk je dat de afstand verschilt per kolom. De afstand is steeds 120 kilometer, en de tijd daalt."
+   ],
+   "uh": "Waarom is het verband tussen snelheid en tijd niet recht evenredig?",
+   "ctx": "Een automobilist wil een afstand van 120 kilometer afleggen. De tabel laat zien: bij 40 km/u duurt de rit 3 uur, bij 60 km/u 2 uur, bij 80 km/u 1,5 uur en bij 120 km/u 1 uur. Hij onderzoekt hoe snelheid en reistijd samenhangen."
+  },
+  {
+   "v": "Met hoeveel duizend euro nam de omzet van bedrijf A in totaal toe van jaar 0 tot jaar 3?",
+   "o": [
+    "\"160\"",
+    "\"20\"",
+    "\"260\"",
+    "\"60\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 2,
+   "u": "Zoek eerst het patroon in de tabel en gebruik dat om de gevraagde waarde te bepalen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"160\"\"? Dan neem je de omzet in jaar 3. De totale toename is het verschil met jaar 0, dus 160 − 100. Het goede antwoord is 60.",
+    "Koos je \"\"20\"\"? Dan neem je de toename van één jaar. De vraag gaat over drie jaar, dus 3 × 20. Door de stappen goed na te lopen kom je uit op 60.",
+    "Koos je \"\"260\"\"? Dan tel je de omzetten van jaar 0 en jaar 3 bij elkaar op. Een toename is een verschil, dus 160 − 100. Controleer je stap: de juiste uitkomst is 60.",
+    "Klopt: 160 − 100 = 60, ofwel 3 jaar maal 20 per jaar. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Met hoeveel duizend euro nam de omzet van bedrijf A in totaal toe van jaar 0 tot jaar 3?",
+   "ctx": "Twee bedrijven vergelijken hun omzet in duizenden euro's. Bedrijf A heeft in de jaren 0, 1, 2 en 3 omzetten van 100, 120, 140 en 160. Bedrijf B heeft in dezelfde jaren omzetten van 100, 110, 121 en 133,1. Een leerling vergelijkt de twee tabellen."
+  },
+  {
+   "v": "Bedrijf B groeit elk jaar 10% door. Welke omzet heeft B dan in jaar 4?",
+   "o": [
+    "\"146,41\"",
+    "\"153,1\"",
+    "\"143,1\"",
+    "\"133,1\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 2,
+   "u": "Zoek eerst het patroon in de tabel en gebruik dat om de gevraagde waarde te bepalen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: 133,1 × 1,10 = 146,41, want elk jaar is de omzet 1,10 keer zo groot.",
+    "Koos je \"\"153,1\"\"? Dan tel je 20 bij 133,1 op. B groeit met een percentage, dus 133,1 × 1,10. Het goede antwoord is 146,41.",
+    "Koos je \"\"143,1\"\"? Dan tel je 10 bij 133,1 op. B groeit met 10%, dus 133,1 × 1,10. Door de stappen goed na te lopen kom je uit op 146,41.",
+    "Koos je \"\"133,1\"\"? Dan neem je het jaar daarvoor over. In jaar 4 is de omzet hoger, dus 146,41. Controleer je stap: de juiste uitkomst is 146,41."
+   ],
+   "uh": "Bedrijf B groeit elk jaar 10% door. Welke omzet heeft B dan in jaar 4?",
+   "ctx": "Twee bedrijven vergelijken hun omzet in duizenden euro's. Bedrijf A heeft in de jaren 0, 1, 2 en 3 omzetten van 100, 120, 140 en 160. Bedrijf B heeft in dezelfde jaren omzetten van 100, 110, 121 en 133,1. Een leerling vergelijkt de twee tabellen."
+  },
+  {
+   "v": "Hoeveel neemt de omzet van B toe van jaar 2 naar jaar 3?",
+   "o": [
+    "\"10\"",
+    "\"11\"",
+    "\"12,1\"",
+    "\"133,1\""
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 2,
+   "u": "Zoek eerst het patroon in de tabel en gebruik dat om de gevraagde waarde te bepalen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"10\"\"? Dan neem je de toename van jaar 0 naar jaar 1. De toename is niet constant, dus 12,1. Het goede antwoord is 12,1.",
+    "Koos je \"\"11\"\"? Dan neem je de toename van jaar 1 naar jaar 2. In jaar 3 is de toename groter, namelijk 12,1. Door de stappen goed na te lopen kom je uit op 12,1.",
+    "Klopt: 133,1 − 121 = 12,1. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"133,1\"\"? Dan neem je de omzet in jaar 3. De toename is het verschil met jaar 2, dus 12,1. Controleer je stap: de juiste uitkomst is 12,1."
+   ],
+   "uh": "Hoeveel neemt de omzet van B toe van jaar 2 naar jaar 3?",
+   "ctx": "Twee bedrijven vergelijken hun omzet in duizenden euro's. Bedrijf A heeft in de jaren 0, 1, 2 en 3 omzetten van 100, 120, 140 en 160. Bedrijf B heeft in dezelfde jaren omzetten van 100, 110, 121 en 133,1. Een leerling vergelijkt de twee tabellen."
+  },
+  {
+   "v": "Waarom is het verband in de tabel van B niet lineair?",
+   "o": [
+    "\"de omzet stijgt\"",
+    "\"de toename per jaar is niet constant\"",
+    "\"de beginwaarde is 100\"",
+    "\"de tabel heeft vier kolommen, denk ik, zeg maar\""
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 2,
+   "u": "Zoek eerst het patroon in de tabel en gebruik dat om de gevraagde waarde te bepalen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"de omzet stijgt\"\"? Dan denk je dat stijgen genoeg is voor een niet-lineair verband. Een lineair verband stijgt ook, maar met een constante toename.",
+    "Klopt: de toename is 10, 11 en 12,1, dus per jaar steeds groter.",
+    "Koos je \"\"de beginwaarde is 100\"\"? Dan denk je dat een beginwaarde lineariteit uitsluit. Bij A is dat ook 100, en daar is de toename constant.",
+    "Koos je \"\"de tabel heeft vier kolommen, denk ik, zeg maar\"\"? Dan denk je dat het aantal kolommen telt. De reden zit in de toename, en die is niet constant."
+   ],
+   "uh": "Waarom is het verband in de tabel van B niet lineair?",
+   "ctx": "Twee bedrijven vergelijken hun omzet in duizenden euro's. Bedrijf A heeft in de jaren 0, 1, 2 en 3 omzetten van 100, 120, 140 en 160. Bedrijf B heeft in dezelfde jaren omzetten van 100, 110, 121 en 133,1. Een leerling vergelijkt de twee tabellen."
+  },
+  {
+   "v": "Welke waarde van N hoort bij t = 4 in de tabel?",
+   "o": [
+    "\"232\"",
+    "\"58\"",
+    "\"90\"",
+    "\"82\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 0,
+   "u": "Zoek eerst het patroon in de tabel en gebruik dat om de gevraagde waarde te bepalen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"232\"\"? Dan reken je (50 + 8) × 4. De formule telt 8t apart bij 50 op, dus 50 + 32. Het goede antwoord is 82.",
+    "Koos je \"\"58\"\"? Dan neem je de waarde bij t = 1. Het gaat om vier jaar, dus 82. Door de stappen goed na te lopen kom je uit op 82.",
+    "Koos je \"\"90\"\"? Dan reken je 50 + 8 + 4 · 8. De toename is 8 per jaar, vier keer, dus 50 + 32. Controleer je stap: de juiste uitkomst is 82.",
+    "Klopt: 50 + 8 × 4 = 50 + 32 = 82. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Welke waarde van N hoort bij t = 4 in de tabel?",
+   "ctx": "Een groeiende vereniging gebruikt de formule N = 50 + 8t, waarbij N het aantal leden is en t het aantal jaren sinds de oprichting. De secretaris wil de formule omzetten in een tabel en daaruit waarden aflezen."
+  },
+  {
+   "v": "In welk jaar komt de vereniging uit op precies 106 leden?",
+   "o": [
+    "\"7 jaar\"",
+    "\"14 jaar, I suppose\"",
+    "\"56 jaar\"",
+    "\"6 jaar\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 0,
+   "u": "Zoek eerst het patroon in de tabel en gebruik dat om de gevraagde waarde te bepalen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: 50 + 8t = 106 geeft 8t = 56 en dus t = 7. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"14 jaar, I suppose\"\"? Dan deel je 106 door 8 zonder 50 af te trekken. Het beginaantal is 50, dus (106 − 50) : 8. Het goede antwoord is 7 jaar.",
+    "Koos je \"\"56 jaar\"\"? Dan neem je het verschil 106 − 50 als aantal jaren. Je moet nog delen door 8, dus 7. Door de stappen goed na te lopen kom je uit op 7 jaar.",
+    "Koos je \"\"6 jaar\"\"? Dan trek je 106 − 50 = 56 en deel je door 9. De toename is 8 per jaar, dus 7. Controleer je stap: de juiste uitkomst is 7 jaar."
+   ],
+   "uh": "In welk jaar komt de vereniging uit op precies 106 leden?",
+   "ctx": "Een groeiende vereniging gebruikt de formule N = 50 + 8t, waarbij N het aantal leden is en t het aantal jaren sinds de oprichting. De secretaris wil de formule omzetten in een tabel en daaruit waarden aflezen."
+  },
+  {
+   "v": "Met hoeveel nemen de ledenaantallen in de tabel per jaar toe?",
+   "o": [
+    "\"50\"",
+    "\"58\"",
+    "\"8\"",
+    "\"4\""
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 3,
+   "u": "Zoek eerst het patroon in de tabel en gebruik dat om de gevraagde waarde te bepalen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"50\"\"? Dan neem je het beginaantal. De toename per jaar is de coëfficiënt van t, dus 8. Het goede antwoord is 8.",
+    "Koos je \"\"58\"\"? Dan tel je 50 en 8 op. De toename is alleen de 8, dus 8 per jaar. Door de stappen goed na te lopen kom je uit op 8.",
+    "Klopt: de coëfficiënt van t in de formule is 8, dus 8 leden per jaar.",
+    "Koos je \"\"4\"\"? Dan neem je het aantal jaren uit een eerdere vraag. De toename per jaar volgt uit de formule, dus 8. Controleer je stap: de juiste uitkomst is 8."
+   ],
+   "uh": "Met hoeveel nemen de ledenaantallen in de tabel per jaar toe?",
+   "ctx": "Een groeiende vereniging gebruikt de formule N = 50 + 8t, waarbij N het aantal leden is en t het aantal jaren sinds de oprichting. De secretaris wil de formule omzetten in een tabel en daaruit waarden aflezen."
+  },
+  {
+   "v": "Tussen welke twee opeenvolgende metingen stijgt de temperatuur het meest?",
+   "o": [
+    "\"6:00 en 9:00\"",
+    "\"9:00 en 12:00\"",
+    "\"12:00 en 15:00, really\"",
+    "\"15:00 en 18:00\""
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 1,
+   "u": "Zoek eerst het patroon in de tabel en gebruik dat om de gevraagde waarde te bepalen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"6:00 en 9:00\"\"? Dan neem je de eerste periode. Die geeft een stijging van 4 graden, maar 9:00 en 12:00 geeft 6.",
+    "Klopt: van 12 naar 18 graden is een stijging van 6 graden.",
+    "Koos je \"\"12:00 en 15:00, really\"\"? Dan neem je de periode met de hoogste meting. De stijging is daar maar 2 graden, dus 6 is groter.",
+    "Koos je \"\"15:00 en 18:00\"\"? Dan neem je de laatste periode. Daar daalt de temperatuur met 5 graden, dus geen stijging. Controleer je stap: de juiste uitkomst is 9:00 en 12:00."
+   ],
+   "uh": "Tussen welke twee opeenvolgende metingen stijgt de temperatuur het meest?",
+   "ctx": "Een weerstation meet de temperatuur in graden Celsius op vijf tijdstippen: om 6:00 uur 8 graden, om 9:00 uur 12 graden, om 12:00 uur 18 graden, om 15:00 uur 20 graden en om 18:00 uur 15 graden. Een leerling leest de tabel af."
+  },
+  {
+   "v": "Hoeveel graden verschilt de hoogste meting van de laagste meting?",
+   "o": [
+    "\"28 graden, I think\"",
+    "\"5 graden\"",
+    "\"10 graden\"",
+    "\"12 graden\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 1,
+   "u": "Zoek eerst het patroon in de tabel en gebruik dat om de gevraagde waarde te bepalen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"28 graden, I think\"\"? Dan tel je de hoogste en laagste meting op. Een verschil trek je af, dus 20 − 8. Het goede antwoord is 12 graden.",
+    "Koos je \"\"5 graden\"\"? Dan neem je het verschil tussen 15:00 en 18:00. Je moet het hoogste en laagste getal van de tabel nemen, dus 20 − 8.",
+    "Koos je \"\"10 graden\"\"? Dan neem je de stijging van 6:00 tot 12:00. De hoogste meting is om 15:00, dus 20 − 8. Controleer je stap: de juiste uitkomst is 12 graden.",
+    "Klopt: het maximum is 20 graden, het minimum is 8 graden, dus 20 − 8 = 12."
+   ],
+   "uh": "Hoeveel graden verschilt de hoogste meting van de laagste meting?",
+   "ctx": "Een weerstation meet de temperatuur in graden Celsius op vijf tijdstippen: om 6:00 uur 8 graden, om 9:00 uur 12 graden, om 12:00 uur 18 graden, om 15:00 uur 20 graden en om 18:00 uur 15 graden. Een leerling leest de tabel af."
+  },
+  {
+   "v": "Met hoeveel graden daalt de temperatuur tussen 15:00 en 18:00 uur?",
+   "o": [
+    "\"5 graden\"",
+    "\"35 graden, to be honest\"",
+    "\"2 graden\"",
+    "\"15 graden\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 1,
+   "u": "Zoek eerst het patroon in de tabel en gebruik dat om de gevraagde waarde te bepalen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: 20 − 15 = 5 graden. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"35 graden, to be honest\"\"? Dan tel je 20 en 15 bij elkaar op. Een daling is het verschil, dus 20 − 15. Het goede antwoord is 5 graden.",
+    "Koos je \"\"2 graden\"\"? Dan neem je het verschil tussen 12:00 en 15:00. Dat is een stijging, en de daling is 5 graden. Door de stappen goed na te lopen kom je uit op 5 graden.",
+    "Koos je \"\"15 graden\"\"? Dan neem je de temperatuur om 18:00. De daling is het verschil, dus 20 − 15. Controleer je stap: de juiste uitkomst is 5 graden."
+   ],
+   "uh": "Met hoeveel graden daalt de temperatuur tussen 15:00 en 18:00 uur?",
+   "ctx": "Een weerstation meet de temperatuur in graden Celsius op vijf tijdstippen: om 6:00 uur 8 graden, om 9:00 uur 12 graden, om 12:00 uur 18 graden, om 15:00 uur 20 graden en om 18:00 uur 15 graden. Een leerling leest de tabel af."
+  }
+ ],
+ "oe": [
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een bedrijf betaalt een loon volgens deze tabel: 2 uur werken levert €26 op, 4 uur levert €52 op en 6 uur levert €78 op. Een medewerker wil weten of het verband recht evenredig is en wat 9 uur oplevert.",
+   "v": "Beredeneer het soort verband en bereken de opbrengst van 9 uur.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "26 : 2 = 52 : 4 = 78 : 6 = 13 per uur, dus recht evenredig (1p). Opbrengst per uur is €13 (1p). 9 × 13 = €117 (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een stroomabonnement heeft de volgende tabel: bij 0 kWh betaal je €12, bij 50 kWh €17 en bij 100 kWh €22. Een klant wil de toename per kWh weten, een formule opstellen en de kosten bij 80 kWh berekenen.",
+   "v": "Stel de formule op en bereken de kosten bij 80 kWh.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Toename 5 per 50 kWh, dus 0,10 per kWh (1p). K = 12 + 0,10x (1p). Bij 80 kWh: 12 + 8 = €20 (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een klus kost 3 werknemers 8 dagen. Bij 4 werknemers duurt het 6 dagen en bij 6 werknemers 4 dagen. Een planner wil weten welk verband dit is en hoeveel dagen 8 werknemers nodig hebben.",
+   "v": "Beredeneer het soort verband en bereken de duur voor 8 werknemers.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "3 × 8 = 4 × 6 = 6 × 4 = 24, dus omgekeerd evenredig (1p). Het product is constant: 24 (1p). 24 : 8 = 3 dagen (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Tabel T1 geeft voor x = 1, 2, 3, 4 de waarden 5, 7, 9, 11. Tabel T2 geeft voor dezelfde x de waarden 5, 8, 11, 14. Een leerling wil weten welke tabel sneller groeit en wat de waarden bij x = 6 zijn.",
+   "v": "Vergelijk de toenames en bereken beide waarden bij x = 6.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "T1 neemt 2 per stap toe, T2 3 per stap, dus T2 groeit sneller (1p). T1 bij x = 6: 5 + 5 × 2 = 15 (1p). T2 bij x = 6: 5 + 5 × 3 = 20 (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een leerling kijkt naar een tabel waarin 1 uur €8 kost en 2 uur €14. Hij zegt dat het verband recht evenredig is omdat de kosten stijgen. Jij ziet dat dat niet klopt en wilt het juiste soort verband met formule geven.",
+   "v": "Leg uit waarom het niet recht evenredig is en geef de formule.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Bij recht evenredig zou 2 uur €16 kosten, maar het is €14 (1p). De toename is 6 per uur en bij 0 uur €2: lineair (1p). K = 2 + 6u (1p)."
+  }
+ ]
+}

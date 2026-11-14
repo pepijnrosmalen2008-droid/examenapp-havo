@@ -1125,7 +1125,30 @@ var VAKKEN = [
     "nSv": 111,
     "nOe": 8,
     "nBeg": 21,
-    "hasSam": true
+    "hasSam": true,
+    "leerdoelen": [
+     {
+      "id": "C1",
+      "lo": "wa.C.1",
+      "gs": 2,
+      "naam": "Tabellen opstellen, aflezen en interpreteren",
+      "beschrijving": "Je stelt tabellen op, leest ze af, herkent het patroon (lineair, recht evenredig of omgekeerd evenredig), vergelijkt tabellen en koppelt een tabel aan een formule of grafiek.",
+      "ceStatus": "CE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Een tabel opstellen",
+       "Waarden aflezen en toename bepalen",
+       "Tabellen vergelijken",
+       "Tabel en formule of grafiek",
+       "Soort verband herkennen"
+      ],
+      "nSv": 27,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
+     }
+    ]
    },
    {
     "id": "D",
