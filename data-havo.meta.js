@@ -1016,6 +1016,27 @@ var VAKKEN = [
       "nOe": 5,
       "nBeg": 12,
       "hasSam": true
+     },
+     {
+      "id": "B3",
+      "lo": "wa.B.3",
+      "gs": 2,
+      "naam": "Haakjes wegwerken en vereenvoudigen",
+      "beschrijving": "Je werkt haakjes weg, voegt gelijksoortige termen samen, werkt dubbele haakjes en kwadraten uit, brengt factoren buiten haakjes en controleert je uitkomst door een getal in te vullen.",
+      "ceStatus": "CE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Haakjes wegwerken",
+       "Gelijksoortige termen samennemen",
+       "Dubbele haakjes en kwadraten",
+       "Buiten haakjes brengen en ontbinden",
+       "Vereenvoudigen en controleren"
+      ],
+      "nSv": 27,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
      }
     ]
    },

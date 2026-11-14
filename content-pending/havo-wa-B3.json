@@ -1,0 +1,682 @@
+{
+ "id": "B3",
+ "lo": "wa.B.3",
+ "gs": 2,
+ "naam": "Haakjes wegwerken en vereenvoudigen",
+ "beschrijving": "Je werkt haakjes weg, voegt gelijksoortige termen samen, werkt dubbele haakjes en kwadraten uit, brengt factoren buiten haakjes en controleert je uitkomst door een getal in te vullen.",
+ "ceStatus": "CE",
+ "binas": "",
+ "val": "",
+ "onderwerpen": [
+  "Haakjes wegwerken",
+  "Gelijksoortige termen samennemen",
+  "Dubbele haakjes en kwadraten",
+  "Buiten haakjes brengen en ontbinden",
+  "Vereenvoudigen en controleren"
+ ],
+ "sam": "Haakjes werk je weg door elke term met de factor vooraan te vermenigvuldigen en op het teken te letten. Gelijksoortige termen neem je samen. Bij dubbele haakjes vermenigvuldig je elke term met elke term en vergeet je de kruisproducten niet; (x + 4)² = x² + 8x + 16. Ontbinden is het omgekeerde: buiten haakjes brengen. Controleer met een getal.",
+ "begrippen": [
+  {
+   "t": "Haakjes wegwerken",
+   "d": "Elke term binnen de haakjes vermenigvuldigen met de factor ervoor, zoals 3(x + 4) = 3x + 12."
+  },
+  {
+   "t": "Term",
+   "d": "Een onderdeel van een som, zoals 3x of −5, met zijn eigen teken."
+  },
+  {
+   "t": "Gelijksoortige termen",
+   "d": "Termen met dezelfde variabele en macht; je mag ze samennemen, zoals 4x + 3x = 7x."
+  },
+  {
+   "t": "Coëfficiënt",
+   "d": "Het getal voor de variabele, zoals 5 in 5x."
+  },
+  {
+   "t": "Dubbele haakjes",
+   "d": "Een product van twee som-haakjes, zoals (x + 2)(x + 3); elke term met elke term vermenigvuldigen."
+  },
+  {
+   "t": "Kruisproduct",
+   "d": "Een product van twee verschillende termen uit de twee haakjes, zoals 3x en 2x."
+  },
+  {
+   "t": "Buiten haakjes brengen",
+   "d": "De gemeenschappelijke factor van alle termen vooraan zetten: 4x + 8 = 4(x + 2)."
+  },
+  {
+   "t": "Ontbinden",
+   "d": "Een som schrijven als product van factoren, zoals 6x² + 9x = 3x(2x + 3)."
+  },
+  {
+   "t": "Kwadraat van een som",
+   "d": "(x + 4)² = x² + 8x + 16; de dubbele term hoort erbij."
+  },
+  {
+   "t": "Variabele",
+   "d": "Een letter die voor een getal staat, zoals x."
+  },
+  {
+   "t": "Vereenvoudigen",
+   "d": "Een uitdrukking zo kort mogelijk opschrijven zonder haakjes en met samengenomen termen."
+  },
+  {
+   "t": "Controleren door invullen",
+   "d": "Een getal invullen in begin en eind van de uitwerking; de uitkomsten moeten gelijk zijn."
+  }
+ ],
+ "sv": [
+  {
+   "v": "Je werkt 3(x + 4) uit zonder haakjes. Welke vorm krijg je?",
+   "o": [
+    "\"3x + 4, I think\"",
+    "\"3x + 12\"",
+    "\"x + 12\"",
+    "\"3x + 7\""
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 0,
+   "u": "Werk haakjes stap voor stap uit en controleer je antwoord door een getal in te vullen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"3x + 4, I think\"\"? Dan vermenigvuldig je alleen de eerste term met 3. Het getal voor de haakjes hoort bij elke term binnen de haakjes, dus ook 3 × 4 = 12.",
+    "Klopt: 3 vermenigvuldig je met x en met 4, dus 3x + 12. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"x + 12\"\"? Dan vermenigvuldig je alleen de tweede term met 3. De x binnen de haakjes krijgt ook de factor 3 mee, dus 3x en niet x.",
+    "Koos je \"\"3x + 7\"\"? Dan tel je 3 en 4 bij elkaar op in plaats van te vermenigvuldigen. De haakjes vragen om een product, dus 3 × 4 = 12 en niet 3 + 4."
+   ],
+   "uh": "Je werkt 3(x + 4) uit zonder haakjes. Welke vorm krijg je?"
+  },
+  {
+   "v": "Een leerling schrijft −2(x − 5) zonder haakjes. Welke uitkomst is juist?",
+   "o": [
+    "\"−2x − 10, to be honest\"",
+    "\"−2x − 5\"",
+    "\"2x + 10\"",
+    "\"−2x + 10\""
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 0,
+   "u": "Werk haakjes stap voor stap uit en controleer je antwoord door een getal in te vullen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"−2x − 10, to be honest\"\"? Dan vergeet je dat min keer min plus geeft. Het product van −2 en −5 is positief, dus +10. Het goede antwoord is −2x + 10.",
+    "Koos je \"\"−2x − 5\"\"? Dan vermenigvuldig je de tweede term niet met −2. Elke term binnen de haakjes krijgt de factor mee, dus ook de 5.",
+    "Koos je \"\"2x + 10\"\"? Dan laat je het minteken bij de eerste term weg. −2 × x is −2x, en dat teken blijft staan. Controleer je stap: de juiste uitkomst is −2x + 10.",
+    "Klopt: −2 × x = −2x en −2 × −5 = +10. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Een leerling schrijft −2(x − 5) zonder haakjes. Welke uitkomst is juist?"
+  },
+  {
+   "v": "Je neemt 4x + 3x − 2x samen tot één term. Welke term krijg je dan?",
+   "o": [
+    "\"5x\"",
+    "\"9x\"",
+    "\"5x²\"",
+    "\"24x\""
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 1,
+   "u": "Werk haakjes stap voor stap uit en controleer je antwoord door een getal in te vullen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: 4 + 3 − 2 = 5, en alle termen zijn gelijksoortig met x.",
+    "Koos je \"\"9x\"\"? Dan tel je alle getallen bij elkaar op en vergeet je de min. Bij −2x trek je af, dus 4 + 3 − 2 = 5. Het goede antwoord is 5x.",
+    "Koos je \"\"5x²\"\"? Dan kwadrateer je de x terwijl je termen optelt. Bij optellen van gelijksoortige termen blijft de x staan, en alleen de coëfficiënten tellen mee.",
+    "Koos je \"\"24x\"\"? Dan vermenigvuldig je de getallen met elkaar. Bij het samennemen van termen tel je de coëfficiënten op, en trek je af waar een min staat."
+   ],
+   "uh": "Je neemt 4x + 3x − 2x samen tot één term. Welke term krijg je dan?"
+  },
+  {
+   "v": "Je vereenvoudigt 5a + 2b − 3a + b. Welke vorm houd je over?",
+   "o": [
+    "\"8a + 3b, you know\"",
+    "\"2a + b\"",
+    "\"2a + 3b\"",
+    "\"5ab\""
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 1,
+   "u": "Werk haakjes stap voor stap uit en controleer je antwoord door een getal in te vullen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"8a + 3b, you know\"\"? Dan tel je 5a en 3a bij elkaar op. Het minteken hoort bij 3a, dus je trekt 3a af van 5a. Het goede antwoord is 2a + 3b.",
+    "Koos je \"\"2a + b\"\"? Dan laat je de b bij 2b weg. De losse b is gelijksoortig met 2b, dus samen 3b. Door de stappen goed na te lopen kom je uit op 2a + 3b.",
+    "Klopt: 5a − 3a = 2a en 2b + b = 3b. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"5ab\"\"? Dan schrijf je alle letters achter elkaar. De termen met a en met b zijn niet gelijksoortig, dus je mag ze niet samennemen."
+   ],
+   "uh": "Je vereenvoudigt 5a + 2b − 3a + b. Welke vorm houd je over?"
+  },
+  {
+   "v": "Je werkt (x + 2)(x + 3) uit. Welke uitdrukking krijg je?",
+   "o": [
+    "\"x² + 6\"",
+    "\"x² + 5x + 6\"",
+    "\"x² + 5x + 5, really\"",
+    "\"2x + 5\""
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 2,
+   "u": "Werk haakjes stap voor stap uit en controleer je antwoord door een getal in te vullen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"x² + 6\"\"? Dan vermenigvuldig je alleen de eerste met de eerste en de laatste met de laatste term. Je mist de twee kruisproducten, 3x en 2x.",
+    "Klopt: x·x + 3x + 2x + 6 = x² + 5x + 6. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"x² + 5x + 5, really\"\"? Dan tel je 2 en 3 ook bij het laatste getal op. De laatste term is een product, dus 2 × 3 = 6. Door de stappen goed na te lopen kom je uit op x² + 5x + 6.",
+    "Koos je \"\"2x + 5\"\"? Dan tel je alle termen bij elkaar op. Twee haakjes die je met elkaar vermenigvuldigt geven een kwadraat, dus x² komt voor."
+   ],
+   "uh": "Je werkt (x + 2)(x + 3) uit. Welke uitdrukking krijg je?"
+  },
+  {
+   "v": "Je brengt 4x + 8 buiten haakjes. Welke vorm krijg je?",
+   "o": [
+    "\"4(x + 8), I think\"",
+    "\"4(x + 4)\"",
+    "\"12x\"",
+    "\"4(x + 2)\""
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 3,
+   "u": "Werk haakjes stap voor stap uit en controleer je antwoord door een getal in te vullen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"4(x + 8), I think\"\"? Dan deel je alleen de eerste term door 4 en laat je de 8 staan. Buiten haakjes brengen deelt elke term, dus 8 : 4 = 2.",
+    "Koos je \"\"4(x + 4)\"\"? Dan deel je 8 door 2 in plaats van door 4. Na terugvermenigvuldigen moet 4x + 8 uitkomen, en 4 × 4 = 16 is fout.",
+    "Koos je \"\"12x\"\"? Dan tel je alles bij elkaar op alsof de termen gelijksoortig zijn. 4x en 8 zijn niet gelijksoortig, dus je moet buiten haakjes brengen.",
+    "Klopt: 4 past in 4x en in 8, dus 4(x + 2). Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Je brengt 4x + 8 buiten haakjes. Welke vorm krijg je?"
+  },
+  {
+   "v": "Een leerling vereenvoudigt 2(x + 1) + 3(x − 1). Welke uitkomst klopt?",
+   "o": [
+    "\"5x − 1\"",
+    "\"5x + 5, to be honest\"",
+    "\"5x + 1\"",
+    "\"−x + 5\""
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 4,
+   "u": "Werk haakjes stap voor stap uit en controleer je antwoord door een getal in te vullen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: 2x + 2 + 3x − 3 = 5x − 1. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"5x + 5, to be honest\"\"? Dan tel je de getallen 2 en 3 op in plaats van 2 en −3. De tweede haakjes bevatten een min, dus 3 × −1 = −3.",
+    "Koos je \"\"5x + 1\"\"? Dan draai je het teken van het totaal om. Uit 2 − 3 volgt −1, en niet +1. Door de stappen goed na te lopen kom je uit op 5x − 1.",
+    "Koos je \"\"−x + 5\"\"? Dan behandel je het plusteken tussen de haakjes als een min. Het staat er 2(x + 1) + 3(x − 1), dus 2x + 3x = 5x."
+   ],
+   "uh": "Een leerling vereenvoudigt 2(x + 1) + 3(x − 1). Welke uitkomst klopt?"
+  },
+  {
+   "v": "Welke uitdrukking beschrijft de oppervlakte in x zonder haakjes?",
+   "o": [
+    "\"x² + 15\"",
+    "\"2x + 8\"",
+    "\"x² + 8x + 15\"",
+    "\"x² + 8x + 8, zeg maar\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 0,
+   "u": "Werk haakjes stap voor stap uit en controleer je antwoord door een getal in te vullen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"x² + 15\"\"? Dan vermenigvuldig je alleen x·x en 5·3. De kruisproducten 3x en 5x horen er ook bij, dus x² + 8x + 15.",
+    "Koos je \"\"2x + 8\"\"? Dan tel je de zijden op en vergeet je dat oppervlakte een product is. Dat levert de halve omtrek, en niet de oppervlakte.",
+    "Klopt: (x + 5)(x + 3) = x² + 3x + 5x + 15 = x² + 8x + 15.",
+    "Koos je \"\"x² + 8x + 8, zeg maar\"\"? Dan tel je 5 en 3 ook voor het laatste getal op. De constante term is het product van de constanten, dus 5 × 3 = 15."
+   ],
+   "uh": "Welke uitdrukking beschrijft de oppervlakte in x zonder haakjes?",
+   "ctx": "Een rechthoekige tuin heeft een lengte van (x + 5) meter en een breedte van (x + 3) meter. Een leerling schrijft de oppervlakte eerst als product en wil die daarna zonder haakjes opschrijven en met een getal controleren."
+  },
+  {
+   "v": "Hoeveel vierkante meter is de oppervlakte van de tuin als x = 4?",
+   "o": [
+    "\"48 m², you know\"",
+    "\"63 m²\"",
+    "\"32 m²\"",
+    "\"16 m²\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 0,
+   "u": "Werk haakjes stap voor stap uit en controleer je antwoord door een getal in te vullen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"48 m², you know\"\"? Dan vul je x = 3 in. De opgave geeft x = 4, dus (4 + 5)(4 + 3) = 63. Het goede antwoord is 63 m².",
+    "Klopt: (4 + 5)(4 + 3) = 9 × 7 = 63, en x² + 8x + 15 geeft ook 63.",
+    "Koos je \"\"32 m²\"\"? Dan neem je de omtrek in plaats van de oppervlakte. De omtrek is 2 × (9 + 7) = 32, maar gevraagd is het product 9 × 7.",
+    "Koos je \"\"16 m²\"\"? Dan vul je alleen x² in en vergeet je de andere termen. De oppervlakte bestaat uit x² + 8x + 15, en dat is 63."
+   ],
+   "uh": "Hoeveel vierkante meter is de oppervlakte van de tuin als x = 4?",
+   "ctx": "Een rechthoekige tuin heeft een lengte van (x + 5) meter en een breedte van (x + 3) meter. Een leerling schrijft de oppervlakte eerst als product en wil die daarna zonder haakjes opschrijven en met een getal controleren."
+  },
+  {
+   "v": "Welke formule geeft de omtrek van de tuin in x, zonder haakjes?",
+   "o": [
+    "\"2x + 8\"",
+    "\"4x + 8\"",
+    "\"x² + 8x + 15\"",
+    "\"4x + 16\""
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 1,
+   "u": "Werk haakjes stap voor stap uit en controleer je antwoord door een getal in te vullen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"2x + 8\"\"? Dan vergeet je de factor 2 voor de omtrek. De omtrek telt twee lengtes en twee breedtes, dus 2(2x + 8).",
+    "Koos je \"\"4x + 8\"\"? Dan vermenigvuldig je alleen 2x met 2. Ook het getal 8 binnen de haakjes moet met 2, dus 16. Door de stappen goed na te lopen kom je uit op 4x + 16.",
+    "Koos je \"\"x² + 8x + 15\"\"? Dan geef je de oppervlakte in plaats van de omtrek. De omtrek is een som van zijden, en geen product.",
+    "Klopt: 2((x + 5) + (x + 3)) = 2(2x + 8) = 4x + 16. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Welke formule geeft de omtrek van de tuin in x, zonder haakjes?",
+   "ctx": "Een rechthoekige tuin heeft een lengte van (x + 5) meter en een breedte van (x + 3) meter. Een leerling schrijft de oppervlakte eerst als product en wil die daarna zonder haakjes opschrijven en met een getal controleren."
+  },
+  {
+   "v": "Welke korte vorm heeft de formule K = 2(3x + 4) + 5(x − 1)?",
+   "o": [
+    "\"K = 11x + 3\"",
+    "\"K = 11x + 13, denk ik\"",
+    "\"K = 8x + 3\"",
+    "\"K = 11x + 4\""
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 1,
+   "u": "Werk haakjes stap voor stap uit en controleer je antwoord door een getal in te vullen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: 6x + 8 + 5x − 5 = 11x + 3. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"K = 11x + 13, denk ik\"\"? Dan vergeet je dat 5 × −1 gelijk is aan −5. Je telt 8 en 5 bij elkaar op, terwijl het 8 − 5 = 3 moet zijn.",
+    "Koos je \"\"K = 8x + 3\"\"? Dan tel je 3x en 5x op in plaats van 6x en 5x. De factor 2 vermenigvuldigt ook 3x, dus 6x. Door de stappen goed na te lopen kom je uit op K = 11x + 3.",
+    "Koos je \"\"K = 11x + 4\"\"? Dan reken je 2 × 4 − 5 × 1 als 4. Dat klopt niet met de haakjes, want 8 − 5 = 3. Controleer je stap: de juiste uitkomst is K = 11x + 3."
+   ],
+   "uh": "Welke korte vorm heeft de formule K = 2(3x + 4) + 5(x − 1)?",
+   "ctx": "Een muziekschool berekent de kosten van een cursus met de formule K = 2(3x + 4) + 5(x − 1), waarin x het aantal lessen per maand is. De administratie wil de formule zo kort mogelijk opschrijven om snel te kunnen rekenen."
+  },
+  {
+   "v": "Hoeveel euro bedragen de kosten bij x = 6 lessen?",
+   "o": [
+    "\"€72\"",
+    "\"€63\"",
+    "\"€69\"",
+    "\"€80\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 1,
+   "u": "Werk haakjes stap voor stap uit en controleer je antwoord door een getal in te vullen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"€72\"\"? Dan vul je 6 niet goed in bij de korte formule. 11 × 6 = 66, en daarbij komt 3. Het goede antwoord is €69.",
+    "Koos je \"\"€63\"\"? Dan tel je de 3 niet erbij op. De formule is 11x + 3, dus 66 + 3. Door de stappen goed na te lopen kom je uit op €69.",
+    "Klopt: 11 × 6 + 3 = 66 + 3 = 69. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"€80\"\"? Dan neem je de uitkomst bij een andere waarde van x. Bij x = 6 hoort 11 × 6 + 3, dus 69. Controleer je stap: de juiste uitkomst is €69."
+   ],
+   "uh": "Hoeveel euro bedragen de kosten bij x = 6 lessen?",
+   "ctx": "Een muziekschool berekent de kosten van een cursus met de formule K = 2(3x + 4) + 5(x − 1), waarin x het aantal lessen per maand is. De administratie wil de formule zo kort mogelijk opschrijven om snel te kunnen rekenen."
+  },
+  {
+   "v": "Bij welk aantal lessen x zijn de kosten precies €80?",
+   "o": [
+    "\"x = 8\"",
+    "\"x = 7\"",
+    "\"x = 6\"",
+    "\"x = 80, I suppose\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 1,
+   "u": "Werk haakjes stap voor stap uit en controleer je antwoord door een getal in te vullen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"x = 8\"\"? Dan trek je 3 niet af voordat je deelt. Uit 11x + 3 = 80 volgt eerst 11x = 77, en dan x = 7. Het goede antwoord is x = 7.",
+    "Klopt: 11x + 3 = 80 geeft 11x = 77 en dus x = 7. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"x = 6\"\"? Dan neem je het aantal van de vorige vraag. Bij x = 6 zijn de kosten €69, niet €80. Door de stappen goed na te lopen kom je uit op x = 7.",
+    "Koos je \"\"x = 80, I suppose\"\"? Dan vul je het bedrag in als aantal lessen. Het bedrag staat links van het gelijkteken, en x is het aantal lessen."
+   ],
+   "uh": "Bij welk aantal lessen x zijn de kosten precies €80?",
+   "ctx": "Een muziekschool berekent de kosten van een cursus met de formule K = 2(3x + 4) + 5(x − 1), waarin x het aantal lessen per maand is. De administratie wil de formule zo kort mogelijk opschrijven om snel te kunnen rekenen."
+  },
+  {
+   "v": "Welke uitdrukking is gelijk aan (x + 4)² zonder haakjes?",
+   "o": [
+    "\"x² + 16\"",
+    "\"x² + 4x + 16, eigenlijk\"",
+    "\"x² + 8x + 8\"",
+    "\"x² + 8x + 16\""
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 2,
+   "u": "Werk haakjes stap voor stap uit en controleer je antwoord door een getal in te vullen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"x² + 16\"\"? Dan kwadrateer je elke term apart. Een kwadraat van een som bevat ook de dubbele term, dus 2 × 4x = 8x.",
+    "Koos je \"\"x² + 4x + 16, eigenlijk\"\"? Dan neem je maar één keer 4x mee. De twee kruisproducten zijn beide 4x, dus samen 8x. Door de stappen goed na te lopen kom je uit op x² + 8x + 16.",
+    "Koos je \"\"x² + 8x + 8\"\"? Dan vermenigvuldig je 4 met 2 in plaats van met 4 voor de laatste term. De laatste term is 4 × 4, dus 16.",
+    "Klopt: (x + 4)(x + 4) = x² + 4x + 4x + 16 = x² + 8x + 16."
+   ],
+   "uh": "Welke uitdrukking is gelijk aan (x + 4)² zonder haakjes?",
+   "ctx": "Een leerling moet de uitdrukking (x + 4)² vereenvoudigen. Hij schrijft op: (x + 4)² = x² + 16. De docent vraagt hem de uitkomst te controleren door een getal in te vullen en de fout op te sporen."
+  },
+  {
+   "v": "Welke waarde geeft (x + 4)² als x = 3?",
+   "o": [
+    "\"49\"",
+    "\"25\"",
+    "\"14\"",
+    "\"19\""
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 2,
+   "u": "Werk haakjes stap voor stap uit en controleer je antwoord door een getal in te vullen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: (3 + 4)² = 7² = 49, en x² + 8x + 16 geeft ook 49.",
+    "Koos je \"\"25\"\"? Dan neem je het resultaat van de foute formule x² + 16. Bij x = 3 geeft dat 9 + 16, en dat is niet gelijk aan (3 + 4)².",
+    "Koos je \"\"14\"\"? Dan tel je 3 en 4 op en kwadrateer je niet. De haakjes staan in het kwadraat, dus 7² = 49. Door de stappen goed na te lopen kom je uit op 49.",
+    "Koos je \"\"19\"\"? Dan reken je 3² + 4² + 3 + 4. Een kwadraat van een som reken je uit door eerst de som te nemen, en dat is 7² = 49."
+   ],
+   "uh": "Welke waarde geeft (x + 4)² als x = 3?",
+   "ctx": "Een leerling moet de uitdrukking (x + 4)² vereenvoudigen. Hij schrijft op: (x + 4)² = x² + 16. De docent vraagt hem de uitkomst te controleren door een getal in te vullen en de fout op te sporen."
+  },
+  {
+   "v": "Waarom is (x + 4)² niet gelijk aan x² + 16?",
+   "o": [
+    "\"16 hoort er niet bij\"",
+    "\"het kwadraat moet kleiner zijn\"",
+    "\"de term 8x ontbreekt\"",
+    "\"x moet eerst weggewerkt worden\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 2,
+   "u": "Werk haakjes stap voor stap uit en controleer je antwoord door een getal in te vullen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"16 hoort er niet bij\"\"? Dan denk je dat de constante verkeerd is. Het getal 16 klopt wel, maar de middenterm 8x ontbreekt.",
+    "Koos je \"\"het kwadraat moet kleiner zijn\"\"? Dan denk je dat een som in het kwadraat altijd kleiner wordt. Het wordt juist groter dan de losse kwadraten, door de term 8x.",
+    "Klopt: bij het uitwerken ontstaan twee kruisproducten 4x die samen 8x geven.",
+    "Koos je \"\"x moet eerst weggewerkt worden\"\"? Dan denk je dat je x eerst moet weghalen. De x blijft in de uitkomst staan, en de term 8x hoort erbij."
+   ],
+   "uh": "Waarom is (x + 4)² niet gelijk aan x² + 16?",
+   "ctx": "Een leerling moet de uitdrukking (x + 4)² vereenvoudigen. Hij schrijft op: (x + 4)² = x² + 16. De docent vraagt hem de uitkomst te controleren door een getal in te vullen en de fout op te sporen."
+  },
+  {
+   "v": "Hoeveel scheelt de foute formule x² + 16 met de goede formule bij x = 3?",
+   "o": [
+    "\"8\"",
+    "\"24\"",
+    "\"16\"",
+    "\"12\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 2,
+   "u": "Werk haakjes stap voor stap uit en controleer je antwoord door een getal in te vullen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"8\"\"? Dan neem je de coëfficiënt van de ontbrekende term. Het verschil is 8x en x is 3, dus 24. Het goede antwoord is 24.",
+    "Klopt: de goede uitkomst is 49, de foute 25, en 49 − 25 = 24 = 8 × 3.",
+    "Koos je \"\"16\"\"? Dan neem je de constante term als verschil. Beide formules hebben 16, dus dat is het verschil niet. Door de stappen goed na te lopen kom je uit op 24.",
+    "Koos je \"\"12\"\"? Dan deel je 24 nogmaals door 2. Het verschil is 49 − 25, en dat is 24. Controleer je stap: de juiste uitkomst is 24."
+   ],
+   "uh": "Hoeveel scheelt de foute formule x² + 16 met de goede formule bij x = 3?",
+   "ctx": "Een leerling moet de uitdrukking (x + 4)² vereenvoudigen. Hij schrijft op: (x + 4)² = x² + 16. De docent vraagt hem de uitkomst te controleren door een getal in te vullen en de fout op te sporen."
+  },
+  {
+   "v": "Hoe ziet de formule W = 6x² + 9x eruit na volledig buiten haakjes brengen?",
+   "o": [
+    "\"W = 3(2x² + 3x), zeg maar\"",
+    "\"W = 3x(2x + 9)\"",
+    "\"W = x(6x + 9)\"",
+    "\"W = 3x(2x + 3)\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 3,
+   "u": "Werk haakjes stap voor stap uit en controleer je antwoord door een getal in te vullen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"W = 3(2x² + 3x), zeg maar\"\"? Dan laat je de x staan terwijl hij in beide termen voorkomt. De ontbinding is dan niet volledig, want 3x kan ook buiten haakjes.",
+    "Koos je \"\"W = 3x(2x + 9)\"\"? Dan deel je 9x door x maar niet door 3. De factor binnen de haakjes moet 3 zijn, en dus niet 9.",
+    "Koos je \"\"W = x(6x + 9)\"\"? Dan haal je alleen x buiten haakjes. Ook de factor 3 is gemeenschappelijk, dus 3x(2x + 3). Controleer je stap: de juiste uitkomst is W = 3x(2x + 3).",
+    "Klopt: 3x past in 6x² en in 9x, en 3x(2x + 3) = 6x² + 9x."
+   ],
+   "uh": "Hoe ziet de formule W = 6x² + 9x eruit na volledig buiten haakjes brengen?",
+   "ctx": "De winst van een kleine webwinkel wordt benaderd met de formule W = 6x² + 9x, waarbij x het aantal verkochte dozen in tientallen is. De eigenaar wil de formule ontbinden om de opbouw beter te kunnen zien."
+  },
+  {
+   "v": "Hoeveel bedraagt W als x = 2?",
+   "o": [
+    "\"42\"",
+    "\"30\"",
+    "\"27\"",
+    "\"54\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 3,
+   "u": "Werk haakjes stap voor stap uit en controleer je antwoord door een getal in te vullen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: 6 × 4 + 9 × 2 = 24 + 18 = 42, en 3 × 2 × 7 = 42. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"30\"\"? Dan reken je 6 × 2 + 9 × 2 omdat je x² niet kwadrateert. De term 6x² wordt 6 × 4, dus 24. Het goede antwoord is 42.",
+    "Koos je \"\"27\"\"? Dan vul je x = 1,5 in voor de laatste term. De opgave geeft x = 2, en dus 18. Door de stappen goed na te lopen kom je uit op 42.",
+    "Koos je \"\"54\"\"? Dan vermenigvuldig je 6x² met 3 in plaats van met 4. Het kwadraat van 2 is 4, dus 24 + 18. Controleer je stap: de juiste uitkomst is 42."
+   ],
+   "uh": "Hoeveel bedraagt W als x = 2?",
+   "ctx": "De winst van een kleine webwinkel wordt benaderd met de formule W = 6x² + 9x, waarbij x het aantal verkochte dozen in tientallen is. De eigenaar wil de formule ontbinden om de opbouw beter te kunnen zien."
+  },
+  {
+   "v": "Waarom is 3(2x² + 3x) nog niet volledig ontbonden?",
+   "o": [
+    "\"2x² en 3x zijn gelijksoortig, gewoon, volgens mij\"",
+    "\"er staat een plusteken\"",
+    "\"3 en x kunnen allebei buiten haakjes\"",
+    "\"de 3 moet er weer in\""
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 3,
+   "u": "Werk haakjes stap voor stap uit en controleer je antwoord door een getal in te vullen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"2x² en 3x zijn gelijksoortig, gewoon, volgens mij\"\"? Dan denk je dat je de termen binnen de haakjes kunt samennemen. 2x² en 3x hebben een verschillende macht, dus ze zijn niet gelijksoortig.",
+    "Koos je \"\"er staat een plusteken\"\"? Dan denk je dat een plusteken ontbinden onmogelijk maakt. Ook bij plus kun je een factor buiten haakjes brengen, zolang die in beide termen zit.",
+    "Klopt: in 2x² en 3x zit x als gemeenschappelijke factor, dus 3x(2x + 3).",
+    "Koos je \"\"de 3 moet er weer in\"\"? Dan denk je dat de factor 3 terug moet. De 3 staat al goed buiten de haakjes, maar x moet er ook uit."
+   ],
+   "uh": "Waarom is 3(2x² + 3x) nog niet volledig ontbonden?",
+   "ctx": "De winst van een kleine webwinkel wordt benaderd met de formule W = 6x² + 9x, waarbij x het aantal verkochte dozen in tientallen is. De eigenaar wil de formule ontbinden om de opbouw beter te kunnen zien."
+  },
+  {
+   "v": "Welke vergelijking krijg je na het wegwerken van de haakjes in 3(x − 2) = 2x + 5?",
+   "o": [
+    "\"3x − 2 = 2x + 5, denk ik\"",
+    "\"3x − 6 = 2x + 5\"",
+    "\"3x + 6 = 2x + 5\"",
+    "\"x − 6 = 2x + 5\""
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 0,
+   "u": "Werk haakjes stap voor stap uit en controleer je antwoord door een getal in te vullen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"3x − 2 = 2x + 5, denk ik\"\"? Dan vermenigvuldig je de −2 niet met 3. Alle termen binnen de haakjes krijgen de factor 3, dus −6.",
+    "Klopt: 3 × x = 3x en 3 × −2 = −6, dus links staat 3x − 6.",
+    "Koos je \"\"3x + 6 = 2x + 5\"\"? Dan maak je van −6 een plus. Het product van 3 en −2 is negatief, dus −6. Door de stappen goed na te lopen kom je uit op 3x − 6 = 2x + 5.",
+    "Koos je \"\"x − 6 = 2x + 5\"\"? Dan vermenigvuldig je alleen het getal met 3. Ook de x krijgt de factor mee, dus 3x. Controleer je stap: de juiste uitkomst is 3x − 6 = 2x + 5."
+   ],
+   "uh": "Welke vergelijking krijg je na het wegwerken van de haakjes in 3(x − 2) = 2x + 5?",
+   "ctx": "Een concertkaartje kost x euro. Anouk koopt 3 kaartjes en krijgt daarna €6 terugbetaald voor een kaartje dat ze niet nodig heeft. Daan betaalt 2 kaartjes plus €5 voor de reservering. Beiden betalen precies evenveel."
+  },
+  {
+   "v": "Voor welke prijs x betalen Anouk en Daan evenveel?",
+   "o": [
+    "\"x = −1, to be honest\"",
+    "\"x = 1\"",
+    "\"x = 7\"",
+    "\"x = 11\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 1,
+   "u": "Werk haakjes stap voor stap uit en controleer je antwoord door een getal in te vullen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"x = −1, to be honest\"\"? Dan trek je 5 van 6 af. Je moet 6 en 5 bij elkaar optellen na het verplaatsen, dus x = 11. Het goede antwoord is x = 11.",
+    "Koos je \"\"x = 1\"\"? Dan los je 3x − 6 = 2x + 5 op door x weg te strepen. Eerst trek je 2x af, en dan blijft x = 11 over. Door de stappen goed na te lopen kom je uit op x = 11.",
+    "Koos je \"\"x = 7\"\"? Dan neem je het resultaat van een andere vergelijking. Hier geldt x = 11, want 3x − 2x = 5 + 6. Controleer je stap: de juiste uitkomst is x = 11.",
+    "Klopt: 3x − 6 = 2x + 5 geeft x = 11, en 3 × 9 = 27 = 2 × 11 + 5."
+   ],
+   "uh": "Voor welke prijs x betalen Anouk en Daan evenveel?",
+   "ctx": "Een concertkaartje kost x euro. Anouk koopt 3 kaartjes en krijgt daarna €6 terugbetaald voor een kaartje dat ze niet nodig heeft. Daan betaalt 2 kaartjes plus €5 voor de reservering. Beiden betalen precies evenveel."
+  },
+  {
+   "v": "Welk bedrag betalen Anouk en Daan beiden bij x = 11?",
+   "o": [
+    "\"€27\"",
+    "\"€33\"",
+    "\"€22\"",
+    "\"€11\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 4,
+   "u": "Werk haakjes stap voor stap uit en controleer je antwoord door een getal in te vullen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: Anouk 3 × 11 − 6 = 27 en Daan 2 × 11 + 5 = 27. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"€33\"\"? Dan vergeet je de terugbetaling van €6 aan te trekken. Het bedrag van Anouk is 3 × 11 − 6, en dat is 27.",
+    "Koos je \"\"€22\"\"? Dan neem je alleen twee kaartjes zonder de reservering. Daan betaalt 2 × 11 + 5, dus 27. Door de stappen goed na te lopen kom je uit op €27.",
+    "Koos je \"\"€11\"\"? Dan neem je alleen de prijs van één kaartje. Beiden betalen voor meerdere kaartjes, dus 27. Controleer je stap: de juiste uitkomst is €27."
+   ],
+   "uh": "Welk bedrag betalen Anouk en Daan beiden bij x = 11?",
+   "ctx": "Een concertkaartje kost x euro. Anouk koopt 3 kaartjes en krijgt daarna €6 terugbetaald voor een kaartje dat ze niet nodig heeft. Daan betaalt 2 kaartjes plus €5 voor de reservering. Beiden betalen precies evenveel."
+  },
+  {
+   "v": "Welke vorm krijg je als je (x + 2)(x − 2) uitwerkt?",
+   "o": [
+    "\"x² + 4\"",
+    "\"x² − 4x − 4\"",
+    "\"x² − 4\"",
+    "\"x² − 2\""
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 2,
+   "u": "Werk haakjes stap voor stap uit en controleer je antwoord door een getal in te vullen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"x² + 4\"\"? Dan maak je van −2 × 2 een plus. Het product van 2 en −2 is negatief, dus −4. Het goede antwoord is x² − 4.",
+    "Koos je \"\"x² − 4x − 4\"\"? Dan tel je de kruisproducten verkeerd. −2x en +2x heffen elkaar op, dus er blijft geen x-term over.",
+    "Klopt: x² − 2x + 2x − 4 = x² − 4. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"x² − 2\"\"? Dan deel je 4 door 2 of reken je 2 − 2·2. Het laatste getal is 2 × −2, en dat is −4. Controleer je stap: de juiste uitkomst is x² − 4."
+   ],
+   "uh": "Welke vorm krijg je als je (x + 2)(x − 2) uitwerkt?",
+   "ctx": "Een leerling vermenigvuldigt de haakjes (x + 2)(x − 2) uit en kijkt waarom er geen term met x overblijft. Hij controleert zijn uitkomst door verschillende getallen in te vullen en de uitkomsten te vergelijken."
+  },
+  {
+   "v": "Welke waarde geeft (x + 2)(x − 2) als x = 10?",
+   "o": [
+    "\"100\"",
+    "\"96\"",
+    "\"104\"",
+    "\"84\""
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 2,
+   "u": "Werk haakjes stap voor stap uit en controleer je antwoord door een getal in te vullen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"100\"\"? Dan vergeet je het getal 4 af te trekken. De uitkomst is x² − 4, dus 100 − 4. Het goede antwoord is 96.",
+    "Klopt: 12 × 8 = 96, en 10² − 4 = 96. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"104\"\"? Dan tel je 4 erbij op in plaats van af te trekken. Het teken van −4 hoort bij het product, dus 96. Door de stappen goed na te lopen kom je uit op 96.",
+    "Koos je \"\"84\"\"? Dan reken je 10 − 2 en 10 + 2 als 8 × 10 + 4. Dat klopt niet, want 12 × 8 = 96. Controleer je stap: de juiste uitkomst is 96."
+   ],
+   "uh": "Welke waarde geeft (x + 2)(x − 2) als x = 10?",
+   "ctx": "Een leerling vermenigvuldigt de haakjes (x + 2)(x − 2) uit en kijkt waarom er geen term met x overblijft. Hij controleert zijn uitkomst door verschillende getallen in te vullen en de uitkomsten te vergelijken."
+  },
+  {
+   "v": "Waarom blijft er bij (x + 2)(x − 2) geen term met x over?",
+   "o": [
+    "\"x wordt altijd weggestreept\"",
+    "\"de haakjes hebben dezelfde getallen, denk ik\"",
+    "\"de 4 is een kwadraat\"",
+    "\"de termen 2x en −2x heffen elkaar op\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 2,
+   "u": "Werk haakjes stap voor stap uit en controleer je antwoord door een getal in te vullen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"x wordt altijd weggestreept\"\"? Dan denk je dat x bij vermenigvuldigen verdwijnt. In andere haakjes, zoals (x + 2)(x + 2), blijft een x-term staan, dus het komt door de tekens.",
+    "Koos je \"\"de haakjes hebben dezelfde getallen, denk ik\"\"? Dan denk je dat gelijke getallen genoeg zijn. Het gaat om het gelijke getal met tegengesteld teken, dus +2 en −2.",
+    "Koos je \"\"de 4 is een kwadraat\"\"? Dan verwar je dit met het getal 4. De term 4 ontstaat uit 2 × 2 maar zegt niets over x, en x verdwijnt door +2x − 2x.",
+    "Klopt: de kruisproducten zijn −2x en +2x en die tellen op tot 0."
+   ],
+   "uh": "Waarom blijft er bij (x + 2)(x − 2) geen term met x over?",
+   "ctx": "Een leerling vermenigvuldigt de haakjes (x + 2)(x − 2) uit en kijkt waarom er geen term met x overblijft. Hij controleert zijn uitkomst door verschillende getallen in te vullen en de uitkomsten te vergelijken."
+  },
+  {
+   "v": "Je vult x = 1 in bij (x + 2)(x − 2) en bij de foute uitkomst x² + 4. Welke twee waarden vind je?",
+   "o": [
+    "\"−3 en 5\"",
+    "\"5 en 5\"",
+    "\"3 en 5\"",
+    "\"−3 en −3, to be honest\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 2,
+   "u": "Werk haakjes stap voor stap uit en controleer je antwoord door een getal in te vullen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: (1 + 2)(1 − 2) = 3 × −1 = −3, en 1² + 4 = 5; de uitkomsten verschillen dus.",
+    "Koos je \"\"5 en 5\"\"? Dan reken je ook de haakjes uit met een plusteken. Het tweede haakje is (1 − 2) en dat is −1, dus het product is −3.",
+    "Koos je \"\"3 en 5\"\"? Dan vergeet je het minteken in het tweede haakje. 1 − 2 is negatief, dus 3 × −1 = −3 en niet 3. Door de stappen goed na te lopen kom je uit op −3 en 5.",
+    "Koos je \"\"−3 en −3, to be honest\"\"? Dan vul je x = 1 in bij een andere uitdrukking dan x² + 4. Daar komt 1 + 4 = 5 uit, en dat is iets anders dan −3."
+   ],
+   "uh": "Je vult x = 1 in bij (x + 2)(x − 2) en bij de foute uitkomst x² + 4. Welke twee waarden vind je?",
+   "ctx": "Een leerling vermenigvuldigt de haakjes (x + 2)(x − 2) uit en kijkt waarom er geen term met x overblijft. Hij controleert zijn uitkomst door verschillende getallen in te vullen en de uitkomsten te vergelijken."
+  }
+ ],
+ "oe": [
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een abonnement kost 2(3x − 4) − 3(x − 2) euro per maand, waarbij x het aantal gebruikte diensten is. De klant wil de formule zonder haakjes opschrijven en nagaan wat hij betaalt bij 5 diensten.",
+   "v": "Werk de haakjes weg en bereken de kosten bij x = 5.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "2(3x − 4) = 6x − 8 en −3(x − 2) = −3x + 6 (1p). Samen 3x − 2 (1p). Bij x = 5: 15 − 2 = 13 euro (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een rechthoekige moestuin heeft een lengte van (x + 4) meter en een breedte van (x + 1) meter. De eigenaar wil de oppervlakte als een formule zonder haakjes en controleert die met x = 3.",
+   "v": "Schrijf de oppervlakte zonder haakjes en controleer met x = 3.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "(x + 4)(x + 1) = x² + x + 4x + 4 = x² + 5x + 4 (1p). Met x = 3: 7 × 4 = 28 (1p). En 9 + 15 + 4 = 28, dus de formule klopt (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "De opbrengst van een kraam wordt beschreven met O = 8x² + 12x, waarbij x het aantal verkochte kratten is. Een leerling wil de formule volledig ontbinden en controleert de uitkomst met x = 1.",
+   "v": "Ontbind de formule volledig en controleer met x = 1.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "8x² + 12x = 4x(2x + 3) (1p). Met x = 1: 8 + 12 = 20 (1p). En 4 × 1 × 5 = 20, dus het klopt (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Twee winkels vergelijken de prijs van een pakket. Winkel A rekent 4(x − 1) euro en winkel B rekent 2(x + 5) euro, waarbij x de prijs van een artikel is. Een klant wil weten bij welke prijs de winkels evenveel vragen.",
+   "v": "Werk de haakjes weg en bereken x. Controleer door in te vullen.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "4x − 4 = 2x + 10 (1p). 2x = 14, dus x = 7 (1p). Controle: 4 × 6 = 24 en 2 × 12 = 24 (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een klasgenoot schrijft: (x + 5)² = x² + 25. Jij weet dat dit niet klopt, want bij een kwadraat van een som ontstaat ook een middenterm. Je wilt de fout laten zien met een getal en de juiste uitkomst geven.",
+   "v": "Geef de juiste uitkomst en toon met x = 1 aan dat x² + 25 fout is.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "(x + 5)² = x² + 10x + 25 (1p). Bij x = 1: 6² = 36 (1p). En 1 + 25 = 26, dus x² + 25 is fout (1p)."
+  }
+ ]
+}
