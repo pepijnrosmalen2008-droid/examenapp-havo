@@ -41510,6 +41510,688 @@ var VAKKEN = [
         "u": "(x + 5)² = x² + 10x + 25 (1p). Bij x = 1: 6² = 36 (1p). En 1 + 25 = 26, dus x² + 25 is fout (1p)."
        }
       ]
+     },
+     {
+      "id": "B4",
+      "lo": "wa.B.4",
+      "gs": 2,
+      "naam": "Rekenen met variabelen, machten en wortels",
+      "beschrijving": "Je rekent met machten met variabelen en met negatieve en gebroken exponenten, vereenvoudigt wortels en controleert je uitkomsten door een getal in te vullen.",
+      "ceStatus": "CE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Rekenregels voor machten",
+       "Macht van een product",
+       "Negatieve en gebroken exponenten",
+       "Wortels vereenvoudigen",
+       "Controleren met een getal"
+      ],
+      "sam": "Bij hetzelfde grondtal tel je exponenten op bij vermenigvuldigen, trek je ze af bij delen en vermenigvuldig je ze bij een macht van een macht. De exponent van (2a)³ geldt voor elke factor. Een negatieve exponent is een omgekeerde en een exponent 1/2 is een wortel. Haal bij een wortel een kwadraat naar buiten: √48 = 4√3. Controleer met een getal.",
+      "begrippen": [
+       {
+        "t": "Macht",
+        "d": "Herhaald vermenigvuldigen van een grondtal, zoals x⁴ = x · x · x · x."
+       },
+       {
+        "t": "Grondtal",
+        "d": "Het getal of de letter die herhaald wordt vermenigvuldigd."
+       },
+       {
+        "t": "Exponent",
+        "d": "Het getal rechtsboven dat zegt hoeveel keer het grondtal vermenigvuldigd wordt."
+       },
+       {
+        "t": "Vermenigvuldigen van machten",
+        "d": "Bij hetzelfde grondtal tel je de exponenten op: x³ · x⁴ = x⁷."
+       },
+       {
+        "t": "Delen van machten",
+        "d": "Bij hetzelfde grondtal trek je de exponenten af: x⁸ : x² = x⁶."
+       },
+       {
+        "t": "Macht van een macht",
+        "d": "Je vermenigvuldigt de exponenten: (x³)² = x⁶."
+       },
+       {
+        "t": "Macht van een product",
+        "d": "De exponent geldt voor elke factor: (2a)³ = 8a³."
+       },
+       {
+        "t": "Negatieve exponent",
+        "d": "Hoort bij een omgekeerde: x⁻² = 1/x²."
+       },
+       {
+        "t": "Wortel",
+        "d": "Het getal dat met zichzelf vermenigvuldigd het getal onder het wortelteken geeft: √36 = 6."
+       },
+       {
+        "t": "Gebroken exponent",
+        "d": "Een exponent 1/2 is een wortel: x^(1/2) = √x."
+       },
+       {
+        "t": "Wortel vereenvoudigen",
+        "d": "Een kwadraat buiten het wortelteken halen: √48 = 4√3."
+       },
+       {
+        "t": "Coëfficiënt",
+        "d": "Het getal voor de variabele; bij een product vermenigvuldig je de coëfficiënten."
+       }
+      ],
+      "sv": [
+       {
+        "v": "Je schrijft x³ · x⁴ als één macht. Welke macht krijg je?",
+        "o": [
+         "\"x¹²\"",
+         "\"x⁷\"",
+         "\"2x⁷\"",
+         "\"x⁻¹\""
+        ],
+        "c": 1,
+        "d": 1,
+        "s": 0,
+        "u": "Pas de rekenregels voor machten en wortels toe en controleer met een getal. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"x¹²\"\"? Dan vermenigvuldig je de exponenten. Bij het product van machten met hetzelfde grondtal tel je ze op, dus 3 + 4.",
+         "Klopt: bij vermenigvuldigen met hetzelfde grondtal tel je de exponenten op, 3 + 4 = 7.",
+         "Koos je \"\"2x⁷\"\"? Dan voeg je een coëfficiënt 2 toe. Er staat geen getal voor de x, dus de coëfficiënt is 1. Door de stappen goed na te lopen kom je uit op x⁷.",
+         "Koos je \"\"x⁻¹\"\"? Dan trek je de exponenten van elkaar af. Aftrekken doe je bij delen, en hier staat een product. Controleer je stap: de juiste uitkomst is x⁷."
+        ],
+        "uh": "Je schrijft x³ · x⁴ als één macht. Welke macht krijg je?"
+       },
+       {
+        "v": "Je vereenvoudigt x⁸ : x² tot één macht. Welke uitkomst klopt?",
+        "o": [
+         "\"x⁴\"",
+         "\"x¹⁰\"",
+         "\"x¹⁶\"",
+         "\"x⁶\""
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 0,
+        "u": "Pas de rekenregels voor machten en wortels toe en controleer met een getal. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"x⁴\"\"? Dan deel je de exponenten 8 en 2 door elkaar. De exponenten trek je af, dus 8 − 2. Het goede antwoord is x⁶.",
+         "Koos je \"\"x¹⁰\"\"? Dan tel je de exponenten op. Optellen hoort bij vermenigvuldigen, en hier wordt gedeeld. Door de stappen goed na te lopen kom je uit op x⁶.",
+         "Koos je \"\"x¹⁶\"\"? Dan vermenigvuldig je de exponenten. Dat is de regel voor een macht van een macht, en niet voor delen. Controleer je stap: de juiste uitkomst is x⁶.",
+         "Klopt: bij delen met hetzelfde grondtal trek je de exponenten af, 8 − 2 = 6."
+        ],
+        "uh": "Je vereenvoudigt x⁸ : x² tot één macht. Welke uitkomst klopt?"
+       },
+       {
+        "v": "Je bepaalt het kwadraat van x³. Welke macht van x staat er dan?",
+        "o": [
+         "\"x⁶\"",
+         "\"x⁵\"",
+         "\"x⁹\"",
+         "\"x\""
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 0,
+        "u": "Pas de rekenregels voor machten en wortels toe en controleer met een getal. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: bij een macht van een macht vermenigvuldig je de exponenten, 3 × 2 = 6.",
+         "Koos je \"\"x⁵\"\"? Dan tel je de exponenten 3 en 2 op. Bij een macht van een macht vermenigvuldig je ze, dus 3 × 2. Het goede antwoord is x⁶.",
+         "Koos je \"\"x⁹\"\"? Dan neem je 3 tot de macht 3 als exponent. De exponent van de buitenste macht is 2, dus 3 × 2 = 6. Door de stappen goed na te lopen kom je uit op x⁶.",
+         "Koos je \"\"x\"\"? Dan trek je de exponenten van elkaar af. Voor een macht van een macht geldt dat niet, maar 3 × 2. Controleer je stap: de juiste uitkomst is x⁶."
+        ],
+        "uh": "Je bepaalt het kwadraat van x³. Welke macht van x staat er dan?"
+       },
+       {
+        "v": "Een kubus heeft ribbe 2a. Welke formule geeft het volume zonder haakjes?",
+        "o": [
+         "\"2a³\"",
+         "\"6a³\"",
+         "\"8a³\"",
+         "\"8a\""
+        ],
+        "c": 2,
+        "d": 1,
+        "s": 1,
+        "u": "Pas de rekenregels voor machten en wortels toe en controleer met een getal. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"2a³\"\"? Dan pas je de exponent alleen op a toe. Bij (2a)³ hoort de exponent bij het hele product, dus ook bij 2.",
+         "Koos je \"\"6a³\"\"? Dan vermenigvuldig je 2 met 3 in plaats van 2 tot de macht 3. De macht van een getal is herhaald vermenigvuldigen, dus 2 · 2 · 2 = 8.",
+         "Klopt: (2a)³ = 2³ · a³ = 8a³; de exponent geldt voor het getal én de letter.",
+         "Koos je \"\"8a\"\"? Dan laat je de exponent bij a weg. Het volume heeft drie lengtes, dus a³. Controleer je stap: de juiste uitkomst is 8a³."
+        ],
+        "uh": "Een kubus heeft ribbe 2a. Welke formule geeft het volume zonder haakjes?"
+       },
+       {
+        "v": "Je schrijft 1/x² met een negatieve exponent. Welke vorm klopt?",
+        "o": [
+         "\"−x²\"",
+         "\"x⁻²\"",
+         "\"x^(1/2)\"",
+         "\"−2x\""
+        ],
+        "c": 1,
+        "d": 1,
+        "s": 2,
+        "u": "Pas de rekenregels voor machten en wortels toe en controleer met een getal. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"−x²\"\"? Dan zet dit je een minteken voor de macht. Een negatieve exponent verandert het teken niet, maar draait de macht om.",
+         "Klopt: een negatieve exponent hoort bij een omgekeerde, dus 1/x² = x⁻².",
+         "Koos je \"\"x^(1/2)\"\"? Dan verwar je de negatieve exponent met een wortel. Een gebroken exponent hoort bij een wortel, en een negatieve bij een breuk.",
+         "Koos je \"\"−2x\"\"? Dan leid je een negatieve term af uit de exponent. De exponent −2 geeft een deling door x², en geen vermenigvuldiging met −2."
+        ],
+        "uh": "Je schrijft 1/x² met een negatieve exponent. Welke vorm klopt?"
+       },
+       {
+        "v": "Je schrijft √36 zonder wortelteken. Welke waarde krijg je?",
+        "o": [
+         "\"18\"",
+         "\"72\"",
+         "\"3\"",
+         "\"6\""
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 3,
+        "u": "Pas de rekenregels voor machten en wortels toe en controleer met een getal. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"18\"\"? Dan deel je 36 door 2. Een wortel is het getal dat met zichzelf vermenigvuldigd 36 geeft, en dat is 6. Het goede antwoord is 6.",
+         "Koos je \"\"72\"\"? Dan vermenigvuldig je 36 met 2. Een wortel maakt het getal kleiner, dus 6. Door de stappen goed na te lopen kom je uit op 6.",
+         "Koos je \"\"3\"\"? Dan deel je 6 nogmaals door 2. 3 × 3 is 9 en niet 36, dus de wortel is 6. Controleer je stap: de juiste uitkomst is 6.",
+         "Klopt: 6 × 6 = 36, dus de wortel van 36 is 6. Reken dit na met de gegeven gegevens."
+        ],
+        "uh": "Je schrijft √36 zonder wortelteken. Welke waarde krijg je?"
+       },
+       {
+        "v": "Een leerling beweert dat x² · x³ gelijk is aan x⁶. Welk getal vind je bij x = 2 voor x² · x³?",
+        "o": [
+         "\"32\"",
+         "\"64\"",
+         "\"12\"",
+         "\"10\""
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 4,
+        "u": "Pas de rekenregels voor machten en wortels toe en controleer met een getal. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: 2² · 2³ = 4 · 8 = 32, en dat is 2⁵ en niet 2⁶ = 64.",
+         "Koos je \"\"64\"\"? Dan neem je 2⁶ als uitkomst. Dat is de foute bewering zelf, terwijl 4 × 8 = 32. Het goede antwoord is 32.",
+         "Koos je \"\"12\"\"? Dan tel je 4 en 8 op. Het gaat om een product van twee machten, dus 4 × 8. Door de stappen goed na te lopen kom je uit op 32.",
+         "Koos je \"\"10\"\"? Dan reken je 2 · 5. De exponenten tel je op, maar de machten zelf vermenigvuldig je, dus 2² · 2³ = 32. Controleer je stap: de juiste uitkomst is 32."
+        ],
+        "uh": "Een leerling beweert dat x² · x³ gelijk is aan x⁶. Welk getal vind je bij x = 2 voor x² · x³?"
+       },
+       {
+        "v": "Welke formule geeft het volume van de kubus zonder haakjes?",
+        "o": [
+         "\"V = 2a³, zeg maar\"",
+         "\"V = 6a\"",
+         "\"V = 8a³\"",
+         "\"V = 8a\""
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 0,
+        "u": "Pas de rekenregels voor machten en wortels toe en controleer met een getal. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"V = 2a³, zeg maar\"\"? Dan laat je de macht van 2 weg. (2a)³ betekent 2a · 2a · 2a, dus 8a³. Het goede antwoord is V = 8a³.",
+         "Koos je \"\"V = 6a\"\"? Dan vermenigvuldig je 2 met 3 en neem je a niet tot de macht. Het volume is lengte × breedte × hoogte, dus a³.",
+         "Klopt: V = (2a)³ = 8a³. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"V = 8a\"\"? Dan laat je de exponent bij a weg. Er zijn drie ribben van lengte a, dus a³. Controleer je stap: de juiste uitkomst is V = 8a³."
+        ],
+        "uh": "Welke formule geeft het volume van de kubus zonder haakjes?",
+        "ctx": "Een kubusvormige verpakking heeft een ribbe van 2a centimeter. Een leerling wil het volume en het oppervlak van een zijvlak als formule met a opschrijven en controleren met a = 3. Hij let op de haakjes en de exponent."
+       },
+       {
+        "v": "Hoeveel kubieke centimeter bedraagt het volume als a = 3?",
+        "o": [
+         "\"72\"",
+         "\"216\"",
+         "\"24\"",
+         "\"18\""
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 0,
+        "u": "Pas de rekenregels voor machten en wortels toe en controleer met een getal. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"72\"\"? Dan reken je 8 · 9 in plaats van 8 · 27. a³ is 27, dus 216. Het goede antwoord is 216.",
+         "Klopt: 8 · 27 = 216, en (2 · 3)³ = 6³ = 216. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"24\"\"? Dan vermenigvuldig je 8 met 3 en niet met 3³. De letter a heeft exponent 3, dus 27. Door de stappen goed na te lopen kom je uit op 216.",
+         "Koos je \"\"18\"\"? Dan neem je 2a = 6 en vermenigvuldig je met 3. Het volume is 6³, dus 216. Controleer je stap: de juiste uitkomst is 216."
+        ],
+        "uh": "Hoeveel kubieke centimeter bedraagt het volume als a = 3?",
+        "ctx": "Een kubusvormige verpakking heeft een ribbe van 2a centimeter. Een leerling wil het volume en het oppervlak van een zijvlak als formule met a opschrijven en controleren met a = 3. Hij let op de haakjes en de exponent."
+       },
+       {
+        "v": "Welke formule geeft de oppervlakte van één zijvlak in a?",
+        "o": [
+         "\"2a²\"",
+         "\"4a\"",
+         "\"8a²\"",
+         "\"4a²\""
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 1,
+        "u": "Pas de rekenregels voor machten en wortels toe en controleer met een getal. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"2a²\"\"? Dan pas je de exponent alleen op a toe. Het kwadraat geldt voor 2a, dus 2² = 4. Het goede antwoord is 4a².",
+         "Koos je \"\"4a\"\"? Dan laat je de exponent bij a weg. Een oppervlakte heeft twee lengtes, dus a². Door de stappen goed na te lopen kom je uit op 4a².",
+         "Koos je \"\"8a²\"\"? Dan gebruik je de macht 3 van het volume. Een zijvlak is een kwadraat, dus exponent 2. Controleer je stap: de juiste uitkomst is 4a².",
+         "Klopt: (2a)² = 2² · a² = 4a². Reken dit na met de gegeven gegevens."
+        ],
+        "uh": "Welke formule geeft de oppervlakte van één zijvlak in a?",
+        "ctx": "Een kubusvormige verpakking heeft een ribbe van 2a centimeter. Een leerling wil het volume en het oppervlak van een zijvlak als formule met a opschrijven en controleren met a = 3. Hij let op de haakjes en de exponent."
+       },
+       {
+        "v": "Welke macht met grondtal 2 is gelijk aan 2^t · 2³?",
+        "o": [
+         "\"2^(t + 3)\"",
+         "\"2^(3t)\"",
+         "\"4^(t + 3), denk ik\"",
+         "\"2^(t − 3)\""
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 0,
+        "u": "Pas de rekenregels voor machten en wortels toe en controleer met een getal. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: bij vermenigvuldigen met hetzelfde grondtal tel je de exponenten op.",
+         "Koos je \"\"2^(3t)\"\"? Dan vermenigvuldig je de exponenten. Dat geldt alleen voor een macht van een macht, en hier staat een product.",
+         "Koos je \"\"4^(t + 3), denk ik\"\"? Dan vermenigvuldig je de grondtallen. Het grondtal blijft 2, en alleen de exponenten tellen op. Door de stappen goed na te lopen kom je uit op 2^(t + 3).",
+         "Koos je \"\"2^(t − 3)\"\"? Dan trek je de exponenten af. Aftrekken hoort bij delen, en hier wordt vermenigvuldigd. Controleer je stap: de juiste uitkomst is 2^(t + 3)."
+        ],
+        "uh": "Welke macht met grondtal 2 is gelijk aan 2^t · 2³?",
+        "ctx": "In een laboratorium verdubbelt het aantal bacteriën elk uur. Het aantal na t uur is 2^t. De onderzoeker wil weten hoe het aantal verandert als er nog 3 uur bijkomen, en als er 2 uur worden teruggerekend."
+       },
+       {
+        "v": "Hoeveel bacteriën zijn er na 5 uur, uitgaand van 2^(t + 3) bij t = 2?",
+        "o": [
+         "\"10\"",
+         "\"64\"",
+         "\"32\"",
+         "\"12\""
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 0,
+        "u": "Pas de rekenregels voor machten en wortels toe en controleer met een getal. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"10\"\"? Dan reken je 2 · 5. Het gaat om een macht met grondtal 2, dus 2⁵ = 32. Het goede antwoord is 32.",
+         "Koos je \"\"64\"\"? Dan neem je 2⁶. Bij t = 2 is de exponent 2 + 3 = 5, dus 32. Door de stappen goed na te lopen kom je uit op 32.",
+         "Klopt: 2^(2 + 3) = 2⁵ = 32, en 2² · 2³ = 4 · 8 = 32. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"12\"\"? Dan tel je 4 en 8 op. 2² · 2³ is een product, dus 32. Controleer je stap: de juiste uitkomst is 32."
+        ],
+        "uh": "Hoeveel bacteriën zijn er na 5 uur, uitgaand van 2^(t + 3) bij t = 2?",
+        "ctx": "In een laboratorium verdubbelt het aantal bacteriën elk uur. Het aantal na t uur is 2^t. De onderzoeker wil weten hoe het aantal verandert als er nog 3 uur bijkomen, en als er 2 uur worden teruggerekend."
+       },
+       {
+        "v": "Je rekent het aantal bacteriën 2 uur terug vanaf 2^t. Welke macht van 2 beschrijft dat?",
+        "o": [
+         "\"2^(t + 2), I suppose\"",
+         "\"2^(t − 2)\"",
+         "\"1^(t − 2)\"",
+         "\"2^(t/2)\""
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 1,
+        "u": "Pas de rekenregels voor machten en wortels toe en controleer met een getal. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"2^(t + 2), I suppose\"\"? Dan tel je de exponenten op. Optellen doe je bij vermenigvuldigen, en hier wordt gedeeld. Het goede antwoord is 2^(t − 2).",
+         "Klopt: bij delen met hetzelfde grondtal trek je de exponenten af.",
+         "Koos je \"\"1^(t − 2)\"\"? Dan deel je de grondtallen 2 en 2 door elkaar. Het grondtal blijft 2, en alleen de exponenten gaan eraf.",
+         "Koos je \"\"2^(t/2)\"\"? Dan deel je de exponent t door 2. Delen door 2² trekt 2 af van de exponent, en deelt hem niet. Controleer je stap: de juiste uitkomst is 2^(t − 2)."
+        ],
+        "uh": "Je rekent het aantal bacteriën 2 uur terug vanaf 2^t. Welke macht van 2 beschrijft dat?",
+        "ctx": "In een laboratorium verdubbelt het aantal bacteriën elk uur. Het aantal na t uur is 2^t. De onderzoeker wil weten hoe het aantal verandert als er nog 3 uur bijkomen, en als er 2 uur worden teruggerekend."
+       },
+       {
+        "v": "Welke vereenvoudigde vorm heeft √48?",
+        "o": [
+         "\"6√8\"",
+         "\"16√3\"",
+         "\"2√12\"",
+         "\"4√3\""
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 3,
+        "u": "Pas de rekenregels voor machten en wortels toe en controleer met een getal. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"6√8\"\"? Dan trek je 48 uit elkaar als 6 · 8 en haal je 6 buiten de wortel. Alleen een kwadraat kun je buiten het wortelteken halen, en 6 is geen kwadraat.",
+         "Koos je \"\"16√3\"\"? Dan haal je 16 buiten de wortel zonder er de wortel van te nemen. √16 is 4, dus 4√3. Door de stappen goed na te lopen kom je uit op 4√3.",
+         "Koos je \"\"2√12\"\"? Dan haal je alleen een factor 2 buiten de wortel. 4 is een groter kwadraat dat in 48 past, dus 4√3. Controleer je stap: de juiste uitkomst is 4√3.",
+         "Klopt: √48 = √16 · √3 = 4√3. Reken dit na met de gegeven gegevens."
+        ],
+        "uh": "Welke vereenvoudigde vorm heeft √48?",
+        "ctx": "Een tuinier legt een vierkant stuk gazon aan met een oppervlakte van 48 vierkante meter. Hij wil de zijde exact weergeven met een vereenvoudigde wortel en ook weten hoeveel meter dat bij benadering is."
+       },
+       {
+        "v": "Hoeveel meter is de zijde van het gazon bij benadering, in twee decimalen?",
+        "o": [
+         "\"6,93 m\"",
+         "\"24 m\"",
+         "\"6,00 m, really\"",
+         "\"7,00 m\""
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 3,
+        "u": "Pas de rekenregels voor machten en wortels toe en controleer met een getal. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: 4√3 ≈ 4 · 1,732 = 6,93 en 6,93² ≈ 48. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"24 m\"\"? Dan deel je 48 door 2. De zijde is de wortel van de oppervlakte, en niet de helft. Het goede antwoord is 6,93 m.",
+         "Koos je \"\"6,00 m, really\"\"? Dan gebruik je het gehele getal 6 omdat 6² = 36. Dat is een te kleine oppervlakte, want 48 vraagt om 6,93.",
+         "Koos je \"\"7,00 m\"\"? Dan rond je af naar 7. Dan klopt 7² = 49 maar niet met 48, dus 6,93. Controleer je stap: de juiste uitkomst is 6,93 m."
+        ],
+        "uh": "Hoeveel meter is de zijde van het gazon bij benadering, in twee decimalen?",
+        "ctx": "Een tuinier legt een vierkant stuk gazon aan met een oppervlakte van 48 vierkante meter. Hij wil de zijde exact weergeven met een vereenvoudigde wortel en ook weten hoeveel meter dat bij benadering is."
+       },
+       {
+        "v": "Welke rekenregel gebruik je bij √48 = √16 · √3?",
+        "o": [
+         "\"√(a + b) = √a + √b\"",
+         "\"√(a · b) = a · b\"",
+         "\"√(a · b) = √a · √b\"",
+         "\"√a · √b = 2 · √(ab), denk ik\""
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 3,
+        "u": "Pas de rekenregels voor machten en wortels toe en controleer met een getal. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"√(a + b) = √a + √b\"\"? Dan pas je de regel voor een product toe op een som. 16 + 3 is hier niet 48, en bij een som werkt dat niet.",
+         "Koos je \"\"√(a · b) = a · b\"\"? Dan laat je het wortelteken weg. De wortel blijft om de factoren staan, dus √a · √b. Door de stappen goed na te lopen kom je uit op √(a · b) = √a · √b.",
+         "Klopt: de wortel van een product is het product van de wortels.",
+         "Koos je \"\"√a · √b = 2 · √(ab), denk ik\"\"? Dan voeg je een extra factor 2 toe. De regel is eenvoudiger, namelijk gelijk aan √(a · b)."
+        ],
+        "uh": "Welke rekenregel gebruik je bij √48 = √16 · √3?",
+        "ctx": "Een tuinier legt een vierkant stuk gazon aan met een oppervlakte van 48 vierkante meter. Hij wil de zijde exact weergeven met een vereenvoudigde wortel en ook weten hoeveel meter dat bij benadering is."
+       },
+       {
+        "v": "Welke waarde geeft (4√3)² ter controle?",
+        "o": [
+         "\"12\"",
+         "\"48\"",
+         "\"19\"",
+         "\"24\""
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 3,
+        "u": "Pas de rekenregels voor machten en wortels toe en controleer met een getal. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"12\"\"? Dan vermenigvuldig je 4 met 3. Kwadrateren geldt voor 4 én voor √3, dus 16 · 3. Het goede antwoord is 48.",
+         "Klopt: (4√3)² = 16 · 3 = 48. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"19\"\"? Dan tel je 16 en 3 op. Een kwadraat van een product is het product van de kwadraten, dus 16 · 3. Door de stappen goed na te lopen kom je uit op 48.",
+         "Koos je \"\"24\"\"? Dan vermenigvuldig je 4 · 3 · 2. Kwadrateren is niet verdubbelen, dus 16 · 3 = 48. Controleer je stap: de juiste uitkomst is 48."
+        ],
+        "uh": "Welke waarde geeft (4√3)² ter controle?",
+        "ctx": "Een tuinier legt een vierkant stuk gazon aan met een oppervlakte van 48 vierkante meter. Hij wil de zijde exact weergeven met een vereenvoudigde wortel en ook weten hoeveel meter dat bij benadering is."
+       },
+       {
+        "v": "Hoeveel bedraagt de intensiteit I als r = 5?",
+        "o": [
+         "\"−50\"",
+         "\"20\"",
+         "\"2500\"",
+         "\"4\""
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 2,
+        "u": "Pas de rekenregels voor machten en wortels toe en controleer met een getal. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"−50\"\"? Dan reken je 5⁻² uit als −10 en vermenigvuldig je met 100. Een negatieve exponent maakt het getal niet negatief, maar het is 1 : 25.",
+         "Koos je \"\"20\"\"? Dan deel je 100 door 5 in plaats van door 5². Het gaat om r², dus 25. Door de stappen goed na te lopen kom je uit op 4.",
+         "Koos je \"\"2500\"\"? Dan vermenigvuldig je 100 met 25 in plaats van te delen. Een negatieve exponent hoort bij delen, dus 100 : 25.",
+         "Klopt: 100 · 5⁻² = 100 : 25 = 4. Reken dit na met de gegeven gegevens."
+        ],
+        "uh": "Hoeveel bedraagt de intensiteit I als r = 5?",
+        "ctx": "De intensiteit van licht op afstand r meter van een lamp wordt beschreven door I = 100 · r^(−2). Een leerling wil de formule zonder negatieve exponent schrijven en uitrekenen hoe de intensiteit verandert bij toenemende afstand."
+       },
+       {
+        "v": "Welke breukvorm heeft I = 100 · r^(−2)?",
+        "o": [
+         "\"I = 100/r²\"",
+         "\"I = 100/(−2r)\"",
+         "\"I = 100 − r²\"",
+         "\"I = −100r²\""
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 2,
+        "u": "Pas de rekenregels voor machten en wortels toe en controleer met een getal. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: r⁻² = 1/r², dus I = 100/r². Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"I = 100/(−2r)\"\"? Dan maak je van de exponent een getal in de noemer. De exponent −2 blijft een exponent, namelijk 100/r².",
+         "Koos je \"\"I = 100 − r²\"\"? Dan trek je r² van 100 af. Een negatieve exponent geeft een deling, en geen aftrekking. Door de stappen goed na te lopen kom je uit op I = 100/r².",
+         "Koos je \"\"I = −100r²\"\"? Dan zet dit je het minteken voor de hele uitdrukking. Het minteken staat in de exponent, dus het is 100/r²."
+        ],
+        "uh": "Welke breukvorm heeft I = 100 · r^(−2)?",
+        "ctx": "De intensiteit van licht op afstand r meter van een lamp wordt beschreven door I = 100 · r^(−2). Een leerling wil de formule zonder negatieve exponent schrijven en uitrekenen hoe de intensiteit verandert bij toenemende afstand."
+       },
+       {
+        "v": "Hoeveel keer zo klein wordt I als r verdubbelt?",
+        "o": [
+         "\"2 keer zo klein, really\"",
+         "\"4 keer zo groot\"",
+         "\"4 keer zo klein\"",
+         "\"8 keer zo klein\""
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 2,
+        "u": "Pas de rekenregels voor machten en wortels toe en controleer met een getal. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"2 keer zo klein, really\"\"? Dan denk je dat een verdubbeling van r de intensiteit halveert. Hier staat r in het kwadraat, dus de factor 2² = 4 geldt.",
+         "Koos je \"\"4 keer zo groot\"\"? Dan draai je de richting om. Bij een grotere afstand neemt de intensiteit af, en wel met een factor 4.",
+         "Klopt: 100/(2r)² = 100/(4r²), dus een kwart van de oude waarde.",
+         "Koos je \"\"8 keer zo klein\"\"? Dan gebruik je een derde macht. De exponent is −2, dus 2² = 4 en niet 2³. Controleer je stap: de juiste uitkomst is 4 keer zo klein."
+        ],
+        "uh": "Hoeveel keer zo klein wordt I als r verdubbelt?",
+        "ctx": "De intensiteit van licht op afstand r meter van een lamp wordt beschreven door I = 100 · r^(−2). Een leerling wil de formule zonder negatieve exponent schrijven en uitrekenen hoe de intensiteit verandert bij toenemende afstand."
+       },
+       {
+        "v": "Hoe lang is de zijde van het vierkant als x = 49?",
+        "o": [
+         "\"24,5 m\"",
+         "\"7 m\"",
+         "\"49 m\"",
+         "\"2401 m\""
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 2,
+        "u": "Pas de rekenregels voor machten en wortels toe en controleer met een getal. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"24,5 m\"\"? Dan deel je 49 door 2. Een exponent 1/2 betekent een wortel, en geen halvering. Het goede antwoord is 7 m.",
+         "Klopt: 49^(1/2) = √49 = 7. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"49 m\"\"? Dan neem je het getal 49 zelf als zijde. De zijde is de wortel van de oppervlakte, dus 7. Door de stappen goed na te lopen kom je uit op 7 m.",
+         "Koos je \"\"2401 m\"\"? Dan kwadrateer je 49. Een exponent 1/2 geeft een wortel, en geen kwadraat. Controleer je stap: de juiste uitkomst is 7 m."
+        ],
+        "uh": "Hoe lang is de zijde van het vierkant als x = 49?",
+        "ctx": "Een vierkant heeft een oppervlakte van x vierkante meter, dus een zijde van x^(1/2) meter. Een balk heeft dit vierkant als grondvlak en een hoogte gelijk aan de zijde. Het volume schrijft de leerling als een macht van x."
+       },
+       {
+        "v": "Welke macht van x is het volume x · x^(1/2)?",
+        "o": [
+         "\"x^(1/2)\"",
+         "\"x^(2/2)\"",
+         "\"x^(3)\"",
+         "\"x^(3/2)\""
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 2,
+        "u": "Pas de rekenregels voor machten en wortels toe en controleer met een getal. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"x^(1/2)\"\"? Dan vergeet je de factor x. Het grondvlak x hoort er ook bij, dus 1 + 1/2. Het goede antwoord is x^(3/2).",
+         "Koos je \"\"x^(2/2)\"\"? Dan reken je 1 · 1/2 als 2/2. Bij vermenigvuldigen tel je de exponenten op, dus 3/2. Door de stappen goed na te lopen kom je uit op x^(3/2).",
+         "Koos je \"\"x^(3)\"\"? Dan tel je 1 en 2 op in plaats van 1 en 1/2. De wortel hoort bij exponent 1/2, dus 3/2. Controleer je stap: de juiste uitkomst is x^(3/2).",
+         "Klopt: x¹ · x^(1/2) = x^(1 + 1/2) = x^(3/2). Reken dit na met de gegeven gegevens."
+        ],
+        "uh": "Welke macht van x is het volume x · x^(1/2)?",
+        "ctx": "Een vierkant heeft een oppervlakte van x vierkante meter, dus een zijde van x^(1/2) meter. Een balk heeft dit vierkant als grondvlak en een hoogte gelijk aan de zijde. Het volume schrijft de leerling als een macht van x."
+       },
+       {
+        "v": "Hoeveel kubieke meter is het volume bij x = 49?",
+        "o": [
+         "\"343 m³\"",
+         "\"73,5 m³, I suppose\"",
+         "\"98 m³\"",
+         "\"2401 m³\""
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 2,
+        "u": "Pas de rekenregels voor machten en wortels toe en controleer met een getal. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: 49^(3/2) = 7³ = 343, en 49 · 7 = 343. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"73,5 m³, I suppose\"\"? Dan vermenigvuldig je 49 met 1,5. Een exponent 3/2 hoort bij wortel en macht, dus 7³. Het goede antwoord is 343 m³.",
+         "Koos je \"\"98 m³\"\"? Dan neem je 49 · 2. Het volume is oppervlakte maal hoogte, dus 49 · 7. Door de stappen goed na te lopen kom je uit op 343 m³.",
+         "Koos je \"\"2401 m³\"\"? Dan reken je 49² als volume. De exponent is 3/2 en niet 2, dus 343. Controleer je stap: de juiste uitkomst is 343 m³."
+        ],
+        "uh": "Hoeveel kubieke meter is het volume bij x = 49?",
+        "ctx": "Een vierkant heeft een oppervlakte van x vierkante meter, dus een zijde van x^(1/2) meter. Een balk heeft dit vierkant als grondvlak en een hoogte gelijk aan de zijde. Het volume schrijft de leerling als een macht van x."
+       },
+       {
+        "v": "Welke uitdrukking krijg je als je 3x² · 2x³ vereenvoudigt?",
+        "o": [
+         "\"5x⁵\"",
+         "\"6x⁶\"",
+         "\"6x⁵\"",
+         "\"5x⁶\""
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 0,
+        "u": "Pas de rekenregels voor machten en wortels toe en controleer met een getal. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"5x⁵\"\"? Dan tel je de coëfficiënten 3 en 2 op. De getallen voor de letters vermenigvuldig je, dus 6. Het goede antwoord is 6x⁵.",
+         "Koos je \"\"6x⁶\"\"? Dan vermenigvuldig je de exponenten 2 en 3. Bij een product van machten tel je ze op, dus 5. Door de stappen goed na te lopen kom je uit op 6x⁵.",
+         "Klopt: de coëfficiënten vermenigvuldig je, 3 · 2 = 6, en de exponenten tel je op, 2 + 3 = 5.",
+         "Koos je \"\"5x⁶\"\"? Dan tel je de coëfficiënten op en vermenigvuldig je de exponenten. Beide regels zijn andersom, dus 6x⁵."
+        ],
+        "uh": "Welke uitdrukking krijg je als je 3x² · 2x³ vereenvoudigt?",
+        "ctx": "Een leerling vermenigvuldigt de uitdrukkingen 3x² en 2x³ met elkaar en deelt het product daarna door 2x². Hij controleert zijn werk door x = 2 in te vullen en schrijft elke stap op."
+       },
+       {
+        "v": "Welke waarde geeft 3x² · 2x³ als x = 2?",
+        "o": [
+         "\"96\"",
+         "\"192\"",
+         "\"64\"",
+         "\"12\""
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 4,
+        "u": "Pas de rekenregels voor machten en wortels toe en controleer met een getal. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"96\"\"? Dan reken je 6 · 16. Bij x = 2 geldt x⁵ = 32, dus 6 · 32. Het goede antwoord is 192.",
+         "Klopt: 3 · 4 · 2 · 8 = 192, en 6 · 2⁵ = 6 · 32 = 192. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"64\"\"? Dan neem je 2⁶ als uitkomst. De uitdrukking is 6x⁵, dus 6 · 32. Door de stappen goed na te lopen kom je uit op 192.",
+         "Koos je \"\"12\"\"? Dan reken je 6 · 2. Bij x⁵ hoort 2⁵ en niet 2, dus 32 · 6. Controleer je stap: de juiste uitkomst is 192."
+        ],
+        "uh": "Welke waarde geeft 3x² · 2x³ als x = 2?",
+        "ctx": "Een leerling vermenigvuldigt de uitdrukkingen 3x² en 2x³ met elkaar en deelt het product daarna door 2x². Hij controleert zijn werk door x = 2 in te vullen en schrijft elke stap op."
+       },
+       {
+        "v": "Welke uitdrukking krijg je als je 6x⁵ deelt door 2x²?",
+        "o": [
+         "\"4x³\"",
+         "\"3x⁷\"",
+         "\"3x^(5/2)\"",
+         "\"3x³\""
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 1,
+        "u": "Pas de rekenregels voor machten en wortels toe en controleer met een getal. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"4x³\"\"? Dan trek je de coëfficiënten af. Bij delen deel je 6 door 2, dus 3. Het goede antwoord is 3x³.",
+         "Koos je \"\"3x⁷\"\"? Dan tel je de exponenten op. Bij delen trek je ze af, dus 5 − 2 = 3. Door de stappen goed na te lopen kom je uit op 3x³.",
+         "Koos je \"\"3x^(5/2)\"\"? Dan deel je de exponent 5 door 2. Delen door x² trekt 2 af van de exponent, dus x³. Controleer je stap: de juiste uitkomst is 3x³.",
+         "Klopt: 6 : 2 = 3 en x⁵ : x² = x³. Reken dit na met de gegeven gegevens."
+        ],
+        "uh": "Welke uitdrukking krijg je als je 6x⁵ deelt door 2x²?",
+        "ctx": "Een leerling vermenigvuldigt de uitdrukkingen 3x² en 2x³ met elkaar en deelt het product daarna door 2x². Hij controleert zijn werk door x = 2 in te vullen en schrijft elke stap op."
+       },
+       {
+        "v": "Waarom is 3x² · 2x³ niet gelijk aan 5x⁵?",
+        "o": [
+         "\"de coëfficiënten moeten worden vermenigvuldigd, niet opgeteld\"",
+         "\"de exponent moet 6 zijn\"",
+         "\"x² en x³ zijn gelijksoortig\"",
+         "\"3 en 2 vallen tegen elkaar weg, volgens mij, eigenlijk, denk ik\""
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 0,
+        "u": "Pas de rekenregels voor machten en wortels toe en controleer met een getal. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: 3 · 2 = 6 en de x-machten tellen op, dus 6x⁵. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"de exponent moet 6 zijn\"\"? Dan denk je dat 2 · 3 het exponent wordt. De exponenten tel je op, en dat geeft 5. Het goede antwoord is de coëfficiënten moeten worden vermenigvuldigd, niet opgeteld.",
+         "Koos je \"\"x² en x³ zijn gelijksoortig\"\"? Dan denk je dat je ze mag samennemen als bij een optelling. Bij een product gelden andere regels, dus 6x⁵.",
+         "Koos je \"\"3 en 2 vallen tegen elkaar weg, volgens mij, eigenlijk, denk ik\"\"? Dan denk je dat de getallen wegvallen. Ze worden met elkaar vermenigvuldigd, dus 6."
+        ],
+        "uh": "Waarom is 3x² · 2x³ niet gelijk aan 5x⁵?",
+        "ctx": "Een leerling vermenigvuldigt de uitdrukkingen 3x² en 2x³ met elkaar en deelt het product daarna door 2x². Hij controleert zijn werk door x = 2 in te vullen en schrijft elke stap op."
+       }
+      ],
+      "oe": [
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een kubusvormige doos heeft een ribbe van 3p decimeter. Een leerling wil het volume als formule met p opschrijven en controleert die met p = 2.",
+        "v": "Schrijf het volume zonder haakjes en bereken het volume bij p = 2.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "(3p)³ = 3³ · p³ = 27p³ (1p). Bij p = 2: 27 · 8 = 216 (1p). Controle: (3 · 2)³ = 6³ = 216 (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een leerling vereenvoudigt x⁴ · x³ : x² en controleert zijn uitkomst door x = 2 in te vullen. Hij gebruikt de rekenregels voor machten met hetzelfde grondtal.",
+        "v": "Schrijf de uitdrukking als één macht en controleer met x = 2.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "x⁴ · x³ = x⁷ (1p). x⁷ : x² = x⁵ (1p). Controle: 16 · 8 : 4 = 32 en 2⁵ = 32 (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een tuinder legt een vierkante bloemenakker aan van 75 vierkante meter. Hij wil de zijde exact opschrijven met een vereenvoudigde wortel en ook de benadering in twee decimalen weten.",
+        "v": "Schrijf √75 vereenvoudigd en geef de benadering. Controleer door te kwadrateren.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "√75 = √25 · √3 = 5√3 (1p). Benadering 5 · 1,732 ≈ 8,66 m (1p). Controle: (5√3)² = 25 · 3 = 75 (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "De lichtsterkte van een lamp op r meter afstand is I = 200 · r^(−2). Een leerling wil uitrekenen hoe de sterkte verandert als de afstand van 4 meter naar 8 meter gaat.",
+        "v": "Bereken I bij r = 4 en r = 8 en zeg hoeveel keer zo klein de sterkte wordt.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "I = 200/r² (1p). Bij r = 4: 200 : 16 = 12,5 en bij r = 8: 200 : 64 = 3,125 (1p). 12,5 : 3,125 = 4, dus 4 keer zo klein (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een klasgenoot schrijft: (2x)³ = 2x³. Jij weet dat de exponent bij een product voor elke factor geldt. Je wilt de fout laten zien met een getal en de juiste uitkomst geven.",
+        "v": "Geef de juiste uitkomst en toon met x = 1 aan dat 2x³ fout is.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "(2x)³ = 8x³ (1p). Bij x = 1: (2)³ = 8 (1p). En 2 · 1³ = 2, dus 2x³ is fout (1p)."
+       }
+      ]
      }
     ]
    },

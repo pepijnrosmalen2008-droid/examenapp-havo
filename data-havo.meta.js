@@ -1037,6 +1037,27 @@ var VAKKEN = [
       "nOe": 5,
       "nBeg": 12,
       "hasSam": true
+     },
+     {
+      "id": "B4",
+      "lo": "wa.B.4",
+      "gs": 2,
+      "naam": "Rekenen met variabelen, machten en wortels",
+      "beschrijving": "Je rekent met machten met variabelen en met negatieve en gebroken exponenten, vereenvoudigt wortels en controleert je uitkomsten door een getal in te vullen.",
+      "ceStatus": "CE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Rekenregels voor machten",
+       "Macht van een product",
+       "Negatieve en gebroken exponenten",
+       "Wortels vereenvoudigen",
+       "Controleren met een getal"
+      ],
+      "nSv": 27,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
      }
     ]
    },
