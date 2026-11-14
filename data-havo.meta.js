@@ -1079,6 +1079,27 @@ var VAKKEN = [
       "nOe": 5,
       "nBeg": 12,
       "hasSam": true
+     },
+     {
+      "id": "B6",
+      "lo": "wa.B.6",
+      "gs": 2,
+      "naam": "Telproblemen structureren en berekenen",
+      "beschrijving": "Je structureert telproblemen met de vermenigvuldigregel en de somregel, rekent met volgorde, herhaling en faculteiten, bepaalt combinaties zonder volgorde en controleert met een klein voorbeeld.",
+      "ceStatus": "CE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Vermenigvuldigregel en somregel",
+       "Herhaling toegestaan of niet",
+       "Volgorde en faculteit",
+       "Combinaties zonder volgorde",
+       "Boomdiagram en controleren"
+      ],
+      "nSv": 27,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
      }
     ]
    },

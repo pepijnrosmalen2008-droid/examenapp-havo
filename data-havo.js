@@ -42874,6 +42874,688 @@ var VAKKEN = [
         "u": "1 m² = 100 × 100 = 10 000 cm² (1p). 3 × 10 000 = 30 000 cm² (1p). De klasgenoot gebruikte de factor 100 in plaats van 10 000 (1p)."
        }
       ]
+     },
+     {
+      "id": "B6",
+      "lo": "wa.B.6",
+      "gs": 2,
+      "naam": "Telproblemen structureren en berekenen",
+      "beschrijving": "Je structureert telproblemen met de vermenigvuldigregel en de somregel, rekent met volgorde, herhaling en faculteiten, bepaalt combinaties zonder volgorde en controleert met een klein voorbeeld.",
+      "ceStatus": "CE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Vermenigvuldigregel en somregel",
+       "Herhaling toegestaan of niet",
+       "Volgorde en faculteit",
+       "Combinaties zonder volgorde",
+       "Boomdiagram en controleren"
+      ],
+      "sam": "Bij keuzes na elkaar vermenigvuldig je de aantallen en bij een of-keuze tel je op. Telt de volgorde, dan gebruik je een faculteit of een gerangschikte keuze. Maakt de volgorde niet uit, dan deel je door het aantal volgordes. Structureer eerst en controleer met een klein voorbeeld.",
+      "begrippen": [
+       {
+        "t": "Vermenigvuldigregel",
+        "d": "Bij keuzes na elkaar vermenigvuldig je de aantallen: 3 × 4 × 2 = 24."
+       },
+       {
+        "t": "Somregel",
+        "d": "Bij een keuze tussen twee soorten tel je de aantallen op: 3 + 2 = 5."
+       },
+       {
+        "t": "Faculteit",
+        "d": "n! = n × (n − 1) × … × 1; het aantal volgordes van n verschillende dingen."
+       },
+       {
+        "t": "Volgorde",
+        "d": "Telt de volgorde mee, dan zijn AB en BA verschillend."
+       },
+       {
+        "t": "Herhaling",
+        "d": "Mag een element vaker voorkomen, zoals een cijfer in een pincode."
+       },
+       {
+        "t": "Gerangschikt drietal",
+        "d": "Een keuze van drie uit n waarbij de volgorde telt: n × (n − 1) × (n − 2)."
+       },
+       {
+        "t": "Combinatie",
+        "d": "Een keuze zonder volgorde; je deelt het aantal gerangschikte keuzes door k!."
+       },
+       {
+        "t": "Boomdiagram",
+        "d": "Een schema waarin elke keuze een tak is; het aantal eindpunten is het totaal."
+       },
+       {
+        "t": "Dubbel tellen",
+        "d": "Dezelfde keuze meerdere keren meetellen, zoals een handdruk van A met B en van B met A."
+       },
+       {
+        "t": "Voorwaarde",
+        "d": "Een regel die sommige mogelijkheden uitsluit, zoals twee vrienden die naast elkaar moeten staan."
+       },
+       {
+        "t": "Aanpak structureren",
+        "d": "Eerst bepalen of de keuzes na elkaar komen, of de volgorde telt en of herhaling mag."
+       },
+       {
+        "t": "Controleren",
+        "d": "Een klein voorbeeld uitschrijven en tellen om te zien of de formule klopt."
+       }
+      ],
+      "sv": [
+       {
+        "v": "Een menu bestaat uit één van 3 voorgerechten en één van 2 hoofdgerechten. Hoeveel menu's zijn er mogelijk?",
+        "o": [
+         "\"5\"",
+         "\"6\"",
+         "\"9\"",
+         "\"32\""
+        ],
+        "c": 1,
+        "d": 1,
+        "s": 0,
+        "u": "Bepaal eerst of je keuzes na elkaar maakt, of de volgorde telt en of herhaling mag. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"5\"\"? Dan tel je de aantallen 3 en 2 op. Je kiest van beide onderdelen één gerecht, dus je vermenigvuldigt. Het goede antwoord is 6.",
+         "Klopt: bij keuzes na elkaar vermenigvuldig je de aantallen, 3 × 2 = 6.",
+         "Koos je \"\"9\"\"? Dan kwadrateer je 3. Het aantal hoofdgerechten is 2 en niet 3, dus 3 × 2. Door de stappen goed na te lopen kom je uit op 6.",
+         "Koos je \"\"32\"\"? Dan plak je de getallen 3 en 2 aan elkaar. Een menu is een product van de aantallen, dus 3 × 2 = 6. Controleer je stap: de juiste uitkomst is 6."
+        ],
+        "uh": "Een menu bestaat uit één van 3 voorgerechten en één van 2 hoofdgerechten. Hoeveel menu's zijn er mogelijk?"
+       },
+       {
+        "v": "Je kiest een code van 2 cijfers (0 t/m 9), waarbij herhaling is toegestaan. Hoeveel codes zijn er?",
+        "o": [
+         "\"20\"",
+         "\"90\"",
+         "\"45\"",
+         "\"100\""
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 0,
+        "u": "Bepaal eerst of je keuzes na elkaar maakt, of de volgorde telt en of herhaling mag. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"20\"\"? Dan tel je 10 en 10 bij elkaar op. Beide cijfers kies je na elkaar, dus 10 × 10. Het goede antwoord is 100.",
+         "Koos je \"\"90\"\"? Dan neem je 10 × 9 omdat je herhaling verbiedt. Hier is herhaling juist toegestaan, dus 10 × 10. Door de stappen goed na te lopen kom je uit op 100.",
+         "Koos je \"\"45\"\"? Dan deel je 90 door 2 alsof de volgorde niet telt. Bij een code maakt de volgorde wel uit, dus 10 × 10. Controleer je stap: de juiste uitkomst is 100.",
+         "Klopt: elk cijfer heeft 10 mogelijkheden, dus 10 × 10 = 100."
+        ],
+        "uh": "Je kiest een code van 2 cijfers (0 t/m 9), waarbij herhaling is toegestaan. Hoeveel codes zijn er?"
+       },
+       {
+        "v": "Een kind kiest een broek of een rok. Er zijn 3 broeken en 2 rokken. Hoeveel keuzes zijn er?",
+        "o": [
+         "\"5\"",
+         "\"6\"",
+         "\"1\"",
+         "\"32\""
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 1,
+        "u": "Bepaal eerst of je keuzes na elkaar maakt, of de volgorde telt en of herhaling mag. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: bij een keuze tussen twee mogelijkheden tel je de aantallen op, 3 + 2 = 5.",
+         "Koos je \"\"6\"\"? Dan vermenigvuldig je 3 met 2. Het kind kiest één kledingstuk, dus je telt op. Het goede antwoord is 5.",
+         "Koos je \"\"1\"\"? Dan neem je alleen het aantal keuzes tussen broek en rok. Binnen elke soort zijn er meer, dus 3 + 2. Door de stappen goed na te lopen kom je uit op 5.",
+         "Koos je \"\"32\"\"? Dan plak je de getallen 3 en 2 aan elkaar. Het kind kiest één kledingstuk uit twee groepen, dus 3 + 2 = 5."
+        ],
+        "uh": "Een kind kiest een broek of een rok. Er zijn 3 broeken en 2 rokken. Hoeveel keuzes zijn er?"
+       },
+       {
+        "v": "Hoeveel verschillende volgordes zijn er voor 4 personen in een rij?",
+        "o": [
+         "\"16\"",
+         "\"10\"",
+         "\"24\"",
+         "\"256\""
+        ],
+        "c": 2,
+        "d": 1,
+        "s": 2,
+        "u": "Bepaal eerst of je keuzes na elkaar maakt, of de volgorde telt en of herhaling mag. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"16\"\"? Dan kwadrateer je 4. Een persoon die al staat, kan niet nog een keer worden gekozen, dus 4 × 3 × 2 × 1. Het goede antwoord is 24.",
+         "Koos je \"\"10\"\"? Dan tel je 4 + 3 + 2 + 1 op. Het aantal plaatsen vermenigvuldig je, dus 24. Door de stappen goed na te lopen kom je uit op 24.",
+         "Klopt: 4 × 3 × 2 × 1 = 24, want elke persoon kan maar op één plaats staan.",
+         "Koos je \"\"256\"\"? Dan neem je 4⁴ omdat herhaling zou mogen. Iedereen staat maar één keer in de rij, dus 24. Controleer je stap: de juiste uitkomst is 24."
+        ],
+        "uh": "Hoeveel verschillende volgordes zijn er voor 4 personen in een rij?"
+       },
+       {
+        "v": "Je rekent 5! uit. Welke waarde krijg je?",
+        "o": [
+         "\"3125\"",
+         "\"120\"",
+         "\"15\"",
+         "\"60\""
+        ],
+        "c": 1,
+        "d": 1,
+        "s": 2,
+        "u": "Bepaal eerst of je keuzes na elkaar maakt, of de volgorde telt en of herhaling mag. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"3125\"\"? Dan neem je 5⁵ omdat je elk getal vijf keer meetelt. Een faculteit daalt bij elke stap met één, dus 5 × 4 × 3 × 2 × 1.",
+         "Klopt: 5! = 5 × 4 × 3 × 2 × 1 = 120. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"15\"\"? Dan tel je 5 + 4 + 3 + 2 + 1 op. Een faculteit is een product, dus 120. Door de stappen goed na te lopen kom je uit op 120.",
+         "Koos je \"\"60\"\"? Dan stop je bij 5 × 4 × 3. Het product loopt tot en met 1, dus 120. Controleer je stap: de juiste uitkomst is 120."
+        ],
+        "uh": "Je rekent 5! uit. Welke waarde krijg je?"
+       },
+       {
+        "v": "Je kiest 2 leerlingen uit een groep van 5; de volgorde maakt niet uit. Hoeveel combinaties zijn er?",
+        "o": [
+         "\"20\"",
+         "\"25\"",
+         "\"120\"",
+         "\"10\""
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 3,
+        "u": "Bepaal eerst of je keuzes na elkaar maakt, of de volgorde telt en of herhaling mag. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"20\"\"? Dan tel je elk paar tweemaal mee. Bij een groep zonder volgorde is AB gelijk aan BA, dus deel je 20 door 2.",
+         "Koos je \"\"25\"\"? Dan kwadrateer je 5. Een leerling kan niet tweemaal worden gekozen, dus 5 × 4 : 2. Door de stappen goed na te lopen kom je uit op 10.",
+         "Koos je \"\"120\"\"? Dan neem je 5! voor alle volgordes van de vijf leerlingen. Er worden maar twee gekozen en de volgorde telt niet, dus 10.",
+         "Klopt: 5 × 4 = 20 gerangschikte paren, gedeeld door 2! = 2 geeft 10."
+        ],
+        "uh": "Je kiest 2 leerlingen uit een groep van 5; de volgorde maakt niet uit. Hoeveel combinaties zijn er?"
+       },
+       {
+        "v": "Een boomdiagram heeft eerst 2 takken en uit elke tak 3 nieuwe takken. Hoeveel eindpunten heeft het?",
+        "o": [
+         "\"6\"",
+         "\"5\"",
+         "\"23\"",
+         "\"9\""
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 4,
+        "u": "Bepaal eerst of je keuzes na elkaar maakt, of de volgorde telt en of herhaling mag. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: elke van de 2 takken krijgt 3 nieuwe takken, dus 2 × 3 = 6.",
+         "Koos je \"\"5\"\"? Dan tel je 2 en 3 bij elkaar op. Elke eerste tak krijgt 3 nieuwe takken, dus 2 × 3. Het goede antwoord is 6.",
+         "Koos je \"\"23\"\"? Dan plak je de getallen 2 en 3 aan elkaar. Het aantal eindpunten is een product, dus 2 × 3 = 6. Door de stappen goed na te lopen kom je uit op 6.",
+         "Koos je \"\"9\"\"? Dan kwadrateer je 3. Er zijn twee takken op het eerste niveau, dus 2 × 3. Controleer je stap: de juiste uitkomst is 6."
+        ],
+        "uh": "Een boomdiagram heeft eerst 2 takken en uit elke tak 3 nieuwe takken. Hoeveel eindpunten heeft het?"
+       },
+       {
+        "v": "Hoeveel verschillende menu's zijn er mogelijk?",
+        "o": [
+         "\"9\"",
+         "\"12\"",
+         "\"24\"",
+         "\"342\""
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 0,
+        "u": "Bepaal eerst of je keuzes na elkaar maakt, of de volgorde telt en of herhaling mag. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"9\"\"? Dan tel je 3 + 4 + 2 bij elkaar op. De gast kiest van alle onderdelen één gerecht, dus je vermenigvuldigt.",
+         "Koos je \"\"12\"\"? Dan vergeet je de toetjes. Een menu bevat ook een toetje, dus 3 × 4 × 2. Door de stappen goed na te lopen kom je uit op 24.",
+         "Klopt: 3 × 4 × 2 = 24, want de keuzes maak je na elkaar.",
+         "Koos je \"\"342\"\"? Dan plak je de getallen 3, 4 en 2 aan elkaar. De aantallen keuzes vermenigvuldig je, dus 3 × 4 × 2 = 24."
+        ],
+        "uh": "Hoeveel verschillende menu's zijn er mogelijk?",
+        "ctx": "Een restaurant biedt een menu aan met een voorgerecht uit 3 soorten, een hoofdgerecht uit 4 soorten en een toetje uit 2 soorten. Een gast kiest van elk onderdeel precies één gerecht. Het restaurant wil weten hoeveel verschillende menu's mogelijk zijn."
+       },
+       {
+        "v": "Hoeveel menu's zijn er mogelijk zonder toetje?",
+        "o": [
+         "\"24\"",
+         "\"12\"",
+         "\"7\"",
+         "\"6\""
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 0,
+        "u": "Bepaal eerst of je keuzes na elkaar maakt, of de volgorde telt en of herhaling mag. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"24\"\"? Dan neem je alle menu's met toetje. Zonder toetje vervalt de factor 2, dus 3 × 4. Het goede antwoord is 12.",
+         "Klopt: 3 × 4 = 12 combinaties van voor- en hoofdgerecht.",
+         "Koos je \"\"7\"\"? Dan tel je 3 + 4 op. De keuzes vermenigvuldig je, dus 12. Door de stappen goed na te lopen kom je uit op 12.",
+         "Koos je \"\"6\"\"? Dan reken je 3 × 2. Het hoofdgerecht heeft 4 mogelijkheden, dus 3 × 4. Controleer je stap: de juiste uitkomst is 12."
+        ],
+        "uh": "Hoeveel menu's zijn er mogelijk zonder toetje?",
+        "ctx": "Een restaurant biedt een menu aan met een voorgerecht uit 3 soorten, een hoofdgerecht uit 4 soorten en een toetje uit 2 soorten. Een gast kiest van elk onderdeel precies één gerecht. Het restaurant wil weten hoeveel verschillende menu's mogelijk zijn."
+       },
+       {
+        "v": "Hoeveel menu's zijn er mogelijk als het restaurant 3 toetjes aanbiedt in plaats van 2?",
+        "o": [
+         "\"30\"",
+         "\"24\"",
+         "\"10\"",
+         "\"36\""
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 4,
+        "u": "Bepaal eerst of je keuzes na elkaar maakt, of de volgorde telt en of herhaling mag. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"30\"\"? Dan tel je de extra toetjes op bij 24 en rond je af. De factor voor het toetje wordt 3, dus 3 × 4 × 3. Het goede antwoord is 36.",
+         "Koos je \"\"24\"\"? Dan blijf je bij het oude aantal. Een extra toetje vergroot het aantal menu's, dus 36. Door de stappen goed na te lopen kom je uit op 36.",
+         "Koos je \"\"10\"\"? Dan tel je 3 + 4 + 3 op. De keuzes zijn na elkaar, dus 3 × 4 × 3. Controleer je stap: de juiste uitkomst is 36.",
+         "Klopt: 3 × 4 × 3 = 36. Reken dit na met de gegeven gegevens."
+        ],
+        "uh": "Hoeveel menu's zijn er mogelijk als het restaurant 3 toetjes aanbiedt in plaats van 2?",
+        "ctx": "Een restaurant biedt een menu aan met een voorgerecht uit 3 soorten, een hoofdgerecht uit 4 soorten en een toetje uit 2 soorten. Een gast kiest van elk onderdeel precies één gerecht. Het restaurant wil weten hoeveel verschillende menu's mogelijk zijn."
+       },
+       {
+        "v": "Hoeveel pincodes zijn er mogelijk als cijfers mogen worden herhaald?",
+        "o": [
+         "\"10 000\"",
+         "\"40\"",
+         "\"5040\"",
+         "\"100 000, I think\""
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 0,
+        "u": "Bepaal eerst of je keuzes na elkaar maakt, of de volgorde telt en of herhaling mag. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: elk van de 4 cijfers heeft 10 mogelijkheden, dus 10⁴ = 10 000.",
+         "Koos je \"\"40\"\"? Dan vermenigvuldig je 4 met 10. Elk cijfer heeft 10 mogelijkheden, dus 10 × 10 × 10 × 10. Het goede antwoord is 10 000.",
+         "Koos je \"\"5040\"\"? Dan neem je 10 × 9 × 8 × 7 omdat alle cijfers verschillend zouden moeten zijn. Hier mag je herhalen, dus 10⁴.",
+         "Koos je \"\"100 000, I think\"\"? Dan neem je 10⁵ omdat je vijf cijfers telt. Een pincode heeft vier cijfers, dus 10⁴. Controleer je stap: de juiste uitkomst is 10 000."
+        ],
+        "uh": "Hoeveel pincodes zijn er mogelijk als cijfers mogen worden herhaald?",
+        "ctx": "Een kluis heeft een pincode van 4 cijfers uit 0 t/m 9. Een leerling wil weten hoeveel codes er mogelijk zijn als cijfers mogen worden herhaald, als alle cijfers verschillend moeten zijn en als alleen even cijfers gebruikt worden."
+       },
+       {
+        "v": "Hoeveel pincodes zijn er mogelijk als alle vier de cijfers verschillend moeten zijn?",
+        "o": [
+         "\"10 000\"",
+         "\"210\"",
+         "\"5040\"",
+         "\"6561\""
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 2,
+        "u": "Bepaal eerst of je keuzes na elkaar maakt, of de volgorde telt en of herhaling mag. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"10 000\"\"? Dan laat je herhaling toe. Elk gebruikt cijfer kan niet opnieuw, dus 10 × 9 × 8 × 7. Het goede antwoord is 5040.",
+         "Koos je \"\"210\"\"? Dan deel je 5040 door 4! alsof de volgorde niet telt. Bij een code maakt de volgorde wel uit, dus 5040.",
+         "Klopt: 10 × 9 × 8 × 7 = 5040, want elk gebruikt cijfer valt daarna af.",
+         "Koos je \"\"6561\"\"? Dan neem je 9⁴. Het eerste cijfer heeft 10 mogelijkheden, dus 10 × 9 × 8 × 7. Controleer je stap: de juiste uitkomst is 5040."
+        ],
+        "uh": "Hoeveel pincodes zijn er mogelijk als alle vier de cijfers verschillend moeten zijn?",
+        "ctx": "Een kluis heeft een pincode van 4 cijfers uit 0 t/m 9. Een leerling wil weten hoeveel codes er mogelijk zijn als cijfers mogen worden herhaald, als alle cijfers verschillend moeten zijn en als alleen even cijfers gebruikt worden."
+       },
+       {
+        "v": "Hoeveel codes zijn er met alleen de even cijfers 0, 2, 4, 6 en 8, met herhaling?",
+        "o": [
+         "\"20\"",
+         "\"625\"",
+         "\"120\"",
+         "\"10 000\""
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 0,
+        "u": "Bepaal eerst of je keuzes na elkaar maakt, of de volgorde telt en of herhaling mag. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"20\"\"? Dan vermenigvuldig je 5 met 4. Elk cijfer heeft 5 mogelijkheden, dus 5⁴. Het goede antwoord is 625.",
+         "Klopt: elk van de 4 cijfers heeft 5 mogelijkheden, dus 5⁴ = 625.",
+         "Koos je \"\"120\"\"? Dan neem je 5! zonder herhaling. Hier mogen cijfers worden herhaald, dus 5⁴ = 625. Door de stappen goed na te lopen kom je uit op 625.",
+         "Koos je \"\"10 000\"\"? Dan neem je alle cijfers. Alleen de even cijfers mogen, dus 5 per plaats. Controleer je stap: de juiste uitkomst is 625."
+        ],
+        "uh": "Hoeveel codes zijn er met alleen de even cijfers 0, 2, 4, 6 en 8, met herhaling?",
+        "ctx": "Een kluis heeft een pincode van 4 cijfers uit 0 t/m 9. Een leerling wil weten hoeveel codes er mogelijk zijn als cijfers mogen worden herhaald, als alle cijfers verschillend moeten zijn en als alleen even cijfers gebruikt worden."
+       },
+       {
+        "v": "Op hoeveel manieren kunnen de vijf vrienden op een rij staan?",
+        "o": [
+         "\"25\"",
+         "\"3125\"",
+         "\"15\"",
+         "\"120\""
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 2,
+        "u": "Bepaal eerst of je keuzes na elkaar maakt, of de volgorde telt en of herhaling mag. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"25\"\"? Dan kwadrateer je 5. Iedereen staat maar op één plaats, dus 5!. Het goede antwoord is 120.",
+         "Koos je \"\"3125\"\"? Dan neem je 5⁵ omdat dezelfde persoon meerdere keren zou kunnen staan. Dat kan niet, dus 5!. Door de stappen goed na te lopen kom je uit op 120.",
+         "Koos je \"\"15\"\"? Dan tel je 5 + 4 + 3 + 2 + 1 op. Een faculteit is een product, dus 120. Controleer je stap: de juiste uitkomst is 120.",
+         "Klopt: 5! = 5 × 4 × 3 × 2 × 1 = 120. Reken dit na met de gegeven gegevens."
+        ],
+        "uh": "Op hoeveel manieren kunnen de vijf vrienden op een rij staan?",
+        "ctx": "Vijf vrienden gaan op een rij staan voor een groepsfoto. De fotograaf wil weten op hoeveel manieren dat kan, hoeveel manieren er zijn om drie van hen op de eerste drie plaatsen te zetten en wat er gebeurt als twee vrienden naast elkaar moeten staan."
+       },
+       {
+        "v": "Op hoeveel manieren kunnen drie van de vijf vrienden op de eerste drie plaatsen van de rij worden gezet?",
+        "o": [
+         "\"60\"",
+         "\"10\"",
+         "\"125\"",
+         "\"120\""
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 2,
+        "u": "Bepaal eerst of je keuzes na elkaar maakt, of de volgorde telt en of herhaling mag. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: 5 × 4 × 3 = 60, want elke plaats heeft één keuze minder.",
+         "Koos je \"\"10\"\"? Dan deel je 60 door 3! omdat je combinaties telt. Hier maakt de volgorde uit, dus 5 × 4 × 3. Het goede antwoord is 60.",
+         "Koos je \"\"125\"\"? Dan neem je 5³. Een vriend kan niet op twee plaatsen staan, dus 5 × 4 × 3. Door de stappen goed na te lopen kom je uit op 60.",
+         "Koos je \"\"120\"\"? Dan neem je 5! voor alle plaatsen. Er zijn maar drie plaatsen, dus 5 × 4 × 3. Controleer je stap: de juiste uitkomst is 60."
+        ],
+        "uh": "Op hoeveel manieren kunnen drie van de vijf vrienden op de eerste drie plaatsen van de rij worden gezet?",
+        "ctx": "Vijf vrienden gaan op een rij staan voor een groepsfoto. De fotograaf wil weten op hoeveel manieren dat kan, hoeveel manieren er zijn om drie van hen op de eerste drie plaatsen te zetten en wat er gebeurt als twee vrienden naast elkaar moeten staan."
+       },
+       {
+        "v": "Op hoeveel manieren kunnen de vijf op een rij staan als twee bepaalde vrienden naast elkaar moeten staan?",
+        "o": [
+         "\"24\"",
+         "\"120\"",
+         "\"48\"",
+         "\"96\""
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 2,
+        "u": "Bepaal eerst of je keuzes na elkaar maakt, of de volgorde telt en of herhaling mag. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"24\"\"? Dan vergeet je dat de twee vrienden onderling van plaats kunnen wisselen. Het blok heeft 2 volgordes, dus 24 × 2.",
+         "Koos je \"\"120\"\"? Dan neem je alle volgordes zonder voorwaarde. De twee vrienden moeten naast elkaar staan, dus 48. Door de stappen goed na te lopen kom je uit op 48.",
+         "Klopt: zie het paar als één blok: 4! = 24 volgordes, maal 2 onderlinge volgordes = 48.",
+         "Koos je \"\"96\"\"? Dan tel je 4! × 4. Het paar kan op twee manieren staan, dus 24 × 2. Controleer je stap: de juiste uitkomst is 48."
+        ],
+        "uh": "Op hoeveel manieren kunnen de vijf op een rij staan als twee bepaalde vrienden naast elkaar moeten staan?",
+        "ctx": "Vijf vrienden gaan op een rij staan voor een groepsfoto. De fotograaf wil weten op hoeveel manieren dat kan, hoeveel manieren er zijn om drie van hen op de eerste drie plaatsen te zetten en wat er gebeurt als twee vrienden naast elkaar moeten staan."
+       },
+       {
+        "v": "Waarom is het aantal volgordes van vijf vrienden niet gelijk aan 5⁵?",
+        "o": [
+         "\"de plaatsen zijn niet genummerd, volgens mij\"",
+         "\"elke vriend kan maar op één plaats staan\"",
+         "\"vijf is een priemgetal\"",
+         "\"omdat 5⁵ te groot is\""
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 4,
+        "u": "Bepaal eerst of je keuzes na elkaar maakt, of de volgorde telt en of herhaling mag. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"de plaatsen zijn niet genummerd, volgens mij\"\"? Dan denk je dat het om genummerde plaatsen gaat. De plaatsen zijn juist verschillend, maar een vriend staat maar één keer.",
+         "Klopt: na elke keuze blijft er één vriend minder over, dus 5 × 4 × 3 × 2 × 1.",
+         "Koos je \"\"vijf is een priemgetal\"\"? Dan verwijs je naar een eigenschap van het getal 5. Dat is niet de reden, maar herhaling is hier niet mogelijk.",
+         "Koos je \"\"omdat 5⁵ te groot is\"\"? Dan geef je een schatting als reden. De reden is dat iedereen maar één keer wordt gekozen, dus zonder herhaling."
+        ],
+        "uh": "Waarom is het aantal volgordes van vijf vrienden niet gelijk aan 5⁵?",
+        "ctx": "Vijf vrienden gaan op een rij staan voor een groepsfoto. De fotograaf wil weten op hoeveel manieren dat kan, hoeveel manieren er zijn om drie van hen op de eerste drie plaatsen te zetten en wat er gebeurt als twee vrienden naast elkaar moeten staan."
+       },
+       {
+        "v": "Op hoeveel manieren kan de docent 3 leerlingen uit 8 kiezen als de volgorde niet uitmaakt?",
+        "o": [
+         "\"336\"",
+         "\"24\"",
+         "\"512\"",
+         "\"56\""
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 3,
+        "u": "Bepaal eerst of je keuzes na elkaar maakt, of de volgorde telt en of herhaling mag. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"336\"\"? Dan tel je alle volgordes van de drie gekozenen mee. Bij een commissie zonder functies maakt de volgorde niet uit, dus deel je door 6.",
+         "Koos je \"\"24\"\"? Dan reken je 8 × 3. Je kiest uit 8 leerlingen, dus 8 × 7 × 6 : 6. Door de stappen goed na te lopen kom je uit op 56.",
+         "Koos je \"\"512\"\"? Dan neem je 8³. Een leerling kan niet tweemaal worden gekozen, dus 56. Controleer je stap: de juiste uitkomst is 56.",
+         "Klopt: 8 × 7 × 6 = 336 gerangschikte drietallen, gedeeld door 3! = 6, geeft 56."
+        ],
+        "uh": "Op hoeveel manieren kan de docent 3 leerlingen uit 8 kiezen als de volgorde niet uitmaakt?",
+        "ctx": "Uit een klas van 8 leerlingen kiest de docent 3 leerlingen voor een commissie. In de ene variant maakt de volgorde niet uit en in de andere variant krijgen de drie gekozenen verschillende functies: voorzitter, secretaris en penningmeester."
+       },
+       {
+        "v": "Op hoeveel manieren kan de docent een voorzitter, secretaris en penningmeester kiezen uit de 8 leerlingen?",
+        "o": [
+         "\"336\"",
+         "\"56\"",
+         "\"512\"",
+         "\"24\""
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 2,
+        "u": "Bepaal eerst of je keuzes na elkaar maakt, of de volgorde telt en of herhaling mag. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: 8 × 7 × 6 = 336, want de functies zijn verschillend en de volgorde telt.",
+         "Koos je \"\"56\"\"? Dan deel je door 3! alsof de functies er niet toe doen. Bij verschillende functies maakt de volgorde wel uit, dus 336.",
+         "Koos je \"\"512\"\"? Dan neem je 8³ omdat dezelfde leerling meerdere functies zou mogen krijgen. Dat is niet bedoeld, dus 8 × 7 × 6.",
+         "Koos je \"\"24\"\"? Dan reken je 8 × 3. Er zijn drie functies, dus 8 × 7 × 6. Controleer je stap: de juiste uitkomst is 336."
+        ],
+        "uh": "Op hoeveel manieren kan de docent een voorzitter, secretaris en penningmeester kiezen uit de 8 leerlingen?",
+        "ctx": "Uit een klas van 8 leerlingen kiest de docent 3 leerlingen voor een commissie. In de ene variant maakt de volgorde niet uit en in de andere variant krijgen de drie gekozenen verschillende functies: voorzitter, secretaris en penningmeester."
+       },
+       {
+        "v": "Waarom deel je 8 × 7 × 6 door 6 als de volgorde niet uitmaakt?",
+        "o": [
+         "\"er zijn 6 leerlingen in de commissie\"",
+         "\"omdat 6 het laatste getal van het product is, gewoon, volgens mij\"",
+         "\"elk drietal komt 3! = 6 keer voor in een andere volgorde\"",
+         "\"om het totaal kleiner te maken\""
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 3,
+        "u": "Bepaal eerst of je keuzes na elkaar maakt, of de volgorde telt en of herhaling mag. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"er zijn 6 leerlingen in de commissie\"\"? Dan denk je dat 6 het aantal leerlingen is. De commissie heeft er 3, en 6 is 3!.",
+         "Koos je \"\"omdat 6 het laatste getal van het product is, gewoon, volgens mij\"\"? Dan koppel je de deler aan het getal 6 in het product. De deler komt van de rangschikkingen van de drie, dus 3! = 6.",
+         "Klopt: dezelfde drie leerlingen kunnen op 6 manieren worden gerangschikt.",
+         "Koos je \"\"om het totaal kleiner te maken\"\"? Dan denk je dat delen alleen bedoeld is om het aantal te verlagen. Je corrigeert voor dubbel tellen, en dat is 3!."
+        ],
+        "uh": "Waarom deel je 8 × 7 × 6 door 6 als de volgorde niet uitmaakt?",
+        "ctx": "Uit een klas van 8 leerlingen kiest de docent 3 leerlingen voor een commissie. In de ene variant maakt de volgorde niet uit en in de andere variant krijgen de drie gekozenen verschillende functies: voorzitter, secretaris en penningmeester."
+       },
+       {
+        "v": "Hoeveel handdrukken zijn er in een groep van 7 mensen als iedereen elkaar één keer een hand geeft?",
+        "o": [
+         "\"42\"",
+         "\"21\"",
+         "\"49\"",
+         "\"14\""
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 3,
+        "u": "Bepaal eerst of je keuzes na elkaar maakt, of de volgorde telt en of herhaling mag. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"42\"\"? Dan tel je elke handdruk tweemaal. De handdruk van A met B is dezelfde als van B met A, dus deel je door 2.",
+         "Klopt: 7 × 6 = 42 gerangschikte paren, gedeeld door 2 geeft 21.",
+         "Koos je \"\"49\"\"? Dan kwadrateer je 7. Niemand geeft zichzelf een hand, dus 7 × 6 : 2. Door de stappen goed na te lopen kom je uit op 21.",
+         "Koos je \"\"14\"\"? Dan reken je 7 × 2. Je moet kijken naar alle paren, dus 21. Controleer je stap: de juiste uitkomst is 21."
+        ],
+        "uh": "Hoeveel handdrukken zijn er in een groep van 7 mensen als iedereen elkaar één keer een hand geeft?",
+        "ctx": "In een groep van 7 mensen geeft iedereen elkaar één keer een hand. Een leerling telt het aantal handdrukken en vergelijkt zijn methode met de formule voor het aantal combinaties van 2 uit 7. Hij wil dat ook voor een groep van 8 doen."
+       },
+       {
+        "v": "Hoeveel handdrukken zijn er in een groep van 8 mensen?",
+        "o": [
+         "\"56\"",
+         "\"64\"",
+         "\"21\"",
+         "\"28\""
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 3,
+        "u": "Bepaal eerst of je keuzes na elkaar maakt, of de volgorde telt en of herhaling mag. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"56\"\"? Dan tel je elke handdruk tweemaal. Het gaat om ongeordende paren, dus 8 × 7 : 2. Het goede antwoord is 28.",
+         "Koos je \"\"64\"\"? Dan kwadrateer je 8. Niemand geeft zichzelf een hand, dus 8 × 7 : 2. Door de stappen goed na te lopen kom je uit op 28.",
+         "Koos je \"\"21\"\"? Dan neem je het aantal van de groep van 7. In een groep van 8 komt een persoon erbij, die 7 handen schudt, dus 28.",
+         "Klopt: 8 × 7 : 2 = 28. Reken dit na met de gegeven gegevens."
+        ],
+        "uh": "Hoeveel handdrukken zijn er in een groep van 8 mensen?",
+        "ctx": "In een groep van 7 mensen geeft iedereen elkaar één keer een hand. Een leerling telt het aantal handdrukken en vergelijkt zijn methode met de formule voor het aantal combinaties van 2 uit 7. Hij wil dat ook voor een groep van 8 doen."
+       },
+       {
+        "v": "Waarom is 7 × 6 = 42 niet het aantal handdrukken in de groep van 7?",
+        "o": [
+         "\"elke handdruk is dan twee keer geteld\"",
+         "\"persoon 7 geeft zichzelf een hand, zeg maar\"",
+         "\"er zijn maar 6 personen\"",
+         "\"een handdruk telt voor drie\""
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 4,
+        "u": "Bepaal eerst of je keuzes na elkaar maakt, of de volgorde telt en of herhaling mag. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: A met B en B met A is dezelfde handdruk, dus deel je door 2.",
+         "Koos je \"\"persoon 7 geeft zichzelf een hand, zeg maar\"\"? Dan denk je dat iemand zichzelf een hand geeft. Dat is al uitgesloten door de factor 6, maar elke handdruk is tweemaal geteld.",
+         "Koos je \"\"er zijn maar 6 personen\"\"? Dan denk je dat de groep 6 mensen heeft. De groep heeft 7 mensen, en de factor 6 komt uit 7 − 1.",
+         "Koos je \"\"een handdruk telt voor drie\"\"? Dan denk je dat een handdruk meer dan twee mensen betreft. Het zijn er precies twee, dus het product is dubbel geteld."
+        ],
+        "uh": "Waarom is 7 × 6 = 42 niet het aantal handdrukken in de groep van 7?",
+        "ctx": "In een groep van 7 mensen geeft iedereen elkaar één keer een hand. Een leerling telt het aantal handdrukken en vergelijkt zijn methode met de formule voor het aantal combinaties van 2 uit 7. Hij wil dat ook voor een groep van 8 doen."
+       },
+       {
+        "v": "Hoeveel outfits zijn er met 4 shirts, 3 broeken en 2 paar schoenen?",
+        "o": [
+         "\"9\"",
+         "\"12\"",
+         "\"24\"",
+         "\"16\""
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 0,
+        "u": "Bepaal eerst of je keuzes na elkaar maakt, of de volgorde telt en of herhaling mag. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"9\"\"? Dan tel je 4 + 3 + 2 op. De leerling kiest van elk onderdeel één, dus je vermenigvuldigt. Het goede antwoord is 24.",
+         "Koos je \"\"12\"\"? Dan vergeet je de schoenen. Een outfit bevat ook schoenen, dus 4 × 3 × 2. Door de stappen goed na te lopen kom je uit op 24.",
+         "Klopt: 4 × 3 × 2 = 24. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"16\"\"? Dan reken je 4 × 4. Er zijn 3 broeken en 2 paar schoenen, dus 4 × 3 × 2. Controleer je stap: de juiste uitkomst is 24."
+        ],
+        "uh": "Hoeveel outfits zijn er met 4 shirts, 3 broeken en 2 paar schoenen?",
+        "ctx": "Een leerling stelt een outfit samen met één van 4 shirts, één van 3 broeken en één van 2 paar schoenen. Eén bepaalde combinatie van shirt en broek mag niet samen worden gedragen. Later komen er ook rokken bij als alternatief voor een broek."
+       },
+       {
+        "v": "Hoeveel outfits blijven er over als één shirt-broekcombinatie verboden is?",
+        "o": [
+         "\"23\"",
+         "\"22\"",
+         "\"12\"",
+         "\"20\""
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 4,
+        "u": "Bepaal eerst of je keuzes na elkaar maakt, of de volgorde telt en of herhaling mag. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"23\"\"? Dan trek je maar één outfit af. Elke outfit bevat ook schoenen en die combinatie komt met beide paren voor, dus 2 outfits vervallen.",
+         "Klopt: de verboden combinatie vervalt met 2 paar schoenen, dus 24 − 2 = 22.",
+         "Koos je \"\"12\"\"? Dan trek je de helft af. Alleen outfits met die ene combinatie vallen af en dat zijn er twee, dus 24 − 2.",
+         "Koos je \"\"20\"\"? Dan verwijder je twee shirt-broekcombinaties. Het gaat om één combinatie die met beide schoenen voorkomt, dus 22."
+        ],
+        "uh": "Hoeveel outfits blijven er over als één shirt-broekcombinatie verboden is?",
+        "ctx": "Een leerling stelt een outfit samen met één van 4 shirts, één van 3 broeken en één van 2 paar schoenen. Eén bepaalde combinatie van shirt en broek mag niet samen worden gedragen. Later komen er ook rokken bij als alternatief voor een broek."
+       },
+       {
+        "v": "Hij kiest een broek óf een rok (3 broeken, 2 rokken), met 4 shirts en vaste schoenen. Hoeveel outfits?",
+        "o": [
+         "\"24\"",
+         "\"9\"",
+         "\"28\"",
+         "\"20\""
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 1,
+        "u": "Bepaal eerst of je keuzes na elkaar maakt, of de volgorde telt en of herhaling mag. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"24\"\"? Dan vermenigvuldig je 3 met 2. Het kind kiest een broek of een rok, dus 3 + 2. Het goede antwoord is 20.",
+         "Koos je \"\"9\"\"? Dan tel je 4 + 3 + 2 op. Het aantal shirts moet je vermenigvuldigen met het aantal keuzes, dus 4 × 5. Door de stappen goed na te lopen kom je uit op 20.",
+         "Koos je \"\"28\"\"? Dan reken je 4 × 3 + 4 × 2 + 4 × 2. Je telt de rokken dubbel, dus 4 × 5. Controleer je stap: de juiste uitkomst is 20.",
+         "Klopt: 4 × (3 + 2) × 1 = 20. Reken dit na met de gegeven gegevens."
+        ],
+        "uh": "Hij kiest een broek óf een rok (3 broeken, 2 rokken), met 4 shirts en vaste schoenen. Hoeveel outfits?",
+        "ctx": "Een leerling stelt een outfit samen met één van 4 shirts, één van 3 broeken en één van 2 paar schoenen. Eén bepaalde combinatie van shirt en broek mag niet samen worden gedragen. Later komen er ook rokken bij als alternatief voor een broek."
+       },
+       {
+        "v": "Waarom tel je 3 + 2 en vermenigvuldig je niet 3 × 2 bij de keuze tussen een broek of een rok?",
+        "o": [
+         "\"je kiest één van de twee soorten, niet allebei\"",
+         "\"een rok en een broek horen bij elkaar, volgens mij\"",
+         "\"het aantal rokken is kleiner\"",
+         "\"3 × 2 is te klein\""
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 1,
+        "u": "Bepaal eerst of je keuzes na elkaar maakt, of de volgorde telt en of herhaling mag. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: bij 'of' tel je de mogelijkheden op; bij 'en' vermenigvuldig je.",
+         "Koos je \"\"een rok en een broek horen bij elkaar, volgens mij\"\"? Dan denk je dat de kledingstukken samen worden gekozen. Het kind draagt er één, dus je telt op.",
+         "Koos je \"\"het aantal rokken is kleiner\"\"? Dan denk je dat het aantal bepalend is. Het gaat om de soort van keuze, en bij een keuze tussen twee soorten tel je op.",
+         "Koos je \"\"3 × 2 is te klein\"\"? Dan denk je dat het product te klein is. 3 × 2 = 6 zou een combinatie van rok en broek zijn, maar je kiest er één."
+        ],
+        "uh": "Waarom tel je 3 + 2 en vermenigvuldig je niet 3 × 2 bij de keuze tussen een broek of een rok?",
+        "ctx": "Een leerling stelt een outfit samen met één van 4 shirts, één van 3 broeken en één van 2 paar schoenen. Eén bepaalde combinatie van shirt en broek mag niet samen worden gedragen. Later komen er ook rokken bij als alternatief voor een broek."
+       }
+      ],
+      "oe": [
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een restaurant biedt een menu met 1 van 4 voorgerechten, 1 van 5 hoofdgerechten en 1 van 3 toetjes. De eigenaar wil weten hoeveel menu's er mogelijk zijn en hoeveel er zijn zonder toetje.",
+        "v": "Bereken het aantal menu's met en zonder toetje.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Met toetje: 4 × 5 × 3 = 60 (1p). Zonder toetje: 4 × 5 = 20 (1p). Dat is 40 menu's minder dan met toetje (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Zes deelnemers doen mee aan een wedstrijd. De eerste drie krijgen goud, zilver en brons. De organisatie wil weten op hoeveel manieren de medailles kunnen worden verdeeld en hoeveel verschillende drietallen op het podium kunnen staan.",
+        "v": "Bereken beide aantallen en leg het verband uit.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "6 × 5 × 4 = 120 manieren met volgorde (1p). Drietallen zonder volgorde: 120 : 3! = 20 (1p). Elk drietal komt 6 keer voor in een andere volgorde (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een code bestaat uit 3 letters uit A, B, C en D. Een leerling wil weten hoeveel codes er zijn als letters mogen worden herhaald en hoeveel als alle letters verschillend moeten zijn.",
+        "v": "Bereken beide aantallen.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Met herhaling: 4³ = 64 (1p). Zonder herhaling: 4 × 3 × 2 = 24 (1p). Zonder herhaling zijn er minder omdat elke gebruikte letter afvalt (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "In een groep van 9 mensen geeft iedereen elkaar één keer een hand. Een leerling zegt dat het er 9 × 8 = 72 zijn. Jij weet dat dit teveel is en wilt het juiste aantal geven met uitleg.",
+        "v": "Bereken het aantal handdrukken en leg de fout uit.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "9 × 8 : 2 = 36 (1p). 72 is het aantal gerangschikte paren (1p). Elke handdruk is dan twee keer geteld (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een klasgenoot zegt dat vier personen op 4 + 3 + 2 + 1 = 10 manieren op een rij kunnen staan. Jij weet dat je hier moet vermenigvuldigen. Je wilt het juiste aantal geven en de fout uitleggen.",
+        "v": "Bereken het aantal volgordes en leg uit waarom 10 fout is.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "4 × 3 × 2 × 1 = 24 (1p). De keuzes volgen na elkaar en de aantallen vermenigvuldig je (1p). 10 is een som, terwijl het aantal manieren groeit door vermenigvuldigen (1p)."
+       }
+      ]
      }
     ]
    },
