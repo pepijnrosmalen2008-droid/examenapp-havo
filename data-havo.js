@@ -42192,6 +42192,688 @@ var VAKKEN = [
         "u": "(2x)³ = 8x³ (1p). Bij x = 1: (2)³ = 8 (1p). En 2 · 1³ = 2, dus 2x³ is fout (1p)."
        }
       ]
+     },
+     {
+      "id": "B5",
+      "lo": "wa.B.5",
+      "gs": 2,
+      "naam": "Grootheden, samengestelde grootheden en eenheden omrekenen",
+      "beschrijving": "Je werkt met grootheden en eenheden, rekent met samengestelde grootheden zoals snelheid, dichtheid en verbruik, rekent eenheden om en controleert je uitkomst op eenheid en grootte.",
+      "ceStatus": "CE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Grootheden en eenheden",
+       "Samengestelde grootheden",
+       "Eenheden omrekenen",
+       "Rekenen met snelheid, dichtheid en verbruik",
+       "Controleren met eenheden"
+      ],
+      "sam": "Een grootheid meet je in een eenheid. Samengestelde grootheden zijn snelheid, dichtheid en verbruik. Bij omrekenen gebruik je een omrekenfactor: 3,6 voor km/u naar m/s, 1000 voor km naar m en voor liter naar cm³, en het kwadraat van de lengtefactor bij oppervlakte. Controleer eenheid en grootte van je antwoord.",
+      "begrippen": [
+       {
+        "t": "Grootheid",
+        "d": "Iets wat je kunt meten, zoals lengte, tijd of massa."
+       },
+       {
+        "t": "Eenheid",
+        "d": "Waarin je een grootheid uitdrukt, zoals meter, seconde of kilogram."
+       },
+       {
+        "t": "Samengestelde grootheid",
+        "d": "Een grootheid die uit twee andere is opgebouwd, zoals snelheid of dichtheid."
+       },
+       {
+        "t": "Snelheid",
+        "d": "Afstand gedeeld door tijd, bijvoorbeeld in kilometer per uur."
+       },
+       {
+        "t": "Dichtheid",
+        "d": "Massa gedeeld door volume, bijvoorbeeld in gram per kubieke centimeter."
+       },
+       {
+        "t": "Verbruik",
+        "d": "Hoeveelheid brandstof per afstand, zoals 5,6 liter per 100 kilometer."
+       },
+       {
+        "t": "Omrekenfactor",
+        "d": "Het getal waarmee je van de ene eenheid naar de andere gaat, zoals 1000 bij km naar m."
+       },
+       {
+        "t": "Kilowattuur",
+        "d": "Eenheid van energie: vermogen in kilowatt maal tijd in uren."
+       },
+       {
+        "t": "Hectare",
+        "d": "Een oppervlakte van 10 000 vierkante meter; 100 hectare is een vierkante kilometer."
+       },
+       {
+        "t": "Liter",
+        "d": "Inhoud van 1000 kubieke centimeter; 1 kubieke meter is 1000 liter."
+       },
+       {
+        "t": "Bevolkingsdichtheid",
+        "d": "Aantal inwoners per vierkante kilometer of per hectare."
+       },
+       {
+        "t": "Controleren met eenheden",
+        "d": "De eenheid van je antwoord moet bij de vraag passen; schat ook de grootte."
+       }
+      ],
+      "sv": [
+       {
+        "v": "Een fietser legt 36 km af in 2 uur. Welke gemiddelde snelheid heeft hij?",
+        "o": [
+         "\"72 km/u\"",
+         "\"18 km/u\"",
+         "\"34 km/u\"",
+         "\"0,06 km/u\""
+        ],
+        "c": 1,
+        "d": 1,
+        "s": 1,
+        "u": "Zet eerst alle gegevens om naar passende eenheden en reken dan met de formule. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"72 km/u\"\"? Dan vermenigvuldig je de afstand met de tijd. Snelheid is een afstand per tijdseenheid, dus 36 : 2.",
+         "Klopt: snelheid is afstand gedeeld door tijd, 36 : 2 = 18 km per uur.",
+         "Koos je \"\"34 km/u\"\"? Dan trek je de tijd van de afstand af. Een snelheid ontstaat door te delen, en niet door af te trekken.",
+         "Koos je \"\"0,06 km/u\"\"? Dan deel je de tijd door de afstand. Dat geeft uren per kilometer, en niet kilometers per uur. Controleer je stap: de juiste uitkomst is 18 km/u."
+        ],
+        "uh": "Een fietser legt 36 km af in 2 uur. Welke gemiddelde snelheid heeft hij?"
+       },
+       {
+        "v": "Je zet 2,5 km om naar meter. Hoeveel meter is dat?",
+        "o": [
+         "\"250 m\"",
+         "\"25 000 m\"",
+         "\"0,0025 m\"",
+         "\"2500 m\""
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 0,
+        "u": "Zet eerst alle gegevens om naar passende eenheden en reken dan met de formule. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"250 m\"\"? Dan vermenigvuldig je met 100 in plaats van met 1000. Een kilometer is duizend meter, dus 2500. Het goede antwoord is 2500 m.",
+         "Koos je \"\"25 000 m\"\"? Dan vermenigvuldig je met 10 000. Een kilometer is 1000 meter, en geen 10 000. Door de stappen goed na te lopen kom je uit op 2500 m.",
+         "Koos je \"\"0,0025 m\"\"? Dan deel je door 1000 in plaats van te vermenigvuldigen. Meter is een kleinere eenheid dan kilometer, dus het getal wordt groter.",
+         "Klopt: 1 km is 1000 m, dus 2,5 × 1000 = 2500 m. Reken dit na met de gegeven gegevens."
+        ],
+        "uh": "Je zet 2,5 km om naar meter. Hoeveel meter is dat?"
+       },
+       {
+        "v": "Je zet 3 m³ om naar liter. Hoeveel liter is dat?",
+        "o": [
+         "\"3000 L\"",
+         "\"300 L, I suppose\"",
+         "\"30 L\"",
+         "\"3 L\""
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 2,
+        "u": "Zet eerst alle gegevens om naar passende eenheden en reken dan met de formule. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: 1 m³ is 1000 liter, dus 3 × 1000 = 3000 liter. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"300 L, I suppose\"\"? Dan vermenigvuldig je met 100. Een kubieke meter is 1000 liter, dus 3000. Het goede antwoord is 3000 L.",
+         "Koos je \"\"30 L\"\"? Dan vermenigvuldig je met 10. Een kubieke meter bevat 1000 liter, dus 3000. Door de stappen goed na te lopen kom je uit op 3000 L.",
+         "Koos je \"\"3 L\"\"? Dan neem je het getal zonder omrekenen over. De eenheid verandert van m³ naar liter, dus het getal verandert ook."
+        ],
+        "uh": "Je zet 3 m³ om naar liter. Hoeveel liter is dat?"
+       },
+       {
+        "v": "Een koksbereidingstijd is 4 minuten en 15 seconden. Hoeveel seconden is dat in totaal?",
+        "o": [
+         "\"415 s, you know\"",
+         "\"75 s\"",
+         "\"255 s\"",
+         "\"19 s\""
+        ],
+        "c": 2,
+        "d": 1,
+        "s": 0,
+        "u": "Zet eerst alle gegevens om naar passende eenheden en reken dan met de formule. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"415 s, you know\"\"? Dan plak je de getallen 4 en 15 aan elkaar. Een minuut heeft 60 seconden, dus 4 × 60 + 15. Het goede antwoord is 255 s.",
+         "Koos je \"\"75 s\"\"? Dan vermenigvuldig je 4 met 15 en tel je nog 15 op. Eén minuut telt 60 seconden, dus 240. Door de stappen goed na te lopen kom je uit op 255 s.",
+         "Klopt: 4 × 60 = 240 en 240 + 15 = 255 seconden. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"19 s\"\"? Dan tel je 4 en 15 gewoon op. Minuten en seconden zijn andere eenheden, en 4 minuten is 240 seconden. Controleer je stap: de juiste uitkomst is 255 s."
+        ],
+        "uh": "Een koksbereidingstijd is 4 minuten en 15 seconden. Hoeveel seconden is dat in totaal?"
+       },
+       {
+        "v": "Een blokje heeft een massa van 120 g en een volume van 40 cm³. Welke dichtheid heeft het?",
+        "o": [
+         "\"0,33 g/cm³\"",
+         "\"3 g/cm³\"",
+         "\"80 g/cm³\"",
+         "\"4800 g/cm³\""
+        ],
+        "c": 1,
+        "d": 1,
+        "s": 1,
+        "u": "Zet eerst alle gegevens om naar passende eenheden en reken dan met de formule. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"0,33 g/cm³\"\"? Dan deel je het volume door de massa. De dichtheid is massa per volume, dus 120 : 40. Het goede antwoord is 3 g/cm³.",
+         "Klopt: dichtheid is massa gedeeld door volume, 120 : 40 = 3 g/cm³.",
+         "Koos je \"\"80 g/cm³\"\"? Dan trek je 40 van 120 af. Een dichtheid ontstaat door te delen, en niet door af te trekken. Door de stappen goed na te lopen kom je uit op 3 g/cm³.",
+         "Koos je \"\"4800 g/cm³\"\"? Dan vermenigvuldig je 120 met 40. Dichtheid is een massa per volume-eenheid, dus je deelt. Controleer je stap: de juiste uitkomst is 3 g/cm³."
+        ],
+        "uh": "Een blokje heeft een massa van 120 g en een volume van 40 cm³. Welke dichtheid heeft het?"
+       },
+       {
+        "v": "Een auto verbruikt 6 liter per 100 km. Hoeveel liter is nodig voor 200 km?",
+        "o": [
+         "\"3 L\"",
+         "\"106 L\"",
+         "\"1200 L\"",
+         "\"12 L\""
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 1,
+        "u": "Zet eerst alle gegevens om naar passende eenheden en reken dan met de formule. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"3 L\"\"? Dan deel je 6 door 2. Een langere rit vraagt meer brandstof, dus 2 × 6. Het goede antwoord is 12 L.",
+         "Koos je \"\"106 L\"\"? Dan tel je 100 en 6 bij elkaar op. Het verbruik is een verhouding, dus 2 × 6. Door de stappen goed na te lopen kom je uit op 12 L.",
+         "Koos je \"\"1200 L\"\"? Dan vermenigvuldig je 6 met 200. Het verbruik geldt per 100 kilometer, dus 2 keer 6. Controleer je stap: de juiste uitkomst is 12 L.",
+         "Klopt: 200 km is twee keer 100 km, dus 2 × 6 = 12 liter."
+        ],
+        "uh": "Een auto verbruikt 6 liter per 100 km. Hoeveel liter is nodig voor 200 km?"
+       },
+       {
+        "v": "Een apparaat van 2 kW staat 3 uur aan. Hoeveel kilowattuur gebruikt het?",
+        "o": [
+         "\"6 kWh\"",
+         "\"5 kWh\"",
+         "\"0,67 kWh\"",
+         "\"1,5 kWh\""
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 3,
+        "u": "Zet eerst alle gegevens om naar passende eenheden en reken dan met de formule. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: energie is vermogen maal tijd, 2 kW × 3 u = 6 kWh.",
+         "Koos je \"\"5 kWh\"\"? Dan tel je 2 en 3 bij elkaar op. Energie is vermogen maal tijd, dus 2 × 3. Het goede antwoord is 6 kWh.",
+         "Koos je \"\"0,67 kWh\"\"? Dan deel je 2 door 3. Je moet vermenigvuldigen, want kilowatt maal uur is kilowattuur. Door de stappen goed na te lopen kom je uit op 6 kWh.",
+         "Koos je \"\"1,5 kWh\"\"? Dan deel je 3 door 2. Vermogen en tijd vermenigvuldig je, dus 2 × 3 = 6. Controleer je stap: de juiste uitkomst is 6 kWh."
+        ],
+        "uh": "Een apparaat van 2 kW staat 3 uur aan. Hoeveel kilowattuur gebruikt het?"
+       },
+       {
+        "v": "Hoeveel meter per seconde komt 108 km/u overeen?",
+        "o": [
+         "\"388,8 m/s\"",
+         "\"108 m/s\"",
+         "\"30 m/s\"",
+         "\"1,8 m/s\""
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 3,
+        "u": "Zet eerst alle gegevens om naar passende eenheden en reken dan met de formule. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"388,8 m/s\"\"? Dan vermenigvuldig je 108 met 3,6. Naar m/s ga je door te delen door 3,6, dus 108 : 3,6. Het goede antwoord is 30 m/s.",
+         "Koos je \"\"108 m/s\"\"? Dan neem je het getal zonder omrekenen over. Kilometer per uur en meter per seconde zijn andere eenheden, dus 30.",
+         "Klopt: 108 km/u : 3,6 = 30 m/s, want 1 m/s is 3,6 km/u. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"1,8 m/s\"\"? Dan deel je door 60 in plaats van door 3,6. Je moet zowel uren naar seconden als km naar m omrekenen, en samen is dat een factor 3,6."
+        ],
+        "uh": "Hoeveel meter per seconde komt 108 km/u overeen?",
+        "ctx": "Een auto rijdt met een constante snelheid van 108 kilometer per uur over de snelweg. De bestuurder wil weten hoe snel dat in meter per seconde is en hoeveel afstand hij in een bepaalde tijd aflegt."
+       },
+       {
+        "v": "Hoeveel kilometer legt de auto in 2,5 uur af?",
+        "o": [
+         "\"43,2 km\"",
+         "\"270 km\"",
+         "\"110,5 km\"",
+         "\"216 km\""
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 3,
+        "u": "Zet eerst alle gegevens om naar passende eenheden en reken dan met de formule. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"43,2 km\"\"? Dan deel je 108 door 2,5. Afstand is snelheid maal tijd, dus 108 × 2,5. Het goede antwoord is 270 km.",
+         "Klopt: afstand is snelheid maal tijd, 108 × 2,5 = 270 km.",
+         "Koos je \"\"110,5 km\"\"? Dan tel je 108 en 2,5 bij elkaar op. Afstand is snelheid maal tijd, dus vermenigvuldigen. Door de stappen goed na te lopen kom je uit op 270 km.",
+         "Koos je \"\"216 km\"\"? Dan reken je 108 × 2. De tijd is 2,5 uur, dus een half uur extra. Controleer je stap: de juiste uitkomst is 270 km."
+        ],
+        "uh": "Hoeveel kilometer legt de auto in 2,5 uur af?",
+        "ctx": "Een auto rijdt met een constante snelheid van 108 kilometer per uur over de snelweg. De bestuurder wil weten hoe snel dat in meter per seconde is en hoeveel afstand hij in een bepaalde tijd aflegt."
+       },
+       {
+        "v": "Hoeveel meter legt de auto in 20 seconden af?",
+        "o": [
+         "\"2160 m, really\"",
+         "\"1,5 m\"",
+         "\"50 m\"",
+         "\"600 m\""
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 3,
+        "u": "Zet eerst alle gegevens om naar passende eenheden en reken dan met de formule. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"2160 m, really\"\"? Dan vermenigvuldig je 108 met 20. De snelheid in km/u past niet bij een tijd in seconden, dus eerst naar 30 m/s.",
+         "Koos je \"\"1,5 m\"\"? Dan deel je 30 door 20. Afstand is snelheid maal tijd, dus 30 × 20. Door de stappen goed na te lopen kom je uit op 600 m.",
+         "Koos je \"\"50 m\"\"? Dan tel je 30 en 20 op. Afstand is snelheid maal tijd, dus 30 × 20. Controleer je stap: de juiste uitkomst is 600 m.",
+         "Klopt: 30 m/s × 20 s = 600 m. Reken dit na met de gegeven gegevens."
+        ],
+        "uh": "Hoeveel meter legt de auto in 20 seconden af?",
+        "ctx": "Een auto rijdt met een constante snelheid van 108 kilometer per uur over de snelweg. De bestuurder wil weten hoe snel dat in meter per seconde is en hoeveel afstand hij in een bepaalde tijd aflegt."
+       },
+       {
+        "v": "Welke dichtheid heeft het blokje in gram per kubieke centimeter?",
+        "o": [
+         "\"2,7 g/cm³\"",
+         "\"0,37 g/cm³\"",
+         "\"340 g/cm³\"",
+         "\"108 000 g/cm³\""
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 1,
+        "u": "Zet eerst alle gegevens om naar passende eenheden en reken dan met de formule. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: 540 : 200 = 2,7 g/cm³. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"0,37 g/cm³\"\"? Dan deel je het volume door de massa. De dichtheid is massa per volume, dus 540 : 200. Het goede antwoord is 2,7 g/cm³.",
+         "Koos je \"\"340 g/cm³\"\"? Dan trek je 200 van 540 af. Een dichtheid ontstaat door te delen, en niet door af te trekken. Door de stappen goed na te lopen kom je uit op 2,7 g/cm³.",
+         "Koos je \"\"108 000 g/cm³\"\"? Dan vermenigvuldig je 540 met 200. De dichtheid is massa per volume-eenheid, dus je deelt. Controleer je stap: de juiste uitkomst is 2,7 g/cm³."
+        ],
+        "uh": "Welke dichtheid heeft het blokje in gram per kubieke centimeter?",
+        "ctx": "Een leerling meet een blokje metaal met een massa van 540 gram en een volume van 200 kubieke centimeter. Hij wil de dichtheid weten in gram per kubieke centimeter en in kilogram per kubieke meter."
+       },
+       {
+        "v": "Hoeveel kilogram per kubieke meter is die dichtheid?",
+        "o": [
+         "\"2,7 kg/m³\"",
+         "\"27 kg/m³\"",
+         "\"2700 kg/m³\"",
+         "\"2 700 000 kg/m³\""
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 2,
+        "u": "Zet eerst alle gegevens om naar passende eenheden en reken dan met de formule. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"2,7 kg/m³\"\"? Dan neem je het getal zonder omrekenen over. Van g/cm³ naar kg/m³ is een factor 1000, dus 2700. Het goede antwoord is 2700 kg/m³.",
+         "Koos je \"\"27 kg/m³\"\"? Dan vermenigvuldig je met 10. Gram naar kilogram deelt door 1000 en cm³ naar m³ vermenigvuldigt met 1 000 000, dus netto 1000.",
+         "Klopt: 2,7 g/cm³ is 2,7 × 1000 = 2700 kg/m³. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"2 700 000 kg/m³\"\"? Dan vermenigvuldig je met 1 000 000. Het gram-deel verkleint dat weer met 1000, dus netto 1000."
+        ],
+        "uh": "Hoeveel kilogram per kubieke meter is die dichtheid?",
+        "ctx": "Een leerling meet een blokje metaal met een massa van 540 gram en een volume van 200 kubieke centimeter. Hij wil de dichtheid weten in gram per kubieke centimeter en in kilogram per kubieke meter."
+       },
+       {
+        "v": "Hoeveel gram weegt een blok van dit metaal van 750 cm³?",
+        "o": [
+         "\"277,8 g, I suppose\"",
+         "\"2025 g\"",
+         "\"752,7 g\"",
+         "\"540 g\""
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 1,
+        "u": "Zet eerst alle gegevens om naar passende eenheden en reken dan met de formule. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"277,8 g, I suppose\"\"? Dan deel je 750 door 2,7. Massa is dichtheid maal volume, dus 2,7 × 750. Het goede antwoord is 2025 g.",
+         "Klopt: massa is dichtheid maal volume, 2,7 × 750 = 2025 gram.",
+         "Koos je \"\"752,7 g\"\"? Dan tel je 750 en 2,7 op. Massa is een product van dichtheid en volume, dus vermenigvuldigen. Door de stappen goed na te lopen kom je uit op 2025 g.",
+         "Koos je \"\"540 g\"\"? Dan neem je de massa van het eerste blokje. Een groter blok weegt meer, dus 2025. Controleer je stap: de juiste uitkomst is 2025 g."
+        ],
+        "uh": "Hoeveel gram weegt een blok van dit metaal van 750 cm³?",
+        "ctx": "Een leerling meet een blokje metaal met een massa van 540 gram en een volume van 200 kubieke centimeter. Hij wil de dichtheid weten in gram per kubieke centimeter en in kilogram per kubieke meter."
+       },
+       {
+        "v": "Hoeveel kilowattuur gebruikt de kachel in 3 uur?",
+        "o": [
+         "\"4500 kWh, you know\"",
+         "\"1,5 kWh\"",
+         "\"0,5 kWh\"",
+         "\"4,5 kWh\""
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 3,
+        "u": "Zet eerst alle gegevens om naar passende eenheden en reken dan met de formule. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"4500 kWh, you know\"\"? Dan vermenigvuldig je 1500 W met 3 en laat de omrekening naar kilowatt weg. Het is 4500 Wh, en dat is 4,5 kWh.",
+         "Koos je \"\"1,5 kWh\"\"? Dan neem je het vermogen in kW over. Energie is vermogen maal tijd, dus 1,5 × 3. Door de stappen goed na te lopen kom je uit op 4,5 kWh.",
+         "Koos je \"\"0,5 kWh\"\"? Dan deel je 1,5 door 3. Je vermenigvuldigt vermogen met tijd, dus 4,5. Controleer je stap: de juiste uitkomst is 4,5 kWh.",
+         "Klopt: 1500 W is 1,5 kW, en 1,5 × 3 = 4,5 kWh. Reken dit na met de gegeven gegevens."
+        ],
+        "uh": "Hoeveel kilowattuur gebruikt de kachel in 3 uur?",
+        "ctx": "Een elektrische kachel heeft een vermogen van 1500 watt en staat 3 uur aan. Het energiebedrijf rekent €0,30 per kilowattuur. Een leerling wil het energieverbruik en de kosten uitrekenen."
+       },
+       {
+        "v": "Hoeveel euro kost het gebruik van de kachel in 3 uur?",
+        "o": [
+         "\"€1,35\"",
+         "\"€1,50\"",
+         "\"€13,50\"",
+         "\"€0,45\""
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 3,
+        "u": "Zet eerst alle gegevens om naar passende eenheden en reken dan met de formule. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: 4,5 kWh × €0,30 = €1,35. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"€1,50\"\"? Dan reken je met €0,33 in plaats van €0,30. Het tarief is €0,30 per kWh, dus 4,5 × 0,30. Het goede antwoord is €1,35.",
+         "Koos je \"\"€13,50\"\"? Dan verplaats je de komma verkeerd. 4,5 × 0,30 = 1,35, en geen 13,50. Door de stappen goed na te lopen kom je uit op €1,35.",
+         "Koos je \"\"€0,45\"\"? Dan deel je 4,5 door 10 in plaats van te vermenigvuldigen met 0,30. Het tarief vermenigvuldig je met de kWh, dus 4,5 × 0,30."
+        ],
+        "uh": "Hoeveel euro kost het gebruik van de kachel in 3 uur?",
+        "ctx": "Een elektrische kachel heeft een vermogen van 1500 watt en staat 3 uur aan. Het energiebedrijf rekent €0,30 per kilowattuur. Een leerling wil het energieverbruik en de kosten uitrekenen."
+       },
+       {
+        "v": "Hoeveel euro kost het gebruik van de kachel als dit vijf keer gebeurt?",
+        "o": [
+         "\"€5,00\"",
+         "\"€1,35\"",
+         "\"€6,75\"",
+         "\"€0,27\""
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 3,
+        "u": "Zet eerst alle gegevens om naar passende eenheden en reken dan met de formule. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"€5,00\"\"? Dan tel je 5 en 1,35 niet goed samen. Vijf keer hetzelfde bedrag is vijf keer 1,35, dus 6,75. Het goede antwoord is €6,75.",
+         "Koos je \"\"€1,35\"\"? Dan neem je één keer het bedrag. De vraag gaat over vijf keer, dus 6,75. Door de stappen goed na te lopen kom je uit op €6,75.",
+         "Klopt: 5 × €1,35 = €6,75. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"€0,27\"\"? Dan deel je 1,35 door 5. Meer keren betekent meer kosten, dus 6,75. Controleer je stap: de juiste uitkomst is €6,75."
+        ],
+        "uh": "Hoeveel euro kost het gebruik van de kachel als dit vijf keer gebeurt?",
+        "ctx": "Een elektrische kachel heeft een vermogen van 1500 watt en staat 3 uur aan. Het energiebedrijf rekent €0,30 per kilowattuur. Een leerling wil het energieverbruik en de kosten uitrekenen."
+       },
+       {
+        "v": "Waarom is 1500 W × 3 uur niet gelijk aan 4500 kWh?",
+        "o": [
+         "\"het vermogen is al in kWh, volgens mij\"",
+         "\"1500 W is 1,5 kW en dus 4,5 kWh\"",
+         "\"een uur heeft 60 minuten\"",
+         "\"1 kWh is 100 Wh\""
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 4,
+        "u": "Zet eerst alle gegevens om naar passende eenheden en reken dan met de formule. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"het vermogen is al in kWh, volgens mij\"\"? Dan denk je dat 1500 W al kilowattuur is. Watt is een vermogen en kWh is energie, dus je moet omrekenen.",
+         "Klopt: 1500 W × 3 u = 4500 Wh en 1000 Wh is 1 kWh. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"een uur heeft 60 minuten\"\"? Dan leg je de fout bij de tijd. De tijd is al in uren, en de fout zit in W en kW. Door de stappen goed na te lopen kom je uit op 1500 W is 1,5 kW en dus 4,5 kWh.",
+         "Koos je \"\"1 kWh is 100 Wh\"\"? Dan denk je dat 1 kWh gelijk is aan 100 Wh. Het is 1000 Wh, dus 4500 Wh is 4,5 kWh. Controleer je stap: de juiste uitkomst is 1500 W is 1,5 kW en dus 4,5 kWh."
+        ],
+        "uh": "Waarom is 1500 W × 3 uur niet gelijk aan 4500 kWh?",
+        "ctx": "Een elektrische kachel heeft een vermogen van 1500 watt en staat 3 uur aan. Het energiebedrijf rekent €0,30 per kilowattuur. Een leerling wil het energieverbruik en de kosten uitrekenen."
+       },
+       {
+        "v": "Hoeveel liter brandstof is nodig voor de rit van 350 km?",
+        "o": [
+         "\"1960 L, I suppose\"",
+         "\"62,5 L\"",
+         "\"5,6 L\"",
+         "\"19,6 L\""
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 1,
+        "u": "Zet eerst alle gegevens om naar passende eenheden en reken dan met de formule. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"1960 L, I suppose\"\"? Dan vermenigvuldig je 5,6 met 350. Het verbruik geldt per 100 km, dus 3,5 × 5,6. Het goede antwoord is 19,6 L.",
+         "Koos je \"\"62,5 L\"\"? Dan deel je 350 door 5,6. Je moet het aantal honderden vermenigvuldigen met het verbruik, dus 3,5 × 5,6.",
+         "Koos je \"\"5,6 L\"\"? Dan neem je het verbruik per 100 km over. De rit is langer dan 100 km, dus 19,6. Controleer je stap: de juiste uitkomst is 19,6 L.",
+         "Klopt: 350 km is 3,5 keer 100 km, dus 3,5 × 5,6 = 19,6 liter."
+        ],
+        "uh": "Hoeveel liter brandstof is nodig voor de rit van 350 km?",
+        "ctx": "Een auto verbruikt gemiddeld 5,6 liter brandstof per 100 kilometer. De familie plant een rit van 350 kilometer en wil weten hoeveel liter dat kost en hoeveel kilometer ze per liter rijden."
+       },
+       {
+        "v": "Hoeveel euro kost die brandstof bij €1,90 per liter?",
+        "o": [
+         "\"€37,24\"",
+         "\"€10,63\"",
+         "\"€21,50\"",
+         "\"€372,40\""
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 3,
+        "u": "Zet eerst alle gegevens om naar passende eenheden en reken dan met de formule. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: 19,6 × 1,90 = 37,24 euro. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"€10,63\"\"? Dan deel je 19,6 door 1,90. De kosten zijn aantal liters maal prijs per liter, dus 19,6 × 1,90. Het goede antwoord is €37,24.",
+         "Koos je \"\"€21,50\"\"? Dan tel je 19,6 en 1,90 bij elkaar op. De kosten vermenigvuldig je, dus 37,24. Door de stappen goed na te lopen kom je uit op €37,24.",
+         "Koos je \"\"€372,40\"\"? Dan verplaats je de komma verkeerd. 19,6 × 1,90 is ongeveer 20 × 2, dus ongeveer 37. Controleer je stap: de juiste uitkomst is €37,24."
+        ],
+        "uh": "Hoeveel euro kost die brandstof bij €1,90 per liter?",
+        "ctx": "Een auto verbruikt gemiddeld 5,6 liter brandstof per 100 kilometer. De familie plant een rit van 350 kilometer en wil weten hoeveel liter dat kost en hoeveel kilometer ze per liter rijden."
+       },
+       {
+        "v": "Hoeveel kilometer rijdt de familie per liter, afgerond op één decimaal?",
+        "o": [
+         "\"0,056 km/L, really\"",
+         "\"17,8 km/L\"",
+         "\"17,9 km/L\"",
+         "\"94,4 km/L\""
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 1,
+        "u": "Zet eerst alle gegevens om naar passende eenheden en reken dan met de formule. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"0,056 km/L, really\"\"? Dan deel je 5,6 door 100. Dat geeft liters per kilometer, en niet kilometers per liter. Het goede antwoord is 17,9 km/L.",
+         "Koos je \"\"17,8 km/L\"\"? Dan kap je 17,857 af in plaats van af te ronden. Het tweede decimaal is 5 en het derde 7, dus omhoog naar 17,9.",
+         "Klopt: 100 : 5,6 ≈ 17,857, dus 17,9 kilometer per liter.",
+         "Koos je \"\"94,4 km/L\"\"? Dan trek je 5,6 van 100 af. Je moet delen, dus 100 : 5,6. Controleer je stap: de juiste uitkomst is 17,9 km/L."
+        ],
+        "uh": "Hoeveel kilometer rijdt de familie per liter, afgerond op één decimaal?",
+        "ctx": "Een auto verbruikt gemiddeld 5,6 liter brandstof per 100 kilometer. De familie plant een rit van 350 kilometer en wil weten hoeveel liter dat kost en hoeveel kilometer ze per liter rijden."
+       },
+       {
+        "v": "Hoeveel kubieke centimeter is de inhoud van het aquarium?",
+        "o": [
+         "\"170 cm³\"",
+         "\"160 000 cm³\"",
+         "\"16 000 cm³, I think\"",
+         "\"4000 cm³\""
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 2,
+        "u": "Zet eerst alle gegevens om naar passende eenheden en reken dan met de formule. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"170 cm³\"\"? Dan tel je lengte, breedte en hoogte bij elkaar op. De inhoud is lengte maal breedte maal hoogte, dus 80 × 50 × 40.",
+         "Klopt: 80 × 50 × 40 = 160 000 cm³. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"16 000 cm³, I think\"\"? Dan laat je een nul weg. 80 × 50 = 4000 en 4000 × 40 = 160 000, dus 160 000. Door de stappen goed na te lopen kom je uit op 160 000 cm³.",
+         "Koos je \"\"4000 cm³\"\"? Dan neem je het oppervlak van de bodem. Bij de inhoud hoort ook de hoogte, dus 40. Controleer je stap: de juiste uitkomst is 160 000 cm³."
+        ],
+        "uh": "Hoeveel kubieke centimeter is de inhoud van het aquarium?",
+        "ctx": "Een aquarium heeft een lengte van 80 centimeter, een breedte van 50 centimeter en een hoogte van 40 centimeter. De eigenaar wil de inhoud in liters weten en de oppervlakte van de bodem in vierkante meter."
+       },
+       {
+        "v": "Hoeveel liter is die inhoud?",
+        "o": [
+         "\"1600 L\"",
+         "\"160 000 L\"",
+         "\"16 L\"",
+         "\"160 L\""
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 2,
+        "u": "Zet eerst alle gegevens om naar passende eenheden en reken dan met de formule. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"1600 L\"\"? Dan deel je door 100 in plaats van door 1000. Een liter is 1000 kubieke centimeter, dus 160. Het goede antwoord is 160 L.",
+         "Koos je \"\"160 000 L\"\"? Dan neem je het aantal cm³ als liters. De eenheid verandert, dus het getal ook. Door de stappen goed na te lopen kom je uit op 160 L.",
+         "Koos je \"\"16 L\"\"? Dan deel je door 10 000. Een liter is 1000 kubieke centimeter, dus 160 liter. Controleer je stap: de juiste uitkomst is 160 L.",
+         "Klopt: 1 liter is 1000 cm³, dus 160 000 : 1000 = 160 liter."
+        ],
+        "uh": "Hoeveel liter is die inhoud?",
+        "ctx": "Een aquarium heeft een lengte van 80 centimeter, een breedte van 50 centimeter en een hoogte van 40 centimeter. De eigenaar wil de inhoud in liters weten en de oppervlakte van de bodem in vierkante meter."
+       },
+       {
+        "v": "Hoeveel vierkante meter is de bodem van 80 cm bij 50 cm?",
+        "o": [
+         "\"0,4 m²\"",
+         "\"0,04 m², I suppose\"",
+         "\"4 m²\"",
+         "\"40 m²\""
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 2,
+        "u": "Zet eerst alle gegevens om naar passende eenheden en reken dan met de formule. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: 80 × 50 = 4000 cm² en 1 m² is 10 000 cm², dus 0,4 m².",
+         "Koos je \"\"0,04 m², I suppose\"\"? Dan deel je 4000 door 100 000. Een vierkante meter is 10 000 vierkante centimeter, dus 0,4. Het goede antwoord is 0,4 m².",
+         "Koos je \"\"4 m²\"\"? Dan deel je 4000 door 1000. Een vierkante meter is 100 × 100 = 10 000 cm², dus 0,4. Door de stappen goed na te lopen kom je uit op 0,4 m².",
+         "Koos je \"\"40 m²\"\"? Dan deel je 4000 door 100. Bij oppervlakte hoort een factor 10 000, dus 0,4. Controleer je stap: de juiste uitkomst is 0,4 m²."
+        ],
+        "uh": "Hoeveel vierkante meter is de bodem van 80 cm bij 50 cm?",
+        "ctx": "Een aquarium heeft een lengte van 80 centimeter, een breedte van 50 centimeter en een hoogte van 40 centimeter. De eigenaar wil de inhoud in liters weten en de oppervlakte van de bodem in vierkante meter."
+       },
+       {
+        "v": "Hoeveel inwoners per vierkante kilometer wonen er op het eiland?",
+        "o": [
+         "\"96 000\"",
+         "\"0,0007\"",
+         "\"1500\"",
+         "\"11 992\""
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 1,
+        "u": "Zet eerst alle gegevens om naar passende eenheden en reken dan met de formule. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"96 000\"\"? Dan vermenigvuldig je 12 000 met 8. De dichtheid is inwoners per oppervlak, dus 12 000 : 8. Het goede antwoord is 1500.",
+         "Koos je \"\"0,0007\"\"? Dan deel je 8 door 12 000. Dat geeft vierkante kilometer per inwoner, en niet inwoners per km². Door de stappen goed na te lopen kom je uit op 1500.",
+         "Klopt: bevolkingsdichtheid is inwoners gedeeld door oppervlakte, 12 000 : 8 = 1500.",
+         "Koos je \"\"11 992\"\"? Dan trek je 8 van 12 000 af. Dichtheid is een deling, dus 12 000 : 8. Controleer je stap: de juiste uitkomst is 1500."
+        ],
+        "uh": "Hoeveel inwoners per vierkante kilometer wonen er op het eiland?",
+        "ctx": "Op een eiland wonen 12 000 mensen op een oppervlakte van 8 vierkante kilometer. Een leerling berekent de bevolkingsdichtheid en rekent die om naar inwoners per hectare, waarbij 1 vierkante kilometer gelijk is aan 100 hectare."
+       },
+       {
+        "v": "Hoeveel inwoners per hectare is dat?",
+        "o": [
+         "\"150 000\"",
+         "\"15\"",
+         "\"150\"",
+         "\"1500\""
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 2,
+        "u": "Zet eerst alle gegevens om naar passende eenheden en reken dan met de formule. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"150 000\"\"? Dan vermenigvuldig je 1500 met 100. Een hectare is kleiner dan een km², dus er wonen minder mensen per hectare.",
+         "Klopt: 1 km² is 100 ha, dus 1500 : 100 = 15 inwoners per hectare.",
+         "Koos je \"\"150\"\"? Dan deel je 1500 door 10. Een km² is 100 hectare, dus deel je door 100. Door de stappen goed na te lopen kom je uit op 15.",
+         "Koos je \"\"1500\"\"? Dan neem je het getal per km² over. De eenheid is hectare, dus 15. Controleer je stap: de juiste uitkomst is 15."
+        ],
+        "uh": "Hoeveel inwoners per hectare is dat?",
+        "ctx": "Op een eiland wonen 12 000 mensen op een oppervlakte van 8 vierkante kilometer. Een leerling berekent de bevolkingsdichtheid en rekent die om naar inwoners per hectare, waarbij 1 vierkante kilometer gelijk is aan 100 hectare."
+       },
+       {
+        "v": "Hoeveel inwoners wonen er gemiddeld op 2 hectare?",
+        "o": [
+         "\"7,5\"",
+         "\"3000\"",
+         "\"15\"",
+         "\"30\""
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 1,
+        "u": "Zet eerst alle gegevens om naar passende eenheden en reken dan met de formule. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"7,5\"\"? Dan deel je 15 door 2. Meer hectares betekent meer inwoners, dus 2 × 15. Het goede antwoord is 30.",
+         "Koos je \"\"3000\"\"? Dan vermenigvuldig je 1500 met 2. Dat zou voor 2 km² zijn, en niet voor 2 hectare. Door de stappen goed na te lopen kom je uit op 30.",
+         "Koos je \"\"15\"\"? Dan neem je de dichtheid voor één hectare over. De vraag gaat over twee hectare, dus 30. Controleer je stap: de juiste uitkomst is 30.",
+         "Klopt: 15 inwoners per hectare, dus 2 × 15 = 30 inwoners."
+        ],
+        "uh": "Hoeveel inwoners wonen er gemiddeld op 2 hectare?",
+        "ctx": "Op een eiland wonen 12 000 mensen op een oppervlakte van 8 vierkante kilometer. Een leerling berekent de bevolkingsdichtheid en rekent die om naar inwoners per hectare, waarbij 1 vierkante kilometer gelijk is aan 100 hectare."
+       },
+       {
+        "v": "Waarom is 1500 per km² niet gelijk aan 1500 per hectare?",
+        "o": [
+         "\"een hectare is 100 keer kleiner dan een km²\"",
+         "\"een hectare is 100 keer groter, volgens mij, eigenlijk\"",
+         "\"een hectare is 10 keer kleiner\"",
+         "\"de eenheden zijn hetzelfde\""
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 4,
+        "u": "Zet eerst alle gegevens om naar passende eenheden en reken dan met de formule. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: op een kleiner oppervlak wonen minder mensen, dus 15 per hectare.",
+         "Koos je \"\"een hectare is 100 keer groter, volgens mij, eigenlijk\"\"? Dan denk je dat een hectare groter is dan een km². Een hectare is 100 keer kleiner, dus er wonen minder mensen.",
+         "Koos je \"\"een hectare is 10 keer kleiner\"\"? Dan gebruik je de factor 10. Een km² is 100 hectare, en niet 10. Door de stappen goed na te lopen kom je uit op een hectare is 100 keer kleiner dan een km².",
+         "Koos je \"\"de eenheden zijn hetzelfde\"\"? Dan denk je dat km² en hectare hetzelfde zijn. Ze verschillen een factor 100, dus de dichtheid verschilt ook."
+        ],
+        "uh": "Waarom is 1500 per km² niet gelijk aan 1500 per hectare?",
+        "ctx": "Op een eiland wonen 12 000 mensen op een oppervlakte van 8 vierkante kilometer. Een leerling berekent de bevolkingsdichtheid en rekent die om naar inwoners per hectare, waarbij 1 vierkante kilometer gelijk is aan 100 hectare."
+       }
+      ],
+      "oe": [
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een fietser legt 54 kilometer af in 3 uur. Hij wil zijn gemiddelde snelheid weten in kilometer per uur en in meter per seconde, zodat hij die kan vergelijken met een snelheidsmeter in m/s.",
+        "v": "Bereken de snelheid in km/u en in m/s.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "54 : 3 = 18 km/u (1p). Omrekenen: 18 : 3,6 (1p). 5 m/s (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een leerling meet een metalen cilinder met een massa van 2,4 kilogram en een volume van 300 kubieke centimeter. Hij wil de dichtheid weten in gram per kubieke centimeter en in kilogram per kubieke meter.",
+        "v": "Bereken de dichtheid in beide eenheden.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "2,4 kg = 2400 g (1p). 2400 : 300 = 8 g/cm³ (1p). 8 × 1000 = 8000 kg/m³ (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een magnetron heeft een vermogen van 800 watt en wordt 15 minuten gebruikt. Het tarief is €0,30 per kilowattuur. Een leerling wil weten hoeveel energie dat kost.",
+        "v": "Bereken het verbruik in kWh en de kosten in euro.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "800 W = 0,8 kW en 15 min = 0,25 u (1p). 0,8 × 0,25 = 0,2 kWh (1p). 0,2 × 0,30 = €0,06 (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een auto verbruikt gemiddeld 4,5 liter brandstof per 100 kilometer. De familie rijdt 600 kilometer en betaalt €2,00 per liter. Ze willen de totale brandstofkosten weten.",
+        "v": "Bereken het aantal liters en de kosten voor de rit.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "600 km is 6 × 100 km (1p). 6 × 4,5 = 27 liter (1p). 27 × 2,00 = €54 (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een klasgenoot zegt dat 3 vierkante meter gelijk is aan 300 vierkante centimeter. Jij weet dat een vierkante meter 100 cm bij 100 cm is. Je wilt de fout laten zien en de juiste omrekening geven.",
+        "v": "Bereken hoeveel vierkante centimeter 3 m² is en leg de fout uit.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "1 m² = 100 × 100 = 10 000 cm² (1p). 3 × 10 000 = 30 000 cm² (1p). De klasgenoot gebruikte de factor 100 in plaats van 10 000 (1p)."
+       }
+      ]
      }
     ]
    },

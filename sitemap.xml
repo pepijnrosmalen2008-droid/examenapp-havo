@@ -3,12 +3,12 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://slagio.nl/</loc><lastmod>2026-11-07</lastmod><changefreq>weekly</changefreq><priority>1.0</priority></url>
   <url><loc>https://slagio.nl/havo</loc><lastmod>2026-11-09</lastmod><changefreq>weekly</changefreq><priority>0.95</priority></url>
-  <url><loc>https://slagio.nl/vmbo</loc><lastmod>2026-09-19</lastmod><changefreq>weekly</changefreq><priority>0.95</priority></url>
+  <url><loc>https://slagio.nl/vmbo</loc><lastmod>2026-10-30</lastmod><changefreq>weekly</changefreq><priority>0.95</priority></url>
   <url><loc>https://slagio.nl/vwo</loc><lastmod>2026-11-09</lastmod><changefreq>weekly</changefreq><priority>0.95</priority></url>
   <url><loc>https://slagio.nl/faq.html</loc><lastmod>2026-11-09</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://slagio.nl/leren/</loc><lastmod>2026-11-14</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://slagio.nl/leren/havo/aardrijkskunde/examenvragen.html</loc><lastmod>2026-10-06</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://slagio.nl/leren/havo/bedrijfseconomie/examenvragen.html</loc><lastmod>2026-10-06</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://slagio.nl/leren/havo/aardrijkskunde/examenvragen.html</loc><lastmod>2026-10-30</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://slagio.nl/leren/havo/bedrijfseconomie/examenvragen.html</loc><lastmod>2026-10-30</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://slagio.nl/leren/havo/biologie/</loc><lastmod>2026-11-11</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://slagio.nl/leren/havo/biologie/afweer-en-immuniteit.html</loc><lastmod>2026-11-11</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://slagio.nl/leren/havo/biologie/begrippen.html</loc><lastmod>2026-11-11</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
@@ -24,7 +24,7 @@
   <url><loc>https://slagio.nl/leren/havo/biologie/enzymwerking.html</loc><lastmod>2026-11-11</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://slagio.nl/leren/havo/biologie/erfelijkheid-allelen-en-overerving.html</loc><lastmod>2026-11-11</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://slagio.nl/leren/havo/biologie/evolutie-en-natuurlijke-selectie.html</loc><lastmod>2026-11-11</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://slagio.nl/leren/havo/biologie/examenvragen.html</loc><lastmod>2026-10-06</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://slagio.nl/leren/havo/biologie/examenvragen.html</loc><lastmod>2026-10-30</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://slagio.nl/leren/havo/biologie/fotosynthese-en-celademhaling.html</loc><lastmod>2026-11-11</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://slagio.nl/leren/havo/biologie/homeostase-en-antagonisme.html</loc><lastmod>2026-11-11</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://slagio.nl/leren/havo/biologie/hormonale-regulatie.html</loc><lastmod>2026-11-11</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
@@ -37,54 +37,54 @@
   <url><loc>https://slagio.nl/leren/havo/biologie/transport-en-gasuitwisseling.html</loc><lastmod>2026-11-11</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://slagio.nl/leren/havo/biologie/voedselrelaties-en-energiedoorgifte.html</loc><lastmod>2026-11-11</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://slagio.nl/leren/havo/biologie/zenuwstelsel-en-prikkelgeleiding.html</loc><lastmod>2026-11-11</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://slagio.nl/leren/havo/economie/examenvragen.html</loc><lastmod>2026-10-06</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://slagio.nl/leren/havo/economie/examenvragen.html</loc><lastmod>2026-10-30</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://slagio.nl/leren/havo/engels/</loc><lastmod>2026-11-01</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://slagio.nl/leren/havo/engels/aantekeningen-maken-bij-het-luisteren.html</loc><lastmod>2026-10-30</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://slagio.nl/leren/havo/engels/adequaat-reageren-in-sociale-contacten.html</loc><lastmod>2026-10-30</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://slagio.nl/leren/havo/engels/begrippen.html</loc><lastmod>2026-11-01</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://slagio.nl/leren/havo/engels/brieven-en-e-mails-lezen.html</loc><lastmod>2026-10-16</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://slagio.nl/leren/havo/engels/collocaties-uitdrukkingen-en-false-friends.html</loc><lastmod>2026-10-11</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://slagio.nl/leren/havo/engels/conclusies-trekken-over-bedoeling-mening-en-gevoel-van-sprekers.html</loc><lastmod>2026-10-29</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://slagio.nl/leren/havo/engels/conclusies-trekken-over-de-schrijver-en-zijn-bedoeling.html</loc><lastmod>2026-10-16</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://slagio.nl/leren/havo/engels/conditionals-type-1-2-en-3.html</loc><lastmod>2026-10-11</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://slagio.nl/leren/havo/engels/de-betekenis-van-belangrijke-woorden-en-zinnen-in-gesproken-tekst.html</loc><lastmod>2026-10-29</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://slagio.nl/leren/havo/engels/de-betekenis-van-woorden-en-verwijzingen-in-een-tekst.html</loc><lastmod>2026-10-16</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://slagio.nl/leren/havo/engels/de-hoofdgedachte-van-een-engelse-tekst-aangeven.html</loc><lastmod>2026-10-16</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://slagio.nl/leren/havo/engels/de-hoofdgedachte-van-een-luister-of-kijktekst-aangeven.html</loc><lastmod>2026-10-29</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://slagio.nl/leren/havo/engels/een-engelse-tekst-samenvatten-en-parafraseren.html</loc><lastmod>2026-10-29</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://slagio.nl/leren/havo/engels/brieven-en-e-mails-lezen.html</loc><lastmod>2026-10-30</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://slagio.nl/leren/havo/engels/collocaties-uitdrukkingen-en-false-friends.html</loc><lastmod>2026-10-30</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://slagio.nl/leren/havo/engels/conclusies-trekken-over-bedoeling-mening-en-gevoel-van-sprekers.html</loc><lastmod>2026-10-30</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://slagio.nl/leren/havo/engels/conclusies-trekken-over-de-schrijver-en-zijn-bedoeling.html</loc><lastmod>2026-10-30</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://slagio.nl/leren/havo/engels/conditionals-type-1-2-en-3.html</loc><lastmod>2026-10-30</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://slagio.nl/leren/havo/engels/de-betekenis-van-belangrijke-woorden-en-zinnen-in-gesproken-tekst.html</loc><lastmod>2026-10-30</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://slagio.nl/leren/havo/engels/de-betekenis-van-woorden-en-verwijzingen-in-een-tekst.html</loc><lastmod>2026-10-30</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://slagio.nl/leren/havo/engels/de-hoofdgedachte-van-een-engelse-tekst-aangeven.html</loc><lastmod>2026-10-30</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://slagio.nl/leren/havo/engels/de-hoofdgedachte-van-een-luister-of-kijktekst-aangeven.html</loc><lastmod>2026-10-30</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://slagio.nl/leren/havo/engels/een-engelse-tekst-samenvatten-en-parafraseren.html</loc><lastmod>2026-10-30</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://slagio.nl/leren/havo/engels/een-korte-presentatie-opbouwen-voor-doel-en-publiek.html</loc><lastmod>2026-10-31</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://slagio.nl/leren/havo/engels/een-tekst-schrijven-met-een-tekstverwerker-en-naslagmateriaal.html</loc><lastmod>2026-11-01</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://slagio.nl/leren/havo/engels/een-verslag-schrijven.html</loc><lastmod>2026-10-31</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://slagio.nl/leren/havo/engels/examenvragen.html</loc><lastmod>2026-10-11</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://slagio.nl/leren/havo/engels/feiten-meningen-en-argumenten-onderscheiden.html</loc><lastmod>2026-10-16</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://slagio.nl/leren/havo/engels/examenvragen.html</loc><lastmod>2026-10-30</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://slagio.nl/leren/havo/engels/feiten-meningen-en-argumenten-onderscheiden.html</loc><lastmod>2026-10-30</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://slagio.nl/leren/havo/engels/formele-en-informele-brieven-en-e-mails-schrijven.html</loc><lastmod>2026-10-31</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://slagio.nl/leren/havo/engels/gevoelens-uitdrukken.html</loc><lastmod>2026-10-30</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://slagio.nl/leren/havo/engels/het-meest-waarschijnlijke-vervolg-van-een-gesprek-voorspellen.html</loc><lastmod>2026-10-29</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://slagio.nl/leren/havo/engels/het-meest-waarschijnlijke-vervolg-van-een-gesprek-voorspellen.html</loc><lastmod>2026-10-30</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://slagio.nl/leren/havo/engels/informatie-presenteren-voor-doel-en-publiek.html</loc><lastmod>2026-10-31</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://slagio.nl/leren/havo/engels/informatie-vragen-en-verstrekken-in-een-e-mail.html</loc><lastmod>2026-10-31</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://slagio.nl/leren/havo/engels/informatie-vragen-en-verstrekken.html</loc><lastmod>2026-10-30</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://slagio.nl/leren/havo/engels/je-leeservaring-beargumenteerd-verwoorden.html</loc><lastmod>2026-11-01</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://slagio.nl/leren/havo/engels/literaire-tekstsoorten-en-genres-herkennen.html</loc><lastmod>2026-11-01</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://slagio.nl/leren/havo/engels/modale-werkwoorden-can-must-should-en-might.html</loc><lastmod>2026-10-11</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://slagio.nl/leren/havo/engels/passief-en-actief.html</loc><lastmod>2026-10-15</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://slagio.nl/leren/havo/engels/modale-werkwoorden-can-must-should-en-might.html</loc><lastmod>2026-10-30</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://slagio.nl/leren/havo/engels/passief-en-actief.html</loc><lastmod>2026-10-30</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://slagio.nl/leren/havo/engels/personages-thema-en-symboliek.html</loc><lastmod>2026-11-01</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://slagio.nl/leren/havo/engels/personen-en-zaken-beschrijven-en-gevoelens-uitdrukken-in-een-tekst.html</loc><lastmod>2026-10-31</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://slagio.nl/leren/havo/engels/plot-conflict-en-opbouw-van-een-verhaal.html</loc><lastmod>2026-11-01</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://slagio.nl/leren/havo/engels/present-perfect-of-past-simple-kiezen.html</loc><lastmod>2026-10-11</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://slagio.nl/leren/havo/engels/relaties-tussen-tekstdelen-herkennen.html</loc><lastmod>2026-10-16</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://slagio.nl/leren/havo/engels/relevante-informatie-vinden-in-een-engelse-tekst.html</loc><lastmod>2026-10-16</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://slagio.nl/leren/havo/engels/relevante-informatie-vinden-in-een-gesproken-tekst.html</loc><lastmod>2026-10-29</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://slagio.nl/leren/havo/engels/present-perfect-of-past-simple-kiezen.html</loc><lastmod>2026-10-30</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://slagio.nl/leren/havo/engels/relaties-tussen-tekstdelen-herkennen.html</loc><lastmod>2026-10-30</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://slagio.nl/leren/havo/engels/relevante-informatie-vinden-in-een-engelse-tekst.html</loc><lastmod>2026-10-30</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://slagio.nl/leren/havo/engels/relevante-informatie-vinden-in-een-gesproken-tekst.html</loc><lastmod>2026-10-30</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://slagio.nl/leren/havo/engels/standpunten-en-argumenten-opschrijven.html</loc><lastmod>2026-10-31</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://slagio.nl/leren/havo/engels/standpunten-en-argumenten-verwoorden.html</loc><lastmod>2026-10-30</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://slagio.nl/leren/havo/engels/stijlfiguren-en-poezie.html</loc><lastmod>2026-11-01</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://slagio.nl/leren/havo/engels/strategieen-om-een-gesprek-gaande-te-houden.html</loc><lastmod>2026-10-30</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://slagio.nl/leren/havo/engels/verteller-en-vertelperspectief.html</loc><lastmod>2026-11-01</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://slagio.nl/leren/havo/engels/woordbetekenis-afleiden-uit-de-context.html</loc><lastmod>2026-10-11</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://slagio.nl/leren/havo/engels/woorden-bouwen-met-voor-en-achtervoegsels.html</loc><lastmod>2026-10-11</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://slagio.nl/leren/havo/engels/woordbetekenis-afleiden-uit-de-context.html</loc><lastmod>2026-10-30</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://slagio.nl/leren/havo/engels/woorden-bouwen-met-voor-en-achtervoegsels.html</loc><lastmod>2026-10-30</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://slagio.nl/leren/havo/engels/zaken-en-personen-beschrijven.html</loc><lastmod>2026-10-30</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://slagio.nl/leren/havo/engels/zinsbouw-verbindingswoorden-en-toon.html</loc><lastmod>2026-10-16</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://slagio.nl/leren/havo/geschiedenis/examenvragen.html</loc><lastmod>2026-10-06</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://slagio.nl/leren/havo/maatschappijwetenschappen/examenvragen.html</loc><lastmod>2026-10-06</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://slagio.nl/leren/havo/engels/zinsbouw-verbindingswoorden-en-toon.html</loc><lastmod>2026-10-30</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://slagio.nl/leren/havo/geschiedenis/examenvragen.html</loc><lastmod>2026-10-30</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://slagio.nl/leren/havo/maatschappijwetenschappen/examenvragen.html</loc><lastmod>2026-10-30</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://slagio.nl/leren/havo/natuurkunde/</loc><lastmod>2026-11-11</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://slagio.nl/leren/havo/natuurkunde/activiteit-dosis-en-afscherming.html</loc><lastmod>2026-11-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://slagio.nl/leren/havo/natuurkunde/arbeid-energie-en-vermogen.html</loc><lastmod>2026-11-11</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
@@ -95,7 +95,7 @@
   <url><loc>https://slagio.nl/leren/havo/natuurkunde/elektrische-veiligheid.html</loc><lastmod>2026-11-11</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://slagio.nl/leren/havo/natuurkunde/elektromagnetisch-spectrum.html</loc><lastmod>2026-11-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://slagio.nl/leren/havo/natuurkunde/evenredige-verbanden.html</loc><lastmod>2026-11-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://slagio.nl/leren/havo/natuurkunde/examenvragen.html</loc><lastmod>2026-10-06</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://slagio.nl/leren/havo/natuurkunde/examenvragen.html</loc><lastmod>2026-10-30</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://slagio.nl/leren/havo/natuurkunde/geleiders-isolatoren-en-sensoren.html</loc><lastmod>2026-11-11</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://slagio.nl/leren/havo/natuurkunde/geluid-grondtoon-boventonen-en-resonantie.html</loc><lastmod>2026-11-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://slagio.nl/leren/havo/natuurkunde/golven-en-golfgrootheden.html</loc><lastmod>2026-11-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
@@ -115,39 +115,39 @@
   <url><loc>https://slagio.nl/leren/havo/natuurkunde/vermogen-en-energie.html</loc><lastmod>2026-11-11</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://slagio.nl/leren/havo/natuurkunde/warmtetransport.html</loc><lastmod>2026-11-11</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://slagio.nl/leren/havo/natuurkunde/weerstand-en-de-wet-van-ohm.html</loc><lastmod>2026-11-11</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://slagio.nl/leren/havo/nederlands/</loc><lastmod>2026-10-10</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://slagio.nl/leren/havo/nederlands/adequaat-reageren-op-luisteraars-en-deelnemers.html</loc><lastmod>2026-10-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://slagio.nl/leren/havo/nederlands/begrippen.html</loc><lastmod>2026-10-10</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://slagio.nl/leren/havo/nederlands/beknopt-schrijven-in-eigen-woorden.html</loc><lastmod>2026-10-09</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://slagio.nl/leren/havo/nederlands/betoog-beoordelen-en-drogredenen-herkennen.html</loc><lastmod>2026-10-06</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://slagio.nl/leren/havo/nederlands/conclusies-over-de-auteur-trekken.html</loc><lastmod>2026-10-06</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://slagio.nl/leren/havo/nederlands/deelnemen-aan-een-discussie-of-debat.html</loc><lastmod>2026-10-07</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://slagio.nl/leren/havo/nederlands/doel-publiek-en-gespreksvorm-bepalen.html</loc><lastmod>2026-10-07</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://slagio.nl/leren/havo/nederlands/een-betogende-en-een-informatieve-tekst-samenvatten.html</loc><lastmod>2026-10-10</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://slagio.nl/leren/havo/nederlands/een-betoog-schrijven.html</loc><lastmod>2026-10-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://slagio.nl/leren/havo/nederlands/een-samenvatting-controleren-op-volledigheid-en-samenhang.html</loc><lastmod>2026-10-09</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://slagio.nl/leren/havo/nederlands/een-tekst-globaal-verkennen.html</loc><lastmod>2026-10-09</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://slagio.nl/leren/havo/nederlands/een-tekst-reviseren-op-commentaar.html</loc><lastmod>2026-10-09</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://slagio.nl/leren/havo/nederlands/een-tekst-samenvatten.html</loc><lastmod>2026-10-07</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://slagio.nl/leren/havo/nederlands/een-voordracht-opbouwen-en-presenteren.html</loc><lastmod>2026-10-07</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://slagio.nl/leren/havo/nederlands/examenvragen.html</loc><lastmod>2026-10-06</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://slagio.nl/leren/havo/nederlands/informatie-verzamelen-en-verwerken.html</loc><lastmod>2026-10-07</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://slagio.nl/leren/havo/nederlands/informatie-verzamelen-verwerken-en-verantwoorden.html</loc><lastmod>2026-10-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://slagio.nl/leren/havo/nederlands/kernzinnen-en-hoofdpunten-per-alinea-vinden.html</loc><lastmod>2026-10-09</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://slagio.nl/leren/havo/nederlands/literaire-tekstsoorten-herkennen-en-onderscheiden.html</loc><lastmod>2026-10-10</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://slagio.nl/leren/havo/nederlands/literatuurgeschiedenis-in-hoofdlijnen.html</loc><lastmod>2026-10-10</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://slagio.nl/leren/havo/nederlands/onderwerp-en-hoofdgedachte-aangeven.html</loc><lastmod>2026-10-06</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://slagio.nl/leren/havo/nederlands/personages-thema-en-motief.html</loc><lastmod>2026-10-10</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://slagio.nl/leren/havo/nederlands/relaties-tussen-tekstdelen-benoemen.html</loc><lastmod>2026-10-06</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://slagio.nl/leren/havo/nederlands/schrijftaal-stijl-en-correctheid.html</loc><lastmod>2026-10-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://slagio.nl/leren/havo/nederlands/standpunten-argumenten-en-schema-s-herkennen.html</loc><lastmod>2026-10-06</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://slagio.nl/leren/havo/nederlands/stijlfiguren-en-poezie.html</loc><lastmod>2026-10-10</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://slagio.nl/leren/havo/nederlands/tekst-en-alinea-opbouwen.html</loc><lastmod>2026-10-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://slagio.nl/leren/havo/nederlands/tekstsoort-doel-en-lezersgroep-afstemmen.html</loc><lastmod>2026-10-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://slagio.nl/leren/havo/nederlands/tekstsoort-en-schrijfdoel-bepalen.html</loc><lastmod>2026-10-06</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://slagio.nl/leren/havo/nederlands/tijd-ruimte-en-opbouw-van-een-verhaal.html</loc><lastmod>2026-10-10</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://slagio.nl/leren/havo/nederlands/verbanden-en-signaalwoorden-gebruiken-bij-samenvatten.html</loc><lastmod>2026-10-09</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://slagio.nl/leren/havo/nederlands/verteller-vertelperspectief-en-focalisatie.html</loc><lastmod>2026-10-10</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://slagio.nl/leren/havo/nederlands/</loc><lastmod>2026-10-30</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://slagio.nl/leren/havo/nederlands/adequaat-reageren-op-luisteraars-en-deelnemers.html</loc><lastmod>2026-10-30</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://slagio.nl/leren/havo/nederlands/begrippen.html</loc><lastmod>2026-10-30</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://slagio.nl/leren/havo/nederlands/beknopt-schrijven-in-eigen-woorden.html</loc><lastmod>2026-10-30</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://slagio.nl/leren/havo/nederlands/betoog-beoordelen-en-drogredenen-herkennen.html</loc><lastmod>2026-10-30</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://slagio.nl/leren/havo/nederlands/conclusies-over-de-auteur-trekken.html</loc><lastmod>2026-10-30</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://slagio.nl/leren/havo/nederlands/deelnemen-aan-een-discussie-of-debat.html</loc><lastmod>2026-10-30</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://slagio.nl/leren/havo/nederlands/doel-publiek-en-gespreksvorm-bepalen.html</loc><lastmod>2026-10-30</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://slagio.nl/leren/havo/nederlands/een-betogende-en-een-informatieve-tekst-samenvatten.html</loc><lastmod>2026-10-30</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://slagio.nl/leren/havo/nederlands/een-betoog-schrijven.html</loc><lastmod>2026-10-30</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://slagio.nl/leren/havo/nederlands/een-samenvatting-controleren-op-volledigheid-en-samenhang.html</loc><lastmod>2026-10-30</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://slagio.nl/leren/havo/nederlands/een-tekst-globaal-verkennen.html</loc><lastmod>2026-10-30</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://slagio.nl/leren/havo/nederlands/een-tekst-reviseren-op-commentaar.html</loc><lastmod>2026-10-30</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://slagio.nl/leren/havo/nederlands/een-tekst-samenvatten.html</loc><lastmod>2026-10-30</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://slagio.nl/leren/havo/nederlands/een-voordracht-opbouwen-en-presenteren.html</loc><lastmod>2026-10-30</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://slagio.nl/leren/havo/nederlands/examenvragen.html</loc><lastmod>2026-10-30</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://slagio.nl/leren/havo/nederlands/informatie-verzamelen-en-verwerken.html</loc><lastmod>2026-10-30</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://slagio.nl/leren/havo/nederlands/informatie-verzamelen-verwerken-en-verantwoorden.html</loc><lastmod>2026-10-30</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://slagio.nl/leren/havo/nederlands/kernzinnen-en-hoofdpunten-per-alinea-vinden.html</loc><lastmod>2026-10-30</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://slagio.nl/leren/havo/nederlands/literaire-tekstsoorten-herkennen-en-onderscheiden.html</loc><lastmod>2026-10-30</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://slagio.nl/leren/havo/nederlands/literatuurgeschiedenis-in-hoofdlijnen.html</loc><lastmod>2026-10-30</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://slagio.nl/leren/havo/nederlands/onderwerp-en-hoofdgedachte-aangeven.html</loc><lastmod>2026-10-30</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://slagio.nl/leren/havo/nederlands/personages-thema-en-motief.html</loc><lastmod>2026-10-30</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://slagio.nl/leren/havo/nederlands/relaties-tussen-tekstdelen-benoemen.html</loc><lastmod>2026-10-30</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://slagio.nl/leren/havo/nederlands/schrijftaal-stijl-en-correctheid.html</loc><lastmod>2026-10-30</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://slagio.nl/leren/havo/nederlands/standpunten-argumenten-en-schema-s-herkennen.html</loc><lastmod>2026-10-30</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://slagio.nl/leren/havo/nederlands/stijlfiguren-en-poezie.html</loc><lastmod>2026-10-30</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://slagio.nl/leren/havo/nederlands/tekst-en-alinea-opbouwen.html</loc><lastmod>2026-10-30</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://slagio.nl/leren/havo/nederlands/tekstsoort-doel-en-lezersgroep-afstemmen.html</loc><lastmod>2026-10-30</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://slagio.nl/leren/havo/nederlands/tekstsoort-en-schrijfdoel-bepalen.html</loc><lastmod>2026-10-30</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://slagio.nl/leren/havo/nederlands/tijd-ruimte-en-opbouw-van-een-verhaal.html</loc><lastmod>2026-10-30</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://slagio.nl/leren/havo/nederlands/verbanden-en-signaalwoorden-gebruiken-bij-samenvatten.html</loc><lastmod>2026-10-30</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://slagio.nl/leren/havo/nederlands/verteller-vertelperspectief-en-focalisatie.html</loc><lastmod>2026-10-30</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://slagio.nl/leren/havo/scheikunde/</loc><lastmod>2026-11-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://slagio.nl/leren/havo/scheikunde/begrippen.html</loc><lastmod>2026-11-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://slagio.nl/leren/havo/scheikunde/chemie-in-voeding-en-energie.html</loc><lastmod>2026-11-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
@@ -175,6 +175,7 @@
   <url><loc>https://slagio.nl/leren/havo/wiskunde-a/een-redenering-opbouwen-en-controleren.html</loc><lastmod>2026-11-13</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://slagio.nl/leren/havo/wiskunde-a/een-situatie-vertalen-naar-een-wiskundig-model.html</loc><lastmod>2026-11-12</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://slagio.nl/leren/havo/wiskunde-a/examenvragen.html</loc><lastmod>2026-11-12</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://slagio.nl/leren/havo/wiskunde-a/grootheden-samengestelde-grootheden-en-eenheden-omrekenen.html</loc><lastmod>2026-11-14</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://slagio.nl/leren/havo/wiskunde-a/haakjes-wegwerken-en-vereenvoudigen.html</loc><lastmod>2026-11-14</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://slagio.nl/leren/havo/wiskunde-a/je-antwoord-controleren-en-terugvertalen-naar-de-context.html</loc><lastmod>2026-11-12</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://slagio.nl/leren/havo/wiskunde-a/rekenen-met-breuken-verhoudingen-en-procenten.html</loc><lastmod>2026-11-14</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
@@ -182,7 +183,7 @@
   <url><loc>https://slagio.nl/leren/havo/wiskunde-a/rekenen-met-rekenregels-machten-en-wortels.html</loc><lastmod>2026-11-13</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://slagio.nl/leren/havo/wiskunde-a/rekenen-met-variabelen-machten-en-wortels.html</loc><lastmod>2026-11-14</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://slagio.nl/leren/havo/wiskunde-a/wiskundige-taal-notatie-en-formules-lezen.html</loc><lastmod>2026-11-12</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://slagio.nl/leren/havo/wiskunde-b/examenvragen.html</loc><lastmod>2026-10-06</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://slagio.nl/leren/havo/wiskunde-b/examenvragen.html</loc><lastmod>2026-10-30</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://slagio.nl/leren/vmbo/engels/</loc><lastmod>2026-11-11</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://slagio.nl/leren/vmbo/engels/aantekeningen-maken-bij-het-luisteren.html</loc><lastmod>2026-11-10</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://slagio.nl/leren/vmbo/engels/begrippen.html</loc><lastmod>2026-11-11</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
@@ -209,39 +210,39 @@
   <url><loc>https://slagio.nl/leren/vmbo/engels/reageren-in-sociale-situaties-begroeten-bedanken-excuses-en-uitnodigen.html</loc><lastmod>2026-11-10</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://slagio.nl/leren/vmbo/engels/spelling-leestekens-en-hoofdletters.html</loc><lastmod>2026-11-11</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://slagio.nl/leren/vmbo/engels/verbanden-tussen-zinnen-en-tekstdelen-herkennen.html</loc><lastmod>2026-11-07</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://slagio.nl/leren/vmbo/nederlands/</loc><lastmod>2026-10-28</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://slagio.nl/leren/vmbo/nederlands/beeld-en-geluid-interpreteren.html</loc><lastmod>2026-10-25</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://slagio.nl/leren/vmbo/nederlands/begrippen.html</loc><lastmod>2026-10-28</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://slagio.nl/leren/vmbo/nederlands/de-hoofdzaak-en-de-kernboodschap-vinden.html</loc><lastmod>2026-10-24</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://slagio.nl/leren/vmbo/nederlands/deelnemen-aan-een-gesprek-of-discussie.html</loc><lastmod>2026-10-25</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://slagio.nl/leren/vmbo/nederlands/doel-publiek-en-gespreksvorm-afstemmen.html</loc><lastmod>2026-10-25</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://slagio.nl/leren/vmbo/nederlands/duidelijk-en-overtuigend-presenteren.html</loc><lastmod>2026-10-25</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://slagio.nl/leren/vmbo/nederlands/een-formele-brief-of-e-mail-schrijven.html</loc><lastmod>2026-10-27</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://slagio.nl/leren/vmbo/nederlands/een-presentatie-voorbereiden-en-opbouwen.html</loc><lastmod>2026-10-25</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://slagio.nl/leren/vmbo/nederlands/een-tekst-samenvatten.html</loc><lastmod>2026-10-27</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://slagio.nl/leren/vmbo/nederlands/een-verslag-schrijven.html</loc><lastmod>2026-10-27</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://slagio.nl/leren/vmbo/nederlands/feit-en-mening-onderscheiden.html</loc><lastmod>2026-10-24</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://slagio.nl/leren/vmbo/nederlands/feiten-en-meningen-in-een-tekst.html</loc><lastmod>2026-10-26</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://slagio.nl/leren/vmbo/nederlands/gedichten-lezen-strofe-rijm-en-beeldspraak.html</loc><lastmod>2026-10-28</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://slagio.nl/leren/vmbo/nederlands/genres-herkennen.html</loc><lastmod>2026-10-28</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://slagio.nl/leren/vmbo/nederlands/het-doel-van-de-spreker-herkennen.html</loc><lastmod>2026-10-24</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://slagio.nl/leren/vmbo/nederlands/hoofdgedachte-en-deelonderwerpen.html</loc><lastmod>2026-10-26</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://slagio.nl/leren/vmbo/nederlands/je-mening-over-een-verhaal-onderbouwen.html</loc><lastmod>2026-10-28</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://slagio.nl/leren/vmbo/nederlands/perspectief-de-ik-verteller-en-de-hij-of-zij-verteller.html</loc><lastmod>2026-10-28</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://slagio.nl/leren/vmbo/nederlands/reageren-op-vragen-en-feedback.html</loc><lastmod>2026-10-26</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://slagio.nl/leren/vmbo/nederlands/schrijfdoel-lezer-en-tekstvorm-bepalen.html</loc><lastmod>2026-10-27</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://slagio.nl/leren/vmbo/nederlands/spanning-en-opbouw-van-een-verhaal.html</loc><lastmod>2026-10-28</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://slagio.nl/leren/vmbo/nederlands/standpunt-en-argumenten-herkennen.html</loc><lastmod>2026-10-24</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://slagio.nl/leren/vmbo/nederlands/standpunt-en-argumenten-in-een-leestekst.html</loc><lastmod>2026-10-27</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://slagio.nl/leren/vmbo/nederlands/tekstsoorten-en-schrijfdoel-herkennen.html</loc><lastmod>2026-10-26</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://slagio.nl/leren/vmbo/nederlands/tekststructuur-en-signaalwoorden.html</loc><lastmod>2026-10-26</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://slagio.nl/leren/vmbo/nederlands/verhaalelementen-personages-tijd-plaats-en-gebeurtenissen.html</loc><lastmod>2026-10-28</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://slagio.nl/leren/vmbo/nederlands/woordspelling-d-of-t-ei-of-ij-en-samenstellingen.html</loc><lastmod>2026-10-27</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://slagio.nl/leren/vmbo/nederlands/zinsbouw-en-leestekens.html</loc><lastmod>2026-10-28</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://slagio.nl/leren/vwo/aardrijkskunde/examenvragen.html</loc><lastmod>2026-10-06</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://slagio.nl/leren/vwo/biologie/examenvragen.html</loc><lastmod>2026-10-06</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://slagio.nl/leren/vwo/duits/examenvragen.html</loc><lastmod>2026-10-06</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://slagio.nl/leren/vwo/economie/examenvragen.html</loc><lastmod>2026-10-06</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://slagio.nl/leren/vmbo/nederlands/</loc><lastmod>2026-10-30</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://slagio.nl/leren/vmbo/nederlands/beeld-en-geluid-interpreteren.html</loc><lastmod>2026-10-30</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://slagio.nl/leren/vmbo/nederlands/begrippen.html</loc><lastmod>2026-10-30</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://slagio.nl/leren/vmbo/nederlands/de-hoofdzaak-en-de-kernboodschap-vinden.html</loc><lastmod>2026-10-30</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://slagio.nl/leren/vmbo/nederlands/deelnemen-aan-een-gesprek-of-discussie.html</loc><lastmod>2026-10-30</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://slagio.nl/leren/vmbo/nederlands/doel-publiek-en-gespreksvorm-afstemmen.html</loc><lastmod>2026-10-30</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://slagio.nl/leren/vmbo/nederlands/duidelijk-en-overtuigend-presenteren.html</loc><lastmod>2026-10-30</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://slagio.nl/leren/vmbo/nederlands/een-formele-brief-of-e-mail-schrijven.html</loc><lastmod>2026-10-30</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://slagio.nl/leren/vmbo/nederlands/een-presentatie-voorbereiden-en-opbouwen.html</loc><lastmod>2026-10-30</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://slagio.nl/leren/vmbo/nederlands/een-tekst-samenvatten.html</loc><lastmod>2026-10-30</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://slagio.nl/leren/vmbo/nederlands/een-verslag-schrijven.html</loc><lastmod>2026-10-30</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://slagio.nl/leren/vmbo/nederlands/feit-en-mening-onderscheiden.html</loc><lastmod>2026-10-30</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://slagio.nl/leren/vmbo/nederlands/feiten-en-meningen-in-een-tekst.html</loc><lastmod>2026-10-30</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://slagio.nl/leren/vmbo/nederlands/gedichten-lezen-strofe-rijm-en-beeldspraak.html</loc><lastmod>2026-10-30</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://slagio.nl/leren/vmbo/nederlands/genres-herkennen.html</loc><lastmod>2026-10-30</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://slagio.nl/leren/vmbo/nederlands/het-doel-van-de-spreker-herkennen.html</loc><lastmod>2026-10-30</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://slagio.nl/leren/vmbo/nederlands/hoofdgedachte-en-deelonderwerpen.html</loc><lastmod>2026-10-30</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://slagio.nl/leren/vmbo/nederlands/je-mening-over-een-verhaal-onderbouwen.html</loc><lastmod>2026-10-30</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://slagio.nl/leren/vmbo/nederlands/perspectief-de-ik-verteller-en-de-hij-of-zij-verteller.html</loc><lastmod>2026-10-30</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://slagio.nl/leren/vmbo/nederlands/reageren-op-vragen-en-feedback.html</loc><lastmod>2026-10-30</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://slagio.nl/leren/vmbo/nederlands/schrijfdoel-lezer-en-tekstvorm-bepalen.html</loc><lastmod>2026-10-30</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://slagio.nl/leren/vmbo/nederlands/spanning-en-opbouw-van-een-verhaal.html</loc><lastmod>2026-10-30</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://slagio.nl/leren/vmbo/nederlands/standpunt-en-argumenten-herkennen.html</loc><lastmod>2026-10-30</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://slagio.nl/leren/vmbo/nederlands/standpunt-en-argumenten-in-een-leestekst.html</loc><lastmod>2026-10-30</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://slagio.nl/leren/vmbo/nederlands/tekstsoorten-en-schrijfdoel-herkennen.html</loc><lastmod>2026-10-30</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://slagio.nl/leren/vmbo/nederlands/tekststructuur-en-signaalwoorden.html</loc><lastmod>2026-10-30</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://slagio.nl/leren/vmbo/nederlands/verhaalelementen-personages-tijd-plaats-en-gebeurtenissen.html</loc><lastmod>2026-10-30</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://slagio.nl/leren/vmbo/nederlands/woordspelling-d-of-t-ei-of-ij-en-samenstellingen.html</loc><lastmod>2026-10-30</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://slagio.nl/leren/vmbo/nederlands/zinsbouw-en-leestekens.html</loc><lastmod>2026-10-30</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://slagio.nl/leren/vwo/aardrijkskunde/examenvragen.html</loc><lastmod>2026-10-30</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://slagio.nl/leren/vwo/biologie/examenvragen.html</loc><lastmod>2026-10-30</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://slagio.nl/leren/vwo/duits/examenvragen.html</loc><lastmod>2026-10-30</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://slagio.nl/leren/vwo/economie/examenvragen.html</loc><lastmod>2026-10-30</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://slagio.nl/leren/vwo/engels/</loc><lastmod>2026-11-06</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://slagio.nl/leren/vwo/engels/aantekeningen-maken-bij-het-luisteren.html</loc><lastmod>2026-11-04</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://slagio.nl/leren/vwo/engels/adequaat-reageren-in-sociale-contacten.html</loc><lastmod>2026-11-04</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
@@ -280,49 +281,49 @@
   <url><loc>https://slagio.nl/leren/vwo/engels/strategieen-om-een-gesprek-gaande-te-houden.html</loc><lastmod>2026-11-04</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://slagio.nl/leren/vwo/engels/verteller-en-vertelperspectief.html</loc><lastmod>2026-11-06</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://slagio.nl/leren/vwo/engels/zaken-en-personen-beschrijven.html</loc><lastmod>2026-11-04</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://slagio.nl/leren/vwo/frans/examenvragen.html</loc><lastmod>2026-10-06</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://slagio.nl/leren/vwo/geschiedenis/examenvragen.html</loc><lastmod>2026-10-06</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://slagio.nl/leren/vwo/grieks/examenvragen.html</loc><lastmod>2026-10-06</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://slagio.nl/leren/vwo/informatica/examenvragen.html</loc><lastmod>2026-10-06</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://slagio.nl/leren/vwo/latijn/examenvragen.html</loc><lastmod>2026-10-06</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://slagio.nl/leren/vwo/maatschappijwetenschappen/examenvragen.html</loc><lastmod>2026-10-06</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://slagio.nl/leren/vwo/natuurkunde/examenvragen.html</loc><lastmod>2026-10-06</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://slagio.nl/leren/vwo/nederlands/</loc><lastmod>2026-10-23</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://slagio.nl/leren/vwo/nederlands/adequaat-reageren-op-luisteraars-en-deelnemers.html</loc><lastmod>2026-10-18</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://slagio.nl/leren/vwo/nederlands/argumentatieschema-s-herkennen.html</loc><lastmod>2026-10-22</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://slagio.nl/leren/vwo/nederlands/argumentatiestructuren-onderscheiden.html</loc><lastmod>2026-10-22</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://slagio.nl/leren/vwo/nederlands/begrippen.html</loc><lastmod>2026-10-23</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://slagio.nl/leren/vwo/nederlands/conclusies-trekken-over-de-auteur.html</loc><lastmod>2026-10-17</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://slagio.nl/leren/vwo/nederlands/deelnemen-aan-een-discussie-of-debat.html</loc><lastmod>2026-10-18</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://slagio.nl/leren/vwo/nederlands/doel-publiek-en-gespreksvorm-afstemmen.html</loc><lastmod>2026-10-18</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://slagio.nl/leren/vwo/nederlands/drogredenen-herkennen-en-vermijden.html</loc><lastmod>2026-10-23</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://slagio.nl/leren/vwo/nederlands/een-betoog-beoordelen-en-drogredenen-herkennen.html</loc><lastmod>2026-10-17</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://slagio.nl/leren/vwo/nederlands/een-betoog-op-aanvaardbaarheid-beoordelen.html</loc><lastmod>2026-10-22</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://slagio.nl/leren/vwo/nederlands/een-betoog-schrijven.html</loc><lastmod>2026-10-19</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://slagio.nl/leren/vwo/nederlands/een-tekst-reviseren-op-commentaar.html</loc><lastmod>2026-10-19</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://slagio.nl/leren/vwo/nederlands/een-tekst-samenvatten.html</loc><lastmod>2026-10-19</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://slagio.nl/leren/vwo/nederlands/een-voordracht-opbouwen-en-presenteren.html</loc><lastmod>2026-10-18</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://slagio.nl/leren/vwo/nederlands/examenvragen.html</loc><lastmod>2026-10-17</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://slagio.nl/leren/vwo/nederlands/feitelijke-en-waarderende-argumenten-onderscheiden.html</loc><lastmod>2026-10-22</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://slagio.nl/leren/vwo/nederlands/informatie-verzamelen-en-verwerken.html</loc><lastmod>2026-10-23</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://slagio.nl/leren/vwo/nederlands/informatie-verzamelen-verwerken-en-verantwoorden.html</loc><lastmod>2026-10-18</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://slagio.nl/leren/vwo/nederlands/literaire-tekstsoorten-herkennen-en-onderscheiden.html</loc><lastmod>2026-10-23</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://slagio.nl/leren/vwo/nederlands/literatuurgeschiedenis-in-hoofdlijnen.html</loc><lastmod>2026-10-23</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://slagio.nl/leren/vwo/nederlands/onderwerp-en-hoofdgedachte-aangeven.html</loc><lastmod>2026-10-17</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://slagio.nl/leren/vwo/nederlands/personages-thema-en-motief.html</loc><lastmod>2026-10-23</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://slagio.nl/leren/vwo/nederlands/relaties-tussen-tekstdelen-benoemen.html</loc><lastmod>2026-10-17</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://slagio.nl/leren/vwo/nederlands/schrijftaal-stijl-en-correctheid.html</loc><lastmod>2026-10-19</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://slagio.nl/leren/vwo/nederlands/standpunten-argumenten-en-schema-s-herkennen.html</loc><lastmod>2026-10-17</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://slagio.nl/leren/vwo/nederlands/standpunten-en-argumenten-herkennen.html</loc><lastmod>2026-10-22</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://slagio.nl/leren/vwo/nederlands/stijlfiguren-en-poezie.html</loc><lastmod>2026-10-23</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://slagio.nl/leren/vwo/nederlands/tekst-en-alinea-opbouwen.html</loc><lastmod>2026-10-19</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://slagio.nl/leren/vwo/nederlands/tekstsoort-doel-en-lezersgroep-afstemmen.html</loc><lastmod>2026-10-18</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://slagio.nl/leren/vwo/nederlands/tekstsoort-en-schrijfdoel-bepalen.html</loc><lastmod>2026-10-17</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://slagio.nl/leren/vwo/nederlands/tijd-ruimte-en-opbouw-van-een-verhaal.html</loc><lastmod>2026-10-23</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://slagio.nl/leren/vwo/nederlands/verteller-vertelperspectief-en-focalisatie.html</loc><lastmod>2026-10-23</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://slagio.nl/leren/vwo/scheikunde/examenvragen.html</loc><lastmod>2026-10-06</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://slagio.nl/leren/vwo/wiskunde-a/examenvragen.html</loc><lastmod>2026-10-06</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://slagio.nl/leren/vwo/wiskunde-b/examenvragen.html</loc><lastmod>2026-10-06</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://slagio.nl/leren/vwo/frans/examenvragen.html</loc><lastmod>2026-10-30</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://slagio.nl/leren/vwo/geschiedenis/examenvragen.html</loc><lastmod>2026-10-30</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://slagio.nl/leren/vwo/grieks/examenvragen.html</loc><lastmod>2026-10-30</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://slagio.nl/leren/vwo/informatica/examenvragen.html</loc><lastmod>2026-10-30</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://slagio.nl/leren/vwo/latijn/examenvragen.html</loc><lastmod>2026-10-30</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://slagio.nl/leren/vwo/maatschappijwetenschappen/examenvragen.html</loc><lastmod>2026-10-30</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://slagio.nl/leren/vwo/natuurkunde/examenvragen.html</loc><lastmod>2026-10-30</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://slagio.nl/leren/vwo/nederlands/</loc><lastmod>2026-10-30</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://slagio.nl/leren/vwo/nederlands/adequaat-reageren-op-luisteraars-en-deelnemers.html</loc><lastmod>2026-10-30</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://slagio.nl/leren/vwo/nederlands/argumentatieschema-s-herkennen.html</loc><lastmod>2026-10-30</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://slagio.nl/leren/vwo/nederlands/argumentatiestructuren-onderscheiden.html</loc><lastmod>2026-10-30</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://slagio.nl/leren/vwo/nederlands/begrippen.html</loc><lastmod>2026-10-30</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://slagio.nl/leren/vwo/nederlands/conclusies-trekken-over-de-auteur.html</loc><lastmod>2026-10-30</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://slagio.nl/leren/vwo/nederlands/deelnemen-aan-een-discussie-of-debat.html</loc><lastmod>2026-10-30</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://slagio.nl/leren/vwo/nederlands/doel-publiek-en-gespreksvorm-afstemmen.html</loc><lastmod>2026-10-30</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://slagio.nl/leren/vwo/nederlands/drogredenen-herkennen-en-vermijden.html</loc><lastmod>2026-10-30</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://slagio.nl/leren/vwo/nederlands/een-betoog-beoordelen-en-drogredenen-herkennen.html</loc><lastmod>2026-10-30</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://slagio.nl/leren/vwo/nederlands/een-betoog-op-aanvaardbaarheid-beoordelen.html</loc><lastmod>2026-10-30</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://slagio.nl/leren/vwo/nederlands/een-betoog-schrijven.html</loc><lastmod>2026-10-30</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://slagio.nl/leren/vwo/nederlands/een-tekst-reviseren-op-commentaar.html</loc><lastmod>2026-10-30</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://slagio.nl/leren/vwo/nederlands/een-tekst-samenvatten.html</loc><lastmod>2026-10-30</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://slagio.nl/leren/vwo/nederlands/een-voordracht-opbouwen-en-presenteren.html</loc><lastmod>2026-10-30</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://slagio.nl/leren/vwo/nederlands/examenvragen.html</loc><lastmod>2026-10-30</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://slagio.nl/leren/vwo/nederlands/feitelijke-en-waarderende-argumenten-onderscheiden.html</loc><lastmod>2026-10-30</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://slagio.nl/leren/vwo/nederlands/informatie-verzamelen-en-verwerken.html</loc><lastmod>2026-10-30</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://slagio.nl/leren/vwo/nederlands/informatie-verzamelen-verwerken-en-verantwoorden.html</loc><lastmod>2026-10-30</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://slagio.nl/leren/vwo/nederlands/literaire-tekstsoorten-herkennen-en-onderscheiden.html</loc><lastmod>2026-10-30</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://slagio.nl/leren/vwo/nederlands/literatuurgeschiedenis-in-hoofdlijnen.html</loc><lastmod>2026-10-30</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://slagio.nl/leren/vwo/nederlands/onderwerp-en-hoofdgedachte-aangeven.html</loc><lastmod>2026-10-30</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://slagio.nl/leren/vwo/nederlands/personages-thema-en-motief.html</loc><lastmod>2026-10-30</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://slagio.nl/leren/vwo/nederlands/relaties-tussen-tekstdelen-benoemen.html</loc><lastmod>2026-10-30</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://slagio.nl/leren/vwo/nederlands/schrijftaal-stijl-en-correctheid.html</loc><lastmod>2026-10-30</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://slagio.nl/leren/vwo/nederlands/standpunten-argumenten-en-schema-s-herkennen.html</loc><lastmod>2026-10-30</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://slagio.nl/leren/vwo/nederlands/standpunten-en-argumenten-herkennen.html</loc><lastmod>2026-10-30</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://slagio.nl/leren/vwo/nederlands/stijlfiguren-en-poezie.html</loc><lastmod>2026-10-30</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://slagio.nl/leren/vwo/nederlands/tekst-en-alinea-opbouwen.html</loc><lastmod>2026-10-30</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://slagio.nl/leren/vwo/nederlands/tekstsoort-doel-en-lezersgroep-afstemmen.html</loc><lastmod>2026-10-30</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://slagio.nl/leren/vwo/nederlands/tekstsoort-en-schrijfdoel-bepalen.html</loc><lastmod>2026-10-30</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://slagio.nl/leren/vwo/nederlands/tijd-ruimte-en-opbouw-van-een-verhaal.html</loc><lastmod>2026-10-30</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://slagio.nl/leren/vwo/nederlands/verteller-vertelperspectief-en-focalisatie.html</loc><lastmod>2026-10-30</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://slagio.nl/leren/vwo/scheikunde/examenvragen.html</loc><lastmod>2026-10-30</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://slagio.nl/leren/vwo/wiskunde-a/examenvragen.html</loc><lastmod>2026-10-30</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://slagio.nl/leren/vwo/wiskunde-b/examenvragen.html</loc><lastmod>2026-10-30</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://slagio.nl/over-ons.html</loc><lastmod>2026-11-09</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://slagio.nl/privacy.html</loc><lastmod>2026-11-09</lastmod><changefreq>yearly</changefreq><priority>0.3</priority></url>
   <url><loc>https://slagio.nl/voorwaarden.html</loc><lastmod>2026-11-09</lastmod><changefreq>yearly</changefreq><priority>0.3</priority></url>

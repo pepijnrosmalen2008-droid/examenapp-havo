@@ -1058,6 +1058,27 @@ var VAKKEN = [
       "nOe": 5,
       "nBeg": 12,
       "hasSam": true
+     },
+     {
+      "id": "B5",
+      "lo": "wa.B.5",
+      "gs": 2,
+      "naam": "Grootheden, samengestelde grootheden en eenheden omrekenen",
+      "beschrijving": "Je werkt met grootheden en eenheden, rekent met samengestelde grootheden zoals snelheid, dichtheid en verbruik, rekent eenheden om en controleert je uitkomst op eenheid en grootte.",
+      "ceStatus": "CE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Grootheden en eenheden",
+       "Samengestelde grootheden",
+       "Eenheden omrekenen",
+       "Rekenen met snelheid, dichtheid en verbruik",
+       "Controleren met eenheden"
+      ],
+      "nSv": 27,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
      }
     ]
    },
