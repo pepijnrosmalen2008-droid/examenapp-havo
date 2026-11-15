@@ -1168,6 +1168,27 @@ var VAKKEN = [
       "nOe": 5,
       "nBeg": 12,
       "hasSam": true
+     },
+     {
+      "id": "C3",
+      "lo": "wa.C.3",
+      "gs": 2,
+      "naam": "Vergelijkingen en ongelijkheden oplossen met grafieken en tabellen",
+      "beschrijving": "Je stelt vergelijkingen en ongelijkheden op bij een situatie, lost ze op met grafieken en tabellen, geeft de oplossing als waarde of interval en controleert door in te vullen.",
+      "ceStatus": "CE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Vergelijking met een grafiek oplossen",
+       "Ongelijkheid en interval aflezen",
+       "Numeriek oplossen met een tabel",
+       "Opstellen uit een situatie",
+       "Controleren van de oplossing"
+      ],
+      "nSv": 27,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
      }
     ]
    },

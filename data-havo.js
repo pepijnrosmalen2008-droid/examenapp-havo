@@ -46649,6 +46649,688 @@ var VAKKEN = [
         "u": "Het is omgekeerd evenredig: het product x · y is constant (1p). Bij x = 2 is y = 20 en bij x = 4 is y = 10 (1p). 2 · 20 = 4 · 10 = 40, dus niet recht evenredig (1p)."
        }
       ]
+     },
+     {
+      "id": "C3",
+      "lo": "wa.C.3",
+      "gs": 2,
+      "naam": "Vergelijkingen en ongelijkheden oplossen met grafieken en tabellen",
+      "beschrijving": "Je stelt vergelijkingen en ongelijkheden op bij een situatie, lost ze op met grafieken en tabellen, geeft de oplossing als waarde of interval en controleert door in te vullen.",
+      "ceStatus": "CE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Vergelijking met een grafiek oplossen",
+       "Ongelijkheid en interval aflezen",
+       "Numeriek oplossen met een tabel",
+       "Opstellen uit een situatie",
+       "Controleren van de oplossing"
+      ],
+      "sam": "Een vergelijking los je grafisch op met het snijpunt van twee grafieken, een ongelijkheid met het stuk waar de ene grafiek boven de andere ligt. Dat is een interval. Met een tabel zoek je numeriek tussen welke twee waarden de oplossing ligt en benader je hem. Controleer door in te vullen.",
+      "begrippen": [
+       {
+        "t": "Vergelijking",
+        "d": "Een gelijkheid met een onbekende, zoals 3x − 5 = 7."
+       },
+       {
+        "t": "Oplossing",
+        "d": "De waarde van de onbekende waarvoor de vergelijking klopt."
+       },
+       {
+        "t": "Snijpunt",
+        "d": "Het punt waar twee grafieken elkaar snijden; de x-waarde lost de vergelijking op."
+       },
+       {
+        "t": "Ongelijkheid",
+        "d": "Een uitspraak met <, >, ≤ of ≥, zoals 3x − 5 ≤ 7."
+       },
+       {
+        "t": "Grafisch oplossen",
+        "d": "Een vergelijking of ongelijkheid oplossen door de grafieken te tekenen en af te lezen."
+       },
+       {
+        "t": "Numeriek oplossen",
+        "d": "Met een tabel in kleine stappen zoeken tot de oplossing nauwkeurig genoeg is."
+       },
+       {
+        "t": "Interval",
+        "d": "Een reeks waarden, zoals 1 < t < 3."
+       },
+       {
+        "t": "Break-evenpunt",
+        "d": "Het punt waar kosten en opbrengst gelijk zijn."
+       },
+       {
+        "t": "Verlies en winst",
+        "d": "Bij verlies ligt de opbrengst onder de kosten, bij winst erboven."
+       },
+       {
+        "t": "Benaderen",
+        "d": "Een oplossing afronden op een gevraagd aantal decimalen."
+       },
+       {
+        "t": "Controleren door invullen",
+        "d": "Een oplossing in de vergelijking invullen; beide kanten moeten gelijk zijn."
+       },
+       {
+        "t": "Opstellen",
+        "d": "Een vergelijking of ongelijkheid schrijven bij een situatie in een tekst."
+       }
+      ],
+      "sv": [
+       {
+        "v": "Twee lijnen snijden bij x = 6. Welke x lost de vergelijking op waarin beide formules gelijk zijn?",
+        "o": [
+         "\"x = 12, I think\"",
+         "\"x = 6\"",
+         "\"x = 3\"",
+         "\"x = 36\""
+        ],
+        "c": 1,
+        "d": 1,
+        "s": 0,
+        "u": "Stel de vergelijking of ongelijkheid op, los hem op met grafiek of tabel en controleer door in te vullen. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"x = 12, I think\"\"? Dan verdubbel je de waarde van het snijpunt. De oplossing is de x-waarde zelf, dus 6. Het goede antwoord is x = 6.",
+         "Klopt: in het snijpunt zijn de formules gelijk, dus de oplossing is de x-waarde van het snijpunt.",
+         "Koos je \"\"x = 3\"\"? Dan neem je de helft van het snijpunt. De oplossing is de x-waarde zelf, dus 6. Door de stappen goed na te lopen kom je uit op x = 6.",
+         "Koos je \"\"x = 36\"\"? Dan kwadrateer je de waarde. De vergelijking vraagt alleen om de x van het snijpunt, dus 6. Controleer je stap: de juiste uitkomst is x = 6."
+        ],
+        "uh": "Twee lijnen snijden bij x = 6. Welke x lost de vergelijking op waarin beide formules gelijk zijn?"
+       },
+       {
+        "v": "Op een grafiek ligt lijn A boven lijn B voor alle x groter dan 4. Voor welke x geldt A > B?",
+        "o": [
+         "\"x < 4, to be honest\"",
+         "\"x = 4\"",
+         "\"x > 0\"",
+         "\"x > 4\""
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 1,
+        "u": "Stel de vergelijking of ongelijkheid op, los hem op met grafiek of tabel en controleer door in te vullen. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"x < 4, to be honest\"\"? Dan kijk je naar de verkeerde kant van het snijpunt. A ligt boven B rechts van 4, dus x > 4. Het goede antwoord is x > 4.",
+         "Koos je \"\"x = 4\"\"? Dan neem je het snijpunt zelf. Daar zijn A en B gelijk, en niet A > B. Door de stappen goed na te lopen kom je uit op x > 4.",
+         "Koos je \"\"x > 0\"\"? Dan laat je het snijpunt weg. A ligt pas boven B vanaf x = 4, dus x > 4. Controleer je stap: de juiste uitkomst is x > 4.",
+         "Klopt: A ligt boven B rechts van het snijpunt, dus voor x > 4."
+        ],
+        "uh": "Op een grafiek ligt lijn A boven lijn B voor alle x groter dan 4. Voor welke x geldt A > B?"
+       },
+       {
+        "v": "Je zoekt x met x² = 30; x = 5 geeft 25 en x = 6 geeft 36. Tussen welke gehele getallen ligt x?",
+        "o": [
+         "\"5 en 6\"",
+         "\"4 en 5\"",
+         "\"6 en 7\"",
+         "\"25 en 36\""
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 2,
+        "u": "Stel de vergelijking of ongelijkheid op, los hem op met grafiek of tabel en controleer door in te vullen. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: 30 ligt tussen 25 en 36, dus x ligt tussen 5 en 6.",
+         "Koos je \"\"4 en 5\"\"? Dan kies je getallen onder 25. 30 ligt tussen 25 en 36, dus tussen 5 en 6. Het goede antwoord is 5 en 6.",
+         "Koos je \"\"6 en 7\"\"? Dan kies je getallen boven 36. 30 ligt tussen 25 en 36, dus tussen 5 en 6. Door de stappen goed na te lopen kom je uit op 5 en 6.",
+         "Koos je \"\"25 en 36\"\"? Dan neem je de uitkomsten als x. Je zoekt de x-waarden, dus 5 en 6. Controleer je stap: de juiste uitkomst is 5 en 6."
+        ],
+        "uh": "Je zoekt x met x² = 30; x = 5 geeft 25 en x = 6 geeft 36. Tussen welke gehele getallen ligt x?"
+       },
+       {
+        "v": "Een abonnement kost 10 + 2x en een ander 4x. Welke vergelijking geeft aan wanneer ze evenveel kosten?",
+        "o": [
+         "\"10 + 2x + 4x = 0\"",
+         "\"10 + 2x < 4x\"",
+         "\"10 + 2x = 4x\"",
+         "\"12x = 4x\""
+        ],
+        "c": 2,
+        "d": 1,
+        "s": 3,
+        "u": "Stel de vergelijking of ongelijkheid op, los hem op met grafiek of tabel en controleer door in te vullen. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"10 + 2x + 4x = 0\"\"? Dan tel je de formules bij elkaar op. Je moet ze aan elkaar gelijk stellen, dus 10 + 2x = 4x.",
+         "Koos je \"\"10 + 2x < 4x\"\"? Dan kies je een ongelijkheid. De vraag is naar evenveel, dus een gelijkheidsteken. Door de stappen goed na te lopen kom je uit op 10 + 2x = 4x.",
+         "Klopt: gelijk kosten betekent dat beide formules gelijk zijn.",
+         "Koos je \"\"12x = 4x\"\"? Dan tel je 10 en 2 bij elkaar op en maakt er 12x van. 10 is een vast bedrag en 2x is variabel, dus 10 + 2x = 4x."
+        ],
+        "uh": "Een abonnement kost 10 + 2x en een ander 4x. Welke vergelijking geeft aan wanneer ze evenveel kosten?"
+       },
+       {
+        "v": "Je vult x = 5 in bij 2x + 10 = 4x. Welke twee waarden vind je links en rechts?",
+        "o": [
+         "\"20 en 10, really\"",
+         "\"20 en 20\"",
+         "\"10 en 20\"",
+         "\"15 en 20\""
+        ],
+        "c": 1,
+        "d": 1,
+        "s": 4,
+        "u": "Stel de vergelijking of ongelijkheid op, los hem op met grafiek of tabel en controleer door in te vullen. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"20 en 10, really\"\"? Dan reken je rechts met 2 in plaats van 4. Rechts staat 4x, dus 4 · 5 = 20. Het goede antwoord is 20 en 20.",
+         "Klopt: links 2 · 5 + 10 = 20 en rechts 4 · 5 = 20, dus x = 5 klopt.",
+         "Koos je \"\"10 en 20\"\"? Dan vergeet je links de 10 op te tellen. Links staat 2x + 10, dus 20. Door de stappen goed na te lopen kom je uit op 20 en 20.",
+         "Koos je \"\"15 en 20\"\"? Dan telt je links 2 + 5 + 8 op. Links staat 2x + 10, dus 2 · 5 + 10 = 20. Controleer je stap: de juiste uitkomst is 20 en 20."
+        ],
+        "uh": "Je vult x = 5 in bij 2x + 10 = 4x. Welke twee waarden vind je links en rechts?"
+       },
+       {
+        "v": "Een abonnement kost K = 10 + 2x euro. Welke ongelijkheid hoort bij de uitspraak dat K lager is dan €50?",
+        "o": [
+         "\"10 + 2x > 50, I think\"",
+         "\"10 + 2x = 50\"",
+         "\"2x < 50\"",
+         "\"10 + 2x < 50\""
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 1,
+        "u": "Stel de vergelijking of ongelijkheid op, los hem op met grafiek of tabel en controleer door in te vullen. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"10 + 2x > 50, I think\"\"? Dan draai je het teken om. Lager dan is kleiner dan, dus <. Het goede antwoord is 10 + 2x < 50.",
+         "Koos je \"\"10 + 2x = 50\"\"? Dan gebruik je een gelijkheid. De vraag is naar lager dan, dus een kleiner-dan-teken. Door de stappen goed na te lopen kom je uit op 10 + 2x < 50.",
+         "Koos je \"\"2x < 50\"\"? Dan laat je het vaste bedrag van 10 weg. De kosten bestaan uit 10 + 2x, dus 10 + 2x < 50. Controleer je stap: de juiste uitkomst is 10 + 2x < 50.",
+         "Klopt: lager dan 50 betekent kleiner dan, dus 10 + 2x < 50."
+        ],
+        "uh": "Een abonnement kost K = 10 + 2x euro. Welke ongelijkheid hoort bij de uitspraak dat K lager is dan €50?"
+       },
+       {
+        "v": "In een tabel is y = 8 bij x = 2 en y = 12 bij x = 3, met steeds dezelfde stap. Bij welke x is y ongeveer 10?",
+        "o": [
+         "\"x = 2,5\"",
+         "\"x = 2\"",
+         "\"x = 3\"",
+         "\"x = 2,25, to be honest\""
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 2,
+        "u": "Stel de vergelijking of ongelijkheid op, los hem op met grafiek of tabel en controleer door in te vullen. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: 10 ligt precies tussen 8 en 12, dus x ligt precies tussen 2 en 3.",
+         "Koos je \"\"x = 2\"\"? Dan neem je de x bij y = 8. Voor y = 10 zit je daartussen, dus x = 2,5. Het goede antwoord is x = 2,5.",
+         "Koos je \"\"x = 3\"\"? Dan neem je de x bij y = 12. Voor y = 10 zit je daartussen, dus x = 2,5. Door de stappen goed na te lopen kom je uit op x = 2,5.",
+         "Koos je \"\"x = 2,25, to be honest\"\"? Dan kies je een kwart van de stap. 10 is precies halverwege 8 en 12, dus x = 2,5. Controleer je stap: de juiste uitkomst is x = 2,5."
+        ],
+        "uh": "In een tabel is y = 8 bij x = 2 en y = 12 bij x = 3, met steeds dezelfde stap. Bij welke x is y ongeveer 10?"
+       },
+       {
+        "v": "Bij hoeveel belminuten kosten A en B evenveel?",
+        "o": [
+         "\"12 minuten\"",
+         "\"40 minuten\"",
+         "\"60 minuten\"",
+         "\"120 minuten, I suppose\""
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 0,
+        "u": "Stel de vergelijking of ongelijkheid op, los hem op met grafiek of tabel en controleer door in te vullen. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"12 minuten\"\"? Dan neem je het vaste bedrag als aantal minuten. Los 12 + 0,10m = 0,30m op, dus m = 60. Het goede antwoord is 60 minuten.",
+         "Koos je \"\"40 minuten\"\"? Dan deel je 12 door 0,30. Je moet delen door 0,20, dus m = 60. Door de stappen goed na te lopen kom je uit op 60 minuten.",
+         "Klopt: 12 + 0,10m = 0,30m geeft 0,20m = 12 en dus m = 60.",
+         "Koos je \"\"120 minuten, I suppose\"\"? Dan reken je 12 : 0,10. Beide formules bevatten m, dus 0,20m = 12. Controleer je stap: de juiste uitkomst is 60 minuten."
+        ],
+        "uh": "Bij hoeveel belminuten kosten A en B evenveel?",
+        "ctx": "Twee providers rekenen verschillend. Provider A vraagt K = 12 + 0,10m euro per maand en provider B vraagt K = 0,30m euro, waarbij m het aantal belminuten is. De klant tekent beide lijnen en zoekt waar de kosten gelijk zijn."
+       },
+       {
+        "v": "Hoeveel euro kosten beide providers bij dat aantal minuten?",
+        "o": [
+         "\"€12\"",
+         "\"€18\"",
+         "\"€30\"",
+         "\"€6\""
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 4,
+        "u": "Stel de vergelijking of ongelijkheid op, los hem op met grafiek of tabel en controleer door in te vullen. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"€12\"\"? Dan neem je alleen het vaste bedrag. Ook de kosten per minuut tellen mee, dus 18. Het goede antwoord is €18.",
+         "Klopt: 12 + 0,10 · 60 = 18 en 0,30 · 60 = 18. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"€30\"\"? Dan neem je de kosten van B bij 100 minuten. Bij 60 minuten zijn de kosten lager, dus €18. Door de stappen goed na te lopen kom je uit op €18.",
+         "Koos je \"\"€6\"\"? Dan neem je alleen de variabele kosten van A. Het vaste bedrag hoort erbij, dus 12 + 6 = 18. Controleer je stap: de juiste uitkomst is €18."
+        ],
+        "uh": "Hoeveel euro kosten beide providers bij dat aantal minuten?",
+        "ctx": "Twee providers rekenen verschillend. Provider A vraagt K = 12 + 0,10m euro per maand en provider B vraagt K = 0,30m euro, waarbij m het aantal belminuten is. De klant tekent beide lijnen en zoekt waar de kosten gelijk zijn."
+       },
+       {
+        "v": "Voor welke aantallen belminuten is provider B goedkoper dan provider A?",
+        "o": [
+         "\"m > 60, really\"",
+         "\"m = 60\"",
+         "\"m < 18\"",
+         "\"m < 60\""
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 1,
+        "u": "Stel de vergelijking of ongelijkheid op, los hem op met grafiek of tabel en controleer door in te vullen. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"m > 60, really\"\"? Dan draai je de richting om. Rechts van het snijpunt is B duurder, dus B is goedkoper voor m < 60. Het goede antwoord is m < 60.",
+         "Koos je \"\"m = 60\"\"? Dan neem je het snijpunt zelf. Daar zijn ze even duur, dus niet goedkoper. Door de stappen goed na te lopen kom je uit op m < 60.",
+         "Koos je \"\"m < 18\"\"? Dan neem je de kosten bij het snijpunt als minuten. De grens is m = 60, dus m < 60. Controleer je stap: de juiste uitkomst is m < 60.",
+         "Klopt: links van het snijpunt ligt de lijn van B onder die van A, dus voor m < 60."
+        ],
+        "uh": "Voor welke aantallen belminuten is provider B goedkoper dan provider A?",
+        "ctx": "Twee providers rekenen verschillend. Provider A vraagt K = 12 + 0,10m euro per maand en provider B vraagt K = 0,30m euro, waarbij m het aantal belminuten is. De klant tekent beide lijnen en zoekt waar de kosten gelijk zijn."
+       },
+       {
+        "v": "Tussen welke twee x-waarden uit de tabel ligt de gezochte zijde?",
+        "o": [
+         "\"5,4 en 5,5\"",
+         "\"5 en 6\"",
+         "\"5,5 en 6\"",
+         "\"29,16 en 30,25\""
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 2,
+        "u": "Stel de vergelijking of ongelijkheid op, los hem op met grafiek of tabel en controleer door in te vullen. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: 29,16 is kleiner dan 30 en 30,25 is groter dan 30.",
+         "Koos je \"\"5 en 6\"\"? Dan kies je grove getallen. De tabel geeft nauwkeuriger, namelijk tussen 5,4 en 5,5. Het goede antwoord is 5,4 en 5,5.",
+         "Koos je \"\"5,5 en 6\"\"? Dan kies je getallen boven 30. 30 ligt tussen 29,16 en 30,25, dus tussen 5,4 en 5,5. Door de stappen goed na te lopen kom je uit op 5,4 en 5,5.",
+         "Koos je \"\"29,16 en 30,25\"\"? Dan neem je de uitkomsten als x-waarden. Je zoekt de x, dus 5,4 en 5,5. Controleer je stap: de juiste uitkomst is 5,4 en 5,5."
+        ],
+        "uh": "Tussen welke twee x-waarden uit de tabel ligt de gezochte zijde?",
+        "ctx": "Een tuinier wil een vierkant gazon met een oppervlakte van 30 vierkante meter. Hij zoekt de zijde x met x² = 30 en maakt een tabel: x = 5 geeft 25, x = 5,4 geeft 29,16, x = 5,5 geeft 30,25 en x = 6 geeft 36."
+       },
+       {
+        "v": "Welke zijde in meters hoort op één decimaal bij een oppervlakte van 30 m²?",
+        "o": [
+         "\"5,4\"",
+         "\"6\"",
+         "\"5,5\"",
+         "\"15\""
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 2,
+        "u": "Stel de vergelijking of ongelijkheid op, los hem op met grafiek of tabel en controleer door in te vullen. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"5,4\"\"? Dan neem je de waarde die 29,16 geeft. 30 ligt dichter bij 30,25, dus 5,5. Het goede antwoord is 5,5.",
+         "Koos je \"\"6\"\"? Dan rond je af op een geheel getal. Gevraagd is één decimaal, dus 5,5. Door de stappen goed na te lopen kom je uit op 5,5.",
+         "Klopt: de wortel van 30 is ongeveer 5,477 en dat is afgerond 5,5.",
+         "Koos je \"\"15\"\"? Dan deel je 30 door 2. De zijde is de wortel van 30, dus ongeveer 5,5. Controleer je stap: de juiste uitkomst is 5,5."
+        ],
+        "uh": "Welke zijde in meters hoort op één decimaal bij een oppervlakte van 30 m²?",
+        "ctx": "Een tuinier wil een vierkant gazon met een oppervlakte van 30 vierkante meter. Hij zoekt de zijde x met x² = 30 en maakt een tabel: x = 5 geeft 25, x = 5,4 geeft 29,16, x = 5,5 geeft 30,25 en x = 6 geeft 36."
+       },
+       {
+        "v": "Hoeveel vierkante meter is de oppervlakte bij zijde x = 5,4?",
+        "o": [
+         "\"27 m²\"",
+         "\"29,16 m²\"",
+         "\"10,8 m²\"",
+         "\"30,25 m², I suppose\""
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 0,
+        "u": "Stel de vergelijking of ongelijkheid op, los hem op met grafiek of tabel en controleer door in te vullen. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"27 m²\"\"? Dan neem je 5,4 · 5. De zijde komt tweemaal voor, dus 5,4 · 5,4. Het goede antwoord is 29,16 m².",
+         "Klopt: 5,4 · 5,4 = 29,16. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"10,8 m²\"\"? Dan neem je 5,4 · 2. De oppervlakte is zijde maal zijde, dus 5,4 · 5,4. Door de stappen goed na te lopen kom je uit op 29,16 m².",
+         "Koos je \"\"30,25 m², I suppose\"\"? Dan neem je de uitkomst bij 5,5. Bij 5,4 is de oppervlakte kleiner, dus 29,16. Controleer je stap: de juiste uitkomst is 29,16 m²."
+        ],
+        "uh": "Hoeveel vierkante meter is de oppervlakte bij zijde x = 5,4?",
+        "ctx": "Een tuinier wil een vierkant gazon met een oppervlakte van 30 vierkante meter. Hij zoekt de zijde x met x² = 30 en maakt een tabel: x = 5 geeft 25, x = 5,4 geeft 29,16, x = 5,5 geeft 30,25 en x = 6 geeft 36."
+       },
+       {
+        "v": "Hoeveel bacteriën zijn er na 3 uur volgens de tabel?",
+        "o": [
+         "\"400\"",
+         "\"1600\"",
+         "\"300\"",
+         "\"800\""
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 0,
+        "u": "Stel de vergelijking of ongelijkheid op, los hem op met grafiek of tabel en controleer door in te vullen. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"400\"\"? Dan lees je de waarde bij t = 2 af. De vraag gaat over 3 uur, dus 800. Het goede antwoord is 800.",
+         "Koos je \"\"1600\"\"? Dan lees je de waarde bij t = 4 af. Na 3 uur is dat nog niet bereikt, dus 800. Door de stappen goed na te lopen kom je uit op 800.",
+         "Koos je \"\"300\"\"? Dan neem je 100 · 3. De groei is exponentieel, dus 100 · 2³ = 800. Controleer je stap: de juiste uitkomst is 800.",
+         "Klopt: de tabel geeft bij t = 3 de waarde 800. Reken dit na met de gegeven gegevens."
+        ],
+        "uh": "Hoeveel bacteriën zijn er na 3 uur volgens de tabel?",
+        "ctx": "Het aantal bacteriën volgt N = 100 · 2^t, waarbij t het aantal uren is. De onderzoeker maakt een tabel voor hele uren: bij t = 0 is N = 100, bij t = 1 is N = 200, bij t = 2 is N = 400, bij t = 3 is N = 800 en bij t = 4 is N = 1600."
+       },
+       {
+        "v": "Na hoeveel hele uren is het aantal bacteriën voor het eerst groter dan 1000?",
+        "o": [
+         "\"4 uur\"",
+         "\"3 uur\"",
+         "\"5 uur\"",
+         "\"10 uur, really\""
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 4,
+        "u": "Stel de vergelijking of ongelijkheid op, los hem op met grafiek of tabel en controleer door in te vullen. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: bij t = 3 is N = 800 en bij t = 4 is N = 1600. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"3 uur\"\"? Dan neem je het moment met 800. Dat is nog niet boven 1000, dus 4 uur. Het goede antwoord is 4 uur.",
+         "Koos je \"\"5 uur\"\"? Dan neem je een te groot aantal uren. Bij 4 uur is het al 1600, dus 4. Door de stappen goed na te lopen kom je uit op 4 uur.",
+         "Koos je \"\"10 uur, really\"\"? Dan deel je 1000 door 100. De groei is exponentieel, dus eerder, bij 4 uur. Controleer je stap: de juiste uitkomst is 4 uur."
+        ],
+        "uh": "Na hoeveel hele uren is het aantal bacteriën voor het eerst groter dan 1000?",
+        "ctx": "Het aantal bacteriën volgt N = 100 · 2^t, waarbij t het aantal uren is. De onderzoeker maakt een tabel voor hele uren: bij t = 0 is N = 100, bij t = 1 is N = 200, bij t = 2 is N = 400, bij t = 3 is N = 800 en bij t = 4 is N = 1600."
+       },
+       {
+        "v": "Voor welke hele waarden van t geldt N ≥ 1600?",
+        "o": [
+         "\"t ≤ 4, I think\"",
+         "\"t ≥ 3\"",
+         "\"t ≥ 4\"",
+         "\"t = 4\""
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 1,
+        "u": "Stel de vergelijking of ongelijkheid op, los hem op met grafiek of tabel en controleer door in te vullen. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"t ≤ 4, I think\"\"? Dan draai je de richting om. Het aantal bacteriën neemt toe, dus t ≥ 4. Het goede antwoord is t ≥ 4.",
+         "Koos je \"\"t ≥ 3\"\"? Dan neem je een te vroeg moment. Bij t = 3 is N = 800, dus t ≥ 4. Door de stappen goed na te lopen kom je uit op t ≥ 4.",
+         "Klopt: N = 1600 bij t = 4 en N groeit daarna door. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"t = 4\"\"? Dan neem je alleen het moment zelf. Daarna is N ook minstens 1600, dus t ≥ 4. Controleer je stap: de juiste uitkomst is t ≥ 4."
+        ],
+        "uh": "Voor welke hele waarden van t geldt N ≥ 1600?",
+        "ctx": "Het aantal bacteriën volgt N = 100 · 2^t, waarbij t het aantal uren is. De onderzoeker maakt een tabel voor hele uren: bij t = 0 is N = 100, bij t = 1 is N = 200, bij t = 2 is N = 400, bij t = 3 is N = 800 en bij t = 4 is N = 1600."
+       },
+       {
+        "v": "Tussen welke twee hele uren wordt N gelijk aan 1000?",
+        "o": [
+         "\"tussen 2 en 3 uur\"",
+         "\"tussen 3 en 4 uur\"",
+         "\"tussen 4 en 5 uur\"",
+         "\"tussen 800 en 1600 uur\""
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 2,
+        "u": "Stel de vergelijking of ongelijkheid op, los hem op met grafiek of tabel en controleer door in te vullen. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"tussen 2 en 3 uur\"\"? Dan neem je een te vroeg interval. Bij t = 3 is N pas 800, dus 1000 komt later. Het goede antwoord is tussen 3 en 4 uur.",
+         "Klopt: N = 800 bij t = 3 en N = 1600 bij t = 4, en 1000 ligt daartussen.",
+         "Koos je \"\"tussen 4 en 5 uur\"\"? Dan neem je een te laat interval. Bij t = 4 is N al 1600, dus 1000 komt eerder. Door de stappen goed na te lopen kom je uit op tussen 3 en 4 uur.",
+         "Koos je \"\"tussen 800 en 1600 uur\"\"? Dan neem je de uitkomsten als tijd. De tijd staat in uren, dus 3 en 4. Controleer je stap: de juiste uitkomst is tussen 3 en 4 uur."
+        ],
+        "uh": "Tussen welke twee hele uren wordt N gelijk aan 1000?",
+        "ctx": "Het aantal bacteriën volgt N = 100 · 2^t, waarbij t het aantal uren is. De onderzoeker maakt een tabel voor hele uren: bij t = 0 is N = 100, bij t = 1 is N = 200, bij t = 2 is N = 400, bij t = 3 is N = 800 en bij t = 4 is N = 1600."
+       },
+       {
+        "v": "Welke waarde van x lost 3x − 5 = 7 op?",
+        "o": [
+         "\"x = 7\"",
+         "\"x = 2\"",
+         "\"x = 12, zeg maar\"",
+         "\"x = 4\""
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 0,
+        "u": "Stel de vergelijking of ongelijkheid op, los hem op met grafiek of tabel en controleer door in te vullen. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"x = 7\"\"? Dan neem je de rechterkant als x. Je moet de vergelijking oplossen, dus 3x = 12. Het goede antwoord is x = 4.",
+         "Koos je \"\"x = 2\"\"? Dan trek je 5 van 7 af en deel je door 1. Eerst 5 optellen, dus 3x = 12. Door de stappen goed na te lopen kom je uit op x = 4.",
+         "Koos je \"\"x = 12, zeg maar\"\"? Dan neem je 3x als x. Deel 12 door 3, dus x = 4. Controleer je stap: de juiste uitkomst is x = 4.",
+         "Klopt: 3x = 12 en dus x = 4; de lijn snijdt y = 7 bij x = 4."
+        ],
+        "uh": "Welke waarde van x lost 3x − 5 = 7 op?",
+        "ctx": "De grafiek van y = 3x − 5 is een stijgende rechte lijn. Een leerling wil de vergelijking 3x − 5 = 7 oplossen met de grafiek en daarna ook uitzoeken voor welke x de lijn boven of op de lijn y = 7 ligt."
+       },
+       {
+        "v": "Voor welke x ligt de lijn y = 3x − 5 boven de lijn y = 7?",
+        "o": [
+         "\"x > 4\"",
+         "\"x < 4\"",
+         "\"x > 7\"",
+         "\"x > 12, you know\""
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 1,
+        "u": "Stel de vergelijking of ongelijkheid op, los hem op met grafiek of tabel en controleer door in te vullen. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: de lijn is stijgend en gelijk bij x = 4, dus rechts ervan hoger.",
+         "Koos je \"\"x < 4\"\"? Dan kijk je naar de verkeerde kant. De lijn stijgt, dus rechts van 4 is ze hoger. Het goede antwoord is x > 4.",
+         "Koos je \"\"x > 7\"\"? Dan neem je de waarde 7 als grens. De grens is x = 4, dus x > 4. Door de stappen goed na te lopen kom je uit op x > 4.",
+         "Koos je \"\"x > 12, you know\"\"? Dan neem je 3x = 12 als grens voor x. De grens is x = 4, dus x > 4. Controleer je stap: de juiste uitkomst is x > 4."
+        ],
+        "uh": "Voor welke x ligt de lijn y = 3x − 5 boven de lijn y = 7?",
+        "ctx": "De grafiek van y = 3x − 5 is een stijgende rechte lijn. Een leerling wil de vergelijking 3x − 5 = 7 oplossen met de grafiek en daarna ook uitzoeken voor welke x de lijn boven of op de lijn y = 7 ligt."
+       },
+       {
+        "v": "Welke oplossing hoort bij de ongelijkheid 3x − 5 ≤ 7?",
+        "o": [
+         "\"x ≥ 4\"",
+         "\"x < 4\"",
+         "\"x ≤ 4\"",
+         "\"x ≤ 12, gewoon\""
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 1,
+        "u": "Stel de vergelijking of ongelijkheid op, los hem op met grafiek of tabel en controleer door in te vullen. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"x ≥ 4\"\"? Dan kies je de kant waar de lijn boven y = 7 ligt. Bij ≤ ligt de lijn onder, dus links van 4. Het goede antwoord is x ≤ 4.",
+         "Koos je \"\"x < 4\"\"? Dan laat je het gelijkteken weg. Bij ≤ hoort ook x = 4 bij de oplossing, dus x ≤ 4. Door de stappen goed na te lopen kom je uit op x ≤ 4.",
+         "Klopt: de lijn ligt op of onder y = 7 voor x kleiner dan of gelijk aan 4.",
+         "Koos je \"\"x ≤ 12, gewoon\"\"? Dan los je 3x ≤ 12 niet op. Deel door 3, dus x ≤ 4. Controleer je stap: de juiste uitkomst is x ≤ 4."
+        ],
+        "uh": "Welke oplossing hoort bij de ongelijkheid 3x − 5 ≤ 7?",
+        "ctx": "De grafiek van y = 3x − 5 is een stijgende rechte lijn. Een leerling wil de vergelijking 3x − 5 = 7 oplossen met de grafiek en daarna ook uitzoeken voor welke x de lijn boven of op de lijn y = 7 ligt."
+       },
+       {
+        "v": "Bij welke waarde van q zijn kosten en opbrengst gelijk?",
+        "o": [
+         "\"q = 800, I think\"",
+         "\"q = 40\"",
+         "\"q = 20\"",
+         "\"q = 80\""
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 3,
+        "u": "Stel de vergelijking of ongelijkheid op, los hem op met grafiek of tabel en controleer door in te vullen. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"q = 800, I think\"\"? Dan neem je de vaste kosten als q. Los 800 + 30q = 50q op, dus q = 40. Het goede antwoord is q = 40.",
+         "Klopt: 800 + 30q = 50q geeft 20q = 800 en dus q = 40. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"q = 20\"\"? Dan deel je 800 door 40. Je moet delen door 20, dus q = 40. Door de stappen goed na te lopen kom je uit op q = 40.",
+         "Koos je \"\"q = 80\"\"? Dan deel je 800 door 10. Het verschil 50 − 30 is 20, dus q = 40. Controleer je stap: de juiste uitkomst is q = 40."
+        ],
+        "uh": "Bij welke waarde van q zijn kosten en opbrengst gelijk?",
+        "ctx": "Een bedrijf heeft kosten K = 800 + 30q en opbrengst O = 50q, waarbij q het aantal producten is. De directeur wil weten bij welk aantal er winst begint en tekent beide lijnen in één figuur."
+       },
+       {
+        "v": "Voor welke aantallen producten is de winst positief?",
+        "o": [
+         "\"q < 40\"",
+         "\"q = 40\"",
+         "\"q > 800, to be honest\"",
+         "\"q > 40\""
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 1,
+        "u": "Stel de vergelijking of ongelijkheid op, los hem op met grafiek of tabel en controleer door in te vullen. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"q < 40\"\"? Dan draai je de richting om. Voor q < 40 zijn de kosten hoger, dus verlies. Het goede antwoord is q > 40.",
+         "Koos je \"\"q = 40\"\"? Dan neem je het break-evenpunt. Daar is de winst nul, dus q > 40. Door de stappen goed na te lopen kom je uit op q > 40.",
+         "Koos je \"\"q > 800, to be honest\"\"? Dan neem je de vaste kosten als grens. De grens is q = 40, dus q > 40. Controleer je stap: de juiste uitkomst is q > 40.",
+         "Klopt: rechts van het snijpunt ligt de opbrengst boven de kosten."
+        ],
+        "uh": "Voor welke aantallen producten is de winst positief?",
+        "ctx": "Een bedrijf heeft kosten K = 800 + 30q en opbrengst O = 50q, waarbij q het aantal producten is. De directeur wil weten bij welk aantal er winst begint en tekent beide lijnen in één figuur."
+       },
+       {
+        "v": "Wat is het kleinste aantal hele producten waarbij de winst groter is dan 0?",
+        "o": [
+         "\"41\"",
+         "\"40\"",
+         "\"42\"",
+         "\"39\""
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 3,
+        "u": "Stel de vergelijking of ongelijkheid op, los hem op met grafiek of tabel en controleer door in te vullen. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: bij q = 40 is de winst 0 en bij q = 41 is O = 2050 en K = 2030.",
+         "Koos je \"\"40\"\"? Dan neem je het break-evenpunt. Daar is de winst precies 0, dus 41. Het goede antwoord is 41.",
+         "Koos je \"\"42\"\"? Dan neem je een te groot aantal. Bij 41 is de winst al 20, dus 41. Door de stappen goed na te lopen kom je uit op 41.",
+         "Koos je \"\"39\"\"? Dan neem je een aantal onder het break-evenpunt. Daar is er verlies, dus 41. Controleer je stap: de juiste uitkomst is 41."
+        ],
+        "uh": "Wat is het kleinste aantal hele producten waarbij de winst groter is dan 0?",
+        "ctx": "Een bedrijf heeft kosten K = 800 + 30q en opbrengst O = 50q, waarbij q het aantal producten is. De directeur wil weten bij welk aantal er winst begint en tekent beide lijnen in één figuur."
+       },
+       {
+        "v": "Hoeveel euro bedraagt het verlies bij q = 30?",
+        "o": [
+         "\"€1500\"",
+         "\"€1700\"",
+         "\"€200\"",
+         "\"€800\""
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 4,
+        "u": "Stel de vergelijking of ongelijkheid op, los hem op met grafiek of tabel en controleer door in te vullen. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"€1500\"\"? Dan neem je de opbrengst bij 30 producten. Het verlies is kosten min opbrengst, dus 200. Het goede antwoord is €200.",
+         "Koos je \"\"€1700\"\"? Dan neem je de kosten bij 30 producten. Trek de opbrengst eraf, dus 200. Door de stappen goed na te lopen kom je uit op €200.",
+         "Klopt: K = 800 + 900 = 1700 en O = 1500, dus 1700 − 1500 = 200.",
+         "Koos je \"\"€800\"\"? Dan neem je de vaste kosten. Ook de variabele kosten tellen mee, dus 1700 − 1500. Controleer je stap: de juiste uitkomst is €200."
+        ],
+        "uh": "Hoeveel euro bedraagt het verlies bij q = 30?",
+        "ctx": "Een bedrijf heeft kosten K = 800 + 30q en opbrengst O = 50q, waarbij q het aantal producten is. De directeur wil weten bij welk aantal er winst begint en tekent beide lijnen in één figuur."
+       },
+       {
+        "v": "Bij welke tijdstippen t is de bal precies 15 meter hoog?",
+        "o": [
+         "\"t = 15, really, to be honest\"",
+         "\"t = 1 en t = 3\"",
+         "\"t = 2\"",
+         "\"t = 3\""
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 0,
+        "u": "Stel de vergelijking of ongelijkheid op, los hem op met grafiek of tabel en controleer door in te vullen. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"t = 15, really, to be honest\"\"? Dan neem je de hoogte als tijd. De bal is 15 meter hoog, dus t = 1 en t = 3. Het goede antwoord is t = 1 en t = 3.",
+         "Klopt: h = −5 + 20 = 15 bij t = 1 en h = −45 + 60 = 15 bij t = 3.",
+         "Koos je \"\"t = 2\"\"? Dan neem je het hoogste punt. Daar is h = 20, dus 15 hoort bij t = 1 en t = 3. Door de stappen goed na te lopen kom je uit op t = 1 en t = 3.",
+         "Koos je \"\"t = 3\"\"? Dan neem je maar één tijdstip. De bal komt omhoog en omlaag langs 15 meter, dus ook t = 1. Controleer je stap: de juiste uitkomst is t = 1 en t = 3."
+        ],
+        "uh": "Bij welke tijdstippen t is de bal precies 15 meter hoog?",
+        "ctx": "Een bal wordt omhoog geschoten. De hoogte in meter na t seconden is h = −5t² + 20t. De grafiek is een bergparabool. Een leerling wil weten wanneer de bal precies 15 meter hoog is en wanneer hij boven die hoogte is."
+       },
+       {
+        "v": "Tussen welke tijdstippen is de bal hoger dan 15 meter?",
+        "o": [
+         "\"t < 1 of t > 3\"",
+         "\"t > 1\"",
+         "\"t < 3\"",
+         "\"1 < t < 3\""
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 1,
+        "u": "Stel de vergelijking of ongelijkheid op, los hem op met grafiek of tabel en controleer door in te vullen. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"t < 1 of t > 3\"\"? Dan kies je buiten de snijpunten. Daar ligt de grafiek onder 15, dus tussen 1 en 3. Het goede antwoord is 1 < t < 3.",
+         "Koos je \"\"t > 1\"\"? Dan laat je het tweede snijpunt weg. Na t = 3 is de bal weer lager dan 15, dus 1 < t < 3. Door de stappen goed na te lopen kom je uit op 1 < t < 3.",
+         "Koos je \"\"t < 3\"\"? Dan laat je het eerste snijpunt weg. Voor t < 1 is de bal lager dan 15, dus 1 < t < 3. Controleer je stap: de juiste uitkomst is 1 < t < 3.",
+         "Klopt: de grafiek ligt boven y = 15 tussen de twee snijpunten."
+        ],
+        "uh": "Tussen welke tijdstippen is de bal hoger dan 15 meter?",
+        "ctx": "Een bal wordt omhoog geschoten. De hoogte in meter na t seconden is h = −5t² + 20t. De grafiek is een bergparabool. Een leerling wil weten wanneer de bal precies 15 meter hoog is en wanneer hij boven die hoogte is."
+       },
+       {
+        "v": "Wat is de maximale hoogte van de bal?",
+        "o": [
+         "\"20 m\"",
+         "\"15 m, volgens mij\"",
+         "\"40 m\"",
+         "\"2 m\""
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 4,
+        "u": "Stel de vergelijking of ongelijkheid op, los hem op met grafiek of tabel en controleer door in te vullen. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: de top ligt bij t = 2 en daar is h = −20 + 40 = 20.",
+         "Koos je \"\"15 m, volgens mij\"\"? Dan neem je de gegeven hoogte. De top ligt hoger, namelijk 20. Het goede antwoord is 20 m.",
+         "Koos je \"\"40 m\"\"? Dan neem je 20t bij t = 2. Trek er −5t² = 20 van af, dus 20. Door de stappen goed na te lopen kom je uit op 20 m.",
+         "Koos je \"\"2 m\"\"? Dan neem je het tijdstip van de top als hoogte. De hoogte is 20, en het tijdstip is 2. Controleer je stap: de juiste uitkomst is 20 m."
+        ],
+        "uh": "Wat is de maximale hoogte van de bal?",
+        "ctx": "Een bal wordt omhoog geschoten. De hoogte in meter na t seconden is h = −5t² + 20t. De grafiek is een bergparabool. Een leerling wil weten wanneer de bal precies 15 meter hoog is en wanneer hij boven die hoogte is."
+       }
+      ],
+      "oe": [
+       {
+        "bron": "Examenstijl",
+        "ctx": "Provider A vraagt K = 30 + 0,20m en provider B vraagt K = 0,50m, waarbij m het aantal minuten is. Een klant wil weten bij hoeveel minuten ze evenveel kosten en welke provider daarna goedkoper is.",
+        "v": "Bereken het aantal minuten en vergelijk de providers voor grotere aantallen.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "30 + 0,20m = 0,50m geeft 0,30m = 30, dus m = 100 (1p). Bij 100 minuten kosten beide €50 (1p). Voor m > 100 is A goedkoper (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een kubus moet een inhoud van 100 kubieke centimeter hebben. Een leerling zoekt de ribbe x met x³ = 100 en maakt een tabel: x = 4,6 geeft 97,3 en x = 4,7 geeft 103,8.",
+        "v": "Geef het interval voor x en de ribbe op één decimaal.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "97,3 is kleiner dan 100 en 103,8 is groter (1p). x ligt tussen 4,6 en 4,7 (1p). 100 ligt dichter bij 97,3 dan bij 103,8 zodat x ≈ 4,6 (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een verkoper krijgt €5 per verkocht product en betaalt eenmalig €20 voor een kraam op de markt. Hij wil minstens €30 overhouden om zijn kosten van de dag te dekken. De winst is 5x − 20 euro, waarbij x het aantal verkochte producten is.",
+        "v": "Stel de ongelijkheid op en los hem op.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "De winst moet minstens 30 zijn, dus 5x − 20 ≥ 30 (1p). Beide kanten plus 20 geeft 5x ≥ 50 (1p). Delen door 5 geeft x ≥ 10, dus minstens 10 producten (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Het aantal leden van een nieuwe app volgt N = 50 · 3^t, waarbij t het aantal maanden na de lancering is. Een leerling wil weten na hoeveel hele maanden het aantal leden voor het eerst boven 1000 komt en maakt daarvoor een tabel.",
+        "v": "Maak een tabel voor t = 0 tot 3 en geef het antwoord.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "t = 0: 50, t = 1: 150 en t = 2: 450, dat is nog niet boven 1000 (1p). t = 3: 50 · 27 = 1350, dat is wel boven 1000 (1p). Na 3 maanden is N voor het eerst groter dan 1000 (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een leerling lost 2x + 3 < 11 op en schrijft x < 8. Jij weet dat dit niet klopt. Je wilt de juiste oplossing en controleer dat met een getal.",
+        "v": "Geef de juiste oplossing en toon aan dat x = 7 de ongelijkheid niet voldoet.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "2x < 8 dus x < 4 (1p). Bij x = 7: 2 · 7 + 3 = 17 en dat is niet kleiner dan 11 (1p). De leerling vergat te delen door 2 (1p)."
+       }
+      ]
      }
     ]
    },
