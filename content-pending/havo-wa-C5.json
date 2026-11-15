@@ -1,0 +1,682 @@
+{
+ "id": "C5",
+ "lo": "wa.C.5",
+ "gs": 2,
+ "naam": "Lineaire verbanden: formule, grafiek, interpolatie en snijpunten",
+ "beschrijving": "Je stelt de formule van een lineair verband op, tekent de grafiek, schat waarden door interpoleren en extrapoleren, lost lineaire vergelijkingen en ongelijkheden op en bepaalt snijpunten en begrensde gebieden.",
+ "ceStatus": "CE",
+ "binas": "",
+ "val": "",
+ "onderwerpen": [
+  "Formule opstellen",
+  "Grafiek tekenen en aflezen",
+  "Interpoleren en extrapoleren",
+  "Vergelijkingen en ongelijkheden",
+  "Snijpunten en gebieden"
+ ],
+ "sam": "Een lineair verband heeft de formule y = ax + b met helling a en beginwaarde b. De helling volgt uit twee punten. Interpoleren is schatten tussen twee punten, extrapoleren erbuiten. Lineaire vergelijkingen los je op door te verplaatsen en te delen, bij een ongelijkheid draait het teken om bij delen door een negatief getal. Het snijpunt vind je door de formules gelijk te stellen.",
+ "begrippen": [
+  {
+   "t": "Lineair verband",
+   "d": "Een verband met een constante toename per stap; de grafiek is een rechte lijn."
+  },
+  {
+   "t": "Helling",
+   "d": "De toename van y per toename van 1 in x; bij y = ax + b is dat a."
+  },
+  {
+   "t": "Beginwaarde",
+   "d": "De waarde van y bij x = 0, het snijpunt met de y-as; bij y = ax + b is dat b."
+  },
+  {
+   "t": "Formule y = ax + b",
+   "d": "De standaardformule van een lineair verband."
+  },
+  {
+   "t": "Recht evenredig",
+   "d": "Een lineair verband met b = 0; de lijn gaat door de oorsprong."
+  },
+  {
+   "t": "Interpoleren",
+   "d": "Een waarde schatten tussen twee bekende punten, met een rechte lijn ertussen."
+  },
+  {
+   "t": "Extrapoleren",
+   "d": "Een waarde schatten buiten de bekende punten door de lijn door te trekken."
+  },
+  {
+   "t": "Lineaire vergelijking",
+   "d": "Een vergelijking zoals 2x + 3 = 11 die je oplost door eerst op te tellen of af te trekken en dan te delen."
+  },
+  {
+   "t": "Lineaire ongelijkheid",
+   "d": "Een ongelijkheid zoals 3x − 4 ≥ 11; de oplossing is een interval."
+  },
+  {
+   "t": "Snijpunt van twee lijnen",
+   "d": "Het punt waar twee lijnen dezelfde x en y hebben; stel de formules gelijk."
+  },
+  {
+   "t": "Begrensd gebied",
+   "d": "Een gebied dat wordt afgebakend door lijnen die bij ongelijkheden horen."
+  },
+  {
+   "t": "Controleren",
+   "d": "Een punt van de lijn invullen in de formule; links en rechts moeten gelijk zijn."
+  }
+ ],
+ "sv": [
+  {
+   "v": "Een rechte lijn heeft helling 3 en gaat door (0, 2). Welke formule hoort erbij?",
+   "o": [
+    "\"y = 2x + 3, I think\"",
+    "\"y = 3x + 2\"",
+    "\"y = 3x\"",
+    "\"y = 5x\""
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 0,
+   "u": "Bepaal eerst de helling en de beginwaarde van de lijn en gebruik daarna de formule of de grafiek. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"y = 2x + 3, I think\"\"? Dan verwissel je de helling en de beginwaarde. De helling 3 hoort bij x, dus 3x + 2. Het goede antwoord is y = 3x + 2.",
+    "Klopt: de helling is 3 en het snijpunt met de y-as is 2, dus y = 3x + 2.",
+    "Koos je \"\"y = 3x\"\"? Dan laat je de beginwaarde weg. De lijn gaat door (0, 2) en niet door de oorsprong, dus 3x + 2. Door de stappen goed na te lopen kom je uit op y = 3x + 2.",
+    "Koos je \"\"y = 5x\"\"? Dan tel je de getallen 3 en 2 op. De 3 is de helling en de 2 de beginwaarde, dus 3x + 2. Controleer je stap: de juiste uitkomst is y = 3x + 2."
+   ],
+   "uh": "Een rechte lijn heeft helling 3 en gaat door (0, 2). Welke formule hoort erbij?"
+  },
+  {
+   "v": "Bij een lijn stijgt y met 2 als x met 1 toeneemt. Welke waarde heeft de helling?",
+   "o": [
+    "\"1\"",
+    "\"3\"",
+    "\"0,5\"",
+    "\"2\""
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 0,
+   "u": "Bepaal eerst de helling en de beginwaarde van de lijn en gebruik daarna de formule of de grafiek. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"1\"\"? Dan neem je de toename van x. De helling is de toename van y per eenheid x, dus 2. Het goede antwoord is 2.",
+    "Koos je \"\"3\"\"? Dan tel je de toenames 2 en 1 op. De helling is de verhouding van de twee, dus 2 : 1 = 2. Door de stappen goed na te lopen kom je uit op 2.",
+    "Koos je \"\"0,5\"\"? Dan draai je de verhouding om. De helling is y gedeeld door x, dus 2. Controleer je stap: de juiste uitkomst is 2.",
+    "Klopt: de helling is de toename van y per toename van 1 in x, dus 2."
+   ],
+   "uh": "Bij een lijn stijgt y met 2 als x met 1 toeneemt. Welke waarde heeft de helling?"
+  },
+  {
+   "v": "Je tekent de grafiek van y = −x + 4. Door welk punt gaat de grafiek op de y-as?",
+   "o": [
+    "\"(0, 4)\"",
+    "\"(4, 0)\"",
+    "\"(0, −1), I suppose\"",
+    "\"(−4, 0)\""
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 1,
+   "u": "Bepaal eerst de helling en de beginwaarde van de lijn en gebruik daarna de formule of de grafiek. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: bij x = 0 is y = 4, dus de grafiek snijdt de y-as in (0, 4).",
+    "Koos je \"\"(4, 0)\"\"? Dan verwissel je x en y. Op de y-as is x gelijk aan 0, dus (0, 4). Het goede antwoord is (0, 4).",
+    "Koos je \"\"(0, −1), I suppose\"\"? Dan neem je de helling als y-waarde. De beginwaarde is 4, dus (0, 4). Door de stappen goed na te lopen kom je uit op (0, 4).",
+    "Koos je \"\"(−4, 0)\"\"? Dan los je −x + 4 = 0 op in plaats van x = 0 in te vullen. Dat geeft het snijpunt met de x-as, en niet met de y-as."
+   ],
+   "uh": "Je tekent de grafiek van y = −x + 4. Door welk punt gaat de grafiek op de y-as?"
+  },
+  {
+   "v": "Een lineair verband geeft y = 4 bij x = 0 en y = 10 bij x = 2. Welke waarde hoort bij x = 1?",
+   "o": [
+    "\"6\"",
+    "\"8\"",
+    "\"7\"",
+    "\"14\""
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 2,
+   "u": "Bepaal eerst de helling en de beginwaarde van de lijn en gebruik daarna de formule of de grafiek. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"6\"\"? Dan kies je een waarde die niet in het midden ligt. Bij lineair interpoleren geldt dat x = 1 precies tussen 0 en 2 ligt, dus 7.",
+    "Koos je \"\"8\"\"? Dan kies je een waarde boven het midden. De helling is 3 per stap, dus 4 + 3 = 7. Door de stappen goed na te lopen kom je uit op 7.",
+    "Klopt: x = 1 ligt precies tussen 0 en 2, dus y ligt precies tussen 4 en 10: 7.",
+    "Koos je \"\"14\"\"? Dan tel je 4 en 10 bij elkaar op. Bij x = 1 hoort het gemiddelde, dus 7. Controleer je stap: de juiste uitkomst is 7."
+   ],
+   "uh": "Een lineair verband geeft y = 4 bij x = 0 en y = 10 bij x = 2. Welke waarde hoort bij x = 1?"
+  },
+  {
+   "v": "Een lineair verband loopt door (1, 5) en (2, 8). Welke waarde geeft extrapoleren bij x = 4?",
+   "o": [
+    "\"11\"",
+    "\"14\"",
+    "\"12\"",
+    "\"20\""
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 2,
+   "u": "Bepaal eerst de helling en de beginwaarde van de lijn en gebruik daarna de formule of de grafiek. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"11\"\"? Dan neem je de waarde bij x = 3. Bij x = 4 komt er nog een stap bij, dus 14. Het goede antwoord is 14.",
+    "Klopt: de stap is 3 per x, dus x = 3 geeft 11 en x = 4 geeft 14.",
+    "Koos je \"\"12\"\"? Dan tel je maar 2 erbij op. De stap is 8 − 5 = 3, dus 14. Door de stappen goed na te lopen kom je uit op 14.",
+    "Koos je \"\"20\"\"? Dan vermenigvuldig je 5 met 4. Extrapoleren gebruikt de vaste stap, dus 8 + 3 + 3 = 14. Controleer je stap: de juiste uitkomst is 14."
+   ],
+   "uh": "Een lineair verband loopt door (1, 5) en (2, 8). Welke waarde geeft extrapoleren bij x = 4?"
+  },
+  {
+   "v": "Je lost 2x + 3 = 11 op. Welke waarde van x klopt?",
+   "o": [
+    "\"x = 7, I think\"",
+    "\"x = 5\"",
+    "\"x = 8\"",
+    "\"x = 4\""
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 3,
+   "u": "Bepaal eerst de helling en de beginwaarde van de lijn en gebruik daarna de formule of de grafiek. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"x = 7, I think\"\"? Dan trek je 3 niet af voordat je deelt. Eerst 11 − 3 = 8, dus 2x = 8. Het goede antwoord is x = 4.",
+    "Koos je \"\"x = 5\"\"? Dan deel je 11 door 2 en rond af. Je moet eerst 3 aftrekken, dus 2x = 8. Door de stappen goed na te lopen kom je uit op x = 4.",
+    "Koos je \"\"x = 8\"\"? Dan neem je 2x als x. Deel 8 door 2, dus x = 4. Controleer je stap: de juiste uitkomst is x = 4.",
+    "Klopt: 2x = 8 en dus x = 4. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Je lost 2x + 3 = 11 op. Welke waarde van x klopt?"
+  },
+  {
+   "v": "De lijnen y = x + 2 en y = 2x snijden elkaar. Welk punt is het snijpunt?",
+   "o": [
+    "\"(2, 4)\"",
+    "\"(4, 2), to be honest\"",
+    "\"(2, 2)\"",
+    "\"(0, 2)\""
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 4,
+   "u": "Bepaal eerst de helling en de beginwaarde van de lijn en gebruik daarna de formule of de grafiek. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: x + 2 = 2x geeft x = 2 en y = 4. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"(4, 2), to be honest\"\"? Dan verwissel je x en y. De x-waarde is 2, dus (2, 4). Het goede antwoord is (2, 4).",
+    "Koos je \"\"(2, 2)\"\"? Dan neem je dezelfde waarde voor x en y. Invullen in y = 2x geeft 4, dus (2, 4). Door de stappen goed na te lopen kom je uit op (2, 4).",
+    "Koos je \"\"(0, 2)\"\"? Dan neem je het snijpunt van y = x + 2 met de y-as. Gevraagd is het snijpunt van de twee lijnen, dus (2, 4)."
+   ],
+   "uh": "De lijnen y = x + 2 en y = 2x snijden elkaar. Welk punt is het snijpunt?"
+  },
+  {
+   "v": "Wat is de helling van de lijn door beide punten?",
+   "o": [
+    "\"4\"",
+    "\"8\"",
+    "\"2\"",
+    "\"11\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 0,
+   "u": "Bepaal eerst de helling en de beginwaarde van de lijn en gebruik daarna de formule of de grafiek. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"4\"\"? Dan neem je het verschil in x. De helling is verschil in y gedeeld door verschil in x, dus 2. Het goede antwoord is 2.",
+    "Koos je \"\"8\"\"? Dan neem je het verschil in y. Deel door het verschil in x, dus 2. Door de stappen goed na te lopen kom je uit op 2.",
+    "Klopt: (15 − 7) : (6 − 2) = 8 : 4 = 2. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"11\"\"? Dan neem je het gemiddelde van de y-waarden. De helling volgt uit de toename, dus 2. Controleer je stap: de juiste uitkomst is 2."
+   ],
+   "uh": "Wat is de helling van de lijn door beide punten?",
+   "ctx": "Een lineair verband heeft in een tabel de waarden y = 7 bij x = 2 en y = 15 bij x = 6. Een leerling wil de helling bepalen, de formule opstellen en daarna een waarde berekenen voor een grotere x."
+  },
+  {
+   "v": "Welke formule hoort bij het verband?",
+   "o": [
+    "\"y = 2x + 7, eigenlijk\"",
+    "\"y = 2x + 3\"",
+    "\"y = 3x + 2\"",
+    "\"y = 7x + 2\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 0,
+   "u": "Bepaal eerst de helling en de beginwaarde van de lijn en gebruik daarna de formule of de grafiek. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"y = 2x + 7, eigenlijk\"\"? Dan gebruik je de y-waarde 7 als beginwaarde. Bij x = 0 is y = 3, dus 2x + 3. Het goede antwoord is y = 2x + 3.",
+    "Klopt: de helling is 2 en bij x = 2 is y = 7, dus 7 = 4 + 3 en de beginwaarde is 3.",
+    "Koos je \"\"y = 3x + 2\"\"? Dan verwissel je de helling en de beginwaarde. De helling is 2, dus 2x + 3. Door de stappen goed na te lopen kom je uit op y = 2x + 3.",
+    "Koos je \"\"y = 7x + 2\"\"? Dan gebruik je 7 als helling. De helling is 2, dus 2x + 3. Controleer je stap: de juiste uitkomst is y = 2x + 3."
+   ],
+   "uh": "Welke formule hoort bij het verband?",
+   "ctx": "Een lineair verband heeft in een tabel de waarden y = 7 bij x = 2 en y = 15 bij x = 6. Een leerling wil de helling bepalen, de formule opstellen en daarna een waarde berekenen voor een grotere x."
+  },
+  {
+   "v": "Welke waarde van y hoort bij x = 10?",
+   "o": [
+    "\"20\"",
+    "\"26\"",
+    "\"17\"",
+    "\"23\""
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 1,
+   "u": "Bepaal eerst de helling en de beginwaarde van de lijn en gebruik daarna de formule of de grafiek. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"20\"\"? Dan laat je de + 3 weg. De formule heeft een beginwaarde, dus 23. Het goede antwoord is 23.",
+    "Koos je \"\"26\"\"? Dan reken je 2 · (10 + 3). De 3 staat los, dus 20 + 3. Door de stappen goed na te lopen kom je uit op 23.",
+    "Koos je \"\"17\"\"? Dan reken je 2 · 7 + 3. Gevraagd is x = 10, dus 2 · 10 + 3. Controleer je stap: de juiste uitkomst is 23.",
+    "Klopt: 2 · 10 + 3 = 23. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Welke waarde van y hoort bij x = 10?",
+   "ctx": "Een lineair verband heeft in een tabel de waarden y = 7 bij x = 2 en y = 15 bij x = 6. Een leerling wil de helling bepalen, de formule opstellen en daarna een waarde berekenen voor een grotere x."
+  },
+  {
+   "v": "Welke temperatuur schat je om 10:00 uur met lineair interpoleren?",
+   "o": [
+    "\"14 graden\"",
+    "\"12 graden, denk ik\"",
+    "\"16 graden\"",
+    "\"28 graden\""
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 2,
+   "u": "Bepaal eerst de helling en de beginwaarde van de lijn en gebruik daarna de formule of de grafiek. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: 10:00 ligt precies tussen 8:00 en 12:00, dus het gemiddelde van 10 en 18.",
+    "Koos je \"\"12 graden, denk ik\"\"? Dan kies je een te lage waarde. De temperatuur stijgt 2 graden per uur, dus 14. Het goede antwoord is 14 graden.",
+    "Koos je \"\"16 graden\"\"? Dan kies je een te hoge waarde. Na 2 uur is het 4 graden warmer, dus 14. Door de stappen goed na te lopen kom je uit op 14 graden.",
+    "Koos je \"\"28 graden\"\"? Dan tel je 10 en 18 op. Bij interpoleren neem je het gemiddelde, dus 14. Controleer je stap: de juiste uitkomst is 14 graden."
+   ],
+   "uh": "Welke temperatuur schat je om 10:00 uur met lineair interpoleren?",
+   "ctx": "Een weerstation meet de temperatuur. Om 8:00 uur is het 10 graden en om 12:00 uur 18 graden. De temperatuur stijgt in deze periode lineair. Een leerling wil de temperatuur op andere tijdstippen schatten met lineair interpoleren en extrapoleren."
+  },
+  {
+   "v": "Welke temperatuur verwacht je om 14:00 uur met lineair extrapoleren?",
+   "o": [
+    "\"20 graden, volgens mij\"",
+    "\"26 graden\"",
+    "\"22 graden\"",
+    "\"18 graden\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 2,
+   "u": "Bepaal eerst de helling en de beginwaarde van de lijn en gebruik daarna de formule of de grafiek. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"20 graden, volgens mij\"\"? Dan tel je maar één uur erbij op. Van 12:00 naar 14:00 zijn twee uur, dus 22. Het goede antwoord is 22 graden.",
+    "Koos je \"\"26 graden\"\"? Dan tel je 4 graden per uur op. De stijging is 2 graden per uur, dus 22. Door de stappen goed na te lopen kom je uit op 22 graden.",
+    "Klopt: de stijging is 2 graden per uur, dus 18 + 4 = 22.",
+    "Koos je \"\"18 graden\"\"? Dan neem je de temperatuur om 12:00. Na 12:00 stijgt hij door, dus 22. Controleer je stap: de juiste uitkomst is 22 graden."
+   ],
+   "uh": "Welke temperatuur verwacht je om 14:00 uur met lineair extrapoleren?",
+   "ctx": "Een weerstation meet de temperatuur. Om 8:00 uur is het 10 graden en om 12:00 uur 18 graden. De temperatuur stijgt in deze periode lineair. Een leerling wil de temperatuur op andere tijdstippen schatten met lineair interpoleren en extrapoleren."
+  },
+  {
+   "v": "Hoe laat wordt het 16 graden volgens het lineaire verband?",
+   "o": [
+    "\"10:00 uur, zeg maar\"",
+    "\"11:00 uur\"",
+    "\"12:00 uur\"",
+    "\"16:00 uur\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 3,
+   "u": "Bepaal eerst de helling en de beginwaarde van de lijn en gebruik daarna de formule of de grafiek. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"10:00 uur, zeg maar\"\"? Dan neem je het tijdstip met 14 graden. Voor 16 graden zijn 3 uur nodig, dus 11:00. Het goede antwoord is 11:00 uur.",
+    "Klopt: van 10 naar 16 is 6 graden en bij 2 graden per uur duurt dat 3 uur.",
+    "Koos je \"\"12:00 uur\"\"? Dan neem je het tijdstip met 18 graden. 16 graden is eerder, dus 11:00. Door de stappen goed na te lopen kom je uit op 11:00 uur.",
+    "Koos je \"\"16:00 uur\"\"? Dan neem je 16 als tijdstip. De temperatuur is 16 graden, en het tijdstip is 11:00. Controleer je stap: de juiste uitkomst is 11:00 uur."
+   ],
+   "uh": "Hoe laat wordt het 16 graden volgens het lineaire verband?",
+   "ctx": "Een weerstation meet de temperatuur. Om 8:00 uur is het 10 graden en om 12:00 uur 18 graden. De temperatuur stijgt in deze periode lineair. Een leerling wil de temperatuur op andere tijdstippen schatten met lineair interpoleren en extrapoleren."
+  },
+  {
+   "v": "Welke formule geeft de hoeveelheid water V in liter na t minuten?",
+   "o": [
+    "\"V = 500 + 20t, eigenlijk\"",
+    "\"V = 20 − 500t\"",
+    "\"V = 480t\"",
+    "\"V = 500 − 20t\""
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 0,
+   "u": "Bepaal eerst de helling en de beginwaarde van de lijn en gebruik daarna de formule of de grafiek. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"V = 500 + 20t, eigenlijk\"\"? Dan tel je het water erbij. De tank loopt leeg, dus 500 − 20t. Het goede antwoord is V = 500 − 20t.",
+    "Koos je \"\"V = 20 − 500t\"\"? Dan verwissel je beginwaarde en afname. De beginwaarde is 500, dus 500 − 20t. Door de stappen goed na te lopen kom je uit op V = 500 − 20t.",
+    "Koos je \"\"V = 480t\"\"? Dan trek je 20 af van 500 en vermenigvuldig je met t. De afname is per minuut, dus 500 − 20t. Controleer je stap: de juiste uitkomst is V = 500 − 20t.",
+    "Klopt: begin 500 liter en elke minuut 20 liter minder. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Welke formule geeft de hoeveelheid water V in liter na t minuten?",
+   "ctx": "Een watertank bevat 500 liter en loopt leeg met 20 liter per minuut. De hoeveelheid water na t minuten is lineair. Een leerling stelt de formule op, tekent de grafiek en wil weten wanneer de tank leeg is en wanneer er minder dan 100 liter in zit."
+  },
+  {
+   "v": "Hoeveel liter zit er na 15 minuten in de tank?",
+   "o": [
+    "\"200 liter\"",
+    "\"300 liter, really\"",
+    "\"480 liter\"",
+    "\"185 liter\""
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 1,
+   "u": "Bepaal eerst de helling en de beginwaarde van de lijn en gebruik daarna de formule of de grafiek. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: 500 − 20 · 15 = 500 − 300 = 200. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"300 liter, really\"\"? Dan neem je de hoeveelheid water die is weggelopen. Gevraagd is wat er nog in zit, dus 200. Het goede antwoord is 200 liter.",
+    "Koos je \"\"480 liter\"\"? Dan trek je alleen 20 af. Het is 20 liter per minuut, dus 15 keer 20. Door de stappen goed na te lopen kom je uit op 200 liter.",
+    "Koos je \"\"185 liter\"\"? Dan trek je 15 af van 200. Je moet van 500 af, dus 500 − 300. Controleer je stap: de juiste uitkomst is 200 liter."
+   ],
+   "uh": "Hoeveel liter zit er na 15 minuten in de tank?",
+   "ctx": "Een watertank bevat 500 liter en loopt leeg met 20 liter per minuut. De hoeveelheid water na t minuten is lineair. Een leerling stelt de formule op, tekent de grafiek en wil weten wanneer de tank leeg is en wanneer er minder dan 100 liter in zit."
+  },
+  {
+   "v": "Na hoeveel minuten is de tank leeg?",
+   "o": [
+    "\"20 minuten\"",
+    "\"500 minuten, I think\"",
+    "\"25 minuten\"",
+    "\"10 minuten\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 3,
+   "u": "Bepaal eerst de helling en de beginwaarde van de lijn en gebruik daarna de formule of de grafiek. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"20 minuten\"\"? Dan neem je de afname per minuut. Los 500 − 20t = 0 op, dus t = 25. Het goede antwoord is 25 minuten.",
+    "Koos je \"\"500 minuten, I think\"\"? Dan neem je de beginhoeveelheid als tijd. Deel 500 door 20, dus 25. Door de stappen goed na te lopen kom je uit op 25 minuten.",
+    "Klopt: 500 − 20t = 0 geeft 20t = 500 en t = 25. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"10 minuten\"\"? Dan deel je 500 door 50. De afname is 20 per minuut, dus 500 : 20 = 25. Controleer je stap: de juiste uitkomst is 25 minuten."
+   ],
+   "uh": "Na hoeveel minuten is de tank leeg?",
+   "ctx": "Een watertank bevat 500 liter en loopt leeg met 20 liter per minuut. De hoeveelheid water na t minuten is lineair. Een leerling stelt de formule op, tekent de grafiek en wil weten wanneer de tank leeg is en wanneer er minder dan 100 liter in zit."
+  },
+  {
+   "v": "Voor welke t zit er minder dan 100 liter in de tank?",
+   "o": [
+    "\"t < 20, to be honest\"",
+    "\"t > 20\"",
+    "\"t > 25\"",
+    "\"t > 5\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 3,
+   "u": "Bepaal eerst de helling en de beginwaarde van de lijn en gebruik daarna de formule of de grafiek. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"t < 20, to be honest\"\"? Dan draai je de richting om. Naarmate t groter wordt, daalt het water, dus t > 20. Het goede antwoord is t > 20.",
+    "Klopt: 500 − 20t < 100 geeft 20t > 400 en dus t > 20. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"t > 25\"\"? Dan neem je het moment dat de tank leeg is. Minder dan 100 liter begint eerder, dus t > 20. Door de stappen goed na te lopen kom je uit op t > 20.",
+    "Koos je \"\"t > 5\"\"? Dan reken je 500 − 100 = 400 en deel je door 80. Deel 400 door 20, dus t > 20. Controleer je stap: de juiste uitkomst is t > 20."
+   ],
+   "uh": "Voor welke t zit er minder dan 100 liter in de tank?",
+   "ctx": "Een watertank bevat 500 liter en loopt leeg met 20 liter per minuut. De hoeveelheid water na t minuten is lineair. Een leerling stelt de formule op, tekent de grafiek en wil weten wanneer de tank leeg is en wanneer er minder dan 100 liter in zit."
+  },
+  {
+   "v": "Op welk tijdstip is fietser A bij fietser B?",
+   "o": [
+    "\"t = 5\"",
+    "\"t = 2\"",
+    "\"t = 0,5\"",
+    "\"t = 1\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 4,
+   "u": "Bepaal eerst de helling en de beginwaarde van de lijn en gebruik daarna de formule of de grafiek. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"t = 5\"\"? Dan neem je het voorsprongbedrag als tijd. Los 15t = 5 + 10t op, dus t = 1. Het goede antwoord is t = 1.",
+    "Koos je \"\"t = 2\"\"? Dan reken je 15t = 5 + 10t zonder te delen door 5. Het verschil is 5t = 5, dus t = 1. Door de stappen goed na te lopen kom je uit op t = 1.",
+    "Koos je \"\"t = 0,5\"\"? Dan deel je 5 door 10. Deel door het verschil 5, dus t = 1. Controleer je stap: de juiste uitkomst is t = 1.",
+    "Klopt: 15t = 5 + 10t geeft 5t = 5 en dus t = 1. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Op welk tijdstip is fietser A bij fietser B?",
+   "ctx": "Twee fietsers vertrekken langs dezelfde weg. Fietser A start in t = 0 bij het begin en rijdt 15 kilometer per uur: s = 15t. Fietser B start 5 kilometer verder en rijdt 10 kilometer per uur: s = 5 + 10t. Een leerling zoekt wanneer A bij B is."
+  },
+  {
+   "v": "Op welke afstand van het beginpunt halen ze elkaar in?",
+   "o": [
+    "\"15 km\"",
+    "\"10 km, you know\"",
+    "\"5 km\"",
+    "\"1 km\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 4,
+   "u": "Bepaal eerst de helling en de beginwaarde van de lijn en gebruik daarna de formule of de grafiek. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: s = 15 · 1 = 15 en 5 + 10 · 1 = 15. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"10 km, you know\"\"? Dan neem je de afgelegde afstand van B. Op dat moment is ook A daar, dus 15. Het goede antwoord is 15 km.",
+    "Koos je \"\"5 km\"\"? Dan neem je de voorsprong. De afstand is 15, dus 15 km. Door de stappen goed na te lopen kom je uit op 15 km.",
+    "Koos je \"\"1 km\"\"? Dan neem je het tijdstip als afstand. De afstand is 15, dus 15 km. Controleer je stap: de juiste uitkomst is 15 km."
+   ],
+   "uh": "Op welke afstand van het beginpunt halen ze elkaar in?",
+   "ctx": "Twee fietsers vertrekken langs dezelfde weg. Fietser A start in t = 0 bij het begin en rijdt 15 kilometer per uur: s = 15t. Fietser B start 5 kilometer verder en rijdt 10 kilometer per uur: s = 5 + 10t. Een leerling zoekt wanneer A bij B is."
+  },
+  {
+   "v": "Wie ligt na 2 uur voor, en hoeveel kilometer is dat?",
+   "o": [
+    "\"B, met 5 kilometer\"",
+    "\"A, met 30 kilometer\"",
+    "\"A, met 5 kilometer\"",
+    "\"niemand, ze zijn gelijk\""
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 4,
+   "u": "Bepaal eerst de helling en de beginwaarde van de lijn en gebruik daarna de formule of de grafiek. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"B, met 5 kilometer\"\"? Dan draai je de volgorde om. A is op 30 en B op 25, dus A ligt voor. Het goede antwoord is A, met 5 kilometer.",
+    "Koos je \"\"A, met 30 kilometer\"\"? Dan neem je de positie van A als voorsprong. Het verschil is 30 − 25, dus 5. Door de stappen goed na te lopen kom je uit op A, met 5 kilometer.",
+    "Klopt: A is op 30 km en B op 25 km, dus A ligt 5 km voor.",
+    "Koos je \"\"niemand, ze zijn gelijk\"\"? Dan denk je dat ze nog gelijk zijn. Ze zijn gelijk bij t = 1, na 2 uur ligt A voor."
+   ],
+   "uh": "Wie ligt na 2 uur voor, en hoeveel kilometer is dat?",
+   "ctx": "Twee fietsers vertrekken langs dezelfde weg. Fietser A start in t = 0 bij het begin en rijdt 15 kilometer per uur: s = 15t. Fietser B start 5 kilometer verder en rijdt 10 kilometer per uur: s = 5 + 10t. Een leerling zoekt wanneer A bij B is."
+  },
+  {
+   "v": "Welke formule hoort bij de lijn door (1, 4) en (5, 16)?",
+   "o": [
+    "\"y = 3x + 4\"",
+    "\"y = 3x + 1\"",
+    "\"y = 4x\"",
+    "\"y = 12x + 4, denk ik\""
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 0,
+   "u": "Bepaal eerst de helling en de beginwaarde van de lijn en gebruik daarna de formule of de grafiek. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"y = 3x + 4\"\"? Dan gebruik je de y-waarde 4 als beginwaarde. Bij x = 0 is y = 1, dus 3x + 1. Het goede antwoord is y = 3x + 1.",
+    "Klopt: de helling is 12 : 4 = 3 en 3 · 1 + 1 = 4. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"y = 4x\"\"? Dan neem je de eerste punten als helling. De helling is 12 : 4, dus 3. Door de stappen goed na te lopen kom je uit op y = 3x + 1.",
+    "Koos je \"\"y = 12x + 4, denk ik\"\"? Dan neem je het verschil in y als helling. Deel door het verschil in x, dus 3x + 1. Controleer je stap: de juiste uitkomst is y = 3x + 1."
+   ],
+   "uh": "Welke formule hoort bij de lijn door (1, 4) en (5, 16)?",
+   "ctx": "Een lijn gaat door de punten (1, 4) en (5, 16). Een leerling wil de formule van de lijn bepalen, daarmee waarden berekenen en een gevraagde x opzoeken bij een gegeven y."
+  },
+  {
+   "v": "Welke waarde van y hoort bij x = 8?",
+   "o": [
+    "\"24\"",
+    "\"33\"",
+    "\"12\"",
+    "\"25\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 0,
+   "u": "Bepaal eerst de helling en de beginwaarde van de lijn en gebruik daarna de formule of de grafiek. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"24\"\"? Dan laat je de + 1 weg. De formule heeft een beginwaarde, dus 25. Het goede antwoord is 25.",
+    "Koos je \"\"33\"\"? Dan reken je 3 · 8 + 9. De beginwaarde is 1, dus 25. Door de stappen goed na te lopen kom je uit op 25.",
+    "Koos je \"\"12\"\"? Dan reken je 4 · 3. Gevraagd is x = 8, dus 3 · 8 + 1. Controleer je stap: de juiste uitkomst is 25.",
+    "Klopt: 3 · 8 + 1 = 25. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Welke waarde van y hoort bij x = 8?",
+   "ctx": "Een lijn gaat door de punten (1, 4) en (5, 16). Een leerling wil de formule van de lijn bepalen, daarmee waarden berekenen en een gevraagde x opzoeken bij een gegeven y."
+  },
+  {
+   "v": "Voor welke x geldt y = 22?",
+   "o": [
+    "\"x = 7\"",
+    "\"x = 21\"",
+    "\"x = 6,33\"",
+    "\"x = 66\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 3,
+   "u": "Bepaal eerst de helling en de beginwaarde van de lijn en gebruik daarna de formule of de grafiek. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: 3x + 1 = 22 geeft 3x = 21 en dus x = 7. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"x = 21\"\"? Dan trek je 1 niet af en deel je niet. Eerst 22 − 1 = 21, dus 3x = 21. Het goede antwoord is x = 7.",
+    "Koos je \"\"x = 6,33\"\"? Dan deel je 19 door 3. Je moet 21 delen door 3, dus 7. Door de stappen goed na te lopen kom je uit op x = 7.",
+    "Koos je \"\"x = 66\"\"? Dan vermenigvuldig je 22 met 3. Los 3x + 1 = 22 op, dus x = 7. Controleer je stap: de juiste uitkomst is x = 7."
+   ],
+   "uh": "Voor welke x geldt y = 22?",
+   "ctx": "Een lijn gaat door de punten (1, 4) en (5, 16). Een leerling wil de formule van de lijn bepalen, daarmee waarden berekenen en een gevraagde x opzoeken bij een gegeven y."
+  },
+  {
+   "v": "Welk hoekpunt van het gebied ligt op de y-as?",
+   "o": [
+    "\"(4, 0)\"",
+    "\"(0, 0)\"",
+    "\"(0, 4)\"",
+    "\"(0, −4), eigenlijk\""
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 1,
+   "u": "Bepaal eerst de helling en de beginwaarde van de lijn en gebruik daarna de formule of de grafiek. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"(4, 0)\"\"? Dan verwissel je x en y. Dat punt ligt op de x-as, en het hoekpunt op de y-as is (0, 4). Het goede antwoord is (0, 4).",
+    "Koos je \"\"(0, 0)\"\"? Dan neem je de oorsprong. Dat is een ander hoekpunt, en het punt op de y-as is (0, 4). Door de stappen goed na te lopen kom je uit op (0, 4).",
+    "Klopt: x = 0 geeft y = −0 + 4 = 4, het snijpunt van de lijn met de y-as.",
+    "Koos je \"\"(0, −4), eigenlijk\"\"? Dan gebruik je het verkeerde teken. De lijn is y = −x + 4, dus (0, 4). Controleer je stap: de juiste uitkomst is (0, 4)."
+   ],
+   "uh": "Welk hoekpunt van het gebied ligt op de y-as?",
+   "ctx": "Een gebied in het assenstelsel wordt begrensd door de ongelijkheden x ≥ 0, y ≥ 0 en y ≤ −x + 4. Een leerling tekent de lijn y = −x + 4, arceert het gebied en wil de hoekpunten en de oppervlakte weten."
+  },
+  {
+   "v": "Voldoet het punt (1, 1) aan alle drie de ongelijkheden van het gebied?",
+   "o": [
+    "\"nee, want 1 > −1 + 4\"",
+    "\"ja, want 1 ≤ −1 + 4\"",
+    "\"nee, want het punt ligt op de lijn\"",
+    "\"ja, want x ≥ 1 en y ≥ 1\""
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 1,
+   "u": "Bepaal eerst de helling en de beginwaarde van de lijn en gebruik daarna de formule of de grafiek. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"nee, want 1 > −1 + 4\"\"? Dan reken je −1 + 4 niet uit. Dat is 3 en 1 is kleiner, dus het punt ligt binnen het gebied.",
+    "Klopt: 1 ≤ 3, en x ≥ 0 en y ≥ 0 gelden ook. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"nee, want het punt ligt op de lijn\"\"? Dan verwar je (1, 1) met een punt op de lijn. Op de lijn bij x = 1 is y = 3, dus (1, 1) ligt eronder.",
+    "Koos je \"\"ja, want x ≥ 1 en y ≥ 1\"\"? Dan vervang je de ongelijkheden door andere. De grens is y ≤ −x + 4, en dat klopt bij (1, 1)."
+   ],
+   "uh": "Voldoet het punt (1, 1) aan alle drie de ongelijkheden van het gebied?",
+   "ctx": "Een gebied in het assenstelsel wordt begrensd door de ongelijkheden x ≥ 0, y ≥ 0 en y ≤ −x + 4. Een leerling tekent de lijn y = −x + 4, arceert het gebied en wil de hoekpunten en de oppervlakte weten."
+  },
+  {
+   "v": "Een klasgenoot zegt dat (3, 2) in de driehoek ligt. Welke redenering ontkracht dat?",
+   "o": [
+    "\"ja, want 2 ≤ 3\"",
+    "\"ja, want beide coördinaten zijn positief\"",
+    "\"nee, want 2 < −3 + 4\"",
+    "\"nee, want 2 > −3 + 4\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 1,
+   "u": "Bepaal eerst de helling en de beginwaarde van de lijn en gebruik daarna de formule of de grafiek. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"ja, want 2 ≤ 3\"\"? Dan vergelijk je met de x-waarde. De grens is −x + 4 = 1, dus 2 is te groot. Het goede antwoord is nee, want 2 > −3 + 4.",
+    "Koos je \"\"ja, want beide coördinaten zijn positief\"\"? Dan kijk je alleen naar x ≥ 0 en y ≥ 0. Ook y ≤ −x + 4 moet gelden, en dat klopt niet.",
+    "Koos je \"\"nee, want 2 < −3 + 4\"\"? Dan draai je het teken om. −3 + 4 = 1 en 2 is groter, dus het punt ligt buiten. Controleer je stap: de juiste uitkomst is nee, want 2 > −3 + 4.",
+    "Klopt: −3 + 4 = 1 en 2 is groter dan 1, dus het punt ligt boven de lijn."
+   ],
+   "uh": "Een klasgenoot zegt dat (3, 2) in de driehoek ligt. Welke redenering ontkracht dat?",
+   "ctx": "Een gebied in het assenstelsel wordt begrensd door de ongelijkheden x ≥ 0, y ≥ 0 en y ≤ −x + 4. Een leerling tekent de lijn y = −x + 4, arceert het gebied en wil de hoekpunten en de oppervlakte weten."
+  },
+  {
+   "v": "Welke oppervlakte heeft het gebied?",
+   "o": [
+    "\"8\"",
+    "\"16\"",
+    "\"4\"",
+    "\"12\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 4,
+   "u": "Bepaal eerst de helling en de beginwaarde van de lijn en gebruik daarna de formule of de grafiek. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: de driehoek met hoekpunten (0, 0), (4, 0) en (0, 4) heeft oppervlakte ½ · 4 · 4 = 8.",
+    "Koos je \"\"16\"\"? Dan vergeet je de factor ½. De driehoek is de helft van het vierkant 4 bij 4, dus 8. Het goede antwoord is 8.",
+    "Koos je \"\"4\"\"? Dan neem je de lengte van een zijde. De oppervlakte is ½ · 4 · 4, dus 8. Door de stappen goed na te lopen kom je uit op 8.",
+    "Koos je \"\"12\"\"? Dan tel je 4 + 4 + 4. De oppervlakte van een driehoek is ½ · basis · hoogte, dus 8. Controleer je stap: de juiste uitkomst is 8."
+   ],
+   "uh": "Welke oppervlakte heeft het gebied?",
+   "ctx": "Een gebied in het assenstelsel wordt begrensd door de ongelijkheden x ≥ 0, y ≥ 0 en y ≤ −x + 4. Een leerling tekent de lijn y = −x + 4, arceert het gebied en wil de hoekpunten en de oppervlakte weten."
+  }
+ ],
+ "oe": [
+  {
+   "bron": "Examenstijl",
+   "ctx": "In een tabel hoort bij x = 3 de waarde y = 11 en bij x = 7 de waarde y = 23. Het verband is lineair. Een leerling wil de formule opstellen en de waarde van y bij x = 10 berekenen.",
+   "v": "Stel de formule op en bereken y bij x = 10.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Helling (23 − 11) : (7 − 3) = 3 (1p). 3 · 3 + b = 11 geeft b = 2, dus y = 3x + 2 (1p). Bij x = 10: y = 32 (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een fietser heeft na 2 uur 110 kilometer afgelegd en na 5 uur 260 kilometer, met een constante snelheid. Een leerling wil de formule voor de afgelegde afstand s opstellen en de afstand na 4 en na 7 uur schatten.",
+   "v": "Stel s op in t en bereken s bij t = 4 en bij t = 7.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Snelheid (260 − 110) : 3 = 50 km/u en s = 50t + 10 (1p). t = 4 is interpoleren: 210 km (1p). t = 7 is extrapoleren: 360 km (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Twee lijnen hebben de formules A: y = 4x − 1 en B: y = 2x + 7. Een leerling zoekt het snijpunt van de lijnen en wil daarna controleren dat het punt op beide lijnen ligt.",
+   "v": "Bereken de coördinaten van het snijpunt en controleer.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "4x − 1 = 2x + 7 geeft 2x = 8, dus x = 4 (1p). y = 4 · 4 − 1 = 15 (1p). Controle met B: 2 · 4 + 7 = 15, dus (4, 15) (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een leerling lost de ongelijkheid 3x − 4 ≥ 11 op en wil de oplossing als interval opschrijven en controleren met een getal binnen en buiten het interval.",
+   "v": "Los de ongelijkheid op en controleer met x = 6 en x = 4.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "3x ≥ 15, dus x ≥ 5 (1p). Bij x = 6: 14 en dat is ≥ 11, dus dat klopt (1p). Bij x = 4: 8 en dat is niet ≥ 11, dus x = 4 hoort er niet bij (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een leerling zegt dat de lijn door (0, 2) en (4, 10) de formule y = 2x + 10 heeft. Jij weet dat dit niet klopt, want de helling en de beginwaarde zijn verwisseld. Je wilt de juiste formule geven.",
+   "v": "Geef de juiste formule en toon aan dat y = 2x + 10 fout is.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Helling (10 − 2) : 4 = 2 en beginwaarde 2: y = 2x + 2 (1p). Bij x = 0 geeft y = 2x + 10 de waarde 10 en niet 2 (1p). Bij x = 4 geeft 2x + 2 de waarde 10, wat klopt (1p)."
+  }
+ ]
+}

@@ -1210,6 +1210,27 @@ var VAKKEN = [
       "nOe": 5,
       "nBeg": 12,
       "hasSam": true
+     },
+     {
+      "id": "C5",
+      "lo": "wa.C.5",
+      "gs": 2,
+      "naam": "Lineaire verbanden: formule, grafiek, interpolatie en snijpunten",
+      "beschrijving": "Je stelt de formule van een lineair verband op, tekent de grafiek, schat waarden door interpoleren en extrapoleren, lost lineaire vergelijkingen en ongelijkheden op en bepaalt snijpunten en begrensde gebieden.",
+      "ceStatus": "CE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Formule opstellen",
+       "Grafiek tekenen en aflezen",
+       "Interpoleren en extrapoleren",
+       "Vergelijkingen en ongelijkheden",
+       "Snijpunten en gebieden"
+      ],
+      "nSv": 27,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
      }
     ]
    },
