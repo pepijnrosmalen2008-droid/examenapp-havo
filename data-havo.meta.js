@@ -1147,6 +1147,27 @@ var VAKKEN = [
       "nOe": 5,
       "nBeg": 12,
       "hasSam": true
+     },
+     {
+      "id": "C2",
+      "lo": "wa.C.2",
+      "gs": 2,
+      "naam": "Grafieken tekenen, aflezen en interpreteren",
+      "beschrijving": "Je leest grafieken af, beschrijft stijgen en dalen (constant, toenemend of afnemend), herkent de vier hoofdtypen verbanden, vindt snijpunten met de assen en tussen grafieken en vergelijkt twee grafieken.",
+      "ceStatus": "CE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Een grafiek aflezen",
+       "Stijgen en dalen beschrijven",
+       "Standaardverbanden herkennen",
+       "Snijpunten en asymptoot",
+       "Grafieken vergelijken"
+      ],
+      "nSv": 27,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
      }
     ]
    },

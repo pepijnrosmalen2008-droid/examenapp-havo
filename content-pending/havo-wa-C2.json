@@ -1,0 +1,682 @@
+{
+ "id": "C2",
+ "lo": "wa.C.2",
+ "gs": 2,
+ "naam": "Grafieken tekenen, aflezen en interpreteren",
+ "beschrijving": "Je leest grafieken af, beschrijft stijgen en dalen (constant, toenemend of afnemend), herkent de vier hoofdtypen verbanden, vindt snijpunten met de assen en tussen grafieken en vergelijkt twee grafieken.",
+ "ceStatus": "CE",
+ "binas": "",
+ "val": "",
+ "onderwerpen": [
+  "Een grafiek aflezen",
+  "Stijgen en dalen beschrijven",
+  "Standaardverbanden herkennen",
+  "Snijpunten en asymptoot",
+  "Grafieken vergelijken"
+ ],
+ "sam": "Lees een grafiek af met de eenheden op de assen. Beschrijf het verloop als stijgend of dalend, en constant, toenemend of afnemend. Herken lineair, recht evenredig, omgekeerd evenredig en exponentieel. Snijpunten met de assen vind je met x = 0 of y = 0 en een snijpunt van grafieken door de formules gelijk te stellen.",
+ "begrippen": [
+  {
+   "t": "Assenstelsel",
+   "d": "Twee assen met eenheden; de horizontale as is meestal de onafhankelijke variabele."
+  },
+  {
+   "t": "Coördinaten",
+   "d": "Een punt (x, y): eerst de waarde op de x-as, dan die op de y-as."
+  },
+  {
+   "t": "Aflezen",
+   "d": "Met een verticale of horizontale lijn de waarde bij een punt van de grafiek bepalen."
+  },
+  {
+   "t": "Stijgend en dalend",
+   "d": "Een grafiek gaat omhoog of omlaag als x toeneemt."
+  },
+  {
+   "t": "Toenemend en afnemend",
+   "d": "De stijging of daling wordt per stap groter of kleiner."
+  },
+  {
+   "t": "Lineair verband",
+   "d": "Een rechte lijn; de stijging per stap is constant."
+  },
+  {
+   "t": "Recht evenredig",
+   "d": "Een rechte lijn door de oorsprong, y = ax."
+  },
+  {
+   "t": "Omgekeerd evenredig",
+   "d": "Een gebogen grafiek y = a/x die de assen niet snijdt."
+  },
+  {
+   "t": "Exponentieel verband",
+   "d": "Een grafiek met een vaste groeifactor, zoals N = 100 · 2^t."
+  },
+  {
+   "t": "Snijpunt met de assen",
+   "d": "Het punt met x = 0 (y-as) of y = 0 (x-as)."
+  },
+  {
+   "t": "Asymptoot",
+   "d": "Een lijn waar de grafiek steeds dichter bij komt zonder die te raken."
+  },
+  {
+   "t": "Snijpunt van grafieken",
+   "d": "Het punt waar twee grafieken dezelfde x en dezelfde y hebben."
+  }
+ ],
+ "sv": [
+  {
+   "v": "Een punt (4, 12) ligt op de grafiek. Welke waarde heeft y als x = 4?",
+   "o": [
+    "\"4\"",
+    "\"12\"",
+    "\"16\"",
+    "\"48\""
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 0,
+   "u": "Bekijk eerst de assen en de eenheden en lees daarna de grafiek stap voor stap af. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"4\"\"? Dan verwissel je x en y. Bij (4, 12) is x gelijk aan 4 en y gelijk aan 12, dus y = 12. Het goede antwoord is 12.",
+    "Klopt: bij een punt (x, y) staat x vooraan en y achteraan, dus y = 12.",
+    "Koos je \"\"16\"\"? Dan tel je 4 en 12 bij elkaar op. Een coördinaat lees je af zonder te rekenen, dus y = 12. Door de stappen goed na te lopen kom je uit op 12.",
+    "Koos je \"\"48\"\"? Dan vermenigvuldig je 4 met 12. De y-waarde is de tweede coördinaat, dus 12. Controleer je stap: de juiste uitkomst is 12."
+   ],
+   "uh": "Een punt (4, 12) ligt op de grafiek. Welke waarde heeft y als x = 4?"
+  },
+  {
+   "v": "Een grafiek stijgt steeds steiler omhoog. Hoe beschrijf je dat stijgen?",
+   "o": [
+    "\"afnemend stijgend, to be honest\"",
+    "\"constant stijgend\"",
+    "\"afnemend dalend\"",
+    "\"toenemend stijgend\""
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 1,
+   "u": "Bekijk eerst de assen en de eenheden en lees daarna de grafiek stap voor stap af. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"afnemend stijgend, to be honest\"\"? Dan denk je aan een grafiek die omhoog gaat maar steeds vlakker wordt. Hier wordt de grafiek juist steiler, dus toenemend.",
+    "Koos je \"\"constant stijgend\"\"? Dan denk je aan een rechte lijn. Een rechte lijn heeft een vaste steilheid, maar hier wordt die steeds groter.",
+    "Koos je \"\"afnemend dalend\"\"? Dan verwar je stijgen met dalen. De grafiek gaat omhoog, dus stijgend. Controleer je stap: de juiste uitkomst is toenemend stijgend.",
+    "Klopt: de grafiek gaat omhoog en de stijging wordt per stap groter, dus toenemend stijgend."
+   ],
+   "uh": "Een grafiek stijgt steeds steiler omhoog. Hoe beschrijf je dat stijgen?"
+  },
+  {
+   "v": "Een grafiek daalt eerst snel en daarna steeds langzamer. Hoe beschrijf je dat dalen?",
+   "o": [
+    "\"afnemend dalend\"",
+    "\"toenemend dalend\"",
+    "\"constant dalend\"",
+    "\"afnemend stijgend\""
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 1,
+   "u": "Bekijk eerst de assen en de eenheden en lees daarna de grafiek stap voor stap af. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: de grafiek gaat omlaag en de daling wordt per stap kleiner, dus afnemend dalend.",
+    "Koos je \"\"toenemend dalend\"\"? Dan denk je aan een daling die steeds sneller gaat. Hier wordt de daling juist kleiner, dus afnemend.",
+    "Koos je \"\"constant dalend\"\"? Dan denk je aan een rechte lijn omlaag. De daling is hier niet gelijk per stap, maar neemt af.",
+    "Koos je \"\"afnemend stijgend\"\"? Dan verwar je dalen met stijgen. De grafiek gaat omlaag, dus dalend. Controleer je stap: de juiste uitkomst is afnemend dalend."
+   ],
+   "uh": "Een grafiek daalt eerst snel en daarna steeds langzamer. Hoe beschrijf je dat dalen?"
+  },
+  {
+   "v": "Welk standaardverband heeft als grafiek een rechte lijn door de oorsprong?",
+   "o": [
+    "\"omgekeerd evenredig\"",
+    "\"exponentieel\"",
+    "\"recht evenredig\"",
+    "\"constant\""
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 2,
+   "u": "Bekijk eerst de assen en de eenheden en lees daarna de grafiek stap voor stap af. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"omgekeerd evenredig\"\"? Dan denk je aan de gebogen grafiek y = a/x. Een rechte lijn hoort bij y = ax, dus recht evenredig.",
+    "Koos je \"\"exponentieel\"\"? Dan denk je aan een grafiek die steeds steiler wordt. Een rechte lijn heeft een vaste steilheid, dus recht evenredig.",
+    "Klopt: bij y = ax hoort een rechte lijn door (0, 0), dus recht evenredig.",
+    "Koos je \"\"constant\"\"? Dan denk je aan een horizontale lijn. Een rechte lijn door de oorsprong stijgt of daalt, dus recht evenredig."
+   ],
+   "uh": "Welk standaardverband heeft als grafiek een rechte lijn door de oorsprong?"
+  },
+  {
+   "v": "Voor y = 2x + 5 zoek je het snijpunt met de y-as. Welk punt is dat?",
+   "o": [
+    "\"(5, 0), really\"",
+    "\"(0, 5)\"",
+    "\"(0, 2)\"",
+    "\"(2, 5)\""
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 3,
+   "u": "Bekijk eerst de assen en de eenheden en lees daarna de grafiek stap voor stap af. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"(5, 0), really\"\"? Dan verwissel je x en y. Op de y-as is x gelijk aan 0, dus (0, 5). Het goede antwoord is (0, 5).",
+    "Klopt: op de y-as is x = 0, dus y = 2 × 0 + 5 = 5. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"(0, 2)\"\"? Dan neem je de helling als y-waarde. Bij x = 0 geeft de formule 5, dus (0, 5). Door de stappen goed na te lopen kom je uit op (0, 5).",
+    "Koos je \"\"(2, 5)\"\"? Dan neem je de getallen uit de formule als coördinaten. Het snijpunt met de y-as heeft x = 0, dus (0, 5)."
+   ],
+   "uh": "Voor y = 2x + 5 zoek je het snijpunt met de y-as. Welk punt is dat?"
+  },
+  {
+   "v": "Welke waarde nadert y = 60/x als x heel groot wordt?",
+   "o": [
+    "\"60\"",
+    "\"1\"",
+    "\"x\"",
+    "\"0\""
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 3,
+   "u": "Bekijk eerst de assen en de eenheden en lees daarna de grafiek stap voor stap af. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"60\"\"? Dan neem je de teller over. Bij een grotere x wordt 60/x kleiner, en nadert 0. Het goede antwoord is 0.",
+    "Koos je \"\"1\"\"? Dan kies je een rond getal. Voor x = 60 is y = 1 maar daarna blijft y dalen, naar 0. Door de stappen goed na te lopen kom je uit op 0.",
+    "Koos je \"\"x\"\"? Dan neem je de variabele zelf. De y-waarde wordt kleiner bij toenemende x, en nadert 0. Controleer je stap: de juiste uitkomst is 0.",
+    "Klopt: delen door een heel groot getal geeft een getal dicht bij 0."
+   ],
+   "uh": "Welke waarde nadert y = 60/x als x heel groot wordt?"
+  },
+  {
+   "v": "Twee grafieken snijden elkaar in het punt (3, 7). Bij welke waarde van x zijn de y-waarden gelijk?",
+   "o": [
+    "\"x = 3\"",
+    "\"x = 7\"",
+    "\"x = 10, to be honest\"",
+    "\"x = 21\""
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 4,
+   "u": "Bekijk eerst de assen en de eenheden en lees daarna de grafiek stap voor stap af. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: in het snijpunt geldt dat beide grafieken dezelfde x en y hebben, dus x = 3.",
+    "Koos je \"\"x = 7\"\"? Dan verwissel je x en y. De x-waarde is de eerste coördinaat, dus 3. Het goede antwoord is x = 3.",
+    "Koos je \"\"x = 10, to be honest\"\"? Dan tel je 3 en 7 bij elkaar op. De x-waarde lees je af uit het punt, dus 3. Door de stappen goed na te lopen kom je uit op x = 3.",
+    "Koos je \"\"x = 21\"\"? Dan vermenigvuldig je 3 met 7. Het snijpunt geeft de x-waarde direct, dus 3. Controleer je stap: de juiste uitkomst is x = 3."
+   ],
+   "uh": "Twee grafieken snijden elkaar in het punt (3, 7). Bij welke waarde van x zijn de y-waarden gelijk?"
+  },
+  {
+   "v": "Je zoekt 20 minuten op de horizontale as. Welke temperatuur lees je af?",
+   "o": [
+    "\"60 graden, I suppose\"",
+    "\"20 graden\"",
+    "\"45 graden\"",
+    "\"38 graden\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 0,
+   "u": "Bekijk eerst de assen en de eenheden en lees daarna de grafiek stap voor stap af. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"60 graden, I suppose\"\"? Dan lees je de waarde bij 10 minuten af. De vraag gaat over 20 minuten, dus 45. Het goede antwoord is 45 graden.",
+    "Koos je \"\"20 graden\"\"? Dan neem je het aantal minuten als temperatuur. De temperatuur staat op de verticale as, dus 45. Door de stappen goed na te lopen kom je uit op 45 graden.",
+    "Klopt: bij 20 minuten hoort 45 graden. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"38 graden\"\"? Dan lees je de waarde bij 30 minuten af. 20 minuten staat eerder, dus 45. Controleer je stap: de juiste uitkomst is 45 graden."
+   ],
+   "uh": "Je zoekt 20 minuten op de horizontale as. Welke temperatuur lees je af?",
+   "ctx": "Een kop koffie koelt af in een kamer. Een grafiek laat de temperatuur in graden Celsius zien: 90 graden bij 0 minuten, 60 bij 10 minuten, 45 bij 20 minuten, 38 bij 30 minuten en 34 bij 40 minuten. De grafiek daalt en vlakt af."
+  },
+  {
+   "v": "Met hoeveel graden is de koffie na 10 minuten kouder dan aan het begin?",
+   "o": [
+    "\"60 graden, you know\"",
+    "\"30 graden\"",
+    "\"15 graden\"",
+    "\"90 graden\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 0,
+   "u": "Bekijk eerst de assen en de eenheden en lees daarna de grafiek stap voor stap af. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"60 graden, you know\"\"? Dan neem je de temperatuur na 10 minuten. De daling is het verschil met het begin, dus 90 − 60. Het goede antwoord is 30 graden.",
+    "Klopt: 90 − 60 = 30 graden. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"15 graden\"\"? Dan neem je de daling tussen 10 en 20 minuten. De vraag gaat over de eerste 10 minuten, dus 30. Door de stappen goed na te lopen kom je uit op 30 graden.",
+    "Koos je \"\"90 graden\"\"? Dan neem je de begintemperatuur. De daling is het verschil, dus 30. Controleer je stap: de juiste uitkomst is 30 graden."
+   ],
+   "uh": "Met hoeveel graden is de koffie na 10 minuten kouder dan aan het begin?",
+   "ctx": "Een kop koffie koelt af in een kamer. Een grafiek laat de temperatuur in graden Celsius zien: 90 graden bij 0 minuten, 60 bij 10 minuten, 45 bij 20 minuten, 38 bij 30 minuten en 34 bij 40 minuten. De grafiek daalt en vlakt af."
+  },
+  {
+   "v": "Hoe beschrijf je het dalen van de temperatuur in de grafiek?",
+   "o": [
+    "\"constant dalend\"",
+    "\"toenemend dalend\"",
+    "\"afnemend stijgend\"",
+    "\"afnemend dalend\""
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 1,
+   "u": "Bekijk eerst de assen en de eenheden en lees daarna de grafiek stap voor stap af. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"constant dalend\"\"? Dan denk je dat de daling per stap gelijk is. De dalingen worden steeds kleiner, dus afnemend.",
+    "Koos je \"\"toenemend dalend\"\"? Dan denk je dat de daling steeds sneller gaat. Hij wordt juist kleiner, dus afnemend. Door de stappen goed na te lopen kom je uit op afnemend dalend.",
+    "Koos je \"\"afnemend stijgend\"\"? Dan verwar je dalen met stijgen. De temperatuur gaat omlaag, dus dalend. Controleer je stap: de juiste uitkomst is afnemend dalend.",
+    "Klopt: de dalingen zijn 30, 15, 7 en 4 graden per 10 minuten, steeds kleiner."
+   ],
+   "uh": "Hoe beschrijf je het dalen van de temperatuur in de grafiek?",
+   "ctx": "Een kop koffie koelt af in een kamer. Een grafiek laat de temperatuur in graden Celsius zien: 90 graden bij 0 minuten, 60 bij 10 minuten, 45 bij 20 minuten, 38 bij 30 minuten en 34 bij 40 minuten. De grafiek daalt en vlakt af."
+  },
+  {
+   "v": "Hoeveel kilometer legt de fietser in 3,5 uur af?",
+   "o": [
+    "\"42 km\"",
+    "\"40 km, I think\"",
+    "\"84 km\"",
+    "\"7 km\""
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 2,
+   "u": "Bekijk eerst de assen en de eenheden en lees daarna de grafiek stap voor stap af. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: de snelheid is 24 : 2 = 12 km/u, dus 3,5 × 12 = 42 km.",
+    "Koos je \"\"40 km, I think\"\"? Dan neem je een afgerond getal. De snelheid is 12 km/u, dus 3,5 × 12 = 42. Het goede antwoord is 42 km.",
+    "Koos je \"\"84 km\"\"? Dan neem je 7 uur in plaats van 3,5. De tijd is 3,5 uur, dus 3,5 × 12. Door de stappen goed na te lopen kom je uit op 42 km.",
+    "Koos je \"\"7 km\"\"? Dan deel je 3,5 door 12 of reken je anders. De afstand is snelheid maal tijd, dus 3,5 × 12. Controleer je stap: de juiste uitkomst is 42 km."
+   ],
+   "uh": "Hoeveel kilometer legt de fietser in 3,5 uur af?",
+   "ctx": "Een fietser rijdt met een constante snelheid. De grafiek van de afgelegde afstand tegen de tijd is een rechte lijn door de oorsprong en door het punt (2, 24) en het punt (5, 60). De afstand is in kilometer en de tijd in uren."
+  },
+  {
+   "v": "Hoe steil loopt de lijn, uitgedrukt in kilometer per uur?",
+   "o": [
+    "\"24 km/u, volgens mij\"",
+    "\"5 km/u\"",
+    "\"12 km/u\"",
+    "\"60 km/u\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 2,
+   "u": "Bekijk eerst de assen en de eenheden en lees daarna de grafiek stap voor stap af. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"24 km/u, volgens mij\"\"? Dan neem je de afstand na 2 uur als steilheid. De steilheid is afstand gedeeld door tijd, dus 12. Het goede antwoord is 12 km/u.",
+    "Koos je \"\"5 km/u\"\"? Dan neem je het aantal uren bij het tweede punt. De steilheid is afstand gedeeld door tijd, dus 12. Door de stappen goed na te lopen kom je uit op 12 km/u.",
+    "Klopt: 24 : 2 = 60 : 5 = 12 kilometer per uur. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"60 km/u\"\"? Dan neem je de afstand na 5 uur. Deel door 5, dus 12. Controleer je stap: de juiste uitkomst is 12 km/u."
+   ],
+   "uh": "Hoe steil loopt de lijn, uitgedrukt in kilometer per uur?",
+   "ctx": "Een fietser rijdt met een constante snelheid. De grafiek van de afgelegde afstand tegen de tijd is een rechte lijn door de oorsprong en door het punt (2, 24) en het punt (5, 60). De afstand is in kilometer en de tijd in uren."
+  },
+  {
+   "v": "Na hoeveel uur heeft de fietser 48 kilometer afgelegd?",
+   "o": [
+    "\"3 uur\"",
+    "\"4 uur\"",
+    "\"5 uur\"",
+    "\"576 uur\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 0,
+   "u": "Bekijk eerst de assen en de eenheden en lees daarna de grafiek stap voor stap af. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"3 uur\"\"? Dan neem je 36 km. Bij 12 km/u hoort 48 km bij 4 uur, dus 4. Het goede antwoord is 4 uur.",
+    "Klopt: 48 : 12 = 4 uur. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"5 uur\"\"? Dan neem je de tijd bij het punt (5, 60). 48 km hoort eerder, dus bij 4 uur. Door de stappen goed na te lopen kom je uit op 4 uur.",
+    "Koos je \"\"576 uur\"\"? Dan vermenigvuldig je 48 met 12. De tijd is afstand gedeeld door snelheid, dus 48 : 12. Controleer je stap: de juiste uitkomst is 4 uur."
+   ],
+   "uh": "Na hoeveel uur heeft de fietser 48 kilometer afgelegd?",
+   "ctx": "Een fietser rijdt met een constante snelheid. De grafiek van de afgelegde afstand tegen de tijd is een rechte lijn door de oorsprong en door het punt (2, 24) en het punt (5, 60). De afstand is in kilometer en de tijd in uren."
+  },
+  {
+   "v": "Welk punt is het snijpunt van de grafiek met de verticale as?",
+   "o": [
+    "\"(100, 0), eigenlijk\"",
+    "\"(0, 2)\"",
+    "\"(0, 0)\"",
+    "\"(0, 100)\""
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 3,
+   "u": "Bekijk eerst de assen en de eenheden en lees daarna de grafiek stap voor stap af. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"(100, 0), eigenlijk\"\"? Dan verwissel je de coördinaten. Op de verticale as is t gelijk aan 0, dus (0, 100). Het goede antwoord is (0, 100).",
+    "Koos je \"\"(0, 2)\"\"? Dan neem je het grondtal als beginwaarde. De beginwaarde is 100, dus (0, 100). Door de stappen goed na te lopen kom je uit op (0, 100).",
+    "Koos je \"\"(0, 0)\"\"? Dan denk je dat de grafiek door de oorsprong gaat. De grafiek komt nooit bij 0, dus (0, 100). Controleer je stap: de juiste uitkomst is (0, 100).",
+    "Klopt: bij t = 0 is N = 100 · 2⁰ = 100. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Welk punt is het snijpunt van de grafiek met de verticale as?",
+   "ctx": "Het aantal bacteriën in een kweek wordt beschreven met N = 100 · 2^t, waarbij t de tijd in uren is. De grafiek begint bij 100 bacteriën, stijgt steeds sneller en nadert aan de linkerkant de horizontale as, zonder die te raken."
+  },
+  {
+   "v": "Met welke factor groeit het aantal bacteriën elk uur?",
+   "o": [
+    "\"2\"",
+    "\"100\"",
+    "\"200\"",
+    "\"1\""
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 2,
+   "u": "Bekijk eerst de assen en de eenheden en lees daarna de grafiek stap voor stap af. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: bij elke stap van 1 uur wordt N vermenigvuldigd met 2.",
+    "Koos je \"\"100\"\"? Dan neem je de beginwaarde als factor. De factor is het grondtal, dus 2. Het goede antwoord is 2.",
+    "Koos je \"\"200\"\"? Dan neem je het aantal na 1 uur. De factor is het getal waarmee je vermenigvuldigt, dus 2. Door de stappen goed na te lopen kom je uit op 2.",
+    "Koos je \"\"1\"\"? Dan denk je dat er niets verandert. Het aantal verdubbelt elk uur, dus de factor is 2. Controleer je stap: de juiste uitkomst is 2."
+   ],
+   "uh": "Met welke factor groeit het aantal bacteriën elk uur?",
+   "ctx": "Het aantal bacteriën in een kweek wordt beschreven met N = 100 · 2^t, waarbij t de tijd in uren is. De grafiek begint bij 100 bacteriën, stijgt steeds sneller en nadert aan de linkerkant de horizontale as, zonder die te raken."
+  },
+  {
+   "v": "Hoe beschrijf je het stijgen van de grafiek?",
+   "o": [
+    "\"constant stijgend, denk ik\"",
+    "\"afnemend stijgend\"",
+    "\"toenemend stijgend\"",
+    "\"toenemend dalend\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 1,
+   "u": "Bekijk eerst de assen en de eenheden en lees daarna de grafiek stap voor stap af. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"constant stijgend, denk ik\"\"? Dan denk je aan een rechte lijn. De toename per uur wordt groter, dus toenemend. Het goede antwoord is toenemend stijgend.",
+    "Koos je \"\"afnemend stijgend\"\"? Dan denk je aan een grafiek die vlakker wordt. Hier wordt de grafiek steiler, dus toenemend.",
+    "Klopt: de toename per uur is 100, 200, 400, steeds groter.",
+    "Koos je \"\"toenemend dalend\"\"? Dan verwar je stijgen met dalen. Het aantal bacteriën neemt toe, dus stijgend. Controleer je stap: de juiste uitkomst is toenemend stijgend."
+   ],
+   "uh": "Hoe beschrijf je het stijgen van de grafiek?",
+   "ctx": "Het aantal bacteriën in een kweek wordt beschreven met N = 100 · 2^t, waarbij t de tijd in uren is. De grafiek begint bij 100 bacteriën, stijgt steeds sneller en nadert aan de linkerkant de horizontale as, zonder die te raken."
+  },
+  {
+   "v": "Hoeveel bacteriën zijn er na 4 uur?",
+   "o": [
+    "\"800\"",
+    "\"1600\"",
+    "\"400\"",
+    "\"200 000\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 0,
+   "u": "Bekijk eerst de assen en de eenheden en lees daarna de grafiek stap voor stap af. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"800\"\"? Dan neem je het aantal na 3 uur. Na 4 uur is er nog eens verdubbeld, dus 1600. Het goede antwoord is 1600.",
+    "Klopt: 100 · 2⁴ = 100 · 16 = 1600. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"400\"\"? Dan neem je het aantal na 2 uur. Dat is te vroeg, dus 1600. Door de stappen goed na te lopen kom je uit op 1600.",
+    "Koos je \"\"200 000\"\"? Dan bereken je 100 · 2000 of 100^2. Het is 100 · 2⁴, dus 1600. Controleer je stap: de juiste uitkomst is 1600."
+   ],
+   "uh": "Hoeveel bacteriën zijn er na 4 uur?",
+   "ctx": "Het aantal bacteriën in een kweek wordt beschreven met N = 100 · 2^t, waarbij t de tijd in uren is. De grafiek begint bij 100 bacteriën, stijgt steeds sneller en nadert aan de linkerkant de horizontale as, zonder die te raken."
+  },
+  {
+   "v": "Welke waarde heeft y volgens de formule als x = 5?",
+   "o": [
+    "\"300\"",
+    "\"55\"",
+    "\"10\"",
+    "\"12\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 0,
+   "u": "Bekijk eerst de assen en de eenheden en lees daarna de grafiek stap voor stap af. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"300\"\"? Dan vermenigvuldig je 60 met 5. Het verband is y = 60/x, dus 60 : 5. Het goede antwoord is 12.",
+    "Koos je \"\"55\"\"? Dan trek je 5 van 60 af. De formule bevat een deling, dus 60 : 5. Door de stappen goed na te lopen kom je uit op 12.",
+    "Koos je \"\"10\"\"? Dan neem je de y-waarde bij x = 6. Bij x = 5 hoort een waarde tussen 15 en 10, namelijk 12. Controleer je stap: de juiste uitkomst is 12.",
+    "Klopt: 60 : 5 = 12. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Welke waarde heeft y volgens de formule als x = 5?",
+   "ctx": "De grafiek van een omgekeerd evenredig verband is y = 60/x, met punten (1, 60), (2, 30), (3, 20), (4, 15) en (6, 10). De grafiek daalt voor positieve x steeds langzamer en komt dicht bij de assen, zonder ze te raken."
+  },
+  {
+   "v": "Welke lijn nadert de grafiek voor grote x, zonder die te raken?",
+   "o": [
+    "\"de horizontale as, y = 0\"",
+    "\"de lijn y = 60, eigenlijk, denk ik\"",
+    "\"de lijn x = 60\"",
+    "\"de lijn y = x\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 3,
+   "u": "Bekijk eerst de assen en de eenheden en lees daarna de grafiek stap voor stap af. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: voor grote x wordt 60/x steeds kleiner en komt dicht bij 0.",
+    "Koos je \"\"de lijn y = 60, eigenlijk, denk ik\"\"? Dan denk je aan de teller. Die is een vaste waarde van de formule, maar de grafiek nadert 0.",
+    "Koos je \"\"de lijn x = 60\"\"? Dan denk je aan de teller als verticale lijn. Voor grote x ligt de grafiek dicht bij de horizontale as, dus y = 0.",
+    "Koos je \"\"de lijn y = x\"\"? Dan denk je aan de diagonaal. De grafiek van y = 60/x snijdt die op één plek, maar nadert hem niet."
+   ],
+   "uh": "Welke lijn nadert de grafiek voor grote x, zonder die te raken?",
+   "ctx": "De grafiek van een omgekeerd evenredig verband is y = 60/x, met punten (1, 60), (2, 30), (3, 20), (4, 15) en (6, 10). De grafiek daalt voor positieve x steeds langzamer en komt dicht bij de assen, zonder ze te raken."
+  },
+  {
+   "v": "Waarom snijdt de grafiek van y = 60/x de assen niet?",
+   "o": [
+    "\"de grafiek is een rechte lijn\"",
+    "\"de formule heeft geen beginwaarde, gewoon, volgens mij\"",
+    "\"x · y is altijd 60, dus x en y kunnen nooit 0 zijn\"",
+    "\"de grafiek begint bij x = 1\""
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 3,
+   "u": "Bekijk eerst de assen en de eenheden en lees daarna de grafiek stap voor stap af. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"de grafiek is een rechte lijn\"\"? Dan denk je dat de grafiek rechtlijnig is. De grafiek is gebogen, en het product is constant.",
+    "Koos je \"\"de formule heeft geen beginwaarde, gewoon, volgens mij\"\"? Dan denk je dat een beginwaarde ontbreekt. De reden is het constante product, dus x · y = 60.",
+    "Klopt: als x of y gelijk zou zijn aan 0, dan zou het product 0 zijn en niet 60.",
+    "Koos je \"\"de grafiek begint bij x = 1\"\"? Dan denk je dat de grafiek bij x = 1 begint. De grafiek loopt door voor kleinere x, maar komt nooit op de as."
+   ],
+   "uh": "Waarom snijdt de grafiek van y = 60/x de assen niet?",
+   "ctx": "De grafiek van een omgekeerd evenredig verband is y = 60/x, met punten (1, 60), (2, 30), (3, 20), (4, 15) en (6, 10). De grafiek daalt voor positieve x steeds langzamer en komt dicht bij de assen, zonder ze te raken."
+  },
+  {
+   "v": "Welke coördinaten heeft het snijpunt van de lijnen A en B?",
+   "o": [
+    "\"(7, 3), denk ik\"",
+    "\"(3, 7)\"",
+    "\"(9, 3)\"",
+    "\"(0, 1)\""
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 3,
+   "u": "Bekijk eerst de assen en de eenheden en lees daarna de grafiek stap voor stap af. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"(7, 3), denk ik\"\"? Dan verwissel je x en y. De x-waarde is 3, dus (3, 7). Het goede antwoord is (3, 7).",
+    "Klopt: 2x + 1 = −x + 10 geeft x = 3 en y = 7. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"(9, 3)\"\"? Dan tel de getallen uit de formules. Los 2x + 1 = −x + 10 op, dus x = 3 en y = 7. Door de stappen goed na te lopen kom je uit op (3, 7).",
+    "Koos je \"\"(0, 1)\"\"? Dan neem je het snijpunt van lijn A met de y-as. Gevraagd is het snijpunt van de twee lijnen, dus (3, 7)."
+   ],
+   "uh": "Welke coördinaten heeft het snijpunt van de lijnen A en B?",
+   "ctx": "Twee rechte lijnen in een assenstelsel hebben de formules A: y = 2x + 1 en B: y = −x + 10. Een leerling wil weten waar de lijnen elkaar snijden, welke lijn stijgt en welke grafiek op een bepaald moment hoger ligt."
+  },
+  {
+   "v": "Welke van de twee lijnen is stijgend?",
+   "o": [
+    "\"alleen B\"",
+    "\"beide lijnen\"",
+    "\"geen van beide\"",
+    "\"alleen A\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 1,
+   "u": "Bekijk eerst de assen en de eenheden en lees daarna de grafiek stap voor stap af. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"alleen B\"\"? Dan denk je dat B de stijgende is. De helling van B is −1, dus B daalt. Het goede antwoord is alleen A.",
+    "Koos je \"\"beide lijnen\"\"? Dan denk je dat beide stijgen. De helling van B is negatief, dus B daalt. Door de stappen goed na te lopen kom je uit op alleen A.",
+    "Koos je \"\"geen van beide\"\"? Dan denk je dat geen lijn stijgt. De helling van A is 2, dus A stijgt. Controleer je stap: de juiste uitkomst is alleen A.",
+    "Klopt: A heeft helling 2 en B heeft helling −1, dus alleen A stijgt."
+   ],
+   "uh": "Welke van de twee lijnen is stijgend?",
+   "ctx": "Twee rechte lijnen in een assenstelsel hebben de formules A: y = 2x + 1 en B: y = −x + 10. Een leerling wil weten waar de lijnen elkaar snijden, welke lijn stijgt en welke grafiek op een bepaald moment hoger ligt."
+  },
+  {
+   "v": "Welke lijn ligt bij x = 5 hoger, A of B?",
+   "o": [
+    "\"A, want 11 is meer dan 5\"",
+    "\"B, want 10 is meer dan 1, zeg maar\"",
+    "\"A, want 5 is meer dan 11\"",
+    "\"ze liggen even hoog\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 4,
+   "u": "Bekijk eerst de assen en de eenheden en lees daarna de grafiek stap voor stap af. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: A geeft 2 · 5 + 1 = 11 en B geeft −5 + 10 = 5. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"B, want 10 is meer dan 1, zeg maar\"\"? Dan kijk je naar de beginwaarden bij x = 0. Bij x = 5 is het anders, namelijk 11 voor A en 5 voor B.",
+    "Koos je \"\"A, want 5 is meer dan 11\"\"? Dan lees je de getallen in de verkeerde volgorde. A geeft 11 en B geeft 5, dus A ligt hoger.",
+    "Koos je \"\"ze liggen even hoog\"\"? Dan denk je dat het snijpunt bij x = 5 ligt. Het snijpunt is bij x = 3, dus bij x = 5 ligt A hoger."
+   ],
+   "uh": "Welke lijn ligt bij x = 5 hoger, A of B?",
+   "ctx": "Twee rechte lijnen in een assenstelsel hebben de formules A: y = 2x + 1 en B: y = −x + 10. Een leerling wil weten waar de lijnen elkaar snijden, welke lijn stijgt en welke grafiek op een bepaald moment hoger ligt."
+  },
+  {
+   "v": "Bij welke hoeveelheid q zijn de kosten en de opbrengst gelijk?",
+   "o": [
+    "\"q = 500, you know\"",
+    "\"q = 25\"",
+    "\"q = 20\"",
+    "\"q = 10\""
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 4,
+   "u": "Bekijk eerst de assen en de eenheden en lees daarna de grafiek stap voor stap af. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"q = 500, you know\"\"? Dan neem je de vaste kosten als hoeveelheid. Los 500 + 20q = 45q op, dus q = 20. Het goede antwoord is q = 20.",
+    "Koos je \"\"q = 25\"\"? Dan neem je het verschil 45 − 20 als hoeveelheid. Je moet 500 delen door 25, dus q = 20. Door de stappen goed na te lopen kom je uit op q = 20.",
+    "Klopt: 500 + 20q = 45q geeft 25q = 500 en dus q = 20. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"q = 10\"\"? Dan neem je de helft. Bij q = 10 is de opbrengst nog te laag, en het break-evenpunt is bij 20. Controleer je stap: de juiste uitkomst is q = 20."
+   ],
+   "uh": "Bij welke hoeveelheid q zijn de kosten en de opbrengst gelijk?",
+   "ctx": "Een bedrijf heeft vaste kosten van €500 en betaalt €20 per product. De kosten zijn K = 500 + 20q. De opbrengst is €45 per product, dus O = 45q. De directeur tekent beide lijnen in één assenstelsel en zoekt het break-evenpunt."
+  },
+  {
+   "v": "Welk punt is het snijpunt van de kostenlijn met de verticale as?",
+   "o": [
+    "\"(500, 0), gewoon\"",
+    "\"(0, 500)\"",
+    "\"(0, 0)\"",
+    "\"(0, 20)\""
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 3,
+   "u": "Bekijk eerst de assen en de eenheden en lees daarna de grafiek stap voor stap af. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"(500, 0), gewoon\"\"? Dan verwissel je de coördinaten. Op de verticale as is q gelijk aan 0, dus (0, 500). Het goede antwoord is (0, 500).",
+    "Klopt: bij q = 0 is K = 500, de vaste kosten. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"(0, 0)\"\"? Dan denk je dat de kosten bij 0 producten 0 zijn. Er zijn vaste kosten, dus (0, 500). Door de stappen goed na te lopen kom je uit op (0, 500).",
+    "Koos je \"\"(0, 20)\"\"? Dan neem je de variabele kosten per product. De beginwaarde van K is 500, dus (0, 500). Controleer je stap: de juiste uitkomst is (0, 500)."
+   ],
+   "uh": "Welk punt is het snijpunt van de kostenlijn met de verticale as?",
+   "ctx": "Een bedrijf heeft vaste kosten van €500 en betaalt €20 per product. De kosten zijn K = 500 + 20q. De opbrengst is €45 per product, dus O = 45q. De directeur tekent beide lijnen in één assenstelsel en zoekt het break-evenpunt."
+  },
+  {
+   "v": "Hoeveel euro bedraagt de winst bij q = 30?",
+   "o": [
+    "\"€1100\"",
+    "\"€1350\"",
+    "\"€750\"",
+    "\"€250\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 0,
+   "u": "Bekijk eerst de assen en de eenheden en lees daarna de grafiek stap voor stap af. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"€1100\"\"? Dan neem je de kosten bij q = 30. De winst is opbrengst min kosten, dus 1350 − 1100. Het goede antwoord is €250.",
+    "Koos je \"\"€1350\"\"? Dan neem je de opbrengst bij q = 30. Trek de kosten af, dus 250. Door de stappen goed na te lopen kom je uit op €250.",
+    "Koos je \"\"€750\"\"? Dan trek je 600 af van 1350. Ook de vaste kosten van 500 horen bij de kosten, dus 1350 − 1100. Controleer je stap: de juiste uitkomst is €250.",
+    "Klopt: opbrengst 45 · 30 = 1350 min kosten 500 + 600 = 1100 geeft 250."
+   ],
+   "uh": "Hoeveel euro bedraagt de winst bij q = 30?",
+   "ctx": "Een bedrijf heeft vaste kosten van €500 en betaalt €20 per product. De kosten zijn K = 500 + 20q. De opbrengst is €45 per product, dus O = 45q. De directeur tekent beide lijnen in één assenstelsel en zoekt het break-evenpunt."
+  },
+  {
+   "v": "Welke lijn ligt bij q = 10 lager, kosten of opbrengst?",
+   "o": [
+    "\"de opbrengst, 450 tegen 700\"",
+    "\"de kosten, 700 tegen 450\"",
+    "\"ze zijn gelijk, beide 900, volgens mij\"",
+    "\"de kosten, 500 tegen 450\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 4,
+   "u": "Bekijk eerst de assen en de eenheden en lees daarna de grafiek stap voor stap af. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: O = 45 · 10 = 450 en K = 500 + 200 = 700, dus de opbrengst ligt lager.",
+    "Koos je \"\"de kosten, 700 tegen 450\"\"? Dan draai je de uitkomsten om. De kosten zijn 700 en de opbrengst 450, dus de opbrengst is lager.",
+    "Koos je \"\"ze zijn gelijk, beide 900, volgens mij\"\"? Dan neem je de waarden bij het break-evenpunt. Bij q = 10 zijn ze niet gelijk, want dat gebeurt bij q = 20.",
+    "Koos je \"\"de kosten, 500 tegen 450\"\"? Dan vergeet je de variabele kosten van 200. De kosten zijn 500 + 200 = 700, dus hoger."
+   ],
+   "uh": "Welke lijn ligt bij q = 10 lager, kosten of opbrengst?",
+   "ctx": "Een bedrijf heeft vaste kosten van €500 en betaalt €20 per product. De kosten zijn K = 500 + 20q. De opbrengst is €45 per product, dus O = 45q. De directeur tekent beide lijnen in één assenstelsel en zoekt het break-evenpunt."
+  }
+ ],
+ "oe": [
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een lineaire grafiek gaat door de punten (0, 50) en (4, 90). Een leerling wil de formule bij de grafiek opstellen en de waarde van y bij x = 7 berekenen.",
+   "v": "Stel de formule op en bereken y bij x = 7.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Toename per eenheid x: (90 − 50) : 4 = 10 (1p). Formule y = 50 + 10x (1p). Bij x = 7: y = 50 + 70 = 120 (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een grafiek geeft de temperatuur van thee: 80 graden bij 0 minuten, 50 bij 5 minuten, 35 bij 10 minuten en 28 bij 15 minuten. Een leerling beschrijft het verloop en berekent de dalingen per stap.",
+   "v": "Beschrijf het dalen en bereken de dalingen per 5 minuten.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Dalingen: 30, 15 en 7 graden (1p). De dalingen worden steeds kleiner (1p). Het is dus afnemend dalend (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Twee lijnen hebben de formules A: y = 3x − 2 en B: y = x + 6. Een leerling zoekt het snijpunt van de lijnen en wil weten welke lijn bij x = 10 het hoogst ligt.",
+   "v": "Bereken de coördinaten van het snijpunt en vergelijk de lijnen bij x = 10.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "3x − 2 = x + 6 geeft x = 4 (1p). y = 3 · 4 − 2 = 10, dus (4, 10) (1p). Bij x = 10: A is 28 en B is 16, dus A ligt hoger (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Het aantal leden van een app volgt N = 200 · 1,5^t, waarbij t het aantal maanden is. Een leerling wil de beginwaarde, de groeifactor en het aantal leden na 2 maanden weten en het soort stijgen beschrijven.",
+   "v": "Geef de beginwaarde, de groeifactor en N bij t = 2 en beschrijf de stijging.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Beginwaarde 200 en groeifactor 1,5 (1p). N = 200 · 1,5² = 450 (1p). De stijging per maand wordt steeds groter, dus toenemend stijgend (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een klasgenoot zegt dat de grafiek van y = 40/x een dalende recht evenredig verband is. Jij weet dat dit niet klopt. Je wilt het juiste soort verband noemen en dat laten zien met twee punten.",
+   "v": "Leg uit welk verband het is en toon dat aan met x = 2 en x = 4.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Het is omgekeerd evenredig: het product x · y is constant (1p). Bij x = 2 is y = 20 en bij x = 4 is y = 10 (1p). 2 · 20 = 4 · 10 = 40, dus niet recht evenredig (1p)."
+  }
+ ]
+}
