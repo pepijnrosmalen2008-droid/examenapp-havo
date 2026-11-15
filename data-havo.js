@@ -47331,6 +47331,688 @@ var VAKKEN = [
         "u": "2x < 8 dus x < 4 (1p). Bij x = 7: 2 · 7 + 3 = 17 en dat is niet kleiner dan 11 (1p). De leerling vergat te delen door 2 (1p)."
        }
       ]
+     },
+     {
+      "id": "C4",
+      "lo": "wa.C.4",
+      "gs": 2,
+      "naam": "Formules opstellen en rekenen door substitutie",
+      "beschrijving": "Je rekent met formules door waarden in te vullen, stelt formules op en past ze aan bij een nieuwe situatie, vervangt een variabele door een uitdrukking en vereenvoudigt het resultaat.",
+      "ceStatus": "CE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Rekenen door substitutie",
+       "Een formule opstellen",
+       "Een formule wijzigen",
+       "Een variabele vervangen",
+       "Controleren met een getal"
+      ],
+      "sam": "Met substitutie vul je een getal in een formule in en let je op de volgorde van bewerkingen. Bij het opstellen zoek je de vaste en variabele delen. Bij wijzigen verandert alleen wat in de situatie verandert, en een korting is een factor over het hele bedrag. Vervang je een variabele door een uitdrukking, werk dan haakjes weg en vereenvoudig. Controleer met een getal.",
+      "begrippen": [
+       {
+        "t": "Formule",
+        "d": "Een regel die zegt hoe je uit de ene grootheid de andere berekent, zoals K = 3 + 2,50k."
+       },
+       {
+        "t": "Variabele",
+        "d": "Een letter in de formule die een getal kan zijn, zoals k of t."
+       },
+       {
+        "t": "Substitutie",
+        "d": "Een getal invullen in de plaats van een variabele en uitrekenen."
+       },
+       {
+        "t": "Constante",
+        "d": "Een vast getal in de formule, zoals de 3 in K = 3 + 2,50k."
+       },
+       {
+        "t": "Coëfficiënt",
+        "d": "Het getal voor de variabele, zoals 2,50 in 2,50k."
+       },
+       {
+        "t": "Formule opstellen",
+        "d": "Uit een tekst of tabel de formule bedenken door vaste en variabele delen te herkennen."
+       },
+       {
+        "t": "Formule wijzigen",
+        "d": "Een nieuwe formule maken als de situatie verandert, zoals een korting of verhoging."
+       },
+       {
+        "t": "Variabele vervangen",
+        "d": "In een formule een letter vervangen door een uitdrukking in een andere letter."
+       },
+       {
+        "t": "Vereenvoudigen",
+        "d": "De nieuwe formule met haakjes wegwerken en termen samennemen."
+       },
+       {
+        "t": "Volgorde van bewerkingen",
+        "d": "Eerst haakjes en machten, dan vermenigvuldigen en delen, dan optellen en aftrekken."
+       },
+       {
+        "t": "Korting als factor",
+        "d": "20% korting betekent vermenigvuldigen met 0,8; de factor geldt voor het hele bedrag."
+       },
+       {
+        "t": "Controleren",
+        "d": "Een getal invullen in de oude én nieuwe formule; de uitkomsten moeten gelijk zijn."
+       }
+      ],
+      "sv": [
+       {
+        "v": "In y = 3t + 2 neemt t de waarde 4 aan. Welke y hoort daarbij?",
+        "o": [
+         "\"18\"",
+         "\"14\"",
+         "\"12\"",
+         "\"9\""
+        ],
+        "c": 1,
+        "d": 1,
+        "s": 0,
+        "u": "Vul de waarde zorgvuldig in, let op haakjes en volgorde van de bewerkingen en controleer je antwoord. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"18\"\"? Dan reken je 3 · (4 + 2). De 2 staat los in de formule, dus eerst 3 · 4 en dan + 2. Het goede antwoord is 14.",
+         "Klopt: 3 · 4 + 2 = 12 + 2 = 14. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"12\"\"? Dan laat je de + 2 weg. De formule heeft ook een constante, dus 12 + 2. Door de stappen goed na te lopen kom je uit op 14.",
+         "Koos je \"\"9\"\"? Dan tel je 3, 4 en 2 op. De formule bevat een product, dus 3 · 4 + 2. Controleer je stap: de juiste uitkomst is 14."
+        ],
+        "uh": "In y = 3t + 2 neemt t de waarde 4 aan. Welke y hoort daarbij?"
+       },
+       {
+        "v": "De formule y = x² + 1 wordt uitgerekend voor x = 3. Welk antwoord komt eruit?",
+        "o": [
+         "\"7\"",
+         "\"16\"",
+         "\"9\"",
+         "\"10\""
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 0,
+        "u": "Vul de waarde zorgvuldig in, let op haakjes en volgorde van de bewerkingen en controleer je antwoord. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"7\"\"? Dan reken je 3 · 2 + 1. Het kwadraat betekent 3 · 3, dus 9 + 1. Het goede antwoord is 10.",
+         "Koos je \"\"16\"\"? Dan reken je (3 + 1)². Het kwadraat geldt alleen voor x, dus 3² + 1. Door de stappen goed na te lopen kom je uit op 10.",
+         "Koos je \"\"9\"\"? Dan laat je de + 1 weg. De formule heeft ook een constante, dus 9 + 1. Controleer je stap: de juiste uitkomst is 10.",
+         "Klopt: 3² = 9 en 9 + 1 = 10. Reken dit na met de gegeven gegevens."
+        ],
+        "uh": "De formule y = x² + 1 wordt uitgerekend voor x = 3. Welk antwoord komt eruit?"
+       },
+       {
+        "v": "Parkeren kost €2 per uur plus €1 voor het kaartje. Welke formule geeft de kosten K bij u uur?",
+        "o": [
+         "\"K = 2u + 1\"",
+         "\"K = 2 + u\"",
+         "\"K = 3u\"",
+         "\"K = 2u · 1, I suppose\""
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 1,
+        "u": "Vul de waarde zorgvuldig in, let op haakjes en volgorde van de bewerkingen en controleer je antwoord. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: 2 euro per uur geeft 2u en het kaartje is eenmalig €1, dus K = 2u + 1.",
+         "Koos je \"\"K = 2 + u\"\"? Dan verwissel je het bedrag per uur en de eenmalige kosten. De u hoort bij de €2 per uur, dus 2u + 1.",
+         "Koos je \"\"K = 3u\"\"? Dan tel je de bedragen 2 en 1 bij elkaar en laat je het kaartje meegroeien. Het kaartje is eenmalig, dus 2u + 1.",
+         "Koos je \"\"K = 2u · 1, I suppose\"\"? Dan vermenigvuldig je het kaartje met 2u. Een eenmalig bedrag komt er bij, dus 2u + 1. Controleer je stap: de juiste uitkomst is K = 2u + 1."
+        ],
+        "uh": "Parkeren kost €2 per uur plus €1 voor het kaartje. Welke formule geeft de kosten K bij u uur?"
+       },
+       {
+        "v": "Een abonnement kost €15 per maand en je krijgt eenmalig €5 korting. Welke formule geeft K bij m maanden?",
+        "o": [
+         "\"K = 15m + 5, you know\"",
+         "\"K = 15 − 5m\"",
+         "\"K = 15m − 5\"",
+         "\"K = 10m\""
+        ],
+        "c": 2,
+        "d": 1,
+        "s": 1,
+        "u": "Vul de waarde zorgvuldig in, let op haakjes en volgorde van de bewerkingen en controleer je antwoord. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"K = 15m + 5, you know\"\"? Dan tel je de korting erbij op. Een korting trek je af, dus 15m − 5. Het goede antwoord is K = 15m − 5.",
+         "Koos je \"\"K = 15 − 5m\"\"? Dan zet dit je de m bij de korting. De m hoort bij het bedrag per maand, dus 15m − 5. Door de stappen goed na te lopen kom je uit op K = 15m − 5.",
+         "Klopt: 15 per maand geeft 15m, en de korting van 5 trek je eenmalig af.",
+         "Koos je \"\"K = 10m\"\"? Dan trek je de korting af van het maandbedrag. De korting geldt eenmalig, dus 15m − 5. Controleer je stap: de juiste uitkomst is K = 15m − 5."
+        ],
+        "uh": "Een abonnement kost €15 per maand en je krijgt eenmalig €5 korting. Welke formule geeft K bij m maanden?"
+       },
+       {
+        "v": "Gegeven is A = l · b en b = 5. Welke formule geeft A uitgedrukt in alleen l?",
+        "o": [
+         "\"A = l + 5\"",
+         "\"A = 5l\"",
+         "\"A = l/5\"",
+         "\"A = 5\""
+        ],
+        "c": 1,
+        "d": 1,
+        "s": 2,
+        "u": "Vul de waarde zorgvuldig in, let op haakjes en volgorde van de bewerkingen en controleer je antwoord. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"A = l + 5\"\"? Dan tel je l en 5 op. De formule bevat een product, dus l · 5. Het goede antwoord is A = 5l.",
+         "Klopt: vervang b door 5, dus A = l · 5 = 5l. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"A = l/5\"\"? Dan deel je l door 5. De oppervlakte is lengte maal breedte, dus 5l. Door de stappen goed na te lopen kom je uit op A = 5l.",
+         "Koos je \"\"A = 5\"\"? Dan laat je de l weg. De oppervlakte hangt nog van de lengte af, dus 5l. Controleer je stap: de juiste uitkomst is A = 5l."
+        ],
+        "uh": "Gegeven is A = l · b en b = 5. Welke formule geeft A uitgedrukt in alleen l?"
+       },
+       {
+        "v": "In y = 3x + 1 vervang je x door 2t. Welke formule krijg je voor y?",
+        "o": [
+         "\"y = 3t + 1, I think\"",
+         "\"y = 6t + 2\"",
+         "\"y = 5t + 1\"",
+         "\"y = 6t + 1\""
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 3,
+        "u": "Vul de waarde zorgvuldig in, let op haakjes en volgorde van de bewerkingen en controleer je antwoord. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"y = 3t + 1, I think\"\"? Dan laat je de 2 weg. 3x wordt 3 · 2t, dus 6t. Het goede antwoord is y = 6t + 1.",
+         "Koos je \"\"y = 6t + 2\"\"? Dan vermenigvuldig je ook de 1 met 2. De constante 1 staat los van x, dus 6t + 1. Door de stappen goed na te lopen kom je uit op y = 6t + 1.",
+         "Koos je \"\"y = 5t + 1\"\"? Dan tel je 3 en 2 bij elkaar op. Vermenigvuldigen geeft 3 · 2, dus 6t. Controleer je stap: de juiste uitkomst is y = 6t + 1.",
+         "Klopt: 3 · 2t = 6t, dus y = 6t + 1. Reken dit na met de gegeven gegevens."
+        ],
+        "uh": "In y = 3x + 1 vervang je x door 2t. Welke formule krijg je voor y?"
+       },
+       {
+        "v": "De formule y = 4x − 3 geeft bij x = 2 de waarde 5. Welke waarde geeft x = 5?",
+        "o": [
+         "\"17\"",
+         "\"20\"",
+         "\"23\"",
+         "\"2\""
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 4,
+        "u": "Vul de waarde zorgvuldig in, let op haakjes en volgorde van de bewerkingen en controleer je antwoord. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: 4 · 5 − 3 = 20 − 3 = 17. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"20\"\"? Dan laat je de − 3 weg. De formule heeft ook een constante, dus 20 − 3. Het goede antwoord is 17.",
+         "Koos je \"\"23\"\"? Dan tel je 3 erbij op in plaats van af te trekken. De formule heeft − 3, dus 20 − 3. Door de stappen goed na te lopen kom je uit op 17.",
+         "Koos je \"\"2\"\"? Dan trek je alleen 3 af van x. De formule vermenigvuldigt eerst met 4, dus 4 · 5 − 3. Controleer je stap: de juiste uitkomst is 17."
+        ],
+        "uh": "De formule y = 4x − 3 geeft bij x = 2 de waarde 5. Welke waarde geeft x = 5?"
+       },
+       {
+        "v": "Hoeveel euro kost een rit van 8 kilometer?",
+        "o": [
+         "\"€44\"",
+         "\"€20\"",
+         "\"€23\"",
+         "\"€10,50\""
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 0,
+        "u": "Vul de waarde zorgvuldig in, let op haakjes en volgorde van de bewerkingen en controleer je antwoord. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"€44\"\"? Dan reken je (3 + 2,50) · 8. De €3 is een eenmalig bedrag, dus 3 + 2,50 · 8. Het goede antwoord is €23.",
+         "Koos je \"\"€20\"\"? Dan laat je de €3 weg. De formule heeft ook een instaptarief, dus 3 + 20. Door de stappen goed na te lopen kom je uit op €23.",
+         "Klopt: 3 + 2,50 · 8 = 3 + 20 = 23. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"€10,50\"\"? Dan tel je 3, 2,50 en 8 bij elkaar op. De kilometers vermenigvuldig je met 2,50, dus 3 + 20. Controleer je stap: de juiste uitkomst is €23."
+        ],
+        "uh": "Hoeveel euro kost een rit van 8 kilometer?",
+        "ctx": "Een taxibedrijf berekent de kosten van een rit met de formule K = 3 + 2,50k, waarbij k het aantal kilometers is en K de kosten in euro. Een klant wil de kosten voor verschillende ritten uitrekenen en ook zoeken hoe ver hij kan rijden voor een gegeven bedrag."
+       },
+       {
+        "v": "Een tweede klant rijdt 12 kilometer. Welk bedrag in euro betaalt zij?",
+        "o": [
+         "\"€36\"",
+         "\"€33\"",
+         "\"€30\"",
+         "\"€17,50\""
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 0,
+        "u": "Vul de waarde zorgvuldig in, let op haakjes en volgorde van de bewerkingen en controleer je antwoord. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"€36\"\"? Dan reken je 3 · 12. Het instaptarief komt maar één keer voor, dus 3 + 30. Het goede antwoord is €33.",
+         "Klopt: 3 + 2,50 · 12 = 3 + 30 = 33. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"€30\"\"? Dan laat je de €3 weg. Het instaptarief hoort erbij, dus 33. Door de stappen goed na te lopen kom je uit op €33.",
+         "Koos je \"\"€17,50\"\"? Dan tel je 3, 2,50 en 12 op en rond je af. De kilometers vermenigvuldig je met 2,50, dus 3 + 30. Controleer je stap: de juiste uitkomst is €33."
+        ],
+        "uh": "Een tweede klant rijdt 12 kilometer. Welk bedrag in euro betaalt zij?",
+        "ctx": "Een taxibedrijf berekent de kosten van een rit met de formule K = 3 + 2,50k, waarbij k het aantal kilometers is en K de kosten in euro. Een klant wil de kosten voor verschillende ritten uitrekenen en ook zoeken hoe ver hij kan rijden voor een gegeven bedrag."
+       },
+       {
+        "v": "Hoeveel kilometer kan de klant rijden als hij precies €28 betaalt?",
+        "o": [
+         "\"12,4 km\"",
+         "\"11,2 km\"",
+         "\"25 km\"",
+         "\"10 km\""
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 4,
+        "u": "Vul de waarde zorgvuldig in, let op haakjes en volgorde van de bewerkingen en controleer je antwoord. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"12,4 km\"\"? Dan tel je het instaptarief juist bij 28 op. Het instaptarief is al betaald, dus je trekt het eerst af.",
+         "Koos je \"\"11,2 km\"\"? Dan deel je 28 meteen door 2,50. Dan houd je geen rekening met de vaste €3, dus eerst 28 − 3 = 25. Door de stappen goed na te lopen kom je uit op 10 km.",
+         "Koos je \"\"25 km\"\"? Dan neem je 28 − 3 als aantal kilometers. Je moet nog delen door 2,50, dus 10. Controleer je stap: de juiste uitkomst is 10 km.",
+         "Klopt: 3 + 2,50k = 28 geeft 2,50k = 25 en dus k = 10. Reken dit na met de gegeven gegevens."
+        ],
+        "uh": "Hoeveel kilometer kan de klant rijden als hij precies €28 betaalt?",
+        "ctx": "Een taxibedrijf berekent de kosten van een rit met de formule K = 3 + 2,50k, waarbij k het aantal kilometers is en K de kosten in euro. Een klant wil de kosten voor verschillende ritten uitrekenen en ook zoeken hoe ver hij kan rijden voor een gegeven bedrag."
+       },
+       {
+        "v": "Welke formule geeft de oppervlakte A in alleen l, met b = l − 3?",
+        "o": [
+         "\"A = l² − 3l\"",
+         "\"A = l² − 3, denk ik\"",
+         "\"A = 2l − 3\"",
+         "\"A = l − 3\""
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 2,
+        "u": "Vul de waarde zorgvuldig in, let op haakjes en volgorde van de bewerkingen en controleer je antwoord. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: A = l · (l − 3) = l² − 3l. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"A = l² − 3, denk ik\"\"? Dan vermenigvuldig je alleen l met l en laat je de 3 staan. Beide termen in de haakjes krijgen de factor l, dus l² − 3l.",
+         "Koos je \"\"A = 2l − 3\"\"? Dan tel je l en l − 3 op in plaats van te vermenigvuldigen. De oppervlakte is een product, dus l · (l − 3).",
+         "Koos je \"\"A = l − 3\"\"? Dan laat je de factor l weg. De oppervlakte is lengte maal breedte, dus l · (l − 3). Controleer je stap: de juiste uitkomst is A = l² − 3l."
+        ],
+        "uh": "Welke formule geeft de oppervlakte A in alleen l, met b = l − 3?",
+        "ctx": "Voor een rechthoek geldt O = 2(l + b) voor de omtrek en A = l · b voor de oppervlakte. In een opgave is de breedte altijd 3 minder dan de lengte, dus b = l − 3. Een leerling wil beide formules schrijven met alleen de lengte l."
+       },
+       {
+        "v": "Hij schrijft ook de omtrek in alleen l. Welke formule krijgt hij voor O?",
+        "o": [
+         "\"O = 4l − 3\"",
+         "\"O = 2l − 6\"",
+         "\"O = 4l − 6\"",
+         "\"O = l² − 3l, to be honest\""
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 2,
+        "u": "Vul de waarde zorgvuldig in, let op haakjes en volgorde van de bewerkingen en controleer je antwoord. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"O = 4l − 3\"\"? Dan vermenigvuldig je alleen de 2l met 2 en vergeet je de − 3 mee te nemen. Beide termen in de haakjes krijgen de factor 2, dus − 6.",
+         "Koos je \"\"O = 2l − 6\"\"? Dan tel je de lengte en breedte maar één keer. Een omtrek heeft twee lengtes en twee breedtes, dus 2(l + b) = 4l − 6.",
+         "Klopt: O = 2(l + l − 3) = 2(2l − 3) = 4l − 6. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"O = l² − 3l, to be honest\"\"? Dan geef je de oppervlakte in plaats van de omtrek. De omtrek is een som van zijden, en geen product."
+        ],
+        "uh": "Hij schrijft ook de omtrek in alleen l. Welke formule krijgt hij voor O?",
+        "ctx": "Voor een rechthoek geldt O = 2(l + b) voor de omtrek en A = l · b voor de oppervlakte. In een opgave is de breedte altijd 3 minder dan de lengte, dus b = l − 3. Een leerling wil beide formules schrijven met alleen de lengte l."
+       },
+       {
+        "v": "Hoeveel vierkante eenheden is de oppervlakte als l = 10?",
+        "o": [
+         "\"97\"",
+         "\"70\"",
+         "\"100\"",
+         "\"40\""
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 0,
+        "u": "Vul de waarde zorgvuldig in, let op haakjes en volgorde van de bewerkingen en controleer je antwoord. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"97\"\"? Dan reken je 10² − 3. De formule heeft − 3l, dus 100 − 30. Het goede antwoord is 70.",
+         "Klopt: 10² − 3 · 10 = 100 − 30 = 70, en 10 · 7 = 70. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"100\"\"? Dan laat je de − 3l weg. De breedte is l − 3 = 7, dus 10 · 7 = 70. Door de stappen goed na te lopen kom je uit op 70.",
+         "Koos je \"\"40\"\"? Dan reken je 4 · 10. Dat is de omtrek zonder constante, en niet de oppervlakte. Controleer je stap: de juiste uitkomst is 70."
+        ],
+        "uh": "Hoeveel vierkante eenheden is de oppervlakte als l = 10?",
+        "ctx": "Voor een rechthoek geldt O = 2(l + b) voor de omtrek en A = l · b voor de oppervlakte. In een opgave is de breedte altijd 3 minder dan de lengte, dus b = l − 3. Een leerling wil beide formules schrijven met alleen de lengte l."
+       },
+       {
+        "v": "Welke formule geeft de nieuwe prijs met 20% korting op het hele bedrag?",
+        "o": [
+         "\"H = 320 + 25p, eigenlijk\"",
+         "\"H = 400 + 20p\"",
+         "\"H = 380 + 5p\"",
+         "\"H = 320 + 20p\""
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 3,
+        "u": "Vul de waarde zorgvuldig in, let op haakjes en volgorde van de bewerkingen en controleer je antwoord. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"H = 320 + 25p, eigenlijk\"\"? Dan vermenigvuldig je alleen de 400 met 0,8. Het hele bedrag krijgt de korting, dus ook 25p. Het goede antwoord is H = 320 + 20p.",
+         "Koos je \"\"H = 400 + 20p\"\"? Dan vermenigvuldig je alleen 25p met 0,8. De vaste €400 krijgt ook korting, dus 320. Door de stappen goed na te lopen kom je uit op H = 320 + 20p.",
+         "Koos je \"\"H = 380 + 5p\"\"? Dan trek je 20 af van beide termen. Een korting van 20% is vermenigvuldigen met 0,8, dus 0,8(400 + 25p).",
+         "Klopt: H = 0,8(400 + 25p) = 320 + 20p. Reken dit na met de gegeven gegevens."
+        ],
+        "uh": "Welke formule geeft de nieuwe prijs met 20% korting op het hele bedrag?",
+        "ctx": "Een verhuurbedrijf rekent voor het huren van een zaal H = 400 + 25p euro, waarbij p het aantal personen is. Voor verenigingen komt er 20% korting op het hele bedrag. De boekhouder wil de nieuwe formule opstellen en gebruiken."
+       },
+       {
+        "v": "Hoeveel euro kost de zaal met korting voor 4 personen?",
+        "o": [
+         "\"€400\"",
+         "\"€500\"",
+         "\"€420\"",
+         "\"€480\""
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 0,
+        "u": "Vul de waarde zorgvuldig in, let op haakjes en volgorde van de bewerkingen en controleer je antwoord. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: 320 + 20 · 4 = 320 + 80 = 400. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"€500\"\"? Dan neem je de prijs zonder korting. Met korting is het lager, dus €400. Het goede antwoord is €400.",
+         "Koos je \"\"€420\"\"? Dan reken je 320 + 100. Het gaat om 4 personen, dus 20 · 4 = 80. Door de stappen goed na te lopen kom je uit op €400.",
+         "Koos je \"\"€480\"\"? Dan reken je 400 + 20 · 4. De vaste €400 moet ook korting krijgen, dus 320. Controleer je stap: de juiste uitkomst is €400."
+        ],
+        "uh": "Hoeveel euro kost de zaal met korting voor 4 personen?",
+        "ctx": "Een verhuurbedrijf rekent voor het huren van een zaal H = 400 + 25p euro, waarbij p het aantal personen is. Voor verenigingen komt er 20% korting op het hele bedrag. De boekhouder wil de nieuwe formule opstellen en gebruiken."
+       },
+       {
+        "v": "Het basisbedrag wordt €50 hoger, van €400 naar €450. Welke formule geldt dan zonder korting?",
+        "o": [
+         "\"H = 400 + 75p, I think\"",
+         "\"H = 450 + 50p\"",
+         "\"H = 450 + 25p\"",
+         "\"H = 450p + 25\""
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 4,
+        "u": "Vul de waarde zorgvuldig in, let op haakjes en volgorde van de bewerkingen en controleer je antwoord. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"H = 400 + 75p, I think\"\"? Dan tel je de verhoging bij 25p op. De verhoging hoort bij het vaste bedrag, dus 450 + 25p. Het goede antwoord is H = 450 + 25p.",
+         "Koos je \"\"H = 450 + 50p\"\"? Dan verdubbel je de prijs per persoon. De prijs per persoon blijft 25, dus 450 + 25p. Door de stappen goed na te lopen kom je uit op H = 450 + 25p.",
+         "Klopt: alleen het vaste bedrag verandert, dus 450 + 25p.",
+         "Koos je \"\"H = 450p + 25\"\"? Dan verwissel je het vaste bedrag en de prijs per persoon. De p hoort bij 25, dus 450 + 25p. Controleer je stap: de juiste uitkomst is H = 450 + 25p."
+        ],
+        "uh": "Het basisbedrag wordt €50 hoger, van €400 naar €450. Welke formule geldt dan zonder korting?",
+        "ctx": "Een verhuurbedrijf rekent voor het huren van een zaal H = 400 + 25p euro, waarbij p het aantal personen is. Voor verenigingen komt er 20% korting op het hele bedrag. De boekhouder wil de nieuwe formule opstellen en gebruiken."
+       },
+       {
+        "v": "Waarom is 0,8 · 400 + 25p niet de goede formule voor de prijs met 20% korting?",
+        "o": [
+         "\"0,8 is het verkeerde getal\"",
+         "\"de korting geldt voor het hele bedrag, dus ook voor 25p\"",
+         "\"25p moet eerst worden uitgerekend\"",
+         "\"er zijn haakjes verplicht in elke formule, volgens mij, eigenlijk\""
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 4,
+        "u": "Vul de waarde zorgvuldig in, let op haakjes en volgorde van de bewerkingen en controleer je antwoord. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"0,8 is het verkeerde getal\"\"? Dan denk je dat 0,8 niet bij 20% hoort. Dat klopt wel, maar het geldt voor het hele bedrag.",
+         "Klopt: je moet 0,8 vermenigvuldigen met de hele som 400 + 25p.",
+         "Koos je \"\"25p moet eerst worden uitgerekend\"\"? Dan denk je dat p al een getal moet zijn. De formule werkt met p als variabele, dus 0,8 · (400 + 25p).",
+         "Koos je \"\"er zijn haakjes verplicht in elke formule, volgens mij, eigenlijk\"\"? Dan denk je dat haakjes altijd nodig zijn. Hier zijn ze nodig omdat de korting over de som gaat, dus 0,8(400 + 25p)."
+        ],
+        "uh": "Waarom is 0,8 · 400 + 25p niet de goede formule voor de prijs met 20% korting?",
+        "ctx": "Een verhuurbedrijf rekent voor het huren van een zaal H = 400 + 25p euro, waarbij p het aantal personen is. Voor verenigingen komt er 20% korting op het hele bedrag. De boekhouder wil de nieuwe formule opstellen en gebruiken."
+       },
+       {
+        "v": "Welke formule geeft K in alleen t, als x = 2t + 1?",
+        "o": [
+         "\"K = 10t + 21, zeg maar\"",
+         "\"K = 7t + 21\"",
+         "\"K = 5t + 21\"",
+         "\"K = 10t + 25\""
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 3,
+        "u": "Vul de waarde zorgvuldig in, let op haakjes en volgorde van de bewerkingen en controleer je antwoord. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"K = 10t + 21, zeg maar\"\"? Dan vermenigvuldig je de 1 niet met 5. Beide termen binnen de haakjes krijgen de factor 5, dus 10t + 5 + 20.",
+         "Koos je \"\"K = 7t + 21\"\"? Dan tel je 5 en 2 bij elkaar op. Vermenigvuldigen geeft 5 · 2t, dus 10t. Door de stappen goed na te lopen kom je uit op K = 10t + 25.",
+         "Koos je \"\"K = 5t + 21\"\"? Dan laat je de factor 2 weg. 5 · 2t = 10t, en 5 · 1 = 5. Controleer je stap: de juiste uitkomst is K = 10t + 25.",
+         "Klopt: K = 5(2t + 1) + 20 = 10t + 5 + 20 = 10t + 25. Reken dit na met de gegeven gegevens."
+        ],
+        "uh": "Welke formule geeft K in alleen t, als x = 2t + 1?",
+        "ctx": "De kosten van een product zijn K = 5x + 20 euro, waarbij x het aantal dozen is. Het aantal dozen hangt af van de tijd: x = 2t + 1, waarbij t het aantal uren is. De leerling wil de kosten rechtstreeks uitdrukken in t."
+       },
+       {
+        "v": "Hoeveel dozen horen bij t = 3?",
+        "o": [
+         "\"7 dozen\"",
+         "\"6 dozen\"",
+         "\"9 dozen\"",
+         "\"55 dozen, you know\""
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 3,
+        "u": "Vul de waarde zorgvuldig in, let op haakjes en volgorde van de bewerkingen en controleer je antwoord. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: x = 2 · 3 + 1 = 7. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"6 dozen\"\"? Dan laat je de + 1 weg. De formule heeft ook een constante, dus 7. Het goede antwoord is 7 dozen.",
+         "Koos je \"\"9 dozen\"\"? Dan reken je 3 · 3. De formule is x = 2t + 1, dus 2 · 3 + 1. Door de stappen goed na te lopen kom je uit op 7 dozen.",
+         "Koos je \"\"55 dozen, you know\"\"? Dan neem je de kosten bij t = 3. Gevraagd is het aantal dozen, dus 7. Controleer je stap: de juiste uitkomst is 7 dozen."
+        ],
+        "uh": "Hoeveel dozen horen bij t = 3?",
+        "ctx": "De kosten van een product zijn K = 5x + 20 euro, waarbij x het aantal dozen is. Het aantal dozen hangt af van de tijd: x = 2t + 1, waarbij t het aantal uren is. De leerling wil de kosten rechtstreeks uitdrukken in t."
+       },
+       {
+        "v": "Hoeveel euro bedragen de kosten bij t = 3?",
+        "o": [
+         "\"€35\"",
+         "\"€45\"",
+         "\"€55\"",
+         "\"€25\""
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 0,
+        "u": "Vul de waarde zorgvuldig in, let op haakjes en volgorde van de bewerkingen en controleer je antwoord. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"€35\"\"? Dan neem je de kosten bij x = 3. Bij t = 3 is x = 7, dus 5 · 7 + 20. Het goede antwoord is €55.",
+         "Koos je \"\"€45\"\"? Dan reken je 10 · 3 + 15. De constante in de nieuwe formule is 25, dus 55. Door de stappen goed na te lopen kom je uit op €55.",
+         "Klopt: 10 · 3 + 25 = 55, en 5 · 7 + 20 = 55. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"€25\"\"? Dan laat je 10t weg. De kosten hangen af van t, dus 10 · 3 + 25. Controleer je stap: de juiste uitkomst is €55."
+        ],
+        "uh": "Hoeveel euro bedragen de kosten bij t = 3?",
+        "ctx": "De kosten van een product zijn K = 5x + 20 euro, waarbij x het aantal dozen is. Het aantal dozen hangt af van de tijd: x = 2t + 1, waarbij t het aantal uren is. De leerling wil de kosten rechtstreeks uitdrukken in t."
+       },
+       {
+        "v": "Welke formule geeft het nettoloon N in alleen u?",
+        "o": [
+         "\"N = 12,7u\"",
+         "\"N = 8,4u\"",
+         "\"N = 0,7 + 12u\"",
+         "\"N = 17,1u\""
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 3,
+        "u": "Vul de waarde zorgvuldig in, let op haakjes en volgorde van de bewerkingen en controleer je antwoord. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"N = 12,7u\"\"? Dan tel je 0,7 en 12 bij elkaar op. Vermenigvuldigen geeft 0,7 · 12, dus 8,4. Het goede antwoord is N = 8,4u.",
+         "Klopt: N = 0,7 · 12u = 8,4u. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"N = 0,7 + 12u\"\"? Dan tel je 0,7 erbij op. Het netto is 70% van het geheel, dus 0,7 · 12u. Door de stappen goed na te lopen kom je uit op N = 8,4u.",
+         "Koos je \"\"N = 17,1u\"\"? Dan deel je 12 door 0,7. Je moet vermenigvuldigen, dus 8,4. Controleer je stap: de juiste uitkomst is N = 8,4u."
+        ],
+        "uh": "Welke formule geeft het nettoloon N in alleen u?",
+        "ctx": "Een medewerker verdient een brutoloon B = 12u euro bij u gewerkte uren. Het nettoloon is 70% van het brutoloon, dus N = 0,7B. Een leerling wil de formule van het netto loon schrijven in de uren en daarmee rekenen."
+       },
+       {
+        "v": "Hoeveel euro netto verdient de medewerker in 40 uur?",
+        "o": [
+         "\"€480\"",
+         "\"€34\"",
+         "\"€16,8\"",
+         "\"€336\""
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 0,
+        "u": "Vul de waarde zorgvuldig in, let op haakjes en volgorde van de bewerkingen en controleer je antwoord. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"€480\"\"? Dan neem je het brutoloon. Het netto is 70% daarvan, dus 336. Het goede antwoord is €336.",
+         "Koos je \"\"€34\"\"? Dan reken je 0,7 · 12 · 4. Je moet 40 uur nemen, dus 8,4 · 40. Door de stappen goed na te lopen kom je uit op €336.",
+         "Koos je \"\"€16,8\"\"? Dan reken je 0,7 · 12 · 2 en rond je af. Het gaat om 40 uur, dus 336. Controleer je stap: de juiste uitkomst is €336.",
+         "Klopt: 8,4 · 40 = 336. Reken dit na met de gegeven gegevens."
+        ],
+        "uh": "Hoeveel euro netto verdient de medewerker in 40 uur?",
+        "ctx": "Een medewerker verdient een brutoloon B = 12u euro bij u gewerkte uren. Het nettoloon is 70% van het brutoloon, dus N = 0,7B. Een leerling wil de formule van het netto loon schrijven in de uren en daarmee rekenen."
+       },
+       {
+        "v": "Hoeveel euro is het brutoloon bij 40 uur?",
+        "o": [
+         "\"€480\"",
+         "\"€336\"",
+         "\"€52\"",
+         "\"€4,80\""
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 0,
+        "u": "Vul de waarde zorgvuldig in, let op haakjes en volgorde van de bewerkingen en controleer je antwoord. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: 12 · 40 = 480. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"€336\"\"? Dan neem je het netto. Het bruto is groter dan het netto, dus 480. Het goede antwoord is €480.",
+         "Koos je \"\"€52\"\"? Dan tel je 12 en 40 bij elkaar op. Het loon is uren maal bedrag, dus 12 · 40. Door de stappen goed na te lopen kom je uit op €480.",
+         "Koos je \"\"€4,80\"\"? Dan verplaats je de komma. 12 · 40 = 480, dus €480. Controleer je stap: de juiste uitkomst is €480."
+        ],
+        "uh": "Hoeveel euro is het brutoloon bij 40 uur?",
+        "ctx": "Een medewerker verdient een brutoloon B = 12u euro bij u gewerkte uren. Het nettoloon is 70% van het brutoloon, dus N = 0,7B. Een leerling wil de formule van het netto loon schrijven in de uren en daarmee rekenen."
+       },
+       {
+        "v": "Hoeveel uur moet de medewerker werken voor een nettoloon van €168?",
+        "o": [
+         "\"14 uur\"",
+         "\"24 uur\"",
+         "\"20 uur\"",
+         "\"1411 uur\""
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 4,
+        "u": "Vul de waarde zorgvuldig in, let op haakjes en volgorde van de bewerkingen en controleer je antwoord. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"14 uur\"\"? Dan deel je 168 door 12. Het nettoloon is 8,4 per uur, dus 168 : 8,4. Het goede antwoord is 20 uur.",
+         "Koos je \"\"24 uur\"\"? Dan deel je 168 door 7. Het netto is 8,4 per uur, dus 20. Door de stappen goed na te lopen kom je uit op 20 uur.",
+         "Klopt: 8,4u = 168 geeft u = 20. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"1411 uur\"\"? Dan vermenigvuldig je 168 met 8,4. Je moet delen, dus 168 : 8,4. Controleer je stap: de juiste uitkomst is 20 uur."
+        ],
+        "uh": "Hoeveel uur moet de medewerker werken voor een nettoloon van €168?",
+        "ctx": "Een medewerker verdient een brutoloon B = 12u euro bij u gewerkte uren. Het nettoloon is 70% van het brutoloon, dus N = 0,7B. Een leerling wil de formule van het netto loon schrijven in de uren en daarmee rekenen."
+       },
+       {
+        "v": "Welke formule geeft het volume V in alleen h?",
+        "o": [
+         "\"V = 2h³ + 1, gewoon\"",
+         "\"V = 2h³ + 2h²\"",
+         "\"V = 4h + 1\"",
+         "\"V = 3h² + 1\""
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 3,
+        "u": "Vul de waarde zorgvuldig in, let op haakjes en volgorde van de bewerkingen en controleer je antwoord. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"V = 2h³ + 1, gewoon\"\"? Dan laat je de 2h² weg bij de 1. De factor 2h² vermenigvuldigt beide termen, dus 2h³ + 2h². Het goede antwoord is V = 2h³ + 2h².",
+         "Klopt: V = 2h · (h + 1) · h = 2h²(h + 1) = 2h³ + 2h². Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"V = 4h + 1\"\"? Dan tel je alle factoren bij elkaar op. Het volume is een product, dus 2h · (h + 1) · h. Door de stappen goed na te lopen kom je uit op V = 2h³ + 2h².",
+         "Koos je \"\"V = 3h² + 1\"\"? Dan tel je de h's op in plaats van te vermenigvuldigen. Het volume is een product, dus h³ en h²."
+        ],
+        "uh": "Welke formule geeft het volume V in alleen h?",
+        "ctx": "Een balk heeft hoogte h centimeter, lengte l = 2h en breedte b = h + 1. Het volume is V = l · b · h. De leerling wil V als formule van alleen h opstellen en controleert die met h = 3."
+       },
+       {
+        "v": "Hoeveel kubieke centimeter is het volume bij h = 3?",
+        "o": [
+         "\"63\"",
+         "\"81\"",
+         "\"18\"",
+         "\"72\""
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 0,
+        "u": "Vul de waarde zorgvuldig in, let op haakjes en volgorde van de bewerkingen en controleer je antwoord. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"63\"\"? Dan reken je 2 · 27 + 9. De tweede term is 2h² = 18, dus 54 + 18. Het goede antwoord is 72.",
+         "Koos je \"\"81\"\"? Dan reken je 3⁴. De formule is 2h³ + 2h², dus 72. Door de stappen goed na te lopen kom je uit op 72.",
+         "Koos je \"\"18\"\"? Dan neem je alleen 2h². De formule bestaat uit twee termen, dus 54 + 18. Controleer je stap: de juiste uitkomst is 72.",
+         "Klopt: 2 · 27 + 2 · 9 = 72, en 6 · 4 · 3 = 72. Reken dit na met de gegeven gegevens."
+        ],
+        "uh": "Hoeveel kubieke centimeter is het volume bij h = 3?",
+        "ctx": "Een balk heeft hoogte h centimeter, lengte l = 2h en breedte b = h + 1. Het volume is V = l · b · h. De leerling wil V als formule van alleen h opstellen en controleert die met h = 3."
+       },
+       {
+        "v": "Hoeveel centimeter is de breedte b bij h = 3?",
+        "o": [
+         "\"4 cm\"",
+         "\"3 cm\"",
+         "\"6 cm\"",
+         "\"12 cm, to be honest\""
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 0,
+        "u": "Vul de waarde zorgvuldig in, let op haakjes en volgorde van de bewerkingen en controleer je antwoord. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: b = h + 1 = 3 + 1 = 4. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"3 cm\"\"? Dan neem je de hoogte. De breedte is h + 1, dus 4. Het goede antwoord is 4 cm.",
+         "Koos je \"\"6 cm\"\"? Dan neem je de lengte l = 2h. De breedte is b = h + 1, dus 4. Door de stappen goed na te lopen kom je uit op 4 cm.",
+         "Koos je \"\"12 cm, to be honest\"\"? Dan vermenigvuldig je 3 met 4. De breedte is een enkele waarde, dus 4. Controleer je stap: de juiste uitkomst is 4 cm."
+        ],
+        "uh": "Hoeveel centimeter is de breedte b bij h = 3?",
+        "ctx": "Een balk heeft hoogte h centimeter, lengte l = 2h en breedte b = h + 1. Het volume is V = l · b · h. De leerling wil V als formule van alleen h opstellen en controleert die met h = 3."
+       }
+      ],
+      "oe": [
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een fietsverhuurbedrijf rekent voor het huren van een fiets K = 5 + 3u euro, waarbij u het aantal uren is. Een toerist wil weten wat 6 uur kost en hoe lang hij kan huren voor precies €26 aan huurkosten.",
+        "v": "Bereken de kosten voor 6 uur en het aantal uren voor €26.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "K = 5 + 3 · 6 = 23 euro (1p). 5 + 3u = 26 geeft 3u = 21 (1p). Dus u = 7 uur (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Voor een vierkantje geldt P = 4s, waarbij s de zijde is. De zijde hangt af van het volgnummer n volgens s = n + 2. Een leerling wil P in n schrijven en berekenen voor n = 5.",
+        "v": "Stel P in n op en bereken P bij n = 5.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "P = 4(n + 2) = 4n + 8 (1p). Bij n = 5 is s = 7 (1p). P = 28 en 4 · 5 + 8 = 28 (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een webwinkel geeft 20% korting op een prijs p en rekent daarna €5 verzendkosten. Een klant wil de totale prijs T berekenen voor een artikel dat zonder korting €60 kost, en eerst de formule opstellen.",
+        "v": "Stel de formule voor T op en bereken T bij p = 60.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "T = 0,8p + 5 (1p). T = 0,8 · 60 + 5 = 48 + 5 (1p). T = 53 euro (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Voor een rechthoek is de omtrek O = 2(l + b) en de oppervlakte A = l · b. De breedte is altijd 2 minder dan de lengte: b = l − 2. De leerling wil beide formules in l schrijven en controleren met l = 6.",
+        "v": "Stel O en A in l op en controleer met l = 6.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "O = 2(2l − 2) = 4l − 4 en A = l² − 2l (1p). Bij l = 6: b = 4 (1p). O = 20 en A = 24, wat klopt met de formules (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een leerling schrijft de formule T = 0,8p + 5 als T = 0,8(p + 5) voor een prijs p met 20% korting en daarna €5 verzendkosten. Jij weet dat de verzendkosten niet worden verlaagd door de korting.",
+        "v": "Toon met p = 60 aan dat de leerling het verkeerde bedrag krijgt en leg de fout uit.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Juiste formule: 0,8 · 60 + 5 = 53 (1p). Foute formule: 0,8 · 65 = 52 (1p). De haakjes laten de korting ook op de verzendkosten gelden, wat niet klopt (1p)."
+       }
+      ]
      }
     ]
    },

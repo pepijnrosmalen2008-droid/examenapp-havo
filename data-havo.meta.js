@@ -1189,6 +1189,27 @@ var VAKKEN = [
       "nOe": 5,
       "nBeg": 12,
       "hasSam": true
+     },
+     {
+      "id": "C4",
+      "lo": "wa.C.4",
+      "gs": 2,
+      "naam": "Formules opstellen en rekenen door substitutie",
+      "beschrijving": "Je rekent met formules door waarden in te vullen, stelt formules op en past ze aan bij een nieuwe situatie, vervangt een variabele door een uitdrukking en vereenvoudigt het resultaat.",
+      "ceStatus": "CE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Rekenen door substitutie",
+       "Een formule opstellen",
+       "Een formule wijzigen",
+       "Een variabele vervangen",
+       "Controleren met een getal"
+      ],
+      "nSv": 27,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
      }
     ]
    },
