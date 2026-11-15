@@ -1,0 +1,682 @@
+{
+ "id": "C6",
+ "lo": "wa.C.6",
+ "gs": 2,
+ "naam": "Exponentiële verbanden: groeifactor, groeipercentage en verdubbelingstijd",
+ "beschrijving": "Je herkent exponentiële groei en afname, bepaalt beginwaarde, groeifactor en groeipercentage, stelt de formule op, rekent met verdubbelingstijd en halveringstijd en controleert je uitkomsten.",
+ "ceStatus": "CE",
+ "binas": "",
+ "val": "",
+ "onderwerpen": [
+  "Exponentiële groei herkennen",
+  "Beginwaarde en groeifactor",
+  "Formule opstellen",
+  "Verdubbelen en halveren",
+  "Rekenen en controleren"
+ ],
+ "sam": "Bij een exponentieel verband is de factor per stap constant. De formule is N = b · g^t met beginwaarde b en groeifactor g. Het groeipercentage is (g − 1) · 100%. Bij verdubbelingstijd of halveringstijd tel je het aantal stappen. Een percentage rekent over de nieuwe waarde, dus twee keer 15% afname is 0,85². Controleer met een andere stap.",
+ "begrippen": [
+  {
+   "t": "Exponentieel verband",
+   "d": "Een verband waarbij de waarde per stap met een vaste factor wordt vermenigvuldigd."
+  },
+  {
+   "t": "Beginwaarde",
+   "d": "De waarde bij t = 0; in N = b · g^t is dat b."
+  },
+  {
+   "t": "Groeifactor",
+   "d": "Het getal waarmee je per stap vermenigvuldigt, zoals 1,05 bij 5% groei."
+  },
+  {
+   "t": "Groeipercentage",
+   "d": "Het percentage waarmee de waarde per stap toeneemt: groeifactor min 1, maal 100."
+  },
+  {
+   "t": "Afname",
+   "d": "Bij een groeifactor kleiner dan 1 neemt de waarde af, zoals 0,85 bij 15% afname."
+  },
+  {
+   "t": "Grondtal en exponent",
+   "d": "In g^t is g het grondtal en t de exponent."
+  },
+  {
+   "t": "Formule N = b · g^t",
+   "d": "De standaardformule van een exponentieel verband."
+  },
+  {
+   "t": "Verdubbelingstijd",
+   "d": "De tijd waarin de waarde twee keer zo groot wordt."
+  },
+  {
+   "t": "Halveringstijd",
+   "d": "De tijd waarin de waarde de helft wordt."
+  },
+  {
+   "t": "Bij benadering exponentieel",
+   "d": "De groeifactoren per stap zijn ongeveer gelijk."
+  },
+  {
+   "t": "Verschil met lineair",
+   "d": "Bij lineair is de toename constant; bij exponentieel is de factor constant."
+  },
+  {
+   "t": "Controleren",
+   "d": "Reken met twee stappen van de tabel of de factor gelijk blijft."
+  }
+ ],
+ "sv": [
+  {
+   "v": "Een waarde wordt elk jaar 1,10 keer zo groot. Welk soort groei is dat?",
+   "o": [
+    "\"lineair\"",
+    "\"exponentieel\"",
+    "\"constant\"",
+    "\"recht evenredig\""
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 0,
+   "u": "Bepaal eerst of de verandering per stap met een vaste factor gaat en gebruik dan de groeifactor. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"lineair\"\"? Dan denk je dat er elk jaar evenveel bij komt. Hier gaat het om vermenigvuldigen met 1,10, dus exponentieel.",
+    "Klopt: telkens met dezelfde factor vermenigvuldigen is exponentiële groei.",
+    "Koos je \"\"constant\"\"? Dan denk je dat de waarde niet verandert. De waarde wordt elk jaar groter, met een vaste factor. Door de stappen goed na te lopen kom je uit op exponentieel.",
+    "Koos je \"\"recht evenredig\"\"? Dan denk je aan y = ax. Een vaste groeifactor per stap hoort bij exponentieel, en niet bij recht evenredig."
+   ],
+   "uh": "Een waarde wordt elk jaar 1,10 keer zo groot. Welk soort groei is dat?"
+  },
+  {
+   "v": "Een hoeveelheid groeit 8% per jaar. Welke groeifactor per jaar hoort daarbij?",
+   "o": [
+    "\"0,08\"",
+    "\"8\"",
+    "\"0,92\"",
+    "\"1,08\""
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 1,
+   "u": "Bepaal eerst of de verandering per stap met een vaste factor gaat en gebruik dan de groeifactor. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"0,08\"\"? Dan neem je alleen het percentage. De oorspronkelijke 100% hoort erbij, dus 1,08. Het goede antwoord is 1,08.",
+    "Koos je \"\"8\"\"? Dan neem je het percentage als factor. Een factor is een getal om mee te vermenigvuldigen, dus 1,08. Door de stappen goed na te lopen kom je uit op 1,08.",
+    "Koos je \"\"0,92\"\"? Dan trek je 8% af van 100%. De hoeveelheid groeit, dus 1,08. Controleer je stap: de juiste uitkomst is 1,08.",
+    "Klopt: 100% + 8% = 108%, dus de groeifactor is 1,08. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Een hoeveelheid groeit 8% per jaar. Welke groeifactor per jaar hoort daarbij?"
+  },
+  {
+   "v": "Een prijs daalt elk jaar 12%. Met welk getal vermenigvuldig je de prijs per jaar?",
+   "o": [
+    "\"0,88\"",
+    "\"1,12\"",
+    "\"0,12\"",
+    "\"12\""
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 1,
+   "u": "Bepaal eerst of de verandering per stap met een vaste factor gaat en gebruik dan de groeifactor. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: 100% − 12% = 88%, dus de factor is 0,88. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"1,12\"\"? Dan tel je 12% erbij op. De prijs daalt, dus 0,88. Het goede antwoord is 0,88.",
+    "Koos je \"\"0,12\"\"? Dan neem je alleen de daling. De oorspronkelijke 100% blijft deels over, dus 0,88. Door de stappen goed na te lopen kom je uit op 0,88.",
+    "Koos je \"\"12\"\"? Dan neem je het percentage als factor. Een factor is een getal om mee te vermenigvuldigen, dus 0,88. Controleer je stap: de juiste uitkomst is 0,88."
+   ],
+   "uh": "Een prijs daalt elk jaar 12%. Met welk getal vermenigvuldig je de prijs per jaar?"
+  },
+  {
+   "v": "In N = 50 · 3^t is t het aantal weken. Welk getal is de beginwaarde?",
+   "o": [
+    "\"3\"",
+    "\"150\"",
+    "\"50\"",
+    "\"53\""
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 2,
+   "u": "Bepaal eerst of de verandering per stap met een vaste factor gaat en gebruik dan de groeifactor. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"3\"\"? Dan neem je het grondtal. Dat is de groeifactor, en de beginwaarde is 50. Het goede antwoord is 50.",
+    "Koos je \"\"150\"\"? Dan vermenigvuldig je 50 met 3. De beginwaarde is de waarde bij t = 0, dus 50. Door de stappen goed na te lopen kom je uit op 50.",
+    "Klopt: bij t = 0 is N = 50 · 3⁰ = 50. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"53\"\"? Dan tel je 50 en 3 op. De formule heeft een product, en de beginwaarde is 50. Controleer je stap: de juiste uitkomst is 50."
+   ],
+   "uh": "In N = 50 · 3^t is t het aantal weken. Welk getal is de beginwaarde?"
+  },
+  {
+   "v": "Je stelt een formule op bij beginwaarde 200 en groeifactor 1,5 per jaar. Welke formule klopt?",
+   "o": [
+    "\"N = 200 + 1,5t\"",
+    "\"N = 200 · 1,5^t\"",
+    "\"N = 1,5 · 200^t, really\"",
+    "\"N = 200 · 1,5t\""
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 2,
+   "u": "Bepaal eerst of de verandering per stap met een vaste factor gaat en gebruik dan de groeifactor. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"N = 200 + 1,5t\"\"? Dan tel je 1,5 per jaar erbij op. Een groeifactor vermenigvuldig je, dus 200 · 1,5^t. Het goede antwoord is N = 200 · 1,5^t.",
+    "Klopt: N = beginwaarde · groeifactor^t. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"N = 1,5 · 200^t, really\"\"? Dan verwissel je beginwaarde en groeifactor. De exponent hoort bij de groeifactor, dus 200 · 1,5^t.",
+    "Koos je \"\"N = 200 · 1,5t\"\"? Dan zet dit je t niet in de exponent. De groeifactor wordt per jaar herhaald, dus 1,5^t. Controleer je stap: de juiste uitkomst is N = 200 · 1,5^t."
+   ],
+   "uh": "Je stelt een formule op bij beginwaarde 200 en groeifactor 1,5 per jaar. Welke formule klopt?"
+  },
+  {
+   "v": "Een bacterie verdubbelt elke 3 uur en begint met 10. Hoeveel zijn er na 6 uur?",
+   "o": [
+    "\"20\"",
+    "\"60\"",
+    "\"80\"",
+    "\"40\""
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 3,
+   "u": "Bepaal eerst of de verandering per stap met een vaste factor gaat en gebruik dan de groeifactor. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"20\"\"? Dan reken je maar één verdubbeling. In 6 uur verdubbelt het tweemaal, dus 40. Het goede antwoord is 40.",
+    "Koos je \"\"60\"\"? Dan vermenigvuldig je 10 met 6. De groei gaat per verdubbeling, dus 10 · 2 · 2 = 40. Door de stappen goed na te lopen kom je uit op 40.",
+    "Koos je \"\"80\"\"? Dan reken je drie verdubbelingen. In 6 uur zijn dat er twee, dus 40. Controleer je stap: de juiste uitkomst is 40.",
+    "Klopt: na 3 uur 20 en na 6 uur 40. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Een bacterie verdubbelt elke 3 uur en begint met 10. Hoeveel zijn er na 6 uur?"
+  },
+  {
+   "v": "Bij N = 100 · 2^t is t het aantal uren. Welke waarde heeft N bij t = 3?",
+   "o": [
+    "\"800\"",
+    "\"600\"",
+    "\"300\"",
+    "\"200\""
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 4,
+   "u": "Bepaal eerst of de verandering per stap met een vaste factor gaat en gebruik dan de groeifactor. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: 100 · 2³ = 100 · 8 = 800. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"600\"\"? Dan reken je 100 · 2 · 3. De exponent betekent herhaald vermenigvuldigen, dus 2 · 2 · 2 = 8. Het goede antwoord is 800.",
+    "Koos je \"\"300\"\"? Dan reken je 100 · 3. Bij de exponent hoort het grondtal 2, dus 2³ = 8. Door de stappen goed na te lopen kom je uit op 800.",
+    "Koos je \"\"200\"\"? Dan neem je de waarde bij t = 1. Bij t = 3 is dat 800, dus 100 · 8. Controleer je stap: de juiste uitkomst is 800."
+   ],
+   "uh": "Bij N = 100 · 2^t is t het aantal uren. Welke waarde heeft N bij t = 3?"
+  },
+  {
+   "v": "Met welke groeifactor groeit het aantal leden per jaar?",
+   "o": [
+    "\"40\"",
+    "\"1,02\"",
+    "\"1,2\"",
+    "\"0,2\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 0,
+   "u": "Bepaal eerst of de verandering per stap met een vaste factor gaat en gebruik dan de groeifactor. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"40\"\"? Dan neem je de toename. De groeifactor is een verhouding, dus 240 : 200 = 1,2. Het goede antwoord is 1,2.",
+    "Koos je \"\"1,02\"\"? Dan verwar je 20% met 2%. 240 : 200 is 1,2, dus de groeifactor is 1,2. Door de stappen goed na te lopen kom je uit op 1,2.",
+    "Klopt: 240 : 200 = 288 : 240 = 1,2. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"0,2\"\"? Dan neem je alleen het groeipercentage als getal. Er hoort 1 bij, dus 1,2. Controleer je stap: de juiste uitkomst is 1,2."
+   ],
+   "uh": "Met welke groeifactor groeit het aantal leden per jaar?",
+   "ctx": "Een tabel toont het aantal leden van een online club: bij t = 0 zijn er 200 leden, bij t = 1 zijn er 240, bij t = 2 zijn er 288 en bij t = 3 zijn er 345,6 (afgerond). Een leerling wil weten welk soort groei het is en wat er na 4 jaar is."
+  },
+  {
+   "v": "Welk groeipercentage per jaar hoort daarbij?",
+   "o": [
+    "\"120%\"",
+    "\"20%\"",
+    "\"1,2%\"",
+    "\"40%\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 1,
+   "u": "Bepaal eerst of de verandering per stap met een vaste factor gaat en gebruik dan de groeifactor. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"120%\"\"? Dan neem je 100% + 20%. Het groeipercentage is alleen de toename, dus 20%. Het goede antwoord is 20%.",
+    "Klopt: groeifactor 1,2 betekent 20% groei per jaar. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"1,2%\"\"? Dan verplaats je de komma. Het percentage is 0,2 · 100, dus 20%. Door de stappen goed na te lopen kom je uit op 20%.",
+    "Koos je \"\"40%\"\"? Dan neem je de toename 40 als percentage. De toename is 40 op 200, dus 20%. Controleer je stap: de juiste uitkomst is 20%."
+   ],
+   "uh": "Welk groeipercentage per jaar hoort daarbij?",
+   "ctx": "Een tabel toont het aantal leden van een online club: bij t = 0 zijn er 200 leden, bij t = 1 zijn er 240, bij t = 2 zijn er 288 en bij t = 3 zijn er 345,6 (afgerond). Een leerling wil weten welk soort groei het is en wat er na 4 jaar is."
+  },
+  {
+   "v": "Hoeveel leden zijn er na 4 jaar volgens het exponentiële verband?",
+   "o": [
+    "\"385,6\"",
+    "\"432\"",
+    "\"345,6\"",
+    "\"414,72\""
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 4,
+   "u": "Bepaal eerst of de verandering per stap met een vaste factor gaat en gebruik dan de groeifactor. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"385,6\"\"? Dan tel je 40 erbij op. De groei is exponentieel, dus 345,6 · 1,2. Het goede antwoord is 414,72.",
+    "Koos je \"\"432\"\"? Dan tel je 86,4 erbij op en rond af. Het gaat om vermenigvuldigen, dus 345,6 · 1,2. Door de stappen goed na te lopen kom je uit op 414,72.",
+    "Koos je \"\"345,6\"\"? Dan neem je de waarde bij t = 3. Bij t = 4 komt er nog een jaar bij, dus 414,72. Controleer je stap: de juiste uitkomst is 414,72.",
+    "Klopt: 345,6 · 1,2 = 414,72, ofwel 200 · 1,2⁴. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Hoeveel leden zijn er na 4 jaar volgens het exponentiële verband?",
+   "ctx": "Een tabel toont het aantal leden van een online club: bij t = 0 zijn er 200 leden, bij t = 1 zijn er 240, bij t = 2 zijn er 288 en bij t = 3 zijn er 345,6 (afgerond). Een leerling wil weten welk soort groei het is en wat er na 4 jaar is."
+  },
+  {
+   "v": "Hoeveel euro staat er na 3 jaar op de rekening, afgerond op centen?",
+   "o": [
+    "\"€578,81\"",
+    "\"€575,00\"",
+    "\"€1,157,63\"",
+    "\"€525,00\""
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 2,
+   "u": "Bepaal eerst of de verandering per stap met een vaste factor gaat en gebruik dan de groeifactor. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: 500 · 1,05³ = 500 · 1,157625 ≈ 578,81. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"€575,00\"\"? Dan tel je 5% van 500 drie keer erbij op. De rente komt elk jaar over het hele saldo, dus 500 · 1,05³.",
+    "Koos je \"\"€1,157,63\"\"? Dan vergeet je met 500 te vermenigvuldigen. De formule begint met de beginwaarde, dus 500 · 1,157625.",
+    "Koos je \"\"€525,00\"\"? Dan neem je maar één jaar. Na 3 jaar is het meer, dus ongeveer 578,81. Controleer je stap: de juiste uitkomst is €578,81."
+   ],
+   "uh": "Hoeveel euro staat er na 3 jaar op de rekening, afgerond op centen?",
+   "ctx": "Iemand zet €500 op een spaarrekening met 5% rente per jaar. Het saldo na t jaar volgt N = 500 · 1,05^t. De bank rekent elk jaar de rente over het hele saldo. De spaarder wil het saldo na een aantal jaren weten."
+  },
+  {
+   "v": "Hoeveel procent rente per jaar levert de rekening op?",
+   "o": [
+    "\"105%\"",
+    "\"1,05%\"",
+    "\"5%\"",
+    "\"500%\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 1,
+   "u": "Bepaal eerst of de verandering per stap met een vaste factor gaat en gebruik dan de groeifactor. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"105%\"\"? Dan neem je 100% + 5%. Het rentepercentage is alleen de toename, dus 5%. Het goede antwoord is 5%.",
+    "Koos je \"\"1,05%\"\"? Dan verplaats je de komma. Het percentage is 0,05 · 100, dus 5%. Door de stappen goed na te lopen kom je uit op 5%.",
+    "Klopt: de groeifactor is 1,05, dus 5% per jaar. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"500%\"\"? Dan neem je de beginwaarde als percentage. Het rentepercentage volgt uit de groeifactor, dus 5%. Controleer je stap: de juiste uitkomst is 5%."
+   ],
+   "uh": "Hoeveel procent rente per jaar levert de rekening op?",
+   "ctx": "Iemand zet €500 op een spaarrekening met 5% rente per jaar. Het saldo na t jaar volgt N = 500 · 1,05^t. De bank rekent elk jaar de rente over het hele saldo. De spaarder wil het saldo na een aantal jaren weten."
+  },
+  {
+   "v": "Na hoeveel hele jaren is het saldo voor het eerst hoger dan €600?",
+   "o": [
+    "\"3 jaar\"",
+    "\"4 jaar\"",
+    "\"5 jaar\"",
+    "\"20 jaar, I suppose\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 4,
+   "u": "Bepaal eerst of de verandering per stap met een vaste factor gaat en gebruik dan de groeifactor. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"3 jaar\"\"? Dan neem je het saldo van €578,81. Dat is nog niet hoger dan €600, dus 4 jaar. Het goede antwoord is 4 jaar.",
+    "Klopt: na 3 jaar is het €578,81 en na 4 jaar €607,75. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"5 jaar\"\"? Dan neem je een te late waarde. Na 4 jaar is het al €607,75, dus 4. Door de stappen goed na te lopen kom je uit op 4 jaar.",
+    "Koos je \"\"20 jaar, I suppose\"\"? Dan reken je 100 : 5. De groei is exponentieel en niet lineair, dus 4 jaar. Controleer je stap: de juiste uitkomst is 4 jaar."
+   ],
+   "uh": "Na hoeveel hele jaren is het saldo voor het eerst hoger dan €600?",
+   "ctx": "Iemand zet €500 op een spaarrekening met 5% rente per jaar. Het saldo na t jaar volgt N = 500 · 1,05^t. De bank rekent elk jaar de rente over het hele saldo. De spaarder wil het saldo na een aantal jaren weten."
+  },
+  {
+   "v": "Hoe groot is de hoeveelheid medicijn zes uur na de toediening?",
+   "o": [
+    "\"40 mg, eigenlijk\"",
+    "\"0 mg\"",
+    "\"50 mg\"",
+    "\"20 mg\""
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 3,
+   "u": "Bepaal eerst of de verandering per stap met een vaste factor gaat en gebruik dan de groeifactor. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"40 mg, eigenlijk\"\"? Dan neem je de hoeveelheid na 3 uur. Na 6 uur is het nog eens gehalveerd, dus 20. Het goede antwoord is 20 mg.",
+    "Koos je \"\"0 mg\"\"? Dan denk je dat het medicijn weg is. Het halveert alleen elke 3 uur, dus 20. Door de stappen goed na te lopen kom je uit op 20 mg.",
+    "Koos je \"\"50 mg\"\"? Dan trek je 30 af. De afname is exponentieel, dus 80 : 2 : 2. Controleer je stap: de juiste uitkomst is 20 mg.",
+    "Klopt: na 3 uur 40 mg en na 6 uur 20 mg. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Hoe groot is de hoeveelheid medicijn zes uur na de toediening?",
+   "ctx": "Een medicijn in het bloed heeft een halveringstijd van 3 uur. Een patiënt krijgt 80 milligram toegediend. Elke 3 uur is er nog de helft van de vorige hoeveelheid over. Een leerling wil de hoeveelheid op verschillende tijdstippen berekenen."
+  },
+  {
+   "v": "Vier halveringstijden zijn verstreken. Welke hoeveelheid zit er dan nog in het bloed?",
+   "o": [
+    "\"5 mg\"",
+    "\"10 mg\"",
+    "\"20 mg\"",
+    "\"2,5 mg\""
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 3,
+   "u": "Bepaal eerst of de verandering per stap met een vaste factor gaat en gebruik dan de groeifactor. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: 12 uur is vier keer 3 uur, dus 80 · 0,5⁴ = 5. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"10 mg\"\"? Dan neem je de hoeveelheid na 9 uur. Na 12 uur is het nog eens gehalveerd, dus 5. Het goede antwoord is 5 mg.",
+    "Koos je \"\"20 mg\"\"? Dan neem je de hoeveelheid na 6 uur. Er zijn vier halveringen, dus 5. Door de stappen goed na te lopen kom je uit op 5 mg.",
+    "Koos je \"\"2,5 mg\"\"? Dan reken je vijf halveringen. 12 uur is vier keer 3 uur, dus 5. Controleer je stap: de juiste uitkomst is 5 mg."
+   ],
+   "uh": "Vier halveringstijden zijn verstreken. Welke hoeveelheid zit er dan nog in het bloed?",
+   "ctx": "Een medicijn in het bloed heeft een halveringstijd van 3 uur. Een patiënt krijgt 80 milligram toegediend. Elke 3 uur is er nog de helft van de vorige hoeveelheid over. Een leerling wil de hoeveelheid op verschillende tijdstippen berekenen."
+  },
+  {
+   "v": "Met welke factor vermenigvuldig je de hoeveelheid per 3 uur?",
+   "o": [
+    "\"2\"",
+    "\"3\"",
+    "\"0,5\"",
+    "\"0,3\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 1,
+   "u": "Bepaal eerst of de verandering per stap met een vaste factor gaat en gebruik dan de groeifactor. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"2\"\"? Dan neem je de verdubbeling. De hoeveelheid neemt af, dus 0,5. Het goede antwoord is 0,5.",
+    "Koos je \"\"3\"\"? Dan neem je het aantal uren. De factor is de verhouding, dus 0,5. Door de stappen goed na te lopen kom je uit op 0,5.",
+    "Klopt: de hoeveelheid halveert, dus de factor per 3 uur is 0,5.",
+    "Koos je \"\"0,3\"\"? Dan neem je 3 als decimaal. Halveren betekent factor 0,5, dus niet 0,3. Controleer je stap: de juiste uitkomst is 0,5."
+   ],
+   "uh": "Met welke factor vermenigvuldig je de hoeveelheid per 3 uur?",
+   "ctx": "Een medicijn in het bloed heeft een halveringstijd van 3 uur. Een patiënt krijgt 80 milligram toegediend. Elke 3 uur is er nog de helft van de vorige hoeveelheid over. Een leerling wil de hoeveelheid op verschillende tijdstippen berekenen."
+  },
+  {
+   "v": "Op welk tijdstip is de hoeveelheid teruggebracht tot 10 milligram?",
+   "o": [
+    "\"6 uur\"",
+    "\"9 uur\"",
+    "\"12 uur, to be honest\"",
+    "\"3 uur\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 3,
+   "u": "Bepaal eerst of de verandering per stap met een vaste factor gaat en gebruik dan de groeifactor. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"6 uur\"\"? Dan neem je het moment met 20 mg. Er is nog een halvering nodig, dus 9 uur. Het goede antwoord is 9 uur.",
+    "Klopt: 80 → 40 → 20 → 10 duurt drie keer 3 uur, dus 9 uur.",
+    "Koos je \"\"12 uur, to be honest\"\"? Dan neem je het moment met 5 mg. Bij 10 mg is het eerder, dus 9 uur. Door de stappen goed na te lopen kom je uit op 9 uur.",
+    "Koos je \"\"3 uur\"\"? Dan neem je het moment met 40 mg. Dat is te vroeg, dus 9 uur. Controleer je stap: de juiste uitkomst is 9 uur."
+   ],
+   "uh": "Op welk tijdstip is de hoeveelheid teruggebracht tot 10 milligram?",
+   "ctx": "Een medicijn in het bloed heeft een halveringstijd van 3 uur. Een patiënt krijgt 80 milligram toegediend. Elke 3 uur is er nog de helft van de vorige hoeveelheid over. Een leerling wil de hoeveelheid op verschillende tijdstippen berekenen."
+  },
+  {
+   "v": "Hoe groot is de kweek zes uur na de start?",
+   "o": [
+    "\"200\"",
+    "\"300\"",
+    "\"800\"",
+    "\"400\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 0,
+   "u": "Bepaal eerst of de verandering per stap met een vaste factor gaat en gebruik dan de groeifactor. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"200\"\"? Dan reken je twee verdubbelingen. In 6 uur zijn er drie, dus 400. Het goede antwoord is 400.",
+    "Koos je \"\"300\"\"? Dan tel je 50 zesmaal op. De groei is exponentieel, dus 50 · 2³. Door de stappen goed na te lopen kom je uit op 400.",
+    "Koos je \"\"800\"\"? Dan reken je vier verdubbelingen. In 6 uur zijn er drie, dus 400. Controleer je stap: de juiste uitkomst is 400.",
+    "Klopt: drie verdubbelingen, dus 50 · 2³ = 400. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Hoe groot is de kweek zes uur na de start?",
+   "ctx": "Een bacterie verdubbelt elke 2 uur. Een kweek begint met 50 bacteriën. Een onderzoeker noteert het aantal na 2, 4, 6 en 8 uur en wil weten wanneer er 1600 bacteriën zijn."
+  },
+  {
+   "v": "Hoeveel exemplaren telt de kweek na vier verdubbelingen?",
+   "o": [
+    "\"800\"",
+    "\"400\"",
+    "\"1600\"",
+    "\"200\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 4,
+   "u": "Bepaal eerst of de verandering per stap met een vaste factor gaat en gebruik dan de groeifactor. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: vier verdubbelingen, dus 50 · 2⁴ = 800. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"400\"\"? Dan neem je het aantal na 6 uur. Na 8 uur is er nog een verdubbeling, dus 800. Het goede antwoord is 800.",
+    "Koos je \"\"1600\"\"? Dan reken je vijf verdubbelingen. In 8 uur zijn er vier, dus 800. Door de stappen goed na te lopen kom je uit op 800.",
+    "Koos je \"\"200\"\"? Dan reken je twee verdubbelingen. In 8 uur zijn er vier, dus 800. Controleer je stap: de juiste uitkomst is 800."
+   ],
+   "uh": "Hoeveel exemplaren telt de kweek na vier verdubbelingen?",
+   "ctx": "Een bacterie verdubbelt elke 2 uur. Een kweek begint met 50 bacteriën. Een onderzoeker noteert het aantal na 2, 4, 6 en 8 uur en wil weten wanneer er 1600 bacteriën zijn."
+  },
+  {
+   "v": "Wanneer bereikt de kweek voor het eerst de 1600?",
+   "o": [
+    "\"8 uur\"",
+    "\"32 uur, gewoon\"",
+    "\"10 uur\"",
+    "\"5 uur\""
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 3,
+   "u": "Bepaal eerst of de verandering per stap met een vaste factor gaat en gebruik dan de groeifactor. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"8 uur\"\"? Dan neem je het moment met 800. Er is nog een verdubbeling nodig, dus 10 uur. Het goede antwoord is 10 uur.",
+    "Koos je \"\"32 uur, gewoon\"\"? Dan deel je 1600 door 50. Dat is 32 maal zoveel, dus 5 verdubbelingen van 2 uur. Door de stappen goed na te lopen kom je uit op 10 uur.",
+    "Klopt: 800 na 8 uur en 1600 na 10 uur, vijf verdubbelingen van 50.",
+    "Koos je \"\"5 uur\"\"? Dan neem je het aantal verdubbelingen. Elke verdubbeling kost 2 uur, dus 10 uur. Controleer je stap: de juiste uitkomst is 10 uur."
+   ],
+   "uh": "Wanneer bereikt de kweek voor het eerst de 1600?",
+   "ctx": "Een bacterie verdubbelt elke 2 uur. Een kweek begint met 50 bacteriën. Een onderzoeker noteert het aantal na 2, 4, 6 en 8 uur en wil weten wanneer er 1600 bacteriën zijn."
+  },
+  {
+   "v": "Met welke factor vermenigvuldig je de waarde elk jaar?",
+   "o": [
+    "\"1,15\"",
+    "\"0,85\"",
+    "\"0,15\"",
+    "\"15\""
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 1,
+   "u": "Bepaal eerst of de verandering per stap met een vaste factor gaat en gebruik dan de groeifactor. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"1,15\"\"? Dan tel je 15% erbij op. De auto verliest waarde, dus 0,85. Het goede antwoord is 0,85.",
+    "Klopt: 100% − 15% = 85%, dus de factor is 0,85. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"0,15\"\"? Dan neem je alleen het verlies. De oorspronkelijke 100% blijft deels over, dus 0,85. Door de stappen goed na te lopen kom je uit op 0,85.",
+    "Koos je \"\"15\"\"? Dan neem je het percentage als factor. Een factor is een getal om mee te vermenigvuldigen, dus 0,85. Controleer je stap: de juiste uitkomst is 0,85."
+   ],
+   "uh": "Met welke factor vermenigvuldig je de waarde elk jaar?",
+   "ctx": "Een auto kost nieuw €20 000 en verliest elk jaar 15% van zijn waarde. De waarde na t jaar is W = 20 000 · 0,85^t. Een leerling wil de waarde na enkele jaren berekenen en vergelijkt dat met een verlies van 15% van de beginwaarde per jaar."
+  },
+  {
+   "v": "Hoeveel euro is de auto na 2 jaar waard?",
+   "o": [
+    "\"€14 000, to be honest\"",
+    "\"€17 000\"",
+    "\"€6000\"",
+    "\"€14 450\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 2,
+   "u": "Bepaal eerst of de verandering per stap met een vaste factor gaat en gebruik dan de groeifactor. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"€14 000, to be honest\"\"? Dan trek je 15% van 20 000 twee keer af. Het tweede jaar is het verlies 15% van een lagere waarde, dus 0,85².",
+    "Koos je \"\"€17 000\"\"? Dan neem je de waarde na 1 jaar. Na 2 jaar is het nog eens met 15% gedaald, dus 14 450. Door de stappen goed na te lopen kom je uit op €14 450.",
+    "Koos je \"\"€6000\"\"? Dan trek je 30% van 20 000 af op het verkeerde bedrag. Het gaat om 15% per jaar, dus 0,85². Controleer je stap: de juiste uitkomst is €14 450.",
+    "Klopt: 20 000 · 0,85² = 20 000 · 0,7225 = 14 450. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Hoeveel euro is de auto na 2 jaar waard?",
+   "ctx": "Een auto kost nieuw €20 000 en verliest elk jaar 15% van zijn waarde. De waarde na t jaar is W = 20 000 · 0,85^t. Een leerling wil de waarde na enkele jaren berekenen en vergelijkt dat met een verlies van 15% van de beginwaarde per jaar."
+  },
+  {
+   "v": "Waarom is de waarde na 2 jaar niet 20 000 min 30%?",
+   "o": [
+    "\"het verlies van 15% in jaar 2 is over een lagere waarde\"",
+    "\"het verlies is elk jaar 15% van 20 000, zeg maar, gewoon, volgens mij\"",
+    "\"de rente moet erbij\"",
+    "\"30% is te weinig\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 4,
+   "u": "Bepaal eerst of de verandering per stap met een vaste factor gaat en gebruik dan de groeifactor. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: 15% van 17 000 is minder dan 15% van 20 000, dus het verlies is kleiner dan 30% in totaal.",
+    "Koos je \"\"het verlies is elk jaar 15% van 20 000, zeg maar, gewoon, volgens mij\"\"? Dan denk je dat het verlies elk jaar 15% van de beginwaarde is. Dat zou lineair zijn, maar het is exponentieel.",
+    "Koos je \"\"de rente moet erbij\"\"? Dan denk je dat er rente bij komt. Dat is een groei, terwijl de auto afneemt. Door de stappen goed na te lopen kom je uit op het verlies van 15% in jaar 2 is over een lagere waarde.",
+    "Koos je \"\"30% is te weinig\"\"? Dan denk je dat 30% te klein is. Het verlies is minder dan 30%, dus de waarde is hoger dan 14 000."
+   ],
+   "uh": "Waarom is de waarde na 2 jaar niet 20 000 min 30%?",
+   "ctx": "Een auto kost nieuw €20 000 en verliest elk jaar 15% van zijn waarde. De waarde na t jaar is W = 20 000 · 0,85^t. Een leerling wil de waarde na enkele jaren berekenen en vergelijkt dat met een verlies van 15% van de beginwaarde per jaar."
+  },
+  {
+   "v": "Is de groei in de tabel bij benadering exponentieel?",
+   "o": [
+    "\"nee, de toename is niet constant, you know\"",
+    "\"nee, de factor is steeds 2\"",
+    "\"ja, de factor is steeds ongeveer 1,5\"",
+    "\"ja, de toename is steeds 5\""
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 0,
+   "u": "Bepaal eerst of de verandering per stap met een vaste factor gaat en gebruik dan de groeifactor. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"nee, de toename is niet constant, you know\"\"? Dan verwar je exponentieel met lineair. Een niet-constante toename sluit exponentieel niet uit, de factor is juist steeds ongeveer 1,5.",
+    "Koos je \"\"nee, de factor is steeds 2\"\"? Dan denk je aan verdubbelen. De factoren zijn ongeveer 1,5, dus bij benadering exponentieel.",
+    "Klopt: 15 : 10 = 1,5 en 22 : 15 ≈ 1,47 en 34 : 22 ≈ 1,55.",
+    "Koos je \"\"ja, de toename is steeds 5\"\"? Dan denk je aan een constante toename. De toenames zijn 5, 7 en 12, maar de factor is ongeveer 1,5."
+   ],
+   "uh": "Is de groei in de tabel bij benadering exponentieel?",
+   "ctx": "In een tabel staat bij t = 0, 1, 2 en 3 respectievelijk 10, 15, 22 en 34. Een leerling wil weten of de groei bij benadering exponentieel is, welke formule erbij past en wat het verwachte aantal bij t = 4 is."
+  },
+  {
+   "v": "Welke formule past bij benadering bij de tabel?",
+   "o": [
+    "\"N = 10 + 5t\"",
+    "\"N = 10 · 1,5^t\"",
+    "\"N = 1,5 · 10^t, gewoon\"",
+    "\"N = 15 · 1,5^t\""
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 2,
+   "u": "Bepaal eerst of de verandering per stap met een vaste factor gaat en gebruik dan de groeifactor. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"N = 10 + 5t\"\"? Dan kies je een lineaire formule. De toenames zijn niet constant, dus 10 · 1,5^t. Het goede antwoord is N = 10 · 1,5^t.",
+    "Klopt: de beginwaarde is 10 en de groeifactor is ongeveer 1,5.",
+    "Koos je \"\"N = 1,5 · 10^t, gewoon\"\"? Dan verwissel je beginwaarde en groeifactor. De exponent hoort bij de factor 1,5, dus 10 · 1,5^t.",
+    "Koos je \"\"N = 15 · 1,5^t\"\"? Dan gebruik je de waarde bij t = 1 als beginwaarde. De beginwaarde is de waarde bij t = 0, dus 10."
+   ],
+   "uh": "Welke formule past bij benadering bij de tabel?",
+   "ctx": "In een tabel staat bij t = 0, 1, 2 en 3 respectievelijk 10, 15, 22 en 34. Een leerling wil weten of de groei bij benadering exponentieel is, welke formule erbij past en wat het verwachte aantal bij t = 4 is."
+  },
+  {
+   "v": "Welke waarde verwacht je bij t = 4 volgens de formule?",
+   "o": [
+    "\"ongeveer 40, denk ik\"",
+    "\"ongeveer 60\"",
+    "\"ongeveer 80\"",
+    "\"ongeveer 51\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 4,
+   "u": "Bepaal eerst of de verandering per stap met een vaste factor gaat en gebruik dan de groeifactor. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"ongeveer 40, denk ik\"\"? Dan tel je 6 bij 34 op. De groei is exponentieel, dus 10 · 1,5⁴. Het goede antwoord is ongeveer 51.",
+    "Koos je \"\"ongeveer 60\"\"? Dan neem je 10 · 6. De exponent betekent herhaald vermenigvuldigen, dus 10 · 5,0625. Door de stappen goed na te lopen kom je uit op ongeveer 51.",
+    "Koos je \"\"ongeveer 80\"\"? Dan neem je 34 · 2. De factor is 1,5 en niet 2, dus 34 · 1,5 ≈ 51. Controleer je stap: de juiste uitkomst is ongeveer 51.",
+    "Klopt: 10 · 1,5⁴ = 10 · 5,0625 ≈ 51. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Welke waarde verwacht je bij t = 4 volgens de formule?",
+   "ctx": "In een tabel staat bij t = 0, 1, 2 en 3 respectievelijk 10, 15, 22 en 34. Een leerling wil weten of de groei bij benadering exponentieel is, welke formule erbij past en wat het verwachte aantal bij t = 4 is."
+  },
+  {
+   "v": "Waarom is het verband in de tabel niet lineair?",
+   "o": [
+    "\"de toename per stap is niet constant: 5, 7 en 12\"",
+    "\"de tabel heeft geen beginwaarde, volgens mij, eigenlijk\"",
+    "\"de waarden stijgen\"",
+    "\"de waarden zijn te groot\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 0,
+   "u": "Bepaal eerst of de verandering per stap met een vaste factor gaat en gebruik dan de groeifactor. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: bij een lineair verband zijn de toenames gelijk. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"de tabel heeft geen beginwaarde, volgens mij, eigenlijk\"\"? Dan denk je dat een beginwaarde ontbreekt. De beginwaarde is 10, en de toenames zijn niet gelijk.",
+    "Koos je \"\"de waarden stijgen\"\"? Dan denk je dat stijgen genoeg is. Een lineair verband stijgt ook, met gelijke toenames.",
+    "Koos je \"\"de waarden zijn te groot\"\"? Dan denk je aan de grootte van de getallen. Het gaat om de toenames, en die zijn niet constant."
+   ],
+   "uh": "Waarom is het verband in de tabel niet lineair?",
+   "ctx": "In een tabel staat bij t = 0, 1, 2 en 3 respectievelijk 10, 15, 22 en 34. Een leerling wil weten of de groei bij benadering exponentieel is, welke formule erbij past en wat het verwachte aantal bij t = 4 is."
+  }
+ ],
+ "oe": [
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een tabel toont het aantal volgers van een kanaal: 200 bij t = 0, 240 bij t = 1 en 288 bij t = 2. De groei is exponentieel. Een leerling wil de groeifactor en het groeipercentage bepalen en het aantal bij t = 3 berekenen.",
+   "v": "Bepaal de groeifactor, het groeipercentage en het aantal bij t = 3.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "240 : 200 = 288 : 240 = 1,2, dus groeifactor 1,2 (1p). Groeipercentage 20% (1p). Bij t = 3: 288 · 1,2 = 345,6 (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Op een spaarrekening staat €1000 met 4% rente per jaar. Een leerling wil de formule voor het saldo opstellen en het saldo na 5 jaar berekenen, afgerond op centen.",
+   "v": "Stel de formule op en bereken het saldo na 5 jaar.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Groeifactor 1,04 en beginwaarde 1000: N = 1000 · 1,04^t (1p). Bij t = 5: 1000 · 1,04⁵ (1p). Dat is 1216,65 euro (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een medicijn heeft een halveringstijd van 4 uur. Een patiënt krijgt 160 milligram toegediend. Een leerling wil weten hoeveel er na 8 uur en na 12 uur nog in het bloed zit.",
+   "v": "Bereken de hoeveelheid na 8 uur en na 12 uur.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Na 4 uur: 80 mg en na 8 uur: 40 mg (1p). Na 12 uur: 20 mg (1p). Dat zijn drie halveringen: 160 · 0,5³ = 20 (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een auto kost nieuw €24 000 en verliest elk jaar 20% van zijn waarde. Een leerling wil de formule voor de waarde opstellen en de waarde na 2 jaar berekenen.",
+   "v": "Stel de formule op en bereken de waarde na 2 jaar.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Groeifactor 0,80: W = 24 000 · 0,8^t (1p). Na 1 jaar: 19 200 (1p). Na 2 jaar: 24 000 · 0,64 = 15 360 euro (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een leerling schrijft bij 5% groei per jaar de formule N = b · 5^t. Jij weet dat de groeifactor niet 5 is. Je wilt het juiste grondtal geven en laten zien met b = 100 en t = 1 dat de formule fout is.",
+   "v": "Geef de juiste formule en toon de fout aan met b = 100 en t = 1.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "5% groei geeft groeifactor 1,05: N = b · 1,05^t (1p). Met b = 100 en t = 1 geeft de juiste formule 105 (1p). De foute formule geeft 500, wat veel te groot is (1p)."
+  }
+ ]
+}

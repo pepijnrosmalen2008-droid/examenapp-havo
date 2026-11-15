@@ -1231,6 +1231,27 @@ var VAKKEN = [
       "nOe": 5,
       "nBeg": 12,
       "hasSam": true
+     },
+     {
+      "id": "C6",
+      "lo": "wa.C.6",
+      "gs": 2,
+      "naam": "Exponentiële verbanden: groeifactor, groeipercentage en verdubbelingstijd",
+      "beschrijving": "Je herkent exponentiële groei en afname, bepaalt beginwaarde, groeifactor en groeipercentage, stelt de formule op, rekent met verdubbelingstijd en halveringstijd en controleert je uitkomsten.",
+      "ceStatus": "CE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Exponentiële groei herkennen",
+       "Beginwaarde en groeifactor",
+       "Formule opstellen",
+       "Verdubbelen en halveren",
+       "Rekenen en controleren"
+      ],
+      "nSv": 27,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
      }
     ]
    },
