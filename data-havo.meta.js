@@ -1279,7 +1279,30 @@ var VAKKEN = [
     "nSv": 86,
     "nOe": 3,
     "nBeg": 15,
-    "hasSam": true
+    "hasSam": true,
+    "leerdoelen": [
+     {
+      "id": "D1",
+      "lo": "wa.D.1",
+      "gs": 2,
+      "naam": "Stijgen, dalen, maximum en minimum bij een grafiek",
+      "beschrijving": "Je beschrijft het verloop van een grafiek met stijgen, dalen en constant, noemt maximum en minimum met de bijbehorende waarden en geeft aan of de toename groter of kleiner wordt.",
+      "ceStatus": "CE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Stijgen en dalen aflezen",
+       "Maximum en minimum aflezen",
+       "Toenemend of afnemend",
+       "Intervallen noemen",
+       "Conclusies uit de grafiek trekken"
+      ],
+      "nSv": 27,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
+     }
+    ]
    },
    {
     "id": "E",

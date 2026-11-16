@@ -50725,6 +50725,690 @@ var VAKKEN = [
       "t": "Afnemende daling",
       "d": "daalt, maar steeds langzamer"
      }
+    ],
+    "leerdoelen": [
+     {
+      "id": "D1",
+      "lo": "wa.D.1",
+      "gs": 2,
+      "naam": "Stijgen, dalen, maximum en minimum bij een grafiek",
+      "beschrijving": "Je beschrijft het verloop van een grafiek met stijgen, dalen en constant, noemt maximum en minimum met de bijbehorende waarden en geeft aan of de toename groter of kleiner wordt.",
+      "ceStatus": "CE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Stijgen en dalen aflezen",
+       "Maximum en minimum aflezen",
+       "Toenemend of afnemend",
+       "Intervallen noemen",
+       "Conclusies uit de grafiek trekken"
+      ],
+      "sam": "Een grafiek stijgt als de y-waarden groter worden en daalt als ze kleiner worden. Het maximum is de hoogste y-waarde, het minimum de laagste; noem ook de x-waarde. Beschrijf het verloop per interval en geef aan of de toename of afname groter of kleiner wordt. Lees een tabel van links naar rechts.",
+      "begrippen": [
+       {
+        "t": "Stijgend",
+        "d": "De grafiek gaat van links naar rechts omhoog: de y-waarden worden groter."
+       },
+       {
+        "t": "Dalend",
+        "d": "De grafiek gaat van links naar rechts omlaag: de y-waarden worden kleiner."
+       },
+       {
+        "t": "Constant",
+        "d": "De y-waarde verandert niet."
+       },
+       {
+        "t": "Maximum",
+        "d": "De hoogste y-waarde van de grafiek."
+       },
+       {
+        "t": "Minimum",
+        "d": "De laagste y-waarde van de grafiek."
+       },
+       {
+        "t": "Lokaal maximum of minimum",
+        "d": "Een hoogste of laagste punt in de buurt, niet noodzakelijk van de hele grafiek."
+       },
+       {
+        "t": "Toenemend stijgend",
+        "d": "De grafiek stijgt en de toename per stap wordt groter."
+       },
+       {
+        "t": "Afnemend stijgend",
+        "d": "De grafiek stijgt en de toename per stap wordt kleiner."
+       },
+       {
+        "t": "Toenemend dalend en afnemend dalend",
+        "d": "De grafiek daalt en de daling wordt per stap groter respectievelijk kleiner."
+       },
+       {
+        "t": "Interval",
+        "d": "Een stuk van de x-as, zoals van x = 0 tot x = 2."
+       },
+       {
+        "t": "Top en dal",
+        "d": "Het hoogste punt van een bergparabool en het laagste van een dalparabool."
+       },
+       {
+        "t": "Verloop beschrijven",
+        "d": "Noem per interval of de grafiek stijgt, daalt of constant is, en of de verandering toeneemt of afneemt."
+       }
+      ],
+      "sv": [
+       {
+        "v": "Een grafiek gaat van links naar rechts omhoog. Hoe beschrijf je dat verloop?",
+        "o": [
+         "\"dalend\"",
+         "\"stijgend\"",
+         "\"constant\"",
+         "\"maximum\""
+        ],
+        "c": 1,
+        "d": 1,
+        "s": 0,
+        "u": "Lees de waarden van links naar rechts af en let op waar de grafiek van richting verandert. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"dalend\"\"? Dan verwar je omhoog met omlaag. De grafiek gaat omhoog, dus stijgend. Het goede antwoord is stijgend.",
+         "Klopt: als de y-waarden bij toenemende x groter worden, stijgt de grafiek.",
+         "Koos je \"\"constant\"\"? Dan denk je dat de waarde gelijk blijft. De y-waarden worden groter, dus stijgend. Door de stappen goed na te lopen kom je uit op stijgend.",
+         "Koos je \"\"maximum\"\"? Dan noem je een punt in plaats van een verloop. Het maximum is het hoogste punt, en de grafiek is stijgend."
+        ],
+        "uh": "Een grafiek gaat van links naar rechts omhoog. Hoe beschrijf je dat verloop?"
+       },
+       {
+        "v": "Het hoogste punt van een grafiek is (3, 12). Welke waarde heeft het maximum?",
+        "o": [
+         "\"3\"",
+         "\"15\"",
+         "\"9\"",
+         "\"12\""
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 1,
+        "u": "Lees de waarden van links naar rechts af en let op waar de grafiek van richting verandert. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"3\"\"? Dan neem je de x-waarde. Het maximum is de hoogste y-waarde, dus 12. Het goede antwoord is 12.",
+         "Koos je \"\"15\"\"? Dan tel je 3 en 12 bij elkaar op. Het maximum lees je af, dus 12. Door de stappen goed na te lopen kom je uit op 12.",
+         "Koos je \"\"9\"\"? Dan trek je 3 van 12 af. Het maximum lees je af zonder te rekenen, dus 12. Controleer je stap: de juiste uitkomst is 12.",
+         "Klopt: het maximum is de y-waarde van het hoogste punt, dus 12 bij x = 3."
+        ],
+        "uh": "Het hoogste punt van een grafiek is (3, 12). Welke waarde heeft het maximum?"
+       },
+       {
+        "v": "Het laagste punt van een grafiek is (5, −2). Welke waarde heeft het minimum?",
+        "o": [
+         "\"−2\"",
+         "\"5\"",
+         "\"2\"",
+         "\"3\""
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 1,
+        "u": "Lees de waarden van links naar rechts af en let op waar de grafiek van richting verandert. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: het minimum is de y-waarde van het laagste punt, dus −2 bij x = 5.",
+         "Koos je \"\"5\"\"? Dan neem je de x-waarde. Het minimum is de laagste y-waarde, dus −2. Het goede antwoord is −2.",
+         "Koos je \"\"2\"\"? Dan laat je het minteken weg. De y-waarde is negatief, dus −2. Door de stappen goed na te lopen kom je uit op −2.",
+         "Koos je \"\"3\"\"? Dan trek je 2 van 5 af. Het minimum lees je af, dus −2. Controleer je stap: de juiste uitkomst is −2."
+        ],
+        "uh": "Het laagste punt van een grafiek is (5, −2). Welke waarde heeft het minimum?"
+       },
+       {
+        "v": "In een tabel zijn de toenames 8, 6, 4 en 2. Hoe beschrijf je het stijgen?",
+        "o": [
+         "\"toenemend stijgend, you know\"",
+         "\"constant stijgend\"",
+         "\"afnemend stijgend\"",
+         "\"afnemend dalend\""
+        ],
+        "c": 2,
+        "d": 1,
+        "s": 2,
+        "u": "Lees de waarden van links naar rechts af en let op waar de grafiek van richting verandert. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"toenemend stijgend, you know\"\"? Dan denk je dat de toename groter wordt. De toenames dalen van 8 naar 2, dus afnemend. Het goede antwoord is afnemend stijgend.",
+         "Koos je \"\"constant stijgend\"\"? Dan denk je dat de toename gelijk blijft. Ze verschillen per stap, dus afnemend. Door de stappen goed na te lopen kom je uit op afnemend stijgend.",
+         "Klopt: de waarden stijgen en de toename wordt steeds kleiner.",
+         "Koos je \"\"afnemend dalend\"\"? Dan verwar je stijgen met dalen. De waarden worden groter, dus stijgend. Controleer je stap: de juiste uitkomst is afnemend stijgend."
+        ],
+        "uh": "In een tabel zijn de toenames 8, 6, 4 en 2. Hoe beschrijf je het stijgen?"
+       },
+       {
+        "v": "Een grafiek stijgt tot x = 4 en daalt daarna. Voor welke waarden van x stijgt hij?",
+        "o": [
+         "\"voor x groter dan 4, really\"",
+         "\"voor x kleiner dan 4\"",
+         "\"alleen bij x = 4\"",
+         "\"voor alle x\""
+        ],
+        "c": 1,
+        "d": 1,
+        "s": 3,
+        "u": "Lees de waarden van links naar rechts af en let op waar de grafiek van richting verandert. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"voor x groter dan 4, really\"\"? Dan draai je links en rechts om. Na x = 4 daalt de grafiek, dus stijgen doet hij ervoor.",
+         "Klopt: de grafiek stijgt links van x = 4 en daalt rechts daarvan.",
+         "Koos je \"\"alleen bij x = 4\"\"? Dan neem je het hoogste punt. Daar verandert de richting, maar stijgen gebeurt links ervan.",
+         "Koos je \"\"voor alle x\"\"? Dan denk je dat hij altijd stijgt. Na x = 4 daalt hij, dus alleen links ervan. Controleer je stap: de juiste uitkomst is voor x kleiner dan 4."
+        ],
+        "uh": "Een grafiek stijgt tot x = 4 en daalt daarna. Voor welke waarden van x stijgt hij?"
+       },
+       {
+        "v": "Een grafiek stijgt van x = 1 tot 3 en daalt van 3 tot 5. Bij welke x ligt het maximum?",
+        "o": [
+         "\"x = 1, I think\"",
+         "\"x = 5\"",
+         "\"x = 4\"",
+         "\"x = 3\""
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 4,
+        "u": "Lees de waarden van links naar rechts af en let op waar de grafiek van richting verandert. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"x = 1, I think\"\"? Dan neem je het beginpunt. Daar stijgt de grafiek nog, dus het maximum is bij x = 3. Het goede antwoord is x = 3.",
+         "Koos je \"\"x = 5\"\"? Dan neem je het eindpunt. Daar is de grafiek aan het dalen geweest, dus het maximum is bij x = 3. Door de stappen goed na te lopen kom je uit op x = 3.",
+         "Koos je \"\"x = 4\"\"? Dan neem je een punt na het hoogste punt. De grafiek daalt dan al, dus bij x = 3. Controleer je stap: de juiste uitkomst is x = 3.",
+         "Klopt: de grafiek stijgt eerst en daalt daarna, dus het hoogste punt ligt bij x = 3."
+        ],
+        "uh": "Een grafiek stijgt van x = 1 tot 3 en daalt van 3 tot 5. Bij welke x ligt het maximum?"
+       },
+       {
+        "v": "Bij x = 2 is y = 7 en bij x = 3 is y = 5. Hoe verloopt de grafiek tussen x = 2 en x = 3?",
+        "o": [
+         "\"dalend\"",
+         "\"stijgend\"",
+         "\"constant\"",
+         "\"maximum\""
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 0,
+        "u": "Lees de waarden van links naar rechts af en let op waar de grafiek van richting verandert. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: y wordt kleiner (van 7 naar 5), dus de grafiek daalt.",
+         "Koos je \"\"stijgend\"\"? Dan draai je de volgorde om. Van 7 naar 5 neemt de waarde af, dus dalend. Het goede antwoord is dalend.",
+         "Koos je \"\"constant\"\"? Dan denk je dat de waarden gelijk blijven. Ze verschillen, dus dalend. Door de stappen goed na te lopen kom je uit op dalend.",
+         "Koos je \"\"maximum\"\"? Dan noem je een punt in plaats van een verloop. De grafiek daalt hier, dus dalend. Controleer je stap: de juiste uitkomst is dalend."
+        ],
+        "uh": "Bij x = 2 is y = 7 en bij x = 3 is y = 5. Hoe verloopt de grafiek tussen x = 2 en x = 3?"
+       },
+       {
+        "v": "Hoeveel meter is de maximale hoogte van de bal?",
+        "o": [
+         "\"2 meter\"",
+         "\"15 meter, I suppose\"",
+         "\"20 meter\"",
+         "\"40 meter\""
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 1,
+        "u": "Lees de waarden van links naar rechts af en let op waar de grafiek van richting verandert. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"2 meter\"\"? Dan neem je het tijdstip. De hoogte is de y-waarde, dus 20. Het goede antwoord is 20 meter.",
+         "Koos je \"\"15 meter, I suppose\"\"? Dan neem je een hoogte uit de tabel die niet de grootste is. Het maximum is 20, dus 20. Door de stappen goed na te lopen kom je uit op 20 meter.",
+         "Klopt: de tabel geeft de hoogste waarde 20 bij t = 2. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"40 meter\"\"? Dan neem je 20 · 2. Het maximum lees je direct af, dus 20. Controleer je stap: de juiste uitkomst is 20 meter."
+        ],
+        "uh": "Hoeveel meter is de maximale hoogte van de bal?",
+        "ctx": "Een bal wordt omhoog geschoten. De hoogte in meter na t seconden is h = −5t² + 20t. Een tabel geeft: t = 0 geeft 0, t = 1 geeft 15, t = 2 geeft 20, t = 3 geeft 15 en t = 4 geeft 0. De grafiek is een bergparabool."
+       },
+       {
+        "v": "Op welk tijdstip is de bal het hoogst?",
+        "o": [
+         "\"t = 20 seconden, you know\"",
+         "\"t = 2 seconden\"",
+         "\"t = 4 seconden\"",
+         "\"t = 0 seconden\""
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 1,
+        "u": "Lees de waarden van links naar rechts af en let op waar de grafiek van richting verandert. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"t = 20 seconden, you know\"\"? Dan neem je de hoogte als tijd. Het tijdstip staat in de eerste kolom, dus t = 2. Het goede antwoord is t = 2 seconden.",
+         "Klopt: de hoogste waarde 20 hoort bij t = 2. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"t = 4 seconden\"\"? Dan neem je het eindpunt. Daar is de hoogte 0, dus t = 2. Door de stappen goed na te lopen kom je uit op t = 2 seconden.",
+         "Koos je \"\"t = 0 seconden\"\"? Dan neem je het beginpunt. Daar is de hoogte 0, dus t = 2. Controleer je stap: de juiste uitkomst is t = 2 seconden."
+        ],
+        "uh": "Op welk tijdstip is de bal het hoogst?",
+        "ctx": "Een bal wordt omhoog geschoten. De hoogte in meter na t seconden is h = −5t² + 20t. Een tabel geeft: t = 0 geeft 0, t = 1 geeft 15, t = 2 geeft 20, t = 3 geeft 15 en t = 4 geeft 0. De grafiek is een bergparabool."
+       },
+       {
+        "v": "Voor welke tijdstippen is de bal stijgend?",
+        "o": [
+         "\"van t = 2 tot t = 4, really\"",
+         "\"van t = 0 tot t = 4\"",
+         "\"alleen bij t = 2\"",
+         "\"van t = 0 tot t = 2\""
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 0,
+        "u": "Lees de waarden van links naar rechts af en let op waar de grafiek van richting verandert. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"van t = 2 tot t = 4, really\"\"? Dan verwar je stijgen met dalen. Na 2 seconden daalt de bal, dus stijgen is tot t = 2. Het goede antwoord is van t = 0 tot t = 2.",
+         "Koos je \"\"van t = 0 tot t = 4\"\"? Dan denk je dat de bal altijd stijgt. Na 2 seconden daalt hij, dus alleen tot t = 2. Door de stappen goed na te lopen kom je uit op van t = 0 tot t = 2.",
+         "Koos je \"\"alleen bij t = 2\"\"? Dan neem je het hoogste punt. Stijgen gebeurt gedurende een interval, dus van 0 tot 2. Controleer je stap: de juiste uitkomst is van t = 0 tot t = 2.",
+         "Klopt: de hoogte neemt toe van 0 via 15 naar 20. Reken dit na met de gegeven gegevens."
+        ],
+        "uh": "Voor welke tijdstippen is de bal stijgend?",
+        "ctx": "Een bal wordt omhoog geschoten. De hoogte in meter na t seconden is h = −5t² + 20t. Een tabel geeft: t = 0 geeft 0, t = 1 geeft 15, t = 2 geeft 20, t = 3 geeft 15 en t = 4 geeft 0. De grafiek is een bergparabool."
+       },
+       {
+        "v": "Hoeveel graden is de hoogste temperatuur en om hoe laat is dat?",
+        "o": [
+         "\"20 graden om 15:00 uur\"",
+         "\"18 graden om 12:00 uur, I think\"",
+         "\"20 graden om 21:00 uur\"",
+         "\"10 graden om 15:00 uur\""
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 1,
+        "u": "Lees de waarden van links naar rechts af en let op waar de grafiek van richting verandert. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: de hoogste waarde in de tabel is 20 en die hoort bij 15:00.",
+         "Koos je \"\"18 graden om 12:00 uur, I think\"\"? Dan neem je een hoge waarde die niet de hoogste is. 20 is groter, dus om 15:00. Het goede antwoord is 20 graden om 15:00 uur.",
+         "Koos je \"\"20 graden om 21:00 uur\"\"? Dan koppel je de hoogste temperatuur aan het verkeerde tijdstip. 20 hoort bij 15:00, dus niet bij 21:00.",
+         "Koos je \"\"10 graden om 15:00 uur\"\"? Dan neem je de laagste temperatuur. Gevraagd is de hoogste, dus 20. Controleer je stap: de juiste uitkomst is 20 graden om 15:00 uur."
+        ],
+        "uh": "Hoeveel graden is de hoogste temperatuur en om hoe laat is dat?",
+        "ctx": "Een weerstation noteert de temperatuur in graden: 8 om 6:00, 12 om 9:00, 18 om 12:00, 20 om 15:00, 15 om 18:00 en 10 om 21:00 uur. De leerling tekent de grafiek en beschrijft het verloop van de dag."
+       },
+       {
+        "v": "Hoeveel graden is de laagste temperatuur in de tabel?",
+        "o": [
+         "\"10 graden, to be honest\"",
+         "\"12 graden\"",
+         "\"8 graden\"",
+         "\"6 graden\""
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 1,
+        "u": "Lees de waarden van links naar rechts af en let op waar de grafiek van richting verandert. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"10 graden, to be honest\"\"? Dan neem je de laatste waarde. Die is niet de laagste, want 8 is lager. Het goede antwoord is 8 graden.",
+         "Koos je \"\"12 graden\"\"? Dan neem je de tweede waarde. Die is niet de laagste, dus 8. Door de stappen goed na te lopen kom je uit op 8 graden.",
+         "Klopt: de laagste waarde in de tabel is 8, om 6:00 uur. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"6 graden\"\"? Dan neem je het tijdstip 6:00 als temperatuur. De temperatuur staat in de tweede kolom, dus 8. Controleer je stap: de juiste uitkomst is 8 graden."
+        ],
+        "uh": "Hoeveel graden is de laagste temperatuur in de tabel?",
+        "ctx": "Een weerstation noteert de temperatuur in graden: 8 om 6:00, 12 om 9:00, 18 om 12:00, 20 om 15:00, 15 om 18:00 en 10 om 21:00 uur. De leerling tekent de grafiek en beschrijft het verloop van de dag."
+       },
+       {
+        "v": "In welke periode daalt de temperatuur volgens de tabel?",
+        "o": [
+         "\"van 6:00 tot 15:00 uur, I suppose\"",
+         "\"van 15:00 tot 21:00 uur\"",
+         "\"van 6:00 tot 21:00 uur\"",
+         "\"van 9:00 tot 12:00 uur\""
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 0,
+        "u": "Lees de waarden van links naar rechts af en let op waar de grafiek van richting verandert. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"van 6:00 tot 15:00 uur, I suppose\"\"? Dan verwar je dalen met stijgen. In die periode stijgt de temperatuur, dus dalen is na 15:00.",
+         "Klopt: 20, 15 en 10 worden steeds kleiner. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"van 6:00 tot 21:00 uur\"\"? Dan denk je dat de temperatuur altijd daalt. Eerst stijgt hij, dus dalen is na 15:00.",
+         "Koos je \"\"van 9:00 tot 12:00 uur\"\"? Dan neem je een stijgende periode. De waarden gaan van 12 naar 18, dus omhoog. Controleer je stap: de juiste uitkomst is van 15:00 tot 21:00 uur."
+        ],
+        "uh": "In welke periode daalt de temperatuur volgens de tabel?",
+        "ctx": "Een weerstation noteert de temperatuur in graden: 8 om 6:00, 12 om 9:00, 18 om 12:00, 20 om 15:00, 15 om 18:00 en 10 om 21:00 uur. De leerling tekent de grafiek en beschrijft het verloop van de dag."
+       },
+       {
+        "v": "In welke maand is de omzet het hoogst en hoeveel is dat?",
+        "o": [
+         "\"maand 2, 45 duizend euro, you know\"",
+         "\"maand 6, 42 duizend euro\"",
+         "\"maand 1, 30 duizend euro\"",
+         "\"maand 3, 50 duizend euro\""
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 1,
+        "u": "Lees de waarden van links naar rechts af en let op waar de grafiek van richting verandert. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"maand 2, 45 duizend euro, you know\"\"? Dan neem je de tweede waarde. Maand 3 geeft meer, dus 50. Het goede antwoord is maand 3, 50 duizend euro.",
+         "Koos je \"\"maand 6, 42 duizend euro\"\"? Dan neem je de laatste maand. Die is niet de hoogste, dus maand 3. Door de stappen goed na te lopen kom je uit op maand 3, 50 duizend euro.",
+         "Koos je \"\"maand 1, 30 duizend euro\"\"? Dan neem je de eerste waarde. Dat is de laagste, dus maand 3 met 50. Controleer je stap: de juiste uitkomst is maand 3, 50 duizend euro.",
+         "Klopt: de hoogste waarde in de tabel is 50 bij maand 3. Reken dit na met de gegeven gegevens."
+        ],
+        "uh": "In welke maand is de omzet het hoogst en hoeveel is dat?",
+        "ctx": "Een winkel noteert de omzet per maand in duizenden euro: maand 1 geeft 30, maand 2 geeft 45, maand 3 geeft 50, maand 4 geeft 48, maand 5 geeft 40 en maand 6 geeft 42. Een leerling beschrijft stijgen en dalen en zoekt hoogste en laagste punten."
+       },
+       {
+        "v": "Welke omzet hoort bij het laagste punt van de hele periode?",
+        "o": [
+         "\"30 duizend euro in maand 1\"",
+         "\"40 duizend euro in maand 5, gewoon\"",
+         "\"42 duizend euro in maand 6\"",
+         "\"50 duizend euro in maand 3\""
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 1,
+        "u": "Lees de waarden van links naar rechts af en let op waar de grafiek van richting verandert. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: 30 is de kleinste waarde in de tabel. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"40 duizend euro in maand 5, gewoon\"\"? Dan neem je het laagste punt na de piek. Dat is een lokaal minimum, maar 30 is lager.",
+         "Koos je \"\"42 duizend euro in maand 6\"\"? Dan neem je de laatste waarde. Die is niet de laagste, dus 30. Door de stappen goed na te lopen kom je uit op 30 duizend euro in maand 1.",
+         "Koos je \"\"50 duizend euro in maand 3\"\"? Dan neem je het hoogste punt. Gevraagd is het laagste, dus 30. Controleer je stap: de juiste uitkomst is 30 duizend euro in maand 1."
+        ],
+        "uh": "Welke omzet hoort bij het laagste punt van de hele periode?",
+        "ctx": "Een winkel noteert de omzet per maand in duizenden euro: maand 1 geeft 30, maand 2 geeft 45, maand 3 geeft 50, maand 4 geeft 48, maand 5 geeft 40 en maand 6 geeft 42. Een leerling beschrijft stijgen en dalen en zoekt hoogste en laagste punten."
+       },
+       {
+        "v": "In welke periode stijgt de omzet na maand 3 weer?",
+        "o": [
+         "\"van maand 3 tot maand 5, I think\"",
+         "\"van maand 4 tot maand 5\"",
+         "\"van maand 5 tot maand 6\"",
+         "\"van maand 1 tot maand 3\""
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 0,
+        "u": "Lees de waarden van links naar rechts af en let op waar de grafiek van richting verandert. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"van maand 3 tot maand 5, I think\"\"? Dan neem je de dalende periode. De omzet gaat van 50 naar 40, dus daalt. Het goede antwoord is van maand 5 tot maand 6.",
+         "Koos je \"\"van maand 4 tot maand 5\"\"? Dan neem je een dalende periode. 48 gaat naar 40, dus daalt. Door de stappen goed na te lopen kom je uit op van maand 5 tot maand 6.",
+         "Klopt: 40 gaat naar 42, dus de omzet stijgt weer na maand 5.",
+         "Koos je \"\"van maand 1 tot maand 3\"\"? Dan neem je de eerste stijgende periode. De vraag gaat over na maand 3, dus maand 5 tot 6."
+        ],
+        "uh": "In welke periode stijgt de omzet na maand 3 weer?",
+        "ctx": "Een winkel noteert de omzet per maand in duizenden euro: maand 1 geeft 30, maand 2 geeft 45, maand 3 geeft 50, maand 4 geeft 48, maand 5 geeft 40 en maand 6 geeft 42. Een leerling beschrijft stijgen en dalen en zoekt hoogste en laagste punten."
+       },
+       {
+        "v": "Hoe beschrijf je het verloop van maand 1 tot maand 3?",
+        "o": [
+         "\"stijgend, met toenemende toename, volgens mij\"",
+         "\"stijgend, met afnemende toename\"",
+         "\"dalend, met afnemende daling\"",
+         "\"constant\""
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 2,
+        "u": "Lees de waarden van links naar rechts af en let op waar de grafiek van richting verandert. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"stijgend, met toenemende toename, volgens mij\"\"? Dan denk je dat de toename groter wordt. De toenames zijn 15 en 5, dus kleiner.",
+         "Klopt: de toenames zijn 15 en 5, de omzet stijgt steeds minder snel.",
+         "Koos je \"\"dalend, met afnemende daling\"\"? Dan verwar je stijgen met dalen. De omzet gaat van 30 naar 50, dus stijgend. Door de stappen goed na te lopen kom je uit op stijgend, met afnemende toename.",
+         "Koos je \"\"constant\"\"? Dan denk je dat de omzet gelijk blijft. De omzet verandert, dus stijgend. Controleer je stap: de juiste uitkomst is stijgend, met afnemende toename."
+        ],
+        "uh": "Hoe beschrijf je het verloop van maand 1 tot maand 3?",
+        "ctx": "Een winkel noteert de omzet per maand in duizenden euro: maand 1 geeft 30, maand 2 geeft 45, maand 3 geeft 50, maand 4 geeft 48, maand 5 geeft 40 en maand 6 geeft 42. Een leerling beschrijft stijgen en dalen en zoekt hoogste en laagste punten."
+       },
+       {
+        "v": "Hoeveel bedraagt het minimum van de kosten per eenheid?",
+        "o": [
+         "\"20\"",
+         "\"5\"",
+         "\"0\"",
+         "\"4\""
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 1,
+        "u": "Lees de waarden van links naar rechts af en let op waar de grafiek van richting verandert. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"20\"\"? Dan neem je de hoogste waarde. Gevraagd is het minimum, dus 4. Het goede antwoord is 4.",
+         "Koos je \"\"5\"\"? Dan neem je een waarde naast het minimum. De laagste is 4, dus 4. Door de stappen goed na te lopen kom je uit op 4.",
+         "Koos je \"\"0\"\"? Dan denk je dat de kosten 0 kunnen zijn. De tabel geeft als laagste 4, dus 4. Controleer je stap: de juiste uitkomst is 4.",
+         "Klopt: de laagste waarde in de tabel is 4, bij q = 4. Reken dit na met de gegeven gegevens."
+        ],
+        "uh": "Hoeveel bedraagt het minimum van de kosten per eenheid?",
+        "ctx": "De kosten per eenheid van een product zijn K = q² − 8q + 20 bij q geproduceerde eenheden. Een tabel geeft voor q = 0 tot 8 de waarden 20, 13, 8, 5, 4, 5, 8, 13 en 20. De grafiek is een dalparabool."
+       },
+       {
+        "v": "Voor welke waarden van q dalen de kosten?",
+        "o": [
+         "\"van q = 0 tot q = 4\"",
+         "\"van q = 4 tot q = 8, you know\"",
+         "\"van q = 0 tot q = 8\"",
+         "\"alleen bij q = 4\""
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 0,
+        "u": "Lees de waarden van links naar rechts af en let op waar de grafiek van richting verandert. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: de waarden 20, 13, 8, 5, 4 worden steeds kleiner.",
+         "Koos je \"\"van q = 4 tot q = 8, you know\"\"? Dan verwar je dalen met stijgen. Na q = 4 stijgen de kosten, dus dalen is ervoor. Het goede antwoord is van q = 0 tot q = 4.",
+         "Koos je \"\"van q = 0 tot q = 8\"\"? Dan denk je dat de kosten altijd dalen. Na q = 4 stijgen ze, dus alleen tot 4. Door de stappen goed na te lopen kom je uit op van q = 0 tot q = 4.",
+         "Koos je \"\"alleen bij q = 4\"\"? Dan neem je het laagste punt. Dalen gebeurt in een interval, dus van 0 tot 4. Controleer je stap: de juiste uitkomst is van q = 0 tot q = 4."
+        ],
+        "uh": "Voor welke waarden van q dalen de kosten?",
+        "ctx": "De kosten per eenheid van een product zijn K = q² − 8q + 20 bij q geproduceerde eenheden. Een tabel geeft voor q = 0 tot 8 de waarden 20, 13, 8, 5, 4, 5, 8, 13 en 20. De grafiek is een dalparabool."
+       },
+       {
+        "v": "Welke kosten horen bij q = 2 en q = 6, en wat valt op?",
+        "o": [
+         "\"13 en 8, de grafiek daalt\"",
+         "\"8 en 13, de grafiek stijgt, gewoon, volgens mij\"",
+         "\"beide 8, de grafiek is symmetrisch rond q = 4\"",
+         "\"5 en 5, het minimum is 5\""
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 4,
+        "u": "Lees de waarden van links naar rechts af en let op waar de grafiek van richting verandert. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"13 en 8, de grafiek daalt\"\"? Dan neem je q = 1 en q = 2. De tabel geeft bij q = 2 de waarde 8, en bij q = 6 ook 8.",
+         "Koos je \"\"8 en 13, de grafiek stijgt, gewoon, volgens mij\"\"? Dan neem je q = 2 en q = 7. Bij q = 6 is de waarde 8, dus gelijk aan q = 2. Door de stappen goed na te lopen kom je uit op beide 8, de grafiek is symmetrisch rond q = 4.",
+         "Klopt: 8 en 8; de punten liggen even ver van het minimum.",
+         "Koos je \"\"5 en 5, het minimum is 5\"\"? Dan neem je q = 3 en q = 5. Het minimum is 4 bij q = 4, en 8 hoort bij q = 2 en 6."
+        ],
+        "uh": "Welke kosten horen bij q = 2 en q = 6, en wat valt op?",
+        "ctx": "De kosten per eenheid van een product zijn K = q² − 8q + 20 bij q geproduceerde eenheden. Een tabel geeft voor q = 0 tot 8 de waarden 20, 13, 8, 5, 4, 5, 8, 13 en 20. De grafiek is een dalparabool."
+       },
+       {
+        "v": "Hoe beschrijf je de groei van de plant?",
+        "o": [
+         "\"stijgend, met toenemende toename, denk ik\"",
+         "\"stijgend, met afnemende toename\"",
+         "\"dalend\"",
+         "\"stijgend met constante toename\""
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 2,
+        "u": "Lees de waarden van links naar rechts af en let op waar de grafiek van richting verandert. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"stijgend, met toenemende toename, denk ik\"\"? Dan denk je dat de toename groter wordt. De toenames zijn 8, 6, 4 en 2, dus kleiner.",
+         "Klopt: de toenames per week zijn 8, 6, 4 en 2. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"dalend\"\"? Dan verwar je stijgen met dalen. De plant wordt hoger, dus stijgend. Door de stappen goed na te lopen kom je uit op stijgend, met afnemende toename.",
+         "Koos je \"\"stijgend met constante toename\"\"? Dan denk je dat de toename gelijk is. De toenames verschillen, dus afnemend."
+        ],
+        "uh": "Hoe beschrijf je de groei van de plant?",
+        "ctx": "Een plant wordt wekelijks gemeten: week 0 is 10 centimeter, week 1 is 18, week 2 is 24, week 3 is 28 en week 4 is 30 centimeter. Een leerling beschrijft de groei en let op de toenames per week."
+       },
+       {
+        "v": "In welke week is de plant het hoogst?",
+        "o": [
+         "\"week 0, 10 centimeter, to be honest\"",
+         "\"week 3, 28 centimeter\"",
+         "\"week 1, 18 centimeter\"",
+         "\"week 4, 30 centimeter\""
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 1,
+        "u": "Lees de waarden van links naar rechts af en let op waar de grafiek van richting verandert. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"week 0, 10 centimeter, to be honest\"\"? Dan neem je de beginwaarde. Dat is de laagste, dus week 4. Het goede antwoord is week 4, 30 centimeter.",
+         "Koos je \"\"week 3, 28 centimeter\"\"? Dan neem je de voorlaatste waarde. De hoogste is 30, dus week 4. Door de stappen goed na te lopen kom je uit op week 4, 30 centimeter.",
+         "Koos je \"\"week 1, 18 centimeter\"\"? Dan neem je de grootste toename. Gevraagd is de grootste hoogte, dus week 4. Controleer je stap: de juiste uitkomst is week 4, 30 centimeter.",
+         "Klopt: de waarden stijgen en de hoogste is 30 in week 4."
+        ],
+        "uh": "In welke week is de plant het hoogst?",
+        "ctx": "Een plant wordt wekelijks gemeten: week 0 is 10 centimeter, week 1 is 18, week 2 is 24, week 3 is 28 en week 4 is 30 centimeter. Een leerling beschrijft de groei en let op de toenames per week."
+       },
+       {
+        "v": "In welke week is de toename het grootst?",
+        "o": [
+         "\"week 0 tot week 1, met 8 centimeter\"",
+         "\"week 3 tot week 4, met 2 centimeter, I suppose\"",
+         "\"week 1 tot week 2, met 6 centimeter\"",
+         "\"week 2 tot week 3, met 4 centimeter\""
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 0,
+        "u": "Lees de waarden van links naar rechts af en let op waar de grafiek van richting verandert. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: 18 − 10 = 8 is de grootste toename. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"week 3 tot week 4, met 2 centimeter, I suppose\"\"? Dan neem je de laatste toename. Die is het kleinst, dus 8 bij week 0 tot 1.",
+         "Koos je \"\"week 1 tot week 2, met 6 centimeter\"\"? Dan neem je de tweede toename. De eerste is groter, dus 8. Door de stappen goed na te lopen kom je uit op week 0 tot week 1, met 8 centimeter.",
+         "Koos je \"\"week 2 tot week 3, met 4 centimeter\"\"? Dan neem je de derde toename. De eerste is groter, dus 8. Controleer je stap: de juiste uitkomst is week 0 tot week 1, met 8 centimeter."
+        ],
+        "uh": "In welke week is de toename het grootst?",
+        "ctx": "Een plant wordt wekelijks gemeten: week 0 is 10 centimeter, week 1 is 18, week 2 is 24, week 3 is 28 en week 4 is 30 centimeter. Een leerling beschrijft de groei en let op de toenames per week."
+       },
+       {
+        "v": "Bij welke maand is de voorraad minimaal en hoeveel dozen zijn dat?",
+        "o": [
+         "\"maand 0, 100 dozen, you know\"",
+         "\"maand 2, 60 dozen\"",
+         "\"maand 4, 40 dozen\"",
+         "\"maand 8, 90 dozen\""
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 1,
+        "u": "Lees de waarden van links naar rechts af en let op waar de grafiek van richting verandert. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"maand 0, 100 dozen, you know\"\"? Dan neem je de beginwaarde. Dat is de hoogste, dus 40 bij maand 4. Het goede antwoord is maand 4, 40 dozen.",
+         "Koos je \"\"maand 2, 60 dozen\"\"? Dan neem je een waarde in de daling. De laagste is 40, dus maand 4. Door de stappen goed na te lopen kom je uit op maand 4, 40 dozen.",
+         "Klopt: de laagste waarde in de tabel is 40 bij maand 4. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"maand 8, 90 dozen\"\"? Dan neem je de laatste waarde. Die is hoog, dus 40 bij maand 4. Controleer je stap: de juiste uitkomst is maand 4, 40 dozen."
+        ],
+        "uh": "Bij welke maand is de voorraad minimaal en hoeveel dozen zijn dat?",
+        "ctx": "Een fabriek houdt de voorraad bij in dozen: maand 0 geeft 100, maand 2 geeft 60, maand 4 geeft 40, maand 6 geeft 50 en maand 8 geeft 90. De leerling tekent de grafiek en onderzoekt waar de voorraad het laagst is en hoe die verloopt."
+       },
+       {
+        "v": "In welke periode daalt de voorraad?",
+        "o": [
+         "\"van maand 4 tot maand 8, really\"",
+         "\"van maand 0 tot maand 4\"",
+         "\"van maand 0 tot maand 8\"",
+         "\"van maand 2 tot maand 6\""
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 0,
+        "u": "Lees de waarden van links naar rechts af en let op waar de grafiek van richting verandert. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"van maand 4 tot maand 8, really\"\"? Dan verwar je dalen met stijgen. Na maand 4 stijgt de voorraad, dus dalen is ervoor.",
+         "Klopt: 100, 60 en 40 worden steeds kleiner. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"van maand 0 tot maand 8\"\"? Dan denk je dat de voorraad altijd daalt. Na maand 4 stijgt hij, dus alleen tot maand 4.",
+         "Koos je \"\"van maand 2 tot maand 6\"\"? Dan neem je een gemengde periode. De voorraad daalt tot 4 en stijgt daarna, dus dalen is 0 tot 4."
+        ],
+        "uh": "In welke periode daalt de voorraad?",
+        "ctx": "Een fabriek houdt de voorraad bij in dozen: maand 0 geeft 100, maand 2 geeft 60, maand 4 geeft 40, maand 6 geeft 50 en maand 8 geeft 90. De leerling tekent de grafiek en onderzoekt waar de voorraad het laagst is en hoe die verloopt."
+       },
+       {
+        "v": "Hoe beschrijf je het dalen van maand 0 tot maand 4?",
+        "o": [
+         "\"dalend, met toenemende daling\"",
+         "\"stijgend, met afnemende toename\"",
+         "\"constant\"",
+         "\"dalend, met afnemende daling\""
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 2,
+        "u": "Lees de waarden van links naar rechts af en let op waar de grafiek van richting verandert. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"dalend, met toenemende daling\"\"? Dan denk je dat de daling groter wordt. De dalingen zijn 40 en 20, dus kleiner.",
+         "Koos je \"\"stijgend, met afnemende toename\"\"? Dan verwar je dalen met stijgen. De voorraad neemt af, dus dalend. Door de stappen goed na te lopen kom je uit op dalend, met afnemende daling.",
+         "Koos je \"\"constant\"\"? Dan denk je dat de voorraad gelijk blijft. De voorraad verandert, dus dalend. Controleer je stap: de juiste uitkomst is dalend, met afnemende daling.",
+         "Klopt: de dalingen zijn 40 en 20, dus steeds kleiner. Reken dit na met de gegeven gegevens."
+        ],
+        "uh": "Hoe beschrijf je het dalen van maand 0 tot maand 4?",
+        "ctx": "Een fabriek houdt de voorraad bij in dozen: maand 0 geeft 100, maand 2 geeft 60, maand 4 geeft 40, maand 6 geeft 50 en maand 8 geeft 90. De leerling tekent de grafiek en onderzoekt waar de voorraad het laagst is en hoe die verloopt."
+       },
+       {
+        "v": "Welke uitspraak over de voorraad na maand 4 klopt?",
+        "o": [
+         "\"hij stijgt weer, van 40 naar 90 dozen\"",
+         "\"hij blijft op 40 dozen\"",
+         "\"hij daalt verder naar 0, volgens mij, eigenlijk\"",
+         "\"hij is gelijk aan 100\""
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 3,
+        "u": "Lees de waarden van links naar rechts af en let op waar de grafiek van richting verandert. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: 40, 50 en 90 worden steeds groter, dus de voorraad stijgt.",
+         "Koos je \"\"hij blijft op 40 dozen\"\"? Dan denk je dat het minimum blijft. Na maand 4 verandert de voorraad, dus 40 naar 90.",
+         "Koos je \"\"hij daalt verder naar 0, volgens mij, eigenlijk\"\"? Dan denk je dat hij blijft dalen. De waarden na maand 4 zijn groter, dus stijgend. Door de stappen goed na te lopen kom je uit op hij stijgt weer, van 40 naar 90 dozen.",
+         "Koos je \"\"hij is gelijk aan 100\"\"? Dan neem je de beginwaarde. Na maand 4 is de voorraad niet 100, maar loopt op tot 90 in maand 8."
+        ],
+        "uh": "Welke uitspraak over de voorraad na maand 4 klopt?",
+        "ctx": "Een fabriek houdt de voorraad bij in dozen: maand 0 geeft 100, maand 2 geeft 60, maand 4 geeft 40, maand 6 geeft 50 en maand 8 geeft 90. De leerling tekent de grafiek en onderzoekt waar de voorraad het laagst is en hoe die verloopt."
+       }
+      ],
+      "oe": [
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een bal volgt h = −5t² + 30t. De tabel geeft voor t = 0 tot 6 de waarden 0, 25, 40, 45, 40, 25 en 0. Een leerling beschrijft het verloop en zoekt het hoogste punt.",
+        "v": "Geef het maximum met tijdstip en beschrijf het stijgen en dalen.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Maximum is 45 bij t = 3 (1p). Stijgend van t = 0 tot 3 en dalend van t = 3 tot 6 (1p). De toenames 25, 15, 5 worden kleiner: afnemend stijgend (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een voorraad is in maanden 0 tot 6: 80, 60, 45, 40, 50, 65 en 90. Een magazijnmedewerker wil weten wanneer de voorraad het laagst is en hoe de voorraad verloopt.",
+        "v": "Geef het minimum en beschrijf dalen en stijgen met toename of afname.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Minimum 40 bij maand 3 (1p). Daling 20, 15, 5: afnemend dalend (1p). Stijging 10, 15, 25: toenemend stijgend (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "De temperatuur van een kamer is voor t = 0 tot 5 gelijk aan 5, 9, 11, 11, 9 en 5 graden. Een leerling beschrijft het verloop en zoekt het maximum, ook al zijn er twee tijdstippen met dezelfde hoogste waarde.",
+        "v": "Beschrijf het verloop en geef het maximum.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Stijgend van t = 0 tot 2 (1p). Constant tussen t = 2 en 3 en dalend daarna (1p). Maximum 11 bij t = 2 en t = 3 (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "De omzet per maand is 20, 35, 30 en 38 duizend euro voor maand 1 tot 4. Een leerling wil weten wat het hoogste punt is en of er ook een lokaal maximum is.",
+        "v": "Geef het maximum en het lokale maximum en beschrijf het verloop.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Hoogste omzet is 38 in maand 4 (1p). Lokaal maximum 35 in maand 2 en het laagste punt daarna 30 (1p). Stijgend, dalend, stijgend (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een leerling zegt: het maximum van de grafiek is 3, want het hoogste punt is (3, 12). Jij weet dat het maximum de y-waarde is. Je wilt de juiste uitspraak met het goede tijdstip.",
+        "v": "Leg uit wat het maximum is en bij welke x het ligt.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Het maximum is 12 (1p). Het ligt bij x = 3 (1p). De leerling verwisselt de x-waarde met de y-waarde (1p)."
+       }
+      ]
+     }
     ]
    },
    {
