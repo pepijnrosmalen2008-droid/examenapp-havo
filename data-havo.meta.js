@@ -1301,6 +1301,27 @@ var VAKKEN = [
       "nOe": 5,
       "nBeg": 12,
       "hasSam": true
+     },
+     {
+      "id": "D2",
+      "lo": "wa.D.2",
+      "gs": 2,
+      "naam": "Veranderingen beschrijven met differenties",
+      "beschrijving": "Je berekent differenties uit een tabel, beschrijft stijgen en dalen met het teken en de grootte van de differenties, herkent lineaire en niet-lineaire verbanden, voorspelt volgende waarden en controleert met de totale verandering.",
+      "ceStatus": "CE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Differenties berekenen",
+       "Differenties interpreteren",
+       "Constant of niet constant",
+       "Toenemend en afnemend",
+       "Voorspellen en controleren"
+      ],
+      "nSv": 27,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
      }
     ]
    },

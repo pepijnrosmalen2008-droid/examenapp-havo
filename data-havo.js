@@ -51408,6 +51408,688 @@ var VAKKEN = [
         "u": "Het maximum is 12 (1p). Het ligt bij x = 3 (1p). De leerling verwisselt de x-waarde met de y-waarde (1p)."
        }
       ]
+     },
+     {
+      "id": "D2",
+      "lo": "wa.D.2",
+      "gs": 2,
+      "naam": "Veranderingen beschrijven met differenties",
+      "beschrijving": "Je berekent differenties uit een tabel, beschrijft stijgen en dalen met het teken en de grootte van de differenties, herkent lineaire en niet-lineaire verbanden, voorspelt volgende waarden en controleert met de totale verandering.",
+      "ceStatus": "CE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Differenties berekenen",
+       "Differenties interpreteren",
+       "Constant of niet constant",
+       "Toenemend en afnemend",
+       "Voorspellen en controleren"
+      ],
+      "sam": "Een differentie is volgende min vorige waarde. Positief betekent toename, negatief afname, nul constant. Constante differenties horen bij een lineair verband; groeiende of afnemende differenties bij toenemende of afnemende verandering. De som van de differenties is de totale verandering. Met het patroon voorspel je de volgende waarde.",
+      "begrippen": [
+       {
+        "t": "Differentie",
+        "d": "Het verschil tussen twee opeenvolgende waarden: volgende min vorige."
+       },
+       {
+        "t": "Differentietabel",
+        "d": "Een tabel met een extra rij of kolom waarin de differenties staan."
+       },
+       {
+        "t": "Positieve differentie",
+        "d": "De waarde neemt toe."
+       },
+       {
+        "t": "Negatieve differentie",
+        "d": "De waarde neemt af."
+       },
+       {
+        "t": "Differentie nul",
+        "d": "De waarde verandert niet: constant."
+       },
+       {
+        "t": "Constante differentie",
+        "d": "Alle differenties zijn gelijk; het verband is lineair."
+       },
+       {
+        "t": "Toenemende differenties",
+        "d": "De toenames worden groter: toenemend stijgend."
+       },
+       {
+        "t": "Afnemende differenties",
+        "d": "De toenames worden kleiner: afnemend stijgend."
+       },
+       {
+        "t": "Totale verandering",
+        "d": "Laatste waarde min eerste waarde, gelijk aan de som van de differenties."
+       },
+       {
+        "t": "Gemiddelde verandering per stap",
+        "d": "De totale verandering gedeeld door het aantal stappen."
+       },
+       {
+        "t": "Voorspellen",
+        "d": "Met het patroon in de differenties de volgende waarde schatten."
+       },
+       {
+        "t": "Controleren",
+        "d": "Tel de differenties op en vergelijk met het verschil tussen eerste en laatste waarde."
+       }
+      ],
+      "sv": [
+       {
+        "v": "Een tabel heeft de waarden 12, 15 en 19. Welke differenties horen daarbij?",
+        "o": [
+         "\"15 en 19\"",
+         "\"3 en 4\"",
+         "\"3 en 7\"",
+         "\"4 en 3\""
+        ],
+        "c": 1,
+        "d": 1,
+        "s": 0,
+        "u": "Trek elke waarde af van de volgende waarde om de differentie te vinden en kijk naar het patroon. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"15 en 19\"\"? Dan neem je de waarden zelf. Een differentie is het verschil tussen twee opeenvolgende waarden, dus 3 en 4.",
+         "Klopt: 15 − 12 = 3 en 19 − 15 = 4. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"3 en 7\"\"? Dan vergelijk je telkens met de eerste waarde. Een differentie is het verschil met de vorige waarde, dus 19 − 15 = 4.",
+         "Koos je \"\"4 en 3\"\"? Dan draai je de volgorde om. Eerst 15 − 12 = 3 en dan 19 − 15 = 4, dus 3 en 4. Controleer je stap: de juiste uitkomst is 3 en 4."
+        ],
+        "uh": "Een tabel heeft de waarden 12, 15 en 19. Welke differenties horen daarbij?"
+       },
+       {
+        "v": "Bij x = 3 is y = 20 en bij x = 4 is y = 26. Welke differentie hoort bij deze stap?",
+        "o": [
+         "\"4\"",
+         "\"46\"",
+         "\"14\"",
+         "\"6\""
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 0,
+        "u": "Trek elke waarde af van de volgende waarde om de differentie te vinden en kijk naar het patroon. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"4\"\"? Dan neem je de volgende x-waarde. De differentie hoort bij de y-waarden, dus 26 − 20 = 6. Het goede antwoord is 6.",
+         "Koos je \"\"46\"\"? Dan tel je de twee y-waarden op. Een differentie is een verschil, dus 6. Door de stappen goed na te lopen kom je uit op 6.",
+         "Koos je \"\"14\"\"? Dan trek je 26 af van 40. De differentie is 26 − 20, dus 6. Controleer je stap: de juiste uitkomst is 6.",
+         "Klopt: 26 − 20 = 6. Reken dit na met de gegeven gegevens."
+        ],
+        "uh": "Bij x = 3 is y = 20 en bij x = 4 is y = 26. Welke differentie hoort bij deze stap?"
+       },
+       {
+        "v": "Een differentie is −5. Wat betekent dat voor de grafiek op die stap?",
+        "o": [
+         "\"de grafiek daalt met 5\"",
+         "\"de grafiek stijgt met 5\"",
+         "\"de grafiek blijft constant\"",
+         "\"de grafiek stijgt met 0,2\""
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 1,
+        "u": "Trek elke waarde af van de volgende waarde om de differentie te vinden en kijk naar het patroon. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: een negatieve differentie betekent dat de waarde afneemt.",
+         "Koos je \"\"de grafiek stijgt met 5\"\"? Dan verwar je het teken. Een min betekent een afname, dus dalen. Het goede antwoord is de grafiek daalt met 5.",
+         "Koos je \"\"de grafiek blijft constant\"\"? Dan denk je dat er niets verandert. De waarde verandert met −5, dus daalt. Door de stappen goed na te lopen kom je uit op de grafiek daalt met 5.",
+         "Koos je \"\"de grafiek stijgt met 0,2\"\"? Dan reken je 1 : 5. De differentie is al het verschil, en het is een daling. Controleer je stap: de juiste uitkomst is de grafiek daalt met 5."
+        ],
+        "uh": "Een differentie is −5. Wat betekent dat voor de grafiek op die stap?"
+       },
+       {
+        "v": "Alle differenties van een tabel zijn gelijk aan 4. Welk verband is dat?",
+        "o": [
+         "\"exponentieel\"",
+         "\"omgekeerd evenredig\"",
+         "\"lineair\"",
+         "\"constant\""
+        ],
+        "c": 2,
+        "d": 1,
+        "s": 2,
+        "u": "Trek elke waarde af van de volgende waarde om de differentie te vinden en kijk naar het patroon. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"exponentieel\"\"? Dan denk je aan een vaste factor. Een vaste differentie hoort bij lineair, en niet bij exponentieel.",
+         "Koos je \"\"omgekeerd evenredig\"\"? Dan denk je aan een constant product. Hier is het verschil constant, dus lineair. Door de stappen goed na te lopen kom je uit op lineair.",
+         "Klopt: een constante differentie hoort bij een lineair verband.",
+         "Koos je \"\"constant\"\"? Dan denk je dat de waarde niet verandert. De waarde neemt steeds met 4 toe, dus lineair. Controleer je stap: de juiste uitkomst is lineair."
+        ],
+        "uh": "Alle differenties van een tabel zijn gelijk aan 4. Welk verband is dat?"
+       },
+       {
+        "v": "De differenties van een tabel zijn 2, 4 en 6. Hoe beschrijf je het stijgen?",
+        "o": [
+         "\"afnemend stijgend, really\"",
+         "\"toenemend stijgend\"",
+         "\"constant stijgend\"",
+         "\"dalend\""
+        ],
+        "c": 1,
+        "d": 1,
+        "s": 3,
+        "u": "Trek elke waarde af van de volgende waarde om de differentie te vinden en kijk naar het patroon. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"afnemend stijgend, really\"\"? Dan denk je dat de toenames kleiner worden. 2, 4, 6 wordt groter, dus toenemend. Het goede antwoord is toenemend stijgend.",
+         "Klopt: de waarden stijgen en de toename wordt steeds groter.",
+         "Koos je \"\"constant stijgend\"\"? Dan denk je dat de toename gelijk is. De differenties verschillen, dus toenemend. Door de stappen goed na te lopen kom je uit op toenemend stijgend.",
+         "Koos je \"\"dalend\"\"? Dan verwar je stijgen met dalen. De differenties zijn positief, dus stijgend. Controleer je stap: de juiste uitkomst is toenemend stijgend."
+        ],
+        "uh": "De differenties van een tabel zijn 2, 4 en 6. Hoe beschrijf je het stijgen?"
+       },
+       {
+        "v": "Een tabel heeft constante differenties van 5 en de laatste waarde is 40. Welke waarde volgt?",
+        "o": [
+         "\"50\"",
+         "\"5\"",
+         "\"35\"",
+         "\"45\""
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 4,
+        "u": "Trek elke waarde af van de volgende waarde om de differentie te vinden en kijk naar het patroon. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"50\"\"? Dan tel je 10 erbij op. De differentie is 5, dus 40 + 5. Het goede antwoord is 45.",
+         "Koos je \"\"5\"\"? Dan neem je de differentie als waarde. De volgende waarde is de laatste plus de differentie, dus 45. Door de stappen goed na te lopen kom je uit op 45.",
+         "Koos je \"\"35\"\"? Dan trek je 5 af. De waarden stijgen, dus 40 + 5. Controleer je stap: de juiste uitkomst is 45.",
+         "Klopt: 40 + 5 = 45. Reken dit na met de gegeven gegevens."
+        ],
+        "uh": "Een tabel heeft constante differenties van 5 en de laatste waarde is 40. Welke waarde volgt?"
+       },
+       {
+        "v": "De differenties zijn 9, 6 en 3. Welke differentie volgt als het patroon doorloopt?",
+        "o": [
+         "\"0\"",
+         "\"12\"",
+         "\"−3\"",
+         "\"3\""
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 1,
+        "u": "Trek elke waarde af van de volgende waarde om de differentie te vinden en kijk naar het patroon. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: elke differentie is 3 kleiner dan de vorige, dus na 3 volgt 0.",
+         "Koos je \"\"12\"\"? Dan denk je dat het patroon oploopt. Het loopt af, dus 0. Het goede antwoord is 0.",
+         "Koos je \"\"−3\"\"? Dan sla je een stap over. Na 3 volgt 0, en pas daarna −3. Door de stappen goed na te lopen kom je uit op 0.",
+         "Koos je \"\"3\"\"? Dan neem je dezelfde differentie. Het patroon daalt met 3 per stap, dus 0. Controleer je stap: de juiste uitkomst is 0."
+        ],
+        "uh": "De differenties zijn 9, 6 en 3. Welke differentie volgt als het patroon doorloopt?"
+       },
+       {
+        "v": "Welke differentie hebben de saldo's steeds?",
+        "o": [
+         "\"100 euro, zeg maar\"",
+         "\"220 euro\"",
+         "\"30 euro\"",
+         "\"120 euro\""
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 0,
+        "u": "Trek elke waarde af van de volgende waarde om de differentie te vinden en kijk naar het patroon. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"100 euro, zeg maar\"\"? Dan neem je het beginsaldo. De differentie is het verschil tussen opeenvolgende saldo's, dus 30. Het goede antwoord is 30 euro.",
+         "Koos je \"\"220 euro\"\"? Dan neem je het laatste saldo. De differentie is een verschil, dus 30. Door de stappen goed na te lopen kom je uit op 30 euro.",
+         "Klopt: 130 − 100 = 30, 160 − 130 = 30 en 190 − 160 = 30.",
+         "Koos je \"\"120 euro\"\"? Dan neem je het verschil tussen eerste en laatste waarde. De differentie hoort bij één stap, dus 30."
+        ],
+        "uh": "Welke differentie hebben de saldo's steeds?",
+        "ctx": "Een spaarder zet elke maand geld op een rekening. Het saldo in euro bij maand 0 tot 4 is 100, 130, 160, 190 en 220. Een leerling berekent de verschillen tussen opeenvolgende saldo's en beschrijft het patroon."
+       },
+       {
+        "v": "Waarom is het saldoverloop een lineair verband?",
+        "o": [
+         "\"het saldo stijgt\"",
+         "\"de differenties zijn constant\"",
+         "\"het beginsaldo is 100\"",
+         "\"het saldo is een geheel getal, eigenlijk\""
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 2,
+        "u": "Trek elke waarde af van de volgende waarde om de differentie te vinden en kijk naar het patroon. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"het saldo stijgt\"\"? Dan denk je dat stijgen genoeg is. Dat geldt ook voor niet-lineaire verbanden, maar hier is de differentie constant.",
+         "Klopt: bij elke stap komt er hetzelfde bedrag bij. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"het beginsaldo is 100\"\"? Dan denk je dat het beginsaldo bepalend is. Het gaat om de differenties, en die zijn gelijk.",
+         "Koos je \"\"het saldo is een geheel getal, eigenlijk\"\"? Dan denk je dat dat iets zegt over lineariteit. De differenties zijn constant, en daarom is het lineair."
+        ],
+        "uh": "Waarom is het saldoverloop een lineair verband?",
+        "ctx": "Een spaarder zet elke maand geld op een rekening. Het saldo in euro bij maand 0 tot 4 is 100, 130, 160, 190 en 220. Een leerling berekent de verschillen tussen opeenvolgende saldo's en beschrijft het patroon."
+       },
+       {
+        "v": "Welk saldo verwacht je in maand 5?",
+        "o": [
+         "\"220 euro, gewoon\"",
+         "\"280 euro\"",
+         "\"350 euro\"",
+         "\"250 euro\""
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 4,
+        "u": "Trek elke waarde af van de volgende waarde om de differentie te vinden en kijk naar het patroon. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"220 euro, gewoon\"\"? Dan neem je het saldo van maand 4. In maand 5 komt er weer 30 bij, dus 250. Het goede antwoord is 250 euro.",
+         "Koos je \"\"280 euro\"\"? Dan tel je 60 erbij op. De differentie is 30, dus 250. Door de stappen goed na te lopen kom je uit op 250 euro.",
+         "Koos je \"\"350 euro\"\"? Dan vermenigvuldig je 220 met 1,5. Het verband is lineair, dus 220 + 30. Controleer je stap: de juiste uitkomst is 250 euro.",
+         "Klopt: 220 + 30 = 250. Reken dit na met de gegeven gegevens."
+        ],
+        "uh": "Welk saldo verwacht je in maand 5?",
+        "ctx": "Een spaarder zet elke maand geld op een rekening. Het saldo in euro bij maand 0 tot 4 is 100, 130, 160, 190 en 220. Een leerling berekent de verschillen tussen opeenvolgende saldo's en beschrijft het patroon."
+       },
+       {
+        "v": "Hoeveel inwoners kwamen er in het eerste jaar bij?",
+        "o": [
+         "\"200\"",
+         "\"5200\"",
+         "\"300\"",
+         "\"1400\""
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 0,
+        "u": "Trek elke waarde af van de volgende waarde om de differentie te vinden en kijk naar het patroon. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: 5200 − 5000 = 200. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"5200\"\"? Dan neem je het aantal na een jaar. De toename is het verschil, dus 200. Het goede antwoord is 200.",
+         "Koos je \"\"300\"\"? Dan neem je de toename van het tweede jaar. Gevraagd is het eerste jaar, dus 200. Door de stappen goed na te lopen kom je uit op 200.",
+         "Koos je \"\"1400\"\"? Dan neem je de totale toename. De toename per jaar is 200, bij de eerste stap. Controleer je stap: de juiste uitkomst is 200."
+        ],
+        "uh": "Hoeveel inwoners kwamen er in het eerste jaar bij?",
+        "ctx": "Het aantal inwoners van een dorp is in vijf opeenvolgende jaren 5000, 5200, 5500, 5900 en 6400. Een leerling berekent de toename per jaar en beschrijft hoe de toename verandert."
+       },
+       {
+        "v": "Hoe beschrijf je het verloop van het aantal inwoners?",
+        "o": [
+         "\"afnemend stijgend, volgens mij\"",
+         "\"constant stijgend\"",
+         "\"toenemend stijgend\"",
+         "\"afnemend dalend\""
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 3,
+        "u": "Trek elke waarde af van de volgende waarde om de differentie te vinden en kijk naar het patroon. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"afnemend stijgend, volgens mij\"\"? Dan denk je dat de toename kleiner wordt. De toenames 200 tot 500 worden groter, dus toenemend.",
+         "Koos je \"\"constant stijgend\"\"? Dan denk je dat de toename gelijk is. De toenames verschillen, dus toenemend. Door de stappen goed na te lopen kom je uit op toenemend stijgend.",
+         "Klopt: de differenties 200, 300, 400 en 500 worden steeds groter.",
+         "Koos je \"\"afnemend dalend\"\"? Dan verwar je stijgen met dalen. Het aantal inwoners neemt toe, dus stijgend. Controleer je stap: de juiste uitkomst is toenemend stijgend."
+        ],
+        "uh": "Hoe beschrijf je het verloop van het aantal inwoners?",
+        "ctx": "Het aantal inwoners van een dorp is in vijf opeenvolgende jaren 5000, 5200, 5500, 5900 en 6400. Een leerling berekent de toename per jaar en beschrijft hoe de toename verandert."
+       },
+       {
+        "v": "Hoeveel inwoners verwacht je het volgende jaar als de toename met 100 blijft oplopen?",
+        "o": [
+         "\"6900\"",
+         "\"7000\"",
+         "\"6600\"",
+         "\"7500\""
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 4,
+        "u": "Trek elke waarde af van de volgende waarde om de differentie te vinden en kijk naar het patroon. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"6900\"\"? Dan tel je 500 erbij op. De toename loopt met 100 op, dus 600, dus 7000. Het goede antwoord is 7000.",
+         "Klopt: de volgende differentie is 600, dus 6400 + 600 = 7000.",
+         "Koos je \"\"6600\"\"? Dan tel je 200 erbij op. De toename is al groter dan 200, namelijk 600. Door de stappen goed na te lopen kom je uit op 7000.",
+         "Koos je \"\"7500\"\"? Dan tel je 1100 erbij op. De toename is 600, dus 6400 + 600. Controleer je stap: de juiste uitkomst is 7000."
+        ],
+        "uh": "Hoeveel inwoners verwacht je het volgende jaar als de toename met 100 blijft oplopen?",
+        "ctx": "Het aantal inwoners van een dorp is in vijf opeenvolgende jaren 5000, 5200, 5500, 5900 en 6400. Een leerling berekent de toename per jaar en beschrijft hoe de toename verandert."
+       },
+       {
+        "v": "Welke differentie hoort bij de tweede stap van de afkoeling?",
+        "o": [
+         "\"−20 graden, eigenlijk\"",
+         "\"15 graden\"",
+         "\"55 graden\"",
+         "\"−15 graden\""
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 0,
+        "u": "Trek elke waarde af van de volgende waarde om de differentie te vinden en kijk naar het patroon. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"−20 graden, eigenlijk\"\"? Dan neem je de eerste differentie. De tweede is 55 − 70, dus −15. Het goede antwoord is −15 graden.",
+         "Koos je \"\"15 graden\"\"? Dan laat je het minteken weg. De temperatuur daalt, dus −15. Door de stappen goed na te lopen kom je uit op −15 graden.",
+         "Koos je \"\"55 graden\"\"? Dan neem je de temperatuur. De differentie is het verschil, dus −15. Controleer je stap: de juiste uitkomst is −15 graden.",
+         "Klopt: 55 − 70 = −15. Reken dit na met de gegeven gegevens."
+        ],
+        "uh": "Welke differentie hoort bij de tweede stap van de afkoeling?",
+        "ctx": "Een kop koffie koelt af. De temperatuur in graden na 0, 10, 20, 30 en 40 minuten is 90, 70, 55, 45 en 38. Een leerling berekent de verschillen tussen de opeenvolgende temperaturen en beschrijft het afkoelen."
+       },
+       {
+        "v": "Hoe beschrijf je het verloop van de temperatuur?",
+        "o": [
+         "\"afnemend dalend\"",
+         "\"toenemend dalend, gewoon\"",
+         "\"stijgend\"",
+         "\"constant dalend\""
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 3,
+        "u": "Trek elke waarde af van de volgende waarde om de differentie te vinden en kijk naar het patroon. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: de dalingen 20, 15, 10 en 7 worden steeds kleiner.",
+         "Koos je \"\"toenemend dalend, gewoon\"\"? Dan denk je dat de dalingen groter worden. Ze worden kleiner, dus afnemend. Het goede antwoord is afnemend dalend.",
+         "Koos je \"\"stijgend\"\"? Dan verwar je dalen met stijgen. De temperatuur neemt af, dus dalend. Door de stappen goed na te lopen kom je uit op afnemend dalend.",
+         "Koos je \"\"constant dalend\"\"? Dan denk je dat de daling gelijk blijft. De dalingen verschillen, dus afnemend. Controleer je stap: de juiste uitkomst is afnemend dalend."
+        ],
+        "uh": "Hoe beschrijf je het verloop van de temperatuur?",
+        "ctx": "Een kop koffie koelt af. De temperatuur in graden na 0, 10, 20, 30 en 40 minuten is 90, 70, 55, 45 en 38. Een leerling berekent de verschillen tussen de opeenvolgende temperaturen en beschrijft het afkoelen."
+       },
+       {
+        "v": "Wat zegt een negatieve differentie in deze tabel?",
+        "o": [
+         "\"de temperatuur is gestegen\"",
+         "\"de koffie is gestopt met afkoelen\"",
+         "\"de temperatuur is gedaald\"",
+         "\"de meting is fout\""
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 1,
+        "u": "Trek elke waarde af van de volgende waarde om de differentie te vinden en kijk naar het patroon. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"de temperatuur is gestegen\"\"? Dan verwar je het teken. Een min betekent een afname, dus gedaald. Het goede antwoord is de temperatuur is gedaald.",
+         "Koos je \"\"de koffie is gestopt met afkoelen\"\"? Dan denk je dat het proces eindigt. De temperatuur daalt nog steeds, maar minder snel.",
+         "Klopt: een negatieve differentie betekent dat de waarde afneemt.",
+         "Koos je \"\"de meting is fout\"\"? Dan denk je dat een min een fout is. Het geeft een daling aan, en dat klopt bij afkoelen."
+        ],
+        "uh": "Wat zegt een negatieve differentie in deze tabel?",
+        "ctx": "Een kop koffie koelt af. De temperatuur in graden na 0, 10, 20, 30 en 40 minuten is 90, 70, 55, 45 en 38. Een leerling berekent de verschillen tussen de opeenvolgende temperaturen en beschrijft het afkoelen."
+       },
+       {
+        "v": "Hoeveel graden daalt de temperatuur in totaal over de hele tabel?",
+        "o": [
+         "\"38 graden, to be honest\"",
+         "\"52 graden\"",
+         "\"20 graden\"",
+         "\"90 graden\""
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 0,
+        "u": "Trek elke waarde af van de volgende waarde om de differentie te vinden en kijk naar het patroon. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"38 graden, to be honest\"\"? Dan neem je de laatste temperatuur. De totale daling is een verschil, dus 52. Het goede antwoord is 52 graden.",
+         "Klopt: 90 − 38 = 52, ofwel de som van de differenties −20 − 15 − 10 − 7.",
+         "Koos je \"\"20 graden\"\"? Dan neem je alleen de eerste daling. Alle stappen tellen mee, dus 52. Door de stappen goed na te lopen kom je uit op 52 graden.",
+         "Koos je \"\"90 graden\"\"? Dan neem je de begintemperatuur. De daling is begin min eind, dus 52. Controleer je stap: de juiste uitkomst is 52 graden."
+        ],
+        "uh": "Hoeveel graden daalt de temperatuur in totaal over de hele tabel?",
+        "ctx": "Een kop koffie koelt af. De temperatuur in graden na 0, 10, 20, 30 en 40 minuten is 90, 70, 55, 45 en 38. Een leerling berekent de verschillen tussen de opeenvolgende temperaturen en beschrijft het afkoelen."
+       },
+       {
+        "v": "Welke differenties hebben de bacteriën in de tabel?",
+        "o": [
+         "\"50, 50 en 50\"",
+         "\"150, 225 en 337,5\"",
+         "\"50, 75 en 100\"",
+         "\"50, 75 en 112,5\""
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 0,
+        "u": "Trek elke waarde af van de volgende waarde om de differentie te vinden en kijk naar het patroon. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"50, 50 en 50\"\"? Dan denk je dat de toename constant is. De waarden zijn 100, 150, 225, dus 50, 75 en 112,5. Het goede antwoord is 50, 75 en 112,5.",
+         "Koos je \"\"150, 225 en 337,5\"\"? Dan neem je de waarden zelf. Een differentie is een verschil, dus 50, 75 en 112,5. Door de stappen goed na te lopen kom je uit op 50, 75 en 112,5.",
+         "Koos je \"\"50, 75 en 100\"\"? Dan reken je de laatste differentie verkeerd. 337,5 − 225 is 112,5, en geen 100. Controleer je stap: de juiste uitkomst is 50, 75 en 112,5.",
+         "Klopt: 150 − 100, 225 − 150 en 337,5 − 225. Reken dit na met de gegeven gegevens."
+        ],
+        "uh": "Welke differenties hebben de bacteriën in de tabel?",
+        "ctx": "Het aantal bacteriën is 100, 150, 225 en 337,5 na 0, 1, 2 en 3 uur. Een leerling berekent de differenties en onderzoekt of het verband lineair is, en voorspelt het aantal na 4 uur."
+       },
+       {
+        "v": "Waarom is dit verband niet lineair?",
+        "o": [
+         "\"de differenties zijn niet constant\"",
+         "\"de beginwaarde is niet 0, eigenlijk, denk ik\"",
+         "\"de waarden zijn decimaal\"",
+         "\"het aantal stijgt\""
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 2,
+        "u": "Trek elke waarde af van de volgende waarde om de differentie te vinden en kijk naar het patroon. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: 50, 75 en 112,5 zijn verschillend, dus het verband is niet lineair.",
+         "Koos je \"\"de beginwaarde is niet 0, eigenlijk, denk ik\"\"? Dan denk je dat de beginwaarde bepalend is. Het gaat om de differenties, en die zijn niet gelijk.",
+         "Koos je \"\"de waarden zijn decimaal\"\"? Dan denk je dat een komma zegt dat het niet lineair is. Het gaat om de differenties, en die zijn niet gelijk.",
+         "Koos je \"\"het aantal stijgt\"\"? Dan denk je dat stijgen genoeg is. Ook lineaire verbanden stijgen, maar hier is de differentie niet constant."
+        ],
+        "uh": "Waarom is dit verband niet lineair?",
+        "ctx": "Het aantal bacteriën is 100, 150, 225 en 337,5 na 0, 1, 2 en 3 uur. Een leerling berekent de differenties en onderzoekt of het verband lineair is, en voorspelt het aantal na 4 uur."
+       },
+       {
+        "v": "Welk aantal verwacht je na 4 uur als elke stap met factor 1,5 groeit?",
+        "o": [
+         "\"450\"",
+         "\"487,5\"",
+         "\"506,25\"",
+         "\"675\""
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 4,
+        "u": "Trek elke waarde af van de volgende waarde om de differentie te vinden en kijk naar het patroon. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"450\"\"? Dan tel je 112,5 erbij op. De differenties groeien mee met de factor 1,5, dus 337,5 · 1,5. Het goede antwoord is 506,25.",
+         "Koos je \"\"487,5\"\"? Dan tel je 150 erbij op. De groei is exponentieel, dus 337,5 · 1,5. Door de stappen goed na te lopen kom je uit op 506,25.",
+         "Klopt: 337,5 · 1,5 = 506,25. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"675\"\"? Dan vermenigvuldig je met 2. De factor is 1,5, dus 506,25. Controleer je stap: de juiste uitkomst is 506,25."
+        ],
+        "uh": "Welk aantal verwacht je na 4 uur als elke stap met factor 1,5 groeit?",
+        "ctx": "Het aantal bacteriën is 100, 150, 225 en 337,5 na 0, 1, 2 en 3 uur. Een leerling berekent de differenties en onderzoekt of het verband lineair is, en voorspelt het aantal na 4 uur."
+       },
+       {
+        "v": "Welke differentie hoort bij elke stap van tabel A?",
+        "o": [
+         "\"10\"",
+         "\"4\"",
+         "\"22\"",
+         "\"12\""
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 2,
+        "u": "Trek elke waarde af van de volgende waarde om de differentie te vinden en kijk naar het patroon. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"10\"\"? Dan neem je de beginwaarde. De differentie is het verschil tussen opeenvolgende waarden, dus 4. Het goede antwoord is 4.",
+         "Klopt: 14 − 10 = 18 − 14 = 22 − 18 = 4. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"22\"\"? Dan neem je de laatste waarde. De differentie is een verschil, dus 4. Door de stappen goed na te lopen kom je uit op 4.",
+         "Koos je \"\"12\"\"? Dan neem je het verschil tussen eerste en laatste waarde. De differentie hoort bij één stap, dus 4. Controleer je stap: de juiste uitkomst is 4."
+        ],
+        "uh": "Welke differentie hoort bij elke stap van tabel A?",
+        "ctx": "Twee tabellen A en B starten allebei bij 10. Tabel A heeft de waarden 10, 14, 18 en 22 en tabel B heeft de waarden 10, 13, 17 en 22 bij x = 0, 1, 2 en 3. Een leerling vergelijkt hoe ze groeien."
+       },
+       {
+        "v": "Hoe verloopt de groei van tabel B volgens de differenties 3, 4 en 5?",
+        "o": [
+         "\"afnemend stijgend, volgens mij\"",
+         "\"constant stijgend\"",
+         "\"dalend\"",
+         "\"toenemend stijgend\""
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 3,
+        "u": "Trek elke waarde af van de volgende waarde om de differentie te vinden en kijk naar het patroon. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"afnemend stijgend, volgens mij\"\"? Dan denk je dat de differenties kleiner worden. 3, 4, 5 neemt toe, dus toenemend. Het goede antwoord is toenemend stijgend.",
+         "Koos je \"\"constant stijgend\"\"? Dan denk je dat de toename gelijk is. De differenties verschillen, dus toenemend. Door de stappen goed na te lopen kom je uit op toenemend stijgend.",
+         "Koos je \"\"dalend\"\"? Dan verwar je stijgen met dalen. De differenties zijn positief, dus stijgend. Controleer je stap: de juiste uitkomst is toenemend stijgend.",
+         "Klopt: de differenties worden groter, dus de groei neemt toe."
+        ],
+        "uh": "Hoe verloopt de groei van tabel B volgens de differenties 3, 4 en 5?",
+        "ctx": "Twee tabellen A en B starten allebei bij 10. Tabel A heeft de waarden 10, 14, 18 en 22 en tabel B heeft de waarden 10, 13, 17 en 22 bij x = 0, 1, 2 en 3. Een leerling vergelijkt hoe ze groeien."
+       },
+       {
+        "v": "Welke tabel groeit in de laatste stap het sterkst?",
+        "o": [
+         "\"tabel B, met 5 tegenover 4\"",
+         "\"tabel A, met 4 tegenover 3, zeg maar\"",
+         "\"beide even sterk\"",
+         "\"tabel A, met 22\""
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 1,
+        "u": "Trek elke waarde af van de volgende waarde om de differentie te vinden en kijk naar het patroon. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: de laatste differentie van B is 5 en van A is 4. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"tabel A, met 4 tegenover 3, zeg maar\"\"? Dan kijk je naar de eerste stap. In de laatste stap is B groter, dus B. Het goede antwoord is tabel B, met 5 tegenover 4.",
+         "Koos je \"\"beide even sterk\"\"? Dan denk je dat beide gelijk eindigen. Ze eindigen bij 22, maar de laatste differenties verschillen.",
+         "Koos je \"\"tabel A, met 22\"\"? Dan neem je de eindwaarde. De vraag gaat over de laatste differentie, en die is bij B groter."
+        ],
+        "uh": "Welke tabel groeit in de laatste stap het sterkst?",
+        "ctx": "Twee tabellen A en B starten allebei bij 10. Tabel A heeft de waarden 10, 14, 18 en 22 en tabel B heeft de waarden 10, 13, 17 en 22 bij x = 0, 1, 2 en 3. Een leerling vergelijkt hoe ze groeien."
+       },
+       {
+        "v": "Hoe beschrijf je de afkoeling met differenties −3, −2, −1 en 0?",
+        "o": [
+         "\"dalend, met toenemende daling\"",
+         "\"stijgend, met afnemende stijging, eigenlijk\"",
+         "\"dalend, met afnemende daling tot constant\"",
+         "\"constant dalend\""
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 3,
+        "u": "Trek elke waarde af van de volgende waarde om de differentie te vinden en kijk naar het patroon. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"dalend, met toenemende daling\"\"? Dan denk je dat de dalingen groter worden. Ze worden kleiner, dus afnemend. Het goede antwoord is dalend, met afnemende daling tot constant.",
+         "Koos je \"\"stijgend, met afnemende stijging, eigenlijk\"\"? Dan verwar je dalen met stijgen. De differenties zijn negatief, dus dalend.",
+         "Klopt: de dalingen worden kleiner en uiteindelijk blijft de temperatuur gelijk.",
+         "Koos je \"\"constant dalend\"\"? Dan denk je dat de daling gelijk is. De differenties verschillen, dus afnemend. Controleer je stap: de juiste uitkomst is dalend, met afnemende daling tot constant."
+        ],
+        "uh": "Hoe beschrijf je de afkoeling met differenties −3, −2, −1 en 0?",
+        "ctx": "Een weerstation meet de buitentemperatuur in de nacht in graden: 14 om 20:00, 11 om 22:00, 9 om 24:00, 8 om 02:00 en 8 om 04:00. Een leerling berekent de verschillen per twee uur en beschrijft de afkoeling."
+       },
+       {
+        "v": "Wat betekent een differentie van 0 tussen 02:00 en 04:00?",
+        "o": [
+         "\"de temperatuur is 0 graden, gewoon\"",
+         "\"de temperatuur is constant\"",
+         "\"de temperatuur daalt snel\"",
+         "\"de meting ontbreekt\""
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 1,
+        "u": "Trek elke waarde af van de volgende waarde om de differentie te vinden en kijk naar het patroon. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"de temperatuur is 0 graden, gewoon\"\"? Dan verwar je de differentie met de temperatuur. De temperatuur is 8 graden, en de verandering is 0.",
+         "Klopt: een differentie van 0 betekent geen verandering. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"de temperatuur daalt snel\"\"? Dan denk je dat 0 een grote daling is. 0 is geen verandering, dus constant. Door de stappen goed na te lopen kom je uit op de temperatuur is constant.",
+         "Koos je \"\"de meting ontbreekt\"\"? Dan denk je dat 0 een ontbrekende meting is. De metingen zijn 8 en 8, dus de verandering is 0."
+        ],
+        "uh": "Wat betekent een differentie van 0 tussen 02:00 en 04:00?",
+        "ctx": "Een weerstation meet de buitentemperatuur in de nacht in graden: 14 om 20:00, 11 om 22:00, 9 om 24:00, 8 om 02:00 en 8 om 04:00. Een leerling berekent de verschillen per twee uur en beschrijft de afkoeling."
+       },
+       {
+        "v": "Hoeveel graden is de totale verandering van 20:00 tot 04:00?",
+        "o": [
+         "\"6 graden\"",
+         "\"−3 graden, I think\"",
+         "\"8 graden\"",
+         "\"−6 graden\""
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 0,
+        "u": "Trek elke waarde af van de volgende waarde om de differentie te vinden en kijk naar het patroon. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"6 graden\"\"? Dan laat je het minteken weg. De temperatuur daalt, dus −6. Het goede antwoord is −6 graden.",
+         "Koos je \"\"−3 graden, I think\"\"? Dan neem je alleen de eerste differentie. Alle stappen tellen mee, dus −6. Door de stappen goed na te lopen kom je uit op −6 graden.",
+         "Koos je \"\"8 graden\"\"? Dan neem je de laatste temperatuur. De verandering is een verschil, dus −6. Controleer je stap: de juiste uitkomst is −6 graden.",
+         "Klopt: 8 − 14 = −6, ofwel de som −3 − 2 − 1 + 0. Reken dit na met de gegeven gegevens."
+        ],
+        "uh": "Hoeveel graden is de totale verandering van 20:00 tot 04:00?",
+        "ctx": "Een weerstation meet de buitentemperatuur in de nacht in graden: 14 om 20:00, 11 om 22:00, 9 om 24:00, 8 om 02:00 en 8 om 04:00. Een leerling berekent de verschillen per twee uur en beschrijft de afkoeling."
+       },
+       {
+        "v": "Hoeveel graden verandert de temperatuur gemiddeld per twee uur?",
+        "o": [
+         "\"−1,5 graden\"",
+         "\"−2 graden\"",
+         "\"−6 graden\"",
+         "\"−0,75 graden, to be honest\""
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 4,
+        "u": "Trek elke waarde af van de volgende waarde om de differentie te vinden en kijk naar het patroon. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: −6 graden verdeeld over 4 stappen is −1,5 per stap.",
+         "Koos je \"\"−2 graden\"\"? Dan deel je door 3 stappen. Er zijn vier stappen van twee uur, dus −6 : 4. Het goede antwoord is −1,5 graden.",
+         "Koos je \"\"−6 graden\"\"? Dan neem je de totale verandering. Deel door het aantal stappen, dus −1,5. Door de stappen goed na te lopen kom je uit op −1,5 graden.",
+         "Koos je \"\"−0,75 graden, to be honest\"\"? Dan deel je door 8 stappen. Er zijn vier stappen, dus −6 : 4. Controleer je stap: de juiste uitkomst is −1,5 graden."
+        ],
+        "uh": "Hoeveel graden verandert de temperatuur gemiddeld per twee uur?",
+        "ctx": "Een weerstation meet de buitentemperatuur in de nacht in graden: 14 om 20:00, 11 om 22:00, 9 om 24:00, 8 om 02:00 en 8 om 04:00. Een leerling berekent de verschillen per twee uur en beschrijft de afkoeling."
+       }
+      ],
+      "oe": [
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een tabel heeft bij x = 0 tot 3 de waarden 50, 58, 66 en 74. Een leerling berekent de differenties, beschrijft het verband en voorspelt de volgende waarde.",
+        "v": "Bereken de differenties, geef het soort verband en de volgende waarde.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Differenties 8, 8 en 8 (1p). Constante differentie, dus lineair (1p). Volgende waarde 74 + 8 = 82 (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een tabel heeft bij x = 0 tot 3 de waarden 100, 110, 130 en 160. Een leerling berekent de differenties en voorspelt de waarde bij x = 4 als de differenties met 10 blijven oplopen.",
+        "v": "Bereken de differenties, beschrijf het verloop en voorspel de waarde bij x = 4.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Differenties 10, 20 en 30 (1p). Ze worden groter, dus toenemend stijgend (1p). Volgende differentie 40, dus 160 + 40 = 200 (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een tabel geeft voor 4 opeenvolgende tijdstippen de waarden 80, 70, 63 en 58. Een leerling berekent de differenties en de totale verandering en beschrijft het verloop.",
+        "v": "Bereken de differenties en de totale verandering en beschrijf het verloop.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Differenties −10, −7 en −5 (1p). Totale verandering −22 (1p). De dalingen worden kleiner: afnemend dalend (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een tabel heeft de waarden 20, 30, 45 en 67,5. Een leerling wil weten of het verband lineair is en welk soort groei er bij past.",
+        "v": "Bereken de differenties en beoordeel het soort groei.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Differenties 10, 15 en 22,5 (1p). Ze zijn niet constant, dus niet lineair (1p). 30 : 20 = 45 : 30 = 67,5 : 45 = 1,5, dus exponentieel (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een leerling zegt dat differenties 2, 4 en 6 betekenen dat de grafiek afnemend daalt. Jij weet dat dit niet klopt. Je wilt de juiste uitspraak met uitleg.",
+        "v": "Beschrijf het verloop bij differenties 2, 4 en 6 en leg de fout uit.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "De differenties zijn positief, dus stijgend (1p). Ze worden groter, dus toenemend stijgend (1p). De leerling verwart het teken en de richting van de verandering (1p)."
+       }
+      ]
      }
     ]
    },
