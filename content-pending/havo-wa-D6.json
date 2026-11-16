@@ -1,0 +1,682 @@
+{
+ "id": "D6",
+ "lo": "wa.D.6",
+ "gs": 2,
+ "naam": "Toename, helling en vorm van de grafiek met elkaar verbinden",
+ "beschrijving": "Je verbindt tabel, toenames, helling en vorm van de grafiek, herkent top en dal aan een tekenwissel, vergelijkt lineaire en exponentiële groei en schetst een grafiek met de toenames.",
+ "ceStatus": "CE",
+ "binas": "",
+ "val": "",
+ "onderwerpen": [
+  "Toenames en vorm verbinden",
+  "Helling en vorm",
+  "Top en dal herkennen",
+  "Lineair en exponentieel vergelijken",
+  "Schetsen en controleren"
+ ],
+ "sam": "De toename per stap bepaalt de helling en de vorm van de grafiek. Gelijke toenames geven een rechte lijn, groeiende toenames een steeds steilere grafiek en kleiner wordende toenames een vlakkere grafiek. Een tekenwissel van de toename geeft een top of dal met horizontale raaklijn. Schets door de toenames bij de beginwaarde op te tellen en controleer met de tekenwissel.",
+ "begrippen": [
+  {
+   "t": "Toename",
+   "d": "Het verschil tussen twee opeenvolgende waarden."
+  },
+  {
+   "t": "Helling",
+   "d": "De steilheid van de grafiek; hoort bij de toename per eenheid."
+  },
+  {
+   "t": "Vorm van de grafiek",
+   "d": "Hoe de helling verandert: constant, toenemend of afnemend."
+  },
+  {
+   "t": "Lineair verband",
+   "d": "Gelijke toenames; de grafiek is een rechte lijn."
+  },
+  {
+   "t": "Toenemend stijgend",
+   "d": "Positieve toenames die groter worden; de grafiek buigt steeds steiler omhoog."
+  },
+  {
+   "t": "Afnemend stijgend",
+   "d": "Positieve toenames die kleiner worden; de grafiek wordt vlakker."
+  },
+  {
+   "t": "Afnemend dalend",
+   "d": "Negatieve toenames die dichter bij nul komen; de daling wordt kleiner."
+  },
+  {
+   "t": "Toenemend dalend",
+   "d": "Negatieve toenames die groter worden in absolute zin; de daling wordt groter."
+  },
+  {
+   "t": "Tekenwissel van de toename",
+   "d": "De toename gaat van positief naar negatief (maximum) of van negatief naar positief (minimum)."
+  },
+  {
+   "t": "Top en dal",
+   "d": "Het hoogste punt van een bergvorm en het laagste punt van een dalvorm."
+  },
+  {
+   "t": "Exponentieel verband",
+   "d": "Een vaste groeifactor per stap; de toenames groeien mee."
+  },
+  {
+   "t": "Vergelijken van tabellen",
+   "d": "Vergelijk de toenames per stap en de waarden aan het eind."
+  }
+ ],
+ "sv": [
+  {
+   "v": "De toenames van een grafiek zijn 5, 5 en 5. Welke vorm heeft de grafiek?",
+   "o": [
+    "\"steeds steiler\"",
+    "\"een rechte lijn\"",
+    "\"steeds vlakker\"",
+    "\"een horizontale lijn\""
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 0,
+   "u": "Verbind tabel, toenamediagram, helling en vorm van de grafiek met elkaar en controleer met de toenames. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"steeds steiler\"\"? Dan denk je aan groeiende toenames. Hier zijn ze gelijk, dus een rechte lijn. Het goede antwoord is een rechte lijn.",
+    "Klopt: gelijke toenames horen bij een rechte lijn, dus een lineair verband.",
+    "Koos je \"\"steeds vlakker\"\"? Dan denk je aan kleiner wordende toenames. Hier zijn ze gelijk, dus een rechte lijn. Door de stappen goed na te lopen kom je uit op een rechte lijn.",
+    "Koos je \"\"een horizontale lijn\"\"? Dan denk je dat de waarde gelijk blijft. De toenames zijn 5, dus de lijn loopt omhoog."
+   ],
+   "uh": "De toenames van een grafiek zijn 5, 5 en 5. Welke vorm heeft de grafiek?"
+  },
+  {
+   "v": "De helling van een stijgende grafiek wordt steeds groter. Hoe ziet de grafiek eruit?",
+   "o": [
+    "\"hij wordt steeds vlakker, to be honest\"",
+    "\"hij is een rechte lijn\"",
+    "\"hij is horizontaal\"",
+    "\"hij buigt steeds steiler omhoog\""
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 1,
+   "u": "Verbind tabel, toenamediagram, helling en vorm van de grafiek met elkaar en controleer met de toenames. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"hij wordt steeds vlakker, to be honest\"\"? Dan denk je aan een afnemende helling. Hier wordt de helling groter, dus steiler. Het goede antwoord is hij buigt steeds steiler omhoog.",
+    "Koos je \"\"hij is een rechte lijn\"\"? Dan denk je aan een constante helling. Hier verandert de helling, dus hij buigt. Door de stappen goed na te lopen kom je uit op hij buigt steeds steiler omhoog.",
+    "Koos je \"\"hij is horizontaal\"\"? Dan denk je aan helling 0. De helling wordt groter, dus hij stijgt. Controleer je stap: de juiste uitkomst is hij buigt steeds steiler omhoog.",
+    "Klopt: een groeiende helling betekent een steeds steilere grafiek."
+   ],
+   "uh": "De helling van een stijgende grafiek wordt steeds groter. Hoe ziet de grafiek eruit?"
+  },
+  {
+   "v": "De toenames zijn +3, +1, −1 en −3. Na welke stap is de grafiek het hoogst?",
+   "o": [
+    "\"na stap 2\"",
+    "\"na stap 1, I suppose\"",
+    "\"na stap 3\"",
+    "\"na stap 4\""
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 2,
+   "u": "Verbind tabel, toenamediagram, helling en vorm van de grafiek met elkaar en controleer met de toenames. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: tot en met stap 2 is de toename positief, daarna negatief.",
+    "Koos je \"\"na stap 1, I suppose\"\"? Dan kies je een te vroeg moment. Stap 2 is nog positief, dus na stap 2. Het goede antwoord is na stap 2.",
+    "Koos je \"\"na stap 3\"\"? Dan kies je een te laat moment. Stap 3 is al negatief, dus de top is na stap 2. Door de stappen goed na te lopen kom je uit op na stap 2.",
+    "Koos je \"\"na stap 4\"\"? Dan neem je het eind. Daar is de grafiek al aan het dalen, dus de top is na stap 2. Controleer je stap: de juiste uitkomst is na stap 2."
+   ],
+   "uh": "De toenames zijn +3, +1, −1 en −3. Na welke stap is de grafiek het hoogst?"
+  },
+  {
+   "v": "Een dalende grafiek heeft bij x = 4 een horizontale raaklijn en stijgt daarna. Welk punt ligt bij x = 4?",
+   "o": [
+    "\"een maximum\"",
+    "\"een snijpunt met de x-as\"",
+    "\"een minimum\"",
+    "\"een knik zonder betekenis\""
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 2,
+   "u": "Verbind tabel, toenamediagram, helling en vorm van de grafiek met elkaar en controleer met de toenames. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"een maximum\"\"? Dan verwar je het dal met een top. Eerst dalen en dan stijgen is een dal, dus een minimum. Het goede antwoord is een minimum.",
+    "Koos je \"\"een snijpunt met de x-as\"\"? Dan denk je aan een nulpunt. Het gaat om de helling, en niet om de x-as. Door de stappen goed na te lopen kom je uit op een minimum.",
+    "Klopt: de grafiek daalt, de helling is 0 en daarna stijgt hij, dus een laagste punt.",
+    "Koos je \"\"een knik zonder betekenis\"\"? Dan denk je dat het geen bijzonder punt is. Een horizontale raaklijn tussen dalen en stijgen is een minimum, dus wel bijzonder."
+   ],
+   "uh": "Een dalende grafiek heeft bij x = 4 een horizontale raaklijn en stijgt daarna. Welk punt ligt bij x = 4?"
+  },
+  {
+   "v": "Bij een exponentiële groei worden de positieve toenames steeds groter. Hoe verloopt de grafiek?",
+   "o": [
+    "\"afnemend stijgend, really\"",
+    "\"toenemend stijgend\"",
+    "\"constant stijgend\"",
+    "\"dalend\""
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 3,
+   "u": "Verbind tabel, toenamediagram, helling en vorm van de grafiek met elkaar en controleer met de toenames. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"afnemend stijgend, really\"\"? Dan denk je dat de toenames kleiner worden. Ze worden groter, dus toenemend. Het goede antwoord is toenemend stijgend.",
+    "Klopt: stijgend met steeds grotere toenames is toenemend stijgend.",
+    "Koos je \"\"constant stijgend\"\"? Dan denk je dat de toename gelijk is. Ze groeit, dus toenemend. Door de stappen goed na te lopen kom je uit op toenemend stijgend.",
+    "Koos je \"\"dalend\"\"? Dan verwar je stijgen met dalen. De toenames zijn positief, dus stijgend. Controleer je stap: de juiste uitkomst is toenemend stijgend."
+   ],
+   "uh": "Bij een exponentiële groei worden de positieve toenames steeds groter. Hoe verloopt de grafiek?"
+  },
+  {
+   "v": "Welke toenames hebben alle lineaire verbanden?",
+   "o": [
+    "\"steeds grotere toenames\"",
+    "\"steeds kleinere toenames\"",
+    "\"wisselende tekens\"",
+    "\"gelijke toenames\""
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 3,
+   "u": "Verbind tabel, toenamediagram, helling en vorm van de grafiek met elkaar en controleer met de toenames. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"steeds grotere toenames\"\"? Dan denk je aan exponentieel. Bij lineair zijn de toenames gelijk, dus constant. Het goede antwoord is gelijke toenames.",
+    "Koos je \"\"steeds kleinere toenames\"\"? Dan denk je aan afnemende groei. Bij lineair zijn de toenames gelijk, dus constant.",
+    "Koos je \"\"wisselende tekens\"\"? Dan denk je aan een top of dal. Bij lineair zijn de toenames gelijk, dus constant. Controleer je stap: de juiste uitkomst is gelijke toenames.",
+    "Klopt: een lineair verband heeft een constante toename per stap."
+   ],
+   "uh": "Welke toenames hebben alle lineaire verbanden?"
+  },
+  {
+   "v": "Een grafiek begint bij 5 met de toenames +2, +2 en +2. Hoe schets je het begin?",
+   "o": [
+    "\"een rechte lijn omhoog door 5, 7, 9 en 11\"",
+    "\"een kromme lijn omhoog\"",
+    "\"een horizontale lijn bij 5, to be honest, you know\"",
+    "\"een dalende lijn\""
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 4,
+   "u": "Verbind tabel, toenamediagram, helling en vorm van de grafiek met elkaar en controleer met de toenames. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: de waarden stijgen elke stap met 2, dus een rechte lijn.",
+    "Koos je \"\"een kromme lijn omhoog\"\"? Dan denk je dat de toenames groeien. Ze zijn gelijk, dus recht. Het goede antwoord is een rechte lijn omhoog door 5, 7, 9 en 11.",
+    "Koos je \"\"een horizontale lijn bij 5, to be honest, you know\"\"? Dan denk je dat de waarde gelijk blijft. De toenames zijn 2, dus de lijn stijgt.",
+    "Koos je \"\"een dalende lijn\"\"? Dan verwar je het teken. De toenames zijn positief, dus omhoog. Controleer je stap: de juiste uitkomst is een rechte lijn omhoog door 5, 7, 9 en 11."
+   ],
+   "uh": "Een grafiek begint bij 5 met de toenames +2, +2 en +2. Hoe schets je het begin?"
+  },
+  {
+   "v": "Hoeveel bedraagt de toename van t = 1 naar t = 2?",
+   "o": [
+    "\"15 meter, I suppose\"",
+    "\"20 meter\"",
+    "\"5 meter\"",
+    "\"−5 meter\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 0,
+   "u": "Verbind tabel, toenamediagram, helling en vorm van de grafiek met elkaar en controleer met de toenames. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"15 meter, I suppose\"\"? Dan neem je de toename van de eerste seconde. Gevraagd is t = 1 naar 2, dus 5. Het goede antwoord is 5 meter.",
+    "Koos je \"\"20 meter\"\"? Dan neem je de hoogte. Een toename is een verschil, dus 5. Door de stappen goed na te lopen kom je uit op 5 meter.",
+    "Klopt: 20 − 15 = 5. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"−5 meter\"\"? Dan neem je de toename van t = 2 naar 3. Gevraagd is t = 1 naar 2, dus 5. Controleer je stap: de juiste uitkomst is 5 meter."
+   ],
+   "uh": "Hoeveel bedraagt de toename van t = 1 naar t = 2?",
+   "ctx": "Een bal volgt een bergparabool. De hoogte in meter na 0, 1, 2, 3 en 4 seconden is 0, 15, 20, 15 en 0. Een leerling berekent de toenames per seconde en verbindt die met de vorm van de grafiek en de helling."
+  },
+  {
+   "v": "Wanneer wisselt de toename van teken?",
+   "o": [
+    "\"tussen t = 0 en t = 1\"",
+    "\"tussen t = 2 en t = 3, waar de bal het hoogst is\"",
+    "\"tussen t = 3 en t = 4\"",
+    "\"de toename wisselt niet, eigenlijk, denk ik, zeg maar\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 2,
+   "u": "Verbind tabel, toenamediagram, helling en vorm van de grafiek met elkaar en controleer met de toenames. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"tussen t = 0 en t = 1\"\"? Dan kies je het begin. Daar is de toename +15, dus nog positief. Het goede antwoord is tussen t = 2 en t = 3, waar de bal het hoogst is.",
+    "Klopt: de toenames gaan van +5 naar −5, dus de top ligt bij t = 2.",
+    "Koos je \"\"tussen t = 3 en t = 4\"\"? Dan kies je het einde. Beide toenames zijn dan al negatief, dus de wissel was eerder.",
+    "Koos je \"\"de toename wisselt niet, eigenlijk, denk ik, zeg maar\"\"? Dan denk je dat het teken gelijk blijft. De toenames gaan van +5 naar −5, dus wel. Controleer je stap: de juiste uitkomst is tussen t = 2 en t = 3, waar de bal het hoogst is."
+   ],
+   "uh": "Wanneer wisselt de toename van teken?",
+   "ctx": "Een bal volgt een bergparabool. De hoogte in meter na 0, 1, 2, 3 en 4 seconden is 0, 15, 20, 15 en 0. Een leerling berekent de toenames per seconde en verbindt die met de vorm van de grafiek en de helling."
+  },
+  {
+   "v": "Welke vorm heeft de grafiek volgens de toenames 15, 5, −5 en −15?",
+   "o": [
+    "\"een dalparabool\"",
+    "\"een rechte lijn\"",
+    "\"een exponentiële grafiek, gewoon, volgens mij, eigenlijk\"",
+    "\"een bergparabool: eerst afnemend stijgend, dan toenemend dalend\""
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 1,
+   "u": "Verbind tabel, toenamediagram, helling en vorm van de grafiek met elkaar en controleer met de toenames. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"een dalparabool\"\"? Dan verwar je een top met een dal. De toenames gaan van positief naar negatief, dus een top.",
+    "Koos je \"\"een rechte lijn\"\"? Dan denk je aan gelijke toenames. Hier verschillen ze, dus gebogen. Door de stappen goed na te lopen kom je uit op een bergparabool: eerst afnemend stijgend, dan toenemend dalend.",
+    "Koos je \"\"een exponentiële grafiek, gewoon, volgens mij, eigenlijk\"\"? Dan denk je aan groeiende toenames. Hier worden ze steeds kleiner, dus geen exponentieel.",
+    "Klopt: de toenames dalen steeds met 10 en wisselen van teken in de top."
+   ],
+   "uh": "Welke vorm heeft de grafiek volgens de toenames 15, 5, −5 en −15?",
+   "ctx": "Een bal volgt een bergparabool. De hoogte in meter na 0, 1, 2, 3 en 4 seconden is 0, 15, 20, 15 en 0. Een leerling berekent de toenames per seconde en verbindt die met de vorm van de grafiek en de helling."
+  },
+  {
+   "v": "Met hoeveel nemen de toenames per stap steeds af?",
+   "o": [
+    "\"met 10\"",
+    "\"met 5\"",
+    "\"met 15\"",
+    "\"ze nemen toe\""
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 3,
+   "u": "Verbind tabel, toenamediagram, helling en vorm van de grafiek met elkaar en controleer met de toenames. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: 15 → 5 → −5 → −15 neemt telkens 10 af. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"met 5\"\"? Dan neem je de tweede toename. De afname per stap is het verschil tussen twee toenames, dus 10. Het goede antwoord is met 10.",
+    "Koos je \"\"met 15\"\"? Dan neem je de eerste toename. De afname per stap is het verschil tussen toenames, dus 10. Door de stappen goed na te lopen kom je uit op met 10.",
+    "Koos je \"\"ze nemen toe\"\"? Dan verwar je afnemen met toenemen. De toenames worden kleiner, dus afnemen met 10. Controleer je stap: de juiste uitkomst is met 10."
+   ],
+   "uh": "Met hoeveel nemen de toenames per stap steeds af?",
+   "ctx": "Een bal volgt een bergparabool. De hoogte in meter na 0, 1, 2, 3 en 4 seconden is 0, 15, 20, 15 en 0. Een leerling berekent de toenames per seconde en verbindt die met de vorm van de grafiek en de helling."
+  },
+  {
+   "v": "Welke toename hoort bij elke stap van de tabel?",
+   "o": [
+    "\"5\"",
+    "\"17\"",
+    "\"4\"",
+    "\"12\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 0,
+   "u": "Verbind tabel, toenamediagram, helling en vorm van de grafiek met elkaar en controleer met de toenames. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"5\"\"? Dan neem je de beginwaarde. De toename is een verschil, dus 4. Het goede antwoord is 4.",
+    "Koos je \"\"17\"\"? Dan neem je de laatste waarde. De toename is een verschil, dus 4. Door de stappen goed na te lopen kom je uit op 4.",
+    "Klopt: 9 − 5 = 13 − 9 = 17 − 13 = 4. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"12\"\"? Dan neem je het verschil tussen eerste en laatste. De toename hoort bij één stap, dus 4. Controleer je stap: de juiste uitkomst is 4."
+   ],
+   "uh": "Welke toename hoort bij elke stap van de tabel?",
+   "ctx": "Een tabel geeft voor stap 0, 1, 2 en 3 de waarden 5, 9, 13 en 17. Een leerling tekent het toenamediagram, geeft de helling aan en beschrijft de vorm van de grafiek."
+  },
+  {
+   "v": "Welk verband hoort bij de toenames 4, 4 en 4?",
+   "o": [
+    "\"exponentieel\"",
+    "\"lineair\"",
+    "\"omgekeerd evenredig\"",
+    "\"constant\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 3,
+   "u": "Verbind tabel, toenamediagram, helling en vorm van de grafiek met elkaar en controleer met de toenames. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"exponentieel\"\"? Dan denk je aan een vaste factor. Hier is de toename gelijk, dus lineair. Het goede antwoord is lineair.",
+    "Klopt: gelijke toenames horen bij een lineair verband. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"omgekeerd evenredig\"\"? Dan denk je aan een constant product. Hier is de toename gelijk, dus lineair. Door de stappen goed na te lopen kom je uit op lineair.",
+    "Koos je \"\"constant\"\"? Dan denk je dat de waarde gelijk blijft. De waarde stijgt met 4, dus lineair. Controleer je stap: de juiste uitkomst is lineair."
+   ],
+   "uh": "Welk verband hoort bij de toenames 4, 4 en 4?",
+   "ctx": "Een tabel geeft voor stap 0, 1, 2 en 3 de waarden 5, 9, 13 en 17. Een leerling tekent het toenamediagram, geeft de helling aan en beschrijft de vorm van de grafiek."
+  },
+  {
+   "v": "Welke waarde verwacht je bij stap 4?",
+   "o": [
+    "\"20\"",
+    "\"25\"",
+    "\"17\"",
+    "\"21\""
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 4,
+   "u": "Verbind tabel, toenamediagram, helling en vorm van de grafiek met elkaar en controleer met de toenames. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"20\"\"? Dan tel je 3 erbij op. De toename is 4, dus 21. Het goede antwoord is 21.",
+    "Koos je \"\"25\"\"? Dan tel je 8 erbij op. De toename is 4, dus 21. Door de stappen goed na te lopen kom je uit op 21.",
+    "Koos je \"\"17\"\"? Dan neem je de laatste waarde. Bij stap 4 komt er 4 bij, dus 21. Controleer je stap: de juiste uitkomst is 21.",
+    "Klopt: 17 + 4 = 21. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Welke waarde verwacht je bij stap 4?",
+   "ctx": "Een tabel geeft voor stap 0, 1, 2 en 3 de waarden 5, 9, 13 en 17. Een leerling tekent het toenamediagram, geeft de helling aan en beschrijft de vorm van de grafiek."
+  },
+  {
+   "v": "Welke toenames hebben de waarden 100, 150 en 225?",
+   "o": [
+    "\"50 en 75\"",
+    "\"150 en 225\"",
+    "\"50 en 50\"",
+    "\"50 en 125\""
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 0,
+   "u": "Verbind tabel, toenamediagram, helling en vorm van de grafiek met elkaar en controleer met de toenames. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: 150 − 100 = 50 en 225 − 150 = 75. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"150 en 225\"\"? Dan neem je de waarden. Een toename is een verschil, dus 50 en 75. Het goede antwoord is 50 en 75.",
+    "Koos je \"\"50 en 50\"\"? Dan denk je dat de toename gelijk is. Het tweede verschil is 75, dus 50 en 75. Door de stappen goed na te lopen kom je uit op 50 en 75.",
+    "Koos je \"\"50 en 125\"\"? Dan vergelijk je met de eerste waarde. Elke toename is het verschil met de vorige waarde, dus 75."
+   ],
+   "uh": "Welke toenames hebben de waarden 100, 150 en 225?",
+   "ctx": "Een tabel geeft voor stap 0, 1 en 2 de waarden 100, 150 en 225. Een leerling bepaalt de toenames en beschrijft hoe de helling en de vorm van de grafiek veranderen."
+  },
+  {
+   "v": "Hoe verandert de helling van de grafiek volgens de toenames 50 en 75?",
+   "o": [
+    "\"hij wordt kleiner: afnemend stijgend, denk ik\"",
+    "\"hij blijft gelijk\"",
+    "\"hij wordt groter: toenemend stijgend\"",
+    "\"hij wordt negatief\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 1,
+   "u": "Verbind tabel, toenamediagram, helling en vorm van de grafiek met elkaar en controleer met de toenames. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"hij wordt kleiner: afnemend stijgend, denk ik\"\"? Dan denk je dat de helling afneemt. 75 is groter dan 50, dus toenemend.",
+    "Koos je \"\"hij blijft gelijk\"\"? Dan denk je dat de helling constant is. 50 en 75 verschillen, dus hij wordt groter. Door de stappen goed na te lopen kom je uit op hij wordt groter: toenemend stijgend.",
+    "Klopt: de toenames worden groter, dus de grafiek wordt steiler.",
+    "Koos je \"\"hij wordt negatief\"\"? Dan denk je dat de helling omslaat. De toenames zijn positief, dus de grafiek stijgt. Controleer je stap: de juiste uitkomst is hij wordt groter: toenemend stijgend."
+   ],
+   "uh": "Hoe verandert de helling van de grafiek volgens de toenames 50 en 75?",
+   "ctx": "Een tabel geeft voor stap 0, 1 en 2 de waarden 100, 150 en 225. Een leerling bepaalt de toenames en beschrijft hoe de helling en de vorm van de grafiek veranderen."
+  },
+  {
+   "v": "Met welke factor groeit de waarde per stap?",
+   "o": [
+    "\"50\"",
+    "\"1,5\"",
+    "\"2\"",
+    "\"0,5\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 3,
+   "u": "Verbind tabel, toenamediagram, helling en vorm van de grafiek met elkaar en controleer met de toenames. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"50\"\"? Dan neem je de eerste toename. De factor is een verhouding, dus 1,5. Het goede antwoord is 1,5.",
+    "Klopt: 150 : 100 = 225 : 150 = 1,5, dus de groei is exponentieel.",
+    "Koos je \"\"2\"\"? Dan neem je een verdubbeling. De waarden worden 1,5 keer zo groot, dus 1,5. Door de stappen goed na te lopen kom je uit op 1,5.",
+    "Koos je \"\"0,5\"\"? Dan draai je de verhouding om. 150 : 100 is 1,5, dus de factor is 1,5. Controleer je stap: de juiste uitkomst is 1,5."
+   ],
+   "uh": "Met welke factor groeit de waarde per stap?",
+   "ctx": "Een tabel geeft voor stap 0, 1 en 2 de waarden 100, 150 en 225. Een leerling bepaalt de toenames en beschrijft hoe de helling en de vorm van de grafiek veranderen."
+  },
+  {
+   "v": "Hoe groot is de toename van q = 3 naar q = 4?",
+   "o": [
+    "\"1\"",
+    "\"4\"",
+    "\"−3\"",
+    "\"−1\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 0,
+   "u": "Verbind tabel, toenamediagram, helling en vorm van de grafiek met elkaar en controleer met de toenames. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"1\"\"? Dan laat je het minteken weg. De waarde daalt van 5 naar 4, dus −1. Het goede antwoord is −1.",
+    "Koos je \"\"4\"\"? Dan neem je de waarde. Een toename is een verschil, dus −1. Door de stappen goed na te lopen kom je uit op −1.",
+    "Koos je \"\"−3\"\"? Dan neem je de toename van q = 2 naar q = 3. Gevraagd is q = 3 naar 4, dus −1. Controleer je stap: de juiste uitkomst is −1.",
+    "Klopt: 4 − 5 = −1. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Hoe groot is de toename van q = 3 naar q = 4?",
+   "ctx": "De kosten per eenheid van een product zijn K = q² − 8q + 20 bij q eenheden. Een tabel geeft bij q = 0 tot 8 de waarden 20, 13, 8, 5, 4, 5, 8, 13 en 20. Een leerling onderzoekt de toenames en de vorm van de grafiek."
+  },
+  {
+   "v": "Waarom ligt het minimum bij q = 4?",
+   "o": [
+    "\"de toenames wisselen daar van negatief naar positief\"",
+    "\"de toenames wisselen van positief naar negatief, eigenlijk\"",
+    "\"de toenames zijn gelijk\"",
+    "\"de waarde is 20\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 2,
+   "u": "Verbind tabel, toenamediagram, helling en vorm van de grafiek met elkaar en controleer met de toenames. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: de toenames gaan van −1 naar +1, dus de grafiek daalt tot q = 4 en stijgt daarna.",
+    "Koos je \"\"de toenames wisselen van positief naar negatief, eigenlijk\"\"? Dan draai je het teken om. Hier gaan ze van min naar plus, dus een minimum.",
+    "Koos je \"\"de toenames zijn gelijk\"\"? Dan denk je dat de toenames niet veranderen. Ze groeien van −7 naar +7, dus ze wisselen van teken.",
+    "Koos je \"\"de waarde is 20\"\"? Dan neem je de beginwaarde. Het minimum is 4, en dat volgt uit de tekenwissel. Controleer je stap: de juiste uitkomst is de toenames wisselen daar van negatief naar positief."
+   ],
+   "uh": "Waarom ligt het minimum bij q = 4?",
+   "ctx": "De kosten per eenheid van een product zijn K = q² − 8q + 20 bij q eenheden. Een tabel geeft bij q = 0 tot 8 de waarden 20, 13, 8, 5, 4, 5, 8, 13 en 20. Een leerling onderzoekt de toenames en de vorm van de grafiek."
+  },
+  {
+   "v": "Hoe beschrijf je de vorm van de grafiek van q = 0 tot 4 en daarna?",
+   "o": [
+    "\"eerst toenemend dalend, daarna afnemend stijgend, gewoon\"",
+    "\"constant dalend, daarna constant stijgend\"",
+    "\"eerst afnemend dalend, daarna toenemend stijgend\"",
+    "\"alleen stijgend\""
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 1,
+   "u": "Verbind tabel, toenamediagram, helling en vorm van de grafiek met elkaar en controleer met de toenames. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"eerst toenemend dalend, daarna afnemend stijgend, gewoon\"\"? Dan draai je de vormen om. De dalingen worden kleiner en de stijgingen groter, dus afnemend dalend en toenemend stijgend.",
+    "Koos je \"\"constant dalend, daarna constant stijgend\"\"? Dan denk je aan rechte stukken. De toenames veranderen steeds, dus gebogen.",
+    "Klopt: de dalingen worden kleiner (−7 tot −1) en daarna worden de stijgingen groter (1 tot 7).",
+    "Koos je \"\"alleen stijgend\"\"? Dan denk je dat de grafiek niet daalt. De toenames beginnen negatief, dus eerst dalend. Controleer je stap: de juiste uitkomst is eerst afnemend dalend, daarna toenemend stijgend."
+   ],
+   "uh": "Hoe beschrijf je de vorm van de grafiek van q = 0 tot 4 en daarna?",
+   "ctx": "De kosten per eenheid van een product zijn K = q² − 8q + 20 bij q eenheden. Een tabel geeft bij q = 0 tot 8 de waarden 20, 13, 8, 5, 4, 5, 8, 13 en 20. Een leerling onderzoekt de toenames en de vorm van de grafiek."
+  },
+  {
+   "v": "Met hoeveel nemen de toenames per stap steeds toe?",
+   "o": [
+    "\"met 1\"",
+    "\"met 2\"",
+    "\"met 7\"",
+    "\"ze nemen af\""
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 3,
+   "u": "Verbind tabel, toenamediagram, helling en vorm van de grafiek met elkaar en controleer met de toenames. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"met 1\"\"? Dan neem je de stap rond de wissel. Het verschil tussen twee toenames is steeds 2, dus 2. Het goede antwoord is met 2.",
+    "Klopt: −7, −5, −3, −1, 1, 3, 5, 7 neemt telkens 2 toe. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"met 7\"\"? Dan neem je de grootste toename. Het verschil tussen twee toenames is 2, dus 2. Door de stappen goed na te lopen kom je uit op met 2.",
+    "Koos je \"\"ze nemen af\"\"? Dan verwar je toenemen met afnemen. De toenames worden groter, dus toenemend met 2. Controleer je stap: de juiste uitkomst is met 2."
+   ],
+   "uh": "Met hoeveel nemen de toenames per stap steeds toe?",
+   "ctx": "De kosten per eenheid van een product zijn K = q² − 8q + 20 bij q eenheden. Een tabel geeft bij q = 0 tot 8 de waarden 20, 13, 8, 5, 4, 5, 8, 13 en 20. Een leerling onderzoekt de toenames en de vorm van de grafiek."
+  },
+  {
+   "v": "Welke toename heeft tabel A in elke stap?",
+   "o": [
+    "\"40\"",
+    "\"30\"",
+    "\"20\"",
+    "\"10\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 3,
+   "u": "Verbind tabel, toenamediagram, helling en vorm van de grafiek met elkaar en controleer met de toenames. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"40\"\"? Dan neem je de laatste waarde. De toename is een verschil, dus 10. Het goede antwoord is 10.",
+    "Koos je \"\"30\"\"? Dan neem je het verschil tussen eerste en laatste. De toename hoort bij één stap, dus 10. Door de stappen goed na te lopen kom je uit op 10.",
+    "Koos je \"\"20\"\"? Dan neem je de tweede waarde. De toename is een verschil, dus 10. Controleer je stap: de juiste uitkomst is 10.",
+    "Klopt: 20 − 10 = 30 − 20 = 40 − 30 = 10. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Welke toename heeft tabel A in elke stap?",
+   "ctx": "Twee tabellen A en B starten bij 10. A heeft de waarden 10, 20, 30 en 40 en B heeft de waarden 10, 15, 25 en 45 bij stap 0 tot 3. Een leerling vergelijkt de toenames en de vorm van beide grafieken."
+  },
+  {
+   "v": "Welke toename heeft tabel B in de derde stap, van 25 naar 45?",
+   "o": [
+    "\"20\"",
+    "\"45\"",
+    "\"10\"",
+    "\"70\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 0,
+   "u": "Verbind tabel, toenamediagram, helling en vorm van de grafiek met elkaar en controleer met de toenames. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: 45 − 25 = 20. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"45\"\"? Dan neem je de waarde. De toename is een verschil, dus 20. Het goede antwoord is 20.",
+    "Koos je \"\"10\"\"? Dan neem je de toename van de tweede stap. Gevraagd is de derde stap, dus 20. Door de stappen goed na te lopen kom je uit op 20.",
+    "Koos je \"\"70\"\"? Dan tel je 25 en 45 op. Een toename is een verschil, dus 20. Controleer je stap: de juiste uitkomst is 20."
+   ],
+   "uh": "Welke toename heeft tabel B in de derde stap, van 25 naar 45?",
+   "ctx": "Twee tabellen A en B starten bij 10. A heeft de waarden 10, 20, 30 en 40 en B heeft de waarden 10, 15, 25 en 45 bij stap 0 tot 3. Een leerling vergelijkt de toenames en de vorm van beide grafieken."
+  },
+  {
+   "v": "Welke tabel heeft na stap 3 de hoogste waarde en hoe verschilt de vorm?",
+   "o": [
+    "\"A met 40; A buigt steeds steiler, eigenlijk, denk ik, zeg maar\"",
+    "\"A en B zijn gelijk\"",
+    "\"B met 45; B buigt toenemend stijgend, A is een rechte lijn\"",
+    "\"B met 45; B is een rechte lijn\""
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 4,
+   "u": "Verbind tabel, toenamediagram, helling en vorm van de grafiek met elkaar en controleer met de toenames. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"A met 40; A buigt steeds steiler, eigenlijk, denk ik, zeg maar\"\"? Dan koppel je de steilere buiging aan de verkeerde tabel. A heeft gelijke toenames, en B heeft groeiende toenames.",
+    "Koos je \"\"A en B zijn gelijk\"\"? Dan denk je dat de waarden gelijk zijn. A is 40 en B is 45, dus B is hoger. Door de stappen goed na te lopen kom je uit op B met 45; B buigt toenemend stijgend, A is een rechte lijn.",
+    "Klopt: A is 40 met gelijke toenames en B is 45 met toenemende toenames 5, 10 en 20.",
+    "Koos je \"\"B met 45; B is een rechte lijn\"\"? Dan denk je dat B constante toenames heeft. De toenames zijn 5, 10 en 20, dus B buigt."
+   ],
+   "uh": "Welke tabel heeft na stap 3 de hoogste waarde en hoe verschilt de vorm?",
+   "ctx": "Twee tabellen A en B starten bij 10. A heeft de waarden 10, 20, 30 en 40 en B heeft de waarden 10, 15, 25 en 45 bij stap 0 tot 3. Een leerling vergelijkt de toenames en de vorm van beide grafieken."
+  },
+  {
+   "v": "Welke waarde heeft de grafiek na 3 stappen?",
+   "o": [
+    "\"20\"",
+    "\"22\"",
+    "\"12\"",
+    "\"18\""
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 0,
+   "u": "Verbind tabel, toenamediagram, helling en vorm van de grafiek met elkaar en controleer met de toenames. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"20\"\"? Dan neem je de waarde na 2 stappen. Er zijn drie stappen, dus 22. Het goede antwoord is 22.",
+    "Klopt: 10 + 6 = 16, 16 + 4 = 20 en 20 + 2 = 22. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"12\"\"? Dan tel je alleen de eerste toename op. Alle drie tellen mee, dus 22. Door de stappen goed na te lopen kom je uit op 22.",
+    "Koos je \"\"18\"\"? Dan tel je 6, 4 en 2 op en vergeet je de beginwaarde. De beginwaarde is 10, dus 22. Controleer je stap: de juiste uitkomst is 22."
+   ],
+   "uh": "Welke waarde heeft de grafiek na 3 stappen?",
+   "ctx": "Een grafiek begint bij 10 en heeft in zes opeenvolgende stappen de toenames +6, +4, +2, 0, −2 en −4. Een leerling bepaalt de waarden en beschrijft de vorm van de grafiek met de toenames."
+  },
+  {
+   "v": "Welke waarde heeft het maximum van de grafiek?",
+   "o": [
+    "\"16\"",
+    "\"20\"",
+    "\"10\"",
+    "\"22\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 2,
+   "u": "Verbind tabel, toenamediagram, helling en vorm van de grafiek met elkaar en controleer met de toenames. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"16\"\"? Dan neem je de waarde na 1 stap. Het maximum is 22, dus 22. Het goede antwoord is 22.",
+    "Koos je \"\"20\"\"? Dan neem je de waarde na 2 stappen en na de daling. Het maximum is 22, dus 22. Door de stappen goed na te lopen kom je uit op 22.",
+    "Koos je \"\"10\"\"? Dan neem je de beginwaarde. Die is lager, dus 22. Controleer je stap: de juiste uitkomst is 22.",
+    "Klopt: de waarde stijgt tot 22, blijft 22 bij toename 0 en daalt daarna."
+   ],
+   "uh": "Welke waarde heeft het maximum van de grafiek?",
+   "ctx": "Een grafiek begint bij 10 en heeft in zes opeenvolgende stappen de toenames +6, +4, +2, 0, −2 en −4. Een leerling bepaalt de waarden en beschrijft de vorm van de grafiek met de toenames."
+  },
+  {
+   "v": "Hoe beschrijf je de vorm van de grafiek bij de toenames +6, +4, +2, 0, −2 en −4?",
+   "o": [
+    "\"eerst afnemend stijgend, daarna toenemend dalend\"",
+    "\"eerst toenemend stijgend, daarna afnemend dalend, volgens mij\"",
+    "\"constant stijgend, daarna constant dalend\"",
+    "\"alleen dalend\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 1,
+   "u": "Verbind tabel, toenamediagram, helling en vorm van de grafiek met elkaar en controleer met de toenames. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: de toenames dalen steeds met 2, dus de grafiek is een bergvorm.",
+    "Koos je \"\"eerst toenemend stijgend, daarna afnemend dalend, volgens mij\"\"? Dan draai je de vormen om. De stijgingen worden kleiner en de dalingen groter, dus afnemend stijgend en toenemend dalend.",
+    "Koos je \"\"constant stijgend, daarna constant dalend\"\"? Dan denk je aan rechte stukken. De toenames veranderen steeds, dus gebogen.",
+    "Koos je \"\"alleen dalend\"\"? Dan denk je dat de grafiek niet stijgt. De eerste toenames zijn positief, dus eerst stijgend."
+   ],
+   "uh": "Hoe beschrijf je de vorm van de grafiek bij de toenames +6, +4, +2, 0, −2 en −4?",
+   "ctx": "Een grafiek begint bij 10 en heeft in zes opeenvolgende stappen de toenames +6, +4, +2, 0, −2 en −4. Een leerling bepaalt de waarden en beschrijft de vorm van de grafiek met de toenames."
+  }
+ ],
+ "oe": [
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een grafiek begint bij 10 en heeft de toenames +8, +4, 0 en −4 in vier opeenvolgende stappen. Een leerling bepaalt de waarden, zoekt het maximum en beschrijft de vorm.",
+   "v": "Bereken de waarden, geef het maximum en beschrijf de vorm.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Waarden 18, 22, 22 en 18 (1p). Maximum 22 (1p). Eerst afnemend stijgend, daarna toenemend dalend (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een tabel heeft bij stap 0 tot 3 de waarden 3, 6, 12 en 24. Een leerling bepaalt de toenames, de groeifactor en de vorm van de grafiek en voorspelt de volgende waarde.",
+   "v": "Bereken de toenames en de factor en geef de vorm en de volgende waarde.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Toenames 3, 6 en 12 (1p). Factor 2, toenemend stijgend (1p). Volgende waarde 48 (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een tabel heeft de waarden 40, 30, 22 en 16 bij vier opeenvolgende tijdstippen. Een leerling bepaalt de toenames, beschrijft de vorm en schat de volgende waarde als de toenames steeds met 2 groter blijven.",
+   "v": "Bereken de toenames, beschrijf de vorm en geef de volgende waarde.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Toenames −10, −8 en −6 (1p). Ze komen dichter bij nul: afnemend dalend (1p). Volgende toename −4 geeft 16 − 4 = 12 (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Twee tabellen starten bij 5. A heeft de waarden 5, 10, 15 en 20. B heeft de waarden 5, 8, 13 en 22. Een leerling vergelijkt de toenames, de vorm en de waarden na drie stappen.",
+   "v": "Vergelijk de toenames en de waarden en beschrijf de vormen.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "A heeft toenames 5, 5 en 5 en is lineair (1p). B heeft toenames 3, 5 en 9 en is toenemend stijgend (1p). Na drie stappen is A 20 en B 22 (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een leerling zegt dat toenames van −3, −3 en −3 betekenen dat de grafiek horizontaal is. Jij weet dat dit niet klopt. Je wilt de juiste vorm met uitleg.",
+   "v": "Beschrijf de grafiek bij toenames −3, −3 en −3 en leg de fout uit.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Gelijke negatieve toenames geven een rechte dalende lijn (1p). Horizontaal betekent toename 0 (1p). De leerling verwart een constante toename met een constante waarde (1p)."
+  }
+ ]
+}

@@ -1385,6 +1385,27 @@ var VAKKEN = [
       "nOe": 5,
       "nBeg": 12,
       "hasSam": true
+     },
+     {
+      "id": "D6",
+      "lo": "wa.D.6",
+      "gs": 2,
+      "naam": "Toename, helling en vorm van de grafiek met elkaar verbinden",
+      "beschrijving": "Je verbindt tabel, toenames, helling en vorm van de grafiek, herkent top en dal aan een tekenwissel, vergelijkt lineaire en exponentiële groei en schetst een grafiek met de toenames.",
+      "ceStatus": "CE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Toenames en vorm verbinden",
+       "Helling en vorm",
+       "Top en dal herkennen",
+       "Lineair en exponentieel vergelijken",
+       "Schetsen en controleren"
+      ],
+      "nSv": 27,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
      }
     ]
    },
