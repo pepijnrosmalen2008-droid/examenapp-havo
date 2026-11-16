@@ -1,0 +1,682 @@
+{
+ "id": "D3",
+ "lo": "wa.D.3",
+ "gs": 2,
+ "naam": "Toenamediagrammen opstellen en interpreteren",
+ "beschrijving": "Je tekent en leest toenamediagrammen, bepaalt uit de staven en een beginwaarde de waarden van de grafiek, beschrijft het verloop en vergelijkt twee diagrammen.",
+ "ceStatus": "CE",
+ "binas": "",
+ "val": "",
+ "onderwerpen": [
+  "Toenamediagram opstellen",
+  "Staven lezen",
+  "Van staven naar waarden",
+  "Vorm van het diagram",
+  "Totale verandering"
+ ],
+ "sam": "Een toenamediagram toont per stap de toename. Staven boven de as zijn een stijging, onder de as een daling en nul een gelijk blijven. Gelijke staven betekenen lineair, stijgende staven toenemend stijgend en dalende staven afnemend stijgend. Met de beginwaarde en de staven bepaal je de waarden; de som van de staven is de totale verandering.",
+ "begrippen": [
+  {
+   "t": "Toenamediagram",
+   "d": "Een diagram waarin per stap de toename (de differentie) als staaf is getekend."
+  },
+  {
+   "t": "Staaf",
+   "d": "Eén stap in het toenamediagram; de hoogte is de toename in die stap."
+  },
+  {
+   "t": "Staaf boven de as",
+   "d": "Een positieve toename: de waarde stijgt."
+  },
+  {
+   "t": "Staaf onder de as",
+   "d": "Een negatieve toename: de waarde daalt."
+  },
+  {
+   "t": "Staaf van nul",
+   "d": "De waarde blijft gelijk."
+  },
+  {
+   "t": "Gelijke staven",
+   "d": "Constante toename: een lineair verband."
+  },
+  {
+   "t": "Stijgende staven",
+   "d": "De toename wordt groter: toenemend stijgend."
+  },
+  {
+   "t": "Dalende staven",
+   "d": "De toename wordt kleiner: afnemend stijgend."
+  },
+  {
+   "t": "Beginwaarde",
+   "d": "De waarde waar de grafiek begint; nodig om uit de staven de waarden te vinden."
+  },
+  {
+   "t": "Totale verandering",
+   "d": "De som van alle staven; gelijk aan eindwaarde min beginwaarde."
+  },
+  {
+   "t": "Waarde bepalen",
+   "d": "De beginwaarde plus de staven tot en met die stap."
+  },
+  {
+   "t": "Vergelijken",
+   "d": "Twee toenamediagrammen vergelijk je per stap en op totaal."
+  }
+ ],
+ "sv": [
+  {
+   "v": "Een tabel heeft de waarden 6, 9 en 11. Welke toenames komen in het toenamediagram?",
+   "o": [
+    "\"9 en 11, I think\"",
+    "\"3 en 2\"",
+    "\"3 en 5\"",
+    "\"2 en 3\""
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 0,
+   "u": "Lees de staafhoogte als toename per stap en tel die op bij de beginwaarde om de waarde te vinden. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"9 en 11, I think\"\"? Dan neem je de waarden zelf als staven. Een toenamediagram toont verschillen, dus 3 en 2. Het goede antwoord is 3 en 2.",
+    "Klopt: 9 − 6 = 3 en 11 − 9 = 2. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"3 en 5\"\"? Dan vergelijk je telkens met de eerste waarde. Elke toename is het verschil met de vorige waarde, dus 11 − 9 = 2.",
+    "Koos je \"\"2 en 3\"\"? Dan draai je de volgorde om. De eerste toename is 9 − 6 = 3, dus 3 en 2. Controleer je stap: de juiste uitkomst is 3 en 2."
+   ],
+   "uh": "Een tabel heeft de waarden 6, 9 en 11. Welke toenames komen in het toenamediagram?"
+  },
+  {
+   "v": "Een staaf in een toenamediagram ligt onder de horizontale as. Wat betekent dat voor de grafiek?",
+   "o": [
+    "\"de grafiek stijgt in die stap, to be honest\"",
+    "\"de grafiek is constant\"",
+    "\"de beginwaarde is negatief\"",
+    "\"de grafiek daalt in die stap\""
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 1,
+   "u": "Lees de staafhoogte als toename per stap en tel die op bij de beginwaarde om de waarde te vinden. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"de grafiek stijgt in die stap, to be honest\"\"? Dan verwar je het teken. Een staaf onder de as is negatief, dus een daling. Het goede antwoord is de grafiek daalt in die stap.",
+    "Koos je \"\"de grafiek is constant\"\"? Dan denk je dat er niets verandert. Constant hoort bij een staaf van hoogte 0, en niet eronder.",
+    "Koos je \"\"de beginwaarde is negatief\"\"? Dan denk je dat het om de beginwaarde gaat. De staaf toont de toename, en een negatieve toename is een daling.",
+    "Klopt: een negatieve toename betekent dat de waarde afneemt."
+   ],
+   "uh": "Een staaf in een toenamediagram ligt onder de horizontale as. Wat betekent dat voor de grafiek?"
+  },
+  {
+   "v": "Een staaf in een toenamediagram heeft hoogte 0. Wat betekent dat in die stap?",
+   "o": [
+    "\"de waarde blijft gelijk\"",
+    "\"de waarde is 0\"",
+    "\"de waarde daalt\"",
+    "\"de waarde verdubbelt, I suppose\""
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 1,
+   "u": "Lees de staafhoogte als toename per stap en tel die op bij de beginwaarde om de waarde te vinden. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: een toename van 0 betekent dat de waarde niet verandert.",
+    "Koos je \"\"de waarde is 0\"\"? Dan verwar je de toename met de waarde. De waarde kan groot zijn, terwijl de toename 0 is. Het goede antwoord is de waarde blijft gelijk.",
+    "Koos je \"\"de waarde daalt\"\"? Dan denk je dat 0 een daling is. Een daling heeft een negatieve staaf, dus 0 is gelijk blijven.",
+    "Koos je \"\"de waarde verdubbelt, I suppose\"\"? Dan denk je dat 0 een groei is. Een toename van 0 geeft geen verandering, dus gelijk. Controleer je stap: de juiste uitkomst is de waarde blijft gelijk."
+   ],
+   "uh": "Een staaf in een toenamediagram heeft hoogte 0. Wat betekent dat in die stap?"
+  },
+  {
+   "v": "Een grafiek begint bij 10 met toenames +3 en +2. Welke waarde heeft hij na twee stappen?",
+   "o": [
+    "\"5\"",
+    "\"13\"",
+    "\"15\"",
+    "\"25\""
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 2,
+   "u": "Lees de staafhoogte als toename per stap en tel die op bij de beginwaarde om de waarde te vinden. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"5\"\"? Dan tel je alleen de toenames op. De beginwaarde 10 hoort erbij, dus 15. Het goede antwoord is 15.",
+    "Koos je \"\"13\"\"? Dan tel je maar één toename erbij op. Er zijn twee stappen, dus 15. Door de stappen goed na te lopen kom je uit op 15.",
+    "Klopt: 10 + 3 = 13 en 13 + 2 = 15. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"25\"\"? Dan vermenigvuldig je 10 met 2,5. Toenames tel je erbij op, dus 10 + 5. Controleer je stap: de juiste uitkomst is 15."
+   ],
+   "uh": "Een grafiek begint bij 10 met toenames +3 en +2. Welke waarde heeft hij na twee stappen?"
+  },
+  {
+   "v": "Een toenamediagram heeft vier even hoge staven boven de as. Welk verband hoort daarbij?",
+   "o": [
+    "\"exponentieel\"",
+    "\"lineair\"",
+    "\"omgekeerd evenredig\"",
+    "\"constant\""
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 3,
+   "u": "Lees de staafhoogte als toename per stap en tel die op bij de beginwaarde om de waarde te vinden. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"exponentieel\"\"? Dan denk je aan toenames die steeds groter worden. Hier zijn ze gelijk, dus lineair. Het goede antwoord is lineair.",
+    "Klopt: een constante toename per stap hoort bij een lineair verband.",
+    "Koos je \"\"omgekeerd evenredig\"\"? Dan denk je aan een constant product. Hier zijn de toenames constant, dus lineair. Door de stappen goed na te lopen kom je uit op lineair.",
+    "Koos je \"\"constant\"\"? Dan denk je dat de waarde gelijk blijft. De staven liggen boven de as, dus de waarde neemt toe. Controleer je stap: de juiste uitkomst is lineair."
+   ],
+   "uh": "Een toenamediagram heeft vier even hoge staven boven de as. Welk verband hoort daarbij?"
+  },
+  {
+   "v": "In een toenamediagram worden de staven boven de as steeds hoger. Hoe beschrijf je de grafiek?",
+   "o": [
+    "\"afnemend stijgend, I think\"",
+    "\"constant stijgend\"",
+    "\"dalend\"",
+    "\"toenemend stijgend\""
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 3,
+   "u": "Lees de staafhoogte als toename per stap en tel die op bij de beginwaarde om de waarde te vinden. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"afnemend stijgend, I think\"\"? Dan denk je dat de toename kleiner wordt. De staven worden hoger, dus toenemend. Het goede antwoord is toenemend stijgend.",
+    "Koos je \"\"constant stijgend\"\"? Dan denk je dat de toename gelijk is. De staven verschillen, dus toenemend. Door de stappen goed na te lopen kom je uit op toenemend stijgend.",
+    "Koos je \"\"dalend\"\"? Dan verwar je stijgen met dalen. De staven liggen boven de as, dus stijgend. Controleer je stap: de juiste uitkomst is toenemend stijgend.",
+    "Klopt: de waarde stijgt en de toename wordt steeds groter."
+   ],
+   "uh": "In een toenamediagram worden de staven boven de as steeds hoger. Hoe beschrijf je de grafiek?"
+  },
+  {
+   "v": "De toenames zijn +4, −1 en +2. Welke totale verandering hoort daarbij?",
+   "o": [
+    "\"5\"",
+    "\"7\"",
+    "\"1\"",
+    "\"6\""
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 4,
+   "u": "Lees de staafhoogte als toename per stap en tel die op bij de beginwaarde om de waarde te vinden. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: 4 − 1 + 2 = 5. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"7\"\"? Dan laat je het minteken weg. De −1 trek je af, dus 4 − 1 + 2 = 5. Het goede antwoord is 5.",
+    "Koos je \"\"1\"\"? Dan trek je ook de 2 af. De 2 is positief, dus 4 − 1 + 2. Door de stappen goed na te lopen kom je uit op 5.",
+    "Koos je \"\"6\"\"? Dan reken je 4 + 2. De −1 hoort ook mee, dus 5. Controleer je stap: de juiste uitkomst is 5."
+   ],
+   "uh": "De toenames zijn +4, −1 en +2. Welke totale verandering hoort daarbij?"
+  },
+  {
+   "v": "Hoe groot is de toename van week 1 naar week 2?",
+   "o": [
+    "\"4 centimeter\"",
+    "\"17 centimeter, zeg maar\"",
+    "\"3 centimeter\"",
+    "\"2 centimeter\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 0,
+   "u": "Lees de staafhoogte als toename per stap en tel die op bij de beginwaarde om de waarde te vinden. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"4 centimeter\"\"? Dan neem je de toename van de eerste week. Gevraagd is week 1 naar 2, dus 3. Het goede antwoord is 3 centimeter.",
+    "Koos je \"\"17 centimeter, zeg maar\"\"? Dan neem je de hoogte. Een toename is een verschil, dus 3. Door de stappen goed na te lopen kom je uit op 3 centimeter.",
+    "Klopt: 17 − 14 = 3. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"2 centimeter\"\"? Dan neem je de toename van week 2 naar 3. Gevraagd is week 1 naar 2, dus 3. Controleer je stap: de juiste uitkomst is 3 centimeter."
+   ],
+   "uh": "Hoe groot is de toename van week 1 naar week 2?",
+   "ctx": "Een plant wordt wekelijks gemeten: week 0 is 10 centimeter, week 1 is 14, week 2 is 17, week 3 is 19 en week 4 is 20. Een leerling tekent een toenamediagram met de toename per week en beschrijft de groei."
+  },
+  {
+   "v": "Hoe beschrijf je de groei van de plant aan de hand van de staven?",
+   "o": [
+    "\"stijgend, met toenemende toename, eigenlijk\"",
+    "\"stijgend, met afnemende toename\"",
+    "\"dalend\"",
+    "\"constant stijgend\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 3,
+   "u": "Lees de staafhoogte als toename per stap en tel die op bij de beginwaarde om de waarde te vinden. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"stijgend, met toenemende toename, eigenlijk\"\"? Dan denk je dat de staven hoger worden. Ze worden lager, dus afnemend. Het goede antwoord is stijgend, met afnemende toename.",
+    "Klopt: de staven 4, 3, 2 en 1 zijn positief en worden lager.",
+    "Koos je \"\"dalend\"\"? Dan verwar je stijgen met dalen. De staven liggen boven de as, dus stijgend. Door de stappen goed na te lopen kom je uit op stijgend, met afnemende toename.",
+    "Koos je \"\"constant stijgend\"\"? Dan denk je dat de staven gelijk zijn. Ze verschillen, dus afnemend. Controleer je stap: de juiste uitkomst is stijgend, met afnemende toename."
+   ],
+   "uh": "Hoe beschrijf je de groei van de plant aan de hand van de staven?",
+   "ctx": "Een plant wordt wekelijks gemeten: week 0 is 10 centimeter, week 1 is 14, week 2 is 17, week 3 is 19 en week 4 is 20. Een leerling tekent een toenamediagram met de toename per week en beschrijft de groei."
+  },
+  {
+   "v": "Welke hoogte heeft de plant in week 4 als je alleen de beginwaarde en de staven kent?",
+   "o": [
+    "\"10 centimeter, gewoon\"",
+    "\"30 centimeter\"",
+    "\"14 centimeter\"",
+    "\"20 centimeter\""
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 2,
+   "u": "Lees de staafhoogte als toename per stap en tel die op bij de beginwaarde om de waarde te vinden. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"10 centimeter, gewoon\"\"? Dan neem je de beginwaarde. De toenames komen erbij, dus 20. Het goede antwoord is 20 centimeter.",
+    "Koos je \"\"30 centimeter\"\"? Dan tel je 10 en 20 bij elkaar op. De toenames zijn 4, 3, 2 en 1, dus 10 + 10. Door de stappen goed na te lopen kom je uit op 20 centimeter.",
+    "Koos je \"\"14 centimeter\"\"? Dan neem je de hoogte na één week. Er zijn vier weken, dus 20. Controleer je stap: de juiste uitkomst is 20 centimeter.",
+    "Klopt: 10 + 4 + 3 + 2 + 1 = 20. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Welke hoogte heeft de plant in week 4 als je alleen de beginwaarde en de staven kent?",
+   "ctx": "Een plant wordt wekelijks gemeten: week 0 is 10 centimeter, week 1 is 14, week 2 is 17, week 3 is 19 en week 4 is 20. Een leerling tekent een toenamediagram met de toename per week en beschrijft de groei."
+  },
+  {
+   "v": "Welk verband hoort bij gelijke staven van +5?",
+   "o": [
+    "\"lineair\"",
+    "\"exponentieel\"",
+    "\"kwadratisch\"",
+    "\"constant\""
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 3,
+   "u": "Lees de staafhoogte als toename per stap en tel die op bij de beginwaarde om de waarde te vinden. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: een constante toename hoort bij een lineair verband.",
+    "Koos je \"\"exponentieel\"\"? Dan denk je aan groeiende staven. Hier zijn ze gelijk, dus lineair. Het goede antwoord is lineair.",
+    "Koos je \"\"kwadratisch\"\"? Dan denk je aan staven die gelijkmatig groeien. Hier blijven ze gelijk, dus lineair. Door de stappen goed na te lopen kom je uit op lineair.",
+    "Koos je \"\"constant\"\"? Dan denk je dat de waarde gelijk blijft. De staven zijn +5, dus de waarde neemt steeds toe. Controleer je stap: de juiste uitkomst is lineair."
+   ],
+   "uh": "Welk verband hoort bij gelijke staven van +5?",
+   "ctx": "Een toenamediagram toont vier stappen met staven van gelijke hoogte: elke stap is +5. De grafiek waar dit toenamediagram bij hoort begint bij 20. Een leerling beschrijft de vorm en rekent de waarden uit."
+  },
+  {
+   "v": "Welke waarde heeft de grafiek na 3 stappen?",
+   "o": [
+    "\"15\"",
+    "\"30\"",
+    "\"35\"",
+    "\"40\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 2,
+   "u": "Lees de staafhoogte als toename per stap en tel die op bij de beginwaarde om de waarde te vinden. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"15\"\"? Dan trek je 5 af. De staven zijn positief, dus 35. Het goede antwoord is 35.",
+    "Koos je \"\"30\"\"? Dan tel je maar twee stappen erbij op. Het zijn er drie, dus 35. Door de stappen goed na te lopen kom je uit op 35.",
+    "Klopt: 20 + 5 + 5 + 5 = 35. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"40\"\"? Dan tel je vier stappen erbij op. Gevraagd zijn er drie, dus 35. Controleer je stap: de juiste uitkomst is 35."
+   ],
+   "uh": "Welke waarde heeft de grafiek na 3 stappen?",
+   "ctx": "Een toenamediagram toont vier stappen met staven van gelijke hoogte: elke stap is +5. De grafiek waar dit toenamediagram bij hoort begint bij 20. Een leerling beschrijft de vorm en rekent de waarden uit."
+  },
+  {
+   "v": "Welke totale verandering hoort bij de vier staven?",
+   "o": [
+    "\"5\"",
+    "\"20\"",
+    "\"40\"",
+    "\"25\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 4,
+   "u": "Lees de staafhoogte als toename per stap en tel die op bij de beginwaarde om de waarde te vinden. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"5\"\"? Dan neem je één staaf. Alle vier tellen mee, dus 20. Het goede antwoord is 20.",
+    "Klopt: 4 · 5 = 20. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"40\"\"? Dan neem je de eindwaarde. De totale verandering is het verschil met het begin, dus 20. Door de stappen goed na te lopen kom je uit op 20.",
+    "Koos je \"\"25\"\"? Dan tel je 5 bij 20 op. Er zijn vier staven, dus 4 · 5. Controleer je stap: de juiste uitkomst is 20."
+   ],
+   "uh": "Welke totale verandering hoort bij de vier staven?",
+   "ctx": "Een toenamediagram toont vier stappen met staven van gelijke hoogte: elke stap is +5. De grafiek waar dit toenamediagram bij hoort begint bij 20. Een leerling beschrijft de vorm en rekent de waarden uit."
+  },
+  {
+   "v": "Welke voorraad is er na stap 2?",
+   "o": [
+    "\"80 dozen\"",
+    "\"30 dozen\"",
+    "\"110 dozen, eigenlijk\"",
+    "\"70 dozen\""
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 2,
+   "u": "Lees de staafhoogte als toename per stap en tel die op bij de beginwaarde om de waarde te vinden. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"80 dozen\"\"? Dan neem je de voorraad na stap 1. Er is nog een stap, dus 70. Het goede antwoord is 70 dozen.",
+    "Koos je \"\"30 dozen\"\"? Dan trek je 20 en 10 af van 60. De beginvoorraad is 100, dus 70. Door de stappen goed na te lopen kom je uit op 70 dozen.",
+    "Koos je \"\"110 dozen, eigenlijk\"\"? Dan tel je de staven erbij op. De staven zijn negatief, dus aftrekken. Controleer je stap: de juiste uitkomst is 70 dozen.",
+    "Klopt: 100 − 20 = 80 en 80 − 10 = 70. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Welke voorraad is er na stap 2?",
+   "ctx": "Een toenamediagram van een magazijn toont vier stappen: stap 1 is −20, stap 2 is −10, stap 3 is +10 en stap 4 is +20. De beginvoorraad is 100 dozen. Een leerling rekent de voorraad na elke stap uit."
+  },
+  {
+   "v": "Na welke stap is de voorraad het kleinst?",
+   "o": [
+    "\"na stap 2\"",
+    "\"na stap 1, really\"",
+    "\"na stap 4\"",
+    "\"na stap 3\""
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 1,
+   "u": "Lees de staafhoogte als toename per stap en tel die op bij de beginwaarde om de waarde te vinden. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: tot dan zijn de staven negatief, daarna positief.",
+    "Koos je \"\"na stap 1, really\"\"? Dan kies je een te vroeg moment. Stap 2 is ook nog negatief, dus na stap 2. Het goede antwoord is na stap 2.",
+    "Koos je \"\"na stap 4\"\"? Dan kies je het einde. De staven zijn dan positief, dus de voorraad stijgt. Door de stappen goed na te lopen kom je uit op na stap 2.",
+    "Koos je \"\"na stap 3\"\"? Dan kies je een te laat moment. Stap 3 is al positief, dus het minimum is na stap 2. Controleer je stap: de juiste uitkomst is na stap 2."
+   ],
+   "uh": "Na welke stap is de voorraad het kleinst?",
+   "ctx": "Een toenamediagram van een magazijn toont vier stappen: stap 1 is −20, stap 2 is −10, stap 3 is +10 en stap 4 is +20. De beginvoorraad is 100 dozen. Een leerling rekent de voorraad na elke stap uit."
+  },
+  {
+   "v": "Welke totale verandering hoort bij de vier staven?",
+   "o": [
+    "\"60 dozen\"",
+    "\"30 dozen\"",
+    "\"0 dozen\"",
+    "\"−30 dozen\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 4,
+   "u": "Lees de staafhoogte als toename per stap en tel die op bij de beginwaarde om de waarde te vinden. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"60 dozen\"\"? Dan tel je de absolute waarden op. De negatieve staven trek je af, dus 0. Het goede antwoord is 0 dozen.",
+    "Koos je \"\"30 dozen\"\"? Dan tel je alleen de positieve staven op. Ook de negatieve tellen mee, dus 0. Door de stappen goed na te lopen kom je uit op 0 dozen.",
+    "Klopt: −20 − 10 + 10 + 20 = 0. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"−30 dozen\"\"? Dan tel je alleen de negatieve staven op. Ook de positieve tellen mee, dus 0. Controleer je stap: de juiste uitkomst is 0 dozen."
+   ],
+   "uh": "Welke totale verandering hoort bij de vier staven?",
+   "ctx": "Een toenamediagram van een magazijn toont vier stappen: stap 1 is −20, stap 2 is −10, stap 3 is +10 en stap 4 is +20. De beginvoorraad is 100 dozen. Een leerling rekent de voorraad na elke stap uit."
+  },
+  {
+   "v": "Wat betekent de staaf van −20 in stap 1?",
+   "o": [
+    "\"de voorraad stijgt met 20 dozen, volgens mij\"",
+    "\"de voorraad daalt met 20 dozen\"",
+    "\"de voorraad is 20 dozen\"",
+    "\"de voorraad is op\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 1,
+   "u": "Lees de staafhoogte als toename per stap en tel die op bij de beginwaarde om de waarde te vinden. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"de voorraad stijgt met 20 dozen, volgens mij\"\"? Dan verwar je het teken. Een min is een daling, dus de voorraad daalt. Het goede antwoord is de voorraad daalt met 20 dozen.",
+    "Klopt: een negatieve staaf is een daling. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"de voorraad is 20 dozen\"\"? Dan verwar je de toename met de voorraad. De voorraad is 80, en de verandering is −20.",
+    "Koos je \"\"de voorraad is op\"\"? Dan denk je dat −20 een lege voorraad is. De voorraad is 80, en daalt met 20. Controleer je stap: de juiste uitkomst is de voorraad daalt met 20 dozen."
+   ],
+   "uh": "Wat betekent de staaf van −20 in stap 1?",
+   "ctx": "Een toenamediagram van een magazijn toont vier stappen: stap 1 is −20, stap 2 is −10, stap 3 is +10 en stap 4 is +20. De beginvoorraad is 100 dozen. Een leerling rekent de voorraad na elke stap uit."
+  },
+  {
+   "v": "Welke waarde heeft de grafiek na 3 stappen?",
+   "o": [
+    "\"9\"",
+    "\"23\"",
+    "\"12\"",
+    "\"15\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 2,
+   "u": "Lees de staafhoogte als toename per stap en tel die op bij de beginwaarde om de waarde te vinden. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"9\"\"? Dan neem je de waarde na 2 stappen. Er zijn drie stappen, dus 15. Het goede antwoord is 15.",
+    "Koos je \"\"23\"\"? Dan neem je de waarde na 4 stappen. Gevraagd is na 3, dus 15. Door de stappen goed na te lopen kom je uit op 15.",
+    "Koos je \"\"12\"\"? Dan tel je 2, 4 en 6 op bij 0. De beginwaarde is 3, dus 15. Controleer je stap: de juiste uitkomst is 15.",
+    "Klopt: 3 + 2 = 5, 5 + 4 = 9 en 9 + 6 = 15. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Welke waarde heeft de grafiek na 3 stappen?",
+   "ctx": "Een toenamediagram heeft vier staven: +2, +4, +6 en +8. De bijbehorende grafiek begint bij 3. Een leerling bepaalt de waarden en beschrijft het verloop."
+  },
+  {
+   "v": "Hoe beschrijf je het verloop bij de staven +2, +4, +6 en +8?",
+   "o": [
+    "\"toenemend stijgend\"",
+    "\"afnemend stijgend, eigenlijk\"",
+    "\"lineair stijgend\"",
+    "\"dalend\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 3,
+   "u": "Lees de staafhoogte als toename per stap en tel die op bij de beginwaarde om de waarde te vinden. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: de waarde stijgt en de toename wordt steeds groter.",
+    "Koos je \"\"afnemend stijgend, eigenlijk\"\"? Dan denk je dat de toename kleiner wordt. De staven worden hoger, dus toenemend. Het goede antwoord is toenemend stijgend.",
+    "Koos je \"\"lineair stijgend\"\"? Dan denk je dat de toename gelijk is. De staven verschillen, dus toenemend. Door de stappen goed na te lopen kom je uit op toenemend stijgend.",
+    "Koos je \"\"dalend\"\"? Dan verwar je stijgen met dalen. De staven zijn positief, dus stijgend. Controleer je stap: de juiste uitkomst is toenemend stijgend."
+   ],
+   "uh": "Hoe beschrijf je het verloop bij de staven +2, +4, +6 en +8?",
+   "ctx": "Een toenamediagram heeft vier staven: +2, +4, +6 en +8. De bijbehorende grafiek begint bij 3. Een leerling bepaalt de waarden en beschrijft het verloop."
+  },
+  {
+   "v": "Welke totale verandering hoort bij de vier staven?",
+   "o": [
+    "\"8\"",
+    "\"23\"",
+    "\"20\"",
+    "\"12\""
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 4,
+   "u": "Lees de staafhoogte als toename per stap en tel die op bij de beginwaarde om de waarde te vinden. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"8\"\"? Dan neem je de laatste staaf. Alle staven tellen mee, dus 20. Het goede antwoord is 20.",
+    "Koos je \"\"23\"\"? Dan neem je de eindwaarde. De totale verandering is het verschil met het begin, dus 20. Door de stappen goed na te lopen kom je uit op 20.",
+    "Klopt: 2 + 4 + 6 + 8 = 20. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"12\"\"? Dan tel je maar drie staven op. Het zijn er vier, dus 20. Controleer je stap: de juiste uitkomst is 20."
+   ],
+   "uh": "Welke totale verandering hoort bij de vier staven?",
+   "ctx": "Een toenamediagram heeft vier staven: +2, +4, +6 en +8. De bijbehorende grafiek begint bij 3. Een leerling bepaalt de waarden en beschrijft het verloop."
+  },
+  {
+   "v": "Welke totale verandering hebben A en B beide na drie stappen?",
+   "o": [
+    "\"6\"",
+    "\"18\"",
+    "\"9\"",
+    "\"27\""
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 4,
+   "u": "Lees de staafhoogte als toename per stap en tel die op bij de beginwaarde om de waarde te vinden. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"6\"\"? Dan neem je één staaf van A. Alle staven tellen mee, dus 18. Het goede antwoord is 18.",
+    "Klopt: A is 6 + 6 + 6 = 18 en B is 9 + 6 + 3 = 18. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"9\"\"? Dan neem je de eerste staaf van B. Alle staven tellen mee, dus 18. Door de stappen goed na te lopen kom je uit op 18.",
+    "Koos je \"\"27\"\"? Dan tel je de staven van A en B bij elkaar. Je moet ze apart nemen, dus beide 18. Controleer je stap: de juiste uitkomst is 18."
+   ],
+   "uh": "Welke totale verandering hebben A en B beide na drie stappen?",
+   "ctx": "Twee spaarders A en B beginnen allebei met 0 euro. Het toenamediagram van A heeft drie staven van +6, +6 en +6. Dat van B heeft drie staven van +9, +6 en +3. Een leerling vergelijkt hoe ze sparen."
+  },
+  {
+   "v": "Wie heeft na stap 1 het meeste gespaard en hoeveel meer?",
+   "o": [
+    "\"A, 3 euro meer\"",
+    "\"B, 9 euro meer\"",
+    "\"niemand, ze hebben evenveel\"",
+    "\"B, 3 euro meer\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 0,
+   "u": "Lees de staafhoogte als toename per stap en tel die op bij de beginwaarde om de waarde te vinden. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"A, 3 euro meer\"\"? Dan draai je de spaarders om. B heeft 9 en A heeft 6, dus B. Het goede antwoord is B, 3 euro meer.",
+    "Koos je \"\"B, 9 euro meer\"\"? Dan neem je de staaf van B als verschil. Je moet de twee vergelijken, dus 3. Door de stappen goed na te lopen kom je uit op B, 3 euro meer.",
+    "Koos je \"\"niemand, ze hebben evenveel\"\"? Dan denk je dat het totaal aan het einde geldt. Na stap 1 verschillen ze, dus B met 3 meer.",
+    "Klopt: B heeft 9 en A heeft 6, dus 3 euro meer. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Wie heeft na stap 1 het meeste gespaard en hoeveel meer?",
+   "ctx": "Twee spaarders A en B beginnen allebei met 0 euro. Het toenamediagram van A heeft drie staven van +6, +6 en +6. Dat van B heeft drie staven van +9, +6 en +3. Een leerling vergelijkt hoe ze sparen."
+  },
+  {
+   "v": "Waarom is B toch anders dan A, terwijl het totaal na 3 stappen gelijk is?",
+   "o": [
+    "\"de staven van B worden kleiner, die van A blijven gelijk\"",
+    "\"B spaart meer in totaal\"",
+    "\"A heeft negatieve staven, zeg maar, gewoon, volgens mij\"",
+    "\"er is geen verschil\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 3,
+   "u": "Lees de staafhoogte als toename per stap en tel die op bij de beginwaarde om de waarde te vinden. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: B spaart eerst veel en later minder, A spaart elke stap hetzelfde.",
+    "Koos je \"\"B spaart meer in totaal\"\"? Dan denk je dat B meer heeft. Het totaal is beide 18, dus het verschil zit in de verdeling.",
+    "Koos je \"\"A heeft negatieve staven, zeg maar, gewoon, volgens mij\"\"? Dan denk je dat A een daling heeft. Alle staven zijn positief, dus dat klopt niet.",
+    "Koos je \"\"er is geen verschil\"\"? Dan denk je dat gelijk totaal gelijk verloop betekent. De staven verschillen, dus B heeft een afnemende toename."
+   ],
+   "uh": "Waarom is B toch anders dan A, terwijl het totaal na 3 stappen gelijk is?",
+   "ctx": "Twee spaarders A en B beginnen allebei met 0 euro. Het toenamediagram van A heeft drie staven van +6, +6 en +6. Dat van B heeft drie staven van +9, +6 en +3. Een leerling vergelijkt hoe ze sparen."
+  },
+  {
+   "v": "Hoe hoog staat de grafiek na de derde stap?",
+   "o": [
+    "\"14\"",
+    "\"18\"",
+    "\"16\"",
+    "\"20\""
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 2,
+   "u": "Lees de staafhoogte als toename per stap en tel die op bij de beginwaarde om de waarde te vinden. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"14\"\"? Dan neem je de waarde na 1 stap. Er zijn drie stappen, dus 16. Het goede antwoord is 16.",
+    "Koos je \"\"18\"\"? Dan tel je 8 erbij op. Bij de derde stap is de toename 0, dus 16. Door de stappen goed na te lopen kom je uit op 16.",
+    "Klopt: 10 + 4 = 14, 14 + 2 = 16 en 16 + 0 = 16. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"20\"\"? Dan tel je 4, 2, 0 en −2 bij elkaar op bij 10 maar fout. Na 3 stappen is het 16, dus 16. Controleer je stap: de juiste uitkomst is 16."
+   ],
+   "uh": "Hoe hoog staat de grafiek na de derde stap?",
+   "ctx": "Een toenamediagram heeft vier staven: +4, +2, 0 en −2. De bijbehorende grafiek begint bij 10. Een leerling bepaalt de waarden, zoekt het maximum en beschrijft waar de grafiek constant is."
+  },
+  {
+   "v": "Wat betekent de staaf van 0 in stap 3?",
+   "o": [
+    "\"de grafiek daalt in die stap, gewoon\"",
+    "\"de grafiek is constant in die stap\"",
+    "\"de grafiek is 0\"",
+    "\"de grafiek begint opnieuw\""
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 1,
+   "u": "Lees de staafhoogte als toename per stap en tel die op bij de beginwaarde om de waarde te vinden. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"de grafiek daalt in die stap, gewoon\"\"? Dan denk je dat 0 een daling is. Een daling heeft een negatieve staaf, dus 0 is constant.",
+    "Klopt: een toename van 0 betekent dat de waarde gelijk blijft.",
+    "Koos je \"\"de grafiek is 0\"\"? Dan verwar je de toename met de waarde. De waarde is 16, en de toename is 0. Door de stappen goed na te lopen kom je uit op de grafiek is constant in die stap.",
+    "Koos je \"\"de grafiek begint opnieuw\"\"? Dan denk je dat 0 een nieuwe start is. De waarde blijft 16, dus constant. Controleer je stap: de juiste uitkomst is de grafiek is constant in die stap."
+   ],
+   "uh": "Wat betekent de staaf van 0 in stap 3?",
+   "ctx": "Een toenamediagram heeft vier staven: +4, +2, 0 en −2. De bijbehorende grafiek begint bij 10. Een leerling bepaalt de waarden, zoekt het maximum en beschrijft waar de grafiek constant is."
+  },
+  {
+   "v": "Welke waarde heeft het maximum van de grafiek?",
+   "o": [
+    "\"14\"",
+    "\"10\"",
+    "\"20\"",
+    "\"16\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 1,
+   "u": "Lees de staafhoogte als toename per stap en tel die op bij de beginwaarde om de waarde te vinden. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"14\"\"? Dan neem je de eindwaarde. Die is lager dan 16, dus het maximum is 16. Het goede antwoord is 16.",
+    "Koos je \"\"10\"\"? Dan neem je de beginwaarde. Die is lager, dus 16. Door de stappen goed na te lopen kom je uit op 16.",
+    "Koos je \"\"20\"\"? Dan tel je alle positieve staven bij 10 op. De daling hoort erbij, dus 16. Controleer je stap: de juiste uitkomst is 16.",
+    "Klopt: de waarde stijgt tot 16, blijft 16 en daalt dan naar 14."
+   ],
+   "uh": "Welke waarde heeft het maximum van de grafiek?",
+   "ctx": "Een toenamediagram heeft vier staven: +4, +2, 0 en −2. De bijbehorende grafiek begint bij 10. Een leerling bepaalt de waarden, zoekt het maximum en beschrijft waar de grafiek constant is."
+  },
+  {
+   "v": "Waar begint de grafiek te dalen?",
+   "o": [
+    "\"vanaf stap 4\"",
+    "\"vanaf stap 3, volgens mij\"",
+    "\"vanaf stap 2\"",
+    "\"vanaf stap 1\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 3,
+   "u": "Lees de staafhoogte als toename per stap en tel die op bij de beginwaarde om de waarde te vinden. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: alleen de staaf van stap 4 is negatief. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"vanaf stap 3, volgens mij\"\"? Dan neem je de stap met toename 0. Daar blijft de grafiek gelijk, dus pas vanaf stap 4. Het goede antwoord is vanaf stap 4.",
+    "Koos je \"\"vanaf stap 2\"\"? Dan neem je de stap waar de toename kleiner wordt. De grafiek stijgt nog, dus pas vanaf stap 4.",
+    "Koos je \"\"vanaf stap 1\"\"? Dan neem je het begin. In stap 1 stijgt de grafiek, dus pas vanaf stap 4. Controleer je stap: de juiste uitkomst is vanaf stap 4."
+   ],
+   "uh": "Waar begint de grafiek te dalen?",
+   "ctx": "Een toenamediagram heeft vier staven: +4, +2, 0 en −2. De bijbehorende grafiek begint bij 10. Een leerling bepaalt de waarden, zoekt het maximum en beschrijft waar de grafiek constant is."
+  }
+ ],
+ "oe": [
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een tabel geeft de waarden 5, 8, 10 en 11. Een leerling tekent het toenamediagram en wil weten hoe de grafiek verloopt en wat de volgende waarde is als de staven blijven afnemen met 1.",
+   "v": "Geef de staven, beschrijf het verloop en geef de volgende waarde.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Staven 3, 2 en 1 (1p). Positief en kleiner, dus afnemend stijgend (1p). Volgende staaf 0, dus de waarde blijft 11 (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een toenamediagram heeft vier staven van elk +6. De bijbehorende grafiek begint bij 4. Een leerling bepaalt de waarden na elke stap, geeft het soort verband aan en controleert zijn antwoord met de totale verandering.",
+   "v": "Bereken de waarden na elke stap en geef het verband.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "4 + 6 = 10, 16, 22 en 28 (1p). De staven zijn gelijk (1p). Constante toename, dus lineair (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een toenamediagram heeft de staven −8, −4, +4 en +8. De bijbehorende grafiek begint bij 50. Een leerling bepaalt de waarden na elke stap, zoekt het minimum en berekent de totale verandering.",
+   "v": "Bereken de waarden, geef het minimum en de totale verandering.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Waarden 42, 38, 42 en 50 (1p). Minimum 38 na stap 2 (1p). Totale verandering 0 (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Het toenamediagram van A heeft drie staven van +10. Dat van B heeft drie staven van +5, +10 en +15. Beide grafieken beginnen bij 0. Een leerling vergelijkt het verloop van beide spaarders en het totaal na drie stappen.",
+   "v": "Geef het totaal van A en B en beschrijf het verschil.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Totaal A is 30 en totaal B is 30 (1p). A heeft constante toename, dus lineair (1p). B heeft toenemende staven, dus groeit later sneller (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een leerling zegt dat een toenamediagram met gelijke staven van +3 betekent dat de waarde constant is. Jij weet dat dit niet klopt. Je wilt de juiste uitspraak geven met uitleg.",
+   "v": "Beschrijf het verloop bij gelijke staven +3 en leg de fout uit.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "De waarde stijgt steeds met 3, dus lineair stijgend (1p). Constant betekent staaf 0 (1p). De leerling verwart een constante toename met een constante waarde (1p)."
+  }
+ ]
+}

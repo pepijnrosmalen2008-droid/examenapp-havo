@@ -1322,6 +1322,27 @@ var VAKKEN = [
       "nOe": 5,
       "nBeg": 12,
       "hasSam": true
+     },
+     {
+      "id": "D3",
+      "lo": "wa.D.3",
+      "gs": 2,
+      "naam": "Toenamediagrammen opstellen en interpreteren",
+      "beschrijving": "Je tekent en leest toenamediagrammen, bepaalt uit de staven en een beginwaarde de waarden van de grafiek, beschrijft het verloop en vergelijkt twee diagrammen.",
+      "ceStatus": "CE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Toenamediagram opstellen",
+       "Staven lezen",
+       "Van staven naar waarden",
+       "Vorm van het diagram",
+       "Totale verandering"
+      ],
+      "nSv": 27,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
      }
     ]
    },
