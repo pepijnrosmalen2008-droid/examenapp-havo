@@ -52772,6 +52772,688 @@ var VAKKEN = [
         "u": "De waarde stijgt steeds met 3, dus lineair stijgend (1p). Constant betekent staaf 0 (1p). De leerling verwart een constante toename met een constante waarde (1p)."
        }
       ]
+     },
+     {
+      "id": "D4",
+      "lo": "wa.D.4",
+      "gs": 2,
+      "naam": "Gemiddelde verandering en gemiddelde helling over een interval",
+      "beschrijving": "Je berekent de gemiddelde verandering of gemiddelde helling over een interval met verschil in y gedeeld door verschil in x, vergelijkt intervallen, geeft de eenheid en interpreteert de uitkomst.",
+      "ceStatus": "CE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Gemiddelde verandering berekenen",
+       "Eenheid en interpretatie",
+       "Gemiddelde helling uit tabel of grafiek",
+       "Intervallen vergelijken",
+       "Hele interval of deelintervallen"
+      ],
+      "sam": "De gemiddelde verandering over een interval is Δy : Δx. Dat is de gemiddelde helling van de lijn door begin- en eindpunt. Geef de eenheid, bijvoorbeeld km/u. Een negatieve uitkomst betekent een daling. Het totaalgemiddelde is totale verandering gedeeld door totale lengte. Controleer door te vermenigvuldigen met de lengte van het interval.",
+      "begrippen": [
+       {
+        "t": "Interval",
+        "d": "Een stuk van de x-as, bijvoorbeeld van x = 2 tot x = 6."
+       },
+       {
+        "t": "Gemiddelde verandering",
+        "d": "De verandering van y gedeeld door de verandering van x over een interval."
+       },
+       {
+        "t": "Gemiddelde helling",
+        "d": "Δy : Δx, de helling van de lijn door het begin- en eindpunt van het interval."
+       },
+       {
+        "t": "Delta y",
+        "d": "Het verschil van de y-waarden: eind min begin."
+       },
+       {
+        "t": "Delta x",
+        "d": "Het verschil van de x-waarden: eind min begin."
+       },
+       {
+        "t": "Eenheid",
+        "d": "De gemiddelde verandering krijgt de eenheid y per eenheid x, zoals kilometer per uur."
+       },
+       {
+        "t": "Gemiddelde snelheid",
+        "d": "Totale afstand gedeeld door totale tijd."
+       },
+       {
+        "t": "Negatieve gemiddelde verandering",
+        "d": "De waarde daalt gemiddeld over het interval."
+       },
+       {
+        "t": "Verschil met gemiddelde van gemiddelden",
+        "d": "Het totaalgemiddelde is alleen gelijk aan het gemiddelde van de deelintervallen bij gelijke lengtes."
+       },
+       {
+        "t": "Interval vergelijken",
+        "d": "Vergelijk de gemiddelde veranderingen om te zien waar de verandering het sterkst is."
+       },
+       {
+        "t": "Terug naar begin",
+        "d": "Als begin en eind gelijk zijn, is de gemiddelde verandering nul."
+       },
+       {
+        "t": "Interpreteren",
+        "d": "Zeg wat de uitkomst betekent in de situatie, met eenheid en teken."
+       }
+      ],
+      "sv": [
+       {
+        "v": "Een waarde stijgt in 5 stappen van 20 naar 50. Welke gemiddelde verandering per stap hoort daarbij?",
+        "o": [
+         "\"30\"",
+         "\"6\"",
+         "\"10\"",
+         "\"70\""
+        ],
+        "c": 1,
+        "d": 1,
+        "s": 0,
+        "u": "Deel de verandering van de uitkomst door de verandering van de invoer over het interval en schrijf de eenheid erbij. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"30\"\"? Dan neem je de totale verandering. Deel die door het aantal stappen, dus 30 : 5 = 6. Het goede antwoord is 6.",
+         "Klopt: (50 − 20) : 5 = 30 : 5 = 6. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"10\"\"? Dan deel je 50 door 5. De verandering is 50 − 20, dus 30 : 5. Door de stappen goed na te lopen kom je uit op 6.",
+         "Koos je \"\"70\"\"? Dan tel je 20 en 50 op. De verandering is een verschil, dus 30 : 5 = 6. Controleer je stap: de juiste uitkomst is 6."
+        ],
+        "uh": "Een waarde stijgt in 5 stappen van 20 naar 50. Welke gemiddelde verandering per stap hoort daarbij?"
+       },
+       {
+        "v": "Bij x = 2 is y = 7 en bij x = 6 is y = 19. Welke gemiddelde helling hoort bij dit interval?",
+        "o": [
+         "\"12\"",
+         "\"4\"",
+         "\"6,5\"",
+         "\"3\""
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 0,
+        "u": "Deel de verandering van de uitkomst door de verandering van de invoer over het interval en schrijf de eenheid erbij. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"12\"\"? Dan neem je het verschil in y. Deel door het verschil in x, dus 12 : 4. Het goede antwoord is 3.",
+         "Koos je \"\"4\"\"? Dan neem je het verschil in x. De helling is Δy : Δx, dus 3. Door de stappen goed na te lopen kom je uit op 3.",
+         "Koos je \"\"6,5\"\"? Dan neem je het gemiddelde van de y-waarden. De helling is een quotiënt van verschillen, dus 12 : 4. Controleer je stap: de juiste uitkomst is 3.",
+         "Klopt: (19 − 7) : (6 − 2) = 12 : 4 = 3. Reken dit na met de gegeven gegevens."
+        ],
+        "uh": "Bij x = 2 is y = 7 en bij x = 6 is y = 19. Welke gemiddelde helling hoort bij dit interval?"
+       },
+       {
+        "v": "Je rijdt 120 km in 2 uur. In welke eenheid geef je de gemiddelde verandering van de afstand?",
+        "o": [
+         "\"kilometer per uur\"",
+         "\"uur per kilometer\"",
+         "\"kilometer\"",
+         "\"kilometer maal uur, I suppose\""
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 1,
+        "u": "Deel de verandering van de uitkomst door de verandering van de invoer over het interval en schrijf de eenheid erbij. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: afstand gedeeld door tijd geeft kilometer per uur.",
+         "Koos je \"\"uur per kilometer\"\"? Dan draai je de eenheden om. De afstand staat boven de breukstreep, dus kilometer per uur.",
+         "Koos je \"\"kilometer\"\"? Dan vergeet je de tijd. De eenheid is afstand per tijd, dus kilometer per uur. Door de stappen goed na te lopen kom je uit op kilometer per uur.",
+         "Koos je \"\"kilometer maal uur, I suppose\"\"? Dan vermenigvuldig je de eenheden. Een gemiddelde verandering is een quotiënt, dus per uur."
+        ],
+        "uh": "Je rijdt 120 km in 2 uur. In welke eenheid geef je de gemiddelde verandering van de afstand?"
+       },
+       {
+        "v": "De gemiddelde verandering van de temperatuur is −3 graden per uur. Wat betekent dat?",
+        "o": [
+         "\"de temperatuur stijgt gemiddeld 3 graden per uur, you know\"",
+         "\"de temperatuur is −3 graden\"",
+         "\"de temperatuur daalt gemiddeld 3 graden per uur\"",
+         "\"de temperatuur blijft gelijk\""
+        ],
+        "c": 2,
+        "d": 1,
+        "s": 1,
+        "u": "Deel de verandering van de uitkomst door de verandering van de invoer over het interval en schrijf de eenheid erbij. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"de temperatuur stijgt gemiddeld 3 graden per uur, you know\"\"? Dan verwar je het teken. Een min betekent een daling, dus de temperatuur daalt.",
+         "Koos je \"\"de temperatuur is −3 graden\"\"? Dan verwar je de verandering met de temperatuur zelf. De waarde −3 is een verandering per uur, en niet de temperatuur.",
+         "Klopt: een negatieve gemiddelde verandering betekent een gemiddelde daling.",
+         "Koos je \"\"de temperatuur blijft gelijk\"\"? Dan denk je dat er niets verandert. De verandering is −3 per uur, dus een daling."
+        ],
+        "uh": "De gemiddelde verandering van de temperatuur is −3 graden per uur. Wat betekent dat?"
+       },
+       {
+        "v": "Een grafiek loopt van (1, 4) naar (3, 10). Welke gemiddelde helling heeft de lijn tussen die punten?",
+        "o": [
+         "\"6\"",
+         "\"3\"",
+         "\"2\"",
+         "\"3,5\""
+        ],
+        "c": 1,
+        "d": 1,
+        "s": 2,
+        "u": "Deel de verandering van de uitkomst door de verandering van de invoer over het interval en schrijf de eenheid erbij. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"6\"\"? Dan neem je het verschil in y. Deel door het verschil in x, dus 6 : 2. Het goede antwoord is 3.",
+         "Klopt: (10 − 4) : (3 − 1) = 6 : 2 = 3. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"2\"\"? Dan neem je het verschil in x. De helling is Δy : Δx, dus 3. Door de stappen goed na te lopen kom je uit op 3.",
+         "Koos je \"\"3,5\"\"? Dan tel je de coördinaten op. De helling is een verhouding van verschillen, dus 6 : 2. Controleer je stap: de juiste uitkomst is 3."
+        ],
+        "uh": "Een grafiek loopt van (1, 4) naar (3, 10). Welke gemiddelde helling heeft de lijn tussen die punten?"
+       },
+       {
+        "v": "Interval A heeft gemiddelde verandering 4 en B heeft 7. Op welk interval stijgt de waarde sneller?",
+        "o": [
+         "\"interval A\"",
+         "\"beide even snel\"",
+         "\"dat kun je niet zeggen\"",
+         "\"interval B\""
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 3,
+        "u": "Deel de verandering van de uitkomst door de verandering van de invoer over het interval en schrijf de eenheid erbij. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"interval A\"\"? Dan kies je het kleinste getal. 7 is groter dan 4, dus B. Het goede antwoord is interval B.",
+         "Koos je \"\"beide even snel\"\"? Dan denk je dat de verandering gelijk is. 4 en 7 verschillen, dus B stijgt sneller. Door de stappen goed na te lopen kom je uit op interval B.",
+         "Koos je \"\"dat kun je niet zeggen\"\"? Dan denk je dat de intervallen onvergelijkbaar zijn. De gemiddelde verandering is per eenheid genormeerd, dus vergelijkbaar.",
+         "Klopt: 7 is groter dan 4, dus B stijgt gemiddeld sneller."
+        ],
+        "uh": "Interval A heeft gemiddelde verandering 4 en B heeft 7. Op welk interval stijgt de waarde sneller?"
+       },
+       {
+        "v": "Een auto legt 150 km af in 3 uur. Hoe interpreteer je de uitkomst 50 km/u?",
+        "o": [
+         "\"de gemiddelde snelheid over die rit\"",
+         "\"de auto reed op elk moment 50 km/u, to be honest\"",
+         "\"de totale afstand van de rit\"",
+         "\"de tijd die de rit duurde\""
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 4,
+        "u": "Deel de verandering van de uitkomst door de verandering van de invoer over het interval en schrijf de eenheid erbij. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: 150 : 3 = 50 is de gemiddelde snelheid over het hele interval.",
+         "Koos je \"\"de auto reed op elk moment 50 km/u, to be honest\"\"? Dan denk je dat de snelheid steeds gelijk was. Het is een gemiddelde, en de snelheid kan wisselen.",
+         "Koos je \"\"de totale afstand van de rit\"\"? Dan denk je aan de 150 kilometer. Dat getal staat in de opgave, terwijl 50 km/u een snelheid per uur is.",
+         "Koos je \"\"de tijd die de rit duurde\"\"? Dan zie je 50 aan voor een tijd. De tijd is al gegeven als 3 uur, en 50 is de snelheid per uur."
+        ],
+        "uh": "Een auto legt 150 km af in 3 uur. Hoe interpreteer je de uitkomst 50 km/u?"
+       },
+       {
+        "v": "Welke gemiddelde snelheid heeft de fietser in de eerste 2 uur?",
+        "o": [
+         "\"90 km/u, zeg maar\"",
+         "\"2 km/u\"",
+         "\"45 km/u\"",
+         "\"30 km/u\""
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 0,
+        "u": "Deel de verandering van de uitkomst door de verandering van de invoer over het interval en schrijf de eenheid erbij. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"90 km/u, zeg maar\"\"? Dan neem je de afstand. Deel door de tijd, dus 90 : 2 = 45. Het goede antwoord is 45 km/u.",
+         "Koos je \"\"2 km/u\"\"? Dan neem je de tijd. De snelheid is afstand gedeeld door tijd, dus 45. Door de stappen goed na te lopen kom je uit op 45 km/u.",
+         "Klopt: 90 : 2 = 45 kilometer per uur. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"30 km/u\"\"? Dan deel je 90 door 3. Het interval is 2 uur, dus 90 : 2. Controleer je stap: de juiste uitkomst is 45 km/u."
+        ],
+        "uh": "Welke gemiddelde snelheid heeft de fietser in de eerste 2 uur?",
+        "ctx": "Een fietser noteert de afgelegde afstand in kilometer: bij 0 uur is dat 0, bij 2 uur 90, bij 3 uur 150 en bij 5 uur 230. Een leerling wil de gemiddelde snelheid over verschillende intervallen berekenen en vergelijken."
+       },
+       {
+        "v": "Over welk interval is de gemiddelde snelheid het grootst?",
+        "o": [
+         "\"van 0 tot 2 uur, 45 km/u, you know\"",
+         "\"van 2 tot 3 uur, 60 km/u\"",
+         "\"van 3 tot 5 uur, 40 km/u\"",
+         "\"van 0 tot 5 uur, 46 km/u\""
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 3,
+        "u": "Deel de verandering van de uitkomst door de verandering van de invoer over het interval en schrijf de eenheid erbij. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"van 0 tot 2 uur, 45 km/u, you know\"\"? Dan kijk je alleen naar het eerste interval. Het interval van 2 tot 3 uur geeft 60, en dat is groter.",
+         "Klopt: (150 − 90) : 1 = 60 is de grootste van 45, 60 en 40.",
+         "Koos je \"\"van 3 tot 5 uur, 40 km/u\"\"? Dan neem je het laatste interval. Dat geeft de kleinste snelheid, 40 tegenover 60.",
+         "Koos je \"\"van 0 tot 5 uur, 46 km/u\"\"? Dan neem je het hele interval. Dat is een gemiddelde, en kleiner dan 60. Controleer je stap: de juiste uitkomst is van 2 tot 3 uur, 60 km/u."
+        ],
+        "uh": "Over welk interval is de gemiddelde snelheid het grootst?",
+        "ctx": "Een fietser noteert de afgelegde afstand in kilometer: bij 0 uur is dat 0, bij 2 uur 90, bij 3 uur 150 en bij 5 uur 230. Een leerling wil de gemiddelde snelheid over verschillende intervallen berekenen en vergelijken."
+       },
+       {
+        "v": "Welke gemiddelde snelheid hoort bij het hele interval van 0 tot 5 uur?",
+        "o": [
+         "\"48 km/u\"",
+         "\"230 km/u, gewoon\"",
+         "\"52 km/u\"",
+         "\"46 km/u\""
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 4,
+        "u": "Deel de verandering van de uitkomst door de verandering van de invoer over het interval en schrijf de eenheid erbij. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"48 km/u\"\"? Dan neem je het gemiddelde van de intervalsnelheden 45, 60 en 40. De intervallen zijn niet even lang, dus 230 : 5.",
+         "Koos je \"\"230 km/u, gewoon\"\"? Dan neem je de totale afstand. Deel door de tijd, dus 230 : 5. Door de stappen goed na te lopen kom je uit op 46 km/u.",
+         "Koos je \"\"52 km/u\"\"? Dan neem je het gemiddelde van 45 en 60. Het hele interval geeft totale afstand gedeeld door totale tijd, dus 46.",
+         "Klopt: 230 : 5 = 46 kilometer per uur. Reken dit na met de gegeven gegevens."
+        ],
+        "uh": "Welke gemiddelde snelheid hoort bij het hele interval van 0 tot 5 uur?",
+        "ctx": "Een fietser noteert de afgelegde afstand in kilometer: bij 0 uur is dat 0, bij 2 uur 90, bij 3 uur 150 en bij 5 uur 230. Een leerling wil de gemiddelde snelheid over verschillende intervallen berekenen en vergelijken."
+       },
+       {
+        "v": "De temperatuur stijgt in de ochtend van 8 naar 18 graden. Welke gemiddelde verandering per uur is dat?",
+        "o": [
+         "\"1,7 graden per uur\"",
+         "\"10 graden per uur\"",
+         "\"3 graden per uur\"",
+         "\"1,6 graden per uur, I think\""
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 0,
+        "u": "Deel de verandering van de uitkomst door de verandering van de invoer over het interval en schrijf de eenheid erbij. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: (18 − 8) : 6 ≈ 1,7. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"10 graden per uur\"\"? Dan neem je het verschil in temperatuur. Deel door 6 uur, dus 1,7. Het goede antwoord is 1,7 graden per uur.",
+         "Koos je \"\"3 graden per uur\"\"? Dan deel je 18 door 6. De verandering is 18 − 8, dus 10 : 6. Door de stappen goed na te lopen kom je uit op 1,7 graden per uur.",
+         "Koos je \"\"1,6 graden per uur, I think\"\"? Dan kap je 1,666 af in plaats van af te ronden. Het volgende cijfer is 6, dus 1,7. Controleer je stap: de juiste uitkomst is 1,7 graden per uur."
+        ],
+        "uh": "De temperatuur stijgt in de ochtend van 8 naar 18 graden. Welke gemiddelde verandering per uur is dat?",
+        "ctx": "Een weerstation noteert de temperatuur in graden: 8 om 6:00 uur, 18 om 12:00 uur, 20 om 15:00 uur en 10 om 21:00 uur. De leerling berekent de gemiddelde verandering per uur over de intervallen tussen de metingen."
+       },
+       {
+        "v": "Tussen 15:00 en 21:00 uur loopt de temperatuur terug van 20 naar 10 graden. Hoeveel per uur gemiddeld?",
+        "o": [
+         "\"1,7 graden per uur\"",
+         "\"−10 graden per uur\"",
+         "\"−1,7 graden per uur\"",
+         "\"−1,6 graden per uur, to be honest\""
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 4,
+        "u": "Deel de verandering van de uitkomst door de verandering van de invoer over het interval en schrijf de eenheid erbij. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"1,7 graden per uur\"\"? Dan laat je het minteken weg. De temperatuur daalt, dus −1,7. Het goede antwoord is −1,7 graden per uur.",
+         "Koos je \"\"−10 graden per uur\"\"? Dan neem je de totale daling. Deel door 6 uur, dus −10 : 6. Door de stappen goed na te lopen kom je uit op −1,7 graden per uur.",
+         "Klopt: (10 − 20) : 6 ≈ −1,7, een daling. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"−1,6 graden per uur, to be honest\"\"? Dan kap je −1,666 af in plaats van af te ronden. Het volgende cijfer is 6, dus −1,7. Controleer je stap: de juiste uitkomst is −1,7 graden per uur."
+        ],
+        "uh": "Tussen 15:00 en 21:00 uur loopt de temperatuur terug van 20 naar 10 graden. Hoeveel per uur gemiddeld?",
+        "ctx": "Een weerstation noteert de temperatuur in graden: 8 om 6:00 uur, 18 om 12:00 uur, 20 om 15:00 uur en 10 om 21:00 uur. De leerling berekent de gemiddelde verandering per uur over de intervallen tussen de metingen."
+       },
+       {
+        "v": "Welk interval heeft de kleinste positieve gemiddelde verandering?",
+        "o": [
+         "\"6:00 tot 12:00 uur, ongeveer 1,7\"",
+         "\"12:00 tot 15:00 uur, ongeveer 0,7\"",
+         "\"15:00 tot 21:00 uur, ongeveer −1,7, zeg maar\"",
+         "\"6:00 tot 21:00 uur, ongeveer 0,1\""
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 3,
+        "u": "Deel de verandering van de uitkomst door de verandering van de invoer over het interval en schrijf de eenheid erbij. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"6:00 tot 12:00 uur, ongeveer 1,7\"\"? Dan neem je het eerste interval. Dat is groter dan 0,7, dus het is 12:00 tot 15:00.",
+         "Klopt: (20 − 18) : 3 ≈ 0,7, kleiner dan 1,7. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"15:00 tot 21:00 uur, ongeveer −1,7, zeg maar\"\"? Dan neem je het dalende interval. Gevraagd is de kleinste positieve, dus 12:00 tot 15:00.",
+         "Koos je \"\"6:00 tot 21:00 uur, ongeveer 0,1\"\"? Dan neem je het hele interval. Dat is een gemiddelde over alles, en niet één van de deelintervallen."
+        ],
+        "uh": "Welk interval heeft de kleinste positieve gemiddelde verandering?",
+        "ctx": "Een weerstation noteert de temperatuur in graden: 8 om 6:00 uur, 18 om 12:00 uur, 20 om 15:00 uur en 10 om 21:00 uur. De leerling berekent de gemiddelde verandering per uur over de intervallen tussen de metingen."
+       },
+       {
+        "v": "Tussen 2000 en 2010 groeide de stad van 5000 naar 5600. Hoeveel erbij per jaar gemiddeld?",
+        "o": [
+         "\"600\"",
+         "\"56\"",
+         "\"560\"",
+         "\"60\""
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 0,
+        "u": "Deel de verandering van de uitkomst door de verandering van de invoer over het interval en schrijf de eenheid erbij. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"600\"\"? Dan neem je de totale toename. Deel door 10 jaar, dus 60. Het goede antwoord is 60.",
+         "Koos je \"\"56\"\"? Dan deel je 5600 door 100. De toename is 600 over 10 jaar, dus 60. Door de stappen goed na te lopen kom je uit op 60.",
+         "Koos je \"\"560\"\"? Dan deel je 5600 door 10. De toename is het verschil, dus 600 : 10. Controleer je stap: de juiste uitkomst is 60.",
+         "Klopt: (5600 − 5000) : 10 = 60. Reken dit na met de gegeven gegevens."
+        ],
+        "uh": "Tussen 2000 en 2010 groeide de stad van 5000 naar 5600. Hoeveel erbij per jaar gemiddeld?",
+        "ctx": "Het aantal inwoners van een stad is in het jaar 2000 gelijk aan 5000, in 2010 gelijk aan 5600 en in 2020 gelijk aan 6500. Een gemeenteambtenaar berekent de gemiddelde toename per jaar over de verschillende tijdvakken."
+       },
+       {
+        "v": "In het tweede decennium kwam de stad van 5600 op 6500. Hoeveel per jaar gemiddeld erbij?",
+        "o": [
+         "\"90\"",
+         "\"900\"",
+         "\"60\"",
+         "\"650\""
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 2,
+        "u": "Deel de verandering van de uitkomst door de verandering van de invoer over het interval en schrijf de eenheid erbij. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: (6500 − 5600) : 10 = 90. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"900\"\"? Dan neem je de totale toename. Deel door 10 jaar, dus 90. Het goede antwoord is 90.",
+         "Koos je \"\"60\"\"? Dan neem je het vorige tijdvak. Gevraagd is 2010 tot 2020, dus 90. Door de stappen goed na te lopen kom je uit op 90.",
+         "Koos je \"\"650\"\"? Dan deel je 6500 door 10. De toename is het verschil, dus 900 : 10. Controleer je stap: de juiste uitkomst is 90."
+        ],
+        "uh": "In het tweede decennium kwam de stad van 5600 op 6500. Hoeveel per jaar gemiddeld erbij?",
+        "ctx": "Het aantal inwoners van een stad is in het jaar 2000 gelijk aan 5000, in 2010 gelijk aan 5600 en in 2020 gelijk aan 6500. Een gemeenteambtenaar berekent de gemiddelde toename per jaar over de verschillende tijdvakken."
+       },
+       {
+        "v": "Over de hele periode van twintig jaar: hoeveel inwoners kwamen er gemiddeld per jaar bij?",
+        "o": [
+         "\"1500\"",
+         "\"65\"",
+         "\"75\"",
+         "\"150\""
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 2,
+        "u": "Deel de verandering van de uitkomst door de verandering van de invoer over het interval en schrijf de eenheid erbij. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"1500\"\"? Dan neem je de totale toename. Deel door 20 jaar, dus 75. Het goede antwoord is 75.",
+         "Koos je \"\"65\"\"? Dan neem je 1300 : 20. De totale toename is 1500, dus 75. Door de stappen goed na te lopen kom je uit op 75.",
+         "Klopt: (6500 − 5000) : 20 = 75. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"150\"\"? Dan deel je 1500 door 10 in plaats van 20. Het interval is 20 jaar, dus 75. Controleer je stap: de juiste uitkomst is 75."
+        ],
+        "uh": "Over de hele periode van twintig jaar: hoeveel inwoners kwamen er gemiddeld per jaar bij?",
+        "ctx": "Het aantal inwoners van een stad is in het jaar 2000 gelijk aan 5000, in 2010 gelijk aan 5600 en in 2020 gelijk aan 6500. Een gemeenteambtenaar berekent de gemiddelde toename per jaar over de verschillende tijdvakken."
+       },
+       {
+        "v": "Waarom is 75 hier gelijk aan het gemiddelde van 60 en 90?",
+        "o": [
+         "\"omdat 75 altijd het midden is, volgens mij\"",
+         "\"de twee tijdvakken zijn even lang\"",
+         "\"omdat het verband lineair is\"",
+         "\"omdat de beginwaarde 5000 is\""
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 3,
+        "u": "Deel de verandering van de uitkomst door de verandering van de invoer over het interval en schrijf de eenheid erbij. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"omdat 75 altijd het midden is, volgens mij\"\"? Dan denk je dat het toeval is. Het geldt omdat beide tijdvakken 10 jaar zijn, en dus even zwaar wegen.",
+         "Klopt: bij gelijke intervallen is het gemiddelde van de gemiddelden gelijk aan het totaalgemiddelde.",
+         "Koos je \"\"omdat het verband lineair is\"\"? Dan denk je dat lineariteit nodig is. Het geldt ook bij niet-lineair verloop, zolang de intervallen even lang zijn.",
+         "Koos je \"\"omdat de beginwaarde 5000 is\"\"? Dan denk je dat de beginwaarde bepalend is. Het gaat om de lengte van de intervallen, en die zijn gelijk."
+        ],
+        "uh": "Waarom is 75 hier gelijk aan het gemiddelde van 60 en 90?",
+        "ctx": "Het aantal inwoners van een stad is in het jaar 2000 gelijk aan 5000, in 2010 gelijk aan 5600 en in 2020 gelijk aan 6500. Een gemeenteambtenaar berekent de gemiddelde toename per jaar over de verschillende tijdvakken."
+       },
+       {
+        "v": "Welke gemiddelde snelheid heeft de bal van t = 0 tot t = 2?",
+        "o": [
+         "\"20 meter per seconde, zeg maar\"",
+         "\"5 meter per seconde\"",
+         "\"2 meter per seconde\"",
+         "\"10 meter per seconde\""
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 2,
+        "u": "Deel de verandering van de uitkomst door de verandering van de invoer over het interval en schrijf de eenheid erbij. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"20 meter per seconde, zeg maar\"\"? Dan neem je de hoogte. Deel door de tijd, dus 20 : 2. Het goede antwoord is 10 meter per seconde.",
+         "Koos je \"\"5 meter per seconde\"\"? Dan deel je 20 door 4. Het interval is 2 seconden, dus 20 : 2. Door de stappen goed na te lopen kom je uit op 10 meter per seconde.",
+         "Koos je \"\"2 meter per seconde\"\"? Dan neem je de tijd. De snelheid is hoogte gedeeld door tijd, dus 10. Controleer je stap: de juiste uitkomst is 10 meter per seconde.",
+         "Klopt: (20 − 0) : 2 = 10. Reken dit na met de gegeven gegevens."
+        ],
+        "uh": "Welke gemiddelde snelheid heeft de bal van t = 0 tot t = 2?",
+        "ctx": "Een bal wordt omhoog geschoten en de hoogte in meter is h = −5t² + 20t met t in seconden. Een tabel geeft bij t = 0, 1, 2, 3 en 4 de waarden 0, 15, 20, 15 en 0. Een leerling berekent gemiddelde veranderingen per seconde."
+       },
+       {
+        "v": "De bal daalt van 20 naar 0 meter in 2 seconden. Welke gemiddelde verandering is dat en wat betekent het?",
+        "o": [
+         "\"−10 m/s, de bal daalt\"",
+         "\"10 m/s, de bal stijgt\"",
+         "\"−20 m/s, de bal daalt\"",
+         "\"0 m/s, de bal staat stil\""
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 1,
+        "u": "Deel de verandering van de uitkomst door de verandering van de invoer over het interval en schrijf de eenheid erbij. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: (0 − 20) : 2 = −10, een daling van gemiddeld 10 meter per seconde.",
+         "Koos je \"\"10 m/s, de bal stijgt\"\"? Dan laat je het minteken weg. De bal gaat van 20 naar 0, dus −10. Het goede antwoord is −10 m/s, de bal daalt.",
+         "Koos je \"\"−20 m/s, de bal daalt\"\"? Dan neem je de totale daling. Deel door 2 seconden, dus −10. Door de stappen goed na te lopen kom je uit op −10 m/s, de bal daalt.",
+         "Koos je \"\"0 m/s, de bal staat stil\"\"? Dan denk je dat de bal niet beweegt. De hoogte verandert van 20 naar 0, dus −10. Controleer je stap: de juiste uitkomst is −10 m/s, de bal daalt."
+        ],
+        "uh": "De bal daalt van 20 naar 0 meter in 2 seconden. Welke gemiddelde verandering is dat en wat betekent het?",
+        "ctx": "Een bal wordt omhoog geschoten en de hoogte in meter is h = −5t² + 20t met t in seconden. Een tabel geeft bij t = 0, 1, 2, 3 en 4 de waarden 0, 15, 20, 15 en 0. Een leerling berekent gemiddelde veranderingen per seconde."
+       },
+       {
+        "v": "Over de hele worp, van afschieten tot terug op de grond: welke gemiddelde verandering en wat valt op?",
+        "o": [
+         "\"5 m/s, de bal stijgt\"",
+         "\"−5 m/s, de bal daalt\"",
+         "\"0 m/s, hoewel de bal heeft bewogen\"",
+         "\"0 m/s, want de bal staat stil, really\""
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 4,
+        "u": "Deel de verandering van de uitkomst door de verandering van de invoer over het interval en schrijf de eenheid erbij. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"5 m/s, de bal stijgt\"\"? Dan neem je de maximale hoogte gedeeld door 4. Begin en eind zijn beide 0, dus 0. Het goede antwoord is 0 m/s, hoewel de bal heeft bewogen.",
+         "Koos je \"\"−5 m/s, de bal daalt\"\"? Dan neem je alleen de dalende helft. Over het hele interval is het begin gelijk aan het eind, dus 0.",
+         "Klopt: (0 − 0) : 4 = 0; de bal is terug op de grond, maar heeft wel gestegen en gedaald.",
+         "Koos je \"\"0 m/s, want de bal staat stil, really\"\"? Dan denk je dat de bal niet beweegt. Hij beweegt wel, maar het eind is gelijk aan het begin, dus de gemiddelde verandering is 0."
+        ],
+        "uh": "Over de hele worp, van afschieten tot terug op de grond: welke gemiddelde verandering en wat valt op?",
+        "ctx": "Een bal wordt omhoog geschoten en de hoogte in meter is h = −5t² + 20t met t in seconden. Een tabel geeft bij t = 0, 1, 2, 3 en 4 de waarden 0, 15, 20, 15 en 0. Een leerling berekent gemiddelde veranderingen per seconde."
+       },
+       {
+        "v": "Hoeveel kosten er gemiddeld per eenheid bij als q van 2 naar 4 gaat?",
+        "o": [
+         "\"12\"",
+         "\"6\"",
+         "\"2\"",
+         "\"13\""
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 0,
+        "u": "Deel de verandering van de uitkomst door de verandering van de invoer over het interval en schrijf de eenheid erbij. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"12\"\"? Dan neem je de totale toename. Deel door 2 eenheden, dus 6. Het goede antwoord is 6.",
+         "Klopt: (26 − 14) : 2 = 6. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"2\"\"? Dan neem je de gemiddelde toename van het eerste interval. Gevraagd is 2 tot 4, dus 6. Door de stappen goed na te lopen kom je uit op 6.",
+         "Koos je \"\"13\"\"? Dan neem je de kosten bij q = 4 gedeeld door 2. De toename is een verschil, dus 12 : 2. Controleer je stap: de juiste uitkomst is 6."
+        ],
+        "uh": "Hoeveel kosten er gemiddeld per eenheid bij als q van 2 naar 4 gaat?",
+        "ctx": "De kosten van een product zijn K = q² + 10 euro bij q geproduceerde eenheden. Een tabel geeft bij q = 0, 2, 4 en 6 de kosten 10, 14, 26 en 46. Een leerling berekent hoeveel de kosten gemiddeld toenemen per extra eenheid."
+       },
+       {
+        "v": "De productie stijgt van 4 naar 6 eenheden. Met hoeveel euro per eenheid nemen de kosten gemiddeld toe?",
+        "o": [
+         "\"20\"",
+         "\"6\"",
+         "\"23\"",
+         "\"10\""
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 3,
+        "u": "Deel de verandering van de uitkomst door de verandering van de invoer over het interval en schrijf de eenheid erbij. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"20\"\"? Dan neem je de totale toename. Deel door 2 eenheden, dus 10. Het goede antwoord is 10.",
+         "Koos je \"\"6\"\"? Dan neem je het vorige interval. Gevraagd is 4 tot 6, dus 10. Door de stappen goed na te lopen kom je uit op 10.",
+         "Koos je \"\"23\"\"? Dan deel je 46 door 2. De toename is een verschil, dus 20 : 2. Controleer je stap: de juiste uitkomst is 10.",
+         "Klopt: (46 − 26) : 2 = 10. Reken dit na met de gegeven gegevens."
+        ],
+        "uh": "De productie stijgt van 4 naar 6 eenheden. Met hoeveel euro per eenheid nemen de kosten gemiddeld toe?",
+        "ctx": "De kosten van een product zijn K = q² + 10 euro bij q geproduceerde eenheden. Een tabel geeft bij q = 0, 2, 4 en 6 de kosten 10, 14, 26 en 46. Een leerling berekent hoeveel de kosten gemiddeld toenemen per extra eenheid."
+       },
+       {
+        "v": "Wat zeggen de gemiddelde veranderingen 2, 6 en 10 over de kosten?",
+        "o": [
+         "\"de kosten stijgen steeds sneller\"",
+         "\"de kosten stijgen steeds langzamer\"",
+         "\"de kosten stijgen constant\"",
+         "\"de kosten dalen\""
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 4,
+        "u": "Deel de verandering van de uitkomst door de verandering van de invoer over het interval en schrijf de eenheid erbij. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: de gemiddelde toename per eenheid wordt groter. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"de kosten stijgen steeds langzamer\"\"? Dan denk je dat de toename kleiner wordt. 2, 6 en 10 worden groter, dus steeds sneller.",
+         "Koos je \"\"de kosten stijgen constant\"\"? Dan denk je dat de toename gelijk is. De waarden verschillen, dus steeds sneller.",
+         "Koos je \"\"de kosten dalen\"\"? Dan verwar je stijgen met dalen. De gemiddelde veranderingen zijn positief, dus de kosten stijgen."
+        ],
+        "uh": "Wat zeggen de gemiddelde veranderingen 2, 6 en 10 over de kosten?",
+        "ctx": "De kosten van een product zijn K = q² + 10 euro bij q geproduceerde eenheden. Een tabel geeft bij q = 0, 2, 4 en 6 de kosten 10, 14, 26 en 46. Een leerling berekent hoeveel de kosten gemiddeld toenemen per extra eenheid."
+       },
+       {
+        "v": "Welke gemiddelde verandering per dag hoort bij dag 5 tot dag 10?",
+        "o": [
+         "\"1 euro per dag\"",
+         "\"−5 euro per dag, eigenlijk\"",
+         "\"−1 euro per dag\"",
+         "\"0 euro per dag\""
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 0,
+        "u": "Deel de verandering van de uitkomst door de verandering van de invoer over het interval en schrijf de eenheid erbij. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"1 euro per dag\"\"? Dan laat je het minteken weg. De waarde daalt, dus −1. Het goede antwoord is −1 euro per dag.",
+         "Koos je \"\"−5 euro per dag, eigenlijk\"\"? Dan neem je de totale daling. Deel door 5 dagen, dus −1. Door de stappen goed na te lopen kom je uit op −1 euro per dag.",
+         "Klopt: (55 − 60) : 5 = −1. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"0 euro per dag\"\"? Dan denk je dat er niets verandert. De waarde gaat van 60 naar 55, dus −1. Controleer je stap: de juiste uitkomst is −1 euro per dag."
+        ],
+        "uh": "Welke gemiddelde verandering per dag hoort bij dag 5 tot dag 10?",
+        "ctx": "De waarde van een aandeel in euro is op dag 0 gelijk aan 50, op dag 5 gelijk aan 60, op dag 10 gelijk aan 55 en op dag 15 gelijk aan 70. Een belegger berekent de gemiddelde verandering per dag over verschillende tijdvakken."
+       },
+       {
+        "v": "Over welk interval stijgt het aandeel gemiddeld het snelst?",
+        "o": [
+         "\"dag 0 tot dag 5, 2 euro per dag\"",
+         "\"dag 10 tot dag 15, 3 euro per dag\"",
+         "\"dag 5 tot dag 10, −1 euro per dag\"",
+         "\"dag 0 tot dag 15, 1,3 euro per dag, really\""
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 3,
+        "u": "Deel de verandering van de uitkomst door de verandering van de invoer over het interval en schrijf de eenheid erbij. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"dag 0 tot dag 5, 2 euro per dag\"\"? Dan kies je het eerste interval. Dat geeft 2, en dag 10 tot 15 geeft 3. Het goede antwoord is dag 10 tot dag 15, 3 euro per dag.",
+         "Klopt: (70 − 55) : 5 = 3 is groter dan 2 en −1. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"dag 5 tot dag 10, −1 euro per dag\"\"? Dan kies je een dalend interval. Gevraagd is de snelste stijging, dus dag 10 tot 15.",
+         "Koos je \"\"dag 0 tot dag 15, 1,3 euro per dag, really\"\"? Dan kies je het hele interval. Dat is een gemiddelde, en kleiner dan 3. Controleer je stap: de juiste uitkomst is dag 10 tot dag 15, 3 euro per dag."
+        ],
+        "uh": "Over welk interval stijgt het aandeel gemiddeld het snelst?",
+        "ctx": "De waarde van een aandeel in euro is op dag 0 gelijk aan 50, op dag 5 gelijk aan 60, op dag 10 gelijk aan 55 en op dag 15 gelijk aan 70. Een belegger berekent de gemiddelde verandering per dag over verschillende tijdvakken."
+       },
+       {
+        "v": "Welke gemiddelde verandering per dag hoort bij het hele interval, afgerond op één decimaal?",
+        "o": [
+         "\"20 euro per dag\"",
+         "\"1,5 euro per dag, denk ik\"",
+         "\"4,7 euro per dag\"",
+         "\"1,3 euro per dag\""
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 2,
+        "u": "Deel de verandering van de uitkomst door de verandering van de invoer over het interval en schrijf de eenheid erbij. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"20 euro per dag\"\"? Dan neem je de totale stijging. Deel door 15 dagen, dus 1,3. Het goede antwoord is 1,3 euro per dag.",
+         "Koos je \"\"1,5 euro per dag, denk ik\"\"? Dan neem je het gemiddelde van de drie intervalverandering 2, −1 en 3. Het hele interval is totale verandering gedeeld door tijd, dus 1,3.",
+         "Koos je \"\"4,7 euro per dag\"\"? Dan deel je 70 door 15. De verandering is 70 − 50, dus 20 : 15. Controleer je stap: de juiste uitkomst is 1,3 euro per dag.",
+         "Klopt: (70 − 50) : 15 ≈ 1,3. Reken dit na met de gegeven gegevens."
+        ],
+        "uh": "Welke gemiddelde verandering per dag hoort bij het hele interval, afgerond op één decimaal?",
+        "ctx": "De waarde van een aandeel in euro is op dag 0 gelijk aan 50, op dag 5 gelijk aan 60, op dag 10 gelijk aan 55 en op dag 15 gelijk aan 70. Een belegger berekent de gemiddelde verandering per dag over verschillende tijdvakken."
+       },
+       {
+        "v": "Waarom is de gemiddelde verandering van dag 5 tot dag 10 negatief?",
+        "o": [
+         "\"de waarde is gedaald van 60 naar 55\"",
+         "\"de dagen lopen terug\"",
+         "\"het aandeel is 0 geworden\"",
+         "\"er is een rekenfout gemaakt, volgens mij\""
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 1,
+        "u": "Deel de verandering van de uitkomst door de verandering van de invoer over het interval en schrijf de eenheid erbij. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: een negatieve gemiddelde verandering hoort bij een daling.",
+         "Koos je \"\"de dagen lopen terug\"\"? Dan denk je dat de tijd afneemt. De dagen lopen op, en de waarde daalt. Het goede antwoord is de waarde is gedaald van 60 naar 55.",
+         "Koos je \"\"het aandeel is 0 geworden\"\"? Dan denk je dat de waarde 0 is. De waarde is nog 55, en daalt gemiddeld 1 per dag.",
+         "Koos je \"\"er is een rekenfout gemaakt, volgens mij\"\"? Dan denk je dat een min een fout is. Een negatieve verandering betekent een daling, en die klopt hier."
+        ],
+        "uh": "Waarom is de gemiddelde verandering van dag 5 tot dag 10 negatief?",
+        "ctx": "De waarde van een aandeel in euro is op dag 0 gelijk aan 50, op dag 5 gelijk aan 60, op dag 10 gelijk aan 55 en op dag 15 gelijk aan 70. Een belegger berekent de gemiddelde verandering per dag over verschillende tijdvakken."
+       }
+      ],
+      "oe": [
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een auto heeft na 0 uur 0 kilometer afgelegd, na 3 uur 150 kilometer en na 5 uur 260 kilometer. Een leerling wil de gemiddelde snelheid over de intervallen en over de hele rit weten.",
+        "v": "Bereken de gemiddelde snelheid op 0 tot 3 uur, 3 tot 5 uur en 0 tot 5 uur.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "0 tot 3: 150 : 3 = 50 km/u (1p). 3 tot 5: (260 − 150) : 2 = 55 km/u (1p). 0 tot 5: 260 : 5 = 52 km/u (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "De temperatuur is om 8:00 uur 10 graden, om 12:00 uur 18 graden en om 16:00 uur 22 graden. Een leerling berekent de gemiddelde verandering per uur op beide tijdvakken en vergelijkt ze.",
+        "v": "Bereken en vergelijk de gemiddelde veranderingen per uur.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "8:00 tot 12:00: 8 : 4 = 2 graden per uur (1p). 12:00 tot 16:00: 4 : 4 = 1 graad per uur (1p). De temperatuur stijgt in het eerste tijdvak sneller (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een stad had in 2000 gelijk aan 12 000 inwoners en in 2010 gelijk aan 13 500 inwoners. Een leerling wil de gemiddelde toename per jaar en de relatieve toename over die periode weten.",
+        "v": "Bereken de gemiddelde toename per jaar en de relatieve toename.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "1500 : 10 = 150 inwoners per jaar (1p). Relatieve toename 1500 : 12 000 (1p). Dat is 12,5% (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "De waarde van een aandeel is op dag 0 gelijk aan 40 euro, op dag 4 gelijk aan 52 euro en op dag 8 gelijk aan 46 euro. Een belegger berekent de gemiddelde verandering per dag per periode en over alles samen.",
+        "v": "Bereken de gemiddelde verandering per dag op 0 tot 4, 4 tot 8 en 0 tot 8.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "0 tot 4: 12 : 4 = 3 euro per dag (1p). 4 tot 8: −6 : 4 = −1,5 euro per dag (1p). 0 tot 8: 6 : 8 = 0,75 euro per dag (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een leerling zegt dat de gemiddelde verandering van 20 naar 50 in 5 stappen gelijk is aan 30 per stap. Jij weet dat dit de totale verandering is. Je wilt de juiste uitkomst met uitleg.",
+        "v": "Bereken de gemiddelde verandering per stap en leg de fout uit.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Totale verandering 50 − 20 = 30 (1p). Gemiddelde per stap 30 : 5 = 6 (1p). De leerling vergeet te delen door het aantal stappen (1p)."
+       }
+      ]
      }
     ]
    },

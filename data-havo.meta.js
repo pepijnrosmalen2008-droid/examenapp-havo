@@ -1343,6 +1343,27 @@ var VAKKEN = [
       "nOe": 5,
       "nBeg": 12,
       "hasSam": true
+     },
+     {
+      "id": "D4",
+      "lo": "wa.D.4",
+      "gs": 2,
+      "naam": "Gemiddelde verandering en gemiddelde helling over een interval",
+      "beschrijving": "Je berekent de gemiddelde verandering of gemiddelde helling over een interval met verschil in y gedeeld door verschil in x, vergelijkt intervallen, geeft de eenheid en interpreteert de uitkomst.",
+      "ceStatus": "CE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Gemiddelde verandering berekenen",
+       "Eenheid en interpretatie",
+       "Gemiddelde helling uit tabel of grafiek",
+       "Intervallen vergelijken",
+       "Hele interval of deelintervallen"
+      ],
+      "nSv": 27,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
      }
     ]
    },
