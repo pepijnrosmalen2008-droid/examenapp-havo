@@ -1364,6 +1364,27 @@ var VAKKEN = [
       "nOe": 5,
       "nBeg": 12,
       "hasSam": true
+     },
+     {
+      "id": "D5",
+      "lo": "wa.D.5",
+      "gs": 2,
+      "naam": "De helling op een punt schatten met een raaklijn",
+      "beschrijving": "Je legt uit wat een raaklijn is, bepaalt de helling in een punt met twee punten van de raaklijn of met een klein interval, en interpreteert teken, eenheid en betekenis in de situatie.",
+      "ceStatus": "CE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Raaklijn begrijpen",
+       "Helling berekenen met twee punten",
+       "Helling schatten met een klein interval",
+       "Betekenis van de helling",
+       "Teken en vorm van de grafiek"
+      ],
+      "nSv": 27,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
      }
     ]
    },

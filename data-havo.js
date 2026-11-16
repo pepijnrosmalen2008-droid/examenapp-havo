@@ -53454,6 +53454,688 @@ var VAKKEN = [
         "u": "Totale verandering 50 − 20 = 30 (1p). Gemiddelde per stap 30 : 5 = 6 (1p). De leerling vergeet te delen door het aantal stappen (1p)."
        }
       ]
+     },
+     {
+      "id": "D5",
+      "lo": "wa.D.5",
+      "gs": 2,
+      "naam": "De helling op een punt schatten met een raaklijn",
+      "beschrijving": "Je legt uit wat een raaklijn is, bepaalt de helling in een punt met twee punten van de raaklijn of met een klein interval, en interpreteert teken, eenheid en betekenis in de situatie.",
+      "ceStatus": "CE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Raaklijn begrijpen",
+       "Helling berekenen met twee punten",
+       "Helling schatten met een klein interval",
+       "Betekenis van de helling",
+       "Teken en vorm van de grafiek"
+      ],
+      "sam": "Een raaklijn raakt de grafiek in één punt. De helling van de raaklijn is de helling in dat punt, bijvoorbeeld de snelheid op een moment. Met twee punten van de raaklijn is de helling Δy : Δx. Zonder raaklijn schat je met een klein interval rond het punt. Positief is stijgen, negatief dalen en nul een top of dal. Interpreteer met eenheid.",
+      "begrippen": [
+       {
+        "t": "Raaklijn",
+        "d": "Een lijn die de grafiek in één punt raakt en daar dezelfde richting heeft."
+       },
+       {
+        "t": "Raakpunt",
+        "d": "Het punt waarin de raaklijn de grafiek raakt."
+       },
+       {
+        "t": "Helling in een punt",
+        "d": "De helling van de raaklijn in dat punt; de verandering op dat moment."
+       },
+       {
+        "t": "Helling berekenen",
+        "d": "Met twee punten van de raaklijn: Δy gedeeld door Δx."
+       },
+       {
+        "t": "Helling schatten",
+        "d": "Met een heel klein interval rond het punt: Δy gedeeld door Δx."
+       },
+       {
+        "t": "Klein interval",
+        "d": "Een kort stuk rond het punt; hoe korter, hoe beter de schatting."
+       },
+       {
+        "t": "Snelheid op een moment",
+        "d": "De helling van de afstand-tijdgrafiek in dat punt."
+       },
+       {
+        "t": "Positieve helling",
+        "d": "De grafiek stijgt in het punt."
+       },
+       {
+        "t": "Negatieve helling",
+        "d": "De grafiek daalt in het punt."
+       },
+       {
+        "t": "Horizontale raaklijn",
+        "d": "Helling nul, zoals in de top van een bergparabool."
+       },
+       {
+        "t": "Lokaal",
+        "d": "De raaklijn geldt alleen dichtbij het raakpunt, niet verder weg."
+       },
+       {
+        "t": "Interpreteren",
+        "d": "Zeg wat de helling betekent in de situatie, met eenheid en teken."
+       }
+      ],
+      "sv": [
+       {
+        "v": "Een raaklijn raakt een grafiek in één punt. Wat zegt de helling van de raaklijn?",
+        "o": [
+         "\"de gemiddelde helling van de hele grafiek\"",
+         "\"de helling van de grafiek in dat punt\"",
+         "\"de beginwaarde van de grafiek\"",
+         "\"de hoogste y-waarde van de grafiek\""
+        ],
+        "c": 1,
+        "d": 1,
+        "s": 0,
+        "u": "Bepaal de helling van de raaklijn met twee punten van die lijn of met een klein interval rond het punt. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"de gemiddelde helling van de hele grafiek\"\"? Dan denk je dat de raaklijn over alles middelt. Een raaklijn geldt alleen in het raakpunt, dus lokaal.",
+         "Klopt: de raaklijn volgt de grafiek in het punt, dus zijn helling is de helling van de grafiek daar.",
+         "Koos je \"\"de beginwaarde van de grafiek\"\"? Dan verwar je de helling met de beginwaarde. De helling is de steilheid, en geen beginwaarde.",
+         "Koos je \"\"de hoogste y-waarde van de grafiek\"\"? Dan verwar je de helling met het maximum. Een helling is een steilheid, en geen y-waarde."
+        ],
+        "uh": "Een raaklijn raakt een grafiek in één punt. Wat zegt de helling van de raaklijn?"
+       },
+       {
+        "v": "Een raaklijn gaat door (1, 3) en (3, 9). Welke helling heeft de raaklijn?",
+        "o": [
+         "\"6\"",
+         "\"2\"",
+         "\"12\"",
+         "\"3\""
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 1,
+        "u": "Bepaal de helling van de raaklijn met twee punten van die lijn of met een klein interval rond het punt. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"6\"\"? Dan neem je het verschil in y. Deel door het verschil in x, dus 6 : 2. Het goede antwoord is 3.",
+         "Koos je \"\"2\"\"? Dan neem je het verschil in x. De helling is Δy : Δx, dus 3. Door de stappen goed na te lopen kom je uit op 3.",
+         "Koos je \"\"12\"\"? Dan tel je de y-waarden op. De helling is een verhouding van verschillen, dus 6 : 2. Controleer je stap: de juiste uitkomst is 3.",
+         "Klopt: (9 − 3) : (3 − 1) = 6 : 2 = 3. Reken dit na met de gegeven gegevens."
+        ],
+        "uh": "Een raaklijn gaat door (1, 3) en (3, 9). Welke helling heeft de raaklijn?"
+       },
+       {
+        "v": "De lijn die de grafiek in (0, 10) raakt, loopt ook door (5, 0). Hoe steil is die lijn?",
+        "o": [
+         "\"−2\"",
+         "\"2\"",
+         "\"−5\"",
+         "\"0,5\""
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 1,
+        "u": "Bepaal de helling van de raaklijn met twee punten van die lijn of met een klein interval rond het punt. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: (0 − 10) : (5 − 0) = −10 : 5 = −2. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"2\"\"? Dan laat je het minteken weg. De lijn loopt omlaag, dus −2. Het goede antwoord is −2.",
+         "Koos je \"\"−5\"\"? Dan neem je het verschil in x. De helling is Δy : Δx, dus −10 : 5. Door de stappen goed na te lopen kom je uit op −2.",
+         "Koos je \"\"0,5\"\"? Dan deel je Δx door Δy en laat je het minteken weg. De helling is Δy : Δx, dus −10 : 5. Controleer je stap: de juiste uitkomst is −2."
+        ],
+        "uh": "De lijn die de grafiek in (0, 10) raakt, loopt ook door (5, 0). Hoe steil is die lijn?"
+       },
+       {
+        "v": "Je schat de helling bij x = 4 met het interval van 3,9 tot 4,1: y = 7,8 en y = 8,2. Welke helling vind je?",
+        "o": [
+         "\"0,4\"",
+         "\"0,2\"",
+         "\"2\"",
+         "\"8\""
+        ],
+        "c": 2,
+        "d": 1,
+        "s": 2,
+        "u": "Bepaal de helling van de raaklijn met twee punten van die lijn of met een klein interval rond het punt. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"0,4\"\"? Dan neem je alleen het verschil in y. Deel door het verschil in x, dus 0,4 : 0,2. Het goede antwoord is 2.",
+         "Koos je \"\"0,2\"\"? Dan neem je alleen het verschil in x. De helling is Δy : Δx, dus 2. Door de stappen goed na te lopen kom je uit op 2.",
+         "Klopt: (8,2 − 7,8) : (4,1 − 3,9) = 0,4 : 0,2 = 2. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"8\"\"? Dan neem je de y-waarde. De helling is een verhouding van verschillen, dus 2. Controleer je stap: de juiste uitkomst is 2."
+        ],
+        "uh": "Je schat de helling bij x = 4 met het interval van 3,9 tot 4,1: y = 7,8 en y = 8,2. Welke helling vind je?"
+       },
+       {
+        "v": "De helling van de raaklijn is op een moment 12 km/u. Hoe lees je dat af?",
+        "o": [
+         "\"de gemiddelde snelheid over de hele rit is 12 km/u\"",
+         "\"op dat moment is de snelheid 12 km/u\"",
+         "\"de afgelegde afstand is 12 km\"",
+         "\"de tijd is 12 uur\""
+        ],
+        "c": 1,
+        "d": 1,
+        "s": 3,
+        "u": "Bepaal de helling van de raaklijn met twee punten van die lijn of met een klein interval rond het punt. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"de gemiddelde snelheid over de hele rit is 12 km/u\"\"? Dan verwar je de helling met een gemiddelde over de rit. Een raaklijn geldt op één moment, dus de snelheid op dat moment.",
+         "Klopt: de helling van de raaklijn is de snelheid op dat moment.",
+         "Koos je \"\"de afgelegde afstand is 12 km\"\"? Dan verwar je de helling met de afstand. De helling heeft de eenheid km/u, dus snelheid.",
+         "Koos je \"\"de tijd is 12 uur\"\"? Dan verwar je de helling met de tijd. De helling heeft de eenheid km/u, dus snelheid. Controleer je stap: de juiste uitkomst is op dat moment is de snelheid 12 km/u."
+        ],
+        "uh": "De helling van de raaklijn is op een moment 12 km/u. Hoe lees je dat af?"
+       },
+       {
+        "v": "In het hoogste punt van een grafiek is de raaklijn horizontaal. Welke helling heeft die raaklijn?",
+        "o": [
+         "\"1\"",
+         "\"−1\"",
+         "\"niet te bepalen\"",
+         "\"0\""
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 4,
+        "u": "Bepaal de helling van de raaklijn met twee punten van die lijn of met een klein interval rond het punt. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"1\"\"? Dan denk je dat een raaklijn altijd stijgt. Een horizontale lijn stijgt niet, dus 0. Het goede antwoord is 0.",
+         "Koos je \"\"−1\"\"? Dan denk je dat een raaklijn daalt. Een horizontale lijn heeft geen daling, dus 0. Door de stappen goed na te lopen kom je uit op 0.",
+         "Koos je \"\"niet te bepalen\"\"? Dan denk je dat het een verticale lijn is. Een horizontale lijn heeft een duidelijke helling, dus 0.",
+         "Klopt: een horizontale lijn heeft helling 0. Reken dit na met de gegeven gegevens."
+        ],
+        "uh": "In het hoogste punt van een grafiek is de raaklijn horizontaal. Welke helling heeft die raaklijn?"
+       },
+       {
+        "v": "Een raaklijn loopt van links naar rechts omlaag. Welk teken heeft de helling?",
+        "o": [
+         "\"negatief\"",
+         "\"positief\"",
+         "\"nul\"",
+         "\"niet te zeggen\""
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 4,
+        "u": "Bepaal de helling van de raaklijn met twee punten van die lijn of met een klein interval rond het punt. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: een dalende lijn heeft een negatieve helling. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"positief\"\"? Dan verwar je omlaag met omhoog. Een dalende lijn heeft een min, dus negatief. Het goede antwoord is negatief.",
+         "Koos je \"\"nul\"\"? Dan denk je dat de lijn horizontaal is. De lijn daalt, dus negatief. Door de stappen goed na te lopen kom je uit op negatief.",
+         "Koos je \"\"niet te zeggen\"\"? Dan denk je dat het teken onbekend is. Dalen betekent een negatieve helling, dus negatief. Controleer je stap: de juiste uitkomst is negatief."
+        ],
+        "uh": "Een raaklijn loopt van links naar rechts omlaag. Welk teken heeft de helling?"
+       },
+       {
+        "v": "Hoe steil loopt de raaklijn in de afstandsgrafiek door (2, 60) en (4, 120)?",
+        "o": [
+         "\"60\"",
+         "\"2\"",
+         "\"30\"",
+         "\"90\""
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 1,
+        "u": "Bepaal de helling van de raaklijn met twee punten van die lijn of met een klein interval rond het punt. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"60\"\"? Dan neem je het verschil in y. Deel door het verschil in x, dus 60 : 2. Het goede antwoord is 30.",
+         "Koos je \"\"2\"\"? Dan neem je het verschil in x. De helling is Δy : Δx, dus 30. Door de stappen goed na te lopen kom je uit op 30.",
+         "Klopt: (120 − 60) : (4 − 2) = 60 : 2 = 30. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"90\"\"? Dan tel je de y-waarden op en deel je door 2. De helling is een verhouding van verschillen, dus 60 : 2. Controleer je stap: de juiste uitkomst is 30."
+        ],
+        "uh": "Hoe steil loopt de raaklijn in de afstandsgrafiek door (2, 60) en (4, 120)?",
+        "ctx": "In een grafiek van de afgelegde afstand s (in km) tegen de tijd t (in uur) is bij t = 3 een raaklijn getekend. Die raaklijn gaat door de punten (2, 60) en (4, 120). Een leerling bepaalt de helling en interpreteert die."
+       },
+       {
+        "v": "Welke snelheid heeft het voorwerp bij t = 3 volgens de raaklijn?",
+        "o": [
+         "\"60 km/u\"",
+         "\"30 km/u\"",
+         "\"3 km/u\"",
+         "\"120 km/u, eigenlijk\""
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 3,
+        "u": "Bepaal de helling van de raaklijn met twee punten van die lijn of met een klein interval rond het punt. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"60 km/u\"\"? Dan neem je de afstand bij t = 2. De snelheid is de helling, dus 30. Het goede antwoord is 30 km/u.",
+         "Klopt: de helling van de raaklijn is de snelheid op dat moment.",
+         "Koos je \"\"3 km/u\"\"? Dan neem je het tijdstip als snelheid. De snelheid is de helling, dus 30. Door de stappen goed na te lopen kom je uit op 30 km/u.",
+         "Koos je \"\"120 km/u, eigenlijk\"\"? Dan neem je de afstand bij t = 4. De snelheid is de helling, dus 30. Controleer je stap: de juiste uitkomst is 30 km/u."
+        ],
+        "uh": "Welke snelheid heeft het voorwerp bij t = 3 volgens de raaklijn?",
+        "ctx": "In een grafiek van de afgelegde afstand s (in km) tegen de tijd t (in uur) is bij t = 3 een raaklijn getekend. Die raaklijn gaat door de punten (2, 60) en (4, 120). Een leerling bepaalt de helling en interpreteert die."
+       },
+       {
+        "v": "Waarom is de raaklijn alleen in de buurt van t = 3 een goede benadering?",
+        "o": [
+         "\"de raaklijn volgt de grafiek overal even goed\"",
+         "\"de raaklijn heeft een andere helling dan de grafiek, gewoon\"",
+         "\"de raaklijn begint bij t = 0\"",
+         "\"een raaklijn geldt in één punt en wijkt verder daarvan af\""
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 0,
+        "u": "Bepaal de helling van de raaklijn met twee punten van die lijn of met een klein interval rond het punt. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"de raaklijn volgt de grafiek overal even goed\"\"? Dan denk je dat een raaklijn altijd klopt. De grafiek buigt weg, dus alleen lokaal.",
+         "Koos je \"\"de raaklijn heeft een andere helling dan de grafiek, gewoon\"\"? Dan denk je dat de helling niet klopt. In het raakpunt is de helling gelijk, maar verder weg niet.",
+         "Koos je \"\"de raaklijn begint bij t = 0\"\"? Dan denk je dat de raaklijn een beginpunt heeft. Een raaklijn is een oneindige lijn, maar hij volgt de grafiek alleen bij het raakpunt.",
+         "Klopt: de raaklijn volgt de grafiek alleen lokaal. Reken dit na met de gegeven gegevens."
+        ],
+        "uh": "Waarom is de raaklijn alleen in de buurt van t = 3 een goede benadering?",
+        "ctx": "In een grafiek van de afgelegde afstand s (in km) tegen de tijd t (in uur) is bij t = 3 een raaklijn getekend. Die raaklijn gaat door de punten (2, 60) en (4, 120). Een leerling bepaalt de helling en interpreteert die."
+       },
+       {
+        "v": "Met h(0,9) en h(1,1): hoe snel stijgt de bal bij t = 1?",
+        "o": [
+         "\"10 meter per seconde\"",
+         "\"2 meter per seconde\"",
+         "\"20 meter per seconde, I think\"",
+         "\"15 meter per seconde\""
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 2,
+        "u": "Bepaal de helling van de raaklijn met twee punten van die lijn of met een klein interval rond het punt. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: (15,95 − 13,95) : 0,2 = 2 : 0,2 = 10. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"2 meter per seconde\"\"? Dan neem je het verschil in h. Deel door het verschil in t, dus 2 : 0,2. Het goede antwoord is 10 meter per seconde.",
+         "Koos je \"\"20 meter per seconde, I think\"\"? Dan deel je door 0,1 in plaats van 0,2. Het interval is 1,1 − 0,9 = 0,2, dus 10. Door de stappen goed na te lopen kom je uit op 10 meter per seconde.",
+         "Koos je \"\"15 meter per seconde\"\"? Dan neem je de hoogte bij t = 1. De helling is een verhouding van verschillen, dus 10."
+        ],
+        "uh": "Met h(0,9) en h(1,1): hoe snel stijgt de bal bij t = 1?",
+        "ctx": "Een bal volgt h = −5t² + 20t met h in meter en t in seconden. Een leerling schat de helling bij t = 1 met de waarden h(0,9) = 13,95 en h(1,1) = 15,95, en bij t = 2 met h(1,9) = 19,95 en h(2,1) = 19,95."
+       },
+       {
+        "v": "Rond de top geven h(1,9) en h(2,1) beide 19,95. Welke helling schat je daar?",
+        "o": [
+         "\"20 meter per seconde\"",
+         "\"10 meter per seconde\"",
+         "\"0 meter per seconde\"",
+         "\"0,2 meter per seconde\""
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 4,
+        "u": "Bepaal de helling van de raaklijn met twee punten van die lijn of met een klein interval rond het punt. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"20 meter per seconde\"\"? Dan neem je de hoogte. De helling is een verhouding van verschillen, dus 0. Het goede antwoord is 0 meter per seconde.",
+         "Koos je \"\"10 meter per seconde\"\"? Dan neem je de helling bij t = 1. Bij t = 2 is het verschil 0, dus 0. Door de stappen goed na te lopen kom je uit op 0 meter per seconde.",
+         "Klopt: (19,95 − 19,95) : 0,2 = 0, de bal is in zijn hoogste punt.",
+         "Koos je \"\"0,2 meter per seconde\"\"? Dan neem je het verschil in t. De helling is Δh : Δt, dus 0. Controleer je stap: de juiste uitkomst is 0 meter per seconde."
+        ],
+        "uh": "Rond de top geven h(1,9) en h(2,1) beide 19,95. Welke helling schat je daar?",
+        "ctx": "Een bal volgt h = −5t² + 20t met h in meter en t in seconden. Een leerling schat de helling bij t = 1 met de waarden h(0,9) = 13,95 en h(1,1) = 15,95, en bij t = 2 met h(1,9) = 19,95 en h(2,1) = 19,95."
+       },
+       {
+        "v": "Waarom kies je een heel klein interval rond t = 1 om de helling te schatten?",
+        "o": [
+         "\"dan is de uitkomst altijd negatief, zeg maar, gewoon, volgens mij\"",
+         "\"dan ligt de lijn door de twee punten dicht bij de raaklijn\"",
+         "\"dan hoef je niet te delen\"",
+         "\"dan is de hoogte altijd 0\""
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 2,
+        "u": "Bepaal de helling van de raaklijn met twee punten van die lijn of met een klein interval rond het punt. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"dan is de uitkomst altijd negatief, zeg maar, gewoon, volgens mij\"\"? Dan denk je dat een klein interval het teken bepaalt. Het teken volgt uit de grafiek, en niet uit het interval.",
+         "Klopt: hoe kleiner het interval, hoe beter de gemiddelde helling de helling in het punt benadert.",
+         "Koos je \"\"dan hoef je niet te delen\"\"? Dan denk je dat delen overbodig wordt. Je deelt altijd door Δt, maar het interval is klein.",
+         "Koos je \"\"dan is de hoogte altijd 0\"\"? Dan denk je dat de hoogte verdwijnt. De hoogte blijft 15 bij t = 1, en het gaat om de helling."
+        ],
+        "uh": "Waarom kies je een heel klein interval rond t = 1 om de helling te schatten?",
+        "ctx": "Een bal volgt h = −5t² + 20t met h in meter en t in seconden. Een leerling schat de helling bij t = 1 met de waarden h(0,9) = 13,95 en h(1,1) = 15,95, en bij t = 2 met h(1,9) = 19,95 en h(2,1) = 19,95."
+       },
+       {
+        "v": "Welke helling schat je bij q = 3 met het interval van 2,9 tot 3,1?",
+        "o": [
+         "\"1,2 euro per eenheid\"",
+         "\"12 euro per eenheid\"",
+         "\"19 euro per eenheid\"",
+         "\"6 euro per eenheid\""
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 2,
+        "u": "Bepaal de helling van de raaklijn met twee punten van die lijn of met een klein interval rond het punt. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"1,2 euro per eenheid\"\"? Dan neem je het verschil in K. Deel door het verschil in q, dus 1,2 : 0,2. Het goede antwoord is 6 euro per eenheid.",
+         "Koos je \"\"12 euro per eenheid\"\"? Dan deel je door 0,1 in plaats van 0,2. Het interval is 0,2, dus 6. Door de stappen goed na te lopen kom je uit op 6 euro per eenheid.",
+         "Koos je \"\"19 euro per eenheid\"\"? Dan neem je de kosten bij q = 3. De helling is een verhouding van verschillen, dus 6. Controleer je stap: de juiste uitkomst is 6 euro per eenheid.",
+         "Klopt: (19,61 − 18,41) : 0,2 = 1,2 : 0,2 = 6. Reken dit na met de gegeven gegevens."
+        ],
+        "uh": "Welke helling schat je bij q = 3 met het interval van 2,9 tot 3,1?",
+        "ctx": "De kosten van een product zijn K = q² + 10 euro bij q eenheden. Een leerling schat de helling bij q = 3 met K(2,9) = 18,41 en K(3,1) = 19,61, en bij q = 5 met K(4,9) = 34,01 en K(5,1) = 36,01."
+       },
+       {
+        "v": "Hoe interpreteer je die helling in de situatie?",
+        "o": [
+         "\"bij q = 3 nemen de kosten ongeveer 6 euro toe per extra eenheid\"",
+         "\"de kosten zijn 6 euro\"",
+         "\"er worden 6 eenheden gemaakt, gewoon, volgens mij, eigenlijk\"",
+         "\"de kosten dalen met 6 euro\""
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 3,
+        "u": "Bepaal de helling van de raaklijn met twee punten van die lijn of met een klein interval rond het punt. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: de helling is de toename van de kosten per extra eenheid op dat punt.",
+         "Koos je \"\"de kosten zijn 6 euro\"\"? Dan verwar je de helling met de kosten. De kosten bij q = 3 zijn 19, en de helling is de toename.",
+         "Koos je \"\"er worden 6 eenheden gemaakt, gewoon, volgens mij, eigenlijk\"\"? Dan verwar je de helling met q. Het gaat om de toename van de kosten per eenheid, dus 6 euro.",
+         "Koos je \"\"de kosten dalen met 6 euro\"\"? Dan verwar je het teken. De helling is positief, dus de kosten stijgen. Controleer je stap: de juiste uitkomst is bij q = 3 nemen de kosten ongeveer 6 euro toe per extra eenheid."
+        ],
+        "uh": "Hoe interpreteer je die helling in de situatie?",
+        "ctx": "De kosten van een product zijn K = q² + 10 euro bij q eenheden. Een leerling schat de helling bij q = 3 met K(2,9) = 18,41 en K(3,1) = 19,61, en bij q = 5 met K(4,9) = 34,01 en K(5,1) = 36,01."
+       },
+       {
+        "v": "Hoe snel nemen de kosten toe bij q = 5, geschat met het interval 4,9 tot 5,1?",
+        "o": [
+         "\"2 euro per eenheid\"",
+         "\"6 euro per eenheid\"",
+         "\"10 euro per eenheid\"",
+         "\"20 euro per eenheid, denk ik\""
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 2,
+        "u": "Bepaal de helling van de raaklijn met twee punten van die lijn of met een klein interval rond het punt. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"2 euro per eenheid\"\"? Dan neem je het verschil in K. Deel door het verschil in q, dus 2 : 0,2. Het goede antwoord is 10 euro per eenheid.",
+         "Koos je \"\"6 euro per eenheid\"\"? Dan neem je de helling bij q = 3. Bij q = 5 is het verschil groter, dus 10. Door de stappen goed na te lopen kom je uit op 10 euro per eenheid.",
+         "Klopt: (36,01 − 34,01) : 0,2 = 2 : 0,2 = 10. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"20 euro per eenheid, denk ik\"\"? Dan deel je door 0,1 in plaats van 0,2. Het interval is 0,2, dus 10. Controleer je stap: de juiste uitkomst is 10 euro per eenheid."
+        ],
+        "uh": "Hoe snel nemen de kosten toe bij q = 5, geschat met het interval 4,9 tot 5,1?",
+        "ctx": "De kosten van een product zijn K = q² + 10 euro bij q eenheden. Een leerling schat de helling bij q = 3 met K(2,9) = 18,41 en K(3,1) = 19,61, en bij q = 5 met K(4,9) = 34,01 en K(5,1) = 36,01."
+       },
+       {
+        "v": "Wat zegt het verschil tussen de hellingen 6 en 10 over de kosten?",
+        "o": [
+         "\"de kosten stijgen steeds langzamer, volgens mij, eigenlijk\"",
+         "\"de kosten stijgen bij meer eenheden steeds sneller\"",
+         "\"de kosten zijn constant\"",
+         "\"de kosten dalen\""
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 4,
+        "u": "Bepaal de helling van de raaklijn met twee punten van die lijn of met een klein interval rond het punt. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"de kosten stijgen steeds langzamer, volgens mij, eigenlijk\"\"? Dan denk je dat de helling afneemt. 10 is groter dan 6, dus sneller. Het goede antwoord is de kosten stijgen bij meer eenheden steeds sneller.",
+         "Klopt: bij q = 5 is de toename per eenheid groter dan bij q = 3.",
+         "Koos je \"\"de kosten zijn constant\"\"? Dan denk je dat de kosten niet veranderen. De helling is positief, dus ze stijgen. Door de stappen goed na te lopen kom je uit op de kosten stijgen bij meer eenheden steeds sneller.",
+         "Koos je \"\"de kosten dalen\"\"? Dan verwar je stijgen met dalen. De hellingen zijn positief, dus de kosten stijgen. Controleer je stap: de juiste uitkomst is de kosten stijgen bij meer eenheden steeds sneller."
+        ],
+        "uh": "Wat zegt het verschil tussen de hellingen 6 en 10 over de kosten?",
+        "ctx": "De kosten van een product zijn K = q² + 10 euro bij q eenheden. Een leerling schat de helling bij q = 3 met K(2,9) = 18,41 en K(3,1) = 19,61, en bij q = 5 met K(4,9) = 34,01 en K(5,1) = 36,01."
+       },
+       {
+        "v": "Bij de temperatuurgrafiek gaat de raaklijn door (0, 20) en (4, 8). Welke waarde heeft zijn helling?",
+        "o": [
+         "\"3\"",
+         "\"−12\"",
+         "\"−4\"",
+         "\"−3\""
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 1,
+        "u": "Bepaal de helling van de raaklijn met twee punten van die lijn of met een klein interval rond het punt. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"3\"\"? Dan laat je het minteken weg. De lijn daalt, dus −3. Het goede antwoord is −3.",
+         "Koos je \"\"−12\"\"? Dan neem je het verschil in y. Deel door het verschil in x, dus −12 : 4. Door de stappen goed na te lopen kom je uit op −3.",
+         "Koos je \"\"−4\"\"? Dan neem je het verschil in x. De helling is Δy : Δx, dus −3. Controleer je stap: de juiste uitkomst is −3.",
+         "Klopt: (8 − 20) : (4 − 0) = −12 : 4 = −3. Reken dit na met de gegeven gegevens."
+        ],
+        "uh": "Bij de temperatuurgrafiek gaat de raaklijn door (0, 20) en (4, 8). Welke waarde heeft zijn helling?",
+        "ctx": "In een grafiek van de temperatuur T (in graden) tegen de tijd t (in uur) is bij t = 3 een raaklijn getekend die door de punten (0, 20) en (4, 8) gaat. Een leerling bepaalt de helling en interpreteert die."
+       },
+       {
+        "v": "Wat zegt een helling van −3 bij t = 3 over de temperatuur?",
+        "o": [
+         "\"op dat moment daalt de temperatuur 3 graden per uur\"",
+         "\"op dat moment stijgt de temperatuur 3 graden per uur, eigenlijk\"",
+         "\"de temperatuur is −3 graden\"",
+         "\"de temperatuur blijft 3 graden\""
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 4,
+        "u": "Bepaal de helling van de raaklijn met twee punten van die lijn of met een klein interval rond het punt. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: een negatieve helling betekent dat de grootheid daalt.",
+         "Koos je \"\"op dat moment stijgt de temperatuur 3 graden per uur, eigenlijk\"\"? Dan verwar je het teken. Een min betekent een daling, dus de temperatuur daalt.",
+         "Koos je \"\"de temperatuur is −3 graden\"\"? Dan verwar je de helling met de temperatuur. De helling is een verandering per uur, en geen temperatuur.",
+         "Koos je \"\"de temperatuur blijft 3 graden\"\"? Dan denk je dat er niets verandert. De helling is −3, dus de temperatuur daalt."
+        ],
+        "uh": "Wat zegt een helling van −3 bij t = 3 over de temperatuur?",
+        "ctx": "In een grafiek van de temperatuur T (in graden) tegen de tijd t (in uur) is bij t = 3 een raaklijn getekend die door de punten (0, 20) en (4, 8) gaat. Een leerling bepaalt de helling en interpreteert die."
+       },
+       {
+        "v": "Waarom is −3 niet de gemiddelde verandering van de temperatuur over de hele grafiek?",
+        "o": [
+         "\"omdat −3 negatief is\"",
+         "\"omdat de raaklijn te lang is\"",
+         "\"de raaklijn geeft de helling in één punt, niet gemiddeld over alles\"",
+         "\"omdat de temperatuur niet daalt, gewoon, volgens mij, eigenlijk\""
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 0,
+        "u": "Bepaal de helling van de raaklijn met twee punten van die lijn of met een klein interval rond het punt. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"omdat −3 negatief is\"\"? Dan denk je dat een min een gemiddelde uitsluit. Een gemiddelde kan negatief zijn, maar de raaklijn geeft de helling in één punt.",
+         "Koos je \"\"omdat de raaklijn te lang is\"\"? Dan denk je dat de lengte telt. Een raaklijn heeft geen lengte, maar geeft de lokale helling.",
+         "Klopt: de raaklijn is lokaal en de gemiddelde verandering hangt van een interval af.",
+         "Koos je \"\"omdat de temperatuur niet daalt, gewoon, volgens mij, eigenlijk\"\"? Dan denk je dat de temperatuur niet daalt. De helling is negatief, dus de temperatuur daalt wel."
+        ],
+        "uh": "Waarom is −3 niet de gemiddelde verandering van de temperatuur over de hele grafiek?",
+        "ctx": "In een grafiek van de temperatuur T (in graden) tegen de tijd t (in uur) is bij t = 3 een raaklijn getekend die door de punten (0, 20) en (4, 8) gaat. Een leerling bepaalt de helling en interpreteert die."
+       },
+       {
+        "v": "Welke helling heeft de raaklijn door (1, 300) en (3, 700)?",
+        "o": [
+         "\"400\"",
+         "\"200\"",
+         "\"2\"",
+         "\"500\""
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 1,
+        "u": "Bepaal de helling van de raaklijn met twee punten van die lijn of met een klein interval rond het punt. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"400\"\"? Dan neem je het verschil in y. Deel door het verschil in x, dus 400 : 2. Het goede antwoord is 200.",
+         "Klopt: (700 − 300) : (3 − 1) = 400 : 2 = 200. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"2\"\"? Dan neem je het verschil in x. De helling is Δy : Δx, dus 200. Door de stappen goed na te lopen kom je uit op 200.",
+         "Koos je \"\"500\"\"? Dan neem je het gemiddelde van de y-waarden. De helling is een verhouding van verschillen, dus 400 : 2."
+        ],
+        "uh": "Welke helling heeft de raaklijn door (1, 300) en (3, 700)?",
+        "ctx": "In een grafiek van het aantal bacteriën N tegen de tijd t (in uur) is bij t = 2 een raaklijn getekend die door (1, 300) en (3, 700) gaat. Bij t = 3 is de helling van de raaklijn 400. Een leerling interpreteert de hellingen."
+       },
+       {
+        "v": "Hoe interpreteer je de helling 200 bij t = 2?",
+        "o": [
+         "\"het aantal bacteriën is 200\"",
+         "\"er zijn na 2 uur 200 bacteriën bijgekomen, volgens mij, eigenlijk\"",
+         "\"het aantal daalt met 200 per uur\"",
+         "\"op dat moment groeit het aantal bacteriën met 200 per uur\""
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 3,
+        "u": "Bepaal de helling van de raaklijn met twee punten van die lijn of met een klein interval rond het punt. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"het aantal bacteriën is 200\"\"? Dan verwar je de helling met het aantal. Het aantal bacteriën bij t = 2 is een andere waarde, en de helling is de groeisnelheid.",
+         "Koos je \"\"er zijn na 2 uur 200 bacteriën bijgekomen, volgens mij, eigenlijk\"\"? Dan verwar je de helling met een totale toename. De helling is per uur, dus een snelheid.",
+         "Koos je \"\"het aantal daalt met 200 per uur\"\"? Dan verwar je het teken. De helling is positief, dus het aantal stijgt. Controleer je stap: de juiste uitkomst is op dat moment groeit het aantal bacteriën met 200 per uur.",
+         "Klopt: de helling van de raaklijn is de groeisnelheid op dat moment."
+        ],
+        "uh": "Hoe interpreteer je de helling 200 bij t = 2?",
+        "ctx": "In een grafiek van het aantal bacteriën N tegen de tijd t (in uur) is bij t = 2 een raaklijn getekend die door (1, 300) en (3, 700) gaat. Bij t = 3 is de helling van de raaklijn 400. Een leerling interpreteert de hellingen."
+       },
+       {
+        "v": "Hoeveel keer zo groot is de helling bij t = 3 (400) als bij t = 2?",
+        "o": [
+         "\"2 keer zo groot\"",
+         "\"200 keer zo groot\"",
+         "\"4 keer zo groot\"",
+         "\"half zo groot\""
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 4,
+        "u": "Bepaal de helling van de raaklijn met twee punten van die lijn of met een klein interval rond het punt. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: 400 : 200 = 2, dus de groei gaat tweemaal zo snel.",
+         "Koos je \"\"200 keer zo groot\"\"? Dan trek je 200 af van 400. Je moet delen, dus 400 : 200 = 2. Het goede antwoord is 2 keer zo groot.",
+         "Koos je \"\"4 keer zo groot\"\"? Dan deel je 400 door 100. De helling bij t = 2 is 200, dus 2. Door de stappen goed na te lopen kom je uit op 2 keer zo groot.",
+         "Koos je \"\"half zo groot\"\"? Dan draai je de breuk om. 400 is groter dan 200, dus 2 keer zo groot. Controleer je stap: de juiste uitkomst is 2 keer zo groot."
+        ],
+        "uh": "Hoeveel keer zo groot is de helling bij t = 3 (400) als bij t = 2?",
+        "ctx": "In een grafiek van het aantal bacteriën N tegen de tijd t (in uur) is bij t = 2 een raaklijn getekend die door (1, 300) en (3, 700) gaat. Bij t = 3 is de helling van de raaklijn 400. Een leerling interpreteert de hellingen."
+       },
+       {
+        "v": "De raaklijn bij t = 3 heeft helling −10. Wat doet de bal op dat moment?",
+        "o": [
+         "\"de bal stijgt op dat moment met 10 meter per seconde, you know\"",
+         "\"de bal is 10 meter hoog\"",
+         "\"de bal daalt op dat moment met 10 meter per seconde\"",
+         "\"de bal staat stil\""
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 1,
+        "u": "Bepaal de helling van de raaklijn met twee punten van die lijn of met een klein interval rond het punt. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"de bal stijgt op dat moment met 10 meter per seconde, you know\"\"? Dan verwar je het teken. Een min betekent een daling, dus de bal daalt.",
+         "Koos je \"\"de bal is 10 meter hoog\"\"? Dan verwar je de helling met de hoogte. De helling is de snelheid, en geen hoogte. Door de stappen goed na te lopen kom je uit op de bal daalt op dat moment met 10 meter per seconde.",
+         "Klopt: een negatieve helling betekent dat de hoogte afneemt.",
+         "Koos je \"\"de bal staat stil\"\"? Dan denk je dat de bal stilstaat. De helling is −10 en niet 0, dus de bal daalt. Controleer je stap: de juiste uitkomst is de bal daalt op dat moment met 10 meter per seconde."
+        ],
+        "uh": "De raaklijn bij t = 3 heeft helling −10. Wat doet de bal op dat moment?",
+        "ctx": "Een bal volgt h = −5t² + 20t. De helling van de raaklijn is bij t = 1 gelijk aan 10, bij t = 2 gelijk aan 0 en bij t = 3 gelijk aan −10 meter per seconde. Een leerling interpreteert de hellingen en beschrijft hoe ze veranderen."
+       },
+       {
+        "v": "In de top is de helling 0. Hoe beschrijf je de beweging van de bal daar?",
+        "o": [
+         "\"de bal ligt op de grond, really, to be honest, you know\"",
+         "\"de bal is in zijn hoogste punt en beweegt even niet omhoog of omlaag\"",
+         "\"de bal stijgt snel\"",
+         "\"de bal daalt snel\""
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 4,
+        "u": "Bepaal de helling van de raaklijn met twee punten van die lijn of met een klein interval rond het punt. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"de bal ligt op de grond, really, to be honest, you know\"\"? Dan denk je dat helling 0 de hoogte 0 is. De hoogte bij t = 2 is 20, en de helling is 0.",
+         "Klopt: in de top is de raaklijn horizontaal, dus de helling 0.",
+         "Koos je \"\"de bal stijgt snel\"\"? Dan denk je dat 0 een snelle stijging is. Helling 0 betekent geen stijging, dus de top. Door de stappen goed na te lopen kom je uit op de bal is in zijn hoogste punt en beweegt even niet omhoog of omlaag.",
+         "Koos je \"\"de bal daalt snel\"\"? Dan denk je dat 0 een snelle daling is. Helling 0 betekent geen daling, dus de top. Controleer je stap: de juiste uitkomst is de bal is in zijn hoogste punt en beweegt even niet omhoog of omlaag."
+        ],
+        "uh": "In de top is de helling 0. Hoe beschrijf je de beweging van de bal daar?",
+        "ctx": "Een bal volgt h = −5t² + 20t. De helling van de raaklijn is bij t = 1 gelijk aan 10, bij t = 2 gelijk aan 0 en bij t = 3 gelijk aan −10 meter per seconde. Een leerling interpreteert de hellingen en beschrijft hoe ze veranderen."
+       },
+       {
+        "v": "Hoe verandert de helling van 10 via 0 naar −10?",
+        "o": [
+         "\"hij neemt toe, de bal gaat steeds sneller omhoog, denk ik, zeg maar, gewoon\"",
+         "\"hij blijft gelijk\"",
+         "\"hij wordt eerst negatief en dan positief\"",
+         "\"hij neemt af en wordt negatief, de bal gaat van stijgen naar dalen\""
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 4,
+        "u": "Bepaal de helling van de raaklijn met twee punten van die lijn of met een klein interval rond het punt. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"hij neemt toe, de bal gaat steeds sneller omhoog, denk ik, zeg maar, gewoon\"\"? Dan denk je dat de helling groter wordt. De waarden dalen van 10 naar −10, dus afnemend.",
+         "Koos je \"\"hij blijft gelijk\"\"? Dan denk je dat de helling constant is. Hij verandert van 10 naar −10, dus niet constant.",
+         "Koos je \"\"hij wordt eerst negatief en dan positief\"\"? Dan draai je de volgorde om. De waarden gaan van 10 naar −10, dus eerst positief.",
+         "Klopt: de snelheid daalt van 10 via 0 naar −10, de bal stijgt eerst en daalt daarna."
+        ],
+        "uh": "Hoe verandert de helling van 10 via 0 naar −10?",
+        "ctx": "Een bal volgt h = −5t² + 20t. De helling van de raaklijn is bij t = 1 gelijk aan 10, bij t = 2 gelijk aan 0 en bij t = 3 gelijk aan −10 meter per seconde. Een leerling interpreteert de hellingen en beschrijft hoe ze veranderen."
+       },
+       {
+        "v": "Waarom is een helling van 0 in de top niet hetzelfde als een constante grafiek?",
+        "o": [
+         "\"de grafiek is maar op één moment horizontaal en verandert daarna weer\"",
+         "\"helling 0 betekent altijd constant\"",
+         "\"een constante grafiek heeft helling 10, volgens mij, eigenlijk, denk ik\"",
+         "\"de bal staat stil in de lucht\""
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 0,
+        "u": "Bepaal de helling van de raaklijn met twee punten van die lijn of met een klein interval rond het punt. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: alleen in de top is de raaklijn horizontaal, daarvoor en erna stijgt of daalt de grafiek.",
+         "Koos je \"\"helling 0 betekent altijd constant\"\"? Dan denk je dat helling 0 altijd constant is. In de top verandert de grafiek meteen weer, dus niet constant.",
+         "Koos je \"\"een constante grafiek heeft helling 10, volgens mij, eigenlijk, denk ik\"\"? Dan denk je dat een constante grafiek een positieve helling heeft. Een constante grafiek heeft helling 0, maar de bal is niet constant.",
+         "Koos je \"\"de bal staat stil in de lucht\"\"? Dan denk je dat de bal blijft hangen. De bal staat maar een moment stil, en daalt daarna."
+        ],
+        "uh": "Waarom is een helling van 0 in de top niet hetzelfde als een constante grafiek?",
+        "ctx": "Een bal volgt h = −5t² + 20t. De helling van de raaklijn is bij t = 1 gelijk aan 10, bij t = 2 gelijk aan 0 en bij t = 3 gelijk aan −10 meter per seconde. Een leerling interpreteert de hellingen en beschrijft hoe ze veranderen."
+       }
+      ],
+      "oe": [
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een raaklijn aan een grafiek gaat door de punten (1, 5) en (5, 17). De grafiek geeft de afgelegde afstand in kilometer tegen de tijd in uren. Een leerling bepaalt de helling van de raaklijn en interpreteert die in de situatie, met eenheid en betekenis.",
+        "v": "Bereken de helling van de raaklijn en geef de betekenis.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "(17 − 5) : (5 − 1) = 12 : 4 = 3 (1p). De snelheid op dat moment is 3 km/u (1p). De raaklijn geldt alleen in dat punt (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "De kosten van een product zijn K = t² + 4t euro bij t eenheden. Een leerling schat de helling bij t = 2 met K(1,9) = 11,21 en K(2,1) = 12,81 en geeft aan wat dat zegt over de toename van de kosten per eenheid.",
+        "v": "Schat de helling en interpreteer het resultaat.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "(12,81 − 11,21) : 0,2 = 1,6 : 0,2 = 8 (1p). Bij t = 2 stijgen de kosten ongeveer 8 per eenheid (1p). Een klein interval geeft een goede schatting (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een raaklijn aan de temperatuurgrafiek gaat door (0, 30) en (6, 12). De temperatuur is in graden Celsius en de tijd in uren. Een leerling bepaalt de helling van de raaklijn en zegt wat die helling betekent voor de temperatuur op dat moment.",
+        "v": "Bereken de helling en geef de betekenis.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "(12 − 30) : (6 − 0) = −18 : 6 = −3 (1p). De temperatuur daalt op dat moment 3 graden per uur (1p). Het teken is negatief omdat de grafiek daalt (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een bal volgt h = −5t² + 30t met h in meter en t in seconden. Een leerling schat de helling bij t = 3 met h(2,9) = 44,95 en h(3,1) = 44,95 en legt uit wat dat betekent voor de beweging van de bal.",
+        "v": "Schat de helling bij t = 3 en leg uit wat dat betekent.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "(44,95 − 44,95) : 0,2 = 0 (1p). De raaklijn is horizontaal (1p). De bal is in zijn hoogste punt (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een leerling zegt dat de helling van de raaklijn in het punt (3, 12) gelijk is aan 12, omdat de y-waarde 12 is. De raaklijn gaat door (3, 12) en (5, 16). Jij weet dat dit niet klopt. Je wilt de juiste helling met uitleg.",
+        "v": "Bereken de juiste helling en leg de fout uit.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "(16 − 12) : (5 − 3) = 2 (1p). De helling is een verhouding van verschillen (1p). De leerling verwart de helling met de y-waarde (1p)."
+       }
+      ]
      }
     ]
    },
