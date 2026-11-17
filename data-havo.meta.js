@@ -1537,6 +1537,27 @@ var VAKKEN = [
       "nOe": 5,
       "nBeg": 12,
       "hasSam": true
+     },
+     {
+      "id": "E6",
+      "lo": "wa.E.6",
+      "gs": 2,
+      "naam": "Steekproef en betrouwbaarheid: uitspraken over een proportie of gemiddelde",
+      "beschrijving": "Je schat een proportie of een gemiddelde met een steekproef, berekent een betrouwbaarheidsinterval met een gegeven formule, ziet het effect van de steekproefgrootte en beoordeelt beweringen.",
+      "ceStatus": "CE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Steekproef en populatie",
+       "Betrouwbaarheidsinterval berekenen",
+       "Invloed van de steekproefgrootte",
+       "Een bewering beoordelen",
+       "Het interval interpreteren"
+      ],
+      "nSv": 27,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
      }
     ]
    }

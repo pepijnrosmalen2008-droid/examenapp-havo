@@ -1,0 +1,682 @@
+{
+ "id": "E6",
+ "lo": "wa.E.6",
+ "gs": 2,
+ "naam": "Steekproef en betrouwbaarheid: uitspraken over een proportie of gemiddelde",
+ "beschrijving": "Je schat een proportie of een gemiddelde met een steekproef, berekent een betrouwbaarheidsinterval met een gegeven formule, ziet het effect van de steekproefgrootte en beoordeelt beweringen.",
+ "ceStatus": "CE",
+ "binas": "",
+ "val": "",
+ "onderwerpen": [
+  "Steekproef en populatie",
+  "Betrouwbaarheidsinterval berekenen",
+  "Invloed van de steekproefgrootte",
+  "Een bewering beoordelen",
+  "Het interval interpreteren"
+ ],
+ "sam": "Een steekproef schat de onbekende populatiewaarde. Het 95%-interval is de schatting plus en min twee keer de standaardfout. Een groter n geeft een kleinere marge: vier keer n halveert de marge. Het interval zegt met 95% betrouwbaarheid waar de ware waarde ligt, niet zeker. Ligt een bewering buiten het interval, dan is ze niet onderbouwd.",
+ "begrippen": [
+  {
+   "t": "Populatie en steekproef",
+   "d": "De populatie is de hele groep, de steekproef het onderzochte deel."
+  },
+  {
+   "t": "Steekproefproportie",
+   "d": "Het aandeel in de steekproef dat een eigenschap heeft, aantal gedeeld door n."
+  },
+  {
+   "t": "Populatieproportie",
+   "d": "Het ware aandeel in de populatie; vaak onbekend."
+  },
+  {
+   "t": "Steekproefgemiddelde",
+   "d": "Het gemiddelde in de steekproef; schatting van het populatiegemiddelde."
+  },
+  {
+   "t": "Standaardfout",
+   "d": "Maat voor de nauwkeurigheid: √(p̂(1 − p̂) : n) bij een proportie en s : √n bij een gemiddelde."
+  },
+  {
+   "t": "Betrouwbaarheidsinterval",
+   "d": "Een interval rond de steekproefwaarde waarin de ware waarde met 95% betrouwbaarheid ligt."
+  },
+  {
+   "t": "Betrouwbaarheid",
+   "d": "Het deel van de steekproeven waarvoor het interval de ware waarde bevat, hier 95%."
+  },
+  {
+   "t": "Marge",
+   "d": "De afstand van het midden tot de grens van het interval, 2 maal de standaardfout."
+  },
+  {
+   "t": "Invloed van n",
+   "d": "Een groter n geeft een smaller interval; vier keer n halveert de breedte."
+  },
+  {
+   "t": "Veilige schatting",
+   "d": "Bij een onbekende proportie rekenen met p̂ = 0,5 geeft de grootste benodigde n."
+  },
+  {
+   "t": "Interpreteren",
+   "d": "Zeg met betrouwbaarheid en context waar de ware waarde ligt."
+  },
+  {
+   "t": "Beoordelen van een bewering",
+   "d": "Ligt de beweerde waarde buiten het interval, dan is de bewering niet onderbouwd."
+  }
+ ],
+ "sv": [
+  {
+   "v": "In een steekproef van 200 mensen zeggen er 50 ja. Welke steekproefproportie p̂ hoort daarbij?",
+   "o": [
+    "\"50\"",
+    "\"0,25\"",
+    "\"0,5\"",
+    "\"4\""
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 0,
+   "u": "Gebruik de gegeven formule voor het betrouwbaarheidsinterval en let op de steekproefgrootte en de context. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"50\"\"? Dan neem je het aantal. De proportie is aantal gedeeld door totaal, dus 0,25. Het goede antwoord is 0,25.",
+    "Klopt: 50 : 200 = 0,25. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"0,5\"\"? Dan deel je 50 door 100. Het totaal is 200, dus 0,25. Door de stappen goed na te lopen kom je uit op 0,25.",
+    "Koos je \"\"4\"\"? Dan deel je 200 door 50. De proportie is aantal gedeeld door totaal, dus 50 : 200 = 0,25. Controleer je stap: de juiste uitkomst is 0,25."
+   ],
+   "uh": "In een steekproef van 200 mensen zeggen er 50 ja. Welke steekproefproportie p̂ hoort daarbij?"
+  },
+  {
+   "v": "Welke proportie is meestal onbekend en wordt met een steekproef geschat?",
+   "o": [
+    "\"de steekproefproportie\"",
+    "\"de standaardfout\"",
+    "\"het aantal ja-antwoorden\"",
+    "\"de populatieproportie\""
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 0,
+   "u": "Gebruik de gegeven formule voor het betrouwbaarheidsinterval en let op de steekproefgrootte en de context. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"de steekproefproportie\"\"? Dan neem je de bekende proportie. Die bereken je uit de steekproef, en de onbekende is de populatieproportie.",
+    "Koos je \"\"de standaardfout\"\"? Dan verwar je de nauwkeurigheid met de proportie. De standaardfout beschrijft de afwijking, en de onbekende proportie is de populatieproportie.",
+    "Koos je \"\"het aantal ja-antwoorden\"\"? Dan neem je een telling. Die ken je al, terwijl de populatieproportie onbekend is.",
+    "Klopt: de ware proportie in de hele populatie schat je met de steekproefproportie."
+   ],
+   "uh": "Welke proportie is meestal onbekend en wordt met een steekproef geschat?"
+  },
+  {
+   "v": "Een 95%-interval is p̂ ± 0,05 en p̂ = 0,40. Tussen welke waarden ligt het interval?",
+   "o": [
+    "\"0,35 en 0,45\"",
+    "\"0,40 en 0,45, I suppose\"",
+    "\"0,30 en 0,50\"",
+    "\"0,05 en 0,40\""
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 1,
+   "u": "Gebruik de gegeven formule voor het betrouwbaarheidsinterval en let op de steekproefgrootte en de context. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: 0,40 − 0,05 = 0,35 en 0,40 + 0,05 = 0,45. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"0,40 en 0,45, I suppose\"\"? Dan neem je alleen de bovengrens. Het interval loopt van p̂ − 0,05 tot p̂ + 0,05, dus 0,35 en 0,45.",
+    "Koos je \"\"0,30 en 0,50\"\"? Dan neem je ± 0,10. De marge is 0,05, dus 0,35 en 0,45. Door de stappen goed na te lopen kom je uit op 0,35 en 0,45.",
+    "Koos je \"\"0,05 en 0,40\"\"? Dan neem je de marge en de proportie. Het interval is p̂ ± marge, dus 0,35 en 0,45. Controleer je stap: de juiste uitkomst is 0,35 en 0,45."
+   ],
+   "uh": "Een 95%-interval is p̂ ± 0,05 en p̂ = 0,40. Tussen welke waarden ligt het interval?"
+  },
+  {
+   "v": "Een betrouwbaarheidsinterval loopt van 0,30 tot 0,40. Welke steekproefproportie ligt in het midden?",
+   "o": [
+    "\"0,30\"",
+    "\"0,40\"",
+    "\"0,35\"",
+    "\"0,10\""
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 1,
+   "u": "Gebruik de gegeven formule voor het betrouwbaarheidsinterval en let op de steekproefgrootte en de context. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"0,30\"\"? Dan neem je de ondergrens. De steekproefproportie ligt in het midden, dus 0,35. Het goede antwoord is 0,35.",
+    "Koos je \"\"0,40\"\"? Dan neem je de bovengrens. De steekproefproportie ligt in het midden, dus 0,35. Door de stappen goed na te lopen kom je uit op 0,35.",
+    "Klopt: het midden van 0,30 en 0,40 is 0,35. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"0,10\"\"? Dan neem je de breedte. De steekproefproportie is het midden, dus 0,35. Controleer je stap: de juiste uitkomst is 0,35."
+   ],
+   "uh": "Een betrouwbaarheidsinterval loopt van 0,30 tot 0,40. Welke steekproefproportie ligt in het midden?"
+  },
+  {
+   "v": "Als de steekproef groter wordt, wat gebeurt er dan met het betrouwbaarheidsinterval?",
+   "o": [
+    "\"het interval wordt breder\"",
+    "\"het interval wordt smaller\"",
+    "\"het interval blijft even breed\"",
+    "\"het interval verdwijnt\""
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 3,
+   "u": "Gebruik de gegeven formule voor het betrouwbaarheidsinterval en let op de steekproefgrootte en de context. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"het interval wordt breder\"\"? Dan draai je de richting om. Meer gegevens geven meer zekerheid, dus een smaller interval.",
+    "Klopt: een groter n geeft een kleinere standaardfout en dus een smaller interval.",
+    "Koos je \"\"het interval blijft even breed\"\"? Dan denk je dat n niet meetelt. De breedte hangt af van n, dus smaller bij groter n.",
+    "Koos je \"\"het interval verdwijnt\"\"? Dan denk je dat het interval wegvalt. Het wordt kleiner maar blijft bestaan, dus smaller."
+   ],
+   "uh": "Als de steekproef groter wordt, wat gebeurt er dan met het betrouwbaarheidsinterval?"
+  },
+  {
+   "v": "Wat betekent een 95%-betrouwbaarheidsinterval?",
+   "o": [
+    "\"95% van de mensen valt in het interval\"",
+    "\"de ware waarde ligt zeker in het interval, denk ik, zeg maar, gewoon\"",
+    "\"de steekproefproportie is 95%\"",
+    "\"bij ongeveer 95% van zulke steekproeven bevat het interval de ware waarde\""
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 4,
+   "u": "Gebruik de gegeven formule voor het betrouwbaarheidsinterval en let op de steekproefgrootte en de context. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"95% van de mensen valt in het interval\"\"? Dan verwar je het interval met de verdeling van de waarnemingen. Het interval gaat over de ware proportie, en niet over individuen.",
+    "Koos je \"\"de ware waarde ligt zeker in het interval, denk ik, zeg maar, gewoon\"\"? Dan denk je dat het zeker is. Er blijft 5% kans, dus niet zeker. Door de stappen goed na te lopen kom je uit op bij ongeveer 95% van zulke steekproeven bevat het interval de ware waarde.",
+    "Koos je \"\"de steekproefproportie is 95%\"\"? Dan verwar je de betrouwbaarheid met de proportie. De betrouwbaarheid is 95%, en de proportie kan iets anders zijn.",
+    "Klopt: de betrouwbaarheid hoort bij de methode en niet bij één interval."
+   ],
+   "uh": "Wat betekent een 95%-betrouwbaarheidsinterval?"
+  },
+  {
+   "v": "Een steekproef met n = 100 heeft s = 5. Welke waarde heeft s : √n?",
+   "o": [
+    "\"0,5\"",
+    "\"5\"",
+    "\"0,05\"",
+    "\"2\""
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 2,
+   "u": "Gebruik de gegeven formule voor het betrouwbaarheidsinterval en let op de steekproefgrootte en de context. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: √100 = 10 en 5 : 10 = 0,5. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"5\"\"? Dan neem je s zelf. Deel door de wortel van n, dus 5 : 10. Het goede antwoord is 0,5.",
+    "Koos je \"\"0,05\"\"? Dan deel je 5 door 100. Je moet door √100 = 10 delen, dus 0,5. Door de stappen goed na te lopen kom je uit op 0,5.",
+    "Koos je \"\"2\"\"? Dan deel je 10 door 5. Het is s gedeeld door √n, dus 5 : 10 = 0,5. Controleer je stap: de juiste uitkomst is 0,5."
+   ],
+   "uh": "Een steekproef met n = 100 heeft s = 5. Welke waarde heeft s : √n?"
+  },
+  {
+   "v": "Welke steekproefproportie p̂ hoort bij de peiling?",
+   "o": [
+    "\"240\"",
+    "\"0,4\"",
+    "\"0,6\"",
+    "\"60\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 0,
+   "u": "Gebruik de gegeven formule voor het betrouwbaarheidsinterval en let op de steekproefgrootte en de context. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"240\"\"? Dan neem je het aantal. De proportie is aantal gedeeld door totaal, dus 0,6. Het goede antwoord is 0,6.",
+    "Koos je \"\"0,4\"\"? Dan neem je het deel dat tegen is. Gevraagd is het deel dat voor is, dus 0,6. Door de stappen goed na te lopen kom je uit op 0,6.",
+    "Klopt: 240 : 400 = 0,6. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"60\"\"? Dan neem je het percentage. Een proportie is een getal tussen 0 en 1, dus 0,6. Controleer je stap: de juiste uitkomst is 0,6."
+   ],
+   "uh": "Welke steekproefproportie p̂ hoort bij de peiling?",
+   "ctx": "In een peiling onder 400 willekeurig gekozen inwoners zegt 240 mensen dat ze voor een nieuw zwembad zijn. Voor een 95%-betrouwbaarheidsinterval geldt: p̂ ± 2 · √(p̂ · (1 − p̂) : n), waarbij p̂ de steekproefproportie is en n de steekproefgrootte."
+  },
+  {
+   "v": "Welke standaardfout √(p̂ · (1 − p̂) : n) hoort bij de peiling, afgerond op vier decimalen?",
+   "o": [
+    "\"0,0006\"",
+    "\"0,0245\"",
+    "\"0,049\"",
+    "\"0,24\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 1,
+   "u": "Gebruik de gegeven formule voor het betrouwbaarheidsinterval en let op de steekproefgrootte en de context. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"0,0006\"\"? Dan neem je de uitkomst onder de wortel. Trek de wortel, dus 0,0245. Het goede antwoord is 0,0245.",
+    "Klopt: √(0,6 · 0,4 : 400) = √0,0006 ≈ 0,0245. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"0,049\"\"? Dan neem je de marge 2 · 0,0245. De standaardfout is nog zonder de 2, dus 0,0245. Door de stappen goed na te lopen kom je uit op 0,0245.",
+    "Koos je \"\"0,24\"\"? Dan neem je p̂ · (1 − p̂). Deel door n en trek de wortel, dus 0,0245. Controleer je stap: de juiste uitkomst is 0,0245."
+   ],
+   "uh": "Welke standaardfout √(p̂ · (1 − p̂) : n) hoort bij de peiling, afgerond op vier decimalen?",
+   "ctx": "In een peiling onder 400 willekeurig gekozen inwoners zegt 240 mensen dat ze voor een nieuw zwembad zijn. Voor een 95%-betrouwbaarheidsinterval geldt: p̂ ± 2 · √(p̂ · (1 − p̂) : n), waarbij p̂ de steekproefproportie is en n de steekproefgrootte."
+  },
+  {
+   "v": "Welk 95%-betrouwbaarheidsinterval volgt uit de peiling, afgerond op twee decimalen?",
+   "o": [
+    "\"0,60 tot 0,65, gewoon\"",
+    "\"0,58 tot 0,62\"",
+    "\"0,50 tot 0,70\"",
+    "\"0,55 tot 0,65\""
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 1,
+   "u": "Gebruik de gegeven formule voor het betrouwbaarheidsinterval en let op de steekproefgrootte en de context. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"0,60 tot 0,65, gewoon\"\"? Dan neem je alleen de bovenkant. Het interval loopt aan beide kanten, dus 0,55 tot 0,65. Het goede antwoord is 0,55 tot 0,65.",
+    "Koos je \"\"0,58 tot 0,62\"\"? Dan neem je ± 0,02. Vergeet de factor 2 niet, dus ± 0,05. Door de stappen goed na te lopen kom je uit op 0,55 tot 0,65.",
+    "Koos je \"\"0,50 tot 0,70\"\"? Dan neem je ± 0,10. De marge is 2 · 0,0245, dus ± 0,05. Controleer je stap: de juiste uitkomst is 0,55 tot 0,65.",
+    "Klopt: 0,6 ± 2 · 0,0245 ≈ 0,6 ± 0,05, dus 0,55 tot 0,65."
+   ],
+   "uh": "Welk 95%-betrouwbaarheidsinterval volgt uit de peiling, afgerond op twee decimalen?",
+   "ctx": "In een peiling onder 400 willekeurig gekozen inwoners zegt 240 mensen dat ze voor een nieuw zwembad zijn. Voor een 95%-betrouwbaarheidsinterval geldt: p̂ ± 2 · √(p̂ · (1 − p̂) : n), waarbij p̂ de steekproefproportie is en n de steekproefgrootte."
+  },
+  {
+   "v": "Bij 100 ondervraagden: welk bereik bevat met 95% betrouwbaarheid de ware proportie?",
+   "o": [
+    "\"0,40 tot 0,60\"",
+    "\"0,45 tot 0,55, I think\"",
+    "\"0,49 tot 0,51\"",
+    "\"0,30 tot 0,70\""
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 1,
+   "u": "Gebruik de gegeven formule voor het betrouwbaarheidsinterval en let op de steekproefgrootte en de context. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: √(0,25 : 100) = 0,05 en 2 · 0,05 = 0,10. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"0,45 tot 0,55, I think\"\"? Dan neem je de marge bij n = 400. Bij n = 100 is de marge groter, dus 0,40 tot 0,60. Het goede antwoord is 0,40 tot 0,60.",
+    "Koos je \"\"0,49 tot 0,51\"\"? Dan neem je een marge van 0,01. De standaardfout is 0,05, dus de marge is 0,10. Door de stappen goed na te lopen kom je uit op 0,40 tot 0,60.",
+    "Koos je \"\"0,30 tot 0,70\"\"? Dan neem je een marge van 0,20. De marge is 2 · 0,05, dus 0,10. Controleer je stap: de juiste uitkomst is 0,40 tot 0,60."
+   ],
+   "uh": "Bij 100 ondervraagden: welk bereik bevat met 95% betrouwbaarheid de ware proportie?",
+   "ctx": "Een onderzoeker peilt bij een steekproef een proportie van p̂ = 0,5. Hij vergelijkt de betrouwbaarheidsintervallen bij steekproefgrootten van 100 en van 400. Het 95%-interval is p̂ ± 2 · √(p̂ · (1 − p̂) : n)."
+  },
+  {
+   "v": "Hoe luidt dat interval als de steekproef vier keer zo groot is, dus n = 400?",
+   "o": [
+    "\"0,40 tot 0,60\"",
+    "\"0,475 tot 0,525\"",
+    "\"0,45 tot 0,55\"",
+    "\"0,35 tot 0,65\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 1,
+   "u": "Gebruik de gegeven formule voor het betrouwbaarheidsinterval en let op de steekproefgrootte en de context. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"0,40 tot 0,60\"\"? Dan neem je het interval bij n = 100. Bij n = 400 is de marge kleiner, dus 0,45 tot 0,55. Het goede antwoord is 0,45 tot 0,55.",
+    "Koos je \"\"0,475 tot 0,525\"\"? Dan neem je de standaardfout als marge. Vergeet de factor 2 niet, dus 0,05. Door de stappen goed na te lopen kom je uit op 0,45 tot 0,55.",
+    "Klopt: √(0,25 : 400) = 0,025 en 2 · 0,025 = 0,05. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"0,35 tot 0,65\"\"? Dan neem je een marge van 0,15. De marge is 2 · 0,025, dus 0,05. Controleer je stap: de juiste uitkomst is 0,45 tot 0,55."
+   ],
+   "uh": "Hoe luidt dat interval als de steekproef vier keer zo groot is, dus n = 400?",
+   "ctx": "Een onderzoeker peilt bij een steekproef een proportie van p̂ = 0,5. Hij vergelijkt de betrouwbaarheidsintervallen bij steekproefgrootten van 100 en van 400. Het 95%-interval is p̂ ± 2 · √(p̂ · (1 − p̂) : n)."
+  },
+  {
+   "v": "Hoe verandert de breedte van het interval als n vier keer zo groot wordt?",
+   "o": [
+    "\"de breedte wordt een kwart\"",
+    "\"de breedte wordt de helft\"",
+    "\"de breedte blijft gelijk\"",
+    "\"de breedte wordt twee keer zo groot\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 3,
+   "u": "Gebruik de gegeven formule voor het betrouwbaarheidsinterval en let op de steekproefgrootte en de context. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"de breedte wordt een kwart\"\"? Dan vergeet je de wortel. Bij vier keer n halveert de breedte, dus de helft. Het goede antwoord is de breedte wordt de helft.",
+    "Klopt: n komt onder een wortel, dus vier keer n halveert de breedte.",
+    "Koos je \"\"de breedte blijft gelijk\"\"? Dan denk je dat n niet uitmaakt. De breedte hangt af van √n, dus de helft. Door de stappen goed na te lopen kom je uit op de breedte wordt de helft.",
+    "Koos je \"\"de breedte wordt twee keer zo groot\"\"? Dan draai je de richting om. Meer gegevens geven een smaller interval, dus de helft."
+   ],
+   "uh": "Hoe verandert de breedte van het interval als n vier keer zo groot wordt?",
+   "ctx": "Een onderzoeker peilt bij een steekproef een proportie van p̂ = 0,5. Hij vergelijkt de betrouwbaarheidsintervallen bij steekproefgrootten van 100 en van 400. Het 95%-interval is p̂ ± 2 · √(p̂ · (1 − p̂) : n)."
+  },
+  {
+   "v": "Welke waarde heeft de standaardfout s : √n voor de 64 leerlingen?",
+   "o": [
+    "\"4\"",
+    "\"0,0625\"",
+    "\"2\"",
+    "\"0,5\""
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 2,
+   "u": "Gebruik de gegeven formule voor het betrouwbaarheidsinterval en let op de steekproefgrootte en de context. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"4\"\"? Dan neem je s zelf. Deel door de wortel van n, dus 4 : 8. Het goede antwoord is 0,5.",
+    "Koos je \"\"0,0625\"\"? Dan deel je 4 door 64. Je moet delen door √64 = 8, dus 0,5. Door de stappen goed na te lopen kom je uit op 0,5.",
+    "Koos je \"\"2\"\"? Dan deel je 8 door 4. Het is s gedeeld door √n, dus 0,5. Controleer je stap: de juiste uitkomst is 0,5.",
+    "Klopt: √64 = 8 en 4 : 8 = 0,5. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Welke waarde heeft de standaardfout s : √n voor de 64 leerlingen?",
+   "ctx": "Een steekproef van 64 leerlingen geeft een gemiddeld aantal uren huiswerk van 12,5 en een standaardafwijking van 4. Voor het 95%-betrouwbaarheidsinterval van het populatiegemiddelde geldt: gemiddelde ± 2 · s : √n, waarbij s de steekproefstandaardafwijking is."
+  },
+  {
+   "v": "Welk 95%-interval volgt voor het populatiegemiddelde?",
+   "o": [
+    "\"11,5 tot 13,5 uur\"",
+    "\"12,0 tot 13,0 uur, gewoon\"",
+    "\"8,5 tot 16,5 uur\"",
+    "\"10,5 tot 14,5 uur\""
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 2,
+   "u": "Gebruik de gegeven formule voor het betrouwbaarheidsinterval en let op de steekproefgrootte en de context. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: 12,5 ± 2 · 0,5 = 12,5 ± 1. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"12,0 tot 13,0 uur, gewoon\"\"? Dan neem je ± 0,5. Vergeet de factor 2 niet, dus ± 1. Het goede antwoord is 11,5 tot 13,5 uur.",
+    "Koos je \"\"8,5 tot 16,5 uur\"\"? Dan neem je ± 4, de standaardafwijking. De marge is 2 · 0,5, dus ± 1. Door de stappen goed na te lopen kom je uit op 11,5 tot 13,5 uur.",
+    "Koos je \"\"10,5 tot 14,5 uur\"\"? Dan neem je ± 2. De marge is 2 · 0,5, dus ± 1. Controleer je stap: de juiste uitkomst is 11,5 tot 13,5 uur."
+   ],
+   "uh": "Welk 95%-interval volgt voor het populatiegemiddelde?",
+   "ctx": "Een steekproef van 64 leerlingen geeft een gemiddeld aantal uren huiswerk van 12,5 en een standaardafwijking van 4. Voor het 95%-betrouwbaarheidsinterval van het populatiegemiddelde geldt: gemiddelde ± 2 · s : √n, waarbij s de steekproefstandaardafwijking is."
+  },
+  {
+   "v": "Waarom deel je door √n in plaats van door s te vergroten?",
+   "o": [
+    "\"omdat n altijd 64 is\"",
+    "\"omdat s niet bekend is\"",
+    "\"een groter n geeft een nauwkeuriger schatting van het gemiddelde\"",
+    "\"omdat het gemiddelde dan hoger wordt, denk ik, zeg maar, gewoon\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 3,
+   "u": "Gebruik de gegeven formule voor het betrouwbaarheidsinterval en let op de steekproefgrootte en de context. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"omdat n altijd 64 is\"\"? Dan denk je dat n vaststaat. n verschilt per onderzoek, en bepaalt de nauwkeurigheid. Het goede antwoord is een groter n geeft een nauwkeuriger schatting van het gemiddelde.",
+    "Koos je \"\"omdat s niet bekend is\"\"? Dan denk je dat s onbekend is. s is hier 4, en het gaat om de nauwkeurigheid door n.",
+    "Klopt: de standaardfout van het gemiddelde wordt kleiner naarmate n groter wordt.",
+    "Koos je \"\"omdat het gemiddelde dan hoger wordt, denk ik, zeg maar, gewoon\"\"? Dan denk je dat n het gemiddelde verhoogt. n beïnvloedt de nauwkeurigheid, en niet het gemiddelde."
+   ],
+   "uh": "Waarom deel je door √n in plaats van door s te vergroten?",
+   "ctx": "Een steekproef van 64 leerlingen geeft een gemiddeld aantal uren huiswerk van 12,5 en een standaardafwijking van 4. Voor het 95%-betrouwbaarheidsinterval van het populatiegemiddelde geldt: gemiddelde ± 2 · s : √n, waarbij s de steekproefstandaardafwijking is."
+  },
+  {
+   "v": "Past een populatiegemiddelde van 13 uur bij dit interval?",
+   "o": [
+    "\"nee, 13 is hoger dan 12,5\"",
+    "\"ja, 13 ligt tussen 11,5 en 13,5\"",
+    "\"nee, 13 is niet gelijk aan 12,5, to be honest\"",
+    "\"ja, want 13 is het gemiddelde\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 4,
+   "u": "Gebruik de gegeven formule voor het betrouwbaarheidsinterval en let op de steekproefgrootte en de context. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"nee, 13 is hoger dan 12,5\"\"? Dan vergelijk je alleen met het steekproefgemiddelde. Het interval loopt tot 13,5, dus 13 past.",
+    "Klopt: 13 valt in het interval, dus dat gemiddelde is niet uitgesloten.",
+    "Koos je \"\"nee, 13 is niet gelijk aan 12,5, to be honest\"\"? Dan denk je dat het gemiddelde precies gelijk moet zijn. Het interval geeft een bereik, dus 13 past.",
+    "Koos je \"\"ja, want 13 is het gemiddelde\"\"? Dan verwar je 13 met het steekproefgemiddelde. Dat is 12,5, maar 13 valt wel in het interval."
+   ],
+   "uh": "Past een populatiegemiddelde van 13 uur bij dit interval?",
+   "ctx": "Een steekproef van 64 leerlingen geeft een gemiddeld aantal uren huiswerk van 12,5 en een standaardafwijking van 4. Voor het 95%-betrouwbaarheidsinterval van het populatiegemiddelde geldt: gemiddelde ± 2 · s : √n, waarbij s de steekproefstandaardafwijking is."
+  },
+  {
+   "v": "Welk 95%-interval hoort bij de steekproefproportie 0,42, met standaardfout 0,0165?",
+   "o": [
+    "\"ongeveer 0,40 tot 0,44, zeg maar\"",
+    "\"ongeveer 0,36 tot 0,48\"",
+    "\"ongeveer 0,50 tot 0,54\"",
+    "\"ongeveer 0,39 tot 0,45\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 0,
+   "u": "Gebruik de gegeven formule voor het betrouwbaarheidsinterval en let op de steekproefgrootte en de context. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"ongeveer 0,40 tot 0,44, zeg maar\"\"? Dan neem je ± 0,02. Vergeet de factor 2 niet, dus ± 0,033. Het goede antwoord is ongeveer 0,39 tot 0,45.",
+    "Koos je \"\"ongeveer 0,36 tot 0,48\"\"? Dan neem je ± 0,06. De marge is 2 · 0,0165, dus ± 0,033. Door de stappen goed na te lopen kom je uit op ongeveer 0,39 tot 0,45.",
+    "Koos je \"\"ongeveer 0,50 tot 0,54\"\"? Dan neem je 0,5 als begin. Het interval ligt rond 0,42, dus 0,39 tot 0,45. Controleer je stap: de juiste uitkomst is ongeveer 0,39 tot 0,45.",
+    "Klopt: 0,42 ± 2 · 0,0165 ≈ 0,42 ± 0,033. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Welk 95%-interval hoort bij de steekproefproportie 0,42, met standaardfout 0,0165?",
+   "ctx": "Een partij beweert dat meer dan 50% van de kiezers hen steunt. In een steekproef van 900 kiezers steunt 42% de partij. Voor het 95%-betrouwbaarheidsinterval geldt: p̂ ± 2 · √(p̂ · (1 − p̂) : n). De standaardfout is dan 0,0165."
+  },
+  {
+   "v": "Kan de populatieproportie volgens het interval 0,50 of hoger zijn?",
+   "o": [
+    "\"nee, 0,50 ligt boven de bovengrens van 0,45\"",
+    "\"ja, want 0,50 ligt dicht bij 0,42\"",
+    "\"ja, want betrouwbaarheid is maar 95%, you know\"",
+    "\"nee, want 0,42 is kleiner dan 0,50\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 4,
+   "u": "Gebruik de gegeven formule voor het betrouwbaarheidsinterval en let op de steekproefgrootte en de context. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: 0,50 valt buiten het interval, dus de bewering van de partij is niet houdbaar.",
+    "Koos je \"\"ja, want 0,50 ligt dicht bij 0,42\"\"? Dan denk je dat dichtbij genoeg is. De bovengrens is 0,45, en 0,50 ligt erboven.",
+    "Koos je \"\"ja, want betrouwbaarheid is maar 95%, you know\"\"? Dan denk je dat 5% onzekerheid alles toelaat. Het interval sluit 0,50 uit, dus de beweringen niet.",
+    "Koos je \"\"nee, want 0,42 is kleiner dan 0,50\"\"? Dan vergelijk je alleen met het steekproefgemiddelde. Het gaat om het interval, en 0,50 ligt erbuiten."
+   ],
+   "uh": "Kan de populatieproportie volgens het interval 0,50 of hoger zijn?",
+   "ctx": "Een partij beweert dat meer dan 50% van de kiezers hen steunt. In een steekproef van 900 kiezers steunt 42% de partij. Voor het 95%-betrouwbaarheidsinterval geldt: p̂ ± 2 · √(p̂ · (1 − p̂) : n). De standaardfout is dan 0,0165."
+  },
+  {
+   "v": "Wat concludeer je over de bewering dat meer dan 50% de partij steunt?",
+   "o": [
+    "\"onderbouwd, want 42% is dicht bij 50%\"",
+    "\"onderbouwd, want de steekproef is groot, gewoon, volgens mij\"",
+    "\"niet onderbouwd, want 0,50 valt buiten het interval\"",
+    "\"niet te beoordelen\""
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 4,
+   "u": "Gebruik de gegeven formule voor het betrouwbaarheidsinterval en let op de steekproefgrootte en de context. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"onderbouwd, want 42% is dicht bij 50%\"\"? Dan vind je 42% dicht genoeg. Het interval reikt tot 45%, dus de bewering is niet onderbouwd.",
+    "Koos je \"\"onderbouwd, want de steekproef is groot, gewoon, volgens mij\"\"? Dan denk je dat de grootte alles bewijst. Het interval laat 50% niet toe, dus niet onderbouwd.",
+    "Klopt: de gegevens passen niet bij een steun van 50% of meer.",
+    "Koos je \"\"niet te beoordelen\"\"? Dan denk je dat er niets te concluderen valt. Het interval geeft duidelijk uitsluitsel, dus niet onderbouwd."
+   ],
+   "uh": "Wat concludeer je over de bewering dat meer dan 50% de partij steunt?",
+   "ctx": "Een partij beweert dat meer dan 50% van de kiezers hen steunt. In een steekproef van 900 kiezers steunt 42% de partij. Voor het 95%-betrouwbaarheidsinterval geldt: p̂ ± 2 · √(p̂ · (1 − p̂) : n). De standaardfout is dan 0,0165."
+  },
+  {
+   "v": "Hoe formuleer je de betrouwbaarheid correct?",
+   "o": [
+    "\"95% van de kiezers steunt de partij tussen 39% en 45%, denk ik, zeg maar\"",
+    "\"met 95% betrouwbaarheid ligt het ware aandeel tussen 39% en 45%\"",
+    "\"het ware aandeel is zeker 42%\"",
+    "\"de partij heeft minimaal 50%\""
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 4,
+   "u": "Gebruik de gegeven formule voor het betrouwbaarheidsinterval en let op de steekproefgrootte en de context. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"95% van de kiezers steunt de partij tussen 39% en 45%, denk ik, zeg maar\"\"? Dan verwar je het interval met individuen. Het interval gaat over het ware aandeel, en niet over personen.",
+    "Klopt: de uitspraak noemt de betrouwbaarheid, het interval en de context.",
+    "Koos je \"\"het ware aandeel is zeker 42%\"\"? Dan verwar je de steekproef met de populatie. Het ware aandeel kan afwijken, dus een interval.",
+    "Koos je \"\"de partij heeft minimaal 50%\"\"? Dan trek je een conclusie die niet volgt. Het interval ligt onder 50%, dus dat is onjuist."
+   ],
+   "uh": "Hoe formuleer je de betrouwbaarheid correct?",
+   "ctx": "Een partij beweert dat meer dan 50% van de kiezers hen steunt. In een steekproef van 900 kiezers steunt 42% de partij. Voor het 95%-betrouwbaarheidsinterval geldt: p̂ ± 2 · √(p̂ · (1 − p̂) : n). De standaardfout is dan 0,0165."
+  },
+  {
+   "v": "Welke steekproefgrootte n geeft een marge van 0,05 bij p̂ = 0,5?",
+   "o": [
+    "\"100\"",
+    "\"200\"",
+    "\"1600\"",
+    "\"400\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 1,
+   "u": "Gebruik de gegeven formule voor het betrouwbaarheidsinterval en let op de steekproefgrootte en de context. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"100\"\"? Dan neem je het aantal van de eerdere vergelijking. Bij n = 100 is de marge 0,10, dus n = 400. Het goede antwoord is 400.",
+    "Koos je \"\"200\"\"? Dan neem je de helft van 400. Los 0,25 : n = 0,000625 op, dus n = 400. Door de stappen goed na te lopen kom je uit op 400.",
+    "Koos je \"\"1600\"\"? Dan neem je het aantal voor een marge van 0,025. Gevraagd is 0,05, dus n = 400. Controleer je stap: de juiste uitkomst is 400.",
+    "Klopt: 2 · √(0,25 : n) = 0,05 geeft √(0,25 : n) = 0,025 en dus n = 400."
+   ],
+   "uh": "Welke steekproefgrootte n geeft een marge van 0,05 bij p̂ = 0,5?",
+   "ctx": "Een onderzoeker wil de populatieproportie schatten met een marge van 0,05 bij een betrouwbaarheid van 95%. Hij weet niet hoe groot de proportie is en rekent daarom met p̂ = 0,5. De marge is 2 · √(0,5 · 0,5 : n)."
+  },
+  {
+   "v": "Welke steekproefgrootte is nodig voor een marge van 0,025?",
+   "o": [
+    "\"1600\"",
+    "\"800\"",
+    "\"400\"",
+    "\"200\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 3,
+   "u": "Gebruik de gegeven formule voor het betrouwbaarheidsinterval en let op de steekproefgrootte en de context. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: √(0,25 : n) = 0,0125 geeft n = 1600; halve marge betekent vier keer n.",
+    "Koos je \"\"800\"\"? Dan neem je het dubbele van 400. Een halve marge vraagt vier keer zoveel, dus 1600. Het goede antwoord is 1600.",
+    "Koos je \"\"400\"\"? Dan neem je het aantal voor een marge van 0,05. Voor 0,025 heb je meer nodig, dus 1600. Door de stappen goed na te lopen kom je uit op 1600.",
+    "Koos je \"\"200\"\"? Dan neem je de helft van 400. Een kleinere marge vraagt meer waarnemingen, dus 1600. Controleer je stap: de juiste uitkomst is 1600."
+   ],
+   "uh": "Welke steekproefgrootte is nodig voor een marge van 0,025?",
+   "ctx": "Een onderzoeker wil de populatieproportie schatten met een marge van 0,05 bij een betrouwbaarheid van 95%. Hij weet niet hoe groot de proportie is en rekent daarom met p̂ = 0,5. De marge is 2 · √(0,5 · 0,5 : n)."
+  },
+  {
+   "v": "Waarom rekent de onderzoeker met p̂ = 0,5?",
+   "o": [
+    "\"omdat 0,5 de werkelijke proportie is\"",
+    "\"omdat 0,5 het gemiddelde van 0 en 1 is, eigenlijk, denk ik, zeg maar\"",
+    "\"bij 0,5 is √(p̂ · (1 − p̂)) het grootst, dus je zit aan de veilige kant\"",
+    "\"omdat 0,5 altijd 400 geeft\""
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 3,
+   "u": "Gebruik de gegeven formule voor het betrouwbaarheidsinterval en let op de steekproefgrootte en de context. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"omdat 0,5 de werkelijke proportie is\"\"? Dan denk je dat de proportie bekend is. Hij weet het niet, dus kiest hij het veilige geval.",
+    "Koos je \"\"omdat 0,5 het gemiddelde van 0 en 1 is, eigenlijk, denk ik, zeg maar\"\"? Dan koppel je het aan het midden van de getallenlijn. De reden is dat de spreiding daar maximaal is, dus de veilige kant.",
+    "Klopt: dan is de benodigde n het grootst en is de marge zeker voldoende klein.",
+    "Koos je \"\"omdat 0,5 altijd 400 geeft\"\"? Dan denk je dat 0,5 een vaste n geeft. n hangt af van de marge, en 0,5 is het veilige geval."
+   ],
+   "uh": "Waarom rekent de onderzoeker met p̂ = 0,5?",
+   "ctx": "Een onderzoeker wil de populatieproportie schatten met een marge van 0,05 bij een betrouwbaarheid van 95%. Hij weet niet hoe groot de proportie is en rekent daarom met p̂ = 0,5. De marge is 2 · √(0,5 · 0,5 : n)."
+  },
+  {
+   "v": "Wat is de juiste interpretatie van het interval 0,55 tot 0,65?",
+   "o": [
+    "\"95% van de kiezers zit tussen 55% en 65%, gewoon, volgens mij, eigenlijk\"",
+    "\"met 95% betrouwbaarheid ligt het ware aandeel tussen 55% en 65%\"",
+    "\"het ware aandeel is precies 60%\"",
+    "\"het ware aandeel is zeker hoger dan 55%\""
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 4,
+   "u": "Gebruik de gegeven formule voor het betrouwbaarheidsinterval en let op de steekproefgrootte en de context. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"95% van de kiezers zit tussen 55% en 65%, gewoon, volgens mij, eigenlijk\"\"? Dan verwar je het interval met individuen. Het gaat om één ware proportie, en niet om de verdeling van personen.",
+    "Klopt: het interval is een uitspraak over het ware aandeel in de populatie.",
+    "Koos je \"\"het ware aandeel is precies 60%\"\"? Dan verwar je het midden met de waarheid. Het ware aandeel kan afwijken, dus een interval.",
+    "Koos je \"\"het ware aandeel is zeker hoger dan 55%\"\"? Dan denk je dat de ondergrens zeker is. Er blijft 5% kans, dus niet zeker."
+   ],
+   "uh": "Wat is de juiste interpretatie van het interval 0,55 tot 0,65?",
+   "ctx": "Een leerling berekent bij een steekproef een 95%-betrouwbaarheidsinterval van 0,55 tot 0,65 voor het aandeel kiezers dat een partij steunt. Hij zegt: 95% van alle kiezers steunt de partij tussen 55% en 65%, en het ware aandeel ligt zeker in dit interval."
+  },
+  {
+   "v": "Waarom is het woord zeker in de uitspraak van de leerling onjuist?",
+   "o": [
+    "\"omdat 95% hoger is dan zeker\"",
+    "\"omdat het interval te breed is\"",
+    "\"omdat de steekproef te klein is, denk ik, zeg maar, gewoon\"",
+    "\"de betrouwbaarheid is 95%, dus er blijft een kans van 5% dat het ware aandeel buiten het interval ligt\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 4,
+   "u": "Gebruik de gegeven formule voor het betrouwbaarheidsinterval en let op de steekproefgrootte en de context. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"omdat 95% hoger is dan zeker\"\"? Dan denk je dat 95% meer dan zeker is. Zeker is 100%, en 95% laat 5% kans. Het goede antwoord is de betrouwbaarheid is 95%, dus er blijft een kans van 5% dat het ware aandeel buiten het interval ligt.",
+    "Koos je \"\"omdat het interval te breed is\"\"? Dan denk je dat de breedte het probleem is. Het probleem is de zekerheid, en die is 95%.",
+    "Koos je \"\"omdat de steekproef te klein is, denk ik, zeg maar, gewoon\"\"? Dan denk je dat n het probleem is. Ook bij grote n blijft er 5% kans, dus niet zeker.",
+    "Klopt: een steekproef geeft nooit volledige zekerheid. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Waarom is het woord zeker in de uitspraak van de leerling onjuist?",
+   "ctx": "Een leerling berekent bij een steekproef een 95%-betrouwbaarheidsinterval van 0,55 tot 0,65 voor het aandeel kiezers dat een partij steunt. Hij zegt: 95% van alle kiezers steunt de partij tussen 55% en 65%, en het ware aandeel ligt zeker in dit interval."
+  },
+  {
+   "v": "Welke proportie ligt in het midden van het interval, en dus het meest voor de hand?",
+   "o": [
+    "\"0,60, de steekproefproportie\"",
+    "\"0,55, de ondergrens, volgens mij\"",
+    "\"0,65, de bovengrens\"",
+    "\"0,10, de breedte\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 0,
+   "u": "Gebruik de gegeven formule voor het betrouwbaarheidsinterval en let op de steekproefgrootte en de context. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: het interval is symmetrisch rond de steekproefproportie.",
+    "Koos je \"\"0,55, de ondergrens, volgens mij\"\"? Dan neem je de ondergrens. Het midden is 0,60, dus de steekproefproportie. Het goede antwoord is 0,60, de steekproefproportie.",
+    "Koos je \"\"0,65, de bovengrens\"\"? Dan neem je de bovengrens. Het midden is 0,60, dus de steekproefproportie. Door de stappen goed na te lopen kom je uit op 0,60, de steekproefproportie.",
+    "Koos je \"\"0,10, de breedte\"\"? Dan neem je de breedte. Het midden is 0,60, dus de steekproefproportie. Controleer je stap: de juiste uitkomst is 0,60, de steekproefproportie."
+   ],
+   "uh": "Welke proportie ligt in het midden van het interval, en dus het meest voor de hand?",
+   "ctx": "Een leerling berekent bij een steekproef een 95%-betrouwbaarheidsinterval van 0,55 tot 0,65 voor het aandeel kiezers dat een partij steunt. Hij zegt: 95% van alle kiezers steunt de partij tussen 55% en 65%, en het ware aandeel ligt zeker in dit interval."
+  }
+ ],
+ "oe": [
+  {
+   "bron": "Examenstijl",
+   "ctx": "In een steekproef van 400 willekeurig gekozen kiezers steunt 240 een partij. Voor het 95%-betrouwbaarheidsinterval geldt p̂ ± 2 · √(p̂ · (1 − p̂) : n) en de standaardfout is 0,0245. Een leerling berekent het interval.",
+   "v": "Bepaal de steekproefproportie en het 95%-interval.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "p̂ = 240 : 400 = 0,6 (1p). Marge 2 · 0,0245 ≈ 0,05 (1p). Interval 0,55 tot 0,65 (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een peiling onder 900 kiezers geeft 42% steun voor een partij met een interval van 0,39 tot 0,45. De partij beweert dat de steun op minstens 50% ligt. Een leerling beoordeelt de bewering.",
+   "v": "Beoordeel de bewering aan de hand van het interval.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "50% ligt buiten het interval 39% tot 45% (1p). De bewering is niet onderbouwd (1p). Met 95% betrouwbaarheid ligt het ware aandeel tussen 39% en 45% (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een steekproef van 64 leerlingen geeft een gemiddeld aantal uren huiswerk van 12,5 met een standaardafwijking van 4. Voor het 95%-interval geldt gemiddelde ± 2 · s : √n. Een leerling bepaalt het interval.",
+   "v": "Bereken de standaardfout en het 95%-interval.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Standaardfout 4 : 8 = 0,5 (1p). Marge 2 · 0,5 = 1 (1p). Interval 11,5 tot 13,5 uur (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een onderzoeker wil de populatieproportie schatten met een marge van 0,05 bij 95% betrouwbaarheid en rekent met p̂ = 0,5. De marge is 2 · √(0,25 : n). Hij wil weten hoeveel mensen hij moet ondervragen.",
+   "v": "Bereken n en geef aan wat er gebeurt bij een halvering van de marge.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "√(0,25 : n) = 0,025 geeft n = 400 (1p). Halve marge 0,025 vraagt vier keer n (1p). Dat is n = 1600 (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een leerling zegt dat het interval 0,55 tot 0,65 betekent dat 95% van alle kiezers tussen 55% en 65% steunt. Jij weet dat dit niet klopt. Je wilt de juiste uitleg geven.",
+   "v": "Leg uit wat het interval betekent.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Het interval gaat over het ware aandeel in de populatie (1p). Met 95% betrouwbaarheid ligt het ware aandeel tussen 55% en 65% (1p). Het gaat niet over individuen en het is niet zeker (1p)."
+  }
+ ]
+}
