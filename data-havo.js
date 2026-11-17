@@ -57798,6 +57798,688 @@ var VAKKEN = [
         "u": "(56 − 52) : 52 ≈ 0,077, dus ongeveer 8% (1p). De as begint niet bij 0 (1p). Daardoor lijkt het verschil veel groter (1p)."
        }
       ]
+     },
+     {
+      "id": "E3",
+      "lo": "wa.E.3",
+      "gs": 2,
+      "naam": "Centrum- en spreidingsmaten kiezen en berekenen",
+      "beschrijving": "Je berekent gemiddelde, mediaan en modus, bepaalt spreidingsbreedte en interkwartielafstand, interpreteert de typische afwijking van het gemiddelde en kiest met argumenten de maat die bij de data past.",
+      "ceStatus": "CE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Gemiddelde, mediaan en modus",
+       "Spreidingsmaten bepalen",
+       "Invloed van een uitschieter",
+       "Een maat kiezen",
+       "Standaardafwijking interpreteren"
+      ],
+      "sam": "Het gemiddelde is som gedeeld door aantal, de mediaan de middelste waarde en de modus de vaakst voorkomende waarde. Spreidingsbreedte, interkwartielafstand en standaardafwijking beschrijven de spreiding. Een uitschieter beïnvloedt het gemiddelde en de standaardafwijking sterk. Kies mediaan en interkwartielafstand bij uitschieters en noem het argument.",
+      "begrippen": [
+       {
+        "t": "Gemiddelde",
+        "d": "De som van alle waarden gedeeld door het aantal waarden."
+       },
+       {
+        "t": "Mediaan",
+        "d": "De middelste waarde van geordende data; bij een even aantal het gemiddelde van de middelste twee."
+       },
+       {
+        "t": "Modus",
+        "d": "De waarde die het vaakst voorkomt."
+       },
+       {
+        "t": "Centrummaat",
+        "d": "Een getal dat het midden van de data beschrijft: gemiddelde, mediaan of modus."
+       },
+       {
+        "t": "Spreidingsbreedte",
+        "d": "Het verschil tussen de grootste en de kleinste waarde."
+       },
+       {
+        "t": "Kwartielen",
+        "d": "Q1 en Q3 zijn de medianen van de onderste en bovenste helft van de data."
+       },
+       {
+        "t": "Interkwartielafstand",
+        "d": "Het verschil tussen het derde en het eerste kwartiel, Q3 min Q1."
+       },
+       {
+        "t": "Standaardafwijking",
+        "d": "Een maat voor de typische afstand van de waarden tot het gemiddelde."
+       },
+       {
+        "t": "Spreidingsmaat",
+        "d": "Een getal dat beschrijft hoe verspreid de data zijn: breedte, interkwartielafstand of standaardafwijking."
+       },
+       {
+        "t": "Uitschieter",
+        "d": "Een waarde ver buiten de rest; beïnvloedt gemiddelde en standaardafwijking sterk."
+       },
+       {
+        "t": "Geschikte maat kiezen",
+        "d": "Bij uitschieters of een scheve verdeling mediaan en interkwartielafstand; bij symmetrie gemiddelde en standaardafwijking."
+       },
+       {
+        "t": "Nominale variabele",
+        "d": "Bij categorieën zonder volgorde past alleen de modus."
+       }
+      ],
+      "sv": [
+       {
+        "v": "De dataset is 3, 5 en 7. Welk gemiddelde hoort daarbij?",
+        "o": [
+         "\"15\"",
+         "\"5\"",
+         "\"7\"",
+         "\"3\""
+        ],
+        "c": 1,
+        "d": 1,
+        "s": 0,
+        "u": "Orden de waarden van klein naar groot en kies de maat die bij de vraag en de verdeling past. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"15\"\"? Dan neem je de som. Het gemiddelde is de som gedeeld door het aantal, dus 15 : 3. Het goede antwoord is 5.",
+         "Klopt: (3 + 5 + 7) : 3 = 15 : 3 = 5. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"7\"\"? Dan neem je de grootste waarde. Het gemiddelde ligt in het midden van de data, dus 5. Door de stappen goed na te lopen kom je uit op 5.",
+         "Koos je \"\"3\"\"? Dan neem je het aantal waarden. Het gemiddelde is de som gedeeld door het aantal, dus 5. Controleer je stap: de juiste uitkomst is 5."
+        ],
+        "uh": "De dataset is 3, 5 en 7. Welk gemiddelde hoort daarbij?"
+       },
+       {
+        "v": "De dataset is 2, 4 en 9. Welke mediaan hoort daarbij?",
+        "o": [
+         "\"5\"",
+         "\"3\"",
+         "\"6\"",
+         "\"4\""
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 0,
+        "u": "Orden de waarden van klein naar groot en kies de maat die bij de vraag en de verdeling past. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"5\"\"? Dan neem je het gemiddelde. De mediaan is de middelste waarde, dus 4. Het goede antwoord is 4.",
+         "Koos je \"\"3\"\"? Dan neem je het midden van 2 en 4. Bij drie waarden is de mediaan de tweede waarde, dus 4. Door de stappen goed na te lopen kom je uit op 4.",
+         "Koos je \"\"6\"\"? Dan neem je het midden van 4 en 9. Bij drie waarden is de mediaan de tweede waarde, dus 4. Controleer je stap: de juiste uitkomst is 4.",
+         "Klopt: de middelste waarde van de geordende data is 4. Reken dit na met de gegeven gegevens."
+        ],
+        "uh": "De dataset is 2, 4 en 9. Welke mediaan hoort daarbij?"
+       },
+       {
+        "v": "Welke centrummaat is de waarde die het vaakst voorkomt?",
+        "o": [
+         "\"de modus\"",
+         "\"het gemiddelde\"",
+         "\"de mediaan\"",
+         "\"de spreidingsbreedte\""
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 0,
+        "u": "Orden de waarden van klein naar groot en kies de maat die bij de vraag en de verdeling past. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: de modus is de meest voorkomende waarde. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"het gemiddelde\"\"? Dan kies je de som gedeeld door het aantal. De meest voorkomende waarde is de modus, dus de modus.",
+         "Koos je \"\"de mediaan\"\"? Dan kies je de middelste waarde. De meest voorkomende waarde is de modus, dus de modus. Door de stappen goed na te lopen kom je uit op de modus.",
+         "Koos je \"\"de spreidingsbreedte\"\"? Dan kies je een spreidingsmaat. Gevraagd is een centrummaat, dus de modus. Controleer je stap: de juiste uitkomst is de modus."
+        ],
+        "uh": "Welke centrummaat is de waarde die het vaakst voorkomt?"
+       },
+       {
+        "v": "De dataset is 3, 8 en 14. Welke spreidingsbreedte hoort daarbij?",
+        "o": [
+         "\"8\"",
+         "\"14\"",
+         "\"11\"",
+         "\"25\""
+        ],
+        "c": 2,
+        "d": 1,
+        "s": 1,
+        "u": "Orden de waarden van klein naar groot en kies de maat die bij de vraag en de verdeling past. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"8\"\"? Dan neem je de middelste waarde. De spreidingsbreedte is het verschil tussen grootste en kleinste, dus 11.",
+         "Koos je \"\"14\"\"? Dan neem je de grootste waarde. Trek de kleinste af, dus 11. Door de stappen goed na te lopen kom je uit op 11.",
+         "Klopt: 14 − 3 = 11. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"25\"\"? Dan tel je de grootste en kleinste op. De spreidingsbreedte is een verschil, dus 11. Controleer je stap: de juiste uitkomst is 11."
+        ],
+        "uh": "De dataset is 3, 8 en 14. Welke spreidingsbreedte hoort daarbij?"
+       },
+       {
+        "v": "Het eerste kwartiel is 5 en het derde kwartiel is 9. Welke interkwartielafstand hoort daarbij?",
+        "o": [
+         "\"14\"",
+         "\"4\"",
+         "\"7\"",
+         "\"9\""
+        ],
+        "c": 1,
+        "d": 1,
+        "s": 1,
+        "u": "Orden de waarden van klein naar groot en kies de maat die bij de vraag en de verdeling past. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"14\"\"? Dan tel je de kwartielen op. De interkwartielafstand is een verschil, dus 4. Het goede antwoord is 4.",
+         "Klopt: 9 − 5 = 4. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"7\"\"? Dan neem je het gemiddelde van de kwartielen. De afstand is een verschil, dus 4. Door de stappen goed na te lopen kom je uit op 4.",
+         "Koos je \"\"9\"\"? Dan neem je het derde kwartiel. Trek het eerste kwartiel af, dus 4. Controleer je stap: de juiste uitkomst is 4."
+        ],
+        "uh": "Het eerste kwartiel is 5 en het derde kwartiel is 9. Welke interkwartielafstand hoort daarbij?"
+       },
+       {
+        "v": "Aan een dataset wordt één zeer grote waarde toegevoegd. Welke centrummaat verandert het meest?",
+        "o": [
+         "\"de mediaan\"",
+         "\"de modus\"",
+         "\"geen enkele, I think\"",
+         "\"het gemiddelde\""
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 2,
+        "u": "Orden de waarden van klein naar groot en kies de maat die bij de vraag en de verdeling past. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"de mediaan\"\"? Dan kies je de middelste waarde. Die verandert maar weinig door één uitschieter, dus het gemiddelde.",
+         "Koos je \"\"de modus\"\"? Dan kies je de meest voorkomende waarde. Een nieuwe uitschieter verandert die niet, dus het gemiddelde.",
+         "Koos je \"\"geen enkele, I think\"\"? Dan denk je dat een extra waarde niets doet. Het gemiddelde verandert wel, en het meest. Controleer je stap: de juiste uitkomst is het gemiddelde.",
+         "Klopt: het gemiddelde telt alle waarden mee en wordt dus sterk beïnvloed door een uitschieter."
+        ],
+        "uh": "Aan een dataset wordt één zeer grote waarde toegevoegd. Welke centrummaat verandert het meest?"
+       },
+       {
+        "v": "Wat zegt een standaardafwijking van 0 over een dataset?",
+        "o": [
+         "\"alle waarden zijn gelijk\"",
+         "\"de dataset is leeg\"",
+         "\"het gemiddelde is 0\"",
+         "\"de waarden zijn heel groot\""
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 4,
+        "u": "Orden de waarden van klein naar groot en kies de maat die bij de vraag en de verdeling past. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: er is geen spreiding, dus alle waarden zijn gelijk aan het gemiddelde.",
+         "Koos je \"\"de dataset is leeg\"\"? Dan denk je dat er geen data zijn. Een standaardafwijking van 0 hoort bij data zonder spreiding, dus alle waarden gelijk.",
+         "Koos je \"\"het gemiddelde is 0\"\"? Dan verwar je de spreiding met het gemiddelde. De standaardafwijking van 0 zegt iets over spreiding, dus alle waarden gelijk.",
+         "Koos je \"\"de waarden zijn heel groot\"\"? Dan denk je dat 0 een grote spreiding is. 0 is de kleinste spreiding, dus alle waarden gelijk."
+        ],
+        "uh": "Wat zegt een standaardafwijking van 0 over een dataset?"
+       },
+       {
+        "v": "Welk gemiddeld aantal uren huiswerk hoort bij de dataset?",
+        "o": [
+         "\"8 uur\"",
+         "\"12 uur, zeg maar\"",
+         "\"7 uur\"",
+         "\"70 uur\""
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 0,
+        "u": "Orden de waarden van klein naar groot en kies de maat die bij de vraag en de verdeling past. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"8 uur\"\"? Dan neem je de som gedeeld door 9. Er zijn 10 waarden, dus 7. Het goede antwoord is 7 uur.",
+         "Koos je \"\"12 uur, zeg maar\"\"? Dan neem je de grootste waarde. Het gemiddelde is de som gedeeld door het aantal, dus 7. Door de stappen goed na te lopen kom je uit op 7 uur.",
+         "Klopt: de som is 70 en 70 : 10 = 7. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"70 uur\"\"? Dan neem je de som. Deel door het aantal, dus 7. Controleer je stap: de juiste uitkomst is 7 uur."
+        ],
+        "uh": "Welk gemiddeld aantal uren huiswerk hoort bij de dataset?",
+        "ctx": "Tien leerlingen hebben de volgende aantallen uren huiswerk per week genoteerd, geordend van klein naar groot: 4, 5, 5, 6, 7, 7, 7, 8, 9 en 12. Een leerling berekent de centrummaten en de spreidingsmaten van deze dataset."
+       },
+       {
+        "v": "Welke mediaan hebben de tien waarden?",
+        "o": [
+         "\"6 uur, eigenlijk\"",
+         "\"7 uur\"",
+         "\"8 uur\"",
+         "\"5 uur\""
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 0,
+        "u": "Orden de waarden van klein naar groot en kies de maat die bij de vraag en de verdeling past. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"6 uur, eigenlijk\"\"? Dan neem je de vierde waarde. Bij tien waarden zijn de vijfde en zesde de middelste, dus 7. Het goede antwoord is 7 uur.",
+         "Klopt: de vijfde en zesde waarde zijn beide 7, dus de mediaan is 7.",
+         "Koos je \"\"8 uur\"\"? Dan neem je de achtste waarde. De middelste twee zijn de vijfde en zesde, dus 7. Door de stappen goed na te lopen kom je uit op 7 uur.",
+         "Koos je \"\"5 uur\"\"? Dan neem je het eerste kwartiel. De mediaan is het midden van alle data, dus 7. Controleer je stap: de juiste uitkomst is 7 uur."
+        ],
+        "uh": "Welke mediaan hebben de tien waarden?",
+        "ctx": "Tien leerlingen hebben de volgende aantallen uren huiswerk per week genoteerd, geordend van klein naar groot: 4, 5, 5, 6, 7, 7, 7, 8, 9 en 12. Een leerling berekent de centrummaten en de spreidingsmaten van deze dataset."
+       },
+       {
+        "v": "Welke interkwartielafstand hebben de data, met Q1 = 5 en Q3 = 8?",
+        "o": [
+         "\"13 uur\"",
+         "\"8 uur\"",
+         "\"6,5 uur\"",
+         "\"3 uur\""
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 1,
+        "u": "Orden de waarden van klein naar groot en kies de maat die bij de vraag en de verdeling past. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"13 uur\"\"? Dan tel je de kwartielen op. De interkwartielafstand is een verschil, dus 3. Het goede antwoord is 3 uur.",
+         "Koos je \"\"8 uur\"\"? Dan neem je de spreidingsbreedte 12 − 4. De interkwartielafstand is Q3 min Q1, dus 3. Door de stappen goed na te lopen kom je uit op 3 uur.",
+         "Koos je \"\"6,5 uur\"\"? Dan neem je het gemiddelde van de kwartielen. De afstand is een verschil, dus 3. Controleer je stap: de juiste uitkomst is 3 uur.",
+         "Klopt: 8 − 5 = 3. Reken dit na met de gegeven gegevens."
+        ],
+        "uh": "Welke interkwartielafstand hebben de data, met Q1 = 5 en Q3 = 8?",
+        "ctx": "Tien leerlingen hebben de volgende aantallen uren huiswerk per week genoteerd, geordend van klein naar groot: 4, 5, 5, 6, 7, 7, 7, 8, 9 en 12. Een leerling berekent de centrummaten en de spreidingsmaten van deze dataset."
+       },
+       {
+        "v": "Welk gemiddeld loon in euro volgt uit de gegevens?",
+        "o": [
+         "\"3800\"",
+         "\"2000\"",
+         "\"11 000\"",
+         "\"38 000\""
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 2,
+        "u": "Orden de waarden van klein naar groot en kies de maat die bij de vraag en de verdeling past. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: (9 · 2000 + 20 000) : 10 = 3800. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"2000\"\"? Dan neem je het loon van de meeste werknemers. Het gemiddelde telt de directeur mee, dus 3800. Het goede antwoord is 3800.",
+         "Koos je \"\"11 000\"\"? Dan neem je het gemiddelde van 2000 en 20 000. De negen werknemers wegen zwaarder, dus 3800. Door de stappen goed na te lopen kom je uit op 3800.",
+         "Koos je \"\"38 000\"\"? Dan neem je de som. Deel door het aantal, dus 3800. Controleer je stap: de juiste uitkomst is 3800."
+        ],
+        "uh": "Welk gemiddeld loon in euro volgt uit de gegevens?",
+        "ctx": "Een bedrijf heeft 10 werknemers. Negen werknemers verdienen elk €2000 per maand en de directeur verdient €20 000 per maand. De directie meldt het gemiddelde loon, terwijl de vakbond liever de mediaan noemt."
+       },
+       {
+        "v": "Welke mediaan hebben de tien lonen in euro?",
+        "o": [
+         "\"3800\"",
+         "\"11 000\"",
+         "\"2000\"",
+         "\"20 000\""
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 3,
+        "u": "Orden de waarden van klein naar groot en kies de maat die bij de vraag en de verdeling past. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"3800\"\"? Dan neem je het gemiddelde. De mediaan is de middelste waarde, dus 2000. Het goede antwoord is 2000.",
+         "Koos je \"\"11 000\"\"? Dan neem je het midden van laagste en hoogste loon. De mediaan is de middelste waarde, dus 2000. Door de stappen goed na te lopen kom je uit op 2000.",
+         "Klopt: de vijfde en zesde waarde zijn beide 2000, dus de mediaan is 2000.",
+         "Koos je \"\"20 000\"\"? Dan neem je het hoogste loon. De mediaan is de middelste waarde, dus 2000. Controleer je stap: de juiste uitkomst is 2000."
+        ],
+        "uh": "Welke mediaan hebben de tien lonen in euro?",
+        "ctx": "Een bedrijf heeft 10 werknemers. Negen werknemers verdienen elk €2000 per maand en de directeur verdient €20 000 per maand. De directie meldt het gemiddelde loon, terwijl de vakbond liever de mediaan noemt."
+       },
+       {
+        "v": "Welk gemiddeld loon hebben de werknemers zonder de directeur?",
+        "o": [
+         "\"3800\"",
+         "\"2000\"",
+         "\"18 000\"",
+         "\"1800\""
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 2,
+        "u": "Orden de waarden van klein naar groot en kies de maat die bij de vraag en de verdeling past. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"3800\"\"? Dan neem je het gemiddelde met de directeur. Zonder directeur blijven alleen de negen werknemers over, dus 2000.",
+         "Klopt: negen keer 2000 gedeeld door 9 is 2000. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"18 000\"\"? Dan neem je de som. Deel door 9, dus 2000. Door de stappen goed na te lopen kom je uit op 2000.",
+         "Koos je \"\"1800\"\"? Dan deel je 18 000 door 10. Er zijn nog 9 werknemers, dus 2000. Controleer je stap: de juiste uitkomst is 2000."
+        ],
+        "uh": "Welk gemiddeld loon hebben de werknemers zonder de directeur?",
+        "ctx": "Een bedrijf heeft 10 werknemers. Negen werknemers verdienen elk €2000 per maand en de directeur verdient €20 000 per maand. De directie meldt het gemiddelde loon, terwijl de vakbond liever de mediaan noemt."
+       },
+       {
+        "v": "Welk gemiddeld cijfer hebben beide klassen?",
+        "o": [
+         "\"6\"",
+         "\"42\"",
+         "\"8\"",
+         "\"7\""
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 0,
+        "u": "Orden de waarden van klein naar groot en kies de maat die bij de vraag en de verdeling past. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"6\"\"? Dan neem je het laagste cijfer. Het gemiddelde is som gedeeld door aantal, dus 7. Het goede antwoord is 7.",
+         "Koos je \"\"42\"\"? Dan neem je de som. Deel door het aantal, dus 7. Door de stappen goed na te lopen kom je uit op 7.",
+         "Koos je \"\"8\"\"? Dan neem je de mediaan van A afgerond. Het gemiddelde is 42 : 6, dus 7. Controleer je stap: de juiste uitkomst is 7.",
+         "Klopt: de som van A is 42 en van B is 42, dus beide 42 : 6 = 7."
+        ],
+        "uh": "Welk gemiddeld cijfer hebben beide klassen?",
+        "ctx": "Twee klassen maken dezelfde toets. De cijfers van klas A zijn 5, 6, 7, 7, 8 en 9 en die van klas B zijn 3, 5, 7, 7, 9 en 11. Een leerling vergelijkt de twee klassen met centrum- en spreidingsmaten."
+       },
+       {
+        "v": "Welke spreidingsbreedte hebben klas A en klas B?",
+        "o": [
+         "\"A is 4 en B is 8\"",
+         "\"A is 8 en B is 4\"",
+         "\"beide 4\"",
+         "\"A is 14 en B is 14\""
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 1,
+        "u": "Orden de waarden van klein naar groot en kies de maat die bij de vraag en de verdeling past. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: A is 9 − 5 = 4 en B is 11 − 3 = 8. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"A is 8 en B is 4\"\"? Dan draai je de klassen om. A loopt van 5 tot 9 en B van 3 tot 11, dus A is 4 en B is 8. Het goede antwoord is A is 4 en B is 8.",
+         "Koos je \"\"beide 4\"\"? Dan neem je alleen de breedte van A. B loopt van 3 tot 11, dus 8. Door de stappen goed na te lopen kom je uit op A is 4 en B is 8.",
+         "Koos je \"\"A is 14 en B is 14\"\"? Dan tel je kleinste en grootste op. De breedte is een verschil, dus 4 en 8. Controleer je stap: de juiste uitkomst is A is 4 en B is 8."
+        ],
+        "uh": "Welke spreidingsbreedte hebben klas A en klas B?",
+        "ctx": "Twee klassen maken dezelfde toets. De cijfers van klas A zijn 5, 6, 7, 7, 8 en 9 en die van klas B zijn 3, 5, 7, 7, 9 en 11. Een leerling vergelijkt de twee klassen met centrum- en spreidingsmaten."
+       },
+       {
+        "v": "Welke klas heeft de kleinste spreiding en wat betekent dat?",
+        "o": [
+         "\"klas B, de cijfers liggen dichter bij elkaar, denk ik\"",
+         "\"klas A, de cijfers zijn hoger\"",
+         "\"klas A, de cijfers liggen dichter bij elkaar\"",
+         "\"geen verschil, het gemiddelde is gelijk\""
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 4,
+        "u": "Orden de waarden van klein naar groot en kies de maat die bij de vraag en de verdeling past. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"klas B, de cijfers liggen dichter bij elkaar, denk ik\"\"? Dan draai je de klassen om. B heeft juist de grotere spreiding, dus klas A.",
+         "Koos je \"\"klas A, de cijfers zijn hoger\"\"? Dan verwar je spreiding met niveau. Het gemiddelde is voor beide 7, dus gaat het om dichter bij elkaar.",
+         "Klopt: de breedte 4 is kleiner dan 8 en de standaardafwijking van A is ook kleiner.",
+         "Koos je \"\"geen verschil, het gemiddelde is gelijk\"\"? Dan denk je dat gelijk gemiddelde gelijke verdeling betekent. De spreiding verschilt, dus klas A is gelijkmatiger."
+        ],
+        "uh": "Welke klas heeft de kleinste spreiding en wat betekent dat?",
+        "ctx": "Twee klassen maken dezelfde toets. De cijfers van klas A zijn 5, 6, 7, 7, 8 en 9 en die van klas B zijn 3, 5, 7, 7, 9 en 11. Een leerling vergelijkt de twee klassen met centrum- en spreidingsmaten."
+       },
+       {
+        "v": "Waarom is de spreidingsbreedte van klas B groter?",
+        "o": [
+         "\"B heeft een hoger gemiddelde\"",
+         "\"B heeft zowel een lager minimum als een hoger maximum\"",
+         "\"B heeft meer cijfers in de lijst, volgens mij, eigenlijk\"",
+         "\"B heeft een andere mediaan dan A\""
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 1,
+        "u": "Orden de waarden van klein naar groot en kies de maat die bij de vraag en de verdeling past. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"B heeft een hoger gemiddelde\"\"? Dan zoek je de reden bij het centrum. Beide klassen hebben gemiddeld 7, dus de uitersten maken het verschil.",
+         "Klopt: B loopt van 3 tot 11 en A van 5 tot 9. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"B heeft meer cijfers in de lijst, volgens mij, eigenlijk\"\"? Dan kijk je naar het aantal cijfers. Beide klassen hebben er zes, dus het ligt aan de uitersten.",
+         "Koos je \"\"B heeft een andere mediaan dan A\"\"? Dan vergelijk je de middelste cijfers. Die zijn bij beide 7, dus de breedte volgt uit de uitersten."
+        ],
+        "uh": "Waarom is de spreidingsbreedte van klas B groter?",
+        "ctx": "Twee klassen maken dezelfde toets. De cijfers van klas A zijn 5, 6, 7, 7, 8 en 9 en die van klas B zijn 3, 5, 7, 7, 9 en 11. Een leerling vergelijkt de twee klassen met centrum- en spreidingsmaten."
+       },
+       {
+        "v": "Hoe groot is het gemiddelde van de acht waarden?",
+        "o": [
+         "\"4\"",
+         "\"40\"",
+         "\"4,5\"",
+         "\"5\""
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 0,
+        "u": "Orden de waarden van klein naar groot en kies de maat die bij de vraag en de verdeling past. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"4\"\"? Dan neem je de modus. Het gemiddelde is som gedeeld door aantal, dus 5. Het goede antwoord is 5.",
+         "Koos je \"\"40\"\"? Dan neem je de som. Deel door 8, dus 5. Door de stappen goed na te lopen kom je uit op 5.",
+         "Koos je \"\"4,5\"\"? Dan neem je de mediaan. Het gemiddelde is som gedeeld door aantal, dus 5. Controleer je stap: de juiste uitkomst is 5.",
+         "Klopt: de som is 40 en 40 : 8 = 5. Reken dit na met de gegeven gegevens."
+        ],
+        "uh": "Hoe groot is het gemiddelde van de acht waarden?",
+        "ctx": "Een dataset bestaat uit de acht waarden 2, 4, 4, 4, 5, 5, 7 en 9. De standaardafwijking van deze dataset is 2. Een leerling berekent de centrummaten en interpreteert de standaardafwijking."
+       },
+       {
+        "v": "Welke waarde ligt precies in het midden van de geordende rij van acht getallen?",
+        "o": [
+         "\"4,5\"",
+         "\"4\"",
+         "\"5\"",
+         "\"5,5\""
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 0,
+        "u": "Orden de waarden van klein naar groot en kies de maat die bij de vraag en de verdeling past. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: de vierde en vijfde waarde zijn 4 en 5, dus de mediaan is 4,5.",
+         "Koos je \"\"4\"\"? Dan kijk je alleen naar de vierde waarde in de rij. Bij acht waarden zijn er twee middelste getallen, dus je neemt het midden van 4 en 5.",
+         "Koos je \"\"5\"\"? Dan gebruik je het gemiddelde als mediaan. Het gemiddelde is toevallig ook 5, maar de mediaan is 4,5. Door de stappen goed na te lopen kom je uit op 4,5.",
+         "Koos je \"\"5,5\"\"? Dan tel je de verkeerde plaatsen. De middelste getallen zijn de vierde en de vijfde, en dat zijn 4 en 5."
+        ],
+        "uh": "Welke waarde ligt precies in het midden van de geordende rij van acht getallen?",
+        "ctx": "Een dataset bestaat uit de acht waarden 2, 4, 4, 4, 5, 5, 7 en 9. De standaardafwijking van deze dataset is 2. Een leerling berekent de centrummaten en interpreteert de standaardafwijking."
+       },
+       {
+        "v": "Welk getal komt het vaakst voor in de dataset?",
+        "o": [
+         "\"5\"",
+         "\"2\"",
+         "\"4\"",
+         "\"9\""
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 0,
+        "u": "Orden de waarden van klein naar groot en kies de maat die bij de vraag en de verdeling past. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"5\"\"? Dan neem je het gemiddelde. De modus is de meest voorkomende waarde, dus 4. Het goede antwoord is 4.",
+         "Koos je \"\"2\"\"? Dan neem je de eerste waarde. De modus is de meest voorkomende waarde, dus 4. Door de stappen goed na te lopen kom je uit op 4.",
+         "Klopt: de waarde 4 komt drie keer voor, vaker dan elke andere waarde.",
+         "Koos je \"\"9\"\"? Dan neem je de grootste waarde. De modus is de meest voorkomende waarde, dus 4. Controleer je stap: de juiste uitkomst is 4."
+        ],
+        "uh": "Welk getal komt het vaakst voor in de dataset?",
+        "ctx": "Een dataset bestaat uit de acht waarden 2, 4, 4, 4, 5, 5, 7 en 9. De standaardafwijking van deze dataset is 2. Een leerling berekent de centrummaten en interpreteert de standaardafwijking."
+       },
+       {
+        "v": "Hoe interpreteer je een standaardafwijking van 2?",
+        "o": [
+         "\"alle waarden liggen precies 2 van het gemiddelde, denk ik, zeg maar\"",
+         "\"de waarden wijken gemiddeld ongeveer 2 af van het gemiddelde\"",
+         "\"de spreidingsbreedte is 2\"",
+         "\"het gemiddelde is 2\""
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 4,
+        "u": "Orden de waarden van klein naar groot en kies de maat die bij de vraag en de verdeling past. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"alle waarden liggen precies 2 van het gemiddelde, denk ik, zeg maar\"\"? Dan denk je dat het voor elke waarde geldt. Het is een gemiddelde afwijking, dus ongeveer.",
+         "Klopt: de standaardafwijking is een typische afstand tot het gemiddelde.",
+         "Koos je \"\"de spreidingsbreedte is 2\"\"? Dan verwar je de standaardafwijking met de breedte. De breedte is 9 − 2 = 7, en 2 is iets anders.",
+         "Koos je \"\"het gemiddelde is 2\"\"? Dan verwar je de spreiding met het centrum. Het gemiddelde is 5, en de spreiding is 2. Controleer je stap: de juiste uitkomst is de waarden wijken gemiddeld ongeveer 2 af van het gemiddelde."
+        ],
+        "uh": "Hoe interpreteer je een standaardafwijking van 2?",
+        "ctx": "Een dataset bestaat uit de acht waarden 2, 4, 4, 4, 5, 5, 7 en 9. De standaardafwijking van deze dataset is 2. Een leerling berekent de centrummaten en interpreteert de standaardafwijking."
+       },
+       {
+        "v": "Welk gemiddelde hebben de vijf wachttijden in minuten?",
+        "o": [
+         "\"13\"",
+         "\"40\"",
+         "\"23\"",
+         "\"18,4\""
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 2,
+        "u": "Orden de waarden van klein naar groot en kies de maat die bij de vraag en de verdeling past. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"13\"\"? Dan neem je het gemiddelde zonder de uitschieter. Het gemiddelde met de vijfde klant is hoger, dus 18,4.",
+         "Koos je \"\"40\"\"? Dan neem je de uitschieter. Het gemiddelde is som gedeeld door aantal, dus 18,4. Door de stappen goed na te lopen kom je uit op 18,4.",
+         "Koos je \"\"23\"\"? Dan neem je het gemiddelde van 10 en 40 en rond af. Het gemiddelde is 92 : 5, dus 18,4. Controleer je stap: de juiste uitkomst is 18,4.",
+         "Klopt: de som is 92 en 92 : 5 = 18,4. Reken dit na met de gegeven gegevens."
+        ],
+        "uh": "Welk gemiddelde hebben de vijf wachttijden in minuten?",
+        "ctx": "De wachttijden in minuten bij een loket zijn 10, 12, 14 en 16. Daarna komt er een klant die 40 minuten moet wachten. Een leerling onderzoekt hoe de centrummaten veranderen door deze uitschieter."
+       },
+       {
+        "v": "Welke mediaan hebben de vijf wachttijden in minuten?",
+        "o": [
+         "\"14\"",
+         "\"18,4\"",
+         "\"12\"",
+         "\"16\""
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 2,
+        "u": "Orden de waarden van klein naar groot en kies de maat die bij de vraag en de verdeling past. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: de derde waarde van de geordende data 10, 12, 14, 16, 40 is 14.",
+         "Koos je \"\"18,4\"\"? Dan neem je het gemiddelde. De mediaan is de middelste waarde, dus 14. Het goede antwoord is 14.",
+         "Koos je \"\"12\"\"? Dan neem je de tweede waarde. Bij vijf waarden is de mediaan de derde, dus 14. Door de stappen goed na te lopen kom je uit op 14.",
+         "Koos je \"\"16\"\"? Dan neem je de vierde waarde. Bij vijf waarden is de mediaan de derde, dus 14. Controleer je stap: de juiste uitkomst is 14."
+        ],
+        "uh": "Welke mediaan hebben de vijf wachttijden in minuten?",
+        "ctx": "De wachttijden in minuten bij een loket zijn 10, 12, 14 en 16. Daarna komt er een klant die 40 minuten moet wachten. Een leerling onderzoekt hoe de centrummaten veranderen door deze uitschieter."
+       },
+       {
+        "v": "Welke centrummaat is het gevoeligst voor de uitschieter van 40 minuten?",
+        "o": [
+         "\"de mediaan, die steeg van 13 naar 18,4, eigenlijk\"",
+         "\"de modus, die steeg van 13 naar 18,4\"",
+         "\"het gemiddelde, dat steeg van 13 naar 18,4\"",
+         "\"geen, alle maten blijven gelijk\""
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 3,
+        "u": "Orden de waarden van klein naar groot en kies de maat die bij de vraag en de verdeling past. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"de mediaan, die steeg van 13 naar 18,4, eigenlijk\"\"? Dan verwissel je de maten. De mediaan steeg van 13 naar 14, en het gemiddelde veel meer.",
+         "Koos je \"\"de modus, die steeg van 13 naar 18,4\"\"? Dan noem je de modus. Die bestaat hier niet eens, en het gemiddelde steeg het meest.",
+         "Klopt: de mediaan veranderde van 13 naar 14, het gemiddelde veel meer.",
+         "Koos je \"\"geen, alle maten blijven gelijk\"\"? Dan denk je dat een extra waarde niets doet. Het gemiddelde steeg van 13 naar 18,4, dus wel."
+        ],
+        "uh": "Welke centrummaat is het gevoeligst voor de uitschieter van 40 minuten?",
+        "ctx": "De wachttijden in minuten bij een loket zijn 10, 12, 14 en 16. Daarna komt er een klant die 40 minuten moet wachten. Een leerling onderzoekt hoe de centrummaten veranderen door deze uitschieter."
+       },
+       {
+        "v": "Welke centrummaat past bij de lonen met één zeer hoog loon?",
+        "o": [
+         "\"het gemiddelde\"",
+         "\"de mediaan\"",
+         "\"de modus\"",
+         "\"de spreidingsbreedte\""
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 3,
+        "u": "Orden de waarden van klein naar groot en kies de maat die bij de vraag en de verdeling past. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"het gemiddelde\"\"? Dan kies je een maat die door de uitschieter omhoog wordt getrokken. Dan is het niet typerend, dus de mediaan.",
+         "Klopt: de mediaan is niet gevoelig voor een uitschieter.",
+         "Koos je \"\"de modus\"\"? Dan kies je de meest voorkomende waarde. Bij lonen kan dat toeval zijn, terwijl de mediaan het midden weergeeft.",
+         "Koos je \"\"de spreidingsbreedte\"\"? Dan kies je een spreidingsmaat. Gevraagd is een centrummaat, dus de mediaan. Controleer je stap: de juiste uitkomst is de mediaan."
+        ],
+        "uh": "Welke centrummaat past bij de lonen met één zeer hoog loon?",
+        "ctx": "Een onderzoeker heeft vier datasets: de lonen in een bedrijf met één zeer hoog loon, de huizenprijzen in een dure wijk met een paar villa's, de favoriete kleur van 100 leerlingen en de lengtes van 100 leerlingen met een symmetrische verdeling. Hij kiest bij elke dataset een maat."
+       },
+       {
+        "v": "Welke spreidingsmaat past bij de mediaan?",
+        "o": [
+         "\"de standaardafwijking, denk ik\"",
+         "\"het gemiddelde\"",
+         "\"de modus\"",
+         "\"de interkwartielafstand\""
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 3,
+        "u": "Orden de waarden van klein naar groot en kies de maat die bij de vraag en de verdeling past. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"de standaardafwijking, denk ik\"\"? Dan kies je de maat die bij het gemiddelde hoort. Die is wel gevoelig voor uitschieters, dus de interkwartielafstand.",
+         "Koos je \"\"het gemiddelde\"\"? Dan kies je een centrummaat. Gevraagd is een spreidingsmaat, dus de interkwartielafstand. Door de stappen goed na te lopen kom je uit op de interkwartielafstand.",
+         "Koos je \"\"de modus\"\"? Dan kies je een centrummaat. Gevraagd is een spreidingsmaat, dus de interkwartielafstand. Controleer je stap: de juiste uitkomst is de interkwartielafstand.",
+         "Klopt: de interkwartielafstand gebruikt kwartielen en is net als de mediaan niet gevoelig voor uitschieters."
+        ],
+        "uh": "Welke spreidingsmaat past bij de mediaan?",
+        "ctx": "Een onderzoeker heeft vier datasets: de lonen in een bedrijf met één zeer hoog loon, de huizenprijzen in een dure wijk met een paar villa's, de favoriete kleur van 100 leerlingen en de lengtes van 100 leerlingen met een symmetrische verdeling. Hij kiest bij elke dataset een maat."
+       },
+       {
+        "v": "Welke centrummaat past bij de favoriete kleur van 100 leerlingen?",
+        "o": [
+         "\"de modus\"",
+         "\"het gemiddelde\"",
+         "\"de mediaan\"",
+         "\"de standaardafwijking\""
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 3,
+        "u": "Orden de waarden van klein naar groot en kies de maat die bij de vraag en de verdeling past. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: bij een nominale variabele kun je alleen de meest voorkomende categorie noemen.",
+         "Koos je \"\"het gemiddelde\"\"? Dan kies je een maat die getallen nodig heeft. Kleuren zijn categorieën, dus de modus. Het goede antwoord is de modus.",
+         "Koos je \"\"de mediaan\"\"? Dan kies je een maat die een volgorde nodig heeft. Kleuren hebben geen volgorde, dus de modus. Door de stappen goed na te lopen kom je uit op de modus.",
+         "Koos je \"\"de standaardafwijking\"\"? Dan kies je een spreidingsmaat. Gevraagd is een centrummaat, dus de modus. Controleer je stap: de juiste uitkomst is de modus."
+        ],
+        "uh": "Welke centrummaat past bij de favoriete kleur van 100 leerlingen?",
+        "ctx": "Een onderzoeker heeft vier datasets: de lonen in een bedrijf met één zeer hoog loon, de huizenprijzen in een dure wijk met een paar villa's, de favoriete kleur van 100 leerlingen en de lengtes van 100 leerlingen met een symmetrische verdeling. Hij kiest bij elke dataset een maat."
+       }
+      ],
+      "oe": [
+       {
+        "bron": "Examenstijl",
+        "ctx": "Tien leerlingen noteren hun uren huiswerk per week in een rij van klein naar groot: 2, 3, 3, 3, 5, 5, 6, 7, 7 en 9. Een leerling berekent de centrummaten en de spreidingsmaten van deze dataset.",
+        "v": "Bereken het gemiddelde, de mediaan, de modus en de interkwartielafstand.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Gemiddelde 50 : 10 = 5 en mediaan 5 (1p). Modus 3 (1p). Q1 is 3 en Q3 is 7, dus de interkwartielafstand is 4 (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "De cijfers van vijf leerlingen zijn 6, 7, 8, 8 en 9. Een leerling zegt dat het gemiddelde 8 is omdat 8 het vaakst voorkomt. Jij weet dat hij de maten door elkaar haalt en wilt de juiste uitleg geven.",
+        "v": "Bereken het gemiddelde en de modus en leg de fout uit.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Gemiddelde (6 + 7 + 8 + 8 + 9) : 5 = 7,6 (1p). De modus is 8 (1p). De leerling verwart modus en gemiddelde (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "De huizenprijzen in een wijk in duizenden euro's zijn 200, 210, 220, 230 en 640. Een makelaar wil een typische prijs noemen en overweegt het gemiddelde of de mediaan. De villa van 640 is de uitschieter.",
+        "v": "Bereken beide en kies de beste maat.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Gemiddelde 1500 : 5 = 300 (1p). Mediaan 220 (1p). De mediaan is typerend omdat het gemiddelde door de uitschieter omhoog gaat (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "De cijfers van klas A en klas B hebben beide het gemiddelde 7. De standaardafwijking van klas A is 1,3 en van klas B is 2,6. Een docent wil de klassen vergelijken op gemiddelde en spreiding.",
+        "v": "Vergelijk de twee klassen en geef een conclusie.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Het gemiddelde is gelijk (1p). Klas B heeft een grotere standaardafwijking (1p). De cijfers in B liggen verder uit elkaar (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een leerling zegt dat de standaardafwijking gelijk is aan het verschil tussen de hoogste en de laagste waarde. Jij weet dat dit de spreidingsbreedte is. Je wilt de maten correct uitleggen met een voorbeeld.",
+        "v": "Leg het verschil uit tussen standaardafwijking en spreidingsbreedte.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "De spreidingsbreedte is grootste min kleinste waarde (1p). De standaardafwijking is een typische afstand tot het gemiddelde (1p). Bij 2, 4, 4, 4, 5, 5, 7, 9 is de breedte 7 en de standaardafwijking 2 (1p)."
+       }
+      ]
      }
     ]
    }

@@ -1474,6 +1474,27 @@ var VAKKEN = [
       "nOe": 5,
       "nBeg": 12,
       "hasSam": true
+     },
+     {
+      "id": "E3",
+      "lo": "wa.E.3",
+      "gs": 2,
+      "naam": "Centrum- en spreidingsmaten kiezen en berekenen",
+      "beschrijving": "Je berekent gemiddelde, mediaan en modus, bepaalt spreidingsbreedte en interkwartielafstand, interpreteert de typische afwijking van het gemiddelde en kiest met argumenten de maat die bij de data past.",
+      "ceStatus": "CE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Gemiddelde, mediaan en modus",
+       "Spreidingsmaten bepalen",
+       "Invloed van een uitschieter",
+       "Een maat kiezen",
+       "Standaardafwijking interpreteren"
+      ],
+      "nSv": 27,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
      }
     ]
    }
