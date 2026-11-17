@@ -56433,6 +56433,690 @@ var VAKKEN = [
       "t": "Populatie",
       "d": "alle objecten van je onderzoek; steekproef : een selectie eruit."
      }
+    ],
+    "leerdoelen": [
+     {
+      "id": "E1",
+      "lo": "wa.E.1",
+      "gs": 2,
+      "naam": "Onderzoeksopzet, steekproef en soorten variabelen beoordelen",
+      "beschrijving": "Je beoordeelt een onderzoeksvraag en steekproef, herkent zelfselectie, lage respons en sturende vragen, bepaalt het soort variabele en beoordeelt of een conclusie is onderbouwd.",
+      "ceStatus": "CE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Onderzoeksvraag en opzet",
+       "Populatie en steekproef",
+       "Soorten variabelen",
+       "Vertekening en sturende vragen",
+       "Conclusies beoordelen"
+      ],
+      "sam": "Een onderzoeksvraag zegt wat je bij wie onderzoekt. Een steekproef is een deel van de populatie; bij loting is hij aselect. Kwalitatieve variabelen zijn nominaal of ordinaal, kwantitatieve discreet of continu. Zelfselectie, lage respons, sturende vragen en uitschieters vertekenen. Een conclusie is alleen onderbouwd voor de groep die je hebt onderzocht.",
+      "begrippen": [
+       {
+        "t": "Populatie",
+        "d": "De hele groep waarover je iets wilt weten."
+       },
+       {
+        "t": "Steekproef",
+        "d": "Het deel van de populatie dat je daadwerkelijk onderzoekt."
+       },
+       {
+        "t": "Aselecte steekproef",
+        "d": "Iedereen in de populatie heeft evenveel kans om gekozen te worden, bijvoorbeeld door loting."
+       },
+       {
+        "t": "Representatieve steekproef",
+        "d": "Een steekproef die de populatie goed weerspiegelt."
+       },
+       {
+        "t": "Zelfselectie",
+        "d": "Mensen kiezen zelf of ze meedoen, waardoor vooral betrokken mensen reageren."
+       },
+       {
+        "t": "Respons",
+        "d": "Het deel van de benaderde mensen dat de vragenlijst invult."
+       },
+       {
+        "t": "Sturende vraag",
+        "d": "Een vraag waarvan de formulering een bepaald antwoord uitlokt."
+       },
+       {
+        "t": "Kwalitatief en kwantitatief",
+        "d": "Categorieën tegenover getallen."
+       },
+       {
+        "t": "Nominaal en ordinaal",
+        "d": "Categorieën zonder of met natuurlijke volgorde."
+       },
+       {
+        "t": "Discreet en continu",
+        "d": "Hele getallen die je telt tegenover metingen met tussenwaarden."
+       },
+       {
+        "t": "Onderzoeksvraag",
+        "d": "De vraag die zegt wat je bij wie onderzoekt."
+       },
+       {
+        "t": "Uitschieter",
+        "d": "Een waarde ver buiten de rest die het gemiddelde sterk beïnvloedt."
+       }
+      ],
+      "sv": [
+       {
+        "v": "Alle 600 leerlingen van een school vormen de populatie. Welke groep is een steekproef?",
+        "o": [
+         "\"alle 600 leerlingen\"",
+         "\"40 willekeurig gekozen leerlingen\"",
+         "\"de docenten van de school\"",
+         "\"alle leerlingen van groep 8 in het land\""
+        ],
+        "c": 1,
+        "d": 1,
+        "s": 1,
+        "u": "Bepaal eerst de populatie en de steekproef en vraag je af of elke persoon evenveel kans had om gekozen te worden. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"alle 600 leerlingen\"\"? Dan neem je de hele populatie. Een steekproef is maar een deel, dus 40 leerlingen. Het goede antwoord is 40 willekeurig gekozen leerlingen.",
+         "Klopt: een steekproef is een deel van de populatie dat wordt onderzocht.",
+         "Koos je \"\"de docenten van de school\"\"? Dan kies je een andere groep. De docenten horen niet bij de populatie van leerlingen, dus geen steekproef daaruit.",
+         "Koos je \"\"alle leerlingen van groep 8 in het land\"\"? Dan kies je een andere populatie. De populatie is de eigen school, dus een deel van de 600."
+        ],
+        "uh": "Alle 600 leerlingen van een school vormen de populatie. Welke groep is een steekproef?"
+       },
+       {
+        "v": "Hoe heet een steekproef waarin elke persoon uit de populatie evenveel kans heeft om gekozen te worden?",
+        "o": [
+         "\"gemakssteekproef\"",
+         "\"vrijwillige steekproef\"",
+         "\"bewuste steekproef\"",
+         "\"aselecte steekproef\""
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 1,
+        "u": "Bepaal eerst de populatie en de steekproef en vraag je af of elke persoon evenveel kans had om gekozen te worden. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"gemakssteekproef\"\"? Dan kies je de dichtstbijzijnde personen. Dan heeft niet iedereen dezelfde kans, en is het geen aselecte steekproef.",
+         "Koos je \"\"vrijwillige steekproef\"\"? Dan laat je mensen zelf kiezen of ze meedoen. Dan heeft niet iedereen dezelfde kans, dus niet aselect.",
+         "Koos je \"\"bewuste steekproef\"\"? Dan kies je personen met een doel. Dat is het tegenovergestelde van loting, dus niet aselect.",
+         "Klopt: bij een aselecte steekproef heeft iedereen dezelfde kans, bijvoorbeeld door loting."
+        ],
+        "uh": "Hoe heet een steekproef waarin elke persoon uit de populatie evenveel kans heeft om gekozen te worden?"
+       },
+       {
+        "v": "Het aantal broers en zussen van een leerling is welk soort variabele?",
+        "o": [
+         "\"kwantitatief en discreet\"",
+         "\"kwalitatief en nominaal, I suppose\"",
+         "\"kwantitatief en continu\"",
+         "\"kwalitatief en ordinaal\""
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 2,
+        "u": "Bepaal eerst de populatie en de steekproef en vraag je af of elke persoon evenveel kans had om gekozen te worden. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: het is een getal dat je telt, met alleen hele waarden.",
+         "Koos je \"\"kwalitatief en nominaal, I suppose\"\"? Dan denk je aan een categorie zonder getal. Het aantal is een getal, dus kwantitatief.",
+         "Koos je \"\"kwantitatief en continu\"\"? Dan denk je dat het ook tussenwaarden kan hebben. Je hebt 2 of 3 broers en zussen en geen 2,5, dus discreet.",
+         "Koos je \"\"kwalitatief en ordinaal\"\"? Dan denk je aan een rangorde van categorieën. Het aantal is een getal, dus kwantitatief."
+        ],
+        "uh": "Het aantal broers en zussen van een leerling is welk soort variabele?"
+       },
+       {
+        "v": "Een onderzoeker meet de tijd voor een proefwerksom in seconden met decimalen. Welk soort variabele is dat?",
+        "o": [
+         "\"kwantitatief en discreet, you know\"",
+         "\"kwalitatief en nominaal\"",
+         "\"kwantitatief en continu\"",
+         "\"kwalitatief en ordinaal\""
+        ],
+        "c": 2,
+        "d": 1,
+        "s": 2,
+        "u": "Bepaal eerst de populatie en de steekproef en vraag je af of elke persoon evenveel kans had om gekozen te worden. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"kwantitatief en discreet, you know\"\"? Dan denk je dat je telt. Een tijd meet je en kan decimalen hebben, dus continu. Het goede antwoord is kwantitatief en continu.",
+         "Koos je \"\"kwalitatief en nominaal\"\"? Dan denk je aan een categorie. Tijd is een getal, dus kwantitatief. Door de stappen goed na te lopen kom je uit op kwantitatief en continu.",
+         "Klopt: een gemeten tijd kan elke waarde in een interval aannemen.",
+         "Koos je \"\"kwalitatief en ordinaal\"\"? Dan denk je aan een volgorde van categorieën. Tijd is een getal, dus kwantitatief. Controleer je stap: de juiste uitkomst is kwantitatief en continu."
+        ],
+        "uh": "Een onderzoeker meet de tijd voor een proefwerksom in seconden met decimalen. Welk soort variabele is dat?"
+       },
+       {
+        "v": "De beoordeling onvoldoende, voldoende of goed is welk soort variabele?",
+        "o": [
+         "\"kwalitatief en nominaal\"",
+         "\"kwalitatief en ordinaal\"",
+         "\"kwantitatief en discreet, really\"",
+         "\"kwantitatief en continu\""
+        ],
+        "c": 1,
+        "d": 1,
+        "s": 2,
+        "u": "Bepaal eerst de populatie en de steekproef en vraag je af of elke persoon evenveel kans had om gekozen te worden. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"kwalitatief en nominaal\"\"? Dan denk je aan categorieën zonder volgorde. Hier is er een rangorde, dus ordinaal.",
+         "Klopt: het zijn categorieën met een natuurlijke volgorde.",
+         "Koos je \"\"kwantitatief en discreet, really\"\"? Dan denk je aan een getal. Het zijn woorden, dus kwalitatief. Door de stappen goed na te lopen kom je uit op kwalitatief en ordinaal.",
+         "Koos je \"\"kwantitatief en continu\"\"? Dan denk je aan een meting. Het zijn woorden, dus kwalitatief. Controleer je stap: de juiste uitkomst is kwalitatief en ordinaal."
+        ],
+        "uh": "De beoordeling onvoldoende, voldoende of goed is welk soort variabele?"
+       },
+       {
+        "v": "Welke onderzoeksvraag is duidelijk bij wie en wat je onderzoekt?",
+        "o": [
+         "\"Is school leuk?\"",
+         "\"Wat vinden mensen eigenlijk van huiswerk, denk ik, zeg maar, gewoon?\"",
+         "\"Waarom is huiswerk zo saai?\"",
+         "\"Hoeveel uur per week besteden havo-5-leerlingen van onze school aan huiswerk?\""
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 0,
+        "u": "Bepaal eerst de populatie en de steekproef en vraag je af of elke persoon evenveel kans had om gekozen te worden. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"Is school leuk?\"\"? Dan kies je een vage vraag. Er staat niet bij wie je ondervraagt en wat je meet, dus niet bruikbaar.",
+         "Koos je \"\"Wat vinden mensen eigenlijk van huiswerk, denk ik, zeg maar, gewoon?\"\"? Dan kies je een vage vraag. De groep mensen is niet afgebakend, dus niet bruikbaar.",
+         "Koos je \"\"Waarom is huiswerk zo saai?\"\"? Dan kies je een sturende vraag. Het antwoord wordt al verondersteld, dus niet neutraal.",
+         "Klopt: de groep, de variabele en de eenheid zijn duidelijk."
+        ],
+        "uh": "Welke onderzoeksvraag is duidelijk bij wie en wat je onderzoekt?"
+       },
+       {
+        "v": "Een vragenlijst vraagt: Bent u ook zo blij met ons geweldige restaurant? Wat is het probleem?",
+        "o": [
+         "\"de vraag stuurt naar een positief antwoord\"",
+         "\"de vraag is te kort\"",
+         "\"er is geen populatie\"",
+         "\"de antwoorden zijn niet te tellen, to be honest\""
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 3,
+        "u": "Bepaal eerst de populatie en de steekproef en vraag je af of elke persoon evenveel kans had om gekozen te worden. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: een sturende vraag beïnvloedt het antwoord. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"de vraag is te kort\"\"? Dan denk je dat de lengte telt. Het gaat om de formulering, en die stuurt. Het goede antwoord is de vraag stuurt naar een positief antwoord.",
+         "Koos je \"\"er is geen populatie\"\"? Dan denk je dat de populatie ontbreekt. Het probleem zit in de formulering, namelijk sturend.",
+         "Koos je \"\"de antwoorden zijn niet te tellen, to be honest\"\"? Dan denk je dat tellen onmogelijk is. Ja en nee zijn te tellen, maar de vraag stuurt."
+        ],
+        "uh": "Een vragenlijst vraagt: Bent u ook zo blij met ons geweldige restaurant? Wat is het probleem?"
+       },
+       {
+        "v": "Wat is de populatie in dit onderzoek?",
+        "o": [
+         "\"de 50 leerlingen in het restaurant, zeg maar\"",
+         "\"alle leerlingen die buiten eten\"",
+         "\"alle 900 leerlingen van de school\"",
+         "\"het schoolrestaurant\""
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 1,
+        "u": "Bepaal eerst de populatie en de steekproef en vraag je af of elke persoon evenveel kans had om gekozen te worden. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"de 50 leerlingen in het restaurant, zeg maar\"\"? Dan neem je de steekproef. De populatie is de hele groep waarover je iets wilt weten, dus alle 900.",
+         "Koos je \"\"alle leerlingen die buiten eten\"\"? Dan neem je een deel van de populatie. De populatie is alle leerlingen, dus 900.",
+         "Klopt: de onderzoeksvraag gaat over alle leerlingen en niet alleen over wie in het restaurant staat.",
+         "Koos je \"\"het schoolrestaurant\"\"? Dan neem je een plek als populatie. De populatie zijn de leerlingen, dus 900. Controleer je stap: de juiste uitkomst is alle 900 leerlingen van de school."
+        ],
+        "uh": "Wat is de populatie in dit onderzoek?",
+        "ctx": "Een school wil weten hoe tevreden alle 900 leerlingen zijn over het schoolrestaurant. De onderzoeker staat tijdens de pauze in het restaurant en vraagt de eerste 50 leerlingen die langskomen om een enquête in te vullen. Leerlingen die buiten eten, komen niet aan bod."
+       },
+       {
+        "v": "Waarom is deze steekproef niet representatief voor alle leerlingen?",
+        "o": [
+         "\"50 leerlingen zijn altijd te weinig, eigenlijk, denk ik, zeg maar\"",
+         "\"alleen leerlingen die in het restaurant eten komen aan bod\"",
+         "\"de pauze is te kort\"",
+         "\"de enquête is te lang\""
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 3,
+        "u": "Bepaal eerst de populatie en de steekproef en vraag je af of elke persoon evenveel kans had om gekozen te worden. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"50 leerlingen zijn altijd te weinig, eigenlijk, denk ik, zeg maar\"\"? Dan denk je dat het aantal alleen telt. Ook een groter aantal is niet representatief als de groep eenzijdig is, dus de keuze is het probleem.",
+         "Klopt: leerlingen die buiten eten hebben geen kans om gekozen te worden.",
+         "Koos je \"\"de pauze is te kort\"\"? Dan denk je dat de tijd telt. Het gaat om wie er gekozen kan worden, en niet om de duur.",
+         "Koos je \"\"de enquête is te lang\"\"? Dan denk je dat de lengte bepalend is. Het probleem is wie er meedoet, dus eenzijdig."
+        ],
+        "uh": "Waarom is deze steekproef niet representatief voor alle leerlingen?",
+        "ctx": "Een school wil weten hoe tevreden alle 900 leerlingen zijn over het schoolrestaurant. De onderzoeker staat tijdens de pauze in het restaurant en vraagt de eerste 50 leerlingen die langskomen om een enquête in te vullen. Leerlingen die buiten eten, komen niet aan bod."
+       },
+       {
+        "v": "Hoe kan de onderzoeker een aselecte steekproef trekken?",
+        "o": [
+         "\"50 leerlingen van één klas kiezen\"",
+         "\"de eerste 50 leerlingen bij de ingang\"",
+         "\"leerlingen vragen of ze willen meedoen, gewoon, volgens mij\"",
+         "\"50 leerlingen loten uit de lijst van alle 900\""
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 1,
+        "u": "Bepaal eerst de populatie en de steekproef en vraag je af of elke persoon evenveel kans had om gekozen te worden. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"50 leerlingen van één klas kiezen\"\"? Dan kies je maar één klas. Dan hebben leerlingen van andere klassen geen kans, dus niet aselect.",
+         "Koos je \"\"de eerste 50 leerlingen bij de ingang\"\"? Dan kies je wie het eerst komt. Dan hebben laatkomers geen kans, dus niet aselect.",
+         "Koos je \"\"leerlingen vragen of ze willen meedoen, gewoon, volgens mij\"\"? Dan laat je mensen zichzelf kiezen. Dan doen vooral betrokken leerlingen mee, dus niet aselect.",
+         "Klopt: bij loting uit de volledige lijst heeft iedereen dezelfde kans."
+        ],
+        "uh": "Hoe kan de onderzoeker een aselecte steekproef trekken?",
+        "ctx": "Een school wil weten hoe tevreden alle 900 leerlingen zijn over het schoolrestaurant. De onderzoeker staat tijdens de pauze in het restaurant en vraagt de eerste 50 leerlingen die langskomen om een enquête in te vullen. Leerlingen die buiten eten, komen niet aan bod."
+       },
+       {
+        "v": "Welk soort variabele is de lichaamslengte?",
+        "o": [
+         "\"kwantitatief en continu\"",
+         "\"kwantitatief en discreet, denk ik\"",
+         "\"kwalitatief en nominaal\"",
+         "\"kwalitatief en ordinaal\""
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 2,
+        "u": "Bepaal eerst de populatie en de steekproef en vraag je af of elke persoon evenveel kans had om gekozen te worden. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: lengte meet je en kan decimalen hebben. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"kwantitatief en discreet, denk ik\"\"? Dan denk je dat je telt. Een lengte kan elke waarde hebben, dus continu. Het goede antwoord is kwantitatief en continu.",
+         "Koos je \"\"kwalitatief en nominaal\"\"? Dan denk je aan een categorie. Lengte is een getal, dus kwantitatief. Door de stappen goed na te lopen kom je uit op kwantitatief en continu.",
+         "Koos je \"\"kwalitatief en ordinaal\"\"? Dan denk je aan een volgorde van categorieën. Lengte is een getal, dus kwantitatief."
+        ],
+        "uh": "Welk soort variabele is de lichaamslengte?",
+        "ctx": "In een enquête onder scholieren worden drie variabelen vastgelegd. De lichaamslengte in centimeter, ook met decimalen zoals 172,5. De favoriete kleur, zoals rood, blauw of groen. En de tevredenheid over school met de antwoorden zeer ontevreden, ontevreden, tevreden en zeer tevreden."
+       },
+       {
+        "v": "Welk soort variabele is de favoriete kleur?",
+        "o": [
+         "\"kwalitatief en ordinaal\"",
+         "\"kwantitatief en discreet, volgens mij\"",
+         "\"kwalitatief en nominaal\"",
+         "\"kwantitatief en continu\""
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 2,
+        "u": "Bepaal eerst de populatie en de steekproef en vraag je af of elke persoon evenveel kans had om gekozen te worden. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"kwalitatief en ordinaal\"\"? Dan denk je dat er een volgorde is. Rood, blauw en groen hebben geen rangorde, dus nominaal.",
+         "Koos je \"\"kwantitatief en discreet, volgens mij\"\"? Dan denk je aan een telling. Kleuren zijn woorden, dus kwalitatief. Door de stappen goed na te lopen kom je uit op kwalitatief en nominaal.",
+         "Klopt: het zijn categorieën zonder natuurlijke volgorde.",
+         "Koos je \"\"kwantitatief en continu\"\"? Dan denk je aan een meting. Kleuren zijn woorden, dus kwalitatief. Controleer je stap: de juiste uitkomst is kwalitatief en nominaal."
+        ],
+        "uh": "Welk soort variabele is de favoriete kleur?",
+        "ctx": "In een enquête onder scholieren worden drie variabelen vastgelegd. De lichaamslengte in centimeter, ook met decimalen zoals 172,5. De favoriete kleur, zoals rood, blauw of groen. En de tevredenheid over school met de antwoorden zeer ontevreden, ontevreden, tevreden en zeer tevreden."
+       },
+       {
+        "v": "Welk soort variabele is de tevredenheid over school?",
+        "o": [
+         "\"kwalitatief en nominaal\"",
+         "\"kwalitatief en ordinaal\"",
+         "\"kwantitatief en discreet, zeg maar\"",
+         "\"kwantitatief en continu\""
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 2,
+        "u": "Bepaal eerst de populatie en de steekproef en vraag je af of elke persoon evenveel kans had om gekozen te worden. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"kwalitatief en nominaal\"\"? Dan denk je dat er geen volgorde is. Er is een rangorde, dus ordinaal. Het goede antwoord is kwalitatief en ordinaal.",
+         "Klopt: het zijn categorieën met een rangorde van zeer ontevreden tot zeer tevreden.",
+         "Koos je \"\"kwantitatief en discreet, zeg maar\"\"? Dan denk je aan een telling. De antwoorden zijn woorden met een volgorde, dus kwalitatief en ordinaal.",
+         "Koos je \"\"kwantitatief en continu\"\"? Dan denk je aan een meting. De antwoorden zijn woorden, dus kwalitatief. Controleer je stap: de juiste uitkomst is kwalitatief en ordinaal."
+        ],
+        "uh": "Welk soort variabele is de tevredenheid over school?",
+        "ctx": "In een enquête onder scholieren worden drie variabelen vastgelegd. De lichaamslengte in centimeter, ook met decimalen zoals 172,5. De favoriete kleur, zoals rood, blauw of groen. En de tevredenheid over school met de antwoorden zeer ontevreden, ontevreden, tevreden en zeer tevreden."
+       },
+       {
+        "v": "Welke groep vormt de populatie waarover de brochure iets beweert?",
+        "o": [
+         "\"de 80 bezoekers\"",
+         "\"alle ouders van de bezoekers\"",
+         "\"alle leerlingen van de school\"",
+         "\"alle Nederlandse scholieren\""
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 4,
+        "u": "Bepaal eerst de populatie en de steekproef en vraag je af of elke persoon evenveel kans had om gekozen te worden. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"de 80 bezoekers\"\"? Dan neem je de steekproef. De brochure beweert iets over alle scholieren, dus de populatie is groter.",
+         "Koos je \"\"alle ouders van de bezoekers\"\"? Dan neem je een andere groep. De uitspraak gaat over scholieren, dus alle scholieren.",
+         "Koos je \"\"alle leerlingen van de school\"\"? Dan neem je een kleinere groep. De brochure noemt alle Nederlandse scholieren, dus de populatie is groter.",
+         "Klopt: de brochure doet een uitspraak over alle scholieren."
+        ],
+        "uh": "Welke groep vormt de populatie waarover de brochure iets beweert?",
+        "ctx": "Op een open dag ondervraagt een school 80 bezoekers. Van hen vinden 56 de school goed, dat is 70%. In de brochure staat later: 70% van alle Nederlandse scholieren vindt onze school goed. De bezoekers waren vooral ouders en leerlingen uit groep 8 die al interesse hadden."
+       },
+       {
+        "v": "Waarom mag de school de 70% niet generaliseren naar alle scholieren?",
+        "o": [
+         "\"de bezoekers zijn geen representatieve steekproef van alle scholieren\"",
+         "\"80 is een te klein getal om iets te zeggen, gewoon, volgens mij, eigenlijk\"",
+         "\"70% is te hoog om waar te zijn\"",
+         "\"percentages mag je niet vergelijken\""
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 1,
+        "u": "Bepaal eerst de populatie en de steekproef en vraag je af of elke persoon evenveel kans had om gekozen te worden. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: wie een open dag bezoekt, is al geïnteresseerd en dus niet typerend voor alle scholieren.",
+         "Koos je \"\"80 is een te klein getal om iets te zeggen, gewoon, volgens mij, eigenlijk\"\"? Dan denk je dat alleen het aantal telt. Ook een groter aantal bezoekers is niet representatief, dus de keuze van de groep is het probleem.",
+         "Koos je \"\"70% is te hoog om waar te zijn\"\"? Dan denk je dat het percentage zelf verdacht is. Het gaat om wie je hebt ondervraagd, en niet om de hoogte.",
+         "Koos je \"\"percentages mag je niet vergelijken\"\"? Dan denk je dat percentages niet bruikbaar zijn. Het probleem is de steekproef, dus de groep."
+        ],
+        "uh": "Waarom mag de school de 70% niet generaliseren naar alle scholieren?",
+        "ctx": "Op een open dag ondervraagt een school 80 bezoekers. Van hen vinden 56 de school goed, dat is 70%. In de brochure staat later: 70% van alle Nederlandse scholieren vindt onze school goed. De bezoekers waren vooral ouders en leerlingen uit groep 8 die al interesse hadden."
+       },
+       {
+        "v": "Welke uitspraak is wel onderbouwd?",
+        "o": [
+         "\"70% van alle ouders vindt de school goed\"",
+         "\"70% van de Nederlandse scholieren is blij, denk ik, zeg maar\"",
+         "\"70% van de 80 ondervraagde bezoekers vindt de school goed\"",
+         "\"de school is de beste van Nederland\""
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 4,
+        "u": "Bepaal eerst de populatie en de steekproef en vraag je af of elke persoon evenveel kans had om gekozen te worden. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"70% van alle ouders vindt de school goed\"\"? Dan breid je de uitspraak uit naar alle ouders. De bezoekers zijn niet alle ouders, dus niet onderbouwd.",
+         "Koos je \"\"70% van de Nederlandse scholieren is blij, denk ik, zeg maar\"\"? Dan breid je uit naar een grotere populatie. De steekproef is daar niet representatief voor, dus niet onderbouwd.",
+         "Klopt: dat volgt direct uit de gegevens over de steekproef.",
+         "Koos je \"\"de school is de beste van Nederland\"\"? Dan trek je een conclusie die niet uit de gegevens volgt. Er is geen vergelijking gemaakt, dus niet onderbouwd."
+        ],
+        "uh": "Welke uitspraak is wel onderbouwd?",
+        "ctx": "Op een open dag ondervraagt een school 80 bezoekers. Van hen vinden 56 de school goed, dat is 70%. In de brochure staat later: 70% van alle Nederlandse scholieren vindt onze school goed. De bezoekers waren vooral ouders en leerlingen uit groep 8 die al interesse hadden."
+       },
+       {
+        "v": "Hoe kan de school een betere schatting voor alle scholieren krijgen?",
+        "o": [
+         "\"nog 80 bezoekers van de open dag vragen, volgens mij, eigenlijk\"",
+         "\"een aselecte steekproef uit alle scholieren trekken\"",
+         "\"alleen de ouders vragen\"",
+         "\"het percentage hoger rapporteren\""
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 3,
+        "u": "Bepaal eerst de populatie en de steekproef en vraag je af of elke persoon evenveel kans had om gekozen te worden. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"nog 80 bezoekers van de open dag vragen, volgens mij, eigenlijk\"\"? Dan vraag je meer van dezelfde groep. Een groter aantal bezoekers is nog steeds eenzijdig, dus niet representatief.",
+         "Klopt: bij loting uit alle scholieren heeft iedereen dezelfde kans.",
+         "Koos je \"\"alleen de ouders vragen\"\"? Dan kies je een andere eenzijdige groep. De populatie is alle scholieren, dus een loting uit hen.",
+         "Koos je \"\"het percentage hoger rapporteren\"\"? Dan kies je een manier die niets met de steekproef te maken heeft. Hoger rapporteren is geen onderzoek, dus niet geldig."
+        ],
+        "uh": "Hoe kan de school een betere schatting voor alle scholieren krijgen?",
+        "ctx": "Op een open dag ondervraagt een school 80 bezoekers. Van hen vinden 56 de school goed, dat is 70%. In de brochure staat later: 70% van alle Nederlandse scholieren vindt onze school goed. De bezoekers waren vooral ouders en leerlingen uit groep 8 die al interesse hadden."
+       },
+       {
+        "v": "Welk probleem treedt hier op door de vrijwillige vragenlijst?",
+        "o": [
+         "\"de steekproef is aselect\"",
+         "\"de vragenlijst is te kort, zeg maar, gewoon, volgens mij\"",
+         "\"de populatie is te groot\"",
+         "\"zelfselectie: vooral betrokken mensen reageren\""
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 3,
+        "u": "Bepaal eerst de populatie en de steekproef en vraag je af of elke persoon evenveel kans had om gekozen te worden. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"de steekproef is aselect\"\"? Dan denk je dat de steekproef aselect is. Mensen kiezen zelf of ze meedoen, dus niet aselect.",
+         "Koos je \"\"de vragenlijst is te kort, zeg maar, gewoon, volgens mij\"\"? Dan denk je dat de lengte telt. Het gaat om wie reageert, dus zelfselectie. Door de stappen goed na te lopen kom je uit op zelfselectie: vooral betrokken mensen reageren.",
+         "Koos je \"\"de populatie is te groot\"\"? Dan denk je dat de populatie het probleem is. Het gaat om de lage en selectieve respons, dus zelfselectie.",
+         "Klopt: wie vrijwillig invult, is vaak al betrokken bij het onderwerp."
+        ],
+        "uh": "Welk probleem treedt hier op door de vrijwillige vragenlijst?",
+        "ctx": "Een gemeente wil weten of inwoners meer fietspaden willen. De vragenlijst staat op de website en iedereen mag hem invullen. Van de 10 000 aangeschreven inwoners vult 2% de lijst in, 200 mensen. Veel van hen blijken fanatieke fietsers te zijn."
+       },
+       {
+        "v": "Wat zegt de respons van 2% over de betrouwbaarheid van de uitkomst?",
+        "o": [
+         "\"98% reageert niet, dus de uitkomst kan sterk afwijken\"",
+         "\"2% is genoeg voor een zekere uitspraak\"",
+         "\"de respons zegt niets over betrouwbaarheid\"",
+         "\"een lage respons maakt de uitkomst preciezer, eigenlijk\""
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 4,
+        "u": "Bepaal eerst de populatie en de steekproef en vraag je af of elke persoon evenveel kans had om gekozen te worden. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: bij een lage respons weet je niet wat de niet-reagerende inwoners vinden.",
+         "Koos je \"\"2% is genoeg voor een zekere uitspraak\"\"? Dan denk je dat een klein percentage genoeg is. De 98% die niet reageert kan anders denken, dus onzeker.",
+         "Koos je \"\"de respons zegt niets over betrouwbaarheid\"\"? Dan denk je dat de respons niet telt. Een lage respons maakt de uitkomst juist onbetrouwbaar, dus het telt wel.",
+         "Koos je \"\"een lage respons maakt de uitkomst preciezer, eigenlijk\"\"? Dan denk je dat minder reacties preciezer zijn. Het tegendeel is waar, dus onzekerder."
+        ],
+        "uh": "Wat zegt de respons van 2% over de betrouwbaarheid van de uitkomst?",
+        "ctx": "Een gemeente wil weten of inwoners meer fietspaden willen. De vragenlijst staat op de website en iedereen mag hem invullen. Van de 10 000 aangeschreven inwoners vult 2% de lijst in, 200 mensen. Veel van hen blijken fanatieke fietsers te zijn."
+       },
+       {
+        "v": "Welke aanpak geeft een betere schatting van de mening van alle inwoners?",
+        "o": [
+         "\"de lijst langer online laten staan, gewoon, volgens mij, eigenlijk\"",
+         "\"alleen fietsers uitnodigen\"",
+         "\"een aselecte steekproef trekken en niet-reageerders opnieuw benaderen\"",
+         "\"het aantal fietspaden verhogen\""
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 3,
+        "u": "Bepaal eerst de populatie en de steekproef en vraag je af of elke persoon evenveel kans had om gekozen te worden. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"de lijst langer online laten staan, gewoon, volgens mij, eigenlijk\"\"? Dan laat je mensen zichzelf blijven kiezen. Dat blijft selectief, dus niet beter.",
+         "Koos je \"\"alleen fietsers uitnodigen\"\"? Dan kies je een eenzijdige groep. De populatie is alle inwoners, dus niet beter.",
+         "Klopt: loting en het opvolgen van non-respons verkleint de vertekening.",
+         "Koos je \"\"het aantal fietspaden verhogen\"\"? Dan verwar je onderzoek met beleid. De vraag gaat over het meten van meningen, en niet over fietspaden."
+        ],
+        "uh": "Welke aanpak geeft een betere schatting van de mening van alle inwoners?",
+        "ctx": "Een gemeente wil weten of inwoners meer fietspaden willen. De vragenlijst staat op de website en iedereen mag hem invullen. Van de 10 000 aangeschreven inwoners vult 2% de lijst in, 200 mensen. Veel van hen blijken fanatieke fietsers te zijn."
+       },
+       {
+        "v": "Wat is het probleem van de eerste vraag over buslijn 12?",
+        "o": [
+         "\"de vraag heeft een ja-nee-antwoord, denk ik, zeg maar\"",
+         "\"de vraag stuurt door het woord onbetrouwbare\"",
+         "\"de vraag is te kort\"",
+         "\"er is geen populatie\""
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 3,
+        "u": "Bepaal eerst de populatie en de steekproef en vraag je af of elke persoon evenveel kans had om gekozen te worden. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"de vraag heeft een ja-nee-antwoord, denk ik, zeg maar\"\"? Dan denk je dat ja of nee fout is. Het probleem is de formulering, dus sturend.",
+         "Klopt: de formulering suggereert het antwoord dat de vragensteller wil.",
+         "Koos je \"\"de vraag is te kort\"\"? Dan denk je dat de lengte telt. De formulering stuurt, en dat is het probleem. Door de stappen goed na te lopen kom je uit op de vraag stuurt door het woord onbetrouwbare.",
+         "Koos je \"\"er is geen populatie\"\"? Dan denk je dat de populatie ontbreekt. Het probleem is de formulering, dus sturend. Controleer je stap: de juiste uitkomst is de vraag stuurt door het woord onbetrouwbare."
+        ],
+        "uh": "Wat is het probleem van de eerste vraag over buslijn 12?",
+        "ctx": "Een buurtvereniging vraagt inwoners: Bent u het ermee eens dat de erg onbetrouwbare buslijn 12 snel verbeterd moet worden? De antwoorden zijn ja of nee. Een andere onderzoeker stelt later de vraag: Hoe tevreden bent u over buslijn 12? met een schaal van zeer ontevreden tot zeer tevreden."
+       },
+       {
+        "v": "Waarom is de tweede vraag beter?",
+        "o": [
+         "\"ze is korter\"",
+         "\"ze heeft maar twee antwoorden, volgens mij, eigenlijk\"",
+         "\"ze noemt de buslijn niet\"",
+         "\"ze is neutraal en laat alle antwoorden toe\""
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 0,
+        "u": "Bepaal eerst de populatie en de steekproef en vraag je af of elke persoon evenveel kans had om gekozen te worden. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"ze is korter\"\"? Dan denk je dat de lengte telt. De neutraliteit is het punt, dus niet de lengte. Het goede antwoord is ze is neutraal en laat alle antwoorden toe.",
+         "Koos je \"\"ze heeft maar twee antwoorden, volgens mij, eigenlijk\"\"? Dan denk je dat twee antwoorden beter zijn. Ze heeft juist meer antwoorden, dus een schaal.",
+         "Koos je \"\"ze noemt de buslijn niet\"\"? Dan denk je dat de buslijn weggelaten wordt. Ze noemt buslijn 12 ook, maar neutraal.",
+         "Klopt: ze stuurt niet en biedt een schaal met alle meningen."
+        ],
+        "uh": "Waarom is de tweede vraag beter?",
+        "ctx": "Een buurtvereniging vraagt inwoners: Bent u het ermee eens dat de erg onbetrouwbare buslijn 12 snel verbeterd moet worden? De antwoorden zijn ja of nee. Een andere onderzoeker stelt later de vraag: Hoe tevreden bent u over buslijn 12? met een schaal van zeer ontevreden tot zeer tevreden."
+       },
+       {
+        "v": "Welk soort variabele levert de tweede vraag op?",
+        "o": [
+         "\"kwalitatief en ordinaal\"",
+         "\"kwalitatief en nominaal\"",
+         "\"kwantitatief en discreet, zeg maar\"",
+         "\"kwantitatief en continu\""
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 4,
+        "u": "Bepaal eerst de populatie en de steekproef en vraag je af of elke persoon evenveel kans had om gekozen te worden. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: de antwoorden zijn categorieën met een volgorde van ontevreden naar tevreden.",
+         "Koos je \"\"kwalitatief en nominaal\"\"? Dan denk je dat er geen volgorde is. Er is een rangorde, dus ordinaal. Het goede antwoord is kwalitatief en ordinaal.",
+         "Koos je \"\"kwantitatief en discreet, zeg maar\"\"? Dan denk je aan een telling. De antwoorden zijn woorden, dus kwalitatief. Door de stappen goed na te lopen kom je uit op kwalitatief en ordinaal.",
+         "Koos je \"\"kwantitatief en continu\"\"? Dan denk je aan een meting. De antwoorden zijn woorden, dus kwalitatief. Controleer je stap: de juiste uitkomst is kwalitatief en ordinaal."
+        ],
+        "uh": "Welk soort variabele levert de tweede vraag op?",
+        "ctx": "Een buurtvereniging vraagt inwoners: Bent u het ermee eens dat de erg onbetrouwbare buslijn 12 snel verbeterd moet worden? De antwoorden zijn ja of nee. Een andere onderzoeker stelt later de vraag: Hoe tevreden bent u over buslijn 12? met een schaal van zeer ontevreden tot zeer tevreden."
+       },
+       {
+        "v": "Welk gemiddeld maandloon in euro volgt uit de gegevens?",
+        "o": [
+         "\"2000\"",
+         "\"11 000\"",
+         "\"3800\"",
+         "\"20 000\""
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 4,
+        "u": "Bepaal eerst de populatie en de steekproef en vraag je af of elke persoon evenveel kans had om gekozen te worden. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"2000\"\"? Dan neem je het loon van de meeste werknemers. Het gemiddelde telt ook de directeur mee, dus 3800. Het goede antwoord is 3800.",
+         "Koos je \"\"11 000\"\"? Dan neem je het gemiddelde van 2000 en 20 000. De negen werknemers wegen zwaarder, dus 3800. Door de stappen goed na te lopen kom je uit op 3800.",
+         "Klopt: (9 · 2000 + 20 000) : 10 = 38 000 : 10 = 3800. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"20 000\"\"? Dan neem je het loon van de directeur. Het gemiddelde is totaal gedeeld door aantal, dus 3800. Controleer je stap: de juiste uitkomst is 3800."
+        ],
+        "uh": "Welk gemiddeld maandloon in euro volgt uit de gegevens?",
+        "ctx": "Een bedrijf heeft 10 werknemers. Negen werknemers verdienen elk €2000 per maand en de directeur verdient €20 000 per maand. De directie meldt in de krant: een werknemer bij ons verdient gemiddeld €3800 per maand."
+       },
+       {
+        "v": "Welk bedrag is het meest typerende loon van een werknemer in dit bedrijf?",
+        "o": [
+         "\"€3800, want dat is het gemiddelde\"",
+         "\"€2000, want negen van de tien verdienen dat\"",
+         "\"€20 000, want dat is het hoogste loon\"",
+         "\"€11 000, want dat is het midden van 2000 en 20 000\""
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 4,
+        "u": "Bepaal eerst de populatie en de steekproef en vraag je af of elke persoon evenveel kans had om gekozen te worden. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"€3800, want dat is het gemiddelde\"\"? Dan kies je het gemiddelde. Door de directeur is het gemiddelde hoger dan wat de meesten verdienen, dus niet typerend.",
+         "Klopt: de mediaan en de modus zijn 2000. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"€20 000, want dat is het hoogste loon\"\"? Dan kies je het hoogste loon. Dat is maar één persoon, dus niet typerend.",
+         "Koos je \"\"€11 000, want dat is het midden van 2000 en 20 000\"\"? Dan kies je het midden van laagste en hoogste. De meeste werknemers verdienen 2000, dus niet typerend."
+        ],
+        "uh": "Welk bedrag is het meest typerende loon van een werknemer in dit bedrijf?",
+        "ctx": "Een bedrijf heeft 10 werknemers. Negen werknemers verdienen elk €2000 per maand en de directeur verdient €20 000 per maand. De directie meldt in de krant: een werknemer bij ons verdient gemiddeld €3800 per maand."
+       },
+       {
+        "v": "Waarom is de uitspraak van de directie misleidend?",
+        "o": [
+         "\"het gemiddelde is verkeerd berekend\"",
+         "\"gemiddelden mogen nooit worden gebruikt\"",
+         "\"de werknemers verdienen allemaal evenveel, denk ik\"",
+         "\"één uitschieter trekt het gemiddelde omhoog\""
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 4,
+        "u": "Bepaal eerst de populatie en de steekproef en vraag je af of elke persoon evenveel kans had om gekozen te worden. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"het gemiddelde is verkeerd berekend\"\"? Dan denk je dat er een rekenfout is. 3800 is correct berekend, maar niet typerend.",
+         "Koos je \"\"gemiddelden mogen nooit worden gebruikt\"\"? Dan denk je dat een gemiddelde nooit mag. Hier is het niet zinvol door de uitschieter, maar elders wel.",
+         "Koos je \"\"de werknemers verdienen allemaal evenveel, denk ik\"\"? Dan denk je dat de lonen gelijk zijn. De directeur verdient veel meer, en dat vertekent.",
+         "Klopt: één hoog loon verhoogt het gemiddelde ver boven het loon van de meeste werknemers."
+        ],
+        "uh": "Waarom is de uitspraak van de directie misleidend?",
+        "ctx": "Een bedrijf heeft 10 werknemers. Negen werknemers verdienen elk €2000 per maand en de directeur verdient €20 000 per maand. De directie meldt in de krant: een werknemer bij ons verdient gemiddeld €3800 per maand."
+       },
+       {
+        "v": "Welke centrummaat past beter bij deze lonen en waarom?",
+        "o": [
+         "\"de mediaan, want die is niet gevoelig voor een uitschieter\"",
+         "\"het gemiddelde, want het telt iedereen mee\"",
+         "\"de modus, want die is het grootste getal\"",
+         "\"de spreidingsbreedte, want die is een centrummaat, volgens mij\""
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 3,
+        "u": "Bepaal eerst de populatie en de steekproef en vraag je af of elke persoon evenveel kans had om gekozen te worden. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: de mediaan is 2000 en wordt niet beïnvloed door de directeur.",
+         "Koos je \"\"het gemiddelde, want het telt iedereen mee\"\"? Dan kies je de maat die iedereen meetelt. Juist daardoor beïnvloedt de uitschieter het gemiddelde, dus de mediaan is beter.",
+         "Koos je \"\"de modus, want die is het grootste getal\"\"? Dan verwar je de modus met het maximum. De modus is de meest voorkomende waarde, en die is 2000.",
+         "Koos je \"\"de spreidingsbreedte, want die is een centrummaat, volgens mij\"\"? Dan verwar je spreiding met centrum. De spreidingsbreedte is geen centrummaat, dus niet geschikt."
+        ],
+        "uh": "Welke centrummaat past beter bij deze lonen en waarom?",
+        "ctx": "Een bedrijf heeft 10 werknemers. Negen werknemers verdienen elk €2000 per maand en de directeur verdient €20 000 per maand. De directie meldt in de krant: een werknemer bij ons verdient gemiddeld €3800 per maand."
+       }
+      ],
+      "oe": [
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een onderzoeker staat maandagochtend op het station en vraagt 100 reizigers hoe lang ze naar hun werk reizen. De gemiddelde reistijd is 48 minuten. Hij schrijft dat de gemiddelde Nederlander 48 minuten naar zijn werk reist.",
+        "v": "Beoordeel of de steekproef representatief is en of de conclusie is onderbouwd.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "De steekproef bestaat uit treinreizigers op één moment (1p). Mensen zonder trein of op andere tijdstippen komen niet aan bod (1p). De conclusie voor alle Nederlanders is niet onderbouwd (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een onderzoeker legt in een enquête vier variabelen vast: de postcode, het aantal huisdieren, het gewicht in kilogram met decimalen en het opleidingsniveau laag, midden of hoog. Een leerling wil elke variabele indelen.",
+        "v": "Geef van elke variabele het soort.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Postcode is kwalitatief en nominaal (1p). Aantal huisdieren is kwantitatief en discreet, gewicht kwantitatief en continu (1p). Opleidingsniveau is kwalitatief en ordinaal (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "In een vragenlijst staat de vraag: Bent u ook voor het verbeteren van onze mooie en veilige fietspaden? Een leerling vindt dat de vraag stuurt. Hij wil een neutrale formulering opschrijven en uitleggen waarom het beter is.",
+        "v": "Leg uit waarom de vraag stuurt en geef een neutrale vraag.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "De woorden mooie en veilige sturen naar ja (1p). Neutrale vraag: Hoe tevreden bent u over de fietspaden, van zeer ontevreden tot zeer tevreden (1p). Zo kan elke mening worden gegeven (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een school wil 30 leerlingen interviewen uit een lijst van 600 leerlingen. Een leerling stelt voor de eerste 30 leerlingen op de lijst te kiezen. Een andere leerling stelt loting voor. De school wil de beste methode kiezen.",
+        "v": "Beoordeel beide voorstellen en kies de beste.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "De eerste 30 op de lijst geven niet iedereen dezelfde kans, bijvoorbeeld bij alfabetische volgorde (1p). Loting geeft iedereen dezelfde kans (1p). Loting is dus aselect en beter (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een leerling zegt dat een grote steekproef altijd representatief is. Hij verwijst naar een online peiling met 5000 vrijwillige deelnemers. Jij weet dat 200 geloot uit de hele populatie beter kan zijn. Je wilt dit uitleggen.",
+        "v": "Leg uit waarom de grote steekproef niet representatief hoeft te zijn.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Bij vrijwillige deelname doen vooral betrokken mensen mee (1p). Dan is de steekproef vertekend, ook bij 5000 deelnemers (1p). Een kleinere aselecte steekproef is representatiever (1p)."
+       }
+      ]
+     }
     ]
    }
   ]

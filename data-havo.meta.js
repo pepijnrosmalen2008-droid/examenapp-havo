@@ -1431,7 +1431,30 @@ var VAKKEN = [
     "nSv": 102,
     "nOe": 9,
     "nBeg": 19,
-    "hasSam": true
+    "hasSam": true,
+    "leerdoelen": [
+     {
+      "id": "E1",
+      "lo": "wa.E.1",
+      "gs": 2,
+      "naam": "Onderzoeksopzet, steekproef en soorten variabelen beoordelen",
+      "beschrijving": "Je beoordeelt een onderzoeksvraag en steekproef, herkent zelfselectie, lage respons en sturende vragen, bepaalt het soort variabele en beoordeelt of een conclusie is onderbouwd.",
+      "ceStatus": "CE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Onderzoeksvraag en opzet",
+       "Populatie en steekproef",
+       "Soorten variabelen",
+       "Vertekening en sturende vragen",
+       "Conclusies beoordelen"
+      ],
+      "nSv": 27,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
+     }
+    ]
    }
   ]
  },
