@@ -57116,6 +57116,688 @@ var VAKKEN = [
         "u": "Bij vrijwillige deelname doen vooral betrokken mensen mee (1p). Dan is de steekproef vertekend, ook bij 5000 deelnemers (1p). Een kleinere aselecte steekproef is representatiever (1p)."
        }
       ]
+     },
+     {
+      "id": "E2",
+      "lo": "wa.E.2",
+      "gs": 2,
+      "naam": "Presentaties van data kiezen en interpreteren",
+      "beschrijving": "Je kiest bij een vraag de passende representatie, werkt met frequentietabellen, cirkeldiagrammen, steelbladdiagrammen en klassen, leest cumulatieve frequenties af en beoordeelt misleidende presentaties.",
+      "ceStatus": "CE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Representatie kiezen",
+       "Frequentietabel en relatieve frequentie",
+       "Cirkeldiagram en staafdiagram",
+       "Steelbladdiagram en klassen",
+       "Misleidende presentaties"
+      ],
+      "sam": "Kies een representatie die bij de vraag past: cirkeldiagram voor aandelen, lijndiagram voor verloop, histogram voor een verdeling. In een frequentietabel is de relatieve frequentie het aantal gedeeld door het totaal. Cumulatief tel je klassen op. Een as die niet bij 0 begint kan misleiden; reken het echte verschil zelf uit.",
+      "begrippen": [
+       {
+        "t": "Frequentietabel",
+        "d": "Een tabel die laat zien hoe vaak elke waarde of klasse voorkomt."
+       },
+       {
+        "t": "Absolute frequentie",
+        "d": "Het aantal keer dat een waarde voorkomt."
+       },
+       {
+        "t": "Relatieve frequentie",
+        "d": "De absolute frequentie gedeeld door het totaal, vaak als percentage."
+       },
+       {
+        "t": "Cumulatieve frequentie",
+        "d": "Het opgetelde aantal waarnemingen tot en met een bepaalde waarde of klasse."
+       },
+       {
+        "t": "Staafdiagram",
+        "d": "Een diagram met staven voor categorieën of discrete waarden."
+       },
+       {
+        "t": "Histogram",
+        "d": "Een diagram van frequenties van een continue variabele in klassen."
+       },
+       {
+        "t": "Cirkeldiagram",
+        "d": "Een diagram dat een geheel in sectoren verdeelt; 1% hoort bij 3,6 graden."
+       },
+       {
+        "t": "Lijndiagram",
+        "d": "Een diagram dat waarden in de tijd verbindt."
+       },
+       {
+        "t": "Steelbladdiagram",
+        "d": "Een overzicht met stam en bladeren waarbij de oorspronkelijke waarden zichtbaar blijven."
+       },
+       {
+        "t": "Dotplot",
+        "d": "Een diagram met een stip per waarneming boven een getallenlijn."
+       },
+       {
+        "t": "Klassenindeling",
+        "d": "Waarden in groepen verdelen, zoals 0 tot 10 en 10 tot 20."
+       },
+       {
+        "t": "Misleidende presentatie",
+        "d": "Een diagram dat een verkeerd beeld geeft, bijvoorbeeld door een as die niet bij 0 begint."
+       }
+      ],
+      "sv": [
+       {
+        "v": "Welke representatie past bij het aandeel van de delen van een geheel?",
+        "o": [
+         "\"lijndiagram\"",
+         "\"cirkeldiagram\"",
+         "\"steelbladdiagram\"",
+         "\"puntenwolk\""
+        ],
+        "c": 1,
+        "d": 1,
+        "s": 0,
+        "u": "Kijk eerst welke variabele en welke eenheid in de presentatie staan en lees dan de gevraagde waarde af. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"lijndiagram\"\"? Dan denk je aan een ontwikkeling in de tijd. Een lijndiagram toont verloop, en geen aandelen. Het goede antwoord is cirkeldiagram.",
+         "Klopt: een cirkeldiagram toont hoe een geheel is verdeeld in delen.",
+         "Koos je \"\"steelbladdiagram\"\"? Dan denk je aan het tonen van losse waarden. Een steelbladdiagram toont de data zelf, en niet de aandelen.",
+         "Koos je \"\"puntenwolk\"\"? Dan denk je aan twee variabelen. Een puntenwolk toont samenhang, en niet aandelen. Controleer je stap: de juiste uitkomst is cirkeldiagram."
+        ],
+        "uh": "Welke representatie past bij het aandeel van de delen van een geheel?"
+       },
+       {
+        "v": "Welke representatie toont de ontwikkeling van een grootheid in de tijd?",
+        "o": [
+         "\"cirkeldiagram\"",
+         "\"kruistabel\"",
+         "\"boxplot\"",
+         "\"lijndiagram\""
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 0,
+        "u": "Kijk eerst welke variabele en welke eenheid in de presentatie staan en lees dan de gevraagde waarde af. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"cirkeldiagram\"\"? Dan denk je aan aandelen. Een cirkeldiagram toont een verdeling op één moment, en geen verloop.",
+         "Koos je \"\"kruistabel\"\"? Dan denk je aan twee categorische variabelen. Een kruistabel toont aantallen per combinatie, en geen verloop.",
+         "Koos je \"\"boxplot\"\"? Dan denk je aan een samenvatting van de spreiding. Een boxplot toont geen tijd, maar de verdeling. Controleer je stap: de juiste uitkomst is lijndiagram.",
+         "Klopt: een lijndiagram verbindt waarden achter elkaar in de tijd."
+        ],
+        "uh": "Welke representatie toont de ontwikkeling van een grootheid in de tijd?"
+       },
+       {
+        "v": "Van 20 leerlingen hebben er 6 een 7. Welke relatieve frequentie hoort bij het cijfer 7?",
+        "o": [
+         "\"30%\"",
+         "\"6%\"",
+         "\"70%\"",
+         "\"3,3%\""
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 1,
+        "u": "Kijk eerst welke variabele en welke eenheid in de presentatie staan en lees dan de gevraagde waarde af. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: 6 : 20 = 0,30 = 30%. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"6%\"\"? Dan neem je het aantal als percentage. Deel door het totaal, dus 6 : 20. Het goede antwoord is 30%.",
+         "Koos je \"\"70%\"\"? Dan neem je het cijfer als percentage. De relatieve frequentie is aantal gedeeld door totaal, dus 30%. Door de stappen goed na te lopen kom je uit op 30%.",
+         "Koos je \"\"3,3%\"\"? Dan deel je 1 door 30. De relatieve frequentie is 6 gedeeld door 20, dus 30%. Controleer je stap: de juiste uitkomst is 30%."
+        ],
+        "uh": "Van 20 leerlingen hebben er 6 een 7. Welke relatieve frequentie hoort bij het cijfer 7?"
+       },
+       {
+        "v": "Welk totaal geven alle relatieve frequenties van een frequentietabel samen?",
+        "o": [
+         "\"50%\"",
+         "\"het aantal waarnemingen\"",
+         "\"100%\"",
+         "\"1000%\""
+        ],
+        "c": 2,
+        "d": 1,
+        "s": 1,
+        "u": "Kijk eerst welke variabele en welke eenheid in de presentatie staan en lees dan de gevraagde waarde af. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"50%\"\"? Dan denk je dat het de helft is. Alle relatieve frequenties samen vormen het geheel, dus 100%. Het goede antwoord is 100%.",
+         "Koos je \"\"het aantal waarnemingen\"\"? Dan verwar je relatieve met absolute frequenties. De absolute frequenties tellen op tot het aantal, en de relatieve tot 100%.",
+         "Klopt: alle waarnemingen samen zijn het hele geheel, dus 100%.",
+         "Koos je \"\"1000%\"\"? Dan verplaats je de komma. Het totaal is 100% of 1, dus 100%. Controleer je stap: de juiste uitkomst is 100%."
+        ],
+        "uh": "Welk totaal geven alle relatieve frequenties van een frequentietabel samen?"
+       },
+       {
+        "v": "Een cirkeldiagram heeft een sector van 25%. Welke hoek hoort bij die sector?",
+        "o": [
+         "\"25°\"",
+         "\"90°\"",
+         "\"45°\"",
+         "\"180°\""
+        ],
+        "c": 1,
+        "d": 1,
+        "s": 2,
+        "u": "Kijk eerst welke variabele en welke eenheid in de presentatie staan en lees dan de gevraagde waarde af. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"25°\"\"? Dan neem je het percentage als hoek. Reken 25% van 360, dus 90°. Het goede antwoord is 90°.",
+         "Klopt: 25% van 360° is 90°. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"45°\"\"? Dan neem je 12,5%. De sector is 25%, dus 90°. Door de stappen goed na te lopen kom je uit op 90°.",
+         "Koos je \"\"180°\"\"? Dan neem je 50%. De sector is 25%, dus 90°. Controleer je stap: de juiste uitkomst is 90°."
+        ],
+        "uh": "Een cirkeldiagram heeft een sector van 25%. Welke hoek hoort bij die sector?"
+       },
+       {
+        "v": "In een steelbladdiagram staat bij stam 3 de bladeren 4 en 7. Welke waarden zijn dat?",
+        "o": [
+         "\"3,4 en 7, I think\"",
+         "\"347\"",
+         "\"3 en 47\"",
+         "\"34 en 37\""
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 3,
+        "u": "Kijk eerst welke variabele en welke eenheid in de presentatie staan en lees dan de gevraagde waarde af. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"3,4 en 7, I think\"\"? Dan lees je de stam en het blad apart. De stam is het tientallen-deel, dus 34 en 37. Het goede antwoord is 34 en 37.",
+         "Koos je \"\"347\"\"? Dan plak je alles aan elkaar. Elk blad hoort bij een eigen waarde, dus 34 en 37. Door de stappen goed na te lopen kom je uit op 34 en 37.",
+         "Koos je \"\"3 en 47\"\"? Dan lees je het blad als een getal van twee cijfers. Het blad is één cijfer, dus 34 en 37. Controleer je stap: de juiste uitkomst is 34 en 37.",
+         "Klopt: stam 3 met blad 4 is 34 en met blad 7 is 37. Reken dit na met de gegeven gegevens."
+        ],
+        "uh": "In een steelbladdiagram staat bij stam 3 de bladeren 4 en 7. Welke waarden zijn dat?"
+       },
+       {
+        "v": "Een staafdiagram begint op de verticale as bij 96 in plaats van 0. Welk effect heeft dat?",
+        "o": [
+         "\"de verschillen lijken groter dan ze zijn\"",
+         "\"de verschillen lijken kleiner, to be honest\"",
+         "\"er is geen effect\"",
+         "\"de staven zijn even lang\""
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 4,
+        "u": "Kijk eerst welke variabele en welke eenheid in de presentatie staan en lees dan de gevraagde waarde af. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: door de afgeknotte as lijken kleine verschillen groot.",
+         "Koos je \"\"de verschillen lijken kleiner, to be honest\"\"? Dan denk je dat de verschillen verdwijnen. Een afgeknotte as vergroot ze juist, dus groter.",
+         "Koos je \"\"er is geen effect\"\"? Dan denk je dat de as niet uitmaakt. De staafhoogte hangt af van waar de as begint, dus er is wel effect.",
+         "Koos je \"\"de staven zijn even lang\"\"? Dan denk je dat de staven gelijk worden. De staven blijven verschillen, en lijken extremer."
+        ],
+        "uh": "Een staafdiagram begint op de verticale as bij 96 in plaats van 0. Welk effect heeft dat?"
+       },
+       {
+        "v": "Hoeveel leerlingen telt de tabel in totaal?",
+        "o": [
+         "\"5\"",
+         "\"35\"",
+         "\"20\"",
+         "\"6\""
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 1,
+        "u": "Kijk eerst welke variabele en welke eenheid in de presentatie staan en lees dan de gevraagde waarde af. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"5\"\"? Dan neem je het aantal verschillende cijfers. Tel de frequenties op, dus 20. Het goede antwoord is 20.",
+         "Koos je \"\"35\"\"? Dan tel je de cijfers 5 tot 9 op. Je moet de frequenties optellen, dus 20. Door de stappen goed na te lopen kom je uit op 20.",
+         "Klopt: 3 + 6 + 5 + 4 + 2 = 20. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"6\"\"? Dan neem je de hoogste frequentie. Tel alle frequenties op, dus 20. Controleer je stap: de juiste uitkomst is 20."
+        ],
+        "uh": "Hoeveel leerlingen telt de tabel in totaal?",
+        "ctx": "Een docent noteert de cijfers van 20 leerlingen in een frequentietabel: het cijfer 5 komt 3 keer voor, het cijfer 6 komt 6 keer voor, het cijfer 7 komt 5 keer voor, het cijfer 8 komt 4 keer voor en het cijfer 9 komt 2 keer voor."
+       },
+       {
+        "v": "Welke relatieve frequentie heeft het cijfer 6?",
+        "o": [
+         "\"6%\"",
+         "\"30%\"",
+         "\"60%\"",
+         "\"12%\""
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 1,
+        "u": "Kijk eerst welke variabele en welke eenheid in de presentatie staan en lees dan de gevraagde waarde af. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"6%\"\"? Dan neem je de absolute frequentie als percentage. Deel door 20, dus 30%. Het goede antwoord is 30%.",
+         "Klopt: 6 : 20 = 0,30 = 30%. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"60%\"\"? Dan neem je 6 : 10. Het totaal is 20, dus 30%. Door de stappen goed na te lopen kom je uit op 30%.",
+         "Koos je \"\"12%\"\"? Dan deel je 6 door 50. Het totaal is 20, dus 30%. Controleer je stap: de juiste uitkomst is 30%."
+        ],
+        "uh": "Welke relatieve frequentie heeft het cijfer 6?",
+        "ctx": "Een docent noteert de cijfers van 20 leerlingen in een frequentietabel: het cijfer 5 komt 3 keer voor, het cijfer 6 komt 6 keer voor, het cijfer 7 komt 5 keer voor, het cijfer 8 komt 4 keer voor en het cijfer 9 komt 2 keer voor."
+       },
+       {
+        "v": "Hoeveel leerlingen hebben een 8 of hoger?",
+        "o": [
+         "\"4\"",
+         "\"2\"",
+         "\"17\"",
+         "\"6\""
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 1,
+        "u": "Kijk eerst welke variabele en welke eenheid in de presentatie staan en lees dan de gevraagde waarde af. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"4\"\"? Dan neem je alleen de 8. De 9 hoort er ook bij, dus 4 + 2. Het goede antwoord is 6.",
+         "Koos je \"\"2\"\"? Dan neem je alleen de 9. De 8 hoort er ook bij, dus 4 + 2. Door de stappen goed na te lopen kom je uit op 6.",
+         "Koos je \"\"17\"\"? Dan neem je de som van de cijfers 8 en 9. Je moet de frequenties optellen, dus 4 + 2. Controleer je stap: de juiste uitkomst is 6.",
+         "Klopt: 4 leerlingen met een 8 en 2 met een 9 is samen 6."
+        ],
+        "uh": "Hoeveel leerlingen hebben een 8 of hoger?",
+        "ctx": "Een docent noteert de cijfers van 20 leerlingen in een frequentietabel: het cijfer 5 komt 3 keer voor, het cijfer 6 komt 6 keer voor, het cijfer 7 komt 5 keer voor, het cijfer 8 komt 4 keer voor en het cijfer 9 komt 2 keer voor."
+       },
+       {
+        "v": "Hoeveel van de 200 leerlingen gaan met de fiets?",
+        "o": [
+         "\"90\"",
+         "\"45\"",
+         "\"180\"",
+         "\"9\""
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 2,
+        "u": "Kijk eerst welke variabele en welke eenheid in de presentatie staan en lees dan de gevraagde waarde af. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: 45% van 200 is 90. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"45\"\"? Dan neem je het percentage als aantal. Reken 45% van 200, dus 90. Het goede antwoord is 90.",
+         "Koos je \"\"180\"\"? Dan reken je 90% van 200. De sector is 45%, dus 90. Door de stappen goed na te lopen kom je uit op 90.",
+         "Koos je \"\"9\"\"? Dan verplaats je de komma. 45% van 200 is 90, en niet 9. Controleer je stap: de juiste uitkomst is 90."
+        ],
+        "uh": "Hoeveel van de 200 leerlingen gaan met de fiets?",
+        "ctx": "Een school ondervraagt 200 leerlingen over hun vervoer naar school. In het cirkeldiagram is 45% met de fiets, 25% met de bus, 15% lopend en 15% met de auto of brommer. Een leerling berekent aantallen en hoeken van de sectoren."
+       },
+       {
+        "v": "Welke hoek heeft de sector van de bus in het cirkeldiagram?",
+        "o": [
+         "\"25°\"",
+         "\"45°\"",
+         "\"90°\"",
+         "\"162°\""
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 2,
+        "u": "Kijk eerst welke variabele en welke eenheid in de presentatie staan en lees dan de gevraagde waarde af. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"25°\"\"? Dan neem je het percentage als hoek. Reken 25% van 360, dus 90°. Het goede antwoord is 90°.",
+         "Koos je \"\"45°\"\"? Dan neem je 12,5%. De sector is 25%, dus 90°. Door de stappen goed na te lopen kom je uit op 90°.",
+         "Klopt: 25% van 360° is 90°. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"162°\"\"? Dan neem je de sector van de fiets. Gevraagd is de bus, dus 90°. Controleer je stap: de juiste uitkomst is 90°."
+        ],
+        "uh": "Welke hoek heeft de sector van de bus in het cirkeldiagram?",
+        "ctx": "Een school ondervraagt 200 leerlingen over hun vervoer naar school. In het cirkeldiagram is 45% met de fiets, 25% met de bus, 15% lopend en 15% met de auto of brommer. Een leerling berekent aantallen en hoeken van de sectoren."
+       },
+       {
+        "v": "Hoeveel leerlingen lopen of komen met de auto of brommer?",
+        "o": [
+         "\"30\"",
+         "\"60\"",
+         "\"15\"",
+         "\"120\""
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 2,
+        "u": "Kijk eerst welke variabele en welke eenheid in de presentatie staan en lees dan de gevraagde waarde af. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"30\"\"? Dan neem je het percentage als aantal. Reken 30% van 200, dus 60. Het goede antwoord is 60.",
+         "Klopt: 15% + 15% = 30% en 30% van 200 is 60. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"15\"\"? Dan neem je één van de twee groepen. Beide groepen tellen mee, dus 60. Door de stappen goed na te lopen kom je uit op 60.",
+         "Koos je \"\"120\"\"? Dan reken je 60% van 200. De groepen zijn samen 30%, dus 60. Controleer je stap: de juiste uitkomst is 60."
+        ],
+        "uh": "Hoeveel leerlingen lopen of komen met de auto of brommer?",
+        "ctx": "Een school ondervraagt 200 leerlingen over hun vervoer naar school. In het cirkeldiagram is 45% met de fiets, 25% met de bus, 15% lopend en 15% met de auto of brommer. Een leerling berekent aantallen en hoeken van de sectoren."
+       },
+       {
+        "v": "Hoeveel reistijden staan er in het steelbladdiagram?",
+        "o": [
+         "\"4\"",
+         "\"40\"",
+         "\"10\"",
+         "\"11\""
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 3,
+        "u": "Kijk eerst welke variabele en welke eenheid in de presentatie staan en lees dan de gevraagde waarde af. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"4\"\"? Dan neem je het aantal stammen. Tel de bladeren, dus 11. Het goede antwoord is 11.",
+         "Koos je \"\"40\"\"? Dan neem je de grootste waarde. Tel de bladeren, dus 11. Door de stappen goed na te lopen kom je uit op 11.",
+         "Koos je \"\"10\"\"? Dan tel je één blad te weinig. Tel alle bladeren, dus 11. Controleer je stap: de juiste uitkomst is 11.",
+         "Klopt: 3 + 5 + 2 + 1 = 11. Reken dit na met de gegeven gegevens."
+        ],
+        "uh": "Hoeveel reistijden staan er in het steelbladdiagram?",
+        "ctx": "In een steelbladdiagram staan de reistijden in minuten van 11 leerlingen: stam 1 met bladeren 2, 5 en 8; stam 2 met bladeren 0, 3, 5, 5 en 9; stam 3 met bladeren 1 en 4; stam 4 met blad 0. Een leerling leest het diagram af."
+       },
+       {
+        "v": "Welke reistijd komt het vaakst voor?",
+        "o": [
+         "\"25 minuten\"",
+         "\"20 minuten, gewoon\"",
+         "\"5 minuten\"",
+         "\"40 minuten\""
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 3,
+        "u": "Kijk eerst welke variabele en welke eenheid in de presentatie staan en lees dan de gevraagde waarde af. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: bij stam 2 staat het blad 5 twee keer, dus 25 komt twee keer voor.",
+         "Koos je \"\"20 minuten, gewoon\"\"? Dan neem je het eerste getal van stam 2. Het blad 5 staat twee keer, dus 25. Het goede antwoord is 25 minuten.",
+         "Koos je \"\"5 minuten\"\"? Dan neem je alleen het blad. Combineer het blad met de stam, dus 25. Door de stappen goed na te lopen kom je uit op 25 minuten.",
+         "Koos je \"\"40 minuten\"\"? Dan neem je de grootste waarde. De modus is de meest voorkomende waarde, dus 25. Controleer je stap: de juiste uitkomst is 25 minuten."
+        ],
+        "uh": "Welke reistijd komt het vaakst voor?",
+        "ctx": "In een steelbladdiagram staan de reistijden in minuten van 11 leerlingen: stam 1 met bladeren 2, 5 en 8; stam 2 met bladeren 0, 3, 5, 5 en 9; stam 3 met bladeren 1 en 4; stam 4 met blad 0. Een leerling leest het diagram af."
+       },
+       {
+        "v": "Welke mediaan hebben de 11 reistijden?",
+        "o": [
+         "\"23 minuten, denk ik\"",
+         "\"26 minuten\"",
+         "\"25 minuten\"",
+         "\"29 minuten\""
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 3,
+        "u": "Kijk eerst welke variabele en welke eenheid in de presentatie staan en lees dan de gevraagde waarde af. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"23 minuten, denk ik\"\"? Dan neem je de vijfde waarde. Bij 11 waarden is de mediaan de zesde, dus 25. Het goede antwoord is 25 minuten.",
+         "Koos je \"\"26 minuten\"\"? Dan neem je het gemiddelde van alle waarden afgerond. De mediaan is de middelste waarde, dus 25.",
+         "Klopt: de zesde waarde van de geordende rij 12, 15, 18, 20, 23, 25, … is 25.",
+         "Koos je \"\"29 minuten\"\"? Dan neem je de zevende of achtste waarde. De middelste is de zesde, dus 25. Controleer je stap: de juiste uitkomst is 25 minuten."
+        ],
+        "uh": "Welke mediaan hebben de 11 reistijden?",
+        "ctx": "In een steelbladdiagram staan de reistijden in minuten van 11 leerlingen: stam 1 met bladeren 2, 5 en 8; stam 2 met bladeren 0, 3, 5, 5 en 9; stam 3 met bladeren 1 en 4; stam 4 met blad 0. Een leerling leest het diagram af."
+       },
+       {
+        "v": "Waarom is een steelbladdiagram handig bij weinig gegevens?",
+        "o": [
+         "\"het toont alleen de gemiddelde waarde, volgens mij\"",
+         "\"de oorspronkelijke waarden blijven zichtbaar\"",
+         "\"het toont het verloop in de tijd\"",
+         "\"het toont altijd percentages\""
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 0,
+        "u": "Kijk eerst welke variabele en welke eenheid in de presentatie staan en lees dan de gevraagde waarde af. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"het toont alleen de gemiddelde waarde, volgens mij\"\"? Dan denk je dat het gemiddelde wordt getoond. Het toont alle waarden, dus niet alleen het gemiddelde.",
+         "Klopt: je ziet de verdeling én de afzonderlijke waarden.",
+         "Koos je \"\"het toont het verloop in de tijd\"\"? Dan denk je aan een lijndiagram. Een steelbladdiagram toont een verdeling, en geen tijd.",
+         "Koos je \"\"het toont altijd percentages\"\"? Dan denk je aan een cirkeldiagram. Een steelbladdiagram toont de waarden zelf, en geen percentages."
+        ],
+        "uh": "Waarom is een steelbladdiagram handig bij weinig gegevens?",
+        "ctx": "In een steelbladdiagram staan de reistijden in minuten van 11 leerlingen: stam 1 met bladeren 2, 5 en 8; stam 2 met bladeren 0, 3, 5, 5 en 9; stam 3 met bladeren 1 en 4; stam 4 met blad 0. Een leerling leest het diagram af."
+       },
+       {
+        "v": "Met hoeveel procent steeg de omzet van 2019 naar 2020?",
+        "o": [
+         "\"400%\"",
+         "\"2 duizend euro\"",
+         "\"100%\"",
+         "\"ongeveer 2%\""
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 4,
+        "u": "Kijk eerst welke variabele en welke eenheid in de presentatie staan en lees dan de gevraagde waarde af. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"400%\"\"? Dan neem je de lijkende staafhoogte. De werkelijke stijging volgt uit de getallen, dus ongeveer 2%. Het goede antwoord is ongeveer 2%.",
+         "Koos je \"\"2 duizend euro\"\"? Dan geef je de absolute stijging als percentage. Het gevraagde is een percentage, dus ongeveer 2%.",
+         "Koos je \"\"100%\"\"? Dan denk je dat de staaf verdubbelt. De waarden zijn 98 en 100, dus ongeveer 2%. Controleer je stap: de juiste uitkomst is ongeveer 2%.",
+         "Klopt: (100 − 98) : 98 ≈ 0,02, dus ongeveer 2%. Reken dit na met de gegeven gegevens."
+        ],
+        "uh": "Met hoeveel procent steeg de omzet van 2019 naar 2020?",
+        "ctx": "Een staafdiagram toont de omzet van een winkel: 98 duizend euro in 2019 en 100 duizend euro in 2020. De verticale as begint bij 96 en niet bij 0, waardoor de staaf van 2020 vijf keer zo hoog lijkt als die van 2019."
+       },
+       {
+        "v": "Waarom is deze presentatie misleidend?",
+        "o": [
+         "\"de verticale as begint niet bij 0, waardoor het verschil groot lijkt\"",
+         "\"de staven zijn te dik\"",
+         "\"de omzet is verkeerd berekend\"",
+         "\"een staafdiagram mag niet voor omzet, eigenlijk, denk ik, zeg maar\""
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 4,
+        "u": "Kijk eerst welke variabele en welke eenheid in de presentatie staan en lees dan de gevraagde waarde af. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: de staaf van 2020 lijkt vijf keer zo hoog terwijl het verschil klein is.",
+         "Koos je \"\"de staven zijn te dik\"\"? Dan denk je dat de dikte telt. Het gaat om de as die niet bij 0 begint, dus misleidend.",
+         "Koos je \"\"de omzet is verkeerd berekend\"\"? Dan denk je aan een rekenfout. De getallen zijn juist, maar de as vertekent het beeld.",
+         "Koos je \"\"een staafdiagram mag niet voor omzet, eigenlijk, denk ik, zeg maar\"\"? Dan denk je dat het diagramtype fout is. Het diagramtype is geschikt, maar de as vertekent."
+        ],
+        "uh": "Waarom is deze presentatie misleidend?",
+        "ctx": "Een staafdiagram toont de omzet van een winkel: 98 duizend euro in 2019 en 100 duizend euro in 2020. De verticale as begint bij 96 en niet bij 0, waardoor de staaf van 2020 vijf keer zo hoog lijkt als die van 2019."
+       },
+       {
+        "v": "Welke aanpassing maakt de presentatie eerlijker?",
+        "o": [
+         "\"de staven donkerder maken\"",
+         "\"de as nog hoger laten beginnen\"",
+         "\"de verticale as laten beginnen bij 0\"",
+         "\"het diagram vervangen door een cirkeldiagram\""
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 0,
+        "u": "Kijk eerst welke variabele en welke eenheid in de presentatie staan en lees dan de gevraagde waarde af. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"de staven donkerder maken\"\"? Dan denk je dat de kleur telt. Het gaat om de schaal, dus de as bij 0. Het goede antwoord is de verticale as laten beginnen bij 0.",
+         "Koos je \"\"de as nog hoger laten beginnen\"\"? Dan maak je het probleem groter. Dat vergroot het verschil nog meer, dus juist bij 0.",
+         "Klopt: dan zijn de staafhoogtes in verhouding tot de omzet.",
+         "Koos je \"\"het diagram vervangen door een cirkeldiagram\"\"? Dan kies je een diagram dat niet past. Twee jaren vergelijk je met een staaf- of lijndiagram, en de as bij 0."
+        ],
+        "uh": "Welke aanpassing maakt de presentatie eerlijker?",
+        "ctx": "Een staafdiagram toont de omzet van een winkel: 98 duizend euro in 2019 en 100 duizend euro in 2020. De verticale as begint bij 96 en niet bij 0, waardoor de staaf van 2020 vijf keer zo hoog lijkt als die van 2019."
+       },
+       {
+        "v": "Welke representatie past bij de verdeling van de reistijd in klassen?",
+        "o": [
+         "\"cirkeldiagram\"",
+         "\"histogram\"",
+         "\"lijndiagram\"",
+         "\"kruistabel\""
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 0,
+        "u": "Kijk eerst welke variabele en welke eenheid in de presentatie staan en lees dan de gevraagde waarde af. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"cirkeldiagram\"\"? Dan denk je aan aandelen. Een verdeling in klassen toon je in een histogram, en niet in een cirkel.",
+         "Klopt: een histogram toont de frequenties van een continue variabele per klasse.",
+         "Koos je \"\"lijndiagram\"\"? Dan denk je aan verloop in de tijd. Een klassenindeling toon je in een histogram, dus histogram.",
+         "Koos je \"\"kruistabel\"\"? Dan denk je aan twee variabelen. Hier gaat het om één variabele, dus histogram. Controleer je stap: de juiste uitkomst is histogram."
+        ],
+        "uh": "Welke representatie past bij de verdeling van de reistijd in klassen?",
+        "ctx": "Een onderzoeker heeft drie opdrachten: de verdeling van de reistijd van 200 leerlingen in klassen tonen, het aandeel van elk vervoersmiddel tonen en de ontwikkeling van het aantal leerlingen over tien jaar tonen. Hij kiest voor elke opdracht een representatie."
+       },
+       {
+        "v": "Welke representatie past bij het aandeel van elk vervoersmiddel?",
+        "o": [
+         "\"histogram\"",
+         "\"lijndiagram\"",
+         "\"puntenwolk\"",
+         "\"cirkeldiagram\""
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 0,
+        "u": "Kijk eerst welke variabele en welke eenheid in de presentatie staan en lees dan de gevraagde waarde af. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"histogram\"\"? Dan denk je aan klassen van een getal. Vervoersmiddelen zijn categorieën, dus een cirkeldiagram. Het goede antwoord is cirkeldiagram.",
+         "Koos je \"\"lijndiagram\"\"? Dan denk je aan verloop in de tijd. Aandelen toon je in een cirkel, dus cirkeldiagram. Door de stappen goed na te lopen kom je uit op cirkeldiagram.",
+         "Koos je \"\"puntenwolk\"\"? Dan denk je aan twee getallen. Hier gaat het om aandelen, dus cirkeldiagram. Controleer je stap: de juiste uitkomst is cirkeldiagram.",
+         "Klopt: een cirkeldiagram toont hoe een geheel is verdeeld."
+        ],
+        "uh": "Welke representatie past bij het aandeel van elk vervoersmiddel?",
+        "ctx": "Een onderzoeker heeft drie opdrachten: de verdeling van de reistijd van 200 leerlingen in klassen tonen, het aandeel van elk vervoersmiddel tonen en de ontwikkeling van het aantal leerlingen over tien jaar tonen. Hij kiest voor elke opdracht een representatie."
+       },
+       {
+        "v": "Welke representatie past bij de ontwikkeling van het aantal leerlingen over tien jaar?",
+        "o": [
+         "\"lijndiagram\"",
+         "\"cirkeldiagram\"",
+         "\"histogram\"",
+         "\"kruistabel\""
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 0,
+        "u": "Kijk eerst welke variabele en welke eenheid in de presentatie staan en lees dan de gevraagde waarde af. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: een lijndiagram toont een verloop in de tijd. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"cirkeldiagram\"\"? Dan denk je aan aandelen op één moment. Hier gaat het om verloop, dus lijndiagram. Het goede antwoord is lijndiagram.",
+         "Koos je \"\"histogram\"\"? Dan denk je aan klassen van een variabele. Hier gaat het om de tijd, dus lijndiagram. Door de stappen goed na te lopen kom je uit op lijndiagram.",
+         "Koos je \"\"kruistabel\"\"? Dan denk je aan combinaties van categorieën. Hier gaat het om de tijd, dus lijndiagram. Controleer je stap: de juiste uitkomst is lijndiagram."
+        ],
+        "uh": "Welke representatie past bij de ontwikkeling van het aantal leerlingen over tien jaar?",
+        "ctx": "Een onderzoeker heeft drie opdrachten: de verdeling van de reistijd van 200 leerlingen in klassen tonen, het aandeel van elk vervoersmiddel tonen en de ontwikkeling van het aantal leerlingen over tien jaar tonen. Hij kiest voor elke opdracht een representatie."
+       },
+       {
+        "v": "Hoeveel procent van de bezoekers valt in de klasse van 20 tot 30 jaar?",
+        "o": [
+         "\"60%\"",
+         "\"20%\"",
+         "\"30%\"",
+         "\"3%\""
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 1,
+        "u": "Kijk eerst welke variabele en welke eenheid in de presentatie staan en lees dan de gevraagde waarde af. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"60%\"\"? Dan neem je de cumulatieve waarde. De relatieve frequentie van de klasse is 30, dus 30%. Het goede antwoord is 30%.",
+         "Koos je \"\"20%\"\"? Dan neem je het begin van de klasse. Het percentage volgt uit 30 van 100, dus 30%. Door de stappen goed na te lopen kom je uit op 30%.",
+         "Klopt: 30 van de 100 bezoekers is 30%. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"3%\"\"? Dan verplaats je de komma. 30 van 100 is 30%, en niet 3%. Controleer je stap: de juiste uitkomst is 30%."
+        ],
+        "uh": "Hoeveel procent van de bezoekers valt in de klasse van 20 tot 30 jaar?",
+        "ctx": "De leeftijden van 100 bezoekers van een museum zijn ingedeeld in klassen: 0 tot 10 jaar telt 12 bezoekers, 10 tot 20 jaar telt 18, 20 tot 30 jaar telt 30, 30 tot 40 jaar telt 25 en 40 tot 50 jaar telt 15 bezoekers. Een leerling maakt de cumulatieve frequentie."
+       },
+       {
+        "v": "Hoeveel bezoekers zijn jonger dan 30 jaar?",
+        "o": [
+         "\"30\"",
+         "\"60\"",
+         "\"85\"",
+         "\"40\""
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 1,
+        "u": "Kijk eerst welke variabele en welke eenheid in de presentatie staan en lees dan de gevraagde waarde af. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"30\"\"? Dan neem je alleen de klasse 20 tot 30. De jongere klassen tellen mee, dus 60. Het goede antwoord is 60.",
+         "Klopt: 12 + 18 + 30 = 60. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"85\"\"? Dan neem je de bezoekers jonger dan 40. Gevraagd is jonger dan 30, dus 60. Door de stappen goed na te lopen kom je uit op 60.",
+         "Koos je \"\"40\"\"? Dan neem je een gokwaarde. Tel de klassen 12 + 18 + 30, dus 60. Controleer je stap: de juiste uitkomst is 60."
+        ],
+        "uh": "Hoeveel bezoekers zijn jonger dan 30 jaar?",
+        "ctx": "De leeftijden van 100 bezoekers van een museum zijn ingedeeld in klassen: 0 tot 10 jaar telt 12 bezoekers, 10 tot 20 jaar telt 18, 20 tot 30 jaar telt 30, 30 tot 40 jaar telt 25 en 40 tot 50 jaar telt 15 bezoekers. Een leerling maakt de cumulatieve frequentie."
+       },
+       {
+        "v": "Welke cumulatieve relatieve frequentie hoort bij 40 jaar?",
+        "o": [
+         "\"25%\"",
+         "\"100%\"",
+         "\"15%\"",
+         "\"85%\""
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 1,
+        "u": "Kijk eerst welke variabele en welke eenheid in de presentatie staan en lees dan de gevraagde waarde af. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"25%\"\"? Dan neem je alleen de klasse 30 tot 40. Cumulatief tel je alle klassen tot 40, dus 85. Het goede antwoord is 85%.",
+         "Koos je \"\"100%\"\"? Dan neem je het totaal. Bij 40 jaar zijn er nog 15 bezoekers ouder, dus 85%. Door de stappen goed na te lopen kom je uit op 85%.",
+         "Koos je \"\"15%\"\"? Dan neem je de klasse boven 40. Gevraagd is jonger dan 40, dus 85%. Controleer je stap: de juiste uitkomst is 85%.",
+         "Klopt: 12 + 18 + 30 + 25 = 85 van 100 bezoekers is jonger dan 40."
+        ],
+        "uh": "Welke cumulatieve relatieve frequentie hoort bij 40 jaar?",
+        "ctx": "De leeftijden van 100 bezoekers van een museum zijn ingedeeld in klassen: 0 tot 10 jaar telt 12 bezoekers, 10 tot 20 jaar telt 18, 20 tot 30 jaar telt 30, 30 tot 40 jaar telt 25 en 40 tot 50 jaar telt 15 bezoekers. Een leerling maakt de cumulatieve frequentie."
+       },
+       {
+        "v": "In welke klasse ligt de mediaan van de 100 leeftijden?",
+        "o": [
+         "\"20 tot 30 jaar\"",
+         "\"10 tot 20 jaar, to be honest\"",
+         "\"30 tot 40 jaar\"",
+         "\"0 tot 10 jaar\""
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 2,
+        "u": "Kijk eerst welke variabele en welke eenheid in de presentatie staan en lees dan de gevraagde waarde af. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: na 30 bezoekers is nog niet 50 bereikt en na 60 wel, dus de mediaan ligt in 20 tot 30.",
+         "Koos je \"\"10 tot 20 jaar, to be honest\"\"? Dan neem je de klasse waar 30 wordt bereikt. De mediaan is bij 50, dus 20 tot 30. Het goede antwoord is 20 tot 30 jaar.",
+         "Koos je \"\"30 tot 40 jaar\"\"? Dan neem je de klasse waar 60 wordt overschreden. Bij 50 zit je al in 20 tot 30, dus niet later.",
+         "Koos je \"\"0 tot 10 jaar\"\"? Dan neem je de eerste klasse. De mediaan is de middelste waarde, dus 20 tot 30. Controleer je stap: de juiste uitkomst is 20 tot 30 jaar."
+        ],
+        "uh": "In welke klasse ligt de mediaan van de 100 leeftijden?",
+        "ctx": "De leeftijden van 100 bezoekers van een museum zijn ingedeeld in klassen: 0 tot 10 jaar telt 12 bezoekers, 10 tot 20 jaar telt 18, 20 tot 30 jaar telt 30, 30 tot 40 jaar telt 25 en 40 tot 50 jaar telt 15 bezoekers. Een leerling maakt de cumulatieve frequentie."
+       }
+      ],
+      "oe": [
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een docent heeft de cijfers van 20 leerlingen in een frequentietabel gezet: een 5 komt 2 keer voor, een 6 komt 5 keer voor, een 7 komt 8 keer voor, een 8 komt 4 keer voor en een 9 komt 1 keer voor. Een leerling leest de tabel af.",
+        "v": "Bepaal de relatieve frequentie van het cijfer 7 en geef de modus.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "8 van de 20 is 8 : 20 = 0,40 = 40% (1p). De modus is de meest voorkomende waarde (1p). Dat is het cijfer 7 (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een sportclub heeft 300 leden. In een cirkeldiagram is 40% voetbal, 25% tennis, 20% zwemmen en 15% overig. Een leerling berekent de aantallen en de hoeken van de sectoren.",
+        "v": "Bereken het aantal voetballers en de hoek van de sector tennis.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "40% van 300 is 120 voetballers (1p). 25% van 360° is 90° (1p). De hoeken tellen op tot 360° (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "In een steelbladdiagram staan de leeftijden van 9 mensen: stam 1 met bladeren 0, 4 en 9; stam 2 met bladeren 2, 5, 5 en 8; stam 3 met bladeren 1 en 6. Een leerling leest het diagram af.",
+        "v": "Geef de modus, de mediaan en de spreidingsbreedte.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Modus is 25 (1p). De mediaan is de vijfde waarde: 25 (1p). Spreidingsbreedte is 36 − 10 = 26 (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "De leeftijden van 50 bezoekers zijn ingedeeld: 0 tot 10 jaar telt 8, 10 tot 20 jaar telt 12, 20 tot 30 jaar telt 20 en 30 tot 40 jaar telt 10 bezoekers. Een leerling maakt een cumulatieve frequentietabel.",
+        "v": "Bepaal het percentage jonger dan 20 en jonger dan 30.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Jonger dan 20: 8 + 12 = 20 van 50 is 40% (1p). Jonger dan 30: 40 van 50 is 80% (1p). Cumulatief tel je de klassen op (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een staafdiagram toont de winst van twee bedrijven: bedrijf A heeft 52 en bedrijf B heeft 56. De verticale as begint bij 50, waardoor B meer dan twee keer zo hoog lijkt. Een leerling vindt de presentatie misleidend.",
+        "v": "Bereken het werkelijke verschil in procenten en leg uit waarom het diagram misleidt.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "(56 − 52) : 52 ≈ 0,077, dus ongeveer 8% (1p). De as begint niet bij 0 (1p). Daardoor lijkt het verschil veel groter (1p)."
+       }
+      ]
      }
     ]
    }

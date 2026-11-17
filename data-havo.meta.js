@@ -1453,6 +1453,27 @@ var VAKKEN = [
       "nOe": 5,
       "nBeg": 12,
       "hasSam": true
+     },
+     {
+      "id": "E2",
+      "lo": "wa.E.2",
+      "gs": 2,
+      "naam": "Presentaties van data kiezen en interpreteren",
+      "beschrijving": "Je kiest bij een vraag de passende representatie, werkt met frequentietabellen, cirkeldiagrammen, steelbladdiagrammen en klassen, leest cumulatieve frequenties af en beoordeelt misleidende presentaties.",
+      "ceStatus": "CE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Representatie kiezen",
+       "Frequentietabel en relatieve frequentie",
+       "Cirkeldiagram en staafdiagram",
+       "Steelbladdiagram en klassen",
+       "Misleidende presentaties"
+      ],
+      "nSv": 27,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
      }
     ]
    }
