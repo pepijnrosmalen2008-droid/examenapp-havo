@@ -1558,6 +1558,27 @@ var VAKKEN = [
       "nOe": 5,
       "nBeg": 12,
       "hasSam": true
+     },
+     {
+      "id": "E7",
+      "lo": "wa.E.7",
+      "gs": 2,
+      "naam": "Groepen vergelijken en samenhang beschrijven met kruistabel en puntenwolk",
+      "beschrijving": "Je vergelijkt groepen met percentages en procentpunten, leest kruistabellen met rij- en kolompercentages, beschrijft richting en sterkte van het verband in een puntenwolk en interpreteert in de context.",
+      "ceStatus": "CE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Kruistabel lezen",
+       "Groepen vergelijken",
+       "Puntenwolk lezen",
+       "Richting en sterkte",
+       "Interpreteren in de context"
+      ],
+      "nSv": 27,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
      }
     ]
    }

@@ -1,0 +1,682 @@
+{
+ "id": "E7",
+ "lo": "wa.E.7",
+ "gs": 2,
+ "naam": "Groepen vergelijken en samenhang beschrijven met kruistabel en puntenwolk",
+ "beschrijving": "Je vergelijkt groepen met percentages en procentpunten, leest kruistabellen met rij- en kolompercentages, beschrijft richting en sterkte van het verband in een puntenwolk en interpreteert in de context.",
+ "ceStatus": "CE",
+ "binas": "",
+ "val": "",
+ "onderwerpen": [
+  "Kruistabel lezen",
+  "Groepen vergelijken",
+  "Puntenwolk lezen",
+  "Richting en sterkte",
+  "Interpreteren in de context"
+ ],
+ "sam": "In een kruistabel reken je per groep het percentage uit en vergelijk je groepen met procentpunten en factor. Een puntenwolk heeft een positief, negatief of geen verband, met een sterkte die afhangt van hoe dicht de punten bij een lijn liggen. Samenhang is geen oorzaak; interpreteer gemiddeld en in de context.",
+ "begrippen": [
+  {
+   "t": "Kruistabel",
+   "d": "Een tabel met aantallen per combinatie van twee categorische variabelen."
+  },
+  {
+   "t": "Randtotaal",
+   "d": "Het totaal van een rij of kolom, aan de rand van de kruistabel."
+  },
+  {
+   "t": "Rijpercentage",
+   "d": "Percentage binnen een rij, zoals het aandeel voldoendes bij sporters."
+  },
+  {
+   "t": "Kolompercentage",
+   "d": "Percentage binnen een kolom, zoals het aandeel sporters bij de voldoendes."
+  },
+  {
+   "t": "Procentpunten",
+   "d": "Het verschil tussen twee percentages, zoals 75% min 50% is 25 procentpunten."
+  },
+  {
+   "t": "Relatief verschil",
+   "d": "De verhouding van twee percentages, zoals 30% is drie keer 10%."
+  },
+  {
+   "t": "Groepen vergelijken",
+   "d": "Vergelijk percentages of gemiddelden per groep op hetzelfde kenmerk."
+  },
+  {
+   "t": "Puntenwolk",
+   "d": "Een diagram met een punt per waarneming voor twee kwantitatieve variabelen."
+  },
+  {
+   "t": "Positief en negatief verband",
+   "d": "Bij een positief verband stijgen de punten, bij een negatief verband dalen ze."
+  },
+  {
+   "t": "Sterkte van het verband",
+   "d": "Hoe dichter de punten bij een lijn liggen, hoe sterker het verband."
+  },
+  {
+   "t": "Geen verband",
+   "d": "Een puntenwolk zonder patroon."
+  },
+  {
+   "t": "Interpreteren in de context",
+   "d": "Zeg wat de samenhang betekent voor de variabelen en groepen, zonder een oorzaak te claimen."
+  }
+ ],
+ "sv": [
+  {
+   "v": "In een kruistabel is het totaal 200 en een cel bevat 50. Welk percentage is dat van het totaal?",
+   "o": [
+    "\"50%\"",
+    "\"25%\"",
+    "\"4%\"",
+    "\"250%\""
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 0,
+   "u": "Reken eerst om naar percentages per groep en vergelijk de groepen op hetzelfde kenmerk. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"50%\"\"? Dan neem je 50 als percentage. Deel door het totaal 200, dus 25%. Het goede antwoord is 25%.",
+    "Klopt: 50 : 200 = 0,25 = 25%. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"4%\"\"? Dan deel je 200 door 50. Het percentage is aantal gedeeld door totaal, dus 25%. Door de stappen goed na te lopen kom je uit op 25%.",
+    "Koos je \"\"250%\"\"? Dan verplaats je de komma. 50 : 200 is 0,25, dus 25%. Controleer je stap: de juiste uitkomst is 25%."
+   ],
+   "uh": "In een kruistabel is het totaal 200 en een cel bevat 50. Welk percentage is dat van het totaal?"
+  },
+  {
+   "v": "Wat staat in een cel van een kruistabel?",
+   "o": [
+    "\"het gemiddelde van de rij\"",
+    "\"het percentage van het totaal van alle waarnemingen altijd\"",
+    "\"alleen de totalen\"",
+    "\"het aantal waarnemingen dat bij beide categorieën hoort\""
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 0,
+   "u": "Reken eerst om naar percentages per groep en vergelijk de groepen op hetzelfde kenmerk. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"het gemiddelde van de rij\"\"? Dan denk je aan een gemiddelde. Een cel telt waarnemingen, dus het aantal bij beide categorieën.",
+    "Koos je \"\"het percentage van het totaal van alle waarnemingen altijd\"\"? Dan denk je dat een cel altijd een percentage is. Eerst staan er aantallen, en daarna reken je om.",
+    "Koos je \"\"alleen de totalen\"\"? Dan denk je aan de randen. De cellen binnen de tabel geven aantallen per combinatie, dus beide categorieën.",
+    "Klopt: elke cel hoort bij een combinatie van een rij- en een kolomcategorie."
+   ],
+   "uh": "Wat staat in een cel van een kruistabel?"
+  },
+  {
+   "v": "Groep A heeft 20% en groep B heeft 35%. Hoe groot is het verschil in procentpunten?",
+   "o": [
+    "\"15 procentpunten\"",
+    "\"75 procentpunten\"",
+    "\"55 procentpunten\"",
+    "\"1,75 procentpunten\""
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 1,
+   "u": "Reken eerst om naar percentages per groep en vergelijk de groepen op hetzelfde kenmerk. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: 35 − 20 = 15 procentpunten. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"75 procentpunten\"\"? Dan neem je de relatieve toename. Het verschil in procentpunten is een aftrekking, dus 15.",
+    "Koos je \"\"55 procentpunten\"\"? Dan tel je de percentages op. Het verschil is een aftrekking, dus 15. Door de stappen goed na te lopen kom je uit op 15 procentpunten.",
+    "Koos je \"\"1,75 procentpunten\"\"? Dan deel je 35 door 20. Dat is een verhouding, en geen verschil in procentpunten. Controleer je stap: de juiste uitkomst is 15 procentpunten."
+   ],
+   "uh": "Groep A heeft 20% en groep B heeft 35%. Hoe groot is het verschil in procentpunten?"
+  },
+  {
+   "v": "Groep A heeft 10% en groep B heeft 30%. Hoeveel keer zo groot is het percentage bij B?",
+   "o": [
+    "\"20 keer\"",
+    "\"0,33 keer\"",
+    "\"3 keer\"",
+    "\"300 keer\""
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 1,
+   "u": "Reken eerst om naar percentages per groep en vergelijk de groepen op hetzelfde kenmerk. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"20 keer\"\"? Dan neem je het verschil in procentpunten. De verhouding is 30 : 10, dus 3 keer. Het goede antwoord is 3 keer.",
+    "Koos je \"\"0,33 keer\"\"? Dan draai je de breuk om. B is groter dan A, dus 3 keer. Door de stappen goed na te lopen kom je uit op 3 keer.",
+    "Klopt: 30 : 10 = 3. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"300 keer\"\"? Dan verplaats je de komma. 30 : 10 is 3, dus 3 keer. Controleer je stap: de juiste uitkomst is 3 keer."
+   ],
+   "uh": "Groep A heeft 10% en groep B heeft 30%. Hoeveel keer zo groot is het percentage bij B?"
+  },
+  {
+   "v": "In een puntenwolk gaan de punten van linksonder naar rechtsboven. Welk soort verband is dat?",
+   "o": [
+    "\"een negatief verband\"",
+    "\"een positief verband\"",
+    "\"geen verband\"",
+    "\"een omgekeerd verband, really\""
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 2,
+   "u": "Reken eerst om naar percentages per groep en vergelijk de groepen op hetzelfde kenmerk. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"een negatief verband\"\"? Dan draai je de richting om. Hier stijgt y bij toenemende x, dus positief. Het goede antwoord is een positief verband.",
+    "Klopt: als x toeneemt, neemt y gemiddeld ook toe. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"geen verband\"\"? Dan denk je dat er geen patroon is. De punten vormen een stijgende lijn, dus positief. Door de stappen goed na te lopen kom je uit op een positief verband.",
+    "Koos je \"\"een omgekeerd verband, really\"\"? Dan verwar je het met een daling. De punten stijgen, dus positief. Controleer je stap: de juiste uitkomst is een positief verband."
+   ],
+   "uh": "In een puntenwolk gaan de punten van linksonder naar rechtsboven. Welk soort verband is dat?"
+  },
+  {
+   "v": "De punten van een puntenwolk liggen dicht om een rechte lijn. Welke sterkte heeft het verband?",
+   "o": [
+    "\"zwak\"",
+    "\"negatief\"",
+    "\"geen\"",
+    "\"sterk\""
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 3,
+   "u": "Reken eerst om naar percentages per groep en vergelijk de groepen op hetzelfde kenmerk. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"zwak\"\"? Dan denk je aan punten die ver uit elkaar liggen. Hier liggen ze dicht bij de lijn, dus sterk. Het goede antwoord is sterk.",
+    "Koos je \"\"negatief\"\"? Dan verwar je de sterkte met de richting. Sterkte gaat over hoe dicht de punten liggen, dus sterk.",
+    "Koos je \"\"geen\"\"? Dan denk je dat er geen patroon is. De punten liggen langs een lijn, dus sterk. Controleer je stap: de juiste uitkomst is sterk.",
+    "Klopt: hoe dichter de punten bij een lijn liggen, hoe sterker het verband."
+   ],
+   "uh": "De punten van een puntenwolk liggen dicht om een rechte lijn. Welke sterkte heeft het verband?"
+  },
+  {
+   "v": "Een puntenwolk toont geen enkel patroon. Welke conclusie past?",
+   "o": [
+    "\"er is geen verband tussen de twee variabelen\"",
+    "\"er is een sterk positief verband\"",
+    "\"er is een sterk negatief verband\"",
+    "\"de ene variabele veroorzaakt de andere, to be honest\""
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 4,
+   "u": "Reken eerst om naar percentages per groep en vergelijk de groepen op hetzelfde kenmerk. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: zonder patroon is er geen statistische samenhang.",
+    "Koos je \"\"er is een sterk positief verband\"\"? Dan zie je een stijgende lijn die er niet is. De punten liggen verspreid en stijgen niet, dus er is geen verband.",
+    "Koos je \"\"er is een sterk negatief verband\"\"? Dan zie je een dalende lijn die er niet is. Een verband vraagt om een richting, en die ontbreekt hier.",
+    "Koos je \"\"de ene variabele veroorzaakt de andere, to be honest\"\"? Dan trek je een oorzaak uit een tekening zonder samenhang. Zonder samenhang valt er niets te veroorzaken, dus geen verband."
+   ],
+   "uh": "Een puntenwolk toont geen enkel patroon. Welke conclusie past?"
+  },
+  {
+   "v": "Hoeveel leerlingen telt de kruistabel in totaal?",
+   "o": [
+    "\"120\"",
+    "\"130\"",
+    "\"200\"",
+    "\"90\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 0,
+   "u": "Reken eerst om naar percentages per groep en vergelijk de groepen op hetzelfde kenmerk. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"120\"\"? Dan neem je alleen de sporters. Tel de niet-sporters mee, dus 200. Het goede antwoord is 200.",
+    "Koos je \"\"130\"\"? Dan neem je het aantal voldoendes. Het totaal is het aantal leerlingen, dus 200. Door de stappen goed na te lopen kom je uit op 200.",
+    "Klopt: 120 sporters plus 80 niet-sporters is 200. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"90\"\"? Dan neem je een cel. Het totaal is de som van alle cellen, dus 200. Controleer je stap: de juiste uitkomst is 200."
+   ],
+   "uh": "Hoeveel leerlingen telt de kruistabel in totaal?",
+   "ctx": "Een kruistabel toont 200 leerlingen naar sporten en cijfer. Van de 120 leerlingen die sporten hebben er 90 een voldoende gemiddelde en 30 een onvoldoende. Van de 80 leerlingen die niet sporten hebben er 40 een voldoende en 40 een onvoldoende."
+  },
+  {
+   "v": "Welk percentage van de sporters heeft een voldoende?",
+   "o": [
+    "\"45%\"",
+    "\"75%\"",
+    "\"69%\"",
+    "\"90%\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 1,
+   "u": "Reken eerst om naar percentages per groep en vergelijk de groepen op hetzelfde kenmerk. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"45%\"\"? Dan neem je 90 : 200. Je moet delen door het aantal sporters, dus 75%. Het goede antwoord is 75%.",
+    "Klopt: 90 : 120 = 0,75 = 75%. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"69%\"\"? Dan neem je het deel van de voldoendes dat sport. Gevraagd is het deel van de sporters, dus 75%. Door de stappen goed na te lopen kom je uit op 75%.",
+    "Koos je \"\"90%\"\"? Dan neem je het aantal als percentage. Deel door 120, dus 75%. Controleer je stap: de juiste uitkomst is 75%."
+   ],
+   "uh": "Welk percentage van de sporters heeft een voldoende?",
+   "ctx": "Een kruistabel toont 200 leerlingen naar sporten en cijfer. Van de 120 leerlingen die sporten hebben er 90 een voldoende gemiddelde en 30 een onvoldoende. Van de 80 leerlingen die niet sporten hebben er 40 een voldoende en 40 een onvoldoende."
+  },
+  {
+   "v": "Met hoeveel procentpunten verschilt het aandeel voldoendes tussen sporters en niet-sporters?",
+   "o": [
+    "\"1,5\"",
+    "\"125\"",
+    "\"50\"",
+    "\"25\""
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 1,
+   "u": "Reken eerst om naar percentages per groep en vergelijk de groepen op hetzelfde kenmerk. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"1,5\"\"? Dan neem je de verhouding 75 : 50. Gevraagd is het verschil in procentpunten, dus 25. Het goede antwoord is 25.",
+    "Koos je \"\"125\"\"? Dan tel je de percentages op. Het verschil is een aftrekking, dus 25. Door de stappen goed na te lopen kom je uit op 25.",
+    "Koos je \"\"50\"\"? Dan neem je het aandeel bij niet-sporters. Gevraagd is het verschil, dus 25. Controleer je stap: de juiste uitkomst is 25.",
+    "Klopt: sporters 75% en niet-sporters 50%, dus 75 − 50 = 25."
+   ],
+   "uh": "Met hoeveel procentpunten verschilt het aandeel voldoendes tussen sporters en niet-sporters?",
+   "ctx": "Een kruistabel toont 200 leerlingen naar sporten en cijfer. Van de 120 leerlingen die sporten hebben er 90 een voldoende gemiddelde en 30 een onvoldoende. Van de 80 leerlingen die niet sporten hebben er 40 een voldoende en 40 een onvoldoende."
+  },
+  {
+   "v": "Hoeveel van de 200 leerlingen komen in totaal te laat?",
+   "o": [
+    "\"30\"",
+    "\"15\"",
+    "\"150\"",
+    "\"45\""
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 0,
+   "u": "Reken eerst om naar percentages per groep en vergelijk de groepen op hetzelfde kenmerk. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: 15 + 15 = 30. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"15\"\"? Dan neem je één groep. Tel beide groepen, dus 30. Het goede antwoord is 30.",
+    "Koos je \"\"150\"\"? Dan neem je het aantal ontbijters. Tel de leerlingen die te laat komen, dus 30. Door de stappen goed na te lopen kom je uit op 30.",
+    "Koos je \"\"45\"\"? Dan tel je 15 + 30. De groepen zijn 15 en 15, dus 30. Controleer je stap: de juiste uitkomst is 30."
+   ],
+   "uh": "Hoeveel van de 200 leerlingen komen in totaal te laat?",
+   "ctx": "In een kruistabel van 200 leerlingen staat ontbijten tegenover te laat komen. Van de 150 leerlingen die ontbijten komen er 15 te laat. Van de 50 leerlingen die niet ontbijten komen er 15 te laat. Een leerling vergelijkt de twee groepen."
+  },
+  {
+   "v": "Met hoeveel procentpunten verschilt het percentage te laat tussen ontbijters en niet-ontbijters?",
+   "o": [
+    "\"15\"",
+    "\"3\"",
+    "\"20\"",
+    "\"30\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 1,
+   "u": "Reken eerst om naar percentages per groep en vergelijk de groepen op hetzelfde kenmerk. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"15\"\"? Dan neem je het aantal te laat per groep. Gevraagd is het verschil in percentages, dus 20. Het goede antwoord is 20.",
+    "Koos je \"\"3\"\"? Dan neem je de verhouding van de percentages. Gevraagd is het verschil in procentpunten, dus 20. Door de stappen goed na te lopen kom je uit op 20.",
+    "Klopt: ontbijters 15 : 150 = 10% en niet-ontbijters 15 : 50 = 30%, dus 20.",
+    "Koos je \"\"30\"\"? Dan neem je het percentage van de niet-ontbijters. Trek het percentage van de ontbijters af, dus 20. Controleer je stap: de juiste uitkomst is 20."
+   ],
+   "uh": "Met hoeveel procentpunten verschilt het percentage te laat tussen ontbijters en niet-ontbijters?",
+   "ctx": "In een kruistabel van 200 leerlingen staat ontbijten tegenover te laat komen. Van de 150 leerlingen die ontbijten komen er 15 te laat. Van de 50 leerlingen die niet ontbijten komen er 15 te laat. Een leerling vergelijkt de twee groepen."
+  },
+  {
+   "v": "Hoeveel keer zo groot is het percentage te laat bij niet-ontbijters als bij ontbijters?",
+   "o": [
+    "\"20 keer\"",
+    "\"3 keer\"",
+    "\"0,33 keer\"",
+    "\"1,5 keer\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 1,
+   "u": "Reken eerst om naar percentages per groep en vergelijk de groepen op hetzelfde kenmerk. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"20 keer\"\"? Dan neem je het verschil in procentpunten. De verhouding is 30 : 10, dus 3 keer. Het goede antwoord is 3 keer.",
+    "Klopt: 30% : 10% = 3. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"0,33 keer\"\"? Dan draai je de breuk om. Niet-ontbijters komen vaker te laat, dus 3 keer. Door de stappen goed na te lopen kom je uit op 3 keer.",
+    "Koos je \"\"1,5 keer\"\"? Dan neem je de verhouding van de aantallen 15 : 10. Het gaat om percentages, dus 30 : 10. Controleer je stap: de juiste uitkomst is 3 keer."
+   ],
+   "uh": "Hoeveel keer zo groot is het percentage te laat bij niet-ontbijters als bij ontbijters?",
+   "ctx": "In een kruistabel van 200 leerlingen staat ontbijten tegenover te laat komen. Van de 150 leerlingen die ontbijten komen er 15 te laat. Van de 50 leerlingen die niet ontbijten komen er 15 te laat. Een leerling vergelijkt de twee groepen."
+  },
+  {
+   "v": "Welke richting heeft het verband tussen uren oefenen en cijfer?",
+   "o": [
+    "\"negatief: meer uren hoort bij een lager cijfer, eigenlijk\"",
+    "\"geen: de uren en het cijfer hangen niet samen\"",
+    "\"constant: het cijfer is altijd 6\"",
+    "\"positief: meer uren hoort bij een hoger cijfer\""
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 2,
+   "u": "Reken eerst om naar percentages per groep en vergelijk de groepen op hetzelfde kenmerk. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"negatief: meer uren hoort bij een lager cijfer, eigenlijk\"\"? Dan draai je de richting om. Het cijfer stijgt met de uren, dus positief.",
+    "Koos je \"\"geen: de uren en het cijfer hangen niet samen\"\"? Dan denk je dat er geen patroon is. De punten stijgen duidelijk, dus positief.",
+    "Koos je \"\"constant: het cijfer is altijd 6\"\"? Dan denk je dat het cijfer gelijk blijft. Het cijfer loopt op van 4,5 naar 8,5, dus positief.",
+    "Klopt: de punten stijgen van links naar rechts. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Welke richting heeft het verband tussen uren oefenen en cijfer?",
+   "ctx": "Een leerling noteert voor 8 klasgenoten het aantal uren oefenen per week en het toetscijfer: (1; 4,5), (2; 5,0), (3; 5,5), (4; 6,5), (5; 7,0), (6; 7,5), (7; 8,0) en (8; 8,5). Hij tekent een puntenwolk met de uren op de horizontale as."
+  },
+  {
+   "v": "Hoe sterk is het verband?",
+   "o": [
+    "\"sterk, de punten liggen dicht bij een rechte lijn\"",
+    "\"zwak, de punten liggen verspreid, gewoon, volgens mij\"",
+    "\"geen, er is geen patroon\"",
+    "\"negatief, de punten dalen\""
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 3,
+   "u": "Reken eerst om naar percentages per groep en vergelijk de groepen op hetzelfde kenmerk. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: elk uur extra geeft ongeveer 0,5 punt extra. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"zwak, de punten liggen verspreid, gewoon, volgens mij\"\"? Dan denk je dat de punten uit elkaar liggen. Ze liggen netjes op een lijn, dus sterk.",
+    "Koos je \"\"geen, er is geen patroon\"\"? Dan denk je dat er geen patroon is. Er is een duidelijke lijn, dus sterk. Door de stappen goed na te lopen kom je uit op sterk, de punten liggen dicht bij een rechte lijn.",
+    "Koos je \"\"negatief, de punten dalen\"\"? Dan verwar je de sterkte met de richting. De richting is positief, en de sterkte is groot."
+   ],
+   "uh": "Hoe sterk is het verband?",
+   "ctx": "Een leerling noteert voor 8 klasgenoten het aantal uren oefenen per week en het toetscijfer: (1; 4,5), (2; 5,0), (3; 5,5), (4; 6,5), (5; 7,0), (6; 7,5), (7; 8,0) en (8; 8,5). Hij tekent een puntenwolk met de uren op de horizontale as."
+  },
+  {
+   "v": "Welk cijfer verwacht je bij 4,5 uur oefenen?",
+   "o": [
+    "\"ongeveer 5,5, denk ik\"",
+    "\"ongeveer 8,0\"",
+    "\"ongeveer 6,8\"",
+    "\"ongeveer 4,5\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 4,
+   "u": "Reken eerst om naar percentages per groep en vergelijk de groepen op hetzelfde kenmerk. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"ongeveer 5,5, denk ik\"\"? Dan neem je een te laag cijfer. Bij 4,5 uur ligt het cijfer tussen 6,5 en 7,0, dus ongeveer 6,8.",
+    "Koos je \"\"ongeveer 8,0\"\"? Dan neem je een te hoog cijfer. Bij 4,5 uur zit je tussen 6,5 en 7,0, dus ongeveer 6,8. Door de stappen goed na te lopen kom je uit op ongeveer 6,8.",
+    "Klopt: tussen 4 uur (6,5) en 5 uur (7,0) ligt 4,5 uur bij ongeveer 6,75.",
+    "Koos je \"\"ongeveer 4,5\"\"? Dan neem je het aantal uren als cijfer. Het cijfer volgt uit de lijn, dus ongeveer 6,8. Controleer je stap: de juiste uitkomst is ongeveer 6,8."
+   ],
+   "uh": "Welk cijfer verwacht je bij 4,5 uur oefenen?",
+   "ctx": "Een leerling noteert voor 8 klasgenoten het aantal uren oefenen per week en het toetscijfer: (1; 4,5), (2; 5,0), (3; 5,5), (4; 6,5), (5; 7,0), (6; 7,5), (7; 8,0) en (8; 8,5). Hij tekent een puntenwolk met de uren op de horizontale as."
+  },
+  {
+   "v": "Wat zegt het verband in de context?",
+   "o": [
+    "\"elke leerling haalt precies 0,5 meer per uur, volgens mij\"",
+    "\"wie meer oefent, haalt gemiddeld een hoger cijfer\"",
+    "\"oefenen verlaagt het cijfer\"",
+    "\"het cijfer bepaalt hoeveel je oefent\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 4,
+   "u": "Reken eerst om naar percentages per groep en vergelijk de groepen op hetzelfde kenmerk. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"elke leerling haalt precies 0,5 meer per uur, volgens mij\"\"? Dan denk je dat het voor elk individu geldt. Het is een gemiddeld verband, dus gemiddeld.",
+    "Klopt: het is een samenhang tussen oefenen en het cijfer, uitgedrukt in de context.",
+    "Koos je \"\"oefenen verlaagt het cijfer\"\"? Dan draai je het verband om. Het verband is positief, dus meer oefenen hoort bij een hoger cijfer.",
+    "Koos je \"\"het cijfer bepaalt hoeveel je oefent\"\"? Dan draai je de oorzaak om. Een puntenwolk toont samenhang, en geen oorzaak."
+   ],
+   "uh": "Wat zegt het verband in de context?",
+   "ctx": "Een leerling noteert voor 8 klasgenoten het aantal uren oefenen per week en het toetscijfer: (1; 4,5), (2; 5,0), (3; 5,5), (4; 6,5), (5; 7,0), (6; 7,5), (7; 8,0) en (8; 8,5). Hij tekent een puntenwolk met de uren op de horizontale as."
+  },
+  {
+   "v": "Welke richting heeft het verband tussen ijsverkoop en verdrinkingsincidenten?",
+   "o": [
+    "\"negatief: meer ijs hoort bij minder incidenten\"",
+    "\"geen verband\"",
+    "\"constant verband\"",
+    "\"positief: meer ijs hoort bij meer incidenten\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 3,
+   "u": "Reken eerst om naar percentages per groep en vergelijk de groepen op hetzelfde kenmerk. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"negatief: meer ijs hoort bij minder incidenten\"\"? Dan draai je de richting om. De puntenwolk stijgt, dus positief.",
+    "Koos je \"\"geen verband\"\"? Dan denk je dat er geen patroon is. De wolk stijgt duidelijk, dus positief. Door de stappen goed na te lopen kom je uit op positief: meer ijs hoort bij meer incidenten.",
+    "Koos je \"\"constant verband\"\"? Dan denk je dat de waarden gelijk blijven. De punten stijgen, dus positief. Controleer je stap: de juiste uitkomst is positief: meer ijs hoort bij meer incidenten.",
+    "Klopt: beide stijgen samen, dus een positief verband. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Welke richting heeft het verband tussen ijsverkoop en verdrinkingsincidenten?",
+   "ctx": "In de zomer stijgt in een kuststad zowel de verkoop van ijsjes als het aantal verdrinkingsincidenten. Een puntenwolk van de maandelijkse ijsverkoop tegen het aantal incidenten laat een duidelijk stijgend patroon zien. Een leerling onderzoekt wat dat betekent."
+  },
+  {
+   "v": "Betekent dit verband dat ijs eten verdrinkingen veroorzaakt?",
+   "o": [
+    "\"nee, een statistisch verband is geen oorzakelijk verband\"",
+    "\"ja, want de punten stijgen samen, you know, I think, I suppose\"",
+    "\"ja, want het verband is sterk\"",
+    "\"nee, want er is geen verband\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 4,
+   "u": "Reken eerst om naar percentages per groep en vergelijk de groepen op hetzelfde kenmerk. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: samenhang bewijst geen oorzaak. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"ja, want de punten stijgen samen, you know, I think, I suppose\"\"? Dan trek je een causale conclusie uit samenhang. Samen stijgen betekent niet veroorzaken, dus nee.",
+    "Koos je \"\"ja, want het verband is sterk\"\"? Dan denk je dat een sterk verband oorzaak bewijst. Ook een sterk verband is geen bewijs, dus nee.",
+    "Koos je \"\"nee, want er is geen verband\"\"? Dan ontken je het verband. Het verband bestaat wel, maar het is geen oorzaak. Controleer je stap: de juiste uitkomst is nee, een statistisch verband is geen oorzakelijk verband."
+   ],
+   "uh": "Betekent dit verband dat ijs eten verdrinkingen veroorzaakt?",
+   "ctx": "In de zomer stijgt in een kuststad zowel de verkoop van ijsjes als het aantal verdrinkingsincidenten. Een puntenwolk van de maandelijkse ijsverkoop tegen het aantal incidenten laat een duidelijk stijgend patroon zien. Een leerling onderzoekt wat dat betekent."
+  },
+  {
+   "v": "Welke derde variabele verklaart het verband waarschijnlijk?",
+   "o": [
+    "\"de prijs van een ijsje, gewoon, volgens mij, eigenlijk\"",
+    "\"het aantal winkels\"",
+    "\"de temperatuur: bij warm weer is er meer ijs en meer zwemmen\"",
+    "\"het aantal leerlingen\""
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 4,
+   "u": "Reken eerst om naar percentages per groep en vergelijk de groepen op hetzelfde kenmerk. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"de prijs van een ijsje, gewoon, volgens mij, eigenlijk\"\"? Dan denk je aan de prijs. Die beïnvloedt de incidenten niet, dus de temperatuur. Het goede antwoord is de temperatuur: bij warm weer is er meer ijs en meer zwemmen.",
+    "Koos je \"\"het aantal winkels\"\"? Dan denk je aan winkels. Die beïnvloeden verdrinkingen niet, dus de temperatuur. Door de stappen goed na te lopen kom je uit op de temperatuur: bij warm weer is er meer ijs en meer zwemmen.",
+    "Klopt: een derde variabele beïnvloedt beide. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"het aantal leerlingen\"\"? Dan denk je aan scholen. Dat heeft geen directe link, dus de temperatuur. Controleer je stap: de juiste uitkomst is de temperatuur: bij warm weer is er meer ijs en meer zwemmen."
+   ],
+   "uh": "Welke derde variabele verklaart het verband waarschijnlijk?",
+   "ctx": "In de zomer stijgt in een kuststad zowel de verkoop van ijsjes als het aantal verdrinkingsincidenten. Een puntenwolk van de maandelijkse ijsverkoop tegen het aantal incidenten laat een duidelijk stijgend patroon zien. Een leerling onderzoekt wat dat betekent."
+  },
+  {
+   "v": "Welke richting heeft het verband tussen gamen en cijfer?",
+   "o": [
+    "\"positief: meer gamen hoort bij een hoger cijfer, denk ik\"",
+    "\"negatief: meer gamen hoort bij een lager cijfer\"",
+    "\"geen verband\"",
+    "\"constant\""
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 3,
+   "u": "Reken eerst om naar percentages per groep en vergelijk de groepen op hetzelfde kenmerk. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"positief: meer gamen hoort bij een hoger cijfer, denk ik\"\"? Dan draai je de richting om. De punten dalen, dus negatief.",
+    "Klopt: de punten dalen van links naar rechts. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"geen verband\"\"? Dan denk je dat er geen patroon is. De punten dalen, dus negatief. Door de stappen goed na te lopen kom je uit op negatief: meer gamen hoort bij een lager cijfer.",
+    "Koos je \"\"constant\"\"? Dan denk je dat het cijfer gelijk blijft. De punten dalen, dus negatief. Controleer je stap: de juiste uitkomst is negatief: meer gamen hoort bij een lager cijfer."
+   ],
+   "uh": "Welke richting heeft het verband tussen gamen en cijfer?",
+   "ctx": "Een onderzoeker legt voor 12 leerlingen het aantal uren gamen per week en het gemiddelde cijfer vast. In de puntenwolk liggen de punten van linksboven naar rechtsonder, maar ze liggen wijd uit elkaar. Een leerling beschrijft het verband."
+  },
+  {
+   "v": "Hoe sterk is het verband, nu de punten wijd uit elkaar liggen?",
+   "o": [
+    "\"sterk, want de punten dalen\"",
+    "\"sterk, want het verband is negatief\"",
+    "\"geen, want de punten liggen niet op een lijn\"",
+    "\"zwak, er is veel spreiding rond de trend\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 3,
+   "u": "Reken eerst om naar percentages per groep en vergelijk de groepen op hetzelfde kenmerk. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"sterk, want de punten dalen\"\"? Dan verwar je de richting met de sterkte. Wijd uit elkaar betekent zwak, dus zwak.",
+    "Koos je \"\"sterk, want het verband is negatief\"\"? Dan denk je dat negatief sterk is. Het gaat om hoe dicht de punten bij de lijn liggen, dus zwak.",
+    "Koos je \"\"geen, want de punten liggen niet op een lijn\"\"? Dan denk je dat er niets is. Er is wel een dalende trend, dus zwak.",
+    "Klopt: de punten liggen niet dicht bij een lijn. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Hoe sterk is het verband, nu de punten wijd uit elkaar liggen?",
+   "ctx": "Een onderzoeker legt voor 12 leerlingen het aantal uren gamen per week en het gemiddelde cijfer vast. In de puntenwolk liggen de punten van linksboven naar rechtsonder, maar ze liggen wijd uit elkaar. Een leerling beschrijft het verband."
+  },
+  {
+   "v": "Wat kun je in de context concluderen?",
+   "o": [
+    "\"leerlingen die meer gamen halen gemiddeld een iets lager cijfer, maar niet allemaal\"",
+    "\"gamen veroorzaakt lagere cijfers\"",
+    "\"alle gamers halen lage cijfers\"",
+    "\"gamen en cijfers hebben niets met elkaar te maken, zeg maar, gewoon, volgens mij\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 4,
+   "u": "Reken eerst om naar percentages per groep en vergelijk de groepen op hetzelfde kenmerk. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: het verband is zwak en geldt gemiddeld. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"gamen veroorzaakt lagere cijfers\"\"? Dan trek je een causale conclusie. Samenhang bewijst geen oorzaak, dus gemiddeld.",
+    "Koos je \"\"alle gamers halen lage cijfers\"\"? Dan denk je dat het voor iedereen geldt. Het verband is zwak, dus niet voor allen.",
+    "Koos je \"\"gamen en cijfers hebben niets met elkaar te maken, zeg maar, gewoon, volgens mij\"\"? Dan denk je dat er geen verband is. Er is een zwakke dalende trend, dus wel een verband."
+   ],
+   "uh": "Wat kun je in de context concluderen?",
+   "ctx": "Een onderzoeker legt voor 12 leerlingen het aantal uren gamen per week en het gemiddelde cijfer vast. In de puntenwolk liggen de punten van linksboven naar rechtsonder, maar ze liggen wijd uit elkaar. Een leerling beschrijft het verband."
+  },
+  {
+   "v": "Welk percentage van de leerlingen met een voldoende is sporter?",
+   "o": [
+    "\"75%\"",
+    "\"45%\"",
+    "\"69%\"",
+    "\"50%\""
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 0,
+   "u": "Reken eerst om naar percentages per groep en vergelijk de groepen op hetzelfde kenmerk. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"75%\"\"? Dan neem je het deel van de sporters met een voldoende. Gevraagd is het deel van de voldoendes dat sport, dus 69%.",
+    "Koos je \"\"45%\"\"? Dan neem je 90 : 200. Je moet delen door het aantal voldoendes, dus 69%. Door de stappen goed na te lopen kom je uit op 69%.",
+    "Klopt: 90 : 130 ≈ 0,69, dat is een kolompercentage. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"50%\"\"? Dan neem je het deel van de niet-sporters. Gevraagd is het deel van de voldoendes dat sport, dus 69%. Controleer je stap: de juiste uitkomst is 69%."
+   ],
+   "uh": "Welk percentage van de leerlingen met een voldoende is sporter?",
+   "ctx": "Dezelfde kruistabel van 200 leerlingen naar sporten en cijfer: sporters met voldoende 90, sporters met onvoldoende 30, niet-sporters met voldoende 40 en niet-sporters met onvoldoende 40. De totalen zijn 130 voldoendes en 70 onvoldoendes. Een leerling rekent met rijpercentages en kolompercentages."
+  },
+  {
+   "v": "Welk percentage van de sporters heeft een voldoende?",
+   "o": [
+    "\"69%\"",
+    "\"75%\"",
+    "\"45%\"",
+    "\"90%\""
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 0,
+   "u": "Reken eerst om naar percentages per groep en vergelijk de groepen op hetzelfde kenmerk. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"69%\"\"? Dan neem je het deel van de voldoendes dat sport. Gevraagd is het deel van de sporters, dus 75%. Het goede antwoord is 75%.",
+    "Klopt: 90 : 120 = 0,75, dat is een rijpercentage. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"45%\"\"? Dan neem je 90 : 200. Deel door het aantal sporters, dus 75%. Door de stappen goed na te lopen kom je uit op 75%.",
+    "Koos je \"\"90%\"\"? Dan neem je het aantal als percentage. Deel door 120, dus 75%. Controleer je stap: de juiste uitkomst is 75%."
+   ],
+   "uh": "Welk percentage van de sporters heeft een voldoende?",
+   "ctx": "Dezelfde kruistabel van 200 leerlingen naar sporten en cijfer: sporters met voldoende 90, sporters met onvoldoende 30, niet-sporters met voldoende 40 en niet-sporters met onvoldoende 40. De totalen zijn 130 voldoendes en 70 onvoldoendes. Een leerling rekent met rijpercentages en kolompercentages."
+  },
+  {
+   "v": "Welke vergelijking is eerlijk om te zien of sporten samenhangt met een voldoende?",
+   "o": [
+    "\"90 sporters tegen 40 niet-sporters met een voldoende\"",
+    "\"69% tegen 31% van de voldoendes\"",
+    "\"130 voldoendes tegen 70 onvoldoendes\"",
+    "\"75% van de sporters tegen 50% van de niet-sporters\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 1,
+   "u": "Reken eerst om naar percentages per groep en vergelijk de groepen op hetzelfde kenmerk. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"90 sporters tegen 40 niet-sporters met een voldoende\"\"? Dan vergelijk je aantallen. De groepen verschillen van grootte, dus gebruik je percentages.",
+    "Koos je \"\"69% tegen 31% van de voldoendes\"\"? Dan vergelijk je delen van de voldoendes. Dat zegt iets over wie een voldoende heeft, en niet over het effect van sporten.",
+    "Koos je \"\"130 voldoendes tegen 70 onvoldoendes\"\"? Dan vergelijk je de uitkomsten zonder de groepen. Je moet per groep vergelijken, dus 75% tegen 50%.",
+    "Klopt: je vergelijkt de groepen op hetzelfde kenmerk, het percentage voldoendes."
+   ],
+   "uh": "Welke vergelijking is eerlijk om te zien of sporten samenhangt met een voldoende?",
+   "ctx": "Dezelfde kruistabel van 200 leerlingen naar sporten en cijfer: sporters met voldoende 90, sporters met onvoldoende 30, niet-sporters met voldoende 40 en niet-sporters met onvoldoende 40. De totalen zijn 130 voldoendes en 70 onvoldoendes. Een leerling rekent met rijpercentages en kolompercentages."
+  },
+  {
+   "v": "Mag je concluderen dat sporten tot hogere cijfers leidt?",
+   "o": [
+    "\"nee, het is samenhang; er kunnen andere factoren zijn\"",
+    "\"ja, want sporters hebben vaker een voldoende, to be honest\"",
+    "\"ja, want het verschil is 25 procentpunten\"",
+    "\"nee, want er is geen verschil\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 4,
+   "u": "Reken eerst om naar percentages per groep en vergelijk de groepen op hetzelfde kenmerk. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: de tabel toont samenhang en geen oorzaak. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"ja, want sporters hebben vaker een voldoende, to be honest\"\"? Dan trek je een causale conclusie. Een verschil tussen groepen bewijst geen oorzaak, dus nee.",
+    "Koos je \"\"ja, want het verschil is 25 procentpunten\"\"? Dan denk je dat een groot verschil oorzaak bewijst. Samenhang blijft samenhang, dus nee.",
+    "Koos je \"\"nee, want er is geen verschil\"\"? Dan ontken je het verschil. Het verschil is er wel, maar het is geen oorzaak."
+   ],
+   "uh": "Mag je concluderen dat sporten tot hogere cijfers leidt?",
+   "ctx": "Dezelfde kruistabel van 200 leerlingen naar sporten en cijfer: sporters met voldoende 90, sporters met onvoldoende 30, niet-sporters met voldoende 40 en niet-sporters met onvoldoende 40. De totalen zijn 130 voldoendes en 70 onvoldoendes. Een leerling rekent met rijpercentages en kolompercentages."
+  }
+ ],
+ "oe": [
+  {
+   "bron": "Examenstijl",
+   "ctx": "In een kruistabel van 100 leerlingen staat een bijbaan tegenover te laat komen. Van de 40 leerlingen met een bijbaan komen er 12 te laat. Van de 60 leerlingen zonder bijbaan komen er 9 te laat. Een leerling vergelijkt de groepen.",
+   "v": "Bereken de percentages per groep en het verschil in procentpunten.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "12 : 40 = 30% en 9 : 60 = 15% (1p). Verschil 15 procentpunten (1p). De groep met bijbaan komt twee keer zo vaak te laat (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een puntenwolk toont vier punten (2; 3), (4; 5), (6; 7) en (8; 9) voor het aantal uren oefenen en het cijfer. De punten liggen precies op een rechte lijn. Een leerling beschrijft het verband en schat het cijfer bij 5 uur.",
+   "v": "Beschrijf de richting en sterkte en schat het cijfer bij 5 uur.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "De punten stijgen, dus positief (1p). Ze liggen op een lijn, dus sterk (1p). Het cijfer is y = x + 1, dus 6 bij 5 uur (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "In een kruistabel van 200 leerlingen fietsen 100 en gaan 100 met de bus. Van de fietsers zit 60 in de onderbouw en 40 in de bovenbouw. Van de busreizigers zit 20 in de onderbouw en 80 in de bovenbouw. Een leerling rekent met rijpercentages en kolompercentages.",
+   "v": "Bereken het percentage fietsers in de onderbouw en het percentage onderbouwers dat fietst.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Van de fietsers is 60 : 100 = 60% onderbouw (1p). Van de 80 onderbouwers fietst 60 : 80 = 75% (1p). Dit zijn een kolompercentage en een rijpercentage (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een puntenwolk van het aantal uren slaap en het aantal fouten in een toets laat dalende punten zien die dicht om een lijn liggen. Een leerling beschrijft het verband en kijkt naar de context.",
+   "v": "Beschrijf de richting, de sterkte en de betekenis in de context.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "De punten dalen, dus negatief (1p). Ze liggen dicht bij een lijn, dus sterk (1p). Wie meer slaapt maakt gemiddeld minder fouten, maar dit is samenhang en geen bewezen oorzaak (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een leerling zegt dat het verschil tussen 20% en 35% gelijk is aan 15%. Jij weet dat dit procentpunten zijn en dat het relatieve verschil anders is. Je wilt het goed formuleren.",
+   "v": "Geef het verschil in procentpunten en het relatieve verschil.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "35 − 20 = 15 procentpunten (1p). 35 : 20 = 1,75 (1p). Het percentage is 75% hoger, niet 15% (1p)."
+  }
+ ]
+}
