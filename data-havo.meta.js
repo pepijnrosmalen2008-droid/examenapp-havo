@@ -1516,6 +1516,27 @@ var VAKKEN = [
       "nOe": 5,
       "nBeg": 12,
       "hasSam": true
+     },
+     {
+      "id": "E5",
+      "lo": "wa.E.5",
+      "gs": 2,
+      "naam": "Verdelingen beschrijven en de vuistregels van de normale verdeling",
+      "beschrijving": "Je beschrijft de vorm van een verdeling, herkent uitschieters, gebruikt de 68-95-99,7-regel bij een normale verdeling voor percentages en aantallen en beoordeelt of de regels passen.",
+      "ceStatus": "CE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Vorm van een verdeling",
+       "Staarten en uitschieters",
+       "De drie vuistregels",
+       "Percentages en aantallen",
+       "Beoordelen of de regels passen"
+      ],
+      "nSv": 27,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
      }
     ]
    }

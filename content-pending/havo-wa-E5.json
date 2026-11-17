@@ -1,0 +1,682 @@
+{
+ "id": "E5",
+ "lo": "wa.E.5",
+ "gs": 2,
+ "naam": "Verdelingen beschrijven en de vuistregels van de normale verdeling",
+ "beschrijving": "Je beschrijft de vorm van een verdeling, herkent uitschieters, gebruikt de 68-95-99,7-regel bij een normale verdeling voor percentages en aantallen en beoordeelt of de regels passen.",
+ "ceStatus": "CE",
+ "binas": "",
+ "val": "",
+ "onderwerpen": [
+  "Vorm van een verdeling",
+  "Staarten en uitschieters",
+  "De drie vuistregels",
+  "Percentages en aantallen",
+  "Beoordelen of de regels passen"
+ ],
+ "sam": "Een verdeling is klokvormig, meertoppig, uniform of scheef. Bij een bij benadering normale verdeling ligt 68%, 95% en 99,7% binnen 1, 2 en 3 afwijkingen van het gemiddelde. Het percentage buiten het interval verdeel je gelijk over twee staarten. Bij een scheve verdeling passen de regels niet; dan gebruik je mediaan en interkwartielafstand.",
+ "begrippen": [
+  {
+   "t": "Verdeling",
+   "d": "Hoe vaak de waarden voorkomen, bijvoorbeeld in een histogram."
+  },
+  {
+   "t": "Klokvormig",
+   "d": "Eén top in het midden en symmetrisch aan beide kanten."
+  },
+  {
+   "t": "Meertoppig",
+   "d": "Twee of meer toppen; wijst vaak op meerdere groepen."
+  },
+  {
+   "t": "Uniform",
+   "d": "Alle klassen even hoog; alle waarden komen even vaak voor."
+  },
+  {
+   "t": "Scheef",
+   "d": "Een lange staart naar één kant; rechtsscheef of linksscheef."
+  },
+  {
+   "t": "Staart",
+   "d": "Het uiteinde van een verdeling aan de linker- of rechterkant."
+  },
+  {
+   "t": "Uitschieter",
+   "d": "Een waarde ver buiten de rest van de data."
+  },
+  {
+   "t": "Normale verdeling",
+   "d": "Een klokvormige verdeling die door gemiddelde en standaardafwijking is bepaald."
+  },
+  {
+   "t": "68-95-99,7-regel",
+   "d": "Ongeveer 68%, 95% en 99,7% ligt binnen 1, 2 en 3 standaardafwijkingen van het gemiddelde."
+  },
+  {
+   "t": "Standaardafwijking",
+   "d": "Typische afstand tot het gemiddelde; bepaalt de breedte van de verdeling."
+  },
+  {
+   "t": "Percentage buiten het interval",
+   "d": "Bij 95% binnen ligt 5% buiten, dus 2,5% aan elke kant."
+  },
+  {
+   "t": "Beoordelen of normaal",
+   "d": "Alleen bij een klokvormige verdeling passen de vuistregels."
+  }
+ ],
+ "sv": [
+  {
+   "v": "Een histogram heeft één top in het midden en is symmetrisch. Welke vorm heeft de verdeling?",
+   "o": [
+    "\"meertoppig\"",
+    "\"klokvormig\"",
+    "\"uniform\"",
+    "\"scheef\""
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 0,
+   "u": "Bepaal eerst de vorm van de verdeling en gebruik pas daarna de vuistregels als de verdeling bij benadering normaal is. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"meertoppig\"\"? Dan denk je aan meerdere toppen. Hier is er maar één top, dus klokvormig. Het goede antwoord is klokvormig.",
+    "Klopt: één top met aan beide kanten een gelijke afname is klokvormig.",
+    "Koos je \"\"uniform\"\"? Dan denk je aan gelijke hoogtes. Hier is er een duidelijke top, dus klokvormig. Door de stappen goed na te lopen kom je uit op klokvormig.",
+    "Koos je \"\"scheef\"\"? Dan denk je aan een lange staart. De verdeling is symmetrisch, dus klokvormig. Controleer je stap: de juiste uitkomst is klokvormig."
+   ],
+   "uh": "Een histogram heeft één top in het midden en is symmetrisch. Welke vorm heeft de verdeling?"
+  },
+  {
+   "v": "Een histogram heeft twee duidelijke toppen. Hoe heet zo'n verdeling?",
+   "o": [
+    "\"klokvormig\"",
+    "\"uniform\"",
+    "\"scheef\"",
+    "\"meertoppig\""
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 0,
+   "u": "Bepaal eerst de vorm van de verdeling en gebruik pas daarna de vuistregels als de verdeling bij benadering normaal is. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"klokvormig\"\"? Dan denk je aan één top. Hier zijn er twee, dus meertoppig. Het goede antwoord is meertoppig.",
+    "Koos je \"\"uniform\"\"? Dan denk je aan alle klassen even hoog. Hier zijn er toppen, dus meertoppig. Door de stappen goed na te lopen kom je uit op meertoppig.",
+    "Koos je \"\"scheef\"\"? Dan denk je aan een lange staart. Hier zijn er twee toppen, dus meertoppig. Controleer je stap: de juiste uitkomst is meertoppig.",
+    "Klopt: meer dan één top betekent een meertoppige verdeling."
+   ],
+   "uh": "Een histogram heeft twee duidelijke toppen. Hoe heet zo'n verdeling?"
+  },
+  {
+   "v": "Alle klassen van een histogram zijn even hoog. Welke vorm heeft de verdeling?",
+   "o": [
+    "\"uniform\"",
+    "\"klokvormig\"",
+    "\"meertoppig\"",
+    "\"scheef\""
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 0,
+   "u": "Bepaal eerst de vorm van de verdeling en gebruik pas daarna de vuistregels als de verdeling bij benadering normaal is. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: gelijke hoogtes betekent dat alle waarden even vaak voorkomen.",
+    "Koos je \"\"klokvormig\"\"? Dan denk je aan een top in het midden. Hier is er geen top, dus uniform. Het goede antwoord is uniform.",
+    "Koos je \"\"meertoppig\"\"? Dan denk je aan meerdere toppen. Hier zijn alle klassen gelijk, dus uniform. Door de stappen goed na te lopen kom je uit op uniform.",
+    "Koos je \"\"scheef\"\"? Dan denk je aan een lange staart. Hier zijn alle klassen gelijk, dus uniform. Controleer je stap: de juiste uitkomst is uniform."
+   ],
+   "uh": "Alle klassen van een histogram zijn even hoog. Welke vorm heeft de verdeling?"
+  },
+  {
+   "v": "Een enkele waarde ligt ver buiten de rest van de data. Hoe heet zo'n waarde?",
+   "o": [
+    "\"het centrum\"",
+    "\"de modus\"",
+    "\"een uitschieter\"",
+    "\"een kwartiel, you know\""
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 1,
+   "u": "Bepaal eerst de vorm van de verdeling en gebruik pas daarna de vuistregels als de verdeling bij benadering normaal is. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"het centrum\"\"? Dan denk je aan het midden van de data. Een waarde ver buiten de rest is geen centrum, dus een uitschieter.",
+    "Koos je \"\"de modus\"\"? Dan denk je aan de meest voorkomende waarde. Een waarde ver buiten de rest komt zelden voor, dus een uitschieter.",
+    "Klopt: een waarde ver buiten de rest is een uitschieter.",
+    "Koos je \"\"een kwartiel, you know\"\"? Dan denk je aan een grens bij 25% of 75%. Een waarde ver buiten de rest is geen kwartiel, dus een uitschieter."
+   ],
+   "uh": "Een enkele waarde ligt ver buiten de rest van de data. Hoe heet zo'n waarde?"
+  },
+  {
+   "v": "Welk percentage ligt bij een normale verdeling ongeveer binnen één standaardafwijking van het gemiddelde?",
+   "o": [
+    "\"95%\"",
+    "\"68%\"",
+    "\"50%\"",
+    "\"99,7%\""
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 2,
+   "u": "Bepaal eerst de vorm van de verdeling en gebruik pas daarna de vuistregels als de verdeling bij benadering normaal is. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"95%\"\"? Dan neem je twee standaardafwijkingen. Binnen één standaardafwijking is het minder, dus 68%. Het goede antwoord is 68%.",
+    "Klopt: tussen μ − σ en μ + σ ligt ongeveer 68%. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"50%\"\"? Dan neem je de mediaan. Binnen één standaardafwijking ligt meer dan de helft, dus 68%. Door de stappen goed na te lopen kom je uit op 68%.",
+    "Koos je \"\"99,7%\"\"? Dan neem je drie standaardafwijkingen. Binnen één is het minder, dus 68%. Controleer je stap: de juiste uitkomst is 68%."
+   ],
+   "uh": "Welk percentage ligt bij een normale verdeling ongeveer binnen één standaardafwijking van het gemiddelde?"
+  },
+  {
+   "v": "Binnen hoeveel standaardafwijkingen van het gemiddelde ligt bij een normale verdeling 95%?",
+   "o": [
+    "\"binnen 1 standaardafwijking\"",
+    "\"binnen 3 standaardafwijkingen, I think\"",
+    "\"binnen 0,5 standaardafwijking\"",
+    "\"binnen 2 standaardafwijkingen\""
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 2,
+   "u": "Bepaal eerst de vorm van de verdeling en gebruik pas daarna de vuistregels als de verdeling bij benadering normaal is. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"binnen 1 standaardafwijking\"\"? Dan neem je het 68%-gebied. Voor 95% heb je meer ruimte nodig, dus 2. Het goede antwoord is binnen 2 standaardafwijkingen.",
+    "Koos je \"\"binnen 3 standaardafwijkingen, I think\"\"? Dan neem je het 99,7%-gebied. Voor 95% is minder genoeg, dus 2. Door de stappen goed na te lopen kom je uit op binnen 2 standaardafwijkingen.",
+    "Koos je \"\"binnen 0,5 standaardafwijking\"\"? Dan neem je een te klein gebied. 95% vraagt om een ruimer interval, dus 2. Controleer je stap: de juiste uitkomst is binnen 2 standaardafwijkingen.",
+    "Klopt: tussen μ − 2σ en μ + 2σ ligt ongeveer 95%. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Binnen hoeveel standaardafwijkingen van het gemiddelde ligt bij een normale verdeling 95%?"
+  },
+  {
+   "v": "Een normale verdeling heeft gemiddelde 50 en standaardafwijking 4. Tussen welke waarden ligt ongeveer 68%?",
+   "o": [
+    "\"tussen 46 en 54\"",
+    "\"tussen 42 en 58, to be honest\"",
+    "\"tussen 38 en 62\"",
+    "\"tussen 49 en 51\""
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 3,
+   "u": "Bepaal eerst de vorm van de verdeling en gebruik pas daarna de vuistregels als de verdeling bij benadering normaal is. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: 50 − 4 = 46 en 50 + 4 = 54. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"tussen 42 en 58, to be honest\"\"? Dan neem je twee standaardafwijkingen. Voor 68% neem je één, dus 46 en 54. Het goede antwoord is tussen 46 en 54.",
+    "Koos je \"\"tussen 38 en 62\"\"? Dan neem je drie standaardafwijkingen. Voor 68% neem je één, dus 46 en 54. Door de stappen goed na te lopen kom je uit op tussen 46 en 54.",
+    "Koos je \"\"tussen 49 en 51\"\"? Dan neem je een standaardafwijking van 1. De standaardafwijking is 4, dus 46 en 54. Controleer je stap: de juiste uitkomst is tussen 46 en 54."
+   ],
+   "uh": "Een normale verdeling heeft gemiddelde 50 en standaardafwijking 4. Tussen welke waarden ligt ongeveer 68%?"
+  },
+  {
+   "v": "Welke vorm heeft histogram B met twee toppen, en wat suggereert dat?",
+   "o": [
+    "\"klokvormig, één groep\"",
+    "\"uniform, geen duidelijke groepen, zeg maar, gewoon\"",
+    "\"meertoppig, mogelijk twee groepen in de data\"",
+    "\"scheef, een uitschieter\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 0,
+   "u": "Bepaal eerst de vorm van de verdeling en gebruik pas daarna de vuistregels als de verdeling bij benadering normaal is. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"klokvormig, één groep\"\"? Dan denk je aan één top. B heeft er twee, dus meertoppig. Het goede antwoord is meertoppig, mogelijk twee groepen in de data.",
+    "Koos je \"\"uniform, geen duidelijke groepen, zeg maar, gewoon\"\"? Dan denk je aan gelijke hoogtes. B heeft toppen, dus meertoppig. Door de stappen goed na te lopen kom je uit op meertoppig, mogelijk twee groepen in de data.",
+    "Klopt: twee toppen wijzen vaak op twee verschillende groepen.",
+    "Koos je \"\"scheef, een uitschieter\"\"? Dan denk je aan een lange staart. B heeft twee toppen, dus meertoppig. Controleer je stap: de juiste uitkomst is meertoppig, mogelijk twee groepen in de data."
+   ],
+   "uh": "Welke vorm heeft histogram B met twee toppen, en wat suggereert dat?",
+   "ctx": "Een onderzoeker bekijkt vier histogrammen. Histogram A heeft één top in het midden en is symmetrisch. Histogram B heeft twee duidelijke toppen, bij 20 en bij 60. Histogram C heeft alle klassen even hoog. Histogram D heeft een top links en een lange staart naar rechts."
+  },
+  {
+   "v": "Welke vorm heeft histogram C?",
+   "o": [
+    "\"klokvormig\"",
+    "\"uniform\"",
+    "\"meertoppig\"",
+    "\"rechtsscheef\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 0,
+   "u": "Bepaal eerst de vorm van de verdeling en gebruik pas daarna de vuistregels als de verdeling bij benadering normaal is. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"klokvormig\"\"? Dan denk je aan een top. C heeft geen top, dus uniform. Het goede antwoord is uniform.",
+    "Klopt: alle klassen zijn even hoog, dus alle waarden komen even vaak voor.",
+    "Koos je \"\"meertoppig\"\"? Dan denk je aan toppen. Alle klassen zijn gelijk, dus uniform. Door de stappen goed na te lopen kom je uit op uniform.",
+    "Koos je \"\"rechtsscheef\"\"? Dan denk je aan een staart. Alle klassen zijn gelijk, dus uniform. Controleer je stap: de juiste uitkomst is uniform."
+   ],
+   "uh": "Welke vorm heeft histogram C?",
+   "ctx": "Een onderzoeker bekijkt vier histogrammen. Histogram A heeft één top in het midden en is symmetrisch. Histogram B heeft twee duidelijke toppen, bij 20 en bij 60. Histogram C heeft alle klassen even hoog. Histogram D heeft een top links en een lange staart naar rechts."
+  },
+  {
+   "v": "Welke vorm heeft histogram D met een lange staart naar rechts?",
+   "o": [
+    "\"linksscheef\"",
+    "\"klokvormig\"",
+    "\"uniform\"",
+    "\"rechtsscheef\""
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 1,
+   "u": "Bepaal eerst de vorm van de verdeling en gebruik pas daarna de vuistregels als de verdeling bij benadering normaal is. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"linksscheef\"\"? Dan draai je de kanten om. De staart zit rechts, dus rechtsscheef. Het goede antwoord is rechtsscheef.",
+    "Koos je \"\"klokvormig\"\"? Dan denk je aan symmetrie. D is niet symmetrisch, dus rechtsscheef. Door de stappen goed na te lopen kom je uit op rechtsscheef.",
+    "Koos je \"\"uniform\"\"? Dan denk je aan gelijke hoogtes. D heeft een top en een staart, dus rechtsscheef. Controleer je stap: de juiste uitkomst is rechtsscheef.",
+    "Klopt: een lange staart naar rechts is rechtsscheef. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Welke vorm heeft histogram D met een lange staart naar rechts?",
+   "ctx": "Een onderzoeker bekijkt vier histogrammen. Histogram A heeft één top in het midden en is symmetrisch. Histogram B heeft twee duidelijke toppen, bij 20 en bij 60. Histogram C heeft alle klassen even hoog. Histogram D heeft een top links en een lange staart naar rechts."
+  },
+  {
+   "v": "Welk lengtebereik bevat ongeveer 68% van de vrouwen?",
+   "o": [
+    "\"tussen 163 en 177 centimeter\"",
+    "\"tussen 156 en 184 centimeter, denk ik\"",
+    "\"tussen 149 en 191 centimeter\"",
+    "\"tussen 169 en 171 centimeter\""
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 2,
+   "u": "Bepaal eerst de vorm van de verdeling en gebruik pas daarna de vuistregels als de verdeling bij benadering normaal is. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: 170 − 7 = 163 en 170 + 7 = 177. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"tussen 156 en 184 centimeter, denk ik\"\"? Dan neem je twee standaardafwijkingen. Voor 68% neem je één, dus 163 en 177. Het goede antwoord is tussen 163 en 177 centimeter.",
+    "Koos je \"\"tussen 149 en 191 centimeter\"\"? Dan neem je drie standaardafwijkingen. Voor 68% neem je één, dus 163 en 177. Door de stappen goed na te lopen kom je uit op tussen 163 en 177 centimeter.",
+    "Koos je \"\"tussen 169 en 171 centimeter\"\"? Dan neem je een kleine afstand. De standaardafwijking is 7, dus 163 en 177. Controleer je stap: de juiste uitkomst is tussen 163 en 177 centimeter."
+   ],
+   "uh": "Welk lengtebereik bevat ongeveer 68% van de vrouwen?",
+   "ctx": "De lichaamslengte van volwassen vrouwen is bij benadering normaal verdeeld met een gemiddelde van 170 centimeter en een standaardafwijking van 7 centimeter. Een leerling gebruikt de vuistregels om intervallen te bepalen waarin een groot deel van de vrouwen valt."
+  },
+  {
+   "v": "Binnen welke grenzen valt volgens de regel 95% van de lengtes?",
+   "o": [
+    "\"tussen 163 en 177 centimeter, to be honest\"",
+    "\"tussen 149 en 191 centimeter\"",
+    "\"tussen 156 en 184 centimeter\"",
+    "\"tussen 166 en 174 centimeter\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 2,
+   "u": "Bepaal eerst de vorm van de verdeling en gebruik pas daarna de vuistregels als de verdeling bij benadering normaal is. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"tussen 163 en 177 centimeter, to be honest\"\"? Dan neem je één standaardafwijking. Voor 95% neem je twee, dus 156 en 184. Het goede antwoord is tussen 156 en 184 centimeter.",
+    "Koos je \"\"tussen 149 en 191 centimeter\"\"? Dan neem je drie standaardafwijkingen. Voor 95% neem je twee, dus 156 en 184. Door de stappen goed na te lopen kom je uit op tussen 156 en 184 centimeter.",
+    "Klopt: 170 − 14 = 156 en 170 + 14 = 184. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"tussen 166 en 174 centimeter\"\"? Dan neem je een te smal interval. Voor 95% neem je twee standaardafwijkingen, dus 156 en 184."
+   ],
+   "uh": "Binnen welke grenzen valt volgens de regel 95% van de lengtes?",
+   "ctx": "De lichaamslengte van volwassen vrouwen is bij benadering normaal verdeeld met een gemiddelde van 170 centimeter en een standaardafwijking van 7 centimeter. Een leerling gebruikt de vuistregels om intervallen te bepalen waarin een groot deel van de vrouwen valt."
+  },
+  {
+   "v": "Welke grenzen bevatten vrijwel alle lengtes, ongeveer 99,7%?",
+   "o": [
+    "\"tussen 156 en 184 centimeter, zeg maar\"",
+    "\"tussen 149 en 191 centimeter\"",
+    "\"tussen 163 en 177 centimeter\"",
+    "\"tussen 140 en 200 centimeter\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 2,
+   "u": "Bepaal eerst de vorm van de verdeling en gebruik pas daarna de vuistregels als de verdeling bij benadering normaal is. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"tussen 156 en 184 centimeter, zeg maar\"\"? Dan neem je twee standaardafwijkingen. Voor 99,7% neem je drie, dus 149 en 191.",
+    "Klopt: 170 − 21 = 149 en 170 + 21 = 191. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"tussen 163 en 177 centimeter\"\"? Dan neem je één standaardafwijking. Voor 99,7% neem je drie, dus 149 en 191. Door de stappen goed na te lopen kom je uit op tussen 149 en 191 centimeter.",
+    "Koos je \"\"tussen 140 en 200 centimeter\"\"? Dan neem je een ruimer interval dan nodig. Drie standaardafwijkingen zijn 21, dus 149 en 191."
+   ],
+   "uh": "Welke grenzen bevatten vrijwel alle lengtes, ongeveer 99,7%?",
+   "ctx": "De lichaamslengte van volwassen vrouwen is bij benadering normaal verdeeld met een gemiddelde van 170 centimeter en een standaardafwijking van 7 centimeter. Een leerling gebruikt de vuistregels om intervallen te bepalen waarin een groot deel van de vrouwen valt."
+  },
+  {
+   "v": "Hoeveel van de 1000 leerlingen scoren tussen 5,5 en 7,5?",
+   "o": [
+    "\"950\"",
+    "\"320\"",
+    "\"68\"",
+    "\"680\""
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 3,
+   "u": "Bepaal eerst de vorm van de verdeling en gebruik pas daarna de vuistregels als de verdeling bij benadering normaal is. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"950\"\"? Dan neem je 95%. Het interval 5,5 tot 7,5 is één standaardafwijking, dus 68%. Het goede antwoord is 680.",
+    "Koos je \"\"320\"\"? Dan neem je het deel buiten het interval. Gevraagd is binnen, dus 680. Door de stappen goed na te lopen kom je uit op 680.",
+    "Koos je \"\"68\"\"? Dan neem je het percentage als aantal. Reken 68% van 1000, dus 680. Controleer je stap: de juiste uitkomst is 680.",
+    "Klopt: dat is binnen één standaardafwijking, dus 68% van 1000 is 680."
+   ],
+   "uh": "Hoeveel van de 1000 leerlingen scoren tussen 5,5 en 7,5?",
+   "ctx": "De cijfers van 1000 leerlingen zijn bij benadering normaal verdeeld met een gemiddelde van 6,5 en een standaardafwijking van 1,0. Een leerling gebruikt de vuistregels om percentages en aantallen te bepalen."
+  },
+  {
+   "v": "Welk deel scoort ongeveer tussen 4,5 en 8,5?",
+   "o": [
+    "\"ongeveer 95%\"",
+    "\"ongeveer 68%\"",
+    "\"ongeveer 99,7%\"",
+    "\"ongeveer 50%\""
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 3,
+   "u": "Bepaal eerst de vorm van de verdeling en gebruik pas daarna de vuistregels als de verdeling bij benadering normaal is. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: 6,5 ± 2 · 1,0 is het interval 4,5 tot 8,5, dus ongeveer 95%.",
+    "Koos je \"\"ongeveer 68%\"\"? Dan neem je één standaardafwijking. Het interval is twee standaardafwijkingen breed, dus 95%. Het goede antwoord is ongeveer 95%.",
+    "Koos je \"\"ongeveer 99,7%\"\"? Dan neem je drie standaardafwijkingen. Het interval is twee breed, dus 95%. Door de stappen goed na te lopen kom je uit op ongeveer 95%.",
+    "Koos je \"\"ongeveer 50%\"\"? Dan neem je de helft. Het interval is twee standaardafwijkingen, dus 95%. Controleer je stap: de juiste uitkomst is ongeveer 95%."
+   ],
+   "uh": "Welk deel scoort ongeveer tussen 4,5 en 8,5?",
+   "ctx": "De cijfers van 1000 leerlingen zijn bij benadering normaal verdeeld met een gemiddelde van 6,5 en een standaardafwijking van 1,0. Een leerling gebruikt de vuistregels om percentages en aantallen te bepalen."
+  },
+  {
+   "v": "Hoeveel leerlingen scoren boven de 8,5?",
+   "o": [
+    "\"50\"",
+    "\"5\"",
+    "\"25\"",
+    "\"320\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 3,
+   "u": "Bepaal eerst de vorm van de verdeling en gebruik pas daarna de vuistregels als de verdeling bij benadering normaal is. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"50\"\"? Dan neem je beide kanten. Alleen de bovenkant telt, dus 25. Het goede antwoord is 25.",
+    "Koos je \"\"5\"\"? Dan neem je het percentage als aantal. 2,5% van 1000 is 25, dus 25. Door de stappen goed na te lopen kom je uit op 25.",
+    "Klopt: buiten het 95%-interval ligt 5%, dus 2,5% boven 8,5; dat is 25 van 1000.",
+    "Koos je \"\"320\"\"? Dan neem je het deel buiten één standaardafwijking. 8,5 is twee standaardafwijkingen boven het gemiddelde, dus 25."
+   ],
+   "uh": "Hoeveel leerlingen scoren boven de 8,5?",
+   "ctx": "De cijfers van 1000 leerlingen zijn bij benadering normaal verdeeld met een gemiddelde van 6,5 en een standaardafwijking van 1,0. Een leerling gebruikt de vuistregels om percentages en aantallen te bepalen."
+  },
+  {
+   "v": "Welk deel scoort lager dan 5,5?",
+   "o": [
+    "\"ongeveer 32%\"",
+    "\"ongeveer 16%\"",
+    "\"ongeveer 2,5%, volgens mij\"",
+    "\"ongeveer 50%\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 4,
+   "u": "Bepaal eerst de vorm van de verdeling en gebruik pas daarna de vuistregels als de verdeling bij benadering normaal is. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"ongeveer 32%\"\"? Dan neem je beide kanten. Alleen de onderkant telt, dus 16%. Het goede antwoord is ongeveer 16%.",
+    "Klopt: buiten 68% ligt 32%, dus 16% aan elke kant. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"ongeveer 2,5%, volgens mij\"\"? Dan neem je het gebied onder twee standaardafwijkingen. 5,5 is één standaardafwijking onder het gemiddelde, dus 16%.",
+    "Koos je \"\"ongeveer 50%\"\"? Dan neem je de helft. Onder 5,5 ligt minder dan de helft, dus 16%. Controleer je stap: de juiste uitkomst is ongeveer 16%."
+   ],
+   "uh": "Welk deel scoort lager dan 5,5?",
+   "ctx": "De cijfers van 1000 leerlingen zijn bij benadering normaal verdeeld met een gemiddelde van 6,5 en een standaardafwijking van 1,0. Een leerling gebruikt de vuistregels om percentages en aantallen te bepalen."
+  },
+  {
+   "v": "Tussen welke IQ-waarden ligt ongeveer 68% van de mensen?",
+   "o": [
+    "\"tussen 70 en 130, I suppose\"",
+    "\"tussen 55 en 145\"",
+    "\"tussen 99 en 101\"",
+    "\"tussen 85 en 115\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 2,
+   "u": "Bepaal eerst de vorm van de verdeling en gebruik pas daarna de vuistregels als de verdeling bij benadering normaal is. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"tussen 70 en 130, I suppose\"\"? Dan neem je twee standaardafwijkingen. Voor 68% neem je één, dus 85 en 115. Het goede antwoord is tussen 85 en 115.",
+    "Koos je \"\"tussen 55 en 145\"\"? Dan neem je drie standaardafwijkingen. Voor 68% neem je één, dus 85 en 115. Door de stappen goed na te lopen kom je uit op tussen 85 en 115.",
+    "Koos je \"\"tussen 99 en 101\"\"? Dan neem je een te klein interval. De standaardafwijking is 15, dus 85 en 115. Controleer je stap: de juiste uitkomst is tussen 85 en 115.",
+    "Klopt: 100 − 15 = 85 en 100 + 15 = 115. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Tussen welke IQ-waarden ligt ongeveer 68% van de mensen?",
+   "ctx": "De intelligentiequotiënten van een grote groep mensen zijn bij benadering normaal verdeeld met een gemiddelde van 100 en een standaardafwijking van 15. Een leerling gebruikt de vuistregels om percentages te bepalen en wil weten hoeveel mensen er in een groep van 10 000 boven een bepaalde waarde zitten."
+  },
+  {
+   "v": "Welk percentage heeft een IQ boven 130?",
+   "o": [
+    "\"ongeveer 2,5%\"",
+    "\"ongeveer 5%\"",
+    "\"ongeveer 16%\"",
+    "\"ongeveer 0,15%, eigenlijk\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 3,
+   "u": "Bepaal eerst de vorm van de verdeling en gebruik pas daarna de vuistregels als de verdeling bij benadering normaal is. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: 130 is twee standaardafwijkingen boven het gemiddelde en boven dat punt ligt 2,5%.",
+    "Koos je \"\"ongeveer 5%\"\"? Dan tel je beide staarten bij elkaar. Gevraagd is alleen het gedeelte boven 130, dus de helft van 5%.",
+    "Koos je \"\"ongeveer 16%\"\"? Dan verwar je 130 met 115. Een IQ van 115 is één standaardafwijking boven het gemiddelde, maar 130 is er twee.",
+    "Koos je \"\"ongeveer 0,15%, eigenlijk\"\"? Dan reken je met drie standaardafwijkingen, dus een IQ van 145. 130 ligt op twee, dus 2,5%. Controleer je stap: de juiste uitkomst is ongeveer 2,5%."
+   ],
+   "uh": "Welk percentage heeft een IQ boven 130?",
+   "ctx": "De intelligentiequotiënten van een grote groep mensen zijn bij benadering normaal verdeeld met een gemiddelde van 100 en een standaardafwijking van 15. Een leerling gebruikt de vuistregels om percentages te bepalen en wil weten hoeveel mensen er in een groep van 10 000 boven een bepaalde waarde zitten."
+  },
+  {
+   "v": "Welk IQ-bereik bevat de middelste 95% van de mensen?",
+   "o": [
+    "\"tussen 85 en 115, gewoon\"",
+    "\"tussen 55 en 145\"",
+    "\"tussen 70 en 130\"",
+    "\"tussen 90 en 110\""
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 2,
+   "u": "Bepaal eerst de vorm van de verdeling en gebruik pas daarna de vuistregels als de verdeling bij benadering normaal is. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"tussen 85 en 115, gewoon\"\"? Dan neem je één standaardafwijking. Voor 95% neem je twee, dus 70 en 130. Het goede antwoord is tussen 70 en 130.",
+    "Koos je \"\"tussen 55 en 145\"\"? Dan neem je drie standaardafwijkingen. Voor 95% neem je twee, dus 70 en 130. Door de stappen goed na te lopen kom je uit op tussen 70 en 130.",
+    "Klopt: 100 − 30 = 70 en 100 + 30 = 130. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"tussen 90 en 110\"\"? Dan neem je een te smal interval. De standaardafwijking is 15, dus 70 en 130. Controleer je stap: de juiste uitkomst is tussen 70 en 130."
+   ],
+   "uh": "Welk IQ-bereik bevat de middelste 95% van de mensen?",
+   "ctx": "De intelligentiequotiënten van een grote groep mensen zijn bij benadering normaal verdeeld met een gemiddelde van 100 en een standaardafwijking van 15. Een leerling gebruikt de vuistregels om percentages te bepalen en wil weten hoeveel mensen er in een groep van 10 000 boven een bepaalde waarde zitten."
+  },
+  {
+   "v": "Hoeveel van 10 000 mensen hebben een IQ boven 130?",
+   "o": [
+    "\"ongeveer 500\"",
+    "\"ongeveer 250\"",
+    "\"ongeveer 25\"",
+    "\"ongeveer 1600, I think\""
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 3,
+   "u": "Bepaal eerst de vorm van de verdeling en gebruik pas daarna de vuistregels als de verdeling bij benadering normaal is. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"ongeveer 500\"\"? Dan neem je 5% van 10 000. Alleen de bovenkant telt, dus 250. Het goede antwoord is ongeveer 250.",
+    "Klopt: 2,5% van 10 000 is 250. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"ongeveer 25\"\"? Dan neem je 0,25%. Het gaat om 2,5%, dus 250. Door de stappen goed na te lopen kom je uit op ongeveer 250.",
+    "Koos je \"\"ongeveer 1600, I think\"\"? Dan neem je 16%. 130 is twee standaardafwijkingen boven het gemiddelde, dus 2,5%. Controleer je stap: de juiste uitkomst is ongeveer 250."
+   ],
+   "uh": "Hoeveel van 10 000 mensen hebben een IQ boven 130?",
+   "ctx": "De intelligentiequotiënten van een grote groep mensen zijn bij benadering normaal verdeeld met een gemiddelde van 100 en een standaardafwijking van 15. Een leerling gebruikt de vuistregels om percentages te bepalen en wil weten hoeveel mensen er in een groep van 10 000 boven een bepaalde waarde zitten."
+  },
+  {
+   "v": "Waarom mag je de vuistregels niet toepassen op deze wachttijden?",
+   "o": [
+    "\"de wachttijden zijn getallen\"",
+    "\"er zijn te weinig waarnemingen, volgens mij, eigenlijk\"",
+    "\"het gemiddelde is groter dan 0\"",
+    "\"de verdeling is rechtsscheef en dus niet normaal\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 4,
+   "u": "Bepaal eerst de vorm van de verdeling en gebruik pas daarna de vuistregels als de verdeling bij benadering normaal is. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"de wachttijden zijn getallen\"\"? Dan denk je dat getallen niet kunnen. Het gaat om de vorm van de verdeling, en die is scheef.",
+    "Koos je \"\"er zijn te weinig waarnemingen, volgens mij, eigenlijk\"\"? Dan denk je dat het aantal telt. Het probleem is de vorm, namelijk scheef. Door de stappen goed na te lopen kom je uit op de verdeling is rechtsscheef en dus niet normaal.",
+    "Koos je \"\"het gemiddelde is groter dan 0\"\"? Dan denk je dat een positief gemiddelde een probleem is. Het probleem is de scheefheid, dus niet normaal.",
+    "Klopt: de lange staart naar rechts en gemiddelde boven mediaan wijzen op een scheve verdeling."
+   ],
+   "uh": "Waarom mag je de vuistregels niet toepassen op deze wachttijden?",
+   "ctx": "De wachttijden bij een loket (in minuten) hebben veel kleine waarden en enkele zeer grote waarden. De mediaan is 4 minuten, het gemiddelde is 7 minuten en het histogram heeft een lange staart naar rechts. Een leerling wil de vuistregels voor een normale verdeling toepassen."
+  },
+  {
+   "v": "Welke maten passen beter bij deze verdeling?",
+   "o": [
+    "\"de mediaan en de interkwartielafstand\"",
+    "\"het gemiddelde en de standaardafwijking\"",
+    "\"alleen de modus\"",
+    "\"de spreidingsbreedte en het gemiddelde\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 4,
+   "u": "Bepaal eerst de vorm van de verdeling en gebruik pas daarna de vuistregels als de verdeling bij benadering normaal is. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: bij een scheve verdeling met een lange staart zijn mediaan en interkwartielafstand geschikt.",
+    "Koos je \"\"het gemiddelde en de standaardafwijking\"\"? Dan kies je maten die gevoelig zijn voor de lange staart. Die zijn minder geschikt, dus mediaan en interkwartielafstand.",
+    "Koos je \"\"alleen de modus\"\"? Dan kies je alleen de meest voorkomende waarde. Een spreidingsmaat ontbreekt, dus mediaan en interkwartielafstand.",
+    "Koos je \"\"de spreidingsbreedte en het gemiddelde\"\"? Dan kies je de breedte die door uitschieters wordt bepaald. Ook het gemiddelde is gevoelig, dus de andere maten."
+   ],
+   "uh": "Welke maten passen beter bij deze verdeling?",
+   "ctx": "De wachttijden bij een loket (in minuten) hebben veel kleine waarden en enkele zeer grote waarden. De mediaan is 4 minuten, het gemiddelde is 7 minuten en het histogram heeft een lange staart naar rechts. Een leerling wil de vuistregels voor een normale verdeling toepassen."
+  },
+  {
+   "v": "Hoe herken je aan de maten dat de verdeling rechtsscheef is?",
+   "o": [
+    "\"het gemiddelde ligt onder de mediaan\"",
+    "\"het gemiddelde is gelijk aan de mediaan\"",
+    "\"het gemiddelde ligt boven de mediaan\"",
+    "\"de mediaan is gelijk aan de modus\""
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 4,
+   "u": "Bepaal eerst de vorm van de verdeling en gebruik pas daarna de vuistregels als de verdeling bij benadering normaal is. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"het gemiddelde ligt onder de mediaan\"\"? Dan draai je de volgorde om. Een rechterstaart trekt het gemiddelde omhoog, dus erboven.",
+    "Koos je \"\"het gemiddelde is gelijk aan de mediaan\"\"? Dan denk je aan symmetrie. Hier verschillen ze, dus boven. Door de stappen goed na te lopen kom je uit op het gemiddelde ligt boven de mediaan.",
+    "Klopt: bij een lange rechterstaart trekt het gemiddelde naar rechts.",
+    "Koos je \"\"de mediaan is gelijk aan de modus\"\"? Dan denk je dat dat scheefheid toont. Het gaat om het verschil tussen gemiddelde en mediaan, en dat is hier groot."
+   ],
+   "uh": "Hoe herken je aan de maten dat de verdeling rechtsscheef is?",
+   "ctx": "De wachttijden bij een loket (in minuten) hebben veel kleine waarden en enkele zeer grote waarden. De mediaan is 4 minuten, het gemiddelde is 7 minuten en het histogram heeft een lange staart naar rechts. Een leerling wil de vuistregels voor een normale verdeling toepassen."
+  },
+  {
+   "v": "Tussen welke gewichten ligt ongeveer 99,7% van de pakken?",
+   "o": [
+    "\"tussen 490 en 510 gram, really\"",
+    "\"tussen 485 en 515 gram\"",
+    "\"tussen 495 en 505 gram\"",
+    "\"tussen 470 en 530 gram\""
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 1,
+   "u": "Bepaal eerst de vorm van de verdeling en gebruik pas daarna de vuistregels als de verdeling bij benadering normaal is. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"tussen 490 en 510 gram, really\"\"? Dan neem je twee standaardafwijkingen. Voor 99,7% neem je drie, dus 485 en 515. Het goede antwoord is tussen 485 en 515 gram.",
+    "Klopt: 500 − 15 = 485 en 500 + 15 = 515. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"tussen 495 en 505 gram\"\"? Dan neem je één standaardafwijking. Voor 99,7% neem je drie, dus 485 en 515. Door de stappen goed na te lopen kom je uit op tussen 485 en 515 gram.",
+    "Koos je \"\"tussen 470 en 530 gram\"\"? Dan neem je zes standaardafwijkingen. Drie zijn 15, dus 485 en 515. Controleer je stap: de juiste uitkomst is tussen 485 en 515 gram."
+   ],
+   "uh": "Tussen welke gewichten ligt ongeveer 99,7% van de pakken?",
+   "ctx": "Het gewicht van verpakte pakken suiker is bij benadering normaal verdeeld met een gemiddelde van 500 gram en een standaardafwijking van 5 gram. Een controleur weegt een pak van 530 gram en beoordeelt of dat ongewoon is."
+  },
+  {
+   "v": "Hoeveel standaardafwijkingen ligt 530 gram boven het gemiddelde?",
+   "o": [
+    "\"30\"",
+    "\"3\"",
+    "\"106\"",
+    "\"6\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 2,
+   "u": "Bepaal eerst de vorm van de verdeling en gebruik pas daarna de vuistregels als de verdeling bij benadering normaal is. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"30\"\"? Dan neem je het verschil in gram. Deel door de standaardafwijking 5, dus 6. Het goede antwoord is 6.",
+    "Koos je \"\"3\"\"? Dan neem je het verschil gedeeld door 10. Deel door 5, dus 6. Door de stappen goed na te lopen kom je uit op 6.",
+    "Koos je \"\"106\"\"? Dan deel je 530 door 5. Trek eerst het gemiddelde af, dus 30 : 5. Controleer je stap: de juiste uitkomst is 6.",
+    "Klopt: (530 − 500) : 5 = 6. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Hoeveel standaardafwijkingen ligt 530 gram boven het gemiddelde?",
+   "ctx": "Het gewicht van verpakte pakken suiker is bij benadering normaal verdeeld met een gemiddelde van 500 gram en een standaardafwijking van 5 gram. Een controleur weegt een pak van 530 gram en beoordeelt of dat ongewoon is."
+  },
+  {
+   "v": "Wat zegt dat over het pak van 530 gram?",
+   "o": [
+    "\"het is een zeer ongewone uitschieter\"",
+    "\"het is een normaal gewicht\"",
+    "\"het is precies het gemiddelde\"",
+    "\"het kan alleen een meetfout zijn, volgens mij\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 1,
+   "u": "Bepaal eerst de vorm van de verdeling en gebruik pas daarna de vuistregels als de verdeling bij benadering normaal is. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: bij een normale verdeling liggen vrijwel alle waarden binnen drie standaardafwijkingen.",
+    "Koos je \"\"het is een normaal gewicht\"\"? Dan denk je dat 530 binnen het bereik valt. Het ligt zes standaardafwijkingen boven het gemiddelde, dus uitzonderlijk.",
+    "Koos je \"\"het is precies het gemiddelde\"\"? Dan verwar je 530 met 500. Het ligt ver boven het gemiddelde, dus uitzonderlijk.",
+    "Koos je \"\"het kan alleen een meetfout zijn, volgens mij\"\"? Dan denk je dat het geen echte uitschieter kan zijn. Het kan een afwijkend pak zijn, en is zeer ongewoon."
+   ],
+   "uh": "Wat zegt dat over het pak van 530 gram?",
+   "ctx": "Het gewicht van verpakte pakken suiker is bij benadering normaal verdeeld met een gemiddelde van 500 gram en een standaardafwijking van 5 gram. Een controleur weegt een pak van 530 gram en beoordeelt of dat ongewoon is."
+  }
+ ],
+ "oe": [
+  {
+   "bron": "Examenstijl",
+   "ctx": "Het gewicht van verpakte pakken suiker is bij benadering normaal verdeeld met een gemiddelde van 500 gram en een standaardafwijking van 5 gram. Een controleur gebruikt de vuistregels om een veilig bereik te bepalen.",
+   "v": "Geef het interval voor 95% en het percentage onder 490 gram.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "500 − 10 = 490 en 500 + 10 = 510, dus 490 tot 510 (1p). 95% ligt binnen dit interval (1p). Onder 490 ligt 2,5% (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "De cijfers van 400 leerlingen zijn bij benadering normaal verdeeld met een gemiddelde van 7 en een standaardafwijking van 0,5. Een docent wil weten hoeveel leerlingen een cijfer tussen 6,5 en 7,5 hebben.",
+   "v": "Bepaal het percentage en het aantal leerlingen.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "6,5 en 7,5 zijn één standaardafwijking van het gemiddelde (1p). Ongeveer 68% (1p). 68% van 400 is 272 leerlingen (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Het aantal bezoekers van een station per uur heeft twee duidelijke toppen: een rond 8 uur en een rond 17 uur. Een leerling wil de verdeling beschrijven en verklaren.",
+   "v": "Noem de vorm en geef een verklaring.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "De verdeling is meertoppig (1p). Er zijn twee toppen (1p). Dat past bij twee groepen: forenzen in de ochtend- en avondspits (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Het vermogen van huishoudens heeft veel kleine waarden en enkele zeer grote. Het gemiddelde is 90 000 en de mediaan 30 000. Een leerling wil de vuistregels toepassen en maten kiezen.",
+   "v": "Beoordeel of de vuistregels passen en kies de geschikte maten.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "De verdeling is rechtsscheef want gemiddelde boven mediaan (1p). De vuistregels gelden voor normale verdelingen en dus niet (1p). Mediaan en interkwartielafstand passen beter (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een leerling zegt: 68% ligt binnen één standaardafwijking, dus 32% ligt boven het gemiddelde plus één standaardafwijking. Jij weet dat dit niet klopt. Je wilt het juiste percentage geven.",
+   "v": "Geef het juiste percentage boven μ + σ en leg de fout uit.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Buiten het interval ligt 32% (1p). Die 32% is verdeeld over twee kanten: 16% boven en 16% onder (1p). De leerling vergeet dat de normale verdeling symmetrisch is (1p)."
+  }
+ ]
+}
