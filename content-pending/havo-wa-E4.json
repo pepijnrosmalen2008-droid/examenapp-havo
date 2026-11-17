@@ -1,0 +1,682 @@
+{
+ "id": "E4",
+ "lo": "wa.E.4",
+ "gs": 2,
+ "naam": "Boxplot en cumulatieve frequentie lezen en maken",
+ "beschrijving": "Je bepaalt de vijf getallen van een dataset, leest en vergelijkt boxplots, leest mediaan en kwartielen af in een cumulatieve grafiek en beschrijft de spreiding en de vorm van de verdeling.",
+ "ceStatus": "CE",
+ "binas": "",
+ "val": "",
+ "onderwerpen": [
+  "Vijf getallen bepalen",
+  "Boxplot lezen",
+  "Cumulatieve grafiek lezen",
+  "Percentages en aantallen",
+  "Boxplots vergelijken"
+ ],
+ "sam": "Een boxplot toont minimum, Q1, mediaan, Q3 en maximum. De box bevat 50% van de waarnemingen en de lengte is de interkwartielafstand. Een cumulatieve grafiek geeft de mediaan bij 50% en de kwartielen bij 25% en 75%. Vergelijk boxplots op mediaan en spreiding. Een lange rechterstaart betekent een rechtsscheve verdeling.",
+ "begrippen": [
+  {
+   "t": "Vijfgetallensamenvatting",
+   "d": "Minimum, eerste kwartiel, mediaan, derde kwartiel en maximum."
+  },
+  {
+   "t": "Boxplot",
+   "d": "Een diagram met een box van Q1 tot Q3, een streep bij de mediaan en staarten naar minimum en maximum."
+  },
+  {
+   "t": "Box",
+   "d": "Het deel van de boxplot van Q1 tot Q3; bevat de middelste 50% van de waarnemingen."
+  },
+  {
+   "t": "Staarten",
+   "d": "De lijnen van de box naar het minimum en het maximum."
+  },
+  {
+   "t": "Kwartielen",
+   "d": "Q1 en Q3: de medianen van de onderste en bovenste helft."
+  },
+  {
+   "t": "Interkwartielafstand",
+   "d": "Q3 min Q1, de breedte van de box."
+  },
+  {
+   "t": "Spreidingsbreedte",
+   "d": "Maximum min minimum, de breedte van de hele boxplot."
+  },
+  {
+   "t": "Cumulatieve frequentie",
+   "d": "Het opgetelde aantal of percentage tot en met een waarde."
+  },
+  {
+   "t": "Cumulatief frequentiepolygoon",
+   "d": "De grafiek van cumulatieve percentages; mediaan en kwartielen lees je af bij 50%, 25% en 75%."
+  },
+  {
+   "t": "Interpoleren",
+   "d": "Met een rechte lijn tussen twee punten een waarde schatten."
+  },
+  {
+   "t": "Rechtsscheef",
+   "d": "Een lange staart naar rechts; het gemiddelde ligt boven de mediaan."
+  },
+  {
+   "t": "Boxplots vergelijken",
+   "d": "Vergelijk mediaan, interkwartielafstand en spreidingsbreedte."
+  }
+ ],
+ "sv": [
+  {
+   "v": "Welke vijf getallen horen bij de vijfgetallensamenvatting van een boxplot?",
+   "o": [
+    "\"gemiddelde, modus, mediaan, Q1 en Q3\"",
+    "\"minimum, Q1, mediaan, Q3 en maximum\"",
+    "\"minimum, gemiddelde, mediaan, modus en maximum\"",
+    "\"standaardafwijking, mediaan, Q1, Q3 en maximum\""
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 0,
+   "u": "Orden de data, bepaal minimum, kwartielen en maximum en lees de box en de staarten van de boxplot af. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"gemiddelde, modus, mediaan, Q1 en Q3\"\"? Dan zet dit je het gemiddelde en de modus in de lijst. Een boxplot is gebaseerd op ligging in de geordende data, en die maten horen er niet bij.",
+    "Klopt: dat zijn de vijf waarden die de boxplot tekent. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"minimum, gemiddelde, mediaan, modus en maximum\"\"? Dan laat je de kwartielen weg. De box loopt juist van Q1 tot Q3, dus die horen erbij.",
+    "Koos je \"\"standaardafwijking, mediaan, Q1, Q3 en maximum\"\"? Dan neem je een spreidingsmaat op die niet in de tekening staat. De linkerstaart eindigt bij het minimum, dus dat hoort erbij."
+   ],
+   "uh": "Welke vijf getallen horen bij de vijfgetallensamenvatting van een boxplot?"
+  },
+  {
+   "v": "Welk deel van de waarnemingen ligt in de box van een boxplot?",
+   "o": [
+    "\"25%\"",
+    "\"75%\"",
+    "\"100%\"",
+    "\"50%\""
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 1,
+   "u": "Orden de data, bepaal minimum, kwartielen en maximum en lees de box en de staarten van de boxplot af. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"25%\"\"? Dan denk je aan een kwart. De box bevat twee kwarten, dus 50%. Het goede antwoord is 50%.",
+    "Koos je \"\"75%\"\"? Dan denk je aan drie kwart. De box loopt van Q1 tot Q3, dus 50%. Door de stappen goed na te lopen kom je uit op 50%.",
+    "Koos je \"\"100%\"\"? Dan denk je dat de box alles bevat. De staarten liggen buiten de box, dus 50%. Controleer je stap: de juiste uitkomst is 50%.",
+    "Klopt: de box loopt van Q1 tot Q3 en bevat de middelste helft."
+   ],
+   "uh": "Welk deel van de waarnemingen ligt in de box van een boxplot?"
+  },
+  {
+   "v": "Een boxplot loopt van minimum 4 tot maximum 20. Welke spreidingsbreedte hoort daarbij?",
+   "o": [
+    "\"16\"",
+    "\"24\"",
+    "\"12\"",
+    "\"20\""
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 1,
+   "u": "Orden de data, bepaal minimum, kwartielen en maximum en lees de box en de staarten van de boxplot af. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: 20 − 4 = 16. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"24\"\"? Dan tel je minimum en maximum op. De spreidingsbreedte is een verschil, dus 16. Het goede antwoord is 16.",
+    "Koos je \"\"12\"\"? Dan neem je het gemiddelde van de uiterste waarden. De breedte is een verschil, dus 16. Door de stappen goed na te lopen kom je uit op 16.",
+    "Koos je \"\"20\"\"? Dan neem je het maximum. Trek het minimum af, dus 16. Controleer je stap: de juiste uitkomst is 16."
+   ],
+   "uh": "Een boxplot loopt van minimum 4 tot maximum 20. Welke spreidingsbreedte hoort daarbij?"
+  },
+  {
+   "v": "De geordende data zijn 2, 4, 6, 8 en 10. Welke waarde heeft het eerste kwartiel Q1?",
+   "o": [
+    "\"2\"",
+    "\"4\"",
+    "\"3\"",
+    "\"5\""
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 0,
+   "u": "Orden de data, bepaal minimum, kwartielen en maximum en lees de box en de staarten van de boxplot af. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"2\"\"? Dan neem je het minimum. Q1 is de mediaan van de onderste helft, dus 3. Het goede antwoord is 3.",
+    "Koos je \"\"4\"\"? Dan neem je de tweede waarde. Q1 is de mediaan van de onderste helft 2 en 4, dus 3. Door de stappen goed na te lopen kom je uit op 3.",
+    "Klopt: de onderste helft is 2 en 4, met mediaan 3. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"5\"\"? Dan neem je het gemiddelde van de onderste helft en de middelste waarde. Q1 is de mediaan van de onderste helft, dus 3."
+   ],
+   "uh": "De geordende data zijn 2, 4, 6, 8 en 10. Welke waarde heeft het eerste kwartiel Q1?"
+  },
+  {
+   "v": "In een cumulatieve grafiek hoort bij 50% de waarde 30. Hoe heet die waarde?",
+   "o": [
+    "\"het eerste kwartiel\"",
+    "\"de mediaan\"",
+    "\"het derde kwartiel\"",
+    "\"het gemiddelde\""
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 2,
+   "u": "Orden de data, bepaal minimum, kwartielen en maximum en lees de box en de staarten van de boxplot af. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"het eerste kwartiel\"\"? Dan denk je aan 25%. Bij 50% hoort de mediaan, dus de mediaan. Het goede antwoord is de mediaan.",
+    "Klopt: de waarde bij 50% is de mediaan. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"het derde kwartiel\"\"? Dan denk je aan 75%. Bij 50% hoort de mediaan, dus de mediaan. Door de stappen goed na te lopen kom je uit op de mediaan.",
+    "Koos je \"\"het gemiddelde\"\"? Dan verwar je de mediaan met het gemiddelde. Bij 50% leest de grafiek de mediaan af, dus de mediaan."
+   ],
+   "uh": "In een cumulatieve grafiek hoort bij 50% de waarde 30. Hoe heet die waarde?"
+  },
+  {
+   "v": "Een cumulatieve grafiek geeft 80% bij de waarde 25. Hoeveel procent ligt boven 25?",
+   "o": [
+    "\"80%\"",
+    "\"25%\"",
+    "\"100%\"",
+    "\"20%\""
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 3,
+   "u": "Orden de data, bepaal minimum, kwartielen en maximum en lees de box en de staarten van de boxplot af. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"80%\"\"? Dan neem je het percentage onder 25. Boven 25 is het de rest, dus 20%. Het goede antwoord is 20%.",
+    "Koos je \"\"25%\"\"? Dan neem je de waarde als percentage. Boven 25 is 100% − 80%, dus 20%. Door de stappen goed na te lopen kom je uit op 20%.",
+    "Koos je \"\"100%\"\"? Dan neem je het totaal. Boven 25 ligt maar een deel, dus 20%. Controleer je stap: de juiste uitkomst is 20%.",
+    "Klopt: 100% − 80% = 20%. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Een cumulatieve grafiek geeft 80% bij de waarde 25. Hoeveel procent ligt boven 25?"
+  },
+  {
+   "v": "Twee boxplots hebben dezelfde mediaan en de box van A is breder dan die van B. Wat betekent dat?",
+   "o": [
+    "\"A heeft een grotere interkwartielafstand dan B\"",
+    "\"A heeft een hoger gemiddelde dan B, to be honest\"",
+    "\"A heeft een hogere mediaan dan B\"",
+    "\"A heeft meer waarnemingen dan B\""
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 4,
+   "u": "Orden de data, bepaal minimum, kwartielen en maximum en lees de box en de staarten van de boxplot af. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: een bredere box betekent een grotere interkwartielafstand.",
+    "Koos je \"\"A heeft een hoger gemiddelde dan B, to be honest\"\"? Dan denk je dat de breedte het gemiddelde toont. De breedte toont de spreiding van de middelste helft, dus een grotere interkwartielafstand.",
+    "Koos je \"\"A heeft een hogere mediaan dan B\"\"? Dan denk je dat een bredere box een hogere mediaan betekent. De medianen zijn gelijk, dus alleen de spreiding verschilt.",
+    "Koos je \"\"A heeft meer waarnemingen dan B\"\"? Dan denk je dat de breedte het aantal toont. De breedte toont de spreiding, dus een grotere interkwartielafstand."
+   ],
+   "uh": "Twee boxplots hebben dezelfde mediaan en de box van A is breder dan die van B. Wat betekent dat?"
+  },
+  {
+   "v": "Welke waarde ligt precies in het midden van de twaalf geordende getallen?",
+   "o": [
+    "\"9\"",
+    "\"8\"",
+    "\"9,5\"",
+    "\"10,5\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 0,
+   "u": "Orden de data, bepaal minimum, kwartielen en maximum en lees de box en de staarten van de boxplot af. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"9\"\"? Dan kijk je alleen naar de zesde positie. Bij een even aantal horen twee getallen in het midden, dus 9,5.",
+    "Koos je \"\"8\"\"? Dan tel je vijf getallen af in plaats van zes. Bij twaalf getallen zijn de zesde en zevende plaats de middelste, dus 9,5.",
+    "Klopt: de zesde en zevende waarde zijn 9 en 10, dus de mediaan is 9,5.",
+    "Koos je \"\"10,5\"\"? Dan reken je met het gemiddelde van alle twaalf getallen. Het midden van de rij is iets anders dan het gemiddelde, namelijk 9,5."
+   ],
+   "uh": "Welke waarde ligt precies in het midden van de twaalf geordende getallen?",
+   "ctx": "Twaalf leerlingen hebben het aantal uren sport per maand genoteerd, geordend van klein naar groot: 3, 5, 6, 7, 8, 9, 10, 12, 13, 15, 17 en 20. Een leerling maakt er een boxplot van en bepaalt eerst de vijf getallen."
+  },
+  {
+   "v": "Welk eerste kwartiel hoort bij deze twaalf waarden?",
+   "o": [
+    "\"6\"",
+    "\"6,5\"",
+    "\"7\"",
+    "\"5\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 0,
+   "u": "Orden de data, bepaal minimum, kwartielen en maximum en lees de box en de staarten van de boxplot af. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"6\"\"? Dan pak je alleen de derde van de zes waarden. De onderste helft heeft zes getallen, dus het midden is tussen 6 en 7.",
+    "Klopt: de onderste helft 3, 5, 6, 7, 8, 9 heeft als midden 6 en 7, dus 6,5.",
+    "Koos je \"\"7\"\"? Dan pak je alleen de vierde van de zes waarden. Ook hier horen twee getallen in het midden, dus 6,5. Door de stappen goed na te lopen kom je uit op 6,5.",
+    "Koos je \"\"5\"\"? Dan kies je de tweede waarde als kwartiel. Je zoekt het midden van de onderste helft, en dat is 6,5. Controleer je stap: de juiste uitkomst is 6,5."
+   ],
+   "uh": "Welk eerste kwartiel hoort bij deze twaalf waarden?",
+   "ctx": "Twaalf leerlingen hebben het aantal uren sport per maand genoteerd, geordend van klein naar groot: 3, 5, 6, 7, 8, 9, 10, 12, 13, 15, 17 en 20. Een leerling maakt er een boxplot van en bepaalt eerst de vijf getallen."
+  },
+  {
+   "v": "Welke waarde heeft Q3 bij deze data, het midden van de bovenste helft?",
+   "o": [
+    "\"13\"",
+    "\"15\"",
+    "\"17\"",
+    "\"14\""
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 0,
+   "u": "Orden de data, bepaal minimum, kwartielen en maximum en lees de box en de staarten van de boxplot af. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"13\"\"? Dan pak je alleen de derde van de zes waarden. De bovenste helft heeft zes getallen, dus het midden is tussen 13 en 15.",
+    "Koos je \"\"15\"\"? Dan pak je alleen de vierde van de zes waarden. Ook hier horen twee getallen in het midden, dus 14. Door de stappen goed na te lopen kom je uit op 14.",
+    "Koos je \"\"17\"\"? Dan kies je een waarde te ver rechts. Je zoekt het midden van de bovenste helft, en dat is 14. Controleer je stap: de juiste uitkomst is 14.",
+    "Klopt: de bovenste helft 10, 12, 13, 15, 17, 20 heeft als midden 13 en 15, dus 14."
+   ],
+   "uh": "Welke waarde heeft Q3 bij deze data, het midden van de bovenste helft?",
+   "ctx": "Twaalf leerlingen hebben het aantal uren sport per maand genoteerd, geordend van klein naar groot: 3, 5, 6, 7, 8, 9, 10, 12, 13, 15, 17 en 20. Een leerling maakt er een boxplot van en bepaalt eerst de vijf getallen."
+  },
+  {
+   "v": "Welke interkwartielafstand heeft de boxplot?",
+   "o": [
+    "\"15\"",
+    "\"55\"",
+    "\"30\"",
+    "\"125\""
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 1,
+   "u": "Orden de data, bepaal minimum, kwartielen en maximum en lees de box en de staarten van de boxplot af. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: 70 − 55 = 15. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"55\"\"? Dan neem je de spreidingsbreedte 95 − 40. De interkwartielafstand is Q3 min Q1, dus 15. Het goede antwoord is 15.",
+    "Koos je \"\"30\"\"? Dan neem je het verschil tussen mediaan en minimum. De interkwartielafstand is Q3 min Q1, dus 15. Door de stappen goed na te lopen kom je uit op 15.",
+    "Koos je \"\"125\"\"? Dan tel je Q1 en Q3 op. De interkwartielafstand is een verschil, dus 15. Controleer je stap: de juiste uitkomst is 15."
+   ],
+   "uh": "Welke interkwartielafstand heeft de boxplot?",
+   "ctx": "Een boxplot van toetsscores heeft een minimum van 40, een eerste kwartiel van 55, een mediaan van 62, een derde kwartiel van 70 en een maximum van 95. De box loopt van 55 tot 70 en de staarten lopen tot 40 en 95."
+  },
+  {
+   "v": "Welke spreidingsbreedte heeft de boxplot?",
+   "o": [
+    "\"15\"",
+    "\"135\"",
+    "\"55\"",
+    "\"25\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 1,
+   "u": "Orden de data, bepaal minimum, kwartielen en maximum en lees de box en de staarten van de boxplot af. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"15\"\"? Dan neem je de interkwartielafstand. De breedte is maximum min minimum, dus 55. Het goede antwoord is 55.",
+    "Koos je \"\"135\"\"? Dan tel je minimum en maximum op. De breedte is een verschil, dus 55. Door de stappen goed na te lopen kom je uit op 55.",
+    "Klopt: 95 − 40 = 55. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"25\"\"? Dan neem je het verschil tussen mediaan en Q1. De breedte is maximum min minimum, dus 55. Controleer je stap: de juiste uitkomst is 55."
+   ],
+   "uh": "Welke spreidingsbreedte heeft de boxplot?",
+   "ctx": "Een boxplot van toetsscores heeft een minimum van 40, een eerste kwartiel van 55, een mediaan van 62, een derde kwartiel van 70 en een maximum van 95. De box loopt van 55 tot 70 en de staarten lopen tot 40 en 95."
+  },
+  {
+   "v": "Hoeveel procent van de scores is hoger dan 70?",
+   "o": [
+    "\"75%\"",
+    "\"25%\"",
+    "\"50%\"",
+    "\"70%\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 1,
+   "u": "Orden de data, bepaal minimum, kwartielen en maximum en lees de box en de staarten van de boxplot af. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"75%\"\"? Dan neem je het deel onder Q3. Erboven ligt 25%, dus 25%. Het goede antwoord is 25%.",
+    "Klopt: Q3 is het 75e percentiel, dus 25% ligt erboven. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"50%\"\"? Dan neem je het deel in de box. Boven Q3 ligt een kwart, dus 25%. Door de stappen goed na te lopen kom je uit op 25%.",
+    "Koos je \"\"70%\"\"? Dan neem je de waarde als percentage. Q3 hoort bij 75%, dus 25% boven. Controleer je stap: de juiste uitkomst is 25%."
+   ],
+   "uh": "Hoeveel procent van de scores is hoger dan 70?",
+   "ctx": "Een boxplot van toetsscores heeft een minimum van 40, een eerste kwartiel van 55, een mediaan van 62, een derde kwartiel van 70 en een maximum van 95. De box loopt van 55 tot 70 en de staarten lopen tot 40 en 95."
+  },
+  {
+   "v": "Hoeveel procent van de bezoekers is jonger dan 30 jaar?",
+   "o": [
+    "\"30%\"",
+    "\"85%\"",
+    "\"40%\"",
+    "\"60%\""
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 3,
+   "u": "Orden de data, bepaal minimum, kwartielen en maximum en lees de box en de staarten van de boxplot af. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"30%\"\"? Dan neem je de waarde bij 20 jaar. Bij 30 jaar is het 60%, dus 60%. Het goede antwoord is 60%.",
+    "Koos je \"\"85%\"\"? Dan neem je de waarde bij 40 jaar. Bij 30 jaar is het 60%, dus 60%. Door de stappen goed na te lopen kom je uit op 60%.",
+    "Koos je \"\"40%\"\"? Dan neem je het deel ouder dan 30. Gevraagd is jonger dan 30, dus 60%. Controleer je stap: de juiste uitkomst is 60%.",
+    "Klopt: bij 30 jaar geeft de grafiek 60%. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Hoeveel procent van de bezoekers is jonger dan 30 jaar?",
+   "ctx": "Een cumulatief frequentiepolygoon van de leeftijden van 100 museumbezoekers geeft: 12% is jonger dan 10 jaar, 30% jonger dan 20, 60% jonger dan 30, 85% jonger dan 40 en 100% jonger dan 50. Tussen de punten wordt de lijn recht getekend."
+  },
+  {
+   "v": "Welke leeftijd is de mediaan, met een rechte lijn tussen 30% en 60%?",
+   "o": [
+    "\"ongeveer 26,7 jaar\"",
+    "\"20 jaar, gewoon, volgens mij\"",
+    "\"30 jaar\"",
+    "\"25 jaar\""
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 2,
+   "u": "Orden de data, bepaal minimum, kwartielen en maximum en lees de box en de staarten van de boxplot af. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: 20 + (50 − 30) : (60 − 30) · 10 ≈ 26,7. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"20 jaar, gewoon, volgens mij\"\"? Dan neem je het begin van de klasse. De mediaan ligt bij 50%, dus ongeveer 26,7. Het goede antwoord is ongeveer 26,7 jaar.",
+    "Koos je \"\"30 jaar\"\"? Dan neem je het einde van de klasse. De mediaan ligt bij 50% en niet bij 60%, dus ongeveer 26,7. Door de stappen goed na te lopen kom je uit op ongeveer 26,7 jaar.",
+    "Koos je \"\"25 jaar\"\"? Dan neem je het midden van de klasse. Met een rechte lijn tussen 30% en 60% ligt 50% iets hoger, dus ongeveer 26,7."
+   ],
+   "uh": "Welke leeftijd is de mediaan, met een rechte lijn tussen 30% en 60%?",
+   "ctx": "Een cumulatief frequentiepolygoon van de leeftijden van 100 museumbezoekers geeft: 12% is jonger dan 10 jaar, 30% jonger dan 20, 60% jonger dan 30, 85% jonger dan 40 en 100% jonger dan 50. Tussen de punten wordt de lijn recht getekend."
+  },
+  {
+   "v": "Welke leeftijd hoort bij het derde kwartiel, bij 75%?",
+   "o": [
+    "\"40 jaar, denk ik\"",
+    "\"35 jaar\"",
+    "\"36 jaar\"",
+    "\"30 jaar\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 2,
+   "u": "Orden de data, bepaal minimum, kwartielen en maximum en lees de box en de staarten van de boxplot af. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"40 jaar, denk ik\"\"? Dan neem je het einde van de klasse. 75% ligt eerder, dus 36. Het goede antwoord is 36 jaar.",
+    "Koos je \"\"35 jaar\"\"? Dan neem je het midden van de klasse. De lijn tussen 60% en 85% geeft 36 bij 75%, dus 36. Door de stappen goed na te lopen kom je uit op 36 jaar.",
+    "Klopt: 30 + (75 − 60) : (85 − 60) · 10 = 36. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"30 jaar\"\"? Dan neem je het begin van de klasse. 75% ligt hoger dan 60%, dus 36. Controleer je stap: de juiste uitkomst is 36 jaar."
+   ],
+   "uh": "Welke leeftijd hoort bij het derde kwartiel, bij 75%?",
+   "ctx": "Een cumulatief frequentiepolygoon van de leeftijden van 100 museumbezoekers geeft: 12% is jonger dan 10 jaar, 30% jonger dan 20, 60% jonger dan 30, 85% jonger dan 40 en 100% jonger dan 50. Tussen de punten wordt de lijn recht getekend."
+  },
+  {
+   "v": "Hoeveel bezoekers zijn tussen 20 en 40 jaar oud?",
+   "o": [
+    "\"85\"",
+    "\"55\"",
+    "\"30\"",
+    "\"25\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 3,
+   "u": "Orden de data, bepaal minimum, kwartielen en maximum en lees de box en de staarten van de boxplot af. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"85\"\"? Dan neem je het aantal jonger dan 40. Trek het aantal jonger dan 20 af, dus 55. Het goede antwoord is 55.",
+    "Klopt: 85% − 30% = 55% van 100 bezoekers is 55. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"30\"\"? Dan neem je het aantal jonger dan 20. Het gaat om het verschil, dus 55. Door de stappen goed na te lopen kom je uit op 55.",
+    "Koos je \"\"25\"\"? Dan neem je het verschil tussen 60% en 85%. Het gaat om 20 tot 40, dus 55. Controleer je stap: de juiste uitkomst is 55."
+   ],
+   "uh": "Hoeveel bezoekers zijn tussen 20 en 40 jaar oud?",
+   "ctx": "Een cumulatief frequentiepolygoon van de leeftijden van 100 museumbezoekers geeft: 12% is jonger dan 10 jaar, 30% jonger dan 20, 60% jonger dan 30, 85% jonger dan 40 en 100% jonger dan 50. Tussen de punten wordt de lijn recht getekend."
+  },
+  {
+   "v": "Welke interkwartielafstand hebben de groepen A en B?",
+   "o": [
+    "\"A is 5 en B is 8\"",
+    "\"A is 25 en B is 14\"",
+    "\"beide 8\"",
+    "\"A is 8 en B is 5\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 4,
+   "u": "Orden de data, bepaal minimum, kwartielen en maximum en lees de box en de staarten van de boxplot af. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"A is 5 en B is 8\"\"? Dan draai je de groepen om. A heeft Q1 10 en Q3 18, dus A is 8 en B is 5. Het goede antwoord is A is 8 en B is 5.",
+    "Koos je \"\"A is 25 en B is 14\"\"? Dan neem je de spreidingsbreedte. De interkwartielafstand is Q3 min Q1, dus 8 en 5. Door de stappen goed na te lopen kom je uit op A is 8 en B is 5.",
+    "Koos je \"\"beide 8\"\"? Dan neem je alleen de waarde van A. B heeft Q1 12 en Q3 17, dus 5. Controleer je stap: de juiste uitkomst is A is 8 en B is 5.",
+    "Klopt: A is 18 − 10 = 8 en B is 17 − 12 = 5. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Welke interkwartielafstand hebben de groepen A en B?",
+   "ctx": "Twee boxplots vergelijken de reistijd in minuten van twee groepen. Groep A heeft minimum 5, Q1 10, mediaan 14, Q3 18 en maximum 30. Groep B heeft minimum 8, Q1 12, mediaan 15, Q3 17 en maximum 22."
+  },
+  {
+   "v": "Welke groep heeft een gelijkmatiger reistijd en waarom?",
+   "o": [
+    "\"B, want de interkwartielafstand is kleiner\"",
+    "\"A, want de interkwartielafstand is kleiner, eigenlijk\"",
+    "\"A, want de mediaan is lager\"",
+    "\"B, want de mediaan is lager\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 4,
+   "u": "Orden de data, bepaal minimum, kwartielen en maximum en lees de box en de staarten van de boxplot af. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: 5 is kleiner dan 8, dus de middelste helft ligt dichter bij elkaar.",
+    "Koos je \"\"A, want de interkwartielafstand is kleiner, eigenlijk\"\"? Dan draai je de groepen om. De interkwartielafstand van A is 8 en van B is 5, dus B.",
+    "Koos je \"\"A, want de mediaan is lager\"\"? Dan kies je de lagere mediaan. Het gaat om de spreiding, dus B. Door de stappen goed na te lopen kom je uit op B, want de interkwartielafstand is kleiner.",
+    "Koos je \"\"B, want de mediaan is lager\"\"? Dan koppel je de mediaan aan gelijkmatigheid. B heeft juist de hogere mediaan, en de reden is de kleinere interkwartielafstand."
+   ],
+   "uh": "Welke groep heeft een gelijkmatiger reistijd en waarom?",
+   "ctx": "Twee boxplots vergelijken de reistijd in minuten van twee groepen. Groep A heeft minimum 5, Q1 10, mediaan 14, Q3 18 en maximum 30. Groep B heeft minimum 8, Q1 12, mediaan 15, Q3 17 en maximum 22."
+  },
+  {
+   "v": "Welke spreidingsbreedte hebben de groepen A en B?",
+   "o": [
+    "\"A is 14 en B is 25, gewoon\"",
+    "\"A is 8 en B is 5\"",
+    "\"A is 25 en B is 14\"",
+    "\"A is 35 en B is 30\""
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 1,
+   "u": "Orden de data, bepaal minimum, kwartielen en maximum en lees de box en de staarten van de boxplot af. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"A is 14 en B is 25, gewoon\"\"? Dan draai je de groepen om. A loopt van 5 tot 30 en B van 8 tot 22, dus A is 25 en B is 14.",
+    "Koos je \"\"A is 8 en B is 5\"\"? Dan neem je de interkwartielafstand. De breedte is maximum min minimum, dus 25 en 14. Door de stappen goed na te lopen kom je uit op A is 25 en B is 14.",
+    "Klopt: A is 30 − 5 = 25 en B is 22 − 8 = 14. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"A is 35 en B is 30\"\"? Dan tel je minimum en maximum op. De breedte is een verschil, dus 25 en 14. Controleer je stap: de juiste uitkomst is A is 25 en B is 14."
+   ],
+   "uh": "Welke spreidingsbreedte hebben de groepen A en B?",
+   "ctx": "Twee boxplots vergelijken de reistijd in minuten van twee groepen. Groep A heeft minimum 5, Q1 10, mediaan 14, Q3 18 en maximum 30. Groep B heeft minimum 8, Q1 12, mediaan 15, Q3 17 en maximum 22."
+  },
+  {
+   "v": "Hoeveel leerlingen hebben een reistijd van meer dan 20 minuten?",
+   "o": [
+    "\"110\"",
+    "\"90\"",
+    "\"45\"",
+    "\"170\""
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 3,
+   "u": "Orden de data, bepaal minimum, kwartielen en maximum en lees de box en de staarten van de boxplot af. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"110\"\"? Dan neem je het aantal met een reistijd tot 20 minuten. Gevraagd is meer dan 20, dus 90. Het goede antwoord is 90.",
+    "Klopt: 100% − 55% = 45% van 200 is 90. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"45\"\"? Dan neem je het percentage als aantal. Reken 45% van 200, dus 90. Door de stappen goed na te lopen kom je uit op 90.",
+    "Koos je \"\"170\"\"? Dan neem je het aantal tot 30 minuten. Gevraagd is meer dan 20, dus 90. Controleer je stap: de juiste uitkomst is 90."
+   ],
+   "uh": "Hoeveel leerlingen hebben een reistijd van meer dan 20 minuten?",
+   "ctx": "Van 200 leerlingen is de reistijd naar school in een cumulatieve grafiek getekend: 20% heeft een reistijd tot 10 minuten, 55% tot 20 minuten, 85% tot 30 minuten en 100% tot 40 minuten. Een leerling leest percentages en aantallen af."
+  },
+  {
+   "v": "Hoeveel procent van de leerlingen heeft een reistijd tussen 10 en 30 minuten?",
+   "o": [
+    "\"85%\"",
+    "\"20%\"",
+    "\"105%\"",
+    "\"65%\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 3,
+   "u": "Orden de data, bepaal minimum, kwartielen en maximum en lees de box en de staarten van de boxplot af. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"85%\"\"? Dan neem je het percentage tot 30 minuten. Trek het percentage tot 10 minuten af, dus 65%. Het goede antwoord is 65%.",
+    "Koos je \"\"20%\"\"? Dan neem je het percentage tot 10 minuten. Gevraagd is tussen 10 en 30, dus 65%. Door de stappen goed na te lopen kom je uit op 65%.",
+    "Koos je \"\"105%\"\"? Dan tel je 20% en 85% op. Je moet aftrekken, dus 65%. Controleer je stap: de juiste uitkomst is 65%.",
+    "Klopt: 85% − 20% = 65%. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Hoeveel procent van de leerlingen heeft een reistijd tussen 10 en 30 minuten?",
+   "ctx": "Van 200 leerlingen is de reistijd naar school in een cumulatieve grafiek getekend: 20% heeft een reistijd tot 10 minuten, 55% tot 20 minuten, 85% tot 30 minuten en 100% tot 40 minuten. Een leerling leest percentages en aantallen af."
+  },
+  {
+   "v": "Welke mediaan hoort bij een rechte lijn tussen 20% en 55%, op één decimaal?",
+   "o": [
+    "\"18,6 minuten\"",
+    "\"10 minuten, zeg maar\"",
+    "\"20 minuten\"",
+    "\"15 minuten\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 2,
+   "u": "Orden de data, bepaal minimum, kwartielen en maximum en lees de box en de staarten van de boxplot af. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: 10 + (50 − 20) : (55 − 20) · 10 ≈ 18,6. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"10 minuten, zeg maar\"\"? Dan neem je het begin van de klasse. De mediaan ligt bij 50%, dus ongeveer 18,6. Het goede antwoord is 18,6 minuten.",
+    "Koos je \"\"20 minuten\"\"? Dan neem je het einde van de klasse. De mediaan ligt vóór 55%, dus ongeveer 18,6. Door de stappen goed na te lopen kom je uit op 18,6 minuten.",
+    "Koos je \"\"15 minuten\"\"? Dan neem je het midden van de klasse. Met een rechte lijn ligt 50% dichter bij 55% dan bij 20%, dus ongeveer 18,6."
+   ],
+   "uh": "Welke mediaan hoort bij een rechte lijn tussen 20% en 55%, op één decimaal?",
+   "ctx": "Van 200 leerlingen is de reistijd naar school in een cumulatieve grafiek getekend: 20% heeft een reistijd tot 10 minuten, 55% tot 20 minuten, 85% tot 30 minuten en 100% tot 40 minuten. Een leerling leest percentages en aantallen af."
+  },
+  {
+   "v": "Welke interkwartielafstand heeft deze boxplot?",
+   "o": [
+    "\"28\"",
+    "\"4\"",
+    "\"5\"",
+    "\"11\""
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 1,
+   "u": "Orden de data, bepaal minimum, kwartielen en maximum en lees de box en de staarten van de boxplot af. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"28\"\"? Dan neem je de spreidingsbreedte 30 − 2. De interkwartielafstand is Q3 min Q1, dus 5. Het goede antwoord is 5.",
+    "Koos je \"\"4\"\"? Dan neem je de mediaan. De interkwartielafstand is Q3 min Q1, dus 5. Door de stappen goed na te lopen kom je uit op 5.",
+    "Klopt: 8 − 3 = 5. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"11\"\"? Dan tel je Q1 en Q3 op. De interkwartielafstand is een verschil, dus 5. Controleer je stap: de juiste uitkomst is 5."
+   ],
+   "uh": "Welke interkwartielafstand heeft deze boxplot?",
+   "ctx": "Een boxplot van het aantal verkochte kaartjes per dag heeft minimum 2, Q1 3, mediaan 4, Q3 8 en maximum 30. De mediaan ligt dicht bij Q1 en de rechterstaart is veel langer dan de linkerstaart. Een leerling beschrijft de verdeling."
+  },
+  {
+   "v": "Hoe beschrijf je de vorm van deze verdeling?",
+   "o": [
+    "\"linksscheef: een lange staart naar links, gewoon\"",
+    "\"rechtsscheef: een lange staart naar rechts\"",
+    "\"symmetrisch: beide staarten even lang\"",
+    "\"uniform: alle waarden even vaak\""
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 1,
+   "u": "Orden de data, bepaal minimum, kwartielen en maximum en lees de box en de staarten van de boxplot af. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"linksscheef: een lange staart naar links, gewoon\"\"? Dan draai je de kanten om. De lange staart zit rechts, dus rechtsscheef.",
+    "Klopt: de rechterstaart is veel langer dan de linkerstaart.",
+    "Koos je \"\"symmetrisch: beide staarten even lang\"\"? Dan denk je dat de verdeling in balans is. De staarten verschillen sterk, dus rechtsscheef.",
+    "Koos je \"\"uniform: alle waarden even vaak\"\"? Dan denk je aan een vlakke verdeling. De boxplot is erg ongelijk, dus rechtsscheef."
+   ],
+   "uh": "Hoe beschrijf je de vorm van deze verdeling?",
+   "ctx": "Een boxplot van het aantal verkochte kaartjes per dag heeft minimum 2, Q1 3, mediaan 4, Q3 8 en maximum 30. De mediaan ligt dicht bij Q1 en de rechterstaart is veel langer dan de linkerstaart. Een leerling beschrijft de verdeling."
+  },
+  {
+   "v": "Waarom ligt het gemiddelde hier waarschijnlijk boven de mediaan?",
+   "o": [
+    "\"de lage waarden trekken het gemiddelde omhoog\"",
+    "\"het gemiddelde is altijd groter dan de mediaan, denk ik, zeg maar, gewoon\"",
+    "\"de mediaan is gelijk aan het maximum\"",
+    "\"de hoge waarden in de rechterstaart trekken het gemiddelde omhoog\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 4,
+   "u": "Orden de data, bepaal minimum, kwartielen en maximum en lees de box en de staarten van de boxplot af. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"de lage waarden trekken het gemiddelde omhoog\"\"? Dan denk je dat lage waarden verhogen. Lage waarden verlagen het gemiddelde, dus de hoge staart.",
+    "Koos je \"\"het gemiddelde is altijd groter dan de mediaan, denk ik, zeg maar, gewoon\"\"? Dan denk je dat het altijd zo is. Het geldt alleen bij een rechtsscheve verdeling, zoals hier.",
+    "Koos je \"\"de mediaan is gelijk aan het maximum\"\"? Dan denk je dat de mediaan het maximum is. De mediaan is 4, dus de reden is de staart.",
+    "Klopt: een lange rechterstaart verhoogt het gemiddelde meer dan de mediaan."
+   ],
+   "uh": "Waarom ligt het gemiddelde hier waarschijnlijk boven de mediaan?",
+   "ctx": "Een boxplot van het aantal verkochte kaartjes per dag heeft minimum 2, Q1 3, mediaan 4, Q3 8 en maximum 30. De mediaan ligt dicht bij Q1 en de rechterstaart is veel langer dan de linkerstaart. Een leerling beschrijft de verdeling."
+  },
+  {
+   "v": "Hoeveel procent van de dagen ligt het aantal kaartjes tussen 3 en 8?",
+   "o": [
+    "\"50%\"",
+    "\"25%\"",
+    "\"75%\"",
+    "\"100%\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 1,
+   "u": "Orden de data, bepaal minimum, kwartielen en maximum en lees de box en de staarten van de boxplot af. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: de box loopt van Q1 tot Q3 en bevat 50%. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"25%\"\"? Dan neem je een kwart. De box bevat twee kwarten, dus 50%. Het goede antwoord is 50%.",
+    "Koos je \"\"75%\"\"? Dan neem je drie kwart. De box loopt van Q1 tot Q3, dus 50%. Door de stappen goed na te lopen kom je uit op 50%.",
+    "Koos je \"\"100%\"\"? Dan denk je dat alles binnen de box ligt. De staarten liggen buiten de box, dus 50%. Controleer je stap: de juiste uitkomst is 50%."
+   ],
+   "uh": "Hoeveel procent van de dagen ligt het aantal kaartjes tussen 3 en 8?",
+   "ctx": "Een boxplot van het aantal verkochte kaartjes per dag heeft minimum 2, Q1 3, mediaan 4, Q3 8 en maximum 30. De mediaan ligt dicht bij Q1 en de rechterstaart is veel langer dan de linkerstaart. Een leerling beschrijft de verdeling."
+  }
+ ],
+ "oe": [
+  {
+   "bron": "Examenstijl",
+   "ctx": "De geordende data zijn 4, 6, 7, 9, 10, 12 en 15. Een leerling wil er een boxplot van maken en bepaalt eerst de vijf getallen en de interkwartielafstand.",
+   "v": "Bepaal de vijfgetallensamenvatting en de interkwartielafstand.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Minimum 4, maximum 15 en mediaan 9 (1p). Q1 is 6 en Q3 is 12 (1p). De interkwartielafstand is 12 − 6 = 6 (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een cumulatief frequentiepolygoon van 100 bezoekers geeft 10% jonger dan 20, 50% jonger dan 40, 80% jonger dan 60 en 100% jonger dan 80 jaar. Een leerling leest mediaan en percentages af.",
+   "v": "Geef de mediaan en het percentage tussen 40 en 60 jaar.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "De mediaan hoort bij 50%, dus 40 jaar (1p). Tussen 40 en 60: 80% − 50% (1p). Dat is 30% (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Twee boxplots hebben dezelfde mediaan 40. Groep A heeft Q1 30, Q3 50, minimum 20 en maximum 60. Groep B heeft Q1 35, Q3 45, minimum 25 en maximum 55. Een leerling vergelijkt de twee groepen.",
+   "v": "Vergelijk de interkwartielafstand en de spreidingsbreedte.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "A heeft interkwartielafstand 20 en B heeft 10 (1p). A heeft breedte 40 en B heeft 30 (1p). B is dus gelijkmatiger bij gelijke mediaan (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een boxplot van toetscijfers heeft minimum 3, Q1 5,5, mediaan 6,5, Q3 7,5 en maximum 9,5. Een leerling beschrijft de verdeling en bepaalt percentages.",
+   "v": "Bepaal de interkwartielafstand en het percentage van 7,5 of hoger.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "De interkwartielafstand is 7,5 − 5,5 = 2 (1p). Q3 hoort bij 75% (1p). Dus 25% heeft 7,5 of hoger (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een leerling zegt dat de lengte van de box in een boxplot het gemiddelde voorstelt. Jij weet dat dit niet klopt. Je wilt de juiste betekenis uitleggen met een voorbeeld.",
+   "v": "Leg uit wat de box en de lengte van de box voorstellen.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "De box loopt van Q1 tot Q3 en bevat 50% van de waarnemingen (1p). De lengte is de interkwartielafstand Q3 min Q1 (1p). Het gemiddelde staat niet in een boxplot (1p)."
+  }
+ ]
+}

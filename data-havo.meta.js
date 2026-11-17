@@ -1495,6 +1495,27 @@ var VAKKEN = [
       "nOe": 5,
       "nBeg": 12,
       "hasSam": true
+     },
+     {
+      "id": "E4",
+      "lo": "wa.E.4",
+      "gs": 2,
+      "naam": "Boxplot en cumulatieve frequentie lezen en maken",
+      "beschrijving": "Je bepaalt de vijf getallen van een dataset, leest en vergelijkt boxplots, leest mediaan en kwartielen af in een cumulatieve grafiek en beschrijft de spreiding en de vorm van de verdeling.",
+      "ceStatus": "CE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Vijf getallen bepalen",
+       "Boxplot lezen",
+       "Cumulatieve grafiek lezen",
+       "Percentages en aantallen",
+       "Boxplots vergelijken"
+      ],
+      "nSv": 27,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
      }
     ]
    }
