@@ -1579,6 +1579,27 @@ var VAKKEN = [
       "nOe": 5,
       "nBeg": 12,
       "hasSam": true
+     },
+     {
+      "id": "E8",
+      "lo": "wa.E.8",
+      "gs": 2,
+      "naam": "Samenhang of oorzakelijk verband: conclusies kritisch beoordelen",
+      "beschrijving": "Je maakt onderscheid tussen samenhang en oorzaak, herkent een derde variabele, een omgekeerde richting en toeval, volgt de empirische cyclus en beoordeelt conclusies met kwalitatieve en kwantitatieve argumenten.",
+      "ceStatus": "CE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Samenhang of oorzaak",
+       "Derde variabele en omgekeerde richting",
+       "De empirische cyclus",
+       "Argumenten beoordelen",
+       "Conclusies beoordelen"
+      ],
+      "nSv": 27,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
      }
     ]
    }

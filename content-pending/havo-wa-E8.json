@@ -1,0 +1,682 @@
+{
+ "id": "E8",
+ "lo": "wa.E.8",
+ "gs": 2,
+ "naam": "Samenhang of oorzakelijk verband: conclusies kritisch beoordelen",
+ "beschrijving": "Je maakt onderscheid tussen samenhang en oorzaak, herkent een derde variabele, een omgekeerde richting en toeval, volgt de empirische cyclus en beoordeelt conclusies met kwalitatieve en kwantitatieve argumenten.",
+ "ceStatus": "CE",
+ "binas": "",
+ "val": "",
+ "onderwerpen": [
+  "Samenhang of oorzaak",
+  "Derde variabele en omgekeerde richting",
+  "De empirische cyclus",
+  "Argumenten beoordelen",
+  "Conclusies beoordelen"
+ ],
+ "sam": "Statistische samenhang is geen oorzakelijk verband. Een derde variabele, een omgekeerde richting of toeval kan het verband verklaren. Een experiment met loting en een vergelijkingsgroep maakt een conclusie sterker. Volg de empirische cyclus en beoordeel conclusies met kwantitatieve argumenten, steekproef en betrouwbaarheid.",
+ "begrippen": [
+  {
+   "t": "Statistische samenhang",
+   "d": "Twee variabelen verschillen samen, bijvoorbeeld in een kruistabel of puntenwolk."
+  },
+  {
+   "t": "Oorzakelijk verband",
+   "d": "De ene variabele veroorzaakt de andere; dat vraagt meer dan samenhang."
+  },
+  {
+   "t": "Derde variabele",
+   "d": "Een variabele die zowel x als y beïnvloedt en een schijnverband kan geven."
+  },
+  {
+   "t": "Omgekeerde richting",
+   "d": "Het kan ook y zijn die x beïnvloedt in plaats van andersom."
+  },
+  {
+   "t": "Toeval",
+   "d": "Een verband dat door kans ontstaat; minder waarschijnlijk bij een grote steekproef."
+  },
+  {
+   "t": "Experiment met loting",
+   "d": "Deelnemers worden door loting over groepen verdeeld, zodat de groepen vergelijkbaar zijn."
+  },
+  {
+   "t": "Empirische cyclus",
+   "d": "Onderzoeksvraag, data verzamelen, data analyseren en conclusies trekken."
+  },
+  {
+   "t": "Kwalitatief argument",
+   "d": "Een argument met woorden zonder getal uit de data."
+  },
+  {
+   "t": "Kwantitatief argument",
+   "d": "Een argument met getallen of percentages uit de data."
+  },
+  {
+   "t": "Vergelijkingsgroep",
+   "d": "Een groep zonder de behandeling om mee te vergelijken."
+  },
+  {
+   "t": "Generaliseren",
+   "d": "Een uitspraak over de hele populatie, alleen toegestaan bij een representatieve steekproef."
+  },
+  {
+   "t": "Conclusie beoordelen",
+   "d": "Controleer vraag, steekproef, vergelijking, derde variabele en betrouwbaarheid."
+  }
+ ],
+ "sv": [
+  {
+   "v": "Twee variabelen hangen statistisch samen. Betekent dat dat de ene de oorzaak is van de andere?",
+   "o": [
+    "\"ja, altijd\"",
+    "\"nee, samenhang bewijst geen oorzaak\"",
+    "\"ja, maar alleen bij een sterk verband\"",
+    "\"ja, als het in een puntenwolk staat\""
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 0,
+   "u": "Zoek eerst welk verband is gevonden en vraag je dan af of er een andere verklaring, een derde variabele of een zwakke steekproef is. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"ja, altijd\"\"? Dan denk je dat samenhang altijd oorzaak betekent. Dat is een veelgemaakte denkfout, dus nee. Het goede antwoord is nee, samenhang bewijst geen oorzaak.",
+    "Klopt: samenhang toont dat variabelen samen verschillen, niet dat de een de ander veroorzaakt.",
+    "Koos je \"\"ja, maar alleen bij een sterk verband\"\"? Dan denk je dat sterkte oorzaak bewijst. Ook een sterk verband bewijst geen oorzaak, dus nee.",
+    "Koos je \"\"ja, als het in een puntenwolk staat\"\"? Dan denk je dat de tekening het bewijs levert. Een puntenwolk toont alleen samenhang, dus nee."
+   ],
+   "uh": "Twee variabelen hangen statistisch samen. Betekent dat dat de ene de oorzaak is van de andere?"
+  },
+  {
+   "v": "Welke term hoort bij een variabele die zowel x als y beïnvloedt en zo een schijnverband kan geven?",
+   "o": [
+    "\"de steekproefgrootte\"",
+    "\"de uitschieter\"",
+    "\"de interkwartielafstand\"",
+    "\"een derde variabele\""
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 1,
+   "u": "Zoek eerst welk verband is gevonden en vraag je dan af of er een andere verklaring, een derde variabele of een zwakke steekproef is. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"de steekproefgrootte\"\"? Dan verwar je een onderzoeksinstelling met een verstorende variabele. Een derde variabele beïnvloedt x en y, dus niet n.",
+    "Koos je \"\"de uitschieter\"\"? Dan verwar je een waarde met een variabele. Een uitschieter is één waarneming, en geen verklarende variabele.",
+    "Koos je \"\"de interkwartielafstand\"\"? Dan verwar je een spreidingsmaat met een verklarende variabele. Die beïnvloedt x en y niet, dus een derde variabele.",
+    "Klopt: een derde variabele kan een verband verklaren dat geen oorzaak is."
+   ],
+   "uh": "Welke term hoort bij een variabele die zowel x als y beïnvloedt en zo een schijnverband kan geven?"
+  },
+  {
+   "v": "Welke stap komt het eerst in de empirische cyclus?",
+   "o": [
+    "\"de onderzoeksvraag formuleren\"",
+    "\"conclusies trekken\"",
+    "\"data analyseren\"",
+    "\"een grafiek tekenen, zeg maar, gewoon\""
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 2,
+   "u": "Zoek eerst welk verband is gevonden en vraag je dan af of er een andere verklaring, een derde variabele of een zwakke steekproef is. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: je begint met een duidelijke vraag. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"conclusies trekken\"\"? Dan zet dit je het einde vooraan. De conclusie volgt na de analyse, dus eerst de vraag. Het goede antwoord is de onderzoeksvraag formuleren.",
+    "Koos je \"\"data analyseren\"\"? Dan zet dit je de analyse vooraan. Eerst moeten de vraag en de data er zijn, dus eerst de vraag.",
+    "Koos je \"\"een grafiek tekenen, zeg maar, gewoon\"\"? Dan zet dit je een onderdeel van de analyse vooraan. Dat komt later, dus eerst de vraag."
+   ],
+   "uh": "Welke stap komt het eerst in de empirische cyclus?"
+  },
+  {
+   "v": "Na het verzamelen van data volgt in de empirische cyclus welke stap?",
+   "o": [
+    "\"de onderzoeksvraag formuleren\"",
+    "\"conclusies trekken\"",
+    "\"de data analyseren\"",
+    "\"nieuwe data verzamelen\""
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 2,
+   "u": "Zoek eerst welk verband is gevonden en vraag je dan af of er een andere verklaring, een derde variabele of een zwakke steekproef is. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"de onderzoeksvraag formuleren\"\"? Dan ga je terug naar het begin. De vraag stond al vast, dus nu analyseren. Het goede antwoord is de data analyseren.",
+    "Koos je \"\"conclusies trekken\"\"? Dan sla je de analyse over. Eerst analyseren, dan concluderen. Door de stappen goed na te lopen kom je uit op de data analyseren.",
+    "Klopt: eerst analyseren, dan conclusies trekken. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"nieuwe data verzamelen\"\"? Dan herhaal je de vorige stap. Na het verzamelen volgt de analyse, dus analyseren. Controleer je stap: de juiste uitkomst is de data analyseren."
+   ],
+   "uh": "Na het verzamelen van data volgt in de empirische cyclus welke stap?"
+  },
+  {
+   "v": "Welke uitspraak is een kwantitatief argument?",
+   "o": [
+    "\"veel mensen lijken tevreden\"",
+    "\"in de steekproef was 70% tevreden\"",
+    "\"het voelt als een goede school\"",
+    "\"iedereen die ik ken vindt het goed, gewoon\""
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 3,
+   "u": "Zoek eerst welk verband is gevonden en vraag je dan af of er een andere verklaring, een derde variabele of een zwakke steekproef is. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"veel mensen lijken tevreden\"\"? Dan gebruik je een vage kwalitatieve uitspraak. Er staat geen getal, dus niet kwantitatief.",
+    "Klopt: een kwantitatief argument gebruikt een getal of percentage uit de data.",
+    "Koos je \"\"het voelt als een goede school\"\"? Dan gebruik je een mening. Er staat geen getal, dus niet kwantitatief. Door de stappen goed na te lopen kom je uit op in de steekproef was 70% tevreden.",
+    "Koos je \"\"iedereen die ik ken vindt het goed, gewoon\"\"? Dan gebruik je een persoonlijke indruk. Er staat geen getal uit de data, dus niet kwantitatief."
+   ],
+   "uh": "Welke uitspraak is een kwantitatief argument?"
+  },
+  {
+   "v": "Een conclusie over een hele populatie op basis van een niet-representatieve steekproef is...",
+   "o": [
+    "\"altijd waar\"",
+    "\"onderbouwd als de steekproef groot is\"",
+    "\"onderbouwd als de conclusie logisch klinkt\"",
+    "\"niet onderbouwd\""
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 4,
+   "u": "Zoek eerst welk verband is gevonden en vraag je dan af of er een andere verklaring, een derde variabele of een zwakke steekproef is. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"altijd waar\"\"? Dan denk je dat een steekproef de populatie altijd weergeeft. Dat geldt alleen bij een representatieve steekproef, dus niet onderbouwd.",
+    "Koos je \"\"onderbouwd als de steekproef groot is\"\"? Dan denk je dat grootte genoeg is. Ook een grote niet-representatieve steekproef geeft vertekening, dus niet onderbouwd.",
+    "Koos je \"\"onderbouwd als de conclusie logisch klinkt\"\"? Dan vertrouw je op de redenering. De steekproef moet de populatie weerspiegelen, dus niet onderbouwd.",
+    "Klopt: zonder representatieve steekproef mag je niet generaliseren."
+   ],
+   "uh": "Een conclusie over een hele populatie op basis van een niet-representatieve steekproef is..."
+  },
+  {
+   "v": "Een gevonden verband kan ook toeval zijn. Wat helpt om dat beter te beoordelen?",
+   "o": [
+    "\"een grotere steekproef gebruiken en het onderzoek herhalen\"",
+    "\"de steekproef verkleinen\"",
+    "\"alleen de uitschieters bekijken, to be honest, you know, I think\"",
+    "\"de resultaten afronden\""
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 1,
+   "u": "Zoek eerst welk verband is gevonden en vraag je dan af of er een andere verklaring, een derde variabele of een zwakke steekproef is. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: meer waarnemingen en herhaling maken toeval minder waarschijnlijk.",
+    "Koos je \"\"de steekproef verkleinen\"\"? Dan maak je de steekproef kleiner. Dan wordt toeval waarschijnlijker, dus groter. Het goede antwoord is een grotere steekproef gebruiken en het onderzoek herhalen.",
+    "Koos je \"\"alleen de uitschieters bekijken, to be honest, you know, I think\"\"? Dan kijk je naar uitzonderingen. Die helpen niet om toeval te beoordelen, dus meer data.",
+    "Koos je \"\"de resultaten afronden\"\"? Dan rond je de uitkomsten af. Dat verandert de betrouwbaarheid niet, dus meer waarnemingen."
+   ],
+   "uh": "Een gevonden verband kan ook toeval zijn. Wat helpt om dat beter te beoordelen?"
+  },
+  {
+   "v": "Welke derde variabele verklaart waarschijnlijk dat grotere voeten samengaan met beter lezen?",
+   "o": [
+    "\"het gewicht van de schoenen, zeg maar\"",
+    "\"de kleur van de schoenen\"",
+    "\"de leeftijd van de kinderen\"",
+    "\"de prijs van de krant\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 1,
+   "u": "Zoek eerst welk verband is gevonden en vraag je dan af of er een andere verklaring, een derde variabele of een zwakke steekproef is. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"het gewicht van de schoenen, zeg maar\"\"? Dan denk je aan een eigenschap van de schoen. Die beïnvloedt lezen niet, dus de leeftijd.",
+    "Koos je \"\"de kleur van de schoenen\"\"? Dan denk je aan de kleur. Die beïnvloedt lezen niet, dus de leeftijd. Door de stappen goed na te lopen kom je uit op de leeftijd van de kinderen.",
+    "Klopt: oudere kinderen hebben grotere voeten en kunnen beter lezen.",
+    "Koos je \"\"de prijs van de krant\"\"? Dan denk je aan de krant. Die beïnvloedt voeten niet, dus de leeftijd. Controleer je stap: de juiste uitkomst is de leeftijd van de kinderen."
+   ],
+   "uh": "Welke derde variabele verklaart waarschijnlijk dat grotere voeten samengaan met beter lezen?",
+   "ctx": "Een onderzoeker meet bij kinderen van 4 tot 12 jaar de schoenmaat en de leesvaardigheid. Kinderen met een grotere schoenmaat lezen gemiddeld beter. In de krant staat: grote voeten maken kinderen betere lezers."
+  },
+  {
+   "v": "Mag je concluderen dat grote voeten kinderen betere lezers maken?",
+   "o": [
+    "\"ja, want de samenhang is sterk, you know, I think\"",
+    "\"nee, de samenhang komt door een derde variabele\"",
+    "\"ja, want het staat in de krant\"",
+    "\"nee, want er is geen samenhang\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 0,
+   "u": "Zoek eerst welk verband is gevonden en vraag je dan af of er een andere verklaring, een derde variabele of een zwakke steekproef is. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"ja, want de samenhang is sterk, you know, I think\"\"? Dan denk je dat sterkte oorzaak bewijst. Een sterk verband is geen bewijs, dus nee.",
+    "Klopt: de leeftijd beïnvloedt beide variabelen. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"ja, want het staat in de krant\"\"? Dan vertrouw je op de bron. Een krant bewijst geen oorzaak, dus nee. Door de stappen goed na te lopen kom je uit op nee, de samenhang komt door een derde variabele.",
+    "Koos je \"\"nee, want er is geen samenhang\"\"? Dan ontken je de samenhang. Er is wel samenhang, maar geen oorzaak. Controleer je stap: de juiste uitkomst is nee, de samenhang komt door een derde variabele."
+   ],
+   "uh": "Mag je concluderen dat grote voeten kinderen betere lezers maken?",
+   "ctx": "Een onderzoeker meet bij kinderen van 4 tot 12 jaar de schoenmaat en de leesvaardigheid. Kinderen met een grotere schoenmaat lezen gemiddeld beter. In de krant staat: grote voeten maken kinderen betere lezers."
+  },
+  {
+   "v": "Hoe kun je de invloed van de leeftijd uitsluiten?",
+   "o": [
+    "\"alleen de grootste kinderen onderzoeken, gewoon, volgens mij\"",
+    "\"de schoenmaat weglaten\"",
+    "\"meer kinderen van 12 jaar kiezen\"",
+    "\"kinderen van dezelfde leeftijd met elkaar vergelijken\""
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 4,
+   "u": "Zoek eerst welk verband is gevonden en vraag je dan af of er een andere verklaring, een derde variabele of een zwakke steekproef is. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"alleen de grootste kinderen onderzoeken, gewoon, volgens mij\"\"? Dan kies je een selectie op voetgrootte. Dat vergroot de vertekening, dus dezelfde leeftijd vergelijken.",
+    "Koos je \"\"de schoenmaat weglaten\"\"? Dan laat je de variabele weg. Dan weet je niets meer over het verband, dus binnen leeftijden vergelijken.",
+    "Koos je \"\"meer kinderen van 12 jaar kiezen\"\"? Dan kies je één leeftijd bij een deel. Dan zijn de groepen niet vergelijkbaar, dus per leeftijd vergelijken.",
+    "Klopt: binnen één leeftijdsgroep kan leeftijd het verschil niet verklaren."
+   ],
+   "uh": "Hoe kun je de invloed van de leeftijd uitsluiten?",
+   "ctx": "Een onderzoeker meet bij kinderen van 4 tot 12 jaar de schoenmaat en de leesvaardigheid. Kinderen met een grotere schoenmaat lezen gemiddeld beter. In de krant staat: grote voeten maken kinderen betere lezers."
+  },
+  {
+   "v": "Waarom is deze opzet sterker dan alleen kijken naar leerlingen die zelf ontbijten?",
+   "o": [
+    "\"de groepen zijn door loting gevormd en dus vergelijkbaar\"",
+    "\"de groepen zijn groter\"",
+    "\"er zijn geen cijfers nodig, denk ik, zeg maar, gewoon\"",
+    "\"de leerlingen kiezen zelf\""
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 0,
+   "u": "Zoek eerst welk verband is gevonden en vraag je dan af of er een andere verklaring, een derde variabele of een zwakke steekproef is. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: loting maakt de groepen gelijk, zodat verschillen door het ontbijt kunnen komen.",
+    "Koos je \"\"de groepen zijn groter\"\"? Dan denk je dat alleen de grootte telt. De loting maakt het verschil, dus de opzet is sterker.",
+    "Koos je \"\"er zijn geen cijfers nodig, denk ik, zeg maar, gewoon\"\"? Dan denk je dat cijfers niet nodig zijn. De cijfers worden juist vergeleken, maar door loting zijn de groepen gelijk.",
+    "Koos je \"\"de leerlingen kiezen zelf\"\"? Dan draai je de logica om. Zelf kiezen geeft juist vertekening, en loting is sterker."
+   ],
+   "uh": "Waarom is deze opzet sterker dan alleen kijken naar leerlingen die zelf ontbijten?",
+   "ctx": "Een school wil weten of ontbijten leidt tot betere cijfers. De onderzoeker verdeelt 200 leerlingen met loting over twee groepen: 100 leerlingen krijgen een maand lang elke ochtend een ontbijt op school en 100 niet. Daarna vergelijkt hij de gemiddelde cijfers."
+  },
+  {
+   "v": "Welke conclusie is bij deze opzet beter onderbouwd dan bij een enquête?",
+   "o": [
+    "\"ontbijt hangt altijd samen met cijfers, volgens mij, eigenlijk\"",
+    "\"ontbijt maakt iedereen slim\"",
+    "\"ontbijt kan de oorzaak zijn van een verschil in cijfers\"",
+    "\"er is geen verband mogelijk\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 0,
+   "u": "Zoek eerst welk verband is gevonden en vraag je dan af of er een andere verklaring, een derde variabele of een zwakke steekproef is. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"ontbijt hangt altijd samen met cijfers, volgens mij, eigenlijk\"\"? Dan generaliseer je te sterk. Het gaat om dit experiment, dus voorzichtig.",
+    "Koos je \"\"ontbijt maakt iedereen slim\"\"? Dan trek je een te grote conclusie. Een gemiddeld verschil bewijst niets over iedereen, dus voorzichtig.",
+    "Klopt: door loting kun je een oorzakelijke conclusie voorzichtig trekken.",
+    "Koos je \"\"er is geen verband mogelijk\"\"? Dan ontken je elk verband. Het experiment kan juist een verschil tonen, dus een mogelijke oorzaak."
+   ],
+   "uh": "Welke conclusie is bij deze opzet beter onderbouwd dan bij een enquête?",
+   "ctx": "Een school wil weten of ontbijten leidt tot betere cijfers. De onderzoeker verdeelt 200 leerlingen met loting over twee groepen: 100 leerlingen krijgen een maand lang elke ochtend een ontbijt op school en 100 niet. Daarna vergelijkt hij de gemiddelde cijfers."
+  },
+  {
+   "v": "Welke beperking blijft er voor de conclusie?",
+   "o": [
+    "\"er is geen enkele beperking, zeg maar, gewoon, volgens mij\"",
+    "\"het onderzoek geldt alleen voor deze leerlingen en deze periode\"",
+    "\"loting is niet toegestaan\"",
+    "\"het ontbijt is niet gezond\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 4,
+   "u": "Zoek eerst welk verband is gevonden en vraag je dan af of er een andere verklaring, een derde variabele of een zwakke steekproef is. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"er is geen enkele beperking, zeg maar, gewoon, volgens mij\"\"? Dan denk je dat het experiment alles oplost. Het geldt voor deze groep, dus er is een beperking.",
+    "Klopt: generaliseren naar alle leerlingen vraagt om een representatieve steekproef.",
+    "Koos je \"\"loting is niet toegestaan\"\"? Dan denk je dat loting fout is. Loting is juist sterk, en de beperking zit in de generalisatie.",
+    "Koos je \"\"het ontbijt is niet gezond\"\"? Dan denk je aan voeding. De beperking gaat over de steekproef, en niet over gezondheid."
+   ],
+   "uh": "Welke beperking blijft er voor de conclusie?",
+   "ctx": "Een school wil weten of ontbijten leidt tot betere cijfers. De onderzoeker verdeelt 200 leerlingen met loting over twee groepen: 100 leerlingen krijgen een maand lang elke ochtend een ontbijt op school en 100 niet. Daarna vergelijkt hij de gemiddelde cijfers."
+  },
+  {
+   "v": "In welke stap van de cyclus maakt hij een histogram van de toetscijfers?",
+   "o": [
+    "\"een onderzoeksvraag opstellen\"",
+    "\"gegevens verzamelen\"",
+    "\"een conclusie trekken\"",
+    "\"gegevens analyseren\""
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 2,
+   "u": "Zoek eerst welk verband is gevonden en vraag je dan af of er een andere verklaring, een derde variabele of een zwakke steekproef is. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"een onderzoeksvraag opstellen\"\"? Dan zie je het tekenen als het begin. Een histogram vraagt om data, dus bij het analyseren.",
+    "Koos je \"\"gegevens verzamelen\"\"? Dan zie je het tekenen als verzamelen. Eerst moeten de data er zijn, dus bij het analyseren.",
+    "Koos je \"\"een conclusie trekken\"\"? Dan zie je de grafiek als de conclusie. De conclusie volgt na de analyse, dus bij het analyseren.",
+    "Klopt: een histogram maken hoort bij het analyseren van de data."
+   ],
+   "uh": "In welke stap van de cyclus maakt hij een histogram van de toetscijfers?",
+   "ctx": "Een leerling doet een onderzoek naar de vraag of leerlingen die bijles krijgen hogere toetscijfers halen. Hij werkt in vier stappen: een onderzoeksvraag opstellen, gegevens verzamelen, de gegevens analyseren en een conclusie trekken."
+  },
+  {
+   "v": "Welke vraag hoort bij de eerste stap van het onderzoek?",
+   "o": [
+    "\"krijgen leerlingen met bijles gemiddeld hogere toetscijfers dan leerlingen zonder bijles\"",
+    "\"zijn bijlessen leuk\"",
+    "\"hoeveel kost bijles\"",
+    "\"waarom is bijles zo belangrijk, gewoon, volgens mij, eigenlijk\""
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 2,
+   "u": "Zoek eerst welk verband is gevonden en vraag je dan af of er een andere verklaring, een derde variabele of een zwakke steekproef is. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: een goede onderzoeksvraag zegt wat je onderzoekt en bij wie.",
+    "Koos je \"\"zijn bijlessen leuk\"\"? Dan kies je een vage mening. Dat is geen onderzoeksvraag, dus een duidelijke vraag. Het goede antwoord is krijgen leerlingen met bijles gemiddeld hogere toetscijfers dan leerlingen zonder bijles.",
+    "Koos je \"\"hoeveel kost bijles\"\"? Dan kies je een prijsvraag. De vraag gaat over cijfers, dus een vraag over cijfers. Door de stappen goed na te lopen kom je uit op krijgen leerlingen met bijles gemiddeld hogere toetscijfers dan leerlingen zonder bijles.",
+    "Koos je \"\"waarom is bijles zo belangrijk, gewoon, volgens mij, eigenlijk\"\"? Dan kies je een sturende vraag. Die veronderstelt het antwoord, dus een neutrale vraag."
+   ],
+   "uh": "Welke vraag hoort bij de eerste stap van het onderzoek?",
+   "ctx": "Een leerling doet een onderzoek naar de vraag of leerlingen die bijles krijgen hogere toetscijfers halen. Hij werkt in vier stappen: een onderzoeksvraag opstellen, gegevens verzamelen, de gegevens analyseren en een conclusie trekken."
+  },
+  {
+   "v": "Waarmee moet de conclusie van de leerling aan het eind overeenkomen?",
+   "o": [
+    "\"met zijn eigen verwachting\"",
+    "\"met het oordeel van de bijlesleraar, I think, I suppose, really\"",
+    "\"met de onderzoeksvraag en de uitkomsten van de analyse\"",
+    "\"met een nieuwe onderzoeksvraag\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 3,
+   "u": "Zoek eerst welk verband is gevonden en vraag je dan af of er een andere verklaring, een derde variabele of een zwakke steekproef is. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"met zijn eigen verwachting\"\"? Dan laat je je mening leiden. De conclusie volgt uit de data, dus de vraag en de analyse.",
+    "Koos je \"\"met het oordeel van de bijlesleraar, I think, I suppose, really\"\"? Dan vertrouw je op een derde. De conclusie volgt uit de data, dus de vraag en de analyse.",
+    "Klopt: de conclusie moet beantwoorden wat gevraagd was en aansluiten op de data.",
+    "Koos je \"\"met een nieuwe onderzoeksvraag\"\"? Dan wissel je de vraag. De conclusie moet de oorspronkelijke vraag beantwoorden, dus de vraag en de analyse."
+   ],
+   "uh": "Waarmee moet de conclusie van de leerling aan het eind overeenkomen?",
+   "ctx": "Een leerling doet een onderzoek naar de vraag of leerlingen die bijles krijgen hogere toetscijfers halen. Hij werkt in vier stappen: een onderzoeksvraag opstellen, gegevens verzamelen, de gegevens analyseren en een conclusie trekken."
+  },
+  {
+   "v": "Welke fout kan er bij het verzamelen van data de conclusie later vertekenen?",
+   "o": [
+    "\"een grote steekproef gebruiken, volgens mij, eigenlijk, denk ik\"",
+    "\"alleen leerlingen vragen die zelf graag over bijles praten\"",
+    "\"de cijfers in een tabel zetten\"",
+    "\"de vraag duidelijk formuleren\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 4,
+   "u": "Zoek eerst welk verband is gevonden en vraag je dan af of er een andere verklaring, een derde variabele of een zwakke steekproef is. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"een grote steekproef gebruiken, volgens mij, eigenlijk, denk ik\"\"? Dan noem je een goede keuze. Een grote steekproef is niet het probleem, maar de selectie wel.",
+    "Klopt: dat is een selectieve en niet-representatieve steekproef.",
+    "Koos je \"\"de cijfers in een tabel zetten\"\"? Dan noem je een neutrale handeling. Dat vertekent niet, dus de selectie is het probleem.",
+    "Koos je \"\"de vraag duidelijk formuleren\"\"? Dan noem je een goede keuze. Een duidelijke vraag helpt, en de selectie vertekent."
+   ],
+   "uh": "Welke fout kan er bij het verzamelen van data de conclusie later vertekenen?",
+   "ctx": "Een leerling doet een onderzoek naar de vraag of leerlingen die bijles krijgen hogere toetscijfers halen. Hij werkt in vier stappen: een onderzoeksvraag opstellen, gegevens verzamelen, de gegevens analyseren en een conclusie trekken."
+  },
+  {
+   "v": "Welk gegeven ontbreekt om te beoordelen of tandpasta X werkt?",
+   "o": [
+    "\"het totale aantal tandenborstels, zeg maar, gewoon, volgens mij\"",
+    "\"de prijs van de tandpasta\"",
+    "\"de kleur van de verpakking\"",
+    "\"het percentage zonder gaatjes bij mensen die X niet gebruiken\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 3,
+   "u": "Zoek eerst welk verband is gevonden en vraag je dan af of er een andere verklaring, een derde variabele of een zwakke steekproef is. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"het totale aantal tandenborstels, zeg maar, gewoon, volgens mij\"\"? Dan noem je een irrelevant gegeven. Je mist een vergelijking, dus een vergelijkingsgroep.",
+    "Koos je \"\"de prijs van de tandpasta\"\"? Dan noem je een prijs. Die zegt niets over gaatjes, dus een vergelijkingsgroep. Door de stappen goed na te lopen kom je uit op het percentage zonder gaatjes bij mensen die X niet gebruiken.",
+    "Koos je \"\"de kleur van de verpakking\"\"? Dan noem je een uiterlijk. Dat zegt niets over gaatjes, dus een vergelijkingsgroep.",
+    "Klopt: zonder vergelijkingsgroep zegt 80% niets. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Welk gegeven ontbreekt om te beoordelen of tandpasta X werkt?",
+   "ctx": "Een reclame zegt: Onder 500 gebruikers van tandpasta X heeft 80% geen gaatjes. De fabrikant laat niet zien hoeveel mensen die tandpasta X niet gebruiken geen gaatjes hebben, en de gebruikers waren vrijwilligers die zich via de fabrikant aanmeldden."
+  },
+  {
+   "v": "Wat zegt het getal 80% zonder vergelijking?",
+   "o": [
+    "\"niets over het effect van tandpasta X\"",
+    "\"dat X werkt\"",
+    "\"dat X schadelijk is\"",
+    "\"dat 20% gaatjes heeft door X, eigenlijk\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 3,
+   "u": "Zoek eerst welk verband is gevonden en vraag je dan af of er een andere verklaring, een derde variabele of een zwakke steekproef is. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: misschien heeft 80% van alle mensen geen gaatjes.",
+    "Koos je \"\"dat X werkt\"\"? Dan trek je een conclusie zonder vergelijking. 80% kan ook bij andere tandpasta gelden, dus niets over het effect.",
+    "Koos je \"\"dat X schadelijk is\"\"? Dan trek je een tegengestelde conclusie. Er is geen vergelijking, dus niets over het effect.",
+    "Koos je \"\"dat 20% gaatjes heeft door X, eigenlijk\"\"? Dan leg je een oorzaak vast zonder vergelijking. Het zegt niets over het effect, dus niets."
+   ],
+   "uh": "Wat zegt het getal 80% zonder vergelijking?",
+   "ctx": "Een reclame zegt: Onder 500 gebruikers van tandpasta X heeft 80% geen gaatjes. De fabrikant laat niet zien hoeveel mensen die tandpasta X niet gebruiken geen gaatjes hebben, en de gebruikers waren vrijwilligers die zich via de fabrikant aanmeldden."
+  },
+  {
+   "v": "Waarom is de groep van 500 gebruikers waarschijnlijk niet representatief?",
+   "o": [
+    "\"de groep is te groot\"",
+    "\"tandpasta is niet meetbaar\"",
+    "\"de gebruikers meldden zich vrijwillig aan via de fabrikant\"",
+    "\"er zijn geen mensen met gaatjes, gewoon, volgens mij, eigenlijk\""
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 4,
+   "u": "Zoek eerst welk verband is gevonden en vraag je dan af of er een andere verklaring, een derde variabele of een zwakke steekproef is. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"de groep is te groot\"\"? Dan denk je dat 500 te veel is. Het probleem is de aanmelding, dus zelfselectie. Het goede antwoord is de gebruikers meldden zich vrijwillig aan via de fabrikant.",
+    "Koos je \"\"tandpasta is niet meetbaar\"\"? Dan denk je dat meten onmogelijk is. Het probleem is de selectie, dus niet representatief.",
+    "Klopt: vrijwillige aanmelding geeft zelfselectie, dus vertekening.",
+    "Koos je \"\"er zijn geen mensen met gaatjes, gewoon, volgens mij, eigenlijk\"\"? Dan denk je dat er geen gaatjes zijn. Het probleem is de selectie, dus niet representatief."
+   ],
+   "uh": "Waarom is de groep van 500 gebruikers waarschijnlijk niet representatief?",
+   "ctx": "Een reclame zegt: Onder 500 gebruikers van tandpasta X heeft 80% geen gaatjes. De fabrikant laat niet zien hoeveel mensen die tandpasta X niet gebruiken geen gaatjes hebben, en de gebruikers waren vrijwilligers die zich via de fabrikant aanmeldden."
+  },
+  {
+   "v": "Welke aanpak maakt de conclusie over tandpasta X onderbouwd?",
+   "o": [
+    "\"meer reclame maken\"",
+    "\"gebruikers en niet-gebruikers vergelijken in aselecte steekproeven\"",
+    "\"alleen de fabrikant ondervragen, denk ik, zeg maar, gewoon\"",
+    "\"het percentage hoger afronden\""
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 4,
+   "u": "Zoek eerst welk verband is gevonden en vraag je dan af of er een andere verklaring, een derde variabele of een zwakke steekproef is. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"meer reclame maken\"\"? Dan kies je een marketingaanpak. Dat is geen onderzoek, dus een vergelijking met een aselecte steekproef.",
+    "Klopt: met een vergelijkingsgroep en loting wordt de vergelijking eerlijk.",
+    "Koos je \"\"alleen de fabrikant ondervragen, denk ik, zeg maar, gewoon\"\"? Dan kies je een belanghebbende bron. Die is niet onafhankelijk, dus aselect vergelijken.",
+    "Koos je \"\"het percentage hoger afronden\"\"? Dan rond je het resultaat op. Dat verandert niets aan de opzet, dus vergelijken."
+   ],
+   "uh": "Welke aanpak maakt de conclusie over tandpasta X onderbouwd?",
+   "ctx": "Een reclame zegt: Onder 500 gebruikers van tandpasta X heeft 80% geen gaatjes. De fabrikant laat niet zien hoeveel mensen die tandpasta X niet gebruiken geen gaatjes hebben, en de gebruikers waren vrijwilligers die zich via de fabrikant aanmeldden."
+  },
+  {
+   "v": "Welke fout zit in de redenering dat werken tot lagere cijfers leidt?",
+   "o": [
+    "\"de cijfers zijn te laag\"",
+    "\"de enquête heeft te weinig vragen\"",
+    "\"het gemiddelde is verkeerd berekend, volgens mij\"",
+    "\"uit samenhang wordt een oorzaak afgeleid\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 0,
+   "u": "Zoek eerst welk verband is gevonden en vraag je dan af of er een andere verklaring, een derde variabele of een zwakke steekproef is. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"de cijfers zijn te laag\"\"? Dan denk je dat het niveau het probleem is. De fout zit in de redenering, dus samenhang als oorzaak.",
+    "Koos je \"\"de enquête heeft te weinig vragen\"\"? Dan denk je aan de opzet. De fout is de conclusie, dus samenhang als oorzaak.",
+    "Koos je \"\"het gemiddelde is verkeerd berekend, volgens mij\"\"? Dan denk je aan een rekenfout. Het gaat om de interpretatie, dus samenhang als oorzaak.",
+    "Klopt: het verschil 6,3 tegenover 6,9 toont samenhang, geen oorzaak."
+   ],
+   "uh": "Welke fout zit in de redenering dat werken tot lagere cijfers leidt?",
+   "ctx": "In een krant staat: Studenten die in het weekend werken halen lagere cijfers, dus ze moeten stoppen met werken. Het onderzoek is een enquête onder 300 studenten waarbij het gemiddelde cijfer van werkende studenten 6,3 was en van niet-werkende studenten 6,9."
+  },
+  {
+   "v": "Welke alternatieve verklaring past bij het verband tussen werken en lagere cijfers?",
+   "o": [
+    "\"studenten met minder studietijd of weinig geld moeten werken\"",
+    "\"werken maakt studenten gelukkiger\"",
+    "\"lage cijfers zijn altijd toeval\"",
+    "\"cijfers hebben geen invloed op werken, zeg maar, gewoon, volgens mij\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 1,
+   "u": "Zoek eerst welk verband is gevonden en vraag je dan af of er een andere verklaring, een derde variabele of een zwakke steekproef is. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: een derde variabele kan beide verklaren. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"werken maakt studenten gelukkiger\"\"? Dan kies je een niet-verklarende uitspraak. Het gaat om een mogelijke derde variabele, dus studietijd of geld.",
+    "Koos je \"\"lage cijfers zijn altijd toeval\"\"? Dan kies je toeval als enige verklaring. Er zijn andere logische verklaringen, zoals studietijd of geld.",
+    "Koos je \"\"cijfers hebben geen invloed op werken, zeg maar, gewoon, volgens mij\"\"? Dan sluit je een omgekeerde richting uit. Dat kan juist wel, dus er zijn alternatieven."
+   ],
+   "uh": "Welke alternatieve verklaring past bij het verband tussen werken en lagere cijfers?",
+   "ctx": "In een krant staat: Studenten die in het weekend werken halen lagere cijfers, dus ze moeten stoppen met werken. Het onderzoek is een enquête onder 300 studenten waarbij het gemiddelde cijfer van werkende studenten 6,3 was en van niet-werkende studenten 6,9."
+  },
+  {
+   "v": "Welke omgekeerde richting is denkbaar?",
+   "o": [
+    "\"studenten met hoge cijfers werken minder, eigenlijk, denk ik, zeg maar\"",
+    "\"werken en cijfers zijn onafhankelijk\"",
+    "\"studenten met lage cijfers gaan juist minder snel naar de bibliotheek en werken meer\"",
+    "\"de enquête is geen onderzoek\""
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 1,
+   "u": "Zoek eerst welk verband is gevonden en vraag je dan af of er een andere verklaring, een derde variabele of een zwakke steekproef is. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"studenten met hoge cijfers werken minder, eigenlijk, denk ik, zeg maar\"\"? Dan herhaal je dezelfde richting. Een omgekeerde richting is dat de cijfers het werken beïnvloeden, dus andersom.",
+    "Koos je \"\"werken en cijfers zijn onafhankelijk\"\"? Dan zeg je dat er geen verband is. Er is wel een verband, en de richting kan omgekeerd zijn.",
+    "Klopt: lage cijfers kunnen leiden tot meer werken in plaats van andersom.",
+    "Koos je \"\"de enquête is geen onderzoek\"\"? Dan ontken je het onderzoek. Het is een onderzoek, maar de richting kan omgekeerd zijn."
+   ],
+   "uh": "Welke omgekeerde richting is denkbaar?",
+   "ctx": "In een krant staat: Studenten die in het weekend werken halen lagere cijfers, dus ze moeten stoppen met werken. Het onderzoek is een enquête onder 300 studenten waarbij het gemiddelde cijfer van werkende studenten 6,3 was en van niet-werkende studenten 6,9."
+  },
+  {
+   "v": "Welk argument is sterker onderbouwd, A of B?",
+   "o": [
+    "\"A, want het klinkt voorzichtig\"",
+    "\"B, want het is kwantitatief met een interval en een aselecte steekproef\"",
+    "\"A, want het gaat over veel leerlingen, gewoon, volgens mij, eigenlijk\"",
+    "\"beide even sterk\""
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 3,
+   "u": "Zoek eerst welk verband is gevonden en vraag je dan af of er een andere verklaring, een derde variabele of een zwakke steekproef is. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"A, want het klinkt voorzichtig\"\"? Dan vind je voorzichtige woorden genoeg. Het zijn geen gegevens, dus B is sterker.",
+    "Klopt: B noemt een percentage, een steekproef en een betrouwbaarheidsinterval.",
+    "Koos je \"\"A, want het gaat over veel leerlingen, gewoon, volgens mij, eigenlijk\"\"? Dan denk je dat veel genoeg is. Zonder getal of steekproef is A zwak, dus B.",
+    "Koos je \"\"beide even sterk\"\"? Dan denk je dat beide gelijk zijn. B heeft getallen en een betrouwbaarheid, dus B is sterker."
+   ],
+   "uh": "Welk argument is sterker onderbouwd, A of B?",
+   "ctx": "Onderzoeker A schrijft: veel leerlingen lijken tevreden over de school. Onderzoeker B schrijft: in een aselecte steekproef van 400 leerlingen is 70% tevreden en met 95% betrouwbaarheid ligt het ware aandeel tussen 65% en 75%."
+  },
+  {
+   "v": "Waarom is de uitspraak van A zwakker?",
+   "o": [
+    "\"ze is te lang\"",
+    "\"ze noemt de school niet, denk ik, zeg maar, gewoon\"",
+    "\"ze is negatief\"",
+    "\"ze bevat geen getal, geen steekproef en geen betrouwbaarheid\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 3,
+   "u": "Zoek eerst welk verband is gevonden en vraag je dan af of er een andere verklaring, een derde variabele of een zwakke steekproef is. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"ze is te lang\"\"? Dan denk je dat de lengte telt. Het probleem is de vaagheid, dus geen getal of steekproef. Het goede antwoord is ze bevat geen getal, geen steekproef en geen betrouwbaarheid.",
+    "Koos je \"\"ze noemt de school niet, denk ik, zeg maar, gewoon\"\"? Dan denk je dat de school ontbreekt. De school staat er, maar getallen en steekproef ontbreken.",
+    "Koos je \"\"ze is negatief\"\"? Dan denk je dat de toon telt. De uitspraak is positief, maar vaag. Controleer je stap: de juiste uitkomst is ze bevat geen getal, geen steekproef en geen betrouwbaarheid.",
+    "Klopt: veel en lijken zijn vaag en niet te controleren. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Waarom is de uitspraak van A zwakker?",
+   "ctx": "Onderzoeker A schrijft: veel leerlingen lijken tevreden over de school. Onderzoeker B schrijft: in een aselecte steekproef van 400 leerlingen is 70% tevreden en met 95% betrouwbaarheid ligt het ware aandeel tussen 65% en 75%."
+  },
+  {
+   "v": "Wat betekent het interval 65% tot 75% voor B?",
+   "o": [
+    "\"met 95% betrouwbaarheid ligt het ware aandeel tevreden tussen 65% en 75%\"",
+    "\"95% van de leerlingen is tussen 65% en 75% tevreden, volgens mij, eigenlijk\"",
+    "\"het ware aandeel is zeker 70%\"",
+    "\"de leerlingen scoren tussen 65 en 75 punten\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 4,
+   "u": "Zoek eerst welk verband is gevonden en vraag je dan af of er een andere verklaring, een derde variabele of een zwakke steekproef is. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: het interval is een uitspraak over de hele populatie.",
+    "Koos je \"\"95% van de leerlingen is tussen 65% en 75% tevreden, volgens mij, eigenlijk\"\"? Dan verwar je het interval met individuen. Het gaat om één ware proportie, en niet om personen.",
+    "Koos je \"\"het ware aandeel is zeker 70%\"\"? Dan verwar je het midden met zekerheid. Het ware aandeel kan afwijken, dus een interval.",
+    "Koos je \"\"de leerlingen scoren tussen 65 en 75 punten\"\"? Dan verwar je percentages met punten. Het gaat om het aandeel tevreden, en niet om punten."
+   ],
+   "uh": "Wat betekent het interval 65% tot 75% voor B?",
+   "ctx": "Onderzoeker A schrijft: veel leerlingen lijken tevreden over de school. Onderzoeker B schrijft: in een aselecte steekproef van 400 leerlingen is 70% tevreden en met 95% betrouwbaarheid ligt het ware aandeel tussen 65% en 75%."
+  }
+ ],
+ "oe": [
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een krant schrijft: kinderen die meer ijs eten, worden vaker ziek van de zon, dus ijs is gevaarlijk. Een puntenwolk van maandelijkse ijsverkoop tegen het aantal gevallen van zonnesteek laat een stijgend patroon zien. Een leerling beoordeelt de conclusie.",
+   "v": "Verklaar het verband en beoordeel de conclusie.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Er is een positieve samenhang (1p). De temperatuur is de derde variabele (1p). Ijs veroorzaakt de zonnesteek niet, dus de conclusie is niet onderbouwd (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een school verdeelt met loting 100 leerlingen over twee groepen: een groep krijgt een maand extra begeleiding en de andere niet. Daarna vergelijkt de school de gemiddelde cijfers. Een leerling beoordeelt wat je hieruit mag concluderen.",
+   "v": "Leg uit waarom deze opzet sterker is en noem een beperking.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Loting maakt de groepen vergelijkbaar (1p). Een verschil kan dus door de begeleiding komen (1p). De conclusie geldt voor deze leerlingen en periode (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een leerling onderzoekt of leerlingen die sporten hogere cijfers halen. Hij werkt in vier stappen: vraag, data verzamelen, analyseren en concluderen. Hij ondervraagt alleen leerlingen van de sportclub, omdat die makkelijk te bereiken zijn.",
+   "v": "Noem de fout bij het verzamelen en het gevolg voor de conclusie.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "De steekproef is niet representatief (1p). Alleen sporters worden ondervraagd (1p). De conclusie voor alle leerlingen is niet onderbouwd (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Onderzoeker A zegt dat veel mensen lijken te kiezen voor fietsen. Onderzoeker B zegt dat in een aselecte steekproef van 500 mensen 60% fietst, met een interval van 56% tot 64% bij 95% betrouwbaarheid. Een leerling vergelijkt de twee argumenten.",
+   "v": "Beoordeel welk argument sterker is en geef redenen.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "B is kwantitatief en noemt een getal en interval (1p). B heeft een aselecte steekproef (1p). A is vaag en niet te controleren (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een leerling zegt dat een sterk verband tussen twee variabelen bewijst dat de ene de andere veroorzaakt. Jij weet dat dit niet klopt. Je wilt het uitleggen met een voorbeeld en een controle.",
+   "v": "Leg uit waarom sterke samenhang geen bewijs van oorzaak is.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Een derde variabele kan beide verklaren, zoals temperatuur bij ijs en zonnesteek (1p). De richting kan omgekeerd zijn (1p). Een experiment met loting of vergelijking per groep helpt om oorzaak te onderzoeken (1p)."
+  }
+ ]
+}
