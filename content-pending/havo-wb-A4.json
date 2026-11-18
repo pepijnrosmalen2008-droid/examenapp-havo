@@ -1,0 +1,682 @@
+{
+ "id": "A4",
+ "lo": "wb.A.4",
+ "gs": 2,
+ "naam": "Rekenregels en algebraïsche basisvaardigheden toepassen",
+ "beschrijving": "Je werkt haakjes weg, gebruikt merkwaardige producten, ontbindt in factoren, rekent met machten, wortels en breuken, let op beperkende voorwaarden en controleert je uitkomst door een getal in te vullen.",
+ "ceStatus": "CE",
+ "binas": "",
+ "val": "",
+ "onderwerpen": [
+  "Haakjes en merkwaardige producten",
+  "Ontbinden",
+  "Machten en wortels",
+  "Breuken",
+  "Controleren door invullen"
+ ],
+ "sam": "Werk haakjes weg met elke term met elke term en let op de dubbele term bij een kwadraat. Ontbind door eerst een gemeenschappelijke factor buiten haakjes te halen en herken een verschil van kwadraten. Bij machten tel je exponenten op, bij breuken maak je gelijke noemers. Controleer met een getal en let op noemers die 0 worden.",
+ "begrippen": [
+  {
+   "t": "Haakjes wegwerken",
+   "d": "Elke term met elke term vermenigvuldigen: (x + 3)(x + 3) = x² + 6x + 9."
+  },
+  {
+   "t": "Kwadraat van een som",
+   "d": "(a + b)² = a² + 2ab + b²; de dubbele term hoort erbij."
+  },
+  {
+   "t": "Verschil van kwadraten",
+   "d": "(a − b)(a + b) = a² − b²; de middenterm valt weg."
+  },
+  {
+   "t": "Buiten haakjes brengen",
+   "d": "De gemeenschappelijke factor vooraan zetten: 6x + 9 = 3(2x + 3)."
+  },
+  {
+   "t": "Ontbinden",
+   "d": "Een uitdrukking als product van factoren schrijven."
+  },
+  {
+   "t": "Som-productmethode",
+   "d": "Bij x² + bx + c zoek je twee getallen met product c en som b."
+  },
+  {
+   "t": "Machten",
+   "d": "a^m · a^n = a^(m + n) en (a^m)^n = a^(mn)."
+  },
+  {
+   "t": "Gebroken exponent",
+   "d": "a^(1/2) = √a; a^(m/n) is de n-de machtswortel tot de macht m."
+  },
+  {
+   "t": "Breuken optellen",
+   "d": "Eerst een gemeenschappelijke noemer, dan de tellers optellen."
+  },
+  {
+   "t": "Beperkende voorwaarde",
+   "d": "Noemers zijn niet gelijk aan 0."
+  },
+  {
+   "t": "Controleren door invullen",
+   "d": "Een getal invullen in begin en eind; de uitkomsten moeten gelijk zijn."
+  },
+  {
+   "t": "Volledig ontbinden",
+   "d": "Eerst een gemeenschappelijke factor, dan een kwadraat of een verschil van kwadraten."
+  }
+ ],
+ "sv": [
+  {
+   "v": "Werk (x + 3)² uit zonder haakjes. Welke vorm krijg je?",
+   "o": [
+    "\"x² + 9\"",
+    "\"x² + 6x + 9\"",
+    "\"x² + 3x + 9, I think\"",
+    "\"2x + 6\""
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 0,
+   "u": "Werk stap voor stap met de rekenregels en controleer je resultaat door een getal in te vullen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"x² + 9\"\"? Dan kwadrateer je elke term apart. Bij een kwadraat van een som komt de dubbele term erbij, dus 6x. Het goede antwoord is x² + 6x + 9.",
+    "Klopt: (x + 3)(x + 3) = x² + 3x + 3x + 9 = x² + 6x + 9. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"x² + 3x + 9, I think\"\"? Dan neem je de dubbele term maar één keer. De dubbele term is 2 · 3x = 6x, dus x² + 6x + 9. Door de stappen goed na te lopen kom je uit op x² + 6x + 9.",
+    "Koos je \"\"2x + 6\"\"? Dan vermenigvuldig je alleen de termen met 2. Een kwadraat is een product van twee dezelfde haakjes, dus x² + 6x + 9."
+   ],
+   "uh": "Werk (x + 3)² uit zonder haakjes. Welke vorm krijg je?"
+  },
+  {
+   "v": "Werk (x − 3)(x + 3) uit. Welke vorm krijg je?",
+   "o": [
+    "\"x² + 9\"",
+    "\"x² − 6x − 9\"",
+    "\"x² − 3\"",
+    "\"x² − 9\""
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 0,
+   "u": "Werk stap voor stap met de rekenregels en controleer je resultaat door een getal in te vullen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"x² + 9\"\"? Dan maak je van −3 · 3 een plus. Het product van −3 en 3 is negatief, dus x² − 9. Het goede antwoord is x² − 9.",
+    "Koos je \"\"x² − 6x − 9\"\"? Dan tel je de middentermen verkeerd. −3x en +3x heffen elkaar op, dus x² − 9. Door de stappen goed na te lopen kom je uit op x² − 9.",
+    "Koos je \"\"x² − 3\"\"? Dan deel je 9 door 3. De laatste term is −3 · 3, dus −9. Controleer je stap: de juiste uitkomst is x² − 9.",
+    "Klopt: de middentermen −3x en +3x heffen elkaar op. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Werk (x − 3)(x + 3) uit. Welke vorm krijg je?"
+  },
+  {
+   "v": "Ontbind x² + 5x + 6 in factoren. Welke vorm krijg je?",
+   "o": [
+    "\"(x + 2)(x + 3)\"",
+    "\"(x + 1)(x + 6), I suppose\"",
+    "\"(x + 5)(x + 6)\"",
+    "\"(x − 2)(x − 3)\""
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 1,
+   "u": "Werk stap voor stap met de rekenregels en controleer je resultaat door een getal in te vullen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: 2 · 3 = 6 en 2 + 3 = 5. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"(x + 1)(x + 6), I suppose\"\"? Dan kies je twee getallen met product 6 maar som 7. Je zoekt som 5, dus 2 en 3. Het goede antwoord is (x + 2)(x + 3).",
+    "Koos je \"\"(x + 5)(x + 6)\"\"? Dan gebruik je de coëfficiënt en de constante als getallen. De getallen moeten product 6 en som 5 hebben, dus 2 en 3.",
+    "Koos je \"\"(x − 2)(x − 3)\"\"? Dan kies je getallen met som −5. Je zoekt som +5, dus (x + 2)(x + 3). Controleer je stap: de juiste uitkomst is (x + 2)(x + 3)."
+   ],
+   "uh": "Ontbind x² + 5x + 6 in factoren. Welke vorm krijg je?"
+  },
+  {
+   "v": "Breng 6x + 9 buiten haakjes. Welke vorm krijg je?",
+   "o": [
+    "\"6(x + 9)\"",
+    "\"3(2x + 9), you know\"",
+    "\"3(2x + 3)\"",
+    "\"3x(2 + 3)\""
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 1,
+   "u": "Werk stap voor stap met de rekenregels en controleer je resultaat door een getal in te vullen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"6(x + 9)\"\"? Dan haal je 6 buiten haakjes terwijl 9 niet deelbaar is door 6. Neem de factor die in beide termen zit, dus 3.",
+    "Koos je \"\"3(2x + 9), you know\"\"? Dan laat je de 9 staan. Ook 9 moet door 3 worden gedeeld, dus 3(2x + 3). Door de stappen goed na te lopen kom je uit op 3(2x + 3).",
+    "Klopt: 3 is de grootste gemeenschappelijke factor van 6x en 9.",
+    "Koos je \"\"3x(2 + 3)\"\"? Dan zet dit je x buiten haakjes terwijl 9 geen x bevat. Alleen wat in beide termen zit mag weg, dus de factor 3."
+   ],
+   "uh": "Breng 6x + 9 buiten haakjes. Welke vorm krijg je?"
+  },
+  {
+   "v": "Schrijf √x als macht van x. Welke exponent hoort daarbij?",
+   "o": [
+    "\"x²\"",
+    "\"x^(1/2)\"",
+    "\"x^(−2)\"",
+    "\"2x\""
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 2,
+   "u": "Werk stap voor stap met de rekenregels en controleer je resultaat door een getal in te vullen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"x²\"\"? Dan kies je het kwadraat. Een wortel is het omgekeerde, dus exponent 1/2. Het goede antwoord is x^(1/2).",
+    "Klopt: een wortel is een macht met exponent een half. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"x^(−2)\"\"? Dan kies je een negatieve exponent. Dat is het omgekeerde van het kwadraat, en een wortel is x^(1/2).",
+    "Koos je \"\"2x\"\"? Dan vermenigvuldig je x met 2. Een wortel is een macht met een gebroken exponent, dus x^(1/2). Controleer je stap: de juiste uitkomst is x^(1/2)."
+   ],
+   "uh": "Schrijf √x als macht van x. Welke exponent hoort daarbij?"
+  },
+  {
+   "v": "Welke waarde heeft 8^(2/3)?",
+   "o": [
+    "\"16\"",
+    "\"5,33\"",
+    "\"2\"",
+    "\"4\""
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 2,
+   "u": "Werk stap voor stap met de rekenregels en controleer je resultaat door een getal in te vullen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"16\"\"? Dan neem je 8 tot de macht 2 gedeeld door 1. De exponent 2/3 betekent derdemachtswortel en kwadraat, dus 2² = 4.",
+    "Koos je \"\"5,33\"\"? Dan reken je 8 · 2/3. Een exponent is geen factor, dus 8^(2/3) = 4. Door de stappen goed na te lopen kom je uit op 4.",
+    "Koos je \"\"2\"\"? Dan reken je alleen de derdemachtswortel. Daarna moet je nog kwadrateren, dus 4. Controleer je stap: de juiste uitkomst is 4.",
+    "Klopt: 8^(1/3) = 2 en 2² = 4. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Welke waarde heeft 8^(2/3)?"
+  },
+  {
+   "v": "Schrijf 1/x + 1/y als één breuk. Welke vorm krijg je?",
+   "o": [
+    "\"(x + y)/(xy)\"",
+    "\"2/(x + y)\"",
+    "\"1/(xy)\"",
+    "\"(x + y)/(x + y)\""
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 3,
+   "u": "Werk stap voor stap met de rekenregels en controleer je resultaat door een getal in te vullen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: de gemeenschappelijke noemer is xy, dus (y + x)/(xy).",
+    "Koos je \"\"2/(x + y)\"\"? Dan tel je tellers en noemers apart op. Bij optellen maak je eerst de noemers gelijk, dus (x + y)/(xy).",
+    "Koos je \"\"1/(xy)\"\"? Dan tel je de noemers niet goed op. Je zet de breuken op gelijke noemer xy, en telt de tellers y en x op.",
+    "Koos je \"\"(x + y)/(x + y)\"\"? Dan gebruik je x + y als noemer. De gelijke noemer is xy, dus (x + y)/(xy). Controleer je stap: de juiste uitkomst is (x + y)/(xy)."
+   ],
+   "uh": "Schrijf 1/x + 1/y als één breuk. Welke vorm krijg je?"
+  },
+  {
+   "v": "Welke vorm heeft (2x + 1)² zonder haakjes?",
+   "o": [
+    "\"4x² + 1\"",
+    "\"2x² + 2x + 1, zeg maar\"",
+    "\"4x² + 4x + 1\"",
+    "\"4x² + 2x + 1\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 0,
+   "u": "Werk stap voor stap met de rekenregels en controleer je resultaat door een getal in te vullen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"4x² + 1\"\"? Dan kwadrateer je elke term apart. De dubbele term 4x hoort erbij, dus 4x² + 4x + 1. Het goede antwoord is 4x² + 4x + 1.",
+    "Koos je \"\"2x² + 2x + 1, zeg maar\"\"? Dan kwadrateer je alleen de x en niet de 2. (2x)² = 4x², dus 4x² + 4x + 1. Door de stappen goed na te lopen kom je uit op 4x² + 4x + 1.",
+    "Klopt: (2x)² = 4x², de dubbele term is 2 · 2x · 1 = 4x en het kwadraat van 1 is 1.",
+    "Koos je \"\"4x² + 2x + 1\"\"? Dan neem je de dubbele term als 2x. De dubbele term is 2 · 2x · 1 = 4x, dus 4x² + 4x + 1. Controleer je stap: de juiste uitkomst is 4x² + 4x + 1."
+   ],
+   "uh": "Welke vorm heeft (2x + 1)² zonder haakjes?",
+   "ctx": "Een leerling werkt de uitdrukking (x + 3)² uit en vergelijkt zijn uitkomst met een getal. Hij schrijft eerst x² + 9 op en wil nagaan of dat klopt door x = 2 in te vullen. Daarna werkt hij (x − 3)(x + 3) uit en controleert dat ook."
+  },
+  {
+   "v": "Welke waarde geeft (x + 3)² bij x = 2?",
+   "o": [
+    "\"13\"",
+    "\"25\"",
+    "\"10\"",
+    "\"11\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 4,
+   "u": "Werk stap voor stap met de rekenregels en controleer je resultaat door een getal in te vullen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"13\"\"? Dan neem je de waarde van de foute vorm x² + 9. Het kwadraat van de som is 5², dus 25. Het goede antwoord is 25.",
+    "Klopt: (2 + 3)² = 5² = 25. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"10\"\"? Dan reken je 2 · 5. Het is 5 in het kwadraat, dus 25. Door de stappen goed na te lopen kom je uit op 25.",
+    "Koos je \"\"11\"\"? Dan reken je 2² + 3 · 2 + 1. De vorm is x² + 6x + 9, dus 25. Controleer je stap: de juiste uitkomst is 25."
+   ],
+   "uh": "Welke waarde geeft (x + 3)² bij x = 2?",
+   "ctx": "Een leerling werkt de uitdrukking (x + 3)² uit en vergelijkt zijn uitkomst met een getal. Hij schrijft eerst x² + 9 op en wil nagaan of dat klopt door x = 2 in te vullen. Daarna werkt hij (x − 3)(x + 3) uit en controleert dat ook."
+  },
+  {
+   "v": "Waarom is (x + 3)² niet gelijk aan x² + 9?",
+   "o": [
+    "\"9 is te groot\"",
+    "\"x² is te klein\"",
+    "\"het kwadraat bestaat niet voor een som\"",
+    "\"de dubbele term 6x ontbreekt\""
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 0,
+   "u": "Werk stap voor stap met de rekenregels en controleer je resultaat door een getal in te vullen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"9 is te groot\"\"? Dan denk je dat de constante verkeerd is. De 9 klopt wel, maar de term 6x ontbreekt. Het goede antwoord is de dubbele term 6x ontbreekt.",
+    "Koos je \"\"x² is te klein\"\"? Dan denk je dat x² verkeerd is. x² klopt, maar de term 6x ontbreekt. Door de stappen goed na te lopen kom je uit op de dubbele term 6x ontbreekt.",
+    "Koos je \"\"het kwadraat bestaat niet voor een som\"\"? Dan denk je dat een som niet gekwadrateerd mag worden. Dat mag wel, maar met de dubbele term.",
+    "Klopt: bij x = 2 geeft (2 + 3)² = 25 maar 2² + 9 = 13. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Waarom is (x + 3)² niet gelijk aan x² + 9?",
+   "ctx": "Een leerling werkt de uitdrukking (x + 3)² uit en vergelijkt zijn uitkomst met een getal. Hij schrijft eerst x² + 9 op en wil nagaan of dat klopt door x = 2 in te vullen. Daarna werkt hij (x − 3)(x + 3) uit en controleert dat ook."
+  },
+  {
+   "v": "Controleer x² + 5x + 6 = (x + 2)(x + 3) met x = 1. Welk getal staat links van het gelijkteken?",
+   "o": [
+    "\"12\"",
+    "\"6\"",
+    "\"11\"",
+    "\"30\""
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 4,
+   "u": "Werk stap voor stap met de rekenregels en controleer je resultaat door een getal in te vullen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: 1 + 5 + 6 = 12, en (1 + 2)(1 + 3) = 12. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"6\"\"? Dan laat je x² en 5x weg. Alle drie de termen tellen mee, dus 12. Het goede antwoord is 12.",
+    "Koos je \"\"11\"\"? Dan tel je 1 + 5 + 5. De laatste term is 6, dus 12. Door de stappen goed na te lopen kom je uit op 12.",
+    "Koos je \"\"30\"\"? Dan reken je 1 · 5 · 6. Het zijn termen die je optelt, dus 12. Controleer je stap: de juiste uitkomst is 12."
+   ],
+   "uh": "Controleer x² + 5x + 6 = (x + 2)(x + 3) met x = 1. Welk getal staat links van het gelijkteken?",
+   "ctx": "Een leerling ontbindt in factoren: x² + 5x + 6 en 4x² − 9. Hij controleert elke ontbinding door een getal in te vullen en door de haakjes weer uit te werken. Hij let op de vorm van beide uitdrukkingen."
+  },
+  {
+   "v": "Welke ontbinding heeft 4x² − 9?",
+   "o": [
+    "\"(4x − 3)(x + 3), volgens mij\"",
+    "\"(2x − 3)²\"",
+    "\"(2x − 3)(2x + 3)\"",
+    "\"(2x + 3)²\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 1,
+   "u": "Werk stap voor stap met de rekenregels en controleer je resultaat door een getal in te vullen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"(4x − 3)(x + 3), volgens mij\"\"? Dan kies je factoren die niet kloppen. De uitwerking geeft 4x² + 9x − 9, dus (2x − 3)(2x + 3).",
+    "Koos je \"\"(2x − 3)²\"\"? Dan kies je een kwadraat. Dat geeft 4x² − 12x + 9, dus (2x − 3)(2x + 3). Door de stappen goed na te lopen kom je uit op (2x − 3)(2x + 3).",
+    "Klopt: 4x² = (2x)² en 9 = 3², dus een verschil van kwadraten.",
+    "Koos je \"\"(2x + 3)²\"\"? Dan kies je een kwadraat. Dat geeft 4x² + 12x + 9, dus (2x − 3)(2x + 3). Controleer je stap: de juiste uitkomst is (2x − 3)(2x + 3)."
+   ],
+   "uh": "Welke ontbinding heeft 4x² − 9?",
+   "ctx": "Een leerling ontbindt in factoren: x² + 5x + 6 en 4x² − 9. Hij controleert elke ontbinding door een getal in te vullen en door de haakjes weer uit te werken. Hij let op de vorm van beide uitdrukkingen."
+  },
+  {
+   "v": "Je vult x = 2 in bij 4x² − 9 en bij (2x − 3)(2x + 3). Welk getal komt er uit beide?",
+   "o": [
+    "\"−5\"",
+    "\"7\"",
+    "\"25\"",
+    "\"−1\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 4,
+   "u": "Werk stap voor stap met de rekenregels en controleer je resultaat door een getal in te vullen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"−5\"\"? Dan reken je 4 · 2 − 9 · 2 = 8 − 18 en rond af. Het is 4 · 4 − 9, dus 7. Het goede antwoord is 7.",
+    "Klopt: 16 − 9 = 7, en (4 − 3)(4 + 3) = 7. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"25\"\"? Dan tel je 16 en 9 op. De tweede term is −9, dus 7. Door de stappen goed na te lopen kom je uit op 7.",
+    "Koos je \"\"−1\"\"? Dan reken je 4 · 2² als 4 · 2 · 2 · 2 en vergeet je kwadrateren van de 2. Het is 4 · 4 = 16, dus 7. Controleer je stap: de juiste uitkomst is 7."
+   ],
+   "uh": "Je vult x = 2 in bij 4x² − 9 en bij (2x − 3)(2x + 3). Welk getal komt er uit beide?",
+   "ctx": "Een leerling ontbindt in factoren: x² + 5x + 6 en 4x² − 9. Hij controleert elke ontbinding door een getal in te vullen en door de haakjes weer uit te werken. Hij let op de vorm van beide uitdrukkingen."
+  },
+  {
+   "v": "Vereenvoudig x^(1/2) · x^(3/2) tot één macht van x.",
+   "o": [
+    "\"x^(3/4)\"",
+    "\"x^(3/2)\"",
+    "\"x^1\"",
+    "\"x²\""
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 2,
+   "u": "Werk stap voor stap met de rekenregels en controleer je resultaat door een getal in te vullen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"x^(3/4)\"\"? Dan vermenigvuldig je de exponenten. Bij een product van machten tel je ze op, dus x². Het goede antwoord is x².",
+    "Koos je \"\"x^(3/2)\"\"? Dan neem je maar één exponent. Beide tellen mee, dus x². Door de stappen goed na te lopen kom je uit op x².",
+    "Koos je \"\"x^1\"\"? Dan tel je 1/2 en 3/2 fout op. De som is 2, dus x². Controleer je stap: de juiste uitkomst is x².",
+    "Klopt: de exponenten tel je op: 1/2 + 3/2 = 2. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Vereenvoudig x^(1/2) · x^(3/2) tot één macht van x.",
+   "ctx": "Een leerling rekent met machten en wortels. Hij schrijft de wortel als een macht, gebruikt rekenregels voor machten met dezelfde grondtal en controleert zijn werk met het getal x = 4. Hij gaat ervan uit dat x positief is."
+  },
+  {
+   "v": "Schrijf √(x⁶) als macht van x, met x > 0.",
+   "o": [
+    "\"x³\"",
+    "\"x²\"",
+    "\"x⁶\"",
+    "\"x^12\""
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 2,
+   "u": "Werk stap voor stap met de rekenregels en controleer je resultaat door een getal in te vullen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: √(x⁶) = x^(6/2) = x³. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"x²\"\"? Dan deel je 6 door 3. Een wortel halveert de exponent, dus x³. Het goede antwoord is x³.",
+    "Koos je \"\"x⁶\"\"? Dan laat je de wortel weg. Een wortel maakt de exponent de helft, dus x³. Door de stappen goed na te lopen kom je uit op x³.",
+    "Koos je \"\"x^12\"\"? Dan verdubbel je de exponent. Een wortel halveert, dus x³. Controleer je stap: de juiste uitkomst is x³."
+   ],
+   "uh": "Schrijf √(x⁶) als macht van x, met x > 0.",
+   "ctx": "Een leerling rekent met machten en wortels. Hij schrijft de wortel als een macht, gebruikt rekenregels voor machten met dezelfde grondtal en controleert zijn werk met het getal x = 4. Hij gaat ervan uit dat x positief is."
+  },
+  {
+   "v": "Welke waarde geeft x^(1/2) · x^(3/2) bij x = 4?",
+   "o": [
+    "\"8\"",
+    "\"6\"",
+    "\"16\"",
+    "\"32\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 4,
+   "u": "Werk stap voor stap met de rekenregels en controleer je resultaat door een getal in te vullen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"8\"\"? Dan neem je alleen x^(3/2). Beide factoren tellen mee, dus 16. Het goede antwoord is 16.",
+    "Koos je \"\"6\"\"? Dan tel je 2 en 4 op. Het is een product, dus 2 · 8 = 16. Door de stappen goed na te lopen kom je uit op 16.",
+    "Klopt: 2 · 8 = 16, en 4² = 16. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"32\"\"? Dan vermenigvuldig je 2 · 16. x^(3/2) is 4^(3/2) = 8, dus 16. Controleer je stap: de juiste uitkomst is 16."
+   ],
+   "uh": "Welke waarde geeft x^(1/2) · x^(3/2) bij x = 4?",
+   "ctx": "Een leerling rekent met machten en wortels. Hij schrijft de wortel als een macht, gebruikt rekenregels voor machten met dezelfde grondtal en controleert zijn werk met het getal x = 4. Hij gaat ervan uit dat x positief is."
+  },
+  {
+   "v": "Welke waarde heeft 4^(3/2)?",
+   "o": [
+    "\"6\"",
+    "\"8\"",
+    "\"12\"",
+    "\"2\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 2,
+   "u": "Werk stap voor stap met de rekenregels en controleer je resultaat door een getal in te vullen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"6\"\"? Dan reken je 4 · 3/2. Een exponent is geen factor, dus 2³ = 8. Het goede antwoord is 8.",
+    "Klopt: √4 = 2 en 2³ = 8. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"12\"\"? Dan reken je 4 · 3. De exponent 3/2 betekent wortel en macht, dus 8. Door de stappen goed na te lopen kom je uit op 8.",
+    "Koos je \"\"2\"\"? Dan reken je alleen de wortel. Daarna moet je tot de derde macht verheffen, dus 8. Controleer je stap: de juiste uitkomst is 8."
+   ],
+   "uh": "Welke waarde heeft 4^(3/2)?",
+   "ctx": "Een leerling rekent met machten en wortels. Hij schrijft de wortel als een macht, gebruikt rekenregels voor machten met dezelfde grondtal en controleert zijn werk met het getal x = 4. Hij gaat ervan uit dat x positief is."
+  },
+  {
+   "v": "Welke vorm heeft 1/x + 1/(x + 1) als één breuk?",
+   "o": [
+    "\"2/(2x + 1)\"",
+    "\"1/(x(x + 1))\"",
+    "\"(2x + 1)/(2x + 1), zeg maar\"",
+    "\"(2x + 1)/(x(x + 1))\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 3,
+   "u": "Werk stap voor stap met de rekenregels en controleer je resultaat door een getal in te vullen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"2/(2x + 1)\"\"? Dan tel je tellers en noemers apart op. Bij optellen maak je de noemers gelijk, dus (2x + 1)/(x(x + 1)).",
+    "Koos je \"\"1/(x(x + 1))\"\"? Dan tel je alleen de noemers. De tellers zijn x + 1 en x, dus 2x + 1. Door de stappen goed na te lopen kom je uit op (2x + 1)/(x(x + 1)).",
+    "Koos je \"\"(2x + 1)/(2x + 1), zeg maar\"\"? Dan gebruik je de som van de tellers als noemer. De noemer is x(x + 1), dus (2x + 1)/(x(x + 1)).",
+    "Klopt: (x + 1 + x)/(x(x + 1)) = (2x + 1)/(x(x + 1)). Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Welke vorm heeft 1/x + 1/(x + 1) als één breuk?",
+   "ctx": "Een leerling telt twee breuken op: 1/x + 1/(x + 1). Hij brengt ze op een gelijke noemer, vereenvoudigt het resultaat en controleert met x = 1. Hij let er ook op voor welke x de noemers 0 worden."
+  },
+  {
+   "v": "Welke waarde geeft de uitdrukking bij x = 1?",
+   "o": [
+    "\"1,5\"",
+    "\"1\"",
+    "\"2\"",
+    "\"0,5\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 4,
+   "u": "Werk stap voor stap met de rekenregels en controleer je resultaat door een getal in te vullen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: 1/1 + 1/2 = 1,5 en 3/(1 · 2) = 1,5. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"1\"\"? Dan laat je de tweede breuk weg. Beide breuken tellen mee, dus 1,5. Het goede antwoord is 1,5.",
+    "Koos je \"\"2\"\"? Dan tel je 1 + 1. De tweede breuk is 1/2, dus 1,5. Door de stappen goed na te lopen kom je uit op 1,5.",
+    "Koos je \"\"0,5\"\"? Dan neem je alleen de tweede breuk. De eerste is 1, dus 1,5. Controleer je stap: de juiste uitkomst is 1,5."
+   ],
+   "uh": "Welke waarde geeft de uitdrukking bij x = 1?",
+   "ctx": "Een leerling telt twee breuken op: 1/x + 1/(x + 1). Hij brengt ze op een gelijke noemer, vereenvoudigt het resultaat en controleert met x = 1. Hij let er ook op voor welke x de noemers 0 worden."
+  },
+  {
+   "v": "Voor welke x is de uitdrukking niet gedefinieerd?",
+   "o": [
+    "\"x = 1\"",
+    "\"x = 0 en x = 1, really\"",
+    "\"x = 0 en x = −1\"",
+    "\"alleen x = 0\""
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 3,
+   "u": "Werk stap voor stap met de rekenregels en controleer je resultaat door een getal in te vullen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"x = 1\"\"? Dan kies je een waarde waarvoor de noemer 2 is. De noemers zijn 0 bij x = 0 en x = −1, dus die. Het goede antwoord is x = 0 en x = −1.",
+    "Koos je \"\"x = 0 en x = 1, really\"\"? Dan neem je x = 1 in plaats van −1. x + 1 = 0 geeft x = −1, dus x = 0 en x = −1. Door de stappen goed na te lopen kom je uit op x = 0 en x = −1.",
+    "Klopt: dan is een noemer gelijk aan 0. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"alleen x = 0\"\"? Dan vergeet je de tweede noemer. x + 1 = 0 geeft ook x = −1, dus beide. Controleer je stap: de juiste uitkomst is x = 0 en x = −1."
+   ],
+   "uh": "Voor welke x is de uitdrukking niet gedefinieerd?",
+   "ctx": "Een leerling telt twee breuken op: 1/x + 1/(x + 1). Hij brengt ze op een gelijke noemer, vereenvoudigt het resultaat en controleert met x = 1. Hij let er ook op voor welke x de noemers 0 worden."
+  },
+  {
+   "v": "Welke vorm heeft (x + 1)² zonder haakjes?",
+   "o": [
+    "\"x² + 1\"",
+    "\"x² + 2x + 1\"",
+    "\"x² + x + 1, denk ik\"",
+    "\"2x + 1\""
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 0,
+   "u": "Werk stap voor stap met de rekenregels en controleer je resultaat door een getal in te vullen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"x² + 1\"\"? Dan kwadrateer je elke term apart. Er hoort een dubbele term bij, dus 2x. Het goede antwoord is x² + 2x + 1.",
+    "Klopt: x² + x + x + 1 = x² + 2x + 1. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"x² + x + 1, denk ik\"\"? Dan tel je de dubbele term maar één keer. De dubbele term is 2x, dus x² + 2x + 1. Door de stappen goed na te lopen kom je uit op x² + 2x + 1.",
+    "Koos je \"\"2x + 1\"\"? Dan vergeet je het kwadraat van x. (x + 1)² begint met x², dus x² + 2x + 1. Controleer je stap: de juiste uitkomst is x² + 2x + 1."
+   ],
+   "uh": "Welke vorm heeft (x + 1)² zonder haakjes?",
+   "ctx": "Een leerling schrijft (x + 1)² = x² + 1. Zijn docent vraagt hem de fout op te sporen. Hij werkt het kwadraat opnieuw uit en test beide uitdrukkingen met x = 2. Daarna ontbindt hij x² + 2x + 1 weer terug."
+  },
+  {
+   "v": "Welke twee waarden geven (x + 1)² en x² + 1 bij x = 2?",
+   "o": [
+    "\"5 en 5, volgens mij\"",
+    "\"9 en 9\"",
+    "\"6 en 5\"",
+    "\"9 en 5\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 4,
+   "u": "Werk stap voor stap met de rekenregels en controleer je resultaat door een getal in te vullen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"5 en 5, volgens mij\"\"? Dan vul je x = 2 in bij beide met dezelfde fout. (x + 1)² is 9, en x² + 1 is 5. Het goede antwoord is 9 en 5.",
+    "Koos je \"\"9 en 9\"\"? Dan denk je dat ze gelijk zijn. x² + 1 geeft 5, dus 9 en 5. Door de stappen goed na te lopen kom je uit op 9 en 5.",
+    "Koos je \"\"6 en 5\"\"? Dan reken je (2 + 1)² als 2² + 2. Het is 3² = 9, dus 9 en 5. Controleer je stap: de juiste uitkomst is 9 en 5.",
+    "Klopt: 3² = 9 en 4 + 1 = 5, dus de uitdrukkingen zijn niet gelijk."
+   ],
+   "uh": "Welke twee waarden geven (x + 1)² en x² + 1 bij x = 2?",
+   "ctx": "Een leerling schrijft (x + 1)² = x² + 1. Zijn docent vraagt hem de fout op te sporen. Hij werkt het kwadraat opnieuw uit en test beide uitdrukkingen met x = 2. Daarna ontbindt hij x² + 2x + 1 weer terug."
+  },
+  {
+   "v": "Welke ontbinding hoort bij x² + 2x + 1?",
+   "o": [
+    "\"(x + 1)²\"",
+    "\"(x + 1)(x − 1)\"",
+    "\"(x + 2)(x + 1)\"",
+    "\"x(x + 2) + 1\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 1,
+   "u": "Werk stap voor stap met de rekenregels en controleer je resultaat door een getal in te vullen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: het is een kwadraat van een som, met 2 · 1 = 2. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"(x + 1)(x − 1)\"\"? Dan kies je een verschil van kwadraten. Dat geeft x² − 1, dus (x + 1)². Het goede antwoord is (x + 1)².",
+    "Koos je \"\"(x + 2)(x + 1)\"\"? Dan kies je factoren met som 3. Je zoekt som 2 en product 1, dus (x + 1)². Door de stappen goed na te lopen kom je uit op (x + 1)².",
+    "Koos je \"\"x(x + 2) + 1\"\"? Dan laat je de ontbinding onvoltooid. Je zoekt een product van haakjes, dus (x + 1)². Controleer je stap: de juiste uitkomst is (x + 1)²."
+   ],
+   "uh": "Welke ontbinding hoort bij x² + 2x + 1?",
+   "ctx": "Een leerling schrijft (x + 1)² = x² + 1. Zijn docent vraagt hem de fout op te sporen. Hij werkt het kwadraat opnieuw uit en test beide uitdrukkingen met x = 2. Daarna ontbindt hij x² + 2x + 1 weer terug."
+  },
+  {
+   "v": "Welke gemeenschappelijke factor haal je eerst buiten haakjes bij 3x² − 12?",
+   "o": [
+    "\"x\"",
+    "\"12\"",
+    "\"3\"",
+    "\"3x\""
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 1,
+   "u": "Werk stap voor stap met de rekenregels en controleer je resultaat door een getal in te vullen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"x\"\"? Dan haal je x buiten haakjes. De constante −12 bevat geen x, dus 3. Het goede antwoord is 3.",
+    "Koos je \"\"12\"\"? Dan haal je 12 buiten haakjes. 3x² is niet deelbaar door 12, dus 3. Door de stappen goed na te lopen kom je uit op 3.",
+    "Klopt: 3x² − 12 = 3(x² − 4). Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"3x\"\"? Dan haal je 3x buiten haakjes. De constante −12 bevat geen x, dus 3. Controleer je stap: de juiste uitkomst is 3."
+   ],
+   "uh": "Welke gemeenschappelijke factor haal je eerst buiten haakjes bij 3x² − 12?",
+   "ctx": "Een leerling ontbindt 3x² − 12 volledig in factoren. Hij haalt eerst een gemeenschappelijke factor buiten haakjes en herkent daarna een verschil van kwadraten. Hij controleert het resultaat met x = 3."
+  },
+  {
+   "v": "Welke volledige ontbinding heeft 3x² − 12?",
+   "o": [
+    "\"3(x − 2)²\"",
+    "\"3(x − 2)(x + 2)\"",
+    "\"(3x − 6)(x + 2), gewoon\"",
+    "\"3(x + 4)(x − 1)\""
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 1,
+   "u": "Werk stap voor stap met de rekenregels en controleer je resultaat door een getal in te vullen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"3(x − 2)²\"\"? Dan kies je een kwadraat. Dat geeft 3x² − 12x + 12, dus 3(x − 2)(x + 2). Het goede antwoord is 3(x − 2)(x + 2).",
+    "Klopt: 3(x² − 4) = 3(x − 2)(x + 2), een verschil van kwadraten.",
+    "Koos je \"\"(3x − 6)(x + 2), gewoon\"\"? Dan kies je een onvolledige ontbinding. Dat klopt niet met 3x² − 12, dus 3(x − 2)(x + 2). Door de stappen goed na te lopen kom je uit op 3(x − 2)(x + 2).",
+    "Koos je \"\"3(x + 4)(x − 1)\"\"? Dan kies je getallen met product −4 maar som 3. Je zoekt som 0, dus ±2. Controleer je stap: de juiste uitkomst is 3(x − 2)(x + 2)."
+   ],
+   "uh": "Welke volledige ontbinding heeft 3x² − 12?",
+   "ctx": "Een leerling ontbindt 3x² − 12 volledig in factoren. Hij haalt eerst een gemeenschappelijke factor buiten haakjes en herkent daarna een verschil van kwadraten. Hij controleert het resultaat met x = 3."
+  },
+  {
+   "v": "Welke waarde geeft 3x² − 12 bij x = 3?",
+   "o": [
+    "\"−3\"",
+    "\"33\"",
+    "\"21\"",
+    "\"15\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 4,
+   "u": "Werk stap voor stap met de rekenregels en controleer je resultaat door een getal in te vullen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"−3\"\"? Dan reken je 3 · 3 − 12. Het is 3 · 9 − 12, dus 15. Het goede antwoord is 15.",
+    "Koos je \"\"33\"\"? Dan tel je 27 en 12 op. De tweede term is −12, dus 15. Door de stappen goed na te lopen kom je uit op 15.",
+    "Koos je \"\"21\"\"? Dan reken je 3 · 3² als 3 · 6 + 3. Het is 3 · 9, dus 27 − 12 = 15. Controleer je stap: de juiste uitkomst is 15.",
+    "Klopt: 27 − 12 = 15, en 3 · 1 · 5 = 15. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Welke waarde geeft 3x² − 12 bij x = 3?",
+   "ctx": "Een leerling ontbindt 3x² − 12 volledig in factoren. Hij haalt eerst een gemeenschappelijke factor buiten haakjes en herkent daarna een verschil van kwadraten. Hij controleert het resultaat met x = 3."
+  },
+  {
+   "v": "Voor welke x is 3(x − 2)(x + 2) gelijk aan 0?",
+   "o": [
+    "\"x = 2 en x = −2\"",
+    "\"x = 3\"",
+    "\"x = 2 en x = 3, to be honest\"",
+    "\"x = −2 alleen\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 1,
+   "u": "Werk stap voor stap met de rekenregels en controleer je resultaat door een getal in te vullen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: een product is 0 als een factor 0 is. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"x = 3\"\"? Dan kies je de factor 3. Die is constant, dus x = 2 en x = −2. Het goede antwoord is x = 2 en x = −2.",
+    "Koos je \"\"x = 2 en x = 3, to be honest\"\"? Dan neem je de factor 3 als nulpunt. Alleen de haakjes geven nulpunten, dus x = 2 en x = −2.",
+    "Koos je \"\"x = −2 alleen\"\"? Dan vergeet je de eerste factor. Ook x − 2 = 0 geeft een nulpunt, dus x = 2 en x = −2. Controleer je stap: de juiste uitkomst is x = 2 en x = −2."
+   ],
+   "uh": "Voor welke x is 3(x − 2)(x + 2) gelijk aan 0?",
+   "ctx": "Een leerling ontbindt 3x² − 12 volledig in factoren. Hij haalt eerst een gemeenschappelijke factor buiten haakjes en herkent daarna een verschil van kwadraten. Hij controleert het resultaat met x = 3."
+  }
+ ],
+ "oe": [
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een leerling werkt (3x − 2)² uit en schrijft 9x² + 4. Zijn docent zegt dat de dubbele term ontbreekt. Hij wil de juiste uitkomst bepalen en de fout met een getal laten zien.",
+   "v": "Werk het kwadraat uit en toon met x = 1 aan dat 9x² + 4 fout is.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "(3x − 2)² = 9x² − 12x + 4 (1p). Bij x = 1 geeft (3 − 2)² de waarde 1 (1p). 9 + 4 = 13 is niet gelijk aan 1, dus 9x² + 4 is fout (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een leerling ontbindt x² − 7x + 12 in factoren en controleert zijn ontbinding door haakjes weg te werken en door x = 5 in te vullen. Hij zoekt twee getallen met product 12 en som −7.",
+   "v": "Ontbind en controleer met x = 5.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "(x − 3)(x − 4) (1p). Haakjes weg: x² − 7x + 12 (1p). Bij x = 5: 25 − 35 + 12 = 2 en 2 · 1 = 2 (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een leerling vereenvoudigt (x² − 9) : (x + 3) en wil weten voor welke x de uitdrukking niet gedefinieerd is. Hij gebruikt de ontbinding van een verschil van kwadraten en controleert met x = 2.",
+   "v": "Vereenvoudig de breuk en geef de beperkende voorwaarde.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "x² − 9 = (x − 3)(x + 3), dus de breuk is x − 3 (1p). Niet gedefinieerd bij x = −3 (1p). Controle x = 2: (4 − 9) : 5 = −1 en 2 − 3 = −1 (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een leerling schrijft 1/√x als een macht van x en berekent die waarde bij x = 16. Hij gebruikt de regel dat een wortel een gebroken exponent heeft en controleert zijn antwoord.",
+   "v": "Schrijf als macht en bereken de waarde bij x = 16.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "1/√x = x^(−1/2) (1p). Bij x = 16: 16^(−1/2) = 1/4 (1p). Controle: 1 : √16 = 1 : 4 = 0,25 (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een leerling zegt dat (a + b)² = a² + b² omdat het kwadraat over de som verdeeld mag worden. Jij weet dat dit fout is. Je wilt een tegenvoorbeeld en de juiste regel laten zien.",
+   "v": "Geef een tegenvoorbeeld en de juiste regel.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Bij a = 1 en b = 2 is (1 + 2)² = 9 en 1² + 2² = 5 (1p). De juiste regel is (a + b)² = a² + 2ab + b² (1p). De dubbele term 2ab ontbreekt in de fout (1p)."
+  }
+ ]
+}

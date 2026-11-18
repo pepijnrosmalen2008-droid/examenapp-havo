@@ -5325,6 +5325,27 @@ var VAKKEN = [
       "nOe": 5,
       "nBeg": 12,
       "hasSam": true
+     },
+     {
+      "id": "A4",
+      "lo": "wb.A.4",
+      "gs": 2,
+      "naam": "Rekenregels en algebraïsche basisvaardigheden toepassen",
+      "beschrijving": "Je werkt haakjes weg, gebruikt merkwaardige producten, ontbindt in factoren, rekent met machten, wortels en breuken, let op beperkende voorwaarden en controleert je uitkomst door een getal in te vullen.",
+      "ceStatus": "CE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Haakjes en merkwaardige producten",
+       "Ontbinden",
+       "Machten en wortels",
+       "Breuken",
+       "Controleren door invullen"
+      ],
+      "nSv": 27,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
      }
     ]
    },
