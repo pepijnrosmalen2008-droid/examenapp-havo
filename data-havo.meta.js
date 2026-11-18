@@ -5367,6 +5367,27 @@ var VAKKEN = [
       "nOe": 5,
       "nBeg": 12,
       "hasSam": true
+     },
+     {
+      "id": "A6",
+      "lo": "wb.A.6",
+      "gs": 2,
+      "naam": "Wiskundige redeneringen opbouwen, verifiëren en onder woorden brengen",
+      "beschrijving": "Je onderzoekt beweringen met voorbeelden en tegenvoorbeelden, bouwt een algebraïsch bewijs op, let op de omgekeerde uitspraak, verifieert je conclusie met een getal en brengt je redenering onder woorden.",
+      "ceStatus": "CE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Voorbeeld en tegenvoorbeeld",
+       "Algebraïsch bewijs",
+       "Omgekeerde uitspraak en redeneren",
+       "Verifiëren van stappen",
+       "Wiskundige taal"
+      ],
+      "nSv": 27,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
      }
     ]
    },

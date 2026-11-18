@@ -229485,6 +229485,688 @@ var VAKKEN = [
         "u": "6 minuten is 0,1 uur, dus 5 : 0,1 = 50 km/u (1p). Redelijk: een auto in de stad rijdt zo snel (1p). Omrekenen: 50 : 3,6 ≈ 13,9 m/s (1p)."
        }
       ]
+     },
+     {
+      "id": "A6",
+      "lo": "wb.A.6",
+      "gs": 2,
+      "naam": "Wiskundige redeneringen opbouwen, verifiëren en onder woorden brengen",
+      "beschrijving": "Je onderzoekt beweringen met voorbeelden en tegenvoorbeelden, bouwt een algebraïsch bewijs op, let op de omgekeerde uitspraak, verifieert je conclusie met een getal en brengt je redenering onder woorden.",
+      "ceStatus": "CE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Voorbeeld en tegenvoorbeeld",
+       "Algebraïsch bewijs",
+       "Omgekeerde uitspraak en redeneren",
+       "Verifiëren van stappen",
+       "Wiskundige taal"
+      ],
+      "sam": "Voorbeelden bewijzen niets voor alle getallen; één tegenvoorbeeld weerlegt wel. Bewijs met letters: een even getal is 2k en een oneven getal 2k + 1. De omgekeerde uitspraak moet je apart bewijzen. Verifieer elke conclusie met een getal en schrijf je redenering op met stel, omdat en dus.",
+      "begrippen": [
+       {
+        "t": "Bewering",
+        "d": "Een uitspraak waarvan je wilt weten of die waar is, bijvoorbeeld x² ≥ x voor alle x."
+       },
+       {
+        "t": "Tegenvoorbeeld",
+        "d": "Eén geval waarin de bewering niet geldt, zoals x = 0,5 bij x² ≥ x."
+       },
+       {
+        "t": "Bewijs",
+        "d": "Een redenering die laat zien dat een bewering voor alle gevallen geldt."
+       },
+       {
+        "t": "Algebraïsch bewijs",
+        "d": "Een bewijs met letters, zoals 2n − 1 en 2n + 1 voor twee opeenvolgende oneven getallen."
+       },
+       {
+        "t": "Even getal",
+        "d": "Een getal van de vorm 2k met k een geheel getal."
+       },
+       {
+        "t": "Oneven getal",
+        "d": "Een getal van de vorm 2k + 1 met k een geheel getal."
+       },
+       {
+        "t": "Omgekeerde uitspraak",
+        "d": "Bij als p, dan q is de omgekeerde: als q, dan p; die moet je apart bewijzen."
+       },
+       {
+        "t": "Redenering",
+        "d": "Een reeks stappen waarbij elke stap volgt uit de vorige of uit een regel."
+       },
+       {
+        "t": "Gevolgtrekking",
+        "d": "Een conclusie die volgt uit eerdere stappen, vaak ingeleid met dus."
+       },
+       {
+        "t": "Verifiëren",
+        "d": "Nagaan of een uitkomst of conclusie klopt, bijvoorbeeld door een getal in te vullen."
+       },
+       {
+        "t": "Onder woorden brengen",
+        "d": "Een redenering opschrijven met duidelijke zinnen en wiskundige taal."
+       },
+       {
+        "t": "Kwadraat nooit negatief",
+        "d": "Voor elk getal a geldt a² ≥ 0; dat gebruik je bij ongelijkheden."
+       }
+      ],
+      "sv": [
+       {
+        "v": "Wat laat zien dat een bewering voor alle getallen niet waar is?",
+        "o": [
+         "\"tien voorbeelden die wel kloppen\"",
+         "\"één tegenvoorbeeld\"",
+         "\"een mooie tekening\"",
+         "\"een schatting\""
+        ],
+        "c": 1,
+        "d": 1,
+        "s": 0,
+        "u": "Redeneer stap voor stap, onderbouw elke stap en controleer je conclusie met een voorbeeld. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"tien voorbeelden die wel kloppen\"\"? Dan tel je voorbeelden die kloppen. Die bewijzen niets voor alle getallen, dus één tegenvoorbeeld.",
+         "Klopt: een enkel voorbeeld dat niet voldoet is genoeg om de bewering te weerleggen.",
+         "Koos je \"\"een mooie tekening\"\"? Dan vertrouw je op een plaatje. Een tekening is geen bewijs, dus één tegenvoorbeeld. Door de stappen goed na te lopen kom je uit op één tegenvoorbeeld.",
+         "Koos je \"\"een schatting\"\"? Dan gebruik je een schatting. Die kan een bewering niet weerleggen, dus één tegenvoorbeeld. Controleer je stap: de juiste uitkomst is één tegenvoorbeeld."
+        ],
+        "uh": "Wat laat zien dat een bewering voor alle getallen niet waar is?"
+       },
+       {
+        "v": "Is 'alle priemgetallen zijn oneven' waar? Wat is de beste reden?",
+        "o": [
+         "\"waar: 3, 5 en 7 zijn oneven\"",
+         "\"waar: priemgetallen zijn groot, to be honest\"",
+         "\"onwaar: 1 is een priemgetal\"",
+         "\"onwaar: 2 is een even priemgetal\""
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 0,
+        "u": "Redeneer stap voor stap, onderbouw elke stap en controleer je conclusie met een voorbeeld. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"waar: 3, 5 en 7 zijn oneven\"\"? Dan kijk je naar voorbeelden die kloppen. Eén tegenvoorbeeld is genoeg, dus onwaar.",
+         "Koos je \"\"waar: priemgetallen zijn groot, to be honest\"\"? Dan let je op de grootte. Dat zegt niets over even of oneven, dus onwaar vanwege 2.",
+         "Koos je \"\"onwaar: 1 is een priemgetal\"\"? Dan noem je 1 priem. Dat is geen priemgetal, het tegenvoorbeeld is 2. Controleer je stap: de juiste uitkomst is onwaar: 2 is een even priemgetal.",
+         "Klopt: 2 is priem en even, dus het is een tegenvoorbeeld."
+        ],
+        "uh": "Is 'alle priemgetallen zijn oneven' waar? Wat is de beste reden?"
+       },
+       {
+        "v": "Wat is een algebraïsch bewijs?",
+        "o": [
+         "\"een redenering met letters die voor alle waarden geldt\"",
+         "\"een rekenvoorbeeld met getallen, zeg maar, gewoon, volgens mij\"",
+         "\"een schatting\"",
+         "\"een tabel met veel waarden\""
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 1,
+        "u": "Redeneer stap voor stap, onderbouw elke stap en controleer je conclusie met een voorbeeld. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: een letter staat voor elk getal uit de verzameling die je bekijkt.",
+         "Koos je \"\"een rekenvoorbeeld met getallen, zeg maar, gewoon, volgens mij\"\"? Dan gebruik je een enkel voorbeeld. Dat bewijst niets voor alle getallen, dus letters gebruiken.",
+         "Koos je \"\"een schatting\"\"? Dan denk je aan schatten. Een bewijs moet exact zijn, dus een redenering met letters. Door de stappen goed na te lopen kom je uit op een redenering met letters die voor alle waarden geldt.",
+         "Koos je \"\"een tabel met veel waarden\"\"? Dan vul je een tabel. Hoeveel waarden je ook neemt, het blijven voorbeelden, dus letters gebruiken."
+        ],
+        "uh": "Wat is een algebraïsch bewijs?"
+       },
+       {
+        "v": "Hoe schrijf je een even getal met een letter?",
+        "o": [
+         "\"k + 2, eigenlijk, denk ik, zeg maar\"",
+         "\"k²\"",
+         "\"2k, met k een geheel getal\"",
+         "\"2 + k\""
+        ],
+        "c": 2,
+        "d": 1,
+        "s": 1,
+        "u": "Redeneer stap voor stap, onderbouw elke stap en controleer je conclusie met een voorbeeld. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"k + 2, eigenlijk, denk ik, zeg maar\"\"? Dan tel je 2 bij k op. Dat is niet altijd even, dus 2k. Het goede antwoord is 2k, met k een geheel getal.",
+         "Koos je \"\"k²\"\"? Dan gebruik je het kwadraat. Dat is niet altijd even, dus 2k. Door de stappen goed na te lopen kom je uit op 2k, met k een geheel getal.",
+         "Klopt: een even getal is twee keer een geheel getal. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"2 + k\"\"? Dan tel je 2 bij k op. Dat is niet altijd even, dus 2k. Controleer je stap: de juiste uitkomst is 2k, met k een geheel getal."
+        ],
+        "uh": "Hoe schrijf je een even getal met een letter?"
+       },
+       {
+        "v": "Wat is de omgekeerde van 'als p, dan q'?",
+        "o": [
+         "\"als niet p, dan niet q\"",
+         "\"als q, dan p\"",
+         "\"p en q\"",
+         "\"als p, dan niet q\""
+        ],
+        "c": 1,
+        "d": 1,
+        "s": 2,
+        "u": "Redeneer stap voor stap, onderbouw elke stap en controleer je conclusie met een voorbeeld. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"als niet p, dan niet q\"\"? Dan ontken je beide delen. Dat is een andere uitspraak, dus als q, dan p. Het goede antwoord is als q, dan p.",
+         "Klopt: je verwisselt de voorwaarde en de conclusie. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"p en q\"\"? Dan maak je er een en-uitspraak van. De richting verdwijnt, dus als q, dan p. Door de stappen goed na te lopen kom je uit op als q, dan p.",
+         "Koos je \"\"als p, dan niet q\"\"? Dan ontken je alleen de conclusie. Dat is geen omkering, dus als q, dan p. Controleer je stap: de juiste uitkomst is als q, dan p."
+        ],
+        "uh": "Wat is de omgekeerde van 'als p, dan q'?"
+       },
+       {
+        "v": "Wat doe je als laatste bij het oplossen van een vergelijking?",
+        "o": [
+         "\"de vergelijking opschrijven\"",
+         "\"de uitkomst afronden\"",
+         "\"een nieuwe vergelijking maken, denk ik, zeg maar\"",
+         "\"de oplossing controleren door invullen\""
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 3,
+        "u": "Redeneer stap voor stap, onderbouw elke stap en controleer je conclusie met een voorbeeld. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"de vergelijking opschrijven\"\"? Dan schrijf je de vergelijking op. Dat is de eerste stap, dus controleren aan het eind.",
+         "Koos je \"\"de uitkomst afronden\"\"? Dan rond je af. Een exacte oplossing hoeft niet afgerond, dus controleren. Door de stappen goed na te lopen kom je uit op de oplossing controleren door invullen.",
+         "Koos je \"\"een nieuwe vergelijking maken, denk ik, zeg maar\"\"? Dan begin je opnieuw. Eerst controleer je je antwoord, dus invullen. Controleer je stap: de juiste uitkomst is de oplossing controleren door invullen.",
+         "Klopt: invullen in de oorspronkelijke vergelijking laat fouten zien."
+        ],
+        "uh": "Wat doe je als laatste bij het oplossen van een vergelijking?"
+       },
+       {
+        "v": "Welk woord leidt een gevolgtrekking in?",
+        "o": [
+         "\"dus\"",
+         "\"stel\"",
+         "\"omdat\"",
+         "\"als\""
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 4,
+        "u": "Redeneer stap voor stap, onderbouw elke stap en controleer je conclusie met een voorbeeld. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: 'dus' laat zien wat uit de vorige stap volgt. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"stel\"\"? Dan gebruik je het woord waarmee je iets aanneemt. Een gevolgtrekking begint met, dus 'dus'. Het goede antwoord is dus.",
+         "Koos je \"\"omdat\"\"? Dan gebruik je een redengevend woord. Dat geeft een reden, maar een gevolgtrekking begint met 'dus'. Door de stappen goed na te lopen kom je uit op dus.",
+         "Koos je \"\"als\"\"? Dan gebruik je een voorwaarde. Dat is geen gevolgtrekking, dus 'dus'. Controleer je stap: de juiste uitkomst is dus."
+        ],
+        "uh": "Welk woord leidt een gevolgtrekking in?"
+       },
+       {
+        "v": "Wat geven x² en x bij x = 0,5?",
+        "o": [
+         "\"x² = 1 en x = 0,5\"",
+         "\"x² = 0,5 en x = 0,25\"",
+         "\"x² = 0,25 en x = 0,5\"",
+         "\"x² = 0,25 en x = 0,25, zeg maar\""
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 0,
+        "u": "Redeneer stap voor stap, onderbouw elke stap en controleer je conclusie met een voorbeeld. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"x² = 1 en x = 0,5\"\"? Dan reken je 2 × 0,5. Het kwadraat is 0,5 × 0,5, dus 0,25. Het goede antwoord is x² = 0,25 en x = 0,5.",
+         "Koos je \"\"x² = 0,5 en x = 0,25\"\"? Dan verwissel je x² en x. x² is 0,25, en x is 0,5. Door de stappen goed na te lopen kom je uit op x² = 0,25 en x = 0,5.",
+         "Klopt: 0,5 × 0,5 = 0,25 en dat is kleiner dan 0,5. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"x² = 0,25 en x = 0,25, zeg maar\"\"? Dan neem je x gelijk aan x². x is 0,5, dus 0,5 en 0,25. Controleer je stap: de juiste uitkomst is x² = 0,25 en x = 0,5."
+        ],
+        "uh": "Wat geven x² en x bij x = 0,5?",
+        "ctx": "Een leerling beweert: voor elk getal x geldt x² ≥ x. Hij heeft het gecontroleerd voor x = 2, 3 en 10. Zijn docent vraagt hem ook breuken te testen, bijvoorbeeld x = 0,5, en dan te zeggen wat hij kan concluderen."
+       },
+       {
+        "v": "Wat laat x = 0,5 zien over de bewering x² ≥ x?",
+        "o": [
+         "\"de bewering is bewezen\"",
+         "\"de bewering geldt niet voor alle x\"",
+         "\"de bewering geldt alleen voor negatieve x\"",
+         "\"er is geen conclusie mogelijk\""
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 0,
+        "u": "Redeneer stap voor stap, onderbouw elke stap en controleer je conclusie met een voorbeeld. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"de bewering is bewezen\"\"? Dan denk je dat een voorbeeld bewijst. Dit voorbeeld laat juist het tegendeel zien, dus niet voor alle x.",
+         "Klopt: 0,25 is kleiner dan 0,5, dus x = 0,5 is een tegenvoorbeeld.",
+         "Koos je \"\"de bewering geldt alleen voor negatieve x\"\"? Dan neem je een verkeerde reden. Het gaat om x = 0,5, dus niet voor alle x.",
+         "Koos je \"\"er is geen conclusie mogelijk\"\"? Dan denk je dat voorbeelden niets zeggen. Eén tegenvoorbeeld weerlegt de bewering, dus niet voor alle x."
+        ],
+        "uh": "Wat laat x = 0,5 zien over de bewering x² ≥ x?",
+        "ctx": "Een leerling beweert: voor elk getal x geldt x² ≥ x. Hij heeft het gecontroleerd voor x = 2, 3 en 10. Zijn docent vraagt hem ook breuken te testen, bijvoorbeeld x = 0,5, en dan te zeggen wat hij kan concluderen."
+       },
+       {
+        "v": "Waarom bewijzen x = 2, 3 en 10 de bewering niet?",
+        "o": [
+         "\"2, 3 en 10 zijn te groot\"",
+         "\"2, 3 en 10 zijn te weinig\"",
+         "\"2, 3 en 10 zijn geen kwadraten, gewoon, volgens mij\"",
+         "\"voorbeelden bewijzen geen bewering voor alle x\""
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 0,
+        "u": "Redeneer stap voor stap, onderbouw elke stap en controleer je conclusie met een voorbeeld. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"2, 3 en 10 zijn te groot\"\"? Dan denk je dat de grootte het probleem is. Elk voorbeeld bewijst niets voor alle x, dus ze bewijzen niets.",
+         "Koos je \"\"2, 3 en 10 zijn te weinig\"\"? Dan denk je dat meer voorbeelden genoeg zijn. Dat blijft onbewezen, dus gebruik een bewijs.",
+         "Koos je \"\"2, 3 en 10 zijn geen kwadraten, gewoon, volgens mij\"\"? Dan let je op de vorm. Het gaat om de bewering voor alle x, dus ze bewijzen niets.",
+         "Klopt: een bewering voor alle x moet voor elk getal gelden."
+        ],
+        "uh": "Waarom bewijzen x = 2, 3 en 10 de bewering niet?",
+        "ctx": "Een leerling beweert: voor elk getal x geldt x² ≥ x. Hij heeft het gecontroleerd voor x = 2, 3 en 10. Zijn docent vraagt hem ook breuken te testen, bijvoorbeeld x = 0,5, en dan te zeggen wat hij kan concluderen."
+       },
+       {
+        "v": "Tel 2n − 1 en 2n + 1 op. Welke vorm krijg je?",
+        "o": [
+         "\"4n\"",
+         "\"2n\"",
+         "\"4n + 2\"",
+         "\"4n²\""
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 1,
+        "u": "Redeneer stap voor stap, onderbouw elke stap en controleer je conclusie met een voorbeeld. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: 2n − 1 + 2n + 1 = 4n. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"2n\"\"? Dan laat je een term weg. Beide termen 2n tellen mee, dus 4n. Het goede antwoord is 4n.",
+         "Koos je \"\"4n + 2\"\"? Dan tel je 1 + 1 erbij. Het is −1 + 1 = 0, dus 4n. Door de stappen goed na te lopen kom je uit op 4n.",
+         "Koos je \"\"4n²\"\"? Dan kwadrateer je n. Je telt op, dus 4n. Controleer je stap: de juiste uitkomst is 4n."
+        ],
+        "uh": "Tel 2n − 1 en 2n + 1 op. Welke vorm krijg je?",
+        "ctx": "Een leerling wil bewijzen dat de som van twee opeenvolgende oneven getallen deelbaar is door 4. Hij schrijft de getallen als 2n − 1 en 2n + 1, met n een geheel getal, en werkt de som algebraïsch uit."
+       },
+       {
+        "v": "Waarom is 4n deelbaar door 4?",
+        "o": [
+         "\"omdat n even is\"",
+         "\"omdat 4 even is\"",
+         "\"4n = 4 · n met n geheel\"",
+         "\"omdat n gelijk is aan 4, volgens mij\""
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 1,
+        "u": "Redeneer stap voor stap, onderbouw elke stap en controleer je conclusie met een voorbeeld. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"omdat n even is\"\"? Dan denk je dat n even moet zijn. De factor 4 is genoeg, dus 4 · n. Het goede antwoord is 4n = 4 · n met n geheel.",
+         "Koos je \"\"omdat 4 even is\"\"? Dan let je op even of oneven. Het gaat om de factor 4, dus 4 · n. Door de stappen goed na te lopen kom je uit op 4n = 4 · n met n geheel.",
+         "Klopt: een product met de factor 4 is een veelvoud van 4.",
+         "Koos je \"\"omdat n gelijk is aan 4, volgens mij\"\"? Dan neem je n = 4. n is elk geheel getal, dus 4 · n. Controleer je stap: de juiste uitkomst is 4n = 4 · n met n geheel."
+        ],
+        "uh": "Waarom is 4n deelbaar door 4?",
+        "ctx": "Een leerling wil bewijzen dat de som van twee opeenvolgende oneven getallen deelbaar is door 4. Hij schrijft de getallen als 2n − 1 en 2n + 1, met n een geheel getal, en werkt de som algebraïsch uit."
+       },
+       {
+        "v": "Welke controle past bij n = 3?",
+        "o": [
+         "\"5 + 7 = 13\"",
+         "\"5 + 7 = 12 = 4 · 3\"",
+         "\"5 × 7 = 35 = 4 · 3, zeg maar\"",
+         "\"3 + 3 = 6\""
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 1,
+        "u": "Redeneer stap voor stap, onderbouw elke stap en controleer je conclusie met een voorbeeld. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"5 + 7 = 13\"\"? Dan tel je verkeerd op. 5 + 7 = 12, dus 4 · 3. Het goede antwoord is 5 + 7 = 12 = 4 · 3.",
+         "Klopt: 2n − 1 = 5 en 2n + 1 = 7. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"5 × 7 = 35 = 4 · 3, zeg maar\"\"? Dan vermenigvuldig je de getallen. De som is 12, dus 4 · 3. Door de stappen goed na te lopen kom je uit op 5 + 7 = 12 = 4 · 3.",
+         "Koos je \"\"3 + 3 = 6\"\"? Dan gebruik je n twee keer. De getallen zijn 5 en 7, dus 12 = 4 · 3. Controleer je stap: de juiste uitkomst is 5 + 7 = 12 = 4 · 3."
+        ],
+        "uh": "Welke controle past bij n = 3?",
+        "ctx": "Een leerling wil bewijzen dat de som van twee opeenvolgende oneven getallen deelbaar is door 4. Hij schrijft de getallen als 2n − 1 en 2n + 1, met n een geheel getal, en werkt de som algebraïsch uit."
+       },
+       {
+        "v": "Kwadrateer n = 2k. Welke vorm krijg je voor n²?",
+        "o": [
+         "\"2k²\"",
+         "\"4k\"",
+         "\"2k\"",
+         "\"4k²\""
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 1,
+        "u": "Redeneer stap voor stap, onderbouw elke stap en controleer je conclusie met een voorbeeld. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"2k²\"\"? Dan kwadrateer je alleen de k. Ook de 2 wordt gekwadrateerd, dus 4k². Het goede antwoord is 4k².",
+         "Koos je \"\"4k\"\"? Dan vergeet je het kwadraat van k. (2k)² = 4k², dus niet 4k. Door de stappen goed na te lopen kom je uit op 4k².",
+         "Koos je \"\"2k\"\"? Dan kwadrateer je niets. (2k)² = 4k², dus 4k². Controleer je stap: de juiste uitkomst is 4k².",
+         "Klopt: (2k)² = 4k². Reken dit na met de gegeven gegevens."
+        ],
+        "uh": "Kwadrateer n = 2k. Welke vorm krijg je voor n²?",
+        "ctx": "Een leerling leest de uitspraak: als n even is, dan is n² even. Hij bewijst die met n = 2k, met k geheel, en kijkt daarna naar de omgekeerde uitspraak: als n² even is, dan is n even."
+       },
+       {
+        "v": "Waarom is 4k² even?",
+        "o": [
+         "\"4k² = 2 · 2k²\"",
+         "\"omdat k even is\"",
+         "\"omdat k² even is\"",
+         "\"omdat 4 een groot getal is\""
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 2,
+        "u": "Redeneer stap voor stap, onderbouw elke stap en controleer je conclusie met een voorbeeld. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: een getal dat twee keer een geheel getal is, is even.",
+         "Koos je \"\"omdat k even is\"\"? Dan denk je dat k even moet zijn. De factor 2 is genoeg, dus 2 · 2k². Het goede antwoord is 4k² = 2 · 2k².",
+         "Koos je \"\"omdat k² even is\"\"? Dan verwacht je dat k² even is. De factor 4 in 4k² is genoeg, dus 2 · 2k². Door de stappen goed na te lopen kom je uit op 4k² = 2 · 2k².",
+         "Koos je \"\"omdat 4 een groot getal is\"\"? Dan let je op de grootte. Het gaat om de deelbaarheid door 2, dus 2 · 2k². Controleer je stap: de juiste uitkomst is 4k² = 2 · 2k²."
+        ],
+        "uh": "Waarom is 4k² even?",
+        "ctx": "Een leerling leest de uitspraak: als n even is, dan is n² even. Hij bewijst die met n = 2k, met k geheel, en kijkt daarna naar de omgekeerde uitspraak: als n² even is, dan is n even."
+       },
+       {
+        "v": "Zijn 'als n even, dan n² even' en de omgekeerde uitspraak hetzelfde?",
+        "o": [
+         "\"ja: ze betekenen hetzelfde\"",
+         "\"ja: de letters zijn verwisseld, I think, I suppose\"",
+         "\"nee: de richting van de redenering is omgedraaid\"",
+         "\"nee: n is nu oneven\""
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 2,
+        "u": "Redeneer stap voor stap, onderbouw elke stap en controleer je conclusie met een voorbeeld. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"ja: ze betekenen hetzelfde\"\"? Dan denk je dat ze gelijk zijn. De omkering moet je apart bewijzen, dus ze zijn niet hetzelfde.",
+         "Koos je \"\"ja: de letters zijn verwisseld, I think, I suppose\"\"? Dan let je op de letters. De richting verandert, dus een andere uitspraak. Door de stappen goed na te lopen kom je uit op nee: de richting van de redenering is omgedraaid.",
+         "Klopt: de omkering moet apart worden bewezen. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"nee: n is nu oneven\"\"? Dan denk je dat n oneven wordt. Alleen de richting verandert, dus een andere uitspraak."
+        ],
+        "uh": "Zijn 'als n even, dan n² even' en de omgekeerde uitspraak hetzelfde?",
+        "ctx": "Een leerling leest de uitspraak: als n even is, dan is n² even. Hij bewijst die met n = 2k, met k geheel, en kijkt daarna naar de omgekeerde uitspraak: als n² even is, dan is n even."
+       },
+       {
+        "v": "Een oneven getal is n = 2k + 1. Hoe schrijf je n² zonder haakjes?",
+        "o": [
+         "\"4k² + 1, to be honest\"",
+         "\"4k² + 4k + 1\"",
+         "\"2k² + 1\"",
+         "\"4k + 1\""
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 1,
+        "u": "Redeneer stap voor stap, onderbouw elke stap en controleer je conclusie met een voorbeeld. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"4k² + 1, to be honest\"\"? Dan laat je de dubbele term weg. Die is 4k, dus 4k² + 4k + 1. Het goede antwoord is 4k² + 4k + 1.",
+         "Klopt: (2k + 1)² = 4k² + 4k + 1. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"2k² + 1\"\"? Dan kwadrateer je niets goed. (2k)² = 4k², dus 4k² + 4k + 1. Door de stappen goed na te lopen kom je uit op 4k² + 4k + 1.",
+         "Koos je \"\"4k + 1\"\"? Dan vergeet je het kwadraat van k. De eerste term is 4k², dus 4k² + 4k + 1. Controleer je stap: de juiste uitkomst is 4k² + 4k + 1."
+        ],
+        "uh": "Een oneven getal is n = 2k + 1. Hoe schrijf je n² zonder haakjes?",
+        "ctx": "Een leerling leest de uitspraak: als n even is, dan is n² even. Hij bewijst die met n = 2k, met k geheel, en kijkt daarna naar de omgekeerde uitspraak: als n² even is, dan is n even."
+       },
+       {
+        "v": "Welke stap volgt uit 2(x − 3) = x + 5 na het wegwerken van de haakjes?",
+        "o": [
+         "\"2x − 3 = x + 5, zeg maar\"",
+         "\"2x − 6 = x − 5\"",
+         "\"x − 6 = x + 5\"",
+         "\"2x − 6 = x + 5\""
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 3,
+        "u": "Redeneer stap voor stap, onderbouw elke stap en controleer je conclusie met een voorbeeld. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"2x − 3 = x + 5, zeg maar\"\"? Dan vermenigvuldig je alleen de eerste term. Ook de −3 wordt met 2 vermenigvuldigd, dus 2x − 6.",
+         "Koos je \"\"2x − 6 = x − 5\"\"? Dan verander je het teken rechts. Het blijft x + 5, dus 2x − 6 = x + 5. Door de stappen goed na te lopen kom je uit op 2x − 6 = x + 5.",
+         "Koos je \"\"x − 6 = x + 5\"\"? Dan laat je de factor 2 weg. Het is 2x, dus 2x − 6 = x + 5. Controleer je stap: de juiste uitkomst is 2x − 6 = x + 5.",
+         "Klopt: 2 · x = 2x en 2 · −3 = −6. Reken dit na met de gegeven gegevens."
+        ],
+        "uh": "Welke stap volgt uit 2(x − 3) = x + 5 na het wegwerken van de haakjes?",
+        "ctx": "Een leerling lost 2(x − 3) = x + 5 op en schrijft bij elke stap waarom die klopt. Hij werkt eerst de haakjes weg, brengt de x-termen samen en controleert zijn antwoord door in te vullen in de oorspronkelijke vergelijking."
+       },
+       {
+        "v": "Wat volgt uit 2x − 6 = x + 5?",
+        "o": [
+         "\"x = 11\"",
+         "\"x = −11, eigenlijk\"",
+         "\"x = 1\"",
+         "\"x = 5\""
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 3,
+        "u": "Redeneer stap voor stap, onderbouw elke stap en controleer je conclusie met een voorbeeld. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: x = 5 + 6 = 11. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"x = −11, eigenlijk\"\"? Dan maak je een tekenfout. Je telt 6 erbij, dus x = 11. Het goede antwoord is x = 11.",
+         "Koos je \"\"x = 1\"\"? Dan trek je 6 van 5 af. Het is 5 + 6, dus x = 11. Door de stappen goed na te lopen kom je uit op x = 11.",
+         "Koos je \"\"x = 5\"\"? Dan laat je de 6 weg. Je moet ook 6 verwerken, dus x = 11. Controleer je stap: de juiste uitkomst is x = 11."
+        ],
+        "uh": "Wat volgt uit 2x − 6 = x + 5?",
+        "ctx": "Een leerling lost 2(x − 3) = x + 5 op en schrijft bij elke stap waarom die klopt. Hij werkt eerst de haakjes weg, brengt de x-termen samen en controleert zijn antwoord door in te vullen in de oorspronkelijke vergelijking."
+       },
+       {
+        "v": "Wat geeft invullen van x = 11 in 2(x − 3) = x + 5?",
+        "o": [
+         "\"16 = 6\"",
+         "\"8 = 16\"",
+         "\"16 = 16, dus het klopt\"",
+         "\"19 = 16, gewoon, volgens mij\""
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 3,
+        "u": "Redeneer stap voor stap, onderbouw elke stap en controleer je conclusie met een voorbeeld. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"16 = 6\"\"? Dan reken je 11 − 5. Het is 11 + 5, dus 16 = 16. Het goede antwoord is 16 = 16, dus het klopt.",
+         "Koos je \"\"8 = 16\"\"? Dan vergeet je de factor 2. Het is 2 · 8, dus 16 = 16. Door de stappen goed na te lopen kom je uit op 16 = 16, dus het klopt.",
+         "Klopt: 2 · 8 = 16 en 11 + 5 = 16. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"19 = 16, gewoon, volgens mij\"\"? Dan reken je 2 · 11 − 3. Het is 2 · (11 − 3), dus 16 = 16. Controleer je stap: de juiste uitkomst is 16 = 16, dus het klopt."
+        ],
+        "uh": "Wat geeft invullen van x = 11 in 2(x − 3) = x + 5?",
+        "ctx": "Een leerling lost 2(x − 3) = x + 5 op en schrijft bij elke stap waarom die klopt. Hij werkt eerst de haakjes weg, brengt de x-termen samen en controleert zijn antwoord door in te vullen in de oorspronkelijke vergelijking."
+       },
+       {
+        "v": "Bereken 5² + 12² en 13². Welke twee getallen krijg je?",
+        "o": [
+         "\"169 en 144, I think\"",
+         "\"169 en 169\"",
+         "\"60 en 169\"",
+         "\"29 en 169\""
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 2,
+        "u": "Redeneer stap voor stap, onderbouw elke stap en controleer je conclusie met een voorbeeld. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"169 en 144, I think\"\"? Dan vergelijk je met 12². Het is 13², dus 169. Het goede antwoord is 169 en 169.",
+         "Klopt: 25 + 144 = 169 en 13² = 169. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"60 en 169\"\"? Dan vermenigvuldig je 5 × 12. Het is 5² + 12² = 25 + 144, dus 169. Door de stappen goed na te lopen kom je uit op 169 en 169.",
+         "Koos je \"\"29 en 169\"\"? Dan tel je 25 en 4 op. Het is 12² = 144, dus 169. Controleer je stap: de juiste uitkomst is 169 en 169."
+        ],
+        "uh": "Bereken 5² + 12² en 13². Welke twee getallen krijg je?",
+        "ctx": "Een driehoek heeft zijden 5, 12 en 13. Een leerling wil laten zien dat hij rechthoekig is met de omgekeerde stelling van Pythagoras. Daarna test hij de zijden 6, 8 en 11 op dezelfde manier."
+       },
+       {
+        "v": "Wat besluit je voor de zijden 6, 8 en 11?",
+        "o": [
+         "\"rechthoekig, want 6 + 8 > 11\"",
+         "\"rechthoekig, want 36 + 64 = 121\"",
+         "\"niet rechthoekig, want 6 + 8 + 11 = 25, volgens mij\"",
+         "\"niet rechthoekig, want 36 + 64 = 100 is niet 121\""
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 2,
+        "u": "Redeneer stap voor stap, onderbouw elke stap en controleer je conclusie met een voorbeeld. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"rechthoekig, want 6 + 8 > 11\"\"? Dan gebruik je de driehoeksongelijkheid. Die zegt niets over een rechte hoek, dus niet rechthoekig.",
+         "Koos je \"\"rechthoekig, want 36 + 64 = 121\"\"? Dan reken je 36 + 64 als 121. Het is 100, dus niet rechthoekig. Door de stappen goed na te lopen kom je uit op niet rechthoekig, want 36 + 64 = 100 is niet 121.",
+         "Koos je \"\"niet rechthoekig, want 6 + 8 + 11 = 25, volgens mij\"\"? Dan tel je de zijden op. Dat zegt niets over een rechte hoek, gebruik 6² + 8² en 11².",
+         "Klopt: 6² + 8² = 100 en 11² = 121. Reken dit na met de gegeven gegevens."
+        ],
+        "uh": "Wat besluit je voor de zijden 6, 8 en 11?",
+        "ctx": "Een driehoek heeft zijden 5, 12 en 13. Een leerling wil laten zien dat hij rechthoekig is met de omgekeerde stelling van Pythagoras. Daarna test hij de zijden 6, 8 en 11 op dezelfde manier."
+       },
+       {
+        "v": "Welke redenering is correct voor de zijden 5, 12 en 13?",
+        "o": [
+         "\"5² + 12² = 13², dus de driehoek is rechthoekig\"",
+         "\"de driehoek is rechthoekig, dus 5² + 12² = 13²\"",
+         "\"5 + 12 = 17 en 13 is kleiner, dus rechthoekig\"",
+         "\"alle driehoeken met gehele zijden zijn rechthoekig\""
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 4,
+        "u": "Redeneer stap voor stap, onderbouw elke stap en controleer je conclusie met een voorbeeld. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: de omgekeerde stelling van Pythagoras geeft een rechte hoek.",
+         "Koos je \"\"de driehoek is rechthoekig, dus 5² + 12² = 13²\"\"? Dan neem je het te bewijzen als beginpunt. Eerst moet je rekenen, dan volgt de conclusie.",
+         "Koos je \"\"5 + 12 = 17 en 13 is kleiner, dus rechthoekig\"\"? Dan gebruik je een som van zijden. Dat zegt niets over een rechte hoek, dus 5² + 12² = 13².",
+         "Koos je \"\"alle driehoeken met gehele zijden zijn rechthoekig\"\"? Dan trek je een algemene conclusie uit één voorbeeld. Dat klopt niet, dus reken 5² + 12² na."
+        ],
+        "uh": "Welke redenering is correct voor de zijden 5, 12 en 13?",
+        "ctx": "Een driehoek heeft zijden 5, 12 en 13. Een leerling wil laten zien dat hij rechthoekig is met de omgekeerde stelling van Pythagoras. Daarna test hij de zijden 6, 8 en 11 op dezelfde manier."
+       },
+       {
+        "v": "Werk (a + b)² − 4ab volledig uit. Welke vorm krijg je?",
+        "o": [
+         "\"a² + 2ab + b², you know\"",
+         "\"a² − 4ab + b²\"",
+         "\"a² − 2ab + b²\"",
+         "\"a² + b²\""
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 1,
+        "u": "Redeneer stap voor stap, onderbouw elke stap en controleer je conclusie met een voorbeeld. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"a² + 2ab + b², you know\"\"? Dan trek je 4ab niet af. De uitdrukking is (a + b)² − 4ab, dus a² − 2ab + b². Het goede antwoord is a² − 2ab + b².",
+         "Koos je \"\"a² − 4ab + b²\"\"? Dan tel je de dubbele term niet mee. (a + b)² heeft 2ab, dus a² − 2ab + b². Door de stappen goed na te lopen kom je uit op a² − 2ab + b².",
+         "Klopt: a² + 2ab + b² − 4ab = a² − 2ab + b². Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"a² + b²\"\"? Dan laat je beide ab-termen weg. Er blijft −2ab over, dus a² − 2ab + b². Controleer je stap: de juiste uitkomst is a² − 2ab + b²."
+        ],
+        "uh": "Werk (a + b)² − 4ab volledig uit. Welke vorm krijg je?",
+        "ctx": "Een leerling wil bewijzen dat (a + b)² ≥ 4ab voor alle getallen a en b. Hij werkt (a + b)² − 4ab uit en gebruikt dat een kwadraat nooit negatief is. Daarna test hij zijn conclusie met a = 3 en b = 1."
+       },
+       {
+        "v": "Waarom is (a − b)² nooit negatief?",
+        "o": [
+         "\"omdat a groter is dan b\"",
+         "\"een kwadraat is nooit negatief\"",
+         "\"omdat a en b positief zijn, gewoon\"",
+         "\"omdat 4ab positief is\""
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 4,
+        "u": "Redeneer stap voor stap, onderbouw elke stap en controleer je conclusie met een voorbeeld. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"omdat a groter is dan b\"\"? Dan denk je dat a > b nodig is. Het kwadraat van elk getal is niet negatief, dus het geldt altijd.",
+         "Klopt: het kwadraat van elk getal is groter dan of gelijk aan 0.",
+         "Koos je \"\"omdat a en b positief zijn, gewoon\"\"? Dan denk je dat positieve getallen nodig zijn. Dit geldt voor elk getal, dus altijd.",
+         "Koos je \"\"omdat 4ab positief is\"\"? Dan gebruik je 4ab. Dat komt in (a − b)² niet voor, dus het kwadraat is nooit negatief."
+        ],
+        "uh": "Waarom is (a − b)² nooit negatief?",
+        "ctx": "Een leerling wil bewijzen dat (a + b)² ≥ 4ab voor alle getallen a en b. Hij werkt (a + b)² − 4ab uit en gebruikt dat een kwadraat nooit negatief is. Daarna test hij zijn conclusie met a = 3 en b = 1."
+       },
+       {
+        "v": "Wat geeft de test a = 3 en b = 1?",
+        "o": [
+         "\"16 ≥ 16, denk ik, zeg maar\"",
+         "\"4 ≥ 12\"",
+         "\"16 ≥ 3\"",
+         "\"16 ≥ 12, dus het klopt\""
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 3,
+        "u": "Redeneer stap voor stap, onderbouw elke stap en controleer je conclusie met een voorbeeld. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Koos je \"\"16 ≥ 16, denk ik, zeg maar\"\"? Dan reken je 4 · 3 · 1 als 16. Het is 12, dus 16 ≥ 12. Het goede antwoord is 16 ≥ 12, dus het klopt.",
+         "Koos je \"\"4 ≥ 12\"\"? Dan reken je (3 + 1) als 4. Je moet het kwadrateren, dus 16 ≥ 12. Door de stappen goed na te lopen kom je uit op 16 ≥ 12, dus het klopt.",
+         "Koos je \"\"16 ≥ 3\"\"? Dan vergelijk je 16 met a. Je moet 4ab gebruiken, dus 16 ≥ 12. Controleer je stap: de juiste uitkomst is 16 ≥ 12, dus het klopt.",
+         "Klopt: (3 + 1)² = 16 en 4 · 3 · 1 = 12. Reken dit na met de gegeven gegevens."
+        ],
+        "uh": "Wat geeft de test a = 3 en b = 1?",
+        "ctx": "Een leerling wil bewijzen dat (a + b)² ≥ 4ab voor alle getallen a en b. Hij werkt (a + b)² − 4ab uit en gebruikt dat een kwadraat nooit negatief is. Daarna test hij zijn conclusie met a = 3 en b = 1."
+       },
+       {
+        "v": "Wanneer geldt (a + b)² = 4ab?",
+        "o": [
+         "\"als a = b\"",
+         "\"als a = −b, volgens mij\"",
+         "\"als b = 0\"",
+         "\"nooit\""
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 0,
+        "u": "Redeneer stap voor stap, onderbouw elke stap en controleer je conclusie met een voorbeeld. Denk aan de regel die hierbij hoort.",
+        "uo": [
+         "Klopt: (a − b)² = 0 als a = b. Reken dit na met de gegeven gegevens.",
+         "Koos je \"\"als a = −b, volgens mij\"\"? Dan verwissel je het teken. Dan is (a − b)² = 4a² en niet 0, dus a = b. Het goede antwoord is als a = b.",
+         "Koos je \"\"als b = 0\"\"? Dan neem je b = 0. Dan geldt het alleen als ook a = 0, dus a = b. Door de stappen goed na te lopen kom je uit op als a = b.",
+         "Koos je \"\"nooit\"\"? Dan denk je dat gelijkheid nooit voorkomt. Bij a = b geldt het wel, dus a = b. Controleer je stap: de juiste uitkomst is als a = b."
+        ],
+        "uh": "Wanneer geldt (a + b)² = 4ab?",
+        "ctx": "Een leerling wil bewijzen dat (a + b)² ≥ 4ab voor alle getallen a en b. Hij werkt (a + b)² − 4ab uit en gebruikt dat een kwadraat nooit negatief is. Daarna test hij zijn conclusie met a = 3 en b = 1."
+       }
+      ],
+      "oe": [
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een leerling beweert dat n² + n altijd even is voor elk geheel getal n. Hij test n = 1, 2 en 3 en vindt 2, 6 en 12. Zijn docent vraagt hem dit voor alle n te bewijzen en niet alleen met voorbeelden.",
+        "v": "Bewijs dat n² + n even is voor elk geheel getal n.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "n² + n = n(n + 1) (1p). Van twee opeenvolgende gehele getallen is er één even (1p). Dus het product is even (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een leerling denkt dat voor elk getal x geldt dat x² > x. Hij heeft x = 2, 3 en 5 gecontroleerd en vindt telkens dat het klopt. Zijn docent vraagt hem naar breuken en negatieve getallen te kijken.",
+        "v": "Geef een tegenvoorbeeld en leg uit wat dit betekent.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Bij x = 0,5 is x² = 0,25 en dat is kleiner dan 0,5 (1p). Dus de bewering geldt niet voor alle x (1p). Voorbeelden die kloppen bewijzen niets voor alle x (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een leerling wil bewijzen dat de som van drie opeenvolgende gehele getallen deelbaar is door 3. Hij kiest n, n + 1 en n + 2 en werkt de som uit. Daarna controleert hij zijn bewijs met n = 4.",
+        "v": "Bewijs de bewering algebraïsch en controleer met n = 4.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "n + (n + 1) + (n + 2) = 3n + 3 (1p) = 3(n + 1), dus deelbaar door 3 (1p). Controle: 4 + 5 + 6 = 15 = 3 · 5 (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een leerling zegt: als een getal deelbaar is door 6, dan is het deelbaar door 3. Hij vraagt zich af of de omgekeerde uitspraak ook waar is, en test een getal om dit te onderzoeken.",
+        "v": "Is de omgekeerde uitspraak waar? Onderbouw met een voorbeeld.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "De omgekeerde is: als een getal deelbaar is door 3, dan door 6 (1p). Dit is onwaar (1p). Tegenvoorbeeld: 9 is deelbaar door 3 maar niet door 6 (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een leerling bewijst dat de som van twee oneven getallen even is. Hij schrijft de getallen als 2a + 1 en 2b + 1, met a en b geheel, en schrijft de som op. Daarna controleert hij met 3 + 7.",
+        "v": "Bewijs de uitspraak en controleer met 3 en 7.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "(2a + 1) + (2b + 1) = 2a + 2b + 2 (1p) = 2(a + b + 1), dus even (1p). Controle: 3 + 7 = 10 = 2 · 5 (1p)."
+       }
+      ]
      }
     ]
    },
