@@ -1,0 +1,682 @@
+{
+ "id": "A2",
+ "lo": "wb.A.2",
+ "gs": 2,
+ "naam": "Een probleem analyseren, inperken en vertalen naar een wiskundig model",
+ "beschrijving": "Je bepaalt wat gegeven en gevraagd is, perkt een probleem in met aannamen, kiest variabelen en eenheden, stelt een formule op, bepaalt het domein van het model en vertaalt je antwoord terug naar de context.",
+ "ceStatus": "CE",
+ "binas": "",
+ "val": "",
+ "onderwerpen": [
+  "Een probleem analyseren",
+  "Inperken en aannamen",
+  "Variabelen en eenheden",
+  "Een formule opstellen",
+  "Domein en beperkingen"
+ ],
+ "sam": "Bepaal wat gegeven en gevraagd is en maak aannamen om het probleem hanteerbaar te maken. Kies variabelen met eenheden en stel een formule op, bijvoorbeeld K = 150 + 12p. Een model geldt voor een domein: let op wat zinvol is. Reken en vertaal het antwoord terug naar de context met eenheid.",
+ "begrippen": [
+  {
+   "t": "Probleem analyseren",
+   "d": "Bepalen wat gegeven en wat gevraagd is."
+  },
+  {
+   "t": "Inperken",
+   "d": "Het probleem hanteerbaar maken door onbelangrijke zaken weg te laten."
+  },
+  {
+   "t": "Aanname",
+   "d": "Een keuze om te kunnen rekenen, zoals een constante snelheid of rechte muren."
+  },
+  {
+   "t": "Variabele",
+   "d": "Een grootheid die kan veranderen, zoals de tijd t of het aantal personen p."
+  },
+  {
+   "t": "Eenheid",
+   "d": "De maat waarin een grootheid wordt uitgedrukt, zoals liter per minuut."
+  },
+  {
+   "t": "Wiskundig model",
+   "d": "Een formule of schema dat de situatie beschrijft, zoals V = 40t."
+  },
+  {
+   "t": "Formule opstellen",
+   "d": "Uit de situatie de relatie tussen variabelen vastleggen."
+  },
+  {
+   "t": "Vaste en variabele kosten",
+   "d": "Een eenmalig bedrag en een bedrag dat meegroeit, zoals K = 150 + 12p."
+  },
+  {
+   "t": "Omrekenen",
+   "d": "Eenheden in de juiste verhouding zetten, zoals watt naar kilowatt."
+  },
+  {
+   "t": "Domein van het model",
+   "d": "De waarden van de variabele waarvoor het model zinvol is."
+  },
+  {
+   "t": "Beperkingen",
+   "d": "Situaties waarin het model niet meer klopt, zoals negatieve hoogte."
+  },
+  {
+   "t": "Terugvertalen",
+   "d": "Het wiskundige resultaat in de context uitdrukken."
+  }
+ ],
+ "sv": [
+  {
+   "v": "Een bad van 8000 liter wordt gevuld met 40 liter per minuut. Welke gegevens heb je om de tijd te bepalen?",
+   "o": [
+    "\"alleen de tijd\"",
+    "\"de inhoud 8000 liter en de snelheid 40 liter per minuut\"",
+    "\"de prijs van het water, I think, I suppose, really\"",
+    "\"het aantal kranen\""
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 0,
+   "u": "Bepaal eerst wat gegeven en gevraagd is, welke aannamen je maakt en welke variabelen en eenheden in je model horen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"alleen de tijd\"\"? Dan noem je het gevraagde als gegeven. De tijd zoek je, en is dus niet gegeven. Het goede antwoord is de inhoud 8000 liter en de snelheid 40 liter per minuut.",
+    "Klopt: die twee gegevens heb je nodig om de tijd te bepalen.",
+    "Koos je \"\"de prijs van het water, I think, I suppose, really\"\"? Dan neem je een gegeven dat niet in de opgave staat. Alleen de inhoud en de snelheid zijn genoemd, dus die twee.",
+    "Koos je \"\"het aantal kranen\"\"? Dan neem je een gegeven dat niet in de opgave staat. Er is één kraan, en de gegevens zijn inhoud en snelheid."
+   ],
+   "uh": "Een bad van 8000 liter wordt gevuld met 40 liter per minuut. Welke gegevens heb je om de tijd te bepalen?"
+  },
+  {
+   "v": "Je rekent met rechte muren en laat ramen en deuren buiten beschouwing. Hoe heet zo'n vereenvoudiging?",
+   "o": [
+    "\"een eindantwoord\"",
+    "\"een rekenfout\"",
+    "\"een conclusie\"",
+    "\"een aanname\""
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 1,
+   "u": "Bepaal eerst wat gegeven en gevraagd is, welke aannamen je maakt en welke variabelen en eenheden in je model horen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"een eindantwoord\"\"? Dan verwar je de vereenvoudiging met het resultaat. Een aanname maak je voor je rekent, en het eindantwoord komt erna.",
+    "Koos je \"\"een rekenfout\"\"? Dan denk je dat vereenvoudigen een fout is. Het is een bewuste keuze, dus een aanname. Door de stappen goed na te lopen kom je uit op een aanname.",
+    "Koos je \"\"een conclusie\"\"? Dan verwar je de keuze vooraf met een slotsom. Een aanname hoort bij het begin, dus geen conclusie.",
+    "Klopt: een aanname is een keuze waarmee je het probleem hanteerbaar maakt."
+   ],
+   "uh": "Je rekent met rechte muren en laat ramen en deuren buiten beschouwing. Hoe heet zo'n vereenvoudiging?"
+  },
+  {
+   "v": "In V = 40t is V in liter en de kraan geeft 40 liter per minuut. In welke eenheid staat t?",
+   "o": [
+    "\"minuten\"",
+    "\"liters\"",
+    "\"seconden\"",
+    "\"uren\""
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 2,
+   "u": "Bepaal eerst wat gegeven en gevraagd is, welke aannamen je maakt en welke variabelen en eenheden in je model horen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: 40 liter per minuut maal t minuten geeft liters. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"liters\"\"? Dan geef je de eenheid van V. De eenheid van t volgt uit de snelheid per minuut, dus minuten. Het goede antwoord is minuten.",
+    "Koos je \"\"seconden\"\"? Dan kies je een andere tijdseenheid. De snelheid is per minuut, dus minuten. Door de stappen goed na te lopen kom je uit op minuten.",
+    "Koos je \"\"uren\"\"? Dan kies je een andere tijdseenheid. De snelheid is per minuut, dus minuten. Controleer je stap: de juiste uitkomst is minuten."
+   ],
+   "uh": "In V = 40t is V in liter en de kraan geeft 40 liter per minuut. In welke eenheid staat t?"
+  },
+  {
+   "v": "Een kraan geeft 40 liter per minuut. Welke formule geeft de inhoud V na t minuten?",
+   "o": [
+    "\"V = t : 40\"",
+    "\"V = 40 + t\"",
+    "\"V = 40t\"",
+    "\"V = 40 : t\""
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 3,
+   "u": "Bepaal eerst wat gegeven en gevraagd is, welke aannamen je maakt en welke variabelen en eenheden in je model horen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"V = t : 40\"\"? Dan deel je de tijd door de snelheid. De inhoud is snelheid maal tijd, dus V = 40t. Het goede antwoord is V = 40t.",
+    "Koos je \"\"V = 40 + t\"\"? Dan tel je de tijd erbij op. De inhoud groeit per minuut met 40, dus V = 40t. Door de stappen goed na te lopen kom je uit op V = 40t.",
+    "Klopt: de inhoud groeit 40 liter per minuut, dus V = 40t.",
+    "Koos je \"\"V = 40 : t\"\"? Dan deel je de snelheid door de tijd. De inhoud neemt toe met de tijd, dus V = 40t. Controleer je stap: de juiste uitkomst is V = 40t."
+   ],
+   "uh": "Een kraan geeft 40 liter per minuut. Welke formule geeft de inhoud V na t minuten?"
+  },
+  {
+   "v": "Een abonnement kost €10 per maand plus €5 eenmalig. Welke formule geeft de kosten K na m maanden?",
+   "o": [
+    "\"K = 15m\"",
+    "\"K = 10m + 5\"",
+    "\"K = 10 + 5m, really\"",
+    "\"K = 5m + 10\""
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 3,
+   "u": "Bepaal eerst wat gegeven en gevraagd is, welke aannamen je maakt en welke variabelen en eenheden in je model horen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"K = 15m\"\"? Dan reken je de aansluitkosten bij elke maand. Ze komen maar één keer, dus K = 10m + 5. Het goede antwoord is K = 10m + 5.",
+    "Klopt: 10 euro per maand geeft 10m en de aansluiting is eenmalig 5.",
+    "Koos je \"\"K = 10 + 5m, really\"\"? Dan verwissel je de maandkosten en de eenmalige kosten. De m hoort bij 10, dus K = 10m + 5. Door de stappen goed na te lopen kom je uit op K = 10m + 5.",
+    "Koos je \"\"K = 5m + 10\"\"? Dan verwissel je beide bedragen. De maandkosten zijn €10, dus K = 10m + 5. Controleer je stap: de juiste uitkomst is K = 10m + 5."
+   ],
+   "uh": "Een abonnement kost €10 per maand plus €5 eenmalig. Welke formule geeft de kosten K na m maanden?"
+  },
+  {
+   "v": "In het model A = l(30 − l) is l een lengte in meter. Welke waarden van l zijn zinvol?",
+   "o": [
+    "\"elk getal, I think\"",
+    "\"l > 30\"",
+    "\"l < 0\"",
+    "\"0 < l < 30\""
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 4,
+   "u": "Bepaal eerst wat gegeven en gevraagd is, welke aannamen je maakt en welke variabelen en eenheden in je model horen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"elk getal, I think\"\"? Dan denk je dat elk getal kan. Een lengte en een breedte moeten positief zijn, dus 0 < l < 30. Het goede antwoord is 0 < l < 30.",
+    "Koos je \"\"l > 30\"\"? Dan neem je een te grote waarde. Dan wordt de breedte 30 − l negatief, dus l < 30. Door de stappen goed na te lopen kom je uit op 0 < l < 30.",
+    "Koos je \"\"l < 0\"\"? Dan neem je een negatieve lengte. Een lengte kan niet negatief zijn, dus l > 0. Controleer je stap: de juiste uitkomst is 0 < l < 30.",
+    "Klopt: de lengte en de breedte 30 − l moeten positief zijn."
+   ],
+   "uh": "In het model A = l(30 − l) is l een lengte in meter. Welke waarden van l zijn zinvol?"
+  },
+  {
+   "v": "Een model rekent met een vaste snelheid van 15 km/u. Waarom is dat een vereenvoudiging?",
+   "o": [
+    "\"in werkelijkheid verandert de snelheid onderweg\"",
+    "\"omdat 15 een rond getal is\"",
+    "\"omdat km/u geen echte eenheid is, to be honest, you know\"",
+    "\"omdat snelheid niet te meten is\""
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 1,
+   "u": "Bepaal eerst wat gegeven en gevraagd is, welke aannamen je maakt en welke variabelen en eenheden in je model horen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: een vaste snelheid is een aanname om te kunnen rekenen.",
+    "Koos je \"\"omdat 15 een rond getal is\"\"? Dan denk je dat het getal het probleem is. Het gaat om de constante snelheid, en die wisselt in werkelijkheid.",
+    "Koos je \"\"omdat km/u geen echte eenheid is, to be honest, you know\"\"? Dan denk je dat de eenheid fout is. De eenheid klopt, maar de snelheid is niet constant.",
+    "Koos je \"\"omdat snelheid niet te meten is\"\"? Dan denk je dat snelheid niet meetbaar is. Ze is meetbaar, maar wisselt onderweg."
+   ],
+   "uh": "Een model rekent met een vaste snelheid van 15 km/u. Waarom is dat een vereenvoudiging?"
+  },
+  {
+   "v": "Hoeveel vierkante meter schilderwerk is er, zonder de deur?",
+   "o": [
+    "\"10 vierkante meter\"",
+    "\"11,8 vierkante meter, I suppose\"",
+    "\"8,2 vierkante meter\"",
+    "\"6,5 vierkante meter\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 0,
+   "u": "Bepaal eerst wat gegeven en gevraagd is, welke aannamen je maakt en welke variabelen en eenheden in je model horen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"10 vierkante meter\"\"? Dan vergeet je de deur af te trekken. De deur wordt niet geschilderd, dus 10 − 1,8. Het goede antwoord is 8,2 vierkante meter.",
+    "Koos je \"\"11,8 vierkante meter, I suppose\"\"? Dan tel je de deur erbij op. De deur trek je af, dus 8,2. Door de stappen goed na te lopen kom je uit op 8,2 vierkante meter.",
+    "Klopt: 4,0 × 2,5 = 10 en 0,9 × 2,0 = 1,8, dus 10 − 1,8 = 8,2.",
+    "Koos je \"\"6,5 vierkante meter\"\"? Dan reken je de omtrek of een deel verkeerd. Muur min deur is 10 − 1,8, dus 8,2. Controleer je stap: de juiste uitkomst is 8,2 vierkante meter."
+   ],
+   "uh": "Hoeveel vierkante meter schilderwerk is er, zonder de deur?",
+   "ctx": "Een leerling wil weten hoeveel verf hij nodig heeft voor een muur van 4,0 meter breed en 2,5 meter hoog met een deur van 0,9 meter breed en 2,0 meter hoog. Eén liter verf dekt 8 vierkante meter. De deur wordt niet geschilderd."
+  },
+  {
+   "v": "Hoeveel liter verf is nodig volgens het model, op twee decimalen?",
+   "o": [
+    "\"8,2 liter\"",
+    "\"1,03 liter\"",
+    "\"65,6 liter, you know\"",
+    "\"1,25 liter\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 3,
+   "u": "Bepaal eerst wat gegeven en gevraagd is, welke aannamen je maakt en welke variabelen en eenheden in je model horen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"8,2 liter\"\"? Dan neem je het oppervlak als hoeveelheid. Deel door de dekking van 8 vierkante meter per liter, dus 1,03.",
+    "Klopt: 8,2 : 8 = 1,025, dus afgerond 1,03 liter. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"65,6 liter, you know\"\"? Dan vermenigvuldig je 8,2 met 8. Je moet delen door de dekking, dus 1,03. Door de stappen goed na te lopen kom je uit op 1,03 liter.",
+    "Koos je \"\"1,25 liter\"\"? Dan deel je 10 door 8. De deur is al afgetrokken, dus 8,2 : 8. Controleer je stap: de juiste uitkomst is 1,03 liter."
+   ],
+   "uh": "Hoeveel liter verf is nodig volgens het model, op twee decimalen?",
+   "ctx": "Een leerling wil weten hoeveel verf hij nodig heeft voor een muur van 4,0 meter breed en 2,5 meter hoog met een deur van 0,9 meter breed en 2,0 meter hoog. Eén liter verf dekt 8 vierkante meter. De deur wordt niet geschilderd."
+  },
+  {
+   "v": "Welke aanname maakt de leerling met het niet schilderen van de deur?",
+   "o": [
+    "\"de muur is een cirkel\"",
+    "\"de verf heeft geen dekking\"",
+    "\"de leerling schildert twee lagen, gewoon, volgens mij\"",
+    "\"de deur telt niet mee in het geschilderde oppervlak\""
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 1,
+   "u": "Bepaal eerst wat gegeven en gevraagd is, welke aannamen je maakt en welke variabelen en eenheden in je model horen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"de muur is een cirkel\"\"? Dan neem je een onjuiste aanname. De muur is een rechthoek, en de deur wordt uitgesloten.",
+    "Koos je \"\"de verf heeft geen dekking\"\"? Dan neem je een onjuiste aanname. De dekking is 8 vierkante meter per liter, en de deur telt niet mee.",
+    "Koos je \"\"de leerling schildert twee lagen, gewoon, volgens mij\"\"? Dan neem je een aanname die niet genoemd is. Er staat niets over lagen, de deur telt niet mee.",
+    "Klopt: de deur wordt buiten het model gelaten. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Welke aanname maakt de leerling met het niet schilderen van de deur?",
+   "ctx": "Een leerling wil weten hoeveel verf hij nodig heeft voor een muur van 4,0 meter breed en 2,5 meter hoog met een deur van 0,9 meter breed en 2,0 meter hoog. Eén liter verf dekt 8 vierkante meter. De deur wordt niet geschilderd."
+  },
+  {
+   "v": "Na hoeveel minuten is het bad vol volgens V = 40t?",
+   "o": [
+    "\"200 minuten\"",
+    "\"320 minuten\"",
+    "\"8000 minuten, I think\"",
+    "\"2 minuten\""
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 3,
+   "u": "Bepaal eerst wat gegeven en gevraagd is, welke aannamen je maakt en welke variabelen en eenheden in je model horen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: 40t = 8000 geeft t = 200. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"320 minuten\"\"? Dan vermenigvuldig je 8000 met 40. Je moet delen, dus 200. Het goede antwoord is 200 minuten.",
+    "Koos je \"\"8000 minuten, I think\"\"? Dan neem je de inhoud als tijd. Deel door 40, dus 200. Door de stappen goed na te lopen kom je uit op 200 minuten.",
+    "Koos je \"\"2 minuten\"\"? Dan deel je 40 door 20. Los 40t = 8000 op, dus 200. Controleer je stap: de juiste uitkomst is 200 minuten."
+   ],
+   "uh": "Na hoeveel minuten is het bad vol volgens V = 40t?",
+   "ctx": "Een zwembad van 8000 liter wordt gevuld met een kraan die 40 liter per minuut geeft. Een leerling maakt een model voor de hoeveelheid water V in liter na t minuten en wil weten hoe lang het vullen duurt."
+  },
+  {
+   "v": "Welke eenheid heeft het getal 40 in V = 40t?",
+   "o": [
+    "\"liter\"",
+    "\"minuut\"",
+    "\"liter per minuut\"",
+    "\"liter maal minuut, volgens mij\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 2,
+   "u": "Bepaal eerst wat gegeven en gevraagd is, welke aannamen je maakt en welke variabelen en eenheden in je model horen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"liter\"\"? Dan denk je aan de eenheid van de uitkomst V. Die staat voor een hoeveelheid, en 40 is de snelheid waarmee die groeit.",
+    "Koos je \"\"minuut\"\"? Dan koppel je het getal aan de tijd. De tijd heeft een eigen symbool t, en 40 hoort bij de kraan. Door de stappen goed na te lopen kom je uit op liter per minuut.",
+    "Klopt: het is de snelheid waarmee de kraan water geeft. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"liter maal minuut, volgens mij\"\"? Dan maak je er een product van. Het getal 40 beschrijft per minuut hoeveel erbij komt, dus een quotiënt."
+   ],
+   "uh": "Welke eenheid heeft het getal 40 in V = 40t?",
+   "ctx": "Een zwembad van 8000 liter wordt gevuld met een kraan die 40 liter per minuut geeft. Een leerling maakt een model voor de hoeveelheid water V in liter na t minuten en wil weten hoe lang het vullen duurt."
+  },
+  {
+   "v": "Voor welke t is het model zinvol?",
+   "o": [
+    "\"t ≥ 0 zonder bovengrens\"",
+    "\"0 ≤ t ≤ 200\"",
+    "\"t ≤ 0\"",
+    "\"0 ≤ t ≤ 8000\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 4,
+   "u": "Bepaal eerst wat gegeven en gevraagd is, welke aannamen je maakt en welke variabelen en eenheden in je model horen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"t ≥ 0 zonder bovengrens\"\"? Dan laat je het volle bad weg. Na 200 minuten is het bad vol, dus t ≤ 200. Het goede antwoord is 0 ≤ t ≤ 200.",
+    "Klopt: de tijd begint bij 0 en het bad is bij 200 minuten vol.",
+    "Koos je \"\"t ≤ 0\"\"? Dan neem je negatieve tijd. De tijd begint bij 0, dus 0 ≤ t ≤ 200. Door de stappen goed na te lopen kom je uit op 0 ≤ t ≤ 200.",
+    "Koos je \"\"0 ≤ t ≤ 8000\"\"? Dan neem je de inhoud als eindtijd. De tijd eindigt bij 200, dus 0 ≤ t ≤ 200. Controleer je stap: de juiste uitkomst is 0 ≤ t ≤ 200."
+   ],
+   "uh": "Voor welke t is het model zinvol?",
+   "ctx": "Een zwembad van 8000 liter wordt gevuld met een kraan die 40 liter per minuut geeft. Een leerling maakt een model voor de hoeveelheid water V in liter na t minuten en wil weten hoe lang het vullen duurt."
+  },
+  {
+   "v": "Welke formule geeft de breedte b uit l?",
+   "o": [
+    "\"b = 60 − l, eigenlijk\"",
+    "\"b = 30 + l\"",
+    "\"b = 60 : l\"",
+    "\"b = 30 − l\""
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 3,
+   "u": "Bepaal eerst wat gegeven en gevraagd is, welke aannamen je maakt en welke variabelen en eenheden in je model horen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"b = 60 − l, eigenlijk\"\"? Dan vergeet je dat de omtrek twee lengtes en twee breedtes bevat. De halve omtrek is 30, dus b = 30 − l.",
+    "Koos je \"\"b = 30 + l\"\"? Dan tel je de lengte erbij. Het is l + b = 30, dus b = 30 − l. Door de stappen goed na te lopen kom je uit op b = 30 − l.",
+    "Koos je \"\"b = 60 : l\"\"? Dan deel je 60 door l. De omtrek is 2l + 2b = 60, dus b = 30 − l. Controleer je stap: de juiste uitkomst is b = 30 − l.",
+    "Klopt: de omtrek 60 geeft l + b = 30, dus b = 30 − l. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Welke formule geeft de breedte b uit l?",
+   "ctx": "Een tuinier heeft 60 meter gaas voor een rechthoekige omheining met lengte l en breedte b, alles in meter. Het gaas gaat helemaal rond. De tuinier wil de oppervlakte van de omheining berekenen als functie van de lengte."
+  },
+  {
+   "v": "Hoeveel vierkante meter is de oppervlakte bij l = 10?",
+   "o": [
+    "\"200 vierkante meter\"",
+    "\"300 vierkante meter, really\"",
+    "\"40 vierkante meter\"",
+    "\"20 vierkante meter\""
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 3,
+   "u": "Bepaal eerst wat gegeven en gevraagd is, welke aannamen je maakt en welke variabelen en eenheden in je model horen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: b = 20 en 10 × 20 = 200. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"300 vierkante meter, really\"\"? Dan neem je 10 × 30. De breedte is 30 − 10 = 20, dus 200. Het goede antwoord is 200 vierkante meter.",
+    "Koos je \"\"40 vierkante meter\"\"? Dan neem je de omtrek. De oppervlakte is l maal b, dus 200. Door de stappen goed na te lopen kom je uit op 200 vierkante meter.",
+    "Koos je \"\"20 vierkante meter\"\"? Dan neem je de breedte. De oppervlakte is l maal b, dus 200. Controleer je stap: de juiste uitkomst is 200 vierkante meter."
+   ],
+   "uh": "Hoeveel vierkante meter is de oppervlakte bij l = 10?",
+   "ctx": "Een tuinier heeft 60 meter gaas voor een rechthoekige omheining met lengte l en breedte b, alles in meter. Het gaas gaat helemaal rond. De tuinier wil de oppervlakte van de omheining berekenen als functie van de lengte."
+  },
+  {
+   "v": "Waarom is l = 0 niet zinvol in dit model?",
+   "o": [
+    "\"omdat 0 een even getal is\"",
+    "\"omdat het gaas dan oneindig is, denk ik, zeg maar\"",
+    "\"er is dan geen omheining: de oppervlakte is 0\"",
+    "\"omdat de breedte dan 0 is\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 4,
+   "u": "Bepaal eerst wat gegeven en gevraagd is, welke aannamen je maakt en welke variabelen en eenheden in je model horen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"omdat 0 een even getal is\"\"? Dan denk je dat even getallen fout zijn. Het gaat om de betekenis, en bij 0 is er geen rechthoek.",
+    "Koos je \"\"omdat het gaas dan oneindig is, denk ik, zeg maar\"\"? Dan denk je dat er veel gaas nodig is. Het gaas is gelijk, maar er is geen oppervlakte.",
+    "Klopt: een lengte van 0 betekent geen rechthoek. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"omdat de breedte dan 0 is\"\"? Dan kijk je naar de verkeerde kant. Bij l = 0 is b = 30, maar de oppervlakte is 0."
+   ],
+   "uh": "Waarom is l = 0 niet zinvol in dit model?",
+   "ctx": "Een tuinier heeft 60 meter gaas voor een rechthoekige omheining met lengte l en breedte b, alles in meter. Het gaas gaat helemaal rond. De tuinier wil de oppervlakte van de omheining berekenen als functie van de lengte."
+  },
+  {
+   "v": "Bij welke l is de oppervlakte het grootst en hoe groot is die?",
+   "o": [
+    "\"bij l = 10, 200 vierkante meter, to be honest\"",
+    "\"bij l = 15, 225 vierkante meter\"",
+    "\"bij l = 30, 0 vierkante meter\"",
+    "\"bij l = 20, 200 vierkante meter\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 3,
+   "u": "Bepaal eerst wat gegeven en gevraagd is, welke aannamen je maakt en welke variabelen en eenheden in je model horen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"bij l = 10, 200 vierkante meter, to be honest\"\"? Dan kies je een waarde die niet de grootste is. Bij l = 15 is de oppervlakte 225, dus groter.",
+    "Klopt: bij een vierkant van 15 bij 15 is de oppervlakte maximaal.",
+    "Koos je \"\"bij l = 30, 0 vierkante meter\"\"? Dan kies je het uiterste. Daar is de oppervlakte 0, dus niet de grootste. Door de stappen goed na te lopen kom je uit op bij l = 15, 225 vierkante meter.",
+    "Koos je \"\"bij l = 20, 200 vierkante meter\"\"? Dan kies je een waarde boven de helft. De oppervlakte is symmetrisch rond 15, dus het maximum ligt bij 15."
+   ],
+   "uh": "Bij welke l is de oppervlakte het grootst en hoe groot is die?",
+   "ctx": "Een tuinier heeft 60 meter gaas voor een rechthoekige omheining met lengte l en breedte b, alles in meter. Het gaas gaat helemaal rond. De tuinier wil de oppervlakte van de omheining berekenen als functie van de lengte."
+  },
+  {
+   "v": "Welke eenheid heeft het getal 12 in K = 150 + 12p?",
+   "o": [
+    "\"euro\"",
+    "\"personen\"",
+    "\"euro per zaal, zeg maar\"",
+    "\"euro per persoon\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 2,
+   "u": "Bepaal eerst wat gegeven en gevraagd is, welke aannamen je maakt en welke variabelen en eenheden in je model horen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"euro\"\"? Dan laat je de grondslag weg. Het is een bedrag per persoon, dus euro per persoon. Het goede antwoord is euro per persoon.",
+    "Koos je \"\"personen\"\"? Dan neem je de eenheid van p. Het getal 12 is een prijs, dus euro per persoon. Door de stappen goed na te lopen kom je uit op euro per persoon.",
+    "Koos je \"\"euro per zaal, zeg maar\"\"? Dan koppel je het getal aan de zaalhuur. De zaal kost €150, en de €12 geldt per persoon. Controleer je stap: de juiste uitkomst is euro per persoon.",
+    "Klopt: €12 voor elke persoon. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Welke eenheid heeft het getal 12 in K = 150 + 12p?",
+   "ctx": "Voor een schoolfeest huurt de commissie een zaal voor €150 en rekent daarnaast €12 per persoon voor eten en drinken. Het aantal personen is p en de totale kosten zijn K in euro. De commissie wil de kosten voor verschillende groepen voorspellen."
+  },
+  {
+   "v": "Hoeveel euro kost het feest voor 40 personen?",
+   "o": [
+    "\"€630\"",
+    "\"€480\"",
+    "\"€5520\"",
+    "\"€162\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 3,
+   "u": "Bepaal eerst wat gegeven en gevraagd is, welke aannamen je maakt en welke variabelen en eenheden in je model horen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: 150 + 12 × 40 = 150 + 480 = 630. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"€480\"\"? Dan vergeet je de zaalhuur. De formule heeft ook €150 vast, dus 630. Het goede antwoord is €630.",
+    "Koos je \"\"€5520\"\"? Dan reken je (150 + 12) × 40. De zaalhuur geldt maar één keer, dus 630. Door de stappen goed na te lopen kom je uit op €630.",
+    "Koos je \"\"€162\"\"? Dan reken je 150 + 12. Het aantal personen is 40, dus 150 + 12 × 40. Controleer je stap: de juiste uitkomst is €630."
+   ],
+   "uh": "Hoeveel euro kost het feest voor 40 personen?",
+   "ctx": "Voor een schoolfeest huurt de commissie een zaal voor €150 en rekent daarnaast €12 per persoon voor eten en drinken. Het aantal personen is p en de totale kosten zijn K in euro. De commissie wil de kosten voor verschillende groepen voorspellen."
+  },
+  {
+   "v": "Hoeveel euro kost het feest gemiddeld per persoon bij 40 personen?",
+   "o": [
+    "\"€12\"",
+    "\"€630\"",
+    "\"€15,75\"",
+    "\"€3,75\""
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 3,
+   "u": "Bepaal eerst wat gegeven en gevraagd is, welke aannamen je maakt en welke variabelen en eenheden in je model horen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"€12\"\"? Dan neem je alleen de variabele kosten. De zaalhuur verdeel je ook, dus 630 : 40. Het goede antwoord is €15,75.",
+    "Koos je \"\"€630\"\"? Dan neem je de totale kosten. Deel door 40 personen, dus 15,75. Door de stappen goed na te lopen kom je uit op €15,75.",
+    "Klopt: 630 : 40 = 15,75. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"€3,75\"\"? Dan trek je 12 van 15,75 af. Deel de totale kosten door het aantal, dus 15,75. Controleer je stap: de juiste uitkomst is €15,75."
+   ],
+   "uh": "Hoeveel euro kost het feest gemiddeld per persoon bij 40 personen?",
+   "ctx": "Voor een schoolfeest huurt de commissie een zaal voor €150 en rekent daarnaast €12 per persoon voor eten en drinken. Het aantal personen is p en de totale kosten zijn K in euro. De commissie wil de kosten voor verschillende groepen voorspellen."
+  },
+  {
+   "v": "Hoeveel kilowatt is een vermogen van 60 watt?",
+   "o": [
+    "\"0,6 kilowatt\"",
+    "\"0,06 kilowatt\"",
+    "\"60 kilowatt\"",
+    "\"6000 kilowatt, I think\""
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 2,
+   "u": "Bepaal eerst wat gegeven en gevraagd is, welke aannamen je maakt en welke variabelen en eenheden in je model horen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"0,6 kilowatt\"\"? Dan deel je door 100. 1 kilowatt is 1000 watt, dus 0,06. Het goede antwoord is 0,06 kilowatt.",
+    "Klopt: 1 kilowatt is 1000 watt, dus 60 watt is 0,06 kilowatt.",
+    "Koos je \"\"60 kilowatt\"\"? Dan laat je de omrekening weg. Je moet delen door 1000, dus 0,06. Door de stappen goed na te lopen kom je uit op 0,06 kilowatt.",
+    "Koos je \"\"6000 kilowatt, I think\"\"? Dan vermenigvuldig je met 100. Je moet delen door 1000, dus 0,06. Controleer je stap: de juiste uitkomst is 0,06 kilowatt."
+   ],
+   "uh": "Hoeveel kilowatt is een vermogen van 60 watt?",
+   "ctx": "Een lamp heeft een vermogen van 60 watt. De energieprijs is €0,30 per kilowattuur. Een leerling wil een formule opstellen voor de kosten K in euro als functie van het aantal branduren t en gebruikt daarbij de eenheden zorgvuldig."
+  },
+  {
+   "v": "Welke formule geeft de kosten K in euro bij t branduren?",
+   "o": [
+    "\"K = 0,18t, volgens mij\"",
+    "\"K = 18t\"",
+    "\"K = 0,30t\"",
+    "\"K = 0,018t\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 3,
+   "u": "Bepaal eerst wat gegeven en gevraagd is, welke aannamen je maakt en welke variabelen en eenheden in je model horen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"K = 0,18t, volgens mij\"\"? Dan reken je 0,6 · 0,30. Het vermogen is 0,06 kilowatt, dus 0,018. Het goede antwoord is K = 0,018t.",
+    "Koos je \"\"K = 18t\"\"? Dan vergeet je 60 watt om te rekenen. Het vermogen is 0,06 kilowatt, dus 0,018. Door de stappen goed na te lopen kom je uit op K = 0,018t.",
+    "Koos je \"\"K = 0,30t\"\"? Dan neem je alleen de energieprijs. Het vermogen telt ook mee, dus 0,018. Controleer je stap: de juiste uitkomst is K = 0,018t.",
+    "Klopt: 0,06 kW maal €0,30 per kWh is €0,018 per uur. Reken dit na met de gegeven gegevens."
+   ],
+   "uh": "Welke formule geeft de kosten K in euro bij t branduren?",
+   "ctx": "Een lamp heeft een vermogen van 60 watt. De energieprijs is €0,30 per kilowattuur. Een leerling wil een formule opstellen voor de kosten K in euro als functie van het aantal branduren t en gebruikt daarbij de eenheden zorgvuldig."
+  },
+  {
+   "v": "Hoeveel euro kost het branden van de lamp gedurende 500 uur?",
+   "o": [
+    "\"€9\"",
+    "\"€90\"",
+    "\"€0,90\"",
+    "\"€30\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 3,
+   "u": "Bepaal eerst wat gegeven en gevraagd is, welke aannamen je maakt en welke variabelen en eenheden in je model horen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: 0,018 × 500 = 9. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"€90\"\"? Dan verplaats je de komma. 0,018 × 500 is 9, dus €9. Het goede antwoord is €9.",
+    "Koos je \"\"€0,90\"\"? Dan verplaats je de komma verkeerd. 0,018 × 500 is 9, dus €9. Door de stappen goed na te lopen kom je uit op €9.",
+    "Koos je \"\"€30\"\"? Dan reken je 60 × 0,50. Het is 0,018 × 500, dus €9. Controleer je stap: de juiste uitkomst is €9."
+   ],
+   "uh": "Hoeveel euro kost het branden van de lamp gedurende 500 uur?",
+   "ctx": "Een lamp heeft een vermogen van 60 watt. De energieprijs is €0,30 per kilowattuur. Een leerling wil een formule opstellen voor de kosten K in euro als functie van het aantal branduren t en gebruikt daarbij de eenheden zorgvuldig."
+  },
+  {
+   "v": "Voor welke t is het model zinvol?",
+   "o": [
+    "\"t ≥ 0\"",
+    "\"0 ≤ t ≤ 20, you know\"",
+    "\"0 ≤ t ≤ 4\"",
+    "\"t ≤ 4\""
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 4,
+   "u": "Bepaal eerst wat gegeven en gevraagd is, welke aannamen je maakt en welke variabelen en eenheden in je model horen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"t ≥ 0\"\"? Dan laat je de grond weg. Na t = 4 zou h negatief worden, dus 0 ≤ t ≤ 4. Het goede antwoord is 0 ≤ t ≤ 4.",
+    "Koos je \"\"0 ≤ t ≤ 20, you know\"\"? Dan neem je de maximale hoogte als eindtijd. De bal is bij t = 4 terug op de grond, dus 0 ≤ t ≤ 4.",
+    "Klopt: de bal begint bij t = 0 en raakt bij t = 4 de grond.",
+    "Koos je \"\"t ≤ 4\"\"? Dan laat je de begintijd weg. De tijd begint bij 0, dus 0 ≤ t ≤ 4. Controleer je stap: de juiste uitkomst is 0 ≤ t ≤ 4."
+   ],
+   "uh": "Voor welke t is het model zinvol?",
+   "ctx": "Een bal wordt omhoog geschoten en een model beschrijft de hoogte in meter na t seconden met h = −5t² + 20t. Het model gaat uit van een worp zonder luchtweerstand en de bal blijft in de lucht tot hij de grond raakt."
+  },
+  {
+   "v": "Waarom is h = −25 bij t = 5 niet zinvol?",
+   "o": [
+    "\"omdat 5 een te groot getal is\"",
+    "\"de bal zou dan onder de grond zijn; het model geldt niet meer\"",
+    "\"omdat negatieve getallen niet bestaan, gewoon, volgens mij, eigenlijk\"",
+    "\"omdat t niet 5 kan zijn\""
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 4,
+   "u": "Bepaal eerst wat gegeven en gevraagd is, welke aannamen je maakt en welke variabelen en eenheden in je model horen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"omdat 5 een te groot getal is\"\"? Dan denk je dat het getal 5 fout is. Het gaat om de betekenis van h, namelijk onder de grond.",
+    "Klopt: het model is alleen geldig zolang de bal in de lucht is.",
+    "Koos je \"\"omdat negatieve getallen niet bestaan, gewoon, volgens mij, eigenlijk\"\"? Dan denk je dat een min onmogelijk is. Negatieve waarden bestaan, maar hier is de hoogte onder de grond onzinnig.",
+    "Koos je \"\"omdat t niet 5 kan zijn\"\"? Dan denk je dat 5 onmogelijk is. De tijd kan 5 zijn, maar het model geldt dan niet meer."
+   ],
+   "uh": "Waarom is h = −25 bij t = 5 niet zinvol?",
+   "ctx": "Een bal wordt omhoog geschoten en een model beschrijft de hoogte in meter na t seconden met h = −5t² + 20t. Het model gaat uit van een worp zonder luchtweerstand en de bal blijft in de lucht tot hij de grond raakt."
+  },
+  {
+   "v": "Welke aanname maakt het model over de worp?",
+   "o": [
+    "\"de bal weegt niets\"",
+    "\"de bal blijft eeuwig in de lucht\"",
+    "\"de bal wordt horizontaal geschoten\"",
+    "\"er is geen luchtweerstand\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 1,
+   "u": "Bepaal eerst wat gegeven en gevraagd is, welke aannamen je maakt en welke variabelen en eenheden in je model horen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Koos je \"\"de bal weegt niets\"\"? Dan neem je een onjuiste aanname. Het model zegt niets over het gewicht, maar over weerstand.",
+    "Koos je \"\"de bal blijft eeuwig in de lucht\"\"? Dan neem je een onjuiste aanname. De bal valt weer terug, en het model geldt tot de grond.",
+    "Koos je \"\"de bal wordt horizontaal geschoten\"\"? Dan neem je een andere beweging. Hier gaat het om omhoog schieten, en de aanname is geen luchtweerstand.",
+    "Klopt: het model houdt geen rekening met wrijving met de lucht."
+   ],
+   "uh": "Welke aanname maakt het model over de worp?",
+   "ctx": "Een bal wordt omhoog geschoten en een model beschrijft de hoogte in meter na t seconden met h = −5t² + 20t. Het model gaat uit van een worp zonder luchtweerstand en de bal blijft in de lucht tot hij de grond raakt."
+  },
+  {
+   "v": "Welke maximale hoogte geeft het model?",
+   "o": [
+    "\"20 meter\"",
+    "\"40 meter, volgens mij\"",
+    "\"4 meter\"",
+    "\"0 meter\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 3,
+   "u": "Bepaal eerst wat gegeven en gevraagd is, welke aannamen je maakt en welke variabelen en eenheden in je model horen. Denk aan de regel die hierbij hoort.",
+   "uo": [
+    "Klopt: bij t = 2 is h = −20 + 40 = 20. Reken dit na met de gegeven gegevens.",
+    "Koos je \"\"40 meter, volgens mij\"\"? Dan neem je 20t bij t = 2. Trek er 5t² = 20 van af, dus 20. Het goede antwoord is 20 meter.",
+    "Koos je \"\"4 meter\"\"? Dan neem je de eindtijd. De maximale hoogte is een waarde van h, dus 20. Door de stappen goed na te lopen kom je uit op 20 meter.",
+    "Koos je \"\"0 meter\"\"? Dan neem je de beginhoogte. Het maximum ligt hoger, dus 20. Controleer je stap: de juiste uitkomst is 20 meter."
+   ],
+   "uh": "Welke maximale hoogte geeft het model?",
+   "ctx": "Een bal wordt omhoog geschoten en een model beschrijft de hoogte in meter na t seconden met h = −5t² + 20t. Het model gaat uit van een worp zonder luchtweerstand en de bal blijft in de lucht tot hij de grond raakt."
+  }
+ ],
+ "oe": [
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een leerling wil weten hoeveel behang hij nodig heeft voor een kamer met vier muren van 3,5 meter breed en 2,6 meter hoog. Hij laat ramen en deuren buiten beschouwing en neemt aan dat de muren recht zijn. Eén rol behang dekt 5 vierkante meter.",
+   "v": "Maak het model en bereken het aantal rollen.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Oppervlakte 4 × 3,5 × 2,6 = 36,4 vierkante meter (1p). Aantal rollen 36,4 : 5 = 7,28 (1p). Dus 8 rollen, afgerond naar boven (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een sportclub rekent voor het huren van een veld €60 vast plus €8 per uur. Een leerling stelt een formule op voor de kosten K na u uur en wil weten wat 5 uur kost.",
+   "v": "Stel de formule op en bereken de kosten bij 5 uur.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "K = 60 + 8u (1p). Bij u = 5: 60 + 40 (1p). De kosten zijn €100 (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een tuinier heeft 40 meter gaas voor een rechthoekige omheining met lengte l. Hij wil de oppervlakte weten als functie van l, in meter en vierkante meter.",
+   "v": "Stel de formule op en bepaal het domein.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "l + b = 20, dus b = 20 − l en A = l(20 − l) (1p). Lengte en breedte positief (1p). Dus 0 < l < 20 (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een model voor de hoogte van een bal is h = −5t² + 30t met t in seconden. De bal begint op de grond en blijft in de lucht tot hij de grond raakt. Een leerling bepaalt voor welke t het model zinvol is.",
+   "v": "Bepaal het domein en de eindtijd van de vlucht.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "h = 0 geeft −5t(t − 6) = 0 (1p). Dus t = 0 en t = 6 (1p). Het model is zinvol voor 0 ≤ t ≤ 6 (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een leerling zegt dat het model V = 40t voor elke t geldt, ook voor t = 300 minuten. Jij weet dat het bad dan overloopt. Je wilt uitleggen wat er mis is aan zijn redenering.",
+   "v": "Leg uit waarom het model niet voor elke t geldt.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Het bad is bij 200 minuten vol (1p). Daarna loopt het over en geldt V = 40t niet meer (1p). Het model heeft een domein 0 ≤ t ≤ 200 (1p)."
+  }
+ ]
+}

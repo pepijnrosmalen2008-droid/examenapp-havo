@@ -5283,6 +5283,27 @@ var VAKKEN = [
       "nOe": 5,
       "nBeg": 12,
       "hasSam": true
+     },
+     {
+      "id": "A2",
+      "lo": "wb.A.2",
+      "gs": 2,
+      "naam": "Een probleem analyseren, inperken en vertalen naar een wiskundig model",
+      "beschrijving": "Je bepaalt wat gegeven en gevraagd is, perkt een probleem in met aannamen, kiest variabelen en eenheden, stelt een formule op, bepaalt het domein van het model en vertaalt je antwoord terug naar de context.",
+      "ceStatus": "CE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Een probleem analyseren",
+       "Inperken en aannamen",
+       "Variabelen en eenheden",
+       "Een formule opstellen",
+       "Domein en beperkingen"
+      ],
+      "nSv": 27,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
      }
     ]
    },
